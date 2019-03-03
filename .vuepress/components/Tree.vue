@@ -3,7 +3,7 @@
     <div v-for="category in Object.keys(tree)">
       <h3>{{ category }}</h3>
       <div v-for="page in tree[category]">
-        <a :href="page.path">{{ page.title }}</a>
+        <a :href="$withBase(page.path)">{{ page.title }}</a>
       </div>
     </div>
   </div>
