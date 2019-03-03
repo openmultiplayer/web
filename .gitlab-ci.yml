@@ -1,0 +1,15 @@
+image: node:9.11.1
+
+pages:
+  cache:
+    paths:
+      - node_modules/
+
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
