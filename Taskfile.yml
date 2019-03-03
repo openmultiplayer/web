@@ -1,0 +1,10 @@
+version: "2"
+vars:
+  GIT_COMMIT: { sh: git describe --always --dirty --tags }
+tasks:
+  build:
+    cmds:
+      - docker build -t southclaws/samp-wiki
+  push:
+    cmds:
+      - docker push southclaws/samp-wiki
