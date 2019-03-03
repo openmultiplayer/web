@@ -8,7 +8,8 @@ This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions
 
 ## Description
 
-Adds a new custom character model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
+Adds a new custom character model for download. The model files will be stored in player's Documents\GTA San Andreas
+User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
 
 | Name    | Description                                                                                                    |
 | ------- | -------------------------------------------------------------------------------------------------------------- |
@@ -49,7 +50,9 @@ useartwork must be enabled first in server settings in order for this to work
 
 ::: warning
 
-There are currently no restrictions on when you can call this function, but be aware that if you do not call them inside OnFilterScriptInit/OnGameModeInit, you run the risk that some players, who are already on the server, may not have downloaded the models.
+There are currently no restrictions on when you can call this function, but be aware that if you do not call them inside
+OnFilterScriptInit/OnGameModeInit, you run the risk that some players, who are already on the server, may not have
+downloaded the models.
 
 :::
 

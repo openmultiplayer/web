@@ -1,4 +1,10 @@
+---
+tags: ["player", "textdraw"]
+---
+
 # CreatePlayerTextDraw
+
+<TagLinks />
 
 ::: warning
 
