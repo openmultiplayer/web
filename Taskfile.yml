@@ -4,7 +4,7 @@ vars:
 tasks:
   build:
     cmds:
-      - docker build -t southclaws/samp-wiki .
+      - docker build -t southclaws/samp-wiki:{{ .GIT_COMMIT }} .
   push:
     cmds:
-      - docker push southclaws/samp-wiki
+      - docker push southclaws/samp-wiki:{{ .GIT_COMMIT }}
