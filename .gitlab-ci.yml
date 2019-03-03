@@ -6,7 +6,7 @@ pages:
       - node_modules/
 
   script:
-    - npm install
+    - npm install -g vuepress
     - npm run build
   artifacts:
     paths:
