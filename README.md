@@ -6,6 +6,10 @@ sidebar: false
 
 Documentation for all APIs and server lifecycle/maintenance guides.
 
-[Tags](tags.md)
+## Reference
 
-[Categories](categories.md)
+The reference documents contain a full reference for the entire API including all functions and event callbacks.
+
+[Browse by Tag](tags.md)
+
+[Browse by Category](categories.md)
