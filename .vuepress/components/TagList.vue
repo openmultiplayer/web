@@ -1,19 +1,31 @@
 <template lang="html">
   <div>
-    <span v-for="tag in Object.keys(tags)">
-      <h2 :id="tag">
-        <router-link
-          :to="{ path: `/tags.html#${tag}`}"
-          class="header-anchor"
-          aria-hidden="true">#</router-link>
-        {{tag}}
-      </h2>
+    <div v-if="$route.hash === ''">
       <ul>
-        <li v-for="page in tags[tag]">
-          <router-link :to="{path: page.path}">{{page.title}}</router-link>
+        <li  v-for="tag in Object.keys(tags)">
+          <router-link :to="{path: `/tags.html#${tag}`}">
+            {{tag}}
+          </router-link>
         </li>
       </ul>
-    </span>
+    </div>
+    <div v-if="$route.hash !== ''">
+      <a href="#">Show All</a>
+      <span v-for="tag in Object.keys(tags)">
+        <h2 :id="tag">
+          <router-link
+            :to="{ path: `/tags.html#${tag}`}"
+            class="header-anchor"
+            aria-hidden="true">#</router-link>
+          {{tag}}
+        </h2>
+        <ul>
+          <li v-for="page in tags[tag]">
+            <router-link :to="{path: page.path}">{{page.title}}</router-link>
+          </li>
+        </ul>
+      </span>
+    </div>
   </div>
 </template>
 
@@ -25,7 +37,8 @@ export default {
       for (let page of this.$site.pages) {
         for (let index in page.frontmatter.tags) {
           const tag = page.frontmatter.tags[index];
-          if (tag !== this.$route.hash) {
+          const hash = this.$route.hash.replace("#", "");
+          if (hash !== "" && tag !== hash) {
             continue;
           }
           if (tag in tags) {
