@@ -10,8 +10,7 @@
       </h2>
       <ul>
         <li v-for="page in tags[tag]">
-          <router-link
-            :to="{ path: page.path}">{{page.title}}</router-link>
+          <router-link :to="{path: page.path}">{{page.title}}</router-link>
         </li>
       </ul>
     </span>
@@ -22,19 +21,22 @@
 export default {
   computed: {
     tags() {
-      let tags = {}
+      let tags = {};
       for (let page of this.$site.pages) {
         for (let index in page.frontmatter.tags) {
-          const tag = page.frontmatter.tags[index]
+          const tag = page.frontmatter.tags[index];
+          if (tag !== this.$route.hash) {
+            continue;
+          }
           if (tag in tags) {
-            tags[tag].push(page)
+            tags[tag].push(page);
           } else {
-            tags[tag] = [page]
+            tags[tag] = [page];
           }
         }
       }
-      return tags
+      return tags;
     }
   }
-}
+};
 </script>
