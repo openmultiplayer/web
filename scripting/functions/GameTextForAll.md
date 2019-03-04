@@ -1,3 +1,9 @@
+---
+title: GameTextForAll
+description: Shows 'game text' (on-screen text) for a certain length of time for all players.
+tags: []
+---
+
 # GameTextForAll
 
 ## Description
@@ -24,11 +30,11 @@ public OnPlayerDeath(playerid, killerid, reason)
     // has been killed. It shows in text-type 3, for 5 seconds (5000 ms)
     new name[ 24 ], string[ 64 ];
     GetPlayerName( playerid, name, 24 );
-
+ 
     // Format the passed-away message properly, and show it to everyone:
     format( string, sizeof(string), "~w~%s has passed away", name );
     GameTextForAll( string, 5000, 3 );
-
+ 
     return 1;
 }
 ```

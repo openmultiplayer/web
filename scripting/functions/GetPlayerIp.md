@@ -1,3 +1,9 @@
+---
+title: GetPlayerIp
+description: Get the specified player's IP address and store it in a string.
+tags: ["player"]
+---
+
 # GetPlayerIp
 
 ## Description

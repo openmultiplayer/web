@@ -1,3 +1,9 @@
+---
+title: atan
+description: Get the inversed value of an arc tangent in radians.
+tags: []
+---
+
 # atan
 
 ## Description
@@ -16,7 +22,7 @@ The radiant of the angle in radians.
 
 ```c
 //This function returns radiants. Because most SA-MP functions use degrees, it is advised to convert them using the formula: result = atan (param) * 180 / PI
-
+ 
 public OnGameModeInit()
 {
 	new Float:param, Float:result;

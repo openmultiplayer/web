@@ -1,3 +1,9 @@
+---
+title: db_query
+description: This function is used to execute an SQL query on an opened SQLite database.
+tags: []
+---
+
 # db_query
 
 ## Description
@@ -37,7 +43,7 @@ public OnGameModeInit()
 	// ...
 	return 1;
 }
-
+ 
 public OnGameModeExit()
 {
 	// If there is a database connection, close it
@@ -45,49 +51,49 @@ public OnGameModeExit()
 	// ...
 	return 1;
 }
-
+ 
 public OnPlayerSpawn(playerid)
 {
 	// Declare "query" and "p_name"
 	static query[98], p_name[MAX_PLAYER_NAME+1];
-
+ 
 	// Stores the name of the player to "p_name"
 	GetPlayerName(playerid, p_name, sizeof p_name);
-
+ 
 	// Formats "query"
 	format(query, sizeof query, "INSERT INTO `spawn_log` (`PlayerID`,`PlayerName`) VALUES (%d,'%s')", playerid, p_name);
-
+ 
 	// Inserts something into "spawn_log" and frees the result
 	db_free_result(db_query(db_handle, query));
 	// ...
 	return 1;
 }
-
+ 
 // Example function
 GetNameBySpawnID(spawn_id)
 {
 	// Declare "p_name"
 	new p_name[MAX_PLAYER_NAME+1];
-
+ 
 	// Declare "query" and "db_result"
 	static query[60], DBResult:db_result;
-
+ 
 	// Formats "query"
 	format(query, sizeof query, "SELECT `PlayerName` FROM `spawn_log` WHERE `ID`=%d", spawn_id);
-
+ 
 	// Selects the player name by using "spawn_id"
 	db_result = db_query(db_handle, query);
-
+ 
 	// If there is any valid entry
 	if(db_num_rows(db_result))
 	{
 		// Store data from "PlayerName" into "p_name"
 		db_get_field(db_result, 0, p_name, sizeof p_name);
 	}
-
+ 
 	// Frees the result
 	db_free_result(db_result);
-
+ 
 	// Returns "p_name"
 	return p_name;
 }

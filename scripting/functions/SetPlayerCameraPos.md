@@ -1,3 +1,9 @@
+---
+title: SetPlayerCameraPos
+description: Sets the camera to a specific position for a player.
+tags: ["player"]
+---
+
 # SetPlayerCameraPos
 
 ## Description

@@ -1,3 +1,9 @@
+---
+title: SetPlayerObjectNoCameraCol
+description: Toggles a player object camera collision.
+tags: ["player"]
+---
+
 # SetPlayerObjectNoCameraCol
 
 ::: warning

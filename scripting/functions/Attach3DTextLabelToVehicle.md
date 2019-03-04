@@ -1,3 +1,9 @@
+---
+title: Attach3DTextLabelToVehicle
+description: Attaches a 3D Text Label to a specific vehicle.
+tags: ["vehicle", "3dtextlabel"]
+---
+
 # Attach3DTextLabelToVehicle
 
 ::: warning
@@ -27,7 +33,7 @@ This function does not return any specific values.
 ```c
 new Text3D:vehicle3Dtext[MAX_VEHICLES],vehicle_id;
 // Creating the TextLabel for later use
-
+ 
 public OnGameModeInit ( )
 {
     vehicle_id = CreateVehicle( 510, 0.0. 0.0, 15.0, 5, 0, 120 );

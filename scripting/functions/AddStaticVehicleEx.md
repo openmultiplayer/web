@@ -1,3 +1,9 @@
+---
+title: AddStaticVehicleEx
+description: Adds a 'static' vehicle (models are pre-loaded for players)to the gamemode.
+tags: ["vehicle"]
+---
+
 # AddStaticVehicleEx
 
 ## Description
@@ -29,7 +35,7 @@ public OnGameModeInit()
 {
     // Add a Hydra (520) to the game that will respawn 15 seconds after being left
     AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
-
+ 
     return 1;
 }
 ```

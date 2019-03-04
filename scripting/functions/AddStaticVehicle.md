@@ -1,3 +1,9 @@
+---
+title: AddStaticVehicle
+description: Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
+tags: ["vehicle"]
+---
+
 # AddStaticVehicle
 
 ## Description
@@ -27,7 +33,7 @@ public OnGameModeInit()
 {
     // Add a Hydra to the game
     AddStaticVehicle(520, 2109.1763, 1503.0453, 32.2887, 82.2873, 0, 1);
-
+ 
     return 1;
 }
 ```

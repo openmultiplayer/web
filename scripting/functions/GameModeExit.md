@@ -1,3 +1,9 @@
+---
+title: GameModeExit
+description: Ends the current gamemode.
+tags: []
+---
+
 # GameModeExit
 
 ## Description

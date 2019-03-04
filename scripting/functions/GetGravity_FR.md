@@ -1,3 +1,9 @@
+---
+title: GetGravity_FR
+description: Permets d'obtenir la valeur de la gravité.
+tags: []
+---
+
 # GetGravity_FR
 
 ## Description
@@ -14,7 +20,7 @@ Permets d'obtenir la valeur de la gravité.
 #if !defined GetGravity
     native Float:GetGravity();
 #endif
-
+ 
 printf("Gravité actuelle: %f", GetGravity());
 ```
 

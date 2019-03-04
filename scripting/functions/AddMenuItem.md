@@ -1,3 +1,9 @@
+---
+title: AddMenuItem
+description: Adds an item to a specified menu.
+tags: ["menu"]
+---
+
 # AddMenuItem
 
 ## Description
@@ -18,7 +24,7 @@ The index of the row this item was added to.
 
 ```c
 new Menu:examplemenu;
-
+ 
 public OnGameModeInit()
 {
     examplemenu = CreateMenu("Your Menu", 2, 200.0, 100.0, 150.0, 150.0);

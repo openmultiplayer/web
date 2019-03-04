@@ -1,3 +1,9 @@
+---
+title: ShowPlayerNameTagForPlayer
+description: This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head.
+tags: ["player"]
+---
+
 # ShowPlayerNameTagForPlayer
 
 ## Description

@@ -1,3 +1,9 @@
+---
+title: GetPlayerHealth
+description: The function GetPlayerHealth allows you to retrieve the health of a player.
+tags: ["player"]
+---
+
 # GetPlayerHealth
 
 ## Description
@@ -22,7 +28,7 @@ The player's health is stored in the specified variable.
 ```c
 // Sets players health to 50 if it was lower than
 // 50 before, as soon as he typed /doctor
-
+ 
 if(strcmp(cmdtext, "/doctor", true) == 0)
 {
     new Float:health;

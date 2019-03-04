@@ -1,3 +1,9 @@
+---
+title: StopPlayerHoldingObject
+description: Removes attached objects.
+tags: ["player"]
+---
+
 # StopPlayerHoldingObject
 
 ::: warning

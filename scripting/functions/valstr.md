@@ -1,3 +1,9 @@
+---
+title: valstr
+description: Convert an integer into a string.
+tags: []
+---
+
 # valstr
 
 ## Description
@@ -25,7 +31,7 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 {
     // format can't handle cellmin properly
     static const cellmin_value[] = !"-2147483648";
-
+ 
     if (value == cellmin)
         pack && strpack(dest, cellmin_value, 12) || strunpack(dest, cellmin_value, 12);
     else

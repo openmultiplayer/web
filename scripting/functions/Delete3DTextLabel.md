@@ -1,3 +1,9 @@
+---
+title: Delete3DTextLabel
+description: Delete a 3D text label (created with Create3DTextLabel).
+tags: ["3dtextlabel"]
+---
+
 # Delete3DTextLabel
 
 ::: warning
@@ -22,9 +28,9 @@ Delete a 3D text label (created with Create3DTextLabel).
 
 ```c
 new Text3D:MyLabel;
-
+ 
 MyLabel = Create3DTextLabel(...);
-
+ 
 Delete3DTextLabel(MyLabel);
 ```
 

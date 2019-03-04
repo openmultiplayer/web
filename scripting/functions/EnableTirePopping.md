@@ -1,3 +1,9 @@
+---
+title: EnableTirePopping
+description: With this function you can enable or disable tire popping.
+tags: []
+---
+
 # EnableTirePopping
 
 ## Description

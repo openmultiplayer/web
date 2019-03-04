@@ -1,3 +1,9 @@
+---
+title: AttachObjectToObject
+description: You can use this function to attach objects to other objects.
+tags: []
+---
+
 # AttachObjectToObject
 
 ::: warning
@@ -33,7 +39,7 @@ You can use this function to attach objects to other objects. The objects will f
 ```c
 new objectid = CreateObject(...);
 new attachtoid = CreateObject(...);
-
+ 
 AttachObjectToObject(objectid, attachtoid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 ```
 

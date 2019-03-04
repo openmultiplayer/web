@@ -1,3 +1,9 @@
+---
+title: AttachCameraToPlayerObject
+description: Attaches a player's camera to a player-object.
+tags: ["player"]
+---
+
 # AttachCameraToPlayerObject
 
 ::: warning

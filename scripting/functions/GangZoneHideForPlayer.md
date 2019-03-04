@@ -1,3 +1,9 @@
+---
+title: GangZoneHideForPlayer
+description: Hides a gangzone for a player.
+tags: ["player", "gangzone"]
+---
+
 # GangZoneHideForPlayer
 
 ## Description
@@ -17,19 +23,19 @@ This function does not return any specific values.
 
 ```c
 new gangzone;
-
+ 
 public OnGameModeInit()
 {
     gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
     return 1;
 }
-
+ 
 public OnPlayerSpawn(playerid)
 {
     GangZoneShowForPlayer(playerid, gangzone, 0xFF0000FF);
     return 1;
 }
-
+ 
 public OnPlayerDeath(playerid, killerid, reason)
 {
     GangZoneHideForPlayer(playerid,gangzone);

@@ -1,3 +1,9 @@
+---
+title: SetVehicleParamsEx
+description: Sets a vehicle's parameters for all players.
+tags: ["vehicle"]
+---
+
 # SetVehicleParamsEx
 
 ::: warning
@@ -35,7 +41,7 @@ new engine, lights, alarm, doors, bonnet, boot, objective;
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // ONLY the engine param was changed to VEHICLE_PARAMS_ON (1)
 new Timer_VehAlarm[MAX_VEHICLES];
-
+ 
 SetVehicleParamsEx_Fixed(vehicleid, &engine, &lights, &alarm, &doors, &bonnet, &boot, &objective)
 {
     SetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
@@ -45,7 +51,7 @@ SetVehicleParamsEx_Fixed(vehicleid, &engine, &lights, &alarm, &doors, &bonnet, &
         Timer_VehAlarm[vehicleid] = SetTimerEx("DisableVehicleAlarm", 20000, false, "d", vehicleid);
     }
 }
-
+ 
 forward DisableVehicleAlarm(vehicleid);
 public DisableVehicleAlarm(vehicleid)
 {

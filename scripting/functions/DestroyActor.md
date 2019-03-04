@@ -1,3 +1,9 @@
+---
+title: DestroyActor
+description: Destroy an actor which was created with CreateActor.
+tags: []
+---
+
 # DestroyActor
 
 ::: warning
@@ -24,13 +30,13 @@ Destroy an actor which was created with CreateActor.
 
 ```c
 new MyActor;
-
+ 
 public OnFilterScriptInit()
 {
     MyActor = CreateActor(...);
     return 1;
 }
-
+ 
 public OnFilterScriptExit()
 {
     DestroyActor(MyActor);

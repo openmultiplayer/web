@@ -1,3 +1,9 @@
+---
+title: floatlog
+description: This function allows you to get the logarithm of a float value.
+tags: []
+---
+
 # floatlog
 
 ## Description

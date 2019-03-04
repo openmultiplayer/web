@@ -1,3 +1,9 @@
+---
+title: SetTimerEx
+description: Sets a timer to call a function after the specified interval.
+tags: []
+---
+
 # SetTimerEx
 
 ## Description
@@ -29,26 +35,26 @@ SetTimerEx("EndAntiSpawnKill", 5000, false, "i", playerid);
 public OnPlayerSpawn(playerid)
 {
     // Anti-Spawnkill (5 seconds)
-
+ 
     // Set their health very high so they can't be killed
     SetPlayerHealth(playerid, 999999);
-
+ 
     // Notify them
     SendClientMessage(playerid, -1, "You are protected against spawn-killing for 5 seconds.");
-
+ 
     // Start a 5 second timer to end the anti-spawnkill
     SetTimerEx("EndAntiSpawnKill", 5000, false, "i", playerid);
 }
-
+ 
 // Forward (make public) the function so the server can 'see' it
 forward EndAntiSpawnKill(playerid);
-
+ 
 // The timer function - the code to be executed when the timer is called goes here
 public EndAntiSpawnKill(playerid)
 {
     // 5 seconds has passed, so let's set their health back to 100
     SetPlayerHealth(playerid, 100);
-
+ 
     // Let's notify them also
     SendClientMessage(playerid, -1, "You are no longer protected against spawn-killing.");
     return 1;

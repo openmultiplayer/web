@@ -1,3 +1,9 @@
+---
+title: TextDrawUseBox
+description: Toggle whether a textdraw uses a box or not.
+tags: ["textdraw"]
+---
+
 # TextDrawUseBox
 
 ## Description
@@ -19,7 +25,7 @@ Toggle whether a textdraw uses a box or not.
 
 ```c
 new Text:MyTextdraw;
-
+ 
 public OnGameModeInit()
 {
     MyTextDraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");

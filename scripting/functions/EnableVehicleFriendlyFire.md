@@ -1,3 +1,9 @@
+---
+title: EnableVehicleFriendlyFire
+description: Enable friendly fire for team vehicles.
+tags: ["vehicle"]
+---
+
 # EnableVehicleFriendlyFire
 
 ::: warning

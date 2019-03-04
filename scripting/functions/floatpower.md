@@ -1,3 +1,9 @@
+---
+title: floatpower
+description: Raises the given value to the power of the exponent.
+tags: []
+---
+
 # floatpower
 
 ## Description

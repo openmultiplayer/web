@@ -1,3 +1,9 @@
+---
+title: Db_close
+description: Closes an SQLite database that was opened with db_open.
+tags: []
+---
+
 # Db_close
 
 ## Description
@@ -36,7 +42,7 @@ public OnGameModeInit()
 	// ...
 	return 1;
 }
-
+ 
 public OnGameModeExit()
 {
 	// Close the connection to the database

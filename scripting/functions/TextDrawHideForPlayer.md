@@ -1,3 +1,9 @@
+---
+title: TextDrawHideForPlayer
+description: Hides a textdraw for a specific player.
+tags: ["player", "textdraw"]
+---
+
 # TextDrawHideForPlayer
 
 ## Description
@@ -17,25 +23,25 @@ This function does not return any specific values.
 
 ```c
 new Text:Textdraw[MAX_PLAYERS];
-
+ 
 public OnPlayerConnect(playerid)
 {
     Textdraw[playerid] = TextDrawCreate( ... );
     return 1;
 }
-
+ 
 public OnPlayerDisconnect(playerid, reason)
 {
     TextDrawDestroy(Textdraw[playerid]);
     return 1;
 }
-
+ 
 public OnPlayerSpawn(playerid)
 {
     TextDrawShowForPlayer(playerid, Textdraw[playerid]);
     return 1;
 }
-
+ 
 public OnPlayerDeath(playerid, reason)
 {
     TextDrawHideForPlayer(playerid, Textdraw[playerid]);

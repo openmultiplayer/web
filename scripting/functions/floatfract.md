@@ -1,3 +1,9 @@
+---
+title: floatfract
+description: Get the fractional part of a float.
+tags: []
+---
+
 # floatfract
 
 ## Description

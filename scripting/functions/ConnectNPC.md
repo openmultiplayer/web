@@ -1,3 +1,9 @@
+---
+title: ConnectNPC
+description: Connect an NPC to the server.
+tags: ["npc"]
+---
+
 # ConnectNPC
 
 ::: warning

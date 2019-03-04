@@ -1,3 +1,9 @@
+---
+title: GetPlayerCameraTargetVehicle
+description: Get the ID of the vehicle the player is looking at.
+tags: ["player", "vehicle"]
+---
+
 # GetPlayerCameraTargetVehicle
 
 ::: warning
@@ -27,13 +33,13 @@ public OnGameModeInit()
     globalVehicleID = CreateVehicle(596, 0, 0, 3, 0, 0, 0, -1, -1, -1);
     return 1;
 }
-
+ 
 public OnPlayerConnect(playerid)
 {
     EnablePlayerCameraTarget(playerid, true);
     return 1;
 }
-
+ 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/check", true))

@@ -1,3 +1,9 @@
+---
+title: CreateActor
+description: Create a static 'actor' in the world.
+tags: []
+---
+
 # CreateActor
 
 ::: warning
@@ -28,7 +34,7 @@ INVALID_ACTOR_ID (65535) If the actor limit (1000) is reached.
 
 ```c
 new ActorCJ;
-
+ 
 public OnGameModeInit()
 {
     // Create an actor (CJ) at Blueberry Acres (Center of SA map)

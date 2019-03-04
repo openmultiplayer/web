@@ -1,3 +1,9 @@
+---
+title: GangZoneHideForAll
+description: GangZoneHideForAll hides a gangzone from all players.
+tags: ["gangzone"]
+---
+
 # GangZoneHideForAll
 
 ## Description

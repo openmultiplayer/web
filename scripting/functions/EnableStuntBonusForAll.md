@@ -1,3 +1,9 @@
+---
+title: EnableStuntBonusForAll
+description: Enables or disables stunt bonuses for all players.
+tags: []
+---
+
 # EnableStuntBonusForAll
 
 ## Description

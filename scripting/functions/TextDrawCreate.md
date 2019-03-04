@@ -1,3 +1,9 @@
+---
+title: TextDrawCreate
+description: Creates a textdraw.
+tags: ["textdraw"]
+---
+
 # TextDrawCreate
 
 ## Description
@@ -20,7 +26,7 @@ The ID of the created textdraw. Textdraw IDs start at 0.
 // This variable is used to store the id of the textdraw
 // so that we can use it throught the script
 new Text:welcomeText;
-
+ 
 public OnGameModeInit()
 {
     // This line is used to create the textdraw.
@@ -28,7 +34,7 @@ public OnGameModeInit()
     welcomeText = TextDrawCreate(240.0,580.0,"Welcome to my SA-MP server");
     return 1;
 }
-
+ 
 public OnPlayerConnect(playerid)
 {
     //This is used to show the player the textdraw when they connect.

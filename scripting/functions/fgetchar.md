@@ -1,3 +1,9 @@
+---
+title: fgetchar
+description: Reads a single character from a file.
+tags: []
+---
+
 # fgetchar
 
 ## Description
@@ -19,10 +25,10 @@ If succeed, it returns the extended ASCII or UTF-8 value of the character at the
 ```c
 // Open "file.txt" in "read only" mode
 new File:handle = fopen("file.txt", io_read),
-
+ 
 	// Declare "g_char"
 	g_char;
-
+ 
 // Check, if "file.txt" is open
 if(handle)
 {
@@ -32,7 +38,7 @@ if(handle)
 		// Print the character
 		printf("[ \"file.txt\" ] 0x%x", g_char);
 	}
-
+ 
 	// Close "file.txt"
 	fclose(handle);
 }

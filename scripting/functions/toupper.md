@@ -1,3 +1,9 @@
+---
+title: toupper
+description: This function changes a single character to uppercase.
+tags: []
+---
+
 # toupper
 
 ## Description

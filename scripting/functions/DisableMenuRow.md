@@ -1,3 +1,9 @@
+---
+title: DisableMenuRow
+description: Disable a specific row in a menu for all players.
+tags: ["menu"]
+---
+
 # DisableMenuRow
 
 ## Description
@@ -17,7 +23,7 @@ This function always returns 1, even if the function fails. If an invalid row is
 
 ```c
 new Menu:WeaponMenu;
-
+ 
 WeaponMenu = CreateMenu("Weapons", 1, 50.0, 180.0, 200.0, 200.0);
 AddMenuItem(WeaponMenu, 0, "Rocket Launcher");
 AddMenuItem(WeaponMenu, 0, "Flamethrower");

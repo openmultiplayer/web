@@ -1,13 +1,19 @@
+---
+title: SetPlayerName
+description: Sets the name of a player.
+tags: ["player"]
+---
+
 # SetPlayerName
 
 ## Description
 
 Sets the name of a player.
 
-| Name         | Description                                                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | The ID of the player to set the name of.                                                                                      |
-| const name[] | The name to set. Must be 1-24 characters long and only contain valid characters (0-9, a-z, A-Z, [], (), $ @ . \_ and = only). |
+| Name         | Description                                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| playerid     | The ID of the player to set the name of.                                                                                       |
+| const name[] | The name to set. Must be 1-24 characters long and only contain valid characters (0-9, a-z, A-Z, [], (), \$ @ . \_ and = only). |
 
 ## Returns
 
@@ -26,7 +32,7 @@ if(strcmp(cmdtext, "/superman", true) == 0)
     SetPlayerName(playerid, "Superman");
     return 1;
 }
-
+ 
 // Command sets the players name to "Superman" if possible, informs the player of
 // any errors using a "switch" statement.
 if(strcmp(cmdtext, "/superman", true) == 0)

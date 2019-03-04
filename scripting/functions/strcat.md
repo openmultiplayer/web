@@ -1,3 +1,9 @@
+---
+title: strcat
+description: This function concatenates (joins together) two strings into the destination string.
+tags: []
+---
+
 # strcat
 
 ## Description
@@ -19,7 +25,7 @@ The length of the new destination string.
 ```c
 new string[40] = "Hello";
 strcat(string, " World!");
-
+ 
 // The string is now 'Hello World!'
 ```
 

@@ -1,3 +1,9 @@
+---
+title: flength
+description: Returns the length of a file.
+tags: []
+---
+
 # flength
 
 ## Description
@@ -17,15 +23,15 @@ The length of a file, in bytes.
 ```c
 // Open "file.txt" in "read only" mode
 new File:handle = fopen("file.txt", io_read);
-
+ 
 // If "file.txt" is open
 if(handle)
 {
 	// Success
-
+ 
 	// Print the size oin bytes of "file.txt"
 	printf("File size: %d", flength(handle));
-
+ 
 	// Close "file.txt"
 	fclose(handle);
 }

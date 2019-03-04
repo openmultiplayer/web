@@ -1,3 +1,9 @@
+---
+title: GetPVarType
+description: Gets the type (integer, float or string) of a player variable.
+tags: ["pvar"]
+---
+
 # GetPVarType
 
 ## Description
@@ -36,7 +42,7 @@ stock PrintPVar(playerid, varname[])
         {
             new varstring[256];
             GetPVarString(playerid, varname, varstring);
-
+ 
             printf("String PVar '%s': %s", varname, varstring);
         }
     }

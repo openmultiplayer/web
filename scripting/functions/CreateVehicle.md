@@ -1,3 +1,9 @@
+---
+title: CreateVehicle
+description: Creates a vehicle in the world.
+tags: ["vehicle"]
+---
+
 # CreateVehicle
 
 ## Description

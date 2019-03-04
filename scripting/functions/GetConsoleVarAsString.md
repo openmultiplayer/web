@@ -1,3 +1,9 @@
+---
+title: GetConsoleVarAsString
+description: Get the string value of a console variable.
+tags: []
+---
+
 # GetConsoleVarAsString
 
 ## Description

@@ -1,3 +1,9 @@
+---
+title: SetPlayerObjectMaterial
+description: Replace the texture of a player-object with the texture from another model in the game.
+tags: ["player"]
+---
+
 # SetPlayerObjectMaterial
 
 ::: warning

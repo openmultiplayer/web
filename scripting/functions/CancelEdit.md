@@ -1,3 +1,9 @@
+---
+title: CancelEdit
+description: Cancel object edition mode for a player.
+tags: []
+---
+
 # CancelEdit
 
 ::: warning

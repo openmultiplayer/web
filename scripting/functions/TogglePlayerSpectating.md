@@ -1,3 +1,9 @@
+---
+title: TogglePlayerSpectating
+description: Toggle whether a player is in spectator mode or not.
+tags: ["player"]
+---
+
 # TogglePlayerSpectating
 
 ## Description

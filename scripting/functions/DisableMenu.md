@@ -1,3 +1,9 @@
+---
+title: DisableMenu
+description: Disable a menu.
+tags: ["menu"]
+---
+
 # DisableMenu
 
 ## Description
@@ -16,13 +22,13 @@ This function does not return any specific values.
 
 ```c
 new WeaponMenu;
-
+ 
 WeaponMenu = CreateMenu("Weapons", 1, 50.0, 180.0, 200.0, 200.0);
 AddMenuItem(WeaponMenu, 0, "Rocket Launcher");
 AddMenuItem(WeaponMenu, 0, "Flamethrower");
 AddMenuItem(WeaponMenu, 0, "Minigun");
 AddMenuItem(WeaponMenu, 0, "Grenades");
-
+ 
 // Under OnPlayerCommandText
 if(!strcmp(cmdtext, "/disableguns", true))
 {

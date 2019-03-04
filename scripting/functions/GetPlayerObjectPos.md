@@ -1,3 +1,9 @@
+---
+title: GetPlayerObjectPos
+description: Get the position of a player object (CreatePlayerObject).
+tags: ["player"]
+---
+
 # GetPlayerObjectPos
 
 ## Description

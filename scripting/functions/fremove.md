@@ -1,3 +1,9 @@
+---
+title: fremove
+description: Delete a file.
+tags: []
+---
+
 # fremove
 
 ## Description

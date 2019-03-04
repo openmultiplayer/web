@@ -1,3 +1,9 @@
+---
+title: SetPlayerScore
+description: Set a player's score.
+tags: ["player"]
+---
+
 # SetPlayerScore
 
 ## Description

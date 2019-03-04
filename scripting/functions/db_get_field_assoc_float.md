@@ -1,3 +1,9 @@
+---
+title: db_get_field_assoc_float
+description: Get the contents of field as a float with specified name.
+tags: []
+---
+
 # db_get_field_assoc_float
 
 ## Description

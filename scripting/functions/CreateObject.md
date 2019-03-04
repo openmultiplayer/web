@@ -1,3 +1,9 @@
+---
+title: CreateObject
+description: Creates an object at specified coordinates in the game world.
+tags: []
+---
+
 # CreateObject
 
 ## Description

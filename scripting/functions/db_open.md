@@ -1,3 +1,9 @@
+---
+title: db_open
+description: This function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.
+tags: []
+---
+
 # db_open
 
 ## Description
@@ -34,7 +40,7 @@ public OnGameModeInit()
 	// ...
 	return 1;
 }
-
+ 
 public OnGameModeExit()
 {
 	// Close the connection to the database

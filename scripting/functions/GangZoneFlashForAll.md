@@ -1,3 +1,9 @@
+---
+title: GangZoneFlashForAll
+description: GangZoneFlashForAll flashes a gangzone for all players.
+tags: ["gangzone"]
+---
+
 # GangZoneFlashForAll
 
 ## Description
@@ -17,13 +23,13 @@ This function does not return any specific values.
 
 ```c
 new gangzone;
-
+ 
 public OnGameModeInit()
 {
     gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
     return 1;
 }
-
+ 
 public OnPlayerDeath(playerid, killerid, reason)
 {
     GangZoneFlashForAll(gangzone,COLOR_RED);

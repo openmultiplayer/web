@@ -1,3 +1,9 @@
+---
+title: format
+description: Formats a string to include variables and other strings inside it.
+tags: []
+---
+
 # format
 
 ## Description
@@ -29,7 +35,7 @@ format(string,sizeof(string),"Your score is: %d",GetPlayerScore(playerid));
 SendClientMessage(playerid,0xFFFFFFAA,string);
 new hour, minute, second, string[32];
 gettime(hour, minute, second);
-
+ 
 format(string, sizeof(string), "The time is %02d:%02d:%02d.", hour, minute, second); // will output something like 09:45:02
 SendClientMessage(playerid, -1, string);
 new string[35];

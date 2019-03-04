@@ -1,3 +1,9 @@
+---
+title: AddVehicleComponent
+description: Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle.
+tags: ["vehicle"]
+---
+
 # AddVehicleComponent
 
 ## Description
@@ -21,13 +27,13 @@ Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. V
 
 ```c
 new gTAXI;
-
+ 
 public OnGameModeInit()
 {
     gTAXI = AddStaticVehicle(420, -2482.4937, 2242.3936, 4.6225, 179.3656, 6, 1); // Taxi
     return 1;
 }
-
+ 
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER && oldstate == PLAYER_STATE_ONFOOT)

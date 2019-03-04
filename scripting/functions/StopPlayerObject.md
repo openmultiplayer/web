@@ -1,3 +1,9 @@
+---
+title: StopPlayerObject
+description: Stop a moving player-object after MovePlayerObject has been used.
+tags: ["player"]
+---
+
 # StopPlayerObject
 
 ## Description

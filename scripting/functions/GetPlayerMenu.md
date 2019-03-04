@@ -1,3 +1,9 @@
+---
+title: GetPlayerMenu
+description: Gets the ID of the menu the player is currently viewing (shown by ShowMenuForPlayer).
+tags: ["player", "menu"]
+---
+
 # GetPlayerMenu
 
 ## Description

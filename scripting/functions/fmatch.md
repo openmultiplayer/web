@@ -1,3 +1,9 @@
+---
+title: fmatch
+description: Find a filename matching a pattern.
+tags: []
+---
+
 # fmatch
 
 ## Description

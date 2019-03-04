@@ -1,3 +1,9 @@
+---
+title: DeletePVar
+description: Deletes a previously set player variable.
+tags: ["pvar"]
+---
+
 # DeletePVar
 
 ## Description
@@ -19,9 +25,9 @@ Deletes a previously set player variable.
 
 ```c
 SetPVarInt(playerid, "SomeVarName", 69);
-
+ 
 // Later on, when the variable is no longer needed...
-
+ 
 DeletePVar(playerid, "SomeVarName");
 ```
 

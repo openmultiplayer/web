@@ -1,3 +1,9 @@
+---
+title: FindTextureFileNameFromCRC
+description: Find an existing custom skin or simple object texture file.
+tags: []
+---
+
 # FindTextureFileNameFromCRC
 
 ::: warning

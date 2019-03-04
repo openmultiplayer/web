@@ -1,3 +1,9 @@
+---
+title: AddSimpleModel
+description: Adds a new custom simple object model for download.
+tags: []
+---
+
 # AddSimpleModel
 
 ::: warning
@@ -35,7 +41,9 @@ public OnGameModeInit()
 ```
 
 ```
+
 AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
+
 ```
 
 ## Notes

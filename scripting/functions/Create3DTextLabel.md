@@ -1,3 +1,9 @@
+---
+title: Create3DTextLabel
+description: Creates a 3D Text Label at a specific location in the world.
+tags: ["3dtextlabel"]
+---
+
 # Create3DTextLabel
 
 ::: warning

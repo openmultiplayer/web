@@ -1,3 +1,9 @@
+---
+title: GetObjectPos
+description: Get the position of an object.
+tags: []
+---
+
 # GetObjectPos
 
 ## Description

@@ -1,3 +1,9 @@
+---
+title: SetVehicleZAngle
+description: Set the Z rotation (yaw) of a vehicle.
+tags: ["vehicle"]
+---
+
 # SetVehicleZAngle
 
 ## Description
@@ -30,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0xFFFFFFFF, "Your vehicle has been flipped.");
         return 1;
     }
-
+ 
      return 0;
 }
 ```

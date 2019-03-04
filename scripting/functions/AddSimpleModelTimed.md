@@ -1,3 +1,9 @@
+---
+title: AddSimpleModelTimed
+description: Adds a new custom simple object model for download.
+tags: []
+---
+
 # AddSimpleModelTimed
 
 ::: warning

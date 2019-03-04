@@ -1,3 +1,9 @@
+---
+title: SetPlayerHoldingObject
+description: Attaches an object to a bone.
+tags: ["player"]
+---
+
 # SetPlayerHoldingObject
 
 ::: warning

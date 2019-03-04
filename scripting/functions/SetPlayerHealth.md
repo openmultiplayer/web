@@ -1,3 +1,9 @@
+---
+title: SetPlayerHealth
+description: Set the health of a player.
+tags: ["player"]
+---
+
 # SetPlayerHealth
 
 ## Description

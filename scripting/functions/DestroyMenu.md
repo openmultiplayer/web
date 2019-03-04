@@ -1,3 +1,9 @@
+---
+title: DestroyMenu
+description: Destroys the specified menu.
+tags: ["menu"]
+---
+
 # DestroyMenu
 
 ## Description
@@ -17,7 +23,7 @@ True if the destroying was successful, otherwise false
 ```c
 new Menu:examplemenu;
 examplemenu = CreateMenu("Your Menu", 2, 200.0, 100.0, 150.0, 150.0);
-
+ 
 // ...
 DestroyMenu(examplemenu);
 ```

@@ -1,3 +1,9 @@
+---
+title: float
+description: Converts an integer into a float.
+tags: []
+---
+
 # float
 
 ## Description

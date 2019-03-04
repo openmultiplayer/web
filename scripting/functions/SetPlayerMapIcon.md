@@ -1,3 +1,9 @@
+---
+title: SetPlayerMapIcon
+description: Place an icon/marker on a player's map.
+tags: ["player"]
+---
+
 # SetPlayerMapIcon
 
 ## Description

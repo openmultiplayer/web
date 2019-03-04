@@ -1,3 +1,9 @@
+---
+title: SetSVarInt
+description: Set an integer server variable.
+tags: []
+---
+
 # SetSVarInt
 
 ::: warning

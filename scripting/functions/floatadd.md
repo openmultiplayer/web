@@ -1,3 +1,9 @@
+---
+title: floatadd
+description: Adds two floats together.
+tags: []
+---
+
 # floatadd
 
 ## Description

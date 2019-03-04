@@ -1,3 +1,9 @@
+---
+title: CallLocalFunction
+description: Calls a public function from the script in which it is used.
+tags: []
+---
+
 # CallLocalFunction
 
 ## Description
@@ -23,7 +29,7 @@ public  callMe(const string[])
     printf("callMe> %s", string);
     return 1;
 }
-
+ 
 CallLocalFunction("callMe", "s", "OHAI THAR BAGPUSS!!11");
 ```
 

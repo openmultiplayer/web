@@ -1,3 +1,9 @@
+---
+title: UpdateVehicleDamageStatus
+description: Sets the various visual damage statuses of a vehicle, such as popped tires, broken lights and damaged panels.
+tags: ["vehicle"]
+---
+
 # UpdateVehicleDamageStatus
 
 ::: warning

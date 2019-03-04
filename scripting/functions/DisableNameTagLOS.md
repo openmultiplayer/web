@@ -1,3 +1,9 @@
+---
+title: DisableNameTagLOS
+description: Disables the nametag Line-Of-Sight checking so that players can see nametags through objects.
+tags: []
+---
+
 # DisableNameTagLOS
 
 ::: warning

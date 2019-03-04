@@ -1,3 +1,9 @@
+---
+title: ApplyAnimation
+description: Apply an animation to a player.
+tags: []
+---
+
 # ApplyAnimation
 
 ## Description

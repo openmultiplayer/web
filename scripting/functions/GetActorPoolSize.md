@@ -1,3 +1,9 @@
+---
+title: GetActorPoolSize
+description: Gets the highest actorid created on the server.
+tags: []
+---
+
 # GetActorPoolSize
 
 ::: warning

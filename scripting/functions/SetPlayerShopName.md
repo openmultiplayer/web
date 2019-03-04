@@ -1,3 +1,9 @@
+---
+title: SetPlayerShopName
+description: Loads or unloads an interior script for a player (for example the ammunation menu).
+tags: ["player"]
+---
+
 # SetPlayerShopName
 
 ::: warning

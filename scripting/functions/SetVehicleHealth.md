@@ -1,3 +1,9 @@
+---
+title: SetVehicleHealth
+description: Set a vehicle's health.
+tags: ["vehicle"]
+---
+
 # SetVehicleHealth
 
 ## Description

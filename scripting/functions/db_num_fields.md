@@ -1,3 +1,9 @@
+---
+title: db_num_fields
+description: Get the number of fields in a result.
+tags: []
+---
+
 # db_num_fields
 
 ## Description
@@ -18,19 +24,19 @@ The number of fields in the result.
 // ...
 // Declare "db_result" and select all rows and columns from "spawn_list"
 new DBResult:db_result = db_query(db_handle, "SELECT * FROM `spawn_list` WHERE 1;");
-
+ 
 // Print the amount of columns selected
 printf("Selected columns: %d", db_num_fields(db_result));
-
+ 
 // Do...
 do
 {
 	// ...
 }
-
+ 
 // While next row has been fetched
 while(db_next_row(db_handle));
-
+ 
 // Frees result
 db_free_result(db_result);
 // ...

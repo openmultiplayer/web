@@ -1,3 +1,9 @@
+---
+title: GetActorFacingAngle
+description: Get the facing angle of an actor.
+tags: []
+---
+
 # GetActorFacingAngle
 
 ::: warning

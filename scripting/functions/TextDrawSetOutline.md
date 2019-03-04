@@ -1,3 +1,9 @@
+---
+title: TextDrawSetOutline
+description: Sets the thickness of a textdraw's text's outline.
+tags: ["textdraw"]
+---
+
 # TextDrawSetOutline
 
 ## Description
@@ -17,7 +23,7 @@ This function does not return any specific values.
 
 ```c
 new Text:MyTextdraw;
-
+ 
 public OnGameModeInit()
 {
     MyTextDraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");

@@ -1,3 +1,9 @@
+---
+title: funcidx
+description: This function returns the ID of a public function by its name.
+tags: []
+---
+
 # funcidx
 
 ## Description

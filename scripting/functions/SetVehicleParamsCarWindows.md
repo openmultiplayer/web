@@ -1,3 +1,9 @@
+---
+title: SetVehicleParamsCarWindows
+description: Allows you to open and close the windows of a vehicle.
+tags: ["vehicle"]
+---
+
 # SetVehicleParamsCarWindows
 
 ::: warning

@@ -1,3 +1,9 @@
+---
+title: TextDrawSetProportional
+description: Appears to scale text spacing to a proportional ratio.
+tags: ["textdraw"]
+---
+
 # TextDrawSetProportional
 
 ## Description
@@ -17,7 +23,7 @@ This function does not return any specific values.
 
 ```c
 new Text:MyTextdraw;
-
+ 
 public OnGameModeInit()
 {
     MyTextDraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");

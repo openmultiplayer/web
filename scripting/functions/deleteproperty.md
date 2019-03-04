@@ -1,3 +1,9 @@
+---
+title: deleteproperty
+description: Delete an earlier set property (setproperty).
+tags: []
+---
+
 # deleteproperty
 
 ## Description

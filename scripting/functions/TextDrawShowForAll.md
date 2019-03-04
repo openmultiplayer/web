@@ -1,3 +1,9 @@
+---
+title: TextDrawShowForAll
+description: Shows a textdraw for all players.
+tags: ["textdraw"]
+---
+
 # TextDrawShowForAll
 
 ## Description

@@ -1,3 +1,9 @@
+---
+title: floatsub
+description: Subtracts one float from another one.
+tags: []
+---
+
 # floatsub
 
 ## Description

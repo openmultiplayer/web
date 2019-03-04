@@ -1,3 +1,9 @@
+---
+title: TextDrawSetPreviewRot
+description: Sets the rotation and zoom of a 3D model preview textdraw.
+tags: ["textdraw"]
+---
+
 # TextDrawSetPreviewRot
 
 ::: warning
@@ -25,7 +31,7 @@ This function does not return any specific values.
 
 ```c
 new Text:textdraw
-
+ 
 public OnGameModeInit()
 {
 	textdraw = TextDrawCreate(320.0, 240.0, "_");

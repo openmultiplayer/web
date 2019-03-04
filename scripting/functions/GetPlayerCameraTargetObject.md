@@ -1,3 +1,9 @@
+---
+title: GetPlayerCameraTargetObject
+description: Allows you to retrieve the ID of the object the player is looking at.
+tags: ["player"]
+---
+
 # GetPlayerCameraTargetObject
 
 ::: warning
@@ -27,7 +33,7 @@ public OnGameModeInit()
     globalObjectID = CreateObject(1337, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0);
     return 1;
 }
-
+ 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/check", true))

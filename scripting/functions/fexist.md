@@ -1,3 +1,9 @@
+---
+title: fexist
+description: Checks if a specific file exists in the scriptfiles directory.
+tags: []
+---
+
 # fexist
 
 ## Description
@@ -20,7 +26,7 @@ The number of files that match the pattern.
 if(fexist("file.txt"))
 {
 	// Success
-
+ 
 	// Print the success
 	print("\"file.txt\" exists.");
 }

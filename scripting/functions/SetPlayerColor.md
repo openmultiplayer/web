@@ -1,3 +1,9 @@
+---
+title: SetPlayerColor
+description: Set the colour of a player's nametag and marker (radar blip).
+tags: ["player"]
+---
+
 # SetPlayerColor
 
 ## Description
@@ -18,7 +24,7 @@ This function does not return any specific values.
 ```c
 // Red, using hexadecimal notation:
 SetPlayerColor(playerid, 0xFF0000FF);
-
+ 
 //Red, using decimal notation:
 SetPlayerColor(playerid, 4278190335);
 ```

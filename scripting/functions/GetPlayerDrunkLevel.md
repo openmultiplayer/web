@@ -1,3 +1,9 @@
+---
+title: GetPlayerDrunkLevel
+description: Checks the player's level of drunkenness.
+tags: ["player"]
+---
+
 # GetPlayerDrunkLevel
 
 ::: warning

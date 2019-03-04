@@ -1,3 +1,9 @@
+---
+title: TextDrawDestroy
+description: Destroys a previously-created textdraw.
+tags: ["textdraw"]
+---
+
 # TextDrawDestroy
 
 ## Description
@@ -16,13 +22,13 @@ This function does not return any specific values.
 
 ```c
 new Text:textdraw[MAX_PLAYERS];
-
+ 
 public OnPlayerConnect(playerid)
 {
     textdraw[playerid] = TextDrawCreate(...);
     return 1;
 }
-
+ 
 public OnPlayerDisconnect(playerid, reason)
 {
     TextDrawDestroy(textdraw[playerid]);

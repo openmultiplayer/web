@@ -1,3 +1,9 @@
+---
+title: strlen
+description: Get the length of a string.
+tags: []
+---
+
 # strlen
 
 ## Description

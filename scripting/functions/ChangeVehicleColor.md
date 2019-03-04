@@ -1,3 +1,9 @@
+---
+title: ChangeVehicleColor
+description: Change a vehicle's primary and secondary colors.
+tags: ["vehicle"]
+---
+
 # ChangeVehicleColor
 
 ## Description

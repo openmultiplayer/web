@@ -1,3 +1,9 @@
+---
+title: GetPlayerLastShotVectors
+description: Retrieves the start and end (hit) position of the last bullet a player fired.
+tags: ["player"]
+---
+
 # GetPlayerLastShotVectors
 
 ::: warning
@@ -38,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new lsString[128],
             Float:fOriginX, Float:fOriginY, Float:fOriginZ,
             Float:fHitPosX, Float:fHitPosY, Float:fHitPosZ;
-
+ 
         GetPlayerLastShotVectors(playerid, fOriginX, fOriginY, fOriginZ, fHitPosX, fHitPosY, fHitPosZ);
         format(lsString, 128, "Last Shot Information: Origin: %f, %f, %f. Hit position: %f, %f, %f", fOriginX, fOriginY, fOriginZ, fHitPosX, fHitPosY, fHitPosZ);
         SendClientMessage(playerid, -1, lsString);

@@ -1,3 +1,9 @@
+---
+title: ShowPlayerMarkers
+description: Toggles player markers (blips on the radar).
+tags: ["player"]
+---
+
 # ShowPlayerMarkers
 
 ## Description

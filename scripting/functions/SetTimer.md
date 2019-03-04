@@ -1,3 +1,9 @@
+---
+title: SetTimer
+description: Sets a 'timer' to call a function after some time.
+tags: []
+---
+
 # SetTimer
 
 ## Description
@@ -18,13 +24,13 @@ The ID of the timer that was started. Timer IDs start at 1.
 
 ```c
 forward message();
-
+ 
 public OnGameModeInit()
 {
     print("Starting timer...");
     SetTimer("message", 1000, false); // Set a timer of 1000 miliseconds (1 second)
 }
-
+ 
 public message()
 {
     print("1 second has passed.");

@@ -1,3 +1,9 @@
+---
+title: GangZoneShowForPlayer
+description: Show a gangzone for a player.
+tags: ["player", "gangzone"]
+---
+
 # GangZoneShowForPlayer
 
 ## Description
@@ -18,13 +24,13 @@ Show a gangzone for a player. Must be created with GangZoneCreate first.
 
 ```c
 new Zone;
-
+ 
 public OnGameModeInit()
 {
     Zone = GangZoneCreate(1082.962, -2787.229, 2942.549, -1859.51);
     return 1;
 }
-
+ 
 public OnPlayerSpawn(playerid)
 {
     GangZoneShowForPlayer(playerid, Zone, 0xFFFF0096);

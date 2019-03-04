@@ -1,3 +1,9 @@
+---
+title: CreateMenu
+description: Creates a menu.
+tags: ["menu"]
+---
+
 # CreateMenu
 
 ## Description
@@ -21,7 +27,7 @@ The ID of the new menu or -1 on failure.
 
 ```c
 new Menu:examplemenu;
-
+ 
 public OnGameModeInit()
 {
     examplemenu = CreateMenu("Your Menu", 2, 200.0, 100.0, 150.0, 150.0);

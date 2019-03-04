@@ -1,3 +1,9 @@
+---
+title: DeleteSVar
+description: Deletes a previously set server variable.
+tags: []
+---
+
 # DeleteSVar
 
 ## Description
@@ -18,9 +24,9 @@ Deletes a previously set server variable.
 
 ```c
 SetSVarInt("SomeVarName", 69);
-
+ 
 // Later on, when the variable is no longer needed...
-
+ 
 DeleteSVar("SomeVarName");
 ```
 

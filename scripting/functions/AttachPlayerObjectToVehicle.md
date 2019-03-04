@@ -1,3 +1,9 @@
+---
+title: AttachPlayerObjectToVehicle
+description: Attach a player object to a vehicle.
+tags: ["player", "vehicle"]
+---
+
 # AttachPlayerObjectToVehicle
 
 ::: warning
@@ -35,7 +41,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
     {
         // Attach massive cow.
         new cow_object = CreatePlayerObject(playerid, 16442, 0, 0, 0, 0, 0, 0);
-
+ 
         AttachPlayerObjectToVehicle(playerid, cow_object, GetPlayerVehicleID(playerid), 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
     }
 }

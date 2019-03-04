@@ -1,3 +1,9 @@
+---
+title: CreateExplosionForPlayer
+description: Creates an explosion that is only visible to a single player.
+tags: ["player"]
+---
+
 # CreateExplosionForPlayer
 
 ::: warning

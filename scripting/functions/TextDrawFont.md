@@ -1,3 +1,9 @@
+---
+title: TextDrawFont
+description: Changes the text font.
+tags: ["textdraw"]
+---
+
 # TextDrawFont
 
 ## Description
@@ -23,7 +29,7 @@ This function does not return any specific values.
 
 ```c
 new Text:MyTextdraw;
-
+ 
 public OnGameModeInit()
 {
     MyTextdraw= TextDrawCreate(320.0, 425.0, "This is an example textdraw");

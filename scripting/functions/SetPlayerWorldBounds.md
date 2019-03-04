@@ -1,3 +1,9 @@
+---
+title: SetPlayerWorldBounds
+description: Set the world boundaries for a player.
+tags: ["player"]
+---
+
 # SetPlayerWorldBounds
 
 ## Description
@@ -36,6 +42,7 @@ public OnPlayerSpawn(playerid)
             |----------|
                 ymin
                (South)
+
 ```
 
 ## Notes

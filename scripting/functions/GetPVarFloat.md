@@ -1,3 +1,9 @@
+---
+title: GetPVarFloat
+description: Gets a player variable as a float.
+tags: ["pvar"]
+---
+
 # GetPVarFloat
 
 ## Description

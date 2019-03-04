@@ -1,3 +1,9 @@
+---
+title: CreatePlayerObject
+description: Creates an object which will be visible to only one player.
+tags: ["player"]
+---
+
 # CreatePlayerObject
 
 ## Description
@@ -24,16 +30,16 @@ The ID of the object that was created, or INVALID_OBJECT_ID if the object limit 
 
 ```c
 new pObject[MAX_PLAYERS];
-
+ 
 public OnPlayerConnect(playerid)
 {
     pObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0, 0, 96);
-
+ 
     // Or alternatively, using the DrawDistance parameter to show it from as far away as possible:
     pObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0, 0, 96, 300.0);
     return 1;
 }
-
+ 
 public OnPlayerDisconnect(playerid, reason)
 {
     DestroyPlayerObject(playerid, pObject[playerid]);

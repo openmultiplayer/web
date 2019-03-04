@@ -1,3 +1,9 @@
+---
+title: SetPlayerSkillLevel
+description: Set the skill level of a certain weapon type for a player.
+tags: ["player"]
+---
+
 # SetPlayerSkillLevel
 
 ::: warning

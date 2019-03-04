@@ -1,3 +1,9 @@
+---
+title: AttachPlayerObjectToPlayer
+description: The same as AttachObjectToPlayer but for objects which were created for player.
+tags: ["player"]
+---
+
 # AttachPlayerObjectToPlayer
 
 ## Description

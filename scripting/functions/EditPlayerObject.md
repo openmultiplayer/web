@@ -1,3 +1,9 @@
+---
+title: EditPlayerObject
+description: Allows players to edit a player-object (position and rotation) with a GUI and their mouse.
+tags: ["player"]
+---
+
 # EditPlayerObject
 
 ::: warning
@@ -29,7 +35,7 @@ public OnPlayerSpawn(playerid)
 {
     object[playerid] = CreatePlayerObject(playerid, 1337, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 }
-
+ 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/edit", true))

@@ -1,3 +1,9 @@
+---
+title: GetPlayerFacingAngle
+description: Gets the angle a player is facing.
+tags: ["player"]
+---
+
 # GetPlayerFacingAngle
 
 ## Description

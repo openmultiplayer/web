@@ -1,3 +1,9 @@
+---
+title: SetPlayerObjectMaterialText
+description: Replace the texture of a player object with text.
+tags: ["player"]
+---
+
 # SetPlayerObjectMaterialText
 
 ::: warning

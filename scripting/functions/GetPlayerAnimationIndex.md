@@ -1,3 +1,9 @@
+---
+title: GetPlayerAnimationIndex
+description: Returns the index of any running applied animations.
+tags: ["player"]
+---
+
 # GetPlayerAnimationIndex
 
 ::: warning

@@ -1,3 +1,9 @@
+---
+title: SetPlayerInterior
+description: Set a player's interior.
+tags: ["player"]
+---
+
 # SetPlayerInterior
 
 ## Description

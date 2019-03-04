@@ -1,3 +1,9 @@
+---
+title: SetVehicleNumberPlate
+description: Set a vehicle numberplate.
+tags: ["vehicle"]
+---
+
 # SetVehicleNumberPlate
 
 ::: warning

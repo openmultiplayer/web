@@ -1,3 +1,9 @@
+---
+title: SetPlayerWeather
+description: Set a player's weather.
+tags: ["player"]
+---
+
 # SetPlayerWeather
 
 ## Description

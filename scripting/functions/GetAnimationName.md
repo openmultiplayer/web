@@ -1,3 +1,9 @@
+---
+title: GetAnimationName
+description: Get the animation library/name for the index.
+tags: []
+---
+
 # GetAnimationName
 
 ::: warning

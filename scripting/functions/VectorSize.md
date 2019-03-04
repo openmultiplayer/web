@@ -1,3 +1,9 @@
+---
+title: VectorSize
+description: Returns the norm (length) of the provided vector.
+tags: []
+---
+
 # VectorSize
 
 ::: warning

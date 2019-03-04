@@ -1,3 +1,9 @@
+---
+title: GetPlayerCameraPos
+description: Get the position of the player's camera.
+tags: ["player"]
+---
+
 # GetPlayerCameraPos
 
 ::: warning
@@ -28,10 +34,10 @@ public OnPlayerDisconnect(playerid)
 {
     new Float:x, Float:y, Float:z;
     GetPlayerCameraPos(playerid, x, y, z);
-
+ 
     printf("The player left when they had their camera at %f,%f,%f.", x, y, z);
     // You could write this to a userfile.
-
+ 
     return 1;
 }
 ```

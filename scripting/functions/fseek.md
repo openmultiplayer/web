@@ -1,3 +1,9 @@
+---
+title: fseek
+description: Change the current position in the file.
+tags: []
+---
+
 # fseek
 
 ## Description
@@ -22,21 +28,21 @@ The new position; relative to the start of the file.
 ```c
 // Open "file.txt" in "read only" mode
 new File:handle = fopen("file.txt", io_read);
-
+ 
 // If "file.txt" is open
 if(handle)
 {
 	// Success
-
+ 
 	// Jump to the 1st byte of "file.txt", and print its position
 	printf("Begin of file position: %d", fseek(handle, 0, seek_start));
-
+ 
 	// Jump to the last byte of "file.txt", and print its position
 	printf("End of file position: %d", fseek(handle, 0, seek_end));
-
+ 
 	// Jump to the same byte of "file.txt", and print its position
 	printf("Currrent file position: %d", fseek(handle, 0, seek_current));
-
+ 
 	// Close "file.txt"
 	fclose(handle);
 }

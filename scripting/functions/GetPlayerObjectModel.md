@@ -1,3 +1,9 @@
+---
+title: GetPlayerObjectModel
+description: Retrieve the model ID of a player-object.
+tags: ["player"]
+---
+
 # GetPlayerObjectModel
 
 ::: warning

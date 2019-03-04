@@ -1,3 +1,9 @@
+---
+title: SetPlayerRaceCheckpoint
+description: Creates a race checkpoint.
+tags: ["player", "checkpoint", "racecheckpoint"]
+---
+
 # SetPlayerRaceCheckpoint
 
 ## Description

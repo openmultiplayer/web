@@ -1,3 +1,9 @@
+---
+title: GetPlayerAmmo_DE
+description: Gibt die Munition der vom Spieler aktuell gehaltenen Waffe zurück.
+tags: ["player"]
+---
+
 # GetPlayerAmmo_DE
 
 ## Description

@@ -1,3 +1,9 @@
+---
+title: floatabs
+description: This function returns the absolute value of float.
+tags: []
+---
+
 # floatabs
 
 ## Description

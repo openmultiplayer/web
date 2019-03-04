@@ -1,3 +1,9 @@
+---
+title: TextDrawShowForPlayer
+description: Shows a textdraw for a specific player.
+tags: ["player", "textdraw"]
+---
+
 # TextDrawShowForPlayer
 
 ## Description

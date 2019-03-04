@@ -1,3 +1,9 @@
+---
+title: DestroyVehicle
+description: Destroy a vehicle.
+tags: ["vehicle"]
+---
+
 # DestroyVehicle
 
 ## Description
@@ -25,7 +31,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
           DestroyVehicle(vehicleid);
           return 1;
      }
-
+ 
      return 0;
 }
 ```

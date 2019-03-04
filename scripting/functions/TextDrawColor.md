@@ -1,3 +1,9 @@
+---
+title: TextDrawColor
+description: Sets the text color of a textdraw.
+tags: ["textdraw"]
+---
+
 # TextDrawColor
 
 ## Description
@@ -17,7 +23,7 @@ This function does not return any specific values.
 
 ```c
 new Text:Example;
-
+ 
 public OnGameModeInit()
 {
     Example = TextDrawCreate(123.0, 123.0, "Example");

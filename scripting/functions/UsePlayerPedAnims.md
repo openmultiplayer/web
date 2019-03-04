@@ -1,3 +1,9 @@
+---
+title: UsePlayerPedAnims
+description: Uses standard player walking animation (animation of the CJ skin) instead of custom animations for every skin (e.
+tags: ["player"]
+---
+
 # UsePlayerPedAnims
 
 ## Description

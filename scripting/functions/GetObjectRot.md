@@ -1,3 +1,9 @@
+---
+title: GetObjectRot
+description: Use this function to get the objects current rotation.
+tags: []
+---
+
 # GetObjectRot
 
 ## Description

@@ -1,3 +1,9 @@
+---
+title: SetPlayerPos
+description: Set a player's position.
+tags: ["player"]
+---
+
 # SetPlayerPos
 
 ## Description

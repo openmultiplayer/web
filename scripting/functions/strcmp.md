@@ -1,3 +1,9 @@
+---
+title: strcmp
+description: Compares two strings to see if they are the same.
+tags: []
+---
+
 # strcmp
 
 ## Description
@@ -20,18 +26,18 @@ Compares two strings to see if they are the same.
 ```c
 new string1[] = "Hello World";
 new string2[] = "Hello World";
-
+ 
 // Check if the strings are the same
 if(!strcmp(string1, string2))
-
+ 
 new string3[] = "Hell";
-
+ 
 // Check if the first 4 characters match
 if(!strcmp(string2, string3, false, 4))
-
+ 
 // Check for null strings with isnull()
 if(!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
-
+ 
 // Definition for isnull():
 #if !defined isnull
     #define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))

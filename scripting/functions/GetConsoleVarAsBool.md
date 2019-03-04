@@ -1,3 +1,9 @@
+---
+title: GetConsoleVarAsBool
+description: Get the boolean value of a console variable.
+tags: []
+---
+
 # GetConsoleVarAsBool
 
 ## Description

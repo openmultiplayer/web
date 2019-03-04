@@ -1,3 +1,9 @@
+---
+title: SetPlayerVirtualWorld
+description: Set the virtual world of a player.
+tags: ["player"]
+---
+
 # SetPlayerVirtualWorld
 
 ## Description

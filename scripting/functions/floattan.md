@@ -1,3 +1,9 @@
+---
+title: floattan
+description: Get the tangent from a given angle.
+tags: []
+---
+
 # floattan
 
 ## Description

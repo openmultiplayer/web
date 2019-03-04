@@ -1,3 +1,9 @@
+---
+title: DeletePlayer3DTextLabel
+description: Destroy a 3D text label that was created using CreatePlayer3DTextLabel.
+tags: ["player", "3dtextlabel"]
+---
+
 # DeletePlayer3DTextLabel
 
 ::: warning
@@ -25,7 +31,7 @@ Destroy a 3D text label that was created using CreatePlayer3DTextLabel.
 
 ```c
 new PlayerText3D:labelid = CreatePlayer3DTextLabel(...);
-
+ 
 // Later...
 DeletePlayer3DTextLabel(playerid, labelid);
 ```

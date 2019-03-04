@@ -1,3 +1,9 @@
+---
+title: DetachTrailerFromVehicle
+description: Detach the connection between a vehicle and its trailer, if any.
+tags: ["vehicle"]
+---
+
 # DetachTrailerFromVehicle
 
 ## Description

@@ -1,3 +1,9 @@
+---
+title: UpdatePlayer3DTextLabelText
+description: Updates a player 3D Text Label's text and color.
+tags: ["player", "3dtextlabel"]
+---
+
 # UpdatePlayer3DTextLabelText
 
 ::: warning

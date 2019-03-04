@@ -1,3 +1,9 @@
+---
+title: EditObject
+description: Allows a player to edit an object (position and rotation) using their mouse on a GUI (Graphical User Interface).
+tags: []
+---
+
 # EditObject
 
 ::: warning
@@ -30,7 +36,7 @@ public OnGameModeInit()
     object = CreateObject(1337, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     return 1;
 }
-
+ 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/oedit", true))

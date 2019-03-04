@@ -1,3 +1,9 @@
+---
+title: EditAttachedObject
+description: Enter edition mode for an attached object.
+tags: []
+---
+
 # EditAttachedObject
 
 ::: warning
@@ -26,7 +32,7 @@ public OnPlayerSpawn(playerid)
 {
     SetPlayerAttachedObject(playerid, 0, 1337, 2);
 }
-
+ 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/edit", true))

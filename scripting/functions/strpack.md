@@ -1,3 +1,9 @@
+---
+title: strpack
+description: Pack a string.
+tags: []
+---
+
 # strpack
 
 ## Description

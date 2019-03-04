@@ -1,3 +1,9 @@
+---
+title: GangZoneCreate
+description: Create a gangzone (colored radar area).
+tags: ["gangzone"]
+---
+
 # GangZoneCreate
 
 ## Description
@@ -33,6 +39,7 @@ gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
              -------------* < MaxX
                           ^
                           MaxY
+
 ```
 
 ## Notes

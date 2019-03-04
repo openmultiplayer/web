@@ -1,3 +1,9 @@
+---
+title: GetPlayerMoney
+description: Retrieves the amount of money a player has.
+tags: ["player"]
+---
+
 # GetPlayerMoney
 
 ## Description
@@ -26,4 +32,4 @@ public OnPlayerSpawn(playerid)
 ## Related Functions
 
 - GivePlayerMoney: Give a player money.
-- ResetPlayerMoney: Set the money of a player to $0.
+- ResetPlayerMoney: Set the money of a player to \$0.

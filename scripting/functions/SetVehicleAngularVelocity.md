@@ -1,3 +1,9 @@
+---
+title: SetVehicleAngularVelocity
+description: Sets the angular X, Y and Z velocity of a vehicle.
+tags: ["vehicle"]
+---
+
 # SetVehicleAngularVelocity
 
 ::: warning

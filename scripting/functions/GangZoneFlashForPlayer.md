@@ -1,3 +1,9 @@
+---
+title: GangZoneFlashForPlayer
+description: Makes a gangzone flash for a player.
+tags: ["player", "gangzone"]
+---
+
 # GangZoneFlashForPlayer
 
 ## Description
@@ -18,13 +24,13 @@ This function does not return any specific values.
 
 ```c
 new gangzone;
-
+ 
 public OnGameModeInit()
 {
     gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
     return 1;
 }
-
+ 
 public OnPlayerSpawn(playerid)
 {
     GangZoneFlashForPlayer(playerid,gangzone,COLOR_RED);

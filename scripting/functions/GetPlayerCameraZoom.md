@@ -1,3 +1,9 @@
+---
+title: GetPlayerCameraZoom
+description: Retrieves the game camera zoom level for a given player.
+tags: ["player"]
+---
+
 # GetPlayerCameraZoom
 
 ::: warning

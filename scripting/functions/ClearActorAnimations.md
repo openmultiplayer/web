@@ -1,3 +1,9 @@
+---
+title: ClearActorAnimations
+description: Clear any animations applied to an actor.
+tags: []
+---
+
 # ClearActorAnimations
 
 ::: warning
@@ -24,15 +30,15 @@ Clear any animations applied to an actor.
 
 ```c
 new MyActor;
-
+ 
 public OnGameModeInit()
 {
     MyActor = CreateActor(...);
 }
-
+ 
 // Somewhere else
 ApplyActorAnimation(MyActor, ...);
-
+ 
 // Somewhere else
 ClearActorAnimations(MyActor);
 ```

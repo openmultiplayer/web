@@ -1,3 +1,9 @@
+---
+title: Update3DTextLabelText
+description: Updates a 3D Text Label text and color.
+tags: ["3dtextlabel"]
+---
+
 # Update3DTextLabelText
 
 ::: warning

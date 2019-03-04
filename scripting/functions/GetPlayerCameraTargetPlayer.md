@@ -1,3 +1,9 @@
+---
+title: GetPlayerCameraTargetPlayer
+description: Allows you to retrieve the ID of the player the playerid is looking at.
+tags: ["player"]
+---
+
 # GetPlayerCameraTargetPlayer
 
 ::: warning
@@ -22,7 +28,7 @@ The ID of the player the playerid is looking at
 
 ```c
 new playerTarget = GetPlayerCameraTargetPlayer(playerid);
-
+ 
 if(IsPlayerAdmin(playerTarget))
 {
     GameTextForPlayer(playerid, "Looking at an admin", 3000, 3);

@@ -1,3 +1,9 @@
+---
+title: GetGravity
+description: Get the currently set gravity.
+tags: []
+---
+
 # GetGravity
 
 ## Description
@@ -14,7 +20,7 @@ Get the currently set gravity.
 #if !defined GetGravity
     native Float:GetGravity();
 #endif
-
+ 
 printf("Current gravity: %f", GetGravity());
 ```
 

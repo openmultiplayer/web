@@ -1,3 +1,9 @@
+---
+title: TogglePlayerClock
+description: Toggle the in-game clock (top-right corner) for a specific player.
+tags: ["player"]
+---
+
 # TogglePlayerClock
 
 ## Description
