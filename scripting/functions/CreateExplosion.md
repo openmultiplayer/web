@@ -6,6 +6,8 @@ tags: []
 
 # CreateExplosion
 
+<TagLinks />
+
 ## Description
 
 Create an explosion at the specified coordinates.
@@ -30,10 +32,10 @@ public OnPlayerEnterCheckpoint(playerid)
     // Get the player's position
     new Float:x, Float:y, Float:z;
     GetPlayerPos(playerid, x, y, z);
- 
+
     // Create an explosion at the player's position
     CreateExplosion(x, y, z, 12, 10.0);
- 
+
     return 1;
 }
 ```

@@ -6,6 +6,8 @@ tags: []
 
 # floatsub
 
+<TagLinks />
+
 ## Description
 
 Subtracts one float from another one. Note that this function has no real use, as one can simply use the standard operator (-) instead.

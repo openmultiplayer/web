@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerInterior
 
+<TagLinks />
+
 ## Description
 
 Retrieves the player's current interior. A list of currently known interiors with their positions can be found on this page.

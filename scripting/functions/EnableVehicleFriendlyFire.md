@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 # EnableVehicleFriendlyFire
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3x and will not work in earlier versions!

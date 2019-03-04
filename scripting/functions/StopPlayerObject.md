@@ -6,6 +6,8 @@ tags: ["player"]
 
 # StopPlayerObject
 
+<TagLinks />
+
 ## Description
 
 Stop a moving player-object after MovePlayerObject has been used.

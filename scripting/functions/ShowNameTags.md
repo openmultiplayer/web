@@ -6,6 +6,8 @@ tags: []
 
 # ShowNameTags
 
+<TagLinks />
+
 ## Description
 
 Toggle the drawing of nametags, health bars and armor bars above players.

@@ -6,6 +6,8 @@ tags: []
 
 # ClearActorAnimations
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!
@@ -30,15 +32,15 @@ Clear any animations applied to an actor.
 
 ```c
 new MyActor;
- 
+
 public OnGameModeInit()
 {
     MyActor = CreateActor(...);
 }
- 
+
 // Somewhere else
 ApplyActorAnimation(MyActor, ...);
- 
+
 // Somewhere else
 ClearActorAnimations(MyActor);
 ```

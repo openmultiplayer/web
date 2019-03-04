@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 # AttachTrailerToVehicle
 
+<TagLinks />
+
 ## Description
 
 Attach a vehicle to another vehicle as a trailer.
@@ -24,7 +26,7 @@ This function always returns 1, even if neither of the vehicle IDs passed are va
 ```c
 new vehicleid = CreateVehicle(...);
 new trailerid = CreateVehicle(...);
- 
+
 AttachTrailerToVehicle(trailerid, vehicleid);
 ```
 

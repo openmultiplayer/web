@@ -6,6 +6,8 @@ tags: []
 
 # floatsqroot
 
+<TagLinks />
+
 ## Description
 
 Calculates the square root of given value.

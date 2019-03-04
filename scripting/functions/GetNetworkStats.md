@@ -6,6 +6,8 @@ tags: []
 
 # GetNetworkStats
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3c R4 and will not work in earlier versions!
@@ -41,7 +43,6 @@ public OnPlayerCommandText(playerid,cmdtext[])
 ```
 
 ```
-
 Server Ticks: 200
 Messages in Send buffer: 0
 Messages sent: 142
@@ -59,7 +60,6 @@ Duplicate acks received: 0
 Inst. KBits per second: 28.8
 KBits per second sent: 10.0
 KBits per second received: 2.7
-
 ```
 
 ## Related Functions

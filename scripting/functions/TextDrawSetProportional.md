@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawSetProportional
 
+<TagLinks />
+
 ## Description
 
 Appears to scale text spacing to a proportional ratio. Useful when using TextDrawLetterSize to ensure the text has even character spacing.
@@ -23,7 +25,7 @@ This function does not return any specific values.
 
 ```c
 new Text:MyTextdraw;
- 
+
 public OnGameModeInit()
 {
     MyTextDraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");

@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawAlignment
 
+<TagLinks />
+
 ## Description
 
 Set the alignment of text in a text draw.
@@ -25,7 +27,7 @@ For alignment 2 (center) the x and y values of TextSize need to be swapped, see 
 
 ```c
 new Text:MyTextdraw;
- 
+
 public OnGameModeInit()
 {
     new Text:MyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");

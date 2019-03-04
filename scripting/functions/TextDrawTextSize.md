@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawTextSize
 
+<TagLinks />
+
 ## Description
 
 Change the size of a textdraw (box if TextDrawUseBox is enabled and/or clickable area for use with TextDrawSetSelectable).
@@ -24,7 +26,7 @@ This function does not return any specific values.
 
 ```c
 new Text:MyTextdraw;
- 
+
 public OnGameModeInit()
 {
     MyTextDraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");

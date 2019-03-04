@@ -6,6 +6,8 @@ tags: []
 
 # db_get_field_assoc
 
+<TagLinks />
+
 ## Description
 
 Get the contents of field with specified name.
@@ -29,26 +31,26 @@ GetNameBySpawnID(spawn_id)
 {
 	// Declare "p_name"
 	new p_name[MAX_PLAYER_NAME+1];
- 
+
 	// Declare "query" and "db_result"
 	static query[61], DBResult:db_result;
- 
+
 	// Formats "query"
 	format(query, sizeof query, "SELECT `PlayerName` FROM `spawn_log` WHERE `ID`=%d;", spawn_id);
- 
+
 	// Selects the player name by using "spawn_id"
 	db_result = db_query(db_handle, query);
- 
+
 	// If there is any valid entry
 	if(db_num_rows(db_result))
 	{
 		// Store data from "PlayerName" into "p_name"
 		db_get_field_assoc(db_result, "PlayerName", p_name, sizeof p_name);
 	}
- 
+
 	// Frees the result
 	db_free_result(db_result);
- 
+
 	// Returns "p_name"
 	return p_name;
 }

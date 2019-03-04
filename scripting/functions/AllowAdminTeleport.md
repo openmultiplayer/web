@@ -6,6 +6,8 @@ tags: []
 
 # AllowAdminTeleport
 
+<TagLinks />
+
 ::: warning
 
 This function, as of 0.3d, is deprecated. Please see OnPlayerClickMap.

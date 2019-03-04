@@ -6,6 +6,8 @@ tags: []
 
 # GetGravity
 
+<TagLinks />
+
 ## Description
 
 Get the currently set gravity.
@@ -20,7 +22,7 @@ Get the currently set gravity.
 #if !defined GetGravity
     native Float:GetGravity();
 #endif
- 
+
 printf("Current gravity: %f", GetGravity());
 ```
 

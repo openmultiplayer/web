@@ -6,6 +6,8 @@ tags: ["player"]
 
 # AllowPlayerTeleport
 
+<TagLinks />
+
 ::: warning
 
 This function, as of 0.3d, is deprecated. Check OnPlayerClickMap.

@@ -6,6 +6,8 @@ tags: []
 
 # db_next_row
 
+<TagLinks />
+
 ## Description
 
 Moves to the next row of the result allocated from db_query.
@@ -29,30 +31,30 @@ public OnPlayerCommandText(playerid, cmdtext[])
 	{
 		// Declare "db_result" and "info"
 		new DBResult:db_result, info[2][30];
- 
+
 		// Select the join list of the player "Woet"
 		db_result = db_query(db_handle, "SELECT * FROM `join_log` WHERE `name`='Woet'");
- 
+
 		// Do these
 		do
 		{
 			// Store the data of "ip" into "info[0]"
 			db_get_field_assoc(db_result, "ip", info[0], sizeof info[]);
- 
+
 			// Store the data of "time" into "info[1]"
 			db_get_field_assoc(db_result, "time", info[1], sizeof info[]);
- 
+
 			// Print into the console
 			printf("Print join list: Name: Woet IP: %s Date: %s", info[0], info[1]);
 		}
- 
+
 		// While next row has been fetched
 		while(db_next_row(db_result));
- 
+
 		// Returns 1
 		return 1;
 	}
- 
+
 	// Returns 0
 	return 0;
 }

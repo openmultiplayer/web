@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerWorldBounds
 
+<TagLinks />
+
 ## Description
 
 Set the world boundaries for a player. Players can not go out of the boundaries (they will be pushed back in).
@@ -42,7 +44,6 @@ public OnPlayerSpawn(playerid)
             |----------|
                 ymin
                (South)
-
 ```
 
 ## Notes

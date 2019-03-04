@@ -6,6 +6,8 @@ tags: ["gangzone"]
 
 # GangZoneHideForAll
 
+<TagLinks />
+
 ## Description
 
 GangZoneHideForAll hides a gangzone from all players.

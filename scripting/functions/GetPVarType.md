@@ -6,6 +6,8 @@ tags: ["pvar"]
 
 # GetPVarType
 
+<TagLinks />
+
 ## Description
 
 Gets the type (integer, float or string) of a player variable.
@@ -42,7 +44,7 @@ stock PrintPVar(playerid, varname[])
         {
             new varstring[256];
             GetPVarString(playerid, varname, varstring);
- 
+
             printf("String PVar '%s': %s", varname, varstring);
         }
     }

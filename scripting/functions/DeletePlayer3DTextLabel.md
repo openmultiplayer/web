@@ -6,6 +6,8 @@ tags: ["player", "3dtextlabel"]
 
 # DeletePlayer3DTextLabel
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!
@@ -31,7 +33,7 @@ Destroy a 3D text label that was created using CreatePlayer3DTextLabel.
 
 ```c
 new PlayerText3D:labelid = CreatePlayer3DTextLabel(...);
- 
+
 // Later...
 DeletePlayer3DTextLabel(playerid, labelid);
 ```

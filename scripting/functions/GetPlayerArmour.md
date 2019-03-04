@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerArmour
 
+<TagLinks />
+
 ## Description
 
 This function stores the armour of a player into a variable.

@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerHealth
 
+<TagLinks />
+
 ## Description
 
 Set the health of a player.

@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawColor
 
+<TagLinks />
+
 ## Description
 
 Sets the text color of a textdraw
@@ -23,7 +25,7 @@ This function does not return any specific values.
 
 ```c
 new Text:Example;
- 
+
 public OnGameModeInit()
 {
     Example = TextDrawCreate(123.0, 123.0, "Example");

@@ -6,6 +6,8 @@ tags: []
 
 # EnableTirePopping
 
+<TagLinks />
+
 ## Description
 
 With this function you can enable or disable tire popping.

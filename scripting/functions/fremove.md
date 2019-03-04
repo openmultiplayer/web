@@ -6,6 +6,8 @@ tags: []
 
 # fremove
 
+<TagLinks />
+
 ## Description
 
 Delete a file.

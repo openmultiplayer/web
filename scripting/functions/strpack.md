@@ -6,6 +6,8 @@ tags: []
 
 # strpack
 
+<TagLinks />
+
 ## Description
 
 Pack a string. Packed strings use 75% less memory.

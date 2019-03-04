@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerFacingAngle
 
+<TagLinks />
+
 ## Description
 
 Gets the angle a player is facing.

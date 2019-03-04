@@ -6,6 +6,8 @@ tags: []
 
 # GameModeExit
 
+<TagLinks />
+
 ## Description
 
 Ends the current gamemode.

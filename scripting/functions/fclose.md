@@ -6,6 +6,8 @@ tags: []
 
 # fclose
 
+<TagLinks />
+
 ## Description
 
 Closes a file. Files should always be closed when the script no longer needs them (after reading/writing).
@@ -25,15 +27,15 @@ Closes a file. Files should always be closed when the script no longer needs the
 ```c
 // Open "file.txt" in "append only" mode
 new File:handle = fopen("file.txt", io_append);
- 
+
 // Check, if file is open
 if(handle)
 {
 	// Success
- 
+
 	// Write "Hi there!" into the file
 	fwrite(handle, "Hi there!");
- 
+
 	// Close the file
 	fclose(handle);
 }

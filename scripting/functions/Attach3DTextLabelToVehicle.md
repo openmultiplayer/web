@@ -6,6 +6,8 @@ tags: ["vehicle", "3dtextlabel"]
 
 # Attach3DTextLabelToVehicle
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!
@@ -33,7 +35,7 @@ This function does not return any specific values.
 ```c
 new Text3D:vehicle3Dtext[MAX_VEHICLES],vehicle_id;
 // Creating the TextLabel for later use
- 
+
 public OnGameModeInit ( )
 {
     vehicle_id = CreateVehicle( 510, 0.0. 0.0, 15.0, 5, 0, 120 );

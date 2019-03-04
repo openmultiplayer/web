@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerCameraPos
 
+<TagLinks />
+
 ## Description
 
 Sets the camera to a specific position for a player.

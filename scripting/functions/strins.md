@@ -6,6 +6,8 @@ tags: []
 
 # strins
 
+<TagLinks />
+
 ## Description
 
 Insert a string into another string.
@@ -29,7 +31,7 @@ new pName[MAX_PLAYER_NAME+1];
 GetPlayerName(playerid, pName, MAX_PLAYER_NAME);
 strins(pName, "[AFK]", 0);
 SetPlayerName(playerid, pName);
- 
+
 // WARNING: Players with names that are 20+ characters long can not have an [AFK] tag, as that would make their name 25 characters long and the limit is 24.
 ```
 

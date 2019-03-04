@@ -6,6 +6,8 @@ tags: []
 
 # StopObject
 
+<TagLinks />
+
 ## Description
 
 Stop a moving object after MoveObject has been used.

@@ -6,6 +6,8 @@ tags: []
 
 # CreateObject
 
+<TagLinks />
+
 ## Description
 
 Creates an object at specified coordinates in the game world.

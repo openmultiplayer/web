@@ -6,6 +6,8 @@ tags: []
 
 # SetSpawnInfo
 
+<TagLinks />
+
 ## Description
 
 This function can be used to change the spawn information of a specific player. It allows you to automatically set someone's spawn weapons, their team, skin and spawn position, normally used in case of minigames or automatic-spawn systems. This function is more crash-safe then using SetPlayerSkin in OnPlayerSpawn and/or OnPlayerRequestClass, even though this has been fixed in 0.2.

@@ -6,6 +6,8 @@ tags: []
 
 # db_open
 
+<TagLinks />
+
 ## Description
 
 This function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder
@@ -40,7 +42,7 @@ public OnGameModeInit()
 	// ...
 	return 1;
 }
- 
+
 public OnGameModeExit()
 {
 	// Close the connection to the database

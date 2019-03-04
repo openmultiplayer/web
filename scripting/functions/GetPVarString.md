@@ -6,6 +6,8 @@ tags: ["pvar"]
 
 # GetPVarString
 
+<TagLinks />
+
 ## Description
 
 Gets a player variable as a string.
@@ -31,12 +33,12 @@ public OnPlayerConnect(playerid,reason)
     SetPVarString(playerid, "PlayerName", playerName);
     return 1;
 }
- 
+
 public OnPlayerDeath(playerid, killerid, reason)
 {
     new playerName[MAX_PLAYER_NAME+1];
     GetPVarString(playerid, "PlayerName", playerName, sizeof(playerName));
- 
+
     printf("%s died.", playerName);
 }
 ```

@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerObjectPos
 
+<TagLinks />
+
 ## Description
 
 Sets the position of a player-object to the specified coordinates.
@@ -28,9 +30,9 @@ Sets the position of a player-object to the specified coordinates.
 
 ```c
 new obj = CreatePlayerObject(...);
- 
+
 // Later on
- 
+
 SetPlayerObjectPos(playerid, obj, 2001.195679, 1547.113892, 14.283400);
 ```
 

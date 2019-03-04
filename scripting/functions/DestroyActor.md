@@ -6,6 +6,8 @@ tags: []
 
 # DestroyActor
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!
@@ -30,13 +32,13 @@ Destroy an actor which was created with CreateActor.
 
 ```c
 new MyActor;
- 
+
 public OnFilterScriptInit()
 {
     MyActor = CreateActor(...);
     return 1;
 }
- 
+
 public OnFilterScriptExit()
 {
     DestroyActor(MyActor);

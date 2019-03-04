@@ -6,6 +6,8 @@ tags: []
 
 # strfind
 
+<TagLinks />
+
 ## Description
 
 Search for a sub string in a string.

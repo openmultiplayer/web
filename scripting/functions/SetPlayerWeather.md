@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerWeather
 
+<TagLinks />
+
 ## Description
 
 Set a player's weather.

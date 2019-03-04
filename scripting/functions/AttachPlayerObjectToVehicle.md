@@ -6,6 +6,8 @@ tags: ["player", "vehicle"]
 
 # AttachPlayerObjectToVehicle
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!
@@ -41,7 +43,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
     {
         // Attach massive cow.
         new cow_object = CreatePlayerObject(playerid, 16442, 0, 0, 0, 0, 0, 0);
- 
+
         AttachPlayerObjectToVehicle(playerid, cow_object, GetPlayerVehicleID(playerid), 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
     }
 }

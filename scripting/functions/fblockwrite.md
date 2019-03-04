@@ -6,6 +6,8 @@ tags: []
 
 # fblockwrite
 
+<TagLinks />
+
 ## Description
 
 Write data to a file in binary format, while ignoring line brakes and encoding.
@@ -30,23 +32,23 @@ enum _:some_enum
 	some_data2[20],
 	Float:some_data3
 }
- 
+
 // Declare "some_data"
 new some_data[some_enum];
- 
+
 // ...
- 
+
 // Open "file.bin" in "write only" mode
 new File:handle = fopen("file.bin", io_write);
- 
+
 // Check, if "file.bin" is open
 if(handle)
 {
 	// Success
- 
+
 	// Write "some_data" into "file.bin"
 	fblockwrite(handle, some_data);
- 
+
 	// Close "file.bin"
 	fclose(handle);
 }

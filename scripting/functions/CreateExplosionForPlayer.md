@@ -6,6 +6,8 @@ tags: ["player"]
 
 # CreateExplosionForPlayer
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3z R2-2 and will not work in earlier versions!

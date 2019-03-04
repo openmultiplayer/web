@@ -6,6 +6,8 @@ tags: []
 
 # floattan
 
+<TagLinks />
+
 ## Description
 
 Get the tangent from a given angle. The input angle may be in radians, degrees or grades.

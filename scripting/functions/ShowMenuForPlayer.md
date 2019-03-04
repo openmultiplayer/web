@@ -6,6 +6,8 @@ tags: ["player", "menu"]
 
 # ShowMenuForPlayer
 
+<TagLinks />
+
 ## Description
 
 Shows a previously created menu for a player.
@@ -25,13 +27,13 @@ Shows a previously created menu for a player.
 
 ```c
 new Menu:MENU_PlayerTeleport;
- 
+
 public OnGameModeInit()
 {
     MENU_PlayerTeleport = CreateMenu(...);
     return 1;
 }
- 
+
 if(strcmp(cmdtext, "/tele", true) == 0)
 {
     ShowMenuForPlayer(MENU_PlayerTeleport, playerid);

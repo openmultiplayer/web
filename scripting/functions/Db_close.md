@@ -6,6 +6,8 @@ tags: []
 
 # Db_close
 
+<TagLinks />
+
 ## Description
 
 Closes an SQLite database that was opened with db_open.
@@ -42,7 +44,7 @@ public OnGameModeInit()
 	// ...
 	return 1;
 }
- 
+
 public OnGameModeExit()
 {
 	// Close the connection to the database

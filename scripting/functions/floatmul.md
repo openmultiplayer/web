@@ -6,6 +6,8 @@ tags: []
 
 # floatmul
 
+<TagLinks />
+
 ## Description
 
 Multiplies two floats with each other.

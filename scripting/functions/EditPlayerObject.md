@@ -6,6 +6,8 @@ tags: ["player"]
 
 # EditPlayerObject
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!
@@ -35,7 +37,7 @@ public OnPlayerSpawn(playerid)
 {
     object[playerid] = CreatePlayerObject(playerid, 1337, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 }
- 
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/edit", true))

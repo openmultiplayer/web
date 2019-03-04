@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawShowForAll
 
+<TagLinks />
+
 ## Description
 
 Shows a textdraw for all players.

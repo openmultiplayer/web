@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SpawnPlayer
 
+<TagLinks />
+
 ## Description
 
 (Re)Spawns a player.

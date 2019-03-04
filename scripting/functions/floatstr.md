@@ -6,6 +6,8 @@ tags: []
 
 # floatstr
 
+<TagLinks />
+
 ## Description
 
 Converts a string to a float.

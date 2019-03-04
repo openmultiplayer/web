@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerWantedLevel
 
+<TagLinks />
+
 ## Description
 
 Set a player's wanted level (6 brown stars under HUD).

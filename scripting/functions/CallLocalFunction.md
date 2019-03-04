@@ -6,6 +6,8 @@ tags: []
 
 # CallLocalFunction
 
+<TagLinks />
+
 ## Description
 
 Calls a public function from the script in which it is used.
@@ -29,7 +31,7 @@ public  callMe(const string[])
     printf("callMe> %s", string);
     return 1;
 }
- 
+
 CallLocalFunction("callMe", "s", "OHAI THAR BAGPUSS!!11");
 ```
 

@@ -6,6 +6,8 @@ tags: []
 
 # GetObjectPos
 
+<TagLinks />
+
 ## Description
 
 Get the position of an object.

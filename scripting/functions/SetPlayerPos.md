@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerPos
 
+<TagLinks />
+
 ## Description
 
 Set a player's position.

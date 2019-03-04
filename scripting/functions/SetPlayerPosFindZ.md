@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerPosFindZ
 
+<TagLinks />
+
 ## Description
 
 This sets the players position then adjusts the players z-coordinate to the nearest solid ground under the position.

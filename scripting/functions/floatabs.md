@@ -6,6 +6,8 @@ tags: []
 
 # floatabs
 
+<TagLinks />
+
 ## Description
 
 This function returns the absolute value of float.

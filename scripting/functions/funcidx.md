@@ -6,6 +6,8 @@ tags: []
 
 # funcidx
 
+<TagLinks />
+
 ## Description
 
 This function returns the ID of a public function by its name.

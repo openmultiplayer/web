@@ -6,6 +6,8 @@ tags: []
 
 # floatdiv
 
+<TagLinks />
+
 ## Description
 
 Divide one float by another one. Redundant as the division operator (/) does the same thing.

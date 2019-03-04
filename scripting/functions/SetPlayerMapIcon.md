@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerMapIcon
 
+<TagLinks />
+
 ## Description
 
 Place an icon/marker on a player's map. Can be used to mark locations such as banks and hospitals to players.

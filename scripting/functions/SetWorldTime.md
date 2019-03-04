@@ -6,6 +6,8 @@ tags: []
 
 # SetWorldTime
 
+<TagLinks />
+
 ## Description
 
 Sets the world time (for all players) to a specific hour.

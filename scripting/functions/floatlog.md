@@ -6,6 +6,8 @@ tags: []
 
 # floatlog
 
+<TagLinks />
+
 ## Description
 
 This function allows you to get the logarithm of a float value.

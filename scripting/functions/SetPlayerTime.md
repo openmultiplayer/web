@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerTime
 
+<TagLinks />
+
 ## Description
 
 Sets the game time for a player. If a player's clock is enabled (TogglePlayerClock) the time displayed by it will update automatically.

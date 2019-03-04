@@ -6,6 +6,8 @@ tags: []
 
 # GetConsoleVarAsBool
 
+<TagLinks />
+
 ## Description
 
 Get the boolean value of a console variable.

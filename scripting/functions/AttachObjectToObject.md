@@ -6,6 +6,8 @@ tags: []
 
 # AttachObjectToObject
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3d and will not work in earlier versions!
@@ -39,7 +41,7 @@ You can use this function to attach objects to other objects. The objects will f
 ```c
 new objectid = CreateObject(...);
 new attachtoid = CreateObject(...);
- 
+
 AttachObjectToObject(objectid, attachtoid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 ```
 

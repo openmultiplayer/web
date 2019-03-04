@@ -6,6 +6,8 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 # SetPlayerRaceCheckpoint
 
+<TagLinks />
+
 ## Description
 
 Creates a race checkpoint. When the player enters it, the OnPlayerEnterRaceCheckpoint callback is called.

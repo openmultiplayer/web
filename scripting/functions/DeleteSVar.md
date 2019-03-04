@@ -6,6 +6,8 @@ tags: []
 
 # DeleteSVar
 
+<TagLinks />
+
 ## Description
 
 Deletes a previously set server variable.
@@ -24,9 +26,9 @@ Deletes a previously set server variable.
 
 ```c
 SetSVarInt("SomeVarName", 69);
- 
+
 // Later on, when the variable is no longer needed...
- 
+
 DeleteSVar("SomeVarName");
 ```
 

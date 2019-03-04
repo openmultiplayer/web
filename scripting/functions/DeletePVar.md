@@ -6,6 +6,8 @@ tags: ["pvar"]
 
 # DeletePVar
 
+<TagLinks />
+
 ## Description
 
 Deletes a previously set player variable.
@@ -25,9 +27,9 @@ Deletes a previously set player variable.
 
 ```c
 SetPVarInt(playerid, "SomeVarName", 69);
- 
+
 // Later on, when the variable is no longer needed...
- 
+
 DeletePVar(playerid, "SomeVarName");
 ```
 

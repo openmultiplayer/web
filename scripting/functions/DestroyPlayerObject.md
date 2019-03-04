@@ -6,6 +6,8 @@ tags: ["player"]
 
 # DestroyPlayerObject
 
+<TagLinks />
+
 ## Description
 
 Destroy a player-object created using CreatePlayerObject.

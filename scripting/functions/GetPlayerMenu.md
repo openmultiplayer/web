@@ -6,6 +6,8 @@ tags: ["player", "menu"]
 
 # GetPlayerMenu
 
+<TagLinks />
+
 ## Description
 
 Gets the ID of the menu the player is currently viewing (shown by ShowMenuForPlayer).

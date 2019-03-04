@@ -6,6 +6,8 @@ tags: []
 
 # AddSimpleModel
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions!
@@ -41,9 +43,7 @@ public OnGameModeInit()
 ```
 
 ```
-
 AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
-
 ```
 
 ## Notes

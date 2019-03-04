@@ -6,6 +6,8 @@ tags: []
 
 # floatround
 
+<TagLinks />
+
 ## Description
 
 Round a floating point number to an integer value.

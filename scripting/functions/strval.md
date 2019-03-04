@@ -6,6 +6,8 @@ tags: []
 
 # strval
 
+<TagLinks />
+
 ## Description
 
 Convert a string to an integer.

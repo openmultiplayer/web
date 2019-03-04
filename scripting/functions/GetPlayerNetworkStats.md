@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerNetworkStats
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3c R4 and will not work in earlier versions!

@@ -6,6 +6,8 @@ tags: []
 
 # CreatePickup
 
+<TagLinks />
+
 ## Description
 
 This function does exactly the same as AddStaticPickup, except it returns a pickup ID which can be used to destroy it afterwards and be tracked using OnPlayerPickUpPickup.
@@ -27,14 +29,14 @@ The ID of the created pickup, -1 on failure (pickup max limit).
 
 ```c
 new pickup; // Create a variable to store the pickup ID in
- 
+
 public OnGameModeInit()
 {
     pickup = CreatePickup(1242, 2, 1503.3359, 1432.3585, 10.1191, -1);
     // Create an armour pickup and store the ID in 'pickup'
     return 1;
 }
- 
+
 // Later..
 DestroyPickup(pickup); // Example of using the pickup ID
 pickup = 0; // pickup variable needs to be reset to avoid future conflicts

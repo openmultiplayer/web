@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerFacingAngle
 
+<TagLinks />
+
 ## Description
 
 Set a player's facing angle (Z rotation).
@@ -33,7 +35,6 @@ SetPlayerFacingAngle( playerid, 0 ); //Player faces north
 (90) west-   -east (270)      (Good way to remember: Never Eat Shredded Wheat)
            |
         south (180)
-
 ```
 
 ## Notes

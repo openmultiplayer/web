@@ -6,6 +6,8 @@ tags: ["player", "vehicle"]
 
 # SetVehicleParamsForPlayer
 
+<TagLinks />
+
 ## Description
 
 Set the parameters of a vehicle for a player.
@@ -28,13 +30,13 @@ Set the parameters of a vehicle for a player.
 ```c
 // sometime earlier:
 SetVehicleParamsForPlayer(iPlayerVehicle, iPlayerID, 1, 0);
- 
+
 // sometime later when you want the vehicle to respawn:
 new
 	iEngine, iLights, iAlarm,
 	iDoors, iBonnet, iBoot,
 	iObjective;
- 
+
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
 SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, 0);
 // Locks own car for all players, except the player who used the command.
@@ -54,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 // Will show vehicle markers for players streaming in for 0.3a+
 new iVehicleObjective[MAX_VEHICLES][2];
- 
+
 public OnGameModeInit() //Or another callback
 {
     new temp = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0,0, -1); //ID 1
@@ -62,27 +64,27 @@ public OnGameModeInit() //Or another callback
     iVehicleObjective[temp][1] = 0; //Door Lock
     return 1;
 }
- 
+
 stock SetVehicleParamsForPlayerEx(vehicleid, playerid, objective, doorslocked)
 {
 	SetVehicleParamsForPlayer(vehicleid, playerid, objective, doorslocked);
 	iVehicleObjective[vehicleid][0] = objective;
 	iVehicleObjective[vehicleid][1] = doorslocked;
 }
- 
+
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {
 	SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
 }
 //Top
 new myMarkedCar;
- 
+
 public OnGameModeInit() //Or another callback
 {
     myMarkedCar = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0,0, -1); //For example: Black Landstalker near Blueberry Acres
     return 1;
 }
- 
+
 //Whatever your want
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {

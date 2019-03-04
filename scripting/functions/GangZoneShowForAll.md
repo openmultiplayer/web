@@ -6,6 +6,8 @@ tags: ["gangzone"]
 
 # GangZoneShowForAll
 
+<TagLinks />
+
 ## Description
 
 Shows a gangzone with the desired color to all players.
@@ -25,13 +27,13 @@ Shows a gangzone with the desired color to all players.
 
 ```c
 new gangzone;
- 
+
 public OnGameModeInit()
 {
     gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
     return 1;
 }
- 
+
 public OnPlayerSpawn(playerid)
 {
     if(IsPlayerAdmin(playerid)) GangZoneShowForAll(gangzone,COLOR_RED);

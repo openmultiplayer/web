@@ -6,6 +6,8 @@ tags: []
 
 # fread
 
+<TagLinks />
+
 ## Description
 
 Read a single line from a file.
@@ -26,18 +28,18 @@ The length of string (the read text) as an integer.
 ```c
 // Open "file.txt" in "read only" mode
 new File:handle = fopen("file.txt", io_read),
- 
+
 	// Initialize "buf"
 	buf[128];
- 
+
 // Check, if the file is opened
 if(handle)
 {
 	// Success
- 
+
 	// Read the whole file
 	while(fread(handle, buf)) print(buf);
- 
+
 	// Close the file
 	fclose(handle);
 }
@@ -48,24 +50,24 @@ else
 }
 // Open "file.txt" in "read and write" mode
 new File:handle = fopen("file.txt"),
- 
+
 	// Initialize "buf"
 	buf[128];
- 
+
 // Check, if file is open
 if(handle)
 {
 	// Success
- 
+
 	// Read the whole file
 	while(fread(handle, buf)) print(buf);
- 
+
 	// Set the file pointer to the first byte
 	fseek(handle, _, seek_begin);
- 
+
 	// Write "I just wrote here!" into this file
 	fwrite(handle, "I just wrote here!");
- 
+
 	// Close the file
 	fclose(handle);
 }

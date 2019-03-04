@@ -6,6 +6,8 @@ tags: []
 
 # fputchar
 
+<TagLinks />
+
 ## Description
 
 Write one character to a file.
@@ -28,10 +30,10 @@ new File:handle = fopen("file.txt", io_write);
 if(handle)
 {
 	// Success
- 
+
 	// Write character "e" into "file.txt"
 	fputchar(handle, 'e', false);
- 
+
 	// Close "file.txt"
 	fclose(handle);
 }

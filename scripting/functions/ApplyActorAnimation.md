@@ -6,6 +6,8 @@ tags: []
 
 # ApplyActorAnimation
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!
@@ -38,7 +40,7 @@ Apply an animation to an actor.
 
 ```c
 new MyActor;
- 
+
 public OnGameModeInit()
 {
     MyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation

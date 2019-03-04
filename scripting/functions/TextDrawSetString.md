@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawSetString
 
+<TagLinks />
+
 ## Description
 
 Changes the text on a textdraw.
@@ -23,13 +25,13 @@ This function does not return any specific values.
 
 ```c
 new Text:himessage;
- 
+
 public OnGameModeInit()
 {
     himessage = TextDrawCreate(1.0, 5.6, "Hi, how are you?");
     return 1;
 }
- 
+
 public OnPlayerConnect(playerid)
 {
     new newtext[41], name[MAX_PLAYER_NAME];

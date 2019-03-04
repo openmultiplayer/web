@@ -6,6 +6,8 @@ tags: []
 
 # EditObject
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!
@@ -36,7 +38,7 @@ public OnGameModeInit()
     object = CreateObject(1337, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     return 1;
 }
- 
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/oedit", true))

@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerVirtualWorld
 
+<TagLinks />
+
 ## Description
 
 Set the virtual world of a player. They can only see other players or vehicles that are in that same world.

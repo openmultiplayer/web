@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerLastShotVectors
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3z and will not work in earlier versions!
@@ -44,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new lsString[128],
             Float:fOriginX, Float:fOriginY, Float:fOriginZ,
             Float:fHitPosX, Float:fHitPosY, Float:fHitPosZ;
- 
+
         GetPlayerLastShotVectors(playerid, fOriginX, fOriginY, fOriginZ, fHitPosX, fHitPosY, fHitPosZ);
         format(lsString, 128, "Last Shot Information: Origin: %f, %f, %f. Hit position: %f, %f, %f", fOriginX, fOriginY, fOriginZ, fHitPosX, fHitPosY, fHitPosZ);
         SendClientMessage(playerid, -1, lsString);

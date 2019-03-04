@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawHideForAll
 
+<TagLinks />
+
 ## Description
 
 Hides a text draw for all players.
@@ -22,13 +24,13 @@ This function does not return any specific values.
 
 ```c
 new TextID;
- 
+
 TextID = TextDrawCreate(...);
- 
- 
+
+
 //Later on
 TextDrawShowForAll(TextID);
- 
+
 //Even later on
 TextDrawHideForAll(TextID);
 ```

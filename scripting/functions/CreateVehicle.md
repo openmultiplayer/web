@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 # CreateVehicle
 
+<TagLinks />
+
 ## Description
 
 Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.

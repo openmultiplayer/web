@@ -6,6 +6,8 @@ tags: ["pvar"]
 
 # GetPVarNameAtIndex
 
+<TagLinks />
+
 ## Description
 
 Retrieve the name of a player's pVar via the index.

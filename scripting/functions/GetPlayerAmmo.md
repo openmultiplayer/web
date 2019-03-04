@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerAmmo
 
+<TagLinks />
+
 ## Description
 
 Gets the amount of ammo in a player's current weapon.

@@ -6,6 +6,8 @@ tags: []
 
 # db_get_field_assoc_int
 
+<TagLinks />
+
 ## Description
 
 Get the contents of field as an integer with specified name.

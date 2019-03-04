@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerObjectPos
 
+<TagLinks />
+
 ## Description
 
 Get the position of a player object (CreatePlayerObject).

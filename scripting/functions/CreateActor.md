@@ -6,6 +6,8 @@ tags: []
 
 # CreateActor
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!
@@ -34,7 +36,7 @@ INVALID_ACTOR_ID (65535) If the actor limit (1000) is reached.
 
 ```c
 new ActorCJ;
- 
+
 public OnGameModeInit()
 {
     // Create an actor (CJ) at Blueberry Acres (Center of SA map)

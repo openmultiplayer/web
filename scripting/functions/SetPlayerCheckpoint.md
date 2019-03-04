@@ -6,6 +6,8 @@ tags: ["player", "checkpoint"]
 
 # SetPlayerCheckpoint
 
+<TagLinks />
+
 ## Description
 
 Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the radar. When players enter a checkpoint, OnPlayerEnterCheckpoint is called and actions can be performed.
@@ -29,16 +31,16 @@ Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the rada
 ```c
 // In this example the player's checkpoint will be set when they spawn.
 // On entering the checkpoint they will receive $1000 and the checkpoint will be disabled.
- 
+
 new bool:onCheck[MAX_PLAYERS];
- 
+
 public OnPlayerSpawn(playerid)
 {
     SetPlayerCheckpoint(playerid, 1982.6150, -220.6680, -0.2432, 3.0);
     onCheck[playerid] = true;
     return 1;
 }
- 
+
 public OnPlayerEnterCheckpoint(playerid)
 {
     if(onCheck[playerid]) // if it's true

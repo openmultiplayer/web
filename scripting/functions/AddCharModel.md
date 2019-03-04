@@ -6,6 +6,8 @@ tags: []
 
 # AddCharModel
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions!
@@ -41,10 +43,8 @@ public OnGameModeInit()
 ```
 
 ```
-
 AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
 AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
-
 ```
 
 ## Notes

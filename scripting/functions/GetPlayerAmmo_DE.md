@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerAmmo_DE
 
+<TagLinks />
+
 ## Description
 
 Gibt die Munition der vom Spieler aktuell gehaltenen Waffe zurück.

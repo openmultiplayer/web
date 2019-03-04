@@ -6,6 +6,8 @@ tags: ["player"]
 
 # EnableStuntBonusForPlayer
 
+<TagLinks />
+
 ## Description
 
 Toggle stunt bonuses for a player. Enabled by default.

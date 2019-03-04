@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerCameraFrontVector
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!
@@ -41,24 +43,24 @@ public OnPlayerCommandText(playerid, cmdtext[])
             Float:fPX, Float:fPY, Float:fPZ,
             Float:fVX, Float:fVY, Float:fVZ,
             Float:object_x, Float:object_y, Float:object_z;
- 
+
         // Change me to change the scale you want. A larger scale increases the distance from the camera.
         // A negative scale will inverse the vectors and make them face in the opposite direction.
         const
             Float:fScale = 5.0;
- 
+
         GetPlayerCameraPos(playerid, fPX, fPY, fPZ);
         GetPlayerCameraFrontVector(playerid, fVX, fVY, fVZ);
- 
+
         object_x = fPX + floatmul(fVX, fScale);
         object_y = fPY + floatmul(fVY, fScale);
         object_z = fPZ + floatmul(fVZ, fScale);
- 
+
         CreateObject(345, object_x, object_y, object_z, 0.0, 0.0, 0.0);
- 
+
         return 1;
     }
- 
+
     return 0;
 }
 ```

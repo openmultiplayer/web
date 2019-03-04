@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerColor
 
+<TagLinks />
+
 ## Description
 
 Gets the color of the player's name and radar marker. Only works after SetPlayerColor.
@@ -22,7 +24,7 @@ The player's color. 0 if no color set or player not connected.
 
 ```c
 SendClientMessage(playerid, GetPlayerColor(playerid), "This message is in your color :)");
- 
+
 new output[144];
 format(output, sizeof(output), "You can also use the player's color for {%06x}color embedding!", GetPlayerColor(playerid) >>> 8);
 SendClientMessage(playerid, -1, output);

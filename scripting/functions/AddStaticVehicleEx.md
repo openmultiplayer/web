@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 # AddStaticVehicleEx
 
+<TagLinks />
+
 ## Description
 
 Adds a 'static' vehicle (models are pre-loaded for players)to the gamemode. Differs from AddStaticVehicle in only one way: allows a respawn time to be set for when the vehicle is left unoccupied by the driver.
@@ -35,7 +37,7 @@ public OnGameModeInit()
 {
     // Add a Hydra (520) to the game that will respawn 15 seconds after being left
     AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
- 
+
     return 1;
 }
 ```

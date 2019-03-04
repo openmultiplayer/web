@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerObjectRot
 
+<TagLinks />
+
 ## Description
 
 Set the rotation of an object on the X, Y and Z axis.

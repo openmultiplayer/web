@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawSetPreviewRot
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3x and will not work in earlier versions!
@@ -31,7 +33,7 @@ This function does not return any specific values.
 
 ```c
 new Text:textdraw
- 
+
 public OnGameModeInit()
 {
 	textdraw = TextDrawCreate(320.0, 240.0, "_");

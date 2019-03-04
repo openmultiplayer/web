@@ -6,6 +6,8 @@ tags: ["player"]
 
 # AttachPlayerObjectToPlayer
 
+<TagLinks />
+
 ## Description
 
 The same as AttachObjectToPlayer but for objects which were created for player.

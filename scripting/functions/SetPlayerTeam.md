@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerTeam
 
+<TagLinks />
+
 ## Description
 
 Set the team of a player.

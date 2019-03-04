@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerDistanceFromPoint
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3c R3 and will not work in earlier versions!
@@ -38,13 +40,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new
             Float: fDistance = GetPlayerDistanceFromPoint(playerid, 237.9, 115.6, 1010.2),
             szMessage[44];
- 
+
         format(szMessage, sizeof(szMessage), "You're %0.2f meters away from the vending machine.", fDistance);
         SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
- 
+
         return 1;
     }
- 
+
     return 0;
 }
 ```

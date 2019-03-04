@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawSetShadow
 
+<TagLinks />
+
 ## Description
 
 Sets the size of a textdraw's text's shadow.
@@ -25,7 +27,7 @@ Sets the size of a textdraw's text's shadow.
 
 ```c
 new Text:MyTextdraw;
- 
+
 public OnGameModeInit()
 {
     MyTextDraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");

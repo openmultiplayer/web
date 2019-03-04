@@ -6,6 +6,8 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 # CreatePlayerTextDraw
 
+<TagLinks />
+
 ::: warning
 
 This feature (player-textdraws) was added in SA-MP 0.3e and will not work in earlier versions!
@@ -33,12 +35,12 @@ The ID of the created textdraw
 // This variable is used to store the id of the textdraw
 // so that we can use it throught the script
 new PlayerText:welcomeText[MAX_PLAYERS];
- 
+
 public OnPlayerConnect(playerid)
 {
     // First, create the textdraw
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my SA-MP server");
- 
+
     // Now show it
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
 }

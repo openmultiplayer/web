@@ -6,6 +6,8 @@ tags: []
 
 # tolower
 
+<TagLinks />
+
 ## Description
 
 This function changes a single character to lowercase.

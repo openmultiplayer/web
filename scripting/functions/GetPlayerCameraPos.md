@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerCameraPos
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!
@@ -34,10 +36,10 @@ public OnPlayerDisconnect(playerid)
 {
     new Float:x, Float:y, Float:z;
     GetPlayerCameraPos(playerid, x, y, z);
- 
+
     printf("The player left when they had their camera at %f,%f,%f.", x, y, z);
     // You could write this to a userfile.
- 
+
     return 1;
 }
 ```

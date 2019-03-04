@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawLetterSize
 
+<TagLinks />
+
 ## Description
 
 Sets the width and height of the letters.
@@ -24,7 +26,7 @@ This function does not return any specific values.
 
 ```c
 new Text:MyTextdraw;
- 
+
 public OnGameModeInit()
 {
     MyTextDraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");

@@ -6,6 +6,8 @@ tags: []
 
 # floatfract
 
+<TagLinks />
+
 ## Description
 
 Get the fractional part of a float. This means the value of the numbers after the decimal point.

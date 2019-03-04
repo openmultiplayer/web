@@ -6,6 +6,8 @@ tags: []
 
 # AllowInteriorWeapons
 
+<TagLinks />
+
 ## Description
 
 Toggle whether the usage of weapons in interiors is allowed or not.

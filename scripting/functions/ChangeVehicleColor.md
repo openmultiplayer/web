@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 # ChangeVehicleColor
 
+<TagLinks />
+
 ## Description
 
 Change a vehicle's primary and secondary colors.

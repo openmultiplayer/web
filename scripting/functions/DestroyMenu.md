@@ -6,6 +6,8 @@ tags: ["menu"]
 
 # DestroyMenu
 
+<TagLinks />
+
 ## Description
 
 Destroys the specified menu.
@@ -23,7 +25,7 @@ True if the destroying was successful, otherwise false
 ```c
 new Menu:examplemenu;
 examplemenu = CreateMenu("Your Menu", 2, 200.0, 100.0, 150.0, 150.0);
- 
+
 // ...
 DestroyMenu(examplemenu);
 ```

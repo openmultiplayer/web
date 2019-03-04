@@ -6,6 +6,8 @@ tags: ["player", "textdraw"]
 
 # TextDrawShowForPlayer
 
+<TagLinks />
+
 ## Description
 
 Shows a textdraw for a specific player.

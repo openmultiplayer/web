@@ -6,6 +6,8 @@ tags: []
 
 # floatsin
 
+<TagLinks />
+
 ## Description
 
 Get the sine from a given angle. The input angle may be in radians, degrees or grades.
@@ -28,10 +30,10 @@ GetPosInFrontOfPlayer(playerid, Float:distance, &Float:x, &Float:y, &Float:z)
     {
         new Float:z_angle;
         GetPlayerFacingAngle(playerid, z_angle);
- 
+
         x += distance * floatsin(-z_angle, degrees); // angles in GTA go counter-clockwise, so we need to reverse the retrieved angle
         y += distance * floatcos(-z_angle, degrees);
- 
+
         return 1; // return 1 on success, the actual coordinates are returned by reference
     }
     return 0; // return 0 if the player isn't connected

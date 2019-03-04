@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawSetPreviewVehCol
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3x and will not work in earlier versions!
@@ -30,7 +32,7 @@ This function does not return any specific values.
 
 ```c
 new Text:textdraw;
- 
+
 public OnGameModeInit()
 {
 	textdraw = TextDrawCreate(320.0, 240.0, "_");
@@ -40,7 +42,7 @@ public OnGameModeInit()
 	TextDrawTextSize(textdraw, 40.0, 40.0);
 	TextDrawSetPreviewModel(textdraw, 411); // Display model 411 (Infernus)
         TextDrawSetPreviewVehCol(textdraw, 6, 6); // Set the Infernus to have colour 6 (Yellow)
- 
+
 	//You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
 	return 1;
 }

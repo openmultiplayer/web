@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 # DestroyVehicle
 
+<TagLinks />
+
 ## Description
 
 Destroy a vehicle. It will disappear instantly.
@@ -31,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
           DestroyVehicle(vehicleid);
           return 1;
      }
- 
+
      return 0;
 }
 ```

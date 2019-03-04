@@ -6,6 +6,8 @@ tags: ["pvar"]
 
 # GetPVarFloat
 
+<TagLinks />
+
 ## Description
 
 Gets a player variable as a float.

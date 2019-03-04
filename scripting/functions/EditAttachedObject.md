@@ -6,6 +6,8 @@ tags: []
 
 # EditAttachedObject
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!
@@ -32,7 +34,7 @@ public OnPlayerSpawn(playerid)
 {
     SetPlayerAttachedObject(playerid, 0, 1337, 2);
 }
- 
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/edit", true))

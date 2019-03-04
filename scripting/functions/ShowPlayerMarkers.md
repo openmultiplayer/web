@@ -6,6 +6,8 @@ tags: ["player"]
 
 # ShowPlayerMarkers
 
+<TagLinks />
+
 ## Description
 
 Toggles player markers (blips on the radar). Must be used when the server starts (OnGameModeInit). For other times, see SetPlayerMarkerForPlayer.

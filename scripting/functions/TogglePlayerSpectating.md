@@ -6,6 +6,8 @@ tags: ["player"]
 
 # TogglePlayerSpectating
 
+<TagLinks />
+
 ## Description
 
 Toggle whether a player is in spectator mode or not. While in spectator mode a player can spectate (watch) other players and vehicles. After using this function, either PlayerSpectatePlayer or PlayerSpectateVehicle needs to be used.

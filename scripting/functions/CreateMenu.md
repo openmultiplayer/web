@@ -6,6 +6,8 @@ tags: ["menu"]
 
 # CreateMenu
 
+<TagLinks />
+
 ## Description
 
 Creates a menu.
@@ -27,7 +29,7 @@ The ID of the new menu or -1 on failure.
 
 ```c
 new Menu:examplemenu;
- 
+
 public OnGameModeInit()
 {
     examplemenu = CreateMenu("Your Menu", 2, 200.0, 100.0, 150.0, 150.0);

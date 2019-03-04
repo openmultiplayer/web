@@ -6,6 +6,8 @@ tags: []
 
 # DestroyObject
 
+<TagLinks />
+
 ## Description
 
 Destroys (removes) an object that was created using CreateObject.

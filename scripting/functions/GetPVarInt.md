@@ -6,6 +6,8 @@ tags: ["pvar"]
 
 # GetPVarInt
 
+<TagLinks />
+
 ## Description
 
 Gets an integer player variable's value.

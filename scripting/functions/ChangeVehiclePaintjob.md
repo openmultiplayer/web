@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 # ChangeVehiclePaintjob
 
+<TagLinks />
+
 ## Description
 
 Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).

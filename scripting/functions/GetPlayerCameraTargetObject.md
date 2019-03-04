@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerCameraTargetObject
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!
@@ -33,7 +35,7 @@ public OnGameModeInit()
     globalObjectID = CreateObject(1337, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0);
     return 1;
 }
- 
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/check", true))

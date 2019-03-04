@@ -6,6 +6,8 @@ tags: []
 
 # GetConsoleVarAsString
 
+<TagLinks />
+
 ## Description
 
 Get the string value of a console variable.

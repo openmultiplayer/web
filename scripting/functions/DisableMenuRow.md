@@ -6,6 +6,8 @@ tags: ["menu"]
 
 # DisableMenuRow
 
+<TagLinks />
+
 ## Description
 
 Disable a specific row in a menu for all players. It will be greyed-out and can't be selected by players.
@@ -23,7 +25,7 @@ This function always returns 1, even if the function fails. If an invalid row is
 
 ```c
 new Menu:WeaponMenu;
- 
+
 WeaponMenu = CreateMenu("Weapons", 1, 50.0, 180.0, 200.0, 200.0);
 AddMenuItem(WeaponMenu, 0, "Rocket Launcher");
 AddMenuItem(WeaponMenu, 0, "Flamethrower");

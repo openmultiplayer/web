@@ -6,6 +6,8 @@ tags: ["player", "checkpoint"]
 
 # DisablePlayerCheckpoint
 
+<TagLinks />
+
 ## Description
 
 Disables (hides/destroys) a player's set checkpoint. Players can only have a single checkpoint set at a time. Checkpoints don't need to be disabled before setting another one.

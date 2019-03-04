@@ -6,6 +6,8 @@ tags: []
 
 # SetWeather
 
+<TagLinks />
+
 ## Description
 
 Set the world weather for all players.

@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerScore
 
+<TagLinks />
+
 ## Description
 
 Set a player's score. Players' scores are shown in the scoreboard (shown by holding the TAB key).

@@ -6,6 +6,8 @@ tags: ["player", "3dtextlabel"]
 
 # UpdatePlayer3DTextLabelText
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

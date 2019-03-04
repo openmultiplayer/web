@@ -6,6 +6,8 @@ tags: []
 
 # strcat
 
+<TagLinks />
+
 ## Description
 
 This function concatenates (joins together) two strings into the destination string.
@@ -25,7 +27,7 @@ The length of the new destination string.
 ```c
 new string[40] = "Hello";
 strcat(string, " World!");
- 
+
 // The string is now 'Hello World!'
 ```
 

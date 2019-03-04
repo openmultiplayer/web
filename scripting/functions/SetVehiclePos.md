@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 # SetVehiclePos
 
+<TagLinks />
+
 ## Description
 
 Set a vehicle's position

@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawSetPreviewModel
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3x and will not work in earlier versions!
@@ -29,7 +31,7 @@ This function does not return any specific values.
 
 ```c
 new Text:textdraw;
- 
+
 public OnGameModeInit()
 {
 	textdraw = TextDrawCreate(320.0, 240.0, "_");
@@ -40,7 +42,7 @@ public OnGameModeInit()
 	TextDrawSetPreviewModel(textdraw, 411); //Display model 411 (Infernus)
         //TextDrawSetPreviewModel(textdraw, 1); //Display model 1 (CJ Skin)
         //TextDrawSetPreviewModel(textdraw, 18646); //Display model 18646 (Police light object)
- 
+
 	//You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
 	return 1;
 }

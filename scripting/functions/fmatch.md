@@ -6,6 +6,8 @@ tags: []
 
 # fmatch
 
+<TagLinks />
+
 ## Description
 
 Find a filename matching a pattern.

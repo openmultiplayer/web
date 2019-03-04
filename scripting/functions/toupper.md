@@ -6,6 +6,8 @@ tags: []
 
 # toupper
 
+<TagLinks />
+
 ## Description
 
 This function changes a single character to uppercase.

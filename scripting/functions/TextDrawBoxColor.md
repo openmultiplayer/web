@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawBoxColor
 
+<TagLinks />
+
 ## Description
 
 Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 1).
@@ -23,7 +25,7 @@ This function does not return any specific values.
 
 ```c
 new Text:Example;
- 
+
 public OnGameModeInit()
 {
     Example = TextDrawCreate(123.0, 123.0,"Example");

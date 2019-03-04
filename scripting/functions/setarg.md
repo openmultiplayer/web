@@ -6,6 +6,8 @@ tags: []
 
 # setarg
 
+<TagLinks />
+
 ## Description
 
 Set an argument that was passed to a function.

@@ -6,6 +6,8 @@ tags: []
 
 # strmid
 
+<TagLinks />
+
 ## Description
 
 Extract a range of characters from a string.

@@ -6,6 +6,8 @@ tags: []
 
 # float
 
+<TagLinks />
+
 ## Description
 
 Converts an integer into a float.

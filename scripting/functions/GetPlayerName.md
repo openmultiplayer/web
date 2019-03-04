@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerName
 
+<TagLinks />
+
 ## Description
 
 Get a player's name.
@@ -26,14 +28,14 @@ The player's name is stored in the specified array.
 public OnPlayerConnect(playerid)
 {
     // Get the name of the player that connected and display a join message to other players
- 
+
     new name[MAX_PLAYER_NAME + 1];
     GetPlayerName(playerid, name, sizeof(name));
- 
+
     new string[MAX_PLAYER_NAME + 23 + 1];
     format(string, sizeof(string), "%s has joined the server.", name);
     SendClientMessageToAll(0xC4C4C4FF, string);
- 
+
     return 1;
 }
 ```

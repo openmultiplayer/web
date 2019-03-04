@@ -6,6 +6,8 @@ tags: ["player"]
 
 # SetPlayerSpecialAction
 
+<TagLinks />
+
 ## Description
 
 This function allows to set players special action.

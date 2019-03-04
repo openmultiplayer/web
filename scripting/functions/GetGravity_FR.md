@@ -6,6 +6,8 @@ tags: []
 
 # GetGravity_FR
 
+<TagLinks />
+
 ## Description
 
 Permets d'obtenir la valeur de la gravité.
@@ -20,7 +22,7 @@ Permets d'obtenir la valeur de la gravité.
 #if !defined GetGravity
     native Float:GetGravity();
 #endif
- 
+
 printf("Gravité actuelle: %f", GetGravity());
 ```
 

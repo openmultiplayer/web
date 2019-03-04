@@ -6,6 +6,8 @@ tags: []
 
 # setproperty
 
+<TagLinks />
+
 ## Description
 
 Add a new property or change an existing property.
@@ -25,19 +27,19 @@ This function does not return any specific values.
 
 ```c
 setproperty(.name = "MyInteger", .value = 42);
- 
+
 new value = getproperty(.name = "MyInteger");
 printf("Value that was stored is: %d", value);
 setproperty(0, "", 123984334, ":)");
- 
+
 new value[4];
 getproperty(0, "", 123984334, value);
 strunpack(value, value, sizeof(value)); // we need to unpack the string first
 print(value);
- 
+
 //should print :)
 setproperty(.value = 123984334, .string = ":)");
- 
+
 // The rest is the same as above.
 ```
 

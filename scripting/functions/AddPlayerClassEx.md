@@ -6,6 +6,8 @@ tags: ["player"]
 
 # AddPlayerClassEx
 
+<TagLinks />
+
 ## Description
 
 This function is exactly the same as the AddPlayerClass function, with the addition of a team parameter.

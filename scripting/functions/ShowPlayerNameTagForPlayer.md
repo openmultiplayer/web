@@ -6,6 +6,8 @@ tags: ["player"]
 
 # ShowPlayerNameTagForPlayer
 
+<TagLinks />
+
 ## Description
 
 This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head. For use of a similar function like this on a global level, ShowNameTags function.

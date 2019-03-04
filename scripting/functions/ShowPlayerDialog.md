@@ -6,6 +6,8 @@ tags: ["player"]
 
 # ShowPlayerDialog
 
+<TagLinks />
+
 ::: warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!
@@ -42,29 +44,29 @@ enum
     DIALOG_WELCOME,
     DIALOG_WEAPONS
 }
- 
+
 // Alternatively, using macros:
 #define DIALOG_LOGIN 1
 #define DIALOG_WELCOME 2
 #define DIALOG_WEAPONS 3
- 
+
 // Enums are recommended, as you don't have to keep track of used IDs. However, enums use memory to store the defines, whereas defines are processed in the 'pre-processor' (compiling) stage.
- 
+
 // Example for DIALOG_STYLE_MSGBOX:
 ShowPlayerDialog(playerid, DIALOG_WELCOME, DIALOG_STYLE_MSGBOX, "Notice", "You are connected to the server", "Close", "");
- 
+
 // Example for DIALOG_STYLE_INPUT:
 ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Enter your password below:", "Login", "Cancel");
- 
+
 // Example for DIALOG_STYLE_LIST:
 ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons", "AK47\nM4\nSniper Rifle", "Option 1", "Option 2");
- 
+
 // Example for DIALOG_STYLE_PASSWORD:
 ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "Login", "Enter your password below:", "Login", "Cancel");
- 
+
 // Example for DIALOG_STYLE_TABLIST:
 ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST, "Buy Weapon", "Deagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Select", "Cancel");
- 
+
 // Example for DIALOG_STYLE_TABLIST_HEADERS:
 ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy Weapon", "Weapon\tPrice\tAmmo\nDeagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Select", "Cancel");
 ```

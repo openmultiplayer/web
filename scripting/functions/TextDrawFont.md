@@ -6,6 +6,8 @@ tags: ["textdraw"]
 
 # TextDrawFont
 
+<TagLinks />
+
 ## Description
 
 Changes the text font.
@@ -29,7 +31,7 @@ This function does not return any specific values.
 
 ```c
 new Text:MyTextdraw;
- 
+
 public OnGameModeInit()
 {
     MyTextdraw= TextDrawCreate(320.0, 425.0, "This is an example textdraw");

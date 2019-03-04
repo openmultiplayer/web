@@ -6,6 +6,8 @@ tags: []
 
 # BanEx
 
+<TagLinks />
+
 ## Description
 
 Ban a player with a reason.
@@ -34,21 +36,21 @@ public OnPlayerCommandText( playerid, cmdtext[] )
 /*In order to display a message (eg. reason) for the player before the connection is closed
 you have to use a timer to create a delay. This delay needs only to be a few milliseconds long,
 but this example uses a full second just to be on the safe side.*/
- 
+
 forward BanExPublic(playerid, reason[]);
- 
+
 public BanExPublic(playerid, reason[])
 {
     BanEx(playerid, reason);
 }
- 
+
 stock BanExWithMessage(playerid, color, message[], reason[])
 {
     //reason - The ban reason to be used for BanEx.
     SendClientMessage(playerid, color, message);
     SetTimerEx("BanExPublic", 1000, false, "ds", playerid, reason);
 }
- 
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(strcmp(cmdtext, "/banme", true) == 0)

@@ -6,6 +6,8 @@ tags: []
 
 # fexist
 
+<TagLinks />
+
 ## Description
 
 Checks if a specific file exists in the scriptfiles directory.
@@ -26,7 +28,7 @@ The number of files that match the pattern.
 if(fexist("file.txt"))
 {
 	// Success
- 
+
 	// Print the success
 	print("\"file.txt\" exists.");
 }

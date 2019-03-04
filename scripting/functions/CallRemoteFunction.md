@@ -6,6 +6,8 @@ tags: []
 
 # CallRemoteFunction
 
+<TagLinks />
+
 ## Description
 
 Calls a public function in any script that is loaded.
@@ -29,7 +31,7 @@ public CallMe(number, const string[])
     printf("CallMe called. Int: %i  String: %s.", number, string);
     return 1;
 }
- 
+
 // Somewhere... in another file perhaps?
 CallRemoteFunction("CallMe", "is", 69, "this is a string");
 ```

@@ -6,6 +6,8 @@ tags: []
 
 # db_get_field_float
 
+<TagLinks />
+
 ## Description
 
 Get the content of a field as a float from db_query

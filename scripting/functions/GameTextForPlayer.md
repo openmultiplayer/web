@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GameTextForPlayer
 
+<TagLinks />
+
 ## Description
 
 Shows 'game text' (on-screen text) for a certain length of time for a specific player.

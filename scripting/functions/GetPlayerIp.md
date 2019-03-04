@@ -6,6 +6,8 @@ tags: ["player"]
 
 # GetPlayerIp
 
+<TagLinks />
+
 ## Description
 
 Get the specified player's IP address and store it in a string.
