@@ -4,6 +4,8 @@ sidebar: false
 
 # API Documentation
 
+[![Build Status](https://travis-ci.org/openmultiplayer/wiki.svg?branch=master)](https://travis-ci.org/openmultiplayer/wiki)
+
 Documentation for all APIs and server lifecycle/maintenance guides.
 
 ## Reference
