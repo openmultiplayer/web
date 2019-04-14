@@ -16,7 +16,7 @@ tasks:
       - docker tag southclaws/{{.SERVICE}}:{{ .GIT_COMMIT }} southclaws/{{.SERVICE}}:latest
   run:
     cmds:
-      - docker run --env-file=.env -p8080:3000 southclaws/{{.SERVICE}}:latest
+      - docker run --env-file=.env -p8080:80 southclaws/{{.SERVICE}}:latest
   push:
     cmds:
       - docker push {{.OWNER}}/{{.SERVICE}}:{{.GIT_COMMIT}}
