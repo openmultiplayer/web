@@ -1,10 +1,10 @@
 module.exports = {
-  title: "SA:MP API Wiki",
-  description: "Documentation for SA:MP APIs and server configuration.",
+  title: "open.mp API Wiki",
+  description: "Documentation for open.mp APIs and server configuration.",
   base: "/",
   dest: "public",
   themeConfig: {
-    logo: "/logo.gif",
+    logo: "https://openmp.burgershot.gg/static/logo.png",
     sidebar: "auto",
     displayAllHeaders: true,
     activeHeaderLinks: false
