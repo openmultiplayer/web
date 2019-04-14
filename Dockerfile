@@ -7,4 +7,4 @@ RUN npm install -g vuepress && \
 
 FROM nginx AS run
 
-COPY --from=build /app/.vuepress/dist /usr/share/nginx/html
+COPY --from=build /app/public /usr/share/nginx/html
