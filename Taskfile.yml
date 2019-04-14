@@ -1,10 +1,24 @@
 version: "2"
+
 vars:
+  OWNER: southclaws
+  SERVICE: openmp-wiki
   GIT_COMMIT: { sh: git describe --always --dirty --tags }
+
 tasks:
+  up:
+    cmds:
+      - docker-compose up -d
+      - docker-compose logs -f
   build:
     cmds:
-      - docker build -t southclaws/samp-wiki:{{ .GIT_COMMIT }} .
+      - docker build -t southclaws/{{.SERVICE}}:{{ .GIT_COMMIT }} .
+      - docker tag southclaws/{{.SERVICE}}:{{ .GIT_COMMIT }} southclaws/{{.SERVICE}}:latest
+  run:
+    cmds:
+      - docker run --env-file=.env -p8080:3000 southclaws/{{.SERVICE}}:latest
   push:
     cmds:
-      - docker push southclaws/samp-wiki:{{ .GIT_COMMIT }}
+      - docker push {{.OWNER}}/{{.SERVICE}}:{{.GIT_COMMIT}}
+      - docker tag {{.OWNER}}/{{.SERVICE}}:{{.GIT_COMMIT}} {{.OWNER}}/{{.SERVICE}}:latest
+      - docker push {{.OWNER}}/{{.SERVICE}}:latest
