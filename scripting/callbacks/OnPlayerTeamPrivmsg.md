@@ -8,6 +8,12 @@ tags: ["player"]
 
 <TagLinks />
 
+::: warning
+
+This function was removed in SA-MP 0.3. You must make your own command using OnPlayerCommandText.
+
+:::
+
 ## Description
 
 This callback is called when a player sends a team private message through the native TPM system (/tpm).
@@ -67,3 +73,4 @@ Player teams must be set with SetPlayerTeam. If not, messages will be sent to al
 :::
 
 ## Related Functions
+
