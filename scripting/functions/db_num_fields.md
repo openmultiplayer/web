@@ -1,7 +1,7 @@
 ---
 title: db_num_fields
 description: Get the number of fields in a result.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_num_fields
@@ -48,7 +48,8 @@ db_free_result(db_result);
 
 ::: warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
+references.
 
 :::
 

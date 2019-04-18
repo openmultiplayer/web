@@ -1,7 +1,7 @@
 ---
 title: db_open
 description: This function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_open
@@ -56,8 +56,8 @@ public OnGameModeExit()
 
 ::: warning
 
-It will create a new SQLite database, if there is no SQLite database with the same file name available.
-Close your database connection with db_close!
+It will create a new SQLite database, if there is no SQLite database with the same file name available. Close your
+database connection with db_close!
 
 :::
 

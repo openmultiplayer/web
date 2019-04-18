@@ -1,7 +1,7 @@
 ---
 title: db_get_field_assoc_int
 description: Get the contents of field as an integer with specified name.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_get_field_assoc_int
@@ -25,7 +25,8 @@ Retrieved value as integer (number).
 
 ::: warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
+references.
 
 :::
 

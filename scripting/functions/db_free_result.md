@@ -1,7 +1,7 @@
 ---
 title: db_free_result
 description: Frees result memory allocated from db_query.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_free_result

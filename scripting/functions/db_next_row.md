@@ -1,7 +1,7 @@
 ---
 title: db_next_row
 description: Moves to the next row of the result allocated from db_query.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_next_row
@@ -64,7 +64,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ::: warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
+references.
 
 :::
 

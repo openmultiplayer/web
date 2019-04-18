@@ -1,7 +1,7 @@
 ---
 title: db_field_name
 description: Returns the name of a field at a particular index.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_field_name
@@ -21,7 +21,8 @@ Returns the name of a field at a particular index.
 
 ## Returns
 
-Returns 1, if the function was successful, otherwise 0 if DBResult:dbresult is a NULL reference or the column index not available.
+Returns 1, if the function was successful, otherwise 0 if DBResult:dbresult is a NULL reference or the column index not
+available.
 
 ## Examples
 
@@ -61,7 +62,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ::: warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
+references.
 
 :::
 

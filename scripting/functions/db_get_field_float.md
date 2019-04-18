@@ -1,7 +1,7 @@
 ---
 title: db_get_field_float
 description: Get the content of a field as a float from db_query.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_get_field_float
@@ -25,7 +25,8 @@ Retrieved value as floating point number.
 
 ::: warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
+references.
 
 :::
 

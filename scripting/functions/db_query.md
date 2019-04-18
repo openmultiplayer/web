@@ -1,7 +1,7 @@
 ---
 title: db_query
 description: This function is used to execute an SQL query on an opened SQLite database.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_query

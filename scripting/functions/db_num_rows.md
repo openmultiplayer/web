@@ -1,7 +1,7 @@
 ---
 title: db_num_rows
 description: Returns the number of rows from a db_query.
-tags: []
+tags: ["sqlite"]
 ---
 
 # db_num_rows
@@ -57,7 +57,8 @@ GetNameBySpawnID(spawn_id)
 
 ::: warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
+references.
 
 :::
 
