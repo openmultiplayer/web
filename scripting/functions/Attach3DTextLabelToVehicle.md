@@ -33,16 +33,15 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text3D:vehicle3Dtext[MAX_VEHICLES],vehicle_id;
-// Creating the TextLabel for later use
+new 
+    Text3D:vehicle3Dtext[MAX_VEHICLES], // Creating the TextLabel for later use
+    vehicle_id;
 
 public OnGameModeInit ( )
 {
-    vehicle_id = CreateVehicle( 510, 0.0. 0.0, 15.0, 5, 0, 120 );
+    vehicle_id = CreateVehicle( 510, 0.0. 0.0, 15.0, 5, 0, 120 ); // Creating the Vehicle.
     vehicle3Dtext[ vehicle_id ] = Create3DTextLabel( "Example Text", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1 );
-    //Creating the Vehicle
-    //Attaching Text Label To Vehicle
-    Attach3DTextLabelToVehicle( vehicle3Dtext[ vehicle_id ] , vehicle_id, 0.0, 0.0, 2.0);
+    Attach3DTextLabelToVehicle( vehicle3Dtext[ vehicle_id ] , vehicle_id, 0.0, 0.0, 2.0); // Attaching Text Label To Vehicle.
 }
 public OnGameModeExit ( )
 {
