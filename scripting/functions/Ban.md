@@ -1,7 +1,7 @@
 ---
 title: Ban
 description: Ban a player who is currently in the server.
-tags: []
+tags: ["administration"]
 ---
 
 # Ban
