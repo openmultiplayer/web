@@ -4,7 +4,7 @@ module.exports = {
   base: "/",
   dest: "public",
   themeConfig: {
-    logo: "https://openmp.burgershot.gg/static/logo.png",
+    logo: "https://open.mp/static/logo.png",
     sidebar: "auto",
     displayAllHeaders: true,
     activeHeaderLinks: false
