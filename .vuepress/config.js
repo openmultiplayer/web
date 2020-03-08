@@ -4,7 +4,7 @@ module.exports = {
   base: "/",
   dest: "public",
   themeConfig: {
-    logo: "https://open.mp/static/logo.png",
+    logo: "https://open.mp/static/logo-light-mono.png",
     sidebar: "auto",
     displayAllHeaders: true,
     activeHeaderLinks: false
