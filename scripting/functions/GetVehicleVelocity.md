@@ -45,10 +45,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp("/GetMyCarVelocity", cmdtext) && IsPlayerInAnyVehicle(playerid))
     {
         new Float:Velocity[3], output[80];
-	GetVehicleVelocity(GetPlayerVehicleID(playerid), Velocity[0], Velocity[1], Velocity[2]);
+        GetVehicleVelocity(GetPlayerVehicleID(playerid), Velocity[0], Velocity[1], Velocity[2]);
         format(output, sizeof(output), "You are going at a velocity of X%f, Y%f, Z%f", Velocity[0], Velocity[1], Velocity[2]);
         SendClientMessage(playerid, 0xFFFFFFFF, output);
-	return 1;
+        return 1;
     }
     return 0;
 }

@@ -39,18 +39,18 @@ public OnPlayerCommandText(playerid, cmdtext[])
           new currentveh;
           new Float:z_rot;
           new message[40];
- 
+
           currentveh = GetPlayerVehicleID(playerid);
- 
+
           GetVehicleZAngle(currentveh, z_rot);
- 
+
           format(message, sizeof(message), "The current vehicle rotation is: %.0f", z_rot);
- 
+
           SendClientMessage(playerid, 0xFFFFFFFF, message);
- 
+
           return 1;
      }
- 
+
      return 0;
 }
 ```
