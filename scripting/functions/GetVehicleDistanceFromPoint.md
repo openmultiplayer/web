@@ -44,7 +44,7 @@ public OnPlayerText(playerid, text[])
 		new
 		    Float: fDistance = GetVehicleDistanceFromPoint(GetPlayerVehicleID(playerid), 237.9, 115.6, 1010.2),
 		    szMessage[44];
- 
+
 		format(szMessage, sizeof(szMessage), "You're %f away from our vending machine.", fDistance);
 		SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
 	}

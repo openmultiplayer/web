@@ -38,17 +38,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
      {
           new currentveh;
           currentveh = GetPlayerVehicleID(playerid);
- 
+
           new Float:vehx, Float:vehy, Float:vehz;
           GetVehiclePos(currentveh, vehx, vehy, vehz);
- 
+
           new vehpostext[96];
           format(vehpostext, sizeof(vehpostext), "The current vehicle positions are: %f, %f, %f", vehx, vehy, vehz);
- 
+
           SendClientMessage(playerid, 0xFFFFFFFF, vehpostext);
           return 1;
      }
- 
+
      return 0;
 }
 ```

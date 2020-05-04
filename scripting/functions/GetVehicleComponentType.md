@@ -36,11 +36,11 @@ The component slot ID of the specified component or -1 if the component is inval
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
     new componentType = GetVehicleComponentType(componentid);
- 
-    if(componentType != -1)
+
+    if(componentType != -1)
     {
         new clientMessage[41];
- 
+
         format(clientMessage, sizeof(clientMessage), "You have modified your vehicle on slot %i", componentType);
         SendClientMessage(playerid, 0xFFFFFFFF, clientMessage);
     }
@@ -48,7 +48,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
     {
         SendClientMessage(playerid, 0xFF0000FF, "The component is invalid.");
     }
- 
+
     return 1;
 }
 ```

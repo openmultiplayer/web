@@ -38,7 +38,7 @@ Returns a vehicle's siren state (on/off).
 
 ```c
 new siren = GetVehicleParamsSirenState(vehicleid);
- 
+
 if(siren == 1)
 {
     // Siren is on, do something

@@ -32,7 +32,7 @@ This function sends a message to a specific player with a chosen color in the ch
 
 ```c
 #define COLOR_RED 0xFF0000FF
- 
+
 public OnPlayerConnect(playerid)
 {
     SendClientMessage(playerid, COLOR_RED, "This text is red");
