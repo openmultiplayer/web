@@ -1,0 +1,60 @@
+---
+id: GetPlayerCameraPos
+title: GetPlayerCameraPos
+description: Get the position of the player's camera.
+tags: ["player"]
+---
+
+<TagLinks />
+
+:::warning
+
+This function was added in SA-MP 0.3a and will not work in earlier versions!
+
+:::
+
+## Description
+
+Get the position of the player's camera.
+
+| Name     | Description                                                         |
+| -------- | ------------------------------------------------------------------- |
+| playerid | The ID of the player to get the camera position of.                 |
+| Float:x  | A float variable to store the X coordinate in, passed by reference. |
+| Float:y  | A float variable to store the Y coordinate in, passed by reference. |
+| Float:z  | A float variable to store the Z coordinate in, passed by reference. |
+
+## Returns
+
+The player's position is stored in the specified variables.
+
+## Examples
+
+```c
+public OnPlayerDisconnect(playerid)
+{
+    new Float:x, Float:y, Float:z;
+    GetPlayerCameraPos(playerid, x, y, z);
+
+    printf("The player left when they had their camera at %f,%f,%f.", x, y, z);
+    // You could write this to a userfile.
+
+    return 1;
+}
+```
+
+## Notes
+
+:::warning
+
+Player's camera positions are only updated once a second, unless aiming.It is recommended to set a 1 second timer if you wish to take action that relies on a player's camera position.
+
+:::
+
+## Related Functions
+
+- SetPlayerCameraPos: Set a player's camera position.
+- GetPlayerCameraZoom: Get the zoom level of a player's camera.
+- GetPlayerCameraAspectRatio: Get the aspect ratio of a player's camera.
+- GetPlayerCameraMode: Get a player's camera mode.
+- GetPlayerCameraFrontVector: Get the player's camera front vector
