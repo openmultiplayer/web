@@ -2,7 +2,8 @@ FROM node:11 AS build
 
 WORKDIR /app
 ADD . .
-RUN npm run build
+RUN npm install && \
+    npm run build
 
 FROM nginx AS run
 
