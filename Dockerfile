@@ -2,9 +2,9 @@ FROM node:11 AS build
 
 WORKDIR /app
 ADD . .
-RUN npm install -g vuepress && \
+RUN npm install && \
     npm run build
 
 FROM nginx AS run
 
-COPY --from=build /app/public /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html

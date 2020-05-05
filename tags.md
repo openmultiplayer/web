@@ -1,7 +1,0 @@
----
-sidebar: false
----
-
-# Tags
-
-<TagList />
