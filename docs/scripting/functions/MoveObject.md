@@ -34,13 +34,13 @@ The time it will take for the object to move in milliseconds.
 
 ```c
 new obj; // Somewhere at the top of your script
-�
+
 public OnGameModeInit()
 {
     obj = CreateObject(980, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     return 1;
 }
-�
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(strcmp(cmdtext, "/moveobject", true) == 0)

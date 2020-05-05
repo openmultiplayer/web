@@ -36,7 +36,7 @@ public OnPlayerUpdate(playerid)
 {
     // Store the ID
     new targetplayer = GetPlayerTargetPlayer(playerid);
-    if(GetPlayerTeam(targetplayer) == GetPlayerTeam(playerid) && targetplayer�!= INVALID_PLAYER_ID)
+    if(GetPlayerTeam(targetplayer) == GetPlayerTeam(playerid) && targetplayer != INVALID_PLAYER_ID)
     {
         GameTextForPlayer(playerid, "~R~do not shoot at team-mates!", 5000, 3);
     }

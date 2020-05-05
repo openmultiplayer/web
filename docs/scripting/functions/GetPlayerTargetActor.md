@@ -35,7 +35,7 @@ The ID of the targeted actor, or INVALID_ACTOR_ID if none.
 public OnPlayerUpdate(playerid)
 {
     new actorid = GetPlayerTargetActor(playerid);
-�
+
     new string[32];
     format(string, sizeof(string), "You are aiming at actor id %d", actorid);
     SendClientMessage(playerid, -1, string);

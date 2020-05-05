@@ -27,20 +27,20 @@ This function always returns 0.
 
 ```c
 new connect_timer[MAX_PLAYERS];
-�
+
 public OnPlayerConnect(playerid)
 {
     print("Starting timer...");
     connect_timer[playerid] = SetTimerEx("WelcomeTimer", 5000, true, "i", playerid);
     return 1;
 }
-�
+
 public OnPlayerDisconnect(playerid)
 {
     KillTimer(connect_timer[playerid]);
     return 1;
 }
-�
+
 forward WelcomeTimer(playerid);
 public WelcomeTimer(playerid)
 {

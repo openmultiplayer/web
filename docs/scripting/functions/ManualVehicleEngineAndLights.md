@@ -29,7 +29,7 @@ Use this function before any player connects (OnGameModeInit) to tell all client
 public OnGameModeInit()
 {
     ManualVehicleEngineAndLights();
-�
+
     return 1;
 }
 ```

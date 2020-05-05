@@ -35,7 +35,7 @@ This function does not return any specific values.
 
 ```c
 new PlayerText:pTextdraw[MAX_PLAYERS];
-�
+
 public OnPlayerConnect(playerid)
 {
     pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");

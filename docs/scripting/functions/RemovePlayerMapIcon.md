@@ -30,7 +30,7 @@ Removes a map icon that was set earlier for a player using SetPlayerMapIcon.
 
 ```c
 SetPlayerMapIcon(playerid, 12, 2204.9468, 1986.2877, 16.7380, 52, 0);
-�
+
 // Later on
 RemovePlayerMapIcon(playerid, 12);
 ```

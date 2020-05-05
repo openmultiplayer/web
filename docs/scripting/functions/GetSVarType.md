@@ -46,7 +46,7 @@ stock PrintSVar(varname[])
         {
             new varstring[256];
             GetSVarString(varname, varstring);
-�
+
             printf("String SVar '%s': %s", varname, varstring);
         }
     }

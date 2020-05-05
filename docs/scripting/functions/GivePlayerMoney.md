@@ -31,13 +31,13 @@ Give money to or take money from a player.
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    if(killerid�!= INVALID_PLAYER_ID)
+    if(killerid != INVALID_PLAYER_ID)
     {
        // Award $1000 to the killer
        GivePlayerMoney(killerid, 1000);
        SendClientMessage(killerid, -1, "You have been awarded $1000 for the kill.");
     }
-�
+
     // Take $500 from the player who died.
     GivePlayerMoney(playerid, -500);
 }

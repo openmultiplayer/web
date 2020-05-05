@@ -49,7 +49,7 @@ Attach an object to a specific bone on a player.
 public OnPlayerSpawn(playerid)
 {
     SetPlayerAttachedObject(playerid, 3, 1609, 2); //Attach a turtle to the playerid's head, in slot 3
-�
+
     // example of using colors on an object being attached to the player:
     SetPlayerAttachedObject(playerid, 3, 19487, 2, 0.101, -0.0, 0.0, 5.50, 84.60, 83.7, 1.0, 1.0, 1.0, 0xFF00FF00);
     // Attach a white hat to the head of the player and paint it green

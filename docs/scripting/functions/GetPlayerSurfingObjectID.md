@@ -39,7 +39,7 @@ public OnPlayerText(playerid, text[])
 	{
 		new
 		    szMessage[30];
-�
+
 		format(szMessage, sizeof(szMessage), "You're surfing on object #%d.", GetPlayerSurfingObjectID(playerid));
 		SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
 	}

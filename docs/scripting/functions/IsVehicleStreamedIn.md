@@ -37,7 +37,7 @@ Checks if a vehicle is streamed in for a player. Only nearby vehicles are stream
 
 ```c
 new streamedVehicleCount;
-�
+
 for(new v = 1; v <= MAX_VEHICLES; v++)
 {
     if(IsVehicleStreamedIn(v, playerid))
@@ -45,7 +45,7 @@ for(new v = 1; v <= MAX_VEHICLES; v++)
         streamedVehicleCount++;
     }
 }
-�
+
 new szString[144];
 format(szString, sizeof(szString), "You currently have %i vehicles streamed in to your game.", streamedVehicleCount);
 SendClientMessage(playerid, -1, szString);

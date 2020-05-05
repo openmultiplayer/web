@@ -44,28 +44,28 @@ public OnGameModeInit()
 {
     // Disable camera collision
     SetObjectsDefaultCameraCol(1);
-�
+
     // Create mapped objects
     CreateObject(...);
     CreateObject(...);
     CreateObject(...);
     CreateObject(...);
-�
+
     // The above objects will NOT have camera collisions
-�
+
     // Re-enable camera collisions
     SetObjectsDefaultCameraCol(0);
-�
+
     // Create mapped objects
     CreateObject(...);
     CreateObject(...);
     CreateObject(...);
     CreateObject(...);
-�
+
     // The above objects WILL have camera collision
-�
+
     // BUT, the first set will still NOT have camera collisions
-�
+
     return 1;
 }
 ```

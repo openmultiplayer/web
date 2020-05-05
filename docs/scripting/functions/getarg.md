@@ -31,12 +31,12 @@ SomeFunc(...)
 {
     printf("%i", getarg(3));
 }
-�
+
 public OnFilterScriptInit()
 {
     SomeFunc(1, 3, 3, 7);
 }
-�
+
 // Output: 7. The fourth argument (index 3) is 7.
 ```
 

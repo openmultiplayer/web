@@ -31,13 +31,13 @@ Checks if a player is in a specific vehicle.
 
 ```c
 new specialcar;
-�
+
 public OnGameModeInit()
 {
     specialcar = AddStaticVehicle(411, 0.0, 0.0, 5.0, 0.0, -1, -1);
     return 1;
 }
-�
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(strcmp(cmdtext, "/specialcar", true) == 0)

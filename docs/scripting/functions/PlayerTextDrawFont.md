@@ -38,7 +38,7 @@ This function does not return any specific values.
 
 ```c
 new PlayerText:welcomeText[MAX_PLAYERS];
-�
+
 public OnPlayerConnect(playerid)
 {
     // First, create the textdraw

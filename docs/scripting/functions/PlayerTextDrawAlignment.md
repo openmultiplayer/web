@@ -43,7 +43,7 @@ For alignment 2 (center) the x and y values of TextSize need to be swapped, see 
 
 ```c
 new PlayerText:MyTextdraw[MAX_PLAYERS];
-�
+
 public OnPlayerConnect(playerid)
 {
     MyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");

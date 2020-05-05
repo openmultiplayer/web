@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
     {
         new dest[22];
         NetStats_GetIpPort(playerid, dest, sizeof(dest));
-�
+
         new szString[144];
         format(szString, sizeof(szString), "Your current IP and port: %s.", dest);
         SendClientMessage(playerid, -1, szString);

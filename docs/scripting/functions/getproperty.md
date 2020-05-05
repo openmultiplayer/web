@@ -30,11 +30,11 @@ The value of a property when the name is passed in; fills in the string argument
 
 ```c
 new value[16];
-�
+
 getproperty(0, "", 123984334, value);
-�
+
 strunpack(value, value, sizeof(value));
-�
+
 print(value);
 ```
 

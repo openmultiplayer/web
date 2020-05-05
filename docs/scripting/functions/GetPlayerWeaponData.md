@@ -33,9 +33,9 @@ Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in t
 ```c
 // Common use: get all weapons and store info in an array containing 13 slots
 // The first value is the weapon ID, and second is the ammo
-�
+
 new weapons[13][2];
-�
+
 for (new i = 0; i <= 12; i++)
 {
     GetPlayerWeaponData(playerid, i, weapons[i][0], weapons[i][1]);

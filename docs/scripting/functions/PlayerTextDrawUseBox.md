@@ -35,7 +35,7 @@ This function does not return any specific values.
 
 ```c
 new PlayerText:MyTD[MAX_PLAYERS];
-�
+
 public OnPlayerConnect(playerid)
 {
     MyTD[playerid] = CreatePlayerTextDraw(playerid, 40.0, 140.0, "_~N~Example text!~N~_");

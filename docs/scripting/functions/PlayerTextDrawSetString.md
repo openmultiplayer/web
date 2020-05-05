@@ -36,14 +36,14 @@ This function does not return any specific values.
 ```c
 new pVehicleHealthTimer[MAX_PLAYERS];
 new PlayerText:pVehicleHealthTD[MAX_PLAYERS];
-�
+
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
     if(newstate == 2) // Entered a vehicle as driver
     {
         pVehicleHealthTD[playerid] = CreatePlayerTextDraw(playerid, x, y, " ");
         PlayerTextDrawShow(playerid, pVehicleHealthTD[playerid]);
-�
+
         // Set a timer to update the textdraw every second
         pVehicleHealthTimer[playerid] = SetTimerEx("vhealth_td_update", 1000, true, "i", playerid);
     }
@@ -53,18 +53,18 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
         PlayerTextDrawDestroy(playerid, pVehicleHealthTD[playerid]);
     }
 }
-�
+
 public vhealth_td_update(playerid)
 {
     new tdstring[32], Float:vHealth;
     GetVehicleHealth(GetPlayerVehicleID(playerid), vHealth);
-�
+
     format(tdstring, sizeof(tdstring), "Vehicle Health: %0f", vHealth);
-�
+
     PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], tdstring); // <<< Update the text to show the vehicle health
     return 1;
 }
-�
+
 /*
 NOTE: This example is purely for demonstration purposes, it is not guaranteed to work in-game. It is merely to show the usage of the PlayerTextDrawSetString function.
 */

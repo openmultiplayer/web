@@ -29,9 +29,9 @@ This function does not return any specific values.
 public OnGameModeInit()
 {
     SetDeathDropAmount(5000);
-�
+
     //MORE CODE
-�
+
     return 1;
 }
 ```

@@ -34,13 +34,13 @@ This function returns 1 if the actor is streamed in for the player, or 0 if it i
 
 ```c
 new MyActor;
-�
+
 public OnGameModeInit()
 {
     MyActor = CreateActor(...);
     return 1;
 }
-�
+
 public OnPlayerSpawn(playerid)
 {
     if(IsActorStreamedIn(MyActor, playerid))

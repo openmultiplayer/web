@@ -43,7 +43,7 @@ If PlayerTextDrawSetOutline is used with size > 0, the outline color will match 
 
 ```c
 new PlayerText:MyTextdraw;
-�
+
 public OnPlayerConnect(playerid)
 {
     MyTextdraw = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");

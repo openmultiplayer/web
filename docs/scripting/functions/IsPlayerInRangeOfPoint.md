@@ -45,7 +45,7 @@ if (!strcmp("/stadium", cmdtext))
     {
     	SendClientMessage(playerid,0xFFFFFFFF,"You are near the stadium entrance!");
     }
-�
+
     return 1;
 }
 ```

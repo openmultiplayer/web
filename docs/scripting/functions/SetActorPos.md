@@ -38,13 +38,13 @@ Set the position of an actor.
 
 ```c
 new MyActor;
-�
+
 public OnGameModeInit()
 {
     MyActor = CreateActor(...);
     return 1;
 }
-�
+
 // Somewhere else
 SetActorPos(MyActor, 1.0, 2.0, 3.0);
 ```

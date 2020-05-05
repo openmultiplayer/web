@@ -29,10 +29,10 @@ This function does not return any specific values.
 ```c
 new number = 42;
 printf("The number is %d.",number);  //-> The number is 42.
-�
+
 new string[]= "simple message";
 printf("This is a %s containing the number %d.", string, number); //-> This is a simple message containing the number 42.
-�
+
 new character = 64;
 printf("I'm %c home",character); //-> I'm @ home
 ```

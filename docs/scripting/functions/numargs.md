@@ -24,12 +24,12 @@ SomeFunction(...)
 {
     printf("numargs(): %i", numargs());
 }
-�
+
 public OnFilterScriptInit()
 {
     SomeFunction(1, 2, 3);
 }
-�
+
 // Output: "numargs(): 3"
 // Because 3 parameters (1, 2, 3) were passed.
 ```

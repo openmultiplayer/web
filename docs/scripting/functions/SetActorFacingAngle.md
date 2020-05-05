@@ -36,13 +36,13 @@ Set the facing angle of an actor.
 
 ```c
 new MyActor;
-�
+
 public OnGameModeInit()
 {
     MyActor = CreateActor(...);
     return 1;
 }
-�
+
 // Somewhere else
 SetActorFacingAngle(MyActor, 180.0);
 ```

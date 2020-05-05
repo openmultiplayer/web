@@ -36,10 +36,10 @@ public OnPlayerDeath(playerid, killerid, reason)
 {
     // Declare 3 float variables to store the X, Y and Z coordinates in
     new Float:x, Float:y, Float:z;
-�
+
     // Use GetPlayerPos, passing the 3 float variables we just created
     GetPlayerPos(playerid, x, y, z);
-�
+
     // Create a cash pickup at the player's position
     CreatePickup(1212, 4, x, y, z, -1);
    return 1;

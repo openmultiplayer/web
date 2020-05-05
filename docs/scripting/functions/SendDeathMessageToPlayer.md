@@ -41,7 +41,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 {
     // Sends a death message to "playerid" shows that "killerid" killed "playerid" for "reason"
     SendDeathMessageToPlayer(playerid, killerid, playerid, reason);
-�
+
     return 1;
 }
 ```

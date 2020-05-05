@@ -37,7 +37,7 @@ Sets a player textdraw 2D preview sprite of a specified model ID.
 
 ```c
 new PlayerText:textdraw;
-�
+
 public OnPlayerConnect(playerid)
 {
     textdraw = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");

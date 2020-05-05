@@ -36,12 +36,12 @@ Set the virtual world of an actor. Only players in the same world will see the a
 
 ```c
 new MyActor;
-�
+
 public OnGameModeInit()
 {
     // Create the actor
     MyActor = CreateActor(69, 0.0, 0.0, 3.0, 0.0);
-�
+
     // Set their virtual world
     SetActorVirtualWorld(MyActor, 69);
     return 1;

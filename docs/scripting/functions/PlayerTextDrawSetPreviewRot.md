@@ -38,7 +38,7 @@ This function does not return any specific values.
 
 ```c
 new PlayerText:textdraw;
-�
+
 public OnPlayerConnect(playerid)
 {
 	textdraw = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");

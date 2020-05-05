@@ -37,7 +37,7 @@ Sends a threaded HTTP request.
 
 ```c
 forward MyHttpResponse(index, response_code, data[]);
-�
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp("/hello",cmdtext,true))
@@ -47,10 +47,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
-�
+
 public MyHttpResponse(index, response_code, data[])
 {
-    // In this callback "index" would normally be called "playerid" ( if you didn't get it already�:) )
+    // In this callback "index" would normally be called "playerid" ( if you didn't get it already:) )
     new
         buffer[ 128 ];
     if(response_code == 200) //Did the request succeed?
