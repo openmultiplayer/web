@@ -15,7 +15,7 @@ function Home() {
       description="Open Multiplayer Documentations Website">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <img className={styles.logoImage} src={useBaseUrl('static/public/logo-light-mono.svg')} alt={siteConfig.title } />
+          <img className={styles.logoImage} src={useBaseUrl('public/logo-light-mono.svg')} alt={siteConfig.title } />
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
