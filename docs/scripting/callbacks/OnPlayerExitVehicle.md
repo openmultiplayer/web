@@ -5,8 +5,6 @@ description: This callback is called when a player starts to exit a vehicle.
 tags: ["player", "vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player starts to exit a vehicle.

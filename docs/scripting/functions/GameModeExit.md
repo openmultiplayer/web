@@ -5,8 +5,6 @@ description: Ends the current gamemode.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Ends the current gamemode.

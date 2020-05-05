@@ -5,8 +5,6 @@ description: Returns the current GTA camera mode for the requested player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3c R3 and will not work in earlier versions!

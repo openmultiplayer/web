@@ -5,8 +5,6 @@ description: Set the player marker radius.
 tags: ['player']
 ---
 
-<TagLinks />
-
 :::warning
 
 This Function was added in SA-MP 0.3a and will not work in earlier versions!

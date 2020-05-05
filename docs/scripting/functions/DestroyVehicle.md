@@ -5,8 +5,6 @@ description: Destroy a vehicle.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Destroy a vehicle. It will disappear instantly.

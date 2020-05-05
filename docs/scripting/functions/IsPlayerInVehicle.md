@@ -5,8 +5,6 @@ description: Checks if a player is in a specific vehicle.
 tags: ['player', 'vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Checks if a player is in a specific vehicle.

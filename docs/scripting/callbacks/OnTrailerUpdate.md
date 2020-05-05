@@ -5,8 +5,6 @@ description: This callback is called when a player sent a trailer update.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3z R4 and will not work in earlier versions!

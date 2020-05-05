@@ -5,8 +5,6 @@ description: Called when a player picks up a pickup created with CreatePickup.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Called when a player picks up a pickup created with CreatePickup.

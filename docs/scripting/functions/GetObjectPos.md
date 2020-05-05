@@ -5,8 +5,6 @@ description: Get the position of an object.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the position of an object.

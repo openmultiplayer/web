@@ -5,8 +5,6 @@ description: Set the text alignment of a player-textdraw.
 tags: ['player', 'textdraw', 'playertextdraw']
 ---
 
-<TagLinks />
-
 :::warning
 
 This feature (player-textdraws) was added in SA-MP 0.3e and will not work in earlier versions!

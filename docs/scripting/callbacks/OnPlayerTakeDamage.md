@@ -5,8 +5,6 @@ description: This callback is called when a player takes damage.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3d and will not work in earlier versions!

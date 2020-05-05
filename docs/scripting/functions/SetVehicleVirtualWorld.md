@@ -5,8 +5,6 @@ description: Sets the 'virtual world' of a vehicle.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the 'virtual world' of a vehicle. Players will only be able to see vehicles in their own virtual world.

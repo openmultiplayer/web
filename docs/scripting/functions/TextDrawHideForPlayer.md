@@ -5,8 +5,6 @@ description: Hides a textdraw for a specific player.
 tags: ["player", "textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Hides a textdraw for a specific player.

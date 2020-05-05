@@ -5,7 +5,6 @@ description: Get an argument that was passed to a function.
 tags: []
 ---
 
-<TagLinks />
 
 ## Description
 

@@ -5,8 +5,6 @@ description: This function gets the ID of the vehicle the player is currently in
 tags: ['player', 'vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 This function gets the ID of the vehicle the player is currently in. Note: NOT the model id of the vehicle. See GetVehicleModel for that.

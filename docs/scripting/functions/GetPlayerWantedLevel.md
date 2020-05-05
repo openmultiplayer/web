@@ -5,8 +5,6 @@ description: Gets the wanted level of a player.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets the wanted level of a player.

@@ -5,8 +5,6 @@ description: (Re)Spawns a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 (Re)Spawns a player.

@@ -5,8 +5,6 @@ description: Restore the camera to a place behind the player, after using a func
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.

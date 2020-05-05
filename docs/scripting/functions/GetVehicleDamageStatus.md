@@ -5,8 +5,6 @@ description: Retrieve the damage statuses of a vehicle.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 :::warning
 
 This Callback was added in SA-MP 0.3a and will not work in earlier versions!

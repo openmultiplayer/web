@@ -5,8 +5,6 @@ description: Outputs a formatted string on the console (the server window, not t
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Outputs a formatted string on the console (the server window, not the in-game chat).

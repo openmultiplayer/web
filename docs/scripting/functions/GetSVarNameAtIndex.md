@@ -5,8 +5,6 @@ description: Retrieve the name of a sVar via the index.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Retrieve the name of a sVar via the index.

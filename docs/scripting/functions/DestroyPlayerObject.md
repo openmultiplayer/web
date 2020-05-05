@@ -5,8 +5,6 @@ description: Destroy a player-object created using CreatePlayerObject.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Destroy a player-object created using CreatePlayerObject.

@@ -5,8 +5,6 @@ description: Gets the amount of ammo in a player's current weapon.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets the amount of ammo in a player's current weapon.

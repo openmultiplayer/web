@@ -5,8 +5,6 @@ description: Uses standard player walking animation (animation of the CJ skin) i
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Uses standard player walking animation (animation of the CJ skin) instead of custom animations for every skin (e.g. skating for skater skins).

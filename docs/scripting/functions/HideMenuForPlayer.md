@@ -5,8 +5,6 @@ description: Hides a menu for a player.
 tags: ['player', 'menu']
 ---
 
-<TagLinks />
-
 ## Description
 
 Hides a menu for a player.

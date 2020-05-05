@@ -5,8 +5,6 @@ description: This function changes a single character to lowercase.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This function changes a single character to lowercase.

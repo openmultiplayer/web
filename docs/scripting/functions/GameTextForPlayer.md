@@ -5,8 +5,6 @@ description: Shows 'game text' (on-screen text) for a certain length of time for
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Shows 'game text' (on-screen text) for a certain length of time for a specific player.

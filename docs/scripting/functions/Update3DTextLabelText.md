@@ -5,8 +5,6 @@ description: Updates a 3D Text Label text and color.
 tags: ["3dtextlabel"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

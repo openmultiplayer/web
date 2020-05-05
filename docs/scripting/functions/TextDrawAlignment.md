@@ -5,8 +5,6 @@ description: Set the alignment of text in a text draw.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the alignment of text in a text draw.

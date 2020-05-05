@@ -5,8 +5,6 @@ description: Gets the number of messages the player has received in the last sec
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3z and will not work in earlier versions!

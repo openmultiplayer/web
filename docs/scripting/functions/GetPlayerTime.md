@@ -5,8 +5,6 @@ description: Get the player's current game time.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the player's current game time. Set by SetWorldTime, or by the game automatically if TogglePlayerClock is used.

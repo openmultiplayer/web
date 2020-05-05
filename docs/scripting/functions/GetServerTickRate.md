@@ -5,8 +5,6 @@ description: Gets the tick rate (like FPS) of the server.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3z and will not work in earlier versions!

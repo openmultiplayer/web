@@ -5,8 +5,6 @@ description: Sets which weapon (that a player already has) the player is holding
 tags: ['player']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

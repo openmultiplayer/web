@@ -5,8 +5,6 @@ description: This callback is triggered when the gamemode starts.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is triggered when the gamemode starts.

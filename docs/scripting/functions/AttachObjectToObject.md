@@ -5,8 +5,6 @@ description: You can use this function to attach objects to other objects.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3d and will not work in earlier versions!

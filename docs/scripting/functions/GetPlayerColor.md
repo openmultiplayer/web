@@ -5,8 +5,6 @@ description: Gets the color of the player's name and radar marker.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets the color of the player's name and radar marker. Only works after SetPlayerColor.

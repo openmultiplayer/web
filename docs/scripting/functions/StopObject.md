@@ -5,8 +5,6 @@ description: Stop a moving object after MoveObject has been used.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Stop a moving object after MoveObject has been used.

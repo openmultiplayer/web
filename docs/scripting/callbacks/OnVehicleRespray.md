@@ -5,8 +5,6 @@ description: This callback is called when a player exits a mod shop, even if the
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player exits a mod shop, even if the colors weren't changed. Watch out, the name is ambiguous, Pay 'n' Spray shops don't call this callback.

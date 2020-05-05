@@ -5,8 +5,6 @@ description: Interpolate a player's camera's 'look at' point between two coordin
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

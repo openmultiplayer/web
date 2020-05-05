@@ -5,8 +5,6 @@ description: Display the cursor and allow the player to select a textdraw.
 tags: ['textdraw']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

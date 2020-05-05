@@ -5,8 +5,6 @@ description: Get the currently set gravity.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the currently set gravity.

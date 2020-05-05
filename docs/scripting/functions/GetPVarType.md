@@ -5,8 +5,6 @@ description: Gets the type (integer, float or string) of a player variable.
 tags: ["pvar"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets the type (integer, float or string) of a player variable.

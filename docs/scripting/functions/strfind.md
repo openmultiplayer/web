@@ -5,8 +5,6 @@ description: Search for a sub string in a string.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Search for a sub string in a string.

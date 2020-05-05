@@ -5,8 +5,6 @@ description: Allows you to retrieve the current state of a vehicle's doors.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7  and will not work in earlier versions!

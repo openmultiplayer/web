@@ -5,8 +5,6 @@ description: Checks if the given string is packed.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Checks if the given string is packed.

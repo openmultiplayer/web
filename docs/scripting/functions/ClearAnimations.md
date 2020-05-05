@@ -5,8 +5,6 @@ description: Clears all animations for the given player (it also cancels all cur
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Clears all animations for the given player (it also cancels all current tasks such as jetpacking,parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.. ).

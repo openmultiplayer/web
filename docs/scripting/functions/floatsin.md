@@ -5,8 +5,6 @@ description: Get the sine from a given angle.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the sine from a given angle. The input angle may be in radians, degrees or grades.

@@ -5,8 +5,6 @@ description: Starts recording a player's movements to a file, which can then be 
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

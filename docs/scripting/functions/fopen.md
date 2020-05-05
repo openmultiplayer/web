@@ -5,8 +5,6 @@ description: Open a file (to read from or write to).
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Open a file (to read from or write to).

@@ -5,8 +5,6 @@ description: Get the position of a player, represented by X, Y and Z coordinates
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the position of a player, represented by X, Y and Z coordinates.

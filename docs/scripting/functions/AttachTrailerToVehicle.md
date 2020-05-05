@@ -5,8 +5,6 @@ description: Attach a vehicle to another vehicle as a trailer.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Attach a vehicle to another vehicle as a trailer.

@@ -5,8 +5,6 @@ description: Displays a message in chat to all players.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Displays a message in chat to all players. This is a multi-player equivalent of SendClientMessage.

@@ -5,8 +5,6 @@ description: Set a float player variable's value.
 tags: ['pvar']
 ---
 
-<TagLinks />
-
 ## Description
 
 Set a float player variable's value.

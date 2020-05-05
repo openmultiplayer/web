@@ -5,8 +5,6 @@ description: Creates an object which will be visible to only one player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Creates an object which will be visible to only one player.

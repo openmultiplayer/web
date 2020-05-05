@@ -5,8 +5,6 @@ description: This callback is called when a player changes state.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player changes state. For example, when a player changes from being the driver of a vehicle to being on-foot.

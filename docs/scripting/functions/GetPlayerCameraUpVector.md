@@ -5,8 +5,6 @@ description: This function returns the vector, that points to the upside of the 
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

@@ -5,8 +5,6 @@ description: Sets a player textdraw 2D preview sprite of a specified model ID.
 tags: ['player', 'textdraw', 'playertextdraw']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3x and will not work in earlier versions!

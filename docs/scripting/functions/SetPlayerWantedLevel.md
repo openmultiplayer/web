@@ -5,8 +5,6 @@ description: Set a player's wanted level (6 brown stars under HUD).
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set a player's wanted level (6 brown stars under HUD).

@@ -5,8 +5,6 @@ description: Toggle stunt bonuses for a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Toggle stunt bonuses for a player. Enabled by default.

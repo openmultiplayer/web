@@ -5,8 +5,6 @@ description: This function can be used to calculate the distance (as a float) be
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3c R3 and will not work in earlier versions!

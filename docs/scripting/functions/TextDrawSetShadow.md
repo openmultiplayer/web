@@ -5,8 +5,6 @@ description: Sets the size of a textdraw's text's shadow.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the size of a textdraw's text's shadow.

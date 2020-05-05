@@ -5,7 +5,6 @@ description: Returns the ID of the weapon a player is currently holding.
 tags: ['player']
 ---
 
-<TagLinks />
 
 ## Description
 

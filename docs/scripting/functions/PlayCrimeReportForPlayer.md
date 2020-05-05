@@ -5,8 +5,6 @@ description: This function plays a crime report for a player - just like in sing
 tags: ['player']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

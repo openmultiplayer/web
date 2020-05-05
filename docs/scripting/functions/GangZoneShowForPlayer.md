@@ -5,8 +5,6 @@ description: Show a gangzone for a player.
 tags: ["player", "gangzone"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Show a gangzone for a player. Must be created with GangZoneCreate first.

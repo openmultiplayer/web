@@ -5,8 +5,6 @@ description: Called when a player double-clicks on a player on the scoreboard.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3a and will not work in earlier versions!

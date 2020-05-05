@@ -5,8 +5,6 @@ description: Reset a player's money to $0.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Reset a player's money to $0.

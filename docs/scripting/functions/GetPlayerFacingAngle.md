@@ -5,8 +5,6 @@ description: Gets the angle a player is facing.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets the angle a player is facing.

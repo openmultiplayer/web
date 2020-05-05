@@ -5,8 +5,6 @@ description: Use this function before any player connects (OnGameModeInit) to te
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 :::warning
 
 This Function was added in SA-MP 0.3c  and will not work in earlier versions!

@@ -5,8 +5,6 @@ description: Delete a file.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Delete a file.

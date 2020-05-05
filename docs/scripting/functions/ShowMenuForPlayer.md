@@ -5,8 +5,6 @@ description: Shows a previously created menu for a player.
 tags: ["player", "menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Shows a previously created menu for a player.

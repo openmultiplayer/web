@@ -5,8 +5,6 @@ description: Checks if the given player objectid is moving.
 tags: ['player']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3d and will not work in earlier versions!

@@ -5,8 +5,6 @@ description: Sets the width and height of the letters.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the width and height of the letters.

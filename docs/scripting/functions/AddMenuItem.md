@@ -5,8 +5,6 @@ description: Adds an item to a specified menu.
 tags: ["menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Adds an item to a specified menu.

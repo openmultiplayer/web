@@ -5,8 +5,6 @@ description: Sets the rotation and zoom of a 3D model preview textdraw.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3x and will not work in earlier versions!

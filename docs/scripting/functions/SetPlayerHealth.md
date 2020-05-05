@@ -5,8 +5,6 @@ description: Set the health of a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the health of a player.

@@ -5,8 +5,6 @@ description: Set the team of a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the team of a player.

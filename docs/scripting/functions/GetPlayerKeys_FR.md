@@ -5,8 +5,6 @@ description: Obtenir la touche sur laquelle appuie le joueur.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Obtenir la touche sur laquelle appuie le joueur.

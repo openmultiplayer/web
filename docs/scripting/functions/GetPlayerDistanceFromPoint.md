@@ -5,8 +5,6 @@ description: Calculate the distance between a player and a map coordinate.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3c R3 and will not work in earlier versions!

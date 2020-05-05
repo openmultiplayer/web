@@ -5,8 +5,6 @@ description: Set the rotation of an object on the X, Y and Z axis.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the rotation of an object on the X, Y and Z axis.

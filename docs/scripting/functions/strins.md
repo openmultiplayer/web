@@ -5,8 +5,6 @@ description: Insert a string into another string.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Insert a string into another string.

@@ -5,8 +5,6 @@ description: Move an object to a new position with a set speed.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Move an object to a new position with a set speed. Players/vehicles will 'surf' the object as it moves.

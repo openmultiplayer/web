@@ -5,8 +5,6 @@ description: Check the state of a player's weapon.
 tags: ['player']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

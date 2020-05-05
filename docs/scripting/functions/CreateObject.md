@@ -5,8 +5,6 @@ description: Creates an object at specified coordinates in the game world.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Creates an object at specified coordinates in the game world.

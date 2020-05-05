@@ -5,8 +5,6 @@ description: Get the boolean value of a console variable.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the boolean value of a console variable.

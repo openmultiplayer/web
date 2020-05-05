@@ -5,8 +5,6 @@ description: Toggle the in-game clock (top-right corner) for a specific player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Toggle the in-game clock (top-right corner) for a specific player. When this is enabled, time will progress at 1 minute per second. Weather will also interpolate (slowly change over time) when set using SetWeather/SetPlayerWeather.

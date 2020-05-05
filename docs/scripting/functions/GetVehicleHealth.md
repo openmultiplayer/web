@@ -5,8 +5,6 @@ description: Get the health of a vehicle.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the health of a vehicle.

@@ -5,8 +5,6 @@ description: Gets the ID of the menu the player is currently viewing (shown by S
 tags: ["player", "menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets the ID of the menu the player is currently viewing (shown by ShowMenuForPlayer).

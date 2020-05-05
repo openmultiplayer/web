@@ -5,8 +5,6 @@ description: Gets the number of messages the server has received from the player
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3z and will not work in earlier versions!

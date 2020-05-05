@@ -5,8 +5,6 @@ description: Creates a 3D Text Label at a specific location in the world.
 tags: ["3dtextlabel"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

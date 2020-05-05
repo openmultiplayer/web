@@ -5,8 +5,6 @@ description: Allows you to retrieve the ID of the object the player is looking a
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!

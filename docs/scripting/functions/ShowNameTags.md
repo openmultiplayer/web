@@ -5,8 +5,6 @@ description: Toggle the drawing of nametags, health bars and armor bars above pl
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Toggle the drawing of nametags, health bars and armor bars above players.

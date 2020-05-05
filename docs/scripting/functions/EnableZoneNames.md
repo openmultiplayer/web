@@ -5,8 +5,6 @@ description: This function allows to turn on zone / area names such as the "Vine
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This function allows to turn on zone / area names such as the "Vinewood" or "Doherty" text at the bottom-right of the screen as they enter the area. This is a gamemode option and should be set in the callback OnGameModeInit.

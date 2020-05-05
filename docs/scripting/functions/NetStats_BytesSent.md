@@ -5,8 +5,6 @@ description: Gets the amount of data (in bytes) that the server has sent to the 
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3z and will not work in earlier versions!

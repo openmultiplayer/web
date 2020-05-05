@@ -5,8 +5,6 @@ description: Get the number of fields in a result.
 tags: ["sqlite"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the number of fields in a result.

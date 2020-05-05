@@ -5,8 +5,6 @@ description: Sends an RCON (Remote Console) command.
 tags: ["administration"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sends an RCON (Remote Console) command.

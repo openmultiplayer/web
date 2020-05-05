@@ -5,8 +5,6 @@ description: Set the colour of a player's nametag and marker (radar blip).
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the colour of a player's nametag and marker (radar blip).

@@ -5,8 +5,6 @@ description: Get the string value of a console variable.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the string value of a console variable.

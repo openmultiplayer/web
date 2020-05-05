@@ -5,8 +5,6 @@ description: Get the name of a weapon.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the name of a weapon.

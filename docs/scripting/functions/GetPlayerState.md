@@ -5,8 +5,6 @@ description: Get a player's current state.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Get a player's current state.

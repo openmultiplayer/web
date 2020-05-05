@@ -5,8 +5,6 @@ description: Sets the camera to a specific position for a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the camera to a specific position for a player.

@@ -5,8 +5,6 @@ description: This callback is called when a player enters or exits a mod shop.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3a and will not work in earlier versions!

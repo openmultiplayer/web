@@ -5,8 +5,6 @@ description: Sets the position of a player-object to the specified coordinates.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the position of a player-object to the specified coordinates.

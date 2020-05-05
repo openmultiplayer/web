@@ -5,8 +5,6 @@ description: Get the velocity (speed) of a player on the X, Y and Z axes.
 tags: ['player']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

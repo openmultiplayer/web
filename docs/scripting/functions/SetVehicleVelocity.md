@@ -5,8 +5,6 @@ description: Sets the X, Y and Z velocity of a vehicle.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

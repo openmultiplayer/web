@@ -5,8 +5,6 @@ description: Set an integer server variable.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7 R2 and will not work in earlier versions!

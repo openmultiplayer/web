@@ -5,8 +5,6 @@ description: Destroys (removes) an object that was created using CreateObject.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Destroys (removes) an object that was created using CreateObject.

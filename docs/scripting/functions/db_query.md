@@ -5,8 +5,6 @@ description: This function is used to execute an SQL query on an opened SQLite d
 tags: ["sqlite"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This function is used to execute an SQL query on an opened SQLite database.

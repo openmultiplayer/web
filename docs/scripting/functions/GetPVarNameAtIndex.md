@@ -5,8 +5,6 @@ description: Retrieve the name of a player's pVar via the index.
 tags: ["pvar"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Retrieve the name of a player's pVar via the index.

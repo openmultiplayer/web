@@ -5,8 +5,6 @@ description: Sets a 'timer' to call a function after some time.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets a 'timer' to call a function after some time. Can be set to repeat.

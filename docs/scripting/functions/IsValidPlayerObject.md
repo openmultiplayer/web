@@ -5,8 +5,6 @@ description: Checks if the given object ID is valid for the given player.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Checks if the given object ID is valid for the given player.

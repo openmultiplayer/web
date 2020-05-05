@@ -5,8 +5,6 @@ description: This callback is called when a filterscript is initialized (loaded)
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a filterscript is initialized (loaded). It is only called inside the filterscript which is starting.

@@ -5,8 +5,6 @@ description: Sets the thickness of a textdraw's text's outline.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the thickness of a textdraw's text's outline. TextDrawBackgroundColor can be used to change the color.

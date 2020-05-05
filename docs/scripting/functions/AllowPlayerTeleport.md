@@ -5,8 +5,6 @@ description: Enable/Disable the teleporting ability for a player by right-clicki
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function, as of 0.3d, is deprecated. Check OnPlayerClickMap.

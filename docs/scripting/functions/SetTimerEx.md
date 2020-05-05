@@ -5,8 +5,6 @@ description: Sets a timer to call a function after the specified interval.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets a timer to call a function after the specified interval. This variant ('Ex') can pass parameters (such as a player ID) to the function.

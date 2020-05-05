@@ -5,8 +5,6 @@ description: Returns the class of the players skin.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Returns the class of the players skin

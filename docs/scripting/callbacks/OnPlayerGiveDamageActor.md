@@ -5,8 +5,6 @@ description: This callback is called when a player gives damage to an actor.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3.7 and will not work in earlier versions!

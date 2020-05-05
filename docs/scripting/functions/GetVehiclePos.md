@@ -5,8 +5,6 @@ description: Gets the position of a vehicle.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets the position of a vehicle.

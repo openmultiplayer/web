@@ -5,8 +5,6 @@ description: Stop a moving player-object after MovePlayerObject has been used.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Stop a moving player-object after MovePlayerObject has been used.

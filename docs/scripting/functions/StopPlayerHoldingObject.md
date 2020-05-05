@@ -5,8 +5,6 @@ description: Removes attached objects.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3b and will not work in earlier versions!

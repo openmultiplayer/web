@@ -5,8 +5,6 @@ description: Get the inversed value of an arc tangent in radians.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the inversed value of an arc tangent in radians.

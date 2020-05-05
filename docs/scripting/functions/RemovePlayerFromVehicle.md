@@ -5,8 +5,6 @@ description: Removes/ejects a player from their vehicle.
 tags: ['player', 'vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Removes/ejects a player from their vehicle.

@@ -5,8 +5,6 @@ description: Changes the text on a textdraw.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Changes the text on a textdraw.

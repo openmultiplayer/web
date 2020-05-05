@@ -5,8 +5,6 @@ description: Frees result memory allocated from db_query.
 tags: ["sqlite"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Frees result memory allocated from db_query.

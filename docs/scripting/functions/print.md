@@ -5,8 +5,6 @@ description: Prints a string to the server console (not in-game chat) and logs (
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Prints a string to the server console (not in-game chat) and logs (server_log.txt).

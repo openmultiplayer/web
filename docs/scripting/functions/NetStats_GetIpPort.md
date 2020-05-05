@@ -5,8 +5,6 @@ description: Get a player's IP and port.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3z and will not work in earlier versions!

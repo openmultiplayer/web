@@ -5,8 +5,6 @@ description: This callback is called when a player clicks on a textdraw or cance
 tags: ["player", "textdraw"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3e and will not work in earlier versions!

@@ -5,8 +5,6 @@ description: This callback is called when a player leaves the race checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player leaves the race checkpoint.

@@ -5,8 +5,6 @@ description: Checks if a specific file exists in the scriptfiles directory.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Checks if a specific file exists in the scriptfiles directory.

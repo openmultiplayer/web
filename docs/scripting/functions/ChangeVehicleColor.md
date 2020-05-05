@@ -5,8 +5,6 @@ description: Change a vehicle's primary and secondary colors.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Change a vehicle's primary and secondary colors.

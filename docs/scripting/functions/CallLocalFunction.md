@@ -5,8 +5,6 @@ description: Calls a public function from the script in which it is used.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Calls a public function from the script in which it is used.

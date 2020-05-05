@@ -5,8 +5,6 @@ description: Get the rotation of a vehicle on the Z axis (yaw).
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the rotation of a vehicle on the Z axis (yaw).

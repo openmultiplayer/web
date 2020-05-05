@@ -5,8 +5,6 @@ description: Removes all weapons from a player.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Removes all weapons from a player.

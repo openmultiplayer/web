@@ -5,8 +5,6 @@ description: This function returns the absolute value of float.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This function returns the absolute value of float.

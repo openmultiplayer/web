@@ -5,8 +5,6 @@ description: Disable a specific row in a menu for all players.
 tags: ["menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Disable a specific row in a menu for all players. It will be greyed-out and can't be selected by players.

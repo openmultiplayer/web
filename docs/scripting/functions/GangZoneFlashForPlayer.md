@@ -5,8 +5,6 @@ description: Makes a gangzone flash for a player.
 tags: ["player", "gangzone"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Makes a gangzone flash for a player.

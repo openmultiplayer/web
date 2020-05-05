@@ -5,8 +5,6 @@ description: Creates an explosion that is only visible to a single player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3z R2-2 and will not work in earlier versions!

@@ -5,8 +5,6 @@ description: Retrieves the amount of money a player has.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Retrieves the amount of money a player has.

@@ -5,8 +5,6 @@ description: This function is exactly the same as the AddPlayerClass function, w
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This function is exactly the same as the AddPlayerClass function, with the addition of a team parameter.

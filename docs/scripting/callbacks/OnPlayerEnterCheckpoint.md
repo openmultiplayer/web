@@ -5,8 +5,6 @@ description: This callback is called when a player enters the checkpoint set for
 tags: ["player", "checkpoint"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player enters the checkpoint set for that player.

@@ -5,8 +5,6 @@ description: Puts a player in a vehicle.
 tags: ['player', 'vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Puts a player in a vehicle.

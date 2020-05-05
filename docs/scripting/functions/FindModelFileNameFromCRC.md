@@ -5,8 +5,6 @@ description: Find an existing custom skin or simple object model file.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions!

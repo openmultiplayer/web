@@ -5,8 +5,6 @@ description: This callback is called when a player spawns.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player spawns.(i.e. after caling SpawnPlayer function)

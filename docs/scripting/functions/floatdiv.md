@@ -5,8 +5,6 @@ description: Divide one float by another one.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Divide one float by another one. Redundant as the division operator (/) does the same thing.

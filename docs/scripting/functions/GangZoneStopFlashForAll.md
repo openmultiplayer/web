@@ -5,8 +5,6 @@ description: Stops a gangzone flashing for all players.
 tags: ["gangzone"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Stops a gangzone flashing for all players.

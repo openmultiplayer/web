@@ -5,8 +5,6 @@ description: Checks if an actor is streamed in for a player.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!

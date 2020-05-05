@@ -5,8 +5,6 @@ description: Check if the player is currently inside a checkpoint, this could be
 tags: ['player', 'checkpoint']
 ---
 
-<TagLinks />
-
 ## Description
 
 Check if the player is currently inside a checkpoint, this could be used for properties or teleport points for example.

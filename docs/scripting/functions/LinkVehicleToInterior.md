@@ -5,8 +5,6 @@ description: Links a vehicle to an interior.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Links a vehicle to an interior. Vehicles can only be seen by players in the same interior (SetPlayerInterior).

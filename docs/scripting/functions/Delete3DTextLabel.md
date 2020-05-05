@@ -5,8 +5,6 @@ description: Delete a 3D text label (created with Create3DTextLabel).
 tags: ["3dtextlabel"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

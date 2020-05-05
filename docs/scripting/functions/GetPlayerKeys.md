@@ -5,8 +5,6 @@ description: Check which keys a player is pressing.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Check which keys a player is pressing.

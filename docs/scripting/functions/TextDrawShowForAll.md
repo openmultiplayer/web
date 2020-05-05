@@ -5,8 +5,6 @@ description: Shows a textdraw for all players.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Shows a textdraw for all players.

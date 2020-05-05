@@ -5,8 +5,6 @@ description: Detach the connection between a vehicle and its trailer, if any.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Detach the connection between a vehicle and its trailer, if any.

@@ -5,8 +5,6 @@ description: This callback is called when a player connects to the server.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player connects to the server.

@@ -5,8 +5,6 @@ description: Change the colour of a player's nametag and radar blip for another 
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Change the colour of a player's nametag and radar blip for another player.

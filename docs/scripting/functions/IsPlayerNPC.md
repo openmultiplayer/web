@@ -5,8 +5,6 @@ description: Check if a player is an actual player or an NPC.
 tags: ['player', 'npc']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

@@ -5,8 +5,6 @@ description: Retrieves the installed component ID (modshop mod(ification)) on a 
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

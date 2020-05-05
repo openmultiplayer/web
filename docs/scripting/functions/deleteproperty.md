@@ -5,8 +5,6 @@ description: Delete an earlier set property (setproperty).
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Delete an earlier set property (setproperty).

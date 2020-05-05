@@ -5,8 +5,6 @@ description: Set the maximum distance to display the names of players.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the maximum distance to display the names of players.

@@ -5,8 +5,6 @@ description: Adds a 'component' (often referred to as a 'mod' (modification)) to
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. Valid components can be found here.

@@ -5,8 +5,6 @@ description: Forces a player to go back to class selection.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Forces a player to go back to class selection.

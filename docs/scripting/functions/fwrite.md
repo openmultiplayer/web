@@ -5,8 +5,6 @@ description: Write text into a file.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Write text into a file.

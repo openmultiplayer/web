@@ -5,8 +5,6 @@ description: Sets the name of a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the name of a player.

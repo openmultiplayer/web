@@ -5,8 +5,6 @@ description: Retrieves a player's current special action.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Retrieves a player's current special action.

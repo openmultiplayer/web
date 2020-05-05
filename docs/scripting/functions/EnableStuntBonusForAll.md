@@ -5,8 +5,6 @@ description: Enables or disables stunt bonuses for all players.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Enables or disables stunt bonuses for all players. If enabled, players will receive monetary rewards when performing a stunt in a vehicle (e.g. a wheelie).

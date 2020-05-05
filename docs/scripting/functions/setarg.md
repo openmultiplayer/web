@@ -5,8 +5,6 @@ description: Set an argument that was passed to a function.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Set an argument that was passed to a function.

@@ -5,8 +5,6 @@ description: Get a specific property from the memory, the string is returned as 
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get a specific property from the memory, the string is returned as a packed string!

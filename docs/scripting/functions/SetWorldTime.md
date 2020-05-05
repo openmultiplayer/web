@@ -5,8 +5,6 @@ description: Sets the world time (for all players) to a specific hour.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the world time (for all players) to a specific hour.

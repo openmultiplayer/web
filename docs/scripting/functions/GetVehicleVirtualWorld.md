@@ -5,8 +5,6 @@ description: Get the virtual world of a vehicle.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the virtual world of a vehicle.

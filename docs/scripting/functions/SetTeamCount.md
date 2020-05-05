@@ -5,8 +5,6 @@ description: This function is used to change the amount of teams used in the gam
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This function is used to change the amount of teams used in the gamemode. It has no obvious way of being used, but can help to indicate the number of teams used for better (more effective) internal handling. This function should only be used in the OnGameModeInit callback. Important: You can pass 2 billion here if you like, this function has no effect at all.

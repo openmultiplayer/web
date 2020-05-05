@@ -5,8 +5,6 @@ description: Toggles whether a player-textdraw can be selected or not.
 tags: ['player', 'textdraw', 'playertextdraw']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

@@ -5,8 +5,6 @@ description: Get the content of a field from db_query.
 tags: ["sqlite"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the content of a field from db_query

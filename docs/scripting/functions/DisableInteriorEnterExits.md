@@ -5,8 +5,6 @@ description: Disable all the interior entrances and exits in the game (the yello
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Disable all the interior entrances and exits in the game (the yellow arrows at doors).

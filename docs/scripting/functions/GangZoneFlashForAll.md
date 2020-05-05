@@ -5,8 +5,6 @@ description: GangZoneFlashForAll flashes a gangzone for all players.
 tags: ["gangzone"]
 ---
 
-<TagLinks />
-
 ## Description
 
 GangZoneFlashForAll flashes a gangzone for all players.

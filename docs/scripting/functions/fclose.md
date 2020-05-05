@@ -5,8 +5,6 @@ description: Closes a file.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Closes a file. Files should always be closed when the script no longer needs them (after reading/writing).

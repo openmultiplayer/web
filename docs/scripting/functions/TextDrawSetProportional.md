@@ -5,8 +5,6 @@ description: Appears to scale text spacing to a proportional ratio.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Appears to scale text spacing to a proportional ratio. Useful when using TextDrawLetterSize to ensure the text has even character spacing.

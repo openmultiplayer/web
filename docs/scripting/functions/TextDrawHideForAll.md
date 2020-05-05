@@ -5,8 +5,6 @@ description: Hides a text draw for all players.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Hides a text draw for all players.

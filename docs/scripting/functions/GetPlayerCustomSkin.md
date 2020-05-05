@@ -5,8 +5,6 @@ description: Returns the class of the players custom skin downloaded from the se
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions!

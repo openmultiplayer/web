@@ -5,8 +5,6 @@ description: Copy bytes from one location to another.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Copy bytes from one location to another.

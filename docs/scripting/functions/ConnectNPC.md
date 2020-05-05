@@ -5,8 +5,6 @@ description: Connect an NPC to the server.
 tags: ["npc"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

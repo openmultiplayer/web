@@ -5,8 +5,6 @@ description: Get the current server date, which will be stored in the variables 
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the current server date, which will be stored in the variables &year, &month and &day.

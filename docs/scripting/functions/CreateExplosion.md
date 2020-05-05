@@ -5,8 +5,6 @@ description: Create an explosion at the specified coordinates.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Create an explosion at the specified coordinates.

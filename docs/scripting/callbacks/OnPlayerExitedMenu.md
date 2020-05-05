@@ -5,8 +5,6 @@ description: Called when a player exits a menu.
 tags: ["player", "menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Called when a player exits a menu.

@@ -5,8 +5,6 @@ description: Disable a menu.
 tags: ["menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Disable a menu.

@@ -5,8 +5,6 @@ description: Converts an integer into a float.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Converts an integer into a float.

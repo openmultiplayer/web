@@ -5,7 +5,6 @@ description: Check who a player is aiming at.
 tags: ['player']
 ---
 
-<TagLinks />
 
 :::warning
 

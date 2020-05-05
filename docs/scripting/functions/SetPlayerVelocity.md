@@ -5,8 +5,6 @@ description: Set a player's velocity on the X, Y and Z axes.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

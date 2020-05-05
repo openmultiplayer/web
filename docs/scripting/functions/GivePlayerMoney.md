@@ -5,7 +5,6 @@ description: Give money to or take money from a player.
 tags: ['player']
 ---
 
-<TagLinks />
 
 ## Description
 

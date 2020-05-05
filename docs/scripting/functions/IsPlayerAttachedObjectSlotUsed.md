@@ -5,8 +5,6 @@ description: Check if a player has an object attached in the specified index (sl
 tags: ['player']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3c  and will not work in earlier versions!

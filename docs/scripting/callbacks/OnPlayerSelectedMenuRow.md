@@ -5,8 +5,6 @@ description: This callback is called when a player selects an item from a menu (
 tags: ["player", "menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player selects an item from a menu (ShowMenuForPlayer).

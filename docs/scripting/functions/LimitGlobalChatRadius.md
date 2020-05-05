@@ -5,8 +5,6 @@ description: Set a radius limitation for the chat.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Set a radius limitation for the chat. Only players at a certain distance from the player will see their message in the chat. Also changes the distance at which a player can see other players on the map at the same distance.

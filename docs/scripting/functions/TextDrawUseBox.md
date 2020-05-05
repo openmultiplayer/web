@@ -5,8 +5,6 @@ description: Toggle whether a textdraw uses a box or not.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Toggle whether a textdraw uses a box or not.

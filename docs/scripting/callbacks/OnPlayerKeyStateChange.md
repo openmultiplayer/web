@@ -5,8 +5,6 @@ description: This callback is called when the state of any supported key is chan
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when the state of any supported key is changed (pressed/released). Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).

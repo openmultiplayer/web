@@ -5,8 +5,6 @@ description: This callback is called when a player enters a command into the cli
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player enters a command into the client chat window. Commands are anything that start with a forward slash, e.g. /help.

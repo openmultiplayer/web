@@ -5,8 +5,6 @@ description: Sets a vehicle back to the position at where it was created.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets a vehicle back to the position at where it was created.

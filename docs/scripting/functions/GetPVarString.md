@@ -5,8 +5,6 @@ description: Gets a player variable as a string.
 tags: ["pvar"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets a player variable as a string.

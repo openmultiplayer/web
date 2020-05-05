@@ -5,8 +5,6 @@ description: Creates a menu.
 tags: ["menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Creates a menu.

@@ -5,8 +5,6 @@ description: Set a player's facing angle (Z rotation).
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set a player's facing angle (Z rotation).

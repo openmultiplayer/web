@@ -5,8 +5,6 @@ description: Called when a player changes class at class selection (and when cla
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Called when a player changes class at class selection (and when class selection first appears).

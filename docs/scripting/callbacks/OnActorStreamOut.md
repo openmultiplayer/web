@@ -5,8 +5,6 @@ description: This callback is called when an actor is streamed out by a player's
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!

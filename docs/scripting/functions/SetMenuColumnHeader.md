@@ -5,8 +5,6 @@ description: Sets the caption of a column in a menu.
 tags: ['menu']
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the caption of a column in a menu.

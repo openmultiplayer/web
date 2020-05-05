@@ -5,8 +5,6 @@ description: Get the ID of the vehicle the player is looking at.
 tags: ["player", "vehicle"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!

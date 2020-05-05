@@ -5,8 +5,6 @@ description: Sets a player to spectate another vehicle.
 tags: ['player', 'vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets a player to spectate another vehicle. Their camera will be attached to the vehicle as if they are driving it.

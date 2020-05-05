@@ -5,8 +5,6 @@ description: Removes a map icon that was set earlier for a player using SetPlaye
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Removes a map icon that was set earlier for a player using SetPlayerMapIcon.

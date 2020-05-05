@@ -5,8 +5,6 @@ description: Permets d'obtenir la valeur de la gravité.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Permets d'obtenir la valeur de la gravité.

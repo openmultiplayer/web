@@ -5,8 +5,6 @@ description: Adjusts the text box colour (only used if TextDrawUseBox 'use' para
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 1).

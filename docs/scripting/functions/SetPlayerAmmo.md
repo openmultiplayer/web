@@ -5,8 +5,6 @@ description: Set the ammo of a player's weapon.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the ammo of a player's weapon.

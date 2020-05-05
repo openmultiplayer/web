@@ -5,8 +5,6 @@ description: Retrieve information about a specific vehicle model such as the siz
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

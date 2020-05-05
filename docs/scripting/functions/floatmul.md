@@ -5,8 +5,6 @@ description: Multiplies two floats with each other.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Multiplies two floats with each other.

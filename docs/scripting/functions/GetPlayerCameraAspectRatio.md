@@ -5,8 +5,6 @@ description: Retrieves the aspect ratio of a player's camera.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3z and will not work in earlier versions!

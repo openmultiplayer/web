@@ -5,8 +5,6 @@ description: Adds a 'static' vehicle (models are pre-loaded for players) to the 
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.

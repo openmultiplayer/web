@@ -5,8 +5,6 @@ description: Set the color of a vehicle in a player-textdraw model preview (if a
 tags: ['player', 'textdraw', 'playertextdraw']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3x and will not work in earlier versions!

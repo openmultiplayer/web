@@ -5,8 +5,6 @@ description: This callback is called when a vehicle's siren is toggled.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3.7 and will not work in earlier versions!

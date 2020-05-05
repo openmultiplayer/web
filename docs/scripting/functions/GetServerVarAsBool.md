@@ -5,8 +5,6 @@ description: Get the boolean value of a server variable.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function, as of 0.3.7 R2,  is deprecated.  Please see GetConsoleVarAsBool

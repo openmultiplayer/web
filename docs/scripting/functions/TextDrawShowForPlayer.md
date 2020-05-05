@@ -5,8 +5,6 @@ description: Shows a textdraw for a specific player.
 tags: ["player", "textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Shows a textdraw for a specific player.

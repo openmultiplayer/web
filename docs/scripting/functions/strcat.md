@@ -5,8 +5,6 @@ description: This function concatenates (joins together) two strings into the de
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This function concatenates (joins together) two strings into the destination string.

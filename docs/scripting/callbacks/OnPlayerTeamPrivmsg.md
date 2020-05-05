@@ -5,8 +5,6 @@ description: This callback is called when a player sends a team private message 
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was removed in SA-MP 0.3. You must make your own command using OnPlayerCommandText.

@@ -5,8 +5,6 @@ description: Adds two floats together.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Adds two floats together. This function is redundant as the standard operator (+) does the same thing.

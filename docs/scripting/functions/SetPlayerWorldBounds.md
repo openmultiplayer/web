@@ -5,8 +5,6 @@ description: Set the world boundaries for a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the world boundaries for a player. Players can not go out of the boundaries (they will be pushed back in).

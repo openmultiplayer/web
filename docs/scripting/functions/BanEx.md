@@ -5,8 +5,6 @@ description: Ban a player with a reason.
 tags: ["administration"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Ban a player with a reason.

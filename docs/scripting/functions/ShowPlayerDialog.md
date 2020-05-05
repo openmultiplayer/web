@@ -5,8 +5,6 @@ description: Shows the player a synchronous (only one at a time) dialog box.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

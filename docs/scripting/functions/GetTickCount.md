@@ -5,8 +5,6 @@ description: Returns the uptime of the actual server (not the SA-MP server) in m
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Returns the uptime of the actual server (not the SA-MP server) in milliseconds.

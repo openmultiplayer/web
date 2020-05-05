@@ -5,8 +5,6 @@ description: Gibt die Munition der vom Spieler aktuell gehaltenen Waffe zurück.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Gibt die Munition der vom Spieler aktuell gehaltenen Waffe zurück.

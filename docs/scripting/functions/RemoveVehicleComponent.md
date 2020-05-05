@@ -5,8 +5,6 @@ description: Remove a component from a vehicle.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Remove a component from a vehicle.

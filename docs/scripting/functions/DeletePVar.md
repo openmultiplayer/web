@@ -5,8 +5,6 @@ description: Deletes a previously set player variable.
 tags: ["pvar"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Deletes a previously set player variable.

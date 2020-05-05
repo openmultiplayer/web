@@ -5,8 +5,6 @@ description: Delete part of a string.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Delete part of a string.

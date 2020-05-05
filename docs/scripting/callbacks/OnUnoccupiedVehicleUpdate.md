@@ -5,8 +5,6 @@ description: This callback is called when a player's client updates/syncs the po
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3c R3 and will not work in earlier versions!

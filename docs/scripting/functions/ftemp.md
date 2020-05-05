@@ -5,8 +5,6 @@ description: Creates a file in the "tmp", "temp" or root directory with random n
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Creates a file in the "tmp", "temp" or root directory with random name for reading and writing. The file is deleted after fclose() is used on the file.

@@ -5,8 +5,6 @@ description: Sets the text color of a textdraw.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets the text color of a textdraw

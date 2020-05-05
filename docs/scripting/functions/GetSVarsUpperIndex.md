@@ -5,7 +5,6 @@ description: Each SVar (server-variable) has its own unique identification numbe
 tags: []
 ---
 
-<TagLinks />
 
 ## Description
 

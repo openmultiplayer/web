@@ -5,8 +5,6 @@ description: Destroys a pickup created with CreatePickup.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Destroys a pickup created with CreatePickup.

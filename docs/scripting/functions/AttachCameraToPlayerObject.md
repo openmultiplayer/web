@@ -5,8 +5,6 @@ description: Attaches a player's camera to a player-object.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

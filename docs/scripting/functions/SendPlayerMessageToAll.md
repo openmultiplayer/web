@@ -5,8 +5,6 @@ description: Sends a message in the name of a player to all other players on the
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Sends a message in the name of a player to all other players on the server. The line will start with the sender's name in their color, followed by the message in white.

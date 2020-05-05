@@ -5,8 +5,6 @@ description: Replace the texture of an object with text.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

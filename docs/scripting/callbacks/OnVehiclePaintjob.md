@@ -5,8 +5,6 @@ description: Called when a player previews a vehicle paintjob inside a mod shop.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Called when a player previews a vehicle paintjob inside a mod shop. Watch out, this callback is not called when the player buys the paintjob.

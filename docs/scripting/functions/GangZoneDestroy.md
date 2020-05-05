@@ -5,8 +5,6 @@ description: Destroy a gangzone.
 tags: ["gangzone"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Destroy a gangzone.

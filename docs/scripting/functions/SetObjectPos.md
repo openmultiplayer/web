@@ -5,8 +5,6 @@ description: Change the position of an object.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Change the position of an object.

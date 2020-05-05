@@ -5,8 +5,6 @@ description: This callback is called when a player leaves the checkpoint set for
 tags: ["player", "checkpoint"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player leaves the checkpoint set for them by SetPlayerCheckpoint. Only one checkpoint can be set at a time.

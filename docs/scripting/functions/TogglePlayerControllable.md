@@ -5,8 +5,6 @@ description: Toggles whether a player can control their character or not.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Toggles whether a player can control their character or not. The player will also be unable to move their camera.

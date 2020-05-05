@@ -5,8 +5,6 @@ description: This callback is called when a gamemode ends, either through 'gmx',
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.

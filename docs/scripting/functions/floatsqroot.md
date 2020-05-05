@@ -5,8 +5,6 @@ description: Calculates the square root of given value.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Calculates the square root of given value.

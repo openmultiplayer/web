@@ -5,8 +5,6 @@ description: Destroy an actor which was created with CreateActor.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7 and will not work in earlier versions!

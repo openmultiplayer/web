@@ -5,8 +5,6 @@ description: Raises the given value to the power of the exponent.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Raises the given value to the power of the exponent.

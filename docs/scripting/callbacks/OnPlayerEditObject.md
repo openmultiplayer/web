@@ -5,8 +5,6 @@ description: This callback is called when a player finishes editing an object (E
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3e and will not work in earlier versions!

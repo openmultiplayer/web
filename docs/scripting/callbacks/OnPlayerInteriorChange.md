@@ -5,8 +5,6 @@ description: Called when a player changes interior.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Called when a player changes interior. Can be triggered by SetPlayerInterior or when a player enter/exits a building.

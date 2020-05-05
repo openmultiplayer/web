@@ -5,8 +5,6 @@ description: Adds a class to class selection.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Adds a class to class selection. Classes are used so players may spawn with a skin of their choice.

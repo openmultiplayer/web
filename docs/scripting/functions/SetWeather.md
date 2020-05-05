@@ -5,8 +5,6 @@ description: Set the world weather for all players.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the world weather for all players.

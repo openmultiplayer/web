@@ -5,8 +5,6 @@ description: This function stores the armour of a player into a variable.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This function stores the armour of a player into a variable.

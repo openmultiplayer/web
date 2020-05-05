@@ -5,8 +5,6 @@ description: Set a player's position.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set a player's position.

@@ -5,8 +5,6 @@ description: Set a vehicle's position.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set a vehicle's position

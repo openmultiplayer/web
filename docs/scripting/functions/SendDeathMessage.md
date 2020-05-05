@@ -5,8 +5,6 @@ description: Adds a death to the 'killfeed' on the right-hand side of the screen
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Adds a death to the 'killfeed' on the right-hand side of the screen for all players.

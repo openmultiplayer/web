@@ -5,8 +5,6 @@ description: Convert a string to an integer.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Convert a string to an integer.

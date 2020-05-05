@@ -5,8 +5,6 @@ description: Get a pseudo-random number.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get a pseudo-random number.

@@ -5,8 +5,6 @@ description: Checks if an object with the ID provided exists.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Checks if an object with the ID provided exists.

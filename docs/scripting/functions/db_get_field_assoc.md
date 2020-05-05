@@ -5,8 +5,6 @@ description: Get the contents of field with specified name.
 tags: ["sqlite"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the contents of field with specified name.

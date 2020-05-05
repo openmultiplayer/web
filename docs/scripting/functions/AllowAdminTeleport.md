@@ -5,8 +5,6 @@ description: This function will determine whether RCON admins will be teleported
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function, as of 0.3d, is deprecated. Please see OnPlayerClickMap.

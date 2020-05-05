@@ -5,8 +5,6 @@ description: This function allows to set players special action.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This function allows to set players special action.

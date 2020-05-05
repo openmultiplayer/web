@@ -5,8 +5,6 @@ description: Sets whether a textdraw can be selected (clicked on) or not.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

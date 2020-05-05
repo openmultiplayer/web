@@ -5,8 +5,6 @@ description: Destroys the specified menu.
 tags: ["menu"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Destroys the specified menu.

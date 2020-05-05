@@ -5,8 +5,6 @@ description: Called when a player sends a chat message.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Called when a player sends a chat message.

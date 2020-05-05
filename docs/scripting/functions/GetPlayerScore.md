@@ -5,8 +5,6 @@ description: This function returns a player's score as it was set using SetPlaye
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 This function returns a player's score as it was set using SetPlayerScore

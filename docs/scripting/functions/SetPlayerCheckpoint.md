@@ -5,8 +5,6 @@ description: Sets a checkpoint (red cylinder) for a player.
 tags: ["player", "checkpoint"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the radar. When players enter a checkpoint, OnPlayerEnterCheckpoint is called and actions can be performed.

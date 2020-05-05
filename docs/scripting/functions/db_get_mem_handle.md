@@ -5,8 +5,6 @@ description: Get memory handle for an SQLite database that was opened with db_op
 tags: ["sqlite"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!

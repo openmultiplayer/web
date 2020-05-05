@@ -5,8 +5,6 @@ description: Hashes a password using the SHA-256 hashing algorithm.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!

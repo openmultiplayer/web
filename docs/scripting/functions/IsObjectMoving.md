@@ -5,8 +5,6 @@ description: Checks if the given objectid is moving.
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3d and will not work in earlier versions!

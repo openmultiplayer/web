@@ -5,8 +5,6 @@ description: Deletes a previously set server variable.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Deletes a previously set server variable.

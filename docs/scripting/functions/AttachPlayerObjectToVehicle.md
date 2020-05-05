@@ -5,8 +5,6 @@ description: Attach a player object to a vehicle.
 tags: ["player", "vehicle"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

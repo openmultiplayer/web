@@ -5,8 +5,6 @@ description: Returns the amount of memory available for the heap/stack in bytes.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Returns the amount of memory available for the heap/stack in bytes.

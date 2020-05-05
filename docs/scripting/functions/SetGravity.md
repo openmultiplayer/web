@@ -5,8 +5,6 @@ description: Set the gravity for all players.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the gravity for all players.

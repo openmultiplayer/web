@@ -5,8 +5,6 @@ description: Use this function to get the object's current rotation.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Use this function to get the object's current rotation. The rotation is saved by reference in three RotX/RotY/RotZ variables.

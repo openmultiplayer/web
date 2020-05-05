@@ -5,8 +5,6 @@ description: Gets the model ID of a vehicle.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets the model ID of a vehicle.

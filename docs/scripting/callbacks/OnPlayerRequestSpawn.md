@@ -5,8 +5,6 @@ description: Called when a player attempts to spawn via class selection either b
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.

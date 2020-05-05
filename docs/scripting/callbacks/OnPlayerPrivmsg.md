@@ -5,8 +5,6 @@ description: This callback is called when a player sends a private message throu
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was removed in SA-MP 0.3. See below how to create a /pm command.

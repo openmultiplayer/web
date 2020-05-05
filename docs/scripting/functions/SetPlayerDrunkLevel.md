@@ -5,8 +5,6 @@ description: Sets the drunk level of a player which makes the player's camera sw
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

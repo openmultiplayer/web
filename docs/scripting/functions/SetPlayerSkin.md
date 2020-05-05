@@ -5,8 +5,6 @@ description: Set the skin of a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the skin of a player. A player's skin is their character model.

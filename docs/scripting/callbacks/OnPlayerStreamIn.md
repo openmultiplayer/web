@@ -5,8 +5,6 @@ description: This callback is called when a player is streamed by some other pla
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3a and will not work in earlier versions!

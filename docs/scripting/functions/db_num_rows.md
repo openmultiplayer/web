@@ -5,8 +5,6 @@ description: Returns the number of rows from a db_query.
 tags: ["sqlite"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Returns the number of rows from a db_query

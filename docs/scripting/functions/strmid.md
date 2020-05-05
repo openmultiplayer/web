@@ -5,8 +5,6 @@ description: Extract a range of characters from a string.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Extract a range of characters from a string.

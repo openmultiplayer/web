@@ -5,8 +5,6 @@ description: Give a player a weapon with a specified amount of ammo.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Give a player a weapon with a specified amount of ammo.

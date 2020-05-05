@@ -5,8 +5,6 @@ description: This callback is called every time a client/player updates the serv
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called every time a client/player updates the server with their status. It is often used to create custom callbacks for client updates that aren't actively tracked by the server, such as health or armor updates or players switching weapons.

@@ -5,8 +5,6 @@ description: Gets an integer player variable's value.
 tags: ["pvar"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Gets an integer player variable's value.

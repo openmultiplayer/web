@@ -5,8 +5,6 @@ description: Destroys a previously-created textdraw.
 tags: ["textdraw"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Destroys a previously-created textdraw.

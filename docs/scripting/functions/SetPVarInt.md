@@ -5,8 +5,6 @@ description: Set an integer player variable.
 tags: ['pvar']
 ---
 
-<TagLinks />
-
 ## Description
 
 Set an integer player variable.

@@ -5,8 +5,6 @@ description: Change a vehicle's paintjob (for plain colors see ChangeVehicleColo
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).

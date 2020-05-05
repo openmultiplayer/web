@@ -5,8 +5,6 @@ description: Returns the length of a file.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Returns the length of a file.

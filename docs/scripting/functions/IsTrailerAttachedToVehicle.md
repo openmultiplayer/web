@@ -5,8 +5,6 @@ description: Checks if a vehicle has a trailer attached to it.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 ## Description
 
 Checks if a vehicle has a trailer attached to it. Use GetVehicleTrailer to get the vehicle ID of the trailer (if any).

@@ -5,8 +5,6 @@ description: This callback is called when a player object is moved after MovePla
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player object is moved after MovePlayerObject (when it stops moving).

@@ -5,8 +5,6 @@ description: Check if a player is logged in as an RCON admin.
 tags: ["administration"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Check if a player is logged in as an RCON admin.

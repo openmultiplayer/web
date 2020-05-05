@@ -5,8 +5,6 @@ description: Set the direction a player's camera looks at.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Set the direction a player's camera looks at. Generally meant to be used in combination with SetPlayerCameraPos.

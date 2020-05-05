@@ -5,8 +5,6 @@ description: Compares two strings to see if they are the same.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Compares two strings to see if they are the same.

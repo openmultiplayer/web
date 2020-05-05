@@ -5,8 +5,6 @@ description: Checks if a vehicle is streamed in for a player.
 tags: ['vehicle']
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3a and will not work in earlier versions!

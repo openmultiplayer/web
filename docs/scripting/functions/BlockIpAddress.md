@@ -5,8 +5,6 @@ description: Blocks an IP address from further communication with the server for
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3z R2-2 and will not work in earlier versions!

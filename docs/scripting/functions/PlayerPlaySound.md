@@ -5,8 +5,6 @@ description: Plays the specified sound for a player.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Plays the specified sound for a player.

@@ -5,8 +5,6 @@ description: Moves to the next row of the result allocated from db_query.
 tags: ["sqlite"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Moves to the next row of the result allocated from db_query.

@@ -5,8 +5,6 @@ description: Get the number of arguments passed to a function.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the number of arguments passed to a function.

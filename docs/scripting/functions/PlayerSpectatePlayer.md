@@ -5,8 +5,6 @@ description: Makes a player spectate (watch) another player.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Makes a player spectate (watch) another player.

@@ -5,8 +5,6 @@ description: This callback is called when a player starts to enter a vehicle, me
 tags: ["player", "vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a player starts to enter a vehicle, meaning the player is not in vehicle yet at the time this callback is called.

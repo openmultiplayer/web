@@ -5,8 +5,6 @@ description: Write data to a file in binary format, while ignoring line brakes a
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Write data to a file in binary format, while ignoring line brakes and encoding.

@@ -5,8 +5,6 @@ description: The function GetPlayerHealth allows you to retrieve the health of a
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 The function GetPlayerHealth allows you to retrieve the health of a player. Useful for cheat detection, among other things.

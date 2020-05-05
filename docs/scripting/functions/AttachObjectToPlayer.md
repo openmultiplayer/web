@@ -5,8 +5,6 @@ description: Attach an object to a player.
 tags: ["player"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Attach an object to a player.

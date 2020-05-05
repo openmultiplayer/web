@@ -5,8 +5,6 @@ description: Each PVar (player-variable) has its own unique identification numbe
 tags: ["pvar"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Each PVar (player-variable) has its own unique identification number for lookup, this function returns the highest ID set for a player.

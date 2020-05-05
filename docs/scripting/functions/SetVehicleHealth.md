@@ -5,8 +5,6 @@ description: Set a vehicle's health.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Set a vehicle's health. When a vehicle's health decreases the engine will produce smoke, and finally fire when it decreases to less than 250 (25%).

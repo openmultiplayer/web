@@ -5,8 +5,6 @@ description: Kills (stops) a running timer.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Kills (stops) a running timer.

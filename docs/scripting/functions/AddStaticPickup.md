@@ -5,8 +5,6 @@ description: This function adds a 'static' pickup to the game.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 This function adds a 'static' pickup to the game. These pickups support weapons, health, armor etc., with the ability to function without scripting them (weapons/health/armor will be given automatically).

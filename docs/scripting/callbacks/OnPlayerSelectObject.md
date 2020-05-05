@@ -5,8 +5,6 @@ description: This callback is called when a player selects an object after Selec
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

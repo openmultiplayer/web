@@ -5,8 +5,6 @@ description: This callback is called when a vehicle respawns.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 ## Description
 
 This callback is called when a vehicle respawns.

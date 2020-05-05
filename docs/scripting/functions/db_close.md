@@ -5,8 +5,6 @@ description: Closes an SQLite database that was opened with db_open.
 tags: [sqlite]
 ---
 
-<TagLinks />
-
 ## Description
 
 Closes an SQLite database that was opened with db_open.

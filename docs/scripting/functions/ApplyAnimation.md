@@ -5,8 +5,6 @@ description: Apply an animation to a player.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Apply an animation to a player.

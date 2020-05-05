@@ -5,8 +5,6 @@ description: Allows a player to edit an object (position and rotation) using the
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

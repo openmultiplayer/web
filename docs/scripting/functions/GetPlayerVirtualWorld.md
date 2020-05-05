@@ -5,8 +5,6 @@ description: Retrieves the current virtual world the player is in.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Retrieves the current virtual world the player is in.

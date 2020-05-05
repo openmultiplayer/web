@@ -5,8 +5,6 @@ description: Get the ID of the team the player is on.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the ID of the team the player is on.

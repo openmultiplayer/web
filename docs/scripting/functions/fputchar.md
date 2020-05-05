@@ -5,8 +5,6 @@ description: Write one character to a file.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Write one character to a file.

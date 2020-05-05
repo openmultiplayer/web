@@ -5,8 +5,6 @@ description: This callback is called when a recorded file being reproduced with 
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This NPC callback was added in SA-MP 0.3a and will not work in earlier versions!

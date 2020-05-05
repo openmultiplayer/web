@@ -5,8 +5,6 @@ description: Enable friendly fire for team vehicles.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3x and will not work in earlier versions!

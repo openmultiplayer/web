@@ -5,8 +5,6 @@ description: Find a filename matching a pattern.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Find a filename matching a pattern.

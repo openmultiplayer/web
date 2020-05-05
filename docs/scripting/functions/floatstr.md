@@ -5,8 +5,6 @@ description: Converts a string to a float.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Converts a string to a float.

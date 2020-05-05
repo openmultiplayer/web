@@ -5,8 +5,6 @@ description: Saves a string into a player variable.
 tags: ['pvar']
 ---
 
-<TagLinks />
-
 ## Description
 
 Saves a string into a player variable.

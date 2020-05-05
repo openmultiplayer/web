@@ -5,8 +5,6 @@ description: Kicks a player from the server. They will have to quit the game and
 tags: ["administration"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Kicks a player from the server. They will have to quit the game and re-connect if they wish to continue playing.

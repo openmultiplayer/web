@@ -5,8 +5,6 @@ description: Check if the player is inside their current set race checkpoint (Se
 tags: ['player', 'checkpoint', 'racecheckpoint']
 ---
 
-<TagLinks />
-
 ## Description
 
 Check if the player is inside their current set race checkpoint (SetPlayerRaceCheckpoint).

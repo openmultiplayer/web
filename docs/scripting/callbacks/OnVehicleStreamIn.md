@@ -5,8 +5,6 @@ description: Called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3a and will not work in earlier versions!

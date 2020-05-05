@@ -5,8 +5,6 @@ description: Move a player object with a set speed.
 tags: ['player']
 ---
 
-<TagLinks />
-
 ## Description
 
 Move a player object with a set speed. Also supports rotation. Players/vehicles will surf moving objects.

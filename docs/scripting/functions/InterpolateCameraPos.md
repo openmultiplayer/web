@@ -5,8 +5,6 @@ description: Move a player's camera from one position to another, within the set
 tags: []
 ---
 
-<TagLinks />
-
 :::warning
 
 This function was added in SA-MP 0.3e and will not work in earlier versions!

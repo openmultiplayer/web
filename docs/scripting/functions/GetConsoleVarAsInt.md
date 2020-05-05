@@ -5,8 +5,6 @@ description: Get the integer value of a console variable.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the integer value of a console variable.

@@ -5,8 +5,6 @@ description: Get the current server time, which will be stored in the variables 
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the current server time, which will be stored in the variables &hour, &minute and &second.

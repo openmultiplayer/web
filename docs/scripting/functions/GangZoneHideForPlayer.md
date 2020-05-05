@@ -5,8 +5,6 @@ description: Hides a gangzone for a player.
 tags: ["player", "gangzone"]
 ---
 
-<TagLinks />
-
 ## Description
 
 Hides a gangzone for a player.

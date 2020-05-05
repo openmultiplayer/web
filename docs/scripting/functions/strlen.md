@@ -5,8 +5,6 @@ description: Get the length of a string.
 tags: []
 ---
 
-<TagLinks />
-
 ## Description
 
 Get the length of a string.

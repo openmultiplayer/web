@@ -5,8 +5,6 @@ description: OnPlayerClickMap is called when a player places a target/waypoint o
 tags: ["player"]
 ---
 
-<TagLinks />
-
 :::warning
 
 This callback was added in SA-MP 0.3d and will not work in earlier versions!
