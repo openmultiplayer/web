@@ -1,6 +1,6 @@
 module.exports = {
   title: 'open.mp | Documentations',
-  tagline: 'Documentations for Open Multiplayer',
+  tagline: 'Documentations of Open Multiplayer',
   url: 'https://wiki.open.mp/',
   baseUrl: '/',
   favicon: 'public/favicon.ico',
@@ -107,4 +107,7 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    'docusaurus-lunr-search'
+  ]
 };
