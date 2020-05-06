@@ -18,7 +18,7 @@ function parseDir(filename) {
     }
     // it's a directory inside `docs` folder
     else {
-      info.type = 'category'
+      info.type = 'category';
       const catName = path.basename(filename);
 
       if (CATEGORY_NAME_CAPITALIZATION) {
@@ -27,15 +27,32 @@ function parseDir(filename) {
         info.label = catName;
       }
 
-      info.items = fs.readdirSync(filename).map(function (child) {
-        return parseDir(filename + '/' + child);
+      // sort files and directories alphabetical and files first
+      const sortedFilesAndDirs = fs.readdirSync(filename, "utf8").map(child => {
+        const path = filename + '/' + child;
+        return {
+          name: child,
+          isDir: fs.lstatSync(path).isDirectory()
+        };
+      }).sort((a, b) => b.isDir - a.isDir || a.name > b.name ? 1 : -1);
+
+      info.items = sortedFilesAndDirs.map(function (item) {
+        return parseDir(filename + '/' + item.name);
       });
+
+      // ignore `index.md` files in directories placed in `docs` 
+      let index = info.items.length;
+      while (index--) {
+        if (typeof info.items[index] === 'string' && info.items[index].includes('index')) {
+          info.items.splice(index, 1);
+        }
+      }
     }
   }
   // it's a file, so it should be path/to/file starting in `docs` directory as root
   else {
     // remove `filename.md` and `docs/`
-    let tmpPath = filename.split("/");
+    const tmpPath = filename.split("/");
     tmpPath.pop();
     tmpPath.splice(0, 1);
     let docPath = '';
