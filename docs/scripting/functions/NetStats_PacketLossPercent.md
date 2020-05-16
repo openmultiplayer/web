@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 :::tip
 
 
-This function has been found to be currently unreliable the output is not as expected when compared to the client. Therefore this function should not be used as a packet loss kicker.
+Be advised that this function will report the packets lost by the server. The packet loss number reported by the client **will** be different, not because either is incorrect, but because both the server and the client are only aware of the loss packages sent by them.
 
 
 
