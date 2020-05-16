@@ -74,4 +74,4 @@ Anything greater than 0.0% should already be a cause of concern. Anything greate
 -  NetStats_BytesSent: Get the amount of information (in bytes) that the server has sent to the player.
 -  NetStats_MessagesRecvPerSecond: Get the number of network messages the server has received from the player in the last second.
 -  NetStats_ConnectionStatus: Get a player's connection status.
--  NetStats_GetIpPort: Get a player's IP and port.A more accurate packetloss function can be found here: http://forum.sa-mp.com/showpost.php?p=2488911&postcount=984
+-  NetStats_GetIpPort: Get a player's IP and port.
