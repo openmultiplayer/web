@@ -10,8 +10,8 @@ tags: []
 | Type                                                          | Limit           |
 | ------------------------------------------------------------- | --------------- |
 | Players                                                       | 1000            |
-| Vehicles (4)                                                  | 2000            |
-| Vehicle Models                                                | Unlimited (1)   |
+| Vehicles (4)(6)                                               | 2000            |
+| Vehicle Models (1)                                            | Unlimited       |
 | Objects (4)                                                   | 1000            |
 | Virtual Worlds                                                | 2,147,483,647   |
 | Interiors                                                     | 256             |
@@ -42,13 +42,13 @@ tags: []
 
 ## Textdraws
 
-| Type                                        | Limit               |
-| ------------------------------------------- | ------------------- |
-| String Length                               | 1024 characters (2) |
-| Shown In A Single Client's Screen           | 2048 + 256 (3)      |
-| Shown In A Single Client's Screen (sprites) | 100                 |
-| Created Serverwise (Global)                 | 2048                |
-| Created Serverwise (Per-Player)             | 256                 |
+| Type                                        | Limit           |
+| ------------------------------------------- | --------------- |
+| String Length (2)                           | 1024 characters |
+| Shown In A Single Client's Screen (3)       | 2048 + 256      |
+| Shown In A Single Client's Screen (sprites) | 100             |
+| Created Serverwise (Global)                 | 2048            |
+| Created Serverwise (Per-Player)             | 256             |
 
 ## Dialogs
 
@@ -61,3 +61,12 @@ tags: []
 | Tab List Columns (DIALOG_STYLE_TABLIST(\_HEADERS))           | 4     |
 | Tab List Column Characters (DIALOG_STYLE_TABLIST(\_HEADERS)) | 128   |
 | Tab List Row Characters (DIALOG_STYLE_TABLIST(\_HEADERS))    | 256   |
+
+Notes:
+
+1. Although the vehicle model limit in 0.3 is unlimited, if you use a large amount of vehicle models then it will affect client performance.
+2. Although the textdraw string limit is 1024 characters, if colour codes (e.g. ~r~) are used beyond the 255th character it may crash the client.
+3. It is possible to show all Textdraws at the same time for one player, however this is not recommended.
+4. To circumvent these limits, it is possible to use a [streamer](https://github.com/samp-incognito/samp-streamer-plugin). Streamers work by only creating the entities etc. that are close to players.
+5. Due to client limitations only up to 51 actors may actually be shown at a time.
+6. Vehicle IDs start at ID 1 and thus range from 1 to 1999, even if MAX_VEHICLES is 2000. Objects and player objects also start at ID 1.
