@@ -12,7 +12,7 @@ tags: []
 | Players                                                       | 1000            |
 | Vehicles (4)(6)                                               | 2000            |
 | Vehicle Models (1)                                            | Unlimited       |
-| Objects (4)                                                   | 1000            |
+| Objects (4)(6)                                                | 1000            |
 | Virtual Worlds                                                | 2,147,483,647   |
 | Interiors                                                     | 256             |
 | Classes                                                       | 320             |
@@ -69,4 +69,4 @@ Notes:
 3. It is possible to show all Textdraws at the same time for one player, however this is not recommended.
 4. To circumvent these limits, it is possible to use a [streamer](https://github.com/samp-incognito/samp-streamer-plugin). Streamers work by only creating the entities etc. that are close to players.
 5. Due to client limitations only up to 51 actors may actually be shown at a time.
-6. Vehicle IDs start at ID 1 and thus range from 1 to 1999, even if MAX_VEHICLES is 2000. Objects and player objects also start at ID 1.
+6. Vehicle IDs and Object IDs start at ID 1 and thus range from 1 to 1999, even if MAX_VEHICLES is 2000.
