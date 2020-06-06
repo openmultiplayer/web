@@ -17,19 +17,20 @@ Calls a public function from the script in which it is used.
 
 ## Returns
 
-The value that the only public function returned.
+If the function exists, returns the same as the called function.
+If the function does not exist, returns 0.
 
 ## Examples
 
 ```c
-forward callMe(const string[]);
-public  callMe(const string[])
+forward publicFunc(number, Float:flt, const string[]);
+public publicFunc(number, Float:flt, const string[])
 {
-    printf("callMe> %s", string);
+    printf("Received integer %i, float %f, string %s", number, flt, string);
     return 1;
 }
 
-CallLocalFunction("callMe", "s", "OHAI THAR BAGPUSS!!11");
+CallLocalFunction("publicFunc", "ifs", 420, 68.999999999, "Hello world");
 ```
 
 ## Notes
