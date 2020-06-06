@@ -43,6 +43,10 @@ module.exports = {
               to: 'docs/scripting/resources/start',
             },
             {
+              label: 'Tutorials',
+              to: 'docs/tutorials/_tutorials',
+            },
+            {
               label: 'Functions',
               to: 'docs/scripting/functions',
             },
