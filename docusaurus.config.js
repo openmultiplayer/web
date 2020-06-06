@@ -39,6 +39,10 @@ module.exports = {
           title: 'Docs',
           items: [
             {
+              label: 'Getting Started',
+              to: 'docs/scripting/resources/start',
+            },
+            {
               label: 'Tutorials',
               to: 'docs/tutorials/_tutorials',
             },
