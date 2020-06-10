@@ -12,8 +12,7 @@ Copy bytes from one location to another.
 
 | Name | Description |
 |------|-------------|
-|dest[] | An array into which the bytes from source are copied
-in.|
+|dest[] | An array into which the bytes from source are copied in.|
 |const source[] | The source array.|
 |index | The start index in bytes in the destination array where the data should be copied to.|
 |numbytes | The number of bytes (not cells) to copy.|
