@@ -5,6 +5,13 @@ description: This callback is called when a vehicle respawns.
 tags: ["vehicle"]
 ---
 
+:::warning
+
+This callback is called **only** when vehicle **re**spawns!
+CreateVehicle and AddStaticVehicle(Ex) **won't** trigger this callback.
+
+:::
+
 ## Description
 
 This callback is called when a vehicle respawns.
