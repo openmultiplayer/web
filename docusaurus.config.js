@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'open.mp | Documentations',
+  title: 'open.mp | Documentation',
   tagline: 'Documentations of Open Multiplayer',
   url: 'https://wiki.open.mp/',
   baseUrl: '/',
