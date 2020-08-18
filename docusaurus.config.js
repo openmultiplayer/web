@@ -1,6 +1,6 @@
 module.exports = {
   title: 'open.mp | Documentation',
-  tagline: 'Documentations of Open Multiplayer',
+  tagline: 'Documentation for Open Multiplayer',
   url: 'https://wiki.open.mp/',
   baseUrl: '/',
   favicon: 'public/favicon.ico',
@@ -10,7 +10,7 @@ module.exports = {
     navbar: {
       title: 'Home',
       logo: {
-        alt: 'Open Multiplayer Documentations',
+        alt: 'Open Multiplayer Documentation',
         src: 'public/logo-light-trans.svg',
       },
       links: [
