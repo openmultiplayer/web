@@ -11,6 +11,12 @@ This function was added in SA-MP 0.3b and will not work in earlier versions!
 
 :::
 
+:::info
+
+This function is in _world_ space not _local_ space. If you want to make local space angular velocity adjustments, you must apply a rotation matrix based on the [vehicle rotation quat](GetVehicleRotationQuat).
+
+:::
+
 ## Description
 
 Sets the angular X, Y and Z velocity of a vehicle
