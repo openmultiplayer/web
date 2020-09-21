@@ -36,7 +36,7 @@ public OnPlayerDeath(playerid, killerid, reason)
     // Check that the killerid is valid before doing anything with it
     if(killerid != INVALID_PLAYER_ID)
     {
-        PlayerKillCount[killerid] ++;
+        PlayerKills[killerid] ++;
     }
 
     // Outside the check, handle stuff for playerid (it's always valid)
