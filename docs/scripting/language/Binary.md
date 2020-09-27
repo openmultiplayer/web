@@ -352,7 +352,7 @@ The only difference between the left and right arithmetic shift (besides the dir
 ```
 See? Even though the padding is always 0, the sign of the number is still kept. The only thing you really have to worry about is shifting to far. If you shift a positive number past the highest possible number, it will become negative and vise versa with negative values (you'll eventually hit 0).
 
-## `Logical Shifts`
+### `Logical Shifts`
 * Right Shift
 
 This is the converse to the arithmetic left shift. The best way to describe it would be a hybrid between the two arithmetic shifts. Lets take a look at it in action!
