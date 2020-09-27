@@ -1,6 +1,6 @@
 module.exports = {
   title: 'open.mp | Documentation',
-  tagline: 'Documentation for Open Multiplayer',
+  tagline: 'SA-MP and open.mp API Documentation',
   url: 'https://wiki.open.mp/',
   baseUrl: '/',
   favicon: 'public/favicon.ico',
