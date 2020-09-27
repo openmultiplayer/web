@@ -1,5 +1,5 @@
 ---
-id: Directives
+id: Initialisers
 title: "Keywords: Initialisers"
 ---
 
@@ -623,7 +623,7 @@ This is obviously much faster than using CallLocalFunction or another native.
 
 A static variable is like a global new variable but with a more limited scope. When static is used globally the resulting created variables are limited to only the section in which they were created (see #section). So taking the earlier "new" example:
 
-file1.pwn
+**file1.pwn**
 ```c
 MyFunc1()
 {
@@ -781,7 +781,7 @@ static stock
 	g_sMayBeUsedVar;
 ```
 
-If the variable or function is used the compiler will include it, if it is not used it will exclude it. This is different to using #pragma unused <symbol> as that will simply surpress (i.e. hide) the warning and include the information anyway, stock will entirely ignore the unused data.
+If the variable or function is used the compiler will include it, if it is not used it will exclude it. This is different to using #pragma unused (symbol) as that will simply surpress (i.e. hide) the warning and include the information anyway, stock will entirely ignore the unused data.
 
 stock is most commonly used for custom libraries. If you write a library you provide a whole load of functions for other people to use but you've no idea if they'll use them or not. If your code gives loads of warnings for every function a person doesn't use people will complain (unless it's on purpose as they HAVE to use that function (e.g. for initialising variables). Having said that however, going from personal experience with YSI people will complain anyway.
 

@@ -1,5 +1,5 @@
 ---
-id: Directives
+id: Statements
 title: "Keywords: Statements"
 ---
 

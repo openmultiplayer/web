@@ -1,5 +1,5 @@
 ---
-id: Directives
+id: Operators
 title: "Keywords: Operators"
 ---
 
