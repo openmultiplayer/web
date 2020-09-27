@@ -3,6 +3,11 @@ id: Binary
 title: "Binary"
 ---
 
+# `Credits`
+
+This is from a Tutorial topic in SA-MP Forums.
+The author is **Kyosaur**.
+
 # `What is binary?`
 Binary is a numeral system that uses two unique symbols to represent numbers. While the more common decimal system uses ten numerals (**base 10**), binary uses only 0 and 1. This may sound useless in every day life, but binary is essential when it comes to computers. Computers at their lowest level perform all of their calculations by manipulating the flow of electricity to indicate on and off states. This is exactly what binary is, just a ton of switches flipped on and off. This is a sort of alien concept to most people, so lets take a look at the decimal and binary system next to each other.
 
