@@ -5,6 +5,12 @@ description: Decode an UU-encoded string.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Decode an UU-encoded string.

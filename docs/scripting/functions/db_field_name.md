@@ -5,6 +5,12 @@ description: Returns the name of a field at a particular index.
 tags: ["sqlite"]
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Returns the name of a field at a particular index.

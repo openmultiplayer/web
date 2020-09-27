@@ -5,6 +5,12 @@ description: Outputs a formatted string on the console (the server window, not t
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Outputs a formatted string on the console (the server window, not the in-game chat).

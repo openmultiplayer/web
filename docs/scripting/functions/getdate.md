@@ -5,6 +5,12 @@ description: Get the current server date, which will be stored in the variables 
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Get the current server date, which will be stored in the variables &year, &month and &day.

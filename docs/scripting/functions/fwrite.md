@@ -5,6 +5,12 @@ description: Write text into a file.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Write text into a file.

@@ -5,6 +5,12 @@ description: Reads a single character from a file.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Reads a single character from a file.

@@ -5,6 +5,12 @@ description: Returns the length of a file.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Returns the length of a file.

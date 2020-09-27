@@ -5,6 +5,12 @@ description: Prints a string to the server console (not in-game chat) and logs (
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Prints a string to the server console (not in-game chat) and logs (server_log.txt).

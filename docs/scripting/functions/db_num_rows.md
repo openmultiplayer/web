@@ -5,6 +5,12 @@ description: Returns the number of rows from a db_query.
 tags: ["sqlite"]
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Returns the number of rows from a db_query

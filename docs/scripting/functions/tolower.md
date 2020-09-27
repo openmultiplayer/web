@@ -5,6 +5,12 @@ description: This function changes a single character to lowercase.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 This function changes a single character to lowercase.

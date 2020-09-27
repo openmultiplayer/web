@@ -5,6 +5,12 @@ description: Convert an integer into a string.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Convert an integer into a string.

@@ -5,6 +5,12 @@ description: Read a single line from a file.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Read a single line from a file.

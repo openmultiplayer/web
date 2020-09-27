@@ -5,6 +5,12 @@ description: Subtracts one float from another one.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Subtracts one float from another one. Note that this function has no real use, as one can simply use the standard operator (-) instead.

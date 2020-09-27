@@ -5,6 +5,12 @@ description: Get the content of a field as an integer from db_query.
 tags: ["sqlite"]
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Get the content of a field as an integer from db_query

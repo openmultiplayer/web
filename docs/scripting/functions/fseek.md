@@ -5,6 +5,12 @@ description: Change the current position in the file.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Change the current position in the file. You can either seek forward or backward through the file.

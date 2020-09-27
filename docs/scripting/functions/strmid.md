@@ -5,6 +5,12 @@ description: Extract a range of characters from a string.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Extract a range of characters from a string.
