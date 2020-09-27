@@ -26,7 +26,7 @@ Set the position of an actor.
 
 ## Returns
 
- 1: The function was executed successfully. 
+ 1: The function was executed successfully.
 
  0: The function failed to execute. The actor specified does not exist.
 
