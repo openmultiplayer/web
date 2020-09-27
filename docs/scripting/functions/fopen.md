@@ -5,6 +5,12 @@ description: Open a file (to read from or write to).
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Open a file (to read from or write to).

@@ -5,6 +5,12 @@ description: Get the number of fields in a result.
 tags: ["sqlite"]
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Get the number of fields in a result.

@@ -5,6 +5,12 @@ description: Get a specific property from the memory, the string is returned as 
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Get a specific property from the memory, the string is returned as a packed string!

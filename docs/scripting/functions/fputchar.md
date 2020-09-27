@@ -5,6 +5,12 @@ description: Write one character to a file.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Write one character to a file.

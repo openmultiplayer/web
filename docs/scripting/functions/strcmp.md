@@ -5,6 +5,12 @@ description: Compares two strings to see if they are the same.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Compares two strings to see if they are the same.

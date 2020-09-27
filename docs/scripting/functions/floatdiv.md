@@ -5,6 +5,12 @@ description: Divide one float by another one.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Divide one float by another one. Redundant as the division operator (/) does the same thing.

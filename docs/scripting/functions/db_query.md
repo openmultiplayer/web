@@ -5,6 +5,12 @@ description: This function is used to execute an SQL query on an opened SQLite d
 tags: ["sqlite"]
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 This function is used to execute an SQL query on an opened SQLite database.

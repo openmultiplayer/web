@@ -5,6 +5,12 @@ description: Force a value to be inside a range.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Force a value to be inside a range.

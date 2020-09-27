@@ -5,6 +5,12 @@ description: Converts a string to a float.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Converts a string to a float.

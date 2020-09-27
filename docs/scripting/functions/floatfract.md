@@ -5,6 +5,12 @@ description: Get the fractional part of a float.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Get the fractional part of a float. This means the value of the numbers after the decimal point.

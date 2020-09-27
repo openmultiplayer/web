@@ -5,6 +5,12 @@ description: This function allows you to read data from a file, without encoding
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 This function allows you to read data from a file, without encoding and line terminators

@@ -5,6 +5,12 @@ description: Get the tangent from a given angle.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Get the tangent from a given angle. The input angle may be in radians, degrees or grades.
