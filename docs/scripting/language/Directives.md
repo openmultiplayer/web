@@ -1,8 +1,6 @@
 ---
 id: Directives
-title: Keywords: Directives
-Description: 
-tags:
+title: "Keywords: Directives"
 ---
 
 ## #Assets
