@@ -22,8 +22,3 @@ This page compiles the list of all the player states to be used with the [GetPla
 |7|PLAYER_STATE_WASTED|Player is dead or on class selection|
 |8|PLAYER_STATE_SPAWNED|Player is spawned|
 |9|PLAYER_STATE_SPECTATING|Player is spectating|
-
-
-## Related Functions
-
-- GetPlayerState: Get a player's current state.
