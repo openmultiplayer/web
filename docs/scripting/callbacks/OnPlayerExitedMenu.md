@@ -29,5 +29,5 @@ public OnPlayerExitedMenu(playerid)
 
 ## Related Functions
 
-- CreateMenu: Create a menu.
-- DestroyMenu: Destroy a menu.
+- [CreateMenu](../../scripting/functions/CreateMenu.md): Create a menu.
+- [DestroyMenu](../../scripting/functions/DestroyMenu.md): Destroy a menu.
