@@ -30,11 +30,11 @@ The radiant of the angle in radians.
 
 public OnGameModeInit()
 {
-	new Float:param, Float:result;
-	param = 1.0;
-	result = atan(param) * 180 / 3.14159265; //1 radian equals 180 degrees. 3.14... is used to define PI.
-	printf ("The arc tangent of %f is %f degrees\n", param, result );
-	return 0;
+    new Float:param, Float:result;
+    param = 1.0;
+    result = atan(param) * 180 / 3.14159265; //1 radian equals 180 degrees. 3.14... is used to define PI.
+    printf ("The arc tangent of %f is %f degrees\n", param, result );
+    return 0;
 }
 ```
 

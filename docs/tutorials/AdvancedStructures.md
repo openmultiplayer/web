@@ -10,18 +10,18 @@ This example shows how to find an empty slot in an array using standard coding p
 
 ```c
 new
-	gMyArray[10];
+    gMyArray[10];
  
 stock FindEmptySlot()
 {
-	new
-		i = 0;
-	while (i < sizeof (gMyArray) && gMyArray[i])
-	{
-		i++;
-	}
-	if (i == sizeof (gMyArray)) return -1;
-	return i;
+    new
+        i = 0;
+    while (i < sizeof (gMyArray) && gMyArray[i])
+    {
+        i++;
+    }
+    if (i == sizeof (gMyArray)) return -1;
+    return i;
 }
 ```
 
@@ -29,20 +29,20 @@ This basic example assumes an array slot is empty if it's value is 0. The loop l
 ```c
 MyFunction()
 {
-	new
-		i = 0;
-	while (i < sizeof (gMyArray) && gMyArray[i])
-	{
-		i++;
-	}
-	if (i == sizeof (gMyArray))
-	{
-		printf("No free slot found");
-		return 0;
-	}
-	printf("Slot %d is empty", i);
-	// Use the found slot in your code for whatever
-	return 1;
+    new
+        i = 0;
+    while (i < sizeof (gMyArray) && gMyArray[i])
+    {
+        i++;
+    }
+    if (i == sizeof (gMyArray))
+    {
+        printf("No free slot found");
+        return 0;
+    }
+    printf("Slot %d is empty", i);
+    // Use the found slot in your code for whatever
+    return 1;
 }
 ```
 Obviously you would replace the "gMyArray[i]" expression with your own indication of a slot in use.
@@ -151,102 +151,102 @@ This example shows how to write code for a list sorted numerically ascending.
  
 enum E_DATA_LIST
 {
-	E_DATA_LIST_VALUE,
-	E_DATA_LIST_NEXT
+    E_DATA_LIST_VALUE,
+    E_DATA_LIST_NEXT
 }
  
 new
-	gListData[NUMBER_OF_VALUES][E_DATA_LIST],
-	gUnusedStart = 0,
-	gListStart = -1; // Starts off with no list
+    gListData[NUMBER_OF_VALUES][E_DATA_LIST],
+    gUnusedStart = 0,
+    gListStart = -1; // Starts off with no list
  
 // This function initializes the list
 List_Setup()
 {
-	new
-		i;
-	size--;
-	for (i = 0; i < size; i++)
-	{
-		// To start with all slots are unused
-		gListData[i][E_DATA_LIST_NEXT] = i + 1;
-	}
-	// End the list
-	gListData[size][E_DATA_LIST_NEXT] = -1;
+    new
+        i;
+    size--;
+    for (i = 0; i < size; i++)
+    {
+        // To start with all slots are unused
+        gListData[i][E_DATA_LIST_NEXT] = i + 1;
+    }
+    // End the list
+    gListData[size][E_DATA_LIST_NEXT] = -1;
 }
  
 // This function adds a value to the list (using basic sorting)
 List_Add(value)
 {
-	// Check there are free slots in the array
-	if (gUnusedStart == -1) return -1;
-	new
-		pointer = gListStart,
-		last = -1
-		slot = gUnusedStart;
-	// Add the value to the array
-	gListData[slot][E_DATA_LIST_VALUE] = value;
-	// Update the empty list
-	gUnusedStart = gListData[slot][E_DATA_LIST_NEXT];
-	// Loop through the list till we get to bigger/same size number
-	while (pointer != -1 && gListData[pointer][E_DATA_LIST_VALUE] < value)
-	{
-		// Save the position of the last value
-		last = pointer
-		// Move on to the next slot
-		pointer = gListData[pointer][E_DATA_LIST_NEXT];
-	}
-	// If we got here we ran out of values or reached a larger one
-	// Check if we checked any numbers
-	if (last == -1)
-	{
-		// The first number was bigger or there is no list
-		// Either way add the new value to the start of the list
-		gListData[slot][E_DATA_LIST_NEXT] = gListStart;
-		gListStart = slot;
-	}
-	else
-	{
-		// Place the new value in the list
-		gListData[slot][E_DATA_LIST_NEXT] = pointer;
-		gListData[last][E_DATA_LIST_NEXT] = slot;
-	}
-	return slot;
+    // Check there are free slots in the array
+    if (gUnusedStart == -1) return -1;
+    new
+        pointer = gListStart,
+        last = -1
+        slot = gUnusedStart;
+    // Add the value to the array
+    gListData[slot][E_DATA_LIST_VALUE] = value;
+    // Update the empty list
+    gUnusedStart = gListData[slot][E_DATA_LIST_NEXT];
+    // Loop through the list till we get to bigger/same size number
+    while (pointer != -1 && gListData[pointer][E_DATA_LIST_VALUE] < value)
+    {
+        // Save the position of the last value
+        last = pointer
+        // Move on to the next slot
+        pointer = gListData[pointer][E_DATA_LIST_NEXT];
+    }
+    // If we got here we ran out of values or reached a larger one
+    // Check if we checked any numbers
+    if (last == -1)
+    {
+        // The first number was bigger or there is no list
+        // Either way add the new value to the start of the list
+        gListData[slot][E_DATA_LIST_NEXT] = gListStart;
+        gListStart = slot;
+    }
+    else
+    {
+        // Place the new value in the list
+        gListData[slot][E_DATA_LIST_NEXT] = pointer;
+        gListData[last][E_DATA_LIST_NEXT] = slot;
+    }
+    return slot;
 }
  
 // This function removes a value from a given slot in the array (returned by List_Add)
 List_Remove(slot)
 {
-	// Is this a valid slot
-	if (slot < 0 || slot >= NUMBER_OF_VALUES) return 0;
-	// First find the slot before
-	new
-		pointer = gListStart,
-		last = -1;
-	while (pointer != -1 && pointer != slot)
-	{
-		last = pointer;
-		pointer = gListData[pointer][E_LIST_DATA_NEXT];
-	}
-	// Did we find the slot in the list
-	if (pointer == -1) return 0;
-	if (last == -1)
-	{
-		// The value is the first in the list
-		// Skip over this slot in the list
-		gListStart = gListData[slot][E_LIST_DATA_NEXT];
-	}
-	else
-	{
-		// The value is in the list
-		// Skip over this slot in the list
-		gListData[last][E_LIST_DATA_NEXT] = gListData[slot][E_LIST_DATA_NEXT];
-	}
-	// Add this slot to the unused list
-	// The unused list isn't in any order so this doesn't matter
-	gListData[slot][E_LIST_DATA_NEXT] = gUnusedStart;
-	gUnusedStart = slot;
-	return 1;
+    // Is this a valid slot
+    if (slot < 0 || slot >= NUMBER_OF_VALUES) return 0;
+    // First find the slot before
+    new
+        pointer = gListStart,
+        last = -1;
+    while (pointer != -1 && pointer != slot)
+    {
+        last = pointer;
+        pointer = gListData[pointer][E_LIST_DATA_NEXT];
+    }
+    // Did we find the slot in the list
+    if (pointer == -1) return 0;
+    if (last == -1)
+    {
+        // The value is the first in the list
+        // Skip over this slot in the list
+        gListStart = gListData[slot][E_LIST_DATA_NEXT];
+    }
+    else
+    {
+        // The value is in the list
+        // Skip over this slot in the list
+        gListData[last][E_LIST_DATA_NEXT] = gListData[slot][E_LIST_DATA_NEXT];
+    }
+    // Add this slot to the unused list
+    // The unused list isn't in any order so this doesn't matter
+    gListData[slot][E_LIST_DATA_NEXT] = gUnusedStart;
+    gUnusedStart = slot;
+    return 1;
 }
 ```
 

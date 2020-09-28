@@ -28,7 +28,7 @@ This is generally used in variable declarations.
 
 ```c
 new
-	someVar[40 char];
+    someVar[40 char];
 ```
 
 Will make an array 10 cells big.
@@ -40,11 +40,11 @@ For more information on packed strings read pawn-lang.pdf.
 Checks if a symbol exists. Generally used in #if statements:
 ```c
 new
-	someVar = 5;
+    someVar = 5;
 #if defined someVar
-	printf("%d", someVar);
+    printf("%d", someVar);
 #else
-	#error The variable 'someVar' isn't defined
+    #error The variable 'someVar' isn't defined
 #endif
 ```
 
@@ -74,7 +74,7 @@ public OnGameModeInit()
 Returns the size in ELEMENTS of an array:
 ```c
 new
-	someVar[10];
+    someVar[10];
 printf("%d", sizeof (someVar));
 ```
 
@@ -86,7 +86,7 @@ Output:
 And:
 ```c
 new
-	someVar[2][10];
+    someVar[2][10];
 printf("%d %d", sizeof (someVar), sizeof (someVar[]));
 ```
 
@@ -104,8 +104,8 @@ This again is related to the PAWN autonoma code and thus not covered here.
 This returns a number representing the tag of a variable:
 ```c
 new
-	someVar,
-	Float:someFloat;
+    someVar,
+    Float:someFloat;
 printf("%d %d", tagof (someVar), tagof (someFloat));
 ```
 

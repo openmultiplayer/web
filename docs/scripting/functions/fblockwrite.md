@@ -31,9 +31,9 @@ This function does not return any specific values.
 // Define "some_enum"
 enum _:some_enum
 {
-	some_data1,
-	some_data2[20],
-	Float:some_data3
+    some_data1,
+    some_data2[20],
+    Float:some_data3
 }
 
 // Declare "some_data"
@@ -47,18 +47,18 @@ new File:handle = fopen("file.bin", io_write);
 // Check, if "file.bin" is open
 if(handle)
 {
-	// Success
+    // Success
 
-	// Write "some_data" into "file.bin"
-	fblockwrite(handle, some_data);
+    // Write "some_data" into "file.bin"
+    fblockwrite(handle, some_data);
 
-	// Close "file.bin"
-	fclose(handle);
+    // Close "file.bin"
+    fclose(handle);
 }
 else
 {
-	// Error
-	print("Failed to open \"file.bin\".");
+    // Error
+    print("Failed to open \"file.bin\".");
 }
 ```
 

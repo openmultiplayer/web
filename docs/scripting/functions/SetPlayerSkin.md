@@ -37,36 +37,36 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 stock SetPlayerSkinFix(playerid, skinid)
 {
-	new
-	    Float:tmpPos[4],
-		vehicleid = GetPlayerVehicleID(playerid),
-		seatid = GetPlayerVehicleSeat(playerid);
-	GetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
-	GetPlayerFacingAngle(playerid, tmpPos[3]);
-	if(skinid < 0 || skinid > 299) return 0;
-	if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_DUCK)
-	{
-	    SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
-		SetPlayerFacingAngle(playerid, tmpPos[3]);
-		TogglePlayerControllable(playerid, 1); // preventing any freeze - optional
-		return SetPlayerSkin(playerid, skinid);
-	}
-	else if(IsPlayerInAnyVehicle(playerid))
-	{
-	    new
-	        tmp;
-	    RemovePlayerFromVehicle(playerid);
-	    SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
-		SetPlayerFacingAngle(playerid, tmpPos[3]);
-		TogglePlayerControllable(playerid, 1); // preventing any freeze - important - because of doing animations of exiting vehicle
-		tmp = SetPlayerSkin(playerid, skinid);
-		PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
-		return tmp;
-	}
-	else
-	{
-	    return SetPlayerSkin(playerid, skinid);
-	}
+    new
+        Float:tmpPos[4],
+        vehicleid = GetPlayerVehicleID(playerid),
+        seatid = GetPlayerVehicleSeat(playerid);
+    GetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
+    GetPlayerFacingAngle(playerid, tmpPos[3]);
+    if(skinid < 0 || skinid > 299) return 0;
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_DUCK)
+    {
+        SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
+        SetPlayerFacingAngle(playerid, tmpPos[3]);
+        TogglePlayerControllable(playerid, 1); // preventing any freeze - optional
+        return SetPlayerSkin(playerid, skinid);
+    }
+    else if(IsPlayerInAnyVehicle(playerid))
+    {
+        new
+            tmp;
+        RemovePlayerFromVehicle(playerid);
+        SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
+        SetPlayerFacingAngle(playerid, tmpPos[3]);
+        TogglePlayerControllable(playerid, 1); // preventing any freeze - important - because of doing animations of exiting vehicle
+        tmp = SetPlayerSkin(playerid, skinid);
+        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
+        return tmp;
+    }
+    else
+    {
+        return SetPlayerSkin(playerid, skinid);
+    }
 }
 ```
 

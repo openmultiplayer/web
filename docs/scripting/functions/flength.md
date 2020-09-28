@@ -32,18 +32,18 @@ new File:handle = fopen("file.txt", io_read);
 // If "file.txt" is open
 if(handle)
 {
-	// Success
+    // Success
 
-	// Print the size oin bytes of "file.txt"
-	printf("File size: %d", flength(handle));
+    // Print the size oin bytes of "file.txt"
+    printf("File size: %d", flength(handle));
 
-	// Close "file.txt"
-	fclose(handle);
+    // Close "file.txt"
+    fclose(handle);
 }
 else
 {
-	// Error
-	print("Failed to open \"file.txt\".");
+    // Error
+    print("Failed to open \"file.txt\".");
 }
 ```
 

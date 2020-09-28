@@ -33,9 +33,9 @@ Adds a new custom character model for download. The model files will be stored i
 ```c
 public OnGameModeInit()
 {
-	AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
-	AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
-	return 1;
+    AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
+    AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
+    return 1;
 }
 ```
 

@@ -10,7 +10,7 @@
 
 <p align="center">
   <a
-    href="https://wiki.open.mp"
+    href="https://open.mp/wiki"
   >Wiki</a>
   |
   <a

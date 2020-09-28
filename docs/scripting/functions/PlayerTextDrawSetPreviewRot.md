@@ -39,15 +39,15 @@ new PlayerText:textdraw;
 
 public OnPlayerConnect(playerid)
 {
-	textdraw = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");
-	PlayerTextDrawFont(playerid, textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-	PlayerTextDrawUseBox(playerid, textdraw, 1);
-	PlayerTextDrawBoxColor(playerid, textdraw, 0x000000FF);
-	PlayerTextDrawTextSize(playerid, textdraw, 40.0, 40.0);
-	PlayerTextDrawSetPreviewModel(playerid, textdraw, 411);
-	PlayerTextDrawSetPreviewRot(playerid, textdraw, -10.0, 0.0, -20.0, 1.0);
-	PlayerTextDrawShow(playerid, textdraw);
-	return 1;
+    textdraw = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");
+    PlayerTextDrawFont(playerid, textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
+    PlayerTextDrawUseBox(playerid, textdraw, 1);
+    PlayerTextDrawBoxColor(playerid, textdraw, 0x000000FF);
+    PlayerTextDrawTextSize(playerid, textdraw, 40.0, 40.0);
+    PlayerTextDrawSetPreviewModel(playerid, textdraw, 411);
+    PlayerTextDrawSetPreviewRot(playerid, textdraw, -10.0, 0.0, -20.0, 1.0);
+    PlayerTextDrawShow(playerid, textdraw);
+    return 1;
 }
 ```
 
