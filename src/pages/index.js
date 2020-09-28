@@ -18,7 +18,7 @@ function Home() {
             src={useBaseUrl("public/logo-light-mono.svg")}
             alt={siteConfig.title}
           />
-          <div className="hero__warning">
+          <div className={classnames(styles.hero__warning)}>
             <h1>
               <a href="https://www.open.mp/wiki">
                 IF THIS LOOKS BROKEN GO TO THE NEW URL HERE AT open.mp/wiki -
