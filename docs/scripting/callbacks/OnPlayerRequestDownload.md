@@ -30,9 +30,9 @@ This callback is called when a player request for custom model downloads.
 ## Examples
 
 ```c
-#define DOWNLOAD_REQUEST_EMPTY        0
-#define DOWNLOAD_REQUEST_MODEL_FILE    1
-#define DOWNLOAD_REQUEST_TEXTURE_FILE    2
+#define DOWNLOAD_REQUEST_EMPTY        (0)
+#define DOWNLOAD_REQUEST_MODEL_FILE   (1)
+#define DOWNLOAD_REQUEST_TEXTURE_FILE (2)
 new baseurl[] = "https://files.sa-mp.com/server";
 
 public OnPlayerRequestDownload(playerid, type, crc)
