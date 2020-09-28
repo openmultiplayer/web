@@ -1,7 +1,7 @@
 {
     "redirects": [
         {
-            "source": "/test/:all*",
+            "source": "/docs/:all*",
             "destination": "https://www.open.mp/docs/:all*"
         }
     ]
