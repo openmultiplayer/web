@@ -20,10 +20,10 @@ function Home() {
           />
           <div className={classnames(styles.hero__warning)}>
             <h1>
-              <a href="https://www.open.mp/wiki">
+              {/* <a href="https://www.open.mp/wiki">
                 IF THIS LOOKS BROKEN GO TO THE NEW URL HERE AT open.mp/wiki -
                 SORRY FOR THE INCONVENIENCE!
-              </a>
+              </a> */}
             </h1>
           </div>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
