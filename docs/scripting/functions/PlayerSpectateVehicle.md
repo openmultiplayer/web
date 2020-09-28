@@ -14,7 +14,7 @@ Sets a player to spectate another vehicle. Their camera will be attached to the 
 |------|-------------|
 |playerid | The ID of the player who should spectate a vehicle.|
 |targetvehicleid | The ID of the vehicle the player should spectate.|
-|mode | The spectate mode. Can generally be left blank as it defaults to 'normal'.|
+|mode | The spectate [mode](../resources/spectatemodes.md). Can generally be left blank as it defaults to 'normal'.|
 
 
 ## Returns
