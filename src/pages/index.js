@@ -10,7 +10,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout description="SA-MP Wiki and open.mp API Documentation Website">
+    <Layout description="SA-MP Wiki and open.mp API Documentation - A mostly complete copy of the SA-MP Wiki with improvements and updates to documentation.">
       <header className={classnames("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <img
