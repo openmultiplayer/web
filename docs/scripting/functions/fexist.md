@@ -30,15 +30,15 @@ The number of files that match the pattern.
 // Check, if "file.txt" exists
 if(fexist("file.txt"))
 {
-	// Success
+    // Success
 
-	// Print the success
-	print("\"file.txt\" exists.");
+    // Print the success
+    print("\"file.txt\" exists.");
 }
 else
 {
-	// Error
-	print("\"file.txt\" does not exist.");
+    // Error
+    print("\"file.txt\" does not exist.");
 }
 ```
 

@@ -38,10 +38,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp("/velocity", cmdtext))
     {
         new Float:Velocity[3], string[80];
-	GetPlayerVelocity(playerid, Velocity[0], Velocity[1], Velocity[2]);
+    GetPlayerVelocity(playerid, Velocity[0], Velocity[1], Velocity[2]);
         format(string, sizeof(string), "You are going at a velocity of X: %f, Y: %f, Z: %f", Velocity[0], Velocity[1], Velocity[2]);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
-	return 1;
+    return 1;
     }
 }
 ```

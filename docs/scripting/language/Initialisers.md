@@ -7,7 +7,7 @@ title: "Keywords: Initialisers"
 
 ```c
 new const
-	MY_CONSTANT[] =  {1, 2, 3};
+    MY_CONSTANT[] =  {1, 2, 3};
 ```
 
 const is not widerly used however it declares a variable which can not be modified by code. There are a few uses for this - functions with const array parameters can sometimes be compiled more efficiently or you may want something like a define but which is an array. const is a modifier, it must go with new or another variable declarator. If you try modify a const variable the compiler will complain.
@@ -20,17 +20,17 @@ By far the most common use is as array definitions:
 ```c
 enum E_MY_ARRAY
 {
-	E_MY_ARRAY_MONEY,
-	E_MY_ARRAY_GUN
+    E_MY_ARRAY_MONEY,
+    E_MY_ARRAY_GUN
 }
  
 new
-	gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
+    gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
  
 public OnPlayerConnect(playerid)
 {
-	gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
-	gPlayerData[playerid][E_MY_ARRAY_GUN] = 5;
+    gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
+    gPlayerData[playerid][E_MY_ARRAY_GUN] = 5;
 }
 ```
 
@@ -38,12 +38,12 @@ That will create an array with two slots for every player. Into the one referenc
 
 ```c
 new
-	gPlayerData[MAX_PLAYERS][2];
+    gPlayerData[MAX_PLAYERS][2];
  
 public OnPlayerConnect(playerid)
 {
-	gPlayerData[playerid][0] = 0;
-	gPlayerData[playerid][1] = 5;
+    gPlayerData[playerid][0] = 0;
+    gPlayerData[playerid][1] = 5;
 }
 ```
 
@@ -52,19 +52,19 @@ And that is how the first compiles. This is OK, however it's less readable - wha
 ```c
 enum E_MY_ARRAY
 {
-	E_MY_ARRAY_MONEY,
-	E_MY_ARRAY_AMMO,
-	E_MY_ARRAY_GUN
+    E_MY_ARRAY_MONEY,
+    E_MY_ARRAY_AMMO,
+    E_MY_ARRAY_GUN
 }
  
 new
-	gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
+    gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
  
 public OnPlayerConnect(playerid)
 {
-	gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
-	gPlayerData[playerid][E_MY_ARRAY_AMMO] = 100;
-	gPlayerData[playerid][E_MY_ARRAY_GUN] = 5;
+    gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
+    gPlayerData[playerid][E_MY_ARRAY_AMMO] = 100;
+    gPlayerData[playerid][E_MY_ARRAY_GUN] = 5;
 }
 ```
 
@@ -75,10 +75,10 @@ So how does an enum know what values to give things? The full format of an enum 
 ```c
 enum NAME (modifier)
 {
-	NAME_ENTRY_1 = value,
-	NAME_ENTRY_2 = value,
-	...
-	NAME_ENTRY_N = value
+    NAME_ENTRY_1 = value,
+    NAME_ENTRY_2 = value,
+    ...
+    NAME_ENTRY_N = value
 }
 ```
 
@@ -87,9 +87,9 @@ However much of this is implied. By default, if you don't specify a modifier it 
 ```c
 enum E_EXAMPLE
 {
-	E_EXAMPLE_0,
-	E_EXAMPLE_1,
-	E_EXAMPLE_2
+    E_EXAMPLE_0,
+    E_EXAMPLE_1,
+    E_EXAMPLE_2
 }
 ```
 
@@ -98,9 +98,9 @@ The first value (E_EXAMPLE_0) is 0 (by default if no other value is specified), 
 ```c
 enum E_EXAMPLE (+= 5)
 {
-	E_EXAMPLE_0,
-	E_EXAMPLE_1,
-	E_EXAMPLE_2
+    E_EXAMPLE_0,
+    E_EXAMPLE_1,
+    E_EXAMPLE_2
 }
 ```
 
@@ -108,7 +108,7 @@ In that example every value is the last value + 5 so, starting from 0 again, we 
 
 ```c
 new
-	gEnumArray[E_EXAMPLE];
+    gEnumArray[E_EXAMPLE];
 ```
 
 You would get an array 15 cells big however you would only be able to access cells 0, 5 and 10 using the enum values (you could however still use normal numbers). Lets look at another example:
@@ -116,9 +116,9 @@ You would get an array 15 cells big however you would only be able to access cel
 ```c
 enum E_EXAMPLE (*= 2)
 {
-	E_EXAMPLE_0,
-	E_EXAMPLE_1,
-	E_EXAMPLE_2
+    E_EXAMPLE_0,
+    E_EXAMPLE_1,
+    E_EXAMPLE_2
 }
 ```
 
@@ -127,9 +127,9 @@ In this all the values are 0. Why? Well the first value by default is 0, then 0 
 ```c
 enum E_EXAMPLE (*= 2)
 {
-	E_EXAMPLE_0 = 1,
-	E_EXAMPLE_1,
-	E_EXAMPLE_2
+    E_EXAMPLE_0 = 1,
+    E_EXAMPLE_1,
+    E_EXAMPLE_2
 }
 ```
 
@@ -138,9 +138,9 @@ That sets the first value to 1, so you end up with 1, 2, 4 and 8. Creating an ar
 ```c
 enum E_EXAMPLE (*= 2)
 {
-	E_EXAMPLE_0,
-	E_EXAMPLE_1 = 1,
-	E_EXAMPLE_2
+    E_EXAMPLE_0,
+    E_EXAMPLE_1 = 1,
+    E_EXAMPLE_2
 }
 ```
 
@@ -153,9 +153,9 @@ While:
 ```c
 enum E_EXAMPLE (*= 2)
 {
-	E_EXAMPLE_0 = 1,
-	E_EXAMPLE_1 = 1,
-	E_EXAMPLE_2 = 1
+    E_EXAMPLE_0 = 1,
+    E_EXAMPLE_1 = 1,
+    E_EXAMPLE_2 = 1
 }
 ```
 
@@ -170,9 +170,9 @@ You can also use arrays in enums:
 ```c
 enum E_EXAMPLE
 {
-	E_EXAMPLE_0[10],
-	E_EXAMPLE_1,
-	E_EXAMPLE_2
+    E_EXAMPLE_0[10],
+    E_EXAMPLE_1,
+    E_EXAMPLE_2
 }
 ```
 
@@ -182,21 +182,21 @@ enums items can also have tags, so for out original example:
 ```c
 enum E_MY_ARRAY
 {
-	E_MY_ARRAY_MONEY,
-	E_MY_ARRAY_AMMO,
-	Float:E_MY_ARRAY_HEALTH,
-	E_MY_ARRAY_GUN
+    E_MY_ARRAY_MONEY,
+    E_MY_ARRAY_AMMO,
+    Float:E_MY_ARRAY_HEALTH,
+    E_MY_ARRAY_GUN
 }
  
 new
-	gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
+    gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
  
 public OnPlayerConnect(playerid)
 {
-	gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
-	gPlayerData[playerid][E_MY_ARRAY_AMMO] = 100;
-	gPlayerData[playerid][E_MY_ARRAY_GUN] = 5;
-	gPlayerData[playerid][E_MY_ARRAY_HEALTH] = 50.0;
+    gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
+    gPlayerData[playerid][E_MY_ARRAY_AMMO] = 100;
+    gPlayerData[playerid][E_MY_ARRAY_GUN] = 5;
+    gPlayerData[playerid][E_MY_ARRAY_HEALTH] = 50.0;
 }
 ```
 That will not give a tag mismatch.
@@ -205,15 +205,15 @@ Enums can also be used as tags themselves:
 ```c
 enum E_MY_TAG (<<= 1)
 {
-	E_MY_TAG_NONE,
-	E_MY_TAG_VAL_1 = 1,
-	E_MY_TAG_VAL_2,
-	E_MY_TAG_VAL_3,
-	E_MY_TAG_VAL_4
+    E_MY_TAG_NONE,
+    E_MY_TAG_VAL_1 = 1,
+    E_MY_TAG_VAL_2,
+    E_MY_TAG_VAL_3,
+    E_MY_TAG_VAL_4
 }
  
 new
-	E_MY_TAG:gMyTagVar = E_MY_TAG_VAL_2 | E_MY_TAG_VAL_3;
+    E_MY_TAG:gMyTagVar = E_MY_TAG_VAL_2 | E_MY_TAG_VAL_3;
 ```
 
 That will create a new variable and assign it the value 6 (4 | 2), and it will have a custom tag so doing:
@@ -230,16 +230,16 @@ This can be very useful for flag data (i.e. one bit for some data), or even comb
 ```c
 enum E_MY_TAG (<<= 1)
 {
-	E_MY_TAG_NONE,
-	E_MY_TAG_MASK = 0xFF,
-	E_MY_TAG_VAL_1 = 0x100,
-	E_MY_TAG_VAL_2,
-	E_MY_TAG_VAL_3,
-	E_MY_TAG_VAL_4
+    E_MY_TAG_NONE,
+    E_MY_TAG_MASK = 0xFF,
+    E_MY_TAG_VAL_1 = 0x100,
+    E_MY_TAG_VAL_2,
+    E_MY_TAG_VAL_3,
+    E_MY_TAG_VAL_4
 }
  
 new
-	E_MY_TAG:gMyTagVar = E_MY_TAG_VAL_2 | E_MY_TAG_VAL_3 | (E_MY_TAG:7 & E_MY_TAG_MASK);
+    E_MY_TAG:gMyTagVar = E_MY_TAG_VAL_2 | E_MY_TAG_VAL_3 | (E_MY_TAG:7 & E_MY_TAG_MASK);
 ```
 
 Which will produce a value of 1543 (0x0607).
@@ -258,31 +258,31 @@ I'm sure many of you have seen loads of things like that to define teams. It's a
 ```c
 enum
 {
-	TEAM_NONE,
-	TEAM_COP,
-	TEAM_ROBBER,
-	TEAM_CIV,
-	TEAM_CLERK,
-	TEAM_DRIVER
+    TEAM_NONE,
+    TEAM_COP,
+    TEAM_ROBBER,
+    TEAM_CIV,
+    TEAM_CLERK,
+    TEAM_DRIVER
 }
 ```
 
 Those all have the same values as they had before, and can be used in exactly the same way:
 ```c
 new
-	gPlayerTeam[MAX_PLAYERS] = {TEAM_NONE, ...};
+    gPlayerTeam[MAX_PLAYERS] = {TEAM_NONE, ...};
  
 public OnPlayerConnect(playerid)
 {
-	gPlayerTeam[playerid] = TEAM_NONE;
+    gPlayerTeam[playerid] = TEAM_NONE;
 }
  
 public OnPlayerRequestSpawn(playerid)
 {
-	if (gPlayerSkin[playerid] == gCopSkin)
-	{
-		gPlayerTeam[playerid] = TEAM_COP;
-	}
+    if (gPlayerSkin[playerid] == gCopSkin)
+    {
+        gPlayerTeam[playerid] = TEAM_COP;
+    }
 }
 ```
 
@@ -290,12 +290,12 @@ While we're on the subject there is a much better way of defining teams based on
 ```c
 enum (<<= 1)
 {
-	TEAM_NONE,
-	TEAM_COP = 1,
-	TEAM_ROBBER,
-	TEAM_CIV,
-	TEAM_CLERK,
-	TEAM_DRIVER
+    TEAM_NONE,
+    TEAM_COP = 1,
+    TEAM_ROBBER,
+    TEAM_CIV,
+    TEAM_CLERK,
+    TEAM_DRIVER
 }
 ```
 
@@ -303,13 +303,13 @@ Now TEAM_COP is 1, TEAM_ROBBER is 2, TEAM_CIV is 4 etc, which in binary is 0b000
 ```c
 enum (<<= 1)
 {
-	TEAM_NONE,
-	TEAM_COP = 1,
-	TEAM_ROBBER,
-	TEAM_CIV,
-	TEAM_CLERK,
-	TEAM_DRIVER,
-	TEAM_ADMIN
+    TEAM_NONE,
+    TEAM_COP = 1,
+    TEAM_ROBBER,
+    TEAM_CIV,
+    TEAM_CLERK,
+    TEAM_DRIVER,
+    TEAM_ADMIN
 }
 ```
 
@@ -348,13 +348,13 @@ As well as being required for all publics forward can be used to fix a rare warn
 ```c
 main()
 {
-	new
-		Float:myVar = MyFloatFunction();
+    new
+        Float:myVar = MyFloatFunction();
 }
  
 Float:MyFloatFunction()
 {
-	return 5.0;
+    return 5.0;
 }
 ```
 
@@ -362,13 +362,13 @@ This will give a reparse warning because the compiler doesn't know how to conver
 ```c
 Float:MyFloatFunction()
 {
-	return 5.0;
+    return 5.0;
 }
  
 main()
 {
-	new
-		Float:myVar = MyFloatFunction();
+    new
+        Float:myVar = MyFloatFunction();
 }
 ```
 
@@ -378,13 +378,13 @@ forward Float:MyFloatFunction();
  
 main()
 {
-	new
-		Float:myVar = MyFloatFunction();
+    new
+        Float:myVar = MyFloatFunction();
 }
  
 Float:MyFloatFunction()
 {
-	return 5.0;
+    return 5.0;
 }
 ```
 Note the forward includes the return tag too.
@@ -414,8 +414,8 @@ Now the function print doesn't actually exist. It is still in SA:MP, and the com
 ```c
 print(const string[])
 {
-	my_print("Someone called print()");
-	my_print(string);
+    my_print("Someone called print()");
+    my_print(string);
 }
 ```
 
@@ -426,13 +426,13 @@ Now whenever print() is used in a script your function will be called instead of
 This is the core of variables, one of the most important keywords about. new declares a new variable:
 ```c
 new
-	myVar = 5;
+    myVar = 5;
 ```
 
 That will create a variable, name it myVar and assign it the value of 5. By default all variables are 0 if nothing is specified:
 ```c
 new
-	myVar;
+    myVar;
  
 printf("%d", myVar);
 ```
@@ -443,19 +443,19 @@ A variable's scope is where it can be used. Scope is restricted by braces (the c
 ```c
 if (a == 1)
 {
-	// Braces start the line above this one
-	new
-		myVar = 5;
+    // Braces start the line above this one
+    new
+        myVar = 5;
  
-	// This printf is in the same braces so can use myVar.
-	printf("%d", myVar);
+    // This printf is in the same braces so can use myVar.
+    printf("%d", myVar);
  
-	// This if statement is also within the braces, so it and everything in it can use myVar
-	if (myVar == 1)
-	{
-		printf("%d", myVar);
-	}
-	// The braces end the line below this
+    // This if statement is also within the braces, so it and everything in it can use myVar
+    if (myVar == 1)
+    {
+        printf("%d", myVar);
+    }
+    // The braces end the line below this
 }
 // This is outside the braces so will give an error
 printf("%d", myVar);
@@ -469,18 +469,18 @@ File1.pwn:
 ```c
 MyFunc1()
 {
-	// Error, gMyVar doesn't exist yet
-	printf("%d", gMyVar);
+    // Error, gMyVar doesn't exist yet
+    printf("%d", gMyVar);
 }
  
 // gMyVar is declared here
 new
-	gMyVar = 10;
+    gMyVar = 10;
  
 MuFunc2()
 {
-	// Fine as gMyVar now exists
-	printf("%d", gMyVar);
+    // Fine as gMyVar now exists
+    printf("%d", gMyVar);
 }
  
 // Include another file here
@@ -491,8 +491,8 @@ file2.pwn:
 ```c
 MyFunc3()
 {
-	// This is also fine as this file is included in the first file after the declaration and new is not file restricted
-	printf("%d", gMyVar);
+    // This is also fine as this file is included in the first file after the declaration and new is not file restricted
+    printf("%d", gMyVar);
 }
 ```
 
@@ -502,14 +502,14 @@ This allows you to overload operators for custom tags. For example:
 ```c
 stock BigEndian:operator=(b)
 {
-	return BigEndian:(((b >>> 24) & 0x000000FF) | ((b >>> 8) & 0x0000FF00) | ((b << 8) & 0x00FF0000) | ((b << 24) & 0xFF000000));
+    return BigEndian:(((b >>> 24) & 0x000000FF) | ((b >>> 8) & 0x0000FF00) | ((b << 8) & 0x00FF0000) | ((b << 24) & 0xFF000000));
 }
  
 main()
 {
-	new
-	    BigEndian:a = 7;
-	printf("%d", _:a);
+    new
+        BigEndian:a = 7;
+    printf("%d", _:a);
 }
 ```
 
@@ -534,15 +534,15 @@ Also note that you can make them do whatever you like:
 ```c
 stock BigEndian:operator+(BigEndian:a, BigEndian:b)
 {
-	return BigEndian:42;
+    return BigEndian:42;
 }
  
 main()
 {
-	new
-	    BigEndian:a = 7,
-	    BigEndian:b = 199;
-	printf("%d", _:(a + b));
+    new
+        BigEndian:a = 7,
+        BigEndian:b = 199;
+    printf("%d", _:(a + b));
 ```
 Will simply give 42, nothing to do with addition.
 
@@ -558,12 +558,12 @@ forward MyPublicFunc();
  
 main()
 {
-	CallLocalFunction("MyPublicFunc", "");
+    CallLocalFunction("MyPublicFunc", "");
 }
  
 public MyPublicFunc()
 {
-	printf("Hello");
+    printf("Hello");
 }
 ```
 
@@ -574,18 +574,18 @@ forward @MyOtherPublicFunc(var);
  
 main()
 {
-	CallLocalFunction("MyPublicFunc", "");
-	SetTimerEx("@MyOtherPublicFunc", 5000, 0, "i", 7);
+    CallLocalFunction("MyPublicFunc", "");
+    SetTimerEx("@MyOtherPublicFunc", 5000, 0, "i", 7);
 }
  
 public MyPublicFunc()
 {
-	printf("Hello");
+    printf("Hello");
 }
  
 @MyOtherPublicFunc(var)
 {
-	printf("%d", var);
+    printf("%d", var);
 }
 ```
 
@@ -597,7 +597,7 @@ All SA:MP callbacks are public and called from outside the script automatically:
 ```c
 public OnPlayerConnect(playerid)
 {
-	printf("%d connected", playerid);
+    printf("%d connected", playerid);
 }
 ```
 
@@ -609,12 +609,12 @@ forward MyPublicFunc();
  
 main()
 {
-	MyPublicFunc();
+    MyPublicFunc();
 }
  
 public MyPublicFunc()
 {
-	printf("Hello");
+    printf("Hello");
 }
 ```
 This is obviously much faster than using CallLocalFunction or another native.
@@ -627,18 +627,18 @@ A static variable is like a global new variable but with a more limited scope. W
 ```c
 MyFunc1()
 {
-	// Error, gMyVar doesn't exist yet
-	printf("%d", gMyVar);
+    // Error, gMyVar doesn't exist yet
+    printf("%d", gMyVar);
 }
  
 // gMyVar is declared here
 new
-	gMyVar = 10;
+    gMyVar = 10;
  
 MuFunc2()
 {
-	// Fine as gMyVar now exists
-	printf("%d", gMyVar);
+    // Fine as gMyVar now exists
+    printf("%d", gMyVar);
 }
  
 // Include another file here
@@ -649,8 +649,8 @@ file2.pwn
 ```c
 MyFunc3()
 {
-	// This is also fine as this file is included in the first file after the declaration and new is not file restricted
-	printf("%d", gMyVar);
+    // This is also fine as this file is included in the first file after the declaration and new is not file restricted
+    printf("%d", gMyVar);
 }
 ```
 
@@ -660,18 +660,18 @@ file1.pwn
 ```c
 MyFunc1()
 {
-	// Error, g_sMyVar doesn't exist yet
-	printf("%d", g_sMyVar);
+    // Error, g_sMyVar doesn't exist yet
+    printf("%d", g_sMyVar);
 }
  
 // g_sMyVar is declared here
 static
-	g_sMyVar = 10;
+    g_sMyVar = 10;
  
 MuFunc2()
 {
-	// Fine as _sgMyVar now exists
-	printf("%d", g_sMyVar);
+    // Fine as _sgMyVar now exists
+    printf("%d", g_sMyVar);
 }
  
 // Include another file here
@@ -682,8 +682,8 @@ file2.pwn
 ```c
 MyFunc3()
 {
-	// Error, g_sMyVar is limited to only the file (or section) in which it was declared, this is a different file
-	printf("%d", g_sMyVar);
+    // Error, g_sMyVar is limited to only the file (or section) in which it was declared, this is a different file
+    printf("%d", g_sMyVar);
 }
 ```
 
@@ -694,19 +694,19 @@ If you use static locally (i.e. in a function) then the variable, like local var
 ```c
 main()
 {
-	for (new loopVar = 0; loopVar < 4; loopVar++)
-	{
-		MyFunc();
-	}
+    for (new loopVar = 0; loopVar < 4; loopVar++)
+    {
+        MyFunc();
+    }
 }
  
 MyFunc()
 {
-	new
-		i = 0;
-	printf("%d", i);
-	i++;
-	printf("%d", i);
+    new
+        i = 0;
+    printf("%d", i);
+    i++;
+    printf("%d", i);
 }
 ```
 
@@ -726,19 +726,19 @@ If we replace the "new" with "static" we get:
 ```c
 main()
 {
-	for (new loopVar = 0; loopVar < 4; loopVar++)
-	{
-		MyFunc();
-	}
+    for (new loopVar = 0; loopVar < 4; loopVar++)
+    {
+        MyFunc();
+    }
 }
  
 MyFunc()
 {
-	static
-		i = 0;
-	printf("%d", i);
-	i++;
-	printf("%d", i);
+    static
+        i = 0;
+    printf("%d", i);
+    i++;
+    printf("%d", i);
 }
 ```
 
@@ -775,10 +775,10 @@ You can also have static functions which can only be called from the file in whi
 stock is used to declare variables and functions which may not be used but which you don't want to generate unused warnings for. With variables stock is like const in that it is a modifier, not a full declaration, so you could have:
 ```c
 new stock
-	gMayBeUsedVar;
+    gMayBeUsedVar;
  
 static stock
-	g_sMayBeUsedVar;
+    g_sMayBeUsedVar;
 ```
 
 If the variable or function is used the compiler will include it, if it is not used it will exclude it. This is different to using #pragma unused (symbol) as that will simply surpress (i.e. hide) the warning and include the information anyway, stock will entirely ignore the unused data.
@@ -788,17 +788,17 @@ stock is most commonly used for custom libraries. If you write a library you pro
 ```c
 main()
 {
-	Func1();
+    Func1();
 }
  
 Func1()
 {
-	printf("Hello");
+    printf("Hello");
 }
  
 Func2()
 {
-	printf("Hi");
+    printf("Hi");
 }
 ```
 
@@ -806,17 +806,17 @@ Here Func2 is never called so the compiler will give a warning. This may be usef
 ```c
 main()
 {
-	Func1();
+    Func1();
 }
  
 stock Func1()
 {
-	printf("Hello");
+    printf("Hello");
 }
  
 stock Func2()
 {
-	printf("Hi");
+    printf("Hi");
 }
 ```
 And the function won't be compiled and the warning removed.

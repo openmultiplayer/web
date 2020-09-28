@@ -32,16 +32,16 @@ new Text:textdraw;
 
 public OnGameModeInit()
 {
-	textdraw = TextDrawCreate(320.0, 240.0, "_");
-	TextDrawFont(textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-	TextDrawUseBox(textdraw, 1);
-	TextDrawBoxColor(textdraw, 0x000000FF);
-	TextDrawTextSize(textdraw, 40.0, 40.0);
-	TextDrawSetPreviewModel(textdraw, 411); // Display model 411 (Infernus)
+    textdraw = TextDrawCreate(320.0, 240.0, "_");
+    TextDrawFont(textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
+    TextDrawUseBox(textdraw, 1);
+    TextDrawBoxColor(textdraw, 0x000000FF);
+    TextDrawTextSize(textdraw, 40.0, 40.0);
+    TextDrawSetPreviewModel(textdraw, 411); // Display model 411 (Infernus)
         TextDrawSetPreviewVehCol(textdraw, 6, 6); // Set the Infernus to have colour 6 (Yellow)
 
-	//You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
-	return 1;
+    //You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
+    return 1;
 }
 ```
 

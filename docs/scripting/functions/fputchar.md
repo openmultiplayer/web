@@ -32,18 +32,18 @@ This function does not return any specific values.
 new File:handle = fopen("file.txt", io_write);
 if(handle)
 {
-	// Success
+    // Success
 
-	// Write character "e" into "file.txt"
-	fputchar(handle, 'e', false);
+    // Write character "e" into "file.txt"
+    fputchar(handle, 'e', false);
 
-	// Close "file.txt"
-	fclose(handle);
+    // Close "file.txt"
+    fclose(handle);
 }
 else
 {
-	// Error
-	print("Failed to open \"file.txt\".");
+    // Error
+    print("Failed to open \"file.txt\".");
 }
 ```
 

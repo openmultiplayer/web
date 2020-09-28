@@ -10,10 +10,10 @@ title: "Control Structures"
 An if statement checks if something is true and does something if it is.
 ```c
 new
-	a = 5;
+    a = 5;
 if (a == 5)
 {
-	print("a is 5");
+    print("a is 5");
 }
 ```
 
@@ -23,7 +23,7 @@ In the example above both "a" and 5 are symbols, functions can also be symbols:
 ```c
 if (SomeFunction() == 5)
 {
-	print("SomeFunction() is 5");
+    print("SomeFunction() is 5");
 }
 ```
 
@@ -32,11 +32,11 @@ That will test the return value of SomeFunction (see below) against 5.
 You can also combine checks to check multiple things:
 ```c
 new
-	a = 5,
-	b = 3;
+    a = 5,
+    b = 3;
 if (a == 5 && b != 3)
 {
-	print("Won't be printed");
+    print("Won't be printed");
 }
 ```
 
@@ -44,11 +44,11 @@ That example checks that a is equal to 5 AND b is not equal to 3, however b is 3
 
 ```c
 new
-	a = 5,
-	b = 3;
+    a = 5,
+    b = 3;
 if (a == 5 || b != 3)
 {
-	print("Will be printed");
+    print("Will be printed");
 }
 ```
 
@@ -77,7 +77,7 @@ The following are symbols you can use in comparisons and their explanations. Som
 |   !=   |Left is not equal to Right   |if (Left != Right)  |
 |   >    |Left is greater than Right   |if (Left > Right)   |
 |   >=   |Left is greater than or equal to Right|if (Left >= Right)|
-|   <	 |Left is less than Right	   |if (Left < Right)   |
+|   <     |Left is less than Right       |if (Left < Right)   |
 |   <=   |Left is less than or equal to Right|if (Left <= Right)|
 |   &&   |and                          |if (Left && Right)  |
 |   &#124;&#124;|or                           |if (Left &#124;&#124; Right)  |
@@ -91,12 +91,12 @@ The following are symbols you can use in comparisons and their explanations. Som
 The other main aspect of if statements is brackets, these control the order things are done in:
 ```c
 new
-	a = 3,
-	b = 3,
-	c = 1;
+    a = 3,
+    b = 3,
+    c = 1;
 if (a == 5 && b == 3 || c == 1)
 {
-	print("Will this be called?");
+    print("Will this be called?");
 }
 ```
 
@@ -137,14 +137,14 @@ This little example shows how using brackets can change the outcome of a check, 
 else basically does something if an if check fails:
 ```c
 new
-	a = 5;
+    a = 5;
 if (a == 3) // False
 {
-	print("Won't be called");
+    print("Won't be called");
 }
 else
 {
-	print("Will be called as the check failed");
+    print("Will be called as the check failed");
 }
 ```
 
@@ -152,59 +152,59 @@ else
 An else if is a check which occurs if the first if check fails to check something else:
 ```c
 new
-	a = 5;
+    a = 5;
 if (a == 1)
 {
-	print("Will be called if a is 1");
+    print("Will be called if a is 1");
 }
 else if (a == 5)
 {
-	print("Will be called if a is 5");
+    print("Will be called if a is 5");
 }
 else
 {
-	print("All other numbers");
+    print("All other numbers");
 }
 ```
 
 You can have an many of these as you like (you can only have one if and one else in a group of checks):
 ```c
 new
-	a = 4;
+    a = 4;
 if (a == 1)
 {
-	// False
+    // False
 }
 else if (a == 2)
 {
-	// False
+    // False
 }
 else if (a == 3)
 {
-	// False
+    // False
 }
 else if (a == 4)
 {
-	// True
+    // True
 }
 else
 {
-	// False
+    // False
 }
 ```
 
 else ifs will only check the value as it was when the ifs start, so you can't do:
 ```c
 new
-	a = 5;
+    a = 5;
 if (a == 5)
 {
-	// Will be called
-	a = 4;
+    // Will be called
+    a = 4;
 }
 else if (a == 4)
 {
-	// Won't be called because the first check didn't fail, even though a is now 4
+    // Won't be called because the first check didn't fail, even though a is now 4
 }
 ```
 To get round this you would simply make the else if an if.
@@ -214,83 +214,83 @@ To get round this you would simply make the else if an if.
 '?' and ':' together are called a triadic operator, they basically act as an if statement inside another statement:
 ```c
 new
-	a,
-	b = 3;
+    a,
+    b = 3;
 if (b == 3)
 {
-	a = 5;
+    a = 5;
 }
 else
 {
-	a = 7;
+    a = 7;
 }
 ```
 
 That's a simple example to assign a variable based on another variable, however it can be made much shorter:
 ```c
 new
-	a,
-	b = 3;
+    a,
+    b = 3;
 a = (b == 3) ? (5) : (7);
 ```
 
 The part before the '?' is the conditional, this is exactly the same as a normal conditional. The part between the '?' and the ':' is the value to return if the condition is true, the other part is the value to return if the condition is false. You can stack them up the same as else ifs too:
 ```c
 new
-	a,
-	b = 3;
+    a,
+    b = 3;
 if (b == 1)
 {
-	a = 2;
+    a = 2;
 }
 else if (b == 2)
 {
-	a = 3;
+    a = 3;
 }
 else if (b == 3)
 {
-	a = 4;
+    a = 4;
 }
 else
 {
-	a = 5;
+    a = 5;
 }
 ```
 
 Can be written as:
 ```c
 new
-	a,
-	b = 3;
+    a,
+    b = 3;
 a = (b == 1) ? (2) : ((b == 2) ? (3) : ((b == 3) ? (4) : (5)));
 ```
 
 This is actually more similar to doing:
 ```c
 new
-	a,
-	b = 3;
+    a,
+    b = 3;
 if (b == 1)
 {
-	a = 2;
+    a = 2;
 }
 else
 {
-	if (b == 2)
-	{
-		a = 3;
-	}
-	else
-	{
-		if (b == 3)
-		{
-			a = 4;
-		}
-		else
-		{
-			a = 5;
-		}
-	}
+    if (b == 2)
+    {
+        a = 3;
+    }
+    else
+    {
+        if (b == 3)
+        {
+            a = 4;
+        }
+        else
+        {
+            a = 5;
+        }
+    }
 }
 ```
 But they're equivalent (in this example anyway).
@@ -301,11 +301,11 @@ But they're equivalent (in this example anyway).
 "while" loops do something while the condition specified is true. A condition is exactly the same format as the condition in an if statement, it is just checked repeatedly and the code done if it is true every time it is checked:
 ```c
 new
-	a = 9;
+    a = 9;
 while (a < 10)
 {
-	// Code in the loop
-	a++;
+    // Code in the loop
+    a++;
 }
 // Code after the loop
 ```
@@ -316,7 +316,7 @@ A "for" loop is essentially a compressed "while" loop. A "for" statement has thr
 ```c
 for (new a = 9; a < 10; a++)
 {
-	// Code in the loop
+    // Code in the loop
 }
 // Code after the loop
 ```
@@ -335,11 +335,11 @@ for(new i,a = GetMaxPlayers(); i < a; i++)
 Any of the conditions can be omitted simply by putting no code in them:
 ```c
 new
-	a = 9;
+    a = 9;
 for ( ; a < 10; )
 {
-	// Code in the loop
-	a++;
+    // Code in the loop
+    a++;
 }
 // Code after the loop
 ```
@@ -350,11 +350,11 @@ This example makes it a little easier to show how a "for" loop matches up to a "
 A do-while loop is a while loop where the condition comes after the code inside the loop instead of before. This means that the code inside will always be executed at least once because it is done before the check is done:
 ```c
 new
-	a = 10;
+    a = 10;
 do
 {
-	// Code inside the loop
-	a++;
+    // Code inside the loop
+    a++;
 }
 while (a < 10); // Note the semi-colon
 // Code after the loop
@@ -366,14 +366,14 @@ This is essentially what the loops above compile to, the use of goto is generall
 
 ```c
 new
-	a = 9;
+    a = 9;
  
 loop_start:
 if (a < 10)
 {
-	// Code in the loop
-	a++;
-	goto loop_start;
+    // Code in the loop
+    a++;
+    goto loop_start;
 }
 // Code after the loop
 ```
@@ -382,11 +382,11 @@ if (a < 10)
 OBOE stands for Off By One Error. This is a very common mistake where a loop runs for one too many or two few times. E.g:
 ```c
 new
-	a = 0,
-	b[10];
+    a = 0,
+    b[10];
 while (a <= sizeof (b))
 {
-	b[a] = 0;
+    b[a] = 0;
 }
 ```
 This very simple example demonstrates one of the most common OBOEs, at first glance people may think this will loop through all the contents of b and set them to 0, however this loop will actually run 11 times and try access b[10], which doesn't exist (it would be the 11th slot in b starting from 0), thus can cause all sorts of problems. This is known as an Out Of Bounds (OOB) error.
@@ -399,47 +399,47 @@ You have to be especially careful of OBOEs when using do-while loops as they ALW
 A switch statement is basically a structured if/else if/else system (similar to how for is a structured while). The easiest way to explain it is with an example:
 ```c
 new
-	a = 5;
+    a = 5;
 switch (a)
 {
-	case 1:
-	{
-		// Won't be called
-	}
-	case 2:
-	{
-		// Won't be called
-	}
-	case 5:
-	{
-		// Will be called
-	}
-	default:
-	{
-		// Won't be called
-	}
+    case 1:
+    {
+        // Won't be called
+    }
+    case 2:
+    {
+        // Won't be called
+    }
+    case 5:
+    {
+        // Will be called
+    }
+    default:
+    {
+        // Won't be called
+    }
 }
 ```
 
 This is functionally equivalent to:
 ```c
 new
-	a = 5;
+    a = 5;
 if (a == 1)
 {
-	// Won't be called
+    // Won't be called
 }
 else if (a == 2)
 {
-	// Won't be called
+    // Won't be called
 }
 else if (a == 5)
 {
-	// Will called
+    // Will called
 }
 else
 {
-	// Won't be called
+    // Won't be called
 }
 ```
 
@@ -449,9 +449,9 @@ An important thing to note here is the different ways in which ifs and switches 
 ```c
 switch (SomeFunction())
 {
-	case 1: {}
-	case 2: {}
-	case 3: {}
+    case 1: {}
+    case 2: {}
+    case 3: {}
 }
 ```
 
@@ -466,7 +466,7 @@ else if (SomeFunction() == 3) {}
 That will call SomeFunction() three times, which is very inefficient, a switch is more like doing:
 ```c
 new
-	result = SomeFunction();
+    result = SomeFunction();
 if (result == 1) {}
 else if (result == 2) {}
 else if (result == 3) {}
@@ -496,21 +496,21 @@ if (bla >= 1 && bla <= 4)
 
 ```c
 new
-	a = 4;
+    a = 4;
 switch (a)
 {
-	case 1 .. 3:
-	{
-	}
-	case 5, 8, 11:
-	{
-	}
-	case 4:
-	{
-	}
-	default:
-	{
-	}
+    case 1 .. 3:
+    {
+    }
+    case 5, 8, 11:
+    {
+    }
+    case 4:
+    {
+    }
+    default:
+    {
+    }
 }
 ```
 
@@ -538,7 +538,7 @@ break breaks out of a loop, ending it prematurely:
 ```c
 for (new a = 0; a < 10; a++)
 {
-	if (a == 5) break;
+    if (a == 5) break;
 }
 ```
 This loop will go 6 times but code after the break will only be executed 5 times.
@@ -549,8 +549,8 @@ continue basically skips a loop iteration
 ```c
 for (new a = 0; a < 3; a++)
 {
-	if (a == 1) continue;
-	printf("a = %d", a);
+    if (a == 1) continue;
+    printf("a = %d", a);
 }
 ```
 That will give the output of:
@@ -561,12 +561,12 @@ a = 0 a = 2
 The continue basically jumps to the closing brace of the loop, as hinted at above you have to be careful when using continue with some loops:
 ```c
 new
-	a = 0;
+    a = 0;
 while (a < 3)
 {
-	if (a == 1) continue;
-	printf("a = %d", a);
-	a++;
+    if (a == 1) continue;
+    printf("a = %d", a);
+    a++;
 }
 ```
 
@@ -577,18 +577,18 @@ return stops a function and goes back to the point in code which called the func
 ```c
 main()
 {
-	print("1");
-	MyFunction(1);
-	print("3");
+    print("1");
+    MyFunction(1);
+    print("3");
 }
  
 MyFunction(num)
 {
-	if (num == 1)
-	{
-		return;
-	}
-	print("2");
+    if (num == 1)
+    {
+        return;
+    }
+    print("2");
 }
 ```
 
@@ -602,21 +602,21 @@ You can also use return to return a value:
 ```c
 main()
 {
-	print("1");
-	if (MyFunction(1) == 27)
-	{
-		print("3");
-	}
+    print("1");
+    if (MyFunction(1) == 27)
+    {
+        print("3");
+    }
 }
  
 MyFunction(num)
 {
-	if (num == 1)
-	{
-		return 27;
-	}
-	print("2");
-	return 0;
+    if (num == 1)
+    {
+        return 27;
+    }
+    print("2");
+    return 0;
 }
 ```
 
@@ -628,22 +628,22 @@ You can also store return values for later use:
 ```c
 main()
 {
-	print("1");
-	new
-		ret = MyFunction(1);
-	if (ret == 27)
-	{
-		print("3");
-	}
+    print("1");
+    new
+        ret = MyFunction(1);
+    if (ret == 27)
+    {
+        print("3");
+    }
 }
  
 MyFunction(num)
 {
-	if (num == 1)
-	{
-		return 27;
-	}
-	print("2");
-	return 0;
+    if (num == 1)
+    {
+        return 27;
+    }
+    print("2");
+    return 0;
 }
 ```

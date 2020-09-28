@@ -41,7 +41,7 @@ if (!strcmp("/stadium", cmdtext))
 {
     if (IsPlayerInRangeOfPoint(playerid, 7.0, 2695.6880, -1704.6300, 11.8438)) 
     {
-    	SendClientMessage(playerid,0xFFFFFFFF,"You are near the stadium entrance!");
+        SendClientMessage(playerid,0xFFFFFFFF,"You are near the stadium entrance!");
     }
 
     return 1;
