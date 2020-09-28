@@ -34,18 +34,18 @@ new File:handle = fopen("file.txt", io_append);
 // Check, if file is open
 if(handle)
 {
-	// Success
+    // Success
 
-	// Write "Hi there!" into the file
-	fwrite(handle, "Hi there!");
+    // Write "Hi there!" into the file
+    fwrite(handle, "Hi there!");
 
-	// Close the file
-	fclose(handle);
+    // Close the file
+    fclose(handle);
 }
 else
 {
-	// Error
-	print("Failed to open file \"file.txt\".");
+    // Error
+    print("Failed to open file \"file.txt\".");
 }
 ```
 

@@ -35,9 +35,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/jump", cmdtext))
     {
-	if(IsPlayerInAnyVehicle(playerid))
+    if(IsPlayerInAnyVehicle(playerid))
         SetVehicleVelocity(GetPlayerVehicleID(playerid), 0.0, 0.0, 0.2);
-	return 1;
+    return 1;
     }
 }
 ```

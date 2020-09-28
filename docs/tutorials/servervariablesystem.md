@@ -46,8 +46,8 @@ The functions for setting and retrieving the server variables are:
 [DeleteSVar:](https://wiki.open.mp/docs/scripting/functions/DeleteSVar) Delete a server variable.
 
 ```c
-#define	SERVER_VARTYPE_NONE			0
-#define SERVER_VARTYPE_INT			1
-#define SERVER_VARTYPE_STRING		2
-#define SERVER_VARTYPE_FLOAT		3
+#define SERVER_VARTYPE_NONE   (0)
+#define SERVER_VARTYPE_INT    (1)
+#define SERVER_VARTYPE_STRING (2)
+#define SERVER_VARTYPE_FLOAT  (3)
 ```

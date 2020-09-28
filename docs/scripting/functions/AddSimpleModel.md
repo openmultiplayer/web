@@ -34,8 +34,8 @@ Adds a new custom simple object model for download. The model files will be stor
 ```c
 public OnGameModeInit()
 {
-	AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
-	return 1;
+    AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
+    return 1;
 }
 ```
 

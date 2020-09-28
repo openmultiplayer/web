@@ -29,37 +29,37 @@ Returns 1 on success, otherwise 0 if DBResult:dbresult is a NULL reference or th
 // Callback
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-	// If "cmdtext" equals "/EchoWoetJoinList"
-	if(!strcmp(cmdtext, "/EchoWoetJoinList", true, 17))
-	{
-		// Declare "db_result" and "info"
-		new DBResult:db_result, info[2][30];
+    // If "cmdtext" equals "/EchoWoetJoinList"
+    if(!strcmp(cmdtext, "/EchoWoetJoinList", true, 17))
+    {
+        // Declare "db_result" and "info"
+        new DBResult:db_result, info[2][30];
 
-		// Select the join list of the player "Woet"
-		db_result = db_query(db_handle, "SELECT * FROM `join_log` WHERE `name`='Woet'");
+        // Select the join list of the player "Woet"
+        db_result = db_query(db_handle, "SELECT * FROM `join_log` WHERE `name`='Woet'");
 
-		// Do these
-		do
-		{
-			// Store the data of "ip" into "info[0]"
-			db_get_field_assoc(db_result, "ip", info[0], sizeof info[]);
+        // Do these
+        do
+        {
+            // Store the data of "ip" into "info[0]"
+            db_get_field_assoc(db_result, "ip", info[0], sizeof info[]);
 
-			// Store the data of "time" into "info[1]"
-			db_get_field_assoc(db_result, "time", info[1], sizeof info[]);
+            // Store the data of "time" into "info[1]"
+            db_get_field_assoc(db_result, "time", info[1], sizeof info[]);
 
-			// Print into the console
-			printf("Print join list: Name: Woet IP: %s Date: %s", info[0], info[1]);
-		}
+            // Print into the console
+            printf("Print join list: Name: Woet IP: %s Date: %s", info[0], info[1]);
+        }
 
-		// While next row has been fetched
-		while(db_next_row(db_result));
+        // While next row has been fetched
+        while(db_next_row(db_result));
 
-		// Returns 1
-		return 1;
-	}
+        // Returns 1
+        return 1;
+    }
 
-	// Returns 0
-	return 0;
+    // Returns 0
+    return 0;
 }
 ```
 

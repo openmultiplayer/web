@@ -36,8 +36,8 @@ Adds a new custom simple object model for download. The model files will be stor
 ```c
 public OnGameModeInit()
 {
-	AddSimpleModelTimed(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd", 9, 18); // This wall only renders from 9:00 am to 6:00 pm
-	return 1;
+    AddSimpleModelTimed(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd", 9, 18); // This wall only renders from 9:00 am to 6:00 pm
+    return 1;
 }
 ```
 

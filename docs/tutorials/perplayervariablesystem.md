@@ -48,8 +48,8 @@ The functions for setting and retrieving the player variables are:
 [DeletePVar:](https://wiki.open.mp/docs/scripting/functions/GetPVarFloat) Delete a player variable.
 
 ```c
-#define PLAYER_VARTYPE_NONE			0
-#define PLAYER_VARTYPE_INT			1
-#define PLAYER_VARTYPE_STRING		2
-#define PLAYER_VARTYPE_FLOAT		3
+#define PLAYER_VARTYPE_NONE   (0)
+#define PLAYER_VARTYPE_INT    (1)
+#define PLAYER_VARTYPE_STRING (2)
+#define PLAYER_VARTYPE_FLOAT  (3)
 ```
