@@ -2,7 +2,7 @@
     "redirects": [
         {
             "source": "/test/*",
-            "destination": "https://www.open.mp/docs/index/*"
+            "destination": "https://www.open.mp/docs/*"
         }
     ]
 }
