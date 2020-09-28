@@ -4,8 +4,30 @@ title: Welcome
 sidebar_label: Welcome
 ---
 
-Welcome to the open.mp wiki!
+Welcome to the SA-MP wiki, maintained by the open.mp team and wider SA-MP
+community!
 
-This is a work-in-progress site aimed at providing an easily accessible, easy to contribute to documentation source for open.mp and SA-MP. Some SA-MP specific pages are not here yet and can be found [on the old wiki](https://wiki.sa-mp.com/). If you believe a page from the old wiki should be moved here (either copied as-is or updated), please open an issue to let us know or even better, a pull-request with the newly updated page!
+This site aims to provide an easily accessible, easy to contribute to
+documentation source for SA-MP and, eventually, open.mp.
 
-Most of the core API documentation is here. We welcome contributions for improvements to documentation as well as tutorials and guides for common tasks such as building simple gamemodes and using common libraries and plugins. If you're interested in contributing then head over to the [GitHub page](https://github.com/openmultiplayer/wiki).
+## The SA-MP Wiki is Gone
+
+Unfortunately, the SA-MP Wiki was taken offline in late september. Luckily, most
+of the content is stored on the Internet Archive.
+
+But we need the communities help to transfer the old wiki content to its new
+home, here!
+
+If you're interested, see this link for instructions on how to convert content:
+https://github.com/openmultiplayer/wiki/issues/27#issuecomment-699635305
+
+If you're not experienced with using GitHub or converting HTML, don't worry! You
+can help by just letting us know about issues (via Discord, Burgershot or social
+media) and the most important thing: _spreading the word!_ So be sure to
+bookmark this site and share it with anyone you know who's wondering where the
+SA-MP Wiki went.
+
+We welcome contributions for improvements to documentation as well as tutorials
+and guides for common tasks such as building simple gamemodes and using common
+libraries and plugins. If you're interested in contributing then head over to
+the [GitHub page](https://github.com/openmultiplayer/wiki).
