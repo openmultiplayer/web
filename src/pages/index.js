@@ -32,7 +32,7 @@ function Home() {
           </div>
         </div>
       </header>
-      <main>
+      <main className="intro">
         <section>
           <h1>SA-MP Wiki Content</h1>
           <p>
