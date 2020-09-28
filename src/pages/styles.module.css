@@ -33,3 +33,7 @@ section {
   margin: auto;
   max-width: 40em;
 }
+
+.hero__warning {
+  display: none;
+}

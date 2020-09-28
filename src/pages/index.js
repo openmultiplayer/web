@@ -18,6 +18,14 @@ function Home() {
             src={useBaseUrl("public/logo-light-mono.svg")}
             alt={siteConfig.title}
           />
+          <div className="hero__warning">
+            <h1>
+              <a href="https://www.open.mp/wiki">
+                IF THIS LOOKS BROKEN GO TO THE NEW URL HERE AT open.mp/wiki -
+                SORRY FOR THE INCONVENIENCE!
+              </a>
+            </h1>
+          </div>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
