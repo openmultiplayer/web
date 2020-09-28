@@ -1,8 +1,8 @@
 {
     "redirects": [
         {
-            "source": "/test/*",
-            "destination": "https://www.open.mp/docs/*"
+            "source": "/test/:all*",
+            "destination": "https://www.open.mp/docs/:all*"
         }
     ]
 }
