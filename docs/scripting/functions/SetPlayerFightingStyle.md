@@ -18,7 +18,7 @@ Set a player's special fighting style. To use in-game, aim and press the 'second
 | Name     | Description                                    |
 | -------- | ---------------------------------------------- |
 | playerid | The ID of player to set the fighting style of. |
-| style    | The fighting style that should be set.         |
+| style    | The fighting [style](../resources/fightingstyles.md) that should be set.         |
 
 ## Returns
 
