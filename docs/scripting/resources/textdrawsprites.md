@@ -10,7 +10,7 @@ title: TextDraw Sprites
 :::
 
 # Description
-The following is a list of textdraw sprites (textures) that can be used in a (player)textdraw (with [font](../functions/TextDrawFont) id 4) and shown to players. To use a sprite, the [text](../functions/TextDrawCreate) of a textdraw must be set according to a set format: ```library:texture```. The extension ```.txd``` need not be appended. Currently, only the libraries found in ```<SA Dir>/models/txd/``` and ```<SA Dir>/SAMP/``` can be used.
+The following is a list of textdraw sprites (textures) that can be used in a (player)textdraw (with [font](../functions/TextDrawFont) id 4) and shown to players. To use a sprite, the [text](../functions/TextDrawCreate) of a textdraw must be set according to a set format: `library:texture`. The extension `.txd` need not be appended. Currently, only the libraries found in `<SA Dir>/models/txd/` and `<SA Dir>/SAMP/` can be used.
 
 # Libraries
 ---
