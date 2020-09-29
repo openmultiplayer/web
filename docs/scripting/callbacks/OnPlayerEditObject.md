@@ -85,7 +85,7 @@ When using 'EDIT_RESPONSE_UPDATE' be aware that this callback will not be called
 
 ## Related Functions
 
-- EditObject: Edit an object.
-- CreateObject: Create an object.
-- DestroyObject: Destroy an object.
-- MoveObject: Move an object.
+- [EditObject](../../scripting/functions/EditObject.md): Edit an object.
+- [CreateObject](../../scripting/functions/CreateObject.md): Create an object.
+- [DestroyObject](../../scripting/functions/DestroyObject.md): Destroy an object.
+- [MoveObject](../../scripting/functions/MoveObject.md): Move an object.

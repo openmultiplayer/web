@@ -40,5 +40,5 @@ public OnVehicleSpawn(vehicleid)
 
 ## Related Functions
 
-- SetVehicleToRespawn: Respawn a vehicle.
-- CreateVehicle: Create a vehicle.
+- [SetVehicleToRespawn](../../scripting/functions/SetVehicleToRespawn.md): Respawn a vehicle.
+- [CreateVehicle](../../scripting/functions/CreateVehicle.md): Create a vehicle.

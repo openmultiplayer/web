@@ -40,5 +40,5 @@ This callback can also be called by NPC.
 
 ## Related Functions
 
-- SendPlayerMessageToPlayer: Force a player to send text for one player.
-- SendPlayerMessageToAll: Force a player to send text for all players.
+- [SendPlayerMessageToPlayer](../../scripting/functions/SendPlayerMessageToPlayer.md): Force a player to send text for one player.
+- [SendPlayerMessageToAll](../../scripting/functions/SendPlayerMessageToAll.md): Force a player to send text for all players.
