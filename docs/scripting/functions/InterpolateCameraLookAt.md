@@ -26,7 +26,7 @@ Interpolate a player's camera's 'look at' point between two coordinates with a s
 |Float:ToY | The Y position the camera should move to|
 |Float:ToZ | The Z position the camera should move to|
 |time | Time in milliseconds to complete interpolation|
-|cut | The 'jumpcut' to use. Defaults to CAMERA_CUT (pointless). Set to CAMERA_MOVE for interpolation.|
+|cut | The ['jumpcut'](../resources/cameracutstyles.md) to use. Defaults to CAMERA_CUT (pointless). Set to CAMERA_MOVE for interpolation.|
 
 
 ## Returns
