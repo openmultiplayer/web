@@ -33,15 +33,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if(!strcmp(cmdtext, "/collision", true))
     {
-    	new string[64];
+        new string[64];
 
-    	format(string, sizeof(string), "Vehicle collision for you is now '%s'", (GetPVarInt(playerid, "vehCollision") != 1) ? ("Disabled") : ("Enabled"));
-    	SendClientMessage(playerid, 0xFFFFFFFF, string);
+        format(string, sizeof(string), "Vehicle collision for you is now '%s'", (GetPVarInt(playerid, "vehCollision") != 1) ? ("Disabled") : ("Enabled"));
+        SendClientMessage(playerid, 0xFFFFFFFF, string);
 
-    	SetPVarInt(playerid, "vehCollision", !GetPVarInt(playerid, "vehCollision"));
+        SetPVarInt(playerid, "vehCollision", !GetPVarInt(playerid, "vehCollision"));
 
-    	DisableRemoteVehicleCollisions(playerid, GetPVarInt(playerid, "vehCollision"));
-    	return 1;
+        DisableRemoteVehicleCollisions(playerid, GetPVarInt(playerid, "vehCollision"));
+        return 1;
     }
     return 0;
 }

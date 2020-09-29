@@ -5,6 +5,12 @@ description: Converts an integer into a float.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Converts an integer into a float.

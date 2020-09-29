@@ -1,97 +1,105 @@
 module.exports = {
-  title: 'open.mp | Documentation',
-  tagline: 'Documentation for Open Multiplayer',
-  url: 'https://wiki.open.mp/',
-  baseUrl: '/',
-  favicon: 'public/favicon.ico',
-  organizationName: 'openmultiplayer',
-  projectName: 'wiki',
+  title: "open.mp | SA-MP Wiki content, function and callback documentation",
+  tagline: "SA-MP Wiki and open.mp API Documentation",
+  url: "https://www.open.mp/",
+  baseUrl: "/",
+  favicon: "public/favicon.ico",
+  organizationName: "openmultiplayer",
+  projectName: "wiki",
   themeConfig: {
     navbar: {
-      title: 'Home',
+      title: "Home",
       logo: {
-        alt: 'Open Multiplayer Documentation',
-        src: 'public/logo-light-trans.svg',
+        alt: "Open Multiplayer Logo",
+        src: "public/logo-light-trans.svg",
       },
       links: [
         {
-          to: 'docs/index',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/index",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
         {
-          href: 'https://open.mp/blog',
-          label: 'Blog',
-          position: 'left'
+          href: "https://open.mp/blog",
+          label: "Blog",
+          position: "left",
         },
         {
-          href: 'https://github.com/openmultiplayer/wiki',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/openmultiplayer/wiki",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Getting Started',
-              to: 'docs/scripting/resources/start',
+              label: "Getting Started",
+              to: "docs/scripting/resources/start",
             },
             {
-              label: 'Tutorials',
-              to: 'docs/tutorials/_tutorials',
+              label: "Tutorials",
+              to: "docs/tutorials/_tutorials",
             },
             {
-              label: 'Functions',
-              to: 'docs/scripting/functions',
+              label: "Functions",
+              to: "docs/scripting/functions",
             },
             {
-              label: 'Callbacks',
-              to: 'docs/scripting/callbacks',
+              label: "Callbacks",
+              to: "docs/scripting/callbacks",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "SA-MP & open.mp Community",
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.gg/hURGKHJ',
+              label: "Discord",
+              href: "https://discord.gg/hURGKHJ",
             },
             {
-              label: 'Instagram',
-              href: 'https://instagram.com/openmultiplayer/',
+              label: "Instagram",
+              href: "https://instagram.com/openmultiplayer/",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/open_mp',
+              label: "Twitter",
+              href: "https://twitter.com/open_mp",
             },
             {
-              label: 'Facebook',
-              href: 'https://facebook.com/openmultiplayer'
+              label: "Facebook",
+              href: "https://facebook.com/openmultiplayer",
             },
             {
-              label: 'VK',
-              href: 'https://vk.com/open_mp'
-            }
+              label: "VK",
+              href: "https://vk.com/open_mp",
+            },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-              href: 'https://open.mp/blog'
+              label: "SA-MP",
+              href: "https://sa-mp.com",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/openmultiplayer/',
+              label: "SA-MP Wiki",
+              href: "https://wiki.sa-mp.com",
+            },
+            {
+              label: "Blog",
+              to: "blog",
+              href: "https://open.mp/blog",
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/openmultiplayer/",
             },
           ],
         },
@@ -101,21 +109,17 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/openmultiplayer/wiki/edit/master/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/openmultiplayer/wiki/edit/master/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
-  plugins: [
-    'docusaurus-lunr-search'
-  ]
+  plugins: ["docusaurus-lunr-search"],
 };

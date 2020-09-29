@@ -5,6 +5,12 @@ description: Round a floating point number to an integer value.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Round a floating point number to an integer value.

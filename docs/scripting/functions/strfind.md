@@ -5,6 +5,12 @@ description: Search for a sub string in a string.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Search for a sub string in a string.

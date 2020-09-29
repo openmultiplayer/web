@@ -5,6 +5,12 @@ description: Multiplies two floats with each other.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Multiplies two floats with each other.

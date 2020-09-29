@@ -30,9 +30,9 @@ SetVehicleParamsForPlayer(iPlayerVehicle, iPlayerID, 1, 0);
 
 // sometime later when you want the vehicle to respawn:
 new
-	iEngine, iLights, iAlarm,
-	iDoors, iBonnet, iBoot,
-	iObjective;
+    iEngine, iLights, iAlarm,
+    iDoors, iBonnet, iBoot,
+    iObjective;
 
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
 SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, 0);
@@ -64,14 +64,14 @@ public OnGameModeInit() //Or another callback
 
 stock SetVehicleParamsForPlayerEx(vehicleid, playerid, objective, doorslocked)
 {
-	SetVehicleParamsForPlayer(vehicleid, playerid, objective, doorslocked);
-	iVehicleObjective[vehicleid][0] = objective;
-	iVehicleObjective[vehicleid][1] = doorslocked;
+    SetVehicleParamsForPlayer(vehicleid, playerid, objective, doorslocked);
+    iVehicleObjective[vehicleid][0] = objective;
+    iVehicleObjective[vehicleid][1] = doorslocked;
 }
 
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {
-	SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
+    SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
 }
 //Top
 new myMarkedCar;

@@ -5,6 +5,12 @@ description: Delete part of a string.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Delete part of a string.

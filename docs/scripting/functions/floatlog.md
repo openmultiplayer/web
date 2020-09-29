@@ -5,6 +5,12 @@ description: This function allows you to get the logarithm of a float value.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 This function allows you to get the logarithm of a float value.

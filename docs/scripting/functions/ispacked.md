@@ -5,6 +5,12 @@ description: Checks if the given string is packed.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Checks if the given string is packed.

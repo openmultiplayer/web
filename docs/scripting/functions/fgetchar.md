@@ -5,6 +5,12 @@ description: Reads a single character from a file.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Reads a single character from a file.
@@ -25,26 +31,26 @@ If succeed, it returns the extended ASCII or UTF-8 value of the character at the
 // Open "file.txt" in "read only" mode
 new File:handle = fopen("file.txt", io_read),
 
-	// Declare "g_char"
-	g_char;
+    // Declare "g_char"
+    g_char;
 
 // Check, if "file.txt" is open
 if(handle)
 {
-	// Read all characters, while ignoring UTF-8.
-	while((g_char = fgetchar(handle, 0, false)) != EOF)
-	{
-		// Print the character
-		printf("[ \"file.txt\" ] 0x%x", g_char);
-	}
+    // Read all characters, while ignoring UTF-8.
+    while((g_char = fgetchar(handle, 0, false)) != EOF)
+    {
+        // Print the character
+        printf("[ \"file.txt\" ] 0x%x", g_char);
+    }
 
-	// Close "file.txt"
-	fclose(handle);
+    // Close "file.txt"
+    fclose(handle);
 }
 else
 {
-	// Error
-	print("Failed to open \"file.txt\".");
+    // Error
+    print("Failed to open \"file.txt\".");
 }
 ```
 

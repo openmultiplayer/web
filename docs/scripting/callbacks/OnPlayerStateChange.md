@@ -15,6 +15,8 @@ This callback is called when a player changes state. For example, when a player 
 | newstate | The player's new state.                  |
 | oldstate | The player's previous state.             |
 
+Refer to [Player States](../../scripting/resources/playerstates.md) for a list of all available player states.
+
 ## Returns
 
 It is always called first in filterscripts.

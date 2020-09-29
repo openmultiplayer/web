@@ -5,6 +5,12 @@ description: Returns the name of a field at a particular index.
 tags: ["sqlite"]
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Returns the name of a field at a particular index.
@@ -27,31 +33,31 @@ available.
 // Callback
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-	// If "cmdtext" equals "/getfieldnames"
-	if(!strcmp(cmdtext, "/getfieldnames", true, 14))
-	{
-		// Declare "db_result", "i", and "columns"
-		new DBResult:db_result = db_query(db_handle, "SELECT * FROM `join_log`"), i, columns = db_num_fields(db_result), info[30];
+    // If "cmdtext" equals "/getfieldnames"
+    if(!strcmp(cmdtext, "/getfieldnames", true, 14))
+    {
+        // Declare "db_result", "i", and "columns"
+        new DBResult:db_result = db_query(db_handle, "SELECT * FROM `join_log`"), i, columns = db_num_fields(db_result), info[30];
 
-		// Iterate from 0 to "columns-1"
-		for(; i < columns; i++)
-		{
-			// Store the name of the i indexed column name into "info"
-			db_field_name(db_result, i, info, sizeof info);
+        // Iterate from 0 to "columns-1"
+        for(; i < columns; i++)
+        {
+            // Store the name of the i indexed column name into "info"
+            db_field_name(db_result, i, info, sizeof info);
 
-			// Print "info"
-			printf("Field name: %s", info);
-		}
+            // Print "info"
+            printf("Field name: %s", info);
+        }
 
-		// Frees the result
-		db_free_result(db_result);
+        // Frees the result
+        db_free_result(db_result);
 
-		// Returns 1
-		return 1;
-	}
+        // Returns 1
+        return 1;
+    }
 
-	// Returns 0
-	return 0;
+    // Returns 0
+    return 0;
 }
 ```
 

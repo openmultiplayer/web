@@ -3,9 +3,16 @@ id: pickupids
 title: "Pickup IDs"
 ---
 
-* ANY valid object model can be used for [pickups](https://wiki.open.mp/docs/scripting/functions/CreatePickup "CreatePickup"). Here are a few of the more common ones.
+:::note
 
-## `Pickup model IDs`
+ANY valid object model can be used for [pickups](../functions/CreatePickup).
+This page just lists some common object models that are around the right size to
+be used as a pickup.
+
+:::
+
+## Pickup model IDs
+
 ```c
 1210 - Briefcase
 1212 - Money
@@ -23,7 +30,7 @@ title: "Pickup IDs"
 1273 - green house
 1274 - dollar
 1275 - blue t-shirt
-1276 - tiki 
+1276 - tiki
 1277 - save disk
 1279 - drug bundle
 1313 - 2 skulls icon
@@ -36,8 +43,9 @@ title: "Pickup IDs"
 2894 - Madd Dogg's rhyme book
 ```
 
-## `Weapon pickups`
-```c
+## Weapon pickups
+
+```
 321 - Regular Dildo
 322 - White Dildo
 323 - Vibrator

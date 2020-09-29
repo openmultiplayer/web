@@ -5,6 +5,12 @@ description: Adds two floats together.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Adds two floats together. This function is redundant as the standard operator (+) does the same thing.

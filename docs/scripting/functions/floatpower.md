@@ -5,6 +5,12 @@ description: Raises the given value to the power of the exponent.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Raises the given value to the power of the exponent.

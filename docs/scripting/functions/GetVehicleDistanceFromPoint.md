@@ -36,16 +36,16 @@ A float containing the distance from the point specified in the coordinates.
 /* when the player types 'vendingmachine' in to the chat box, they'll see this.*/
 public OnPlayerText(playerid, text[])
 {
-	if(strcmp(text, "vendingmachine", true) == 0)
-	{
-		new
-		    Float: fDistance = GetVehicleDistanceFromPoint(GetPlayerVehicleID(playerid), 237.9, 115.6, 1010.2),
-		    szMessage[44];
+    if(strcmp(text, "vendingmachine", true) == 0)
+    {
+        new
+            Float: fDistance = GetVehicleDistanceFromPoint(GetPlayerVehicleID(playerid), 237.9, 115.6, 1010.2),
+            szMessage[44];
 
-		format(szMessage, sizeof(szMessage), "You're %f away from our vending machine.", fDistance);
-		SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
-	}
-	return 0;
+        format(szMessage, sizeof(szMessage), "You're %f away from our vending machine.", fDistance);
+        SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
+    }
+    return 0;
 }
 ```
 

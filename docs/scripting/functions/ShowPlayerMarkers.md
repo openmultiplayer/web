@@ -11,7 +11,7 @@ Toggles player markers (blips on the radar). Must be used when the server starts
 
 | Name | Description                                                                                                          |
 | ---- | -------------------------------------------------------------------------------------------------------------------- |
-| mode | The mode to use for markers. They can be streamed, meaning they are only visible to nearby players. See table below. |
+| mode | The [mode](#marker-modes) to use for markers. They can be streamed, meaning they are only visible to nearby players. See table below. |
 
 ## Returns
 
@@ -26,6 +26,13 @@ public OnGameModeInit()
     ShowPlayerMarkers(PLAYER_MARKERS_MODE_STREAMED);
 }
 ```
+
+## Marker Modes
+| ID    | MODE |
+| ----- | ----------------------------- |
+| 0     | PLAYER_MARKERS_MODE_OFF       |
+| 1     | PLAYER_MARKERS_MODE_GLOBAL    |
+| 2     | PLAYER_MARKERS_MODE_STREAMED  |
 
 ## Notes
 

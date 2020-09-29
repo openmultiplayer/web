@@ -9,6 +9,8 @@ tags: ['player']
 
 Plays the specified sound for a player.
 
+For a library that lists all sounds, check out [this](https://github.com/WoutProvost/samp-sound-array).
+
 
 | Name | Description |
 |------|-------------|
