@@ -21,13 +21,64 @@ Modules should avoid exposing global variables. Functions must be used instead w
 
 ### Statement
 
+A statement is a piece of code that imperatively tells the host program to do something. A statement is a valid piece of code that yields some result.
+
+```c
+a = b + c;
+```
+
+This is a statement composed of a variable being assigned the result of an [#Expression].
+
+```c
+SetPlayerColor(playerid, 0xFF4700FF);
+```
+
+This is a statement telling the program to call a function with some arguments.
+
+```c
+x + 8
+```
+
+This is _not_ a statement as the result is not used anywhere, this is just an [#Expression].
+
 ### Compound Statement
 
-(TODO)
+A compound statement is a collection of statements surrounded by braces.
+
+```c
+{
+    new message[] = "hi!";
+    print(message);
+}
+```
+
+This is a compound statement composed of two statements.
+
+```c
+if(a == b) {
+    print("hello!");
+}
+```
+
+This is a compound statement with an `if` condition, this is usually referred to as an "if statement".
+
+```c
+return Function1(), Function2(), Function3();
+```
+
+This is _not_ a compound statement, it's a chain of statements separated by commas. This form of chaining statements is considered bad practice.
 
 ### Expression
 
-(TODO)
+An expression is a piece of syntax that yields a value, it's not a valid statement unless the yielded value is used in some way.
+
+Expressions are often composed to form statements.
+
+```c
+a + b
+```
+
+This is a simple addition expression that takes two values and applies the add operator to them.
 
 ## Guidelines
 
