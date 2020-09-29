@@ -1,9 +1,9 @@
 ---
-id: words
-title: Words
-description: Words frequently used in SA:MP
+id: glossary
+title: Glossary
+description: Glossary of terms
 tags: []
-sidebar_label: Words
+sidebar_label: Glossary
 ---
 
 |Word|Meaning|
