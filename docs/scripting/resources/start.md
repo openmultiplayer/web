@@ -446,16 +446,16 @@ h0llo
 As briefly mentioned a backslash is a special character, doing:
 
 ```
-'\\'
+'\'
 ```
 
 or:
 
 ```
-"\\"
+"\"
 ```
 
-Will give a compiler error because the \\ modifies the next character so those constants will not be ended correctly, this can be used to create characters which can't normally be created, for example:
+Will give a compiler error because the \ modifies the next character so those constants will not be ended correctly, this can be used to create characters which can't normally be created, for example:
 
 ```c
 new
@@ -470,7 +470,7 @@ That code will create a string consisting of only a double quote, normally a dou
 | EOS    | NULL character  | (same as above)                                                                                         |
 | \n     | Line feed       | use \n for a new line in Linux (also works in Windows)                                                  |
 | \r     | Carriage return | Use \r\n for a new line in Windows                                                                      |
-| \\     | Backslash       | Used to put an actual backslash in a string                                                             |
+| \\\\   | Backslash       | Used to put an actual backslash in a string                                                             |
 | \'     | Single quote    | Used to use an actual single quote as a character in single quotes (use: '\'')                          |
 | \"     | Double quotes   | Used to put an actual double quote in a string                                                          |
 | \xNNN; | Hex number      | Used to set the character to the character represented by the hex number specified in place on NNN      |
