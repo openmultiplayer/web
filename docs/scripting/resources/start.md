@@ -446,16 +446,16 @@ h0llo
 As briefly mentioned a backslash is a special character, doing:
 
 ```
-'\\'
+'\'
 ```
 
 or:
 
 ```
-"\\"
+"\"
 ```
 
-Will give a compiler error because the \\ modifies the next character so those constants will not be ended correctly, this can be used to create characters which can't normally be created, for example:
+Will give a compiler error because the \ modifies the next character so those constants will not be ended correctly, this can be used to create characters which can't normally be created, for example:
 
 ```c
 new
