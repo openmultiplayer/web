@@ -26,7 +26,7 @@ Move a player's camera from one position to another, within the set time. Useful
 |Float:ToY | The Y position the camera should move to|
 |Float:ToZ | The Z position the camera should move to|
 |time | Time in milliseconds|
-|cut | The jumpcut to use. Defaults to CAMERA_CUT. Set to CAMERA_MOVE for a smooth movement|
+|cut | The [jumpcut](../resources/cameracutstyles.md) to use. Defaults to CAMERA_CUT. Set to CAMERA_MOVE for a smooth movement|
 
 
 ## Returns
