@@ -14,7 +14,7 @@ Makes a player spectate (watch) another player.
 |------|-------------|
 |playerid | The ID of the player that will spectate.|
 |targetplayerid | The ID of the player that should be spectated.|
-|mode | The mode to spectate with (optional; defaults to 'normal').|
+|mode | The [mode](../resources/spectatemodes.md) to spectate with (optional; defaults to 'normal').|
 
 
 ## Returns
