@@ -1,7 +1,6 @@
 ---
-title: Color Fix
-
-description:
+id: colorfix
+title: "Color Fix"
 ---
 
 This tutorial is to be used with [GetPlayerColor](https://wiki.open.mp/docs/scripting/functions/GetPlayerColor), if you do not use [SetPlayerColor](https://wiki.open.mp/docs/scripting/functions/SetPlayerColor) in your script when players connect.
