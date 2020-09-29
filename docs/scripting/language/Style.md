@@ -17,13 +17,9 @@ See also:
 
 A **Module** is a single Pawn source file, with an `.inc` extension.
 
-Some internal functions can not use `static` if they are used across different modules in the same package. When this occurs, functions must use a name style to indicate that they are _private_. See the [function style](#functions) section for details.
-
 Modules should avoid exposing global variables. Functions must be used instead with, where appropriate, bounds checking and validity checks.
 
 ### Statement
-
-(TODO)
 
 ### Compound Statement
 
@@ -142,12 +138,7 @@ func()
 
 #### Functions
 
-Functions must be named with either:
-
-- `PascalCase` if they are used externally
-- `camelCase` if `static` or only used internally within the same package
-
-This makes it easy to tell whether a function call is to another package or within the same package.
+Functions must be named with `PascalCase`.
 
 #### Global Variables
 
