@@ -1,9 +1,9 @@
 ---
 id: Tags
-title: "Scripting: Statements"
+title: "Scripting: Tags"
 ---
 
-## `Introduction`
+## Introduction
 A tag is a prefix to a variable which tells the compiler to treat the variable specially under certain circumstances. For example you can use tags to define where a variable can and can't be used, or a special way to add two variables together.
 
 There are two types of tag - strong tags (starting with a capital letter) and weak tags (starting with a lower case letter), for the most part they're the same however under certain circumstances weak tags can be converted to tagless silently by the compiler, i.e. you won't get a warning, most of the time with weak tags, and all the time with strong tags, implicitly changing the tag will result in a warning to tell you data is likely being used wrong.
@@ -15,7 +15,7 @@ new
 myFile += 4;
 ```
 
-The fopen function will return a value with a tag of type "File:", there is no problem on that line as the return value is being stored to a variable also with a tag of "File:" (note the cases are the same too). However on the next line the value 4 is added to the file handle. 4 has no tag (it is actually tag type "_:" but variables, values and functions with no tag are automatically set to that and you don't need to worry about it normally) and myFile has a tag of "File:", obviously nothing and something can't possibly be the same so the compiler will issue a warning, this is good as a handle to a file is meaningless in terms of it's actual value and so modifying it will merely destroy the handle and mean the file can't be closed as there is no longer a valid handle to pass and close the file with.
+The `fopen` function will return a value with a tag of type `File:`, there is no problem on that line as the return value is being stored to a variable also with a tag of `File:` (note the cases are the same too). However on the next line the value `4` is added to the file handle. `4` has no tag (it is actually tag type `_:` but variables, values and functions with no tag are automatically set to that and you don't need to worry about it normally) and myFile has a tag of `File:`, obviously nothing and something can't possibly be the same so the compiler will issue a warning, this is good as a handle to a file is meaningless in terms of it's actual value and so modifying it will merely destroy the handle and mean the file can't be closed as there is no longer a valid handle to pass and close the file with.
 
 ## `Strong tags`
 As mentioned above a strong tag is any tag starting with a capital letter. Examples of these in SA:MP include:
@@ -157,8 +157,6 @@ f1 = float(_:f2);
 ```
 
 Sense would dictate that f1 would end up as 4.0, however it won't. As mentioned f2 stores a representation of 4.0, not just 4 as an integer would, this means the actual value of the variable as an integer is a very odd number. Thus if you tell the compiler to treat the variable as an integer it will simply take the bit pattern in the variable as the value, it won't convert the float to an integer, so you will get an almost random number (it's not actually random as there's a pattern to IEEE floating points but it will be nothing like 4.0).
-
-If you know what you're doing this can be used to suppress warnings but you should investigate whether it's exactly what's wanted first and that the warning isn't actually telling you something important.
 
 ## `Enums`
 Something about using an enum to define a tag type's valid values, e.g. filemode:

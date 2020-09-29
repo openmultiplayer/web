@@ -1,18 +1,16 @@
 ---
 title: Vehicle Color IDs
-
-description:
 ---
 
 :::danger
 As of SA-MP 0.3x, the following information is outdated. Vehicle colour IDs from 128 to 255 have been intentionally replaced with new colours. Check the second picture for the up to date colours for 0.3x.
 :::
 
-![image1](https://web.archive.org/web/20190416022619im_/https://wiki.sa-mp.com/wroot/images2/7/7c/Carcolours_All.jpg)
+![image1](/images/vehicleColorIds/Carcolours_All.jpg)
 
 **Colours added as of SA-MP 0.3x**
 
-![image2](https://web.archive.org/web/20190416022619im_/https://wiki.sa-mp.com/wroot/images2/3/30/Ext_vcolours_2013.jpg)
+![image2](/images/vehicleColorIds/Ext_vcolours_2013.jpg)
 
 ```c
 new VehicleColoursTableRGBA[256] = {

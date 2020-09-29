@@ -4,7 +4,7 @@ title: GameText Styles
 description: GameText Styles to be used in textdraws and gametext
 ---
 
-To be used with [GameText](https://wiki.open.mp/docs/scripting/functions/GameTextForPlayer) and [textdraws](https://wiki.open.mp/docs/scripting/functions/TextDrawCreate).
+To be used with [GameText](../functions/GameTextForPlayer).
 
 ## `Text Colors`
 * `~n~` New line
@@ -47,36 +47,36 @@ Example: `~`~r~Hello, ~g~how are ~y~`~`you?`~`
 
 **Style 0**
 ----------
-![![](/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/0/00/Game-text-type0.jpg/120px-Game-text-type0.jpg)](https://web.archive.org/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/0/00/Game-text-type0.jpg/120px-Game-text-type0.jpg)
+![GameTextStyle0](/images/gameTextStyles/120px-Game-text-type0.png)
 
 **Appears for 9 seconds regardless of time setting. Hides textdraws and any other gametext on screen.**
 
 **Style 1** 
 -----------
-![![](/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/e/ef/Game-text-type1.jpg/120px-Game-text-type1.jpg)](https://web.archive.org/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/e/ef/Game-text-type1.jpg/120px-Game-text-type1.jpg)
+![GameTextStyle1](/images/gameTextStyles/120px-Game-text-type1.png)
 
 **Fades out after 8 seconds, regardless of time set. If you have a time setting longer than that, it will re-appear after fading out and repeat until the time ends.**
 
 **Style 2**  
 -----------
-![![](/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/4/47/Game-text-type2.jpg/120px-Game-text-type2.jpg)](https://web.archive.org/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/4/47/Game-text-type2.jpg/120px-Game-text-type2.jpg)
+![GameTextStyle2](/images/gameTextStyles/120px-Game-text-type2.png)
 
 **Does not disappear until the player respawns.**
 
 **Style 3**
 -----------
-![![](/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/1/13/Game-text-type3.jpg/120px-Game-text-type3.jpg)](https://web.archive.org/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/1/13/Game-text-type3.jpg/120px-Game-text-type3.jpg)
+![GameTextStyle3](/images/gameTextStyles/120px-Game-text-type3.png)
 
 **Style 4**
 -----------
-![![](/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/1/1b/Game-text-type4.jpg/120px-Game-text-type4.jpg)](https://web.archive.org/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/1/1b/Game-text-type4.jpg/120px-Game-text-type4.jpg)
+![GameTextStyle4](/images/gameTextStyles/120px-Game-text-type4.png)
 
 **Style 5**
 -----------
-![![](/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/1/14/Game-text-type5.jpg/120px-Game-text-type5.jpg)](https://web.archive.org/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/1/14/Game-text-type5.jpg/120px-Game-text-type5.jpg)
+![GameTextStyle5](/images/gameTextStyles/120px-Game-text-type5.png)
   
 **Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed'.**
 
 **Style 6**
 -----------
-![![](/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/4/4c/Game-text-type6.jpg/120px-Game-text-type6.jpg)](https://web.archive.org/web/20190415201801im_/https://wiki.sa-mp.com/wroot/images2/thumb/4/4c/Game-text-type6.jpg/120px-Game-text-type6.jpg)
+![GameTextStyle6](/images/gameTextStyles/120px-Game-text-type6.png)

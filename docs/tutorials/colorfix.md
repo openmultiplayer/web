@@ -27,7 +27,7 @@ Next place this under the OnPlayerConnect callback:
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);
 ```
 
-Now [GetPlayerColor](https://wiki.open.mp/docs/scripting/functions/GetPlayerColor) will work!
+Now [GetPlayerColor](..functions/GetPlayerColor) will work!
 
 For new versions of SA-MP you can add this array:
 ```c
@@ -105,4 +105,4 @@ new PlayerRainbowColors[511] = {
 0xEEEE00FF, 0xEEEE22FF, 0xEEEE44FF, 0xEEEE66FF, 0xEEEE88FF, 0xEEEEAAFF, 0xEEEECCFF, 0xEEEEEEFF
 };
 ```
-Now there is no re-colors, the colors are distributed to the maximum number of slots, the step of color - 34, and the TAB of full server looks like a rainbow!
+Now there are no duplicated colors, the colors are distributed to the maximum number of slots, the step of color - 34, and the TAB of full server looks like a rainbow!
