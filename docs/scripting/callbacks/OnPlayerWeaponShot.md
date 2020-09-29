@@ -74,4 +74,4 @@ Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user,
 
 ## Related Functions
 
-- GetPlayerLastShotVectors: Retrieves the vector of the last shot a player fired.
+- [GetPlayerLastShotVectors](../../scripting/functions/GetPlayerLastShotVectors.md): Retrieves the vector of the last shot a player fired.

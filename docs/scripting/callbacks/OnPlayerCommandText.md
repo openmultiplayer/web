@@ -47,4 +47,4 @@ This callback can also be called by NPC.
 
 ## Related Functions
 
-- SendRconCommand: Sends an RCON command via the script.
+- [SendRconCommand](../../scripting/functions/SendRconCommand.md): Sends an RCON command via the script.

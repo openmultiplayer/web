@@ -57,11 +57,11 @@ This function does not get called if the actor is set invulnerable (WHICH IS BY 
 
 ## Related Functions
 
-- CreateActor: Create an actor (static NPC).
-- SetActorInvulnerable: Set actor invulnerable.
-- SetActorHealth: Set the health of an actor.
-- GetActorHealth: Gets the health of an actor.
-- IsActorInvulnerable: Check if actor is invulnerable.
-- IsValidActor: Check if actor id is valid.
-- OnActorStreamOut: Called when an actor is streamed out by a player.
-- OnPlayerStreamIn: Called when a player streams in for another player.
+- [CreateActor](../../scripting/functions/CreateActor.md): Create an actor (static NPC).
+- [SetActorInvulnerable](../../scripting/functions/SetActorInvulnerable.md): Set actor invulnerable.
+- [SetActorHealth](../../scripting/functions/SetActorHealth.md): Set the health of an actor.
+- [GetActorHealth](../../scripting/functions/GetActorHealth.md): Gets the health of an actor.
+- [IsActorInvulnerable](../../scripting/functions/IsActorInvulnerable.md): Check if actor is invulnerable.
+- [IsValidActor](../../scripting/functions/IsValidActor.md): Check if actor id is valid.
+- [OnActorStreamOut](../../scripting/functions/OnActorStreamOut.md): Called when an actor is streamed out by a player.
+- [OnPlayerStreamIn](../../scripting/functions/OnPlayerStreamIn.md): Called when a player streams in for another player.
