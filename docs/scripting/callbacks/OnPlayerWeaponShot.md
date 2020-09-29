@@ -15,15 +15,15 @@ This callback was added in SA-MP 0.3z and will not work in earlier versions!
 
 This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).
 
-| Name     | Description                                                                |
-| -------- | -------------------------------------------------------------------------- |
-| playerid | The ID of the player that shot a weapon.                                   |
-| weaponid | The ID of the weapon shot by the player.                                   |
-| hittype  | The type of thing the shot hit (none, player, vehicle, or (player)object). |
-| hitid    | The ID of the player, vehicle or object that was hit.                      |
-| fX       | The X coordinate that the shot hit.                                        |
-| fY       | The Y coordinate that the shot hit.                                        |
-| fZ       | The Z coordinate that the shot hit.                                        |
+| Name     | Description                                                                                                |
+| -------- | ---------------------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player that shot a weapon.                                                                   |
+| weaponid | The ID of the [weapon](../resources/weaponids) shot by the player.                                         |
+| hittype  | The [type](../resources/bullethittypes) of thing the shot hit (none, player, vehicle, or (player)object).  |
+| hitid    | The ID of the player, vehicle or object that was hit.                                                      |
+| fX       | The X coordinate that the shot hit.                                                                        |
+| fY       | The Y coordinate that the shot hit.                                                                        |
+| fZ       | The Z coordinate that the shot hit.                                                                        |
 
 ## Returns
 
@@ -74,4 +74,4 @@ Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user,
 
 ## Related Functions
 
-- [GetPlayerLastShotVectors](../../scripting/functions/GetPlayerLastShotVectors.md): Retrieves the vector of the last shot a player fired.
+- [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): Retrieves the vector of the last shot a player fired.
