@@ -25,7 +25,7 @@ Here's an article on bitmasking:
 | KEY_LOOK_RIGHT           | 64        | -                            | ~k~~VEHICLE_LOOKRIGHT~          | -                                                        | E                        |
 | KEY_HANDBRAKE/KEY_AIM(1) | 128       | ~k~~PED_LOCK_TARGET~         | ~k~~VEHICLE_HANDBRAKE~          | RMB (Right Mouse Button)                                 | SPACE                    |
 | KEY_LOOK_LEFT            | 256       | -                            | ~k~~VEHICLE_LOOKLEFT~           | -                                                        | Q                        |
-| KEY_LOOK_BEHIND          | 320(5)    | ~k~~PED_LOOKBEHIND~          | ~k~~VEHICLE_LOOKBEHIND~         | NUM1 / MMB (Middle Mouse Button - Click the mouse wheel) | 2                        |
+| KEY_LOOK_BEHIND          | 512       | ~k~~PED_LOOKBEHIND~          | ~k~~VEHICLE_LOOKBEHIND~         | NUM1 / MMB (Middle Mouse Button - Click the mouse wheel) | 2                        |
 | KEY_SUBMISSION           | 512       | -                            | ~k~~TOGGLE_SUBMISSIONS~         | NUM1 / MMB (Middle Mouse Button - Click the mouse wheel) | 2 / NUMPAD +             |
 | KEY_WALK                 | 1024      | ~k~~SNEAK_ABOUT~             | -                               | LALT                                                     | -                        |
 | KEY_ANALOG_UP            | 2048      | -                            | ~k~~VEHICLE_TURRETUP~           | NUM8(6)                                                  | NUM8                     |
@@ -58,7 +58,6 @@ enter vehicles as passenger. However, the gametext definition still exists.
 
 **(4)** If the key number "262144" does not work, just use key number "2".
 
-**(5)** This value is the sum of KEY_LOOK_LEFT and KEY_LOOK_RIGHT.
 
 **(6)** Only detected when "JOYPAD" configuration is selected for controller.
 
