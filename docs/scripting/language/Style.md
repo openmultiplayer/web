@@ -13,12 +13,6 @@ See also:
 
 ## Terminology
 
-### Modules
-
-A **Module** is a single Pawn source file, with an `.inc` extension.
-
-Modules should avoid exposing global variables. Functions must be used instead with, where appropriate, bounds checking and validity checks.
-
 ### Statement
 
 A statement is a piece of code that imperatively tells the host program to do something. A statement is a valid piece of code that yields some result.
