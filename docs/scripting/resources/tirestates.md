@@ -1,8 +1,7 @@
 ---
 title: Tire States
-description: Information about byte size and its correspond tire state bits.
+description: Information about byte size and its corresponding tire state bits.
 ---
-
 
 :::note
 
