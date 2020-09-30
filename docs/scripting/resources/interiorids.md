@@ -10,7 +10,7 @@ If you are inside an interior type
 /interior
 ```
 and you'll see the ID of the interior universe.
-Now you can safely use [SetPlayerInterior](../functions/SetPlayerInterior) and [LinkVehicleToInterior](../functions/LinkVehicleToInterior) before using [SetPlayerPos](../functions/SetPlayerPos).
+Now you can safely use [SetPlayerInterior](../functions/SetPlayerInterior.md) and [LinkVehicleToInterior](../functions/LinkVehicleToInterior.md) before using [SetPlayerPos](../functions/SetPlayerPos.md).
 
 ## 24/7's
 ---
