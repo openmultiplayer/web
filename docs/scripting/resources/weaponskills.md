@@ -1,5 +1,5 @@
 ---
-title: Weapon States
+title: Weapon Skills
 ---
 
 To be used with [SetPlayerSkillLevel](../functions/SetPlayerSkillLevel).
