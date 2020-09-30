@@ -9,3 +9,4 @@ Used in [OnPlayerEditObject](../callbacks/OnPlayerEditObject.md) and [OnPlayerEd
 0 - EDIT_RESPONSE_CANCEL  // player cancelled (ESC)
 1 - EDIT_RESPONSE_FINAL    // player clicked on save
 2 - EDIT_RESPONSE_UPDATE   // player moved the object (edition did not stop at all)
+```
