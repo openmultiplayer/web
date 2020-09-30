@@ -3,9 +3,8 @@ id: vehiclehealth
 title: Vehicle Health
 description: Vehicle Health Values
 ---
-|||
-|--- |--- |
 |Health|Engine Status|
+|--- |--- |
 |> 650|Undamaged|
 |650-550|White Smoke|
 |550-390|Grey Smoke|
