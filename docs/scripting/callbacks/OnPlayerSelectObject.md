@@ -18,7 +18,7 @@ This callback is called when a player selects an object after SelectObject has b
 | Name     | Description                                  |
 | -------- | -------------------------------------------- |
 | playerid | The ID of the player that selected an object |
-| type     | The type of selection                        |
+| type     | The [type](../resources/selectobjecttypes.md) of selection                        |
 | objectid | The ID of the selected object                |
 | modelid  | The model of the selected object             |
 | Float:fX | The X position of the selected object        |
@@ -54,4 +54,4 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 
 ## Related Functions
 
-- SelectObject: Select an object.
+- [SelectObject](../../scripting/functions/SelectObject.md): Select an object.

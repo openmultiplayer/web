@@ -55,8 +55,8 @@ The menu ID is not passed to this callback. GetPlayerMenu must be used to determ
 
 ## Related Functions
 
-- CreateMenu: Create a menu.
-- DestroyMenu: Destroy a menu.
-- AddMenuItem: Add an item to a menu.
-- ShowMenuForPlayer: Show a menu for a player.
-- HideMenuForPlayer: Hide a menu for a player.
+- [CreateMenu](../../scripting/functions/CreateMenu.md): Create a menu.
+- [DestroyMenu](../../scripting/functions/DestroyMenu.md): Destroy a menu.
+- [AddMenuItem](../../scripting/functions/AddMenuItem.md): Adds an item to a specified menu.
+- [ShowMenuForPlayer](../../scripting/functions/ShowMenuForPlayer.md): Show a menu for a player.
+- [HideMenuForPlayer](../../scripting/functions/HideMenuForPlayer.md): Hide a menu for a player.

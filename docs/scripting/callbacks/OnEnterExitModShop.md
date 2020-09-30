@@ -49,4 +49,4 @@ Known Bug(s): Players collide when they get into the same mod shop.
 
 ## Related Functions
 
-- AddVehicleComponent: Add a component to a vehicle.
+- [AddVehicleComponent](../../scripting/functions/AddVehicleComponent.md): Add a component to a vehicle.

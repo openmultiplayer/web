@@ -45,6 +45,6 @@ This callback can also be called by NPC.
 
 ## Related Functions
 
-- GetPlayerState: Get a player's current state.
-- GetPlayerSpecialAction: Get a player's current special action.
-- SetPlayerSpecialAction: Set a player's special action.
+- [GetPlayerState](../../scripting/functions/GetPlayerState.md): Get a player's current state.
+- [GetPlayerSpecialAction](../../scripting/functions/GetPlayerSpecialAction.md): Get a player's current special action.
+- [SetPlayerSpecialAction](../../scripting/functions/SetPlayerSpecialAction.md): Set a player's special action.

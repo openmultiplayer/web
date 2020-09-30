@@ -41,5 +41,5 @@ You must use OnPlayerStateChange and check if their old state is PLAYER_STATE_DR
 
 ## Related Functions
 
-- RemovePlayerFromVehicle: Throw a player out of their vehicle.
-- GetPlayerVehicleSeat: Check what seat a player is in.
+- [RemovePlayerFromVehicle](../../scripting/functions/RemovePlayerFromVehicle.md): Throw a player out of their vehicle.
+- [GetPlayerVehicleSeat](../../scripting/functions/GetPlayerVehicleSeat.md): Check what seat a player is in.

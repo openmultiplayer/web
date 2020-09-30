@@ -1,10 +1,14 @@
 ---
 title: Weapon Skills
+description: Weapon skill values to be used with SetPlayerSkillLevel.
 ---
 
-To be used with [SetPlayerSkillLevel](../functions/SetPlayerSkillLevel).
+## Description
 
-## Skill levels
+List of weapon skills that are used to set player's skill level using [SetPlayerSkillLevel](../functions/SetPlayerSkillLevel.md) function.
+
+## Skill Levels
+
 ```c
 0 - WEAPONSKILL_PISTOL
 1 - WEAPONSKILL_PISTOL_SILENCED
