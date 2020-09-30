@@ -1,3 +1,8 @@
+---
+title: Sound IDs
+description: A list of sound IDs to be used with PlayerPlaySound.
+---
+
 To be used with
 [PlayerPlaySound](/web/20190415120046/https://wiki.sa-mp.com/wiki/PlayerPlaySound "PlayerPlaySound").
 
