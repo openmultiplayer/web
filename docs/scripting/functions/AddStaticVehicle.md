@@ -16,8 +16,8 @@ Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 | Float:spawn_Y | The Y-coordinate for the vehicle.      |
 | Float:spawn_Z | The Z-coordinate for the vehicle.      |
 | Float:z_angle | Direction of vehicle - angle.          |
-| color1        | The primary color ID. -1 for random.   |
-| color2        | The secondary color ID. -1 for random. |
+| [color1](../../scripting/resources/vehiclecolorid.md)       | The primary color ID. -1 for random.   |
+| [color2](../../scripting/resources/vehiclecolorid.md)        | The secondary color ID. -1 for random. |
 
 ## Returns
 
@@ -39,6 +39,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- AddStaticVehicleEx: Add a static vehicle with custom respawn time.
-- CreateVehicle: Create a vehicle.
-- DestroyVehicle: Destroy a vehicle.
+- [AddStaticVehicleEx](../../scripting/functions/AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
+- [CreateVehicle](../../scripting/functions/CreateVehicle.md): Create a vehicle.
+- [DestroyVehicle](../../scripting/functions/DestroyVehicle.md): Destroy a vehicle.
