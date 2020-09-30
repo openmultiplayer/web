@@ -1,26 +1,26 @@
 ---
-
 title: Color List
 description: Colors are everywhere in SA-MP - vehicles, player names and blips, textdraws, gametext and since 0.3c in chat, 3D texts and dialogs (as color embedding)! Below you can find information about these different things.
 sidebar_label: Color List
 ---
-# Chat text and player color 
+
+# Chat text and player color
 
 Colors in SA-MP are generally represented in hexadecimal notation (though integers can be used also).
-A chattext or player color looks like this: 
+A chattext or player color looks like this:
 0xRRGGBBAA.
 
 _RR_ is the red part of the color, _GG_ the green and _BB_ the blue. _AA_ is the alpha value. If FF is used there, the color will display without transparency and if 00 is used, it will be invisible.
 
 For the Hex code for these colors, go to the [Hex colors](../../scripting/resources/hex-colors.md) page.
 
-## Alpha values (transparency) 
+## Alpha values (transparency)
 
 The following images display the effect of transparency values used with a white quare under the player marker and left to the saving floppy icon. Increments of 0x11 (decimal 17) are used for demonstration, but of course you can use any value.
 
 ![Image:trans_matrix.png](/images/colorList/transparency/trans_matrix.png)
 
-## Doing math 
+## Doing math
 
 Since colors are just numbers it is possible to calculate with them, although it may not always make sense. For example, it is possible to adjust the player's radar marker visibility (see above) while keeping their current color the same, regardless of what is is.
 
@@ -37,7 +37,7 @@ SetPlayerMarkerVisibility(playerid, alpha = 0xFF)
 }
 ```
 
-## Convert string to value with pawn 
+## Convert string to value with pawn
 
 Since the colors are just numbers you have to convert them sometimes from an input string "RRGGBBAA" to its number. This can be done using sscanf or the following function:
 
@@ -57,13 +57,13 @@ stock HexToInt(string[])
 
 Use HexToInt("RRGGBBAA") and you'll get a usable number as result for [SetPlayerColor](../../scripting/functions/SetPlayerColor.md).
 
-## Color embedding 
+## Color embedding
+
 :::tip
 
-Colors List was added in **SA-MP 0.3c**  and will not work in earlier versions!
+Colors List was added in **SA-MP 0.3c** and will not work in earlier versions!
 
 :::
-
 
 It is possible to use colors within text in [client messages](../../scripting/functions/SendClientMessage.md"), [dialogs](../../scripting/functions/ShowPlayerDialog.md), [3D text labels](../../scripting/functions/Create3DTextLabel.md), [object material texts](../../scripting/functions/SetObjectMaterialText.md) and [vehicle numberplates](../../scripting/functions/SetVehicleNumberPlate.md").
 
@@ -75,19 +75,17 @@ This type of color embedding does not work in textdraws. See [GameTextStyle](../
 
 :::
 
-
-
-
-###  Example 
+### Example
 
 ```c
 {FFFFFF}Hello this is {00FF00}green {FFFFFF}and this is {FF0000}red
 ```
+
 Hello this is green and this is red
 
 ![Image:Example1.png](/images/colorList/Example1.png)
 
-###  Another example 
+### Another example
 
 ![Image:Cembed.png](/images/colorList/Cembed.png")  
 The code for the above chat line looks like this:
@@ -100,7 +98,7 @@ You can define colors to use like so:
 
 ```c
 #define COLOR_RED_EMBED "{FF0000}"
- 
+
 SendClientMessage(playerid, -1, "This is white and "COLOR_RED_EMBED"this is red.");
 ```
 
@@ -108,14 +106,13 @@ Or
 
 ```c
 #define COLOR_RED_EMBED "FF0000"
- 
+
 SendClientMessage(playerid, -1, "This is white and {"COLOR_RED_EMBED"}this is red.");
 ```
 
 The second example would be better as is it clearer that embedding is used.
 
-
-###  Using GetPlayerColor 
+### Using GetPlayerColor
 
 To use a player's color as an embedded color, you must first remove the alpha value. To do this, perform a logical right shift.
 
@@ -129,17 +126,15 @@ The %x is the placeholder for hexadecimal values, the 6 ensures that the output 
 
 The colors used in color embedding are not like normal hex colors in Pawn. There is no '0x' prefix and no alpha value (last 2 digits).
 
+## Color Pickers
 
-##  Color Pickers 
+- [SA-MP Colorpicker v1.1.0](http://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
+- [December.com](http://www.december.com/html/spec/color.html)
+- [RGB Picker](http://psyclops.com/tools/rgb)
+- [Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
+- [Color Scheme Designer](http://colorschemedesigner.com/)
 
-* [SA-MP Colorpicker v1.1.0](http://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
-* [December.com](http://www.december.com/html/spec/color.html)
-* [RGB Picker](http://psyclops.com/tools/rgb)
-* [Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
-* [Color Scheme Designer](http://colorschemedesigner.com/)
-
-
-#  GameText 
+# GameText
 
 For GameText colors you can use special tags to set the following text to a specific color.
 
@@ -174,9 +169,7 @@ Game text colour tags can be used to form different colours easily. The below co
 ~p~~h~             medium pink
 ```
 
-
-
-##  Example 
+## Example
 
 ```c
 ~w~Hello this is ~b~blue ~w~and this is ~r~red
@@ -191,5 +184,3 @@ Now these colors are pretty dark. You can make them brighter by using **~h~** af
 ```
 
 [![Image:Blueandred2.png](/images/colorList/Blueandred2.png)
-
-
