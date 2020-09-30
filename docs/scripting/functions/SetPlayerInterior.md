@@ -12,7 +12,7 @@ Set a player's interior. A list of currently known interiors and their positions
 | Name       | Description                                  |
 | ---------- | -------------------------------------------- |
 | playerid   | The ID of the player to set the interior of. |
-| interiorid | The interior ID to set the player in.        |
+| interiorid | The [interior ID](../resources/interiorids.md) to set the player in.        |
 
 ## Returns
 

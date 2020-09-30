@@ -13,7 +13,7 @@ Links a vehicle to an interior. Vehicles can only be seen by players in the same
 | Name | Description |
 |------|-------------|
 |vehicleid | The ID of the vehicle to link to an interior.|
-|interiorid | The Interior ID to link it to.|
+|interiorid | The [Interior ID](../resources/interiorids.md) to link it to.|
 
 
 ## Returns
