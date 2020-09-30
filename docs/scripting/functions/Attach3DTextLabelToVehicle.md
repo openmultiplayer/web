@@ -30,7 +30,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new 
+new
     Text3D:vehicle3Dtext[MAX_VEHICLES], // Creating the TextLabel for later use
     vehicle_id;
 

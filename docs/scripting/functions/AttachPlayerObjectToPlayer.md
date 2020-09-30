@@ -63,4 +63,3 @@ This function was removed in SA-MP 0.3.
 - [GetObjectPos](../../scripting/functions/GetObjectPos.md): Locate an object.
 - [GetObjectRot](../../scripting/functions/GetObjectRot.md): Check the rotation of an object.
 - [AttachObjectToPlayer](../../scripting/functions/AttachObjectToPlayer.md): Attach an object to a player.
-
