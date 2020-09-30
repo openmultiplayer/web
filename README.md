@@ -14,7 +14,7 @@
   >Wiki</a>
   |
   <a
-    href="https://discord.me/samp"
+    href="https://discord.gg/samp"
   >Discord</a>
 </p>
 

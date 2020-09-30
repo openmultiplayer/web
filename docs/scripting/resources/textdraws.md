@@ -1,6 +1,6 @@
 ---
 title: Textdraws
-description:  As the name implies, a textdraw is text that is drawn on a player's screen.
+description: As the name implies, a textdraw is text that is drawn on a player's screen.
 sidebar_label: Textdraws
 ---
 
@@ -169,7 +169,7 @@ new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 
 :::info IMPORTANT NOTE: An array is still needed for the variable, as the ID of
 the textdraws may differ from player to player, as other players may have more
-or less textdraws created than the other. 
+or less textdraws created than the other.
 :::
 
 The function names only differ slightly, with 'TextDraw' becoming

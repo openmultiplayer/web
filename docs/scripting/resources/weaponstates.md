@@ -1,5 +1,4 @@
 ---
-id: weaponstates
 title: Weapon States
 description: Weapon State Constants
 ---
