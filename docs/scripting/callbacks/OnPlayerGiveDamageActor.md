@@ -63,5 +63,5 @@ This function does not get called if the actor is set invulnerable (WHICH IS BY 
 - [GetActorHealth](../../scripting/functions/GetActorHealth.md): Gets the health of an actor.
 - [IsActorInvulnerable](../../scripting/functions/IsActorInvulnerable.md): Check if actor is invulnerable.
 - [IsValidActor](../../scripting/functions/IsValidActor.md): Check if actor id is valid.
-- [OnActorStreamOut](../../scripting/functions/OnActorStreamOut.md): Called when an actor is streamed out by a player.
-- [OnPlayerStreamIn](../../scripting/functions/OnPlayerStreamIn.md): Called when a player streams in for another player.
+- [OnActorStreamOut](../../scripting/callbacks/OnActorStreamOut.md): Called when an actor is streamed out by a player.
+- [OnPlayerStreamIn](../../scripting/callbacks/OnPlayerStreamIn.md): Called when a player streams in for another player.
