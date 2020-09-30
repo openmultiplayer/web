@@ -54,10 +54,6 @@ module.exports = {
               label: "Callbacks",
               to: "docs/scripting/callbacks",
             },
-            {
-              label: "Removed Callbacks",
-              to: "docs/scripting/removed Callbacks/index",
-            },
           ],
         },
         {
