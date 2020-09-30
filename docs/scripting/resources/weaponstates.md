@@ -3,9 +3,8 @@ id: weaponstates
 title: Weapon States
 description: Weapon State Constants
 ---
-||||
-|--- |--- |--- |
 |ID|Definition|Description|
+|--- |--- |--- |
 |-1|WEAPONSTATE_UNKNOWN|Unknown (Set when in a vehicle)|
 |0|WEAPONSTATE_NO_BULLETS|The weapon has no remaining ammo|
 |1|WEAPONSTATE_LAST_BULLET|The weapon has one remaining bullet|
