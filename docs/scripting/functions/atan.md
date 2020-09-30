@@ -40,6 +40,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- floatsin: Get the sine from a specific angle.
-- floatcos: Get the cosine from a specific angle.
-- floattan: Get the tangent from a specific angle.
+- [floatsin](../../scripting/functions/floatsin.md): Get the sine from a specific angle.
+- [floatcos](../../scripting/functions/floatcos.md): Get the cosine from a specific angle.
+- [floattan](../../scripting/functions/floattan.md): Get the tangent from a specific angle.
