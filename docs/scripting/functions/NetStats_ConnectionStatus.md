@@ -23,7 +23,7 @@ Gets the player's current connection status.
 
 ## Returns
 
-The player's connection status, as an integer value.
+The player's [connection status](../resources/connectionstatus.md), as an integer value.
 
 
 ## Examples
