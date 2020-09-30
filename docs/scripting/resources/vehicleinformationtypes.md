@@ -3,9 +3,8 @@ id: vehicleinformationtypes
 title: Vehicle Information Types
 description: Vehicle Information Type Constants
 ---
-|||
-|--- |--- |
 |Vehicle Information Type|Description|
+|--- |--- |
 |VEHICLE_MODEL_INFO_SIZE|Vehicle size|
 |VEHICLE_MODEL_INFO_FRONTSEAT|Position of the front seat*|
 |VEHICLE_MODEL_INFO_REARSEAT|Position of the rear seat*|
