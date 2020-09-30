@@ -10,8 +10,8 @@ To be used with [floatsin](../functions/Floatsin), [floatcos](../functions/Float
 
 :::
 
-| Modes |
-|---|
-| radian |
+| Modes   |
+| ------- |
+| radian  |
 | degrees |
-| grades |
+| grades  |

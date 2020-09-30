@@ -12,7 +12,7 @@ For example, the 'tires' status stores 4 bits for the 4 tires. The value is 1 if
 For more info on panel states, see [Panel States](../resources/panelstates).  
 For more info on door states, see [Door States](../resources/doorstates).  
 For more info on light states, see [Light States](../resources/lightstates).  
-For more info on tire states, see [Tire States](../resources/tirestates).  
+For more info on tire states, see [Tire States](../resources/tirestates).
 
 :::
 
@@ -35,7 +35,7 @@ encode_panels(front_left_panel, front_right_panel, rear_left_panel, rear_right_p
 {
     return front_left_panel | (front_right_panel << 4) | (rear_left_panel << 8) | (rear_right_panel << 12) | (windshield << 16) | (front_bumper << 20) | (rear_bumper << 24);
 }
- 
+
 //Doors
 decode_doors(doors, &bonnet, &boot, &driver_door, &passenger_door)
 {
@@ -49,7 +49,7 @@ encode_doors(bonnet, boot, driver_door, passenger_door)
 {
     return bonnet | (boot << 8) | (driver_door << 16) | (passenger_door << 24);
 }
- 
+
 //Lights
 decode_lights(lights, &front_left_light, &front_right_light, &back_lights)
 {
@@ -62,7 +62,7 @@ encode_lights(front_left_light, front_right_light, back_lights)
 {
     return front_left_light | (front_right_light << 2) | (back_lights << 6);
 }
- 
+
 //Tires
 decode_tires(tires, &rear_right_tire, &front_right_tire, &rear_left_tire, &front_left_tire)
 {

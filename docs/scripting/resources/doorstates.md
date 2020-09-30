@@ -13,10 +13,10 @@ To be used with [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) an
 
 The damage of each door (note that the hood and the trunk are also doors) will be saved in 1 byte (which is 8 bits). You can only change the state of one bit for every door at each time - so you have to call the function twice if you want to damage and open the door.
 
-*   The **first bit** stores whether the door is **opened (bit 1)** or **not (bit 0)** (the door will still lock (and change the first bit to 0) if closed - its just open).
-*   The **second bit** stores whether the door is **damaged (bit 1)** or **not (bit 0)** (If you want a damaged door to turn normal you have to remove and re-attach it undamaged).
-*   The **third bit** stores whether the door is **removed (bit 1)** or **attached (bit 0)**.
-*   The rest of the bits are empty.
+- The **first bit** stores whether the door is **opened (bit 1)** or **not (bit 0)** (the door will still lock (and change the first bit to 0) if closed - its just open).
+- The **second bit** stores whether the door is **damaged (bit 1)** or **not (bit 0)** (If you want a damaged door to turn normal you have to remove and re-attach it undamaged).
+- The **third bit** stores whether the door is **removed (bit 1)** or **attached (bit 0)**.
+- The rest of the bits are empty.
 
 It seems like there is no bit which stores if the door will lock or not.
 
@@ -24,10 +24,10 @@ Notice that you count the bits from behind - so the first is the rightmost bit
 
 ## Which byte stores what?
 
-*   The **first byte** stores the state of the **hood**.
-*   The **second byte** stores the state of the **trunk**.
-*   The **third byte** stores the state of the **drivers door**.
-*   The **fourth byte** stores the state of the **co-drivers door**.
+- The **first byte** stores the state of the **hood**.
+- The **second byte** stores the state of the **trunk**.
+- The **third byte** stores the state of the **drivers door**.
+- The **fourth byte** stores the state of the **co-drivers door**.
 
 The states of the 2 rear doors cannot be handled by [GetVehicleDamageStatus](/web/20180729002305/http://wiki.sa-mp.com/wiki/GetVehicleDamageStatus "GetVehicleDamageStatus") and [UpdateVehicleDamageStatus](/web/20180729002305/http://wiki.sa-mp.com/wiki/UpdateVehicleDamageStatus "UpdateVehicleDamageStatus").
 
@@ -46,6 +46,7 @@ However SA-MP returns a decimal number so you have to convert it to a binary num
 ## Info table
 
 **First byte (hood):**
+
 ```
 0 (000)   1 (001)   2 (010)   3 (011)   4 (100)   5 (101)   6 (110)   7 (111)
   °--°      °\[\]°      °~~°      °{}°      °  °      °  °      °  °      °  °
@@ -54,6 +55,7 @@ However SA-MP returns a decimal number so you have to convert it to a binary num
 ```
 
 **Second byte (trunk):**
+
 ```
 0 (000)   1 (001)   2 (010)   3 (011)   4 (100)   5 (101)   6 (110)   7 (111)
   °--°      °--°      °--°      °--°      °--°      °--°      °--°      °--°
@@ -62,6 +64,7 @@ However SA-MP returns a decimal number so you have to convert it to a binary num
 ```
 
 **Third byte (drivers door):**
+
 ```
 0 (000)   1 (001)   2 (010)   3 (011)   4 (100)   5 (101)   6 (110)   7 (111)
   °--°      °--°      °--°      °--°      °--°      °--°      °--°      °--°
@@ -70,14 +73,16 @@ However SA-MP returns a decimal number so you have to convert it to a binary num
 ```
 
 **Fourth byte (co-drivers door):**
+
 ```
 0 (000)   1 (001)   2 (010)   3 (011)   4 (100)   5 (101)   6 (110)   7 (111)
   °--°      °--°      °--°      °--°      °--°      °--°      °--°      °--°
-  |  |      |  --     |  §      |  ww     |         |         |         |   
+  |  |      |  --     |  §      |  ww     |         |         |         |
   °--°      °--°      °--°      °--°      °--°      °--°      °--°      °--°
 ```
-  
+
 _Legend:_
+
 ```
 Static        Doors                    Hood / Trunk
 
@@ -88,8 +93,7 @@ Static        Doors                    Hood / Trunk
                  - missing                - missing
 ```
 
-Wrapper
--------
+## Wrapper
 
 Usefull little snippet to avoid working with the bits and bytes too much;
 
