@@ -82,7 +82,7 @@ description: Information about car component IDs, model names, parts, types, sup
 | 1074 | wheel_sr3      | Wheels         | Mega                            | Most cars                                   | \$1030  |
 | 1075 | wheel_sr2      | Wheels         | Rimshine                        | Most cars                                   | \$980   |
 | 1076 | wheel_lr4      | Wheels         | Wires                           | Most cars                                   | \$1560  |
-| 1077 | wheel_lr1      | Wheels         | Classic                         | Most car                                    | s\$1620 |
+| 1077 | wheel_lr1      | Wheels         | Classic                         | Most cars                                   | \$1620 |
 | 1078 | wheel_lr3      | Wheels         | Twist                           | Most cars                                   | \$1200  |
 | 1079 | wheel_sr1      | Wheels         | Cutter                          | Most cars                                   | \$1030  |
 | 1080 | wheel_sr5      | Wheels         | Switch                          | Most cars                                   | \$900   |
