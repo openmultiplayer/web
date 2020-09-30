@@ -12,6 +12,7 @@ module.exports = {
       logo: {
         alt: "Open Multiplayer Logo",
         src: "public/logo-light-trans.svg",
+        href: "/docs/",
       },
       links: [
         {
