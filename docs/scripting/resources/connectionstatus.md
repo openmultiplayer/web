@@ -1,6 +1,6 @@
 ---
-id: connectionstatus
 title: Connection status
+description: Connection status to be used with NetStats_ConnectionStatus.
 ---
 
 ## Description
