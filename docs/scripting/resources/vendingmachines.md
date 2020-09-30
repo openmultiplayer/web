@@ -1,10 +1,13 @@
 ---
 id: vendingmachines
 title: Vending Machines
-description: List of all vending machine locations, player using them should be within 2 units distance. Very useful for anti-cheats.
+description:
+  List of all vending machine locations, player using them should be within 2
+  units distance. Very useful for anti-cheats.
 ---
 
 Exterior:
+
 ```
   -14.70,  1175.36,   18.95
   201.02,  -107.62,    0.90
@@ -54,6 +57,7 @@ Exterior:
 ```
 
 Interior:
+
 ```
  2155.84,  1607.88, 1000.06
  2155.91,  1606.77, 1000.05
