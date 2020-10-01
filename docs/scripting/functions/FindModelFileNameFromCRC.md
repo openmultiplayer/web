@@ -29,4 +29,4 @@ Find an existing custom skin or simple object model file. The model files are lo
 
 ## Related Functions
 
-- OnPlayerFinishedDownloading: Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.
