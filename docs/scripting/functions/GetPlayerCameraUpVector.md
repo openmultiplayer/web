@@ -36,5 +36,5 @@ This function was removed in SA-MP version 0.3b
 
 ## Related Functions
 
-- GetPlayerCameraPos: Find out where the player's camera is.
-- GetPlayerCameraFrontVector: Get the player's camera front vector
+- [GetPlayerCameraPos](../functions/GetPlayerCameraPos): Find out where the player's camera is.
+- [GetPlayerCameraFrontVector](../functions/GetPlayerCameraFrontVector): Get the player's camera front vector

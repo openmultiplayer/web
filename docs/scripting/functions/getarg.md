@@ -15,20 +15,16 @@ This function starts with lowercase letter.
 
 Get an argument that was passed to a function.
 
-
-| Name | Description |
-|------|-------------|
-|arg | The argument sequence number. Use 0 for first argument.|
-|index | The index (in case the argument is an array).|
-
+| Name  | Description                                             |
+| ----- | ------------------------------------------------------- |
+| arg   | The argument sequence number. Use 0 for first argument. |
+| index | The index (in case the argument is an array).           |
 
 ## Returns
 
 The value of the argument.
 
-
 ## Examples
-
 
 ```c
 SomeFunc(...)
@@ -44,9 +40,7 @@ public OnFilterScriptInit()
 // Output: 7. The fourth argument (index 3) is 7.
 ```
 
-
 ## Related Functions
 
-
--  numargs: Return the number of arguments.
--  setarg: Set an argument.
+- [numargs](../functions/numargs): Return the number of arguments.
+- [setarg](../functions/setarg): Set an argument.
