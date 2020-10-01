@@ -53,4 +53,4 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 ## Related Functions
 
 
--  PutPlayerInVehicle: Put a player in a vehicle.
+-  [PutPlayerInVehicle](../functions/PutPlayerInVehicle.md): Put a player in a vehicle.

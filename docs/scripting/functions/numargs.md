@@ -42,5 +42,5 @@ public OnFilterScriptInit()
 ## Related Functions
 
 
--  getarg: Retrieve an argument from a variable argument list.
--  setarg: Set an argument.
+-  [getarg](../functions/getarg.md): Retrieve an argument from a variable argument list.
+-  [setarg](../functions/setarg.md): Set an argument.
