@@ -36,5 +36,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- floatsqroot: Calculate the square root of a floating point value.
-- floatpower: Raises given value to a power of exponent.
+- [floatsqroot](../functions/floatsqroot): Calculate the square root of a floating point value.
+- [floatpower](../functions/floatpower): Raises given value to a power of exponent.

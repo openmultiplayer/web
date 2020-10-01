@@ -32,5 +32,5 @@ SetPlayerPos(playerid, 0, 0, floatstr(before));
 
 ## Related Functions
 
-- floatround: Convert a float to an integer (rounding).
-- float: Convert an integer to a float.
+- [floatround](../functions/floatround): Convert a float to an integer (rounding).
+- [float](../functions/float): Convert an integer to a float.

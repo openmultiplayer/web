@@ -31,4 +31,4 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- SetPlayerTeam: Set a player's team.
+- [SetPlayerTeam](../functions/SetPlayerTeam): Set a player's team.
