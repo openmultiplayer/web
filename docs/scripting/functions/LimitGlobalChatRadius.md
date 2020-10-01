@@ -35,7 +35,7 @@ public OnGameModeInit()
 ## Related Functions
 
 
--  SetNameTagDrawDistance: Set the distance from where people can see other player's nametags.
--  SendPlayerMessageToPlayer: Force a player to send text for one player.
--  SendPlayerMessageToAll: Force a player to send text for all players.
--  OnPlayerText: Called when a player sends a message via the chat.
+-  [SetNameTagDrawDistance](../functions/SetNameTagDrawDistance.md): Set the distance from where people can see other player's nametags.
+-  [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer.md): Force a player to send text for one player.
+-  [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll.md): Force a player to send text for all players.
+-  [OnPlayerText](../callbacks/OnPlayerText.md): Called when a player sends a message via the chat.
