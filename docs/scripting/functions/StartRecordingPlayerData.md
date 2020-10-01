@@ -18,7 +18,7 @@ Starts recording a player's movements to a file, which can then be reproduced by
 | Name         | Description                                                                                                                                                                                                                   |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid     | The ID of the player to record.                                                                                                                                                                                               |
-| recordtype   | The [type](../resources/recordtypes.md) of recording.                                                                                                                                                                                                        |
+| recordtype   | The [type](../resources/recordtypes.md) of recording.                                                                                                                                                                         |
 | recordname[] | The name of the file which will hold the recorded data. It will be saved in the scriptfiles directory, with an automatically added .rec extension, you will need to move the file to npcmodes/recordings to use for playback. |
 
 ## Returns

@@ -2,30 +2,26 @@
 id: PlayerSpectatePlayer
 title: PlayerSpectatePlayer
 description: Makes a player spectate (watch) another player.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
 Makes a player spectate (watch) another player.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player that will spectate.|
-|targetplayerid | The ID of the player that should be spectated.|
-|mode | The [mode](../resources/spectatemodes.md) to spectate with (optional; defaults to 'normal').|
-
+| Name           | Description                                                                                  |
+| -------------- | -------------------------------------------------------------------------------------------- |
+| playerid       | The ID of the player that will spectate.                                                     |
+| targetplayerid | The ID of the player that should be spectated.                                               |
+| mode           | The [mode](../resources/spectatemodes.md) to spectate with (optional; defaults to 'normal'). |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. One of the players specified does not exist.
-
+0: The function failed to execute. One of the players specified does not exist.
 
 ## Examples
-
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -36,20 +32,16 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-
 ## Notes
 
 :::warning
-
 
 Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectatePlayer.
 playerid and targetplayerid's virtual world and interior must be the same for this function to work properly.
 
 :::
 
-
 ## Related Functions
 
-
--  PlayerSpectateVehicle: Spectate a vehicle.
--  TogglePlayerSpectating: Start or stop spectating.
+- PlayerSpectateVehicle: Spectate a vehicle.
+- TogglePlayerSpectating: Start or stop spectating.

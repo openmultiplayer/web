@@ -4,9 +4,11 @@ title: Fighting Styles
 ---
 
 ## Description
+
 Fighting Styles to be used with [SetPlayerFightingStyle](../functions/SetPlayerFightingStyle.md) and [GetPlayerFightingStyle](../functions/GetPlayerFightingStyle.md).
 
 ## Fighting Styles
+
 ```c
 4 - FIGHT_STYLE_NORMAL
 5 - FIGHT_STYLE_BOXING

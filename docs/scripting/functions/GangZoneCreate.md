@@ -57,12 +57,12 @@ Putting the parameters in the wrong order results in glitchy behavior.
 
 ## Related Functions
 
-- GangZoneDestroy: Destroy a gangzone.
-- GangZoneShowForPlayer: Show a gangzone for a player.
-- GangZoneShowForAll: Show a gangzone for all players.
-- GangZoneHideForPlayer: Hide a gangzone for a player.
-- GangZoneHideForAll: Hide a gangzone for all players.
-- GangZoneFlashForPlayer: Make a gangzone flash for a player.
-- GangZoneFlashForAll: Make a gangzone flash for all players.
-- GangZoneStopFlashForPlayer: Stop a gangzone flashing for a player.
-- GangZoneStopFlashForAll: Stop a gangzone flashing for all players.
+- [GangZoneDestroy](../functions/GangZoneDestroy): Destroy a gangzone.
+- [GangZoneShowForPlayer](../functions/GangZoneShowForPlayer): Show a gangzone for a player.
+- [GangZoneShowForAll](../functions/GangZoneShowForAll): Show a gangzone for all players.
+- [GangZoneHideForPlayer](../functions/GangZoneHideForPlayer): Hide a gangzone for a player.
+- [GangZoneHideForAll](../functions/GangZoneHideForAll): Hide a gangzone for all players.
+- [GangZoneFlashForPlayer](../functions/GangZoneFlashForPlayer): Make a gangzone flash for a player.
+- [GangZoneFlashForAll](../functions/GangZoneFlashForAll): Make a gangzone flash for all players.
+- [GangZoneStopFlashForPlayer](../functions/GangZoneStopFlashForPlayer): Stop a gangzone flashing for a player.
+- [GangZoneStopFlashForAll](../functions/GangZoneStopFlashForAll): Stop a gangzone flashing for all players.

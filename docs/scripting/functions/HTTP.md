@@ -15,23 +15,19 @@ This function was added in SA-MP 0.3b and will not work in earlier versions!
 
 Sends a threaded HTTP request.
 
-
-| Name | Description |
-|------|-------------|
-|index | ID used to differentiate requests that are sent to the same callback (useful for playerids)|
-|type | The type of request you wish to send.|
-|url[] | The URL you want to request. (Without 'http://')|
-|data[] | Any POST data you want to send with the request.|
-|callback[] | Name of the callback function you want to use to handle responses to this request.|
-
+| Name       | Description                                                                                 |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| index      | ID used to differentiate requests that are sent to the same callback (useful for playerids) |
+| type       | The type of request you wish to send.                                                       |
+| url[]      | The URL you want to request. (Without 'http://')                                            |
+| data[]     | Any POST data you want to send with the request.                                            |
+| callback[] | Name of the callback function you want to use to handle responses to this request.          |
 
 ## Returns
 
 1 on success, 0 on failure
 
-
 ## Examples
-
 
 ```c
 forward MyHttpResponse(index, response_code, data[]);
@@ -66,7 +62,6 @@ public MyHttpResponse(index, response_code, data[])
 }
 ```
 
-
 ```
 HTTP_ERROR_BAD_HOST           (1)
 HTTP_ERROR_NO_SOCKET          (2)
@@ -77,7 +72,6 @@ HTTP_ERROR_MALFORMED_RESPONSE (6)
 
 ```
 
-
 ## Notes
 
 :::tip
@@ -86,7 +80,4 @@ As well as the response codes listed above, there are also all of the typical HT
 
 :::
 
-
 ## Related Functions
-
-

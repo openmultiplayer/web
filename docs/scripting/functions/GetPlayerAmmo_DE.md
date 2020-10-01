@@ -40,5 +40,5 @@ Die Munition kann nur 16-bit Werte enthalten. Dies bedeutet dass die Funktion be
 
 ## Related Functions
 
-- SetPlayerAmmo: Set the ammo of a specific player's weapon.
-- GetPlayerWeaponData: Find out information about weapons a player has.
+- [SetPlayerAmmo](../functions/SetPlayerAmmo): Set the ammo of a specific player's weapon.
+- [GetPlayerWeaponData](../functions/GetPlayerWeaponData): Find out information about weapons a player has.

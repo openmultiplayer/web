@@ -35,3 +35,5 @@ public OnPlayerText(playerid, text[])
 ```
 
 ## Related Functions
+
+- [tolower](../functions/tolower.md)

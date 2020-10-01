@@ -53,5 +53,5 @@ If the player is not loaded in before setting the spectate status to false, the 
 
 ## Related Functions
 
-- PlayerSpectatePlayer: Spectate a player.
-- PlayerSpectateVehicle: Spectate a vehicle.
+- [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer.md): Spectate a player.
+- [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle.md): Spectate a vehicle.

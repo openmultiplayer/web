@@ -15,7 +15,7 @@ documentation source for SA-MP and, eventually, open.mp.
 Unfortunately, the SA-MP Wiki was taken offline in late september. Luckily, most
 of the content is stored on the Internet Archive.
 
-But we need the communities help to transfer the old wiki content to its new
+But we need the community's help to transfer the old wiki content to its new
 home, here!
 
 If you're interested, see this link for instructions on how to convert content:
