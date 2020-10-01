@@ -12,8 +12,8 @@ Below is an example of possibly the most basic script you can write:
 
 main()
 {
-	print("Hello World!");
-	return 1;
+    print("Hello World!");
+    return 1;
 }
 ```
 
@@ -113,13 +113,13 @@ As well as being able to call existing functions you can also write and call you
 
 main()
 {
-	return MyFunction();
+    return MyFunction();
 }
 
 MyFunction()
 {
-	print("Hello World!");
-	return 1;
+    print("Hello World!");
+    return 1;
 }
 ```
 
@@ -132,8 +132,8 @@ main() return MyFunction();
 
 MyFunction()
 {
-	print("Hello World!");
-	return 1;
+    print("Hello World!");
+    return 1;
 }
 ```
 
@@ -144,14 +144,14 @@ But most people don't for clarity. You can also not use the MyFunction return va
 
 main()
 {
-	MyFunction();
-	return 1;
+    MyFunction();
+    return 1;
 }
 
 MyFunction()
 {
-	print("Hello World!");
-	return 1;
+    print("Hello World!");
+    return 1;
 }
 ```
 
@@ -164,13 +164,13 @@ Parameters are a type of [variable](/wiki/Scripting_Basics#Variables "Scripting 
 
 main()
 {
-	return MyFunction("Hello World!");
+    return MyFunction("Hello World!");
 }
 
 MyFunction(string[])
 {
-	print(string);
-	return 1;
+    print(string);
+    return 1;
 }
 ```
 
@@ -186,7 +186,7 @@ To create a new variable you have to declare it:
 
 ```c
 new
-	myVariable;
+    myVariable;
 ```
 
 This tells the system to create a new variable called myVariable, the initial value of this variable will be 0.
@@ -195,14 +195,14 @@ This tells the system to create a new variable called myVariable, the initial va
 
 ```c
 new
-	myVariable = 7;
+    myVariable = 7;
 ```
 
 This declares a new variable and sets it's initial value to 7, so printing the variable now will give 7. To display a variable which isn't a string we need to go back to the printf() function mentioned earlier and do:
 
 ```c
 new
-	myVariable = 7;
+    myVariable = 7;
 printf("%d", myVariable);
 ```
 
@@ -210,7 +210,7 @@ Again, for now all you need to know is that this will print the value of myVaria
 
 ```c
 new
-	myVariable = 7;
+    myVariable = 7;
 printf("%d", myVariable);
 myVariable = 8;
 printf("%d", myVariable);
@@ -256,15 +256,15 @@ An array is a variable in which you can store multiple pieces of data at once an
 
 ```c
 new
-	myArray[5];
+    myArray[5];
 ```
 
 That code will declare an array 5 slots big, so you can store 5 pieces of normal data at once in that single what you can't do is something like the following:
 
 ```c
 new
-	myVariable = 5,
-	myArray[myVariable];
+    myVariable = 5,
+    myArray[myVariable];
 ```
 
 That code looks like it would create an array the size of whatever number is stored in myVariable (here 5 but it could be anything), but you can't do this. In PAWN the memory for variables is assigned when you compile your code, this means arrays are always one size, you can't set the size to anything you like whenever you like.
@@ -275,7 +275,7 @@ To set a value in an array you need to say which part of the array you want to s
 
 ```c
 new
-	myArray[5];
+    myArray[5];
 myArray[2] = 7;
 ```
 
@@ -308,7 +308,7 @@ There are five slots but as you can see, and this is very important, THERE IS NO
 
 ```c
 new
-	myArray[5];
+    myArray[5];
 myArray[5] = 7;
 ```
 
@@ -316,8 +316,8 @@ As mentioned above the array index (the index is the slot to which you're writin
 
 ```c
 new
-	myArray[5],
-	myIndex = 2;
+    myArray[5],
+    myIndex = 2;
 myArray[myIndex] = 7;
 ```
 
@@ -335,20 +335,20 @@ As mentioned above a common type of array is the MAX_PLAYERS array. MAX_PLAYERS 
 
 ```c
 new
-	gPlayer0,
-	gPlayer1,
-	gPlayer2,
-	gPlayer3;
+    gPlayer0,
+    gPlayer1,
+    gPlayer2,
+    gPlayer3;
 
 SetPlayerValue(playerid, value)
 {
-	switch(playerid)
-	{
-	    case 0: gPlayer0 = value; // is the same as doing if(playerid == 0)
-	    case 1: gPlayer1 = value; // is the same as doing if(playerid == 1)
-	    case 2: gPlayer2 = value; // is the same as doing if(playerid == 2)
-	    case 3: gPlayer3 = value; // is the same as doing if(playerid == 3)
-	}
+    switch(playerid)
+    {
+        case 0: gPlayer0 = value; // is the same as doing if(playerid == 0)
+        case 1: gPlayer1 = value; // is the same as doing if(playerid == 1)
+        case 2: gPlayer2 = value; // is the same as doing if(playerid == 2)
+        case 3: gPlayer3 = value; // is the same as doing if(playerid == 3)
+    }
 }
 ```
 
@@ -358,11 +358,11 @@ Now compare that to using an array with one slot per player, bearing in mind an 
 
 ```c
 new
-	gPlayers[MAX_PLAYERS];
+    gPlayers[MAX_PLAYERS];
 
 SetPlayerValue(playerid, value)
 {
-	gPlayers[playerid] = value;
+    gPlayers[playerid] = value;
 }
 ```
 
@@ -378,7 +378,7 @@ Strings in PAWN (and other languages) are what's called "NULL terminated", this 
 
 ```c
 new
-	myString[16] = "Hello World!";
+    myString[16] = "Hello World!";
 ```
 
 That code declares a new string with enough space for a 15 character string and sets it initially to the 5 character string "Hello World!", the double quotes around the text indicate that it's a string. Internally the array will look like:
@@ -393,7 +393,7 @@ Strings can be manipulated like normal arrays, for example:
 
 ```c
 new
-	myString[16] = "Hello World!";
+    myString[16] = "Hello World!";
 myString[1] = 97;
 ```
 
@@ -401,7 +401,7 @@ Will change the character in slot 1 to the character represented by the number 9
 
 ```c
 new
-	myString[16] = "Hello World!";
+    myString[16] = "Hello World!";
 myString[1] = 'a';
 ```
 
@@ -409,7 +409,7 @@ The single quotes around the "a" mean it's a character, not a string, characters
 
 ```c
 new
-	myString[16] = "Hello World!";
+    myString[16] = "Hello World!";
 myString[1] = '\0';
 ```
 
@@ -417,7 +417,7 @@ myString[1] = '\0';
 
 ```c
 new
-	myString[16] = "Hello World!";
+    myString[16] = "Hello World!";
 myString[1] = 0;
 ```
 
@@ -425,7 +425,7 @@ But is NOT the same as doing:
 
 ```c
 new
-	myString[16] = "Hello World!";
+    myString[16] = "Hello World!";
 myString[1] = '0';
 ```
 
@@ -446,20 +446,20 @@ h0llo
 As briefly mentioned a backslash is a special character, doing:
 
 ```
-'\\'
+'\'
 ```
 
 or:
 
 ```
-"\\"
+"\"
 ```
 
-Will give a compiler error because the \\ modifies the next character so those constants will not be ended correctly, this can be used to create characters which can't normally be created, for example:
+Will give a compiler error because the \ modifies the next character so those constants will not be ended correctly, this can be used to create characters which can't normally be created, for example:
 
 ```c
 new
-	myString[4] = "\"";
+    myString[4] = "\"";
 ```
 
 That code will create a string consisting of only a double quote, normally a double quote signals the end of a written string but the backslash makes the double quote immediately after it a part of the string, and the double quote after that ends the string instead. Other special characters are:
@@ -470,7 +470,7 @@ That code will create a string consisting of only a double quote, normally a dou
 | EOS    | NULL character  | (same as above)                                                                                         |
 | \n     | Line feed       | use \n for a new line in Linux (also works in Windows)                                                  |
 | \r     | Carriage return | Use \r\n for a new line in Windows                                                                      |
-| \\     | Backslash       | Used to put an actual backslash in a string                                                             |
+| \\\\   | Backslash       | Used to put an actual backslash in a string                                                             |
 | \'     | Single quote    | Used to use an actual single quote as a character in single quotes (use: '\'')                          |
 | \"     | Double quotes   | Used to put an actual double quote in a string                                                          |
 | \xNNN; | Hex number      | Used to set the character to the character represented by the hex number specified in place on NNN      |

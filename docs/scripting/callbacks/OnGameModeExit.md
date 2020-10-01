@@ -35,4 +35,4 @@ This callback will NOT be called if the server crashes or the process is killed 
 
 ## Related Functions
 
-- GameModeExit: Exit the current gamemode.
+- [GameModeExit](../../scripting/functions/GameModeExit.md): Exit the current gamemode.

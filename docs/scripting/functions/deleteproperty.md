@@ -5,6 +5,12 @@ description: Delete an earlier set property (setproperty).
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Delete an earlier set property (setproperty).

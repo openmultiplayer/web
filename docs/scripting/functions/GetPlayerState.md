@@ -17,7 +17,7 @@ Get a player's current state.
 
 ## Returns
 
-The player's current state as an integer.
+The player's current state as an integer (see: [Player States](../../scripting/resources/playerstates.md)).
 
 
 ## Examples

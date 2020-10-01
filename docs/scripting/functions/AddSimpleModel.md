@@ -34,8 +34,8 @@ Adds a new custom simple object model for download. The model files will be stor
 ```c
 public OnGameModeInit()
 {
-	AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
-	return 1;
+    AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
+    return 1;
 }
 ```
 
@@ -60,4 +60,4 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
-- OnPlayerFinishedDownloading: Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](../../scripting/callbacks/OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.

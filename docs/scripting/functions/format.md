@@ -5,6 +5,12 @@ description: Formats a string to include variables and other strings inside it.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Formats a string to include variables and other strings inside it.

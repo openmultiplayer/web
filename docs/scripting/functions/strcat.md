@@ -5,6 +5,12 @@ description: This function concatenates (joins together) two strings into the de
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 This function concatenates (joins together) two strings into the destination string.

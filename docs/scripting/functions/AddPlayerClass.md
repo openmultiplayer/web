@@ -51,6 +51,6 @@ The maximum class ID is 319 (starting from 0, so a total of 320 classes). When t
 
 ## Related Functions
 
-- AddPlayerClassEx: Add a class with a default team.
-- SetSpawnInfo: Set the spawn setting for a player.
-- SetPlayerSkin: Set a player's skin.
+- [AddPlayerClassEx](../../scripting/functions/AddPlayerClassEx.md): Add a class with a default team.
+- [SetSpawnInfo](../../scripting/functions/SetSpawnInfo.md): Set the spawn setting for a player.
+- [SetPlayerSkin](../../scripting/functions/SetPlayerSkin.md): Set a player's skin.

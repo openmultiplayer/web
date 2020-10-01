@@ -5,8 +5,10 @@ description: Get memory handle for an SQLite query that was executed with db_que
 tags: ["sqlite"]
 ---
 
+
 :::warning
 
+This function starts with lowercase letter.  
 This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
 
 :::

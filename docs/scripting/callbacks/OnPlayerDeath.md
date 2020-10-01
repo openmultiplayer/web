@@ -36,7 +36,7 @@ public OnPlayerDeath(playerid, killerid, reason)
     // Check that the killerid is valid before doing anything with it
     if(killerid != INVALID_PLAYER_ID)
     {
-        PlayerKillCount[killerid] ++;
+        PlayerKills[killerid] ++;
     }
 
     // Outside the check, handle stuff for playerid (it's always valid)
@@ -64,5 +64,5 @@ You MUST check whether 'killerid' is valid (not INVALID_PLAYER_ID) before using 
 
 ## Related Functions
 
-- SendDeathMessage: Add a kill to the death list.
-- SetPlayerHealth: Set a player's health.
+- [SendDeathMessage](../../scripting/functions/SendDeathMessage.md): Add a kill to the death list.
+- [SetPlayerHealth](../../scripting/functions/SetPlayerHealth.md): Set a player's health.

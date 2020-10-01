@@ -36,8 +36,8 @@ Adds a new custom simple object model for download. The model files will be stor
 ```c
 public OnGameModeInit()
 {
-	AddSimpleModelTimed(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd", 9, 18); // This wall only renders from 9:00 am to 6:00 pm
-	return 1;
+    AddSimpleModelTimed(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd", 9, 18); // This wall only renders from 9:00 am to 6:00 pm
+    return 1;
 }
 ```
 
@@ -58,4 +58,4 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
-- OnPlayerFinishedDownloading: Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](../../scripting/callbacks/OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.

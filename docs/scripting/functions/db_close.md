@@ -5,6 +5,12 @@ description: Closes an SQLite database that was opened with db_open.
 tags: [sqlite]
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Closes an SQLite database that was opened with db_open.
@@ -26,28 +32,28 @@ new DB:db_handle;
 // ...
 public OnGameModeInit()
 {
-	// Create a connection to the database
-	if((db_handle = db_open("example.db")) == DB:0)
-	{
-		// Error
-		print("Failed to open a connection to \"example.db\".");
-		SendRconCommand("exit");
-	}
-	else
-	{
-		// Success
-		print("Successfully created a connection to \"example.db\".");
-	}
-	// ...
-	return 1;
+    // Create a connection to the database
+    if((db_handle = db_open("example.db")) == DB:0)
+    {
+        // Error
+        print("Failed to open a connection to \"example.db\".");
+        SendRconCommand("exit");
+    }
+    else
+    {
+        // Success
+        print("Successfully created a connection to \"example.db\".");
+    }
+    // ...
+    return 1;
 }
 
 public OnGameModeExit()
 {
-	// Close the connection to the database
-	db_close(db_handle);
-	// ...
-	return 1;
+    // Close the connection to the database
+    db_close(db_handle);
+    // ...
+    return 1;
 }
 ```
 

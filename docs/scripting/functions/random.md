@@ -5,6 +5,12 @@ description: Get a pseudo-random number.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Get a pseudo-random number.

@@ -10,11 +10,11 @@
 
 <p align="center">
   <a
-    href="https://wiki.open.mp"
+    href="https://open.mp/wiki"
   >Wiki</a>
   |
   <a
-    href="https://discord.me/samp"
+    href="https://discord.gg/samp"
   >Discord</a>
 </p>
 

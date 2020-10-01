@@ -33,9 +33,9 @@ Adds a new custom character model for download. The model files will be stored i
 ```c
 public OnGameModeInit()
 {
-	AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
-	AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
-	return 1;
+    AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
+    AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
+    return 1;
 }
 ```
 
@@ -60,4 +60,4 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
-- SetPlayerSkin: Set a player's skin.
+- [SetPlayerSkin](../../scripting/functions/SetPlayerSkin.md): Set a player's skin.

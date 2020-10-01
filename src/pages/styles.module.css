@@ -27,3 +27,9 @@
   height: auto;
   width: auto;
 }
+
+section {
+  padding: 2rem;
+  margin: auto;
+  max-width: 40em;
+}

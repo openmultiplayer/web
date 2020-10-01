@@ -45,6 +45,6 @@ The game sometimes deducts $100 from players after spawn.
 
 ## Related Functions
 
-- SpawnPlayer: Force a player to spawn.
-- AddPlayerClass: Add a class.
-- SetSpawnInfo: Set the spawn setting for a player.
+- [SpawnPlayer](../../scripting/functions/SpawnPlayer.md): Force a player to spawn.
+- [AddPlayerClass](../../scripting/functions/AddPlayerClass.md): Add a class.
+- [SetSpawnInfo](../../scripting/functions/SetSpawnInfo.md): Set the spawn setting for a player.

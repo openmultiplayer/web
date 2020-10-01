@@ -5,6 +5,12 @@ description: This function is used to execute an SQL query on an opened SQLite d
 tags: ["sqlite"]
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 This function is used to execute an SQL query on an opened SQLite database.
@@ -25,76 +31,76 @@ new DB:db_handle;
 // ...
 public OnGameModeInit()
 {
-	// Create a connection to the database
-	if((db_handle = db_open("example.db")) == DB:0)
-	{
-		// Error
-		print("Failed to open a connection to \"example.db\".");
-		SendRconCommand("exit");
-	}
-	else
-	{
-		// Success
-		// Creates a "player spawn log" table, if it doesn't exists, and frees the result
-		db_free_result(db_query(db_handle, "CREATE TABLE IF NOT EXISTS `spawn_log`(`ID` INTEGER PRIMARY KEY AUTOINCREMENT,`PlayerID` INTEGER NOT NULL,`PlayerName` VARCHAR(24) NOT NULL)"));
-		print("Successfully created a connection to \"example.db\".");
-	}
-	// ...
-	return 1;
+    // Create a connection to the database
+    if((db_handle = db_open("example.db")) == DB:0)
+    {
+        // Error
+        print("Failed to open a connection to \"example.db\".");
+        SendRconCommand("exit");
+    }
+    else
+    {
+        // Success
+        // Creates a "player spawn log" table, if it doesn't exists, and frees the result
+        db_free_result(db_query(db_handle, "CREATE TABLE IF NOT EXISTS `spawn_log`(`ID` INTEGER PRIMARY KEY AUTOINCREMENT,`PlayerID` INTEGER NOT NULL,`PlayerName` VARCHAR(24) NOT NULL)"));
+        print("Successfully created a connection to \"example.db\".");
+    }
+    // ...
+    return 1;
 }
 
 public OnGameModeExit()
 {
-	// If there is a database connection, close it
-	if(db_handle) db_close(db_handle);
-	// ...
-	return 1;
+    // If there is a database connection, close it
+    if(db_handle) db_close(db_handle);
+    // ...
+    return 1;
 }
 
 public OnPlayerSpawn(playerid)
 {
-	// Declare "query" and "p_name"
-	static query[98], p_name[MAX_PLAYER_NAME+1];
+    // Declare "query" and "p_name"
+    static query[98], p_name[MAX_PLAYER_NAME+1];
 
-	// Stores the name of the player to "p_name"
-	GetPlayerName(playerid, p_name, sizeof p_name);
+    // Stores the name of the player to "p_name"
+    GetPlayerName(playerid, p_name, sizeof p_name);
 
-	// Formats "query"
-	format(query, sizeof query, "INSERT INTO `spawn_log` (`PlayerID`,`PlayerName`) VALUES (%d,'%s')", playerid, p_name);
+    // Formats "query"
+    format(query, sizeof query, "INSERT INTO `spawn_log` (`PlayerID`,`PlayerName`) VALUES (%d,'%s')", playerid, p_name);
 
-	// Inserts something into "spawn_log" and frees the result
-	db_free_result(db_query(db_handle, query));
-	// ...
-	return 1;
+    // Inserts something into "spawn_log" and frees the result
+    db_free_result(db_query(db_handle, query));
+    // ...
+    return 1;
 }
 
 // Example function
 GetNameBySpawnID(spawn_id)
 {
-	// Declare "p_name"
-	new p_name[MAX_PLAYER_NAME+1];
+    // Declare "p_name"
+    new p_name[MAX_PLAYER_NAME+1];
 
-	// Declare "query" and "db_result"
-	static query[60], DBResult:db_result;
+    // Declare "query" and "db_result"
+    static query[60], DBResult:db_result;
 
-	// Formats "query"
-	format(query, sizeof query, "SELECT `PlayerName` FROM `spawn_log` WHERE `ID`=%d", spawn_id);
+    // Formats "query"
+    format(query, sizeof query, "SELECT `PlayerName` FROM `spawn_log` WHERE `ID`=%d", spawn_id);
 
-	// Selects the player name by using "spawn_id"
-	db_result = db_query(db_handle, query);
+    // Selects the player name by using "spawn_id"
+    db_result = db_query(db_handle, query);
 
-	// If there is any valid entry
-	if(db_num_rows(db_result))
-	{
-		// Store data from "PlayerName" into "p_name"
-		db_get_field(db_result, 0, p_name, sizeof p_name);
-	}
+    // If there is any valid entry
+    if(db_num_rows(db_result))
+    {
+        // Store data from "PlayerName" into "p_name"
+        db_get_field(db_result, 0, p_name, sizeof p_name);
+    }
 
-	// Frees the result
-	db_free_result(db_result);
+    // Frees the result
+    db_free_result(db_result);
 
-	// Returns "p_name"
-	return p_name;
+    // Returns "p_name"
+    return p_name;
 }
 ```
 

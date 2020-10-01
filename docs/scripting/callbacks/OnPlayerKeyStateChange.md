@@ -31,71 +31,71 @@ if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) &&�
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 // HOLDING(keys)
 #define HOLDING(%0) \
-	((newkeys & (%0)) == (%0))
+    ((newkeys & (%0)) == (%0))
 if (HOLDING( KEY_FIRE ))
 if (HOLDING( KEY_FIRE | KEY_CROUCH ))
 // PRESSED(keys)
 #define PRESSED(%0) \
-	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
+    (((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 if (PRESSED( KEY_FIRE ))
 if (PRESSED( KEY_FIRE | KEY_CROUCH ))
 // PRESSING(keyVariable, keys)
 #define PRESSING(%0,%1) \
-	(%0 & (%1))
+    (%0 & (%1))
 if (PRESSING( newkeys, KEY_FIRE ))
 if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
 // RELEASED(keys)
 #define RELEASED(%0) \
-	(((newkeys & (%0)) != (%0)) && ((oldkeys & (%0)) == (%0)))
+    (((newkeys & (%0)) != (%0)) && ((oldkeys & (%0)) == (%0)))
 if (RELEASED( KEY_FIRE ))
 if (RELEASED( KEY_FIRE | KEY_CROUCH ))
 public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
-	if (PRESSED(KEY_FIRE))
-	{
-		if (IsPlayerInAnyVehicle(playerid))
-		{
-			AddVehicleComponent(GetPlayerVehicleID(playerid), 1010);
-		}
-	}
-	return 1;
+    if (PRESSED(KEY_FIRE))
+    {
+        if (IsPlayerInAnyVehicle(playerid))
+        {
+            AddVehicleComponent(GetPlayerVehicleID(playerid), 1010);
+        }
+    }
+    return 1;
 }
 public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
-	if (PRESSED(KEY_JUMP))
-	{
-		new
-			Float:x,
-			Float:y,
-			Float:z;
-		GetPlayerPos(playerid, x, y, z);
-		SetPlayerPos(playerid, x, y, z + 10.0);
-	}
-	return 1;
+    if (PRESSED(KEY_JUMP))
+    {
+        new
+            Float:x,
+            Float:y,
+            Float:z;
+        GetPlayerPos(playerid, x, y, z);
+        SetPlayerPos(playerid, x, y, z + 10.0);
+    }
+    return 1;
 }
 new
-	Float:gPlayerHealth[MAX_PLAYERS];
+    Float:gPlayerHealth[MAX_PLAYERS];
 
 #if !defined INFINITY
-	#define INFINITY (Float:0x7F800000)
+    #define INFINITY (Float:0x7F800000)
 #endif
 
 public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
-	if (PRESSED(KEY_ACTION))
-	{
-		// They just pressed the action key, save their
-		// old health for restoration.
-		GetPlayerHealth(playerid, gPlayerHealth[playerid]);
-		SetPlayerHealth(playerid, INFINITY);
-	}
-	else if (RELEASED(KEY_ACTION))
-	{
-		// They just let go of action - restore
-		// their old health again.
-		SetPlayerHealth(playerid, gPlayerHealth[playerid]);
-	}
-	return 1;
+    if (PRESSED(KEY_ACTION))
+    {
+        // They just pressed the action key, save their
+        // old health for restoration.
+        GetPlayerHealth(playerid, gPlayerHealth[playerid]);
+        SetPlayerHealth(playerid, INFINITY);
+    }
+    else if (RELEASED(KEY_ACTION))
+    {
+        // They just let go of action - restore
+        // their old health again.
+        SetPlayerHealth(playerid, gPlayerHealth[playerid]);
+    }
+    return 1;
 }
 ```
 
@@ -139,4 +139,4 @@ Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right). The
 
 ## Related Functions
 
-- GetPlayerKeys: Check what keys a player is holding.
+- [GetPlayerKeys](../../scripting/functions/GetPlayerKeys.md): Check what keys a player is holding.

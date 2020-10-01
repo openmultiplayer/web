@@ -5,6 +5,12 @@ description: Check if a property exist.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Check if a property exist.

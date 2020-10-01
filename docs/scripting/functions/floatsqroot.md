@@ -5,6 +5,12 @@ description: Calculates the square root of given value.
 tags: []
 ---
 
+:::warning
+
+This function starts with lowercase letter.
+
+:::
+
 ## Description
 
 Calculates the square root of given value.

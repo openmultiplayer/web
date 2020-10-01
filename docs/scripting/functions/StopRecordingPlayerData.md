@@ -30,13 +30,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/stoprecording", cmdtext))
     {
-	StopRecordingPlayerData(playerid);
+    StopRecordingPlayerData(playerid);
         SendClientMessage(playerid, 0xFFFFFFFF, "Your recorded file has been saved to the scriptfiles folder!");
-	return 1;
+    return 1;
     }
 }
 ```
 
 ## Related Functions
 
-- StartRecordingPlayerData: Start recording player data.
+- [StartRecordingPlayerData](../functions/StartRecordingPlayerData.md): Start recording player data.
