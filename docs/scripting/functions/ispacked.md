@@ -15,19 +15,15 @@ This function starts with lowercase letter.
 
 Checks if the given string is packed.
 
-
-| Name | Description |
-|------|-------------|
-|string | The string to check.|
-
+| Name   | Description          |
+| ------ | -------------------- |
+| string | The string to check. |
 
 ## Returns
 
 1 if the string is packed, 0 if it's unpacked.
 
-
 ## Examples
-
 
 ```c
 // Create a packed string
@@ -39,7 +35,4 @@ if(ispacked(string))
 }
 ```
 
-
 ## Related Functions
-
-

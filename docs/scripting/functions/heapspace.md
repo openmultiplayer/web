@@ -15,13 +15,11 @@ This function starts with lowercase letter.
 
 Returns the amount of memory available for the heap/stack in bytes.
 
-
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 
 
 ## Examples
-
 
 ```c
 public OnGameModeInit()
@@ -31,7 +29,4 @@ public OnGameModeInit()
 }
 ```
 
-
 ## Related Functions
-
-

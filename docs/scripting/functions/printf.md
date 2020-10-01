@@ -15,20 +15,16 @@ This function starts with lowercase letter.
 
 Outputs a formatted string on the console (the server window, not the in-game chat).
 
-
-| Name | Description |
-|------|-------------|
-|format[] | The format string|
-|{Float,_}:... | Indefinite number of arguments of any tag|
-
+| Name           | Description                               |
+| -------------- | ----------------------------------------- |
+| format[]       | The format string                         |
+| {Float,\_}:... | Indefinite number of arguments of any tag |
 
 ## Returns
 
 This function does not return any specific values.
 
-
 ## Examples
-
 
 ```c
 new number = 42;
@@ -41,7 +37,6 @@ new character = 64;
 printf("I'm %c home",character); //-> I'm @ home
 ```
 
-
 ## Notes
 
 :::warning
@@ -50,9 +45,7 @@ The format string or its output should not exceed 1024 characters. Anything beyo
 
 :::
 
-
 ## Related Functions
 
-
--  print: Print a basic message to the server logs and console.
--  format: Format a string.
+- print: Print a basic message to the server logs and console.
+- format: Format a string.

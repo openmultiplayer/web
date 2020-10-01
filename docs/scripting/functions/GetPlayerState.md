@@ -2,26 +2,22 @@
 id: GetPlayerState
 title: GetPlayerState
 description: Get a player's current state.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
 Get a player's current state.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to get the current state of.|
-
+| Name     | Description                                       |
+| -------- | ------------------------------------------------- |
+| playerid | The ID of the player to get the current state of. |
 
 ## Returns
 
 The player's current state as an integer (see: [Player States](../../scripting/resources/playerstates.md)).
 
-
 ## Examples
-
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -37,10 +33,8 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-
 ## Related Functions
 
-
--  GetPlayerSpecialAction: Get a player's current special action.
--  SetPlayerSpecialAction: Set a player's special action.
--  OnPlayerStateChange: Called when a player changes state.
+- GetPlayerSpecialAction: Get a player's current special action.
+- SetPlayerSpecialAction: Set a player's special action.
+- OnPlayerStateChange: Called when a player changes state.
