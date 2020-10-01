@@ -9,14 +9,14 @@ tags: []
 
 This function adds a 'static' pickup to the game. These pickups support weapons, health, armor etc., with the ability to function without scripting them (weapons/health/armor will be given automatically).
 
-| Name         | Description                                                                         |
-| ------------ | ----------------------------------------------------------------------------------- |
-| model        | The model of the pickup.                                                            |
-| type         | The pickup type. Determines how the pickup responds when picked up.                 |
-| Float:X      | The X coordinate to create the pickup at.                                           |
-| Float:Y      | The Y coordinate to create the pickup at.                                           |
-| Float:Z      | The Z coordinate to create the pickup at.                                           |
-| virtualworld | The virtual world ID to put tht pickup in. Use -1 to show the pickup in all worlds. |
+| Name                                             | Description                                                                         |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| [model](../../scripting/resources/pickupids.md)  | The model of the pickup.                                                            |
+| [type](../../scripting/resources/pickuptypes.md) | The pickup type. Determines how the pickup responds when picked up.                 |
+| Float:X                                          | The X coordinate to create the pickup at.                                           |
+| Float:Y                                          | The Y coordinate to create the pickup at.                                           |
+| Float:Z                                          | The Z coordinate to create the pickup at.                                           |
+| virtualworld                                     | The virtual world ID to put tht pickup in. Use -1 to show the pickup in all worlds. |
 
 ## Returns
 
@@ -49,6 +49,6 @@ This function doesn't return a pickup ID that you can use in, for example, OnPla
 
 ## Related Functions
 
-- CreatePickup: Create a pickup.
-- DestroyPickup: Destroy a pickup.
-- OnPlayerPickUpPickup: Called when a player picks up a pickup.
+- [CreatePickup](../../scripting/functions/CreatePickup.md): Create a pickup.
+- [DestroyPickup](../../scripting/functions/DestroyPickup.md): Destroy a pickup.
+- [OnPlayerPickUpPickup](../../scripting/callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.
