@@ -46,5 +46,5 @@ Also note that angles in GTA are counterclockwise; 270° is East and 90° is Wes
 
 ## Related Functions
 
-- floatsin: Get the sine from a specific angle.
-- floattan: Get the tangent from a specific angle.
+- [floatsin](../functions/floatsin): Get the sine from a specific angle.
+- [floattan](../functions/floattan): Get the tangent from a specific angle.

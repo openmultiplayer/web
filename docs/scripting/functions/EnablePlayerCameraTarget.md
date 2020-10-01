@@ -38,6 +38,6 @@ public OnPlayerConnect(playerid)
 
 ## Related Functions
 
-- GetPlayerCameraTargetVehicle: Get the ID of the vehicle a player is looking at.
-- GetPlayerCameraTargetPlayer: Get the ID of the player a player is looking at.
-- GetPlayerCameraFrontVector: Get the player's camera front vector
+- [GetPlayerCameraTargetVehicle](../functions/GetPlayerCameraTargetVehicle): Get the ID of the vehicle a player is looking at.
+- [GetPlayerCameraTargetPlayer](../functions/GetPlayerCameraTargetPlayer): Get the ID of the player a player is looking at.
+- [GetPlayerCameraFrontVector](../functions/GetPlayerCameraFrontVector): Get the player's camera front vector

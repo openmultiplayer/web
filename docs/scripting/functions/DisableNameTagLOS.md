@@ -39,5 +39,5 @@ This can not be reversed until the server restarts.
 
 ## Related Functions
 
-- ShowNameTags: Set nametags on or off.
-- ShowPlayerNameTagForPlayer: Show or hide a nametag for a certain player.
+- [ShowNameTags](../../scripting/functions/ShowNameTags.md): Set nametags on or off.
+- [ShowPlayerNameTagForPlayer](../../scripting/functions/ShowPlayerNameTagForPlayer.md): Show or hide a nametag for a certain player.
