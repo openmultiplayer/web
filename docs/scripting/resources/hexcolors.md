@@ -160,4 +160,3 @@ combinations.
 
 These are just the basic colors/combination, if you're looking for other colors
 / are too lazy to convert, you are better using a converter like this one:
-
