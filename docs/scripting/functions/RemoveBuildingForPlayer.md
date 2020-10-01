@@ -72,5 +72,5 @@ In SA-MP 0.3.7 you can use -1 for the modelid to remove all objects within the s
 ## Related Functions
 
 
--  DestroyObject: Destroy an object.
--  DestroyPlayerObject: Destroy a player object.
+-  [DestroyObject](../functions/DestroyObject.md): Destroy an object.
+-  [DestroyPlayerObject](../functions/DestroyPlayerObject.md): Destroy a player object.

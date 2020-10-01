@@ -49,5 +49,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Related Functions
 
 
--  SetPlayerAttachedObject: Attach an object to a player
--  IsPlayerAttachedObjectSlotUsed: Check whether an object is attached to a player in a specified index
+-  [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Attach an object to a player
+-  [IsPlayerAttachedObjectSlotUsed](../functions/IsPlayerAttachedObjectSlotUsed.md): Check whether an object is attached to a player in a specified index
