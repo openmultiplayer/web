@@ -34,5 +34,5 @@ Not using this function causes two-handed weapons (not dual-handed - a single we
 
 ## Related Functions
 
-- ApplyAnimation: Apply an animation to a player.
-- ClearAnimations: Clear any animations a player is performing.
+- [ApplyAnimation](../functions/ApplyAnimation.md): Apply an animation to a player.
+- [ClearAnimations](../functions/ClearAnimations.md): Clear any animations a player is performing.
