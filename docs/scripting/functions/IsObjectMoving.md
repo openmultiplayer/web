@@ -37,6 +37,6 @@ if(IsObjectMoving(objectid)) StopObject(objectid);
 ## Related Functions
 
 
--  MoveObject: Move an object.
--  StopObject: Stop an object from moving.
--  OnObjectMoved: Called when an object stops moving.
+-  [MoveObject](../../scripting/functions/MoveObject.md): Move an object.
+-  [StopObject](../../scripting/functions/StopObject.md): Stop an object from moving.
+-  [OnObjectMoved](../../scripting/callbacks/OnObjectMoved.md): Called when an object stops moving.
