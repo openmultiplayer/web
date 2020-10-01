@@ -65,4 +65,4 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for th
 - [TextDrawSetPreviewVehCol](../functions/TextDrawSetPreviewVehCol.md): Set the colours of a vehicle in a 3D textdraw preview.
 - [TextDrawFont](../functions/TextDrawFont.md): Set the font of a textdraw.
 - [PlayerTextDrawSetPreviewModel](../functions/PlayerTextDrawSetPreviewModel.md): Set model ID of a 3D player textdraw preview.
-- [OnPlayerClickTextDraw](../functions/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.

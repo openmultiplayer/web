@@ -58,4 +58,4 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for th
 - [TextDrawSetPreviewModel](../functions/TextDrawSetPreviewModel.md): Set the 3D preview model of a textdraw.
 - [TextDrawSetPreviewRot](../functions/TextDrawSetPreviewRot.md): Set rotation of a 3D textdraw preview.
 - [TextDrawFont](../functions/TextDrawFont.md): Set the font of a textdraw.
-- [OnPlayerClickTextDraw](../functions/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
