@@ -53,6 +53,6 @@ public OnGameModeInit()
 ## Related Functions
 
 
--  CreateActor: Create an actor (static NPC).
--  SetActorInvulnerable: Set actor invulnerable.
--  SetActorHealth: Set the health of an actor.
+-  [CreateActor](../../scripting/functions/CreateActor.md): Create an actor (static NPC).
+-  [SetActorInvulnerable](../../scripting/functions/SetActorInvulnerable.md): Set actor invulnerable.
+-  [SetActorHealth](../../scripting/functions/SetActorHealth.md): Set the health of an actor.
