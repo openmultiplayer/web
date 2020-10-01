@@ -40,6 +40,6 @@ If only a single player will see a textdraw, it might be wise to use player-text
 
 ## Related Functions
 
-- TextDrawHideForPlayer: Hide a textdraw for a certain player.
-- TextDrawShowForAll: Show a textdraw for all players.
-- TextDrawHideForAll: Hide a textdraw for all players.
+- [TextDrawHideForPlayer](../functions/TextDrawHideForPlayer.md): Hide a textdraw for a certain player.
+- [TextDrawShowForAll](../functions/TextDrawShowForAll.md): Show a textdraw for all players.
+- [TextDrawHideForAll](../functions/TextDrawHideForAll.md): Hide a textdraw for all players.
