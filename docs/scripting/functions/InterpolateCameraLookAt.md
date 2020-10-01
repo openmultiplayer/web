@@ -15,27 +15,23 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Interpolate a player's camera's 'look at' point between two coordinates with a set speed. Can be be used with InterpolateCameraPos.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player the camera should be moved for|
-|Float:FromX | The X position the camera should start to move from|
-|Float:FromY | The Y position the camera should start to move from|
-|Float:FromZ | The Z position the camera should start to move from|
-|Float:ToX | The X position the camera should move to|
-|Float:ToY | The Y position the camera should move to|
-|Float:ToZ | The Z position the camera should move to|
-|time | Time in milliseconds to complete interpolation|
-|cut | The ['jumpcut'](../resources/cameracutstyles.md) to use. Defaults to CAMERA_CUT (pointless). Set to CAMERA_MOVE for interpolation.|
-
+| Name        | Description                                                                                                                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | The ID of the player the camera should be moved for                                                                                |
+| Float:FromX | The X position the camera should start to move from                                                                                |
+| Float:FromY | The Y position the camera should start to move from                                                                                |
+| Float:FromZ | The Z position the camera should start to move from                                                                                |
+| Float:ToX   | The X position the camera should move to                                                                                           |
+| Float:ToY   | The Y position the camera should move to                                                                                           |
+| Float:ToZ   | The Z position the camera should move to                                                                                           |
+| time        | Time in milliseconds to complete interpolation                                                                                     |
+| cut         | The ['jumpcut'](../resources/cameracutstyles.md) to use. Defaults to CAMERA_CUT (pointless). Set to CAMERA_MOVE for interpolation. |
 
 ## Returns
 
 This function does not return any specific values.
 
-
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -53,7 +49,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -62,10 +57,8 @@ Use TogglePlayerSpectating to make objects stream in for the player while the ca
 
 :::
 
-
 ## Related Functions
 
-
--  [InterpolateCameraPos](../../scripting/functions/InterpolateCameraPos.md): Move a player's camera from one location to another.
--  [SetPlayerCameraLookAt](../../scripting/functions/SetPlayerCameraLookAt.md): Set where a player's camera should face.
--  [SetPlayerCameraPos](../../scripting/functions/SetPlayerCameraPos.md): Set a player's camera position.
+- [InterpolateCameraPos](../../scripting/functions/InterpolateCameraPos.md): Move a player's camera from one location to another.
+- [SetPlayerCameraLookAt](../../scripting/functions/SetPlayerCameraLookAt.md): Set where a player's camera should face.
+- [SetPlayerCameraPos](../../scripting/functions/SetPlayerCameraPos.md): Set a player's camera position.

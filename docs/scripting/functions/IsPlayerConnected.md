@@ -2,29 +2,24 @@
 id: IsPlayerConnected
 title: IsPlayerConnected
 description: Checks if a player is connected (if an ID is taken by a connected player).
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
 Checks if a player is connected (if an ID is taken by a connected player).
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to check.|
-
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | The ID of the player to check. |
 
 ## Returns
 
- 0: Player is NOT connected.
+0: Player is NOT connected.
 
- 1: Player IS connected.
-
-
+1: Player IS connected.
 
 ## Examples
-
 
 ```c
 KillPlayer(playerid)
@@ -34,7 +29,6 @@ KillPlayer(playerid)
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -43,10 +37,8 @@ This function can be omitted in a lot of cases. Many other functions already hav
 
 :::
 
-
 ## Related Functions
 
-
--  [IsPlayerAdmin](../../scripting/functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
--  [OnPlayerConnect](../../scripting/callbacks/OnPlayerConnect.md): Called when a player connects to the server.
--  [OnPlayerDisconnect](../../scripting/callbacks/OnPlayerDisconnect.md): Called when a player leaves the server.
+- [IsPlayerAdmin](../../scripting/functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
+- [OnPlayerConnect](../../scripting/callbacks/OnPlayerConnect.md): Called when a player connects to the server.
+- [OnPlayerDisconnect](../../scripting/callbacks/OnPlayerDisconnect.md): Called when a player leaves the server.

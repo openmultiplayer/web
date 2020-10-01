@@ -2,28 +2,24 @@
 id: IsTrailerAttachedToVehicle
 title: IsTrailerAttachedToVehicle
 description: Checks if a vehicle has a trailer attached to it.
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 ## Description
 
 Checks if a vehicle has a trailer attached to it. Use GetVehicleTrailer to get the vehicle ID of the trailer (if any).
 
-
-| Name | Description |
-|------|-------------|
-|vehicleid | The ID of the vehicle to check for trailers.|
-
+| Name      | Description                                  |
+| --------- | -------------------------------------------- |
+| vehicleid | The ID of the vehicle to check for trailers. |
 
 ## Returns
 
- 1: The vehicle has a trailer attached.
+1: The vehicle has a trailer attached.
 
- 0: The vehicle does not have a trailer attached.
-
+0: The vehicle does not have a trailer attached.
 
 ## Examples
-
 
 ```c
 if(IsTrailerAttachedToVehicle(vehicleid))
@@ -32,10 +28,8 @@ if(IsTrailerAttachedToVehicle(vehicleid))
 }
 ```
 
-
 ## Related Functions
 
-
--  [GetVehicleTrailer](../../scripting/functions/GetVehicleTrailer.md): Check what trailer a vehicle is pulling.
--  [AttachTrailerToVehicle](../../scripting/functions/AttachTrailerToVehicle.md): Attach a trailer to a vehicle.
--  [DetachTrailerFromVehicle](../../scripting/functions/DetachTrailerFromVehicle.md): Detach a trailer from a vehicle.
+- [GetVehicleTrailer](../../scripting/functions/GetVehicleTrailer.md): Check what trailer a vehicle is pulling.
+- [AttachTrailerToVehicle](../../scripting/functions/AttachTrailerToVehicle.md): Attach a trailer to a vehicle.
+- [DetachTrailerFromVehicle](../../scripting/functions/DetachTrailerFromVehicle.md): Detach a trailer from a vehicle.

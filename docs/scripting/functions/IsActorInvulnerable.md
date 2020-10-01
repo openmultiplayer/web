@@ -15,21 +15,17 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Check if an actor is invulnerable.
 
-
-| Name | Description |
-|------|-------------|
-|actorid | The ID of the actor to check.|
-
+| Name    | Description                   |
+| ------- | ----------------------------- |
+| actorid | The ID of the actor to check. |
 
 ## Returns
 
- 1: The actor is invulnerable.
+1: The actor is invulnerable.
 
- 0: The actor is vulnerable.
-
+0: The actor is vulnerable.
 
 ## Examples
-
 
 ```c
 new MyActor;
@@ -49,10 +45,8 @@ public OnGameModeInit()
 }
 ```
 
-
 ## Related Functions
 
-
--  [CreateActor](../../scripting/functions/CreateActor.md): Create an actor (static NPC).
--  [SetActorInvulnerable](../../scripting/functions/SetActorInvulnerable.md): Set actor invulnerable.
--  [SetActorHealth](../../scripting/functions/SetActorHealth.md): Set the health of an actor.
+- [CreateActor](../../scripting/functions/CreateActor.md): Create an actor (static NPC).
+- [SetActorInvulnerable](../../scripting/functions/SetActorInvulnerable.md): Set actor invulnerable.
+- [SetActorHealth](../../scripting/functions/SetActorHealth.md): Set the health of an actor.
