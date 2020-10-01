@@ -2,7 +2,7 @@
 id: RemoveBuildingForPlayer
 title: RemoveBuildingForPlayer
 description: Removes a standard San Andreas model for a single player within a specified range.
-tags: ['player']
+tags: ["player"]
 ---
 
 :::warning
@@ -15,24 +15,20 @@ This function was added in SA-MP 0.3d and will not work in earlier versions!
 
 Removes a standard San Andreas model for a single player within a specified range.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to remove the objects for.|
-|modelid | The model to remove.|
-|Float:fX | The X coordinate around which the objects will be removed.|
-|Float:fY | The Y coordinate around which the objects will be removed.|
-|Float:fZ | The Z coordinate around which the objects will be removed.|
-|Float:fRadius | The radius around the specified point to remove objects with the specified model.|
-
+| Name          | Description                                                                       |
+| ------------- | --------------------------------------------------------------------------------- |
+| playerid      | The ID of the player to remove the objects for.                                   |
+| modelid       | The model to remove.                                                              |
+| Float:fX      | The X coordinate around which the objects will be removed.                        |
+| Float:fY      | The Y coordinate around which the objects will be removed.                        |
+| Float:fZ      | The Z coordinate around which the objects will be removed.                        |
+| Float:fRadius | The radius around the specified point to remove objects with the specified model. |
 
 ## Returns
 
 This function does not return any specific values.
 
-
 ## Examples
-
 
 ```c
 public OnPlayerConnect(playerid)
@@ -50,7 +46,6 @@ public OnPlayerConnect(playerid)
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -59,18 +54,14 @@ In SA-MP 0.3.7 you can use -1 for the modelid to remove all objects within the s
 
 :::
 
-
 :::warning
 
-
- There appears to be a limit of around 1000 lines/objects. There is no workaround.
- When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
+There appears to be a limit of around 1000 lines/objects. There is no workaround.
+When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
 
 :::
 
-
 ## Related Functions
 
-
--  [DestroyObject](../functions/DestroyObject.md): Destroy an object.
--  [DestroyPlayerObject](../functions/DestroyPlayerObject.md): Destroy a player object.
+- [DestroyObject](../functions/DestroyObject.md): Destroy an object.
+- [DestroyPlayerObject](../functions/DestroyPlayerObject.md): Destroy a player object.
