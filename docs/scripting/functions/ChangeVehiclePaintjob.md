@@ -27,5 +27,5 @@ ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // changes the paintj
 
 ## Related Functions
 
-- ChangeVehicleColor: Set the color of a vehicle.
-- OnVehiclePaintjob: Called when a vehicle's paintjob is changed.
+- [ChangeVehicleColor](../../scripting/functions/ChangeVehicleColor.md): Set the color of a vehicle.
+- [OnVehiclePaintjob](../../scripting/callbacks/OnVehiclePaintjob.md): Called when a vehicle's paintjob is changed.
