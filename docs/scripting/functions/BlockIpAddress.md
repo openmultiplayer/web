@@ -48,4 +48,4 @@ Wildcards can be used with this function, for example blocking the IP '6.9._._' 
 ## Related Functions
 
 - [UnBlockIpAddress](../functions/UnBlockIpAddress): Unblock an IP that was previously blocked.
-- [OnIncomingConnection](../functions/OnIncomingConnection): Called when a player is attempting to connect to the server.
+- [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.
