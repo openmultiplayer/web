@@ -39,7 +39,7 @@ One common use for GetTickCount is for benchmarking. It can be used to calculate
 
 :::warning
 
-GetTickCount will cause problems on servers with uptime of over 24 days as GetTickCount will eventually warp past the integer size constraints. However using This function fixes the problem.
+GetTickCount will cause problems on servers with uptime of over 24 days as GetTickCount will eventually warp past the integer size constraints. Check [this package](https://github.com/ScavengeSurvive/tick-difference) for a solution.
 
 :::
 
