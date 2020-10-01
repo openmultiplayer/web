@@ -318,3 +318,24 @@ added in SA-MP 0.3d RC5 and will not work in earlier versions!
 | 298     | ![](/images/skins/Skin_298.png) | Catalina                                 | Fern Ridge                                         | Female |
 | 299     | ![](/images/skins/Skin_299.png) | Claude Speed                             | Cutscene Only                                      | Male   |
 
+## Additional skins
+
+:::warning
+These skins (300 to 311) were added in SA-MP 0.3.7 RC3 and will not
+work in earlier versions!
+:::
+
+| Skin ID | Preview                         | Skin Model Name                                     | Singleplayer Location | Gender |
+| ------- | ------------------------------- | --------------------------------------------------- | --------------------- | ------ |
+| 300     | ![](/images/skins/Skin_300.png) | Los Santos Police Officer (Without gun holster)     | -                     | Male   |
+| 301     | ![](/images/skins/Skin_301.png) | San Fierro Police Officer (Without gun holster)     | -                     | Male   |
+| 302     | ![](/images/skins/Skin_302.png) | Las Venturas Police Officer (Without gun holster)   | -                     | Male   |
+| 303     | ![](/images/skins/Skin_303.png) | Los Santos Police Officer (Without uniform)         | -                     | Male   |
+| 304     | ![](/images/skins/Skin_304.png) | Los Santos Police Officer (Without uniform)         | -                     | Male   |
+| 305     | ![](/images/skins/Skin_305.png) | Las Venturas Police Officer (Without uniform)       | -                     | Male   |
+| 306     | ![](/images/skins/Skin_306.png) | Los Santos Police Officer                           | -                     | Female |
+| 307     | ![](/images/skins/Skin_307.png) | San Fierro Police Officer                           | -                     | Female |
+| 308     | ![](/images/skins/Skin_308.png) | San Fierro Paramedic (Emergency Medical Technician) | -                     | Female |
+| 309     | ![](/images/skins/Skin_309.png) | Las Venturas Police Officer                         | -                     | Female |
+| 310     | ![](/images/skins/Skin_310.png) | Country Sheriff (Without hat)                       | -                     | Male   |
+| 311     | ![](/images/skins/Skin_311.png) | Desert Sheriff (Without hat)                        | -                     | Male   |
