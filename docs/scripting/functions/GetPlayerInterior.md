@@ -43,5 +43,5 @@ Always returns 0 for NPCs.
 
 ## Related Functions
 
-- SetPlayerInterior: Set a player's interior.
-- GetPlayerVirtualWorld: Check what virtual world a player is in.
+- [SetPlayerInterior](../functions/SetPlayerInterior): Set a player's interior.
+- [GetPlayerVirtualWorld](../functions/GetPlayerVirtualWorld): Check what virtual world a player is in.

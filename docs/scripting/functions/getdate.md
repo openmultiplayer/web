@@ -42,4 +42,4 @@ printf("Days since the start of the year: %d", Days);
 ## Related Functions
 
 
--  gettime: Get the current time of the server as a unix timestamp.
+-  [gettime](../functions/gettime): Get the current time of the server as a unix timestamp.

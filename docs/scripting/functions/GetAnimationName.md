@@ -48,4 +48,4 @@ public OnPlayerUpdate(playerid)
 
 ## Related Functions
 
-- GetPlayerAnimationIndex: Returns the index of any running applied animations
+- [GetPlayerAnimationIndex](../functions/GetPlayerAnimationIndex): Returns the index of any running applied animations

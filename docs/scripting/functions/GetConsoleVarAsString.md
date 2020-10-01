@@ -52,5 +52,5 @@ Using this function with anything other than a string (integer, boolean or float
 
 ## Related Functions
 
-- GetConsoleVarAsInt: Retreive a server variable as an integer.
-- GetConsoleVarAsBool: Retreive a server variable as a boolean.
+- [GetConsoleVarAsInt](../functions/GetConsoleVarAsInt): Retreive a server variable as an integer.
+- [GetConsoleVarAsBool](../functions/GetConsoleVarAsBool): Retreive a server variable as a boolean.

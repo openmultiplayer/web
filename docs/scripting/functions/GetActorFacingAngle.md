@@ -37,5 +37,5 @@ GetActorFacingAngle(actorid, angle);
 
 ## Related Functions
 
-- SetActorFacingAngle: Set the facing angle of an actor.
-- GetActorPos: Get the position of an actor.
+- [SetActorFacingAngle](../functions/SetActorFacingAngle): Set the facing angle of an actor.
+- [GetActorPos](../functions/GetActorPos): Get the position of an actor.

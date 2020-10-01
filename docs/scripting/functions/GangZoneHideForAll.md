@@ -27,12 +27,12 @@ GangZoneHideForAll(gangzone);
 
 ## Related Functions
 
-- GangZoneCreate: Create a gangzone.
-- GangZoneDestroy: Destroy a gangzone.
-- GangZoneShowForPlayer: Show a gangzone for a player.
-- GangZoneShowForAll: Show a gangzone for all players.
-- GangZoneHideForPlayer: Hide a gangzone for a player.
-- GangZoneFlashForPlayer: Make a gangzone flash for a player.
-- GangZoneFlashForAll: Make a gangzone flash for all players.
-- GangZoneStopFlashForPlayer: Stop a gangzone flashing for a player.
-- GangZoneStopFlashForAll: Stop a gangzone flashing for all players.
+- [GangZoneCreate](../functions/GangZoneCreate): Create a gangzone.
+- [GangZoneDestroy](../functions/GangZoneDestroy): Destroy a gangzone.
+- [GangZoneShowForPlayer](../functions/GangZoneShowForPlayer): Show a gangzone for a player.
+- [GangZoneShowForAll](../functions/GangZoneShowForAll): Show a gangzone for all players.
+- [GangZoneHideForPlayer](../functions/GangZoneHideForPlayer): Hide a gangzone for a player.
+- [GangZoneFlashForPlayer](../functions/GangZoneFlashForPlayer): Make a gangzone flash for a player.
+- [GangZoneFlashForAll](../functions/GangZoneFlashForAll): Make a gangzone flash for all players.
+- [GangZoneStopFlashForPlayer](../functions/GangZoneStopFlashForPlayer): Stop a gangzone flashing for a player.
+- [GangZoneStopFlashForAll](../functions/GangZoneStopFlashForAll): Stop a gangzone flashing for all players.

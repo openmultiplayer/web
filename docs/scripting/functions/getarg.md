@@ -48,5 +48,5 @@ public OnFilterScriptInit()
 ## Related Functions
 
 
--  numargs: Return the number of arguments.
--  setarg: Set an argument.
+-  [numargs](../functions/numargs): Return the number of arguments.
+-  [setarg](../functions/setarg): Set an argument.

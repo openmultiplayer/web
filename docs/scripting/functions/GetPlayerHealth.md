@@ -51,6 +51,6 @@ Health is obtained rounded to integers: set 50.15, but get 50.0
 
 ## Related Functions
 
-- SetPlayerHealth: Set a player's health.
-- GetVehicleHealth: Check the health of a vehicle.
-- GetPlayerArmour: Find out how much armour a player has.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Set a player's health.
+- [GetVehicleHealth](../functions/GetVehicleHealth): Check the health of a vehicle.
+- [GetPlayerArmour](../functions/GetPlayerArmour): Find out how much armour a player has.
