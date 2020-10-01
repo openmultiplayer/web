@@ -90,10 +90,6 @@ module.exports = {
               href: "https://sa-mp.com",
             },
             {
-              label: "SA-MP Wiki",
-              href: "https://wiki.sa-mp.com",
-            },
-            {
               label: "Blog",
               to: "blog",
               href: "https://open.mp/blog",
