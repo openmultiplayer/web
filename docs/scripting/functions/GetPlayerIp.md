@@ -43,10 +43,10 @@ This function does not work when used in OnPlayerDisconnect because the player i
 
 ## Related Functions
 
-- NetStats_GetIpPort: Get a player's IP and port.
-- GetPlayerName: Get a player's name.
-- GetPlayerPing: Get the ping of a player.
-- GetPlayerVersion: Get a player's client-version.
-- OnIncomingConnection: Called when a player is attempting to connect to the server.
-- OnPlayerConnect: Called when a player connects to the server.
-- OnPlayerDisconnect: Called when a player leaves the server.
+- [NetStats_GetIpPort](../functions/NetStats_GetIpPort): Get a player's IP and port.
+- [GetPlayerName](../functions/GetPlayerName): Get a player's name.
+- [GetPlayerPing](../functions/GetPlayerPing): Get the ping of a player.
+- [GetPlayerVersion](../functions/GetPlayerVerion): Get a player's client-version.
+- [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.
+- [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
+- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.

@@ -44,4 +44,4 @@ if(GetActorVirtualWorld(MyActor) == 69)
 
 ## Related Functions
 
-- SetActorVirtualWorld: Set the virtual world of an actor.
+- [SetActorVirtualWorld](../functions/SetActorVirtualWorld): Set the virtual world of an actor.

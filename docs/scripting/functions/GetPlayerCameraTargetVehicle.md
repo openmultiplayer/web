@@ -74,7 +74,7 @@ This function is disabled by default to save bandwidth. Use EnablePlayerCameraTa
 
 ## Related Functions
 
-- GetPlayerCameraTargetPlayer: Get the ID of the player a player is looking at.
-- GetPlayerCameraTargetObject: Get the ID of the object a player is looking at.
-- EnablePlayerCameraTarget: Enable player camera targetting functions.
-- GetPlayerCameraFrontVector: Get the player's camera front vector
+- [GetPlayerCameraTargetPlayer](../functions/GetPlayerCameraTargetPlayer): Get the ID of the player a player is looking at.
+- [GetPlayerCameraTargetObject](../functions/GetplayerCameraTargetObject): Get the ID of the object a player is looking at.
+- [EnablePlayerCameraTarget](../functions/EnablePlayerCameraTarget): Enable player camera targetting functions.
+- [GetPlayerCameraFrontVector](../functions/GetPlayercameraFrontVector): Get the player's camera fron

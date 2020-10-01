@@ -38,5 +38,5 @@ GetPlayerColor will return nothing (0) unless SetPlayerColor has been used first
 
 ## Related Functions
 
-- SetPlayerColor: Set a player's color.
-- ChangeVehicleColor: Set the color of a vehicle.
+- [SetPlayerColor](../functions/SetPlayerColor): Set a player's color.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.
