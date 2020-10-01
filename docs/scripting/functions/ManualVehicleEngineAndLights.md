@@ -45,6 +45,6 @@ Is it not possible to reverse this function after it has been used. You must eit
 ## Related Functions
 
 
--  SetVehicleParamsEx: Sets a vehicle's params for all players.
--  GetVehicleParamsEx: Get a vehicle's parameters.
--  SetVehicleParamsForPlayer: Set the parameters of a vehicle for a player.
+-  [SetVehicleParamsEx](../functions/SetVehicleParamsEx.md): Sets a vehicle's params for all players.
+-  [GetVehicleParamsEx](../functions/GetVehicleParamsEx.md): Get a vehicle's parameters.
+-  [SetVehicleParamsForPlayer](../functions/SetVehicleParamsForPlayer.md): Set the parameters of a vehicle for a player.
