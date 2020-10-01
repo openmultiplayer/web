@@ -10,7 +10,7 @@
 
 <p align="center">
   <a
-    href="https://wiki.openmultiplayer.now.sh"
+    href="https://open.mp/docs"
   >Wiki</a>
   |
   <a
