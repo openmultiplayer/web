@@ -44,4 +44,4 @@ ClearActorAnimations(MyActor);
 
 ## Related Functions
 
-- ApplyActorAnimation: Apply an animation to an actor.
+- [ApplyActorAnimation](../../scripting/functions/ApplyActorAnimation.md): Apply an animation to an actor.

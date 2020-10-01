@@ -37,6 +37,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- CreateVehicle: Create a vehicle.
-- RemovePlayerFromVehicle: Throw a player out of their vehicle.
-- SetVehicleToRespawn: Respawn a vehicle.
+- [CreateVehicle](../../scripting/functions/CreateVehicle.md): Create a vehicle.
+- [RemovePlayerFromVehicle](../../scripting/functions/RemovePlayerFromVehicle.md): Throw a player out of their vehicle.
+- [SetVehicleToRespawn](../../scripting/functions/SetVehicleToRespawn.md): Respawn a vehicle.
