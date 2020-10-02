@@ -41,4 +41,4 @@ public OnGameModeInit( )
 ## Related Functions
 
 
--  printf: Print a formatted message into the server logs and console.
+-  [printf](../functions/printf): Print a formatted message into the server logs and console.

@@ -54,5 +54,5 @@ The format string or its output should not exceed 1024 characters. Anything beyo
 ## Related Functions
 
 
--  print: Print a basic message to the server logs and console.
--  format: Format a string.
+-  [print](../functions/print): Print a basic message to the server logs and console.
+-  [format](../functions/format): Format a string.
