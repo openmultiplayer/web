@@ -68,4 +68,4 @@ If the seat is invalid or is taken, will cause a crash when they EXIT the vehicl
 -  [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle.md): Throw a player out of their vehicle.
 -  [GetPlayerVehicleID](../functions/GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
 -  [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Check what seat a player is in.
--  [OnPlayerEnterVehicle](../functions/OnPlayerEnterVehicle.md): Called when a player starts to enter a vehicle.
+-  [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle.md): Called when a player starts to enter a vehicle.
