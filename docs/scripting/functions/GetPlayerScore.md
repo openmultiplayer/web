@@ -41,5 +41,5 @@ public OnPlayerCommandText(playerid,text[])
 ## Related Functions
 
 
--  SetPlayerScore: Set the score of a player.
--  GetPlayerPing: Get the ping of a player.
+-  [SetPlayerScore](../functions/SetPlayerScore.md): Set the score of a player.
+-  [GetPlayerPing](../functions/GetPlayerPing.md): Get the ping of a player.

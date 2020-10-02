@@ -60,6 +60,6 @@ A vehicle catches on fire when its health is below 250. It will explode a few se
 ## Related Functions
 
 
--  SetVehicleHealth: Set the health of a vehicle.
--  GetPlayerHealth: Find out how much health a player has.
--  GetPlayerArmour: Find out how much armour a player has.
+-  [SetVehicleHealth](../functions/SetVehicleHealth.md): Set the health of a vehicle.
+-  [GetPlayerHealth](../functions/GetPlayerHealth.md): Find out how much health a player has.
+-  [GetPlayerArmour](../functions/GetPlayerArmour.md): Find out how much armour a player has.

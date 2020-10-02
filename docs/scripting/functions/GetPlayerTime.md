@@ -42,6 +42,6 @@ if(hour == 13 && minutes == 37)
 ## Related Functions
 
 
--  SetPlayerTime: Set a player's time.
--  SetWorldTime: Set the global server time.
--  TogglePlayerClock: Toggle the clock in the top-right corner.
+-  [SetPlayerTime](../functions/SetPlayerTime.md): Set a player's time.
+-  [SetWorldTime](../functions/SetWorldTime.md): Set the global server time.
+-  [TogglePlayerClock](../functions/TogglePlayerClock.md): Toggle the clock in the top-right corner.

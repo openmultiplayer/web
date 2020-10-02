@@ -47,5 +47,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Related Functions
 
 
--  SetPlayerWantedLevel: Set a player's wanted level.
--  PlayCrimeReportForPlayer: Play a crime report for a player.
+-  [SetPlayerWantedLevel](../functions/SetPlayerWantedLevel.md): Set a player's wanted level.
+-  [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer.md): Play a crime report for a player.

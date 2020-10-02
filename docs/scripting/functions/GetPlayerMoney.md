@@ -30,5 +30,5 @@ public OnPlayerSpawn(playerid)
 
 ## Related Functions
 
-- GivePlayerMoney: Give a player money.
-- ResetPlayerMoney: Set the money of a player to $0.
+- [GivePlayerMoney](../functions/GivePlayerMoney.md): Give a player money.
+- [ResetPlayerMoney](../functions/ResetPlayerMoney.md): Set the money of a player to $0.

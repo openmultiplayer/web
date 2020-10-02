@@ -62,7 +62,7 @@ Known Bug(s):
 ## Related Functions
 
 
--  AddVehicleComponent: Add a component to a vehicle.
--  GetVehicleComponentType: Check the type of component via the ID.
--  OnVehicleMod: Called when a vehicle is modded.
--  OnEnterExitModShop: Called when a vehicle enters or exits a mod shop.
+-  [AddVehicleComponent](../functions/AddVehicleComponent.md): Add a component to a vehicle.
+-  [GetVehicleComponentType](../functions/GetVehicleComponentType.md): Check the type of component via the ID.
+-  [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.
+-  [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.

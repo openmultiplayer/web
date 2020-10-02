@@ -46,6 +46,6 @@ public OnPlayerDeath(playerid, killerid, reason)
 ## Related Functions
 
 
--  GetPlayerWeapon: Check what weapon a player is currently holding.
--  AllowInteriorWeapons: Determine if weapons can be used in interiors.
--  GivePlayerWeapon: Give a player a weapon.
+-  [GetPlayerWeapon](../functions/GetPlayerWeapon.md): Check what weapon a player is currently holding.
+-  [AllowInteriorWeapons](../functions/AllowInteriorWeapons.md): Determine if weapons can be used in interiors.
+-  [GivePlayerWeapon](../functions/GivePlayerWeapon.md): Give a player a weapon.

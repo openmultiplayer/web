@@ -47,5 +47,5 @@ if(strcmp(cmdtext, "/myseat", true) == 0)
 ## Related Functions
 
 
--  GetPlayerVehicleID: Get the ID of the vehicle the player is in.
--  PutPlayerInVehicle: Put a player in a vehicle.
+-  [GetPlayerVehicleID](../functions/GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
+-  [PutPlayerInVehicle](../functions/PutPlayerInVehicle.md): Put a player in a vehicle.

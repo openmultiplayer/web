@@ -50,5 +50,5 @@ Returns a vehicle's rotation on all axes as a quaternion.
 ## Related Functions
 
 
--  GetVehicleZAngle: Check the current angle of a vehicle.
--  GetVehicleRotation: Get the rotation of a vehicle on the XYZ axis.
+-  [GetVehicleZAngle](../functions/GetVehicleZAngle.md): Check the current angle of a vehicle.
+-  [GetVehicleRotation](../functions/GetVehicleRotation.md): Get the rotation of a vehicle on the XYZ axis.

@@ -38,5 +38,5 @@ if(surf == INVALID_VEHICLE_ID) SendClientMessage(playerid, COLOR_RED, "You are n
 ## Related Functions
 
 
--  GetPlayerVehicleID: Get the ID of the vehicle the player is in.
--  GetPlayerVehicleSeat: Check what seat a player is in.
+-  [GetPlayerVehicleID](../functions/GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
+-  [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Check what seat a player is in.
