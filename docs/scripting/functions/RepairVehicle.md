@@ -2,7 +2,7 @@
 id: RepairVehicle
 title: RepairVehicle
 description: Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 :::warning
@@ -15,21 +15,17 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.).
 
-
-| Name | Description |
-|------|-------------|
-|vehicleid | The ID of the vehicle to repair.|
-
+| Name      | Description                      |
+| --------- | -------------------------------- |
+| vehicleid | The ID of the vehicle to repair. |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. This means the vehicle specified does not exist.
-
+0: The function failed to execute. This means the vehicle specified does not exist.
 
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -47,9 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## Related Functions
 
-
--  SetVehicleHealth: Set the health of a vehicle.
--  GetVehicleHealth: Check the health of a vehicle.
+- [SetVehicleHealth](../functions/SetVehicleHealth.md): Set the health of a vehicle.
+- [GetVehicleHealth](../functions/GetVehicleHealth.md): Check the health of a vehicle.

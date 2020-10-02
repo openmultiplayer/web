@@ -36,5 +36,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- IsPlayerAdmin: Checks if a player is logged into RCON.
-- AllowPlayerTeleport: Toggle waypoint teleporting for players.
+- [IsPlayerAdmin](../../scripting/functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
+- [AllowPlayerTeleport](../../scripting/functions/AllowPlayerTeleport.md): Toggle waypoint teleporting for players.

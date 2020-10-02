@@ -17,16 +17,17 @@ const is not widerly used however it declares a variable which can not be modifi
 Enumerations are a very useful system for representing large groups of data and modifying constants quickly. There are a few main uses - replacing large sets of define statements, symbolically representing array slots (these are actually the same thing but they look different) and creating new tags.
 
 By far the most common use is as array definitions:
+
 ```c
 enum E_MY_ARRAY
 {
     E_MY_ARRAY_MONEY,
     E_MY_ARRAY_GUN
 }
- 
+
 new
     gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
- 
+
 public OnPlayerConnect(playerid)
 {
     gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
@@ -39,7 +40,7 @@ That will create an array with two slots for every player. Into the one referenc
 ```c
 new
     gPlayerData[MAX_PLAYERS][2];
- 
+
 public OnPlayerConnect(playerid)
 {
     gPlayerData[playerid][0] = 0;
@@ -56,10 +57,10 @@ enum E_MY_ARRAY
     E_MY_ARRAY_AMMO,
     E_MY_ARRAY_GUN
 }
- 
+
 new
     gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
- 
+
 public OnPlayerConnect(playerid)
 {
     gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
@@ -122,7 +123,7 @@ enum E_EXAMPLE (*= 2)
 }
 ```
 
-In this all the values are 0. Why? Well the first value by default is 0, then 0 * 2 = 0, then 0 * 2 = 0 and 0 * 2 = 0. So how do we correct this? This is what custom values are for:
+In this all the values are 0. Why? Well the first value by default is 0, then 0 _ 2 = 0, then 0 _ 2 = 0 and 0 \* 2 = 0. So how do we correct this? This is what custom values are for:
 
 ```c
 enum E_EXAMPLE (*= 2)
@@ -145,11 +146,13 @@ enum E_EXAMPLE (*= 2)
 ```
 
 Gives:
+
 ```c
 0, 1, 2, 4
 ```
 
 While:
+
 ```c
 enum E_EXAMPLE (*= 2)
 {
@@ -160,6 +163,7 @@ enum E_EXAMPLE (*= 2)
 ```
 
 Gives:
+
 ```c
 1, 1, 1, 2
 ```
@@ -167,6 +171,7 @@ Gives:
 It's not advised to use anything but += 1 for arrays.
 
 You can also use arrays in enums:
+
 ```c
 enum E_EXAMPLE
 {
@@ -179,6 +184,7 @@ enum E_EXAMPLE
 That would make E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 10, E_EXAMPLE_2 = 11 and E_EXAMPLE = 12, contrary to the popular belief of 0, 1, 2 and 3.
 
 enums items can also have tags, so for out original example:
+
 ```c
 enum E_MY_ARRAY
 {
@@ -187,10 +193,10 @@ enum E_MY_ARRAY
     Float:E_MY_ARRAY_HEALTH,
     E_MY_ARRAY_GUN
 }
- 
+
 new
     gPlayerData[MAX_PLAYERS][E_MY_ARRAY];
- 
+
 public OnPlayerConnect(playerid)
 {
     gPlayerData[playerid][E_MY_ARRAY_MONEY] = 0;
@@ -199,9 +205,11 @@ public OnPlayerConnect(playerid)
     gPlayerData[playerid][E_MY_ARRAY_HEALTH] = 50.0;
 }
 ```
+
 That will not give a tag mismatch.
 
 Enums can also be used as tags themselves:
+
 ```c
 enum E_MY_TAG (<<= 1)
 {
@@ -211,22 +219,25 @@ enum E_MY_TAG (<<= 1)
     E_MY_TAG_VAL_3,
     E_MY_TAG_VAL_4
 }
- 
+
 new
     E_MY_TAG:gMyTagVar = E_MY_TAG_VAL_2 | E_MY_TAG_VAL_3;
 ```
 
 That will create a new variable and assign it the value 6 (4 | 2), and it will have a custom tag so doing:
+
 ```c
 gMyTagVar = 7;
 ```
 
 Will generate a tag mismatch warning, although you can use tag overwrites to bypass it:
+
 ```c
 gMyTagVar = E_MY_TAG:7;
 ```
 
 This can be very useful for flag data (i.e. one bit for some data), or even combined data:
+
 ```c
 enum E_MY_TAG (<<= 1)
 {
@@ -237,7 +248,7 @@ enum E_MY_TAG (<<= 1)
     E_MY_TAG_VAL_3,
     E_MY_TAG_VAL_4
 }
- 
+
 new
     E_MY_TAG:gMyTagVar = E_MY_TAG_VAL_2 | E_MY_TAG_VAL_3 | (E_MY_TAG:7 & E_MY_TAG_MASK);
 ```
@@ -245,6 +256,7 @@ new
 Which will produce a value of 1543 (0x0607).
 
 Finally, as stated originally, enums can be used to replace defines by ommitting the name:
+
 ```c
 #define TEAM_NONE   0
 #define TEAM_COP    1
@@ -255,6 +267,7 @@ Finally, as stated originally, enums can be used to replace defines by ommitting
 ```
 
 I'm sure many of you have seen loads of things like that to define teams. It's all well and good but it's very static. That can easilly be replaced by an enum to handle numeric assignments automatically:
+
 ```c
 enum
 {
@@ -268,15 +281,16 @@ enum
 ```
 
 Those all have the same values as they had before, and can be used in exactly the same way:
+
 ```c
 new
     gPlayerTeam[MAX_PLAYERS] = {TEAM_NONE, ...};
- 
+
 public OnPlayerConnect(playerid)
 {
     gPlayerTeam[playerid] = TEAM_NONE;
 }
- 
+
 public OnPlayerRequestSpawn(playerid)
 {
     if (gPlayerSkin[playerid] == gCopSkin)
@@ -287,6 +301,7 @@ public OnPlayerRequestSpawn(playerid)
 ```
 
 While we're on the subject there is a much better way of defining teams based on this method:
+
 ```c
 enum (<<= 1)
 {
@@ -300,6 +315,7 @@ enum (<<= 1)
 ```
 
 Now TEAM_COP is 1, TEAM_ROBBER is 2, TEAM_CIV is 4 etc, which in binary is 0b00000001, 0b00000010 and 0b00000100. This means that if a player's team is 3 then they are in both the cop team and the robber team. That may sound pointless but it does open up possibilities:
+
 ```c
 enum (<<= 1)
 {
@@ -316,16 +332,19 @@ enum (<<= 1)
 Using that you can be in both a normal team and the admin team using only a single variable. Obviously a little code modification is required but that's easy:
 
 To add a player to a team:
+
 ```c
 gPlayerTeam[playerid] |= TEAM_COP;
 ```
 
 To remove a player from a team:
+
 ```c
 gPlayerTeam[playerid] &= ~TEAM_COP;
 ```
 
 To check if a player is in a team:
+
 ```c
 if (gPlayerTeam[playerid] & TEAM_COP)
 ```
@@ -335,9 +354,10 @@ Very simple and very useful.
 ## `forward`
 
 forward tells the compiler that a function is coming later. It is required for all public functions however can be used in other places. It's use is "forward" followed by the full name and parameters of the function you want to forward, followed by a semicolon:
+
 ```c
 forward MyPublicFunction(playerid, const string[]);
- 
+
 public MyPublicFunction(playerid, const string[])
 {
 }
@@ -351,7 +371,7 @@ main()
     new
         Float:myVar = MyFloatFunction();
 }
- 
+
 Float:MyFloatFunction()
 {
     return 5.0;
@@ -359,12 +379,13 @@ Float:MyFloatFunction()
 ```
 
 This will give a reparse warning because the compiler doesn't know how to convert the return of the function to a float because it doesn't know if the function returns a normal number or a float. Clearly in this example it returns a float. This can either be solved by putting the function at a point in the code before it's used:
+
 ```c
 Float:MyFloatFunction()
 {
     return 5.0;
 }
- 
+
 main()
 {
     new
@@ -373,30 +394,34 @@ main()
 ```
 
 Or by forwarding the function so the compiler knows what to do:
+
 ```c
 forward Float:MyFloatFunction();
- 
+
 main()
 {
     new
         Float:myVar = MyFloatFunction();
 }
- 
+
 Float:MyFloatFunction()
 {
     return 5.0;
 }
 ```
+
 Note the forward includes the return tag too.
 
 ## `native`
 
 A native function is one defined in the virtual machine (i.e. the thing which runs the script), not in the script itself. You can only define native functions if they're coded into SA:MP or a plugin, however you can create fake natives. Because the native functions from .inc files are detected by pawno and listed in the box on the right hand side of pawno it can be useful to use native to get your own custom functions listed there. A normal native declaration could look like:
+
 ```c
 native printf(const format[], {Float,_}:...);
 ```
 
 If you want your own functions to appear without being declared native you can do:
+
 ```c
 /*
 native MyFunction(playerid);
@@ -406,11 +431,13 @@ native MyFunction(playerid);
 PAWNO doesn't recognise comments like that so will add the function to the list but the compiler does recognise comments like that so will ignore the declaration.
 
 The other interesting thing you can do with native is rename/overload functions:
+
 ```c
 native my_print(const string[]) = print;
 ```
 
 Now the function print doesn't actually exist. It is still in SA:MP, and the compiler knows it's real name thanks to the "= print" part, but if you try call it in PAWN you will get an error as you have renamed print internally to my_print. As print now doesn't exist you can define it just like any other function:
+
 ```c
 print(const string[])
 {
@@ -424,18 +451,21 @@ Now whenever print() is used in a script your function will be called instead of
 ## `new`
 
 This is the core of variables, one of the most important keywords about. new declares a new variable:
+
 ```c
 new
     myVar = 5;
 ```
 
 That will create a variable, name it myVar and assign it the value of 5. By default all variables are 0 if nothing is specified:
+
 ```c
 new
     myVar;
- 
+
 printf("%d", myVar);
 ```
+
 Will give "0".
 
 A variable's scope is where it can be used. Scope is restricted by braces (the curly brackets - {} ), any variable declared inside a set of braces can only be used within those braces.
@@ -446,10 +476,10 @@ if (a == 1)
     // Braces start the line above this one
     new
         myVar = 5;
- 
+
     // This printf is in the same braces so can use myVar.
     printf("%d", myVar);
- 
+
     // This if statement is also within the braces, so it and everything in it can use myVar
     if (myVar == 1)
     {
@@ -466,28 +496,30 @@ The example above also shows why correct indentation is so important.
 If a global variable (i.e. one declared outside a function) is declared new, it can be used everywhere after the declaration:
 
 File1.pwn:
+
 ```c
 MyFunc1()
 {
     // Error, gMyVar doesn't exist yet
     printf("%d", gMyVar);
 }
- 
+
 // gMyVar is declared here
 new
     gMyVar = 10;
- 
+
 MuFunc2()
 {
     // Fine as gMyVar now exists
     printf("%d", gMyVar);
 }
- 
+
 // Include another file here
 #include "file2.pwn"
 ```
 
 file2.pwn:
+
 ```c
 MyFunc3()
 {
@@ -499,12 +531,13 @@ MyFunc3()
 ## `operator`
 
 This allows you to overload operators for custom tags. For example:
+
 ```c
 stock BigEndian:operator=(b)
 {
     return BigEndian:(((b >>> 24) & 0x000000FF) | ((b >>> 8) & 0x0000FF00) | ((b << 8) & 0x00FF0000) | ((b << 24) & 0xFF000000));
 }
- 
+
 main()
 {
     new
@@ -514,11 +547,13 @@ main()
 ```
 
 Normal pawn numbers are stored in what's called little endian. This operator allows you to define an assignment to convert a normal number to a big endian number. The difference between big endian and little endian is the byte order. 7 in little endian is stored as:
+
 ```c
 07 00 00 00
 ```
 
 7 in big endian is stored as:
+
 ```c
 00 00 00 07
 ```
@@ -526,17 +561,19 @@ Normal pawn numbers are stored in what's called little endian. This operator all
 Therefore if you print the contents of a big endian stored number it will try read it as a little endian number and get it backwards, thus printing the numer 0x07000000, aka 117440512, which is what you will get if you run this code.
 
 You can overload the following operators:
+
 ```c
 +, -, *, /, %, ++, --, ==, !=, <, >, <=, >=, ! and =
 ```
 
 Also note that you can make them do whatever you like:
+
 ```c
 stock BigEndian:operator+(BigEndian:a, BigEndian:b)
 {
     return BigEndian:42;
 }
- 
+
 main()
 {
     new
@@ -544,6 +581,7 @@ main()
         BigEndian:b = 199;
     printf("%d", _:(a + b));
 ```
+
 Will simply give 42, nothing to do with addition.
 
 ## `public`
@@ -553,14 +591,15 @@ public is used to make a function visible to the Virtual Machine, i.e. it allows
 A public function has it's textual name stored in the amx file, unlike normal functions which only have their address stored for jumps, which is another drawback to decompilation. This is so that you can call the function by name from outside the script, it also allows you to call functions by name from inside the script by leaving and re-entering it. A native function call is almost the opposite of a public function call, it calls a function outside the script from inside the script as opposed to calling a function inside the script from outside the script. If you combine the two you get functions like SetTimer, SetTimerEx, CallRemoteFunction and CallLocalFunction which call functions by name, not address.
 
 Calling a function by name:
+
 ```c
 forward MyPublicFunc();
- 
+
 main()
 {
     CallLocalFunction("MyPublicFunc", "");
 }
- 
+
 public MyPublicFunc()
 {
     printf("Hello");
@@ -568,21 +607,22 @@ public MyPublicFunc()
 ```
 
 public functions prefixed by either "public" or "@" and, as mentioned in the forward section, all require forwarding:
+
 ```c
 forward MyPublicFunc();
 forward @MyOtherPublicFunc(var);
- 
+
 main()
 {
     CallLocalFunction("MyPublicFunc", "");
     SetTimerEx("@MyOtherPublicFunc", 5000, 0, "i", 7);
 }
- 
+
 public MyPublicFunc()
 {
     printf("Hello");
 }
- 
+
 @MyOtherPublicFunc(var)
 {
     printf("%d", var);
@@ -594,6 +634,7 @@ Obviously that example introduced SetTimerEx to call "MyOtherPublicFunc" after 5
 main, used in most of these examples, is similar to a public function in that it can be called from outside the script, however it is not a public function - it just has a special known address so the server knows where to jump to to run it.
 
 All SA:MP callbacks are public and called from outside the script automatically:
+
 ```c
 public OnPlayerConnect(playerid)
 {
@@ -604,19 +645,21 @@ public OnPlayerConnect(playerid)
 When someone joins the server it will automatically look up this public function in all scripts (gamemode first then filterscripts) and if it finds it, calls it.
 
 If you want to call a public function from inside the script however you do not have to call it by name, public functions also behave as normal functions too:
+
 ```c
 forward MyPublicFunc();
- 
+
 main()
 {
     MyPublicFunc();
 }
- 
+
 public MyPublicFunc()
 {
     printf("Hello");
 }
 ```
+
 This is obviously much faster than using CallLocalFunction or another native.
 
 ## `static`
@@ -624,28 +667,30 @@ This is obviously much faster than using CallLocalFunction or another native.
 A static variable is like a global new variable but with a more limited scope. When static is used globally the resulting created variables are limited to only the section in which they were created (see #section). So taking the earlier "new" example:
 
 **file1.pwn**
+
 ```c
 MyFunc1()
 {
     // Error, gMyVar doesn't exist yet
     printf("%d", gMyVar);
 }
- 
+
 // gMyVar is declared here
 new
     gMyVar = 10;
- 
+
 MuFunc2()
 {
     // Fine as gMyVar now exists
     printf("%d", gMyVar);
 }
- 
+
 // Include another file here
 #include "file2.pwn"
 ```
 
 file2.pwn
+
 ```c
 MyFunc3()
 {
@@ -657,28 +702,30 @@ MyFunc3()
 And modifying it for static would give:
 
 file1.pwn
+
 ```c
 MyFunc1()
 {
     // Error, g_sMyVar doesn't exist yet
     printf("%d", g_sMyVar);
 }
- 
+
 // g_sMyVar is declared here
 static
     g_sMyVar = 10;
- 
+
 MuFunc2()
 {
     // Fine as _sgMyVar now exists
     printf("%d", g_sMyVar);
 }
- 
+
 // Include another file here
 #include "file2.pwn"
 ```
 
 file2.pwn
+
 ```c
 MyFunc3()
 {
@@ -699,7 +746,7 @@ main()
         MyFunc();
     }
 }
- 
+
 MyFunc()
 {
     new
@@ -711,6 +758,7 @@ MyFunc()
 ```
 
 Every time the function is called i is reset to 0, so the resulting output will be:
+
 ```c
 0
 1
@@ -723,6 +771,7 @@ Every time the function is called i is reset to 0, so the resulting output will 
 ```
 
 If we replace the "new" with "static" we get:
+
 ```c
 main()
 {
@@ -731,7 +780,7 @@ main()
         MyFunc();
     }
 }
- 
+
 MyFunc()
 {
     static
@@ -743,6 +792,7 @@ MyFunc()
 ```
 
 And, as static locals keep their value between calls, the resulting output it:
+
 ```c
 0
 1
@@ -755,6 +805,7 @@ And, as static locals keep their value between calls, the resulting output it:
 ```
 
 The value given in the declaration (if one is given, like new, static variables default to 0) is the value assigned to the variable the first time the function is called. So if "static i = 5;" were used instead the result would be:
+
 ```c
 5
 6
@@ -773,10 +824,11 @@ You can also have static functions which can only be called from the file in whi
 ## `stock`
 
 stock is used to declare variables and functions which may not be used but which you don't want to generate unused warnings for. With variables stock is like const in that it is a modifier, not a full declaration, so you could have:
+
 ```c
 new stock
     gMayBeUsedVar;
- 
+
 static stock
     g_sMayBeUsedVar;
 ```
@@ -790,12 +842,12 @@ main()
 {
     Func1();
 }
- 
+
 Func1()
 {
     printf("Hello");
 }
- 
+
 Func2()
 {
     printf("Hi");
@@ -803,20 +855,22 @@ Func2()
 ```
 
 Here Func2 is never called so the compiler will give a warning. This may be useful as you may have forgotten to call it, as is generally the case in a straight script, however if Func1 and Func2 are in a library the user may simply not need Func2 so you do:
+
 ```c
 main()
 {
     Func1();
 }
- 
+
 stock Func1()
 {
     printf("Hello");
 }
- 
+
 stock Func2()
 {
     printf("Hi");
 }
 ```
+
 And the function won't be compiled and the warning removed.

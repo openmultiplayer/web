@@ -2,28 +2,24 @@
 id: ResetPlayerMoney
 title: ResetPlayerMoney
 description: Reset a player's money to $0.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
-Reset a player's money to $0.
+Reset a player's money to \$0.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to reset the money of.|
-
+| Name     | Description                                 |
+| -------- | ------------------------------------------- |
+| playerid | The ID of the player to reset the money of. |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. This means the player is not connected.
-
+0: The function failed to execute. This means the player is not connected.
 
 ## Examples
-
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -34,9 +30,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-
 ## Related Functions
 
-
--  GetPlayerMoney: Check how much money a player has.
--  GivePlayerMoney: Give a player money.
+- [GetPlayerMoney](../functions/GetPlayerMoney.md): Check how much money a player has.
+- [GivePlayerMoney](../functions/GivePlayerMoney.md): Give a player money.

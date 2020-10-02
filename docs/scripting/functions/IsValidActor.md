@@ -15,21 +15,17 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Checks if an actor ID is valid.
 
-
-| Name | Description |
-|------|-------------|
-|actorid | The ID of the actor to check.|
-
+| Name    | Description                   |
+| ------- | ----------------------------- |
+| actorid | The ID of the actor to check. |
 
 ## Returns
 
- 1 - The actor is valid.
+1 - The actor is valid.
 
- 0 - The actor is not valid.
-
+0 - The actor is not valid.
 
 ## Examples
-
 
 ```c
 new MyActor;
@@ -38,14 +34,15 @@ public OnGameModeInit()
 {
     MyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
     if(IsValidActor(MyActor))
-    {    
+    {
         SetActorHealth(MyActor, 100);
     }
     return 1;
 }
 ```
 
-
 ## Related Functions
 
-
+- [CreateActor](../../scripting/functions/CreateActor.md): Create an actor.
+- [GetActorPoolSize](../../scripting/functions/GetActorPoolSize.md): Gets the highest actorid created on the server.
+- [SetActorHealth](../../scripting/functions/SetActorHealth.md): Set the health of an actor.

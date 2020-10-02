@@ -2,26 +2,22 @@
 id: GetPlayerSpecialAction
 title: GetPlayerSpecialAction
 description: Retrieves a player's current special action.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
 Retrieves a player's current special action.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to get the special action of.|
-
+| Name     | Description                                        |
+| -------- | -------------------------------------------------- |
+| playerid | The ID of the player to get the special action of. |
 
 ## Returns
 
 The special action of the player (see: [Special Actions](../../scripting/resources/specialactions.md)).
 
-
 ## Examples
-
 
 ```c
 public OnPlayerUpdate(playerid)
@@ -35,9 +31,7 @@ public OnPlayerUpdate(playerid)
 }
 ```
 
-
 ## Related Functions
 
-
--  SetPlayerSpecialAction: Set a player's special action.
--  GetPlayerState: Get a player's current state.
+- SetPlayerSpecialAction: Set a player's special action.
+- GetPlayerState: Get a player's current state.

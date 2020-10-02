@@ -1,8 +1,19 @@
 {
-    "redirects": [
+  "redirects": [
+    {
+      "source": "wiki.open.mp/docs/:all*",
+      "destination": "https://www.open.mp/docs/:all*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
         {
-            "source": "wiki.open.mp/docs/:all*",
-            "destination": "https://www.open.mp/docs/:all*"
+          "key": "X-Robots-Tag",
+          "value": "all"
         }
-    ]
+      ]
+    }
+  ]
 }

@@ -14,6 +14,7 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
 **x = disabled light**
 
 0: (0000 0000)
+
 ```c
     o-o
     | |
@@ -21,6 +22,7 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
 ```
 
 1: (0000 0001)
+
 ```c
     x-o
     | |
@@ -28,6 +30,7 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
 ```
 
 4: (0000 0100)
+
 ```c
     o-x
     | |
@@ -35,6 +38,7 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
 ```
 
 5: (0000 0101)
+
 ```c
     x-x
     | |
@@ -42,6 +46,7 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
 ```
 
 64: (0100 0000)
+
 ```c
     o-o
     | |
@@ -49,6 +54,7 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
 ```
 
 65: (0100 0001)
+
 ```c
     x-o
     | |
@@ -56,6 +62,7 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
 ```
 
 68: (0100 0100)
+
 ```c
     o-x
     | |
@@ -63,16 +70,19 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
 ```
 
 69: (0100 0101)
+
 ```c
     x-x
     | |
     x-x
 ```
+
 Other values not listed here can change the lights, but they are just repeats of other values. For example 15 has the same outcome as 5.
 After 255 the values will wrap around, 256 will be set as 0, 257 as 1 and so on.
 
 **Example Usage:**
 To disable the back two lights of a vehicle while keeping the front the same state:
+
 ```c
 new Panels, Doors, Lights, Tires;
 GetVehicleDamageStatus(vehicleid, Panels, Doors, Lights, Tires);

@@ -15,19 +15,15 @@ This function starts with lowercase letter.
 
 Get a pseudo-random number.
 
-
-| Name | Description |
-|------|-------------|
-|max | The range of values (from 0 to this value minus one) that can be returned.|
-
+| Name | Description                                                                |
+| ---- | -------------------------------------------------------------------------- |
+| max  | The range of values (from 0 to this value minus one) that can be returned. |
 
 ## Returns
 
 A random number ranging from 0 to max-1.
 
-
 ## Examples
-
 
 ```c
 new value = random(5);
@@ -55,7 +51,6 @@ public OnPlayerSpawn(playerid)
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -64,7 +59,4 @@ Using a value smaller than 1 gives weird values.
 
 :::
 
-
 ## Related Functions
-
-

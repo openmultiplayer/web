@@ -50,6 +50,6 @@ public OnPlayerDeath(playerid, reason)
 
 ## Related Functions
 
-- TextDrawHideForAll: Hide a textdraw for all players.
-- TextDrawShowForPlayer: Show a textdraw for a certain player.
-- TextDrawShowForAll: Show a textdraw for all players.
+- [TextDrawHideForAll](../functions/TextDrawHideForAll.md): Hide a textdraw for all players.
+- [TextDrawShowForPlayer](../functions/TextDrawShowForPlayer.md): Show a textdraw for a certain player.
+- [TextDrawShowForAll](../functions/TextDrawShowForAll.md): Show a textdraw for all players.

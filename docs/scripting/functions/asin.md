@@ -1,7 +1,7 @@
 ---
 id: asin
 title: asin
-description:  .
+description: .
 tags: []
 ---
 
@@ -13,13 +13,10 @@ This function starts with lowercase letter.
 
 ## Description
 
- . 
-
+.
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 
 
 ## Related Functions
-
-

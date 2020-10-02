@@ -12,6 +12,7 @@ module.exports = {
       logo: {
         alt: "Open Multiplayer Logo",
         src: "public/logo-light-trans.svg",
+        href: "/docs/",
       },
       links: [
         {
@@ -61,7 +62,7 @@ module.exports = {
           items: [
             {
               label: "Discord",
-              href: "https://discord.gg/hURGKHJ",
+              href: "https://discord.gg/samp",
             },
             {
               label: "Instagram",

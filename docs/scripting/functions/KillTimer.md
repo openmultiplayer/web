@@ -9,19 +9,15 @@ tags: []
 
 Kills (stops) a running timer.
 
-
-| Name | Description |
-|------|-------------|
-|timerid | The ID of the timer to kill (returned by SetTimer or SetTimerEx).|
-
+| Name    | Description                                                       |
+| ------- | ----------------------------------------------------------------- |
+| timerid | The ID of the timer to kill (returned by SetTimer or SetTimerEx). |
 
 ## Returns
 
 This function always returns 0.
 
-
 ## Examples
-
 
 ```c
 new connect_timer[MAX_PLAYERS];
@@ -46,9 +42,7 @@ public WelcomeTimer(playerid)
 }
 ```
 
-
 ## Related Functions
 
-
--  SetTimer: Set a timer.
--  SetTimerEx: Set a timer with parameters.
+- [SetTimer](../../scripting/functions/SetTimer.md): Set a timer.
+- [SetTimerEx](../../scripting/functions/SetTimerEx.md): Set a timer with parameters.
