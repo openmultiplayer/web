@@ -27,5 +27,5 @@ Set an argument that was passed to a function.
 
 ## Related Functions
 
-- getarg: Retrieve an argument from a variable argument list.
-- numargs: Return the number of arguments.
+- [getarg](../functions/getarg): Retrieve an argument from a variable argument list.
+- [numargs](../functions/numargs): Return the number of arguments.
