@@ -24,6 +24,21 @@ Outputs a formatted string on the console (the server window, not the in-game ch
 
 This function does not return any specific values.
 
+## Format Specifiers
+
+|Specifier|Meaning|
+|--- |--- |
+|%i|Integer|
+|%d|Integer|
+|%s|String|
+|%f|Floating-point number|
+|%c|ASCII character|
+|%x|Hexadecimal number|
+|%b|Binary number|
+|%%|Literal '%'|
+|%q|Escape a text for SQLite. (Added in 0.3.7 R2)|
+
+
 ## Examples
 
 ```c
@@ -47,5 +62,5 @@ The format string or its output should not exceed 1024 characters. Anything beyo
 
 ## Related Functions
 
-- print: Print a basic message to the server logs and console.
-- format: Format a string.
+- [print](./print.md): Print a basic message to the server logs and console.
+- [format](./format.md): Format a string.
