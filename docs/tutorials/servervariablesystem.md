@@ -7,21 +7,28 @@ description:
   can be used in server's gamemode and filterscripts at the same time.
 ---
 
-The **server variable system** (put short, **SVar**) is a new way of creating global 
-server variables efficient and dynamically, meaning that they can be used in server's gamemode and filterscripts at the same time.
+The **server variable system** (put short, **SVar**) is a new way of creating
+global server variables efficient and dynamically, meaning that they can be used
+in server's gamemode and filterscripts at the same time.
 
 They are similar to [PVars](perplayervariablesystem), but are not tied to a
 player ID.
 
+:::warning
+
+This system was introduced in SA-MP 0.3.7 R2-1 and will not work in earlier versions!
+
+:::
+
 :::note
 
-The SVar system is the same as the PVars, although the variables created are server-wide, not attached to any player ID, and persist through gamemode changes.
+The SVar system is the same as the PVars, although the variables created are
+server-wide, not attached to any player ID, and persist through gamemode
+changes.
 
 :::
 
 ## Advantages
-
-The new system was introduced in SA-MP 0.3.7 R2-1.
 
 - SVars can be shared/accessed across gamemode scripts and filterscripts.
 
@@ -37,7 +44,7 @@ The new system was introduced in SA-MP 0.3.7 R2-1.
 ## Drawbacks
 
 - SVars are several times slower than regular variables. It is generally more
-favorable to trade in memory for speed, rather than the other way round.
+  favorable to trade in memory for speed, rather than the other way round.
 
 ## Related Functions
 
