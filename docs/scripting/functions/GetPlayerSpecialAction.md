@@ -33,5 +33,5 @@ public OnPlayerUpdate(playerid)
 
 ## Related Functions
 
-- SetPlayerSpecialAction: Set a player's special action.
-- GetPlayerState: Get a player's current state.
+- [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction.md): Set a player's special action.
+- [GetPlayerState](../functions/GetPlayerState.md): Get a player's current state.

@@ -42,5 +42,5 @@ public OnPlayerSpawn(playerid)
 ## Related Functions
 
 
--  SetPlayerTeam: Set a player's team.
--  SetTeamCount: Set the number of teams available.
+-  [SetPlayerTeam](../functions/SetPlayerTeam.md): Set a player's team.
+-  [SetTeamCount](../functions/SetTeamCount.md): Set the number of teams available.

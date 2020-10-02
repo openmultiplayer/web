@@ -42,4 +42,4 @@ playerskin = GetPlayerSkin(playerid);
 ## Related Functions
 
 
--  SetPlayerSkin: Set a player's skin.
+-  [SetPlayerSkin](../functions/SetPlayerSkin.md): Set a player's skin.
