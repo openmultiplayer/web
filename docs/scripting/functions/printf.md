@@ -1,7 +1,9 @@
 ---
 id: printf
 title: printf
-description: Outputs a formatted string on the console (the server window, not the in-game chat).
+description:
+  Outputs a formatted string on the console (the server window, not the in-game
+  chat).
 tags: []
 ---
 
@@ -13,7 +15,8 @@ This function starts with lowercase letter.
 
 ## Description
 
-Outputs a formatted string on the console (the server window, not the in-game chat).
+Outputs a formatted string on the console (the server window, not the in-game
+chat).
 
 | Name           | Description                               |
 | -------------- | ----------------------------------------- |
@@ -26,18 +29,17 @@ This function does not return any specific values.
 
 ## Format Specifiers
 
-|Specifier|Meaning|
-|--- |--- |
-|%i|Integer|
-|%d|Integer|
-|%s|String|
-|%f|Floating-point number|
-|%c|ASCII character|
-|%x|Hexadecimal number|
-|%b|Binary number|
-|%%|Literal '%'|
-|%q|Escape a text for SQLite. (Added in 0.3.7 R2)|
-
+| Specifier | Meaning                                       |
+| --------- | --------------------------------------------- |
+| %i        | Integer                                       |
+| %d        | Integer                                       |
+| %s        | String                                        |
+| %f        | Floating-point number                         |
+| %c        | ASCII character                               |
+| %x        | Hexadecimal number                            |
+| %b        | Binary number                                 |
+| %%        | Literal '%'                                   |
+| %q        | Escape a text for SQLite. (Added in 0.3.7 R2) |
 
 ## Examples
 
@@ -56,7 +58,8 @@ printf("I'm %c home",character); //-> I'm @ home
 
 :::warning
 
-The format string or its output should not exceed 1024 characters. Anything beyond that length can lead to a server to crash.
+The format string or its output should not exceed 1024 characters. Anything
+beyond that length can lead to a server to crash.
 
 :::
 
