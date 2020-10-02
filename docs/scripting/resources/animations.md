@@ -5,7 +5,7 @@ description: A list of all Animations
 tags: []
 ---
 
-:::note 
+:::note
 
 Please note that some of the listed animations may not be useable in SA-MP.
 
