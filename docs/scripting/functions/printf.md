@@ -41,6 +41,10 @@ This function does not return any specific values.
 | %%        | Literal '%'                                   |
 | %q        | Escape a text for SQLite. (Added in 0.3.7 R2) |
 
+The values for the placeholders follow in the exact same order as parameters in the call, i.e. `"I am %i years old"` - the `%i` will be replaced with an integer variable, which is the person's age.
+
+You may optionally put a number between the `%` and the letter of the placeholder code. This number indicates the field width; if the size of the parameter to print at the position of the placeholder is smaller than the field width, the field is expanded with spaces. To cut the number of decimal places beeing shown of a float, you can add '.<max number>' between the `%` and the `f`, i.e. `%.2f`.
+
 ## Examples
 
 ```c
