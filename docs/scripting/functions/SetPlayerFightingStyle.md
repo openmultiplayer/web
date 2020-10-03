@@ -45,4 +45,4 @@ This does not affect normal fist attacks - only special/secondary attacks (aim +
 
 ## Related Functions
 
-- GetPlayerFightingStyle: Get a player's fighting style.
+- [GetPlayerFightingStyle](scripting/functions/GetPlayerFightingStyle.md): Get a player's fighting style.
