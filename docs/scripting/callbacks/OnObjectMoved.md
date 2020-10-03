@@ -41,4 +41,4 @@ SetObjectPos does not work when used in this callback. To fix it, recreate the o
 - [MovePlayerObject](../functions/MovePlayerObject.md): Move a player object.
 - [IsObjectMoving](../functions/IsObjectMoving.md): Check if the object is moving.
 - [StopObject](../functions/StopObject.md): Stop an object from moving.
-- [OnPlayerObjectMoved](../callbacks/OnPlayerObjectMoved.md): Called when a player-object stops moving.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Called when a player-object stops moving.

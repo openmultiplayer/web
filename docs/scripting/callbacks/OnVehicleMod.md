@@ -46,6 +46,6 @@ This callback is NOT called by AddVehicleComponent.
 ## Related Functions
 
 - [AddVehicleComponent](../functions/AddVehicleComponent.md): Add a component to a vehicle.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.
-- [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob.md): Called when a vehicle's paintjob is changed.
-- [OnVehicleRespray](../callbacks/OnVehicleRespray.md): Called when a vehicle is resprayed.
+- [OnEnterExitModShop](OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.
+- [OnVehiclePaintjob](OnVehiclePaintjob.md): Called when a vehicle's paintjob is changed.
+- [OnVehicleRespray](OnVehicleRespray.md): Called when a vehicle is resprayed.

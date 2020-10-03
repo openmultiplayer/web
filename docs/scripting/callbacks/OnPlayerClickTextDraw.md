@@ -77,5 +77,5 @@ Do not use CancelSelectTextDraw unconditionally within this callback. This resul
 
 ## Related Functions
 
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
-- [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer.md): Called when a player click on another.
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Called when a player click on another.

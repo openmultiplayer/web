@@ -57,4 +57,4 @@ You will need to include this callback in a loaded filterscript for it to work i
 ## Related Functions
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
-- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt.md): Called when an attempt to login to RCON is made.
+- [OnRconLoginAttempt](OnRconLoginAttempt.md): Called when an attempt to login to RCON is made.
