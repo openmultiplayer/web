@@ -33,5 +33,5 @@ if(strcmp(cmdtext, "/turnuptheheat", true) == 0)
 
 ## Related Functions
 
-- GetPlayerWantedLevel: Check a player's wanted level.
-- PlayCrimeReportForPlayer: Play a crime report for a player.
+- [GetPlayerWantedLevel](../../scripting/functions/GetPlayerWantedLevel.md): Check a player's wanted level.
+- [PlayCrimeReportForPlayer](../../scripting/functions/PlayCrimeReportForPlayer.md): Play a crime report for a player.
