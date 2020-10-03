@@ -9,11 +9,11 @@ tags: []
 
 Sets a 'timer' to call a function after some time. Can be set to repeat.
 
-| Name | Description |
-| --- | --- |
+| Name       | Description                                                                                                                     |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | funcname[] | Name of the function to call as a string. This must be a public function (forwarded). A null string here will crash the server. |
-| interval | Interval in milliseconds. |
-| repeating | Boolean (true/false) on whether the timer should repeat or not. |
+| interval   | Interval in milliseconds.                                                                                                       |
+| repeating  | Boolean (true/false) on whether the timer should repeat or not.                                                                 |
 
 ## Returns
 

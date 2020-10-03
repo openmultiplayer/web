@@ -15,13 +15,13 @@ This function was added in SA-MP 0.3b and will not work in earlier versions!
 
 Returns a vehicle's rotation on all axes as a quaternion.
 
-| Name | Description |
-| --- | --- |
-| vehicleid | The ID of the vehicle to get the rotation of. |
-| &Float:w | A float variable in which to store the first quaternion angle, passed by reference. |
-| &Float:x | A float variable in which to store the second quaternion angle, passed by reference. |
-| &Float:y | A float variable in which to store the third quaternion angle, passed by reference. |
-| &Float:z | A float variable in which to store the fourth quaternion angle, passed by reference. |
+| Name      | Description                                                                          |
+| --------- | ------------------------------------------------------------------------------------ |
+| vehicleid | The ID of the vehicle to get the rotation of.                                        |
+| &Float:w  | A float variable in which to store the first quaternion angle, passed by reference.  |
+| &Float:x  | A float variable in which to store the second quaternion angle, passed by reference. |
+| &Float:y  | A float variable in which to store the third quaternion angle, passed by reference.  |
+| &Float:z  | A float variable in which to store the fourth quaternion angle, passed by reference. |
 
 ## Returns
 

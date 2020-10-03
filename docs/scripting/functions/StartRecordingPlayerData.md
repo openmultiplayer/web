@@ -15,10 +15,10 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Starts recording a player's movements to a file, which can then be reproduced by an NPC.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player to record. |
-| recordtype | The [type](../resources/recordtypes.md) of recording. |
+| Name         | Description                                                                                                                                                                                                                   |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | The ID of the player to record.                                                                                                                                                                                               |
+| recordtype   | The [type](../resources/recordtypes.md) of recording.                                                                                                                                                                         |
 | recordname[] | The name of the file which will hold the recorded data. It will be saved in the scriptfiles directory, with an automatically added .rec extension, you will need to move the file to npcmodes/recordings to use for playback. |
 
 ## Returns

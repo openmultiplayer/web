@@ -15,11 +15,11 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Returns the SA-MP client version, as reported by the player.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player to get the client version of. |
+| Name      | Description                                                       |
+| --------- | ----------------------------------------------------------------- |
+| playerid  | The ID of the player to get the client version of.                |
 | version[] | The string to store the player's version in, passed by reference. |
-| len | The maximum length of the version. |
+| len       | The maximum length of the version.                                |
 
 ## Returns
 

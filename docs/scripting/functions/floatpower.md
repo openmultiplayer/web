@@ -15,9 +15,9 @@ This function starts with lowercase letter.
 
 Raises the given value to the power of the exponent.
 
-| Name | Description |
-| --- | --- |
-| value | The value to raise to a power, as a floating-point number. |
+| Name     | Description                                                               |
+| -------- | ------------------------------------------------------------------------- |
+| value    | The value to raise to a power, as a floating-point number.                |
 | exponent | The exponent is also a floating-point number. It may be zero or negative. |
 
 ## Returns

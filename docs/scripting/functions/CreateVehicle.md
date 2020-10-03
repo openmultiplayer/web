@@ -9,17 +9,17 @@ tags: ["vehicle"]
 
 Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.
 
-| Name | Description |
-| --- | --- |
-| vehicletype | The model for the vehicle. |
-| Float:X | The X coordinate for the vehicle. |
-| Float:Y | The Y coordinate for the vehicle. |
-| Float:Z | The Z coordinate for the vehicle. |
-| Float:rotation | The facing angle for the vehicle. |
-| color1 | The primary color ID. |
-| color2 | The secondary color ID. |
-| respawn_delay | The delay until the car is respawned without a driver in seconds. Using -1 will prevent the vehicle from respawning. |
-| addsiren | Added in 0.3.7; will not work in earlier versions. Has a default value 0. Enables the vehicle to have a siren, providing the vehicle has a horn. |
+| Name           | Description                                                                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| vehicletype    | The model for the vehicle.                                                                                                                       |
+| Float:X        | The X coordinate for the vehicle.                                                                                                                |
+| Float:Y        | The Y coordinate for the vehicle.                                                                                                                |
+| Float:Z        | The Z coordinate for the vehicle.                                                                                                                |
+| Float:rotation | The facing angle for the vehicle.                                                                                                                |
+| color1         | The primary color ID.                                                                                                                            |
+| color2         | The secondary color ID.                                                                                                                          |
+| respawn_delay  | The delay until the car is respawned without a driver in seconds. Using -1 will prevent the vehicle from respawning.                             |
+| addsiren       | Added in 0.3.7; will not work in earlier versions. Has a default value 0. Enables the vehicle to have a siren, providing the vehicle has a horn. |
 
 ## Returns
 

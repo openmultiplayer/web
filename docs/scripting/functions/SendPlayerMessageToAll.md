@@ -9,10 +9,10 @@ tags: ["player"]
 
 Sends a message in the name of a player to all other players on the server. The line will start with the sender's name in their color, followed by the message in white.
 
-| Name | Description |
-| --- | --- |
-| senderid | The ID of the sender. If invalid, the message will not be sent. |
-| const message[] | The message that will be sent. |
+| Name            | Description                                                     |
+| --------------- | --------------------------------------------------------------- |
+| senderid        | The ID of the sender. If invalid, the message will not be sent. |
+| const message[] | The message that will be sent.                                  |
 
 ## Returns
 

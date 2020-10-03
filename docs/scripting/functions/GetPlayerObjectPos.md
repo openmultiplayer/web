@@ -9,10 +9,10 @@ tags: ["player"]
 
 Get the position of a player object (CreatePlayerObject).
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player whose player object to get the position of. |
-| objectid | The object's id of which you want the current location. |
+| Name     | Description                                                               |
+| -------- | ------------------------------------------------------------------------- |
+| playerid | The ID of the player whose player object to get the position of.          |
+| objectid | The object's id of which you want the current location.                   |
 | &Float:X | A float variable in which to store the X coordinate, passed by reference. |
 | &Float:Y | A float variable in which to store the Y coordinate, passed by reference. |
 | &Float:Z | A float variable in which to store the Z coordinate, passed by reference. |

@@ -15,8 +15,8 @@ This function starts with lowercase letter.
 
 Closes an SQLite database that was opened with db_open.
 
-| Name | Description |
-| --- | --- |
+| Name  | Description                                                           |
+| ----- | --------------------------------------------------------------------- |
 | DB:db | The handle of the database connection to close (returned by db_open). |
 
 ## Returns

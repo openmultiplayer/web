@@ -15,10 +15,10 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Set the facing angle of an actor.
 
-| Name | Description |
-| --- | --- |
+| Name    | Description                                                              |
+| ------- | ------------------------------------------------------------------------ |
 | actorid | The ID of the actor to set the facing angle of. Returned by CreateActor. |
-| ang | The facing angle to set for the actor. |
+| ang     | The facing angle to set for the actor.                                   |
 
 ## Returns
 

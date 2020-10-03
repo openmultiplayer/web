@@ -15,12 +15,12 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Set the position of an actor.
 
-| Name | Description |
-| --- | --- |
+| Name    | Description                                                          |
+| ------- | -------------------------------------------------------------------- |
 | actorid | The ID of the actor to set the position of. Returned by CreateActor. |
-| X | The X coordinate to position the actor at. |
-| Y | The Y coordinate to position the actor at. |
-| Z | The Z coordinate to position the actor at. |
+| X       | The X coordinate to position the actor at.                           |
+| Y       | The Y coordinate to position the actor at.                           |
+| Z       | The Z coordinate to position the actor at.                           |
 
 ## Returns
 

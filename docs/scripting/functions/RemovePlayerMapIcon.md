@@ -9,10 +9,10 @@ tags: ["player"]
 
 Removes a map icon that was set earlier for a player using SetPlayerMapIcon.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player whose icon to remove. |
-| iconid | The ID of the icon to remove. This is the second parameter of SetPlayerMapIcon. |
+| Name     | Description                                                                     |
+| -------- | ------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose icon to remove.                                      |
+| iconid   | The ID of the icon to remove. This is the second parameter of SetPlayerMapIcon. |
 
 ## Returns
 

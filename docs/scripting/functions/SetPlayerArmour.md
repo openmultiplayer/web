@@ -9,9 +9,9 @@ tags: ["player"]
 
 Set a player's armor level.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player to set the armour of. |
+| Name         | Description                                                                                                                             |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | The ID of the player to set the armour of.                                                                                              |
 | Float:armour | The amount of armour to set, as a percentage (float). Values larger than 100 are valid, but won't be displayed in the HUD's armour bar. |
 
 ## Returns

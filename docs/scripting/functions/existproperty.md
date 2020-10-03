@@ -15,11 +15,11 @@ This function starts with lowercase letter.
 
 Check if a property exist.
 
-| Name | Description |
-| --- | --- |
-| id | The virtual machine to use, you should keep this zero. |
-| name[] | The property's name, you should keep this "". |
-| value | The property's unique ID. Use the hash-function to calculate it from a string. |
+| Name   | Description                                                                    |
+| ------ | ------------------------------------------------------------------------------ |
+| id     | The virtual machine to use, you should keep this zero.                         |
+| name[] | The property's name, you should keep this "".                                  |
+| value  | The property's unique ID. Use the hash-function to calculate it from a string. |
 
 ## Returns
 

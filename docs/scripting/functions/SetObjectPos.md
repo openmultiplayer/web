@@ -9,12 +9,12 @@ tags: []
 
 Change the position of an object.
 
-| Name | Description |
-| --- | --- |
+| Name     | Description                                                            |
+| -------- | ---------------------------------------------------------------------- |
 | objectid | The ID of the object to set the position of. Returned by CreateObject. |
-| Float:X | The X coordinate to position the object at. |
-| Float:Y | The Y coordinate to position the object at. |
-| Float:Z | The Z coordinate to position the object at. |
+| Float:X  | The X coordinate to position the object at.                            |
+| Float:Y  | The Y coordinate to position the object at.                            |
+| Float:Z  | The Z coordinate to position the object at.                            |
 
 ## Returns
 

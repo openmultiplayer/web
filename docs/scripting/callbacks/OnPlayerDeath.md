@@ -9,11 +9,11 @@ tags: ["player"]
 
 This callback is called when a player dies, either by suicide or by being killed by another player.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player that died. |
+| Name     | Description                                                                                   |
+| -------- | --------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player that died.                                                               |
 | killerid | The ID of the player that killed the player who died, or INVALID_PLAYER_ID if there was none. |
-| reason | The ID of the reason for the player's death. |
+| reason   | The ID of the reason for the player's death.                                                  |
 
 ## Returns
 

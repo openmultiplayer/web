@@ -15,12 +15,12 @@ This function starts with lowercase letter.
 
 Compares two strings to see if they are the same.
 
-| Name | Description |
-| --- | --- |
-| string1 | The first string to compare. |
-| string2 | The second string to compare. |
-| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same. |
-| length (optional) | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
+| Name                  | Description                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| string1               | The first string to compare.                                                                                                                |
+| string2               | The second string to compare.                                                                                                               |
+| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same.                                   |
+| length (optional)     | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
 
 ## Returns
 

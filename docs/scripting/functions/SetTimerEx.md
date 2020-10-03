@@ -9,13 +9,13 @@ tags: []
 
 Sets a timer to call a function after the specified interval. This variant ('Ex') can pass parameters (such as a player ID) to the function.
 
-| Name | Description |
-| --- | --- |
-| funcname[] | The name of a public function to call when the timer expires. |
-| interval | Interval in milliseconds (1 second = 1000 MS). |
-| repeating | Boolean (true/false (or 1/0)) that states whether the timer should be called repeatedly (can only be stopped with KillTimer) or only once. |
-| format[] | Special format indicating the types of values the timer will pass. |
-| {Float,\_}:... | Indefinite number of arguments to pass (must follow format specified in previous parameter). |
+| Name           | Description                                                                                                                                |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| funcname[]     | The name of a public function to call when the timer expires.                                                                              |
+| interval       | Interval in milliseconds (1 second = 1000 MS).                                                                                             |
+| repeating      | Boolean (true/false (or 1/0)) that states whether the timer should be called repeatedly (can only be stopped with KillTimer) or only once. |
+| format[]       | Special format indicating the types of values the timer will pass.                                                                         |
+| {Float,\_}:... | Indefinite number of arguments to pass (must follow format specified in previous parameter).                                               |
 
 ## Returns
 

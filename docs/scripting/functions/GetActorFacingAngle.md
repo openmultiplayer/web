@@ -15,9 +15,9 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Get the facing angle of an actor.
 
-| Name | Description |
-| --- | --- |
-| actorid | The ID of the actor to get the facing angle of. Returned by CreateActor. |
+| Name       | Description                                                                                 |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| actorid    | The ID of the actor to get the facing angle of. Returned by CreateActor.                    |
 | &Float:ang | A float variable, passed by reference, in to which the actor's facing angle will be stored. |
 
 ## Returns

@@ -15,17 +15,17 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Move a player's camera from one position to another, within the set time. Useful for scripted cut scenes
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player the camera should be moved for |
-| Float:FromX | The X position the camera should start to move from |
-| Float:FromY | The Y position the camera should start to move from |
-| Float:FromZ | The Z position the camera should start to move from |
-| Float:ToX | The X position the camera should move to |
-| Float:ToY | The Y position the camera should move to |
-| Float:ToZ | The Z position the camera should move to |
-| time | Time in milliseconds |
-| cut | The [jumpcut](../resources/cameracutstyles.md) to use. Defaults to CAMERA_CUT. Set to CAMERA_MOVE for a smooth movement |
+| Name        | Description                                                                                                             |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| playerid    | The ID of the player the camera should be moved for                                                                     |
+| Float:FromX | The X position the camera should start to move from                                                                     |
+| Float:FromY | The Y position the camera should start to move from                                                                     |
+| Float:FromZ | The Z position the camera should start to move from                                                                     |
+| Float:ToX   | The X position the camera should move to                                                                                |
+| Float:ToY   | The Y position the camera should move to                                                                                |
+| Float:ToZ   | The Z position the camera should move to                                                                                |
+| time        | Time in milliseconds                                                                                                    |
+| cut         | The [jumpcut](../resources/cameracutstyles.md) to use. Defaults to CAMERA_CUT. Set to CAMERA_MOVE for a smooth movement |
 
 ## Returns
 
