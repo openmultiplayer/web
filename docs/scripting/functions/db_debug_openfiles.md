@@ -8,13 +8,13 @@ keywords:
 
 :::warning
 
-This function starts with a lowercase letter.
+The function starts with a lowercase letter.
 
 :::
 
 ## Description
 
-This function gets the number of open database connections for debugging purposes.
+The function gets the number of open database connections for debugging purposes.
 
 | Name | Description |
 |------|-------------|

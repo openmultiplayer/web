@@ -8,13 +8,13 @@ keywords:
 
 :::warning
 
-This function starts with a lowercase letter.
+The function starts with a lowercase letter.
 
 :::
 
 ## Description
 
-This function gets the number of fields from the specified result set allocated with [db_query](db_query).
+The function gets the number of fields from the specified result set allocated with [db_query](db_query).
 
 | Name              | Description                         |
 | ----------------- | ----------------------------------- |
@@ -108,7 +108,7 @@ Float:Examples_CalculateSum(DB:dbConnectionHandle)
 
 #include <examples>
 
-static DB:g_DBConnectionHandle;
+static DB:gDBConnectionHandle;
 
 // ...
 
@@ -117,14 +117,14 @@ public OnGameModeInit()
     // ...
 
     // Create a connection to a database
-    g_DBConnectionHandle = db_open("example.db");
+    gDBConnectionHandle = db_open("example.db");
 
     // If connection to the database exists
-    if (g_DBConnectionHandle)
+    if (gDBConnectionHandle)
     {
         // Successfully created a connection to the database
         print("Successfully created a connection to database \"example.db\".");
-        printf("Calculated sum: %f", Examples_CalculateSum(g_DBConnectionHandle));
+        printf("Calculated sum: %f", Examples_CalculateSum(gDBConnectionHandle));
     }
     else
     {
@@ -140,10 +140,10 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     // Close the connection to the database if connection is open
-    if (db_close(g_DBConnectionHandle))
+    if (db_close(gDBConnectionHandle))
     {
         // Extra cleanup
-        g_DBConnectionHandle = DB:0;
+        gDBConnectionHandle = DB:0;
     }
 
     // ...

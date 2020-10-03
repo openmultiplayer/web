@@ -8,7 +8,7 @@ keywords:
 
 :::warning
 
-This function starts with a lowercase letter.
+The function starts with a lowercase letter.
 
 :::
 
@@ -30,17 +30,17 @@ Returns 1 if result set handle is valid, otherwise 0.
 ## Examples
 
 ```c
-static DB:g_DBConnectionHandle;
+static DB:gDBConnectionHandle;
 
 public OnGameModeInit()
 {
     // ...
 
     // Create a connection to a database
-    g_DBConnectionHandle = db_open("example.db");
+    gDBConnectionHandle = db_open("example.db");
 
     // If connection to the database exists
-    if (g_DBConnectionHandle)
+    if (gDBConnectionHandle)
     {
         // Select first entry in table "join_log"
         new DBResult:db_result_set = db_query(g_DBConnection, "SELECT * FROM `join_log` LIMIT 1");
@@ -78,10 +78,10 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     // Close the connection to the database if connection is open
-    if (db_close(g_DBConnectionHandle))
+    if (db_close(gDBConnectionHandle))
     {
         // Extra cleanup
-        g_DBConnectionHandle = DB:0;
+        gDBConnectionHandle = DB:0;
     }
 
     // ...

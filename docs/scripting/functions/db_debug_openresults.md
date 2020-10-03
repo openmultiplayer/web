@@ -8,13 +8,13 @@ keywords:
 
 :::warning
 
-This function starts with a lowercase letter.
+The function starts with a lowercase letter.
 
 :::
 
 ## Description
 
-This Function gets the number of open database results.
+The function gets the number of open database results.
 
 | Name | Description |
 |------|-------------|

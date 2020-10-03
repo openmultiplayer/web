@@ -1,20 +1,20 @@
 ---
 id: db_open
 title: db_open
-description: This function is used to open a connection to a SQLite database file, which is inside the `/scriptfiles` folder.
+description: The function is used to open a connection to a SQLite database file, which is inside the `/scriptfiles` folder.
 keywords:
     - sqlite
 ---
 
 :::warning
 
-This function starts with a lowercase letter.
+The function starts with a lowercase letter.
 
 :::
 
 ## Description
 
-This function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.
+The function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.
 
 | Name   | Description               |
 | ------ | ------------------------- |
@@ -27,7 +27,7 @@ Returns index (starting at 1) of the database connection.
 ## Examples
 
 ```c
-static DB:g_DBConnectionHandle;
+static DB:gDBConnectionHandle;
 
 // ...
 
@@ -36,10 +36,10 @@ public OnGameModeInit()
     // ...
 
     // Create a connection to a database
-    g_DBConnectionHandle = db_open("example.db");
+    gDBConnectionHandle = db_open("example.db");
 
     // If connection to the database exists
-    if (g_DBConnectionHandle)
+    if (gDBConnectionHandle)
     {
         // Successfully created a connection to the database
         print("Successfully created a connection to database \"example.db\".");
@@ -58,10 +58,10 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     // Close the connection to the database if connection is open
-    if (db_close(g_DBConnectionHandle))
+    if (db_close(gDBConnectionHandle))
     {
         // Extra cleanup
-        g_DBConnectionHandle = DB:0;
+        gDBConnectionHandle = DB:0;
     }
 
     // ...

@@ -8,14 +8,14 @@ keywords:
 
 :::warning
 
-This function starts with a lowercase letter.
-This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
+The function starts with a lowercase letter.
+The function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
 
 :::
 
 ## Description
 
-This function gets the memory handle for a SQLite database connection that was opened with [db_open](db_open)].
+The function gets the memory handle for a SQLite database connection that was opened with [db_open](db_open)].
 
 | Name  | Description                                                            |
 | ----- | ---------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ Returns the memory handle of the database connection handle.
 ## Examples
 
 ```c
-static DB:g_DBConnectionHandle;
+static DB:gDBConnectionHandle;
 
 // ...
 
@@ -37,14 +37,14 @@ public OnGameModeInit()
     // ...
 
     // Create a connection to a database
-    g_DBConnectionHandle = db_open("example.db");
+    gDBConnectionHandle = db_open("example.db");
 
     // If connection to the database exists
-    if (g_DBConnectionHandle)
+    if (gDBConnectionHandle)
     {
         // Successfully created a connection to the database
         print("Successfully created a connection to database \"example.db\".");
-        printf("Database connection memory handle: 0x%x", db_get_mem_handle(g_DBConnectionHandle));
+        printf("Database connection memory handle: 0x%x", db_get_mem_handle(gDBConnectionHandle));
     }
     else
     {
@@ -60,10 +60,10 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     // Close the connection to the database if connection is open
-    if (db_close(g_DBConnectionHandle))
+    if (db_close(gDBConnectionHandle))
     {
         // Extra cleanup
-        g_DBConnectionHandle = DB:0;
+        gDBConnectionHandle = DB:0;
     }
 
     // ...
