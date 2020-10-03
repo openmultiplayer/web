@@ -19,7 +19,7 @@ Attaches an object to a bone.
 | -------- | -------------------------------------------------- |
 | playerid | ID of the player you want to attach the object to. |
 | modelid  | The model you want to use.                         |
-| bone     | The bone you want to attach the object to.         |
+| bone     | The [bone](../resources/boneid.md) you want to attach the object to.         |
 | fOffsetX | (optional) X axis offset for the object position.  |
 | fOffsetY | (optional) Y axis offset for the object position.  |
 | fOffsetZ | (optional) Z axis offset for the object position.  |
