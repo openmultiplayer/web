@@ -31,4 +31,4 @@ printf("The current server tick rate is: %i", GetServerTickRate());
 ## Related Functions
 
 
--  GetNetworkStats: Gets the servers networkstats and saves it into a string.
+-  [GetNetworkStats](../functions/GetNetworkStats.md): Gets the servers networkstats and saves it into a string.

@@ -38,7 +38,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 ## Related Functions
 
 
--  GetPlayerVehicleID: Get the ID of the vehicle the player is in.
--  GetVehiclePos: Get the position of a vehicle.
--  GetVehicleZAngle: Check the current angle of a vehicle.
--  GetPlayerVehicleSeat: Check what seat a player is in.
+-  [GetPlayerVehicleID](../functions/GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
+-  [GetVehiclePos](../functions/GetVehiclePos.md): Get the position of a vehicle.
+-  [GetVehicleZAngle](../functions/GetVehicleZAngle.md): Check the current angle of a vehicle.
+-  [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Check what seat a player is in.

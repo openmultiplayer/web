@@ -54,8 +54,8 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 ## Related Functions
 
 
--  AddVehicleComponent: Add a component to a vehicle.
--  RemoveVehicleComponent: Remove a component from a vehicle.
--  GetVehicleComponentInSlot: Check what components a vehicle has.
--  OnVehicleMod: Called when a vehicle is modded.
--  OnEnterExitModShop: Called when a vehicle enters or exits a mod shop.
+-  [AddVehicleComponent](../functions/AddVehicleComponent.md): Add a component to a vehicle.
+-  [RemoveVehicleComponent](../functions/RemoveVehicleComponent.md): Remove a component from a vehicle.
+-  [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot.md): Check what components a vehicle has.
+-  [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.
+-  [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.

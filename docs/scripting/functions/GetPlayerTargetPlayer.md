@@ -57,6 +57,6 @@ public OnPlayerUpdate(playerid)
 ## Related Functions
 
 
--  GetPlayerCameraFrontVector: Get the player's camera front vector
-- OnPlayerGiveDamage: This callback is called when a player gives damage.
-- OnPlayerTakeDamage: This callback is called when a player takes damage.
+-  [GetPlayerCameraFrontVector](../functions/GetPlayerCameraFrontVector.md): Get the player's camera front vector
+-  [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage.md): This callback is called when a player gives damage.
+-  [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage.md): This callback is called when a player takes damage.

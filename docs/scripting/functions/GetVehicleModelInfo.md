@@ -44,4 +44,4 @@ printf("The infernus is %.1fm wide, %.1fm long and %.1fm high", X, Y, Z);
 ## Related Functions
 
 
--  GetVehicleModel: Get the model id of a vehicle.
+-  [GetVehicleModel](../functions/GetVehicleModel.md): Get the model id of a vehicle.
