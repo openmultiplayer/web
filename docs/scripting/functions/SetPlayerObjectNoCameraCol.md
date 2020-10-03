@@ -22,9 +22,9 @@ Toggles a player object camera collision.
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. The object specified does not exist.
+0: The function failed to execute. The object specified does not exist.
 
 ## Examples
 
