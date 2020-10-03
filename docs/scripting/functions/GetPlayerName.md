@@ -49,8 +49,8 @@ However, the client can only join with a nickname between 3 and 20 characters, o
 
 ## Related Functions
 
-- [SetPlayerName](functions/SetPlayerName.md): Set a player's name.
-- [GetPlayerIp](functions/GetPlayerIp.md): Get a player's IP.
-- [GetPlayerPing](functions/GetPlayerPing.md): Get the ping of a player.
-- [GetPlayerScore](functions/GetPlayerScore.md): Get the score of a player.
-- [GetPlayerVersion](functions/GetPlayerVersion.md): Get a player's client-version.
+- [SetPlayerName](SetPlayerName.md): Set a player's name.
+- [GetPlayerIp](GetPlayerIp.md): Get a player's IP.
+- [GetPlayerPing](GetPlayerPing.md): Get the ping of a player.
+- [GetPlayerScore](GetPlayerScore.md): Get the score of a player.
+- [GetPlayerVersion](GetPlayerVersion.md): Get a player's client-version.

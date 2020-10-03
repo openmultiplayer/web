@@ -44,4 +44,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [PlayerPlaySound](functions/PlayerPlaySound.md): Play a sound for a player.
+- [PlayerPlaySound](PlayerPlaySound.md): Play a sound for a player.

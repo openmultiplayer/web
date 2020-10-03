@@ -40,8 +40,8 @@ Removing jetpacks from players by setting their special action to 0 causes the s
 
 ## Related Functions
 
-- [GetPlayerSpecialAction](functions/GetPlayerSpecialAction.md): Get a player's current special action.
-- [ApplyAnimation](functions/ApplyAnimation.md): Apply an animation to a player.
+- [GetPlayerSpecialAction](GetPlayerSpecialAction.md): Get a player's current special action.
+- [ApplyAnimation](ApplyAnimation.md): Apply an animation to a player.
 
 ## Related Information
 

@@ -84,5 +84,5 @@ Breaks sitting on bikes.
 
 ## Related Functions
 
-- [GetPlayerSkin](functions/GetPlayerSkin.md): Get a player's current skin.
-- [SetSpawnInfo](functions/SetSpawnInfo.md): Set the spawn setting for a player.
+- [GetPlayerSkin](GetPlayerSkin.md): Get a player's current skin.
+- [SetSpawnInfo](SetSpawnInfo.md): Set the spawn setting for a player.

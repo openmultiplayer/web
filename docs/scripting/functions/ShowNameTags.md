@@ -38,6 +38,6 @@ This function can only be used in OnGameModeInit. For other times, see ShowPlaye
 
 ## Related Functions
 
-- [DisableNameTagLOS](functions/DisableNameTagLOS.md): Disable nametag Line-Of-Sight checking.
-- [ShowPlayerNameTagForPlayer](functions/ShowPlayerNameTagForPlayer.md): Show or hide a nametag for a certain player.
-- [ShowPlayerMarkers](functions/ShowPlayerMarkers.md): Decide if the server should show markers on the radar.
+- [DisableNameTagLOS](DisableNameTagLOS.md): Disable nametag Line-Of-Sight checking.
+- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer.md): Show or hide a nametag for a certain player.
+- [ShowPlayerMarkers](ShowPlayerMarkers.md): Decide if the server should show markers on the radar.

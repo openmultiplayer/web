@@ -64,7 +64,7 @@ If the player hit nothing, the hit positions will be 0. This means you can't cur
 
 ## Related Functions
 
-- [GetPlayerWeaponData](functions/GetPlayerWeaponData.md): Find out information about weapons a player has.
-- [GetPlayerWeapon](functions/GetPlayerWeapon.md): Check what weapon a player is currently holding.
-- [VectorSize](functions/VectorSize.md): Get the length (norm) of a vector.
-- [OnPlayerWeaponShot](callbacks/OnPlayerWeaponShot.md): Called when a player fires a weapon.
+- [GetPlayerWeaponData](GetPlayerWeaponData.md): Find out information about weapons a player has.
+- [GetPlayerWeapon](GetPlayerWeapon.md): Check what weapon a player is currently holding.
+- [VectorSize](VectorSize.md): Get the length (norm) of a vector.
+- [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot.md): Called when a player fires a weapon.

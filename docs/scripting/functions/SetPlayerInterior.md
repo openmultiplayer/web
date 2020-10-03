@@ -29,6 +29,6 @@ SetPlayerInterior(playerid, 0);
 
 ## Related Functions
 
-- [GetPlayerInterior](functions/GetPlayerInterior.md): Get the current interior of a player.
-- [LinkVehicleToInterior](functions/LinkVehicleToInterior.md): Change the interior that a vehicle is seen in.
-- [OnPlayerInteriorChange](callbacks/OnPlayerInteriorChange.md): Called when a player changes interior.
+- [GetPlayerInterior](GetPlayerInterior.md): Get the current interior of a player.
+- [LinkVehicleToInterior](LinkVehicleToInterior.md): Change the interior that a vehicle is seen in.
+- [OnPlayerInteriorChange](../callbackss/OnPlayerInteriorChange.md): Called when a player changes interior.

@@ -39,9 +39,9 @@ Variables aren't reset until after OnPlayerDisconnect is called, so the values a
 
 ## Related Functions
 
-- [SetPVarInt](functions/SetPVarInt.md): Set an integer for a player variable.
-- [SetPVarString](functions/SetPVarString.md): Set a string for a player variable.
-- [GetPVarString](functions/GetPVarString.md): Get the previously set string from a player variable.
-- [SetPVarFloat](functions/SetPVarFloat.md): Set a float for a player variable.
-- [GetPVarFloat](functions/GetPVarFloat.md): Get the previously set float from a player variable.
-- [DeletePVar](functions/DeletePVar.md): Delete a player variable.
+- [SetPVarInt](SetPVarInt.md): Set an integer for a player variable.
+- [SetPVarString](SetPVarString.md): Set a string for a player variable.
+- [GetPVarString](GetPVarString.md): Get the previously set string from a player variable.
+- [SetPVarFloat](SetPVarFloat.md): Set a float for a player variable.
+- [GetPVarFloat](GetPVarFloat.md): Get the previously set float from a player variable.
+- [DeletePVar](DeletePVar.md): Delete a player variable.

@@ -40,6 +40,6 @@ print(value);
 
 ## Related Functions
 
-- [Setproperty](functions/setproperty.md): Set a property.
-- [Deleteproperty](functions/deleteproperty.md): Delete a property.
-- [Existproperty](functions/existproperty.md): Check if a property exists.
+- [Setproperty](setproperty.md): Set a property.
+- [Deleteproperty](deleteproperty.md): Delete a property.
+- [Existproperty](existproperty.md): Check if a property exists.

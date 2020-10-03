@@ -33,10 +33,10 @@ Returns previous menu when none is displayed.
 
 ## Related Functions
 
-- [ShowMenuForPlayer](functions/ShowMenuForPlayer.md): Show a menu for a player.
-- [HideMenuForPlayer](functions/HideMenuForPlayer.md): Hide a menu for a player.
-- [CreateMenu](functions/CreateMenu.md): Create a menu.
-- [DestroyMenu](functions/DestroyMenu.md): Destroy a menu.
-- [AddMenuItem](functions/AddMenuItem.md): Add an item to a menu.
-- [OnPlayerSelectedMenuRow](functions/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
-- [OnPlayerExitedMenu](functions/OnPlayerExitedMenu.md): Called when a player exits a menu.
+- [ShowMenuForPlayer](ShowMenuForPlayer.md): Show a menu for a player.
+- [HideMenuForPlayer](HideMenuForPlayer.md): Hide a menu for a player.
+- [CreateMenu](CreateMenu.md): Create a menu.
+- [DestroyMenu](DestroyMenu.md): Destroy a menu.
+- [AddMenuItem](AddMenuItem.md): Add an item to a menu.
+- [OnPlayerSelectedMenuRow](OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
+- [OnPlayerExitedMenu](OnPlayerExitedMenu.md): Called when a player exits a menu.
