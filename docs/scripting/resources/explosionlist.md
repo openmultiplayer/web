@@ -2,7 +2,7 @@
 title: Explosion Lists
 ---
 
-To be used with [CreateExplosion](../functions/CreateExplosion)
+To be used with [CreateExplosion](../functions/CreateExplosion) or with [CreateExplosionForPlayer](../functions/CreateExplosionForPlayer)
 
 | Type | Visible | Splits | Creates Fire | Physical Blast | Audible Sound | Special                                                                                                  | Range      |
 | ---- | ------- | ------ | ------------ | -------------- | ------------- | -------------------------------------------------------------------------------------------------------- | ---------- |
