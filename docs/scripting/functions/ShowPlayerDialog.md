@@ -19,7 +19,7 @@ Shows the player a synchronous (only one at a time) dialog box.
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid  | The ID of the player to show the dialog to.                                                                                             |
 | dialogid  | An ID to assign this dialog to, so responses can be processed. Max dialogid is 32767. Using negative values will close any open dialog. |
-| style     | The style of the dialog.                                                                                                                |
+| style     | The [style](../resources/dialogstyles.md) of the dialog.                                                                                                                |
 | caption[] | The title at the top of the dialog. The length of the caption can not exceed more than 64 characters before it starts to cut off.       |
 | info[]    | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                  |
 | button1[] | The text on the left button.                                                                                                            |
@@ -85,5 +85,5 @@ Using -1 as dialogid closes all dialogs currently shown on the client's screen.
 
 ## Related Functions
 
-- TextDrawShowForPlayer: Show a textdraw for a certain player.
-- OnDialogResponse: Called when a player responds to a dialog.
+- [TextDrawShowForPlayer](../functions/TextDrawShowForPlayer.md): Show a textdraw for a certain player.
+- [OnDialogResponse](../callbacks/OnDialogResponse.md): Called when a player responds to a dialog.
