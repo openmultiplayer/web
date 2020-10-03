@@ -38,4 +38,4 @@ public OnPlayerUpdate(playerid)
 
 ## Related Information
 
-- [Special Actions](resources/specialactions#special-actions.md): This page compiles the list of all the player special actions.
+- [Special Actions List](../resources/specialactions#special-actions.md): This page compiles the list of all the player special actions.

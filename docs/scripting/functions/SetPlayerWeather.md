@@ -48,4 +48,4 @@ There are only valid 21 weather IDs in the game (0 - 20), however the game does 
 
 ## Related Information
 
-- [Weather IDs](resources/SetGravity.md): To be used with [SetWeather](SetWeather.md) and [SetPlayerWeather](SetPlayerWeather.md).
+- [Weather IDs](../resources/weatherid.md): To be used with [SetWeather](SetWeather.md) and [SetPlayerWeather](SetPlayerWeather.md).

@@ -45,4 +45,4 @@ Removing jetpacks from players by setting their special action to 0 causes the s
 
 ## Related Information
 
-- [Special Actions List](resources/specialactions#special-actions): This page compiles the list of all the player special actions to be used.
+- [Special Actions List](../resources/specialactions#special-actions): This page compiles the list of all the player special actions.
