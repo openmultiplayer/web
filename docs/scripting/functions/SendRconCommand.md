@@ -43,9 +43,9 @@ SendRconCommand(szCmd);
 
 ## Related Functions
 
-- IsPlayerAdmin: Checks if a player is logged into RCON.
+- [IsPlayerAdmin](IsPlayerAdmin.md): Checks if a player is logged into RCON.
 
 ## Related Callbacks
 
-- OnRconCommand: Called when an RCON command is sent.
-- OnRconLoginAttempt: Called when an attempt to login to RCON is made.
+- [OnRconCommand](../callbackss/OnRconCommand.md): Called when an RCON command is sent.
+- [OnRconLoginAttempt](../callbackss/OnRconLoginAttempt.md): Called when an attempt to login to RCON is made.
