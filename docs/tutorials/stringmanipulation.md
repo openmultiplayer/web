@@ -235,7 +235,7 @@ message_3[5] = '\0';
 There, we assigned for each slot on the `message_3` array a character, this
 won’t work if you were to declare a sting with no definitive size, note that to
 represent a single character, it ought to be written between two single
-quotations (`‘`), also, notice how we started with slot 0, and it’s only
+quotations (`'`), also, notice how we started with slot 0, and it’s only
 natural, considering how I emphasised on how a string is an array of characters,
 meaning, that the first slot is always 0, and the last one is its size minus 1
 (_the null character does not count_), which in this case is 4, counting from 0
@@ -413,7 +413,7 @@ though, referred to as _NUL_, represented by the number 0.
 In _pawn_, you can type it as its numeric value, or as a character '_\0_'. The
 backslash there acts as an escaping character, it’s there to tell the machine
 that that character is the null character with the value of 0 and **NOT** the
-character ‘0’ that has the value of 48.
+character `'0'` that has the value `48`.
 
 There is a symbol used in _pawn_, **EOS**, short for **E**nd **O**f **S**tring,
 it’s a predefined macro for the null terminator, you can set the null terminator
@@ -1224,984 +1224,1025 @@ You can find more information about this
 
 #### **✧ Description**
 
-> The escape character is a character in which when prefixed to some character
-> or number, it creates its own constant character, in most
-> programming/scripting languages like pawn, the backslash is used as the escape
-> character (**\\**), a combination of this and some other character/number will
-> result in an
-> [escape sequence](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Escape_sequence)
-> which has a certain meaning, you can find more about escape character
-> [here](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Escape_character).
+The escape character is a character in which when prefixed to some character or
+number, it creates its own constant character, in most programming/scripting
+languages like pawn, the backslash is used as the escape character (**\\**), a
+combination of this and some other character/number will result in an
+[escape sequence](https://en.wikipedia.org/wiki/Escape_sequence) which has a
+certain meaning, you can find more about escape character
+[here](https://en.wikipedia.org/wiki/Escape_character).
 
-> **✧ Escape sequences**
->
-> Escape sequences make it easier to express certain characters in the source
-> code of your script, here is a table containing the escape sequences used in
-> pawn:
->
-> **Audible beep (on server machines)**
->
-> \\a or \\7
->
-> **Backspace**
->
-> \\b
->
-> **Escape**
->
-> \\e
->
-> **Form feed**
->
-> \\f
->
-> **New line**
->
-> \\n
->
-> **Carriage return**
->
-> \\r
->
-> **Horizontal tab**
->
-> \\t
->
-> **Vertical tab**
->
-> \\v
->
-> **Backslash**
->
-> \\\\
->
-> **Single quote**
->
-> \\'
->
-> **Double quote**
->
-> \\"
->
-> **Character code with decimal values "ddd"**
->
-> \\ddd;
->
-> **Character code with hexadecimal values "hhh"**
->
-> \\xhhh;
->
-> Let’s look at each one of them, after all, the best way to learn these sort of
-> stuff rests within practicing them.
+&nbsp;
 
-> **The “Audible beep” escape sequence - \\a**
->
-> Audible beep or a bell code (sometimes bell character) is a device control
-> code originally sent to ring a small electromechanical bell on tickers and
-> other teleprinters and teletypewriters to alert operators at the other end of
-> the line, often of an incoming message.
->
-> Using this on a computer will result in sending a bell/notification sound in
-> the background, it can be used in some creative ways, to notify and/or alert
-> users on certain activities, the escape sequence that represents it is **\\a**
-> (or **\\7** noted as decimal code), fire off your pawn text editor, and write
-> the following code;
->
-> Code:
->
-> print("\\a");
->
-> Upon executing the samp-server.exe, you will hear a beep notification sound,
-> you can also use the decimal code;
->
-> Code:
->
-> print("This is a beep \\7");
+#### **✧ Escape sequences**
 
-> **The “Backspace” escape sequence - \\b**
->
-> This escape sequence is noted as **\\b**, it simply moves your cursor
-> backward, most people would expect it to act like the backspace button on your
-> typical keyboard, but not entirely, it only moves the carriage one position
-> backward without erasing what’s written there.
->
-> This one doesn’t have that much usability in pawn unless you were clever
-> enough to milk something useful out of it, here’s how it works.
->
-> Code:
->
-> print("Hello 2018");
->
-> This will print **Hello 2018** in the console, the cursor remains on the null
-> character’s position, more clearly, like this:
->
-> Code:
->
-> Hello 2018 **^**
->
-> As you can see, the cursor stops after the last visible character of the
-> string, which is normal, now, let’s add a backspace escape sequence;
->
-> Code:
->
-> print("Hello 2018\\b");
->
-> That will result in;
->
-> Code:
->
-> Hello 201**8** **^**
->
-> As you can see, the cursor is exactly in the position of the last visible
-> character of the string, which is _8_, this is the same as toggling on the
-> insert mode on your keyboard, now, let’s add some sorcery to this.
->
-> Code:
->
-> print("Hello 2018\\b9");
->
-> If you guessed it right, yes, this will print **Hello 2019**, so, let’s see
-> how this works, the machine will process the string character by character,
-> until it reaches the backspace escape sequence, then it moves the carriage one
-> position backwards, which selects whatever character there, in this case _8_,
-> then, it inserts _9_ in its place.
->
-> Code:
->
-> Hello 201**9** **^**
->
-> The carriage is going to move backward as long as there is a backspace escape
-> sequence in your string.
->
-> Code:
->
-> print("Hello 2018\\b9\\b\\b\\b");
->
-> Code:
->
-> Hello 2**0**19 **^**
->
-> The cursor will stop at the first character’s position if the amount of
-> backspace escape sequence exceeded that of the number of characters between
-> the position of the first character (yes, arrays start at 0, head to
-> [r/programmerhumor](https://web.archive.org/web/20190424140855/https://www.reddit.com/r/ProgrammerHumor/)
-> for some good memes) and the initial position of the cursor.
->
-> Code:
->
-> print("Hi\\b\\b\\b\\b\\b\\b\\b\\b\\b\\b\\b\\b\\b\\b");
->
-> Will always result in this;
->
-> Code:
->
-> **H**i **^**
+Escape sequences make it easier to express certain characters in the source code
+of your script, here is a table containing the escape sequences used in pawn:
 
-> **The “Escape” escape sequence - \\e**
->
-> With the hexadecimal value of 1B in _ASCII_, it’s used for common non-standard
-> code, let’s look for some programming languages like C as an example; a
-> sequence such as **\\z** is not a valid escape sequence according to the C
-> standard. The C standard requires such invalid escape sequences to be
-> diagnosed (the compiler must print an error message). Notwithstanding this
-> fact, some compilers may define additional escape sequences, with
-> implementation-defined semantics. An example is the **\\e** escape sequence,
-> represents the escape character. It wasn't however added to the C standard
-> repertoire because it has no meaningful equivalent in some character sets.
->
-> **The “Form feed” escape sequence - \\f**
->
-> Form feed is a page breaking _ASCII_ code. It forces the printer to eject the
-> current page and to continue printing at the top of another. Often, it will
-> also cause a carriage return, this doesn’t make any noticeable change in the
-> _SA-MP_’s debugging console.
+|                                              |          |
+| -------------------------------------------- | -------- |
+| Audible beep (on server machines)            | \a or \7 |
+| Backspace                                    | \b       |
+| Escape                                       | \e       |
+| Form feed                                    | \f       |
+| New line                                     | \n       |
+| Carriage return                              | \r       |
+| Horizontal tab                               | \t       |
+| Vertical tab                                 | \v       |
+| Backslash                                    | \\       |
+| Single quote                                 | \'       |
+| Double quote                                 | \"       |
+| Character code with decimal values "ddd"     | \ddd;    |
+| Character code with hexadecimal values "hhh" | \xhhh;   |
 
-> **The “New line” escape sequence - \\n**
->
-> The new line (also referred to as line ending, end of line (_EOL_), line feed,
-> or line break) escape sequence is an _ASCII_ code that’s noted as **/n** with
-> the decimal value of 10, it’s something that’s commonly used, text editors are
-> inserting this character every time we press the Enter button on our
-> keyboards.  
-> Here’s a simple message with a line break:
->
-> Code:
->
-> print("Hello, this is line 1\\nAnd this is line 2");
->
-> That will simply output:
->
-> Code:
->
-> Hello, this is line 1 And this is line 2
->
-> Multiple line brakes are achievable of course;
->
-> Code:
->
-> print("H\\n\\n\\ne\\n\\n\\nl\\nl\\n\\no");
->
-> Code:
->
-> H
->
-> e
->
-> l l
->
-> o
->
-> This works differently when dealing with files, however, depending on your
-> operating system, like for instance, in windows, a line break is typically a
-> **CR** (_carriage return_) + **LF** (_line feed_), you can learn more about
-> the differences
-> [here](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Newline).
+&nbsp;
 
-> **The “Carriage return” escape sequence - \\r**
->
-> The carriage return is an ASCII code that’s often associated with the line
-> feed, but it can serve as its own thing by itself, it simply moves the
-> carriage to the beginning of the current line, equivalent of a specific case
-> we discussed using multiple backspaces (\\b) escape sequence, let’s look at
-> the following example, without using this escape sequence, this is the normal
-> output we would get:
->
-> Code:
->
-> print("Hello");
->
-> Code:
->
-> Hello **^**
->
-> The arrow represents the position of the cursor, which is placed after the
-> last visible character of the string, again, that’s the normal expected
-> behavior, now let’s add the carriage return into the mix:
->
-> Code:
->
-> print("Hello\\r");
->
-> Code:
->
-> **H**ello **^**
->
-> The cursor is shifted to the beginning of the line, selecting the first
-> character **“H”**, now inserting anything will change **“H”** to whatever we
-> input, and then move to the next character while remaining on the insert mode:
->
-> Code:
->
-> print("Hello\\rBo");
->
-> Code:
->
-> Bo**l**lo **^**
->
-> As we’ve seen on the line feed section, line breaks work differently across
-> different operating systems, windows, for instance, use a carriage return
-> followed by a line feed to perform a line break, just like the classic
-> typewriters.
+Let’s look at each one of them, after all, the best way to learn these sort of
+stuff rests within practicing them.
 
-> **The “Horizontal tab” escape sequence - \\t**
->
-> Tabulation is something we use every day, from text/code indentation, to table
-> display, that tabulator key that lays at the very side of your keyboard really
-> is a time saver, it was such a pain and so much time consuming to excessively
-> use many spaces, but this one cuts the cake easily, not only is it usefully
-> practically, it really is strongly present in the field of programming, it’s
-> noted as **\\t**, people would argue on how many spaces a tab is worth, most
-> would say it’s worth 4 spaces, but there are who say it’s worth 8 spaces,
-> someone demonic creature would even prefer spaces to tabs, but that's another
-> talk on inself, let as observe this simple example:
->
-> Code:
->
-> print("Hello\\tWorld");
->
-> Code:
->
-> Hello World
->
-> Here is another one with multiple tabulations:
->
-> Code:
->
-> print("Hello\\t\\t\\t\\t\\tWorld");
->
-> Code:
->
-> Hello World
+&nbsp;
 
-> **The “Vertical tab” escape sequence - \\v**
->
-> During the old typewriter era, this had a more popular use, it was used to
-> move to the next line vertically, but now, this is no longer the case, it
-> doesn’t have any noticeable usage nowadays, and that includes modern printers
-> and even programming languages, and pawn is no exception.
+- **The “Audible beep” escape sequence - `\a`**
 
-> **The “Backslash” escape sequence - \\**
->
-> As we’ve seen, the backslash is regarded as the escape character, so whenever
-> the program spots it, it thinks of it as a starting point of some escape
-> sequence, it doesn’t look at it as an independent character, and thus, will
-> either give a compilation error (if it wasn’t followed by a valid character),
-> or will not print it, in pawn’s case, the compilator will raise an error
-> (error 027: invalid character constant).  
-> Luckily, we can solve this problem by escaping out backslash, and that’s done
-> by prefixing yet another backslash to it:
->
-> Code:
->
-> print("Hello \\\\ World");
->
-> Code:
->
-> Hello \\ World
->
-> The output will disregard the first backslash, and print the second, as the
-> first is escaping the second and tricking the program into viewing it as a raw
-> character.  
-> A backslash can only escape one character at a time, so doing the following
-> will raise a compilation error;
->
-> Code:
->
-> print("Hello \\\\\\ World");
->
-> Think of it as pairs of backslashes, everyone is escaping the one after, and
-> thus, it should always result in an even number of backslashes;
->
-> Code:
->
-> print("Hello \\\\\\\\\\\\ \\\\ World");
->
-> Code:
->
-> Hello \\\\\\ \\ World
->
-> As you surely noticed, escape sequences are never printed, they only serve as
-> instructions that express certain events, if we want to force them into being
-> printed, we can escape their escape character (**\\**), then the program will
-> not look at them as escape sequence:
->
-> Code:
->
-> print("This is the escape sequence responsible for tabulation: \\\\t");
->
-> The first backslash escapes the second, and then it gets printed, then the
-> **t** character is left alone, and thus regarded as an independent character:
->
-> Code:
->
-> This is the escape sequence responsible for tabulation: \\t
+Audible beep or a bell code (_sometimes bell character_) is a device control
+code originally sent to ring a small electromechanical bell on tickers and other
+teleprinters and teletypewriters to alert operators at the other end of the
+line, often of an incoming message.
 
-> **The “Single quote” escape sequence - \\’**
->
-> This is hardly present when writing pawn code, I myself haven’t found myself
-> using this in any coding situation, in other languages that treat text between
-> single quotation marks as a string make great use of this to limit the
-> confusion that happens when nesting single quotation marks into each other, it
-> really makes no difference in pawn, here’s a simple example;
->
-> Code:
->
-> print("Single quote '"); // or print("Single quote \\'");
->
-> Either way, the output will be the same:
->
-> Code:
->
-> Single quote: '
->
-> The only use I can think of concerning this is setting a variable the
-> character “**'**”, so obviously doing the following will cause a compilation
-> error;
->
-> Code:
->
-> new chr = ''';
->
-> Simply because the compiler will regard the first pair of single quotes as one
-> entity, and the second as an unclosed quotation sequence, so to fix that, we
-> will have to escape the middle one;
->
-> Code:
->
-> new chr = ''\\';
+Using this on a computer will result in sending a bell/notification sound in the
+background, it can be used in some creative ways, to notify and/or alert users
+on certain activities, the escape sequence that represents it is `\a` (or `\7`
+noted as decimal code), fire off your pawn text editor, and write the following
+code;
 
-> **The “Double quote” escape sequence - \\”**
->
-> Unlike the single quotation mark, this one can cause problems when it comes to
-> nesting them together, pawn treats anything between double quotations as a
-> string, so what if you want to input a double quotation mark in your string,
-> that will confuse the program, it wouldn’t know what each quotation mark is
-> for, let’s take this as an example for instance:
->
-> Code:
->
-> print("Hello "world");
->
-> As soon as the compilator spots the first quotation marks, it will treat
-> everything that comes after as part of one string, and end up the process as
-> soon as it hits another quotation mark, and thus, the compiler will pick up
-> **“Hello “** as a string and will view **World”** as some none-sense filling
-> up the holes of your code.  
-> To solve this, we need to escape the double quotation mark we want to print:
->
-> Code:
->
-> print("Hello \\"world");
->
-> Now, the compiler will treat the second quotation mark as an escape sequence
-> as it’s prefixed by an escape character (**\\**):
->
-> Code:
->
-> Hello "world
->
-> Let’s add another quotation mark just for the heck of it:
->
-> Code:
->
-> print("Hello \\"world\\"");
->
-> Code:
->
-> Hello "world"
->
-> It couldn’t be simpler.
->
-> Throughout this section, we’ve seen how we can represent escape sequences by
-> prefixing the escape character (\\) to a certain character, but that’s just
-> one way to note those values, among other ways, we will take a look on two
-> others;
+```cpp
+print("\a");
+```
 
-> **Escape sequences with character code (decimal code) - \\ddd;**
->
-> It doesn’t change anything about the escape sequences, it’s just a different
-> way to express them, using decimal ASCII codes, for instance, if you want to
-> print A, but note it decimally, you can type it’s decimal ASCII code like the
-> following:
->
-> Code:
->
-> print("\\65;");
->
-> Code:
->
-> A
->
-> This doesn’t concern only alphanumeric characters, but also other ones, like
-> the audible beep (**\\a**), with its decimal value of **7**, can be
-> represented according to this notation as **\\7**;
->
-> The semicolon mark is optional and can be dropped, but it’s always better to
-> go with the original approach, its purpose is to give the escape sequence an
-> explicit termination symbol when it is used in a string constant.
+Upon executing the samp-server.exe, you will hear a beep notification sound, you
+can also use the decimal code;
 
-> **Escape sequences with character code (decimal code) - \\xhhh;**
->
-> Similar to the decimal _ASCII_ notation, we can also use the hexadecimal
-> format, the character **A**, can either be written as **\\65;** or **\\x41;**,
-> The _semi-colon_ can be omitted if you want, this applies both here and on the
-> decimal notation.
->
-> Code:
->
-> print("\\x41;");
->
-> Code:
->
-> A
->
-> You can find all of those values by simply googling “**ASCII table**”, and
-> what’s cool about it is that it’s free.
+```cpp
+print("This is a beep \7");
+```
 
-> **✧ Custom escape character**
->
-> f you noticed, I’ve kept calling repeating the “**escape character**” multiple
-> times throughout the last section where I could have referred to it simply as
-> “**the backslash**”, or even shorted, (**\\**), the reason for that is because
-> the escape character is not an absolute constant character, but rather, it can
-> be changed preferably, you can have it as _@, ^, \$_ and so on, by default
-> it’s a backslash, but how it stays is only determined by you.
->
-> n order to change it, we use the pre-processor directive “**pragma**”, this
-> particular directive accepts different parameters, for each their specific
-> task, and there is one that's responsible on setting the escape character
-> which we will be focusing on, it's **ctrlchar**.
->
-> Code:
->
-> #pragma ctrlchar '\$'
->
-> main() { print("Hello
-> $n World");
-> 	print("This is a backslash: \\");
-> 	print("The his a dollar sign: $\$");
-> }
->
-> Code:
->
-> Hello World This is a backslash: \\ This is a dollar sign: \$
->
-> As you can see the line feed is noted as **\$n** instead of **\\n** now, and
-> the backslash is no longer regarded as the escape character, and consequently,
-> the dollar sign requires being escaped by another dollar sign.
->
-> You can’t, however, change this to (**\-**), but anything else is an
-> acceptable practice, but it’s never ever accepted ethically, just how silly is
-> this **“#pragma ctrlchar ‘6’”**, huh? Absolute mad lad.
->
-> This portion here has absolutely nothing to do with escape sequences, but it
-> is used in formatting textdraws and gametext, it’s better to put it here than
-> anywhere else;
->
-> **~u~**
->
-> Up arrow (gray)
->
-> **~d~**
->
-> Down arrow (gray)
->
-> **~<~**
->
-> Left arrow (gray)
->
-> **~>~**
->
-> Right arrow (gray)
->
-> **\]**
->
-> Displays a \* symbol (only in text style 3, 4, and 5)
->
-> **~k~**
->
-> keyboard key mapping (e.g. ~k~~VEHICLE_TURRETLEFT~ and ~k~~PED_FIREWEAPON~).
-> Look here for a list of keys
+&nbsp;
 
-**✦ Format specifier**
+- **The “Backspace” escape sequence - `\b`**
 
-> **✧ Description**
->
-> Placeholders or specifiers are characters escaped by a percent sign (**%**),
-> the indicate the relative position and the output type of certain parameters,
-> they serve as their name suggests “Placeholders”, they save a place for data
-> that will later replace them inside the string, there are different types of
-> specifiers, and they even follow a specific formula;
->
-> **%\[flags\]\[width\]\[.precision\]type**
->
-> The attributes between brackets are all optional and are up to you-the-user to
-> either keep them or not, what really defines a specifier the wide known format
-> of **%type**, the type part is replaced by a character to represent a certain
-> output type; (integer, float… etc).
->
-> Placeholders are only used on functions that accept parameters, thus functions
-> like print will have no effect, an alternative to it is the more advanced
-> **printf**.
->
-> Let us look at the different output types that can be used:
->
-> **Specifier**
->
-> **Meaning**
->
-> **%i**
->
-> Integer (whole number)
->
-> **%d**
->
-> Integer (whole number)
->
-> **%s**
->
-> String
->
-> **%f**
->
-> Floating-point number (Float: tag)
->
-> **%c**
->
-> ASCII character
->
-> **%x**
->
-> Hexadecimal number
->
-> **%b**
->
-> Binary number
->
-> **%%**
->
-> Literal '%'
->
-> **%q**
->
-> Escape a text for SQLite. (Added in 0.3.7 R2)
+This escape sequence is noted as `\b`, it simply moves your cursor backward,
+most people would expect it to act like the backspace button on your typical
+keyboard, but not entirely, it only moves the carriage one position backward
+without erasing what’s written there.
 
-> **The integer specifiers - %i and %d**
->
-> Let’s wrap the both together, in pawn, these two specifiers do the same exact
-> thing, both output integers, even though **%i** stands for integer and **%d**
-> stands for decimal, they are a synonym to the same thing.
->
-> In other languages, however, the difference lays not in the output, but rather
-> the input with functions like **scanf**, where **%d** scans an integer as a
-> signed decimal, and %i defaults to decimal but also allows hexadecimal (if
-> preceded by 0x) and octal (if preceded by 0).
->
-> The usages of these two specifiers go as follows:
->
-> Code:
->
-> printf("%d is here", 2018); printf("%d + %i = %i", 5, 6, 5 + 6);
->
-> Code:
->
-> 2018 is here 5 + 6 = 11
->
-> The output also supports pre-defined constants, variables, and functions too.
->
-> Code:
->
-> #define CURRENT_YEAR 2018 new age = 19;
->
-> printf("It’s %d", CURRENT_YEAR); printf("He is %d years old", age);
-> printf("Seconds since midnight 1st January 1970: %d", gettime());
->
-> Code:
->
-> It's 2018 He is 19 years old Seconds since midnight 1st January 1970:
-> 1518628594
->
-> As you can see, any value we pass in the parameters of the **printf** function
-> is being replaced by its respective placeholder, and remember, **order
-> matters**, your placeholders should follow the same order as your parameters
-> in the call, and always use the correct specifier type, not doing so, will not
-> result in an error, but it may output in some unwanted results, but in some
-> cases, those unwanted results are what we want.
->
-> What do you think will happen if we tried to print a float or a string using
-> an integer specifier? Let’s find out;
->
-> Code:
->
-> printf("%d", 1.12); printf("%d", "Hello"); printf("%d", 'H'); printf("%d",
-> true);
->
-> Code:
->
-> 1066359849 72 72 1
->
-> How odd, totally unexpected, but not necessarily useless, this exact behavior
-> is taken advantage of in so many situations.
->
-> First of all, let’s see why did 1.12 output _1066359849_, well, that‘s
-> something called undefined behavior, you can learn more about this
-> [here](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Undefined_behavior).
->
-> Trying to output a string using an integer specifier will give its first
-> character’s _ASCII_ code, in this case, the character H’s code, 72, the same
-> happens to the output of a single character. And finally, outputting a Boolean
-> will give 1 if it’s true, and 0 if it’s false.
->
-> Strings are arrays in themselves, so outputting an array here will give the
-> value of the first slot in that array, how it’s going to be output depends on
-> which type it is (integer, float, character, boolean).
+This one doesn’t have that much usability in pawn unless you were clever enough
+to milk something useful out of it, here’s how it works.
 
-> **The string specifiers - %s**
->
-> This specifier, as it stands for string, is responsible for outputting strings
-> (obviously):
->
-> Code:
->
-> printf("Hello, %s!", "World");
->
-> Code:
->
-> Hello, world!
->
-> Let’s also output non-string values using this too:
->
-> Code:
->
-> printf("%s", 103); printf("%s", true); printf("%s", 'H'); printf("%s", 1.12);
->
-> Code:
->
-> g
->
-> H )
->
-> The number _103_ was treated as the _ASCII_ code for _g_, and thus _g_ was
-> printed, same goes for the strange symbol below it, the character with the
-> value true, a.k.a _1_ was printed, more simply, the character _H_ was printed
-> as it is, but hey, what happened to the floating number _1.12_? remember the
-> **undefined behavior**? Yeah, _1.12_ resulted in a huge integer, which kept
-> overflowing (its value divided by _255_) times, until it resulted in a number
-> between _0_ and _254_, in this case, _40_, which is the _ASCII_ code of the
-> character _(_.
->
-> Again, just like the integer specifier, this accepts pre-defined constants,
-> variables, and functions:
->
-> Code:
->
-> #define NAME "Max" new message\[\] = “Hello there!”;
->
-> printf("His name is %s", NAME); printf("Hey, %s", message); printf("%s work",
-> #Great);
->
-> Code:
->
-> His name is Max Hey, Hello there! Great work
+```cpp
+print("Hello 2018");
+```
 
-> **The float specifiers - %f**
->
-> This specifier -short for float-, as its name suggests, it outputs floating
-> numbers, on earlier sections, we tried to output floating numbers using the
-> integer specifier, and then we got that undefined behavior, but now, that we
-> know about this specifier, we can safely output floats with no problems;
->
-> Code:
->
-> printf("%f", 1.235); printf("%f", 5); printf("%f", ‘h’);
->
-> Code:
->
-> 1.235000 0.000000 0.000000
->
-> The _1.235_ floating number got output just fine, with the addition of some
-> padding, however, the rest of all output _0.000000_, basically _0_, that’s
-> because the **%f** specifier will only output floating numbers, in other
-> words, numbers that have no fixed number of digits before and after the
-> decimal point; that is, the decimal point can float.
->
-> To fix that issue, we simply add the fractional part:
->
-> Code:
->
-> printf("%f", 5.0); printf("%f", ‘h’ + 0.0);
->
-> Code:
->
-> 5.000000 104.000000
->
-> Although the **%f** is the most commonly used floating placeholder, the **%h**
-> specifier does pretty much the same:
->
-> Code:
->
-> printf("%h", 5.0);
->
-> Code:
->
-> 5.000000
+This will print **Hello 2018** in the console, the cursor remains on the null
+character’s position, more clearly, like this:
 
-> **The character specifiers - %c**
->
-> This specifier, short for character, works like the string placeholder, but it
-> only outputs a single character, let’s observe the following example:
->
-> Code:
->
-> printf("%c", 'A'); printf("%c", "A"); printf("%c", "Hello"); printf("%c",
-> 105); printf("%c", 1.2); printf("%c", true);
->
-> Code:
->
-> A A H i s
->
-> As you can see, passing a string will output only the first character and
-> passing a number will output the character whose _ASCII_ code matches that
-> number (Booleans are converted to 0 and 1 respectively).
+```
+Hello 2018
+          ^
+```
 
-> **The hexadecimal specifiers - %x**
->
-> The following specifier outputs the value we pass as a hexadecimal number,
-> simply put, a conversation of numbers from a given base to base 16.
->
-> Code:
->
-> printf("%x", 6); printf("%x", 10); printf("%x", 255);
->
-> Code:
->
-> 6 A FF
->
-> Just like the cases we saw on earlier sections, passing values other than
-> integers will convert them to their respective integer values, and output them
-> as hexadecimal numbers;
->
-> Code:
->
-> printf("%x", 1.5); printf("%x", ‘Z’); printf("%x", “Hello”); printf("%x",
-> true);
->
-> Code:
->
-> 3FC00000 5A 48 1
->
-> The first value _“1.5”_, will result in an undefined behavior upon its
-> conversion to an integer (1069547520), then the resulting integer will be
-> output as a hexadecimal (3FC00000),  
-> The “Z” character, will have its _ASCII_ value (90) converted to hexadecimal
-> (5A).  
-> The string _“Hello”_ will only have its first character (H) with the _ASCII_
-> value of (72) converted to hexadecimal (48).  
-> And _“true”_ outputs (1) as a hexadecimal, which is converts to (1), (false
-> will output 0).
+As you can see, the cursor stops after the last visible character of the string,
+which is normal, now, let’s add a backspace escape sequence;
 
-> **The binary specifiers - %b**
->
-> The following specifier, short for “_binary_” is used to print passed values
-> as binary numbers, passing characters will convert its _ASCII_ code into
-> binary, and so is the case for strings where only the first character is
-> regarded, Booleans are regarded as true and false respectively, float numbers
-> fall under the case of undefined behavior, as for integers and hexadecimal,
-> they are converted to binary and output.
->
-> Code:
->
-> printf(%b", 0b0011); printf(%b", 2); printf(%b", 2.0); printf(%b", 0xE2);
-> printf(%b", ‘T’); printf(%b", “Hello”); printf(%b", true);
->
-> Code:
->
-> 11 10 1000000000000000000000000000000 11100010 1010100 1001000 1
+```cpp
+print("Hello 2018\b");
+```
 
-> **The literal %**
->
-> Much like the default escaping character (**\\**), the compiler views (**%**)
-> as a special character, and thus treats the sequence as a placeholder, as long
-> as there is a character after the (**%**) it’s regarded as a specifier even if
-> it’s not valid, let’s observe these two cases;
->
-> Code:
->
-> printf("%"); printf("Hello %"); printf("% World"); printf("Hello % World");
->
-> Code:
->
-> % Hello % World Hello World
->
-> As you can see, having (**%**) alone as an individual sequence will have it
-> output, but not the same happens when it’s followed by space or any other
-> character, thus it results in outputting a space character.  
-> To trespass this problem, we escape it using another percent sign as follows;
->
-> Code:
->
-> printf("This is a percent sign %%, we just had to escape it!");
->
-> Code:
->
-> This is a percent sign %, we just had to escape it!
->
-> Of course, this only concerns functions that support formatting, such as
-> **printf** and **format**, for example, trying to output a percent sign using
-> the **print** function will not require you to escape it.
+That will result in;
 
-> **The %q specifier**
->
-> This one doesn’t hold any big importance in our main topic, it’ widely used to
-> escape sensitive strings when working with _SQLite_, and trust me, nobody
-> wants to fall under the
-> [Bobby table](https://web.archive.org/web/20190424140855/http://bobby-tables.com/about)
-> case.
->
-> Back when we introduced the placeholders, we reference a specific formula
-> concerning them, as a reminder, here it is;
->
-> \*\*
->
-> %\[flags\]\[width\]\[.precision\]type
->
-> \*\*
->
-> So far, we have only talked about the **%** sign and the type filed, the
-> others are optional, but each one is effective on different cases, you can
-> include them to better control how your values are treated when they are
-> output.
+```
+Hello 2018
+         ^
+```
 
-> **The width filed**
->
-> This one is responsible for specifying the minimum character output, it can be
-> omitted if needed, you just have to type its value as a numeric integer, let’s
-> look at some examples;
->
-> Code:
->
-> printf("%3d", 5555); printf("%3d", 555); printf("%3d", 55); printf("%3d", 5);
->
-> Code:
->
-> 5555 555 55 5
->
-> We instructed the specifier to lock the output to 3 characters or more, at
-> first, outputting 4 and 3 characters number long went fine, but the characters
-> shorter than 3 characters were left padded with spaces to even the output
-> width. There is also the ability to have dynamic width values, for that, we
-> use the asterisk sign (**\***).
->
-> Code:
->
-> printf("%\*d", 5, 55);
->
-> Code:
->
->      55
->
-> First, we pass the width’s value which was 5, then the value we want to output
-> (55), so the placeholder outputs a minimum of 5 characters, that’s 5 minus 2,
-> which gives us 3 spaces of padding.
+As you can see, the cursor is exactly in the position of the last visible
+character of the string, which is _8_, this is the same as toggling on the
+insert mode on your keyboard, now, let’s add some sorcery to this.
 
-> **The flags field**
->
-> This one works really well with the width field, as the width specifies the
-> minimum characters to outputs, this one pads the emptiness left behind with
-> whatever you tell it to. In case there were to spaces left behind, there won’t
-> be any pad.
->
-> Code:
->
-> printf("%3d", 55); printf("%5x", 15); printf("%2f", 1.5)
->
-> Code:
->
-> 055 0000F 01.500000
->
-> The first number 55, is short on one character because of the width of the
-> decimal parameter, so it’s padded by one 0. As for 15, it’s converted to its
-> respective hexadecimal value _F_, and padded with 4 0’s to validate the width
-> of its placeholder. Notice how only the number before the decimal point was
-> padded. The use of dynamic width values remains here too, we just have to
-> include the asterisk, pass a value, and watch the magic happen;
->
-> Code:
->
-> printf("%0\*d", 5, 55);
->
-> Code:
->
-> 00055
+```cpp
+print("Hello 2018\b9");
+```
 
-> **The precision field**
->
-> The Precision field usually specifies a maximum limit on the output, depending
-> on the particular formatting type. For floating point numeric types, it
-> specifies the number of digits to the right of the decimal point that the
-> output should be rounded. For the string type, it limits the number of
-> characters that should be output, after which the string is truncated.
->
+If you guessed it right, yes, this will print **Hello 2019**, so, let’s see how
+this works, the machine will process the string character by character, until it
+reaches the backspace escape sequence, then it moves the carriage one position
+backwards, which selects whatever character there, in this case 8, then, it
+inserts 9 in its place.
+
+```
+Hello 2019
+         ^
+```
+
+The carriage is going to move backward as long as there is a backspace escape
+sequence in your string.
+
+```cpp
+print("Hello 2018\b9\b\b\b");
+```
+
+```
+Hello 2019
+       ^
+```
+
+The cursor will stop at the first character’s position if the amount of
+backspace escape sequence exceeded that of the number of characters between the
+position of the first character (yes, arrays start at 0, head to
+[r/programmerhumor](https://www.reddit.com/r/ProgrammerHumor/) for some good
+memes) and the initial position of the cursor.
+
+```cpp
+print("Hi\b\b\b\b\b\b\b\b\b\b\b\b\b\b");
+```
+
+Will always result in this;
+
+```
+Hi
+^
+```
+
+&nbsp;
+
+- **The “Escape” escape sequence - `\e`**
+
+With the hexadecimal value of 1B in _ASCII_, it’s used for common non-standard
+code, let’s look for some programming languages like C as an example; a sequence
+such as `\z` is not a valid escape sequence according to the C standard. The C
+standard requires such invalid escape sequences to be diagnosed (the compiler
+must print an error message). Notwithstanding this fact, some compilers may
+define additional escape sequences, with implementation-defined semantics. An
+example is the `\e` escape sequence, represents the escape character. It wasn't
+however added to the C standard repertoire because it has no meaningful
+equivalent in some character sets.
+
+&nbsp;
+
+- **The “Form feed” escape sequence - `\f`**
+
+Form feed is a page breaking _ASCII_ code. It forces the printer to eject the
+current page and to continue printing at the top of another. Often, it will also
+cause a carriage return, this doesn’t make any noticeable change in the
+_SA-MP_’s debugging console.
+
+&nbsp;
+
+- **The “New line” escape sequence - `\n`**
+
+The new line (also referred to as line ending, end of line (_EOL_), line feed,
+or line break) escape sequence is an _ASCII_ code that’s noted as `/n` with the
+decimal value of 10, it’s something that’s commonly used, text editors are
+inserting this character every time we press the Enter button on our keyboards.
+Here’s a simple message with a line break:
+
+```cpp
+print("Hello, this is line 1\nAnd this is line 2");
+```
+
+That will simply output:
+
+```
+Hello, this is line 1
+And this is line 2
+```
+
+Multiple line brakes are achievable of course;
+
+```cpp
+print("H\n\n\ne\n\n\nl\nl\n\no");
+```
+
+```
+H
+
+
+e
+
+
+l
+l
+
+o
+```
+
+This works differently when dealing with files, however, depending on your
+operating system, like for instance, in windows, a line break is typically a
+**CR** (_carriage return_) + **LF** (_line feed_), you can learn more about the
+differences [here](https://en.wikipedia.org/wiki/Newline).
+
+&nbsp;
+
+- **The “Carriage return” escape sequence - `\r`**
+
+The carriage return is an _ASCII_ code that’s often associated with the line
+feed, but it can serve as its own thing by itself, it simply moves the carriage
+to the beginning of the current line, equivalent of a specific case we discussed
+using multiple backspaces (`\b`) escape sequence, let’s look at the following
+example, without using this escape sequence, this is the normal output we would
+get:
+
+```cpp
+print("Hello");
+```
+
+```
+Hello
+     ^
+```
+
+The arrow represents the position of the cursor, which is placed after the last
+visible character of the string, again, that’s the normal expected behavior, now
+let’s add the carriage return into the mix:
+
+```cpp
+print("Hello\r");
+```
+
+```
+Hello
+^
+```
+
+The cursor is shifted to the beginning of the line, selecting the first
+character **“H”**, now inserting anything will change **“H”** to whatever we
+input, and then move to the next character while remaining on the insert mode:
+
+```cpp
+print("Hello\rBo");
+```
+
+```
+Hello
+^
+```
+
+As we’ve seen on the line feed section, line breaks work differently across
+different operating systems, windows, for instance, use a carriage return
+followed by a line feed to perform a line break, just like the classic
+typewriters.
+
+&nbsp;
+
+- **The “Horizontal tab” escape sequence - `\t`**
+
+Tabulation is something we use every day, from text/code indentation, to table
+display, that tabulator key that lays at the very side of your keyboard really
+is a time saver, it was such a pain and so much time consuming to excessively
+use many spaces, but this one cuts the cake easily, not only is it usefully
+practically, it really is strongly present in the field of programming, it’s
+noted as `\t`, people would argue on how many spaces a tab is worth, most would
+say it’s worth 4 spaces, but there are who say it’s worth 8 spaces, someone
+demonic creature would even prefer spaces to tabs, but that's another talk on
+inself, let as observe this simple example:
+
+```cpp
+print("Hello\tWorld");
+```
+
+```
+Hello    World
+```
+
+Here is another one with multiple tabulations:
+
+```cpp
+print("Hello\t\t\t\t\tWorld");
+```
+
+```
+Hello                    World
+```
+
+&nbsp;
+
+- **The “Vertical tab” escape sequence - `\v`**
+
+During the old typewriter era, this had a more popular use, it was used to move
+to the next line vertically, but now, this is no longer the case, it doesn’t
+have any noticeable usage nowadays, and that includes modern printers and even
+programming languages, and pawn is no exception.
+
+&nbsp;
+
+- **\_The “Backslash” escape sequence - `\*`**
+
+As we’ve seen, the backslash is regarded as the escape character, so whenever
+the program spots it, it thinks of it as a starting point of some escape
+sequence, it doesn’t look at it as an independent character, and thus, will
+either give a compilation error (_if it wasn’t followed by a valid character_),
+or will not print it, in pawn’s case, the compilator will raise an error (_error
+027: invalid character constant_). Luckily, we can solve this problem by
+escaping out backslash, and that’s done by prefixing yet another backslash to
+it:
+
+```cpp
+print("Hello \\ World");
+```
+
+```
+Hello \ World
+```
+
+The output will disregard the first backslash, and print the second, as the
+first is escaping the second and tricking the program into viewing it as a raw
+character. A backslash can only escape one character at a time, so doing the
+following will raise a compilation error;
+
+```cpp
+print("Hello \\\ World");
+```
+
+Think of it as pairs of backslashes, everyone is escaping the one after, and
+thus, it should always result in an even number of backslashes;
+
+```cpp
+print("Hello \\\\\\ \\ World");
+```
+
+```
+Hello \\\ \ World
+```
+
+As you surely noticed, escape sequences are never printed, they only serve as
+instructions that express certain events, if we want to force them into being
+printed, we can escape their escape character (`\`), then the program will not
+look at them as escape sequence:
+
+```cpp
+print("This is the escape sequence responsible for tabulation: \\t");
+```
+
+The first backslash escapes the second, and then it gets printed, then the **t**
+character is left alone, and thus regarded as an independent character:
+
+```
+This is the escape sequence responsible for tabulation: \t
+```
+
+&nbsp;
+
+- **The “Single quote” escape sequence - `\’`**
+
+This is hardly present when writing pawn code, I myself haven’t found myself
+using this in any coding situation, in other languages that treat text between
+single quotation marks as a string make great use of this to limit the confusion
+that happens when nesting single quotation marks into each other, it really
+makes no difference in pawn, here’s a simple example;
+
+```cpp
+print("Single quote '");
+// or
+print("Single quote \'");
+```
+
+Either way, the output will be the same:
+
+```
+Single quote: '
+```
+
+The only use I can think of concerning this is setting a variable the character
+“**'**”, so obviously doing the following will cause a compilation error;
+
+```cpp
+new chr = ''';
+```
+
+Simply because the compiler will regard the first pair of single quotes as one
+entity, and the second as an unclosed quotation sequence, so to fix that, we
+will have to escape the middle one;
+
+```cpp
+new chr = ''\';
+```
+
+&nbsp;
+
+- **The “Double quote” escape sequence - `\”`**
+
+Unlike the single quotation mark, this one can cause problems when it comes to
+nesting them together, pawn treats anything between double quotations as a
+string, so what if you want to input a double quotation mark in your string,
+that will confuse the program, it wouldn’t know what each quotation mark is for,
+let’s take this as an example for instance:
+
+```cpp
+print("Hello "world");
+```
+
+As soon as the compilator spots the first quotation marks, it will treat
+everything that comes after as part of one string, and end up the process as
+soon as it hits another quotation mark, and thus, the compiler will pick up
+**“Hello “** as a string and will view **World”** as some none-sense filling up
+the holes of your code. To solve this, we need to escape the double quotation
+mark we want to print:
+
+```cpp
+print("Hello \"world");
+```
+
+Now, the compiler will treat the second quotation mark as an escape sequence as
+it’s prefixed by an escape character (**\\**):
+
+```
+Hello "world
+```
+
+Let’s add another quotation mark just for the heck of it:
+
+```cpp
+print("Hello \"world\"");
+```
+
+```
+Hello "world"
+```
+
+It couldn’t be simpler.
+
+Throughout this section, we’ve seen how we can represent escape sequences by
+prefixing the escape character (`\\`) to a certain character, but that’s just
+one way to note those values, among other ways, we will take a look on two
+others;
+
+&nbsp;
+
+- **Escape sequences with character code (decimal code) - `\ddd;`**
+
+It doesn’t change anything about the escape sequences, it’s just a different way
+to express them, using decimal _ASCII_ codes, for instance, if you want to print
+A, but note it decimally, you can type it’s decimal _ASCII_ code like the
+following:
+
+```cpp
+print("\65;");
+```
+
+This doesn’t concern only alphanumeric characters, but also other ones, like the
+audible beep (`\a`), with its decimal value `7`, can be represented according to
+this notation as `\7`;
+
+The semicolon mark is optional and can be dropped, but it’s always better to go
+with the original approach, its purpose is to give the escape sequence an
+explicit termination symbol when it is used in a string constant.
+
+&nbsp;
+
+- **Escape sequences with character code (decimal code) - `\xhhh;`**
+
+Similar to the decimal _ASCII_ notation, we can also use the hexadecimal format,
+the character **A**, can either be written as `\65`;** or `\x41`;**, The
+_semi-colon_ can be omitted if you want, this applies both here and on the
+decimal notation.
+
+```cpp
+print("\x41;");
+```
+
+```
+A
+```
+
+You can find all of those values by simply googling “**ASCII table**”, and
+what’s cool about it is that it’s free.
+
+&nbsp;
+
+### **✧ Custom escape character**
+
+If you noticed, I’ve kept calling repeating the “**escape character**” multiple
+times throughout the last section where I could have referred to it simply as
+“**the backslash**”, or even shorted, (`\`), the reason for that is because the
+escape character is not an absolute constant character, but rather, it can be
+changed preferably, you can have it as _@, ^, \$_ and so on, by default it’s a
+backslash, but how it stays is only determined by you.
+
+n order to change it, we use the pre-processor directive `pragma`, this
+particular directive accepts different parameters, for each their specific task,
+and there is one that's responsible on setting the escape character which we
+will be focusing on, it's `ctrlchar`.
+
+```cs
+#pragma ctrlchar '$'
+
+main()
+{
+	print("Hello $n World");
+	print("This is a backslash: \\");
+	print("The his a dollar sign: $$");
+}
+```
+
+```
+Hello
+ World
+This is a backslash: \
+This is a dollar sign: $
+```
+
+As you can see the line feed is noted as `$n` instead of `\n` now, and the
+backslash is no longer regarded as the escape character, and consequently, the
+dollar sign requires being escaped by another dollar sign.
+
+You can’t, however, change this to (`-`), but anything else is an acceptable
+practice, but it’s never ever accepted ethically, just how silly is this
+`#pragma ctrlchar '6'`, huh? Absolute mad lad.
+
+This portion here has absolutely nothing to do with escape sequences, but it is
+used in formatting textdraws and gametext, it’s better to put it here than
+anywhere else;
+
+|     |                                                                                                               |
+| --- | ------------------------------------------------------------------------------------------------------------- |
+| ~u~ | Up arrow (gray)                                                                                               |
+| ~d~ | Down arrow (gray)                                                                                             |
+| ~<~ | Left arrow (gray)                                                                                             |
+| ~>~ | Right arrow (gray)                                                                                            |
+| ]   | Displays a `*` symbol (only in text style 3, 4, and 5)                                                        |
+| ~k~ | keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`). Look here for a list of keys |
+
+&nbsp;
+
+keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`).
+Look here for a list of keys
+
+&nbsp;
+
+### **✦ Format specifier**
+
+#### **✧ Description**
+
+Placeholders or specifiers are characters escaped by a percent sign (`%`), the
+indicate the relative position and the output type of certain parameters, they
+serve as their name suggests “_Placeholders”_, they save a place for data that
+will later replace them inside the string, there are different types of
+specifiers, and they even follow a specific formula;
+
+```
+%[flags][width][.precision]type
+```
+
+The attributes between brackets are all optional and are up to you-the-user to
+either keep them or not, what really defines a specifier the wide known format
+of **%type**, the type part is replaced by a character to represent a certain
+output type; (_integer, float... etc_).
+
+Placeholders are only used on functions that accept parameters, thus functions
+like print will have no effect, an alternative to it is the more advanced
+`printf`.
+
+Let us look at the different output types that can be used:
+
+|           |                                               |
+| --------- | --------------------------------------------- |
+| Specifier | Meaning                                       |
+| %i        | Integer (whole number)                        |
+| %d        | Integer (whole number)                        |
+| %s        | String                                        |
+| %f        | Floating-point number (Float: tag)            |
+| %c        | ASCII character                               |
+| %x        | Hexadecimal number                            |
+| %b        | Binary number                                 |
+| %%        | Literal '%'                                   |
+| %q        | Escape a text for SQLite. (Added in 0.3.7 R2) |
+
+&nbsp;
+
+- **The integer specifiers - `%i` and `%d`**
+
+Let’s wrap the both together, in pawn, these two specifiers do the same exact
+thing, both output integers, even though `%i` stands for integer and `%d` stands
+for decimal, they are a synonym to the same thing.
+
+In other languages, however, the difference lays not in the output, but rather
+the input with functions like `scanf`, where `%d` scans an integer as a signed
+decimal, and %i defaults to decimal but also allows hexadecimal (_if preceded by
+`0x`_) and octal (_if preceded by `0`_).
+
+The usages of these two specifiers go as follows:
+
+```cpp
+printf("%d is here", 2018);
+printf("%d + %i = %i", 5, 6, 5 + 6);
+```
+
+```
+printf("%d is here", 2018);
+printf("%d + %i = %i", 5, 6, 5 + 6);
+```
+
+The output also supports pre-defined constants, variables, and functions too.
+
+```cpp
+#define CURRENT_YEAR 2018
+new age = 19;
+
+printf("It’s %d", CURRENT_YEAR);
+printf("He is %d years old", age);
+printf("Seconds since midnight 1st January 1970: %d", gettime());
+```
+
+```
+It's 2018
+He is 19 years old
+Seconds since midnight 1st January 1970: 1518628594
+```
+
+As you can see, any value we pass in the parameters of the `printf` function is
+being replaced by its respective placeholder, and remember, **order matters**,
+your placeholders should follow the same order as your parameters in the call,
+and always use the correct specifier type, not doing so, will not result in an
+error, but it may output in some unwanted results, but in some cases, those
+unwanted results are what we want.
+
+What do you think will happen if we tried to print a float or a string using an
+integer specifier? Let’s find out;
+
+```cpp
+printf("%d", 1.12);
+printf("%d", "Hello");
+printf("%d", 'H');
+printf("%d", true);
+```
+
+```
+1066359849
+72
+72
+1
+```
+
+How odd, totally unexpected, but not necessarily useless, this exact behavior is
+taken advantage of in so many situations.
+
+First of all, let’s see why did `1.12` output _1066359849_, well, that's
+something called undefined behavior, you can learn more about this
+[here](https://en.wikipedia.org/wiki/Undefined_behavior).
+
+Trying to output a string using an integer specifier will give its first
+character’s _ASCII_ code, in this case, the character H’s code, 72, the same
+happens to the output of a single character. And finally, outputting a Boolean
+will give 1 if it’s true, and 0 if it’s false.
+
+Strings are arrays in themselves, so outputting an array here will give the
+value of the first slot in that array, how it’s going to be output depends on
+which type it is (_integer, float, character, boolean_).
+
+&nbsp;
+
+- **The string specifiers - `%s`**
+
+This specifier, as it stands for string, is responsible for outputting strings
+(_obviously_):
+
+```cpp
+printf("Hello, %s!", "World");
+```
+
+```
+Hello, world!
+```
+
+Let’s also output non-string values using this too:
+
+```cpp
+printf("%s", 103);
+printf("%s", true);
+printf("%s", 'H');
+printf("%s", 1.12);
+```
+
+```
+g
+
+H
+)
+```
+
+The number `103` was treated as the _ASCII_ code for _g_, and thus _g_ was
+printed, same goes for the strange symbol below it, the character with the value
+true, a.k.a _1_ was printed, more simply, the character `'H'` was printed as it
+is, but hey, what happened to the floating number `1.12`? remember the
+**undefined behavior**? Yeah, `1.12` resulted in a huge integer, which kept
+overflowing (its value divided by _255_) times, until it resulted in a number
+between _0_ and _254_, in this case, _40_, which is the _ASCII_ code of the
+character _(_.
+
+Again, just like the integer specifier, this accepts pre-defined constants,
+variables, and functions:
+
+```cpp
+#define NAME "Max"
+new message[] = “Hello there!”;
+
+printf("His name is %s", NAME);
+printf("Hey, %s", message);
+printf("%s work", #Great);
+```
+
+```
+His name is Max
+Hey, Hello there!
+Great work
+```
+
+- **The float specifiers - `%f`**
+
+This specifier -short for float-, as its name suggests, it outputs floating
+numbers, on earlier sections, we tried to output floating numbers using the
+integer specifier, and then we got that undefined behavior, but now, that we
+know about this specifier, we can safely output floats with no problems;
+
+```cpp
+printf("%f", 1.235);
+printf("%f", 5);
+printf("%f", 'h');
+```
+
+The _1.235_ floating number got output just fine, with the addition of some
+padding, however, the rest of all output _0.000000_, basically _0_, that’s
+because the `%f` specifier will only output floating numbers, in other words,
+numbers that have no fixed number of digits before and after the decimal point;
+that is, the decimal point can float.
+
+To fix that issue, we simply add the fractional part:
+
+```cpp
+printf("%f", 5.0);
+printf("%f", 'h' + 0.0);
+```
+
+```
+5.000000
+104.000000
+```
+
+Although the `%f` is the most commonly used floating placeholder, the `%h`
+specifier does pretty much the same:
+
+```cpp
+printf("%h", 5.0);
+```
+
+```
+5.000000
+```
+
+- **The character specifiers - `%c`**
+
+This specifier, short for character, works like the string placeholder, but it
+only outputs a single character, let’s observe the following example:
+
+```cpp
+printf("%c", 'A');
+printf("%c", "A");
+printf("%c", "Hello");
+printf("%c", 105);
+printf("%c", 1.2);
+printf("%c", true);
+```
+
+```
+A
+A
+H
+i
+s
+```
+
+As you can see, passing a string will output only the first character and
+passing a number will output the character whose _ASCII_ code matches that
+number (_Booleans are converted to 0 and 1 respectively_).
+
+&nbsp;
+
+- **The hexadecimal specifiers - `%x`**
+
+The following specifier outputs the value we pass as a hexadecimal number,
+simply put, a conversation of numbers from a given base to base 16.
+
+```cpp
+printf("%x", 6);
+printf("%x", 10);
+printf("%x", 255);
+```
+
+```
+6
+A
+FF
+```
+
+Just like the cases we saw on earlier sections, passing values other than
+integers will convert them to their respective integer values, and output them
+as hexadecimal numbers;
+
+```cpp
+printf("%x", 1.5);
+printf("%x", 'Z');
+printf("%x", "Hello");
+printf("%x", true);
+```
+
+```
+3FC00000
+5A
+48
+1
+```
+
+The first value `1.5`, will result in an undefined behavior upon its conversion
+to an integer (_1069547520_), then the resulting integer will be output as a
+hexadecimal (_3FC00000_), The `'Z'` character, will have its _ASCII_ value (90)
+converted to hexadecimal (5A). The string `"Hello"` will only have its first
+character (H) with the _ASCII_ value of (72) converted to hexadecimal (48). And
+`true` outputs (1) as a hexadecimal, which is converts to (1), (false will
+output 0).
+
+&nbsp;
+
+- **The binary specifiers - `%b`**
+
+The following specifier, short for “_binary_” is used to print passed values as
+binary numbers, passing characters will convert its _ASCII_ code into binary,
+and so is the case for strings where only the first character is regarded,
+Booleans are regarded as true and false respectively, float numbers fall under
+the case of undefined behavior, as for integers and hexadecimal, they are
+converted to binary and output.
+
+```cpp
+printf("%b", 0b0011);
+printf("%b", 2);
+printf("%b", 2.0);
+printf("%b", 0xE2);
+printf("%b", 'T');
+printf("%b", "Hello");
+printf("%b", true);
+```
+
+```
+11
+10
+1000000000000000000000000000000
+11100010
+1010100
+1001000
+1
+```
+
+- **The literal `%`**
+
+Much like the default escaping character (`\`), the compiler views (`%`) as a
+special character, and thus treats the sequence as a placeholder, as long as
+there is a character after the (`%`) it’s regarded as a specifier even if it’s
+not valid, let’s observe these two cases;
+
+```cpp
+printf("%");
+printf("Hello %");
+printf("% World");
+printf("Hello % World");
+```
+
+```
+%
+Hello %
+ World
+Hello  World
+```
+
+As you can see, having (`%`) alone as an individual sequence will have it
+output, but not the same happens when it’s followed by space or any other
+character, thus it results in outputting a space character. To trespass this
+problem, we escape it using another percent sign as follows;
+
+```cpp
+printf("This is a percent sign %%, we just had to escape it!");
+```
+
+```
+This is a percent sign %, we just had to escape it!
+```
+
+Of course, this only concerns functions that support formatting, such as
+`printf` and `format`, for example, trying to output a percent sign using the
+`print` function will not require you to escape it.
+
+&nbsp;
+
+- **The `%q` specifier**
+
+This one doesn’t hold any big importance in our main topic, it’ widely used to
+escape sensitive strings when working with _SQLite_, and trust me, nobody wants
+to fall under the [Bobby table](http://bobby-tables.com/about) case.
+
+Back when we introduced the placeholders, we reference a specific formula
+concerning them, as a reminder, here it is;
+
+```
+%[flags][width][.precision]type
+```
+
+So far, we have only talked about the `%` sign and the type filed, the others
+are optional, but each one is effective on different cases, you can include them
+to better control how your values are treated when they are output.
+
+&nbsp;
+
+- **The width filed**
+
+This one is responsible for specifying the minimum character output, it can be
+omitted if needed, you just have to type its value as a numeric integer, let’s
+look at some examples;
+
+```cpp
+printf("%3d", 5555);
+printf("%3d", 555);
+printf("%3d", 55);
+printf("%3d", 5);
+```
+
+```
+5555
+555
+ 55
+  5
+```
+
+We instructed the specifier to lock the output to 3 characters or more, at
+first, outputting 4 and 3 characters number long went fine, but the characters
+shorter than 3 characters were left padded with spaces to even the output width.
+There is also the ability to have dynamic width values, for that, we use the
+asterisk sign (`*`).
+
+```cpp
+printf("%*d", 5, 55);
+```
+
+```
+     55
+```
+
+First, we pass the width’s value which was `5`, then the value we want to output
+`55`, so the placeholder outputs a minimum of 5 characters, that’s 5 minus 2,
+which gives us 3 spaces of padding.
+
+&nbsp;
+
+- **The flags field**
+
+This one works really well with the width field, as the width specifies the
+minimum characters to outputs, this one pads the emptiness left behind with
+whatever you tell it to. In case there were to spaces left behind, there won’t
+be any pad.
+
+```cpp
+printf("%3d", 55);
+printf("%5x", 15);
+printf("%2f", 1.5)
+```
+
+```
+055
+0000F
+01.500000
+```
+
+The first number 55, is short on one character because of the width of the
+decimal parameter, so it’s padded by one 0. As for 15, it’s converted to its
+respective hexadecimal value _F_, and padded with 4 0’s to validate the width of
+its placeholder. Notice how only the number before the decimal point was padded.
+The use of dynamic width values remains here too, we just have to include the
+asterisk, pass a value, and watch the magic happen;
+
+```cpp
+printf("%0*d", 5, 55);
+```
+
+```
+00055
+```
+
+&nbsp;
+
+- **The precision field**
+
+The Precision field usually specifies a maximum limit on the output, depending
+on the particular formatting type. For floating point numeric types, it
+specifies the number of digits to the right of the decimal point that the output
+should be rounded. For the string type, it limits the number of characters that
+should be output, after which the string is truncated.
+
 > Code:
 >
 > printf("%.2f", 1.5); printf("%.\*f", 10, 1.5); printf("%.5s", "Hello world!");
@@ -2543,3 +2584,7 @@ You can find more information about this
 > - [strfind](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Strfind)
 > - [format](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Format)
 > - [Bitwise logical shift](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Logical_shift)
+
+```
+
+```
