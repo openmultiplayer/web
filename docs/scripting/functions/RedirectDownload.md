@@ -17,15 +17,15 @@ Redirect a player custom AddCharModel or AddSimpleModel download to a specific H
 
 ## Parameters
 
-|Name       |Description
-|-          |-
-|playerid   |The ID of the player that requested custom models download.
-|url[]      |The URL to redirect download
+| Name     | Description                                                 |
+| -------- | ----------------------------------------------------------- |
+| playerid | The ID of the player that requested custom models download. |
+| url[]    | The URL to redirect download                                |
 
 ## Return Values
 
-* 1: The function executed successfully.
-* 0: The function failed to execute.
+- 1: The function executed successfully.
+- 0: The function failed to execute.
 
 ## Example Usage from dl_redirect filterscript
 
@@ -58,7 +58,7 @@ public OnPlayerRequestDownload(playerid, type, crc)
 
 ## Related Functions
 
-* [AddCharModel](../functions/AddCharModel): Adds a new custom character model for download.
-* [AddSimpleModel](../functions/AddSimpleModel): Adds a new custom simple object model for download.
-* [AddSimpleModelTimed](../functions/AddSimpleModelTimed): Adds a new custom simple object model for download.
-* [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.
+- [AddCharModel](../functions/AddCharModel): Adds a new custom character model for download.
+- [AddSimpleModel](../functions/AddSimpleModel): Adds a new custom simple object model for download.
+- [AddSimpleModelTimed](../functions/AddSimpleModelTimed): Adds a new custom simple object model for download.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.

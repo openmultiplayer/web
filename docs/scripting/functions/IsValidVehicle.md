@@ -17,9 +17,9 @@ Check if a vehicle is created.
 
 ## Parameters
 
-|Name       |Description
-|-          |-
-|vehicleid  |The vehicle to check for existance
+| Name      | Description                        |
+| --------- | ---------------------------------- |
+| vehicleid | The vehicle to check for existance |
 
 ## Return Values
 
@@ -56,5 +56,5 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## Related Functions
 
-* [GetPlayerVehicleID](../functions/GetPlayerVehicleID): Get the ID of the vehicle the player is in.
-* [GetVehicleModel](../functions/GetVehicleModel): Get the model id of a vehicle.
+- [GetPlayerVehicleID](../functions/GetPlayerVehicleID): Get the ID of the vehicle the player is in.
+- [GetVehicleModel](../functions/GetVehicleModel): Get the model id of a vehicle.

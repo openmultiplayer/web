@@ -23,11 +23,11 @@ A player's GPCI is NOT UNIQUE, some players may have similar or the same GPCI, d
 
 ## Parameters
 
-|Name       |Description
-|-          | -
-|playerid   |The ID of the player to fetch their GPCI.
-|string[]   |String to store the fetched GPCI in.
-|length     |Assigned size of the string, should use sizeof()
+| Name     | Description                                      |
+| -------- | ------------------------------------------------ |
+| playerid | The ID of the player to fetch their GPCI.        |
+| string[] | String to store the fetched GPCI in.             |
+| length   | Assigned size of the string, should use sizeof() |
 
 ## Return Values
 
@@ -71,5 +71,5 @@ ReturnGPCI(iPlayerID)
 
 ## Related Functions
 
-* [GetNetworkStats]../functions/GetNetworkStats): Gets the servers networkstats and saves it into a string.
-* [GetPlayerNetworkStats](../functions/GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
+- [GetNetworkStats]../functions/GetNetworkStats): Gets the servers networkstats and saves it into a string.
+- [GetPlayerNetworkStats](../functions/GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
