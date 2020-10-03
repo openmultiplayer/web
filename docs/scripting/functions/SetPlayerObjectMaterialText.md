@@ -15,19 +15,19 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Replace the texture of a player object with text.
 
-| Name          | Description                                                  |
-| ------------- | ------------------------------------------------------------ |
-| playerid      | The ID of the player whose player object to set the text of. |
-| objectid      | The ID of the object on which to place the text.             |
-| text          | The text to set.                                             |
-| materialindex | The material index to replace with text (DEFAULT: 0).        |
-| materialsize  | The [size](../resources/materialtextsizes.md) of the material (DEFAULT: 256x128).                 |
-| fontface      | The font to use (DEFAULT: Arial).                            |
-| fontsize      | The size of the text (DEFAULT: 24) (MAX 255).                |
-| bold          | Bold text. Set to 1 for bold, 0 for not (DEFAULT: 1).        |
-| fontcolor     | The color of the text (DEFAULT: White).                      |
-| backcolor     | The background color (DEFAULT: None (transparent)).          |
-| textalignment | The [alignment](../resources/materialtextsizes.md) of the text (DEFAULT: Left).                   |
+| Name          | Description                                                                       |
+| ------------- | --------------------------------------------------------------------------------- |
+| playerid      | The ID of the player whose player object to set the text of.                      |
+| objectid      | The ID of the object on which to place the text.                                  |
+| text          | The text to set.                                                                  |
+| materialindex | The material index to replace with text (DEFAULT: 0).                             |
+| materialsize  | The [size](../resources/materialtextsizes.md) of the material (DEFAULT: 256x128). |
+| fontface      | The font to use (DEFAULT: Arial).                                                 |
+| fontsize      | The size of the text (DEFAULT: 24) (MAX 255).                                     |
+| bold          | Bold text. Set to 1 for bold, 0 for not (DEFAULT: 1).                             |
+| fontcolor     | The color of the text (DEFAULT: White).                                           |
+| backcolor     | The background color (DEFAULT: None (transparent)).                               |
+| textalignment | The [alignment](../resources/materialtextsizes.md) of the text (DEFAULT: Left).   |
 
 ## Returns
 
