@@ -2,26 +2,22 @@
 id: GetPlayerScore
 title: GetPlayerScore
 description: This function returns a player's score as it was set using SetPlayerScore.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
 This function returns a player's score as it was set using SetPlayerScore
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The player to get the score of.|
-
+| Name     | Description                     |
+| -------- | ------------------------------- |
+| playerid | The player to get the score of. |
 
 ## Returns
 
 The player's score.
 
-
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid,text[])
@@ -37,9 +33,7 @@ public OnPlayerCommandText(playerid,text[])
 }
 ```
 
-
 ## Related Functions
 
-
--  [SetPlayerScore](../functions/SetPlayerScore.md): Set the score of a player.
--  [GetPlayerPing](../functions/GetPlayerPing.md): Get the ping of a player.
+- [SetPlayerScore](../functions/SetPlayerScore.md): Set the score of a player.
+- [GetPlayerPing](../functions/GetPlayerPing.md): Get the ping of a player.

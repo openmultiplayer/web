@@ -2,31 +2,26 @@
 id: GetPlayerTeam
 title: GetPlayerTeam
 description: Get the ID of the team the player is on.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
 Get the ID of the team the player is on.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to get the team of.|
-
+| Name     | Description                              |
+| -------- | ---------------------------------------- |
+| playerid | The ID of the player to get the team of. |
 
 ## Returns
 
- 0-254: The player's team. (0 is a valid team)
+0-254: The player's team. (0 is a valid team)
 
- 255: Defined as NO_TEAM. The player is not on any team.
+255: Defined as NO_TEAM. The player is not on any team.
 
- -1: The function failed to execute. Player is not connected.
-
-
+-1: The function failed to execute. Player is not connected.
 
 ## Examples
-
 
 ```c
 public OnPlayerSpawn(playerid)
@@ -38,9 +33,7 @@ public OnPlayerSpawn(playerid)
 }
 ```
 
-
 ## Related Functions
 
-
--  [SetPlayerTeam](../functions/SetPlayerTeam.md): Set a player's team.
--  [SetTeamCount](../functions/SetTeamCount.md): Set the number of teams available.
+- [SetPlayerTeam](../functions/SetPlayerTeam.md): Set a player's team.
+- [SetTeamCount](../functions/SetTeamCount.md): Set the number of teams available.

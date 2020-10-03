@@ -15,19 +15,15 @@ This function was added in SA-MP 0.3.7 R2 and will not work in earlier versions!
 
 Gets a float server variable's value.
 
-
-| Name | Description |
-|------|-------------|
-|varname | The name of the server variable (case-insensitive). Assigned in SetSVarFloat.|
-
+| Name    | Description                                                                   |
+| ------- | ----------------------------------------------------------------------------- |
+| varname | The name of the server variable (case-insensitive). Assigned in SetSVarFloat. |
 
 ## Returns
 
 The float value of the specified server variable. It will still return 0 if the variable is not set.
 
-
 ## Examples
-
 
 ```c
 // set "Version"
@@ -36,13 +32,11 @@ SetSVarFloat("Version", 0.37);
 printf("Version: %f", GetSVarFloat("Version"));
 ```
 
-
 ## Related Functions
 
-
--  [SetSVarInt](../functions/SetSVarInt.md): Set an integer for a server variable.
--  [GetSVarInt](../functions/GetSVarInt.md): Get a player server as an integer.
--  [SetSVarString](../functions/SetSVarString.md): Set a string for a server variable.
--  [GetSVarString](../functions/GetSVarString.md): Get the previously set string from a server variable.
--  [SetSVarFloat](../functions/SetSVarFloat.md): Set a float for a server variable.
--  [DeleteSVar](../functions/DeleteSVar.md): Delete a server variable.
+- [SetSVarInt](../functions/SetSVarInt.md): Set an integer for a server variable.
+- [GetSVarInt](../functions/GetSVarInt.md): Get a player server as an integer.
+- [SetSVarString](../functions/SetSVarString.md): Set a string for a server variable.
+- [GetSVarString](../functions/GetSVarString.md): Get the previously set string from a server variable.
+- [SetSVarFloat](../functions/SetSVarFloat.md): Set a float for a server variable.
+- [DeleteSVar](../functions/DeleteSVar.md): Delete a server variable.

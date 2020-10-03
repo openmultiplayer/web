@@ -2,32 +2,28 @@
 id: GetPlayerTime
 title: GetPlayerTime
 description: Get the player's current game time.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
 Get the player's current game time. Set by SetWorldTime, or by the game automatically if TogglePlayerClock is used.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to get the game time of.|
-|&hour | A variable in which to store the hour, passed by reference.|
-|&minute | A variable in which to store the minutes, passed by reference.|
-
+| Name     | Description                                                    |
+| -------- | -------------------------------------------------------------- |
+| playerid | The ID of the player to get the game time of.                  |
+| &hour    | A variable in which to store the hour, passed by reference.    |
+| &minute  | A variable in which to store the minutes, passed by reference. |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. The player specified does not exist.
+0: The function failed to execute. The player specified does not exist.
 
- The current game time is stored in the specified variables.
-
+The current game time is stored in the specified variables.
 
 ## Examples
-
 
 ```c
 new hour, minutes;
@@ -38,10 +34,8 @@ if(hour == 13 && minutes == 37)
 }
 ```
 
-
 ## Related Functions
 
-
--  [SetPlayerTime](../functions/SetPlayerTime.md): Set a player's time.
--  [SetWorldTime](../functions/SetWorldTime.md): Set the global server time.
--  [TogglePlayerClock](../functions/TogglePlayerClock.md): Toggle the clock in the top-right corner.
+- [SetPlayerTime](../functions/SetPlayerTime.md): Set a player's time.
+- [SetWorldTime](../functions/SetWorldTime.md): Set the global server time.
+- [TogglePlayerClock](../functions/TogglePlayerClock.md): Toggle the clock in the top-right corner.

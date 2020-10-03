@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-This function, as of 0.3.7 R2,  is deprecated.  Please see GetConsoleVarAsString
+This function, as of 0.3.7 R2, is deprecated. Please see GetConsoleVarAsString
 
 :::
 
@@ -15,21 +15,17 @@ This function, as of 0.3.7 R2,  is deprecated.  Please see GetConsoleVarAsString
 
 Get the string value of a server variable.
 
-
-| Name | Description |
-|------|-------------|
-|const varname[] | The name of the string variable to get the value of.|
-|buffer[] | An array into which to store the value, passed by reference.|
-|len | The length of the string that should be stored.|
-
+| Name            | Description                                                  |
+| --------------- | ------------------------------------------------------------ |
+| const varname[] | The name of the string variable to get the value of.         |
+| buffer[]        | An array into which to store the value, passed by reference. |
+| len             | The length of the string that should be stored.              |
 
 ## Returns
 
 The length of the returned string. 0 if the specified server variable is not a string or doesn't exist.
 
-
 ## Examples
-
 
 ```c
 public OnGameModeInit()
@@ -40,7 +36,6 @@ public OnGameModeInit()
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -49,13 +44,11 @@ When filterscripts or plugins is specified as the varname, this function only re
 
 :::
 
-
 :::tip
 
 Type 'varlist' in the server console to display a list of available server variables and their types.
 
 :::
-
 
 :::warning
 
@@ -63,9 +56,7 @@ Using this function on anything other than a string (int, bool or float) or a no
 
 :::
 
-
 ## Related Functions
 
-
--  [GetServerVarAsInt](../functions/GetServerVarAsInt.md): Retreive a server variable as an integer.
--  [GetServerVarAsBool](../functions/GetServerVarAsBool.md): Retreive a server variable as a boolean.
+- [GetServerVarAsInt](../functions/GetServerVarAsInt.md): Retreive a server variable as an integer.
+- [GetServerVarAsBool](../functions/GetServerVarAsBool.md): Retreive a server variable as a boolean.

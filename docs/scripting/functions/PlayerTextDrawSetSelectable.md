@@ -2,7 +2,7 @@
 id: PlayerTextDrawSetSelectable
 title: PlayerTextDrawSetSelectable
 description: Toggles whether a player-textdraw can be selected or not.
-tags: ['player', 'textdraw', 'playertextdraw']
+tags: ["player", "textdraw", "playertextdraw"]
 ---
 
 :::warning
@@ -15,21 +15,17 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Toggles whether a player-textdraw can be selected or not.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player whose player-textdraw to set the selectability of.|
-|PlayerText:text | The ID of the player-textdraw to set the selectability of.|
-|set | Set the player-textdraw selectable (1) or non-selectable (0). By default this is 0.|
-
+| Name            | Description                                                                         |
+| --------------- | ----------------------------------------------------------------------------------- |
+| playerid        | The ID of the player whose player-textdraw to set the selectability of.             |
+| PlayerText:text | The ID of the player-textdraw to set the selectability of.                          |
+| set             | Set the player-textdraw selectable (1) or non-selectable (0). By default this is 0. |
 
 ## Returns
 
 This function does not return any specific values.
 
-
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -44,7 +40,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -53,17 +48,14 @@ Use PlayerTextDrawTextSize to define the clickable area.
 
 :::
 
-
 :::warning
 
 PlayerTextDrawSetSelectable MUST be used BEFORE the textdraw is shown to the player.
 
 :::
 
-
 ## Related Functions
 
-
--  [SelectTextDraw](../functions/SelectTextDraw.md): Enables the mouse, so the player can select a textdraw
--  [CancelSelectTextDraw](../functions/CancelSelectTextDraw.md): Cancel textdraw selection with the mouse
--  [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
+- [SelectTextDraw](../functions/SelectTextDraw.md): Enables the mouse, so the player can select a textdraw
+- [CancelSelectTextDraw](../functions/CancelSelectTextDraw.md): Cancel textdraw selection with the mouse
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.

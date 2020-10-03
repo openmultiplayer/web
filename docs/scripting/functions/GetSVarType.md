@@ -9,19 +9,15 @@ tags: []
 
 Gets the type (integer, float or string) of a server variable.
 
-
-| Name | Description |
-|------|-------------|
-|varname | The name of the server variable to get the type of.|
-
+| Name    | Description                                         |
+| ------- | --------------------------------------------------- |
+| varname | The name of the server variable to get the type of. |
 
 ## Returns
 
 Returns the type of the SVar. See table below.
 
-
 ## Examples
-
 
 ```c
 stock PrintSVar(varname[])
@@ -52,14 +48,12 @@ stock PrintSVar(varname[])
 }
 ```
 
-
 ## Related Functions
 
-
--  [SetSVarInt](../functions/SetSVarInt.md): Set an integer for a server variable.
--  [GetSVarInt](../functions/GetSVarInt.md): Get a player server as an integer.
--  [SetSVarString](../functions/SetSVarString.md): Set a string for a server variable.
--  [GetSVarString](../functions/GetSVarString.md): Get the previously set string from a server variable.
--  [SetSVarFloat](../functions/SetSVarFloat.md): Set a float for a server variable.
--  [GetSVarFloat](../functions/GetSVarFloat.md): Get the previously set float from a server variable.
--  [DeleteSVar](../functions/DeleteSVar.md): Delete a server variable.
+- [SetSVarInt](../functions/SetSVarInt.md): Set an integer for a server variable.
+- [GetSVarInt](../functions/GetSVarInt.md): Get a player server as an integer.
+- [SetSVarString](../functions/SetSVarString.md): Set a string for a server variable.
+- [GetSVarString](../functions/GetSVarString.md): Get the previously set string from a server variable.
+- [SetSVarFloat](../functions/SetSVarFloat.md): Set a float for a server variable.
+- [GetSVarFloat](../functions/GetSVarFloat.md): Get the previously set float from a server variable.
+- [DeleteSVar](../functions/DeleteSVar.md): Delete a server variable.

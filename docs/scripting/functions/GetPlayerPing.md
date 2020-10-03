@@ -2,26 +2,22 @@
 id: GetPlayerPing
 title: GetPlayerPing
 description: Get the ping of a player.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## Description
 
 Get the ping of a player. The ping measures the amount of time it takes for the server to 'ping' the client and for the client to send the message back.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to get the ping of.|
-
+| Name     | Description                              |
+| -------- | ---------------------------------------- |
+| playerid | The ID of the player to get the ping of. |
 
 ## Returns
 
 The current ping of the player (expressed in milliseconds).
 
-
 ## Examples
-
 
 ```c
 public pingchecktimer(playerid)
@@ -32,7 +28,6 @@ public pingchecktimer(playerid)
 }
 ```
 
-
 ## Notes
 
 :::warning
@@ -41,10 +36,8 @@ Player's ping may be 65535 for a while after a player connects
 
 :::
 
-
 ## Related Functions
 
-
--  [GetPlayerIp](../functions/GetPlayerIp.md): Get a player's IP.
--  [GetPlayerName](../functions/GetPlayerName.md): Get a player's name.
--  [GetPlayerVersion](../functions/GetPlayerVersion.md): Get a player's client-version.
+- [GetPlayerIp](../functions/GetPlayerIp.md): Get a player's IP.
+- [GetPlayerName](../functions/GetPlayerName.md): Get a player's name.
+- [GetPlayerVersion](../functions/GetPlayerVersion.md): Get a player's client-version.

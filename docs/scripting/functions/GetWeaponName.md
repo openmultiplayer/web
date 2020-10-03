@@ -9,25 +9,21 @@ tags: []
 
 Get the name of a weapon.
 
-
-| Name | Description |
-|------|-------------|
-|weaponid | The ID of the weapon to get the name of.|
-|const weapon[] | An array to store the weapon's name in, passed by reference.|
-|len | The maximum length of the weapon name to store. Should be sizeof(name).|
-
+| Name           | Description                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| weaponid       | The ID of the weapon to get the name of.                                |
+| const weapon[] | An array to store the weapon's name in, passed by reference.            |
+| len            | The maximum length of the weapon name to store. Should be sizeof(name). |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. The weapon specified does not exist.
+0: The function failed to execute. The weapon specified does not exist.
 
- The weapon's name is stored in the specified array.
-
+The weapon's name is stored in the specified array.
 
 ## Examples
-
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -42,10 +38,8 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-
 ## Related Functions
 
-
--  [GetPlayerWeapon](../functions/GetPlayerWeapon.md): Check what weapon a player is currently holding.
--  [AllowInteriorWeapons](../functions/AllowInteriorWeapons.md): Determine if weapons can be used in interiors.
--  [GivePlayerWeapon](../functions/GivePlayerWeapon.md): Give a player a weapon.
+- [GetPlayerWeapon](../functions/GetPlayerWeapon.md): Check what weapon a player is currently holding.
+- [AllowInteriorWeapons](../functions/AllowInteriorWeapons.md): Determine if weapons can be used in interiors.
+- [GivePlayerWeapon](../functions/GivePlayerWeapon.md): Give a player a weapon.

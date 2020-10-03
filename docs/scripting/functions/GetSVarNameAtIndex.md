@@ -9,23 +9,19 @@ tags: []
 
 Retrieve the name of a sVar via the index.
 
-
-| Name | Description |
-|------|-------------|
-|index | The index of the sVar.|
-|ret_varname[] | A string to store the sVar's name in, passed by reference.|
-|ret_len | The max length of the returned string, use sizeof().|
-
+| Name          | Description                                                |
+| ------------- | ---------------------------------------------------------- |
+| index         | The index of the sVar.                                     |
+| ret_varname[] | A string to store the sVar's name in, passed by reference. |
+| ret_len       | The max length of the returned string, use sizeof().       |
 
 ## Returns
 
 This function does not return any specific values.
 
-
 ## Related Functions
 
-
--  [GetSVarType](../functions/GetSVarType.md): Get the type of the server variable.
--  [GetSVarInt](../functions/GetSVarInt.md): Get a player server as an integer.
--  [GetSVarFloat](../functions/GetSVarFloat.md): Get the previously set float from a server variable.
--  [GetSVarString](../functions/GetSVarString.md): Get the previously set string from a server variable.
+- [GetSVarType](../functions/GetSVarType.md): Get the type of the server variable.
+- [GetSVarInt](../functions/GetSVarInt.md): Get a player server as an integer.
+- [GetSVarFloat](../functions/GetSVarFloat.md): Get the previously set float from a server variable.
+- [GetSVarString](../functions/GetSVarString.md): Get the previously set string from a server variable.
