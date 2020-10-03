@@ -15,9 +15,9 @@ This callback was added in SA-MP 0.3.DL and will not work in earlier versions!
 
 This callback is called when a player finishes downloading custom models. For more information on how to add custom models to your server, see the release thread and this tutorial.
 
-| Name         | Description                                                                    |
-| ------------ | ------------------------------------------------------------------------------ |
-| playerid     | The ID of the player that finished downloading custom models.                  |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player that finished downloading custom models. |
 | virtualworld | The ID of the virtual world the player finished downloading custom models for. |
 
 ## Returns

@@ -9,11 +9,11 @@ tags: ["player"]
 
 Get the specified player's IP address and store it in a string.
 
-| Name     | Description                                                          |
-| -------- | -------------------------------------------------------------------- |
-| playerid | The ID of the player to get the IP address of.                       |
-| ip[]     | The string to store the player's IP address in, passed by reference. |
-| len      | The maximum length of the IP address (recommended 16).               |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to get the IP address of. |
+| ip[] | The string to store the player's IP address in, passed by reference. |
+| len | The maximum length of the IP address (recommended 16). |
 
 ## Returns
 
@@ -36,8 +36,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-PAWN is case-sensitive. GetPlayerIP will not work.
-This function does not work when used in OnPlayerDisconnect because the player is already disconnected. It will return an invalid IP (255.255.255.255). Save players' IPs under OnPlayerConnect if they need to be used under OnPlayerDisconnect.
+PAWN is case-sensitive. GetPlayerIP will not work. This function does not work when used in OnPlayerDisconnect because the player is already disconnected. It will return an invalid IP (255.255.255.255). Save players' IPs under OnPlayerConnect if they need to be used under OnPlayerDisconnect.
 
 :::
 

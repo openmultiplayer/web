@@ -15,9 +15,9 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Get the velocity (speed) of a player on the X, Y and Z axes.
 
-| Name     | Description                                                                         |
-| -------- | ----------------------------------------------------------------------------------- |
-| playerid | The player to get the speed from.                                                   |
+| Name | Description |
+| --- | --- |
+| playerid | The player to get the speed from. |
 | &Float:x | A float variable in which to store the velocity on the X axis, passed by reference. |
 | &Float:y | A float variable in which to store the velocity on the Y axis, passed by reference. |
 | &Float:z | A float variable in which to store the velocity on the Z axis, passed by reference. |

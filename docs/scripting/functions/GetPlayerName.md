@@ -9,11 +9,11 @@ tags: ["player"]
 
 Get a player's name.
 
-| Name     | Description                                                                                                                                     |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | The ID of the player to get the name of.                                                                                                        |
-| name[]   | An array into which to store the name, passed by reference.                                                                                     |
-| len      | The length of the string that should be stored. Recommended to be MAX_PLAYER_NAME + 1. The + 1 is necessary to account for the null terminator. |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to get the name of. |
+| name[] | An array into which to store the name, passed by reference. |
+| len | The length of the string that should be stored. Recommended to be MAX_PLAYER_NAME + 1. The + 1 is necessary to account for the null terminator. |
 
 ## Returns
 
@@ -41,9 +41,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-A player's name can be up to 24 characters long (as of 0.3d R2) by using SetPlayerName.
-This is defined in a_samp.inc as MAX_PLAYER_NAME.
-However, the client can only join with a nickname between 3 and 20 characters, otherwise the connection will be rejected and the player has to quit to choose a valid name.
+A player's name can be up to 24 characters long (as of 0.3d R2) by using SetPlayerName. This is defined in a_samp.inc as MAX_PLAYER_NAME. However, the client can only join with a nickname between 3 and 20 characters, otherwise the connection will be rejected and the player has to quit to choose a valid name.
 
 :::
 

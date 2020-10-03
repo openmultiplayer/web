@@ -9,11 +9,11 @@ tags: []
 
 Get the string value of a console variable.
 
-| Name            | Description                                                  |
-| --------------- | ------------------------------------------------------------ |
-| const varname[] | The name of the string variable to get the value of.         |
-| buffer[]        | An array into which to store the value, passed by reference. |
-| len             | The length of the string that should be stored.              |
+| Name | Description |
+| --- | --- |
+| const varname[] | The name of the string variable to get the value of. |
+| buffer[] | An array into which to store the value, passed by reference. |
+| len | The length of the string that should be stored. |
 
 ## Returns
 

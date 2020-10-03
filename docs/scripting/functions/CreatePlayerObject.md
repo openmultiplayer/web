@@ -9,16 +9,16 @@ tags: ["player"]
 
 Creates an object which will be visible to only one player.
 
-| Name               | Description                                                                                                                                                                                                                                                                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid           | The ID of the player to create the object for.                                                                                                                                                                                                                                                                    |
-| modelid            | The model to create.                                                                                                                                                                                                                                                                                              |
-| Float:X            | The X coordinate to create the object at.                                                                                                                                                                                                                                                                         |
-| Float:Y            | The Y coordinate to create the object at.                                                                                                                                                                                                                                                                         |
-| Float:Z            | The Z coordinate to create the object at.                                                                                                                                                                                                                                                                         |
-| Float:rX           | The X rotation of the object.                                                                                                                                                                                                                                                                                     |
-| Float:rY           | The Y rotation of the object.                                                                                                                                                                                                                                                                                     |
-| Float:rZ           | The Z rotation of the object.                                                                                                                                                                                                                                                                                     |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to create the object for. |
+| modelid | The model to create. |
+| Float:X | The X coordinate to create the object at. |
+| Float:Y | The Y coordinate to create the object at. |
+| Float:Z | The Z coordinate to create the object at. |
+| Float:rX | The X rotation of the object. |
+| Float:rY | The Y rotation of the object. |
+| Float:rZ | The Z rotation of the object. |
 | Float:DrawDistance | The distance from which objects will appear to players. 0.0 will cause an object to render at its default distance. Leaving this parameter out will cause objects to be rendered at their default distance. The maximum usable distance is 300 in versions prior to 0.3x, in which drawdistance can be unlimited. |
 
 ## Returns

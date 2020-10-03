@@ -15,11 +15,11 @@ This feature (player-textdraws) was added in SA-MP 0.3e and will not work in ear
 
 Set the text alignment of a player-textdraw.
 
-| Name      | Description                                                         |
-| --------- | ------------------------------------------------------------------- |
-| playerid  | The ID of the player whose player-textdraw to set the alignment of. |
-| Text:text | The ID of the player-textdraw to set the alignment of.              |
-| alignment | 1-left 2-centered 3-right                                           |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player whose player-textdraw to set the alignment of. |
+| Text:text | The ID of the player-textdraw to set the alignment of. |
+| alignment | 1-left 2-centered 3-right |
 
 ## Returns
 

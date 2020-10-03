@@ -17,8 +17,7 @@ Calls a public function from the script in which it is used.
 
 ## Returns
 
-If the function exists, returns the same as the called function.
-If the function does not exist, returns 0.
+If the function exists, returns the same as the called function. If the function does not exist, returns 0.
 
 ## Examples
 

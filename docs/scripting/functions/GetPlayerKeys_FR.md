@@ -9,12 +9,12 @@ tags: ["player"]
 
 Obtenir la touche sur laquelle appuie le joueur.
 
-| Name      | Description                                                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | ID du joueur dont on veut obtenir la touche.                                                                                                               |
-| keys      | Un ensemble de bits contenant l'état des touches du joueur. Cette valeur est ce que l'on appelle un Masque binaire. Cliquez ici pour la liste des touches. |
-| updown    | Etat Up/Down.                                                                                                                                              |
-| leftright | Etat Left/Right.                                                                                                                                           |
+| Name | Description |
+| --- | --- |
+| playerid | ID du joueur dont on veut obtenir la touche. |
+| keys | Un ensemble de bits contenant l'état des touches du joueur. Cette valeur est ce que l'on appelle un Masque binaire. Cliquez ici pour la liste des touches. |
+| updown | Etat Up/Down. |
+| leftright | Etat Left/Right. |
 
 ## Returns
 
@@ -42,8 +42,7 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Seulement la fonction de la touche peut être détecté; Pas la véritable touche. Par exemple, il n'est pas possible de détecter si le joueur presse la touche ESPACE, mais il est possible de détecter la touche SPRINT (qui peut être assigné à une autre touche) (touche espace par défaut)).
-Depuis la mise à jour 0.3.7, Les touches "A" et "D" ne sont plus reconnus depuis un véhicule. Cependant, les touches "W" et "S" peuvent être détecté grâce au paramètre "keys".
+Seulement la fonction de la touche peut être détecté; Pas la véritable touche. Par exemple, il n'est pas possible de détecter si le joueur presse la touche ESPACE, mais il est possible de détecter la touche SPRINT (qui peut être assigné à une autre touche) (touche espace par défaut)). Depuis la mise à jour 0.3.7, Les touches "A" et "D" ne sont plus reconnus depuis un véhicule. Cependant, les touches "W" et "S" peuvent être détecté grâce au paramètre "keys".
 
 :::
 

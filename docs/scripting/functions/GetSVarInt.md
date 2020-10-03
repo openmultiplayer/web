@@ -15,8 +15,8 @@ This function was added in SA-MP 0.3.7 R2 and will not work in earlier versions!
 
 Gets an integer server variable's value.
 
-| Name    | Description                                                                 |
-| ------- | --------------------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | varname | The name of the server variable (case-insensitive). Assigned in SetSVarInt. |
 
 ## Returns

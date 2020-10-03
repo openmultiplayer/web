@@ -15,15 +15,15 @@ This function was added in SA-MP 0.3z and will not work in earlier versions!
 
 Retrieves the start and end (hit) position of the last bullet a player fired.
 
-| Name            | Description                                                                             |
-| --------------- | --------------------------------------------------------------------------------------- |
-| playerid        | The ID of the player to get the last bullet shot information of.                        |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to get the last bullet shot information of. |
 | &Float:fOriginX | A float variable in which to save the X coordinate of where the bullet originated from. |
 | &Float:fOriginY | A float variable in which to save the Y coordinate of where the bullet originated from. |
 | &Float:fOriginZ | A float variable in which to save the Z coordinate of where the bullet originated from. |
-| &Float:fHitPosX | A float variable in which to save the X coordinate of where the bullet hit.             |
-| &Float:fHitPosY | A float variable in which to save the Y coordinate of where the bullet hit.             |
-| &Float:fHitPosY | A float variable in which to save the Z coordinate of where the bullet hit.             |
+| &Float:fHitPosX | A float variable in which to save the X coordinate of where the bullet hit. |
+| &Float:fHitPosY | A float variable in which to save the Y coordinate of where the bullet hit. |
+| &Float:fHitPosY | A float variable in which to save the Z coordinate of where the bullet hit. |
 
 ## Returns
 
@@ -57,8 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-This function will only work when lag compensation is enabled.
-If the player hit nothing, the hit positions will be 0. This means you can't currently calculate how far a bullet travels through open air.
+This function will only work when lag compensation is enabled. If the player hit nothing, the hit positions will be 0. This means you can't currently calculate how far a bullet travels through open air.
 
 :::
 

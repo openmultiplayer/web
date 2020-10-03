@@ -9,9 +9,9 @@ tags: ["player"]
 
 Set the health of a player.
 
-| Name         | Description                                                                                                                  |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | The ID of the player to set the health of.                                                                                   |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to set the health of. |
 | Float:health | The value to set the player's health to. Max health that can be displayed in the HUD is 100, though higher values are valid. |
 
 ## Returns
@@ -44,8 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-If a player's health is set to 0 or a minus value, they will die instantly.
-If a player's health is below 10 or above 98303, their health bar will flash.
+If a player's health is set to 0 or a minus value, they will die instantly. If a player's health is below 10 or above 98303, their health bar will flash.
 
 :::
 

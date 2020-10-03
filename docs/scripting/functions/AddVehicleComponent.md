@@ -9,12 +9,11 @@ tags: ["vehicle"]
 
 Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. Valid components can be found here.
 
-| Name      | Description                                                                     |
-| --------- | ------------------------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | vehicleid | The ID of the vehicle to add the component to. Not to be confused with modelid. |
 
-|
-|[componentid](../resources/carcomponentid.md) | The ID of the component to add to the vehicle.|
+| |[componentid](../resources/carcomponentid.md) | The ID of the component to add to the vehicle.|
 
 ## Returns
 

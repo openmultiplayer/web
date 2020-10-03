@@ -15,11 +15,11 @@ This feature (player-textdraws) was added in SA-MP 0.3e and will not work in ear
 
 Adjust the background color of a player-textdraw.
 
-| Name     | Description                                                               |
-| -------- | ------------------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | playerid | The ID of the player whose player-textdraw to set the background color of |
-| text     | The ID of the player-textdraw to set the background color of              |
-| color    | The color that the textdraw should be set to.                             |
+| text | The ID of the player-textdraw to set the background color of |
+| color | The color that the textdraw should be set to. |
 
 ## Returns
 

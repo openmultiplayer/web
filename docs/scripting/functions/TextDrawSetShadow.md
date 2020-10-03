@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Sets the size of a textdraw's text's shadow.
 
-| Name | Description                                                                                             |
-| ---- | ------------------------------------------------------------------------------------------------------- |
-| text | The ID of the textdraw to set the shadow size of.                                                       |
+| Name | Description |
+| --- | --- |
+| text | The ID of the textdraw to set the shadow size of. |
 | size | The size of the shadow. 1 is generally used for a normal shadow size. 0 disables the shadow completely. |
 
 ## Returns

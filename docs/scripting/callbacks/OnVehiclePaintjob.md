@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Called when a player previews a vehicle paintjob inside a mod shop. Watch out, this callback is not called when the player buys the paintjob.
 
-| Name       | Description                                                      |
-| ---------- | ---------------------------------------------------------------- |
-| playerid   | The ID of the player that changed the paintjob of their vehicle. |
-| vehicleid  | The ID of the vehicle that had its paintjob changed.             |
-| paintjobid | The ID of the new paintjob.                                      |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player that changed the paintjob of their vehicle. |
+| vehicleid | The ID of the vehicle that had its paintjob changed. |
+| paintjobid | The ID of the new paintjob. |
 
 ## Returns
 
@@ -35,8 +35,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::tip
 
-This callback is not called by ChangeVehiclePaintjob.
-You might use OnVehicleChangePaintjob from vSync in order to know when the player buys the paintjob.
+This callback is not called by ChangeVehiclePaintjob. You might use OnVehicleChangePaintjob from vSync in order to know when the player buys the paintjob.
 
 :::
 

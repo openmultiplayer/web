@@ -1,9 +1,7 @@
 ---
 id: printf
 title: printf
-description:
-  Outputs a formatted string on the console (the server window, not the in-game
-  chat).
+description: Outputs a formatted string on the console (the server window, not the in-game chat).
 tags: []
 ---
 
@@ -15,8 +13,7 @@ This function starts with lowercase letter.
 
 ## Description
 
-Outputs a formatted string on the console (the server window, not the in-game
-chat).
+Outputs a formatted string on the console (the server window, not the in-game chat).
 
 | Name           | Description                               |
 | -------------- | ----------------------------------------- |
@@ -62,8 +59,7 @@ printf("I'm %c home",character); //-> I'm @ home
 
 :::warning
 
-The format string or its output should not exceed 1024 characters. Anything
-beyond that length can lead to a server to crash.
+The format string or its output should not exceed 1024 characters. Anything beyond that length can lead to a server to crash.
 
 :::
 

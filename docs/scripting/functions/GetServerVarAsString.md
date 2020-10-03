@@ -15,11 +15,11 @@ This function, as of 0.3.7 R2, is deprecated. Please see GetConsoleVarAsString
 
 Get the string value of a server variable.
 
-| Name            | Description                                                  |
-| --------------- | ------------------------------------------------------------ |
-| const varname[] | The name of the string variable to get the value of.         |
-| buffer[]        | An array into which to store the value, passed by reference. |
-| len             | The length of the string that should be stored.              |
+| Name | Description |
+| --- | --- |
+| const varname[] | The name of the string variable to get the value of. |
+| buffer[] | An array into which to store the value, passed by reference. |
+| len | The length of the string that should be stored. |
 
 ## Returns
 

@@ -15,26 +15,22 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Replace the texture of an object with the texture from another model in the game.
 
-
 | Name | Description |
-|------|-------------|
-|objectid | The ID of the object to change the texture of|
-|materialindex | The material index on the object to change (0 to 15)|
-|modelid | The modelid on which the replacement texture is located. Use 0 for alpha. Use -1 to change the material color without altering the texture.|
-|txdname | The name of the txd file which contains the replacement texture (use "none" if not required)|
-|texturename | The name of the texture to use as the replacement (use "none" if not required)|
-|materialcolor | The object color to set, as an integer or hex in ARGB color format. Using 0 keeps the existing material color.|
-
+| --- | --- |
+| objectid | The ID of the object to change the texture of |
+| materialindex | The material index on the object to change (0 to 15) |
+| modelid | The modelid on which the replacement texture is located. Use 0 for alpha. Use -1 to change the material color without altering the texture. |
+| txdname | The name of the txd file which contains the replacement texture (use "none" if not required) |
+| texturename | The name of the texture to use as the replacement (use "none" if not required) |
+| materialcolor | The object color to set, as an integer or hex in ARGB color format. Using 0 keeps the existing material color. |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. 
-
+0: The function failed to execute.
 
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
@@ -53,7 +49,6 @@ public OnPlayerCommandText(playerid,cmdtext[])
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -62,18 +57,15 @@ Vertex lighting of the object will disappear if material color is changed.
 
 :::
 
-
 :::warning
 
 You MUST use ARGB color format, not RGBA like used in client messages etc.
 
 :::
 
-
 ## Related Functions
 
-
--  SetPlayerObjectMaterial: Replace the texture of a player object with the texture from another model in the game.
--  SetObjectMaterialText: Replace the texture of an object with text.
--  Ultimate Creator by Nexius
--  Fusez's Map Editor by RedFusion
+- SetPlayerObjectMaterial: Replace the texture of a player object with the texture from another model in the game.
+- SetObjectMaterialText: Replace the texture of an object with text.
+- Ultimate Creator by Nexius
+- Fusez's Map Editor by RedFusion

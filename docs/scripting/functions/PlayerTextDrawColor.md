@@ -43,8 +43,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-You can also use Gametext colors in textdraws.
-The textdraw must be re-shown to the player in order to update the color.
+You can also use Gametext colors in textdraws. The textdraw must be re-shown to the player in order to update the color.
 
 :::
 

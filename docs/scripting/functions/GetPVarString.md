@@ -9,12 +9,12 @@ tags: ["pvar"]
 
 Gets a player variable as a string.
 
-| Name           | Description                                                           |
-| -------------- | --------------------------------------------------------------------- |
-| playerid       | The ID of the player whose player variable to get.                    |
-| varname        | The name of the player variable, set by SetPVarString.                |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player whose player variable to get. |
+| varname | The name of the player variable, set by SetPVarString. |
 | &string_return | The array in which to store the string value in, passed by reference. |
-| len            | The maximum length of the returned string.                            |
+| len | The maximum length of the returned string. |
 
 ## Returns
 

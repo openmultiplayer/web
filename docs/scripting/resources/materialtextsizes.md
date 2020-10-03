@@ -23,5 +23,4 @@ description: A list of Material Text Sizes
 
 ## Related Functions
 
-- [SetObjectMaterialText](/docs/scripting/functions/SetObjectMaterialText):
-  Replace the texture of an object with text.
+- [SetObjectMaterialText](/docs/scripting/functions/SetObjectMaterialText): Replace the texture of an object with text.

@@ -4,21 +4,13 @@ title: Dialog Styles
 
 :::note
 
-- In [OnDialogResponse](../callbacks/OnDialogResponse), pressing **button1**
-  sets **response** to **1**, while pressing **button2** sets **response** to
-  **0**.
-- Every dialog can have an optional button 2. To make it disappear leave it
-  empty, like in the first example. Players won't be able to click it, but they
-  will be able to press ESC and trigger
-  [OnDialogResponse](../callbacks/OnDialogResponse) with **response** = **0**.
-- [ShowPlayerDialog](../functions/ShowPlayerDialog): Color embedding can be used
-  for every string: **caption**, **info**, **button1** and **button2**.
+- In [OnDialogResponse](../callbacks/OnDialogResponse), pressing **button1** sets **response** to **1**, while pressing **button2** sets **response** to **0**.
+- Every dialog can have an optional button 2. To make it disappear leave it empty, like in the first example. Players won't be able to click it, but they will be able to press ESC and trigger [OnDialogResponse](../callbacks/OnDialogResponse) with **response** = **0**.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Color embedding can be used for every string: **caption**, **info**, **button1** and **button2**.
 
 :::
 
-- This page describes the behavior of
-  [ShowPlayerDialog](../functions/ShowPlayerDialog) and
-  [OnDialogResponse](../callbacks/OnDialogResponse).
+- This page describes the behavior of [ShowPlayerDialog](../functions/ShowPlayerDialog) and [OnDialogResponse](../callbacks/OnDialogResponse).
 - For various limitations, visit the [Limits](../resources/limits) page.
 - For the response examples, this code will be used:
 
@@ -123,8 +115,7 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_LIST, "Caption", "Item 0\
 :::note
 
 - **listitem** is the number of the selected item, starting from **0**.
-- **inputtext** is the text contained by the selected listitem, without the
-  colors.
+- **inputtext** is the text contained by the selected listitem, without the colors.
 
 :::
 
@@ -164,8 +155,7 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_PASSWORD, "Caption", "Ent
 :::note
 
 - **listitem** is always **-1**.
-- **inputtext** is the text contained by the selected listitem, without the
-  colors.
+- **inputtext** is the text contained by the selected listitem, without the colors.
 
 :::
 
@@ -179,8 +169,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 ## Style 4: `DIALOG_STYLE_TABLIST`
 
-:::tip This style was added in **SA-MP 0.3.7** and will not work in earlier
-versions!
+:::tip This style was added in **SA-MP 0.3.7** and will not work in earlier versions!
 
 :::
 
@@ -198,8 +187,7 @@ Showing:
 
 - **\t** creates a new column.
 - **\n** creates a new list item.
-- Color embedding resets after \n and \t. The first **info** row contains the
-  header.
+- Color embedding resets after \n and \t. The first **info** row contains the header.
 
 :::
 
@@ -213,8 +201,7 @@ Pistol\t$1000\t50",
 
 :::note
 
-- **inputtext** is the text contained by the _first column_ of the selected
-  **listitem**, without the colors.
+- **inputtext** is the text contained by the _first column_ of the selected **listitem**, without the colors.
 
 :::
 
@@ -228,8 +215,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 ## Style 5: `DIALOG_STYLE_TABLIST_HEADERS`
 
-:::tip This style was added in **SA-MP 0.3.7** and will not work in earlier
-versions!
+:::tip This style was added in **SA-MP 0.3.7** and will not work in earlier versions!
 
 :::
 
@@ -247,8 +233,7 @@ Showing:
 
 - **\t** creates a new column.
 - **\n** creates a new list item.
-- Color embedding resets after \n and \t. The first **info** row contains the
-  header.
+- Color embedding resets after \n and \t. The first **info** row contains the header.
 
 :::
 
@@ -262,8 +247,7 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 
 :::note
 
-- **inputtext** is the text contained by the _first column_ of the selected
-  **listitem**, without the colors.
+- **inputtext** is the text contained by the _first column_ of the selected **listitem**, without the colors.
 
 :::
 

@@ -15,21 +15,17 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Disable collisions between players' cameras and the specified object.
 
-
-| Name | Description |
-|------|-------------|
-|objectid | The ID of the object to disable camera collisions on.|
-
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
+| objectid | The ID of the object to disable camera collisions on. |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. The object specified does not exist.
-
+0: The function failed to execute. The object specified does not exist.
 
 ## Examples
-
 
 ```c
 public OnObjectMoved(objectid)
@@ -44,7 +40,6 @@ public OnObjectMoved(objectid)
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -53,8 +48,6 @@ This only works outside the map boundaries (past -3000/3000 units on the x and/o
 
 :::
 
-
 ## Related Functions
 
-
--  SetPlayerObjectNoCameraCol: Disables collisions between camera and player object.
+- SetPlayerObjectNoCameraCol: Disables collisions between camera and player object.

@@ -15,16 +15,16 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Creates a 3D Text Label at a specific location in the world
 
-| Name         | Description                                                           |
-| ------------ | --------------------------------------------------------------------- |
-| text[]       | The initial text string.                                              |
-| color        | The text Color, as an integer or hex in RGBA color format             |
-| x            | X-Coordinate                                                          |
-| y            | Y-Coordinate                                                          |
-| z            | Z-Coordinate                                                          |
-| DrawDistance | The distance from where you are able to see the 3D Text Label         |
-| VirtualWorld | The virtual world in which you are able to see the 3D Text            |
-| testLOS      | 0/1 Test the line-of-sight so this text can't be seen through objects |
+| Name | Description |
+| --- | --- |
+| text[] | The initial text string. |
+| color | The text Color, as an integer or hex in RGBA color format |
+| x | X-Coordinate |
+| y | Y-Coordinate |
+| z | Z-Coordinate |
+| DrawDistance | The distance from where you are able to see the 3D Text Label |
+| VirtualWorld | The virtual world in which you are able to see the 3D Text |
+| testLOS | 0/1 Test the line-of-sight so this text can't be seen through objects |
 
 ## Returns
 
@@ -56,8 +56,7 @@ Use color embedding for multiple colors in the text.
 
 :::warning
 
-If text[] is empty, the server/clients next to the text might crash!
-If the virtualworld is set as -1 the text will not appear.
+If text[] is empty, the server/clients next to the text might crash! If the virtualworld is set as -1 the text will not appear.
 
 :::
 

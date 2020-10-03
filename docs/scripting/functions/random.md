@@ -15,9 +15,9 @@ This function starts with lowercase letter.
 
 Get a pseudo-random number.
 
-| Name | Description                                                                |
-| ---- | -------------------------------------------------------------------------- |
-| max  | The range of values (from 0 to this value minus one) that can be returned. |
+| Name | Description |
+| --- | --- |
+| max | The range of values (from 0 to this value minus one) that can be returned. |
 
 ## Returns
 

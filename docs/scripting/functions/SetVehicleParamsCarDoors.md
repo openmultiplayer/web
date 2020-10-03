@@ -15,12 +15,12 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Allows you to open and close the doors of a vehicle.
 
-| Name      | Description                                                             |
-| --------- | ----------------------------------------------------------------------- |
-| vehicleid | The ID of the vehicle to set the door state of                          |
-| driver    | The state of the driver's door. 1 to open, 0 to close.                  |
-| passenger | The state of the passenger door. 1 to open, 0 to close.                 |
-| backleft  | The state of the rear left door (if available). 1 to open, 0 to close.  |
+| Name | Description |
+| --- | --- |
+| vehicleid | The ID of the vehicle to set the door state of |
+| driver | The state of the driver's door. 1 to open, 0 to close. |
+| passenger | The state of the passenger door. 1 to open, 0 to close. |
+| backleft | The state of the rear left door (if available). 1 to open, 0 to close. |
 | backright | The state of the rear right door (if available). 1 to open, 0 to close. |
 
 ## Returns

@@ -15,10 +15,10 @@ This function was added in SA-MP 0.3z R2-2 and will not work in earlier versions
 
 Blocks an IP address from further communication with the server for a set amount of time (with wildcards allowed). Players trying to connect to the server with a blocked IP address will receive the generic "You are banned from this server." message. Players that are online on the specified IP before the block will timeout after a few seconds and, upon reconnect, will receive the same message.
 
-| Name       | Description                                                                                                |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| ip_address | The IP to block.                                                                                           |
-| timems     | The time (in milliseconds) that the connection will be blocked for. 0 can be used for an indefinite block. |
+| Name | Description |
+| --- | --- |
+| ip_address | The IP to block. |
+| timems | The time (in milliseconds) that the connection will be blocked for. 0 can be used for an indefinite block. |
 
 ## Returns
 

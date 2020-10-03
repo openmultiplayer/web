@@ -9,9 +9,9 @@ tags: ["player"]
 
 Sets the name of a player.
 
-| Name         | Description                                                                                                                    |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| playerid     | The ID of the player to set the name of.                                                                                       |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to set the name of. |
 | const name[] | The name to set. Must be 1-24 characters long and only contain valid characters (0-9, a-z, A-Z, [], (), \$ @ . \_ and = only). |
 
 ## Returns
@@ -50,10 +50,7 @@ if(strcmp(cmdtext, "/superman", true) == 0)
 
 :::warning
 
-Changing the players' name to the same name but with different character cases (e.g. "John" to "JOHN") will not work.
-If used in OnPlayerConnect, the new name will not be shown for the connecting player.
-Passing a null string as the new name will crash the server.
-Player names can be up to 24 characters when using this function, but when joining the server from the SA-MP server browser, players' names must be no more than 20 and less than 3 characters (the server will deny entry). This allows for 4 characters extra when using SetPlayerName.
+Changing the players' name to the same name but with different character cases (e.g. "John" to "JOHN") will not work. If used in OnPlayerConnect, the new name will not be shown for the connecting player. Passing a null string as the new name will crash the server. Player names can be up to 24 characters when using this function, but when joining the server from the SA-MP server browser, players' names must be no more than 20 and less than 3 characters (the server will deny entry). This allows for 4 characters extra when using SetPlayerName.
 
 :::
 

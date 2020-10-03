@@ -15,11 +15,11 @@ This callback was added in SA-MP 0.3d and will not work in earlier versions!
 
 OnPlayerClickMap is called when a player places a target/waypoint on the pause menu map (by right-clicking).
 
-| Name     | Description                                                                   |
-| -------- | ----------------------------------------------------------------------------- |
-| playerid | The ID of the player that placed a target/waypoint                            |
-| Float:fX | The X float coordinate where the player clicked                               |
-| Float:fY | The Y float coordinate where the player clicked                               |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player that placed a target/waypoint |
+| Float:fX | The X float coordinate where the player clicked |
+| Float:fY | The Y float coordinate where the player clicked |
 | Float:fZ | The Z float coordinate where the player clicked (inaccurate - see note below) |
 
 ## Returns

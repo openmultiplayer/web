@@ -73,21 +73,21 @@ if (0 < idx < 5)
 
 The following are symbols you can use in comparisons and their explanations. Some have been used in examples already.
 
-| Operator     | Meaning                                                           | Usage                                                        |
-| ------------ | ----------------------------------------------------------------- | ------------------------------------------------------------ |
-| ==           | Left is equal to Right                                            | if (Left == Right)                                           |
-| !=           | Left is not equal to Right                                        | if (Left != Right)                                           |
-| >            | Left is greater than Right                                        | if (Left > Right)                                            |
-| >=           | Left is greater than or equal to Right                            | if (Left >= Right)                                           |
-| <            | Left is less than Right                                           | if (Left < Right)                                            |
-| <=           | Left is less than or equal to Right                               | if (Left <= Right)                                           |
-| &&           | and                                                               | if (Left && Right)                                           |
-| &#124;&#124; | or                                                                | if (Left &#124;&#124; Right)                                 |
-| !            | not                                                               | if (!Variable)                                               |
-|              | nor                                                               | if (!(Left &#124;&#124; Right))                              |
-|              | nand                                                              | if (!(Left && Right))                                        |
-|              | exclusive or (xor, eor) - only one or the other is true, not both | if (!(Left && Right) && (Left &#124;&#124;Right))            |
-|              | not exclusive or (nxor, neor) - both or neither are true          | if ((Left && Right) &#124;&#124; !(Left &#124;&#124; Right)) |
+| Operator | Meaning | Usage |
+| --- | --- | --- |
+| == | Left is equal to Right | if (Left == Right) |
+| != | Left is not equal to Right | if (Left != Right) |
+| > | Left is greater than Right | if (Left > Right) |
+| >= | Left is greater than or equal to Right | if (Left >= Right) |
+| < | Left is less than Right | if (Left < Right) |
+| <= | Left is less than or equal to Right | if (Left <= Right) |
+| && | and | if (Left && Right) |
+| &#124;&#124; | or | if (Left &#124;&#124; Right) |
+| ! | not | if (!Variable) |
+|  | nor | if (!(Left &#124;&#124; Right)) |
+|  | nand | if (!(Left && Right)) |
+|  | exclusive or (xor, eor) - only one or the other is true, not both | if (!(Left && Right) && (Left &#124;&#124;Right)) |
+|  | not exclusive or (nxor, neor) - both or neither are true | if ((Left && Right) &#124;&#124; !(Left &#124;&#124; Right)) |
 
 ## `Brackets`
 

@@ -9,9 +9,9 @@ tags: ["player"]
 
 Get the position of a player, represented by X, Y and Z coordinates.
 
-| Name     | Description                                                                  |
-| -------- | ---------------------------------------------------------------------------- |
-| playerid | The ID of the player to get the position of.                                 |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to get the position of. |
 | &Float:x | A float variable in which to store the X coordinate in, passed by reference. |
 | &Float:y | A float variable in which to store the Y coordinate in, passed by reference. |
 | &Float:z | A float variable in which to store the Z coordinate in, passed by reference. |

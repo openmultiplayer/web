@@ -15,15 +15,15 @@ This callback was added in SA-MP 0.3z and will not work in earlier versions!
 
 This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).
 
-| Name     | Description                                                                                               |
-| -------- | --------------------------------------------------------------------------------------------------------- |
-| playerid | The ID of the player that shot a weapon.                                                                  |
-| weaponid | The ID of the [weapon](../resources/weaponids) shot by the player.                                        |
-| hittype  | The [type](../resources/bullethittypes) of thing the shot hit (none, player, vehicle, or (player)object). |
-| hitid    | The ID of the player, vehicle or object that was hit.                                                     |
-| fX       | The X coordinate that the shot hit.                                                                       |
-| fY       | The Y coordinate that the shot hit.                                                                       |
-| fZ       | The Z coordinate that the shot hit.                                                                       |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player that shot a weapon. |
+| weaponid | The ID of the [weapon](../resources/weaponids) shot by the player. |
+| hittype | The [type](../resources/bullethittypes) of thing the shot hit (none, player, vehicle, or (player)object). |
+| hitid | The ID of the player, vehicle or object that was hit. |
+| fX | The X coordinate that the shot hit. |
+| fY | The Y coordinate that the shot hit. |
+| fZ | The Z coordinate that the shot hit. |
 
 ## Returns
 
@@ -49,8 +49,7 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 :::tip
 
-This callback is only called when lag compensation is enabled.
-If hittype is:
+This callback is only called when lag compensation is enabled. If hittype is:
 
 - BULLET_HIT_TYPE_NONE: the fX, fY and fZ parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
 - Others: the fX, fY and fZ are offsets relative to the hitid.
@@ -65,10 +64,7 @@ GetPlayerLastShotVectors can be used in this callback for more detailed bullet v
 
 :::warning
 
-Known Bug(s):
-Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air).
-It is called as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as BULLET_HIT_TYPE_PLAYER at all. [Click here for a possible fix]
-Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
+Known Bug(s): Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air). It is called as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as BULLET_HIT_TYPE_PLAYER at all. [Click here for a possible fix] Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
 
 :::
 
