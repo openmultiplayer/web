@@ -7,45 +7,51 @@ description: Beginner friendly tutorial about everything string manipulation.
 
 ### **✦ Table of content**
 
-Code:
+```
+✦ Introduction
+  ✧ Tutorial description
+  ✧ What is string formatting?
 
-- **Introduction**
-  - Tutorial description
-  - What is string formatting?
-- **String manipulation**
-  - String declaration
-    - _Length limits_
-    - _Assigning values_
-    - _The null terminator_
-  - String manipulation functions
-  - The format function
-  - String optimazation tips
-- **String output**
-  - Console
-    - _print_
-    - _printf_
-  - Client messages
-  - Textdraws
-  - Dialogs
-- **Color interpretation**
-  - Client messages and Dialogs
-    - _RGBA_
-    - _RGB_
-  - Textdraws and GameTexts
-- **The escape character**
-  - Description
-  - Escape sequences
-  - Custom escape character
-- **Format specifiers**
-  - Description
-  - Usage
-  - Custom specifiers
-- **External links**
-  - Similar tutorials
-  - Related includes/plugins
-  - References
+✦ String manipulation
+  ✧ String declaration
+    ✩ Length limits
+    ✩ Assigning values
+    ✩ The null terminator
+  ✧ String manipulation functions
+  ✧ The format function
+  ✧ String optimazation tips
 
-**✦ Introduction**
+✦ String output
+  ✧ Console
+    ✩ print
+    ✩ printf
+  ✧ Client messages
+  ✧ Textdraws
+  ✧ Dialogs
+
+✦ Color interpretation
+  ✧ Client messages and Dialogs
+    ✩ RGBA
+    ✩ RGB
+  ✧ Textdraws and GameTexts
+
+✦ The escape character
+  ✧ Description
+  ✧ Escape sequences
+  ✧ Custom escape character
+
+✦ Format specifiers
+  ✧ Description
+  ✧ Usage
+  ✧ Custom specifiers
+
+✦ External links
+  ✧ Similar tutorials
+  ✧ Related includes/plugins
+  ✧ References
+```
+
+### **✦ Introduction**
 
 > **✧ Tutorial description**
 >
@@ -217,8 +223,7 @@ Code:
 >
 > Besides the strict limits put on strings, there are many others concerning
 > different stuff, you can view the complete list
-> [here](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Limits).  
->
+> [here](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Limits).
 
 > **✩ Assigning values**
 >
@@ -239,8 +244,8 @@ Code:
 > Make sure the string’s size is greater than the number of characters you
 > assigned them for, having a smaller or equal string size to that, will trigger
 > compilation errors, leaving the size slot between the two brackets empty (like
-> on the message_2 example), will automatically give the array the size of the
-> text you’ve assigned it to plus 1, in this case, _23 + 1 = 24_, why? It
+> on the message*2 example), will automatically give the array the size of the
+> text you’ve assigned it to plus 1, in this case, \_23 + 1 = 24*, why? It
 > reserves a slot for the null character (aka the null-terminator), more on that
 > later, the word _“Hello”_ has 5 characters, so in order to store it on a
 > string, it should have 6 cells, 5 cells for the word’s character count, and
