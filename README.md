@@ -27,3 +27,34 @@
 <p align="center">
   <a href="https://www.open.mp">open.mp</a>
 </p>
+
+
+<hr>
+
+## Development
+
+### Requirements:
+- Git
+- Node.js
+- npm
+
+## Setup
+```bash
+# clone the project
+git clone https://github.com/openmultiplayer/wiki.git
+
+# Move into the directory
+cd wiki
+
+# Install the dependencies
+npm install
+
+# Start the server
+npm start
+```
+
+By default the development server will run on `http://localhost:3001` but can be changed with the following command:
+
+```bash
+yarn start -- --host=0.0.0.0 --port=1234
+```
