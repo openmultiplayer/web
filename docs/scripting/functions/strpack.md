@@ -34,12 +34,12 @@ strpack(string, "Hi, how are you?");
 
 ## Related Functions
 
-- strcmp: Compare two strings to see if they are the same.
-- strfind: Search for a substring in a string.
-- strtok: Search for a variable typed after a space.
-- strdel: Delete part/all of a string.
-- strins: Put a string into another string.
-- strlen: Check the length of a string.
-- strmid: Extract characters from a string.
-- strval: Find the value of a string.
-- strcat: Contact two strings into a destination reference.
+- [strcmp](../functions/strcmp): Compare two strings to check if they are the same.
+- [strfind](../functions/strfind): Search for a string in another string.
+- [strtok](../functions/strtok): Get the next 'token' (word/parameter) in a string.
+- [strins](../function/strins): Insert text into a string.
+- [strlen](../function/strlen): Get the length of a string.
+- [strmid](../functions/strmid): Extract part of a string into another string.
+- [strval](../functions/strval): Convert a string into an integer.
+- [strcat](../functions/strcat): Concatenate two strings into a destination reference.
+- [strdel](../functions/strdel): Delete part of a string.

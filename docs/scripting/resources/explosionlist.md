@@ -21,4 +21,4 @@ To be used with [CreateExplosion](../functions/CreateExplosion)
 | 12   | Yes     | --     | --           | Yes            | Yes           | Really Small                                                                                             | Very Small |
 | 13   | --      | --     | --           | --             | --            | Produces no special effects other than black burn effects on the ground, does no damage either.          | Large      |
 
-[Here's a visual showcase of all these types](https://streamable.com/0w4ed)
+[Here's a visual showcase of all these types](http://weedarr.wikidot.com/explosion)

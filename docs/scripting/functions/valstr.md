@@ -55,5 +55,5 @@ Passing a high value to this function can cause the server to freeze/crash. Fixe
 
 ## Related Functions
 
-- strval: Convert a string into an integer.
-- strcmp: Compare two strings to check if they are the same.
+- [strval](../functions/strval): Convert a string into an integer.
+- [strcmp](../functions/strcmp): Compare two strings to check if they are the same.
