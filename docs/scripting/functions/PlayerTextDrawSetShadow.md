@@ -15,11 +15,11 @@ This feature (player-textdraws) was added in SA-MP 0.3e and will not work in ear
 
 Adds a shadow to the bottom-right side of the text in a player-textdraw. The shadow font matches the text font.
 
-| Name | Description |
-| --- | --- |
+| Name     | Description                                                           |
+| -------- | --------------------------------------------------------------------- |
 | playerid | The ID of the player whose player-textdraw to set the shadow size of. |
-| text | The ID of the player-textdraw to change the shadow of |
-| size | The size of the shadow. 0 will hide the shadow. |
+| text     | The ID of the player-textdraw to change the shadow of                 |
+| size     | The size of the shadow. 0 will hide the shadow.                       |
 
 ## Returns
 

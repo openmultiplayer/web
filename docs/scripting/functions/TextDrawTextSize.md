@@ -9,11 +9,11 @@ tags: ["textdraw"]
 
 Change the size of a textdraw (box if TextDrawUseBox is enabled and/or clickable area for use with TextDrawSetSelectable).
 
-| Name | Description |
-| --- | --- |
-| text | The TextDraw to set the size of. |
+| Name    | Description                                                                            |
+| ------- | -------------------------------------------------------------------------------------- |
+| text    | The TextDraw to set the size of.                                                       |
 | Float:x | The size on the X axis (left/right) following the same 640x480 grid as TextDrawCreate. |
-| Float:y | The size on the Y axis (up/down) following the same 640x480 grid as TextDrawCreate. |
+| Float:y | The size on the Y axis (up/down) following the same 640x480 grid as TextDrawCreate.    |
 
 ## Returns
 

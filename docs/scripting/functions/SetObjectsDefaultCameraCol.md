@@ -15,8 +15,8 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Allows camera collisions with newly created objects to be disabled by default.
 
-| Name | Description |
-| --- | --- |
+| Name    | Description                                                                                         |
+| ------- | --------------------------------------------------------------------------------------------------- |
 | disable | 1 to disable camera collisions for newly created objects and 0 to enable them (enabled by default). |
 
 ## Returns

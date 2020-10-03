@@ -15,16 +15,16 @@ This function was added in SA-MP 0.3c and will not work in earlier versions!
 
 Gets a vehicle's parameters.
 
-| Name | Description |
-| --- | --- |
-| vehicleid | The ID of the vehicle to get the parameters from. |
-| &engine | Get the engine status. If 1, the engine is running.. |
-| &lights | Get the vehicle's lights' state. If 1 the lights are on. |
-| &alarm | Get the vehicle's alarm state. If 1 the alarm is (or was) sounding. |
-| &doors | Get the lock status of the doors. If 1 the doors are locked. |
-| &bonnet | Get the bonnet/hood status. If 1, it's open. |
-| &boot | Get the boot/trunk status. 1 means it is open. |
-| &objective | Get the objective status. 1 means the objective is on. |
+| Name       | Description                                                         |
+| ---------- | ------------------------------------------------------------------- |
+| vehicleid  | The ID of the vehicle to get the parameters from.                   |
+| &engine    | Get the engine status. If 1, the engine is running..                |
+| &lights    | Get the vehicle's lights' state. If 1 the lights are on.            |
+| &alarm     | Get the vehicle's alarm state. If 1 the alarm is (or was) sounding. |
+| &doors     | Get the lock status of the doors. If 1 the doors are locked.        |
+| &bonnet    | Get the bonnet/hood status. If 1, it's open.                        |
+| &boot      | Get the boot/trunk status. 1 means it is open.                      |
+| &objective | Get the objective status. 1 means the objective is on.              |
 
 ## Returns
 

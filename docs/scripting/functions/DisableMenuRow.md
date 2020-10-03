@@ -9,10 +9,10 @@ tags: ["menu"]
 
 Disable a specific row in a menu for all players. It will be greyed-out and can't be selected by players.
 
-| Name | Description |
-| --- | --- |
+| Name        | Description                                                                                                       |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- |
 | Menu:menuid | The ID of the menu to disable a row of. Ensure this is valid, as an invalid menu ID will crash the entire server. |
-| row | The ID of the row to disable (rows start at 0). |
+| row         | The ID of the row to disable (rows start at 0).                                                                   |
 
 ## Returns
 

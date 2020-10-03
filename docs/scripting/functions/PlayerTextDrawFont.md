@@ -15,11 +15,11 @@ This feature (player-textdraws) was added in SA-MP 0.3e and will not work in ear
 
 Change the font of a player-textdraw.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player whose player-textdraw to change the font of |
-| text | The ID of the player-textdraw to change the font of |
-| font | There are four font styles as shown below. A font value greater than 3 does not display, and anything greater than 16 crashes the client. |
+| Name     | Description                                                                                                                               |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose player-textdraw to change the font of                                                                          |
+| text     | The ID of the player-textdraw to change the font of                                                                                       |
+| font     | There are four font styles as shown below. A font value greater than 3 does not display, and anything greater than 16 crashes the client. |
 
 Available Fonts:
 

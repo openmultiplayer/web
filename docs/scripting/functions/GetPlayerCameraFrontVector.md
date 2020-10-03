@@ -15,12 +15,12 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see GetPlayerCameraPos.
 
-| Name | Description |
-| --- | --- |
+| Name     | Description                                                        |
+| -------- | ------------------------------------------------------------------ |
 | playerid | The ID of the player you want to obtain the camera front vector of |
-| Float:x | A float to store the X coordinate, passed by reference. |
-| Float:y | A float to store the Y coordinate, passed by reference. |
-| Float:z | A float to store the Z coordinate, passed by reference. |
+| Float:x  | A float to store the X coordinate, passed by reference.            |
+| Float:y  | A float to store the Y coordinate, passed by reference.            |
+| Float:z  | A float to store the Z coordinate, passed by reference.            |
 
 ## Returns
 

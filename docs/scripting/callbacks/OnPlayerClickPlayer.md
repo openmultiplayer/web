@@ -15,11 +15,11 @@ This callback was added in SA-MP 0.3a and will not work in earlier versions!
 
 Called when a player double-clicks on a player on the scoreboard.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player that clicked on a player on the scoreboard. |
-| clickedplayerid | The ID of the player that was clicked on. |
-| source | The source of the player's click. |
+| Name            | Description                                                      |
+| --------------- | ---------------------------------------------------------------- |
+| playerid        | The ID of the player that clicked on a player on the scoreboard. |
+| clickedplayerid | The ID of the player that was clicked on.                        |
+| source          | The source of the player's click.                                |
 
 ## Returns
 

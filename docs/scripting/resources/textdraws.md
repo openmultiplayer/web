@@ -150,12 +150,12 @@ There are 4 fonts available for textdraw text:
 
 ![Image:320px-Textdraw_map.png](/images/textdraws/Textdraw_font_styles.png)
 
-| ID | Info | Tips |
-| --- | --- | --- |
-| 0 | The _San Andreas_ Font. | Use for header or titles, not a whole page. |
-| 1 | Clear font that includes both upper and lower case characters. | Can be used for a lot of text. |
-| 2 | Clear font, but includes only capital letters. | Can be used in various instances. |
-| 3 | _GTA font_ | Retains quality when enlarged. Useful for large texts. |
+| ID  | Info                                                           | Tips                                                   |
+| --- | -------------------------------------------------------------- | ------------------------------------------------------ |
+| 0   | The _San Andreas_ Font.                                        | Use for header or titles, not a whole page.            |
+| 1   | Clear font that includes both upper and lower case characters. | Can be used for a lot of text.                         |
+| 2   | Clear font, but includes only capital letters.                 | Can be used in various instances.                      |
+| 3   | _GTA font_                                                     | Retains quality when enlarged. Useful for large texts. |
 
 As of SA-MP 0.3d, a new font (id 4) can be set. This is used in combination with the [TextDrawCreate](../functions/TextDrawCreate.md) and [TextDrawTextSize](../functions/TextDrawTextSize.md) functions to show a texture 'sprite' on the player's screen. We'll cover this later.
 

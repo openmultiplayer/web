@@ -15,11 +15,11 @@ This function starts with lowercase letter.
 
 Delete an earlier set property (setproperty).
 
-| Name | Description |
-| --- | --- |
-| id | The virtual machine to use. You should keep this as zero. |
-| name[] | The property's name, you should keep this blank (""). |
-| value | The property's unique ID. Use the hash-function to calculate it from a string. |
+| Name   | Description                                                                    |
+| ------ | ------------------------------------------------------------------------------ |
+| id     | The virtual machine to use. You should keep this as zero.                      |
+| name[] | The property's name, you should keep this blank ("").                          |
+| value  | The property's unique ID. Use the hash-function to calculate it from a string. |
 
 ## Returns
 

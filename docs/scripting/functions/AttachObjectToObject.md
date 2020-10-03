@@ -15,17 +15,17 @@ This function was added in SA-MP 0.3d and will not work in earlier versions!
 
 You can use this function to attach objects to other objects. The objects will folow the main object.
 
-| Name | Description |
-| --- | --- |
-| objectid | The object to attach to another object. |
-| attachtoid | The object to attach the object to. |
+| Name          | Description                                                             |
+| ------------- | ----------------------------------------------------------------------- |
+| objectid      | The object to attach to another object.                                 |
+| attachtoid    | The object to attach the object to.                                     |
 | Float:OffsetX | The distance between the main object and the object in the X direction. |
 | Float:OffsetY | The distance between the main object and the object in the Y direction. |
 | Float:OffsetZ | The distance between the main object and the object in the Z direction. |
-| Float:RotX | The X rotation between the object and the main object. |
-| Float:RotY | The Y rotation between the object and the main object. |
-| Float:RotZ | The Z rotation between the object and the main object. |
-| SyncRotation | If set to 0, objectid's rotation will not change with attachtoid's. |
+| Float:RotX    | The X rotation between the object and the main object.                  |
+| Float:RotY    | The Y rotation between the object and the main object.                  |
+| Float:RotZ    | The Z rotation between the object and the main object.                  |
+| SyncRotation  | If set to 0, objectid's rotation will not change with attachtoid's.     |
 
 ## Returns
 

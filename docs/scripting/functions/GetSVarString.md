@@ -15,11 +15,11 @@ This function was added in SA-MP 0.3.7 R2 and will not work in earlier versions!
 
 Gets a string server variable's value.
 
-| Name | Description |
-| --- | --- |
-| varname | The name of the server variable (case-insensitive). Assigned in SetSVarString. |
-| string_return | The array in which to store the string value in, passed by reference. |
-| len | The maximum length of the returned string. |
+| Name          | Description                                                                    |
+| ------------- | ------------------------------------------------------------------------------ |
+| varname       | The name of the server variable (case-insensitive). Assigned in SetSVarString. |
+| string_return | The array in which to store the string value in, passed by reference.          |
+| len           | The maximum length of the returned string.                                     |
 
 ## Returns
 

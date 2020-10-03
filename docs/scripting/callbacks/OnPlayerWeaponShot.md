@@ -15,15 +15,15 @@ This callback was added in SA-MP 0.3z and will not work in earlier versions!
 
 This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player that shot a weapon. |
-| weaponid | The ID of the [weapon](../resources/weaponids) shot by the player. |
-| hittype | The [type](../resources/bullethittypes) of thing the shot hit (none, player, vehicle, or (player)object). |
-| hitid | The ID of the player, vehicle or object that was hit. |
-| fX | The X coordinate that the shot hit. |
-| fY | The Y coordinate that the shot hit. |
-| fZ | The Z coordinate that the shot hit. |
+| Name     | Description                                                                                               |
+| -------- | --------------------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player that shot a weapon.                                                                  |
+| weaponid | The ID of the [weapon](../resources/weaponids) shot by the player.                                        |
+| hittype  | The [type](../resources/bullethittypes) of thing the shot hit (none, player, vehicle, or (player)object). |
+| hitid    | The ID of the player, vehicle or object that was hit.                                                     |
+| fX       | The X coordinate that the shot hit.                                                                       |
+| fY       | The Y coordinate that the shot hit.                                                                       |
+| fZ       | The Z coordinate that the shot hit.                                                                       |
 
 ## Returns
 

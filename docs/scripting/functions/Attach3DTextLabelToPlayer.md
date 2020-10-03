@@ -15,13 +15,13 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Attach a 3D text label to a player.
 
-| Name | Description |
-| --- | --- |
+| Name      | Description                                                           |
+| --------- | --------------------------------------------------------------------- |
 | Text3D:id | The ID of the 3D text label to attach. Returned by Create3DTextLabel. |
-| playerid | The ID of the player to attach the label to. |
-| OffsetX | The X offset from the player. |
-| OffsetY | The Y offset from the player. |
-| OffsetZ | The Z offset from the player. |
+| playerid  | The ID of the player to attach the label to.                          |
+| OffsetX   | The X offset from the player.                                         |
+| OffsetY   | The Y offset from the player.                                         |
+| OffsetZ   | The Z offset from the player.                                         |
 
 ## Returns
 

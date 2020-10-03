@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Get the rotation of a vehicle on the Z axis (yaw).
 
-| Name | Description |
-| --- | --- |
-| vehicleid | The ID of the vehicle to get the Z angle of. |
+| Name           | Description                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| vehicleid      | The ID of the vehicle to get the Z angle of.                            |
 | &Float:z_angle | A float variable in which to store the Z rotation, passed by reference. |
 
 ## Returns

@@ -9,12 +9,12 @@ tags: ["player"]
 
 Obtenir la touche sur laquelle appuie le joueur.
 
-| Name | Description |
-| --- | --- |
-| playerid | ID du joueur dont on veut obtenir la touche. |
-| keys | Un ensemble de bits contenant l'état des touches du joueur. Cette valeur est ce que l'on appelle un Masque binaire. Cliquez ici pour la liste des touches. |
-| updown | Etat Up/Down. |
-| leftright | Etat Left/Right. |
+| Name      | Description                                                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | ID du joueur dont on veut obtenir la touche.                                                                                                               |
+| keys      | Un ensemble de bits contenant l'état des touches du joueur. Cette valeur est ce que l'on appelle un Masque binaire. Cliquez ici pour la liste des touches. |
+| updown    | Etat Up/Down.                                                                                                                                              |
+| leftright | Etat Left/Right.                                                                                                                                           |
 
 ## Returns
 

@@ -14,8 +14,8 @@ This function starts with lowercase letter.
 
 This function can be used as a replacement for GetTickCount, as it returns the number of milliseconds since the start-up of the server.
 
-| Name | Description |
-| --- | --- |
+| Name           | Description                                                                                                                                                                                |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | &granularity=0 | Upon return, this value contains the number of ticks that the internal system time will tick per second. This value therefore indicates the accuracy of the return value of this function. |
 
 ## Returns

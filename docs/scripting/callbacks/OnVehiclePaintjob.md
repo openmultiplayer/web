@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Called when a player previews a vehicle paintjob inside a mod shop. Watch out, this callback is not called when the player buys the paintjob.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player that changed the paintjob of their vehicle. |
-| vehicleid | The ID of the vehicle that had its paintjob changed. |
-| paintjobid | The ID of the new paintjob. |
+| Name       | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| playerid   | The ID of the player that changed the paintjob of their vehicle. |
+| vehicleid  | The ID of the vehicle that had its paintjob changed.             |
+| paintjobid | The ID of the new paintjob.                                      |
 
 ## Returns
 

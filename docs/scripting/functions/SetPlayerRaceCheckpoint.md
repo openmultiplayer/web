@@ -9,17 +9,17 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Creates a race checkpoint. When the player enters it, the OnPlayerEnterRaceCheckpoint callback is called.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player to set the checkpoint for |
-| type | Type of checkpoint.0-Normal, 1-Finish, 2-Nothing(Only the checkpoint without anything on it), 3-Air normal, 4-Air finish, 5-Air (rotates and stops), 6-Air (increases, decreases and disappears), 7-Air (swings down and up), 8-Air (swings up and down) |
-| Float:x | X-Coordinate |
-| Float:y | Y-Coordinate |
-| Float:z | Z-Coordinate |
-| Float:nextx | X-Coordinate of the next point, for the arrow facing direction |
-| Float:nexty | Y-Coordinate of the next point, for the arrow facing direction |
-| Float:nextz | Z-Coordinate of the next point, for the arrow facing direction |
-| Float:size | Size (diameter) of the checkpoint |
+| Name        | Description                                                                                                                                                                                                                                              |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | The ID of the player to set the checkpoint for                                                                                                                                                                                                           |
+| type        | Type of checkpoint.0-Normal, 1-Finish, 2-Nothing(Only the checkpoint without anything on it), 3-Air normal, 4-Air finish, 5-Air (rotates and stops), 6-Air (increases, decreases and disappears), 7-Air (swings down and up), 8-Air (swings up and down) |
+| Float:x     | X-Coordinate                                                                                                                                                                                                                                             |
+| Float:y     | Y-Coordinate                                                                                                                                                                                                                                             |
+| Float:z     | Z-Coordinate                                                                                                                                                                                                                                             |
+| Float:nextx | X-Coordinate of the next point, for the arrow facing direction                                                                                                                                                                                           |
+| Float:nexty | Y-Coordinate of the next point, for the arrow facing direction                                                                                                                                                                                           |
+| Float:nextz | Z-Coordinate of the next point, for the arrow facing direction                                                                                                                                                                                           |
+| Float:size  | Size (diameter) of the checkpoint                                                                                                                                                                                                                        |
 
 ## Returns
 

@@ -18,28 +18,28 @@ The following is a list of textdraw sprites (textures) that can be used in a (pl
 
 ### intro1.txd
 
-| Texture | Size | Description |
-| --- | --- | --- |
-| intro1 | 512x512 | Large black texture, with the following text in the bottom-right corner: _Marco's Bistro, Liberty City, 1986_. Likely a leftover from GTA Vice City. |
+| Texture | Size    | Description                                                                                                                                          |
+| ------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| intro1  | 512x512 | Large black texture, with the following text in the bottom-right corner: _Marco's Bistro, Liberty City, 1986_. Likely a leftover from GTA Vice City. |
 
 ### intro2.txd
 
-| Texture | Size | Description |
-| --- | --- | --- |
-| intro1 | 512x512 | Same as intro1, except the text now reads: _Escobar International Airport, Vice City_. |
+| Texture | Size    | Description                                                                            |
+| ------- | ------- | -------------------------------------------------------------------------------------- |
+| intro1  | 512x512 | Same as intro1, except the text now reads: _Escobar International Airport, Vice City_. |
 
 ### INTRO3.TXD
 
-| Texture | Size | Description |
-| --- | --- | --- |
-| intro1 | 512x512 | Same as the former two, the text now reads: _Vice City Docks_. |
+| Texture | Size    | Description                                                    |
+| ------- | ------- | -------------------------------------------------------------- |
+| intro1  | 512x512 | Same as the former two, the text now reads: _Vice City Docks_. |
 
 ### intro4.txd
 
-| Texture | Size | Description |
-| --- | --- | --- |
-| Texture | Size | Description |
-| intro1 | 512x512 | Once again the same as the former three, with the text: _Vice Beach, outside Ken's office._ |
+| Texture | Size    | Description                                                                                 |
+| ------- | ------- | ------------------------------------------------------------------------------------------- |
+| Texture | Size    | Description                                                                                 |
+| intro1  | 512x512 | Once again the same as the former three, with the text: _Vice Beach, outside Ken's office._ |
 
 ### LD_BEAT.txd
 

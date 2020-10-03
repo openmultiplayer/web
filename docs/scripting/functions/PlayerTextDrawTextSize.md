@@ -15,12 +15,12 @@ This feature (player-textdraws) was added in SA-MP 0.3e and will not work in ear
 
 Change the size of a player-textdraw (box if PlayerTextDrawUseBox is enabled and/or clickable area for use with PlayerTextDrawSetSelectable).
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player whose player-textdraw to set the size of |
-| text | The ID of the player-textdraw to set the size of. |
-| Float:x | The size on the X axis (left/right) following the same 640x480 grid as TextDrawCreate. |
-| Float:y | The size on the Y axis (up/down) following the same 640x480 grid as TextDrawCreate. |
+| Name     | Description                                                                            |
+| -------- | -------------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose player-textdraw to set the size of                          |
+| text     | The ID of the player-textdraw to set the size of.                                      |
+| Float:x  | The size on the X axis (left/right) following the same 640x480 grid as TextDrawCreate. |
+| Float:y  | The size on the Y axis (up/down) following the same 640x480 grid as TextDrawCreate.    |
 
 ## Returns
 

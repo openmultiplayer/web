@@ -15,14 +15,14 @@ This function was added in SA-MP 0.3x and will not work in earlier versions!
 
 Sets the rotation and zoom of a 3D model preview player-textdraw.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player whose player-textdraw to change. |
-| PlayerText:text | The ID of the player-textdraw to change. |
-| Float:fRotX | The X rotation value. |
-| Float:fRotY | The Y rotation value. |
-| Float:fRotZ | The Z rotation value. |
-| Float:fZoom | The zoom value, default value 1.0, smaller values make the camera closer and larger values make the camera further away. |
+| Name            | Description                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| playerid        | The ID of the player whose player-textdraw to change.                                                                    |
+| PlayerText:text | The ID of the player-textdraw to change.                                                                                 |
+| Float:fRotX     | The X rotation value.                                                                                                    |
+| Float:fRotY     | The Y rotation value.                                                                                                    |
+| Float:fRotZ     | The Z rotation value.                                                                                                    |
+| Float:fZoom     | The zoom value, default value 1.0, smaller values make the camera closer and larger values make the camera further away. |
 
 ## Returns
 

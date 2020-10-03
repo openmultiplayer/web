@@ -9,11 +9,11 @@ tags: ["player"]
 
 Get a player's name.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player to get the name of. |
-| name[] | An array into which to store the name, passed by reference. |
-| len | The length of the string that should be stored. Recommended to be MAX_PLAYER_NAME + 1. The + 1 is necessary to account for the null terminator. |
+| Name     | Description                                                                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player to get the name of.                                                                                                        |
+| name[]   | An array into which to store the name, passed by reference.                                                                                     |
+| len      | The length of the string that should be stored. Recommended to be MAX_PLAYER_NAME + 1. The + 1 is necessary to account for the null terminator. |
 
 ## Returns
 
