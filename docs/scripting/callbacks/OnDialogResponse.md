@@ -144,7 +144,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parameters can contain different values, based on dialog's style (click for more examples).
+Parameters can contain different values, based on dialog's style ([click for more examples](../resources/dialogstyles.md)).
 
 :::
 
