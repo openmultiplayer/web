@@ -35,6 +35,6 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Related Functions
 
-- GetPlayerSpecialAction: Get a player's current special action.
-- SetPlayerSpecialAction: Set a player's special action.
-- OnPlayerStateChange: Called when a player changes state.
+- [GetPlayerSpecialAction](functions/GetPlayerSpecialAction.md): Get a player's current special action.
+- [SetPlayerSpecialAction](functions/SetPlayerSpecialAction.md): Set a player's special action.
+- [OnPlayerStateChange](callbacks/OnPlayerStateChange.md): Called when a player changes state.

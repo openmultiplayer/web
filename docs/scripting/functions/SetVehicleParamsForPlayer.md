@@ -109,4 +109,4 @@ Since 0.3a you will have to reapply this function when OnVehicleStreamIn is call
 
 ## Related Functions
 
-- SetVehicleParamsEx: Sets a vehicle's params for all players.
+- [SetVehicleParamsEx](functions/SetVehicleParamsEx.md): Sets a vehicle's params for all players.

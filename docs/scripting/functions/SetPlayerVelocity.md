@@ -44,6 +44,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- GetPlayerVelocity: Get a player's velocity.
-- SetVehicleVelocity: Set a vehicle's velocity.
-- GetVehicleVelocity: Get a vehicle's velocity.
+- [GetPlayerVelocity](functions/GetPlayerVelocity.md): Get a player's velocity.
+- [SetVehicleVelocity](functions/SetVehicleVelocity.md): Set a vehicle's velocity.
+- [GetVehicleVelocity](functions/GetVehicleVelocity.md): Get a vehicle's velocity.

@@ -63,8 +63,8 @@ You MUST use ARGB color format, not RGBA like used in client messages etc.
 
 ## Related Functions
 
-- SetPlayerObjectMaterialText: Replace the texture of a player object with text.
-- SetObjectMaterial: Replace the texture of an object with the texture from another model in the game.
+- [SetPlayerObjectMaterialText](functions/SetPlayerObjectMaterialText.md): Replace the texture of a player object with text.
+- [SetObjectMaterial](functions/SetObjectMaterial.md): Replace the texture of an object with the texture from another model in the game.
 - Ultimate Creator by Nexius
 - SetObjectMaterialText Editor by RIDE2DAY
 - Fusez's Map Editor by RedFusion

@@ -48,6 +48,6 @@ setproperty(.value = 123984334, .string = ":)");
 
 ## Related Functions
 
-- Getproperty: Get the value of a property.
-- Deleteproperty: Delete a property.
-- Existproperty: Check if a property exists.
+- [Getproperty](functions/Getproperty.md): Get the value of a property.
+- [Deleteproperty](functions/Deleteproperty.md): Delete a property.
+- [Existproperty](functions/Existproperty.md): Check if a property exists.

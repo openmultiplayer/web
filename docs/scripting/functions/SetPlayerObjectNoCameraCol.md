@@ -49,4 +49,4 @@ This does not work inside the normal SA map boundaries.
 
 ## Related Functions
 
-- SetObjectNoCameraCol: Disables collisions between camera and object.
+- [SetObjectNoCameraCol](functions/SetObjectNoCameraCol.md): Disables collisions between camera and object.

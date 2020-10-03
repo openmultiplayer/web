@@ -39,5 +39,5 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 ## Related Functions
 
-- PlayAudioStreamForPlayer: Plays a audio stream for a player.
-- PlayerPlaySound: Play a sound for a player.
+- [PlayAudioStreamForPlayer](functions/PlayAudioStreamForPlayer.md): Plays a audio stream for a player.
+- [PlayerPlaySound](functions/PlayerPlaySound.md): Play a sound for a player.

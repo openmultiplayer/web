@@ -43,5 +43,9 @@ There are only valid 21 weather IDs in the game (0 - 20), however the game does 
 
 ## Related Functions
 
-- SetWeather: Set the global weather.
-- SetGravity: Set the global gravity.
+- [SetWeather](functions/SetWeather.md): Set the global weather.
+- [SetGravity](functions/SetGravity.md): Set the global gravity.
+
+## Related Information
+
+- [Weather IDs](resources/SetGravity.md): To be used with [SetWeather](functions/SetWeather.md) and [SetPlayerWeather](functions/SetPlayerWeather.md).

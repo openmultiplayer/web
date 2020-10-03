@@ -33,4 +33,4 @@ new modelid = GetPlayerObjectModel(playerid, objectid);
 
 ## Related Functions
 
-- GetObjectModel: Get the model ID of an object.
+- [GetObjectModel](functions/GetObjectModel.md): Get the model ID of an object.

@@ -51,4 +51,4 @@ While the drunk level is above 5000, the player's HUD (radar etc.) will be hidde
 
 ## Related Functions
 
-- GetPlayerDrunkLevel: Returns the current drunk level of a player.
+- [GetPlayerDrunkLevel](functions/GetPlayerDrunkLevel.md): Returns the current drunk level of a player.
