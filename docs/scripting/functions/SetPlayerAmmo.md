@@ -51,6 +51,6 @@ Set the ammo to 0 to remove a weapon from a player's inventory. Note that the we
 ## Related Functions
 
 
--  GetPlayerAmmo: Check how much ammo a player has in the specified slot.
--  GivePlayerWeapon: Give a player a weapon.
--  SetPlayerArmedWeapon: Set a player's armed weapon.
+-  [GetPlayerAmmo](GetPlayerAmmo.md): Check how much ammo a player has in the specified slot.
+-  [GivePlayerWeapon](GivePlayerWeapon.md): Give a player a weapon.
+-  [SetPlayerArmedWeapon](SetPlayerArmedWeapon.md): Set a player's armed weapon.
