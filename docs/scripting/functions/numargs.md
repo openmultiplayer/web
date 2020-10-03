@@ -15,10 +15,6 @@ This function starts with lowercase letter.
 
 Get the number of arguments passed to a function.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

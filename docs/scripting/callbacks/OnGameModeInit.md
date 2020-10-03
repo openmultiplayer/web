@@ -9,10 +9,6 @@ tags: []
 
 This callback is triggered when the gamemode starts.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

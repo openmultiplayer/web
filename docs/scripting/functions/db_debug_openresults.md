@@ -11,16 +11,6 @@ This function starts with lowercase letter.
 
 :::
 
-## Description
-
-.
-
-| Name | Description |
-| ---- | ----------- |
-
-
-## Related Functions
-
 - [db_open](db_open.md): Open a connection to an SQLite database
 - [db_close](db_close.md): Close the connection to an SQLite database
 - [db_query](db_query.md): Query an SQLite database

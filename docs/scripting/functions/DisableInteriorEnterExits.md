@@ -9,10 +9,6 @@ tags: []
 
 Disable all the interior entrances and exits in the game (the yellow arrows at doors).
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

@@ -9,10 +9,6 @@ tags: []
 
 Returns the uptime of the actual server (not the SA-MP server) in milliseconds.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

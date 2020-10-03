@@ -9,10 +9,6 @@ tags: []
 
 Get the currently set gravity.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

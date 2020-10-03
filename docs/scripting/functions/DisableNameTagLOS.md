@@ -15,10 +15,6 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Disables the nametag Line-Of-Sight checking so that players can see nametags through objects.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c
