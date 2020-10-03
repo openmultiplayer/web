@@ -35,14 +35,14 @@ strunpack(string, pstring);
 
 ## Related Functions
 
-- ispacked: Check if the given string is packed.
-- strpack: This function can be used to pack a string.
-- strcmp: Compare two strings to see if they are the same.
-- strfind: Search for a substring in a string.
-- strtok: Search for a variable typed after a space.
-- strdel: Delete part/all of a string.
-- strins: Put a string into another string.
-- strlen: Check the length of a string.
-- strmid: Extract characters from a string.
-- strval: Find the value of a string.
-- strcat: Contact two strings into a destination reference.
+- [ispacked](../functions/ispacked.md): Check if the given string is packed.
+- [strpack](../functions/strpack.md): This function can be used to pack a string.
+- [strcmp](../functions/strcmp.md): Compare two strings to see if they are the same.
+- [strfind](../functions/strfind.md): Search for a substring in a string.
+- [strtok](../functions/strtok.md): Search for a variable typed after a space.
+- [strdel](../functions/strdel.md): Delete part/all of a string.
+- [strins](../functions/strins.md): Put a string into another string.
+- [strlen](../functions/strlen.md): Check the length of a string.
+- [strmid](../functions/strmid.md): Extract characters from a string.
+- [strval](../functions/strval.md): Find the value of a string.
+- [strcat](../functions/strcat.md): Contact two strings into a destination reference.

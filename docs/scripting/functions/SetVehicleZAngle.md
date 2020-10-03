@@ -51,5 +51,5 @@ This function does not work on unoccupied vehicles (It is believed to be a GTA l
 
 ## Related Functions
 
-- [GetVehicleZAngle](../../scripting/functions/GetVehicleZAngle.md): Check the current angle of a vehicle.
-- [SetVehiclePos](../../scripting/functions/SetVehiclePos.md): Set the position of a vehicle.
+- [GetVehicleZAngle](../functions/GetVehicleZAngle.md): Check the current angle of a vehicle.
+- [SetVehiclePos](../functions/SetVehiclePos.md): Set the position of a vehicle.

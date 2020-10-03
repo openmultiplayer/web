@@ -32,12 +32,12 @@ new iValue = strval(string); // iValue is now '250'
 
 ## Related Functions
 
-- strcmp: Compare two strings to see if they are the same.
-- strfind: Search for a substring in a string.
-- strtok: Search for a variable typed after a space.
-- strdel: Delete part/all of a string.
-- strins: Put a string into another string.
-- strlen: Check the length of a string.
-- strmid: Extract characters from a string.
-- strpack: Pack a string into a destination.
-- strcat: Concatenate two strings into a destination reference.
+- [strcmp](../functions/strcmp.md): Compare two strings to see if they are the same.
+- [strfind](../functions/strfind.md): Search for a substring in a string.
+- [strtok](../functions/strtok.md): Search for a variable typed after a space.
+- [strdel](../functions/strdel.md): Delete part/all of a string.
+- [strins](../functions/strins.md): Put a string into another string.
+- [strlen](../functions/strlen.md): Check the length of a string.
+- [strmid](../functions/strmid.md): Extract characters from a string.
+- [strpack](../functions/strpack.md): Pack a string into a destination.
+- [strcat](../functions/strcat.md): Concatenate two strings into a destination reference.

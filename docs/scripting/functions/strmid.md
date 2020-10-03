@@ -35,12 +35,12 @@ strmid(string, "Extract 'HELLO' without the !!!!: HELLO!!!!", 34, 39); //string
 
 ## Related Functions
 
-- strcmp: Compare two strings to check if they are the same.
-- strfind: Search for a string in another string.
-- strtok: Get the next 'token' (word/parameter) in a string.
-- strdel: Delete part of a string.
-- strins: Insert text into a string.
-- strlen: Get the length of a string.
-- strpack: Pack a string into a destination string.
-- strval: Convert a string into an integer.
-- strcat: Concatenate two strings into a destination reference.
+- [strcmp](../functions/strcmp.md): Compare two strings to check if they are the same.
+- [strfind](../functions/strfind.md): Search for a string in another string.
+- [strtok](../functions/strtok.md): Get the next 'token' (word/parameter) in a string.
+- [strdel](../functions/strdel.md): Delete part of a string.
+- [strins](../functions/strins.md): Insert text into a string.
+- [strlen](../functions/strlen.md): Get the length of a string.
+- [strpack](../functions/strpack.md): Pack a string into a destination string.
+- [strval](../functions/strval.md): Convert a string into an integer.
+- [strcat](../functions/strcat.md): Concatenate two strings into a destination reference.

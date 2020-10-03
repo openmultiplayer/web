@@ -27,5 +27,5 @@ SetPlayerVirtualWorld(playerid, 10);
 
 ## Related Functions
 
-- [GetVehicleVirtualWorld](../../scripting/functions/GetVehicleVirtualWorld.md): Check what virtual world a vehicle is in.
-- [SetPlayerVirtualWorld](../../scripting/functions/SetPlayerVirtualWorld.md): Set the virtual world of a player.
+- [GetVehicleVirtualWorld](../functions/GetVehicleVirtualWorld.md): Check what virtual world a vehicle is in.
+- [SetPlayerVirtualWorld](../functions/SetPlayerVirtualWorld.md): Set the virtual world of a player.

@@ -74,6 +74,6 @@ Lights also operate during the day (Only when ManualVehicleEngineAndLights is en
 
 ## Related Functions
 
-- [GetVehicleParamsEx](../../scripting/functions/GetVehicleParamsEx.md): Get a vehicle's parameters.
-- [SetVehicleParamsForPlayer](../../scripting/functions/SetVehicleParamsForPlayer.md): Set the parameters of a vehicle for a player.
-- [UpdateVehicleDamageStatus](../../scripting/functions/UpdateVehicleDamageStatus.md): Update the vehicle damage.
+- [GetVehicleParamsEx](../functions/GetVehicleParamsEx.md): Get a vehicle's parameters.
+- [SetVehicleParamsForPlayer](../functions/SetVehicleParamsForPlayer.md): Set the parameters of a vehicle for a player.
+- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus.md): Update the vehicle damage.
