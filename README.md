@@ -28,17 +28,18 @@
   <a href="https://www.open.mp">open.mp</a>
 </p>
 
-
 <hr>
 
 ## Development
 
 ### Requirements:
+
 - Git
 - Node.js
 - npm
 
 ## Setup
+
 ```bash
 # clone the project
 git clone https://github.com/openmultiplayer/wiki.git
