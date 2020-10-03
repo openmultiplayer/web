@@ -2243,348 +2243,325 @@ specifies the number of digits to the right of the decimal point that the output
 should be rounded. For the string type, it limits the number of characters that
 should be output, after which the string is truncated.
 
-> Code:
->
-> printf("%.2f", 1.5); printf("%.\*f", 10, 1.5); printf("%.5s", "Hello world!");
-> printf("%.\*s", 7, "Hello world!");
->
-> Code:
->
-> 1.50 1.5000000000 Hello Hello w
->
-> As you can see, dynamic precision values can be used both with the float and
-> the string placeholders.
->
-> A really cool trick we can pull off thanks to the precision field is get
-> substrings, now, now, there are plenty of methods we can use to do that, and
-> that without regarding the native
-> [strfind](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Strfind)
-> function, and let’s not forget the amazing functions we got at
-> [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)’s
-> [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764)
-> include.
->
-> Let’s see how we can get the same result using only the precision field.
->
-> Code:
->
-> substring(const source\[\], start = 0, length = -1) // The default parameters
-> are just for the heck of it. { new output\[256\];
->
->     format(output, sizeof(output), "%.\*s", length, source\[start\]);
->     return output;
->
-> }
->
-> Let’s try to decipher this chunk of code, we simply pass the source string,
-> (the string we are going to extract from), a starting position (the slot we
-> are going to start extracting at), and the length of the characters we want to
-> extract.
->
-> Our return value will be formatted according to the following placeholder
-> **“%.\*s”**, we are including the precision field, and using it to determine a
-> dynamic value that’s going to be the length of extracted characters, then we
-> provide a starting point for the extraction by adding **source\[start\]**
-> which skips starting from the first slot to the slot number **start** that we
-> passed in the function’s parameters.
->
-> Let’s call the function and see how it goes from here:
->
-> Code:
->
-> new message1\[\] = "Hello!", message2\[\] = "I want an apple!";
->
-> print(substring(.source = message1, .start = 1, .length = 3));
-> print(substring(.source = message2, .start = 7, .length = 8));
->
-> Code:
->
-> ell an apple
->
-> Simple right? Trivia bonus, passing a _negative value_ as the extraction
-> length will result in outputting all the characters in your source string
-> starting from the **start** slot. In the other hand, passing 0 as the
-> extraction length returns a null value.
->
-> Let’a take a look on these cases:
->
-> Code:
->
-> new message3\[\] = "Arrays start at 1, says the Lua developer!";
->
-> print(substring(message3)); // start = 0 by default, length = -1 by default
-> print(substring(message3, .length = 6)); // start = 0 by default, length = 6
-> print(substring(message3, 7, 10)); // start = 7, length = 10
-> print(substring(message3, strlen(message3) - 14)); // start = 28, length = -1
-> by default print(substring(message3, strlen(message3) - 14, 3)); // start =
-> 28, length = 3
->
-> Code:
->
-> Arrays start at 1, says the Lua developer! Arrays start at 1 Lua developer!
-> Lua
+```cpp
+printf("%.2f", 1.5);
+printf("%.*f", 10, 1.5);
+printf("%.5s", "Hello world!");
+printf("%.*s", 7, "Hello world!");
+```
 
-> **✧ Usage**
->
-> Putting all what we’ve seen so far to action, we can format our strings pretty
-> match in anyway, so far we’ve worked in mainly in the console, utilizing the
-> **print** and **printf** functions to output our data, well, mainly **printf**
-> that is, thanks to its native support for formatting strings on the go, hence
-> the f on the function’s name.
->
-> But in the real world, most people don’t like looking at terminals, they are
-> just too scary, and complicated to the average user, and as you all know,
-> _client messages_ show up on the game’s screen, and not the console, however,
-> those cannot be formatted on the go, they are more like a print function one
-> might say, to bypass this limitation, we utilize and other very effective
-> function, called **format**, we won’t go deeper on its definition, as we have
-> already gone through explaining it on earlier parts, (refer to
-> [this](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Format)),
-> but, here is a reminder of its syntax;
->
-> Code:
->
-> format(output\[\], len, const format\[\], {Float,\_}: ...}
->
-> Let’s take a look at these examples;
->
-> **Example 1**: _Player name – Assuming there is some play on the server with
-> the id of 9 called Player1_:
->
-> Code:
->
-> // MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to
-> take into account the null terminator, thanks to
-> [Pottus](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=169807)
-> for pointing that out. new playerName\[MAX_PLAYER_NAME + 1\], output\[128\],
-> playerid = 9;
->
-> GetPlayerName(playerid, playerName, MAX_PLAYER_NAME); format(output,
-> sizeof(output), "\[Info\]: the player with the id of %d is called
-> {FFFF00}%s.", playerid, playerName);SendClientMessageToAll(0, output);
->
-> Code:
->
-> \[Info\]: the player with the id of 9 is called Player1.
->
-> Simply enough, we just get the player name and start formatting out the
-> string, the _%d_ placeholder is responsible on displaying the _playerid_
-> variables, which holds the value of 9, the _%s_ placeholder displays the
-> _playerName_ string that has the player name in it thanks to the
-> _GetPlayerName_ function.
->
-> We then show the formatted string to everyone on the server using the
-> _SendClientMessageToAll_ function, notice that the 0 value on its first
-> parameter indicating the color black, which is going to be the message’s
-> color, the embedded hex number **{FFFF00}** is what resulted in the player
-> name to be yellow.
->
-> **Example 2**: _In-game Clock – Displaying the current time in game_:
->
-> Code:
->
-> new output\[128\], hours, minutes, seconds;
->
-> gettime(hours, minutes, seconds); format(output, sizeof(output), "It's
-> %02d:%02d %s", hours > 12 ? hours - 12 : hours, minutes, hours < 12 ? ("AM") :
-> ("PM")); SendClientMessageToAll(0, output);
->
-> Again, we just utilized the _gettime_ function to store the hours, minutes and
-> seconds on their variables respectively, then put them all together into a
-> nicely formatted string, we took advantage of the width field (%02d) to pad
-> the values between 0 and 9 with another zero to evade outputs like (“It’s 5:9
-> PM”), as you can see.
->
-> Code:
->
+```
+1.50
+1.5000000000
+Hello
+Hello w
+```
+
+As you can see, dynamic precision values can be used both with the float and the
+string placeholders.
+
+A really cool trick we can pull off thanks to the precision field is get
+substrings, now, now, there are plenty of methods we can use to do that, and
+that without regarding the native [strfind](../scripting/functions/strfind)
+function, and let’s not forget the amazing functions we got at **Slice**’s
+[strlib](https://github.com/oscar-broman/strlib) include.
+
+Let’s see how we can get the same result using only the precision field.
+
+```cpp
+substring(const source[], start = 0, length = -1)
+{
+	new output[256];
+
+	format(output, sizeof(output), "%.*s", length, source[start]);
+	return output;
+}
+```
+
+Let’s try to decipher this chunk of code, we simply pass the source string, (the
+string we are going to extract from), a starting position (the slot we are going
+to start extracting at), and the length of the characters we want to extract.
+
+Our return value will be formatted according to the following placeholder
+`%.*s`, we are including the precision field, and using it to determine a
+dynamic value that’s going to be the length of extracted characters, then we
+provide a starting point for the extraction by adding `source[start]` which
+skips starting from the first slot to the slot number `start` that we passed in
+the function’s parameters.
+
+Let’s call the function and see how it goes from here:
+
+```cpp
+new message1[] = "Hello!", message2[] = "I want an apple!";
+
+print(substring(.source = message1, .start = 1, .length = 3));
+print(substring(.source = message2, .start = 7, .length = 8));
+```
+
+```
+ell
+an apple
+```
+
+Simple right? Trivia bonus, passing a _negative value_ as the extraction length
+will result in outputting all the characters in your source string starting from
+the **start** slot. In the other hand, passing 0 as the extraction length
+returns a null value.
+
+Let’a take a look on these cases:
+
+```cpp
+new message3[] = "Arrays start at 1, says the Lua developer!";
+
+print(substring(message3)); // start = 0 by default, length = -1 by default
+print(substring(message3, .length = 6)); // start = 0 by default, length = 6
+print(substring(message3, 7, 10)); // start = 7, length = 10
+print(substring(message3, strlen(message3) - 14)); // start = 28, length = -1 by default
+print(substring(message3, strlen(message3) - 14, 3)); // start = 28, length = 3
+```
+
+```
+Arrays start at 1, says the Lua developer!
+Arrays
+start at 1
+Lua developer!
+Lua
+```
+
+&nbsp;
+
+#### **✧ Usage**
+
+Putting all what we’ve seen so far to action, we can format our strings pretty
+match in anyway, so far we’ve worked in mainly in the console, utilizing the
+`print` and `printf` functions to output our data, well, mainly `printf` that
+is, thanks to its native support for formatting strings on the go, hence the f
+on the function’s name.
+
+But in the real world, most people don’t like looking at terminals, they are
+just too scary, and complicated to the average user, and as you all know,
+_client messages_ show up on the game’s screen, and not the console, however,
+those cannot be formatted on the go, they are more like a print function one
+might say, to bypass this limitation, we utilize and other very effective
+function, called `format`, we won’t go deeper on its definition, as we have
+already gone through explaining it on earlier parts, (refer to
+[this](../scripting/functions/format)), but, here is a reminder of its syntax;
+
+```cpp
+format(output[], len, const format[], {Float,_}: ...}
+```
+
+Let’s take a look at these examples;
+
+&nbsp;
+
+**Example 1**: _Player name – Assuming there is some play on the server with the
+id of 9 called Player1_:
+
+```cpp
+// MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to take into account the null terminator, thanks to Pottus for pointing that out.
+new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
+
+GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
+format(output, sizeof(output), "[Info]: the player with the id of %d is called {FFFF00}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+```
+
+> [Info]: the player with the id of 9 is called
+> <span style="color: #ffff00;">Player1</span>.
+
+Simply enough, we just get the player name and start formatting out the string,
+the `%d` placeholder is responsible on displaying the `playerid` variables,
+which holds the value `9`, the `%s` placeholder displays the `playerName` string
+that has the player name in it thanks to the `GetPlayerName` function.
+
+We then show the formatted string to everyone on the server using the
+`SendClientMessageToAll` function, notice that the `0` value on its first
+parameter indicating the color black, which is going to be the message’s color,
+the embedded hex value `{FFFF00}` is what resulted in the player name to be
+yellow.
+
+&nbsp;
+
+**Example 2**: _In-game Clock – Displaying the current time in game_:
+
+```cpp
+new output[128], hours, minutes, seconds;
+
+gettime(hours, minutes, seconds);
+format(output, sizeof(output), "It's %02d:%02d %s", hours > 12 ? hours - 12 : hours, minutes, hours < 12 ? ("AM") : ("PM"));
+SendClientMessageToAll(0, output);
+```
+
+Again, we just utilized the `gettime` function to store the hours, minutes and
+seconds on their variables respectively, then put them all together into a
+nicely formatted string, we took advantage of the width field `%02d` to pad the
+values between 0 and 9 with another zero to evade outputs like (“_It’s 5:9
+PM_”), as you can see.
+
 > It’s 06 :17 PM
->
-> **Example 3**: _Death message - Outputting a message when a player dies,
-> having the players names colored in their respective colors_:
->
-> Code:
->
-> public OnPlayerDeath(playerid, killerid, reason) { // MAX_PLAYER_NAME is a
-> predefined constant with the value of 24, we add 1 to take into account the
-> null terminator, thanks to
-> [Pottus](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=169807)
-> for pointing that out. new message\[144\], playerName\[MAX_PLAYER_NAME + 1\],
-> killerName\[MAX_PLAYER_NAME + 1\];
->
->     GetPlayerName(playerid, playerName, MAX\_PLAYER\_NAME);
->     GetPlayerName(killerid, killerName, MAX\_PLAYER\_NAME);
->
->     format(message, sizeof(message), "{%06x}%s {000000}killed {%06x}%s", GetPlayerColor(killerid) >>> 8, killerName, GetPlayerColor(playerid) >>> 8, playerName);
->     SendClientMessageToAll(0, message);
->
->     return 1;
->
-> }
->
-> Given the following list of connected players:
->
-> **ID**
->
-> **Player**
->
-> 0
->
-> Compton
->
-> 1
->
-> Dark
->
-> 5
->
-> Player1
->
-> 6
->
-> Bartolomew
->
-> 11
->
-> unban_pls
->
-> Say, playerid 0 killed playerid 6, the formatted messages should be
-> “**{FF0000}Compton {000000}killed {0000FF}Bartolomew**”, which will send the
-> following client message to everybody on the server:
->
-> Code:
->
-> Compton killed Bartolomew
->
-> I apologize if I had you confused by using
-> [bitwise logical shift](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Logical_shift),
-> it was simply used here in order to turn the decimal number returned by the
-> _GetPlayerColor_ function into a hexadecimal number representing a color, the
-> shit itself is utilized to omit the alpha space, for more about this, I highly
-> recommend checking out
-> [this tutorial](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=177523)
-> by
-> [Kyosaur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23990).
 
-> **✧ Custom specifiers**
->
-> Working with the formatting specifiers we've gone through so far is
-> sufficient, you can literally do all sort of stuff with those magnificent
-> tools, but nothing is stopping us from asking for me, how greedy of us. All
-> thanks to
-> [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)
-> after being influenced by
-> [sscanf](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=570927),
-> he came up with an amazing include,
-> [formatex](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=313488),
-> which added several new specifiers to use, which really eased a lot of
-> every-day pawn stuff. But that wasn't it, you can also create your own
-> specifiers to suit your needs, and as cool as it might sound, the process is
-> very easy.
->
-> Just for testing purposes, let's make something silly, something as basic as
-> giving a string as an input, and return it on the form of a link
-> (https://www.string.com);
->
-> Code:
->
-> FormatSpecifier<'n'\>(output\[\], const param\[\]) { format(output,
-> sizeof(output), "https://www.%s.com", param); }
->
-> As simple as that, and thus, the mighty **%n** specifier (short for Newton
-> because it's very cool and rocket science complicated
-> ![](/web/20190424140855im_/https://forum.sa-mp.com/images/smilies/wink.png "Wink")
-> ) was born, let's test this champ out:
->
-> Code:
->
-> printf("%n", "samp");
->
-> This outputs:
->
-> Code:
->
+&nbsp;
+
+**Example 3**: _Death message - Outputting a message when a player dies, having
+the players names colored in their respective colors_:
+
+```cpp
+public OnPlayerDeath(playerid, killerid, reason)
+{
+    // MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to take into account the null terminator, thanks to Pottus for pointing that out.
+    new message[144], playerName[MAX_PLAYER_NAME + 1], killerName[MAX_PLAYER_NAME + 1];
+
+    GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
+    GetPlayerName(killerid, killerName, MAX_PLAYER_NAME);
+
+    format(message, sizeof(message), "{%06x}%s {000000}killed {%06x}%s", GetPlayerColor(killerid) >>> 8, killerName, GetPlayerColor(playerid) >>> 8, playerName);
+    SendClientMessageToAll(0, message);
+
+    return 1;
+}
+```
+
+Given the following list of connected players:
+
+|        |                                              |
+| ------ | -------------------------------------------- |
+| **ID** | **Player**                                   |
+| 0      | <span style="color: red;">Compton</span>     |
+| 1      | <span style="color: grey;">Dark</span>       |
+| 5      | <span style="color: red;">Player1</span>     |
+| 6      | <span style="color: blue;">Bartolomew</span> |
+| 11     | <span style="color: grey;">unban_pls</span>  |
+
+&nbsp;
+
+Say, `playerid` `0` killed `playerid` `6`, the formatted messages should spell
+“**{FF0000}Compton {000000}killed {0000FF}Bartolomew**”, which will send the
+following client message to everybody on the server:
+
+> <span style="color: red;">Compton</span> >
+> <span style="color: #000000;">killed</span> >
+> <span style="color: blue">Bartolomew</span>
+
+I apologize if I had you confused by using
+[bitwise logical shift](https://en.wikipedia.org/wiki/Logical_shift), it was
+simply used here in order to turn the decimal number returned by the
+`GetPlayerColor` function into a hexadecimal number representing a color, the
+shift itself is utilized to omit the -alpha- space, for more about this, I
+highly recommend checking out [this tutorial](Binary) by **Kyosaur**.
+
+&nbsp;
+
+### **✧ Custom specifiers**
+
+Working with the formatting specifiers we've gone through so far is sufficient,
+you can literally do all sort of stuff with those magnificent tools, but nothing
+is stopping us from asking for me, how greedy of us. All thanks to **Slice**
+after being influenced by [sscanf](https://github.com/maddinat0r/sscanf), he
+came up with an amazing include,
+[formatex](https://github.com/Southclaws/formatex), which added several new
+specifiers to use, which really eased a lot of every-day pawn stuff. But that
+wasn't it, you can also create your own specifiers to suit your needs, and as
+cool as it might sound, the process is very easy.
+
+Just for testing purposes, let's make something silly, something as basic as
+giving a string as an input, and return it on the form of a link
+(_https://www.string.com_);
+
+```cpp
+FormatSpecifier<'n'>(output[], const param[]) {
+	format(output, sizeof(output), "https://www.%s.com", param);
+}
+```
+
+As simple as that, and thus, the mighty `%n` specifier (short for Newton because
+it's very cool and rocket-science complicated 😉 was born, let's test this champ
+out:
+
+```cpp
+printf("%n", "samp");
+```
+
+**output**:
+
 > https://www.samp.com
->
-> Don't let this example deceive you, this can be very effective and complete in
-> any way, there are better examples at the main release page,
-> [please go check it out](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=313488),
-> and reward the author with some crisp reputation.
 
-**✦ External links**
+Don't let this example deceive you, this can be very effective and complete in
+any way, there are better examples at the main release page,
+[please go check it out](https://github.com/Southclaws/formatex/blob/master/README.md).
 
-> **✧ Similar tutorials**
->
-> - [String formatting](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=265433)
->   by
->   [krogsgaard20](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=126724)
-> - [Understanding Strings](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=284112)
->   by
->   [\[HiC\]TheKiller](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23565)
-> - [How to use strcmp](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=199796)
->   by
->   [Ash.](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=78597)
-> - [Beginner's Guide: Single/Two/Multi-dimensional Arrays](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=318212)
->   by
->   [iPLEAOMAX](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=122705)
-> - [Tips and Tricks](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=216730)
->   by
->   [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)
-> - [Code optimization](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=571550)
->   by
->   [Misiur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=55934)
-> - [Packed strings](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=480529)
->   by Emmet\_
-> - [IRC string formatting](https://web.archive.org/web/20190424140855/https://github.com/myano/jenni/wiki/IRC-String-Formatting)
->   by
->   [myano](https://web.archive.org/web/20190424140855/https://github.com/myano)
-> - [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf)
->   by
->   [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
-> - [Pawn-lang](https://web.archive.org/web/20190424140855/https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
-> - [An in-depth look at binary and binary operators](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=177523)
->   by
->   [Kyosaur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23990)
->
-> **✧ Related includes/plugins**
->
-> - [Westie](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=56481)'s
->   [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=85697)
-> - [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)'s
->   [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764)
-> - [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)'s
->   [formatex](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=313488)
-> - [corne](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=98345)'s
->   [y_stringhash](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=571305)
-> - [\*\*\*\*\*\*](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=29176)'s
->   [sscanf](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=570927)
->
-> **✧ References**
->
-> - [GTA San Andreas](https://web.archive.org/web/20190424140855/http://www.rockstargames.com/sanandreas/)
-> - [Textdraw](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/TextDrawCreate)
-> - [Gametext](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/GameTextForPlayer)
-> - [String limitations](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Limits)
-> - [ASCII](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/ASCII)
-> - [ASCII table](https://web.archive.org/web/20190424140855/http://www.asciitable.com/)
-> - [Pawn Tutorial](https://web.archive.org/web/20190424140855/https://wiki.alliedmods.net/Pawn_Tutorial)
-> - [Control Structures](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Control_Structures)
-> - [Null character](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Null_character)
-> - [Slice's strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764)
-> - [ShowPlayerDialog](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/ShowPlayerDialog)
-> - [RGBA color space](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/RGBA_color_space)
-> - [Color picker](https://web.archive.org/web/20190424140855/https://www.webpagefx.com/web-design/color-picker/)
-> - [TextDrawColor](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/TextDrawColor)
-> - [Gametext styles](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/GameTextStyle)
-> - [Color list](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Colors_List)
-> - [Escape sequence](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Escape_sequence)
-> - [r/programmerhumor](https://web.archive.org/web/20190424140855/https://www.reddit.com/r/ProgrammerHumor/)
-> - [Newline](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Newline)
-> - [Undefined behavior](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Undefined_behavior)
-> - [Bobby table](https://web.archive.org/web/20190424140855/http://bobby-tables.com/about)
-> - [strfind](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Strfind)
-> - [format](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Format)
-> - [Bitwise logical shift](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Logical_shift)
+&nbsp;
 
-```
+### **✦ External links**
 
-```
+**✧ Similar tutorials**
+
+- [String formatting](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=265433)
+  by
+  [krogsgaard20](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=126724)
+- [Understanding Strings](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=284112)
+  by
+  [\[HiC\]TheKiller](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23565)
+- [How to use strcmp](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=199796)
+  by
+  [Ash.](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=78597)
+- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=318212)
+  by
+  [iPLEAOMAX](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=122705)
+- [Tips and Tricks](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=216730)
+  by
+  [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)
+- [Code optimization](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=571550)
+  by
+  [Misiur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=55934)
+- [Packed strings](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=480529)
+  by Emmet\_
+- [IRC string formatting](https://web.archive.org/web/20190424140855/https://github.com/myano/jenni/wiki/IRC-String-Formatting)
+  by
+  [myano](https://web.archive.org/web/20190424140855/https://github.com/myano)
+- [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf)
+  by
+  [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
+- [Pawn-lang](https://web.archive.org/web/20190424140855/https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
+- [An in-depth look at binary and binary operators](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=177523)
+  by
+  [Kyosaur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23990)
+
+**✧ Related includes/plugins**
+
+- [Westie](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=56481)'s
+  [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=85697)
+- [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)'s
+  [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764)
+- [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)'s
+  [formatex](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=313488)
+- [corne](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=98345)'s
+  [y_stringhash](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=571305)
+- [\*\*\*\*\*\*](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=29176)'s
+  [sscanf](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=570927)
+
+**✧ References**
+
+- [GTA San Andreas](https://web.archive.org/web/20190424140855/http://www.rockstargames.com/sanandreas/)
+- [Textdraw](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/TextDrawCreate)
+- [Gametext](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/GameTextForPlayer)
+- [String limitations](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Limits)
+- [ASCII](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/ASCII)
+- [ASCII table](https://web.archive.org/web/20190424140855/http://www.asciitable.com/)
+- [Pawn Tutorial](https://web.archive.org/web/20190424140855/https://wiki.alliedmods.net/Pawn_Tutorial)
+- [Control Structures](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Control_Structures)
+- [Null character](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Null_character)
+- [Slice's strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764)
+- [ShowPlayerDialog](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/ShowPlayerDialog)
+- [RGBA color space](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/RGBA_color_space)
+- [Color picker](https://web.archive.org/web/20190424140855/https://www.webpagefx.com/web-design/color-picker/)
+- [TextDrawColor](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/TextDrawColor)
+- [Gametext styles](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/GameTextStyle)
+- [Color list](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Colors_List)
+- [Escape sequence](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Escape_sequence)
+- [r/programmerhumor](https://web.archive.org/web/20190424140855/https://www.reddit.com/r/ProgrammerHumor/)
+- [Newline](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Newline)
+- [Undefined behavior](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Undefined_behavior)
+- [Bobby table](https://web.archive.org/web/20190424140855/http://bobby-tables.com/about)
+- [strfind](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Strfind)
+- [format](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Format)
+- [Bitwise logical shift](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Logical_shift)
