@@ -27,10 +27,10 @@ stock FindEmptySlot()
 }
 ```
 
-This basic example assumes an array slot is empty if it's value is 0. The loop
+This basic example assumes an array slot is empty if its value is 0. The loop
 loops through all values in the array (could also be done with a constant) as
 long as the values are not 0. When it reaches one which is 0 the while condition
-will fail and the lopo end without using a break as is common practice but
+will fail and the loop ends without using a break as is common practice but
 discouraged in situations like this. This function also returns -1 if a free
 slot is not found, which would need to be checked at the other end. More
 commonly you would use the found id straight away:
@@ -398,7 +398,7 @@ straight list.
 
 **Modification**
 
-#### Addiction
+#### Addition
 
 Adding a value to a binary tree is relatively easy, you just follow the tree
 through, using the value you want to add as a reference untill you reach an
