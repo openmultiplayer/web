@@ -2,12 +2,12 @@
 id: GetVehicleParamsCarDoors
 title: GetVehicleParamsCarDoors
 description: Allows you to retrieve the current state of a vehicle's doors.
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 :::warning
 
-This function was added in SA-MP 0.3.7  and will not work in earlier versions!
+This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 :::
 
@@ -15,40 +15,32 @@ This function was added in SA-MP 0.3.7  and will not work in earlier versions!
 
 Allows you to retrieve the current state of a vehicle's doors
 
-
-| Name | Description |
-|------|-------------|
-|vehicleid | The ID of the vehicle|
-|&driver | The integer to save the state of the driver's door to.|
-|&passenger | The integer to save the state of the passenger's door to.|
-|&backleft | The integer to save the state of the rear left door to (if available).|
-|&backright | The integer to save the state of the rear right door to (if available).|
-
+| Name       | Description                                                             |
+| ---------- | ----------------------------------------------------------------------- |
+| vehicleid  | The ID of the vehicle                                                   |
+| &driver    | The integer to save the state of the driver's door to.                  |
+| &passenger | The integer to save the state of the passenger's door to.               |
+| &backleft  | The integer to save the state of the rear left door to (if available).  |
+| &backright | The integer to save the state of the rear right door to (if available). |
 
 ## Returns
 
- The vehicle's doors state is stored in the specified variables.
-
+The vehicle's doors state is stored in the specified variables.
 
 ## Notes
 
 :::tip
 
-
 The values returned in each variable are as follows:
 
- -1: Door state not set
- 1: Open
- 0: Closed
-
-
+-1: Door state not set
+1: Open
+0: Closed
 
 :::
 
-
 ## Related Functions
 
-
--  SetVehicleParamsCarDoors: Open and close the doors of a vehicle.
--  SetVehicleParamsCarWindows: Open and close the windows of a vehicle.
--  GetVehicleParamsCarWindows: Retrive the current state of a vehicle's windows
+- [SetVehicleParamsCarDoors](../functions/SetVehicleParamsCarDoors.md): Open and close the doors of a vehicle.
+- [SetVehicleParamsCarWindows](../functions/SetVehicleParamsCarWindows.md): Open and close the windows of a vehicle.
+- [GetVehicleParamsCarWindows](../functions/GetVehicleParamsCarWindows.md): Retrive the current state of a vehicle's windows
