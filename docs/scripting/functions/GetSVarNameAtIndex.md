@@ -21,7 +21,7 @@ This function does not return any specific values.
 
 ## Related Functions
 
-- [GetSVarType](../functions/GetSVarType.md): Get the type of the server variable.
-- [GetSVarInt](../functions/GetSVarInt.md): Get a player server as an integer.
-- [GetSVarFloat](../functions/GetSVarFloat.md): Get the previously set float from a server variable.
-- [GetSVarString](../functions/GetSVarString.md): Get the previously set string from a server variable.
+- [GetSVarType](GetSVarType.md): Get the type of the server variable.
+- [GetSVarInt](GetSVarInt.md): Get a player server as an integer.
+- [GetSVarFloat](GetSVarFloat.md): Get the previously set float from a server variable.
+- [GetSVarString](GetSVarString.md): Get the previously set string from a server variable.

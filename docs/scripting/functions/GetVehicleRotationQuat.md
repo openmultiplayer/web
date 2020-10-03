@@ -42,5 +42,5 @@ This function may return incorrect values for unoccupied vehicles. The reason is
 
 ## Related Functions
 
-- [GetVehicleZAngle](../functions/GetVehicleZAngle.md): Check the current angle of a vehicle.
-- [GetVehicleRotation](../functions/GetVehicleRotation.md): Get the rotation of a vehicle on the XYZ axis.
+- [GetVehicleZAngle](GetVehicleZAngle.md): Check the current angle of a vehicle.
+- [GetVehicleRotation](GetVehicleRotation.md): Get the rotation of a vehicle on the XYZ axis.

@@ -60,11 +60,11 @@ Checkpoints are asynchronous, meaning only one can be shown at a time. To 'strea
 
 ## Related Functions
 
-- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint.md): Disable the player's current checkpoint.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint.md): Check if a player is in a checkpoint.
-- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint.md): Create a race checkpoint for a player.
-- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint.md): Disable the player's current race checkpoint.
-- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint.md): Check if a player is in a race checkpoint.
+- [DisablePlayerCheckpoint](DisablePlayerCheckpoint.md): Disable the player's current checkpoint.
+- [IsPlayerInCheckpoint](IsPlayerInCheckpoint.md): Check if a player is in a checkpoint.
+- [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint.md): Create a race checkpoint for a player.
+- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint.md): Disable the player's current race checkpoint.
+- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint.md): Check if a player is in a race checkpoint.
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint.md): Called when a player enters a checkpoint.
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint.md): Called when a player leaves a checkpoint.
 - [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint.md): Called when a player enters a race checkpoint.

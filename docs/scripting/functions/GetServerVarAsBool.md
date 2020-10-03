@@ -47,5 +47,5 @@ Type 'varlist' in the server console to display a list of available server varia
 
 ## Related Functions
 
-- [GetServerVarAsString](../functions/GetServerVarAsString.md): Retreive a server variable as a string.
-- [GetServerVarAsInt](../functions/GetServerVarAsInt.md): Retreive a server variable as an integer.
+- [GetServerVarAsString](GetServerVarAsString.md): Retreive a server variable as a string.
+- [GetServerVarAsInt](GetServerVarAsInt.md): Retreive a server variable as an integer.

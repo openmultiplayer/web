@@ -46,6 +46,6 @@ Sometimes the result can be -1 which is an invalid weapon ID. Circumstances of t
 
 ## Related Functions
 
-- [GetPlayerWeaponData](../functions/GetPlayerWeaponData.md): Find out information about weapons a player has.
-- [GivePlayerWeapon](../functions/GivePlayerWeapon.md): Give a player a weapon.
-- [ResetPlayerWeapons](../functions/ResetPlayerWeapons.md): Remove all weapons from a player.
+- [GetPlayerWeaponData](GetPlayerWeaponData.md): Find out information about weapons a player has.
+- [GivePlayerWeapon](GivePlayerWeapon.md): Give a player a weapon.
+- [ResetPlayerWeapons](ResetPlayerWeapons.md): Remove all weapons from a player.

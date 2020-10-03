@@ -57,6 +57,6 @@ This function can be used to retrieve a vehicle's speed (km/h, m/s or mph). For 
 
 ## Related Functions
 
-- [GetPlayerVelocity](../functions/GetPlayerVelocity.md): Get a player's velocity.
-- [SetVehicleVelocity](../functions/SetVehicleVelocity.md): Set a vehicle's velocity.
-- [SetPlayerVelocity](../functions/SetPlayerVelocity.md): Set a player's velocity.
+- [GetPlayerVelocity](GetPlayerVelocity.md): Get a player's velocity.
+- [SetVehicleVelocity](SetVehicleVelocity.md): Set a vehicle's velocity.
+- [SetPlayerVelocity](SetPlayerVelocity.md): Set a player's velocity.

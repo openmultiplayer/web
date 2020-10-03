@@ -33,7 +33,7 @@ public OnPlayerSpawn(playerid)
 
 ## Related Functions
 
-- [SendRconCommand](../functions/SendRconCommand.md): Sends an RCON command via the script.
+- [SendRconCommand](SendRconCommand.md): Sends an RCON command via the script.
 
 ## Related Callbacks
 

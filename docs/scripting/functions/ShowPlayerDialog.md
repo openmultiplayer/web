@@ -85,5 +85,5 @@ Using -1 as dialogid closes all dialogs currently shown on the client's screen.
 
 ## Related Functions
 
-- [TextDrawShowForPlayer](../functions/TextDrawShowForPlayer.md): Show a textdraw for a certain player.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer.md): Show a textdraw for a certain player.
 - [OnDialogResponse](../callbacks/OnDialogResponse.md): Called when a player responds to a dialog.

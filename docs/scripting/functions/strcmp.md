@@ -60,13 +60,13 @@ If you compare strings from a text file, you should take in to account the 'carr
 
 ## Related Functions
 
-- [strfind](../functions/strfind): Search for a string in another string.
-- [strtok](../functions/strtok): Get the next 'token' (word/parameter) in a string.
-- [strdel](../functions/strdel): Delete part of a string.
+- [strfind](strfind): Search for a string in another string.
+- [strtok](strtok): Get the next 'token' (word/parameter) in a string.
+- [strdel](strdel): Delete part of a string.
 - [strins](../function/strins): Insert text into a string.
 - [strlen](../function/strlen): Get the length of a string.
-- [strmid](../functions/strmid): Extract part of a string into another string.
-- [strpack](../functions/strpack): Pack a string into a destination string.
-- [strval](../functions/strval): Convert a string into an integer.
-- [strcat](../functions/strcat): Concatenate two strings into a destination reference.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.
 - http://www.compuphase.com/pawn/String_Manipulation.pdf

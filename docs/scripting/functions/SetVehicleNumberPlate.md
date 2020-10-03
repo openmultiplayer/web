@@ -54,6 +54,6 @@ You can use color embedding on the number plate text.
 
 ## Related Functions
 
-- [SetVehicleToRespawn](../functions/SetVehicleToRespawn.md): Respawn a vehicle.
-- [ChangeVehicleColor](../functions/ChangeVehicleColor.md): Set the color of a vehicle.
-- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob.md): Change the paintjob on a vehicle.
+- [SetVehicleToRespawn](SetVehicleToRespawn.md): Respawn a vehicle.
+- [ChangeVehicleColor](ChangeVehicleColor.md): Set the color of a vehicle.
+- [ChangeVehiclePaintjob](ChangeVehiclePaintjob.md): Change the paintjob on a vehicle.

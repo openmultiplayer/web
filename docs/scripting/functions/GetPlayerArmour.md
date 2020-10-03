@@ -43,6 +43,6 @@ Armour is obtained rounded to integers: set 50.15, but get 50.0
 
 ## Related Functions
 
-- [SetPlayerArmour](../functions/SetPlayerArmour): Set the armour of a player.
-- [GetPlayerHealth](../functions/GetPlayerHealth): Find out how much health a player has.
-- [GetVehicleHealth](../functions/GetVehicleHealth): Check the health of a vehicle.
+- [SetPlayerArmour](SetPlayerArmour): Set the armour of a player.
+- [GetPlayerHealth](GetPlayerHealth): Find out how much health a player has.
+- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.

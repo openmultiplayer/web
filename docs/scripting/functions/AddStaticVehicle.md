@@ -39,6 +39,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [AddStaticVehicleEx](../functions/AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
-- [CreateVehicle](../functions/CreateVehicle.md): Create a vehicle.
-- [DestroyVehicle](../functions/DestroyVehicle.md): Destroy a vehicle.
+- [AddStaticVehicleEx](AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
+- [CreateVehicle](CreateVehicle.md): Create a vehicle.
+- [DestroyVehicle](DestroyVehicle.md): Destroy a vehicle.

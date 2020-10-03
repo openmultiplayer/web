@@ -46,7 +46,7 @@ SendClientMessage(playerid, -1, szString);
 
 ## Related Functions
 
-- [IsPlayerStreamedIn](../functions/IsPlayerStreamedIn.md): Checks if a player is streamed in for another player.
+- [IsPlayerStreamedIn](IsPlayerStreamedIn.md): Checks if a player is streamed in for another player.
 - [OnVehicleStreamIn](../callbacks/OnVehicleStreamIn.md): Called when a vehicle streams in for a player.
 - [OnVehicleStreamOut](../callbacks/OnVehicleStreamOut.md): Called when a vehicle streams out for a player.
 - [OnPlayerStreamIn](../callbacks/OnPlayerStreamIn.md): Called when a player streams in for another player.

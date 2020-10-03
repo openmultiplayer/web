@@ -33,4 +33,4 @@ RepairAllVehicles()
 
 ## Related Functions
 
-- [GetPlayerPoolSize](../functions/GetPlayerPoolSize.md): Gets the highest playerid connected to the server.
+- [GetPlayerPoolSize](GetPlayerPoolSize.md): Gets the highest playerid connected to the server.

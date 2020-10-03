@@ -40,6 +40,6 @@ Time will automatically advance 6 hours when the player dies.
 
 ## Related Functions
 
-- [GetPlayerTime](../functions/GetPlayerTime.md): Get the time of a player.
-- [SetPlayerTime](../functions/SetPlayerTime.md): Set a player's time.
-- [SetWorldTime](../functions/SetWorldTime.md): Set the global server time.
+- [GetPlayerTime](GetPlayerTime.md): Get the time of a player.
+- [SetPlayerTime](SetPlayerTime.md): Set a player's time.
+- [SetWorldTime](SetWorldTime.md): Set the global server time.

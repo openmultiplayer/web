@@ -28,11 +28,11 @@ if (IsPlayerInCheckpoint(playerid))
 
 ## Related Functions
 
-- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint.md): Create a checkpoint for a player.
-- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint.md): Disable the player's current checkpoint.
-- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint.md): Create a race checkpoint for a player.
-- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint.md): Disable the player's current race checkpoint.
-- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint.md): Check if a player is in a race checkpoint.
+- [SetPlayerCheckpoint](SetPlayerCheckpoint.md): Create a checkpoint for a player.
+- [DisablePlayerCheckpoint](DisablePlayerCheckpoint.md): Disable the player's current checkpoint.
+- [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint.md): Create a race checkpoint for a player.
+- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint.md): Disable the player's current race checkpoint.
+- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint.md): Check if a player is in a race checkpoint.
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint.md): Called when a player enters a checkpoint.
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint.md): Called when a player leaves a checkpoint.
 - [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint.md): Called when a player enters a race checkpoint.

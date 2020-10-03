@@ -48,9 +48,9 @@ Crashes the both server and player if an invalid menu ID given.
 
 ## Related Functions
 
-- [CreateMenu](../functions/CreateMenu.md): Create a menu.
-- [AddMenuItem](../functions/AddMenuItem.md): Adds an item to a specified menu.
-- [SetMenuColumnHeader](../functions/SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
-- [DestroyMenu](../functions/DestroyMenu.md): Destroy a menu.
+- [CreateMenu](CreateMenu.md): Create a menu.
+- [AddMenuItem](AddMenuItem.md): Adds an item to a specified menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
+- [DestroyMenu](DestroyMenu.md): Destroy a menu.
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Called when a player exits a menu.

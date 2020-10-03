@@ -63,5 +63,5 @@ When removing the same object for a player, they will crash. Commonly, players c
 
 ## Related Functions
 
-- [DestroyObject](../functions/DestroyObject.md): Destroy an object.
-- [DestroyPlayerObject](../functions/DestroyPlayerObject.md): Destroy a player object.
+- [DestroyObject](DestroyObject.md): Destroy an object.
+- [DestroyPlayerObject](DestroyPlayerObject.md): Destroy a player object.

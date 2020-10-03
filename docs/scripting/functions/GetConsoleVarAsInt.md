@@ -34,5 +34,5 @@ Type 'varlist' in the server console to display a list of available console vari
 
 ## Related Functions
 
-- [GetConsoleVarAsString](../functions/GetConsoleVarAsString): Retreive a server variable as a string.
-- [GetConsoleVarAsBool](../functions/GetConsoleVarAsBool): Retreive a server variable as a boolean.
+- [GetConsoleVarAsString](GetConsoleVarAsString): Retreive a server variable as a string.
+- [GetConsoleVarAsBool](GetConsoleVarAsBool): Retreive a server variable as a boolean.

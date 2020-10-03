@@ -45,4 +45,4 @@ The player isn't removed if he is in a RC Vehicle.
 
 ## Related Functions
 
-- [PutPlayerInVehicle](../functions/PutPlayerInVehicle.md): Put a player in a vehicle.
+- [PutPlayerInVehicle](PutPlayerInVehicle.md): Put a player in a vehicle.

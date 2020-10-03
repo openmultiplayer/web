@@ -49,6 +49,6 @@ This function doesn't return a pickup ID that you can use in, for example, OnPla
 
 ## Related Functions
 
-- [CreatePickup](../functions/CreatePickup.md): Create a pickup.
-- [DestroyPickup](../functions/DestroyPickup.md): Destroy a pickup.
+- [CreatePickup](CreatePickup.md): Create a pickup.
+- [DestroyPickup](DestroyPickup.md): Destroy a pickup.
 - [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.

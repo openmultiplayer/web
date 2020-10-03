@@ -52,10 +52,10 @@ There is a limit of 12 items per menu, and a limit of 128 menus in total.
 
 ## Related Functions
 
-- [AddMenuItem](../functions/AddMenuItem.md): Adds an item to a specified menu.
-- [SetMenuColumnHeader](../functions/SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
-- [DestroyMenu](../functions/DestroyMenu.md): Destroy a menu.
-- [ShowMenuForPlayer](../functions/ShowMenuForPlayer.md): Show a menu for a player.
-- [HideMenuForPlayer](../functions/HideMenuForPlayer.md): Hide a menu for a player.
+- [AddMenuItem](AddMenuItem.md): Adds an item to a specified menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
+- [DestroyMenu](DestroyMenu.md): Destroy a menu.
+- [ShowMenuForPlayer](ShowMenuForPlayer.md): Show a menu for a player.
+- [HideMenuForPlayer](HideMenuForPlayer.md): Hide a menu for a player.
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Called when a player exits a menu.

@@ -34,4 +34,4 @@ Returns the old skin if the player was spawned through SpawnPlayer function.
 
 ## Related Functions
 
-- [SetPlayerSkin](../functions/SetPlayerSkin.md): Set a player's skin.
+- [SetPlayerSkin](SetPlayerSkin.md): Set a player's skin.

@@ -41,5 +41,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [AddStaticVehicle](../functions/AddStaticVehicle.md): Add a static vehicle.
-- [CreateVehicle](../functions/CreateVehicle.md): Create a vehicle.
+- [AddStaticVehicle](AddStaticVehicle.md): Add a static vehicle.
+- [CreateVehicle](CreateVehicle.md): Create a vehicle.

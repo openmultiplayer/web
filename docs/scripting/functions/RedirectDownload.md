@@ -58,7 +58,7 @@ public OnPlayerRequestDownload(playerid, type, crc)
 
 ## Related Functions
 
-- [AddCharModel](../functions/AddCharModel): Adds a new custom character model for download.
-- [AddSimpleModel](../functions/AddSimpleModel): Adds a new custom simple object model for download.
-- [AddSimpleModelTimed](../functions/AddSimpleModelTimed): Adds a new custom simple object model for download.
+- [AddCharModel](AddCharModel): Adds a new custom character model for download.
+- [AddSimpleModel](AddSimpleModel): Adds a new custom simple object model for download.
+- [AddSimpleModelTimed](AddSimpleModelTimed): Adds a new custom simple object model for download.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.

@@ -39,5 +39,5 @@ The playerid and vehicleid have to be in the same interior and virtual world for
 
 ## Related Functions
 
-- [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer.md): Spectate a player.
-- [TogglePlayerSpectating](../functions/TogglePlayerSpectating.md): Start or stop spectating.
+- [PlayerSpectatePlayer](PlayerSpectatePlayer.md): Spectate a player.
+- [TogglePlayerSpectating](TogglePlayerSpectating.md): Start or stop spectating.

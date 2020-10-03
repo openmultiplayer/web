@@ -50,4 +50,4 @@ There is a limit as to how many explosions can be seen at once by a player. This
 
 ## Related Functions
 
-- [CreateExplosion](../functions/CreateExplosion.md): Create an explosion which is visible for all players.
+- [CreateExplosion](CreateExplosion.md): Create an explosion which is visible for all players.

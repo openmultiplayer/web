@@ -22,7 +22,7 @@ This function does not return any specific values.
 
 ## Related Functions
 
-- [GetPVarType](../functions/GetPVarType.md): Get the type of the player variable.
-- [GetPVarInt](../functions/GetPVarInt.md): Get the previously set integer from a player variable.
-- [GetPVarFloat](../functions/GetPVarFloat.md): Get the previously set float from a player variable.
-- [GetPVarString](../functions/GetPVarString.md): Get the previously set string from a player variable.
+- [GetPVarType](GetPVarType.md): Get the type of the player variable.
+- [GetPVarInt](GetPVarInt.md): Get the previously set integer from a player variable.
+- [GetPVarFloat](GetPVarFloat.md): Get the previously set float from a player variable.
+- [GetPVarString](GetPVarString.md): Get the previously set string from a player variable.

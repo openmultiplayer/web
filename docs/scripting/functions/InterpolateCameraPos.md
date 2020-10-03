@@ -58,6 +58,6 @@ The player's camera can be reset to behind the player with SetCameraBehindPlayer
 
 ## Related Functions
 
-- [InterpolateCameraLookAt](../functions/InterpolateCameraLookAt.md): Move a player's camera view from one location to another.
-- [SetPlayerCameraPos](../functions/SetPlayerCameraPos.md): Set a player's camera position.
-- [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt.md): Set where a player's camera should face.
+- [InterpolateCameraLookAt](InterpolateCameraLookAt.md): Move a player's camera view from one location to another.
+- [SetPlayerCameraPos](SetPlayerCameraPos.md): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt.md): Set where a player's camera should face.

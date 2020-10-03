@@ -59,4 +59,4 @@ Player names can be up to 24 characters when using this function, but when joini
 
 ## Related Functions
 
-- [GetPlayerName](../functions/GetPlayerName.md): Get a player's name.
+- [GetPlayerName](GetPlayerName.md): Get a player's name.

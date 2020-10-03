@@ -45,6 +45,6 @@ if (!strcmp("/stadium", cmdtext))
 
 ## Related Functions
 
-- [GetPlayerDistanceFromPoint](../functions/GetPlayerDistanceFromPoint.md): Get the distance between a player and a point.
-- [GetVehicleDistanceFromPoint](../functions/GetVehicleDistanceFromPoint.md): Get the distance between a vehicle and a point.
-- [GetPlayerPos](../functions/GetPlayerPos.md): Get a player's position.
+- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint.md): Get the distance between a player and a point.
+- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint.md): Get the distance between a vehicle and a point.
+- [GetPlayerPos](GetPlayerPos.md): Get a player's position.

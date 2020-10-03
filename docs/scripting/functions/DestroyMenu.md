@@ -29,8 +29,8 @@ DestroyMenu(examplemenu);
 
 ## Related Functions
 
-- [CreateMenu](../functions/CreateMenu.md): Create a menu.
-- [SetMenuColumnHeader](../functions/SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
-- [AddMenuItem](../functions/AddMenuItem.md): Add an item to a menu.
+- [CreateMenu](CreateMenu.md): Create a menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
+- [AddMenuItem](AddMenuItem.md): Add an item to a menu.
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Called when a player exits a menu.

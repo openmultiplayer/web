@@ -48,6 +48,6 @@ Does not work for the sniper rifle, as it doesn't lock on to anything and as suc
 
 ## Related Functions
 
-- [GetPlayerCameraFrontVector](../functions/GetPlayerCameraFrontVector.md): Get the player's camera front vector
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector.md): Get the player's camera front vector
 - [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage.md): This callback is called when a player gives damage.
 - [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage.md): This callback is called when a player takes damage.

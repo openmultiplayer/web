@@ -43,4 +43,4 @@ This function was removed in SA-MP 0.3c. check RemovePlayerAttachedObject
 
 ## Related Functions
 
-- [SetPlayerHoldingObject](../functions/SetPlayerHoldingObject.md): Attaches an object to a bone.
+- [SetPlayerHoldingObject](SetPlayerHoldingObject.md): Attaches an object to a bone.

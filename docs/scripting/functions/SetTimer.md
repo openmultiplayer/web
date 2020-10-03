@@ -49,5 +49,5 @@ The use of many timers will result in increased memory/cpu usage.
 
 ## Related Functions
 
-- [SetTimerEx](../functions/SetTimerEx.md): Set a timer with parameters.
-- [KillTimer](../functions/KillTimer.md): Stop a timer.
+- [SetTimerEx](SetTimerEx.md): Set a timer with parameters.
+- [KillTimer](KillTimer.md): Stop a timer.

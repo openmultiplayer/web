@@ -55,7 +55,7 @@ Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT 
 
 ## Related Functions
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Add a component to a vehicle.
-- [GetVehicleComponentType](../functions/GetVehicleComponentType.md): Check the type of component via the ID.
+- [AddVehicleComponent](AddVehicleComponent.md): Add a component to a vehicle.
+- [GetVehicleComponentType](GetVehicleComponentType.md): Check the type of component via the ID.
 - [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.
