@@ -9,14 +9,14 @@ tags: []
 
 This function adds a 'static' pickup to the game. These pickups support weapons, health, armor etc., with the ability to function without scripting them (weapons/health/armor will be given automatically).
 
-| Name                                             | Description                                                                         |
-| ------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| Name                                | Description                                                                         |
+| ----------------------------------- | ----------------------------------------------------------------------------------- |
 | [model](../resources/pickupids.md)  | The model of the pickup.                                                            |
 | [type](../resources/pickuptypes.md) | The pickup type. Determines how the pickup responds when picked up.                 |
-| Float:X                                          | The X coordinate to create the pickup at.                                           |
-| Float:Y                                          | The Y coordinate to create the pickup at.                                           |
-| Float:Z                                          | The Z coordinate to create the pickup at.                                           |
-| virtualworld                                     | The virtual world ID to put tht pickup in. Use -1 to show the pickup in all worlds. |
+| Float:X                             | The X coordinate to create the pickup at.                                           |
+| Float:Y                             | The Y coordinate to create the pickup at.                                           |
+| Float:Z                             | The Z coordinate to create the pickup at.                                           |
+| virtualworld                        | The virtual world ID to put tht pickup in. Use -1 to show the pickup in all worlds. |
 
 ## Returns
 
