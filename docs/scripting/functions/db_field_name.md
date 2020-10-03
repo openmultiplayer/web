@@ -3,7 +3,7 @@ id: db_field_name
 title: db_field_name
 description: Returns the name of the field at the specified index.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -44,7 +44,7 @@ public OnGameModeInit()
     {
         // Select first entry in table "join_log"
         new DBResult:db_result_set = db_query(g_DBConnection, "SELECT * FROM `join_log` LIMIT 1");
-        
+
         // If result set handle is valid
         if (db_result_set)
         {
@@ -101,4 +101,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

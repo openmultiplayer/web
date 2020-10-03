@@ -3,7 +3,7 @@ id: db_num_fields
 title: db_num_fields
 description: Gets the number of fields from the specified result set allocated with `db_query`.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -163,4 +163,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

@@ -3,7 +3,7 @@ id: db_query
 title: db_query
 description: The function is used to execute an SQL query on an opened SQLite database.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -34,7 +34,7 @@ EntityStorage_SpawnAll(DB:connectionHandle)
 {
     // Select all entries in table "entities"
     new DBResult:db_result_set = db_query(db_handle, "SELECT * FROM `entities`");
-    
+
     // If database result set handle is valid
     if (db_result_set)
     {
@@ -105,4 +105,4 @@ Always free results by using [db_free_result](db_free_result)!
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

@@ -3,7 +3,7 @@ id: db_free_result
 title: db_free_result
 description: Frees result memory allocated from db_query.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -33,7 +33,7 @@ EntityStorage_SpawnAll(DB:connectionHandle)
 {
     // Select all entries in table "entities"
     new DBResult:db_result_set = db_query(db_handle, "SELECT * FROM `entities`");
-    
+
     // If database result set handle is valid
     if (db_result_set)
     {
@@ -105,4 +105,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

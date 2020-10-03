@@ -3,7 +3,7 @@ id: db_get_mem_handle
 title: db_get_mem_handle
 description: Gets the memory handle for a SQLite database connection that was opened with `db_open`.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -83,4 +83,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

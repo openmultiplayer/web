@@ -3,7 +3,7 @@ id: db_open
 title: db_open
 description: The function is used to open a connection to a SQLite database file, which is inside the `/scriptfiles` folder.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -81,4 +81,4 @@ Close your SQLite database connection with [db_close](db_close)!
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

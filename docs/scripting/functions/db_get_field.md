@@ -3,7 +3,7 @@ id: db_get_field
 title: db_get_field
 description: Get the content of a field from db_query.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -163,4 +163,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

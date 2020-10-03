@@ -3,7 +3,7 @@ id: db_get_result_mem_handle
 title: db_get_result_mem_handle
 description: Gets the memory handle for a SQLite database result set that was allocated with `db_query`.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -88,4 +88,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

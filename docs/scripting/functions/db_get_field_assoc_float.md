@@ -3,7 +3,7 @@ id: db_get_field_assoc_float
 title: db_get_field_assoc_float
 description: Gets the contents of the field as a floating point number with the specified field name.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -124,4 +124,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

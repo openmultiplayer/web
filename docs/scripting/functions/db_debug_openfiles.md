@@ -3,7 +3,7 @@ id: db_debug_openfiles
 title: db_debug_openfiles
 description: Gets the number of open database connections for debugging purposes.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -19,6 +19,7 @@ The function gets the number of open database connections for debugging purposes
 | Name | Description |
 | ---- | ----------- |
 
+
 ## Related Functions
 
-*Replace me*
+_Replace me_

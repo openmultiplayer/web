@@ -3,7 +3,7 @@ id: db_close
 title: db_close
 description: Closes a SQLite database connection that was opened with `db_open`.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -83,4 +83,4 @@ Get a valid database connection handle by using [db_open](db_open).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

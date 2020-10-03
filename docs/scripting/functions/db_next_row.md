@@ -3,7 +3,7 @@ id: db_next_row
 title: db_next_row
 description: Moves to the next row of the result set allocated with `db_query`.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -120,4 +120,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_

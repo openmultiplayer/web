@@ -3,7 +3,7 @@ id: db_get_field_int
 title: db_get_field_int
 description: Get the content of a field as an integer from db_query.
 keywords:
-    - sqlite
+  - sqlite
 ---
 
 :::warning
@@ -16,10 +16,10 @@ The function starts with a lowercase letter.
 
 Get the content of a field as an integer from db_query
 
-| Name                | Description                      |
-| ------------------- | -------------------------------- |
-| DBResult:dbresult   | The result to get the data from. |
-| field = 0           | The field to get the data from.  |
+| Name              | Description                      |
+| ----------------- | -------------------------------- |
+| DBResult:dbresult | The result to get the data from. |
+| field = 0         | The field to get the data from.  |
 
 ## Returns
 
@@ -164,4 +164,4 @@ Get a valid database connection handle by using [db_query](db_query).
 
 ## Related Functions
 
-*Replace me*
+_Replace me_
