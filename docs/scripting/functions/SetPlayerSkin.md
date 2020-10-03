@@ -9,10 +9,10 @@ tags: ["player"]
 
 Set the skin of a player. A player's skin is their character model.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | The ID of the player to set the skin of. |
-| skinid   | The skin the player should use.          |
+| Name     | Description                                              |
+| -------- | -------------------------------------------------------- |
+| playerid | The ID of the player to set the skin of.                 |
+| skinid   | The [skin](../resources/skins.md) the player should use. |
 
 ## Returns
 
@@ -84,5 +84,5 @@ Breaks sitting on bikes.
 
 ## Related Functions
 
-- GetPlayerSkin: Get a player's current skin.
-- SetSpawnInfo: Set the spawn setting for a player.
+- [GetPlayerSkin](../../scripting/functions/GetPlayerSkin.md): Get a player's current skin.
+- [SetSpawnInfo](../../scripting/functions/SetSpawnInfo.md): Set the spawn setting for a player.

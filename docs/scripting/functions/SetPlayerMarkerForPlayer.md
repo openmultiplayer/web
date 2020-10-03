@@ -37,7 +37,7 @@ SetPlayerMarkerForPlayer( 42, 1, ( GetPlayerColor( 1 ) | 0x000000FF ) );
 
 ## Related Functions
 
-- ShowPlayerMarkers: Decide if the server should show markers on the radar.
-- LimitPlayerMarkerRadius: Limit the player marker radius.
-- SetPlayerColor: Set a player's color.
-- ShowPlayerNameTagForPlayer: Show or hide a nametag for a certain player.
+- [ShowPlayerMarkers](../../scripting/functions/ShowPlayerMarkers.md): Decide if the server should show markers on the radar.
+- [LimitPlayerMarkerRadius](../../scripting/functions/LimitPlayerMarkerRadius.md): Limit the player marker radius.
+- [SetPlayerColor](../../scripting/functions/SetPlayerColor.md): Set a player's color.
+- [ShowPlayerNameTagForPlayer](../../scripting/functions/ShowPlayerNameTagForPlayer.md): Show or hide a nametag for a certain player.

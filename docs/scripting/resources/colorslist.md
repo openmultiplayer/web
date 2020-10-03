@@ -110,7 +110,7 @@ Hello this is green and this is red
 
 #### Another example
 
-![Image:Cembed.png](/images/colorList/Cembed.png")  
+![Image:Cembed.png](/images/colorList/Cembed.png)  
 The code for the above chat line looks like this:
 
 ```c

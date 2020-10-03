@@ -38,8 +38,8 @@ To be used with [GameText](../functions/GameTextForPlayer).
 
 - `]` displays a \* symbol (Only in text styles 3, 4 and 5)
 
-- `~k~` keyboard key mapping (e.g. ~k~~VEHICLE_TURRETLEFT~ and
-  ~k~~PED_FIREWEAPON~). Look here for a list of keys
+- `~k~` keyboard key mapping (e.g. ~k~\~VEHICLE_TURRETLEFT~ and
+  ~k~\~PED_FIREWEAPON~). Look here for a list of keys
 
 :::caution
 
