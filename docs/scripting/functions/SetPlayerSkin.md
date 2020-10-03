@@ -9,10 +9,10 @@ tags: ["player"]
 
 Set the skin of a player. A player's skin is their character model.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | The ID of the player to set the skin of. |
-| skinid   | The [skin](../resources/skins.md) the player should use.          |
+| Name     | Description                                              |
+| -------- | -------------------------------------------------------- |
+| playerid | The ID of the player to set the skin of.                 |
+| skinid   | The [skin](../resources/skins.md) the player should use. |
 
 ## Returns
 
