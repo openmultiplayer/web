@@ -5,6 +5,8 @@ description: Beginner friendly tutorial about everything string manipulation.
 
 ## **String Manipulation**
 
+&nbsp;
+
 ### **✦ Table of content**
 
 ```
@@ -51,984 +53,754 @@ description: Beginner friendly tutorial about everything string manipulation.
   ✧ References
 ```
 
+&nbsp;
+
 ### **✦ Introduction**
 
-> **✧ Tutorial description**
->
-> Howdy, ya all out there, it surely is a nice quiet night, or at least it is at
-> the composition of this tutorial. So, hey, what about tagging along to both
-> enrich and/or engage with the main focus of this article, this is and as the
-> title suggests, going to be focused on “**String manipulation**” in pawn, we
-> will go through the absolute intermediate stuff that everybody should be aware
-> of to some sort of advanced, clever and effective tips.
+&nbsp;
 
-> **✧ What is string formatting?**
->
-> In general, formatting a text is the act of manipulating it to visually
-> improve its readability, be it changing the font’s family, color, weight and
-> so on.
->
-> Strings being an array of characters (alphabets, numbers, symbols), which we
-> wouldn’t specifically call a text on itself but is referred as such when
-> displayed, can be processed with the same approach, but unfortunately, SA-MP’s
-> interpretation of pawn does not allow for much (yet? Maybe never), generally
-> speaking changing the color is as far as we can get, yes, you can still
-> change/customize the font, but that’s client-sided only, and yes,
-> [GTA San Andreas](https://web.archive.org/web/20190424140855/http://www.rockstargames.com/sanandreas/)
-> (the parent game) does provide some extra fonts, but that only works on
-> [textdraws](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/TextDrawCreate)
-> and
-> [gametext](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/GameTextForPlayer),
-> this does cause limitations concerning text presentation, but hey, it’s been
-> over a decade now, and we survived just fine.
+#### **✧ Tutorial description**
 
-> **✧ String declaration**
->
-> As I said before, strings are basically arrays of characters, so they are used
-> the same way arrays are, and so as we would create an array, we would do for
-> strings following this format; **string_name\[string_size\]**.
->
+Howdy, ya all out there, it surely is a nice quiet night, or at least it is at
+the composition of this tutorial. So, hey, what about tagging along to both
+enrich and/or engage with the main focus of this article, this is and as the
+title suggests, going to be focused on “_String manipulation_” in pawn, we will
+go through the absolute intermediate stuff that everybody should be aware of to
+some sort of advanced, clever and effective tips.
+
+&nbsp;
+
+#### **✧ What is string formatting?**
+
+In general, formatting a text is the act of manipulating it to visually improve
+its readability, be it changing the font’s family, color, weight and so on.
+
+Strings being an array of characters (alphabets, numbers, symbols), which we
+wouldn’t specifically call a text on itself but is referred as such when
+displayed, can be processed with the same approach, but unfortunately, SA-MP’s
+interpretation of pawn does not allow for much (yet? Maybe never), generally
+speaking changing the color is as far as we can get, yes, you can still
+change/customize the font, but that’s client-sided only, and yes,
+[GTA San Andreas](https://www.rockstargames.com/sanandreas/) (the parent game)
+does provide some extra fonts, but that only works on
+[textdraws](../scripting/resources/textdraws) and
+[gametext](../scripting/functions/GameTextForPlayer), this does cause
+limitations concerning text presentation, but hey, it’s been over a decade now,
+and we survived just fine.
+
+&nbsp;
+
+#### **✧ String declaration**
+
+As I said before, strings are basically arrays of characters, so they are used
+the same way arrays are, and so as we would create an array, we would do for
+strings following this format; `string_name[string_size]`.
+
 > **string_name**: the name of the character array (e.g. string, str, message,
-> text…etc. as long as it’s a valid variable name (begins with a character or an
-> underscore)).
->
+> text...etc. as long as it’s a valid variable name (begins with a character or
+> an underscore)).
+
 > **string_size**: the maximum characters this string would have.
->
-> Code:
->
-> // declaring a string of 5 characters. new str_1\[5\];
->
-> // declaring a string of 100 characters. new str_2\[100\];
->
-> You can also predefine constant values so you can use them multiple times as
-> string sizes.
->
-> Code:
->
-> // declaring a constant. #define STRING_SIZE 20
->
-> // declaring a string with the size of STRING_SIZE's value. new
-> str_3\[STRING_SIZE\];
->
-> On compilation time, the compiler will replace all occurrences of
-> _STRING_SIZE_ with the value 20, this method is both time-saving and more
-> readable on most cases, keep in mind that the value you assign to the
-> STRING_SIZE constant must be an integer or else it will give a compilation
-> error.
->
-> In addition to predefined constants, you can perform basic operations, the
-> modulo (**%**) however will give compilation errors if used, you can still get
-> away with division calculations (**/**) but keep in mind, dividing by 0 will
-> trigger errors, the bonus here is all floating results will be automatically
-> rounded for you.
->
-> Code:
->
-> // declaring a constant. #define STRING_SIZE 26
->
-> // declaring strins with the use of the STRING_SIZE constant and some
-> calculations.. new str_4\[STRING_SIZE + 4\], str_5\[STRING_SIZE - 6\],
-> str_6\[9 / 3\], str_7\[STRING_SIZE \* 2\];
->
-> Theoretically, you can create somewhat ridiculously huge arrays, but SA-MP
-> puts few restrictions on the length of strings you can work with, depending on
-> what you’re working on, it limits the number of characters you can normally
-> output.
 
-> **✩ Length limits**
->
-> SA-MP limits characters that can be stored in a single string and keeps
-> scripters from going overboard with working with text, luckily, it’s not as
-> bad as it might seem, the list below breaks down some of these limits;
->
-> **Text input**
->
-> The text you input on the chat.
->
-> 128
->
-> **Text output**
->
-> Text that's output on the client's screen.
->
-> 144
->
-> **Name**
->
-> Player nickname / Username.
->
-> 24
->
-> **Textdraw string**
->
-> Pretty self-explanatory.
->
-> 1024
->
-> **Dialog info**
->
-> The text displayed on all dialogs of the type _DIALOG_STYLE_MSGBOX_,
-> _DIALOG_STYLE_INPUT_ and _DIALOG_STYLE_PASSWORD_.
->
-> 4096
->
-> **Dialog caption**
->
-> The caption/title on top of the dialog.
->
-> 64
->
-> **Dialog input**
->
-> The input box on _DIALOG_STYLE_INPUT_ and _DIALOG_STYLE_PASSWORD_.
->
-> 128
->
-> **Dialog columnt**
->
-> The characters on each column of _DIALOG_STYLE_TABLIST_HEADER_ and
-> _DIALOG_STYLE_TABLIST_.
->
-> 128
->
-> **Dialog row**
->
-> The characters on each column of _DIALOG_STYLE_TABLIST_HEADER_,
-> _DIALOG_STYLE_TABLIST_ and _DIALOG_STYLE_LIST_.
->
-> 256
->
-> **Chat bubble**
->
-> The chat bubble that displays above the player's name tag.
->
-> 144
->
-> **Menu title**
->
-> The GTA San Andreas native menu (mostly used for shops) header.
->
-> 31
->
-> **Menu item**
->
-> The GTA San Andreas native menu (mostly used for shops) item/row.
->
-> 31
->
-> If somehow these limits have been exceeded, few inconveniences might occur, it
-> can even crash/freeze the server in some cases (e.g. long textdraw strings),
-> in some other cases, the text would just truncate like the Menu title (if it
-> reaches 32 characters, it truncates back to 30) and items.
->
-> Besides the strict limits put on strings, there are many others concerning
-> different stuff, you can view the complete list
-> [here](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Limits).
+&nbsp;
 
-> **✩ Assigning values**
->
-> Assigning values to strings can be done via many methods, some assign them
-> upon their creation, others after, there are people who use loops, other use
-> functions, and yes, there are who do this process manually, slot by slot,
-> there is no exact right or wrong way for doing so, some methods are often more
-> effective in few cases than others some are not, at the end of the day all
-> that matters is performance, optimization, and readability.
->
-> In most cases you’d want to give a default value to the string upon its
-> creation, you can go through this simply as follows;
->
-> Code:
->
-> new message_1\[6\] = "Hello", message_2\[\] = "This is another message";
->
-> Make sure the string’s size is greater than the number of characters you
-> assigned them for, having a smaller or equal string size to that, will trigger
-> compilation errors, leaving the size slot between the two brackets empty (like
-> on the message*2 example), will automatically give the array the size of the
-> text you’ve assigned it to plus 1, in this case, \_23 + 1 = 24*, why? It
-> reserves a slot for the null character (aka the null-terminator), more on that
-> later, the word _“Hello”_ has 5 characters, so in order to store it on a
-> string, it should have 6 cells, 5 cells for the word’s character count, and
-> one for the null character.
->
-> Let’s take a look at doing the same process slot by slot manually, first, we
-> define a new array, you can determine its size or leave that empty for the
-> compiler to fill, both would work just fine, we will fill the array with
-> characters to create the string _“Hello”_.
->
-> Code:
->
-> // Including the string' size on its declaration, or it won't work otherwise.
->
-> new message_3\[6\];
->
-> message_3\[0\] = 'H'; message_3\[1\] = 'e'; message_3\[2\] = 'l';
-> message_3\[3\] = 'l'; message_3\[4\] = 'o'; message_3\[5\] = '\\0';
->
-> There, we assigned for each slot on the _message_3_ array a character, this
-> won’t work if you were to declare a sting with no definitive size, note that
-> to represent a single character, it ought to be written between two single
-> quotations (**‘**), also, notice how we started with slot 0, and it’s only
-> natural, considering how I emphasised on how a string is an array of
-> characters, meaning, that the first slot is always 0, and the last one is its
-> size minus 1 (the null character does not count), which in this case is 4,
-> counting from 0 to 4, that makes it 5 characters, with the sixth being the
-> null terminator, more on that comes later.
->
-> You can also assign strings numbers which will be viewed as **ASCII** (a
-> system representing character numerically, it covers 128 characters ranging
-> from 0 to 127, more on that
-> [here](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/ASCII))
-> code for a character, the same message _“Hello”_ can be assigned using _ASCII_
-> code like this;
->
-> Code:
->
-> new message_4\[6\];
->
-> message_4\[0\] = 72; // ASCII representation of capitalized h, “H”.
-> message_4\[1\] = 101; // ASCII representation of “e”. message_4\[2\] = 108: //
-> ASCII representation of “l”. message_4\[3\] = 108; // ASCII representation of
-> “l”. message_4\[4\] = 111; // ASCII representation of “o”. message_4\[5\] = 0;
-> // ASCII representation of the null terminator.
->
-> And yes, you can perform numeric operations with these codes the same you do
-> with normal numbers, after all, the machine views characters as just mere
-> numbers.
->
-> Code:
->
-> new message_5\[1\]; message_5\[0\] = 65 + 1;
->
-> if you were to output _message_5\[0\]_, you would get **B**, weird right?
-> Well, no, not really, you can perform other basic operations (subtraction,
-> multiplication, division even the modulo), floating numbers will get
-> auto-rounded for you, let’s see how this works.
->
-> You have _65 + 1_, that returns 66, checking the _ASCII_ table, you will find
-> that 66 is the numeric representation of the character _“B”_ (capitalized).
-> So, the snippet above is basically the same as doing, _message_5\[0\] =
-> 'B'_;  
-> For reference, use
-> [this ASCII table](https://web.archive.org/web/20190424140855/http://www.asciitable.com/).
->
-> You can also perform the same operation between multiple characters or a mix
-> of both, them and numbers, here are few examples;
->
-> Code:
->
-> new message_6\[3\];
->
-> message_6\[0\] = 'B' - 1; // Which is 66 - 1, returns 65, the numeric
-> representation of “A”. message_6\[1\] = 'z' - '&'; // Which is 122 - 38,
-> returns 84, the numeric representation of “T”. message_6\[2\] = '0' + '1'; //
-> Which is 48 + 49, returns the numeric representation of “a”, note that '0' and
-> '1' are not the numbers 0 and 1, but rather characters.
->
-> It might get confusing sometimes if you never knew about the _ASCII_ system,
-> all it takes is some practice, because understanding how it works, is very
-> handy.  
-> _ASCII_ code is not exclusive to decimal numbers only, you can also use
-> hexadecimal or binary numbers the same way.
->
-> Code:
->
-> new numString\[4\];
->
-> numString\[0\] = 0x50; // The decimal number 80 in hexadecimal, capitalized p,
-> “P”. numString\[1\] = 0b1000001; // The decimal number 65 in binary,
-> capitalized a, “A”. numString\[2\] = 0b1010111; // The decimal number 87 in
-> binary, capitalized w, “W”. numString\[3\] = 0x4E; // The decimal number 78 in
-> hexadecimal, capitalized n, “N”.
+```cpp
+// declaring a string of 5 characters
+new str_1[5];
 
-> Now let’s see something else, assigning values through loops, it’s literally
-> the same as filling an array through loops, you can use all sorts of looping
-> methods as well, goes as follow;
->
-> Code:
->
-> // Let's fill this string with capitalized alphabets. new message_7\[26\];
->
-> // The for loop. for (new i = 0; i < 26; i++) message_7\[i\] = 'A' + i;
->
-> // The while loop. while (i++ < 'Z') message_7\[i - 'A'\] = i;
->
-> // The do-while loop. new j = 'A';
->
-> do { message_7\[j - 'A'\] = j; } while(j++ < 'Z');
->
-> // You can even use goto to simulate a loop, but it's not recommended.
->
-> All three of them will output the same exact string,
-> **ABCDEFGHIJKLMNOPQRSTUVWXYZ**.
->
-> If you found the loops above confusing, you might want to take a deeper look
-> into how loops work, more on that can be found
-> [here](https://web.archive.org/web/20190424140855/https://wiki.alliedmods.net/Pawn_Tutorial#Looping)
-> and
-> [here](https://web.archive.org/web/20190424140855/https://wiki.sa-mp.com/wiki/Control_Structures#Loops).  
-> Notice how I used characters in some logical conditions, like _(j++ < 'Z')_
-> that easily translates to _(j++ < 90)_, again, characters are treated like
-> numbers, don’t feel strange, you’re welcome to check the _ASCII_ table
-> whenever you’d like.
->
-> Say, you want to fill a string with a number of one specific character, (e.g.
-> “AAAAAA”, “TTTTTT”, “vvvvvv”, “666” (no, it’s not a coincidence)), the typical
-> idea that might cross most of the scripters, is hard-coding it, but what about
-> long strings, well, what about using a loop, that’s fine too, but what if I
-> told you there is an even more efficient way, just like you’d fill an array
-> with the same value, you’d do the same for strings.
->
-> Code:
->
-> new message_8\[100\] = {'J', ...};
->
-> The code above declares a new string called _message_8_ with 100 cells
-> (ranging from 0 to 99) and gives each slot the value of _‘J’,_ which of course
-> can be used both as a character **J**, or number **74** according to the
-> _ASCII_ system.
->
-> One other thing you can do with this is filling the string with characters
-> whom values based on intervals, see the example of the capitalized alphabets
-> from A to Z above? Let’s create the same string using this method.
->
-> Code:
->
-> new message_9\[26\] = {'A', 'B', ...};
->
-> How easy is that?! this is both more optimized and easy to read, and provides
-> the same results as the 3 examples done using loop methods above, so how does
-> it exactly work? Well, we gave the string initial values, _‘A’_ and _‘B’_,
-> which they respectively are 65 and 66, the compiler calculates the interval
-> between the two values, which in this case is 1, and completes filling the
-> empty cells with values based on that interval until it fills up the whole
-> array, you can put as many initial values as you want, but it will only regard
-> the interval between the last two values, and work based on it, keep in mind
-> that the initial values are treated as ASCII code, so trying to output numeric
-> intervals using this method on a string will result in something inconvenient,
-> say you declared some random string like this;
->
-> Code:
->
-> new rand_str\[5\] = {'1', '5', ...},
->
-> Ideally, this should have output **151520** (more specifically “1 5 15 20”),
-> but instead, it output; **159=A**, which is actually the correct output, why?
-> Because remember, this is _ASCII_ code, _‘1’_ is _49_ and _‘5’_ is _53_, the
-> interval between the two is _4 (53 - 49)_, the string accepts 5 characters, we
-> already occupied two cells when we included initial catalog, so that makes it
-> 3 left empty cells that have to be filled respecting the interval of 4, so
-> this is how it goes **\[ 49 | 53 | 57 | 61 | 65 \]**, let’s replace each
-> number value with its _ASCII_ code match. **\[ ‘1’ | ‘5’ | ‘9’ | ‘=’ |
-> ‘A’\]**, makes more sense huh?!
+// declaring a string of 100 characters
+new str_2[100];
+```
 
-> **✩ The null terminator**
->
-> I referred to this on early sections of this tutorial, I hope it wasn’t that
-> confusing at first, but even if it was, let’s peal the confusion off already,
-> don’t you worry, it’s nothing hard or even that advances, just a basic fact
-> that you should be aware of, I’ll keep it as short as possible, but if you
-> want a deeper view on this, you can visit
-> [this page](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Null_character).
->
-> So, the null terminator (aka the null character), is a character present on
-> all strings, its role is to indicate that a string has ended, you can think of
-> it as a period mark (.) anything that comes after this character is not
-> accounted for and completely ignored. You can’t type it using your keyboard,
-> but you can refer to its value while coding, it’s present on the _ASCII_ table
-> though, referred to as _NUL_, represented by the number 0.
->
-> In _pawn_, you can type it as its numeric value, or as a character _‘\\0’_.
-> The backslash there acts as an escaping character, it’s there to tell the
-> machine that that character is the null character with the value of 0 and
-> **NOT** the character ‘0’ that has the value of 48.
->
-> There is a symbol used in _pawn_, **EOS**, short for **E**nd **O**f
-> **S**tring, it’s a predefined macro for the null terminator, you can set the
-> null terminator in a lot of different ways;
->
-> Code:
->
-> message_9\[0\] = 0; message_9\[0\] = '\\0'; message_9\[0\] = 0b; // The
-> decimal number 0 in binary. message_9\[0\] = 0x00; // The decimal number 0 in
-> hexadecimal. message_9\[0\] = \_:0.0; // The floating number 0.0, we have to
-> prefix it with the detag '\_' to avoid compilation errors. message_9\[0\] =
-> false; message_9\[0\] = EOS;
->
-> As I said earlier on the tutorial, you can ignore assigning the null
-> character, but it’s always there at empty cells, when you declare a new
-> string, all of its cells are automatically occupied by the null terminator, so
-> for instance, if I go ahead and declare this string _text\[3\]_, all of its
-> cells are assigned the value of 0 by default, here’s a simple visual
-> representation of the string’s content;
->
-> **Cells**
->
-> **0**
->
-> **1**
->
-> **2**
->
-> **ASCII code**
->
-> 0
->
-> 0
->
-> 0
->
-> **Characters**
->
-> '\\0'
->
-> '\\0'
->
-> '\\0'
->
-> Here is another example of a pre-filled string.
->
-> Code:
->
-> new text_1\[8\] = "Hello";
->
-> Here's the string's content per cell;
->
-> **Cells**
->
-> **0**
->
-> **1**
->
-> **2**
->
-> **3**
->
-> **4**
->
-> **5**
->
-> **6**
->
-> **7**
->
-> **ASCII code**
->
-> 72
->
-> 101
->
-> 108
->
-> 108
->
-> 111
->
-> 0
->
-> 0
->
-> 0
->
-> **Characters**
->
-> 'H'
->
-> 'e'
->
-> 'l'
->
-> 'l'
->
-> 'o'
->
-> '\\0'
->
-> '\\0'
->
-> '\\0'
->
-> If you, for instance, wanted to delete the content of this string, you can
-> simply do so using one of the three examples below;
->
-> Code:
->
-> text_1\[0\] = 0; text_1\[0\] = EOS; text_1\[0\] = '\\0';
->
-> Passing the string through an X-Ray scan will print out the following;
->
-> **Cells**
->
-> **0**
->
-> **1**
->
-> **2**
->
-> **3**
->
-> **4**
->
-> **5**
->
-> **6**
->
-> **7**
->
-> **ASCII code**
->
-> 0
->
-> 101
->
-> 108
->
-> 108
->
-> 111
->
-> 0
->
-> 0
->
-> 0
->
-> **Characters**
->
-> '\\0'
->
-> 'e'
->
-> 'l'
->
-> 'l'
->
-> 'o'
->
-> '\\0'
->
-> '\\0'
->
-> '\\0'
->
-> If you try to output this string, everything beyond the slot number 0 will be
-> ignored, and thus labeled as an empty string, even the _strlen_ function will
-> return 0 as it depends on the placement of the null character to retrieve the
-> string’s length.
+You can also predefine constant values so you can use them multiple times as
+string sizes.
 
-> **✧ String manipulation functions**
->
-> When it comes to working with multiple chunks of text, _pawn_ has got you
-> covered, it provides some very basic functions that do the job efficiently, no
-> need to create your own when you’ve got native support that assures speed and
-> optimization.
->
-> These are some natively supported functions (taken from string.inc);
->
-> Code:
->
-> native strlen(const string\[\]); native strpack(dest\[\], const source\[\],
-> maxlength=sizeof dest); native strunpack(dest\[\], const source\[\],
-> maxlength=sizeof dest); native strcat(dest\[\], const source\[\],
-> maxlength=sizeof dest); native strmid(dest\[\], const source\[\], start, end,
-> maxlength=sizeof dest); native bool: strins(string\[\], const substr\[\], pos,
-> maxlength=sizeof string); native bool: strdel(string\[\], start, end); native
-> strcmp(const string1\[\], const string2\[\], bool:ignorecase=false,
-> length=cellmax); native strfind(const string\[\], const sub\[\],
-> bool:ignorecase=false, pos=0); native strval(const string\[\]); native
-> valstr(dest\[\], value, bool:pack=false); native bool: ispacked(const
-> string\[\]); native uudecode(dest\[\], const source\[\], maxlength=sizeof
-> dest); native uuencode(dest\[\], const source\[\], numbytes, maxlength=sizeof
-> dest); native memcpy(dest\[\], const source\[\], index=0, numbytes,
-> maxlength=sizeof dest);
->
-> We will take a closer look at few of them, the ones are more often used.
->
-> \-The **strlen** function (this and **sizeof** are completely different
-> things), that takes a string as a parameter, returns the length of that string
-> (the number of characters it has), but pay attention as this is a bit tricky
-> on how it works, I’ve said it earlier in the tutorial, this function depends
-> on the position of the null character to determine the length of the string,
-> so any other valid non-null character that comes after will not be counted, as
-> soon as the first null character is reached, the function returns the number
-> of cells from the beginning to that null character.
->
-> \-The **strcat** concatenates strings with each other, it takes 3 parameters.
->
-> Code:
->
-> new str_dest\[12\] = "Hello", str_source\[7\] = " World"; strcat(str_dest,
-> str_source);
->
-> If we were to output _str_dest_, it will show **Hello World**, the two strings
-> were added to each other, and the result was stored in _str_dest_, _“Hello” +
-> “ World” = “Hello World”_, notice how we included that space in the second
-> string, yes, spaces are character themselves, according to the ASCII table,
-> their value is 32, hadn't we add the space, the resulting string would have
-> been **HelloWorld**.
->
-> \-the **strval** function will convert a string to a number, for instance, the
-> following string, “2017” will be converted to the number 2017, this works on
-> signed and unsigned numbers, if the string has no numeric characters, the
-> function will return 0, the same happens if the string has a numeric character
-> but begins with non-numeric ones, if a string begins with numeric characters
-> but includes non-numeric characters as well, the numeric characters will still
-> get retrieved and converted, here are some use cases;
->
-> Code:
->
-> strval("2018"); // Returns “2018”. strval("-56"); // Returns “-56”.
-> strval("17.39"); // Returns “17”, the floating number 17.39 was auto floored
-> for us. strval("no number here"); // Returns “0”. strval("6 starts"); //
-> Returns “6”. strval("here we go, 2018"); // Returns “0”. strval("2017 ended,
-> welcome 2018"); // Returns “2017”.
->
-> There are many community-made libraries you can download that have to do with
-> string manipulation, I can’t think of a better include than
-> [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764).
+```cpp
+// declaring a constant
+#define STRING_SIZE 20
 
-> **✧ The format function**
->
-> This is probably the most used string-related function in the community, very
-> simple and user-friendly, all it does, is format chunks of text and pieces
-> them together, it can be implemented in various situations, like linking
-> variables and strings together, embedding colors, adding line-breaks... etc.
->
-> Code:
->
-> format(output\[\], len, const format\[\], {Float, \_}:...)
->
-> The format function takes as parameters the output array, its size (number of
-> its cells), the formatting string (this can be pre-stored on another array, or
-> directly assigned from inside the function), and finally some optional
-> parameters, those can be variables from different types.  
-> Let’s use this function to assign a value to an empty string.
->
-> Code:
->
-> new formatMsg\[6\]; format(formatMsg, 6, "Hello");
->
-> The output of **formatMsg** is **Hello**, keep in mind that this is a bad way
-> of assigning values to strings, mostly because of its speed, there are better
-> methods for doing this, we already discussed some of them on early stages of
-> this tutorial.
->
-> Remember to always put the correct array size, otherwise, it will still work,
-> but it delivers some unwanted behavior, the format function will over-flow
-> your array size, and trust me on that, you don’t want that to happen, if you
-> don’t want to bother putting the correct string size every time you want to
-> work with this function, you can simply use the **sizeof** function (it’s not
-> a function per se, but rather a compiler directive), we’ve seen earlier a
-> function called **strlen** that returns the number of characters a string has
-> (excluding and stopping at the null-character), but this one, returns the
-> array’s size, in other words, the number of cells this array has, be them
-> filled with valid character or not, in this case, 6.
->
-> Code:
->
-> new formatMsg\[6\]; format(formatMsg, sizeof(formatMsg), "Hello");
->
-> Text must always be included in double quotation marks, however, there is an
-> uncommon way of inputting text, that’s rarely ever used, it uses the Number
-> sign (**#**) symbol, and works as follows.
->
-> Code:
->
-> new formatMsg\[6\]; format(formatMsg, sizeof(formatMsg), #Hello);
->
-> It supports spaces, escaped characters, and you can even use the mix of both
-> double quotations and the number sign;
->
-> Code:
->
-> new formatMsg\[6\]; format(formatMsg, sizeof(formatMsg), "Hello "#World);
->
-> The code above will input **Hello World**, this method of inputting strings is
-> more known to be used with predefined constants.
->
-> Let’s take a look at this example of using two different predefined constants,
-> one being an integer _2017_, the other being a string _“2018”_.
->
-> Code:
->
-> #define THIS_YEAR 2018 // Thisconstant has an integer as its value. #define
-> NEW_YEAR "2019" // This constant has a string as its value.
->
-> new formatMsg\[23\]; format(formatMsg, sizeof(formatMsg), "This is
-> "#THIS_YEAR", not"NEW_YEAR);
->
-> This will output **This is 2018, not 2019**, the reason why I emphasised on
-> the two constants being from different types is the use of the number sign
-> (**#**), if the value is **NOT** a string, then you must prefix it with the
-> number sign (#THIS_YEAR) so it will be treated like **“2018”**, or else you’ll
-> get some compilation errors, as for a string value, you can choose to include
-> or omit the number sign, because it will work either way (NEW_YEAR is the same
-> as #NEW_YEAR). You can only use this to retrieve values from predefined
-> constants, it will not work with regular variables, or arrays/strings, as
-> treating those can be done using placeholders, more on this later.
->
-> You can also line up as much double quotations as you want one next to each
-> other, although it doesn’t make sense, as it’s more natural to just write a
-> sentence into a single pair of double quotations, here’s an example of the
-> same sentence written in both concepts;
->
-> Code:
->
-> new formatMsg\[29\];
->
-> // One single pair of double quotations. format(formatMsg, sizeof(formatMsg),
-> "This is reality...or is it?!");
->
-> // Multiple pairs of double quotations. format(formatMsg, sizeof(formatMsg),
-> "This is reality""...""or is it?!");
->
-> Both will output the same sentence, **This is reality... or is it?!**.
+// declaring a string with the size of STRING_SIZE's value
+new str_3[STRING_SIZE];
+```
 
-> **✧ Optimization tips**
->
-> Now, that we’ve seen some basic stuff about string declaration, manipulation
-> …etc. some of us would just jump into practicing with no regards to some
-> general guidelines followed by the community if only more people cared about
-> readability, optimization, and performance the world would have been a better
-> place. a code that compiles fine, doesn’t mean it works fine, most bugs come
-> from those little things we overlooked or created in such a way that they
-> wouldn’t interact friendly with other systems. a well-written code will
-> survive the ordeal of time, how? You can always come back to it, and debug,
-> fix, review it with ease, optimization will reflect result on the performance
-> too, always try to get the best of your machine, and optimized code is the way
-> to go.
->
-> The first thing that must be brought up, and that personally triggers me, is
-> seeing how large strings are being created when not nearly half of the cells
-> declared are even used, only declare strings the size you’ll use, extra cells
-> will only task more memory, let’s take a look at a supposedly unoptimized way
-> of declaring a string.
->
-> Code:
->
-> new badString\[100\]; badString ="Hello :)";
->
-> We declared a string with 100 cells, 1 cell takes up 4 bytes, let’s do some
-> basic math, _100 \* 4 = 400_ bytes, that’s roughly _0.0004_ Megabyte, nothing
-> for today’s standards I know, but supposedly, on a huge script, obviously you
-> will have to use more than one string, 60, 70, heck 100 more strings?
-> (possibly more), those tiny numbers will stack up on each other resulting in a
-> much bigger number, and cause you serious trouble later on, and believe me
-> when I tell you, the string we declared doesn’t come as near to looking stupid
-> when compared to the likes of those with a size five times bigger or more.
->
-> What I come across more, something that’s stereotypically vague, is the usage
-> of the mysterious string size 256, just why people? Why?
->
-> Keep in mind the limits SA-MP puts when dealing with strings, where does the
-> _256-long_ string come into play? What are you going to do with a string this
-> long (except for formatting a dialog/textdraw string)? The maximum string
-> input is 128 characters long, that’s half the size, 512 bytes just went into
-> waste, say what? You intended to use it for output, not input? That’s still
-> way too large, output strings are not to pass 144 characters, see where I’m
-> going? Let’s try and see how we’d correct our fault, we have this sentence,
-> “Good string”, it contains 11 characters (the space is counted as a character
-> too) + 1 for the null terminator (got to always have this dude in mind), that
-> makes it 12 characters in total.
->
-> Code:
->
-> new goodString\[12\]; goodString="Good string";
->
-> See how we preserved memory? A mere **48** bytes, and no extra weigh that
-> would cause trouble later, feels much better.
->
-> But hey, what if I told you, you can get an even more optimized code, that’s
-> right, have you ever heard of **packed strings**? A string is typically formed
-> from multiple cells, and as we said earlier, each cell represents 4 bytes, so
-> strings are made up of multiple sets of _4 bytes_. A single character takes up
-> 1 byte, and each cell allows only a single character to be stored, meaning,
-> that on each cell 3 bytes go to waste,
->
-> Code:
->
-> new upkString\[5\]; upkString = "pawn";
->
-> The string above takes up 5 cells (that is approximately 20 bytes), can be
-> narrowed down to only 8 bytes, a mere 2 cells.
->
-> Code:
->
-> new pkString_1\[5 char\]; pkString_1 = !"pawn"; // or pkString_1 = !#pawn;
->
-> That’s simply how it works, you declare a string with the size that it would
-> normally take (counting the null-terminator of course), then suffix it with
-> the with keyword “**char**”, each character will be stored in bytes rather
-> than cells, meaning that every cell will have 4 characters stored, remember
-> that when assigning values to packed strings, prefix them with an exclamation
-> mark (**!**), this, however, doesn’t apply for a single character.
->
-> This is an approximate visual representation of **upkString**'s content;
->
-> **Cell**
->
-> 0
->
-> 1
->
-> 2
->
-> 3
->
-> 4
->
-> **Bytes**
->
-> 0
->
-> . 1
->
-> . 2
->
-> . 3
->
-> 0
->
-> . 1
->
-> . 2
->
-> . 3
->
-> 0
->
-> . 1
->
-> . 2
->
-> . 3
->
-> 0
->
-> . 1
->
-> . 2
->
-> . 3
->
-> 0
->
-> . 1
->
-> . 2
->
-> . 3
->
-> **Characters**
->
-> \\0
->
-> .\\0
->
-> .\\0
->
-> .**p**
->
-> \\0
->
-> .\\0
->
-> .\\0
->
-> .**a**
->
-> \\0
->
-> .\\0
->
-> .\\0
->
-> .**w**
->
-> \\0
->
-> .\\0
->
-> .\\0
->
-> .**n**
->
-> \\0
->
-> .\\0
->
-> .\\0
->
-> .**\\0**
->
-> And this is what **pkString_1** would be like in the second example;
->
-> **Cell**
->
-> 0
->
-> 1
->
-> **Bytes**
->
-> 0
->
-> . 1
->
-> . 2
->
-> . 3
->
-> 0
->
-> . 1
->
-> . 2
->
-> . 3
->
-> **Characters**
->
-> **p**
->
-> . **a**
->
-> . **w**
->
-> . **n**
->
-> **\\0**
->
-> .\\0
->
-> .\\0
->
-> .\\0
->
-> You can also access a packed string’s indexers, as follows;
->
-> Code:
->
-> new pkString_2\[5 char\];
->
-> pkString_2{0} = 'p'; pkString_2{1} = 97; // ASCII code for the character “a”.
-> pkString_2{2} = 0b1110111; // The decimal number 199 in binary, translates to
-> the character “w”. pkString_2{3} = 0x6E; // The decimal number 110 in
-> hexadecimal, translates to the character “n”. pkString_2{4} = EOS; // EOS (End
-> Of String), has the value of 0, which is the ASCII code for \\0 (NUL), the
-> null character.
->
-> The result will be the same as _pkString_1_ in this case, as you can see,
-> _ASCII_ code is still being taken into considerations, take notes that when
-> accessing indexers on packed strings, we use **curly brackets** instead of
-> **brackets**. That means we’re indexing the bytes themselves, and not the
-> cells.
->
-> In spite of their effectiveness in preserving memory, SA-MP’s implementation
-> of pawn doesn’t 100% support packed strings, but you can still use them in
-> infrequently used strings/arrays.
+On compilation time, the compiler will replace all occurrences of `STRING_SIZE`
+with the value `20`, this method is both time-saving and more readable on most
+cases, keep in mind that the value you assign to the `STRING_SIZE` constant must
+be an integer or else it will give a compilation error.
 
-**✦ String output**
+In addition to predefined constants, you can perform basic operations, the
+modulo operator (`%`) however will give compilation errors if used, you can
+still get away with division calculations (`/`) but keep in mind, dividing by
+`0` will trigger errors, the bonus here is all floating results will be
+automatically rounded for you.
+
+```cpp
+// declaring a constant
+#define STRING_SIZE 26
+
+// declaring strins with the use of the STRING_SIZE constant and some calculations
+new
+  str_4[STRING_SIZE + 4],
+  str_5[STRING_SIZE - 6],
+  str_6[STRING_SIZE * 2],
+  str_7[9 / 3];
+```
+
+Theoretically, you can create somewhat ridiculously huge arrays, but SA-MP puts
+few restrictions on the length of strings you can work with, depending on what
+you’re working on, it limits the number of characters you can normally output.
+
+&nbsp;
+
+#### **✩ Length limits**
+
+SA-MP limits characters that can be stored in a single string and keeps
+scripters from going overboard with working with text, luckily, it’s not as bad
+as it might seem, the list below breaks down some of these limits;
+
+|                     |                                                                                                                        |      |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---- |
+| **Text input**      | The text you input on the chat.                                                                                        | 128  |
+| **Text output**     | Text that output on the client's screen.                                                                               | 144  |
+| **Name**            | Player nickname / Username.                                                                                            | 24   |
+| **Textdraw string** | Pretty self-explanatory.                                                                                               | 1024 |
+| **Dialog info**     | The text displayed on all dialogs of the type `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`. | 4096 |
+| **Dialog caption**  | The caption/title on top of the dialog.                                                                                | 64   |
+| **Dialog input**    | The input box on `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`.                                                     | 128  |
+| **Dialog columnt**  | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER` and `DIALOG_STYLE_TABLIST`.                             | 128  |
+| **Dialog row**      | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER`, `DIALOG_STYLE_TABLIST` and `DIALOG_STYLE_LIST`.        | 256  |
+| **Chat bubble**     | The chat bubble that displays above the player's name tag.                                                             | 144  |
+| **Menu title**      | The GTA San Andreas native menu (mostly used for shops) header.                                                        | 31   |
+| **Menu item**       | The GTA San Andreas native menu (mostly used for shops) item/row.                                                      | 31   |
+
+&nbsp;
+
+If somehow these limits have been exceeded, few inconveniences might occur, it
+can even crash/freeze the server in some cases (e.g. long textdraw strings), in
+some other cases, the text would just truncate like the Menu title (if it
+reaches 32 characters, it truncates back to 30) and items.
+
+Besides the strict limits put on strings, there are many others concerning
+different stuff, you can view the complete list
+[here](../scripting/resources/limits).
+
+&nbsp;
+
+#### **✩ Assigning values**
+
+Assigning values to strings can be done via many methods, some assign them upon
+their creation, others after, there are people who use loops, other use
+functions, and yes, there are who do this process manually, slot by slot, there
+is no exact right or wrong way for doing so, some methods are often more
+effective in few cases than others some are not, at the end of the day all that
+matters is performance, optimization, and readability.
+
+In most cases you’d want to give a default value to the string upon its
+creation, you can go through this simply as follows;
+
+```cpp
+new
+  message_1[6] = "Hello",
+  message_2[] = "This is another message";
+```
+
+Make sure the string’s size is greater than the number of characters you
+
+assigned them for, having a smaller or equal string size to that, will trigger
+compilation errors, leaving the size slot between the two brackets empty (like
+on the `message_2` example), will automatically give the array the size of the
+text you’ve assigned it to plus `1`, in this case, `23 + 1 = 24`, why? It
+reserves a slot for the null character (_aka the null-terminator_), more on that
+later, the word “_Hello_” has 5 characters, so in order to store it on a string,
+it should have 6 cells, 5 cells for the word’s character count, and one for the
+**null character**.
+
+Let’s take a look at doing the same process slot by slot manually, first, we
+define a new array, you can determine its size or leave that empty for the
+compiler to fill, both would work just fine, we will fill the array with
+characters to create the string “_Hello_”.
+
+```cpp
+// Including the string' size on its declaration, or it won't work otherwise
+new message_3[6];
+
+message_3[0] = 'H';
+message_3[1] = 'e';
+message_3[2] = 'l';
+message_3[3] = 'l';
+message_3[4] = 'o';
+message_3[5] = '\0';
+```
+
+There, we assigned for each slot on the `message_3` array a character, this
+won’t work if you were to declare a sting with no definitive size, note that to
+represent a single character, it ought to be written between two single
+quotations (`‘`), also, notice how we started with slot 0, and it’s only
+natural, considering how I emphasised on how a string is an array of characters,
+meaning, that the first slot is always 0, and the last one is its size minus 1
+(_the null character does not count_), which in this case is 4, counting from 0
+to 4, that makes it 5 characters, with the sixth being the null terminator, more
+on that comes later.
+
+You can also assign strings numbers which will be viewed as **ASCII** (_a system
+representing character numerically, it covers 128 characters ranging from 0 to
+127, more on that [here](https://en.wikipedia.org/wiki/ASCII)_) code for a
+character, the same message “_Hello_” can be assigned using _ASCII_ code like
+this;
+
+```cpp
+new message_4[6];
+
+message_4[0] = 72; // ASCII representation of capitalized h, “H”
+message_4[1] = 101; // ASCII representation of “e”
+message_4[2] = 108; // ASCII representation of “l”
+message_4[3] = 108; // ASCII representation of “l”
+message_4[4] = 111; // ASCII representation of “o”
+message_4[5] = 0; // ASCII representation of the null terminator
+```
+
+And yes, you can perform numeric operations with these codes the same you do
+with normal numbers, after all, the machine views characters as just mere
+numbers.
+
+```cpp
+new message_5[1];
+message_5[0] = 65 + 1;
+```
+
+If you were to output `message_5[0]`, you would get **B**, weird right? Well,
+no, not really, you can perform other basic operations (_subtraction,
+multiplication, division, and even the modulo_), floating numbers will get
+auto-rounded for you, let’s see how this works.
+
+You have `65 + 1`, that returns `66`, checking the _ASCII_ table, you will find
+that `66` is the numeric representation of the character “_B_” (_capitalized_).
+So, the snippet above is basically the same as doing: `message_5[0] = 'B'`;
+
+For reference, use [this ASCII table](http://www.asciitable.com/).
+
+You can also perform the same operation between multiple characters or a mix of
+both, them and numbers, here are few examples;
+
+```cpp
+new message_6[3];
+
+message_6[0] = 'B' - 1; // Which is 66 - 1, returns 65, the numeric representation of “A”
+message_6[1] = 'z' - '&'; // Which is 122 - 38, returns 84, the numeric representation of “T”
+message_6[2] = '0' + '1'; // Which is 48 + 49, returns the numeric representation of “a”, note that '0' and '1' are not the numbers 0 and 1, but rather characters
+```
+
+It might get confusing sometimes if you never knew about the _ASCII_ system, all
+it takes is some practice, because understanding how it works, is very handy.  
+_ASCII_ code is not exclusive to decimal numbers only, you can also use
+hexadecimal or binary numbers the same way.
+
+```cpp
+new numString[4];
+
+numString[0] = 0x50; // The decimal number 80 in hexadecimal, capitalized p, “P”
+numString[1] = 0b1000001; // The decimal number 65 in binary, capitalized a, “A”
+numString[2] = 0b1010111; // The decimal number 87 in binary, capitalized w, “W”
+numString[3] = 0x4E; // The decimal number 78 in hexadecimal, capitalized n, “N”
+```
+
+Now let’s see something else, assigning values through loops, it’s literally the
+same as filling an array through loops, you can use all sorts of looping methods
+as well, goes as follow;
+
+```cpp
+// Let's fill this string with capitalized alphabets
+new message_7[26];
+
+// The for loop
+for (new i = 0; i < 26; i++)
+  message_7[i] = 'A' + i;
+
+// The while loop
+while (i++ < 'Z')
+  message_7[i - 'A'] = i;
+
+// The do-while loop
+new j = 'A';
+
+do {
+  message_7[j - 'A'] = j;
+}
+while (j++ < 'Z');
+
+ // You can even use goto to simulate a loop, but it's not recommended.
+```
+
+All three of them will output the same exact string,
+_ABCDEFGHIJKLMNOPQRSTUVWXYZ_.
+
+If you found the loops above confusing, you might want to take a deeper look
+into how loops work, more on that can be found
+[here](../scripting/language/ControlStructures#loops) and
+[here](https://wiki.alliedmods.net/Pawn_Tutorial#Looping). Notice how I used
+characters in some logical conditions, like `j++ < 'Z'` that easily translates
+to `j++ < 90`, again, characters are treated like numbers, don’t feel strange,
+you’re welcome to check the _ASCII_ table whenever you’d like.
+
+Say, you want to fill a string with a number of one specific character, (e.g.
+“_AAAAAA_”, “_TTTTTT_”, “_vvvvvv_”, “_666_” (_no, it’s not a coincidence_)), the
+typical idea that might cross most of the scripters, is hard-coding it, but what
+about long strings, well, what about using a loop, that’s fine too, but what if
+I told you there is an even more efficient way, just like you’d fill an array
+with the same value, you’d do the same for strings.
+
+```cpp
+new message_8[100] = {'J', ...};
+```
+
+The code above declares a new string called `message_8` with 100 cells (_ranging
+from 0 to 99_) and gives each slot the value of '_J_', which of course can be
+used both as a character **J**, or number **74** according to the _ASCII_
+system.
+
+One other thing you can do with this is filling the string with characters whom
+values based on intervals, see the example of the capitalized alphabets from _A_
+to _Z_ above? Let’s create the same string using this method.
+
+```cpp
+new message_9[26] = {'A', 'B', ...};
+```
+
+How easy is that?! this is both more optimized and easy to read, and provides
+the same results as the 3 examples done using loop methods above, so how does it
+exactly work? Well, we gave the string initial values, '_A_' and '_B_', which
+they respectively are _65_ and _66_, the compiler calculates the interval
+between the two values, which in this case is _1_, and completes filling the
+empty cells with values based on that interval until it fills up the whole
+array, you can put as many initial values as you want, but it will only regard
+the interval between the last two values, and work based on it, keep in mind
+that the initial values are treated as _ASCII_ code, so trying to output numeric
+intervals using this method on a string will result in something inconvenient,
+say you declared some random string like this;
+
+```cpp
+new rand_str[5] = {'1', '5', ...};
+```
+
+Ideally, this should have output **151520** (_more specifically “1 5 15 20”_),
+but instead, it output; **159=A**, which is actually the correct output, why?
+Because remember, this is _ASCII_ code, '_1_' is _49_ and '_5_' is _53_, the
+interval between the two is _4 (53 - 49)_, the string accepts 5 characters, we
+already occupied two cells when we included initial catalog, so that makes it 3
+left empty cells that have to be filled respecting the interval of 4, so this is
+how it goes **[ 49 | 53 | 57 | 61 | 65 ]**, let’s replace each number value with
+its _ASCII_ code match. **[ '1' | '5' | '9' | '=' | 'A']**, makes more sense
+huh?!
+
+&nbsp;
+
+#### **✩ The null terminator**
+
+I referred to this on early sections of this tutorial, I hope it wasn’t that
+confusing at first, but even if it was, let’s peal the confusion off already,
+don’t you worry, it’s nothing hard or even that advances, just a basic fact that
+you should be aware of, I’ll keep it as short as possible, but if you want a
+deeper view on this, you can visit
+[this article](https://en.wikipedia.org/wiki/Null_character).
+
+So, the null terminator (_aka the null character_), is a character present on
+all strings, its role is to indicate that a string has ended, you can think of
+it as a period mark (.) anything that comes after this character is not
+accounted for and completely ignored. You can’t type it using your keyboard, but
+you can refer to its value while coding, it’s present on the _ASCII_ table
+though, referred to as _NUL_, represented by the number 0.
+
+In _pawn_, you can type it as its numeric value, or as a character '_\0_'. The
+backslash there acts as an escaping character, it’s there to tell the machine
+that that character is the null character with the value of 0 and **NOT** the
+character ‘0’ that has the value of 48.
+
+There is a symbol used in _pawn_, **EOS**, short for **E**nd **O**f **S**tring,
+it’s a predefined macro for the null terminator, you can set the null terminator
+in a lot of different ways;
+
+```cpp
+message_9[0] = 0;
+message_9[0] = '\0';
+message_9[0] = 0b; // The decimal number 0 in binary
+message_9[0] = 0x00; // The decimal number 0 in hexadecimal
+message_9[0] = _:0.0; // The floating number 0.0, we have to prefix it with the detag '_' to avoid compilation errors
+message_9[0] = false;
+message_9[0] = EOS;
+```
+
+As I said earlier on the tutorial, you can ignore assigning the null character,
+but it’s always there at empty cells, when you declare a new string, all of its
+cells are automatically occupied by the null terminator, so for instance, if I
+go ahead and declare this string `text[3]`, all of its cells are assigned the
+value of `0` by default, here’s a simple visual representation of the string’s
+content;
+
+|            |      |      |      |
+| ---------- | ---- | ---- | ---- |
+| Cells      | 0    | 1    | 2    |
+| ASCII code | 0    | 0    | 0    |
+| Characters | '\0' | '\0' | '\0' |
+
+&nbsp;
+
+Here is another example of a pre-filled string.
+
+```cpp
+new text_1[8] = "Hello";
+```
+
+&nbsp;
+
+Here's the string's content per cell;
+
+|            |     |     |     |     |     |      |      |      |
+| ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
+| Cells      | 0   | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ASCII code | 72  | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
+| Characters | 'H' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
+
+&nbsp;
+
+If you, for instance, wanted to delete the content of this string, you can
+simply do so using one of the three examples below;
+
+```cpp
+text_1[0] = 0;
+text_1[0] = EOS;
+text_1[0] = '\0';
+```
+
+&nbsp;
+
+Passing the string through an X-Ray scan will print out the following;
+
+|            |      |     |     |     |     |      |      |      |
+| ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
+| Cells      | 0    | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ASCII code | 0    | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
+| Characters | '\0' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
+
+&nbsp;
+
+If you try to output this string, everything beyond the slot number 0 will be
+ignored, and thus labeled as an empty string, even the `strlen` function will
+return 0 as it depends on the placement of the null character to retrieve the
+string’s length.
+
+&nbsp;
+
+### **✧ String manipulation functions**
+
+When it comes to working with multiple chunks of text, _pawn_ has got you
+covered, it provides some very basic functions that do the job efficiently, no
+need to create your own when you’ve got native support that assures speed and
+optimization.
+
+These are some natively supported functions (_taken from string.inc_);
+
+```csharp
+native strlen(const string[]);
+native strpack(dest[], const source[], maxlength=sizeof dest);
+native strunpack(dest[], const source[], maxlength=sizeof dest);
+native strcat(dest[], const source[], maxlength=sizeof dest);
+native strmid(dest[], const source[], start, end, maxlength=sizeof dest);
+native bool: strins(string[], const substr[], pos, maxlength=sizeof string);
+native bool: strdel(string[], start, end);
+native strcmp(const string1[], const string2[], bool:ignorecase=false, length=cellmax);
+native strfind(const string[], const sub[], bool:ignorecase=false, pos=0);
+native strval(const string[]);
+native valstr(dest[], value, bool:pack=false);
+native bool: ispacked(const string[]);
+native uudecode(dest[], const source[], maxlength=sizeof dest);
+native uuencode(dest[], const source[], numbytes, maxlength=sizeof dest);
+native memcpy(dest[], const source[], index=0, numbytes, maxlength=sizeof dest);
+```
+
+We will take a closer look at few of them, the ones are more often used.
+
+&nbsp;
+
+-The `strlen` function (this and `sizeof` are completely different things), that
+takes a string as a parameter, returns the length of that string (the number of
+characters it has), but pay attention as this is a bit tricky on how it works,
+I’ve said it earlier in the tutorial, this function depends on the position of
+the null character to determine the length of the string, so any other valid
+non-null character that comes after will not be counted, as soon as the first
+null character is reached, the function returns the number of cells from the
+beginning to that null character.
+
+&nbsp;
+
+-The `strcat` concatenates strings with each other, it takes 3 parameters.
+
+```cpp
+new str_dest[12] = "Hello", str_source[7] = " World";
+strcat(str_dest,str_source);
+```
+
+If we were to output `str_dest`, it will show **Hello World**, the two strings
+were added to each other, and the result was stored in `str_dest`, _“Hello” + “
+World” = “Hello World”_, notice how we included that space in the second string,
+yes, spaces are character themselves, according to the _ASCII_ table, their
+value is `32`, hadn't we add the space, the resulting string would have been
+**HelloWorld**.
+
+&nbsp;
+
+-the `strval` function will convert a string to a number, for instance, the
+following string, `"2017"` will be converted to the number `2017`, this works on
+signed and unsigned numbers, if the string has no numeric characters, the
+function will return `0`, the same happens if the string has a numeric character
+but begins with non-numeric ones, if a string begins with numeric characters but
+includes non-numeric characters as well, the numeric characters will still get
+retrieved and converted, here are some use cases;
+
+```cpp
+strval("2018"); // Returns “2018”.
+strval("-56"); // Returns “-56”.
+strval("17.39"); // Returns “17”, the floating number 17.39 was auto floored for us.
+strval("no number here"); // Returns “0”.
+strval("6 starts"); // Returns “6”.
+strval("here we go, 2018"); // Returns “0”.
+strval("2017 ended, welcome 2018"); // Returns “2017”.
+```
+
+There are many community-made libraries you can download that have to do with
+string manipulation, I can’t think of a better include than
+[strlib](https://github.com/oscar-broman/strlib).
+
+&nbsp;
+
+#### **✧ The format function**
+
+This is probably the most used string-related function in the community, very
+simple and user-friendly, all it does, is format chunks of text and pieces them
+together, it can be implemented in various situations, like linking variables
+and strings together, embedding colors, adding line-breaks... etc.
+
+```cpp
+format(output[], len, const format[], {Float, _}:...)
+```
+
+The format function takes as parameters the output array, its size (_number of
+its cells_), the formatting string (_this can be pre-stored on another array, or
+directly assigned from inside the function_), and finally some optional
+parameters, those can be variables from different types. Let’s use this function
+to assign a value to an empty string.
+
+```cpp
+new formatMsg[6];
+format(formatMsg, 6, "Hello");
+```
+
+The output of `formatMsg` is **Hello**, keep in mind that this is a bad way of
+assigning values to strings, mostly because of its speed, there are better
+methods for doing this, we already discussed some of them on early stages of
+this tutorial.
+
+Remember to always put the correct array size, otherwise, it will still work,
+but it delivers some unwanted behavior, the format function will over-flow your
+array size, and trust me on that, you don’t want that to happen, if you don’t
+want to bother putting the correct string size every time you want to work with
+this function, you can simply use the `sizeof` function (_it’s not a function
+per se, but rather a compiler directive_), we’ve seen earlier a function called
+`strlen` that returns the number of characters a string has (_excluding and
+stopping at the null-character_), but this one, returns the array’s size, in
+other words, the number of cells this array has, be them filled with valid
+character or not, in this case, 6.
+
+```cpp
+new formatMsg[6];
+format(formatMsg, sizeof(formatMsg), "Hello");
+```
+
+Text must always be included in double quotation marks, however, there is an
+uncommon way of inputting text, that’s rarely ever used, it uses the Number sign
+`#` symbol, and works as follows:
+
+```csharp
+new formatMsg[6];
+format(formatMsg, sizeof(formatMsg), #Hello);
+```
+
+It supports spaces, escaped characters, and you can even use the mix of both
+double quotations and the number sign;
+
+```csharp
+new formatMsg[6];
+format(formatMsg, sizeof(formatMsg), "Hello "#World);
+```
+
+The code above will input **Hello World**, this method of inputting strings is
+more known to be used with predefined constants. Let’s take a look at this
+example of using two different predefined constants, one being an integer
+`2017`, the other being a string `"2018"`.
+
+```csharp
+#define THIS_YEAR 2018 // Thisconstant has an integer as its value
+#define NEW_YEAR "2019" // This constant has a string as its value
+
+new formatMsg[23];
+format(formatMsg, sizeof(formatMsg), "This is "#THIS_YEAR", not"NEW_YEAR);
+```
+
+This will output **This is 2018, not 2019**, the reason why I emphasised on the
+two constants being from different types is the use of the number sign `#`, if
+the value is **NOT** a string, then you must prefix it with the number sign
+`#THIS_YEAR` so it will be treated like `"2018"`, or else you’ll get some
+compilation errors, as for a string value, you can choose to include or omit the
+number sign, because it will work either way (`NEW_YEAR` is the same as
+`#NEW_YEAR`). You can only use this to retrieve values from predefined
+constants, it will not work with regular variables, or arrays/strings, as
+treating those can be done using placeholders, more on this later.
+
+You can also line up as much double quotations as you want one next to each
+other, although it doesn’t make sense, as it’s more natural to just write a
+sentence into a single pair of double quotations, here’s an example of the same
+sentence written in both concepts;
+
+```csharp
+new formatMsg[29];
+
+// One single pair of double quotations
+format(formatMsg, sizeof(formatMsg), "This is reality...or is it?!");
+
+// Multiple pairs of double quotations
+format(formatMsg, sizeof(formatMsg), "This is reality""...""or is it?!");
+```
+
+Both will output the same sentence, **This is reality... or is it?!**.
+
+#### **✧ Optimization tips**
+
+Now, that we’ve seen some basic stuff about string declaration, manipulation
+...etc. some of us would just jump into practicing with no regards to some
+general guidelines followed by the community if only more people cared about
+readability, optimization, and performance the world would have been a better
+place. a code that compiles fine, doesn’t mean it works fine, most bugs come
+from those little things we overlooked or created in such a way that they
+wouldn’t interact friendly with other systems. a well-written code will survive
+the ordeal of time, how? You can always come back to it, and debug, fix, review
+it with ease, optimization will reflect result on the performance too, always
+try to get the best of your machine, and optimized code is the way to go.
+
+The first thing that must be brought up, and that personally triggers me, is
+seeing how large strings are being created when not nearly half of the cells
+declared are even used, only declare strings the size you’ll use, extra cells
+will only task more memory, let’s take a look at a supposedly unoptimized way of
+declaring a string.
+
+```cpp
+new badString[100];
+badString ="Hello :)";
+```
+
+We declared a string with 100 cells, 1 cell takes up 4 bytes, let’s do some
+basic math, _100 \* 4 = 400_ bytes, that’s roughly _0.0004_ Megabyte, nothing
+for today’s standards I know, but supposedly, on a huge script, obviously you
+will have to use more than one string, 60, 70, heck 100 more strings? (_possibly
+more_), those tiny numbers will stack up on each other resulting in a much
+bigger number, and cause you serious trouble later on, and believe me when I
+tell you, the string we declared doesn’t come as near to looking stupid when
+compared to the likes of those with a size five times bigger or more.
+
+What I come across more, something that’s stereotypically vague, is the usage of
+the mysterious string size 256, just why people? Why?
+
+Keep in mind the limits SA-MP puts when dealing with strings, where does the
+_256-long_ string come into play? What are you going to do with a string this
+long (_except for formatting a dialog/textdraw string\_\_)? The maximum string
+input is 128 characters long, that’s half the size, 512 bytes just went into
+waste, say what? You intended to use it for output, not input? That’s still way
+too large, output strings are not to pass 144 characters, see where I’m going?
+Let’s try and see how we’d correct our fault, we have this sentence, “Good
+string”, it contains 11 characters (\_the space is counted as a character
+too_) + 1 for the null terminator (_got to always have this dude in mind_), that
+makes it 12 characters in total.
+
+```cpp
+new goodString[12];
+goodString="Good string";
+```
+
+See how we preserved memory? A mere **48** bytes, and no extra weigh that would
+cause trouble later, feels much better.
+
+But hey, what if I told you, you can get an even more optimized code, that’s
+right, have you ever heard of **packed strings**? A string is typically formed
+from multiple cells, and as we said earlier, each cell represents 4 bytes, so
+strings are made up of multiple sets of _4 bytes_. A single character takes up 1
+byte, and each cell allows only a single character to be stored, meaning, that
+on each cell 3 bytes go to waste,
+
+```cpp
+new upkString[5];
+upkString = "pawn";
+```
+
+The string above takes up 5 cells (_that is approximately 20 bytes_), can be
+narrowed down to only 8 bytes, a mere 2 cells.
+
+```cpp
+new pkString_1[5 char];
+
+pkString_1 = !"pawn";
+// or
+pkString_1 = !#pawn;
+```
+
+That’s simply how it works, you declare a string with the size that it would
+normally take (_counting the null-terminator of course_), then suffix it with
+the with keyword `char`, each character will be stored in bytes rather than
+cells, meaning that every cell will have 4 characters stored, remember that when
+assigning values to packed strings, prefix them with an exclamation mark `!`,
+this, however, doesn’t apply for a single character.
+
+This is an approximate visual representation of `upkString`'s content;
+
+|            |                      |                      |                      |                      |                   |
+| ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
+| Cell       | 0                    | 1                    | 2                    | 3                    | 4                 |
+| Bytes      | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3     |
+| Characters | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **w** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
+
+&nbsp;
+
+And this is what `pkString_1` would be like in the second example;
+
+|            |                               |                   |
+| ---------- | ----------------------------- | ----------------- |
+| Cell       | 0                             | 1                 |
+| Bytes      | 0 . 1 . 2 . 3                 | 0 . 1 . 2 . 3     |
+| Characters | **p** . **a** . **w** . **n** | \0 . \0 . \0 . \0 |
+
+&nbsp;
+
+You can also access a packed string’s indexers, as follows;
+
+```cpp
+new pkString_2[5 char];
+
+pkString_2{0} = 'p';
+pkString_2{1} = 97; // ASCII code for the character “a”.
+pkString_2{2} = 0b1110111; // The decimal number 199 in binary, translates to the character “w”.
+pkString_2{3} = 0x6E; // The decimal number 110 in hexadecimal, translates to the character “n”.
+pkString_2{4} = EOS; // EOS (End Of String), has the value of 0, which is the ASCII code for \0 (NUL), the null character.
+```
+
+The result will be the same as `pkString_1` in this case, as you can see,
+_ASCII_ code is still being taken into considerations, take notes that when
+accessing indexers on packed strings, we use **curly brackets** instead of
+**brackets**. That means we’re indexing the bytes themselves, and not the cells.
+
+In spite of their effectiveness in preserving memory, SA-MP’s implementation of
+pawn doesn’t 100% support packed strings, but you can still use them in
+infrequently used strings/arrays.
+
+&nbsp;
+
+### **✦ String output**
 
 > **✧ Console**
 >
