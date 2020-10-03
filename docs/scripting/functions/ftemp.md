@@ -15,10 +15,6 @@ This function starts with lowercase letter.
 
 Creates a file in the "tmp", "temp" or root directory with random name for reading and writing. The file is deleted after fclose() is used on the file.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

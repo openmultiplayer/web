@@ -9,9 +9,9 @@ tags: ["player"]
 
 Set the health of a player.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player to set the health of. |
+| Name         | Description                                                                                                                  |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | The ID of the player to set the health of.                                                                                   |
 | Float:health | The value to set the player's health to. Max health that can be displayed in the HUD is 100, though higher values are valid. |
 
 ## Returns

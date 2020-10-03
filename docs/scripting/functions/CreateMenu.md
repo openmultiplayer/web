@@ -9,14 +9,14 @@ tags: ["menu"]
 
 Creates a menu.
 
-| Name | Description |
-| --- | --- |
-| title[] | The title for the new menu. |
-| columns | How many colums shall the new menu have. |
-| Float:x | The X position of the menu (640x460 canvas - 0 would put the menu at the far left). |
-| Float:y | The Y position of the menu (640x460 canvas - 0 would put the menu at the far top). |
-| Float:col1width | The width for the first column. |
-| Float:col2width | The width for the second column. |
+| Name            | Description                                                                         |
+| --------------- | ----------------------------------------------------------------------------------- |
+| title[]         | The title for the new menu.                                                         |
+| columns         | How many colums shall the new menu have.                                            |
+| Float:x         | The X position of the menu (640x460 canvas - 0 would put the menu at the far left). |
+| Float:y         | The Y position of the menu (640x460 canvas - 0 would put the menu at the far top).  |
+| Float:col1width | The width for the first column.                                                     |
+| Float:col2width | The width for the second column.                                                    |
 
 ## Returns
 

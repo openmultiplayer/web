@@ -15,10 +15,10 @@ This function starts with lowercase letter.
 
 Open a file (to read from or write to).
 
-| Name | Description |
-| --- | --- |
+| Name   | Description                                                                                                                                |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | name[] | The path to the file to open (if just a filename is specified, it will open the file with the name specified in the 'scriptfiles' folder). |
-| mode | The mode to open the file with (default: io_readwrite). |
+| mode   | The mode to open the file with (default: io_readwrite).                                                                                    |
 
 ## Returns
 

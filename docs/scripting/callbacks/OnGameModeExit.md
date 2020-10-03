@@ -9,10 +9,6 @@ tags: []
 
 This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

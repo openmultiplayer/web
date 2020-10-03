@@ -15,13 +15,13 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Attaches a 3D Text Label to a specific vehicle.
 
-| Name | Description |
-| --- | --- |
-| Text3D:id | The 3D Text Label you want to attach. |
-| vehicleid | The vehicle you want to attach the 3D Text Label to. |
-| OffsetX | The Offset-X coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
-| OffsetY | The Offset-Y coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
-| OffsetZ | The Offset-Z coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
+| Name      | Description                                                                  |
+| --------- | ---------------------------------------------------------------------------- |
+| Text3D:id | The 3D Text Label you want to attach.                                        |
+| vehicleid | The vehicle you want to attach the 3D Text Label to.                         |
+| OffsetX   | The Offset-X coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
+| OffsetY   | The Offset-Y coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
+| OffsetZ   | The Offset-Z coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
 
 ## Returns
 

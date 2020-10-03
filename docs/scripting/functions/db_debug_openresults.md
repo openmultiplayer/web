@@ -20,5 +20,3 @@ The function gets the number of open database results.
 | ---- | ----------- |
 
 ## Related Functions
-
-*Replace me*

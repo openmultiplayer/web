@@ -9,10 +9,10 @@ tags: ["player"]
 
 Give money to or take money from a player.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player to give money to or take money from. |
-| money | The amount of money to give the player. Use a minus value to take money. |
+| Name     | Description                                                              |
+| -------- | ------------------------------------------------------------------------ |
+| playerid | The ID of the player to give money to or take money from.                |
+| money    | The amount of money to give the player. Use a minus value to take money. |
 
 ## Returns
 

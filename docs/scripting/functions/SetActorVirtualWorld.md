@@ -15,10 +15,10 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Set the virtual world of an actor. Only players in the same world will see the actor.
 
-| Name | Description |
-| --- | --- |
+| Name    | Description                                                                |
+| ------- | -------------------------------------------------------------------------- |
 | actorid | The ID of the actor (returned by CreateActor) to set the virtual world of. |
-| vworld | The virtual world to put the actor ID. |
+| vworld  | The virtual world to put the actor ID.                                     |
 
 ## Returns
 

@@ -9,10 +9,10 @@ tags: ["player"]
 
 Set the team of a player.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player you want to set the team of. |
-| teamid | The team to put the player in. Use NO_TEAM to remove the player from any team. |
+| Name     | Description                                                                    |
+| -------- | ------------------------------------------------------------------------------ |
+| playerid | The ID of the player you want to set the team of.                              |
+| teamid   | The team to put the player in. Use NO_TEAM to remove the player from any team. |
 
 ## Returns
 

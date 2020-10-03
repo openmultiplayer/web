@@ -464,17 +464,17 @@ new
 
 That code will create a string consisting of only a double quote, normally a double quote signals the end of a written string but the backslash makes the double quote immediately after it a part of the string, and the double quote after that ends the string instead. Other special characters are:
 
-| Code | Name | Purpose |
-| --- | --- | --- |
-| \0 | NULL character | Ends a string. |
-| EOS | NULL character | (same as above) |
-| \n | Line feed | use \n for a new line in Linux (also works in Windows) |
-| \r | Carriage return | Use \r\n for a new line in Windows |
-| \\\\ | Backslash | Used to put an actual backslash in a string |
-| \' | Single quote | Used to use an actual single quote as a character in single quotes (use: '\'') |
-| \" | Double quotes | Used to put an actual double quote in a string |
-| \xNNN; | Hex number | Used to set the character to the character represented by the hex number specified in place on NNN |
-| \NNN; | Number | Used to set the character to the character represented by the number specified in place of NNN (see \0) |
+| Code   | Name            | Purpose                                                                                                 |
+| ------ | --------------- | ------------------------------------------------------------------------------------------------------- |
+| \0     | NULL character  | Ends a string.                                                                                          |
+| EOS    | NULL character  | (same as above)                                                                                         |
+| \n     | Line feed       | use \n for a new line in Linux (also works in Windows)                                                  |
+| \r     | Carriage return | Use \r\n for a new line in Windows                                                                      |
+| \\\\   | Backslash       | Used to put an actual backslash in a string                                                             |
+| \'     | Single quote    | Used to use an actual single quote as a character in single quotes (use: '\'')                          |
+| \"     | Double quotes   | Used to put an actual double quote in a string                                                          |
+| \xNNN; | Hex number      | Used to set the character to the character represented by the hex number specified in place on NNN      |
+| \NNN;  | Number          | Used to set the character to the character represented by the number specified in place of NNN (see \0) |
 
 Used to set the character to the character represented by the number specified in place of NNN (see \\0)
 

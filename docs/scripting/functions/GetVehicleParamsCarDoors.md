@@ -15,12 +15,12 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Allows you to retrieve the current state of a vehicle's doors
 
-| Name | Description |
-| --- | --- |
-| vehicleid | The ID of the vehicle |
-| &driver | The integer to save the state of the driver's door to. |
-| &passenger | The integer to save the state of the passenger's door to. |
-| &backleft | The integer to save the state of the rear left door to (if available). |
+| Name       | Description                                                             |
+| ---------- | ----------------------------------------------------------------------- |
+| vehicleid  | The ID of the vehicle                                                   |
+| &driver    | The integer to save the state of the driver's door to.                  |
+| &passenger | The integer to save the state of the passenger's door to.               |
+| &backleft  | The integer to save the state of the rear left door to (if available).  |
 | &backright | The integer to save the state of the rear right door to (if available). |
 
 ## Returns

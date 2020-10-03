@@ -15,12 +15,12 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Get the position of the player's camera.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player to get the camera position of. |
-| Float:x | A float variable to store the X coordinate in, passed by reference. |
-| Float:y | A float variable to store the Y coordinate in, passed by reference. |
-| Float:z | A float variable to store the Z coordinate in, passed by reference. |
+| Name     | Description                                                         |
+| -------- | ------------------------------------------------------------------- |
+| playerid | The ID of the player to get the camera position of.                 |
+| Float:x  | A float variable to store the X coordinate in, passed by reference. |
+| Float:y  | A float variable to store the Y coordinate in, passed by reference. |
+| Float:z  | A float variable to store the Z coordinate in, passed by reference. |
 
 ## Returns
 

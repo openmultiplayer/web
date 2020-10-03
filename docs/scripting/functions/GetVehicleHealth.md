@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Get the health of a vehicle.
 
-| Name | Description |
-| --- | --- |
-| vehicleid | The ID of the vehicle to get the health of. |
+| Name          | Description                                                                  |
+| ------------- | ---------------------------------------------------------------------------- |
+| vehicleid     | The ID of the vehicle to get the health of.                                  |
 | &Float:health | A float variable in which to store the vehicle's health, passed by reference |
 
 ## Returns

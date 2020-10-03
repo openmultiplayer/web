@@ -15,10 +15,10 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 You can use this function to attach the player camera to objects.
 
-| Name | Description |
-| --- | --- |
+| Name     | Description                                                          |
+| -------- | -------------------------------------------------------------------- |
 | playerid | The ID of the player which will have your camera attached on object. |
-| objectid | The object id which you want to attach the player camera. |
+| objectid | The object id which you want to attach the player camera.            |
 
 ## Returns
 

@@ -15,10 +15,10 @@ This callback was added in SA-MP 0.3a and will not work in earlier versions!
 
 This callback is called when a vehicle element such as doors, tires, panels, or lights change their damage status.
 
-| Name | Description |
-| --- | --- |
-| vehicleid | The ID of the vehicle that was changed its damage status. |
-| playerid | The ID of the player who synced the change in the damage status (who had the car damaged or repaired). |
+| Name      | Description                                                                                            |
+| --------- | ------------------------------------------------------------------------------------------------------ |
+| vehicleid | The ID of the vehicle that was changed its damage status.                                              |
+| playerid  | The ID of the player who synced the change in the damage status (who had the car damaged or repaired). |
 
 ## Returns
 

@@ -9,10 +9,6 @@ tags: []
 
 Each SVar (server-variable) has its own unique identification number for lookup, this function returns the highest ID.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

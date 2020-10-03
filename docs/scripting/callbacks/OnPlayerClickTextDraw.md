@@ -15,9 +15,9 @@ This callback was added in SA-MP 0.3e and will not work in earlier versions!
 
 This callback is called when a player clicks on a textdraw or cancels the select mode with the Escape key.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player that clicked on the textdraw. |
+| Name      | Description                                                                   |
+| --------- | ----------------------------------------------------------------------------- |
+| playerid  | The ID of the player that clicked on the textdraw.                            |
 | clickedid | The ID of the clicked textdraw. INVALID_TEXT_DRAW if selection was cancelled. |
 
 ## Returns

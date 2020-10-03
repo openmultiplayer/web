@@ -15,13 +15,13 @@ This function was added in SA-MP 0.3b and will not work in earlier versions!
 
 Sends a threaded HTTP request.
 
-| Name | Description |
-| --- | --- |
-| index | ID used to differentiate requests that are sent to the same callback (useful for playerids) |
-| type | The type of request you wish to send. |
-| url[] | The URL you want to request. (Without 'http://') |
-| data[] | Any POST data you want to send with the request. |
-| callback[] | Name of the callback function you want to use to handle responses to this request. |
+| Name       | Description                                                                                 |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| index      | ID used to differentiate requests that are sent to the same callback (useful for playerids) |
+| type       | The type of request you wish to send.                                                       |
+| url[]      | The URL you want to request. (Without 'http://')                                            |
+| data[]     | Any POST data you want to send with the request.                                            |
+| callback[] | Name of the callback function you want to use to handle responses to this request.          |
 
 ## Returns
 

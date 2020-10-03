@@ -15,11 +15,11 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Toggles whether a player-textdraw can be selected or not.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player whose player-textdraw to set the selectability of. |
-| PlayerText:text | The ID of the player-textdraw to set the selectability of. |
-| set | Set the player-textdraw selectable (1) or non-selectable (0). By default this is 0. |
+| Name            | Description                                                                         |
+| --------------- | ----------------------------------------------------------------------------------- |
+| playerid        | The ID of the player whose player-textdraw to set the selectability of.             |
+| PlayerText:text | The ID of the player-textdraw to set the selectability of.                          |
+| set             | Set the player-textdraw selectable (1) or non-selectable (0). By default this is 0. |
 
 ## Returns
 

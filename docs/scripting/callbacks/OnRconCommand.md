@@ -9,8 +9,8 @@ tags: []
 
 This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
 
-| Name | Description |
-| --- | --- |
+| Name  | Description                                                                       |
+| ----- | --------------------------------------------------------------------------------- |
 | cmd[] | A string containing the command that was typed, as well as any passed parameters. |
 
 ## Returns

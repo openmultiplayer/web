@@ -15,13 +15,13 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Creates a chat bubble above a player's name tag.
 
-| Name | Description |
-| --- | --- |
-| playerid | The player which should have the chat bubble. |
-| text[] | The text to display. |
-| color | The text color |
+| Name         | Description                                                      |
+| ------------ | ---------------------------------------------------------------- |
+| playerid     | The player which should have the chat bubble.                    |
+| text[]       | The text to display.                                             |
+| color        | The text color                                                   |
 | drawdistance | The distance from where players are able to see the chat bubble. |
-| expiretime | The time in miliseconds the bubble should be displayed for. |
+| expiretime   | The time in miliseconds the bubble should be displayed for.      |
 
 ## Returns
 

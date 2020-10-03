@@ -15,10 +15,10 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Attaches a player's camera to a player-object. The player is able to move their camera while it is attached to an object. Can be used with MovePlayerObject and AttachPlayerObjectToVehicle.
 
-| Name | Description |
-| --- | --- |
-| playerid | The ID of the player which will have their camera attached to a player-object. |
-| playerobjectid | The ID of the player-object to which the player's camera will be attached. |
+| Name           | Description                                                                    |
+| -------------- | ------------------------------------------------------------------------------ |
+| playerid       | The ID of the player which will have their camera attached to a player-object. |
+| playerobjectid | The ID of the player-object to which the player's camera will be attached.     |
 
 ## Returns
 
