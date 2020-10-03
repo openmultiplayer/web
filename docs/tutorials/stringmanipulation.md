@@ -61,11 +61,11 @@ description: Beginner friendly tutorial about everything string manipulation.
 
 #### **✧ Tutorial description**
 
-Howdy, ya all out there, it surely is a nice quiet night, or at least it is at
-the composition of this tutorial. So, hey, what about tagging along to both
-enrich and/or engage with the main focus of this article, this is and as the
-title suggests, going to be focused on “_String manipulation_” in pawn, we will
-go through the absolute intermediate stuff that everybody should be aware of to
+Hello everyone, it surely is a nice quiet night, or at least it is at the
+composition of this tutorial. So, hey, what about tagging along to both enrich
+and/or engage with the main focus of this article, this is and as the title
+suggests, going to be focused on “_String manipulation_” in pawn, we will go
+through the absolute intermediate stuff that everybody should be aware of to
 some sort of advanced, clever and effective tips.
 
 &nbsp;
@@ -176,9 +176,9 @@ as it might seem, the list below breaks down some of these limits;
 &nbsp;
 
 If somehow these limits have been exceeded, few inconveniences might occur, it
-can even crash/freeze the server in some cases (e.g. long textdraw strings), in
-some other cases, the text would just truncate like the Menu title (if it
-reaches 32 characters, it truncates back to 30) and items.
+can even crash/freeze the server in some cases (_e.g. long textdraw strings_),
+in some other cases, the text would just truncate like the Menu title (_if it
+reaches 32 characters, it truncates back to 30_) and items.
 
 Besides the strict limits put on strings, there are many others concerning
 different stuff, you can view the complete list
@@ -354,9 +354,8 @@ new message_8[100] = {'J', ...};
 ```
 
 The code above declares a new string called `message_8` with 100 cells (_ranging
-from 0 to 99_) and gives each slot the value of '_J_', which of course can be
-used both as a character **J**, or number **74** according to the _ASCII_
-system.
+from 0 to 99_) and gives each slot the value `'J'`, which of course can be used
+both as a character **J**, or number **74** according to the _ASCII_ system.
 
 One other thing you can do with this is filling the string with characters whom
 values based on intervals, see the example of the capitalized alphabets from _A_
@@ -368,7 +367,7 @@ new message_9[26] = {'A', 'B', ...};
 
 How easy is that?! this is both more optimized and easy to read, and provides
 the same results as the 3 examples done using loop methods above, so how does it
-exactly work? Well, we gave the string initial values, '_A_' and '_B_', which
+exactly work? Well, we gave the string initial values, `'A'` and `'B'`, which
 they respectively are _65_ and _66_, the compiler calculates the interval
 between the two values, which in this case is _1_, and completes filling the
 empty cells with values based on that interval until it fills up the whole
@@ -499,7 +498,7 @@ optimization.
 
 These are some natively supported functions (_taken from string.inc_);
 
-```csharp
+```cpp
 native strlen(const string[]);
 native strpack(dest[], const source[], maxlength=sizeof dest);
 native strunpack(dest[], const source[], maxlength=sizeof dest);
@@ -710,14 +709,14 @@ the mysterious string size 256, just why people? Why?
 
 Keep in mind the limits SA-MP puts when dealing with strings, where does the
 _256-long_ string come into play? What are you going to do with a string this
-long (_except for formatting a dialog/textdraw string\_\_)? The maximum string
+long (_except for formatting a dialog/textdraw string_)? The maximum string
 input is 128 characters long, that’s half the size, 512 bytes just went into
 waste, say what? You intended to use it for output, not input? That’s still way
 too large, output strings are not to pass 144 characters, see where I’m going?
 Let’s try and see how we’d correct our fault, we have this sentence, “Good
-string”, it contains 11 characters (\_the space is counted as a character
-too_) + 1 for the null terminator (_got to always have this dude in mind_), that
-makes it 12 characters in total.
+string”, it contains 11 characters (_the space is counted as a character too_) +
+1 for the null terminator (_got to always have this dude in mind_), that makes
+it 12 characters in total.
 
 ```cpp
 new goodString[12];
@@ -918,8 +917,8 @@ the output text.
 Unlike `print`, `printf` accepts multiple parameters, and with different types
 too, however it does not support packed strings, in order to expand on its
 functionality, we use these sequences called “_format specifiers_”, more on them
-later, outputting anything more than 1024 characters will crash the server, so
-take notes on that.
+later, outputting anything more than **1024** characters will <u>crash the
+server</u>, so take notes on that.
 
 ```cpp
 #define RANDOM_STRING "Vsauce"
@@ -1070,7 +1069,8 @@ In SA-MP’s implementation of pawn, we use hexadecimal numbers to represent the
 color spaces, red, green, blue and alpha are noted by 2 bits each, resulting in
 an 8 bits long hexadecimal number, for example; (_FF0000FF = red_), (_00FF00FF =
 green_), (_0000FFFF = blue_), (_000000FF = black_), (_FFFFFFFF = white_), here’s
-a clearer visualization on this notation: _FFFFFFFF_.
+a clearer visualization on this notation:
+<span style="color: red;">FF</span><span style="color: green;">FF</span><span style="color: blue;">FF</span><span style="color: grey;">FF</span>.
 
 A lot of programming/scripting languages prefix hexadecimal numbers with the
 number sign `#`, In pawn, however, we prefix them with `0x`, so the following
@@ -1097,6 +1097,8 @@ make the text invisible.
 It’s possible to format texts with multicolor simultaneously, but for that, we
 embed the simpler **RGB** notation.
 
+&nbsp;
+
 #### **✩ RGB**
 
 This is exactly like the **RGBA** color spaces, but with no alpha channel, just
@@ -1109,14 +1111,14 @@ visualization on this notation: `{FFFFFF}`. Let’s look at this quick example
 here;
 
 ```cpp
-SendClientMessageToAll(0x00FF00FF, "I'm green{000000}, and {FF0000}I'm red");
+SendClientMessageToAll(0x00FF00FF, "I'm green{FFFFFF}, and {FF0000}I'm red");
 ```
 
-This will send the following message to everyone (and I'm no Italian):
+This will send the following message to everyone (_and I'm no Italian_):
 
-```cpp
-I’m green, and I’m red
-```
+> <span style="color: #00ff00ff;">I’m
+> green</span><span style="color: #ffffff;">, and
+> </span><span style="color: #ff0000;">I’m red</span>
 
 Keep in mind that the hexadecimal notation is case insensitive, so typing
 `0xFFC0E1FF` is the same as typing `0xfFC0e1Ff`, the same goes for embedded
@@ -1125,7 +1127,7 @@ colors, `{401C15}` is the same as `{401c15}`.
 Sometimes, working with colors can prove to be quite the labor, It’s not that
 easy to go around remembering all of those long hexadecimal numbers like no big
 deal, You should always have a reference to go back to, there are plenty of
-online color pickers you can use, you can simply g.oogle “_color picker_”, and
+online color pickers you can use, you can simply google “_color picker_”, and
 choose between thousands of them, let me do that on you if you don’t mind,
 [here’s a simple tool](https://www.webpagefx.com/web-design/color-picker/) that
 I recommend using when working with colors.
@@ -1163,9 +1165,9 @@ ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello
 At compilation time, all predefined constants will be replaced by their values,
 and thus, this `"COL_RED"I’m a red text` becomes this
 `”{FF0000}”I’m a red text`, notice how we used two methode to predifne those
-colors, _“RRGGBB”_ and _“{RRGGBB}”_, it’ goes into personal preference which
-methode to go by, personaly, I find defining them as _“RRGGBB”_ much cleared, as
-the usages of curly brackets is present, and thus makes it noticable that we’re
+colors, `RRGGBB` and `{RRGGBB}`, it’ goes into personal preference which methode
+to go by, personaly, I find defining them as `RRGGBB` much cleared, as the
+usages of curly brackets is present, and thus makes it noticable that we’re
 embedding a color.
 
 That was the general approach on color embedding with dialog and client messages
@@ -1249,9 +1251,9 @@ of your script, here is a table containing the escape sequences used in pawn:
 | Carriage return                              | \r       |
 | Horizontal tab                               | \t       |
 | Vertical tab                                 | \v       |
-| Backslash                                    | \\       |
-| Single quote                                 | \'       |
-| Double quote                                 | \"       |
+| Backslash                                    | \\\      |
+| Single quote                                 | \\'      |
+| Double quote                                 | \\"      |
 | Character code with decimal values "ddd"     | \ddd;    |
 | Character code with hexadecimal values "hhh" | \xhhh;   |
 
@@ -1591,7 +1593,7 @@ This is the escape sequence responsible for tabulation: \t
 
 &nbsp;
 
-- **The “Single quote” escape sequence - `\’`**
+- **The “Single quote” escape sequence - `\'`**
 
 This is hardly present when writing pawn code, I myself haven’t found myself
 using this in any coding situation, in other languages that treat text between
@@ -1628,7 +1630,7 @@ new chr = ''\';
 
 &nbsp;
 
-- **The “Double quote” escape sequence - `\”`**
+- **The “Double quote” escape sequence - `\"`**
 
 Unlike the single quotation mark, this one can cause problems when it comes to
 nesting them together, pawn treats anything between double quotations as a
@@ -2366,6 +2368,8 @@ GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 format(output, sizeof(output), "[Info]: the player with the id of %d is called {FFFF00}%s.", playerid, playerName);SendClientMessageToAll(0, output);
 ```
 
+**Output** :
+
 > [Info]: the player with the id of 9 is called
 > <span style="color: #ffff00;">Player1</span>.
 
@@ -2397,6 +2401,8 @@ seconds on their variables respectively, then put them all together into a
 nicely formatted string, we took advantage of the width field `%02d` to pad the
 values between 0 and 9 with another zero to evade outputs like (“_It’s 5:9
 PM_”), as you can see.
+
+**Output** :
 
 > It’s 06 :17 PM
 
@@ -2437,6 +2443,8 @@ Given the following list of connected players:
 Say, `playerid` `0` killed `playerid` `6`, the formatted messages should spell
 “**{FF0000}Compton {000000}killed {0000FF}Bartolomew**”, which will send the
 following client message to everybody on the server:
+
+**Output** :
 
 > <span style="color: red;">Compton</span> >
 > <span style="color: #000000;">killed</span> >
@@ -2493,7 +2501,7 @@ any way, there are better examples at the main release page,
 
 ### **✦ External links**
 
-**✧ Similar tutorials**
+#### **✧ Similar tutorials**
 
 - [String formatting](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=265433)
   by
@@ -2515,53 +2523,50 @@ any way, there are better examples at the main release page,
   [Misiur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=55934)
 - [Packed strings](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=480529)
   by Emmet\_
-- [IRC string formatting](https://web.archive.org/web/20190424140855/https://github.com/myano/jenni/wiki/IRC-String-Formatting)
-  by
-  [myano](https://web.archive.org/web/20190424140855/https://github.com/myano)
+- [IRC string formatting](https://github.com/myano/jenni/wiki/IRC-String-Formatting)
+  by [myano](https://github.com/myano)
 - [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf)
   by
   [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
-- [Pawn-lang](https://web.archive.org/web/20190424140855/https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
+- [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
 - [An in-depth look at binary and binary operators](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=177523)
   by
   [Kyosaur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23990)
 
-**✧ Related includes/plugins**
+#### **✧ Related includes/plugins/contributers**
 
 - [Westie](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=56481)'s
   [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=85697)
 - [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)'s
   [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764)
 - [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)'s
-  [formatex](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=313488)
+  [formatex](https://github.com/Southclaws/formatex)
 - [corne](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=98345)'s
   [y_stringhash](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=571305)
-- [\*\*\*\*\*\*](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=29176)'s
+- [Y-Less](https://github.com/Y-Less)'s
   [sscanf](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=570927)
 
-**✧ References**
+#### **✧ References**
 
-- [GTA San Andreas](https://web.archive.org/web/20190424140855/http://www.rockstargames.com/sanandreas/)
-- [Textdraw](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/TextDrawCreate)
-- [Gametext](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/GameTextForPlayer)
-- [String limitations](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Limits)
-- [ASCII](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/ASCII)
-- [ASCII table](https://web.archive.org/web/20190424140855/http://www.asciitable.com/)
-- [Pawn Tutorial](https://web.archive.org/web/20190424140855/https://wiki.alliedmods.net/Pawn_Tutorial)
-- [Control Structures](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Control_Structures)
-- [Null character](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Null_character)
-- [Slice's strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764)
-- [ShowPlayerDialog](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/ShowPlayerDialog)
-- [RGBA color space](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/RGBA_color_space)
-- [Color picker](https://web.archive.org/web/20190424140855/https://www.webpagefx.com/web-design/color-picker/)
-- [TextDrawColor](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/TextDrawColor)
-- [Gametext styles](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/GameTextStyle)
-- [Color list](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Colors_List)
-- [Escape sequence](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Escape_sequence)
-- [r/programmerhumor](https://web.archive.org/web/20190424140855/https://www.reddit.com/r/ProgrammerHumor/)
-- [Newline](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Newline)
-- [Undefined behavior](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Undefined_behavior)
-- [Bobby table](https://web.archive.org/web/20190424140855/http://bobby-tables.com/about)
-- [strfind](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Strfind)
-- [format](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Format)
-- [Bitwise logical shift](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/Logical_shift)
+- [GTA San Andreas](http://www.rockstargames.com/sanandreas/)
+- [Textdraw](../scripting/resources/textdraws#what-is-a-textdraw)
+- [Gametext](../scripting/functions/GameTextForPlayer)
+- [Limitations](../scripting/resources/limits)
+- [ASCII](https://en.wikipedia.org/wiki/ASCII)
+- [ASCII table](http://www.asciitable.com/)
+- [Pawn Tutorial](https://wiki.alliedmods.net/Pawn_Tutorial)
+- [Control Structures](../scripting/language/ControlStructures)
+- [Null character](https://en.wikipedia.org/wiki/Null_character)
+- [RGBA color space](https://en.wikipedia.org/wiki/RGBA_color_space)
+- [Color picker](https://www.webpagefx.com/web-design/color-picker/)
+- [TextDrawColor](../scripting/functions/TextDrawColor)
+- [Gametext styles](../scripting/resources/gametextstyles)
+- [Color list](../scripting/resources/colorslist)
+- [Escape sequence](https://en.wikipedia.org/wiki/Escape_sequence)
+- [r/programmerhumor](https://www.reddit.com/r/ProgrammerHumor/)
+- [Newline](https://en.wikipedia.org/wiki/Newline)
+- [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)
+- [Bobby table](http://bobby-tables.com/about)
+- [strfind](../scripting/functions/strfind)
+- [format](../scripting/functions/format)
+- [Bitwise logical shift](https://en.wikipedia.org/wiki/Logical_shift)
