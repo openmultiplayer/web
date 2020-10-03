@@ -41,25 +41,25 @@ This function was removed in SA-MP 0.3.
 
 ## Related Functions
 
-- [CreatePlayerObject](../../scripting/functions/CreateObject.md): Create an object for only one player.
-- [DestroyPlayerObject](../../scripting/functions/DestroyObject.md): Destroy a player object.
-- [IsValidPlayerObject](../../scripting/functions/IsValidObject.md): Checks if a certain player object is vaild.
-- [MovePlayerObject](../../scripting/functions/MoveObject.md): Move a player object.
-- [StopPlayerObject](../../scripting/functions/StopObject.md): Stop a player object from moving.
-- [SetPlayerObjectRot](../../scripting/functions/SetPlayerObjectRot.md): Set the rotation of a player object.
-- [GetPlayerObjectPos](../../scripting/functions/GetPlayerObjectPos.md): Locate a player object.
-- [SetPlayerObjectPos](../../scripting/functions/SetPlayerObjectPos.md): Set the position of a player object.
-- [GetPlayerObjectRot](../../scripting/functions/GetPlayerObjectRot.md): Check the rotation of a player object.
-- [SetPlayerAttachedObject](../../scripting/functions/SetPlayerAttachedObject.md): Attach an object to a player
-- [RemovePlayerAttachedObject](../../scripting/functions/RemovePlayerAttachedObject.md): Remove an attached object from a player
-- [IsPlayerAttachedObjectSlotUsed](../../scripting/functions/IsPlayerAttachedObjectSlotUsed.md): Check whether an object is attached to a player in a specified index
-- [CreateObject](../../scripting/functions/CreateObject.md): Create an object.
-- [DestroyObject](../../scripting/functions/DestroyObject.md): Destroy an object.
-- [IsValidObject](../../scripting/functions/IsValidObject.md): Checks if a certain object is vaild.
-- [MoveObject](../../scripting/functions/MoveObject.md): Move a object.
-- [StopObject](../../scripting/functions/StopObject.md): Stop an object from moving.
-- [SetObjectPos](../../scripting/functions/SetObjectPos.md): Set the position of an object.
-- [SetObjectRot](../../scripting/functions/SetObjectRot.md): Set the rotation of an object.
-- [GetObjectPos](../../scripting/functions/GetObjectPos.md): Locate an object.
-- [GetObjectRot](../../scripting/functions/GetObjectRot.md): Check the rotation of an object.
-- [AttachObjectToPlayer](../../scripting/functions/AttachObjectToPlayer.md): Attach an object to a player.
+- [CreatePlayerObject](../functions/CreateObject.md): Create an object for only one player.
+- [DestroyPlayerObject](../functions/DestroyObject.md): Destroy a player object.
+- [IsValidPlayerObject](../functions/IsValidObject.md): Checks if a certain player object is vaild.
+- [MovePlayerObject](../functions/MoveObject.md): Move a player object.
+- [StopPlayerObject](../functions/StopObject.md): Stop a player object from moving.
+- [SetPlayerObjectRot](../functions/SetPlayerObjectRot.md): Set the rotation of a player object.
+- [GetPlayerObjectPos](../functions/GetPlayerObjectPos.md): Locate a player object.
+- [SetPlayerObjectPos](../functions/SetPlayerObjectPos.md): Set the position of a player object.
+- [GetPlayerObjectRot](../functions/GetPlayerObjectRot.md): Check the rotation of a player object.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Attach an object to a player
+- [RemovePlayerAttachedObject](../functions/RemovePlayerAttachedObject.md): Remove an attached object from a player
+- [IsPlayerAttachedObjectSlotUsed](../functions/IsPlayerAttachedObjectSlotUsed.md): Check whether an object is attached to a player in a specified index
+- [CreateObject](../functions/CreateObject.md): Create an object.
+- [DestroyObject](../functions/DestroyObject.md): Destroy an object.
+- [IsValidObject](../functions/IsValidObject.md): Checks if a certain object is vaild.
+- [MoveObject](../functions/MoveObject.md): Move a object.
+- [StopObject](../functions/StopObject.md): Stop an object from moving.
+- [SetObjectPos](../functions/SetObjectPos.md): Set the position of an object.
+- [SetObjectRot](../functions/SetObjectRot.md): Set the rotation of an object.
+- [GetObjectPos](../functions/GetObjectPos.md): Locate an object.
+- [GetObjectRot](../functions/GetObjectRot.md): Check the rotation of an object.
+- [AttachObjectToPlayer](../functions/AttachObjectToPlayer.md): Attach an object to a player.

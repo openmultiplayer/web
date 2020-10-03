@@ -40,7 +40,7 @@ Using the camera functions directly after enabling spectator mode doesn't work.
 
 ## Related Functions
 
-- [SetPlayerCameraPos](../../scripting/functions/SetPlayerCameraPos.md): Set a player's camera position.
-- [SetCameraBehindPlayer](../../scripting/functions/SetCameraBehindPlayer.md): Set a player's camera behind them.
-- [GetPlayerCameraPos](../../scripting/functions/GetPlayerCameraPos.md): Find out where the player's camera is.
-- [GetPlayerCameraFrontVector](../../scripting/functions/GetPlayerCameraFrontVector.md): Get the player's camera front vector
+- [SetPlayerCameraPos](../functions/SetPlayerCameraPos.md): Set a player's camera position.
+- [SetCameraBehindPlayer](../functions/SetCameraBehindPlayer.md): Set a player's camera behind them.
+- [GetPlayerCameraPos](../functions/GetPlayerCameraPos.md): Find out where the player's camera is.
+- [GetPlayerCameraFrontVector](../functions/GetPlayerCameraFrontVector.md): Get the player's camera front vector

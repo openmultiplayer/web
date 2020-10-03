@@ -40,9 +40,9 @@ Once a variable is deleted, attempts to retrieve the value will return 0 (for in
 
 ## Related Functions
 
-- [SetPVarInt](../../scripting/functions/SetPVarInt.md): Set an integer for a player variable.
-- [GetPVarInt](../../scripting/functions/GetPVarInt.md): Get the previously set integer from a player variable.
-- [SetPVarString](../../scripting/functions/SetPVarString.md): Set a string for a player variable.
-- [GetPVarString](../../scripting/functions/GetPVarString.md): Get the previously set string from a player variable.
-- [SetPVarFloat](../../scripting/functions/SetPVarFloat.md): Set a float for a player variable.
-- [GetPVarFloat](../../scripting/functions/GetPVarFloat.md): Get the previously set float from a player variable.
+- [SetPVarInt](../functions/SetPVarInt.md): Set an integer for a player variable.
+- [GetPVarInt](../functions/GetPVarInt.md): Get the previously set integer from a player variable.
+- [SetPVarString](../functions/SetPVarString.md): Set a string for a player variable.
+- [GetPVarString](../functions/GetPVarString.md): Get the previously set string from a player variable.
+- [SetPVarFloat](../functions/SetPVarFloat.md): Set a float for a player variable.
+- [GetPVarFloat](../functions/GetPVarFloat.md): Get the previously set float from a player variable.

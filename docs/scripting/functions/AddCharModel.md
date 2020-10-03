@@ -60,4 +60,4 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
-- [SetPlayerSkin](../../scripting/functions/SetPlayerSkin.md): Set a player's skin.
+- [SetPlayerSkin](../functions/SetPlayerSkin.md): Set a player's skin.

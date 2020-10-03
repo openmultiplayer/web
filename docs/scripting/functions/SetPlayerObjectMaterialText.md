@@ -56,8 +56,8 @@ Color embedding can be used for multiple colors in the text.
 
 ## Related Functions
 
-- [SetObjectMaterialText](../../scripting/functions/SetObjectMaterialText.md): Replace the texture of an object with text.
-- [SetPlayerObjectMaterial](../../scripting/functions/SetPlayerObjectMaterial.md): Replace the texture of a player object with the texture from another model in the game.
+- [SetObjectMaterialText](../functions/SetObjectMaterialText.md): Replace the texture of an object with text.
+- [SetPlayerObjectMaterial](../functions/SetPlayerObjectMaterial.md): Replace the texture of a player object with the texture from another model in the game.
 
 ## Filterscripts with texturing/text support
 

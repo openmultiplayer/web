@@ -50,6 +50,6 @@ The player-object must be created before attempting to attach the player's camer
 
 ## Related Functions
 
-- [AttachCameraToObject](../../scripting/functions/AttachCameraToObject.md): Attachs the player's camera on an global object.
-- [SetPlayerCameraPos](../../scripting/functions/SetPlayerCameraPos.md): Set a player's camera position.
-- [SetPlayerCameraLookAt](../../scripting/functions/SetPlayerCameraLookAt.md): Set where a player's camera should face.
+- [AttachCameraToObject](../functions/AttachCameraToObject.md): Attachs the player's camera on an global object.
+- [SetPlayerCameraPos](../functions/SetPlayerCameraPos.md): Set a player's camera position.
+- [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt.md): Set where a player's camera should face.

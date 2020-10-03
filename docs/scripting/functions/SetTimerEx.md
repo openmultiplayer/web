@@ -72,7 +72,7 @@ The function to be called must be public. That means it has to be forwarded.
 
 ## Related Functions
 
-- [SetTimer](../../scripting/functions/SetTimer.md): Set a timer.
-- [KillTimer](../../scripting/functions/KillTimer.md): Stop a timer.
-- [CallLocalFunction](../../scripting/functions/CallLocalFunction.md): Call a function in the script.
-- [CallRemoteFunction](../../scripting/functions/CallRemoteFunction.md): Call a function in any loaded script.
+- [SetTimer](../functions/SetTimer.md): Set a timer.
+- [KillTimer](../functions/KillTimer.md): Stop a timer.
+- [CallLocalFunction](../functions/CallLocalFunction.md): Call a function in the script.
+- [CallRemoteFunction](../functions/CallRemoteFunction.md): Call a function in any loaded script.

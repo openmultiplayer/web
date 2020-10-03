@@ -11,8 +11,8 @@ This function adds a 'static' pickup to the game. These pickups support weapons,
 
 | Name                                             | Description                                                                         |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| [model](../../scripting/resources/pickupids.md)  | The model of the pickup.                                                            |
-| [type](../../scripting/resources/pickuptypes.md) | The pickup type. Determines how the pickup responds when picked up.                 |
+| [model](../resources/pickupids.md)  | The model of the pickup.                                                            |
+| [type](../resources/pickuptypes.md) | The pickup type. Determines how the pickup responds when picked up.                 |
 | Float:X                                          | The X coordinate to create the pickup at.                                           |
 | Float:Y                                          | The Y coordinate to create the pickup at.                                           |
 | Float:Z                                          | The Z coordinate to create the pickup at.                                           |
@@ -49,6 +49,6 @@ This function doesn't return a pickup ID that you can use in, for example, OnPla
 
 ## Related Functions
 
-- [CreatePickup](../../scripting/functions/CreatePickup.md): Create a pickup.
-- [DestroyPickup](../../scripting/functions/DestroyPickup.md): Destroy a pickup.
-- [OnPlayerPickUpPickup](../../scripting/callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.
+- [CreatePickup](../functions/CreatePickup.md): Create a pickup.
+- [DestroyPickup](../functions/DestroyPickup.md): Destroy a pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.

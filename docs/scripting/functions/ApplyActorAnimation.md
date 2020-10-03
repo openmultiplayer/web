@@ -56,4 +56,4 @@ You must preload the animation library for the player the actor will be applying
 
 ## Related Functions
 
-- [ClearActorAnimations](../../scripting/functions/ClearActorAnimations.md): Clear any animations that are applied to an actor.
+- [ClearActorAnimations](../functions/ClearActorAnimations.md): Clear any animations that are applied to an actor.

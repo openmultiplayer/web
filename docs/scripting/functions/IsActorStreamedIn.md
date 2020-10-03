@@ -46,5 +46,5 @@ public OnPlayerSpawn(playerid)
 
 ## Related Functions
 
-- [CreateActor](../../scripting/functions/CreateActor.md): Create an actor (static NPC).
-- [IsPlayerStreamedIn](../../scripting/functions/IsPlayerStreamedIn.md): Checks if a player is streamed in for another player.
+- [CreateActor](../functions/CreateActor.md): Create an actor (static NPC).
+- [IsPlayerStreamedIn](../functions/IsPlayerStreamedIn.md): Checks if a player is streamed in for another player.

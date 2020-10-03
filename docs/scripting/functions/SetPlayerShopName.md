@@ -51,5 +51,5 @@ This function does not support casino scripts.
 
 ## Related Functions
 
-- [DisableInteriorEnterExits](../../scripting/functions/DisableInteriorEnterExits.md): Disable the yellow door markers.
-- [SetPlayerInterior](../../scripting/functions/SetPlayerInterior.md): Set a player's interior.
+- [DisableInteriorEnterExits](../functions/DisableInteriorEnterExits.md): Disable the yellow door markers.
+- [SetPlayerInterior](../functions/SetPlayerInterior.md): Set a player's interior.

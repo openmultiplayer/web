@@ -48,5 +48,5 @@ An invalid animation library will crash the player's game.
 
 ## Related Functions
 
-- [ClearAnimations](../../scripting/functions/ClearAnimations.md): Clear any animations a player is performing.
-- [SetPlayerSpecialAction](../../scripting/functions/SetPlayerSpecialAction.md): Set a player's special action.
+- [ClearAnimations](../functions/ClearAnimations.md): Clear any animations a player is performing.
+- [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction.md): Set a player's special action.

@@ -42,7 +42,7 @@ You might use OnVehicleChangePaintjob from vSync in order to know when the playe
 
 ## Related Functions
 
-- [ChangeVehiclePaintjob](../../scripting/functions/ChangeVehiclePaintjob.md): Change the paintjob on a vehicle.
-- [ChangeVehicleColor](../../scripting/functions/ChangeVehicleColor.md): Set the color of a vehicle.
-- [OnVehicleRespray](../../scripting/callbacks/OnVehicleRespray.md): Called when a vehicle is resprayed.
-- [OnVehicleMod](../../scripting/callbacks/OnVehicleMod.md): Called when a vehicle is modded.
+- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob.md): Change the paintjob on a vehicle.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor.md): Set the color of a vehicle.
+- [OnVehicleRespray](../callbacks/OnVehicleRespray.md): Called when a vehicle is resprayed.
+- [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.

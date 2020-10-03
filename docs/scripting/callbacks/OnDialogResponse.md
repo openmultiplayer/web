@@ -162,4 +162,4 @@ A player's dialog doesn't hide when the gamemode restarts, causing the server to
 
 ## Related Functions
 
-- [ShowPlayerDialog](../../scripting/functions/ShowPlayerDialog.md): Show a dialog to a player.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Show a dialog to a player.

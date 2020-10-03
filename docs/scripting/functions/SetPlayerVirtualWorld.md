@@ -40,5 +40,5 @@ The default virtual world is 0.
 
 ## Related Functions
 
-- [GetPlayerVirtualWorld](../../scripting/functions/GetPlayerVirtualWorld.md): Check what virtual world a player is in.
-- [SetVehicleVirtualWorld](../../scripting/functions/SetVehicleVirtualWorld.md): Set the virtual world of a vehicle.
+- [GetPlayerVirtualWorld](../functions/GetPlayerVirtualWorld.md): Check what virtual world a player is in.
+- [SetVehicleVirtualWorld](../functions/SetVehicleVirtualWorld.md): Set the virtual world of a vehicle.

@@ -50,9 +50,9 @@ Trains can only be added with AddStaticVehicle and AddStaticVehicleEx.
 
 ## Related Functions
 
-- [DestroyVehicle](../../scripting/functions/DestroyVehicle.md): Destroy a vehicle.
-- [AddStaticVehicle](../../scripting/functions/AddStaticVehicle.md): Add a static vehicle.
-- [AddStaticVehicleEx](../../scripting/functions/AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
-- [GetVehicleParamsSirenState](../../scripting/functions/GetVehicleParamsSirenState.md): Check whether a vehicle's siren is on or off.
-- [OnVehicleSpawn](../../scripting/callbacks/OnVehicleSpawn.md): Called when a vehicle respawns.
-- [OnVehicleSirenStateChange](../../scripting/callbacks/OnVehicleSirenStateChange.md): Called when a vehicle's siren is toggled on/off.
+- [DestroyVehicle](../functions/DestroyVehicle.md): Destroy a vehicle.
+- [AddStaticVehicle](../functions/AddStaticVehicle.md): Add a static vehicle.
+- [AddStaticVehicleEx](../functions/AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
+- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState.md): Check whether a vehicle's siren is on or off.
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn.md): Called when a vehicle respawns.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange.md): Called when a vehicle's siren is toggled on/off.

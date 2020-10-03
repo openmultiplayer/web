@@ -7,8 +7,8 @@ sidebar_label: Skins
 ## Skins List
 
 This page contains every available skin, to be used with
-[SetPlayerSkin](../../scripting/functions/SetPlayerSkin) and
-[GetPlayerSkin](../../scripting/functions/GetPlayerSkin).
+[SetPlayerSkin](../functions/SetPlayerSkin) and
+[GetPlayerSkin](../functions/GetPlayerSkin).
 
 :::note
 These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were

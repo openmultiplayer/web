@@ -59,5 +59,5 @@ This callback is only called when the player is not yet logged in. When the play
 
 ## Related Functions
 
-- [IsPlayerAdmin](../../scripting/functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
-- [SendRconCommand](../../scripting/functions/SendRconCommand.md): Sends an RCON command via the script.
+- [IsPlayerAdmin](../functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
+- [SendRconCommand](../functions/SendRconCommand.md): Sends an RCON command via the script.

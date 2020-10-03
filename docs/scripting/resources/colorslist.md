@@ -18,7 +18,7 @@ alpha value. If FF is used there, the color will display without transparency
 and if 00 is used, it will be invisible.
 
 For the Hex code for these colors, go to the
-[Hex colors](../../scripting/resources/hex-colors.md) page.
+[Hex colors](../resources/hex-colors.md) page.
 
 ### Alpha values (transparency)
 
@@ -70,7 +70,7 @@ stock HexToInt(string[])
 ```
 
 Use HexToInt("RRGGBBAA") and you'll get a usable number as result for
-[SetPlayerColor](../../scripting/functions/SetPlayerColor.md).
+[SetPlayerColor](../functions/SetPlayerColor.md).
 
 ### Color embedding
 
@@ -81,20 +81,20 @@ Colors List was added in **SA-MP 0.3c** and will not work in earlier versions!
 :::
 
 It is possible to use colors within text in
-[client messages](../../scripting/functions/SendClientMessage.md"),
-[dialogs](../../scripting/functions/ShowPlayerDialog.md),
-[3D text labels](../../scripting/functions/Create3DTextLabel.md),
-[object material texts](../../scripting/functions/SetObjectMaterialText.md) and
-[vehicle numberplates](../../scripting/functions/SetVehicleNumberPlate.md").
+[client messages](../functions/SendClientMessage.md"),
+[dialogs](../functions/ShowPlayerDialog.md),
+[3D text labels](../functions/Create3DTextLabel.md),
+[object material texts](../functions/SetObjectMaterialText.md) and
+[vehicle numberplates](../functions/SetVehicleNumberPlate.md").
 
 It is very similar to
-[gametext colors](../../scripting/resources/gametextstyles.md), but allows any
+[gametext colors](../resources/gametextstyles.md), but allows any
 color to be used.
 
 :::caution
 
 This type of color embedding does not work in textdraws. See
-[GameTextStyle](../../scripting/resources/gametextstyles.md).
+[GameTextStyle](../resources/gametextstyles.md).
 
 :::
 
@@ -149,8 +149,8 @@ SendClientMessage(playerid, 0xffffffff, msg);
 The %x is the placeholder for hexadecimal values, the 6 ensures that the output
 string will always be six characters long and the 0 will pad it with zeros if
 it's not. Note that
-[GetPlayerColor](../../scripting/resources/GetPlayerColor.md) only works
-properly if [SetPlayerColor](../../scripting/resources/SetPlayerColor.md) has
+[GetPlayerColor](../resources/GetPlayerColor.md) only works
+properly if [SetPlayerColor](../resources/SetPlayerColor.md) has
 been used beforehand.
 
 The colors used in color embedding are not like normal hex colors in Pawn. There

@@ -47,5 +47,5 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 
 ## Related Functions
 
-- [CreatePickup](../../scripting/functions/CreatePickup.md): Create a pickup.
-- [DestroyPickup](../../scripting/functions/DestroyPickup.md): Destroy a pickup.
+- [CreatePickup](../functions/CreatePickup.md): Create a pickup.
+- [DestroyPickup](../functions/DestroyPickup.md): Destroy a pickup.

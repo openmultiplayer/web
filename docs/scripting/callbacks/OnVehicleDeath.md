@@ -40,4 +40,4 @@ This callback will also be called when a vehicle enters water, but the vehicle c
 
 ## Related Functions
 
-- [SetVehicleHealth](../../scripting/functions/SetVehicleHealth.md): Set the health of a vehicle.
+- [SetVehicleHealth](../functions/SetVehicleHealth.md): Set the health of a vehicle.
