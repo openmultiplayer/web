@@ -1,13 +1,14 @@
 ---
 id: db_get_field_assoc_int
 title: db_get_field_assoc_int
-description: Get the contents of field as an integer with specified name.
-tags: ["sqlite"]
+description: Gets the contents of the field as an integer with the specified field name.
+keywords:
+    - sqlite
 ---
 
 :::warning
 
-This function starts with lowercase letter.
+This function starts with a lowercase letter.
 
 :::
 
@@ -22,34 +23,105 @@ Get the contents of field as an integer with specified name.
 
 ## Returns
 
-Retrieved value as integer (number).
+Retrieved value as an integer.
+
+## Example
+
+```c
+// examples.inc
+
+// ...
+
+Examples_CalculateSum(DB:dbConnectionHandle)
+{
+    // Return value variable
+    new ret;
+
+    // Database result set
+    new DBResult:db_result_set = db_query("SELECT `value` FROM `examples`");
+
+    // If database result set is valid
+    if (db_result_set)
+    {
+        // Do operations
+        do
+        {
+            // Add value from "example" field to the return value variable
+            ret += db_get_field_assoc_int(db_result_set, "value");
+        }
+
+        // While next row could be fetched
+        while (db_next_row(db_result_set));
+
+        // Free result set
+        db_free_result(db_result_set);
+    }
+
+    // Return calculated sum
+    return ret;
+}
+```
+
+```c
+// mode.pwn
+
+// ...
+
+#include <examples>
+
+static DB:g_DBConnectionHandle;
+
+// ...
+
+public OnGameModeInit()
+{
+    // ...
+
+    // Create a connection to a database
+    g_DBConnectionHandle = db_open("example.db");
+
+    // If connection to the database exists
+    if (g_DBConnectionHandle)
+    {
+        // Successfully created a connection to the database
+        print("Successfully created a connection to database \"example.db\".");
+        printf("Calculated sum: %d", Examples_CalculateSum(g_DBConnectionHandle));
+    }
+    else
+    {
+        // Failed to create a connection to the database
+        print("Failed to open a connection to database \"example.db\".");
+    }
+
+    // ...
+
+    return 1;
+}
+
+public OnGameModeExit()
+{
+    // Close the connection to the database if connection is open
+    if (db_close(g_DBConnectionHandle))
+    {
+        // Extra cleanup
+        g_DBConnectionHandle = DB:0;
+    }
+
+    // ...
+
+    return 1;
+}
+```
 
 ## Notes
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
-references.
+Using an invalid handle other than zero will crash your server!
+Get a valid database connection handle by using [db_query](db_query).
 
 :::
 
 ## Related Functions
 
-- db_open: Open a connection to an SQLite database
-- db_close: Close the connection to an SQLite database
-- db_query: Query an SQLite database
-- db_free_result: Free result memory from a db_query
-- db_num_rows: Get the number of rows in a result
-- db_next_row: Move to the next row
-- db_num_fields: Get the number of fields in a result
-- db_field_name: Returns the name of a field at a particular index
-- db_get_field: Get content of field with specified ID from current result row
-- db_get_field_assoc: Get content of field with specified name from current result row
-- db_get_field_int: Get content of field as an integer with specified ID from current result row
-- db_get_field_assoc_int: Get content of field as an integer with specified name from current result row
-- db_get_field_float: Get content of field as a float with specified ID from current result row
-- db_get_field_assoc_float: Get content of field as a float with specified name from current result row
-- db_get_mem_handle: Get memory handle for an SQLite database that was opened with db_open.
-- db_get_result_mem_handle: Get memory handle for an SQLite query that was executed with db_query.
-- db_debug_openfiles
-- db_debug_openresults
+*Replace me*
