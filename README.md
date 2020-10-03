@@ -38,7 +38,7 @@
 - Node.js
 - npm
 
-## Setup
+### Setup
 
 ```bash
 # clone the project
