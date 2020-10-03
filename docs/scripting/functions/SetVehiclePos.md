@@ -40,6 +40,6 @@ An empty vehicle will not fall after being teleported into the air.
 
 ## Related Functions
 
-- SetPlayerPos: Set a player's position.
-- GetVehiclePos: Get the position of a vehicle.
-- SetVehicleZAngle: Set the direction of a vehicle.
+- [SetPlayerPos](../../scripting/functions/SetPlayerPos.md): Set a player's position.
+- [GetVehiclePos](../../scripting/functions/GetVehiclePos.md): Get the position of a vehicle.
+- [SetVehicleZAngle](../../scripting/functions/SetVehicleZAngle.md): Set the direction of a vehicle.
