@@ -15,12 +15,12 @@ This feature (player-textdraws) was added in SA-MP 0.3e and will not work in ear
 
 Sets the width and height of the letters in a player-textdraw.
 
-| Name     | Description                                                          |
-| -------- | -------------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | playerid | The ID of the player whose player-textdraw to set the letter size of |
-| text     | The ID of the player-textdraw to change the letter size of           |
-| Float:x  | Width of a char.                                                     |
-| Float:y  | Height of a char.                                                    |
+| text | The ID of the player-textdraw to change the letter size of |
+| Float:x | Width of a char. |
+| Float:y | Height of a char. |
 
 ## Returns
 

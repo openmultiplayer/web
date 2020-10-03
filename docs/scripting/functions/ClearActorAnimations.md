@@ -15,8 +15,8 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Clear any animations applied to an actor.
 
-| Name    | Description                                                                |
-| ------- | -------------------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | actorid | The ID of the actor (returned by CreateActor) to clear the animations for. |
 
 ## Returns

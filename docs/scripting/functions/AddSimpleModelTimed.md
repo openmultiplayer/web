@@ -15,15 +15,15 @@ This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions
 
 Adds a new custom simple object model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
 
-| Name         | Description                                                                                                                 |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| virtualworld | The virtual world ID to make the model available at. Use -1 for all worlds.                                                 |
-| baseid       | The base object model ID to use (original object to use when download is failed).                                           |
-| newid        | The new object model ID ranged from -1000 to -30000 (29000 slots) to be used later with CreateObject or CreatePlayerObject. |
-| dffname      | Name of the .dff model collision file located in models server folder by default (artpath setting).                         |
-| txdname      | Name of the .txd model texture file located in models server folder by default (artpath setting).                           |
-| timeon       | The world game time (hour) this object will appear                                                                          |
-| timeoff      | The world game time (hour) this object will disappear                                                                       |
+| Name | Description |
+| --- | --- |
+| virtualworld | The virtual world ID to make the model available at. Use -1 for all worlds. |
+| baseid | The base object model ID to use (original object to use when download is failed). |
+| newid | The new object model ID ranged from -1000 to -30000 (29000 slots) to be used later with CreateObject or CreatePlayerObject. |
+| dffname | Name of the .dff model collision file located in models server folder by default (artpath setting). |
+| txdname | Name of the .txd model texture file located in models server folder by default (artpath setting). |
+| timeon | The world game time (hour) this object will appear |
+| timeoff | The world game time (hour) this object will disappear |
 
 ## Returns
 
@@ -45,8 +45,7 @@ public OnGameModeInit()
 
 :::tip
 
-useartwork must be enabled first in server settings in order for this to work
-When virtualworld is set, the models will be downloaded once the player enters the specific world
+useartwork must be enabled first in server settings in order for this to work When virtualworld is set, the models will be downloaded once the player enters the specific world
 
 :::
 

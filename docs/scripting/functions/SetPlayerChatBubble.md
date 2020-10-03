@@ -15,13 +15,13 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Creates a chat bubble above a player's name tag.
 
-| Name         | Description                                                      |
-| ------------ | ---------------------------------------------------------------- |
-| playerid     | The player which should have the chat bubble.                    |
-| text[]       | The text to display.                                             |
-| color        | The text color                                                   |
+| Name | Description |
+| --- | --- |
+| playerid | The player which should have the chat bubble. |
+| text[] | The text to display. |
+| color | The text color |
 | drawdistance | The distance from where players are able to see the chat bubble. |
-| expiretime   | The time in miliseconds the bubble should be displayed for.      |
+| expiretime | The time in miliseconds the bubble should be displayed for. |
 
 ## Returns
 
@@ -47,8 +47,7 @@ You can't see your own chatbubbles. The same applies to attached 3D text labels.
 
 :::tip
 
-You can use color embedding for multiple colors in the message.
-Using '-1' as the color will make the text white (for the simple reason that -1, when represented in hexadecimal notation, is 0xFFFFFFFF).
+You can use color embedding for multiple colors in the message. Using '-1' as the color will make the text white (for the simple reason that -1, when represented in hexadecimal notation, is 0xFFFFFFFF).
 
 :::
 

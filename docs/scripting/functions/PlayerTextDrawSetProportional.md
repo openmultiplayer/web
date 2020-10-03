@@ -15,11 +15,11 @@ This feature (player-textdraws) was added in SA-MP 0.3e and will not work in ear
 
 Appears to scale text spacing to a proportional ratio. Useful when using PlayerTextDrawLetterSize to ensure the text has even character spacing.
 
-| Name     | Description                                                              |
-| -------- | ------------------------------------------------------------------------ |
+| Name | Description |
+| --- | --- |
 | playerid | The ID of the player whose player-textdraw to set the proportionality of |
-| text     | The ID of the player-textdraw to set the proportionality of              |
-| set      | 1 to enable proportionality, 0 to disable.                               |
+| text | The ID of the player-textdraw to set the proportionality of |
+| set | 1 to enable proportionality, 0 to disable. |
 
 ## Returns
 

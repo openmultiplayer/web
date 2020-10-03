@@ -9,10 +9,10 @@ tags: ["pvar"]
 
 Gets an integer player variable's value.
 
-| Name     | Description                                                                 |
-| -------- | --------------------------------------------------------------------------- |
-| playerid | The ID of the player whose player variable to get.                          |
-| varname  | The name of the player variable (case-insensitive). Assigned in SetPVarInt. |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player whose player variable to get. |
+| varname | The name of the player variable (case-insensitive). Assigned in SetPVarInt. |
 
 ## Returns
 

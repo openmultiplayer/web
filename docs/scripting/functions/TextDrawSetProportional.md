@@ -35,8 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-Proportionality is set to 1 by default, you might skip this function if you don't want to disable it.
-If you want to change the proportionality of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+Proportionality is set to 1 by default, you might skip this function if you don't want to disable it. If you want to change the proportionality of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
 
 :::
 

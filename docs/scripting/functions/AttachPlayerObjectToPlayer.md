@@ -9,17 +9,17 @@ tags: ["player"]
 
 The same as AttachObjectToPlayer but for objects which were created for player.
 
-| Name          | Description                                                        |
-| ------------- | ------------------------------------------------------------------ |
-| objectplayer  | The id of the player which is linked with the object.              |
-| objectid      | The objectid you want to attach to the player.                     |
-| attachid      | The id of the player you want to attach to the object.             |
+| Name | Description |
+| --- | --- |
+| objectplayer | The id of the player which is linked with the object. |
+| objectid | The objectid you want to attach to the player. |
+| attachid | The id of the player you want to attach to the object. |
 | Float:OffsetX | The distance between the player and the object in the X direction. |
 | Float:OffsetY | The distance between the player and the object in the Y direction. |
 | Float:OffsetZ | The distance between the player and the object in the Z direction. |
-| Float:RotX    | The X rotation.                                                    |
-| Float:RotY    | The Y rotation.                                                    |
-| Float:RotZ    | The Z rotation.                                                    |
+| Float:RotX | The X rotation. |
+| Float:RotY | The Y rotation. |
+| Float:RotZ | The Z rotation. |
 
 ## Returns
 

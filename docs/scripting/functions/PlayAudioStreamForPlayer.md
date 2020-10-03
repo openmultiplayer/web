@@ -15,15 +15,15 @@ This function was added in SA-MP 0.3d and will not work in earlier versions!
 
 Play an 'audio stream' for a player. Normal audio files also work (e.g. MP3).
 
-| Name           | Description                                                                                                      |
-| -------------- | ---------------------------------------------------------------------------------------------------------------- |
-| playerid       | The ID of the player to play the audio for.                                                                      |
-| url[]          | The url to play. Valid formats are mp3 and ogg/vorbis. A link to a .pls (playlist) file will play that playlist. |
-| Float:PosX     | The X position at which to play the audio. Default 0.0. Has no effect unless usepos is set to 1.                 |
-| Float:PosY     | The Y position at which to play the audio. Default 0.0. Has no effect unless usepos is set to 1.                 |
-| Float:PosZ     | The Z position at which to play the audio. Default 0.0. Has no effect unless usepos is set to 1.                 |
-| Float:distance | The distance over which the audio will be heard. Has no effect unless usepos is set to 1.                        |
-| usepos         | Use the positions and distance specified. Default disabled (0).                                                  |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to play the audio for. |
+| url[] | The url to play. Valid formats are mp3 and ogg/vorbis. A link to a .pls (playlist) file will play that playlist. |
+| Float:PosX | The X position at which to play the audio. Default 0.0. Has no effect unless usepos is set to 1. |
+| Float:PosY | The Y position at which to play the audio. Default 0.0. Has no effect unless usepos is set to 1. |
+| Float:PosZ | The Z position at which to play the audio. Default 0.0. Has no effect unless usepos is set to 1. |
+| Float:distance | The distance over which the audio will be heard. Has no effect unless usepos is set to 1. |
+| usepos | Use the positions and distance specified. Default disabled (0). |
 
 ## Returns
 

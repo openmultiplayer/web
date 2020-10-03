@@ -15,10 +15,10 @@ This function was added in SA-MP 0.3c and will not work in earlier versions!
 
 Remove an attached object from a player.
 
-| Name     | Description                                                           |
-| -------- | --------------------------------------------------------------------- |
-| playerid | The ID of the player to remove the object from.                       |
-| index    | The index of the object to remove (set with SetPlayerAttachedObject). |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to remove the object from. |
+| index | The index of the object to remove (set with SetPlayerAttachedObject). |
 
 ## Returns
 

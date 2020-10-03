@@ -15,18 +15,18 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Creates a 3D Text Label only for a specific player
 
-| Name            | Description                                                                     |
-| --------------- | ------------------------------------------------------------------------------- |
-| playerid        | The player which should see the newly created 3DText Label.                     |
-| text[]          | The text to display.                                                            |
-| color           | The text color                                                                  |
-| x               | X Coordinate (or offset if attached)                                            |
-| y               | Y Coordinate (or offset if attached)                                            |
-| z               | Z Coordinate (or offset if attached)                                            |
-| DrawDistance    | The distance where you are able to see the 3D Text Label                        |
-| attachedplayer  | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
+| Name | Description |
+| --- | --- |
+| playerid | The player which should see the newly created 3DText Label. |
+| text[] | The text to display. |
+| color | The text color |
+| x | X Coordinate (or offset if attached) |
+| y | Y Coordinate (or offset if attached) |
+| z | Z Coordinate (or offset if attached) |
+| DrawDistance | The distance where you are able to see the 3D Text Label |
+| attachedplayer | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID) |
 | attachedvehicle | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
-| testLOS         | 0/1 Test the line-of-sight so this text can't be seen through walls             |
+| testLOS | 0/1 Test the line-of-sight so this text can't be seen through walls |
 
 ## Returns
 

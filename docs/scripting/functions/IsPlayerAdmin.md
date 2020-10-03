@@ -15,8 +15,7 @@ Check if a player is logged in as an RCON admin.
 
 ## Returns
 
-1: Player is an RCON admin.
-0: Player is NOT an RCON admin.
+1: Player is an RCON admin. 0: Player is NOT an RCON admin.
 
 ## Examples
 

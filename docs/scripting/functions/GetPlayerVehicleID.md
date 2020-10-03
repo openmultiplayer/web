@@ -9,8 +9,8 @@ tags: ["player", "vehicle"]
 
 This function gets the ID of the vehicle the player is currently in. Note: NOT the model id of the vehicle. See GetVehicleModel for that.
 
-| Name     | Description                                                        |
-| -------- | ------------------------------------------------------------------ |
+| Name | Description |
+| --- | --- |
 | playerid | The ID of the player in the vehicle that you want to get the ID of |
 
 ## Returns

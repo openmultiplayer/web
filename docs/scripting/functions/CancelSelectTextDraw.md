@@ -15,8 +15,8 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Cancel textdraw selection with the mouse
 
-| Name     | Description                                                         |
-| -------- | ------------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | playerid | The ID of the player that should be the textdraw selection disabled |
 
 ## Returns

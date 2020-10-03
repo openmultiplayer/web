@@ -2,12 +2,12 @@
 id: SetPlayerAttachedObject
 title: SetPlayerAttachedObject
 description: Attach an object to a specific bone on a player.
-tags: ['player']
+tags: ["player"]
 ---
 
 :::warning
 
-This function was added in SA-MP 0.3c  and will not work in earlier versions!
+This function was added in SA-MP 0.3c and will not work in earlier versions!
 
 :::
 
@@ -15,33 +15,29 @@ This function was added in SA-MP 0.3c  and will not work in earlier versions!
 
 Attach an object to a specific bone on a player.
 
-
 | Name | Description |
-|------|-------------|
-|playerid | The ID of the player to attach the object to.|
-|index | The index (slot) to assign the object to (0-9 since 0.3d, 0-4 in previous versions).|
-|modelid | The model to attach.|
-|bone | The bone to attach the object to.|
-|fOffsetX | (optional) X axis offset for the object position.|
-|fOffsetY | (optional) Y axis offset for the object position.|
-|fOffsetZ | (optional) Z axis offset for the object position.|
-|fRotX | (optional) X axis rotation of the object.|
-|fRotY | (optional) Y axis rotation of the object.|
-|fRotZ | (optional) Z axis rotation of the object.|
-|fScaleX | (optional) X axis scale of the object.|
-|fScaleY | (optional) Y axis scale of the object.|
-|fScaleZ | (optional) Z axis scale of the object.|
-|materialcolor1 | (optional) The first object color to set, as an integer or hex in ARGB color format.|
-|materialcolor2 | (optional) The second object color to set, as an integer or hex in ARGB color format|
-
+| --- | --- |
+| playerid | The ID of the player to attach the object to. |
+| index | The index (slot) to assign the object to (0-9 since 0.3d, 0-4 in previous versions). |
+| modelid | The model to attach. |
+| bone | The bone to attach the object to. |
+| fOffsetX | (optional) X axis offset for the object position. |
+| fOffsetY | (optional) Y axis offset for the object position. |
+| fOffsetZ | (optional) Z axis offset for the object position. |
+| fRotX | (optional) X axis rotation of the object. |
+| fRotY | (optional) Y axis rotation of the object. |
+| fRotZ | (optional) Z axis rotation of the object. |
+| fScaleX | (optional) X axis scale of the object. |
+| fScaleY | (optional) Y axis scale of the object. |
+| fScaleZ | (optional) Z axis scale of the object. |
+| materialcolor1 | (optional) The first object color to set, as an integer or hex in ARGB color format. |
+| materialcolor2 | (optional) The second object color to set, as an integer or hex in ARGB color format |
 
 ## Returns
 
 1 on success, 0 on failure.
 
-
 ## Examples
-
 
 ```c
 public OnPlayerSpawn(playerid)
@@ -58,7 +54,6 @@ public OnPlayerSpawn(playerid)
 #define IsPlayerHoldingObject(%1) IsPlayerAttachedObjectSlotUsed(%1,MAX_PLAYER_ATTACHED_OBJECTS-1)
 ```
 
-
 ## Notes
 
 :::tip
@@ -67,17 +62,14 @@ This function is separate from the CreateObject / CreatePlayerObject pools.
 
 :::
 
-
 :::warning
 
 In version 0.3d and onwards, 10 objects can be attached to a single player (index 0-9). In earlier versions, the limit is 5 (index 0-4).
 
 :::
 
-
 ## Related Functions
 
-
--  RemovePlayerAttachedObject: Remove an attached object from a player
--  IsPlayerAttachedObjectSlotUsed: Check whether an object is attached to a player in a specified index
--  EditAttachedObject: Edit an attached object.
+- RemovePlayerAttachedObject: Remove an attached object from a player
+- IsPlayerAttachedObjectSlotUsed: Check whether an object is attached to a player in a specified index
+- EditAttachedObject: Edit an attached object.

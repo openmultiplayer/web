@@ -15,12 +15,12 @@ This function starts with lowercase letter.
 
 Find a filename matching a pattern.
 
-| Name          | Description                                                    |
-| ------------- | -------------------------------------------------------------- |
-| name          | The string to hold the result in, returned as a packed string. |
-| const pattern | The pattern that should be matched. May contain wildcards.     |
-| index         | The number of the file, in case there are multiple matches.    |
-| size          | The maximum size of parameter name                             |
+| Name | Description |
+| --- | --- |
+| name | The string to hold the result in, returned as a packed string. |
+| const pattern | The pattern that should be matched. May contain wildcards. |
+| index | The number of the file, in case there are multiple matches. |
+| size | The maximum size of parameter name |
 
 ## Returns
 

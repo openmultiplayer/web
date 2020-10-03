@@ -7,8 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-This callback is called **only** when vehicle **re**spawns!
-CreateVehicle and AddStaticVehicle(Ex) **won't** trigger this callback.
+This callback is called **only** when vehicle **re**spawns! CreateVehicle and AddStaticVehicle(Ex) **won't** trigger this callback.
 
 :::
 

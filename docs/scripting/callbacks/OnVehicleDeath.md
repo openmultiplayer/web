@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 This callback is called when a vehicle is destroyed - either by exploding or becoming submerged in water.
 
-| Name      | Description                                                                                                                                                     |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vehicleid | The ID of the vehicle that was destroyed.                                                                                                                       |
-| killerid  | The ID of the player that reported (synced) the vehicle's destruction (name is misleading). Generally the driver or a passenger (if any) or the closest player. |
+| Name | Description |
+| --- | --- |
+| vehicleid | The ID of the vehicle that was destroyed. |
+| killerid | The ID of the player that reported (synced) the vehicle's destruction (name is misleading). Generally the driver or a passenger (if any) or the closest player. |
 
 ## Returns
 

@@ -15,19 +15,15 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Display the cursor and allow the player to select an object. OnPlayerSelectObject is called when the player selects an object.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player that should be able to select the object|
-
+| Name     | Description                                                   |
+| -------- | ------------------------------------------------------------- |
+| playerid | The ID of the player that should be able to select the object |
 
 ## Returns
 
 This function does not return any specific values.
 
-
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -42,15 +38,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## Related Functions
 
-
--  CreateObject: Create an object.
--  DestroyObject: Destroy an object.
--  MoveObject: Move an object.
--  EditObject: Edit an object.
--  EditPlayerObject: Edit an object.
--  EditAttachedObject: Edit an attached object.
--  CancelEdit: Cancel the edition of an object.
--  OnPlayerSelectObject: Called when a player selected an object.
+- CreateObject: Create an object.
+- DestroyObject: Destroy an object.
+- MoveObject: Move an object.
+- EditObject: Edit an object.
+- EditPlayerObject: Edit an object.
+- EditAttachedObject: Edit an attached object.
+- CancelEdit: Cancel the edition of an object.
+- OnPlayerSelectObject: Called when a player selected an object.

@@ -9,9 +9,9 @@ tags: ["player"]
 
 This function allows to set players special action.
 
-| Name     | Description                                                            |
-| -------- | ---------------------------------------------------------------------- |
-| playerid | The player that should perform the action                              |
+| Name | Description |
+| --- | --- |
+| playerid | The player that should perform the action |
 | actionid | The [action](../resources/specialactions.md) that should be performed. |
 
 ## Returns

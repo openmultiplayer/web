@@ -15,14 +15,14 @@ This function starts with lowercase letter.
 
 Change the current position in the file. You can either seek forward or backward through the file.
 
-| Name         | Description                                                                                                           |
-| ------------ | --------------------------------------------------------------------------------------------------------------------- |
-| handle       | The file handle to use. Returned by fopen.                                                                            |
-| position     | The new position in the file, relative to the parameter whence (see below).                                           |
-| whence       | The starting position to which parameter position relates.                                                            |
-| seek_start   | Set the file position relative to the start of the file (the position parameter must be positive).                    |
+| Name | Description |
+| --- | --- |
+| handle | The file handle to use. Returned by fopen. |
+| position | The new position in the file, relative to the parameter whence (see below). |
+| whence | The starting position to which parameter position relates. |
+| seek_start | Set the file position relative to the start of the file (the position parameter must be positive). |
 | seek_current | Set the file position relative to the current file position: the position parameter is added to the current position. |
-| seek_end     | Set the file position relative to the end of the file (parameter position must be zero or negative).                  |
+| seek_end | Set the file position relative to the end of the file (parameter position must be zero or negative). |
 
 ## Returns
 

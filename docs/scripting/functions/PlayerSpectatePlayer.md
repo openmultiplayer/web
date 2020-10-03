@@ -9,11 +9,11 @@ tags: ["player"]
 
 Makes a player spectate (watch) another player.
 
-| Name           | Description                                                                                  |
-| -------------- | -------------------------------------------------------------------------------------------- |
-| playerid       | The ID of the player that will spectate.                                                     |
-| targetplayerid | The ID of the player that should be spectated.                                               |
-| mode           | The [mode](../resources/spectatemodes.md) to spectate with (optional; defaults to 'normal'). |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player that will spectate. |
+| targetplayerid | The ID of the player that should be spectated. |
+| mode | The [mode](../resources/spectatemodes.md) to spectate with (optional; defaults to 'normal'). |
 
 ## Returns
 
@@ -36,8 +36,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::warning
 
-Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectatePlayer.
-playerid and targetplayerid's virtual world and interior must be the same for this function to work properly.
+Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectatePlayer. playerid and targetplayerid's virtual world and interior must be the same for this function to work properly.
 
 :::
 

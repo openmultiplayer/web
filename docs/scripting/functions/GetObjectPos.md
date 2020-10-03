@@ -9,9 +9,9 @@ tags: []
 
 Get the position of an object.
 
-| Name     | Description                                                         |
-| -------- | ------------------------------------------------------------------- |
-| objectid | The ID of the object to get the position of..                       |
+| Name | Description |
+| --- | --- |
+| objectid | The ID of the object to get the position of.. |
 | &Float:X | A variable in which to store the X coordinate, passed by reference. |
 | &Float:Y | A variable in which to store the Y coordinate, passed by reference. |
 | &Float:Z | A variable in which to store the Z coordinate, passed by reference. |

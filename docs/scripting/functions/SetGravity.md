@@ -9,8 +9,8 @@ tags: []
 
 Set the gravity for all players.
 
-| Name          | Description                                                       |
-| ------------- | ----------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | Float:gravity | The value that the gravity should be set to (between -50 and 50). |
 
 ## Returns

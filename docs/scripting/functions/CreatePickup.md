@@ -9,13 +9,13 @@ tags: []
 
 This function does exactly the same as AddStaticPickup, except it returns a pickup ID which can be used to destroy it afterwards and be tracked using OnPlayerPickUpPickup.
 
-| Name         | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| model        | The model of the pickup.                                                          |
-| type         | The pickup spawn type.                                                            |
-| Float:X      | The X coordinate to create the pickup at.                                         |
-| Float:Y      | The Y coordinate to create the pickup at.                                         |
-| Float:Z      | The Z coordinate to create the pickup at.                                         |
+| Name | Description |
+| --- | --- |
+| model | The model of the pickup. |
+| type | The pickup spawn type. |
+| Float:X | The X coordinate to create the pickup at. |
+| Float:Y | The Y coordinate to create the pickup at. |
+| Float:Z | The Z coordinate to create the pickup at. |
 | virtualworld | The virtual world ID of the pickup. Use -1 to make the pickup show in all worlds. |
 
 ## Returns
@@ -43,10 +43,7 @@ pickup = 0; // pickup variable needs to be reset to avoid future conflicts
 
 :::tip
 
-The only type of pickup that can be picked up from inside a vehicle is 14 (except for special pickups such as bribes).
-Pickups are shown to, and can be picked up by all players.
-It is possible that if DestroyPickup() is used when a pickup is picked up, more than one player can pick up the pickup, due to lag. This can be circumvented through the use of variables.
-Certain pickup types come with 'automatic responses', for example using an M4 model in the pickup will automatically give the player the weapon and some ammo. For fully scripted pickups, type 1 should be used.
+The only type of pickup that can be picked up from inside a vehicle is 14 (except for special pickups such as bribes). Pickups are shown to, and can be picked up by all players. It is possible that if DestroyPickup() is used when a pickup is picked up, more than one player can pick up the pickup, due to lag. This can be circumvented through the use of variables. Certain pickup types come with 'automatic responses', for example using an M4 model in the pickup will automatically give the player the weapon and some ammo. For fully scripted pickups, type 1 should be used.
 
 :::
 

@@ -15,8 +15,8 @@ This function starts with lowercase letter.
 
 Closes an SQLite database that was opened with db_open.
 
-| Name  | Description                                                           |
-| ----- | --------------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | DB:db | The handle of the database connection to close (returned by db_open). |
 
 ## Returns
@@ -61,8 +61,7 @@ public OnGameModeExit()
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_open. But it's protected against NULL
-references.
+Using an invalid handle will crash your server! Get a valid handle by using db_open. But it's protected against NULL references.
 
 :::
 

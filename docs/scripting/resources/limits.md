@@ -7,28 +7,28 @@ tags: []
 
 ## In-game Entities
 
-| Type                                                          | Limit           |
-| ------------------------------------------------------------- | --------------- |
-| Players                                                       | 1000            |
-| Vehicles (4)(6)                                               | 2000            |
-| Vehicle Models (1)                                            | Unlimited       |
-| Objects (4)(6)                                                | 1000            |
-| Virtual Worlds                                                | 2,147,483,647   |
-| Interiors                                                     | 256             |
-| Classes                                                       | 320             |
-| Map Icons (4)                                                 | 100             |
-| Race Checkpoints (4)                                          | 1               |
-| Checkpoints (4)                                               | 1               |
-| Pickups (4)                                                   | 4096            |
-| Global 3D Labels (4)                                          | 1024            |
-| Per-player 3D Text Labels (4)                                 | 1024            |
-| Chat Bubble String                                            | 144 characters  |
+| Type | Limit |
+| --- | --- |
+| Players | 1000 |
+| Vehicles (4)(6) | 2000 |
+| Vehicle Models (1) | Unlimited |
+| Objects (4)(6) | 1000 |
+| Virtual Worlds | 2,147,483,647 |
+| Interiors | 256 |
+| Classes | 320 |
+| Map Icons (4) | 100 |
+| Race Checkpoints (4) | 1 |
+| Checkpoints (4) | 1 |
+| Pickups (4) | 4096 |
+| Global 3D Labels (4) | 1024 |
+| Per-player 3D Text Labels (4) | 1024 |
+| Chat Bubble String | 144 characters |
 | SetObjectMaterialText,SetPlayerObjectMaterialText Text length | 2048 characters |
-| Gangzones                                                     | 1024            |
-| Menus                                                         | 128             |
-| Attached player objects                                       | 10              |
-| Player Variables                                              | 800             |
-| Actors (since 0.3.7) (4)(5)                                   | 1000            |
+| Gangzones | 1024 |
+| Menus | 128 |
+| Attached player objects | 10 |
+| Player Variables | 800 |
+| Actors (since 0.3.7) (4)(5) | 1000 |
 
 ## Server Properties
 

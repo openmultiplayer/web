@@ -15,12 +15,12 @@ This function starts with lowercase letter.
 
 Compares two strings to see if they are the same.
 
-| Name                  | Description                                                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| string1               | The first string to compare.                                                                                                                |
-| string2               | The second string to compare.                                                                                                               |
-| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same.                                   |
-| length (optional)     | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
+| Name | Description |
+| --- | --- |
+| string1 | The first string to compare. |
+| string2 | The second string to compare. |
+| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same. |
+| length (optional) | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
 
 ## Returns
 
@@ -53,8 +53,7 @@ if(!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
 :::warning
 
-This function returns 0 if either string is empty. Check for null strings with isnull().
-If you compare strings from a text file, you should take in to account the 'carriage return' and 'new line' special characters (\r \n), as they are included, when using fread.
+This function returns 0 if either string is empty. Check for null strings with isnull(). If you compare strings from a text file, you should take in to account the 'carriage return' and 'new line' special characters (\r \n), as they are included, when using fread.
 
 :::
 

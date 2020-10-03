@@ -59,8 +59,7 @@ public OnGameModeExit()
 
 :::warning
 
-It will create a new SQLite database, if there is no SQLite database with the same file name available. Close your
-database connection with db_close!
+It will create a new SQLite database, if there is no SQLite database with the same file name available. Close your database connection with db_close!
 
 :::
 

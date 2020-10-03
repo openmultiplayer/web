@@ -15,16 +15,16 @@ This function was added in SA-MP 0.3c and will not work in earlier versions!
 
 Attach an object to a vehicle.
 
-| Name          | Description                                                                                                                                   |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| objectid      | The ID of the object to attach to the vehicle. Note that this is an object ID, not a model ID. The object must be CreateObject created first. |
-| vehicleid     | The ID of the vehicle to attach the object to.                                                                                                |
-| Float:OffsetX | The X axis offset from the vehicle to attach the object to.                                                                                   |
-| Float:OffsetY | The Y axis offset from the vehicle to attach the object to.                                                                                   |
-| Float:OffsetZ | The Z axis offset from the vehicle to attach the object to.                                                                                   |
-| Float:RotX    | The X rotation offset for the object.                                                                                                         |
-| Float:RotY    | The Y rotation offset for the object.                                                                                                         |
-| Float:RotZ    | The Z rotation offset for the object.                                                                                                         |
+| Name | Description |
+| --- | --- |
+| objectid | The ID of the object to attach to the vehicle. Note that this is an object ID, not a model ID. The object must be CreateObject created first. |
+| vehicleid | The ID of the vehicle to attach the object to. |
+| Float:OffsetX | The X axis offset from the vehicle to attach the object to. |
+| Float:OffsetY | The Y axis offset from the vehicle to attach the object to. |
+| Float:OffsetZ | The Z axis offset from the vehicle to attach the object to. |
+| Float:RotX | The X rotation offset for the object. |
+| Float:RotY | The Y rotation offset for the object. |
+| Float:RotZ | The Z rotation offset for the object. |
 
 ## Returns
 

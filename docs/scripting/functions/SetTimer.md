@@ -9,11 +9,11 @@ tags: []
 
 Sets a 'timer' to call a function after some time. Can be set to repeat.
 
-| Name       | Description                                                                                                                     |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | funcname[] | Name of the function to call as a string. This must be a public function (forwarded). A null string here will crash the server. |
-| interval   | Interval in milliseconds.                                                                                                       |
-| repeating  | Boolean (true/false) on whether the timer should repeat or not.                                                                 |
+| interval | Interval in milliseconds. |
+| repeating | Boolean (true/false) on whether the timer should repeat or not. |
 
 ## Returns
 
@@ -40,10 +40,7 @@ public message()
 
 :::tip
 
-Timer intervals are not accurate (roughly 25% off). There are fixes available here and here.
-Timer IDs are never used twice. You can use KillTimer() on a timer ID and it won't matter if it's running or not.
-The function that should be called, must be public, meaning it has to be forwarded.
-The use of many timers will result in increased memory/cpu usage.
+Timer intervals are not accurate (roughly 25% off). There are fixes available here and here. Timer IDs are never used twice. You can use KillTimer() on a timer ID and it won't matter if it's running or not. The function that should be called, must be public, meaning it has to be forwarded. The use of many timers will result in increased memory/cpu usage.
 
 :::
 

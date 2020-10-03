@@ -21,8 +21,7 @@ This will compile fine.
 #assert MOO > 5
 ```
 
-That won't and will give a fatal error.
-This is similar to:
+That won't and will give a fatal error. This is similar to:
 
 ```c
 #define MOO 1
@@ -107,8 +106,7 @@ Which converts to:
 printf("%d", MOO(5 + 6 * 7));
 ```
 
-Which, due to the order of operations, compules as (5 + (6 \* 7)), whiche is 47 and very wrong.
-One interesting fact about the parameters is that if you have too many, the last one is all the extra ones. So doing:
+Which, due to the order of operations, compules as (5 + (6 \* 7)), whiche is 47 and very wrong. One interesting fact about the parameters is that if you have too many, the last one is all the extra ones. So doing:
 
 ```c
 #define PP(%0,%1) \
@@ -147,9 +145,7 @@ As `%1` contains "hi", "hello", "hi". You may have also noticed the use of `#` t
 
 ## `#emit`
 
-This directive is unlisted in the pawn-lang.pdf table however does exist. It is basically an inline compiler. If you know AMX you can use this to put AMX opcodes directly into your code. The one limitation is that is allows only one argument.
-Syntax: `#emit <opcode> <argument>`.
-`<argument>` can be a rational number, integer or (local or global) symbol(variables, functions and labels). The list of opcodes and their meaning can be found in Pawn Toolkit ver. 3664.
+This directive is unlisted in the pawn-lang.pdf table however does exist. It is basically an inline compiler. If you know AMX you can use this to put AMX opcodes directly into your code. The one limitation is that is allows only one argument. Syntax: `#emit <opcode> <argument>`. `<argument>` can be a rational number, integer or (local or global) symbol(variables, functions and labels). The list of opcodes and their meaning can be found in Pawn Toolkit ver. 3664.
 
 ## `#endif`
 
@@ -252,16 +248,16 @@ This is one of the most complex directives. It has a number of options to contro
 
 That changes the escape character from \ to $, so a new line, instead of being "\r\n" (windows CR-LF) would be "$r\$n". Many of the options are designed to control amx compilation for embedded systems and so limit things which are really almost unlimited on a PC, they are all listed in pawn-lang.pdf but only selected ones relevant to SA:MP are here:
 
-| Name       | Values                        | Description                                                                                                                                                                                                                                                                                                                                                             |
-| ---------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| codepage   | name/value                    | Sets the Unicode codepage to use for strings.                                                                                                                                                                                                                                                                                                                           |
-| compress   | 1/0                           | Unsupported in SA-MP - don't try to use it.                                                                                                                                                                                                                                                                                                                             |
-| deprecated | symbol                        | Generated a warning if the given symbol is used to tell people there's a better version available.                                                                                                                                                                                                                                                                      |
-| dynamic    | value(generally a power of 2) | Sets the size of memory (in cells) assigned to the stack and heap. Required if you get excess memory usage warning after compilation. (A weird table after the compiler copyright line)                                                                                                                                                                                 |
-| library    | dll name                      | Widley incorrectly used in SA-MP. This specifies the dll to get the native functions defined in the file it is from. It does not define a file **as** a library.                                                                                                                                                                                                        |
-| pack       | 1/0                           | Swap the meanings of !"" and "". See pawn-lang.pdf for more information on packed strings.                                                                                                                                                                                                                                                                              |
-| tabsize    | value                         | Another widely misused setting. This should be used to set the size of a tab to avoid compiler warnings which are wrong due to spaces and tabs being used interchangably. This is set to 4 in SA:MP as that is the size of a tab in pawno. Setting this to 0 will surpress all your indentation warnings but is highly unadvised as it allows entirely unreadable code. |
-| unused     | symbol                        | Like deprecated this appears after the symbol you wish to surpress the "symbol is never used" warning for. Generally the preferred method of doing this is by using stock however this is not always applicable (e.g. function parameters cannot not be compiled).                                                                                                      |
+| Name | Values | Description |
+| --- | --- | --- |
+| codepage | name/value | Sets the Unicode codepage to use for strings. |
+| compress | 1/0 | Unsupported in SA-MP - don't try to use it. |
+| deprecated | symbol | Generated a warning if the given symbol is used to tell people there's a better version available. |
+| dynamic | value(generally a power of 2) | Sets the size of memory (in cells) assigned to the stack and heap. Required if you get excess memory usage warning after compilation. (A weird table after the compiler copyright line) |
+| library | dll name | Widley incorrectly used in SA-MP. This specifies the dll to get the native functions defined in the file it is from. It does not define a file **as** a library. |
+| pack | 1/0 | Swap the meanings of !"" and "". See pawn-lang.pdf for more information on packed strings. |
+| tabsize | value | Another widely misused setting. This should be used to set the size of a tab to avoid compiler warnings which are wrong due to spaces and tabs being used interchangably. This is set to 4 in SA:MP as that is the size of a tab in pawno. Setting this to 0 will surpress all your indentation warnings but is highly unadvised as it allows entirely unreadable code. |
+| unused | symbol | Like deprecated this appears after the symbol you wish to surpress the "symbol is never used" warning for. Generally the preferred method of doing this is by using stock however this is not always applicable (e.g. function parameters cannot not be compiled). |
 
 ### Deprecated
 

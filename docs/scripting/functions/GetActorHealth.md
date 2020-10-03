@@ -15,9 +15,9 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Get the health of an actor.
 
-| Name          | Description                                                                     |
-| ------------- | ------------------------------------------------------------------------------- |
-| actorid       | The ID of the actor to get the health of.                                       |
+| Name | Description |
+| --- | --- |
+| actorid | The ID of the actor to get the health of. |
 | &Float:health | A float variable, passed by reference, in to which to store the actor's health. |
 
 ## Returns

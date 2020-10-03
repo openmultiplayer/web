@@ -15,9 +15,9 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Connect an NPC to the server.
 
-| Name     | Description                                                                              |
-| -------- | ---------------------------------------------------------------------------------------- |
-| name[]   | The name the NPC should connect as. Must follow the same rules as normal player names.   |
+| Name | Description |
+| --- | --- |
+| name[] | The name the NPC should connect as. Must follow the same rules as normal player names. |
 | script[] | The NPC script name that is located in the npcmodes folder (without the .amx extension). |
 
 ## Returns

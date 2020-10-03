@@ -9,9 +9,9 @@ tags: []
 
 Clears all animations for the given player (it also cancels all current tasks such as jetpacking,parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.. ).
 
-| Name      | Description                                                                                        |
-| --------- | -------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player to clear the animations of.                                                   |
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to clear the animations of. |
 | forcesync | Set to 1 to force playerid to sync the animation with other players in streaming radius (optional) |
 
 ## Returns

@@ -9,15 +9,15 @@ tags: []
 
 Creates an object at specified coordinates in the game world.
 
-| Name               | Description                                                                                                                                                                |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid            | The model to create.                                                                                                                                                       |
-| Float:X            | The X coordinate to create the object at.                                                                                                                                  |
-| Float:Y            | The Y coordinate to create the object at.                                                                                                                                  |
-| Float:Z            | The Z coordinate to create the object at.                                                                                                                                  |
-| Float:rX           | The X rotation of the object.                                                                                                                                              |
-| Float:rY           | The Y rotation of the object.                                                                                                                                              |
-| Float:rZ           | The Z rotation of the object.                                                                                                                                              |
+| Name | Description |
+| --- | --- |
+| modelid | The model to create. |
+| Float:X | The X coordinate to create the object at. |
+| Float:Y | The Y coordinate to create the object at. |
+| Float:Z | The Z coordinate to create the object at. |
+| Float:rX | The X rotation of the object. |
+| Float:rY | The Y rotation of the object. |
+| Float:rZ | The Z rotation of the object. |
 | Float:DrawDistance | (optional) The distance that San Andreas renders objects at. 0.0 will cause objects to render at their default distances. Usable since 0.3b. Limited to 300 prior to 0.3x. |
 
 ## Examples

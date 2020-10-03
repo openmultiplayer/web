@@ -15,12 +15,12 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Get the position of an actor.
 
-| Name    | Description                                                                             |
-| ------- | --------------------------------------------------------------------------------------- |
-| actorid | The ID of the actor to get the position of. Returned by CreateActor.                    |
-| X       | A float variable, passed by reference, in which to store the X coordinate of the actor. |
-| Y       | A float variable, passed by reference, in which to store the Y coordinate of the actor. |
-| Z       | A float variable, passed by reference, in which to store the Z coordinate of the actor. |
+| Name | Description |
+| --- | --- |
+| actorid | The ID of the actor to get the position of. Returned by CreateActor. |
+| X | A float variable, passed by reference, in which to store the X coordinate of the actor. |
+| Y | A float variable, passed by reference, in which to store the Y coordinate of the actor. |
+| Z | A float variable, passed by reference, in which to store the Z coordinate of the actor. |
 
 ## Returns
 

@@ -9,9 +9,9 @@ tags: ["gangzone"]
 
 GangZoneFlashForAll flashes a gangzone for all players.
 
-| Name       | Description                                                                                                |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| zone       | The zone to flash.                                                                                         |
+| Name | Description |
+| --- | --- |
+| zone | The zone to flash. |
 | flashcolor | The color to flash the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
 
 ## Returns
