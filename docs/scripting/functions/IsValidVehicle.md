@@ -7,9 +7,7 @@ tags: []
 
 :::note
 
-This function exists within the SA-MP server, but it has not been defined within the include files. To use this function, you must first declare the appropriate native at the top of your script:
-
-'native IsValidVehicle(vehicleid);'. It is recommended you place this under the inclusion of a_samp.inc
+This function is not present in the old libraries packaged with the SA-MP server however the [latest versions of the maintained libraries](https://github.com/pawn-lang/samp-stdlib) contain this and other formerly missing declarations.
 
 :::
 
