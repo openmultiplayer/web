@@ -57,6 +57,6 @@ Health is obtained rounded to integers: set 50.15, but get 50.0
 
 ## Related Functions
 
-- GetPlayerHealth: Find out how much health a player has.
-- GetPlayerArmour: Find out how much armour a player has.
-- SetPlayerArmour: Set the armour of a player.
+- [GetPlayerHealth](GetPlayerHealth.md): Find out how much health a player has.
+- [GetPlayerArmour](GetPlayerArmour.md): Find out how much armour a player has.
+- [SetPlayerArmour](SetPlayerArmour.md): Set the armour of a player.

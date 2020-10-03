@@ -15,29 +15,26 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Replace the texture of an object with text.
 
-
-| Name | Description |
-|------|-------------|
-|objectid | The ID of the object to replace the texture of with text.|
-|text | The text to show on the object. (MAX 2048 characters)|
-|materialindex | The object's material index to replace with text.|
-|materialsize | The [size](/docs/scripting/resources/materialtextsizes) of the material.|
-|fontface | The font to use.|
-|fontsize | The size of the text (MAX 255).|
-|bold | Bold text. Set to 1 for bold, 0 for not.|
-|fontcolor | The color of the text, in ARGB format.|
-|backcolor | The background color, in ARGB format.|
-|textalignment | The [alignment](/docs/scripting/resources/materialtextalignment) of the text (default: left).|
-
+| Name          | Description                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------- |
+| objectid      | The ID of the object to replace the texture of with text.                                     |
+| text          | The text to show on the object. (MAX 2048 characters)                                         |
+| materialindex | The object's material index to replace with text.                                             |
+| materialsize  | The [size](/docs/scripting/resources/materialtextsizes) of the material.                      |
+| fontface      | The font to use.                                                                              |
+| fontsize      | The size of the text (MAX 255).                                                               |
+| bold          | Bold text. Set to 1 for bold, 0 for not.                                                      |
+| fontcolor     | The color of the text, in ARGB format.                                                        |
+| backcolor     | The background color, in ARGB format.                                                         |
+| textalignment | The [alignment](/docs/scripting/resources/materialtextalignment) of the text (default: left). |
 
 ## Returns
 
- 1: The function was executed successfully.
+1: The function was executed successfully.
 
- 0: The function failed to execute.
+0: The function failed to execute.
 
 ## Examples
-
 
 ```c
 if (strcmp("/text", cmdtext, true) == 0)
@@ -50,7 +47,6 @@ if (strcmp("/text", cmdtext, true) == 0)
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -59,19 +55,16 @@ Color embedding can be used for multiple colors in the text.
 
 :::
 
-
 :::warning
 
 You MUST use ARGB color format, not RGBA like used in client messages etc.
 
 :::
 
-
 ## Related Functions
 
-
--  SetPlayerObjectMaterialText: Replace the texture of a player object with text.
--  SetObjectMaterial: Replace the texture of an object with the texture from another model in the game.
--  Ultimate Creator by Nexius
--  SetObjectMaterialText Editor by RIDE2DAY
--  Fusez's Map Editor by RedFusion
+- [SetPlayerObjectMaterialText](SetPlayerObjectMaterialText.md): Replace the texture of a player object with text.
+- [SetObjectMaterial](SetObjectMaterial.md): Replace the texture of an object with the texture from another model in the game.
+- Ultimate Creator by Nexius
+- SetObjectMaterialText Editor by RIDE2DAY
+- Fusez's Map Editor by RedFusion

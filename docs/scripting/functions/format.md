@@ -58,5 +58,5 @@ This function doesn't support packed strings.
 
 ## Related Functions
 
-- print: Print a basic message to the server logs and console.
-- printf: Print a formatted message into the server logs and console.
+- [print](print): Print a basic message to the server logs and console.
+- [printf](printf): Print a formatted message into the server logs and console.

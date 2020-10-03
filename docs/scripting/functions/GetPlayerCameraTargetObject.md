@@ -62,6 +62,6 @@ This function is disabled by default to save bandwidth. Use EnablePlayerCameraTa
 
 ## Related Functions
 
-- GetPlayerCameraTargetVehicle: Get the ID of the vehicle a player is looking at.
-- GetPlayerCameraTargetPlayer: Get the ID of the player a player is looking at.
-- GetPlayerCameraFrontVector: Get the player's camera front vector
+- [GetPlayerCameraTargetVehicle](GetplayerCameraTargetVehicle): Get the ID of the vehicle a player is looking at.
+- [GetPlayerCameraTargetPlayer](GetplayerCameraTargetPlayer): Get the ID of the player a player is looking at.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

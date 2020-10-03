@@ -36,6 +36,6 @@ if ( existproperty(0, "", 123984334) )
 
 ## Related Functions
 
-- Setproperty: Set a property.
-- Getproperty: Get the value of a property.
-- Deleteproperty: Delete a property.
+- [SetProperty](SetProperty): Set a property.
+- [GetProperty](GetProperty): Get the value of a property.
+- [DeleteProperty](DeleteProperty): Delete a property.

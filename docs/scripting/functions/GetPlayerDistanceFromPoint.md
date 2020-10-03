@@ -50,6 +50,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- IsPlayerInRangeOfPoint: Check whether a player is in range of a point.
-- GetVehicleDistanceFromPoint: Get the distance between a vehicle and a point.
-- GetPlayerPos: Get a player's position.
+- [IsPlayerInRangeOfPoint](IsPlayerInRangeOfPoint): Check whether a player is in range of a point.
+- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint): Get the distance between a vehicle and a point.
+- [GetPlayerPos](GetPlayerPos): Get a player's position.

@@ -15,10 +15,10 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Set a player's special fighting style. To use in-game, aim and press the 'secondary attack' key (ENTER by default).
 
-| Name     | Description                                    |
-| -------- | ---------------------------------------------- |
-| playerid | The ID of player to set the fighting style of. |
-| style    | The fighting [style](../resources/fightingstyles.md) that should be set.         |
+| Name     | Description                                                              |
+| -------- | ------------------------------------------------------------------------ |
+| playerid | The ID of player to set the fighting style of.                           |
+| style    | The fighting [style](../resources/fightingstyles.md) that should be set. |
 
 ## Returns
 
@@ -45,4 +45,4 @@ This does not affect normal fist attacks - only special/secondary attacks (aim +
 
 ## Related Functions
 
-- GetPlayerFightingStyle: Get a player's fighting style.
+- [GetPlayerFightingStyle](scripting/functions/GetPlayerFightingStyle.md): Get a player's fighting style.

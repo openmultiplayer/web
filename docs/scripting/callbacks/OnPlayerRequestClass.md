@@ -42,4 +42,4 @@ This callback is also called when a player presses F4.
 
 ## Related Functions
 
-- [AddPlayerClass](../../scripting/functions/AddPlayerClass.md): Add a class.
+- [AddPlayerClass](../functions/AddPlayerClass.md): Add a class.

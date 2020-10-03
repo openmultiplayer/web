@@ -15,21 +15,17 @@ This function starts with lowercase letter.
 
 Get the current server time, which will be stored in the variables &hour, &minute and &second.
 
-
-| Name | Description |
-|------|-------------|
-|&hour=0 | The variable to store the hour in, passed by reference.|
-|&minute=0 | The variable to store the minute in, passed by reference.|
-|&second=0 | The variable to store the seconds in, passed by reference.|
-
+| Name      | Description                                                |
+| --------- | ---------------------------------------------------------- |
+| &hour=0   | The variable to store the hour in, passed by reference.    |
+| &minute=0 | The variable to store the minute in, passed by reference.  |
+| &second=0 | The variable to store the seconds in, passed by reference. |
 
 ## Returns
 
 The function itself returns a Unix Timestamp.
 
-
 ## Examples
-
 
 ```c
 new Hour, Minute, Second, Timestamp;
@@ -37,7 +33,6 @@ Timestamp = gettime(Hour, Minute, Second);
 printf("%02d:%02d:%02d", Hour, Minute, Second);
 printf("Seconds since midnight 1st January 1970: %d", Timestamp);
 ```
-
 
 ## Notes
 
@@ -47,8 +42,6 @@ This function is useful for measuring time intervals by using its timestamp char
 
 :::
 
-
 ## Related Functions
 
-
--  getdate: Get the current date of the server.
+- [getdate](getdate.md): Get the current date of the server.

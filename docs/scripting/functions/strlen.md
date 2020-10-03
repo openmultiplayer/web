@@ -31,12 +31,12 @@ new stringLength = strlen("This is an example string."); // stringLength is now 
 
 ## Related Functions
 
-- strcmp: Compare two strings to check if they are the same.
-- strfind: Search for a string in another string.
-- strtok: Get the next 'token' (word/parameter) in a string.
-- strdel: Delete part of a string.
-- strins: Insert text into a string.
-- strmid: Extract part of a string into another string.
-- strpack: Pack a string into a destination string.
-- strval: Convert a string into an integer.
-- strcat: Concatenate two strings into a destination reference.
+- [strcmp](strcmp): Compare two strings to check if they are the same.
+- [strfind](strfind): Search for a string in another string.
+- [strtok](strtok): Get the next 'token' (word/parameter) in a string.
+- [strins](../function/strins): Insert text into a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.
+- [strdel](strdel): Delete part of a string.

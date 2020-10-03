@@ -7,8 +7,8 @@ sidebar_label: Textdraws
 ## What is a Textdraw?
 
 As the name implies, a textdraw is text that is drawn on a player's screen.
-Unlike [client messages](../../scripting/functions/SendClientMessage.md) or
-[gametext](../../scripting/functions/GameTextForPlayer.md) however, textdraws
+Unlike [client messages](../functions/SendClientMessage.md) or
+[gametext](../functions/GameTextForPlayer.md) however, textdraws
 can be shown on a player's screen for an indefinite period of time. Textdraws
 can be simple text on the screen such as a website address, or complex scripted
 dynamic textdraws such as progress bars.
@@ -18,64 +18,64 @@ This 'textdraw editor' tool can make designing textdraws much easier.
 ## Global Textdraws
 
 Global textdraws can be created, then shown to all players. There is a
-[limit](../../scripting/resources/Limits.md) as to how many can be created,
+[limit](../resources/Limits.md) as to how many can be created,
 though. This means if you have a server with 500 players, creating more than 4
 textdraws per-player is not possible. That's where **player**-textdraws come in.
 See further down. Here is a list of all the functions related to **global**
 textdraws:
 
-- [TextDrawCreate](../../scripting/functions/TextDrawCreate.md): Create a
+- [TextDrawCreate](../functions/TextDrawCreate.md): Create a
   textdraw.
 
-- [TextDrawDestroy](../../scripting/functions/TextDrawDestroy.md): Destroy a
+- [TextDrawDestroy](../functions/TextDrawDestroy.md): Destroy a
   textdraw.
 
-- [TextDrawColor](../../scripting/functions/TextDrawColor.md): Set the color of
+- [TextDrawColor](../functions/TextDrawColor.md): Set the color of
   the text in a textdraw.
 
-- [TextDrawBoxColor](../../scripting/functions/TextDrawBoxColor.md): Set the
+- [TextDrawBoxColor](../functions/TextDrawBoxColor.md): Set the
   color of the box in a textdraw.
 
-- [TextDrawBackgroundColor](../../scripting/functions/TextDrawBackgroundColor.md):
+- [TextDrawBackgroundColor](../functions/TextDrawBackgroundColor.md):
   Set the background color of a textdraw.
 
-- [TextDrawAlignment](../../scripting/functions/TextDrawAlignment.md): Set the
+- [TextDrawAlignment](../functions/TextDrawAlignment.md): Set the
   alignment of a textdraw.
 
-- [TextDrawFont](../../scripting/functions/TextDrawFont.md): Set the font of a
+- [TextDrawFont](../functions/TextDrawFont.md): Set the font of a
   textdraw.
 
-- [TextDrawLetterSize](../../scripting/functions/TextDrawLetterSize.md): Set the
+- [TextDrawLetterSize](../functions/TextDrawLetterSize.md): Set the
   letter size of the text in a textdraw.
 
-- [TextDrawTextSize](../../scripting/functions/TextDrawTextSize.md): Set the
+- [TextDrawTextSize](../functions/TextDrawTextSize.md): Set the
   size of a textdraw box.
 
-- [TextDrawSetOutline](../../scripting/functions/TextDrawSetOutline.md): Choose
+- [TextDrawSetOutline](../functions/TextDrawSetOutline.md): Choose
   whether the text has an outline.
 
-- [TextDrawSetShadow](../../scripting/functions/TextDrawSetShadow.md): Toggle
+- [TextDrawSetShadow](../functions/TextDrawSetShadow.md): Toggle
   shadows on a textdraw.
 
-- [TextDrawSetProportional](../../scripting/functions/TextDrawSetProportional.md):
+- [TextDrawSetProportional](../functions/TextDrawSetProportional.md):
   Scale the text spacing in a textdraw to a proportional ratio.
 
-- [TextDrawUseBox](../../scripting/functions/TextDrawUseBox.md): Toggle if the
+- [TextDrawUseBox](../functions/TextDrawUseBox.md): Toggle if the
   textdraw has a box or not.
 
-- [TextDrawSetString](../../scripting/functions/TextDrawSetString.md): Set the
+- [TextDrawSetString](../functions/TextDrawSetString.md): Set the
   text in an existing textdraw.
 
-- [TextDrawShowForPlayer](../../scripting/functions/TextDrawShowForPlayer.md):
+- [TextDrawShowForPlayer](../functions/TextDrawShowForPlayer.md):
   Show a textdraw for a certain player.
 
-- [TextDrawHideForPlayer](../../scripting/functions/TextDrawHideForPlayer.md):
+- [TextDrawHideForPlayer](../functions/TextDrawHideForPlayer.md):
   Hide a textdraw for a certain player.
 
-- [TextDrawShowForAll](../../scripting/functions/TextDrawShowForAll.md): Show a
+- [TextDrawShowForAll](../functions/TextDrawShowForAll.md): Show a
   textdraw for all players.
 
-- [TextDrawHideForAll](../../scripting/functions/TextDrawHideForAll.md): Hide a
+- [TextDrawHideForAll](../functions/TextDrawHideForAll.md): Hide a
   textdraw for all players.
 
 ## Player-textdraws
@@ -86,53 +86,53 @@ more than 2048. Player-textdraws should be used for things that are not
 'static'. Do not use them to display a website address for example, but for a
 vehicle health indicator.
 
-- [CreatePlayerTextDraw](../../scripting/functions/CreatePlayerTextDraw.md):
+- [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw.md):
   Create a player-textdraw.
 
-- [PlayerTextDrawDestroy](../../scripting/functions/PlayerTextDrawDestroy.md):
+- [PlayerTextDrawDestroy](../functions/PlayerTextDrawDestroy.md):
   Destroy a player-textdraw.
 
-- [PlayerTextDrawColor](../../scripting/functions/PlayerTextDrawColor.md): Set
+- [PlayerTextDrawColor](../functions/PlayerTextDrawColor.md): Set
   the color of the text in a player-textdraw.
 
-- [PlayerTextDrawBoxColor](../../scripting/functions/PlayerTextDrawBoxColor.md):
+- [PlayerTextDrawBoxColor](../functions/PlayerTextDrawBoxColor.md):
   Set the color of a player-textdraw's box.
 
-- [PlayerTextDrawBackgroundColor](../../scripting/functions/PlayerTextDrawBackgroundColor.md):
+- [PlayerTextDrawBackgroundColor](../functions/PlayerTextDrawBackgroundColor.md):
   Set the background color of a player-textdraw.
 
-- [PlayerTextDrawAlignment](../../scripting/functions/PlayerTextDrawAlignment.md):
+- [PlayerTextDrawAlignment](../functions/PlayerTextDrawAlignment.md):
   Set the alignment of a player-textdraw.
 
-- [PlayerTextDrawFont](../../scripting/functions/PlayerTextDrawFont.md): Set the
+- [PlayerTextDrawFont](../functions/PlayerTextDrawFont.md): Set the
   font of a player-textdraw.
 
-- [PlayerTextDrawLetterSize](../../scripting/functions/PlayerTextDrawLetterSize.md):
+- [PlayerTextDrawLetterSize](../functions/PlayerTextDrawLetterSize.md):
   Set the letter size of the text in a player-textdraw.
 
-- [PlayerTextDrawTextSize](../../scripting/functions/PlayerTextDrawTextSize.md):
+- [PlayerTextDrawTextSize](../functions/PlayerTextDrawTextSize.md):
   Set the size of a player-textdraw box (or clickable area for
-  [PlayerTextDrawSetSelectable](../../scripting/functions/PlayerTextDrawSetSelectable.md)).
+  [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md)).
 
-- [PlayerTextDrawSetOutline](../../scripting/functions/PlayerTextDrawSetOutline.md):
+- [PlayerTextDrawSetOutline](../functions/PlayerTextDrawSetOutline.md):
   Toggle the outline on a player-textdraw.
 
-- [PlayerTextDrawSetShadow](../../scripting/functions/PlayerTextDrawSetShadow.md):
+- [PlayerTextDrawSetShadow](../functions/PlayerTextDrawSetShadow.md):
   Set the shadow on a player-textdraw.
 
-- [PlayerTextDrawSetProportional](../../scripting/functions/PlayerTextDrawSetProportional.md):
+- [PlayerTextDrawSetProportional](../functions/PlayerTextDrawSetProportional.md):
   Scale the text spacing in a player-textdraw to a proportional ratio.
 
-- [PlayerTextDrawUseBox](../../scripting/functions/PlayerTextDrawUseBox.md):
+- [PlayerTextDrawUseBox](../functions/PlayerTextDrawUseBox.md):
   Toggle the box on a player-textdraw.
 
-- [PlayerTextDrawSetString](../../scripting/functions/PlayerTextDrawSetString.md):
+- [PlayerTextDrawSetString](../functions/PlayerTextDrawSetString.md):
   Set the text of a player-textdraw.
 
-- [PlayerTextDrawShow](../../scripting/functions/PlayerTextDrawShow.md): Show a
+- [PlayerTextDrawShow](../functions/PlayerTextDrawShow.md): Show a
   player-textdraw.
 
-- [PlayerTextDrawHide](../../scripting/functions/PlayerTextDrawHide.md): Hide a
+- [PlayerTextDrawHide](../functions/PlayerTextDrawHide.md): Hide a
   player-textdraw.
 
 ## Variable Declaration
@@ -174,7 +174,7 @@ or less textdraws created than the other.
 
 The function names only differ slightly, with 'TextDraw' becoming
 'PlayerTextDraw', with one exception:
-[CreatePlayerTextDraw](../../scripting/functions/CreatePlayerTextDraw.md)
+[CreatePlayerTextDraw](../functions/CreatePlayerTextDraw.md)
 ('TextDrawSetString' becomes 'PlayerTextDrawSetString').
 
 ## Creating the Textdraw
@@ -184,9 +184,9 @@ The function names only differ slightly, with 'TextDraw' becoming
 Once you've declared a variable/array to store the ID of your textdraw(s) in,
 you can proceed to create the textdraw itself. For global textdraws that are
 always created, the code should be placed under
-[OnGameModeInit](../../scripting/callbacks/OnGameModeInit.md). To create the
+[OnGameModeInit](../callbacks/OnGameModeInit.md). To create the
 textdraw, the function
-[TextDrawCreate](../../scripting/functions/TextDrawCreate.md) must be used.
+[TextDrawCreate](../functions/TextDrawCreate.md) must be used.
 
 Note that this function merely creates the textdraw, other functions are used to
 modify it and to show it to the player(s).
@@ -231,8 +231,8 @@ There are 4 fonts available for textdraw text:
 | 3   | _GTA font_                                                     | Retains quality when enlarged. Useful for large texts. |
 
 As of SA-MP 0.3d, a new font (id 4) can be set. This is used in combination with
-the [TextDrawCreate](../../scripting/functions/TextDrawCreate.md) and
-[TextDrawTextSize](../../scripting/functions/TextDrawTextSize.md) functions to
+the [TextDrawCreate](../functions/TextDrawCreate.md) and
+[TextDrawTextSize](../functions/TextDrawTextSize.md) functions to
 show a texture 'sprite' on the player's screen. We'll cover this later.
 
 ## Showing the textdraw
@@ -241,7 +241,7 @@ For this example, the textdraw has been created globally under OnGameModeInit
 and will be shown to player when they join the server.
 
 To show a textdraw for a single player, the function
-[TextDrawShowForPlayer](../../scripting/functions/TextDrawShowForPlayer.md) is
+[TextDrawShowForPlayer](../functions/TextDrawShowForPlayer.md) is
 used.
 
 **Parameters:**

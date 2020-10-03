@@ -24,4 +24,4 @@ The number of milliseconds since start-up of the system. For a 32-bit cell, this
 
 ## Related Functions
 
-- GetTickCount: Get the uptime of the actual server.
+- [GetTickCount](GetTickCount.md): Get the uptime of the actual server.

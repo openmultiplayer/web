@@ -39,7 +39,7 @@ This function does not perform a state change to PLAYER_STATE_WASTED when combin
 
 ## Related Functions
 
-- AddPlayerClass: Add a class.
-- SetPlayerSkin: Set a player's skin.
-- GetPlayerSkin: Get a player's current skin.
-- OnPlayerRequestClass: Called when a player changes class at class selection.
+- [AddPlayerClass](AddPlayerClass): Add a class.
+- [SetPlayerSkin](SetPlayerSkin): Set a player's skin.
+- [GetPlayerSkin](GetPlayerSkin): Get a player's current skin.
+- [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass): Called when a player changes class at class selection.

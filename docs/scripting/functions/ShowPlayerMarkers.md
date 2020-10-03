@@ -9,8 +9,8 @@ tags: ["player"]
 
 Toggles player markers (blips on the radar). Must be used when the server starts (OnGameModeInit). For other times, see SetPlayerMarkerForPlayer.
 
-| Name | Description                                                                                                          |
-| ---- | -------------------------------------------------------------------------------------------------------------------- |
+| Name | Description                                                                                                                           |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | mode | The [mode](#marker-modes) to use for markers. They can be streamed, meaning they are only visible to nearby players. See table below. |
 
 ## Returns
@@ -28,11 +28,12 @@ public OnGameModeInit()
 ```
 
 ## Marker Modes
-| ID    | MODE |
-| ----- | ----------------------------- |
-| 0     | PLAYER_MARKERS_MODE_OFF       |
-| 1     | PLAYER_MARKERS_MODE_GLOBAL    |
-| 2     | PLAYER_MARKERS_MODE_STREAMED  |
+
+| ID  | MODE                         |
+| --- | ---------------------------- |
+| 0   | PLAYER_MARKERS_MODE_OFF      |
+| 1   | PLAYER_MARKERS_MODE_GLOBAL   |
+| 2   | PLAYER_MARKERS_MODE_STREAMED |
 
 ## Notes
 
@@ -44,7 +45,7 @@ It is also possible to set a player's color to a color that has full transparenc
 
 ## Related Functions
 
-- SetPlayerMarkerForPlayer: Set a player's marker.
-- LimitPlayerMarkerRadius: Limit the player marker radius.
-- ShowNameTags: Set nametags on or off.
-- SetPlayerColor: Set a player's color.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer.md): Set a player's marker.
+- [LimitPlayerMarkerRadius](LimitPlayerMarkerRadius.md): Limit the player marker radius.
+- [ShowNameTags](ShowNameTags.md): Set nametags on or off.
+- [SetPlayerColor](SetPlayerColor.md): Set a player's color.

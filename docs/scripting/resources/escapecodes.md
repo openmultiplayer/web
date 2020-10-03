@@ -35,4 +35,4 @@ in a string constant.
 
 :::
 
-Source: pawn-lang.pdf (pg 99)
+Source: [pawn-lang.pdf (pg 99)](https://github.com/pawn-lang/compiler/raw/master/doc/pawn-lang.pdf)

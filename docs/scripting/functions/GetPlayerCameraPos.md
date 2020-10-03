@@ -51,8 +51,8 @@ Player's camera positions are only updated once a second, unless aiming.It is re
 
 ## Related Functions
 
-- SetPlayerCameraPos: Set a player's camera position.
-- GetPlayerCameraZoom: Get the zoom level of a player's camera.
-- GetPlayerCameraAspectRatio: Get the aspect ratio of a player's camera.
-- GetPlayerCameraMode: Get a player's camera mode.
-- GetPlayerCameraFrontVector: Get the player's camera front vector
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [GetPlayerCameraZoom](GetPlayerCameraZoom): Get the zoom level of a player's camera.
+- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRation): Get the aspect ratio of a player's camera.
+- [GetPlayerCameraMode](GetplayerCameraMode): Get a player's camera mode.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

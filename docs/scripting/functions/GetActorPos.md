@@ -39,4 +39,4 @@ GetActorPos(actorid, x, y, z);
 
 ## Related Functions
 
-- SetActorPos: Set the position of an actor.
+- [SetActorPos](SetActorPos): Set the position of an actor.

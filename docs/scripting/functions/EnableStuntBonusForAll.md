@@ -29,4 +29,4 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- EnableStuntBonusForPlayer: Toggle stunt bonuses for a player.
+- [EnableStuntBonusForPlayer](EnableStuntBonusForPlayer): Toggle stunt bonuses for a player.

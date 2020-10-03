@@ -40,10 +40,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- SelectObject: Select an object.
-- EditObject: Edit an object.
-- EditPlayerObject: Edit an object.
-- EditAttachedObject: Edit an attached object.
-- CreateObject: Create an object.
-- DestroyObject: Destroy an object.
-- MoveObject: Move an object.
+- [SelectObject](SelectObject.md): Select an object.
+- [EditObject](EditObject.md): Edit an object.
+- [EditPlayerObject](EditPlayerObject.md): Edit an object.
+- [EditAttachedObject](EditAttachedObject.md): Edit an attached object.
+- [CreateObject](CreateObject.md): Create an object.
+- [DestroyObject](DestroyObject.md): Destroy an object.
+- [MoveObject](MoveObject.md): Move an object.

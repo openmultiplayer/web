@@ -9,10 +9,10 @@ tags: ["player"]
 
 This function allows to set players special action.
 
-| Name     | Description                                                                 |
-| -------- | --------------------------------------------------------------------------- |
-| playerid | The player that should perform the action                                   |
-| actionid | The [action](../resources/specialactions.md) that should be performed.      |
+| Name     | Description                                                            |
+| -------- | ---------------------------------------------------------------------- |
+| playerid | The player that should perform the action                              |
+| actionid | The [action](../resources/specialactions.md) that should be performed. |
 
 ## Returns
 
@@ -40,5 +40,5 @@ Removing jetpacks from players by setting their special action to 0 causes the s
 
 ## Related Functions
 
-- GetPlayerSpecialAction: Get a player's current special action.
-- ApplyAnimation: Apply an animation to a player.
+- [GetPlayerSpecialAction](GetPlayerSpecialAction.md): Get a player's current special action.
+- [ApplyAnimation](ApplyAnimation.md): Apply an animation to a player.

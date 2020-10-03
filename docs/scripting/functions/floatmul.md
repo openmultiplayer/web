@@ -46,6 +46,6 @@ This function is rather redundant, for it is no different than the conventional 
 
 ## Related Functions
 
-- Floatadd: Adds two floats.
-- Floatsub: Subtracts two floats.
-- Floatdiv: Divides a float by another.
+- [Floatadd](Floatadd): Adds two floats.
+- [Floatsub](Floatsub): Subtracts two floats.
+- [Floatdiv](Floatdiv): Divides a float by another.

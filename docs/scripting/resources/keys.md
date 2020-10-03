@@ -58,7 +58,6 @@ enter vehicles as passenger. However, the gametext definition still exists.
 
 **(4)** If the key number "262144" does not work, just use key number "2".
 
-
 **(6)** Only detected when "JOYPAD" configuration is selected for controller.
 
 **(7)** Embedding codes only work for

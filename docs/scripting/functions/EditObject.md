@@ -58,10 +58,10 @@ You can move the camera while editing by pressing and holding the spacebar (or W
 
 ## Related Functions
 
-- CreateObject: Create an object.
-- DestroyObject: Destroy an object.
-- MoveObject: Move an object.
-- EditPlayerObject: Edit an object.
-- EditAttachedObject: Edit an attached object.
-- SelectObject: Select an object.
-- CancelEdit: Cancel the edition of an object.
+- [CreateObject](CreateObject): Create an object.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [MoveObject](MoveObject): Move an object.
+- [EditPlayerObject](EditPlayerObject): Edit an object.
+- [EditAttachedObject](EditAttachedObject): Edit an attached object.
+- [SelectObject](SelectObject): Select an object.
+- [CancelEdit](CancelEdit): Cancel the edition of an object.

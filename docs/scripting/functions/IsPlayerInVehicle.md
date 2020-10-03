@@ -2,30 +2,25 @@
 id: IsPlayerInVehicle
 title: IsPlayerInVehicle
 description: Checks if a player is in a specific vehicle.
-tags: ['player', 'vehicle']
+tags: ["player", "vehicle"]
 ---
 
 ## Description
 
 Checks if a player is in a specific vehicle.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | ID of the player.|
-|vehicleid | ID of the vehicle. Note: NOT the modelid!|
-
+| Name      | Description                               |
+| --------- | ----------------------------------------- |
+| playerid  | ID of the player.                         |
+| vehicleid | ID of the vehicle. Note: NOT the modelid! |
 
 ## Returns
 
- 1 - Player IS in the vehicle.
+1 - Player IS in the vehicle.
 
- 0 - Player is NOT in the vehicle.
-
-
+0 - Player is NOT in the vehicle.
 
 ## Examples
-
 
 ```c
 new specialcar;
@@ -50,9 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## Related Functions
 
-
--  IsPlayerInAnyVehicle: Check if a player is in any vehicle.
--  GetPlayerVehicleSeat: Check what seat a player is in.
+- [IsPlayerInAnyVehicle](IsPlayerInAnyVehicle.md): Check if a player is in any vehicle.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat.md): Check what seat a player is in.

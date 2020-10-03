@@ -42,5 +42,5 @@ This callback is still called if the player is denied entry to the vehicle (e.g.
 
 ## Related Functions
 
-- [PutPlayerInVehicle](../../scripting/functions/PutPlayerInVehicle.md): Put a player in a vehicle.
-- [GetPlayerVehicleSeat](../../scripting/functions/GetPlayerVehicleSeat.md): Check what seat a player is in.
+- [PutPlayerInVehicle](../functions/PutPlayerInVehicle.md): Put a player in a vehicle.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Check what seat a player is in.

@@ -36,6 +36,6 @@ SetAllActorsHealth(Float:health)
 
 ## Related Functions
 
-- CreateActor: Create an actor (static NPC).
-- IsValidActor: Check if actor id is valid.
-- SetActorHealth: Set the health of an actor.
+- [CreateActor](CreateActor): Create an actor (static NPC).
+- [IsValidActor](isValidActor): Check if actor id is valid.
+- [SetActorHealth](SetActorHealth): Set the health of an actor.

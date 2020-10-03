@@ -45,8 +45,8 @@ For some useful functions for working with vehicle damage values, see here.
 
 ## Related Functions
 
-- SetVehicleHealth: Set the health of a vehicle.
-- GetVehicleHealth: Check the health of a vehicle.
-- RepairVehicle: Fully repair a vehicle.
-- GetVehicleDamageStatus: Get the vehicle damage state for each part individually.
-- OnVehicleDamageStatusUpdate: Called when a vehicle's damage state changes.
+- [SetVehicleHealth](SetVehicleHealth.md): Set the health of a vehicle.
+- [GetVehicleHealth](GetVehicleHealth.md): Check the health of a vehicle.
+- [RepairVehicle](RepairVehicle.md): Fully repair a vehicle.
+- [GetVehicleDamageStatus](GetVehicleDamageStatus.md): Get the vehicle damage state for each part individually.
+- [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate.md): Called when a vehicle's damage state changes.

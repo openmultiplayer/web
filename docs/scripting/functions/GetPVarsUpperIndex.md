@@ -42,5 +42,5 @@ SendClientMessage(playerid, -1, szString);
 
 ## Related Functions
 
-- GetPVarNameAtIndex: Get the player variable's name from its index.
-- GetPVarType: Get the type of the player variable.
+- [GetPVarNameAtIndex](GetPVarNameAtIndex.md): Get the player variable's name from its index.
+- [GetPVarType](GetPVarType.md): Get the type of the player variable.

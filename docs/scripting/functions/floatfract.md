@@ -31,4 +31,4 @@ new Float:fFract = floatfract(3.14159); // returns 0.14159
 
 ## Related Functions
 
-- floatround: Convert a float to an integer (rounding).
+- [floatround](floatround): Convert a float to an integer (rounding).

@@ -44,5 +44,5 @@ NPCs do not have nametags. These can be scripted with Attach3DTextLabelToPlayer.
 
 ## Related Functions
 
-- IsPlayerNPC: Check if a player is an NPC or an actual player.
-- OnPlayerConnect: Called when a player connects to the server.
+- [IsPlayerNPC](IsPlayerNPC.md): Check if a player is an NPC or an actual player.
+- [OnPlayerConnect](../callbacks/OnPlayerConnect.md): Called when a player connects to the server.

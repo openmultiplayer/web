@@ -33,6 +33,6 @@ deleteproperty(0, "", 123984334);
 
 ## Related Functions
 
-- Setproperty: Set a property.
-- Getproperty: Get the value of a property.
-- Existproperty: Check if a property exists.
+- [Setproperty](Setproperty.md): Set a property.
+- [Getproperty](Getproperty.md): Get the value of a property.
+- [Existproperty](Existproperty.md): Check if a property exists.

@@ -28,6 +28,6 @@ TextDrawShowForAll(textid);
 
 ## Related Functions
 
-- TextDrawShowForPlayer: Show a textdraw for a certain player.
-- TextDrawHideForPlayer: Hide a textdraw for a certain player.
-- TextDrawHideForAll: Hide a textdraw for all players.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer.md): Show a textdraw for a certain player.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer.md): Hide a textdraw for a certain player.
+- [TextDrawHideForAll](TextDrawHideForAll.md): Hide a textdraw for all players.

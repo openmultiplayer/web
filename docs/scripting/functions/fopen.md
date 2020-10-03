@@ -134,17 +134,17 @@ If you use io_read and the file doesn't exist, it will return a NULL reference. 
 
 ## Related Functions
 
-- fopen: Open a file.
-- fclose: Close a file.
-- ftemp: Create a temporary file stream.
-- fremove: Remove a file.
-- fwrite: Write to a file.
-- fread: Read a file.
-- fputchar: Put a character in a file.
-- fgetchar: Get a character from a file.
-- fblockwrite: Write blocks of data into a file.
-- fblockread: Read blocks of data from a file.
-- fseek: Jump to a specific character in a file.
-- flength: Get the file length.
-- fexist: Check, if a file exists.
-- fmatch: Check, if patterns with a file name matches.
+- [fopen](fopen): Open a file.
+- [fclose](fclose): Close a file.
+- [ftemp](ftemp): Create a temporary file stream.
+- [fremove](fremove): Remove a file.
+- [fwrite](fwrite): Write to a file.
+- [fread](fread): Read a file.
+- [fputchar](fputchar): Put a character in a file.
+- [fgetchar](fgetchar): Get a character from a file.
+- [fblockwrite](fblockwrite): Write blocks of data into a file.
+- [fblockread](fblockread): Read blocks of data from a file.
+- [fseek](fseek): Jump to a specific character in a file.
+- [flength](flength): Get the file length.
+- [fexist](fexist): Check, if a file exists.
+- [fmatch](fmatch): Check, if patterns with a file name matches.

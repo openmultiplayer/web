@@ -2,12 +2,12 @@
 id: IsPlayerAttachedObjectSlotUsed
 title: IsPlayerAttachedObjectSlotUsed
 description: Check if a player has an object attached in the specified index (slot).
-tags: ['player']
+tags: ["player"]
 ---
 
 :::warning
 
-This function was added in SA-MP 0.3c  and will not work in earlier versions!
+This function was added in SA-MP 0.3c and will not work in earlier versions!
 
 :::
 
@@ -15,22 +15,18 @@ This function was added in SA-MP 0.3c  and will not work in earlier versions!
 
 Check if a player has an object attached in the specified index (slot).
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to check.|
-|index | The index (slot) to check.|
-
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | The ID of the player to check. |
+| index    | The index (slot) to check.     |
 
 ## Returns
 
- 1: The specified slot is used for an attached object.
+1: The specified slot is used for an attached object.
 
- 0: The specified slot is not in use for an attached object.
-
+0: The specified slot is not in use for an attached object.
 
 ## Examples
-
 
 ```c
 stock CountAttachedObjects(playerid)
@@ -44,9 +40,7 @@ stock CountAttachedObjects(playerid)
 }
 ```
 
-
 ## Related Functions
 
-
--  SetPlayerAttachedObject: Attach an object to a player
--  RemovePlayerAttachedObject: Remove an attached object from a player
+- [SetPlayerAttachedObject](SetPlayerAttachedObject.md): Attach an object to a player
+- [RemovePlayerAttachedObject](RemovePlayerAttachedObject.md): Remove an attached object from a player

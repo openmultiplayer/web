@@ -73,4 +73,4 @@ Since 0.3b the camera data can be obtained when the player is in any vehicle or 
 
 ## Related Functions
 
-- GetPlayerCameraPos: Find out where the player's camera is.
+- [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.

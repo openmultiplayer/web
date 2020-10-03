@@ -41,8 +41,8 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- GetPlayerCameraPos: Find out where the player's camera is.
-- GetPlayerCameraFrontVector: Get the player's camera front vector
-- SetPlayerCameraPos: Set a player's camera position.
-- SetPlayerCameraLookAt: Set where a player's camera should face.
-- SetCameraBehindPlayer: Set a player's camera behind them.
+- [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.
+- [SetCameraBehindPlayer](SetCameraBehindPlayer): Set a player's camera behind them.

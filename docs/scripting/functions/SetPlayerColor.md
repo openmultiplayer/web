@@ -39,6 +39,6 @@ If used under OnPlayerConnect, the affecting player will not see the color in th
 
 ## Related Functions
 
-- SetPlayerMarkerForPlayer: Set a player's marker.
-- GetPlayerColor: Check the color of a player.
-- ChangeVehicleColor: Set the color of a vehicle.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer.md): Set a player's marker.
+- [GetPlayerColor](GetPlayerColor.md): Check the color of a player.
+- [ChangeVehicleColor](ChangeVehicleColor.md): Set the color of a vehicle.

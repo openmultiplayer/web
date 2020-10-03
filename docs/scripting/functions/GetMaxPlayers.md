@@ -31,5 +31,5 @@ This function can not be used in place of MAX_PLAYERS. It can not be used at com
 
 ## Related Functions
 
-- GetPlayerPoolSize: Gets the highest playerid connected to the server.
-- IsPlayerConnected: Check if a player is connected to the server.
+- [GetPlayerPoolSize](GetPlayerPoolSize): Gets the highest playerid connected to the server.
+- [IsPlayerConnected](IsPlayerConnected): Check if a player is connected to the server.

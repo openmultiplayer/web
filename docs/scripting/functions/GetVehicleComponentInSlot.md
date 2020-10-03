@@ -2,7 +2,7 @@
 id: GetVehicleComponentInSlot
 title: GetVehicleComponentInSlot
 description: Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific slot.
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 :::warning
@@ -15,20 +15,16 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific slot.
 
-
-| Name | Description |
-|------|-------------|
-|vehicleid | The ID of the vehicle to check for the component.|
-|slot | The component slot to check for components.|
-
+| Name      | Description                                       |
+| --------- | ------------------------------------------------- |
+| vehicleid | The ID of the vehicle to check for the component. |
+| slot      | The component slot to check for components.       |
 
 ## Returns
 
 The ID of the component installed in the specified slot. Returns 0 if no component in specified vehicle's specified slot, or if vehicle doesn't exist.
 
-
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -45,24 +41,21 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## Notes
 
 :::warning
 
 Known Bug(s):
- Doesn't work for CARMODTYPE_STEREO.
- Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
- Both rear bull bars and rear bumper components are saved in the CARMODTYPE_REAR_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
- Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+Doesn't work for CARMODTYPE_STEREO.
+Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+Both rear bull bars and rear bumper components are saved in the CARMODTYPE_REAR_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
 
 :::
 
-
 ## Related Functions
 
-
--  AddVehicleComponent: Add a component to a vehicle.
--  GetVehicleComponentType: Check the type of component via the ID.
--  OnVehicleMod: Called when a vehicle is modded.
--  OnEnterExitModShop: Called when a vehicle enters or exits a mod shop.
+- [AddVehicleComponent](AddVehicleComponent.md): Add a component to a vehicle.
+- [GetVehicleComponentType](GetVehicleComponentType.md): Check the type of component via the ID.
+- [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.

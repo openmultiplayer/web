@@ -50,9 +50,9 @@ Trains can only be added with AddStaticVehicle and AddStaticVehicleEx.
 
 ## Related Functions
 
-- DestroyVehicle: Destroy a vehicle.
-- AddStaticVehicle: Add a static vehicle.
-- AddStaticVehicleEx: Add a static vehicle with custom respawn time.
-- GetVehicleParamsSirenState: Check whether a vehicle's siren is on or off.
-- OnVehicleSpawn: Called when a vehicle respawns.
-- OnVehicleSirenStateChange: Called when a vehicle's siren is toggled on/off.
+- [DestroyVehicle](DestroyVehicle.md): Destroy a vehicle.
+- [AddStaticVehicle](AddStaticVehicle.md): Add a static vehicle.
+- [AddStaticVehicleEx](AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
+- [GetVehicleParamsSirenState](GetVehicleParamsSirenState.md): Check whether a vehicle's siren is on or off.
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn.md): Called when a vehicle respawns.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange.md): Called when a vehicle's siren is toggled on/off.

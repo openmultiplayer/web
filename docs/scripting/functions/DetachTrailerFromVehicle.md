@@ -25,6 +25,6 @@ DetachTrailerFromVehicle(vehicleid);
 
 ## Related Functions
 
-- AttachTrailerToVehicle: Attach a trailer to a vehicle.
-- IsTrailerAttachedToVehicle: Check if a trailer is attached to a vehicle.
-- GetVehicleTrailer: Check what trailer a vehicle is pulling.
+- [AttachTrailerToVehicle](AttachTrailerToVehicle.md): Attach a trailer to a vehicle.
+- [IsTrailerAttachedToVehicle](IsTrailerAttachedToVehicle.md): Check if a trailer is attached to a vehicle.
+- [GetVehicleTrailer](GetVehicleTrailer.md): Check what trailer a vehicle is pulling.

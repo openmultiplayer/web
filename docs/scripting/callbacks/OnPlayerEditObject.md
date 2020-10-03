@@ -15,18 +15,18 @@ This callback was added in SA-MP 0.3e and will not work in earlier versions!
 
 This callback is called when a player finishes editing an object (EditObject/EditPlayerObject).
 
-| Name         | Description                                              |
-| ------------ | -------------------------------------------------------- |
-| playerid     | The ID of the player that edited an object               |
-| playerobject | 0 if it is a global object or 1 if it is a playerobject. |
-| objectid     | The ID of the edited object                              |
-| response     | The [type of response](../resources/objecteditionresponsetypes.md)|
-| Float:fX     | The X offset for the object that was edited              |
-| Float:fY     | The Y offset for the object that was edited              |
-| Float:fZ     | The Z offset for the object that was edited              |
-| Float:fRotX  | The X rotation for the object that was edited            |
-| Float:fRotY  | The Y rotation for the object that was edited            |
-| Float:fRotZ  | The Z rotation for the object that was edited            |
+| Name         | Description                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| playerid     | The ID of the player that edited an object                         |
+| playerobject | 0 if it is a global object or 1 if it is a playerobject.           |
+| objectid     | The ID of the edited object                                        |
+| response     | The [type of response](../resources/objecteditionresponsetypes.md) |
+| Float:fX     | The X offset for the object that was edited                        |
+| Float:fY     | The Y offset for the object that was edited                        |
+| Float:fZ     | The Z offset for the object that was edited                        |
+| Float:fRotX  | The X rotation for the object that was edited                      |
+| Float:fRotY  | The Y rotation for the object that was edited                      |
+| Float:fRotZ  | The Z rotation for the object that was edited                      |
 
 ## Returns
 
@@ -85,7 +85,7 @@ When using 'EDIT_RESPONSE_UPDATE' be aware that this callback will not be called
 
 ## Related Functions
 
-- [EditObject](../../scripting/functions/EditObject.md): Edit an object.
-- [CreateObject](../../scripting/functions/CreateObject.md): Create an object.
-- [DestroyObject](../../scripting/functions/DestroyObject.md): Destroy an object.
-- [MoveObject](../../scripting/functions/MoveObject.md): Move an object.
+- [EditObject](../functions/EditObject.md): Edit an object.
+- [CreateObject](../functions/CreateObject.md): Create an object.
+- [DestroyObject](../functions/DestroyObject.md): Destroy an object.
+- [MoveObject](../functions/MoveObject.md): Move an object.

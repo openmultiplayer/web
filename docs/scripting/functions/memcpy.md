@@ -15,23 +15,19 @@ This function starts with lowercase letter.
 
 Copy bytes from one location to another.
 
-
-| Name | Description |
-|------|-------------|
-|dest[] | An array into which the bytes from source are copied in.|
-|const source[] | The source array.|
-|index | The start index in bytes in the destination array where the data should be copied to.|
-|numbytes | The number of bytes (not cells) to copy.|
-|maxlength=sizeof dest | The maximum number of cells that fit in the destination buffer.|
-
+| Name                  | Description                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| dest[]                | An array into which the bytes from source are copied in.                              |
+| const source[]        | The source array.                                                                     |
+| index                 | The start index in bytes in the destination array where the data should be copied to. |
+| numbytes              | The number of bytes (not cells) to copy.                                              |
+| maxlength=sizeof dest | The maximum number of cells that fit in the destination buffer.                       |
 
 ## Returns
 
 True on success, false on failure.
 
-
 ## Examples
-
 
 ```c
 //Concatenate two strings with memcpy
@@ -42,17 +38,15 @@ print(destination);
 //Output: This is a string in a 32 Bit Array
 ```
 
-
 ## Related Functions
 
-
--  strcmp: Compare two strings to see if they are the same.
--  strfind: Search for a substring in a string.
--  strtok: Search for a variable typed after a space.
--  strdel: Delete part/all of a string.
--  strins: Put a string into another string.
--  strlen: Check the length of a string.
--  strmid: Extract characters from a string.
--  strpack: Pack a string into a destination.
--  strval: Find the value of a string.
--  strcat: Concatenate two strings.
+- [strcmp](strcmp.md): Compare two strings to see if they are the same.
+- [strfind](strfind.md): Search for a substring in a string.
+- [strtok](strtok.md): Search for a variable typed after a space.
+- [strdel](strdel.md): Delete part/all of a string.
+- [strins](strins.md): Put a string into another string.
+- [strlen](strlen.md): Check the length of a string.
+- [strmid](strmid.md): Extract characters from a string.
+- [strpack](strpack.md): Pack a string into a destination.
+- [strval](strval.md): Find the value of a string.
+- [strcat](strcat.md): Concatenate two strings.

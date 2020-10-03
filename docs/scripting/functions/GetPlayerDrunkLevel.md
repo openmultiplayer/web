@@ -38,4 +38,4 @@ public OnPlayerStateChange(playerid, oldstate, newstate)
 
 ## Related Functions
 
-- SetPlayerDrunkLevel: Set a player's drunk level.
+- [SetPlayerDrunkLevel](SetPlayerDrunkLevel): Set a player's drunk level.

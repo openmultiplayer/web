@@ -34,5 +34,5 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Related Functions
 
-- GameTextForAll: Display gametext to all players.
-- TextDrawShowForPlayer: Show a textdraw for a certain player.
+- [GameTextForAll](GameTextForAll): Display gametext to all players.
+- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.

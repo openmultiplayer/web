@@ -46,6 +46,6 @@ This function disabled the specified menu row for all players. There is no funct
 
 ## Related Functions
 
-- CreateMenu: Create a menu.
-- DestroyMenu: Destroy a menu.
-- AddMenuItem: Add an item to a menu.
+- [CreateMenu](CreateMenu.md): Create a menu.
+- [DestroyMenu](DestroyMenu.md): Destroy a menu.
+- [AddMenuItem](AddMenuItem.md): Add an item to a menu.

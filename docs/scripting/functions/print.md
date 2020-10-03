@@ -15,19 +15,15 @@ This function starts with lowercase letter.
 
 Prints a string to the server console (not in-game chat) and logs (server_log.txt).
 
-
-| Name | Description |
-|------|-------------|
-|string[] | The string to print.|
-
+| Name     | Description          |
+| -------- | -------------------- |
+| string[] | The string to print. |
 
 ## Returns
 
 This function does not return any specific values.
 
-
 ## Examples
-
 
 ```c
 public OnGameModeInit( )
@@ -37,8 +33,10 @@ public OnGameModeInit( )
 }
 ```
 
-
 ## Related Functions
 
+<<<<<<< HEAD
 
--  printf: Print a formatted message into the server logs and console.
+- # [printf](printf.md): Print a formatted message into the server logs and console.
+- [printf](printf): Print a formatted message into the server logs and console.
+  > > > > > > > upstream/master

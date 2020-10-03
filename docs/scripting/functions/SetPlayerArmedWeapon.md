@@ -2,7 +2,7 @@
 id: SetPlayerArmedWeapon
 title: SetPlayerArmedWeapon
 description: Sets which weapon (that a player already has) the player is holding.
-tags: ['player']
+tags: ["player"]
 ---
 
 :::warning
@@ -15,22 +15,18 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Sets which weapon (that a player already has) the player is holding.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to arm with a weapon.|
-|weaponid | The ID of the weapon that the player should be armed with.|
-
+| Name     | Description                                                |
+| -------- | ---------------------------------------------------------- |
+| playerid | The ID of the player to arm with a weapon.                 |
+| weaponid | The ID of the weapon that the player should be armed with. |
 
 ## Returns
 
- 1: The function was executed successfully. Success is returned even when the function fails to execute (the player doesn't have the weapon specified, or it is an invalid weapon).
+1: The function was executed successfully. Success is returned even when the function fails to execute (the player doesn't have the weapon specified, or it is an invalid weapon).
 
- 0: The function failed to execute. The player is not connected.
-
+0: The function failed to execute. The player is not connected.
 
 ## Examples
-
 
 ```c
 public OnPlayerUpdate(playerid)
@@ -51,7 +47,6 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 }
 ```
 
-
 ## Notes
 
 :::tip
@@ -60,9 +55,7 @@ This function arms a player with a weapon they already have; it does not give th
 
 :::
 
-
 ## Related Functions
 
-
--  GivePlayerWeapon: Give a player a weapon.
--  GetPlayerWeapon: Check what weapon a player is currently holding.
+- [GivePlayerWeapon](GivePlayerWeapon.md): Give a player a weapon.
+- [GetPlayerWeapon](GetPlayerWeapon.md): Check what weapon a player is currently holding.

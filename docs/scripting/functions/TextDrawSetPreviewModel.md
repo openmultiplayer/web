@@ -61,8 +61,8 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for th
 
 ## Related Functions
 
-- TextDrawSetPreviewRot: Set rotation of a 3D textdraw preview.
-- TextDrawSetPreviewVehCol: Set the colours of a vehicle in a 3D textdraw preview.
-- TextDrawFont: Set the font of a textdraw.
-- PlayerTextDrawSetPreviewModel: Set model ID of a 3D player textdraw preview.
-- OnPlayerClickTextDraw: Called when a player clicks on a textdraw.
+- [TextDrawSetPreviewRot](TextDrawSetPreviewRot.md): Set rotation of a 3D textdraw preview.
+- [TextDrawSetPreviewVehCol](TextDrawSetPreviewVehCol.md): Set the colours of a vehicle in a 3D textdraw preview.
+- [TextDrawFont](TextDrawFont.md): Set the font of a textdraw.
+- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel.md): Set model ID of a 3D player textdraw preview.
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.

@@ -32,5 +32,5 @@ floatround(3.3, floatround_ceil);
 
 ## Related Functions
 
-- float: Convert an integer to a float.
-- floatstr: Convert an string to a float.
+- [float](float): Convert an integer to a float.
+- [floatstr](floatstr): Convert an string to a float.

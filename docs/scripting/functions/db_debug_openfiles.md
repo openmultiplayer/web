@@ -17,7 +17,7 @@ The function starts with a lowercase letter.
 The function gets the number of open database connections for debugging purposes.
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 
 ## Related Functions
 

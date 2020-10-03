@@ -32,5 +32,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- SetVehicleVirtualWorld: Set the virtual world of a vehicle.
-- SetPlayerInterior: Set a player's interior.
+- [SetVehicleVirtualWorld](SetVehicleVirtualWorld.md): Set the virtual world of a vehicle.
+- [SetPlayerInterior](SetPlayerInterior.md): Set a player's interior.

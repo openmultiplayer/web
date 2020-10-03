@@ -39,6 +39,6 @@ Kills the player if they are in a vehicle and then they spawn with a bottle in t
 
 ## Related Functions
 
-- SetSpawnInfo: Set the spawn setting for a player.
-- AddPlayerClass: Add a class.
-- OnPlayerSpawn: Called when a player spawns.
+- [SetSpawnInfo](SetSpawnInfo.md): Set the spawn setting for a player.
+- [AddPlayerClass](AddPlayerClass.md): Add a class.
+- [OnPlayerSpawn](../callbacks/OnPlayerSpawn.md): Called when a player spawns.

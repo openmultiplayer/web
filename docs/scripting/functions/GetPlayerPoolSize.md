@@ -2,7 +2,7 @@
 id: GetPlayerPoolSize
 title: GetPlayerPoolSize
 description: Gets the highest playerid currently in use on the server.
-tags: ['player']
+tags: ["player"]
 ---
 
 :::warning
@@ -15,13 +15,11 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Gets the highest playerid currently in use on the server.
 
-
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 
 
 ## Examples
-
 
 ```c
 FreezeAll()
@@ -33,9 +31,7 @@ FreezeAll()
 }
 ```
 
-
 ## Related Functions
 
-
--  GetVehiclePoolSize: Gets the highest vehicleid currently in use on the server.
--  GetMaxPlayers: Gets the maximum number of players that can join the server.
+- [GetVehiclePoolSize](GetVehiclePoolSize.md): Gets the highest vehicleid currently in use on the server.
+- [GetMaxPlayers](GetMaxPlayers.md): Gets the maximum number of players that can join the server.
