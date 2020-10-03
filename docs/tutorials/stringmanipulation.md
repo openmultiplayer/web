@@ -802,469 +802,428 @@ infrequently used strings/arrays.
 
 ### **✦ String output**
 
-> **✧ Console**
->
-> **✩ print**
->
-> The following function is probably the most basic function in not only pawn
-> but a lot of other programming languages too, it simply accepts one parameter
-> and outputs it on the console.
->
-> Code:
->
-> print("Hello world");
->
-> Code:
->
-> Hello world
->
-> You can also pass predeclared strings or predefined constants as well as
-> merging multiple of them together, or use the number sign (#) too, much like
-> we used to do with the format function, but keep in mind, that doesn’t include
-> multiple parameters, we can only pass one and only parameter.
->
-> Code:
->
-> #define HAPPY_STRING "I'm happy today" // String constant. #define NEW_YEAR
-> 2019 // Integer constant. new stylishMsg\[12\] = "I'm stylish";
->
-> print(HAPPY_STRING); print(stylishMsg); print(#2019 is beyond the horizon);
-> print("I'm excited for "#NEW_YEAR); print("What ""about"" you""?");
->
-> Code:
->
-> I'm happy today I'm stylish 2019 is beyond the horizon I'm excited for 2019
-> What about you?
->
-> Notice how we used the number symbol here the same way we did with the format
-> function, if the value is an integer, you prefix it with **#** so it’s treated
-> as a string.
->
-> Also keep in mind that the **print** function does support packed strings,
-> however only accepts string type variables (array of characters), passing
-> anything that’s not an array, a string (be it between double quotations or
-> prefixed by the number symbol) will give compilation errors, so doing any of
-> the following will not work;
->
-> Code:
->
-> // Case 1. new \_charA = 'A'; print(\_charA);
->
-> // Case 2. new \_charB = 66; print(\_charB);
->
-> // Case 3. print('A');
->
-> // Case 4. print(66);
->
-> Let’s see how we can fix that;
->
-> Code:
->
-> // Case 1. new \_charA\[2\] = "A"; print(\_charA);
->
-> We change the single quotation mark to the double quotation mark and give the
-> array two cells, one of the A character, and the second one for the null
-> terminator because anything between the double quotation marks is a string,
-> the output is **A**.
->
-> Code:
->
-> // Case 2. new \_charB\[2\] = 66; print(\_charB);
->
-> We change the _\_charB_ to an array with one cell and set the cell labelled 0
-> to the value of 66, which translates to B according to the ASCII table, the
-> output is **B**, we preserve an additional cell for the null-terminator (how
-> much is there so it's not funny anymore?).
->
-> Code:
->
-> // Case 3. print("A");
->
-> Not much can be said, all it took is switching from the single quotation marks
-> to a pair of double quotation marks.
->
-> As for the fourth case, there’s not much we can do while working with the
-> **print** function, but it can simply be resolved using another similar
-> function, called...
+#### **✧ Console**
 
-> **✩ printf**
->
-> Short for “_print formatted_”, I can simply put, this is a more diverse
-> version of the previous **print** function, more specifically, it’s like a
-> combination between the **format** function and the **print** function,
-> meaning that it also prints characters on the server’s console, but with the
-> benefit of formatting the output text.
->
-> Unlike **print**, **printf** accepts multiple parameters, and with different
-> types too, however it does not support packed strings, in order to expand on
-> its functionality, we use these sequences called “_format specifiers_”, more
-> on them later, outputting anything more than 1024 characters will crash the
-> server, so take notes on that
->
-> Code:
->
-> #define RANDOM_STRING "Vsauce" #define RANDOM_NUMBER 2018
->
-> printf("Hey "RANDOM_STRING", Micheal here! #"#RANDOM_NUMBER);
->
-> Notice how we similarly to the **print** and the **format** functions, we
-> nested those strings into one, which outputs the following;
->
-> Code:
->
-> Hey Vsauce, Micheal here! #2018
->
-> The **printf** function as I said before, really shines when **format
-> specifiers** are used, it’s what distinguishes it and sets it apart, you can
-> attach as many variables as you want, and output simple and complex strings
-> with ease, we will have a much deeper look on that when we’re introduced to
-> those specifiers later on.
+#### **✩ print**
 
-> **✧ Client messages**
->
-> Apart from the other doll texts you can print on the server’s console, who are
-> mainly used for debugging, there are messages that are printed on the client’s
-> screen, on the chat section, those ones can be formatted the same way too, but
-> they also support color embedding, which makes for a wonderful presentation
-> for texts (if used correctly of course).
->
-> Keep in mind the that SA-MP’s restrictions on displaying strings apply for
-> this type of messages too, being like the previous ones, limited to smaller
-> than _144 characters_, or else the message won’t be sent, sometimes they will
-> even crash some commands.
->
-> There are two functions that natively print text on the client’s screen, the
-> only difference between them is the scoop, the first takes three parameters,
-> the id of the player you want to print the text on their screen, the text’s
-> color, and the text itself.
->
-> Code:
->
-> SendClientMessage(playerid, color, const message\[\])
->
-> Say, you want to send a text to the player whose id’s 1, telling them “Hello
-> there!”;
->
-> Code:
->
-> SendClientMessage(1, -1, "Hello there!");
->
-> Simple, just like that, the player with the ID of 1 will be sent a text saying
-> “_Hello there!_”, the -1 is the color parameter, in this case, it’s the color
-> **white**, more on colors later.
->
-> Obviously, you can also pass an array of characters, formatted strings...etc.
-> And as we saw with other function, you can use the number sign (**#**).
->
-> Code:
->
-> #define STRING_MSG "today" new mornMsg\[\] = "Hello!";
->
-> SendClientMessage(0, -1, mornMsg); SendClientMessage(0, -1, "How are you
-> ",STRING_MSG#?);
->
-> As you can see at the example above, this will send the player with the id 0
-> two messages colored in white, the first messages will say “Hello!”, and the
-> second will say, “_How are you today?_”, pretty similar to how other functions
-> work. Keep in mind that predefined constant integers must be prefixed with the
-> **#** symbol.
->
-> Code:
->
-> #define NMB_MSG 3 SendClientMessage(3, -1, "It's "#NMB_MSG" PM");
->
-> Pretty self-explanatory, the text will be sent to the player with the id 3,
-> colored in white, saying “_It’s 3 PM_”.
->
-> Now that you know how to send someone a message, you can use the same approach
-> to send the same message to everyone, child’s play really, you can just put
-> the function in a loop that goes through all connected players, and risk
-> showing your code in public and call it a day, but hey, there is already a
-> native function that does the exact same thing, the same rules apply, the only
-> thing that differ between the two is a slight change in their syntax.
->
-> Code:
->
-> SendClientMessageToAll(color, const message\[\]);
->
-> pretty self-explanatory too, exposed by its name, now let’s send everyone on
-> the server a greeting message.
->
-> Code:
->
-> SendClientMessageToAll(-1, "Hello everyone!");
->
-> Just like that, you can play with it the same way you do with its other
-> sibling, two toys from the same brand really, just try not to bypass the 144
-> characters limit.
+The following function is probably the most basic function in not only pawn but
+a lot of other programming languages too, it simply accepts one parameter and
+outputs it on the console.
 
-> **✧ Textdraws**
->
-> One of SA-MP’s most powerful functionalities, just unleash your imagination,
-> textdraws are basically graphic shapes/texts/sprites/preview models...etc.
-> that can be displayed on clients’ screens, they make the UI especially much
-> more lively and interactive (to an extent). But hey, there are limitations
-> here too, for example, you cannot display a string that’s more than 1024
-> characters long, to be honest, that’s more than enough. Nothing special can be
-> said here, even with their wide functionality, strings that can be displayed
-> are poor on formatting, you can’t do as much as you could with other output
-> functions, it feels a little narrow when it comes to this, but it certainly
-> does make up for the lack of formatting with other exciting stuff, more on
-> textdraws
-> [here](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Textdraw).
+```cpp
+print("Hello world");
+```
 
-> **✧ Dialogs**
->
-> Dialogs can be thought of as “message boxes”, they, of course, come in
-> different types, accept few different inputs, and more importantly, accept all
-> types of formatting that a normal string does, with makes them much easier to
-> use than textdraw. There are limitations concerning them too, like string
-> sizes and being able to only synchronously display them on the client’s
-> screen, SA-MP only provides one native function for dealing with dialogs, and
-> honestly, that would be one of your last concerns, as the lone function does
-> its job, and does it efficiently, more on dialogs
-> [here](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/ShowPlayerDialog).
+```
+Hello world
+```
 
-**✦ Color interpretation**
+You can also pass predeclared strings or predefined constants as well as merging
+multiple of them together, or use the number sign `#` too, much like we used to
+do with the format function, but keep in mind, that doesn’t include multiple
+parameters, we can only pass one and only parameter.
 
-> **✧ Client messages and dialogs**
->
-> **✩ RGBA**
->
-> **RGBA** (short for red green blue alpha), is a simple use of the **RGB**
-> model with an extra channel, the alpha channel, basically, a form of
-> representing colors digitally, by mixing variations of red, green, blue and
-> alpha (opacity), more on that
-> [here](https://web.archive.org/web/20190424140855/https://en.wikipedia.org/wiki/RGBA_color_space).
->
-> In SA-MP’s implementation of pawn, we use hexadecimal numbers to represent
-> these color spaces, red, green, blue and alpha are noted by 2 bits each,
-> resulting in an 8 bits long hexadecimal number, for example; (_FF0000FF =
-> red_), (_00FF00FF = green_), (_0000FFFF = blue_), (_000000FF = black_),
-> (_FFFFFFFF = white_), here’s a clearer visualization on this notation:
-> FFFFFFFF.
->
-> A lot of programming/scripting languages prefix hexadecimal numbers with the
-> number sign (**#**), In pawn, however, we prefix them with (**0x**), so the
-> following hexadecimal number _8060C1FF_, becomes _0x8060C1FF_.
->
-> We can, of course, use decimal numbers to represent colors, but it’s much
-> clearer to use the hexadecimal notation, as it’s the more readable between the
-> two, let’s look the following example;
->
-> Code:
->
-> // Representing the color white with decimal numbers.
-> SendClientMessageToAll(-1, "Hello everyone!");
->
-> // Representing the color white with hexadecimal numbers.
-> SendClientMessageToAll(0xFFFFFFFF, "Hello everyone!");
->
-> // A client message colored in white will be sent to everybody.
->
-> Keep in mind that assigning all bits to the same value will result in
-> variations of shades of grey (no pun intended), assigning the alpha channel to
-> 0 will make the text invisible.
->
-> It’s possible to format texts with multicolor simultaneously, but for that, we
-> embed the simpler **RGB** notation.
+```csharp
+#define HAPPY_STRING "I'm happy today" // String constant.
+#define NEW_YEAR 2019 // Integer constant.
+new stylishMsg[12] = "I'm stylish";
 
-> **✩ RGB**
->
-> This is exactly like the **RGBA** color spaces, but with no alpha channel,
-> just a mixture of red, green and blue, noted as a hexadecimal number of 6
-> bits, in pawn, this notation is used mostly to embed colors into texts, simply
-> wrap your 6 bits hexadecimal number between a pair of curly brackets, and
-> you’re set up to go, for example; (**{FF0000} = red**), (**{00FF00} =
-> green**), (**{0000FF} = blue**), (**{000000} = black**), (**{FFFFFF} =
-> white**), here’s a clearer visualization on this notation: {FFFFFF}. Let’s
-> look at this quick example here;
->
-> Code:
->
-> SendClientMessageToAll(0x00FF00FF, "I'm green{000000}, and {FF0000}I'm red");
->
-> This will send the following message to everyone (and I'm no Italian):
->
-> Code:
->
-> I’m green, and I’m red
->
-> Keep in mind that the hexadecimal notation is case insensitive, so typing
-> _0xFFC0E1FF_ is the same as typing _0xfFC0e1Ff_, the same goes for embedded
-> colors, _{401C15}_ is the same as _{401c15}_.
->
-> Sometimes, working with colors can prove to be quite the labor, It’s not that
-> easy to go around remembering all of those long hexadecimal numbers like no
-> big deal, You should always have a reference to go back to, there are plenty
-> of online color pickers you can use, you can simply g.oogle “_color picker_”,
-> and choose between thousands of them, let me do that on you if you don’t mind,
-> [here’s a simple tool](https://web.archive.org/web/20190424140855/https://www.webpagefx.com/web-design/color-picker/)
-> that I recommend using when working with colors.
->
-> One of the problems that people find, is managing their workflow, which if
-> done right, it facilitates the work pacing, and makes it less painful to work
-> around your projects, while color picker tools are of a great help, you can
-> still waste plenty of time going on and off to it every time you need to pick
-> a color, the frustration of that can be as annoying as a pizza with
-> pineapples, luckily, you can take advantage of predefined constants, and
-> define your most used colors for later usage, here’s a simple example;
->
-> Code:
->
-> #define COLOR_RED 0xFF0000FF #define COLOR_GREEN 0xFF0000FF #define COLOR_BLUE
-> 0xFF0000FF
->
-> SendClientMessageToAll(COLOR_RED, "I'm a red text");
-> SendClientMessageToAll(COLOR_GREEN, "I'm a green text");
-> SendClientMessageToAll(COLOR_BLUE, "I'm a blue text");
->
-> The latter can be done on embedded colors too;
->
-> Code:
->
-> #define COL_RED "{FF0000}" #define COL_GREEN {FF0000} #define COL_BLUE
-> "{FF0000}"
->
-> SendClientMessageToAll(-1, ""COL_RED"I'm a red text");
-> SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
-> ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice",
-> "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
->
-> At compilation time, all predefined constants will be replaced by their
-> values, and thus, this **“”COL_RED”I’m a red text”** becomes this
-> **“”{FF0000}”I’m a red text”**, notice how we used two methode to predifne
-> those colors, _“RRGGBB”_ and _“{RRGGBB}”_, it’ goes into personal preference
-> which methode to go by, personaly, I find defining them as _“RRGGBB”_ much
-> cleared, as the usages of curly brackets is present, and thus makes it
-> noticable that we’re embedding a color.
->
-> That was the general approach on color embedding with dialog and client
-> messages strings, it is possible to use colors within text in client messages,
-> dialogs, 3D text labels, object material texts and vehicle number plates, but
-> hey, SA-MP has also texdraws and gametexts functionalities, however those
-> don’t support the RGB notation, and thus, adding colors is done differently.
+print(HAPPY_STRING);
+print(stylishMsg);
+print(#2019 is beyond the horizon);
+print("I'm excited for "#NEW_YEAR);
+print("What ""about"" you""?");
+```
 
-> **✧ Textdraws and Gametexts**
->
-> as mentioned above, **RGB** notation is not supported, but luckily, we have
-> other ways to work around this problem, for textdraws, you can use the native
-> [TextDrawColor](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/TextDrawColor)
-> function to change the textdraw's color, but this the same to textdraw as
-> **RGBA** color spaces are to client messages and dialogs, they can’t be
-> embedded, for that, we use special combination of characters to refer to
-> colors and few other symbols, you can see them
-> [here](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/GameTextStyle).
->
-> \*\*
->
-> ~r~
->
-> \*\*
->
-> Red
->
-> \*\*
->
-> ~g~
->
-> \*\*
->
-> Green
->
-> \*\*
->
-> ~b~
->
-> \*\*
->
-> Blue
->
-> **~w~** or **~s~**
->
-> White
->
-> \*\*
->
-> ~p~
->
-> \*\*
->
-> Purple
->
-> \*\*
->
-> ~l~
->
-> \*\*
->
-> Black
->
-> \*\*
->
-> ~y~
->
-> \*\*
->
-> Yellow
->
-> So, embedding colors can go in like this: **~w~Hello this is ~b~blue ~w~and
-> this is ~r~red**
->
-> You can use another combination of characters to play with color mixes,
-> **~h~**, it makes a certain color lighter, here are few examples:
->
-> \*\*
->
-> ~r~~h~
->
-> \*\*
->
-> Lighter red
->
-> \*\*
->
-> ~r~~h~~h~
->
-> \*\*
->
-> Red pink
->
-> \*\*
->
-> ~r~~h~~h~~h~
->
-> \*\*
->
-> Dark red
->
-> **~r~~h~~h~~h~~h~**
->
-> Light red pink
->
-> \*\*
->
-> ~r~~h~~h~~h~~h~~h~
->
-> \*\*
->
-> Pink
->
-> \*\*
->
-> ~g~~h~
->
-> \*\*
->
-> Light green
->
-> You can find more information about this
-> [here](https://web.archive.org/web/20190424140855/http://wiki.sa-mp.com/wiki/Colors_List).
+```
+I'm happy today
+I'm stylish
+2019 is beyond the horizon
+I'm excited for 2019
+What about you?
+```
 
-**✦ The escape character**
+Notice how we used the number symbol here the same way we did with the format
+function, if the value is an integer, you prefix it with `#` so it’s treated as
+a string.
 
-> **✧ Description**
->
+Also keep in mind that the `print` function does support packed strings, however
+only accepts string type variables (_array of characters_), passing anything
+that’s not an array, a string (_be it between double quotations or prefixed by
+the number symbol_) will give compilation errors, so doing any of the following
+will not work;
+
+```cpp
+// Case 1
+new _charA = 'A';
+print(_charA);
+
+// Case 2
+new _charB = 66;
+print(_charB);
+
+// Case 3
+print('A');
+
+// Case 4
+print(66);
+```
+
+Let’s see how we can fix that;
+
+```cpp
+// Case 1
+new _charA[2] = "A";
+print(_charA);
+```
+
+We change the single quotation mark to the double quotation mark and give the
+array two cells, one of the A character, and the second one for the null
+terminator because anything between the double quotation marks is a string, the
+output is **A**.
+
+```cpp
+// Case 2
+new _charB[2] = 66;
+print(_charB);
+```
+
+We change the `_charB` to an array with one cell and set the cell labelled 0 to
+the value of `66`, which translates to **B** according to the _ASCII_ table, the
+output is **B**, we preserve an additional cell for the null-terminator (_how
+much is there so it's not funny anymore?_).
+
+```cpp
+// Case 3
+print("A");
+```
+
+Not much can be said, all it took is switching from the single quotation marks
+to a pair of double quotation marks.
+
+As for the fourth case, there’s not much we can do while working with the
+`print` function, but it can simply be resolved using another similar function,
+called...
+
+&nbsp;
+
+#### **✩ printf**
+
+Short for “_print formatted_”, I can simply put, this is a more diverse version
+of the previous `print` function, more specifically, it’s like a combination
+between the `format` function and the `print` function, meaning that it also
+prints characters on the server’s console, but with the benefit of formatting
+the output text.
+
+Unlike `print`, `printf` accepts multiple parameters, and with different types
+too, however it does not support packed strings, in order to expand on its
+functionality, we use these sequences called “_format specifiers_”, more on them
+later, outputting anything more than 1024 characters will crash the server, so
+take notes on that.
+
+```cpp
+#define RANDOM_STRING "Vsauce"
+#define RANDOM_NUMBER 2018
+
+printf("Hey "RANDOM_STRING", Micheal here! #"#RANDOM_NUMBER);
+```
+
+Notice how we similarly to the `print` and the `format` functions, we nested
+those strings into one, which outputs the following;
+
+```
+Hey Vsauce, Micheal here! #2018
+```
+
+The `printf` function as I said before, really shines when **format specifiers**
+are used, it’s what distinguishes it and sets it apart, you can attach as many
+variables as you want, and output simple and complex strings with ease, we will
+have a much deeper look on that when we’re introduced to those specifiers later
+on.
+
+&nbsp;
+
+#### **✧ Client messages**
+
+Apart from the other doll texts you can print on the server’s console, who are
+mainly used for debugging, there are messages that are printed on the client’s
+screen, on the chat section, those ones can be formatted the same way too, but
+they also support color embedding, which makes for a wonderful presentation for
+texts (_if used correctly of course_).
+
+Keep in mind the that SA-MP’s restrictions on displaying strings apply for this
+type of messages too, being like the previous ones, limited to smaller than _144
+characters_, or else the message won’t be sent, sometimes they will even crash
+some commands.
+
+There are two functions that natively print text on the client’s screen, the
+only difference between them is the scoop, the first takes three parameters, the
+id of the player you want to print the text on their screen, the text’s color,
+and the text itself.
+
+```cpp
+SendClientMessage(playerid, color, const message[])
+```
+
+Say, you want to send a text to the player whose id’s 1, telling them “Hello
+there!”;
+
+```cpp
+SendClientMessage(1, -1, "Hello there!");
+```
+
+Simple, just like that, the player with the ID of 1 will be sent a text saying
+**Hello there!**, the `-1` is the color parameter, in this case, it’s the color
+**white**, more on colors later.
+
+Obviously, you can also pass an array of characters, formatted strings...etc.
+And as we saw with other function, you can use the number sign `#`.
+
+```cpp
+#define STRING_MSG "today"
+new mornMsg[] = "Hello!";
+
+SendClientMessage(0, -1, mornMsg);
+SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+```
+
+As you can see at the example above, this will send the player with the id _0_
+two messages colored in white, the first messages will say “_Hello!_”, and the
+second will say, “_How are you today?_”, pretty similar to how other functions
+work. Keep in mind that predefined constant integers must be prefixed with the
+`#` symbol.
+
+```cpp
+#define NMB_MSG 3
+SendClientMessage(3, -1, "It's "#NMB_MSG" PM");
+```
+
+Pretty self-explanatory, the text will be sent to the player with the id _3_,
+colored in white, saying “_It’s 3 PM_”.
+
+Now that you know how to send someone a message, you can use the same approach
+to send the same message to everyone, child’s play really, you can just put the
+function in a loop that goes through all connected players, and risk showing
+your code in public and call it a day, but hey, there is already a native
+function that does the exact same thing, the same rules apply, the only thing
+that differ between the two is a slight change in their syntax.
+
+```cpp
+SendClientMessageToAll(color, const message[]);
+```
+
+pretty self-explanatory too, exposed by its name, now let’s send everyone on the
+server a greeting message.
+
+```cpp
+SendClientMessageToAll(-1, "Hello everyone!");
+```
+
+Just like that, you can play with it the same way you do with its other sibling,
+two toys from the same brand really, just try not to bypass the 144 characters
+limit.
+
+&nbsp;
+
+#### **✧ Textdraws**
+
+One of SA-MP’s most powerful functionalities, just unleash your imagination,
+textdraws are basically graphic shapes/texts/sprites/preview models...etc. that
+can be displayed on clients’ screens, they make the UI especially much more
+lively and interactive (_to an extent_). But hey, there are limitations here
+too, for example, you cannot display a string that’s more than 1024 characters
+long, to be honest, that’s more than enough. Nothing special can be said here,
+even with their wide functionality, strings that can be displayed are poor on
+formatting, you can’t do as much as you could with other output functions, it
+feels a little narrow when it comes to this, but it certainly does make up for
+the lack of formatting with other exciting stuff, more on textdraws
+[here](../scripting/resources/textdraws).
+
+&nbsp;
+
+#### **✧ Dialogs**
+
+Dialogs can be thought of as “_message boxes_”, they, of course, come in
+different types, accept few different inputs, and more importantly, accept all
+types of formatting that a normal string does, with makes them much easier to
+use than textdraw. There are limitations concerning them too, like string sizes
+and being able to only synchronously display them on the client’s screen, SA-MP
+only provides one native function for dealing with dialogs, and honestly, that
+would be one of your last concerns, as the lone function does its job, and does
+it efficiently, more on dialogs [here](../scripting/functions/ShowPlayerDialog).
+
+&nbsp;
+
+### **✦ Color interpretation**
+
+#### **✧ Client messages and dialogs**
+
+#### **✩ RGBA**
+
+**RGBA** (**short for red green blue alpha**), is a simple use of the **RGB**
+model with an extra channel, the alpha channel, basically, a form of
+representing colors digitally, by mixing variations of red, green, blue and
+alpha (_opacity_), more on that
+[here](https://en.wikipedia.org/wiki/RGBA_color_space).
+
+In SA-MP’s implementation of pawn, we use hexadecimal numbers to represent these
+color spaces, red, green, blue and alpha are noted by 2 bits each, resulting in
+an 8 bits long hexadecimal number, for example; (_FF0000FF = red_), (_00FF00FF =
+green_), (_0000FFFF = blue_), (_000000FF = black_), (_FFFFFFFF = white_), here’s
+a clearer visualization on this notation: _FFFFFFFF_.
+
+A lot of programming/scripting languages prefix hexadecimal numbers with the
+number sign `#`, In pawn, however, we prefix them with `0x`, so the following
+hexadecimal number _8060C1FF_, becomes _0x8060C1FF_.
+
+We can, of course, use decimal numbers to represent colors, but it’s much
+clearer to use the hexadecimal notation, as it’s the more readable between the
+two, let’s look the following example;
+
+```cpp
+// Representing the color white with decimal numbers
+SendClientMessageToAll(-1, "Hello everyone!");
+
+// Representing the color white with hexadecimal numbers
+SendClientMessageToAll(0xFFFFFFFF, "Hello everyone!");
+
+// A client message colored in white will be sent to everybody
+```
+
+Keep in mind that assigning all bits to the same value will result in variations
+of shades of grey (_no pun intended_), assigning the alpha channel to 0 will
+make the text invisible.
+
+It’s possible to format texts with multicolor simultaneously, but for that, we
+embed the simpler **RGB** notation.
+
+#### **✩ RGB**
+
+This is exactly like the **RGBA** color spaces, but with no alpha channel, just
+a mixture of red, green and blue, noted as a hexadecimal number of 6 bits, in
+pawn, this notation is used mostly to embed colors into texts, simply wrap your
+6 bits hexadecimal number between a pair of curly brackets, and you’re set up to
+go, for example; (**{FF0000} = red**), (**{00FF00} = green**), (**{0000FF} =
+blue**), (**{000000} = black**), (**{FFFFFF} = white**), here’s a clearer
+visualization on this notation: `{FFFFFF}`. Let’s look at this quick example
+here;
+
+```cpp
+SendClientMessageToAll(0x00FF00FF, "I'm green{000000}, and {FF0000}I'm red");
+```
+
+This will send the following message to everyone (and I'm no Italian):
+
+```cpp
+I’m green, and I’m red
+```
+
+Keep in mind that the hexadecimal notation is case insensitive, so typing
+`0xFFC0E1FF` is the same as typing `0xfFC0e1Ff`, the same goes for embedded
+colors, `{401C15}` is the same as `{401c15}`.
+
+Sometimes, working with colors can prove to be quite the labor, It’s not that
+easy to go around remembering all of those long hexadecimal numbers like no big
+deal, You should always have a reference to go back to, there are plenty of
+online color pickers you can use, you can simply g.oogle “_color picker_”, and
+choose between thousands of them, let me do that on you if you don’t mind,
+[here’s a simple tool](https://www.webpagefx.com/web-design/color-picker/) that
+I recommend using when working with colors.
+
+One of the problems that people find, is managing their workflow, which if done
+right, it facilitates the work pacing, and makes it less painful to work around
+your projects, while color picker tools are of a great help, you can still waste
+plenty of time going on and off to it every time you need to pick a color, the
+frustration of that can be as annoying as a pizza with pineapples, luckily, you
+can take advantage of predefined constants, and define your most used colors for
+later usage, here’s a simple example;
+
+```cs
+#define COLOR_RED 0xFF0000FF
+#define COLOR_GREEN 0xFF0000FF
+#define COLOR_BLUE 0xFF0000FF
+
+SendClientMessageToAll(COLOR_RED, "I'm a red text");
+SendClientMessageToAll(COLOR_GREEN, "I'm a green text");
+SendClientMessageToAll(COLOR_BLUE, "I'm a blue text");
+```
+
+The latter can be done on embedded colors too;
+
+```cs
+#define COL_RED "{FF0000}"
+#define COL_GREEN {FF0000}
+#define COL_BLUE "{FF0000}"
+
+SendClientMessageToAll(-1, ""COL_RED"I'm a red text");
+SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
+ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
+```
+
+At compilation time, all predefined constants will be replaced by their values,
+and thus, this `"COL_RED"I’m a red text` becomes this
+`”{FF0000}”I’m a red text`, notice how we used two methode to predifne those
+colors, _“RRGGBB”_ and _“{RRGGBB}”_, it’ goes into personal preference which
+methode to go by, personaly, I find defining them as _“RRGGBB”_ much cleared, as
+the usages of curly brackets is present, and thus makes it noticable that we’re
+embedding a color.
+
+That was the general approach on color embedding with dialog and client messages
+strings, it is possible to use colors within text in client messages, dialogs,
+3D text labels, object material texts and vehicle number plates, but hey, SA-MP
+has also texdraws and gametexts functionalities, however those don’t support the
+RGB notation, and thus, adding colors is done differently.
+
+&nbsp;
+
+#### **✧ Textdraws and Gametexts**
+
+as mentioned above, **RGB** notation is not supported, but luckily, we have
+other ways to work around this problem, for textdraws, you can use the native
+[TextDrawColor](../scripting/functions/TextDrawColor) function to change the
+textdraw's color, but this the same to textdraw as **RGBA** color spaces are to
+client messages and dialogs, they can’t be embedded, for that, we use special
+combination of characters to refer to colors and few other symbols, you can see
+them [here](../scripting/resources/gametextstyles).
+
+|            |        |
+| ---------- | ------ |
+| ~r~        | Red    |
+| ~g~        | Green  |
+| ~b~        | Blue   |
+| ~w~ or ~s~ | White  |
+| ~p~        | Purple |
+| ~l~        | Black  |
+| ~y~        | Yellow |
+
+&nbsp;
+
+So, embedding colors can go in like this: **~w~Hello this is ~b~blue ~w~and this
+is ~r~red**
+
+You can use another combination of characters to play with color mixes, **~h~**,
+it makes a certain color lighter, here are few examples:
+
+|                    |                |
+| ------------------ | -------------- |
+| ~r~~h~             | Lighter red    |
+| ~r~~h~~h~          | Red pink       |
+| ~r~~h~~h~~h~       | Dark red       |
+| ~r~~h~~h~~h~~h~    | Light red pink |
+| ~r~~h~~h~~h~~h~~h~ | Pink           |
+| ~g~~h~             | Light green    |
+
+&nbsp;
+
+You can find more information about this
+[here](../scripting/resources/colorslist).
+
+&nbsp;
+
+### **✦ The escape character**
+
+#### **✧ Description**
+
 > The escape character is a character in which when prefixed to some character
 > or number, it creates its own constant character, in most
 > programming/scripting languages like pawn, the backslash is used as the escape
