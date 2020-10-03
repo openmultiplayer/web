@@ -33,7 +33,7 @@ This function always returns 1.
 SendRconCommand("gmx");
 // This is a scripted version of typing "/rcon gmx" in-game.
 // GMX restarts the game mode.
- 
+
 // Example using format()
 new szMapName[] = "Los Santos";
 new szCmd[64];

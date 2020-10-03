@@ -1,7 +1,7 @@
 ---
 id: db_debug_openfiles
 title: db_debug_openfiles
-description:  .
+description: .
 tags: []
 ---
 
@@ -13,11 +13,10 @@ This function starts with lowercase letter.
 
 ## Description
 
- . 
-
+.
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 
 
 ## Related Functions
