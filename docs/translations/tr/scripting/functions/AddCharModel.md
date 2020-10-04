@@ -16,7 +16,7 @@ Bu fonksiyon SA-MP 0.3.DL R1 sürümünde eklendi ve o sürümde çalışır. Ö
 Kullanıcı tarafının indirebilmesi için yeni bir karkater modeli ekler. Modeller kullanıcının Documents\Gta San Andreas\User Files\SAMP\cache klasörü içerisinde Sunucu IP ve Portunun yazılı olduğu bir klasörün içerisinde saklanır.
 
 | İsmi    | Açıklaması                                                                                                                   |
-| ------- | -------------------------------------------------------------------------------------------------------------------          |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | Animasyon olarak bağlı olduğu karakter ID'si.                                                                                |
 | newid   | Yeni bir karakter modeli ekler. Model ID'leri 20000 ila 30000 arasında (10000 skin modeli ekleyebilirsiniz.) kullanılabilir. |
 | dffname | .dff dosyasının adını girdiğiniz parametre. Collision ayarlarınız models klasöründe saklanır.                                |
@@ -55,8 +55,6 @@ Bunun çalışması için useartwork ayarının aktif olması gerekir. (server.c
 :::warning
 
 Bu fonksiyonu ne zaman çağırabileceğinize dair bir kısıtlama bulunmuyor. Fakat bu fonksiyonu OnFilterScriptInit/OnGameModeInit içerisinde çağıramazsınız, çünkü oyun içerisinde bulunan bazı oyuncular modelleri indirmemiş olabilir.
-
-
 
 :::
 
