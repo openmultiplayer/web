@@ -23,13 +23,13 @@ some sort of advanced, clever and effective tips.
 In general, formatting a text is the act of manipulating it to visually improve
 its readability, be it changing the font’s family, color, weight and so on.
 
-Strings being an array of characters (alphabets, numbers, symbols), which we
+Strings being an array of characters (_alphabets, numbers, symbols_), which we
 wouldn’t specifically call a text on itself but is referred as such when
 displayed, can be processed with the same approach, but unfortunately, SA-MP’s
-interpretation of pawn does not allow for much (yet? Maybe never), generally
+interpretation of pawn does not allow for much (_yet? Maybe never_), generally
 speaking changing the color is as far as we can get, yes, you can still
 change/customize the font, but that’s client-sided only, and yes,
-[GTA San Andreas](https://www.rockstargames.com/sanandreas/) (the parent game)
+[GTA San Andreas](https://www.rockstargames.com/sanandreas/) (_the parent game_)
 does provide some extra fonts, but that only works on
 [textdraws](../scripting/resources/textdraws) and
 [gametext](../scripting/functions/GameTextForPlayer), this does cause
@@ -44,9 +44,9 @@ As I said before, strings are basically arrays of characters, so they are used
 the same way arrays are, and so as we would create an array, we would do for
 strings following this format; `string_name[string_size]`.
 
-> **string_name**: the name of the character array (e.g. string, str, message,
+> **string_name**: the name of the character array (_e.g. string, str, message,
 > text...etc. as long as it’s a valid variable name (begins with a character or
-> an underscore)).
+> an underscore)_).
 
 > **string_size**: the maximum characters this string would have.
 
@@ -118,8 +118,8 @@ as it might seem, the list below breaks down some of these limits;
 | **Dialog columnt**  | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER` and `DIALOG_STYLE_TABLIST`.                             | 128  |
 | **Dialog row**      | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER`, `DIALOG_STYLE_TABLIST` and `DIALOG_STYLE_LIST`.        | 256  |
 | **Chat bubble**     | The chat bubble that displays above the player's name tag.                                                             | 144  |
-| **Menu title**      | The GTA San Andreas native menu (mostly used for shops) header.                                                        | 31   |
-| **Menu item**       | The GTA San Andreas native menu (mostly used for shops) item/row.                                                      | 31   |
+| **Menu title**      | The GTA San Andreas native menu (_mostly used for shops_) header.                                                      | 31   |
+| **Menu item**       | The GTA San Andreas native menu (_mostly used for shops_) item/row.                                                    | 31   |
 
 &nbsp;
 
@@ -751,7 +751,7 @@ infrequently used strings/arrays.
 
 #### Console
 
-##### print
+##### `print`
 
 The following function is probably the most basic function in not only pawn but
 a lot of other programming languages too, it simply accepts one parameter and
@@ -770,7 +770,7 @@ multiple of them together, or use the number sign `#` too, much like we used to
 do with the format function, but keep in mind, that doesn’t include multiple
 parameters, we can only pass one and only parameter.
 
-```csharp
+```cpp
 #define HAPPY_STRING "I'm happy today" // String constant.
 #define NEW_YEAR 2019 // Integer constant.
 new stylishMsg[12] = "I'm stylish";
@@ -854,7 +854,7 @@ called...
 
 &nbsp;
 
-##### printf
+##### `printf`
 
 Short for “_print formatted_”, I can simply put, this is a more diverse version
 of the previous `print` function, more specifically, it’s like a combination
@@ -1007,7 +1007,7 @@ it efficiently, more on dialogs [here](../scripting/functions/ShowPlayerDialog).
 
 ##### RGBA
 
-**RGBA** (**short for red green blue alpha**), is a simple use of the **RGB**
+**RGBA** (_short for red green blue alpha_), is a simple use of the **RGB**
 model with an extra channel, the alpha channel, basically, a form of
 representing colors digitally, by mixing variations of red, green, blue and
 alpha (_opacity_), more on that
@@ -1019,9 +1019,9 @@ an 8 bits long hexadecimal number, for example; (_FF0000FF = red_), (_00FF00FF =
 green_), (_0000FFFF = blue_), (_000000FF = black_), (_FFFFFFFF = white_), here’s
 a clearer visualization on this notation:
 
-<span style={{ color: 'red' }}>FF</span><span
-style={{ color: 'green' }}>FF</span><span
-style={{ color: 'blue' }}>FF</span><span style={{ color: 'grey' }}>FF</span>.
+> <span style={{ color: 'red' }}>FF</span><span
+> style={{ color: 'green' }}>FF</span><span
+> style={{ color: 'blue' }}>FF</span><span style={{ color: 'grey' }}>FF</span>
 
 A lot of programming/scripting languages prefix hexadecimal numbers with the
 number sign `#`, In pawn, however, we prefix them with `0x`, so the following
@@ -1091,7 +1091,7 @@ frustration of that can be as annoying as a pizza with pineapples, luckily, you
 can take advantage of predefined constants, and define your most used colors for
 later usage, here’s a simple example;
 
-```cs
+```cpp
 #define COLOR_RED 0xFF0000FF
 #define COLOR_GREEN 0xFF0000FF
 #define COLOR_BLUE 0xFF0000FF
@@ -1103,7 +1103,7 @@ SendClientMessageToAll(COLOR_BLUE, "I'm a blue text");
 
 The latter can be done on embedded colors too;
 
-```cs
+```cpp
 #define COL_RED "{FF0000}"
 #define COL_GREEN {FF0000}
 #define COL_BLUE "{FF0000}"
@@ -1179,7 +1179,7 @@ You can find more information about this
 
 The escape character is a character in which when prefixed to some character or
 number, it creates its own constant character, in most programming/scripting
-languages like pawn, the backslash is used as the escape character (**\\**), a
+languages like pawn, the backslash is used as the escape character (`\`), a
 combination of this and some other character/number will result in an
 [escape sequence](https://en.wikipedia.org/wiki/Escape_sequence) which has a
 certain meaning, you can find more about escape character
@@ -1192,21 +1192,21 @@ certain meaning, you can find more about escape character
 Escape sequences make it easier to express certain characters in the source code
 of your script, here is a table containing the escape sequences used in pawn:
 
-|                                              |          |
-| -------------------------------------------- | -------- |
-| Audible beep (on server machines)            | \a or \7 |
-| Backspace                                    | \b       |
-| Escape                                       | \e       |
-| Form feed                                    | \f       |
-| New line                                     | \n       |
-| Carriage return                              | \r       |
-| Horizontal tab                               | \t       |
-| Vertical tab                                 | \v       |
-| Backslash                                    | \\\      |
-| Single quote                                 | \\'      |
-| Double quote                                 | \\"      |
-| Character code with decimal values "ddd"     | \ddd;    |
-| Character code with hexadecimal values "hhh" | \xhhh;   |
+|                                              |              |
+| -------------------------------------------- | ------------ |
+| Audible beep (on server machines)            | `\a` or `\7` |
+| Backspace                                    | `\b`         |
+| Escape                                       | `\e`         |
+| Form feed                                    | `\f`         |
+| New line                                     | `\n`         |
+| Carriage return                              | `\r`         |
+| Horizontal tab                               | `\t`         |
+| Vertical tab                                 | `\v`         |
+| Backslash                                    | `\\`         |
+| Single quote                                 | `\'`         |
+| Double quote                                 | `\"`         |
+| Character code with decimal values "ddd"     | `\ddd;`      |
+| Character code with hexadecimal values "hhh" | `\xhhh;`     |
 
 &nbsp;
 
@@ -1685,7 +1685,7 @@ particular directive accepts different parameters, for each their specific task,
 and there is one that's responsible on setting the escape character which we
 will be focusing on, it's `ctrlchar`.
 
-```cs
+```cpp
 #pragma ctrlchar '$'
 
 main()
@@ -1715,14 +1715,14 @@ This portion here has absolutely nothing to do with escape sequences, but it is
 used in formatting textdraws and gametext, it’s better to put it here than
 anywhere else;
 
-|     |                                                                                                               |
-| --- | ------------------------------------------------------------------------------------------------------------- |
-| ~u~ | Up arrow (gray)                                                                                               |
-| ~d~ | Down arrow (gray)                                                                                             |
-| ~<~ | Left arrow (gray)                                                                                             |
-| ~>~ | Right arrow (gray)                                                                                            |
-| ]   | Displays a `*` symbol (only in text style 3, 4, and 5)                                                        |
-| ~k~ | keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`). Look here for a list of keys |
+|       |                                                                                                               |
+| ----- | ------------------------------------------------------------------------------------------------------------- |
+| `~u~` | Up arrow (gray)                                                                                               |
+| `~d~` | Down arrow (gray)                                                                                             |
+| `~<~` | Left arrow (gray)                                                                                             |
+| `~>~` | Right arrow (gray)                                                                                            |
+| `]`   | Displays a `*` symbol (only in text style 3, 4, and 5)                                                        |
+| `~k~` | keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`). Look here for a list of keys |
 
 &nbsp;
 
@@ -1756,18 +1756,18 @@ like print will have no effect, an alternative to it is the more advanced
 
 Let us look at the different output types that can be used:
 
-|           |                                               |
-| --------- | --------------------------------------------- |
-| Specifier | Meaning                                       |
-| %i        | Integer (whole number)                        |
-| %d        | Integer (whole number)                        |
-| %s        | String                                        |
-| %f        | Floating-point number (Float: tag)            |
-| %c        | ASCII character                               |
-| %x        | Hexadecimal number                            |
-| %b        | Binary number                                 |
-| %%        | Literal '%'                                   |
-| %q        | Escape a text for SQLite. (Added in 0.3.7 R2) |
+|               |                                                 |
+| ------------- | ----------------------------------------------- |
+| **Specifier** | **Meaning**                                     |
+| `%i`          | Integer (_whole number_)                        |
+| `%d`          | Integer (_whole number_)                        |
+| `%s`          | String                                          |
+| `%f`          | Floating-point number (`Float: tag`)            |
+| `%c`          | ASCII character                                 |
+| `%x`          | Hexadecimal number                              |
+| `%b`          | Binary number                                   |
+| `%% `         | Literal `'%'`                                   |
+| `%q`          | Escape a text for SQLite. (_Added in 0.3.7 R2_) |
 
 &nbsp;
 
@@ -2316,13 +2316,11 @@ id of 9 called Player1_:
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[Info]: the player with the id of %d is called {FFFF00}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
 ```
 
-**Output** :
-
 > [Info]: the player with the id of 9 is called <span
-> style={{color: '#ffff00'}}>Player1</span>.
+> style={{color: '#ee11cc'}}>Player1</span>.
 
 Simply enough, we just get the player name and start formatting out the string,
 the `%d` placeholder is responsible on displaying the `playerid` variables,
@@ -2352,8 +2350,6 @@ seconds on their variables respectively, then put them all together into a
 nicely formatted string, we took advantage of the width field `%02d` to pad the
 values between 0 and 9 with another zero to evade outputs like (“_It’s 5:9
 PM_”), as you can see.
-
-**Output** :
 
 > It’s 06 :17 PM
 
@@ -2394,8 +2390,6 @@ Given the following list of connected players:
 Say, `playerid` `0` killed `playerid` `6`, the formatted messages should spell
 “**{FF0000}Compton {000000}killed > {0000FF}Bartolomew**”, which will send the
 following client message to everybody on the server:
-
-**Output** :
 
 > <span style={{color: 'red'}}>Compton</span> ­ <span
 > style={{color: '#000000'}}>killed</span> ­ <span
