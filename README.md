@@ -54,7 +54,7 @@ npm install
 npm start
 ```
 
-By default the development server will run on `http://localhost:3001` but can be changed with the following command:
+By default the development server will run on `http://localhost:3000` but can be changed with the following command:
 
 ```bash
 yarn start -- --host=0.0.0.0 --port=1234
