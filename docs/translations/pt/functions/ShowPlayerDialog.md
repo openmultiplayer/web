@@ -1,35 +1,35 @@
 ---
 id: ShowPlayerDialog
 title: ShowPlayerDialog
-description: Mostra um dialog (janela) asÌncrono (um ˙nico por vez).
+description: Mostra um dialog (janela) as√≠ncrono (um √∫nico por vez).
 tags: ["player"]
 ---
 
 :::warning
 
-Esta funÁ„o foi adicionada no SA-MP 0.3a e n„o funcionar· em versıes anteriores!
+Esta fun√ß√£o foi adicionada no SA-MP 0.3a e n√£o funcionar√° em vers√µes anteriores!
 
 :::
 
-## DescriÁ„o
+## Descri√ß√£o
 
-Mostra um dialog (janela) asÌncrono (um ˙nico por vez).
+Mostra um dialog (janela) as√≠ncrono (um √∫nico por vez).
 
-| Par‚metro      | DescriÁ„o                                                                                                                             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | ID do jogador que ir· ver o dialog                                                                                             |
-| dialogid  | ID do dialog (ser· usado para processar as respostas). ID m·ximo 32767. Usar valores negativos fechar· qualquer dialog aberto. |
-| style     | The [style](../resources/dialogstyles.md) of the dialog.                                                                                |
-| caption[] | TÌtulo mostrado no topo do dialog. O tamanho do caption n„o deve ultrapassar 64 caracteres, ou ser· cortado.       |
-| info[]    | Texto que ser· mostrado no corpo do dialog. Use \n para iniciar uma nova linha e \t para espaÁo (TAB).                                                  |
-| button1[] | Texto do bot„o esquerdo.                                                                                                            |
-| button2[] | Texto do bot„o direito. Manter vazio, caso queira ocultar o button2.                                                                         |
+| Par√¢metro | Descri√ß√£o                                                                                                                      |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| playerid  | ID do jogador que ir√° ver o dialog                                                                                             |
+| dialogid  | ID do dialog (ser√° usado para processar as respostas). ID m√°ximo 32767. Usar valores negativos fechar√° qualquer dialog aberto. |
+| style     | The [style](../resources/dialogstyles.md) of the dialog.                                                                       |
+| caption[] | T√≠tulo mostrado no topo do dialog. O tamanho do caption n√£o deve ultrapassar 64 caracteres, ou ser√° cortado.                   |
+| info[]    | Texto que ser√° mostrado no corpo do dialog. Use \n para iniciar uma nova linha e \t para espa√ßo (TAB).                         |
+| button1[] | Texto do bot√£o esquerdo.                                                                                                       |
+| button2[] | Texto do bot√£o direito. Manter vazio, caso queira ocultar o button2.                                                           |
 
 ## Retorno
 
-1: A funÁ„o foi executada corretamente.
+1: A fun√ß√£o foi executada corretamente.
 
-0: A funÁ„o falhou ao executar. Isto significa que o jogador n„o est· conectado.
+0: A fun√ß√£o falhou ao executar. Isto significa que o jogador n√£o est√° conectado.
 
 ## Exemplos
 
@@ -47,7 +47,7 @@ enum
 #define DIALOG_WELCOME 2
 #define DIALOG_WEAPONS 3
 
-// Enums s„o recommendadas, j· que vocÍ n„o pode reutilizar IDs. No entanto, enums usam memÛria para armazenar as definiÁıes, enquanto as define s„o prÈ-processadas na compilaÁ„o.
+// Enums s√£o recommendadas, j√° que voc√™ n√£o pode reutilizar IDs. No entanto, enums usam mem√≥ria para armazenar as defini√ß√µes, enquanto as define s√£o pr√©-processadas na compila√ß√£o.
 
 // Exemplo para DIALOG_STYLE_MSGBOX:
 ShowPlayerDialog(playerid, DIALOG_WELCOME, DIALOG_STYLE_MSGBOX, "Notice", "You are connected to the server", "Close", "");
@@ -72,17 +72,17 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 
 :::tip
 
-… recomendado usar enumeraÁıes (enums - veja abaixo) ou constantes (#define) para determinar quais dialogid's est„o sendo usados, para evitar confusıes no futuro. VocÍ nunca deve usar n˙meros direto, porque isso gera confusıes.
+√â recomendado usar enumera√ß√µes (enums - veja abaixo) ou constantes (#define) para determinar quais dialogid's est√£o sendo usados, para evitar confus√µes no futuro. Voc√™ nunca deve usar n√∫meros direto, porque isso gera confus√µes.
 
 :::
 
 :::tip
 
-Use cores embutidas para m˙ltiplas cores no texto. Usando -1 como dialogid fecha todos os dialogs abertos na tela do cliente (jogador).
+Use cores embutidas para m√∫ltiplas cores no texto. Usando -1 como dialogid fecha todos os dialogs abertos na tela do cliente (jogador).
 
 :::
 
-## FunÁıes relacionadas
+## Fun√ß√µes relacionadas
 
 - [TextDrawShowForPlayer](TextDrawShowForPlayer.md): Apresenta um textdraw para certo jogador.
-- [OnDialogResponse](../callbacks/OnDialogResponse.md): … chamada quando um jogador responde a um dialog.
+- [OnDialogResponse](../callbacks/OnDialogResponse.md): √â chamada quando um jogador responde a um dialog.

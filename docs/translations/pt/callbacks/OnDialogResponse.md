@@ -1,31 +1,31 @@
 ---
 id: OnDialogResponse
 title: OnDialogResponse
-description: Esta callback È chamada quando um jogador responde a um dialog mostrado usando ShowPlayerDialog ao clicar em um bot„o, pressionar ENTER/ESC ou dar clique duplo em um item da lista. (se estiver usando o formato lista).
+description: Esta callback √© chamada quando um jogador responde a um dialog mostrado usando ShowPlayerDialog ao clicar em um bot√£o, pressionar ENTER/ESC ou dar clique duplo em um item da lista. (se estiver usando o formato lista).
 tags: []
 ---
 
 :::warning
 
-Esta callback foi adicionada no SA-MP 0.3a e n„o funcionar· em versıes anteriores!
+Esta callback foi adicionada no SA-MP 0.3a e n√£o funcionar√° em vers√µes anteriores!
 
 :::
 
-## DescriÁ„o
+## Descri√ß√£o
 
-Esta callback È chamada quando um jogador responde a um dialog mostrado usando ShowPlayerDialog ao clicar em um bot„o, pressionar ENTER/ESC ou dar clique duplo em um item da lista. (se estiver usando o formato lista).
+Esta callback √© chamada quando um jogador responde a um dialog mostrado usando ShowPlayerDialog ao clicar em um bot√£o, pressionar ENTER/ESC ou dar clique duplo em um item da lista. (se estiver usando o formato lista).
 
-| Par‚metro        | DescriÁ„o                                                                                                             |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| playerid    | O ID do jogador que respondeu ao dialog.                                                                      |
-| dialogid    | O ID do dialog que foi respondido, conforme definido no ShowPlayerDialog.                                             |
-| response    | 1 para o bot„o esquerdo e 0 para o bot„o direito (se for apenas um bot„o, sempre ser· 1)                                           |
-| listitem    | O ID do item da lista selecionado pelo jogador (inicia 0) (apenas se estiver usando dialog no estilo de lista, caso contr·rio, ser· -1). |
-| inputtext[] | O texto inserido no campo pelo jogador ou texto do item da lista que foi selecionado.                                       |
+| Par√¢metro   | Descri√ß√£o                                                                                                                                |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | O ID do jogador que respondeu ao dialog.                                                                                                 |
+| dialogid    | O ID do dialog que foi respondido, conforme definido no ShowPlayerDialog.                                                                |
+| response    | 1 para o bot√£o esquerdo e 0 para o bot√£o direito (se for apenas um bot√£o, sempre ser√° 1)                                                 |
+| listitem    | O ID do item da lista selecionado pelo jogador (inicia 0) (apenas se estiver usando dialog no estilo de lista, caso contr√°rio, ser√° -1). |
+| inputtext[] | O texto inserido no campo pelo jogador ou texto do item da lista que foi selecionado.                                                    |
 
 ## Retorno
 
-… sempre chamado primeiro nas filterscripts, por isso, retornar 1 impede que as outras filterscripts o vejam.
+√â sempre chamado primeiro nas filterscripts, por isso, retornar 1 impede que as outras filterscripts o vejam.
 
 ## Exemplos
 
@@ -48,7 +48,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         {
             Kick(playerid);
         }
-        return 1; // Encontrando o dialog, retorna-se 1 para que os outros n„o sejam processados, Assim como OnPlayerCommandText.
+        return 1; // Encontrando o dialog, retorna-se 1 para que os outros n√£o sejam processados, Assim como OnPlayerCommandText.
     }
 
     return 0; // DEVE-SE retornar 0 aqui! Como em OnPlayerCommandText.
@@ -66,7 +66,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         {
             Kick(playerid);
         }
-        else // Pressionando ENTER ou clicando no bot„o 'Login' 
+        else // Pressionando ENTER ou clicando no bot√£o 'Login'
         {
             if(CheckPassword(playerid, inputtext))
             {
@@ -80,7 +80,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                 ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Please enter your password:", "Login", "Cancel");
             }
         }
-        return 1; // Encontrando o dialog, retorna-se 1 para que os outros n„o sejam processados, Assim como OnPlayerCommandText.
+        return 1; // Encontrando o dialog, retorna-se 1 para que os outros n√£o sejam processados, Assim como OnPlayerCommandText.
     }
 
     return 0; // DEVE-SE retornar 0 aqui! Como em OnPlayerCommandText.
@@ -104,7 +104,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                 case 2: GivePlayerWeapon(playerid, WEAPON_SHOTGSPA, 28); // Entrega uma Combat Shotgun
             }
         }
-        return 1; // Encontrando o dialog, retorna-se 1 para que os outros n„o sejam processados, Assim como OnPlayerCommandText.
+        return 1; // Encontrando o dialog, retorna-se 1 para que os outros n√£o sejam processados, Assim como OnPlayerCommandText.
     }
 
     return 0; // DEVE-SE retornar 0 aqui! Como em OnPlayerCommandText.
@@ -133,7 +133,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                 case 2: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Entrega uma AK-47
             }
         }
-        return 1; // Encontrando o dialog, retorna-se 1 para que os outros n„o sejam processados, Assim como OnPlayerCommandText.
+        return 1; // Encontrando o dialog, retorna-se 1 para que os outros n√£o sejam processados, Assim como OnPlayerCommandText.
     }
 
     return 0; // DEVE-SE retornar 0 aqui! Como em OnPlayerCommandText.
@@ -144,19 +144,19 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Par‚metros podem conter diferentes valores, baseados no estilo do dialog ([clique para mais exemplos](../resources/dialogstyles.md)).
+Par√¢metros podem conter diferentes valores, baseados no estilo do dialog ([clique para mais exemplos](../resources/dialogstyles.md)).
 
 :::
 
 :::tip
 
-… apropriado usar diferentes dialogids, se vocÍ tiver muitos.
+√â apropriado usar diferentes dialogids, se voc√™ tiver muitos.
 
 :::
 
 :::warning
 
-Um dialog de jogador n„o È escondido ao reiniciar o gamemode, ocasionando em uma mensagem "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID" se um jogador responder ao dialog apÛs o reinÌcio.
+Um dialog de jogador n√£o √© escondido ao reiniciar o gamemode, ocasionando em uma mensagem "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID" se um jogador responder ao dialog ap√≥s o rein√≠cio.
 
 :::
 
