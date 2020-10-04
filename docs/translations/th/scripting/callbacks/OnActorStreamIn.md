@@ -38,7 +38,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## บันทึก
 
-:::เคล็ดลับ
+:::tip
 
 NPC เรียก Callback นี้ได้ด้วย
 
