@@ -70,7 +70,7 @@ If you wanted to sort the array you would end up with:
 1, 2, 2, 3, 4, 9, 64, 786
 ```
 
-If however you wanted to leave the data in the original order but still know the numbers in order for some reason (it's just an example), you have a problem, how are you meant to have numbers in two orders at once? This would be a good use of lists. To construct a list from this data you would need to make the array into a 2d array, where the second dimension was 2 cells big, one containing the original number, the other containing the index of the next largest number. You would also need a separate variable to hold the index of the lowest number, so your new array would look like:
+If however you wanted to leave the data in the original order but still know the numbers in order for some reason (it's just an example), you have a problem, how are you meant to have numbers in two orders at once? This would be a good use of lists. To construct a list from this data you would need to make the array into a 2d array, where the second dimension was 2 cells big, the first dimension containing the original number, the other containing the index of the next largest number. You would also need a separate variable to hold the index of the lowest number, so your new array would look like:
 
 ```c
 start = 1
@@ -199,11 +199,11 @@ List_Setup()
 // This function adds a value to the list (using basic sorting)
 List_Add(value)
 {
-    // Check there are free slots in the array
+    // Check if there are free slots in the array
     if (gUnusedStart == -1) return -1;
     new
         pointer = gListStart,
-        last = -1
+        last = -1,
         slot = gUnusedStart;
     // Add the value to the array
     gListData[slot][E_DATA_LIST_VALUE] = value;
@@ -287,7 +287,7 @@ You have the preceding ordered array and you want to find what slot the number 7
 
 If we construct a binary tree from the data above we get: ![Imgur](https://web.archive.org/web/20190416012239im_/https://wiki.sa-mp.com/wroot/images2/f/fe/Binarytree.GIF)
 
-If you read left to right, ignoring the vertical aspect you can see that the numbers are in order. Now we can try find the 7.
+If you read left to right, ignoring the vertical aspect you can see that the numbers are in order. Now we can try to find the 7.
 
 The start number is 14, 7 is less than 14 so we go to the slot pointed to by the left branch of 14. This brings us to 6, 7 is bigger than 6 so we go right to 9, then left again to 7. This method took 4 comparisons to find the number (including the final check to confirm that we are on 7), using a straight search would have taken 5.
 
@@ -299,7 +299,7 @@ This, unlike the example above, has a single child number (the 9), as well as 2 
 
 The trees in the examples above are called balanced binary trees, this means as near as possible all the branches are the same length (obviously in the second there aren't enough numbers for this to be the case but it's as near as possible). Constructing balanced trees is not easy, the generally accepted method of constructing almost balanced trees is putting the numbers in in a random order, this may mean you end up with something like this: ![Binarytree-uneven](https://web.archive.org/web/20190416012239im_/https://wiki.sa-mp.com/wroot/images2/a/a2/Binarytree-uneven.GIF)
 
-Obviously this tree is still valid but the right side is much larger than the left, however finding 25 still only takes 7 comparisons in this compared to 12 in the straight list. Also, as long as you start with a fairly middle number the random insertion method should produced a fairly balanced tree. The worst possible thing you can do is put the numbers in in order as then there will be no left branches at all (or right branches if done the other way), however even in this worst case the binary tree will take no longer to search than the straight list.
+Obviously this tree is still valid but the right side is much larger than the left, however finding 25 still only takes 7 comparisons in this compared to 12 in the straight list. Also, as long as you start with a fairly middle number the random insertion method should produce a fairly balanced tree. The worst possible thing you can do is put the numbers in in order as then there will be no left branches at all (or right branches if done the other way), however even in this worst case the binary tree will take no longer to search than the straight list.
 
 **Modification**
 
@@ -311,7 +311,7 @@ Adding a value to a binary tree is relatively easy, you just follow the tree thr
 
 Deleting a number from a binary tree can be hard or it can be easy. If the number is at the end of a branch (e.g. 1, 5, 7, 12 etc in the original tree) you simply remove them. If a number only has one child (e.g. the 9 in the second example) you simply move that child (e.g. the 12) up into their position (so 6's children would be 2 and 12 in the new second example with 9 removed). Deletion only gets interesting when a node has two children. There are at least four ways of doing this:
 
-The first method is the simplest computationally. Basically you choose one of the branches (left or right, assume right for this explanation) and replace the node you've removed with the first node of that branch (i.e. the right child of the node you've removed). You then go left through than new branch till you reach the end and place the left branch there. E.g. if you removed the 14 from the original exampe you would end up with 25 taking it's place at the top of the tree and 6 attached to the left branch of 17. This method is fast but ends up with very unbalanced trees very quickly.
+The first method is the simplest computationally. Basically you choose one of the branches (left or right, assume right for this explanation) and replace the node you've removed with the first node of that branch (i.e. the right child of the node you've removed). You then go left through the new branch till you reach the end and place the left branch there. E.g. if you removed the 14 from the original exampe you would end up with 25 taking its place at the top of the tree and 6 attached to the left branch of 17. This method is fast but ends up with very unbalanced trees very quickly.
 
 The second method is to get all the numbers which are children of the node you just removed and rebuild a new binary tree from them, then put the top of that tree into the node you've just removed. This keeps the tree fairly well balanced but is obviously slower.
 
