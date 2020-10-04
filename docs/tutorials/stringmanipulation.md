@@ -1022,7 +1022,10 @@ color spaces, red, green, blue and alpha are noted by 2 bits each, resulting in
 an 8 bits long hexadecimal number, for example; (_FF0000FF = red_), (_00FF00FF =
 green_), (_0000FFFF = blue_), (_000000FF = black_), (_FFFFFFFF = white_), here’s
 a clearer visualization on this notation:
-<span style="color: red;">FF</span><span style="color: green;">FF</span><span style="color: blue;">FF</span><span style="color: grey;">FF</span>.
+
+<span style={{ color: 'red' }}>FF</span><span
+style={{ color: 'green' }}>FF</span><span
+style={{ color: 'blue' }}>FF</span><span style={{ color: 'grey' }}>FF</span>.
 
 A lot of programming/scripting languages prefix hexadecimal numbers with the
 number sign `#`, In pawn, however, we prefix them with `0x`, so the following
@@ -1063,14 +1066,14 @@ visualization on this notation: `{FFFFFF}`. Let’s look at this quick example
 here;
 
 ```cpp
-SendClientMessageToAll(0x00FF00FF, "I'm green{FFFFFF}, and {FF0000}I'm red");
+SendClientMessageToAll(0x00FF00FF, "I'm green{000000}, and {FF0000}I'm red");
 ```
 
 This will send the following message to everyone (_and I'm no Italian_):
 
-> <span style="color: #00ff00ff;">I’m
-> green</span><span style="color: #ffffff;">, and
-> </span><span style="color: #ff0000;">I’m red</span>
+> <span style={{color: '#00ff00ff'}}>I’m green</span><span
+> style={{color: '#ffffff'}}>, and </span><span style={{color: '#ff0000'}}>I’m
+> red</span>
 
 Keep in mind that the hexadecimal notation is case insensitive, so typing
 `0xFFC0E1FF` is the same as typing `0xfFC0e1Ff`, the same goes for embedded
@@ -2322,8 +2325,8 @@ format(output, sizeof(output), "[Info]: the player with the id of %d is called {
 
 **Output** :
 
-> [Info]: the player with the id of 9 is called
-> <span style="color: #ffff00;">Player1</span>.
+> [Info]: the player with the id of 9 is called <span
+> style={{color: '#ffff00'}}>Player1</span>.
 
 Simply enough, we just get the player name and start formatting out the string,
 the `%d` placeholder is responsible on displaying the `playerid` variables,
@@ -2381,14 +2384,14 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 Given the following list of connected players:
 
-|        |                                              |
-| ------ | -------------------------------------------- |
-| **ID** | **Player**                                   |
-| 0      | <span style="color: red;">Compton</span>     |
-| 1      | <span style="color: grey;">Dark</span>       |
-| 5      | <span style="color: red;">Player1</span>     |
-| 6      | <span style="color: blue;">Bartolomew</span> |
-| 11     | <span style="color: grey;">unban_pls</span>  |
+|        |                                                 |
+| ------ | ----------------------------------------------- |
+| **ID** | **Player**                                      |
+| 0      | <span style={{color: 'red'}}>Compton</span>     |
+| 1      | <span style={{color: 'grey'}}>Dark</span>       |
+| 5      | <span style={{color: 'red'}}>Player1</span>     |
+| 6      | <span style={{color: 'blue'}}>Bartolomew</span> |
+| 11     | <span style={{color: 'grey'}}>unban_pls</span>  |
 
 &nbsp;
 
@@ -2398,9 +2401,9 @@ following client message to everybody on the server:
 
 **Output** :
 
-> <span style="color: red;">Compton</span> ­
-> <span style="color: #000000;">killed</span> ­
-> <span style="color: blue">Bartolomew</span>
+> <span style={{color: 'red'}}>Compton</span> ­ <span
+> style={{color: '#000000'}}>killed</span> ­ <span
+> style={{color: 'blue'}}>Bartolomew</span>
 
 I apologize if I had you confused by using
 [bitwise logical shift](https://en.wikipedia.org/wiki/Logical_shift), it was
