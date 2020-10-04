@@ -1188,32 +1188,32 @@ client messages and dialogs, they can’t be embedded, for that, we use special
 combination of characters to refer to colors and few other symbols, you can see
 them [here](../scripting/resources/gametextstyles).
 
-|            |        |
-| ---------- | ------ |
-| ~r~        | Red    |
-| ~g~        | Green  |
-| ~b~        | Blue   |
-| ~w~ or ~s~ | White  |
-| ~p~        | Purple |
-| ~l~        | Black  |
-| ~y~        | Yellow |
+|                |        |
+| -------------- | ------ |
+| \~r\~          | Red    |
+| \~g\~          | Green  |
+| \~b\~          | Blue   |
+| \~w\~ or \~s\~ | White  |
+| \~p\~          | Purple |
+| \~l\~          | Black  |
+| \~y\~          | Yellow |
 
 &nbsp;
 
-So, embedding colors can go in like this: **~w~Hello this is ~b~blue ~w~and this
-is ~r~red**
+So, embedding colors can go in like this: **\~w\~Hello this is \~b\~blue
+\~w\~and this is \~r\~red**
 
-You can use another combination of characters to play with color mixes, **~h~**,
-it makes a certain color lighter, here are few examples:
+You can use another combination of characters to play with color mixes,
+**\~h\~**, it makes a certain color lighter, here are few examples:
 
-|                    |                |
-| ------------------ | -------------- |
-| ~r~~h~             | Lighter red    |
-| ~r~~h~~h~          | Red pink       |
-| ~r~~h~~h~~h~       | Dark red       |
-| ~r~~h~~h~~h~~h~    | Light red pink |
-| ~r~~h~~h~~h~~h~~h~ | Pink           |
-| ~g~~h~             | Light green    |
+|                                |                |
+| ------------------------------ | -------------- |
+| \~r\~\~h\~                     | Lighter red    |
+| \~r\~\~h\~\~h\~                | Red pink       |
+| \~r\~\~h\~\~h~\~h\~            | Dark red       |
+| \~r\~\~h\~~h~~h~~h\~           | Light red pink |
+| \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Pink           |
+| \~g\~\~h\~                     | Light green    |
 
 &nbsp;
 
