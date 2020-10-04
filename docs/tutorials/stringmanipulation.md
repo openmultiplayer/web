@@ -2441,13 +2441,13 @@ Given the following list of connected players:
 &nbsp;
 
 Say, `playerid` `0` killed `playerid` `6`, the formatted messages should spell
-“**{FF0000}Compton {000000}killed {0000FF}Bartolomew**”, which will send the
+“**{FF0000}Compton {000000}killed > {0000FF}Bartolomew**”, which will send the
 following client message to everybody on the server:
 
 **Output** :
 
-> <span style="color: red;">Compton</span> >
-> <span style="color: #000000;">killed</span> >
+> <span style="color: red;">Compton</span> ­
+> <span style="color: #000000;">killed</span> ­
 > <span style="color: blue">Bartolomew</span>
 
 I apologize if I had you confused by using
