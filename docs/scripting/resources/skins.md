@@ -302,8 +302,8 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 | 283     | ![Skin ID 283](/images/283.png) | County Sheriff                           | Countryside                                        | Male   |
 | 284     | ![Skin ID 284](/images/284.png) | LSPD Motorbike Cop                       | San Andreas                                        | Male   |
 | 285     | ![Skin ID 285](/images/285.png) | S.W.A.T Special Forces                   | San Andreas                                        | Male   |
-| 286     | ![Skin ID 286](/images/286.png) | Federal Agent                            | San Andreas                                        | Male   |
-| 287     | ![Skin ID 287](/images/287.png) | San Andreas Army                         | San Andreas                                        | Male   |
+| 286     | ![Skin ID 286](/images/286.png) | FBI Agent                                | San Andreas                                        | Male   |
+| 287     | ![Skin ID 287](/images/287.png) | San Andreas Army Soldier                 | San Andreas                                        | Male   |
 | 288     | ![Skin ID 288](/images/288.png) | Desert Sheriff                           | Desert                                             | Male   |
 | 289     | ![Skin ID 289](/images/289.png) | Zero                                     | San Fierro                                         | Male   |
 | 290     | ![Skin ID 290](/images/290.png) | Ken Rosenberg                            | Las-Venturas Casino                                | Male   |
@@ -311,7 +311,7 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 | 292     | ![Skin ID 292](/images/292.png) | Cesar Vialpando                          | LS/SF                                              | Male   |
 | 293     | ![Skin ID 293](/images/293.png) | Jeffery "OG Loc" Martin/Cross            | Los-Santos Burger Shot                             | Male   |
 | 294     | ![Skin ID 294](/images/294.png) | Wu Zi Mu (Woozie)                        | San Fierro and Las Venturas                        | Male   |
-| 295     | ![Skin ID 295](/images/295.png) | Michael Toreno                           | Las Venturas and San Fierro                        | Male   |
+| 295     | ![Skin ID 295](/images/295.png) | Michael Toreno (Mike)                    | Las Venturas and San Fierro                        | Male   |
 | 296     | ![Skin ID 296](/images/296.png) | Jizzy B.                                 | San Fierro The Pleasure Domes                      | Male   |
 | 297     | ![Skin ID 297](/images/297.png) | Madd Dogg                                | Madd Dogg's Mansion Los Santos                     | Male   |
 | 298     | ![Skin ID 298](/images/298.png) | Catalina                                 | Fern Ridge                                         | Female |
