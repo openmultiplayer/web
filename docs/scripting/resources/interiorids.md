@@ -1,13 +1,12 @@
 ---
-id: interiorids
-title: Interior IDs
+id: Interior IDs
+description: This page has most of the available interiors in SAMP.
+sidebar_label: Interiors
 ---
 
-# How to get the Interior ID
+## How to get the Interior ID
 
 ---
-
-:::info
 
 If you are inside an interior type
 
@@ -17,13 +16,9 @@ If you are inside an interior type
 
 and you'll see the ID of the interior universe. Now you can safely use [SetPlayerInterior](../functions/SetPlayerInterior.md) and [LinkVehicleToInterior](../functions/LinkVehicleToInterior.md) before using [SetPlayerPos](../functions/SetPlayerPos.md).
 
-:::
+## Interiors List
 
-:::note
-
-Some interiors (mostly cutscene/mission related) missing collision, or have none at all.
-
-:::
+---
 
 ## 24/7's
 
