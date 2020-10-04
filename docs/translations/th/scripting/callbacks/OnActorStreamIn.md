@@ -40,7 +40,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 :::tip
 
-NPC เรียก Callback นี้ได้ด้วย
+NPC สามารถเรียก Callback นี้ได้
 
 :::
 
