@@ -3,15 +3,11 @@ title: String Manipulation
 description: Beginner friendly tutorial about everything string manipulation.
 ---
 
-## String Manipulation
+## Introduction
 
 &nbsp;
 
-### Introduction
-
-&nbsp;
-
-#### Tutorial description
+### Tutorial description
 
 Hello everyone, it surely is a nice quiet night, or at least it is at the
 composition of this tutorial. So, hey, what about tagging along to both enrich
@@ -22,7 +18,7 @@ some sort of advanced, clever and effective tips.
 
 &nbsp;
 
-#### What is string formatting?
+### What is string formatting?
 
 In general, formatting a text is the act of manipulating it to visually improve
 its readability, be it changing the font’s family, color, weight and so on.
@@ -42,7 +38,7 @@ and we survived just fine.
 
 &nbsp;
 
-#### String declaration
+### String declaration
 
 As I said before, strings are basically arrays of characters, so they are used
 the same way arrays are, and so as we would create an array, we would do for
@@ -345,7 +341,7 @@ huh?!
 
 &nbsp;
 
-#### The null terminator
+## The null terminator
 
 I referred to this on early sections of this tutorial, I hope it wasn’t that
 confusing at first, but even if it was, let’s peal the confusion off already,
@@ -441,7 +437,7 @@ string’s length.
 
 &nbsp;
 
-### String manipulation functions
+## String manipulation functions
 
 When it comes to working with multiple chunks of text, _pawn_ has got you
 covered, it provides some very basic functions that do the job efficiently, no
@@ -523,7 +519,7 @@ string manipulation, I can’t think of a better include than
 
 &nbsp;
 
-#### The format function
+### The format function
 
 This is probably the most used string-related function in the community, very
 simple and user-friendly, all it does, is format chunks of text and pieces them
@@ -623,7 +619,7 @@ format(formatMsg, sizeof(formatMsg), "This is reality""...""or is it?!");
 
 Both will output the same sentence, **This is reality... or is it?!**.
 
-#### Optimization tips
+## Optimization tips
 
 Now, that we’ve seen some basic stuff about string declaration, manipulation
 ...etc. some of us would just jump into practicing with no regards to some
@@ -751,11 +747,11 @@ infrequently used strings/arrays.
 
 &nbsp;
 
-### String output
+## String output
 
 #### Console
 
-#### print
+##### print
 
 The following function is probably the most basic function in not only pawn but
 a lot of other programming languages too, it simply accepts one parameter and
@@ -858,7 +854,7 @@ called...
 
 &nbsp;
 
-#### printf
+##### printf
 
 Short for “_print formatted_”, I can simply put, this is a more diverse version
 of the previous `print` function, more specifically, it’s like a combination
@@ -1675,7 +1671,7 @@ what’s cool about it is that it’s free.
 
 &nbsp;
 
-### Custom escape character
+#### Custom escape character
 
 If you noticed, I’ve kept calling repeating the “**escape character**” multiple
 times throughout the last section where I could have referred to it simply as
@@ -2414,7 +2410,7 @@ highly recommend checking out [this tutorial](Binary) by **Kyosaur**.
 
 &nbsp;
 
-### Custom specifiers
+#### Custom specifiers
 
 Working with the formatting specifiers we've gone through so far is sufficient,
 you can literally do all sort of stuff with those magnificent tools, but nothing
