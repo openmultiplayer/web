@@ -1692,7 +1692,7 @@ Let us look at the different output types that can be used:
 | `%c`          | ASCII character                                 |
 | `%x`          | Hexadecimal number                              |
 | `%b`          | Binary number                                   |
-| `%% `         | Literal `'%'`                                   |
+| `%%`          | Literal `'%'`                                   |
 | `%q`          | Escape a text for SQLite. (_Added in 0.3.7 R2_) |
 
 - **The integer specifiers - `%i` and `%d`**
