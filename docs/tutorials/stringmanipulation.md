@@ -3,63 +3,15 @@ title: String Manipulation
 description: Beginner friendly tutorial about everything string manipulation.
 ---
 
-## **String Manipulation**
+## String Manipulation
 
 &nbsp;
 
-### **✦ Table of content**
-
-```
-✦ Introduction
-  ✧ Tutorial description
-  ✧ What is string formatting?
-
-✦ String manipulation
-  ✧ String declaration
-    ✩ Length limits
-    ✩ Assigning values
-    ✩ The null terminator
-  ✧ String manipulation functions
-  ✧ The format function
-  ✧ String optimazation tips
-
-✦ String output
-  ✧ Console
-    ✩ print
-    ✩ printf
-  ✧ Client messages
-  ✧ Textdraws
-  ✧ Dialogs
-
-✦ Color interpretation
-  ✧ Client messages and Dialogs
-    ✩ RGBA
-    ✩ RGB
-  ✧ Textdraws and GameTexts
-
-✦ The escape character
-  ✧ Description
-  ✧ Escape sequences
-  ✧ Custom escape character
-
-✦ Format specifiers
-  ✧ Description
-  ✧ Usage
-  ✧ Custom specifiers
-
-✦ External links
-  ✧ Similar tutorials
-  ✧ Related includes/plugins
-  ✧ References
-```
+### Introduction
 
 &nbsp;
 
-### **✦ Introduction**
-
-&nbsp;
-
-#### **✧ Tutorial description**
+#### Tutorial description
 
 Hello everyone, it surely is a nice quiet night, or at least it is at the
 composition of this tutorial. So, hey, what about tagging along to both enrich
@@ -70,7 +22,7 @@ some sort of advanced, clever and effective tips.
 
 &nbsp;
 
-#### **✧ What is string formatting?**
+#### What is string formatting?
 
 In general, formatting a text is the act of manipulating it to visually improve
 its readability, be it changing the font’s family, color, weight and so on.
@@ -90,7 +42,7 @@ and we survived just fine.
 
 &nbsp;
 
-#### **✧ String declaration**
+#### String declaration
 
 As I said before, strings are basically arrays of characters, so they are used
 the same way arrays are, and so as we would create an array, we would do for
@@ -152,7 +104,7 @@ you’re working on, it limits the number of characters you can normally output.
 
 &nbsp;
 
-#### **✩ Length limits**
+#### Length limits
 
 SA-MP limits characters that can be stored in a single string and keeps
 scripters from going overboard with working with text, luckily, it’s not as bad
@@ -186,7 +138,7 @@ different stuff, you can view the complete list
 
 &nbsp;
 
-#### **✩ Assigning values**
+#### Assigning values
 
 Assigning values to strings can be done via many methods, some assign them upon
 their creation, others after, there are people who use loops, other use
@@ -393,7 +345,7 @@ huh?!
 
 &nbsp;
 
-#### **✩ The null terminator**
+#### The null terminator
 
 I referred to this on early sections of this tutorial, I hope it wasn’t that
 confusing at first, but even if it was, let’s peal the confusion off already,
@@ -489,7 +441,7 @@ string’s length.
 
 &nbsp;
 
-### **✧ String manipulation functions**
+### String manipulation functions
 
 When it comes to working with multiple chunks of text, _pawn_ has got you
 covered, it provides some very basic functions that do the job efficiently, no
@@ -571,7 +523,7 @@ string manipulation, I can’t think of a better include than
 
 &nbsp;
 
-#### **✧ The format function**
+#### The format function
 
 This is probably the most used string-related function in the community, very
 simple and user-friendly, all it does, is format chunks of text and pieces them
@@ -671,7 +623,7 @@ format(formatMsg, sizeof(formatMsg), "This is reality""...""or is it?!");
 
 Both will output the same sentence, **This is reality... or is it?!**.
 
-#### **✧ Optimization tips**
+#### Optimization tips
 
 Now, that we’ve seen some basic stuff about string declaration, manipulation
 ...etc. some of us would just jump into practicing with no regards to some
@@ -799,11 +751,11 @@ infrequently used strings/arrays.
 
 &nbsp;
 
-### **✦ String output**
+### String output
 
-#### **✧ Console**
+#### Console
 
-#### **✩ print**
+#### print
 
 The following function is probably the most basic function in not only pawn but
 a lot of other programming languages too, it simply accepts one parameter and
@@ -906,7 +858,7 @@ called...
 
 &nbsp;
 
-#### **✩ printf**
+#### printf
 
 Short for “_print formatted_”, I can simply put, this is a more diverse version
 of the previous `print` function, more specifically, it’s like a combination
@@ -942,7 +894,7 @@ on.
 
 &nbsp;
 
-#### **✧ Client messages**
+#### Client messages
 
 Apart from the other doll texts you can print on the server’s console, who are
 mainly used for debugging, there are messages that are printed on the client’s
@@ -1024,7 +976,7 @@ limit.
 
 &nbsp;
 
-#### **✧ Textdraws**
+#### Textdraws
 
 One of SA-MP’s most powerful functionalities, just unleash your imagination,
 textdraws are basically graphic shapes/texts/sprites/preview models...etc. that
@@ -1040,7 +992,7 @@ the lack of formatting with other exciting stuff, more on textdraws
 
 &nbsp;
 
-#### **✧ Dialogs**
+#### Dialogs
 
 Dialogs can be thought of as “_message boxes_”, they, of course, come in
 different types, accept few different inputs, and more importantly, accept all
@@ -1053,11 +1005,11 @@ it efficiently, more on dialogs [here](../scripting/functions/ShowPlayerDialog).
 
 &nbsp;
 
-### **✦ Color interpretation**
+### Color interpretation
 
-#### **✧ Client messages and dialogs**
+#### Client messages and dialogs
 
-#### **✩ RGBA**
+##### RGBA
 
 **RGBA** (**short for red green blue alpha**), is a simple use of the **RGB**
 model with an extra channel, the alpha channel, basically, a form of
@@ -1099,7 +1051,7 @@ embed the simpler **RGB** notation.
 
 &nbsp;
 
-#### **✩ RGB**
+##### RGB
 
 This is exactly like the **RGBA** color spaces, but with no alpha channel, just
 a mixture of red, green and blue, noted as a hexadecimal number of 6 bits, in
@@ -1178,7 +1130,7 @@ RGB notation, and thus, adding colors is done differently.
 
 &nbsp;
 
-#### **✧ Textdraws and Gametexts**
+#### Textdraws and Gametexts
 
 as mentioned above, **RGB** notation is not supported, but luckily, we have
 other ways to work around this problem, for textdraws, you can use the native
@@ -1222,9 +1174,9 @@ You can find more information about this
 
 &nbsp;
 
-### **✦ The escape character**
+### The escape character
 
-#### **✧ Description**
+#### Description
 
 The escape character is a character in which when prefixed to some character or
 number, it creates its own constant character, in most programming/scripting
@@ -1236,7 +1188,7 @@ certain meaning, you can find more about escape character
 
 &nbsp;
 
-#### **✧ Escape sequences**
+#### Escape sequences
 
 Escape sequences make it easier to express certain characters in the source code
 of your script, here is a table containing the escape sequences used in pawn:
@@ -1720,7 +1672,7 @@ what’s cool about it is that it’s free.
 
 &nbsp;
 
-### **✧ Custom escape character**
+### Custom escape character
 
 If you noticed, I’ve kept calling repeating the “**escape character**” multiple
 times throughout the last section where I could have referred to it simply as
@@ -1780,9 +1732,9 @@ Look here for a list of keys
 
 &nbsp;
 
-### **✦ Format specifier**
+### Format specifier
 
-#### **✧ Description**
+#### Description
 
 Placeholders or specifiers are characters escaped by a percent sign (`%`), the
 indicate the relative position and the output type of certain parameters, they
@@ -2332,7 +2284,7 @@ Lua
 
 &nbsp;
 
-#### **✧ Usage**
+#### Usage
 
 Putting all what we’ve seen so far to action, we can format our strings pretty
 match in anyway, so far we’ve worked in mainly in the console, utilizing the
@@ -2459,7 +2411,7 @@ highly recommend checking out [this tutorial](Binary) by **Kyosaur**.
 
 &nbsp;
 
-### **✧ Custom specifiers**
+### Custom specifiers
 
 Working with the formatting specifiers we've gone through so far is sufficient,
 you can literally do all sort of stuff with those magnificent tools, but nothing
@@ -2499,9 +2451,9 @@ any way, there are better examples at the main release page,
 
 &nbsp;
 
-### **✦ External links**
+### External links
 
-#### **✧ Similar tutorials**
+#### Similar tutorials
 
 - [String formatting](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=265433)
   by
@@ -2533,7 +2485,7 @@ any way, there are better examples at the main release page,
   by
   [Kyosaur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23990)
 
-#### **✧ Related includes/plugins/contributers**
+#### Related includes/plugins/contributers
 
 - [Westie](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=56481)'s
   [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=85697)
@@ -2546,7 +2498,7 @@ any way, there are better examples at the main release page,
 - [Y-Less](https://github.com/Y-Less)'s
   [sscanf](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=570927)
 
-#### **✧ References**
+#### References
 
 - [GTA San Andreas](http://www.rockstargames.com/sanandreas/)
 - [Textdraw](../scripting/resources/textdraws#what-is-a-textdraw)
