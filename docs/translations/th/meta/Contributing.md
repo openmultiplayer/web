@@ -82,14 +82,13 @@ git clone https://github.com/openmultiplayer/wiki.git
 - ?
 
   ```md
-  จากที่ใช้
-  [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  ใช้กับ [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ?
 
   ```md
-  แก้เป็น [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
+  ใช้กับ [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
   ```
 
 `../` ความหมายคือ "ย้อนกลับไปหนึ่งไดเรกทอรี" ดังนั้นหากไฟล์ที่คุณกำลังแก้ไขอยู่ใน
