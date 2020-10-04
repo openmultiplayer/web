@@ -5,8 +5,6 @@ description: Beginner friendly tutorial about everything string manipulation.
 
 ## Introduction
 
-&nbsp;
-
 ### Tutorial description
 
 Hello everyone, it surely is a nice quiet night, or at least it is at the
@@ -15,8 +13,6 @@ and/or engage with the main focus of this article, this is and as the title
 suggests, going to be focused on “_String manipulation_” in pawn, we will go
 through the absolute intermediate stuff that everybody should be aware of to
 some sort of advanced, clever and effective tips.
-
-&nbsp;
 
 ### What is string formatting?
 
@@ -36,21 +32,21 @@ does provide some extra fonts, but that only works on
 limitations concerning text presentation, but hey, it’s been over a decade now,
 and we survived just fine.
 
-&nbsp;
-
 ### String declaration
 
 As I said before, strings are basically arrays of characters, so they are used
 the same way arrays are, and so as we would create an array, we would do for
 strings following this format; `string_name[string_size]`.
 
-> **string_name**: the name of the character array (_e.g. string, str, message,
-> text...etc. as long as it’s a valid variable name (begins with a character or
-> an underscore)_).
+:::info
 
-> **string_size**: the maximum characters this string would have.
+**string_name**: the name of the character array (_e.g. string, str, message,
+text...etc. as long as it’s a valid variable name (begins with a character or an
+underscore)_).
 
-&nbsp;
+**string_size**: the maximum characters this string would have.
+
+:::
 
 ```cpp
 // declaring a string of 5 characters
@@ -71,10 +67,14 @@ string sizes.
 new str_3[STRING_SIZE];
 ```
 
+:::note
+
 On compilation time, the compiler will replace all occurrences of `STRING_SIZE`
 with the value `20`, this method is both time-saving and more readable on most
 cases, keep in mind that the value you assign to the `STRING_SIZE` constant must
 be an integer or else it will give a compilation error.
+
+:::
 
 In addition to predefined constants, you can perform basic operations, the
 modulo operator (`%`) however will give compilation errors if used, you can
@@ -98,8 +98,6 @@ Theoretically, you can create somewhat ridiculously huge arrays, but SA-MP puts
 few restrictions on the length of strings you can work with, depending on what
 you’re working on, it limits the number of characters you can normally output.
 
-&nbsp;
-
 #### Length limits
 
 SA-MP limits characters that can be stored in a single string and keeps
@@ -121,8 +119,6 @@ as it might seem, the list below breaks down some of these limits;
 | **Menu title**      | The GTA San Andreas native menu (_mostly used for shops_) header.                                                      | 31   |
 | **Menu item**       | The GTA San Andreas native menu (_mostly used for shops_) item/row.                                                    | 31   |
 
-&nbsp;
-
 If somehow these limits have been exceeded, few inconveniences might occur, it
 can even crash/freeze the server in some cases (_e.g. long textdraw strings_),
 in some other cases, the text would just truncate like the Menu title (_if it
@@ -131,8 +127,6 @@ reaches 32 characters, it truncates back to 30_) and items.
 Besides the strict limits put on strings, there are many others concerning
 different stuff, you can view the complete list
 [here](../scripting/resources/limits).
-
-&nbsp;
 
 #### Assigning values
 
@@ -153,7 +147,6 @@ new
 ```
 
 Make sure the string’s size is greater than the number of characters you
-
 assigned them for, having a smaller or equal string size to that, will trigger
 compilation errors, leaving the size slot between the two brackets empty (like
 on the `message_2` example), will automatically give the array the size of the
@@ -339,8 +332,6 @@ how it goes **[ 49 | 53 | 57 | 61 | 65 ]**, let’s replace each number value wi
 its _ASCII_ code match. **[ '1' | '5' | '9' | '=' | 'A']**, makes more sense
 huh?!
 
-&nbsp;
-
 ## The null terminator
 
 I referred to this on early sections of this tutorial, I hope it wasn’t that
@@ -389,15 +380,11 @@ content;
 | ASCII code | 0    | 0    | 0    |
 | Characters | '\0' | '\0' | '\0' |
 
-&nbsp;
-
 Here is another example of a pre-filled string.
 
 ```cpp
 new text_1[8] = "Hello";
 ```
-
-&nbsp;
 
 Here's the string's content per cell;
 
@@ -406,8 +393,6 @@ Here's the string's content per cell;
 | Cells      | 0   | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
 | ASCII code | 72  | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | Characters | 'H' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
-
-&nbsp;
 
 If you, for instance, wanted to delete the content of this string, you can
 simply do so using one of the three examples below;
@@ -418,8 +403,6 @@ text_1[0] = EOS;
 text_1[0] = '\0';
 ```
 
-&nbsp;
-
 Passing the string through an X-Ray scan will print out the following;
 
 |            |      |     |     |     |     |      |      |      |
@@ -428,14 +411,10 @@ Passing the string through an X-Ray scan will print out the following;
 | ASCII code | 0    | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | Characters | '\0' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
-&nbsp;
-
 If you try to output this string, everything beyond the slot number 0 will be
 ignored, and thus labeled as an empty string, even the `strlen` function will
 return 0 as it depends on the placement of the null character to retrieve the
 string’s length.
-
-&nbsp;
 
 ## String manipulation functions
 
@@ -466,58 +445,54 @@ native memcpy(dest[], const source[], index=0, numbytes, maxlength=sizeof dest);
 
 We will take a closer look at few of them, the ones are more often used.
 
-&nbsp;
+- The `strlen` function (this and `sizeof` are completely different things),
+  that takes a string as a parameter, returns the length of that string (the
+  number of characters it has), but pay attention as this is a bit tricky on how
+  it works, I’ve said it earlier in the tutorial, this function depends on the
+  position of the null character to determine the length of the string, so any
+  other valid non-null character that comes after will not be counted, as soon
+  as the first null character is reached, the function returns the number of
+  cells from the beginning to that null character.
 
--The `strlen` function (this and `sizeof` are completely different things), that
-takes a string as a parameter, returns the length of that string (the number of
-characters it has), but pay attention as this is a bit tricky on how it works,
-I’ve said it earlier in the tutorial, this function depends on the position of
-the null character to determine the length of the string, so any other valid
-non-null character that comes after will not be counted, as soon as the first
-null character is reached, the function returns the number of cells from the
-beginning to that null character.
+- The `strcat` concatenates strings with each other, it takes 3 parameters.
 
-&nbsp;
+  ```cpp
+  new str_dest[12] = "Hello", str_source[7] = " World";
+  strcat(str_dest,str_source);
+  ```
 
--The `strcat` concatenates strings with each other, it takes 3 parameters.
+  If we were to output `str_dest`, it will show **Hello World**, the two strings
+  were added to each other, and the result was stored in `str_dest`, _“Hello” +
+  “ World” = “Hello World”_, notice how we included that space in the second
+  string, yes, spaces are character themselves, according to the _ASCII_ table,
+  their value is `32`, hadn't we add the space, the resulting string would have
+  been **HelloWorld**.
 
-```cpp
-new str_dest[12] = "Hello", str_source[7] = " World";
-strcat(str_dest,str_source);
-```
+- The `strval` function will convert a string to a number, for instance, the
+  following string, `"2017"` will be converted to the number `2017`, this works
+  on signed and unsigned numbers, if the string has no numeric characters, the
+  function will return `0`, the same happens if the string has a numeric
+  character but begins with non-numeric ones, if a string begins with numeric
+  characters but includes non-numeric characters as well, the numeric characters
+  will still get retrieved and converted, here are some use cases;
 
-If we were to output `str_dest`, it will show **Hello World**, the two strings
-were added to each other, and the result was stored in `str_dest`, _“Hello” + “
-World” = “Hello World”_, notice how we included that space in the second string,
-yes, spaces are character themselves, according to the _ASCII_ table, their
-value is `32`, hadn't we add the space, the resulting string would have been
-**HelloWorld**.
+  ```cpp
+  strval("2018"); // Returns “2018”.
+  strval("-56"); // Returns “-56”.
+  strval("17.39"); // Returns “17”, the floating number 17.39 was auto floored for us.
+  strval("no number here"); // Returns “0”.
+  strval("6 starts"); // Returns “6”.
+  strval("here we go, 2018"); // Returns “0”.
+  strval("2017 ended, welcome 2018"); // Returns “2017”.
+  ```
 
-&nbsp;
-
--the `strval` function will convert a string to a number, for instance, the
-following string, `"2017"` will be converted to the number `2017`, this works on
-signed and unsigned numbers, if the string has no numeric characters, the
-function will return `0`, the same happens if the string has a numeric character
-but begins with non-numeric ones, if a string begins with numeric characters but
-includes non-numeric characters as well, the numeric characters will still get
-retrieved and converted, here are some use cases;
-
-```cpp
-strval("2018"); // Returns “2018”.
-strval("-56"); // Returns “-56”.
-strval("17.39"); // Returns “17”, the floating number 17.39 was auto floored for us.
-strval("no number here"); // Returns “0”.
-strval("6 starts"); // Returns “6”.
-strval("here we go, 2018"); // Returns “0”.
-strval("2017 ended, welcome 2018"); // Returns “2017”.
-```
+:::tip
 
 There are many community-made libraries you can download that have to do with
 string manipulation, I can’t think of a better include than
 [strlib](https://github.com/oscar-broman/strlib).
 
-&nbsp;
+:::
 
 ### The format function
 
@@ -566,7 +541,7 @@ Text must always be included in double quotation marks, however, there is an
 uncommon way of inputting text, that’s rarely ever used, it uses the Number sign
 `#` symbol, and works as follows:
 
-```csharp
+```cpp
 new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), #Hello);
 ```
@@ -574,7 +549,7 @@ format(formatMsg, sizeof(formatMsg), #Hello);
 It supports spaces, escaped characters, and you can even use the mix of both
 double quotations and the number sign;
 
-```csharp
+```cpp
 new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), "Hello "#World);
 ```
@@ -584,7 +559,7 @@ more known to be used with predefined constants. Let’s take a look at this
 example of using two different predefined constants, one being an integer
 `2017`, the other being a string `"2018"`.
 
-```csharp
+```cpp
 #define THIS_YEAR 2018 // Thisconstant has an integer as its value
 #define NEW_YEAR "2019" // This constant has a string as its value
 
@@ -607,7 +582,7 @@ other, although it doesn’t make sense, as it’s more natural to just write a
 sentence into a single pair of double quotations, here’s an example of the same
 sentence written in both concepts;
 
-```csharp
+```cpp
 new formatMsg[29];
 
 // One single pair of double quotations
@@ -643,28 +618,29 @@ new badString[100];
 badString ="Hello :)";
 ```
 
-We declared a string with 100 cells, 1 cell takes up 4 bytes, let’s do some
-basic math, _100 \* 4 = 400_ bytes, that’s roughly _0.0004_ Megabyte, nothing
-for today’s standards I know, but supposedly, on a huge script, obviously you
-will have to use more than one string, 60, 70, heck 100 more strings? (_possibly
-more_), those tiny numbers will stack up on each other resulting in a much
-bigger number, and cause you serious trouble later on, and believe me when I
-tell you, the string we declared doesn’t come as near to looking stupid when
-compared to the likes of those with a size five times bigger or more.
+We declared a string with _100 cells_, _1 cell_ takes up _4 bytes_, let’s do
+some basic math, _100 \* 4 = 400_ bytes, that’s roughly _0.0004 Megabyte_,
+nothing for today’s standards I know, but supposedly, on a huge script,
+obviously you will have to use more than one string, _60_, _70_, heck _100_ more
+strings? (_possibly more_), those tiny numbers will stack up on each other
+resulting in a much bigger number, and cause you serious trouble later on, and
+believe me when I tell you, the string we declared doesn’t come as near to
+looking stupid when compared to the likes of those with a size five times bigger
+or more.
 
 What I come across more, something that’s stereotypically vague, is the usage of
-the mysterious string size 256, just why people? Why?
+the mysterious string size -256-, just why people? Why?
 
 Keep in mind the limits SA-MP puts when dealing with strings, where does the
 _256-long_ string come into play? What are you going to do with a string this
 long (_except for formatting a dialog/textdraw string_)? The maximum string
-input is 128 characters long, that’s half the size, 512 bytes just went into
-waste, say what? You intended to use it for output, not input? That’s still way
-too large, output strings are not to pass 144 characters, see where I’m going?
-Let’s try and see how we’d correct our fault, we have this sentence, “Good
-string”, it contains 11 characters (_the space is counted as a character too_) +
-1 for the null terminator (_got to always have this dude in mind_), that makes
-it 12 characters in total.
+input is _128è characters long, that’s half the size, \_512 bytes_ just went
+into waste, say what? You intended to use it for output, not input? That’s still
+way too large, output strings are not to pass _144_ characters, see where I’m
+going? Let’s try and see how we’d correct our fault, we have this sentence,
+“Good string”, it contains _11_ characters (_the space is counted as a character
+too_) + _1_ for the null terminator (_got to always have this dude in mind_),
+that makes it _12_ characters in total.
 
 ```cpp
 new goodString[12];
@@ -712,8 +688,6 @@ This is an approximate visual representation of `upkString`'s content;
 | Bytes      | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3     |
 | Characters | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **w** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
 
-&nbsp;
-
 And this is what `pkString_1` would be like in the second example;
 
 |            |                               |                   |
@@ -721,8 +695,6 @@ And this is what `pkString_1` would be like in the second example;
 | Cell       | 0                             | 1                 |
 | Bytes      | 0 . 1 . 2 . 3                 | 0 . 1 . 2 . 3     |
 | Characters | **p** . **a** . **w** . **n** | \0 . \0 . \0 . \0 |
-
-&nbsp;
 
 You can also access a packed string’s indexers, as follows;
 
@@ -741,11 +713,13 @@ _ASCII_ code is still being taken into considerations, take notes that when
 accessing indexers on packed strings, we use **curly brackets** instead of
 **brackets**. That means we’re indexing the bytes themselves, and not the cells.
 
+:::info
+
 In spite of their effectiveness in preserving memory, SA-MP’s implementation of
 pawn doesn’t 100% support packed strings, but you can still use them in
 infrequently used strings/arrays.
 
-&nbsp;
+:::
 
 ## String output
 
@@ -852,8 +826,6 @@ As for the fourth case, there’s not much we can do while working with the
 `print` function, but it can simply be resolved using another similar function,
 called...
 
-&nbsp;
-
 ##### `printf`
 
 Short for “_print formatted_”, I can simply put, this is a more diverse version
@@ -887,8 +859,6 @@ are used, it’s what distinguishes it and sets it apart, you can attach as many
 variables as you want, and output simple and complex strings with ease, we will
 have a much deeper look on that when we’re introduced to those specifiers later
 on.
-
-&nbsp;
 
 #### Client messages
 
@@ -970,8 +940,6 @@ Just like that, you can play with it the same way you do with its other sibling,
 two toys from the same brand really, just try not to bypass the 144 characters
 limit.
 
-&nbsp;
-
 #### Textdraws
 
 One of SA-MP’s most powerful functionalities, just unleash your imagination,
@@ -986,8 +954,6 @@ feels a little narrow when it comes to this, but it certainly does make up for
 the lack of formatting with other exciting stuff, more on textdraws
 [here](../scripting/resources/textdraws).
 
-&nbsp;
-
 #### Dialogs
 
 Dialogs can be thought of as “_message boxes_”, they, of course, come in
@@ -998,8 +964,6 @@ and being able to only synchronously display them on the client’s screen, SA-M
 only provides one native function for dealing with dialogs, and honestly, that
 would be one of your last concerns, as the lone function does its job, and does
 it efficiently, more on dialogs [here](../scripting/functions/ShowPlayerDialog).
-
-&nbsp;
 
 ### Color interpretation
 
@@ -1045,10 +1009,12 @@ Keep in mind that assigning all bits to the same value will result in variations
 of shades of grey (_no pun intended_), assigning the alpha channel to 0 will
 make the text invisible.
 
+:::tip
+
 It’s possible to format texts with multicolor simultaneously, but for that, we
 embed the simpler **RGB** notation.
 
-&nbsp;
+:::
 
 ##### RGB
 
@@ -1127,8 +1093,6 @@ strings, it is possible to use colors within text in client messages, dialogs,
 has also texdraws and gametexts functionalities, however those don’t support the
 RGB notation, and thus, adding colors is done differently.
 
-&nbsp;
-
 #### Textdraws and Gametexts
 
 as mentioned above, **RGB** notation is not supported, but luckily, we have
@@ -1149,8 +1113,6 @@ them [here](../scripting/resources/gametextstyles).
 | \~l\~          | Black  |
 | \~y\~          | Yellow |
 
-&nbsp;
-
 So, embedding colors can go in like this: **\~w\~Hello this is \~b\~blue
 \~w\~and this is \~r\~red**
 
@@ -1166,12 +1128,8 @@ You can use another combination of characters to play with color mixes,
 | \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Pink           |
 | \~g\~\~h\~                     | Light green    |
 
-&nbsp;
-
 You can find more information about this
 [here](../scripting/resources/colorslist).
-
-&nbsp;
 
 ### The escape character
 
@@ -1184,8 +1142,6 @@ combination of this and some other character/number will result in an
 [escape sequence](https://en.wikipedia.org/wiki/Escape_sequence) which has a
 certain meaning, you can find more about escape character
 [here](https://en.wikipedia.org/wiki/Escape_character).
-
-&nbsp;
 
 #### Escape sequences
 
@@ -1208,12 +1164,8 @@ of your script, here is a table containing the escape sequences used in pawn:
 | Character code with decimal values "ddd"     | `\ddd;`      |
 | Character code with hexadecimal values "hhh" | `\xhhh;`     |
 
-&nbsp;
-
 Let’s look at each one of them, after all, the best way to learn these sort of
 stuff rests within practicing them.
-
-&nbsp;
 
 - **The “Audible beep” escape sequence - `\a`**
 
@@ -1238,8 +1190,6 @@ can also use the decimal code;
 ```cpp
 print("This is a beep \7");
 ```
-
-&nbsp;
 
 - **The “Backspace” escape sequence - `\b`**
 
@@ -1325,8 +1275,6 @@ Hi
 ^
 ```
 
-&nbsp;
-
 - **The “Escape” escape sequence - `\e`**
 
 With the hexadecimal value of 1B in _ASCII_, it’s used for common non-standard
@@ -1339,16 +1287,12 @@ example is the `\e` escape sequence, represents the escape character. It wasn't
 however added to the C standard repertoire because it has no meaningful
 equivalent in some character sets.
 
-&nbsp;
-
 - **The “Form feed” escape sequence - `\f`**
 
 Form feed is a page breaking _ASCII_ code. It forces the printer to eject the
 current page and to continue printing at the top of another. Often, it will also
 cause a carriage return, this doesn’t make any noticeable change in the
 _SA-MP_’s debugging console.
-
-&nbsp;
 
 - **The “New line” escape sequence - `\n`**
 
@@ -1392,8 +1336,6 @@ This works differently when dealing with files, however, depending on your
 operating system, like for instance, in windows, a line break is typically a
 **CR** (_carriage return_) + **LF** (_line feed_), you can learn more about the
 differences [here](https://en.wikipedia.org/wiki/Newline).
-
-&nbsp;
 
 - **The “Carriage return” escape sequence - `\r`**
 
@@ -1444,8 +1386,6 @@ different operating systems, windows, for instance, use a carriage return
 followed by a line feed to perform a line break, just like the classic
 typewriters.
 
-&nbsp;
-
 - **The “Horizontal tab” escape sequence - `\t`**
 
 Tabulation is something we use every day, from text/code indentation, to table
@@ -1476,16 +1416,12 @@ print("Hello\t\t\t\t\tWorld");
 Hello                    World
 ```
 
-&nbsp;
-
 - **The “Vertical tab” escape sequence - `\v`**
 
 During the old typewriter era, this had a more popular use, it was used to move
 to the next line vertically, but now, this is no longer the case, it doesn’t
 have any noticeable usage nowadays, and that includes modern printers and even
 programming languages, and pawn is no exception.
-
-&nbsp;
 
 - **\_The “Backslash” escape sequence - `\*`**
 
@@ -1506,10 +1442,14 @@ print("Hello \\ World");
 Hello \ World
 ```
 
+:::caution ­Warning
+
 The output will disregard the first backslash, and print the second, as the
 first is escaping the second and tricking the program into viewing it as a raw
 character. A backslash can only escape one character at a time, so doing the
-following will raise a compilation error;
+following will raise a compilation error.
+
+:::
 
 ```cpp
 print("Hello \\\ World");
@@ -1541,8 +1481,6 @@ character is left alone, and thus regarded as an independent character:
 ```
 This is the escape sequence responsible for tabulation: \t
 ```
-
-&nbsp;
 
 - **The “Single quote” escape sequence - `\'`**
 
@@ -1578,8 +1516,6 @@ will have to escape the middle one;
 ```cpp
 new chr = ''\';
 ```
-
-&nbsp;
 
 - **The “Double quote” escape sequence - `\"`**
 
@@ -1628,8 +1564,6 @@ prefixing the escape character (`\\`) to a certain character, but that’s just
 one way to note those values, among other ways, we will take a look on two
 others;
 
-&nbsp;
-
 - **Escape sequences with character code (decimal code) - `\ddd;`**
 
 It doesn’t change anything about the escape sequences, it’s just a different way
@@ -1649,8 +1583,6 @@ The semicolon mark is optional and can be dropped, but it’s always better to g
 with the original approach, its purpose is to give the escape sequence an
 explicit termination symbol when it is used in a string constant.
 
-&nbsp;
-
 - **Escape sequences with character code (decimal code) - `\xhhh;`**
 
 Similar to the decimal _ASCII_ notation, we can also use the hexadecimal format,
@@ -1668,8 +1600,6 @@ A
 
 You can find all of those values by simply googling “**ASCII table**”, and
 what’s cool about it is that it’s free.
-
-&nbsp;
 
 #### Custom escape character
 
@@ -1724,12 +1654,8 @@ anywhere else;
 | `]`   | Displays a `*` symbol (only in text style 3, 4, and 5)                                                        |
 | `~k~` | keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`). Look here for a list of keys |
 
-&nbsp;
-
 keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`).
 Look here for a list of keys
-
-&nbsp;
 
 ### Format specifier
 
@@ -1768,8 +1694,6 @@ Let us look at the different output types that can be used:
 | `%b`          | Binary number                                   |
 | `%% `         | Literal `'%'`                                   |
 | `%q`          | Escape a text for SQLite. (_Added in 0.3.7 R2_) |
-
-&nbsp;
 
 - **The integer specifiers - `%i` and `%d`**
 
@@ -1850,8 +1774,6 @@ will give 1 if it’s true, and 0 if it’s false.
 Strings are arrays in themselves, so outputting an array here will give the
 value of the first slot in that array, how it’s going to be output depends on
 which type it is (_integer, float, character, boolean_).
-
-&nbsp;
 
 - **The string specifiers - `%s`**
 
@@ -1977,8 +1899,6 @@ As you can see, passing a string will output only the first character and
 passing a number will output the character whose _ASCII_ code matches that
 number (_Booleans are converted to 0 and 1 respectively_).
 
-&nbsp;
-
 - **The hexadecimal specifiers - `%x`**
 
 The following specifier outputs the value we pass as a hexadecimal number,
@@ -2021,8 +1941,6 @@ converted to hexadecimal (5A). The string `"Hello"` will only have its first
 character (H) with the _ASCII_ value of (72) converted to hexadecimal (48). And
 `true` outputs (1) as a hexadecimal, which is converts to (1), (false will
 output 0).
-
-&nbsp;
 
 - **The binary specifiers - `%b`**
 
@@ -2091,8 +2009,6 @@ Of course, this only concerns functions that support formatting, such as
 `printf` and `format`, for example, trying to output a percent sign using the
 `print` function will not require you to escape it.
 
-&nbsp;
-
 - **The `%q` specifier**
 
 This one doesn’t hold any big importance in our main topic, it’ widely used to
@@ -2109,8 +2025,6 @@ concerning them, as a reminder, here it is;
 So far, we have only talked about the `%` sign and the type filed, the others
 are optional, but each one is effective on different cases, you can include them
 to better control how your values are treated when they are output.
-
-&nbsp;
 
 - **The width filed**
 
@@ -2150,8 +2064,6 @@ First, we pass the width’s value which was `5`, then the value we want to outp
 `55`, so the placeholder outputs a minimum of 5 characters, that’s 5 minus 2,
 which gives us 3 spaces of padding.
 
-&nbsp;
-
 - **The flags field**
 
 This one works really well with the width field, as the width specifies the
@@ -2185,8 +2097,6 @@ printf("%0*d", 5, 55);
 ```
 00055
 ```
-
-&nbsp;
 
 - **The precision field**
 
@@ -2281,8 +2191,6 @@ Lua developer!
 Lua
 ```
 
-&nbsp;
-
 #### Usage
 
 Putting all what we’ve seen so far to action, we can format our strings pretty
@@ -2305,8 +2213,6 @@ format(output[], len, const format[], {Float,_}: ...}
 ```
 
 Let’s take a look at these examples;
-
-&nbsp;
 
 **Example 1**: _Player name – Assuming there is some play on the server with the
 id of 9 called Player1_:
@@ -2333,8 +2239,6 @@ parameter indicating the color black, which is going to be the message’s color
 the embedded hex value `{FFFF00}` is what resulted in the player name to be
 yellow.
 
-&nbsp;
-
 **Example 2**: _In-game Clock – Displaying the current time in game_:
 
 ```cpp
@@ -2352,8 +2256,6 @@ values between 0 and 9 with another zero to evade outputs like (“_It’s 5:9
 PM_”), as you can see.
 
 > It’s 06 :17 PM
-
-&nbsp;
 
 **Example 3**: _Death message - Outputting a message when a player dies, having
 the players names colored in their respective colors_:
@@ -2385,8 +2287,6 @@ Given the following list of connected players:
 | 6      | <span style={{color: 'blue'}}>Bartolomew</span> |
 | 11     | <span style={{color: 'grey'}}>unban_pls</span>  |
 
-&nbsp;
-
 Say, `playerid` `0` killed `playerid` `6`, the formatted messages should spell
 “**{FF0000}Compton {000000}killed > {0000FF}Bartolomew**”, which will send the
 following client message to everybody on the server:
@@ -2401,8 +2301,6 @@ simply used here in order to turn the decimal number returned by the
 `GetPlayerColor` function into a hexadecimal number representing a color, the
 shift itself is utilized to omit the -alpha- space, for more about this, I
 highly recommend checking out [this tutorial](Binary) by **Kyosaur**.
-
-&nbsp;
 
 #### Custom specifiers
 
@@ -2434,15 +2332,16 @@ out:
 printf("%n", "samp");
 ```
 
-**output**:
-
 > https://www.samp.com
 
-Don't let this example deceive you, this can be very effective and complete in
-any way, there are better examples at the main release page,
+:::note
+
+Don't let this example gatekeep or limit your expectations for what is possible
+to achieve with custom specifiers, there are better examples at the main release
+page,
 [please go check it out](https://github.com/Southclaws/formatex/blob/master/README.md).
 
-&nbsp;
+:::
 
 ### External links
 
