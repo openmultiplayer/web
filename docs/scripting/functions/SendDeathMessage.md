@@ -39,5 +39,5 @@ Death messages can be cleared by using a valid player ID for 'playerid' that is 
 
 ## Related Functions
 
-- SendDeathMessageToPlayer: Add a kill to the death list for a player.
-- OnPlayerDeath: Called when a player dies.
+- [SendDeathMessageToPlayer](SendDeathMessageToPlayer.md): Add a kill to the death list for a player.
+- [OnPlayerDeath](../callbacks/OnPlayerDeath.md): Called when a player dies.

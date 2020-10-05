@@ -26,5 +26,5 @@ public OnRecordingPlaybackEnd()
 
 ## Related Functions
 
-- NPC:StartRecordingPlayback: Starts reproducing an already recorded .rec file.
-- NPC:StopRecordingPlayback: Stops reproducing a .rec file.
+- [NPC:StartRecordingPlayback](NPC:StartRecordingPlayback.md): Starts reproducing an already recorded .rec file.
+- [NPC:StopRecordingPlayback](NPC:StopRecordingPlayback.md): Stops reproducing a .rec file.
