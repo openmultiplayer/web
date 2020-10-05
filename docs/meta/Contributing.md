@@ -5,6 +5,8 @@ description: How to contribute to the SA-MP Wiki and open.mp documentation.
 
 This documentation source is open for anyone to contribute changes to! All you need is a [GitHub](https://github.com) account and some spare time. You don't even need to know Git, you can do it all from the web interface!
 
+If you want to help maintain a specific language, open a PR against the [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) file and add a line for your language directory with your username.
+
 ## Editing Content
 
 On each page, there's a button that takes you to the GitHub page for editing:
