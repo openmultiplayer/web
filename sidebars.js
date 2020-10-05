@@ -34,16 +34,19 @@ function parseDir(filename) {
           name: child,
           isDir: fs.lstatSync(path).isDirectory()
         };
-      }).sort((a, b) => b.isDir - a.isDir || a.name > b.name ? 1 : -1);
+      }).sort((a, b) => b.isDir - a.isDir || a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1);
 
       info.items = sortedFilesAndDirs.map(function (item) {
         return parseDir(filename + '/' + item.name);
       });
 
-      // ignore `index.md` files in directories placed in `docs` 
+      // ignore `index.md` and `README.md` files in directories placed in `docs`
       let index = info.items.length;
       while (index--) {
-        if (typeof info.items[index] === 'string' && info.items[index].includes('index')) {
+        if (
+          (typeof info.items[index] === 'string' && info.items[index].includes('index')) ||
+          (typeof info.items[index] === 'string' && info.items[index].includes('README'))
+        ) {
           info.items.splice(index, 1);
         }
       }
