@@ -14,8 +14,8 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 
 :::
 
-| Skin ID | Preview                         | Skin Model Name                          | Singleplayer Location                              | Gender |
-| ------- | ------------------------------- | ---------------------------------------- | -------------------------------------------------- | ------ |
+| Skin ID | Preview                               | Skin Model Name                          | Singleplayer Location                              | Gender |
+| ------- | ------------------------------------- | ---------------------------------------- | -------------------------------------------------- | ------ |
 | 0       | ![Skin ID 0](/images/skins/0.png)     | Carl "CJ" Johnson (Main Character)       | Anywhere                                           | Male   |
 | 1       | ![Skin ID 1](/images/skins/1.png)     | The Truth                                | San Fierro and Las Venturas                        | Male   |
 | 2       | ![Skin ID 2](/images/skins/2.png)     | Maccer                                   | Las Venturas and Los Santos                        | Male   |
@@ -321,8 +321,8 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 
 :::warning These skins (300 to 311) were added in SA-MP 0.3.7 RC3 and will not work in earlier versions! :::
 
-| Skin ID | Preview                         | Skin Model Name                                     | Singleplayer Location | Gender |
-| ------- | ------------------------------- | --------------------------------------------------- | --------------------- | ------ |
+| Skin ID | Preview                               | Skin Model Name                                     | Singleplayer Location | Gender |
+| ------- | ------------------------------------- | --------------------------------------------------- | --------------------- | ------ |
 | 300     | ![Skin ID 300](/images/skins/300.png) | Los Santos Police Officer (Without gun holster)     | -                     | Male   |
 | 301     | ![Skin ID 301](/images/skins/301.png) | San Fierro Police Officer (Without gun holster)     | -                     | Male   |
 | 302     | ![Skin ID 302](/images/skins/302.png) | Las Venturas Police Officer (Without gun holster)   | -                     | Male   |
