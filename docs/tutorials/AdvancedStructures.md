@@ -185,7 +185,8 @@ new
 List_Setup()
 {
     new
-        i;
+        i,
+        size = NUMBER_OF_VALUES;
     size--;
     for (i = 0; i < size; i++)
     {
@@ -213,7 +214,7 @@ List_Add(value)
     while (pointer != -1 && gListData[pointer][E_DATA_LIST_VALUE] < value)
     {
         // Save the position of the last value
-        last = pointer
+        last = pointer;
         // Move on to the next slot
         pointer = gListData[pointer][E_DATA_LIST_NEXT];
     }
@@ -247,7 +248,7 @@ List_Remove(slot)
     while (pointer != -1 && pointer != slot)
     {
         last = pointer;
-        pointer = gListData[pointer][E_LIST_DATA_NEXT];
+        pointer = gListData[pointer][E_DATA_LIST_NEXT];
     }
     // Did we find the slot in the list
     if (pointer == -1) return 0;
@@ -255,17 +256,17 @@ List_Remove(slot)
     {
         // The value is the first in the list
         // Skip over this slot in the list
-        gListStart = gListData[slot][E_LIST_DATA_NEXT];
+        gListStart = gListData[slot][E_DATA_LIST_NEXT];
     }
     else
     {
         // The value is in the list
         // Skip over this slot in the list
-        gListData[last][E_LIST_DATA_NEXT] = gListData[slot][E_LIST_DATA_NEXT];
+        gListData[last][E_DATA_LIST_NEXT] = gListData[slot][E_DATA_LIST_NEXT];
     }
     // Add this slot to the unused list
     // The unused list isn't in any order so this doesn't matter
-    gListData[slot][E_LIST_DATA_NEXT] = gUnusedStart;
+    gListData[slot][E_DATA_LIST_NEXT] = gUnusedStart;
     gUnusedStart = slot;
     return 1;
 }
