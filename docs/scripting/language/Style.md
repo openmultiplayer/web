@@ -1,15 +1,10 @@
 ---
 id: Style
 title: "Pawn Style Guide"
-description:
-  A short guide on the generally accepted naming conventions and other aspects
-  of Pawn source code to aid easier communication of intent and streamline
-  debugging and sharing of code.
+description: A short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.
 ---
 
-This document is a short guide on the generally accepted naming conventions and
-other aspects of Pawn source code to aid easier communication of intent and
-streamline debugging and sharing of code.
+This document is a short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.
 
 See also:
 
@@ -20,15 +15,13 @@ See also:
 
 ### Statement
 
-A statement is a piece of code that imperatively tells the host program to do
-something. A statement is a valid piece of code that yields some result.
+A statement is a piece of code that imperatively tells the host program to do something. A statement is a valid piece of code that yields some result.
 
 ```c
 a = b + c;
 ```
 
-This is a statement composed of a variable being assigned the result of an
-[#Expression].
+This is a statement composed of a variable being assigned the result of an [#Expression].
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
@@ -40,8 +33,7 @@ This is a statement telling the program to call a function with some arguments.
 x + 8
 ```
 
-This is _not_ a statement as the result is not used anywhere, this is just an
-[#Expression].
+This is _not_ a statement as the result is not used anywhere, this is just an [#Expression].
 
 ### Compound Statement
 
@@ -63,20 +55,17 @@ if(a == b)
 }
 ```
 
-This is a compound statement with an `if` condition, this is usually referred to
-as an "if statement".
+This is a compound statement with an `if` condition, this is usually referred to as an "if statement".
 
 ```c
 return Function1(), Function2(), Function3();
 ```
 
-This is _not_ a compound statement, it's a chain of statements separated by
-commas. This form of chaining statements is considered bad practice.
+This is _not_ a compound statement, it's a chain of statements separated by commas. This form of chaining statements is considered bad practice.
 
 ### Expression
 
-An expression is a piece of syntax that yields a value, it's not a valid
-statement unless the yielded value is used in some way.
+An expression is a piece of syntax that yields a value, it's not a valid statement unless the yielded value is used in some way.
 
 Expressions are often composed to form statements.
 
@@ -84,8 +73,7 @@ Expressions are often composed to form statements.
 a + b
 ```
 
-This is a simple addition expression that takes two values and applies the add
-operator to them.
+This is a simple addition expression that takes two values and applies the add operator to them.
 
 ## Guidelines
 
@@ -110,8 +98,7 @@ function() {
 
 ### Switches
 
-Switches must use two indent levels, one for the `switch` block and another for
-each `case` statement or compound statement.
+Switches must use two indent levels, one for the `switch` block and another for each `case` statement or compound statement.
 
 ```pawn
 switch (variable)
@@ -155,8 +142,7 @@ switch (variable)
 
 ### Compound Statements (Blocks)
 
-Blocks must always use braces, even if only a single line of code exists within
-a block. This applies to all levels including functions.
+Blocks must always use braces, even if only a single line of code exists within a block. This applies to all levels including functions.
 
 ```pawn
 func()
@@ -201,28 +187,22 @@ Functions must be named with `PascalCase`.
 
 #### Global Variables
 
-Global variables must always use `g` prefixed PascalCase, so `gVariableName` and
-should generally always be `static`.
+Global variables must always use `g` prefixed PascalCase, so `gVariableName` and should generally always be `static`.
 
 Constant globals must use `SCREAMING_SNAKE_CASE`.
 
 #### Local Variables
 
-Local variables must always use `camelCase` and must never use single letter
-names, apart from:
+Local variables must always use `camelCase` and must never use single letter names, apart from:
 
 - `i`, `j`, `k`, etc in `for` loops
 - `x`, `y`, `z`, etc in mathematical contexts
 
 #### Enumerators
 
-Enumerators, if named, must be prefixed with `E_` and use
-`SCREAMING_SNAKE_CASE`. The one exception is when avoiding a
-`Index tag mismatch` warning, in which case an `e_` prefix may be used.
-`SCREAMING_SNAKE_CASE` must still be used even with the lower case `e_` prefix.
+Enumerators, if named, must be prefixed with `E_` and use `SCREAMING_SNAKE_CASE`. The one exception is when avoiding a `Index tag mismatch` warning, in which case an `e_` prefix may be used. `SCREAMING_SNAKE_CASE` must still be used even with the lower case `e_` prefix.
 
-Enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator
-name as a prefix.
+Enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator name as a prefix.
 
 ```pawn
 static enum E_PLAYER {
@@ -246,25 +226,17 @@ Enumerators must always be declared `static` unless used outside the module.
 
 Macros must always use `SCREAMING_SNAKE_CASE` regardless of their usage.
 
-Pre-Processor definitions (constant definitions) must also use
-`SCREAMING_SNAKE_CASE`.
+Pre-Processor definitions (constant definitions) must also use `SCREAMING_SNAKE_CASE`.
 
-This helps differentiate between variables and constants as well as functions
-and macros.
+This helps differentiate between variables and constants as well as functions and macros.
 
-It's generally advised to avoid inventing new syntactical elements in order to
-prevent confusion among newcomers as to which words are part of the language and
-which words are from libraries.
+It's generally advised to avoid inventing new syntactical elements in order to prevent confusion among newcomers as to which words are part of the language and which words are from libraries.
 
-However, some older libraries do this and cannot change because of backwards
-compatibility.
+However, some older libraries do this and cannot change because of backwards compatibility.
 
 ### Documentation
 
-Always document exported functions with a simple line comment in the format
-`// FunctionName does X, Y and Z and returns A` where the first word is the name
-of the function itself followed by a brief description of what it does. No need
-to waste time describing each individual parameter. For example:
+Always document exported functions with a simple line comment in the format `// FunctionName does X, Y and Z and returns A` where the first word is the name of the function itself followed by a brief description of what it does. No need to waste time describing each individual parameter. For example:
 
 ```pawn
 // LoadPlayerAccount is called to initiate the account load process. This
@@ -277,5 +249,4 @@ stock Error:LoadPlayerAccount(playerid)
 }
 ```
 
-Each package should have a `README.md` and, if necessary, each module should
-have a comment on the very first line describing what that module provides.
+Each package should have a `README.md` and, if necessary, each module should have a comment on the very first line describing what that module provides.

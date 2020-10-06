@@ -41,15 +41,13 @@ public OnPlayerConnect( playerid )
 
 :::tip
 
-If you use an invalid marker type, it will create ID 1 (White Square).
-If you use an icon ID that is already in use, it will replace the current map icon using that ID.
+If you use an invalid marker type, it will create ID 1 (White Square). If you use an icon ID that is already in use, it will replace the current map icon using that ID.
 
 :::
 
 :::warning
 
-You can only have 100 map icons!
-Marker type 1 (), 2 (), 4 (), and 56 () will cause your game to crash if you have map legends enabled while viewing the map.
+You can only have 100 map icons! Marker type 1 (), 2 (), 4 (), and 56 () will cause your game to crash if you have map legends enabled while viewing the map.
 
 :::
 

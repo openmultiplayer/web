@@ -33,7 +33,7 @@ This function always returns 1.
 SendRconCommand("gmx");
 // This is a scripted version of typing "/rcon gmx" in-game.
 // GMX restarts the game mode.
- 
+
 // Example using format()
 new szMapName[] = "Los Santos";
 new szCmd[64];
@@ -43,9 +43,9 @@ SendRconCommand(szCmd);
 
 ## Related Functions
 
-- IsPlayerAdmin: Checks if a player is logged into RCON.
+- [IsPlayerAdmin](IsPlayerAdmin.md): Checks if a player is logged into RCON.
 
 ## Related Callbacks
 
-- OnRconCommand: Called when an RCON command is sent.
-- OnRconLoginAttempt: Called when an attempt to login to RCON is made.
+- [OnRconCommand](../callbacks/OnRconCommand.md): Called when an RCON command is sent.
+- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt.md): Called when an attempt to login to RCON is made.

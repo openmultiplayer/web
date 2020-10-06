@@ -15,10 +15,6 @@ This function starts with lowercase letter.
 
 Get the number of arguments passed to a function.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c
@@ -38,5 +34,5 @@ public OnFilterScriptInit()
 
 ## Related Functions
 
-- [getarg](../functions/getarg.md): Retrieve an argument from a variable argument list.
-- [setarg](../functions/setarg.md): Set an argument.
+- [getarg](getarg.md): Retrieve an argument from a variable argument list.
+- [setarg](setarg.md): Set an argument.

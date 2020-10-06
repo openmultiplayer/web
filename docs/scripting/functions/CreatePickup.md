@@ -43,10 +43,7 @@ pickup = 0; // pickup variable needs to be reset to avoid future conflicts
 
 :::tip
 
-The only type of pickup that can be picked up from inside a vehicle is 14 (except for special pickups such as bribes).
-Pickups are shown to, and can be picked up by all players.
-It is possible that if DestroyPickup() is used when a pickup is picked up, more than one player can pick up the pickup, due to lag. This can be circumvented through the use of variables.
-Certain pickup types come with 'automatic responses', for example using an M4 model in the pickup will automatically give the player the weapon and some ammo. For fully scripted pickups, type 1 should be used.
+The only type of pickup that can be picked up from inside a vehicle is 14 (except for special pickups such as bribes). Pickups are shown to, and can be picked up by all players. It is possible that if DestroyPickup() is used when a pickup is picked up, more than one player can pick up the pickup, due to lag. This can be circumvented through the use of variables. Certain pickup types come with 'automatic responses', for example using an M4 model in the pickup will automatically give the player the weapon and some ammo. For fully scripted pickups, type 1 should be used.
 
 :::
 
@@ -58,6 +55,6 @@ Known Bug(s): Pickups that have a X or Y lower than -4096.0 or bigger than 4096.
 
 ## Related Functions
 
-- [AddStaticPickup](../../scripting/functions/AddStaticPickup.md): Add a static pickup.
-- [DestroyPickup](../../scripting/functions/DestroyPickup.md): Destroy a pickup.
-- [OnPlayerPickUpPickup](../../scripting/callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.
+- [AddStaticPickup](AddStaticPickup.md): Add a static pickup.
+- [DestroyPickup](DestroyPickup.md): Destroy a pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.

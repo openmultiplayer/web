@@ -9,10 +9,6 @@ tags: []
 
 Get the currently set gravity.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c
@@ -33,4 +29,4 @@ This function is not defined by default. Add 'native Float:GetGravity();' under 
 
 ## Related Functions
 
-- [SetGravity](../functions/SetGravity): Set the global gravity.
+- [SetGravity](SetGravity): Set the global gravity.

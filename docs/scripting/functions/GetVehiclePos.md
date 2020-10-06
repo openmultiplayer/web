@@ -2,31 +2,27 @@
 id: GetVehiclePos
 title: GetVehiclePos
 description: Gets the position of a vehicle.
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 ## Description
 
 Gets the position of a vehicle.
 
-
-| Name | Description |
-|------|-------------|
-|vehicleid | The ID of the vehicle to get the position of.|
-|&Float:x | A float variable in which to store the X coordinate, passed by reference.|
-|&Float:y | A float variable in which to store the Y coordinate, passed by reference.|
-|&Float:z | A float variable in which to store the Z coordinate, passed by reference.|
-
+| Name      | Description                                                               |
+| --------- | ------------------------------------------------------------------------- |
+| vehicleid | The ID of the vehicle to get the position of.                             |
+| &Float:x  | A float variable in which to store the X coordinate, passed by reference. |
+| &Float:y  | A float variable in which to store the Y coordinate, passed by reference. |
+| &Float:z  | A float variable in which to store the Z coordinate, passed by reference. |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. The vehicle specified does not exist.
-
+0: The function failed to execute. The vehicle specified does not exist.
 
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -50,11 +46,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## Related Functions
 
-
--  GetVehicleDistanceFromPoint: Get the distance between a vehicle and a point.
--  SetVehiclePos: Set the position of a vehicle.
--  GetVehicleZAngle: Check the current angle of a vehicle.
--  GetVehicleRotation: Get the rotation of a vehicle on the XYZ axis.
+- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint.md): Get the distance between a vehicle and a point.
+- [SetVehiclePos](SetVehiclePos.md): Set the position of a vehicle.
+- [GetVehicleZAngle](GetVehicleZAngle.md): Check the current angle of a vehicle.
+- [GetVehicleRotation](GetVehicleRotation.md): Get the rotation of a vehicle on the XYZ axis.

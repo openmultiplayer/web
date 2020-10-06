@@ -23,8 +23,7 @@ To be used with [GameText](../functions/GameTextForPlayer).
 
 - `~l~` Black (lower case L)
 
-- `~h~` Turn text color lighter (used too much will make your text white,
-  doesn't work on black)
+- `~h~` Turn text color lighter (used too much will make your text white, doesn't work on black)
 
 ## Special Text Letters
 
@@ -38,14 +37,11 @@ To be used with [GameText](../functions/GameTextForPlayer).
 
 - `]` displays a \* symbol (Only in text styles 3, 4 and 5)
 
-- `~k~` keyboard key mapping (e.g. ~k~~VEHICLE_TURRETLEFT~ and
-  ~k~~PED_FIREWEAPON~). Look here for a list of keys
+- `~k~` keyboard key mapping (e.g. ~k~\~VEHICLE_TURRETLEFT~ and ~k~\~PED_FIREWEAPON~). Look here for a list of keys
 
 :::caution
 
-Be careful, using too many text colors or special characters in one gametext may
-crash every player the gametext is shown to. Additionally, avoid using an uneven
-usage of the ~ character. Example: `~`~r~Hello, ~g~how are ~y~`~`you?`~`
+Be careful, using too many text colors or special characters in one gametext may crash every player the gametext is shown to. Additionally, avoid using an uneven usage of the ~ character. Example: `~`~r~Hello, ~g~how are ~y~`~`you?`~`
 
 :::
 
@@ -55,16 +51,13 @@ usage of the ~ character. Example: `~`~r~Hello, ~g~how are ~y~`~`you?`~`
 
 ![GameTextStyle0](/images/gameTextStyles/120px-Game-text-type0.png)
 
-**Appears for 9 seconds regardless of time setting. Hides textdraws and any
-other gametext on screen.**
+**Appears for 9 seconds regardless of time setting. Hides textdraws and any other gametext on screen.**
 
 ### Style 1
 
 ![GameTextStyle1](/images/gameTextStyles/120px-Game-text-type1.png)
 
-**Fades out after 8 seconds, regardless of time set. If you have a time setting
-longer than that, it will re-appear after fading out and repeat until the time
-ends.**
+**Fades out after 8 seconds, regardless of time set. If you have a time setting longer than that, it will re-appear after fading out and repeat until the time ends.**
 
 ### Style 2
 
@@ -84,8 +77,7 @@ ends.**
 
 ![GameTextStyle5](/images/gameTextStyles/120px-Game-text-type5.png)
 
-**Displays for 3 seconds, regardless of what time you set. Will refuse to be
-shown if it is 'spammed'.**
+**Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed'.**
 
 ### Style 6
 

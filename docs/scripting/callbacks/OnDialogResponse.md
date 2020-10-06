@@ -144,7 +144,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parameters can contain different values, based on dialog's style (click for more examples).
+Parameters can contain different values, based on dialog's style ([click for more examples](../resources/dialogstyles.md)).
 
 :::
 
@@ -162,4 +162,4 @@ A player's dialog doesn't hide when the gamemode restarts, causing the server to
 
 ## Related Functions
 
-- [ShowPlayerDialog](../../scripting/functions/ShowPlayerDialog.md): Show a dialog to a player.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Show a dialog to a player.

@@ -37,18 +37,14 @@ public OnGameModeInit()
 
 :::tip
 
-Crashes when passed an invalid menu ID.
-You can only have 12 items per menu (13th goes to the right side of the header of column name (colored), 14th and higher not display at all).
-You can only use 2 columns (0 and 1).
-You can only add 8 color codes per one item (~r~, ~g~ etc.).
-Maximum length of menu item is 31 symbols.
+Crashes when passed an invalid menu ID. You can only have 12 items per menu (13th goes to the right side of the header of column name (colored), 14th and higher not display at all). You can only use 2 columns (0 and 1). You can only add 8 color codes per one item (~r~, ~g~ etc.). Maximum length of menu item is 31 symbols.
 
 :::
 
 ## Related Functions
 
-- [CreateMenu](../../scripting/functions/CreateMenu.md): Create a menu.
-- [SetMenuColumnHeader](../../scripting/functions/SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
-- [DestroyMenu](../../scripting/functions/DestroyMenu.md): Destroy a menu.
-- [OnPlayerSelectedMenuRow](../../scripting/callbacks/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
-- [OnPlayerExitedMenu](../../scripting/callbacks/OnPlayerExitedMenu.md): Called when a player exits a menu.
+- [CreateMenu](CreateMenu.md): Create a menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
+- [DestroyMenu](DestroyMenu.md): Destroy a menu.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Called when a player exits a menu.

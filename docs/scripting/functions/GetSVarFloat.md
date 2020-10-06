@@ -15,19 +15,15 @@ This function was added in SA-MP 0.3.7 R2 and will not work in earlier versions!
 
 Gets a float server variable's value.
 
-
-| Name | Description |
-|------|-------------|
-|varname | The name of the server variable (case-insensitive). Assigned in SetSVarFloat.|
-
+| Name    | Description                                                                   |
+| ------- | ----------------------------------------------------------------------------- |
+| varname | The name of the server variable (case-insensitive). Assigned in SetSVarFloat. |
 
 ## Returns
 
 The float value of the specified server variable. It will still return 0 if the variable is not set.
 
-
 ## Examples
-
 
 ```c
 // set "Version"
@@ -36,13 +32,11 @@ SetSVarFloat("Version", 0.37);
 printf("Version: %f", GetSVarFloat("Version"));
 ```
 
-
 ## Related Functions
 
-
--  SetSVarInt: Set an integer for a server variable.
--  GetSVarInt: Get a player server as an integer.
--  SetSVarString: Set a string for a server variable.
--  GetSVarString: Get the previously set string from a server variable.
--  SetSVarFloat: Set a float for a server variable.
--  DeleteSVar: Delete a server variable.
+- [SetSVarInt](SetSVarInt.md): Set an integer for a server variable.
+- [GetSVarInt](GetSVarInt.md): Get a player server as an integer.
+- [SetSVarString](SetSVarString.md): Set a string for a server variable.
+- [GetSVarString](GetSVarString.md): Get the previously set string from a server variable.
+- [SetSVarFloat](SetSVarFloat.md): Set a float for a server variable.
+- [DeleteSVar](DeleteSVar.md): Delete a server variable.

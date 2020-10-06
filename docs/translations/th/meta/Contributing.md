@@ -246,7 +246,7 @@ https://domchristie.github.io/turndown/
 
 https://jmalarcon.github.io/markdowntables/
 
-และคัดลอกแค่องค์ประกอบใน  `<table>`:
+และคัดลอกแค่องค์ประกอบใน `<table>`:
 
 ![image](/images/contributing/57f171ae0da7.png)
 

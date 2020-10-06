@@ -29,8 +29,8 @@ RemoveVehicleComponent(1,1010);
 
 ## Related Functions
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Add a component to a vehicle.
-- [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot.md): Check what components a vehicle has.
-- [GetVehicleComponentType](../functions/GetVehicleComponentType.md): Check the type of component via the ID.
+- [AddVehicleComponent](AddVehicleComponent.md): Add a component to a vehicle.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot.md): Check what components a vehicle has.
+- [GetVehicleComponentType](GetVehicleComponentType.md): Check the type of component via the ID.
 - [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.

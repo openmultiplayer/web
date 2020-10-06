@@ -44,8 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-If a player's health is set to 0 or a minus value, they will die instantly.
-If a player's health is below 10 or above 98303, their health bar will flash.
+If a player's health is set to 0 or a minus value, they will die instantly. If a player's health is below 10 or above 98303, their health bar will flash.
 
 :::
 
@@ -57,6 +56,6 @@ Health is obtained rounded to integers: set 50.15, but get 50.0
 
 ## Related Functions
 
-- GetPlayerHealth: Find out how much health a player has.
-- GetPlayerArmour: Find out how much armour a player has.
-- SetPlayerArmour: Set the armour of a player.
+- [GetPlayerHealth](GetPlayerHealth.md): Find out how much health a player has.
+- [GetPlayerArmour](GetPlayerArmour.md): Find out how much armour a player has.
+- [SetPlayerArmour](SetPlayerArmour.md): Set the armour of a player.

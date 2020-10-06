@@ -44,13 +44,12 @@ if(strcmp(cmdtext, "/doctor", true) == 0)
 
 :::warning
 
-Even though the health can be set to near infinite values on the server side, the individual clients will only report values up to 255. Anything higher will wrap around; 256 becomes 0, 257 becomes 1, etc.
-Health is obtained rounded to integers: set 50.15, but get 50.0
+Even though the health can be set to near infinite values on the server side, the individual clients will only report values up to 255. Anything higher will wrap around; 256 becomes 0, 257 becomes 1, etc. Health is obtained rounded to integers: set 50.15, but get 50.0
 
 :::
 
 ## Related Functions
 
-- [SetPlayerHealth](../functions/SetPlayerHealth): Set a player's health.
-- [GetVehicleHealth](../functions/GetVehicleHealth): Check the health of a vehicle.
-- [GetPlayerArmour](../functions/GetPlayerArmour): Find out how much armour a player has.
+- [SetPlayerHealth](SetPlayerHealth): Set a player's health.
+- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
+- [GetPlayerArmour](GetPlayerArmour): Find out how much armour a player has.

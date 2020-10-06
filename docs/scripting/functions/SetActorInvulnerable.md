@@ -15,22 +15,18 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Toggle an actor's invulnerability.
 
-
-| Name | Description |
-|------|-------------|
-|actorid | The ID of the actor to set invulnerability.|
-|invulnerable | 0 to make them vulnerable, 1 to make them invulnerable.|
-
+| Name         | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| actorid      | The ID of the actor to set invulnerability.             |
+| invulnerable | 0 to make them vulnerable, 1 to make them invulnerable. |
 
 ## Returns
 
- 1 - Success
+1 - Success
 
- 0 - Failure (i.e. Actor is not created).
-
+0 - Failure (i.e. Actor is not created).
 
 ## Examples
-
 
 ```c
 new MyActor;
@@ -43,18 +39,12 @@ public OnGameModeInit()
 }
 ```
 
-
 ## Notes
 
 :::warning
 
-
- Once set invulnerable, the actor does not call OnPlayerGiveDamageActor.
- Players will have actor's invulnerability state changed only when it is restreamed to them.
+Once set invulnerable, the actor does not call OnPlayerGiveDamageActor. Players will have actor's invulnerability state changed only when it is restreamed to them.
 
 :::
 
-
 ## Related Functions
-
-

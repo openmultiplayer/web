@@ -62,5 +62,5 @@ For some useful functions for working with vehicle damage values, see here.
 
 ## Related Functions
 
-- [GetVehicleDamageStatus](../../scripting/functions/GetVehicleDamageStatus.md): Get the vehicle damage state for each part individually.
-- [UpdateVehicleDamageStatus](../../scripting/functions/UpdateVehicleDamageStatus.md): Update the vehicle damage.
+- [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus.md): Get the vehicle damage state for each part individually.
+- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus.md): Update the vehicle damage.

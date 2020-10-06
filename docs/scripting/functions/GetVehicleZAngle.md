@@ -2,31 +2,27 @@
 id: GetVehicleZAngle
 title: GetVehicleZAngle
 description: Get the rotation of a vehicle on the Z axis (yaw).
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 ## Description
 
 Get the rotation of a vehicle on the Z axis (yaw).
 
-
-| Name | Description |
-|------|-------------|
-|vehicleid | The ID of the vehicle to get the Z angle of.|
-|&Float:z_angle | A float variable in which to store the Z rotation, passed by reference.|
-
+| Name           | Description                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| vehicleid      | The ID of the vehicle to get the Z angle of.                            |
+| &Float:z_angle | A float variable in which to store the Z rotation, passed by reference. |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. This means the vehicle does not exist.
+0: The function failed to execute. This means the vehicle does not exist.
 
- The vehicle's rotation is stored in the specified variable.
-
+The vehicle's rotation is stored in the specified variable.
 
 ## Examples
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -52,12 +48,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## Related Functions
 
-
--  GetVehicleRotationQuat: Get the quaternion rotation of a vehicle.
--  GetVehicleRotation: Get the rotation of a vehicle on the XYZ axis.
--  SetVehicleZAngle: Set the direction of a vehicle.
--  GetVehiclePos: Get the position of a vehicle.
--  GetPlayerFacingAngle: Check where a player is facing.
+- [GetVehicleRotationQuat](GetVehicleRotationQuat.md): Get the quaternion rotation of a vehicle.
+- [GetVehicleRotation](GetVehicleRotation.md): Get the rotation of a vehicle on the XYZ axis.
+- [SetVehicleZAngle](SetVehicleZAngle.md): Set the direction of a vehicle.
+- [GetVehiclePos](GetVehiclePos.md): Get the position of a vehicle.
+- [GetPlayerFacingAngle](GetPlayerFacingAngle.md): Check where a player is facing.
