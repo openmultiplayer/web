@@ -2,30 +2,26 @@
 id: SendPlayerMessageToPlayer
 title: SendPlayerMessageToPlayer
 description: Sends a message in the name of a player to another player on the server.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## คำอธิบาย
 
 Sends a message in the name of a player to another player on the server. The message will appear in the chat box but can only be seen by the user specified with 'playerid'. The line will start with the sender's name in their color, followed by the message in white.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player who will receive the message.|
-|senderid | The sender's ID. If invalid, the message will not be sent.|
-|const message[] | The message that will be sent.|
-
+| Name            | Description                                                |
+| --------------- | ---------------------------------------------------------- |
+| playerid        | The ID of the player who will receive the message.         |
+| senderid        | The sender's ID. If invalid, the message will not be sent. |
+| const message[] | The message that will be sent.                             |
 
 ## ส่งคืน
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. This means the player specified does not exist.
-
+0: The function failed to execute. This means the player specified does not exist.
 
 ## ตัวอย่าง
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -40,21 +36,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## บันทึก
 
 :::warning
 
 Avoid using format specifiers in your messages without formatting the string that is sent. It will result in crashes otherwise.
 
-
 :::
-
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  SendPlayerMessageToAll: Force a player to send text for all players.
--  SendClientMessage: Send a message to a certain player.
--  SendClientMessageToAll: Send a message to all players.
--  OnPlayerText: Called when a player sends a message via the chat.
+- SendPlayerMessageToAll: Force a player to send text for all players.
+- SendClientMessage: Send a message to a certain player.
+- SendClientMessageToAll: Send a message to all players.
+- OnPlayerText: Called when a player sends a message via the chat.

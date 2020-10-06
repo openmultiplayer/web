@@ -2,26 +2,22 @@
 id: GetPlayerWantedLevel
 title: GetPlayerWantedLevel
 description: Gets the wanted level of a player.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## คำอธิบาย
 
 Gets the wanted level of a player.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player that you want to get the wanted level of.|
-
+| Name     | Description                                                    |
+| -------- | -------------------------------------------------------------- |
+| playerid | The ID of the player that you want to get the wanted level of. |
 
 ## ส่งคืน
 
 The player's wanted level.
 
-
 ## ตัวอย่าง
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -43,9 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  SetPlayerWantedLevel: Set a player's wanted level.
--  PlayCrimeReportForPlayer: Play a crime report for a player.
+- SetPlayerWantedLevel: Set a player's wanted level.
+- PlayCrimeReportForPlayer: Play a crime report for a player.

@@ -15,22 +15,18 @@ tags: []
 
 Set the health of an actor.
 
-
-| Name | Description |
-|------|-------------|
-|actorid | The ID of the actor to set the health of.|
-|Float:health | The value to set the actors's health to.|
-
+| Name         | Description                               |
+| ------------ | ----------------------------------------- |
+| actorid      | The ID of the actor to set the health of. |
+| Float:health | The value to set the actors's health to.  |
 
 ## ส่งคืน
 
- 1 - success
+1 - success
 
- 0 - failure (i.e. actor is not created).
-
+0 - failure (i.e. actor is not created).
 
 ## ตัวอย่าง
-
 
 ```c
 new MyActor;
@@ -43,7 +39,4 @@ public OnGameModeInit()
 }
 ```
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
-
-

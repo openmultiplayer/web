@@ -2,27 +2,23 @@
 id: SendPlayerMessageToAll
 title: SendPlayerMessageToAll
 description: Sends a message in the name of a player to all other players on the server.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## คำอธิบาย
 
 Sends a message in the name of a player to all other players on the server. The line will start with the sender's name in their color, followed by the message in white.
 
-
-| Name | Description |
-|------|-------------|
-|senderid | The ID of the sender. If invalid, the message will not be sent.|
-|const message[] | The message that will be sent.|
-
+| Name            | Description                                                     |
+| --------------- | --------------------------------------------------------------- |
+| senderid        | The ID of the sender. If invalid, the message will not be sent. |
+| const message[] | The message that will be sent.                                  |
 
 ## ส่งคืน
 
 This function does not return any specific values.
 
-
 ## ตัวอย่าง
-
 
 ```c
 public OnPlayerText(playerid, text[])
@@ -39,20 +35,16 @@ public OnPlayerText(playerid, text[])
 }
 ```
 
-
 ## บันทึก
 
 :::warning
 
 Avoid using format specifiers in your messages without formatting the string that is sent. It will result in crashes otherwise.
 
-
 :::
-
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  SendPlayerMessageToPlayer: Force a player to send text for one player.
--  SendClientMessageToAll: Send a message to all players.
--  OnPlayerText: Called when a player sends a message via the chat.
+- SendPlayerMessageToPlayer: Force a player to send text for one player.
+- SendClientMessageToAll: Send a message to all players.
+- OnPlayerText: Called when a player sends a message via the chat.

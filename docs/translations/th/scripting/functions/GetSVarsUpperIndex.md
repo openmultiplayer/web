@@ -5,18 +5,15 @@ description: Each SVar (server-variable) has its own unique identification numbe
 tags: []
 ---
 
-
 ## คำอธิบาย
 
 Each SVar (server-variable) has its own unique identification number for lookup, this function returns the highest ID.
 
-
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 
 
 ## ตัวอย่าง
-
 
 ```c
 // Store the upper index in the variable 'SVarUpperIndex' + 1
@@ -38,9 +35,7 @@ new szString[66];
 printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarCount, SVarUpperIndex-1);
 ```
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  GetSVarNameAtIndex: Get the server variable's name from its index.
--  GetSVarType: Get the type of the server variable.
+- GetSVarNameAtIndex: Get the server variable's name from its index.
+- GetSVarType: Get the type of the server variable.

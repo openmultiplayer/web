@@ -2,7 +2,7 @@
 id: GetVehicleModelInfo
 title: GetVehicleModelInfo
 description: Retrieve information about a specific vehicle model such as the size or position of seats.
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 :::warning
@@ -15,23 +15,19 @@ This function was added in SA-MP 0.3e and will not work in earlier versions!
 
 Retrieve information about a specific vehicle model such as the size or position of seats
 
-
-| Name | Description |
-|------|-------------|
-|vehiclemodel | The vehicle model to get info of.|
-|infotype | The type of information to retrieve.|
-|&Float:X | A float to store the X value.|
-|&Float:Y | A float to store the Y value.|
-|&Float:Z | A float to store the Z value.|
-
+| Name         | Description                          |
+| ------------ | ------------------------------------ |
+| vehiclemodel | The vehicle model to get info of.    |
+| infotype     | The type of information to retrieve. |
+| &Float:X     | A float to store the X value.        |
+| &Float:Y     | A float to store the Y value.        |
+| &Float:Z     | A float to store the Z value.        |
 
 ## ส่งคืน
 
- The vehicle info is stored in the specified variables.
-
+The vehicle info is stored in the specified variables.
 
 ## ตัวอย่าง
-
 
 ```c
 new Float:X, Float:Y, Float:Z;
@@ -40,8 +36,6 @@ printf("The infernus is %.1fm wide, %.1fm long and %.1fm high", X, Y, Z);
 //Prints "The infernus is 2.3m wide, 5.7m long and 1.3m high" into the console
 ```
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  GetVehicleModel: Get the model id of a vehicle.
+- GetVehicleModel: Get the model id of a vehicle.

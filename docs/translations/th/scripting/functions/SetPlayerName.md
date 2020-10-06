@@ -9,10 +9,10 @@ tags: ["player"]
 
 Sets the name of a player.
 
-| Name         | Description                                                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | The ID of the player to set the name of.                                                                                      |
-| const name[] | The name to set. Must be 1-24 characters long and only contain valid characters (0-9, a-z, A-Z, [], (), $ @ . \_ and = only). |
+| Name         | Description                                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| playerid     | The ID of the player to set the name of.                                                                                       |
+| const name[] | The name to set. Must be 1-24 characters long and only contain valid characters (0-9, a-z, A-Z, [], (), \$ @ . \_ and = only). |
 
 ## ส่งคืน
 

@@ -2,7 +2,7 @@
 id: GetVehiclePoolSize
 title: GetVehiclePoolSize
 description: Gets the highest vehicleid currently in use on the server.
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 :::warning
@@ -15,13 +15,11 @@ tags: ['vehicle']
 
 Gets the highest vehicleid currently in use on the server.
 
-
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 
 
 ## ตัวอย่าง
-
 
 ```c
 RepairAllVehicles()
@@ -33,8 +31,6 @@ RepairAllVehicles()
 }
 ```
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  GetPlayerPoolSize: Gets the highest playerid connected to the server.
+- GetPlayerPoolSize: Gets the highest playerid connected to the server.

@@ -24,7 +24,7 @@ public OnGameModeInit()
 {
     // Set moon-like gravity
     SetGravity(0.001);
- 
+
     return 1;
 }
 ```

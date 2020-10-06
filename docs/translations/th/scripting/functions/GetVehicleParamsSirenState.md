@@ -2,7 +2,7 @@
 id: GetVehicleParamsSirenState
 title: GetVehicleParamsSirenState
 description: Returns a vehicle's siren state (on/off).
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 :::warning
@@ -15,23 +15,19 @@ tags: ['vehicle']
 
 Returns a vehicle's siren state (on/off).
 
-
-| Name | Description |
-|------|-------------|
-|vehicleid | The ID of the vehicle to get the siren state of.|
-
+| Name      | Description                                      |
+| --------- | ------------------------------------------------ |
+| vehicleid | The ID of the vehicle to get the siren state of. |
 
 ## ส่งคืน
 
- -1: Vehicle siren hasn't been set yet (off)
+-1: Vehicle siren hasn't been set yet (off)
 
- 0: Vehicle siren is off
+0: Vehicle siren is off
 
- 1: Vehicle siren is on
-
+1: Vehicle siren is on
 
 ## ตัวอย่าง
-
 
 ```c
 new siren = GetVehicleParamsSirenState(vehicleid);
@@ -46,7 +42,6 @@ else
 }
 ```
 
-
 ## บันทึก
 
 :::warning
@@ -55,7 +50,4 @@ Because a siren state of -1 or 0 means 'off', you cannot use a boolean condition
 
 :::
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
-
-

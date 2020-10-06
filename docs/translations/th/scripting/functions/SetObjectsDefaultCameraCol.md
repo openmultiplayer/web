@@ -5,7 +5,6 @@ description: Allows camera collisions with newly created objects to be disabled 
 tags: []
 ---
 
-
 :::warning
 
 ฟังก์ชั่นนี้ถูกเพิ่มใน SA-MP 0.3.7 และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
@@ -16,27 +15,17 @@ tags: []
 
 Allows camera collisions with newly created objects to be disabled by default.
 
-
-| Name | Description |
-|------|-------------|
-|disable | 1 to disable camera collisions for newly created objects and 0 to enable them (enabled by default).|
-
+| Name    | Description                                                                                         |
+| ------- | --------------------------------------------------------------------------------------------------- |
+| disable | 1 to disable camera collisions for newly created objects and 0 to enable them (enabled by default). |
 
 ## ส่งคืน
-
-
-
-
 
 Note
 
 This function only affects the camera collision of objects created AFTER its use - it does not toggle existing objects' camera collisions.
 
-
-
-
 ## ตัวอย่าง
-
 
 ```c
 public OnGameModeInit()
@@ -69,7 +58,6 @@ public OnGameModeInit()
 }
 ```
 
-
 ## บันทึก
 
 :::tip
@@ -78,16 +66,13 @@ This function only affects the camera collision of objects created AFTER its use
 
 :::
 
-
 :::warning
 
 This function ONLY works outside the normal SA map boundaries (past 3000 units).
 
 :::
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  SetObjectNoCameraCol: Disables collisions between camera and object.
--  SetPlayerObjectNoCameraCol: Disables collisions between camera and player object.
+- SetObjectNoCameraCol: Disables collisions between camera and object.
+- SetPlayerObjectNoCameraCol: Disables collisions between camera and player object.

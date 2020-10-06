@@ -2,26 +2,22 @@
 id: GetPlayerVirtualWorld
 title: GetPlayerVirtualWorld
 description: Retrieves the current virtual world the player is in.
-tags: ['player']
+tags: ["player"]
 ---
 
 ## คำอธิบาย
 
 Retrieves the current virtual world the player is in.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to get the virtual world of.|
-
+| Name     | Description                                       |
+| -------- | ------------------------------------------------- |
+| playerid | The ID of the player to get the virtual world of. |
 
 ## ส่งคืน
 
 The ID of the virtual world the player is currently in.
 
-
 ## ตัวอย่าง
-
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -37,7 +33,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-
 ## บันทึก
 
 :::tip
@@ -46,10 +41,8 @@ Virtual worlds are not the same as interiors.
 
 :::
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  SetPlayerVirtualWorld: Set the virtual world of a player.
--  GetVehicleVirtualWorld: Check what virtual world a vehicle is in.
--  GetPlayerInterior: Get the current interior of a player.
+- SetPlayerVirtualWorld: Set the virtual world of a player.
+- GetVehicleVirtualWorld: Check what virtual world a vehicle is in.
+- GetPlayerInterior: Get the current interior of a player.

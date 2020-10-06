@@ -2,27 +2,22 @@
 id: GetPlayerWeapon
 title: GetPlayerWeapon
 description: Returns the ID of the weapon a player is currently holding.
-tags: ['player']
+tags: ["player"]
 ---
-
 
 ## คำอธิบาย
 
 Returns the ID of the weapon a player is currently holding.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to get the currently held weapon of.|
-
+| Name     | Description                                               |
+| -------- | --------------------------------------------------------- |
+| playerid | The ID of the player to get the currently held weapon of. |
 
 ## ส่งคืน
 
 The ID of the player's current weapon. Returns -1 if the player specified does not exist.
 
-
 ## ตัวอย่าง
-
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -35,7 +30,6 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-
 ## บันทึก
 
 :::tip
@@ -44,17 +38,14 @@ When the player state is PLAYER_STATE_DRIVER or PLAYER_STATE_PASSENGER this func
 
 :::
 
-
 :::warning
 
 Sometimes the result can be -1 which is an invalid weapon ID. Circumstances of this are not yet known, but it is best to discard information when returned weapon is -1.
 
 :::
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  GetPlayerWeaponData: Find out information about weapons a player has.
--  GivePlayerWeapon: Give a player a weapon.
--  ResetPlayerWeapons: Remove all weapons from a player.
+- GetPlayerWeaponData: Find out information about weapons a player has.
+- GivePlayerWeapon: Give a player a weapon.
+- ResetPlayerWeapons: Remove all weapons from a player.

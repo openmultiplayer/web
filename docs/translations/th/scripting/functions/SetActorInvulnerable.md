@@ -15,22 +15,18 @@ tags: []
 
 Toggle an actor's invulnerability.
 
-
-| Name | Description |
-|------|-------------|
-|actorid | The ID of the actor to set invulnerability.|
-|invulnerable | 0 to make them vulnerable, 1 to make them invulnerable.|
-
+| Name         | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| actorid      | The ID of the actor to set invulnerability.             |
+| invulnerable | 0 to make them vulnerable, 1 to make them invulnerable. |
 
 ## ส่งคืน
 
- 1 - Success
+1 - Success
 
- 0 - Failure (i.e. Actor is not created).
-
+0 - Failure (i.e. Actor is not created).
 
 ## ตัวอย่าง
-
 
 ```c
 new MyActor;
@@ -43,18 +39,13 @@ public OnGameModeInit()
 }
 ```
 
-
 ## บันทึก
 
 :::warning
 
-
- Once set invulnerable, the actor does not call OnPlayerGiveDamageActor.
- Players will have actor's invulnerability state changed only when it is restreamed to them.
+Once set invulnerable, the actor does not call OnPlayerGiveDamageActor.
+Players will have actor's invulnerability state changed only when it is restreamed to them.
 
 :::
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
-
-

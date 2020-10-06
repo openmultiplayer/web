@@ -2,7 +2,7 @@
 id: GetPlayerPoolSize
 title: GetPlayerPoolSize
 description: Gets the highest playerid currently in use on the server.
-tags: ['player']
+tags: ["player"]
 ---
 
 :::warning
@@ -15,13 +15,11 @@ tags: ['player']
 
 Gets the highest playerid currently in use on the server.
 
-
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 
 
 ## ตัวอย่าง
-
 
 ```c
 FreezeAll()
@@ -33,9 +31,7 @@ FreezeAll()
 }
 ```
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  GetVehiclePoolSize: Gets the highest vehicleid currently in use on the server.
--  GetMaxPlayers: Gets the maximum number of players that can join the server.
+- GetVehiclePoolSize: Gets the highest vehicleid currently in use on the server.
+- GetMaxPlayers: Gets the maximum number of players that can join the server.

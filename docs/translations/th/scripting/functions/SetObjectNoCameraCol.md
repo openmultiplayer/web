@@ -15,21 +15,17 @@ tags: []
 
 Disable collisions between players' cameras and the specified object.
 
-
-| Name | Description |
-|------|-------------|
-|objectid | The ID of the object to disable camera collisions on.|
-
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
+| objectid | The ID of the object to disable camera collisions on. |
 
 ## ส่งคืน
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. The object specified does not exist.
-
+0: The function failed to execute. The object specified does not exist.
 
 ## ตัวอย่าง
-
 
 ```c
 public OnObjectMoved(objectid)
@@ -44,7 +40,6 @@ public OnObjectMoved(objectid)
 }
 ```
 
-
 ## บันทึก
 
 :::tip
@@ -53,8 +48,6 @@ This only works outside the map boundaries (past -3000/3000 units on the x and/o
 
 :::
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-
--  SetPlayerObjectNoCameraCol: Disables collisions between camera and player object.
+- SetPlayerObjectNoCameraCol: Disables collisions between camera and player object.
