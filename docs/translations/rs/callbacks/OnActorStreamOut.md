@@ -40,7 +40,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 :::tip
 
-Овај колбек такође може бити позвад и од стране NPC-а.
+Овај колбек такође може бити позван и од стране NPC-а.
 
 :::
 
