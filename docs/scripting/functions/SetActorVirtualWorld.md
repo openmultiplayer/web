@@ -44,5 +44,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- GetActorVirtualWorld: Get the virtual world of an actor.
-- CreateActor: Create an actor (static NPC).
+- [GetActorVirtualWorld](GetActorVirtualWorld.md): Get the virtual world of an actor.
+- [CreateActor](CreateActor.md): Create an actor (static NPC).

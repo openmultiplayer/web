@@ -51,6 +51,6 @@ If a message is longer than 144 characters, it will not be sent. Truncation can 
 
 ## Related Functions
 
-- SendClientMessageToAll: Send a message to all players.
-- SendPlayerMessageToPlayer: Force a player to send text for one player.
-- SendPlayerMessageToAll: Force a player to send text for all players.
+- [SendClientMessageToAll](SendClientMessageToAll.md): Send a message to all players.
+- [SendPlayerMessageToPlayer](SendPlayerMessageToPlayer.md): Force a player to send text for one player.
+- [SendPlayerMessageToAll](SendPlayerMessageToAll.md): Force a player to send text for all players.

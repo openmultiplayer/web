@@ -42,5 +42,5 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Related Functions
 
-- SendDeathMessage: Add a kill to the death list.
-- OnPlayerDeath: Called when a player dies.
+- [SendDeathMessage](SendDeathMessage.md): Add a kill to the death list.
+- [OnPlayerDeath](../callbacks/OnPlayerDeath.md): Called when a player dies.

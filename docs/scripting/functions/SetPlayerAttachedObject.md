@@ -70,6 +70,6 @@ In version 0.3d and onwards, 10 objects can be attached to a single player (inde
 
 ## Related Functions
 
-- RemovePlayerAttachedObject: Remove an attached object from a player
-- IsPlayerAttachedObjectSlotUsed: Check whether an object is attached to a player in a specified index
-- EditAttachedObject: Edit an attached object.
+- [RemovePlayerAttachedObject](RemovePlayerAttachedObject.md): Remove an attached object from a player
+- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed.md): Check whether an object is attached to a player in a specified index
+- [EditAttachedObject](EditAttachedObject.md): Edit an attached object.
