@@ -1,6 +1,6 @@
 ---
 id: AdvancedStructures
-title: "โครงสร้างขึ้นสูง"
+title: "โครงสร้างขั้นสูง"
 ---
 
 ## การจัดการ Array
