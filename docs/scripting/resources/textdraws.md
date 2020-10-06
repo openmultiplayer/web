@@ -32,6 +32,7 @@ Global textdraws can be created, then shown to all players. There is a [limit](.
 - [TextDrawHideForPlayer](../functions/TextDrawHideForPlayer.md): Hide a textdraw for a certain player.
 - [TextDrawShowForAll](../functions/TextDrawShowForAll.md): Show a textdraw for all players.
 - [TextDrawHideForAll](../functions/TextDrawHideForAll.md): Hide a textdraw for all players.
+
 ## Player-textdraws
 
 Player-textdraws are only created for one specific player. Up to 256 textdraws can be created PER-PLAYER. That's 128,000 on a server with 500 players. A little more than 2048. Player-textdraws should be used for things that are not 'static'. Do not use them to display a website address for example, but for a vehicle health indicator.
