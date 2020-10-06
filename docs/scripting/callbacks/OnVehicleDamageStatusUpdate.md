@@ -11,6 +11,12 @@ This callback was added in SA-MP 0.3a and will not work in earlier versions!
 
 :::
 
+:::tip
+
+For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus.md).
+
+:::
+
 ## Description
 
 This callback is called when a vehicle element such as doors, tires, panels, or lights change their damage status.
@@ -50,13 +56,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 :::tip
 
-This does not include vehicle health changes
-
-:::
-
-:::tip
-
-For some useful functions for working with vehicle damage values, see here.
+This does not include vehicle health changes.
 
 :::
 

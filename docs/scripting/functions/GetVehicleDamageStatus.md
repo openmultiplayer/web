@@ -7,7 +7,13 @@ tags: ["vehicle"]
 
 :::warning
 
-This Callback was added in SA-MP 0.3a and will not work in earlier versions!
+This callback was added in SA-MP 0.3a and will not work in earlier versions!
+
+:::
+
+:::tip
+
+For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus.md).
 
 :::
 
@@ -34,22 +40,8 @@ Retrieve the damage statuses of a vehicle.
 ```c
 new panels, doors, lights, tires;
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tires]: %d",panels,doors,lights,tires);
+printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tires]: %d", panels, doors, lights, tires);
 ```
-
-## Notes
-
-:::tip
-
-The stored values are bit masks. Bitwise operators will allow you to use the values.
-
-:::
-
-:::tip
-
-For some useful functions for working with vehicle damage values, see here.
-
-:::
 
 ## Related Functions
 
