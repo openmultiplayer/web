@@ -4,9 +4,7 @@ title: "Color Fix"
 descripion: A basic script to add more player colours.
 ---
 
-This tutorial is to be used with [GetPlayerColor](../functions/GetPlayerColor),
-if you do not use [SetPlayerColor](../functions/SetPlayerColor) in your script
-when players connect.
+This tutorial is to be used with [GetPlayerColor](../../scripting/functions/GetPlayerColor.md), if you do not use [SetPlayerColor](../../scripting/functions/SetPlayerColor.md) in your script when players connect.
 
 ```c
 new PlayerColors[] = {
@@ -31,7 +29,7 @@ Next place this under the OnPlayerConnect callback:
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);
 ```
 
-Now [GetPlayerColor](../functions/GetPlayerColor) will work!
+Now [GetPlayerColor](../../scripting/functions/GetPlayerColor.md) will work!
 
 For new versions of SA-MP you can add this array:
 
@@ -111,6 +109,4 @@ new PlayerRainbowColors[511] = {
 };
 ```
 
-Now there are no duplicated colors, the colors are distributed to the maximum
-number of slots, the step of color - 34, and the TAB of full server looks like a
-rainbow!
+Now there are no duplicated colors, the colors are distributed to the maximum number of slots, the step of color - 34, and the TAB of full server looks like a rainbow!

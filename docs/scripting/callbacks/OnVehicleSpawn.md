@@ -7,8 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-This callback is called **only** when vehicle **re**spawns!
-CreateVehicle and AddStaticVehicle(Ex) **won't** trigger this callback.
+This callback is called **only** when vehicle **re**spawns! CreateVehicle and AddStaticVehicle(Ex) **won't** trigger this callback.
 
 :::
 
@@ -40,5 +39,5 @@ public OnVehicleSpawn(vehicleid)
 
 ## Related Functions
 
-- [SetVehicleToRespawn](../../scripting/functions/SetVehicleToRespawn.md): Respawn a vehicle.
-- [CreateVehicle](../../scripting/functions/CreateVehicle.md): Create a vehicle.
+- [SetVehicleToRespawn](../functions/SetVehicleToRespawn.md): Respawn a vehicle.
+- [CreateVehicle](../functions/CreateVehicle.md): Create a vehicle.

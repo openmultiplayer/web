@@ -51,13 +51,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Use TogglePlayerSpectating to make objects stream in for the player while the camera is moving and remove the HUD.
-The player's camera can be reset to behind the player with SetCameraBehindPlayer.
+Use TogglePlayerSpectating to make objects stream in for the player while the camera is moving and remove the HUD. The player's camera can be reset to behind the player with SetCameraBehindPlayer.
 
 :::
 
 ## Related Functions
 
-- [InterpolateCameraLookAt](../../scripting/functions/InterpolateCameraLookAt.md): Move a player's camera view from one location to another.
-- [SetPlayerCameraPos](../../scripting/functions/SetPlayerCameraPos.md): Set a player's camera position.
-- [SetPlayerCameraLookAt](../../scripting/functions/SetPlayerCameraLookAt.md): Set where a player's camera should face.
+- [InterpolateCameraLookAt](InterpolateCameraLookAt.md): Move a player's camera view from one location to another.
+- [SetPlayerCameraPos](SetPlayerCameraPos.md): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt.md): Set where a player's camera should face.

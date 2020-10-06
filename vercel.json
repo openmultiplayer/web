@@ -4,5 +4,16 @@
       "source": "wiki.open.mp/docs/:all*",
       "destination": "https://www.open.mp/docs/:all*"
     }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "all"
+        }
+      ]
+    }
   ]
 }

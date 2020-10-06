@@ -29,6 +29,6 @@ Allows you to open and close the doors of a vehicle.
 
 ## Related Functions
 
-- GetVehicleParamsCarDoors: Retrive the current state of a vehicle's doors.
-- SetVehicleParamsCarWindows: Open and close the windows of a vehicle.
-- GetVehicleParamsCarWindows: Retrive the current state of a vehicle's windows
+- [GetVehicleParamsCarDoors](GetVehicleParamsCarDoors.md): Retrive the current state of a vehicle's doors.
+- [SetVehicleParamsCarWindows](SetVehicleParamsCarWindows.md): Open and close the windows of a vehicle.
+- [GetVehicleParamsCarWindows](GetVehicleParamsCarWindows.md): Retrive the current state of a vehicle's windows

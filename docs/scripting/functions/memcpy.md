@@ -40,13 +40,13 @@ print(destination);
 
 ## Related Functions
 
-- [strcmp](../functions/strcmp.md): Compare two strings to see if they are the same.
-- [strfind](../functions/strfind.md): Search for a substring in a string.
-- [strtok](../functions/strtok.md): Search for a variable typed after a space.
-- [strdel](../functions/strdel.md): Delete part/all of a string.
-- [strins](../functions/strins.md): Put a string into another string.
-- [strlen](../functions/strlen.md): Check the length of a string.
-- [strmid](../functions/strmid.md): Extract characters from a string.
-- [strpack](../functions/strpack.md): Pack a string into a destination.
-- [strval](../functions/strval.md): Find the value of a string.
-- [strcat](../functions/strcat.md): Concatenate two strings.
+- [strcmp](strcmp.md): Compare two strings to see if they are the same.
+- [strfind](strfind.md): Search for a substring in a string.
+- [strtok](strtok.md): Search for a variable typed after a space.
+- [strdel](strdel.md): Delete part/all of a string.
+- [strins](strins.md): Put a string into another string.
+- [strlen](strlen.md): Check the length of a string.
+- [strmid](strmid.md): Extract characters from a string.
+- [strpack](strpack.md): Pack a string into a destination.
+- [strval](strval.md): Find the value of a string.
+- [strcat](strcat.md): Concatenate two strings.

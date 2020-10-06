@@ -2,30 +2,26 @@
 id: PutPlayerInVehicle
 title: PutPlayerInVehicle
 description: Puts a player in a vehicle.
-tags: ['player', 'vehicle']
+tags: ["player", "vehicle"]
 ---
 
 ## Description
 
 Puts a player in a vehicle.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to put in a vehicle.|
-|vehicleid | The ID of the vehicle to put the player in.|
-|seatid | The ID of the seat to put the player in.|
-
+| Name      | Description                                 |
+| --------- | ------------------------------------------- |
+| playerid  | The ID of the player to put in a vehicle.   |
+| vehicleid | The ID of the vehicle to put the player in. |
+| seatid    | The ID of the seat to put the player in.    |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. The player or vehicle don't exist.
-
+0: The function failed to execute. The player or vehicle don't exist.
 
 ## Examples
-
 
 ```c
 public OnPlayerEnterVehicle(playerid,vehicleid,ispassanger)
@@ -34,7 +30,6 @@ public OnPlayerEnterVehicle(playerid,vehicleid,ispassanger)
     return 1;
 }
 ```
-
 
 ```
 0 - Driver
@@ -45,7 +40,6 @@ public OnPlayerEnterVehicle(playerid,vehicleid,ispassanger)
 
 ```
 
-
 ## Notes
 
 :::tip
@@ -54,18 +48,15 @@ You can use GetPlayerVehicleSeat in a loop to check if a seat is occupied by any
 
 :::
 
-
 :::warning
 
 If the seat is invalid or is taken, will cause a crash when they EXIT the vehicle.
 
 :::
 
-
 ## Related Functions
 
-
--  RemovePlayerFromVehicle: Throw a player out of their vehicle.
--  GetPlayerVehicleID: Get the ID of the vehicle the player is in.
--  GetPlayerVehicleSeat: Check what seat a player is in.
--  OnPlayerEnterVehicle: Called when a player starts to enter a vehicle.
+- [RemovePlayerFromVehicle](RemovePlayerFromVehicle.md): Throw a player out of their vehicle.
+- [GetPlayerVehicleID](GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat.md): Check what seat a player is in.
+- [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle.md): Called when a player starts to enter a vehicle.

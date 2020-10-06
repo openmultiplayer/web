@@ -5,7 +5,6 @@ description: This callback is called when a vehicle is streamed out for a player
 tags: ["vehicle"]
 ---
 
-
 :::warning
 
 This callback was added in SA-MP 0.3a and will not work in earlier versions!

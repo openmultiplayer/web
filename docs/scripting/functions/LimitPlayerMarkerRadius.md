@@ -34,6 +34,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [ShowPlayerMarkers](../functions/ShowPlayerMarkers.md): Decide if the server should show markers on the radar.
-- [SetPlayerMarkerForPlayer](../functions/SetPlayerMarkerForPlayer.md): Set a player's marker.
-- [LimitGlobalChatRadius](../functions/LimitGlobalChatRadius.md): Limit the distance between players needed to see their chat.
+- [ShowPlayerMarkers](ShowPlayerMarkers.md): Decide if the server should show markers on the radar.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer.md): Set a player's marker.
+- [LimitGlobalChatRadius](LimitGlobalChatRadius.md): Limit the distance between players needed to see their chat.

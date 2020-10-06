@@ -2,7 +2,7 @@
 id: GetPlayerVehicleSeat
 title: GetPlayerVehicleSeat
 description: Find out which seat a player is in.
-tags: ['player', 'vehicle']
+tags: ["player", "vehicle"]
 ---
 
 :::warning
@@ -15,19 +15,15 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Find out which seat a player is in.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player you want to get the seat of.|
-
+| Name     | Description                                       |
+| -------- | ------------------------------------------------- |
+| playerid | The ID of the player you want to get the seat of. |
 
 ## Returns
 
 The ID of the seat the player is in. -1 is not in vehicle, 0 is the driver, 1 is the front passenger, and 2 & 3 are the rear passengers.
 
-
 ## Examples
-
 
 ```c
 if(strcmp(cmdtext, "/myseat", true) == 0)
@@ -43,9 +39,7 @@ if(strcmp(cmdtext, "/myseat", true) == 0)
 }
 ```
 
-
 ## Related Functions
 
-
--  GetPlayerVehicleID: Get the ID of the vehicle the player is in.
--  PutPlayerInVehicle: Put a player in a vehicle.
+- [GetPlayerVehicleID](GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
+- [PutPlayerInVehicle](PutPlayerInVehicle.md): Put a player in a vehicle.

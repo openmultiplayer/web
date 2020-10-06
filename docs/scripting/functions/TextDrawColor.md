@@ -41,20 +41,20 @@ If the TextDraw is already shown, it must be re-shown (TextDrawShowForAll/TextDr
 
 ## Related Functions
 
-- [TextDrawCreate](../functions/TextDrawCreate.md): Create a textdraw.
-- [TextDrawDestroy](../functions/TextDrawDestroy.md): Destroy a textdraw.
-- [TextDrawBoxColor](../functions/TextDrawBoxColor.md): Set the color of the box in a textdraw.
-- [TextDrawBackgroundColor](../functions/TextDrawBackgroundColor.md): Set the background color of a textdraw.
-- [TextDrawAlignment](../functions/TextDrawAlignment.md): Set the alignment of a textdraw.
-- [TextDrawFont](../functions/TextDrawFont.md): Set the font of a textdraw.
-- [TextDrawLetterSize](../functions/TextDrawLetterSize.md): Set the letter size of the text in a textdraw.
-- [TextDrawTextSize](../functions/TextDrawTextSize.md): Set the size of a textdraw box.
-- [TextDrawSetOutline](../functions/TextDrawSetOutline.md): Choose whether the text has an outline.
-- [TextDrawSetShadow](../functions/TextDrawSetShadow.md): Toggle shadows on a textdraw.
-- [TextDrawSetProportional](../functions/TextDrawSetProportional.md): Scale the text spacing in a textdraw to a proportional ratio.
-- [TextDrawUseBox](../functions/TextDrawUseBox.md): Toggle if the textdraw has a box or not.
-- [TextDrawSetString](../functions/TextDrawSetString.md): Set the text in an existing textdraw.
-- [TextDrawShowForPlayer](../functions/TextDrawShowForPlayer.md): Show a textdraw for a certain player.
-- [TextDrawHideForPlayer](../functions/TextDrawHideForPlayer.md): Hide a textdraw for a certain player.
-- [TextDrawShowForAll](../functions/TextDrawShowForAll.md): Show a textdraw for all players.
-- [TextDrawHideForAll](../functions/TextDrawHideForAll.md): Hide a textdraw for all players.
+- [TextDrawCreate](TextDrawCreate.md): Create a textdraw.
+- [TextDrawDestroy](TextDrawDestroy.md): Destroy a textdraw.
+- [TextDrawBoxColor](TextDrawBoxColor.md): Set the color of the box in a textdraw.
+- [TextDrawBackgroundColor](TextDrawBackgroundColor.md): Set the background color of a textdraw.
+- [TextDrawAlignment](TextDrawAlignment.md): Set the alignment of a textdraw.
+- [TextDrawFont](TextDrawFont.md): Set the font of a textdraw.
+- [TextDrawLetterSize](TextDrawLetterSize.md): Set the letter size of the text in a textdraw.
+- [TextDrawTextSize](TextDrawTextSize.md): Set the size of a textdraw box.
+- [TextDrawSetOutline](TextDrawSetOutline.md): Choose whether the text has an outline.
+- [TextDrawSetShadow](TextDrawSetShadow.md): Toggle shadows on a textdraw.
+- [TextDrawSetProportional](TextDrawSetProportional.md): Scale the text spacing in a textdraw to a proportional ratio.
+- [TextDrawUseBox](TextDrawUseBox.md): Toggle if the textdraw has a box or not.
+- [TextDrawSetString](TextDrawSetString.md): Set the text in an existing textdraw.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer.md): Show a textdraw for a certain player.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer.md): Hide a textdraw for a certain player.
+- [TextDrawShowForAll](TextDrawShowForAll.md): Show a textdraw for all players.
+- [TextDrawHideForAll](TextDrawHideForAll.md): Hide a textdraw for all players.

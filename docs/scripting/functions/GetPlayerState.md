@@ -15,7 +15,7 @@ Get a player's current state.
 
 ## Returns
 
-The player's current state as an integer (see: [Player States](../../scripting/resources/playerstates.md)).
+The player's current state as an integer (see: [Player States](../resources/playerstates.md)).
 
 ## Examples
 
@@ -35,6 +35,6 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Related Functions
 
-- GetPlayerSpecialAction: Get a player's current special action.
-- SetPlayerSpecialAction: Set a player's special action.
-- OnPlayerStateChange: Called when a player changes state.
+- [GetPlayerSpecialAction](GetPlayerSpecialAction.md): Get a player's current special action.
+- [SetPlayerSpecialAction](SetPlayerSpecialAction.md): Set a player's special action.
+- [OnPlayerStateChange](../callbacks/OnPlayerStateChange.md): Called when a player changes state.

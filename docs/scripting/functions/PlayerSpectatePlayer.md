@@ -36,12 +36,11 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::warning
 
-Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectatePlayer.
-playerid and targetplayerid's virtual world and interior must be the same for this function to work properly.
+Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectatePlayer. playerid and targetplayerid's virtual world and interior must be the same for this function to work properly.
 
 :::
 
 ## Related Functions
 
-- PlayerSpectateVehicle: Spectate a vehicle.
-- TogglePlayerSpectating: Start or stop spectating.
+- [PlayerSpectateVehicle](PlayerSpectateVehicle.md): Spectate a vehicle.
+- [TogglePlayerSpectating](TogglePlayerSpectating.md): Start or stop spectating.

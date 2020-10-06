@@ -9,10 +9,10 @@ tags: ["player"]
 
 Set the skin of a player. A player's skin is their character model.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | The ID of the player to set the skin of. |
-| skinid   | The skin the player should use.          |
+| Name     | Description                                              |
+| -------- | -------------------------------------------------------- |
+| playerid | The ID of the player to set the skin of.                 |
+| skinid   | The [skin](../resources/skins.md) the player should use. |
 
 ## Returns
 
@@ -74,15 +74,11 @@ stock SetPlayerSkinFix(playerid, skinid)
 
 :::warning
 
-Known Bug(s):
-If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using TogglePlayerControllable. Players can be detected as being crouched through GetPlayerSpecialAction (SPECIAL_ACTION_DUCK).
-Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle.
-Setting a player's skin when he is dead may crash players around him.
-Breaks sitting on bikes.
+Known Bug(s): If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using TogglePlayerControllable. Players can be detected as being crouched through GetPlayerSpecialAction (SPECIAL_ACTION_DUCK). Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle. Setting a player's skin when he is dead may crash players around him. Breaks sitting on bikes.
 
 :::
 
 ## Related Functions
 
-- GetPlayerSkin: Get a player's current skin.
-- SetSpawnInfo: Set the spawn setting for a player.
+- [GetPlayerSkin](GetPlayerSkin.md): Get a player's current skin.
+- [SetSpawnInfo](SetSpawnInfo.md): Set the spawn setting for a player.

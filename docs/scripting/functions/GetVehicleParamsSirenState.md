@@ -2,7 +2,7 @@
 id: GetVehicleParamsSirenState
 title: GetVehicleParamsSirenState
 description: Returns a vehicle's siren state (on/off).
-tags: ['vehicle']
+tags: ["vehicle"]
 ---
 
 :::warning
@@ -15,23 +15,19 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Returns a vehicle's siren state (on/off).
 
-
-| Name | Description |
-|------|-------------|
-|vehicleid | The ID of the vehicle to get the siren state of.|
-
+| Name      | Description                                      |
+| --------- | ------------------------------------------------ |
+| vehicleid | The ID of the vehicle to get the siren state of. |
 
 ## Returns
 
- -1: Vehicle siren hasn't been set yet (off)
+-1: Vehicle siren hasn't been set yet (off)
 
- 0: Vehicle siren is off
+0: Vehicle siren is off
 
- 1: Vehicle siren is on
-
+1: Vehicle siren is on
 
 ## Examples
-
 
 ```c
 new siren = GetVehicleParamsSirenState(vehicleid);
@@ -46,7 +42,6 @@ else
 }
 ```
 
-
 ## Notes
 
 :::warning
@@ -55,7 +50,4 @@ Because a siren state of -1 or 0 means 'off', you cannot use a boolean condition
 
 :::
 
-
 ## Related Functions
-
-

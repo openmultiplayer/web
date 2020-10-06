@@ -45,8 +45,7 @@ public OnGameModeInit()
 
 :::tip
 
-useartwork must be enabled first in server settings in order for this to work
-When virtualworld is set, the models will be downloaded once the player enters the specific world
+useartwork must be enabled first in server settings in order for this to work When virtualworld is set, the models will be downloaded once the player enters the specific world
 
 :::
 
@@ -58,4 +57,4 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
-- [OnPlayerFinishedDownloading](../../scripting/callbacks/OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.

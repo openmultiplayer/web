@@ -32,8 +32,7 @@ SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 
 :::tip
 
-You may also have to use SetPlayerCameraLookAt with this function in order to work properly.
-Use SetCameraBehindPlayer to reset the camera to behind the player.
+You may also have to use SetPlayerCameraLookAt with this function in order to work properly. Use SetCameraBehindPlayer to reset the camera to behind the player.
 
 :::
 
@@ -45,5 +44,5 @@ Using the camera functions directly after enabling spectator mode doesn't work.
 
 ## Related Functions
 
-- SetPlayerCameraLookAt: Set where a player's camera should face.
-- SetCameraBehindPlayer: Set a player's camera behind them.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt.md): Set where a player's camera should face.
+- [SetCameraBehindPlayer](SetCameraBehindPlayer.md): Set a player's camera behind them.

@@ -36,4 +36,4 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Related Functions
 
-- GetPlayerScore: Get the score of a player.
+- [GetPlayerScore](GetPlayerScore.md): Get the score of a player.

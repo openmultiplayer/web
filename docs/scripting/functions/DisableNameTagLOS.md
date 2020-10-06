@@ -15,10 +15,6 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 Disables the nametag Line-Of-Sight checking so that players can see nametags through objects.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c
@@ -39,5 +35,5 @@ This can not be reversed until the server restarts.
 
 ## Related Functions
 
-- [ShowNameTags](../../scripting/functions/ShowNameTags.md): Set nametags on or off.
-- [ShowPlayerNameTagForPlayer](../../scripting/functions/ShowPlayerNameTagForPlayer.md): Show or hide a nametag for a certain player.
+- [ShowNameTags](ShowNameTags.md): Set nametags on or off.
+- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer.md): Show or hide a nametag for a certain player.

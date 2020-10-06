@@ -15,10 +15,6 @@ This NPC callback was added in SA-MP 0.3a and will not work in earlier versions!
 
 This callback is called when a recorded file being reproduced with NPC:StartRecordingPlayback has reached to its end.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c
@@ -30,5 +26,5 @@ public OnRecordingPlaybackEnd()
 
 ## Related Functions
 
-- NPC:StartRecordingPlayback: Starts reproducing an already recorded .rec file.
-- NPC:StopRecordingPlayback: Stops reproducing a .rec file.
+- [NPC:StartRecordingPlayback](NPC:StartRecordingPlayback.md): Starts reproducing an already recorded .rec file.
+- [NPC:StopRecordingPlayback](NPC:StopRecordingPlayback.md): Stops reproducing a .rec file.

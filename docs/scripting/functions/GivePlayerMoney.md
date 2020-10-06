@@ -2,30 +2,25 @@
 id: GivePlayerMoney
 title: GivePlayerMoney
 description: Give money to or take money from a player.
-tags: ['player']
+tags: ["player"]
 ---
-
 
 ## Description
 
 Give money to or take money from a player.
 
-
-| Name | Description |
-|------|-------------|
-|playerid | The ID of the player to give money to or take money from.|
-|money | The amount of money to give the player. Use a minus value to take money.|
-
+| Name     | Description                                                              |
+| -------- | ------------------------------------------------------------------------ |
+| playerid | The ID of the player to give money to or take money from.                |
+| money    | The amount of money to give the player. Use a minus value to take money. |
 
 ## Returns
 
- 1: The function was executed successfully. 
+1: The function was executed successfully.
 
- 0: The function failed to execute. This means the player is not connected.
-
+0: The function failed to execute. This means the player is not connected.
 
 ## Examples
-
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -42,9 +37,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-
 ## Related Functions
 
-
--  ResetPlayerMoney: Set the money of a player to $0.
--  GetPlayerMoney: Check how much money a player has.
+- [ResetPlayerMoney](ResetPlayerMoney.md): Set the money of a player to \$0.
+- [GetPlayerMoney](GetPlayerMoney.md): Check how much money a player has.

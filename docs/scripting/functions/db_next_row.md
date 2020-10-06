@@ -1,65 +1,111 @@
 ---
 id: db_next_row
 title: db_next_row
-description: Moves to the next row of the result allocated from db_query.
-tags: ["sqlite"]
+description: Moves to the next row of the result set allocated with `db_query`.
+keywords:
+  - sqlite
 ---
 
 :::warning
 
-This function starts with lowercase letter.
+The function starts with a lowercase letter.
 
 :::
 
 ## Description
 
-Moves to the next row of the result allocated from db_query.
+The function moves to the next row of the result set allocated with [db_query](db_query).
 
-| Name              | Description             |
-| ----------------- | ----------------------- |
-| DBResult:dbresult | The result of db_query. |
+| Name              | Description                         |
+| ----------------- | ----------------------------------- |
+| DBResult:dbresult | The result of [db_query](db_query). |
 
 ## Returns
 
-Returns 1 on success, otherwise 0 if DBResult:dbresult is a NULL reference or the last row is reached.
+Returns 1 if result set handle is valid and the last row is not reached yet, otherwise 0.
 
 ## Examples
 
 ```c
-// Callback
-public OnPlayerCommandText(playerid, cmdtext[])
+// examples.inc
+
+// ...
+
+Examples_ListNames(DB:dbConnectionHandle)
 {
-    // If "cmdtext" equals "/EchoWoetJoinList"
-    if(!strcmp(cmdtext, "/EchoWoetJoinList", true, 17))
+    // Database result set
+    new DBResult:db_result_set = db_query("SELECT `name` FROM `examples`");
+
+    // If database result set is valid
+    if (db_result_set)
     {
-        // Declare "db_result" and "info"
-        new DBResult:db_result, info[2][30];
+        // Allocate some memory to store results
+        new result[256];
 
-        // Select the join list of the player "Woet"
-        db_result = db_query(db_handle, "SELECT * FROM `join_log` WHERE `name`='Woet'");
-
-        // Do these
+        // Do operations
         do
         {
-            // Store the data of "ip" into "info[0]"
-            db_get_field_assoc(db_result, "ip", info[0], sizeof info[]);
-
-            // Store the data of "time" into "info[1]"
-            db_get_field_assoc(db_result, "time", info[1], sizeof info[]);
-
-            // Print into the console
-            printf("Print join list: Name: Woet IP: %s Date: %s", info[0], info[1]);
+            // Add value from "example" field to the return value variable
+            db_get_field_assoc(db_result_set, "name", result, sizeof result);
         }
 
-        // While next row has been fetched
-        while(db_next_row(db_result));
+        // While next row could be fetched
+        while (db_next_row(db_result_set));
 
-        // Returns 1
-        return 1;
+        // Free result set
+        db_free_result(db_result_set);
+    }
+}
+```
+
+```c
+// mode.pwn
+
+// ...
+
+#include <examples>
+
+static DB:gDBConnectionHandle;
+
+// ...
+
+public OnGameModeInit()
+{
+    // ...
+
+    // Create a connection to a database
+    gDBConnectionHandle = db_open("example.db");
+
+    // If connection to the database exists
+    if (gDBConnectionHandle)
+    {
+        // Successfully created a connection to the database
+        print("Successfully created a connection to database \"example.db\".");
+        Examples_ListNames(gDBConnectionHandle);
+    }
+    else
+    {
+        // Failed to create a connection to the database
+        print("Failed to open a connection to database \"example.db\".");
     }
 
-    // Returns 0
-    return 0;
+    // ...
+
+    return 1;
+}
+
+public OnGameModeExit()
+{
+    // Close the connection to the database if connection is open
+    if (db_close(gDBConnectionHandle))
+    {
+        // Extra cleanup
+        gDBConnectionHandle = DB:0;
+    }
+
+    // ...
+
+    return 1;
 }
 ```
 
@@ -67,28 +113,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
-references.
+Using an invalid handle other than zero will crash your server!
+Get a valid database connection handle by using [db_query](db_query).
 
 :::
 
 ## Related Functions
 
-- db_open: Open a connection to an SQLite database
-- db_close: Close the connection to an SQLite database
-- db_query: Query an SQLite database
-- db_free_result: Free result memory from a db_query
-- db_num_rows: Get the number of rows in a result
-- db_next_row: Move to the next row
-- db_num_fields: Get the number of fields in a result
-- db_field_name: Returns the name of a field at a particular index
-- db_get_field: Get content of field with specified ID from current result row
-- db_get_field_assoc: Get content of field with specified name from current result row
-- db_get_field_int: Get content of field as an integer with specified ID from current result row
-- db_get_field_assoc_int: Get content of field as an integer with specified name from current result row
-- db_get_field_float: Get content of field as a float with specified ID from current result row
-- db_get_field_assoc_float: Get content of field as a float with specified name from current result row
-- db_get_mem_handle: Get memory handle for an SQLite database that was opened with db_open.
-- db_get_result_mem_handle: Get memory handle for an SQLite query that was executed with db_query.
-- db_debug_openfiles
-- db_debug_openresults
+_Replace me_

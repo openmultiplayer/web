@@ -22,7 +22,9 @@ Toggles a player object camera collision.
 
 ## Returns
 
-1 - Regardless of if the object exists or not.
+1: The function was executed successfully.
+
+0: The function failed to execute. The object specified does not exist.
 
 ## Examples
 
@@ -49,4 +51,4 @@ This does not work inside the normal SA map boundaries.
 
 ## Related Functions
 
-- SetObjectNoCameraCol: Disables collisions between camera and object.
+- [SetObjectNoCameraCol](SetObjectNoCameraCol.md): Disables collisions between camera and object.

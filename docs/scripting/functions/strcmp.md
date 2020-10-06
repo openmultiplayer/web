@@ -53,20 +53,19 @@ if(!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
 :::warning
 
-This function returns 0 if either string is empty. Check for null strings with isnull().
-If you compare strings from a text file, you should take in to account the 'carriage return' and 'new line' special characters (\r \n), as they are included, when using fread.
+This function returns 0 if either string is empty. Check for null strings with isnull(). If you compare strings from a text file, you should take in to account the 'carriage return' and 'new line' special characters (\r \n), as they are included, when using fread.
 
 :::
 
 ## Related Functions
 
-- strfind: Search for a string in another string.
-- strtok: Get the next 'token' (word/parameter) in a string.
-- strdel: Delete part of a string.
-- strins: Insert text into a string.
-- strlen: Get the length of a string.
-- strmid: Extract part of a string into another string.
-- strpack: Pack a string into a destination string.
-- strval: Convert a string into an integer.
-- strcat: Concatenate two strings into a destination reference.
+- [strfind](strfind): Search for a string in another string.
+- [strtok](strtok): Get the next 'token' (word/parameter) in a string.
+- [strdel](strdel): Delete part of a string.
+- [strins](../function/strins): Insert text into a string.
+- [strlen](../function/strlen): Get the length of a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.
 - http://www.compuphase.com/pawn/String_Manipulation.pdf

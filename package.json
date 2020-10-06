@@ -30,6 +30,6 @@
     ]
   },
   "prettier": {
-    "proseWrap": "always"
+    "proseWrap": "never"
   }
 }
