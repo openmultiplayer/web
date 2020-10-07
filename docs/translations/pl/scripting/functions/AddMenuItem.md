@@ -1,6 +1,6 @@
 ---
 id: AddMenuItem
-title	: AddMenuItem
+title: AddMenuItem
 description: Dodaje 'przedmiot' do wyznaczonego menu.
 Tags: ["menu"]
 ---
@@ -9,11 +9,11 @@ Tags: ["menu"]
 
 Dodaje 'przedmiot/slot' do wyznaczonego menu.
 
-| Nazwa   | Description                      |
-| ------- | -------------------------------- |
-| menuid  | ID Menu przedmiotu który ma zostać dodany   |
-| kolumna  | Wartość kolumny do której dodajemy slot/przedmiot.   |
-| tytuł[] | Tytuł nowego menu dla przedmiotu. |
+| Nazwa   | Description                                        |
+| ------- | -------------------------------------------------- |
+| menuid  | ID Menu przedmiotu który ma zostać dodany          |
+| kolumna | Wartość kolumny do której dodajemy slot/przedmiot. |
+| tytuł[] | Tytuł nowego menu dla przedmiotu.                  |
 
 ## Zwracana wartość
 
