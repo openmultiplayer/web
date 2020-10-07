@@ -5,11 +5,9 @@ description: This callback is called when an actor is streamed in by a player's 
 tags: []
 ---
 
-:::warning
+import Warning from '../../meta/templates/\_version-warning-0.3.7.md'
 
-This function was added in SA-MP 0.3.7 and will not work in earlier versions!
-
-:::
+<Warning/>
 
 ## Description
 
