@@ -22,17 +22,17 @@ Show a gangzone for a player. Must be created with GangZoneCreate first.
 ## Examples
 
 ```c
-new Zone;
+new gGangZoneId;
 
 public OnGameModeInit()
 {
-    Zone = GangZoneCreate(1082.962, -2787.229, 2942.549, -1859.51);
+    gGangZoneId = GangZoneCreate(1082.962, -2787.229, 2942.549, -1859.51);
     return 1;
 }
 
 public OnPlayerSpawn(playerid)
 {
-    GangZoneShowForPlayer(playerid, Zone, 0xFFFF0096);
+    GangZoneShowForPlayer(playerid, gGangZoneId, 0xFFFF0096);
     return 1;
 }
 ```

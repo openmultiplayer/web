@@ -28,7 +28,7 @@ The ID of the player the playerid is looking at
 ```c
 new playerTarget = GetPlayerCameraTargetPlayer(playerid);
 
-if(IsPlayerAdmin(playerTarget))
+if (IsPlayerAdmin(playerTarget))
 {
     GameTextForPlayer(playerid, "Looking at an admin", 3000, 3);
 }

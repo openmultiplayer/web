@@ -22,7 +22,10 @@ Checks if the given object ID is valid for the given player.
 
 ```c
 // Check if an object is valid (exists) before we delete it
-if(IsValidPlayerObject(playerid, objectid)) DestroyPlayerObject(playerid, objectid);
+if (IsValidPlayerObject(playerid, objectid))
+{
+	DestroyPlayerObject(playerid, objectid);
+}
 ```
 
 ## Related Functions

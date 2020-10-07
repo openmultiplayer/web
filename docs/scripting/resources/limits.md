@@ -29,6 +29,7 @@ tags: []
 | Attached player objects                                       | 10              |
 | Player Variables                                              | 800             |
 | Actors (since 0.3.7) (4)(5)                                   | 1000            |
+| Explosions                                                    | 10              |
 
 ## Server Properties
 

@@ -12,7 +12,7 @@ Ends the current gamemode.
 ## Examples
 
 ```c
-if(OneTeamHasWon)
+if (OneTeamHasWon)
 {
     GameModeExit();
 }

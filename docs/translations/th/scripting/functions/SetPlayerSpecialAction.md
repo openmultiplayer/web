@@ -23,7 +23,7 @@ This function allows to set players special action.
 ## ตัวอย่าง
 
 ```c
-if(strcmp(cmd, "/handsup", true) == 0)
+if (strcmp(cmd, "/handsup", true) == 0)
 {
     SetPlayerSpecialAction(playerid,SPECIAL_ACTION_HANDSUP);
     return 1;

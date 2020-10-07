@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/spin", cmdtext))
     {
-    if(IsPlayerInAnyVehicle(playerid))
+    if (IsPlayerInAnyVehicle(playerid))
         SetVehicleAngularVelocity(GetPlayerVehicleID(playerid), 0.0, 0.0, 2.0);
     return 1;
     }

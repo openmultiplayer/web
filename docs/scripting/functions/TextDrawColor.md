@@ -21,12 +21,12 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:Example;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    Example = TextDrawCreate(123.0, 123.0, "Example");
-    TextDrawColor(Example, 0x000000FF);
+    gMyTextdraw = TextDrawCreate(123.0, 123.0, "Example");
+    TextDrawColor(gMyTextdraw, 0x000000FF);
     return 1;
 }
 ```

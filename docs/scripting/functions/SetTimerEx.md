@@ -47,7 +47,6 @@ public OnPlayerSpawn(playerid)
 
 // Forward (make public) the function so the server can 'see' it
 forward EndAntiSpawnKill(playerid);
-
 // The timer function - the code to be executed when the timer is called goes here
 public EndAntiSpawnKill(playerid)
 {

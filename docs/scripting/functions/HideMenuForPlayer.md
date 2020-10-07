@@ -23,9 +23,9 @@ Hides a menu for a player.
 ## Examples
 
 ```c
-if(strcmp(cmdtext, "/menuhide", true) == 0)
+if (strcmp(cmdtext, "/menuhide", true) == 0)
 {
-    new Menu:myMenu = GetPlayerMenu(playerid);
+    new Menu: myMenu = GetPlayerMenu(playerid);
     HideMenuForPlayer(myMenu, playerid);
     return 1;
 }

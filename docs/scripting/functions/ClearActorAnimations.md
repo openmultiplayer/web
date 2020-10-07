@@ -28,18 +28,18 @@ Clear any animations applied to an actor.
 ## Examples
 
 ```c
-new MyActor;
+new gMyActor;
 
 public OnGameModeInit()
 {
-    MyActor = CreateActor(...);
+    gMyActor = CreateActor(...);
 }
 
 // Somewhere else
-ApplyActorAnimation(MyActor, ...);
+ApplyActorAnimation(gMyActor, ...);
 
 // Somewhere else
-ClearActorAnimations(MyActor);
+ClearActorAnimations(gMyActor);
 ```
 
 ## Related Functions

@@ -30,13 +30,13 @@ If PlayerTextDrawSetOutline is used with size > 0, the outline color will match 
 ## Examples
 
 ```c
-new PlayerText:MyTextdraw;
+new PlayerText:gMyTextdraw;
 
 public OnPlayerConnect(playerid)
 {
-    MyTextdraw = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");
-    PlayerTextDrawUseBox(playerid, MyTextdraw, 1);
-    PlayerTextDrawBackgroundColor(playerid, MyTextdraw, 0xFFFFFFFF); // Set the background color of MyTextdraw to white
+    gMyTextdraw = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");
+    PlayerTextDrawUseBox(playerid, gMyTextdraw, 1);
+    PlayerTextDrawBackgroundColor(playerid, gMyTextdraw, 0xFFFFFFFF); // Set the background color of gMyTextdraw to white
     return 1;
 }
 ```

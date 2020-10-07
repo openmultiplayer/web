@@ -73,21 +73,21 @@ if (0 < idx < 5)
 
 Os símbolos a seguir são os que você pode utilizar em comparações, ao lado suas explicações. Alguns já foram utilizados em exemplos. Atente-se pois utilizamos "Esquerda" para indicar o valor que está ao lado esquerdo do operador, e "Direita" para indicar o valor que está ao lado direito do operador.
 
-| Operador | Significado | Uso |
-| --- | --- | --- |
-| == | Esquerda é igual a Direita | if (Esquerda == Direita) |
-| != | Esquerda não é igual a Direita | if (Esquerda != Direita) |
-| > | Esquerda é maior que a Direita | if (Esquerda > Direita) |
-| >= | Esquerda é maior que ou igual a Direita | if (Esquerda >= Direita) |
-| < | Esquerda é menor que a Direita | if (Esquerda < Direita) |
-| <= | Esquerda é menor ou igual a Direita | if (Esquerda <= Direita) |
-| && | e | if (Esquerda && Direita) |
-| &#124;&#124; | ou | if (Esquerda &#124;&#124; Direita) |
-| ! | não | if (!Variável) |
-|  | nem | if (!(Esquerda &#124;&#124; Direita)) |
-|  | e não | if (!(Esquerda && Direita)) |
-|  | exclusivamente ou (xor, eor) - apenas um ou outro é verdadeiro, ambos não | if (!(Esquerda && Direita) && (Esquerda &#124;&#124;Direita)) |
-|  | não exclusivamente ou (nxor, neor) - ambos ou nenhum são verdadeiros | if ((Esquerda && Direita) &#124;&#124; !(Esquerda &#124;&#124; Direita)) |
+| Operador     | Significado                                                               | Uso                                                                      |
+| ------------ | ------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| ==           | Esquerda é igual a Direita                                                | if (Esquerda == Direita)                                                 |
+| !=           | Esquerda não é igual a Direita                                            | if (Esquerda != Direita)                                                 |
+| >            | Esquerda é maior que a Direita                                            | if (Esquerda > Direita)                                                  |
+| >=           | Esquerda é maior que ou igual a Direita                                   | if (Esquerda >= Direita)                                                 |
+| <            | Esquerda é menor que a Direita                                            | if (Esquerda < Direita)                                                  |
+| <=           | Esquerda é menor ou igual a Direita                                       | if (Esquerda <= Direita)                                                 |
+| &&           | e                                                                         | if (Esquerda && Direita)                                                 |
+| &#124;&#124; | ou                                                                        | if (Esquerda &#124;&#124; Direita)                                       |
+| !            | não                                                                       | if (!Variável)                                                           |
+|              | nem                                                                       | if (!(Esquerda &#124;&#124; Direita))                                    |
+|              | e não                                                                     | if (!(Esquerda && Direita))                                              |
+|              | exclusivamente ou (xor, eor) - apenas um ou outro é verdadeiro, ambos não | if (!(Esquerda && Direita) && (Esquerda &#124;&#124;Direita))            |
+|              | não exclusivamente ou (nxor, neor) - ambos ou nenhum são verdadeiros      | if ((Esquerda && Direita) &#124;&#124; !(Esquerda &#124;&#124; Direita)) |
 
 ## `Parênteses`
 

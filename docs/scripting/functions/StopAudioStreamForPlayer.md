@@ -28,8 +28,8 @@ This function does not return any specific values.
 ```c
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-        // If the player exits a vehicle
-    if(oldstate == PLAYER_STATE_DRIVER || oldstate == PLAYER_STATE_PASSENGER)
+    // If the player exits a vehicle
+    if (oldstate == PLAYER_STATE_DRIVER || oldstate == PLAYER_STATE_PASSENGER)
     {
         StopAudioStreamForPlayer(playerid); // Stop the audio stream
     }

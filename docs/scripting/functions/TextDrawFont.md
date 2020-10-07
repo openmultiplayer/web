@@ -27,12 +27,12 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:MyTextdraw;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextdraw= TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawFont(MyTextdraw, 2);
+    gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
+    TextDrawFont(gMyTextdraw, 2);
     return 1;
 }
 ```

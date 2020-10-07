@@ -22,8 +22,8 @@ Shows a textdraw for all players.
 ## Examples
 
 ```c
-new Text:textid = TextDrawCreate(100.0, 100.0, "Hello!");
-TextDrawShowForAll(textid);
+new Text: textId = TextDrawCreate(100.0, 100.0, "Hello!");
+TextDrawShowForAll(textId);
 ```
 
 ## Related Functions

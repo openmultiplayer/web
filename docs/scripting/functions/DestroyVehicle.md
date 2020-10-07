@@ -24,7 +24,7 @@ Destroy a vehicle. It will disappear instantly.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-     if(strcmp(cmdtext, "/destroyveh", true) == 0)
+     if (strcmp(cmdtext, "/destroyveh", true) == 0)
      {
           new vehicleid = GetPlayerVehicleID(playerid);
           DestroyVehicle(vehicleid);

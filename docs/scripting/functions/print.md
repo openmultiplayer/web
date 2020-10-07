@@ -35,8 +35,4 @@ public OnGameModeInit( )
 
 ## Related Functions
 
-<<<<<<< HEAD
-
-- # [printf](printf.md): Print a formatted message into the server logs and console.
-- [printf](printf): Print a formatted message into the server logs and console.
-  > > > > > > > upstream/master
+- [printf](printf.md): Print a formatted message into the server logs and console.

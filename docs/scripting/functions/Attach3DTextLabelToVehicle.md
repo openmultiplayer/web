@@ -31,18 +31,19 @@ This function does not return any specific values.
 
 ```c
 new
-    Text3D:vehicle3Dtext[MAX_VEHICLES], // Creating the TextLabel for later use
-    vehicle_id;
+    Text3D:gVehicle3dText[MAX_VEHICLES], // Creating the TextLabel for later use
+    gVehicleId;
 
 public OnGameModeInit ( )
 {
-    vehicle_id = CreateVehicle( 510, 0.0. 0.0, 15.0, 5, 0, 120 ); // Creating the Vehicle.
-    vehicle3Dtext[ vehicle_id ] = Create3DTextLabel( "Example Text", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1 );
-    Attach3DTextLabelToVehicle( vehicle3Dtext[ vehicle_id ] , vehicle_id, 0.0, 0.0, 2.0); // Attaching Text Label To Vehicle.
+    gVehicleId = CreateVehicle(510, 0.0. 0.0, 15.0, 5, 0, 120); // Creating the Vehicle.
+    gVehicle3dText[gVehicleId] = Create3DTextLabel("Example Text", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1);
+    Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], vehicle_id, 0.0, 0.0, 2.0); // Attaching Text Label To Vehicle.
 }
+
 public OnGameModeExit ( )
 {
-    Delete3DTextLabel( vehicle3Dtext[ vehicle_id ] );
+    Delete3DTextLabel(gVehicle3dText[gVehicleId]);
     return true;
 }
 ```

@@ -20,10 +20,10 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new gangzone;
-gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
+new gangZoneId;
+gangZoneId = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 
-GangZoneDestroy(gangzone);
+GangZoneDestroy(gangZoneId);
 ```
 
 ## Related Functions

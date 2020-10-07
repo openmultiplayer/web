@@ -33,11 +33,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/velocity", cmdtext))
     {
-        new Float:Velocity[3], string[80];
-    GetPlayerVelocity(playerid, Velocity[0], Velocity[1], Velocity[2]);
-        format(string, sizeof(string), "You are going at a velocity of X: %f, Y: %f, Z: %f", Velocity[0], Velocity[1], Velocity[2]);
-        SendClientMessage(playerid, 0xFFFFFFFF, string);
-    return 1;
+        new
+            Float: playerVelocity[3],
+            message[80];
+
+        GetPlayerVelocity(playerid, playerVelocity[0], playerVelocity[1], playerVelocity[2]);
+        format(message, sizeof(message), "You are going at a velocity of X: %f, Y: %f, Z: %f", playerVelocity[0], playerVelocity[1], playerVelocity[2]);
+        SendClientMessage(playerid, 0xFFFFFFFF, message);
+        return 1;
     }
 }
 ```

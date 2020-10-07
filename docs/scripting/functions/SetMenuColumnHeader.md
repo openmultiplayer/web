@@ -22,16 +22,16 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Menu:TestMenu;
+new Menu: gTestMenu;
 
 // There are two rows in this menu
-TestMenu = CreateMenu("Menu Header", 2, 200.0, 100.0, 150.0, 150.0);
-SetMenuColumnHeader(TestMenu, 0, "Row 1");
-SetMenuColumnHeader(TestMenu, 1, "Row 2");
+gTestMenu = CreateMenu("Menu Header", 2, 200.0, 100.0, 150.0, 150.0);
+SetMenuColumnHeader(gTestMenu, 0, "Row 1");
+SetMenuColumnHeader(gTestMenu, 1, "Row 2");
 
 // Add menu items to it.
-AddMenuItem(TestMenu, 0, "Row1 Item1");
-AddMenuItem(TestMenu, 1, "Row2 Item1");
+AddMenuItem(gTestMenu, 0, "Row1 Item1");
+AddMenuItem(gTestMenu, 1, "Row2 Item1");
 ```
 
 ## Notes

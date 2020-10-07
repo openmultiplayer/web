@@ -28,7 +28,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/stopedit", true))
+    if (!strcmp(cmdtext, "/stopedit", true))
     {
         CancelEdit(playerid);
         SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: You stopped editing the object!");

@@ -22,7 +22,7 @@ The vehicle's model ID, or 0 if the vehicle doesn't exist.
 ```c
 public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
-    if(GetVehicleModel(vehicleid) == 411) // 411 is the Infernus model
+    if (GetVehicleModel(vehicleid) == 411) // 411 is the Infernus model
     {
         SendClientMessage(playerid, 0xFFFFFFFF, "Nice Infernus!");
     }

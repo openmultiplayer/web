@@ -28,10 +28,15 @@ The function itself returns a Unix Timestamp.
 ## Examples
 
 ```c
-new Hour, Minute, Second, Timestamp;
-Timestamp = gettime(Hour, Minute, Second);
-printf("%02d:%02d:%02d", Hour, Minute, Second);
-printf("Seconds since midnight 1st January 1970: %d", Timestamp);
+new
+	hours,
+	minutes,
+	seconds,
+	timestamp;
+
+timestamp = gettime(hours, minutes, seconds);
+printf("%02d:%02d:%02d", hours, minutes, seconds);
+printf("Seconds since midnight 1st January 1970: %d", timestamp);
 ```
 
 ## Notes

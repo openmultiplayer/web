@@ -20,9 +20,9 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new gangzone;
-gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
-GangZoneHideForAll(gangzone);
+new gGangZoneId;
+gGangZoneId = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
+GangZoneHideForAll(gGangZoneId);
 ```
 
 ## Related Functions

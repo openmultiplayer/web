@@ -26,7 +26,7 @@ The ID of the fighting style of the player.
 ## Examples
 
 ```c
-if(GetPlayerFightingStyle(playerid) == FIGHT_STYLE_NORMAL)
+if (GetPlayerFightingStyle(playerid) == FIGHT_STYLE_NORMAL)
 {
     SendClientMessage(playerid,0xFFFFFFAA,"You are using normal fighting style!");
 }

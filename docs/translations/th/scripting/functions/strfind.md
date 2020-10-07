@@ -29,7 +29,7 @@ The number of characters before the sub string (the sub string's start position)
 ## ตัวอย่าง
 
 ```c
-if(strfind("Are you in here?", "you", true) != -1) //returns 4, because the start of 'you' (y) is at index 4 in the string
+if (strfind("Are you in here?", "you", true) != -1) //returns 4, because the start of 'you' (y) is at index 4 in the string
 {
     SendClientMessageToAll(0xFFFFFFFF, "I found you!");
 }

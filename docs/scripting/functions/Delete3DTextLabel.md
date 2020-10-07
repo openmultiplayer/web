@@ -26,11 +26,11 @@ Delete a 3D text label (created with Create3DTextLabel).
 ## Examples
 
 ```c
-new Text3D:MyLabel;
+new Text3D:gMyLabel;
 
-MyLabel = Create3DTextLabel(...);
+gMyLabel = Create3DTextLabel(...);
 
-Delete3DTextLabel(MyLabel);
+Delete3DTextLabel(gMyLabel);
 ```
 
 ## Related Functions

@@ -27,9 +27,9 @@ This function always returns 0.
 ## Examples
 
 ```c
-new myobject;
-myobject = CreateObject(19341, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-AttachObjectToPlayer(myobject, playerid, 1.5, 0.5, 0.0, 0.0, 1.5, 2);
+new gMyObject;
+gMyObject = CreateObject(19341, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+AttachObjectToPlayer(gMyObject, playerid, 1.5, 0.5, 0.0, 0.0, 1.5, 2);
 ```
 
 ## Related Functions

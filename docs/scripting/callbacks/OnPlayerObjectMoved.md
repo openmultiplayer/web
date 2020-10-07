@@ -21,9 +21,9 @@ It is always called first in filterscripts.
 ## Examples
 
 ```c
-public OnPlayerObjectMoved(playerid,objectid)
+public OnPlayerObjectMoved(playerid, objectid)
 {
-    printf("Player object moved: objectid: %d playerid: %d",objectid,playerid);
+    printf("Player object moved: objectid: %d playerid: %d", objectid, playerid);
     return 1;
 }
 ```

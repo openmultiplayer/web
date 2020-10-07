@@ -25,11 +25,12 @@ The player's armour is stored in the specified variable.
 ## Examples
 
 ```c
-new Float:armour;
+new
+	Float:armour,
+	string[40];
 GetPlayerArmour(playerid, armour);
-new s[40];
-format(s, sizeof(s), "SERVER: Your armour is %0.f percent", armour);
-SendClientMessage(playerid, 0xFFFFFFAA, s);
+format(string, sizeof string, "SERVER: Your armour is %0.f percent", armour);
+SendClientMessage(playerid, 0xFFFFFFAA, string);
 ```
 
 ## Notes

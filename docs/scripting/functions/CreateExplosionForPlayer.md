@@ -33,9 +33,9 @@ This function always returns 1, even if the function failed to excute (player do
 ```c
 if (strcmp(cmdtext, "/burnme", true) == 0)
 {
-    new Float:POS[3];
-    GetPlayerPos(playerid, POS[0], POS[1], POS[2]);
-    CreateExplosionForPlayer(playerid, POS[0], POS[1], POS[2], 1, 10.0);
+    new Float: playerPos[3];
+    GetPlayerPos(playerid, playerPos[0], playerPos[1], playerPos[2]);
+    CreateExplosionForPlayer(playerid, playerPos[0], playerPos[1], playerPos[2], 1, 10.0);
     return 1;
 }
 ```

@@ -21,21 +21,24 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:himessage;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    himessage = TextDrawCreate(1.0, 5.6, "Hi, how are you?");
+    gMyTextdraw = TextDrawCreate(1.0, 5.6, "Hi, how are you?");
     return 1;
 }
 
 public OnPlayerConnect(playerid)
 {
-    new newtext[41], name[MAX_PLAYER_NAME];
-    GetPlayerName(playerid, name, MAX_PLAYER_NAME);
-    format(newtext, sizeof(newtext), "Hi %s, how are you?", name);
-    TextDrawSetString(himessage, newtext);
-    TextDrawShowForPlayer(playerid, himessage);
+    new
+        message[64],
+        playerName[MAX_PLAYER_NAME];
+
+    GetPlayerName(playerid, playerName, sizeof playerName);
+    format(message, sizeof(message), "Welcome %s!", playerName);
+    TextDrawSetString(gMyTextdraw, message);
+    TextDrawShowForPlayer(playerid, gMyTextdraw);
     return 1;
 }
 ```

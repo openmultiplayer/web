@@ -29,7 +29,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp("/enter", cmdtext))
+    if (!strcmp("/enter", cmdtext))
     {
         SetPlayerInterior(playerid, 5);
         SetPlayerPos(playerid, 372.5565, -131.3607, 1001.4922);

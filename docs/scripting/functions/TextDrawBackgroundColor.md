@@ -21,13 +21,13 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:MyTextdraw;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextdraw= TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawUseBox(MyTextdraw, 1);
-    TextDrawBackgroundColor(MyTextdraw, 0xFFFFFFFF); // Set the background color of MyTextdraw to white
+    gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
+    TextDrawUseBox(gMyTextdraw, 1);
+    TextDrawBackgroundColor(gMyTextdraw, 0xFFFFFFFF); // Set the background color of MyTextdraw to white
     return 1;
 }
 ```

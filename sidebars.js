@@ -19,7 +19,12 @@ function parseDir(filename) {
     // it's a directory inside `docs` folder
     else {
       info.type = "category";
-      const catName = path.basename(filename);
+      let catName = path.basename(filename);
+
+      if (catName[0] == "_") {
+        catName = catName.substring(1);
+      }
+      catName = catName.replace("_", " ");
 
       if (CATEGORY_NAME_CAPITALIZATION) {
         info.label = catName.charAt(0).toUpperCase() + catName.substring(1);
@@ -69,7 +74,9 @@ function parseDir(filename) {
     tmpPath.splice(0, 1);
     let docPath = "";
     tmpPath.map((name) => (docPath = docPath + name + "/"));
-    return docPath + path.basename(filename).replace(".md", "");
+    return (
+      docPath + path.basename(filename).replace(".mdx", "").replace(".md", "")
+    );
   }
   return info;
 }

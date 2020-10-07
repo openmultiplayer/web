@@ -45,7 +45,7 @@ GetNameBySpawnID(spawn_id)
     db_result = db_query(db_handle, query);
 
     // If there is any valid entry
-    if(db_num_rows(db_result))
+    if (db_num_rows(db_result))
     {
         // Store data from "PlayerName" into "p_name"
         db_get_field_assoc(db_result, "PlayerName", p_name, sizeof p_name);

@@ -35,7 +35,7 @@ Replace the texture of an object with the texture from another model in the game
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext,"/mycommand",true))
+    if (!strcmp(cmdtext,"/mycommand",true))
     {
         new Float:X, Float:Y, Float:Z;
         new myobject;

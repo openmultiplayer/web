@@ -31,7 +31,8 @@ Returns the smallest of a and b. If both are equivalent, a is returned.
 
 public OnGameModeInit()
 {
-    new a, b, result;
+    new
+        a, b, result;
     a = 5;
     b = 10;
     result = max(a,b);

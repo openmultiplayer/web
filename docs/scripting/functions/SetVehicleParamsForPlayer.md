@@ -39,12 +39,12 @@ SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iB
 // Locks own car for all players, except the player who used the command.
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext,"/lock",true))
+    if (!strcmp(cmdtext,"/lock",true))
     {
-        if(!IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid,0xFFFFFFAA,"You have to be inside a vehicle.");
-        for(new i=0; i < MAX_PLAYERS; i++)
+        if (!IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid,0xFFFFFFAA,"You have to be inside a vehicle.");
+        for (new i = 0; i < MAX_PLAYERS; i++)
         {
-            if(i == playerid) continue;
+            if (i == playerid) continue;
             SetVehicleParamsForPlayer(GetPlayerVehicleID(playerid),i,0,1);
         }
         return 1;
@@ -85,7 +85,7 @@ public OnGameModeInit() //Or another callback
 //Whatever your want
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {
-    if(vehicleid == myMarkedCar)
+    if (vehicleid == myMarkedCar)
     {
         SetVehicleParamsForPlayer(myMarkedCar, forplayerid, 1, 0); // marker can be visible only if the vehicle streamed for player
     }

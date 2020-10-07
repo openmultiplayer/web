@@ -26,8 +26,11 @@ The ID of the vehicle that the player is surfing. If they are not surfing a vehi
 ## Examples
 
 ```c
-new surf = GetPlayerSurfingVehicleID(playerid);
-if(surf == INVALID_VEHICLE_ID) SendClientMessage(playerid, COLOR_RED, "You are not surfing.");
+new surfingVehicleId = GetPlayerSurfingVehicleID(playerid);
+if (surfingVehicleId == INVALID_VEHICLE_ID)
+{
+	SendClientMessage(playerid, COLOR_RED, "You are not surfing.");
+}
 ```
 
 ## Related Functions

@@ -32,7 +32,7 @@ The distance between the player and the point as a float.
 /* when the player types '/vend' into the chat box, they'll see this.*/
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/vend", true) == 0)
+    if (strcmp(cmdtext, "/vend", true) == 0)
     {
         new
             Float: fDistance = GetPlayerDistanceFromPoint(playerid, 237.9, 115.6, 1010.2),

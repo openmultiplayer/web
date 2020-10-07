@@ -34,8 +34,14 @@ It is always called first in filterscripts.
 ```c
 public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 {
-    if(newstate) GameTextForPlayer(playerid, "~W~Siren ~G~on", 1000, 3);
-    else GameTextForPlayer(playerid, "~W~Siren ~r~off", 1000, 3);
+    if (newstate)
+    {
+        GameTextForPlayer(playerid, "~W~Siren ~G~on", 1000, 3);
+    }
+    else
+    {
+        GameTextForPlayer(playerid, "~W~Siren ~r~off", 1000, 3);
+    }
     return 1;
 }
 ```

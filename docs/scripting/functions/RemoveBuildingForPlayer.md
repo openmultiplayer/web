@@ -38,6 +38,7 @@ public OnPlayerConnect(playerid)
     RemoveBuildingForPlayer(playerid, 615, 0.0, 0.0, 0.0, 200.0);
     return 1;
 }
+
 public OnPlayerConnect(playerid)
 {
     // When the player connects, all map objects will be removed.

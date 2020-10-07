@@ -28,7 +28,7 @@ public OnGameModeInit()
 }
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmd, "/stopobject", true) == 0)
+    if (strcmp(cmd, "/stopobject", true) == 0)
     {
         StopObject(obj);
         return 1;

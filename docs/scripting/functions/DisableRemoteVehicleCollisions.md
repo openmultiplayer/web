@@ -31,7 +31,7 @@ Disables collisions between occupied vehicles for a player.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/collision", true))
+    if (!strcmp(cmdtext, "/collision", true))
     {
         new string[64];
 

@@ -34,6 +34,12 @@ if ( existproperty(0, "", 123984334) )
 }
 ```
 
+## Notes
+
+:::tip
+
+It is recommended to use the PVars/ SVars or GVar plugin instead of these natives for being very slow.
+
 ## Related Functions
 
 - [SetProperty](SetProperty): Set a property.

@@ -22,9 +22,11 @@ The amount of ammo in the player's current weapon.
 ```c
 ShowPlayerAmmo(playerid)
 {
-    new ammo = GetPlayerAmmo(playerid);
-    new infoString[16];
-    format(infoString, sizeof(infoString), "Ammo: %i", ammo);
+    new
+        plyAmmo = GetPlayerAmmo(playerid),
+        infoString[16];
+
+    format(infoString, sizeof(infoString), "Ammo: %i", plyAmmo);
     SendClientMessage(playerid, -1, infoString);
 }
 ```

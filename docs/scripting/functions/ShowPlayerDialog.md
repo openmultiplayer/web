@@ -37,12 +37,14 @@ Shows the player a synchronous (only one at a time) dialog box.
 // Define the dialog IDs either with an enum:
 enum
 {
+    DIALOG_NULL,
     DIALOG_LOGIN,
     DIALOG_WELCOME,
     DIALOG_WEAPONS
 }
 
 // Alternatively, using macros:
+#define DIALOG_NULL 0
 #define DIALOG_LOGIN 1
 #define DIALOG_WELCOME 2
 #define DIALOG_WEAPONS 3

@@ -28,7 +28,7 @@ The current game time is stored in the specified variables.
 ```c
 new hour, minutes;
 GetPlayerTime(playerid, hour, minutes);
-if(hour == 13 && minutes == 37)
+if (hour == 13 && minutes == 37)
 {
     SendClientMessage(playerid, COLOR_WHITE, "The time is 13:37!");
 }

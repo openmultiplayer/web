@@ -23,7 +23,7 @@ The value of the specified console variable. 0 if the specified console variable
 public OnGameModeInit()
 {
     new queryEnabled = GetConsoleVarAsBool("query");
-    if(!queryEnabled)
+    if (!queryEnabled)
     {
         print("WARNING: Querying is disabled. The server will appear offline in the server browser.");
     }

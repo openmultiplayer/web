@@ -28,11 +28,28 @@ The weapon's name is stored in the specified array.
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    new gunname[32], string[64], playername[MAX_PLAYER_NAME + 1], killername[MAX_PLAYER_NAME + 1];
-    GetWeaponName(reason, gunname, sizeof(gunname));
-    GetPlayerName(playerid, playername, sizeof(playername));
-    GetPlayerName(killerid, killername, sizeof(killername));
-    format(string, sizeof(string), "%s has wasted %s using a %s.", killername, playername, gunname);
+    // Variable declarations, with killerName having the default value of "World".
+    new
+        weaponName[32],
+        string[64],
+        playerName[MAX_PLAYER_NAME + 1],
+        killerName[MAX_PLAYER_NAME + 1] = "World";
+
+    // Get the weapon/ reason and player name
+    GetWeaponName(reason, weaponName, sizeof(weaponName));
+    GetPlayerName(playerid, playerName, sizeof(playerName));
+
+    // Check if the player was killed by another player or was it because of environment
+    if (killerid != INVALID_PLAYER_ID)
+    {
+        // We empty the killerName string by setting the first index to EOS (End of String)
+        killerName[0] = EOS;
+        // Get the killer's name
+        GetPlayerName(killerid, killerName, sizeof(killerName));
+    }
+
+    // Send a message to the public chat that the X has caused death of Y with Z as the reason
+    format(string, sizeof(string), "%s (%i) has wasted %s (%i) using a %s.", killerName, killerid, playerName, playerid, weaponName);
     SendClientMessageToAll(0xFFFFFFAA, string);
     return 1;
 }

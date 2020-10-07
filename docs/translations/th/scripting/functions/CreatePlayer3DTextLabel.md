@@ -35,7 +35,7 @@ The ID of the newly created Player 3D Text Label, or INVALID_3DTEXT_ID if the Pl
 ## ตัวอย่าง
 
 ```c
-if(strcmp(cmd, "/playerlabel", true) == 0)
+if (strcmp(cmd, "/playerlabel", true) == 0)
 {
     new PlayerText3D:playertextid;
     new Float:X, Float:Y, Float:Z;

@@ -21,9 +21,9 @@ This callback is called when a player object is moved after MovePlayerObject (wh
 ## ตัวอย่าง
 
 ```c
-public OnPlayerObjectMoved(playerid,objectid)
+public OnPlayerObjectMoved(playerid, objectid)
 {
-    printf("Player object moved: objectid: %d playerid: %d",objectid,playerid);
+    printf("Player object moved: objectid: %d playerid: %d", objectid, playerid);
     return 1;
 }
 ```

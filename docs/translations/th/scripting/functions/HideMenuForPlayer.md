@@ -23,7 +23,7 @@ Hides a menu for a player.
 ## ตัวอย่าง
 
 ```c
-if(strcmp(cmdtext, "/menuhide", true) == 0)
+if (strcmp(cmdtext, "/menuhide", true) == 0)
 {
     new Menu:myMenu = GetPlayerMenu(playerid);
     HideMenuForPlayer(myMenu, playerid);

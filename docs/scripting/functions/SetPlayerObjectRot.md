@@ -33,7 +33,7 @@ SetPlayerObjectRot(playerid, objectid, RotX, RotY, RotZ);
 
 :::tip
 
-To smoothly rotate an object, see MovePlayerObject.
+To smoothly rotate an object, see [MovePlayerObject](MovePlayerObject).
 
 :::
 

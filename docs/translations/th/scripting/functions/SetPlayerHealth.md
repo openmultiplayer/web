@@ -26,12 +26,12 @@ Set the health of a player.
 //Sets the players health to full
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp("/heal", cmdtext, true))
+    if (!strcmp("/heal", cmdtext, true))
     {
         SetPlayerHealth(playerid, 100.0);
         return 1;
     }
-    if(!strcmp("/kill", cmdtext, true))
+    if (!strcmp("/kill", cmdtext, true))
     {
         SetPlayerHealth(playerid, 0.0);
         return 1;

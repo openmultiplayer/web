@@ -22,7 +22,7 @@ This callback is called when a player leaves the checkpoint set for them by SetP
 ```c
 public OnPlayerLeaveCheckpoint(playerid)
 {
-    printf("Player %i left a checkpoint!",playerid);
+    printf("Player %i left a checkpoint!", playerid);
     return 1;
 }
 ```

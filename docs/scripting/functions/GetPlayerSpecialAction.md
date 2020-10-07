@@ -23,7 +23,7 @@ The special action of the player (see: [Special Actions](../resources/specialact
 public OnPlayerUpdate(playerid)
 {
     // Ban players if they have a jetpack
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_USEJETPACK)
+    if (GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_USEJETPACK)
     {
         Ban(playerid);
     }

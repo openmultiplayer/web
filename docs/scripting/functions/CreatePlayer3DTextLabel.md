@@ -35,12 +35,14 @@ The ID of the newly created Player 3D Text Label, or INVALID_3DTEXT_ID if the Pl
 ## Examples
 
 ```c
-if(strcmp(cmd, "/playerlabel", true) == 0)
+if (strcmp(cmd, "/playerlabel", true) == 0)
 {
-    new PlayerText3D:playertextid;
-    new Float:X, Float:Y, Float:Z;
-    GetPlayerPos( playerid, X, Y, Z );
-    playertextid = CreatePlayer3DTextLabel(playerid,"Hello\nI'm at your position",0x008080FF,X,Y,Z,40.0);
+    new
+        PlayerText3D: playerTextId,
+        Float: X, Float: Y, Float: Z;
+
+    GetPlayerPos(playerid, X, Y, Z);
+    playerTextId = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 0x008080FF, X, Y, Z, 40.0);
     return 1;
 }
 ```

@@ -28,7 +28,7 @@ An integer with the level of drunkenness of the player.
 ```c
 public OnPlayerStateChange(playerid, oldstate, newstate)
 {
-    if(newstate == PLAYER_STATE_DRIVER && GetPlayerDrunkLevel(playerid) > 1999)
+    if (newstate == PLAYER_STATE_DRIVER && GetPlayerDrunkLevel(playerid) > 1999)
     {
         SendClientMessage(playerid,0xFFFFFFFF,"Don't drink and drive!");
         RemovePlayerFromVehicle(playerid);

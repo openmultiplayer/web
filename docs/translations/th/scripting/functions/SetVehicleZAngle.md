@@ -25,7 +25,7 @@ Set the Z rotation (yaw) of a vehicle.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/flip", true) == 0)
+    if (strcmp(cmdtext, "/flip", true) == 0)
     {
         new currentveh;
         new Float:angle;

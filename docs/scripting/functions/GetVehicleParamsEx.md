@@ -37,7 +37,8 @@ The vehicle's parameters are stored in the referenced variables, not in the retu
 ## Examples
 
 ```c
-new engine, lights, alarm, doors, bonnet, boot, objective;
+new
+	engine, lights, alarm, doors, bonnet, boot, objective;
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 //This would cause all the variable above, to become the status of its subject.
 ```

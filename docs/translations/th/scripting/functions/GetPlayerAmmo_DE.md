@@ -22,7 +22,7 @@ Die Anzahl der Munition von der vom Spieler aktuell gehaltenen Waffe.
 ```c
 public OnPlayerUpdate(playerid)
 {
-    if(GetPlayerAmmo(playerid) > 25) // prüft ob die Munition des Spielers über 25 liegt.
+    if (GetPlayerAmmo(playerid) > 25) // prüft ob die Munition des Spielers über 25 liegt.
     {
         SetPlayerAmmo(playerid,25) // setzt die Munition zurück auf 25
     }

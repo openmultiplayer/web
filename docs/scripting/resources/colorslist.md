@@ -42,9 +42,16 @@ Since the colors are just numbers you have to convert them sometimes from an inp
 ```c
 stock HexToInt(string[])
 {
-    if(!string[0]) return 0;
-    new cur = 1, res = 0;
-    for(new i = strlen(string); i > 0; i--)
+    if (!string[0])
+    {
+        return 0;
+    }
+
+    new
+        cur = 1,
+        res = 0;
+
+    for (new i = strlen(string); i > 0; i--)
     {
         res += cur * (string[i - 1] - ((string[i - 1] < 58) ? (48) : (55)));
         cur = cur * 16;

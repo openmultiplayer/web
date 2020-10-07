@@ -32,7 +32,7 @@ SetPlayerPosFindZ(playerid, 1234.5, 1234.5, 1000.0);
 
 :::warning
 
-This function does not work if the new coordinates are far away from where the player currently is. The Z height will be 0, which will likely put them underground. It is highly recommended that the MapAndreas plugin be used instead.
+This function does not work if the new coordinates are far away from where the player currently is. The Z height will be 0, which will likely put them underground. It is highly recommended that the MapAndreas or ColAndreas plugin be used instead.
 
 :::
 

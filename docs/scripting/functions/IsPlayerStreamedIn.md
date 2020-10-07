@@ -29,7 +29,10 @@ Checks if a player is streamed in another player's client.
 ## Examples
 
 ```c
-if(IsPlayerStreamedIn(playerid, 0)) SendClientMessage(playerid, -1, "ID 0 can see you.");
+if (IsPlayerStreamedIn(playerid, 0))
+{
+	SendClientMessage(playerid, -1, "ID 0 can see you.");
+}
 ```
 
 ## Notes

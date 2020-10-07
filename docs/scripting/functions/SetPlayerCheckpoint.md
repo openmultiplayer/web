@@ -29,22 +29,22 @@ Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the rada
 // In this example the player's checkpoint will be set when they spawn.
 // On entering the checkpoint they will receive $1000 and the checkpoint will be disabled.
 
-new bool:onCheck[MAX_PLAYERS];
+new bool: gOnCheck[MAX_PLAYERS];
 
 public OnPlayerSpawn(playerid)
 {
     SetPlayerCheckpoint(playerid, 1982.6150, -220.6680, -0.2432, 3.0);
-    onCheck[playerid] = true;
+    gOnCheck[playerid] = true;
     return 1;
 }
 
 public OnPlayerEnterCheckpoint(playerid)
 {
-    if(onCheck[playerid]) // if it's true
+    if (gOnCheck[playerid]) // if it's true
     {
         GivePlayerMoney(playerid, 1000);
         DisablePlayerCheckpoint(playerid);
-        onCheck[playerid] = false;
+        gOnCheck[playerid] = false;
     }
     return 1;
 }

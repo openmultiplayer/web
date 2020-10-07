@@ -28,7 +28,7 @@ The player's [connection status](../resources/connectionstatus.md), as an intege
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/connectionstatus"))
+    if (!strcmp(cmdtext, "/connectionstatus"))
     {
         new szString[144];
         format(szString, sizeof(szString), "Your current connection status: %i.", NetStats_ConnectionStatus(playerid));

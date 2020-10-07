@@ -4,7 +4,7 @@ description: A list of sound IDs to be used with PlayerPlaySound.
 ---
 
 To be used with
-[PlayerPlaySound](/web/20190415120046/https://wiki.sa-mp.com/wiki/PlayerPlaySound "PlayerPlaySound").
+[PlayerPlaySound](../functions/PlayerPlaySound "PlayerPlaySound").
 
 For [crime report sound IDs](../functions/PlayCrimeReportForPlayer) check
 [here](crimelist).
@@ -18,7 +18,7 @@ You have to use sound ID **0** to stop the sound ID that is currently playing.
 :::caution Since **0.3.7-R2**:
 
 - Sound ID **1** can be used to disable the
-  [interior 0 (default)](/web/20190415120046/https://wiki.sa-mp.com/wiki/SetPlayerInterior "SetPlayerInterior")
+  [interior 0 (default)](../functions/SetPlayerInterior "SetPlayerInterior")
   ambience track (wind noise). _Hint: it can help to create more realistically
   fake interiors._
 - Sound ID **0** can be used additionally to return the game's normal outdoor

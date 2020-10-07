@@ -29,10 +29,10 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/attach", false))
+    if (!strcmp(cmdtext, "/attach", false))
     {
-        new object = CreateObject(1245, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0);
-        AttachCameraToObject(playerid, object);
+        new objectId = CreateObject(1245, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0);
+        AttachCameraToObject(playerid, objectId);
         SendClientMessage(playerid, 0xFFFFFFAA, "Your camera is attached on object now.");
         return 1;
     }

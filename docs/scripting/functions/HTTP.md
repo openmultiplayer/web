@@ -34,7 +34,7 @@ forward MyHttpResponse(index, response_code, data[]);
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp("/hello",cmdtext,true))
+    if (!strcmp("/hello",cmdtext,true))
     {
         HTTP(playerid, HTTP_GET, "kc.gd/hello.txt", "", "MyHttpResponse");
         return 1;
@@ -47,7 +47,7 @@ public MyHttpResponse(index, response_code, data[])
     // In this callback "index" would normally be called "playerid" ( if you didn't get it already:) )
     new
         buffer[ 128 ];
-    if(response_code == 200) //Did the request succeed?
+    if (response_code == 200) //Did the request succeed?
     {
         //Yes!
         format(buffer, sizeof(buffer), "The URL replied: %s", data);

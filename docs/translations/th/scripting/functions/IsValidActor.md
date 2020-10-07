@@ -33,7 +33,7 @@ new MyActor;
 public OnGameModeInit()
 {
     MyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
-    if(IsValidActor(MyActor))
+    if (IsValidActor(MyActor))
     {
         SetActorHealth(MyActor, 100);
     }

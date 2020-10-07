@@ -20,8 +20,9 @@ The vehicle ID of the trailer or 0 if no trailer is attached.
 ## Examples
 
 ```c
-new trailerid = GetVehicleTrailer(vehicleid);
-DetachTrailerFromVehicle(trailerid);
+new
+	trailerId = GetVehicleTrailer(vehicleid);
+DetachTrailerFromVehicle(trailerId);
 ```
 
 ## Notes

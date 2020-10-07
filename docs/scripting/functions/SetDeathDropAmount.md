@@ -24,7 +24,7 @@ public OnGameModeInit()
 {
     SetDeathDropAmount(5000);
 
-    //MORE CODE
+    // MORE CODE
 
     return 1;
 }

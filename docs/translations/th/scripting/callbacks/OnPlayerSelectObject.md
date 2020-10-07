@@ -39,7 +39,7 @@ This callback is called when a player selects an object after SelectObject has b
 public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ)
 {
     printf("Player %d selected object %d", playerid, objectid);
-    if(type == SELECT_OBJECT_GLOBAL_OBJECT)
+    if (type == SELECT_OBJECT_GLOBAL_OBJECT)
     {
         EditObject(playerid, objectid);
     }

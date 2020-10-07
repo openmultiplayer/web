@@ -22,7 +22,7 @@ false if player isn't in his checkpoint else true
 ```c
 if (IsPlayerInCheckpoint(playerid))
 {
-  SetPlayerHealth(playerid, 100.0);
+    SetPlayerHealth(playerid, 100.0);
 }
 ```
 

@@ -41,8 +41,8 @@ This function defines the clickable area for use with PlayerTextDrawSetSelectabl
 ## Examples
 
 ```c
-MyTextDraw = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Example TextDraw");
-PlayerTextDrawTextSize(playerid, MyTextDraw, 2.0, 3.6);
+MyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Example TextDraw");
+PlayerTextDrawTextSize(playerid, MyTextDraw[playerid], 2.0, 3.6);
 ```
 
 ## Notes

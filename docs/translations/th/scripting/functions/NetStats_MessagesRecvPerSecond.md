@@ -28,7 +28,7 @@ the number of messages the player has received in the last second.
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/msgpersec"))
+    if (!strcmp(cmdtext, "/msgpersec"))
     {
         new szString[144];
         format(szString, sizeof(szString), "You have received %i network messages in the last second.", NetStats_MessagesRecvPerSecond(playerid));

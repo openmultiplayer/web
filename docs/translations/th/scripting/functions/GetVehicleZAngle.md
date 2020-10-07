@@ -27,7 +27,7 @@ The vehicle's rotation is stored in the specified variable.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-     if(strcmp(cmdtext, "/vehrot", true) == 0)
+     if (strcmp(cmdtext, "/vehrot", true) == 0)
      {
           new currentveh;
           new Float:z_rot;

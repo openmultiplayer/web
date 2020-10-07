@@ -11,6 +11,12 @@ This function was added in SA-MP 0.3a and will not work in earlier versions!
 
 :::
 
+:::tip
+
+For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus.md).
+
+:::
+
 ## Description
 
 Sets the various visual damage statuses of a vehicle, such as popped tires, broken lights and damaged panels.
@@ -30,18 +36,11 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new panels, doors, lights, tires;
+new
+	panels, doors, lights, tires;
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, 15); //Setting tires to 15 will pop them all
+UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, 15); // Setting tires to 15 will pop them all
 ```
-
-## Notes
-
-:::tip
-
-For some useful functions for working with vehicle damage values, see here.
-
-:::
 
 ## Related Functions
 

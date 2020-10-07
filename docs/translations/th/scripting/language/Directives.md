@@ -63,7 +63,7 @@ printf("%d", 7);
 This is why all defines are lost in decompilation as they don't exist when the code is compiled (all directives are pre-processed). Defines don't have to contain numbers:
 
 ```c
-#define PL new i = 0; i < MAX_PLAYERS; i++) if(IsPlayerConnected(i)
+#define PL new i = 0; i < MAX_PLAYERS; i++) if (IsPlayerConnected(i)
 
 for(PL) printf("%d connected", i);
 ```
@@ -75,7 +75,7 @@ Another little known fact about defines is that they can be multi-line if you es
 ```c
 #define PL \
         new i = 0; i < MAX_PLAYERS; i++) \
-                if(IsPlayerCOnnected(i)
+                if (IsPlayerConnected(i)
 
 printf("%d", MOO(6));
 ```
@@ -170,13 +170,19 @@ This halts the compiler instantly and gives a custom error message. See #assert 
 ```c
 #define LIMIT 10
 
-if(LIMIT < 10) printf("Limit too low");
+if (LIMIT < 10)
+{
+    printf("Limit too low");
+}
 ```
 
 That will compile as:
 
 ```c
-if(10 < 10) printf("Limit too low");
+if (10 < 10)
+{
+    printf("Limit too low");
+}
 ```
 
 Which will clearly never be true and the compiler knows it - so it tells you so, giving you a "constant expression" warning. The question is, if it will never be true what's the point of including it at all? You could just remove the code but then there will be no checks if someone changes LIMIT and recompiles. This is what #if is for. Unlike normal if which gives a warning if the expression is constant, #if expressions MUST be constant. So:

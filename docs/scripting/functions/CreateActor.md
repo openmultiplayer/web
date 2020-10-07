@@ -32,12 +32,18 @@ INVALID_ACTOR_ID (65535) If the actor limit (1000) is reached.
 ## Examples
 
 ```c
-new ActorCJ;
+new gActorCJ;
 
 public OnGameModeInit()
 {
     // Create an actor (CJ) at Blueberry Acres (Center of SA map)
-    ActorCJ = CreateActor(0, 0.0, 0.0, 3.0, 0.0);
+    gActorCJ = CreateActor(0, 0.0, 0.0, 3.0, 0.0);
+}
+
+public OnGameModeExit()
+{
+    // Destroy our lovely actor (CJ)
+    DestroyActor(gActorCJ);
 }
 ```
 

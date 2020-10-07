@@ -26,7 +26,7 @@ Sets the name of a player.
 
 ```c
 // Command simply sets the player's name to to "Superman" if possible, with no error checking or messages.
-if(strcmp(cmdtext, "/superman", true) == 0)
+if (strcmp(cmdtext, "/superman", true) == 0)
 {
     SetPlayerName(playerid, "Superman");
     return 1;
@@ -34,13 +34,22 @@ if(strcmp(cmdtext, "/superman", true) == 0)
 
 // Command sets the players name to "Superman" if possible, informs the player of
 // any errors using a "switch" statement.
-if(strcmp(cmdtext, "/superman", true) == 0)
+if (strcmp(cmdtext, "/superman", true) == 0)
 {
-    switch(SetPlayerName(playerid, "Superman"))
+    switch (SetPlayerName(playerid, "Superman"))
     {
-        case -1: SendClientMessage(playerid, 0xFF0000FF, "Unable to change your name, someone else is known as 'Superman' already.");
-        case 0: SendClientMessage(playerid, 0xFF0000FF, "You are already known as 'Superman'");
-        case 1: SendClientMessage(playerid, 0x00FF00FF, "You are now known as 'Superman'");
+        case -1:
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Unable to change your name, someone else is known as 'Superman' already.");
+        }
+        case 0:
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "You are already known as 'Superman'");
+        }
+        case 1:
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "You are now known as 'Superman'");
+        }
     }
     return 1;
 }

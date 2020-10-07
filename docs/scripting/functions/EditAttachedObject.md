@@ -34,7 +34,7 @@ public OnPlayerSpawn(playerid)
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/edit", true))
+    if (!strcmp(cmdtext, "/edit", true))
     {
         EditAttachedObject(playerid, 0);
         SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: You now edit your attached object on index slot 0!");
@@ -54,7 +54,7 @@ You can move the camera while editing by pressing and holding the spacebar (or W
 
 :::warning
 
-Players will be able to scale objects up to a very large or negative value size. Limits should be put in place using OnPlayerEditAttachedObject to abort the edit.
+Players will be able to scale objects up to a very large or negative value size. Limits should be put in place using OnPlayerEditAttachedObject to abort the edit or clip the scale values.
 
 :::
 

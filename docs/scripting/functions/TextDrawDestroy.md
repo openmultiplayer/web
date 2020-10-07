@@ -20,17 +20,11 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:textdraw[MAX_PLAYERS];
+new Text: gMyTextdraw;
 
-public OnPlayerConnect(playerid)
+public OnGameModeExit()
 {
-    textdraw[playerid] = TextDrawCreate(...);
-    return 1;
-}
-
-public OnPlayerDisconnect(playerid, reason)
-{
-    TextDrawDestroy(textdraw[playerid]);
+    TextDrawDestroy(gMyTextdraw);
     return 1;
 }
 ```
