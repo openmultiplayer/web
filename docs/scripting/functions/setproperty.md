@@ -46,6 +46,12 @@ setproperty(.value = 123984334, .string = ":)");
 // The rest is the same as above.
 ```
 
+## Notes
+
+:::tip
+
+It is recommended to use the PVars/ SVars or GVar plugin instead of these natives for being very slow.
+
 ## Related Functions
 
 - [Getproperty](Getproperty.md): Get the value of a property.
