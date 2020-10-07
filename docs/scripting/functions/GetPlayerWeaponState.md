@@ -35,4 +35,4 @@ public OnPlayerSpawn(playerid)
 
 ## Related Functions
 
-- [GivePlayerWeapon](../functions/GivePlayerWeapon.md): Give a player a weapon.
+- [GivePlayerWeapon](GivePlayerWeapon.md): Give a player a weapon.

@@ -41,13 +41,12 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Does not work for joypads/controllers, and after a certain distance.
-Does not work for the sniper rifle, as it doesn't lock on to anything and as such can't and won't return a player.
+Does not work for joypads/controllers, and after a certain distance. Does not work for the sniper rifle, as it doesn't lock on to anything and as such can't and won't return a player.
 
 :::
 
 ## Related Functions
 
-- [GetPlayerCameraTargetActor](../functions/GetPlayerCameraTargetActor.md): Get the ID of the actor (if any) a player is looking at.
-- [GetPlayerCameraFrontVector](../functions/GetPlayerCameraFrontVector.md): Get the player's camera front vector
+- [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor.md): Get the ID of the actor (if any) a player is looking at.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector.md): Get the player's camera front vector
 - [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor.md): This callback is called when a player gives damage to an actor.

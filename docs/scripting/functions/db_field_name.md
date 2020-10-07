@@ -1,13 +1,14 @@
 ---
 id: db_field_name
 title: db_field_name
-description: Returns the name of a field at a particular index.
-tags: ["sqlite"]
+description: Returns the name of the field at the specified index.
+keywords:
+  - sqlite
 ---
 
 :::warning
 
-This function starts with lowercase letter.
+The function starts with a lowercase letter.
 
 :::
 
@@ -15,49 +16,77 @@ This function starts with lowercase letter.
 
 Returns the name of a field at a particular index.
 
-| Name              | Description                                            |
-| ----------------- | ------------------------------------------------------ |
-| DBResult:dbresult | The result to get the data from; returned by db_query. |
-| field             | The index of the field to get the name of.             |
-| result[]          | The result.                                            |
-| maxlength         | The max length of the field.                           |
+| Name              | Description                                                        |
+| ----------------- | ------------------------------------------------------------------ |
+| DBResult:dbresult | The result to get the data from; returned by [db_query](db_query). |
+| field             | The index of the field to get the name of.                         |
+| result[]          | The result.                                                        |
+| maxlength         | The max length of the field.                                       |
 
 ## Returns
 
-Returns 1, if the function was successful, otherwise 0 if DBResult:dbresult is a NULL reference or the column index not
-available.
+Returns 1 if result set handle is valid, otherwise 0.
 
 ## Examples
 
 ```c
-// Callback
-public OnPlayerCommandText(playerid, cmdtext[])
+static DB:gDBConnectionHandle;
+
+public OnGameModeInit()
 {
-    // If "cmdtext" equals "/getfieldnames"
-    if(!strcmp(cmdtext, "/getfieldnames", true, 14))
+    // ...
+
+    // Create a connection to a database
+    gDBConnectionHandle = db_open("example.db");
+
+    // If connection to the database exists
+    if (gDBConnectionHandle)
     {
-        // Declare "db_result", "i", and "columns"
-        new DBResult:db_result = db_query(db_handle, "SELECT * FROM `join_log`"), i, columns = db_num_fields(db_result), info[30];
+        // Select first entry in table "join_log"
+        new DBResult:db_result_set = db_query(g_DBConnection, "SELECT * FROM `join_log` LIMIT 1");
 
-        // Iterate from 0 to "columns-1"
-        for(; i < columns; i++)
+        // If result set handle is valid
+        if (db_result_set)
         {
-            // Store the name of the i indexed column name into "info"
-            db_field_name(db_result, i, info, sizeof info);
+            // Get the number of fields from result set
+            new columns = db_num_fields(db_result_set);
 
-            // Print "info"
-            printf("Field name: %s", info);
+            // Allocate some memory for storing field names
+            new field_name[32];
+
+            // Iterate through all column indices
+            for (new column_index; index < column_index; index++)
+            {
+                // Store the name of the i indexed column name into "field_name"
+                db_field_name(db_result_set, index, field_name, sizeof field_name);
+
+                // Print "field_name"
+                printf("Field name at index %d: \"%s\"", index, field_name);
+            }
+
+            // Frees the result set
+            db_free_result(db_result_set);
         }
+    }
+    else
+    {
+        // Failed to create a connection to the database
+        print("Failed to open a connection to database \"example.db\".");
+    }
+}
 
-        // Frees the result
-        db_free_result(db_result);
-
-        // Returns 1
-        return 1;
+public OnGameModeExit()
+{
+    // Close the connection to the database if connection is open
+    if (db_close(gDBConnectionHandle))
+    {
+        // Extra cleanup
+        gDBConnectionHandle = DB:0;
     }
 
-    // Returns 0
-    return 0;
+    // ...
+
+    return 1;
 }
 ```
 
@@ -65,28 +94,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
-references.
+Using an invalid handle other than zero will crash your server!
+Get a valid database connection handle by using [db_query](db_query).
 
 :::
 
 ## Related Functions
 
-- [db_open](../functions/db_open.md): Open a connection to an SQLite database
-- [db_close](../functions/db_close.md): Close the connection to an SQLite database
-- [db_query](../functions/db_query.md): Query an SQLite database
-- [db_free_result](../functions/db_free_result.md): Free result memory from a db_query
-- [db_num_rows](../functions/db_num_rows.md): Get the number of rows in a result
-- [db_next_row](../functions/db_next_row.md): Move to the next row
-- [db_num_fields](../functions/db_num_fields.md): Get the number of fields in a result
-- [db_field_name](../functions/db_field_name.md): Returns the name of a field at a particular index
-- [db_get_field](../functions/db_get_field.md): Get content of field with specified ID from current result row
-- [db_get_field_assoc](../functions/db_get_field_assoc.md): Get content of field with specified name from current result row
-- [db_get_field_int](../functions/db_get_field_int.md): Get content of field as an integer with specified ID from current result row
-- [db_get_field_assoc_int](../functions/db_get_field_assoc_int.md): Get content of field as an integer with specified name from current result row
-- [db_get_field_float](../functions/db_get_field_float.md): Get content of field as a float with specified ID from current result row
-- [db_get_field_assoc_float](../functions/db_get_field_assoc_float.md): Get content of field as a float with specified name from current result row
-- [db_get_mem_handle](../functions/db_get_mem_handle.md): Get memory handle for an SQLite database that was opened with db_open.
-- [db_get_result_mem_handle](../functions/db_get_result_mem_handle.md): Get memory handle for an SQLite query that was executed with db_query.
-- [db_debug_openfiles](../functions/db_debug_openfiles.md)
-- [db_debug_openresults](../functions/db_debug_openresults.md)
+_Replace me_

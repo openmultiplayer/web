@@ -9,19 +9,15 @@ tags: []
 
 Set the name of the game mode, which appears in the server browser.
 
-
-| Name | Description |
-|------|-------------|
-|string[] | The gamemode name to display.|
-
+| Name     | Description                   |
+| -------- | ----------------------------- |
+| string[] | The gamemode name to display. |
 
 ## Returns
 
 This function does not return any specific values.
 
-
 ## Examples
-
 
 ```c
 public OnGameModeInit()
@@ -31,7 +27,4 @@ public OnGameModeInit()
 }
 ```
 
-
 ## Related Functions
-
-

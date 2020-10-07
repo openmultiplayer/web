@@ -1,17 +1,57 @@
 ---
 title: Light States
+description: Information about byte size and its corresponding light state bits.
 ---
 
-To be used with [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus) and [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus).
+:::note
+
+To be used with [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+
+:::
+
+:::note
 
 The lights on vehicles with 2 wheels (and thus 2 lights) can not be changed.
+
+:::
+
+:::note
+
 The two back lights of a vehicle can not be changed separately.
 
-Here is a visual representation of the light states. Vehicle viewed from a top-down perspective, the top is the front of the vehicle.
+:::
 
-**o = enabled light**
+## Which bit stores what?
 
-**x = disabled light**
+The damage of all lights will be saved together in 1 byte (which is 8 bits). Each bit stores whether the corresponding light is **broken (value 1)** or **not (value 0)**.
+
+- The **first bit** stores the state of the **front-left** light.
+- The **third bit** stores the state of the **front-right** light.
+- The **zeventh bit** stores the state of the **back** lights.
+- The rest of the bits are empty.
+
+Notice that the bits are counted from behind, so the first bit is the rightmost bit.
+
+## Example
+
+The following code tells that both front lights are broken and the back lights are not:
+
+`0000 0101`
+
+However, SA-MP returns a decimal number so you have to convert it to a binary number first to get a result like above. What SA-MP would return given the example above is this:
+
+`5`
+
+## Info table
+
+Here is a visual representation of the light states. Vehicle viewed from a top-down perspective, with the upper values being the front of the vehicle and the lower values the back of the vehicle.
+
+**Legend:**
+
+```
+o - enabled light
+x - disabled light
+```
 
 0: (0000 0000)
 
@@ -77,14 +117,14 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
     x-x
 ```
 
-Other values not listed here can change the lights, but they are just repeats of other values. For example 15 has the same outcome as 5.
-After 255 the values will wrap around, 256 will be set as 0, 257 as 1 and so on.
+Other values not listed here can change the lights, but they are just repeats of other values (e.g. 15 has the same outcome as 5). After 255 the values will wrap around, 256 will be set as 0, 257 as 1 and so on.
 
-**Example Usage:**
-To disable the back two lights of a vehicle while keeping the front the same state:
+## Example usage
+
+To disable the back two lights of a vehicle while keeping the front unchanged:
 
 ```c
-new Panels, Doors, Lights, Tires;
-GetVehicleDamageStatus(vehicleid, Panels, Doors, Lights, Tires);
-UpdateVehicleDamageStatus(vehicleid, Panels, Doors, (Lights | 0b01000000), Tires); //The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
+new panels, doors, lights, tires;
+GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
+UpdateVehicleDamageStatus(vehicleid, panels, doors, (lights | 0b01000000), tires); // The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
 ```

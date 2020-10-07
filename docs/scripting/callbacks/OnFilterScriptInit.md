@@ -9,10 +9,6 @@ tags: []
 
 This callback is called when a filterscript is initialized (loaded). It is only called inside the filterscript which is starting.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

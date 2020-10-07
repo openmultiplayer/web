@@ -42,5 +42,5 @@ stock CountAttachedObjects(playerid)
 
 ## Related Functions
 
-- [SetPlayerAttachedObject](../../scripting/functions/SetPlayerAttachedObject.md): Attach an object to a player
-- [RemovePlayerAttachedObject](../../scripting/functions/RemovePlayerAttachedObject.md): Remove an attached object from a player
+- [SetPlayerAttachedObject](SetPlayerAttachedObject.md): Attach an object to a player
+- [RemovePlayerAttachedObject](RemovePlayerAttachedObject.md): Remove an attached object from a player

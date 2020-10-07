@@ -15,10 +15,6 @@ This function was added in SA-MP 0.3.7 and will not work in earlier versions!
 
 Gets the highest vehicleid currently in use on the server.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c
@@ -33,4 +29,4 @@ RepairAllVehicles()
 
 ## Related Functions
 
-- [GetPlayerPoolSize](../functions/GetPlayerPoolSize.md): Gets the highest playerid connected to the server.
+- [GetPlayerPoolSize](GetPlayerPoolSize.md): Gets the highest playerid connected to the server.

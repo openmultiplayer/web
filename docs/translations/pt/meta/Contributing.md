@@ -3,50 +3,33 @@ title: Contribuição
 description: Como contribuir com SA-MP Wiki e a documentação open.mp.
 ---
 
-Esta documentação está aberta para qualquer um contribuir para seu
-desenvolvimento e aperfeiçoamento! Tudo que você precisa é uma conta no
-[GitHub](https://github.com) e algum tempo livre. Você inclusive não necessita
-ter conhecimentos de Git, podendo fazer tudo pela interface da web.
+Esta documentação está aberta para qualquer um contribuir para seu desenvolvimento e aperfeiçoamento! Tudo que você precisa é uma conta no [GitHub](https://github.com) e algum tempo livre. Você inclusive não necessita ter conhecimentos de Git, podendo fazer tudo pela interface da web.
 
 ## Editando Conteúdo
 
-Em cada página há um botão que o(a) leverá para uma página no GitHub para
-editar:
+Em cada página há um botão que o(a) leverá para uma página no GitHub para editar:
 
 !["Edit this page" link present on each wiki page](/images/contributing/edit-this-page.png)
 
-Por exemplo, clicando em
-[SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity)
-o(a) levará para
-[esta página](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md)
-a qual contém um editor de texto para fazer algumas mudanças no
-arquivo(assumindo que você esteja logado(a) no GitHub).
+Por exemplo, clicando em [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) o(a) levará para [esta página](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) a qual contém um editor de texto para fazer algumas mudanças no arquivo(assumindo que você esteja logado(a) no GitHub).
 
-Faça suas edições e envie um "Pull Request", isso significa que os organizadores
-da Wiki e outros membros da comunidade irão revisar suas mudanças, discutir se
-são necessárias então incorporá-las ou não.
+Faça suas edições e envie um "Pull Request", isso significa que os organizadores da Wiki e outros membros da comunidade irão revisar suas mudanças, discutir se são necessárias então incorporá-las ou não.
 
 ## Adicionando um Conteúdo Novo
 
-Adicionar um novo conteúdo pode ser um pouco mais complicado, poderá fazer de
-duas maneiras:
+Adicionar um novo conteúdo pode ser um pouco mais complicado, poderá fazer de duas maneiras:
 
 ### Interface do GitHub
 
-Quando pesquisar um diretório no GitHub, haverá um botão "Add File" no canto
-direito superior do arquivo:
+Quando pesquisar um diretório no GitHub, haverá um botão "Add File" no canto direito superior do arquivo:
 
 !["Add file" button](/images/contributing/add-new-file.png)
 
-Você pode tanto enviar um arquivo 'Markdown' que você já escreveu, ou escrever
-diretamento no editor de texto do GitHub.
+Você pode tanto enviar um arquivo 'Markdown' que você já escreveu, ou escrever diretamento no editor de texto do GitHub.
 
-Este arquivo _PRECISA_ conter a extensão `.md` e conter 'Markdown'. Para mais
-informações sobre 'Markdown, acesse
-[este guia](https://guides.github.com/features/mastering-markdown/).
+Este arquivo _PRECISA_ conter a extensão `.md` e conter 'Markdown'. Para mais informações sobre 'Markdown, acesse [este guia](https://guides.github.com/features/mastering-markdown/).
 
-Uma vez feito isso, clique em "Propose new file" (Propor novo arquivo) e um
-"Pull Request" será aberto para revisão.
+Uma vez feito isso, clique em "Propose new file" (Propor novo arquivo) e um "Pull Request" será aberto para revisão.
 
 ### Git
 
@@ -56,26 +39,14 @@ Se você deseja usar Git, tudo que precisa é clonar o repositório da WIki com:
 git clone https://github.com/openmultiplayer/wiki.git
 ```
 
-Abre o repositório em seu editor favorito. Eu recomendo Visual Studio Code, pois
-contém ótimas ferramentas de edição e formatação de arquivos "Markdown". Como
-pode ver, estou escrevendo usando Visual Studio Code!
+Abre o repositório em seu editor favorito. Eu recomendo Visual Studio Code, pois contém ótimas ferramentas de edição e formatação de arquivos "Markdown". Como pode ver, estou escrevendo usando Visual Studio Code!
 
 ![Visual Studio Code markdown preview](/images/contributing/vscode.png)
 
 Eu recomendo duas extensões que irão aperfeiçoar sua experiência:
 
-- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-  por David Anson - Essa extensão faz com que o arquivo seja formatado
-  corretamente, prevenindo alguns erros semânticos e sintáticos. Nem todos
-  avisos são importantes, mas alguns podem ajudar a melhorar e leitura. Use ao
-  seu julgamento, em caso de dúvida, consulte um revisor.
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  Pelo time Prettier.js - Este formatará automaticamente seus arquivos
-  "Markdown" para que todos usem um estilo consistente. O repositório da Wiki
-  contém algumas configurações em `package.json` que a extensão deverá usar
-  automaticamente. Tenha certeza de habilitar "Format On Save" nas configurações
-  do seu editor, para que os arquivos sejam formatados automaticamente a cada
-  save.
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) por David Anson - Essa extensão faz com que o arquivo seja formatado corretamente, prevenindo alguns erros semânticos e sintáticos. Nem todos avisos são importantes, mas alguns podem ajudar a melhorar e leitura. Use ao seu julgamento, em caso de dúvida, consulte um revisor.
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Pelo time Prettier.js - Este formatará automaticamente seus arquivos "Markdown" para que todos usem um estilo consistente. O repositório da Wiki contém algumas configurações em `package.json` que a extensão deverá usar automaticamente. Tenha certeza de habilitar "Format On Save" nas configurações do seu editor, para que os arquivos sejam formatados automaticamente a cada save.
 
 ## Notas, Dicas e Convenções
 
@@ -86,8 +57,7 @@ Não utilize URL's absolutas para links dentro do site. Use caminhos relativos.
 - ❌
 
   ```md
-  Para ser usado com
-  [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  Para ser usado com [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔
@@ -96,20 +66,13 @@ Não utilize URL's absolutas para links dentro do site. Use caminhos relativos.
   Para ser usado com [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
   ```
 
-`../` significa "vá até o diretório", então se o arquivo que está editando
-estiver dentro do diretório `functions` e estiver 'linkando' com `callbacks`
-você usará `../` para ir até `scripting/` e então `callbacks/` para entrar no
-diretório, e então o nome do arquivo (sem `.md`) da callback que gostaria de
-'linkar'.
+`../` significa "vá até o diretório", então se o arquivo que está editando estiver dentro do diretório `functions` e estiver 'linkando' com `callbacks` você usará `../` para ir até `scripting/` e então `callbacks/` para entrar no diretório, e então o nome do arquivo (sem `.md`) da callback que gostaria de 'linkar'.
 
 ### Imagens
 
-Imagens vão dentro de um sub-diretório em `/static/images`. Então quando quando
-você 'linkar' uma imagem em `![]()` você utiliza `/images/` como o caminho base
-(sem necessidade de `static`, é apenas para o repositório).
+Imagens vão dentro de um sub-diretório em `/static/images`. Então quando quando você 'linkar' uma imagem em `![]()` você utiliza `/images/` como o caminho base (sem necessidade de `static`, é apenas para o repositório).
 
-Em caso de dúvida, leia uma página que contenha imagens e copie como está feito
-nela.
+Em caso de dúvida, leia uma página que contenha imagens e copie como está feito nela.
 
 ### Metadata
 
@@ -124,13 +87,11 @@ description: Esta é uma página sobre coisas, comidas e X-Burguer!
 
 Toda página deve conter um título e uma descrição.
 
-Para uma lista completa do que pode ir entre `---`, verifique
-[a documentação do Docusaurus](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
+Para uma lista completa do que pode ir entre `---`, verifique [a documentação do Docusaurus](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
 
 ### Títulos
 
-Não crie um Título "level 1" (`<h1>`) com `#`, pois este é gerado
-automaticamente. Seu primeiro título deverá _sempre_ ser `##`
+Não crie um Título "level 1" (`<h1>`) com `#`, pois este é gerado automaticamente. Seu primeiro título deverá _sempre_ ser `##`
 
 - ❌
 
@@ -152,30 +113,19 @@ automaticamente. Seu primeiro título deverá _sempre_ ser `##`
 
 ### Utilize `Code Snippets` para Referências Técnicas
 
-Quando escrever um parágrafo que contém nomes de funções, números, expressões ou
-qualquer outra coisa que não seja linguagem básica (comunicação), cerque-os com
-\`sinal de crase\`. Isso facilita separar a linguagem ao descrever coisas de
-referência técnica, elementos como nome de funções ou partes de códigos.
+Quando escrever um parágrafo que contém nomes de funções, números, expressões ou qualquer outra coisa que não seja linguagem básica (comunicação), cerque-os com \`sinal de crase\`. Isso facilita separar a linguagem ao descrever coisas de referência técnica, elementos como nome de funções ou partes de códigos.
 
 - ❌
 
-  > A função fopen retornará um valor com uma tag do tipo File:, não há problema
-  > nesta linha pois o valor de retorno é armazenado em um variável que também
-  > tem a tag File:. Entretanto, na próxima linha o valor 4 é adicionado ao
-  > arquivo. 5 não tem tag [...]
+  > A função fopen retornará um valor com uma tag do tipo File:, não há problema nesta linha pois o valor de retorno é armazenado em um variável que também tem a tag File:. Entretanto, na próxima linha o valor 4 é adicionado ao arquivo. 5 não tem tag [...]
 
 - ✔
 
-  > A função `fopen` retornará um valor com uma tag do tipo `File:`', não há
-  > problema nesta linha pois o valor de retorno é armazenado em um variável que
-  > também tem a tag `File:`. Entretanto, na próxima linha o valor `4` é
-  > adicionado ao arquivo. `4` não tem tag [...]
+  > A função `fopen` retornará um valor com uma tag do tipo `File:`', não há problema nesta linha pois o valor de retorno é armazenado em um variável que também tem a tag `File:`. Entretanto, na próxima linha o valor `4` é adicionado ao arquivo. `4` não tem tag [...]
 
-No exemplo acima, `fopen` é o nome de uma função e não uma palavra em português,
-então cerca-la com `code` "snippet" (crase) ajuda a distinguir um do outro.
+No exemplo acima, `fopen` é o nome de uma função e não uma palavra em português, então cerca-la com `code` "snippet" (crase) ajuda a distinguir um do outro.
 
-Também, se o parágrafo estiver relizando uma referência a um bloco de código,
-isso ajudaria o leitor a associar as palavras com o exemplo.
+Também, se o parágrafo estiver relizando uma referência a um bloco de código, isso ajudaria o leitor a associar as palavras com o exemplo.
 
 ### Tabelas
 
@@ -208,8 +158,7 @@ Se a tabela tem títulos, eles vão na parte de cima:
 
 ## Migrar do SA-MP Wiki
 
-Maior parte do conteúdo já foi movido, mas se encontrar uma página faltando,
-aqui está um pequeno guia de como converter o conteúdo para "Markdown".
+Maior parte do conteúdo já foi movido, mas se encontrar uma página faltando, aqui está um pequeno guia de como converter o conteúdo para "Markdown".
 
 ### Pegando o HTML
 
@@ -223,8 +172,7 @@ aqui está um pequeno guia de como converter o conteúdo para "Markdown".
 
    ![image](/images/contributing/f62bb8112543.png)
 
-2. Passe o mouse sobre o canto esquerdo superior da página, na margem da
-   esquerda ou no canto até você ver `#content`
+2. Passe o mouse sobre o canto esquerdo superior da página, na margem da esquerda ou no canto até você ver `#content`
 
    ![image](/images/contributing/65761ffbc429.png)
 
@@ -236,8 +184,7 @@ aqui está um pequeno guia de como converter o conteúdo para "Markdown".
 
    ![image](/images/contributing/8c7c75cfabad.png)
 
-   Agora você tem _apenas_ o código HTML do _conteúdo_ da página, então poderá
-   converter para "Markdown".
+   Agora você tem _apenas_ o código HTML do _conteúdo_ da página, então poderá converter para "Markdown".
 
 ### Convertendo HTML para Markdown
 
@@ -261,9 +208,10 @@ Então copie apenas o elemento `<table>`:
 
 ### Toques Finais
 
-A conversão não será perfeita, então uma limpeza manual será necessária. As
-ferramentas de formatação listadas acima devem ajuda-lo, mas ainda poderá gastar
-um tempo realizando trabalho manual.
+A conversão não será perfeita, então uma limpeza manual será necessária. As ferramentas de formatação listadas acima devem ajuda-lo, mas ainda poderá gastar um tempo realizando trabalho manual.
 
-Se você não tem tempo, não se preocupe! Envie um rascunho não finalizado, então
-alguém poderá continuar de onde você parou!
+Se você não tem tempo, não se preocupe! Envie um rascunho não finalizado, então alguém poderá continuar de onde você parou!
+
+## Acordo de Licença
+
+Todo projeto open.mp contém um [Acordo de Licença do Contribuidor][https://cla-assistant.io/openmultiplayer/homepage]. Isso, basicamente, significa que você concorda em usarmos o seu trabalho e coloca-lo sob a licença de código aberto. Quando abrir um Pull Request pela primeira vez, o bot CLA-Assistant irá colocar um link onde você pode assinar o acordo.

@@ -107,6 +107,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Open Multiplayer Team. Built with Docusaurus.`,
     },
+    googleAnalytics: {
+      trackingID: "UA-78828365-7",
+      anonymizeIP: true,
+    },
   },
   presets: [
     [
@@ -119,8 +123,14 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        sitemap: {
+          cacheTime: 600 * 1000,
+          changefreq: "daily",
+          priority: 0.5,
+          trailingSlash: false,
+        },
       },
     ],
   ],
-  plugins: ["docusaurus-lunr-search"],
+  plugins: ["docusaurus-lunr-search", "@docusaurus/plugin-google-analytics"],
 };

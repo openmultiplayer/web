@@ -9,10 +9,6 @@ tags: ["player"]
 
 Uses standard player walking animation (animation of the CJ skin) instead of custom animations for every skin (e.g. skating for skater skins).
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c
@@ -27,12 +23,11 @@ public OnGameModeInit()
 
 :::tip
 
-Only works when placed under OnGameModeInit.
-Not using this function causes two-handed weapons (not dual-handed - a single weapon that is held by both hands) to be held in only one hand.
+Only works when placed under OnGameModeInit. Not using this function causes two-handed weapons (not dual-handed - a single weapon that is held by both hands) to be held in only one hand.
 
 :::
 
 ## Related Functions
 
-- [ApplyAnimation](../functions/ApplyAnimation.md): Apply an animation to a player.
-- [ClearAnimations](../functions/ClearAnimations.md): Clear any animations a player is performing.
+- [ApplyAnimation](ApplyAnimation.md): Apply an animation to a player.
+- [ClearAnimations](ClearAnimations.md): Clear any animations a player is performing.

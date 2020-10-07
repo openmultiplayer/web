@@ -37,9 +37,9 @@ printf("Version: %f", GetSVarFloat("Version"));
 
 ## Related Functions
 
-- [SetSVarInt](../../scripting/functions/SetSVarInt.md): Set an integer for a server variable.
-- [GetSVarInt](../../scripting/functions/GetSVarInt.md): Get a player server as an integer.
-- [SetSVarString](../../scripting/functions/SetSVarString.md): Set a string for a server variable.
-- [GetSVarString](../../scripting/functions/GetSVarString.md): Get the previously set string from a server variable.
-- [GetSVarFloat](../../scripting/functions/GetSVarFloat.md): Get the previously set float from a server variable.
-- [DeleteSVar](../../scripting/functions/DeleteSVar.md): Delete a server variable.
+- [SetSVarInt](SetSVarInt.md): Set an integer for a server variable.
+- [GetSVarInt](GetSVarInt.md): Get a player server as an integer.
+- [SetSVarString](SetSVarString.md): Set a string for a server variable.
+- [GetSVarString](GetSVarString.md): Get the previously set string from a server variable.
+- [GetSVarFloat](GetSVarFloat.md): Get the previously set float from a server variable.
+- [DeleteSVar](DeleteSVar.md): Delete a server variable.

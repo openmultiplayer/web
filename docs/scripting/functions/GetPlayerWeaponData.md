@@ -46,5 +46,5 @@ Old weapons with no ammo left are still returned.
 
 ## Related Functions
 
-- [GetPlayerWeapon](../functions/GetPlayerWeapon.md): Check what weapon a player is currently holding.
-- [GivePlayerWeapon](../functions/GivePlayerWeapon.md): Give a player a weapon.
+- [GetPlayerWeapon](GetPlayerWeapon.md): Check what weapon a player is currently holding.
+- [GivePlayerWeapon](GivePlayerWeapon.md): Give a player a weapon.

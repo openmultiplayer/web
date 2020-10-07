@@ -9,10 +9,6 @@ tags: []
 
 Disable all the interior entrances and exits in the game (the yellow arrows at doors).
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c
@@ -39,4 +35,4 @@ If the gamemode is changed after this function has been used, and the new gamemo
 
 ## Related Functions
 
-- [AllowInteriorWeapons](../../scripting/functions/AllowInteriorWeapons.md): Determine if weapons can be used in interiors.
+- [AllowInteriorWeapons](AllowInteriorWeapons.md): Determine if weapons can be used in interiors.

@@ -39,5 +39,5 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Related Functions
 
-- [ResetPlayerMoney](../functions/ResetPlayerMoney.md): Set the money of a player to \$0.
-- [GetPlayerMoney](../functions/GetPlayerMoney.md): Check how much money a player has.
+- [ResetPlayerMoney](ResetPlayerMoney.md): Set the money of a player to \$0.
+- [GetPlayerMoney](GetPlayerMoney.md): Check how much money a player has.

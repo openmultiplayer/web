@@ -59,18 +59,18 @@ Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~ Doesn't work beyond 
 
 ## Related Functions
 
-- [PlayerTextDrawDestroy](../../scripting/functions/PlayerTextDrawDestroy.md): Destroy a player-textdraw.
-- [PlayerTextDrawColor](../../scripting/functions/PlayerTextDrawColor.md): Set the color of the text in a player-textdraw.
-- [PlayerTextDrawBoxColor](../../scripting/functions/PlayerTextDrawBoxColor.md): Set the color of a player-textdraw's box.
-- [PlayerTextDrawBackgroundColor](../../scripting/functions/PlayerTextDrawBackgroundColor.md): Set the background color of a player-textdraw.
-- [PlayerTextDrawAlignment](../../scripting/functions/PlayerTextDrawAlignment.md): Set the alignment of a player-textdraw.
-- [PlayerTextDrawFont](../../scripting/functions/PlayerTextDrawFont.md): Set the font of a player-textdraw.
-- [PlayerTextDrawLetterSize](../../scripting/functions/PlayerTextDrawLetterSize.md): Set the letter size of the text in a player-textdraw.
-- [PlayerTextDrawTextSize](../../scripting/functions/PlayerTextDrawTextSize.md): Set the size of a player-textdraw box (or clickable area for PlayerTextDrawSetSelectable).
-- [PlayerTextDrawSetOutline](../../scripting/functions/PlayerTextDrawSetOutline.md): Toggle the outline on a player-textdraw.
-- [PlayerTextDrawSetShadow](../../scripting/functions/PlayerTextDrawSetShadow.md): Set the shadow on a player-textdraw.
-- [PlayerTextDrawSetProportional](../../scripting/functions/PlayerTextDrawSetProportional.md): Scale the text spacing in a player-textdraw to a proportional ratio.
-- [PlayerTextDrawUseBox](../../scripting/functions/PlayerTextDrawUseBox.md): Toggle the box on a player-textdraw.
-- [PlayerTextDrawSetString](../../scripting/functions/PlayerTextDrawSetString.md): Set the text of a player-textdraw.
-- [PlayerTextDrawShow](../../scripting/functions/PlayerTextDrawShow.md): Show a player-textdraw.
-- [PlayerTextDrawHide](../../scripting/functions/PlayerTextDrawHide.md): Hide a player-textdraw.
+- [PlayerTextDrawDestroy](PlayerTextDrawDestroy.md): Destroy a player-textdraw.
+- [PlayerTextDrawColor](PlayerTextDrawColor.md): Set the color of the text in a player-textdraw.
+- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor.md): Set the color of a player-textdraw's box.
+- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor.md): Set the background color of a player-textdraw.
+- [PlayerTextDrawAlignment](PlayerTextDrawAlignment.md): Set the alignment of a player-textdraw.
+- [PlayerTextDrawFont](PlayerTextDrawFont.md): Set the font of a player-textdraw.
+- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize.md): Set the letter size of the text in a player-textdraw.
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize.md): Set the size of a player-textdraw box (or clickable area for PlayerTextDrawSetSelectable).
+- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline.md): Toggle the outline on a player-textdraw.
+- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow.md): Set the shadow on a player-textdraw.
+- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional.md): Scale the text spacing in a player-textdraw to a proportional ratio.
+- [PlayerTextDrawUseBox](PlayerTextDrawUseBox.md): Toggle the box on a player-textdraw.
+- [PlayerTextDrawSetString](PlayerTextDrawSetString.md): Set the text of a player-textdraw.
+- [PlayerTextDrawShow](PlayerTextDrawShow.md): Show a player-textdraw.
+- [PlayerTextDrawHide](PlayerTextDrawHide.md): Hide a player-textdraw.

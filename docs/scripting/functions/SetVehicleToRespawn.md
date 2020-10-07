@@ -32,5 +32,5 @@ for(new i = GetVehiclePoolSize(); i > 0; i--)
 
 ## Related Functions
 
-- [CreateVehicle](../functions/CreateVehicle.md): Create a vehicle.
-- [DestroyVehicle](../functions/DestroyVehicle.md): Destroy a vehicle.
+- [CreateVehicle](CreateVehicle.md): Create a vehicle.
+- [DestroyVehicle](DestroyVehicle.md): Destroy a vehicle.

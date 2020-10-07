@@ -17,8 +17,7 @@ Calls a public function from the script in which it is used.
 
 ## Returns
 
-If the function exists, returns the same as the called function.
-If the function does not exist, returns 0.
+If the function exists, returns the same as the called function. If the function does not exist, returns 0.
 
 ## Examples
 
@@ -43,4 +42,4 @@ CallLocalFunction crashes the server if it's passing an empty string.
 
 ## Related Functions
 
-- [CallRemoteFunction](../../scripting/functions/CallRemoteFunction.md): Call a function in any loaded script.
+- [CallRemoteFunction](CallRemoteFunction.md): Call a function in any loaded script.

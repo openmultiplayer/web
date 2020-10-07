@@ -67,13 +67,12 @@ public DisableVehicleAlarm(vehicleid)
 
 :::tip
 
-The alarm will not reset when finished, you'll need to reset it by yourself with this function.
-Lights also operate during the day (Only when ManualVehicleEngineAndLights is enabled).
+The alarm will not reset when finished, you'll need to reset it by yourself with this function. Lights also operate during the day (Only when ManualVehicleEngineAndLights is enabled).
 
 :::
 
 ## Related Functions
 
-- [GetVehicleParamsEx](../functions/GetVehicleParamsEx.md): Get a vehicle's parameters.
-- [SetVehicleParamsForPlayer](../functions/SetVehicleParamsForPlayer.md): Set the parameters of a vehicle for a player.
-- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus.md): Update the vehicle damage.
+- [GetVehicleParamsEx](GetVehicleParamsEx.md): Get a vehicle's parameters.
+- [SetVehicleParamsForPlayer](SetVehicleParamsForPlayer.md): Set the parameters of a vehicle for a player.
+- [UpdateVehicleDamageStatus](UpdateVehicleDamageStatus.md): Update the vehicle damage.

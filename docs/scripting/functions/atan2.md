@@ -24,8 +24,7 @@ Get the inversed value of an arc tangent of y/x, expressed in radians.
 
 Returns the principal value of the arc tangent of y/x, expressed in radians.
 
-To compute the value, the function takes into account the sign of both arguments
-in order to determine the quadrant.
+To compute the value, the function takes into account the sign of both arguments in order to determine the quadrant.
 
 ## Examples
 
@@ -45,9 +44,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [floatsin](../../scripting/functions/floatsin.md): Get the sine from a
-  specific angle.
-- [floatcos](../../scripting/functions/floatcos.md): Get the cosine from a
-  specific angle.
-- [floattan](../../scripting/functions/floattan.md): Get the tangent from a
-  specific angle.
+- [floatsin](floatsin.md): Get the sine from a specific angle.
+- [floatcos](floatcos.md): Get the cosine from a specific angle.
+- [floattan](floattan.md): Get the tangent from a specific angle.

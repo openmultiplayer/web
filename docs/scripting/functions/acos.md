@@ -21,8 +21,7 @@ Get the inversed value of an arc cosine in radians.
 
 ## Returns
 
-Principal arc cosine of x, in the interval [0,pi] radians. One radian is
-equivalent to 180/PI degrees.
+Principal arc cosine of x, in the interval [0,pi] radians. One radian is equivalent to 180/PI degrees.
 
 ## Examples
 
@@ -41,9 +40,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [floatsin](../../scripting/functions/floatsin.md): Get the sine from a
-  specific angle.
-- [floatcos](../../scripting/functions/floatcos.md): Get the cosine from a
-  specific angle.
-- [floattan](../../scripting/functions/floattan.md): Get the tangent from a
-  specific angle.
+- [floatsin](floatsin.md): Get the sine from a specific angle.
+- [floatcos](floatcos.md): Get the cosine from a specific angle.
+- [floattan](floattan.md): Get the tangent from a specific angle.

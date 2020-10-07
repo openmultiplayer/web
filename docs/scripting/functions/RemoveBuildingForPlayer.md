@@ -56,12 +56,11 @@ In SA-MP 0.3.7 you can use -1 for the modelid to remove all objects within the s
 
 :::warning
 
-There appears to be a limit of around 1000 lines/objects. There is no workaround.
-When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
+There appears to be a limit of around 1000 lines/objects. There is no workaround. When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
 
 :::
 
 ## Related Functions
 
-- [DestroyObject](../functions/DestroyObject.md): Destroy an object.
-- [DestroyPlayerObject](../functions/DestroyPlayerObject.md): Destroy a player object.
+- [DestroyObject](DestroyObject.md): Destroy an object.
+- [DestroyPlayerObject](DestroyPlayerObject.md): Destroy a player object.

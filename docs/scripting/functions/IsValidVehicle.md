@@ -56,5 +56,5 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## Related Functions
 
-- [GetPlayerVehicleID](../functions/GetPlayerVehicleID): Get the ID of the vehicle the player is in.
-- [GetVehicleModel](../functions/GetVehicleModel): Get the model id of a vehicle.
+- [GetPlayerVehicleID](GetPlayerVehicleID): Get the ID of the vehicle the player is in.
+- [GetVehicleModel](GetVehicleModel): Get the model id of a vehicle.

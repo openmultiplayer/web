@@ -35,12 +35,11 @@ The vehicle's rotation is stored in the specified variables.
 
 :::tip
 
-There is no 'set' variation of this function; you can not SET a vehicle's rotation (apart from the Z angle)
-This function may return incorrect values for unoccupied vehicles. The reason is that the third row of the vehicle's internal rotation matrix gets corrupted if it gets updated while unoccupied.
+There is no 'set' variation of this function; you can not SET a vehicle's rotation (apart from the Z angle) This function may return incorrect values for unoccupied vehicles. The reason is that the third row of the vehicle's internal rotation matrix gets corrupted if it gets updated while unoccupied.
 
 :::
 
 ## Related Functions
 
-- [GetVehicleZAngle](../functions/GetVehicleZAngle.md): Check the current angle of a vehicle.
-- [GetVehicleRotation](../functions/GetVehicleRotation.md): Get the rotation of a vehicle on the XYZ axis.
+- [GetVehicleZAngle](GetVehicleZAngle.md): Check the current angle of a vehicle.
+- [GetVehicleRotation](GetVehicleRotation.md): Get the rotation of a vehicle on the XYZ axis.

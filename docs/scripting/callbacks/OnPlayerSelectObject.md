@@ -54,4 +54,4 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 
 ## Related Functions
 
-- [SelectObject](../../scripting/functions/SelectObject.md): Select an object.
+- [SelectObject](../functions/SelectObject.md): Select an object.

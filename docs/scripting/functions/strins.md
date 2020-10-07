@@ -40,12 +40,12 @@ SetPlayerName(playerid, pName);
 
 ## Related Functions
 
-- [strcmp](../functions/strcmp.md): Compare two strings to check if they are the same.
-- [strfind](../functions/strfind.md): Search for a string in another string.
-- [strtok](../functions/strtok.md): Get the next 'token' (word/parameter) in a string.
-- [strdel](../functions/strdel.md): Delete part of a string.
-- [strlen](../functions/strlen.md): Get the length of a string.
-- [strmid](../functions/strmid.md): Extract part of a string into another string.
-- [strpack](../functions/strpack.md): Pack a string into a destination string.
-- [strval](../functions/strval.md): Convert a string into an integer.
-- [strcat](../functions/strcat.md): Concatenate two strings into a destination reference.
+- [strcmp](strcmp.md): Compare two strings to check if they are the same.
+- [strfind](strfind.md): Search for a string in another string.
+- [strtok](strtok.md): Get the next 'token' (word/parameter) in a string.
+- [strdel](strdel.md): Delete part of a string.
+- [strlen](strlen.md): Get the length of a string.
+- [strmid](strmid.md): Extract part of a string into another string.
+- [strpack](strpack.md): Pack a string into a destination string.
+- [strval](strval.md): Convert a string into an integer.
+- [strcat](strcat.md): Concatenate two strings into a destination reference.

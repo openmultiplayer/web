@@ -5,14 +5,9 @@ description: This callback is called when a filterscript is unloaded.
 tags: []
 ---
 
-
 ## Description
 
 This callback is called when a filterscript is unloaded. It is only called inside the filterscript which is unloaded.
-
-| Name | Description |
-| ---- | ----------- |
-
 
 ## Examples
 

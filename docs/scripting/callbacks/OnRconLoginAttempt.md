@@ -52,12 +52,11 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-This callback is only called when /rcon login is used in-game.
-This callback is only called when the player is not yet logged in. When the player is logged in, OnRconCommand is called instead.
+This callback is only called when /rcon login is used in-game. This callback is only called when the player is not yet logged in. When the player is logged in, OnRconCommand is called instead.
 
 :::
 
 ## Related Functions
 
-- [IsPlayerAdmin](../../scripting/functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
-- [SendRconCommand](../../scripting/functions/SendRconCommand.md): Sends an RCON command via the script.
+- [IsPlayerAdmin](../functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
+- [SendRconCommand](../functions/SendRconCommand.md): Sends an RCON command via the script.

@@ -5,12 +5,9 @@ title: "Keys"
 
 :::note
 
-To be used with [GetPlayerKeys](../functions/GetPlayerKeys) and
-[OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange).
+To be used with [GetPlayerKeys](../functions/GetPlayerKeys) and [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange).
 
-SA-MP uses bitmasking to determine which keys are pressed and which are not.
-Here's an article on bitmasking:
-[http://en.wikipedia.org/wiki/Mask\_(computing)](<http://en.wikipedia.org/wiki/Mask_(computing)>)
+SA-MP uses bitmasking to determine which keys are pressed and which are not. Here's an article on bitmasking: [http://en.wikipedia.org/wiki/Mask\_(computing)](<http://en.wikipedia.org/wiki/Mask_(computing)>)
 
 :::
 
@@ -49,18 +46,12 @@ Here's an article on bitmasking:
 
 or use KEY_HANDBRAKE.
 
-**(2)** Supported since 0.3d. Not detectable in earlier versions. This key can
-not be detected when the player is in
-[spectator mode](../functions/TogglePlayerSpectating).
+**(2)** Supported since 0.3d. Not detectable in earlier versions. This key can not be detected when the player is in [spectator mode](../functions/TogglePlayerSpectating).
 
-**(3)** GROUP_CONTROL_FWD cannot be detected in SA-MP, as it used internally to
-enter vehicles as passenger. However, the gametext definition still exists.
+**(3)** GROUP_CONTROL_FWD cannot be detected in SA-MP, as it used internally to enter vehicles as passenger. However, the gametext definition still exists.
 
 **(4)** If the key number "262144" does not work, just use key number "2".
 
 **(6)** Only detected when "JOYPAD" configuration is selected for controller.
 
-**(7)** Embedding codes only work for
-[client messages](../functions/SendDeathMessage),
-[textdraws](../functions/TextDrawCreate) and
-[gametexts](../functions/GameTextForPlayer).
+**(7)** Embedding codes only work for [client messages](../functions/SendDeathMessage), [textdraws](../functions/TextDrawCreate) and [gametexts](../functions/GameTextForPlayer).

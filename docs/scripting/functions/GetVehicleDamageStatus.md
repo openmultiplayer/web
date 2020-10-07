@@ -7,7 +7,13 @@ tags: ["vehicle"]
 
 :::warning
 
-This Callback was added in SA-MP 0.3a and will not work in earlier versions!
+This callback was added in SA-MP 0.3a and will not work in earlier versions!
+
+:::
+
+:::tip
+
+For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus.md).
 
 :::
 
@@ -34,27 +40,13 @@ Retrieve the damage statuses of a vehicle.
 ```c
 new panels, doors, lights, tires;
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tires]: %d",panels,doors,lights,tires);
+printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tires]: %d", panels, doors, lights, tires);
 ```
-
-## Notes
-
-:::tip
-
-The stored values are bit masks. Bitwise operators will allow you to use the values.
-
-:::
-
-:::tip
-
-For some useful functions for working with vehicle damage values, see here.
-
-:::
 
 ## Related Functions
 
-- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus.md): Update the vehicle damage.
-- [SetVehicleHealth](../functions/SetVehicleHealth.md): Set the health of a vehicle.
-- [GetVehicleHealth](../functions/GetVehicleHealth.md): Check the health of a vehicle.
-- [RepairVehicle](../functions/RepairVehicle.md): Fully repair a vehicle.
+- [UpdateVehicleDamageStatus](UpdateVehicleDamageStatus.md): Update the vehicle damage.
+- [SetVehicleHealth](SetVehicleHealth.md): Set the health of a vehicle.
+- [GetVehicleHealth](GetVehicleHealth.md): Check the health of a vehicle.
+- [RepairVehicle](RepairVehicle.md): Fully repair a vehicle.
 - [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate.md): Called when a vehicle's damage state changes.

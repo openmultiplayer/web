@@ -9,10 +9,6 @@ tags: []
 
 Ends the current gamemode.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

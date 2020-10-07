@@ -3,9 +3,15 @@ title: Damage Status
 description: Information about vehicle damage status and sample code.
 ---
 
-Vehicle damage is stored in 4 values: **Panels**, **Doors**, **Lights** and **Tires**. Each value holds a bit mask of the state of all the panels/doors/light/tires. This means you need to use bitwise operators to work with them (most of the time).
+:::note
 
-For example, the 'tires' status stores 4 bits for the 4 tires. The value is 1 if the tire is popped, and 0 if it is not popped. So, for example, a value of '1010' means both the front tires are popped, and the rear ones are not.
+To be used with [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+
+:::
+
+Vehicle damage is stored in 4 values: **Panels**, **Doors**, **Lights** and **Tires**. Each value holds a bit mask of the state of all the panels, doors, lights or tires. This means you need to use bitwise operators to work with them (most of the time).
+
+For example, the tires status stores 4 bits for the 4 tires. The value is 1 if the tire is popped, and 0 if it is not popped. So, for example, a value of `1010` means both the front tires are popped, and the rear ones are not.
 
 :::note
 
@@ -16,7 +22,7 @@ For more info on tire states, see [Tire States](../resources/tirestates).
 
 :::
 
-To make working with these easier, there are some encoding and decoding functions, which can be found below with example usage.
+To make working with these easier, there are some encoding and decoding functions below.
 
 ```c
 //Panels

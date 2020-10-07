@@ -43,6 +43,6 @@ public OnPlayerRequestClass(playerid, classid)
 
 ## Related Functions
 
-- [SetPlayerSkin](../../scripting/functions/SetPlayerSkin.md): Set a player's skin.
-- [SetPlayerTeam](../../scripting/functions/SetPlayerTeam.md): Set a player's team.
-- [SpawnPlayer](../../scripting/functions/SpawnPlayer.md): Force a player to spawn.
+- [SetPlayerSkin](SetPlayerSkin.md): Set a player's skin.
+- [SetPlayerTeam](SetPlayerTeam.md): Set a player's team.
+- [SpawnPlayer](SpawnPlayer.md): Force a player to spawn.

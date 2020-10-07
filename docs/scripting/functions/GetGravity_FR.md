@@ -9,10 +9,6 @@ tags: []
 
 Permets d'obtenir la valeur de la gravité.
 
-| Name | Description |
-| ---- | ----------- |
-
-
 ## Examples
 
 ```c

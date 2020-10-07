@@ -49,7 +49,7 @@ This function is known to return unreliable values when used in OnPlayerDisconne
 
 ## Related Functions
 
-- [SetPlayerPos](../functions/SetPlayerPos.md): Set a player's position.
-- [GetVehiclePos](../functions/GetVehiclePos.md): Get the position of a vehicle.
-- [IsPlayerInRangeOfPoint](../functions/IsPlayerInRangeOfPoint.md): Check whether a player is in range of a point.
-- [GetPlayerDistanceFromPoint](../functions/GetPlayerDistanceFromPoint.md): Get the distance between a player and a point.
+- [SetPlayerPos](SetPlayerPos.md): Set a player's position.
+- [GetVehiclePos](GetVehiclePos.md): Get the position of a vehicle.
+- [IsPlayerInRangeOfPoint](IsPlayerInRangeOfPoint.md): Check whether a player is in range of a point.
+- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint.md): Get the distance between a player and a point.

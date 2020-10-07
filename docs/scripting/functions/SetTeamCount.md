@@ -30,5 +30,5 @@ public OnGameModeInit( )
 
 ## Related Functions
 
-- [GetPlayerTeam](../../scripting/functions/GetPlayerTeam.md): Check what team a player is on.
-- [SetPlayerTeam](../../scripting/functions/SetPlayerTeam.md): Set a player's team.
+- [GetPlayerTeam](GetPlayerTeam.md): Check what team a player is on.
+- [SetPlayerTeam](SetPlayerTeam.md): Set a player's team.

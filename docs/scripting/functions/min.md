@@ -42,5 +42,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [min](../../scripting/functions/min.md): Compare and get the minimum value .
-- [max](../../scripting/functions/max.md): Compare and get the maximum value .
+- [min](min.md): Compare and get the minimum value .
+- [max](max.md): Compare and get the maximum value .

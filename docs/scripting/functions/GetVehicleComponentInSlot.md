@@ -45,17 +45,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Known Bug(s):
-Doesn't work for CARMODTYPE_STEREO.
-Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
-Both rear bull bars and rear bumper components are saved in the CARMODTYPE_REAR_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
-Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+Known Bug(s): Doesn't work for CARMODTYPE_STEREO. Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last. Both rear bull bars and rear bumper components are saved in the CARMODTYPE_REAR_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last. Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
 
 :::
 
 ## Related Functions
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Add a component to a vehicle.
-- [GetVehicleComponentType](../functions/GetVehicleComponentType.md): Check the type of component via the ID.
+- [AddVehicleComponent](AddVehicleComponent.md): Add a component to a vehicle.
+- [GetVehicleComponentType](GetVehicleComponentType.md): Check the type of component via the ID.
 - [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.

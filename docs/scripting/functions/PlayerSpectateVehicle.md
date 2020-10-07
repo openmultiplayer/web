@@ -32,12 +32,11 @@ PlayerSpectateVehicle(playerid, vehicleid);
 
 :::warning
 
-Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectateVehicle.
-The playerid and vehicleid have to be in the same interior and virtual world for this function to work properly.
+Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectateVehicle. The playerid and vehicleid have to be in the same interior and virtual world for this function to work properly.
 
 :::
 
 ## Related Functions
 
-- [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer.md): Spectate a player.
-- [TogglePlayerSpectating](../functions/TogglePlayerSpectating.md): Start or stop spectating.
+- [PlayerSpectatePlayer](PlayerSpectatePlayer.md): Spectate a player.
+- [TogglePlayerSpectating](TogglePlayerSpectating.md): Start or stop spectating.

@@ -33,14 +33,12 @@ The vehicle's doors state is stored in the specified variables.
 
 The values returned in each variable are as follows:
 
--1: Door state not set
-1: Open
-0: Closed
+-1: Door state not set 1: Open 0: Closed
 
 :::
 
 ## Related Functions
 
-- [SetVehicleParamsCarDoors](../functions/SetVehicleParamsCarDoors.md): Open and close the doors of a vehicle.
-- [SetVehicleParamsCarWindows](../functions/SetVehicleParamsCarWindows.md): Open and close the windows of a vehicle.
-- [GetVehicleParamsCarWindows](../functions/GetVehicleParamsCarWindows.md): Retrive the current state of a vehicle's windows
+- [SetVehicleParamsCarDoors](SetVehicleParamsCarDoors.md): Open and close the doors of a vehicle.
+- [SetVehicleParamsCarWindows](SetVehicleParamsCarWindows.md): Open and close the windows of a vehicle.
+- [GetVehicleParamsCarWindows](GetVehicleParamsCarWindows.md): Retrive the current state of a vehicle's windows

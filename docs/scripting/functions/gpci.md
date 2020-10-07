@@ -71,5 +71,5 @@ ReturnGPCI(iPlayerID)
 
 ## Related Functions
 
-- [GetNetworkStats]../functions/GetNetworkStats): Gets the servers networkstats and saves it into a string.
-- [GetPlayerNetworkStats](../functions/GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
+- [GetNetworkStats]GetNetworkStats): Gets the servers networkstats and saves it into a string.
+- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.

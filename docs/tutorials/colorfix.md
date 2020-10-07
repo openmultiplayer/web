@@ -4,9 +4,7 @@ title: "Color Fix"
 descripion: A basic script to add more player colours.
 ---
 
-This tutorial is to be used with [GetPlayerColor](../../scripting/functions/GetPlayerColor.md),
-if you do not use [SetPlayerColor](../../scripting/functions/SetPlayerColor.md) in your script
-when players connect.
+This tutorial is to be used with [GetPlayerColor](../../scripting/functions/GetPlayerColor.md), if you do not use [SetPlayerColor](../../scripting/functions/SetPlayerColor.md) in your script when players connect.
 
 ```c
 new PlayerColors[] = {
@@ -111,6 +109,4 @@ new PlayerRainbowColors[511] = {
 };
 ```
 
-Now there are no duplicated colors, the colors are distributed to the maximum
-number of slots, the step of color - 34, and the TAB of full server looks like a
-rainbow!
+Now there are no duplicated colors, the colors are distributed to the maximum number of slots, the step of color - 34, and the TAB of full server looks like a rainbow!

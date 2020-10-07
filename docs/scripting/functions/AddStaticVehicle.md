@@ -9,15 +9,15 @@ tags: ["vehicle"]
 
 Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 
-| Name                                                  | Description                            |
-| ----------------------------------------------------- | -------------------------------------- |
-| modelid                                               | The Model ID for the vehicle.          |
-| Float:spawn_X                                         | The X-coordinate for the vehicle.      |
-| Float:spawn_Y                                         | The Y-coordinate for the vehicle.      |
-| Float:spawn_Z                                         | The Z-coordinate for the vehicle.      |
-| Float:z_angle                                         | Direction of vehicle - angle.          |
-| [color1](../../scripting/resources/vehiclecolorid.md) | The primary color ID. -1 for random.   |
-| [color2](../../scripting/resources/vehiclecolorid.md) | The secondary color ID. -1 for random. |
+| Name                                     | Description                            |
+| ---------------------------------------- | -------------------------------------- |
+| modelid                                  | The Model ID for the vehicle.          |
+| Float:spawn_X                            | The X-coordinate for the vehicle.      |
+| Float:spawn_Y                            | The Y-coordinate for the vehicle.      |
+| Float:spawn_Z                            | The Z-coordinate for the vehicle.      |
+| Float:z_angle                            | Direction of vehicle - angle.          |
+| [color1](../resources/vehiclecolorid.md) | The primary color ID. -1 for random.   |
+| [color2](../resources/vehiclecolorid.md) | The secondary color ID. -1 for random. |
 
 ## Returns
 
@@ -39,6 +39,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [AddStaticVehicleEx](../../scripting/functions/AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
-- [CreateVehicle](../../scripting/functions/CreateVehicle.md): Create a vehicle.
-- [DestroyVehicle](../../scripting/functions/DestroyVehicle.md): Destroy a vehicle.
+- [AddStaticVehicleEx](AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
+- [CreateVehicle](CreateVehicle.md): Create a vehicle.
+- [DestroyVehicle](DestroyVehicle.md): Destroy a vehicle.

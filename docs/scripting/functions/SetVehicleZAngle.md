@@ -44,12 +44,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::**tip**
 
-A vehicle's X and Y (pitch and roll) rotation will be reset when this function is used. The X and Y rotations can not be set.
-This function does not work on unoccupied vehicles (It is believed to be a GTA limitation).
+A vehicle's X and Y (pitch and roll) rotation will be reset when this function is used. The X and Y rotations can not be set. This function does not work on unoccupied vehicles (It is believed to be a GTA limitation).
 
 :::
 
 ## Related Functions
 
-- [GetVehicleZAngle](../functions/GetVehicleZAngle.md): Check the current angle of a vehicle.
-- [SetVehiclePos](../functions/SetVehiclePos.md): Set the position of a vehicle.
+- [GetVehicleZAngle](GetVehicleZAngle.md): Check the current angle of a vehicle.
+- [SetVehiclePos](SetVehiclePos.md): Set the position of a vehicle.
