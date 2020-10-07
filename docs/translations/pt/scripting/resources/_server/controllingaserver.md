@@ -152,44 +152,44 @@ Digite cmdlist para comandos (ou, varlist para variáveis) dando assim uso ao RC
 
 Estas são as funções que você como admin pode usar:
 
-| Comando | Descrição |
-| --- | --- |
-| `/rcon cmdlist` | Mostra a lista de comandos. |
-| `/rcon varlist` | Mostra a lista com as variáveis atuais. |
-| `/rcon exit` | Fecha o servidor. |
-| `/rcon echo [text]` | Mostra o `[text]` no console do servidor (NÃO no console do jogador). |
-| `/rcon hostname [name]` | Muda o nome da host (_exemplo: /rcon hostname meu servidor_). |
-| `/rcon gamemodetext [name]` | Muda o texto do gamemode (_exemplo: /rcon gamemodetext minha GM_). |
-| `/rcon mapname [name]` | Muda o nome do mapa (_exemplo: /rcon mapname San Andreas_). |
-| `/rcon exec [filename]` | Executa o arquivo que contém o server.cfg (_exemplo: /rcon exec blah.cfg_). |
-| `/rcon kick [ID]` | Kick o jogador de determinado ID (_exemplo: /rcon kick 2_). |
-| `/rcon ban [ID]` | Bane o jogador de determinado ID (_exemplo: /rcon ban 2_). |
-| `/rcon changemode [mode]` | Este comando irá alternar entre as gamemode's (_exemplo: /rcon changemode sftdm_). |
-| `/rcon gmx` | Irá carregar a próxima gamemode no server.cfg. |
-| `/rcon reloadbans` | Carrega e reliza uma nova leitura do samp.ban |
-| `/rcon reloadlog` | Carrega novamente o server_log.txt. |
-| `/rcon say` | Mostra uma mensagem no console dos jogadores (\_exemplo: `/rcon say olá` irá mostrar `Admin: olá`). |
-| `/rcon players` | Mostra os jogadores que estão no servidor (Com nome, IP e ping). |
-| `/rcon banip [IP]` | Bane determinado IP (_exemplo: /rcon banip 127.0.0.1_). |
-| `/rcon unbanip [IP]` | Desbane determinado IP (_exemplo: /rcon unbanip 127.0.0.1_). |
-| `/rcon gravity` | Muda a gravidade (_exemplo: /rcon gravity 0.008_). |
-| `/rcon weather [ID]` | Muda o clima (_exemplo: /rcon weather 1_). |
-| `/rcon loadfs` | Carrega o determinado filterscript (_exemplo: /rcon loadfs adminfs_). |
-| `/rcon weburl [server url]` | Muda o URL do servidor no cliente |
-| `/rcon unloadfs` | Descarrega o determinado filterscript (_exemplo: /rcon unloadfs adminfs_). |
-| `/rcon reloadfs` | Recarrega o determinado filterscript (_exemplo: /rcon reloadfs adminfs_). |
-| `/rcon rcon\_password [PASSWORD]` | Muda a senha do RCON |
-| `/rcon password [password]` | Coloca/Reseta a senha do servidor |
+| Comando                           | Descrição                                                                                           |
+| --------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `/rcon cmdlist`                   | Mostra a lista de comandos.                                                                         |
+| `/rcon varlist`                   | Mostra a lista com as variáveis atuais.                                                             |
+| `/rcon exit`                      | Fecha o servidor.                                                                                   |
+| `/rcon echo [text]`               | Mostra o `[text]` no console do servidor (NÃO no console do jogador).                               |
+| `/rcon hostname [name]`           | Muda o nome da host (_exemplo: /rcon hostname meu servidor_).                                       |
+| `/rcon gamemodetext [name]`       | Muda o texto do gamemode (_exemplo: /rcon gamemodetext minha GM_).                                  |
+| `/rcon mapname [name]`            | Muda o nome do mapa (_exemplo: /rcon mapname San Andreas_).                                         |
+| `/rcon exec [filename]`           | Executa o arquivo que contém o server.cfg (_exemplo: /rcon exec blah.cfg_).                         |
+| `/rcon kick [ID]`                 | Kick o jogador de determinado ID (_exemplo: /rcon kick 2_).                                         |
+| `/rcon ban [ID]`                  | Bane o jogador de determinado ID (_exemplo: /rcon ban 2_).                                          |
+| `/rcon changemode [mode]`         | Este comando irá alternar entre as gamemode's (_exemplo: /rcon changemode sftdm_).                  |
+| `/rcon gmx`                       | Irá carregar a próxima gamemode no server.cfg.                                                      |
+| `/rcon reloadbans`                | Carrega e reliza uma nova leitura do samp.ban                                                       |
+| `/rcon reloadlog`                 | Carrega novamente o server_log.txt.                                                                 |
+| `/rcon say`                       | Mostra uma mensagem no console dos jogadores (\_exemplo: `/rcon say olá` irá mostrar `Admin: olá`). |
+| `/rcon players`                   | Mostra os jogadores que estão no servidor (Com nome, IP e ping).                                    |
+| `/rcon banip [IP]`                | Bane determinado IP (_exemplo: /rcon banip 127.0.0.1_).                                             |
+| `/rcon unbanip [IP]`              | Desbane determinado IP (_exemplo: /rcon unbanip 127.0.0.1_).                                        |
+| `/rcon gravity`                   | Muda a gravidade (_exemplo: /rcon gravity 0.008_).                                                  |
+| `/rcon weather [ID]`              | Muda o clima (_exemplo: /rcon weather 1_).                                                          |
+| `/rcon loadfs`                    | Carrega o determinado filterscript (_exemplo: /rcon loadfs adminfs_).                               |
+| `/rcon weburl [server url]`       | Muda o URL do servidor no cliente                                                                   |
+| `/rcon unloadfs`                  | Descarrega o determinado filterscript (_exemplo: /rcon unloadfs adminfs_).                          |
+| `/rcon reloadfs`                  | Recarrega o determinado filterscript (_exemplo: /rcon reloadfs adminfs_).                           |
+| `/rcon rcon\_password [PASSWORD]` | Muda a senha do RCON                                                                                |
+| `/rcon password [password]`       | Coloca/Reseta a senha do servidor                                                                   |
 
 **Os comandos seguintes estão apenas disponíveis no SA-MP 0.3z R2 e superior**:
 
-| Command | Description |
-| --- | --- |
-| `/rcon messageslimit [count]` | Muda o número e mensagens por segundo que um jogador pode enviar. (padrão: 500) |
-| `/rcon ackslimit [count]` | Muda o limite de acks (padrão: 1000) (Desde 0.3z R2-2, o limite padrão é 3000) |
-| `/rcon messageholelimit [count]` | Muda o limite dos "buracos" na mensagem: (Disponível na 0.3z R1) (padrão: 3000) |
-| `/rcon playertimeout [limit m/s]` | Muda o tempo em milisegundos quando um jogador cai. (padrão: 1000) |
-| `/rcon language [language]` | Muda a língua do servidor (_example: /rcon language English_). |
+| Command                           | Description                                                                     |
+| --------------------------------- | ------------------------------------------------------------------------------- |
+| `/rcon messageslimit [count]`     | Muda o número e mensagens por segundo que um jogador pode enviar. (padrão: 500) |
+| `/rcon ackslimit [count]`         | Muda o limite de acks (padrão: 1000) (Desde 0.3z R2-2, o limite padrão é 3000)  |
+| `/rcon messageholelimit [count]`  | Muda o limite dos "buracos" na mensagem: (Disponível na 0.3z R1) (padrão: 3000) |
+| `/rcon playertimeout [limit m/s]` | Muda o tempo em milisegundos quando um jogador cai. (padrão: 1000)              |
+| `/rcon language [language]`       | Muda a língua do servidor (_example: /rcon language English_).                  |
 
 ### Funções e Callbacks relacionadas
 
