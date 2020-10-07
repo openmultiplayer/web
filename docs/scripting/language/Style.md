@@ -201,8 +201,8 @@ Functions must be named with `PascalCase`.
 
 #### Global Variables
 
-Global variables must always use `g` prefixed PascalCase, so `gVariableName` and
-should generally always be `static`.
+Global variables declared using `new` must always use `g_` prefixed PascalCase, so `g_VariableName`,
+however if they are declared using `static` they must always use `s_` prefixed PascalCase, so `s_VariableName`
 
 Constant globals must use `SCREAMING_SNAKE_CASE`.
 
@@ -221,22 +221,29 @@ Enumerators, if named, must be prefixed with `E_` and use
 `Index tag mismatch` warning, in which case an `e_` prefix may be used.
 `SCREAMING_SNAKE_CASE` must still be used even with the lower case `e_` prefix.
 
-Enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator
-name as a prefix.
-
 ```pawn
-static enum E_PLAYER {
-    E_PLAYER_CASH,
-    Float:E_PLAYER_HEALTH,
+static enum E_PLAYER_DATA {
+    e_PlayerCash,
+    Float:e_PlayerHealth,
 }
 ```
 
 To avoid index tag warnings in some cases:
 
 ```pawn
-static enum e_PLAYER {
-    e_PLAYER_CASH,
-    Float:e_PLAYER_HEALTH,
+static enum e_PLAYER_DATA {
+    e_PlayerCash,
+    Float:e_PlayerHealth,
+}
+```
+
+Non-named enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator
+name as a prefix.
+
+```pawn
+static enum {
+    ENUMATOR_INTEGER,
+    Float:ENUMATOR_FLOAT,
 }
 ```
 
