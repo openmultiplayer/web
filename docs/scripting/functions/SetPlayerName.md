@@ -38,9 +38,18 @@ if (strcmp(cmdtext, "/superman", true) == 0)
 {
     switch (SetPlayerName(playerid, "Superman"))
     {
-        case -1: SendClientMessage(playerid, 0xFF0000FF, "Unable to change your name, someone else is known as 'Superman' already.");
-        case 0: SendClientMessage(playerid, 0xFF0000FF, "You are already known as 'Superman'");
-        case 1: SendClientMessage(playerid, 0x00FF00FF, "You are now known as 'Superman'");
+        case -1:
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Unable to change your name, someone else is known as 'Superman' already.");
+        }
+        case 0:
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "You are already known as 'Superman'");
+        }
+        case 1:
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "You are now known as 'Superman'");
+        }
     }
     return 1;
 }

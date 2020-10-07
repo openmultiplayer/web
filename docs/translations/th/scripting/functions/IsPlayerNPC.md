@@ -32,8 +32,8 @@ public OnPlayerConnect(playerid)
 {
     if (IsPlayerNPC(playerid))
     {
-    SendClientMessageToAll(-1, "An NPC connected!");
-    return 1;
+        SendClientMessageToAll(-1, "An NPC connected!");
+        return 1;
     }
 }
 ```

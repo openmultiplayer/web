@@ -27,7 +27,9 @@ public OnPlayerConnect(playerid)
     new plrIP[16];
     GetPlayerIp(playerid, plrIP, sizeof(plrIP));
     if (!strcmp(plrIP, "127.0.0.1"))
-    SendClientMessage(playerid, 0xFFFFFFFF, "Welcome to your server, master :)");
+    {
+        SendClientMessage(playerid, 0xFFFFFFFF, "Welcome to your server, master :)");
+    }
     return 1;
 }
 ```

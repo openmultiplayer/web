@@ -30,7 +30,10 @@ if (strcmp(cmdtext, "/repair", true) == 0)
     new Float:health;
     new veh = GetPlayerVehicleID(playerid);
     GetVehicleHealth(veh, health);
-    if (health > 500) return SendClientMessage(playerid, COLOR_RED, "Vehicle doesn't need repairing!");
+    if (health > 500)
+    {
+        return SendClientMessage(playerid, COLOR_RED, "Vehicle doesn't need repairing!");
+    }
     SetVehicleHealth(veh, 1000);
     SendClientMessage(playerid, COLOR_GREEN, "Vehicle repaired!");
 }

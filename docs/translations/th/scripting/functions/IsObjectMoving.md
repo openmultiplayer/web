@@ -26,7 +26,10 @@ Checks if the given objectid is moving.
 ## ตัวอย่าง
 
 ```c
-if (IsObjectMoving(objectid)) StopObject(objectid);
+if (IsObjectMoving(objectid))
+{
+	StopObject(objectid);
+}
 ```
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน

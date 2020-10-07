@@ -46,7 +46,10 @@ public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, 
     GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
     if (!playerobject) // If this is a global object, sync the position for other players
     {
-        if (!IsValidObject(objectid)) return 1;
+        if (!IsValidObject(objectid))
+        {
+            return 1;
+        }
         SetObjectPos(objectid, fX, fY, fZ);
         SetObjectRot(objectid, fRotX, fRotY, fRotZ);
     }

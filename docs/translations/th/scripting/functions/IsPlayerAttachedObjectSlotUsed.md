@@ -32,9 +32,12 @@ Check if a player has an object attached in the specified index (slot).
 stock CountAttachedObjects(playerid)
 {
     new count;
-    for(new i=0; i<MAX_PLAYER_ATTACHED_OBJECTS; i++)
+    for(new i = 0; i < MAX_PLAYER_ATTACHED_OBJECTS; i++)
     {
-        if (IsPlayerAttachedObjectSlotUsed(playerid, i)) count++;
+        if (IsPlayerAttachedObjectSlotUsed(playerid, i))
+        {
+            count++;
+        }
     }
     return count;
 }
