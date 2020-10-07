@@ -15,12 +15,12 @@ Ta funkcja została dodana w wersji 0.3-DL R1 i nie będzie działać w starszyc
 
 Dodaje 'customowy skin' inaczej skórkę do pobrania. Ten obiekt będzie pobrany do ścieżki Dokumenty\GTA San Andreas User Files\SAMP\cache pod nazwą adresu IP serwera i jego portu (tzw. format nazw CRC).
 
-| Nazwa   | Opis                                                                                                  |
-| ------- | -------------------------------------------------------------------------------------------------------------- |
-| baseid  | Zmienna przechowująca wartość domyślnego ID skina dla gracza, jeśli skin nie pobierze się on prawidłowo.  |
-| newid   | Nowe ID skina z zakresu 20000 do 30000 (10000 slotów) do użycia potem z SetPlayerSkin.           |
-| dffname | Nazwa pliku kolizji modelu .dff znajdującego się w folderze models (domyślnie przez serwer: ustawienie artpath w server.cfg)           |
-| txdname |  Nazwa pliku textury modelu .txd znajdującej się w folderze models (domyślnie przez serwer: ustawienie artpath w server.cfg)            |
+| Nazwa   | Opis                                                                                                                         |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| baseid  | Zmienna przechowująca wartość domyślnego ID skina dla gracza, jeśli skin nie pobierze się on prawidłowo.                     |
+| newid   | Nowe ID skina z zakresu 20000 do 30000 (10000 slotów) do użycia potem z SetPlayerSkin.                                       |
+| dffname | Nazwa pliku kolizji modelu .dff znajdującego się w folderze models (domyślnie przez serwer: ustawienie artpath w server.cfg) |
+| txdname | Nazwa pliku textury modelu .txd znajdującej się w folderze models (domyślnie przez serwer: ustawienie artpath w server.cfg)  |
 
 ## Zwracane wartości
 
