@@ -216,10 +216,7 @@ names, apart from:
 
 #### Enumerators
 
-Enumerators, if named, must be prefixed with `E_` and use
-`SCREAMING_SNAKE_CASE`. The one exception is when avoiding a
-`Index tag mismatch` warning, in which case an `e_` prefix may be used.
-`SCREAMING_SNAKE_CASE` must still be used even with the lower case `e_` prefix.
+Enumerators, if named, must be prefixed with `E_` (a strong tag) or `e_` (a weak tag)
 
 ```pawn
 static enum E_PLAYER_DATA {
@@ -228,7 +225,7 @@ static enum E_PLAYER_DATA {
 }
 ```
 
-To avoid index tag warnings in some cases:
+Using a weak tag
 
 ```pawn
 static enum e_PLAYER_DATA {
