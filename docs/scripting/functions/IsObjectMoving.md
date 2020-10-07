@@ -26,7 +26,10 @@ Checks if the given objectid is moving.
 ## Examples
 
 ```c
-if (IsObjectMoving(objectid)) StopObject(objectid);
+if (IsObjectMoving(objectid))
+{
+	StopObject(objectid);
+}
 ```
 
 ## Related Functions

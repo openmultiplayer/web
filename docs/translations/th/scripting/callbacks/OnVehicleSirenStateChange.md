@@ -34,8 +34,14 @@ This callback is called when a vehicle's siren is toggled.
 ```c
 public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 {
-    if (newstate) GameTextForPlayer(playerid, "~W~Siren ~G~on", 1000, 3);
-    else GameTextForPlayer(playerid, "~W~Siren ~r~off", 1000, 3);
+    if (newstate)
+    {
+        GameTextForPlayer(playerid, "~W~Siren ~G~on", 1000, 3);
+    }
+    else
+    {
+        GameTextForPlayer(playerid, "~W~Siren ~r~off", 1000, 3);
+    }
     return 1;
 }
 ```

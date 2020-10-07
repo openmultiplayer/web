@@ -27,7 +27,10 @@ The ID of the vehicle that the player is surfing. If they are not surfing a vehi
 
 ```c
 new surfingVehicleId = GetPlayerSurfingVehicleID(playerid);
-if (surfingVehicleId == INVALID_VEHICLE_ID) SendClientMessage(playerid, COLOR_RED, "You are not surfing.");
+if (surfingVehicleId == INVALID_VEHICLE_ID)
+{
+	SendClientMessage(playerid, COLOR_RED, "You are not surfing.");
+}
 ```
 
 ## Related Functions

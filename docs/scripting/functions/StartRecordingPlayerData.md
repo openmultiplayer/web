@@ -30,11 +30,11 @@ This function does not return any specific values.
 ```c
 if (!strcmp("/recordme", cmdtext))
 {
-    if (GetPlayerState(playerid) == 1)
+    if (GetPlayerState(playerid) == PLAYER_STATE_ONFOOT)
     {
         StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_ONFOOT, "MyFile");
     }
-    else if (GetPlayerState(playerid) == 2)
+    else if (GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
     {
         StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_DRIVER, "MyFile");
     }
