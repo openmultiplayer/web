@@ -1,13 +1,13 @@
 ---
 id: ClearAnimations
 title: ClearAnimations
-description: Clears all animations for the given player (it also cancels all current tasks such as jetpacking,parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.
+description: Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.
 tags: []
 ---
 
 ## Description
 
-Clears all animations for the given player (it also cancels all current tasks such as jetpacking,parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.. ).
+Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.. ).
 
 | Name      | Description                                                                                        |
 | --------- | -------------------------------------------------------------------------------------------------- |

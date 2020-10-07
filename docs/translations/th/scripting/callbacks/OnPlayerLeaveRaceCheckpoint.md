@@ -22,7 +22,7 @@ This callback is called when a player leaves the race checkpoint.
 ```c
 public OnPlayerLeaveRaceCheckpoint(playerid)
 {
-    printf("Player %d left a race checkpoint!",playerid);
+    printf("Player %d left a race checkpoint!", playerid);
     return 1;
 }
 ```

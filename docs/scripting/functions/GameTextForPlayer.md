@@ -32,6 +32,12 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
+## Notes
+
+:::warning
+
+Do note that the players can crash if invalid number of tilde (~) is in the game text.
+
 ## Related Functions
 
 - [GameTextForAll](GameTextForAll): Display gametext to all players.

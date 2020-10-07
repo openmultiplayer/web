@@ -22,7 +22,7 @@ This callback is called when a player enters a race checkpoint.
 ```c
 public OnPlayerEnterRaceCheckpoint(playerid)
 {
-    printf("Player %d entered a race checkpoint!",playerid);
+    printf("Player %d entered a race checkpoint!", playerid);
     return 1;
 }
 ```

@@ -22,7 +22,7 @@ It is always called first in filterscripts.
 ```c
 public OnPlayerLeaveCheckpoint(playerid)
 {
-    printf("Player %i left a checkpoint!",playerid);
+    printf("Player %i left a checkpoint!", playerid);
     return 1;
 }
 ```

@@ -14,7 +14,7 @@ Returns the maximum number of players that can join the server, as set by the se
 ```c
 new str[128];
 format(str, sizeof(str), "There are %i slots on this server!", GetMaxPlayers());
-SendClientMessage(playerid, 0xFFFFFFFF, s);
+SendClientMessage(playerid, 0xFFFFFFFF, str);
 ```
 
 ## Notes

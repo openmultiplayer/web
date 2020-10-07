@@ -26,10 +26,13 @@ It is always called first in filterscripts.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new string[64], pName[MAX_PLAYER_NAME];
-    GetPlayerName(playerid,pName,MAX_PLAYER_NAME);
-    format(string,sizeof string,"%s has joined the server. Welcome!",pName);
-    SendClientMessageToAll(0xFFFFFFAA,string);
+    new
+        string[64],
+        pName[MAX_PLAYER_NAME];
+
+    GetPlayerName(playerid, pName, MAX_PLAYER_NAME);
+    format(string, sizeof string, "%s has joined the server. Welcome!", pName);
+    SendClientMessageToAll(0xFFFFFFAA, string);
     return 1;
 }
 ```
