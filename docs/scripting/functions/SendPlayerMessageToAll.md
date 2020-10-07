@@ -24,9 +24,10 @@ This function does not return any specific values.
 public OnPlayerText(playerid, text[])
 {
     // format a message to contain the player's id in front of it
-    new string[128];
-    format(string, sizeof(string), "(%d) %s", playerid, text);
+    new
+        string[128];
 
+    format(string, sizeof(string), "(%d): %s", playerid, text);
     SendPlayerMessageToAll(playerid, string);
 
     return 0; // return 0 prevents the original message being sent

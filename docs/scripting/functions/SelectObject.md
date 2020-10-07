@@ -28,7 +28,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/select", true))
+    if (!strcmp(cmdtext, "/select", true))
     {
         SelectObject(playerid);
         SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: Please select the object you'd like to edit!");

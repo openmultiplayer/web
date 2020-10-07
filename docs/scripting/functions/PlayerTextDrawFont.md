@@ -32,14 +32,20 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new PlayerText:welcomeText[MAX_PLAYERS];
+new PlayerText:gWelcomeText[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
     // First, create the textdraw
-    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 240.0, 580.0, "Welcome to my SA-MP server");
-    // Set the font of player-textdraw 'welcomeText' to 2.
-    PlayerTextDrawFont(playerid, welcomeText[playerid], 2);
+    gWelcomeText[playerid] = CreatePlayerTextDraw(playerid, 240.0, 580.0, "Welcome to my SA-MP server");
+    // Set the font of player-textdraw 'gWelcomeText' to 2.
+    PlayerTextDrawFont(playerid, gWelcomeText[playerid], 2);
+}
+
+public OnPlayerDisconnect(playerid)
+{
+    PlayerTextDrawHide(playerid, gWelcomeText[playerid]);
+}
 ```
 
 ## Related Functions

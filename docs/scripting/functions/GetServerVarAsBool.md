@@ -29,7 +29,7 @@ The value of the specified server variable. 0 if the specified server variable i
 public OnGameModeInit()
 {
     new queryEnabled = GetServerVarAsBool("query");
-    if(!queryEnabled)
+    if (!queryEnabled)
     {
         print("WARNING: Querying is disabled. The server will appear offline in the server browser.");
     }

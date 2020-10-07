@@ -23,7 +23,7 @@ It is always called first in filterscripts so returning 1 there blocks other scr
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/help", true))
+    if (!strcmp(cmdtext, "/help", true))
     {
         SendClientMessage(playerid, -1, "SERVER: This is the /help command!");
         return 1;

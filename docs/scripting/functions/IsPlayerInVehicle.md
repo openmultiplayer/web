@@ -23,19 +23,19 @@ Checks if a player is in a specific vehicle.
 ## Examples
 
 ```c
-new specialcar;
+new gSpecialCar;
 
 public OnGameModeInit()
 {
-    specialcar = AddStaticVehicle(411, 0.0, 0.0, 5.0, 0.0, -1, -1);
+    gSpecialCar = AddStaticVehicle(411, 0.0, 0.0, 5.0, 0.0, -1, -1);
     return 1;
 }
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/specialcar", true) == 0)
+    if (strcmp(cmdtext, "/gSpecialCar", true) == 0)
     {
-        if(IsPlayerInVehicle(playerid, specialcar))
+        if (IsPlayerInVehicle(playerid, gSpecialCar))
         {
             SendClientMessage(playerid, -1, "You're in the special car!");
         }

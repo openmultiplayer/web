@@ -38,7 +38,8 @@ Retrieve the damage statuses of a vehicle.
 ## Examples
 
 ```c
-new panels, doors, lights, tires;
+new
+	panels, doors, lights, tires;
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
 printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tires]: %d", panels, doors, lights, tires);
 ```

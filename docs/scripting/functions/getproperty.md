@@ -38,6 +38,12 @@ strunpack(value, value, sizeof(value));
 print(value);
 ```
 
+## Notes
+
+:::tip
+
+It is recommended to use the PVars/ SVars or GVar plugin instead of these natives for being very slow.
+
 ## Related Functions
 
 - [Setproperty](Setproperty.md): Set a property.

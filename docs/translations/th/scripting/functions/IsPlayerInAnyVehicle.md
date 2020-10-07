@@ -24,9 +24,9 @@ Check if a player is inside any vehicle (as a driver or passenger).
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/invehicle", true) == 0)
+    if (strcmp(cmdtext, "/invehicle", true) == 0)
     {
-        if(IsPlayerInAnyVehicle(playerid)) SendClientMessage(playerid, 0x00FF00AA, "You're in a vehicle.");
+        if (IsPlayerInAnyVehicle(playerid)) SendClientMessage(playerid, 0x00FF00AA, "You're in a vehicle.");
         return 1;
     }
     return 0;

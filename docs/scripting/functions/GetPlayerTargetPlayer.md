@@ -29,8 +29,8 @@ The ID of the target player, or INVALID_PLAYER_ID if none.
 public OnPlayerUpdate(playerid)
 {
     // Store the ID
-    new targetplayer = GetPlayerTargetPlayer(playerid);
-    if(GetPlayerTeam(targetplayer) == GetPlayerTeam(playerid) && targetplayer != INVALID_PLAYER_ID)
+    new playerTargetId = GetPlayerTargetPlayer(playerid);
+    if (playerTargetId != INVALID_PLAYER_ID && GetPlayerTeam(playerTargetId) == GetPlayerTeam(playerid))
     {
         GameTextForPlayer(playerid, "~R~do not shoot at team-mates!", 5000, 3);
     }

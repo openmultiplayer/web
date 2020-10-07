@@ -33,7 +33,7 @@ new PlayerText:pVehicleHealthTD[MAX_PLAYERS];
 
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if(newstate == 2) // Entered a vehicle as driver
+    if (newstate == 2) // Entered a vehicle as driver
     {
         pVehicleHealthTD[playerid] = CreatePlayerTextDraw(playerid, x, y, " ");
         PlayerTextDrawShow(playerid, pVehicleHealthTD[playerid]);
@@ -41,7 +41,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
         // Set a timer to update the textdraw every second
         pVehicleHealthTimer[playerid] = SetTimerEx("vhealth_td_update", 1000, true, "i", playerid);
     }
-    if(oldstate == 2)
+    if (oldstate == 2)
     {
         KillTimer(pVehicleHealthTD[playerid]);
         PlayerTextDrawDestroy(playerid, pVehicleHealthTD[playerid]);

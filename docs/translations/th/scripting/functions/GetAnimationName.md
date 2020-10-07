@@ -32,7 +32,7 @@ Get the animation library/name for the index.
 ```c
 public OnPlayerUpdate(playerid)
 {
-    if(GetPlayerAnimationIndex(playerid))
+    if (GetPlayerAnimationIndex(playerid))
     {
         new animlib[32];
         new animname[32];

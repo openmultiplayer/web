@@ -31,8 +31,8 @@ The actor's facing angle is stored in the specified variable.
 ## Examples
 
 ```c
-new Float:angle;
-GetActorFacingAngle(actorid, angle);
+new Float:facingAngle;
+GetActorFacingAngle(actorid, facingAngle);
 ```
 
 ## Related Functions

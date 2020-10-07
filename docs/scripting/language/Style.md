@@ -49,7 +49,7 @@ A compound statement is a collection of statements surrounded by braces.
 This is a compound statement composed of two statements.
 
 ```c
-if(a == b)
+if (a == b)
 {
     print("hello!");
 }
@@ -154,7 +154,7 @@ func()
 ```pawn
 func()
 {
-    if()
+    if ()
     {
         singleLineExpr();
     }
@@ -164,11 +164,11 @@ func()
 ```pawn
 func()
 {
-    if()
+    if ()
     {
         singleLineExpr();
     }
-    else if()
+    else if ()
     {
         //
     }

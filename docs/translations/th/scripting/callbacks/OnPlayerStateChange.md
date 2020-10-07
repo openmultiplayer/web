@@ -26,7 +26,7 @@ Refer to [Player States](../../scripting/resources/playerstates.md) for a list o
 ```c
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if(oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Player entered a vehicle as a driver
+    if (oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Player entered a vehicle as a driver
     {
         new vehicleid = GetPlayerVehicleID(playerid);
         AddVehicleComponent(vehicleid, 1010); // Add NOS to the vehicle

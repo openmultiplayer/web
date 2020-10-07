@@ -29,7 +29,7 @@ This function always returns 1.
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/netstats"))
+    if (!strcmp(cmdtext, "/netstats"))
     {
         new stats[400+1];
         GetNetworkStats(stats, sizeof(stats)); // get the servers networkstats

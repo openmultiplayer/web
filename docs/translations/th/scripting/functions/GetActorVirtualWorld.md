@@ -36,7 +36,7 @@ public OnGameModeInit()
 }
 
 // Somewhere else
-if(GetActorVirtualWorld(MyActor) == 69)
+if (GetActorVirtualWorld(MyActor) == 69)
 {
     // Do something
 }

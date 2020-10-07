@@ -30,7 +30,7 @@ This function always returns 1.
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/mynetstats"))
+    if (!strcmp(cmdtext, "/mynetstats"))
     {
         new stats[400+1];
         GetPlayerNetworkStats(playerid, stats, sizeof(stats)); // get your own networkstats

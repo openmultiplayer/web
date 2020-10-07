@@ -30,7 +30,7 @@ The player's IP and port is stored in the specified array.
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/ipandport"))
+    if (!strcmp(cmdtext, "/ipandport"))
     {
         new dest[22];
         NetStats_GetIpPort(playerid, dest, sizeof(dest));

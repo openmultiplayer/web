@@ -26,7 +26,7 @@ Set a player's score. Players' scores are shown in the scoreboard (shown by hold
 public OnPlayerDeath(playerid, killerid, reason)
 {
     // Add 1 to this killer's score. We must check it is valid first.
-    if(killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         SetPlayerScore(killerid, GetPlayerScore(killerid) + 1);
     }

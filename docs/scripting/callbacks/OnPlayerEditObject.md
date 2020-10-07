@@ -41,34 +41,44 @@ It is always called first in filterscripts.
 ```c
 public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
-    new Float:oldX, Float:oldY, Float:oldZ, Float:oldRotX, Float:oldRotY, Float:oldRotZ;
+    new
+        Float: oldX,
+        Float: oldY,
+        Float: oldZ,
+        Float: oldRotX,
+        Float: oldRotY,
+        Float: oldRotZ;
+
     GetObjectPos(objectid, oldX, oldY, oldZ);
     GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
-    if(!playerobject) // If this is a global object, sync the position for other players
+    if (!playerobject) // If this is a global object, sync the position for other players
     {
-        if(!IsValidObject(objectid)) return 1;
+        if (!IsValidObject(objectid)) return 1;
         SetObjectPos(objectid, fX, fY, fZ);
         SetObjectRot(objectid, fRotX, fRotY, fRotZ);
     }
 
-    if(response == EDIT_RESPONSE_FINAL)
+    switch (response)
     {
-        // The player clicked on the save icon
-        // Do anything here to save the updated object position (and rotation)
-    }
-
-    if(response == EDIT_RESPONSE_CANCEL)
-    {
-        //The player cancelled, so put the object back to it's old position
-        if(!playerobject) //Object is not a playerobject
+        case EDIT_RESPONSE_FINAL:
         {
-            SetObjectPos(objectid, oldX, oldY, oldZ);
-            SetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
+            // The player clicked on the save icon
+            // Do anything here to save the updated object position (and rotation)
         }
-        else
+
+        case EDIT_RESPONSE_CANCEL:
         {
-            SetPlayerObjectPos(playerid, objectid, oldX, oldY, oldZ);
-            SetPlayerObjectRot(playerid, objectid, oldRotX, oldRotY, oldRotZ);
+            //The player cancelled, so put the object back to it's old position
+            if (!playerobject) //Object is not a playerobject
+            {
+                SetObjectPos(objectid, oldX, oldY, oldZ);
+                SetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
+            }
+            else
+            {
+                SetPlayerObjectPos(playerid, objectid, oldX, oldY, oldZ);
+                SetPlayerObjectRot(playerid, objectid, oldRotX, oldRotY, oldRotZ);
+            }
         }
     }
     return 1;

@@ -23,7 +23,7 @@ Set a vehicle's health. When a vehicle's health decreases the engine will produc
 ## ตัวอย่าง
 
 ```c
-if(strcmp("/fixengine", cmdtext, true) == 0)
+if (strcmp("/fixengine", cmdtext, true) == 0)
 {
     new vehicleid = GetPlayerVehicleID(playerid);
     SetVehicleHealth(vehicleid, 1000);

@@ -29,7 +29,7 @@ Notice that you count the bits from behind - so the first is the rightmost bit
 - The **third byte** stores the state of the **drivers door**.
 - The **fourth byte** stores the state of the **co-drivers door**.
 
-The states of the 2 rear doors cannot be handled by [GetVehicleDamageStatus](/web/20180729002305/http://wiki.sa-mp.com/wiki/GetVehicleDamageStatus "GetVehicleDamageStatus") and [UpdateVehicleDamageStatus](/web/20180729002305/http://wiki.sa-mp.com/wiki/UpdateVehicleDamageStatus "UpdateVehicleDamageStatus").
+The states of the 2 rear doors cannot be handled by [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus "GetVehicleDamageStatus") and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus "UpdateVehicleDamageStatus").
 
 Notice that I count the bytes from behind - so the first is the rightmost byte
 
@@ -121,18 +121,18 @@ stock GetDoorState(doorStates, Door:door, DoorState:doorState)
 
 ```c
 new panels, doors, lights, tires;
-GetVehicleDamageStatus(vehicleid,panels,doors,lights,tires);
+GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
  
  
 // simple
-if(GetDoorState(doors, DOOR\_DRIVER, IS\_DAMAGED))
+if (GetDoorState(doors, DOOR\_DRIVER, IS\_DAMAGED))
 {
-    [SendClientMessage](http://web.archive.org/web/20180729002305/http://wiki.sa-mp.com/wiki/SendClientMessage)(playerid, \-1, "The driver door of your vehicle is damaged!");
+    [SendClientMessage](./functions/SendClientMessage)(playerid, \-1, "The driver door of your vehicle is damaged!");
 }
  
 // or even combined
-if(GetDoorState(doors, DOOR\_HOOD, IS\_OPENED | IS\_DAMAGED))
+if (GetDoorState(doors, DOOR\_HOOD, IS\_OPENED | IS\_DAMAGED))
 {
-    [SendClientMessage](http://web.archive.org/web/20180729002305/http://wiki.sa-mp.com/wiki/SendClientMessage)(playerid, \-1, "The hood of your vehicle is both opened and damaged!");
+    [SendClientMessage](./functions/SendClientMessage)(playerid, \-1, "The hood of your vehicle is both opened and damaged!");
 }
 ```

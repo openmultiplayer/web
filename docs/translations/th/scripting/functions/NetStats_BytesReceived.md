@@ -28,7 +28,7 @@ This function returns the number of bytes the server has received from the playe
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/bytesreceived"))
+    if (!strcmp(cmdtext, "/bytesreceived"))
     {
         new szString[144];
         format(szString, sizeof(szString), "You have sent %i bytes of information to the server.", NetStats_BytesReceived(playerid));

@@ -23,12 +23,12 @@ For alignment 2 (center) the x and y values of TextSize need to be swapped, see 
 ## Examples
 
 ```c
-new Text:MyTextdraw;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    new Text:MyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawAlignment(MyTextdraw, 2); // Align the textdraw text in the center
+    gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
+    TextDrawAlignment(gMyTextdraw, 2); // Align the textdraw text in the center
     return 1;
 }
 ```

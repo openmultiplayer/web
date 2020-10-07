@@ -28,19 +28,19 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:textdraw;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    textdraw = TextDrawCreate(320.0, 240.0, "_");
-    TextDrawFont(textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    TextDrawUseBox(textdraw, 1);
-    TextDrawBoxColor(textdraw, 0x000000FF);
-    TextDrawTextSize(textdraw, 40.0, 40.0);
-    TextDrawSetPreviewModel(textdraw, 411); // Display model 411 (Infernus)
-        TextDrawSetPreviewVehCol(textdraw, 6, 6); // Set the Infernus to have colour 6 (Yellow)
+    gMyTextdraw = TextDrawCreate(320.0, 240.0, "_");
+    TextDrawFont(gMyTextdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
+    TextDrawUseBox(gMyTextdraw, 1);
+    TextDrawBoxColor(gMyTextdraw, 0x000000FF);
+    TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
+    TextDrawSetPreviewModel(gMyTextdraw, 411); // Display model 411 (Infernus)
+    TextDrawSetPreviewVehCol(gMyTextdraw, 6, 6); // Set the Infernus to have colour 6 (Yellow)
 
-    //You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
+    // You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
     return 1;
 }
 ```

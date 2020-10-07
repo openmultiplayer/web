@@ -22,7 +22,7 @@ It is always called first in filterscripts.
 ```c
 public OnObjectMoved(objectid)
 {
-    printf("Object %d finished moving.",objectid);
+    printf("Object %d finished moving.", objectid);
     return 1;
 }
 ```

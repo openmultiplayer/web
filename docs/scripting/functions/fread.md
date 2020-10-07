@@ -36,7 +36,7 @@ new File:handle = fopen("file.txt", io_read),
     buf[128];
 
 // Check, if the file is opened
-if(handle)
+if (handle)
 {
     // Success
 
@@ -58,7 +58,7 @@ new File:handle = fopen("file.txt"),
     buf[128];
 
 // Check, if file is open
-if(handle)
+if (handle)
 {
     // Success
 

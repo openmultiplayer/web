@@ -34,7 +34,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext,"/objmat",true))
+    if (!strcmp(cmdtext,"/objmat",true))
     {
         new Float:X, Float:Y, Float:Z;
         new myobject;

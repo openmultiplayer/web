@@ -30,7 +30,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 {
     new componentType = GetVehicleComponentType(componentid);
 
-    if(componentType != -1)
+    if (componentType != -1)
     {
         new clientMessage[41];
 

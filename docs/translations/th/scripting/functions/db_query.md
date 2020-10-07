@@ -32,7 +32,7 @@ new DB:db_handle;
 public OnGameModeInit()
 {
     // Create a connection to the database
-    if((db_handle = db_open("example.db")) == DB:0)
+    if ((db_handle = db_open("example.db")) == DB:0)
     {
         // Error
         print("Failed to open a connection to \"example.db\".");
@@ -52,7 +52,7 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     // If there is a database connection, close it
-    if(db_handle) db_close(db_handle);
+    if (db_handle) db_close(db_handle);
     // ...
     return 1;
 }
@@ -90,7 +90,7 @@ GetNameBySpawnID(spawn_id)
     db_result = db_query(db_handle, query);
 
     // If there is any valid entry
-    if(db_num_rows(db_result))
+    if (db_num_rows(db_result))
     {
         // Store data from "PlayerName" into "p_name"
         db_get_field(db_result, 0, p_name, sizeof p_name);

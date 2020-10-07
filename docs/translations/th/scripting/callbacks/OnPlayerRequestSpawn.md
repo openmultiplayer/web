@@ -22,7 +22,7 @@ It is always called first in filterscripts so returning 0 there also blocks othe
 ```c
 public OnPlayerRequestSpawn(playerid)
 {
-    if(!IsPlayerAdmin(playerid))
+    if (!IsPlayerAdmin(playerid))
     {
         SendClientMessage(playerid, -1, "You may not spawn.");
         return 0;

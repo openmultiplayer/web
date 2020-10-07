@@ -23,12 +23,12 @@ Sets the size of a textdraw's text's shadow.
 ## Examples
 
 ```c
-new Text:MyTextdraw;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextDraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    TextDrawSetShadow(MyTextDraw, 1);
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
+    TextDrawSetShadow(gMyTextdraw, 1);
     return 1;
 }
 ```

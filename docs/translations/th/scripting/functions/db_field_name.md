@@ -34,7 +34,7 @@ available.
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     // If "cmdtext" equals "/getfieldnames"
-    if(!strcmp(cmdtext, "/getfieldnames", true, 14))
+    if (!strcmp(cmdtext, "/getfieldnames", true, 14))
     {
         // Declare "db_result", "i", and "columns"
         new DBResult:db_result = db_query(db_handle, "SELECT * FROM `join_log`"), i, columns = db_num_fields(db_result), info[30];

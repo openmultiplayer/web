@@ -36,7 +36,8 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new panels, doors, lights, tires;
+new
+	panels, doors, lights, tires;
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
 UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, 15); // Setting tires to 15 will pop them all
 ```

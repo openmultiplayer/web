@@ -20,7 +20,7 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-if(!strcmp(cmdtext, "/sandstorm", true))
+if (!strcmp(cmdtext, "/sandstorm", true))
 {
     SetWeather(19);
     return 1;

@@ -29,8 +29,8 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-MyTextDraw = CreatePlayerTextDraw(playerid, 100.0, 33.0,"Example TextDraw");
-PlayerTextDrawLetterSize(playerid, MyTextDraw, 3.2 ,5.1);
+gMyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0,"Example TextDraw");
+PlayerTextDrawLetterSize(playerid, gMyTextDraw[playerid], 3.2 ,5.1);
 ```
 
 ## Notes

@@ -40,7 +40,7 @@ public OnPlayerSpawn(playerid)
 
 public OnPlayerEnterCheckpoint(playerid)
 {
-    if(onCheck[playerid]) // if it's true
+    if (onCheck[playerid]) // if it's true
     {
         GivePlayerMoney(playerid, 1000);
         DisablePlayerCheckpoint(playerid);

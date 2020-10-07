@@ -41,10 +41,10 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/check", true))
+    if (!strcmp(cmdtext, "/check", true))
     {
         new vehicleid = GetPlayerCameraTargetVehicle(playerid);
-        if(vehicleid == globalVehicleID)
+        if (vehicleid == globalVehicleID)
         {
              SendClientMessage(playerid, -1, "You're looking at your vehicle!");
         }

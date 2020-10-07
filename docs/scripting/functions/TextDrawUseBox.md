@@ -23,12 +23,12 @@ Toggle whether a textdraw uses a box or not.
 ## Examples
 
 ```c
-new Text:MyTextdraw;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextDraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    TextDrawUseBox(MyTextDraw, 1); // Toggle box ON
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
+    TextDrawUseBox(gMyTextdraw, 1); // Toggle box ON
     return 1;
 }
 ```

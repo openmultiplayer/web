@@ -24,6 +24,15 @@ Hide a player-textdraw from the player it was created for
 
 This function does not return any specific values.
 
+## Examples
+
+```c
+public OnPlayerDisconnect(playerid)
+{
+    PlayerTextDrawHide(playerid, gWelcomeText[playerid]);
+}
+```
+
 ## Related Functions
 
 - [PlayerTextDrawShow](PlayerTextDrawShow.md): Show a player-textdraw.

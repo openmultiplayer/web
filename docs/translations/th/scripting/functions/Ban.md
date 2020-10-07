@@ -22,7 +22,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/banme", true) == 0)
+    if (strcmp(cmdtext, "/banme", true) == 0)
     {
         // Ban the player that types this command.
         Ban(playerid);
@@ -41,7 +41,7 @@ public DelayedBan(playerid)
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/banme", true) == 0)
+    if (strcmp(cmdtext, "/banme", true) == 0)
     {
         // Bans the player who executed this command.
 

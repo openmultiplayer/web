@@ -22,7 +22,7 @@ Check if the player is inside their current set race checkpoint (SetPlayerRaceCh
 ## ตัวอย่าง
 
 ```c
-if(IsPlayerInRaceCheckpoint(playerid))
+if (IsPlayerInRaceCheckpoint(playerid))
 {
     SetPlayerHealth(playerid, 100);
 }

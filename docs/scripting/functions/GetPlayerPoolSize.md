@@ -20,7 +20,7 @@ Gets the highest playerid currently in use on the server.
 ```c
 FreezeAll()
 {
-    for(new i = 0, j = GetPlayerPoolSize(); i <= j; i++) // note that we assign the return value to a new variable (j) to avoid calling the function with each iteration
+    for (new i = 0, j = GetPlayerPoolSize(); i <= j; i++) // note that we assign the return value to a new variable (j) to avoid calling the function with each iteration
     {
         TogglePlayerControllable(i, 0);
     }

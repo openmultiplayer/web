@@ -20,7 +20,8 @@ Gets the highest vehicleid currently in use on the server.
 ```c
 RepairAllVehicles()
 {
-    for(new i = 1, j = GetVehiclePoolSize(); i <= j; i++) // vehicleids start at 1
+    // vehicleids start at 1
+    for(new i = 1, j = GetVehiclePoolSize(); i <= j; i++)
     {
         RepairVehicle(i);
     }

@@ -30,19 +30,19 @@ Sets a player textdraw 2D preview sprite of a specified model ID.
 ## Examples
 
 ```c
-new PlayerText:textdraw;
+new PlayerText: gTextDraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    textdraw = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");
-    PlayerTextDrawFont(playerid, textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    PlayerTextDrawUseBox(playerid, textdraw, 1);
-    PlayerTextDrawBoxColor(playerid, textdraw, 0x000000FF);
-    PlayerTextDrawTextSize(playerid, textdraw, 40.0, 40.0);
-    PlayerTextDrawSetPreviewModel(playerid, textdraw, 411); // Show an Infernus (model 411)
-    //PlayerTextDrawSetPreviewModel(playerid, textdraw, 0); //Display model 0 (CJ Skin)
-    //PlayerTextDrawSetPreviewModel(playerid, textdraw, 18646); //Display model 18646 (police light object)
-    PlayerTextDrawShow(playerid, textdraw);
+    gTextDraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");
+    PlayerTextDrawFont(playerid, gTextDraw[playerid], TEXT_DRAW_FONT_MODEL_PREVIEW);
+    PlayerTextDrawUseBox(playerid, gTextDraw[playerid], 1);
+    PlayerTextDrawBoxColor(playerid, gTextDraw[playerid], 0x000000FF);
+    PlayerTextDrawTextSize(playerid, gTextDraw[playerid], 40.0, 40.0);
+    PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 411); // Show an Infernus (model 411)
+    //PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 0); //Display model 0 (CJ Skin)
+    //PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 18646); //Display model 18646 (police light object)
+    PlayerTextDrawShow(playerid, gTextDraw[playerid]);
     return 1;
 }
 ```

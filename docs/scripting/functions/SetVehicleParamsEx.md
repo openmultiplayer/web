@@ -35,31 +35,45 @@ Sets a vehicle's parameters for all players.
 ## Examples
 
 ```c
+// On top of our script, declaring a global variable
+new
+    gVehicleAlarmTimer[MAX_VEHICLES] = {-1, ...};
+
 // If setting a single parameter, you should obtain the current parameters so they aren't ALL changed
-new engine, lights, alarm, doors, bonnet, boot, objective;
+new
+    engine, lights, alarm, doors, bonnet, boot, objective;
+
+// Somewhere where you create the vehicle..
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // ONLY the engine param was changed to VEHICLE_PARAMS_ON (1)
-new Timer_VehAlarm[MAX_VEHICLES];
 
+// The function
 SetVehicleParamsEx_Fixed(vehicleid, &engine, &lights, &alarm, &doors, &bonnet, &boot, &objective)
 {
     SetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
-    if(alarm)
+    if (alarm)
     {
-        KillTimer(Timer_VehAlarm[vehicleid]);
-        Timer_VehAlarm[vehicleid] = SetTimerEx("DisableVehicleAlarm", 20000, false, "d", vehicleid);
+        // Kill the timer, reset the timer identifier and then restart it if it was already running
+        KillTimer(gVehicleAlarmTimer[vehicleid]);
+        gVehicleAlarmTimer[vehicleid] = -1;
+        gVehicleAlarmTimer[vehicleid] = SetTimerEx("DisableVehicleAlarm", 20000, false, "d", vehicleid);
     }
 }
 
 forward DisableVehicleAlarm(vehicleid);
 public DisableVehicleAlarm(vehicleid)
 {
-    new engine, lights, alarm, doors, bonnet, boot, objective;
+    new
+        engine, lights, alarm, doors, bonnet, boot, objective;
+    
     GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
-    if(alarm == VEHICLE_PARAMS_ON)
+    if (alarm == VEHICLE_PARAMS_ON)
     {
         SetVehicleParamsEx(vehicleid, engine, lights, VEHICLE_PARAMS_OFF, doors, bonnet, boot, objective);
     }
+    
+    // Reset the timer identifier
+    gVehicleAlarmTimer[vehicleid] = -1;
 }
 ```
 

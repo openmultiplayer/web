@@ -45,8 +45,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:X, Float:Y, Float:Z, Float:Distance = 5.0;
         GetPlayerPos(playerid, X, Y, Z);
-    PlayAudioStreamForPlayer(playerid, "http://somafm.com/tags.pls", X, Y, Z, Distance, 1);
-    return 1;
+        PlayAudioStreamForPlayer(playerid, "http://somafm.com/tags.pls", X, Y, Z, Distance, 1);
+        return 1;
     }
     return 0;
 }

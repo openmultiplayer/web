@@ -28,12 +28,12 @@ new File:t_handle = ftemp(),
     g_char;
 
 // Check, if temporary file stream is open
-if(t_handle)
+if (t_handle)
 {
     // Success
 
     // Open "file.txt" in "read only" mode and check, if the file is open
-    if(handle = fopen("file.txt", io_read))
+    if (handle = fopen("file.txt", io_read))
     {
         // Get all the characters from "file.txt"
         while((g_char = fgetchar(handle, 0, false)) != EOF)
@@ -49,7 +49,7 @@ if(t_handle)
         fseek(t_handle, _, seek_begin);
 
         // Open "file1.txt" in "write only" mode, and check, if the file is open
-        if(handle = fopen("file1.txt", io_write))
+        if (handle = fopen("file1.txt", io_write))
         {
             // Success
 
@@ -73,7 +73,7 @@ if(t_handle)
         }
 
         // Open "file2.txt" in "write only" mode, and check, if the file is open
-        if(handle = fopen("file2.txt", io_write))
+        if (handle = fopen("file2.txt", io_write))
         {
             // Success
 

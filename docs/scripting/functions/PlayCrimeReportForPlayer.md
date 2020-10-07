@@ -32,7 +32,7 @@ This function plays a crime report for a player - just like in single-player whe
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/suspect"))
+    if (!strcmp(cmdtext, "/suspect"))
     {
         PlayCrimeReportForPlayer(playerid, 0, 16);
         SendClientMessage(playerid, 0xFFFFFFFF, "ID 0 committed a crime (10-16).");

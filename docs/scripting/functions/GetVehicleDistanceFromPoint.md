@@ -32,7 +32,7 @@ A float containing the distance from the point specified in the coordinates.
 /* when the player types 'vendingmachine' in to the chat box, they'll see this.*/
 public OnPlayerText(playerid, text[])
 {
-    if(strcmp(text, "vendingmachine", true) == 0)
+    if (strcmp(text, "vendingmachine", true) == 0)
     {
         new
             Float: fDistance = GetVehicleDistanceFromPoint(GetPlayerVehicleID(playerid), 237.9, 115.6, 1010.2),

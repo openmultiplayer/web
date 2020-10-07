@@ -34,13 +34,15 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext,"/objmat",true))
+    if (!strcmp(cmdtext,"/objmat",true))
     {
-        new Float:X, Float:Y, Float:Z;
-        new myobject;
+        new
+            Float:X, Float:Y, Float:Z,
+            myObject;
+
         GetPlayerPos(playerid, X, Y, Z);
-        myobject = CreatePlayerObject(playerid, 19371, X, Y, Z+0.5, 0.0, 0.0, 0.0, 300.0);
-        SetPlayerObjectMaterial(playerid, myobject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
+        myObject = CreatePlayerObject(playerid, 19371, X, Y, Z+0.5, 0.0, 0.0, 0.0, 300.0);
+        SetPlayerObjectMaterial(playerid, myObject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
         // Replaces the texture of our player-object with the texture of model 19341
         return 1;
     }

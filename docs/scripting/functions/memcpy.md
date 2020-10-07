@@ -31,8 +31,10 @@ True on success, false on failure.
 
 ```c
 //Concatenate two strings with memcpy
-new destination[64] = "This is ";
-new source[] = "a string in a 32 Bit Array";
+new
+	destination[64] = "This is ",
+	source[] = "a string in a 32 Bit Array";
+
 memcpy(destination, source, strlen(destination) * 4, sizeof source * 4, sizeof destination);
 print(destination);
 //Output: This is a string in a 32 Bit Array

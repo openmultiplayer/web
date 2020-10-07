@@ -35,14 +35,14 @@ public OnGameModeInit()
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/check", true))
+    if (!strcmp(cmdtext, "/check", true))
     {
         new objectid = GetPlayerCameraTargetObject(playerid);
-        if(objectid == globalObjectID)
+        if (objectid == globalObjectID)
         {
              SendClientMessage(playerid, -1, "You're looking at your object.");
         }
-        else if(objectid == INVALID_OBJECT_ID) // INVALID_OBJECT_ID = 65535
+        else if (objectid == INVALID_OBJECT_ID) // INVALID_OBJECT_ID = 65535
         {
              SendClientMessage(playerid, -1, "You're not looking at any object.");
         }

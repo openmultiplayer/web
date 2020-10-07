@@ -25,9 +25,10 @@ public OnRconCommand(cmd[])
     printf("[RCON]: You typed '/rcon %s'!", cmd);
     return 0;
 }
+
 public OnRconCommand(cmd[])
 {
-    if(!strcmp(cmd, "hello", true))
+    if (!strcmp(cmd, "hello", true))
     {
         SendClientMessageToAll(0xFFFFFFAA, "Hello World!");
         print("You said hello to the world."); // This will appear to the player who typed the rcon command in the chat in white

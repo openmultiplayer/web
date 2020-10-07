@@ -28,14 +28,14 @@ Checks if an actor ID is valid.
 ## Examples
 
 ```c
-new MyActor;
+new gMyActor;
 
 public OnGameModeInit()
 {
-    MyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
-    if(IsValidActor(MyActor))
+    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
+    if (IsValidActor(gMyActor))
     {
-        SetActorHealth(MyActor, 100);
+        SetActorHealth(gMyActor, 100);
     }
     return 1;
 }

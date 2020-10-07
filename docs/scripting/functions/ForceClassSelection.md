@@ -20,7 +20,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-if(!strcmp(cmdtext, "/class", true))
+if (!strcmp(cmdtext, "/class", true))
 {
     ForceClassSelection(playerid);
     TogglePlayerSpectating(playerid, true);

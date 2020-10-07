@@ -27,19 +27,17 @@ The vehicle's rotation is stored in the specified variable.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-     if(strcmp(cmdtext, "/vehrot", true) == 0)
+     if (strcmp(cmdtext, "/vehrot", true) == 0)
      {
-          new currentveh;
-          new Float:z_rot;
-          new message[40];
+          new
+               currentVeh,
+               Float: rotZ,
+               clientMessage[40];
 
-          currentveh = GetPlayerVehicleID(playerid);
-
-          GetVehicleZAngle(currentveh, z_rot);
-
-          format(message, sizeof(message), "The current vehicle rotation is: %.0f", z_rot);
-
-          SendClientMessage(playerid, 0xFFFFFFFF, message);
+          currentVeh = GetPlayerVehicleID(playerid);
+          GetVehicleZAngle(currentVeh, rotZ);
+          format(clientMessage, sizeof(clientMessage), "The current vehicle rotation is: %.0f", rotZ);
+          SendClientMessage(playerid, 0xFFFFFFFF, clientMessage);
 
           return 1;
      }

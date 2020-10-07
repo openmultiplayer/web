@@ -30,7 +30,7 @@ The length of a file, in bytes.
 new File:handle = fopen("file.txt", io_read);
 
 // If "file.txt" is open
-if(handle)
+if (handle)
 {
     // Success
 

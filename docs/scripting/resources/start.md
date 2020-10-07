@@ -344,10 +344,10 @@ SetPlayerValue(playerid, value)
 {
     switch(playerid)
     {
-        case 0: gPlayer0 = value; // is the same as doing if(playerid == 0)
-        case 1: gPlayer1 = value; // is the same as doing if(playerid == 1)
-        case 2: gPlayer2 = value; // is the same as doing if(playerid == 2)
-        case 3: gPlayer3 = value; // is the same as doing if(playerid == 3)
+        case 0: gPlayer0 = value; // is the same as doing if (playerid == 0)
+        case 1: gPlayer1 = value; // is the same as doing if (playerid == 1)
+        case 2: gPlayer2 = value; // is the same as doing if (playerid == 2)
+        case 3: gPlayer3 = value; // is the same as doing if (playerid == 3)
     }
 }
 ```

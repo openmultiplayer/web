@@ -25,7 +25,7 @@ Give money to or take money from a player.
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    if(killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
        // Award $1000 to the killer
        GivePlayerMoney(killerid, 1000);

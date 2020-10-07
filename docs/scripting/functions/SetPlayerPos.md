@@ -28,7 +28,7 @@ Set a player's position.
 // Teleports players to the center of San Andreas when they type /middle
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/middle", true))
+    if (!strcmp(cmdtext, "/middle", true))
     {
         SetPlayerPos(playerid, 0.0, 0.0, 3.0);
         return 1;

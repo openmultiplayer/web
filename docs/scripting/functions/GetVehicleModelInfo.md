@@ -30,10 +30,12 @@ The vehicle info is stored in the specified variables.
 ## Examples
 
 ```c
-new Float:X, Float:Y, Float:Z;
-GetVehicleModelInfo(411, VEHICLE_MODEL_INFO_SIZE, X, Y, Z); //Get the size of vehicle model 411 (Infernus)
-printf("The infernus is %.1fm wide, %.1fm long and %.1fm high", X, Y, Z);
+new
+	Float: x, Float: y, Float: z;
+//Get the size of vehicle model 411 (Infernus)
+GetVehicleModelInfo(411, VEHICLE_MODEL_INFO_SIZE, x, y, z);
 //Prints "The infernus is 2.3m wide, 5.7m long and 1.3m high" into the console
+printf("The infernus is %.1fm wide, %.1fm long and %.1fm high", X, Y, Z);
 ```
 
 ## Related Functions

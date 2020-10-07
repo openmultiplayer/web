@@ -24,7 +24,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 {
     new playerState = GetPlayerState(killerid); // Get the killer's state
 
-    if(playerState == PLAYER_STATE_DRIVER) // If the killer was in a vehicle
+    if (playerState == PLAYER_STATE_DRIVER) // If the killer was in a vehicle
     {
         //It's a driver drive-by, take some money
         GivePlayerMoney(killerid, -10000);

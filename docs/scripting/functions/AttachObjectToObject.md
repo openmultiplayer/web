@@ -36,10 +36,10 @@ You can use this function to attach objects to other objects. The objects will f
 ## Examples
 
 ```c
-new objectid = CreateObject(...);
-new attachtoid = CreateObject(...);
+new gObjectId = CreateObject(...);
+new gAttachToId = CreateObject(...);
 
-AttachObjectToObject(objectid, attachtoid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
+AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 ```
 
 ## Notes

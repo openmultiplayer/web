@@ -28,12 +28,12 @@ Check if an actor is invulnerable.
 ## Examples
 
 ```c
-new MyActor;
+new gMyActor;
 
 public OnGameModeInit()
 {
-    MyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
-    if(IsActorInvulnerable(MyActor))
+    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
+    if (IsActorInvulnerable(gMyActor))
     {
         print("Actor is invulnerable.");
     }

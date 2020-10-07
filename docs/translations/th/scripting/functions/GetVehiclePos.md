@@ -27,7 +27,7 @@ Gets the position of a vehicle.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-     if(strcmp(cmdtext, "/vehpos", true) == 0)
+     if (strcmp(cmdtext, "/vehpos", true) == 0)
      {
           new currentveh;
           currentveh = GetPlayerVehicleID(playerid);

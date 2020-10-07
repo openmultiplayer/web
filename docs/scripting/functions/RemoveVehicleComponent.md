@@ -24,7 +24,7 @@ Remove a component from a vehicle.
 
 ```c
 //remove Nitro from vehicle number 1
-RemoveVehicleComponent(1,1010);
+RemoveVehicleComponent(1, 1010);
 ```
 
 ## Related Functions

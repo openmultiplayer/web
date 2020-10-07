@@ -32,6 +32,14 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
+## Notes
+
+:::warning
+
+Do note that the players may crash because of odd number of tilde (~) symbols used in the game text. Using color codes (e.g. ~r~) beyond the 255th character may crash the client.
+
+:::
+
 ## Related Functions
 
 - [GameTextForAll](GameTextForAll): Display gametext to all players.

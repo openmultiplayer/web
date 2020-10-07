@@ -27,18 +27,25 @@ Gets the position of a vehicle.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-     if(strcmp(cmdtext, "/vehpos", true) == 0)
+     if (strcmp(cmdtext, "/vehpos", true) == 0)
      {
-          new currentveh;
-          currentveh = GetPlayerVehicleID(playerid);
+          new
+               playerVehicle;
+          playerVehicle = GetPlayerVehicleID(playerid);
 
-          new Float:vehx, Float:vehy, Float:vehz;
-          GetVehiclePos(currentveh, vehx, vehy, vehz);
+          // if playerVehicle is equal to 0
+          if (!playerVehicle)
+          {
+               return SendClientMessage(playerid, -1, "You are not in any vehicle!");
+          }
 
-          new vehpostext[96];
-          format(vehpostext, sizeof(vehpostext), "The current vehicle positions are: %f, %f, %f", vehx, vehy, vehz);
+          new
+               Float: vehX, Float: vehY, Float: vehZ,
+               clientMessage[96];
 
-          SendClientMessage(playerid, 0xFFFFFFFF, vehpostext);
+          GetVehiclePos(playerVehicle, vehX, vehY, vehZ);
+          format(clientMessage, sizeof(clientMessage), "The current vehicle positions are: %f, %f, %f", vehX, vehY, vehZ);
+          SendClientMessage(playerid, 0xFFFFFFFF, clientMessage);
           return 1;
      }
 

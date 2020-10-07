@@ -36,12 +36,12 @@ Apply an animation to an actor.
 ## Examples
 
 ```c
-new MyActor;
+new gMyActor;
 
 public OnGameModeInit()
 {
-    MyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
-    ApplyActorAnimation(MyActor, "DEALER", "shop_pay", 4.1, 0, 0, 0, 0, 0); // Pay anim
+    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
+    ApplyActorAnimation(gMyActor, "DEALER", "shop_pay", 4.1, 0, 0, 0, 0, 0); // Pay anim
     return 1;
 }
 ```

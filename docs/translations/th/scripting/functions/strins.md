@@ -30,10 +30,10 @@ This function does not return any specific values.
 
 ```c
 // Add an [AFK] tag to the start of players' names
-new pName[MAX_PLAYER_NAME+1];
-GetPlayerName(playerid, pName, MAX_PLAYER_NAME);
-strins(pName, "[AFK]", 0);
-SetPlayerName(playerid, pName);
+new playerName[MAX_PLAYER_NAME+1];
+GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
+strins(playerName, "[AFK]", 0);
+SetPlayerName(playerid, playerName);
 
 // WARNING: Players with names that are 20+ characters long can not have an [AFK] tag, as that would make their name 25 characters long and the limit is 24.
 ```

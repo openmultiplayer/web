@@ -20,7 +20,7 @@ The ID of the player's currently shown menu, or INVALID_MENU (255) if no menu sh
 ## Examples
 
 ```c
-new Menu:CurrentMenu = GetPlayerMenu(playerid); // Store the player's current menu in 'CurrentMenu'
+new Menu:currentMenu = GetPlayerMenu(playerid); // Store the player's current menu in 'CurrentMenu'
 ```
 
 ## Notes

@@ -38,7 +38,7 @@ The position of the last bullet is stored in the specified variables.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/lastshot", true) == 0)
+    if (strcmp(cmdtext, "/lastshot", true) == 0)
     {
         new lsString[128],
             Float:fOriginX, Float:fOriginY, Float:fOriginZ,
