@@ -1,34 +1,34 @@
 ---
 id: AddMenuItem
 title: AddMenuItem
-description: Dodaje 'przedmiot' do wyznaczonego menu.
+description: Dodaje element do konkretnego menu.
 Tags: ["menu"]
 ---
 
 ## Opis
 
-Dodaje 'przedmiot/slot' do wyznaczonego menu.
+Dodaje element do konkretnego menu.
 
-| Nazwa   | Description                                        |
+| Nazwa   | Opis                                               |
 | ------- | -------------------------------------------------- |
-| menuid  | ID Menu przedmiotu który ma zostać dodany          |
-| kolumna | Wartość kolumny do której dodajemy slot/przedmiot. |
-| tytuł[] | Tytuł nowego menu dla przedmiotu.                  |
+| menuid  | ID menu, do którego element ma zostać dodany.      |
+| column  | Kolumna, do której dana pozycja ma zostać dodana.  |
+| title[] | Tytuł nowego elementu w menu.                      |
 
-## Zwracana wartość
+## Zwracane wartości
 
-Indeks rzędu do, którego ten przedmiot/slot został przypisany.
+Indeks rzędu, do którego element został dodany.
 
 ## Przykłady
 
 ```c
-new Menu:przykladoweMenu;
+new Menu:examplemenu;
 
 public OnGameModeInit()
 {
-    przykladoweMenu = CreateMenu("TwojeMenu", 2, 200.0, 100.0, 150.0, 150.0);
-    AddMenuItem(przykladoweMenu, 0, "przedmiot 1");
-    AddMenuItem(przykladoweMenu, 0, "przedmiot 2");
+    examplemenu = CreateMenu("Twoje menu", 2, 200.0, 100.0, 150.0, 150.0);
+    AddMenuItem(examplemenu, 0, "element 1");
+    AddMenuItem(examplemenu, 0, "element 2");
     return 1;
 }
 ```
@@ -37,14 +37,14 @@ public OnGameModeInit()
 
 :::Wskazówka
 
-Crashuje się jeśli podane zostanie złe ID. Tylko 12 przedmiotów/slotów na jedno menu. Trzynasty idzie do prawej strony nagłówka nazwy kolumny (pokolorowany), 14'sty i wyżej nie pokaże się w ogóle. Możesz używać kolumny tylko 0 i 1. Możesz dodawać tylko 9 kolorów na jeden slot/przedmiot (~r~, ~g~, itd). 31 to max. długość symboli nazwy kolumny.
+Podanie nieprawidłowego ID menu powoduje crash. Możesz mieć tylko 12 elementów w każdym menu (13 przechodzi na prawą stronę nagłówka nazwy kolumny (pokolorowany), 14 i większe nie są wyświetlane wcale. Możesz używać tylko 2 kolumn (0 i 1). Możesz dodać tylko 8 kolorów do jednego elementu (~r~, ~g~, itd.). Maksymalna długość elementu menu to 31 znaków.
 
 :::
 
 ## Powiązane funkcje
 
 - [CreateMenu](CreateMenu.md): Tworzy menu.
-- [SetMenuColumnHeader](SetMenuColumnHeader.md): Ustawia nagłówek dla kolumny.
-- [DestroyMenu](DestroyMenu.md): Niszczy menu.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Wywołuje się kiedy gracz wybierze rząd w menu.
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Wywołuje się kiedy gracz opuści menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader.md): Ustawia nagłówek dla jednej z kolumn w menu.
+- [DestroyMenu](DestroyMenu.md): Kasuje menu.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Wywoływane, gdy gracz wybrał rząd w menu.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Wywoływane, gdy gracz zamknie menu.
