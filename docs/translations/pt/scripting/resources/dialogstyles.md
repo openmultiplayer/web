@@ -5,14 +5,14 @@ title: Dialog Styles
 :::note
 
 - Em [OnDialogResponse](../callbacks/OnDialogResponse), pressionar **button1** define **response** para **1**, enquanto pressionar **button2** define **response** para **0**.
-- Todo dialog tem um button2 opcional. Para que ele n„o seja mostrado, mantenha o par‚metro vazio, como no primeiro exemplo. Os jogadores n„o poder„o clic·-lo, mas eles ainda poder„o apertar ESC e chamar [OnDialogResponse](../callbacks/OnDialogResponse) com **response** = **0**.
-- [ShowPlayerDialog](../functions/ShowPlayerDialog): As cores embutidas podem ser utilizadas nos par‚metros: **caption**, **info**, **button1** e **button2**.
+- Todo dialog tem um button2 opcional. Para que ele n√£o seja mostrado, mantenha o par√¢metro vazio, como no primeiro exemplo. Os jogadores n√£o poder√£o clic√°-lo, mas eles ainda poder√£o apertar ESC e chamar [OnDialogResponse](../callbacks/OnDialogResponse) com **response** = **0**.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): As cores embutidas podem ser utilizadas nos par√¢metros: **caption**, **info**, **button1** e **button2**.
 
 :::
 
-- Esta p·gina descreve o comportamento de [ShowPlayerDialog](../functions/ShowPlayerDialog) e [OnDialogResponse](../callbacks/OnDialogResponse).
-- Por v·rias limitaÁıes, visite a p·gina de [Limites](../resources/limits).
-- Para exemplos de resposta, o seguinte cÛdigo ser· usado:
+- Esta p√°gina descreve o comportamento de [ShowPlayerDialog](../functions/ShowPlayerDialog) e [OnDialogResponse](../callbacks/OnDialogResponse).
+- Por v√°rias limita√ß√µes, visite a p√°gina de [Limites](../resources/limits).
+- Para exemplos de resposta, o seguinte c√≥digo ser√° usado:
 
 ```c
 public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
@@ -26,13 +26,13 @@ public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
 
 ![](/images/dialogStyles/Dialog_style_msgbox.png)
 
-VisualizaÁ„o:
+Visualiza√ß√£o:
 
 :::note
 
-- **\t** adiciona um TAB (mais espaÁo).
+- **\t** adiciona um TAB (mais espa√ßo).
 - **\n** cria uma nova linha.
-- Cores embutidas n„o resetar„o apÛs \n ou \t
+- Cores embutidas n√£o resetar√£o ap√≥s \n ou \t
 
 :::
 
@@ -40,20 +40,20 @@ VisualizaÁ„o:
 ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_MSGBOX, "Caption", "Info\n\tInfo", "Button 1", "");
 ```
 
-### SaÌda de Resposta
+### Sa√≠da de Resposta
 
 :::note
 
-- **listitem** È sempre **-1**.
-- **inputtext** È sempre vazio.
+- **listitem** √© sempre **-1**.
+- **inputtext** √© sempre vazio.
 
 :::
 
 ```c
-// Bot„o pressionado
+// Bot√£o pressionado
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = -1, inputtext = '' (size: 0)
 
-// ESC pressionado (j· que o segundo bot„o n„o est· visÌvel)
+// ESC pressionado (j√° que o segundo bot√£o n√£o est√° vis√≠vel)
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext = '' (size: 0)
 ```
 
@@ -61,13 +61,13 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 ![](/images/dialogStyles/Dialog_style_input.png)
 
-VisualizaÁ„o:
+Visualiza√ß√£o:
 
 :::note
 
-- **\t** adiciona um TAB (mais espaÁo).
+- **\t** adiciona um TAB (mais espa√ßo).
 - **\n** cria uma nova linha.
-- Cores embutidas n„o resetar„o apÛs \n ou \t
+- Cores embutidas n√£o resetar√£o ap√≥s \n ou \t
 
 :::
 
@@ -75,20 +75,20 @@ VisualizaÁ„o:
 ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_INPUT, "Caption", "Enter information below:", "Button 1", "Button 2");
 ```
 
-### SaÌda de Resposta
+### Sa√≠da de Resposta
 
 :::note
 
-- **listitem** È sempre **-1**.
-- **inputtext** È o texto escrito pelo usu·rio, incluindo possÌveis cores.
+- **listitem** √© sempre **-1**.
+- **inputtext** √© o texto escrito pelo usu√°rio, incluindo poss√≠veis cores.
 
 :::
 
 ```c
-// Escreveu "input" e apertou o bot„o esquerdo
+// Escreveu "input" e apertou o bot√£o esquerdo
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = -1, inputtext = 'input' (size: 5)
 
-// Escreveu "input" e apertou o bot„o direito
+// Escreveu "input" e apertou o bot√£o direito
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext = 'input' (size: 5)
 ```
 
@@ -96,13 +96,13 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 ![](/images/dialogStyles/Dialog_style_list.png)
 
-VisualizaÁ„o:
+Visualiza√ß√£o:
 
 :::note
 
-- **\t** adiciona um TAB (mais espaÁo).
+- **\t** adiciona um TAB (mais espa√ßo).
 - **\n** cria uma nova linha.
-- Cores embutidas n„o resetar„o apÛs \n ou \t
+- Cores embutidas n√£o resetar√£o ap√≥s \n ou \t
 
 :::
 
@@ -110,20 +110,20 @@ VisualizaÁ„o:
 ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_LIST, "Caption", "Item 0\n{FFFF00}Item 1\nItem 2", "Button 1", "Button 2");
 ```
 
-### SaÌda da Resposta:
+### Sa√≠da da Resposta:
 
 :::note
 
-- **listitem** È o n˙mero da linha selecionado, iniciando em **0**.
-- **inputtext** È o texto contido no item, incluindo as cores.
+- **listitem** √© o n√∫mero da linha selecionado, iniciando em **0**.
+- **inputtext** √© o texto contido no item, incluindo as cores.
 
 :::
 
 ```c
-// Selecionou o primeiro item e apertou o bot„o esquerdo
+// Selecionou o primeiro item e apertou o bot√£o esquerdo
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = 0, inputtext = 'Item 0' (size: 6)
 
-// Selecionou o segundo item e apertou o bot„o direito
+// Selecionou o segundo item e apertou o bot√£o direito
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 'Item 1' (size: 6)
 ```
 
@@ -137,11 +137,11 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 ![](/images/dialogStyles/Dialog_style_password.png)
 
-VisualizaÁ„o:
+Visualiza√ß√£o:
 
 :::note
 
-- **\t** adiciona um TAB (mais espaÁo).
+- **\t** adiciona um TAB (mais espa√ßo).
 - **\n** cria uma nova linha.
 
 :::
@@ -150,26 +150,26 @@ VisualizaÁ„o:
 ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_PASSWORD, "Caption", "Enter private information below:", "Button 1", "Button 2");
 ```
 
-### SaÌda da Resposta:
+### Sa√≠da da Resposta:
 
 :::note
 
-- **listitem** È sempre **-1**.
-- **inputtext** È o texto digitado pelo jogador, sem possÌveis cores.
+- **listitem** √© sempre **-1**.
+- **inputtext** √© o texto digitado pelo jogador, sem poss√≠veis cores.
 
 :::
 
 ```c
-// Escreveu "input" e apertou o bot„o esquerdo
+// Escreveu "input" e apertou o bot√£o esquerdo
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = -1, inputtext = 'input' (size: 5)
 
-// Escreveu "input" e apertou o bot„o direito
+// Escreveu "input" e apertou o bot√£o direito
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext = 'input' (size: 5)
 ```
 
 ## Estilo 4: `DIALOG_STYLE_TABLIST`
 
-:::tip Este estilo foi adicionado na vers„o **SA-MP 0.3.7** e n„o funcionar· em versıes anteriores!
+:::tip Este estilo foi adicionado na vers√£o **SA-MP 0.3.7** e n√£o funcionar√° em vers√µes anteriores!
 
 :::
 
@@ -181,13 +181,13 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 ![](/images/dialogStyles/Dialog_style_tablist.png)
 
-VisualizaÁ„o:
+Visualiza√ß√£o:
 
 :::note
 
-- **\t** adiciona um TAB (mais espaÁo).
+- **\t** adiciona um TAB (mais espa√ßo).
 - **\n** cria uma nova linha.
-- Cores embutidas n„o resetar„o apÛs \n ou \t.
+- Cores embutidas n√£o resetar√£o ap√≥s \n ou \t.
 
 :::
 
@@ -201,21 +201,21 @@ Pistol\t$1000\t50",
 
 :::note
 
-- **inputtext** È o texto existente na _primeira coluna_ do item **listitem** selecionado, sem as cores.
+- **inputtext** √© o texto existente na _primeira coluna_ do item **listitem** selecionado, sem as cores.
 
 :::
 
 ```c
-// Selecionou o primeiro item e apertou o bot„o esquerdo
+// Selecionou o primeiro item e apertou o bot√£o esquerdo
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = 0, inputtext = 'Deagle' (size: 6)
 
-// Selecionou o segundo item e apertou o bot„o direito
+// Selecionou o segundo item e apertou o bot√£o direito
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 'Sawnoff' (size: 7)
 ```
 
 ## Estilo 5: `DIALOG_STYLE_TABLIST_HEADERS`
 
-:::tip Este estilo foi adicionado na vers„o **SA-MP 0.3.7** e n„o funcionar· em versıes anteriores!
+:::tip Este estilo foi adicionado na vers√£o **SA-MP 0.3.7** e n√£o funcionar√° em vers√µes anteriores!
 
 :::
 
@@ -233,7 +233,7 @@ Showing:
 
 - **\t** cria uma nova coluna.
 - **\n** cria um novo item na lista.
-- Cores embutidas reiniciar„o apÛs \n e \t. A primeira linha **info** define o cabeÁalho.
+- Cores embutidas reiniciar√£o ap√≥s \n e \t. A primeira linha **info** define o cabe√ßalho.
 
 :::
 
@@ -247,14 +247,14 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 
 :::note
 
-- **inputtext** È o texto contido na _primeira coluna_ do item **listitem** selecionado, sem as possÌveis cores.
+- **inputtext** √© o texto contido na _primeira coluna_ do item **listitem** selecionado, sem as poss√≠veis cores.
 
 :::
 
 ```c
-// Selecionou o primeiro item da lista e clicou com o bot„o esquerdo
+// Selecionou o primeiro item da lista e clicou com o bot√£o esquerdo
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = 0, inputtext = 'Item 1 Column 1' (size: 15)
 
-// Selecionou o primeiro item da lista e clicou com o bot„o direito
+// Selecionou o primeiro item da lista e clicou com o bot√£o direito
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 'Item 2 Column 1' (size: 15)
 ```
