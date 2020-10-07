@@ -69,7 +69,9 @@ function parseDir(filename) {
     tmpPath.splice(0, 1);
     let docPath = "";
     tmpPath.map((name) => (docPath = docPath + name + "/"));
-    return docPath + path.basename(filename).replace(".md", "");
+    return (
+      docPath + path.basename(filename).replace(".mdx", "").replace(".md", "")
+    );
   }
   return info;
 }
