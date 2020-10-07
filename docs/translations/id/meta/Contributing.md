@@ -129,7 +129,7 @@ Ketika menulis sebuah paragraf yang mengandung nama-nama fungsi, angka, ekspresi
 
 Seperti contoh di atas, `fopen` adalah sebuah nama fungsi, bukan kata bahasa Inggris, jadi apitkan dengan penanda `code` snippet untuk membantu membedakan dengan konten lainnya.
 
-Selain itu, jika paragraf merujuk ke sekumpulan kode, ini membantu pembaca  mengaitkan kata dengan contoh tersebut.
+Selain itu, jika paragraf merujuk ke sekumpulan kode, ini membantu pembaca mengaitkan kata dengan contoh tersebut.
 
 ### Tabel
 
