@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
     new
         message[64],
         playerName[MAX_PLAYER_NAME];
-    
+
     GetPlayerName(playerid, playerName, sizeof playerName);
     format(message, sizeof(message), "Welcome %s!", playerName);
     TextDrawSetString(gMyTextdraw, message);
