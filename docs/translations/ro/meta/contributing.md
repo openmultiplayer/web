@@ -68,35 +68,35 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
   ```md
   Pentru a fi folosit cu [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
   ```
-  
+
   `../` înseamnă „mergeți într-un director”, deci dacă fișierul pe care îl editați se află în directorul `functions` și vă conectați la
-  „ callbacks ”, utilizați` ../ `pentru a merge la` scripting / `apoi` callbacks / `pentru a intra în directorul callbacks, apoi numele fișierului (fără` .md`) al callback-ului pe care doriți să-l legați.
-  
+  „ callbacks ”, utilizați`../`pentru a merge la`scripting /`apoi`callbacks /`pentru a intra în directorul callbacks, apoi numele fișierului (fără`.md`) al callback-ului pe care doriți să-l legați.
+
   ### Imagini
-  
+
   Imaginile intră într-un subdirector din interiorul `/ static / images`. Apoi, atunci când conectați o imagine într-un `! [] ()` Pur și simplu utilizați `/ images /` ca cale de bază (nu este nevoie de `static`, care este doar pentru depozit).
-  
+
   Dacă aveți dubii, citiți o altă pagină care folosește imagini și copiați cum se face acolo.
-  
+
   ### Metadata
-  
+
   Primul lucru din _orice_ document ar trebui să fie metadatele:
-  
+
   ```mdx
   ---
   title: My Documentation
   description: This is a page about stuff and things and burgers, yay!
   ---
   ```
-  
+
   Orice pagina ar trebui să includă un titlu și o descriere.
 
-  Pentru o listă completă a ceea ce poate merge între `---`, consultați [documentația Docusaurus] (https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
-  
+  Pentru o listă completă a ceea ce poate merge între `---`, consultați [documentația Docusaurus](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
+
   ### Titluri
-  
+
   Nu creați un titlu de nivel 1 (`<h1>`) cu `#` deoarece acesta este generat automat. Primul dvs. titlu ar trebui să fie întotdeauna `##`
-  
+
   - ❌
 
   ```md
@@ -114,13 +114,13 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
 
   ## Sub-Section
   ```
-  
+
   ### Utilizați fragmentele `Code` pentru referințe tehnice
-  
-  Când scrieți un paragraf care conține nume de funcții, numere, expresii sau orice altceva care nu este un limbaj scris standard, 
-  înconjurați-le cu astfel de \`backticks\`. Acest lucru face mai ușoară separarea limbajului pentru descrierea lucrurilor de referințe la elemente tehnice, 
+
+  Când scrieți un paragraf care conține nume de funcții, numere, expresii sau orice altceva care nu este un limbaj scris standard,
+  înconjurați-le cu astfel de \`backticks\`. Acest lucru face mai ușoară separarea limbajului pentru descrierea lucrurilor de referințe la elemente tehnice,
   cum ar fi numele funcțiilor și piesele de cod.
-  
+
   - ❌
 
   > The fopen function will return a value with a tag of type File:, there is no problem on that line as the return value is being stored to a variable also with a tag of File: (note the cases are the same too). However on the next line the value 4 is added to the file handle. 4 has no tag [...]
@@ -128,15 +128,15 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
 - ✔
 
   > The `fopen` function will return a value with a tag of type `File:`, there is no problem on that line as the return value is being stored to a variable also with a tag of `File:` (note the cases are the same too). However on the next line the value `4` is added to the file handle. `4` has no tag
-  
+
   În exemplul de mai sus, `fopen` este un nume de funcție, nu un cuvânt în limba engleză, așa că înconjurarea acestuia cu marcatori de fragment `code` ajută la deosebirea acestuia de celălalt conținut.
-  
+
   De asemenea, dacă paragraful se referă la un bloc de cod de exemplu, acest lucru îl ajută pe cititor să asocieze cuvintele cu exemplul.
-  
+
   ### Tabele
-  
+
   Dacă un tabel are titluri, acestea trec în partea de sus:
-  
+
   - ❌
 
   ```md
@@ -168,7 +168,7 @@ Majoritatea conținutului a fost mutat, dar dacă găsiți o pagină care lipse�
 
 ### Obținerea codului HTML
 
-1. Click pe acest buton: 
+1. Click pe acest buton:
 
    (Firefox)
 
@@ -191,7 +191,7 @@ Majoritatea conținutului a fost mutat, dar dacă găsiți o pagină care lipse�
    ![image](/images/contributing/8c7c75cfabad.png)
 
    Acum aveți _numai_ codul HTML pentru _contenutul_ real al paginii, lucrurile care ne interesează și îl puteți converti în Markdown.
-   
+
 ### Conversia HTML in Markdown
 
 Pentru conversia HTML de bază (fără tabele) la Markdown utilizați:
@@ -214,13 +214,13 @@ https://jmalarcon.github.io/markdowntables/
 
 ### Curatare
 
-Conversia probabil că nu va fi perfectă. Deci va trebui să faceți un pic de curățare manuală. 
+Conversia probabil că nu va fi perfectă. Deci va trebui să faceți un pic de curățare manuală.
 Extensiile de formatare enumerate mai sus ar trebui să vă ajute, dar este posibil să fiți nevoit să petreceți doar timp făcând lucrări manuale.
 
 Dacă nu ai timp, nu-ți face griji! Trimiteți o schiță neterminată și altcineva poate ridica locul unde ați rămas!
 
 ## Acord de licențiere
 
-Toate proiectele open.mp au un [Acord de licență pentru colaboratori] [https://cla-assistant.io/openmultiplayer/homepage]. 
-Acest lucru înseamnă doar că sunteți de acord să ne permiteți să vă folosim lucrarea și să o puneți sub o licență open-source. 
+Toate proiectele open.mp au un [Acord de licență pentru colaboratori][https://cla-assistant.io/openmultiplayer/homepage].
+Acest lucru înseamnă doar că sunteți de acord să ne permiteți să vă folosim lucrarea și să o puneți sub o licență open-source.
 Când deschideți o cerere de extragere pentru prima dată, botul CLA-Assistant va posta un link unde puteți semna acordul.
