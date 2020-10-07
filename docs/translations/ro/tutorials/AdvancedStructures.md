@@ -26,8 +26,8 @@ stock FindEmptySlot()
 }
 ```
 
-Acest exemplu de bază presupune că un slot de matrice este gol dacă valoarea sa este 0. Bucla parcurge toate valorile din matrice (s-ar putea face și cu o constantă) atâta timp cât valorile nu sunt 0. 
-Când atinge una care este 0 în timp ce starea va eșua și bucla se termină fără a utiliza o pauză, așa cum este practică obișnuită, dar descurajată în astfel de situații. 
+Acest exemplu de bază presupune că un slot de matrice este gol dacă valoarea sa este 0. Bucla parcurge toate valorile din matrice (s-ar putea face și cu o constantă) atâta timp cât valorile nu sunt 0.
+Când atinge una care este 0 în timp ce starea va eșua și bucla se termină fără a utiliza o pauză, așa cum este practică obișnuită, dar descurajată în astfel de situații.
 Această funcție returnează și -1 dacă nu se găsește un slot liber, care ar trebui verificat la celălalt capăt. În mod obișnuit, ați folosi imediat identificatorul găsit:
 
 ```c
@@ -72,8 +72,8 @@ Dacă doriți să sortați matricea, veți termina cu:
 1, 2, 2, 3, 4, 9, 64, 786
 ```
 
-Dacă totuși ați dorit să lăsați datele în ordinea inițială, dar știți numerele în ordine din anumite motive (este doar un exemplu), aveți o problemă, cum doriți să aveți numere în două ordine simultan? 
-Aceasta ar fi o bună utilizare a listelor. Pentru a construi o listă din aceste date, ar trebui să transformați matricea într-o matrice 2d, unde a doua dimensiune avea 2 celule mari, prima dimensiune conținând numărul original, cealaltă conținând indexul următorului număr cel mai mare. 
+Dacă totuși ați dorit să lăsați datele în ordinea inițială, dar știți numerele în ordine din anumite motive (este doar un exemplu), aveți o problemă, cum doriți să aveți numere în două ordine simultan?
+Aceasta ar fi o bună utilizare a listelor. Pentru a construi o listă din aceste date, ar trebui să transformați matricea într-o matrice 2d, unde a doua dimensiune avea 2 celule mari, prima dimensiune conținând numărul original, cealaltă conținând indexul următorului număr cel mai mare.
 De asemenea, ați avea nevoie de o variabilă separată pentru a menține indicele celui mai mic număr, astfel încât noua matrice ar arăta astfel:
 
 ```c
@@ -84,7 +84,7 @@ start = 1
 
 Următorul index asociat cu 786 este -1, acesta este un index de matrice nevalid și indică sfârșitul listei, adică nu mai sunt numere. Cele două 2 ar putea fi, evident, în sens invers, primul din matrice este și primul din listă, deoarece este cel mai probabil să fie întâmpinat mai întâi.
 
-Celălalt avantaj al acestei metode de sortare a numerelor este că se adaugă mai multe numere este mult mai rapid. Dacă doriți să adăugați un alt număr 3 la matricea sortată, ar trebui să schimbați mai întâi cel puțin 4 numere un slot spre dreapta pentru a face spațiu, nu teribil aici, dar foarte lent în matrici mai mari. 
+Celălalt avantaj al acestei metode de sortare a numerelor este că se adaugă mai multe numere este mult mai rapid. Dacă doriți să adăugați un alt număr 3 la matricea sortată, ar trebui să schimbați mai întâi cel puțin 4 numere un slot spre dreapta pentru a face spațiu, nu teribil aici, dar foarte lent în matrici mai mari.
 Cu versiunea listă, puteți adăuga doar 3 la sfârșitul matricei și puteți modifica o singură valoare din listă:
 
 ```c
