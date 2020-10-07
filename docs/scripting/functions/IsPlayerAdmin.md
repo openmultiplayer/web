@@ -22,7 +22,7 @@ Check if a player is logged in as an RCON admin.
 ```c
 public OnPlayerSpawn(playerid)
 {
-    if(IsPlayerAdmin(playerid))
+    if (IsPlayerAdmin(playerid))
     {
         SendClientMessageToAll(0xDEEE20FF, "An admin spawned.");
     }

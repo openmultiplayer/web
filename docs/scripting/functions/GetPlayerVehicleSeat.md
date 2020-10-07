@@ -26,15 +26,22 @@ The ID of the seat the player is in. -1 is not in vehicle, 0 is the driver, 1 is
 ## Examples
 
 ```c
-if(strcmp(cmdtext, "/myseat", true) == 0)
+if (strcmp(cmdtext, "/myseat", true) == 0)
 {
-    new szString[14], iSeat = GetPlayerVehicleSeat(playerid);
+    new
+        playerSeat = GetPlayerVehicleSeat(playerid);
 
     // How you can discard of your information.
-    if(iSeat == 128) return SendClientMessage(playerid, 0xFFFFFFFF, "An error has prevented us from returning the seat ID.");
+    if (playerSeat == 128)
+    {
+        return SendClientMessage(playerid, 0xFFFFFFFF, "An error has prevented us from returning the seat ID.");
+    }
 
-    format(szString, sizeof(szString), "Your seat: %i", iSeat);
-    SendClientMessage(playerid, 0xFFFFFFFF, szString);
+    new
+        message[14];
+
+    format(message, sizeof(message), "Your seat: %i", playerSeat);
+    SendClientMessage(playerid, 0xFFFFFFFF, message);
     return 1;
 }
 ```

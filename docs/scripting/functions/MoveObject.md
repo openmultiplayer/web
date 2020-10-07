@@ -27,21 +27,23 @@ The time it will take for the object to move in milliseconds.
 ## Examples
 
 ```c
-new obj; // Somewhere at the top of your script
+new gAirportGate; // Somewhere at the top of your script
 
 public OnGameModeInit()
 {
-    obj = CreateObject(980, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+    gAirportGate = CreateObject(980, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     return 1;
 }
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/moveobject", true) == 0)
+    if (strcmp(cmdtext, "/moveobject", true) == 0)
     {
-        new string[50];
-        new movetime = MoveObject(obj, 0, 0, 10, 2.00);
-        format(string, sizeof(string), "Object will finish moving in %d milliseconds", movetime);
+        new
+            string[50],
+            moveTime = MoveObject(gAirportGate, 0, 0, 10, 2.00);
+
+        format(string, sizeof(string), "Object will finish moving in %d milliseconds", moveTime);
         SendClientMessage(playerid, 0xFF000000, string);
         return 1;
     }

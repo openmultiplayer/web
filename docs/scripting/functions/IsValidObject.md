@@ -22,7 +22,7 @@ Checks if an object with the ID provided exists.
 ## Examples
 
 ```c
-if(IsValidObject(objectid)) DestroyObject(objectid);
+if (IsValidObject(objectid)) DestroyObject(objectid);
 ```
 
 ## Notes

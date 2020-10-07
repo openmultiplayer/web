@@ -31,18 +31,18 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new PlayerText:textdraw;
+new PlayerText: gMyTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    textdraw = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");
-    PlayerTextDrawFont(playerid, textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    PlayerTextDrawUseBox(playerid, textdraw, 1);
-    PlayerTextDrawBoxColor(playerid, textdraw, 0x000000FF);
-    PlayerTextDrawTextSize(playerid, textdraw, 40.0, 40.0);
-    PlayerTextDrawSetPreviewModel(playerid, textdraw, 411);
-    PlayerTextDrawSetPreviewRot(playerid, textdraw, -10.0, 0.0, -20.0, 1.0);
-    PlayerTextDrawShow(playerid, textdraw);
+    gMyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");
+    PlayerTextDrawFont(playerid, gMyTextdraw[playerid], TEXT_DRAW_FONT_MODEL_PREVIEW);
+    PlayerTextDrawUseBox(playerid, gMyTextdraw[playerid], 1);
+    PlayerTextDrawBoxColor(playerid, gMyTextdraw[playerid], 0x000000FF);
+    PlayerTextDrawTextSize(playerid, gMyTextdraw[playerid], 40.0, 40.0);
+    PlayerTextDrawSetPreviewModel(playerid, gMyTextdraw[playerid], 411);
+    PlayerTextDrawSetPreviewRot(playerid, gMyTextdraw[playerid], -10.0, 0.0, -20.0, 1.0);
+    PlayerTextDrawShow(playerid, gMyTextdraw[playerid]);
     return 1;
 }
 ```

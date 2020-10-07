@@ -51,9 +51,9 @@ public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, 
 
     GetObjectPos(objectid, oldX, oldY, oldZ);
     GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
-    if(!playerobject) // If this is a global object, sync the position for other players
+    if (!playerobject) // If this is a global object, sync the position for other players
     {
-        if(!IsValidObject(objectid)) return 1;
+        if (!IsValidObject(objectid)) return 1;
         SetObjectPos(objectid, fX, fY, fZ);
         SetObjectRot(objectid, fRotX, fRotY, fRotZ);
     }
@@ -69,7 +69,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, 
         case EDIT_RESPONSE_CANCEL:
         {
             //The player cancelled, so put the object back to it's old position
-            if(!playerobject) //Object is not a playerobject
+            if (!playerobject) //Object is not a playerobject
             {
                 SetObjectPos(objectid, oldX, oldY, oldZ);
                 SetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);

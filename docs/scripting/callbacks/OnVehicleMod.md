@@ -25,7 +25,7 @@ It is always called first in gamemode so returning 0 there also blocks other fil
 public OnVehicleMod(playerid,vehicleid,componentid)
 {
     printf("Vehicle %d was modded by ID %d with the componentid %d",vehicleid, playerid,componentid);
-    if(GetPlayerInterior(playerid) == 0)
+    if (GetPlayerInterior(playerid) == 0)
     {
         BanEx(playerid, "Tuning Hacks"); // Anti-tuning hacks script
         return 0; // Prevents the bad modification from being synced to other players

@@ -24,7 +24,7 @@ Checks if a player is connected (if an ID is taken by a connected player).
 ```c
 KillPlayer(playerid)
 {
-    if(!IsPlayerConnected(playerid)) printf("Player ID %i is not connected!", playerid);
+    if (!IsPlayerConnected(playerid)) printf("Player ID %i is not connected!", playerid);
     else SetPlayerHealth(playerid, 0);
 }
 ```

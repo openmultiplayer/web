@@ -29,7 +29,7 @@ AddMenuItem(WeaponMenu, 0, "Minigun");
 AddMenuItem(WeaponMenu, 0, "Grenades");
 
 // Under OnPlayerCommandText
-if(!strcmp(cmdtext, "/disableguns", true))
+if (!strcmp(cmdtext, "/disableguns", true))
 {
     DisableMenu(WeaponMenu); //Disable the weapon menu
     return 1;

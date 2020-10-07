@@ -353,7 +353,7 @@ That's a simple code to loop through all players:
 ```c
 for(new i,a = GetMaxPlayers(); i < a; i++)
 {
-        if(IsPlayerConnected(i))
+        if (IsPlayerConnected(i))
         {
                  //do something
         }

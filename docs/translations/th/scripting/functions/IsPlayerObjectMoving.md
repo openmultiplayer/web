@@ -27,7 +27,7 @@ Checks if the given player objectid is moving.
 ## ตัวอย่าง
 
 ```c
-if(IsPlayerObjectMoving(playerid, objectid)) StopPlayerObject(playerid, objectid);
+if (IsPlayerObjectMoving(playerid, objectid)) StopPlayerObject(playerid, objectid);
 ```
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน

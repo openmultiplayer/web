@@ -31,7 +31,7 @@ public OnGameModeInit()
     return 1;
 }
 
-if(strcmp(cmdtext, "/tele", true) == 0)
+if (strcmp(cmdtext, "/tele", true) == 0)
 {
     ShowMenuForPlayer(MENU_PlayerTeleport, playerid);
     return 1;

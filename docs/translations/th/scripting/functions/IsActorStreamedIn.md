@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 public OnPlayerSpawn(playerid)
 {
-    if(IsActorStreamedIn(MyActor, playerid))
+    if (IsActorStreamedIn(MyActor, playerid))
     {
         // Do something
     }

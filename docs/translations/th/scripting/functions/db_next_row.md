@@ -30,7 +30,7 @@ Returns 1 on success, otherwise 0 if DBResult:dbresult is a NULL reference or th
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     // If "cmdtext" equals "/EchoWoetJoinList"
-    if(!strcmp(cmdtext, "/EchoWoetJoinList", true, 17))
+    if (!strcmp(cmdtext, "/EchoWoetJoinList", true, 17))
     {
         // Declare "db_result" and "info"
         new DBResult:db_result, info[2][30];

@@ -28,7 +28,7 @@ The number of files that match the pattern.
 
 ```c
 // Check, if "file.txt" exists
-if(fexist("file.txt"))
+if (fexist("file.txt"))
 {
     // Success
 

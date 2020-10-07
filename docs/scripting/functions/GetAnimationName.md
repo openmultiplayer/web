@@ -32,16 +32,16 @@ Get the animation library/name for the index.
 ```c
 public OnPlayerUpdate(playerid)
 {
-    if(GetPlayerAnimationIndex(playerid))
+    if (GetPlayerAnimationIndex(playerid))
     {
         new
-            animlib[32],
-            animname[32],
-            msg[128];
+            animLib[32],
+            animName[32],
+            msgText[128];
 
-        GetAnimationName(GetPlayerAnimationIndex(playerid), animlib, sizeof animlib, animname, sizeof animname);
-        format(msg, sizeof msg, "Running anim: %s %s", animlib, animname);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        GetAnimationName(GetPlayerAnimationIndex(playerid), animLib, sizeof animLib, animName, sizeof animName);
+        format(msgText, sizeof msgText, "Running anim: %s %s", animLib, animName);
+        SendClientMessage(playerid, 0xFFFFFFFF, msgText);
     }
     return 1;
 }

@@ -46,7 +46,7 @@ public OnGameModeInit()
 
 public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
-    if(newkeys == KEY_SUBMISSION)
+    if (newkeys == KEY_SUBMISSION)
     {
         TextDrawShowForPlayer(playerid, gTextDraw);
         SelectTextDraw(playerid, 0xFF4040AA);
@@ -56,7 +56,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 public OnPlayerClickTextDraw(playerid, Text:clickedid)
 {
-    if(clickedid == gTextDraw)
+    if (clickedid == gTextDraw)
     {
          SendClientMessage(playerid, 0xFFFFFFAA, "You clicked on a textdraw.");
          CancelSelectTextDraw(playerid);

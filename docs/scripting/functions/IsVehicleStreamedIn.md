@@ -33,9 +33,9 @@ new streamedVehicleCount;
 
 for(new v = 1; v <= MAX_VEHICLES; v++)
 {
-    if(IsVehicleStreamedIn(v, playerid))
+    if (IsVehicleStreamedIn(v, playerid))
     {
-        streamedVehicleCount++;
+        streamedVehicleCount ++;
     }
 }
 

@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/edit", true))
+    if (!strcmp(cmdtext, "/edit", true))
     {
         EditPlayerObject(playerid, object[playerid]);
         SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: You now edit your object!");

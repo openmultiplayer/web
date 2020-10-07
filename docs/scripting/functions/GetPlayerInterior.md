@@ -22,7 +22,7 @@ The interior ID the player is currently in
 ```c
 public OnPlayerCommandText(playerid,text[])
 {
-    if(strcmp(cmdtext,"/int",true) == 0)
+    if (strcmp(cmdtext,"/int",true) == 0)
     {
         new string[128];
         format(string, sizeof(string), "You are in interior %i",GetPlayerInterior(playerid));

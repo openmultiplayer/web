@@ -33,9 +33,9 @@ public OnGameModeInit()
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/specialcar", true) == 0)
+    if (strcmp(cmdtext, "/specialcar", true) == 0)
     {
-        if(IsPlayerInVehicle(playerid, specialcar))
+        if (IsPlayerInVehicle(playerid, specialcar))
         {
             SendClientMessage(playerid, -1, "You're in the special car!");
         }

@@ -21,29 +21,29 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:Textdraw[MAX_PLAYERS];
+new Text: gMyTextdraw;
 
-public OnPlayerConnect(playerid)
+public OnGameModeInit()
 {
-    Textdraw[playerid] = TextDrawCreate( ... );
+    gMyTextdraw = TextDrawCreate( ... );
     return 1;
 }
 
-public OnPlayerDisconnect(playerid, reason)
+public OnGameModeExit()
 {
-    TextDrawDestroy(Textdraw[playerid]);
+    TextDrawDestroy(gMyTextdraw);
     return 1;
 }
 
 public OnPlayerSpawn(playerid)
 {
-    TextDrawShowForPlayer(playerid, Textdraw[playerid]);
+    TextDrawShowForPlayer(playerid, gMyTextdraw);
     return 1;
 }
 
 public OnPlayerDeath(playerid, reason)
 {
-    TextDrawHideForPlayer(playerid, Textdraw[playerid]);
+    TextDrawHideForPlayer(playerid, gMyTextdraw);
     return 1;
 }
 ```

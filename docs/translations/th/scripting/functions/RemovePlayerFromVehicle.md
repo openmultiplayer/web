@@ -25,7 +25,7 @@ Removes/ejects a player from their vehicle.
 // Example - Players can only drive vehicles if they have 10 score.
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if(newstate == PLAYER_STATE_DRIVER && GetPlayerScore(playerid) < 10) // PlAYER_STATE_DRIVER = 2
+    if (newstate == PLAYER_STATE_DRIVER && GetPlayerScore(playerid) < 10) // PlAYER_STATE_DRIVER = 2
     {
         RemovePlayerFromVehicle(playerid);
     }

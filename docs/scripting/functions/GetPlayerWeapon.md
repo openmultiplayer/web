@@ -22,9 +22,15 @@ The ID of the player's current weapon. Returns -1 if the player specified does n
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    if(killerid != INVALID_PLAYER_ID)
+    // Check if the killerid is not an invalid player (which means is connected).
+    if (killerid != INVALID_PLAYER_ID)
     {
-        if(GetPlayerWeapon(killerid) == 38) Ban(killerid); //Ban if they have a minigun
+        // The WEAPON_MINIGUN constant is pre-defined in the standard library and is equal to 38.
+        if (GetPlayerWeapon(killerid) == WEAPON_MINIGUN)
+        {
+            //Ban if they have a minigun
+            Ban(killerid);
+        }
     }
     return 1;
 }

@@ -31,7 +31,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 {
     new Float:objX, Float:objY, Float:objZ;
     GetPlayerObjectPos(playerid, objectid, objX, objY, objZ);
-    if(objX >= 3000.0 && objY >= 3000.0)
+    if (objX >= 3000.0 && objY >= 3000.0)
     {
         SetPlayerObjectNoCameraCol(playerid, objectid);
     }

@@ -23,7 +23,7 @@ Set a player's wanted level (6 brown stars under HUD).
 ## Examples
 
 ```c
-if(strcmp(cmdtext, "/turnuptheheat", true) == 0)
+if (strcmp(cmdtext, "/turnuptheheat", true) == 0)
 {
     SetPlayerWantedLevel(playerid, 6);
     SendClientMessage(playerid, 0xFF0000FF, "Wanted Level: 6");

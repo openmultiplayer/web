@@ -30,11 +30,13 @@ Check if a player is an actual player or an NPC.
 ```c
 public OnPlayerConnect(playerid)
 {
-    if(IsPlayerNPC(playerid))
+    if (IsPlayerNPC(playerid))
     {
-    SendClientMessageToAll(-1, "An NPC connected!");
-    return 1;
+        SendClientMessageToAll(-1, "An NPC connected!");
+        return 1;
     }
+
+    // The other code here won't be executed unless its a player
 }
 ```
 

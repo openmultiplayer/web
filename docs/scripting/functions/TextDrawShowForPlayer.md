@@ -25,8 +25,8 @@ Shows a textdraw for a specific player.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new Text:textid = TextDrawCreate(100.0, 100.0, "Welcome!");
-    TextDrawShowForPlayer(playerid, textid);
+    new Text: textId = TextDrawCreate(100.0, 100.0, "Welcome!");
+    TextDrawShowForPlayer(playerid, textId);
 }
 ```
 

@@ -22,7 +22,7 @@ Checks if a vehicle has a trailer attached to it. Use GetVehicleTrailer to get t
 ## ตัวอย่าง
 
 ```c
-if(IsTrailerAttachedToVehicle(vehicleid))
+if (IsTrailerAttachedToVehicle(vehicleid))
 {
     printf("Vehicle %i has a trailer!", vehicleid);
 }

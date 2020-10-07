@@ -35,7 +35,7 @@ Check if a vehicle is created.
 // Count vehicles
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext,"/countvehicles",true))
+    if (!strcmp(cmdtext,"/countvehicles",true))
     {
         new
             count,
@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
         for(new i; i < MAX_VEHICLES; i++)
         {
-            if(IsValidVehicle(i)) count++;
+            if (IsValidVehicle(i)) count++;
         }
 
         format(msg, sizeof(msg), "* There are %d valid spawned vehicles on this server.", count);

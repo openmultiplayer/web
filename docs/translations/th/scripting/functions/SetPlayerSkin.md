@@ -27,7 +27,7 @@ Note that 'success' is reported even when skin ID is invalid (not 0-311, or 74),
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/fireman", true) == 0)
+    if (strcmp(cmdtext, "/fireman", true) == 0)
     {
         // Set the player's skin to ID 277, which is a fireman.
         SetPlayerSkin(playerid, 277);
@@ -43,15 +43,15 @@ stock SetPlayerSkinFix(playerid, skinid)
         seatid = GetPlayerVehicleSeat(playerid);
     GetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
     GetPlayerFacingAngle(playerid, tmpPos[3]);
-    if(skinid < 0 || skinid > 299) return 0;
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_DUCK)
+    if (skinid < 0 || skinid > 299) return 0;
+    if (GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_DUCK)
     {
         SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
         SetPlayerFacingAngle(playerid, tmpPos[3]);
         TogglePlayerControllable(playerid, 1); // preventing any freeze - optional
         return SetPlayerSkin(playerid, skinid);
     }
-    else if(IsPlayerInAnyVehicle(playerid))
+    else if (IsPlayerInAnyVehicle(playerid))
     {
         new
             tmp;

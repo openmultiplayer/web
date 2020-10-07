@@ -38,9 +38,9 @@ ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Server Rules", "-
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_RULES)
+    if (dialogid == DIALOG_RULES)
     {
-        if(response) // If they clicked 'Yes' or pressed enter
+        if (response) // If they clicked 'Yes' or pressed enter
         {
             SendClientMessage(playerid, COLOR_GREEN, "Thank you for agreeing to the server rules!");
         }
@@ -60,15 +60,15 @@ ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Please en
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_LOGIN)
+    if (dialogid == DIALOG_LOGIN)
     {
-        if(!response) // If they clicked 'Cancel' or pressed esc
+        if (!response) // If they clicked 'Cancel' or pressed esc
         {
             Kick(playerid);
         }
         else // Pressed ENTER or clicked 'Login' button
         {
-            if(CheckPassword(playerid, inputtext))
+            if (CheckPassword(playerid, inputtext))
             {
                 SendClientMessage(playerid, COLOR_RED, "You are now logged in!");
             }
@@ -92,9 +92,9 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons", "Desert
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // If they clicked 'Select' or double-clicked a weapon
+        if (response) // If they clicked 'Select' or double-clicked a weapon
         {
             // Give them the weapon
             switch(listitem)
@@ -121,9 +121,9 @@ AK-47\t120\t400",
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // If they clicked 'Select' or double-clicked a weapon
+        if (response) // If they clicked 'Select' or double-clicked a weapon
         {
             // Give them the weapon
             switch(listitem)

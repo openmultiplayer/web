@@ -29,11 +29,11 @@ Remove an attached object from a player.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strmp(cmdtext, "/remao", true)) // Remove Attached Objects
+    if (!strmp(cmdtext, "/remao", true)) // Remove Attached Objects
     {
         for(new i=0; i<MAX_PLAYER_ATTACHED_OBJECTS; i++)
         {
-            if(IsPlayerAttachedObjectSlotUsed(playerid, i)) RemovePlayerAttachedObject(playerid, i);
+            if (IsPlayerAttachedObjectSlotUsed(playerid, i)) RemovePlayerAttachedObject(playerid, i);
         }
         return 1;
     }

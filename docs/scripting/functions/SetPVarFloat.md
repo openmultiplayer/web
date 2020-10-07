@@ -27,11 +27,13 @@ Set a float player variable's value.
 forward SavePos(playerid);
 public SavePos(playerid)
 {
-    new Float:x,Float:y,Float:z;
-    GetPlayerPos(playerid,x,y,z); // Get the players position
-    SetPVarFloat(playerid,"xpos",x); // Save the float into a player variable
-    SetPVarFloat(playerid,"ypos",y); // Save the float into a player variable
-    SetPVarFloat(playerid,"zpos",z); // Save the float into a player variable
+    new
+        Float: x, Float: y, Float: z;
+
+    GetPlayerPos(playerid, x, y, z); // Get the players position
+    SetPVarFloat(playerid, "xpos", x); // Save the float into a player variable
+    SetPVarFloat(playerid, "ypos", y); // Save the float into a player variable
+    SetPVarFloat(playerid, "zpos", z); // Save the float into a player variable
     return 1;
 }
 ```

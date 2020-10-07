@@ -28,7 +28,7 @@ Removes attached objects.
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    if(IsPlayerHoldingObject(playerid)) StopPlayerHoldingObject(playerid);
+    if (IsPlayerHoldingObject(playerid)) StopPlayerHoldingObject(playerid);
     return 1;
 }
 ```

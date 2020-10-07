@@ -41,7 +41,7 @@ public OnPlayerText(playerid, text[])
 
 :::tip
 
-You can't see your own chatbubbles. The same applies to attached 3D text labels.
+You can't see your own chat bubbles. The same applies to attached 3D text labels.
 
 :::
 

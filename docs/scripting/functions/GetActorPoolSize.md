@@ -22,7 +22,7 @@ SetAllActorsHealth(Float:health)
 {
     for(new i = 0, j = GetActorPoolSize(); i <= j; i++)
     {
-        if(IsValidActor(i))
+        if (IsValidActor(i))
         {
             SetActorHealth(i, health);
         }

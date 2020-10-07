@@ -34,8 +34,8 @@ Attach a 3D text label to a player.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new Text3D:label = Create3DTextLabel("Hello, I am new here!", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0);
-    Attach3DTextLabelToPlayer(label, playerid, 0.0, 0.0, 0.7);
+    new Text3D:textLabel = Create3DTextLabel("Hello, I am new here!", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0);
+    Attach3DTextLabelToPlayer(textLabel, playerid, 0.0, 0.0, 0.7);
     return 1;
 }
 ```

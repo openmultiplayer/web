@@ -20,12 +20,12 @@ ID of the vehicle or 0 if not in a vehicle
 ## Examples
 
 ```c
-//add 10x Nitro if the player is in a car. Might be called on a command.
-new vehicle;
-vehicle = GetPlayerVehicleID(playerid);
-if(vehicle > 0)
+// Add 10x Nitro if the player is in a car. Might be called on a command.
+new vehicleId;
+vehicleId = GetPlayerVehicleID(playerid);
+if (vehicleId != 0)
 {
-    AddVehicleComponent(vehicle, 1010);
+    AddVehicleComponent(vehicleId, 1010);
 }
 ```
 

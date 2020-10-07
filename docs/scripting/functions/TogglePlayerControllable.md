@@ -26,13 +26,13 @@ Toggles whether a player can control their character or not. The player will als
 public OnPlayerCommandText(playerid, cmdtext[])
 {
      // Freezes a player when they types /freezeme
-     if(strcmp(cmdtext, "/freezeme", true) == 0)
+     if (strcmp(cmdtext, "/freezeme", true) == 0)
      {
           TogglePlayerControllable(playerid,0);
           return 1;
      }
      // Unfreezes a player when they types /unfreezeme
-     if(strcmp(cmdtext, "/unfreezeme", true) == 0)
+     if (strcmp(cmdtext, "/unfreezeme", true) == 0)
      {
           TogglePlayerControllable(playerid,1);
           return 1;

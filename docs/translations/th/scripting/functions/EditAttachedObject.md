@@ -34,7 +34,7 @@ public OnPlayerSpawn(playerid)
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/edit", true))
+    if (!strcmp(cmdtext, "/edit", true))
     {
         EditAttachedObject(playerid, 0);
         SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: You now edit your attached object on index slot 0!");

@@ -29,7 +29,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/selectd", true))
+    if (!strcmp(cmdtext, "/selectd", true))
     {
         for(new i = 0; i < MAX_TEXT_DRAWS; i++) TextDrawSetSelectable(Text:i, 1);
         SendClientMessage(playerid, 0xFFFFFFAA, "SERVER: All textdraws can be selected now!");

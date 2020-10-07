@@ -24,11 +24,11 @@ Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. V
 ## Examples
 
 ```c
-new gTAXI;
+new gTaxi;
 
 public OnGameModeInit()
 {
-    gTAXI = AddStaticVehicle(420, -2482.4937, 2242.3936, 4.6225, 179.3656, 6, 1); // Taxi
+    gTaxi = AddStaticVehicle(420, -2482.4937, 2242.3936, 4.6225, 179.3656, 6, 1); // Taxi
     return 1;
 }
 
@@ -36,9 +36,9 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER && oldstate == PLAYER_STATE_ONFOOT)
     {
-        if (GetPlayerVehicleID(playerid) == gTAXI)
+        if (GetPlayerVehicleID(playerid) == gTaxi)
         {
-            AddVehicleComponent(gTAXI, 1010); // Nitro
+            AddVehicleComponent(gTaxi, 1010); // Nitro
             SendClientMessage(playerid, 0xFFFFFFAA, "Nitro added to the Taxi.");
         }
     }

@@ -23,17 +23,17 @@ Shows a previously created menu for a player.
 ## Examples
 
 ```c
-new Menu:MENU_PlayerTeleport;
+new Menu:gPlayerTeleport;
 
 public OnGameModeInit()
 {
-    MENU_PlayerTeleport = CreateMenu(...);
+    gPlayerTeleport = CreateMenu(...);
     return 1;
 }
 
-if(strcmp(cmdtext, "/tele", true) == 0)
+if (strcmp(cmdtext, "/tele", true) == 0)
 {
-    ShowMenuForPlayer(MENU_PlayerTeleport, playerid);
+    ShowMenuForPlayer(gPlayerTeleport, playerid);
     return 1;
 }
 ```

@@ -130,13 +130,13 @@ new panels, doors, lights, tires;
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
 
 // Single state
-if(GetDoorState(doors, DOOR_DRIVER, IS_DAMAGED))
+if (GetDoorState(doors, DOOR_DRIVER, IS_DAMAGED))
 {
     SendClientMessage(playerid, -1, "The drivers' door of your vehicle is damaged!");
 }
 
 // Combined state
-if(GetDoorState(doors, DOOR_HOOD, IS_OPENED | IS_DAMAGED))
+if (GetDoorState(doors, DOOR_HOOD, IS_OPENED | IS_DAMAGED))
 {
     SendClientMessage(playerid, -1, "The hood of your vehicle is both opened and damaged!");
 }

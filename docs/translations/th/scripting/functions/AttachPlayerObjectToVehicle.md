@@ -36,7 +36,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if(newstate == PLAYER_STATE_DRIVER) // If player enters vehicle
+    if (newstate == PLAYER_STATE_DRIVER) // If player enters vehicle
     {
         // Attach massive cow.
         new cow_object = CreatePlayerObject(playerid, 16442, 0, 0, 0, 0, 0, 0);

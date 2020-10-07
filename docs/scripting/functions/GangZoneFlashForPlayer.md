@@ -22,17 +22,17 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new gangzone;
+new gGangZoneId;
 
 public OnGameModeInit()
 {
-    gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
+    gGangZoneId = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
     return 1;
 }
 
 public OnPlayerSpawn(playerid)
 {
-    GangZoneFlashForPlayer(playerid,gangzone,COLOR_RED);
+    GangZoneFlashForPlayer(playerid, gGangZoneId, COLOR_RED);
     return 1;
 }
 ```

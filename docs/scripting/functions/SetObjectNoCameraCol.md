@@ -32,7 +32,7 @@ public OnObjectMoved(objectid)
 {
     new Float:objX, Float:objY, Float:objZ;
     GetObjectPos(objectid, objX, objY, objZ);
-    if(objX >= 3000.0 || objY >= 3000.0 || objX <= -3000.0 || objY <= -3000.0)
+    if (objX >= 3000.0 || objY >= 3000.0 || objX <= -3000.0 || objY <= -3000.0)
     {
         SetObjectNoCameraCol(objectid);
     }

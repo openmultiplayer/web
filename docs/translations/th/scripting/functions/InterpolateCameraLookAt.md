@@ -36,7 +36,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/rotateme", true))
+    if (!strcmp(cmdtext, "/rotateme", true))
     {
         TogglePlayerSpectating(playerid, 1);
         InterpolateCameraLookAt(playerid, 50.0, 50.0, 10.0, -50.0, 50.0, 10.0, 10000, CAMERA_MOVE);

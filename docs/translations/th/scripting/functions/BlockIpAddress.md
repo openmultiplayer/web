@@ -29,7 +29,7 @@ This function does not return any specific values.
 ```c
 public OnRconLoginAttempt(ip[], password[], success)
 {
-    if(!success) // if they supplied a bad password
+    if (!success) // if they supplied a bad password
     {
         BlockIpAddress(ip, 60 * 1000); // block the connections from this ip for one minute
     }

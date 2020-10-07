@@ -31,11 +31,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/myspoiler", cmdtext) && IsPlayerInAnyVehicle(playerid))
     {
-        new component;
-        component = GetVehicleComponentInSlot(GetPlayerVehicleID(playerid), CARMODTYPE_SPOILER);
+        new
+            component = GetVehicleComponentInSlot(GetPlayerVehicleID(playerid), CARMODTYPE_SPOILER);
+
         if (component == 1049)
         {
-            SendClientMessage(playerid,0xFFFFFFFF,"You have an Alien spoiler installed in your Elegy!");
+            SendClientMessage(playerid, -1, "You have an Alien spoiler installed in your Elegy!");
         }
     }
 }

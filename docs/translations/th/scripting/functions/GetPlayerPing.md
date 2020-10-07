@@ -23,7 +23,7 @@ The current ping of the player (expressed in milliseconds).
 public pingchecktimer(playerid)
 {
     // Kick players with a high ping
-    if(GetPlayerPing(playerid) > 1000) Kick(playerid);
+    if (GetPlayerPing(playerid) > 1000) Kick(playerid);
     return 1;
 }
 ```

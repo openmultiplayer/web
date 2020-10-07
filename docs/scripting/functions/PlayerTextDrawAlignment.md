@@ -30,12 +30,12 @@ For alignment 2 (center) the x and y values of TextSize need to be swapped, see 
 ## Examples
 
 ```c
-new PlayerText:MyTextdraw[MAX_PLAYERS];
+new PlayerText:gMyTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    MyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");
-    PlayerTextDrawAlignment(playerid, MyTextdraw[playerid], 2); // Align the textdraw in the center
+    gMyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");
+    PlayerTextDrawAlignment(playerid, gMyTextdraw[playerid], 2); // Align the textdraw in the center
     return 1;
 }
 ```

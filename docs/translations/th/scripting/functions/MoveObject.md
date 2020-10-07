@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/moveobject", true) == 0)
+    if (strcmp(cmdtext, "/moveobject", true) == 0)
     {
         new string[50];
         new movetime = MoveObject(obj, 0, 0, 10, 2.00);

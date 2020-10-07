@@ -28,10 +28,11 @@ The ID of the targeted actor, or INVALID_ACTOR_ID if none.
 ```c
 public OnPlayerUpdate(playerid)
 {
-    new actorid = GetPlayerTargetActor(playerid);
+    new
+        targetActorId = GetPlayerTargetActor(playerid),
+        string[32];
 
-    new string[32];
-    format(string, sizeof(string), "You are aiming at actor id %d", actorid);
+    format(string, sizeof(string), "You are aiming at actor id %d", targetActorId);
     SendClientMessage(playerid, -1, string);
     return 1;
 }

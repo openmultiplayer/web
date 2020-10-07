@@ -32,7 +32,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/repair", cmdtext))
     {
-        if(!IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid, 0xFFFFFFFF, "You are not in a vehicle!");
+        if (!IsPlayerInAnyVehicle(playerid))
+        {
+            return SendClientMessage(playerid, 0xFFFFFFFF, "You are not in a vehicle!");
+        }
 
         RepairVehicle(GetPlayerVehicleID(playerid));
 

@@ -24,7 +24,7 @@ Puts a player in a vehicle.
 ## Examples
 
 ```c
-public OnPlayerEnterVehicle(playerid,vehicleid,ispassanger)
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 {
     PutPlayerInVehicle(playerid, vehicleid, 0);
     return 1;

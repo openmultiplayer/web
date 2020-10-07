@@ -29,7 +29,7 @@ OnPlayerInteractWithServer(playerid)
  */
 {
     // This only works when the player is allowed to
-    if(IsPlayerAllowedToDoThing[playerid])
+    if (IsPlayerAllowedToDoThing[playerid])
     {
         // Do the thing the player requested
         DoTheThingThePlayerRequested();
@@ -110,7 +110,7 @@ static PlayerAllowedTick[MAX_PLAYERS];
 
 OnPlayerInteractWithServer(playerid)
 {
-   if(GetTickCount() - PlayerAllowedTick[playerid] > 10000)
+   if (GetTickCount() - PlayerAllowedTick[playerid] > 10000)
    // This only works when the current tick minus the last tick is above 10000.
    // In other words, it only works when the interval between the actions is over 10 seconds.
    {
@@ -135,7 +135,7 @@ static PlayerAllowedSeconds[MAX_PLAYERS];
 
 OnPlayerInteractWithServer(playerid)
 {
-   if(gettime() - PlayerAllowedSeconds[playerid] > 10)
+   if (gettime() - PlayerAllowedSeconds[playerid] > 10)
    // This only works when the current seconds minus the last seconds is above 10.
    // In other words, it only works when the interval between the actions is over 10 seconds.
    {

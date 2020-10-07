@@ -29,7 +29,7 @@ This function does not return any specific values.
 ```c
 if (strcmp(cmdtext, "/boxing", true) == 0)
 {
-    SetPlayerFightingStyle (playerid, FIGHT_STYLE_BOXING);
+    SetPlayerFightingStyle(playerid, FIGHT_STYLE_BOXING);
     SendClientMessage(playerid, 0xFFFFFFAA, "You have changed your fighting style to boxing!");
     return 1;
 }

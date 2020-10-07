@@ -29,7 +29,7 @@ Checks if the given string is packed.
 // Create a packed string
 new string[24 char];
 
-if(ispacked(string))
+if (ispacked(string))
 {
    print("The string is packed.");
 }

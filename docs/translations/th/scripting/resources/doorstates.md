@@ -125,13 +125,13 @@ GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
  
  
 // simple
-if(GetDoorState(doors, DOOR\_DRIVER, IS\_DAMAGED))
+if (GetDoorState(doors, DOOR\_DRIVER, IS\_DAMAGED))
 {
     [SendClientMessage](./functions/SendClientMessage)(playerid, \-1, "The driver door of your vehicle is damaged!");
 }
  
 // or even combined
-if(GetDoorState(doors, DOOR\_HOOD, IS\_OPENED | IS\_DAMAGED))
+if (GetDoorState(doors, DOOR\_HOOD, IS\_OPENED | IS\_DAMAGED))
 {
     [SendClientMessage](./functions/SendClientMessage)(playerid, \-1, "The hood of your vehicle is both opened and damaged!");
 }

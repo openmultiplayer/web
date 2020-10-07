@@ -34,7 +34,7 @@ As of SA-MP 0.3x, any action taken directly before Kick() (such as sending a mes
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/kickme", true) == 0)
+    if (strcmp(cmdtext, "/kickme", true) == 0)
     {
         // Kick the player who executed this command.
 

@@ -23,7 +23,7 @@ ID of the vehicle or 0 if not in a vehicle
 //add 10x Nitro if the player is in a car. Might be called on a command.
 new vehicle;
 vehicle = GetPlayerVehicleID(playerid);
-if(vehicle > 0)
+if (vehicle > 0)
 {
     AddVehicleComponent(vehicle, 1010);
 }

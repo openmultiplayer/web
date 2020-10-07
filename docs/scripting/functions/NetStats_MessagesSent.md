@@ -28,7 +28,7 @@ The number of messages the server has sent to the player.
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/msgsent"))
+    if (!strcmp(cmdtext, "/msgsent"))
     {
         new szString[144];
         format(szString, sizeof(szString), "You have recieved %i network messages.", NetStats_MessagesSent(playerid));

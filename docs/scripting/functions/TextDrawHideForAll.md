@@ -20,16 +20,16 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new TextID;
+new Text: gMyTextdraw;
 
-TextID = TextDrawCreate(...);
+gMyTextdraw = TextDrawCreate(...);
 
 
 //Later on
-TextDrawShowForAll(TextID);
+TextDrawShowForAll(gMyTextdraw);
 
 //Even later on
-TextDrawHideForAll(TextID);
+TextDrawHideForAll(gMyTextdraw);
 ```
 
 ## Related Functions

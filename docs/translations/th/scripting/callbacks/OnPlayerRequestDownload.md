@@ -41,16 +41,16 @@ public OnPlayerRequestDownload(playerid, type, crc)
     new dlfilename[64+1];
     new foundfilename=0;
 
-    if(!IsPlayerConnected(playerid)) return 0;
+    if (!IsPlayerConnected(playerid)) return 0;
 
-    if(type == DOWNLOAD_REQUEST_TEXTURE_FILE) {
+    if (type == DOWNLOAD_REQUEST_TEXTURE_FILE) {
         foundfilename = FindTextureFileNameFromCRC(crc,dlfilename,64);
     }
-    else if(type == DOWNLOAD_REQUEST_MODEL_FILE) {
+    else if (type == DOWNLOAD_REQUEST_MODEL_FILE) {
         foundfilename = FindModelFileNameFromCRC(crc,dlfilename,64);
     }
 
-    if(foundfilename) {
+    if (foundfilename) {
         format(fullurl,256,"%s/%s",baseurl,dlfilename);
         RedirectDownload(playerid,fullurl);
     }

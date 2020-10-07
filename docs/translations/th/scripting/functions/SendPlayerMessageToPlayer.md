@@ -26,7 +26,7 @@ Sends a message in the name of a player to another player on the server. The mes
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/hello", true))
+    if (!strcmp(cmdtext, "/hello", true))
     {
         SendPlayerMessageToPlayer(0, playerid, "Hello ID 0!"); //Will send a message to the user with the ID 0 in the name of the user who typed '/hello'.
         // Assuming 'playerid' is called Tenpenny, the output will be 'Tenpenny: Hello ID 0!'

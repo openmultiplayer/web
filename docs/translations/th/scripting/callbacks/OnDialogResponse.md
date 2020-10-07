@@ -38,9 +38,9 @@ ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "กฎของ�
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_RULES)
+    if (dialogid == DIALOG_RULES)
     {
-        if(response) // หากพวกเขาคลิก 'ยอมรับ' หรือกด enter
+        if (response) // หากพวกเขาคลิก 'ยอมรับ' หรือกด enter
         {
             SendClientMessage(playerid, COLOR_GREEN, "Thank you for agreeing to the กฎของเซิร์ฟเวอร์!");
         }
@@ -60,15 +60,15 @@ ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "เข้าสู
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_LOGIN)
+    if (dialogid == DIALOG_LOGIN)
     {
-        if(!response) // หากพวกเขาคลิก 'ยกเลิก' หรือกด esc
+        if (!response) // หากพวกเขาคลิก 'ยกเลิก' หรือกด esc
         {
             Kick(playerid);
         }
         else // กด ENTER หรือคลิกปุ่ม 'เข้าสู่ระบบ'
         {
-            if(CheckPassword(playerid, inputtext))
+            if (CheckPassword(playerid, inputtext))
             {
                 SendClientMessage(playerid, COLOR_RED, "ตอนนี้คุณได้เข้าสู่ระบบเรียบร้อยแล้ว!");
             }
@@ -92,9 +92,9 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "อาวุธ",
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // หากพวกเขาคลิก 'เลือก' หรือดับเบิลคลิกที่อาวุธ
+        if (response) // หากพวกเขาคลิก 'เลือก' หรือดับเบิลคลิกที่อาวุธ
         {
             // ให้อาวุธพวกเขา
             switch(listitem)
@@ -121,9 +121,9 @@ AK-47\t120\t400",
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // หากพวกเขาคลิก 'เลือก' หรือดับเบิลคลิกที่อาวุธ
+        if (response) // หากพวกเขาคลิก 'เลือก' หรือดับเบิลคลิกที่อาวุธ
         {
             // ให้อาวุธพวกเขา
             switch(listitem)

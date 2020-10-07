@@ -32,7 +32,7 @@ Closes a file. Files should always be closed when the script no longer needs the
 new File:handle = fopen("file.txt", io_append);
 
 // Check, if file is open
-if(handle)
+if (handle)
 {
     // Success
 

@@ -22,13 +22,13 @@ The index of the row this item was added to.
 ## Examples
 
 ```c
-new Menu:examplemenu;
+new Menu:gExampleMenu;
 
 public OnGameModeInit()
 {
-    examplemenu = CreateMenu("Your Menu", 2, 200.0, 100.0, 150.0, 150.0);
-    AddMenuItem(examplemenu, 0, "item 1");
-    AddMenuItem(examplemenu, 0, "item 2");
+    gExampleMenu = CreateMenu("Your Menu", 2, 200.0, 100.0, 150.0, 150.0);
+    AddMenuItem(gExampleMenu, 0, "item 1");
+    AddMenuItem(gExampleMenu, 0, "item 2");
     return 1;
 }
 ```

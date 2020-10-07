@@ -35,7 +35,7 @@ The new position; relative to the start of the file.
 new File:handle = fopen("file.txt", io_read);
 
 // If "file.txt" is open
-if(handle)
+if (handle)
 {
     // Success
 

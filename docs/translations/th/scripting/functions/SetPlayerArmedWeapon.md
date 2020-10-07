@@ -37,7 +37,7 @@ public OnPlayerUpdate(playerid)
 // SMG driveby by [03]Garsino (for SA:MP 0.3c)
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if(newstate == PLAYER_STATE_DRIVER || newstate == PLAYER_STATE_PASSENGER)
+    if (newstate == PLAYER_STATE_DRIVER || newstate == PLAYER_STATE_PASSENGER)
     {
         new weapon, ammo;
         GetPlayerWeaponData(playerid, 4, weapon, ammo); // Get the players SMG weapon in slot 4

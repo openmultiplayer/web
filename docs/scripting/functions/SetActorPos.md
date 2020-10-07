@@ -31,16 +31,16 @@ Set the position of an actor.
 ## Examples
 
 ```c
-new MyActor;
+new gMyActor;
 
 public OnGameModeInit()
 {
-    MyActor = CreateActor(...);
+    gMyActor = CreateActor(...);
     return 1;
 }
 
 // Somewhere else
-SetActorPos(MyActor, 1.0, 2.0, 3.0);
+SetActorPos(gMyActor, 1.0, 2.0, 3.0);
 ```
 
 ## Notes

@@ -33,7 +33,7 @@ public OnGameModeInit()
 
 public OnPlayerSpawn(playerid)
 {
-    if(IsPlayerAdmin(playerid)) GangZoneShowForAll(gangzone,COLOR_RED);
+    if (IsPlayerAdmin(playerid)) GangZoneShowForAll(gangzone,COLOR_RED);
     return 1;
 }
 ```

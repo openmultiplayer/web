@@ -29,7 +29,7 @@ The camera mode as an integer (or -1 if player is not connected)
 /* when the player types 'cameramode' in to the chat box, they'll see this. */
 public OnPlayerText(playerid, text[])
 {
-    if(strcmp(text, "cameramode", true) == 0)
+    if (strcmp(text, "cameramode", true) == 0)
     {
         new szMessage[22];
         format(szMessage, sizeof(szMessage), "Your camera mode: %d", GetPlayerCameraMode(playerid));

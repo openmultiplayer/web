@@ -21,12 +21,12 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:MyTextdraw;
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextDraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
-    TextDrawSetProportional(MyTextDraw,1);
+    gMyTextdraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
+    TextDrawSetProportional(gMyTextdraw, 1);
     return 1;
 }
 ```

@@ -33,11 +33,11 @@ public OnGameModeInit()
 
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
-    if(pickupid == pickup_Cash)
+    if (pickupid == pickup_Cash)
     {
         GivePlayerMoney(playerid, 1000);
     }
-    else if(pickupid == pickup_Health)
+    else if (pickupid == pickup_Health)
     {
         SetPlayerHealth(playerid, 100.0);
     }

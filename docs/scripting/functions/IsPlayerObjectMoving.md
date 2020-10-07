@@ -27,7 +27,7 @@ Checks if the given player objectid is moving.
 ## Examples
 
 ```c
-if(IsPlayerObjectMoving(playerid, objectid)) StopPlayerObject(playerid, objectid);
+if (IsPlayerObjectMoving(playerid, objectid)) StopPlayerObject(playerid, objectid);
 ```
 
 ## Related Functions

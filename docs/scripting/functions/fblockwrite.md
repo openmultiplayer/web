@@ -45,7 +45,7 @@ new some_data[some_enum];
 new File:handle = fopen("file.bin", io_write);
 
 // Check, if "file.bin" is open
-if(handle)
+if (handle)
 {
     // Success
 

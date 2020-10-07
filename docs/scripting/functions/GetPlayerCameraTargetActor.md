@@ -40,7 +40,7 @@ public OnPlayerUpdate(playerid)
     new playerTargetActor = GetPlayerCameraTargetActor(playerid);
 
     // If they ARE looking at ANY actor
-    if(playerTargetActor != INVALID_ACTOR_ID)
+    if (playerTargetActor != INVALID_ACTOR_ID)
     {
         // Store the player's weapon so we can check if they are armed
         new playerWeapon = GetPlayerWeapon(playerid);
@@ -50,7 +50,7 @@ public OnPlayerUpdate(playerid)
         GetPlayerKeys(playerid, keys, updown, leftright);
 
         // If the actor hasn't put its hands up yet, AND the player is ARMED
-        if(!ActorHandsup[playerTargetActor] && playerWeapon >= 22 && playerWeapon <= 42 && keys & KEY_AIM)
+        if (!ActorHandsup[playerTargetActor] && playerWeapon >= 22 && playerWeapon <= 42 && keys & KEY_AIM)
         {
             // Apply 'hands up' animation
             ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr",4.1,0,0,0,1,0);

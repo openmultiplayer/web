@@ -23,7 +23,7 @@ This function does not return any specific values.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/storm", true))
+    if (!strcmp(cmdtext, "/storm", true))
     {
         SetPlayerWeather(playerid, 8);
         return 1;

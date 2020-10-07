@@ -20,8 +20,9 @@ The virtual world that the vehicle is in.
 ## Examples
 
 ```c
-new world = GetVehicleVirtualWorld(vehicleid);
-SetPlayerVirtualWorld(playerid, world);
+new
+	vehicleWorld = GetVehicleVirtualWorld(vehicleid);
+SetPlayerVirtualWorld(playerid, vehicleWorld);
 ```
 
 ## Related Functions

@@ -33,7 +33,7 @@ public OnGameModeInit()
 
 public OnPlayerSelectedMenuRow(playerid, row)
 {
-    if(GetPlayerMenu(playerid) == MyMenu)
+    if (GetPlayerMenu(playerid) == MyMenu)
     {
         switch(row)
         {

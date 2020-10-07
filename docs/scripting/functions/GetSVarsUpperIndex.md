@@ -24,7 +24,7 @@ for(new i=0; i != sVarUpperIndex; i++) // Loop through all sVar IDs under the up
     new sVarName[128];
     GetSVarNameAtIndex(i, pVarName, sizeof(pVarName));
     // If the var is set (type not 0), increment sVarCount.
-    if(GetSVarType(pVarName) != 0) sVarCount++;
+    if (GetSVarType(pVarName) != 0) sVarCount++;
 }
 
 new szString[66];

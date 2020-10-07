@@ -28,7 +28,7 @@ The percentage packet loss as a float. 0 if player not connected.
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
 {
-    if(!strcmp(cmdtext, "/packetloss"))
+    if (!strcmp(cmdtext, "/packetloss"))
     {
         new szString[144];
         format(szString, sizeof(szString), "Packets lost: %.2f percent.", NetStats_PacketLossPercent(playerid));

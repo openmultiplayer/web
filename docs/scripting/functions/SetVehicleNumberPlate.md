@@ -29,7 +29,8 @@ Set a vehicle numberplate.
 ## Examples
 
 ```c
-new vehicleid = CreateVehicle(542, 2074.73, 1089.89, 10.51, 0.0, -1, -1, -1);
+new
+	vehicleid = CreateVehicle(542, 2074.73, 1089.89, 10.51, 0.0, -1, -1, -1);
 SetVehicleNumberPlate(vehicleid, "ABCD 123");
 ```
 

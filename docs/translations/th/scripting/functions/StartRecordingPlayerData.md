@@ -30,9 +30,9 @@ This function does not return any specific values.
 ```c
 if (!strcmp("/recordme", cmdtext))
 {
-    if(GetPlayerState(playerid) == 1)
+    if (GetPlayerState(playerid) == 1)
     StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_ONFOOT, "MyFile");
-    else if(GetPlayerState(playerid) == 2)
+    else if (GetPlayerState(playerid) == 2)
     StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_DRIVER, "MyFile");
     SendClientMessage(playerid, 0xFFFFFFFF, "All your movements are now being recorded!");
     return 1;

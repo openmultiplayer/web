@@ -30,7 +30,8 @@ The client version is stored in the specified array.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new string[24];
+    new
+        string[24];
     GetPlayerVersion(playerid, string, sizeof(string));
     format(string, sizeof(string), "Your version of SA-MP: %s", string);
     SendClientMessage(playerid, 0xFFFFFFFF, string);

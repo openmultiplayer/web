@@ -136,6 +136,6 @@ new Float: fValue = 6.9;
 
 new tag = tagof (fValue);
 
-if(tag == tagof (Float:)) print("float");
+if (tag == tagof (Float:)) print("float");
 else print("not a float");
 ```

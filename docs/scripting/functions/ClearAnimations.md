@@ -23,7 +23,7 @@ This function always returns 1, even when the player specified is not connected.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/animclear", true))
+    if (!strcmp(cmdtext, "/animclear", true))
     {
         ClearAnimations(playerid);
         return 1;
