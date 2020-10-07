@@ -42,7 +42,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::warning
 
-Do note that the players can crash if invalid number of tilde (~) is in the game text.
+Do note that the players may crash because of odd number of tilde (~) symbols used in the game text.
 
 ## Related Functions
 
