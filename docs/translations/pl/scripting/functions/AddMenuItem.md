@@ -9,11 +9,11 @@ Tags: ["menu"]
 
 Dodaje element do konkretnego menu.
 
-| Nazwa   | Opis                                               |
-| ------- | -------------------------------------------------- |
-| menuid  | ID menu, do którego element ma zostać dodany.      |
-| column  | Kolumna, do której dana pozycja ma zostać dodana.  |
-| title[] | Tytuł nowego elementu w menu.                      |
+| Nazwa   | Opis                                              |
+| ------- | ------------------------------------------------- |
+| menuid  | ID menu, do którego element ma zostać dodany.     |
+| column  | Kolumna, do której dana pozycja ma zostać dodana. |
+| title[] | Tytuł nowego elementu w menu.                     |
 
 ## Zwracane wartości
 
