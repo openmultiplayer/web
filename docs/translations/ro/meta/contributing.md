@@ -95,7 +95,7 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
   
   ### Titluri
   
-  Nu creați un titlu de nivel 1 ("<h1>") cu "#" deoarece acesta este generat automat. Primul dvs. titlu ar trebui să fie întotdeauna „##“
+  Nu creați un titlu de nivel 1 (`<h1>`) cu `#` deoarece acesta este generat automat. Primul dvs. titlu ar trebui să fie întotdeauna `##`
   
   - ❌
 
