@@ -21,10 +21,10 @@ function parseDir(filename) {
       info.type = "category";
       let catName = path.basename(filename);
 
-      if (catName[0] == '_') {
+      if (catName[0] == "_") {
         catName = catName.substring(1);
       }
-      catName = catName.replace('_', ' ');
+      catName = catName.replace("_", " ");
 
       if (CATEGORY_NAME_CAPITALIZATION) {
         info.label = catName.charAt(0).toUpperCase() + catName.substring(1);
