@@ -5,8 +5,8 @@ description: Information seen when holding down F5 when connected to a server.
 tags: []
 ---
 
-|                         **Data**                         |                                   **Description**                                    |
-| :------------------------------------------------------: | :----------------------------------------------------------------------------------: |
+|                           Data                           |                                     Description                                      |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 |                      Download Rate                       |             The rate at which data is being downloaded from the server.              |
 |                       Upload Rate                        |               The rate at which data is being uploaded to the server.                |
 |                         Vehicles                         |             The number of vehicles that are streamed in for the client.              |
