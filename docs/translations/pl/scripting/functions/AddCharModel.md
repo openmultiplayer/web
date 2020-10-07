@@ -1,32 +1,32 @@
 ---
 id: AddCharModel
 title: AddCharModel
-description: Dodaje nowy model (skin wraz z modelem postaci) do pobrania dla graczy.
+description: Dodaje nowy model postaci do pobrania.
 tags: []
 ---
 
-:::Ostrzeżenie
+:::warning
 
-Ta funkcja została dodana w wersji 0.3-DL R1 i nie będzie działać w starszych wersjach!
+Ta funkcja została dodana w wersji SA-MP 0.3-DL R1 i nie będzie działać w starszych wersjach!
 
 :::
 
 ## Ostrzeżenie
 
-Dodaje 'customowy skin' inaczej skórkę do pobrania. Ten obiekt będzie pobrany do ścieżki Dokumenty\GTA San Andreas User Files\SAMP\cache pod nazwą adresu IP serwera i jego portu (tzw. format nazw CRC).
+Dodaje niestandardowy model postaci do pobrania. Pliki modelu będą przechowywane w ścieżce Dokumenty\GTA San Andreas User Files\SAMP\cache w katalogu nazwanego adresem IP oraz portem serwera, z nazwami w formie sum kontrolnych CRC.
 
-| Nazwa   | Opis                                                                                                                         |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| baseid  | Zmienna przechowująca wartość domyślnego ID skina dla gracza, jeśli skin nie pobierze się on prawidłowo.                     |
-| newid   | Nowe ID skina z zakresu 20000 do 30000 (10000 slotów) do użycia potem z SetPlayerSkin.                                       |
-| dffname | Nazwa pliku kolizji modelu .dff znajdującego się w folderze models (domyślnie przez serwer: ustawienie artpath w server.cfg) |
-| txdname | Nazwa pliku textury modelu .txd znajdującej się w folderze models (domyślnie przez serwer: ustawienie artpath w server.cfg)  |
+| Nazwa   | Opis                                                                                                              |
+| ------- | ----------------------------------------------------------------------------------------------------------------- |
+| baseid  | Bazowe ID skina (nowy skin odziediczy po nim zachowanie, a jeżeli pobieranie się nie uda, to także wygląd).       |
+| newid   | Nowe ID skina z zakresu od 20000 do 30000 (10000 slotów), używane później w SetPlayerSkin.                        |
+| dffname | Nazwa pliku .dff z kolizjami modelu, znajdujący się domyślnie w serwerowym katalogu models (ustawienie artpath).  |
+| txdname | Nazwa pliku .txd z teksturami modelu, znajdujący się domyślnie w serwerowym katalogu models (ustawienie artpath). |
 
 ## Zwracane wartości
 
-1: Ta funkcja wywołała się prawidłowo
+1: Ta funkcja wykonała się prawidłowo.
 
-0: Ta funkcja nie wykonała się prawidłowo
+0: Ta funkcja nie wykonała się prawidłowo.
 
 ## Przykłady
 
@@ -44,17 +44,17 @@ AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
 AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 ```
 
-## Notatki
+## Uwagi
 
-:::Wskazówka
+:::tip
 
-useartwork musi być włączony w ustawieniach serwera (server.cfg) jeśli skrypt ma działać
+useartwork musi być włączone w ustawieniach serwera, aby ta funkcja działała.
 
 :::
 
-:::Ostrzeżenie
+:::warning
 
-Możesz wywoływać tę funkcję gdzie chcesz w kodzie, niemniej jednak pamiętaj że jeśli wywołana funkcja zostanie w OnFilterScriptInit ryzykujesz tym, że niektórzy gracze nie będą mogli pobrać skinów!
+Aktualnie nie ma żadnych restrykcji co do wywoływania tej funkcji, ale miej na uwadze, że jeżeli nie wywołasz jej w OnFilterScriptInit/OnGameModeInit, to gracze, którzy są już na serwerze, mogą nie mieć pobranych modeli.
 
 :::
 
