@@ -17,7 +17,7 @@ Dodaje niestandardowy model postaci do pobrania. Pliki modelu będą przechowywa
 
 | Nazwa   | Opis                                                                                                              |
 | ------- | ----------------------------------------------------------------------------------------------------------------- |
-| baseid  | Bazowe ID skina (nowy skin odziediczy po nim zachowanie, a jeżeli pobieranie się nie uda, to także wygląd).       |
+| baseid  | Bazowe ID skina (nowy skin oddziedziczy po nim zachowanie, a jeżeli pobieranie się nie uda, to także wygląd).       |
 | newid   | Nowe ID skina z zakresu od 20000 do 30000 (10000 slotów), używane później w SetPlayerSkin.                        |
 | dffname | Nazwa pliku .dff z kolizjami modelu, znajdujący się domyślnie w serwerowym katalogu models (ustawienie artpath).  |
 | txdname | Nazwa pliku .txd z teksturami modelu, znajdujący się domyślnie w serwerowym katalogu models (ustawienie artpath). |
