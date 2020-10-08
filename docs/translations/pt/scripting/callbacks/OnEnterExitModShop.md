@@ -15,10 +15,10 @@ Esta callback foi implementada no SA-MP 0.3a e não funcionará em versões ante
 
 Esta callback é chamada quando o jogador entra ou sai de um shop mod.
 
-| Nome | Descrição |
-| --- | --- |
-| playerid | O ID do jogador que entrou/saiu do modshop |
-| enterexit | 1 se o jogador entrou ou 0 se ele saiu |
+| Nome       | Descrição                                                         |
+| ---------- | ----------------------------------------------------------------- |
+| playerid   | O ID do jogador que entrou/saiu do modshop                        |
+| enterexit  | 1 se o jogador entrou ou 0 se ele saiu                            |
 | interiorid | O ID do interior do modshop que o jogador entrou (ou 0 caso saia) |
 
 ## Retornos
