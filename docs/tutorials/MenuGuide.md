@@ -165,7 +165,7 @@ Really easy, wasn't it?
 
 Okay, after you read this AND understood it, try your own menu. As you could see, it isn't that difficult, but will impress the players on your server all the more. And you can script really cool effects with this. It's also very cool for general stores or supermarkets for the things you can buy. Then you can subtract some money as effect and the price is shown in another column in the menu. But now, work on your own.
 
-You can aslo add [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable)(playerid,0); after ShowPlayerMenu(..);
+You can also add [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable)(playerid,0); after ShowPlayerMenu(..);
 and  [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable)(playerid,1) at end of OnPlayerSelectedMenuRow(..) so that player may not move while he is browsing menus.
 
 I hope you learned something from this tutorial. If you got any questions, ask in the forums/discord.
