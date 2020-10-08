@@ -1,25 +1,25 @@
-﻿---
+---
 id: AddMenuItem
 title: AddMenuItem
-description: Adds an item to a specified menu.
+description: Belirli bir menüye öğe ekler.
 tags: ["menu"]
 ---
 
-## Description
+## Açıklama
 
-Adds an item to a specified menu.
+Belirli bir menüye öğe ekler.
 
-| Name    | Description                      |
+| İsim    | Açıklama                         |
 | ------- | -------------------------------- |
-| menuid  | The menu id to add an item to.   |
-| column  | The column to add the item to.   |
-| title[] | The title for the new menu item. |
+| menuid  | Öğe eklemek için menü kimliği.   |
+| column  | Öğenin ekleneceği sütun.         |
+| title[] | Yeni menü öğesinin başlığı.      |
 
-## Returns
+## Dönence
 
-The index of the row this item was added to.
+Bu öğenin eklendiği satırın dizini.
 
-## Examples
+## Örnekler
 
 ```c
 new Menu:examplemenu;
@@ -33,22 +33,19 @@ public OnGameModeInit()
 }
 ```
 
-## Notes
+## Notlar
 
 :::tip
 
-Crashes when passed an invalid menu ID.
-You can only have 12 items per menu (13th goes to the right side of the header of column name (colored), 14th and higher not display at all).
-You can only use 2 columns (0 and 1).
-You can only add 8 color codes per one item (~r~, ~g~ etc.).
-Maximum length of menu item is 31 symbols.
+Geçersiz bir menü kimliği geçtiğinde çöker. Menü başına yalnızca 12 öğe olabilir (13. Sütun adı üstbilgisinin sağ tarafına gider (renkli), 14. Ve üstü hiç görüntülenmez). Yalnızca 2 sütun (0 ve 1) kullanabilirsiniz.Bir öğe başına yalnızca 8 renk kodu ekleyebilirsiniz (~r~,~g~ vb.). Menü öğesinin maksimum uzunluğu 31 simgedir.
 
 :::
 
-## Related Functions
+## İlgili Fonksiyonlar
 
-- [CreateMenu](../../scripting/functions/CreateMenu.md): Create a menu.
-- [SetMenuColumnHeader](../../scripting/functions/SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
-- [DestroyMenu](../../scripting/functions/DestroyMenu.md): Destroy a menu.
-- [OnPlayerSelectedMenuRow](../../scripting/callbacks/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
-- [OnPlayerExitedMenu](../../scripting/callbacks/OnPlayerExitedMenu.md): Called when a player exits a menu.
+- [CreateMenu](CreateMenu.md): Menü oluşturmak.
+- [SetMenuColumnHeader](SetMenuColumnHeader.md): Menüdeki sütunlardan birinin başlığını ayarlayın.
+- [DestroyMenu](DestroyMenu.md): Menüyü yok et.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Oynatıcı menüde bir satır seçtiğinde çağrılır.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Oynatıcı menüden çıktığında çağırılır.
+
