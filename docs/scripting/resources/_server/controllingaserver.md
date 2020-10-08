@@ -49,7 +49,7 @@ samp.ban is the file used for storing bans, including the following information 
 - IP
 - Date
 - Time
-- Name (Name of person or a reason, see [BanEx](../functions/BanEx.md)
+- Name (Name of person or a reason, see [BanEx](../../functions/BanEx.md))
 - Type of ban
 
 To add a ban, simply add a line like so:
@@ -62,7 +62,7 @@ Where `IP_HERE` is, is where you put the IP you would like to ban.
 
 ##### Ban() function
 
-The [Ban](../functions/Ban.md) function can be used to ban a player from a script. The [BanEx](../functions/BanEx.md) function will add an optional reason like so:
+The [Ban](../../functions/Ban.md) function can be used to ban a player from a script. The [BanEx](../../functions/BanEx.md) function will add an optional reason like so:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
@@ -110,7 +110,7 @@ samp.ban can be found in your sa-mp server directory, it contains lines with the
 - IP
 - Date
 - Time
-- Name (Name of person or a reason (see [BanEx](../functions/BanEx.md)))
+- Name (Name of person or a reason (see [BanEx](../../functions/BanEx.md)))
 - Type of ban (INGAME, IP BAN etc,)
 
 Examples:
@@ -165,7 +165,7 @@ These are the functions that you as admin can use:
 | `/rcon kick [ID]` | Kick the player with the given ID (_example: /rcon kick 2_). |
 | `/rcon ban [ID]` | Ban the player with the given ID (_example: /rcon ban 2_). |
 | `/rcon changemode [mode]` | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_). |
-| `/rcon gmx` | Will load the next gamemode in [server.cfg](server.cfg). |
+| `/rcon gmx` | Will load the next gamemode in [server.cfg](../_server/server.cfg). |
 | `/rcon reloadbans` | reloads the samp.ban where the banned IP addresses are stored. Should be used after unbanning and IP address. |
 | `/rcon reloadlog` | reloads the server_log.txt. Has no noticeable effect on anything. |
 | `/rcon say` | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`). |
@@ -199,10 +199,10 @@ The following callbacks and functions might be useful, as they're related to thi
 
 #### Callbacks
 
-- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt.md): Called when an attempt to login to RCON is made.
+- [OnRconLoginAttempt](../../callbacks/OnRconLoginAttempt.md): Called when an attempt to login to RCON is made.
 
 #### Functions
 
-- [IsPlayerAdmin](../functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
+- [IsPlayerAdmin](../../functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
 
-- [SendRconCommand](../functions/SendRconCommand.md): Sends an RCON command via the script.
+- [SendRconCommand](../../functions/SendRconCommand.md): Sends an RCON command via the script.
