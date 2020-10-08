@@ -1,6 +1,6 @@
 ---
 id: index
-title: Scripting Callbacks
+title: Eventler
 sidebar_label: Scripting Callbacks
 ---
 
