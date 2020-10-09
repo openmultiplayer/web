@@ -1,32 +1,25 @@
-﻿---
+---
 id: AddCharModel
 title: AddCharModel
-description: Kullanıcı tarafının indirebilmesi için yeni bir karakter modeli ekler.
+description: İndirmek için yeni bir özel karakter modeli ekler.
 tags: []
 ---
 
-:::warning
+:::uyarı
 
-Bu fonksiyon SA-MP 0.3.DL R1 sürümünde eklendi ve o sürümde çalışır. Önceki sürümlerde çalışmaz.
+Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacaktır!
 
 :::
 
 ## Açıklama
 
-Kullanıcı tarafının indirebilmesi için yeni bir karkater modeli ekler. Modeller kullanıcının Documents\Gta San Andreas\User Files\SAMP\cache klasörü içerisinde Sunucu IP ve Portunun yazılı olduğu bir klasörün içerisinde saklanır.
+İndirmek için yeni bir özel karakter modeli ekler. Model dosyaları oynatıcının belgelerinde saklanır. Belgelerim\Gta San Andreas User Files\SAMP\cache | İsim | Açıklama | | ------- | -------------------------------------------------------------------------------------------------------------- | | baseid | Kullanılacak temel cilt modeli kimliği. (karakterin ve orijinal karakterin ne zaman kullanılacağı) | | newid | "Öncesinde, yeni model ID'leri 20000 ve 30000 arasinda (10000 slot) değişiklik göstermekteydi. | | dffname | Varsayılan olarak modeller sunucu klasöründe bulunan .dff modeli çarpışma dosyasının adı (çalışma yolu ayarı). | | txdname | Modeller sunucu klasöründe varsayılan olarak bulunan .txd model kaplama dosyasının adı (çalışma yolu ayarı). |
 
-| İsmi    | Açıklaması                                                                                                                   |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| baseid  | Animasyon olarak bağlı olduğu karakter ID'si.                                                                                |
-| newid   | Yeni bir karakter modeli ekler. Model ID'leri 20000 ila 30000 arasında (10000 skin modeli ekleyebilirsiniz.) kullanılabilir. |
-| dffname | .dff dosyasının adını girdiğiniz parametre. Collision ayarlarınız models klasöründe saklanır.                                |
-| txdname | .txd dosyasının adını girdiğiniz parametre. Texturelerinizin saklandığı dosya models klasöründe saklanır.                    |
+## Dönence
 
-## Sonuçlar
+1: İşlev başarıyla yürütüldü.
 
-1: Fonksiyon başarıyla çalıştığında.
-
-0: Fonksiyon başarısız olduğunda.
+0: İşlev yürütülemedi.
 
 ## Örnekler
 
@@ -39,7 +32,7 @@ public OnGameModeInit()
 }
 ```
 
-```
+```c
 AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
 AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 ```
@@ -48,16 +41,16 @@ AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 
 :::tip
 
-Bunun çalışması için useartwork ayarının aktif olması gerekir. (server.cfg ayarı)
+Bunun işe yaraması için kullanılabilir resmin öncelikle sunucu ayarlarında etkinleştirilmesi gerekir.
 
 :::
 
-:::warning
+:::uyarı
 
-Bu fonksiyonu ne zaman çağırabileceğinize dair bir kısıtlama bulunmuyor. Fakat bu fonksiyonu OnFilterScriptInit/OnGameModeInit içerisinde çağıramazsınız, çünkü oyun içerisinde bulunan bazı oyuncular modelleri indirmemiş olabilir.
+Şu anda bu fonksiyonu ne zaman arayabileceğiniz konusunda herhangi bir kısıtlama yoktur, ancak OnFilterScriptInit/OnGameModeInit içinde aramamanız durumunda, halihazırda sunucuda bulunan bazı oyuncuların modelleri indirmemiş olma riskini çalıştırdığınızı unutmayın.
 
 :::
 
-## Bağlantılı Fonksiyon
+## İlgili Fonksiyonlar
 
-- [SetPlayerSkin](../../scripting/functions/SetPlayerSkin.md): Oyuncunun skinini ayarlarsınız.
+- [SetPlayerSkin](SetPlayerSkin.md): Bir oyuncunun cildini ayarlayın.

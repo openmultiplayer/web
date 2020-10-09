@@ -1,11 +1,11 @@
 ---
 id: OnActorStreamIn
-título: OnActorStreamIn
-descrição: Esta callback é chamada quando um ator é carregado (torna-se visível) para um jogador.
+title: OnActorStreamIn
+description: Esta callback é chamada quando um ator é carregado (torna-se visível) para um jogador.
 tags: []
 ---
 
-:::aviso
+:::warning
 
 Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões anteriores.
 
@@ -38,7 +38,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Notas
 
-:::Dica
+:::tip
 
 Este callback também pode ser chamada por um NPC.
 

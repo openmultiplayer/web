@@ -13,8 +13,7 @@ Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. V
 | --------- | ------------------------------------------------------------------------------- |
 | vehicleid | The ID of the vehicle to add the component to. Not to be confused with modelid. |
 
-|
-|[componentid](../../scripting/resources/carcomponentid.md) | The ID of the component to add to the vehicle.|
+| |[componentid](../../scripting/resources/carcomponentid.md) | The ID of the component to add to the vehicle.|
 
 ## ส่งคืน
 

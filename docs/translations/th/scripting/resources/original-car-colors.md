@@ -3,8 +3,7 @@ title: Original Car Colors
 description: A list of the original car colours from single player.
 ---
 
-Here is a list of the original car colors used by each car type in single
-player.
+Here is a list of the original car colors used by each car type in single player.
 
 **admiral:** 34,34, 35,35, 37,37, 39,39, 41,41, 43,43, 45,45, 47,47
 
@@ -398,5 +397,4 @@ player.
 
 **zr350:** 92,1, 94,1, 101,1, 121,1, 0,1, 22,1, 36,1, 75,1
 
-The colors for the **camper**, **cement** and **squalo** are unavilable as they
-have four color IDs instead of two.
+The colors for the **camper**, **cement** and **squalo** are unavilable as they have four color IDs instead of two.

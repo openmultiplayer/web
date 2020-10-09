@@ -35,8 +35,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::tip
 
-This callback is not called by ChangeVehiclePaintjob.
-You might use OnVehicleChangePaintjob from vSync in order to know when the player buys the paintjob.
+This callback is not called by ChangeVehiclePaintjob. You might use OnVehicleChangePaintjob from vSync in order to know when the player buys the paintjob.
 
 :::
 

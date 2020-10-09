@@ -11,14 +11,20 @@ This function starts with lowercase letter.
 
 :::
 
+:::warning
+
+Notice that the y-value is the first parameter and the x-value is the second parameter.
+
+:::
+
 ## Description
 
 Get the inversed value of an arc tangent of y/x, expressed in radians.
 
 | Name    | Description                                            |
 | ------- | ------------------------------------------------------ |
-| Float:x | Value representing the proportion of the y-coordinate. |
-| Float:y | Value representing the proportion of the x-coordinate. |
+| Float:y | Value representing the proportion of the y-coordinate. |
+| Float:x | Value representing the proportion of the x-coordinate. |
 
 ## Returns
 

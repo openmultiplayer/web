@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const ISO6391 = require("iso-639-1");
 
 const SIDE_BAR_NAME = "Sidebar";
 const CATEGORY_NAME_CAPITALIZATION = true;
@@ -25,6 +26,10 @@ function parseDir(filename) {
         catName = catName.substring(1);
       }
       catName = catName.replace("_", " ");
+
+      if (catName.length == 2) {
+        catName = ISO6391.getNativeName(catName);
+      }
 
       if (CATEGORY_NAME_CAPITALIZATION) {
         info.label = catName.charAt(0).toUpperCase() + catName.substring(1);

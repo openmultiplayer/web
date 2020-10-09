@@ -181,7 +181,6 @@ while (i < 10)
 }
 ```
 
-}
 Will not give any output as the condition instantly fails.
 
 These are also useful for avoiding double checks:

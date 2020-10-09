@@ -35,8 +35,7 @@ Setelah selesai, tekan "Propose new file" dan sebuah Pull Request akan terbuka u
 
 ### Git
 
-If you want to use Git, all you need to do is clone the Wiki repository with:
-Jika Anda ingin menggunakan Git, yang Anda harus lakukan adalah _clone_ _repository_ Wiki dengan
+If you want to use Git, all you need to do is clone the Wiki repository with: Jika Anda ingin menggunakan Git, yang Anda harus lakukan adalah _clone_ _repository_ Wiki dengan
 
 ```sh
 git clone https://github.com/openmultiplayer/wiki.git
@@ -46,7 +45,6 @@ Buka dengan editor favorit Anda. Saya merekomendasikan Visual Studio Code karena
 
 ![Pratinjau markdown di Visual Studio Code](/images/contributing/vscode.png)
 
-I recommend two extensions to make your experience better:
 Saya merekomendasikan dua ekstension untuk membuat pengalaman Anda menjadi lebih baik:
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) oleh David Anson - ini adalah sebuah ekstensi yang memastikan Markdown Anda telah di-_format_ dengan benar. Hal ini untuk mencegah beberapa kesalahan secara sintaks dan semantik. Tidak semua peringatan itu penting, tapi beberapa dapat membantu meningkatkan dalam pembacaan. Gunakan penilai terbaik Anda dan jika ragu, tanyakan saja kepada pengulas!
@@ -218,4 +216,4 @@ Jika Anda tidak ada waktu, jangan khawatir. Kirim draf yang belum diselesaikan d
 
 ## Perjanjian Lisensi
 
-Seluruh proyek open.mp memiliki sebuah [Contributor License Agreement][https://cla-assistant.io/openmultiplayer/homepage]. Ini pada dasarnya berarti Anda menyetujui kami menggunakan karya Anda, dan meletakannya di bawah lisensi sumber terbuka (_open-source_). Ketika Anda membuka sebuah Pull Request untuk pertama kalinya, bot CLA-Assistant akan mem-posting sebuah tautan tempat Anda bisa menandatangani perjanjian.
+Seluruh proyek open.mp memiliki sebuah [Contributor License Agreement](https://cla-assistant.io/openmultiplayer/homepage). Ini pada dasarnya berarti Anda menyetujui kami menggunakan karya Anda, dan meletakannya di bawah lisensi sumber terbuka (_open-source_). Ketika Anda membuka sebuah Pull Request untuk pertama kalinya, bot CLA-Assistant akan mem-posting sebuah tautan tempat Anda bisa menandatangani perjanjian.

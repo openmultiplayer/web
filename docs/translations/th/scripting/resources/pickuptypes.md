@@ -7,9 +7,7 @@ title: "Pickup Types"
 
 :::note
 
-Most other IDs are either undocumented or are similar to type 1 (but do not use
-them just because they seem similar to ID 1, they might have side-effects like
-ID 18 and 20).
+Most other IDs are either undocumented or are similar to type 1 (but do not use them just because they seem similar to ID 1, they might have side-effects like ID 18 and 20).
 
 :::
 

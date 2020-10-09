@@ -33,9 +33,7 @@ The vehicle's windows state is stored in the specified variables.
 
 The values returned in each variable are as follows:
 
--1: Window state not set (generally closed, unless set explicitly to -1)
-0: Open
-1: Closed
+-1: Window state not set (generally closed, unless set explicitly to -1) 0: Open 1: Closed
 
 :::
 

@@ -2,10 +2,7 @@
 title: Camera Modes
 ---
 
-A list of possible camera modes to be used with [GetPlayerCameraMode](../functions/GetPlayerCameraMode).
-:::note
-Note that there might still be more usable IDs hidden away in the game and some IDs are used for more than one situation.
-:::
+A list of possible camera modes to be used with [GetPlayerCameraMode](../functions/GetPlayerCameraMode). :::note Note that there might still be more usable IDs hidden away in the game and some IDs are used for more than one situation. :::
 
 - `3` - Train/tram camera.
 - `4` - Follow ped (normal behind player camera).

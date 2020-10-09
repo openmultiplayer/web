@@ -33,9 +33,7 @@ The vehicle's doors state is stored in the specified variables.
 
 The values returned in each variable are as follows:
 
--1: Door state not set
-1: Open
-0: Closed
+-1: Door state not set 1: Open 0: Closed
 
 :::
 
