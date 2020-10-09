@@ -12,9 +12,9 @@ Class seçimine yeni bir class ekler. Kullanıcılar seçtikleri classın skinle
 | İsim          | Açıklama                                                      |
 | ------------- | ------------------------------------------------------------- |
 | modelid       | Oyuncunun doğacağı skin numarası.                             |
-| Float:spawn_x | Class oyuncularının doğacağı X koordinat bilgisi.     		|
-| Float:spawn_y | Class oyuncularının doğacağı Y koordinat bilgisi.     		|
-| Float:spawn_z | Class oyuncularının doğacağı Z koordinat bilgisi.     		|
+| Float:spawn_x | Class oyuncularının doğacağı X koordinat bilgisi.             |
+| Float:spawn_y | Class oyuncularının doğacağı Y koordinat bilgisi.             |
+| Float:spawn_z | Class oyuncularının doğacağı Z koordinat bilgisi.             |
 | Float:z_angle | Class oyuncularının doğduğu zaman yüzünün döneceği koordinat. |
 | weapon1       | Class oyuncularının birincil silah numarası.                  |
 | weapon1_ammo  | Class oyuncularının birincil silahlarının mermi sayısı.       |
