@@ -67,8 +67,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL
-references.
+Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
 
 :::
 

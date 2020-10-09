@@ -35,8 +35,7 @@ Setelah selesai, tekan "Propose new file" dan sebuah Pull Request akan terbuka u
 
 ### Git
 
-If you want to use Git, all you need to do is clone the Wiki repository with:
-Jika Anda ingin menggunakan Git, yang Anda harus lakukan adalah _clone_ _repository_ Wiki dengan
+If you want to use Git, all you need to do is clone the Wiki repository with: Jika Anda ingin menggunakan Git, yang Anda harus lakukan adalah _clone_ _repository_ Wiki dengan
 
 ```sh
 git clone https://github.com/openmultiplayer/wiki.git

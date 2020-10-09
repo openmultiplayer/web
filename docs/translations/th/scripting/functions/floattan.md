@@ -39,8 +39,7 @@ public OnGameModeInit()
 
 :::warning
 
-GTA/SA-MP use degrees for angles in most circumstances, for example GetPlayerFacingAngle. Therefore, it is most likely you'll want to use the 'degrees' angle mode, not radians.
-Also note that angles in GTA are counterclockwise; 270° is East and 90° is West. South is still 180° and North still 0°/360°.
+GTA/SA-MP use degrees for angles in most circumstances, for example GetPlayerFacingAngle. Therefore, it is most likely you'll want to use the 'degrees' angle mode, not radians. Also note that angles in GTA are counterclockwise; 270° is East and 90° is West. South is still 180° and North still 0°/360°.
 
 :::
 

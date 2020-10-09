@@ -48,8 +48,7 @@ The returned hash has zero padding (i.e. possible prefix 00ABCD123...).
 
 :::tip
 
-The salt is appended to the end of the password, meaning password 'foo' and salt 'bar' would form 'foobar'.
-The salt should be random, unique for each player and at least as long as the hashed password. It is to be stored alongside the actual hash in the player's account.
+The salt is appended to the end of the password, meaning password 'foo' and salt 'bar' would form 'foobar'. The salt should be random, unique for each player and at least as long as the hashed password. It is to be stored alongside the actual hash in the player's account.
 
 :::
 

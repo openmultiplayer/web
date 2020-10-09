@@ -51,8 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Use TogglePlayerSpectating to make objects stream in for the player while the camera is moving and remove the HUD.
-The player's camera can be reset to behind the player with SetCameraBehindPlayer.
+Use TogglePlayerSpectating to make objects stream in for the player while the camera is moving and remove the HUD. The player's camera can be reset to behind the player with SetCameraBehindPlayer.
 
 :::
 

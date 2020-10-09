@@ -31,6 +31,7 @@
     ]
   },
   "prettier": {
-    "proseWrap": "never"
+    "proseWrap": "always",
+    "printWidth": 1000
   }
 }

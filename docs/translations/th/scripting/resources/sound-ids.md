@@ -3,11 +3,9 @@ title: Sound IDs
 description: A list of sound IDs to be used with PlayerPlaySound.
 ---
 
-To be used with
-[PlayerPlaySound](../functions/PlayerPlaySound "PlayerPlaySound").
+To be used with [PlayerPlaySound](../functions/PlayerPlaySound "PlayerPlaySound").
 
-For [crime report sound IDs](../functions/PlayCrimeReportForPlayer) check
-[here](crimelist).
+For [crime report sound IDs](../functions/PlayCrimeReportForPlayer) check [here](crimelist).
 
 :::note
 
@@ -17,12 +15,8 @@ You have to use sound ID **0** to stop the sound ID that is currently playing.
 
 :::caution Since **0.3.7-R2**:
 
-- Sound ID **1** can be used to disable the
-  [interior 0 (default)](../functions/SetPlayerInterior "SetPlayerInterior")
-  ambience track (wind noise). _Hint: it can help to create more realistically
-  fake interiors._
-- Sound ID **0** can be used additionally to return the game's normal outdoor
-  ambience track.
+- Sound ID **1** can be used to disable the [interior 0 (default)](../functions/SetPlayerInterior "SetPlayerInterior") ambience track (wind noise). _Hint: it can help to create more realistically fake interiors._
+- Sound ID **0** can be used additionally to return the game's normal outdoor ambience track.
 
 :::
 
@@ -91,8 +85,7 @@ These Sound IDs below only work since version 0.3d!
 
 :::
 
-You can find all available Sound IDs in the file located within your GTA San
-Andreas folder, at `/data/AudioEvents.txt`
+You can find all available Sound IDs in the file located within your GTA San Andreas folder, at `/data/AudioEvents.txt`
 
 #### Special Sound IDs
 
@@ -272,8 +265,7 @@ Andreas folder, at `/data/AudioEvents.txt`
 - 6202 - "To pass, you must achieve bronze or higher in all five tests."
 - 6203 - "To view a demonstration of each test, please use the TV over there."
 - 6204 - "Passing the test, will unlock the next test."
-- 6205 - "You can come back and check you scores or take new tests, at any
-  time."
+- 6205 - "You can come back and check you scores or take new tests, at any time."
 
 #### Random/Extra
 
