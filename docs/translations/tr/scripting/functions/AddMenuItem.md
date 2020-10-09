@@ -9,11 +9,11 @@ tags: ["menu"]
 
 Belirli bir menüye öğe ekler.
 
-| İsim    | Açıklama                         |
-| ------- | -------------------------------- |
-| menuid  | Öğe eklemek için menü kimliği.   |
-| column  | Öğenin ekleneceği sütun.         |
-| title[] | Yeni menü öğesinin başlığı.      |
+| İsim    | Açıklama                       |
+| ------- | ------------------------------ |
+| menuid  | Öğe eklemek için menü kimliği. |
+| column  | Öğenin ekleneceği sütun.       |
+| title[] | Yeni menü öğesinin başlığı.    |
 
 ## Dönence
 
@@ -48,4 +48,3 @@ Geçersiz bir menü kimliği geçtiğinde çöker. Menü başına yalnızca 12 �
 - [DestroyMenu](DestroyMenu.md): Menüyü yok et.
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Oynatıcı menüde bir satır seçtiğinde çağrılır.
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Oynatıcı menüden çıktığında çağırılır.
-

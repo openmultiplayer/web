@@ -9,19 +9,19 @@ tags: ["player"]
 
 Sınıf seçimine bir sınıf ekler. Sınıflar, oyuncuların istedikleri bir ciltle sıçrayabilmesi için kullanılır.
 
-| İsim          | Açıklama                                                      |
-| ------------- | ------------------------------------------------------------- |
-| modelid       | Oyuncunun kapladığı deri.                                     |
-| Float:spawn_x | Bu sınıfın ayna noktasının X koordinatı.                      |
-| Float:spawn_y | Bu sınıfın ayna noktasının Y koordinatı.                      |
-| Float:spawn_z | Bu sınıfın ayna noktasının Z koordinatı.                      |
-| Float:z_angle | Çaldıktan sonra oyuncunun bakması gereken yön.                |
-| weapon1       | Oyuncunun ilk silahı.                                         |
-| weapon1_ammo  | İlk mühimmat.                                                 |
-| weapon2       | Oyuncunun ikinci silahı.                                      |
-| weapon2_ammo  | İkinci silah mühimmat miktarı.                                |
-| weapon3       | Oyuncunun üçüncü silahı.                                      |
-| weapon3_ammo  | Üçüncü silah mühimmat miktarı.                                |
+| İsim          | Açıklama                                       |
+| ------------- | ---------------------------------------------- |
+| modelid       | Oyuncunun kapladığı deri.                      |
+| Float:spawn_x | Bu sınıfın ayna noktasının X koordinatı.       |
+| Float:spawn_y | Bu sınıfın ayna noktasının Y koordinatı.       |
+| Float:spawn_z | Bu sınıfın ayna noktasının Z koordinatı.       |
+| Float:z_angle | Çaldıktan sonra oyuncunun bakması gereken yön. |
+| weapon1       | Oyuncunun ilk silahı.                          |
+| weapon1_ammo  | İlk mühimmat.                                  |
+| weapon2       | Oyuncunun ikinci silahı.                       |
+| weapon2_ammo  | İkinci silah mühimmat miktarı.                 |
+| weapon3       | Oyuncunun üçüncü silahı.                       |
+| weapon3_ammo  | Üçüncü silah mühimmat miktarı.                 |
 
 ## Dönence
 
