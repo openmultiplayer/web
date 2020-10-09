@@ -1,7 +1,7 @@
 ---
 id: OnGameModeInit
-título: OnGameModeInit
-descrição: Esta callback é acionada quando uma gamemode inicia.
+title: OnGameModeInit
+description: Esta callback é acionada quando uma gamemode inicia.
 tags: []
 ---
 
@@ -21,7 +21,7 @@ public OnGameModeInit()
 
 ## Notas
 
-:::dica
+:::tip
 
 Esta função também pode ser usada em um filterscript para detectar se a gamemode mudou através de comandos do RCON como o "changemode" ou "gmx", pois mudar o gamemode não recarrega um filterscript.
 

@@ -1,11 +1,11 @@
 ---
 id: OnClientMessage
-título: OnClientMessage
-descrição: Esta callback é chamada toda vez que um NPC ver uma ClientMessage.
+title: OnClientMessage
+description: Esta callback é chamada toda vez que um NPC ver uma ClientMessage.
 tags: []
 ---
 
-:::aviso
+:::warning
 
 Esta callback de NPC foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
 
