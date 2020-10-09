@@ -29,10 +29,10 @@ Ta funkcja dodaje „statyczny” pickup do gry. Pickupy wspierają bronie, zdro
 ```c
 public OnGameModeInit()
 {
-    // Stwórz pickup z kamizelką
+    // Tworzy pickup z kamizelką
     AddStaticPickup(1242, 2, 1503.3359, 1432.3585, 10.1191, 0);
 
-    // Stwórz pickup od życia, tuż obok kamizelki
+    // Tworzy pickup od życia, tuż obok kamizelki
     AddStaticPickup(1240, 2, 1506.3359, 1432.3585, 10.1191, 0);
 
     return 1;
