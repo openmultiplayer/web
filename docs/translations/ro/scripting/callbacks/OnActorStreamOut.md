@@ -15,10 +15,10 @@ Aceasta functie a fost adaugata in SA:MP 0.3.7 si nu merge in versiunile sale an
 
 Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
 
-| Nume        | Descriere                                                      |
-| ----------- | -------------------------------------------------------------- |
-| actorid     | ID-ul actorului care a fost transmis în flux pentru jucător.   |
-| forplayerid | ID-ul jucătorului care a transmis actorul în flux.             |
+| Nume        | Descriere                                                    |
+| ----------- | ------------------------------------------------------------ |
+| actorid     | ID-ul actorului care a fost transmis în flux pentru jucător. |
+| forplayerid | ID-ul jucătorului care a transmis actorul în flux.           |
 
 ## Returnari
 
