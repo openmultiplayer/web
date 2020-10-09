@@ -21,7 +21,7 @@ Dodaje klasę do wyboru klas. Klasy umożliwiają graczom spawnowanie się z wyb
 | weapon2       | Druga broń, którą gracz otrzyma po zespawnowaniu.           |
 | weapon2_ammo  | Liczba sztuk amunicji dla drugiej broni.                    |
 | weapon3       | Trzecia broń, którą gracz otrzyma po zespawnowaniu.         |
-| weapon3_ammo  | Liczba sztuk amunicji dla trzeciej broni.awn weapon.        |
+| weapon3_ammo  | Liczba sztuk amunicji dla trzeciej broni.                   |
 
 ## Zwracane wartości
 
