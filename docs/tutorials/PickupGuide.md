@@ -1,65 +1,65 @@
-PickupGuide
-===========
+---
+title: Pickup Guide
+---
 
-### From open.mp Wiki
+A short tutorial that describes how to use pickups.
 
-  
+## Define the pickupid
 
+The first thing to be done when creating pickups is creating a place to store their ID. This will be done in a global variable so it can be set when you create the pickup and read when you pick up a pickup, calling a callback with the ID of the pickup you picked up. For this example we will use the name "gMyPickup".
 
-### Define the pickupid
+```c
+new gMyPickup;
+```
 
-The first thing to be done when creating pickups is creating a place to store their ID. This will be done in a global variable so it can be set when you create the pickup and read when you pick up a pickup, calling a callback with the ID of the pickup you picked up. For this example we will use the name "mypickup".
+## Creating the pickup
 
-new mypickup;
+There are two ways to create pickups. [CreatePickup](../functions/CreatePickup) and [AddStaticPickup](../functions/AddStaticPickup). AddStaticPickup doesn't return an ID when it is created, can't be destroyed and can only be used under OnGameModeInit, so for this example we will use [CreatePickup](../functions/CreatePickup).
 
-
-### Creating the pickup
-
-There are two ways to create pickups. [CreatePickup](../functions/CreatePickup "CreatePickup") and [AddStaticPickup](../functions/AddStaticPickup "AddStaticPickup"). AddStaticPickup doesn't return an ID when it is created, can't be destroyed and can only be used under OnGameModeInit, so for this example we will use [CreatePickup](../functions/CreatePickup "CreatePickup").
-
-**The syntax for [CreatePickup](../functions/CreatePickup "CreatePickup") is:**
+**The syntax for [CreatePickup](../functions/CreatePickup) is:**
 
 **Parameters:**
-|model|The model you'd like to use for the pickup.|
-|--- |--- |
-|type|The pickup spawn type, see further down this page.|
-|Float:X|The X-coordinate for the pickup to show.|
-|Float:Y|The Y-coordinate for the pickup to show.|
-|Float:Z|The Z-coordinate for the pickup to show.|
-|Virtualworld|The virtual world ID of the pickup. A value of -1 will cause the pickup to display in all virtual worlds.|
 
+| model | The model you'd like to use for the pickup. |
+| --- | --- |
+| type | The pickup spawn type, see further down this page. |
+| Float:X | The X-coordinate for the pickup to show. |
+| Float:Y | The Y-coordinate for the pickup to show. |
+| Float:Z | The Z-coordinate for the pickup to show. |
+| Virtualworld | The virtual world ID of the pickup. A value of -1 will cause the pickup to display in all virtual worlds. |
 
-  
 For this example we will create a cash pickup at Grove Street.
 
-Now we need to decide on a model to appear in the world, there are lots of models to choose from, some are listed on the external site [here](https://dev.prineside.com/en/gtasa_samp_model_id "Objects"), here choose model number 1274 which is dollar sign.
+Now we need to decide on a model to appear in the world, there are lots of models to choose from, some are listed on the external site [here](https://dev.prineside.com/en/gtasa_samp_model_id), here choose model number 1274 which is dollar sign.
 
-Finally we need a [Type](https://wiki.openmultiplayer.now.sh/docs/scripting/resources/pickuptypes "Types") for the pickup, on the same page with the pickup models is a list of pickup types describing what the various ones do. We want this pickup to disappear when you pick it up, so you can't pick it up repeatedly, but to reappear after a few minutes so you can pick it up again, type 2 does just this.
+Finally we need a [Type](https://wiki.openmultiplayer.now.sh/docs/scripting/resources/pickuptypes) for the pickup, on the same page with the pickup models is a list of pickup types describing what the various ones do. We want this pickup to disappear when you pick it up, so you can't pick it up repeatedly, but to reappear after a few minutes so you can pick it up again, type 2 does just this.
 
-Pickups are most commonly created when the script starts, in [OnGameModeInit](../functions/OnGameModeInit "OnGameModeInit") or [OnFilterScriptInit](../functions/OnFilterScriptInit "OnFilterScriptInit") depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
+Pickups are most commonly created when the script starts, in [OnGameModeInit](../functions/OnGameModeInit) or [OnFilterScriptInit](../functions/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
 
-So here is the code to create our pickup, and store the ID in 'mypickup':
+So here is the code to create our pickup, and store the ID in 'gMyPickup':
 
-mypickup = [CreatePickup](../function/CreatePickup)(1274, 2, 2491.7900, \-1668.1653, 13.3438, \-1);
-
+```c
+gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
+```
 
 ### Choosing what it does
 
-When you enter a pickup, [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup "OnPlayerPickUpPickup") is called, passing playerid (the player that picked up a pickup) and pickupid, the ID of the pickup that was picked up.
+When you pick up a pickup, [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup) is called, passing playerid (the player that picked up a pickup) and pickupid (the ID of the pickup that was picked up).
 
-In here we can add code to do something with the player.
-
-Some pickups such as health, armour and weapons are internally coded to work automatically, so there is no need to do anything under OnPlayerPickUpPickup.
+Some pickup types are designed to work automatically, so there is no need to do anything under OnPlayerPickUpPickup. Check out the [Pickup Types](../scripting/resources/pickuptypes) page for more information.
 
 When a player picks up our new pickup, we want to give them $100, to do this first we need to check that they have picked up our dollar pickup and not a different one. When we've done that, we can give them the $100:
 
-public [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup)(playerid, pickupid)
+```c
+public OnPlayerPickUpPickup(playerid, pickupid)
 {
-    if(pickupid == mypickup) // Check that the pickup ID of the pickup they picked up is mypickup
+    // Check that the pickup ID of the pickup they picked up is gMyPickup
+    if(pickupid == gMyPickup)
     {
-        // It is
-        [SendClientMessage](../functions/SendClientMessage)(playerid, 0xFFFFFFFF, "You received $100!"); // Message the player
-        [GivePlayerMoney](../functions/GivePlayerMoney)(playerid, 100); // Give the player the money
+        // Message the player
+        SendClientMessage(playerid, 0xFFFFFFFF, "You received $100!");
+        // Give the player the money
+        GivePlayerMoney(playerid, 100);
     }
     // if you need to add more pickups, simply do this:
     else if (pickupid == (some other pickup))
@@ -68,10 +68,10 @@ public [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup)(playerid, picku
     }
     return 1;
 }
+```
 
 Congratulations, you now know how to create and handle pickups!
-## Moving to advance
-Further we can use [Streamer](https://github.com/samp-incognito/samp-streamer-plugin "Streamer") plugin for creating pickup only for player using [CreateDynamicPickup](https://github.com/samp-incognito/samp-streamer-plugin/wiki/Natives-(Pickups)
- "CreateDynamicPickup")
 
+## Further Reading
 
+You can use the [Streamer](https://github.com/samp-incognito/samp-streamer-plugin) plugin to create unlimited pickups with [CreateDynamicPickup](<https://github.com/samp-incognito/samp-streamer-plugin/wiki/Natives-(Pickups)>)
