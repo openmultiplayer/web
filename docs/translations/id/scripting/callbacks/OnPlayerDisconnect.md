@@ -22,7 +22,6 @@ Callback ini akan terpanggil ketika player terputus dari server.
 
 Selalu terpanggil pertama di filterscripts.
 
-
 ## Contoh
 
 ```c
