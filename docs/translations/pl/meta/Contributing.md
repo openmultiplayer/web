@@ -1,170 +1,170 @@
 ---
-title: Contributing
-description: How to contribute to the SA-MP Wiki and open.mp documentation.
+title: Przyczyń się do rozwoju
+description: Jak wnieść swój wkład do SA-MP Wiki i dokumentacji open.mp.
 ---
 
-This documentation source is open for anyone to contribute changes to! All you need is a [GitHub](https://github.com) account and some spare time. You don't even need to know Git, you can do it all from the web interface!
+Kod źródłowy tej dokumentacji jest dostępny dla każdego, kto chce wnieść jakiekolwiek zmiany! Wszystko czego potrzebujesz to konto na [GitHubie](https://github.com) i trochę wolnego czasu. Nie musisz znać obsługi systemu Git, wszystko możesz zrobić przez wersję przeglądarkową!
 
-If you want to help maintain a specific language, open a PR against the [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) file and add a line for your language directory with your username.
+Jeżeli chcesz zaopiekować się konkretnym językiem, otwórz PR do pliku [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) i dodaj linię dla katalogu Twojego języka wraz ze swoją nazwą użytkownika.
 
-## Editing Content
+## Edycja treści
 
-On each page, there's a button that takes you to the GitHub page for editing:
+Na każdej stronie widoczny jest przycisk, który przenosi Cię do jej edycji na GitHubie:
 
-!["Edit this page" link present on each wiki page](/images/contributing/edit-this-page.png)
+![Link „Edit this page” obecny na każdej podstronie wiki](/images/contributing/edit-this-page.png)
 
-For example, clicking this on [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) takes you to [this page](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) which presents you with a text editor to make changes to the file (assuming you're logged in to GitHub).
+Na przykład, kliknięcie go na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) przeniesie Cię do [tej strony](https://github.com/openmultiplayer/wiki/edit/master/docs/translations/pl/scripting/functions/SetVehicleAngularVelocity.md), na której dostępny jest edytor tekstowy umożliwiający wprowadzenie zmian do pliku (zakładając, że jesteś zalogowany do GitHuba).
 
-Make your edit and submit a "Pull Request" this means the Wiki maintainers and other community members can review your change, discuss whether it needs additional changes and then merge it.
+Wprowadź swoje zmiany i wyślij „Pull Request”, który umożliwi opiekunom Wiki oraz innym członkom społeczności na przegląd Twoich zmian, dyskusję na temat ewentualnych dodatkowych zmian, a ostatecznie ich wdrożenie.
 
-## Adding New Content
+## Dodawanie nowej zawartości
 
-Adding new content is a little more involved. You can do it two ways:
+Dodawanie nowej zawartości jest nieco bardziej zawiłe. Możesz to zrobić na dwa sposoby:
 
-### GitHub Interface
+### Interfejs GitHub
 
-When browsing a directory on GitHub, there's an "Add file" button on the top right corner of the file list:
+Gdy przeglądasz katalog na GitHubie, w prawym górnym rogu listy plików widoczny jest przycisk „Add file”:
 
-!["Add file" button](/images/contributing/add-new-file.png)
+![Przycisk „Add file”](/images/contributing/add-new-file.png)
 
-You can either upload a Markdown file you've written already or write it directly into the GitHub text editor.
+Możesz wgrać wcześniej napisany plik języka Markdown lub napisać go bezpośrednio w edytorze tekstowym GitHuba.
 
-The file _must_ have a `.md` extension and contain Markdown. For more information about Markdown, check out [this guide](https://guides.github.com/features/mastering-markdown/).
+Plik _musi_ mieć rozszerzenie `.md` i zawierać Markdown. Po więcej informacji na temat języka Markdown, sprawdź [ten poradnik](https://guides.github.com/features/mastering-markdown/)
 
-Once that's done, hit "Propose new file" and a Pull Request will be opened for review.
+Kiedy skończysz, kliknij „Propose new file” – Pull Request zostanie otwarty do przeglądu.
 
 ### Git
 
-If you want to use Git, all you need to do is clone the Wiki repository with:
+Jeżeli chcesz użyć systemu Git, wystarczy sklonować repozytorium Wiki komendą:
 
 ```sh
 git clone https://github.com/openmultiplayer/wiki.git
 ```
 
-Open it in your favourite editor. I recommend Visual Studio Code as it has some great tooling for editing and formatting Markdown files. As you can see, I'm writing this using Visual Studio Code!
+Otwórz je w swoim ulubionym edytorze. Polecamy Visual Studio Code, ponieważ posiada on świetne narzędzia do edycji i formatowania plików Markdown. Jak możesz zobaczyć, ten plik został napisany przy użyciu Visual Studio Code!
 
-![Visual Studio Code markdown preview](/images/contributing/vscode.png)
+![Podgląd markdown w Visual Studio Code](/images/contributing/vscode.png)
 
-I recommend two extensions to make your experience better:
+Polecamy także dwie wtyczki, aby uprzyjemnić pracę:
 
-- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - this is an extension that makes sure your Markdown is formatted correctly. It prevents some syntactical and semantic mistakes. Not all the warnings are important, but some can help improve readability. Use best judgement and if in doubt, just ask a reviewer!
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by the Prettier.js Team - this is a formatter that will automatically format your Markdown files so they all use a consistent style. The Wiki repository has some settings in its `package.json` that the extension should automatically use. Be sure to enable "Format On Save" in your editor settings so your Markdown files will be automatically formatted every time you save!
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) autorstwa Davida Ansona - ta wtyczka upewnia się, że Twój Markdown jest sformatowany prawidłowo, poprzez zapobieganie składniowym i semantycznym pomyłkom. Nie wszystkie ostrzeżenia są ważne, ale część z nich może pomóc w poprawieniu czytelności. Jeżeli masz jakieś wątpliwości, po prostu zapytaj opiekunów!
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) autorstwa zespołu Prettier.js - ta wtyczka będzie automatycznie formatować Twoje pliki Markdown, aby wszystkie utrzymywały jednolitego stylu. Repozytorium Wiki ma kilka ustawień w `package.json`, z których wtyczka powinna skorzystać automatycznie. Upewnij się, że w ustawieniach swojego edytora masz włączoną opcję „Format On Save” – dzięki temu Twoje pliki Markdown będą automatycznie formatowane przy każdym zapisie!
 
-## Notes, Tips and Conventions
+## Uwagi, wskazówki i konwencje
 
-### Internal Links
+### Linki wewnętrzne
 
-Don't use absolute URLs for inter-site links. Use relative paths.
+Nie używaj absolutnych URL-ów do wewnętrznych linków. Używaj relatywnych ścieżek.
 
 - ❌
 
   ```md
-  To be used with [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  Do użycia z [OnPlayerClickPlayer](https://wiki.open.mp/docs/translations/pl/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔
 
   ```md
-  To be used with [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
+  Do użycia z [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
   ```
 
-`../` means "go up one directory" so if the file you're editing is inside the `functions` directory and you're linking to `callbacks` you use `../` to go up to `scripting/` then `callbacks/` to enter the callbacks directory, then the filename (without `.md`) of the callback you want to link.
+`../` oznacza „przejdź katalog wyżej”, więc jeżeli plik, który edytujesz, znajduje się w katalogu `functions` i linkujesz do `callbacks`, użyj `../`, aby przejść do `scripting/`, a następnie `callbacks/`, aby dostać się do katalogu callbacks. Na końcu podaj nazwę pliku (bez `.md`) callbacka, do którego linkujesz.
 
-### Images
+### Obrazy
 
-Images go inside a subdirectory inside `/static/images`. Then when you link an image in a `![]()` you just use `/images/` as the base path (no need for `static` that's just for the repository).
+Obrazy trafiają do podkatalogu wewnątrz `/static/images`. Gdy chcesz go wstawić na stronę w `![]()`, używaj po prostu `/images/` jako podstawową ścieżkę (`static` jest tu zbędne, gdyż jest używane tylko w repozytorium).
 
-If in doubt, read another page that uses images and copy how its done there.
+Jeżeli masz wątpliwości, zajrzyj na inną stronę korzystającą z obrazów i skopiuj kod dowolnego obrazu.
 
-### Metadata
+### Metadane
 
-The first thing in _any_ document here should be metadata:
+Pierwszą rzeczą w _każdym_ dokumencie tutaj powinny być metadane:
 
 ```mdx
 ---
-title: My Documentation
-description: This is a page about stuff and things and burgers, yay!
+title: Moja dokumentacja
+description: To jest strona o różnych rzeczach oraz burgerach, hura!
 ---
 ```
 
-Every page should include a title and a description.
+Każda strona powinna posiadać tytuł i opis.
 
-For a full list of what can go between the `---`, check out [the Docusaurus documentation](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
+Po pełną listę rzeczy, które mogą trafić pomiędzy `---`, sprawdź [dokumentację Docusaurusa](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
 
-### Headings
+### Nagłówki
 
-Don't create a level 1 heading (`<h1>`) with `#` as this is generated automatically. Your first heading should _always_ be `##`
+Nie twórz nagłówka poziomu 1 (`<h1>`) używając `#`, ponieważ jest on generowany automatycznie. Twoim pierwszym nagłówkiem _zawsze_ powinien być `##`.
 
 - ❌
 
   ```md
-  # My Title
+  # Mój tytuł
 
-  This is documentation for ...
+  To jest dokumentacja dla...
 
-  # Sub-Section
+  # Podrozdział
   ```
 
 - ✔
 
   ```md
-  This is documentation for ...
+  To jest dokumentacja dla...
 
-  ## Sub-Section
+  ## Podrozdział
   ```
 
-### Use `Code` Snippets For Technical References
+### Używaj fragmentów `kodu` dla odniesień technicznych
 
-When writing a paragraph that contains function names, numbers, expressions or anything that's not standard written language, surround them with \`backticks\` like that. This makes it easier to separate language for describing things from references to technical elements such as function names and pieces of code.
+Gdy piszesz tekst zawierający nazwy funkcji, liczby, wyrażenia czy cokolwiek co nie zalicza się do standardowego, pisanego języka, otocz je \`grawisami\`. Ułatwia to rozdzielenie języka opisowego od odniesień do elementów technicznych takich jak nazwy funkcji czy fragmenty kodu.
 
 - ❌
 
-  > The fopen function will return a value with a tag of type File:, there is no problem on that line as the return value is being stored to a variable also with a tag of File: (note the cases are the same too). However on the next line the value 4 is added to the file handle. 4 has no tag [...]
+  > Funkcja fopen zawsze zwraca wartość z tagiem File:, nie ma żadnego problemu w tej linii, ponieważ zwracana wartość jest przechowywana w zmiennej również z tagiem File: (należy pamiętać o takiej samej wielkości znaków). Natomiast w następnej linii wartość 4 jest dodana do tej samej zmiennej, a wartość 4 nie posiada żadnego tagu.
 
 - ✔
 
-  > The `fopen` function will return a value with a tag of type `File:`, there is no problem on that line as the return value is being stored to a variable also with a tag of `File:` (note the cases are the same too). However on the next line the value `4` is added to the file handle. `4` has no tag
+  > Funkcja `fopen` zawsze zwraca wartość z tagiem `File:`, nie ma żadnego problemu w tej linii, ponieważ zwracana wartość jest przechowywana w zmiennej również z tagiem `File:` (należy pamiętać o takiej samej wielkości znaków). Natomiast w następnej linii wartość `4` jest dodana do tej samej zmiennej, a wartość `4` nie posiada żadnego tagu.
 
-In the above example, `fopen` is a function name, not an English word, so surrounding it with `code` snippet markers helps distinguish it from other content.
+W powyższym przykładzie, `fopen` to nazwa funkcji, a nie polskie słowo, dlatego otoczenie go tagiem `kodu` ułatwia rozróżnienie go od pozostałej zawartości.
 
-Also, if the paragraph is referring to a block of example code, this helps the reader associate the words with the example.
+Dodatkowo, jeżeli tekst odnosi się do dłuższego fragmentu przykładowego kodu, ułatwia to powiązanie wyrazów z przykładem.
 
-### Tables
+### Tabele
 
-If a table has headings, they go in the top part:
+Jeżeli tabela ma nagłówki, trafiają one do jej górnej części:
 
 - ❌
 
   ```md
-  |         |                                      |
-  | ------- | ------------------------------------ |
-  | Health  | Engine Status                        |
-  | 650     | Undamaged                            |
-  | 650-550 | White Smoke                          |
-  | 550-390 | Grey Smoke                           |
-  | 390-250 | Black Smoke                          |
-  | < 250   | On fire (will explode seconds later) |
+  |         |                                          |
+  | ------- | ---------------------------------------- |
+  | Życie   | Status silnika                           |
+  | 650     | Niezniszczony                            |
+  | 650-550 | Biały dym                                |
+  | 550-390 | Szary dym                                |
+  | 390-250 | Czarny dym                               |
+  | < 250   | Płonie (eksploduje kilka sekund później) |
   ```
 
 - ✔
 
   ```md
-  | Health  | Engine Status                        |
-  | ------- | ------------------------------------ |
-  | 650     | Undamaged                            |
-  | 650-550 | White Smoke                          |
-  | 550-390 | Grey Smoke                           |
-  | 390-250 | Black Smoke                          |
-  | < 250   | On fire (will explode seconds later) |
+  | Życie   | Status silnika                           |
+  | ------- | ---------------------------------------- |
+  | 650     | Niezniszczony                            |
+  | 650-550 | Biały dym                                |
+  | 550-390 | Szary dym                                |
+  | 390-250 | Czarny dym                               |
+  | < 250   | Płonie (eksploduje kilka sekund później) |
   ```
 
-## Migrating from SA-MP Wiki
+## Migracja z SA-MP Wiki
 
-Most of the content has been moved, but if you find a page that's missing, here's a short guide for converting content to Markdown.
+Większość zawartości została przeniesiona, ale jeśli znajdziesz brakującą stronę, skorzystaj z prostego poradnika konwersji zawartości na Markdown.
 
-### Getting the HTML
+### Zdobycie kodu HTML
 
-1. Click this button
+1. Kliknij ten przycisk
 
    (Firefox)
 
@@ -174,46 +174,46 @@ Most of the content has been moved, but if you find a page that's missing, here'
 
    ![image](/images/contributing/f62bb8112543.png)
 
-2. Hover the top left of the main wiki page, in the left margin or the corner until you see `#content`
+2. Najeżdżaj na górną lewą część podstrony, na lewy margines lub na róg, aż zobaczysz `#content`
 
    ![image](/images/contributing/65761ffbc429.png)
 
-   Or search for `<div id=content>`
+   Lub wyszukaj `<div id=content>`
 
    ![image](/images/contributing/77befe2749fd.png)
 
-3. Copy the inner HTML of that element
+3. Skopiuj cały kod HTML znajdujący się wewnątrz tego elementu
 
    ![image](/images/contributing/8c7c75cfabad.png)
 
-   Now you have _only_ the HTML code for the actual _content_ of the page, the stuff we care about, and you can convert it to Markdown.
+   Teraz masz _tylko_ kod HTML konkretnej _zawartości_ strony, czyli to co nas interesuje i co możesz przekonwertować na Markdown.
 
-### Converting HTML to Markdown
+### Konwersja HTML na Markdown
 
-For converting basic HTML (no tables) to Markdown use:
+Do konwersji podstawowego kodu HTML (bez tabel) na Markdown, użyj:
 
 https://domchristie.github.io/turndown/
 
 ![image](/images/contributing/77f4ea555bbb.png)
 
-^^ Notice now it screwed up the table completely...
+^^ Zwróć uwagę, że tabela całkowicie się zepsuła...
 
-### HTML Tables to Markdown Tables
+### Konwersja tabel HTML na tabele Markdown
 
-Because the above tool does not support tables, use this tool:
+Ponieważ powyższe narzędzie nie wspiera tabel, skorzystaj z tego narzędzia:
 
 https://jmalarcon.github.io/markdowntables/
 
-And copy only the `<table>` element in:
+I skopiuj sam element `<table>` do:
 
 ![image](/images/contributing/57f171ae0da7.png)
 
-### Cleaning Up
+### Porządkowanie
 
-The conversion likely won't be perfect. So you'll have to do a bit of manual cleanup. The formatting extensions listed above should help with that but you may still need to just spend some time doing manual work.
+Konwersja prawdopodobnie nie będzie perfekcyjna, więc musisz częściowo uporządkować to samemu. Wtyczki formatujące wypisane wyżej powinny w tym pomóc, ale wciąż będzie trzeba spędzić trochę czasu poprawiając pozostałości ręcznie.
 
-If you don't have time, don't worry! Submit an unfinished draft and someone else can pick up where you left off!
+Jeżeli nie masz czasu, nie przejmuj się! Wyślij nieskończoną wersję roboczą, a ktoś inny ją dokończy.
 
-## License Agreement
+## Umowa licencyjna
 
-All open.mp projects have a [Contributor License Agreement][https://cla-assistant.io/openmultiplayer/homepage]. This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
+Wszystkie projekty open.mp posiadają [umowę licencyjną współtwórcy][https://cla-assistant.io/openmultiplayer/homepage]. To w zasadzie oznacza, że zgadzasz się na wykorzystanie przez nas Twojej pracy i umieszczenie jej pod licencją open-source. Gdy stworzysz swój pierwszy Pull Request, bot CLA-Assistant zamieści link, w którym możesz potwierdzić swoją zgodę.
