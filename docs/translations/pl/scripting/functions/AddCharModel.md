@@ -15,12 +15,12 @@ Ta funkcja została dodana w wersji SA-MP 0.3-DL R1 i nie będzie działać w st
 
 Dodaje niestandardowy model postaci do pobrania. Pliki modelu będą przechowywane w ścieżce Dokumenty\GTA San Andreas User Files\SAMP\cache w katalogu nazwanym adresem IP oraz portem serwera, z nazwami w formie sum kontrolnych CRC.
 
-| Nazwa   | Opis                                                                                                              |
-| ------- | ----------------------------------------------------------------------------------------------------------------- |
-| baseid  | Bazowe ID skina (nowy skin oddziedziczy po nim zachowanie, a jeżeli pobieranie się nie uda, to także wygląd).     |
-| newid   | Nowe ID skina z zakresu od 20000 do 30000 (10000 slotów), używane później w SetPlayerSkin.                        |
-| dffname | Nazwa pliku .dff z kolizjami modelu, znajdujący się domyślnie w serwerowym katalogu models (ustawienie artpath).  |
-| txdname | Nazwa pliku .txd z teksturami modelu, znajdujący się domyślnie w serwerowym katalogu models (ustawienie artpath). |
+| Nazwa   | Opis                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------------------------------------- |
+| baseid  | Bazowe ID skina (nowy skin oddziedziczy po nim zachowanie, a jeżeli pobieranie się nie uda, to także wygląd).       |
+| newid   | Nowe ID skina z zakresu od 20000 do 30000 (10000 slotów), używane później w SetPlayerSkin.                          |
+| dffname | Nazwa pliku .dff z kolizjami modelu, znajdującego się domyślnie w serwerowym katalogu models (ustawienie artpath).  |
+| txdname | Nazwa pliku .txd z teksturami modelu, znajdującego się domyślnie w serwerowym katalogu models (ustawienie artpath). |
 
 ## Zwracane wartości
 
