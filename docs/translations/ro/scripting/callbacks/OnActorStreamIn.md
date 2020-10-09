@@ -1,8 +1,6 @@
 ---
-id: OnActorStreamIn
-titlu: OnActorStreamIn
-descriere: Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
-tags: []
+title: OnActorStreamIn
+description: Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
 ---
 
 import Warning from '../../meta/templates/\_version-warning-0.3.7.md'
