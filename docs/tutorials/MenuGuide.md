@@ -26,14 +26,14 @@ Now a bit of an explanation about the [CreateMenu](../scripting/functions/Create
 
 **Parameters:**
 
-| Parameter | Specifies |
-| --- | --- |
-| title | The heading of the menu |
-| columns | The number here defines how much columns are used (2 is maximum) |
-| Float:x | The heigth position of the menu on screen (left to right) |
-| Float:y | The width position of the menu on screen (up and down) |
-| Float:col1width | The width of the first column |
-| Float:col2width | The width of the second column |
+| Parameter       | Specifies                                                        |
+| --------------- | ---------------------------------------------------------------- |
+| title           | The heading of the menu                                          |
+| columns         | The number here defines how much columns are used (2 is maximum) |
+| Float:x         | The heigth position of the menu on screen (left to right)        |
+| Float:y         | The width position of the menu on screen (up and down)           |
+| Float:col1width | The width of the first column                                    |
+| Float:col2width | The width of the second column                                   |
 
 ## Add some menu items
 
