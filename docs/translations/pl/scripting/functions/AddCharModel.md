@@ -11,7 +11,7 @@ Ta funkcja została dodana w wersji SA-MP 0.3-DL R1 i nie będzie działać w st
 
 :::
 
-## Ostrzeżenie
+## Opis
 
 Dodaje niestandardowy model postaci do pobrania. Pliki modelu będą przechowywane w ścieżce Dokumenty\GTA San Andreas User Files\SAMP\cache w katalogu nazwanego adresem IP oraz portem serwera, z nazwami w formie sum kontrolnych CRC.
 
