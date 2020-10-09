@@ -15,10 +15,10 @@ Bu callback SA-MP 0.3.7 sürümüyle birlikte eklenmiştir. Önceki SA-MP sürü
 
 Bu callback, bir aktör oyuncunun akış alanından ayrıldığında tetiklenir.
 
-| Name        | Description                                                    |
-| ----------- | -------------------------------------------------------------- |
-| actorid     | Oyuncunun akış alanından ayrılan aktör id'si.                  |
-| forplayerid | Aktörün akış alanından ayrıldığı oyuncu id'si.                 |
+| Name        | Description                                    |
+| ----------- | ---------------------------------------------- |
+| actorid     | Oyuncunun akış alanından ayrılan aktör id'si.  |
+| forplayerid | Aktörün akış alanından ayrıldığı oyuncu id'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

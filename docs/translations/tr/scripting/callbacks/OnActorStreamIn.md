@@ -15,10 +15,10 @@ Bu callback SA-MP 0.3.7 sürümünde eklendi ve önceki sürümlerde çalışmaz
 
 Bu callback, bir aktör başka bir oyuncunun akış alanına girdiğinde tetiklenir.
 
-| Adı         | Açıklama                                                      |
-| ----------- | ------------------------------------------------------------- |
-| actorid     | Oyuncunun akışına giren aktörün id'si.                        |
-| forplayerid | Aktörün akışına girdiği oyuncunun id'si.                      |
+| Adı         | Açıklama                                 |
+| ----------- | ---------------------------------------- |
+| actorid     | Oyuncunun akışına giren aktörün id'si.   |
+| forplayerid | Aktörün akışına girdiği oyuncunun id'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 
