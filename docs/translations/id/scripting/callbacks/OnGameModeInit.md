@@ -11,14 +11,14 @@ Callback ini akan terpanggil ketika sebuah gamemode dimuat.
 ## Contoh
 
 ```c
-public OnGameModeInit() 
+public OnGameModeInit()
 {
     print("Mode Game berhasil dimuat");
     return 1;
 }
 ```
 
-## Noes
+## Catatan
 
 :::tip
 
