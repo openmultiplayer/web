@@ -20,12 +20,12 @@ There are two ways to create pickups. [CreatePickup](../functions/CreatePickup) 
 
 **Parameters:**
 
-| model | The model you'd like to use for the pickup. |
-| --- | --- |
-| type | The pickup spawn type, see further down this page. |
-| Float:X | The X-coordinate for the pickup to show. |
-| Float:Y | The Y-coordinate for the pickup to show. |
-| Float:Z | The Z-coordinate for the pickup to show. |
+| model        | The model you'd like to use for the pickup.                                                               |
+| ------------ | --------------------------------------------------------------------------------------------------------- |
+| type         | The pickup spawn type, see further down this page.                                                        |
+| Float:X      | The X-coordinate for the pickup to show.                                                                  |
+| Float:Y      | The Y-coordinate for the pickup to show.                                                                  |
+| Float:Z      | The Z-coordinate for the pickup to show.                                                                  |
 | Virtualworld | The virtual world ID of the pickup. A value of -1 will cause the pickup to display in all virtual worlds. |
 
 For this example we will create a cash pickup at Grove Street.
