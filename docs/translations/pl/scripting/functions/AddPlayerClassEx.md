@@ -11,7 +11,7 @@ Ta funkcja jest dokładnie taka sama, jak funkcja AddPlayerClass, z wyjątkiem d
 
 | Nazwa         | Opis                                                        |
 | ------------- | ----------------------------------------------------------- |
-| teamid        | Drużyna, w której gracz ma się spawnować.
+| teamid        | Drużyna, w której gracz ma się spawnować.                   |
 | modelid       | Skin, z którym gracze będą się spawnować.                   |
 | Float:spawn_x | Koordynat X miejsca spawnu tej klasy.                       |
 | Float:spawn_y | Koordynat Y miejsca spawnu tej klasy.                       |
