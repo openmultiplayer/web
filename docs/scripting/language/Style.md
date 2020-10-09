@@ -203,10 +203,12 @@ Local variables must always use `camelCase` and must never use single letter nam
 
 Enumerators, if named, must be prefixed with `E_` (a strong tag) or `e_` (a weak tag)
 
+Enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator name as a prefix.
+
 ```pawn
 static enum E_PLAYER_DATA {
-    e_PlayerCash,
-    Float:e_PlayerHealth,
+    E_PLAYER_CASH,
+    Float:E_PLAYER_HEALTH,
 }
 ```
 
@@ -214,8 +216,8 @@ Using a weak tag
 
 ```pawn
 static enum e_PLAYER_DATA {
-    e_PlayerCash,
-    Float:e_PlayerHealth,
+    E_PLAYER_CASH,
+    Float:E_PLAYER_HEALTH,
 }
 ```
 
