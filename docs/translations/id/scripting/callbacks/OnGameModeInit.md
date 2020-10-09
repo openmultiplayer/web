@@ -20,12 +20,9 @@ public OnGameModeInit()
 
 ## Noes
 
-:::terpanggil
+:::tip
 
-Fungsi ini dapat digunakan didalam filterscript
-untuk mendeteksi apakah gamemode berubah dengan 
-perintah RCON seperti changemode atau gmx, sebagaimana
-gamemode tidak dapat memuat ulang filterscript.
+Fungsi ini dapat digunakan dalam sebuah filterscript untuk mendeteksi apakah sebuah gamemode berubah dengan perintah RCON seperti changemode atau gmx, sebagaimana gamemode tidak dapat memuat ulang filterscript.
 
 :::
 
