@@ -123,7 +123,7 @@ enum E_EXAMPLE (*= 2)
 }
 ```
 
-În aceasta toate valorile sunt 0. De ce? Ei bine, prima valoare implicită este 0, apoi 0 _ 2 = 0, apoi 0 _ 2 = 0 și 0 \ * 2 = 0. Deci, cum putem corecta acest lucru? Pentru aceasta sunt utilizate valorile personalizate:
+În aceasta toate valorile sunt 0. De ce? Ei bine, prima valoare implicită este 0, apoi 0 _ 2 = 0, apoi 0 _ 2 = 0 și 0 \ \* 2 = 0. Deci, cum putem corecta acest lucru? Pentru aceasta sunt utilizate valorile personalizate:
 
 ```c
 enum E_EXAMPLE (*= 2)
@@ -226,7 +226,7 @@ new
 
 Aceasta va crea o nouă variabilă și îi va atribui valoarea 6 (4 | 2) și va avea o etichetă personalizată astfel:
 
-```c 
+```c
 gMyTagVar = 7;
 ```
 
