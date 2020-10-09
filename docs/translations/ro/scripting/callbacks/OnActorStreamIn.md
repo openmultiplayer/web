@@ -11,10 +11,10 @@ import Warning from '../../meta/templates/\_version-warning-0.3.7.md'
 
 Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
 
-| Nume        | Descriere                                                     |
-| ----------- | ------------------------------------------------------------- |
-| actorid     | ID-ul actorului care a fost transmis în flux pentru jucător.  |
-| forplayerid | ID-ul jucătorului în care s-a transmis actorul.               |
+| Nume        | Descriere                                                    |
+| ----------- | ------------------------------------------------------------ |
+| actorid     | ID-ul actorului care a fost transmis în flux pentru jucător. |
+| forplayerid | ID-ul jucătorului în care s-a transmis actorul.              |
 
 ## Returnari
 
