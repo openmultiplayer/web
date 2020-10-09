@@ -6,6 +6,7 @@ tags: []
 ---
 
 ## Deskripsi
+
 Callback ini akan terpanggil ketika sebuah gamemode dimuat.
 
 ## Contoh
