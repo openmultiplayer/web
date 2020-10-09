@@ -15,13 +15,13 @@ Bu callback SA-MP 0.3a sürümünde eklendi ve önceki sürümlerde çalıştır
 
 Bu callback, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
 
-| Ad          | Açıklama                                                                                                                                                        |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid    | Dialog'u tetikleyen oyuncunun id'si.                                                                                                                            |
-| dialogid    | Tetiklenen dialog id'si.                                                                                                                                        |
-| response    | Yapılan işlemin sonucu. (sol düğme sonucu 1, sağ düğme sonucu 0 eğer yalnızca bir düğme varsa her zaman 1)                                                      |
-| listitem    | Oyuncu tarafından seçilen liste id'si (0'dan başlar) (yalnızca liste stili dialoglar içerisinde kullanılıyorsa doğru sonuç verir, aksi takdirde -1 olacaktır).  |
-| inputtext[] | Oyuncu tarafından veya liste stili dialoglarda metin girişine girilen metin.                                                                                    |
+| Ad          | Açıklama                                                                                                                                                       |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | Dialog'u tetikleyen oyuncunun id'si.                                                                                                                           |
+| dialogid    | Tetiklenen dialog id'si.                                                                                                                                       |
+| response    | Yapılan işlemin sonucu. (sol düğme sonucu 1, sağ düğme sonucu 0 eğer yalnızca bir düğme varsa her zaman 1)                                                     |
+| listitem    | Oyuncu tarafından seçilen liste id'si (0'dan başlar) (yalnızca liste stili dialoglar içerisinde kullanılıyorsa doğru sonuç verir, aksi takdirde -1 olacaktır). |
+| inputtext[] | Oyuncu tarafından veya liste stili dialoglarda metin girişine girilen metin.                                                                                   |
 
 ## Çalışınca Vereceği Sonuçlar
 
