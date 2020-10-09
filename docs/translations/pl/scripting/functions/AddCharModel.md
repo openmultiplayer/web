@@ -24,9 +24,9 @@ Dodaje niestandardowy model postaci do pobrania. Pliki modelu będą przechowywa
 
 ## Zwracane wartości
 
-1: Ta funkcja wykonała się prawidłowo.
+1: Funkcja wykonała się prawidłowo.
 
-0: Ta funkcja nie wykonała się prawidłowo.
+0: Funkcja nie wykonała się prawidłowo.
 
 ## Przykłady
 
