@@ -15,14 +15,13 @@ Bu fonksiyon küçük harfle başlar.
 
 Radyanlardaki bir ark kosininin ters değerini alın.
 
-| İsim        | Açıklama                 |
-| ----------- | ------------------------ |
-| Float:value | ark kosinüsü girişi.     |
+| İsim        | Açıklama             |
+| ----------- | -------------------- |
+| Float:value | ark kosinüsü girişi. |
 
 ## Dönence
 
 [0, pi] radyanlarda x'in ana ark kosinüsü. Bir radyan 180/PI'ye eşdeğerdir.
-
 
 ## Örnek
 

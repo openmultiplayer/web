@@ -13,13 +13,7 @@ Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacak
 
 ## Açıklama
 
-İndirmek için yeni bir özel karakter modeli ekler. Model dosyaları oynatıcının belgelerinde saklanır. Belgelerim\Gta San Andreas User Files\SAMP\cache
-| İsim    | Açıklama                                                                                                       |
-| ------- | -------------------------------------------------------------------------------------------------------------- |
-| baseid  | Kullanılacak temel cilt modeli kimliği. (karakterin ve orijinal karakterin ne zaman kullanılacağı)              |
-| newid   | "Öncesinde, yeni model ID'leri 20000 ve 30000 arasinda (10000 slot) değişiklik göstermekteydi.                 |
-| dffname | Varsayılan olarak modeller sunucu klasöründe bulunan .dff modeli çarpışma dosyasının adı (çalışma yolu ayarı). |
-| txdname | Modeller sunucu klasöründe varsayılan olarak bulunan .txd model kaplama dosyasının adı (çalışma yolu ayarı).   |
+İndirmek için yeni bir özel karakter modeli ekler. Model dosyaları oynatıcının belgelerinde saklanır. Belgelerim\Gta San Andreas User Files\SAMP\cache | İsim | Açıklama | | ------- | -------------------------------------------------------------------------------------------------------------- | | baseid | Kullanılacak temel cilt modeli kimliği. (karakterin ve orijinal karakterin ne zaman kullanılacağı) | | newid | "Öncesinde, yeni model ID'leri 20000 ve 30000 arasinda (10000 slot) değişiklik göstermekteydi. | | dffname | Varsayılan olarak modeller sunucu klasöründe bulunan .dff modeli çarpışma dosyasının adı (çalışma yolu ayarı). | | txdname | Modeller sunucu klasöründe varsayılan olarak bulunan .txd model kaplama dosyasının adı (çalışma yolu ayarı). |
 
 ## Dönence
 

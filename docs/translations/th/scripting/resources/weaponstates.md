@@ -13,5 +13,4 @@ description: Weapon State Constants
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetPlayerWeaponState](../functions/GetPlayerWeaponState): Check the state of
-  a player's weapon.
+- [GetPlayerWeaponState](../functions/GetPlayerWeaponState): Check the state of a player's weapon.

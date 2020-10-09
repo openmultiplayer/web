@@ -40,10 +40,7 @@ public message()
 
 :::tip
 
-Timer intervals are not accurate (roughly 25% off). There are fixes available here and here.
-Timer IDs are never used twice. You can use KillTimer() on a timer ID and it won't matter if it's running or not.
-The function that should be called, must be public, meaning it has to be forwarded.
-The use of many timers will result in increased memory/cpu usage.
+Timer intervals are not accurate (roughly 25% off). There are fixes available here and here. Timer IDs are never used twice. You can use KillTimer() on a timer ID and it won't matter if it's running or not. The function that should be called, must be public, meaning it has to be forwarded. The use of many timers will result in increased memory/cpu usage.
 
 :::
 

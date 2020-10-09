@@ -43,8 +43,7 @@ public OnGameModeInit()
 
 :::warning
 
-Once set invulnerable, the actor does not call OnPlayerGiveDamageActor.
-Players will have actor's invulnerability state changed only when it is restreamed to them.
+Once set invulnerable, the actor does not call OnPlayerGiveDamageActor. Players will have actor's invulnerability state changed only when it is restreamed to them.
 
 :::
 

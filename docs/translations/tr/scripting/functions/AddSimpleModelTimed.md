@@ -15,15 +15,15 @@ Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacak
 
 İndirmek için yeni bir basit nesne modeli ekler. Model dosyaları oynatıcının belgelerinde saklanır. Belgelerim\Gta San Andreas User Files\SAMP\cache'te, CRC biçiminde dosya adında Sunucu IP'si ve Bağlantı Noktası klasörü altında saklanır.
 
-| İsim         | Açıklama                                                                                                                     |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------  |
-| virtualworld | Modeli adresinde kullanılabilir hale getirmek için sanal dünya kimliği. Tüm dünyalar için -1 kullanın.                       |
-| baseid       | Kullanılacak temel nesne model kimliği (indirme başarısız olduğunda kullanılacak orijinal nesne).                            |
-| newid        | Yeni obje model kimliği daha sonra CreateObject veya CreatePlayerObject ile -1000 ile -30000 arasında (29000 yuva) sıralandı.|
-| dffname      | Modellerde bulunan .dff modeli çarpışma dosyasının adı varsayılan olarak sunucu klasörü (çalışma yolu ayarı)                 |
-| txdname      |  Modeller sunucu klasöründe varsayılan olarak bulunan .txd model kaplama dosyasının adı (çalışma yolu ayarı).                |
-| timeon       | Dünya oyun zamanı (saat) bu nesne görünür.                                                                                   |
-| timeoff      | Dünya oyun zamanı (saat) bu nesne kaybolacak.                                                                                |
+| İsim         | Açıklama                                                                                                                      |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| virtualworld | Modeli adresinde kullanılabilir hale getirmek için sanal dünya kimliği. Tüm dünyalar için -1 kullanın.                        |
+| baseid       | Kullanılacak temel nesne model kimliği (indirme başarısız olduğunda kullanılacak orijinal nesne).                             |
+| newid        | Yeni obje model kimliği daha sonra CreateObject veya CreatePlayerObject ile -1000 ile -30000 arasında (29000 yuva) sıralandı. |
+| dffname      | Modellerde bulunan .dff modeli çarpışma dosyasının adı varsayılan olarak sunucu klasörü (çalışma yolu ayarı)                  |
+| txdname      | Modeller sunucu klasöründe varsayılan olarak bulunan .txd model kaplama dosyasının adı (çalışma yolu ayarı).                  |
+| timeon       | Dünya oyun zamanı (saat) bu nesne görünür.                                                                                    |
+| timeoff      | Dünya oyun zamanı (saat) bu nesne kaybolacak.                                                                                 |
 
 ## Dönence
 
@@ -45,8 +45,7 @@ public OnGameModeInit()
 
 :::tip
 
-Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarlarında userartwork etkinleştirilmesi gerekir; oynatıcı belirli bir dünyaya girdiğinde modeller indirilir.
-:::
+Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarlarında userartwork etkinleştirilmesi gerekir; oynatıcı belirli bir dünyaya girdiğinde modeller indirilir. :::
 
 :::uyarı
 
@@ -57,4 +56,3 @@ Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarl
 ## İlgili Fonksiyonlar
 
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Bir oyuncu özel modelleri indirmeyi bitirdiğinde çağrılır.
-

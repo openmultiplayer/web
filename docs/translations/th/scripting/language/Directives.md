@@ -21,8 +21,7 @@ This will compile fine.
 #assert MOO > 5
 ```
 
-That won't and will give a fatal error.
-This is similar to:
+That won't and will give a fatal error. This is similar to:
 
 ```c
 #define MOO 1
@@ -107,8 +106,7 @@ Which converts to:
 printf("%d", MOO(5 + 6 * 7));
 ```
 
-Which, due to the order of operations, compules as (5 + (6 \* 7)), whiche is 47 and very wrong.
-One interesting fact about the parameters is that if you have too many, the last one is all the extra ones. So doing:
+Which, due to the order of operations, compules as (5 + (6 \* 7)), whiche is 47 and very wrong. One interesting fact about the parameters is that if you have too many, the last one is all the extra ones. So doing:
 
 ```c
 #define PP(%0,%1) \
@@ -147,9 +145,7 @@ As `%1` contains "hi", "hello", "hi". You may have also noticed the use of `#` t
 
 ## `#emit`
 
-This directive is unlisted in the pawn-lang.pdf table however does exist. It is basically an inline compiler. If you know AMX you can use this to put AMX opcodes directly into your code. The one limitation is that is allows only one argument.
-Syntax: `#emit <opcode> <argument>`.
-`<argument>` can be a rational number, integer or (local or global) symbol(variables, functions and labels). The list of opcodes and their meaning can be found in Pawn Toolkit ver. 3664.
+This directive is unlisted in the pawn-lang.pdf table however does exist. It is basically an inline compiler. If you know AMX you can use this to put AMX opcodes directly into your code. The one limitation is that is allows only one argument. Syntax: `#emit <opcode> <argument>`. `<argument>` can be a rational number, integer or (local or global) symbol(variables, functions and labels). The list of opcodes and their meaning can be found in Pawn Toolkit ver. 3664.
 
 ## `#endif`
 

@@ -69,8 +69,7 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
   Pentru a fi folosit cu [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
   ```
 
-  `../` înseamnă „mergeți într-un director”, deci dacă fișierul pe care îl editați se află în directorul `functions` și vă conectați la
-  „ callbacks ”, utilizați`../`pentru a merge la`scripting /`apoi`callbacks /`pentru a intra în directorul callbacks, apoi numele fișierului (fără`.md`) al callback-ului pe care doriți să-l legați.
+  `../` înseamnă „mergeți într-un director”, deci dacă fișierul pe care îl editați se află în directorul `functions` și vă conectați la „ callbacks ”, utilizați`../`pentru a merge la`scripting /`apoi`callbacks /`pentru a intra în directorul callbacks, apoi numele fișierului (fără`.md`) al callback-ului pe care doriți să-l legați.
 
   ### Imagini
 
@@ -117,9 +116,7 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
 
   ### Utilizați fragmentele `Code` pentru referințe tehnice
 
-  Când scrieți un paragraf care conține nume de funcții, numere, expresii sau orice altceva care nu este un limbaj scris standard,
-  înconjurați-le cu astfel de \`backticks\`. Acest lucru face mai ușoară separarea limbajului pentru descrierea lucrurilor de referințe la elemente tehnice,
-  cum ar fi numele funcțiilor și piesele de cod.
+  Când scrieți un paragraf care conține nume de funcții, numere, expresii sau orice altceva care nu este un limbaj scris standard, înconjurați-le cu astfel de \`backticks\`. Acest lucru face mai ușoară separarea limbajului pentru descrierea lucrurilor de referințe la elemente tehnice, cum ar fi numele funcțiilor și piesele de cod.
 
   - ❌
 
@@ -214,13 +211,10 @@ https://jmalarcon.github.io/markdowntables/
 
 ### Curatare
 
-Conversia probabil că nu va fi perfectă. Deci va trebui să faceți un pic de curățare manuală.
-Extensiile de formatare enumerate mai sus ar trebui să vă ajute, dar este posibil să fiți nevoit să petreceți doar timp făcând lucrări manuale.
+Conversia probabil că nu va fi perfectă. Deci va trebui să faceți un pic de curățare manuală. Extensiile de formatare enumerate mai sus ar trebui să vă ajute, dar este posibil să fiți nevoit să petreceți doar timp făcând lucrări manuale.
 
 Dacă nu ai timp, nu-ți face griji! Trimiteți o schiță neterminată și altcineva poate ridica locul unde ați rămas!
 
 ## Acord de licențiere
 
-Toate proiectele open.mp au un [Acord de licență pentru colaboratori][https://cla-assistant.io/openmultiplayer/homepage].
-Acest lucru înseamnă doar că sunteți de acord să ne permiteți să vă folosim lucrarea și să o puneți sub o licență open-source.
-Când deschideți o cerere de extragere pentru prima dată, botul CLA-Assistant va posta un link unde puteți semna acordul.
+Toate proiectele open.mp au un [Acord de licență pentru colaboratori][https://cla-assistant.io/openmultiplayer/homepage]. Acest lucru înseamnă doar că sunteți de acord să ne permiteți să vă folosim lucrarea și să o puneți sub o licență open-source. Când deschideți o cerere de extragere pentru prima dată, botul CLA-Assistant va posta un link unde puteți semna acordul.

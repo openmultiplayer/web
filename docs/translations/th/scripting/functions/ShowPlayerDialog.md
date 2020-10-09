@@ -78,8 +78,7 @@ It is recommended to use enumerations (see above) or definitions (#define) to de
 
 :::tip
 
-Use color embedding for multiple colors in the text.
-Using -1 as dialogid closes all dialogs currently shown on the client's screen.
+Use color embedding for multiple colors in the text. Using -1 as dialogid closes all dialogs currently shown on the client's screen.
 
 :::
 

@@ -10,7 +10,7 @@ tags: ["vehicle"]
 Oyun moduna bir "statik" araç ekler (modeller oyuncular için önceden yüklenir).
 
 | İsim                                     | Açıklama                                 |
-| ---------------------------------------- | --------------------------------------   |
+| ---------------------------------------- | ---------------------------------------- |
 | modelid                                  | Aracın Model Kimliği.                    |
 | Float:spawn_X                            | Aracın X koordinatı.                     |
 | Float:spawn_Y                            | Aracın Y koordinatı.                     |

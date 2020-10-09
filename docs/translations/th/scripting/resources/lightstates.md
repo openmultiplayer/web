@@ -4,8 +4,7 @@ title: Light States
 
 To be used with [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus) and [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus).
 
-The lights on vehicles with 2 wheels (and thus 2 lights) can not be changed.
-The two back lights of a vehicle can not be changed separately.
+The lights on vehicles with 2 wheels (and thus 2 lights) can not be changed. The two back lights of a vehicle can not be changed separately.
 
 Here is a visual representation of the light states. Vehicle viewed from a top-down perspective, the top is the front of the vehicle.
 
@@ -77,11 +76,9 @@ Here is a visual representation of the light states. Vehicle viewed from a top-d
     x-x
 ```
 
-Other values not listed here can change the lights, but they are just repeats of other values. For example 15 has the same outcome as 5.
-After 255 the values will wrap around, 256 will be set as 0, 257 as 1 and so on.
+Other values not listed here can change the lights, but they are just repeats of other values. For example 15 has the same outcome as 5. After 255 the values will wrap around, 256 will be set as 0, 257 as 1 and so on.
 
-**Example Usage:**
-To disable the back two lights of a vehicle while keeping the front the same state:
+**Example Usage:** To disable the back two lights of a vehicle while keeping the front the same state:
 
 ```c
 new Panels, Doors, Lights, Tires;

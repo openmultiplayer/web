@@ -66,8 +66,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-In 0.3a the camera front vector is only obtainable when player is inside a rhino, S.W.A.T tank, fire truck, or on foot.
-Since 0.3b the camera data can be obtained when the player is in any vehicle or on foot.
+In 0.3a the camera front vector is only obtainable when player is inside a rhino, S.W.A.T tank, fire truck, or on foot. Since 0.3b the camera data can be obtained when the player is in any vehicle or on foot.
 
 :::
 

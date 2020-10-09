@@ -4,9 +4,7 @@ title: Vehicle Color IDs
 
 :::danger
 
-As of SA-MP 0.3x, the following information is outdated. Vehicle colour IDs from
-128 to 255 have been intentionally replaced with new colours. Check the second
-picture for the up to date colours for 0.3x.
+As of SA-MP 0.3x, the following information is outdated. Vehicle colour IDs from 128 to 255 have been intentionally replaced with new colours. Check the second picture for the up to date colours for 0.3x.
 
 :::
 

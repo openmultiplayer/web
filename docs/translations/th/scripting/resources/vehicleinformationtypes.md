@@ -20,6 +20,4 @@ description: Vehicle Information Type Constants
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetVehicleModelInfo](/docs/scripting/functions/GetVehicleModelInfo): Retrieve
-  information about a specific vehicle model such as the size or position of
-  seats.
+- [GetVehicleModelInfo](/docs/scripting/functions/GetVehicleModelInfo): Retrieve information about a specific vehicle model such as the size or position of seats.

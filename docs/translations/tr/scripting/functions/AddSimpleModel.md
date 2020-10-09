@@ -16,7 +16,7 @@ Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacak
 İndirmek için yeni bir özel basit nesne modeli ekler. Model dosyaları, oynatıcının belgelerinde\GTA San Andreas Kullanıcı dosyaları\SAMP\cache'te, CRC biçiminde dosya adında Sunucu IP'si ve Bağlantı Noktası klasörü altında saklanır.
 
 | İsim         | Açıklama                                                                                                                      |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------   |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | virtualworld | Modeli adresinde kullanılabilir hale getirmek için sanal dünya kimliği. Tüm dünyalar için -1 kullanın.                        |
 | baseid       | Kullanılacak temel nesne model kimliği (indirme başarısız olduğunda kullanılacak orijinal nesne).                             |
 | newid        | Yeni obje model kimliği daha sonra CreateObject veya CreatePlayerObject ile -1000 ile -30000 arasında (29000 yuva) sıralandı. |

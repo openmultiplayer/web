@@ -9,20 +9,20 @@ tags: ["player"]
 
 Bu işlev, bir takım parametresi eklenmesiyle birlikte AddPlayerClass işleviyle tamamen aynıdır.
 
-| İsim          | Açıklama                                                    |
-| ------------- | ----------------------------------------------------------- |
-| teamid        | Oyuncunun doğmasını istediğiniz takım.                      |
-| modelid       | Oyuncunun kapladığı deri.                                   |
-| Float:spawn_x | Sınıfın doğma konumunun X koordinatı.                       |
-| Float:spawn_y | Sınıfın doğma konumunun Y koordinatı.                       |
-| Float:spawn_z | Sınıfın doğma konumunun Z koordinatı.                       |
-| Float:z_angle | Oyuncunun doğduktan sonra bakacağı yön.                     |
-| weapon1       | Oyuncunun ilk silahı.                                       |
-| weapon1_ammo  | İlk mühimmat.                                               |
-| weapon2       | Oyuncunun ikinci silahı.                                    |
-| weapon2_ammo  | İkinci silah mühimmat miktarı.                              |
-| weapon3       | Oyuncunun üçüncü silahı.                                    |
-| weapon3_ammo  | Üçüncü silah mühimmat miktarı.                              |
+| İsim          | Açıklama                                |
+| ------------- | --------------------------------------- |
+| teamid        | Oyuncunun doğmasını istediğiniz takım.  |
+| modelid       | Oyuncunun kapladığı deri.               |
+| Float:spawn_x | Sınıfın doğma konumunun X koordinatı.   |
+| Float:spawn_y | Sınıfın doğma konumunun Y koordinatı.   |
+| Float:spawn_z | Sınıfın doğma konumunun Z koordinatı.   |
+| Float:z_angle | Oyuncunun doğduktan sonra bakacağı yön. |
+| weapon1       | Oyuncunun ilk silahı.                   |
+| weapon1_ammo  | İlk mühimmat.                           |
+| weapon2       | Oyuncunun ikinci silahı.                |
+| weapon2_ammo  | İkinci silah mühimmat miktarı.          |
+| weapon3       | Oyuncunun üçüncü silahı.                |
+| weapon3_ammo  | Üçüncü silah mühimmat miktarı.          |
 
 ## Dönence
 
