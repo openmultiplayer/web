@@ -195,8 +195,8 @@ Globele constante trebuie să utilizeze `SCREAMING_SNAKE_CASE`.
 
 Variabilele locale trebuie să utilizeze întotdeauna `camelCase` și nu trebuie să utilizeze niciodată nume de litere, cu excepția:
 
-- `i`,` j`, `k`, etc în buclele `for`
-- `x`,` y`, `z`, etc în contexte matematice
+- `i`,`j`, `k`, etc în buclele `for`
+- `x`,`y`, `z`, etc în contexte matematice
 
 #### Enumeratori
 
