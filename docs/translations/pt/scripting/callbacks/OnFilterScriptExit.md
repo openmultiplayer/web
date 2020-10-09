@@ -1,7 +1,7 @@
 ---
 id: OnFilterScriptExit
-título: OnFilterScriptExit
-descrição: Esta callback é chamada quando um filterscript é descarregado.
+title: OnFilterScriptExit
+description: Esta callback é chamada quando um filterscript é descarregado.
 tags: []
 ---
 

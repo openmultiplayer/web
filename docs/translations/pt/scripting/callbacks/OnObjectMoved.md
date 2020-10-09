@@ -1,7 +1,7 @@
 ---
 id: OnObjectMoved
-título: OnObjectMoved
-descrição: Esta callback é chamada quando um objeto é movido após o MoveObject (quando para de se mover).
+title: OnObjectMoved
+description: Esta callback é chamada quando um objeto é movido após o MoveObject (quando para de se mover).
 tags: []
 ---
 
@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## Notas
 
-:::dica
+:::tip
 
 SetObjectPos não funciona quando usado nesta callback. Para consertar isso, recrie o objeto.
 
