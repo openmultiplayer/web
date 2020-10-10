@@ -11,7 +11,7 @@ Callback ini akan terpanggil ketika player terhubung kedalam server.
 
 | Nama     | Deskripsi                  |
 | -------- | -------------------------- |
-| playerid | ID player yang terkoneksi. |
+| playerid | ID dari player yang terkoneksi. |
 
 ## Returns
 
