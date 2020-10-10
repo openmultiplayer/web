@@ -1,17 +1,17 @@
 ---
 id: OnPlayerCommandText
 title: OnPlayerCommandText
-description: Callback ini akan terpanggil ketika player memasukkan perintah kedalam chat window klien.
+description: Callback ini akan terpanggil ketika pemain memasukkan perintah kedalam chat window klien.
 tags: ["player"]
 ---
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player memasukkan perintah kedalam chat window klien. Perintah adalah apapun yang dimulai dengan garis miring, misalnya /help.
+Callback ini akan terpanggil ketika pemain memasukkan perintah kedalam chat window klien. Perintah adalah apapun yang dimulai dengan garis miring, misalnya /help.
 
 | Nama      | Deskripsi                                                |
 | --------- | -------------------------------------------------------- |
-| playerid  | ID dari player yang memasukkan perintah.                 |
+| playerid  | ID dari pemain yang memasukkan perintah.                 |
 | cmdtext[] | Perintah yang dimasukkan (termasuk dengan garis miring). |
 
 ## Returns
