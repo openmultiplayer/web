@@ -1,18 +1,18 @@
 ---
 id: OnPlayerText
 title: OnPlayerText
-description: Callback ini akan terpanggil ketika player mengirimkan pesan chat.
+description: Callback ini akan terpanggil ketika pemain mengirimkan pesan chat.
 tags: ["player"]
 ---
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player mengirimkan pesan chat.
+Callback ini akan terpanggil ketika pemain mengirimkan pesan chat.
 
 | Nama     | Deskripsi                              |
 | -------- | -------------------------------------- |
-| playerid | ID dari player yang mengetik teks nya. |
-| text[]   | Teks yang player ketikkan.             |
+| playerid | ID dari pemain yang mengetik teks nya. |
+| text[]   | Teks yang pemain ketikkan.             |
 
 ## Returns
 
@@ -40,5 +40,5 @@ Callback ini akan terpanggil juga oleh NPC.
 
 ## Fungsi Terkait
 
-- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer.md): Memaksa player mengirimkan text untuk satu player saja.
-- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll.md): Memaksa player mengirimkan pesan untuk semua player.
+- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer.md): Memaksa pemain mengirimkan text untuk satu pemain saja.
+- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll.md): Memaksa pemain mengirimkan pesan untuk semua pemain.
