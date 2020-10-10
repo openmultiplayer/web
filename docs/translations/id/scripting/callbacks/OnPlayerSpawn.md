@@ -23,7 +23,6 @@ Selalu terpanggil pertama di filterscripts.
 
 ## Contoh
 
-
 ```c
 public OnPlayerSpawn(playerid)
 {
@@ -45,7 +44,6 @@ Terkadang game akan mengurangi \$100 dari player setelah spawn.
 :::
 
 ## Fungsi Terkait
-
 
 - [SpawnPlayer](../functions/SpawnPlayer.md): Memaksa player untuk spawn.
 - [AddPlayerClass](../functions/AddPlayerClass.md): Menambahkan kelas.
