@@ -11,9 +11,9 @@ Callback ini akan terpanggil ketika player mati, entah itu dengan bunuh diri ata
 
 | Nama     | Deskripsi                                                                        |
 | -------- | -------------------------------------------------------------------------------- |
-| playerid | ID Player yang mati.                                                             |
-| killerid | ID Player yang membunuh player yang mati, atau INVALID_PLAYER_ID jika tidak ada. |
-| reason   | ID alasan untuk kematian player.                                                 |
+| playerid | ID dari Player yang mati.                                                             |
+| killerid | ID dari Player yang membunuh player yang mati, atau INVALID_PLAYER_ID jika tidak ada. |
+| reason   | ID dari alasan untuk kematian player.                                                 |
 
 ## Returns
 
