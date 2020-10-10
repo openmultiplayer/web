@@ -15,10 +15,10 @@ Acest NPC callback a fost adaugat in SA-MP 0.3a si nu o sa functioneze pe versiu
 
 Acest callback este apelat oricand NPC-ul vede un ClientMessage. Acesta va fi de fiecare data cand se utilizeaza functia SendClientMessageToAll si de fiecare data functia SendClientMessage este trimisa spre NPC. Acest callback nu o sa fie folosit cand cineva spune ceva. Pentru o versiune ca asta cu player text, vedem NPC:OnPlayerText.
 
-| Name   | Description                     |
-| ------ | ------------------------------- |
+| Name   | Description                  |
+| ------ | ---------------------------- |
 | color  | Culoarea ClientMessage este. |
-| text[] | Mesajul actual             |
+| text[] | Mesajul actual               |
 
 ## Returns
 
