@@ -50,10 +50,12 @@ setproperty(.value = 123984334, .string = ":)");
 
 :::tip
 
-It is recommended to use the PVars/ SVars or GVar plugin instead of these natives for being very slow.
+It is recommended to use the PVars/SVars or GVar plugin instead of these natives for being very slow.
+
+:::
 
 ## Related Functions
 
-- [Getproperty](Getproperty.md): Get the value of a property.
-- [Deleteproperty](Deleteproperty.md): Delete a property.
-- [Existproperty](Existproperty.md): Check if a property exists.
+- [getproperty](getproperty): Get the value of a property.
+- [deleteproperty](deleteproperty): Delete a property.
+- [existproperty](existproperty): Check if a property exists.
