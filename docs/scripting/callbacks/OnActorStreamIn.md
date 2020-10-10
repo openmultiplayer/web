@@ -5,9 +5,9 @@ description: This callback is called when an actor is streamed in by a player's 
 tags: []
 ---
 
-import Warning from '../../meta/templates/\_version-warning-0.3.7.md'
+import T from '../../../src/components/templates.js'
 
-<Warning/>
+<T.VersionWarn verNum='0.3.7' />
 
 ## Description
 

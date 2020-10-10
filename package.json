@@ -14,9 +14,11 @@
     "@docusaurus/preset-classic": "^2.0.0-alpha.54",
     "classnames": "^2.2.6",
     "directory-tree": "^2.2.4",
+    "html-react-parser": "^0.14.0",
     "iso-639-1": "^2.1.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "remark-html": "^13.0.1"
   },
   "browserslist": {
     "production": [
