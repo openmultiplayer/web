@@ -1,17 +1,17 @@
 ---
 id: OnPlayerConnect
 title: OnPlayerConnect
-description: Callback ini akan terpangil ketika player terhubung kedalam server.
+description: Callback ini akan terpangil ketika pemain terhubung kedalam server.
 tags: ["player"]
 ---
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player terhubung kedalam server.
+Callback ini akan terpanggil ketika pemain terhubung kedalam server.
 
 | Nama     | Deskripsi                       |
 | -------- | ------------------------------- |
-| playerid | ID dari player yang terkoneksi. |
+| playerid | ID dari pemain yang terkoneksi. |
 
 ## Returns
 
