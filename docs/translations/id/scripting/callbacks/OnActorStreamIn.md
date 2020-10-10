@@ -43,3 +43,5 @@ public OnActorStreamIn(actorid, forplayerid)
 Callback ini akan terpanggil juga oleh NPC.
 
 :::
+
+## Fungsi Terkait
