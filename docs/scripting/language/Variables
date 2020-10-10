@@ -1,6 +1,6 @@
 ---
 id: variables
-title: "Variables"
+title: "Basics: Variables"
 ---
 
 # Variables
@@ -14,12 +14,12 @@ title: "Variables"
 Following is the syntax for variable declaration :
 
 ```c
-// Creating (more appropriately, 'declaring') a variable named 'my_variable'
+// Creating (more appropriately, 'declaring') a variable named 'myVariable
 
-new my_variable ;
+new myVariable;
 
 // The 'new' keyword is used for declaring a variable
-// In the above line a variable is declared with the name 'my_variable'
+// In the above line a variable is declared with the name 'myVariable'
 // Semi-colon is used in the end to close the declaration statement.
 ```
 
@@ -30,7 +30,7 @@ new var;
 new ammo;
 new score;
 new vehicles;
-new top_score;
+new topScore;
 ```
 
 Each of the above defined variable has a value by default, which is zero. There are different ways of assigning values to a variable. One method is directly assigning a value to the variable as it’s declared :
@@ -54,22 +54,22 @@ Modifying a variable's value is possible only if the part of the code where you�
 ```c
 #include <a_samp>
 
-new example_var = 5;
+new g_var = 5;
 
 public OnFilterScriptInit ()
 {
-    example_var = 10;
+    g_var = 10;
 
-    printf ("The value is %i", example_var);
+    printf ("The value is %i", g_var);
 
     return 1;
 }
 
 public OnPlayerConnect (playerid)
 {
-    example_var = 100;
+    g_var = 100;
     
-    printf ("The value is %i", example_var);
+    printf ("The value is %i", g_var);
 
     return 1;
 }
@@ -88,16 +88,16 @@ Other than ‘Global’ (scoped) variables, there are ‘local’ or ‘private�
 
 public OnFilterScriptInit ()
 {
-    new local_var;
+    new localVar;
 
-    local_var = 5;
+    localVar = 5;
 
     return 1;
 }
 
 public OnPlayerConnect (playerid)
 {
-    local_var = 10; // This line will show an error upon compilation
+    localVar = 10; // This line will show an error upon compilation
     
     return 1;
 }
@@ -111,11 +111,11 @@ One important thing to note is that you cannot declare variables with the same n
 ```c
 #include <a_samp>
 
-new score; 
+new g_score; 
 
 public OnFilterScriptInit ()
 {
-    new score = 5; // This line will show an error.
+    new g_score = 5; // This line will show an error.
     return 1;
 }
 ```
@@ -157,12 +157,12 @@ new letter = 'M';
 new value = 100;
 
 
-new decimal_value = 1.0; 
+new decimalValue = 1.0; 
 // Works, but will show a compiler warning
 // warning 213: tag mismatch
 
 
-new engine_on = true; 
+new engineOn = true; 
 // Works, and will not show a compiler warning but using a Tag is suggested
 
 
@@ -174,13 +174,13 @@ new sentence = "This is a sentence";
 A variable is capable of holding a character, integer value, boolean (true or false) and a float value (decimal value). The comments in the above code show that storing a string in a variable results into an error (as strings can be stored in *Arrays* only). Other than that, assigning a float value to a variable will result in a compiler warning, which can be avoided by adding ‘tags’. Without proper tags, the script will show warnings upon compilation but will be executable. Tags tell the compiler about the type of data that is intended to be stored in the variable, which in turn informs us in the form of errors or warning if we make a program-breaking mistake in the code. Example of tags :
 
 ```c
-new decimal_value = 1.0; // Incorrect
-new bool: decimal_value = 1.0 // Incorrect
-new Float: decimal_value = 1.0; // Correct
+new decimalValue = 1.0; // Incorrect
+new bool: decimalValue = 1.0 // Incorrect
+new Float: decimalValue = 1.0; // Correct
 
-new switch_on = 1.0; // Incorrect
-new switch_on = true; // Incorrect, doesn't show a warning
-new bool: switch_on = true; // Correct
+new switchOn = 1.0; // Incorrect
+new switchOn = true; // Incorrect, doesn't show a warning
+new bool: switchOn = true; // Correct
 ```
 
 Using correct tags is important to avoid any bugs or errors during program execution. 
