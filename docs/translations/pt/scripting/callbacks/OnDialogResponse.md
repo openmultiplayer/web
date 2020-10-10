@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-Esta callback foi adicionada no SA-MP 0.3a e não funcionará em versões anteriores!
+Esta callback foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
 
 :::
 
