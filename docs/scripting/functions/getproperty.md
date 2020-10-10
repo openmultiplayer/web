@@ -42,10 +42,12 @@ print(value);
 
 :::tip
 
-It is recommended to use the PVars/ SVars or GVar plugin instead of these natives for being very slow.
+It is recommended to use the PVars/SVars or GVar plugin instead of these natives for being very slow.
+
+:::
 
 ## Related Functions
 
-- [Setproperty](Setproperty.md): Set a property.
-- [Deleteproperty](Deleteproperty.md): Delete a property.
-- [Existproperty](Existproperty.md): Check if a property exists.
+- [setproperty](setproperty): Set a property.
+- [deleteproperty](deleteproperty): Delete a property.
+- [existproperty](existproperty): Check if a property exists.
