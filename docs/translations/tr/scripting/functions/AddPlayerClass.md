@@ -1,56 +1,56 @@
 ---
 id: AddPlayerClass
 title: AddPlayerClass
-description: Sınıf seçimine bir sınıf ekler.
+description: Class seçimi sırasında yeni bir class oluşturur.
 tags: ["player"]
 ---
 
-## Description
+## Açıklama
 
-Sınıf seçimine bir sınıf ekler. Sınıflar, oyuncuların istedikleri bir ciltle sıçrayabilmesi için kullanılır.
+Class seçimine yeni bir class ekler. Kullanıcılar seçtikleri classın skinleriyle spawn olabilirler.
 
-| İsim          | Açıklama                                       |
-| ------------- | ---------------------------------------------- |
-| modelid       | Oyuncunun kapladığı deri.                      |
-| Float:spawn_x | Bu sınıfın ayna noktasının X koordinatı.       |
-| Float:spawn_y | Bu sınıfın ayna noktasının Y koordinatı.       |
-| Float:spawn_z | Bu sınıfın ayna noktasının Z koordinatı.       |
-| Float:z_angle | Çaldıktan sonra oyuncunun bakması gereken yön. |
-| weapon1       | Oyuncunun ilk silahı.                          |
-| weapon1_ammo  | İlk mühimmat.                                  |
-| weapon2       | Oyuncunun ikinci silahı.                       |
-| weapon2_ammo  | İkinci silah mühimmat miktarı.                 |
-| weapon3       | Oyuncunun üçüncü silahı.                       |
-| weapon3_ammo  | Üçüncü silah mühimmat miktarı.                 |
+| İsim          | Açıklama                                                      |
+| ------------- | ------------------------------------------------------------- |
+| modelid       | Oyuncunun doğacağı skin numarası.                             |
+| Float:spawn_x | Class oyuncularının doğacağı X koordinat bilgisi.             |
+| Float:spawn_y | Class oyuncularının doğacağı Y koordinat bilgisi.             |
+| Float:spawn_z | Class oyuncularının doğacağı Z koordinat bilgisi.             |
+| Float:z_angle | Class oyuncularının doğduğu zaman yüzünün döneceği koordinat. |
+| weapon1       | Class oyuncularının birincil silah numarası.                  |
+| weapon1_ammo  | Class oyuncularının birincil silahlarının mermi sayısı.       |
+| weapon2       | Class oyuncularının ikincil silah numarası.                   |
+| weapon2_ammo  | Class oyuncularının ikincil silahlarının mermi sayısı.        |
+| weapon3       | Class oyuncularının üçüncül silah numarası.                   |
+| weapon3_ammo  | Class oyuncularının üçüncül silahlarının mermi sayısı.        |
 
-## Dönence
+## Geri Dönüşler
 
-Yeni eklenen sınıfın kimliği.
+Bu fonksiyon, geri dönüş olarak oluşturulan classın ID bilgisini verecektir.
 
-319 sınıf sınırına (320) ulaşıldıysa. Mümkün olan en yüksek sınıf kimliği 319'dir.
+En fazla 320 class olabileceği için, en fazla olarak 319 dönüşünü verecektir.
 
 ## Örnekler
 
 ```c
 public OnGameModeInit()
 {
-    // Oyuncular CJ görünümü (0) veya The Truth görünümü (1) ile doğabilirler.
+    // Oyuncular CJ skiniyle (0) ya da  The Truth skiniyle (1) doğacaklar.
     AddPlayerClass(0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0); // CJ
     AddPlayerClass(1, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0); // The Truth
     return 1;
 }
 ```
 
-## Notlar
+## Notes
 
 :::tip
 
-Maksimum sınıf kimliği 319'dir (0'dan başlayarak toplam 320 sınıf). Bu sınıra ulaşıldığında, eklenen daha fazla sınıf ID 319'nin yerini alır.
+Maksimum class numarası 319 olabileceği için (class numaralı sıfırdan başlar, yani 320 adet class olabilir) sunucu içerisinde bulunan class sayısı maksimuma ulaştığı zaman en son eklenen class, bilgilerini 319 numaralı class'a aktaracaktır.
 
 :::
 
 ## İlgili Fonksiyonlar
 
-- [AddPlayerClassEx](AddPlayerClassEx.md): Varsayılan bir ekiple bir sınıf ekleyin.
-- [SetSpawnInfo](SetSpawnInfo.md): Bir oyuncunun sıçrama ayarını yapın.
-- [SetPlayerSkin](SetPlayerSkin.md): Bir oyuncunun cildini ayarlayın.
+- [AddPlayerClassEx](AddPlayerClassEx.md): Classı bir takıma varsayılan bağlı olarak ekler.
+- [SetSpawnInfo](SetSpawnInfo.md): Oyuncunun doğacağı bölgeyi belirler.
+- [SetPlayerSkin](SetPlayerSkin.md): Oyuncunun skinini düzenler.

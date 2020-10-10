@@ -1,7 +1,7 @@
 ---
 id: OnFilterScriptInit
-título: OnFilterScriptInit
-descrição: Esta callback é chamada quando um filterscript é inicializado.
+title: OnFilterScriptInit
+description: Esta callback é chamada quando um filterscript é inicializado.
 tags: []
 ---
 

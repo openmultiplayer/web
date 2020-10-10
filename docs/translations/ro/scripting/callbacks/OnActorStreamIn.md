@@ -3,9 +3,11 @@ title: OnActorStreamIn
 description: Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
 ---
 
-import Warning from '../../meta/templates/\_version-warning-0.3.7.md'
+:::warning
 
-<Warning/>
+This function was added in SA-MP 0.3.7 and will not work in earlier versions!
+
+:::
 
 ## Descriere
 

@@ -1,7 +1,7 @@
 ---
 id: controllingaserver
-título: "Controlando um Servidor"
-descrição: Comandos úteis para gerenciar um servidor.
+title: "Controlando um Servidor"
+description: Comandos úteis para gerenciar um servidor.
 ---
 
 ## Mudando a Gamemode

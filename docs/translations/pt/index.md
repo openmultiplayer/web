@@ -1,6 +1,6 @@
 ---
 id: index
-título: Bem-vindo
+title: Bem-vindo
 sidebar_label: Bem-vindo
 ---
 

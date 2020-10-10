@@ -5,7 +5,7 @@ description: Esta callback é chamada quando o jogador entra ou sai de um modsho
 tags: []
 ---
 
-:::aviso
+:::warning
 
 Esta callback foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
 
@@ -41,7 +41,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 ## Notas
 
-:::aviso
+:::warning
 
 Bugs Conhecidos: Jogadores colidem quando entram no mesmo modshop.
 

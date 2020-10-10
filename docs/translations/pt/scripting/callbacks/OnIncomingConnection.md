@@ -1,11 +1,11 @@
 ---
 id: OnIncomingConnection
-título: OnIncomingConnection
-descrição: Esta callback é chamada quando um endereço de IP tenta conectar no servidor.
+title: OnIncomingConnection
+description: Esta callback é chamada quando um endereço de IP tenta conectar no servidor.
 tags: []
 ---
 
-:::aviso
+:::warning
 
 Esta callback foi implementada no 0.3z R2-2 e não funcionará em versões anteriores!
 
