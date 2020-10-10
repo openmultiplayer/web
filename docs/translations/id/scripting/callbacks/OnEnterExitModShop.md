@@ -1,7 +1,7 @@
 ---
 id: OnEnterExitModShop
 title: OnEnterExitModShop
-description: Callback ini akan terpanggil ketika player memasuki atau keluar dari mod shop.
+description: Callback ini akan terpanggil ketika pemain memasuki atau keluar dari mod shop.
 tags: []
 ---
 
@@ -13,13 +13,13 @@ Callback ini telah ditambahkan dalam SA-MP 0.3a dan tidak akan bekerja pada vers
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player memasuki atau keluar dari mod shop.
+Callback ini akan terpanggil ketika pemain memasuki atau keluar dari mod shop.
 
 | Nama       | Deskripsi                                                        |
 | ---------- | ---------------------------------------------------------------- |
-| playerid   | ID dari player yang masuk atau keluar dari modshop               |
-| enterexit  | 1 jika player masuk 0 jika player keluar                         |
-| interiorid | ID Interior dari modshop yang player masuki (atau 0 jika keluar) |
+| playerid   | ID dari pemain yang masuk atau keluar dari modshop               |
+| enterexit  | 1 jika pemain masuk 0 jika player keluar                         |
+| interiorid | ID Interior dari modshop yang pemain masuki (atau 0 jika keluar) |
 
 ## Returns
 
@@ -43,7 +43,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Bug yang dikenal: Player akan menyatu ketika berada di dalam mod shop yang sama.
+Bug yang dikenal: Pemain akan menyatu ketika berada di dalam mod shop yang sama.
 
 :::
 
