@@ -1,5 +1,4 @@
 ---
-id: variables
 title: "Basics: Variables"
 ---
 
