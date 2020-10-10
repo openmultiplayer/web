@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-Callback NPC ini telah ditambahkan dalam SA-MP 0.3a dan tidak akan bekerja pada versi sebelumnya!
+Callback ini telah ditambahkan dalam SA-MP 0.3a dan tidak akan bekerja pada versi sebelumnya!
 
 :::
 
