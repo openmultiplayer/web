@@ -55,7 +55,6 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 Aktualnie nie ma żadnych restrykcji co do wywoływania tej funkcji, ale miej na uwadze, że jeżeli nie wywołasz jej w OnFilterScriptInit/OnGameModeInit, to gracze, którzy są już na serwerze, mogą nie mieć pobranych obiektów.
 
-
 :::
 
 ## Powiązane funkcje
