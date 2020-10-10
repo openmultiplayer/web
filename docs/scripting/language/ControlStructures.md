@@ -1,11 +1,11 @@
 ---
-id: ControlStructures
 title: "Control Structures"
+description: An overview of control structures in the Pawn language
 ---
 
-# `Conditionals`
+## Conditionals
 
-## `if`
+### if
 
 An if statement checks if something is true and does something if it is.
 
@@ -69,7 +69,7 @@ if (0 < idx < 5)
 }
 ```
 
-## `Operators`
+### Operators
 
 The following are symbols you can use in comparisons and their explanations. Some have been used in examples already.
 
@@ -89,7 +89,7 @@ The following are symbols you can use in comparisons and their explanations. Som
 |              | exclusive or (xor, eor) - only one or the other is true, not both | if (!(Left && Right) && (Left &#124;&#124;Right))            |
 |              | not exclusive or (nxor, neor) - both or neither are true          | if ((Left && Right) &#124;&#124; !(Left &#124;&#124; Right)) |
 
-## `Brackets`
+### Brackets
 
 The other main aspect of if statements is brackets, these control the order things are done in:
 
@@ -142,7 +142,7 @@ This little example shows how using brackets can change the outcome of a check, 
 
 - (b != 3) in the OR example doesn't actually fail as it's never called, the compiler orders the code using a thing called short-circuiting, as the first part is already true there's no point checking the second part as it won't affect the final outcome, but if it did check it it would fail.
 
-## `else`
+### else
 
 else basically does something if an if check fails:
 
@@ -159,7 +159,7 @@ else
 }
 ```
 
-## `else if`
+### else if
 
 An else if is a check which occurs if the first if check fails to check something else:
 
@@ -225,7 +225,7 @@ else if (a == 4)
 
 To get round this you would simply make the else if an if.
 
-## `?:`
+### ?:
 
 '?' and ':' together are called a triadic operator, they basically act as an if statement inside another statement:
 
@@ -317,9 +317,9 @@ else
 
 But they're equivalent (in this example anyway).
 
-# `Loops`
+## Loops
 
-## `While`
+### While
 
 "while" loops do something while the condition specified is true. A condition is exactly the same format as the condition in an if statement, it is just checked repeatedly and the code done if it is true every time it is checked:
 
@@ -336,7 +336,7 @@ while (a < 10)
 
 That code will check if 'a' is less than 10. If it is, the code inside the braces (a++;) will be executed, thus incrementing 'a'. When the closing brace is reached, code execution jumps back to the check and does it again, this time the check will fail as 'a' is 10 and execution will jump to after the loop. If 'a' started out as 8, the code would be run twice etc.
 
-## `for()`
+### for()
 
 A "for" loop is essentially a compressed "while" loop. A "for" statement has three sections; initialization, condition and finalization. As a "for" loop, the "while" example above would be written:
 
@@ -375,7 +375,7 @@ for ( ; a < 10; )
 
 This example makes it a little easier to show how a "for" loop matches up to a "while" loop. There are two very slight differences between the two "for" loops given. The first is that the second example declares 'a' outside the "for" loop, this means it can be used outside the "for" loop, in the first example 'a's scope (the section of code for which a variable exists) is only inside the loop. The second difference is that the a++ in the second example is actually done slightly before the a++ in the first example, 99% of the time this doesn't make any difference, the only time it matters is when you're using 'continue' (see below), 'continue' will call the a++ in the first example, but will skip it in the second example.
 
-## `do-while`
+### do-while
 
 A do-while loop is a while loop where the condition comes after the code inside the loop instead of before. This means that the code inside will always be executed at least once because it is done before the check is done:
 
@@ -393,7 +393,7 @@ while (a < 10); // Note the semi-colon
 
 If that was a standard while loop a would not be incremented as the (a < 10) check is false, but here it's incremented before the check. If a started as 9 the loop would also only be done once, 8 - twice etc.
 
-## `if-goto`
+### if-goto
 
 This is essentially what the loops above compile to, the use of goto is generally discouraged however it's interesting to see exactly what a loop is doing:
 
@@ -411,7 +411,7 @@ if (a < 10)
 // Code after the loop
 ```
 
-## `OBOE`
+### OBOE
 
 OBOE stands for Off By One Error. This is a very common mistake where a loop runs for one too many or two few times. E.g:
 
@@ -429,9 +429,9 @@ This very simple example demonstrates one of the most common OBOEs, at first gla
 
 You have to be especially careful of OBOEs when using do-while loops as they ALWAYS run at least once.
 
-# `Switch`
+## Switch
 
-## `switch`
+### switch
 
 A switch statement is basically a structured if/else if/else system (similar to how for is a structured while). The easiest way to explain it is with an example:
 
@@ -515,7 +515,7 @@ else if (result == 3) {}
 
 For those of you who know C the PAWN switch is slightly different, the individual conditions are NOT fall-through and are bound by braces so there's no need for break statements.
 
-## `case`
+### case
 
 case statements (the "case X:" parts of the switch statement) can have other options besides a single number. You can compare a value to a list of numbers (replacing fall-through in C) or even a range of values:
 
@@ -561,13 +561,13 @@ switch (a)
 }
 ```
 
-## `default`
+### default
 
 This is the equivalent to else in if statements, it does something if all the other case statements failed.
 
-# `Single line statements`
+## Single line statements
 
-## `goto`
+### goto
 
 goto is essentially a jump, it goes to a label without question (i.e. there's no condition to need to be true). You can see an example above in the if-goto loop.
 
@@ -583,7 +583,7 @@ my_label: // Labels end in a colon and are on their own line
 
 The use of gotos is widely discouraged due to their effect on program flow.
 
-## `break`
+### break
 
 break breaks out of a loop, ending it prematurely:
 
@@ -596,7 +596,7 @@ for (new a = 0; a < 10; a++)
 
 This loop will go 6 times but code after the break will only be executed 5 times.
 
-## `continue`
+### continue
 
 continue basically skips a loop iteration
 
@@ -629,7 +629,7 @@ while (a < 3)
 
 This looks very similar to the other example however this time the continue will skip the a++; line, so the loop will get stuck in an infinite loop as a will always be 1.
 
-## `return`
+### return
 
 return stops a function and goes back to the point in code which called the function in the first place:
 
