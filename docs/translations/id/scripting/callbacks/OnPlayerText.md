@@ -10,9 +10,9 @@ tags: ["player"]
 Callback ini akan terpanggil ketika player mengirimkan pesan chat.
 
 | Nama     | Deskripsi                              |
-| -------- | ---------------------------------------- |
+| -------- | -------------------------------------- |
 | playerid | ID dari player yang mengetik teks nya. |
-| text[]   | Teks yang player ketikkan.               |
+| text[]   | Teks yang player ketikkan.             |
 
 ## Returns
 

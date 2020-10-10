@@ -15,11 +15,11 @@ Callback ini telah ditambahkan dalam SA-MP 0.3d dan tidak akan bekerja pada vers
 
 OnPlayerClickMap akan terpanggil ketika player menaruh target/waypoint saat jeda map menu (dengan cara klik kanan).
 
-| Nama     | Deskripsi                                                                   |
-| -------- | ----------------------------------------------------------------------------- |
-| playerid | ID dari player yang menaruh target/waypoint                            |
-| Float:fX | Koordinasi float X dimana player mengklik                               |
-| Float:fY | Koordinasi float Y dimana player mengklik                               |
+| Nama     | Deskripsi                                                                        |
+| -------- | -------------------------------------------------------------------------------- |
+| playerid | ID dari player yang menaruh target/waypoint                                      |
+| Float:fX | Koordinasi float X dimana player mengklik                                        |
+| Float:fY | Koordinasi float Y dimana player mengklik                                        |
 | Float:fZ | Koordinasi float Z dimana player mengklik (tidak akurat - lihat catatan dibawah) |
 
 ## Returns

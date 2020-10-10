@@ -9,8 +9,8 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika player spawn. (misalnya saat sudah memanggil fungsi SpawnPlayer)
 
-| Nama     | Deskripsi                        |
-| -------- | ---------------------------------- |
+| Nama     | Deskripsi                     |
+| -------- | ----------------------------- |
 | playerid | ID dari player yang di spawn. |
 
 ## Returns

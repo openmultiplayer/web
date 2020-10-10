@@ -9,8 +9,8 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika player terhubung kedalam server.
 
-| Nama     | Deskripsi                  |
-| -------- | -------------------------- |
+| Nama     | Deskripsi                       |
+| -------- | ------------------------------- |
 | playerid | ID dari player yang terkoneksi. |
 
 ## Returns

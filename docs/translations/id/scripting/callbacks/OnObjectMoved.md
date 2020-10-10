@@ -9,8 +9,8 @@ tags: []
 
 Callback ini akan terpanggil ketika sebuah object berpindah setelah MoveObject (ketika selesai bergerak).
 
-| Nama     | Deskripsi                         |
-| -------- | ----------------------------------- |
+| Nama     | Deskripsi                              |
+| -------- | -------------------------------------- |
 | objectid | ID dari sebuah object yang dipindahkan |
 
 ## Returns

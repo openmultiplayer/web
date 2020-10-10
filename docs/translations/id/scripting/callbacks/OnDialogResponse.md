@@ -15,13 +15,13 @@ Callback ini telah ditambahkan dalam SA-MP 0.3a dan tidak akan bekerja pada vers
 
 Callback ini akan terpanggil ketika player merespon kepada dialog yang muncul menggunakan ShowPlayerDialog entah itu dengan cara mengklik tombol, menekan ENTER/ESC atau mengklik dua kali list item (jika menggunakan list style dialog).
 
-| Nama        | Deskripsi                                                                                                             |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| playerid    | ID dari player yang merespon dialog.                                                                      |
-| dialogid    | ID dari dialog yang player respond sebagaimana ditetapkan di ShowPlayerDialog.                                             |
-| response    | 1 Untuk tombol kiri dan 0 untuk tombol kanan (Jika hanya satu tombol yang ada, maka hanya 1)                                           |
+| Nama        | Deskripsi                                                                                                                             |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | ID dari player yang merespon dialog.                                                                                                  |
+| dialogid    | ID dari dialog yang player respond sebagaimana ditetapkan di ShowPlayerDialog.                                                        |
+| response    | 1 Untuk tombol kiri dan 0 untuk tombol kanan (Jika hanya satu tombol yang ada, maka hanya 1)                                          |
 | listitem    | ID dari list item yang dipilih oleh player (dimulai dari 0) (hanya ketika menggunakan list style dialog, sebaliknya akan menjadi -1). |
-| inputtext[] | Sebuah text yang dimasukkan kedalam input box dari player atau text dari list item yang terpilih.                                       |
+| inputtext[] | Sebuah text yang dimasukkan kedalam input box dari player atau text dari list item yang terpilih.                                     |
 
 ## Returns
 

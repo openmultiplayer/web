@@ -9,9 +9,9 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika player terputus dari server.
 
-| Nama     | Deskripsi                                      |
-| -------- | ---------------------------------------------- |
-| playerid | ID dari player yang terputus.                       |
+| Nama     | Deskripsi                                              |
+| -------- | ------------------------------------------------------ |
+| playerid | ID dari player yang terputus.                          |
 | reason   | ID dari alasan pemutusan koneksi. Lihat tabel dibawah. |
 
 ## Returns

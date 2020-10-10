@@ -15,11 +15,11 @@ Callback ini telah ditambahkan dalam SA-MP 0.3z dan tidak akan bekerja pada vers
 
 Callback ini akan terpanggil ketika sebuah IP address mencoba untuk koneksi kedalam server. Untuk memblokir koneksi yang ingin masuk, gunakan BlockIpAddress.
 
-| Nama         | Deskripsi                                        |
-| ------------ | -------------------------------------------------- |
+| Nama         | Deskripsi                                         |
+| ------------ | ------------------------------------------------- |
 | playerid     | ID dari player yang mencoba untuk koneksi         |
 | ip_address[] | IP address dari player yang mencoba untuk koneksi |
-| port         | Port dari pembuat koneksi               |
+| port         | Port dari pembuat koneksi                         |
 
 ## Returns
 

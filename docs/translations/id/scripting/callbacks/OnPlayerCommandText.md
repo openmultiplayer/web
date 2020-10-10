@@ -9,9 +9,9 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika player memasukkan perintah kedalam chat window klien. Perintah adalah apapun yang dimulai dengan garis miring, misalnya /help.
 
-| Nama      | Deskripsi                                                 |
-| --------- | ----------------------------------------------------------- |
-| playerid  | ID dari player yang memasukkan perintah.                |
+| Nama      | Deskripsi                                                |
+| --------- | -------------------------------------------------------- |
+| playerid  | ID dari player yang memasukkan perintah.                 |
 | cmdtext[] | Perintah yang dimasukkan (termasuk dengan garis miring). |
 
 ## Returns
