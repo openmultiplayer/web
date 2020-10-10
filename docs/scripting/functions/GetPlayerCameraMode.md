@@ -13,7 +13,7 @@ This function was added in SA-MP 0.3c R3 and will not work in earlier versions!
 
 ## Description
 
-Returns the current GTA camera mode for the requested player. The camera modes are useful in determining whether a player is aiming, doing a passenger driveby etc.
+Returns the current GTA [camera mode](../resources/cameramodes) for the requested player. The camera modes are useful in determining whether a player is aiming, doing a passenger driveby etc.
 
 | Name     | Description                                        |
 | -------- | -------------------------------------------------- |
