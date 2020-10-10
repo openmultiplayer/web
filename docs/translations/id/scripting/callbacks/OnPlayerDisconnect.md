@@ -1,17 +1,17 @@
 ---
 id: OnPlayerDisconnect
 title: OnPlayerDisconnect
-description: Callback ini akan terpanggil ketika player keluar dari server.
+description: Callback ini akan terpanggil ketika pemain keluar dari server.
 tags: ["player"]
 ---
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player terputus dari server.
+Callback ini akan terpanggil ketika pemain terputus dari server.
 
 | Nama     | Deskripsi                                              |
 | -------- | ------------------------------------------------------ |
-| playerid | ID dari player yang terputus.                          |
+| playerid | ID dari pemain yang terputus.                          |
 | reason   | ID dari alasan pemutusan koneksi. Lihat tabel dibawah. |
 
 ## Returns
@@ -51,8 +51,8 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::tip
 
-Beberapa fungsi mungkin tidak dapat bekerja dengan benar ketika digunakan di dalam callback ini karena player sudah terputus ketika callback ini terpanggil. Ini artinya anda tidak bisa mendapatkan informasi yang tidak ambigu dari fungsi seperti GetPlayerIp dan GetPlayerPos.
+Beberapa fungsi mungkin tidak dapat bekerja dengan benar ketika digunakan di dalam callback ini karena pemain sudah terputus ketika callback ini terpanggil. Ini artinya anda tidak bisa mendapatkan informasi yang tidak ambigu dari fungsi seperti GetPlayerIp dan GetPlayerPos.
 
 :::
 
-## Related Functions
+## Fungsi Terkait
