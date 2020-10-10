@@ -11,7 +11,7 @@ Callback ini akan terpanggil ketika player terhubung kedalam server.
 
 | Nama     | Deskripsi                  |
 | -------- | -------------------------- |
-| playerid | ID player yang terkoneksi. |
+| playerid | ID dari player yang terkoneksi. |
 
 ## Returns
 
@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Callback ini juga akan terpanggil oleh NPC.
+Callback ini akan terpanggil juga oleh NPC.
 
 :::
 
