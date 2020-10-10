@@ -1,17 +1,17 @@
 ---
 id: OnPlayerSpawn
 title: OnPlayerSpawn
-description: Callback ini akan terpanggil ketika player spawn.
+description: Callback ini akan terpanggil ketika pemain spawn.
 tags: ["player"]
 ---
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player spawn. (misalnya saat sudah memanggil fungsi SpawnPlayer)
+Callback ini akan terpanggil ketika pemain spawn. (misalnya saat sudah memanggil fungsi SpawnPlayer)
 
 | Nama     | Deskripsi                     |
 | -------- | ----------------------------- |
-| playerid | ID dari player yang di spawn. |
+| playerid | ID dari pemain yang di spawn. |
 
 ## Returns
 
@@ -39,12 +39,12 @@ public OnPlayerSpawn(playerid)
 
 :::tip
 
-Terkadang game akan mengurangi \$100 dari player setelah spawn.
+Terkadang game akan mengurangi \$100 dari pemain setelah spawn.
 
 :::
 
 ## Fungsi Terkait
 
-- [SpawnPlayer](../functions/SpawnPlayer.md): Memaksa player untuk spawn.
+- [SpawnPlayer](../functions/SpawnPlayer.md): Memaksa pemain untuk spawn.
 - [AddPlayerClass](../functions/AddPlayerClass.md): Menambahkan kelas.
-- [SetSpawnInfo](../functions/SetSpawnInfo.md): Menambahkan pengaturan spawn untuk player.
+- [SetSpawnInfo](../functions/SetSpawnInfo.md): Menambahkan pengaturan spawn untuk pemain.
