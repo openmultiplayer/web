@@ -1,19 +1,19 @@
 ---
 id: OnPlayerDeath
 title: OnPlayerDeath
-description: Callback ini akan terpanggil ketika player mati, entah itu dengan bunuh diri atau terbunuh oleh player lain.
+description: Callback ini akan terpanggil ketika pemain mati, entah itu dengan bunuh diri atau terbunuh oleh pemain lain.
 tags: ["player"]
 ---
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player mati, entah itu dengan bunuh diri atau terbunuh oleh player lain.
+Callback ini akan terpanggil ketika pemain mati, entah itu dengan bunuh diri atau terbunuh oleh pemain lain.
 
 | Nama     | Deskripsi                                                                             |
 | -------- | ------------------------------------------------------------------------------------- |
-| playerid | ID dari Player yang mati.                                                             |
-| killerid | ID dari Player yang membunuh player yang mati, atau INVALID_PLAYER_ID jika tidak ada. |
-| reason   | ID dari alasan untuk kematian player.                                                 |
+| playerid | ID dari pemain yang mati.                                                             |
+| killerid | ID dari pemain yang membunuh pemain yang mati, atau INVALID_PLAYER_ID jika tidak ada. |
+| reason   | ID dari alasan untuk kematian pemain.                                                 |
 
 ## Returns
 
@@ -62,4 +62,4 @@ Anda HARUS cek apakah 'killerid' valid (bukan INVALID_PLAYER_ID) sebelum menggun
 ## Fungsi Terkait
 
 - [SendDeathMessage](../functions/SendDeathMessage.md): Menambahkan kematian didalam death list.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Mengatur darah player.
+- [SetPlayerHealth](../functions/SetPlayerHealth.md): Mengatur darah pemain.
