@@ -3,13 +3,13 @@ id: variables
 title: "Basics: Variables"
 ---
 
-# Variables
+## Variables
 
-  One of the most important concepts in programming is the concept of ‘variables’. In programming, a variable is an entity that is changeable, but in terms of what ? In Pawn language a variable holds a ‘value’ at any time and that value-as the name suggests-is ‘variable’ or ‘changeable’.
+One of the most important concepts in programming is the concept of ‘variables’. In programming, a variable is an entity that is changeable, but in terms of what ? In Pawn language a variable holds a ‘value’ at any time and that value-as the name suggests-is ‘variable’ or ‘changeable’.
 
-  The reason why variables are so important is because they are basically small units of computer memory which can hold or ‘remember’ different values while the program is under execution (running), and that property turns out to be very useful in programming. For example, you want to keep track of the scores of 100 players in a game, you can do it easily by programming the computer to store (remember) and update those values. Later if you want to find the mean score of those players or want to create a leaderboard, those values from the variables can be easily accessed and used for that purpose.
+The reason why variables are so important is because they are basically small units of computer memory which can hold or ‘remember’ different values while the program is under execution (running), and that property turns out to be very useful in programming. For example, you want to keep track of the scores of 100 players in a game, you can do it easily by programming the computer to store (remember) and update those values. Later if you want to find the mean score of those players or want to create a leaderboard, those values from the variables can be easily accessed and used for that purpose.
 
-## Declaring Variables
+### Declaring Variables
 
 Following is the syntax for variable declaration :
 
@@ -47,7 +47,7 @@ new letters;
 letters = 25;
 ```
 
-## Scopes
+### Scopes
 
 Modifying a variable's value is possible only if the part of the code where you’re referencing the variable is within the scope of that variable. Scope of a variable depends upon the code block or position where that variable was declared. For example a variable being declared outside any block of code, usually in the beginning of the script, has a ‘Global’ scope and can be accessed from anywhere within the script:
 
@@ -68,13 +68,13 @@ public OnFilterScriptInit ()
 public OnPlayerConnect (playerid)
 {
     g_var = 100;
-    
+
     printf ("The value is %i", g_var);
 
     return 1;
 }
 
-// Output : 
+// Output :
 // The value is 10
 // The value is 100
 
@@ -98,20 +98,19 @@ public OnFilterScriptInit ()
 public OnPlayerConnect (playerid)
 {
     localVar = 10; // This line will show an error upon compilation
-    
+
     return 1;
 }
 ```
 
-If you try to compile the code above, the compiler will show an error which is reasonable as a local variable is being references in a completely different block of code. 
-Note: If it is a nested code block then the variable can be accessed from there.
+If you try to compile the code above, the compiler will show an error which is reasonable as a local variable is being references in a completely different block of code. Note: If it is a nested code block then the variable can be accessed from there.
 
 One important thing to note is that you cannot declare variables with the same names if their scopes intercede. For example if you already have a variable named ‘score’ on a global scope, you cannot create another variable named ‘score’ on the global scope as well as a local one, and this is true for other way around as well (if you already have a local variable, avoid declaring a global variable with the same name).
 
 ```c
 #include <a_samp>
 
-new g_score; 
+new g_score;
 
 public OnFilterScriptInit ()
 {
@@ -120,16 +119,16 @@ public OnFilterScriptInit ()
 }
 ```
 
-## Naming Rules
+### Naming Rules
 
 Now that you know how to declare variables, you need to know the naming rules for declaring variable which are listed below :
 
-* All variable names must begin with a letter or an underscore ( _ )
-* After the first initial letter, variable names can contain letters and numbers but no spaces or special characters.
-* The variable names are case sensitive i.e Uppercase letters are distinct from the lowercase letters.
-* Using a reserved word (keyword) as a variable name will show an error.
+- All variable names must begin with a letter or an underscore (`_`)
+- After the first initial letter, variable names can contain letters and numbers but no spaces or special characters.
+- The variable names are case sensitive i.e Uppercase letters are distinct from the lowercase letters.
+- Using a reserved word (keyword) as a variable name will show an error.
 
-### Examples :
+#### Examples :
 
 ```c
 new new; // Incorrect : Using a reserved word
@@ -146,7 +145,7 @@ new !nternet; // Incorrect
 new Internet; // Correct
 ```
 
-## Storing different types of Data
+### Storing different types of Data
 
 After that, now lets look at some examples of what types of data can be stored in variable and how :
 
@@ -157,21 +156,21 @@ new letter = 'M';
 new value = 100;
 
 
-new decimalValue = 1.0; 
+new decimalValue = 1.0;
 // Works, but will show a compiler warning
 // warning 213: tag mismatch
 
 
-new engineOn = true; 
+new engineOn = true;
 // Works, and will not show a compiler warning but using a Tag is suggested
 
 
-new sentence = "This is a sentence"; 
+new sentence = "This is a sentence";
 // Will show an error.
 // error 006: must be assigned to an array
 ```
 
-A variable is capable of holding a character, integer value, boolean (true or false) and a float value (decimal value). The comments in the above code show that storing a string in a variable results into an error (as strings can be stored in *Arrays* only). Other than that, assigning a float value to a variable will result in a compiler warning, which can be avoided by adding ‘tags’. Without proper tags, the script will show warnings upon compilation but will be executable. Tags tell the compiler about the type of data that is intended to be stored in the variable, which in turn informs us in the form of errors or warning if we make a program-breaking mistake in the code. Example of tags :
+A variable is capable of holding a character, integer value, boolean (true or false) and a float value (decimal value). The comments in the above code show that storing a string in a variable results into an error (as strings can be stored in _Arrays_ only). Other than that, assigning a float value to a variable will result in a compiler warning, which can be avoided by adding ‘tags’. Without proper tags, the script will show warnings upon compilation but will be executable. Tags tell the compiler about the type of data that is intended to be stored in the variable, which in turn informs us in the form of errors or warning if we make a program-breaking mistake in the code. Example of tags :
 
 ```c
 new decimalValue = 1.0; // Incorrect
@@ -183,7 +182,7 @@ new switchOn = true; // Incorrect, doesn't show a warning
 new bool: switchOn = true; // Correct
 ```
 
-Using correct tags is important to avoid any bugs or errors during program execution. 
+Using correct tags is important to avoid any bugs or errors during program execution.
 
 Pawn being a typeless language allows us to store different types of data in the same variable which can be useful in some cases and troublesome in others, but such usage of variables is not recommended.
 
@@ -193,21 +192,21 @@ Pawn being a typeless language allows us to store different types of data in the
 public OnFilterScriptInit ()
 {
 
-	new var ;
-	
-	var = 'a';
-	printf ("%c", var);
-	
-	var = 1;
-	printf ("%d", var);
-	
-	var = 1.0;
-	printf ("%f", var);
-	
-	var = true;
-	printf ("%d", var); // prints a value 0 or 1
+    new var ;
 
-	return 1;
+    var = 'a';
+    printf ("%c", var);
+
+    var = 1;
+    printf ("%d", var);
+
+    var = 1.0;
+    printf ("%f", var);
+
+    var = true;
+    printf ("%d", var); // prints a value 0 or 1
+
+    return 1;
 }
 
 // Output :
