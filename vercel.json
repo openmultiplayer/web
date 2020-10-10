@@ -3,6 +3,10 @@
     {
       "source": "wiki.open.mp/docs/:all*",
       "destination": "https://www.open.mp/docs/:all*"
+    },
+    {
+      "source": "/wiki",
+      "destination": "/docs"
     }
   ],
   "headers": [
