@@ -59,7 +59,7 @@ Ne használj abszolút URL-eket a webhelyek közötti hivatkozásokhoz. Használ
 - ❌
 
   ```md
-  Az abszolút út [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  Az abszolút út [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔

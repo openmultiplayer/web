@@ -57,7 +57,7 @@ Não utilize URL's absolutas para links dentro do site. Use caminhos relativos.
 - ❌
 
   ```md
-  Para ser usado com [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  Para ser usado com [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔

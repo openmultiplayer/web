@@ -57,7 +57,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 - ❌
 
   ```md
-  ใช้กับ [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  ใช้กับ [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔

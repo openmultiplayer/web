@@ -59,7 +59,7 @@ Nie używaj absolutnych URL-ów do wewnętrznych linków. Używaj relatywnych ś
 - ❌
 
   ```md
-  Do użycia z [OnPlayerClickPlayer](https://wiki.open.mp/docs/translations/pl/scripting/callbacks/OnPlayerClickPlayer)
+  Do użycia z [OnPlayerClickPlayer](https://www.open.mp/docs/translations/pl/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔

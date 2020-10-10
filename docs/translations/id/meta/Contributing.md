@@ -59,7 +59,7 @@ Jangan gunakan URL absolut untuk tautan antarsitus. Gunakan _relative paths_.
 - ❌
 
   ```md
-  Untuk digunakan dengan [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  Untuk digunakan dengan [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔

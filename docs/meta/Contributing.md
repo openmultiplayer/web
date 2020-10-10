@@ -59,7 +59,7 @@ Don't use absolute URLs for inter-site links. Use relative paths.
 - ❌
 
   ```md
-  To be used with [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  To be used with [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔

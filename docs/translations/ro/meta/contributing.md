@@ -60,7 +60,7 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
 - ❌
 
   ```md
-  Pentru a fi folosit cu [OnPlayerClickPlayer](https://wiki.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  Pentru a fi folosit cu [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔
