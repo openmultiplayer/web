@@ -1,28 +1,28 @@
 ---
 id: OnActorStreamOut
 title: OnActorStreamOut
-description: Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
+description: Acest callback este apelat atunci când un actor iese din flux (streamed out) de către clientul unui jucător.
 tags: []
 ---
 
 :::warning
 
-Aceasta functie a fost adaugata in SA:MP 0.3.7 si nu merge in versiunile sale anterioare.
+Această funcție a fost adăugată în SA-MP 0.3.7 și nu va funcționa în versiunile anterioare!
 
 :::
 
 ## Descriere
 
-Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
+Acest callback este apelat atunci când un actor iese din flux (streamed out) de către clientul unui jucător.
 
 | Nume        | Descriere                                                    |
 | ----------- | ------------------------------------------------------------ |
 | actorid     | ID-ul actorului care a fost transmis în flux pentru jucător. |
 | forplayerid | ID-ul jucătorului care a transmis actorul în flux.           |
 
-## Returnari
+## Returnări
 
-Este întotdeauna numit primul în filterscript-uri.
+Mereu este apelat primul în filterscript-uri.
 
 ## Exemple
 
@@ -30,18 +30,18 @@ Este întotdeauna numit primul în filterscript-uri.
 public OnActorStreamOut(actorid, forplayerid)
 {
     new string[40];
-    format(string, sizeof(string), "Actor %d is now streamed out for you.", actorid);
+    format(string, sizeof(string), "Actorul %d este acum ieșit din flux.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
 ```
 
-## Notes
+## Note
 
 :::tip
 
-Acest apel invers poate fi apelat și de NPC.
+Acest callback poate fi apelat și de NPC.
 
 :::
 
-## Related Functions
+## Funcții asociate

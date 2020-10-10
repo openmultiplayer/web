@@ -1,26 +1,26 @@
 ---
 title: OnActorStreamIn
-description: Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
+description: Acest callback este apelat atunci când un actor este transmis în flux (streamed in) de către clientul unui jucător.
 ---
 
 :::warning
 
-This function was added in SA-MP 0.3.7 and will not work in earlier versions!
+Această funcție a fost adăugată în SA-MP 0.3.7 și nu va funcționa în versiunile anterioare!
 
 :::
 
 ## Descriere
 
-Acest apel invers este apelat atunci când un actor este transmis în flux de către clientul unui jucător.
+Acest callback este apelat atunci când un actor este transmis în flux (streamed in) de către clientul unui jucător.
 
 | Nume        | Descriere                                                    |
 | ----------- | ------------------------------------------------------------ |
 | actorid     | ID-ul actorului care a fost transmis în flux pentru jucător. |
 | forplayerid | ID-ul jucătorului în care s-a transmis actorul.              |
 
-## Returnari
+## Returnări
 
-Este mereu primul in filterscripturi.
+Mereu este apelat primul în filterscript-uri.
 
 ## Exemple
 
@@ -42,4 +42,4 @@ Acest apel invers poate fi apelat și de NPC.
 
 :::
 
-## Functii
+## Funcții asociate

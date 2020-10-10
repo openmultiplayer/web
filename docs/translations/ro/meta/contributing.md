@@ -1,9 +1,9 @@
 ---
-title: Contributie
-description: Cum sa continui la SA-MP Wiki si la documentatia open.mp
+title: Contribuire
+description: Cum să contribui la SA-MP Wiki și la documentația open.mp
 ---
 
-Această sursă de documentare este deschisă pentru oricine să contribuie la modificări! Tot ce aveți nevoie este un cont [GitHub](https://github.com) și ceva timp liber. Nici nu trebuie să cunoașteți Git, puteți face totul din interfața web!
+Această sursă de documentare este deschisă pentru oricine vrea să contribuie cu modificări! Tot ce aveți nevoie este de un cont [GitHub](https://github.com) și ceva timp liber. Nici nu trebuie să cunoașteți Git, puteți face totul din interfața web!
 
 Dacă doriți să ajutați la menținerea unei limbi specifice, deschideți un PR împotriva fișierului [CODEOWNERS](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) și adăugați o linie pentru directorul dvs. de limbă cu numele dvs. de utilizator.
 
