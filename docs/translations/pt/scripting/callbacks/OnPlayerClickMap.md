@@ -15,7 +15,7 @@ Esta callback foi implementada no SA-MP 0.3d e não funcionará em versões ante
 
 OnPlayerClickMap é chamado quando um jogador pocisiona um ponto no mapa do menu de pausa (clicando com botão direito).
 
-| Name     | Description                                                       |
+| Nome     | Descrição                                                         |
 | -------- | ----------------------------------------------------------------- |
 | playerid | O ID do jogador que posicionou o ponto                            |
 | Float:fX | A coordenada X de onde o jogador clicou                           |
