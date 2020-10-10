@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Callback ini juga akan terpanggil oleh NPC.
+Callback ini akan terpanggil juga oleh NPC.
 
 :::
 
