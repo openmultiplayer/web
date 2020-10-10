@@ -11,8 +11,8 @@ Callback ini akan terpanggil ketika player terputus dari server.
 
 | Nama     | Deskripsi                                      |
 | -------- | ---------------------------------------------- |
-| playerid | ID player yang terputus.                       |
-| reason   | Alasan pemutusan koneksi. Lihat tabel dibawah. |
+| playerid | ID dari player yang terputus.                       |
+| reason   | ID dari alasan pemutusan koneksi. Lihat tabel dibawah. |
 
 ## Returns
 
