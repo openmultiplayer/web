@@ -5,7 +5,7 @@ description: İndirmek için yeni bir özel karakter modeli ekler.
 tags: []
 ---
 
-:::uyarı
+:::warning
 
 Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacaktır!
 
@@ -45,7 +45,7 @@ Bunun işe yaraması için kullanılabilir resmin öncelikle sunucu ayarlarında
 
 :::
 
-:::uyarı
+:::warning
 
 Şu anda bu fonksiyonu ne zaman arayabileceğiniz konusunda herhangi bir kısıtlama yoktur, ancak OnFilterScriptInit/OnGameModeInit içinde aramamanız durumunda, halihazırda sunucuda bulunan bazı oyuncuların modelleri indirmemiş olma riskini çalıştırdığınızı unutmayın.
 

@@ -5,7 +5,7 @@ description: İndirmek için yeni bir basit nesne modeli ekler.
 tags: []
 ---
 
-:::uyarı
+:::warning
 
 Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacaktır!
 
@@ -47,7 +47,7 @@ public OnGameModeInit()
 
 Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarlarında userartwork etkinleştirilmesi gerekir; oynatıcı belirli bir dünyaya girdiğinde modeller indirilir. :::
 
-:::uyarı
+:::warning
 
 Şu anda bu fonksiyonu ne zaman arayabileceğiniz konusunda herhangi bir kısıtlama yoktur, ancak OnFilterScriptInit/OnGameModeInit içinde aramamanız durumunda, halihazırda sunucuda bulunan bazı oyuncuların modelleri indirmemiş olma riskini çalıştırdığınızı unutmayın.
 

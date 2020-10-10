@@ -5,7 +5,7 @@ description: .
 tags: []
 ---
 
-:::uyarı
+:::warning
 
 Bu fonksiyon küçük harfle başlar.
 
