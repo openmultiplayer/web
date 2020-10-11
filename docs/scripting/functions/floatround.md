@@ -18,7 +18,7 @@ Round a floating point number to an integer value.
 | Name   | Description                   |
 | ------ | ----------------------------- |
 | value  | The value to round.           |
-| method | The floatround method to use. |
+| [method](../resources/floatroundmethod.md) | The floatround method to use. |
 
 ## Returns
 
