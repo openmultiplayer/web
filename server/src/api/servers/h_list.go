@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"github.com/openmultiplayer/server-index/server/src/server"
 	"github.com/openmultiplayer/server-index/server/src/web"
 	"github.com/pkg/errors"
 )
@@ -15,7 +16,12 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if err := json.NewEncoder(w).Encode(list); err != nil {
+	essential := []server.Essential{}
+	for _, item := range list {
+		essential = append(essential, item.Core)
+	}
+
+	if err := json.NewEncoder(w).Encode(essential); err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to write response"))
 	}
 }
