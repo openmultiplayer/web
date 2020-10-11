@@ -5,11 +5,9 @@ description: Returns the current GTA camera mode for the requested player.
 tags: ["player"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3c R3 and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3c R3' />
 
 ## Description
 

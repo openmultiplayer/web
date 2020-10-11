@@ -5,11 +5,9 @@ description: Fetch the GPCI of a user, this is linked to their SAMP/GTA on their
 tags: []
 ---
 
-:::note
+import T from '../../../src/components/templates.js'
 
-This function name starts with a lowercase letter.
-
-:::
+<T.LowercaseNote />
 
 ## Description
 

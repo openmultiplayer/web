@@ -6,11 +6,11 @@ keywords:
   - sqlite
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-The function starts with a lowercase letter. The function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
+<T.LowercaseNote />
 
-:::
+<T.VersionWarn version='SA-MP 0.3.7 R1' />
 
 ## Description
 

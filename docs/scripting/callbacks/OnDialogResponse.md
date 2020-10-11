@@ -5,11 +5,9 @@ description: This callback is called when a player responds to a dialog shown us
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This callback was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
+<T.VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 

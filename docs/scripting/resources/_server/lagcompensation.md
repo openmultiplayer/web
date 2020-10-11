@@ -4,11 +4,9 @@ title: "Lag Compensation"
 descripion: Lag compensation explanation.
 ---
 
-:::warning
+import T from '../../../../src/components/templates.js'
 
-This feature was added in SA-MP 0.3z and will not work in earlier versions!
-
-:::
+<T.VersionWarn name='feature' version='SA-MP 0.3z' />
 
 Lag compensation for fired bullets is enabled by default on SA-MP servers since 0.3z. It can be toggled using the `lagcompmode` server variable in [server.cfg](server.cfg). Setting it to 0 will disable lag compensation completely and players will have to lead their shots (fired ahead of targets).
 

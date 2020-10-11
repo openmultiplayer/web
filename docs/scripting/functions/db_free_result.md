@@ -6,11 +6,9 @@ keywords:
   - sqlite
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-The function starts with a lowercase letter.
-
-:::
+<T.LowercaseNote />
 
 ## Description
 

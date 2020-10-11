@@ -4,11 +4,9 @@ description: This function can be used as a replacement for GetTickCount, as it 
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function starts with lowercase letter.
-
-:::
+<T.LowercaseNote />
 
 ## Description
 

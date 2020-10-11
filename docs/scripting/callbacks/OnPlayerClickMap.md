@@ -5,11 +5,9 @@ description: OnPlayerClickMap is called when a player places a target/waypoint o
 tags: ["player"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This callback was added in SA-MP 0.3d and will not work in earlier versions!
-
-:::
+<T.VersionWarn name='callback' version='SA-MP 0.3d' />
 
 ## Description
 

@@ -5,11 +5,9 @@ description: Get the ID of the vehicle that the player is surfing (stuck to the 
 tags: ["player", "vehicle"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

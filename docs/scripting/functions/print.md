@@ -5,11 +5,9 @@ description: Prints a string to the server console (not in-game chat) and logs (
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function starts with lowercase letter.
-
-:::
+<T.LowercaseNote />
 
 ## Description
 

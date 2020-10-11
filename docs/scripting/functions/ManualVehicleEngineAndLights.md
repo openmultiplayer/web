@@ -5,11 +5,9 @@ description: Use this function before any player connects (OnGameModeInit) to te
 tags: ["vehicle"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This Function was added in SA-MP 0.3c and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3c' />
 
 ## Description
 
