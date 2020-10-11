@@ -15,11 +15,11 @@ Bu callback SA-MP 0.3z R2-2 sürümünde eklendi ve önceki sürümlerde çalı�
 
 Bu callback bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir. BlockIpAddress kullanarak gelen bağlantıları engelleyebilirsiniz.
 
-| Name         | Description                                        |
-| ------------ | -------------------------------------------------- |
-| playerid     | Bağlantı kurmaya çalışan oyuncunun ID'si.          |
-| ip_address[] | Bağlantı kurmaya çalışan oyuncunun IP adresi.      |
-| port         | Kurulmaya çalışılan bağlantının portu.             |
+| Name         | Description                                   |
+| ------------ | --------------------------------------------- |
+| playerid     | Bağlantı kurmaya çalışan oyuncunun ID'si.     |
+| ip_address[] | Bağlantı kurmaya çalışan oyuncunun IP adresi. |
+| port         | Kurulmaya çalışılan bağlantının portu.        |
 
 ## Çalışınca Vereceği Sonuçlar
 
