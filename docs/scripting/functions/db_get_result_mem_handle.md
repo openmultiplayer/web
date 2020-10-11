@@ -8,9 +8,13 @@ keywords:
 
 :::warning
 
-The function starts with a lowercase letter. The function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
+The function starts with a lowercase letter. 
 
 :::
+
+import T from '../../../src/components/templates.js'
+
+<T.VersionWarn name='function' version='SA-MP 0.3.7 R1' />
 
 ## Description
 
