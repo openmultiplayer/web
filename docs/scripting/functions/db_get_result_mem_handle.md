@@ -10,8 +10,6 @@ import T from '../../../src/components/templates.js'
 
 <T.LowercaseNote />
 
-import T from '../../../src/components/templates.js'
-
 <T.VersionWarn name='function' version='SA-MP 0.3.7 R1' />
 
 ## Description
