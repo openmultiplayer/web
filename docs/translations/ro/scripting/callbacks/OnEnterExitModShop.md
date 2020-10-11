@@ -15,11 +15,11 @@ Acest callback a fost adăugat în SA-MP 0.3a și nu va funcționa în versiunil
 
 Acest callback este apelat când un jucâtor intră sau iese dintr-un mod shop.
 
-| Nume       | Descriere                                                                    |
-| ---------- | ---------------------------------------------------------------------------- |
-| playerid   | ID-ul jucătorului care a intrat sau a ieșit din modshop                      |
-| enterexit  | 1 dacă jucătorul a intrat sau 0 dacă a ieșit                                 |
-| interiorid | ID-ul interiorului modshop-ului dacă playerul intră (sau 0 dacă iese)        |
+| Nume       | Descriere                                                             |
+| ---------- | --------------------------------------------------------------------- |
+| playerid   | ID-ul jucătorului care a intrat sau a ieșit din modshop               |
+| enterexit  | 1 dacă jucătorul a intrat sau 0 dacă a ieșit                          |
+| interiorid | ID-ul interiorului modshop-ului dacă playerul intră (sau 0 dacă iese) |
 
 ## Returnări
 
