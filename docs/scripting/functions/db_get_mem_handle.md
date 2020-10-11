@@ -8,7 +8,7 @@ keywords:
 
 :::warning
 
-The function starts with a lowercase letter. 
+The function starts with a lowercase letter.
 
 :::
 
