@@ -7,3 +7,9 @@ A replacement for the SA-MP server list built for the current SA-MP version and 
 ## Deployment
 
 `docker-compose up -d` to run the stack. There's currently no database security in place.
+
+Environment variables required:
+
+- `DATA_DIR`
+- `POSTGRES_USER`
+- `POSTGRES_PASSWORD`

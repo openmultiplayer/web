@@ -1,16 +1,46 @@
 version: "3"
+networks:
+  default:
+    external:
+      name: gateway
+  database:
+    driver: bridge
+    internal: true
 
 services:
+  index:
+    build: .
+    image: southclaws/openmp-index
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/prisma?schema=public
+      LOG_LEVEL: debug
+    ports:
+      - 8080:80
+    networks:
+      - default
+      - database
+    depends_on:
+      - postgres
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: gateway
+      traefik.http.routers.omp_index.rule: Host(`index.open.mp`)
+      traefik.http.routers.omp_index.entrypoints: https
+      traefik.http.routers.omp_index.tls.certresolver: default
+      com.centurylinklabs.watchtower.enable: "true"
+
   postgres:
     image: postgres
     restart: always
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: prisma
-      POSTGRES_PASSWORD: prisma
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - ./data/postgres:/var/lib/postgresql/data
+      - ${DATA_DIR}/postgres:/var/lib/postgresql/data
+    networks:
+      - database
 
   pgadmin:
     image: dpage/pgadmin4
@@ -20,12 +50,3 @@ services:
       PGADMIN_DEFAULT_PASSWORD: default
     ports:
       - 8081:80
-
-  index:
-    build: .
-    image: southclaws/openmp-index
-    environment:
-      DATABASE_URL: postgresql://prisma:prisma@postgres:5432/prisma?schema=public
-      LOG_LEVEL: debug
-    ports:
-      - 8080:80
