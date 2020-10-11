@@ -17,8 +17,8 @@ Callback ini akan terpanggil ketika sebuah IP address mencoba untuk koneksi keda
 
 | Nama         | Deskripsi                                         |
 | ------------ | ------------------------------------------------- |
-| playerid     | ID dari player yang mencoba untuk koneksi         |
-| ip_address[] | IP address dari player yang mencoba untuk koneksi |
+| playerid     | ID dari pemain yang mencoba untuk koneksi         |
+| ip_address[] | IP address dari pemain yang mencoba untuk koneksi |
 | port         | Port dari pembuat koneksi                         |
 
 ## Returns
@@ -34,7 +34,7 @@ Selalu terpanggil pertama di filterscripts.
 ```c
 public OnIncomingConnection(playerid, ip_address[], port)
 {
-    printf("Player ID %d mencoba untuk koneksikan kedalam server [IP/Port: %s:%i]", playerid, ip_address, port);
+    printf("Pemain ID %d mencoba untuk koneksikan kedalam server [IP/Port: %s:%i]", playerid, ip_address, port);
     return 1;
 }
 ```

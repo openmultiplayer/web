@@ -1,7 +1,7 @@
 ---
 id: OnDialogResponse
 title: OnDialogResponse
-description: Callback ini akan terpanggil ketika player merespon kepada dialog yang muncul menggunakan ShowPlayerDialog entah itu dengan cara mengklik tombol, menekan ENTER/ESC atau mengklik dua kali list item (jika menggunakan list style dialog).
+description: Callback ini akan terpanggil ketika pemain merespon kepada dialog yang muncul menggunakan ShowPlayerDialog entah itu dengan cara mengklik tombol, menekan ENTER/ESC atau mengklik dua kali list item (jika menggunakan list style dialog).
 tags: []
 ---
 
@@ -13,15 +13,15 @@ Callback ini telah ditambahkan dalam SA-MP 0.3a dan tidak akan bekerja pada vers
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player merespon kepada dialog yang muncul menggunakan ShowPlayerDialog entah itu dengan cara mengklik tombol, menekan ENTER/ESC atau mengklik dua kali list item (jika menggunakan list style dialog).
+Callback ini akan terpanggil ketika pemain merespon kepada dialog yang muncul menggunakan ShowPlayerDialog entah itu dengan cara mengklik tombol, menekan ENTER/ESC atau mengklik dua kali list item (jika menggunakan list style dialog).
 
-| Nama        | Deskripsi                                                                                                                             |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid    | ID dari player yang merespon dialog.                                                                                                  |
-| dialogid    | ID dari dialog yang player respond sebagaimana ditetapkan di ShowPlayerDialog.                                                        |
-| response    | 1 Untuk tombol kiri dan 0 untuk tombol kanan (Jika hanya satu tombol yang ada, maka hanya 1)                                          |
+| Nama        | Deskripsi                                                                                                             |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| playerid    | ID dari pemain yang merespon dialog.                                                                      |
+| dialogid    | ID dari dialog yang pemain respond sebagaimana ditetapkan di ShowPlayerDialog.                                             |
+| response    | 1 Untuk tombol kiri dan 0 untuk tombol kanan (Jika hanya satu tombol yang ada, maka hanya 1)                                           |
 | listitem    | ID dari list item yang dipilih oleh player (dimulai dari 0) (hanya ketika menggunakan list style dialog, sebaliknya akan menjadi -1). |
-| inputtext[] | Sebuah text yang dimasukkan kedalam input box dari player atau text dari list item yang terpilih.                                     |
+| inputtext[] | Sebuah text yang dimasukkan kedalam input box dari player atau text dari list item yang terpilih.                                       |
 
 ## Returns
 
@@ -42,7 +42,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     {
         if(response) // Jika mereka mengklik tombol 'Ya' atau menekan enter
         {
-            SendClientMessage(playerid, COLOR_GREEN, "Thank you for agreeing to the server rules!");
+            SendClientMessage(playerid, COLOR_GREEN, "Terimakasih telah menyetujui persyaratannya!");
         }
         else // Menekan ESC atau mengklik tombol 'Tidak'
         {
@@ -64,7 +64,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     {
         if(!response) // Jika dia mengklik tombol 'Quit' atau menekan ESC
         {
-            Kick(playerid); // Tendang dari server
+            Kick(playerid);
         }
         else // Menekan ENTER atau mengklik tombol 'Login'
         {
@@ -153,10 +153,10 @@ Menggunakan switch untuk mensortir dialogid sangatlah dianjurkan, jika anda memi
 
 :::warning
 
-Player dialog tidak akan disembunyikan ketika gamemode dimuat ulang, membuat server untuk mencetak "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last send dialog ID" jika player merespon kepada dialog tersebut setelah dimuat ulang.
+Dialog pemain tidak akan disembunyikan ketika gamemode dimuat ulang, membuat server untuk mencetak "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last send dialog ID" jika pemain merespon kepada dialog tersebut setelah dimuat ulang.
 
 :::
 
 ## Fungsi Terkait
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Menampilkan dialog kepada player.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Menampilkan dialog kepada pemain.
