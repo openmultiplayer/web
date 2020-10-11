@@ -4,7 +4,7 @@ import admonitions from "remark-admonitions";
 import parseHtml from "html-react-parser";
 import unified from "unified";
 
-export default ({ name = 'function' }) => {
+export default ({ name = "function" }) => {
   let result = unified()
     .use(markdown)
     .use(admonitions, {})
