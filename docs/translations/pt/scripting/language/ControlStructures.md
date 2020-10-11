@@ -3,9 +3,9 @@ id: ControlStructures
 title: "Estruturas de Controle"
 ---
 
-# `Condicionais`
+## Condicionais
 
-## `if`
+### if
 
 O uso de "if" (se) verifica se algo é verdadeiro e caso seja, realiza alguma coisa.
 
@@ -69,7 +69,7 @@ if (0 < idx < 5)
 }
 ```
 
-## `Operadores`
+### Operadores
 
 Os símbolos a seguir são os que você pode utilizar em comparações, ao lado suas explicações. Alguns já foram utilizados em exemplos. Atente-se pois utilizamos "Esquerda" para indicar o valor que está ao lado esquerdo do operador, e "Direita" para indicar o valor que está ao lado direito do operador.
 
@@ -89,7 +89,7 @@ Os símbolos a seguir são os que você pode utilizar em comparações, ao lado 
 |              | exclusivamente ou (xor, eor) - apenas um ou outro é verdadeiro, ambos não | if (!(Esquerda && Direita) && (Esquerda &#124;&#124;Direita))            |
 |              | não exclusivamente ou (nxor, neor) - ambos ou nenhum são verdadeiros      | if ((Esquerda && Direita) &#124;&#124; !(Esquerda &#124;&#124; Direita)) |
 
-## `Parênteses`
+### Parênteses
 
 Outro aspecto principal sobre condições de "if" é os parênteses, esses controlam a ordem de como tudo é feito em:
 
@@ -142,7 +142,7 @@ Estes pequenos exemplos mostram como o uso de parênteses pode mudar a forma com
 
 - (b != 3) no exemplo de "OR" não falha realmente sendo que nunca é chamado, o compilador orgraniza o código usando um método chamado "short-circuiting" (curto-circuito), como a primeira parte já é verdadeira, não há necessidade de verificar a segunda parte, sendo que isso não afetará no resultado, mas se fizesse, a verificação iria falhar.
 
-## `else`
+### else
 
 "else" (senão) basicamente faz alguma coisa, caso um "if" falhe:
 
@@ -159,7 +159,7 @@ else
 }
 ```
 
-## `else if`
+### else if
 
 Um "else if" (senão se) é uma verificação que ocorre caso a primeira falhe para checar algo:
 
@@ -225,7 +225,7 @@ else if (a == 4)
 
 Para contornar isso, você apenas faria um "else" caso um "if".
 
-## `?:`
+### ?:
 
 '?' e ':' juntos são chamados de um operador triádico, eles basicamente agem como um "if" dentro de outra declaração:
 
@@ -317,9 +317,9 @@ else
 
 Mas eles são equivalentes (neste exemplo tanto faz)
 
-# `Loops`
+## Loops
 
-## `While`
+### While
 
 "while" (enquanto) loops fazem algo enquanto uma condição específica for verdadeira. A condição é exatamente no mesmo formato do que uma condição em uma declaração de "if", ela é apenas verificada repetidamente e o código é feito todo vez que for verdadeiro quando verificado:
 
@@ -336,7 +336,7 @@ while (a < 10)
 
 O código irá verificar se "a" é menor que "10". Caso seja, o código dentro das chaves (a++;) será executado, portanto incrementando "a". Quando as chaves são alcaçadas o código pula de volta para a verificação e faz a mesmo coisa novamente, dessa vez a verificação irá falhar, pois "a" é igual a "10" e a execução irá pular para depois do loop. Se "a" fosse igual a "8" o código seria executado duas vezes, assim por diante.
 
-## `for()`
+### for()
 
 Um "for" (para) loop é essencialmente um "while" comprimido. Um "for" contém três seções: "Inicialização, Condição e Finalização". Para escrever o exemplo de "while" acima como um loop "for":
 
@@ -375,7 +375,7 @@ for ( ; a < 10; )
 
 Esse exemplo torna fácil demonstrar como que um "for" encaixa-se com um "while". Há duas simples diferenças entre os dois "for" loops dados. O primeiro é que o segundo exemplo declara "a" fora do loop "for", isso significa que também pode ser usado fora do loop, no primeiro exemplo o escopo de "a" (seção do código para qual a variável existe) está apenas dentro do loop. A segunda diferença é que o "a++" no segundo exemplo é na verdade feito após o "a++" do primeiro exemplo, 99% dos casos isso não faz diferença alguma, isso importa apenas quando você estiver usando "continue" (veja abaixo), "continue" irá chamar o "a++" no primeiro exemplo, mas irá pular no segundo exemplo.
 
-## `do-while`
+### do-while
 
 Um "do-while" (faça enquanto) loop é um loop onde a condição vem após o código dentre do loop, ao invés de antes. Isso significa que o código dentro sempre será executado ao menos uma vez, pois a verificação ocorre após o código dentro do loop.
 
@@ -393,7 +393,7 @@ while (a < 10); // Note o ponto e vírgula
 
 Se esse fosse um "while" básico "a" não seria incrementado, pois (a < 10) é falso, mas aqui é incrementado antes da verificação. Caso fosse "9" o loop seria executado apenas uma vez, "8" duas vezses, assim em diante.
 
-## `if-goto`
+### if-goto
 
 Esse é essencialmente o que os loops acima fazem, o seu uso não é geralmente aconselhado, entretanto é interessante ver como exatamente o loop funciona:
 
@@ -411,7 +411,7 @@ if (a < 10)
 // Código após o loop
 ```
 
-## `OBOE`
+### OBOE
 
 OBOE significa "Off By One Error" (Desligado por um erro). Esse é um erro muito comum onde o loop é executado muitas vezes ou poucas vezes, por exemplo:
 
@@ -429,9 +429,9 @@ Este exemplo simples demonstra um dos mais comuns OBOE's, de primeiro relance as
 
 Você deve ser muito cuidadose com OBOEs quando estiver usando um "do-while" loop, pois eles SEMPRE rodam pelo menos uma vez.
 
-# `Switch`
+## Switch
 
-## `switch`
+### switch
 
 Um "switch" (troca) é basicamente uma forma estruturada de if/else (assim como "for" é uma forma estruturada de "while"). A forma mais fácil de explicar é com um exemplo:
 
@@ -515,7 +515,7 @@ else if (result == 3) {}
 
 Para aqueles que conhecem C, o "switch" do PAWN é levemente diferente, as condições individuais NÃO SÃO "fall-through" e são limitadas por chaves, então não há necessidade de colocar um "break".
 
-## `case`
+### case
 
 Um "case" (caso) (as partes individuais do "switch") pode conter outras opções além de um único número. Você pode comparar um valor a uma lista de números (substituindo "fall-through" em C) ou até mesmo um alcance de determinados valores.
 
@@ -561,13 +561,13 @@ switch (a)
 }
 ```
 
-## `default`
+### default
 
 Um "default" (padrão) é equivalente a um "else", ele realiza algo caso todos os outros falharem.
 
-# `Declarações de linhas únicas`
+## Declarações de linhas únicas
 
-## `goto`
+### goto
 
 goto is essentially a jump, it goes to a label without question (i.e. there's no condition to need to be true). You can see an example above in the if-goto loop.
 
@@ -585,7 +585,7 @@ my_label: // "Labels" terminam com dois pontos em sua própria linha
 
 O uso de "gotos" é severamente desaconselhado devido aos seus efeitos no seguimento (flow) do programa.
 
-## `break`
+### break
 
 Um "break" (quebra) para e coloca o fim em um loop prematuramente (antes de seu fim padrão):
 
@@ -598,7 +598,7 @@ for (new a = 0; a < 10; a++)
 
 Esse loop irá executar 6 vezes, até que atinja o break, colocando fim ao loop antes mesmo de acabar.
 
-## `continue`
+### continue
 
 Um "continue" (continue) pula parte do loop em uma determinada iteração:
 
@@ -631,7 +631,7 @@ while (a < 3)
 
 Esse é muito similar ao outro exemplo, entretanto desta vez o "continue" irá pular a linha do "a++", então o loop ficará preso e repetirá infinitamente, pois sempre será "1".
 
-## `return`
+### return
 
 Um "return" (retorno) irá parar uma função e voltar ao ponto em que a mesma foi chamada:
 
