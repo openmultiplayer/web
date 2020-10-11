@@ -5,11 +5,9 @@ description: This callback is called when a player fires a shot from a weapon.
 tags: ["player"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This callback was added in SA-MP 0.3z and will not work in earlier versions!
-
-:::
+<T.VersionWarn name='callback' version='SA-MP 0.3z' />
 
 ## Description
 

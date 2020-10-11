@@ -7,7 +7,7 @@ tags: []
 
 import T from '../../../src/components/templates.js'
 
-<T.VersionWarn verNum='0.3.7' />
+<T.VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Description
 

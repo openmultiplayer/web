@@ -5,11 +5,9 @@ description: This callback gets called whenever the NPC sees a ClientMessage.
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This NPC callback was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
+<T.VersionWarn name='NPC callback' version='SA-MP 0.3a' />
 
 ## Description
 
