@@ -15,9 +15,9 @@ Callback NPC ini telah ditambahkan dalam SA-MP 0.3e dan tidak akan bekerja pada 
 
 Callback ini terpanggil ketika pemain mengklik sebuah player-textdraw. Ini tidak akan terpanggil ketika player membatalkan mode 'select' (ESC) - tetapi pengecualian untuk OnPlayerClickTextDraw.
 
-| Nama         | Deskripsi                                             |
-| ------------ | ------------------------------------------------------- |
-| playerid     | ID dari pemain yang mengklik textdraw.           |
+| Nama         | Deskripsi                                |
+| ------------ | ---------------------------------------- |
+| playerid     | ID dari pemain yang mengklik textdraw.   |
 | playertextid | ID dari player-textraw yang pemain klik. |
 
 ## Returns

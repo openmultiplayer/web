@@ -15,11 +15,11 @@ Fungsi ini telah ditambahkan dalam SA-MP 0.3a dan tidak bekerja pada versi dibaw
 
 Terpanggil ketika pemain mengklik dua kali pemain yang berada di scoreboard.
 
-| Name            | Description                                                      |
-| --------------- | ---------------------------------------------------------------- |
+| Name            | Description                                                    |
+| --------------- | -------------------------------------------------------------- |
 | playerid        | ID dari pemain yang mengklik pemain yang berada di scoreboard. |
-| clickedplayerid | ID dari pemain yang di klik oleh playerid.                        |
-| source          | Sumber yang player klik.                                |
+| clickedplayerid | ID dari pemain yang di klik oleh playerid.                     |
+| source          | Sumber yang player klik.                                       |
 
 ## Returns
 

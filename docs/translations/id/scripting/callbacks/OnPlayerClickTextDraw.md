@@ -15,9 +15,9 @@ Fungsi ini telah ditambahkan dalam SA-MP 0.3e dan tidak bekerja pada versi dibaw
 
 Callback ini akan terpanggil ketika pemain mengklik sebuah textraw atau membatalkan 'select' mode dengan tombol ESC.
 
-| Nama      | Deskripsi                                                                   |
-| --------- | ----------------------------------------------------------------------------- |
-| playerid  | ID dari pemain yang mengklik textdraw.                            |
+| Nama      | Deskripsi                                                               |
+| --------- | ----------------------------------------------------------------------- |
+| playerid  | ID dari pemain yang mengklik textdraw.                                  |
 | clickedid | ID dari textraw yang diklik. INVALID_TEXT_DRAW jika seleksi dibatalkan. |
 
 ## Returns

@@ -15,10 +15,10 @@ Fungsi ini telah ditambahkan dalam SA-MP 0.3.7 dan tidak bekerja pada versi diba
 
 Callback ini akan terpanggil ketika sebuah aktor berada di jangkauan stream dari klien pemain.
 
-| Nama        | Deskripsi                                                   |
-| ----------- | ------------------------------------------------------------- |
+| Nama        | Deskripsi                                                         |
+| ----------- | ----------------------------------------------------------------- |
 | actorid     | ID dari aktor yang berada di luar jangakauan stream klien pemain. |
-| forplayerid | ID dari pemain yang berada di luar jangkauan stream aktor.              |
+| forplayerid | ID dari pemain yang berada di luar jangkauan stream aktor.        |
 
 ## Returns
 
