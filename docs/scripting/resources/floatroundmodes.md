@@ -6,7 +6,7 @@ sidebar_label: Floatround Modes
 
 The rounding modes used with [floatround](../functions/floatround.md).
 
-| Modes             | Description                                                                                          |
+| Mode              | Description                                                                                          |
 | ----------------- | ---------------------------------------------------------------------------------------------------- |
 | floatround_round  | Round to the nearest integer. A fractional part of exactly 0.5 rounds upwards (this is the default). |
 | floatround_floor  | Round downwards.                                                                                     |
