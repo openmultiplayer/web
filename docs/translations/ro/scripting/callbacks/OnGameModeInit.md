@@ -1,29 +1,29 @@
 ---
 id: OnGameModeInit
 titlu: OnGameModeInit
-descriere: Acest callback este declansat cand gamemode-ul porneste.
+descriere: Acest callback este apelat atunci când gamemode-ul a pornit.
 tags: []
 ---
 
 ## Descriere
 
-Acest callback este declansat cand gamemode-ul porneste.
+Acest callback este apelat atunci când gamemode-ul a pornit.
 
 ## Exemplu
 
 ```c
 public OnGameModeInit()
 {
-    print("Gamemode started!");
+    print("Gamemode pornit!");
     return 1;
 }
 ```
 
 ## Note
 
-:::sfat
+:::tip
 
-Această function poate fi utilizată și într-un filterscript pentru a detecta dacă gamemode de joc se modifică cu comenzi RCON precum changemode sau gmx, deoarece schimbarea gamemode de joc nu reîncarcă un filterscript.
+Această funcție poate fi utilizată și într-un filterscript pentru a detecta dacă gamemode-ul se modifică cu comenzi RCON precum changemode sau gmx, deoarece schimbarea de gamemode nu reîncarcă filterscript-ul.
 
 :::
 
