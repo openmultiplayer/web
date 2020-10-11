@@ -1,0 +1,23 @@
+version: "2"
+
+tasks:
+  default:
+    cmds:
+      - go build -o server.exe ./server/
+      - ./server.exe
+
+  services:
+    cmds:
+      - docker-compose up -d rudolfs postgres
+
+  generate:
+    cmds:
+      - npx prisma generate
+
+  migrate:
+    cmds:
+      - npx prisma migrate save --experimental
+
+  dbuild:
+    cmds:
+      - docker build -t southclaws/openmp-index .

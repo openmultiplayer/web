@@ -1,0 +1,4 @@
+data/
+*.exe
+node_modules
+.env
