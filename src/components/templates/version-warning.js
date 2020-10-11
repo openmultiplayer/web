@@ -4,13 +4,13 @@ import admonitions from "remark-admonitions";
 import parseHtml from "html-react-parser";
 import unified from "unified";
 
-export default ({ verNum }) => {
+export default ({ version, name = 'function' }) => {
   let result = unified()
     .use(markdown)
     .use(admonitions, {})
     .use(html)
     .processSync(
-      `:::warning \n\nThis function was added in SA-MP ${verNum} and will not work in earlier versions!\n\n:::`
+      `:::warning \n\nThis ${name} was added in ${version} and will not work in earlier versions!\n\n:::`
     );
   return parseHtml(result.contents);
 };
