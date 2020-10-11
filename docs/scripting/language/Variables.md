@@ -1,5 +1,5 @@
 ---
-title: Basics: Variables
+title: "Basics: Variables"
 description: A beginner's guide to variables in Pawn
 ---
 
