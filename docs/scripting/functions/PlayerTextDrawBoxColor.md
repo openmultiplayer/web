@@ -5,11 +5,9 @@ description: Sets the color of a textdraw's box (PlayerTextDrawUseBox ).
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This feature (player-textdraws) was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
+<T.VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
 
 ## Description
 
