@@ -5,11 +5,9 @@ description: Adds a death to the 'killfeed' on the right-hand side of the screen
 tags: ["player"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This Function was added in SA-MP 0.3z R2-2 and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3z R2-2' />
 
 ## Description
 

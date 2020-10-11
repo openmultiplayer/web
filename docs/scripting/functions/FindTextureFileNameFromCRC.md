@@ -5,11 +5,9 @@ description: Find an existing custom skin or simple object texture file.
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3.DL R1' />
 
 ## Description
 

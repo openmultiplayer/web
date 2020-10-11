@@ -5,11 +5,9 @@ description: Allows players to edit a player-object (position and rotation) with
 tags: ["player"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

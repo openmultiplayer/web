@@ -5,11 +5,9 @@ description: Retrieve the damage statuses of a vehicle.
 tags: ["vehicle"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This callback was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3a' />
 
 :::tip
 

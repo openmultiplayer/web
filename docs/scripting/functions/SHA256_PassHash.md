@@ -5,11 +5,9 @@ description: Hashes a password using the SHA-256 hashing algorithm.
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3.7 R1' />
 
 ## Description
 

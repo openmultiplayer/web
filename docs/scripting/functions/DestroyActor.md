@@ -5,11 +5,9 @@ description: Destroy an actor which was created with CreateActor.
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3.7 and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 

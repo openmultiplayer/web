@@ -5,11 +5,9 @@ description: Sets the rotation and zoom of a 3D model preview textdraw.
 tags: ["textdraw"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3x and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3x' />
 
 ## Description
 

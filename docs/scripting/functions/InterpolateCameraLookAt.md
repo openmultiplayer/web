@@ -5,11 +5,9 @@ description: Interpolate a player's camera's 'look at' point between two coordin
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

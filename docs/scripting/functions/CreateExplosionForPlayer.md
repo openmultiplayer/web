@@ -5,11 +5,9 @@ description: Creates an explosion that is only visible to a single player.
 tags: ["player"]
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function was added in SA-MP 0.3z R2-2 and will not work in earlier versions!
-
-:::
+<T.VersionWarn version='SA-MP 0.3z R2-2' />
 
 ## Description
 
