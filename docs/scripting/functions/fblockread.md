@@ -5,11 +5,9 @@ description: This function allows you to read data from a file, without encoding
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function starts with lowercase letter.
-
-:::
+<T.LowercaseNote />
 
 ## Description
 

@@ -5,11 +5,9 @@ description: This function concatenates (joins together) two strings into the de
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function starts with lowercase letter.
-
-:::
+<T.LowercaseNote />
 
 ## Description
 

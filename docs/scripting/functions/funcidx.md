@@ -5,11 +5,9 @@ description: This function returns the ID of a public function by its name.
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function starts with lowercase letter.
-
-:::
+<T.LowercaseNote />
 
 ## Description
 

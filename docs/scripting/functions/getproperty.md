@@ -5,11 +5,9 @@ description: Get a specific property from the memory, the string is returned as 
 tags: []
 ---
 
-:::warning
+import T from '../../../src/components/templates.js'
 
-This function starts with lowercase letter.
-
-:::
+<T.LowercaseNote />
 
 ## Description
 
