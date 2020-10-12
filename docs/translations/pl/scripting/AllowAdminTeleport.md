@@ -11,7 +11,7 @@ Ta funkcja od wersji 0.3d jest przestarzała. Sprawdź OnPlayerClickMap.
 
 :::
 
-## Description
+## Opis
 
 Ta funkcja określa, czy administratorzy RCON będą teleportowani do punktu docelowego, kiedy tylko go zaznaczą na mapie.
 
