@@ -26,15 +26,15 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 	o, err := os.Create(input)
 	if err != nil {
-		w.Write([]byte("failed"))
+		w.Write([]byte(fmt.Sprintln("failed to create temp file:", err)))
 		return
 	}
 	if _, err = io.Copy(o, r.Body); err != nil {
-		w.Write([]byte("failed"))
+		w.Write([]byte(fmt.Sprintln("failed to copy to temp file:", err)))
 		return
 	}
 	if err = o.Close(); err != nil {
-		w.Write([]byte("failed"))
+		w.Write([]byte(fmt.Sprintln("failed to close temp file:", err)))
 		return
 	}
 
