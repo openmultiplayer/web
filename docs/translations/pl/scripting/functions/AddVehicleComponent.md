@@ -9,7 +9,7 @@ tags: ["vehicle"]
 
 Dodaje „komponent” (część tuningową) do pojazdu. Listę komponentów znajdziesz poniżej.
 
-| Nazwa                                         | Description                                                                  |
+| Nazwa                                         | Opis                                                                         |
 | --------------------------------------------- | ---------------------------------------------------------------------------- |
 | vehicleid                                     | ID pojazdu, w którym komponent ma zostać zamontowany. Nie mylić z ID modelu. |
 | [componentid](../resources/carcomponentid.md) | ID komponentu, który ma zostać zamontowany w pojeździe.                      |
