@@ -29,8 +29,8 @@ public OnPlayerUpdate(playerid)
     if (GetPlayerAnimationIndex(playerid))
     {
         new
-            animlib[32],
-            animname[32],
+            animLib[32],
+            animName[32],
             msg[128];
 
         GetAnimationName(GetPlayerAnimationIndex(playerid), animLib, sizeof animLib, animName, sizeof animName);
