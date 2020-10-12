@@ -5,9 +5,11 @@ description: Dodaje nowy model postaci do pobrania.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
+:::warning
 
-<T.VersionWarn version='SA-MP 0.3.DL R1' />
+Ta funkcja została dodana w wersji SA-MP 0.3-DL R1 i nie będzie działać w starszych wersjach!
+
+:::
 
 ## Opis
 
