@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // OnPlayerCommandText não será chamado em outro script.
     }
     return 0;
-    // Returnar 0 informa que o comando não foi precessado pelo script.
+    // Retornar 0 informa que o comando não foi precessado pelo script.
     // OnPlayerCommandText será chamado em outros scripts até que seja retornado 1.
     // Se nenhum script retornar 1, uma mensagem irá aprecer: 'SERVER: Unknown Command'
 }
