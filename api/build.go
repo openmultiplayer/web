@@ -9,7 +9,7 @@ import (
 
 	"github.com/Southclaws/sampctl/build"
 	"github.com/Southclaws/sampctl/compiler"
-	"github.com/google/go-github/v28/github"
+	"github.com/google/go-github/github"
 )
 
 var gh = github.NewClient(nil)
@@ -39,7 +39,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var response resp
-	problems, result, err := compiler.CompileSource(r.Context(), gh, ".", ".", ".", "windows", build.Config{
+	problems, result, err := compiler.CompileSource(r.Context(), gh, ".", ".", ".", "linux", build.Config{
 		Name:       "../" + input,
 		Version:    "3.10.10",
 		WorkingDir: ".",
