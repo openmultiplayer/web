@@ -1,6 +1,6 @@
 ---
 title: Floatround Modes
-description: The rounding modes used with [floatround](../functions/floatround.md).
+description: The rounding modes used with floatround.
 sidebar_label: Floatround Modes
 ---
 
