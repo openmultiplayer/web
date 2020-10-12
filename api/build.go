@@ -9,7 +9,7 @@ import (
 
 	"github.com/Southclaws/sampctl/build"
 	"github.com/Southclaws/sampctl/compiler"
-	"github.com/google/go-github/github"
+	"github.com/google/go-github/v28/github"
 )
 
 var gh = github.NewClient(nil)
@@ -44,9 +44,11 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		Version:    "3.10.10",
 		WorkingDir: ".",
 		// Args:       "",
-		Input:  input,
-		Output: output,
-		// Includes:  "",
+		Input:    input,
+		Output:   output,
+		Includes: []string{
+			// "./pawn-stdlib",
+		},
 		// Constants: "",
 		// Plugins:   "",
 		// Compiler:  "",
