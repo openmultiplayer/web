@@ -9,6 +9,7 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/kelseyhightower/envconfig"
+	"github.com/pkg/errors"
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/server-index/server/src/api/servers"
@@ -41,14 +42,14 @@ func Initialise(root context.Context) (app *App, err error) {
 
 	app.config, err = config()
 	if err != nil {
-		return
+		return nil, errors.Wrap(err, "failed to load config")
 	}
 
 	app.ctx, app.cancel = WithSignal(root)
 
 	app.prisma = db.NewClient()
 	if err = app.prisma.Connect(); err != nil {
-		return
+		return nil, errors.Wrap(err, "failed to connect to prisma")
 	}
 
 	storage := serverdb.NewPrisma(app.prisma)
