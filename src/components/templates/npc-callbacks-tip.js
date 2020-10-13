@@ -9,8 +9,6 @@ export default () => {
     .use(markdown)
     .use(admonitions, {})
     .use(html)
-    .processSync(
-      `:::tip \n\nThis callback can also be called by NPC.\n\n:::`
-    );
+    .processSync(`:::tip \n\nThis callback can also be called by NPC.\n\n:::`);
   return parseHtml(result.contents);
 };
