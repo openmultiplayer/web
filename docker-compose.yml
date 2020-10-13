@@ -53,7 +53,7 @@ services:
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
-      traefik.http.routers.omp_index_pgadmin.rule: Host(`index.open.mp`) && PathPrefix(`/pgadmin`)
+      traefik.http.routers.omp_index_pgadmin.rule: Host(`index.open.mp`)
       traefik.http.routers.omp_index_pgadmin.entrypoints: https
       traefik.http.routers.omp_index_pgadmin.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
