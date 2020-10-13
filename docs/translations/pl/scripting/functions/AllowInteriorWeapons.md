@@ -9,9 +9,9 @@ tags: []
 
 Przełącza możliwość używania broni we wnętrzach.
 
-| Nazwa  | Opis                                                                         |
-| ------ | ---------------------------------------------------------------------------- |
-| allow  | 1 - włącza bronie we wnętrzach (domyślnie), 0 - wyłącza bronie we wnętrzach. |
+| Nazwa | Opis                                                                         |
+| ----- | ---------------------------------------------------------------------------- |
+| allow | 1 - włącza bronie we wnętrzach (domyślnie), 0 - wyłącza bronie we wnętrzach. |
 
 ## Zwracane wartości
 
