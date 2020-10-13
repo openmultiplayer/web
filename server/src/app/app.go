@@ -111,7 +111,7 @@ func (app *App) Start() error {
 	}()
 
 	go func() {
-		if err := app.worker.RunWithSeed(time.Second*1, seed.Addresses); err != nil {
+		if err := app.worker.RunWithSeed(time.Second*30, seed.Addresses); err != nil {
 			zap.L().Error("failed to upsert new data",
 				zap.Error(err))
 		}
