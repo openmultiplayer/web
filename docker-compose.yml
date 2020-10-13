@@ -38,7 +38,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - ${DATA_DIR}/postgres:/var/lib/postgresql/data
+      - ${DATA_DIR}/openmp-index/postgres:/var/lib/postgresql/data
     networks:
       - database
 
