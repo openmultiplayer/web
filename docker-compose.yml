@@ -22,7 +22,7 @@ services:
     depends_on:
       - postgres
     labels:
-      traefik.enable: "true"
+      traefik.enable: "false"
       traefik.docker.network: gateway
       traefik.http.routers.omp_index.rule: Host(`index.open.mp`)
       traefik.http.routers.omp_index.entrypoints: https
