@@ -29,11 +29,9 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions
 
