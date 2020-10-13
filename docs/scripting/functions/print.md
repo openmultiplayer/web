@@ -26,19 +26,19 @@ Prints a string to the server console (not in-game chat) and logs (server_log.tx
 
 This function does not return any specific values.
 
-:::warning
+:::tip
 
 When the colour codes are left at -1, the default colours of the server console are used.
 
 :::
 
-:::warning
+:::tip
 
 On most systems the following foreground and background colour codes can be used: black (0), red (1), green (2), yellow (3), blue (4), magenta (5), cyan (6) and white (7).
 
 :::
 
-:::warning
+:::tip
 
 Most systems also support the bright/bold versions of these colours. The following highlight values can be used: regular (0) and bright/bold (1).
 
