@@ -36,10 +36,6 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Notes
 
-:::tip
-
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions
