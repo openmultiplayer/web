@@ -46,7 +46,14 @@ services:
     image: dpage/pgadmin4
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: u@e.com
-      PGADMIN_DEFAULT_PASSWORD: default
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
       - 8081:80
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: gateway
+      traefik.http.routers.omp_index.rule: Host(`index.open.mp`) && Path(`/pgadmin`)
+      traefik.http.routers.omp_index.entrypoints: https
+      traefik.http.routers.omp_index.tls.certresolver: default
+      com.centurylinklabs.watchtower.enable: "true"
