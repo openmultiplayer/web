@@ -99,7 +99,7 @@ namespace Query
                 EndPoint endpoint = new IPEndPoint(address, _port);
 
                 byte[] rBuffer = new byte[500];
-                
+
                 int count = qSocket.ReceiveFrom(rBuffer, ref endpoint);
 
                 using (MemoryStream stream = new MemoryStream(rBuffer))
@@ -371,8 +371,8 @@ int count = sQuery.Receive();
 
 string[] info = sQuery.Store(count);
 
-/* 
- * Variable 'info' might now contain:   
+/*
+ * Variable 'info' might now contain:
  *   Password   Players     Max. players    Hostname                Gamemode    Language
  * { "0",       "12",       "500",          "Query test server",    "LVDM",     "English" }
  */
@@ -387,7 +387,7 @@ int count = sQuery.Receive();
 
 string[] info = sQuery.Store(count);
 
-/* 
+/*
  * Variable 'info' might now contain:
  * { "Hello from C#" }
  */
