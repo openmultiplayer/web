@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Przyczepia jeden pojazd do drugiego jako przyczepa.
 
-| Nazwa      | Opis                                       |
-| --------- | ------------------------------------------------- |
-| trailerid | ID pojazdu, który będzie ciągnięty.        |
+| Nazwa     | Opis                                        |
+| --------- | ------------------------------------------- |
+| trailerid | ID pojazdu, który będzie ciągnięty.         |
 | vehicleid | ID pojazdu, który będzie ciągnąć przyczepę. |
 
 ## Zwracane wartości
