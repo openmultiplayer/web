@@ -48,4 +48,4 @@ Musisz najpierw utworzyć obiekt, zanim spróbujesz przyczepić do niego kamerę
 
 ## Powiązane funkcje
 
-- [AttachCameraToPlayerObject](AttachCameraToPlayerObject): Przyczepia kamerę gracza do 
+- [AttachCameraToPlayerObject](AttachCameraToPlayerObject): Przyczepia kamerę gracza do

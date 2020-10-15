@@ -32,7 +32,7 @@ SendClientMessage(playerid, -1, output);
 
 :::warning
 
-GetPlayerColor will return nothing (0) unless SetPlayerColor has been used first.Click HERE for a fix.
+GetPlayerColor will return nothing (0) unless SetPlayerColor has been used first. Click [HERE](../tutorials/colorfix.md) for a fix.
 
 :::
 
