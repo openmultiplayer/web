@@ -5,11 +5,9 @@ description: Dodaje do pobrania nowy obiekt.
 tags: []
 ---
 
-:::warning
+import T from '../../../../../src/components/templates.js'
 
-Ta funkcja została dodana w wersji SA-MP 0.3-DL R1 i nie będzie działać w starszych wersjach!
-
-:::
+<T.VersionWarn version='SA-MP 0.3.DL R1' />
 
 ## Opis
 
