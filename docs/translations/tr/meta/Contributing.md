@@ -42,7 +42,7 @@ Eğer Git'i kullanmak istiyorsanız, tek yapmanız gereken Wiki dosyalarını a�
 git clone https://github.com/openmultiplayer/wiki.git
 ```
 
-En sevdiğiniz editörü açın. Ben düzenleme yapmak için Visual Studio Code'yi öneriyorum. Markdown dosyalarını biçimlendirmek için güzel bir editör ve gördüğünüz gibi ben Visual Studio Code kullanıyorum. 
+En sevdiğiniz editörü açın. Ben düzenleme yapmak için Visual Studio Code'yi öneriyorum. Markdown dosyalarını biçimlendirmek için güzel bir editör ve gördüğünüz gibi ben Visual Studio Code kullanıyorum.
 
 ![Visual Studio Code markdown preview](/images/contributing/vscode.png)
 
@@ -80,6 +80,7 @@ Resimler '/static/images' klasörünün içerisindeki bir alt dizine girer. Bir 
 Eğer nasıl yapılacağını anlamadıysanız (anlatım İngilizce olarak da biraz sorunluydu bu yüzden biraz yanlış yazılmış olabilir). Başka sayfalarda resimlerin nasıl yayınlandığını inceleyin ve kopyalayıp yapıştırın.
 
 ### Meta Verileri
+
 _Herhangi_ bir sayfada ilk şey meta verileri olmalıdır:
 
 ```mdx
