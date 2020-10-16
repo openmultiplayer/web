@@ -75,35 +75,34 @@ Demek istenilen:
 
 ### Resimler
 
-Images go inside a subdirectory inside `/static/images`. Then when you link an image in a `![]()` you just use `/images/` as the base path (no need for `static` that's just for the repository).
+Resimler '/static/images' klasörünün içerisindeki bir alt dizine girer. Bir görüntüyü `![]()` ile gösterebilirsiniz. Temel yol olarak `/images/` kullanıyorsunuz.
 
-If in doubt, read another page that uses images and copy how its done there.
+Eğer nasıl yapılacağını anlamadıysanız (anlatım İngilizce olarak da biraz sorunluydu bu yüzden biraz yanlış yazılmış olabilir). Başka sayfalarda resimlerin nasıl yayınlandığını inceleyin ve kopyalayıp yapıştırın.
 
-### Metadata
-
-The first thing in _any_ document here should be metadata:
+### Meta Verileri
+_Herhangi_ bir sayfada ilk şey meta verileri olmalıdır:
 
 ```mdx
 ---
-title: My Documentation
-description: This is a page about stuff and things and burgers, yay!
+title: Benim Döküm Sayfam
+description: Bu sayfa eşyalar ve burgerler hakkında bir sayfa, yaşasın!
 ---
 ```
 
-Every page should include a title and a description.
+Her sayfanın bir başlığı ve bir açıklaması olmalıdır.
 
-For a full list of what can go between the `---`, check out [the Docusaurus documentation](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
+`---`, etiketlerinin arasında nelerin bulunabileceği için dökümasyonu inceleyin. [the Docusaurus documentation](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
 
-### Headings
+### Başlıklar
 
-Don't create a level 1 heading (`<h1>`) with `#` as this is generated automatically. Your first heading should _always_ be `##`
+seviye 1 başlık için (`<h1>`) kullanmayın. `#` otomatik olarak oluşturduğu için _her zaman_ `##` ile 1. seviye başlık belirleyin.
 
 - ❌
 
   ```md
-  # My Title
+  # Benim Başlığım
 
-  This is documentation for ...
+  Bu dökümasyon ... için
 
   # Sub-Section
   ```
@@ -111,9 +110,9 @@ Don't create a level 1 heading (`<h1>`) with `#` as this is generated automatica
 - ✔
 
   ```md
-  This is documentation for ...
+  Bu dökümasyon ... için
 
-  ## Sub-Section
+  ## Alt Bölüm
   ```
 
 ### Use `Code` Snippets For Technical References
