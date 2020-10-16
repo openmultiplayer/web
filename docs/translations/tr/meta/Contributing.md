@@ -5,7 +5,7 @@ description: SA-MP ve open.mp wikisine katkıda bulunmak istiyorsanız bu başl�
 
 Bu dökümantasyon kaynağı katkıda bulunmak isteyen herkese açıktır. İhtiyacınız olan şeyler [GitHub](https://github.com) üzerinden bir hesap ve birazcık boş zaman. Git'i bilmenize gerek yok, giriş yaptığınız arayüz web arayüzünden her şeyi yapabilirsiniz.
 
-Belirli bir dilin sayfasını geliştirmek veya yaratmak istiyorsanız, [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) dosyasına diliniz ve kullanıcı adınızı içeren bir satır yazın.
+Belirli bir dilin sayfasını yaratmak istiyorsanız, [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) dosyasına diliniz ve kullanıcı adınızı içeren bir satır yazın. (TR sayfalarını geliştirecekseniz bu sayfayı düzenlemenize gerek yok).
 
 ## İçerik Düzenlemek
 
