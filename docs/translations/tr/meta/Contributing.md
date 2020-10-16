@@ -13,7 +13,7 @@ Her sayfada düzenleme yapabilmek Github düzenleme sayfasına yönlendiren buto
 
 !["Edit this page" link present on each wiki page](/images/contributing/edit-this-page.png)
 
-Örneğin, [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) bu tıklatma [this page](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) sizi bu dosya üzerinde değişiklik yapmanız için yönlendirir. (eğer ki github üzerinden oturum açtıysanız).
+Örneğin, [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) bu tıklatma [bu sayfa](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) sizi bu dosya üzerinde değişiklik yapmanız için yönlendirir. (eğer ki github üzerinden oturum açtıysanız).
 
 Düzenlemenizi yapın ve bir "Pull Request" gönderin. Wiki üzerinde çalışan takım üyeleri yaptığınız değişiklikleri onaylandığında(incelenmesi ardından) yaptığınız değişiklikler yayınlanır.
 
@@ -23,7 +23,6 @@ Yeni içerik eklemek biraz daha fazla ilgi ister. Bunu iki şekilde yapabilirsin
 
 ### Github Web Arayüzünü Kullanmak
 
-When browsing a directory on GitHub, there's an "Add file" button on the top right corner of the file list:
 Github'da bir dizine göz atarken dosya listeninin en sağ üst köşesinde bir "Add File(Dosya Ekle)" düğmesini göreceksiniz.
 
 !["Add file" button](/images/contributing/add-new-file.png)
