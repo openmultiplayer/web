@@ -5,7 +5,7 @@ description: Podaje odwróconą wartość arcus tangensa w radianach.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
+import T from '../../../../../src/components/templates.js'
 
 <T.LowercaseNote />
 

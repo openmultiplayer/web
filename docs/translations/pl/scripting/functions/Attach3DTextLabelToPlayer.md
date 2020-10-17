@@ -5,7 +5,7 @@ description: Przyczepia tekst 3D do gracza.
 tags: ["player", "3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
+import T from '../../../../../src/components/templates.js'
 
 <T.VersionWarn version='SA-MP 0.3a' />
 
