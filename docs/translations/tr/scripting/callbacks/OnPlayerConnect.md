@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 }
 ```
 
-## Notes
+## Notlar
 
 :::tip
 
