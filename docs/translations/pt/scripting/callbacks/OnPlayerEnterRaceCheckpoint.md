@@ -1,17 +1,17 @@
 ---
-id: OnPlayerEnterCheckpoint
-title: OnPlayerEnterCheckpoint
-description: Esta callback é chamada quando um jogador entre em um checkpoint colocado para aquele jogador.
-tags: ["player", "checkpoint"]
+id: OnPlayerEnterRaceCheckpoint
+title: OnPlayerEnterRaceCheckpoint
+description: Esta callback é chamada quando um jogador entra em um checkpoint de corrida.
+tags: ["player", "checkpoint", "racecheckpoint"]
 ---
 
 ## Descrição
 
-Esta callback é chamada quando um jogador entre em um checkpoint colocado para aquele jogador.
+Esta callback é chamada quando um jogador entra em um checkpoint de corrida.
 
-| Nome     | Descrição                           |
-| -------- | ----------------------------------- |
-| playerid | O jogador que entrou no checkpoint. |
+| Nome     | Descrição                                          |
+| -------- | -------------------------------------------------- |
+| playerid | O ID do jogador que entrou no chekpoint de corrida |
 
 ## Retorno
 
@@ -20,18 +20,9 @@ Sempre é chamada primeiro em filterscripts.
 ## Exemplos
 
 ```c
-//Neste exemplo o checkpoint é criado para o jogador quando spawna,
-//o qual cria um veículo e desativa o checkpoint.
-public OnPlayerSpawn(playerid)
+public OnPlayerEnterRaceCheckpoint(playerid)
 {
-    SetPlayerCheckpoint(playerid, 1982.6150, -220.6680, -0.2432, 3.0);
-    return 1;
-}
-
-public OnPlayerEnterCheckpoint(playerid)
-{
-    CreateVehicle(520, 1982.6150, -221.0145, -0.2432, 82.2873, -1, -1, 60000);
-    DisablePlayerCheckpoint(playerid);
+    printf("Jogador %d entrou em um checkpoint de corrida!", playerid);
     return 1;
 }
 ```
