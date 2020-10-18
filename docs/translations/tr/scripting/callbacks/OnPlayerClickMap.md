@@ -15,11 +15,11 @@ Bu callback SA-MP 0.3d sürümünde eklendi ve önceki sürümlerde çalışmaz!
 
 Bu callback oyuncu haritada bir yer işaretlediğinde çağrılır.
 
-| Ad     | Açıklama                                                                   |
-| -------- | ----------------------------------------------------------------------------- |
-| playerid | Oyuncunun id'si                            |
-| Float:fX | İşaretlediği yerin X koordinatı.                               |
-| Float:fY | İşaretlediği yerin Y koordinatı.                               |
+| Ad       | Açıklama                                                        |
+| -------- | --------------------------------------------------------------- |
+| playerid | Oyuncunun id'si                                                 |
+| Float:fX | İşaretlediği yerin X koordinatı.                                |
+| Float:fY | İşaretlediği yerin Y koordinatı.                                |
 | Float:fZ | İşaretlediği yerin Z koordinatı. (kullanışsız - notu inceleyin) |
 
 ## Dönence
