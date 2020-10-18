@@ -1,7 +1,7 @@
 ---
 id: SetPlayerFacingAngle
-título: SetPlayerFacingAngle
-descrição: Define o ângulo de face de um jogador (rotação Z).
+title: SetPlayerFacingAngle
+description: Define o ângulo de face de um jogador (rotação Z).
 tags: []
 ---
 
