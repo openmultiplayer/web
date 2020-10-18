@@ -9,8 +9,8 @@ tags: []
 
 Bu callback obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
 
-| Ad     | Açıklama                         |
-| -------- | ----------------------------------- |
+| Ad       | Açıklama             |
+| -------- | -------------------- |
 | objectid | Hareket eden obje id |
 
 ## Çalışınca Vereceği Sonuçlar
