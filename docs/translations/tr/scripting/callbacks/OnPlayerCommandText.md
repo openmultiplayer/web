@@ -9,9 +9,9 @@ tags: ["player"]
 
 Bu callback oyuncu chat ekranında herhangi bir komut kullandığında çağrılır. '/' ile başlayan her şey komuttur ve bu callbacki çağırır. (örnek: /yardim)
 
-| Ad      | Açıklama                                                 |
-| --------- | ----------------------------------------------------------- |
-| playerid  | Komutu kullanan oyuncunun id'si.                |
+| Ad        | Açıklama                                 |
+| --------- | ---------------------------------------- |
+| playerid  | Komutu kullanan oyuncunun id'si.         |
 | cmdtext[] | Kullanılan komut ('/' işareti de dahil). |
 
 ## Dönence
