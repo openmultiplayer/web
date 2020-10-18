@@ -9,10 +9,10 @@ tags: []
 
 Define o ângulo para qual o jogador está voltado (olhando) (rotação Z).
 
-| Nome        | Descrição                                           |
-| ----------- | --------------------------------------------------- |
-| playerid    | O ID do jogador para definir o ângulo.              |
-| Float: ang  | O ângulo que o jogador deve estar voltado.          |
+| Nome       | Descrição                                  |
+| ---------- | ------------------------------------------ |
+| playerid   | O ID do jogador para definir o ângulo.     |
+| Float: ang | O ângulo que o jogador deve estar voltado. |
 
 ## Retorno
 
@@ -25,6 +25,7 @@ Define o ângulo para qual o jogador está voltado (olhando) (rotação Z).
 ```c
 SetPlayerFacingAngle(playerid, 0); // Posiciona o jogador para o norte.
 ```
+
 ```c
         norte (0)
            |
