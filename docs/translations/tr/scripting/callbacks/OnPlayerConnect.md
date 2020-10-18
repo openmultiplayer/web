@@ -9,8 +9,8 @@ tags: ["player"]
 
 Bu callback oyuncu sunucuya bağlandığında çağrılır.
 
-| Ad     | Açıklama                          |
-| -------- | ------------------------------------ |
+| Ad       | Açıklama                  |
+| -------- | ------------------------- |
 | playerid | Bağlanan oyuncunun id'si. |
 
 ## Dönence
