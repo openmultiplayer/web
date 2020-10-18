@@ -1,18 +1,18 @@
 ---
 id: SetPlayerFacingAngle
 title: SetPlayerFacingAngle
-description: Define o ângulo de face de um jogador (rotação Z).
+description: Define o ângulo para qual o jogador está voltado (olhando) (rotação Z).
 tags: []
 ---
 
 ## Descrição
 
-Define o ângulo de face de um jogador (rotação Z).
+Define o ângulo para qual o jogador está voltado (olhando) (rotação Z).
 
 | Nome        | Descrição                                           |
 | ----------- | --------------------------------------------------- |
 | playerid    | O ID do jogador para definir o ângulo.              |
-| Float: ang  | O ângulo que o jogador deve ser posicionado.        |
+| Float: ang  | O ângulo que o jogador deve estar voltado.          |
 
 ## Retorno
 
@@ -37,7 +37,7 @@ SetPlayerFacingAngle(playerid, 0); // Posiciona o jogador para o norte.
 
 :::warning
 
-Os ângulos são invertidos no GTA: SA; 90 graus seria o leste no mundo real, mas no GTA: SA 90 graus seria na verdade o oeste. Norte e Sul ainda são 0/360 e 180. Para converter isso, basta fazer o ângulo de 360º.
+Os ângulos são invertidos no GTA: SA; 90 graus seria o leste no mundo real, mas no GTA: SA 90 graus seria na verdade o oeste. Norte e Sul ainda são 0/360 e 180. Para converter isso, basta fazer 360 - ângulo.
 
 :::
 
