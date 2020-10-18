@@ -15,11 +15,11 @@ Bu callback SA-MP 0.3a sürümünde eklendi ve önceki sürümlerde çalıştır
 
 Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
 
-| Ad            | Açıklama                                                      |
-| --------------- | ---------------------------------------------------------------- |
-| playerid        | Tıklayan oyuncunun id'si. |
-| clickedplayerid | Tıklanılan oyuncunun id'si.                        |
-| source          | Oyuncunun tıklamasının kaynağı.                                |
+| Ad              | Açıklama                        |
+| --------------- | ------------------------------- |
+| playerid        | Tıklayan oyuncunun id'si.       |
+| clickedplayerid | Tıklanılan oyuncunun id'si.     |
+| source          | Oyuncunun tıklamasının kaynağı. |
 
 ## Dönence
 
@@ -45,7 +45,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 
 :::tip
 
-Şuanlık sadece bir 'source'  var (0 - CLICK_SOURCE_SCOREBOARD). İlerde daha fazla kaynak eklenebilir.
+Şuanlık sadece bir 'source' var (0 - CLICK_SOURCE_SCOREBOARD). İlerde daha fazla kaynak eklenebilir.
 
 :::
 
