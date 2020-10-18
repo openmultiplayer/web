@@ -9,10 +9,10 @@ tags: ["player"]
 
 Bu callback oyuncu sunucudan ayrıldığında çağrılır.
 
-| Name     | Description                                        |
-| -------- | -------------------------------------------------- |
-| playerid | Sunucudan ayrılan oyuncunun id'si.            |
-| reason   | Sunucudan ayrılma sebebi. |
+| Name     | Description                        |
+| -------- | ---------------------------------- |
+| playerid | Sunucudan ayrılan oyuncunun id'si. |
+| reason   | Sunucudan ayrılma sebebi.          |
 
 ## Returns
 
