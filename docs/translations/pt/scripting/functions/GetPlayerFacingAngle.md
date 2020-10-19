@@ -9,10 +9,10 @@ tags: []
 
 Obtém o ângulo que um jogador está voltado (rotação Z).
 
-| Nome          | Descrição                                                    |
-| ------------- | -----------------------------------------------------------  |
-| playerid      | O jogador do qual você deseja obter o ângulo Z.              |
-| & Float: ang  | O Float para armazenar o ângulo Z, passado por referência.   |
+| Nome         | Descrição                                                  |
+| ------------ | ---------------------------------------------------------- |
+| playerid     | O jogador do qual você deseja obter o ângulo Z.            |
+| & Float: ang | O Float para armazenar o ângulo Z, passado por referência. |
 
 ## Retorno
 
