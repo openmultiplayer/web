@@ -9,7 +9,7 @@ tags: []
 
 :::warning
 
-Esta função foi adicionada no SA-MP 0.3.DL R1 e não funcionará nas versões anteriores!
+Esta callback foi implementada no SA-MP 0.3.DL-R1 e não funcionará em versões anteriores.
 
 :::
 
