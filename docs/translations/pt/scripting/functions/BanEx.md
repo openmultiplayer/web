@@ -9,10 +9,10 @@ tags: []
 
 Bane um jogador com um motivo específico.
 
-| Nome        | Descrição                                     |
-| ----------- | --------------------------------------------- |
-| playerid    | O ID do jogador a ser banido.                 |
-| reason      | O motivo do banimento.                        |
+| Nome     | Descrição                     |
+| -------- | ----------------------------- |
+| playerid | O ID do jogador a ser banido. |
+| reason   | O motivo do banimento.        |
 
 ## Retorno
 
