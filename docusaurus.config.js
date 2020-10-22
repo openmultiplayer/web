@@ -91,8 +91,7 @@ module.exports = {
             },
             {
               label: "Blog",
-              to: "blog",
-              href: "https://open.mp/blog",
+              to: "/blog",
             },
             {
               label: "GitHub",
@@ -128,8 +127,8 @@ module.exports = {
         },
         sitemap: {
           cacheTime: 600 * 1000,
-          changefreq: "daily",
-          priority: 0.5,
+          changefreq: "weekly",
+          priority: 1,
           trailingSlash: false,
         },
       },

@@ -11,7 +11,7 @@ If you want to help maintain a specific language, open a PR against the [`CODEOW
 
 On each page, there's a button that takes you to the GitHub page for editing:
 
-!["Edit this page" link present on each wiki page](/images/contributing/edit-this-page.png)
+![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
 
 For example, clicking this on [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) takes you to [this page](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) which presents you with a text editor to make changes to the file (assuming you're logged in to GitHub).
 
@@ -23,9 +23,9 @@ Adding new content is a little more involved. You can do it two ways:
 
 ### GitHub Interface
 
-When browsing a directory on GitHub, there's an "Add file" button on the top right corner of the file list:
+When browsing a directory on GitHub, there's an Add file button on the top right corner of the file list:
 
-!["Add file" button](/images/contributing/add-new-file.png)
+![Add file button](/images/contributing/add-new-file.png)
 
 You can either upload a Markdown file you've written already or write it directly into the GitHub text editor.
 

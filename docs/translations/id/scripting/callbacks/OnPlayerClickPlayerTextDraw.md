@@ -75,8 +75,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Ketika player menekan ESC untuk membatalkan pemilihan textdraw, OnPlayerClickTextDraw akan dipanggil dengan ID textraw yang menjadi 'INVALID_TEXT_DRAW'.
-OnPlayerClickPlayerTextDraw tentu tidak akan terpanggil.
+Ketika player menekan ESC untuk membatalkan pemilihan textdraw, OnPlayerClickTextDraw akan dipanggil dengan ID textraw yang menjadi 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw tentu tidak akan terpanggil.
 
 :::
 

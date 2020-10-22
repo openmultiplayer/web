@@ -25,8 +25,7 @@ List of weapon skills that are used to set player's skill level using [SetPlayer
 
 ## Levels
 
-There are 3 weapon skill levels: Poor, Gangster and Hitman.
-The follow table shows the weapon skill levels needed to advance to the next skill level:
+There are 3 weapon skill levels: Poor, Gangster and Hitman. The follow table shows the weapon skill levels needed to advance to the next skill level:
 
 | Weapon          | Poor | Gangster | Hitman |
 | --------------- | ---- | -------- | ------ |

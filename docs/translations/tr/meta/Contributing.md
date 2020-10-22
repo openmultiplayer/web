@@ -11,7 +11,7 @@ Belirli bir dilin sayfasını yaratmak istiyorsanız, [`CODEOWNERS`](https://git
 
 Her sayfada düzenleme yapabilmek Github düzenleme sayfasına yönlendiren buton vardır.
 
-!["Edit this page" link present on each wiki page](/images/contributing/edit-this-page.png)
+![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
 
 Örneğin, [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) bu tıklatma [bu sayfa](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) sizi bu dosya üzerinde değişiklik yapmanız için yönlendirir. (eğer ki github üzerinden oturum açtıysanız).
 
@@ -25,7 +25,7 @@ Yeni içerik eklemek biraz daha fazla ilgi ister. Bunu iki şekilde yapabilirsin
 
 Github'da bir dizine göz atarken dosya listeninin en sağ üst köşesinde bir "Add File(Dosya Ekle)" düğmesini göreceksiniz.
 
-!["Add file" button](/images/contributing/add-new-file.png)
+![Add file button](/images/contributing/add-new-file.png)
 
 Önceden yazdığınız bir Markdown(.md) dosyasını yükleyebilir veya doğrudan GitHub metin düzenleyicisini kullanarak yeni bir içerik ekleyebilirsiniz.
 

@@ -11,7 +11,7 @@ Ako želite pomoći u održavanju određenog jezika, otvorite _pull request_(PR)
 
 Na svakoj stranici nalazi se dugme koje vas dovodi na GitHub stranicu za uređivanje:
 
-!["Uredi ovu stranicu"](/images/contributing/edit-this-page.png)
+![Uredi ovu stranicu](/images/contributing/edit-this-page.png)
 
 Naprimjer, Ukoliko kliknete ovo dugme na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) odvesti će vas na [ovu stranicu](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) koji vam nudi uređivač teksta kako biste mogli napraviti promjene u fajlu (Pod pretpostavkom da ste prijavljeni na vaš GitHub račun).
 
@@ -25,7 +25,7 @@ Dodavanje novog sadržaja je malo više komplicirano. Možete to uraditi na dva 
 
 Kada pregledavate direktorijum na GitHub-u, Tu se nalazi "Dodaj fajl" (Add File) dugme u gornjem desnom ćošku od liste fajlova:
 
-!["Dodaj fajl" dugme](/images/contributing/add-new-file.png)
+![Dodaj fajl dugme](/images/contributing/add-new-file.png)
 
 Možete prenijeti MarkDown fajl koji ste već prethodno napisali ili ga napisati u GitHub tekst uređivaču.
 
@@ -182,8 +182,7 @@ Većina sadržaja je premještena, ali ako pronađete stranicu koja fali, ovdje 
 
    ![image](/images/contributing/77befe2749fd.png)
 
-3. Kopirajte unutrašnji HTML tog elementa
-   ![image](/images/contributing/8c7c75cfabad.png)
+3. Kopirajte unutrašnji HTML tog elementa ![image](/images/contributing/8c7c75cfabad.png)
 
    Sada imate _samo_ HTML kod pravog _sadržaja_ stranice, stvari koje nas zanimaju, i možete ih konvertovati u Markdown.
 
