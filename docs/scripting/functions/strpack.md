@@ -34,7 +34,6 @@ strpack(string, "Hi, how are you?");
 
 - [strcmp](strcmp): Compare two strings to check if they are the same.
 - [strfind](strfind): Search for a string in another string.
-- [strtok](strtok): Get the next 'token' (word/parameter) in a string.
 - [strins](../function/strins): Insert text into a string.
 - [strlen](../function/strlen): Get the length of a string.
 - [strmid](strmid): Extract part of a string into another string.

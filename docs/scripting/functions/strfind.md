@@ -36,7 +36,6 @@ if (strfind("Are you in here?", "you", true) != -1) //returns 4, because the st
 ## Related Functions
 
 - [strcmp](strcmp.md): Compare two strings to check if they are the same.
-- [strtok](strtok.md): Get the next 'token' (word/parameter) in a string.
 - [strdel](strdel.md): Delete part of a string.
 - [strins](strins.md): Insert text into a string.
 - [strlen](strlen.md): Get the length of a string.
