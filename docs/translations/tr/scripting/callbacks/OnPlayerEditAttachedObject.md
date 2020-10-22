@@ -15,21 +15,21 @@ Bu callback SA-MP 0.3e sürümünde eklendi ve önceki sürümlerde çalıştır
 
 Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
 
-| Ad          | Açıklama                                                   |
-| -------------- | ------------------------------------------------------------- |
-| playerid       | Düzenlemeyi bitiren oyuncunun id'si.                 |
+| Ad             | Açıklama                                                          |
+| -------------- | ----------------------------------------------------------------- |
+| playerid       | Düzenlemeyi bitiren oyuncunun id'si.                              |
 | response       | Eğer iptal ettiyse 0, kaydet tuşuna bastıysa 1 değerini döndürür. |
-| modelid        | model id'si.              |
-| boneid         | objenin takıldığı kemik numarası.               |
-| Float:fOffsetX | Editlenen objenin X offset'i.          |
-| Float:fOffsetY | Editlenen objenin Y offset'i.          |
-| Float:fOffsetZ | Editlenen objenin Z offset'i.          |
-| Float:fRotX    | Editlenen objenin X açısı.       |
-| Float:fRotY    | Editlenen objenin Y açısı.       |
-| Float:fRotZ    | Editlenen objenin Z açısı.        |
-| Float:fScaleX  | Editlenen objenin X skalası.           |
-| Float:fScaleY  | Editlenen objenin Y skalası.           |
-| Float:fScaleZ  | Editlenen objenin Z skalası.           |
+| modelid        | model id'si.                                                      |
+| boneid         | objenin takıldığı kemik numarası.                                 |
+| Float:fOffsetX | Editlenen objenin X offset'i.                                     |
+| Float:fOffsetY | Editlenen objenin Y offset'i.                                     |
+| Float:fOffsetZ | Editlenen objenin Z offset'i.                                     |
+| Float:fRotX    | Editlenen objenin X açısı.                                        |
+| Float:fRotY    | Editlenen objenin Y açısı.                                        |
+| Float:fRotZ    | Editlenen objenin Z açısı.                                        |
+| Float:fScaleX  | Editlenen objenin X skalası.                                      |
+| Float:fScaleY  | Editlenen objenin Y skalası.                                      |
+| Float:fScaleZ  | Editlenen objenin Z skalası.                                      |
 
 ## Dönence
 
