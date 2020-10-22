@@ -4,8 +4,6 @@ module.exports = {
   url: "https://www.open.mp/",
   baseUrl: "/",
   favicon: "public/favicon.ico",
-  onBrokenLinks: "ignore", // this logs a LOT when set to warn due to incomplete translated docs
-  onDuplicateRoutes: "warn",
   organizationName: "openmultiplayer",
   projectName: "wiki",
   themeConfig: {
