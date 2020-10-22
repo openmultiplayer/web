@@ -14,7 +14,7 @@ module.exports = {
         src: "public/logo-light-trans.svg",
         href: "/docs/",
       },
-      links: [
+      items: [
         {
           to: "docs/index",
           activeBasePath: "docs",
