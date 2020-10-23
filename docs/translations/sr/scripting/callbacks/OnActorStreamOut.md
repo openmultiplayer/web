@@ -11,7 +11,7 @@ tags: []
 
 :::
 
-## Description
+## Опис
 
 Овај колбек је позван када се актор престане приказивати у играчевом клијенту.
 
@@ -20,11 +20,11 @@ tags: []
 | actorid     | ID актора који се престао приказивати играчу. |
 | forplayerid | ID играча коме се актор престао приказивати.  |
 
-## Returns
+## Узвраћања
 
 Увек се позива први у филтерскриптама.
 
-## Examples
+## Примери
 
 ```c
 public OnActorStreamOut(actorid, forplayerid)
@@ -36,7 +36,7 @@ public OnActorStreamOut(actorid, forplayerid)
 }
 ```
 
-## Notes
+## Белешке
 
 :::tip
 
@@ -44,4 +44,4 @@ public OnActorStreamOut(actorid, forplayerid)
 
 :::
 
-## Related Functions
+## Сродне функције
