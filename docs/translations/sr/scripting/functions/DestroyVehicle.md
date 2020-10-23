@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Unistava vozilo. Vozilo odmah nestaje.
 
-| Name      | Description                       |
-| --------- | --------------------------------- |
-| vehicleid | ID vozila koje se unistava.       |
+| Name      | Description                 |
+| --------- | --------------------------- |
+| vehicleid | ID vozila koje se unistava. |
 
 ## Returns
 

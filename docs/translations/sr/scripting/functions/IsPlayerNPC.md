@@ -13,9 +13,9 @@ import T from '../../../src/components/templates.js'
 
 Provera da li je igrac pravi igrac ili NPC.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
-| playerid | ID igraca koji se proverava    |
+| Name     | Description                 |
+| -------- | --------------------------- |
+| playerid | ID igraca koji se proverava |
 
 ## Returns
 

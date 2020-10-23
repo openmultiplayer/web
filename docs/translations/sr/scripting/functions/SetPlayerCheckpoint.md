@@ -9,13 +9,13 @@ tags: ["player", "checkpoint"]
 
 Postavlja checkpoint (crveni krug) za igraca. Takodje pokazuje crvenu kocku na mapi. Kada igrac udje u checkpoint, OnPlayerEnterCheckpoint se poziva i izvrsava se ono sto je u njemu.
 
-| Name       | Description                                        |
-| ---------- | -------------------------------------------------- |
-| playerid   | ID igraca kome se postavlja checkpoint             |
-| Float:x    | X koordinata checkpointa.                          |
-| Float:y    | Y koordinata checkpointa.                          |
-| Float:z    | Z koordinata checkpointa.                          |
-| Float:size | Velicina checkpointa                               |
+| Name       | Description                            |
+| ---------- | -------------------------------------- |
+| playerid   | ID igraca kome se postavlja checkpoint |
+| Float:x    | X koordinata checkpointa.              |
+| Float:y    | Y koordinata checkpointa.              |
+| Float:z    | Z koordinata checkpointa.              |
+| Float:size | Velicina checkpointa                   |
 
 ## Returns
 

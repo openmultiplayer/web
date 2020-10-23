@@ -9,10 +9,10 @@ tags: ["player"]
 
 Podesava pancir igraca.
 
-| Name         | Description                                                                                                                             |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | ID igraca kome se podesava pancir                                                                                                       |
-| Float:armour | Kolicina pancira koja se daje, u procentima(float). Vrednosti vece od 100 mogu da se postave, ali se nece prikazivati u HUD-u igraca    |
+| Name         | Description                                                                                                                          |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| playerid     | ID igraca kome se podesava pancir                                                                                                    |
+| Float:armour | Kolicina pancira koja se daje, u procentima(float). Vrednosti vece od 100 mogu da se postave, ali se nece prikazivati u HUD-u igraca |
 
 ## Returns
 

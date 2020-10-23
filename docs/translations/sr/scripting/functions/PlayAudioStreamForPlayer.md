@@ -13,15 +13,15 @@ import T from '../../../src/components/templates.js'
 
 Pusta audio stream igracu. Audio fajlovi takodje rade (.mp3).
 
-| Name           | Description                                                                                                      |
-| -------------- | ---------------------------------------------------------------------------------------------------------------- |
-| playerid       | ID igraca kome se pusta audio                                                                                    |
-| url[]          | Link koji se pusta. Pravilni formati su mp3 i ogg/vorbis. Link ka .pls fajlu (playlista) ce pustiti playlistu    |
-| Float:PosX     | Pozicija X na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                    |
-| Float:PosY     | Pozicija Y na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                    |
-| Float:PosZ     | Pozicija Z na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                    |
-| Float:distance | Razdaljina do koje se cuje audio. Nema efekta osim ako je usepos podesen na 1.                                   |
-| usepos         | Koristi postavljenu poziciju i distancu. Default neaktivan (0).                                                  |
+| Name           | Description                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------- |
+| playerid       | ID igraca kome se pusta audio                                                                                 |
+| url[]          | Link koji se pusta. Pravilni formati su mp3 i ogg/vorbis. Link ka .pls fajlu (playlista) ce pustiti playlistu |
+| Float:PosX     | Pozicija X na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                 |
+| Float:PosY     | Pozicija Y na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                 |
+| Float:PosZ     | Pozicija Z na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                 |
+| Float:distance | Razdaljina do koje se cuje audio. Nema efekta osim ako je usepos podesen na 1.                                |
+| usepos         | Koristi postavljenu poziciju i distancu. Default neaktivan (0).                                               |
 
 ## Returns
 

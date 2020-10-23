@@ -13,12 +13,12 @@ import T from '../../../src/components/templates.js'
 
 Stampa string u konzolu servera (ne u in-game chatu) i logovima (server_log)
 
-| Name                  | Description                   |
-| --------------------- | ----------------------------- |
-| string[]              | String koji se stampa         |
-| foreground (optional) | Boja teksta                   |
-| background (optional) | Pozadinska boja               |
-| highlight (optional)  | Highlign boja                 |
+| Name                  | Description           |
+| --------------------- | --------------------- |
+| string[]              | String koji se stampa |
+| foreground (optional) | Boja teksta           |
+| background (optional) | Pozadinska boja       |
+| highlight (optional)  | Highlign boja         |
 
 ## Returns
 
