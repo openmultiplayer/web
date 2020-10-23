@@ -36,7 +36,6 @@ strcat(string, " World!");
 
 - [strcmp](strcmp.md): Compare two strings to check if they are the same.
 - [strfind](strfind.md): Search for a string in another string.
-- [strtok](strtok.md): Get the next 'token' (word/parameter) in a string.
 - [strdel](strdel.md): Delete part of a string.
 - [strins](strins.md): Insert text into a string.
 - [strlen](strlen.md): Get the length of a string.

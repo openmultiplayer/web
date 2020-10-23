@@ -49,36 +49,36 @@ Be careful, using too many text colors or special characters in one gametext may
 
 ### Style 0
 
-![GameTextStyle0](/images/gameTextStyles/120px-Game-text-type0.png)
+![GameTextStyle0](/images/gametextstyles/style0.png)
 
 **Appears for 9 seconds regardless of time setting. Hides textdraws and any other gametext on screen.**
 
 ### Style 1
 
-![GameTextStyle1](/images/gameTextStyles/120px-Game-text-type1.png)
+![GameTextStyle1](/images/gametextstyles/style1.png)
 
 **Fades out after 8 seconds, regardless of time set. If you have a time setting longer than that, it will re-appear after fading out and repeat until the time ends.**
 
 ### Style 2
 
-![GameTextStyle2](/images/gameTextStyles/120px-Game-text-type2.png)
+![GameTextStyle2](/images/gametextstyles/style2.png)
 
 **Does not disappear until the player respawns.**
 
 ### Style 3
 
-![GameTextStyle3](/images/gameTextStyles/120px-Game-text-type3.png)
+![GameTextStyle3](/images/gametextstyles/style3.png)
 
 ### Style 4
 
-![GameTextStyle4](/images/gameTextStyles/120px-Game-text-type4.png)
+![GameTextStyle4](/images/gametextstyles/style4.png)
 
 ### Style 5
 
-![GameTextStyle5](/images/gameTextStyles/120px-Game-text-type5.png)
+![GameTextStyle5](/images/gametextstyles/style5.png)
 
 **Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed'.**
 
 ### Style 6
 
-![GameTextStyle6](/images/gameTextStyles/120px-Game-text-type6.png)
+![GameTextStyle6](/images/gametextstyles/style6.png)

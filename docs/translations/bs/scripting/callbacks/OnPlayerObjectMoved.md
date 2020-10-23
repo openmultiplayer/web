@@ -32,7 +32,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 :::tip
 
-This callback can also be called for NPC.
+Ovaj callback pozvat će i NPC.
 
 :::
 

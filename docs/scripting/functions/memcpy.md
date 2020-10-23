@@ -42,7 +42,6 @@ print(destination);
 
 - [strcmp](strcmp.md): Compare two strings to see if they are the same.
 - [strfind](strfind.md): Search for a substring in a string.
-- [strtok](strtok.md): Search for a variable typed after a space.
 - [strdel](strdel.md): Delete part/all of a string.
 - [strins](strins.md): Put a string into another string.
 - [strlen](strlen.md): Check the length of a string.

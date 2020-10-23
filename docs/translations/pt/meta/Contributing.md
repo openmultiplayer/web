@@ -9,7 +9,7 @@ Esta documentação está aberta para qualquer um contribuir para seu desenvolvi
 
 Em cada página há um botão que o(a) leverá para uma página no GitHub para editar:
 
-!["Edit this page" link present on each wiki page](/images/contributing/edit-this-page.png)
+![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
 
 Por exemplo, clicando em [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) o(a) levará para [esta página](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) a qual contém um editor de texto para fazer algumas mudanças no arquivo(assumindo que você esteja logado(a) no GitHub).
 
@@ -21,9 +21,9 @@ Adicionar um novo conteúdo pode ser um pouco mais complicado, poderá fazer de 
 
 ### Interface do GitHub
 
-Quando pesquisar um diretório no GitHub, haverá um botão "Add File" no canto direito superior do arquivo:
+Quando pesquisar um diretório no GitHub, haverá um botão Add file no canto direito superior do arquivo:
 
-!["Add file" button](/images/contributing/add-new-file.png)
+![Add file button](/images/contributing/add-new-file.png)
 
 Você pode tanto enviar um arquivo 'Markdown' que você já escreveu, ou escrever diretamento no editor de texto do GitHub.
 

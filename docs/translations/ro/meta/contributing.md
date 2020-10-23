@@ -11,7 +11,7 @@ Dacă doriți să ajutați la menținerea unei limbi specifice, deschideți un P
 
 În fiecare pagină, există un buton care vă duce la pagina GitHub pentru editare:
 
-!["Edit this page"](/images/contributing/edit-this-page.png)
+![Edit this page](/images/contributing/edit-this-page.png)
 
 De exemplu, făcând clic pe aceasta pe [SetVehicleAngularVelocity](https://www.open.mp/docs/scripting/functions/SetVehicleAngularVelocity) vă duce la [această pagină](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) care vă prezintă un editor de text pentru a face modificări la fișier (presupunând că sunteți conectat la GitHub).
 
@@ -25,7 +25,7 @@ Adăugarea de conținut nou este puțin mai implicată. Puteți face acest lucru
 
 Când răsfoiți un director pe GitHub, există un buton „Add File” în colțul din dreapta sus al listei de fișiere:
 
-!["Add file"](/images/contributing/add-new-file.png)
+![Add file](/images/contributing/add-new-file.png)
 
 Puteți încărca fie un fișier Markdown pe care l-ați scris deja, fie îl puteți scrie direct în editorul de text GitHub.
 
