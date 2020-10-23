@@ -9,13 +9,13 @@ tags: []
 
 Kreira eksploziju na odredjenim koordinatama.
 
-| Ime          | Opis                               |
-| ------------ | ---------------------------------- |
-| Float:X      | X koordinata eksplozije            |
-| Float:Y      | Y koordinata eksplozije            |
-| Float:Z      | Z koordinata eksplozije            |
-| type         | Tip eksplozije                     |
-| Float:radius | Velicina eksplozije                |
+| Ime          | Opis                    |
+| ------------ | ----------------------- |
+| Float:X      | X koordinata eksplozije |
+| Float:Y      | Y koordinata eksplozije |
+| Float:Z      | Z koordinata eksplozije |
+| type         | Tip eksplozije          |
+| Float:radius | Velicina eksplozije     |
 
 ## Uzvracanja
 

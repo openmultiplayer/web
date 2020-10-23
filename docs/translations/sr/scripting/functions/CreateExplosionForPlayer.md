@@ -15,14 +15,14 @@ Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
 
 Kreira eksploziju koja je vidljiva samo jednom igracu. Funkcija moze da se koristi kako bi se eksplozija odvojila od ostalih igraca ili prikazala u posebnom virtuelnom svetu.
 
-| Ime          | Opis                                              |
-| ------------ | ------------------------------------------------- |
-| playerid     | ID igraca kome kreiramo eksploziju.               |
-| Float:X      | X koordinata eksplozije                           |
-| Float:Y      | Y koordinata eksplozije                           |
-| Float:Z      | Z koordinata eksplozije                           |
-| type         | Tip eksplozije.                                   |
-| Float:Radius | Velicina eksplozije.                              |
+| Ime          | Opis                                |
+| ------------ | ----------------------------------- |
+| playerid     | ID igraca kome kreiramo eksploziju. |
+| Float:X      | X koordinata eksplozije             |
+| Float:Y      | Y koordinata eksplozije             |
+| Float:Z      | Z koordinata eksplozije             |
+| type         | Tip eksplozije.                     |
+| Float:Radius | Velicina eksplozije.                |
 
 ## Uzvracanja
 
