@@ -11,7 +11,7 @@ tags: []
 
 :::
 
-## Description
+## Опис
 
 Овај колбек се позове када се актор појави у играчевом клијенту.
 
@@ -20,11 +20,11 @@ tags: []
 | actorid     | ID актора који се појавио играчу. |
 | forplayerid | ID играћа коме се актор појавио.  |
 
-## Returns
+## Узвраћања
 
 Увек се позива први у филтерскриптама.
 
-## Examples
+## Примери
 
 ```c
 public OnActorStreamIn(actorid, forplayerid)
@@ -36,7 +36,7 @@ public OnActorStreamIn(actorid, forplayerid)
 }
 ```
 
-## Notes
+## Белешке
 
 :::tip
 
@@ -44,4 +44,4 @@ public OnActorStreamIn(actorid, forplayerid)
 
 :::
 
-## Related Functions
+## Сродне функције
