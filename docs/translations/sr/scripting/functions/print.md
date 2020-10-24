@@ -5,7 +5,7 @@ description: Stampa string u konzolu servera (ne u in-game chatu) i logovima (se
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
+import T from '../../../../../src/components/templates.js'
 
 <T.LowercaseNote />
 

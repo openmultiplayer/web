@@ -4,6 +4,7 @@ module.exports = {
   url: "https://www.open.mp/",
   baseUrl: "/",
   favicon: "public/favicon.ico",
+  onBrokenLinks: "ignore",
   organizationName: "openmultiplayer",
   projectName: "wiki",
   themeConfig: {
