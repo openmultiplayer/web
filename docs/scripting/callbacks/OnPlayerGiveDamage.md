@@ -11,7 +11,7 @@ import T from '../../../src/components/templates.js'
 
 ## Açıklama
 
-Bir oyuncu, baika bir oyuncuya hasar verdiğinde bu callback çağırılır.
+Bir oyuncu, başka bir oyuncuya hasar verdiğinde bu callback çağırılır.
 
 | Name      | Description                                                                                                                                           |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
