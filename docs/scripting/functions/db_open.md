@@ -14,9 +14,9 @@ import T from '../../../src/components/templates.js'
 
 Bu fonksiyon, /scriptfiles klasörü içerisinde bir SQLite veritabanı açmak için kullanılır.
 
-| İsim   | Açıklama                  |
-| ------ | ------------------------- |
-| name[] | Veritabanının dosya adı.  |
+| İsim   | Açıklama                 |
+| ------ | ------------------------ |
+| name[] | Veritabanının dosya adı. |
 
 ## Geri Döndürülen Değerler
 
