@@ -15,12 +15,12 @@ Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
 
 Kreira textdraw za samo jednog igraca. Ovo moze da se koristi kao izbegavanje limita za globalne textdraw-ove.
 
-| Ime      | Opis                                            |
-| -------- | ----------------------------------------------- |
-| playerid | ID igraca kome kreiramo player textdraw         |
-| Float:x  | X koordinata                                    |
-| Float:y  | Y koordinata                                    |
-| text[]   | Tekst u textdraw-u                              |
+| Ime      | Opis                                    |
+| -------- | --------------------------------------- |
+| playerid | ID igraca kome kreiramo player textdraw |
+| Float:x  | X koordinata                            |
+| Float:y  | Y koordinata                            |
+| text[]   | Tekst u textdraw-u                      |
 
 ## Vraca
 

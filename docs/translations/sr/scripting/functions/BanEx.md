@@ -9,10 +9,10 @@ tags: ["administration"]
 
 Banuje igraca sa razlogom.
 
-| Ime      | Opis                         |
-| -------- | ---------------------------- |
-| playerid | ID igraca koga banujemo.     |
-| reason   | Razlog bana.                 |
+| Ime      | Opis                     |
+| -------- | ------------------------ |
+| playerid | ID igraca koga banujemo. |
+| reason   | Razlog bana.             |
 
 ## Vracanje
 

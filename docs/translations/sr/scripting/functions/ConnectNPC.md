@@ -15,10 +15,10 @@ Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
 
 Poveze NPC-a na server.
 
-| Ime      | Opis                                                                                     |
-| -------- | ---------------------------------------------------------------------------------------- |
-| name[]   | Ime sa kojim se NPC poveze. Mora da prati ista pravila kao i normalni igraci.            |
-| script[] | NPC ime u skripti koje se nalazi u npcmodes folderu (bez .amx nastavka).                 |
+| Ime      | Opis                                                                          |
+| -------- | ----------------------------------------------------------------------------- |
+| name[]   | Ime sa kojim se NPC poveze. Mora da prati ista pravila kao i normalni igraci. |
+| script[] | NPC ime u skripti koje se nalazi u npcmodes folderu (bez .amx nastavka).      |
 
 ## Vraca
 

@@ -15,9 +15,9 @@ Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
 
 Prekine sve animacije aktivne na actoru.
 
-| Ime     | Opis                                                               |
-| ------- | ------------------------------------------------------------------ |
-| actorid | ID actora (vracen od CreateActor) za koga prekidamo animaciju.     |
+| Ime     | Opis                                                           |
+| ------- | -------------------------------------------------------------- |
+| actorid | ID actora (vracen od CreateActor) za koga prekidamo animaciju. |
 
 ## Vraca
 

@@ -9,9 +9,9 @@ tags: ["administration"]
 
 Banuje igraca koji je trenutno na serveru. Vise nece moci da udju na server. Ban je IP-baziran i bice sacuvam u samp.ban fajlu u server folderu. BanEx se moze koristiti da bi se dao razlog ban-u. IP ban se moze dodati/obrisati koristeci RCON banip i unbanip komande (SendRconCommand).
 
-| Ime      | Opis                         |
-| -------- | ---------------------------- |
-| playerid | ID igraca koji se banuje.    |
+| Ime      | Opis                      |
+| -------- | ------------------------- |
+| playerid | ID igraca koji se banuje. |
 
 ## Vracanje
 

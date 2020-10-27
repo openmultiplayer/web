@@ -15,18 +15,18 @@ Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
 
 Kreira 3D Text Label samo za posebnog igraca.
 
-| Ime             | Opis                                                                            |
-| --------------- | ------------------------------------------------------------------------------- |
-| playerid        | Igrac koji treba da vidi novokreirani 3D label.                                 |
-| text[]          | Tekst koji ce se prikazati                                                      |
-| color           | Boja teksta                                                                     |
-| x               | X koordinata                                                                    |
-| y               | Y koordinata                                                                    |
-| z               | Z koordinata                                             						|
-| DrawDistance    | Distance sa koje igrac moze videti label                                        |
-| attachedplayer  | Igrac za koga zelimo zakaciti 3D label. (Nijedan: INVALID_PLAYER_ID)            |
-| attachedvehicle | Vozilo za koga zelimo zakaciti 3D label. (Nijedno: INVALID_VEHICLE_ID)          |
-| testLOS         | 0/1 Opcija da se tekst labela ne moze videti kroz zidove                        |
+| Ime             | Opis                                                                   |
+| --------------- | ---------------------------------------------------------------------- |
+| playerid        | Igrac koji treba da vidi novokreirani 3D label.                        |
+| text[]          | Tekst koji ce se prikazati                                             |
+| color           | Boja teksta                                                            |
+| x               | X koordinata                                                           |
+| y               | Y koordinata                                                           |
+| z               | Z koordinata                                                           |
+| DrawDistance    | Distance sa koje igrac moze videti label                               |
+| attachedplayer  | Igrac za koga zelimo zakaciti 3D label. (Nijedan: INVALID_PLAYER_ID)   |
+| attachedvehicle | Vozilo za koga zelimo zakaciti 3D label. (Nijedno: INVALID_VEHICLE_ID) |
+| testLOS         | 0/1 Opcija da se tekst labela ne moze videti kroz zidove               |
 
 ## Vracanje
 
