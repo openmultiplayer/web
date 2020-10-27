@@ -38,7 +38,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 :::tip
 
-Full vehicle health is 1000. Higher values are possible. For more information on health values, see this page.
+Full vehicle health is 1000. Higher values are possible. For more information on health values, see [this](../resources/vehiclehealth.md) page.
 
 :::
 
