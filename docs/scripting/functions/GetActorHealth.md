@@ -49,5 +49,3 @@ public OnGameModeInit()
 - [SetActorHealth](SetActorHealth): Set the health of an actor.
 - [SetActorInvulnerable](SetActorInvulnerable): Set actor invulnerable.
 - [IsActorInvulnerable](IsActorInvulnerable): Check if actor is invulnerable.
-
-
