@@ -21,8 +21,3 @@ public OnRecordingPlaybackEnd()
     StartRecordingPlayback(PLAYER_RECORDING_TYPE_DRIVER, "all_around_lv_bus"); //This would start the recorded file again once it finishes reproducing.
 }
 ```
-
-## Related Functions
-
-- [NPC:StartRecordingPlayback](NPC:StartRecordingPlayback.md): Starts reproducing an already recorded .rec file.
-- [NPC:StopRecordingPlayback](NPC:StopRecordingPlayback.md): Stops reproducing a .rec file.
