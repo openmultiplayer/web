@@ -10,19 +10,19 @@ import T from '../../../src/components/templates.js'
 
 <T.LowercaseNote />
 
-## Description
+## Açıklama
 
-The function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.
+Bu fonksiyon, /scriptfiles klasörü içerisinde bir SQLite veritabanı açmak için kullanılır.
 
-| Name   | Description               |
-| ------ | ------------------------- |
-| name[] | File name of the database |
+| İsim   | Açıklama                 |
+| ------ | ------------------------ |
+| name[] | Veritabanının dosya adı. |
 
-## Returns
+## Geri Döndürülen Değerler
 
-Returns index (starting at 1) of the database connection.
+Veritabanı dosyasının dizinini döndürür. (1'den başlar.)
 
-## Examples
+## Örnekler
 
 ```c
 static DB:gDBConnectionHandle;
@@ -33,18 +33,18 @@ public OnGameModeInit()
 {
     // ...
 
-    // Create a connection to a database
+    // example.db isimli veritabanı dosyasına bağlantı oluşturur.
     gDBConnectionHandle = db_open("example.db");
 
-    // If connection to the database exists
+    // Eğer bağlantı sağlanmışsa.
     if (gDBConnectionHandle)
     {
-        // Successfully created a connection to the database
+        // Veritabanı bağlantısı sağlandı bilgisi gönderir.
         print("Successfully created a connection to database \"example.db\".");
     }
     else
     {
-        // Failed to create a connection to the database
+        // Eğer bağlantı sağlama başarısız olmuşsa, bağlantı sağlanamadı bilgi
         print("Failed to open a connection to database \"example.db\".");
     }
 
@@ -55,10 +55,10 @@ public OnGameModeInit()
 
 public OnGameModeExit()
 {
-    // Close the connection to the database if connection is open
+    // ğer bağlantı sağlanmış durumdaysa, kapanırken bağlantıyı keser.
     if (db_close(gDBConnectionHandle))
     {
-        // Extra cleanup
+        // Ekstra temizlik
         gDBConnectionHandle = DB:0;
     }
 
@@ -68,14 +68,14 @@ public OnGameModeExit()
 }
 ```
 
-## Notes
+## Notlar
 
-:::warning
+:::Uyarı
 
-It will create a new SQLite database file, if there is no SQLite database file with the same file name available. Close your SQLite database connection with [db_close](db_close)!
+Eğer /scriptsfolder içerisinde SQLite veritabanı dosyası yoksa bunu kendisi oluşturacaktır, sunucu kapanırken veritabanı bağlantısını [db_close](db_close)! fonksiyonu ile kesin.
 
 :::
 
-## Related Functions
+## İlgili Fonksiyonlar
 
 _Replace me_
