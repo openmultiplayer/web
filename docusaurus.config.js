@@ -135,12 +135,4 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-    [
-      "@docusaurus/plugin-google-analytics",
-      {
-        id: "plugin-google-analytics-1",
-      },
-    ],
-  ],
 };
