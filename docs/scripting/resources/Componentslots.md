@@ -4,8 +4,7 @@ title: Component slots
 
 :::info
 
-Use them to work with the [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot) function.
-:::
+Use them to work with the [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot) function. :::
 
 ---
 
