@@ -14,12 +14,12 @@ Pentru codul Hex pentru aceste culori, accesați [Hex colors](../resources/hex-c
 
 ### Valori alfa (transparență)
 
-Următoarele imagini afișează efectul valorilor de transparență utilizate cu o cară albă sub marcajul playerului și lăsate la pictograma dischetă de salvare. Inclinații de 0x11 (zecimală 17) sunt utilizate pentru demonstrare, dar, desigur, puteți utiliza orice valoare.
-![Image:trans_matrix.png](/images/colorList/transparency/trans_matrix.png)
+Următoarele imagini afișează efectul valorilor de transparență utilizate cu o cară albă sub marcajul playerului și lăsate la pictograma dischetă de salvare. Inclinații de 0x11 (zecimală 17) sunt utilizate pentru demonstrare, dar, desigur, puteți utiliza orice valoare. ![Image:trans_matrix.png](/images/colorList/transparency/trans_matrix.png)
 
 ### Făcând matematică
 
 Deoarece culorile sunt doar numere, este posibil să se calculeze cu ele, deși este posibil să nu aibă întotdeauna sens. De exemplu, este posibil să reglați vizibilitatea marcatorului radar al jucătorului (a se vedea mai sus) păstrând în același timp culoarea actuală, indiferent de ceea ce este.
+
 ```c
 SetPlayerMarkerVisibility(playerid, alpha = 0xFF)
 {

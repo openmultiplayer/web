@@ -3,202 +3,202 @@ title: ID-uri componente auto
 description: Informații despre ID-urile componentelor mașinii, numele modelelor, piesele, tipurile, vehiculele acceptate și costurile.
 ---
 
-| ID   | Nume Model     | Parte          | Tip                             | Masini                                      | Pret   |
-| ---- | -------------- | -------------- | ------------------------------- | ------------------------------------------- | ------ |
-| 1000 | spl_b_mar_m    | Spoiler        | Pro                             | Certain Transfender cars                    | \$400  |
-| 1001 | spl_b_bab_m    | Spoiler        | Win                             | Certain Transfender cars                    | \$550  |
-| 1002 | spl_b_bar_m    | Spoiler        | Drag                            | Certain Transfender cars                    | \$200  |
-| 1003 | spl_b_mab_m    | Spoiler        | Alpha                           | Certain Transfender cars                    | \$250  |
-| 1004 | bnt_b_sc_m     | Capota           | Champ Scoop                     | Certain Transfender cars                    | \$100  |
-| 1005 | bnt_b_sc_l     | Capota           | Fury Scoop                      | Certain Transfender cars                    | \$150  |
-| 1006 | rf_b_sc_r      | Acoperiş           | Acoperiş Scoop                      | Certain Transfender cars                    | \$80   |
-| 1007 | wg_l_b_ssk     | Fusta laterală      | Right Fusta laterală                 | Certain Transfender cars                    | \$500  |
-| 1008 | nto_b_l        | Nitro          | 5 times                         | Most cars, Most planes and Most Helicopters | \$500  |
-| 1009 | nto_b_s        | Nitro          | 2 times                         | Most cars, Most planes and Most Helicopters | \$200  |
-| 1010 | nto_b_tw       | Nitro          | 10 times                        | Most cars, Most planes and Most Helicopters | \$1000 |
-| 1011 | bnt_b_sc_p_m   | Capota           | Race Scoop                      | Certain Transfender cars                    | \$220  |
-| 1012 | bnt_b_sc_p_l   | Capota           | Worx Scoop                      | Certain Transfender cars                    | \$250  |
-| 1013 | lgt_b_rspt     | Lamps          | Round Fog                       | Certain Transfender cars                    | \$100  |
-| 1014 | spl_b_bar_l    | Spoiler        | Champ                           | Certain Transfender cars                    | \$400  |
-| 1015 | spl_b_bbr_l    | Spoiler        | Race                            | Certain Transfender cars                    | \$500  |
-| 1016 | spl_b_bbr_m    | Spoiler        | Worx                            | Certain Transfender cars                    | \$200  |
-| 1017 | wg_r_b_ssk     | Fusta laterală      | Left Fusta laterală                  | Certain Transfender cars                    | \$500  |
-| 1018 | exh_b_ts       | NOS        | Upswept                         | Most cars                                   | \$350  |
-| 1019 | exh_b_t        | NOS        | Twin                            | Most cars                                   | \$300  |
-| 1020 | exh_b_l        | NOS        | Large                           | Most cars                                   | \$250  |
-| 1021 | exh_b_m        | NOS        | Medium                          | Most cars                                   | \$200  |
-| 1022 | exh_b_s        | NOS        | Small                           | Most cars                                   | \$150  |
-| 1023 | spl_b_bbb_m    | Spoiler        | Fury                            | Certain Transfender cars                    | \$350  |
-| 1024 | lgt_b_sspt     | Lamps          | Square Fog                      | Certain Transfender cars                    | \$50   |
-| 1025 | wheel_or1      | Roți         | Offroad                         | Certain Transfender cars                    | \$1000 |
-| 1026 | wg_l_a_s       | Fusta laterală      | Right Alien Fusta laterală           | Sultan                                      | \$480  |
-| 1027 | wg_r_a_s       | Fusta laterală      | Left Alien Fusta laterală            | Sultan                                      | \$480  |
-| 1028 | exh_a_s        | NOS        | Alien                           | Sultan                                      | \$770  |
-| 1029 | exh_c_s        | NOS        | X-Flow                          | Sultan                                      | \$680  |
-| 1030 | wg_r_c_s       | Fusta laterală      | Left X-Flow Fusta laterală           | Sultan                                      | \$370  |
-| 1031 | wg_l_c_s       | Fusta laterală      | Right X-Flow Fusta laterală          | Sultan                                      | \$370  |
-| 1032 | rf_a_s         | Acoperiş           | Alien Acoperiş Vent                 | Sultan                                      | \$170  |
-| 1033 | rf_c_s         | Acoperiş           | X-Flow Acoperiş Vent                | Sultan                                      | \$120  |
-| 1034 | exh_a_l        | NOS        | Alien                           | Elegy                                       | \$790  |
-| 1035 | rf_c_l         | Acoperiş           | X-Flow Acoperiş Vent                | Elegy                                       | \$150  |
-| 1036 | wg_l_a_l       | Fusta laterală      | Right Alien Fusta laterală           | Elegy                                       | \$500  |
-| 1037 | exh_c_l        | NOS        | X-Flow                          | Elegy                                       | \$690  |
-| 1038 | rf_a_l         | Acoperiş           | Alien Acoperiş Vent                 | Elegy                                       | \$190  |
-| 1039 | wg_l_c_l       | Fusta laterală      | Left X-Flow Fusta laterală           | Elegy                                       | \$390  |
-| 1040 | wg_r_a_l       | Fusta laterală      | Left Alien Fusta laterală            | Elegy                                       | \$500  |
-| 1041 | wg_r_c_l       | Fusta laterală      | Right X-Flow Fusta laterală          | Elegy                                       | \$390  |
-| 1042 | wg_l_lr_br1    | Fusta laterală      | Right Chrome Fusta laterală          | Broadway                                    | \$1000 |
-| 1043 | exh_lr_br2     | NOS        | Slamin                          | Broadway                                    | \$500  |
-| 1044 | exh_lr_br1     | NOS        | Chrome                          | Broadway                                    | \$500  |
-| 1045 | exh_c_f        | NOS        | X-Flow                          | Flash                                       | \$510  |
-| 1046 | exh_a_f        | NOS        | Alien                           | Flash                                       | \$710  |
-| 1047 | wg_l_a_f       | Fusta laterală      | Right Alien Fusta laterală           | Flash                                       | \$670  |
-| 1048 | wg_l_c_f       | Fusta laterală      | Right X-Flow Fusta laterală          | Flash                                       | \$530  |
-| 1049 | spl_a_f_r      | Spoiler        | Alien                           | Flash                                       | \$810  |
-| 1050 | spl_c_f_r      | Spoiler        | X-Flow                          | Flash                                       | \$620  |
-| 1051 | wg_r_a_f       | Fusta laterală      | Left Alien Fusta laterală            | Flash                                       | \$670  |
-| 1052 | wg_r_c_f       | Fusta laterală      | Left X-Flow Fusta laterală           | Flash                                       | \$530  |
-| 1053 | rf_c_f         | Acoperiş           | X-Flow                          | Flash                                       | \$130  |
-| 1054 | rf_a_f         | Acoperiş           | Alien                           | Flash                                       | \$210  |
-| 1055 | rf_a_st        | Acoperiş           | Alien                           | Stratum                                     | \$230  |
-| 1056 | wg_l_a_st      | Fusta laterală      | Right Alien Fusta laterală           | Stratum                                     | \$520  |
-| 1057 | wg_l_c_st      | Fusta laterală      | Right X-Flow Fusta laterală          | Stratum                                     | \$430  |
-| 1058 | spl_a_st_r     | Spoiler        | Alien                           | Stratum                                     | \$620  |
-| 1059 | exh_c_st       | NOS        | X-Flow                          | Stratum                                     | \$720  |
-| 1060 | spl_c_st_r     | Spoiler        | X-Flow                          | Stratum                                     | \$530  |
-| 1061 | rf_c_st        | Acoperiş           | X-Flow                          | Stratum                                     | \$180  |
-| 1062 | wg_r_a_st      | Fusta laterală      | Left Alien Fusta laterală            | Stratum                                     | \$550  |
-| 1063 | wg_r_c_st      | Fusta laterală      | Left X-Flow Fusta laterală           | Stratum                                     | \$430  |
-| 1064 | exh_a_st       | NOS        | Alien                           | Stratum                                     | \$830  |
-| 1065 | exh_a_j        | NOS        | Alien                           | Jester                                      | \$850  |
-| 1066 | exh_c_j        | NOS        | X-Flow                          | Jester                                      | \$750  |
-| 1067 | rf_a_j         | Acoperiş           | Alien                           | Jester                                      | \$250  |
-| 1068 | rf_c_j         | Acoperiş           | X-Flow                          | Jester                                      | \$200  |
-| 1069 | wg_l_a_j       | Fusta laterală      | Right Alien Fusta laterală           | Jester                                      | \$550  |
-| 1070 | wg_l_c_j       | Fusta laterală      | Right X-Flow Fusta laterală          | Jester                                      | \$450  |
-| 1071 | wg_r_a_j       | Fusta laterală      | Left Alien Fusta laterală            | Jester                                      | \$550  |
-| 1072 | wg_r_c_j       | Fusta laterală      | Left X-Flow Fusta laterală           | Jester                                      | \$450  |
-| 1073 | wheel_sr6      | Roți         | Shadow                          | Most cars                                   | \$1100 |
-| 1074 | wheel_sr3      | Roți         | Mega                            | Most cars                                   | \$1030 |
-| 1075 | wheel_sr2      | Roți         | Rimshine                        | Most cars                                   | \$980  |
-| 1076 | wheel_lr4      | Roți         | Wires                           | Most cars                                   | \$1560 |
-| 1077 | wheel_lr1      | Roți         | Classic                         | Most cars                                   | \$1620 |
-| 1078 | wheel_lr3      | Roți         | Twist                           | Most cars                                   | \$1200 |
-| 1079 | wheel_sr1      | Roți         | Cutter                          | Most cars                                   | \$1030 |
-| 1080 | wheel_sr5      | Roți         | Switch                          | Most cars                                   | \$900  |
-| 1081 | wheel_sr4      | Roți         | Grove                           | Most cars                                   | \$1230 |
-| 1082 | wheel_gn1      | Roți         | Import                          | Most cars                                   | \$820  |
-| 1083 | wheel_lr2      | Roți         | Dollar                          | Most cars                                   | \$1560 |
-| 1084 | wheel_lr5      | Roți         | Trance                          | Most cars                                   | \$1350 |
-| 1085 | wheel_gn2      | Roți         | Atomic                          | Most cars                                   | \$770  |
-| 1086 | stereo         | Stereo         | Stereo                          | Most cars                                   | \$100  |
-| 1087 | hydralics      | Hidraulice     | Hydraulics                      | Most cars                                   | \$1500 |
-| 1088 | rf_a_u         | Acoperiş           | Alien                           | Uranus                                      | \$150  |
-| 1089 | exh_c_u        | NOS        | X-Flow                          | Uranus                                      | \$650  |
-| 1090 | wg_l_a_u       | Fusta laterală      | Right Alien Fusta laterală           | Uranus                                      | \$450  |
-| 1091 | rf_c_u         | Acoperiş           | X-Flow                          | Uranus                                      | \$100  |
-| 1092 | exh_a_u        | NOS        | Alien                           | Uranus                                      | \$750  |
-| 1093 | wg_l_c_u       | Fusta laterală      | Right X-Flow Fusta laterală          | Uranus                                      | \$350  |
-| 1094 | wg_r_a_u       | Fusta laterală      | Left Alien Fusta laterală            | Uranus                                      | \$450  |
-| 1095 | wg_r_c_u       | Fusta laterală      | Right X-Flow Fusta laterală          | Uranus                                      | \$350  |
-| 1096 | wheel_gn3      | Roți         | Ahab                            | Most cars                                   | \$1000 |
-| 1097 | wheel_gn4      | Roți         | Virtual                         | Most cars                                   | \$620  |
-| 1098 | wheel_gn5      | Roți         | Access                          | Most cars                                   | \$1140 |
-| 1099 | wg_r_lr_br1    | Fusta laterală      | Left Chrome Fusta laterală           | Broadway                                    | \$1000 |
-| 1100 | misc_c_lr_rem1 | Bullbar        | Chrome Grill                    | Remington                                   | \$940  |
-| 1101 | wg_r_lr_rem1   | Fusta laterală      | Left `Chrome Flames` Fusta laterală  | Remington                                   | \$780  |
-| 1102 | wg_r_lr_sv     | Fusta laterală      | Left `Chrome Strip` Fusta laterală   | Savanna                                     | \$830  |
-| 1103 | rf_lr_bl2      | Acoperiş           | Covertible                      | Blade                                       | \$3250 |
-| 1104 | exh_lr_bl1     | NOS        | Chrome                          | Blade                                       | \$1610 |
-| 1105 | exh_lr_bl2     | NOS        | Slamin                          | Blade                                       | \$1540 |
-| 1106 | wg_l_lr_rem2   | Fusta laterală      | Right `Chrome Arches` Fusta laterală | Remington                                   | \$780  |
-| 1107 | wg_r_lr_bl1    | Fusta laterală      | Left `Chrome Strip` Fusta laterală   | Blade                                       | \$780  |
-| 1108 | wg_l_lr_bl1    | Fusta laterală      | Right `Chrome Strip` Fusta laterală  | Blade                                       | \$780  |
-| 1109 | bbb_lr_slv1    | Rear Bullbars  | Chrome                          | Slamvan                                     | \$1610 |
-| 1110 | bbb_lr_slv2    | Rear Bullbars  | Slamin                          | Slamvan                                     | \$1540 |
-| 1111 | bnt_lr_slv1    | Front Sign?    | Little Sign?                    | Slamvan                                     | \$0    |
-| 1112 | bnt_lr_slv2    | Front Sign?    | Little Sign?                    | Slamvan                                     | \$0    |
-| 1113 | exh_lr_slv1    | NOS        | Chrome                          | Slamvan                                     | \$3340 |
-| 1114 | exh_lr_slv2    | NOS        | Slamin                          | Slamvan                                     | \$3250 |
-| 1115 | fbb_lr_slv1    | Front Bullbars | Chrome                          | Slamvan                                     | \$2130 |
-| 1116 | fbb_lr_slv2    | Front Bullbars | Slamin                          | Slamvan                                     | \$2050 |
-| 1117 | fbmp_lr_slv1   | Bara frontala   | Chrome                          | Slamvan                                     | \$2040 |
-| 1118 | wg_l_lr_slv1   | Fusta laterală      | Right `Chrome Trim` Fusta laterală   | Slamvan                                     | \$780  |
-| 1119 | wg_l_lr_slv2   | Fusta laterală      | Right `Wheelcovers` Fusta laterală   | Slamvan                                     | \$940  |
-| 1120 | wg_r_lr_slv1   | Fusta laterală      | Left `Chrome Trim` Fusta laterală    | Slamvan                                     | \$780  |
-| 1121 | wg_r_lr_slv2   | Fusta laterală      | Left `Wheelcovers` Fusta laterală    | Slamvan                                     | \$940  |
-| 1122 | wg_l_lr_rem1   | Fusta laterală      | Right `Chrome Flames` Fusta laterală | Remington                                   | \$780  |
-| 1123 | misc_c_lr_rem2 | Bullbars       | Bullbar Chrome Bars             | Remington                                   | \$860  |
-| 1124 | wg_r_lr_rem2   | Fusta laterală      | Left `Chrome Arches` Fusta laterală  | Remington                                   | \$780  |
-| 1125 | misc_c_lr_rem3 | Bullbars       | Bullbar Chrome Lights           | Remington                                   | \$1120 |
-| 1126 | exh_lr_rem1    | NOS        | Chrome NOS                  | Remington                                   | \$3340 |
-| 1127 | exh_lr_rem2    | NOS        | Slamin NOS                  | Remington                                   | \$3250 |
-| 1128 | rf_lr_bl1      | Acoperiş           | Vinyl Hardtop                   | Blade                                       | \$3340 |
-| 1129 | exh_lr_sv1     | NOS        | Chrome                          | Savanna                                     | \$1650 |
-| 1130 | rf_lr_sv1      | Acoperiş           | Hardtop                         | Savanna                                     | \$3380 |
-| 1131 | rf_lr_sv2      | Acoperiş           | Softtop                         | Savanna                                     | \$3290 |
-| 1132 | exh_lr_sv2     | NOS        | Slamin                          | Savanna                                     | \$1590 |
-| 1133 | wg_l_lr_sv     | Fusta laterală      | Right `Chrome Strip` Fusta laterală  | Savanna                                     | \$830  |
-| 1134 | wg_l_lr_t1     | Fusta laterală      | Right `Chrome Strip` Fusta laterală  | Tornado                                     | \$800  |
-| 1135 | exh_lr_t2      | NOS        | Slamin                          | Tornado                                     | \$1500 |
-| 1136 | exh_lr_t1      | NOS        | Chrome                          | Tornado                                     | \$1000 |
-| 1137 | wg_r_lr_t1     | Fusta laterală      | Left `Chrome Strip` Fusta laterală   | Tornado                                     | \$800  |
-| 1138 | spl_a_s_b      | Spoiler        | Alien                           | Sultan                                      | \$580  |
-| 1139 | spl_c_s_b      | Spoiler        | X-Flow                          | Sultan                                      | \$470  |
-| 1140 | rbmp_c_s       | Bara spate    | X-Flow                          | Sultan                                      | \$870  |
-| 1141 | rbmp_a_s       | Bara spate    | Alien                           | Sultan                                      | \$980  |
-| 1142 | bntr_b_ov      | Aerisiri          | Left Oval Vents                 | Certain Transfender Cars                    | \$150  |
-| 1143 | bntl_b_ov      | Aerisiri          | Right Oval Vents                | Certain Transfender Cars                    | \$150  |
-| 1144 | bntr_b_sq      | Aerisiri          | Left Square Vents               | Certain Transfender Cars                    | \$100  |
-| 1145 | bntl_b_sq      | Aerisiri          | Right Square Vents              | Certain Transfender Cars                    | \$100  |
-| 1146 | spl_c_l_b      | Spoiler        | X-Flow                          | Elegy                                       | \$490  |
-| 1147 | spl_a_l_b      | Spoiler        | Alien                           | Elegy                                       | \$600  |
-| 1148 | rbmp_c_l       | Bara spate    | X-Flow                          | Elegy                                       | \$890  |
-| 1149 | rbmp_a_l       | Bara spate    | Alien                           | Elegy                                       | \$1000 |
-| 1150 | rbmp_a_f       | Bara spate    | Alien                           | Flash                                       | \$1090 |
-| 1151 | rbmp_c_f       | Bara spate    | X-Flow                          | Flash                                       | \$840  |
-| 1152 | fbmp_c_f       | Bara frontala   | X-Flow                          | Flash                                       | \$910  |
-| 1153 | fbmp_a_f       | Bara frontala   | Alien                           | Flash                                       | \$1200 |
-| 1154 | rbmp_a_s       | tBara spate   | Alien                           | Stratum                                     | \$1030 |
-| 1155 | fbmp_a_st      | Bara frontala   | Alien                           | Stratum                                     | \$1030 |
-| 1156 | rbmp_c_st      | Bara spate    | X-Flow                          | Stratum                                     | \$920  |
-| 1157 | fbmp_c_st      | Bara frontala   | X-Flow                          | Stratum                                     | \$930  |
-| 1158 | spl_c_j_b      | Spoiler        | X-Flow                          | Jester                                      | \$550  |
-| 1159 | rbmp_a_j       | Bara spate    | Alien                           | Jester                                      | \$1050 |
-| 1160 | fbmp_a_j       | Bara frontala   | Alien                           | Jester                                      | \$1050 |
-| 1161 | rbmp_c_j       | Bara spate    | X-Flow                          | Jester                                      | \$950  |
-| 1162 | spl_a_j_b      | Spoiler        | Alien                           | Jester                                      | \$650  |
-| 1163 | spl_c_u_b      | Spoiler        | X-Flow                          | Uranus                                      | \$450  |
-| 1164 | spl_a_u_b      | Spoiler        | Alien                           | Uranus                                      | \$550  |
-| 1165 | fbmp_c_u       | Bara frontala   | X-Flow                          | Uranus                                      | \$850  |
-| 1166 | fbmp_a_u       | Bara frontala   | Alien                           | Uranus                                      | \$950  |
-| 1167 | rbmp_c_u       | Bara spate    | X-Flow                          | Uranus                                      | \$850  |
-| 1168 | rbmp_a_u       | Bara spate    | Alien                           | Uranus                                      | \$950  |
-| 1169 | fbmp_a_s       | Bara frontala   | Alien                           | Sultan                                      | \$970  |
-| 1170 | fbmp_c_s       | Bara frontala   | X-Flow                          | Sultan                                      | \$880  |
-| 1171 | fbmp_a_l       | Bara frontala   | Alien                           | Elegy                                       | \$990  |
-| 1172 | fbmp_c_l       | Bara frontala   | X-Flow                          | Elegy                                       | \$900  |
-| 1173 | fbmp_c_j       | Bara frontala   | X-Flow                          | Jester                                      | \$950  |
-| 1174 | fbmp_lr_br1    | Bara frontala   | Chrome                          | Broadway                                    | \$1000 |
-| 1175 | fbmp_lr_br2    | Bara frontala   | Slamin                          | Broadway                                    | \$900  |
-| 1176 | rbmp_lr_br1    | Bara spate    | Chrome                          | Broadway                                    | \$1000 |
-| 1177 | rbmp_lr_br2    | Bara spate    | Slamin                          | Broadway                                    | \$900  |
-| 1178 | rbmp_lr_rem2   | Bara spate    | Slamin                          | Remington                                   | \$2050 |
-| 1179 | fbmp_lr_rem1   | Bara frontala   | Chrome                          | Remington                                   | \$2150 |
-| 1180 | rbmp_lr_rem1   | Bara spate    | Chrome                          | Remington                                   | \$2130 |
-| 1181 | fbmp_lr_bl2    | Bara frontala   | Slamin                          | Blade                                       | \$2050 |
-| 1182 | fbmp_lr_bl1    | Bara frontala   | Chrome                          | Blade                                       | \$2130 |
-| 1183 | rbmp_lr_bl2    | Bara spate    | Slamin                          | Blade                                       | \$2040 |
-| 1184 | rbmp_lr_bl1    | Bara spate    | Chrome                          | Blade                                       | \$2150 |
-| 1185 | fbmp_lr_rem2   | Bara frontala   | Slamin                          | Remington                                   | \$2040 |
-| 1186 | rbmp_lr_sv2    | Bara spate    | Slamin                          | Savanna                                     | \$2095 |
-| 1187 | rbmp_lr_sv1    | Bara spate    | Chrome                          | Savanna                                     | \$2175 |
-| 1188 | fbmp_lr_sv2    | Bara frontala   | Slamin                          | Savanna                                     | \$2080 |
-| 1189 | fbmp_lr_sv1    | Bara frontala   | Chrome                          | Savanna                                     | \$2200 |
-| 1190 | fbmp_lr_t2     | Bara frontala   | Slamin                          | Tornado                                     | \$1200 |
-| 1191 | fbmp_lr_t1     | Bara frontala   | Chrome                          | Tornado                                     | \$1040 |
-| 1192 | rbmp_lr_t1     | Bara spate    | Chrome                          | Tornado                                     | \$940  |
-| 1193 | rbmp_lr_t2     | Bara spate    | Slamin                          | Tornado                                     | \$1100 |
+| ID   | Nume Model     | Parte          | Tip                                  | Masini                                      | Pret   |
+| ---- | -------------- | -------------- | ------------------------------------ | ------------------------------------------- | ------ |
+| 1000 | spl_b_mar_m    | Spoiler        | Pro                                  | Certain Transfender cars                    | \$400  |
+| 1001 | spl_b_bab_m    | Spoiler        | Win                                  | Certain Transfender cars                    | \$550  |
+| 1002 | spl_b_bar_m    | Spoiler        | Drag                                 | Certain Transfender cars                    | \$200  |
+| 1003 | spl_b_mab_m    | Spoiler        | Alpha                                | Certain Transfender cars                    | \$250  |
+| 1004 | bnt_b_sc_m     | Capota         | Champ Scoop                          | Certain Transfender cars                    | \$100  |
+| 1005 | bnt_b_sc_l     | Capota         | Fury Scoop                           | Certain Transfender cars                    | \$150  |
+| 1006 | rf_b_sc_r      | Acoperiş       | Acoperiş Scoop                       | Certain Transfender cars                    | \$80   |
+| 1007 | wg_l_b_ssk     | Fusta laterală | Right Fusta laterală                 | Certain Transfender cars                    | \$500  |
+| 1008 | nto_b_l        | Nitro          | 5 times                              | Most cars, Most planes and Most Helicopters | \$500  |
+| 1009 | nto_b_s        | Nitro          | 2 times                              | Most cars, Most planes and Most Helicopters | \$200  |
+| 1010 | nto_b_tw       | Nitro          | 10 times                             | Most cars, Most planes and Most Helicopters | \$1000 |
+| 1011 | bnt_b_sc_p_m   | Capota         | Race Scoop                           | Certain Transfender cars                    | \$220  |
+| 1012 | bnt_b_sc_p_l   | Capota         | Worx Scoop                           | Certain Transfender cars                    | \$250  |
+| 1013 | lgt_b_rspt     | Lamps          | Round Fog                            | Certain Transfender cars                    | \$100  |
+| 1014 | spl_b_bar_l    | Spoiler        | Champ                                | Certain Transfender cars                    | \$400  |
+| 1015 | spl_b_bbr_l    | Spoiler        | Race                                 | Certain Transfender cars                    | \$500  |
+| 1016 | spl_b_bbr_m    | Spoiler        | Worx                                 | Certain Transfender cars                    | \$200  |
+| 1017 | wg_r_b_ssk     | Fusta laterală | Left Fusta laterală                  | Certain Transfender cars                    | \$500  |
+| 1018 | exh_b_ts       | NOS            | Upswept                              | Most cars                                   | \$350  |
+| 1019 | exh_b_t        | NOS            | Twin                                 | Most cars                                   | \$300  |
+| 1020 | exh_b_l        | NOS            | Large                                | Most cars                                   | \$250  |
+| 1021 | exh_b_m        | NOS            | Medium                               | Most cars                                   | \$200  |
+| 1022 | exh_b_s        | NOS            | Small                                | Most cars                                   | \$150  |
+| 1023 | spl_b_bbb_m    | Spoiler        | Fury                                 | Certain Transfender cars                    | \$350  |
+| 1024 | lgt_b_sspt     | Lamps          | Square Fog                           | Certain Transfender cars                    | \$50   |
+| 1025 | wheel_or1      | Roți           | Offroad                              | Certain Transfender cars                    | \$1000 |
+| 1026 | wg_l_a_s       | Fusta laterală | Right Alien Fusta laterală           | Sultan                                      | \$480  |
+| 1027 | wg_r_a_s       | Fusta laterală | Left Alien Fusta laterală            | Sultan                                      | \$480  |
+| 1028 | exh_a_s        | NOS            | Alien                                | Sultan                                      | \$770  |
+| 1029 | exh_c_s        | NOS            | X-Flow                               | Sultan                                      | \$680  |
+| 1030 | wg_r_c_s       | Fusta laterală | Left X-Flow Fusta laterală           | Sultan                                      | \$370  |
+| 1031 | wg_l_c_s       | Fusta laterală | Right X-Flow Fusta laterală          | Sultan                                      | \$370  |
+| 1032 | rf_a_s         | Acoperiş       | Alien Acoperiş Vent                  | Sultan                                      | \$170  |
+| 1033 | rf_c_s         | Acoperiş       | X-Flow Acoperiş Vent                 | Sultan                                      | \$120  |
+| 1034 | exh_a_l        | NOS            | Alien                                | Elegy                                       | \$790  |
+| 1035 | rf_c_l         | Acoperiş       | X-Flow Acoperiş Vent                 | Elegy                                       | \$150  |
+| 1036 | wg_l_a_l       | Fusta laterală | Right Alien Fusta laterală           | Elegy                                       | \$500  |
+| 1037 | exh_c_l        | NOS            | X-Flow                               | Elegy                                       | \$690  |
+| 1038 | rf_a_l         | Acoperiş       | Alien Acoperiş Vent                  | Elegy                                       | \$190  |
+| 1039 | wg_l_c_l       | Fusta laterală | Left X-Flow Fusta laterală           | Elegy                                       | \$390  |
+| 1040 | wg_r_a_l       | Fusta laterală | Left Alien Fusta laterală            | Elegy                                       | \$500  |
+| 1041 | wg_r_c_l       | Fusta laterală | Right X-Flow Fusta laterală          | Elegy                                       | \$390  |
+| 1042 | wg_l_lr_br1    | Fusta laterală | Right Chrome Fusta laterală          | Broadway                                    | \$1000 |
+| 1043 | exh_lr_br2     | NOS            | Slamin                               | Broadway                                    | \$500  |
+| 1044 | exh_lr_br1     | NOS            | Chrome                               | Broadway                                    | \$500  |
+| 1045 | exh_c_f        | NOS            | X-Flow                               | Flash                                       | \$510  |
+| 1046 | exh_a_f        | NOS            | Alien                                | Flash                                       | \$710  |
+| 1047 | wg_l_a_f       | Fusta laterală | Right Alien Fusta laterală           | Flash                                       | \$670  |
+| 1048 | wg_l_c_f       | Fusta laterală | Right X-Flow Fusta laterală          | Flash                                       | \$530  |
+| 1049 | spl_a_f_r      | Spoiler        | Alien                                | Flash                                       | \$810  |
+| 1050 | spl_c_f_r      | Spoiler        | X-Flow                               | Flash                                       | \$620  |
+| 1051 | wg_r_a_f       | Fusta laterală | Left Alien Fusta laterală            | Flash                                       | \$670  |
+| 1052 | wg_r_c_f       | Fusta laterală | Left X-Flow Fusta laterală           | Flash                                       | \$530  |
+| 1053 | rf_c_f         | Acoperiş       | X-Flow                               | Flash                                       | \$130  |
+| 1054 | rf_a_f         | Acoperiş       | Alien                                | Flash                                       | \$210  |
+| 1055 | rf_a_st        | Acoperiş       | Alien                                | Stratum                                     | \$230  |
+| 1056 | wg_l_a_st      | Fusta laterală | Right Alien Fusta laterală           | Stratum                                     | \$520  |
+| 1057 | wg_l_c_st      | Fusta laterală | Right X-Flow Fusta laterală          | Stratum                                     | \$430  |
+| 1058 | spl_a_st_r     | Spoiler        | Alien                                | Stratum                                     | \$620  |
+| 1059 | exh_c_st       | NOS            | X-Flow                               | Stratum                                     | \$720  |
+| 1060 | spl_c_st_r     | Spoiler        | X-Flow                               | Stratum                                     | \$530  |
+| 1061 | rf_c_st        | Acoperiş       | X-Flow                               | Stratum                                     | \$180  |
+| 1062 | wg_r_a_st      | Fusta laterală | Left Alien Fusta laterală            | Stratum                                     | \$550  |
+| 1063 | wg_r_c_st      | Fusta laterală | Left X-Flow Fusta laterală           | Stratum                                     | \$430  |
+| 1064 | exh_a_st       | NOS            | Alien                                | Stratum                                     | \$830  |
+| 1065 | exh_a_j        | NOS            | Alien                                | Jester                                      | \$850  |
+| 1066 | exh_c_j        | NOS            | X-Flow                               | Jester                                      | \$750  |
+| 1067 | rf_a_j         | Acoperiş       | Alien                                | Jester                                      | \$250  |
+| 1068 | rf_c_j         | Acoperiş       | X-Flow                               | Jester                                      | \$200  |
+| 1069 | wg_l_a_j       | Fusta laterală | Right Alien Fusta laterală           | Jester                                      | \$550  |
+| 1070 | wg_l_c_j       | Fusta laterală | Right X-Flow Fusta laterală          | Jester                                      | \$450  |
+| 1071 | wg_r_a_j       | Fusta laterală | Left Alien Fusta laterală            | Jester                                      | \$550  |
+| 1072 | wg_r_c_j       | Fusta laterală | Left X-Flow Fusta laterală           | Jester                                      | \$450  |
+| 1073 | wheel_sr6      | Roți           | Shadow                               | Most cars                                   | \$1100 |
+| 1074 | wheel_sr3      | Roți           | Mega                                 | Most cars                                   | \$1030 |
+| 1075 | wheel_sr2      | Roți           | Rimshine                             | Most cars                                   | \$980  |
+| 1076 | wheel_lr4      | Roți           | Wires                                | Most cars                                   | \$1560 |
+| 1077 | wheel_lr1      | Roți           | Classic                              | Most cars                                   | \$1620 |
+| 1078 | wheel_lr3      | Roți           | Twist                                | Most cars                                   | \$1200 |
+| 1079 | wheel_sr1      | Roți           | Cutter                               | Most cars                                   | \$1030 |
+| 1080 | wheel_sr5      | Roți           | Switch                               | Most cars                                   | \$900  |
+| 1081 | wheel_sr4      | Roți           | Grove                                | Most cars                                   | \$1230 |
+| 1082 | wheel_gn1      | Roți           | Import                               | Most cars                                   | \$820  |
+| 1083 | wheel_lr2      | Roți           | Dollar                               | Most cars                                   | \$1560 |
+| 1084 | wheel_lr5      | Roți           | Trance                               | Most cars                                   | \$1350 |
+| 1085 | wheel_gn2      | Roți           | Atomic                               | Most cars                                   | \$770  |
+| 1086 | stereo         | Stereo         | Stereo                               | Most cars                                   | \$100  |
+| 1087 | hydralics      | Hidraulice     | Hydraulics                           | Most cars                                   | \$1500 |
+| 1088 | rf_a_u         | Acoperiş       | Alien                                | Uranus                                      | \$150  |
+| 1089 | exh_c_u        | NOS            | X-Flow                               | Uranus                                      | \$650  |
+| 1090 | wg_l_a_u       | Fusta laterală | Right Alien Fusta laterală           | Uranus                                      | \$450  |
+| 1091 | rf_c_u         | Acoperiş       | X-Flow                               | Uranus                                      | \$100  |
+| 1092 | exh_a_u        | NOS            | Alien                                | Uranus                                      | \$750  |
+| 1093 | wg_l_c_u       | Fusta laterală | Right X-Flow Fusta laterală          | Uranus                                      | \$350  |
+| 1094 | wg_r_a_u       | Fusta laterală | Left Alien Fusta laterală            | Uranus                                      | \$450  |
+| 1095 | wg_r_c_u       | Fusta laterală | Right X-Flow Fusta laterală          | Uranus                                      | \$350  |
+| 1096 | wheel_gn3      | Roți           | Ahab                                 | Most cars                                   | \$1000 |
+| 1097 | wheel_gn4      | Roți           | Virtual                              | Most cars                                   | \$620  |
+| 1098 | wheel_gn5      | Roți           | Access                               | Most cars                                   | \$1140 |
+| 1099 | wg_r_lr_br1    | Fusta laterală | Left Chrome Fusta laterală           | Broadway                                    | \$1000 |
+| 1100 | misc_c_lr_rem1 | Bullbar        | Chrome Grill                         | Remington                                   | \$940  |
+| 1101 | wg_r_lr_rem1   | Fusta laterală | Left `Chrome Flames` Fusta laterală  | Remington                                   | \$780  |
+| 1102 | wg_r_lr_sv     | Fusta laterală | Left `Chrome Strip` Fusta laterală   | Savanna                                     | \$830  |
+| 1103 | rf_lr_bl2      | Acoperiş       | Covertible                           | Blade                                       | \$3250 |
+| 1104 | exh_lr_bl1     | NOS            | Chrome                               | Blade                                       | \$1610 |
+| 1105 | exh_lr_bl2     | NOS            | Slamin                               | Blade                                       | \$1540 |
+| 1106 | wg_l_lr_rem2   | Fusta laterală | Right `Chrome Arches` Fusta laterală | Remington                                   | \$780  |
+| 1107 | wg_r_lr_bl1    | Fusta laterală | Left `Chrome Strip` Fusta laterală   | Blade                                       | \$780  |
+| 1108 | wg_l_lr_bl1    | Fusta laterală | Right `Chrome Strip` Fusta laterală  | Blade                                       | \$780  |
+| 1109 | bbb_lr_slv1    | Rear Bullbars  | Chrome                               | Slamvan                                     | \$1610 |
+| 1110 | bbb_lr_slv2    | Rear Bullbars  | Slamin                               | Slamvan                                     | \$1540 |
+| 1111 | bnt_lr_slv1    | Front Sign?    | Little Sign?                         | Slamvan                                     | \$0    |
+| 1112 | bnt_lr_slv2    | Front Sign?    | Little Sign?                         | Slamvan                                     | \$0    |
+| 1113 | exh_lr_slv1    | NOS            | Chrome                               | Slamvan                                     | \$3340 |
+| 1114 | exh_lr_slv2    | NOS            | Slamin                               | Slamvan                                     | \$3250 |
+| 1115 | fbb_lr_slv1    | Front Bullbars | Chrome                               | Slamvan                                     | \$2130 |
+| 1116 | fbb_lr_slv2    | Front Bullbars | Slamin                               | Slamvan                                     | \$2050 |
+| 1117 | fbmp_lr_slv1   | Bara frontala  | Chrome                               | Slamvan                                     | \$2040 |
+| 1118 | wg_l_lr_slv1   | Fusta laterală | Right `Chrome Trim` Fusta laterală   | Slamvan                                     | \$780  |
+| 1119 | wg_l_lr_slv2   | Fusta laterală | Right `Wheelcovers` Fusta laterală   | Slamvan                                     | \$940  |
+| 1120 | wg_r_lr_slv1   | Fusta laterală | Left `Chrome Trim` Fusta laterală    | Slamvan                                     | \$780  |
+| 1121 | wg_r_lr_slv2   | Fusta laterală | Left `Wheelcovers` Fusta laterală    | Slamvan                                     | \$940  |
+| 1122 | wg_l_lr_rem1   | Fusta laterală | Right `Chrome Flames` Fusta laterală | Remington                                   | \$780  |
+| 1123 | misc_c_lr_rem2 | Bullbars       | Bullbar Chrome Bars                  | Remington                                   | \$860  |
+| 1124 | wg_r_lr_rem2   | Fusta laterală | Left `Chrome Arches` Fusta laterală  | Remington                                   | \$780  |
+| 1125 | misc_c_lr_rem3 | Bullbars       | Bullbar Chrome Lights                | Remington                                   | \$1120 |
+| 1126 | exh_lr_rem1    | NOS            | Chrome NOS                           | Remington                                   | \$3340 |
+| 1127 | exh_lr_rem2    | NOS            | Slamin NOS                           | Remington                                   | \$3250 |
+| 1128 | rf_lr_bl1      | Acoperiş       | Vinyl Hardtop                        | Blade                                       | \$3340 |
+| 1129 | exh_lr_sv1     | NOS            | Chrome                               | Savanna                                     | \$1650 |
+| 1130 | rf_lr_sv1      | Acoperiş       | Hardtop                              | Savanna                                     | \$3380 |
+| 1131 | rf_lr_sv2      | Acoperiş       | Softtop                              | Savanna                                     | \$3290 |
+| 1132 | exh_lr_sv2     | NOS            | Slamin                               | Savanna                                     | \$1590 |
+| 1133 | wg_l_lr_sv     | Fusta laterală | Right `Chrome Strip` Fusta laterală  | Savanna                                     | \$830  |
+| 1134 | wg_l_lr_t1     | Fusta laterală | Right `Chrome Strip` Fusta laterală  | Tornado                                     | \$800  |
+| 1135 | exh_lr_t2      | NOS            | Slamin                               | Tornado                                     | \$1500 |
+| 1136 | exh_lr_t1      | NOS            | Chrome                               | Tornado                                     | \$1000 |
+| 1137 | wg_r_lr_t1     | Fusta laterală | Left `Chrome Strip` Fusta laterală   | Tornado                                     | \$800  |
+| 1138 | spl_a_s_b      | Spoiler        | Alien                                | Sultan                                      | \$580  |
+| 1139 | spl_c_s_b      | Spoiler        | X-Flow                               | Sultan                                      | \$470  |
+| 1140 | rbmp_c_s       | Bara spate     | X-Flow                               | Sultan                                      | \$870  |
+| 1141 | rbmp_a_s       | Bara spate     | Alien                                | Sultan                                      | \$980  |
+| 1142 | bntr_b_ov      | Aerisiri       | Left Oval Vents                      | Certain Transfender Cars                    | \$150  |
+| 1143 | bntl_b_ov      | Aerisiri       | Right Oval Vents                     | Certain Transfender Cars                    | \$150  |
+| 1144 | bntr_b_sq      | Aerisiri       | Left Square Vents                    | Certain Transfender Cars                    | \$100  |
+| 1145 | bntl_b_sq      | Aerisiri       | Right Square Vents                   | Certain Transfender Cars                    | \$100  |
+| 1146 | spl_c_l_b      | Spoiler        | X-Flow                               | Elegy                                       | \$490  |
+| 1147 | spl_a_l_b      | Spoiler        | Alien                                | Elegy                                       | \$600  |
+| 1148 | rbmp_c_l       | Bara spate     | X-Flow                               | Elegy                                       | \$890  |
+| 1149 | rbmp_a_l       | Bara spate     | Alien                                | Elegy                                       | \$1000 |
+| 1150 | rbmp_a_f       | Bara spate     | Alien                                | Flash                                       | \$1090 |
+| 1151 | rbmp_c_f       | Bara spate     | X-Flow                               | Flash                                       | \$840  |
+| 1152 | fbmp_c_f       | Bara frontala  | X-Flow                               | Flash                                       | \$910  |
+| 1153 | fbmp_a_f       | Bara frontala  | Alien                                | Flash                                       | \$1200 |
+| 1154 | rbmp_a_s       | tBara spate    | Alien                                | Stratum                                     | \$1030 |
+| 1155 | fbmp_a_st      | Bara frontala  | Alien                                | Stratum                                     | \$1030 |
+| 1156 | rbmp_c_st      | Bara spate     | X-Flow                               | Stratum                                     | \$920  |
+| 1157 | fbmp_c_st      | Bara frontala  | X-Flow                               | Stratum                                     | \$930  |
+| 1158 | spl_c_j_b      | Spoiler        | X-Flow                               | Jester                                      | \$550  |
+| 1159 | rbmp_a_j       | Bara spate     | Alien                                | Jester                                      | \$1050 |
+| 1160 | fbmp_a_j       | Bara frontala  | Alien                                | Jester                                      | \$1050 |
+| 1161 | rbmp_c_j       | Bara spate     | X-Flow                               | Jester                                      | \$950  |
+| 1162 | spl_a_j_b      | Spoiler        | Alien                                | Jester                                      | \$650  |
+| 1163 | spl_c_u_b      | Spoiler        | X-Flow                               | Uranus                                      | \$450  |
+| 1164 | spl_a_u_b      | Spoiler        | Alien                                | Uranus                                      | \$550  |
+| 1165 | fbmp_c_u       | Bara frontala  | X-Flow                               | Uranus                                      | \$850  |
+| 1166 | fbmp_a_u       | Bara frontala  | Alien                                | Uranus                                      | \$950  |
+| 1167 | rbmp_c_u       | Bara spate     | X-Flow                               | Uranus                                      | \$850  |
+| 1168 | rbmp_a_u       | Bara spate     | Alien                                | Uranus                                      | \$950  |
+| 1169 | fbmp_a_s       | Bara frontala  | Alien                                | Sultan                                      | \$970  |
+| 1170 | fbmp_c_s       | Bara frontala  | X-Flow                               | Sultan                                      | \$880  |
+| 1171 | fbmp_a_l       | Bara frontala  | Alien                                | Elegy                                       | \$990  |
+| 1172 | fbmp_c_l       | Bara frontala  | X-Flow                               | Elegy                                       | \$900  |
+| 1173 | fbmp_c_j       | Bara frontala  | X-Flow                               | Jester                                      | \$950  |
+| 1174 | fbmp_lr_br1    | Bara frontala  | Chrome                               | Broadway                                    | \$1000 |
+| 1175 | fbmp_lr_br2    | Bara frontala  | Slamin                               | Broadway                                    | \$900  |
+| 1176 | rbmp_lr_br1    | Bara spate     | Chrome                               | Broadway                                    | \$1000 |
+| 1177 | rbmp_lr_br2    | Bara spate     | Slamin                               | Broadway                                    | \$900  |
+| 1178 | rbmp_lr_rem2   | Bara spate     | Slamin                               | Remington                                   | \$2050 |
+| 1179 | fbmp_lr_rem1   | Bara frontala  | Chrome                               | Remington                                   | \$2150 |
+| 1180 | rbmp_lr_rem1   | Bara spate     | Chrome                               | Remington                                   | \$2130 |
+| 1181 | fbmp_lr_bl2    | Bara frontala  | Slamin                               | Blade                                       | \$2050 |
+| 1182 | fbmp_lr_bl1    | Bara frontala  | Chrome                               | Blade                                       | \$2130 |
+| 1183 | rbmp_lr_bl2    | Bara spate     | Slamin                               | Blade                                       | \$2040 |
+| 1184 | rbmp_lr_bl1    | Bara spate     | Chrome                               | Blade                                       | \$2150 |
+| 1185 | fbmp_lr_rem2   | Bara frontala  | Slamin                               | Remington                                   | \$2040 |
+| 1186 | rbmp_lr_sv2    | Bara spate     | Slamin                               | Savanna                                     | \$2095 |
+| 1187 | rbmp_lr_sv1    | Bara spate     | Chrome                               | Savanna                                     | \$2175 |
+| 1188 | fbmp_lr_sv2    | Bara frontala  | Slamin                               | Savanna                                     | \$2080 |
+| 1189 | fbmp_lr_sv1    | Bara frontala  | Chrome                               | Savanna                                     | \$2200 |
+| 1190 | fbmp_lr_t2     | Bara frontala  | Slamin                               | Tornado                                     | \$1200 |
+| 1191 | fbmp_lr_t1     | Bara frontala  | Chrome                               | Tornado                                     | \$1040 |
+| 1192 | rbmp_lr_t1     | Bara spate     | Chrome                               | Tornado                                     | \$940  |
+| 1193 | rbmp_lr_t2     | Bara spate     | Slamin                               | Tornado                                     | \$1100 |
 
 ## Toate componentele valide pentru fiecare vehicul
 
