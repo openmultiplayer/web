@@ -8,7 +8,7 @@ Bine ați venit la wiki-ul SA-MP, întreținut de echipa open.mp și comunitatea
 
 Acest site își propune să ofere o sursă de documentare ușor accesibilă, ușor de contribuit la SA-MP și, în cele din urmă, open.mp.
 
-## The SA-MP Wiki is Gone
+## SA-MP Wiki a disparut
 
 Din păcate, Wiki-ul SA-MP a fost luat offline la sfârșitul lunii septembrie. Din fericire, cea mai mare parte a conținutului este stocată pe Internet Archive.
 
