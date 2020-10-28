@@ -1,16 +1,15 @@
 ---
-title: Component slots
+title: Sloturi pentru componente
 ---
 
 :::info
 
-Use them to work with the [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot) function.
-
+Folosiți-le pentru a lucra cu functia [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot).
 :::
 
 ---
 
-| Slot | Name                    |
+| Slot | Nume                    |
 | ---- | ----------------------- |
 | 0    | CARMODTYPE_SPOILER      |
 | 1    | CARMODTYPE_HOOD         |
