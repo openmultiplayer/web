@@ -3,7 +3,7 @@ title: "Lag Compensation"
 descripion: Lag compensation explanation.
 ---
 
-import T from '../../../../src/components/templates.js'
+import T from '../../src/components/templates.js'
 
 <T.VersionWarn name='feature' version='SA-MP 0.3z' />
 
