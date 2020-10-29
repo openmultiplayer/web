@@ -1,5 +1,4 @@
 ---
-id: remoteconsole
 title: "Consolă la distanță (RCON)"
 descripion: Administrare server de la distanță.
 ---

@@ -1,5 +1,4 @@
 ---
-id: lagcompensation
 title: "Lag Compensation"
 descripion: Lag compensation explanation.
 ---

@@ -1,5 +1,4 @@
 ---
-id: lagcompensation
 title: "Compensarea intarzierii"
 descripion: Explicație de compensare a întârzierii.
 ---

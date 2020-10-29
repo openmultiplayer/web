@@ -1,5 +1,4 @@
 ---
-id: controllingaserver
 title: "Controlando um Servidor"
 description: Comandos úteis para gerenciar um servidor.
 ---

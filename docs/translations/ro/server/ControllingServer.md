@@ -1,5 +1,4 @@
 ---
-id: controllingaserver
 title: "Controlling a Server"
 descripion: Useful commands for controlling a server.
 ---

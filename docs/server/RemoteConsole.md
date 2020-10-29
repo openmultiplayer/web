@@ -1,5 +1,4 @@
 ---
-id: remoteconsole
 title: "Remote Console (RCON)"
 descripion: Remote server administation.
 ---
