@@ -20,10 +20,10 @@ This function always returns 1 (success), even if the vehicle passed is not crea
 
 :::warning
 
-If vehicle's color is black , paintjob may not be visible.
-Better to make vehicle white before applying painjob by using ChangeVehicleColor(vehicleid,1,1); 
+If vehicle's color is black , paintjob may not be visible. Better to make vehicle white before applying painjob by using ChangeVehicleColor(vehicleid,1,1);
 
 :::
+
 ## Examples
 
 ```c
