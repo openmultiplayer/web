@@ -28,7 +28,7 @@ Uneori va fi afișat meniul pentru un singur jucător, dar SA: MP va fi încărc
 
 ### Primesc "Unacceptable Nickname" când mă conectez la un server
 
-Asigurați-vă că nu utilizați caractere interzise în numele dvs. (utilizați numai 0-9, az, \[\], (), \ $, @,., \ _ Și =) și că numele dvs. nu depășește 20 personaje. Acest lucru ar putea fi cauzat și atunci când un jucător se află pe un server cu același nume ca dvs. (ceea ce se poate întâmpla dacă vă alăturați din nou serverului imediat după expirarea timpului sau blocarea). De asemenea, un server Windows care rulează SA-MP cu un timp de funcționare mai mare de 50 de zile poate provoca această eroare.
+Asigurați-vă că nu utilizați caractere interzise în numele dvs. (utilizați numai 0-9, az, \[\], (), \ \$, @,., \ \_ Și =) și că numele dvs. nu depășește 20 personaje. Acest lucru ar putea fi cauzat și atunci când un jucător se află pe un server cu același nume ca dvs. (ceea ce se poate întâmpla dacă vă alăturați din nou serverului imediat după expirarea timpului sau blocarea). De asemenea, un server Windows care rulează SA-MP cu un timp de funcționare mai mare de 50 de zile poate provoca această eroare.
 
 ### Ecranul se blochează la "Connecting to ip:port..."
 
