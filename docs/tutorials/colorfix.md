@@ -4,7 +4,7 @@ title: "Color Fix"
 descripion: A basic script to add more player colours.
 ---
 
-This tutorial is to be used with [GetPlayerColor](../../scripting/functions/GetPlayerColor.md), if you do not use [SetPlayerColor](../../scripting/functions/SetPlayerColor.md) in your script when players connect.
+This tutorial is to be used with [GetPlayerColor](../../scripting/functions/GetPlayerColor), if you do not use [SetPlayerColor](../../scripting/functions/SetPlayerColor) in your script when players connect.
 
 ```c
 new PlayerColors[] = {
@@ -29,7 +29,7 @@ Next place this under the OnPlayerConnect callback:
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);
 ```
 
-Now [GetPlayerColor](../../scripting/functions/GetPlayerColor.md) will work!
+Now [GetPlayerColor](../../scripting/functions/GetPlayerColor) will work!
 
 For new versions of SA-MP you can add this array:
 
