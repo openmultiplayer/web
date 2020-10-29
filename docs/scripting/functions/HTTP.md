@@ -26,14 +26,15 @@ Sends a threaded HTTP request.
 1 on success, 0 on failure
 
 ## Definitions
+
 ```c
 // HTTP requests
 #define HTTP_GET                               (1) // Sends a regular HTTP request.
 #define HTTP_POST                              (2) // Sends a HTTP request with POST data.
-#define HTTP_HEAD                              (3) // Sends a regular HTTP request, but ignores any response data - returning only the response code. 
+#define HTTP_HEAD                              (3) // Sends a regular HTTP request, but ignores any response data - returning only the response code.
 // HTTP error response codes
 // These codes compliment ordinary HTTP response codes returned in 'response_code'
-// (10x) (20x OK) (30x Moved) (40x Unauthorised) (50x Server Error)  
+// (10x) (20x OK) (30x Moved) (40x Unauthorised) (50x Server Error)
 #define HTTP_ERROR_BAD_HOST                    (1)
 #define HTTP_ERROR_NO_SOCKET                   (2)
 #define HTTP_ERROR_CANT_CONNECT                (3)
@@ -84,4 +85,5 @@ public MyHttpResponse(index, response_code, data[])
 As well as the response codes listed above, there are also all of the typical HTTP responses such as 404 (Page not found), 500 (Server error) or 403 (forbidden)
 
 :::
+
 ## Related Functions
