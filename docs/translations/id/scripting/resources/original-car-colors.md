@@ -1,5 +1,5 @@
 ---
-title: original-car-colors
+id: original-car-colors
 title: Original Car Colors
 description: Daftar warna asli kendaraan dari single player.
 ---
