@@ -8,12 +8,12 @@ tags: ["gangzone"]
 
 Cria uma gangzone (zona colorida no radar).
 
-| Nome | Descrição                                            |
-| ---- | ---------------------------------------------------- |
-| minx | A coordenada X para o lado oeste da gangzone.        |
-| miny | A coordenada Y para o lado sul da gangzone.          |
-| maxx | A coordenada X para o lado este da gangzone.         |
-| maxy | A coordenada Y para o lado norte da gangzone.        |
+| Nome | Descrição                                     |
+| ---- | --------------------------------------------- |
+| minx | A coordenada X para o lado oeste da gangzone. |
+| miny | A coordenada Y para o lado sul da gangzone.   |
+| maxx | A coordenada X para o lado este da gangzone.  |
+| maxy | A coordenada Y para o lado norte da gangzone. |
 
 ## Retorno
 
@@ -56,11 +56,11 @@ Existe um limite de 1024 gangzones. Colocar parâmetros na ordem errada resulta 
 ## Funções Relacionadas
 
 - [GangZoneDestroy](GangZoneDestroy): Destrói uma gangzone.
-- [GangZoneShowForPlayer](GangZoneShowForPlayer): Mostra uma gangzone a um jogador. 
-- [GangZoneShowForAll](GangZoneShowForAll): Mostra uma gangzone para todos os jogadores. 
-- [GangZoneHideForPlayer](GangZoneHideForPlayer): Esconde uma gangzone a um jogador. 
-- [GangZoneHideForAll](GangZoneHideForAll): Esconde uma gangzone para todos os jogadores. 
-- [GangZoneFlashForPlayer](GangZoneFlashForPlayer): Faz uma gangzone piscar para um jogador. 
-- [GangZoneFlashForAll](GangZoneFlashForAll): Faz uma gangzone piscar para todos os jogadores. 
+- [GangZoneShowForPlayer](GangZoneShowForPlayer): Mostra uma gangzone a um jogador.
+- [GangZoneShowForAll](GangZoneShowForAll): Mostra uma gangzone para todos os jogadores.
+- [GangZoneHideForPlayer](GangZoneHideForPlayer): Esconde uma gangzone a um jogador.
+- [GangZoneHideForAll](GangZoneHideForAll): Esconde uma gangzone para todos os jogadores.
+- [GangZoneFlashForPlayer](GangZoneFlashForPlayer): Faz uma gangzone piscar para um jogador.
+- [GangZoneFlashForAll](GangZoneFlashForAll): Faz uma gangzone piscar para todos os jogadores.
 - [GangZoneStopFlashForPlayer](GangZoneStopFlashForPlayer): Gangzone deixa de piscar para um jogador.
 - [GangZoneStopFlashForAll](GangZoneStopFlashForAll): Gangzone deixa de piscar para todos os jogadores.
