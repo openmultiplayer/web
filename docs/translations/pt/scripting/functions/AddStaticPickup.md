@@ -8,8 +8,8 @@ tags: []
 
 Esta função adiciona um pickup 'fixo' no jogo. Esses pickups suportam armas, vida, colete, etc, com a capacidade de funcionar sem scripts (armas/vida/colete são definidos automaticamente).
 
-| Nome                                | Descrição                                                                         |
-| ----------------------------------- | ----------------------------------------------------------------------------------- |
+| Nome                                | Descrição                                                                                     |
+| ----------------------------------- | --------------------------------------------------------------------------------------------- |
 | [model](../resources/pickupids.md)  | O modelo do pickup.                                                                           |
 | [type](../resources/pickuptypes.md) | O tipo de pickup. Determina como o pickup reage quando é coletado.                            |
 | Float:X                             | A coordenada-X para colocar o pickup.                                                         |
@@ -28,10 +28,10 @@ Esta função adiciona um pickup 'fixo' no jogo. Esses pickups suportam armas, v
 ```c
 public OnGameModeInit()
 {
-    // Cria um pickup para colete. 
+    // Cria um pickup para colete.
     AddStaticPickup(1242, 2, 1503.3359, 1432.3585, 10.1191, 0);
 
-    // Cria um pickup para alguma vida, bem ao lado do colete. 
+    // Cria um pickup para alguma vida, bem ao lado do colete.
     AddStaticPickup(1240, 2, 1506.3359, 1432.3585, 10.1191, 0);
 
     return 1;
