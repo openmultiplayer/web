@@ -4,9 +4,7 @@ description: Aplica uma animação a um ator.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões anteriores.
 
 ## Descrição
 
