@@ -14,7 +14,7 @@ San Andreas Multiplayer is **not** a stand-alone program! It adds multiplayer fu
 
 First off, ensure you are following the procedures set out in the [Quick-start guide](https://wiki.sa-mp.com/wiki/Getting_Started). If you have followed what it says, and still cannot see any servers, you must allow SA:MP access through your firewall. Unfortunately, due to the large amount of available firewall software, we can not offer further support on this - we suggest looking at the manufacturers website or trying a Google search. Also make sure you have the latest SA:MP version!
 
-### Single Player loads instead of SA:MP
+### Singleplayer loads instead of SA:MP
 
 :::warning
 
@@ -60,4 +60,4 @@ This is possibly arises when DirectX is not properly installed, try re-installin
 
 ### I cannot see other player's nametags!
 
-Please be aware that some servers may have nametags globally disabled. Otherwise, this problem often occurs on computers with Intel HD integrated graphics processors (which aren't really meant for gaming, anyway). Unfortunately, the exact cause is unknown and there doesn't seem to be a universal fix available at present time either. A long term fix would be to install a dedicated graphics card in your computer, if this is possible and if your budget allows it. Laptops, of course, can't be upgraded.
+Please be aware that some servers may have nametags globally disabled. Otherwise, this problem often occurs on computers with Intel HD integrated graphics processors (which aren't really meant for gaming, anyway). Unfortunately, the exact cause is unknown and there doesn't seem to be a universal fix available at present time either. A long term fix would be to install a dedicated graphics card in your computer, if this is possible and if your budget allows it.
