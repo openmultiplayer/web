@@ -1,7 +1,7 @@
 ---
 id: lagcompensation
-title: "Lag Compensation"
-descripion: Lag compensation explanation.
+title: "Kompensasi Lag"
+descripion: Penjelasan kompensasi lag.
 ---
 
 import T from '../../../../src/components/templates.js'
