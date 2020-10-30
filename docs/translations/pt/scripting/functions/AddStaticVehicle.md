@@ -14,7 +14,7 @@ Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao 
 | Float:spawn_X                            | A coordenada-X para o veículo.             |
 | Float:spawn_Y                            | A coordenada-Y para o veículo.             |
 | Float:spawn_Z                            | A coordenada-Z para o veículo.             |
-| Float:z_angle                            | Direcção do veículo - ângulo.              |
+| Float:z_angle                            | Direção do veículo - Ângulo.               |
 | [color1](../resources/vehiclecolorid.md) | O ID da cor primária. -1 para aleatório.   |
 | [color2](../resources/vehiclecolorid.md) | O ID da cor secundária. -1 para aleatório. |
 
