@@ -8,15 +8,15 @@ tags: ["vehicle"]
 
 Coloca um veículo de volta para a posição em que foi criado.
 
-| Nome      | Descrição                        |
-| --------- | -------------------------------- |
-| vehicleid | O ID do veículo a respawnar.     |
+| Nome      | Descrição                    |
+| --------- | ---------------------------- |
+| vehicleid | O ID do veículo a respawnar. |
 
 ## Retorno
 
 1: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. O veículo não existe. 
+0: A função falhou ao ser executada. O veículo não existe.
 
 ## Exemplos
 
