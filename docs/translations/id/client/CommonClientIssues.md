@@ -14,7 +14,7 @@ San Andreas Multi-player **bukan** program stand-alone! Program ini menambahkan 
 
 Pertama, pastikan Anda telah mengikuti prosedur di [Panduan cepat](https://wiki.sa-mp.com/wiki/Getting_Started). Jika Anda telah mengikut instruksinya dan tidak bisa melihat server apapun, Anda harus mengijinkan akses SA-MP melalui firewall Anda. Sayangnya, dikarenakan besarnya jumlah aplikasi firewall yang tersedia, kami tidak bisa menawarkan bantuan lebih lanjut - kami sarankan untuk mengunjungi situs jaringan manufaktur atau coba melakukan pencarian di Google. Dan juga pastikan Anda telah menggunakan versi SA:MP terbaru.
 
-### Memuat Single Player, bukan SA-MP
+### Hanya memuat Single Player, bukan memuat SA-MP
 
 :::warning
 
