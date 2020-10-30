@@ -8,7 +8,7 @@ sidebar_label: ID Permulaan
 Semuanya, seperti objek, pemain, atau ID kendaraan menggunakan ID. Beberapa ID dimulai dari 0, ada juga yang dimulai dari 1.
 
 | Tipe                      | ID Permulaan |
-|---------------------------|--------------|
+| ------------------------- | ------------ |
 | Label Teks 3D             | 0            |
 | Aktor                     | 0            |
 | File                      | 0            |

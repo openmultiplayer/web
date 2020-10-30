@@ -153,7 +153,7 @@ Ketika cmdlist untuk perintah (atau, varlist untuk variabel) yang menggunakan RC
 Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 
 | Perintah                          | Deskripsi                                                                                                                                    |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/rcon cmdlist`                   | Menampilkan sebuah daftar berisi perintah-perintah.                                                                                          |
 | `/rcon varlist`                   | Menampilkan sebuah daftar berisi variabel-variabel saat ini.                                                                                 |
 | `/rcon exit`                      | Menutup server.                                                                                                                              |
@@ -170,7 +170,7 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon reloadlog`                 | Memuat ulang server_log.txt. Tidak menampak efek apapun.                                                                                     |
 | `/rcon say`                       | Memunculkan sebuah pesan ke pemain di konsol klien. (contoh: `/rcon say hello` akan muncul `Admin: hello`).                                  |
 | `/rcon players`                   | Memunculkan pemain yang ada di server (nama, alamat IP, dan ping).                                                                           |
-| `/rcon banip [IP]`                | Melarang berdasarkan alamat IP  (_contoh: /rcon banip 127.0.0.1_).                                                                           |
+| `/rcon banip [IP]`                | Melarang berdasarkan alamat IP (_contoh: /rcon banip 127.0.0.1_).                                                                            |
 | `/rcon unbanip [IP]`              | Menghapus larangan berdasarkan alamat IP (_contoh: /rcon unbanip 127.0.0.1_).                                                                |
 | `/rcon gravity`                   | Mengganti gravitasi (_contoh: /rcon gravity 0.008_).                                                                                         |
 | `/rcon weather [ID]`              | Mengganti cuaca (_contoh: /rcon weather 1_).                                                                                                 |
@@ -184,7 +184,7 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 **Perintah-perintah berikut hanya tersedia di versi 0.3z R2 dan di atasnya**:
 
 | Perintah                          | Deskripsi                                                                                                           |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `/rcon messageslimit [count]`     | Mengubah jumlah pesan yang dikirim klien ke server per detik. (nilai awal 500)                                      |
 | `/rcon ackslimit [count]`         | Mengubah batasan acks (nilai awal 1000) (Sejak versi 0.3z R2-2, nilai awal limit-nya adalah 3000)                   |
 | `/rcon messageholelimit [count]`  | Mengubah batasan lubang pesan (Juga tersedia di versi 0.3z R1) (nilai awal 3000)                                    |

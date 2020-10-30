@@ -5,7 +5,7 @@ description: Konstanta Informasi Tipe Kendaraan
 ---
 
 | Informasi Tipe Kendaraan          | Deskripsi                                                      |
-|-----------------------------------|----------------------------------------------------------------|
+| --------------------------------- | -------------------------------------------------------------- |
 | VEHICLE_MODEL_INFO_SIZE           | Ukuran kendaraan                                               |
 | VEHICLE_MODEL_INFO_FRONTSEAT      | Posisi tempat duduk depan\*                                    |
 | VEHICLE_MODEL_INFO_REARSEAT       | Posisi tempat duduk belakang\*                                 |

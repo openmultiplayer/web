@@ -7,7 +7,7 @@ description: Daftar Ledakan
 Tipe-tipe ini untuk digunakan dengan [CreateExplosion](../functions/CreateExplosion) atau dengan [CreateExplosionForPlayer](../functions/CreateExplosionForPlayer)
 
 | Tipe | Terlihat | Terpisah | Membuat Api | Melontarkan Secara Fisik | Bersuara | Kekhususan                                                                                                    | Rentang      |
-|------|----------|----------|-------------|--------------------------|----------|---------------------------------------------------------------------------------------------------------------|--------------|
+| ---- | -------- | -------- | ----------- | ------------------------ | -------- | ------------------------------------------------------------------------------------------------------------- | ------------ |
 | 0    | Ya       | --       | --          | Ya                       | Ya       | Normal                                                                                                        | Besar        |
 | 1    | Ya       | --       | Ya          | --                       | Ya       | Normal                                                                                                        | Normal       |
 | 2    | Ya       | --       | Ya          | Ya                       | Ya       | Normal                                                                                                        | Besar        |

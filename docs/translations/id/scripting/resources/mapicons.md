@@ -17,7 +17,7 @@ description: Daftar Ikon Peta
 | 8   | ![](/images/mapIcons/icon8.gif)  | Big Smoke                         |
 | 9   | ![](/images/mapIcons/icon9.gif)  | Boat Yard                         |
 | 10  | ![](/images/mapIcons/icon10.gif) | Burger Shot                       |
-| 11  | ![](/images/mapIcons/icon11.gif) | Penambangan  (Quarry)             |
+| 11  | ![](/images/mapIcons/icon11.gif) | Penambangan (Quarry)              |
 | 12  | ![](/images/mapIcons/icon12.gif) | Catalina                          |
 | 13  | ![](/images/mapIcons/icon13.gif) | Cesar                             |
 | 14  | ![](/images/mapIcons/icon14.gif) | Cluckin' Bell                     |

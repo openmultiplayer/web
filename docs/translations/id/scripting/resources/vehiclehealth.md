@@ -5,7 +5,7 @@ description: Nilai Kesehatan Kendaraan
 ---
 
 | Kesehatan | Status Mesin                                 |
-|-----------|----------------------------------------------|
+| --------- | -------------------------------------------- |
 | > 650     | Tidak Rusak                                  |
 | 650-550   | Berasap Putih                                |
 | 550-390   | Berasap Abu-abu                              |

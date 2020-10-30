@@ -13,7 +13,7 @@ Semua model objek yang valid dapat digunakan sebagai [pickup](../functions/Creat
 ## ID model pickup
 
 | ID    | Ikon                              | Deskripsi                         |
-|-------|-----------------------------------|-----------------------------------|
+| ----- | --------------------------------- | --------------------------------- |
 | 954   | ![](/images/pickups/pickup1.png)  | Tapal kuda                        |
 | 1210  | ![](/images/pickups/pickup2.png)  | Koper                             |
 | 1212  | ![](/images/pickups/pickup3.png)  | Uang                              |
@@ -77,7 +77,7 @@ Semua model objek yang valid dapat digunakan sebagai [pickup](../functions/Creat
 ## Pickup senjata
 
 | ID  | Deskripsi                       |
-|-----|---------------------------------|
+| --- | ------------------------------- |
 | 321 | Dildo Reguler                   |
 | 322 | Dildo Putih                     |
 | 323 | Vibrator                        |
