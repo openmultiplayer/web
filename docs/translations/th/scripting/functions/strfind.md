@@ -1,5 +1,4 @@
 ---
-id: strfind
 title: strfind
 description: Search for a sub string in a string.
 tags: []

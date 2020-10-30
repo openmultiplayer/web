@@ -1,5 +1,4 @@
 ---
-id: OnDialogResponse
 title: OnDialogResponse
 description: Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcije bilo klikom dugmeta, klikom ENTER/ESC tipke ili duplim klikom na list item (ukoliko koristite "list" style dijalog).
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickPlayer
 title: OnPlayerClickPlayer
 description: Poziva se kada igrač dva puta klikne na igrača na scoreboard-u (TAB).
 tags: ["player"]

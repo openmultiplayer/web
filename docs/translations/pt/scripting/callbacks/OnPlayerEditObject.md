@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEditObject
 title: OnPlayerEditObject
 description: Esta callback é chamada quando um jogador termina de editar um objeto (EditObject/EditPlayerObject).
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: CreateExplosionForPlayer
 title: CreateExplosionForPlayer
 description: Kreira eksploziju koja je vidljiva samo jednom igracu.
 tags: ["player"]

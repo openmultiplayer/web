@@ -1,5 +1,4 @@
 ---
-id: OnPlayerInteriorChange
 title: OnPlayerInteriorChange
 description: Chamada quando um jogador muda de interior.
 tags: ["player"]

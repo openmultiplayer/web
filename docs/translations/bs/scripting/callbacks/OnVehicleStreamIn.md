@@ -1,5 +1,4 @@
 ---
-id: OnVehicleStreamIn
 title: OnVehicleStreamIn
 description: Pozvan kada se vozilo pojavi u igračevom klijentu.
 tags: ["vehicle"]

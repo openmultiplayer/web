@@ -1,5 +1,4 @@
 ---
-id: OnVehiclePaintjob
 title: OnVehiclePaintjob
 description: Pozvano kada igrač pregleda paintjob vozila unutar mod shopa.
 tags: ["vehicle"]

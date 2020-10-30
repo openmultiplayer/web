@@ -1,5 +1,4 @@
 ---
-id: OnPlayerText
 title: OnPlayerText
 description: Pozvano kada igrač pošalje chat poruku.
 tags: ["player"]

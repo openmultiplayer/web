@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawSetProportional
 title: PlayerTextDrawSetProportional
 description: Appears to scale text spacing to a proportional ratio.
 tags: ["player", "textdraw", "playertextdraw"]

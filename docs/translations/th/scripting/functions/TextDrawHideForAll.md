@@ -1,5 +1,4 @@
 ---
-id: TextDrawHideForAll
 title: TextDrawHideForAll
 description: Hides a text draw for all players.
 tags: ["textdraw"]

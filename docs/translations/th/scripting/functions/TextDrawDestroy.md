@@ -1,5 +1,4 @@
 ---
-id: TextDrawDestroy
 title: TextDrawDestroy
 description: Destroys a previously-created textdraw.
 tags: ["textdraw"]

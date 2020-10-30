@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawSetOutline
 title: PlayerTextDrawSetOutline
 description: Set the outline of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

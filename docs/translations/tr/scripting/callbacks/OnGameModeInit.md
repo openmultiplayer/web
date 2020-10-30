@@ -1,5 +1,4 @@
 ---
-id: OnGameModeInit
 title: OnGameModeInit
 description: Bu callback oyun modu başladığında tetiklenir.
 tags: []

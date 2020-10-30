@@ -1,5 +1,4 @@
 ---
-id: AddPlayerClass
 title: AddPlayerClass
 description: Class seçimi sırasında yeni bir class oluşturur.
 tags: ["player"]

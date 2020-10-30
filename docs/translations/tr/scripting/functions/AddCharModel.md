@@ -1,5 +1,4 @@
 ---
-id: AddCharModel
 title: AddCharModel
 description: İndirmek için yeni bir özel karakter modeli ekler.
 tags: []

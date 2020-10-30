@@ -1,5 +1,4 @@
 ---
-id: AddStaticVehicleEx
 title: AddStaticVehicleEx
 description: Adds a 'static' vehicle (models are pre-loaded for players)to the gamemode.
 tags: ["vehicle"]

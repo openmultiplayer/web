@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickTextDraw
 title: OnPlayerClickTextDraw
 description: Callback ini akan terpanggil ketika pemain mengklik sebuah textraw atau membatalkan 'select' mode dengan tombol ESC.
 tags: ["player", "textdraw"]

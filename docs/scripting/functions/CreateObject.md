@@ -1,5 +1,4 @@
 ---
-id: CreateObject
 title: CreateObject
 description: Creates an object at specified coordinates in the game world.
 tags: []

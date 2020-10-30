@@ -1,5 +1,4 @@
 ---
-id: OnPlayerRequestClass
 title: OnPlayerRequestClass
 description: Pozvano kada igrač promijeni klasu na odabiru klase (i kada se odabir klase prvi put pojavi).
 tags: ["player"]

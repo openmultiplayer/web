@@ -1,5 +1,4 @@
 ---
-id: OnPlayerDeath
 title: OnPlayerDeath
 description: Esta callback é chamada quando um jogador morre, tanto por suicídio ou por ser morto por outros jogadores.
 tags: ["player"]

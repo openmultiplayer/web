@@ -1,5 +1,4 @@
 ---
-id: OnGameModeExit
 title: OnGameModeExit
 description: Callback นี้ถูกเรียกเมื่อเกมโหมดสิ้นสุดการทำงานไม่ว่าจะผ่าน 'gmx', เซิร์ฟเวอร์กำลังปิดตัวลง, หรือ GameModeExit
 tags: []

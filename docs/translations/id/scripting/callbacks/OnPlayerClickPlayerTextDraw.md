@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickPlayerTextDraw
 title: OnPlayerClickPlayerTextDraw
 description: Callback ini terpanggil ketika pemain mengklik sebuah player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

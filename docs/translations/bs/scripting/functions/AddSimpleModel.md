@@ -1,5 +1,4 @@
 ---
-id: AddSimpleModel
 title: AddSimpleModel
 description: Dodaje novi prilagođen/custom prost model objekta za preuzimanje.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: SetPlayerRaceCheckpoint
 title: SetPlayerRaceCheckpoint
 description: Creates a race checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]

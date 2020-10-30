@@ -1,5 +1,4 @@
 ---
-id: db_num_fields
 title: db_num_fields
 description: Get the number of fields in a result.
 tags: ["sqlite"]

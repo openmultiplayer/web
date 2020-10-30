@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEditAttachedObject
 title: OnPlayerEditAttachedObject
 description: Esta callback é chamada quando um jogador termina o modo de edição de objetos anexados.
 tags: ["player"]

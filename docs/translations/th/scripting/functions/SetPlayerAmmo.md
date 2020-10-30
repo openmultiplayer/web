@@ -1,5 +1,4 @@
 ---
-id: SetPlayerAmmo
 title: SetPlayerAmmo
 description: Set the ammo of a player's weapon.
 tags: ["player"]

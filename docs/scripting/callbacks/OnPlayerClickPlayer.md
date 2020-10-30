@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickPlayer
 title: OnPlayerClickPlayer
 description: Called when a player double-clicks on a player on the scoreboard.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: GivePlayerWeapon
 title: GivePlayerWeapon
 description: Give a player a weapon with a specified amount of ammo.
 tags: ["player"]

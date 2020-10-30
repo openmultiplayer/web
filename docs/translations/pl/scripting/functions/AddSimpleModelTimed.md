@@ -1,5 +1,4 @@
 ---
-id: AddSimpleModelTimed
 title: AddSimpleModelTimed
 description: Dodaje do pobrania nowy obiekt.
 tags: []

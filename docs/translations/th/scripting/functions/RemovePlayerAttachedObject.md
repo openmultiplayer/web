@@ -1,5 +1,4 @@
 ---
-id: RemovePlayerAttachedObject
 title: RemovePlayerAttachedObject
 description: Remove an attached object from a player.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: ConnectNPC
 title: ConnectNPC
 description: Poveze NPC-a na server.
 tags: ["npc"]

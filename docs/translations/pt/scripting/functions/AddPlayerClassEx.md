@@ -1,5 +1,4 @@
 ---
-id: AddPlayerClassEx
 title: AddPlayerClassEx
 description: Esta função é exatamente igual à função AddPlayerClass, com a adição de um parâmetro de equipe.
 tags: []

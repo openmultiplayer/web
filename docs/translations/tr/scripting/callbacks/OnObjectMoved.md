@@ -1,5 +1,4 @@
 ---
-id: OnObjectMoved
 title: OnObjectMoved
 description: Bu callback obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnEnterExitModShop
 title: OnEnterExitModShop
 description: Acest callback este apelat atunci când un jucâtor intră sau iese dintr-un mod shop.
 tags: []

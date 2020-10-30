@@ -1,5 +1,4 @@
 ---
-id: AttachTrailerToVehicle
 title: AttachTrailerToVehicle
 description: Przyczepia jeden pojazd do drugiego jako przyczepa.
 tags: ["vehicle"]

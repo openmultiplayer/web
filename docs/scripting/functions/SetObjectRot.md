@@ -1,5 +1,4 @@
 ---
-id: SetObjectRot
 title: SetObjectRot
 description: Set the rotation of an object on the three axes (X, Y and Z).
 tags: []

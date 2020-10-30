@@ -1,5 +1,4 @@
 ---
-id: materialtextsizes
 title: Material Text Sizes
 description: A list of Material Text Sizes
 ---

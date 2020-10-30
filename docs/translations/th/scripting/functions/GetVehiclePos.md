@@ -1,5 +1,4 @@
 ---
-id: GetVehiclePos
 title: GetVehiclePos
 description: Gets the position of a vehicle.
 tags: ["vehicle"]

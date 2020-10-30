@@ -1,5 +1,4 @@
 ---
-id: db_close
 title: db_close
 description: Closes a SQLite database connection that was opened with `db_open`.
 keywords:

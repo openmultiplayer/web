@@ -1,5 +1,4 @@
 ---
-id: PlayerPlaySound
 title: PlayerPlaySound
 description: Plays the specified sound for a player.
 tags: ["player"]

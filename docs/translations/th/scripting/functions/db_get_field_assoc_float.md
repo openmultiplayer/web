@@ -1,5 +1,4 @@
 ---
-id: db_get_field_assoc_float
 title: db_get_field_assoc_float
 description: Get the contents of field as a float with specified name.
 tags: ["sqlite"]

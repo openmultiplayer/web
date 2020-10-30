@@ -1,5 +1,4 @@
 ---
-id: memcpy
 title: memcpy
 description: Copy bytes from one location to another.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: fexist
 title: fexist
 description: Checks if a specific file exists in the scriptfiles directory.
 tags: []

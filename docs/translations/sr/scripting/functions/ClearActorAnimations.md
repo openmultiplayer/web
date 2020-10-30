@@ -1,5 +1,4 @@
 ---
-id: ClearActorAnimations
 title: ClearActorAnimations
 description: Prekine sve animacije aktivne na actoru.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: bullethittypes
 title: Tipuri de lovituri de glonț
 ---
 

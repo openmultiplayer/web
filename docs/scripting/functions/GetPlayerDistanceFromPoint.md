@@ -1,5 +1,4 @@
 ---
-id: GetPlayerDistanceFromPoint
 title: GetPlayerDistanceFromPoint
 description: Calculate the distance between a player and a map coordinate.
 tags: ["player"]

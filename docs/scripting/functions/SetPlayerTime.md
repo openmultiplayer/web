@@ -1,5 +1,4 @@
 ---
-id: SetPlayerTime
 title: SetPlayerTime
 description: Sets the game time for a player.
 tags: ["player"]

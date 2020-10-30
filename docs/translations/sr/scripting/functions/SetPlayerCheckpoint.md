@@ -1,5 +1,4 @@
 ---
-id: SetPlayerCheckpoint
 title: SetPlayerCheckpoint
 description: Postavlja checkpoint (crveni krug) za igraca.
 tags: ["player", "checkpoint"]

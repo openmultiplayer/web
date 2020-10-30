@@ -1,5 +1,4 @@
 ---
-id: DisablePlayerCheckpoint
 title: DisablePlayerCheckpoint
 description: Disables (hides/destroys) a player's set checkpoint.
 tags: ["player", "checkpoint"]

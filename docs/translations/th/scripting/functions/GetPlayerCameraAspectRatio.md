@@ -1,5 +1,4 @@
 ---
-id: GetPlayerCameraAspectRatio
 title: GetPlayerCameraAspectRatio
 description: Retrieves the aspect ratio of a player's camera.
 tags: ["player"]

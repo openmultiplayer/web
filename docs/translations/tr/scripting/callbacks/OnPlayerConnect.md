@@ -1,5 +1,4 @@
 ---
-id: OnPlayerConnect
 title: OnPlayerConnect
 description: Bu callback oyuncu sunucuya bağlandığında çağrılır.
 tags: ["player"]

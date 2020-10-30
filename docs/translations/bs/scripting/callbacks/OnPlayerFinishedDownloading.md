@@ -1,5 +1,4 @@
 ---
-id: OnPlayerFinishedDownloading
 title: OnPlayerFinishedDownloading
 description: Ovaj callback je pozvan kada igrač dovrši preuzimanje custom modela.
 tags: ["player"]

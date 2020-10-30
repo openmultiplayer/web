@@ -1,5 +1,4 @@
 ---
-id: cameracutstyles
 title: Stiluri de tăiere a camerei
 ---
 

@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamIn
 title: OnActorStreamIn
 description: This callback is called when an actor is streamed in by a player's client.
 tags: []

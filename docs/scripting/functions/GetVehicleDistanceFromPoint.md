@@ -1,5 +1,4 @@
 ---
-id: GetVehicleDistanceFromPoint
 title: GetVehicleDistanceFromPoint
 description: This function can be used to calculate the distance (as a float) between a vehicle and another map coordinate.
 tags: ["vehicle"]

@@ -1,5 +1,4 @@
 ---
-id: DeletePVar
 title: DeletePVar
 description: Deletes a previously set player variable.
 tags: ["pvar"]

@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawLetterSize
 title: PlayerTextDrawLetterSize
 description: Sets the width and height of the letters in a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

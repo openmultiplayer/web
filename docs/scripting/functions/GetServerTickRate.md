@@ -1,5 +1,4 @@
 ---
-id: GetServerTickRate
 title: GetServerTickRate
 description: Gets the tick rate (like FPS) of the server.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: GetPlayerWantedLevel
 title: GetPlayerWantedLevel
 description: Gets the wanted level of a player.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: DisableMenu
 title: DisableMenu
 description: Disable a menu.
 tags: ["menu"]

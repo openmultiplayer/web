@@ -1,5 +1,4 @@
 ---
-id: TextDrawSetShadow
 title: TextDrawSetShadow
 description: Sets the size of a textdraw's text's shadow.
 tags: ["textdraw"]

@@ -1,5 +1,4 @@
 ---
-id: RedirectDownload
 title: RedirectDownload
 description: Redirect a player custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.
 tags: []

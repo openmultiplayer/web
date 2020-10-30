@@ -1,5 +1,4 @@
 ---
-id: AllowAdminTeleport
 title: AllowAdminTeleport
 description: Ta funkcja określa, czy administratorzy RCON będą teleportowani do punktu docelowego, kiedy tylko go zaznaczą na mapie.
 tags: []

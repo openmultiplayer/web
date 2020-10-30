@@ -1,5 +1,4 @@
 ---
-id: OnPlayerExitedMenu
 title: OnPlayerExitedMenu
 description: Pozvano kada igrač napusti meni.
 tags: ["player", "menu"]

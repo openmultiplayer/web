@@ -1,5 +1,4 @@
 ---
-id: specialactions
 title: Special Actions
 description: A list of all the player special actions to be used with the [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction.md) function.
 tags: ["player"]

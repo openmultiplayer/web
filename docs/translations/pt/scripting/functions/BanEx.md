@@ -1,5 +1,4 @@
 ---
-id: BanEx
 title: BanEx
 description: Bane um jogador com um motivo específico.
 tags: []

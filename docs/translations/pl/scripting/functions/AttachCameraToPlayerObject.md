@@ -1,5 +1,4 @@
 ---
-id: AttachCameraToPlayerObject
 title: AttachCameraToPlayerObject
 description: Przyczepia kamerę gracza do obiektu stworzonego tylko dla niego.
 tags: ["player"]

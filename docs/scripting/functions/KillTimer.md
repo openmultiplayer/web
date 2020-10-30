@@ -1,5 +1,4 @@
 ---
-id: KillTimer
 title: KillTimer
 description: Kills (stops) a running timer.
 tags: []

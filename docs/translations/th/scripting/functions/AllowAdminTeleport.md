@@ -1,5 +1,4 @@
 ---
-id: AllowAdminTeleport
 title: AllowAdminTeleport
 description: This function will determine whether RCON admins will be teleported to their waypoint when they set one.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawSetPreviewVehCol
 title: PlayerTextDrawSetPreviewVehCol
 description: Set the color of a vehicle in a player-textdraw model preview (if a vehicle is shown).
 tags: ["player", "textdraw", "playertextdraw"]

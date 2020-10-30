@@ -1,5 +1,4 @@
 ---
-id: ShowMenuForPlayer
 title: ShowMenuForPlayer
 description: Shows a previously created menu for a player.
 tags: ["player", "menu"]

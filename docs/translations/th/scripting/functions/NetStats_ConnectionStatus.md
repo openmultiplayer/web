@@ -1,5 +1,4 @@
 ---
-id: NetStats_ConnectionStatus
 title: NetStats_ConnectionStatus
 description: Gets the player's current connection status.
 tags: []

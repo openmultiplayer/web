@@ -1,5 +1,4 @@
 ---
-id: DestroyVehicle
 title: DestroyVehicle
 description: Unistava vozilo.
 tags: ["vehicle"]

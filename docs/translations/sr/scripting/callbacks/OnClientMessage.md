@@ -1,5 +1,4 @@
 ---
-id: OnClientMessage
 title: OnClientMessage
 description: Овај колбек је позван када год NPC види клијент поруку (ClientMessage).
 tags: []

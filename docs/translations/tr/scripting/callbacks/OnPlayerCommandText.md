@@ -1,5 +1,4 @@
 ---
-id: OnPlayerCommandText
 title: OnPlayerCommandText
 description: Bu callback oyuncu chat ekranında herhangi bir komut kullandığında çağrılır.
 tags: ["player"]

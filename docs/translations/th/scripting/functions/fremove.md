@@ -1,5 +1,4 @@
 ---
-id: fremove
 title: fremove
 description: Delete a file.
 tags: []

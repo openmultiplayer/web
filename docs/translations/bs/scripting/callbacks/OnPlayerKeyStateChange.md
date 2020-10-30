@@ -1,5 +1,4 @@
 ---
-id: OnPlayerKeyStateChange
 title: OnPlayerKeyStateChange
 description: Ovaj callback je pozvan kada se stanje bilo koje podržane tipke promijeni (pritisnuta/puštena).
 tags: ["player"]

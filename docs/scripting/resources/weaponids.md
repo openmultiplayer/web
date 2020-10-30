@@ -1,5 +1,4 @@
 ---
-id: weaponids
 title: Weapon IDs
 ---
 

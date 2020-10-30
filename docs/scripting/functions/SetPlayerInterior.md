@@ -1,5 +1,4 @@
 ---
-id: SetPlayerInterior
 title: SetPlayerInterior
 description: Set a player's interior.
 tags: ["player"]

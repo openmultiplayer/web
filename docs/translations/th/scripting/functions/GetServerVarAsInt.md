@@ -1,5 +1,4 @@
 ---
-id: GetServerVarAsInt
 title: GetServerVarAsInt
 description: Get the integer value of a server variable.
 tags: []

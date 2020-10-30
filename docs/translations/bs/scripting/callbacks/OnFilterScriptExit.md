@@ -1,5 +1,4 @@
 ---
-id: OnFilterScriptExit
 title: OnFilterScriptExit
 description: Ovaj callback se poziva kada se filterskripta stopirala.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: SendPlayerMessageToAll
 title: SendPlayerMessageToAll
 description: Sends a message in the name of a player to all other players on the server.
 tags: ["player"]

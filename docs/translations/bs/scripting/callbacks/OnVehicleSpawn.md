@@ -1,5 +1,4 @@
 ---
-id: OnVehicleSpawn
 title: OnVehicleSpawn
 description: Ovaj callback je pozvan kada se vozilo respawnuje/ponovo stvori.
 tags: ["vehicle"]

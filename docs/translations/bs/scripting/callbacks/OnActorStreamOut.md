@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamOut
 title: OnActorStreamOut
 description: Ovaj callback se poziva kada se aktor prestane prikazivati na igračevom klijentu.
 tags: []

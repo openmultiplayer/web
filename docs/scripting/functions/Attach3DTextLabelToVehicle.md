@@ -1,5 +1,4 @@
 ---
-id: Attach3DTextLabelToVehicle
 title: Attach3DTextLabelToVehicle
 description: Attaches a 3D Text Label to a specific vehicle.
 tags: ["vehicle", "3dtextlabel"]

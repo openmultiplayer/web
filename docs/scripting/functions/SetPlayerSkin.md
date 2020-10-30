@@ -1,5 +1,4 @@
 ---
-id: SetPlayerSkin
 title: SetPlayerSkin
 description: Set the skin of a player.
 tags: ["player"]

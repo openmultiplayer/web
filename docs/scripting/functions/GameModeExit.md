@@ -1,5 +1,4 @@
 ---
-id: GameModeExit
 title: GameModeExit
 description: Ends the current gamemode.
 tags: []

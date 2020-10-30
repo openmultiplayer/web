@@ -1,5 +1,4 @@
 ---
-id: OnRconLoginAttempt
 title: OnRconLoginAttempt
 description: This callback is called when someone attempts to log in to RCON in-game; successful or not.
 tags: []

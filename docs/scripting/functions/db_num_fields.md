@@ -1,5 +1,4 @@
 ---
-id: db_num_fields
 title: db_num_fields
 description: Gets the number of fields from the specified result set allocated with `db_query`.
 keywords:

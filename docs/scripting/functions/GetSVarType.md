@@ -1,5 +1,4 @@
 ---
-id: GetSVarType
 title: GetSVarType
 description: Gets the type (integer, float or string) of a server variable.
 tags: []

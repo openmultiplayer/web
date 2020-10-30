@@ -1,5 +1,4 @@
 ---
-id: GetSVarInt
 title: GetSVarInt
 description: Gets an integer server variable's value.
 tags: []

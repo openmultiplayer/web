@@ -1,5 +1,4 @@
 ---
-id: AddSimpleModelTimed
 title: AddSimpleModelTimed
 description: Dodaje novi prilagođen/custom prost model objekta za preuzimanje.
 tags: []

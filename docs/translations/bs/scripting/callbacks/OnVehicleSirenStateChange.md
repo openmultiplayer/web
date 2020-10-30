@@ -1,5 +1,4 @@
 ---
-id: OnVehicleSirenStateChange
 title: OnVehicleSirenStateChange
 description: Ovaj callback je pozvan kada se uključi/isključi sirena vozila.
 tags: ["vehicle"]

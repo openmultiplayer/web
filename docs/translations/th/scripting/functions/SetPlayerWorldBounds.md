@@ -1,5 +1,4 @@
 ---
-id: SetPlayerWorldBounds
 title: SetPlayerWorldBounds
 description: Set the world boundaries for a player.
 tags: ["player"]

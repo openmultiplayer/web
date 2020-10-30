@@ -1,5 +1,4 @@
 ---
-id: ShowPlayerMarkers
 title: ShowPlayerMarkers
 description: Toggles player markers (blips on the radar).
 tags: ["player"]

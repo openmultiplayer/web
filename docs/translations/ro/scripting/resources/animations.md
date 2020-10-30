@@ -1,5 +1,4 @@
 ---
-id: animations
 title: Animatii
 description: O listă cu toate animațiile
 tags: []

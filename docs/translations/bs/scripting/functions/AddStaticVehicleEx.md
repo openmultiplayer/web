@@ -1,5 +1,4 @@
 ---
-id: AddStaticVehicleEx
 title: AddStaticVehicleEx
 description: Dodaje 'statično' vozilo (modeli su unaprijed učitani za igrač) u gamemode-u.
 tags: ["vehicle"]

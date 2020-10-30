@@ -1,5 +1,4 @@
 ---
-id: AddVehicleComponent
 title: AddVehicleComponent
 description: Dodaje „komponent” (część tuningową) do pojazdu.
 tags: ["vehicle"]

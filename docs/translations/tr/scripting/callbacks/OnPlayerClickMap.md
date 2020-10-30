@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickMap
 title: OnPlayerClickMap
 description: Bu callback oyuncu haritada bir yer işaretlediğinde çağrılır.
 tags: ["player"]

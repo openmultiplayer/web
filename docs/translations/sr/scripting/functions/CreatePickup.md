@@ -1,5 +1,4 @@
 ---
-id: CreatePickup
 title: CreatePickup
 description: Ova funkcija radi isto sto i AddStaticPickup, osim sto vraca ID pickup-a koji mozemo da pratimo pod OnPlayerPickUpPickup ili da ga unistimo.
 tags: []

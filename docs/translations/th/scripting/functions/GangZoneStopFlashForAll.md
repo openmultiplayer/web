@@ -1,5 +1,4 @@
 ---
-id: GangZoneStopFlashForAll
 title: GangZoneStopFlashForAll
 description: Stops a gangzone flashing for all players.
 tags: ["gangzone"]

@@ -1,5 +1,4 @@
 ---
-id: networkstats
 title: Network Stats
 description: Information seen when holding down F5 when connected to a server.
 tags: []

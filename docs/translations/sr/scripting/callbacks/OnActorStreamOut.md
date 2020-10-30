@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamOut
 title: OnActorStreamOut
 description: Овај колбек је позван када се актор престане приказивати у играчевом клијенту.
 tags: []

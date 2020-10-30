@@ -1,5 +1,4 @@
 ---
-id: OnPlayerStreamIn
 title: OnPlayerStreamIn
 description: This callback is called when a player is streamed by some other player's client.
 tags: ["player"]

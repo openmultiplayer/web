@@ -1,5 +1,4 @@
 ---
-id: SetPlayerTeam
 title: SetPlayerTeam
 description: Set the team of a player.
 tags: ["player"]

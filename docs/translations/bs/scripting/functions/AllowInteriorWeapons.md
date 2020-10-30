@@ -1,5 +1,4 @@
 ---
-id: AllowInteriorWeapons
 title: AllowInteriorWeapons
 description: O(ne)mogućava da li je korištenje oružja u enterijerima dozvoljeno ili nije.
 tags: []

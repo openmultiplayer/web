@@ -1,5 +1,4 @@
 ---
-id: TextDrawSetPreviewVehCol
 title: TextDrawSetPreviewVehCol
 description: If a vehicle model is used in a 3D preview textdraw, this sets the two colour values for that vehicle.
 tags: ["textdraw"]

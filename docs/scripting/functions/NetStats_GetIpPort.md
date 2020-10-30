@@ -1,5 +1,4 @@
 ---
-id: NetStats_GetIpPort
 title: NetStats_GetIpPort
 description: Get a player's IP and port.
 tags: []

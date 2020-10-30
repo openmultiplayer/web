@@ -1,5 +1,4 @@
 ---
-id: strmid
 title: strmid
 description: Extract a range of characters from a string.
 tags: []

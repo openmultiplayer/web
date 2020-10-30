@@ -1,5 +1,4 @@
 ---
-id: OnPlayerSpawn
 title: OnPlayerSpawn
 description: Ovaj callback je pozvan kada se igrač spawnuje (stvori).
 tags: ["player"]

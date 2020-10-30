@@ -1,5 +1,4 @@
 ---
-id: GetPlayerInterior
 title: GetPlayerInterior
 description: Retrieves the player's current interior.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: floatround
 title: floatround
 description: Round a floating point number to an integer value.
 tags: []

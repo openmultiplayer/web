@@ -1,5 +1,4 @@
 ---
-id: db_open
 title: db_open
 description: The function is used to open a connection to a SQLite database file, which is inside the `/scriptfiles` folder.
 keywords:

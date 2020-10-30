@@ -1,5 +1,4 @@
 ---
-id: GetGravity_FR
 title: GetGravity_FR
 description: Permets d'obtenir la valeur de la gravité.
 tags: []

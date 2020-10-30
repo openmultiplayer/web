@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickMap
 title: OnPlayerClickMap
 description: OnPlayerClickMap je pozvan kada igrač postavi metu(target/waypoint) na pause menu mapi (desnim klikom).
 tags: ["player"]

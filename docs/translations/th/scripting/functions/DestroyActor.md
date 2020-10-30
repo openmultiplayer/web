@@ -1,5 +1,4 @@
 ---
-id: DestroyActor
 title: DestroyActor
 description: Destroy an actor which was created with CreateActor.
 tags: []

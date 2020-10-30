@@ -1,5 +1,4 @@
 ---
-id: db_get_mem_handle
 title: db_get_mem_handle
 description: Get memory handle for an SQLite database that was opened with db_open.
 tags: ["sqlite"]

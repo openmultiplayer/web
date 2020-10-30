@@ -1,5 +1,4 @@
 ---
-id: GetConsoleVarAsInt
 title: GetConsoleVarAsInt
 description: Get the integer value of a console variable.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnPlayerUpdate
 title: OnPlayerUpdate
 description: Ovaj callback je pozvan svaki put kada klijent/igrač ažurira server sa svojim statusom.
 tags: ["player"]

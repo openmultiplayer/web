@@ -1,5 +1,4 @@
 ---
-id: GetPlayerTime
 title: GetPlayerTime
 description: Get the player's current game time.
 tags: ["player"]

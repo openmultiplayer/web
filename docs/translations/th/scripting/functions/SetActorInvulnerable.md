@@ -1,5 +1,4 @@
 ---
-id: SetActorInvulnerable
 title: SetActorInvulnerable
 description: Toggle an actor's invulnerability.
 tags: []

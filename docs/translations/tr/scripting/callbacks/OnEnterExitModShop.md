@@ -1,5 +1,4 @@
 ---
-id: OnEnterExitModShop
 title: OnEnterExitModShop
 description: Bu callback, bir oyuncu modifiye garajlarından birine giriş veya çıkış yaptığında tetiklenir.
 tags: []

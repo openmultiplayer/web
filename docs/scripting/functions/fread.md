@@ -1,5 +1,4 @@
 ---
-id: fread
 title: fread
 description: Read a single line from a file.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawUseBox
 title: PlayerTextDrawUseBox
 description: Toggle the box on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

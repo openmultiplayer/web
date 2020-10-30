@@ -1,5 +1,4 @@
 ---
-id: acos
 title: acos
 description: .
 tags: []

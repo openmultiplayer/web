@@ -1,5 +1,4 @@
 ---
-id: OnRconLoginAttempt
 title: OnRconLoginAttempt
 description: Ovaj callback je potvan kada neko pokuša da se uloguje/da pristupi RCONu in-game; uspješno ili ne.
 tags: []

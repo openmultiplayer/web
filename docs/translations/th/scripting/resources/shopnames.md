@@ -1,5 +1,4 @@
 ---
-id: shopnames
 title: Shop Names
 ---
 

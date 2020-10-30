@@ -1,5 +1,4 @@
 ---
-id: OnDialogResponse
 title: OnDialogResponse
 description: Bu callback, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
 tags: []

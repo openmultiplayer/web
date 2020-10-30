@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEnterRaceCheckpoint
 title: OnPlayerEnterRaceCheckpoint
 description: Ovaj callback je pozvan kada igrač uđe u trkački checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]

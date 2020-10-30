@@ -1,5 +1,4 @@
 ---
-id: strpack
 title: strpack
 description: Pack a string.
 tags: []

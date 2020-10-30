@@ -1,5 +1,4 @@
 ---
-id: SetVehicleParamsCarDoors
 title: SetVehicleParamsCarDoors
 description: Allows you to open and close the doors of a vehicle.
 tags: ["vehicle"]

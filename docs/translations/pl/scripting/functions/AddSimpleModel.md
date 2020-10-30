@@ -1,5 +1,4 @@
 ---
-id: AddSimpleModel
 title: AddSimpleModel
 description: Dodaje do pobrania nowy obiekt.
 tags: []

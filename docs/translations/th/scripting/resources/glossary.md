@@ -1,5 +1,4 @@
 ---
-id: glossary
 title: Glossary
 description: Glossary of terms
 tags: []

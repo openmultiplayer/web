@@ -1,5 +1,4 @@
 ---
-id: IsActorInvulnerable
 title: IsActorInvulnerable
 description: Check if an actor is invulnerable.
 tags: []

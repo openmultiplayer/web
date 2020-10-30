@@ -1,5 +1,4 @@
 ---
-id: Delete3DTextLabel
 title: Delete3DTextLabel
 description: Delete a 3D text label (created with Create3DTextLabel).
 tags: ["3dtextlabel"]

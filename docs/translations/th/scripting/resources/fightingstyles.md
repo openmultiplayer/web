@@ -1,5 +1,4 @@
 ---
-id: fightingstyles
 title: Fighting Styles
 ---
 

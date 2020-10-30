@@ -1,5 +1,4 @@
 ---
-id: svartypes
 title: "Svar Types"
 ---
 

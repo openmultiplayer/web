@@ -1,5 +1,4 @@
 ---
-id: CreatePlayerTextDraw
 title: CreatePlayerTextDraw
 description: Kreira textdraw za samo jednog igraca.
 tags: ["player", "textdraw", "playertextdraw"]

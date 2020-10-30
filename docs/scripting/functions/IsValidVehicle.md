@@ -1,5 +1,4 @@
 ---
-id: IsValidVehicle
 title: IsValidVehicle
 description: Check if a vehicle is created.
 tags: []

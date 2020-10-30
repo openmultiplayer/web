@@ -1,5 +1,4 @@
 ---
-id: OnPlayerSelectedMenuRow
 title: OnPlayerSelectedMenuRow
 description: Ovaj callback je pozvan kada igrač selektuje određenu stavku (item) iz menija (ShowMenuForPlayer).
 tags: ["player", "menu"]

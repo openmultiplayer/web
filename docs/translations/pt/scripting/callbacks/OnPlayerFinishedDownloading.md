@@ -1,5 +1,4 @@
 ---
-id: OnPlayerFinishedDownloading
 title: OnPlayerFinishedDownloading
 description: Esta callback é chamada quando um jogador termina de baixar os modelos customizados.
 tags: ["player"]

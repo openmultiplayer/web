@@ -1,5 +1,4 @@
 ---
-id: Ban
 title: Ban
 description: Ban a player who is currently in the server.
 tags: ["administration"]

@@ -1,5 +1,4 @@
 ---
-id: SetMenuColumnHeader
 title: SetMenuColumnHeader
 description: Sets the caption of a column in a menu.
 tags: ["menu"]

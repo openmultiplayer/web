@@ -1,5 +1,4 @@
 ---
-id: CreateActor
 title: CreateActor
 description: Create a static 'actor' in the world.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnGameModeInit
 titlu: OnGameModeInit
 descriere: Acest callback este apelat atunci când gamemode-ul a pornit.
 tags: []

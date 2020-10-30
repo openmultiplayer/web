@@ -1,5 +1,4 @@
 ---
-id: OnVehicleRespray
 title: OnVehicleRespray
 description: This callback is called when a player exits a mod shop, even if the colors weren't changed.
 tags: ["vehicle"]

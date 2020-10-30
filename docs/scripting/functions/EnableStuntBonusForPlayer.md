@@ -1,5 +1,4 @@
 ---
-id: EnableStuntBonusForPlayer
 title: EnableStuntBonusForPlayer
 description: Toggle stunt bonuses for a player.
 tags: ["player"]

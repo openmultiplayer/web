@@ -1,5 +1,4 @@
 ---
-id: print
 title: print
 description: Stampa string u konzolu servera (ne u in-game chatu) i logovima (server_log.
 tags: []

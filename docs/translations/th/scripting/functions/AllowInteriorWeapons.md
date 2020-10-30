@@ -1,5 +1,4 @@
 ---
-id: AllowInteriorWeapons
 title: AllowInteriorWeapons
 description: Toggle whether the usage of weapons in interiors is allowed or not.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: GameTextForPlayer
 title: GameTextForPlayer
 description: Shows 'game text' (on-screen text) for a certain length of time for a specific player.
 tags: ["player"]

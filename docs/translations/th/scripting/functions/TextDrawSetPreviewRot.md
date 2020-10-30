@@ -1,5 +1,4 @@
 ---
-id: TextDrawSetPreviewRot
 title: TextDrawSetPreviewRot
 description: Sets the rotation and zoom of a 3D model preview textdraw.
 tags: ["textdraw"]

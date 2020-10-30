@@ -1,5 +1,4 @@
 ---
-id: strval
 title: strval
 description: Convert a string to an integer.
 tags: []

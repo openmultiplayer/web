@@ -1,5 +1,4 @@
 ---
-id: Tags
 title: "Scripting: Taguri"
 description: Un ghid pentru taguri
 ---

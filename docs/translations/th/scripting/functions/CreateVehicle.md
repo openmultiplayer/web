@@ -1,5 +1,4 @@
 ---
-id: CreateVehicle
 title: CreateVehicle
 description: Creates a vehicle in the world.
 tags: ["vehicle"]

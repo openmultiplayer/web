@@ -1,5 +1,4 @@
 ---
-id: SetPlayerFightingStyle
 title: SetPlayerFightingStyle
 description: Set a player's special fighting style.
 tags: ["player"]

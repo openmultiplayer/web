@@ -1,5 +1,4 @@
 ---
-id: floatadd
 title: floatadd
 description: Adds two floats together.
 tags: []

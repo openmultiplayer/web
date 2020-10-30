@@ -1,5 +1,4 @@
 ---
-id: SendRconCommand
 title: SendRconCommand
 description: Sends an RCON (Remote Console) command.
 tags: ["administration"]

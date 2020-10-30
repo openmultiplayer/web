@@ -1,5 +1,4 @@
 ---
-id: OnClientMessage
 title: OnClientMessage
 description: Callback นี้ถูกเรียกเมื่อ NPC เห็น ClientMessage
 

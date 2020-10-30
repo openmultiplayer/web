@@ -1,5 +1,4 @@
 ---
-id: ShowPlayerDialog
 title: ShowPlayerDialog
 description: Afișează jucătorlui un dialog sincron (doar unul o dată).
 tags: ["player"]

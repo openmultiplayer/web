@@ -1,5 +1,4 @@
 ---
-id: OnPlayerDisconnect
 title: OnPlayerDisconnect
 description: Esta callback é chamada quando um jogador disconecta do servidor.
 tags: ["player"]

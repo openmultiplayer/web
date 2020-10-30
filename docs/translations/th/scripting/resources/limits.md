@@ -1,5 +1,4 @@
 ---
-id: limits
 title: Limits
 description: A list of all limitations imposed by the game/server.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: CreatePlayer3DTextLabel
 title: CreatePlayer3DTextLabel
 description: Kreira 3D Text Label samo za posebnog igraca.
 tags: ["player", "3dtextlabel"]

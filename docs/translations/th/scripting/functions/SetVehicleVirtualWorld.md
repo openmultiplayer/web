@@ -1,5 +1,4 @@
 ---
-id: SetVehicleVirtualWorld
 title: SetVehicleVirtualWorld
 description: Sets the 'virtual world' of a vehicle.
 tags: ["vehicle"]

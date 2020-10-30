@@ -1,5 +1,4 @@
 ---
-id: AttachObjectToObject
 title: AttachObjectToObject
 description: Możesz używać tej funkcji, aby przyczepiać obiekty do innych obiektów. Obiekty będą podążać za głównym obiektem.
 tags: []

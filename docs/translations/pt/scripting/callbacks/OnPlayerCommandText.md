@@ -1,5 +1,4 @@
 ---
-id: OnPlayerCommandText
 title: OnPlayerCommandText
 description: Esta callback é chamada quando o jogador entra com um comando na janela de chat do cliente.
 tags: ["player"]

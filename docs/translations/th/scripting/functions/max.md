@@ -1,5 +1,4 @@
 ---
-id: max
 title: max
 description: .
 tags: []

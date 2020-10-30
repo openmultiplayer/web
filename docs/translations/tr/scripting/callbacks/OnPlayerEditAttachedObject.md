@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEditAttachedObject
 title: OnPlayerEditAttachedObject
 description: Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
 tags: ["player"]

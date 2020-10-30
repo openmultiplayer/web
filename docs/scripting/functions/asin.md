@@ -1,5 +1,4 @@
 ---
-id: asin
 title: asin
 description: .
 tags: []

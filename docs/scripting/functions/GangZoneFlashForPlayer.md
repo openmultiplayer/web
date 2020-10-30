@@ -1,5 +1,4 @@
 ---
-id: GangZoneFlashForPlayer
 title: GangZoneFlashForPlayer
 description: Makes a gangzone flash for a player.
 tags: ["player", "gangzone"]

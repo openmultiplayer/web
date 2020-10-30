@@ -1,5 +1,4 @@
 ---
-id: OnPlayerDisconnect
 title: OnPlayerDisconnect
 description: Bu callback oyuncu sunucudan ayrıldığında çağrılır.
 tags: ["player"]

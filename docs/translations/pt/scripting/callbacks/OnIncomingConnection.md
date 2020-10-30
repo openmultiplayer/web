@@ -1,5 +1,4 @@
 ---
-id: OnIncomingConnection
 title: OnIncomingConnection
 description: Esta callback é chamada quando um endereço de IP tenta conectar no servidor.
 tags: []

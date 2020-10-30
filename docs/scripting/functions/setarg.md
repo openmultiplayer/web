@@ -1,5 +1,4 @@
 ---
-id: setarg
 title: setarg
 description: Set an argument that was passed to a function.
 tags: []

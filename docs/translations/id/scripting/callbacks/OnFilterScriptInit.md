@@ -1,5 +1,4 @@
 ---
-id: OnFilterScriptInit
 title: OnFilterScriptInit
 description: Callback ini akan terpanggil ketika gamemode sedang diinialisasi (dimuat).
 tags: []

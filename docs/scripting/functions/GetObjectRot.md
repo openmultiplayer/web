@@ -1,5 +1,4 @@
 ---
-id: GetObjectRot
 title: GetObjectRot
 description: Use this function to get the objects current rotation.
 tags: []

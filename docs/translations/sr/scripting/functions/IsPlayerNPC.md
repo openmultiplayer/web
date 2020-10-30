@@ -1,5 +1,4 @@
 ---
-id: IsPlayerNPC
 title: IsPlayerNPC
 description: Provera da li je igrac pravi igrac ili NPC.
 tags: ["player", "npc"]

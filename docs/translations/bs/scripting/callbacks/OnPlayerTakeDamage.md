@@ -1,5 +1,4 @@
 ---
-id: OnPlayerTakeDamage
 title: OnPlayerTakeDamage
 description: Ovaj callback je pozvan kada igrač prvimi povredu (damage).
 tags: ["player"]

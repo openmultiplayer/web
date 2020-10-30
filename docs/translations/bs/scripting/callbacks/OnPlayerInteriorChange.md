@@ -1,5 +1,4 @@
 ---
-id: OnPlayerInteriorChange
 title: OnPlayerInteriorChange
 description: Pozvan kada igrač promijeni enterijer.
 tags: ["player"]

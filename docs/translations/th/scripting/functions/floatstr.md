@@ -1,5 +1,4 @@
 ---
-id: floatstr
 title: floatstr
 description: Converts a string to a float.
 tags: []

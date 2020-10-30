@@ -1,5 +1,4 @@
 ---
-id: GetPVarType
 title: GetPVarType
 description: Gets the type (integer, float or string) of a player variable.
 tags: ["pvar"]

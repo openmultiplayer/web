@@ -1,5 +1,4 @@
 ---
-id: SetSVarString
 title: SetSVarString
 description: Set a string server variable.
 tags: []

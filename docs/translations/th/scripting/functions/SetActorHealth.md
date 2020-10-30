@@ -1,5 +1,4 @@
 ---
-id: SetActorHealth
 title: SetActorHealth
 description: Set the health of an actor.
 tags: []

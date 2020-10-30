@@ -1,5 +1,4 @@
 ---
-id: IsPlayerConnected
 title: IsPlayerConnected
 description: Checks if a player is connected (if an ID is taken by a connected player).
 tags: ["player"]

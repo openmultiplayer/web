@@ -1,5 +1,4 @@
 ---
-id: OnPlayerText
 title: OnPlayerText
 description: Called when a player sends a chat message.
 tags: ["player"]

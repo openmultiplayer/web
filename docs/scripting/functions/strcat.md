@@ -1,5 +1,4 @@
 ---
-id: strcat
 title: strcat
 description: This function concatenates (joins together) two strings into the destination string.
 tags: []

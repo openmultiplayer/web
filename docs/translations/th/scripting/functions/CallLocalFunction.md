@@ -1,5 +1,4 @@
 ---
-id: CallLocalFunction
 title: CallLocalFunction
 description: Calls a public function from the script in which it is used.
 tags: []

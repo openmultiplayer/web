@@ -1,5 +1,4 @@
 ---
-id: vehicleinformationtypes
 title: Vehicle Information Types
 description: Vehicle Information Type Constants
 ---

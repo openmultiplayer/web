@@ -1,5 +1,4 @@
 ---
-id: DestroyVehicle
 title: DestroyVehicle
 description: Destroy a vehicle.
 tags: ["vehicle"]

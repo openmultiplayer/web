@@ -1,5 +1,4 @@
 ---
-id: Update3DTextLabelText
 title: Update3DTextLabelText
 description: Updates a 3D Text Label text and color.
 tags: ["3dtextlabel"]

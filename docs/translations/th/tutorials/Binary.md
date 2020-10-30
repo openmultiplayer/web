@@ -1,5 +1,4 @@
 ---
-id: Binary
 title: "Binary"
 ---
 

@@ -1,5 +1,4 @@
 ---
-id: AddSimpleModelTimed
 title: AddSimpleModelTimed
 description: İndirmek için yeni bir basit nesne modeli ekler.
 tags: []

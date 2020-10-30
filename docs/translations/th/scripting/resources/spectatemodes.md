@@ -1,5 +1,4 @@
 ---
-id: spectatemodes
 title: Spectate Modes
 description: Spectate Modes to be used with [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer.md) and [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle.md) functions.
 tags: []

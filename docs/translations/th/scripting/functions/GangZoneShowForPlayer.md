@@ -1,5 +1,4 @@
 ---
-id: GangZoneShowForPlayer
 title: GangZoneShowForPlayer
 description: Show a gangzone for a player.
 tags: ["player", "gangzone"]

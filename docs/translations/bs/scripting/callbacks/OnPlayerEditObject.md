@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEditObject
 title: OnPlayerEditObject
 description: Ovaj callback je pozvan kada igrač dovrši uređivanje objekta (EditObject/EditPlayerObject).
 tags: ["player"]

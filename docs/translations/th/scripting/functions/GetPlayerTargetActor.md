@@ -1,5 +1,4 @@
 ---
-id: GetPlayerTargetActor
 title: GetPlayerTargetActor
 description: Gets id of an actor which is aimed by certain player.
 tags: ["player"]

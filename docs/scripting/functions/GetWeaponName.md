@@ -1,5 +1,4 @@
 ---
-id: GetWeaponName
 title: GetWeaponName
 description: Get the name of a weapon.
 tags: []

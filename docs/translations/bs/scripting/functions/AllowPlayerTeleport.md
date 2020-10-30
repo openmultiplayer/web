@@ -1,5 +1,4 @@
 ---
-id: AllowPlayerTeleport
 title: AllowPlayerTeleport
 description: O(ne)mogući mogućnost teleportovanja igrača kada koristi desni klik na mapu.
 tags: ["player"]

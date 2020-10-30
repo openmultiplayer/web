@@ -1,5 +1,4 @@
 ---
-id: Ban
 title: Ban
 description: Banuje igraca koji je trenutno na serveru.
 tags: ["administration"]

@@ -1,5 +1,4 @@
 ---
-id: IsPlayerInRaceCheckpoint
 title: IsPlayerInRaceCheckpoint
 description: Check if the player is inside their current set race checkpoint (SetPlayerRaceCheckpoint).
 tags: ["player", "checkpoint", "racecheckpoint"]

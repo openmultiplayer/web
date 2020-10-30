@@ -1,5 +1,4 @@
 ---
-id: OnTrailerUpdate
 title: OnTrailerUpdate
 description: Ovaj callback je pozvan kada igrač pošalje trailer update.
 tags: []

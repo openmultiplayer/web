@@ -1,5 +1,4 @@
 ---
-id: anglemodes
 title: Moduri de unghi
 description: Constante unitare in sistemul international pentru măsurarea unghiurilor.
 ---

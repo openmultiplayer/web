@@ -1,5 +1,4 @@
 ---
-id: AddStaticPickup
 title: AddStaticPickup
 description: Ova funkcija kreira 'statični' pickup u igru.
 tags: []

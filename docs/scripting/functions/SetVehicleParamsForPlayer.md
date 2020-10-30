@@ -1,5 +1,4 @@
 ---
-id: SetVehicleParamsForPlayer
 title: SetVehicleParamsForPlayer
 description: Set the parameters of a vehicle for a player.
 tags: ["player", "vehicle"]

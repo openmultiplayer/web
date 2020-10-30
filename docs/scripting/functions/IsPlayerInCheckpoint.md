@@ -1,5 +1,4 @@
 ---
-id: IsPlayerInCheckpoint
 title: IsPlayerInCheckpoint
 description: Check if the player is currently inside a checkpoint, this could be used for properties or teleport points for example.
 tags: ["player", "checkpoint"]

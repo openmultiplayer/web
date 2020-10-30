@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawBackgroundColor
 title: PlayerTextDrawBackgroundColor
 description: Adjust the background color of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

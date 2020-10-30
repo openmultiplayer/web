@@ -1,5 +1,4 @@
 ---
-id: min
 title: min
 description: .
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnClientMessage
 title: OnClientMessage
 description: Ovaj callback se poziva kada god NPC vidi ClientMessage.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: atan2
 title: atan2
 description: .
 tags: []

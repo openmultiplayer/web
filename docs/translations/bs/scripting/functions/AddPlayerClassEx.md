@@ -1,5 +1,4 @@
 ---
-id: AddPlayerClassEx
 title: AddPlayerClassEx
 description: Ova funkcija je u potpunosti ista kao i AddPlayerClass funkcija, sa akcentom na 'Tim' parametar.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: SetPlayerFacingAngle
 title: SetPlayerFacingAngle
 description: Define o ângulo para qual o jogador está voltado (olhando) (rotação Z).
 tags: []

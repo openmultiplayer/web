@@ -1,5 +1,4 @@
 ---
-id: GetPlayerState
 title: GetPlayerState
 description: Get a player's current state.
 tags: ["player"]

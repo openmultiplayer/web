@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEnterCheckpoint
 title: OnPlayerEnterCheckpoint
 description: Ovaj callback je pozvan kada igrač uđe u checkpoint koji je postavljen za tog igrača.
 tags: ["player", "checkpoint"]

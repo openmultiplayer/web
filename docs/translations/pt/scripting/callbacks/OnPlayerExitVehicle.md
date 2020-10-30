@@ -1,5 +1,4 @@
 ---
-id: OnPlayerExitVehicle
 title: OnPlayerExitVehicle
 description: Esta callback é chamada quando um jogador sai do veículo.
 tags: ["player", "vehicle"]

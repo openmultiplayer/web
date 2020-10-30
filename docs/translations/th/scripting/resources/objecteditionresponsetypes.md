@@ -1,5 +1,4 @@
 ---
-id: objecteditionresponsetypes
 title: Object Edition Response Types
 ---
 

@@ -1,5 +1,4 @@
 ---
-id: GetSVarsUpperIndex
 title: GetSVarsUpperIndex
 description: Each SVar (server-variable) has its own unique identification number for lookup, this function returns the highest ID.
 tags: []

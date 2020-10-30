@@ -1,5 +1,4 @@
 ---
-id: IsPlayerAttachedObjectSlotUsed
 title: IsPlayerAttachedObjectSlotUsed
 description: Check if a player has an object attached in the specified index (slot).
 tags: ["player"]

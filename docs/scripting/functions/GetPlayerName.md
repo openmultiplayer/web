@@ -1,5 +1,4 @@
 ---
-id: GetPlayerName
 title: GetPlayerName
 description: Get a player's name.
 tags: ["player"]

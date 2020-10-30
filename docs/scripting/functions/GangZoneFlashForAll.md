@@ -1,5 +1,4 @@
 ---
-id: GangZoneFlashForAll
 title: GangZoneFlashForAll
 description: GangZoneFlashForAll flashes a gangzone for all players.
 tags: ["gangzone"]

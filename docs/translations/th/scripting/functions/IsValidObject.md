@@ -1,5 +1,4 @@
 ---
-id: IsValidObject
 title: IsValidObject
 description: Checks if an object with the ID provided exists.
 tags: []

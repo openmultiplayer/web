@@ -1,5 +1,4 @@
 ---
-id: GetPlayerHealth
 title: GetPlayerHealth
 description: The function GetPlayerHealth allows you to retrieve the health of a player.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: GetSVarString
 title: GetSVarString
 description: Gets a string server variable's value.
 tags: []

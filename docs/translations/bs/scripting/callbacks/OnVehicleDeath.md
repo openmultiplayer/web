@@ -1,5 +1,4 @@
 ---
-id: OnVehicleDeath
 title: OnVehicleDeath
 description: Ovaj callback je pozvan kada se vozilo unište - bilo eksplozijom ili utapanjem u vodi.
 tags: ["vehicle"]

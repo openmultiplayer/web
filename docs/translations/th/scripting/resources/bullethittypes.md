@@ -1,5 +1,4 @@
 ---
-id: bullethittypes
 title: Bullet Hit Types
 ---
 

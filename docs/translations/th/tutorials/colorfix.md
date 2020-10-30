@@ -1,5 +1,4 @@
 ---
-id: colorfix
 title: "Color Fix"
 descripion: A basic script to add more player colours.
 ---

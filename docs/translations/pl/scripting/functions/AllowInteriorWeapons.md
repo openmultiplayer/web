@@ -1,5 +1,4 @@
 ---
-id: AllowInteriorWeapons
 title: AllowInteriorWeapons
 description: Przełącza możliwość używania broni we wnętrzach.
 tags: []

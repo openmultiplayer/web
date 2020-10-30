@@ -1,5 +1,4 @@
 ---
-id: SetPlayerName
 title: SetPlayerName
 description: Sets the name of a player.
 tags: ["player"]

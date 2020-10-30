@@ -1,5 +1,4 @@
 ---
-id: fblockwrite
 title: fblockwrite
 description: Write data to a file in binary format, while ignoring line brakes and encoding.
 tags: []

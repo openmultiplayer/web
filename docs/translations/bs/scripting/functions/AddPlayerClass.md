@@ -1,5 +1,4 @@
 ---
-id: AddPlayerClass
 title: AddPlayerClass
 description: Dodaje klasu na listu selekcije klasa.
 tags: ["player"]

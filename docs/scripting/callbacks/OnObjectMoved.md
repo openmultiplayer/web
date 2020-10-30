@@ -1,5 +1,4 @@
 ---
-id: OnObjectMoved
 title: OnObjectMoved
 description: This callback is called when an object is moved after MoveObject (when it stops moving).
 tags: []

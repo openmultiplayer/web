@@ -1,5 +1,4 @@
 ---
-id: AllowPlayerTeleport
 title: AllowPlayerTeleport
 description: Enable/Disable the teleporting ability for a player by right-clicking on the map.
 tags: ["player"]

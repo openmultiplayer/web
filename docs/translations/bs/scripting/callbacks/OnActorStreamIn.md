@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamIn
 title: OnActorStreamIn
 description: Ovaj callback se poziva kada se aktor pojavi u igračevom klijentu.
 tags: []

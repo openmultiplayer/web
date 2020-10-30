@@ -1,5 +1,4 @@
 ---
-id: OnPlayerUpdate
 title: OnPlayerUpdate
 description: This callback is called every time a client/player updates the server with their status.
 tags: ["player"]

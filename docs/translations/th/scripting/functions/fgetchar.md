@@ -1,5 +1,4 @@
 ---
-id: fgetchar
 title: fgetchar
 description: Reads a single character from a file.
 tags: []

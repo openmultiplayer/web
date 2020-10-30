@@ -1,5 +1,4 @@
 ---
-id: OnPlayerRequestSpawn
 title: OnPlayerRequestSpawn
 description: Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: OnFilterScriptExit
 title: OnFilterScriptExit
 description: Callback ini akan terpanggil ketika filterscript dibongkar.
 tags: []

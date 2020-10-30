@@ -1,5 +1,4 @@
 ---
-id: BanEx
 title: BanEx
 description: Banuje igraca sa razlogom.
 tags: ["administration"]

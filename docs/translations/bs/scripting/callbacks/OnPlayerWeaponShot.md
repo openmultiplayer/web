@@ -1,5 +1,4 @@
 ---
-id: OnPlayerWeaponShot
 title: OnPlayerWeaponShot
 description: Ovaj callback je pozvan kada igrač ispali hitac iz oružja.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: AddVehicleComponent
 title: AddVehicleComponent
 description: Dodaje 'komponentu' (često nazvana'mod' (modifikacija)) na vozilo.
 tags: ["vehicle"]

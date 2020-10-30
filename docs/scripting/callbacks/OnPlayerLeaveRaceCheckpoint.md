@@ -1,5 +1,4 @@
 ---
-id: OnPlayerLeaveRaceCheckpoint
 title: OnPlayerLeaveRaceCheckpoint
 description: This callback is called when a player leaves the race checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]

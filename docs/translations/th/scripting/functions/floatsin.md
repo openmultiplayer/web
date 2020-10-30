@@ -1,5 +1,4 @@
 ---
-id: floatsin
 title: floatsin
 description: Get the sine from a given angle.
 tags: []

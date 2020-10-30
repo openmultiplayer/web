@@ -1,5 +1,4 @@
 ---
-id: OnPlayerRequestDownload
 title: OnPlayerRequestDownload
 description: Ovaj callback je pozvan kada igrač zatraži preuzimanje custom modela.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: server.cfg
 title: "server.cfg"
 descripion: Server configuration file.
 ---

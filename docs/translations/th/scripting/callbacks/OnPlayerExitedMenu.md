@@ -1,5 +1,4 @@
 ---
-id: OnPlayerExitedMenu
 title: OnPlayerExitedMenu
 description: Called when a player exits a menu.
 tags: ["player", "menu"]

@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEnterVehicle
 title: OnPlayerEnterVehicle
 description: Ovaj callback je pozvan kada igrač krene da uđe u vozilo, u smislu da igrač nije još u vozilu u trenutku kada se ovaj callback poziva.
 tags: ["player", "vehicle"]

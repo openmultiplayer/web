@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamIn
 title: OnActorStreamIn
 description: Овај колбек је позван када се актор појави у играчевом клијенту.
 tags: []

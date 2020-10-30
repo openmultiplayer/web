@@ -1,5 +1,4 @@
 ---
-id: InterpolateCameraLookAt
 title: InterpolateCameraLookAt
 description: Interpolate a player's camera's 'look at' point between two coordinates with a set speed.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: AttachObjectToVehicle
 title: AttachObjectToVehicle
 description: Attach an object to a vehicle.
 tags: ["vehicle"]

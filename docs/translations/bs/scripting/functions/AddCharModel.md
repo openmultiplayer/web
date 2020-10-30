@@ -1,5 +1,4 @@
 ---
-id: AddCharModel
 title: AddCharModel
 description: Dodaje novog prilagođenog karaktera za preuzimanje.
 tags: []

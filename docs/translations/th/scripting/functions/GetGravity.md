@@ -1,5 +1,4 @@
 ---
-id: GetGravity
 title: GetGravity
 description: Get the currently set gravity.
 tags: []

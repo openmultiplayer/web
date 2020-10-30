@@ -1,5 +1,4 @@
 ---
-id: EnableStuntBonusForAll
 title: EnableStuntBonusForAll
 description: Enables or disables stunt bonuses for all players.
 tags: []

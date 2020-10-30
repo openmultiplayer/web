@@ -1,5 +1,4 @@
 ---
-id: fwrite
 title: fwrite
 description: Write text into a file.
 tags: []

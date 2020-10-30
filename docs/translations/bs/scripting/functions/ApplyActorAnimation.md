@@ -1,5 +1,4 @@
 ---
-id: ApplyActorAnimation
 title: ApplyActorAnimation
 description: Primijeni animaciju na aktora.
 tags: []

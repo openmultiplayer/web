@@ -1,5 +1,4 @@
 ---
-id: GangZoneCreate
 title: GangZoneCreate
 description: Create a gangzone (colored radar area).
 tags: ["gangzone"]

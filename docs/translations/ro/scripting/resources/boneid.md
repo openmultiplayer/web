@@ -1,5 +1,4 @@
 ---
-id: boneid
 title: "ID-urile oaselor"
 ---
 

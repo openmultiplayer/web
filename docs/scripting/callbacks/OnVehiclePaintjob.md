@@ -1,5 +1,4 @@
 ---
-id: OnVehiclePaintjob
 title: OnVehiclePaintjob
 description: Called when a player previews a vehicle paintjob inside a mod shop.
 tags: ["vehicle"]

@@ -1,5 +1,4 @@
 ---
-id: random
 title: random
 description: Get a pseudo-random number.
 tags: []

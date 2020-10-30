@@ -1,5 +1,4 @@
 ---
-id: TextDrawHideForPlayer
 title: TextDrawHideForPlayer
 description: Hides a textdraw for a specific player.
 tags: ["player", "textdraw"]

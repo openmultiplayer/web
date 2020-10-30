@@ -1,5 +1,4 @@
 ---
-id: anglemodes
 title: Angle Modes
 description: SI unit constants for measuring angles.
 ---

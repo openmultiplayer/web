@@ -1,5 +1,4 @@
 ---
-id: getarg
 title: getarg
 description: Get an argument that was passed to a function.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickPlayer
 title: OnPlayerClickPlayer
 description: Terpanggil ketika pemain mengklik dua kali pemain yang berada di scoreboard.
 tags: ["player"]

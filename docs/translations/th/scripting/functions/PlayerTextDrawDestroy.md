@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawDestroy
 title: PlayerTextDrawDestroy
 description: Destroy a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

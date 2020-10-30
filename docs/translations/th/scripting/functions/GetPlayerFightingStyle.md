@@ -1,5 +1,4 @@
 ---
-id: GetPlayerFightingStyle
 title: GetPlayerFightingStyle
 description: Get the fighting style the player currently using.
 tags: ["player"]

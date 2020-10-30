@@ -1,5 +1,4 @@
 ---
-id: TextDrawCreate
 title: TextDrawCreate
 description: Creates a textdraw.
 tags: ["textdraw"]

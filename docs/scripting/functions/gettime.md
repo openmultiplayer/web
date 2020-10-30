@@ -1,5 +1,4 @@
 ---
-id: gettime
 title: gettime
 description: Get the current server time, which will be stored in the variables &hour, &minute and &second.
 tags: []

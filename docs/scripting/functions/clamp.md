@@ -1,5 +1,4 @@
 ---
-id: clamp
 title: clamp
 description: Force a value to be inside a range.
 tags: []

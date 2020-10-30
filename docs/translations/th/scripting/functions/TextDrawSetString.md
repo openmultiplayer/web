@@ -1,5 +1,4 @@
 ---
-id: TextDrawSetString
 title: TextDrawSetString
 description: Changes the text on a textdraw.
 tags: ["textdraw"]

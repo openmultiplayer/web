@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamOut
 title: OnActorStreamOut
 description: Bu callback, bir aktör oyuncunun akış alanından ayrıldığında tetiklenir.
 tags: []

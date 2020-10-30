@@ -1,5 +1,4 @@
 ---
-id: OnVehicleDamageStatusUpdate
 title: OnVehicleDamageStatusUpdate
 description: Ovaj callback je pozvan kada dio vozila kao npr vrata, gume, paneli, ili svjetla promijene svoj status oštećenja.
 tags: ["vehicle"]

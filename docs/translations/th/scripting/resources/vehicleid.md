@@ -1,5 +1,4 @@
 ---
-id: vehicleid
 title: Vehicle IDs
 description: A complete list of vehicle ids
 ---

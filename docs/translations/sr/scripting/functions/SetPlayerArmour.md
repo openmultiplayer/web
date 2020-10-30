@@ -1,5 +1,4 @@
 ---
-id: SetPlayerArmour
 title: SetPlayerArmour
 description: Podesava pancir igraca.
 tags: ["player"]

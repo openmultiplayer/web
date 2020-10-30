@@ -1,5 +1,4 @@
 ---
-id: GetPlayerVehicleSeat
 title: GetPlayerVehicleSeat
 description: Find out which seat a player is in.
 tags: ["player", "vehicle"]

@@ -1,5 +1,4 @@
 ---
-id: SetSVarFloat
 title: SetSVarFloat
 description: Set a float server variable.
 tags: []

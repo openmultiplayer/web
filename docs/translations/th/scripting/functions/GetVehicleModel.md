@@ -1,5 +1,4 @@
 ---
-id: GetVehicleModel
 title: GetVehicleModel
 description: Gets the model ID of a vehicle.
 tags: ["vehicle"]

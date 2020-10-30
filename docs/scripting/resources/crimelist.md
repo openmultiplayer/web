@@ -1,5 +1,4 @@
 ---
-id: crimelist
 title: Crime List
 description: Crime List to be used with [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer) function.
 sidebar_label: Crime List

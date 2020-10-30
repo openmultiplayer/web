@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickPlayer
 title: OnPlayerClickPlayer
 description: Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
 tags: ["player"]

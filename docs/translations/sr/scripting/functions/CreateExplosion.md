@@ -1,5 +1,4 @@
 ---
-id: CreateExplosion
 title: CreateExplosion
 description: Kreira eksploziju na odredjenim koordinatama.
 tags: []

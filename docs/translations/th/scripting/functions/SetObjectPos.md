@@ -1,5 +1,4 @@
 ---
-id: SetObjectPos
 title: SetObjectPos
 description: Change the position of an object.
 tags: []

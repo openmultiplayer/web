@@ -1,5 +1,4 @@
 ---
-id: OnPlayerConnect
 title: OnPlayerConnect
 description: Esta callback é chamda quando um jogador conecta no servidor.
 tags: ["player"]

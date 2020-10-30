@@ -1,5 +1,4 @@
 ---
-id: OnVehicleSpawn
 title: OnVehicleSpawn
 description: This callback is called when a vehicle respawns.
 tags: ["vehicle"]

@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickTextDraw
 title: OnPlayerClickTextDraw
 description: Ovaj callback se poziva kada igrač klikne na textdraw ili napusti select mode pritiskom na tipku 'Escape'.
 tags: ["player", "textdraw"]

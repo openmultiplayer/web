@@ -1,5 +1,4 @@
 ---
-id: OnVehicleStreamIn
 title: OnVehicleStreamIn
 description: Called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]

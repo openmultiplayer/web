@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamOut
 title: OnActorStreamOut
 description: Esta callback é chamada quando um ator é descarregado (torna-se invisível) para um jogador.
 tags: []

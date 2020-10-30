@@ -1,5 +1,4 @@
 ---
-id: OnGameModeInit
 title: OnGameModeInit
 description: This callback is triggered when the gamemode starts.
 tags: []

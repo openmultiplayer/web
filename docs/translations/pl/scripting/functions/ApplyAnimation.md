@@ -1,5 +1,4 @@
 ---
-id: ApplyAnimation
 title: ApplyAnimation
 description: Włącza animację graczowi.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: GetVehiclePoolSize
 title: GetVehiclePoolSize
 description: Gets the highest vehicleid currently in use on the server.
 tags: ["vehicle"]

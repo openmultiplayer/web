@@ -1,5 +1,4 @@
 ---
-id: cameramodes
 title: Camera Modes
 ---
 

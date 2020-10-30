@@ -1,5 +1,4 @@
 ---
-id: OnUnoccupiedVehicleUpdate
 title: OnUnoccupiedVehicleUpdate
 description: Ovaj callback je pozvan kada igračev klijent ažurira/sinhronizuje poziciju vozila kojeg on ne vozi.
 tags: ["vehicle"]

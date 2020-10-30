@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawAlignment
 title: PlayerTextDrawAlignment
 description: Set the text alignment of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

@@ -1,5 +1,4 @@
 ---
-id: AttachObjectToPlayer
 title: AttachObjectToPlayer
 description: Przyczepia obiekt do gracza.
 tags: ["player"]

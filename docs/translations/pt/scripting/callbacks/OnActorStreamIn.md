@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamIn
 title: OnActorStreamIn
 description: Esta callback é chamada quando um ator é carregado (torna-se visível) para um jogador.
 tags: []

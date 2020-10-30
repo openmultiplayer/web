@@ -1,5 +1,4 @@
 ---
-id: pickupids
 title: "Pickup IDs"
 ---
 

@@ -1,5 +1,4 @@
 ---
-id: floatmul
 title: floatmul
 description: Multiplies two floats with each other.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamIn
 title: OnActorStreamIn
 description: Callback นี้ถูกเรียกเมื่อแอคเตอร์ถูกสตรีมเข้าโดยไคลเอนต์ของผู้เล่น
 tags: []

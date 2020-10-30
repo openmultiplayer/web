@@ -1,5 +1,4 @@
 ---
-id: Attach3DTextLabelToPlayer
 title: Attach3DTextLabelToPlayer
 description: Przyczepia tekst 3D do gracza.
 tags: ["player", "3dtextlabel"]

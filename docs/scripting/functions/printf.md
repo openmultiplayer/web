@@ -1,5 +1,4 @@
 ---
-id: printf
 title: printf
 description: Outputs a formatted string on the console (the server window, not the in-game chat).
 tags: []

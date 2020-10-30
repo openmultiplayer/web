@@ -1,5 +1,4 @@
 ---
-id: OnPlayerStateChange
 title: OnPlayerStateChange
 description: Ovaj callback je pozvan kada igrač promijeni stanje.
 tags: ["player"]

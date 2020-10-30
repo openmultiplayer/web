@@ -1,5 +1,4 @@
 ---
-id: SetPlayerVelocity
 title: SetPlayerVelocity
 description: Set a player's velocity on the X, Y and Z axes.
 tags: ["player"]

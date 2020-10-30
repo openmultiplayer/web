@@ -1,5 +1,4 @@
 ---
-id: OnUnoccupiedVehicleUpdate
 title: OnUnoccupiedVehicleUpdate
 description: This callback is called when a player's client updates/syncs the position of a vehicle they're not driving.
 tags: ["vehicle"]

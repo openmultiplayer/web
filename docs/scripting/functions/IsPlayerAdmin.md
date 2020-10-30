@@ -1,5 +1,4 @@
 ---
-id: IsPlayerAdmin
 title: IsPlayerAdmin
 description: Check if a player is logged in as an RCON admin.
 tags: ["administration"]

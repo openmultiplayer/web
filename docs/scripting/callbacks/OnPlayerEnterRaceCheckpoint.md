@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEnterRaceCheckpoint
 title: OnPlayerEnterRaceCheckpoint
 description: This callback is called when a player enters a race checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]

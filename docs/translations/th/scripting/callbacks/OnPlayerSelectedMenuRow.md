@@ -1,5 +1,4 @@
 ---
-id: OnPlayerSelectedMenuRow
 title: OnPlayerSelectedMenuRow
 description: This callback is called when a player selects an item from a menu (ShowMenuForPlayer).
 tags: ["player", "menu"]

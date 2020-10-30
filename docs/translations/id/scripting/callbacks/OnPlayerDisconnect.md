@@ -1,5 +1,4 @@
 ---
-id: OnPlayerDisconnect
 title: OnPlayerDisconnect
 description: Callback ini akan terpanggil ketika pemain keluar dari server.
 tags: ["player"]

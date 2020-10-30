@@ -1,5 +1,4 @@
 ---
-id: SetObjectsDefaultCameraCol
 title: SetObjectsDefaultCameraCol
 description: Allows camera collisions with newly created objects to be disabled by default.
 tags: []

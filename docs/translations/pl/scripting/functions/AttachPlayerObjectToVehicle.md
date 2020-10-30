@@ -1,5 +1,4 @@
 ---
-id: AttachPlayerObjectToVehicle
 title: AttachPlayerObjectToVehicle
 description: Przyczepia obiekt gracza do pojazdu.
 tags: ["player", "vehicle"]

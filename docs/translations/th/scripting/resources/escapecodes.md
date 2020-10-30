@@ -1,5 +1,4 @@
 ---
-id: escapecodes
 title: Escape Codes
 sidebar_label: Escape Codes
 ---

@@ -1,5 +1,4 @@
 ---
-id: fseek
 title: fseek
 description: Change the current position in the file.
 tags: []

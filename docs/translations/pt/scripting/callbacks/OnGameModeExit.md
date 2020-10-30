@@ -1,5 +1,4 @@
 ---
-id: OnGameModeExit
 title: OnGameModeExit
 description: Esta callback é chamada quando uma gamemode finaliza, também através do 'gmx', do servidor ser desligado ou GameModeExit.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamIn
 title: OnActorStreamIn
 description: Bu callback, bir aktör başka bir oyuncunun akış alanına girdiğinde tetiklenir.
 tags: []

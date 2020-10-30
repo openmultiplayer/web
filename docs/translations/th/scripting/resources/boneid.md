@@ -1,5 +1,4 @@
 ---
-id: boneid
 title: "Bone IDs"
 ---
 

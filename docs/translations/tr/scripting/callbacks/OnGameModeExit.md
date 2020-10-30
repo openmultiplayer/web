@@ -1,5 +1,4 @@
 ---
-id: OnGameModeExit
 title: OnGameModeExit
 description: Bu callback oyun modu sonlandığında, gmx komutu kullanıldığında, sunucu ani kapatıldığında veya GameModeExit kullanıldığında tetiklenir.
 tags: []

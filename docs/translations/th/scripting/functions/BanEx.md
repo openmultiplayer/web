@@ -1,5 +1,4 @@
 ---
-id: BanEx
 title: BanEx
 description: Ban a player with a reason.
 tags: ["administration"]

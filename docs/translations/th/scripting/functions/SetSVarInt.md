@@ -1,5 +1,4 @@
 ---
-id: SetSVarInt
 title: SetSVarInt
 description: Set an integer server variable.
 tags: []

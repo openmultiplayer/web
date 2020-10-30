@@ -1,5 +1,4 @@
 ---
-id: index
 title: Scripting Functions
 sidebar_label: Scripting Functions
 ---

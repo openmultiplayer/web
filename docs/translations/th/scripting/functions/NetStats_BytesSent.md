@@ -1,5 +1,4 @@
 ---
-id: NetStats_BytesSent
 title: NetStats_BytesSent
 description: Gets the amount of data (in bytes) that the server has sent to the player.
 tags: []
