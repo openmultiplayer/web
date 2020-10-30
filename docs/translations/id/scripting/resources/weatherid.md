@@ -1,5 +1,4 @@
 ---
-id: weatherids
 title: ID Cuaca
 description: Informasi tentang ID cuaca
 ---
