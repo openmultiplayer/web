@@ -8,27 +8,27 @@ import T from '../../../src/components/templates.js'
 
 <T.VersionWarn name='callback' version='SA-MP 0.3d' />
 
-## Açıklama
+## Description
 
-Bir oyuncu, başka bir oyuncuya hasar verdiğinde bu callback çağırılır.
+This callback is called when a player gives damage to another player.
 
-| Name      | Description                                                                                                                                           |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | Hasar veren oyuncunun ID değeri.                                                                                                                      |
-| damagedid | Hasar alan oyuncunun ID değeri.                                                                                                                       |
-| amount    | Hasar alan oyuncunun aldığı can ve zırh hasar miktarı. (Can ve zırh değeri beraber sayılır.)                                                          |
-| weaponid  | Hasar alan oyuncunun hasar alma nedeni.                                                                                                               |
-| bodypart  | Hasar alan oyuncunun hasarı aldığı vücut kısmı. (NOT: Bu parametre 0.3z sürümünde eklenmiştir. Daha eski bir sürüm kullanıyorsanız burayı eklemeyin.) |
+| Name      | Description                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------- |
+| playerid  | The ID of the player that gave damage.                                                                        |
+| damagedid | The ID of the player that received damage.                                                                    |
+| amount    | The amount of health/armour damagedid has lost (combined).                                                    |
+| weaponid  | The reason that caused the damage.                                                                            |
+| bodypart  | The body part that was hit. (NOTE: This parameter was added in 0.3z. Leave it out if using an older version!) |
 
-## Geri Döndürülen Değerler
+## Returns
 
-1 - Callback diğer filterscriptlerde çağırılmayacaktır.
+1 - Callback will not be called in other filterscripts.
 
-0 - Callbackin diğer filterscriptlerde çağırılmasına olanak tanır.
+0 - Allows this callback to be called in other filterscripts.
 
-Bu callback filterscriptlerde her zaman ilk çağırılan callback olur, yani 1 değerini döndürmek diğer filterscriptlerin bunu görmesini engeller.
+It is always called first in filterscripts so returning 1 there blocks other filterscripts from seeing it.
 
-## Örnekler
+## Examples
 
 ```c
 public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
@@ -45,12 +45,12 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
 }
 ```
 
-## Notlar
+## Notes
 
-:::İpucu
+:::tip
 
-Bu fonksiyonun bazı durumlarda hatalı olacağını unutmayın. Eğer bir oyuncuyu başka oyuncuların hasarından korumak istiyorsanız, SetPlayerTeam kullanın. Herhangi bir ateşli silahtan(örnek: Molotof, 18) kaynaklanan hasarlarda 37 değeri(Alev Püskürtücü) döndürülür. Herhangi bir patlayıcı silahtan(Roketatar, elm bombası vb.) 51 değeri döndürülür. Bu callbacki yalnızca playerid çağırabilir. Maksimum verilebilecek hasar değeri her zaman weaponidnin maksimum verebileceği hasar kadardır, oyuncunun canı silahın maksimum hasarından az olsa bile bu böyledir. Yani bir oyuncu 100.0 canı varken Desert Eagle tarafından hasara lırsa aldığı hasar değeri 46.2 olacaktır, bu bu oyuncuyu öldürmek için 3 ateş demek. 3 ateşin hepsi verilen hasar olarak 46.2'yi gösterecektir, oyuncunun 2 ateşten sonra 7.6 canı kalsa bile 3. ateşte bu böyle olacaktır.
+Keep in mind this function can be inaccurate in some cases. If you want to prevent certain players from damaging eachother, use SetPlayerTeam. The weaponid will return 37 (flame thrower) from any fire sources (e.g. molotov, 18) The weaponid will return 51 from any weapon that creates an explosion (e.g. RPG, grenade) playerid is the only one who can call the callback. The amount is always the maximum damage the weaponid can do, even when the health left is less than that maximum damage. So when a player has 100.0 health and gets shot with a Desert Eagle which has a damage value of 46.2, it takes 3 shots to kill that player. All 3 shots will show an amount of 46.2, even though when the last shot hits, the player only has 7.6 health left.
 
 :::
 
-## İlgili Fonksiyonlar
+## Related Functions
