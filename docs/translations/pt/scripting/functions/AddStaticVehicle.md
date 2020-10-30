@@ -1,15 +1,15 @@
 ---
 title: AddStaticVehicle
-description: Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode.  
+description: Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode.
 tags: ["vehicle"]
 ---
 
 ## Descrição
 
-Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode.  
+Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode.
 
-| Name                                     | Descrição                            |
-| ---------------------------------------- | -------------------------------------- |
+| Name                                     | Descrição                                  |
+| ---------------------------------------- | ------------------------------------------ |
 | modelid                                  | O modelo ID para o veículo.                |
 | Float:spawn_X                            | A coordenada-X para o veículo.             |
 | Float:spawn_Y                            | A coordenada-Y para o veículo.             |
@@ -22,7 +22,7 @@ Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao 
 
 O ID do veículo criado (entre 1 e MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) caso o veículo não tenha sido criado (limite de veículos alcançado ou modelo inválido). 
+INVALID_VEHICLE_ID (65535) caso o veículo não tenha sido criado (limite de veículos alcançado ou modelo inválido).
 
 ## Exemplos
 
