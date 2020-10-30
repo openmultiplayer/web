@@ -8,9 +8,9 @@ tags: ["player"]
 
 (Re)Spawna um jogador.
 
-| Nome     | Descrição                      |
-| -------- | ------------------------------ |
-| playerid | O ID do jogador a spawnar.     |
+| Nome     | Descrição                  |
+| -------- | -------------------------- |
+| playerid | O ID do jogador a spawnar. |
 
 ## Retorno
 
@@ -38,6 +38,6 @@ Mata o jogador se ele tiver no veículo e depois ele spawna com uma garrafa na m
 
 ## Funções Relacionadas
 
-- [SetSpawnInfo](SetSpawnInfo.md): Define a configuração de spawn de um jogador. 
+- [SetSpawnInfo](SetSpawnInfo.md): Define a configuração de spawn de um jogador.
 - [AddPlayerClass](AddPlayerClass.md): Adiciona uma classe.
 - [OnPlayerSpawn](../callbacks/OnPlayerSpawn.md): É chamado quando um jogador spawna.
