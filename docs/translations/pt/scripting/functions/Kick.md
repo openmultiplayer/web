@@ -10,7 +10,7 @@ tags: ["administration"]
 Expulsa um jogador do servidor. Ele terá que sair do jogo e re-conectar caso queira continuar jogando.
 
 | Nome     | Descrição                      |
-| -------- | -----------------------------  |
+| -------- | ------------------------------ |
 | playerid | O ID do jogador a ser expulso. |
 
 ## Retorno
@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/kickme", true) == 0)
     {
-        // Expulsa o jogador que executar este comando. 
+        // Expulsa o jogador que executar este comando.
 
         // Primeiro, envia a ele uma mensagem.
         SendClientMessage(playerid, 0xFF0000FF, "Você foi expulso!");
