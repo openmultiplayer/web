@@ -8,31 +8,31 @@ title: Common Issues
 
 ### I get the error "San Andreas cannot be found"
 
-San Andreas Multi-player is **not** a stand-alone program! It adds multi-player functionality to San Andreas, and thus you need GTA San Andreas for the PC - it also needs to be **EU/US v1.0**, other versions such as v2.0 or Steam and Direct2Drive versions will not work. [Click here to download a patch to downgrade your GTA: SA version to 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multiplayer is **not** a stand-alone program! It adds multiplayer functionality to San Andreas, and thus you need GTA San Andreas for the PC - it also needs to be **EU/US v1.0**, other versions such as v2.0 or Steam and Direct2Drive versions will not work. [Click here to download a patch to downgrade your GTA: SA version to 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
 
-### I can not see any servers in SA-MP browser
+### I can not see any servers in SA:MP browser
 
 First off, ensure you are following the procedures set out in the [Quick-start guide](https://wiki.sa-mp.com/wiki/Getting_Started). If you have followed what it says, and still cannot see any servers, you must allow SA:MP access through your firewall. Unfortunately, due to the large amount of available firewall software, we can not offer further support on this - we suggest looking at the manufacturers website or trying a Google search. Also make sure you have the latest SA:MP version!
 
-### Single Player Loads instead of SA:MP
+### Single Player loads instead of SA:MP
 
 :::warning
 
-You are not supposed to see the single player options (new game, load game, etc) - SA-MP should load by itself and not present these options. If you see "new game" single player has loaded, not San Andreas Multiplayer.
+You are not supposed to see the singleplayer options (new game, load game, etc) - SA:MP should load by itself and not present these options. If you see "new game", singleplayer has loaded, not San Andreas Multiplayer.
 
 :::
 
-Single player can load for 2 reasons - you have installed SA:MP to the wrong folder or you have the wrong version of San Andreas. If you have the wrong version it's easy to fix. . Click [here](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) to download the downgrade patch.
+Singleplayer can load for 2 reasons; you have installed SA:MP to the wrong folder or you have the wrong version of San Andreas. If you have the wrong version you can downgrade your game using the GTA San Andreas downgrader. Click [here](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) to download it.
 
-Sometimes the single-player menu will be shown, but SA:MP will have in fact loaded properly. To fix this you simply need to select an item on the menu then press esc until you're out of it, then SA:MP will proceed to load.
+Sometimes the single player menu will be shown, but SA:MP will in fact have loaded properly. To fix this you simply need to select an item on the menu, then hit the escape key to exit out of it. SA:MP will then proceed to load.
 
-### I get "Unacceptable NickName" when connecting to a server
+### I get "Unacceptable Nickname" when connecting to a server
 
-Ensure you are not using any disallowed characters in your name (use 0-9, a-z, \[\], (), \$, @, ., \_ and = only), and that your name is no longer than 20 characters. This also could be caused when a player is on a server with the same name as you (which can happen if you re-join a server very soon after timing out or crashing). Also a Windows server running SA-MP with a uptime greater than 50 days can cause this bug.
+Ensure you are not using any disallowed characters in your name (use 0-9, a-z, \[\], (), \$, @, ., \_ and = only), and that your name is no longer than 20 characters. This also could be caused when a player is on a server with the same name as you (which can happen if you reconnect to a server quickkly after timing out or crashing). A Windows server running SA:MP with an uptime greater than 50 days can sometimes cause this bug.
 
-### Screen sticks at "Connecting to ip:port..."
+### Screen sticks at "Connecting to IP:Port..."
 
-The server could be offline, or if you can't connect to any server, disable your firewall and see if it works. If it does you must set up your firewall properly - go to its website to find out how. It could also be that you have an old version of SA-MP, download the latest version from the [SA-MP download page](http://sa-mp.com/download.php).
+The server could be offline, or if you can't connect to any server, disable your firewall and see if it works. If it does, you will need to reconfigure your firwall. It could also be that you are running an outdated version of SA:MP - you can find new versions [here](http://sa-mp.com/download.php).
 
 ### I have a modified GTA: San Andreas and SA:MP won't load
 
