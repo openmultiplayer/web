@@ -1,5 +1,4 @@
 ---
-id: LimitGlobalChatRadius
 title: LimitGlobalChatRadius
 description: Set a radius limitation for the chat.
 tags: []

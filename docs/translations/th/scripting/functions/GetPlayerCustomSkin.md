@@ -1,5 +1,4 @@
 ---
-id: GetPlayerCustomSkin
 title: GetPlayerCustomSkin
 description: Returns the class of the players custom skin downloaded from the server.
 tags: ["player"]

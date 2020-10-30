@@ -1,5 +1,4 @@
 ---
-id: OnPlayerUpdate
 title: OnPlayerUpdate
 description: This callback is called every time a client/player updates the server with their status.
 tags: ["player"]
@@ -77,11 +76,9 @@ public OnPlayerUpdate(playerid)
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 :::warning
 

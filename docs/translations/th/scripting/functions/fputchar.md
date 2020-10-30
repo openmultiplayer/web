@@ -1,5 +1,4 @@
 ---
-id: fputchar
 title: fputchar
 description: Write one character to a file.
 tags: []

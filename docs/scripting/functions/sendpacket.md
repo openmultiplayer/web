@@ -1,5 +1,4 @@
 ---
-id: sendpacket
 title: sendpacket
 description: .
 tags: []

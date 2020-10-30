@@ -1,5 +1,4 @@
 ---
-id: EditAttachedObject
 title: EditAttachedObject
 description: Enter edition mode for an attached object.
 tags: []

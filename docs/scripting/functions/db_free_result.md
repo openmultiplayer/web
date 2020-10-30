@@ -1,5 +1,4 @@
 ---
-id: db_free_result
 title: db_free_result
 description: Frees result memory allocated from db_query.
 keywords:

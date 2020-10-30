@@ -1,5 +1,4 @@
 ---
-id: ForceClassSelection
 title: ForceClassSelection
 description: Forces a player to go back to class selection.
 tags: []

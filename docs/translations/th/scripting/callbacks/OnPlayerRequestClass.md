@@ -1,5 +1,4 @@
 ---
-id: OnPlayerRequestClass
 title: OnPlayerRequestClass
 description: Called when a player changes class at class selection (and when class selection first appears).
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: pickuptypes
 title: "Pickup Types"
 ---
 

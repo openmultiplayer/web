@@ -1,5 +1,4 @@
 ---
-id: OnPlayerStateChange
 title: OnPlayerStateChange
 description: This callback is called when a player changes state.
 tags: ["player"]
@@ -37,11 +36,9 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions
 

@@ -1,5 +1,4 @@
 ---
-id: GetVehicleDamageStatus
 title: GetVehicleDamageStatus
 description: Retrieve the damage statuses of a vehicle.
 tags: ["vehicle"]

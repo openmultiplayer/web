@@ -1,5 +1,4 @@
 ---
-id: HTTP
 title: HTTP
 description: Sends a threaded HTTP request.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: GetPVarInt
 title: GetPVarInt
 description: Gets an integer player variable's value.
 tags: ["pvar"]

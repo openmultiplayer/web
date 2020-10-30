@@ -1,5 +1,4 @@
 ---
-id: GetPlayerAmmo
 title: GetPlayerAmmo
 description: Gets the amount of ammo in a player's current weapon.
 tags: ["player"]

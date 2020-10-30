@@ -1,5 +1,4 @@
 ---
-id: CallRemoteFunction
 title: CallRemoteFunction
 description: Calls a public function in any script that is loaded.
 tags: []

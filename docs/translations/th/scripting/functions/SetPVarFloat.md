@@ -1,5 +1,4 @@
 ---
-id: SetPVarFloat
 title: SetPVarFloat
 description: Set a float player variable's value.
 tags: ["pvar"]

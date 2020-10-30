@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEnterCheckpoint
 title: OnPlayerEnterCheckpoint
 description: This callback is called when a player enters the checkpoint set for that player.
 tags: ["player", "checkpoint"]
@@ -38,11 +37,9 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions
 

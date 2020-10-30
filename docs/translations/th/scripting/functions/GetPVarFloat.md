@@ -1,5 +1,4 @@
 ---
-id: GetPVarFloat
 title: GetPVarFloat
 description: Gets a player variable as a float.
 tags: ["pvar"]

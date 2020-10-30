@@ -1,5 +1,4 @@
 ---
-id: GetPlayerVirtualWorld
 title: GetPlayerVirtualWorld
 description: Retrieves the current virtual world the player is in.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: existproperty
 title: existproperty
 description: Check if a property exist.
 tags: []

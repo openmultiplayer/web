@@ -1,5 +1,4 @@
 ---
-id: TogglePlayerControllable
 title: TogglePlayerControllable
 description: Toggles whether a player can control their character or not.
 tags: ["player"]

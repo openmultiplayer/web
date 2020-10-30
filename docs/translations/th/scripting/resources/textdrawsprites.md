@@ -1,5 +1,4 @@
 ---
-id: textdrawsprites
 title: TextDraw Sprites
 description: A list of textdraw sprites for use with TextDrawFont 4.
 ---

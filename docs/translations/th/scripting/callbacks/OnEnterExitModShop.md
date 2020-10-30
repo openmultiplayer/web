@@ -1,5 +1,4 @@
 ---
-id: OnEnterExitModShop
 title: OnEnterExitModShop
 description: Callback นี้ถูกเรียกเมื่อผู้เล่นเข้าหรือออกจากร้านแต่งรถยนต์
 tags: []

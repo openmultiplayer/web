@@ -1,5 +1,4 @@
 ---
-id: OnFilterScriptInit
 title: OnFilterScriptInit
 description: This callback is called when a filterscript is initialized (loaded).
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: floatdiv
 title: floatdiv
 description: Divide one float by another one.
 tags: []

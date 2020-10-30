@@ -1,5 +1,4 @@
 ---
-id: SetObjectMaterialText
 title: SetObjectMaterialText
 description: Replace the texture of an object with text.
 tags: []

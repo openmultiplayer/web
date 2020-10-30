@@ -1,5 +1,4 @@
 ---
-id: db_get_field_assoc_int
 title: db_get_field_assoc_int
 description: Get the contents of field as an integer with specified name.
 tags: ["sqlite"]

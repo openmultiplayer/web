@@ -1,5 +1,4 @@
 ---
-id: OnGameModeInit
 title: OnGameModeInit
 description: Callback ini terpanggil ketika memuat gamemode.
 tags: []

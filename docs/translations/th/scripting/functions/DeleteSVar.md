@@ -1,5 +1,4 @@
 ---
-id: DeleteSVar
 title: DeleteSVar
 description: Deletes a previously set server variable.
 tags: []

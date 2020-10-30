@@ -1,5 +1,4 @@
 ---
-id: TextDrawSetOutline
 title: TextDrawSetOutline
 description: Sets the thickness of a textdraw's text's outline.
 tags: ["textdraw"]

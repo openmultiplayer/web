@@ -1,5 +1,4 @@
 ---
-id: GetVehicleParamsSirenState
 title: GetVehicleParamsSirenState
 description: Returns a vehicle's siren state (on/off).
 tags: ["vehicle"]

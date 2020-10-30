@@ -1,5 +1,4 @@
 ---
-id: GetPlayerSkin
 title: GetPlayerSkin
 description: Returns the class of the players skin.
 tags: ["player"]

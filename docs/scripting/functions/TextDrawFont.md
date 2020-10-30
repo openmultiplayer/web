@@ -1,5 +1,4 @@
 ---
-id: TextDrawFont
 title: TextDrawFont
 description: Changes the text font.
 tags: ["textdraw"]

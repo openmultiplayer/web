@@ -1,5 +1,4 @@
 ---
-id: SetPlayerFacingAngle
 title: SetPlayerFacingAngle
 description: Set a player's facing angle (Z rotation).
 tags: ["player"]

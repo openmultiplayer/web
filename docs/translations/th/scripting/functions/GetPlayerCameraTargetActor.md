@@ -1,5 +1,4 @@
 ---
-id: GetPlayerCameraTargetActor
 title: GetPlayerCameraTargetActor
 description: Allows you to retrieve the ID of the actor the player is looking at (in any).
 tags: ["player"]

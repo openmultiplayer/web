@@ -1,5 +1,4 @@
 ---
-id: IsVehicleStreamedIn
 title: IsVehicleStreamedIn
 description: Checks if a vehicle is streamed in for a player.
 tags: ["vehicle"]

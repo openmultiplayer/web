@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamOut
 title: OnActorStreamOut
 description: Acest callback este apelat atunci când un actor iese din flux (streamed out) de către clientul unui jucător.
 tags: []

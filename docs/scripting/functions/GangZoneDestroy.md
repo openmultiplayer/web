@@ -1,5 +1,4 @@
 ---
-id: GangZoneDestroy
 title: GangZoneDestroy
 description: Destroy a gangzone.
 tags: ["gangzone"]

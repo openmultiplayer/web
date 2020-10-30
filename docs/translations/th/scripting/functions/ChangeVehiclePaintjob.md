@@ -1,5 +1,4 @@
 ---
-id: ChangeVehiclePaintjob
 title: ChangeVehiclePaintjob
 description: Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).
 tags: ["vehicle"]

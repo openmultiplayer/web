@@ -1,5 +1,4 @@
 ---
-id: IsTrailerAttachedToVehicle
 title: IsTrailerAttachedToVehicle
 description: Checks if a vehicle has a trailer attached to it.
 tags: ["vehicle"]

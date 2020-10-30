@@ -1,5 +1,4 @@
 ---
-id: OnPlayerEnterRaceCheckpoint
 title: OnPlayerEnterRaceCheckpoint
 description: This callback is called when a player enters a race checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]
@@ -29,11 +28,9 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions
 

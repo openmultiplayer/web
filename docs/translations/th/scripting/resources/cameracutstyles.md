@@ -1,5 +1,4 @@
 ---
-id: cameracutstyles
 title: Camera Cut Styles
 ---
 

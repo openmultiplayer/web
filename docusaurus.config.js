@@ -4,6 +4,7 @@ module.exports = {
   url: "https://www.open.mp/",
   baseUrl: "/",
   favicon: "public/favicon.ico",
+  onBrokenLinks: "ignore",
   organizationName: "openmultiplayer",
   projectName: "wiki",
   themeConfig: {
@@ -14,7 +15,7 @@ module.exports = {
         src: "public/logo-light-trans.svg",
         href: "/docs/",
       },
-      links: [
+      items: [
         {
           to: "docs/index",
           activeBasePath: "docs",
@@ -91,8 +92,7 @@ module.exports = {
             },
             {
               label: "Blog",
-              to: "blog",
-              href: "https://open.mp/blog",
+              to: "/blog",
             },
             {
               label: "GitHub",
@@ -128,12 +128,11 @@ module.exports = {
         },
         sitemap: {
           cacheTime: 600 * 1000,
-          changefreq: "daily",
-          priority: 0.5,
+          changefreq: "weekly",
+          priority: 1,
           trailingSlash: false,
         },
       },
     ],
   ],
-  plugins: ["@docusaurus/plugin-google-analytics"],
 };

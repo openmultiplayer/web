@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawBoxColor
 title: PlayerTextDrawBoxColor
 description: Sets the color of a textdraw's box (PlayerTextDrawUseBox ).
 tags: ["player", "textdraw", "playertextdraw"]

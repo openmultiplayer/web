@@ -1,5 +1,4 @@
 ---
-id: index
 title: Welcome
 sidebar_label: Welcome
 ---

@@ -1,5 +1,4 @@
 ---
-id: GetPlayerPing
 title: GetPlayerPing
 description: Get the ping of a player.
 tags: ["player"]

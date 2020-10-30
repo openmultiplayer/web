@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawFont
 title: PlayerTextDrawFont
 description: Change the font of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

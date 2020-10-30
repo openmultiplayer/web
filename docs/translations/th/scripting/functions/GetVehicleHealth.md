@@ -1,5 +1,4 @@
 ---
-id: GetVehicleHealth
 title: GetVehicleHealth
 description: Get the health of a vehicle.
 tags: ["vehicle"]

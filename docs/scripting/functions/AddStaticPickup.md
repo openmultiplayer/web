@@ -1,5 +1,4 @@
 ---
-id: AddStaticPickup
 title: AddStaticPickup
 description: This function adds a 'static' pickup to the game.
 tags: []

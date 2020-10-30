@@ -1,5 +1,4 @@
 ---
-id: IsValidMenu
 title: IsValidMenu
 description: Checks if a menu ID is valid.
 tags: []

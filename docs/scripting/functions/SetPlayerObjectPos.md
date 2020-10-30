@@ -1,5 +1,4 @@
 ---
-id: SetPlayerObjectPos
 title: SetPlayerObjectPos
 description: Sets the position of a player-object to the specified coordinates.
 tags: ["player"]

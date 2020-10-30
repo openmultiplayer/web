@@ -1,5 +1,4 @@
 ---
-id: GetPVarString
 title: GetPVarString
 description: Gets a player variable as a string.
 tags: ["pvar"]

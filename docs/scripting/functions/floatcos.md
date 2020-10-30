@@ -1,5 +1,4 @@
 ---
-id: floatcos
 title: floatcos
 description: Get the cosine from a given angle.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: GameTextForAll
 title: GameTextForAll
 description: Shows 'game text' (on-screen text) for a certain length of time for all players.
 tags: []

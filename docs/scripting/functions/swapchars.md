@@ -1,5 +1,4 @@
 ---
-id: swapchars
 title: swapchars
 description: .
 tags: []

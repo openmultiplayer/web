@@ -1,5 +1,4 @@
 ---
-id: OnPlayerStreamIn
 title: OnPlayerStreamIn
 description: This callback is called when a player is streamed by some other player's client.
 tags: ["player"]
@@ -36,10 +35,6 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Notes
 
-:::tip
-
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions

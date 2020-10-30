@@ -1,5 +1,4 @@
 ---
-id: NetStats_MessagesReceived
 title: NetStats_MessagesReceived
 description: Gets the number of messages the server has received from the player.
 tags: []

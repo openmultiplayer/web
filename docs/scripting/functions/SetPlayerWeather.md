@@ -1,5 +1,4 @@
 ---
-id: SetPlayerWeather
 title: SetPlayerWeather
 description: Set a player's weather.
 tags: ["player"]

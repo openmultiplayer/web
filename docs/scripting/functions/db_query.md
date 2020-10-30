@@ -1,5 +1,4 @@
 ---
-id: db_query
 title: db_query
 description: The function is used to execute an SQL query on an opened SQLite database.
 keywords:

@@ -1,5 +1,4 @@
 ---
-id: OnClientMessage
 title: OnClientMessage
 description: Bu callback, NPC bir ClientMessage algılandığında tetiklenir.
 tags: []

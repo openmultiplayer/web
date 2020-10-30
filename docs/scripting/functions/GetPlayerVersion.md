@@ -1,5 +1,4 @@
 ---
-id: GetPlayerVersion
 title: GetPlayerVersion
 description: Returns the SA-MP client version, as reported by the player.
 tags: ["player"]

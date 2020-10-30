@@ -1,5 +1,4 @@
 ---
-id: SetObjectNoCameraCol
 title: SetObjectNoCameraCol
 description: Disable collisions between players' cameras and the specified object.
 tags: []

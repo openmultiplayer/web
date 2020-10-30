@@ -1,5 +1,4 @@
 ---
-id: SetPVarString
 title: SetPVarString
 description: Saves a string into a player variable.
 tags: ["pvar"]

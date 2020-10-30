@@ -1,5 +1,4 @@
 ---
-id: db_open
 title: db_open
 description: This function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.
 tags: ["sqlite"]

@@ -1,5 +1,4 @@
 ---
-id: HideMenuForPlayer
 title: HideMenuForPlayer
 description: Hides a menu for a player.
 tags: ["player", "menu"]

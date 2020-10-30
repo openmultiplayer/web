@@ -1,5 +1,4 @@
 ---
-id: SetPlayerPosFindZ
 title: SetPlayerPosFindZ
 description: This sets the players position then adjusts the players z-coordinate to the nearest solid ground under the position.
 tags: ["player"]

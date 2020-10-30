@@ -1,5 +1,4 @@
 ---
-id: NetStats_MessagesRecvPerSecond
 title: NetStats_MessagesRecvPerSecond
 description: Gets the number of messages the player has received in the last second.
 tags: []

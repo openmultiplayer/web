@@ -14,9 +14,9 @@ new gMyPickup;
 
 ## Creating the pickup
 
-There are two ways to create pickups. [CreatePickup](../functions/CreatePickup) and [AddStaticPickup](../functions/AddStaticPickup). AddStaticPickup doesn't return an ID when it is created, can't be destroyed and can only be used under OnGameModeInit, so for this example we will use [CreatePickup](../functions/CreatePickup).
+There are two ways to create pickups. [CreatePickup](../scripting/functions/CreatePickup) and [AddStaticPickup](../scripting/functions/AddStaticPickup). AddStaticPickup doesn't return an ID when it is created, can't be destroyed and can only be used under OnGameModeInit, so for this example we will use [CreatePickup](../scripting/functions/CreatePickup).
 
-**The syntax for [CreatePickup](../functions/CreatePickup) is:**
+**The syntax for [CreatePickup](../scripting/functions/CreatePickup) is:**
 
 **Parameters:**
 
@@ -34,7 +34,7 @@ Now we need to decide on a model to appear in the world, there are lots of model
 
 Finally we need a [Type](https://wiki.openmultiplayer.now.sh/docs/scripting/resources/pickuptypes) for the pickup, on the same page with the pickup models is a list of pickup types describing what the various ones do. We want this pickup to disappear when you pick it up, so you can't pick it up repeatedly, but to reappear after a few minutes so you can pick it up again, type 2 does just this.
 
-Pickups are most commonly created when the script starts, in [OnGameModeInit](../functions/OnGameModeInit) or [OnFilterScriptInit](../functions/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
+Pickups are most commonly created when the script starts, in [OnGameModeInit](../scripting/callbacks/OnGameModeInit) or [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
 
 So here is the code to create our pickup, and store the ID in 'gMyPickup':
 
@@ -44,7 +44,7 @@ gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 
 ### Choosing what it does
 
-When you pick up a pickup, [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup) is called, passing playerid (the player that picked up a pickup) and pickupid (the ID of the pickup that was picked up).
+When you pick up a pickup, [OnPlayerPickUpPickup](../scripting/callbacks/OnPlayerPickUpPickup) is called, passing playerid (the player that picked up a pickup) and pickupid (the ID of the pickup that was picked up).
 
 Some pickup types are designed to work automatically, so there is no need to do anything under OnPlayerPickUpPickup. Check out the [Pickup Types](../scripting/resources/pickuptypes) page for more information.
 

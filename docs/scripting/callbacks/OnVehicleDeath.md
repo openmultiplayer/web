@@ -1,5 +1,4 @@
 ---
-id: OnVehicleDeath
 title: OnVehicleDeath
 description: This callback is called when a vehicle is destroyed - either by exploding or becoming submerged in water.
 tags: ["vehicle"]

@@ -1,5 +1,4 @@
 ---
-id: TextDrawBackgroundColor
 title: TextDrawBackgroundColor
 description: Adjusts the text draw area background color (the outline/shadow - NOT the box.
 tags: ["textdraw"]

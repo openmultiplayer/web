@@ -1,5 +1,4 @@
 ---
-id: OnPlayerRequestSpawn
 title: OnPlayerRequestSpawn
 description: Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
 tags: ["player"]
@@ -33,11 +32,9 @@ public OnPlayerRequestSpawn(playerid)
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 :::tip
 

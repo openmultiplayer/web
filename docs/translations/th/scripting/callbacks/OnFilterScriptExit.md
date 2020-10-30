@@ -1,5 +1,4 @@
 ---
-id: OnFilterScriptExit
 title: OnFilterScriptExit
 description: Callback นี้ถูกเรียกเมื่อฟิลเตอร์สคริปต์ยกเลิกการโหลด
 tags: []

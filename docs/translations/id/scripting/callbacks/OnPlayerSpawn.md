@@ -1,5 +1,4 @@
 ---
-id: OnPlayerSpawn
 title: OnPlayerSpawn
 description: Callback ini akan terpanggil ketika pemain spawn.
 tags: ["player"]

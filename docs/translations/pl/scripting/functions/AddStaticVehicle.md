@@ -1,5 +1,4 @@
 ---
-id: AddStaticVehicle
 title: AddStaticVehicle
 description: Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu.
 tags: ["vehicle"]

@@ -1,5 +1,4 @@
 ---
-id: floatsub
 title: floatsub
 description: Subtracts one float from another one.
 tags: []

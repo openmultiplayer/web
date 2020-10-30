@@ -1,5 +1,4 @@
 ---
-id: OnPlayerGiveDamageActor
 title: OnPlayerGiveDamageActor
 description: This callback is called when a player gives damage to an actor.
 tags: ["player"]

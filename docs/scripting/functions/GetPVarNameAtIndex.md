@@ -1,5 +1,4 @@
 ---
-id: GetPVarNameAtIndex
 title: GetPVarNameAtIndex
 description: Retrieve the name of a player's pVar via the index.
 tags: ["pvar"]

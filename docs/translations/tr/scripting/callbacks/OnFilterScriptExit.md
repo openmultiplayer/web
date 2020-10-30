@@ -1,5 +1,4 @@
 ---
-id: OnFilterScriptExit
 title: OnFilterScriptExit
 description: Bir filterscript unload edildiğinde tetiklenir.
 tags: []

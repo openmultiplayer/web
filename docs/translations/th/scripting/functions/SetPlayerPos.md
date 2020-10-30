@@ -1,5 +1,4 @@
 ---
-id: SetPlayerPos
 title: SetPlayerPos
 description: Set a player's position.
 tags: ["player"]

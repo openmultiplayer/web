@@ -1,5 +1,4 @@
 ---
-id: Initialisers
 title: "Cuvant: Initializare"
 ---
 

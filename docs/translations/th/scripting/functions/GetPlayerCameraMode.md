@@ -1,5 +1,4 @@
 ---
-id: GetPlayerCameraMode
 title: GetPlayerCameraMode
 description: Returns the current GTA camera mode for the requested player.
 tags: ["player"]

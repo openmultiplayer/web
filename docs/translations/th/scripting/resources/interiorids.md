@@ -1,5 +1,4 @@
 ---
-id: interiorids
 title: Interior IDs
 ---
 

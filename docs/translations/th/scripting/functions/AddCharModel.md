@@ -1,5 +1,4 @@
 ---
-id: AddCharModel
 title: AddCharModel
 description: Adds a new custom character model for download.
 tags: []

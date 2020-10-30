@@ -1,5 +1,4 @@
 ---
-id: fclose
 title: fclose
 description: Closes a file.
 tags: []

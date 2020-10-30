@@ -1,5 +1,4 @@
 ---
-id: GetPlayerVelocity
 title: GetPlayerVelocity
 description: Get the velocity (speed) of a player on the X, Y and Z axes.
 tags: ["player"]

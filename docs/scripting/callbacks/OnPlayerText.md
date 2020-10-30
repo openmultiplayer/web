@@ -1,5 +1,4 @@
 ---
-id: OnPlayerText
 title: OnPlayerText
 description: Called when a player sends a chat message.
 tags: ["player"]
@@ -32,11 +31,9 @@ public OnPlayerText(playerid, text[])
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions
 

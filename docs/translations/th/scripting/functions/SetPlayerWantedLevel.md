@@ -1,5 +1,4 @@
 ---
-id: SetPlayerWantedLevel
 title: SetPlayerWantedLevel
 description: Set a player's wanted level (6 brown stars under HUD).
 tags: ["player"]

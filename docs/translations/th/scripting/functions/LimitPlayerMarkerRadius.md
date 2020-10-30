@@ -1,5 +1,4 @@
 ---
-id: LimitPlayerMarkerRadius
 title: LimitPlayerMarkerRadius
 description: Set the player marker radius.
 tags: ["player"]

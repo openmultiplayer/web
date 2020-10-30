@@ -1,5 +1,4 @@
 ---
-id: DisableRemoteVehicleCollisions
 title: DisableRemoteVehicleCollisions
 description: Disables collisions between occupied vehicles for a player.
 tags: ["vehicle"]

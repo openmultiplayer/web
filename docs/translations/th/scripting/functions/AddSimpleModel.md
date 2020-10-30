@@ -1,5 +1,4 @@
 ---
-id: AddSimpleModel
 title: AddSimpleModel
 description: Adds a new custom simple object model for download.
 tags: []

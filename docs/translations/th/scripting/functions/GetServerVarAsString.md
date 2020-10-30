@@ -1,5 +1,4 @@
 ---
-id: GetServerVarAsString
 title: GetServerVarAsString
 description: Get the string value of a server variable.
 tags: []

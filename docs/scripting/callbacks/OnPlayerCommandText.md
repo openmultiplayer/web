@@ -1,5 +1,4 @@
 ---
-id: OnPlayerCommandText
 title: OnPlayerCommandText
 description: This callback is called when a player enters a command into the client chat window.
 tags: ["player"]
@@ -39,11 +38,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions
 

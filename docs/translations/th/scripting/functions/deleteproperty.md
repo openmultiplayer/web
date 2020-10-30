@@ -1,5 +1,4 @@
 ---
-id: deleteproperty
 title: deleteproperty
 description: Delete an earlier set property (setproperty).
 tags: []

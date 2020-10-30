@@ -1,5 +1,4 @@
 ---
-id: OnPlayerSelectObject
 title: OnPlayerSelectObject
 description: This callback is called when a player selects an object after SelectObject has been used.
 tags: ["player"]

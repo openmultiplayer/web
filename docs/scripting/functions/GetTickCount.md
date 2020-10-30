@@ -1,5 +1,4 @@
 ---
-id: GetTickCount
 title: GetTickCount
 description: Returns the uptime of the actual server (not the SA-MP server) in milliseconds.
 tags: []

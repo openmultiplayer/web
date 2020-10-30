@@ -1,5 +1,4 @@
 ---
-id: OnPlayerStateChange
 title: OnPlayerStateChange
 description: This callback is called when a player changes state.
 tags: ["player"]

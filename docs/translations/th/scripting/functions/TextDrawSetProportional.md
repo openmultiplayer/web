@@ -1,5 +1,4 @@
 ---
-id: TextDrawSetProportional
 title: TextDrawSetProportional
 description: Appears to scale text spacing to a proportional ratio.
 tags: ["textdraw"]

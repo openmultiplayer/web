@@ -1,5 +1,4 @@
 ---
-id: CreateExplosion
 title: CreateExplosion
 description: Create an explosion at the specified coordinates.
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: IsPlayerStreamedIn
 title: IsPlayerStreamedIn
 description: Checks if a player is streamed in another player's client.
 tags: ["player"]

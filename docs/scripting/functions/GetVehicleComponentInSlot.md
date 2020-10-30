@@ -1,5 +1,4 @@
 ---
-id: GetVehicleComponentInSlot
 title: GetVehicleComponentInSlot
 description: Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific slot.
 tags: ["vehicle"]
@@ -13,10 +12,10 @@ import T from '../../../src/components/templates.js'
 
 Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific slot.
 
-| Name      | Description                                       |
-| --------- | ------------------------------------------------- |
-| vehicleid | The ID of the vehicle to check for the component. |
-| slot      | The component slot to check for components.       |
+| Name      | Description                                                                   |
+| --------- | ----------------------------------------------------------------------------- |
+| vehicleid | The ID of the vehicle to check for the component.                             |
+| slot      | The [component slot](../resources/Componentslots.md) to check for components. |
 
 ## Returns
 

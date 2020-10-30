@@ -1,5 +1,4 @@
 ---
-id: GetVehicleModelInfo
 title: GetVehicleModelInfo
 description: Retrieve information about a specific vehicle model such as the size or position of seats.
 tags: ["vehicle"]

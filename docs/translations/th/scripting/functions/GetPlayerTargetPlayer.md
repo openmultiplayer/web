@@ -1,5 +1,4 @@
 ---
-id: GetPlayerTargetPlayer
 title: GetPlayerTargetPlayer
 description: Check who a player is aiming at.
 tags: ["player"]

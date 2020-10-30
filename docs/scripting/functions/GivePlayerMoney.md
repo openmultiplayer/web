@@ -1,5 +1,4 @@
 ---
-id: GivePlayerMoney
 title: GivePlayerMoney
 description: Give money to or take money from a player.
 tags: ["player"]

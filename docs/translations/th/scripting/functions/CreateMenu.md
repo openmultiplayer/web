@@ -1,5 +1,4 @@
 ---
-id: CreateMenu
 title: CreateMenu
 description: Creates a menu.
 tags: ["menu"]

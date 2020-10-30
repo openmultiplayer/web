@@ -1,5 +1,4 @@
 ---
-id: StopAudioStreamForPlayer
 title: StopAudioStreamForPlayer
 description: Stops the current audio stream for a player.
 tags: ["player"]

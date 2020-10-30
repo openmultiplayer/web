@@ -1,5 +1,4 @@
 ---
-id: fopen
 title: fopen
 description: Open a file (to read from or write to).
 tags: []

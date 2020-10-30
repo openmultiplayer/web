@@ -1,5 +1,4 @@
 ---
-id: OnPlayerObjectMoved
 title: OnPlayerObjectMoved
 description: This callback is called when a player object is moved after MovePlayerObject (when it stops moving).
 tags: ["player"]

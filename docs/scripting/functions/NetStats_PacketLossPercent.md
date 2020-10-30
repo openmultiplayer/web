@@ -1,5 +1,4 @@
 ---
-id: NetStats_PacketLossPercent
 title: NetStats_PacketLossPercent
 description: Gets the packet loss percentage of a player.
 tags: []

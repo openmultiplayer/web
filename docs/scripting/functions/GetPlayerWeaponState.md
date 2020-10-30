@@ -1,5 +1,4 @@
 ---
-id: GetPlayerWeaponState
 title: GetPlayerWeaponState
 description: Check the state of a player's weapon.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: recordtypes
 title: Record Types
 description: Record types to be used with [StartRecordingPlayerData]()../functions/StartRecordingPlayerData.md)
 tags: ["player"]

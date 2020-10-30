@@ -9,7 +9,7 @@ Ez a dokumentációs forrás bárki számára elérhető, hogy hozzájáruljon a
 
 Minden oldalon található egy gomb, amely a GitHub szerkesztés oldalára vezet:
 
-!["Edit this page" link present on each wiki page](/images/contributing/edit-this-page.png)
+![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
 
 Például, ezen az oldalon [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) erre az [oldal](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md)ra juttat el, ahol egy szövegszerkesztővel módosíthatod a fájlokat (feltéve, hogy be vagy jelentkezve a GitHub-ba).
 
@@ -21,9 +21,9 @@ Végezzd el a szerkesztést, és küldj be egy "Pull Request" ("Húzási kérele
 
 ### GitHub Felület
 
-Ha egy könyvtárat tallóz a GitHubon, a fájllista jobb felső sarkában található egy "Add file" ("Fájl hozzáadása") gomb:
+Ha egy könyvtárat tallóz a GitHubon, a fájllista jobb felső sarkában található egy Add file ("Fájl hozzáadása") gomb:
 
-!["Add file" button](/images/contributing/add-new-file.png)
+![Add file button](/images/contributing/add-new-file.png)
 
 Vagy feltölthet egy már írt Markdown fájlt, vagy közvetlenül a GitHub szövegszerkesztőbe írhatja.
 

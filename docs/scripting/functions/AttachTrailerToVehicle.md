@@ -1,5 +1,4 @@
 ---
-id: AttachTrailerToVehicle
 title: AttachTrailerToVehicle
 description: Attach a vehicle to another vehicle as a trailer.
 tags: ["vehicle"]

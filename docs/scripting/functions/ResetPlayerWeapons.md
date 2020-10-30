@@ -1,5 +1,4 @@
 ---
-id: ResetPlayerWeapons
 title: ResetPlayerWeapons
 description: Removes all weapons from a player.
 tags: ["player"]

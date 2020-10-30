@@ -1,5 +1,4 @@
 ---
-id: SelectTextDraw
 title: SelectTextDraw
 description: Display the cursor and allow the player to select a textdraw.
 tags: ["textdraw"]

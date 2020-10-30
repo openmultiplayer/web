@@ -1,5 +1,4 @@
 ---
-id: HTTP
 title: HTTP
 description: Sends a threaded HTTP request.
 tags: []
@@ -24,6 +23,24 @@ Sends a threaded HTTP request.
 ## Returns
 
 1 on success, 0 on failure
+
+## Definitions
+
+```c
+// HTTP requests
+#define HTTP_GET                               (1) // Sends a regular HTTP request.
+#define HTTP_POST                              (2) // Sends a HTTP request with POST data.
+#define HTTP_HEAD                              (3) // Sends a regular HTTP request, but ignores any response data - returning only the response code.
+// HTTP error response codes
+// These codes compliment ordinary HTTP response codes returned in 'response_code'
+// (10x) (20x OK) (30x Moved) (40x Unauthorised) (50x Server Error)
+#define HTTP_ERROR_BAD_HOST                    (1)
+#define HTTP_ERROR_NO_SOCKET                   (2)
+#define HTTP_ERROR_CANT_CONNECT                (3)
+#define HTTP_ERROR_CANT_WRITE                  (4)
+#define HTTP_ERROR_CONTENT_TOO_BIG             (5)
+#define HTTP_ERROR_MALFORMED_RESPONSE          (6)
+```
 
 ## Examples
 
@@ -58,16 +75,6 @@ public MyHttpResponse(index, response_code, data[])
         SendClientMessage(index, 0xFFFFFFFF, buffer);
     }
 }
-```
-
-```
-HTTP_ERROR_BAD_HOST           (1)
-HTTP_ERROR_NO_SOCKET          (2)
-HTTP_ERROR_CANT_CONNECT       (3)
-HTTP_ERROR_CANT_WRITE         (4)
-HTTP_ERROR_CONTENT_TOO_BIG    (5)
-HTTP_ERROR_MALFORMED_RESPONSE (6)
-
 ```
 
 ## Notes

@@ -1,5 +1,4 @@
 ---
-id: SetObjectMaterial
 title: SetObjectMaterial
 description: Replace the texture of an object with the texture from another model in the game.
 tags: []

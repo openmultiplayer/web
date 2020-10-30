@@ -1,5 +1,4 @@
 ---
-id: GetSVarFloat
 title: GetSVarFloat
 description: Gets a float server variable's value.
 tags: []

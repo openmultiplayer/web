@@ -1,5 +1,4 @@
 ---
-id: LinkVehicleToInterior
 title: LinkVehicleToInterior
 description: Links a vehicle to an interior.
 tags: ["vehicle"]

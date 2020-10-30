@@ -1,5 +1,4 @@
 ---
-id: GetActorHealth
 title: GetActorHealth
 description: Get the health of an actor.
 tags: []

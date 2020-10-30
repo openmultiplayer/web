@@ -1,5 +1,4 @@
 ---
-id: EnablePlayerCameraTarget
 title: EnablePlayerCameraTarget
 description: Toggle camera targeting functions for a player.
 tags: ["player"]

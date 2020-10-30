@@ -1,5 +1,4 @@
 ---
-id: TextDrawUseBox
 title: TextDrawUseBox
 description: Toggle whether a textdraw uses a box or not.
 tags: ["textdraw"]

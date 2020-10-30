@@ -1,5 +1,4 @@
 ---
-id: StopRecordingPlayerData
 title: StopRecordingPlayerData
 description: Stops all the recordings that had been started with StartRecordingPlayerData for a specific player.
 tags: ["player"]

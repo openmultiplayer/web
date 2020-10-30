@@ -1,5 +1,4 @@
 ---
-id: AttachObjectToObject
 title: AttachObjectToObject
 description: You can use this function to attach objects to other objects.
 tags: []

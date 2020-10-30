@@ -1,5 +1,4 @@
 ---
-id: SetPVarInt
 title: SetPVarInt
 description: Set an integer player variable.
 tags: ["pvar"]

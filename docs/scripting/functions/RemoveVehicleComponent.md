@@ -1,5 +1,4 @@
 ---
-id: RemoveVehicleComponent
 title: RemoveVehicleComponent
 description: Remove a component from a vehicle.
 tags: ["vehicle"]

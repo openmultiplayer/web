@@ -1,5 +1,4 @@
 ---
-id: OnDialogResponse
 title: OnDialogResponse
 description: Callback ini akan terpanggil ketika pemain merespon kepada dialog yang muncul menggunakan ShowPlayerDialog entah itu dengan cara mengklik tombol, menekan ENTER/ESC atau mengklik dua kali list item (jika menggunakan list style dialog).
 tags: []
@@ -141,6 +140,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 ## Notes
 
 :::tip
+
 Parameters dapat memuat nilai yang berbeda berdasarkan style dialog ([klik disini untuk info lebih lanjut](../resources/dialogstyles.md)).
 
 :::

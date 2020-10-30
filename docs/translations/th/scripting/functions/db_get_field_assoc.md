@@ -1,5 +1,4 @@
 ---
-id: db_get_field_assoc
 title: db_get_field_assoc
 description: Get the contents of field with specified name.
 tags: ["sqlite"]

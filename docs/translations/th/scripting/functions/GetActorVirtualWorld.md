@@ -1,5 +1,4 @@
 ---
-id: GetActorVirtualWorld
 title: GetActorVirtualWorld
 description: Get the virtual world of an actor.
 tags: []

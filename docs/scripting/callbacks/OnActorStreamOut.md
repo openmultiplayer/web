@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamOut
 title: OnActorStreamOut
 description: This callback is called when an actor is streamed out by a player's client.
 tags: []
@@ -36,10 +35,6 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Notes
 
-:::tip
-
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions

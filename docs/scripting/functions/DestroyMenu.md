@@ -1,5 +1,4 @@
 ---
-id: DestroyMenu
 title: DestroyMenu
 description: Destroys the specified menu.
 tags: ["menu"]

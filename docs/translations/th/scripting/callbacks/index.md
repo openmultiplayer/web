@@ -1,5 +1,4 @@
 ---
-id: index
 title: Scripting Callbacks
 sidebar_label: Scripting Callbacks
 ---

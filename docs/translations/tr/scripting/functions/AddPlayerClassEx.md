@@ -1,5 +1,4 @@
 ---
-id: AddPlayerClassEx
 title: AddPlayerClassEx
 description: Bu işlev, bir takım parametresi eklenmesiyle birlikte AddPlayerClass işleviyle tamamen aynıdır.
 tags: ["player"]

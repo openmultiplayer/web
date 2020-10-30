@@ -1,5 +1,4 @@
 ---
-id: Style
 title: "Pawn Style Guide"
 description: A short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.
 ---
@@ -187,8 +186,7 @@ Functions must be named with `PascalCase`.
 
 #### Global Variables
 
-Global variables declared using `new` must always use `g_` prefixed PascalCase, so `g_VariableName`,
-however if they are declared using `static` they must always use `s_` prefixed PascalCase, so `s_VariableName`
+Global variables declared using `new` must always use `g_` prefixed PascalCase, so `g_VariableName`, however if they are declared using `static` they must always use `s_` prefixed PascalCase, so `s_VariableName`
 
 Constant globals must use `SCREAMING_SNAKE_CASE`.
 
@@ -221,8 +219,7 @@ static enum e_PLAYER_DATA {
 }
 ```
 
-Non-named enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator
-name as a prefix.
+Non-named enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator name as a prefix.
 
 ```pawn
 static enum {

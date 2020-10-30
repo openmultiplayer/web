@@ -1,5 +1,4 @@
 ---
-id: GetPlayerCameraTargetPlayer
 title: GetPlayerCameraTargetPlayer
 description: Allows you to retrieve the ID of the player the playerid is looking at.
 tags: ["player"]

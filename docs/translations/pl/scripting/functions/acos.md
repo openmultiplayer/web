@@ -1,15 +1,12 @@
 ---
-id: acos
 title: acos
 description: .
 tags: []
 ---
 
-:::warning
+import T from '../../../../../src/components/templates.js'
 
-Nazwa tej funkcji zaczyna się małą literą.
-
-:::
+<T.LowercaseNote />
 
 ## Opis
 

@@ -1,5 +1,4 @@
 ---
-id: TextDrawColor
 title: TextDrawColor
 description: Sets the text color of a textdraw.
 tags: ["textdraw"]

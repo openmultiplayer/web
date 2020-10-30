@@ -1,5 +1,4 @@
 ---
-id: StartRecordingPlayerData
 title: StartRecordingPlayerData
 description: Starts recording a player's movements to a file, which can then be reproduced by an NPC.
 tags: ["player"]

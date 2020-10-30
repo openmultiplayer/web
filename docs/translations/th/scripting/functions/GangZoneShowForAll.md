@@ -1,5 +1,4 @@
 ---
-id: GangZoneShowForAll
 title: GangZoneShowForAll
 description: Shows a gangzone with the desired color to all players.
 tags: ["gangzone"]

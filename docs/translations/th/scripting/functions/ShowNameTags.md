@@ -1,5 +1,4 @@
 ---
-id: ShowNameTags
 title: ShowNameTags
 description: Toggle the drawing of nametags, health bars and armor bars above players.
 tags: []

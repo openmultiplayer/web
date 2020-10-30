@@ -1,5 +1,4 @@
 ---
-id: SpawnPlayer
 title: SpawnPlayer
 description: (Re)Spawns a player.
 tags: ["player"]

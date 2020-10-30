@@ -1,5 +1,4 @@
 ---
-id: culoarefixata
 titlu: "Culoare Fixata"
 descriere: Un simplu script pentru a adauga mai multe culori la jucatori.
 ---

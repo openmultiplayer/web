@@ -1,5 +1,4 @@
 ---
-id: CreatePickup
 title: CreatePickup
 description: This function does exactly the same as AddStaticPickup, except it returns a pickup ID which can be used to destroy it afterwards and be tracked using OnPlayerPickUpPickup.
 tags: []

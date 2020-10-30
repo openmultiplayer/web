@@ -1,5 +1,4 @@
 ---
-id: AttachPlayerObjectToVehicle
 title: AttachPlayerObjectToVehicle
 description: Attach a player object to a vehicle.
 tags: ["player", "vehicle"]
@@ -54,11 +53,11 @@ You need to create the object before attempting to attach it to a vehicle.
 
 ## Related Functions
 
-- [CreatePlayerObject](CreateObject.md): Create an object for only one player.
-- [DestroyPlayerObject](DestroyObject.md): Destroy a player object.
-- [IsValidPlayerObject](IsValidObject.md): Checks if a certain player object is vaild.
-- [MovePlayerObject](MoveObject.md): Move a player object.
-- [StopPlayerObject](StopObject.md): Stop a player object from moving.
+- [CreatePlayerObject](CreatePlayerObject.md): Create an object for only one player.
+- [DestroyPlayerObject](DestroyPlayerObject.md): Destroy a player object.
+- [IsValidPlayerObject](IsValidPlayerObject.md): Checks if a certain player object is vaild.
+- [MovePlayerObject](MovePlayerObject.md): Move a player object.
+- [StopPlayerObject](StopPlayerObject.md): Stop a player object from moving.
 - [SetPlayerObjectRot](SetPlayerObjectRot.md): Set the rotation of a player object.
 - [GetPlayerObjectPos](GetPlayerObjectPos.md): Locate a player object.
 - [SetPlayerObjectPos](SetPlayerObjectPos.md): Set the position of a player object.

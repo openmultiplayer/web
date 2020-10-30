@@ -1,5 +1,4 @@
 ---
-id: db_debug_openresults
 title: db_debug_openresults
 description: .
 tags: []

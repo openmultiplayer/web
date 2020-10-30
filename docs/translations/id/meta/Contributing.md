@@ -11,7 +11,7 @@ Jika Anda ingin membantu mempertahankan wiki ini dalam Bahasa Indonesia, buka se
 
 Di setiap halaman, ada sebuah tombol yang mengarahkan Anda ke halaman GitHub untuk penyuntingan:
 
-![Link "Sunting halaman ini" ada di setiap halaman Wiki](/images/contributing/edit-this-page.png)
+![Link 'Sunting halaman ini' ada di setiap halaman Wiki](/images/contributing/edit-this-page.png)
 
 Sebagai contoh, klik di [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) akan mengarahkan Anda ke [halaman ini](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) yang di mana akan memunculkan sebuah _text editor_ untuk membuat perubahan ke file tersebut (asumsikan Anda sudah _login_ ke GitHub).
 
@@ -23,9 +23,9 @@ Menambah konten baru sedikit lebih rumit. Anda dapat melakukannya dengan dua car
 
 ### Antarmuka GitHub
 
-Ketika menjelajahi sebuah direktori di GitHub, ada sebuah tombol "Add file" terletak di sudut kanan atas daftar file (_file list_):
+Ketika menjelajahi sebuah direktori di GitHub, ada sebuah tombol Add file terletak di sudut kanan atas daftar file (_file list_):
 
-![Tombol "Add file"](/images/contributing/add-new-file.png)
+![Tombol Add file](/images/contributing/add-new-file.png)
 
 Anda bisa meng-_upload_ file Markdown yang sudah Anda tulis atau menulisnya langsung ke _text editor_ GitHub.
 

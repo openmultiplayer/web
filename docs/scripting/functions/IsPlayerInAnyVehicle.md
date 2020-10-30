@@ -1,5 +1,4 @@
 ---
-id: IsPlayerInAnyVehicle
 title: IsPlayerInAnyVehicle
 description: Check if a player is inside any vehicle (as a driver or passenger).
 tags: ["player", "vehicle"]

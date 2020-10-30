@@ -1,5 +1,4 @@
 ---
-id: IsValidActor
 title: IsValidActor
 description: Checks if an actor ID is valid.
 tags: []

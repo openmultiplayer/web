@@ -1,5 +1,4 @@
 ---
-id: ShowPlayerDialog
 title: ShowPlayerDialog
 description: Shows the player a synchronous (only one at a time) dialog box.
 tags: ["player"]

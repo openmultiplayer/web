@@ -1,5 +1,4 @@
 ---
-id: db_next_row
 title: db_next_row
 description: Moves to the next row of the result set allocated with `db_query`.
 keywords:

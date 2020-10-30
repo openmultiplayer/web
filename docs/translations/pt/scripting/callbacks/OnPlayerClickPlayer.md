@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickPlayer
 title: OnPlayerClickPlayer
 description: Chamado quando um jogador realiza um clique duplo em um jogador no placar.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: SetPlayerArmour
 title: SetPlayerArmour
 description: Set a player's armor level.
 tags: ["player"]

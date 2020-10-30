@@ -1,5 +1,4 @@
 ---
-id: GetVehicleHealth
 title: GetVehicleHealth
 description: Get the health of a vehicle.
 tags: ["vehicle"]
@@ -47,7 +46,7 @@ if (strcmp(cmdtext, "/repair", true) == 0)
 
 :::tip
 
-Full vehicle health is 1000, however higher values are possible and increase the health of the vehicle. For more information on health values, see here.
+Full vehicle health is 1000, however higher values are possible and increase the health of the vehicle. For more information on health values, see [here](../resources/vehiclehealth.md).
 
 :::
 

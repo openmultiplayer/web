@@ -1,5 +1,4 @@
 ---
-id: MoveObject
 title: MoveObject
 description: Move an object to a new position with a set speed.
 tags: []

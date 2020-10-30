@@ -1,5 +1,4 @@
 ---
-id: OnIncomingConnection
 title: OnIncomingConnection
 description: Callback นี้ถูกเรียกเมื่อมี IP พยายามเชื่อมต่อมายังเซิร์ฟเวอร์
 tags: []

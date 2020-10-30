@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamOut
 title: OnActorStreamOut
 description: Callback ini akan terpanggil ketika sebuah aktor keluar di jangkauan stream dari klien pemain.
 tags: []

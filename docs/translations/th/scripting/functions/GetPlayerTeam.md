@@ -1,5 +1,4 @@
 ---
-id: GetPlayerTeam
 title: GetPlayerTeam
 description: Get the ID of the team the player is on.
 tags: ["player"]

@@ -1,5 +1,4 @@
 ---
-id: GetSVarNameAtIndex
 title: GetSVarNameAtIndex
 description: Retrieve the name of a sVar via the index.
 tags: []

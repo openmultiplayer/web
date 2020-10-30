@@ -1,5 +1,4 @@
 ---
-id: mapicons
 title: Map Icons
 description: A list of Map Icons
 ---

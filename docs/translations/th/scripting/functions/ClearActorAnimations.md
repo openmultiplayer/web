@@ -1,5 +1,4 @@
 ---
-id: ClearActorAnimations
 title: ClearActorAnimations
 description: Clear any animations applied to an actor.
 tags: []

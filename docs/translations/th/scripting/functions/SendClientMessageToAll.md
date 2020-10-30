@@ -1,5 +1,4 @@
 ---
-id: SendClientMessageToAll
 title: SendClientMessageToAll
 description: Displays a message in chat to all players.
 tags: []

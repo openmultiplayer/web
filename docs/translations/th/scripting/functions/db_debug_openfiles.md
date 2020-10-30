@@ -1,5 +1,4 @@
 ---
-id: db_debug_openfiles
 title: db_debug_openfiles
 description: .
 tags: []

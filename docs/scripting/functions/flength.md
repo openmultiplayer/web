@@ -1,5 +1,4 @@
 ---
-id: flength
 title: flength
 description: Returns the length of a file.
 tags: []

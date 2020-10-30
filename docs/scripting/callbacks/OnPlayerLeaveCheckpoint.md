@@ -1,5 +1,4 @@
 ---
-id: OnPlayerLeaveCheckpoint
 title: OnPlayerLeaveCheckpoint
 description: This callback is called when a player leaves the checkpoint set for them by SetPlayerCheckpoint.
 tags: ["player", "checkpoint"]
@@ -29,11 +28,9 @@ public OnPlayerLeaveCheckpoint(playerid)
 
 ## Notes
 
-:::tip
+import T from '../../../src/components/templates.js'
 
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions
 

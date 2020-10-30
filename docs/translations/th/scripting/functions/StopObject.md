@@ -1,5 +1,4 @@
 ---
-id: StopObject
 title: StopObject
 description: Stop a moving object after MoveObject has been used.
 tags: []

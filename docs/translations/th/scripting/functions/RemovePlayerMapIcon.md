@@ -1,5 +1,4 @@
 ---
-id: RemovePlayerMapIcon
 title: RemovePlayerMapIcon
 description: Removes a map icon that was set earlier for a player using SetPlayerMapIcon.
 tags: ["player"]

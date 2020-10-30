@@ -1,5 +1,4 @@
 ---
-id: TextDrawSetSelectable
 title: TextDrawSetSelectable
 description: Sets whether a textdraw can be selected (clicked on) or not.
 tags: ["textdraw"]

@@ -1,5 +1,4 @@
 ---
-id: animations
 title: Animations
 description: A list of all Animations
 tags: []

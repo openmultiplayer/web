@@ -1,5 +1,4 @@
 ---
-id: MovePlayerObject
 title: MovePlayerObject
 description: Move a player object with a set speed.
 tags: ["player"]

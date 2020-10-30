@@ -1,5 +1,4 @@
 ---
-id: GetPlayerCameraUpVector
 title: GetPlayerCameraUpVector
 description: This function returns the vector, that points to the upside of the camera's view, or, in other words, to the middle top of your screen.
 tags: ["player"]

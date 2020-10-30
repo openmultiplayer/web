@@ -1,5 +1,4 @@
 ---
-id: NetStats_BytesReceived
 title: NetStats_BytesReceived
 description: Gets the amount of data (in bytes) that the server has received from the player.
 tags: []

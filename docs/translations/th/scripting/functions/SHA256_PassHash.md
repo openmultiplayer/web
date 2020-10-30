@@ -1,5 +1,4 @@
 ---
-id: SHA256_PassHash
 title: SHA256_PassHash
 description: Hashes a password using the SHA-256 hashing algorithm.
 tags: []

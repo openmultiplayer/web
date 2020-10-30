@@ -1,5 +1,4 @@
 ---
-id: selectobjecttypes
 title: Select Object Types
 ---
 

@@ -1,5 +1,4 @@
 ---
-id: uudecode
 title: uudecode
 description: Decode an UU-encoded string.
 tags: []

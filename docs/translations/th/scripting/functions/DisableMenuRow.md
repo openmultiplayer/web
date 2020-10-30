@@ -1,5 +1,4 @@
 ---
-id: DisableMenuRow
 title: DisableMenuRow
 description: Disable a specific row in a menu for all players.
 tags: ["menu"]

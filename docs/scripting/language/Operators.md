@@ -1,5 +1,4 @@
 ---
-id: Operators
 title: "Keywords: Operators"
 ---
 

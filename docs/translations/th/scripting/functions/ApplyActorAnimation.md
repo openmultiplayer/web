@@ -1,5 +1,4 @@
 ---
-id: ApplyActorAnimation
 title: ApplyActorAnimation
 description: Apply an animation to an actor.
 tags: []

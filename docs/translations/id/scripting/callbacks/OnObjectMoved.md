@@ -1,5 +1,4 @@
 ---
-id: OnObjectMoved
 title: OnObjectMoved
 description: Callback ini akan terpanggil ketika sebuah object berpindah setelah MoveObject (ketika selesai bergerak).
 tags: []

@@ -1,5 +1,4 @@
 ---
-id: OnVehicleStreamOut
 title: OnVehicleStreamOut
 description: This callback is called when a vehicle is streamed out for a player's client (it's so far away that they can't see it).
 tags: ["vehicle"]
@@ -36,10 +35,6 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 
 ## Notes
 
-:::tip
-
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions

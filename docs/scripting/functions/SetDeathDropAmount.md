@@ -1,5 +1,4 @@
 ---
-id: SetDeathDropAmount
 title: SetDeathDropAmount
 description: .
 tags: []

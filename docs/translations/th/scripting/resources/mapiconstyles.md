@@ -1,5 +1,4 @@
 ---
-id: mapiconstyles
 title: Map Icon Styles
 description: A list of Map Icons
 ---

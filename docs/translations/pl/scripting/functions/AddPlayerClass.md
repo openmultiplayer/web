@@ -1,5 +1,4 @@
 ---
-id: AddPlayerClass
 title: AddPlayerClass
 description: Dodaje klasę do wyboru klasy.
 tags: ["player"]

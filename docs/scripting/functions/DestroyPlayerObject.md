@@ -1,5 +1,4 @@
 ---
-id: DestroyPlayerObject
 title: DestroyPlayerObject
 description: Destroy a player-object created using CreatePlayerObject.
 tags: ["player"]

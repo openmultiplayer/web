@@ -1,5 +1,4 @@
 ---
-id: GetNetworkStats
 title: GetNetworkStats
 description: Gets the server's network stats and stores them in a string.
 tags: []

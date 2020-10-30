@@ -1,5 +1,4 @@
 ---
-id: db_get_field
 title: db_get_field
 description: Get the content of a field from db_query.
 keywords:

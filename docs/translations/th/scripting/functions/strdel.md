@@ -1,5 +1,4 @@
 ---
-id: strdel
 title: strdel
 description: Delete part of a string.
 tags: []

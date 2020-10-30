@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawSetSelectable
 title: PlayerTextDrawSetSelectable
 description: Toggles whether a player-textdraw can be selected or not.
 tags: ["player", "textdraw", "playertextdraw"]

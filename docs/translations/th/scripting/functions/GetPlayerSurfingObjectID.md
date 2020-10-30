@@ -1,5 +1,4 @@
 ---
-id: GetPlayerSurfingObjectID
 title: GetPlayerSurfingObjectID
 description: Returns the ID of the object the player is surfing on.
 tags: ["player"]

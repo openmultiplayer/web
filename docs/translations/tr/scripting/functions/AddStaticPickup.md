@@ -1,5 +1,4 @@
 ---
-id: AddStaticPickup
 title: AddStaticPickup
 description: Bu işlev oyuna "statik" bir toplama ekler.
 tags: []

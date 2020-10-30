@@ -1,5 +1,4 @@
 ---
-id: SetPlayerSpecialAction
 title: SetPlayerSpecialAction
 description: This function allows to set players special action.
 tags: ["player"]

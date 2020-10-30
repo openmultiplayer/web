@@ -1,5 +1,4 @@
 ---
-id: AddPlayerClassEx
 title: AddPlayerClassEx
 description: Ta funkcja jest dokładnie taka sama, jak funkcja AddPlayerClass, z wyjątkiem dodatkowego parametru na drużynę.
 tags: ["player"]

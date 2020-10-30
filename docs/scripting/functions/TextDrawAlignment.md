@@ -1,5 +1,4 @@
 ---
-id: TextDrawAlignment
 title: TextDrawAlignment
 description: Set the alignment of text in a text draw.
 tags: ["textdraw"]

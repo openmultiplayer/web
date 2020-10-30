@@ -1,5 +1,4 @@
 ---
-id: DestroyPickup
 title: DestroyPickup
 description: Destroys a pickup created with CreatePickup.
 tags: []

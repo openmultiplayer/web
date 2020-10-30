@@ -1,5 +1,4 @@
 ---
-id: SetCameraBehindPlayer
 title: SetCameraBehindPlayer
 description: Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.
 tags: ["player"]

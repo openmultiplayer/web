@@ -1,5 +1,4 @@
 ---
-id: GetPlayerSpecialAction
 title: GetPlayerSpecialAction
 description: Retrieves a player's current special action.
 tags: ["player"]

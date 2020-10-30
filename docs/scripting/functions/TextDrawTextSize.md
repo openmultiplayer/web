@@ -1,5 +1,4 @@
 ---
-id: TextDrawTextSize
 title: TextDrawTextSize
 description: Change the size of a textdraw (box if TextDrawUseBox is enabled and/or clickable area for use with TextDrawSetSelectable).
 tags: ["textdraw"]

@@ -1,5 +1,4 @@
 ---
-id: OnGameModeInit
 title: OnGameModeInit
 description: Callback นี้ถูกเรียกเมื่อเกมโหมดเริ่มต้นทำงาน
 tags: []

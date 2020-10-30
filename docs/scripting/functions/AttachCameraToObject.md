@@ -1,5 +1,4 @@
 ---
-id: AttachCameraToObject
 title: AttachCameraToObject
 description: You can use this function to attach the player camera to objects.
 tags: []
@@ -48,4 +47,4 @@ You need to create the object first, before attempting to attach a player camera
 
 ## Related Functions
 
-- [AttachCameraToPlayerObject](AttachCameraToPlayerObjecy.md): Attaches the player's camera to a player object.
+- [AttachCameraToPlayerObject](AttachCameraToPlayerObject.md): Attaches the player's camera to a player object.

@@ -1,5 +1,4 @@
 ---
-id: AddMenuItem
 title: AddMenuItem
 description: Dodaje element do konkretnego menu.
 Tags: ["menu"]

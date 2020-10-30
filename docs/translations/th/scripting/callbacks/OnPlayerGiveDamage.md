@@ -1,5 +1,4 @@
 ---
-id: OnPlayerGiveDamage
 title: OnPlayerGiveDamage
 description: This callback is called when a player gives damage to another player.
 tags: ["player"]

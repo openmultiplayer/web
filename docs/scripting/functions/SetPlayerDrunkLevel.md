@@ -1,5 +1,4 @@
 ---
-id: SetPlayerDrunkLevel
 title: SetPlayerDrunkLevel
 description: Sets the drunk level of a player which makes the player's camera sway and vehicles hard to control.
 tags: ["player"]
@@ -45,4 +44,4 @@ Players' drunk level will automatically decrease over time, based on their FPS (
 
 ## Related Functions
 
-- [GetPlayerDrunkLevel](../scripting/functions/GetPlayerDrunkLevel.md): Returns the current drunk level of a player.
+- [GetPlayerDrunkLevel](GetPlayerDrunkLevel.md): Returns the current drunk level of a player.

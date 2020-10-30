@@ -1,5 +1,4 @@
 ---
-id: SetPlayerObjectRot
 title: SetPlayerObjectRot
 description: Set the rotation of an object on the X, Y and Z axis.
 tags: ["player"]

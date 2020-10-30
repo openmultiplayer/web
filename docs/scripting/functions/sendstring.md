@@ -1,5 +1,4 @@
 ---
-id: sendstring
 title: sendstring
 description: .
 tags: []

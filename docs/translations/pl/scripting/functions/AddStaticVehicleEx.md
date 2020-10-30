@@ -1,11 +1,10 @@
 ---
-id: AddStaticVehicleEx
 title: AddStaticVehicleEx
 description: Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu.
 tags: ["vehicle"]
 ---
 
-## Description
+## Opis
 
 Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu. Różnica pomiędzy AddStaticVehicle polega na tym, że ta funkcja umożliwia ustawienie czasu respawnu pojazdu, gdy kierowca go porzuci.
 

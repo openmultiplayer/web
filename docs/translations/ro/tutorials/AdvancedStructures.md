@@ -1,5 +1,4 @@
 ---
-id: AdvancedStructures
 title: "Structuri avansate"
 ---
 

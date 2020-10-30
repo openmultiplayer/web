@@ -1,5 +1,4 @@
 ---
-id: SelectObject
 title: SelectObject
 description: Display the cursor and allow the player to select an object.
 tags: []

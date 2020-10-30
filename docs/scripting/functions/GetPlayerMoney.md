@@ -1,5 +1,4 @@
 ---
-id: GetPlayerMoney
 title: GetPlayerMoney
 description: Retrieves the amount of money a player has.
 tags: ["player"]

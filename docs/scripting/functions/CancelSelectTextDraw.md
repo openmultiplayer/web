@@ -1,5 +1,4 @@
 ---
-id: CancelSelectTextDraw
 title: CancelSelectTextDraw
 description: Cancel textdraw selection with the mouse.
 tags: ["textdraw"]

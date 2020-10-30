@@ -1,5 +1,4 @@
 ---
-id: SetVehiclePos
 title: SetVehiclePos
 description: Set a vehicle's position.
 tags: ["vehicle"]

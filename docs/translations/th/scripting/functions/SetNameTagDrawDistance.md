@@ -1,5 +1,4 @@
 ---
-id: SetNameTagDrawDistance
 title: SetNameTagDrawDistance
 description: Set the maximum distance to display the names of players.
 tags: []

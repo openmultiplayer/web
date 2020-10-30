@@ -1,5 +1,4 @@
 ---
-id: GetVehicleParamsEx
 title: GetVehicleParamsEx
 description: Gets a vehicle's parameters.
 tags: ["vehicle"]

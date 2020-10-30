@@ -1,5 +1,4 @@
 ---
-id: GetPlayerObjectRot
 title: GetPlayerObjectRot
 description: Use this function to get the object's current rotation.
 tags: ["player"]

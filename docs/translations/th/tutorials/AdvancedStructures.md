@@ -1,5 +1,4 @@
 ---
-id: AdvancedStructures
 title: "โครงสร้างขั้นสูง"
 ---
 

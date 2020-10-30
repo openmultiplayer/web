@@ -1,5 +1,4 @@
 ---
-id: GetPlayerKeys
 title: GetPlayerKeys
 description: Check which keys a player is pressing.
 tags: ["player"]

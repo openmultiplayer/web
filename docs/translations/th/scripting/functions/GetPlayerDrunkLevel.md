@@ -1,5 +1,4 @@
 ---
-id: GetPlayerDrunkLevel
 title: GetPlayerDrunkLevel
 description: Checks the player's level of drunkenness.
 tags: ["player"]

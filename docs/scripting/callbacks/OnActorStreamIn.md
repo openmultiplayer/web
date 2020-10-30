@@ -1,5 +1,4 @@
 ---
-id: OnActorStreamIn
 title: OnActorStreamIn
 description: This callback is called when an actor is streamed in by a player's client.
 tags: []
@@ -36,10 +35,6 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Notes
 
-:::tip
-
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions

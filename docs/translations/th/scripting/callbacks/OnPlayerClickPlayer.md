@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickPlayer
 title: OnPlayerClickPlayer
 description: Callback นี้ถูกเรียกเมื่อผู้เล่นดับเบิลคลิกบนผู้เล่นที่กระดานคะแนน
 tags: ["player"]

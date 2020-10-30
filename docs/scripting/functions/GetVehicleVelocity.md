@@ -1,5 +1,4 @@
 ---
-id: GetVehicleVelocity
 title: GetVehicleVelocity
 description: Get the velocity of a vehicle on the X, Y and Z axes.
 tags: ["vehicle"]

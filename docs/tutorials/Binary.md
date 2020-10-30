@@ -1,5 +1,4 @@
 ---
-id: Binary
 title: "Binary"
 description: An in depth look at binary and bitwise operators.
 ---

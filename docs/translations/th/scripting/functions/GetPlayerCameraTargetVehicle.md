@@ -1,5 +1,4 @@
 ---
-id: GetPlayerCameraTargetVehicle
 title: GetPlayerCameraTargetVehicle
 description: Get the ID of the vehicle the player is looking at.
 tags: ["player", "vehicle"]

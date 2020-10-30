@@ -1,5 +1,4 @@
 ---
-id: valstr
 title: valstr
 description: Convert an integer into a string.
 tags: []

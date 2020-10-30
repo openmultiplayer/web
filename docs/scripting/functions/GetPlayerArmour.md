@@ -1,5 +1,4 @@
 ---
-id: GetPlayerArmour
 title: GetPlayerArmour
 description: This function stores the armour of a player into a variable.
 tags: ["player"]

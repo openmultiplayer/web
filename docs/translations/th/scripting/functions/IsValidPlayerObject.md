@@ -1,5 +1,4 @@
 ---
-id: IsValidPlayerObject
 title: IsValidPlayerObject
 description: Checks if the given object ID is valid for the given player.
 tags: ["player"]

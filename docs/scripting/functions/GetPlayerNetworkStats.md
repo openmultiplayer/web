@@ -1,5 +1,4 @@
 ---
-id: GetPlayerNetworkStats
 title: GetPlayerNetworkStats
 description: Gets a player's network stats and saves them into a string.
 tags: ["player"]

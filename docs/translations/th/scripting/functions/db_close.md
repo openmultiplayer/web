@@ -1,5 +1,4 @@
 ---
-id: db_close
 title: db_close
 description: Closes an SQLite database that was opened with db_open.
 tags: [sqlite]

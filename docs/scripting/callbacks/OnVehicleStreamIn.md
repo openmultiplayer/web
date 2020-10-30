@@ -1,5 +1,4 @@
 ---
-id: OnVehicleStreamIn
 title: OnVehicleStreamIn
 description: Called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]
@@ -36,10 +35,6 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Notes
 
-:::tip
-
-This callback can also be called by NPC.
-
-:::
+<T.TipNPCCallbacks />
 
 ## Related Functions

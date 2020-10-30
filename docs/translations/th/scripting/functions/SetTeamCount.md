@@ -1,5 +1,4 @@
 ---
-id: SetTeamCount
 title: SetTeamCount
 description: This function is used to change the amount of teams used in the gamemode.
 tags: []

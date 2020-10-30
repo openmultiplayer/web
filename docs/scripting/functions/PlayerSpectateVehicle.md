@@ -1,5 +1,4 @@
 ---
-id: PlayerSpectateVehicle
 title: PlayerSpectateVehicle
 description: Sets a player to spectate another vehicle.
 tags: ["player", "vehicle"]

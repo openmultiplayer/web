@@ -1,5 +1,4 @@
 ---
-id: SetPlayerSkillLevel
 title: SetPlayerSkillLevel
 description: Set the skill level of a certain weapon type for a player.
 tags: ["player"]
@@ -49,4 +48,4 @@ The skill parameter is NOT the weapon ID, it is the skill type. Click here for a
 
 ## Related Information
 
-- [Weapon Skills](../resources/weaponskills#skill-levels.md): List of weapon skills that are used to set player's skill level.
+- [Weapon Skills](../resources/weaponskills#skill-levels): List of weapon skills that are used to set player's skill level.

@@ -1,5 +1,4 @@
 ---
-id: IsPlayerInRangeOfPoint
 title: IsPlayerInRangeOfPoint
 description: Checks if a player is in range of a point.
 tags: ["player"]

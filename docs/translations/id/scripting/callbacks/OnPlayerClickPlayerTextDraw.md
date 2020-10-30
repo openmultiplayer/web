@@ -1,5 +1,4 @@
 ---
-id: OnPlayerClickPlayerTextDraw
 title: OnPlayerClickPlayerTextDraw
 description: Callback ini terpanggil ketika pemain mengklik sebuah player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
@@ -75,8 +74,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Ketika player menekan ESC untuk membatalkan pemilihan textdraw, OnPlayerClickTextDraw akan dipanggil dengan ID textraw yang menjadi 'INVALID_TEXT_DRAW'.
-OnPlayerClickPlayerTextDraw tentu tidak akan terpanggil.
+Ketika player menekan ESC untuk membatalkan pemilihan textdraw, OnPlayerClickTextDraw akan dipanggil dengan ID textraw yang menjadi 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw tentu tidak akan terpanggil.
 
 :::
 

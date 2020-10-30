@@ -1,5 +1,4 @@
 ---
-id: ShowPlayerDialog
 title: ShowPlayerDialog
 description: Mostra um dialog (janela) asíncrono (um único por vez).
 tags: ["player"]

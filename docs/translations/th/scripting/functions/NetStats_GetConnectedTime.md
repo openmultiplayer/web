@@ -1,5 +1,4 @@
 ---
-id: NetStats_GetConnectedTime
 title: NetStats_GetConnectedTime
 description: Gets the amount of time (in milliseconds) that a player has been connected to the server for.
 tags: []

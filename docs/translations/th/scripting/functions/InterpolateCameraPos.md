@@ -1,5 +1,4 @@
 ---
-id: InterpolateCameraPos
 title: InterpolateCameraPos
 description: Move a player's camera from one position to another, within the set time.
 tags: []

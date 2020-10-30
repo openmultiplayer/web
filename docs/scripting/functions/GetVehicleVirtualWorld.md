@@ -1,5 +1,4 @@
 ---
-id: GetVehicleVirtualWorld
 title: GetVehicleVirtualWorld
 description: Get the virtual world of a vehicle.
 tags: ["vehicle"]

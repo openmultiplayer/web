@@ -1,5 +1,4 @@
 ---
-id: SetPlayerAttachedObject
 title: SetPlayerAttachedObject
 description: Attach an object to a specific bone on a player.
 tags: ["player"]

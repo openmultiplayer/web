@@ -1,5 +1,4 @@
 ---
-id: GetVehicleTrailer
 title: GetVehicleTrailer
 description: Get the ID of the trailer attached to a vehicle.
 tags: ["vehicle"]

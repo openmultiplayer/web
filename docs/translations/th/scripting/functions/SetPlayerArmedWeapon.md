@@ -1,5 +1,4 @@
 ---
-id: SetPlayerArmedWeapon
 title: SetPlayerArmedWeapon
 description: Sets which weapon (that a player already has) the player is holding.
 tags: ["player"]

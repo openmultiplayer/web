@@ -1,5 +1,4 @@
 ---
-id: AddSimpleModel
 title: AddSimpleModel
 description: İndirmek için yeni bir özel basit nesne modeli ekler.
 tags: []

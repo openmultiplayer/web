@@ -1,5 +1,4 @@
 ---
-id: GetActorHealth
 title: GetActorHealth
 description: Get the health of an actor.
 tags: []
@@ -44,3 +43,8 @@ public OnGameModeInit()
 ```
 
 ## Related Functions
+
+- [CreateActor](CreateActor): Create an actor (static NPC).
+- [SetActorHealth](SetActorHealth): Set the health of an actor.
+- [SetActorInvulnerable](SetActorInvulnerable): Set actor invulnerable.
+- [IsActorInvulnerable](IsActorInvulnerable): Check if actor is invulnerable.

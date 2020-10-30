@@ -1,5 +1,4 @@
 ---
-id: floatsqroot
 title: floatsqroot
 description: Calculates the square root of given value.
 tags: []

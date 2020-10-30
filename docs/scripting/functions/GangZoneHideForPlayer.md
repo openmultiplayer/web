@@ -1,5 +1,4 @@
 ---
-id: GangZoneHideForPlayer
 title: GangZoneHideForPlayer
 description: Hides a gangzone for a player.
 tags: ["player", "gangzone"]

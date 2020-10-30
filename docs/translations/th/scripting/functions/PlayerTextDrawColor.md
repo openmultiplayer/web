@@ -1,5 +1,4 @@
 ---
-id: PlayerTextDrawColor
 title: PlayerTextDrawColor
 description: Sets the text color of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]

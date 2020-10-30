@@ -1,5 +1,4 @@
 ---
-id: OnVehicleSirenStateChange
 title: OnVehicleSirenStateChange
 description: This callback is called when a vehicle's siren is toggled.
 tags: ["vehicle"]

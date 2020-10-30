@@ -1,5 +1,4 @@
 ---
-id: OnPlayerCommandText
 title: OnPlayerCommandText
 description: Callback ini akan terpanggil ketika pemain memasukkan perintah kedalam chat window klien.
 tags: ["player"]
