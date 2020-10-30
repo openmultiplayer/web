@@ -3,15 +3,15 @@ title: Welcome
 sidebar_label: Welcome
 ---
 
-Welcome to the SA:MP wiki, maintained by the open.mp team and wider SALMP community!
+Welcome to the SA:MP wiki, maintained by the open.mp team and wider SA:MP community!
 
 This site aims to provide an easily accessible, easy to contribute to documentation source for SA:MP and, eventually, open.mp.
 
-## The SA:MP Wiki is Gone
+## The SA:MP wiki is gone
 
-Unfortunately, the SA:MP Wiki was taken offline in late september. Luckily, most of the content is stored on the Internet Archive.
+Unfortunately, the SA:MP wiki was taken offline in late september - though most of its content can be found on the public internet archive.
 
-But we need the community's help to transfer the old wiki content to its new home, here!
+Alas, we need the community's help to transfer the old wiki's content to its new home, here!
 
 If you're interested, see this link for instructions on how to convert content: https://github.com/openmultiplayer/wiki/issues/27#issuecomment-699635305
 
