@@ -19,4 +19,4 @@ descripion: List of all client commands.
 | /audiomsg 		| Enables/Disables the message that prints when a url is streamed to a client. 																																																										  |
 | /fontsize 	    | Changes the font size of the UI (chat, dialogs etc.). Valid fontsize is -3 to 5. 																																																									  |
 | /ctd 				| This command was added in SA-MP 0.3.7 RC2. It enables client debugging of the player camera target. 																																																				  |
-| /rcon 			| More related to the server rather than the client. This command is used to execute RCON commands. RCON is the built-in admin system. RCON stands for [Remote Control](ControllingServer#using-rcon). 																												  |
+| /rcon 			| More related to the server rather than the client. This command is used to execute RCON commands. RCON is the built-in admin system. RCON stands for [Remote Control](../server/ControllingServer#using-rcon). 																												  |
