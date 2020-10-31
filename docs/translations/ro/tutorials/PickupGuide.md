@@ -20,12 +20,12 @@ Există două moduri de a crea pickup-uri. [CreatePickup](../scripting/functions
 
 ** Parametri: **
 
-| model        | Modelul pe care doriți să îl utilizați pentru preluare.                                                               |
-| ------------ | --------------------------------------------------------------------------------------------------------- |
-| type         | Tipul de reproducere a spawnului, consultați mai jos această pagină.                                                        |
-| Float:X      | Coordonata X pentru afișarea preluării.                                                                   |
-| Float:Y      | Coordonata Y pentru afișarea preluării.                                                                   |
-| Float:Z      | Coordonata Z pentru afișarea preluării.                                                                   |
+| model        | Modelul pe care doriți să îl utilizați pentru preluare.                                                       |
+| ------------ | ------------------------------------------------------------------------------------------------------------- |
+| type         | Tipul de reproducere a spawnului, consultați mai jos această pagină.                                          |
+| Float:X      | Coordonata X pentru afișarea preluării.                                                                       |
+| Float:Y      | Coordonata Y pentru afișarea preluării.                                                                       |
+| Float:Z      | Coordonata Z pentru afișarea preluării.                                                                       |
 | Virtualworld | ID-ul lumii virtuale a ridicării. O valoare -1 va determina ridicarea să se afișeze în toate lumile virtuale. |
 
 Pentru acest exemplu, vom crea o ridicare în numerar la Grove Street.
@@ -37,6 +37,7 @@ Acum trebuie să decidem cu privire la un model care să apară în lume, exist�
 Pickup-urile sunt create cel mai frecvent la pornirea scriptului, în [OnGameModeInit](../scripting/callbacks/OnGameModeInit) sau [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) în funcție de tipul de script, totuși acesta poate merge în orice funcție (de exemplu, puteți crea un script de scădere a armei care ar folosi OnPlayerDeath pentru a crea preluări de arme).
 
 Iată deci codul pentru a crea preluarea noastră și pentru a stoca ID-ul în „gMyPickup”:
+
 ```c
 gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 ```
@@ -47,7 +48,8 @@ Când ridicați un pickup, se apelează [OnPlayerPickUpPickup](../scripting/call
 
 Unele tipuri de pickup sunt proiectate să funcționeze automat, deci nu este nevoie să faceți nimic în OnPlayerPickUpPickup. Pentru mai multe informații, consultați pagina [tipuri de pickupuri](../scripting/resources/pickuptypes).
 
-Când un jucător ridică noul nostru pick-up, vrem să le dăm 100 $, pentru a face acest lucru mai întâi trebuie să verificăm dacă au ridicat pick-ul nostru în dolari și nu unul diferit. Când am făcut asta, le putem oferi cei 100 de dolari:
+Când un jucător ridică noul nostru pick-up, vrem să le dăm 100 \$, pentru a face acest lucru mai întâi trebuie să verificăm dacă au ridicat pick-ul nostru în dolari și nu unul diferit. Când am făcut asta, le putem oferi cei 100 de dolari:
+
 ```c
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
