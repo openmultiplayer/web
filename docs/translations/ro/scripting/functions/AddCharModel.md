@@ -4,7 +4,7 @@ description: Adaugă un nou model de caractere personalizat pentru descărcare.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
+import T from '../../../../../src/components/templates.js'
 
 <T.VersionWarn version='SA-MP 0.3.DL R1' />
 
