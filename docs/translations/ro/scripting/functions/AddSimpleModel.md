@@ -4,7 +4,7 @@ description: Adaugă un nou model de obiect simplu personalizat pentru descărca
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
+import T from '../../../../../src/components/templates.js'
 
 <T.VersionWarn version='SA-MP 0.3.DL R1' />
 
