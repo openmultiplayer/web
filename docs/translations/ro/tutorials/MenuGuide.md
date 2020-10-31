@@ -22,17 +22,16 @@ Bine, am creat variabila pentru a stoca meniul. Acum trebuie să creăm meniul �
 teleportmenu = CreateMenu("Teleportmenu", 2, 200.0, 100.0, 150.0, 150.0);
 ```
 
-Acum o explicație despre argumentele [CreateMenu](../scripting/functions/CreateMenu).
-**Parametrii:**
+Acum o explicație despre argumentele [CreateMenu](../scripting/functions/CreateMenu). **Parametrii:**
 
-| Parameter       | Specifies                                                        |
-| --------------- | ---------------------------------------------------------------- |
-| title           | Antetul meniului |
+| Parameter       | Specifies                                                                    |
+| --------------- | ---------------------------------------------------------------------------- |
+| title           | Antetul meniului                                                             |
 | columns         | Numărul de aici definește cât de multe coloane sunt utilizate (2 este maxim) |
-| Float:x         | Poziția înaltă a meniului pe ecran (de la stânga la dreapta) |
-| Float:y         | Poziția lățimii meniului pe ecran (sus și jos) |
-| Float:col1width | Lățimea primei coloane |
-| Float:col2width | Lățimea celei de-a doua coloane |
+| Float:x         | Poziția înaltă a meniului pe ecran (de la stânga la dreapta)                 |
+| Float:y         | Poziția lățimii meniului pe ecran (sus și jos)                               |
+| Float:col1width | Lățimea primei coloane                                                       |
+| Float:col2width | Lățimea celei de-a doua coloane                                              |
 
 ## Adăugați câteva elemente de meniu
 
@@ -57,9 +56,9 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 Explicația pentru [AddMenuItem](../scripting/functions/AddMenuItem):
 
 | menuid | Meniul din meniul în care va fi afișat elementul |
-| ------ | -------------------------------------------------------- |
-| column | Coloana în care va fi afișat elementul              |
-| text   | Textul articolului                                     |
+| ------ | ------------------------------------------------ |
+| column | Coloana în care va fi afișat elementul           |
+| text   | Textul articolului                               |
 
 ## Crearea efectelor pentru elemente
 
@@ -135,7 +134,6 @@ if(CurrentMenu == teleportmenu)
 ## Ultimii pași
 
 Acum avem nevoie de o comandă pentru a afișa meniul. Acesta este cel mai ușor pas. Doar o comparație cu `strcmp` și un `ShowMenuForPlayer`. Acest lucru se face în `OnPlayerCommandText`. Sau, dacă aveți deja un procesor de comandă, utilizați-l în schimb pentru a apela `ShowMenuForPlayer`.
-
 
 ```c
 if(strcmp(cmdtext, "/teleport", true) == 0)
