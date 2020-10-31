@@ -9,7 +9,7 @@ Se vuoi mantenere una specifica lingua apri una pull request ai [`CODEOWNERS`](h
 
 ## Modifica dei contenuti
 
-Su ogni pagina, c'è un bottone che porta alla pagina di Github per poterne modificare il contenuto:
+Su ogni pagina, vi è un bottone che porta alla pagina di GitHub per poterne modificare il contenuto:
 
 !["Modifica questa pagina" link presente su ogni pagina della wiki](/images/contributing/edit-this-page.png)
 
@@ -216,4 +216,4 @@ Se non hai tempo, non ti preoccupare! Inoltra una bozza non finita e qualcun'alt
 
 ## Contratto di licenza
 
-Tutti i progetti open.mp hanno un [contratto di licenza per collaboratori](https://cla-assistant.io/openmultiplayer/homepage). Questo in pratica significa solamente che accetti di lasciarci usare il tuo lavoro, e metterlo sotto licenza open-source. Quando si apre una Pull Request per la prima volta, il bot assistente CLA posterà un link dove puoi firmare il contratto.
+Tutti i progetti open.mp hanno un [Contratto di licenza per collaboratori][https://cla-assistant.io/openmultiplayer/homepage]. Questo in pratica significa solamente che accetti di lasciarci usare il tuo lavoro, e metterlo sotto licenza open-source. Quando si apre una Pull Request per la prima volta, il bot assistente CLA posterà un link dove puoi firmare il contratto.
