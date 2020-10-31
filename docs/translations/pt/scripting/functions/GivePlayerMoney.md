@@ -8,9 +8,9 @@ tags: ["player"]
 
 Dá ou tira dinheiro para/de um jogador.
 
-| Nome     | Descrição                                                             				          |
-| -------- | ------------------------------------------------------------------------ 				      |
-| playerid | O ID do jogador ao qual dá ou retira dinheiro.                         			          |
+| Nome     | Descrição                                                                              |
+| -------- | -------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador ao qual dá ou retira dinheiro.                                         |
 | money    | Quantidade de dinheiro a dar ao jogador. Use um valor negativo(-) para tirar dinheiro. |
 
 ## Retorno
