@@ -12,8 +12,8 @@ import T from '../../../src/components/templates.js'
 
 Obțineți valoarea inversată a unui cosinus arc în radiani.
 
-| Nume | Descriere |
-| ----------- | ------------------------ |
+| Nume         | Descriere                      |
+| ------------ | ------------------------------ |
 | Float: value | intrarea în cosinusul arcului. |
 
 ## Se intoarce

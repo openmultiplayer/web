@@ -8,19 +8,19 @@ tags: ["player"]
 
 Adaugă o clasă la selecția clasei. Clasele sunt folosite, astfel încât jucătorii să poată genera un skin la alegere.
 
-| Nume          | Descriere                                                   |
-| ------------- | ------------------------------------------------------------- |
-| modelid       | Skinul cu care jucătorul va fi generat. |
-| Float:spawn_x | Coordonata X a punctului de reproducere al acestei clase. |
-| Float:spawn_y | Coordonata Y a punctului de reproducere al acestei clase. |
-| Float:spawn_z | Coordonata Z a punctului de reproducere al acestei clase. |
+| Nume          | Descriere                                                            |
+| ------------- | -------------------------------------------------------------------- |
+| modelid       | Skinul cu care jucătorul va fi generat.                              |
+| Float:spawn_x | Coordonata X a punctului de reproducere al acestei clase.            |
+| Float:spawn_y | Coordonata Y a punctului de reproducere al acestei clase.            |
+| Float:spawn_z | Coordonata Z a punctului de reproducere al acestei clase.            |
 | Float:z_angle | Direcția în care jucătorul trebuie să se confrunte după reproducere. |
-| weapon1       | Prima armă de reproducere pentru jucător. |
-| weapon1_ammo  | Cantitatea de muniție pentru arma primară de reproducere. |
-| weapon2       | A doua armă de reproducere pentru jucător. |
-| weapon2_ammo  | Cantitatea de muniție pentru a doua armă de reproducere. |
-| weapon3       | A treia armă de reproducere pentru jucător. |
-| weapon3_ammo  | Cantitatea de muniție pentru a treia armă de reproducere. |
+| weapon1       | Prima armă de reproducere pentru jucător.                            |
+| weapon1_ammo  | Cantitatea de muniție pentru arma primară de reproducere.            |
+| weapon2       | A doua armă de reproducere pentru jucător.                           |
+| weapon2_ammo  | Cantitatea de muniție pentru a doua armă de reproducere.             |
+| weapon3       | A treia armă de reproducere pentru jucător.                          |
+| weapon3_ammo  | Cantitatea de muniție pentru a treia armă de reproducere.            |
 
 ## Se intoarce
 

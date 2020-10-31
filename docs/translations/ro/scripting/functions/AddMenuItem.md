@@ -8,11 +8,11 @@ tags: ["menu"]
 
 Adaugă un element la un meniu specificat.
 
-| Nume    | Descriere                      |
-| ------- | -------------------------------- |
+| Nume    | Descriere                                  |
+| ------- | ------------------------------------------ |
 | menuid  | ID-ul meniului pentru a adăuga un element. |
-| column  | Coloana la care se adaugă elementul. |
-| title[] | Titlul pentru noul element de meniu. |
+| column  | Coloana la care se adaugă elementul.       |
+| title[] | Titlul pentru noul element de meniu.       |
 
 ## Se intoarce
 

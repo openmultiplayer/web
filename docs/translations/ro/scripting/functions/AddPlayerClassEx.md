@@ -6,21 +6,7 @@ tags: ["player"]
 
 ## Descriere
 
-Această funcție este exact aceeași cu funcția AddPlayerClass, cu adăugarea unui parametru de echipă.
-| Nume          | Descriere                                                 |
-| ------------- | ----------------------------------------------------------- |
-| teamid        | Echipa în care doriți să apară jucătorul. |
-| modelid       | Pielea cu care jucătorul va genera. |
-| Float:spawn_x | Coordonata X a poziției de reproducere a clasei. |
-| Float:spawn_y | Coordonata Y a poziției de reproducere a clasei. |
-| Float:spawn_z | Coordonata Z a poziției de reproducere a clasei. |
-| Float:z_angle | Direcția în care se va confrunta jucătorul după reproducere. |
-| weapon1       | Prima armă de reproducere pentru jucător. |
-| weapon1_ammo  | Cantitatea de muniție pentru prima armă de reproducere. |
-| weapon2       | A doua armă de reproducere pentru jucător. |
-| weapon2_ammo  | Cantitatea de muniție pentru a doua armă de reproducere. |
-| weapon3       | A treia armă de reproducere pentru jucător. |
-| weapon3_ammo  | Cantitatea de muniție pentru a treia armă de reproducere. |
+Această funcție este exact aceeași cu funcția AddPlayerClass, cu adăugarea unui parametru de echipă. | Nume | Descriere | | ------------- | ----------------------------------------------------------- | | teamid | Echipa în care doriți să apară jucătorul. | | modelid | Pielea cu care jucătorul va genera. | | Float:spawn_x | Coordonata X a poziției de reproducere a clasei. | | Float:spawn_y | Coordonata Y a poziției de reproducere a clasei. | | Float:spawn_z | Coordonata Z a poziției de reproducere a clasei. | | Float:z_angle | Direcția în care se va confrunta jucătorul după reproducere. | | weapon1 | Prima armă de reproducere pentru jucător. | | weapon1_ammo | Cantitatea de muniție pentru prima armă de reproducere. | | weapon2 | A doua armă de reproducere pentru jucător. | | weapon2_ammo | Cantitatea de muniție pentru a doua armă de reproducere. | | weapon3 | A treia armă de reproducere pentru jucător. | | weapon3_ammo | Cantitatea de muniție pentru a treia armă de reproducere. |
 
 ## Se intoarce
 

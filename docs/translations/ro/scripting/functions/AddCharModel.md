@@ -12,12 +12,12 @@ import T from '../../../src/components/templates.js'
 
 Adaugă un nou model de caractere personalizat pentru descărcare. Fișierele model vor fi stocate în documentele playerului \ GTA San Andreas User Files \ SAMP \ cache sub folderul Server IP și Port într-un nume de fișier CRC.
 
-| Nume    | Descriere                                                                                                    |
-| ------- | -------------------------------------------------------------------------------------------------------------- |
+| Nume    | Descriere                                                                                                                                    |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | ID-ul modelului de bază de bază de utilizat (comportamentul caracterului și caracterul original de utilizat atunci când descărcarea eșuează) |
-| newid   | Noul ID al modelului skin a variat între 20000 și 30000 (10000 sloturi) pentru a fi utilizat ulterior cu SetPlayerSkin |
-| dffname | Numele fișierului de coliziune a modelului .dff situat în dosarul serverului de modele în mod implicit (setare artpath). |
-| txdname | Numele fișierului de textură model .txd situat în dosarul serverului modele în mod implicit (setare artpath). |
+| newid   | Noul ID al modelului skin a variat între 20000 și 30000 (10000 sloturi) pentru a fi utilizat ulterior cu SetPlayerSkin                       |
+| dffname | Numele fișierului de coliziune a modelului .dff situat în dosarul serverului de modele în mod implicit (setare artpath).                     |
+| txdname | Numele fișierului de textură model .txd situat în dosarul serverului modele în mod implicit (setare artpath).                                |
 
 ## Se intoarce
 

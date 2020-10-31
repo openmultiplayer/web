@@ -8,10 +8,10 @@ tags: ["vehicle"]
 
 Adaugă o 'componentă' (adesea denumită 'mod' (modificare)) unui vehicul. Componentele valide pot fi găsite aici.
 
-| Nume                                          | Descriere                                                                     |
-| --------------------------------------------- | ------------------------------------------------------------------------------- |
+| Nume                                          | Descriere                                                                        |
+| --------------------------------------------- | -------------------------------------------------------------------------------- |
 | vehicleid                                     | ID-ul vehiculului la care se adaugă componenta. Nu trebuie confundat cu modelid. |
-| [componentid](../resources/carcomponentid.md) | ID-ul componentei de adăugat la vehicul. |
+| [componentid](../resources/carcomponentid.md) | ID-ul componentei de adăugat la vehicul.                                         |
 
 ## Se intoarce
 
@@ -45,7 +45,6 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 ```
 
 ## Note
-
 
 :::warning
 
