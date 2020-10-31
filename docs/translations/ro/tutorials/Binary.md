@@ -193,6 +193,7 @@ Să aruncăm o privire asupra câtorva valori negative în timp ce această idee
 Vezi, toate numerele negative sunt pur și simplu numărul pozitiv inițial, cu toți biții săi răsturnați și crescuți cu unul. Acest lucru este foarte clar cu ultimul nostru exemplu, deoarece cel mai înalt număr POZITIV este 2147483647.
 
 Din aceasta putem vedea că intervalul numeric din pawn este de fapt:
+
 ```c
 &#8722;2^31 to +2^31 − 1
 ```

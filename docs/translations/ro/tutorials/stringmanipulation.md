@@ -17,8 +17,7 @@ Bună ziua tuturor, cu siguranță este o noapte liniștită drăguță sau cel 
 
 ### Declarație șir
 
-Așa cum am spus mai înainte, șirurile sunt practic matrici de caractere, deci sunt utilizate în același mod în care sunt matricele și, așa cum am crea o matrice, am face-o pentru șirurile care urmează acest format; `string_name [string_size]`.
-:::info
+Așa cum am spus mai înainte, șirurile sunt practic matrici de caractere, deci sunt utilizate în același mod în care sunt matricele și, așa cum am crea o matrice, am face-o pentru șirurile care urmează acest format; `string_name [string_size]`. :::info
 
 **string_name**: numele matricei de caractere (_de exemplu șir, str, mesaj, text ... etc., atâta timp cât este un nume de variabilă valid (începe cu un caracter sau un subliniat)_).
 
@@ -70,20 +69,20 @@ Teoretic, puteți crea tablouri oarecum ridicol de mari, dar SA-MP pune puține 
 
 SA-MP limitează caracterele care pot fi stocate într-un singur șir și împiedică scripterii să meargă peste bord cu lucrul cu textul, din fericire, nu este atât de rău pe cât ar părea, lista de mai jos descompune unele dintre aceste limite;
 
-|                     |                                                                                                                        |      |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---- |
-| **Text input**      | Textul introdus în chat.                                                                                        | 128  |
-| **Text output**     | Text care se afișează pe ecranul clientului. | 144  |
-| **Name**            | Pseudonimul jucătorului / numele de utilizator. | 24   |
-| **Textdraw string** | Destul de auto-explicativ. | 1024 |
+|                     |                                                                                                                           |      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---- |
+| **Text input**      | Textul introdus în chat.                                                                                                  | 128  |
+| **Text output**     | Text care se afișează pe ecranul clientului.                                                                              | 144  |
+| **Name**            | Pseudonimul jucătorului / numele de utilizator.                                                                           | 24   |
+| **Textdraw string** | Destul de auto-explicativ.                                                                                                | 1024 |
 | **Dialog info**     | Textul afișat pe toate casetele de dialog de tipul `DIALOG_STYLE_MSGBOX`,`DIALOG_STYLE_INPUT` și `DIALOG_STYLE_PASSWORD`. | 4096 |
-| **Dialog caption**  | Legenda / titlul din partea de sus a dialogului. | 64   |
-| **Dialog input**    | Caseta de introducere de pe „DIALOG_STYLE_INPUT” și „DIALOG_STYLE_PASSWORD”. | 128  |
-| **Dialog columnt**  | Caracterele din fiecare coloană din „DIALOG_STYLE_TABLIST_HEADER” și „DIALOG_STYLE_TABLIST”. | 128  |
-| **Dialog row**      | Caracterele din fiecare coloană din "DIALOG_STYLE_TABLIST_HEADER", "DIALOG_STYLE_TABLIST" și "DIALOG_STYLE_LIST". | 256  |
-| **Chat bubble**     | Balonul de chat care se afișează deasupra etichetei de nume a jucătorului. | 144  |
-| **Menu title**      | Antetul meniului nativ GTA San Andreas (cel mai utilizat pentru magazine_). | 31   |
-| **Menu item**       | Meniul nativ GTA San Andreas (_ cel mai utilizat pentru magazine_) element / rând. | 31   |
+| **Dialog caption**  | Legenda / titlul din partea de sus a dialogului.                                                                          | 64   |
+| **Dialog input**    | Caseta de introducere de pe „DIALOG_STYLE_INPUT” și „DIALOG_STYLE_PASSWORD”.                                              | 128  |
+| **Dialog columnt**  | Caracterele din fiecare coloană din „DIALOG_STYLE_TABLIST_HEADER” și „DIALOG_STYLE_TABLIST”.                              | 128  |
+| **Dialog row**      | Caracterele din fiecare coloană din "DIALOG_STYLE_TABLIST_HEADER", "DIALOG_STYLE_TABLIST" și "DIALOG_STYLE_LIST".         | 256  |
+| **Chat bubble**     | Balonul de chat care se afișează deasupra etichetei de nume a jucătorului.                                                | 144  |
+| **Menu title**      | Antetul meniului nativ GTA San Andreas (cel mai utilizat pentru magazine\_).                                              | 31   |
+| **Menu item**       | Meniul nativ GTA San Andreas (_ cel mai utilizat pentru magazine_) element / rând.                                        | 31   |
 
 Dacă cumva aceste limite au fost depășite, s-ar putea să apară puține inconveniente, acesta poate chiar să blocheze / înghețe serverul în unele cazuri (de exemplu, șiruri lungi de desen text), în alte cazuri, textul s-ar trunchia ca titlul meniului (_daca ajunge la 32 de caractere, se trunchiază la 30_) și articole.
 
@@ -119,7 +118,7 @@ message_3[5] = '\0';
 
 Acolo, am atribuit fiecărui slot din matricea `message_3` un caracter, acest lucru nu va funcționa dacă ar trebui să declarați un sting fără dimensiune definitivă, rețineți că pentru a reprezenta un singur caracter, ar trebui să fie scris între două ghilimele (""), de asemenea, observați cum am început cu slotul 0 și este firesc, având în vedere cum am subliniat modul în care un șir este o matrice de caractere, adică primul slot este întotdeauna 0, iar ultimul este dimensiunea sa minus 1 (_caracterul nul nu contează_), care în acest caz este 4, numărând de la 0 la 4, ceea ce îl face 5 caractere, al șaselea fiind terminatorul nul, mai multe despre asta vor veni mai târziu.
 
-De asemenea, puteți atribui numere de șiruri care vor fi vizualizate ca **ASCII** (_un sistem care reprezintă caracterele numeric, acoperă 128 de caractere cuprinse între 0 și 127, mai multe despre asta [aici](https://en.wikipedia.org/wiki/ASCII) _) cod pentru un caracter, același mesaj „_Bună ziua” poate fi atribuit folosind codul _ASCII_ astfel;
+De asemenea, puteți atribui numere de șiruri care vor fi vizualizate ca **ASCII** (_un sistem care reprezintă caracterele numeric, acoperă 128 de caractere cuprinse între 0 și 127, mai multe despre asta [aici](https://en.wikipedia.org/wiki/ASCII) _) cod pentru un caracter, același mesaj „_Bună ziua” poate fi atribuit folosind codul \_ASCII_ astfel;
 
 ```cpp
 new message_4[6];
@@ -155,8 +154,7 @@ message_6[1] = 'z' - '&'; // Which is 122 - 38, returns 84, the numeric represen
 message_6[2] = '0' + '1'; // Which is 48 + 49, returns the numeric representation of `a`, note that '0' and '1' are not the numbers 0 and 1, but rather characters
 ```
 
-Uneori ar putea deveni confuz dacă nu ați știut niciodată despre sistemul _ASCII_, este nevoie doar de o anumită practică, deoarece înțelegerea modului în care funcționează este foarte utilă.
-Codul _ASCII_ nu este exclusiv numai pentru numerele zecimale, puteți utiliza, de asemenea, numere hexazecimale sau binare în același mod.
+Uneori ar putea deveni confuz dacă nu ați știut niciodată despre sistemul _ASCII_, este nevoie doar de o anumită practică, deoarece înțelegerea modului în care funcționează este foarte utilă. Codul _ASCII_ nu este exclusiv numai pentru numerele zecimale, puteți utiliza, de asemenea, numere hexazecimale sau binare în același mod.
 
 ```cpp
 new numString[4];
@@ -313,7 +311,7 @@ Vom arunca o privire mai atentă asupra câtorva dintre ele, cele sunt mai des u
   strcat(str_dest,str_source);
   ```
 
-  Dacă ar fi să ieșim `str_dest`, va apărea ** Hello World **, cele două șiruri au fost adăugate una la cealaltă, iar rezultatul a fost stocat în` str_dest`, _`Hello` + `World` =` Hello World`_, observați cum am inclus acel spațiu în cel de-al doilea șir, da, spațiile sunt caracter în sine, conform tabelului _ASCII_, valoarea lor este` 32 `, dacă nu am adăuga spațiul, șirul rezultat ar fi fost **Salut Lume**.
+  Dacă ar fi să ieșim `str_dest`, va apărea ** Hello World **, cele două șiruri au fost adăugate una la cealaltă, iar rezultatul a fost stocat în` str_dest`, _`Hello` + `World` =` Hello World`_, observați cum am inclus acel spațiu în cel de-al doilea șir, da, spațiile sunt caracter în sine, conform tabelului _ASCII_, valoarea lor este`32`, dacă nu am adăuga spațiul, șirul rezultat ar fi fost **Salut Lume**.
 
 - Funcția `strval` va converti un șir într-un număr, de exemplu, următorul șir, ` `2017` `va fi convertit în numărul` 2017`, aceasta funcționează pe numere semnate și nesemnate, dacă șirul nu are caractere numerice , funcția va întoarce `0`, la fel se întâmplă dacă șirul are un caracter numeric, dar începe cu cele non-numerice, dacă un șir începe cu caractere numerice, dar include și caractere non-numerice, caracterele numerice vor fi totuși recuperate și convertite, iată câteva cazuri de utilizare;
 
@@ -342,6 +340,7 @@ format(output[], len, const format[], {Float, _}:...)
 ```
 
 Funcția de format ia ca parametri matricea de ieșire, dimensiunea sa (_numărul de celule_), șirul de formatare (_aceasta poate fi pre-stocată pe o altă matrice sau poate fi atribuită direct din interiorul funcției_) și, în final, câțiva parametri opționali, aceștia pot să fie variabile din diferite tipuri. Să folosim această funcție pentru a atribui o valoare unui șir gol.
+
 ```cpp
 new formatMsg[6];
 format(formatMsg, 6, "Hello");
@@ -370,7 +369,7 @@ new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), "Hello "#World);
 ```
 
-Codul de mai sus va introduce **Hello World**, această metodă de introducere a șirurilor este mai cunoscută a fi utilizată cu constante predefinite. Să aruncăm o privire la acest exemplu de utilizare a două constante diferite predefinite, una fiind un număr întreg `2017`, cealaltă fiind un șir``2018``.
+Codul de mai sus va introduce **Hello World**, această metodă de introducere a șirurilor este mai cunoscută a fi utilizată cu constante predefinite. Să aruncăm o privire la acest exemplu de utilizare a două constante diferite predefinite, una fiind un număr întreg `2017`, cealaltă fiind un șir`2018`.
 
 ```cpp
 #define THIS_YEAR 2018 // Thisconstant has an integer as its value
@@ -401,16 +400,17 @@ Ambele vor scoate aceeași propoziție, **Aceasta este realitatea ... sau este?!
 Acum, că am văzut câteva lucruri de bază despre declararea șirurilor, manipularea ... etc. unii dintre noi ar face salt la practică fără a respecta unele linii directoare generale urmate de comunitate, dacă doar mai multor oameni le-ar păsa de lizibilitate, optimizare și performanță, lumea ar fi fost un loc mai bun. un cod care se compilează bine, nu înseamnă că funcționează bine, majoritatea erorilor provin din acele lucruri mici pe care le-am trecut cu vederea sau le-am creat în așa fel încât să nu interacționeze prietenos cu alte sisteme. un cod bine scris va supraviețui calvarului timpului, cum? Puteți reveni oricând la acesta și depanați, remediați, revizuiți-l cu ușurință, optimizarea va reflecta și rezultatul asupra performanței, încercați întotdeauna să obțineți cele mai bune utilaje și codul optimizat este calea de urmat.
 
 Primul lucru care trebuie adus în discuție și care mă declanșează personal este să văd cum se creează șiruri mari atunci când nu sunt folosite aproape jumătate din celulele declarate, declară doar șirurile de dimensiunea pe care o vei folosi, celulele suplimentare vor fi doar sarcini mai multă memorie, să aruncăm o privire la un mod presupus neoptimizat de a declara un șir.
+
 ```cpp
 new badString[100];
 badString ="Hello :)";
 ```
 
-Am declarat un șir cu _100 celule_, _1 celulă_ ocupă _4 octeți_, hai să facem câteva matematici de bază, _100 \ * 4 = 400_ octeți, adică aproximativ 0,0004 megabyte_, nimic pentru standardele de astăzi știu, dar se presupune că pe un script imens , evident, va trebui să utilizați mai multe șiruri, _60_, _70_, naiba _100_ mai multe șiruri? (_posibil mai mult_), acele numere minuscule se vor aduna unul pe celălalt rezultând un număr mult mai mare și vă vor provoca probleme serioase mai târziu și credeți-mă când vă spun că șirul pe care l-am declarat nu se apropie la fel de prost în comparație cu cei care au o dimensiune de cinci ori mai mare sau mai mare.
+Am declarat un șir cu _100 celule_, _1 celulă_ ocupă _4 octeți_, hai să facem câteva matematici de bază, _100 \ \* 4 = 400_ octeți, adică aproximativ 0,0004 megabyte*, nimic pentru standardele de astăzi știu, dar se presupune că pe un script imens , evident, va trebui să utilizați mai multe șiruri, \_60*, _70_, naiba _100_ mai multe șiruri? (_posibil mai mult_), acele numere minuscule se vor aduna unul pe celălalt rezultând un număr mult mai mare și vă vor provoca probleme serioase mai târziu și credeți-mă când vă spun că șirul pe care l-am declarat nu se apropie la fel de prost în comparație cu cei care au o dimensiune de cinci ori mai mare sau mai mare.
 
 Ceea ce am întâlnit mai mult, ceva care este stereotip tip vag, este utilizarea misterioasă dimensiune a șirului -256-, tocmai de ce oamenii? De ce?
 
-Rețineți limitele pe care le pune SA-MP atunci când se ocupă de șiruri, unde intră în joc șirul _256-lung_? Ce ai de gând să faci cu un șir atât de lung (_exceptând formatarea unui dialog / șir de desen text_)? Intrarea maximă a șirului are o lungime de _128_ caractere, adică jumătate din dimensiune, \_512 octeți_ tocmai s-au pierdut, spuneți ce? Ați intenționat să-l utilizați pentru ieșire, nu pentru intrare? Este încă mult prea mare, șirurile de ieșire nu trebuie să treacă _144_ caractere, vedeți unde mă duc? Să încercăm să vedem cum ne-am corecta greșeala, avem această propoziție, `Șir bun`, conține _11_ caractere (_spaiul este numărat și ca caracter_) + _1_ pentru terminatorul nul (_trebuie să am întotdeauna acest tip în mind_), ceea ce îl face _12_ caractere în total.
+Rețineți limitele pe care le pune SA-MP atunci când se ocupă de șiruri, unde intră în joc șirul _256-lung_? Ce ai de gând să faci cu un șir atât de lung (_exceptând formatarea unui dialog / șir de desen text_)? Intrarea maximă a șirului are o lungime de _128_ caractere, adică jumătate din dimensiune, \_512 octeți* tocmai s-au pierdut, spuneți ce? Ați intenționat să-l utilizați pentru ieșire, nu pentru intrare? Este încă mult prea mare, șirurile de ieșire nu trebuie să treacă \_144* caractere, vedeți unde mă duc? Să încercăm să vedem cum ne-am corecta greșeala, avem această propoziție, `Șir bun`, conține _11_ caractere (_spaiul este numărat și ca caracter_) + _1_ pentru terminatorul nul (_trebuie să am întotdeauna acest tip în mind_), ceea ce îl face _12_ caractere în total.
 
 ```cpp
 new goodString[12];
@@ -671,8 +671,7 @@ Rețineți că atribuirea tuturor biților la aceeași valoare va avea ca rezult
 
 :::tip
 
-Este posibil să formatați texte cu multicolor simultan, dar pentru aceasta, încorporăm notația **RGB** mai simplă.
-:::
+Este posibil să formatați texte cu multicolor simultan, dar pentru aceasta, încorporăm notația **RGB** mai simplă. :::
 
 ##### RGB
 
@@ -689,7 +688,6 @@ Aceasta va trimite următorul mesaj tuturor (_și nu sunt italian_):
 Rețineți că notația hexazecimală nu face distincția între majuscule și minuscule, așa că tastarea `0xFFC0E1FF` este la fel ca tastarea` 0xfFC0e1Ff`, același lucru este valabil și pentru culorile încorporate, `{401C15}` este la fel ca `{401c15}`.
 
 Uneori, lucrul cu culori se poate dovedi a fi destul de greu, nu este atât de ușor să te plimbi amintindu-ți toate acele numere hexazecimale lungi, ca nici o afacere mare. poți folosi, poți pur și simplu să folosești Google `_color picker_` și să alegi între mii dintre ele, lasă-mă să fac asta dacă nu te deranjează, [iată un instrument simplu](https://www.webpagefx.com/web-design/color-picker/) pe care vă recomand să îl folosiți atunci când lucrați cu culori.
-
 
 Una dintre problemele pe care oamenii le găsesc este gestionarea fluxului lor de lucru, care, dacă este făcut corect, facilitează ritmul de lucru și face mai puțin dureros să lucrezi în jurul proiectelor tale, în timp ce instrumentele de selectare a culorilor sunt de mare ajutor, poți totuși să pierzi multe de timp care trece și se oprește de fiecare dată când trebuie să alegeți o culoare, frustrarea poate fi la fel de enervantă ca o pizza cu ananas, din fericire, puteți profita de constante predefinite și puteți defini cele mai utilizate culori pentru o utilizare ulterioară , iată un exemplu simplu;
 
@@ -715,7 +713,7 @@ SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
 ```
 
-La momentul compilării, toate constantele predefinite vor fi înlocuite cu valorile lor și, astfel, acest `COL_RED` sunt un text roșu` devine acest `{FF0000}` Sunt un text roșu `, observați cum am folosit două metoda pentru a predefini acele culori, `RRGGBB` și `{RRGGBB}`, intră în preferința personală, care metodă trebuie să treacă, personal, consider că definirea lor ca `RRGGBB` este foarte clar, deoarece sunt prezente utilizările parantezelor crețate, și astfel se face remarcabil faptul că încorporăm o culoare.
+La momentul compilării, toate constantele predefinite vor fi înlocuite cu valorile lor și, astfel, acest `COL_RED` sunt un text roșu`devine acest`{FF0000}`Sunt un text roșu`, observați cum am folosit două metoda pentru a predefini acele culori, `RRGGBB` și `{RRGGBB}`, intră în preferința personală, care metodă trebuie să treacă, personal, consider că definirea lor ca `RRGGBB` este foarte clar, deoarece sunt prezente utilizările parantezelor crețate, și astfel se face remarcabil faptul că încorporăm o culoare.
 
 Aceasta a fost abordarea generală a încorporării culorilor cu șiruri de dialog și mesaje client, este posibil să se utilizeze culori în text în mesajele clientului, dialoguri, etichete text 3D, texte materiale obiecte și plăcuțe de înmatriculare ale vehiculului, dar hei, SA-MP are și texdraws și funcționalități de jocuri, totuși acestea nu acceptă notația RGB și, prin urmare, adăugarea culorilor se face diferit.
 
@@ -737,14 +735,14 @@ Deci, culorile de încorporare pot merge astfel: **\~w\~ Bună ziua acesta este 
 
 Puteți utiliza o altă combinație de caractere pentru a vă juca cu combinații de culori, **\~h\~**, face o anumită culoare mai deschisă, iată câteva exemple:
 
-|                                |                |
-| ------------------------------ | -------------- |
+|                                |                  |
+| ------------------------------ | ---------------- |
 | \~r\~\~h\~                     | Roșu mai deschis |
-| \~r\~\~h\~\~h\~                | Roșu roz |
-| \~r\~\~h\~\~h~\~h\~            | Roșu-închis |
+| \~r\~\~h\~\~h\~                | Roșu roz         |
+| \~r\~\~h\~\~h~\~h\~            | Roșu-închis      |
 | \~r\~\~h\~~h~~h~~h\~           | Roz roșu deschis |
-| \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Roz |
-| \~g\~\~h\~                     | Verde deschis |
+| \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Roz              |
+| \~g\~\~h\~                     | Verde deschis    |
 
 Puteți găsi mai multe informații despre acest lucru [aici](../scripting/resources/colorslist).
 
@@ -758,20 +756,20 @@ Caracterul de evadare este un caracter în care, atunci când este prefixat la u
 
 Secvențele de evacuare facilitează exprimarea anumitor caractere în codul sursă al scriptului dvs., iată un tabel care conține secvențele de evadare utilizate în pawn:
 
-|                                              |              |
-| -------------------------------------------- | ------------ |
-| Bip sonor (pe mașini server) | `\a` or `\7` |
-| Backspace | `\b`         |
-| Evadare | `\e`         |
-| Formular de alimentare | `\f`         |
-| Linie nouă | `\n`         |
-| Retur transport | `\r`         |
-| Filă orizontală | `\t`         |
-| Fila verticală | `\v`         |
-| Backslash | `\\`         |
-| Citat unic | `\'`         |
-| Citat dublu | `\"`         |
-| Cod de caractere cu valori zecimale "ddd" | `\ddd;`      |
+|                                               |              |
+| --------------------------------------------- | ------------ |
+| Bip sonor (pe mașini server)                  | `\a` or `\7` |
+| Backspace                                     | `\b`         |
+| Evadare                                       | `\e`         |
+| Formular de alimentare                        | `\f`         |
+| Linie nouă                                    | `\n`         |
+| Retur transport                               | `\r`         |
+| Filă orizontală                               | `\t`         |
+| Fila verticală                                | `\v`         |
+| Backslash                                     | `\\`         |
+| Citat unic                                    | `\'`         |
+| Citat dublu                                   | `\"`         |
+| Cod de caractere cu valori zecimale "ddd"     | `\ddd;`      |
 | Cod de caractere cu valori hexazecimale "hhh" | `\xhhh;`     |
 
 Să ne uităm la fiecare dintre ei, la urma urmei, cel mai bun mod de a învăța acest gen de lucruri stă în practicarea lor.
@@ -803,7 +801,6 @@ print("Hello 2018");
 ```
 
 Aceasta va imprima ** Hello 2018 ** în consolă, cursorul rămâne pe poziția caracterului nul, mai clar, astfel:
-
 
 ```
 Hello 2018
@@ -1023,9 +1020,7 @@ print("Single quote \'");
 
 Oricum ar fi, ieșirea va fi aceeași:
 
-""
-Citat unic: '
-""
+"" Citat unic: ' ""
 
 Singura utilizare la care mă pot gândi în legătură cu acest lucru este setarea unei variabile a caracterului `** '**`, așa că, evident, dacă faceți următoarele, veți provoca o eroare de compilare;
 
@@ -1101,7 +1096,7 @@ Puteți găsi toate aceste valori prin simpla căutare în `**Tabel ASCII**`, ia
 
 #### Caracter de evadare personalizat
 
-Dacă ați observat, am continuat să apelez repetând `**caracterul de evadare**` de mai multe ori pe parcursul ultimei secțiuni, unde aș fi putut să-l menționez pur și simplu ca `**bară inversă**`, sau chiar scurtcircuitat, (`\`), motivul este că caracterul de evadare nu este un caracter absolut absolut, ci mai degrabă poate fi schimbat de preferință, îl puteți avea ca _@, ^, \ $_ și așa mai departe, în mod implicit este o bară inversă , dar modul în care rămâne este determinat doar de dvs.
+Dacă ați observat, am continuat să apelez repetând `**caracterul de evadare**` de mai multe ori pe parcursul ultimei secțiuni, unde aș fi putut să-l menționez pur și simplu ca `**bară inversă**`, sau chiar scurtcircuitat, (`\`), motivul este că caracterul de evadare nu este un caracter absolut absolut, ci mai degrabă poate fi schimbat de preferință, îl puteți avea ca _@, ^, \ \$_ și așa mai departe, în mod implicit este o bară inversă , dar modul în care rămâne este determinat doar de dvs.
 
 n pentru a o schimba, folosim directiva pre-procesor `pragma`, această directivă specială acceptă parametri diferiți, pentru fiecare sarcină specifică a acestora, și există unul care răspunde de setarea caracterului de evacuare pe care ne vom concentra, este `ctrlchar`.
 
@@ -1129,22 +1124,22 @@ Cu toate acestea, nu poți schimba acest lucru în (`-`), dar orice altceva este
 
 Această porțiune de aici nu are absolut nimic de-a face cu secvențele de evadare, dar este utilizată la formatarea textelor și a gametextului, este mai bine să o puneți aici decât oriunde altundeva;
 
-|       |                                                                                                               |
-| ----- | ------------------------------------------------------------------------------------------------------------- |
-| `~u~` | Săgeată sus (gri) |
-| `~d~` | Săgeată în jos (gri) |
-| `~<~` | Săgeată la stânga (gri) |
-| `~>~` | Săgeată dreapta (gri) |
-| `]`   | Afișează simbolul `*` (numai în stilul text 3, 4 și 5) |
+|       |                                                                                                                               |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `~u~` | Săgeată sus (gri)                                                                                                             |
+| `~d~` | Săgeată în jos (gri)                                                                                                          |
+| `~<~` | Săgeată la stânga (gri)                                                                                                       |
+| `~>~` | Săgeată dreapta (gri)                                                                                                         |
+| `]`   | Afișează simbolul `*` (numai în stilul text 3, 4 și 5)                                                                        |
 | `~k~` | maparea tastelor tastaturii (de ex. `~ k ~~ VEHICLE_TURRETLEFT ~` și `~ k ~~ PED_FIREWEAPON ~`). Căutați aici o listă de chei |
 
 maparea tastelor tastaturii (de ex. `~ k ~~ VEHICLE_TURRETLEFT ~` și `~ k ~~ PED_FIREWEAPON ~`). Căutați aici o listă de chei
+
 ### Specificator format
 
 #### Descriere
 
 Substituentii sau specificatorii sunt caractere scăpate de un semn procentual (`%`), indică poziția relativă și tipul de ieșire al anumitor parametri, servesc după cum sugerează și numele lor `_Prezentatori_`, salvează un loc pentru date care le vor înlocui ulterior în interiorul șirului, există diferite tipuri de specificatori și chiar urmează o formulă specifică;
-
 
 ```
 %[flags][width][.precision]type
@@ -1156,17 +1151,17 @@ Substituentii sunt folosiți numai pentru funcțiile care acceptă parametri, as
 
 Let us look at the different output types that can be used:
 
-| **Specificator** | **Inteles**                                     |
-| ------------- | ----------------------------------------------- |
-| `%i`          | Întreg (_număr întreg_) |
-| `%d`          | Întreg (_număr întreg_) |
-| `%s`          | Şir |
-| `%f`          | Număr în virgulă mobilă (`Float: tag`) |
-| `%c`          | Caracter ASCII |
-| `%x`          | Număr hexazecimal |
-| `%b`          | Număr binar |
-| `%%`          | Literal `'%'` |
-| `%q`          | Scăpați un text pentru SQLite. (_Adăugat în 0.3.7 R2_) |
+| **Specificator** | **Inteles**                                            |
+| ---------------- | ------------------------------------------------------ |
+| `%i`             | Întreg (_număr întreg_)                                |
+| `%d`             | Întreg (_număr întreg_)                                |
+| `%s`             | Şir                                                    |
+| `%f`             | Număr în virgulă mobilă (`Float: tag`)                 |
+| `%c`             | Caracter ASCII                                         |
+| `%x`             | Număr hexazecimal                                      |
+| `%b`             | Număr binar                                            |
+| `%%`             | Literal `'%'`                                          |
+| `%q`             | Scăpați un text pentru SQLite. (_Adăugat în 0.3.7 R2_) |
 
 - ** Specificatorii întregi - `%i` și `%d` **
 
@@ -1426,6 +1421,7 @@ Desigur, acest lucru se referă doar la funcții care acceptă formatarea, cum a
 Acesta nu are o mare importanță în subiectul nostru principal, este folosit pe scară largă pentru a scăpa de șirurile sensibile atunci când lucrați cu _SQLite_ și credeți-mă, nimeni nu vrea să cadă sub cazul [tabelului lui Bobby](http://bobby-tables.com/about).
 
 Când am introdus substituenții, facem referire la o formulă specifică care îi privește, ca un memento, iată-l;
+
 ```
 %[flags][width][.precision]type
 ```
@@ -1451,6 +1447,7 @@ printf("%3d", 5);
 ```
 
 Am instruit specificatorul să blocheze ieșirea la 3 caractere sau mai mult, la început, ieșirea numărului de 4 și 3 caractere a mers bine, dar caracterele mai scurte de 3 caractere au rămas căptușite cu spații, chiar și la lățimea de ieșire. Există, de asemenea, posibilitatea de a avea valori dinamice ale lățimii, pentru aceasta, folosim semnul asterisc (`*`).
+
 ```cpp
 printf("%*d", 5, 55);
 ```
@@ -1464,6 +1461,7 @@ Mai întâi, trecem valoarea lățimii care a fost `5`, apoi valoarea pe care do
 - ** Câmpul steaguri **
 
 Acesta funcționează foarte bine cu câmpul de lățime, deoarece lățimea specifică caracterele minime pentru ieșiri, acesta tamponează golul lăsat în urmă cu orice îi spuneți. În cazul în care au rămas spații în urmă, nu va exista niciun tampon.
+
 ```cpp
 printf("%3d", 55);
 printf("%5x", 15);
@@ -1604,7 +1602,6 @@ Din nou, am folosit doar funcția `gettime` pentru a stoca respectivele ore, min
 
 **Exemplul 3**: _Mesajul moarte - Afișarea unui mesaj când un jucător moare, având numele jucătorilor colorate în culorile lor_:
 
-
 ```cpp
 public OnPlayerDeath(playerid, killerid, reason)
 {
@@ -1631,7 +1628,7 @@ Având în vedere următoarea listă de jucători conectați:
 | 6      | <span style={{color: 'blue'}}>Bartolomew</span> |
 | 11     | <span style={{color: 'grey'}}>unban_pls</span>  |
 
-Spuneți, `playerid` `0` a ucis `playerid`  `6` , mesajele formatate ar trebui să scrie `** {FF0000} Compton {000000} ucis> {0000FF} Bartolomew ** `, care va trimite următorul mesaj client tuturor pe server:
+Spuneți, `playerid` `0` a ucis `playerid` `6` , mesajele formatate ar trebui să scrie `** {FF0000} Compton {000000} ucis> {0000FF} Bartolomew ** `, care va trimite următorul mesaj client tuturor pe server:
 
 > <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>killed</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
 
