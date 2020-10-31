@@ -8,9 +8,9 @@ tags: ["player"]
 
 Retorna a quantidade de dinheiro que um jogador possui.
 
-| Nome     | Descrição                                 		        |
-| -------- | ----------------------------------------- 		        |
-| playerid | O ID do jogador que se deseja verificar o dinheiro.  |
+| Nome     | Descrição                                           |
+| -------- | --------------------------------------------------- |
+| playerid | O ID do jogador que se deseja verificar o dinheiro. |
 
 ## Retorno
 
