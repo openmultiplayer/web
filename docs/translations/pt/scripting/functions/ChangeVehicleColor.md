@@ -1,18 +1,18 @@
 ---
 title: ChangeVehicleColor
-description: Altere a cor primária e secundária de um veículo. 
+description: Altere a cor primária e secundária de um veículo.
 tags: ["vehicle"]
 ---
 
 ## Descrição
 
-Altere a cor primária e secundária de um veículo. 
+Altere a cor primária e secundária de um veículo.
 
-| Nome      | Descrição                                      |
-| --------- | ---------------------------------------------- |
-| vehicleid | O ID do veículo cujas cores serão alteradas.   |
-| color1    | O ID da nova cor primária do veículo.          |
-| color2    | O ID da nova cor secundária do veículo.        |
+| Nome      | Descrição                                    |
+| --------- | -------------------------------------------- |
+| vehicleid | O ID do veículo cujas cores serão alteradas. |
+| color1    | O ID da nova cor primária do veículo.        |
+| color2    | O ID da nova cor secundária do veículo.      |
 
 ## Retorno
 
