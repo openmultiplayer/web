@@ -4,9 +4,7 @@ description: Define a saúde de um ator.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões anteriores.
 
 ## Descrição
 
@@ -21,7 +19,7 @@ Define a saúde de um ator.
 
 1 - Sucesso
 
-0 - Falha (por exemplo, ator não está criado).
+0 - Falha (por exemplo, o ator não está criado).
 
 ## Exemplos
 

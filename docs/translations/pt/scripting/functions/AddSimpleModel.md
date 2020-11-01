@@ -4,15 +4,13 @@ description: Adiciona um novo objecto persona - Adds a new custom simple object 
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.DL R1' />
+Esta função foi implementada no SA-MP 0.3.DL-R1 e não funcionará em versões anteriores.
 
 ## Descrição
 
 Adds a new custom simple object model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
 
-| Name         | Descrição                                                                                                                 |
+| Nome         | Descrição                                                                                                                 |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | virtualworld | The virtual world ID to make the model available at. Use -1 for all worlds.                                                 |
 | baseid       | The base object model ID to use (original object to use when download is failed).                                           |
@@ -60,3 +58,6 @@ There are currently no restrictions on when you can call this function, but be a
 
 
 Called when a player finishes downloading custom models.
+
+
+Adiciona um novo modelo de personagem personalizado para download. Os arquivos do modelo são armazenados em Documentos\GTA San Andreas User Files\SAMP\cache do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato CRC.

@@ -4,9 +4,7 @@ description: Define a posição de um ator.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões anteriores.
 
 ## Descrição
 
@@ -44,7 +42,7 @@ SetActorPos(gMyActor, 1.0, 2.0, 3.0);
 
 :::tip
 
-Ao criar um ator com CreateActor, você especifica a sua posição. Você não precisa usar esta função, a menos que queira alterar a posição depois.
+Ao criar um ator com CreateActor, você específica a sua posição. Você não precisa usar esta função, a menos que queira alterar a posição depois.
 
 :::
 

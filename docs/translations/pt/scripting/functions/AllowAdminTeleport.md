@@ -1,13 +1,14 @@
 ---
 id: AllowAdminTeleport
 title: AllowAdminTeleport
-description: Esta função vai determinar se Administradores RCON vão ser teleportados para a marcação quando definirem um. This function will determine whether RCON admins will be teleported to their waypoint when they set one.
+description: Esta função vai determinar se Administradores RCON vão ser teleportados para a marcação quando definirem um. 
+This function will determine whether RCON admins will be teleported to their waypoint when they set one.
 tags: []
 ---
 
 :::warning
 
-Esta função, a partir da 0.3d está obsoleta. Por favor veja [OnPlayerClickMap](../callbacks/OnPlayerClickMap.md).
+Esta função, a partir da 0.3d está descontinuada. Por favor veja [OnPlayerClickMap](../callbacks/OnPlayerClickMap.md).
 
 :::
 

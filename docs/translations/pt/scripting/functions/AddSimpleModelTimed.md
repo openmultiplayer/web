@@ -4,15 +4,13 @@ description: Adds a new custom simple object model for download.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
+Esta função foi implementada no SA-MP 0.3.DL-R1 e não funcionará em versões anteriores.
 
-<T.VersionWarn version='SA-MP 0.3.DL R1' />
-
-## Description
+## Descrição
 
 Adds a new custom simple object model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
 
-| Name         | Description                                                                                                                 |
+| Name         | Descrição                                                                                                                   |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | virtualworld | The virtual world ID to make the model available at. Use -1 for all worlds.                                                 |
 | baseid       | The base object model ID to use (original object to use when download is failed).                                           |
