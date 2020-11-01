@@ -4,7 +4,7 @@ description: Callback ini akan terpanggil ketika pemain memasuki atau keluar dar
 tags: []
 ---
 
-import T from '../../src/components/templates.js'
+import T from '../../../../src/components/templates.js'
 
 <T.VersionWarnID name='Callback' version='SA-MP 0.3a' />
 
