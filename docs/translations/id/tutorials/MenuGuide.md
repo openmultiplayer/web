@@ -26,14 +26,14 @@ Sedikit penjelasan tentang argumen [CreateMenu](../scripting/functions/CreateMen
 
 **Parameters:**
 
-| Parameter       | Menentukan                                                       |
-| --------------- | ---------------------------------------------------------------- |
-| title           | Judul menu                                          |
+| Parameter       | Menentukan                                                            |
+| --------------- | --------------------------------------------------------------------- |
+| title           | Judul menu                                                            |
 | columns         | Angka yang menentukan berapa banyak kolom yang digunakan (maksimal 2) |
-| Float:x         | Untuk menentukan posisi tinggi dari menu pada layar (kiri ke kanan)        |
-| Float:y         | Untuk menentukan lebar dari menu pada layar (atas dan bawah)           |
-| Float:col1width | Lebar dari kolom pertama                                    |
-| Float:col2width | Lebar dari kolom kedua                                   |
+| Float:x         | Untuk menentukan posisi tinggi dari menu pada layar (kiri ke kanan)   |
+| Float:y         | Untuk menentukan lebar dari menu pada layar (atas dan bawah)          |
+| Float:col1width | Lebar dari kolom pertama                                              |
+| Float:col2width | Lebar dari kolom kedua                                                |
 
 ## Menambahkan beberapa menu item
 
@@ -46,7 +46,7 @@ AddMenuItem(teleportmenu, 0, "SF");
 AddMenuItem(teleportmenu, 0, "SF");
 AddMenuItem(teleportmenu, 0, "LV");
 AddMenuItem(teleportmenu, 0, "LV");
- 
+
 AddMenuItem(teleportmenu, 1, "Grove Street");
 AddMenuItem(teleportmenu, 1, "Starfish Tower");
 AddMenuItem(teleportmenu, 1, "Wheel Arch Angels");
@@ -58,8 +58,8 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 Penjelasan mengenai [AddMenuItem](../scripting/functions/AddMenuItem):
 
 | menuid | menuid dari menu yang dimana item akan ditampilkan |
-| ------ | -------------------------------------------------------- |
-| column | Kolom tempat item akan ditampilkan              |
+| ------ | -------------------------------------------------- |
+| column | Kolom tempat item akan ditampilkan                 |
 | text   | Teks dari item                                     |
 
 ## Membuat efek pada item
