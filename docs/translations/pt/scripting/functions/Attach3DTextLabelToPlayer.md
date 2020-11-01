@@ -5,15 +5,13 @@ description: Attach a 3D text label to a player.
 tags: ["player", "3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
+Esta função foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
 
-<T.VersionWarn version='SA-MP 0.3a' />
-
-## Description
+## Descrição
 
 Attach a 3D text label to a player.
 
-| Name      | Description                                                           |
+| Nome      | Descrição                                                             |
 | --------- | --------------------------------------------------------------------- |
 | Text3D:id | The ID of the 3D text label to attach. Returned by Create3DTextLabel. |
 | playerid  | The ID of the player to attach the label to.                          |
@@ -21,13 +19,15 @@ Attach a 3D text label to a player.
 | OffsetY   | The Y offset from the player.                                         |
 | OffsetZ   | The Z offset from the player.                                         |
 
-## Returns
+## Retorno
 
-1: The function executed successfully.
+1: A função foi executada com sucesso.
 
-0: The function failed to execute. This means the player and/or label do not exist.
+0: A função falhou ao ser executada. Isso significa que o jogador e/ou This means the player and/or label do not exist.
 
-## Examples
+Isso significa que o player e / ou rótulo não existem.
+
+## Exemplos
 
 ```c
 public OnPlayerConnect(playerid)
@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 }
 ```
 
-## Related Functions
+## Funções Relacionadas
 
 - [Create3DTextLabel](Create3DTextLabel.md): Create a 3D text label.
 - [Delete3DTextLabel](Delete3DTextLabel.md): Delete a 3D text label.

@@ -1,12 +1,12 @@
 ---
 title: SetVehicleToRespawn
-description: Coloca um veículo de volta para a posição em que foi criado.
+description: Coloca um veículo de volta para a posição onde foi criado.
 tags: ["vehicle"]
 ---
 
 ## Descrição
 
-Coloca um veículo de volta para a posição em que foi criado.
+Coloca um veículo de volta para a posição onde foi criado.
 
 | Nome      | Descrição                    |
 | --------- | ---------------------------- |
@@ -21,7 +21,7 @@ Coloca um veículo de volta para a posição em que foi criado.
 ## Exemplos
 
 ```c
-// Respawns the first vehicle.
+// Respawna o primeiro veículo.
 SetVehicleToRespawn(1);
 for(new i = GetVehiclePoolSize(); i > 0; i--)
 {

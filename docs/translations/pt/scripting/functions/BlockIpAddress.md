@@ -5,9 +5,7 @@ description: Bloqueia um endereço de IP de comunicar com o servidor por um dete
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z R2-2' />
+Esta função foi implementada no SA-MP 0.3z R2-2 e não funcionará em versões anteriores.
 
 ## Descrição
 

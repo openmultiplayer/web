@@ -6,7 +6,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Adiciona um 'componente' (frequentemente chamado de 'mod' (modificação)) a um veículo. Componentes válidos podem ser encontrados [aqui].
+Adiciona um 'componente' (frequentemente chamado de 'mod' (modificação)) a um veículo. Componentes válidos podem ser encontrados aqui.
 
 | Name                                          | Descrição                                                                       |
 | --------------------------------------------- | ------------------------------------------------------------------------------- |

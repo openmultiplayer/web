@@ -5,15 +5,13 @@ description: Attaches a 3D Text Label to a specific vehicle.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
+Esta função foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
 
-<T.VersionWarn version='SA-MP 0.3a' />
-
-## Description
+## Descrição
 
 Attaches a 3D Text Label to a specific vehicle.
 
-| Name      | Description                                                                  |
+| Name      | Descrição                                                                  |
 | --------- | ---------------------------------------------------------------------------- |
 | Text3D:id | The 3D Text Label you want to attach.                                        |
 | vehicleid | The vehicle you want to attach the 3D Text Label to.                         |
@@ -21,11 +19,11 @@ Attaches a 3D Text Label to a specific vehicle.
 | OffsetY   | The Offset-Y coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
 | OffsetZ   | The Offset-Z coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
 
-## Returns
+## Retorno
 
-This function does not return any specific values.
+Esta função não retorna nenhum valor específico.
 
-## Examples
+## Exemplos
 
 ```c
 new
@@ -46,7 +44,7 @@ public OnGameModeExit ( )
 }
 ```
 
-## Related Functions
+## Funções Relacionadas
 
 - [Create3DTextLabel](Create3DTextLabel.md): Create a 3D text label.
 - [Delete3DTextLabel](Delete3DTextLabel.md): Delete a 3D text label.
