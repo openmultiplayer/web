@@ -2,11 +2,11 @@
 title: Menu Guide
 ---
 
-Sebuah tutorial pendek yang menjelaskan bagaimana cara menggunakan sistem menu pada gim. Sistem menu ini sangat berbeda dengan SA-MP dialog dan lebih mencerminkan UI tradisional dari gim aslinya.
+Sebuah tutorial pendek yang menjelaskan bagaimana cara menggunakan sistem menu pada game. Sistem menu ini sangat berbeda dengan SA-MP dialog dan lebih mencerminkan UI tradisional dari gim aslinya.
 
 ## Menu di dalam SA-MP
 
-Menu kelihatannya sangat rumit dan susah dibuat scriptnya untuk kebanyakan pengguna, namun sebenarnya tidak. Disini saya akan menunjukkan bagaimana cara membuat simpel menu. Pada akhirnya kita akan membuat sebuah teleport menu.
+Menu kelihatannya sangat rumit dan susah dibuat scriptnya untuk kebanyakan pengguna, namun sebenarnya tidak. Disini saya akan menunjukkan bagaimana cara membuat menu simpel. Dan nantinya kita akan membuat sebuah teleport menu.
 
 ## Langkah pertama menu
 
@@ -22,7 +22,7 @@ Oke, kita sudah membuat variable untuk menaruh menu. Sekarang kita membuat menu 
 teleportmenu = CreateMenu("Teleportmenu", 2, 200.0, 100.0, 150.0, 150.0);
 ```
 
-Sedikit penjelasan tentang argument [CreateMenu](../scripting/functions/CreateMenu).
+Sedikit penjelasan tentang argumen [CreateMenu](../scripting/functions/CreateMenu).
 
 **Parameters:**
 
@@ -135,7 +135,7 @@ if(CurrentMenu == teleportmenu)
 
 ## Langkah terakhir
 
-Sekarang kita membutuhkan perintah untuk menampilkan menu. Ini adalah cara yang paling mudah. Dibandingkan dengan `strcmp` dan `ShowMenuForPlayer`. Ini dilakukan dengan `OnPlayerCommandText`. Atau, jika kalian sudah memiliki command processor, gunakanlah itu sebagai ganti memanggil `ShowMenuForPlayer`.
+Sekarang kita membutuhkan perintah untuk menampilkan menu. Ini adalah cara yang paling mudah. Dibandingkan dengan `strcmp` dan `ShowMenuForPlayer`. Ini bisa dilakukan dengan `OnPlayerCommandText`. Atau, jika kalian sudah memiliki command processor, gunakanlah itu sebagai ganti dari `ShowMenuForPlayer`.
 
 ```c
 if(strcmp(cmdtext, "/teleport", true) == 0)
