@@ -4,11 +4,9 @@ description: Callback ini akan terpanggil ketika pemain memasuki atau keluar dar
 tags: []
 ---
 
-:::warning
+import T from '../../../../../src/components/templates.js'
 
-Callback ini telah ditambahkan dalam SA-MP 0.3a dan tidak akan bekerja pada versi sebelumnya!
-
-:::
+<T.VersionWarnID name='Callback' version='SA-MP 0.3a' />
 
 ## Deskripsi
 
