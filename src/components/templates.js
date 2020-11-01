@@ -6,7 +6,11 @@ import VersionWarnID from "./templates/id/version-warning";
 import LowercaseNoteID from "./templates/id/lowercase-note";
 import TipNPCCallbacksID from "./templates/id/npc-callbacks-tip";
 
-export default { 
-  VersionWarn, LowercaseNote, TipNPCCallbacks,
-  VersionWarnID, LowercaseNoteID, TipNPCCallbacksID
+export default {
+  VersionWarn,
+  LowercaseNote,
+  TipNPCCallbacks,
+  VersionWarnID,
+  LowercaseNoteID,
+  TipNPCCallbacksID,
 };
