@@ -35,13 +35,13 @@ Dopo aver concluso, clicca su "Propose new file" e una Pull Request verrà apert
 
 ### Git
 
-Se vuoi usare Git, tutto quello che devi fare e clonare la repository della Wiki con la bash:
+Se vuoi usare Git, tutto quello che devi fare è clonare la repository della Wiki con la bash:
 
 ```sh
 git clone https://github.com/openmultiplayer/wiki.git
 ```
 
-Ora potrai aprire la repository nel tuo text editor preferito. Raccomando personalmente Visual Studio Code dato che ha degli ottimi tools per editare e formattare i file Markdown. Come puoi vedere, sto scrivendo questa documentazione usando Visual Studio Code!
+Ora potrai aprire la repository nel tuo editor di testo preferito. Raccomando personalmente Visual Studio Code dato che ha degli ottimi tools per editare e formattare i file Markdown. Come puoi vedere, sto scrivendo questa documentazione usando Visual Studio Code!
 
 ![Anteprima Markdown Visual Studio Code](/images/contributing/vscode.png)
 
@@ -54,7 +54,7 @@ Raccomando due estensioni per un'esperienza migliore:
 
 ### Link Interni
 
-Non usare assolutamente degli di mezzo URL per i link. Usa i relativi percorsi della repo.
+Non usare URL assoluti per i link. Usa solo percorsi relativi.
 
 - ❌
 
@@ -131,7 +131,7 @@ Inoltre, se il paragrafo si riferisce ad un esempio di blocco di codice, esso ai
 
 ### Tabelle
 
-Se una tabella ha un header, vanno nella parte superiore:
+Se una tabella ha un header, va nella parte superiore:
 
 - ❌
 
@@ -162,7 +162,7 @@ Se una tabella ha un header, vanno nella parte superiore:
 
 La maggior parte dei contenuti sono stati spostati, però se trovi una pagina mancante, qui vi è una piccola guida per convertire il contenuto in Markdown
 
-### Prendere L'HTML
+### Prendere l'HTML
 
 1. Clicca questo bottone
 
@@ -174,7 +174,7 @@ La maggior parte dei contenuti sono stati spostati, però se trovi una pagina ma
 
    ![image](/images/contributing/f62bb8112543.png)
 
-2. Posiziona il mouse in alto a sinistra della pagina wiki principale, nel margine sinistro o nell'anolo finché non vedi `#content`
+2. Posiziona il mouse in alto a sinistra della pagina wiki principale, nel margine sinistro o nell'angolo finché non vedi `#content`
 
    ![image](/images/contributing/65761ffbc429.png)
 
@@ -188,7 +188,7 @@ La maggior parte dei contenuti sono stati spostati, però se trovi una pagina ma
 
    Ora hai _solamente_ il codice HTML per il _contenuto_ concreto della pagina, il materiale che ci importa e che puoi convertire in Markdown.
 
-### Convertire L'HTML in Markdown
+### Convertire l'HTML in Markdown
 
 Per convertire l'HTML di base (niente tabelle) in Markdown usa:
 
@@ -196,7 +196,7 @@ https://domchristie.github.io/turndown/
 
 ![image](/images/contributing/77f4ea555bbb.png)
 
-^^ Nota come tutto il tavolo si sia sballato completamente...
+^^ Nota come tutta la tabella si sia sballata completamente...
 
 ### Tabelle HTML a Tabelle in Markdown
 
@@ -212,7 +212,7 @@ E copia solo l'elemento della tabella `<table>` dentro:
 
 La conversione molto probabilmente non sarà pervetta. Pertanto avrai da fare un po' di pulizia manuale. L'estensioni di formattazione citate sopra dovrebbero aiutare ma potresti tuttavia avere ancora bisogno di spendere del tempo per sistemarlo manualmente.
 
-Se non hai tempo, non ti preoccupare! Inoltra una bozza non finita e qualcun'altro può riprendere da dove hai lasciato!
+Se non hai tempo, non ti preoccupare! Inoltra una bozza non finita e qualcun altro può riprendere da dove hai lasciato!
 
 ## Contratto di licenza
 
