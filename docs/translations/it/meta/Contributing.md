@@ -11,7 +11,7 @@ Se vuoi mantenere una specifica lingua apri una pull request ai [`CODEOWNERS`](h
 
 Su ogni pagina, vi è un bottone che porta alla pagina di GitHub per poterne modificare il contenuto:
 
-!["Modifica questa pagina" link presente su ogni pagina della wiki](/images/contributing/edit-this-page.png)
+!['Modifica questa pagina' link presente su ogni pagina della wiki](/images/contributing/edit-this-page.png)
 
 Per esempio, cliccando questo sulla funzione [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) ti porterà a [questa pagina](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) che presenta un text editor per poter effettuare modifiche ad un file (assumendo il fatto che tu sia loggato su GitHub).
 
@@ -25,7 +25,7 @@ Aggiungere nuovi contenuti è un po' più complicato. Puoi farlo in due maniere:
 
 Quando navighi su una directory su Github, troverai un pulsante "Add file" nell'angolo in alto a destra della lista file:
 
-![Bottone "Add file"](/images/contributing/add-new-file.png)
+![Bottone 'Add file'](/images/contributing/add-new-file.png)
 
 Vi è anche la possibilità di poter uploddare un file Markdown che hai già scritto oppure scriverlo direttamente nel text editor di GitHub.
 
