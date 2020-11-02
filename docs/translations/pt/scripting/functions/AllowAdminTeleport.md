@@ -1,8 +1,7 @@
 ---
 id: AllowAdminTeleport
 title: AllowAdminTeleport
-description: Esta função vai determinar se Administradores RCON vão ser teleportados para a marcação quando definirem um. 
-This function will determine whether RCON admins will be teleported to their waypoint when they set one.
+description: Esta função vai determinar se Administradores RCON vão ser teleportados para a marcação quando definirem uma. 
 tags: []
 ---
 
@@ -14,10 +13,10 @@ Esta função, a partir da 0.3d está descontinuada. Por favor veja [OnPlayerCli
 
 ## Descrição
 
-Esta função vai determinar se Administradores RCON vão ser teleportados para a marcação quando definirem um.
+Esta função vai determinar se Administradores RCON vão ser teleportados para a marcação quando definirem uma.
 
-| Name  | Descrição                     |
-| ----- | ----------------------------- |
+| Nome  | Descrição                    			 |
+| ----- | ----------------------------- 		 |
 | allow | 0 para desabilitar e 1 para habilitar. |
 
 ## Retorno
@@ -38,4 +37,4 @@ public OnGameModeInit()
 ## Funções Relacionadas
 
 - [IsPlayerAdmin](IsPlayerAdmin.md): Verifica se um jogador está logado na RCON. 
-- [AllowPlayerTeleport](AllowPlayerTeleport.md): Toggle waypoint teleporting for players.
+- [AllowPlayerTeleport](AllowPlayerTeleport.md): Ativa o teleporte por marcação para os jogadores.

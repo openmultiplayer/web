@@ -1,6 +1,6 @@
 ---
 title: SetActorHealth
-description: Define a saúde de um ator.
+description: Define a vida de um ator.
 tags: []
 ---
 
@@ -8,7 +8,7 @@ Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões ant
 
 ## Descrição
 
-Define a saúde de um ator.
+Define a vida de um ator.
 
 | Nome         | Descrição                                 |
 | ------------ | ----------------------------------------- |

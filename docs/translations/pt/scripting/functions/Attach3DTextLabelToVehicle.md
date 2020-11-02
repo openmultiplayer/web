@@ -1,7 +1,7 @@
 Attach3DTextLabelToVehicle.md
 ---
 title: Attach3DTextLabelToVehicle
-description: Attaches a 3D Text Label to a specific vehicle.
+description: Anexa uma Text Label 3D a um veículo específico.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
@@ -9,15 +9,15 @@ Esta função foi implementada no SA-MP 0.3a e não funcionará em versões ante
 
 ## Descrição
 
-Attaches a 3D Text Label to a specific vehicle.
+Anexa uma Text Label 3D a um veículo específico.
 
-| Name      | Descrição                                                                  |
+| Nome      | Descrição                                                                    |
 | --------- | ---------------------------------------------------------------------------- |
-| Text3D:id | The 3D Text Label you want to attach.                                        |
-| vehicleid | The vehicle you want to attach the 3D Text Label to.                         |
-| OffsetX   | The Offset-X coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
-| OffsetY   | The Offset-Y coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
-| OffsetZ   | The Offset-Z coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
+| Text3D:id | O ID da 3D text label a ser anexada.                                         |
+| vehicleid | O ID do veículo ao qual deseja anexar a 3D text label.                       |
+| OffsetX   | O deslocamento (offset) da coordenada X do veículo (O veículo é 0.0,0.0,0.0) |
+| OffsetY   | O deslocamento (offset) da coordenada Y do veículo (O veículo é 0.0,0.0,0.0) |
+| OffsetZ   | O deslocamento (offset) da coordenada Z do veículo (O veículo é 0.0,0.0,0.0) |
 
 ## Retorno
 
@@ -27,14 +27,14 @@ Esta função não retorna nenhum valor específico.
 
 ```c
 new
-    Text3D:gVehicle3dText[MAX_VEHICLES], // Creating the TextLabel for later use
+    Text3D:gVehicle3dText[MAX_VEHICLES], // Criando a TextLabel para usar depois
     gVehicleId;
 
 public OnGameModeInit ( )
 {
-    gVehicleId = CreateVehicle(510, 0.0. 0.0, 15.0, 5, 0, 120); // Creating the Vehicle.
-    gVehicle3dText[gVehicleId] = Create3DTextLabel("Example Text", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1);
-    Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], vehicle_id, 0.0, 0.0, 2.0); // Attaching Text Label To Vehicle.
+    gVehicleId = CreateVehicle(510, 0.0. 0.0, 15.0, 5, 0, 120); // Criando o veículo. 
+    gVehicle3dText[gVehicleId] = Create3DTextLabel("Exemplo Texto", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1);
+    Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], vehicle_id, 0.0, 0.0, 2.0); // Anexando a TextLabel ao veículo.
 }
 
 public OnGameModeExit ( )
@@ -46,10 +46,11 @@ public OnGameModeExit ( )
 
 ## Funções Relacionadas
 
-- [Create3DTextLabel](Create3DTextLabel.md): Create a 3D text label.
-- [Delete3DTextLabel](Delete3DTextLabel.md): Delete a 3D text label.
-- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer.md): Attach a 3D text label to a player.
-- [Update3DTextLabelText](Update3DTextLabelText.md): Change the text of a 3D text label.
-- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel.md): Create A 3D text label for one player.
-- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel.md): Delete a player's 3D text label.
-- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText.md): Change the text of a player's 3D text label.
+- [Create3DTextLabel](Create3DTextLabel.md): Cria uma text label 3D.
+- [Delete3DTextLabel](Delete3DTextLabel.md): Apaga uma text label 3D.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer.md): Anexa uma text label 3D a um jogador.
+- [Update3DTextLabelText](Update3DTextLabelText.md): Muda o texto de uma 3D text label 3D.
+- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel.md): Cria uma text label 3D para um jogador.
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel.md): Apaga uma text label 3D de um jogador. 
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText.md): Muda o texto de uma text label 3D de um jogador.
+

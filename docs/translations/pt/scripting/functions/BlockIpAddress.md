@@ -1,6 +1,5 @@
 ---
-title: 
-
+title: BlockIpAddress
 description: Bloqueia um endereço de IP de comunicar com o servidor por um determinado período de tempo (globs são permitidos).
 tags: []
 ---

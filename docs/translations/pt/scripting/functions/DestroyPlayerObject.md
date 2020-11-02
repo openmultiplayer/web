@@ -1,12 +1,12 @@
 ---
 title: DestroyPlayerObject
-description: Destroy a player-object created using CreatePlayerObject.
+description: Destrói um objeto de jogador (player-object) criado usando CreatePlayerObject.
 tags: ["player"]
 ---
 
 ## Descrição
 
-Destroy a player-object created using CreatePlayerObject.
+Destrói um objeto de jogador (player-object) criado usando CreatePlayerObject.
 
 | Nome     | Descrição                                                               |
 | -------- | ----------------------------------------------------------------------- |
@@ -29,22 +29,22 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Funções Relacionadas
 
-- [CreatePlayerObject](CreatePlayerObject.md): Create an object for only one player.
-- [IsValidPlayerObject](IsValidPlayerObject.md): Checks if a certain player object is vaild.
-- [MovePlayerObject](MovePlayerObject.md): Move a player object.
-- [StopPlayerObject](StopPlayerObject.md): Stop a player object from moving.
-- [SetPlayerObjectPos](SetPlayerObjectPos.md): Set the position of a player object.
-- [SetPlayerObjectRot](SetPlayerObjectRot.md): Set the rotation of a player object.
-- [GetPlayerObjectPos](GetPlayerObjectPos.md): Locate a player object.
-- [GetPlayerObjectRot](GetPlayerObjectRot.md): Check the rotation of a player object.
-- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer.md): Attach a player object to a player.
-- [CreateObject](CreateObject.md): Create an object.
-- [DestroyObject](DestroyObject.md): Destroy an object.
-- [IsValidObject](IsValidObject.md): Checks if a certain object is vaild.
-- [MoveObject](MoveObject.md): Move an object.
-- [StopObject](StopObject.md): Stop an object from moving.
-- [SetObjectPos](SetObjectPos.md): Set the position of an object.
-- [SetObjectRot](SetObjectRot.md): Set the rotation of an object.
-- [GetObjectPos](GetObjectPos.md): Locate an object.
-- [GetObjectRot](GetObjectRot.md): Check the rotation of an object.
-- [AttachObjectToPlayer](AttachObjectToPlayer.md): Attach an object to a player.
+- [CreatePlayerObject](CreatePlayerObject.md): Cria um objeto para apenas um jogador.
+- [IsValidPlayerObject](IsValidPlayerObject.md): Verifica se determinado objeto de jogador (player-object) é válido.
+- [MovePlayerObject](MovePlayerObject.md): Move um objeto de jogador (player-object).
+- [StopPlayerObject](StopPlayerObject.md): Impede um objeto de jogador (player-object) de se mover.
+- [SetPlayerObjectPos](SetPlayerObjectPos.md): Define a posição de um objeto de jogador (player-object).
+- [SetPlayerObjectRot](SetPlayerObjectRot.md): Define a rotação de um objeto de jogador (player-object).
+- [GetPlayerObjectPos](GetPlayerObjectPos.md): Localiza um objeto de jogador (player-object).
+- [GetPlayerObjectRot](GetPlayerObjectRot.md): Verifica a rotação de um objeto de jogador (player-object).
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer.md): Anexa um objeto de jogador (player-object) a um jogador.
+- [CreateObject](CreateObject.md): Cria um objeto.
+- [DestroyObject](DestroyObject.md): Destrói um objeto.
+- [IsValidObject](IsValidObject.md): Verifica se um determinado objeto é válido.
+- [MoveObject](MoveObject.md): Move um objeto.
+- [StopObject](StopObject.md): Impede um objeto de se mover.
+- [SetObjectPos](SetObjectPos.md): Define a posição de um objeto.
+- [SetObjectRot](SetObjectRot.md): Define a rotação de um objeto.
+- [GetObjectPos](GetObjectPos.md): Localiza um objeto.
+- [GetObjectRot](GetObjectRot.md): Verifica a rotação de um objeto.
+- [AttachObjectToPlayer](AttachObjectToPlayer.md): Anexa um objeto a um jogador.

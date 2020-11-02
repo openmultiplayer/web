@@ -1,16 +1,16 @@
 ---
 title: DeleteSVar
-description: Deletes a previously set server variable.
+description: Exclui uma variável do servidor definida anteriormente. 
 tags: []
 ---
 
 ## Descrição
 
-Deletes a previously set server variable.
+Exclui uma variável do servidor definida anteriormente.
 
-| Nome    | Descrição                                  |
-| ------- | ------------------------------------------ |
-| varname | The name of the server variable to delete. |
+| Nome    | Descrição                                      |
+| ------- | ------------------------------------------ 	   |
+| varname | O nome da variável do servidor a ser excluída. |
 
 ## Retorno
 
@@ -38,9 +38,9 @@ Quando a variável é excluída, tentativas de recuperar o valor irão retornar 
 
 ## Funções Relacionadas
 
-- [SetSVarInt](SetSVarInt.md): Set an integer for a server variable.
-- [GetSVarInt](GetSVarInt.md): Get a player server as an integer.
-- [SetSVarString](SetSVarString.md): Set a string for a server variable.
-- [GetSVarString](GetSVarString.md): Get the previously set string from a server variable.
-- [SetSVarFloat](SetSVarFloat.md): Set a float for a server variable.
-- [GetSVarFloat](GetSVarFloat.md): Get the previously set float from a server variable.
+- [SetSVarInt](SetSVarInt.md): Define um integer para uma variável do servidor.
+- [GetSVarInt](GetSVarInt.md): Obtém o servidor do jogador como um integer.    Get a player server as an integer.
+- [SetSVarString](SetSVarString.md): Define uma string para uma variável do servidor.
+- [GetSVarString](GetSVarString.md): Obtém a string definida anteriormente de uma variável do servidor.
+- [SetSVarFloat](SetSVarFloat.md): Define um float para uma variável do servidor.
+- [GetSVarFloat](GetSVarFloat.md): Obtém o float definido anteriormente de uma variável do servidor. 

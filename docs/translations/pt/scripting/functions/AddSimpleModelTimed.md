@@ -1,6 +1,6 @@
 ---
 title: AddSimpleModelTimed
-description: Adds a new custom simple object model for download.
+description: Adiciona um novo modelo de objeto simples personalizado para download.  
 tags: []
 ---
 
@@ -8,48 +8,48 @@ Esta função foi implementada no SA-MP 0.3.DL-R1 e não funcionará em versões
 
 ## Descrição
 
-Adds a new custom simple object model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
+Adiciona um novo modelo de objeto simples personalizado para download. Os arquivos do modelo são armazenados em Documentos\GTA San Andreas User Files\SAMP\cache do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato CRC.
 
-| Name         | Descrição                                                                                                                   |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| virtualworld | The virtual world ID to make the model available at. Use -1 for all worlds.                                                 |
-| baseid       | The base object model ID to use (original object to use when download is failed).                                           |
-| newid        | The new object model ID ranged from -1000 to -30000 (29000 slots) to be used later with CreateObject or CreatePlayerObject. |
-| dffname      | Name of the .dff model collision file located in models server folder by default (artpath setting).                         |
-| txdname      | Name of the .txd model texture file located in models server folder by default (artpath setting).                           |
-| timeon       | The world game time (hour) this object will appear                                                                          |
-| timeoff      | The world game time (hour) this object will disappear                                                                       |
+| Nome         | Descrição                                                                                                                						  |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- 					  |
+| virtualworld | O ID do mundo virtual ao qual pretende colocar o modelo. Use -1 para todos os mundos.                                              			  |
+| baseid       | O ID do modelo do objeto original a ser usado como base (objeto original é usado se o download falhar).  										  |
+| newid        | O ID do modelo do novo objeto. Varia entre -1000 a -30000 (29000 slots) para serem usados posteriormente com CreateObject ou CreatePlayerObject. |
+| dffname      | Nome do arquivo de extensão .dff localizado na pasta do servidor de modelos por padrão (configuração artpath).             					  |
+| txdname      | Nome do arquivo de textura de extensão .txd localizado na pasta do servidor de modelos por padrão (configuração artpath).  					  |
+| timeon       | O horário do jogo (em horas) em que este objeto irá aparecer. 																					  |
+| timeoff      | O horário do jogo (em horas) em que este objecto irá desaparecer.                                                             					  |
 
-## Returns
+## Retorno
 
-1: The function executed successfully.
+1: A função foi executada com sucesso. 
 
-0: The function failed to execute.
+0: Falha ao executar a função.
 
-## Examples
+## Exemplos
 
 ```c
 public OnGameModeInit()
 {
-    AddSimpleModelTimed(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd", 9, 18); // This wall only renders from 9:00 am to 6:00 pm
+    AddSimpleModelTimed(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd", 9, 18); // Esta parede só renderiza das 9h às 18h
     return 1;
 }
 ```
 
-## Notes
+## Notas
 
 :::tip
 
-useartwork must be enabled first in server settings in order for this to work When virtualworld is set, the models will be downloaded once the player enters the specific world
+"useartwork" deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
 
 :::
 
 :::warning
 
-There are currently no restrictions on when you can call this function, but be aware that if you do not call them inside OnFilterScriptInit/OnGameModeInit, you run the risk that some players, who are already on the server, may not have downloaded the models.
+Atualmente não há restrições sobre quando você pode chamar esta função, mas esteja ciente de que se você não chamá-los dentro de OnFilterScriptInit ou OnGameModeInit, você corre o risco de que alguns jogadores, que já estão no servidor, não tenham baixado os modelos.
 
 :::
 
-## Related Functions
+## Funções Relacionadas
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): É chamada quando um jogador termina o download dos modelos personalizados.

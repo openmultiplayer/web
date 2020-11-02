@@ -1,7 +1,7 @@
 AttachCameraToObject.md
 ---
 title: AttachCameraToObject
-description: You can use this function to attach the player camera to objects.
+description: Você pode usar esta função para anexar a câmera do jogador a objetos.
 tags: []
 ---
 
@@ -10,12 +10,12 @@ Esta função foi implementada no SA-MP 0.3e e não funcionará em versões ante
 
 ## Descrição
 
-You can use this function to attach the player camera to objects.
+Você pode usar esta função para anexar a câmera do jogador a objetos.
 
 | Nome     | Descrição                                                            |
 | -------- | -------------------------------------------------------------------- |
-| playerid | The ID of the player which will have your camera attached on object. |
-| objectid | The object id which you want to attach the player camera.            |
+| playerid | O ID do jogador que terá a sua câmera anexada ao objeto.             |
+| objectid | O ID do objeto que deseja anexar à câmera do jogador.                |
 
 ## Retorno
 
@@ -30,7 +30,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new objectId = CreateObject(1245, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0);
         AttachCameraToObject(playerid, objectId);
-        SendClientMessage(playerid, 0xFFFFFFAA, "Your camera is attached on object now.");
+        SendClientMessage(playerid, 0xFFFFFFAA, "Sua câmera está agora anexada ao objeto.");
         return 1;
     }
     return 0;
@@ -41,10 +41,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-You need to create the object first, before attempting to attach a player camera for that.
+Você precisa criar o objeto primeiro, antes de tentar conectar uma câmera do jogador.
 
 :::
 
 ## Funções Relacionadas
 
-- [AttachCameraToPlayerObject](AttachCameraToPlayerObject.md): Attaches the player's camera to a player object.
+- [AttachCameraToPlayerObject](AttachCameraToPlayerObject.md): Anexa a câmera do jogador a um objeto de jogador (player-object).
