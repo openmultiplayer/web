@@ -21,7 +21,7 @@ Fai la tua modifica e invia una "Pull request" ciò significa che i mantenitori 
 
 Aggiungere nuovi contenuti è un po' più complicato. Puoi farlo in due maniere:
 
-### Interfaccia GitHub 
+### Interfaccia GitHub
 
 Quando navighi su una directory su Github, troverai un pulsante "Add file" nell'angolo in alto a destra della lista file:
 
@@ -46,7 +46,7 @@ Ora potrai aprire la repository nel tuo text editor preferito. Raccomando person
 ![Anteprima Markdown Visual Studio Code](/images/contributing/vscode.png)
 
 Raccomando due estensioni per un'esperienza migliore:
-                                                                                                                       
+
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) di David Anson - Questa estensione si assicura del fatto che il tuo Markdown sia formattato in maniera corretta. Previene errori di sintassi e semantica. Non tutti i warnings sono importanti ma alcuni possono aiutare a migliorare la leggibilità del codice. Usa il miglior strumento di valutazione e se hai un dubbio chiedi ad un reviewer!
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) creata dal team Prettier.js - Prettier.js formatterà automaticamente i tuoi file Markdown automaticamente cosicché tutto il testo usi uno stile coerente. La repository della wiki ha alcune impostazioni nel suo file `package.json` che l'estensione dovrebbe usare in modo autonomo. Assicurati di abilitare "Format On Save" nelle impostazioni dell'editor così i tuoi file Markdown verranno automaticamente formattati ogni volta che salvi il file!
 
@@ -54,7 +54,7 @@ Raccomando due estensioni per un'esperienza migliore:
 
 ### Link Interni
 
-Non usare assolutamente degli di mezzo URL per i link. Usa i relativi percorsi della repo. 
+Non usare assolutamente degli di mezzo URL per i link. Usa i relativi percorsi della repo.
 
 - ❌
 
@@ -74,7 +74,7 @@ Non usare assolutamente degli di mezzo URL per i link. Usa i relativi percorsi d
 
 Le immagini vanno in una sub-directory dentro `/static/images`. Successivamente quando linki un immagine in un `![]()`basta usare `/images/` come path base (non c'è nessun bisogno di usare `static`è solo per la repository).
 
-Se hai dei dubbi, leggi un'altra pagina che usa delle immagini e imita il procedimento. 
+Se hai dei dubbi, leggi un'altra pagina che usa delle immagini e imita il procedimento.
 
 ### Metadata
 
@@ -99,7 +99,7 @@ Non creare un header di livello 1 (`<h1>`) con `#` dato che viene generato autom
 
   ```md
   # Il mio titolo
-  
+
   Questa è una documentazione per ...
 
   # Sottosezione
@@ -119,11 +119,11 @@ Quando stai scrivendo un paragrafo che contiene nomi di funzioni, numeri, espres
 
 - ❌
 
- > La funzione fopen ritornerà un valore che contiene il tag del tipo di file:, non c'è nessun problema su quella linea di codice poiché il valore ritornato è storato in una variabile che inoltre contiene anche il tag del file: (notare che anche i casi sono gli stessi). In ogni caso nella linea successiva il valore 4 è aggiunto al handle file. 4 non ha nessun tag [...]
+> La funzione fopen ritornerà un valore che contiene il tag del tipo di file:, non c'è nessun problema su quella linea di codice poiché il valore ritornato è storato in una variabile che inoltre contiene anche il tag del file: (notare che anche i casi sono gli stessi). In ogni caso nella linea successiva il valore 4 è aggiunto al handle file. 4 non ha nessun tag [...]
 
 - ✔
 
- > La funzione `fopen` ritornerà un valore che contiene il tag del tipo di `file:`, non c'è nessun problema su quella linea di codice poiché il valore ritornato è storato in una variabile che inoltre contiene anche il tag del `file:` (notare che anche i casi sono gli stessi). In ogni caso nella linea successiva il valore `4` è aggiunto al handle file. `4` non ha nessun tag.
+> La funzione `fopen` ritornerà un valore che contiene il tag del tipo di `file:`, non c'è nessun problema su quella linea di codice poiché il valore ritornato è storato in una variabile che inoltre contiene anche il tag del `file:` (notare che anche i casi sono gli stessi). In ogni caso nella linea successiva il valore `4` è aggiunto al handle file. `4` non ha nessun tag.
 
 Nel precedente esempio, `fopen` è il nome di una funzione, non una parola inglese, dunque avvolgila usando `codice` evidenziare usando gli snippets aiuta a distinguerli da altri contenuti.
 
@@ -136,26 +136,26 @@ Se una tabella ha un header, vanno nella parte superiore:
 - ❌
 
   ```md
-  |         |                                      |
-  | ------- | ------------------------------------ |
-  | Vita    | Stato del motore                     |
-  | 650     | Non danneggiato                      |
-  | 650-550 | Fumo bianco                          |
-  | 550-390 | Fumo grigio                          |
-  | 390-250 | Fumo nero                            |
-  | < 250   | In fiamme (esploderà successivamente)|
+  |         |                                       |
+  | ------- | ------------------------------------- |
+  | Vita    | Stato del motore                      |
+  | 650     | Non danneggiato                       |
+  | 650-550 | Fumo bianco                           |
+  | 550-390 | Fumo grigio                           |
+  | 390-250 | Fumo nero                             |
+  | < 250   | In fiamme (esploderà successivamente) |
   ```
 
 - ✔
 
   ```md
-  | Vita    | Stato del motore                     
-  | ------- | ------------------------------------ |
-  | 650     | Non danneggiato                      |
-  | 650-550 | Fumo bianco                          |
-  | 550-390 | Fumo grigio                          |
-  | 390-250 | Fumo nero                            |
-  | < 250   | In fiamme (esploderà successivamente)|
+  | Vita    | Stato del motore                      |
+  | ------- | ------------------------------------- |
+  | 650     | Non danneggiato                       |
+  | 650-550 | Fumo bianco                           |
+  | 550-390 | Fumo grigio                           |
+  | 390-250 | Fumo nero                             |
+  | < 250   | In fiamme (esploderà successivamente) |
   ```
 
 ## Migrare dalla Wiki di SA-MP
@@ -187,7 +187,7 @@ La maggior parte dei contenuti sono stati spostati, però se trovi una pagina ma
    ![image](/images/contributing/8c7c75cfabad.png)
 
    Ora hai _solamente_ il codice HTML per il _contenuto_ concreto della pagina, il materiale che ci importa e che puoi convertire in Markdown.
-   
+
 ### Convertire L'HTML in Markdown
 
 Per convertire l'HTML di base (niente tabelle) in Markdown usa:
@@ -198,7 +198,7 @@ https://domchristie.github.io/turndown/
 
 ^^ Nota come tutto il tavolo si sia sballato completamente...
 
-### Tabelle HTML a Tabelle in Markdown 
+### Tabelle HTML a Tabelle in Markdown
 
 Il tool soprastante non supporta le tabelle, usa questo tool:
 
