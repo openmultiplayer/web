@@ -1,4 +1,3 @@
-Attach3DTextLabelToPlayer.md
 ---
 title: Attach3DTextLabelToPlayer
 description: Anexa uma text label 3D a um jogador.

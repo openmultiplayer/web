@@ -8,7 +8,7 @@ description: Aplica uma animação a um jogador.
 Aplica uma animação a um jogador.
 
 | Nome       | Descrição                                                                                        																		 |
-| ---------- | -------------------------------------------------------------------------------------------- 																			 |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid   | O ID do jogador a aplicar a animação.                                           																							 |
 | animlib[]  | A biblioteca de animação da qual aplicar a animação.                                  																				     |
 | animname[] | O nome da animação a aplicar, dentro da biblioteca especificada.                          																		         |

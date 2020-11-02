@@ -1,4 +1,3 @@
-SetVehicleParamsCarDoors.md
 ---
 title: SetVehicleParamsCarDoors
 description: Permite abrir e fechar as portas de um veículo.

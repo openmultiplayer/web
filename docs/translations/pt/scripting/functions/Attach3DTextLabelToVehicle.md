@@ -1,4 +1,3 @@
-Attach3DTextLabelToVehicle.md
 ---
 title: Attach3DTextLabelToVehicle
 description: Anexa uma Text Label 3D a um veículo específico.

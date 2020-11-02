@@ -11,7 +11,7 @@ Esta função foi implementada no SA-MP 0.3.DL-R1 e não funcionará em versões
 Adiciona um novo modelo de objeto simples personalizado para download. Os arquivos do modelo são armazenados em Documentos\GTA San Andreas User Files\SAMP\cache do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato CRC.
 
 | Nome         | Descrição                                                                                                                						  |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------- 					  |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | virtualworld | O ID do mundo virtual ao qual pretende colocar o modelo. Use -1 para todos os mundos.                                              			  |
 | baseid       | O ID do modelo do objeto original a ser usado como base (objeto original é usado se o download falhar).  										  |
 | newid        | O ID do modelo do novo objeto. Varia entre -1000 a -30000 (29000 slots) para serem usados posteriormente com CreateObject ou CreatePlayerObject. |
