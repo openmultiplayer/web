@@ -15,7 +15,7 @@ Di setiap halaman, ada sebuah tombol yang mengarahkan Anda ke halaman GitHub unt
 
 Sebagai contoh, klik di [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) akan mengarahkan Anda ke [halaman ini](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) yang di mana akan memunculkan sebuah _text editor_ untuk membuat perubahan ke file tersebut (asumsikan Anda sudah _login_ ke GitHub).
 
-Lakukan penyuntingan Anda and kirimkan sebuah "Pull Request" yang artinya pengelola Wiki ini dan anggota komunitas lainnya dapat mengulas (me-_review_) perubahan Anda, and other community members can review your change, diskusikas apakah perlu ada perubahan dan kemudian gabungkan.
+Lakukan penyuntingan Anda and kirimkan sebuah "Pull Request" yang artinya pengelola Wiki ini dan anggota komunitas lainnya dapat mengulas (me-_review_) perubahan Anda, diskusikas apakah perlu ada perubahan dan kemudian gabungkan.
 
 ## Menambah Konten Baru
 
@@ -35,7 +35,7 @@ Setelah selesai, tekan "Propose new file" dan sebuah Pull Request akan terbuka u
 
 ### Git
 
-If you want to use Git, all you need to do is clone the Wiki repository with: Jika Anda ingin menggunakan Git, yang Anda harus lakukan adalah _clone_ _repository_ Wiki dengan
+Jika Anda ingin menggunakan Git, yang Anda harus lakukan adalah _clone_ _repository_ Wiki dengan:
 
 ```sh
 git clone https://github.com/openmultiplayer/wiki.git

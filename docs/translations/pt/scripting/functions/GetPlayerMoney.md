@@ -1,20 +1,20 @@
 ---
 title: GetPlayerMoney
-description: Retorna a quantidade de dinheiro que um jogador tem.
+description: Retorna a quantidade de dinheiro que um jogador possui.
 tags: ["player"]
 ---
 
 ## Descrição
 
-Retorna a quantidade de dinheiro que um jogador tem.
+Retorna a quantidade de dinheiro que um jogador possui.
 
-| Nome     | Descrição                                      |
-| -------- | ---------------------------------------------- |
-| playerid | O ID do jogador do qual deseja ver o dinheiro. |
+| Nome     | Descrição                                           |
+| -------- | --------------------------------------------------- |
+| playerid | O ID do jogador que se deseja verificar o dinheiro. |
 
 ## Retorno
 
-A quantidade de dinheiro que um jogador tem.
+A quantidade de dinheiro que o jogador possui.
 
 ## Exemplos
 
