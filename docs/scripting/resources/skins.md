@@ -319,7 +319,11 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 
 ## Additional skins
 
-:::warning These skins (300 to 311) were added in SA-MP 0.3.7 RC3 and will not work in earlier versions! :::
+:::warning
+
+These skins (300 to 311) were added in SA-MP 0.3.7 RC3 and will not work in earlier versions!
+
+:::
 
 | Skin ID | Preview                               | Skin Model Name                                     | Singleplayer Location | Gender |
 | ------- | ------------------------------------- | --------------------------------------------------- | --------------------- | ------ |
