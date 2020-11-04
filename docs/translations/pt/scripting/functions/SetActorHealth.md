@@ -10,10 +10,10 @@ Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões ant
 
 Define a vida de um ator.
 
-| Nome         | Descrição                                 |
-| ------------ | ----------------------------------------- |
-| actorid      | O ID do ator a definir a vida.            |
-| Float:health | O valor a definir para a vida do ator.    |
+| Nome         | Descrição                              |
+| ------------ | -------------------------------------- |
+| actorid      | O ID do ator a definir a vida.         |
+| Float:health | O valor a definir para a vida do ator. |
 
 ## Retorno
 

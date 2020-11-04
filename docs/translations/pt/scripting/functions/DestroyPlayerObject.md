@@ -15,7 +15,7 @@ Destrói um objeto de jogador (player-object) criado usando CreatePlayerObject.
 
 ## Retorno
 
-Esta função não retorna nenhum valor específico. 
+Esta função não retorna nenhum valor específico.
 
 ## Exemplos
 

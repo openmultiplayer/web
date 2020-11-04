@@ -8,11 +8,11 @@ tags: ["player"]
 
 Obtém o endereço IP de um jogador específico e armazena-o em uma string.
 
-| Nome     | Descrição                                                           		  |
+| Nome     | Descrição                                                                    |
 | -------- | ---------------------------------------------------------------------------- |
-| playerid | O ID do jogador do qual deseja obter o endereço de IP.               		  |
+| playerid | O ID do jogador do qual deseja obter o endereço de IP.                       |
 | ip[]     | A string para armazenar o endereço de IP do jogador, passado por referência. |
-| len      | O comprimento máximo do endereço IP (recomendado 16).                	      |
+| len      | O comprimento máximo do endereço IP (recomendado 16).                        |
 
 ## Retorno
 
@@ -46,7 +46,7 @@ PAWN é case-sensitive (sensível a maiúsculas e minúsculas). GetPlayerIP não
 - [NetStats_GetIpPort](NetStats_GetIpPort): Obtém o IP e porta de um jogador.
 - [GetPlayerName](GetPlayerName): Obtém o nome de um jogador.
 - [GetPlayerPing](GetPlayerPing): Obtém o ping de um jogador.
-- [GetPlayerVersion](GetPlayerVerion): Obtém a versão-client do jogador. 
+- [GetPlayerVersion](GetPlayerVerion): Obtém a versão-client do jogador.
 - [OnIncomingConnection](../callbacks/OnIncomingConnection): É chamado quando um jogador está tentando se conectar ao servidor.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): É chamado quando um jogador se conecta ao servidor.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): É chamado quando um jogador sai do servidor.

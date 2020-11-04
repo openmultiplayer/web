@@ -6,11 +6,11 @@ tags: ["player"]
 
 ## Descrição
 
-Obtém o interior atual de um jogador. Uma lista com os interiores atualmente conhecidos, com as suas posições, podem ser encontrados nesta página. 
+Obtém o interior atual de um jogador. Uma lista com os interiores atualmente conhecidos, com as suas posições, podem ser encontrados nesta página.
 
-| Nome     | Descrição                                          |
-| -------- | -------------------------------------------------- |
-| playerid | O ID do jogador do qual deseja obter o interior.   |
+| Nome     | Descrição                                        |
+| -------- | ------------------------------------------------ |
+| playerid | O ID do jogador do qual deseja obter o interior. |
 
 ## Retorno
 

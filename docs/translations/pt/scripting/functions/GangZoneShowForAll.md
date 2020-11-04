@@ -10,7 +10,7 @@ Mostra uma gangzone com a cor desejada para todos os jogadores.
 
 | Nome  | Descrição                                                                                                        |
 | ----- | ---------------------------------------------------------------------------------------------------------------- |
-| zone  | O ID da gangzone a ser mostrada (retornada por GangZoneCreate).                                          		   |
+| zone  | O ID da gangzone a ser mostrada (retornada por GangZoneCreate).                                                  |
 | color | A cor a ser mostrada na gangzone, pode ser integer ou hex no formato de cor RGBA. Transparência Alpha suportada. |
 
 ## Retorno

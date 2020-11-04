@@ -20,7 +20,7 @@ The following images display the effect of transparency values used with a white
 
 ![Image:trans_matrix.png](/images/colorList/transparency/trans_matrix.png)
 
-### Fazendo contas 
+### Fazendo contas
 
 Como as cores são apenas números, é possivel calcular com elas, embora nem sempre faça sentido. Por exemplo, é possivel ajustar a visibilidade do radar do jogador (veja acima) mantendo a mesma cor atual, independemente da cor que seja.
 

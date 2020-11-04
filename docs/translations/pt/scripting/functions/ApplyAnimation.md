@@ -1,23 +1,23 @@
 ---
 title: ApplyAnimation
-description: Aplica uma animação a um jogador. 
+description: Aplica uma animação a um jogador.
 ---
 
 ## Descrição
 
 Aplica uma animação a um jogador.
 
-| Nome       | Descrição                                                                                        																		 |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid   | O ID do jogador a aplicar a animação.                                           																							 |
-| animlib[]  | A biblioteca de animação da qual aplicar a animação.                                  																				     |
-| animname[] | O nome da animação a aplicar, dentro da biblioteca especificada.                          																		         |
-| fDelta     | A velocidade para reproduzir a animação (use 4.1).                                     																				     |
-| loop       | Se 1, a animação irá repetir. Se definido 0, a animação vai reproduzir uma vez.    																						 |
-| lockx      | Se 0, o ator irá retornar à sua coordenada X antiga assim que a animação concluir(para animações que o ator se mova, como caminhar). 1 não irá retornar à posição antiga. |
-| locky      | O mesmo que acima, mas para o eixo Y. Same as above but for the Y axis. Deve ser mantido igual ao parâmetro anterior.                                                     |
-| freeze     | Definir para 1 vai congelar o ator no fim da animação. 0 não irá congelar.                  																				 |
-| time       | Tempo em milisegundos. Para um ciclo infinito o valor deve ser 0.                        																		     	 |
+| Nome       | Descrição                                                                                                                                                                                                                                                                                                                                            |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid   | O ID do jogador a aplicar a animação.                                                                                                                                                                                                                                                                                                                |
+| animlib[]  | A biblioteca de animação da qual aplicar a animação.                                                                                                                                                                                                                                                                                                 |
+| animname[] | O nome da animação a aplicar, dentro da biblioteca especificada.                                                                                                                                                                                                                                                                                     |
+| fDelta     | A velocidade para reproduzir a animação (use 4.1).                                                                                                                                                                                                                                                                                                   |
+| loop       | Se 1, a animação irá repetir. Se definido 0, a animação vai reproduzir uma vez.                                                                                                                                                                                                                                                                      |
+| lockx      | Se 0, o ator irá retornar à sua coordenada X antiga assim que a animação concluir(para animações que o ator se mova, como caminhar). 1 não irá retornar à posição antiga.                                                                                                                                                                            |
+| locky      | O mesmo que acima, mas para o eixo Y. Same as above but for the Y axis. Deve ser mantido igual ao parâmetro anterior.                                                                                                                                                                                                                                |
+| freeze     | Definir para 1 vai congelar o ator no fim da animação. 0 não irá congelar.                                                                                                                                                                                                                                                                           |
+| time       | Tempo em milisegundos. Para um ciclo infinito o valor deve ser 0.                                                                                                                                                                                                                                                                                    |
 | forcesync  | Defina como 1 para fazer o servidor sincronizar a animação com todos os outros jogadores num raio de streaming (opcional). 2 funciona da mesma forma que 1, mas APENAS aplicará a animação a jogadores em stream, mas NÃO o jogador a ser animado (útil para animações com NPC e animações persistentes quando os jogadores estão a ser streamados). |
 
 ## Retorno
@@ -46,5 +46,5 @@ Uma biblioteca de animação inválida irá crashar o jogo do jogador.
 
 ## Funções Relacionadas
 
-- [ClearAnimations](ClearAnimations.md): Limpe qualquer animação aplicada a um ator. 
-- [SetPlayerSpecialAction](SetPlayerSpecialAction.md): Define uma ação especial a um jogador. 
+- [ClearAnimations](ClearAnimations.md): Limpe qualquer animação aplicada a um ator.
+- [SetPlayerSpecialAction](SetPlayerSpecialAction.md): Define uma ação especial a um jogador.

@@ -1,6 +1,6 @@
 ---
 title: GetNetworkStats
-description: Obtém as estatísticas da rede do servidor e as armazena em uma string. 
+description: Obtém as estatísticas da rede do servidor e as armazena em uma string.
 tags: []
 ---
 
@@ -8,12 +8,12 @@ Esta função foi implementada no SA-MP 0.3c R4 e não funcionará em versões a
 
 ## Descrição
 
-Obtém as estatísticas da rede do servidor e as armazena em uma string. 
+Obtém as estatísticas da rede do servidor e as armazena em uma string.
 
-| Nome        | Descrição                                                      			  |
-| ----------- | ------------------------------------------------------------------------- |
-| retstr[]    | A string para armazenar as estatísticas da rede, passado por referência.  |
-| retstr_size | O comprimento da string a ser armazenada.                   	          |
+| Nome        | Descrição                                                                |
+| ----------- | ------------------------------------------------------------------------ |
+| retstr[]    | A string para armazenar as estatísticas da rede, passado por referência. |
+| retstr_size | O comprimento da string a ser armazenada.                                |
 
 ## Retorno
 
@@ -64,5 +64,5 @@ KBits per second received: 2.7
 - [NetStats_BytesSent](NetStats_BytesSent): Get the amount of information (in bytes) that the server has sent to the player.
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Get the number of network messages the server has received from the player in the last second.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Obtém a percentagem de perda de pacotes (packet loss) de um jogador.
-- [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Obtém o status de conexão de um jogador. 
+- [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Obtém o status de conexão de um jogador.
 - [NetStats_GetIpPort](NetStats_GetIpPort): Obtém o IP e porta de um jogador.

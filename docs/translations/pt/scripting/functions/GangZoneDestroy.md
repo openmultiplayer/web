@@ -8,9 +8,9 @@ tags: ["gangzone"]
 
 Destrói uma gangzone.
 
-| Nome | Descrição                          |
-| ---- | ---------------------------------- |
-| zone | O ID da gangzone a destruir.       |
+| Nome | Descrição                    |
+| ---- | ---------------------------- |
+| zone | O ID da gangzone a destruir. |
 
 ## Retorno
 

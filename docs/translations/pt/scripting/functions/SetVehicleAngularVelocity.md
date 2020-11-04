@@ -1,6 +1,6 @@
 ---
 title: SetVehicleAngularVelocity
-description: Define a velocidade angular X, Y e Z de um veículo. 
+description: Define a velocidade angular X, Y e Z de um veículo.
 tags: ["vehicle"]
 ---
 
@@ -16,12 +16,12 @@ Esta função está no _world_ space e não no _local_ space. Se você quiser fa
 
 Define a velocidade angular X, Y e Z de um veículo.
 
-| Nome      | Descrição                                           |
-| --------- | --------------------------------------------------- |
-| vehicleid | O ID do veículo a definir a velocidade.             |
-| Float:X   | A quantidade de velocidade na direção angular X.    |
-| Float:Y   | A quantidade de velocidade na direção angular Y.    |
-| Float:Z   | A quantidade de velocidade na direção angular Z.    |
+| Nome      | Descrição                                        |
+| --------- | ------------------------------------------------ |
+| vehicleid | O ID do veículo a definir a velocidade.          |
+| Float:X   | A quantidade de velocidade na direção angular X. |
+| Float:Y   | A quantidade de velocidade na direção angular Y. |
+| Float:Z   | A quantidade de velocidade na direção angular Z. |
 
 ## Retorno
 

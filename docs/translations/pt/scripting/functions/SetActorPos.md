@@ -10,12 +10,12 @@ Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões ant
 
 Define a posição de um ator.
 
-| Nome    | Descrição                                                            |
-| ------- | -------------------------------------------------------------------- |
-| actorid | O ID do ator a definir a posição. Retornado pelo CreateActor.        |
-| X       | A coordenada X na qual posicionar o ator.                            |
-| Y       | A coordenada Y na qual posicionar o ator.                            |
-| Z       | A coordenada Z na qual posicionar o ator.                            |
+| Nome    | Descrição                                                     |
+| ------- | ------------------------------------------------------------- |
+| actorid | O ID do ator a definir a posição. Retornado pelo CreateActor. |
+| X       | A coordenada X na qual posicionar o ator.                     |
+| Y       | A coordenada Y na qual posicionar o ator.                     |
+| Z       | A coordenada Z na qual posicionar o ator.                     |
 
 ## Retorno
 

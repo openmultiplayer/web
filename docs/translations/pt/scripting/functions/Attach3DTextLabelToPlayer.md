@@ -42,5 +42,5 @@ public OnPlayerConnect(playerid)
 - [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle.md): Anexa uma text label 3D a um veículo.
 - [Update3DTextLabelText](Update3DTextLabelText.md): Muda o texto de uma text label 3D.
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel.md): Cria uma text label 3D para um jogador.
-- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel.md): Apaga uma text label 3D de um jogador. 
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel.md): Apaga uma text label 3D de um jogador.
 - [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText.md): Muda o texto de uma text label 3D de um jogador.

@@ -1,5 +1,5 @@
 ---
-title: Slots de Componentes 
+title: Slots de Componentes
 ---
 
 :::info

@@ -6,12 +6,12 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Define a vida de um veículo. Quando a vida do veículo diminui, o motor irá fazer fumaça, até que arde quando diminuir para menos de 250 (25%). 
+Define a vida de um veículo. Quando a vida do veículo diminui, o motor irá fazer fumaça, até que arde quando diminuir para menos de 250 (25%).
 
-| Nome         | Descrição                                   |
-| ------------ | ------------------------------------------- |
-| vehicleid    | O ID do veículo a definir a vida.           |
-| Float:health | A vida, em valor float.                     |
+| Nome         | Descrição                         |
+| ------------ | --------------------------------- |
+| vehicleid    | O ID do veículo a definir a vida. |
+| Float:health | A vida, em valor float.           |
 
 ## Retorno
 
@@ -44,6 +44,6 @@ A vida máxima do veículo é 1000. Valores maiores são possíveis. Para mais i
 ## Funções Relacionadas
 
 - [GetVehicleHealth](GetVehicleHealth.md): Verifica a vida de um veículo.
-- [RepairVehicle](RepairVehicle.md): Repara totalmente um veículo. 
+- [RepairVehicle](RepairVehicle.md): Repara totalmente um veículo.
 - [SetPlayerHealth](SetPlayerHealth.md): Define a vida de um jogador.
 - [OnVehicleDeath](../callbacks/OnVehicleDeath.md): É chamado quando um veículo é destruído.

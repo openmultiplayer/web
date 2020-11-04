@@ -10,9 +10,9 @@ Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões ant
 
 Obtém o ID do modelo de um objeto (CreateObject).
 
-| Nome     | Descrição                              	     |
-| -------- | ----------------------------------------------- |
-| objectid | O ID do objeto do qual deseja obter o modelo.   |
+| Nome     | Descrição                                     |
+| -------- | --------------------------------------------- |
+| objectid | O ID do objeto do qual deseja obter o modelo. |
 
 ## Retorno
 

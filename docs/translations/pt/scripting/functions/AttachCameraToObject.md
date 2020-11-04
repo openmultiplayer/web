@@ -6,15 +6,14 @@ tags: []
 
 Esta função foi implementada no SA-MP 0.3e e não funcionará em versões anteriores.
 
-
 ## Descrição
 
 Você pode usar esta função para anexar a câmera do jogador a objetos.
 
-| Nome     | Descrição                                                            |
-| -------- | -------------------------------------------------------------------- |
-| playerid | O ID do jogador que terá a sua câmera anexada ao objeto.             |
-| objectid | O ID do objeto que deseja anexar à câmera do jogador.                |
+| Nome     | Descrição                                                |
+| -------- | -------------------------------------------------------- |
+| playerid | O ID do jogador que terá a sua câmera anexada ao objeto. |
+| objectid | O ID do objeto que deseja anexar à câmera do jogador.    |
 
 ## Retorno
 

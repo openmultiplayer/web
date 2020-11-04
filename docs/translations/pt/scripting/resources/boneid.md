@@ -9,7 +9,7 @@ Para ser usado com [SetPlayerAttachedObject](../functions/SetPlayerAttachedObjec
 :::
 
 | ID  | Osso                       |
-| --- | -------------------------  |
+| --- | -------------------------- |
 | 1   | Coluna                     |
 | 2   | Cabeça                     |
 | 3   | Braço esquerdo             |

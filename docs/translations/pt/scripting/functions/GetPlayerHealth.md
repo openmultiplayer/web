@@ -8,7 +8,7 @@ tags: ["player"]
 
 A função GetPlayerHealth permite obter a vida de um jogador. Útil para detetar cheats, entre outras coisas.
 
-| Nome          | Descrição                                  	     |
+| Nome          | Descrição                                          |
 | ------------- | -------------------------------------------------- |
 | playerid      | O ID do jogador.                                   |
 | &Float:health | Float para armazenar vida, passado por referência. |

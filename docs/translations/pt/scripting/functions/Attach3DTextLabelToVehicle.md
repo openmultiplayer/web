@@ -31,7 +31,7 @@ new
 
 public OnGameModeInit ( )
 {
-    gVehicleId = CreateVehicle(510, 0.0. 0.0, 15.0, 5, 0, 120); // Criando o veículo. 
+    gVehicleId = CreateVehicle(510, 0.0. 0.0, 15.0, 5, 0, 120); // Criando o veículo.
     gVehicle3dText[gVehicleId] = Create3DTextLabel("Exemplo Texto", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1);
     Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], vehicle_id, 0.0, 0.0, 2.0); // Anexando a TextLabel ao veículo.
 }
@@ -50,6 +50,5 @@ public OnGameModeExit ( )
 - [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer.md): Anexa uma text label 3D a um jogador.
 - [Update3DTextLabelText](Update3DTextLabelText.md): Muda o texto de uma 3D text label 3D.
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel.md): Cria uma text label 3D para um jogador.
-- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel.md): Apaga uma text label 3D de um jogador. 
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel.md): Apaga uma text label 3D de um jogador.
 - [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText.md): Muda o texto de uma text label 3D de um jogador.
-

@@ -10,10 +10,10 @@ Esta função foi implementada no SA-MP 0.3z R2-2 e não funcionará em versões
 
 Bloqueia um endereço de IP de comunicar com o servidor por um determinado período de tempo (globs são permitidos). Jogadores tentando se conectar ao servidor com um endereço de IP bloqueado receberão a mensagem "Your are banned from this server". Jogadores que estão online no IP especificado, antes do bloqueio, irão perder a conexão após alguns segundos, e ao se conectar, irão receber a mesma mensagem.
 
-| Nome       | Descrição                                                                                                  |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| ip_address | O IP a bloquear.                                                                                           |
-| timems     | O tempo (em milisegundos) que a conexão será bloqueada. 0 pode ser usado para um bloqueio indefinido.      |
+| Nome       | Descrição                                                                                             |
+| ---------- | ----------------------------------------------------------------------------------------------------- |
+| ip_address | O IP a bloquear.                                                                                      |
+| timems     | O tempo (em milisegundos) que a conexão será bloqueada. 0 pode ser usado para um bloqueio indefinido. |
 
 ## Retorno
 

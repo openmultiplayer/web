@@ -8,10 +8,10 @@ tags: ["player"]
 
 Obtém o nome de um jogador.
 
-| Nome     | Descrição                                                                                                                                      					    |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| playerid | O ID do jogador do qual deseja obter o nome.                                                                                                   					    |
-| name[]   | A array para armazenar o nome, passado por referência.                                                                                        						    |
+| Nome     | Descrição                                                                                                                                                              |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador do qual deseja obter o nome.                                                                                                                           |
+| name[]   | A array para armazenar o nome, passado por referência.                                                                                                                 |
 | len      | O comprimento da string que deve ser armazenada. Recomendado que seja MAX_PLAYER_NAME + 1. O + 1 é necessário parar levar em conta o caractere nulo (null terminator). |
 
 ## Retorno
