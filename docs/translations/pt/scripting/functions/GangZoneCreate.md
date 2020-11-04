@@ -62,5 +62,5 @@ Existe um limite de 1024 gangzones. Colocar parâmetros na ordem errada resulta 
 - [GangZoneHideForAll](GangZoneHideForAll): Esconde uma gangzone para todos os jogadores.
 - [GangZoneFlashForPlayer](GangZoneFlashForPlayer): Faz uma gangzone piscar para um jogador.
 - [GangZoneFlashForAll](GangZoneFlashForAll): Faz uma gangzone piscar para todos os jogadores.
-- [GangZoneStopFlashForPlayer](GangZoneStopFlashForPlayer): Gangzone deixa de piscar para um jogador.
-- [GangZoneStopFlashForAll](GangZoneStopFlashForAll): Gangzone deixa de piscar para todos os jogadores.
+- [GangZoneStopFlashForPlayer](GangZoneStopFlashForPlayer): Pare uma Gangzone de piscar para um jogador.
+- [GangZoneStopFlashForAll](GangZoneStopFlashForAll): Pare uma Gangzone de piscar para todos os jogadores.

@@ -1,12 +1,12 @@
 ---
 title: AllowInteriorWeapons
-description: Alterne se o uso de armas no interior é permitido ou não.
+description: Define se o uso de armas no interior é permitido ou não.
 tags: []
 ---
 
 ## Descrição
 
-Alterne se o uso de armas no interior é permitido ou não.
+Define se o uso de armas no interior é permitido ou não.
 
 | Name  | Descrição                                                                                             |
 | ----- | ----------------------------------------------------------------------------------------------------- |
