@@ -8,9 +8,9 @@ tags: ["player"]
 
 Oyuncunun ping değerini alır. Ping, sunucudan, istemciye giden verinin geri gelme süresine denir.
 
-| İsim     | Açıklama                                 |
-| -------- | ---------------------------------------- |
-| playerid | Ping değeri alınacak oyuncuun ID'si.     |
+| İsim     | Açıklama                             |
+| -------- | ------------------------------------ |
+| playerid | Ping değeri alınacak oyuncuun ID'si. |
 
 ## Geri Döndürülen Değer
 
