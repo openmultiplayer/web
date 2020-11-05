@@ -1,51 +1,51 @@
 ---
 title: GetPlayerPing
-description: Get the ping of a player.
+description: Oyuncunun ping değerini alır.
 tags: ["player"]
 ---
 
-## Description
+## Açıklama
 
-Get the ping of a player. The ping measures the amount of time it takes for the server to 'ping' the client and for the client to send the message back.
+Oyuncunun ping değerini alır. Ping, sunucudan, istemciye giden verinin geri gelme süresine denir.
 
-| Name     | Description                              |
+| İsim     | Açıklama                                 |
 | -------- | ---------------------------------------- |
-| playerid | The ID of the player to get the ping of. |
+| playerid | Ping değeri alınacak oyuncuun ID'si.     |
 
-## Returns
+## Geri Döndürülen Değer
 
-The current ping of the player (expressed in milliseconds).
+Oyuncunun şuanki değeri. (milisaniye cinsinden.)
 
-## Examples
+## Örnekler
 
 ```c
-// Declare an array of all possible timer identifiers for timers for kicking players with
-// generally high ping with default value of -1
+// Oyuncunun pingini kontrol edecek olan zamanlayıcı için bir değişken oluşturulur.
+// varsayılan değeri -1
 new
     gPlayerPingTimer[MAX_PLAYERS] = {-1, ...};
 
-// A constant (nice documentation :))
+// Maksimum kabul edilebilir pingi belirlemek için salt okunur, başka bir işlem tarafından değiştirilemez bir değer oluşturulur.
 const
     MAX_ACCEPTED_PING = 500;
 
 public OnPlayerConnect(playerid)
 {
-    // Initiate the timer and assign the variable the identifier of the timer
+    // Oyuncu giriş yaptığında oyuncunun playerid'si ile zamanlyıcı başlatılır.
     gPlayerPingTimer[playerid] = SetTimerEx("Ping_Timer", 3 * 1000, true, "i", playerid);
 }
 
 public OnPlayerDisconnect(playerid, reason)
 {
-    // Kill the timer and reset the value to invalid
+    // Oyuncu çıkış yaptığında zamanlayıcıyı kapatır ve zamanlayıcı değişkenini geçersiz yapar.
     KillTimer(gPlayerPingTimer[playerid]);
     gPlayerPingTimer[playerid] = -1;
 }
 
-// A forwarded function (callback)
+// Zamanlayıcı için bir function oluşturulur.
 forward public Ping_Timer(playerid);
 public Ping_Timer(playerid)
 {
-    // Kick player if their ping is more than the generally accepted high ping
+    // Eğer oyuncunun pingi maksimum kabul edilebilir ping değerinden yüksekse (500) oyuncuyu oyundan atar.
     if (GetPlayerPing(playerid) > MAX_ACCEPTED_PING)
     {
         SendClientMessageToAll()
@@ -55,16 +55,16 @@ public Ping_Timer(playerid)
 }
 ```
 
-## Notes
+## Not
 
 :::warning
 
-Player's ping may be 65535 for a while after a player connects
+Oyuncu giriş yaptıktan sonra kısa bir süreliğine ping değeri 65535 olarak görünebilir.
 
 :::
 
-## Related Functions
+## İlişkili Fonksiyonlar
 
-- [GetPlayerIp](GetPlayerIp.md): Get a player's IP.
-- [GetPlayerName](GetPlayerName.md): Get a player's name.
-- [GetPlayerVersion](GetPlayerVersion.md): Get a player's client-version.
+- [GetPlayerIp](GetPlayerIp.md): Oyuncu IP'sini alır.
+- [GetPlayerName](GetPlayerName.md): Oyuncu ismini alır.
+- [GetPlayerVersion](GetPlayerVersion.md): Oyuncunun istemci versiyonunu alır.
