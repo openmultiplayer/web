@@ -8,8 +8,8 @@ tags: []
 
 Set the world weather for all players.
 
-| Name      | Description         |
-| --------- | ------------------- |
+| Name      | Description                                      |
+| --------- | ------------------------------------------------ |
 | weatherid | The [weather](../resources/weatherid.md) to set. |
 
 ## Returns
