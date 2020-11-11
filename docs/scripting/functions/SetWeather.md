@@ -10,7 +10,7 @@ Set the world weather for all players.
 
 | Name      | Description         |
 | --------- | ------------------- |
-| weatherid | The weather to set. |
+| weatherid | The [weather](../resources/weatherid.md) to set. |
 
 ## Returns
 
