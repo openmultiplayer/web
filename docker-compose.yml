@@ -57,3 +57,6 @@ services:
       traefik.http.routers.omp_index_pgadmin.entrypoints: https
       traefik.http.routers.omp_index_pgadmin.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
+    networks:
+      - default
+      - database
