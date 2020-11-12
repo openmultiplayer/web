@@ -9,6 +9,7 @@ require (
 	github.com/blevesearch/bleve v1.0.14
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/cors v1.1.1
+	github.com/gofrs/uuid v3.3.0+incompatible
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/google/go-cmp v0.5.4 // indirect
 	github.com/gorilla/securecookie v1.1.1
@@ -17,6 +18,8 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/prisma/prisma-client-go v0.0.10-0.20201008164449-6ec144dd5855
 	github.com/russross/blackfriday v1.6.0
+	github.com/sendgrid/rest v2.6.2+incompatible // indirect
+	github.com/sendgrid/sendgrid-go v3.7.2+incompatible
 	github.com/stretchr/testify v1.6.1
 	go.uber.org/zap v1.16.0
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
