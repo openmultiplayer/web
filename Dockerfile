@@ -24,4 +24,7 @@ RUN go get github.com/prisma/prisma-client-go@master
 RUN prisma-client-go generate
 RUN go build -o server.exe ./server/
 
+# Install prisma command for automatic migrations.
+RUN npm install --global @prisma/cli
+
 ENTRYPOINT [ "/server/server.exe" ]
