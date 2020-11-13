@@ -10,12 +10,12 @@ import T from '../../../src/components/templates.js'
 
 ## Açıklama
 
-Bu callback, bir oyuncu bir textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz, yinede OnPlayerClickTextDraw'da çağırılır.
+Bu callback, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz ancak OnPlayerClickTextDraw'da çağırılır.
 
 | İsim         | Açıklama                                                |
 | ------------ | ------------------------------------------------------- |
 | playerid     | Textdrawa tıklayan oyuncunun ID'si.                     |
-| playertextid | Tıklanan textdrawın ID'si.                              |
+| playertextid | Tıklanan player-textdrawın ID'si.                       |
 
 ## Geri Döndürülen Değerler
 
@@ -78,6 +78,6 @@ Bir oyuncu textdraw seçimini ESC'ye basarak iptal ettiğinde 'INVALID_TEXT_DRAW
 
 ## Bağlantılı Fonksiyonlar
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md): Bir textdrawın seçilebilir olup olmayacağını ayarlar.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md): Bir player-textdrawın seçilebilir olup olmayacağını ayarlar.
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Oyuncu bir textdrawa tıkladığında çağırılır.
 - [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Bir oyuncu başka bir oyuncuya tıkladığında çağırılır.
