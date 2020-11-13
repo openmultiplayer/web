@@ -86,7 +86,7 @@ func errToWriter(w io.Writer, err error) {
 		Suggestion: suggest,
 		Error:      err.Error(),
 	}); e != nil {
-		zap.L().Fatal(
+		zap.L().Error(
 			"failed to write error response",
 			zap.Error(e),
 			zap.Any("original_error", err))
