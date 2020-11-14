@@ -31,3 +31,4 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[MySQL](https://github.com/pBlueG/SA-MP-MySQL/)_** - Connect your server to a MySQL server.
 - **_[streamer](https://github.com/samp-incognito/samp-streamer-plugin/)_** - Bypass many SA:MP limits, like objects and pickups.
 - **_[whirlpool](https://github.com/Southclaws/samp-whirlpool)_** - Cryptographic plugin for SA:MP. 
+- **_[bcrypt](https://github.com/LassiR/bcrypt-samp)_** - Another cryptographic plugin. 
