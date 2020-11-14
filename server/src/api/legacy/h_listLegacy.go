@@ -1,4 +1,4 @@
-package servers
+package legacy
 
 import (
 	"net/http"

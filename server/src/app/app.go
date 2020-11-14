@@ -12,6 +12,7 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/server-index/server/src/api/legacy"
 	"github.com/openmultiplayer/server-index/server/src/api/servers"
 	"github.com/openmultiplayer/server-index/server/src/db"
 	"github.com/openmultiplayer/server-index/server/src/queryer"
@@ -62,7 +63,8 @@ func Initialise(root context.Context) (app *App, err error) {
 		// auther.WithAuthentication,
 	)
 
-	router.Mount("/", servers.New(app.ctx, storage, sampqueryer))
+	router.Mount("/", legacy.New(app.ctx, storage, sampqueryer))
+	router.Mount("/server", servers.New(app.ctx, storage, sampqueryer))
 	// router.Mount("/user", user.New(app.prisma, auther))
 
 	zap.L().Debug("constructed router", zap.Any("router", router))
