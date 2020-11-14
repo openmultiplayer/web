@@ -8,7 +8,7 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[Community Compiler](https://github.com/pawn-lang/compiler/)_** - A vastly updated version of the compiler, with many fixes and enhancements.
 - **_[sampctl](http://sampctl.com/)_** - Package manager for installing libraries and running your server.
 - **_[Plugin Runner](https://github.com/Zeex/samp-plugin-runner/)_** - Tool to run a lightweight version of the server directly from command-line (no server.cfg required) for testing plugins.
-- **_[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)_** - Pawn autocompletes for Sublime Text. 
+- **_[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)_** - Pawn autocompletes for Sublime Text.
 - **_[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn/)_** - Pawn autocompletes for Visual Studio Code.
 
 ## Libraries
@@ -19,9 +19,9 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[amx_assembly](https://github.com/Zeex/amx_assembly/)_** - Low-level access to the pawn script itself.
 - **_[indirection](https://github.com/Y-Less/indirection/)_** - System for passing pointers and calling functions indirectly, with abstract methods to customise calls.
 - **_[code-parse.inc](https://github.com/Y-Less/code-parse.inc/)_** - Parse and customise pawn code at compile-time.
-- **_[strlib.inc](https://github.com/oscar-broman/strlib/)_** - String functions in SA:MP. 
-- **_[extended-vehicle-information.inc](https://github.com/Vince0789/sa-mp-extended-vehicle-information/)_** - Large amounts of vehicle flags from single player into an SQLite Database. 
-- **_[geo-ip.inc](https://github.com/Southclaws/SAMP-geoip/)_** - Geographical information based on IP Address. 
+- **_[strlib.inc](https://github.com/oscar-broman/strlib/)_** - String functions in SA:MP.
+- **_[extended-vehicle-information.inc](https://github.com/Vince0789/sa-mp-extended-vehicle-information/)_** - Large amounts of vehicle flags from single player into an SQLite Database.
+- **_[geo-ip.inc](https://github.com/Southclaws/SAMP-geoip/)_** - Geographical information based on IP Address.
 - **_[samp-aviation]https://github.com/Southclaws/samp-aviation/)_** - Autopilot in SA:MP.
 - **_[progress2.inc](https://github.com/Southclaws/progress2/)_** - Display time, health, vehicle fuel and other things as a progressive bar.
 - **_[weapon-data.inc](https://github.com/Southclaws/samp-weapon-dat/)_** - Finely tuned, customisable weapon data.
@@ -34,5 +34,5 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[sscanf](https://github.com/Y-Less/sscanf/)_** - Convert strings to multiple values, ints, floats, players, etc.
 - **_[MySQL](https://github.com/pBlueG/SA-MP-MySQL/)_** - Connect your server to a MySQL server.
 - **_[streamer](https://github.com/samp-incognito/samp-streamer-plugin/)_** - Bypass many SA:MP limits, like objects and pickups.
-- **_[whirlpool](https://github.com/Southclaws/samp-whirlpool/)_** - Cryptographic plugin for SA:MP. 
-- **_[bcrypt](https://github.com/LassiR/bcrypt-samp/)_** - Another cryptographic plugin. 
+- **_[whirlpool](https://github.com/Southclaws/samp-whirlpool/)_** - Cryptographic plugin for SA:MP.
+- **_[bcrypt](https://github.com/LassiR/bcrypt-samp/)_** - Another cryptographic plugin.
