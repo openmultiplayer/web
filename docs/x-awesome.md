@@ -18,7 +18,8 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[indirection](https://github.com/Y-Less/indirection/)_** - System for passing pointers and calling functions indirectly, with abstract methods to customise calls.
 - **_[code-parse.inc](https://github.com/Y-Less/code-parse.inc/)_** - Parse and customise pawn code at compile-time.
 - **_[strlib.inc](https://github.com/oscar-broman/strlib)_** - String functions in SA:MP. 
-- **_[extended-vehicle-information](https://github.com/Vince0789/sa-mp-extended-vehicle-information)_** - Large amounts of vehicle flags from single player. 
+- **_[extended-vehicle-information.inc](https://github.com/Vince0789/sa-mp-extended-vehicle-information)_** - Large amounts of vehicle flags from single player into an SQLite Database. 
+- **_[geo-ip.inc]_**(https://github.com/Southclaws/SAMP-geoip) - Geographical information based on IP Address. 
 
 
 ## Plugins
