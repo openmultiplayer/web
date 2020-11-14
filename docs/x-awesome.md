@@ -8,6 +8,8 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[Community Compiler](https://github.com/pawn-lang/compiler/)_** - A vastly updated version of the compiler, with many fixes and enhancements.
 - **_[sampctl](http://sampctl.com/)_** - Package manager for installing libraries and running your server.
 - **_[Plugin Runner](https://github.com/Zeex/samp-plugin-runner/)_** - Tool to run a lightweight version of the server directly from command-line (no server.cfg required) for testing plugins.
+- **_[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)_** - Pawn autocompletes for Sublime Text. 
+- **_[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)_** - Pawn autocompletes for Visual Studio Code.
 
 ## Libraries
 
