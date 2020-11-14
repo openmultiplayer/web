@@ -1,6 +1,7 @@
 package web
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"io"
@@ -17,6 +18,9 @@ func StatusNotFound(w http.ResponseWriter, err error) {
 
 // StatusInternalServerError writes a pretty error and logs
 func StatusInternalServerError(w http.ResponseWriter, err error) {
+	if err == context.Canceled {
+		return
+	}
 	zap.L().Error("internal error", zap.Error(err))
 	w.WriteHeader(http.StatusInternalServerError)
 	errToWriter(w, err)

@@ -35,8 +35,6 @@ func (s *PooledScraper) Scrape(ctx context.Context, addresses []string) chan ser
 
 			ss.Core.IP = ss.IP
 
-			// fmt.Println("Hydrated", ss.IP, ss.Domain, ss.Core.IP)
-
 			out <- ss
 		}(a)
 	}

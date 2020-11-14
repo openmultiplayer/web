@@ -20,6 +20,7 @@ func New(ctx context.Context, db serverdb.Storer, sc scraper.Scraper) *Worker {
 }
 
 func (w *Worker) RunWithSeed(window time.Duration, addresses []string) error {
+	zap.L().Debug("running with initial database seed", zap.Int("addresses", len(addresses)))
 	for s := range w.sc.Scrape(w.ctx, addresses) {
 		if err := w.db.Upsert(w.ctx, s); err != nil {
 			zap.L().Error("failed to upsert server",
