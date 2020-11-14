@@ -30,3 +30,4 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[sscanf](https://github.com/Y-Less/sscanf/)_** - Convert strings to multiple values, ints, floats, players, etc.
 - **_[MySQL](https://github.com/pBlueG/SA-MP-MySQL/)_** - Connect your server to a MySQL server.
 - **_[streamer](https://github.com/samp-incognito/samp-streamer-plugin/)_** - Bypass many SA:MP limits, like objects and pickups.
+- **_[whirlpool](https://github.com/Southclaws/samp-whirlpool)_** - Cryptographic plugin for SA:MP. 
