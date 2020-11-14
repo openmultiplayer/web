@@ -13,9 +13,11 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/server/src/api/authentication"
 	"github.com/openmultiplayer/web/server/src/api/docs"
 	"github.com/openmultiplayer/web/server/src/api/legacy"
 	"github.com/openmultiplayer/web/server/src/api/servers"
+	"github.com/openmultiplayer/web/server/src/auth"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/queryer"
@@ -29,6 +31,8 @@ import (
 // Config represents environment variable configuration parameters
 type Config struct {
 	ListenAddr string `default:"0.0.0.0:8080" split_words:"true"`
+	HashKey    []byte
+	BlockKey   []byte
 }
 
 // App stores root application state
@@ -56,6 +60,8 @@ func Initialise(root context.Context) (app *App, err error) {
 		return nil, errors.Wrap(err, "failed to connect to prisma")
 	}
 
+	auther := auth.New(app.prisma, app.config.HashKey, app.config.BlockKey)
+
 	storage := serverdb.NewPrisma(app.prisma)
 	sampqueryer := &queryer.SAMPQueryer{}
 
@@ -63,7 +69,7 @@ func Initialise(root context.Context) (app *App, err error) {
 	router.Use(
 		web.WithLogger,
 		web.WithContentType,
-		// auther.WithAuthentication,
+		auther.WithAuthentication,
 		cors.Handler(cors.Options{
 			// AllowedOrigins: []string{"https://www.open.mp"}, // TODO
 			AllowedOrigins:   []string{"*"},
@@ -83,7 +89,7 @@ func Initialise(root context.Context) (app *App, err error) {
 	router.Mount("/", legacy.New(app.ctx, storage, sampqueryer))
 	router.Mount("/server", servers.New(app.ctx, storage, sampqueryer))
 	router.Mount("/docs", docs.New(app.ctx, idx))
-	// router.Mount("/user", user.New(app.prisma, auther))
+	router.Mount("/auth", authentication.New(auther))
 
 	zap.L().Debug("constructed router", zap.Any("router", router))
 

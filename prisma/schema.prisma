@@ -12,8 +12,10 @@ generator client {
 
 model User {
   id      String   @id @default(uuid())
-  email   String
+  email   String   @unique
   name    String
+  pass    String
+  admin   Boolean  @default(false)
   servers Server[]
 }
 
