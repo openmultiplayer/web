@@ -132,7 +132,7 @@ func (s *PrismaStorer) GetServersToQuery(ctx context.Context, since time.Duratio
 }
 
 func (s *PrismaStorer) GetAll(ctx context.Context) ([]server.All, error) {
-	result, err := s.client.Server.FindMany().Exec(ctx)
+	result, err := s.client.Server.FindMany(db.Server.Active.Equals(true)).Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
