@@ -12,10 +12,10 @@ import T from '../../../../../src/components/templates.js'
 
 Bu callback, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz ancak OnPlayerClickTextDraw'da çağırılır.
 
-| İsim         | Açıklama                                                |
-| ------------ | ------------------------------------------------------- |
-| playerid     | Textdrawa tıklayan oyuncunun ID'si.                     |
-| playertextid | Tıklanan player-textdrawın ID'si.                       |
+| İsim         | Açıklama                            |
+| ------------ | ----------------------------------- |
+| playerid     | Textdrawa tıklayan oyuncunun ID'si. |
+| playertextid | Tıklanan player-textdrawın ID'si.   |
 
 ## Geri Döndürülen Değerler
 

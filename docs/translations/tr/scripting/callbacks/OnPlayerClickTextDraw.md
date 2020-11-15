@@ -12,10 +12,10 @@ import T from '../../../../../src/components/templates.js'
 
 Bu callback bir oyuncu bir textdrawa tıkladığında yada ESC tuşu ile seçim modunu iptal ettiğinde çağırılır.
 
-| İsim      | Açıklama                                                                               |
-| --------- | -------------------------------------------------------------------------------------- |
-| playerid  | Textdrawa tıklayan oyuncunun ID'si.                                                    |
-| clickedid | Tıklanan tectdraw ID'si. Eğer seçim iptal edilirse INVALID_TEXT_DRAW değeri döndürülür.|
+| İsim      | Açıklama                                                                                |
+| --------- | --------------------------------------------------------------------------------------- |
+| playerid  | Textdrawa tıklayan oyuncunun ID'si.                                                     |
+| clickedid | Tıklanan tectdraw ID'si. Eğer seçim iptal edilirse INVALID_TEXT_DRAW değeri döndürülür. |
 
 ## Geri Döndürülen Değerler
 

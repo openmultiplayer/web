@@ -8,11 +8,11 @@ tags: ["player"]
 
 Bu callback bir oyuncu öldüğünde, intihar ettiğinde yada başka bir oyuncu tarafından öldürüldüğünde çağırılır.
 
-| İsim     | Açıklama                                                                                      |
-| -------- | --------------------------------------------------------------------------------------------- |
-| playerid | Ölen oyuncunun ID'si.                                                                         |
-| killerid | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu  yoksa INVALID_PLAYER_ID değeri döndürülür.  |
-| reason   | Oyuncunun ölüm sebebinin ID'si.                                                               |
+| İsim     | Açıklama                                                                                    |
+| -------- | ------------------------------------------------------------------------------------------- |
+| playerid | Ölen oyuncunun ID'si.                                                                       |
+| killerid | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu yoksa INVALID_PLAYER_ID değeri döndürülür. |
+| reason   | Oyuncunun ölüm sebebinin ID'si.                                                             |
 
 ## Geri Döndürülen Değerler
 
