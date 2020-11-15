@@ -13,7 +13,6 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads/)_** - Zone Editor for making Area and stuff.
 - **_[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)_** - Popular Map Editor for SA:MP.
 
-
 ## Libraries
 
 - **_[SA:MP stdlib](https://github.com/pawn-lang/samp-stdlib/)_** - Updated versions of the default includes. `const`-correct, documented, and complete.
