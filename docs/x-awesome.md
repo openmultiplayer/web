@@ -22,7 +22,7 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[strlib.inc](https://github.com/oscar-broman/strlib/)_** - String functions in SA:MP.
 - **_[extended-vehicle-information.inc](https://github.com/Vince0789/sa-mp-extended-vehicle-information/)_** - Large amounts of vehicle flags from single player into an SQLite Database.
 - **_[geo-ip.inc](https://github.com/Southclaws/SAMP-geoip/)_** - Geographical information based on IP Address.
-- **_[samp-aviation]https://github.com/Southclaws/samp-aviation/)_** - Autopilot in SA:MP.
+- **_[samp-aviation](https://github.com/Southclaws/samp-aviation/)_** - Autopilot in SA:MP.
 - **_[progress2.inc](https://github.com/Southclaws/progress2/)_** - Display time, health, vehicle fuel and other things as a progressive bar.
 - **_[weapon-data.inc](https://github.com/Southclaws/samp-weapon-dat/)_** - Finely tuned, customisable weapon data.
 - **_[izcmd.inc](https://github.com/YashasSamaga/I-ZCMD/)_** - Command processor.
