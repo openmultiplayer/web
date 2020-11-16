@@ -1,5 +1,5 @@
 const Page = () => (
-  <section className="pa2">
+  <section className="pa2 measure-wide center">
     <h1>Open Multiplayer</h1>
 
     <p>
