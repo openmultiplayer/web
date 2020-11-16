@@ -36,11 +36,12 @@ const Page = (props: Props) => {
 // -
 
 import { readFileSync, statSync } from "fs";
-import { resolve } from "path";
+import { resolve, extname } from "path";
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import hydrate from "next-mdx-remote/hydrate";
 import visit from "unist-util-visit";
 import matter from "gray-matter";
+import glob from "glob";
 
 // Remark plugin for colours.
 // Usage:
@@ -145,9 +146,12 @@ export async function getStaticProps(
 }
 
 export async function getStaticPaths() {
-  // TODO: make this dynamic for all files in ./docs/
+  const paths = glob
+    .sync("docs/**/*.md")
+    .map((v: string) => "/" + v.slice(0, v.length - extname(v).length));
+
   return {
-    paths: ["/docs/index"],
+    paths: paths,
     fallback: true,
   };
 }
