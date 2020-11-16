@@ -6,24 +6,41 @@ import renderToString from "next-mdx-remote/render-to-string";
 
 type Props = {
   source?: any;
+  error?: string;
+  data?: { [key: string]: any };
 };
 
 const Page = (props: Props) => {
+  if (props.error) {
+    return (
+      <section>
+        <h1>Error!</h1>
+        <p>{props.error}</p>
+      </section>
+    );
+  }
+
   const content = props.source && hydrate(props.source);
 
   // TODO: sidebar and contents
-  return <section className="measure-wide center">{content}</section>;
+  return (
+    <section className="measure-wide center">
+      <h1>{props?.data?.title}</h1>
+      {content}
+    </section>
+  );
 };
 
 // -
 // Server side
 // -
 
-import { readFileSync } from "fs";
+import { readFileSync, statSync } from "fs";
 import { resolve } from "path";
-import { GetStaticPropsContext } from "next";
+import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import hydrate from "next-mdx-remote/hydrate";
 import visit from "unist-util-visit";
+import matter from "gray-matter";
 
 // Remark plugin for colours.
 // Usage:
@@ -89,29 +106,48 @@ const remarkColour = function attacher() {
   };
 };
 
+const exists = (path): boolean => {
+  try {
+    statSync(path);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
-) {
+): Promise<GetStaticPropsResult<Props>> {
   // TODO: support .md as well?
-  const path: string = resolve("docs", ...context.params.path) + ".mdx";
+  const path_mdx: string = resolve("docs", ...context.params.path) + ".mdx";
+  const path_md: string = resolve("docs", ...context.params.path) + ".md";
 
-  const source = readFileSync(path).toString();
+  let source: string;
+  if (exists(path_mdx)) {
+    source = readFileSync(path_mdx).toString();
+  } else if (exists(path_md)) {
+    source = readFileSync(path_md).toString();
+  } else {
+    return { props: { error: "Not found" } };
+  }
+
+  const { content, data } = matter(source);
 
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
-  const mdxSource = await renderToString(source, {
+  const mdxSource = await renderToString(content, {
     mdxOptions: {
       remarkPlugins: [remarkColour],
     },
   });
 
-  return { props: { source: mdxSource } };
+  return { props: { source: mdxSource, data } };
 }
 
 export async function getStaticPaths() {
   // TODO: make this dynamic for all files in ./docs/
   return {
-    paths: ["/docs/test"],
+    paths: ["/docs/index"],
     fallback: true,
   };
 }
