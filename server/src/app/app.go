@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/go-chi/chi"
+	"github.com/go-chi/cors"
 	"github.com/kelseyhightower/envconfig"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
@@ -61,6 +62,15 @@ func Initialise(root context.Context) (app *App, err error) {
 		web.WithLogger,
 		web.WithContentType,
 		// auther.WithAuthentication,
+		cors.Handler(cors.Options{
+			// AllowedOrigins: []string{"https://www.open.mp"}, // TODO
+			AllowedOrigins:   []string{"*"},
+			AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+			AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
+			ExposedHeaders:   []string{"Link"},
+			AllowCredentials: false,
+			MaxAge:           300,
+		}),
 	)
 
 	router.Mount("/", legacy.New(app.ctx, storage, sampqueryer))
