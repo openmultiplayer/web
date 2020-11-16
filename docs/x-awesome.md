@@ -51,5 +51,6 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **_[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)_** - SHA512 Cryptographic plugin for SA:MP.
 
 ## Game Modes
+
 - **_[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)_** - Lists of gamemodes that are compatible with open.mp.
 - **_[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)_** - Based PvP Survival Gamemode.
