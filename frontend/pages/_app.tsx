@@ -48,7 +48,7 @@ const footerList = (heading, items) => (
     <h4 className="ma0">{heading}</h4>
     <ul>
       {map(([path, name]) => (
-        <li>
+        <li key={path}>
           <Link href={path}>
             <a className="light-blue hover-white">{name}</a>
           </Link>
