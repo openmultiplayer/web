@@ -94,7 +94,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <div id="container">
       <Nav route={router.pathname} />
 
-      <main className="near-white pa3 ma0 measure-wide center">
+      <main className="near-white pa3 ma0">
         <Component {...pageProps} />
       </main>
     </div>
