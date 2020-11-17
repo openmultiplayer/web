@@ -22,7 +22,10 @@ const NavItems: NavItem[] = [
 const buildNav = (current: string) =>
   compose(
     map((v: NavItem) => (
-      <li className={"self-center br2 pa2 mh2 hover-bg-black-10 " + v.extra}>
+      <li
+        key={v.path}
+        className={"self-center br2 pa2 mh2 hover-bg-black-10 " + v.extra}
+      >
         <Link href={v.path}>
           <a className="link">{v.name}</a>
         </Link>
