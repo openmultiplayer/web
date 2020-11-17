@@ -38,7 +38,7 @@ const buildNav = (current: string) =>
 
 const Nav = ({ route }) => (
   <>
-    <nav className="flex items-stretch">
+    <nav className="flex items-stretch absolute w-100 z-100">
       <div className="flex-shrink-0">
         <Image src="/img/logo-dark-trans.png" width={64} height={64} />
       </div>
@@ -117,7 +117,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <div id="container">
       <Nav route={router.pathname} />
 
-      <main className="pa3 ma0">
+      <main className="pa0 ma0">
         <Component {...pageProps} />
       </main>
     </div>
