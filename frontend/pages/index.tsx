@@ -14,7 +14,9 @@ const Page = ({ content }: Props) => (
       </div>
 
       <article className="pa0 ma0 bg-white">
-        <div className="center measure pa4">{hydrate(content)}</div>
+        <div className="center measure pa4">
+          {hydrate(content, { components: MDX_COMPONENTS })}
+        </div>
       </article>
 
       <div className="background">
@@ -60,6 +62,7 @@ import { readFileSync } from "fs";
 import { join } from "path";
 import renderToString from "next-mdx-remote/render-to-string";
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
+import { MDX_COMPONENTS } from "../components/typography";
 
 export async function getStaticProps({
   locale,
@@ -67,7 +70,8 @@ export async function getStaticProps({
   return {
     props: {
       content: await renderToString(
-        readFileSync(join("content", locale, "index.mdx"))
+        readFileSync(join("content", locale, "index.mdx")),
+        { components: MDX_COMPONENTS }
       ),
     },
   };
