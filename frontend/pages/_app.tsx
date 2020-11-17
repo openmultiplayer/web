@@ -5,6 +5,7 @@ import type { AppProps /*, AppContext */ } from "next/app";
 import { compose, map } from "lodash/fp";
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
+import { NextSeo } from "next-seo";
 
 const NavItems = [
   { name: "Home", path: "/" },
@@ -90,6 +91,17 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <Head>
       <link rel="stylesheet" href="/fonts.css" />
     </Head>
+
+    <NextSeo
+      title="Open Multiplayer"
+      titleTemplate="open.mp | %s"
+      canonical="https://www.open.mp"
+      twitter={{
+        cardType: "summary",
+        site: "@openmultiplayer",
+        handle: "@openmultiplayer",
+      }}
+    />
 
     <div id="container">
       <Nav route={router.pathname} />
