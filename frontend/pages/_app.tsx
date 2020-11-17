@@ -38,7 +38,7 @@ const buildNav = (current: string) =>
 
 const Nav = ({ route }) => (
   <>
-    <nav className="flex items-stretch absolute w-100 z-100">
+    <nav className="flex items-stretch absolute w-100 z-max bb b--black-30 bg-white">
       <div className="flex-shrink-0">
         <Image src="/img/logo-dark-trans.png" width={64} height={64} />
       </div>
@@ -49,11 +49,13 @@ const Nav = ({ route }) => (
 
     <style jsx>{`
       nav {
-        background-color: #8577ce;
+        height: 4em;
       }
     `}</style>
   </>
 );
+
+const DocsSidebar = () => <p>{JSON.stringify(process.env.tree)}</p>;
 
 const footerList = (heading, items) => (
   <div className="flex flex-column">
@@ -116,6 +118,8 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
 
     <div id="container">
       <Nav route={router.pathname} />
+
+      {router.pathname.startsWith("/docs") ?? <DocsSidebar />}
 
       <main className="pa0 ma0">
         <Component {...pageProps} />

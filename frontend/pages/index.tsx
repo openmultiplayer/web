@@ -19,7 +19,7 @@ const Page = ({ content }: Props) => (
         </div>
       </article>
 
-      <div className="background">
+      <div className="background gradient">
         <Image
           className="fixed"
           src="/img/hero-bg.jpg"
@@ -33,15 +33,14 @@ const Page = ({ content }: Props) => (
     <style jsx>{`
       section {
         display: grid;
+        grid-template-rows: 4em auto;
       }
       .foreground {
-        grid-row: 1/2;
+        grid-row: 2/3;
         grid-column: 1/2;
         z-index: 2;
       }
       .background {
-        grid-row: 1/2;
-        grid-column: 1/2;
         z-index: 0;
         height: 100%;
         width: 100%;
@@ -50,7 +49,18 @@ const Page = ({ content }: Props) => (
         overflow: clip;
         top: 1;
       }
+
+      .gradient {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 60%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
       article {
+        grid-row: 3/4;
         grid-column: 1/2;
         z-index: 2;
       }
