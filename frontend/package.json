@@ -13,6 +13,7 @@
     "fuse.js": "^6.4.3",
     "lodash": "^4.17.20",
     "next": "10.0.1",
+    "next-mdx-remote": "^1.0.0",
     "next-seo": "^4.17.0",
     "normalize.css": "^8.0.1",
     "react": "17.0.1",
