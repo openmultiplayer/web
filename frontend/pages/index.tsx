@@ -12,24 +12,9 @@ const Page = ({ content }: Props) => (
       <div className="foreground flex">
         <WordmarkInverse />
       </div>
+
       <article className="pa0 ma0 bg-white">
         <div className="center measure pa4">{hydrate(content)}</div>
-      </article>
-
-      <article className="pa0 ma0 bg-white">
-        <div className="center measure">
-          <h1>more text</h1>
-
-          <p>
-            XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD
-            XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD
-          </p>
-
-          <p>
-            XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD
-            XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD
-          </p>
-        </div>
       </article>
 
       <div className="background">
