@@ -1,13 +1,19 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import type { AppProps /*, AppContext */ } from "next/app";
+import type { AppProps } from "next/app";
 import { compose, map } from "lodash/fp";
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
 import { NextSeo } from "next-seo";
 
-const NavItems = [
+type NavItem = {
+  name: string;
+  path: string;
+  extra?: string;
+};
+
+const NavItems: NavItem[] = [
   { name: "Home", path: "/" },
   { name: "Servers", path: "/servers" },
   { name: "Docs", path: "/docs" },
@@ -15,14 +21,16 @@ const NavItems = [
 
 const buildNav = (current: string) =>
   compose(
-    map((v) => (
+    map((v: NavItem) => (
       <li className={"self-center br2 pa2 mh2 hover-bg-black-10 " + v.extra}>
         <Link href={v.path}>
           <a className="link">{v.name}</a>
         </Link>
       </li>
     )),
-    map((v) => (current === v.path ? { ...v, extra: "bg-black-10" } : v))
+    map((v: NavItem) =>
+      current === v.path ? { ...v, extra: "bg-black-10" } : v
+    )
   );
 
 const Nav = ({ route }) => (
@@ -106,7 +114,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <div id="container">
       <Nav route={router.pathname} />
 
-      <main className="near-white pa3 ma0">
+      <main className="pa3 ma0">
         <Component {...pageProps} />
       </main>
     </div>
@@ -117,7 +125,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
       body,
       #__next {
         height: 100%;
-        background-color: #111119;
+        background-color: #fefefe;
         font-family: english-grotesque, sans-serif;
         display: flex;
         flex-direction: column;
