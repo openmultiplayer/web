@@ -1,4 +1,5 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 import useSWR from "swr";
 
@@ -92,13 +93,11 @@ const Rules = ({ server }) => {
 
 const Info = ({ data }: { data: Server }) => (
   <article>
-    {/* <NextSeo
-      config={{
-        title: `${data.core.hn} | SA-MP Servers Index`,
-        canonical: `https://www.samp-servers.net/server/${data.core.ip}`,
-        description: `${data.core.pc}/${data.core.pm} players currently online at ${data.core.hn} (${data.core.gm}). View more information on SA-MP Servers Index.`,
-      }}
-    /> */}
+    <NextSeo
+      title={`${data.core.hn} | SA-MP Servers Index`}
+      canonical={`https://www.open.mp/servers/${data.core.ip}`}
+      description={`${data.core.pc}/${data.core.pm} players currently online at ${data.core.hn} (${data.core.gm}). View more information on open.mp servers list.`}
+    />
 
     <hgroup>
       <h1 className="pv0 mb0">{data.core.hn}</h1>

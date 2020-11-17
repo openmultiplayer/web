@@ -2,6 +2,7 @@ import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import useSWR from "swr";
 import { map, reduce, flow, sum } from "lodash/fp";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 const API_SERVERS = `https://index.open.mp/server/`;
 
@@ -101,6 +102,11 @@ const Page = ({ initialData }: Props) => {
 
   return (
     <section className="measure-wide center">
+      <NextSeo
+        title="Server List"
+        description="Live indexing and data for all SA-MP servers."
+      />
+
       <h1>Servers</h1>
       {error ? <Error error={error} /> : <List data={data} />}
     </section>
