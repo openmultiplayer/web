@@ -42,7 +42,7 @@ const Item = ({ k, v }) => {
   return (
     <>
       <dt className="f6 pt2 b">{k}</dt>
-      <dd className="ml0 lh-copy white-60">{v}</dd>
+      <dd className="ml0 lh-copy black-50">{v}</dd>
     </>
   );
 };
@@ -101,7 +101,7 @@ const Info = ({ data }: { data: Server }) => (
 
     <hgroup>
       <h1 className="pv0 mb0">{data.core.hn}</h1>
-      <div className="white-30 pv1 mt0 flex justify-between">
+      <div className="black-50 pv1 mt0 flex justify-between">
         <h2 className="di static mv0">{data.core.gm}</h2>
         <span className="lh-copy f6 self-end">
           {data.core.pa ? "🔐" : null}
@@ -133,7 +133,7 @@ const Page = ({ ip, initialData }: Props) => {
     <>
       <section className="measure-wide center">
         <Link href="/servers">
-          <a className="white-80 hover-blue">Back</a>
+          <a className="black-80 hover-blue">Back</a>
         </Link>
 
         {error ? <Error error={error} /> : <Info data={data} />}
