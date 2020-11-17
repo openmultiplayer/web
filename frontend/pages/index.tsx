@@ -1,29 +1,19 @@
 import Image from "next/image";
 import { WordmarkInverse } from "../components/logo";
+import hydrate from "next-mdx-remote/hydrate";
 
-const Page = () => (
+type Props = {
+  content: { compiledSource: any; renderedOutput: any; scope: any };
+};
+
+const Page = ({ content }: Props) => (
   <>
     <section className="pa0 ma0">
       <div className="foreground flex">
         <WordmarkInverse />
       </div>
       <article className="pa0 ma0 bg-white">
-        <div className="center measure pa4">
-          <h1>Open Multiplayer</h1>
-
-          <p>
-            An upcoming multiplayer mod for Grand Theft Auto: San Andreas that
-            will be fully backwards compatible with the existing multiplayer mod
-            San Andreas Multiplayer.
-          </p>
-
-          <p>
-            This means the existing SA:MP client and all existing SA:MP scripts
-            will work with open.mp and, in addition to this, many bugs will also
-            be fixed within the server software without the need for hacks and
-            workarounds.
-          </p>
-        </div>
+        <div className="center measure pa4">{hydrate(content)}</div>
       </article>
 
       <article className="pa0 ma0 bg-white">
@@ -80,5 +70,22 @@ const Page = () => (
     `}</style>
   </>
 );
+
+import { readFileSync } from "fs";
+import { join } from "path";
+import renderToString from "next-mdx-remote/render-to-string";
+import { GetStaticPropsContext, GetStaticPropsResult } from "next";
+
+export async function getStaticProps({
+  locale,
+}: GetStaticPropsContext): Promise<GetStaticPropsResult<Props>> {
+  return {
+    props: {
+      content: await renderToString(
+        readFileSync(join("content", locale, "index.mdx"))
+      ),
+    },
+  };
+}
 
 export default Page;
