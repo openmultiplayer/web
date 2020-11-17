@@ -39,8 +39,12 @@ const buildNav = (current: string) =>
 const Nav = ({ route }) => (
   <>
     <nav className="flex items-stretch absolute w-100 z-max bb b--black-30 bg-white">
-      <div className="flex-shrink-0">
-        <Image src="/img/logo-dark-trans.png" width={64} height={64} />
+      <div className="flex-shrink-0 pa2">
+        <Link href="/">
+          <a>
+            <Image src="/img/logo-dark-trans.png" width={50} height={50} />
+          </a>
+        </Link>
       </div>
       <ul className="list flex pa3 ma0 justify-between align-center center">
         {buildNav(route)(NavItems)}
