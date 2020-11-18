@@ -1,3 +1,21 @@
+// import components from "../../components/templates";
+
+const components = {
+  VersionWarn: ({ version, name = "function" }) =>
+    `:::warning
+
+This ${name} was added in ${version} and will not work in earlier versions!
+
+:::`,
+  LowercaseNote: ({ version, name = "function" }) => <p>LowercaseNote</p>,
+  TipNPCCallbacks: ({ version, name = "function" }) => <p>TipNPCCallbacks</p>,
+  VersionWarnID: ({ version, name = "function" }) => <p>VersionWarnID</p>,
+  LowercaseNoteID: ({ version, name = "function" }) => <p>LowercaseNoteID</p>,
+  TipNPCCallbacksID: ({ version, name = "function" }) => (
+    <p>TipNPCCallbacksID</p>
+  ),
+};
+
 // -
 // Client side
 // -
@@ -20,7 +38,7 @@ const Page = (props: Props) => {
     );
   }
 
-  const content = props.source && hydrate(props.source);
+  const content = props.source && hydrate(props.source, { components });
 
   // TODO: sidebar and contents
   return (
@@ -42,6 +60,7 @@ import hydrate from "next-mdx-remote/hydrate";
 import visit from "unist-util-visit";
 import matter from "gray-matter";
 import glob from "glob";
+import admonitions from "remark-admonitions";
 
 // Remark plugin for colours.
 // Usage:
@@ -138,7 +157,8 @@ export async function getStaticProps(
   // also, pawn syntax highlighting
   const mdxSource = await renderToString(content, {
     mdxOptions: {
-      remarkPlugins: [remarkColour],
+      components,
+      remarkPlugins: [admonitions],
     },
   });
 
