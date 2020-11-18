@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import type { AppProps } from "next/app";
-import { compose, map } from "lodash/fp";
+import { compose, flow, map, sortBy } from "lodash/fp";
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
 import { NextSeo } from "next-seo";
@@ -59,7 +59,43 @@ const Nav = ({ route }) => (
   </>
 );
 
-const DocsSidebar = () => <p>{JSON.stringify(process.env.tree)}</p>;
+type SidebarCategory = {
+  type: string;
+  label: string;
+  items: SidebarCategory[];
+};
+
+type SidebarItem = SidebarCategory | string;
+
+const DocsSidebar = ({
+  title,
+  tree,
+}: {
+  title: string;
+  tree: SidebarItem[];
+}) => (
+  <>
+    <h2>{title}</h2>
+    <ul>
+      {flow(
+        sortBy((v: SidebarItem) => typeof v === "string"),
+        map((v: SidebarItem) =>
+          typeof v === "string" ? (
+            <li key={v}>
+              <Link href={`/docs/${v}`}>
+                <a>{v}</a>
+              </Link>
+            </li>
+          ) : (
+            <li key={v.label}>
+              <DocsSidebar title={v.label} tree={v.items} />
+            </li>
+          )
+        )
+      )(tree)}
+    </ul>
+  </>
+);
 
 const footerList = (heading, items) => (
   <div className="flex flex-column">
@@ -103,6 +139,10 @@ const Footer = () => (
   </footer>
 );
 
+type SidebarTree = {
+  Sidebar: SidebarItem[];
+};
+
 const MyApp = ({ Component, pageProps, router }: AppProps) => (
   <>
     <Head>
@@ -123,7 +163,15 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <div id="container">
       <Nav route={router.pathname} />
 
-      {router.pathname.startsWith("/docs") && <DocsSidebar />}
+      {router.pathname.startsWith("/docs") && (
+        <DocsSidebar
+          title="Contents"
+          tree={
+            ((process.env.tree as unknown) as SidebarTree)
+              .Sidebar as SidebarItem[]
+          }
+        />
+      )}
 
       <main className="pt5 pa0 ma0">
         <Component {...pageProps} />
