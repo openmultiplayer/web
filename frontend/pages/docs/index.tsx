@@ -1,8 +1,11 @@
 const Page = () => {
   return (
-    <section>
+    <section className="measure-wide center">
       <h1>Documentation</h1>
-      <p>New docs site! Nextra pls.</p>
+      <p>
+        This is the new documentation site for open.mp and SA-MP. It's a work in
+        progress!
+      </p>
     </section>
   );
 };
