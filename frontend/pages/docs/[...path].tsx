@@ -40,9 +40,9 @@ const Page = (props: Props) => {
 
   const content = props.source && hydrate(props.source, { components });
 
-  // TODO: sidebar and contents
+  // TODO: contents of each page
   return (
-    <section className="measure-wide center pv3">
+    <section className="mw7 center pv3">
       <h1>{props?.data?.title}</h1>
       {content}
     </section>
