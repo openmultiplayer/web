@@ -125,7 +125,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
 
       {router.pathname.startsWith("/docs") ?? <DocsSidebar />}
 
-      <main className="pa0 ma0">
+      <main className="pt5 pa0 ma0">
         <Component {...pageProps} />
       </main>
     </div>
