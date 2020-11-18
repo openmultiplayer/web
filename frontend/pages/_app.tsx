@@ -38,7 +38,7 @@ const buildNav = (current: string) =>
 
 const Nav = ({ route }) => (
   <>
-    <nav className="flex items-stretch absolute w-100 z-max bb b--black-30 bg-white">
+    <nav className="flex items-stretch bb b--black-30 bg-white">
       <div className="flex-shrink-0 pa2">
         <Link href="/">
           <a>
@@ -123,7 +123,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <div id="container">
       <Nav route={router.pathname} />
 
-      {router.pathname.startsWith("/docs") ?? <DocsSidebar />}
+      {router.pathname.startsWith("/docs") && <DocsSidebar />}
 
       <main className="pt5 pa0 ma0">
         <Component {...pageProps} />
