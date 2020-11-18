@@ -89,19 +89,19 @@ const DocsSidebar = ({
 }) => (
   <>
     <details open={open}>
-      <summary>{title}</summary>
-      <ul className="list ph2 ma1">
+      <summary className="pointer pa1 hover-blue">{title}</summary>
+      <ul className="list pl2 ma0">
         {flow(
           sortBy((v: SidebarItem) => typeof v === "string"),
           map((v: SidebarItem) =>
             typeof v === "string" ? (
-              <li key={v}>
+              <li key={v} className="pa1 truncate">
                 <Link href={`/docs/${v}`}>
-                  <a>{nicenPath(v)}</a>
+                  <a className="link black hover-blue">{nicenPath(v)}</a>
                 </Link>
               </li>
             ) : (
-              <li key={v.label}>
+              <li key={v.label} className="">
                 <DocsSidebar title={v.label} tree={v.items} />
               </li>
             )
@@ -109,6 +109,12 @@ const DocsSidebar = ({
         )(tree)}
       </ul>
     </details>
+
+    <style jsx>{`
+      details {
+        user-select: none;
+      }
+    `}</style>
   </>
 );
 
@@ -180,7 +186,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
 
       <main className="pa0 ma0 flex">
         {router.pathname.startsWith("/docs") && (
-          <nav className="br pa2 b--black-30 mw6">
+          <nav className="br pa2 b--black-30 w5 truncate">
             <DocsSidebar
               title="Contents"
               tree={
