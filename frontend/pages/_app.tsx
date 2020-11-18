@@ -6,7 +6,6 @@ import { compose, flow, map, sortBy } from "lodash/fp";
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
 import { NextSeo } from "next-seo";
-import { last } from "lodash";
 
 type NavItem = {
   name: string;
@@ -67,57 +66,6 @@ const Nav = ({ route }) => (
   </>
 );
 
-type SidebarCategory = {
-  type: string;
-  label: string;
-  items: SidebarItem[];
-};
-
-type SidebarItem = SidebarCategory | string;
-
-// makes the path into a nicely readable string
-const nicenPath = (s: string) => last(s.split("/"));
-
-const DocsSidebar = ({
-  title,
-  tree,
-  open = false,
-}: {
-  title: string;
-  tree: SidebarItem[];
-  open?: boolean;
-}) => (
-  <>
-    <details open={open}>
-      <summary className="pointer pa1 hover-blue">{title}</summary>
-      <ul className="list pl2 ma0">
-        {flow(
-          sortBy((v: SidebarItem) => typeof v === "string"),
-          map((v: SidebarItem) =>
-            typeof v === "string" ? (
-              <li key={v} className="pa1 truncate">
-                <Link href={`/docs/${v}`}>
-                  <a className="link black hover-blue">{nicenPath(v)}</a>
-                </Link>
-              </li>
-            ) : (
-              <li key={v.label} className="">
-                <DocsSidebar title={v.label} tree={v.items} />
-              </li>
-            )
-          )
-        )(tree)}
-      </ul>
-    </details>
-
-    <style jsx>{`
-      details {
-        user-select: none;
-      }
-    `}</style>
-  </>
-);
-
 const footerList = (heading, items) => (
   <div className="flex flex-column">
     <h4 className="ma0">{heading}</h4>
@@ -160,10 +108,6 @@ const Footer = () => (
   </footer>
 );
 
-type SidebarTree = {
-  Sidebar: SidebarItem[];
-};
-
 const MyApp = ({ Component, pageProps, router }: AppProps) => (
   <>
     <Head>
@@ -185,19 +129,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
       <Nav route={router.pathname} />
 
       <main className="pa0 ma0 flex">
-        {router.pathname.startsWith("/docs") && (
-          <nav className="br pa2 b--black-30 w5 truncate">
-            <DocsSidebar
-              title="Contents"
-              tree={
-                ((process.env.tree as unknown) as SidebarTree)
-                  .Sidebar as SidebarItem[]
-              }
-              open={true}
-            />
-          </nav>
-        )}
-
         <Component {...pageProps} />
       </main>
     </div>

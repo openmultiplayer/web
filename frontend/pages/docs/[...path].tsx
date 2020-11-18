@@ -21,6 +21,7 @@ This ${name} was added in ${version} and will not work in earlier versions!
 // -
 
 import renderToString from "next-mdx-remote/render-to-string";
+import { DocsSidebar } from "components/Sidebar";
 
 type Props = {
   source?: any;
@@ -40,12 +41,15 @@ const Page = (props: Props) => {
 
   const content = props.source && hydrate(props.source, { components });
 
-  // TODO: contents of each page
   return (
-    <section className="mw7 center pv3">
-      <h1>{props?.data?.title}</h1>
-      {content}
-    </section>
+    <>
+      <DocsSidebar />
+      <section className="mw7 pa3 center">
+        <h1>{props?.data?.title}</h1>
+        {content}
+      </section>
+      <nav>{/* TODO: Table of contents */}</nav>
+    </>
   );
 };
 
