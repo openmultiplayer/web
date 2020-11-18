@@ -42,7 +42,7 @@ const Page = (props: Props) => {
 
   // TODO: sidebar and contents
   return (
-    <section className="measure-wide center">
+    <section className="measure-wide center pv3">
       <h1>{props?.data?.title}</h1>
       {content}
     </section>

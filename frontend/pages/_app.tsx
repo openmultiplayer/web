@@ -6,15 +6,17 @@ import { compose, flow, map, sortBy } from "lodash/fp";
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
 import { NextSeo } from "next-seo";
+import { last } from "lodash";
 
 type NavItem = {
   name: string;
   path: string;
+  exact?: boolean;
   extra?: string;
 };
 
 const NavItems: NavItem[] = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "/", exact: true },
   { name: "Servers", path: "/servers" },
   { name: "Docs", path: "/docs" },
 ];
@@ -32,13 +34,19 @@ const buildNav = (current: string) =>
       </li>
     )),
     map((v: NavItem) =>
-      current === v.path ? { ...v, extra: "bg-black-10" } : v
+      v.exact
+        ? current === v.path
+          ? { ...v, extra: "bg-black-10" }
+          : v
+        : current.startsWith(v.path)
+        ? { ...v, extra: "bg-black-10" }
+        : v
     )
   );
 
 const Nav = ({ route }) => (
   <>
-    <nav className="flex items-stretch bb b--black-30 bg-white">
+    <nav role="main" className="flex items-stretch bb b--black-30 bg-white">
       <div className="flex-shrink-0 pa2">
         <Link href="/">
           <a>
@@ -62,38 +70,45 @@ const Nav = ({ route }) => (
 type SidebarCategory = {
   type: string;
   label: string;
-  items: SidebarCategory[];
+  items: SidebarItem[];
 };
 
 type SidebarItem = SidebarCategory | string;
 
+// makes the path into a nicely readable string
+const nicenPath = (s: string) => last(s.split("/"));
+
 const DocsSidebar = ({
   title,
   tree,
+  open = false,
 }: {
   title: string;
   tree: SidebarItem[];
+  open?: boolean;
 }) => (
   <>
-    <h2>{title}</h2>
-    <ul>
-      {flow(
-        sortBy((v: SidebarItem) => typeof v === "string"),
-        map((v: SidebarItem) =>
-          typeof v === "string" ? (
-            <li key={v}>
-              <Link href={`/docs/${v}`}>
-                <a>{v}</a>
-              </Link>
-            </li>
-          ) : (
-            <li key={v.label}>
-              <DocsSidebar title={v.label} tree={v.items} />
-            </li>
+    <details open={open}>
+      <summary>{title}</summary>
+      <ul className="list ph2 ma1">
+        {flow(
+          sortBy((v: SidebarItem) => typeof v === "string"),
+          map((v: SidebarItem) =>
+            typeof v === "string" ? (
+              <li key={v}>
+                <Link href={`/docs/${v}`}>
+                  <a>{nicenPath(v)}</a>
+                </Link>
+              </li>
+            ) : (
+              <li key={v.label}>
+                <DocsSidebar title={v.label} tree={v.items} />
+              </li>
+            )
           )
-        )
-      )(tree)}
-    </ul>
+        )(tree)}
+      </ul>
+    </details>
   </>
 );
 
@@ -163,17 +178,20 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <div id="container">
       <Nav route={router.pathname} />
 
-      {router.pathname.startsWith("/docs") && (
-        <DocsSidebar
-          title="Contents"
-          tree={
-            ((process.env.tree as unknown) as SidebarTree)
-              .Sidebar as SidebarItem[]
-          }
-        />
-      )}
+      <main className="pa0 ma0 flex">
+        {router.pathname.startsWith("/docs") && (
+          <nav className="br pa2 b--black-30 mw6">
+            <DocsSidebar
+              title="Contents"
+              tree={
+                ((process.env.tree as unknown) as SidebarTree)
+                  .Sidebar as SidebarItem[]
+              }
+              open={true}
+            />
+          </nav>
+        )}
 
-      <main className="pt5 pa0 ma0">
         <Component {...pageProps} />
       </main>
     </div>
