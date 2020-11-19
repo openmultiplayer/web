@@ -7,6 +7,7 @@ import (
 	"github.com/gorilla/securecookie"
 
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/verifier"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -14,6 +15,7 @@ import (
 type Authentication struct {
 	db *db.PrismaClient
 	sc *securecookie.SecureCookie
+	vf verifier.Verifier
 }
 
 // New initialises a new authentication service

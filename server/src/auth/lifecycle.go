@@ -26,6 +26,10 @@ func (a *Authentication) Register(ctx context.Context, name, identifier, authori
 		return nil, err
 	}
 
+	if err := a.vf.Request(identifier, key.String()); err != nil {
+		return nil, err
+	}
+
 	user, err := a.db.User.CreateOne(
 		db.User.Email.Set(identifier),
 		db.User.Name.Set(name),
@@ -84,4 +88,22 @@ func (a *Authentication) ChangePassword(ctx context.Context, userid, prev, new s
 	}
 
 	return nil
+}
+
+func (a *Authentication) ReRequestVerification(ctx context.Context, identifier string) error {
+	key, err := uuid.NewV4()
+	if err != nil {
+		return err
+	}
+
+	if err := a.vf.Request(identifier, key.String()); err != nil {
+		return err
+	}
+
+	_, err = a.db.User.
+		FindOne(db.User.Email.Equals(identifier)).
+		Update(db.User.VerifyKey.Set(key.String())).
+		Exec(ctx)
+
+	return err
 }

@@ -2,14 +2,12 @@ package verifier
 
 import (
 	"errors"
-
-	"github.com/gofrs/uuid"
 )
 
 var ErrInvalidKey = errors.New("Invalid verification key")
 
 type Verifier interface {
-	Request(id string) error
+	Request(id, key string) error
 	Verify(id, key string) (bool, error)
 }
 
@@ -17,12 +15,8 @@ type Mock struct {
 	data map[string]string
 }
 
-func (v *Mock) Request(id string) error {
-	key, err := uuid.NewV4()
-	if err != nil {
-		return err
-	}
-	v.data[key.String()] = id
+func (v *Mock) Request(id, key string) error {
+	v.data[key] = id
 	return nil
 }
 
