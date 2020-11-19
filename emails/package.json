@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "mjml verify.mjml -o verify.html"
+    "build": "mjml template_verify.mjml -o template_verify.html"
   },
   "keywords": [],
   "author": "",

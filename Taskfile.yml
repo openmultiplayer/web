@@ -26,3 +26,8 @@ tasks:
     dir: frontend/public
     cmds:
       - mc cp --recursive images omp/assets
+
+  build-email-templates:
+    dir: emails
+    cmds:
+      - npm run build
