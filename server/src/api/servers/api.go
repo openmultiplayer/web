@@ -19,8 +19,8 @@ func New(ctx context.Context, storer serverdb.Storer, queryer queryer.Queryer) *
 	svc := service{ctx, storer, queryer}
 
 	rtr.Get("/{address}", svc.get)
-
 	rtr.Get("/", svc.list)
+	rtr.Post("/", svc.add)
 
 	return rtr
 }
