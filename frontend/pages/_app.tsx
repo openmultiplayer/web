@@ -7,6 +7,8 @@ import "normalize.css";
 import "tachyons/css/tachyons.min.css";
 import { NextSeo } from "next-seo";
 
+import "styles/base.css";
+
 type NavItem = {
   name: string;
   path: string;
@@ -139,8 +141,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
       body,
       #__next {
         height: 100%;
-        background-color: #fefefe;
-        font-family: english-grotesque, sans-serif;
         display: flex;
         flex-direction: column;
       }
