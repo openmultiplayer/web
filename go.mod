@@ -7,6 +7,8 @@ require (
 	github.com/Southclaws/go-samp-query v1.1.2
 	github.com/Southclaws/qstring v1.1.0
 	github.com/blevesearch/bleve v1.0.14
+	github.com/cenkalti/backoff v2.2.1+incompatible
+	github.com/cskr/pubsub v1.0.2
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/cors v1.1.1
 	github.com/gofrs/uuid v3.3.0+incompatible
