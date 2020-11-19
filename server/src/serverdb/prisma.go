@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/openmultiplayer/server-index/server/src/db"
-	"github.com/openmultiplayer/server-index/server/src/server"
+	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/server"
 	"github.com/pkg/errors"
 )
 

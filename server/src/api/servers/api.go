@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/go-chi/chi"
-	"github.com/openmultiplayer/server-index/server/src/queryer"
-	"github.com/openmultiplayer/server-index/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/queryer"
+	"github.com/openmultiplayer/web/server/src/serverdb"
 )
 
 type service struct {

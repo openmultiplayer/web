@@ -3,7 +3,7 @@ package legacy
 import (
 	"net/http"
 
-	"github.com/openmultiplayer/server-index/server/src/web"
+	"github.com/openmultiplayer/web/server/src/web"
 	"github.com/pkg/errors"
 )
 

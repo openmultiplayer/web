@@ -1,4 +1,4 @@
-module github.com/openmultiplayer/server-index
+module github.com/openmultiplayer/web
 
 go 1.14
 

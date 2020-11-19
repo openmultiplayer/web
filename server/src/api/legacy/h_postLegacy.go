@@ -9,8 +9,8 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/go-chi/chi"
-	"github.com/openmultiplayer/server-index/server/src/server"
-	"github.com/openmultiplayer/server-index/server/src/web"
+	"github.com/openmultiplayer/web/server/src/server"
+	"github.com/openmultiplayer/web/server/src/web"
 	"github.com/pkg/errors"
 )
 

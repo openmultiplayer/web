@@ -3,7 +3,7 @@ package scraper
 import (
 	"context"
 
-	"github.com/openmultiplayer/server-index/server/src/server"
+	"github.com/openmultiplayer/web/server/src/server"
 )
 
 type Scraper interface {

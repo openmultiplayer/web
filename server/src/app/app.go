@@ -13,15 +13,15 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 
-	"github.com/openmultiplayer/server-index/server/src/api/legacy"
-	"github.com/openmultiplayer/server-index/server/src/api/servers"
-	"github.com/openmultiplayer/server-index/server/src/db"
-	"github.com/openmultiplayer/server-index/server/src/queryer"
-	"github.com/openmultiplayer/server-index/server/src/scraper"
-	"github.com/openmultiplayer/server-index/server/src/seed"
-	"github.com/openmultiplayer/server-index/server/src/serverdb"
-	"github.com/openmultiplayer/server-index/server/src/web"
-	"github.com/openmultiplayer/server-index/server/src/worker"
+	"github.com/openmultiplayer/web/server/src/api/legacy"
+	"github.com/openmultiplayer/web/server/src/api/servers"
+	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/queryer"
+	"github.com/openmultiplayer/web/server/src/scraper"
+	"github.com/openmultiplayer/web/server/src/seed"
+	"github.com/openmultiplayer/web/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/web"
+	"github.com/openmultiplayer/web/server/src/worker"
 )
 
 // Config represents environment variable configuration parameters

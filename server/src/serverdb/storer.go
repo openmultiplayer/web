@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/openmultiplayer/server-index/server/src/server"
+	"github.com/openmultiplayer/web/server/src/server"
 )
 
 // Storer provides an interface for reading and writing server data.

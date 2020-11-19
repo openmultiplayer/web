@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/openmultiplayer/server-index/server/src/scraper"
-	"github.com/openmultiplayer/server-index/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/scraper"
+	"github.com/openmultiplayer/web/server/src/serverdb"
 	"go.uber.org/zap"
 )
 

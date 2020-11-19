@@ -10,7 +10,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/openmultiplayer/server-index/server/src/app"
+	"github.com/openmultiplayer/web/server/src/app"
 )
 
 func main() {
