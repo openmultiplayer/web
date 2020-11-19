@@ -3,9 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import type { AppProps } from "next/app";
 import { compose, flow, map, sortBy } from "lodash/fp";
+import { NextSeo } from "next-seo";
+import { ToastContainer } from "react-nextjs-toast";
+
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
-import { NextSeo } from "next-seo";
 
 import "styles/base.css";
 
@@ -126,6 +128,8 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
         handle: "@openmultiplayer",
       }}
     />
+
+    <ToastContainer align="right" />
 
     <div id="container">
       <Nav route={router.pathname} />

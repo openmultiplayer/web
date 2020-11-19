@@ -3,12 +3,23 @@ import useSWR from "swr";
 import { map, flow, sum, filter, sortBy, reverse } from "lodash/fp";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import Fuse from "fuse.js";
+import { toast } from "react-nextjs-toast";
 
 const API_SERVERS = `https://index.open.mp/server/`;
 
-type Server = {
+interface All {
+  ip: string;
+  dm?: any;
+  core: Essential;
+  ru: Map<string, string>;
+  description?: any;
+  banner?: any;
+  active: boolean;
+}
+
+interface Essential {
   ip: string;
   hn: string;
   pc: number;
@@ -17,16 +28,16 @@ type Server = {
   la: string;
   pa: boolean;
   vn: string;
-};
+}
 
 type Props = {
-  initialData?: Array<Server>;
+  initialData?: Array<Essential>;
   error?: string;
 };
 
-const getServers = async (): Promise<Array<Server>> => {
+const getServers = async (): Promise<Array<Essential>> => {
   const r: Response = await fetch(API_SERVERS);
-  const servers: Array<Server> = await r.json();
+  const servers: Array<Essential> = await r.json();
   return servers;
 };
 
@@ -35,15 +46,15 @@ type Stats = {
   servers: number;
 };
 
-const getStats = (servers: Array<Server>): Stats => ({
+const getStats = (servers: Array<Essential>): Stats => ({
   players: flow(
-    map((s: Server) => s.pc), // get just the player count (pc)
+    map((s: Essential) => s.pc), // get just the player count (pc)
     sum // sum all player counts
   )(servers),
   servers: servers.length,
 });
 
-const Row = ({ s }: { s: Server }) => (
+const Row = ({ s }: { s: Essential }) => (
   <li className="hover-bg-black-10 lh-copy pa2 ph0-l bb b--black-10">
     <Link href={"/servers/" + s.ip}>
       <a className="link black flex items-center justify-between">
@@ -74,7 +85,7 @@ type Query = {
   sort: SortBy;
 };
 
-const dataToList = (data: Server[], q: Query) => {
+const dataToList = (data: Essential[], q: Query) => {
   const fuse = new Fuse(data, {
     threshold: 0.2,
     shouldSort: true,
@@ -84,17 +95,17 @@ const dataToList = (data: Server[], q: Query) => {
   });
 
   const items = q.search
-    ? map((r: Fuse.FuseResult<Server>) => r.item)(fuse.search(q.search))
+    ? map((r: Fuse.FuseResult<Essential>) => r.item)(fuse.search(q.search))
     : data;
 
   console.log();
 
   return flow(
-    filter((s: Server) => (!q.showEmpty ? s.pc > 0 : true)),
-    filter((s: Server) => (!q.showFull ? s.pc !== s.pm : true)),
+    filter((s: Essential) => (!q.showEmpty ? s.pc > 0 : true)),
+    filter((s: Essential) => (!q.showFull ? s.pc !== s.pm : true)),
     q.sort != "relevance" ? sortBy(q.sort) : sortBy(""),
     reverse,
-    map((s: Server) => <Row key={s.ip} s={s} />)
+    map((s: Essential) => <Row key={s.ip} s={s} />)
   )(items);
 };
 
@@ -112,7 +123,82 @@ const Stats = ({ stats: { players, servers } }: { stats: Stats }) => {
 
 const formItemStyle = "pa1 ph2 flex flex-column flex-row-ns tl-ns tc";
 
-const List = ({ data }: { data: Array<Server> }) => {
+const AddServer = () => {
+  const [value, setValue] = useState("");
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const response = await fetch(API_SERVERS, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ip: value }),
+    });
+    if (response.status === 200) {
+      const server = (await response.json()) as All;
+      toast.notify(
+        `${server.core.hn} (${server.core.gm}) submitted to the index!`,
+        {
+          title: "Server Submitted!",
+        }
+      );
+    } else {
+      const error = (await response.json()) as { error: string };
+      toast.notify(`Status ${response.statusText}: ${error?.error}`, {
+        title: "Submission failed!",
+        type: "error",
+      });
+    }
+  };
+
+  return (
+    <form
+      action={API_SERVERS}
+      target="_self"
+      method="post"
+      className="flex flex-wrap items-center justify-center pa2 f7"
+      onSubmit={handleSubmit}
+    >
+      <span className={formItemStyle}>
+        <label className="pr2 self-center" htmlFor="address">
+          Add Server:
+        </label>
+        <input
+          className="pr2"
+          type="text"
+          name="address"
+          placeholder="IP or Domain"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+        />
+        <input
+          className={[
+            "ph3",
+            "f6",
+            "pointer",
+            "no-underline",
+            "black",
+            "bg-white",
+            "hover-bg-light-red",
+            "hover-white",
+            "inline-flex",
+            "items-center",
+            "pa2",
+            "ba",
+            "border-box",
+            "mr4",
+          ].join(" ")}
+          type="submit"
+          value="Add"
+        />
+      </span>
+    </form>
+  );
+};
+
+const List = ({ data }: { data: Array<Essential> }) => {
   const [search, setSearch] = useState("");
   const [showFull, setShowFull] = useState(false);
   const [showEmpty, setShowEmpty] = useState(false);
@@ -208,44 +294,7 @@ const List = ({ data }: { data: Array<Server> }) => {
           </button>
         </span> */}
       </form>
-      <form
-        action={API_SERVERS}
-        target="_self"
-        method="post"
-        className="flex flex-wrap items-center justify-center pa2 f7"
-      >
-        <span className={formItemStyle}>
-          <label className="pr2 self-center" htmlFor="address">
-            Add Server:
-          </label>
-          <input
-            className="pr2"
-            type="text"
-            name="address"
-            placeholder="IP or Domain"
-          />
-          <input
-            className={[
-              "ph3",
-              "f6",
-              "pointer",
-              "no-underline",
-              "black",
-              "bg-white",
-              "hover-bg-light-red",
-              "hover-white",
-              "inline-flex",
-              "items-center",
-              "pa2",
-              "ba",
-              "border-box",
-              "mr4",
-            ].join(" ")}
-            type="submit"
-            value="Add"
-          />
-        </span>
-      </form>
+      <AddServer />
       <ul className="list pl0 mt0 center">
         {dataToList(data, {
           search,
@@ -266,7 +315,7 @@ const Error = ({ error }: { error: TypeError }) => (
 );
 
 const Page = ({ initialData }: Props) => {
-  const { data, error } = useSWR<Array<Server>, TypeError>(
+  const { data, error } = useSWR<Array<Essential>, TypeError>(
     API_SERVERS,
     getServers,
     {
