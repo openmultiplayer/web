@@ -4,9 +4,7 @@ description: Round a floating point number to an integer value.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

@@ -36,9 +36,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 ## Notes
 
-import T from '../../../src/components/templates.js'
-
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 ## Related Functions
 

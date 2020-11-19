@@ -4,9 +4,7 @@ description: Compares two strings to see if they are the same.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

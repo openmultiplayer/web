@@ -4,9 +4,7 @@ description: Set the text alignment of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
+<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
 
 ## Description
 

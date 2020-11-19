@@ -4,9 +4,7 @@ description: Hide a player-textdraw from the player it was created for.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
+<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
 
 ## Description
 

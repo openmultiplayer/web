@@ -4,9 +4,7 @@ description: This callback is called when a player sent a trailer update.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3z R4' />
+<VersionWarn name='callback' version='SA-MP 0.3z R4' />
 
 ## Description
 

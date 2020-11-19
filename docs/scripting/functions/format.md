@@ -4,9 +4,7 @@ description: Formats a string to include variables and other strings inside it.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

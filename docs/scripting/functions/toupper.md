@@ -4,9 +4,7 @@ description: This function changes a single character to uppercase.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

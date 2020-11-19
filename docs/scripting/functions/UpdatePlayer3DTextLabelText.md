@@ -4,9 +4,7 @@ description: Updates a player 3D Text Label's text and color.
 tags: ["player", "3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

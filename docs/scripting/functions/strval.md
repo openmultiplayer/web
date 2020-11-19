@@ -4,9 +4,7 @@ description: Convert a string to an integer.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

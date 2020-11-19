@@ -4,9 +4,7 @@ description: Checks if a player is streamed in another player's client.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

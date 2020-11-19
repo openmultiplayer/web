@@ -4,9 +4,7 @@ description: Attaches a player's camera to a player-object.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

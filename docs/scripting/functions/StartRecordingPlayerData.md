@@ -4,9 +4,7 @@ description: Starts recording a player's movements to a file, which can then be 
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: This callback is called when a player gives damage to another playe
 tags: ["player"]
 ---
 
-import T from '../../../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3d' />
+<VersionWarn name='callback' version='SA-MP 0.3d' />
 
 ## Açıklama
 

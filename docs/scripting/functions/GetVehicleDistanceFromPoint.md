@@ -4,9 +4,7 @@ description: This function can be used to calculate the distance (as a float) be
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c R3' />
+<VersionWarn version='SA-MP 0.3c R3' />
 
 ## Description
 

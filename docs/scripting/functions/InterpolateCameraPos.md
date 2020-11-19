@@ -4,9 +4,7 @@ description: Move a player's camera from one position to another, within the set
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

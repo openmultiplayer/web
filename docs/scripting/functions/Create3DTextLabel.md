@@ -4,9 +4,7 @@ description: Creates a 3D Text Label at a specific location in the world.
 tags: ["3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

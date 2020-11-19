@@ -4,9 +4,7 @@ description: Овај колбек је позван када год NPC вид�
 tags: []
 ---
 
-import T from '../../../../../src/components/templates.js'
-
-<T.VersionWarn name='NPC callback' version='SA-MP 0.3a' />
+<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
 
 ## Опис
 

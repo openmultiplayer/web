@@ -4,9 +4,7 @@ description: Find out what type of component a certain ID is.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

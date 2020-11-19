@@ -4,9 +4,7 @@ description: Shows the player a synchronous (only one at a time) dialog box.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

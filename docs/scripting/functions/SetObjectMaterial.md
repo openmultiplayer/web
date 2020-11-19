@@ -4,9 +4,7 @@ description: Replace the texture of an object with the texture from another mode
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

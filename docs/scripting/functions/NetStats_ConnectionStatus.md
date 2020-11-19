@@ -4,9 +4,7 @@ description: Gets the player's current connection status.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z' />
+<VersionWarn version='SA-MP 0.3z' />
 
 ## Description
 

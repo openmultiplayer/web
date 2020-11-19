@@ -4,9 +4,7 @@ description: Sets the various visual damage statuses of a vehicle, such as poppe
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 :::tip
 

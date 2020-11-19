@@ -4,9 +4,7 @@ description: Sends a threaded HTTP request.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3b' />
+<VersionWarn version='SA-MP 0.3b' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: Allows you to retrieve the ID of the actor the player is looking at
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 

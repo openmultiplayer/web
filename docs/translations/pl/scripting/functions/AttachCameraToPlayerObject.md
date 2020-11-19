@@ -4,9 +4,7 @@ description: Przyczepia kamerę gracza do obiektu stworzonego tylko dla niego.
 tags: ["player"]
 ---
 
-import T from '../../../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Opis
 

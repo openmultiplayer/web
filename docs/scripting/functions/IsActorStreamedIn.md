@@ -4,9 +4,7 @@ description: Checks if an actor is streamed in for a player.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 

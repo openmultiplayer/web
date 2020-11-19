@@ -4,9 +4,7 @@ description: This function allows you to get the logarithm of a float value.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

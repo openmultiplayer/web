@@ -4,9 +4,7 @@ description: Called when a player double-clicks on a player on the scoreboard.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 

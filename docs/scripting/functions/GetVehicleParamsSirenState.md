@@ -4,9 +4,7 @@ description: Returns a vehicle's siren state (on/off).
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: Copy bytes from one location to another.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

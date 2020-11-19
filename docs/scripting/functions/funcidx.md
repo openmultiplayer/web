@@ -4,9 +4,7 @@ description: This function returns the ID of a public function by its name.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

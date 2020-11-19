@@ -5,9 +5,7 @@ keywords:
   - sqlite
 ---
 
-import T from '../../../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Açıklama
 

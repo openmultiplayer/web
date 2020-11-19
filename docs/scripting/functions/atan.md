@@ -4,9 +4,7 @@ description: Get the inversed value of an arc tangent in radians.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

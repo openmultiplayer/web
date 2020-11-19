@@ -4,9 +4,7 @@ description: Set the model for a textdraw model preview.
 tags: ["textdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3x' />
+<VersionWarn version='SA-MP 0.3x' />
 
 ## Description
 

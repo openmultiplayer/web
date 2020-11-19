@@ -4,9 +4,7 @@ description: Sets whether a textdraw can be selected (clicked on) or not.
 tags: ["textdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

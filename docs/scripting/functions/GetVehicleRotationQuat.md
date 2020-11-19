@@ -4,9 +4,7 @@ description: Returns a vehicle's rotation on all axes as a quaternion.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3b' />
+<VersionWarn version='SA-MP 0.3b' />
 
 ## Description
 

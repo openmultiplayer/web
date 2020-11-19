@@ -4,9 +4,7 @@ description: This callback is called when a vehicle element such as doors, tires
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 :::tip
 

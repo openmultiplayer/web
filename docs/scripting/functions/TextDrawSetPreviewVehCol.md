@@ -4,9 +4,7 @@ description: If a vehicle model is used in a 3D preview textdraw, this sets the 
 tags: ["textdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3x' />
+<VersionWarn version='SA-MP 0.3x' />
 
 ## Description
 

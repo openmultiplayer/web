@@ -4,9 +4,7 @@ description: Delete an earlier set property (setproperty).
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

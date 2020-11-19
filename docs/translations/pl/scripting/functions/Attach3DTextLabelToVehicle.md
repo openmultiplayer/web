@@ -4,9 +4,7 @@ description: Przyczepia tekst 3D do konkretnego pojazdu.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-import T from '../../../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Opis
 

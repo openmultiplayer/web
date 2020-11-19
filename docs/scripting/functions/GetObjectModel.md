@@ -4,9 +4,7 @@ description: Get the model ID of an object (CreateObject).
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: Sets the rotation and zoom of a 3D model preview player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3x' />
+<VersionWarn version='SA-MP 0.3x' />
 
 ## Description
 

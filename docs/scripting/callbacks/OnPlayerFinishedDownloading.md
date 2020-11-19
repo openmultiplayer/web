@@ -4,9 +4,7 @@ description: This callback is called when a player finishes downloading custom m
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3.DL' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL' />
 
 ## Description
 

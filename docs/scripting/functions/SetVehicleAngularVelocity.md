@@ -4,9 +4,7 @@ description: Sets the angular X, Y and Z velocity of a vehicle.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3b' />
+<VersionWarn version='SA-MP 0.3b' />
 
 :::info
 

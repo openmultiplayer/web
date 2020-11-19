@@ -4,9 +4,7 @@ description: Interpolate a player's camera's 'look at' point between two coordin
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

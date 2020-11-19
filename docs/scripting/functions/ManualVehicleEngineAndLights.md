@@ -4,9 +4,7 @@ description: Use this function before any player connects (OnGameModeInit) to te
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c' />
+<VersionWarn version='SA-MP 0.3c' />
 
 ## Description
 

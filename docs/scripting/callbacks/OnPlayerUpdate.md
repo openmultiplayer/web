@@ -76,9 +76,7 @@ public OnPlayerUpdate(playerid)
 
 ## Notes
 
-import T from '../../../src/components/templates.js'
-
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 :::warning
 

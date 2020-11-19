@@ -4,9 +4,7 @@ description: Attaches a 3D Text Label to a specific vehicle.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: This function returns the absolute value of float.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

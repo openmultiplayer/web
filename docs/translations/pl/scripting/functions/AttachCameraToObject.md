@@ -4,9 +4,7 @@ description: Możesz używać tej funkcji, aby przyczepiać kamerę gracza do ob
 tags: []
 ---
 
-import T from '../../../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Opis
 

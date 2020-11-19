@@ -4,9 +4,7 @@ description: Gets the amount of time (in milliseconds) that a player has been co
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z' />
+<VersionWarn version='SA-MP 0.3z' />
 
 ## Description
 

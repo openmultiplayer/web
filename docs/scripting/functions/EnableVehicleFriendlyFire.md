@@ -4,9 +4,7 @@ description: Enable friendly fire for team vehicles.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3x' />
+<VersionWarn version='SA-MP 0.3x' />
 
 ## Description
 

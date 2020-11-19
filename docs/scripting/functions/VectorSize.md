@@ -4,9 +4,7 @@ description: Returns the norm (length) of the provided vector.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z' />
+<VersionWarn version='SA-MP 0.3z' />
 
 ## Description
 

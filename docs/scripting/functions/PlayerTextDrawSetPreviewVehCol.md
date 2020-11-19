@@ -4,9 +4,7 @@ description: Set the color of a vehicle in a player-textdraw model preview (if a
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3x' />
+<VersionWarn version='SA-MP 0.3x' />
 
 ## Description
 

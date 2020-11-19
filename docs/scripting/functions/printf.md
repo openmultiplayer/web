@@ -4,9 +4,7 @@ description: Outputs a formatted string on the console (the server window, not t
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

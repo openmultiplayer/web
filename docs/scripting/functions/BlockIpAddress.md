@@ -4,9 +4,7 @@ description: Blocks an IP address from further communication with the server for
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z R2-2' />
+<VersionWarn version='SA-MP 0.3z R2-2' />
 
 ## Description
 

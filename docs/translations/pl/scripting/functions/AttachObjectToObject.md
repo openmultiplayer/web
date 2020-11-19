@@ -4,9 +4,7 @@ description: Możesz używać tej funkcji, aby przyczepiać obiekty do innych ob
 tags: []
 ---
 
-import T from '../../../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3d' />
+<VersionWarn version='SA-MP 0.3d' />
 
 ## Opis
 

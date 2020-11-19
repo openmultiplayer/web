@@ -4,9 +4,7 @@ description: Disables the nametag Line-Of-Sight checking so that players can see
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

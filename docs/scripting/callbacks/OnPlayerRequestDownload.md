@@ -4,9 +4,7 @@ description: This callback is called when a player request for custom model down
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: Display the cursor and allow the player to select a textdraw.
 tags: ["textdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

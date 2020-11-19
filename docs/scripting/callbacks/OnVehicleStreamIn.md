@@ -4,9 +4,7 @@ description: Called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 
@@ -35,6 +33,6 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Notes
 
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 ## Related Functions

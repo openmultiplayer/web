@@ -4,9 +4,7 @@ description: Cancel textdraw selection with the mouse.
 tags: ["textdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 

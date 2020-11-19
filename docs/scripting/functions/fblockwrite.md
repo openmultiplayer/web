@@ -4,9 +4,7 @@ description: Write data to a file in binary format, while ignoring line brakes a
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

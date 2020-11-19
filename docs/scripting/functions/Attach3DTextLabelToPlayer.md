@@ -4,9 +4,7 @@ description: Attach a 3D text label to a player.
 tags: ["player", "3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

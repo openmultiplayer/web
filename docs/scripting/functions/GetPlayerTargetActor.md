@@ -4,9 +4,7 @@ description: Gets id of an actor which is aimed by certain player.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 

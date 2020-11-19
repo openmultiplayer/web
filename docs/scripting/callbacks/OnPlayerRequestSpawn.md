@@ -32,9 +32,7 @@ public OnPlayerRequestSpawn(playerid)
 
 ## Notes
 
-import T from '../../../src/components/templates.js'
-
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 :::tip
 

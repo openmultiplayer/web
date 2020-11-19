@@ -4,9 +4,7 @@ description: Attach an object to a specific bone on a player.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c' />
+<VersionWarn version='SA-MP 0.3c' />
 
 ## Description
 

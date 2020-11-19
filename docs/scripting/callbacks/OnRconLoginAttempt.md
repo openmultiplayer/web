@@ -4,9 +4,7 @@ description: This callback is called when someone attempts to log in to RCON in-
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 

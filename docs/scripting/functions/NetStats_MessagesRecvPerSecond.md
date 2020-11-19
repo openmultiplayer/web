@@ -4,9 +4,7 @@ description: Gets the number of messages the player has received in the last sec
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z' />
+<VersionWarn version='SA-MP 0.3z' />
 
 ## Description
 

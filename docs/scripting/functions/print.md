@@ -4,9 +4,7 @@ description: Prints a string to the server console (not in-game chat) and logs (
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

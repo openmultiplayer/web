@@ -4,9 +4,7 @@ description: floatcmp can be used to compare float values to each other, to vali
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

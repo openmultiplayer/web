@@ -4,9 +4,7 @@ description: Fully repairs a vehicle, including visual damage (bumps, dents, scr
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

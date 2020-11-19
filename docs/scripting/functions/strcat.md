@@ -4,9 +4,7 @@ description: This function concatenates (joins together) two strings into the de
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

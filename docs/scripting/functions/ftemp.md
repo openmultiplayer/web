@@ -4,9 +4,7 @@ description: Creates a file in the "tmp", "temp" or root directory with random n
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

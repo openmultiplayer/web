@@ -4,9 +4,7 @@ description: This callback is called when a player gives damage to an actor.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Description
 

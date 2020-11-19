@@ -4,9 +4,7 @@ description: Gets the number of messages the server has sent to the player.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z' />
+<VersionWarn version='SA-MP 0.3z' />
 
 ## Description
 

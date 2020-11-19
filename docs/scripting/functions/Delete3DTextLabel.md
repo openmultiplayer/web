@@ -4,9 +4,7 @@ description: Delete a 3D text label (created with Create3DTextLabel).
 tags: ["3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

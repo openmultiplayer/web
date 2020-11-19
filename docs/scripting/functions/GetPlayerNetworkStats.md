@@ -4,9 +4,7 @@ description: Gets a player's network stats and saves them into a string.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c R4' />
+<VersionWarn version='SA-MP 0.3c R4' />
 
 ## Description
 

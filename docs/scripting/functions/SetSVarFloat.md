@@ -4,9 +4,7 @@ description: Set a float server variable.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7 R2' />
+<VersionWarn version='SA-MP 0.3.7 R2' />
 
 ## Description
 

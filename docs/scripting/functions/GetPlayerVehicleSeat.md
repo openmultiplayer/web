@@ -4,9 +4,7 @@ description: Find out which seat a player is in.
 tags: ["player", "vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 

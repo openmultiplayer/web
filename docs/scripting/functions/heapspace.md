@@ -4,9 +4,7 @@ description: Returns the amount of memory available for the heap/stack in bytes.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

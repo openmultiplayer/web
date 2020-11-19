@@ -4,9 +4,7 @@ description: This callback gets called whenever the NPC sees a ClientMessage.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='NPC callback' version='SA-MP 0.3a' />
+<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
 
 ## Description
 

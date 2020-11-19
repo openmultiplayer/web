@@ -4,9 +4,7 @@ description: Attach an object to a vehicle.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c' />
+<VersionWarn version='SA-MP 0.3c' />
 
 ## Description
 

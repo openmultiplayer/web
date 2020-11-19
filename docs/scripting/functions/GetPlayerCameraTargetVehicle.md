@@ -4,9 +4,7 @@ description: Get the ID of the vehicle the player is looking at.
 tags: ["player", "vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 

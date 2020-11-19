@@ -4,9 +4,7 @@ description: Adds a new custom simple object model for download.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL R1' />
 
 ## Description
 

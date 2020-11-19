@@ -4,9 +4,7 @@ description: Destroy a 3D text label that was created using CreatePlayer3DTextLa
 tags: ["player", "3dtextlabel"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
