@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import type { AppProps } from "next/app";
-import { compose, map } from "lodash/fp";
+import { compose, flow, map, sortBy } from "lodash/fp";
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
 import { NextSeo } from "next-seo";
@@ -10,11 +10,12 @@ import { NextSeo } from "next-seo";
 type NavItem = {
   name: string;
   path: string;
+  exact?: boolean;
   extra?: string;
 };
 
 const NavItems: NavItem[] = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "/", exact: true },
   { name: "Servers", path: "/servers" },
   { name: "Docs", path: "/docs" },
 ];
@@ -32,13 +33,19 @@ const buildNav = (current: string) =>
       </li>
     )),
     map((v: NavItem) =>
-      current === v.path ? { ...v, extra: "bg-black-10" } : v
+      v.exact
+        ? current === v.path
+          ? { ...v, extra: "bg-black-10" }
+          : v
+        : current.startsWith(v.path)
+        ? { ...v, extra: "bg-black-10" }
+        : v
     )
   );
 
 const Nav = ({ route }) => (
   <>
-    <nav className="flex items-stretch bb b--black-30 bg-white">
+    <nav role="main" className="flex items-stretch bb b--black-30 bg-white">
       <div className="flex-shrink-0 pa2">
         <Link href="/">
           <a>
@@ -58,8 +65,6 @@ const Nav = ({ route }) => (
     `}</style>
   </>
 );
-
-const DocsSidebar = () => <p>{JSON.stringify(process.env.tree)}</p>;
 
 const footerList = (heading, items) => (
   <div className="flex flex-column">
@@ -123,9 +128,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <div id="container">
       <Nav route={router.pathname} />
 
-      {router.pathname.startsWith("/docs") && <DocsSidebar />}
-
-      <main className="pt5 pa0 ma0">
+      <main className="pa0 ma0 flex">
         <Component {...pageProps} />
       </main>
     </div>

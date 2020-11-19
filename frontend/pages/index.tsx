@@ -7,7 +7,7 @@ type Props = {
 
 const Page = ({ content }: Props) => (
   <>
-    <section className="pa0 ma0">
+    <section className="pa0 ma0 center">
       <div className="mw8 center">
         <Wordmark />
       </div>
