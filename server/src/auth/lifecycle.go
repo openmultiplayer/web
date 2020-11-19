@@ -6,6 +6,7 @@ import (
 
 	"golang.org/x/crypto/bcrypt"
 
+	"github.com/gofrs/uuid"
 	"github.com/openmultiplayer/web/server/src/db"
 )
 
@@ -20,10 +21,16 @@ func (a *Authentication) Register(ctx context.Context, name, identifier, authori
 		return nil, err
 	}
 
+	key, err := uuid.NewV4()
+	if err != nil {
+		return nil, err
+	}
+
 	user, err := a.db.User.CreateOne(
 		db.User.Email.Set(identifier),
 		db.User.Name.Set(name),
 		db.User.Pass.Set(string(hash)),
+		db.User.VerifyKey.Set(key.String()),
 	).Exec(ctx)
 	if err != nil {
 		return nil, err

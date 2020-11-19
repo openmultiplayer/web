@@ -11,20 +11,19 @@ generator client {
 }
 
 model User {
-  id            String          @id @default(uuid())
-  email         String          @unique
-  name          String
-  pass          String
-  admin         Boolean         @default(false)
-  servers       Server[]
-  Verifications Verifications[]
-}
+  id      String   @id @default(uuid())
+  email   String   @unique
+  name    String
+  pass    String
+  admin   Boolean  @default(false)
+  servers Server[]
 
-model Verifications {
-  id     String @id @default(uuid())
-  User   User   @relation(fields: [userId], references: [id])
-  userId String
-  key    String
+  // Account verification key - emailed to user
+  verify_key String
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  verified_at DateTime? // only set when account is verified
 }
 
 model Server {
