@@ -8,6 +8,8 @@ import (
 
 	"github.com/gofrs/uuid"
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/mailreg"
+	"github.com/openmultiplayer/web/server/src/mailworker"
 )
 
 var (
@@ -26,9 +28,17 @@ func (a *Authentication) Register(ctx context.Context, name, identifier, authori
 		return nil, err
 	}
 
-	if err := a.vf.Request(identifier, key.String()); err != nil {
-		return nil, err
-	}
+	mailworker.Enqueue(
+		name,
+		identifier,
+		"Please verify your email address",
+		mailreg.TemplateID("verify"),
+		struct {
+			Key string
+		}{
+			Key: key.String(),
+		},
+	)
 
 	user, err := a.db.User.CreateOne(
 		db.User.Email.Set(identifier),
@@ -96,9 +106,17 @@ func (a *Authentication) ReRequestVerification(ctx context.Context, identifier s
 		return err
 	}
 
-	if err := a.vf.Request(identifier, key.String()); err != nil {
-		return err
-	}
+	mailworker.Enqueue(
+		identifier, // TODO: look up username
+		identifier,
+		"Please verify your email address",
+		mailreg.TemplateID("verify"),
+		struct {
+			Key string
+		}{
+			Key: key.String(),
+		},
+	)
 
 	_, err = a.db.User.
 		FindOne(db.User.Email.Equals(identifier)).
@@ -106,4 +124,8 @@ func (a *Authentication) ReRequestVerification(ctx context.Context, identifier s
 		Exec(ctx)
 
 	return err
+}
+
+func (a *Authentication) VerifyEmail(ctx context.Context, identifier, key string) (bool, error) {
+	return false, nil
 }

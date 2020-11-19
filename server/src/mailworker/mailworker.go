@@ -4,10 +4,14 @@ import (
 	"errors"
 
 	"github.com/cenkalti/backoff"
-	"github.com/openmultiplayer/web/server/src/mailer"
-	"github.com/openmultiplayer/web/server/src/pubsub"
 	"go.uber.org/zap"
+
+	"github.com/openmultiplayer/web/server/src/mailer"
+	"github.com/openmultiplayer/web/server/src/mailreg"
+	"github.com/openmultiplayer/web/server/src/pubsub"
 )
+
+var global *Worker
 
 type Worker struct {
 	t string
@@ -15,24 +19,53 @@ type Worker struct {
 	m mailer.Mailer
 }
 
-type Message struct{ Name, Addr, Subj, Body string }
+func Init(t string, b pubsub.Bus, m mailer.Mailer) {
+	if global != nil {
+		panic("mailworker doubly initialised")
+	}
+	global = &Worker{t, b, m}
+}
 
-func (w *Worker) Run(topic string) error {
-	return backoff.Retry(w.run, backoff.NewExponentialBackOff())
+type Message struct {
+	Name     string
+	Addr     string
+	Subj     string
+	Template mailreg.TemplateID
+	Data     interface{}
+}
+
+func Enqueue(name, addr, subj string, template mailreg.TemplateID, data interface{}) {
+	global.b.Publish(global.t, Message{
+		Name:     name,
+		Addr:     addr,
+		Subj:     subj,
+		Template: template,
+		Data:     data,
+	})
+}
+
+func Run() error {
+	return backoff.Retry(global.run, backoff.NewExponentialBackOff())
 }
 
 func (w *Worker) run() error {
-	ch := w.b.Subscribe(w.t)
+	ch := global.b.Subscribe(global.t)
 	for m := range ch {
 		message, ok := m.(Message)
 		if !ok {
 			zap.L().Warn("unexpected message in mailer topic",
-				zap.String("topic", w.t),
+				zap.String("topic", global.t),
 				zap.Any("message", m))
 			continue
 		}
 
-		if err := w.m.Mail(message.Name, message.Addr, message.Subj, message.Body); err != nil {
+		t, err := mailreg.Get(message.Template, message.Data)
+		if err != nil {
+			zap.L().Error("mailworker failed to format email", zap.Error(err))
+			continue
+		}
+
+		if err := global.m.Mail(message.Name, message.Addr, message.Subj, t.Rich, t.Text); err != nil {
 			zap.L().Error("mailworker failed to send email", zap.Error(err))
 		}
 

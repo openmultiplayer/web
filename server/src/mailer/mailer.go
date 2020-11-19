@@ -9,13 +9,13 @@ import (
 )
 
 type Mailer interface {
-	Mail(toname, toaddr, subj, body string) error
+	Mail(toname, toaddr, subj, rich, text string) error
 }
 
 type Mock struct{}
 
-func (m *Mock) Mail(toname, toaddr, subj, body string) error {
-	fmt.Printf(`Mock email sender: %s <%s>\nFROM %s\nBODY:\n%s\n`, toname, toaddr, subj, body)
+func (m *Mock) Mail(toname, toaddr, subj, rich, text string) error {
+	fmt.Printf(`Mock email sender: %s <%s>\nFROM %s\nRICH:\n%s\nTEXT:\n%s\m`, toname, toaddr, subj, rich, text)
 	return nil
 }
 
@@ -25,11 +25,11 @@ type SendGrid struct {
 	client   *sendgrid.Client
 }
 
-func (m *SendGrid) Mail(toname, toaddr, subj, body string) error {
+func (m *SendGrid) Mail(toname, toaddr, subj, rich, text string) error {
 	from := mail.NewEmail(m.fromname, m.fromaddr)
 	to := mail.NewEmail(toname, toaddr)
 
-	message := mail.NewSingleEmail(from, subj, to, body, body)
+	message := mail.NewSingleEmail(from, subj, to, text, rich)
 	_, err := m.client.Send(message)
 	if err != nil {
 		return errors.Wrap(err, "failed to send email via sendgrid")
