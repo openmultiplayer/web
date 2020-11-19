@@ -43,7 +43,7 @@ const DocsSidebarNode = ({ title, tree, open = false }: Props) => (
           map((v: SidebarItem) =>
             typeof v === "string" ? (
               <li key={v} className="pa1 truncate">
-                <Link href={`/docs/${v}`}>
+                <Link href={`/${v}`}>
                   <a className="link black hover-blue">{nicenPath(v)}</a>
                 </Link>
               </li>

@@ -93,7 +93,7 @@ function parseDir(filename) {
 }
 
 module.exports = {
-  env: { tree: parseDir("docs") },
+  env: { tree: parseDir("../docs") },
   i18n: {
     locales: fs
       .readdirSync("content")

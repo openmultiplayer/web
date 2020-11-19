@@ -142,9 +142,8 @@ const exists = (path): boolean => {
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
 ): Promise<GetStaticPropsResult<Props>> {
-  // TODO: support .md as well?
-  const path_mdx: string = resolve("docs", ...context.params.path) + ".mdx";
-  const path_md: string = resolve("docs", ...context.params.path) + ".md";
+  const path_mdx: string = resolve("../docs", ...context.params.path) + ".mdx";
+  const path_md: string = resolve("../docs", ...context.params.path) + ".md";
 
   let source: string;
   if (exists(path_mdx)) {
@@ -171,8 +170,8 @@ export async function getStaticProps(
 
 export async function getStaticPaths() {
   const paths = glob
-    .sync("docs/**/*.md")
-    .map((v: string) => "/" + v.slice(0, v.length - extname(v).length));
+    .sync("../docs/**/*.md") // read docs from the repo root
+    .map((v: string) => "/" + v.slice(3, v.length - extname(v).length));
 
   return {
     paths: paths,
