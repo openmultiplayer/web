@@ -28,6 +28,7 @@ func New(a *auth.Authentication) *chi.Mux {
 
 	rtr.Post("/login", http.HandlerFunc(svc.login))
 	rtr.Post("/register", http.HandlerFunc(svc.register))
+	rtr.Post("/verify", http.HandlerFunc(svc.verify))
 	// rtr. //With(auth.MustBeAuthenticated).
 	// 	Patch("/passchange", http.HandlerFunc(svc.passchange))
 

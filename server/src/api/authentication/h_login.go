@@ -18,6 +18,8 @@ func (s *service) login(w http.ResponseWriter, r *http.Request) {
 		web.StatusNotFound(w, web.WithSuggestion(err, "User not found", "Check your email accounts to ensure you're using the correct email address."))
 	} else if err == bcrypt.ErrMismatchedHashAndPassword {
 		web.StatusUnauthorized(w, web.WithSuggestion(err, "Incorrect password", "We recommend using a password manager to generate strong passwords and keep them safe."))
+	} else if err == auth.ErrUserNotVerified {
+		web.StatusUnauthorized(w, web.WithSuggestion(err, "User account not verified", "This account has not yet been verified. Please check your email for a link."))
 	} else if err != nil {
 		web.StatusInternalServerError(w, err)
 	} else {

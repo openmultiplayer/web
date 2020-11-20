@@ -3,6 +3,7 @@ package auth
 import (
 	"context"
 	"errors"
+	"time"
 
 	"golang.org/x/crypto/bcrypt"
 
@@ -13,8 +14,8 @@ import (
 )
 
 var (
-	ErrUserNotFound = errors.New("user not found")
-	ErrNonPassword  = errors.New("cannot change a password for an account that does not use password-based authentication")
+	ErrUserNotFound    = errors.New("user not found")
+	ErrUserNotVerified = errors.New("user not verified")
 )
 
 func (a *Authentication) Register(ctx context.Context, name, identifier, authorizer string) (*db.UserModel, error) {
@@ -62,6 +63,10 @@ func (a *Authentication) Login(ctx context.Context, identifier, authorizer strin
 			return nil, ErrUserNotFound
 		}
 		return nil, err
+	}
+
+	if _, ok := user.VerifiedAt(); !ok {
+		return nil, ErrUserNotVerified
 	}
 
 	if err := bcrypt.CompareHashAndPassword([]byte(user.Pass), []byte(authorizer)); err != nil {
@@ -130,6 +135,15 @@ func (a *Authentication) ReRequestVerification(ctx context.Context, identifier s
 	return err
 }
 
-func (a *Authentication) VerifyEmail(ctx context.Context, identifier, key string) (bool, error) {
-	return false, nil
+func (a *Authentication) ValidateEmailVerificationKey(ctx context.Context, key string) (bool, error) {
+	_, err := a.db.User.
+		FindOne(db.User.VerifyKey.Equals(key)).
+		Update(db.User.VerifiedAt.Set(time.Now())).
+		Exec(ctx)
+	if err == db.ErrNotFound {
+		return false, nil
+	} else if err != nil {
+		return false, err
+	}
+	return true, nil
 }
