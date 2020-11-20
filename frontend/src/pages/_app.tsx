@@ -14,6 +14,7 @@ import "nprogress/nprogress.css";
 import "remark-admonitions/styles/classic.css";
 
 import "src/styles/base.css";
+import LanguageSelect from "src/components/LanguageSelect";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -68,6 +69,7 @@ const Nav = ({ route }) => (
       <ul className="list flex pa3 ma0 justify-between align-center center">
         {buildNav(route)(NavItems)}
       </ul>
+      <LanguageSelect />
     </nav>
 
     <style jsx>{`
