@@ -20,7 +20,7 @@ services:
       MINIO_ACCESS_KEY: default
       MINIO_SECRET_KEY: password
     ports:
-      - 9000:9000
+      - 8082:9000
     volumes:
       - ${DATA_DIR}/openmp-index/minio:/data
     networks:
