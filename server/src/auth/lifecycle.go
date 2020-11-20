@@ -28,7 +28,7 @@ func (a *Authentication) Register(ctx context.Context, name, identifier, authori
 		return nil, err
 	}
 
-	mailworker.Enqueue(
+	if err := mailworker.Enqueue(
 		name,
 		identifier,
 		"Please verify your email address",
@@ -38,7 +38,9 @@ func (a *Authentication) Register(ctx context.Context, name, identifier, authori
 		}{
 			Key: key.String(),
 		},
-	)
+	); err != nil {
+		return nil, err
+	}
 
 	user, err := a.db.User.CreateOne(
 		db.User.Email.Set(identifier),
@@ -106,7 +108,7 @@ func (a *Authentication) ReRequestVerification(ctx context.Context, identifier s
 		return err
 	}
 
-	mailworker.Enqueue(
+	if err := mailworker.Enqueue(
 		identifier, // TODO: look up username
 		identifier,
 		"Please verify your email address",
@@ -116,7 +118,9 @@ func (a *Authentication) ReRequestVerification(ctx context.Context, identifier s
 		}{
 			Key: key.String(),
 		},
-	)
+	); err != nil {
+		return err
+	}
 
 	_, err = a.db.User.
 		FindOne(db.User.Email.Equals(identifier)).

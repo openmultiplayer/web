@@ -34,9 +34,10 @@ import (
 
 // Config represents environment variable configuration parameters
 type Config struct {
-	ListenAddr string `default:"0.0.0.0:8080" split_words:"true"`
-	HashKey    []byte `required:"true" split_words:"true"`
-	BlockKey   []byte `required:"true" split_words:"true"`
+	ListenAddr  string `default:"0.0.0.0:8080" split_words:"true"`
+	AmqpAddress string `default:"amqp://rabbit:5672" split_words:"true"`
+	HashKey     []byte `required:"true" split_words:"true"`
+	BlockKey    []byte `required:"true" split_words:"true"`
 }
 
 // App stores root application state
@@ -64,9 +65,15 @@ func Initialise(root context.Context) (app *App, err error) {
 		return nil, errors.Wrap(err, "failed to connect to prisma")
 	}
 
-	ps := pubsub.NewEmbedded()
+	ps, err := pubsub.NewRabbit(app.config.AmqpAddress)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to connect to rabbitmq")
+	}
+
+	queueEmail := ps.Declare("system.email")
+
 	mailreg.Init("emails") // assume the binary is exected from the repo root
-	mailworker.Init("system.email", ps, &mailer.Mock{})
+	mailworker.Init(queueEmail, ps, &mailer.Mock{})
 	auther := auth.New(app.prisma, app.config.HashKey, app.config.BlockKey)
 
 	storage := serverdb.NewPrisma(app.prisma)
