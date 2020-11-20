@@ -2,3 +2,9 @@ body {
   background-color: #fefefe;
   font-family: english-grotesque, sans-serif;
 }
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  background: #eee;
+}

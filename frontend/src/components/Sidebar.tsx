@@ -27,7 +27,7 @@ type Props = {
 export const DocsSidebar = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <nav className="br-ns bb b--black-30 pa2 b--black-30 truncate">
+    <nav className="br-ns bb b--black-30 pa2 b--black-30 truncate w4-ns w4-m w5-l flex-shrink-0">
       <div className="tr pa2 dn-ns">
         <label htmlFor="sidebar">{visible ? "Hide" : "Show"} Menu</label>
         <input
@@ -39,13 +39,15 @@ export const DocsSidebar = () => {
           onChange={(e) => setVisible(e.target.checked)}
         />
       </div>
-      {visible ? (
+
+      {/* In desktop mode, always display, regardless of `visible` */}
+      <div className={visible ? `db-ns` : `db-ns dn`}>
         <DocsSidebarNode
           title="Contents"
           tree={((process.env.tree as unknown) as SidebarTree).Sidebar}
           open={true}
         />
-      ) : null}
+      </div>
     </nav>
   );
 };

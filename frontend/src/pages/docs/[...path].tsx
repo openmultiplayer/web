@@ -26,14 +26,14 @@ const Page = (props: Props) => {
   const content = props.source && hydrate(props.source, { components });
 
   return (
-    <>
+    <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
       <DocsSidebar />
-      <section className="mw7 pa3 center">
+      <section className="mw7 pa3 flex-auto">
         <h1>{props?.data?.title}</h1>
         {content}
       </section>
       <nav>{/* TODO: Table of contents */}</nav>
-    </>
+    </div>
   );
 };
 
