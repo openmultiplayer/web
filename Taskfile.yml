@@ -21,3 +21,8 @@ tasks:
   dbuild:
     cmds:
       - docker build -t southclaws/openmp-index .
+
+  upload-assets:
+    dir: frontend/public
+    cmds:
+      - mc cp --recursive images omp/assets
