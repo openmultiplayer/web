@@ -8,10 +8,10 @@ type Props = {
 
 const Page = ({ content }) => {
   return (
-    <div className="flex flex-column flex-row-ns overflow-none flex-auto">
+    <article className="flex flex-column flex-row-ns flex-auto justify-center-ns">
       <DocsSidebar />
       <section className="mw7 pa3">{hydrate(content)}</section>
-    </div>
+    </article>
   );
 };
 
