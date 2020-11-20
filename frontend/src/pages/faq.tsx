@@ -1,28 +1,27 @@
-import hydrate from "next-mdx-remote/hydrate";
+import { Wordmark } from "src/components/Branding";
+import { Content } from "src/mdx-helpers/content";
+import { markdownCSR } from "src/mdx-helpers/csr";
 
 type Props = {
-  content: { compiledSource: any; renderedOutput: any; scope: any };
+  content: Content;
 };
 
 const Page = ({ content }: Props) => (
-  <section className="pa2 measure-wide center">{hydrate(content)}</section>
+  <section className="pa0 ma0 center">
+    <div className="mw8 center">
+      <Wordmark />
+    </div>
+
+    <article className="pa0 ma0">
+      <div className="center measure pa4">{markdownCSR(content)}</div>
+    </article>
+  </section>
 );
 
-import { readFileSync } from "fs";
-import { join } from "path";
-import renderToString from "next-mdx-remote/render-to-string";
-import { GetStaticPropsContext, GetStaticPropsResult } from "next";
-
-export async function getStaticProps({
-  locale,
-}: GetStaticPropsContext): Promise<GetStaticPropsResult<Props>> {
-  return {
-    props: {
-      content: await renderToString(
-        readFileSync(join("content", locale, "faq.mdx"))
-      ),
-    },
-  };
-}
+// Server side
+import { markdownSSR } from "src/mdx-helpers/ssr";
+export const getStaticProps = async ({ locale }) => ({
+  props: { content: await markdownSSR(locale, "faq.mdx") },
+});
 
 export default Page;
