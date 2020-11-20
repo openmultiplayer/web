@@ -1,18 +1,40 @@
+import hydrate from "next-mdx-remote/hydrate";
+
 import { DocsSidebar } from "src/components/Sidebar";
 
-const Page = () => {
+type Props = {
+  content: any;
+};
+
+const Page = ({ content }) => {
   return (
     <div className="flex flex-column flex-row-ns overflow-none flex-auto">
       <DocsSidebar />
-      <section className="mw7 pa3">
-        <h1>Documentation</h1>
-        <p>
-          This is the new documentation site for open.mp and SA-MP. It's a work
-          in progress!
-        </p>
-      </section>
+      <section className="mw7 pa3">{hydrate(content)}</section>
     </div>
   );
 };
+
+import { readFileSync } from "fs";
+import { join } from "path";
+import renderToString from "next-mdx-remote/render-to-string";
+import { GetStaticPropsContext, GetStaticPropsResult } from "next";
+
+export async function getStaticProps({
+  locale,
+}: GetStaticPropsContext): Promise<GetStaticPropsResult<Props>> {
+  let content: Buffer;
+  try {
+    content = readFileSync(join("content", locale, "docs.mdx"));
+  } catch (e) {
+    content = readFileSync(join("content", "en", "docs.mdx"));
+  }
+
+  return {
+    props: {
+      content: await renderToString(content),
+    },
+  };
+}
 
 export default Page;
