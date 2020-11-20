@@ -6,6 +6,7 @@ import type { AppProps } from "next/app";
 import { compose, flow, map, sortBy } from "lodash/fp";
 import { NextSeo } from "next-seo";
 import { ToastContainer } from "react-nextjs-toast";
+import { MDXProvider } from "@mdx-js/react";
 import NProgress from "nprogress";
 
 import "normalize.css";
@@ -148,8 +149,18 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     <div id="container">
       <Nav route={router.pathname} />
 
-      <main className="pa0 ma0 flex">
-        <Component {...pageProps} />
+      <main className="pa0 ma0">
+        <MDXProvider
+          components={{
+            wrapper: (props) => (
+              <div className="measure-wide center pb4">
+                <main {...props} />
+              </div>
+            ),
+          }}
+        >
+          <Component {...pageProps} />
+        </MDXProvider>
       </main>
     </div>
     <Footer />
