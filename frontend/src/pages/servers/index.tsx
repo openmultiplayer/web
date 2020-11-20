@@ -60,7 +60,7 @@ const Row = ({ s }: { s: Essential }) => (
   <li className="hover-bg-black-10 lh-copy pa2 ph0-l bb b--black-10">
     <Link href={"/servers/" + s.ip}>
       <a className="link black flex items-center justify-between">
-        <div className="pl2 overflow-hidden">
+        <div className="overflow-hidden">
           <span className="db black-70 measure truncate">{s.hn}</span>
           <span className="db black-30 f6 measure truncate">{s.gm}</span>
         </div>
@@ -162,37 +162,37 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
       action={API_SERVERS}
       target="_self"
       method="post"
-      className="flex flex-wrap items-center justify-center pa2 f7"
+      className="flex items-center justify-center pa0 f7"
       onSubmit={handleSubmit}
     >
-      <span className={formItemStyle}>
+      <span className="pa1 ph2 flex flex-row tl-ns tc">
         <label className="pr2 self-center" htmlFor="address">
-          Add Server:
+          Add
         </label>
         <input
           className="pr2"
           type="text"
           name="address"
-          placeholder="IP or Domain"
+          placeholder="IP/Domain"
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
         <input
           className={[
-            "ph3",
+            "ph2",
+            "w3",
             "f6",
             "pointer",
             "no-underline",
             "black",
             "bg-white",
-            "hover-bg-light-red",
+            "hover-bg-blue",
             "hover-white",
             "inline-flex",
             "items-center",
             "pa2",
             "ba",
             "border-box",
-            "mr4",
           ].join(" ")}
           type="submit"
           value="Add"
@@ -219,7 +219,7 @@ const List = ({
       <Stats stats={getStats(data)} />
       <form
         action=""
-        className="form flex flex-wrap items-center justify-center pa2 f7"
+        className="form flex flex-wrap items-center justify-center pa0 f7"
       >
         <span className={formItemStyle}>
           <label className="pr2 self-center" htmlFor="search">
@@ -334,7 +334,7 @@ const Page = ({ initialData }: Props) => {
   );
 
   return (
-    <section className="measure-wide center">
+    <section className="measure-wide center ph2">
       <NextSeo
         title="Server List"
         description="Live indexing and data for all SA-MP servers."
