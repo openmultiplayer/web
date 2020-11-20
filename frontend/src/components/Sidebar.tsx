@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { flow, map, sortBy } from "lodash/fp";
 import { last } from "lodash";
+import { useState } from "react";
 
 export type SidebarCategory = {
   type: string;
@@ -23,15 +24,31 @@ type Props = {
   open?: boolean;
 };
 
-export const DocsSidebar = () => (
-  <nav className="br pa2 b--black-30 w5 truncate">
-    <DocsSidebarNode
-      title="Contents"
-      tree={((process.env.tree as unknown) as SidebarTree).Sidebar}
-      open={true}
-    />
-  </nav>
-);
+export const DocsSidebar = () => {
+  const [visible, setVisible] = useState(false);
+  return (
+    <nav className="br-ns bb b--black-30 pa2 b--black-30 truncate">
+      <div className="tr pa2 dn-ns">
+        <label htmlFor="sidebar">{visible ? "Hide" : "Show"} Menu</label>
+        <input
+          className="dn"
+          type="checkbox"
+          name="sidebar"
+          id="sidebar"
+          checked={visible}
+          onChange={(e) => setVisible(e.target.checked)}
+        />
+      </div>
+      {visible ? (
+        <DocsSidebarNode
+          title="Contents"
+          tree={((process.env.tree as unknown) as SidebarTree).Sidebar}
+          open={true}
+        />
+      ) : null}
+    </nav>
+  );
+};
 
 const DocsSidebarNode = ({ title, tree, open = false }: Props) => (
   <>

@@ -2,7 +2,7 @@ import { DocsSidebar } from "src/components/Sidebar";
 
 const Page = () => {
   return (
-    <>
+    <div className="flex flex-column flex-row-ns">
       <DocsSidebar />
       <section className="mw7 pa3 center">
         <h1>Documentation</h1>
@@ -11,7 +11,7 @@ const Page = () => {
           in progress!
         </p>
       </section>
-    </>
+    </div>
   );
 };
 
