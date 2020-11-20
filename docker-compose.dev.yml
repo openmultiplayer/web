@@ -19,7 +19,6 @@ services:
     environment:
       MINIO_ACCESS_KEY: default
       MINIO_SECRET_KEY: password
-      MINIO_REGION_NAME: eu-west
     ports:
       - 9000:9000
     volumes:

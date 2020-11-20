@@ -50,7 +50,6 @@ services:
     environment:
       MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
       MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
-      MINIO_REGION_NAME: eu-west
     ports:
       - 9000:9000
     volumes:
