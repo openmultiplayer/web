@@ -1,16 +1,12 @@
-import markdown from "remark-parse";
-import html from "remark-html";
-import admonitions from "remark-admonitions";
-import parseHtml from "html-react-parser";
-import unified from "unified";
+import Admonition from "../Admonition";
 
-export default ({ version, name = "function" }) => {
-  let result = unified()
-    .use(markdown)
-    .use(admonitions, {})
-    .use(html)
-    .processSync(
-      `:::warning \n\nThis ${name} was added in ${version} and will not work in earlier versions!\n\n:::`
-    );
-  return parseHtml(result.contents);
-};
+export default function WarningVersion({ version, name = "function" }) {
+  return (
+    <Admonition type="warning">
+      <p>
+        This {name} was added in {version} and will not work in earlier
+        versions!
+      </p>
+    </Admonition>
+  );
+}

@@ -1,20 +1,4 @@
-// import components from "../../components/templates";
-
-const components = {
-  VersionWarn: ({ version, name = "function" }) =>
-    `:::warning
-
-This ${name} was added in ${version} and will not work in earlier versions!
-
-:::`,
-  LowercaseNote: ({ version, name = "function" }) => <p>LowercaseNote</p>,
-  TipNPCCallbacks: ({ version, name = "function" }) => <p>TipNPCCallbacks</p>,
-  VersionWarnID: ({ version, name = "function" }) => <p>VersionWarnID</p>,
-  LowercaseNoteID: ({ version, name = "function" }) => <p>LowercaseNoteID</p>,
-  TipNPCCallbacksID: ({ version, name = "function" }) => (
-    <p>TipNPCCallbacksID</p>
-  ),
-};
+import components from "src/components/templates";
 
 // -
 // Client side
