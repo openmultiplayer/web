@@ -5,7 +5,7 @@ export default function Custom404() {
     <section className="measure-wide center">
       <h1 className="tc">404 - Page Not Found</h1>
 
-      <Image src="/img/404.jpg" width={1280} height={720} />
+      <Image src="/images/assets/404.jpg" width={1280} height={720} />
     </section>
   );
 }
