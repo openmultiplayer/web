@@ -204,16 +204,10 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
 
 const List = ({
   data,
-  mutate,
+  onAdd,
 }: {
   data: Array<Essential>;
-  mutate: (
-    data?:
-      | Array<Essential>
-      | Promise<Array<Essential>>
-      | mutateCallback<Array<Essential>>,
-    shouldRevalidate?: boolean
-  ) => Promise<Array<Essential> | undefined>;
+  onAdd: (server: All) => void;
 }) => {
   const [search, setSearch] = useState("");
   const [showFull, setShowFull] = useState(false);
@@ -310,9 +304,7 @@ const List = ({
           </button>
         </span> */}
       </form>
-      <AddServer
-        onAdd={(server: All) => mutate([...data, server.core], false)}
-      />
+      <AddServer onAdd={onAdd} />
       <ul className="list pl0 mt0 center">
         {dataToList(data, {
           search,
@@ -349,7 +341,14 @@ const Page = ({ initialData }: Props) => {
       />
 
       <h1>Servers</h1>
-      {error ? <Error error={error} /> : <List data={data} mutate={mutate} />}
+      {error ? (
+        <Error error={error} />
+      ) : (
+        <List
+          data={data}
+          onAdd={(server: All) => mutate([...data, server.core], false)}
+        />
+      )}
     </section>
   );
 };
