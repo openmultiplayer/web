@@ -12,6 +12,27 @@ services:
     volumes:
       - ./data/openmp-index/postgres:/var/lib/postgresql/data
 
+  minio:
+    image: minio/minio
+    command: server /data
+    restart: always
+    environment:
+      MINIO_ACCESS_KEY: default
+      MINIO_SECRET_KEY: password
+      MINIO_REGION_NAME: eu-west
+    ports:
+      - 9000:9000
+    volumes:
+      - ${DATA_DIR}/openmp-index/minio:/data
+    networks:
+      - default
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: gateway
+      traefik.http.routers.omp_index_minio.rule: Host(`assets.open.mp`)
+      traefik.http.routers.omp_index_minio.entrypoints: https
+      traefik.http.routers.omp_index_minio.tls.certresolver: default
+
   pgadmin:
     image: dpage/pgadmin4
     restart: always
