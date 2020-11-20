@@ -113,8 +113,13 @@ func (a *Authentication) ReRequestVerification(ctx context.Context, identifier s
 		return err
 	}
 
+	user, err := a.db.User.FindOne(db.User.Email.Equals(identifier)).Exec(ctx)
+	if err != nil {
+		return err
+	}
+
 	if err := mailworker.Enqueue(
-		identifier, // TODO: look up username
+		user.Name,
 		identifier,
 		"Please verify your email address",
 		mailreg.TemplateID("verify"),
