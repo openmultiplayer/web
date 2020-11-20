@@ -6,6 +6,7 @@ import { NextSeo } from "next-seo";
 import { FormEvent, useState } from "react";
 import Fuse from "fuse.js";
 import { toast } from "react-nextjs-toast";
+import { mutateCallback } from "swr/dist/types";
 
 const API_SERVERS = `https://index.open.mp/server/`;
 
@@ -123,7 +124,7 @@ const Stats = ({ stats: { players, servers } }: { stats: Stats }) => {
 
 const formItemStyle = "pa1 ph2 flex flex-column flex-row-ns tl-ns tc";
 
-const AddServer = () => {
+const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -138,6 +139,7 @@ const AddServer = () => {
     });
     if (response.status === 200) {
       const server = (await response.json()) as All;
+      onAdd(server);
       toast.notify(
         `${server.core.hn} (${server.core.gm}) submitted to the index!`,
         {
@@ -198,7 +200,19 @@ const AddServer = () => {
   );
 };
 
-const List = ({ data }: { data: Array<Essential> }) => {
+const List = ({
+  data,
+  mutate,
+}: {
+  data: Array<Essential>;
+  mutate: (
+    data?:
+      | Array<Essential>
+      | Promise<Array<Essential>>
+      | mutateCallback<Array<Essential>>,
+    shouldRevalidate?: boolean
+  ) => Promise<Array<Essential> | undefined>;
+}) => {
   const [search, setSearch] = useState("");
   const [showFull, setShowFull] = useState(false);
   const [showEmpty, setShowEmpty] = useState(false);
@@ -294,7 +308,9 @@ const List = ({ data }: { data: Array<Essential> }) => {
           </button>
         </span> */}
       </form>
-      <AddServer />
+      <AddServer
+        onAdd={(server: All) => mutate([...data, server.core], false)}
+      />
       <ul className="list pl0 mt0 center">
         {dataToList(data, {
           search,
@@ -315,7 +331,7 @@ const Error = ({ error }: { error: TypeError }) => (
 );
 
 const Page = ({ initialData }: Props) => {
-  const { data, error } = useSWR<Array<Essential>, TypeError>(
+  const { data, error, mutate } = useSWR<Array<Essential>, TypeError>(
     API_SERVERS,
     getServers,
     {
@@ -331,7 +347,7 @@ const Page = ({ initialData }: Props) => {
       />
 
       <h1>Servers</h1>
-      {error ? <Error error={error} /> : <List data={data} />}
+      {error ? <Error error={error} /> : <List data={data} mutate={mutate} />}
     </section>
   );
 };
