@@ -7,6 +7,7 @@ import { FormEvent, useState } from "react";
 import Fuse from "fuse.js";
 import { toast } from "react-nextjs-toast";
 import { mutateCallback } from "swr/dist/types";
+import NProgress from "nprogress";
 
 const API_SERVERS = `https://index.open.mp/server/`;
 
@@ -99,8 +100,6 @@ const dataToList = (data: Essential[], q: Query) => {
     ? map((r: Fuse.FuseResult<Essential>) => r.item)(fuse.search(q.search))
     : data;
 
-  console.log();
-
   return flow(
     filter((s: Essential) => (!q.showEmpty ? s.pc > 0 : true)),
     filter((s: Essential) => (!q.showFull ? s.pc !== s.pm : true)),
@@ -128,6 +127,7 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    NProgress.start();
     e.preventDefault();
     const response = await fetch(API_SERVERS, {
       method: "POST",
@@ -137,6 +137,7 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
       },
       body: JSON.stringify({ ip: value }),
     });
+    NProgress.inc();
     if (response.status === 200) {
       const server = (await response.json()) as All;
       onAdd(server);
@@ -153,6 +154,7 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
         type: "error",
       });
     }
+    NProgress.done();
   };
 
   return (

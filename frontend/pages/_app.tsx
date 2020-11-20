@@ -1,15 +1,22 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Router from "next/router";
 import type { AppProps } from "next/app";
 import { compose, flow, map, sortBy } from "lodash/fp";
 import { NextSeo } from "next-seo";
 import { ToastContainer } from "react-nextjs-toast";
+import NProgress from "nprogress";
 
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
+import "nprogress/nprogress.css";
 
 import "styles/base.css";
+
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
 type NavItem = {
   name: string;
