@@ -11,6 +11,7 @@ import NProgress from "nprogress";
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
 import "nprogress/nprogress.css";
+import "remark-admonitions/styles/classic.css";
 
 import "src/styles/base.css";
 
