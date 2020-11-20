@@ -21,7 +21,7 @@ This ${name} was added in ${version} and will not work in earlier versions!
 // -
 
 import renderToString from "next-mdx-remote/render-to-string";
-import { DocsSidebar } from "components/Sidebar";
+import { DocsSidebar } from "src/components/Sidebar";
 
 type Props = {
   source?: any;

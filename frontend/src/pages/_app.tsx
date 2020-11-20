@@ -12,7 +12,7 @@ import "normalize.css";
 import "tachyons/css/tachyons.min.css";
 import "nprogress/nprogress.css";
 
-import "styles/base.css";
+import "src/styles/base.css";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());

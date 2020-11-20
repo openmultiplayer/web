@@ -1,4 +1,4 @@
-import { DocsSidebar } from "components/Sidebar";
+import { DocsSidebar } from "src/components/Sidebar";
 
 const Page = () => {
   return (
