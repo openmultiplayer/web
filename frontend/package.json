@@ -12,6 +12,7 @@
     "@next/mdx": "^10.0.2",
     "@types/node": "^14.14.7",
     "@types/react": "^16.9.56",
+    "date-fns": "^2.16.1",
     "fuse.js": "^6.4.3",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",

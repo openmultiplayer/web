@@ -148,6 +148,14 @@ p {
   line-height: 1.5;
 }
 
+a {
+  color: var(--ifm-color-primary);
+}
+
+a:visited {
+  color: var(--ifm-color-primary-darkest);
+}
+
 :root {
   --ifm-code-background: var(--ifm-color-emphasis-200);
   --ifm-code-border-radius: var(--ifm-global-radius);
