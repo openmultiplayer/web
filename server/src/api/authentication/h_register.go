@@ -6,12 +6,20 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *service) register(w http.ResponseWriter, r *http.Request) {
-	name := r.PostFormValue(FormKeyName)
-	identifier := r.PostFormValue(FormKeyIdentifier)
-	authorizer := r.PostFormValue(FormKeyAuthorizer)
+type registerPayload struct {
+	Username   string `json:"username" schema:"username"`
+	Identifier string `json:"identifier" schema:"identifier"`
+	Authorizer string `json:"authorizer" schema:"authorizer"`
+}
 
-	user, err := s.auth.Register(r.Context(), name, identifier, authorizer)
+func (s *service) register(w http.ResponseWriter, r *http.Request) {
+	var p registerPayload
+	if err := web.DecodeBody(r, &p); err != nil {
+		web.StatusBadRequest(w, err)
+		return
+	}
+
+	user, err := s.auth.Register(r.Context(), p.Username, p.Identifier, p.Authorizer)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

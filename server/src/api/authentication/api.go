@@ -12,13 +12,6 @@ type service struct {
 	auth *auth.Authentication
 }
 
-// Form keys - used in the login and register endpoints
-const (
-	FormKeyName       = "fullname"
-	FormKeyIdentifier = "identifier"
-	FormKeyAuthorizer = "authorizer"
-)
-
 // Routes provides service routes
 func New(a *auth.Authentication) *chi.Mux {
 	rtr := chi.NewRouter()

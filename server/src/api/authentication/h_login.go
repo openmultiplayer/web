@@ -9,11 +9,19 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *service) login(w http.ResponseWriter, r *http.Request) {
-	email := r.PostFormValue(FormKeyIdentifier)
-	password := r.PostFormValue(FormKeyAuthorizer)
+type loginPayload struct {
+	Identifier string `json:"identifier" schema:"identifier"`
+	Authorizer string `json:"authorizer" schema:"authorizer"`
+}
 
-	user, err := s.auth.Login(r.Context(), email, password)
+func (s *service) login(w http.ResponseWriter, r *http.Request) {
+	var p loginPayload
+	if err := web.DecodeBody(r, &p); err != nil {
+		web.StatusBadRequest(w, err)
+		return
+	}
+
+	user, err := s.auth.Login(r.Context(), p.Identifier, p.Authorizer)
 	if err == auth.ErrUserNotFound {
 		web.StatusNotFound(w, web.WithSuggestion(err, "User not found", "Check your email accounts to ensure you're using the correct email address."))
 	} else if err == bcrypt.ErrMismatchedHashAndPassword {
