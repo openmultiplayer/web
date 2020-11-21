@@ -46,7 +46,7 @@ const Nav = ({ items, route }: Props) => (
         <Link href="/">
           <a>
             <Image
-              src="//assets.open.mp/assets/images/assets/logo-dark-trans.png"
+              src="https://assets.open.mp/assets/images/assets/logo-dark-trans.png"
               width={50}
               height={50}
             />
