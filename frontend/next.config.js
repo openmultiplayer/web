@@ -162,4 +162,7 @@ module.exports = withMDX({
     defaultLocale: "en",
   },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+  images: {
+    domains: ["assets.open.mp"],
+  },
 });
