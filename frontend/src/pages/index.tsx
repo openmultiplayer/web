@@ -1,4 +1,5 @@
-import { Wordmark } from "src/components/Branding";
+import Image from "next/image";
+
 import { Content } from "src/mdx-helpers/content";
 import { markdownCSR } from "src/mdx-helpers/csr";
 
@@ -9,7 +10,11 @@ type Props = {
 const Page = ({ content }: Props) => (
   <section className="pa0 ma0 center">
     <div className="mw8 center">
-      <Wordmark />
+      <Image
+        src="https://assets.open.mp/assets/images/assets/wordmark-light-mono.png"
+        width={1660}
+        height={560}
+      />
     </div>
 
     <article className="pa0 ma0">
