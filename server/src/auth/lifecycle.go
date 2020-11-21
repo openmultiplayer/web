@@ -5,9 +5,9 @@ import (
 	"errors"
 	"time"
 
+	"github.com/gofrs/uuid"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/gofrs/uuid"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
@@ -63,10 +63,6 @@ func (a *Authentication) Login(ctx context.Context, identifier, authorizer strin
 			return nil, ErrUserNotFound
 		}
 		return nil, err
-	}
-
-	if _, ok := user.VerifiedAt(); !ok {
-		return nil, ErrUserNotVerified
 	}
 
 	if err := bcrypt.CompareHashAndPassword([]byte(user.Pass), []byte(authorizer)); err != nil {
