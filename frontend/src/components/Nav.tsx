@@ -78,6 +78,9 @@ const NavList = ({ items, route, show }) => (
     ].join(" ")}
   >
     {buildNav(route)(items)}
+    <NavListItem className={"ml-auto-ns " + show || "db-ns dn"}>
+      <ThemeSelect />
+    </NavListItem>
     <NavListItem className={show || "db-ns dn"}>
       <LanguageSelect />
     </NavListItem>
