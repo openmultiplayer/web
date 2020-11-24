@@ -18,7 +18,7 @@ const LanguageSelect = () => {
     <>
       <label
         htmlFor="dialogControl"
-        className="ph2 pv1 mr2 self-center br2 hover-bg-black-10"
+        className="ph2 pv1 self-center br2 hover-bg-black-10"
       >
         {ISO6391.getNativeName(locale)}
       </label>
