@@ -56,11 +56,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
       <main>
         <MDXProvider
           components={{
-            wrapper: (props) => (
-              <div className="measure-wide center ph4">
-                <article {...props} />
-              </div>
-            ),
+            wrapper: (props) => <article {...props} />,
           }}
         >
           <Component {...pageProps} />
