@@ -13,7 +13,7 @@ import getLanguageName from "src/utils/getLanguageName";
 //
 const LanguageSelect = () => {
   const { pathname, locale, locales } = useRouter();
-  const [showLocales, setShowLocales] = useState(true);
+  const [showLocales, setShowLocales] = useState(false);
 
   return (
     <>
