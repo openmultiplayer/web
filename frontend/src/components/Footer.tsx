@@ -16,7 +16,7 @@ const footerList = (heading, items) => (
 
     <style jsx>{`
       a:visited {
-        color: light-blue;
+        color: lightblue;
       }
     `}</style>
   </div>
