@@ -1,6 +1,6 @@
 ---
 title: gpci
-description: Fetch the GPCI of a user, this is linked to their SAMP/GTA on their computer.
+description: Fetch the CI (computer/client identification) of a user, this is linked to their SAMP/GTA on their computer.
 tags: []
 ---
 
@@ -8,11 +8,11 @@ tags: []
 
 ## Description
 
-Fetch the GPCI of a user, this is linked to their SAMP/GTA on their computer.
+Fetch the CI of a user, this is linked to their SAMP/GTA on their computer.
 
 :::warning
 
-A player's GPCI is NOT UNIQUE, some players may have similar or the same GPCI, don't ban solely due to a GPCI match.
+A player's CI is NOT UNIQUE, some players may have similar or the same CI, don't ban solely due to a CI match.
 
 :::
 
@@ -20,17 +20,17 @@ A player's GPCI is NOT UNIQUE, some players may have similar or the same GPCI, d
 
 | Name     | Description                                      |
 | -------- | ------------------------------------------------ |
-| playerid | The ID of the player to fetch their GPCI.        |
-| string[] | String to store the fetched GPCI in.             |
+| playerid | The ID of the player to fetch their CI.          |
+| string[] | String to store the fetched CI in.               |
 | length   | Assigned size of the string, should use sizeof() |
 
 ## Return Values
 
-This function will return the string value of a user's GPCI.
+This function will return the string value of a user's CI.
 
 :::warning
 
-You must add 'native gpci(playerid, serial[], len);' at the top of your script before using any GPCI functions
+You must add 'native gpci(playerid, serial[], len);' at the top of your script before using any CI functions
 
 :::
 
@@ -49,12 +49,12 @@ return szSerial;
 
 :::tip
 
-This function may come in handy to easily get someone's GPCI.
+This function may come in handy to easily get someone's CI.
 
 :::
 
 ```c
-ReturnGPCI(iPlayerID)
+ReturnCI(iPlayerID)
 {
     new
         szSerial[41]; // 40 + \0
