@@ -80,7 +80,7 @@ services:
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
-      traefik.http.routers.samplist_prom.rule: Host(`data.samp-servers.net`)
+      traefik.http.routers.samplist_prom.rule: Host(`data.open.mp`)
       traefik.http.routers.samplist_prom.entrypoints: https
       traefik.http.routers.samplist_prom.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
