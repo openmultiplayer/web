@@ -12,7 +12,7 @@ import getLanguageName from "src/utils/getLanguageName";
 // is selected.
 //
 const LanguageSelect = () => {
-  const { pathname, locale, locales } = useRouter();
+  const { asPath, locale, locales } = useRouter();
   const [showLocales, setShowLocales] = useState(false);
 
   return (
@@ -34,7 +34,7 @@ const LanguageSelect = () => {
       <div className="dialog absolute center ma2 measure aspect-ratio--object">
         <div className="list flex flex-column flex-wrap bg-near-white br2 pa2">
           {locales.map((v: string) => (
-            <Link key={v} href={pathname} locale={v}>
+            <Link key={v} href={asPath} locale={v}>
               <a
                 className="link br2 black pa1 hover-bg-black-20"
                 onClick={() => setShowLocales(false)}
