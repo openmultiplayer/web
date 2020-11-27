@@ -56,7 +56,9 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
       <main>
         <MDXProvider
           components={{
-            wrapper: (props) => <article {...props} />,
+            wrapper: (props) => (
+              <article className="pa2 ma0 center" {...props} />
+            ),
             ...components,
           }}
         >
