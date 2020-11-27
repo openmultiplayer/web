@@ -25,12 +25,12 @@ const footerList = (heading, items) => (
 const Footer = () => (
   <footer className="bg-black-80">
     <div className="near-white pa4-ns pv4 ph5 flex flex-column flex-row-ns justify-around center measure-wide">
-      {footerList("Docs", [
+      {/* {footerList("Docs", [
         ["/docs/scripting/resources/start", "Getting Started"],
         ["/docs/tutorials/_tutorials", "Tutorials"],
         ["/docs/scripting/functions", "Functions"],
         ["/docs/scripting/callbacks", "Callbacks"],
-      ])}
+      ])} */}
 
       {footerList("Community", [
         ["https://discord.gg/samp", "Discord"],
