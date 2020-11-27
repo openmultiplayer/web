@@ -4,15 +4,21 @@ import { map } from "lodash/fp";
 const footerList = (heading, items) => (
   <div className="flex flex-column">
     <h4 className="ma0">{heading}</h4>
-    <ul>
+    <ul className="list pa0">
       {map(([path, name]) => (
         <li key={path}>
           <Link href={path}>
-            <a className="light-blue hover-white">{name}</a>
+            <a className="link near-white hover-white">{name}</a>
           </Link>
         </li>
       ))(items)}
     </ul>
+
+    <style jsx>{`
+      a:visited {
+        color: light-blue;
+      }
+    `}</style>
   </div>
 );
 
