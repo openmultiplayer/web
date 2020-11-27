@@ -80,9 +80,9 @@ services:
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
-      traefik.http.routers.samplist_prom.rule: Host(`data.open.mp`)
-      traefik.http.routers.samplist_prom.entrypoints: https
-      traefik.http.routers.samplist_prom.tls.certresolver: default
+      traefik.http.routers.omp_index_prom.rule: Host(`data.open.mp`)
+      traefik.http.routers.omp_index_prom.entrypoints: https
+      traefik.http.routers.omp_index_prom.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
 
   pgadmin:
