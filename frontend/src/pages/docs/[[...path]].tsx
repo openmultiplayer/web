@@ -4,7 +4,7 @@ import components from "src/components/templates";
 // Client side
 // -
 
-import renderToString from "next-mdx-remote/render-to-string";
+import hydrate from "next-mdx-remote/hydrate";
 import { DocsSidebar } from "src/components/Sidebar";
 
 type Props = {
@@ -43,8 +43,8 @@ const Page = (props: Props) => {
 
 import { readFileSync, statSync } from "fs";
 import { resolve, extname } from "path";
+import renderToString from "next-mdx-remote/render-to-string";
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
-import hydrate from "next-mdx-remote/hydrate";
 import visit from "unist-util-visit";
 import matter from "gray-matter";
 import glob from "glob";
@@ -126,8 +126,9 @@ const exists = (path): boolean => {
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
 ): Promise<GetStaticPropsResult<Props>> {
-  const path_mdx: string = resolve("../docs", ...context.params.path) + ".mdx";
-  const path_md: string = resolve("../docs", ...context.params.path) + ".md";
+  const route = context?.params.path || ["index"];
+  const path_mdx: string = resolve("../docs", ...route) + ".mdx";
+  const path_md: string = resolve("../docs", ...route) + ".md";
 
   let source: string;
   if (exists(path_mdx)) {

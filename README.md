@@ -1,15 +1,35 @@
-# Server Index for open.mp
+<p align="center">
+  <a aria-label="open.mp logo" href="https://open.mp">
+    <img src="https://assets.open.mp/assets/images/assets/wordmark-light-mono.png" width="420" />
+  </a>
+</p>
 
-A replacement for the SA-MP server list built for the current SA-MP version and ready for the future of open.mp servers.
+<p align="center">
+  <em>open.mp multiplayer game framework</em>
+</p>
 
-`server/` contains the backend, which is written in Go. `frontend/` contains the website which is written in JavaScript using the Next.js framework. Database migrations and bindings are handled by Prisma.
+<p align="center">
+  <a
+    href="https://open.mp/docs"
+  >Wiki</a>
+  |
+  <a
+    href="https://discord.gg/samp"
+  >Discord</a>
+</p>
 
-## Deployment
+<p align="center">
+  An upcoming multiplayer mod for Grand Theft Auto: San Andreas that will be
+  fully backwards compatible with the existing multiplayer mod San Andreas
+  Multiplayer.
+</p>
 
-`docker-compose up -d` to run the stack. There's currently no database security in place.
+<p align="center">
+  <a href="https://www.open.mp">open.mp</a>
+</p>
 
-Environment variables required:
+<hr>
 
-- `DATA_DIR`
-- `POSTGRES_USER`
-- `POSTGRES_PASSWORD`
+# Web
+
+This monorepo contains the web services and documentation for open.mp and SA-MP.

@@ -1,7 +1,8 @@
-import ISO6391 from "iso-639-1";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+
+import getLanguageName from "src/utils/getLanguageName";
 
 // Progressively enhanced language menu.
 //
@@ -18,9 +19,9 @@ const LanguageSelect = () => {
     <>
       <label
         htmlFor="dialogControl"
-        className="ph2 pv1 mr2 self-center br2 hover-bg-black-10"
+        className="ph2 pv1 self-center br2 hover-bg-black-10 pointer"
       >
-        {ISO6391.getNativeName(locale)}
+        {getLanguageName(locale)}
       </label>
 
       <input
@@ -30,15 +31,15 @@ const LanguageSelect = () => {
         checked={showLocales}
         onChange={(e) => setShowLocales(e.target.checked)}
       />
-      <div className="dialog absolute center">
-        <div className="list flex flex-wrap bg-near-white br2 pa2">
+      <div className="dialog absolute center ma2 measure aspect-ratio--object">
+        <div className="list flex flex-column flex-wrap bg-near-white br2 pa2">
           {locales.map((v: string) => (
             <Link key={v} href={pathname} locale={v}>
               <a
                 className="link br2 black pa1 hover-bg-black-20"
                 onClick={() => setShowLocales(false)}
               >
-                {ISO6391.getNativeName(v)}
+                {getLanguageName(v)}
               </a>
             </Link>
           ))}
