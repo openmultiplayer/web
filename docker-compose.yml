@@ -63,6 +63,28 @@ services:
       traefik.http.routers.omp_index_minio.entrypoints: https
       traefik.http.routers.omp_index_minio.tls.certresolver: default
 
+  prometheus:
+    image: prom/prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.size=10GB
+      - --web.console.libraries=/usr/share/prometheus/console_libraries
+      - --web.console.templates=/usr/share/prometheus/consoles
+    restart: always
+    volumes:
+      - ${DATA_DIR}/openmp-index/prometheus:/prometheus
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - default
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: gateway
+      traefik.http.routers.omp_index_prom.rule: Host(`data.open.mp`)
+      traefik.http.routers.omp_index_prom.entrypoints: https
+      traefik.http.routers.omp_index_prom.tls.certresolver: default
+      com.centurylinklabs.watchtower.enable: "true"
+
   pgadmin:
     image: dpage/pgadmin4
     restart: always

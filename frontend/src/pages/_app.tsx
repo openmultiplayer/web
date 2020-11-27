@@ -8,6 +8,7 @@ import NProgress from "nprogress";
 
 import Nav from "src/components/Nav";
 import Footer from "src/components/Footer";
+import components from "src/components/templates";
 
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
@@ -52,19 +53,8 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
         route={router.pathname}
       />
 
-      {/* The styles in the MDX wrapper only apply to .mdx pages */}
       <main>
-        <MDXProvider
-          components={{
-            wrapper: (props) => (
-              <div className="measure-wide center ph4">
-                <article {...props} />
-              </div>
-            ),
-          }}
-        >
-          <Component {...pageProps} />
-        </MDXProvider>
+        <Component {...pageProps} />
       </main>
     </div>
 
