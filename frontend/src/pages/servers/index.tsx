@@ -34,7 +34,7 @@ interface Essential {
 
 type Props = {
   initialData?: Array<Essential>;
-  error?: string;
+  errorMessage?: string;
 };
 
 const getServers = async (): Promise<Array<Essential>> => {
@@ -317,14 +317,14 @@ const List = ({
   );
 };
 
-const Error = ({ error }: { error: TypeError }) => (
+const Error = ({ message }: { message: string }) => (
   <p>
     Unfortunately there was an error while getting the server list! The error
-    message is below: <pre>{error.message}</pre>
+    message is below: <pre>{message}</pre>
   </p>
 );
 
-const Page = ({ initialData }: Props) => {
+const Page = ({ initialData, errorMessage }: Props) => {
   const { data, error, mutate } = useSWR<Array<Essential>, TypeError>(
     API_SERVERS,
     getServers,
@@ -332,17 +332,20 @@ const Page = ({ initialData }: Props) => {
       initialData,
     }
   );
+  if (error) {
+    errorMessage = error.message;
+  }
 
   return (
-    <section className="measure-wide center ph2">
+    <section className="measure-wide center ph2 pb2">
       <NextSeo
         title="Server List"
         description="Live indexing and data for all SA-MP servers."
       />
 
       <h1>Servers</h1>
-      {error ? (
-        <Error error={error} />
+      {errorMessage ? (
+        <Error message={errorMessage} />
       ) : (
         <List
           data={data}
@@ -356,9 +359,15 @@ const Page = ({ initialData }: Props) => {
 export const getServerSideProps = async (
   _context: GetServerSidePropsContext
 ): Promise<GetServerSidePropsResult<Props>> => {
+  let servers: Array<Essential>;
+  try {
+    servers = await getServers();
+  } catch (e) {
+    return { props: { errorMessage: e.message } };
+  }
   return {
     props: {
-      initialData: await getServers(),
+      initialData: servers,
     },
   };
 };
