@@ -11,7 +11,7 @@ Faz a gangzone piscar para todos os jogadores.
 | Nome       | Descrição                                                                                                     |
 | ---------- | ------------------------------------------------------------------------------------------------------------- |
 | zone       | O ID da gangzone a piscar.                                                                                    |
-| flashcolor | A cor para piscar na gangzone, pode ser integer ou hex no formato de cor RGBA. Transparência Alpha suportada. |
+| flashcolor | A cor que irá piscar na gangzone, pode ser integer ou hex no formato de cor RGBA. Transparência Alpha suportada. |
 
 ## Retorno
 
