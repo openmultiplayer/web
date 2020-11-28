@@ -143,4 +143,4 @@ Kung ang table ay walang headings, it ay mapupunta sa taas na parte.
   | < 250   | On fire (Sasabog mamaya maya)        |
   ```
 
-Dito na magtatapos ang Contributing page para magsimula na pumunta sa dito sa [page](../Language) nato para magsimula na magcode!
+Dito na magtatapos ang Contributing page
