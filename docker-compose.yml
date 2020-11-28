@@ -8,10 +8,10 @@ networks:
     internal: true
 
 services:
-  index:
+  api:
     build: .
     restart: on-failure
-    image: southclaws/openmp-index
+    image: southclaws/openmp-api
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/prisma?schema=public
       LOG_LEVEL: debug
@@ -25,9 +25,9 @@ services:
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
-      traefik.http.routers.omp_index.rule: Host(`index.open.mp`)
-      traefik.http.routers.omp_index.entrypoints: https
-      traefik.http.routers.omp_index.tls.certresolver: default
+      traefik.http.routers.omp_api.rule: Host(`api.open.mp`)
+      traefik.http.routers.omp_api.entrypoints: https
+      traefik.http.routers.omp_api.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
 
   postgres:
