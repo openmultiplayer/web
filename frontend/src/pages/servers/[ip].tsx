@@ -5,7 +5,7 @@ import useSWR from "swr";
 
 const API_PATH = (ip: string) => `/server/${ip}`;
 
-const API_SERVER = (ip: string) => `https://index.open.mp${API_PATH(ip)}`;
+const API_SERVER = (ip: string) => `https://api.open.mp${API_PATH(ip)}`;
 
 const getServer = async (ip: string) => {
   const r: Response = await fetch(API_SERVER(ip));

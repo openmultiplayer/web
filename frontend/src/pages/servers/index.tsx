@@ -9,7 +9,7 @@ import { toast } from "react-nextjs-toast";
 import { mutateCallback } from "swr/dist/types";
 import NProgress from "nprogress";
 
-const API_SERVERS = `https://index.open.mp/server/`;
+const API_SERVERS = `https://api.open.mp/server/`;
 
 interface All {
   ip: string;
