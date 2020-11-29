@@ -137,10 +137,13 @@ export async function getStaticProps(
   const route = context?.params.path || ["index"];
 
   let result: { source: string; fallback: boolean };
+  const path = route.join("/");
   try {
-    result = await readLocaleDocs(route.join("/"), locale);
+    result = await readLocaleDocs(path, locale);
   } catch (e) {
-    return { props: { error: "Not found" } };
+    return {
+      props: { error: `File ${path} (${locale}) not found: ${e.message}` },
+    };
   }
 
   const { content, data } = matter(result.source);
