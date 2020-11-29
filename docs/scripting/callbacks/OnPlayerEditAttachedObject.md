@@ -91,5 +91,5 @@ Editions should be discarded if response was '0' (cancelled). This must be done 
 
 ## Related Functions
 
-- [EditAttachedObject](../functions/EditAttachedObject.md): Edit an attached object.
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Attach an object to a player
+- [EditAttachedObject](../functions/EditAttachedObject): Edit an attached object.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Attach an object to a player

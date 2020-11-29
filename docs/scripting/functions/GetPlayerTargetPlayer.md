@@ -42,6 +42,6 @@ Does not work for joypads/controllers, and after a certain distance. Does not wo
 
 ## Related Functions
 
-- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector.md): Get the player's camera front vector
-- [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage.md): This callback is called when a player gives damage.
-- [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage.md): This callback is called when a player takes damage.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
+- [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage): This callback is called when a player gives damage.
+- [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage): This callback is called when a player takes damage.

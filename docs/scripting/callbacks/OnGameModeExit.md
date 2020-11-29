@@ -28,4 +28,4 @@ This function can also be used in a filterscript to detect if the gamemode chang
 
 ## Related Functions
 
-- [GameModeExit](../functions/GameModeExit.md): Exit the current gamemode.
+- [GameModeExit](../functions/GameModeExit): Exit the current gamemode.

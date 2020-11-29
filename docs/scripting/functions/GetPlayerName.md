@@ -46,8 +46,8 @@ A player's name can be up to 24 characters long (as of 0.3d R2) by using SetPlay
 
 ## Related Functions
 
-- [SetPlayerName](SetPlayerName.md): Set a player's name.
-- [GetPlayerIp](GetPlayerIp.md): Get a player's IP.
-- [GetPlayerPing](GetPlayerPing.md): Get the ping of a player.
-- [GetPlayerScore](GetPlayerScore.md): Get the score of a player.
-- [GetPlayerVersion](GetPlayerVersion.md): Get a player's client-version.
+- [SetPlayerName](SetPlayerName): Set a player's name.
+- [GetPlayerIp](GetPlayerIp): Get a player's IP.
+- [GetPlayerPing](GetPlayerPing): Get the ping of a player.
+- [GetPlayerScore](GetPlayerScore): Get the score of a player.
+- [GetPlayerVersion](GetPlayerVersion): Get a player's client-version.

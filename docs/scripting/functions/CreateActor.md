@@ -58,24 +58,24 @@ Actors are completely separate from NPCs. They do NOT use player IDs/slots on th
 
 ## Related Functions
 
-- [DestroyActor](DestroyActor.md): Destroy an actor.
-- [SetActorPos](SetActorPos.md): Set the position of an actor.
-- [GetActorPos](GetActorPos.md): Get the position of an actor.
-- [SetActorFacingAngle](SetActorFacingAngle.md): Set the facing angle of an actor.
-- [GetActorFacingAngle](GetActorFacingAngle.md): Get the facing angle of an actor.
-- [SetActorVirtualWorld](SetActorVirtualWorld.md): Set the virtual world of an actor.
-- [GetActorVirtualWorld](GetActorVirtualWorld.md): Get the virtual world of an actor.
-- [ApplyActorAnimation](ApplyActorAnimation.md): Apply an animation to an actor.
-- [ClearActorAnimations](ClearActorAnimations.md): Clear any animations that are applied to an actor.
-- [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor.md): Get the ID of the actor (if any) a player is looking at.
-- [IsActorStreamedIn](IsActorStreamedIn.md): Checks if an actor is streamed in for a player.
-- [SetActorHealth](SetActorHealth.md): Set the health of an actor.
-- [GetActorHealth](GetActorHealth.md): Gets the health of an actor.
-- [SetActorInvulnerable](SetActorInvulnerable.md): Set actor invulnerable.
-- [IsActorInvulnerable](IsActorInvulnerable.md): Check if actor is invulnerable.
-- [IsValidActor](IsValidActor.md): Check if actor id is valid.
-- [GetActorPoolSize](GetActorPoolSize.md): Gets the highest actorid created on the server.
-- [GetPlayerTargetActor](GetPlayerTargetActor.md): Gets id of an actor which is aimed by certain player.
-- [OnActorStreamIn](../callbacks/OnActorStreamIn.md): Called when an actor is streamed in by a player.
-- [OnActorStreamOut](../callbacks/OnActorStreamOut.md): Called when an actor is streamed out by a player.
-- [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor.md): This callback is called when a player gives damage to an actor.
+- [DestroyActor](DestroyActor): Destroy an actor.
+- [SetActorPos](SetActorPos): Set the position of an actor.
+- [GetActorPos](GetActorPos): Get the position of an actor.
+- [SetActorFacingAngle](SetActorFacingAngle): Set the facing angle of an actor.
+- [GetActorFacingAngle](GetActorFacingAngle): Get the facing angle of an actor.
+- [SetActorVirtualWorld](SetActorVirtualWorld): Set the virtual world of an actor.
+- [GetActorVirtualWorld](GetActorVirtualWorld): Get the virtual world of an actor.
+- [ApplyActorAnimation](ApplyActorAnimation): Apply an animation to an actor.
+- [ClearActorAnimations](ClearActorAnimations): Clear any animations that are applied to an actor.
+- [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor): Get the ID of the actor (if any) a player is looking at.
+- [IsActorStreamedIn](IsActorStreamedIn): Checks if an actor is streamed in for a player.
+- [SetActorHealth](SetActorHealth): Set the health of an actor.
+- [GetActorHealth](GetActorHealth): Gets the health of an actor.
+- [SetActorInvulnerable](SetActorInvulnerable): Set actor invulnerable.
+- [IsActorInvulnerable](IsActorInvulnerable): Check if actor is invulnerable.
+- [IsValidActor](IsValidActor): Check if actor id is valid.
+- [GetActorPoolSize](GetActorPoolSize): Gets the highest actorid created on the server.
+- [GetPlayerTargetActor](GetPlayerTargetActor): Gets id of an actor which is aimed by certain player.
+- [OnActorStreamIn](../callbacks/OnActorStreamIn): Called when an actor is streamed in by a player.
+- [OnActorStreamOut](../callbacks/OnActorStreamOut): Called when an actor is streamed out by a player.
+- [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor): This callback is called when a player gives damage to an actor.

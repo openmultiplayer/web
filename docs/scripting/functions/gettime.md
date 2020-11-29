@@ -44,4 +44,4 @@ This function is useful for measuring time intervals by using its timestamp char
 
 ## Related Functions
 
-- [getdate](getdate.md): Get the current date of the server.
+- [getdate](getdate): Get the current date of the server.

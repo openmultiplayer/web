@@ -51,6 +51,6 @@ The string the version gets stored in will be empty if playerid is an NPC.
 
 ## Related Functions
 
-- [GetPlayerName](GetPlayerName.md): Get a player's name.
-- [GetPlayerPing](GetPlayerPing.md): Get the ping of a player.
-- [GetPlayerIp](GetPlayerIp.md): Get a player's IP.
+- [GetPlayerName](GetPlayerName): Get a player's name.
+- [GetPlayerPing](GetPlayerPing): Get the ping of a player.
+- [GetPlayerIp](GetPlayerIp): Get a player's IP.

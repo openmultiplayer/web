@@ -4,7 +4,7 @@ title: Select Object Types
 
 ## Description
 
-Select Object Types to be used with [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject.md).
+Select Object Types to be used with [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject).
 
 ## Types
 

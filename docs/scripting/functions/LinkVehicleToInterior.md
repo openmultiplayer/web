@@ -11,7 +11,7 @@ Links a vehicle to an interior. Vehicles can only be seen by players in the same
 | Name       | Description                                                   |
 | ---------- | ------------------------------------------------------------- |
 | vehicleid  | The ID of the vehicle to link to an interior.                 |
-| interiorid | The [Interior ID](../resources/interiorids.md) to link it to. |
+| interiorid | The [Interior ID](../resources/interiorids) to link it to. |
 
 ## Returns
 
@@ -31,5 +31,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [SetVehicleVirtualWorld](SetVehicleVirtualWorld.md): Set the virtual world of a vehicle.
-- [SetPlayerInterior](SetPlayerInterior.md): Set a player's interior.
+- [SetVehicleVirtualWorld](SetVehicleVirtualWorld): Set the virtual world of a vehicle.
+- [SetPlayerInterior](SetPlayerInterior): Set a player's interior.

@@ -34,6 +34,6 @@ The values returned in each variable are as follows:
 
 ## Related Functions
 
-- [SetVehicleParamsCarDoors](SetVehicleParamsCarDoors.md): Open and close the doors of a vehicle.
-- [SetVehicleParamsCarWindows](SetVehicleParamsCarWindows.md): Open and close the windows of a vehicle.
-- [GetVehicleParamsCarWindows](GetVehicleParamsCarWindows.md): Retrive the current state of a vehicle's windows
+- [SetVehicleParamsCarDoors](SetVehicleParamsCarDoors): Open and close the doors of a vehicle.
+- [SetVehicleParamsCarWindows](SetVehicleParamsCarWindows): Open and close the windows of a vehicle.
+- [GetVehicleParamsCarWindows](GetVehicleParamsCarWindows): Retrive the current state of a vehicle's windows

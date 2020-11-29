@@ -29,6 +29,6 @@ if (IsObjectMoving(objectid))
 
 ## Related Functions
 
-- [MoveObject](MoveObject.md): Move an object.
-- [StopObject](StopObject.md): Stop an object from moving.
-- [OnObjectMoved](../callbacks/OnObjectMoved.md): Called when an object stops moving.
+- [MoveObject](MoveObject): Move an object.
+- [StopObject](StopObject): Stop an object from moving.
+- [OnObjectMoved](../callbacks/OnObjectMoved): Called when an object stops moving.

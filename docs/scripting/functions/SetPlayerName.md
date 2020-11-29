@@ -64,4 +64,4 @@ Changing the players' name to the same name but with different character cases (
 
 ## Related Functions
 
-- [GetPlayerName](GetPlayerName.md): Get a player's name.
+- [GetPlayerName](GetPlayerName): Get a player's name.

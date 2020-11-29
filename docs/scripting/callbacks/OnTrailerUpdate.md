@@ -43,7 +43,7 @@ This callback is called very frequently per second per trailer. You should refra
 
 ## Related Functions
 
-- [GetVehicleTrailer](../functions/GetVehicleTrailer.md): Check what trailer a vehicle is pulling.
-- [IsTrailerAttachedToVehicle](../functions/IsTrailerAttachedToVehicle.md): Check if a trailer is attached to a vehicle.
-- [AttachTrailerToVehicle](../functions/AttachTrailerToVehicle.md): Attach a trailer to a vehicle.
-- [DetachTrailerFromVehicle](../functions/DetachTrailerFromVehicle.md): Detach a trailer from a vehicle.
+- [GetVehicleTrailer](../functions/GetVehicleTrailer): Check what trailer a vehicle is pulling.
+- [IsTrailerAttachedToVehicle](../functions/IsTrailerAttachedToVehicle): Check if a trailer is attached to a vehicle.
+- [AttachTrailerToVehicle](../functions/AttachTrailerToVehicle): Attach a trailer to a vehicle.
+- [DetachTrailerFromVehicle](../functions/DetachTrailerFromVehicle): Detach a trailer from a vehicle.

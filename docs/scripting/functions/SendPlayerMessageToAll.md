@@ -45,6 +45,6 @@ Avoid using format specifiers in your messages without formatting the string tha
 
 ## Related Functions
 
-- [SendPlayerMessageToPlayer](SendPlayerMessageToPlayer.md): Force a player to send text for one player.
-- [SendClientMessageToAll](SendClientMessageToAll.md): Send a message to all players.
-- [OnPlayerText](../callbacks/OnPlayerText.md): Called when a player sends a message via the chat.
+- [SendPlayerMessageToPlayer](SendPlayerMessageToPlayer): Force a player to send text for one player.
+- [SendClientMessageToAll](SendClientMessageToAll): Send a message to all players.
+- [OnPlayerText](../callbacks/OnPlayerText): Called when a player sends a message via the chat.

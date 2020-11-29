@@ -42,4 +42,4 @@ CallRemoteFunction crashes the server if it's passing an empty string.
 
 ## Related Functions
 
-- [CallLocalFunction](CallLocalFunction.md): Call a function in the script.
+- [CallLocalFunction](CallLocalFunction): Call a function in the script.

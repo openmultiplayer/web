@@ -39,4 +39,4 @@ ClearActorAnimations(gMyActor);
 
 ## Related Functions
 
-- [ApplyActorAnimation](ApplyActorAnimation.md): Apply an animation to an actor.
+- [ApplyActorAnimation](ApplyActorAnimation): Apply an animation to an actor.

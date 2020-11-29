@@ -46,4 +46,4 @@ There is currently only one 'source' (0 - CLICK_SOURCE_SCOREBOARD). The existenc
 
 ## Related Functions
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

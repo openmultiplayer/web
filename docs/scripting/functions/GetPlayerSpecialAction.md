@@ -14,7 +14,7 @@ Retrieves a player's current special action.
 
 ## Returns
 
-The special action of the player (see: [Special Actions](../resources/specialactions.md)).
+The special action of the player (see: [Special Actions](../resources/specialactions)).
 
 ## Examples
 
@@ -32,5 +32,5 @@ public OnPlayerUpdate(playerid)
 
 ## Related Functions
 
-- [SetPlayerSpecialAction](SetPlayerSpecialAction.md): Set a player's special action.
-- [GetPlayerState](GetPlayerState.md): Get a player's current state.
+- [SetPlayerSpecialAction](SetPlayerSpecialAction): Set a player's special action.
+- [GetPlayerState](GetPlayerState): Get a player's current state.

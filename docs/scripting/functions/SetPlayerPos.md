@@ -52,7 +52,7 @@ When setting a player's position to an interior, their interior must be set also
 
 ## Related Functions
 
-- [SetPlayerPosFindZ](SetPlayerPosFindZ.md): Set a player's position and find the ground.
-- [GetPlayerPos](GetPlayerPos.md): Get a player's position.
-- [SetVehiclePos](SetVehiclePos.md): Set the position of a vehicle.
-- [GetVehiclePos](GetVehiclePos.md): Get the position of a vehicle.
+- [SetPlayerPosFindZ](SetPlayerPosFindZ): Set a player's position and find the ground.
+- [GetPlayerPos](GetPlayerPos): Get a player's position.
+- [SetVehiclePos](SetVehiclePos): Set the position of a vehicle.
+- [GetVehiclePos](GetVehiclePos): Get the position of a vehicle.

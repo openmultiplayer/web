@@ -45,5 +45,5 @@ Timer intervals are not accurate (roughly 25% off). There are fixes available he
 
 ## Related Functions
 
-- [SetTimerEx](SetTimerEx.md): Set a timer with parameters.
-- [KillTimer](KillTimer.md): Stop a timer.
+- [SetTimerEx](SetTimerEx): Set a timer with parameters.
+- [KillTimer](KillTimer): Stop a timer.

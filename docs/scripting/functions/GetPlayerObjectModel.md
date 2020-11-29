@@ -28,4 +28,4 @@ new modelId = GetPlayerObjectModel(playerid, objectId);
 
 ## Related Functions
 
-- [GetObjectModel](GetObjectModel.md): Get the model ID of an object.
+- [GetObjectModel](GetObjectModel): Get the model ID of an object.

@@ -38,6 +38,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [CreateActor](CreateActor.md): Create an actor.
-- [GetActorPoolSize](GetActorPoolSize.md): Gets the highest actorid created on the server.
-- [SetActorHealth](SetActorHealth.md): Set the health of an actor.
+- [CreateActor](CreateActor): Create an actor.
+- [GetActorPoolSize](GetActorPoolSize): Gets the highest actorid created on the server.
+- [SetActorHealth](SetActorHealth): Set the health of an actor.

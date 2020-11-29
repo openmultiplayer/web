@@ -10,8 +10,8 @@ This function does exactly the same as AddStaticPickup, except it returns a pick
 
 | Name                                | Description                                                                       |
 | ----------------------------------- | --------------------------------------------------------------------------------- |
-| [model](../resources/pickupids.md)  | The model of the pickup.                                                          |
-| [type](../resources/pickuptypes.md) | The pickup type. Determines how the pickup responds when picked up.               |
+| [model](../resources/pickupids)  | The model of the pickup.                                                          |
+| [type](../resources/pickuptypes) | The pickup type. Determines how the pickup responds when picked up.               |
 | Float:X                             | The X coordinate to create the pickup at.                                         |
 | Float:Y                             | The Y coordinate to create the pickup at.                                         |
 | Float:Z                             | The Z coordinate to create the pickup at.                                         |
@@ -54,6 +54,6 @@ Known Bug(s): Pickups that have a X or Y lower than -4096.0 or bigger than 4096.
 
 ## Related Functions
 
-- [AddStaticPickup](AddStaticPickup.md): Add a static pickup.
-- [DestroyPickup](DestroyPickup.md): Destroy a pickup.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.
+- [AddStaticPickup](AddStaticPickup): Add a static pickup.
+- [DestroyPickup](DestroyPickup): Destroy a pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Called when a player picks up a pickup.

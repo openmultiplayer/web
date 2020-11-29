@@ -25,5 +25,5 @@ FreezeAll()
 
 ## Related Functions
 
-- [GetVehiclePoolSize](GetVehiclePoolSize.md): Gets the highest vehicleid currently in use on the server.
-- [GetMaxPlayers](GetMaxPlayers.md): Gets the maximum number of players that can join the server.
+- [GetVehiclePoolSize](GetVehiclePoolSize): Gets the highest vehicleid currently in use on the server.
+- [GetMaxPlayers](GetMaxPlayers): Gets the maximum number of players that can join the server.

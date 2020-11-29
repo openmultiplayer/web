@@ -46,7 +46,7 @@ if (strcmp(cmdtext, "/repair", true) == 0)
 
 :::tip
 
-Full vehicle health is 1000, however higher values are possible and increase the health of the vehicle. For more information on health values, see [here](../resources/vehiclehealth.md).
+Full vehicle health is 1000, however higher values are possible and increase the health of the vehicle. For more information on health values, see [here](../resources/vehiclehealth).
 
 :::
 
@@ -58,6 +58,6 @@ A vehicle catches on fire when its health is below 250. It will explode a few se
 
 ## Related Functions
 
-- [SetVehicleHealth](SetVehicleHealth.md): Set the health of a vehicle.
-- [GetPlayerHealth](GetPlayerHealth.md): Find out how much health a player has.
-- [GetPlayerArmour](GetPlayerArmour.md): Find out how much armour a player has.
+- [SetVehicleHealth](SetVehicleHealth): Set the health of a vehicle.
+- [GetPlayerHealth](GetPlayerHealth): Find out how much health a player has.
+- [GetPlayerArmour](GetPlayerArmour): Find out how much armour a player has.

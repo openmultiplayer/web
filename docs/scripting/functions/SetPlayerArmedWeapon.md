@@ -56,5 +56,5 @@ This function arms a player with a weapon they already have; it does not give th
 
 ## Related Functions
 
-- [GivePlayerWeapon](GivePlayerWeapon.md): Give a player a weapon.
-- [GetPlayerWeapon](GetPlayerWeapon.md): Check what weapon a player is currently holding.
+- [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
+- [GetPlayerWeapon](GetPlayerWeapon): Check what weapon a player is currently holding.

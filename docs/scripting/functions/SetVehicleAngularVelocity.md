@@ -55,5 +55,5 @@ This function has no effect on unoccupied vehicles and does not affect trains.
 
 ## Related Functions
 
-- [SetVehicleVelocity](SetVehicleVelocity.md): Set a vehicle's velocity.
-- [GetVehicleVelocity](GetVehicleVelocity.md): Get a vehicle's velocity.
+- [SetVehicleVelocity](SetVehicleVelocity): Set a vehicle's velocity.
+- [GetVehicleVelocity](GetVehicleVelocity): Get a vehicle's velocity.

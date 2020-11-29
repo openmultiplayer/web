@@ -57,5 +57,5 @@ public DelayedKick(playerid)
 
 ## Related Functions
 
-- [Ban](Ban.md): Ban a player from playing on the server.
-- [BanEx](BanEx.md): Ban a player with a custom reason.
+- [Ban](Ban): Ban a player from playing on the server.
+- [BanEx](BanEx): Ban a player with a custom reason.

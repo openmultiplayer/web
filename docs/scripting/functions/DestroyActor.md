@@ -40,4 +40,4 @@ public OnFilterScriptExit()
 
 ## Related Functions
 
-- [CreateActor](CreateActor.md): Create an actor (static NPC).
+- [CreateActor](CreateActor): Create an actor (static NPC).

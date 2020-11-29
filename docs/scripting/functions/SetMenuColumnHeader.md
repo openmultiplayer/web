@@ -49,6 +49,6 @@ Note that you can add only 12 items with AddMenuItem. The 13th object of a menu 
 
 ## Related Functions
 
-- [AddMenuItem](AddMenuItem.md): Add an item to a menu.
-- [CreateMenu](CreateMenu.md): Create a menu.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
+- [AddMenuItem](AddMenuItem): Add an item to a menu.
+- [CreateMenu](CreateMenu): Create a menu.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.

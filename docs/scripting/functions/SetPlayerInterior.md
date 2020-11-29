@@ -11,7 +11,7 @@ Set a player's interior. A list of currently known interiors and their positions
 | Name       | Description                                                          |
 | ---------- | -------------------------------------------------------------------- |
 | playerid   | The ID of the player to set the interior of.                         |
-| interiorid | The [interior ID](../resources/interiorids.md) to set the player in. |
+| interiorid | The [interior ID](../resources/interiorids) to set the player in. |
 
 ## Returns
 
@@ -28,6 +28,6 @@ SetPlayerInterior(playerid, 0);
 
 ## Related Functions
 
-- [GetPlayerInterior](GetPlayerInterior.md): Get the current interior of a player.
-- [LinkVehicleToInterior](LinkVehicleToInterior.md): Change the interior that a vehicle is seen in.
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange.md): Called when a player changes interior.
+- [GetPlayerInterior](GetPlayerInterior): Get the current interior of a player.
+- [LinkVehicleToInterior](LinkVehicleToInterior): Change the interior that a vehicle is seen in.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Called when a player changes interior.
