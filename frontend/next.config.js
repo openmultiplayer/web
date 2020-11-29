@@ -11,6 +11,19 @@ const visit = require("unist-util-visit");
 const SIDE_BAR_NAME = "Sidebar";
 const CATEGORY_NAME_CAPITALIZATION = true;
 
+function shouldIgnore(name) {
+  if (typeof name !== "string") {
+    return false;
+  }
+  if (name.includes("index")) {
+    return true;
+  }
+  if (name.includes("README")) {
+    return true;
+  }
+  return false;
+}
+
 function parseDir(filename) {
   const stats = fs.lstatSync(filename);
   const info = {};
@@ -19,9 +32,12 @@ function parseDir(filename) {
   if (stats.isDirectory()) {
     // if it's `docs` directory, set it as main and first key
     if (path.basename(filename) === "docs") {
-      info[SIDE_BAR_NAME] = fs.readdirSync(filename).map(function (child) {
-        return parseDir(filename + "/" + child);
-      });
+      info[SIDE_BAR_NAME] = fs
+        .readdirSync(filename)
+        .map(function (child) {
+          return parseDir(filename + "/" + child);
+        })
+        .filter((v) => v !== null);
     }
     // it's a directory inside `docs` folder
     else {
@@ -65,19 +81,16 @@ function parseDir(filename) {
             : -1
         );
 
-      info.items = sortedFilesAndDirs.map(function (item) {
-        return parseDir(filename + "/" + item.name);
-      });
+      info.items = sortedFilesAndDirs
+        .map(function (item) {
+          return parseDir(filename + "/" + item.name);
+        })
+        .filter((v) => v !== null);
 
       // ignore `index.md` and `README.md` files in directories placed in `docs`
       let index = info.items.length;
       while (index--) {
-        if (
-          (typeof info.items[index] === "string" &&
-            info.items[index].includes("index")) ||
-          (typeof info.items[index] === "string" &&
-            info.items[index].includes("README"))
-        ) {
+        if (shouldIgnore(info.items[index])) {
           info.items.splice(index, 1);
         }
       }
@@ -85,6 +98,10 @@ function parseDir(filename) {
   }
   // it's a file, so it should be path/to/file starting in `docs` directory as root
   else {
+    if (shouldIgnore(filename)) {
+      return null;
+    }
+
     // remove `filename.md` and `docs/`
     const tmpPath = filename.split("/");
     tmpPath.pop();
