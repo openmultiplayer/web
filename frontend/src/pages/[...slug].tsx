@@ -40,45 +40,11 @@ const Page = ({ source, error, data, fallback }: Props) => {
   );
 };
 
-import { statSync, readFileSync } from "fs";
-import { resolve } from "path";
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import matter from "gray-matter";
 import renderToString from "next-mdx-remote/render-to-string";
 
-const exists = (path): boolean => {
-  try {
-    statSync(path);
-    return true;
-  } catch {
-    return false;
-  }
-};
-
-const readMd = async (path: string): Promise<string> => {
-  const path_mdx = path + ".mdx";
-  const path_md = path + ".md";
-  if (exists(path_mdx)) {
-    return readFileSync(path_mdx).toString();
-  } else if (exists(path_md)) {
-    return readFileSync(path_md).toString();
-  }
-  return undefined;
-};
-
-const readLocaleContent = async (name: string, locale: string) => {
-  let source = await readMd(resolve("content", locale, name));
-  if (source !== undefined) {
-    return { source, fallback: false };
-  }
-
-  source = await readMd(resolve("content", "en", name));
-  if (source !== undefined) {
-    return { source, fallback: true };
-  }
-
-  throw new Error("Not found");
-};
+import { readLocaleContent } from "src/utils/content";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ slug: string[] }>

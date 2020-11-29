@@ -6,11 +6,13 @@ import components from "src/components/templates";
 
 import hydrate from "next-mdx-remote/hydrate";
 import { DocsSidebar } from "src/components/Sidebar";
+import Admonition from "src/components/Admonition";
 
 type Props = {
   source?: any;
   error?: string;
   data?: { [key: string]: any };
+  fallback?: boolean;
 };
 
 const Page = (props: Props) => {
@@ -29,6 +31,19 @@ const Page = (props: Props) => {
     <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
       <DocsSidebar />
       <section className="mw7 pa3 flex-auto">
+        {props.fallback && (
+          <Admonition type="warning" title="Not Translated">
+            <p>
+              This page has not been translated into the language that your
+              browser requested. The English content is being shown as a
+              fallback.
+            </p>
+            <p>
+              If you want to contribute a translation for this page then please
+              click <a href="https://github.com/openmultiplayer/web">here</a>.
+            </p>
+          </Admonition>
+        )}
         <h1>{props?.data?.title}</h1>
         {content}
       </section>
@@ -41,14 +56,15 @@ const Page = (props: Props) => {
 // Server side
 // -
 
-import { readFileSync, statSync } from "fs";
-import { resolve, extname } from "path";
+import { extname } from "path";
 import renderToString from "next-mdx-remote/render-to-string";
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import visit from "unist-util-visit";
 import matter from "gray-matter";
 import glob from "glob";
 import admonitions from "remark-admonitions";
+
+import { readLocaleDocs } from "src/utils/content";
 
 // Remark plugin for colours.
 // Usage:
@@ -114,32 +130,20 @@ const remarkColour = function attacher() {
   };
 };
 
-const exists = (path): boolean => {
-  try {
-    statSync(path);
-    return true;
-  } catch {
-    return false;
-  }
-};
-
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
 ): Promise<GetStaticPropsResult<Props>> {
+  const { locale } = context;
   const route = context?.params.path || ["index"];
-  const path_mdx: string = resolve("../docs", ...route) + ".mdx";
-  const path_md: string = resolve("../docs", ...route) + ".md";
 
-  let source: string;
-  if (exists(path_mdx)) {
-    source = readFileSync(path_mdx).toString();
-  } else if (exists(path_md)) {
-    source = readFileSync(path_md).toString();
-  } else {
+  let result: { source: string; fallback: boolean };
+  try {
+    result = await readLocaleDocs(route.join("/"), locale);
+  } catch (e) {
     return { props: { error: "Not found" } };
   }
 
-  const { content, data } = matter(source);
+  const { content, data } = matter(result.source);
 
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
@@ -150,7 +154,13 @@ export async function getStaticProps(
     },
   });
 
-  return { props: { source: mdxSource, data } };
+  return {
+    props: {
+      source: mdxSource,
+      data,
+      fallback: result.fallback,
+    },
+  };
 }
 
 export async function getStaticPaths() {
