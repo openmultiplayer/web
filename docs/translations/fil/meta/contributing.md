@@ -3,7 +3,7 @@ title: Contributing
 description: How to contribute to the SA-MP Wiki and open.mp documentation for PH.
 ---
 
-Kung gusto mong makatulong sa pag gawa ng documents tungkol sa scripting ay kelangan marunong ka magtagalog syempre kelangan mo dito ng konting kaalamaan tungkol sa git kasi kelangan natin ng magandang documentation para dito kasi alam mo naman ang mga pilipino. Eto ang [Github](https://github.com/openmultiplayer/web) ng openmultiplayer kung gusto mo magfork galing sakanila (Hindi updated to mag pupush ako ng mga bagong gawa don sa aking forked version ng github nila) kasi di naman sila aktibong nag aaccept ng pull request naming mga contributors kaya kung gusto mo makatulong dito eto ang [Github](https://github.com/CnRXoMoX/web) na galing saakin **RECOMENDADO KO DITO KAYO TUMULONG PARA UPDATED LAHAT NG FILES PARA SA PH DIRECTORY**
+Kung gusto mong makatulong sa pag gawa ng documents tungkol sa scripting ay kelangan marunong ka magtagalog syempre kelangan mo dito ng konting kaalamaan tungkol sa git kasi kelangan natin ng magandang documentation para dito kasi alam mo naman ang mga pilipino. Eto ang [Github](https://github.com/openmultiplayer/web) ng openmultiplayer kung gusto mo magfork galing sakanila (Hindi updated to mag pupush ako ng mga bagong gawa don sa aking forked version ng github nila) kasi di naman sila aktibong nag aaccept ng pull request naming mga contributors kaya kung gusto mo makatulong dito eto ang [Github](https://github.com/CnRXoMoX/web) na galing saakin **REKOMENDADO KO DITO KAYO TUMULONG PARA UPDATED LAHAT NG FILES PARA SA PH DIRECTORY**
 
 ## Maglalagay ng mga bagong Content
 
@@ -26,11 +26,11 @@ Pag tapos na pindutin lang ang "Propose new file" at gumawa ng Pull Request and 
 Kung gusto mo gumamit ng Git, ang gagawin mo lang ay icloclone ang forked version ng openmp documentation ko
 `git clone https://github.com/CnRXoMoX/web.git`
 
-Bugsan ito sa gusto mong editor, Nirerecomenda ko gumamit ng [Visual Studio Code](https://code.visualstudio.com/) kasi pwede mo dito makita ang output ng ineedit mong .md file ginagamit ko din ito sa pag gawa ng mga documentation (Me XomoX)
+Buksan ito sa gusto mong editor, Nirerekomenda ko gumamit ng [Visual Studio Code](https://code.visualstudio.com/) kasi pwede mo dito makita ang output ng ineedit mong .md file ginagamit ko din ito sa pag gawa ng mga documentation (Me XomoX)
 
 ![vscode](/images/contributing/vscode.png)
 
-Eto ang mga nirerecomenda kong extensions para dito
+Eto ang mga nirerekomenda kong extensions para dito
 
 * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - Eto ay makakatulong sayo para malaman mo kung tama ang pagkakaformat ng Markdown mo. Nag preprevent ito ng syntactic at sementic na pagkakamali. Hindi lahat ng warnings ay importante, pero yung iba nakakatulong para mabasa natin ng maayos and mga ginagawa nating markdown files. Ask mo lang ako sa discord kung meron kang tanong XomoX#8227
 
@@ -142,5 +142,65 @@ Kung ang table ay walang headings, it ay mapupunta sa taas na parte.
   | 390-250 | Black Smoke                          |
   | < 250   | On fire (Sasabog mamaya maya)        |
   ```
+## Migrating from SA-MP Wiki
+
+Halos lahat ng mga nilalaman ay nalipat na, pero kung may nakita kang page sa wiki na walang laman, heto ang gabay para sa pag convert ng mga nilalaman sa Markdown.
+
+### Getting the HTML
+
+1. Pindutin ang button na ito.
+
+   (Firefox)
+
+   ![image](/images/contributing/04f024579f8d.png)
+
+   (Chrome)
+
+   ![image](/images/contributing/f62bb8112543.png)
+
+2. I tutok sa kaliwang bahagi ng main wiki page, sa kaliwang margin o sa sulok hanggang makita mo ang `#content`
+
+   ![image](/images/contributing/65761ffbc429.png)
+
+   Or search for `<div id=content>`
+
+   ![image](/images/contributing/77befe2749fd.png)
+
+3. I-Copy ang inner HTML ng element na iyon.
+
+   ![image](/images/contributing/8c7c75cfabad.png)
+
+   Ngayon ay nasayo na ang HTML code para sa aktwal na _nilalaman_ ng page, mga bagay na importante, at maaari mo itong i-convert sa Markdown.
+
+### Converting HTML to Markdown
+
+Para sa pag convert ng basic HTML (no tables) sa Markdown gamitin ang:
+
+https://domchristie.github.io/turndown/
+
+![image](/images/contributing/77f4ea555bbb.png)
+
+^^ Tignan, nasira ang table dito...
+
+### HTML Tables to Markdown Tables
+
+Dahil ang ginamit na paraan sa taas ay hindi nag susupport ng tables, sa halip, gamitin ang tool na ito:
+
+https://jmalarcon.github.io/markdowntables/
+
+At i-copy lang ang `<table>` na element sa:
+
+![image](/images/contributing/57f171ae0da7.png)
+
+### Cleaning Up
+
+Ang pag convert ay hindi perpekto. Kaya kailangan mong mag-adjust para luminis ang tingin nito. Ang formatting extensions na naka lista sa taas ay maaaring makatulong sa iyo upang mabawasan ang trabaho.
+
+Kung wala kang oras, wag magalala! I submit mo lang ang hindi mo pa tapos na trabaho bilang draft upang ituloy ng iba!
+
+## License Agreement
+
+All open.mp projects have a [Contributor License Agreement][https://cla-assistant.io/openmultiplayer/homepage]. This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
+
 
 Dito na magtatapos ang Contributing page
