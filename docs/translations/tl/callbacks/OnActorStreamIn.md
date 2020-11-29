@@ -35,4 +35,4 @@ public OnActorStreamIn(actorid, forplayerid)
 
 <TipNPCCallbacks />
 
-## Mga Similar na Callbacks
+## Mga Related na Callbacks
