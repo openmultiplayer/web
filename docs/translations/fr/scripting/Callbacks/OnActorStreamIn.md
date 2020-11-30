@@ -17,7 +17,7 @@ Cette callback est appelée quand un acteur est stream par joueur.
 
 ## Return
 
-Il est toujours appelé en premier dans les filterscripts.
+La callback est toujours appelé en premier dans les filterscripts.
 
 ## Exemple
 
