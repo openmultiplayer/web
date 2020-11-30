@@ -30,7 +30,7 @@ if (vehicleId != 0)
 
 ## Related Functions
 
-- [IsPlayerInVehicle](IsPlayerInVehicle.md): Check if a player is in a certain vehicle.
-- [IsPlayerInAnyVehicle](IsPlayerInAnyVehicle.md): Check if a player is in any vehicle.
-- [GetPlayerVehicleSeat](GetPlayerVehicleSeat.md): Check what seat a player is in.
-- [GetVehicleModel](GetVehicleModel.md): Get the model id of a vehicle.
+- [IsPlayerInVehicle](IsPlayerInVehicle): Check if a player is in a certain vehicle.
+- [IsPlayerInAnyVehicle](IsPlayerInAnyVehicle): Check if a player is in any vehicle.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.
+- [GetVehicleModel](GetVehicleModel): Get the model id of a vehicle.

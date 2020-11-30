@@ -20,7 +20,7 @@ Move a player's camera from one position to another, within the set time. Useful
 | Float:ToY   | The Y position the camera should move to                                                                                |
 | Float:ToZ   | The Z position the camera should move to                                                                                |
 | time        | Time in milliseconds                                                                                                    |
-| cut         | The [jumpcut](../resources/cameracutstyles.md) to use. Defaults to CAMERA_CUT. Set to CAMERA_MOVE for a smooth movement |
+| cut         | The [jumpcut](../resources/cameracutstyles) to use. Defaults to CAMERA_CUT. Set to CAMERA_MOVE for a smooth movement |
 
 ## Returns
 
@@ -52,6 +52,6 @@ Use TogglePlayerSpectating to make objects stream in for the player while the ca
 
 ## Related Functions
 
-- [InterpolateCameraLookAt](InterpolateCameraLookAt.md): Move a player's camera view from one location to another.
-- [SetPlayerCameraPos](SetPlayerCameraPos.md): Set a player's camera position.
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt.md): Set where a player's camera should face.
+- [InterpolateCameraLookAt](InterpolateCameraLookAt): Move a player's camera view from one location to another.
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.

@@ -20,7 +20,7 @@ Interpolate a player's camera's 'look at' point between two coordinates with a s
 | Float:ToY   | The Y position the camera should move to                                                                                           |
 | Float:ToZ   | The Z position the camera should move to                                                                                           |
 | time        | Time in milliseconds to complete interpolation                                                                                     |
-| cut         | The ['jumpcut'](../resources/cameracutstyles.md) to use. Defaults to CAMERA_CUT (pointless). Set to CAMERA_MOVE for interpolation. |
+| cut         | The ['jumpcut'](../resources/cameracutstyles) to use. Defaults to CAMERA_CUT (pointless). Set to CAMERA_MOVE for interpolation. |
 
 ## Returns
 
@@ -54,6 +54,6 @@ Use TogglePlayerSpectating to make objects stream in for the player while the ca
 
 ## Related Functions
 
-- [InterpolateCameraPos](InterpolateCameraPos.md): Move a player's camera from one location to another.
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt.md): Set where a player's camera should face.
-- [SetPlayerCameraPos](SetPlayerCameraPos.md): Set a player's camera position.
+- [InterpolateCameraPos](InterpolateCameraPos): Move a player's camera from one location to another.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.

@@ -39,5 +39,5 @@ Not called if the player falls off a bike or is removed from a vehicle by other 
 
 ## Related Functions
 
-- [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle.md): Throw a player out of their vehicle.
-- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Check what seat a player is in.
+- [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): Throw a player out of their vehicle.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Check what seat a player is in.

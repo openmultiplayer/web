@@ -51,4 +51,4 @@ This callback is only called when a vehicle's siren is toggled on or off, NOT wh
 
 ## Related Functions
 
-- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState.md): Check whether a vehicle's siren is on or off.
+- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.

@@ -37,13 +37,13 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 :::tip
 
-Full vehicle health is 1000. Higher values are possible. For more information on health values, see [this](../resources/vehiclehealth.md) page.
+Full vehicle health is 1000. Higher values are possible. For more information on health values, see [this](../resources/vehiclehealth) page.
 
 :::
 
 ## Related Functions
 
-- [GetVehicleHealth](GetVehicleHealth.md): Check the health of a vehicle.
-- [RepairVehicle](RepairVehicle.md): Fully repair a vehicle.
-- [SetPlayerHealth](SetPlayerHealth.md): Set a player's health.
-- [OnVehicleDeath](../callbacks/OnVehicleDeath.md): Called when a vehicle is destroyed.
+- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
+- [RepairVehicle](RepairVehicle): Fully repair a vehicle.
+- [SetPlayerHealth](SetPlayerHealth): Set a player's health.
+- [OnVehicleDeath](../callbacks/OnVehicleDeath): Called when a vehicle is destroyed.

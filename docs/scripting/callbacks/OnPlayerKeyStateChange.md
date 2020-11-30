@@ -6,13 +6,13 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when the state of any [supported](../resources/keys.md) key is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
+This callback is called when the state of any [supported](../resources/keys) key is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
 
 | Name     | Description                                                                                      |
 | -------- | ------------------------------------------------------------------------------------------------ |
 | playerid | The ID of the player that pressed or released a key.                                             |
-| newkeys  | A map (bitmask) of the keys currently held - [see here](../resources/keys.md)                    |
-| oldkeys  | A map (bitmask) of the keys held prior to the current change - [see here](../resources/keys.md). |
+| newkeys  | A map (bitmask) of the keys currently held - [see here](../resources/keys)                    |
+| oldkeys  | A map (bitmask) of the keys held prior to the current change - [see here](../resources/keys). |
 
 ## Returns
 
@@ -29,7 +29,7 @@ This callback can also be called by NPC.
 
 :::tip
 
-Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys.md) (in [OnPlayerUpdate](../callbacks/OnPlayerUpdate.md) or a timer).
+Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](../callbacks/OnPlayerUpdate) or a timer).
 
 :::
 
@@ -37,13 +37,13 @@ Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/
 
     #test
 
-- [GetPlayerKeys](../functions/GetPlayerKeys.md): Check what keys a player is holding.
+- [GetPlayerKeys](../functions/GetPlayerKeys): Check what keys a player is holding.
 
 ## Additional Information
 
 ### Introduction
 
-This callback is called whenever a player presses or releases one of the supported keys (see [Keys](../resources/keys.md)).<br/>The keys which are supported are not actual keyboard keys, but San Andreas mapped function keys, this means that, for example, you can't detect when someone presses the <strong>spacebar</strong>, but can detect when they press their sprint key (which may, or may not, be assigned to the spacebar (it is by default)).
+This callback is called whenever a player presses or releases one of the supported keys (see [Keys](../resources/keys)).<br/>The keys which are supported are not actual keyboard keys, but San Andreas mapped function keys, this means that, for example, you can't detect when someone presses the <strong>spacebar</strong>, but can detect when they press their sprint key (which may, or may not, be assigned to the spacebar (it is by default)).
 
 ### Parameters
 

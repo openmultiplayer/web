@@ -52,4 +52,4 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.

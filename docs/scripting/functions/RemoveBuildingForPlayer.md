@@ -58,5 +58,5 @@ There appears to be a limit of around 1000 lines/objects. There is no workaround
 
 ## Related Functions
 
-- [DestroyObject](DestroyObject.md): Destroy an object.
-- [DestroyPlayerObject](DestroyPlayerObject.md): Destroy a player object.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.

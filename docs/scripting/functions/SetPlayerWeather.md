@@ -41,5 +41,5 @@ If TogglePlayerClock is enabled, weather will slowly change over time, instead o
 
 ## Related Functions
 
-- [SetWeather](SetWeather.md): Set the global weather.
-- [SetGravity](SetGravity.md): Set the global gravity.
+- [SetWeather](SetWeather): Set the global weather.
+- [SetGravity](SetGravity): Set the global gravity.

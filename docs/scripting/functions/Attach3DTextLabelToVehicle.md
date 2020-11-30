@@ -45,10 +45,10 @@ public OnGameModeExit ( )
 
 ## Related Functions
 
-- [Create3DTextLabel](Create3DTextLabel.md): Create a 3D text label.
-- [Delete3DTextLabel](Delete3DTextLabel.md): Delete a 3D text label.
-- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer.md): Attach a 3D text label to a player.
-- [Update3DTextLabelText](Update3DTextLabelText.md): Change the text of a 3D text label.
-- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel.md): Create A 3D text label for one player.
-- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel.md): Delete a player's 3D text label.
-- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText.md): Change the text of a player's 3D text label.
+- [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
+- [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
+- [Update3DTextLabelText](Update3DTextLabelText): Change the text of a 3D text label.
+- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.

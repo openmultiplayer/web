@@ -30,5 +30,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [BlockIpAddress](BlockIpAddress.md): Block an IP address from connecting to the server for a set amount of time.
-- [OnIncomingConnection](../callbacks/OnIncomingConnection.md): Called when a player is attempting to connect to the server.
+- [BlockIpAddress](BlockIpAddress): Block an IP address from connecting to the server for a set amount of time.
+- [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.

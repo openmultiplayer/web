@@ -45,6 +45,6 @@ ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTa
 
 ## Related Functions
 
-- [ShowNameTags](ShowNameTags.md): Set nametags on or off.
-- [DisableNameTagLOS](DisableNameTagLOS.md): Disable nametag Line-Of-Sight checking.
-- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer.md): Set a player's marker.
+- [ShowNameTags](ShowNameTags): Set nametags on or off.
+- [DisableNameTagLOS](DisableNameTagLOS): Disable nametag Line-Of-Sight checking.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Set a player's marker.

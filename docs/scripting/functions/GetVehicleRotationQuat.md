@@ -36,5 +36,5 @@ There is no 'set' variation of this function; you can not SET a vehicle's rotati
 
 ## Related Functions
 
-- [GetVehicleZAngle](GetVehicleZAngle.md): Check the current angle of a vehicle.
-- [GetVehicleRotation](GetVehicleRotation.md): Get the rotation of a vehicle on the XYZ axis.
+- [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
+- [GetVehicleRotation](GetVehicleRotation): Get the rotation of a vehicle on the XYZ axis.

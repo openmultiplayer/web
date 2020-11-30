@@ -15,8 +15,8 @@ Adds a 'static' vehicle (models are pre-loaded for players)to the gamemode. Diff
 | Float:spawn_Y                            | The Y-coordinate for the vehicle.                                                                                                                |
 | Float:spawn_Z                            | The Z-coordinate for the vehicle.                                                                                                                |
 | Float:z_angle                            | The facing - angle for the vehicle.                                                                                                              |
-| [color1](../resources/vehiclecolorid.md) | The primary color ID.                                                                                                                            |
-| [color2](../resources/vehiclecolorid.md) | The secondary color ID.                                                                                                                          |
+| [color1](../resources/vehiclecolorid) | The primary color ID.                                                                                                                            |
+| [color2](../resources/vehiclecolorid) | The secondary color ID.                                                                                                                          |
 | respawn_delay                            | The delay until the car is respawned without a driver, in seconds.                                                                               |
 | addsiren                                 | Added in 0.3.7; will not work in earlier versions. Has a default value 0. Enables the vehicle to have a siren, providing the vehicle has a horn. |
 
@@ -40,5 +40,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [AddStaticVehicle](AddStaticVehicle.md): Add a static vehicle.
-- [CreateVehicle](CreateVehicle.md): Create a vehicle.
+- [AddStaticVehicle](AddStaticVehicle): Add a static vehicle.
+- [CreateVehicle](CreateVehicle): Create a vehicle.

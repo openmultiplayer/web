@@ -31,7 +31,7 @@ The textdraw MUST use the font TEXT_DRAW_FONT_MODEL_PREVIEW and be showing a veh
 
 ## Related Functions
 
-- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel.md): Set model ID of a 3D player textdraw preview.
-- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot.md): Set rotation of a 3D player textdraw preview.
-- [PlayerTextDrawFont](PlayerTextDrawFont.md): Set the font of a player-textdraw.
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
+- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Set model ID of a 3D player textdraw preview.
+- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Set rotation of a 3D player textdraw preview.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

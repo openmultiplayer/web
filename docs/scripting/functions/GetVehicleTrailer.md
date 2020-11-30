@@ -34,6 +34,6 @@ This function does not work for trains.
 
 ## Related Functions
 
-- [AttachTrailerToVehicle](AttachTrailerToVehicle.md): Attach a trailer to a vehicle.
-- [DetachTrailerFromVehicle](DetachTrailerFromVehicle.md): Detach a trailer from a vehicle.
-- [IsTrailerAttachedToVehicle](IsTrailerAttachedToVehicle.md): Check if a trailer is attached to a vehicle.
+- [AttachTrailerToVehicle](AttachTrailerToVehicle): Attach a trailer to a vehicle.
+- [DetachTrailerFromVehicle](DetachTrailerFromVehicle): Detach a trailer from a vehicle.
+- [IsTrailerAttachedToVehicle](IsTrailerAttachedToVehicle): Check if a trailer is attached to a vehicle.

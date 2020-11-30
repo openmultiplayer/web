@@ -65,6 +65,6 @@ Player's ping may be 65535 for a while after a player connects
 
 ## Related Functions
 
-- [GetPlayerIp](GetPlayerIp.md): Get a player's IP.
-- [GetPlayerName](GetPlayerName.md): Get a player's name.
-- [GetPlayerVersion](GetPlayerVersion.md): Get a player's client-version.
+- [GetPlayerIp](GetPlayerIp): Get a player's IP.
+- [GetPlayerName](GetPlayerName): Get a player's name.
+- [GetPlayerVersion](GetPlayerVersion): Get a player's client-version.

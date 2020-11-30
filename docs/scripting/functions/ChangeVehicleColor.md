@@ -41,5 +41,5 @@ Some vehicles have only a primary color and some can not have the color changed 
 
 ## Related Functions
 
-- [ChangeVehiclePaintjob](ChangeVehiclePaintjob.md): Change the paintjob on a vehicle.
-- [OnVehicleRespray](../callbacks/OnVehicleRespray.md): Called when a vehicle is resprayed.
+- [ChangeVehiclePaintjob](ChangeVehiclePaintjob): Change the paintjob on a vehicle.
+- [OnVehicleRespray](../callbacks/OnVehicleRespray): Called when a vehicle is resprayed.

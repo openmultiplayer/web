@@ -47,4 +47,4 @@ Unlike some other ways to remove player from a vehicle, this will also reset the
 
 ## Related Functions
 
-- [ApplyAnimation](ApplyAnimation.md): Apply an animation to a player.
+- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.

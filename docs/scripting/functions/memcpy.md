@@ -37,12 +37,12 @@ print(destination);
 
 ## Related Functions
 
-- [strcmp](strcmp.md): Compare two strings to see if they are the same.
-- [strfind](strfind.md): Search for a substring in a string.
-- [strdel](strdel.md): Delete part/all of a string.
-- [strins](strins.md): Put a string into another string.
-- [strlen](strlen.md): Check the length of a string.
-- [strmid](strmid.md): Extract characters from a string.
-- [strpack](strpack.md): Pack a string into a destination.
-- [strval](strval.md): Find the value of a string.
-- [strcat](strcat.md): Concatenate two strings.
+- [strcmp](strcmp): Compare two strings to see if they are the same.
+- [strfind](strfind): Search for a substring in a string.
+- [strdel](strdel): Delete part/all of a string.
+- [strins](strins): Put a string into another string.
+- [strlen](strlen): Check the length of a string.
+- [strmid](strmid): Extract characters from a string.
+- [strpack](strpack): Pack a string into a destination.
+- [strval](strval): Find the value of a string.
+- [strcat](strcat): Concatenate two strings.

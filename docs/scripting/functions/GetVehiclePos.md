@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint.md): Get the distance between a vehicle and a point.
-- [SetVehiclePos](SetVehiclePos.md): Set the position of a vehicle.
-- [GetVehicleZAngle](GetVehicleZAngle.md): Check the current angle of a vehicle.
-- [GetVehicleRotationQuat](GetVehicleRotationQuat.md): Get the rotation quaternion of a vehicle.
+- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint): Get the distance between a vehicle and a point.
+- [SetVehiclePos](SetVehiclePos): Set the position of a vehicle.
+- [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
+- [GetVehicleRotationQuat](GetVehicleRotationQuat): Get the rotation quaternion of a vehicle.

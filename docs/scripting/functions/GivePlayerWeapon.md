@@ -28,5 +28,5 @@ GivePlayerWeapon(playerid, 26, 64); // Give playerid a sawn-off shotgun with 64 
 
 ## Related Functions
 
-- [SetPlayerArmedWeapon](SetPlayerArmedWeapon.md): Set a player's armed weapon.
-- [GetPlayerWeapon](GetPlayerWeapon.md): Check what weapon a player is currently holding.
+- [SetPlayerArmedWeapon](SetPlayerArmedWeapon): Set a player's armed weapon.
+- [GetPlayerWeapon](GetPlayerWeapon): Check what weapon a player is currently holding.

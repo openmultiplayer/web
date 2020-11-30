@@ -49,5 +49,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [StopAudioStreamForPlayer](StopAudioStreamForPlayer.md): Stops the current audio stream for a player.
-- [PlayerPlaySound](PlayerPlaySound.md): Play a sound for a player.
+- [StopAudioStreamForPlayer](StopAudioStreamForPlayer): Stops the current audio stream for a player.
+- [PlayerPlaySound](PlayerPlaySound): Play a sound for a player.

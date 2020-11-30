@@ -48,4 +48,4 @@ If a parameter is unset (SetVehicleParamsEx not used beforehand) the value will 
 
 ## Related Functions
 
-- [SetVehicleParamsEx](SetVehicleParamsEx.md): Sets a vehicle's params for all players.
+- [SetVehicleParamsEx](SetVehicleParamsEx): Sets a vehicle's params for all players.

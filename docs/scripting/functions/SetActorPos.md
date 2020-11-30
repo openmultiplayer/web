@@ -48,5 +48,5 @@ When creating an actor with CreateActor, you specify it's position. You do not n
 
 ## Related Functions
 
-- [GetActorPos](GetActorPos.md): Get the position of an actor.
-- [CreateActor](CreateActor.md): Create an actor (static NPC).
+- [GetActorPos](GetActorPos): Get the position of an actor.
+- [CreateActor](CreateActor): Create an actor (static NPC).

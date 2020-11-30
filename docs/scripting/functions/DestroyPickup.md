@@ -28,5 +28,5 @@ DestroyPickup(pickup_armour);
 
 ## Related Functions
 
-- [CreatePickup](CreatePickup.md): Create a pickup.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.
+- [CreatePickup](CreatePickup): Create a pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Called when a player picks up a pickup.

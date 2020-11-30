@@ -30,5 +30,5 @@ if (surfingVehicleId == INVALID_VEHICLE_ID)
 
 ## Related Functions
 
-- [GetPlayerVehicleID](GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
-- [GetPlayerVehicleSeat](GetPlayerVehicleSeat.md): Check what seat a player is in.
+- [GetPlayerVehicleID](GetPlayerVehicleID): Get the ID of the vehicle the player is in.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.

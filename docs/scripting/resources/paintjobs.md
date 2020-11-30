@@ -3,7 +3,7 @@ title: Paintjobs
 description: Paint Jobs that can be applied on specific vehicles
 ---
 
-To be used with [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob.md)
+To be used with [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob)
 
 This page contains a collection of the available All Paintjobs. Each paintjobs has information about vehicle's id and name.
 
@@ -50,7 +50,7 @@ This page contains a collection of the available All Paintjobs. Each paintjobs h
 
 ## Related Functions
 
-- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob.md): Change a vehicle's paintjob.
-- [ChangeVehicleColor](ChangeVehicleColor.md): Set the color of a vehicle.
+- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change a vehicle's paintjob.
+- [ChangeVehicleColor](ChangeVehicleColor): Set the color of a vehicle.
 
-- [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob.md): Called when a vehicle's paintjob is changed.
+- [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Called when a vehicle's paintjob is changed.

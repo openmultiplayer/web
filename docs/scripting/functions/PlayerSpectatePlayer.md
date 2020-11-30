@@ -12,7 +12,7 @@ Makes a player spectate (watch) another player.
 | -------------- | -------------------------------------------------------------------------------------------- |
 | playerid       | The ID of the player that will spectate.                                                     |
 | targetplayerid | The ID of the player that should be spectated.                                               |
-| mode           | The [mode](../resources/spectatemodes.md) to spectate with (optional; defaults to 'normal'). |
+| mode           | The [mode](../resources/spectatemodes) to spectate with (optional; defaults to 'normal'). |
 
 ## Returns
 
@@ -41,5 +41,5 @@ Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpect
 
 ## Related Functions
 
-- [PlayerSpectateVehicle](PlayerSpectateVehicle.md): Spectate a vehicle.
-- [TogglePlayerSpectating](TogglePlayerSpectating.md): Start or stop spectating.
+- [PlayerSpectateVehicle](PlayerSpectateVehicle): Spectate a vehicle.
+- [TogglePlayerSpectating](TogglePlayerSpectating): Start or stop spectating.

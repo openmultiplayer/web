@@ -58,4 +58,4 @@ This function doesn't work in interiors!
 
 ## Related Functions
 
-- [GangZoneCreate](GangZoneCreate.md): Create a gangzone.
+- [GangZoneCreate](GangZoneCreate): Create a gangzone.

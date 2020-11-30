@@ -11,7 +11,7 @@ Set the skin of a player. A player's skin is their character model.
 | Name     | Description                                              |
 | -------- | -------------------------------------------------------- |
 | playerid | The ID of the player to set the skin of.                 |
-| skinid   | The [skin](../resources/skins.md) the player should use. |
+| skinid   | The [skin](../resources/skins) the player should use. |
 
 ## Returns
 
@@ -93,5 +93,5 @@ Known Bug(s): If a player's skin is set when they are crouching, in a vehicle, o
 
 ## Related Functions
 
-- [GetPlayerSkin](GetPlayerSkin.md): Get a player's current skin.
-- [SetSpawnInfo](SetSpawnInfo.md): Set the spawn setting for a player.
+- [GetPlayerSkin](GetPlayerSkin): Get a player's current skin.
+- [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.
