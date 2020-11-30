@@ -1,6 +1,6 @@
 ---
 title: OnActorStreamIn
-description: Ang callback na ito ay nacacall kapag ang actor ay na stream na sa client ng player.
+description: This callback is called when an actor is streamed in by a player's client.
 tags: []
 ---
 
@@ -8,7 +8,7 @@ tags: []
 
 ## Deskripsyon
 
-Ang callback na ito ay nacacall kapag ang actor ay na stream na sa client ng player.
+Ang callback na ito ay natatawag kapag ang actor ay na stream na sa client ng player.
 
 | Pangalan    | Deskripsyon                                                   |
 | ----------- | ------------------------------------------------------------- |
@@ -17,7 +17,7 @@ Ang callback na ito ay nacacall kapag ang actor ay na stream na sa client ng pla
 
 ## Returns
 
-Lagi itong na cacall una sa mga filterscript.
+Lagi itong na tatawag una sa mga filterscript.
 
 ## Mga Halimbawa
 
