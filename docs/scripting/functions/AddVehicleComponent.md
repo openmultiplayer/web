@@ -11,7 +11,7 @@ Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. V
 | Name                                          | Description                                                                     |
 | --------------------------------------------- | ------------------------------------------------------------------------------- |
 | vehicleid                                     | The ID of the vehicle to add the component to. Not to be confused with modelid. |
-| [componentid](../resources/carcomponentid.md) | The ID of the component to add to the vehicle.                                  |
+| [componentid](../resources/carcomponentid) | The ID of the component to add to the vehicle.                                  |
 
 ## Returns
 
@@ -54,8 +54,8 @@ Using an invalid component ID crashes the player's game. There are no internal c
 
 ## Related Functions
 
-- [RemoveVehicleComponent](RemoveVehicleComponent.md): Remove a component from a vehicle.
-- [GetVehicleComponentInSlot](GetVehicleComponentInSlot.md): Check what components a vehicle has.
-- [GetVehicleComponentType](GetVehicleComponentType.md): Check the type of component via the ID.
-- [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.
+- [RemoveVehicleComponent](RemoveVehicleComponent): Remove a component from a vehicle.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Check what components a vehicle has.
+- [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
+- [OnVehicleMod](../callbacks/OnVehicleMod): Called when a vehicle is modded.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.

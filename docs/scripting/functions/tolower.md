@@ -31,4 +31,4 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [toupper](toupper.md)
+- [toupper](toupper)

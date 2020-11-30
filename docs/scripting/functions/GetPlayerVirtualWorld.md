@@ -43,6 +43,6 @@ Virtual worlds are not the same as interiors.
 
 ## Related Functions
 
-- [SetPlayerVirtualWorld](SetPlayerVirtualWorld.md): Set the virtual world of a player.
-- [GetVehicleVirtualWorld](GetVehicleVirtualWorld.md): Check what virtual world a vehicle is in.
-- [GetPlayerInterior](GetPlayerInterior.md): Get the current interior of a player.
+- [SetPlayerVirtualWorld](SetPlayerVirtualWorld): Set the virtual world of a player.
+- [GetVehicleVirtualWorld](GetVehicleVirtualWorld): Check what virtual world a vehicle is in.
+- [GetPlayerInterior](GetPlayerInterior): Get the current interior of a player.

@@ -28,7 +28,7 @@ To be used with [GameText](../functions/GameTextForPlayer) and [GameTextForAll](
 | ~\<~   | Left arrow (gray)                                                                                                                   |
 | ~>~    | Right arrow (gray)                                                                                                                  |
 | ]      | Displays a \* symbol (Only in text styles 3, 4 and 5)                                                                               |
-| ~k~    | Keyboard key mapping (e.g. ~k\~~VEHICLE_TURRETLEFT~ and ~k\~~PED_FIREWEAPON~). Look [here](../resources/keys.md) for a list of keys |
+| ~k~    | Keyboard key mapping (e.g. ~k\~~VEHICLE_TURRETLEFT~ and ~k\~~PED_FIREWEAPON~). Look [here](../resources/keys) for a list of keys |
 
 :::caution
 

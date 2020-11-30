@@ -68,7 +68,7 @@ Timer ID variables should be initialized to -1 when they can to minimise the cha
 
 ## Related Functions
 
-- [SetTimer](SetTimer.md): Set a timer.
-- [KillTimer](KillTimer.md): Stop a timer.
-- [CallLocalFunction](CallLocalFunction.md): Call a function in the script.
-- [CallRemoteFunction](CallRemoteFunction.md): Call a function in any loaded script.
+- [SetTimer](SetTimer): Set a timer.
+- [KillTimer](KillTimer): Stop a timer.
+- [CallLocalFunction](CallLocalFunction): Call a function in the script.
+- [CallRemoteFunction](CallRemoteFunction): Call a function in any loaded script.

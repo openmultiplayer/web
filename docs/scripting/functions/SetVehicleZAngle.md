@@ -50,5 +50,5 @@ A vehicle's X and Y (pitch and roll) rotation will be reset when this function i
 
 ## Related Functions
 
-- [GetVehicleZAngle](GetVehicleZAngle.md): Check the current angle of a vehicle.
-- [SetVehiclePos](SetVehiclePos.md): Set the position of a vehicle.
+- [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
+- [SetVehiclePos](SetVehiclePos): Set the position of a vehicle.

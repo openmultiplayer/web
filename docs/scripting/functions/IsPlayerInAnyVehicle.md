@@ -37,5 +37,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [IsPlayerInVehicle](IsPlayerInVehicle.md): Check if a player is in a certain vehicle.
-- [GetPlayerVehicleSeat](GetPlayerVehicleSeat.md): Check what seat a player is in.
+- [IsPlayerInVehicle](IsPlayerInVehicle): Check if a player is in a certain vehicle.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.

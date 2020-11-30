@@ -37,5 +37,5 @@ This function does not work if the new coordinates are far away from where the p
 
 ## Related Functions
 
-- [SetPlayerPos](SetPlayerPos.md): Set a player's position.
-- [OnPlayerClickMap](../callbacks/OnPlayerClickMap.md): Called when a player sets a waypoint/target on the pause menu map.
+- [SetPlayerPos](SetPlayerPos): Set a player's position.
+- [OnPlayerClickMap](../callbacks/OnPlayerClickMap): Called when a player sets a waypoint/target on the pause menu map.

@@ -60,5 +60,5 @@ You MUST check whether 'killerid' is valid (not INVALID_PLAYER_ID) before using 
 
 ## Related Functions
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): Add a kill to the death list.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Set a player's health.
+- [SendDeathMessage](../functions/SendDeathMessage): Add a kill to the death list.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Set a player's health.

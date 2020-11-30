@@ -34,4 +34,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [StartRecordingPlayerData](StartRecordingPlayerData.md): Start recording player data.
+- [StartRecordingPlayerData](StartRecordingPlayerData): Start recording player data.

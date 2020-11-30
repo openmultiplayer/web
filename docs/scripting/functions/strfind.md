@@ -32,11 +32,11 @@ if (strfind("Are you in here?", "you", true) != -1) //returns 4, because the st
 
 ## Related Functions
 
-- [strcmp](strcmp.md): Compare two strings to check if they are the same.
-- [strdel](strdel.md): Delete part of a string.
-- [strins](strins.md): Insert text into a string.
-- [strlen](strlen.md): Get the length of a string.
-- [strmid](strmid.md): Extract part of a string into another string.
-- [strpack](strpack.md): Pack a string into a destination string.
-- [strval](strval.md): Convert a string into an integer.
-- [strcat](strcat.md): Concatenate two strings into a destination reference.
+- [strcmp](strcmp): Compare two strings to check if they are the same.
+- [strdel](strdel): Delete part of a string.
+- [strins](strins): Insert text into a string.
+- [strlen](strlen): Get the length of a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.

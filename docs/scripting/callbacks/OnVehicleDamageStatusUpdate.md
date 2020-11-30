@@ -8,7 +8,7 @@ tags: ["vehicle"]
 
 :::tip
 
-For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus.md).
+For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus).
 
 :::
 
@@ -57,5 +57,5 @@ This does not include vehicle health changes.
 
 ## Related Functions
 
-- [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus.md): Get the vehicle damage state for each part individually.
-- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus.md): Update the vehicle damage.
+- [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus): Get the vehicle damage state for each part individually.
+- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus): Update the vehicle damage.

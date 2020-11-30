@@ -31,5 +31,5 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Related Functions
 
-- [GetPlayerMoney](GetPlayerMoney.md): Check how much money a player has.
-- [GivePlayerMoney](GivePlayerMoney.md): Give a player money.
+- [GetPlayerMoney](GetPlayerMoney): Check how much money a player has.
+- [GivePlayerMoney](GivePlayerMoney): Give a player money.

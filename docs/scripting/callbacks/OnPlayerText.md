@@ -35,5 +35,5 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer.md): Force a player to send text for one player.
-- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll.md): Force a player to send text for all players.
+- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Force a player to send text for one player.
+- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Force a player to send text for all players.

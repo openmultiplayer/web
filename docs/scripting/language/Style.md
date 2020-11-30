@@ -257,4 +257,4 @@ stock Error:LoadPlayerAccount(playerid)
 }
 ```
 
-Each package should have a `README.md` and, if necessary, each module should have a comment on the very first line describing what that module provides.
+Each package should have a `README` and, if necessary, each module should have a comment on the very first line describing what that module provides.

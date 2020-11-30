@@ -37,8 +37,8 @@ This callback can also be called for NPC.
 
 ## Related Functions
 
-- [MovePlayerObject](../functions/MovePlayerObject.md): Move a player object.
-- [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving.md): Check if the player object is moving.
-- [StopPlayerObject](../functions/StopPlayerObject.md): Stop a player object from moving.
-- [CreatePlayerObject](../functions/CreatePlayerObject.md): Create an object for only one player.
-- [DestroyPlayerObject](../functions/DestroyPlayerObject.md): Destroy a player object.
+- [MovePlayerObject](../functions/MovePlayerObject): Move a player object.
+- [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving): Check if the player object is moving.
+- [StopPlayerObject](../functions/StopPlayerObject): Stop a player object from moving.
+- [CreatePlayerObject](../functions/CreatePlayerObject): Create an object for only one player.
+- [DestroyPlayerObject](../functions/DestroyPlayerObject): Destroy a player object.

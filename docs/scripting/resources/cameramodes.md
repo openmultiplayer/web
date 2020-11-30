@@ -4,7 +4,7 @@ title: Camera Modes
 
 ## Description
 
-A list of possible camera modes to be used with [GetPlayerCameraMode](../functions/GetPlayerCameraMode.md).
+A list of possible camera modes to be used with [GetPlayerCameraMode](../functions/GetPlayerCameraMode).
 
 :::note
 

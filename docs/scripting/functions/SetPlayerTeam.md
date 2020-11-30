@@ -38,6 +38,6 @@ Players can not damage/kill players on the same team unless they use a knife to 
 
 ## Related Functions
 
-- [GetPlayerTeam](GetPlayerTeam.md): Check what team a player is on.
-- [SetTeamCount](SetTeamCount.md): Set the number of teams available.
-- [EnableVehicleFriendlyFire](EnableVehicleFriendlyFire.md): Enable friendly fire for team vehicles.
+- [GetPlayerTeam](GetPlayerTeam): Check what team a player is on.
+- [SetTeamCount](SetTeamCount): Set the number of teams available.
+- [EnableVehicleFriendlyFire](EnableVehicleFriendlyFire): Enable friendly fire for team vehicles.

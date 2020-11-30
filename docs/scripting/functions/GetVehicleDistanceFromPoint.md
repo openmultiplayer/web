@@ -42,5 +42,5 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint.md): Get the distance between a player and a point.
-- [GetVehiclePos](GetVehiclePos.md): Get the position of a vehicle.
+- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint): Get the distance between a player and a point.
+- [GetVehiclePos](GetVehiclePos): Get the position of a vehicle.

@@ -44,6 +44,6 @@ This function can be omitted in a lot of cases. Many other functions already hav
 
 ## Related Functions
 
-- [IsPlayerAdmin](IsPlayerAdmin.md): Checks if a player is logged into RCON.
-- [OnPlayerConnect](../callbacks/OnPlayerConnect.md): Called when a player connects to the server.
-- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect.md): Called when a player leaves the server.
+- [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.
+- [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
+- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.

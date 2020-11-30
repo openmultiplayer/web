@@ -58,7 +58,7 @@ This function will only work when lag compensation is enabled. If the player hit
 
 ## Related Functions
 
-- [GetPlayerWeaponData](GetPlayerWeaponData.md): Find out information about weapons a player has.
-- [GetPlayerWeapon](GetPlayerWeapon.md): Check what weapon a player is currently holding.
-- [VectorSize](VectorSize.md): Get the length (norm) of a vector.
-- [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot.md): Called when a player fires a weapon.
+- [GetPlayerWeaponData](GetPlayerWeaponData): Find out information about weapons a player has.
+- [GetPlayerWeapon](GetPlayerWeapon): Check what weapon a player is currently holding.
+- [VectorSize](VectorSize): Get the length (norm) of a vector.
+- [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot): Called when a player fires a weapon.

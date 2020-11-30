@@ -37,5 +37,5 @@ public OnPlayerConnect(playerid)
 
 ## Related Functions
 
-- [ConnectNPC](ConnectNPC.md): Connect an NPC.
-- [IsPlayerAdmin](IsPlayerAdmin.md): Checks if a player is logged into RCON.
+- [ConnectNPC](ConnectNPC): Connect an NPC.
+- [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.

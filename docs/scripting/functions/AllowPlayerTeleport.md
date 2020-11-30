@@ -6,7 +6,7 @@ tags: ["player"]
 
 :::warning
 
-This function, as of 0.3d, is deprecated. Check [OnPlayerClickMap](../callbacks/OnPlayerClickMap.md).
+This function, as of 0.3d, is deprecated. Check [OnPlayerClickMap](../callbacks/OnPlayerClickMap).
 
 :::
 
@@ -38,10 +38,10 @@ public OnPlayerConnect( playerid )
 
 :::warning
 
-This function will work only if [AllowAdminTeleport](AllowAdminTeleport.md) is enabled, and you have to be an admin.
+This function will work only if [AllowAdminTeleport](AllowAdminTeleport) is enabled, and you have to be an admin.
 
 :::
 
 ## Related Functions
 
-- [AllowAdminTeleport](AllowAdminTeleport.md): Toggle waypoint teleporting for RCON admins.
+- [AllowAdminTeleport](AllowAdminTeleport): Toggle waypoint teleporting for RCON admins.

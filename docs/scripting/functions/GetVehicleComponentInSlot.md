@@ -13,7 +13,7 @@ Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a 
 | Name      | Description                                                                   |
 | --------- | ----------------------------------------------------------------------------- |
 | vehicleid | The ID of the vehicle to check for the component.                             |
-| slot      | The [component slot](../resources/Componentslots.md) to check for components. |
+| slot      | The [component slot](../resources/Componentslots) to check for components. |
 
 ## Returns
 
@@ -47,7 +47,7 @@ Known Bug(s): Doesn't work for CARMODTYPE_STEREO. Both front bull bars and front
 
 ## Related Functions
 
-- [AddVehicleComponent](AddVehicleComponent.md): Add a component to a vehicle.
-- [GetVehicleComponentType](GetVehicleComponentType.md): Check the type of component via the ID.
-- [OnVehicleMod](../callbacks/OnVehicleMod.md): Called when a vehicle is modded.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.
+- [AddVehicleComponent](AddVehicleComponent): Add a component to a vehicle.
+- [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
+- [OnVehicleMod](../callbacks/OnVehicleMod): Called when a vehicle is modded.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.

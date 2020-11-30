@@ -39,6 +39,6 @@ To set the minutes and/or to set the time for individual players, see SetPlayerT
 
 ## Related Functions
 
-- [SetPlayerTime](SetPlayerTime.md): Set a player's time.
-- [SetWeather](SetWeather.md): Set the global weather.
-- [SetGravity](SetGravity.md): Set the global gravity.
+- [SetPlayerTime](SetPlayerTime): Set a player's time.
+- [SetWeather](SetWeather): Set the global weather.
+- [SetGravity](SetGravity): Set the global gravity.

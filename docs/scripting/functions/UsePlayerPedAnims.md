@@ -28,5 +28,5 @@ Only works when placed under OnGameModeInit. Not using this function causes two-
 
 ## Related Functions
 
-- [ApplyAnimation](ApplyAnimation.md): Apply an animation to a player.
-- [ClearAnimations](ClearAnimations.md): Clear any animations a player is performing.
+- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.
+- [ClearAnimations](ClearAnimations): Clear any animations a player is performing.
