@@ -146,6 +146,6 @@ La structure de la table répond à des règles précises lorsque vous lui mette
 
 ## Licence d'agrément
 
-Le projet open.MP dispose, pour ses collaborateurs, d'une [licence d'agrément][https://cla-assistant.io/openmultiplayer/homepage].
+Le projet open.MP dispose, pour ses collaborateurs, d'une [licence d'agrément](https://cla-assistant.io/openmultiplayer/homepage).
 
 Cela signifie simplement que vous acceptez de nous laisser utiliser votre travail et de le placer sous une licence open source. Lorsque vous ouvrez une Pull Request pour la première fois, le bot CLA-Assistant publiera un lien où vous pourrez signer l'accord.
