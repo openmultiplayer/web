@@ -142,7 +142,7 @@ La structure de la table répond à des règles précises lorsque vous lui mette
   | 550-390 | Fumée grise                          |
   | 390-250 | Fumée noire                          |
   | < 250   | En feu (explosion imminente)         |  
-```
+  ```
 
 ## Licence d'agrément
 
