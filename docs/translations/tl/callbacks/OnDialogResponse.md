@@ -1,6 +1,6 @@
 ---
 title: OnDialogResponse
-deskripsyon: Ang callback na ito ay na cacall kapag ang player ay nag respond sa isang dialog na ipinakita gamit ang ShowPlayerDialog gamit ang pag click sa isang button, pagpindot ng `ENTER/ESC` o pag `Double Click` sa isang laman ng list. (kung ang dialog ay DIALOG_STYLE_LIST).
+description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).
 tags: []
 ---
 

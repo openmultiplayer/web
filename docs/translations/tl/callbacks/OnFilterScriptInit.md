@@ -1,6 +1,6 @@
 ---
 title: OnFilterScriptInit
-deskripsyon: Ang callback na ito ay natatawag kapag ang filterscript ay naload na sa server.
+description: This callback is called when a filterscript is initialized (loaded).
 tags: []
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: OnActorStreamIn
-deskripsyon: Ang callback na ito ay natatawag kapag ang actor ay na stream na sa client ng player.
+description: This callback is called when an actor is streamed in by a player's client.
 tags: []
 ---
 

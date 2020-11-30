@@ -1,6 +1,6 @@
 ---
 title: OnActorStreamOut
-deskripsyon: Ang callback na ito ay natatawag kapag ang actor ay na streamed-out na sa player.
+description: This callback is called when an actor is streamed out by a player's client.
 tags: []
 ---
 

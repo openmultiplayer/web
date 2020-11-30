@@ -1,6 +1,6 @@
 ---
 title: OnClientMessage
-deskripsyon: Ang callback na ito ay natatawag kapag ang NPC ay nakakita ng ClientMessage.
+description: This callback gets called whenever the NPC sees a ClientMessage.
 tags: []
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: OnEnterExitModShop
-deskripsyon: Ang callback na ito ay na cacall kapag ang player ay pumasok o umalis mula sa mod shop.
+description: This callback is called when a player enters or exits a mod shop.
 tags: []
 ---
 

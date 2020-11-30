@@ -1,6 +1,6 @@
 ---
 title: OnGameModeExit
-deskripsyon: Ang callback na ito ay itinatawag kapag ang isang gamemode ay isinara or itinapos. Itinatawag ito tuwing itinatawag ang rcon command na `gmx`, o kapag and server ay ishinu-shutdown, o GameModeExit.
+description: This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.
 tags: []
 ---
 
