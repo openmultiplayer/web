@@ -54,7 +54,19 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
       />
 
       <main>
-        <Component {...pageProps} />
+        {router.pathname.startsWith("/blog") ? (
+          <MDXProvider
+            components={{
+              wrapper: ({ children }) => (
+                <article className="measure-wide center">{children}</article>
+              ),
+            }}
+          >
+            <Component {...pageProps} />
+          </MDXProvider>
+        ) : (
+          <Component {...pageProps} />
+        )}
       </main>
     </div>
 
