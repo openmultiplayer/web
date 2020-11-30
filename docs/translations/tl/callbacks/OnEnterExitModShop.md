@@ -1,6 +1,6 @@
 ---
 title: OnEnterExitModShop
-description: Ang callback na ito ay na cacall kapag ang player ay pumasok o umalis mula sa mod shop.
+deskripsyon: Ang callback na ito ay na cacall kapag ang player ay pumasok o umalis mula sa mod shop.
 tags: []
 ---
 
@@ -38,7 +38,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Known Bug(s): Players collide when they get into the same mod shop.
+Mga Kadalasang Bugs: Nag bubungguan ang mga players kapag parehas na pumasok sa mod shop.
 
 :::
 

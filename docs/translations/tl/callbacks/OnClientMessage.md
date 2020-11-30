@@ -1,6 +1,6 @@
 ---
 title: OnClientMessage
-description: This callback gets called whenever the NPC sees a ClientMessage.
+deskripsyon: Ang callback na ito ay natatawag kapag ang NPC ay nakakita ng ClientMessage.
 tags: []
 ---
 
@@ -8,7 +8,7 @@ tags: []
 
 ## Description
 
-Ang callback na ito ay na cacall kapag ang NPC ay nakakita ng ClientMessage. Eto ay mangyayari lagi kapag nagamitan ng SendClientMessageToAll na function at SendClientMessage na function papunta sa NPC. Ang callback na ito ay hindi matatawag kapag may sinabi ang isang player. Para sa version nito sa OnPlayerText gamitin ang NPC:OnPlayerText.
+Ang callback na ito ay na tatawag kapag ang NPC ay nakakita ng ClientMessage. Eto ay mangyayari lagi kapag nagamitan ng SendClientMessageToAll na function at SendClientMessage na function papunta sa NPC. Ang callback na ito ay hindi matatawag kapag may sinabi ang isang player. Para sa version nito sa OnPlayerText gamitin ang NPC:OnPlayerText.
 
 | Name   | Description                     |
 | ------ | ------------------------------- |
