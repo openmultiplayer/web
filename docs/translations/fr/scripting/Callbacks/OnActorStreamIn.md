@@ -15,7 +15,7 @@ Cette callback est appelée quand un acteur est stream par joueur.
 | `int` actorid     | ID de l'actor qui va être stream par le joueur                |
 | `int` forplayerid | ID du joueur qui stream l'actor (`actorid`)                   |
 
-## Return
+## Emplacement
 
 La callback est toujours appelée en premier dans les filterscripts.
 
