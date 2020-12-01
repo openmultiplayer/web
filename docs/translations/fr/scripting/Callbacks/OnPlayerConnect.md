@@ -14,9 +14,9 @@ Cette callback est appelée quand un joueur se connecte au serveur.
 
 ## Valeur de retour
 
-**1** - Empêche les autres filterscripts de recevoir cette callback.
+**0** - Empêche les autres filterscripts de recevoir cette callback.
 
-**0** - Indique que cette callback doit passer au filterscript suivant.
+**1** - Indique que cette callback doit passer au filterscript suivant.
 
 ## Exemple
 
