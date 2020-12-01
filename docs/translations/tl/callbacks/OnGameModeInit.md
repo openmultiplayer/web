@@ -18,14 +18,12 @@ public OnGameModeInit()
 }
 ```
 
-## Notes
+## Mga dapat tandaan
 
 :::tip
 
 Ang function na ito ay maaari rin gamitin sa mga filterscript upang mai-detect kapag ang gamemode ay nabago gamit ang RCON commands tulad ng changemode o gmx, sapagkat ang pagpalit ng gamemode ay hindi nagrereload ng filterscripts.
 
-This function can also be used in a filterscript to detect if the gamemode changes with RCON commands like changemode or gmx, as changing the gamemode does not reload a filterscript.
-
 :::
 
-## Related Functions
+## Mga Related na Functions

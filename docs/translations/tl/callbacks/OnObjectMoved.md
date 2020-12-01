@@ -26,19 +26,18 @@ public OnObjectMoved(objectid)
 }
 ```
 
-## Notes
+## Mga dapat tandaan
 
 :::tip
 
-SetObjectPos does not work when used in this callback. To fix it, recreate the object.
 Ang SetObjectPos ay hindi gumagana kapag ginamit sa callback na ito. Upang ito'y maayos, gawin muli o i-recreate ang object.
 
 :::
 
-## Related Functions
+## Mga Related na Functions
 
 - [MoveObject](../functions/MoveObject.md): Galawin ang isang Object.
 - [MovePlayerObject](../functions/MovePlayerObject.md): Galawin ang isang player Object.
 - [IsObjectMoving](../functions/IsObjectMoving.md): Tignan kapag ang object ay gumagalaw.
 - [StopObject](../functions/StopObject.md): Tigilan ang isang object sa paggalaw.
-- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Itinatawag kapag ang isang player object ay tumigil sa paggalaw.
+- [OnPlayerObjectMoved](../callbacks/OnPlayerObjectMoved.md): Itinatawag kapag ang isang player object ay tumigil sa paggalaw.
