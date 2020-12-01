@@ -4,7 +4,7 @@ description: Cette callback est appelée quand le gamemode démarre.
 tags: [gamemode, démarré, loaded, started, chargé]
 ---
 
-## Description
+## Paramètres
 
 Cette callback est appelée quand le gamemode démarre.
 
