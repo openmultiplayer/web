@@ -9,7 +9,6 @@ tags: ["player"]
 ## Description
 
 Itinatawag kapag ang player ay nag-double-click sa isang player sa scoreboard. (Tab)
-Called when a player double-clicks on a player on the scoreboard.
 
 | Name            | Description                                                      |
 | --------------- | ---------------------------------------------------------------- |
@@ -37,7 +36,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 }
 ```
 
-## Notes
+## Mga dapat tandaan
 
 :::tip
 
@@ -45,6 +44,6 @@ Sa kasalukuyan, isa lang ang 'source' (0 - CLICK_SOURCE_SCOREBOARD). Ang existen
 
 :::
 
-## Related Functions
+## Mga Related na Functions
 
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Itinatawag kapag ang player ay pumindot ng TextDraw.

@@ -8,7 +8,6 @@ tags: ["player"]
 
 ## Description
 
-OnPlayerClickMap is called when a player places a target/waypoint on the pause menu map (by right-clicking).
 Ang OnPlayerClickMap ay itinatawag kapag ang player ay naglagay ng isang target o waypoint sa kanyang pause menu map. (Sa pag right-click)
 
 | Name     | Description                                                                         |
@@ -36,7 +35,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 }
 ```
 
-## Notes
+## Mga dapat tandaan
 
 :::tip
 
@@ -44,4 +43,4 @@ Sabi nga sa pangalan ng callback, ito ay itinatawag lang kapag ang player ay nag
 
 :::
 
-## Related Functions
+## Mga Related na Functions

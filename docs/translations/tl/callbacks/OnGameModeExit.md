@@ -18,7 +18,7 @@ public OnGameModeExit()
 }
 ```
 
-## Notes
+## Mga dapat tandaan
 
 :::tip
 
@@ -26,6 +26,6 @@ Ang function na ito ay pwede rin gamitin sa mga filterscript, upang idetect kung
 
 :::
 
-## Related Functions
+## Mga Related na Functions
 
 - [GameModeExit](../functions/GameModeExit.md): Isinasara ang gamemode.
