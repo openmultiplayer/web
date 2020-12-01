@@ -21,5 +21,5 @@ public OnFilterScriptInit()
 ```
 
 ## Fonctions connexes
-- [OnFilterScriptExit](/OnFilterScriptExit) : déchargement d'un filterscript
+- [OnFilterScriptExit](OnFilterScriptExit) : déchargement d'un filterscript
 
