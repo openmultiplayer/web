@@ -12,7 +12,7 @@ Dans le cas où vous souhaitez vous voulez participer à la traduction du wiki, 
 
 En parcourant le [Github « docs »](https://github.com/openmultiplayer/web/tree/master/docs) de open.MP, vous aurez un bouton "Add file"
 
-![Add file button](/images/contributing/edit-this-page.png)
+![Add file button](/images/contributing/add-new-file.png)
 
 Vous pourrez ainsi ajouter un fichier en Markdown.
 
