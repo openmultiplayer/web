@@ -19,7 +19,7 @@ OnPlayerClickMap est appelé quand un joueur place un point (clic droit) sur la 
 
 ## Valeur de retour
 
-**1** - Empêche les autres filterscripts de recevoir cette callback
+**1** - Empêche les autres filterscripts de recevoir cette callback.
 
 **0** - Indique que cette callback doit passer au filterscript suivant.
 
