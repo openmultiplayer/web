@@ -45,3 +45,5 @@ Le `float` Z retournera une valeur de 0 (invalide) si le point du joueur est tro
 :::
 
 ## Fonctions connexes
+
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Quand un joueur double-clique sur le pseudo d'un autre dans la tablist.
