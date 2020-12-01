@@ -17,7 +17,7 @@ OnPlayerClickMap est appelé quand un joueur place un point (clic droit) sur la 
 | `float` Float:fY | Coordonnées Y du point placé sur la carte par `playerid`                                  |
 | `float` Float:fZ | Coordonnées Z du point placé sur la carte par `playerid` (imprécis - v. infra, "Astuces") |
 
-## Returns
+## Valeur de retour
 
 **1** - Empêche les autres filterscripts de recevoir cette callback
 
