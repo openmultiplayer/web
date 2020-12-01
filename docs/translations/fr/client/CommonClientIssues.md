@@ -43,7 +43,7 @@ Le solo peut charger pour deux raisons :
 
 ### J'ai un "Unacceptable Nickname" en me connectant sur un serveur
 
-Assurez-vous de ne pas utiliser un caractère bloqué par SA:MP _(seulement les caractères 0-9, a-z, \[\], (), \$, @, ., \_ sont autorisés) et que votre pseudo ne dépasse pas les 20 caractères.
+Assurez-vous de ne pas utiliser un caractère bloqué par SA:MP *(seulement les caractères 0-9, a-z, \[\], (), \$, @, ., \_ sont autorisés)* et que votre pseudo ne dépasse pas les 20 caractères.
 
 Cela peut également arriver lorsqu'un joueur avec le même pseudo que vous est déjà connecté sur le serveur _(cela peut arriver si vous vous reconnectez rapidement après un crash ou timeout)_.
 
