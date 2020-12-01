@@ -18,9 +18,9 @@ Callback appelée quand un joueur double-clique sur le pseudo d'un joueur dans l
 
 ## Valeur de retour
 
-**1** - Empêche les autres filterscripts de recevoir cette callback
+**0** - Empêche les autres filterscripts de recevoir cette callback.
 
-**0** - Indique que cette callback doit passer au filterscript suivant.
+**1** - Indique que cette callback doit passer au filterscript suivant.
 
 ## Exemple
 
