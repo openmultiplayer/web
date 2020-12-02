@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export type SidebarCategory = {
   type: string;
+  path: string;
   label: string;
   items: SidebarItem[];
 };
@@ -20,6 +21,7 @@ const nicenPath = (s: string) => last(s.split("/"));
 
 type Props = {
   title: string;
+  path: string;
   tree: SidebarItem[];
   open?: boolean;
 };
@@ -44,6 +46,7 @@ export const DocsSidebar = () => {
       <div className={visible ? `db-ns` : `db-ns dn`}>
         <DocsSidebarNode
           title="Contents"
+          path="/"
           tree={((process.env.tree as unknown) as SidebarTree).Sidebar}
           open={true}
         />
@@ -52,10 +55,14 @@ export const DocsSidebar = () => {
   );
 };
 
-const DocsSidebarNode = ({ title, tree, open = false }: Props) => (
+const DocsSidebarNode = ({ title, path, tree, open = false }: Props) => (
   <>
     <details open={open}>
-      <summary className="pointer pa1 hover-blue">{title}</summary>
+      <summary className="pointer pa1 hover-blue">
+        <Link href={path}>
+          <a>{title}</a>
+        </Link>
+      </summary>
       <ul className="list pl2 ma0">
         {flow(
           sortBy((v: SidebarItem) => typeof v === "string"),
@@ -68,7 +75,7 @@ const DocsSidebarNode = ({ title, tree, open = false }: Props) => (
               </li>
             ) : (
               <li key={v.label} className="">
-                <DocsSidebarNode title={v.label} tree={v.items} />
+                <DocsSidebarNode title={v.label} path={v.path} tree={v.items} />
               </li>
             )
           )

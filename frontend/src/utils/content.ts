@@ -1,7 +1,6 @@
 // Content acquisition helper APIs for retrieving Markdown text from various
 // sources. The helpers here wrap various fallbacks and different extensions
 // and list files/locales.
-
 import { statSync, readFileSync, readdirSync } from "fs";
 import { join, resolve } from "path";
 import glob from "glob";
@@ -125,6 +124,14 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
+  if (statSync(name).isDirectory()) {
+    const list = readdirSync(name);
+
+    // generate page etc
+    console.log("dir", name, name, list);
+    return { source: "generated", fallback: false };
+  }
+
   if (name === "") {
     name = "index";
   }
