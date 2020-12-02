@@ -4,9 +4,7 @@ description: Apply an animation to an actor.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -53,4 +51,4 @@ You must preload the animation library for the player the actor will be applying
 
 ## Related Functions
 
-- [ClearActorAnimations](ClearActorAnimations.md): Clear any animations that are applied to an actor.
+- [ClearActorAnimations](ClearActorAnimations): Clear any animations that are applied to an actor.

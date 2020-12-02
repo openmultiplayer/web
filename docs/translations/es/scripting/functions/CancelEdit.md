@@ -4,9 +4,7 @@ description: Cancel object edition mode for a player.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -37,10 +35,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [SelectObject](SelectObject.md): Select an object.
-- [EditObject](EditObject.md): Edit an object.
-- [EditPlayerObject](EditPlayerObject.md): Edit an object.
-- [EditAttachedObject](EditAttachedObject.md): Edit an attached object.
-- [CreateObject](CreateObject.md): Create an object.
-- [DestroyObject](DestroyObject.md): Destroy an object.
-- [MoveObject](MoveObject.md): Move an object.
+- [SelectObject](SelectObject): Select an object.
+- [EditObject](EditObject): Edit an object.
+- [EditPlayerObject](EditPlayerObject): Edit an object.
+- [EditAttachedObject](EditAttachedObject): Edit an attached object.
+- [CreateObject](CreateObject): Create an object.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [MoveObject](MoveObject): Move an object.

@@ -4,9 +4,7 @@ description: Find a filename matching a pattern.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: .
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 :::warning
 
@@ -47,6 +45,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [floatsin](floatsin.md): Get the sine from a specific angle.
-- [floatcos](floatcos.md): Get the cosine from a specific angle.
-- [floattan](floattan.md): Get the tangent from a specific angle.
+- [floatsin](floatsin): Get the sine from a specific angle.
+- [floatcos](floatcos): Get the cosine from a specific angle.
+- [floattan](floattan): Get the tangent from a specific angle.

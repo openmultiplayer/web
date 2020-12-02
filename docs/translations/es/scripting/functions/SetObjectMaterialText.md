@@ -4,9 +4,7 @@ description: Replace the texture of an object with text.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -60,8 +58,8 @@ You MUST use ARGB color format, not RGBA like used in client messages etc.
 
 ## Related Functions
 
-- [SetPlayerObjectMaterialText](SetPlayerObjectMaterialText.md): Replace the texture of a player object with text.
-- [SetObjectMaterial](SetObjectMaterial.md): Replace the texture of an object with the texture from another model in the game.
+- [SetPlayerObjectMaterialText](SetPlayerObjectMaterialText): Replace the texture of a player object with text.
+- [SetObjectMaterial](SetObjectMaterial): Replace the texture of an object with the texture from another model in the game.
 - Ultimate Creator by Nexius
 - SetObjectMaterialText Editor by RIDE2DAY
 - Fusez's Map Editor by RedFusion

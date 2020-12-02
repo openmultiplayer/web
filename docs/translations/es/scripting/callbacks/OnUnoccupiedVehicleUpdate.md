@@ -4,9 +4,7 @@ description: This callback is called when a player's client updates/syncs the po
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3c R3' />
+<VersionWarn name='callback' version='SA-MP 0.3c R3' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: Attaches a player's camera to a player-object.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -47,6 +45,6 @@ The player-object must be created before attempting to attach the player's camer
 
 ## Related Functions
 
-- [AttachCameraToObject](AttachCameraToObject.md): Attachs the player's camera on an global object.
-- [SetPlayerCameraPos](SetPlayerCameraPos.md): Set a player's camera position.
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt.md): Set where a player's camera should face.
+- [AttachCameraToObject](AttachCameraToObject): Attachs the player's camera on an global object.
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.

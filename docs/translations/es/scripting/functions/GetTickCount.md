@@ -36,4 +36,4 @@ GetTickCount will cause problems on servers with uptime of over 24 days as GetTi
 
 ## Related Functions
 
-- [Tickcount](Tickcount.md): Get the uptime of the actual server.
+- [Tickcount](Tickcount): Get the uptime of the actual server.

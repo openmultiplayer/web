@@ -37,6 +37,6 @@ This function will change player's color for everyone, even if player's color wa
 
 ## Related Functions
 
-- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer.md): Set a player's marker.
-- [GetPlayerColor](GetPlayerColor.md): Check the color of a player.
-- [ChangeVehicleColor](ChangeVehicleColor.md): Set the color of a vehicle.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Set a player's marker.
+- [GetPlayerColor](GetPlayerColor): Check the color of a player.
+- [ChangeVehicleColor](ChangeVehicleColor): Set the color of a vehicle.

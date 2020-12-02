@@ -4,13 +4,11 @@ description: This callback is called when a vehicle element such as doors, tires
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 :::tip
 
-For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus.md).
+For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus).
 
 :::
 
@@ -59,5 +57,5 @@ This does not include vehicle health changes.
 
 ## Related Functions
 
-- [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus.md): Get the vehicle damage state for each part individually.
-- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus.md): Update the vehicle damage.
+- [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus): Get the vehicle damage state for each part individually.
+- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus): Update the vehicle damage.

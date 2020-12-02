@@ -4,9 +4,7 @@ description: Use this function before any player connects (OnGameModeInit) to te
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c' />
+<VersionWarn version='SA-MP 0.3c' />
 
 ## Description
 
@@ -33,6 +31,6 @@ Is it not possible to reverse this function after it has been used. You must eit
 
 ## Related Functions
 
-- [SetVehicleParamsEx](SetVehicleParamsEx.md): Sets a vehicle's params for all players.
-- [GetVehicleParamsEx](GetVehicleParamsEx.md): Get a vehicle's parameters.
-- [SetVehicleParamsForPlayer](SetVehicleParamsForPlayer.md): Set the parameters of a vehicle for a player.
+- [SetVehicleParamsEx](SetVehicleParamsEx): Sets a vehicle's params for all players.
+- [GetVehicleParamsEx](GetVehicleParamsEx): Get a vehicle's parameters.
+- [SetVehicleParamsForPlayer](SetVehicleParamsForPlayer): Set the parameters of a vehicle for a player.

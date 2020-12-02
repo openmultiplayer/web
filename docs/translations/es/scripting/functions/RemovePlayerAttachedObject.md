@@ -4,9 +4,7 @@ description: Remove an attached object from a player.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c' />
+<VersionWarn version='SA-MP 0.3c' />
 
 ## Description
 
@@ -40,5 +38,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [SetPlayerAttachedObject](SetPlayerAttachedObject.md): Attach an object to a player
-- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed.md): Check whether an object is attached to a player in a specified index
+- [SetPlayerAttachedObject](SetPlayerAttachedObject): Attach an object to a player
+- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed): Check whether an object is attached to a player in a specified index

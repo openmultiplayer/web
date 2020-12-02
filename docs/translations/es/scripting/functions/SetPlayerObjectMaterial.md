@@ -4,9 +4,7 @@ description: Replace the texture of a player-object with the texture from anothe
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -63,7 +61,7 @@ You MUST use ARGB color format, not RGBA like used in client messages etc.
 
 ## Related Functions
 
-- [SetObjectMaterial](SetObjectMaterial.md): Replace the texture of an object with the texture from another model in the game.
+- [SetObjectMaterial](SetObjectMaterial): Replace the texture of an object with the texture from another model in the game.
 
 ## Filterscripts with texturing/text support
 

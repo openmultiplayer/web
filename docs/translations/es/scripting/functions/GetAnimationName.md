@@ -4,9 +4,7 @@ description: Get the animation library/name for the index.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3b' />
+<VersionWarn version='SA-MP 0.3b' />
 
 ## Description
 

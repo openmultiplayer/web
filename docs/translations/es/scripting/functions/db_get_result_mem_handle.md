@@ -5,11 +5,9 @@ keywords:
   - sqlite
 ---
 
-import T from '../../../src/components/templates.js'
+<LowercaseNote />
 
-<T.LowercaseNote />
-
-<T.VersionWarn version='SA-MP 0.3.7 R1' />
+<VersionWarn version='SA-MP 0.3.7 R1' />
 
 ## Description
 

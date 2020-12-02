@@ -4,9 +4,7 @@ description: Set a player's velocity on the X, Y and Z axes.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -41,6 +39,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [GetPlayerVelocity](GetPlayerVelocity.md): Get a player's velocity.
-- [SetVehicleVelocity](SetVehicleVelocity.md): Set a vehicle's velocity.
-- [GetVehicleVelocity](GetVehicleVelocity.md): Get a vehicle's velocity.
+- [GetPlayerVelocity](GetPlayerVelocity): Get a player's velocity.
+- [SetVehicleVelocity](SetVehicleVelocity): Set a vehicle's velocity.
+- [GetVehicleVelocity](GetVehicleVelocity): Get a vehicle's velocity.

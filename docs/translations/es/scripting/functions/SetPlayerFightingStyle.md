@@ -4,9 +4,7 @@ description: Set a player's special fighting style.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -15,7 +13,7 @@ Set a player's special fighting style. To use in-game, aim and press the 'second
 | Name     | Description                                                              |
 | -------- | ------------------------------------------------------------------------ |
 | playerid | The ID of player to set the fighting style of.                           |
-| style    | The fighting [style](../resources/fightingstyles.md) that should be set. |
+| style    | The fighting [style](../resources/fightingstyles) that should be set. |
 
 ## Returns
 
@@ -42,4 +40,4 @@ This does not affect normal fist attacks - only special/secondary attacks (aim +
 
 ## Related Functions
 
-- [GetPlayerFightingStyle](scripting/functions/GetPlayerFightingStyle.md): Get a player's fighting style.
+- [GetPlayerFightingStyle](scripting/functions/GetPlayerFightingStyle): Get a player's fighting style.

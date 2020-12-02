@@ -4,9 +4,7 @@ description: Attach an object to a specific bone on a player.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c' />
+<VersionWarn version='SA-MP 0.3c' />
 
 ## Description
 
@@ -64,6 +62,6 @@ In version 0.3d and onwards, 10 objects can be attached to a single player (inde
 
 ## Related Functions
 
-- [RemovePlayerAttachedObject](RemovePlayerAttachedObject.md): Remove an attached object from a player
-- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed.md): Check whether an object is attached to a player in a specified index
-- [EditAttachedObject](EditAttachedObject.md): Edit an attached object.
+- [RemovePlayerAttachedObject](RemovePlayerAttachedObject): Remove an attached object from a player
+- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed): Check whether an object is attached to a player in a specified index
+- [EditAttachedObject](EditAttachedObject): Edit an attached object.

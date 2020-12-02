@@ -4,9 +4,7 @@ description: Checks if a player is streamed in another player's client.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -48,9 +46,9 @@ Players aren't streamed in on their own client, so if playerid is the same as fo
 
 ## Related Functions
 
-- [IsActorStreamedIn](IsActorStreamedIn.md): Checks if an actor is streamed in for a player.
-- [IsVehicleStreamedIn](IsVehicleStreamedIn.md): Checks if a vehicle is streamed in for a player.
-- [OnPlayerStreamIn](../callbacks/OnPlayerStreamIn.md): Called when a player streams in for another player.
-- [OnPlayerStreamOut](../callbacks/OnPlayerStreamOut.md): Called when a player streams out for another player.
-- [OnVehicleStreamIn](../callbacks/OnVehicleStreamIn.md): Called when a vehicle streams in for a player.
-- [OnVehicleStreamOut](../callbacks/OnVehicleStreamOut.md): Called when a vehicle streams out for a player.
+- [IsActorStreamedIn](IsActorStreamedIn): Checks if an actor is streamed in for a player.
+- [IsVehicleStreamedIn](IsVehicleStreamedIn): Checks if a vehicle is streamed in for a player.
+- [OnPlayerStreamIn](../callbacks/OnPlayerStreamIn): Called when a player streams in for another player.
+- [OnPlayerStreamOut](../callbacks/OnPlayerStreamOut): Called when a player streams out for another player.
+- [OnVehicleStreamIn](../callbacks/OnVehicleStreamIn): Called when a vehicle streams in for a player.
+- [OnVehicleStreamOut](../callbacks/OnVehicleStreamOut): Called when a vehicle streams out for a player.

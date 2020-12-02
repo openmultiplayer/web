@@ -4,9 +4,7 @@ description: Check if a player is an actual player or an NPC.
 tags: ["player", "npc"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -39,5 +37,5 @@ public OnPlayerConnect(playerid)
 
 ## Related Functions
 
-- [ConnectNPC](ConnectNPC.md): Connect an NPC.
-- [IsPlayerAdmin](IsPlayerAdmin.md): Checks if a player is logged into RCON.
+- [ConnectNPC](ConnectNPC): Connect an NPC.
+- [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.

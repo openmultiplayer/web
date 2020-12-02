@@ -4,9 +4,7 @@ description: Gets the server's network stats and stores them in a string.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c R4' />
+<VersionWarn version='SA-MP 0.3c R4' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: This callback is called when a vehicle's siren is toggled.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -53,4 +51,4 @@ This callback is only called when a vehicle's siren is toggled on or off, NOT wh
 
 ## Related Functions
 
-- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState.md): Check whether a vehicle's siren is on or off.
+- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.

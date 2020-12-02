@@ -4,9 +4,7 @@ description: Check the state of a player's weapon.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -32,4 +30,4 @@ public OnPlayerSpawn(playerid)
 
 ## Related Functions
 
-- [GivePlayerWeapon](GivePlayerWeapon.md): Give a player a weapon.
+- [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.

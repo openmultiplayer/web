@@ -4,9 +4,7 @@ description: This callback is called when a player responds to a dialog shown us
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 
@@ -141,7 +139,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parameters can contain different values, based on dialog's style ([click for more examples](../resources/dialogstyles.md)).
+Parameters can contain different values, based on dialog's style ([click for more examples](../resources/dialogstyles)).
 
 :::
 
@@ -159,4 +157,4 @@ A player's dialog doesn't hide when the gamemode restarts, causing the server to
 
 ## Related Functions
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Show a dialog to a player.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Show a dialog to a player.

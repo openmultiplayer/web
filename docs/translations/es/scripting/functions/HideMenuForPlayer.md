@@ -40,7 +40,7 @@ Crashes the both server and player if an invalid menu ID given.
 
 ## Related Functions
 
-- [CreateMenu](CreateMenu.md): Create a menu.
-- [AddMenuItem](AddMenuItem.md): Adds an item to a specified menu.
-- [SetMenuColumnHeader](SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
-- [ShowMenuForPlayer](ShowMenuForPlayer.md): Show a menu for a player.
+- [CreateMenu](CreateMenu): Create a menu.
+- [AddMenuItem](AddMenuItem): Adds an item to a specified menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Set the header for one of the columns in a menu.
+- [ShowMenuForPlayer](ShowMenuForPlayer): Show a menu for a player.

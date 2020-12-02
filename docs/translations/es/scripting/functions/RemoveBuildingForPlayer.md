@@ -4,9 +4,7 @@ description: Removes a standard San Andreas model for a single player within a s
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3d' />
+<VersionWarn version='SA-MP 0.3d' />
 
 ## Description
 
@@ -60,5 +58,5 @@ There appears to be a limit of around 1000 lines/objects. There is no workaround
 
 ## Related Functions
 
-- [DestroyObject](DestroyObject.md): Destroy an object.
-- [DestroyPlayerObject](DestroyPlayerObject.md): Destroy a player object.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.

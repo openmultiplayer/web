@@ -4,9 +4,7 @@ description: Gets the amount of data (in bytes) that the server has sent to the 
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z' />
+<VersionWarn version='SA-MP 0.3z' />
 
 ## Description
 
@@ -37,13 +35,13 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## Related Functions
 
-- [GetPlayerNetworkStats](GetPlayerNetworkStats.md): Gets a player networkstats and saves it into a string.
-- [GetNetworkStats](GetNetworkStats.md): Gets the servers networkstats and saves it into a string.
-- [NetStats_GetConnectedTime](NetStats_GetConnectedTime.md): Get the time that a player has been connected for.
-- [NetStats_MessagesReceived](NetStats_MessagesReceived.md): Get the number of network messages the server has received from the player.
-- [NetStats_MessagesSent](NetStats_MessagesSent.md): Get the number of network messages the server has sent to the player.
-- [NetStats_BytesReceived](NetStats_BytesReceived.md): Get the amount of information (in bytes) that the server has received from the player.
-- [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond.md): Get the number of network messages the server has received from the player in the last second.
-- [NetStats_PacketLossPercent](NetStats_PacketLossPercent.md): Get a player's packet loss percent.
-- [NetStats_ConnectionStatus](NetStats_ConnectionStatus.md): Get a player's connection status.
-- [NetStats_GetIpPort](NetStats_GetIpPort.md): Get a player's IP and port.
+- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
+- [GetNetworkStats](GetNetworkStats): Gets the servers networkstats and saves it into a string.
+- [NetStats_GetConnectedTime](NetStats_GetConnectedTime): Get the time that a player has been connected for.
+- [NetStats_MessagesReceived](NetStats_MessagesReceived): Get the number of network messages the server has received from the player.
+- [NetStats_MessagesSent](NetStats_MessagesSent): Get the number of network messages the server has sent to the player.
+- [NetStats_BytesReceived](NetStats_BytesReceived): Get the amount of information (in bytes) that the server has received from the player.
+- [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Get the number of network messages the server has received from the player in the last second.
+- [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Get a player's packet loss percent.
+- [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Get a player's connection status.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.

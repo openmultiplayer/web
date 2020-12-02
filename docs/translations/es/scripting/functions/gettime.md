@@ -4,9 +4,7 @@ description: Get the current server time, which will be stored in the variables 
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 
@@ -46,4 +44,4 @@ This function is useful for measuring time intervals by using its timestamp char
 
 ## Related Functions
 
-- [getdate](getdate.md): Get the current date of the server.
+- [getdate](getdate): Get the current date of the server.

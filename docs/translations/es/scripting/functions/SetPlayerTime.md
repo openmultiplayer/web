@@ -37,6 +37,6 @@ Using this function under OnPlayerConnect doesn't work.
 
 ## Related Functions
 
-- [SetWorldTime](SetWorldTime.md): Set the global server time.
-- [GetPlayerTime](GetPlayerTime.md): Get the time of a player.
-- [TogglePlayerClock](TogglePlayerClock.md): Toggle the clock in the top-right corner.
+- [SetWorldTime](SetWorldTime): Set the global server time.
+- [GetPlayerTime](GetPlayerTime): Get the time of a player.
+- [TogglePlayerClock](TogglePlayerClock): Toggle the clock in the top-right corner.

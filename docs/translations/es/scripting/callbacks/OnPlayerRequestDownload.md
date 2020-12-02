@@ -4,9 +4,7 @@ description: This callback is called when a player request for custom model down
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
 
 ## Description
 
@@ -58,4 +56,4 @@ public OnPlayerRequestDownload(playerid, type, crc)
 
 ## Related Functions
 
-- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.

@@ -4,9 +4,7 @@ description: Toggles a player object camera collision.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -48,4 +46,4 @@ This does not work inside the normal SA map boundaries.
 
 ## Related Functions
 
-- [SetObjectNoCameraCol](SetObjectNoCameraCol.md): Disables collisions between camera and object.
+- [SetObjectNoCameraCol](SetObjectNoCameraCol): Disables collisions between camera and object.

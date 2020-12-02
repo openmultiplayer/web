@@ -4,9 +4,7 @@ description: Adds a death to the 'killfeed' on the right-hand side of the screen
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z R2-2' />
+<VersionWarn version='SA-MP 0.3z R2-2' />
 
 ## Description
 
@@ -39,5 +37,5 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Related Functions
 
-- [SendDeathMessage](SendDeathMessage.md): Add a kill to the death list.
-- [OnPlayerDeath](../callbacks/OnPlayerDeath.md): Called when a player dies.
+- [SendDeathMessage](SendDeathMessage): Add a kill to the death list.
+- [OnPlayerDeath](../callbacks/OnPlayerDeath): Called when a player dies.

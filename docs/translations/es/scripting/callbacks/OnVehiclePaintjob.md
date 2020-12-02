@@ -40,7 +40,7 @@ This callback is not called by ChangeVehiclePaintjob. You might use OnVehicleCha
 
 ## Related Functions
 
-- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob.md): Change the paintjob on a vehicle.
-- [ChangeVehicleColor](../functions/ChangeVehicleColor.md): Set the color of a vehicle.
-- [OnVehicleRespray](OnVehicleRespray.md): Called when a vehicle is resprayed.
-- [OnVehicleMod](OnVehicleMod.md): Called when a vehicle is modded.
+- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change the paintjob on a vehicle.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.
+- [OnVehicleRespray](OnVehicleRespray): Called when a vehicle is resprayed.
+- [OnVehicleMod](OnVehicleMod): Called when a vehicle is modded.

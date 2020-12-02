@@ -4,9 +4,7 @@ description: Stops the current audio stream for a player.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3d' />
+<VersionWarn version='SA-MP 0.3d' />
 
 ## Description
 
@@ -36,5 +34,5 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 ## Related Functions
 
-- [PlayAudioStreamForPlayer](PlayAudioStreamForPlayer.md): Plays a audio stream for a player.
-- [PlayerPlaySound](PlayerPlaySound.md): Play a sound for a player.
+- [PlayAudioStreamForPlayer](PlayAudioStreamForPlayer): Plays a audio stream for a player.
+- [PlayerPlaySound](PlayerPlaySound): Play a sound for a player.

@@ -4,13 +4,11 @@ description: Retrieve the damage statuses of a vehicle.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 :::tip
 
-For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus.md).
+For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus).
 
 :::
 
@@ -43,8 +41,8 @@ printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tires]: %d"
 
 ## Related Functions
 
-- [UpdateVehicleDamageStatus](UpdateVehicleDamageStatus.md): Update the vehicle damage.
-- [SetVehicleHealth](SetVehicleHealth.md): Set the health of a vehicle.
-- [GetVehicleHealth](GetVehicleHealth.md): Check the health of a vehicle.
-- [RepairVehicle](RepairVehicle.md): Fully repair a vehicle.
-- [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate.md): Called when a vehicle's damage state changes.
+- [UpdateVehicleDamageStatus](UpdateVehicleDamageStatus): Update the vehicle damage.
+- [SetVehicleHealth](SetVehicleHealth): Set the health of a vehicle.
+- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
+- [RepairVehicle](RepairVehicle): Fully repair a vehicle.
+- [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate): Called when a vehicle's damage state changes.

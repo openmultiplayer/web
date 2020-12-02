@@ -4,9 +4,7 @@ description: Returns the ID of the object the player is surfing on.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c R3' />
+<VersionWarn version='SA-MP 0.3c R3' />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: This function changes a single character to uppercase.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 
@@ -33,4 +31,4 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [tolower](tolower.md)
+- [tolower](tolower)

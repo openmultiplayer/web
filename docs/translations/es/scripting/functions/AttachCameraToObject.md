@@ -4,9 +4,7 @@ description: You can use this function to attach the player camera to objects.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -47,4 +45,4 @@ You need to create the object first, before attempting to attach a player camera
 
 ## Related Functions
 
-- [AttachCameraToPlayerObject](AttachCameraToPlayerObject.md): Attaches the player's camera to a player object.
+- [AttachCameraToPlayerObject](AttachCameraToPlayerObject): Attaches the player's camera to a player object.

@@ -4,9 +4,7 @@ description: Sets the angular X, Y and Z velocity of a vehicle.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3b' />
+<VersionWarn version='SA-MP 0.3b' />
 
 :::info
 
@@ -57,5 +55,5 @@ This function has no effect on unoccupied vehicles and does not affect trains.
 
 ## Related Functions
 
-- [SetVehicleVelocity](SetVehicleVelocity.md): Set a vehicle's velocity.
-- [GetVehicleVelocity](GetVehicleVelocity.md): Get a vehicle's velocity.
+- [SetVehicleVelocity](SetVehicleVelocity): Set a vehicle's velocity.
+- [GetVehicleVelocity](GetVehicleVelocity): Get a vehicle's velocity.

@@ -5,14 +5,14 @@ description: Connection status to be used with NetStats_ConnectionStatus.
 
 ## Description
 
-Connection status to be used with [NetStats_ConnectionStatus](../functions/NetStats_ConnectionStatus.md).
+Connection status to be used with [NetStats_ConnectionStatus](../functions/NetStats_ConnectionStatus).
 
 ## Often used
 
 | ID  | State                                     | Meaning                                                                                                      |
 | --- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | 0   | NO_ACTION                                 | unknown                                                                                                      |
-| 1   | DISCONNECT_ASAP                           | playerid still exists but [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect.md) have already been called. |
+| 1   | DISCONNECT_ASAP                           | playerid still exists but [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) have already been called. |
 | 2   | DISCONNECT_ASAP_SILENTLY                  | unknown                                                                                                      |
 | 3   | DISCONNECT_ON_NO_ACK                      | unknown                                                                                                      |
 | 4   | REQUESTED_CONNECTION                      | connection request "cookie" has been sent for this ID                                                        |

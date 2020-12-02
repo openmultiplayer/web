@@ -4,9 +4,7 @@ description: Fully repairs a vehicle, including visual damage (bumps, dents, scr
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -45,5 +43,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [SetVehicleHealth](SetVehicleHealth.md): Set the health of a vehicle.
-- [GetVehicleHealth](GetVehicleHealth.md): Check the health of a vehicle.
+- [SetVehicleHealth](SetVehicleHealth): Set the health of a vehicle.
+- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.

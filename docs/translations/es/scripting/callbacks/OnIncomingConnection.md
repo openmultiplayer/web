@@ -4,9 +4,7 @@ description: This callback is called when an IP address attempts a connection to
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3z R2-2' />
+<VersionWarn name='callback' version='SA-MP 0.3z R2-2' />
 
 ## Description
 
@@ -38,5 +36,5 @@ public OnIncomingConnection(playerid, ip_address[], port)
 
 ## Related Functions
 
-- [BlockIpAddress](../functions/BlockIpAddress.md): Block an IP address from connecting to the server for a set amount of time.
-- [UnBlockIpAddress](../functions/UnBlockIpAddress.md): Unblock an IP that was previously blocked.
+- [BlockIpAddress](../functions/BlockIpAddress): Block an IP address from connecting to the server for a set amount of time.
+- [UnBlockIpAddress](../functions/UnBlockIpAddress): Unblock an IP that was previously blocked.

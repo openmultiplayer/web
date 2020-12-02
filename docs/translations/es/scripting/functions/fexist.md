@@ -4,9 +4,7 @@ description: Checks if a specific file exists in the scriptfiles directory.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

@@ -4,9 +4,7 @@ description: Add a new property or change an existing property.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

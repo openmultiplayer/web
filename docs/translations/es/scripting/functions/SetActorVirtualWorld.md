@@ -4,9 +4,7 @@ description: Set the virtual world of an actor.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -41,5 +39,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [GetActorVirtualWorld](GetActorVirtualWorld.md): Get the virtual world of an actor.
-- [CreateActor](CreateActor.md): Create an actor (static NPC).
+- [GetActorVirtualWorld](GetActorVirtualWorld): Get the virtual world of an actor.
+- [CreateActor](CreateActor): Create an actor (static NPC).

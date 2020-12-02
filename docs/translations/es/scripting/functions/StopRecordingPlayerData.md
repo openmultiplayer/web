@@ -4,9 +4,7 @@ description: Stops all the recordings that had been started with StartRecordingP
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -36,4 +34,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [StartRecordingPlayerData](StartRecordingPlayerData.md): Start recording player data.
+- [StartRecordingPlayerData](StartRecordingPlayerData): Start recording player data.

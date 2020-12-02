@@ -4,9 +4,7 @@ description: Get a specific property from the memory, the string is returned as 
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

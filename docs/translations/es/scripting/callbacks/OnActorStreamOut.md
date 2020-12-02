@@ -4,9 +4,7 @@ description: This callback is called when an actor is streamed out by a player's
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -35,6 +33,6 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Notes
 
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 ## Related Functions

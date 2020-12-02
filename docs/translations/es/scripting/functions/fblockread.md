@@ -4,9 +4,7 @@ description: This function allows you to read data from a file, without encoding
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

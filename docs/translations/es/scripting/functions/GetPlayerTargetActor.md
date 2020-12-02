@@ -4,9 +4,7 @@ description: Gets id of an actor which is aimed by certain player.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -45,6 +43,6 @@ Does not work for joypads/controllers, and after a certain distance. Does not wo
 
 ## Related Functions
 
-- [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor.md): Get the ID of the actor (if any) a player is looking at.
-- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector.md): Get the player's camera front vector
-- [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor.md): This callback is called when a player gives damage to an actor.
+- [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor): Get the ID of the actor (if any) a player is looking at.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
+- [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor): This callback is called when a player gives damage to an actor.

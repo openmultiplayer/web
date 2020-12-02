@@ -38,8 +38,6 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-import T from '../../../src/components/templates.js'
-
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 ## Related Functions

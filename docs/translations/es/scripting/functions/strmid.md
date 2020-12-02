@@ -4,9 +4,7 @@ description: Extract a range of characters from a string.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

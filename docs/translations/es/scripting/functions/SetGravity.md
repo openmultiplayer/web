@@ -38,6 +38,6 @@ Default gravity is 0.008.
 
 ## Related Functions
 
-- [GetGravity](GetGravity.md): Get the currently set gravity.
-- [SetWeather](SetWeather.md): Set the global weather.
-- [SetWorldTime](SetWorldTime.md): Set the global server time.
+- [GetGravity](GetGravity): Get the currently set gravity.
+- [SetWeather](SetWeather): Set the global weather.
+- [SetWorldTime](SetWorldTime): Set the global server time.

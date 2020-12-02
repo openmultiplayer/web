@@ -4,9 +4,7 @@ description: Replace the texture of a player object with text.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -18,13 +16,13 @@ Replace the texture of a player object with text.
 | objectid      | The ID of the object on which to place the text.                                  |
 | text          | The text to set.                                                                  |
 | materialindex | The material index to replace with text (DEFAULT: 0).                             |
-| materialsize  | The [size](../resources/materialtextsizes.md) of the material (DEFAULT: 256x128). |
+| materialsize  | The [size](../resources/materialtextsizes) of the material (DEFAULT: 256x128). |
 | fontface      | The font to use (DEFAULT: Arial).                                                 |
 | fontsize      | The size of the text (DEFAULT: 24) (MAX 255).                                     |
 | bold          | Bold text. Set to 1 for bold, 0 for not (DEFAULT: 1).                             |
 | fontcolor     | The color of the text (DEFAULT: White).                                           |
 | backcolor     | The background color (DEFAULT: None (transparent)).                               |
-| textalignment | The [alignment](../resources/materialtextsizes.md) of the text (DEFAULT: Left).   |
+| textalignment | The [alignment](../resources/materialtextsizes) of the text (DEFAULT: Left).   |
 
 ## Returns
 
@@ -53,8 +51,8 @@ Color embedding can be used for multiple colors in the text.
 
 ## Related Functions
 
-- [SetObjectMaterialText](SetObjectMaterialText.md): Replace the texture of an object with text.
-- [SetPlayerObjectMaterial](SetPlayerObjectMaterial.md): Replace the texture of a player object with the texture from another model in the game.
+- [SetObjectMaterialText](SetObjectMaterialText): Replace the texture of an object with text.
+- [SetPlayerObjectMaterial](SetPlayerObjectMaterial): Replace the texture of a player object with the texture from another model in the game.
 
 ## Filterscripts with texturing/text support
 

@@ -4,9 +4,7 @@ description: Called when a player double-clicks on a player on the scoreboard.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 
@@ -48,4 +46,4 @@ There is currently only one 'source' (0 - CLICK_SOURCE_SCOREBOARD). The existenc
 
 ## Related Functions
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

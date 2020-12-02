@@ -4,9 +4,7 @@ description: Unblock an IP address that was previously blocked using BlockIpAddr
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3z R2-2' />
+<VersionWarn version='SA-MP 0.3z R2-2' />
 
 ## Description
 
@@ -32,5 +30,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [BlockIpAddress](BlockIpAddress.md): Block an IP address from connecting to the server for a set amount of time.
-- [OnIncomingConnection](../callbacks/OnIncomingConnection.md): Called when a player is attempting to connect to the server.
+- [BlockIpAddress](BlockIpAddress): Block an IP address from connecting to the server for a set amount of time.
+- [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.

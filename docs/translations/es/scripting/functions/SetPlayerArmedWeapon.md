@@ -4,9 +4,7 @@ description: Sets which weapon (that a player already has) the player is holding
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -58,5 +56,5 @@ This function arms a player with a weapon they already have; it does not give th
 
 ## Related Functions
 
-- [GivePlayerWeapon](GivePlayerWeapon.md): Give a player a weapon.
-- [GetPlayerWeapon](GetPlayerWeapon.md): Check what weapon a player is currently holding.
+- [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
+- [GetPlayerWeapon](GetPlayerWeapon): Check what weapon a player is currently holding.

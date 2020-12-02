@@ -4,9 +4,7 @@ description: Get the current server date, which will be stored in the variables 
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

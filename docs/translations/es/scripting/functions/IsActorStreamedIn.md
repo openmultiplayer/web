@@ -4,9 +4,7 @@ description: Checks if an actor is streamed in for a player.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -43,5 +41,5 @@ public OnPlayerSpawn(playerid)
 
 ## Related Functions
 
-- [CreateActor](CreateActor.md): Create an actor (static NPC).
-- [IsPlayerStreamedIn](IsPlayerStreamedIn.md): Checks if a player is streamed in for another player.
+- [CreateActor](CreateActor): Create an actor (static NPC).
+- [IsPlayerStreamedIn](IsPlayerStreamedIn): Checks if a player is streamed in for another player.

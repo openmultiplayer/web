@@ -4,9 +4,7 @@ description: Checks if the given objectid is moving.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3d' />
+<VersionWarn version='SA-MP 0.3d' />
 
 ## Description
 
@@ -31,6 +29,6 @@ if (IsObjectMoving(objectid))
 
 ## Related Functions
 
-- [MoveObject](MoveObject.md): Move an object.
-- [StopObject](StopObject.md): Stop an object from moving.
-- [OnObjectMoved](../callbacks/OnObjectMoved.md): Called when an object stops moving.
+- [MoveObject](MoveObject): Move an object.
+- [StopObject](StopObject): Stop an object from moving.
+- [OnObjectMoved](../callbacks/OnObjectMoved): Called when an object stops moving.

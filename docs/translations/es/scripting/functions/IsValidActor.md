@@ -4,9 +4,7 @@ description: Checks if an actor ID is valid.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -40,6 +38,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [CreateActor](CreateActor.md): Create an actor.
-- [GetActorPoolSize](GetActorPoolSize.md): Gets the highest actorid created on the server.
-- [SetActorHealth](SetActorHealth.md): Set the health of an actor.
+- [CreateActor](CreateActor): Create an actor.
+- [GetActorPoolSize](GetActorPoolSize): Gets the highest actorid created on the server.
+- [SetActorHealth](SetActorHealth): Set the health of an actor.

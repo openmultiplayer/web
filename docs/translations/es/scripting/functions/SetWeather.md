@@ -10,7 +10,7 @@ Set the world weather for all players.
 
 | Name      | Description                                      |
 | --------- | ------------------------------------------------ |
-| weatherid | The [weather](../resources/weatherid.md) to set. |
+| weatherid | The [weather](../resources/weatherid) to set. |
 
 ## Returns
 
@@ -36,5 +36,5 @@ If TogglePlayerClock is enabled, weather will slowly change over time, instead o
 
 ## Related Functions
 
-- [SetPlayerWeather](SetPlayerWeather.md): Set a player's weather.
-- [SetGravity](SetGravity.md): Set the global gravity.
+- [SetPlayerWeather](SetPlayerWeather): Set a player's weather.
+- [SetGravity](SetGravity): Set the global gravity.

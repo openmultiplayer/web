@@ -4,9 +4,7 @@ description: Find out which seat a player is in.
 tags: ["player", "vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -45,5 +43,5 @@ if (strcmp(cmdtext, "/myseat", true) == 0)
 
 ## Related Functions
 
-- [GetPlayerVehicleID](GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
-- [PutPlayerInVehicle](PutPlayerInVehicle.md): Put a player in a vehicle.
+- [GetPlayerVehicleID](GetPlayerVehicleID): Get the ID of the vehicle the player is in.
+- [PutPlayerInVehicle](PutPlayerInVehicle): Put a player in a vehicle.

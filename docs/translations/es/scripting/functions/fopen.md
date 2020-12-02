@@ -4,9 +4,7 @@ description: Open a file (to read from or write to).
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

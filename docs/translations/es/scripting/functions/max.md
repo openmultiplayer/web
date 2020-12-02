@@ -4,9 +4,7 @@ description: .
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 
@@ -40,5 +38,5 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [min](min.md): Compare and get the minimum value .
-- [max](max.md): Compare and get the maximum value .
+- [min](min): Compare and get the minimum value .
+- [max](max): Compare and get the maximum value .

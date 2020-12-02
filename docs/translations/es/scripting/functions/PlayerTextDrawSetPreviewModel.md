@@ -4,9 +4,7 @@ description: Sets a player textdraw 2D preview sprite of a specified model ID.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3x' />
+<VersionWarn version='SA-MP 0.3x' />
 
 ## Description
 
@@ -54,7 +52,7 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for th
 
 ## Related Functions
 
-- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot.md): Set rotation of a 3D player textdraw preview.
-- [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol.md): Set the colours of a vehicle in a 3D player textdraw preview.
-- [PlayerTextDrawFont](PlayerTextDrawFont.md): Set the font of a player-textdraw.
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
+- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Set rotation of a 3D player textdraw preview.
+- [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol): Set the colours of a vehicle in a 3D player textdraw preview.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

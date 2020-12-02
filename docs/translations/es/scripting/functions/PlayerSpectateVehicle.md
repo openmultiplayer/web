@@ -12,7 +12,7 @@ Sets a player to spectate another vehicle. Their camera will be attached to the 
 | --------------- | ----------------------------------------------------------------------------------------------------------- |
 | playerid        | The ID of the player who should spectate a vehicle.                                                         |
 | targetvehicleid | The ID of the vehicle the player should spectate.                                                           |
-| mode            | The spectate [mode](../resources/spectatemodes.md). Can generally be left blank as it defaults to 'normal'. |
+| mode            | The spectate [mode](../resources/spectatemodes). Can generally be left blank as it defaults to 'normal'. |
 
 ## Returns
 
@@ -37,5 +37,5 @@ Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpect
 
 ## Related Functions
 
-- [PlayerSpectatePlayer](PlayerSpectatePlayer.md): Spectate a player.
-- [TogglePlayerSpectating](TogglePlayerSpectating.md): Start or stop spectating.
+- [PlayerSpectatePlayer](PlayerSpectatePlayer): Spectate a player.
+- [TogglePlayerSpectating](TogglePlayerSpectating): Start or stop spectating.

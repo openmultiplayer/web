@@ -4,9 +4,7 @@ description: Round a floating point number to an integer value.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 
@@ -15,7 +13,7 @@ Round a floating point number to an integer value.
 | Name                                    | Description                  |
 | --------------------------------------- | ---------------------------- |
 | value                                   | The value to round.          |
-| [mode](../resources/floatroundmodes.md) | The floatround modes to use. |
+| [mode](../resources/floatroundmodes) | The floatround modes to use. |
 
 ## Returns
 

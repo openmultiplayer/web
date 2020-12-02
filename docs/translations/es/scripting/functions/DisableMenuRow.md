@@ -44,6 +44,6 @@ Crashes when passed an invalid menu ID. This function disabled the specified men
 
 ## Related Functions
 
-- [CreateMenu](CreateMenu.md): Create a menu.
-- [DestroyMenu](DestroyMenu.md): Destroy a menu.
-- [AddMenuItem](AddMenuItem.md): Add an item to a menu.
+- [CreateMenu](CreateMenu): Create a menu.
+- [DestroyMenu](DestroyMenu): Destroy a menu.
+- [AddMenuItem](AddMenuItem): Add an item to a menu.

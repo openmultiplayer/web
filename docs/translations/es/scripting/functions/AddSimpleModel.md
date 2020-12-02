@@ -4,9 +4,7 @@ description: Adds a new custom simple object model for download.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL R1' />
 
 ## Description
 
@@ -56,4 +54,4 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.

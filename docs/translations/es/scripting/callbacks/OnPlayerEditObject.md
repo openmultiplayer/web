@@ -4,9 +4,7 @@ description: This callback is called when a player finishes editing an object (E
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3e' />
+<VersionWarn name='callback' version='SA-MP 0.3e' />
 
 ## Description
 
@@ -17,7 +15,7 @@ This callback is called when a player finishes editing an object (EditObject/Edi
 | playerid     | The ID of the player that edited an object                         |
 | playerobject | 0 if it is a global object or 1 if it is a playerobject.           |
 | objectid     | The ID of the edited object                                        |
-| response     | The [type of response](../resources/objecteditionresponsetypes.md) |
+| response     | The [type of response](../resources/objecteditionresponsetypes) |
 | Float:fX     | The X offset for the object that was edited                        |
 | Float:fY     | The Y offset for the object that was edited                        |
 | Float:fZ     | The Z offset for the object that was edited                        |
@@ -95,7 +93,7 @@ When using 'EDIT_RESPONSE_UPDATE' be aware that this callback will not be called
 
 ## Related Functions
 
-- [EditObject](../functions/EditObject.md): Edit an object.
-- [CreateObject](../functions/CreateObject.md): Create an object.
-- [DestroyObject](../functions/DestroyObject.md): Destroy an object.
-- [MoveObject](../functions/MoveObject.md): Move an object.
+- [EditObject](../functions/EditObject): Edit an object.
+- [CreateObject](../functions/CreateObject): Create an object.
+- [DestroyObject](../functions/DestroyObject): Destroy an object.
+- [MoveObject](../functions/MoveObject): Move an object.

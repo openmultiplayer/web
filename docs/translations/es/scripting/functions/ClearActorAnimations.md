@@ -4,9 +4,7 @@ description: Clear any animations applied to an actor.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -41,4 +39,4 @@ ClearActorAnimations(gMyActor);
 
 ## Related Functions
 
-- [ApplyActorAnimation](ApplyActorAnimation.md): Apply an animation to an actor.
+- [ApplyActorAnimation](ApplyActorAnimation): Apply an animation to an actor.

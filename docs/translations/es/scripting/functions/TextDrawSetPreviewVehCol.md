@@ -4,9 +4,7 @@ description: If a vehicle model is used in a 3D preview textdraw, this sets the 
 tags: ["textdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3x' />
+<VersionWarn version='SA-MP 0.3x' />
 
 ## Description
 
@@ -52,7 +50,7 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for th
 
 ## Related Functions
 
-- [TextDrawSetPreviewModel](TextDrawSetPreviewModel.md): Set the 3D preview model of a textdraw.
-- [TextDrawSetPreviewRot](TextDrawSetPreviewRot.md): Set rotation of a 3D textdraw preview.
-- [TextDrawFont](TextDrawFont.md): Set the font of a textdraw.
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [TextDrawSetPreviewModel](TextDrawSetPreviewModel): Set the 3D preview model of a textdraw.
+- [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Set rotation of a 3D textdraw preview.
+- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

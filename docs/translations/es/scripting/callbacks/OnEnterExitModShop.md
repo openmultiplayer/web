@@ -4,9 +4,7 @@ description: This callback is called when a player enters or exits a mod shop.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 
@@ -46,4 +44,4 @@ Known Bug(s): Players collide when they get into the same mod shop.
 
 ## Related Functions
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Add a component to a vehicle.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Add a component to a vehicle.

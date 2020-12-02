@@ -4,9 +4,7 @@ description: This callback is called when a player is streamed by some other pla
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 
@@ -35,6 +33,6 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Notes
 
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 ## Related Functions

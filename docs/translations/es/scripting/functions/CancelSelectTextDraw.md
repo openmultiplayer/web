@@ -4,9 +4,7 @@ description: Cancel textdraw selection with the mouse.
 tags: ["textdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -45,6 +43,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [SelectTextDraw](SelectTextDraw.md): Enables the mouse, so the player can select a textdraw
-- [TextDrawSetSelectable](TextDrawSetSelectable.md): Sets whether a textdraw is selectable through SelectTextDraw
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
+- [TextDrawSetSelectable](TextDrawSetSelectable): Sets whether a textdraw is selectable through SelectTextDraw
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

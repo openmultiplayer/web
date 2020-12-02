@@ -4,9 +4,7 @@ description: Retrieve the model ID of a player-object.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -30,4 +28,4 @@ new modelId = GetPlayerObjectModel(playerid, objectId);
 
 ## Related Functions
 
-- [GetObjectModel](GetObjectModel.md): Get the model ID of an object.
+- [GetObjectModel](GetObjectModel): Get the model ID of an object.

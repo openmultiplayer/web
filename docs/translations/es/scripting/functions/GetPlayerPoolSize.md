@@ -4,9 +4,7 @@ description: Gets the highest playerid currently in use on the server.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -27,5 +25,5 @@ FreezeAll()
 
 ## Related Functions
 
-- [GetVehiclePoolSize](GetVehiclePoolSize.md): Gets the highest vehicleid currently in use on the server.
-- [GetMaxPlayers](GetMaxPlayers.md): Gets the maximum number of players that can join the server.
+- [GetVehiclePoolSize](GetVehiclePoolSize): Gets the highest vehicleid currently in use on the server.
+- [GetMaxPlayers](GetMaxPlayers): Gets the maximum number of players that can join the server.

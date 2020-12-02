@@ -4,9 +4,7 @@ description: This function can be used to calculate the distance (as a float) be
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c R3' />
+<VersionWarn version='SA-MP 0.3c R3' />
 
 ## Description
 
@@ -44,5 +42,5 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint.md): Get the distance between a player and a point.
-- [GetVehiclePos](GetVehiclePos.md): Get the position of a vehicle.
+- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint): Get the distance between a player and a point.
+- [GetVehiclePos](GetVehiclePos): Get the position of a vehicle.

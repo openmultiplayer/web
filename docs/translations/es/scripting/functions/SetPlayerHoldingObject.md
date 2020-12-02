@@ -4,9 +4,7 @@ description: Attaches an object to a bone.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3b' />
+<VersionWarn version='SA-MP 0.3b' />
 
 ## Description
 
@@ -16,7 +14,7 @@ Attaches an object to a bone.
 | -------- | -------------------------------------------------------------------- |
 | playerid | ID of the player you want to attach the object to.                   |
 | modelid  | The model you want to use.                                           |
-| bone     | The [bone](../resources/boneid.md) you want to attach the object to. |
+| bone     | The [bone](../resources/boneid) you want to attach the object to. |
 | fOffsetX | (optional) X axis offset for the object position.                    |
 | fOffsetY | (optional) Y axis offset for the object position.                    |
 | fOffsetZ | (optional) Z axis offset for the object position.                    |

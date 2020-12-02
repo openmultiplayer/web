@@ -4,9 +4,7 @@ description: Prints a string to the server console (not in-game chat) and logs (
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 
@@ -53,4 +51,4 @@ public OnGameModeInit( )
 
 ## Related Functions
 
-- [printf](printf.md): Print a formatted message into the server logs and console.
+- [printf](printf): Print a formatted message into the server logs and console.

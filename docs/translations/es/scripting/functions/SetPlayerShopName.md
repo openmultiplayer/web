@@ -4,9 +4,7 @@ description: Loads or unloads an interior script for a player (for example the a
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -48,5 +46,5 @@ This function does not support casino scripts.
 
 ## Related Functions
 
-- [DisableInteriorEnterExits](DisableInteriorEnterExits.md): Disable the yellow door markers.
-- [SetPlayerInterior](SetPlayerInterior.md): Set a player's interior.
+- [DisableInteriorEnterExits](DisableInteriorEnterExits): Disable the yellow door markers.
+- [SetPlayerInterior](SetPlayerInterior): Set a player's interior.

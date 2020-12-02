@@ -4,9 +4,7 @@ description: Removes attached objects.
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3b' />
+<VersionWarn version='SA-MP 0.3b' />
 
 ## Description
 
@@ -43,4 +41,4 @@ This function was removed in SA-MP 0.3c. check RemovePlayerAttachedObject
 
 ## Related Functions
 
-- [SetPlayerHoldingObject](SetPlayerHoldingObject.md): Attaches an object to a bone.
+- [SetPlayerHoldingObject](SetPlayerHoldingObject): Attaches an object to a bone.

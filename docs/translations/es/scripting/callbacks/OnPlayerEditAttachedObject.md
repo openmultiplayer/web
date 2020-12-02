@@ -4,9 +4,7 @@ description: This callback is called when a player ends attached object edition 
 tags: ["player"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3e' />
+<VersionWarn name='callback' version='SA-MP 0.3e' />
 
 ## Description
 
@@ -93,5 +91,5 @@ Editions should be discarded if response was '0' (cancelled). This must be done 
 
 ## Related Functions
 
-- [EditAttachedObject](../functions/EditAttachedObject.md): Edit an attached object.
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Attach an object to a player
+- [EditAttachedObject](../functions/EditAttachedObject): Edit an attached object.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Attach an object to a player

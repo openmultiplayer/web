@@ -4,9 +4,7 @@ description: Set the facing angle of an actor.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -54,5 +52,5 @@ Players will see actor's facing angle changed only when it is restreamed to them
 
 ## Related Functions
 
-- [GetActorFacingAngle](GetActorFacingAngle.md): Get the facing angle of an actor.
-- [SetActorPos](SetActorPos.md): Set the position of an actor.
+- [GetActorFacingAngle](GetActorFacingAngle): Get the facing angle of an actor.
+- [SetActorPos](SetActorPos): Set the position of an actor.

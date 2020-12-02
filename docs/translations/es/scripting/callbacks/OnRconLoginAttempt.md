@@ -4,9 +4,7 @@ description: This callback is called when someone attempts to log in to RCON in-
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Description
 
@@ -55,5 +53,5 @@ This callback is only called when /rcon login is used in-game. This callback is 
 
 ## Related Functions
 
-- [IsPlayerAdmin](../functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
-- [SendRconCommand](../functions/SendRconCommand.md): Sends an RCON command via the script.
+- [IsPlayerAdmin](../functions/IsPlayerAdmin): Checks if a player is logged into RCON.
+- [SendRconCommand](../functions/SendRconCommand): Sends an RCON command via the script.

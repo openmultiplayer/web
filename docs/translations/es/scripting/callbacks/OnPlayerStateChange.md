@@ -14,7 +14,7 @@ This callback is called when a player changes state. For example, when a player 
 | newstate | The player's new state.                  |
 | oldstate | The player's previous state.             |
 
-Refer to [Player States](../resources/playerstates.md) for a list of all available player states.
+Refer to [Player States](../resources/playerstates) for a list of all available player states.
 
 ## Returns
 
@@ -36,12 +36,10 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 ## Notes
 
-import T from '../../../src/components/templates.js'
-
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 ## Related Functions
 
-- [GetPlayerState](../functions/GetPlayerState.md): Get a player's current state.
-- [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction.md): Get a player's current special action.
-- [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction.md): Set a player's special action.
+- [GetPlayerState](../functions/GetPlayerState): Get a player's current state.
+- [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction): Get a player's current special action.
+- [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction): Set a player's special action.

@@ -4,9 +4,7 @@ description: Get the cosine from a given angle.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

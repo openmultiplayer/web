@@ -4,9 +4,7 @@ description: Get the number of arguments passed to a function.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 
@@ -31,5 +29,5 @@ public OnFilterScriptInit()
 
 ## Related Functions
 
-- [getarg](getarg.md): Retrieve an argument from a variable argument list.
-- [setarg](setarg.md): Set an argument.
+- [getarg](getarg): Retrieve an argument from a variable argument list.
+- [setarg](setarg): Set an argument.

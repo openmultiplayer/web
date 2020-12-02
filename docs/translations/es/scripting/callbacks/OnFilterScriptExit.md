@@ -1,12 +1,13 @@
 ---
 title: OnFilterScriptExit
-description: This callback is called when a filterscript is unloaded.
+description: This callback is called when a filterscript is unloaded. It is only called inside the filterscript which is unloaded.
+
 tags: []
 ---
 
 ## Description
 
-This callback is called when a filterscript is unloaded. It is only called inside the filterscript which is unloaded.
+Ang callback na ito ay natatawag kapag ang filterscript ay in-unload sa server.
 
 ## Examples
 
@@ -20,4 +21,4 @@ public OnFilterScriptExit()
 }
 ```
 
-## Related Functions
+## Mga Related na Functions

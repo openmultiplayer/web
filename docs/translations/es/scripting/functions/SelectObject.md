@@ -4,9 +4,7 @@ description: Display the cursor and allow the player to select an object.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -37,11 +35,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [CreateObject](CreateObject.md): Create an object.
-- [DestroyObject](DestroyObject.md): Destroy an object.
-- [MoveObject](MoveObject.md): Move an object.
-- [EditObject](EditObject.md): Edit an object.
-- [EditPlayerObject](EditPlayerObject.md): Edit an object.
-- [EditAttachedObject](EditAttachedObject.md): Edit an attached object.
-- [CancelEdit](CancelEdit.md): Cancel the edition of an object.
-- [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject.md): Called when a player selected an object.
+- [CreateObject](CreateObject): Create an object.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [MoveObject](MoveObject): Move an object.
+- [EditObject](EditObject): Edit an object.
+- [EditPlayerObject](EditPlayerObject): Edit an object.
+- [EditAttachedObject](EditAttachedObject): Edit an attached object.
+- [CancelEdit](CancelEdit): Cancel the edition of an object.
+- [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject): Called when a player selected an object.

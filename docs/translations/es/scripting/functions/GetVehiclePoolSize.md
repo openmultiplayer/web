@@ -4,9 +4,7 @@ description: Gets the highest vehicleid currently in use on the server.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Description
 
@@ -27,4 +25,4 @@ RepairAllVehicles()
 
 ## Related Functions
 
-- [GetPlayerPoolSize](GetPlayerPoolSize.md): Gets the highest playerid connected to the server.
+- [GetPlayerPoolSize](GetPlayerPoolSize): Gets the highest playerid connected to the server.

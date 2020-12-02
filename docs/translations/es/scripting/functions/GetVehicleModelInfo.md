@@ -4,9 +4,7 @@ description: Retrieve information about a specific vehicle model such as the siz
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -37,4 +35,4 @@ printf("The infernus is %.1fm wide, %.1fm long and %.1fm high", X, Y, Z);
 
 ## Related Functions
 
-- [GetVehicleModel](GetVehicleModel.md): Get the model id of a vehicle.
+- [GetVehicleModel](GetVehicleModel): Get the model id of a vehicle.

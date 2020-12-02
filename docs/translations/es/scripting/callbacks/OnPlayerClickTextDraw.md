@@ -4,9 +4,7 @@ description: This callback is called when a player clicks on a textdraw or cance
 tags: ["player", "textdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3e' />
+<VersionWarn name='callback' version='SA-MP 0.3e' />
 
 ## Description
 
@@ -73,5 +71,5 @@ The clickable area is defined by TextDrawTextSize. The x and y parameters passed
 
 ## Related Functions
 
-- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Called when a player click on another.
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Called when a player click on another.

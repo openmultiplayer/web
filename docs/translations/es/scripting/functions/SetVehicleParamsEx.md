@@ -4,9 +4,7 @@ description: Sets a vehicle's parameters for all players.
 tags: ["vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3c' />
+<VersionWarn version='SA-MP 0.3c' />
 
 ## Description
 
@@ -84,6 +82,6 @@ The alarm will not reset when finished, you'll need to reset it by yourself with
 
 ## Related Functions
 
-- [GetVehicleParamsEx](GetVehicleParamsEx.md): Get a vehicle's parameters.
-- [SetVehicleParamsForPlayer](SetVehicleParamsForPlayer.md): Set the parameters of a vehicle for a player.
-- [UpdateVehicleDamageStatus](UpdateVehicleDamageStatus.md): Update the vehicle damage.
+- [GetVehicleParamsEx](GetVehicleParamsEx): Get a vehicle's parameters.
+- [SetVehicleParamsForPlayer](SetVehicleParamsForPlayer): Set the parameters of a vehicle for a player.
+- [UpdateVehicleDamageStatus](UpdateVehicleDamageStatus): Update the vehicle damage.

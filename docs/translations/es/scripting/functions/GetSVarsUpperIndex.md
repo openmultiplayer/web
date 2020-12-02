@@ -35,5 +35,5 @@ printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarC
 
 ## Related Functions
 
-- [GetSVarNameAtIndex](GetSVarNameAtIndex.md): Get the server variable's name from its index.
-- [GetSVarType](GetSVarType.md): Get the type of the server variable.
+- [GetSVarNameAtIndex](GetSVarNameAtIndex): Get the server variable's name from its index.
+- [GetSVarType](GetSVarType): Get the type of the server variable.

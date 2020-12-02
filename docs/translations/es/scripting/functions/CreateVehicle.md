@@ -15,8 +15,8 @@ Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at an
 | Float:Y                                  | The Y coordinate for the vehicle.                                                                                                                |
 | Float:Z                                  | The Z coordinate for the vehicle.                                                                                                                |
 | Float:rotation                           | The facing angle for the vehicle.                                                                                                                |
-| [color1](../resources/vehiclecolorid.md) | The primary color ID.                                                                                                                            |
-| [color2](../resources/vehiclecolorid.md) | The secondary color ID.                                                                                                                          |
+| [color1](../resources/vehiclecolorid) | The primary color ID.                                                                                                                            |
+| [color2](../resources/vehiclecolorid) | The secondary color ID.                                                                                                                          |
 | respawn_delay                            | The delay until the car is respawned without a driver in seconds. Using -1 will prevent the vehicle from respawning.                             |
 | addsiren                                 | Added in 0.3.7; will not work in earlier versions. Has a default value 0. Enables the vehicle to have a siren, providing the vehicle has a horn. |
 
@@ -49,9 +49,9 @@ Trains can only be added with AddStaticVehicle and AddStaticVehicleEx.
 
 ## Related Functions
 
-- [DestroyVehicle](DestroyVehicle.md): Destroy a vehicle.
-- [AddStaticVehicle](AddStaticVehicle.md): Add a static vehicle.
-- [AddStaticVehicleEx](AddStaticVehicleEx.md): Add a static vehicle with custom respawn time.
-- [GetVehicleParamsSirenState](GetVehicleParamsSirenState.md): Check whether a vehicle's siren is on or off.
-- [OnVehicleSpawn](../callbacks/OnVehicleSpawn.md): Called when a vehicle respawns.
-- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange.md): Called when a vehicle's siren is toggled on/off.
+- [DestroyVehicle](DestroyVehicle): Destroy a vehicle.
+- [AddStaticVehicle](AddStaticVehicle): Add a static vehicle.
+- [AddStaticVehicleEx](AddStaticVehicleEx): Add a static vehicle with custom respawn time.
+- [GetVehicleParamsSirenState](GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Called when a vehicle respawns.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Called when a vehicle's siren is toggled on/off.

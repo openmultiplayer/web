@@ -4,9 +4,7 @@ description: Toggles whether a player-textdraw can be selected or not.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3e' />
+<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -53,6 +51,6 @@ PlayerTextDrawSetSelectable MUST be used BEFORE the textdraw is shown to the pla
 
 ## Related Functions
 
-- [SelectTextDraw](SelectTextDraw.md): Enables the mouse, so the player can select a textdraw
-- [CancelSelectTextDraw](CancelSelectTextDraw.md): Cancel textdraw selection with the mouse
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
+- [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
+- [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

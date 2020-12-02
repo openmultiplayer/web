@@ -4,9 +4,7 @@ description: Get the ID of the vehicle that the player is surfing (stuck to the 
 tags: ["player", "vehicle"]
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -32,5 +30,5 @@ if (surfingVehicleId == INVALID_VEHICLE_ID)
 
 ## Related Functions
 
-- [GetPlayerVehicleID](GetPlayerVehicleID.md): Get the ID of the vehicle the player is in.
-- [GetPlayerVehicleSeat](GetPlayerVehicleSeat.md): Check what seat a player is in.
+- [GetPlayerVehicleID](GetPlayerVehicleID): Get the ID of the vehicle the player is in.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.

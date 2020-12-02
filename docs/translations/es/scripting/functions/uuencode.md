@@ -4,9 +4,7 @@ description: Encode a string to an UU-decoded string.
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.LowercaseNote />
+<LowercaseNote />
 
 ## Description
 

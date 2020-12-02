@@ -4,9 +4,7 @@ description: Disables the nametag Line-Of-Sight checking so that players can see
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3a' />
+<VersionWarn version='SA-MP 0.3a' />
 
 ## Description
 
@@ -32,5 +30,5 @@ This can not be reversed until the server restarts.
 
 ## Related Functions
 
-- [ShowNameTags](ShowNameTags.md): Set nametags on or off.
-- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer.md): Show or hide a nametag for a certain player.
+- [ShowNameTags](ShowNameTags): Set nametags on or off.
+- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Show or hide a nametag for a certain player.

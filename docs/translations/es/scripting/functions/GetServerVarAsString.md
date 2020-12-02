@@ -57,5 +57,5 @@ Using this function on anything other than a string (int, bool or float) or a no
 
 ## Related Functions
 
-- [GetServerVarAsInt](GetServerVarAsInt.md): Retreive a server variable as an integer.
-- [GetServerVarAsBool](GetServerVarAsBool.md): Retreive a server variable as a boolean.
+- [GetServerVarAsInt](GetServerVarAsInt): Retreive a server variable as an integer.
+- [GetServerVarAsBool](GetServerVarAsBool): Retreive a server variable as a boolean.
