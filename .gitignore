@@ -2,3 +2,4 @@ data/
 *.exe
 node_modules
 .env
+frontend/cache

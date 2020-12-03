@@ -4,6 +4,9 @@ const withMDX = require("@next/mdx")({ extension: /\.mdx?$/ });
 
 const parseDir = require("./scripts/gentree");
 const getBlogPostPages = require("./scripts/blogposts");
+const generateCache = require("./scripts/gencache");
+
+generateCache();
 
 module.exports = withMDX({
   env: {
