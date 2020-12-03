@@ -3,18 +3,19 @@ const path = require("path");
 const matter = require("gray-matter");
 
 function getFiles(dirPath, list = []) {
-  const files = fs.readdirSync(dirPath);
+  if (!dirPath.includes("translations")) {
+    const files = fs.readdirSync(dirPath);
+    files.forEach((file) => {
+      const filePath = path.join(dirPath, file);
+      const fileStat = fs.lstatSync(filePath);
 
-  files.forEach((file) => {
-    const filePath = path.join(dirPath, file);
-    const fileStat = fs.lstatSync(filePath);
-
-    if (fileStat.isDirectory()) {
-      getFiles(filePath, list);
-    } else if (/\.md$/.test(filePath)) {
-      list.push(filePath);
-    }
-  });
+      if (fileStat.isDirectory()) {
+        getFiles(filePath, list);
+      } else if (/\.md$/.test(filePath)) {
+        list.push(filePath);
+      }
+    });
+  }
 
   return list;
 }
@@ -27,6 +28,7 @@ function generateCache() {
     const content = fs.readFileSync(file, "utf8");
     const url = file
       .replace("..\\", "")
+      .replace("docs", "")
       .replace(/(?:\\[\\]|[\\]+)+/g, "/")
       .replace(".md", "");
 
@@ -37,6 +39,12 @@ function generateCache() {
     });
   });
 
+  cacheData.sort(function (a, b) {
+    const titleA = a.title.toLowerCase();
+    const titleB = b.title.toLowerCase();
+    return titleA < titleB ? -1 : titleA > titleB ? 1 : 0;
+  });
+
   try {
     fs.readdirSync("cache");
   } catch (e) {
@@ -45,10 +53,10 @@ function generateCache() {
 
   fs.writeFile(
     "cache/data.js",
-    `export default ${JSON.stringify(cacheData)};`,
+    `module.exports = ${JSON.stringify(cacheData)};`,
     function (err) {
       if (err) return console.log(err);
-      console.log("cache for documentation pages created.");
+      console.log("cache data for documentation pages has been created.");
     }
   );
 }
