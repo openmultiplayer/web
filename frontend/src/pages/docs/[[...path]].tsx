@@ -114,7 +114,7 @@ export async function getStaticPaths() {
     .map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v));
 
   return {
-    paths: paths,
+    paths: [],
     fallback: true,
   };
 }
