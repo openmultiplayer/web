@@ -27,8 +27,8 @@ function generateCache() {
     const id = path.parse(file).base.replace(/\.md$/, "");
     const content = fs.readFileSync(file, "utf8");
     const url = file
-      .replace("..\\", "")
       .replace(/(?:\\[\\]|[\\]+)+/g, "/")
+      .replace("../", "")
       .replace("docs/", "")
       .replace(".md", "");
 
