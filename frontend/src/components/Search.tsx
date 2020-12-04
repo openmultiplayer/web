@@ -47,7 +47,7 @@ const Search = () => {
           className="search"
           onChange={onChange}
           onFocus={onFocus}
-          placeholder="Search posts"
+          placeholder="Search..."
           type="text"
           value={query}
         />
