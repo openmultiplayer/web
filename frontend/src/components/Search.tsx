@@ -81,24 +81,25 @@ const Search = () => {
           list-style: none;
           overflow-x: hidden;
           overflow-y: scroll;
-          margin: 9px 0 0;
+          margin: 0px 0 0;
           padding: 0;
-          max-height: 23rem;
+          max-height: 31rem;
           position: absolute;
-          top: 100%;
+          border: 0px solid rgba(0, 0, 0, 0.3);
+          border-bottom-width: 1px;
           left: 0;
           right: 0;
         }
 
         .result {
-          background: #0070f3;
-          color: #eee;
-          margin: 0 0 9px;
+          background: #fff;
           padding: 18px;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-top-width: 0px;
         }
 
-        .result a {
-          color: #eee;
+        .result:hover {
+          background: #f0f0f0;
         }
       `}</style>
     </>
