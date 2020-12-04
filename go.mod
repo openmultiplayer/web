@@ -18,6 +18,7 @@ require (
 	github.com/gorilla/securecookie v1.1.1
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
+	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pkg/errors v0.9.1
 	github.com/prisma/prisma-client-go v0.0.10-0.20201008164449-6ec144dd5855
 	github.com/russross/blackfriday v1.6.0
@@ -25,6 +26,7 @@ require (
 	github.com/sendgrid/sendgrid-go v3.7.2+incompatible
 	github.com/streadway/amqp v1.0.0
 	github.com/stretchr/testify v1.6.1
+	github.com/thanhpk/randstr v1.0.4
 	go.uber.org/zap v1.16.0
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102 // indirect

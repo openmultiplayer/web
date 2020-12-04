@@ -2,6 +2,7 @@ package github
 
 import (
 	"encoding/json"
+	"errors"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -43,7 +44,19 @@ func (s *service) callback(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	user, err := s.oa2.Login(r.Context(), r.Form["code"][0])
+	state := r.Form["state"][0]
+	if state == "" {
+		web.StatusBadRequest(w, errors.New("missing state nonce in request"))
+		return
+	}
+
+	code := r.Form["code"][0]
+	if state == "" {
+		web.StatusBadRequest(w, errors.New("missing oauth2 code in request"))
+		return
+	}
+
+	user, err := s.oa2.Login(r.Context(), state, code)
 	if err != nil {
 		web.StatusBadRequest(w, err)
 		return

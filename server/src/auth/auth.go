@@ -26,7 +26,7 @@ type Authentication struct {
 // returns a User object to the caller to be encoded into a cookie.
 type OAuthProvider interface {
 	Link() string
-	Login(ctx context.Context, code string) (*db.UserModel, error)
+	Login(ctx context.Context, state, code string) (*db.UserModel, error)
 }
 
 // New initialises a new authentication service
