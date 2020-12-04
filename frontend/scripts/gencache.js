@@ -28,8 +28,8 @@ function generateCache() {
     const content = fs.readFileSync(file, "utf8");
     const url = file
       .replace("..\\", "")
-      .replace("docs", "")
       .replace(/(?:\\[\\]|[\\]+)+/g, "/")
+      .replace("docs/", "")
       .replace(".md", "");
 
     cacheData.push({
