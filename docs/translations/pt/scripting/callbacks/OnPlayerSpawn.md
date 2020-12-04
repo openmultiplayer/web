@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Descrição
 
-Este evento é chamado quando um spawna.(após chamada da função SpawnPlayer)
+Este evento é chamado quando um spawna. (Após chamada da função SpawnPlayer)
 
 | Nome     | Descrição                        |
 | -------- | ---------------------------------- |
@@ -28,7 +28,7 @@ public OnPlayerSpawn(playerid)
     new PlayerName[MAX_PLAYER_NAME],
     string[40];
     GetPlayerName(playerid, PlayerName, sizeof(PlayerName));
-    format(string, sizeof(string), "%s has spawned successfully.", PlayerName);
+    format(string, sizeof(string), "%s foi spawnado com sucesso.", PlayerName);
     SendClientMessageToAll(0xFFFFFFFF, string);
     return 1;
 }
