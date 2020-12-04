@@ -28,26 +28,33 @@ const Page = (props: Props) => {
   const content = props.source && hydrate(props.source, { components });
 
   return (
-    <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
-      <DocsSidebar />
-      <section className="mw7 pa3 flex-auto">
-        {props.fallback && (
-          <Admonition type="warning" title="Not Translated">
-            <p>
-              This page has not been translated into the language that your
-              browser requested. The English content is being shown as a
-              fallback.
-            </p>
-            <p>
-              If you want to contribute a translation for this page then please
-              click <a href="https://github.com/openmultiplayer/web">here</a>.
-            </p>
-          </Admonition>
-        )}
-        <h1>{props?.data?.title}</h1>
-        {content}
-      </section>
-      <nav>{/* TODO: Table of contents */}</nav>
+    <div className="flex flex-column flex-auto items-center">
+      <div className="flex flex-row-ns justify-center-ns">
+        <div className="flex flex-column flex-grow">
+          <Search />
+          <DocsSidebar />
+        </div>
+
+        <section className="mw7 pa3 flex-auto">
+          {props.fallback && (
+            <Admonition type="warning" title="Not Translated">
+              <p>
+                This page has not been translated into the language that your
+                browser requested. The English content is being shown as a
+                fallback.
+              </p>
+              <p>
+                If you want to contribute a translation for this page then
+                please click{" "}
+                <a href="https://github.com/openmultiplayer/web">here</a>.
+              </p>
+            </Admonition>
+          )}
+          <h1>{props?.data?.title}</h1>
+          {content}
+        </section>
+        <nav>{/* TODO: Table of contents */}</nav>
+      </div>
     </div>
   );
 };
@@ -65,6 +72,7 @@ import glob from "glob";
 import admonitions from "remark-admonitions";
 
 import { readLocaleDocs } from "src/utils/content";
+import Search from "src/components/Search";
 
 // Remark plugin for colours.
 // Usage:
