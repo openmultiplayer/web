@@ -1,56 +1,54 @@
 ---
-title: OnVehicleRespray
-description: Essa callback é chamada quando um jogador sai de uma Garagem de Personalização, mesmo sem trocar cores.
+title: OnVehicleSirenStateChange
+description: Essa callback é chamada quando a sirene de um carro é ligada/desligada.
 tags: ["vehicle"]
 ---
-
+ 
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
+ 
 ## Descrição
-
-Essa callback é chamada quando um jogador sai de uma Garagem de Personalização, mesmo sem trocar cores. Cuidado, Oficinas de Pintura não chamam essa callback nativamente.
-
-| Nome      | Descrição                                                    |
-| --------- | ------------------------------------------------------------ |
-| playerid  | ID do jogador que está dirigindo o veículo.                  |
-| vehicleid | ID do veículo que foi repintado.                             |
-| color1    | Nova cor primária pintada no veículo.                        | 
-| color2    | Nova cor secundária pintada no veículo.                      | 
-
+ 
+Essa callback é chamada quando a sirene de um carro é ligada/desligada.
+ 
+| Nome      | Descrição                                                                      |
+| --------- | ------------------------------------------------------------------------------ |
+| playerid  | ID do jogador que ligou/desligou a sirene (motorista).                         |
+| vehicleid | ID do veículo que teve a sirene ligada/desligada.                              |
+| newstate  | Retorna o novo estado da sirene após a troca. 0 para desligada, 1 para ligada. |
+ 
 ## Retornos
-
-Sempre é chamada primeiro no Gamemode então retornar 0 lá bloqueia Filterscripts de chamarem ela.
-
+ 
+0 - Vai prevenir que outros Filterscripts chamem essa callback.
+ 
+1 - Indica que essa callback vai ser passada para o Gamemode em seguida.
+ 
+Sempre é chamada primeiro em Filterscripts.
+ 
 ## Exemplos
-
+ 
 ```c
-public OnVehicleRespray(playerid, vehicleid, color1, color2)
+public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 {
-    new string[48];
-    format(string, sizeof(string), "Você repintou seu veículo ID %d para as cores %d e %d!", vehicleid, color1, color2);
-    SendClientMessage(playerid, COLOR_GREEN, string);
+    if (newstate)
+    {
+        GameTextForPlayer(playerid, "~W~Sirene ~G~ligada", 1000, 3);
+    }
+    else
+    {
+        GameTextForPlayer(playerid, "~W~Sirene ~r~desligada", 1000, 3);
+    }
     return 1;
 }
 ```
-
+ 
 ## Notas
-
+ 
 :::tip
-
-Essa callback não é chamada ao usar ChangeVehicleColor. Estranhamente, não é chamada também ao ir em uma Oficina de Pintura (só Garagens de Personalização).
-
-Código para conserto: http://pastebin.com/G81da7N1
-
+ 
+Essa callback **só é chamada** quando a sirene é ligada/desligada, **NÃO** quando a sirene alternativa está sendo usada (segurando a buzina).
+ 
 :::
-
-:::warning
-
-Bug(s) Notados: Visualizar certos componentes dentro da Garagem de Personalização podem chamar essa callback sem querer.
-
-:::
-
+ 
 ## Funções Relacionadas
-
-- [ChangeVehicleColor](../functions/ChangeVehicleColor): Mudar a cor de um veículo.
-- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Mudar o trabalho de pintura de um veículo.
-- [OnVehiclePaintjob](OnVehiclePaintjob): Chamada quando o trabalho de pintura de veículo muda.
-- [OnVehicleMod](OnVehicleMod): Chamada quando o componente de um veículo é modificado.
-- [OnEnterExitModShop](OnEnterExitModShop): Chamada quando um veículo entra ou sai de uma Garagem de Modificação.
+ 
+- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): Verifica se a sirene de um veículo está ou não ligada.
