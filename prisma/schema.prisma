@@ -10,20 +10,30 @@ generator client {
   binaryTargets = ["native"]
 }
 
+enum AuthMethod {
+  GITHUB
+}
+
 model User {
-  id      String   @id @default(uuid())
-  email   String   @unique
-  name    String
-  pass    String
-  admin   Boolean  @default(false)
+  id         String     @id @default(uuid())
+  authID     String     @unique
+  authMethod AuthMethod
+  github     GitHub?
+
+  name  String
+  admin Boolean @default(false)
+
   servers Server[]
 
-  // Account verification key - emailed to user
-  verify_key String @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
 
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  verified_at DateTime? // only set when account is verified
+model GitHub {
+  userId String @id
+  user   User   @relation(fields: [userId], references: [id])
+
+  account String
 }
 
 model Server {
