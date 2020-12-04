@@ -1,6 +1,6 @@
 ---
 title: OnPlayerGiveDamageActor
-description: Esta callback é chamada quando o jogador realiza dano a um ator.
+description: Esta callback é chamada quando o jogador causa dano a um ator.
 tags: ["player"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Esta callback é chamada quando o jogador realiza dano a um ator.
+Esta callback é chamada quando o jogador causa dano a um ator.
 
 | Nome            | Descrição                                                 |
 | --------------- | --------------------------------------------------------- |
