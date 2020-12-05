@@ -63,4 +63,5 @@ func (s *service) callback(w http.ResponseWriter, r *http.Request) {
 	}
 
 	s.auth.EncodeAuthCookie(w, *user)
+	json.NewEncoder(w).Encode(user) //nolint:errcheck
 }
