@@ -20,17 +20,17 @@ Le fichier créer _doit_ avoir l'extension `.md` et contenir du Markdown.
 
 Pour plus d'informations sur l'utilisation de Markdown, référez vous à [ce guide](https://guides.github.com/features/mastering-markdown/).
 
-Dès que vous avez terminé votre rédaction, cliquez sur _"Propose new file" et un _Pull Request_ s'enverra pour un review.
+Dès que vous avez terminé votre rédaction, cliquez sur _"Propose new file"_ et un _Pull Request_ s'enverra pour un review.
 
 ### Git
 
-Si vous voulez utiliser git, il faut que vous cloniez le wiki : :
+Si vous voulez utiliser git, il faut que vous cloniez le wiki :
 
 ```sh
 git clone https://github.com/openmultiplayer/web/tree/master/docs.git
 ```
 
-Ouvrez-le dans votre éditeur de texte. D'aucuns recommanderaient Visual Studio, qui semble être l'outils le plus apprécié des développeurs tant il est pratique :
+Ouvrez-le dans votre éditeur de texte. D'aucuns recommanderaient Visual Studio, qui semble être l'outil le plus apprécié des développeurs tant il est pratique :
 
 ![Visual Studio Code markdown preview](/images/contributing/vscode.png)
 

@@ -6,7 +6,7 @@ tags: [OnObjectMoved, SetObjectPos, objectid, object, objet, mouvement, moved, I
 
 ## Paramètres
 
-This callback is called when an object is moved after MoveObject (when it stops moving).
+Cette callback est appelée quand un objet s'est arrêté de bouger après un MoveObject.
 
 | Nom            | Description                                |
 | -------------- | ------------------------------------------ |
