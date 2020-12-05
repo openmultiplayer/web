@@ -81,6 +81,8 @@ func (p *Provider) Login(ctx context.Context, state, code string) (*db.UserModel
 	// Attempt to find a user via their associated GitHub profile
 	if usergh, err := p.db.GitHub.FindOne(
 		db.GitHub.Email.Equals(email),
+	).With(
+		db.GitHub.User.Fetch(),
 	).Exec(ctx); err == nil {
 		u := usergh.User()
 		return &u, err
