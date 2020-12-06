@@ -1,4 +1,4 @@
-package discord
+package github
 
 import (
 	"encoding/json"
@@ -7,16 +7,16 @@ import (
 
 	"github.com/go-chi/chi"
 
-	"github.com/openmultiplayer/web/server/src/auth"
+	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
 type service struct {
-	auth *auth.Authentication
-	oa2  auth.OAuthProvider
+	auth *authentication.State
+	oa2  authentication.OAuthProvider
 }
 
-func New(a *auth.Authentication, oa2 auth.OAuthProvider) *chi.Mux {
+func New(a *authentication.State, oa2 authentication.OAuthProvider) *chi.Mux {
 	rtr := chi.NewRouter()
 	svc := service{
 		auth: a,

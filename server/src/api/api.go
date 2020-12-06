@@ -8,11 +8,11 @@ import (
 	"github.com/go-chi/cors"
 	"go.uber.org/zap"
 
-	"github.com/openmultiplayer/web/server/src/api/authentication"
+	"github.com/openmultiplayer/web/server/src/api/auth"
 	"github.com/openmultiplayer/web/server/src/api/docs"
 	"github.com/openmultiplayer/web/server/src/api/legacy"
 	"github.com/openmultiplayer/web/server/src/api/servers"
-	"github.com/openmultiplayer/web/server/src/auth"
+	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/serverdb"
@@ -22,12 +22,12 @@ import (
 // TODO: sort this mess out...
 func New(
 	ctx context.Context,
-	auther *auth.Authentication,
+	auther *authentication.State,
 	storage serverdb.Storer,
 	sampqueryer queryer.Queryer,
 	docsindex docsindex.Index,
-	oaGitHub auth.OAuthProvider,
-	oaDiscord auth.OAuthProvider,
+	oaGitHub authentication.OAuthProvider,
+	oaDiscord authentication.OAuthProvider,
 ) *chi.Mux {
 	router := chi.NewRouter()
 	router.Use(
@@ -48,7 +48,7 @@ func New(
 	router.Mount("/", legacy.New(ctx, storage, sampqueryer))
 	router.Mount("/server", servers.New(ctx, storage, sampqueryer))
 	router.Mount("/docs", docs.New(app.ctx, docsindex))
-	router.Mount("/auth", authentication.New(
+	router.Mount("/auth", auth.New(
 		auther,
 		oaGitHub,
 		oaDiscord,

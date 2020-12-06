@@ -12,7 +12,7 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/server/src/api"
-	"github.com/openmultiplayer/web/server/src/auth"
+	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/mailer"
@@ -72,7 +72,7 @@ func Initialise(root context.Context) (app *App, err error) {
 
 	mailreg.Init("emails") // assume the binary is exected from the repo root
 	mailworker.Init(queueEmail, ps, &mailer.Mock{})
-	auther := auth.New(app.prisma, app.config.HashKey, app.config.BlockKey)
+	auth := authentication.New(app.prisma, app.config.HashKey, app.config.BlockKey)
 
 	storage := serverdb.NewPrisma(app.prisma)
 	sampqueryer := &queryer.SAMPQueryer{}
@@ -82,11 +82,11 @@ func Initialise(root context.Context) (app *App, err error) {
 		return nil, errors.Wrap(err, "failed to create docs index")
 	}
 
-	oaGitHub := auth.NewGitHubProvider(app.prisma, app.config.GithubClientID, app.config.GithubClientSecret)
-	oaDiscord := auth.NewDiscordProvider(app.prisma, app.config.DiscordClientID, app.config.DiscordClientSecret)
+	oaGitHub := authentication.NewGitHubProvider(app.prisma, app.config.GithubClientID, app.config.GithubClientSecret)
+	oaDiscord := authentication.NewDiscordProvider(app.prisma, app.config.DiscordClientID, app.config.DiscordClientSecret)
 
 	app.server = http.Server{
-		Handler: api.New(app.ctx, auther, storage, sampqueryer, idx, oaGitHub, oaDiscord),
+		Handler: api.New(app.ctx, auth, storage, sampqueryer, idx, oaGitHub, oaDiscord),
 		Addr:    "0.0.0.0:80",
 		BaseContext: func(net.Listener) context.Context {
 			return app.ctx

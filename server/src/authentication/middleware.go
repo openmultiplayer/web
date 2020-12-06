@@ -1,4 +1,4 @@
-package auth
+package authentication
 
 import (
 	"context"
@@ -28,7 +28,7 @@ var contextKey = struct{}{}
 const secureCookieName = "openmultiplayer-session"
 
 // WithAuthentication provides middleware for enforcing authentication
-func (a *Authentication) WithAuthentication(next http.Handler) http.Handler {
+func (a *State) WithAuthentication(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		auth := Info{}
 
@@ -53,7 +53,7 @@ func (a *Authentication) WithAuthentication(next http.Handler) http.Handler {
 	})
 }
 
-func (a *Authentication) doCookieAuth(r *http.Request, auth *Info) bool {
+func (a *State) doCookieAuth(r *http.Request, auth *Info) bool {
 	cookie, err := r.Cookie(secureCookieName)
 	if err != nil {
 		return false

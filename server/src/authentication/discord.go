@@ -1,4 +1,4 @@
-package auth
+package authentication
 
 import (
 	"bytes"
@@ -46,7 +46,7 @@ func NewDiscordProvider(db *db.PrismaClient, clientID, clientSecret string) *Dis
 
 func (p *DiscordProvider) Link() string {
 	state := randstr.String(16)
-	//nolint:errcheck because the key is random, it cannot collide
+	//nolint:errcheck // because the key is random, it cannot collide
 	p.cache.Add(state, struct{}{}, 10*time.Minute)
 	return p.oaconf.AuthCodeURL(state, oauth2.AccessTypeOffline)
 }

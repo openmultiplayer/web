@@ -1,4 +1,4 @@
-package auth
+package authentication
 
 import (
 	"context"
@@ -43,7 +43,7 @@ func NewGitHubProvider(db *db.PrismaClient, clientID, clientSecret string) *GitH
 
 func (p *GitHubProvider) Link() string {
 	state := randstr.String(16)
-	//nolint:errcheck because the key is random, it cannot collide
+	//nolint:errcheck // because the key is random, it cannot collide
 	p.cache.Add(state, struct{}{}, 10*time.Minute)
 	return p.oaconf.AuthCodeURL(state, oauth2.AccessTypeOffline)
 }

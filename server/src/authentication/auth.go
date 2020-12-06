@@ -1,4 +1,4 @@
-package auth
+package authentication
 
 import (
 	"context"
@@ -11,8 +11,8 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-// Authentication stores state for performing authentication
-type Authentication struct {
+// State stores state for performing authentication
+type State struct {
 	db *db.PrismaClient
 	sc *securecookie.SecureCookie
 }
@@ -34,8 +34,8 @@ func New(
 	db *db.PrismaClient,
 	hashKey,
 	blockKey []byte,
-) *Authentication {
-	a := &Authentication{
+) *State {
+	a := &State{
 		db: db,
 		sc: securecookie.New(hashKey, blockKey),
 	}
@@ -44,7 +44,7 @@ func New(
 }
 
 // EncodeAuthCookie writes the secure user auth cookie to the response writer.
-func (a *Authentication) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
+func (a *State) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
 	encoded, err := a.sc.Encode(secureCookieName, Cookie{
 		UserID:  user.ID,
 		Created: time.Now(),

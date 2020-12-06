@@ -1,4 +1,4 @@
-package auth
+package authentication
 
 import (
 	"context"
@@ -15,7 +15,7 @@ var (
 // NOTE: Password based authentication is removed in favour of OAuth for now.
 // It might be added again in future, hence all of this is commented out.
 
-func (a *Authentication) Register(ctx context.Context, name, identifier, authorizer string) (*db.UserModel, error) {
+func (a *State) Register(ctx context.Context, name, identifier, authorizer string) (*db.UserModel, error) {
 	// hash, err := bcrypt.GenerateFromPassword([]byte(authorizer), bcrypt.DefaultCost)
 	// if err != nil {
 	// 	return nil, err
@@ -53,7 +53,7 @@ func (a *Authentication) Register(ctx context.Context, name, identifier, authori
 	return nil, errors.New("Not implemented")
 }
 
-func (a *Authentication) Login(ctx context.Context, identifier, authorizer string) (*db.UserModel, error) {
+func (a *State) Login(ctx context.Context, identifier, authorizer string) (*db.UserModel, error) {
 	// user, err := a.db.User.FindOne(db.User.Email.Equals(identifier)).Exec(ctx)
 	// if err != nil {
 	// 	if err == db.ErrNotFound {
@@ -69,7 +69,7 @@ func (a *Authentication) Login(ctx context.Context, identifier, authorizer strin
 	return nil, errors.New("Not implemented")
 }
 
-func (a *Authentication) ChangePassword(ctx context.Context, userid, prev, new string) error {
+func (a *State) ChangePassword(ctx context.Context, userid, prev, new string) error {
 	// nextRaw, err := bcrypt.GenerateFromPassword([]byte(new), bcrypt.DefaultCost)
 	// if err != nil {
 	// 	return err
@@ -100,7 +100,7 @@ func (a *Authentication) ChangePassword(ctx context.Context, userid, prev, new s
 	return errors.New("Not implemented")
 }
 
-func (a *Authentication) ReRequestVerification(ctx context.Context, identifier string) error {
+func (a *State) ReRequestVerification(ctx context.Context, identifier string) error {
 	// key, err := uuid.NewV4()
 	// if err != nil {
 	// 	return err
@@ -133,7 +133,7 @@ func (a *Authentication) ReRequestVerification(ctx context.Context, identifier s
 	return errors.New("Not implemented")
 }
 
-func (a *Authentication) ValidateEmailVerificationKey(ctx context.Context, key string) (bool, error) {
+func (a *State) ValidateEmailVerificationKey(ctx context.Context, key string) (bool, error) {
 	// _, err := a.db.User.
 	// 	FindOne(db.User.VerifyKey.Equals(key)).
 	// 	Update(db.User.VerifiedAt.Set(time.Now())).
