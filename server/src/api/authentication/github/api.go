@@ -34,7 +34,7 @@ type linkPayload struct {
 }
 
 func (s *service) link(w http.ResponseWriter, r *http.Request) {
-	json.NewEncoder(w).Encode(linkPayload{URL: s.oa2.Link()})
+	json.NewEncoder(w).Encode(linkPayload{URL: s.oa2.Link()}) //nolint:errcheck
 }
 
 func (s *service) callback(w http.ResponseWriter, r *http.Request) {
