@@ -15,21 +15,21 @@ import (
 	"github.com/openmultiplayer/web/server/src/db"
 )
 
-var _ OAuthProvider = &Provider{}
+var _ OAuthProvider = &GitHubProvider{}
 
 var (
 	ErrStateMismatch = errors.New("state nonce mismatch")
 	ErrOAuthNoEmail  = errors.New("missing email address on OAuth provider account")
 )
 
-type Provider struct {
+type GitHubProvider struct {
 	db     *db.PrismaClient
 	cache  *cache.Cache
 	oaconf *oauth2.Config
 }
 
-func NewGitHubProvider(db *db.PrismaClient, clientID, clientSecret string) *Provider {
-	return &Provider{
+func NewGitHubProvider(db *db.PrismaClient, clientID, clientSecret string) *GitHubProvider {
+	return &GitHubProvider{
 		db:    db,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
@@ -41,7 +41,7 @@ func NewGitHubProvider(db *db.PrismaClient, clientID, clientSecret string) *Prov
 	}
 }
 
-func (p *Provider) Link() string {
+func (p *GitHubProvider) Link() string {
 	state := randstr.String(16)
 	//nolint:errcheck because the key is random, it cannot collide
 	p.cache.Add(state, struct{}{}, 10*time.Minute)
@@ -52,7 +52,7 @@ func (p *Provider) Link() string {
 // authenticated against GitHub. `code` is the query parameter passed back by
 // the provider. It is exchanged for a token which is used to look up the user
 // in our DB or create their account if it doesn't exist.
-func (p *Provider) Login(ctx context.Context, state, code string) (*db.UserModel, error) {
+func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.UserModel, error) {
 	// check if the state is one this API sent out.
 	if _, ok := p.cache.Get(state); !ok {
 		return nil, ErrStateMismatch

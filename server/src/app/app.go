@@ -34,12 +34,14 @@ import (
 
 // Config represents environment variable configuration parameters
 type Config struct {
-	ListenAddr         string `default:"0.0.0.0:8080" split_words:"true"`
-	AmqpAddress        string `default:"amqp://rabbit:5672" split_words:"true"`
-	HashKey            []byte `required:"true" split_words:"true"`
-	BlockKey           []byte `required:"true" split_words:"true"`
-	GithubClientID     string `required:"true" split_words:"true"`
-	GithubClientSecret string `required:"true" split_words:"true"`
+	ListenAddr          string `default:"0.0.0.0:8080" split_words:"true"`
+	AmqpAddress         string `default:"amqp://rabbit:5672" split_words:"true"`
+	HashKey             []byte `required:"true" split_words:"true"`
+	BlockKey            []byte `required:"true" split_words:"true"`
+	GithubClientID      string `required:"true" split_words:"true"`
+	GithubClientSecret  string `required:"true" split_words:"true"`
+	DiscordClientID     string `required:"true" split_words:"true"`
+	DiscordClientSecret string `required:"true" split_words:"true"`
 }
 
 // App stores root application state
@@ -108,6 +110,7 @@ func Initialise(root context.Context) (app *App, err error) {
 	router.Mount("/auth", authentication.New(
 		auther,
 		auth.NewGitHubProvider(app.prisma, app.config.GithubClientID, app.config.GithubClientSecret),
+		auth.NewDiscordProvider(app.prisma, app.config.DiscordClientID, app.config.DiscordClientSecret),
 	))
 
 	zap.L().Debug("constructed router", zap.Any("router", router))

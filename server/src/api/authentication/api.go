@@ -3,6 +3,7 @@ package authentication
 import (
 	"github.com/go-chi/chi"
 
+	"github.com/openmultiplayer/web/server/src/api/authentication/discord"
 	"github.com/openmultiplayer/web/server/src/api/authentication/github"
 	"github.com/openmultiplayer/web/server/src/auth"
 )
@@ -12,7 +13,7 @@ type service struct {
 }
 
 // Routes provides service routes
-func New(a *auth.Authentication, oa2 auth.OAuthProvider) *chi.Mux {
+func New(a *auth.Authentication, githuboa auth.OAuthProvider, discordoa auth.OAuthProvider) *chi.Mux {
 	rtr := chi.NewRouter()
 	// svc := service{
 	// 	auth: a,
@@ -28,7 +29,8 @@ func New(a *auth.Authentication, oa2 auth.OAuthProvider) *chi.Mux {
 	// rtr.Mount("/token/", token.New(a))
 
 	// TODO: Support for more OAuth providers maybe with a router interface
-	rtr.Mount("/github", github.New(a, oa2))
+	rtr.Mount("/github", github.New(a, githuboa))
+	rtr.Mount("/discord", discord.New(a, discordoa))
 
 	return rtr
 }
