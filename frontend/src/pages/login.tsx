@@ -1,3 +1,5 @@
+import { withoutAuth } from "src/auth/hoc";
+
 const Page = () => (
   <section className="measure center ma2">
     <h1>Login</h1>
@@ -23,4 +25,4 @@ const Page = () => (
   </section>
 );
 
-export default Page;
+export default withoutAuth(Page);

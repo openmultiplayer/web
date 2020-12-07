@@ -1,7 +1,7 @@
 import { useIsAuthenticated } from "./hooks";
 import withConditionalRedirect from "./withConditionalRedirect";
 
-export function withAuth(WrappedComponent: JSX.Element, location = "/signin") {
+export function withAuth(WrappedComponent, location = "/login") {
   return withConditionalRedirect({
     WrappedComponent,
     location,
@@ -14,7 +14,7 @@ export function withAuth(WrappedComponent: JSX.Element, location = "/signin") {
   });
 }
 
-export function withoutAuth(WrappedComponent: JSX.Element, location = "/home") {
+export function withoutAuth(WrappedComponent, location = "/dashboard") {
   return withConditionalRedirect({
     WrappedComponent,
     location,
