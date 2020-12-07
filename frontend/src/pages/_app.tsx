@@ -109,8 +109,6 @@ MyApp.getInitialProps = async (
   const appProps = await App.getInitialProps(appContext);
   const authenticated = isAuthenticatedFromRequest(appContext.ctx.req);
 
-  console.log("initial", { authenticated });
-
   return {
     ...appProps,
     authenticated,
@@ -123,7 +121,7 @@ const isAuthenticatedFromRequest = (request?: IncomingMessage): boolean => {
   }
 
   const c = cookie.parse(request.headers.cookie || "");
-  console.log(c);
+
   return !!c["openmultiplayer-session"];
 };
 
