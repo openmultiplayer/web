@@ -71,6 +71,21 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     </div>
 
     <Footer />
+
+    <style jsx global>{`
+      html,
+      body,
+      #__next {
+        height: 100%;
+      }
+      #__next {
+        display: flex;
+        flex-direction: column;
+      }
+      #container {
+        flex: 1 0 auto;
+      }
+    `}</style>
   </>
 );
 
