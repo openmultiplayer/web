@@ -5,15 +5,19 @@ import (
 
 	"github.com/go-chi/chi"
 
-	"github.com/openmultiplayer/web/server/src/auth"
+	"github.com/openmultiplayer/web/server/src/authentication"
 )
 
 type service struct {
-	auth *auth.Authentication
+	auth *authentication.State
 }
 
 // Routes provides service routes
-func New(a *auth.Authentication, githuboa auth.OAuthProvider, discordoa auth.OAuthProvider) *chi.Mux {
+func New(
+	a *authentication.State,
+	githuboa authentication.OAuthProvider,
+	discordoa authentication.OAuthProvider,
+) *chi.Mux {
 	rtr := chi.NewRouter()
 	svc := service{
 		auth: a,
