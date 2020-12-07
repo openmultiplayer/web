@@ -86,7 +86,7 @@ func Initialise(root context.Context) (app *App, err error) {
 	oaDiscord := authentication.NewDiscordProvider(app.prisma, app.config.DiscordClientID, app.config.DiscordClientSecret)
 
 	app.server = http.Server{
-		Handler: api.New(app.ctx, auth, storage, sampqueryer, idx, oaGitHub, oaDiscord),
+		Handler: api.New(app.ctx, auth, app.prisma, storage, sampqueryer, idx, oaGitHub, oaDiscord),
 		Addr:    "0.0.0.0:80",
 		BaseContext: func(net.Listener) context.Context {
 			return app.ctx

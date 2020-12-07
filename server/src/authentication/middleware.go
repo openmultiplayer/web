@@ -5,7 +5,10 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/pkg/errors"
 	"go.uber.org/zap"
+
+	"github.com/openmultiplayer/web/server/src/web"
 )
 
 // Info represents data that is extracted from the path, validated
@@ -67,34 +70,20 @@ func (a *State) doCookieAuth(r *http.Request, auth *Info) bool {
 	return true
 }
 
-// func (a *Authentication) doTokenAuth(r *http.Request, auth *Info) bool {
-// 	ah := r.Header.Get("Authorization")
-// 	if ah == "" {
-// 		return false
-// 	}
-
-// 	split := strings.SplitN(ah, " ", 2)
-// 	if len(split) != 2 {
-// 		zap.L().Error("invalid authorization header format")
-// 		return false
-// 	}
-
-// 	token, err := a.db.AccessToken.FindOne(db.AccessToken.ID.Equals(split[1])).Exec(r.Context())
-// 	if err != nil {
-// 		if err != db.ErrNotFound {
-// 			zap.L().Error("failed to lookup auth token", zap.Error(err))
-// 		}
-// 		return false
-// 	}
-
-// 	if disabledAt, disabled := token.DisabledAt(); disabled && disabledAt.After(time.Now()) {
-// 		zap.L().Debug("failed to lookup auth token", zap.Error(err))
-// 		return false
-// 	}
-
-// 	auth.Cookie = Cookie{
-// 		UserID:  token.UserID,
-// 		Created: token.CreatedAt,
-// 	}
-// 	return true
-// }
+func MustBeAuthenticated(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		auth, ok := GetAuthenticationInfo(w, r)
+		if !ok {
+			return
+		}
+		if !auth.Authenticated {
+			web.StatusUnauthorized(w, web.WithSuggestion(
+				errors.New("user not authenticated"),
+				"The request did not have any authentication information with it.",
+				"Ensure you are logged in, try logging out and back in again. If issues persist, please contact us.",
+			))
+			return
+		}
+		next.ServeHTTP(w, r)
+	})
+}

@@ -12,7 +12,9 @@ import (
 	"github.com/openmultiplayer/web/server/src/api/docs"
 	"github.com/openmultiplayer/web/server/src/api/legacy"
 	"github.com/openmultiplayer/web/server/src/api/servers"
+	"github.com/openmultiplayer/web/server/src/api/users"
 	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/serverdb"
@@ -23,6 +25,7 @@ import (
 func New(
 	ctx context.Context,
 	auther *authentication.State,
+	db *db.PrismaClient,
 	storage serverdb.Storer,
 	sampqueryer queryer.Queryer,
 	docsindex docsindex.Index,
@@ -53,6 +56,7 @@ func New(
 		oaGitHub,
 		oaDiscord,
 	))
+	router.Mount("/users", users.New(ctx, auther, db))
 
 	zap.L().Debug("constructed router", zap.Any("router", router))
 

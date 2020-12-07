@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/gorilla/securecookie"
+	"github.com/pkg/errors"
 
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/web"
@@ -61,4 +62,21 @@ func (a *State) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
 		Secure:   false,
 		HttpOnly: true,
 	})
+}
+
+// GetAuthenticationInfo extracts auth info from a request context and, if not
+// present, will write a 500 error to the response and return not-ok. In this
+// failure case, the request should be immediately terminated.
+func GetAuthenticationInfo(
+	w http.ResponseWriter,
+	r *http.Request,
+) (*Info, bool) {
+	if auth, ok := r.Context().Value(contextKey).(Info); ok {
+		return &auth, true
+	}
+	web.StatusInternalServerError(w, web.WithSuggestion(
+		errors.New("failed to extract auth context from request"),
+		"Could not read session data from cookies.",
+		"Try clearing your cookies and logging in to your account again."))
+	return nil, false
 }
