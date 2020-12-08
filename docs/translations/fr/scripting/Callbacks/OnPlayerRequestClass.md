@@ -8,7 +8,7 @@ tags: ["player"]
 
 Appelée lorsqu'un joueur change de classe dans la sélection de classe.
 
-| Name           | Description                                                                                                 |
+| Nom            | Description                                                                                                 |
 | -------------- | ----------------------------------------------------------------------------------------------------------- |
 | `int` playerid | L'ID du joueur qui change de classe                                                                         |
 | `int` classid  | La classe que visionne actuellement le joueur (retournée par [AddPlayerClass](../functions/AddPlayerClass). |
