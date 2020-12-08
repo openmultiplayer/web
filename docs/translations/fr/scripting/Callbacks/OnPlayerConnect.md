@@ -39,6 +39,6 @@ public OnPlayerConnect(playerid)
 
 <TipNPCCallbacks />
 
-## Fonctions connexes
+## Callback connexe
 
 - [OnPlayerDisconnect](OnPlayerDisonnect) : Quand un joueur se déconnecte du serveur.
