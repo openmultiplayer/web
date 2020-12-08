@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
+	"github.com/go-errors/errors"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/web"
@@ -23,7 +24,7 @@ func New(a *authentication.State, oa2 authentication.OAuthProvider) *chi.Mux {
 	}
 
 	rtr.Get("/link", http.HandlerFunc(svc.link))
-	rtr.Get("/callback", http.HandlerFunc(svc.callback))
+	rtr.Post("/callback", http.HandlerFunc(svc.callback))
 
 	return rtr
 }
@@ -44,7 +45,7 @@ type Callback struct {
 func (s *service) callback(w http.ResponseWriter, r *http.Request) {
 	var payload Callback
 	if err := web.DecodeBody(r, &payload); err != nil {
-		web.StatusBadRequest(w, err)
+		web.StatusBadRequest(w, errors.Wrap(err, "failed to decode callback payload"))
 		return
 	}
 
