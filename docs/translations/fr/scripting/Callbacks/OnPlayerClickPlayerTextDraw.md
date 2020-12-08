@@ -77,6 +77,9 @@ Quand un joueur quitte le textdraw sélectionné avec ECHAP, OnPlayerClickTextDr
 ## Fonctions connexes
 
 - [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Rend un player-textdraw sélectionnable par un joueur.
+
+## Callbacks connexes
+
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Quand un joueur clique sur un textdraw.
 - [OnPlayerClickPlayer](OnPlayerClickPlayer): Quand un joueur clique sur un autre.
 - [OnPlayerClickMap](OnPlayerClickMap): Quand un joueur place un point sur la map avec le clic droit.
