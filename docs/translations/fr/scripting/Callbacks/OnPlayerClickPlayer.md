@@ -32,7 +32,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 }
 ```
 
-## Notes
+## Astuces
 
 :::tip
 
@@ -40,7 +40,7 @@ Il n'y a qu'une seule 'source' de clic (0 - CLICK_SOURCE_SCOREBOARD).
 
 :::
 
-## Related Functions
+## Callbacks connexes
 
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Quand un joueur clique sur un textdraw.
 - [OnPlayerClickMap](OnPlayerClickMap): Quand un joueur place un point sur la map avec le clic droit.
