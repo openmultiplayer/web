@@ -55,6 +55,6 @@ public OnPlayerRequestDownload(playerid, type, crc)
 }
 ```
 
-## Fonctions connexes
+## Callback connexe
 
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Appelée lorsqu'un joueur fini le téléchargement.
