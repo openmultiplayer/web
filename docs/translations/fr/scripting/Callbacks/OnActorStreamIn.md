@@ -1,6 +1,6 @@
 ---
 title: OnActorStreamIn
-description: Cette callback est appelée lorsqu'un acteur est stream un joueur.
+description: Cette fonction est appelée quand un actor est chargé (devient visible) pour un joueur.
 tags: [actors, actorstream, forplayerid, actorid]
 ---
 
@@ -8,12 +8,12 @@ tags: [actors, actorstream, forplayerid, actorid]
 
 ## Paramètres
 
-Cette callback est appelée quand un acteur est stream par joueur.
+Cette fonction est appelée quand un actor est chargé _(devient visible)_ pour un joueur.
 
-| Nom               | Description                                                   |
-| -----------       | ------------------------------------------------------------- |
-| `int` actorid     | ID de l'actor qui va être stream par le joueur                |
-| `int` forplayerid | ID du joueur qui stream l'actor (`actorid`)                   |
+| Nom               | Description                                 |
+| -----------       | ------------------------------------------- |
+| `int` actorid     | ID de l'actor chargé par le joueur          |
+| `int` forplayerid | ID du joueur qui charge l'actor (`actorid`) |
 
 ## Valeur de retour
 
