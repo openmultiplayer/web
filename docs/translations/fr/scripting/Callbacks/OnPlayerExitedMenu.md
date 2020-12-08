@@ -14,7 +14,7 @@ Callback appelée un joueur quitte un menu.
 
 ## Valeur de retour
 
-Cette callback est toujours appelée en premier dans le gamemode.
+Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement dit, `return callback();` ne fonctionnera pas car la callback ne retourne rien, mais un return _(`return 1;` ou `return 0;`)_ doit être effectué dans la callback.
 
 ## Exemple
 
