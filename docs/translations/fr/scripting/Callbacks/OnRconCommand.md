@@ -57,7 +57,10 @@ Vous devez inclure cette callback dans un filterscript chargé pour qu'elle marc
 
 :::
 
-## Fonctions connexes
+## Fonction connexe
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Vérifie si un joueur est loggé en RCON.
+
+## Callback connexe
+
 - [OnRconLoginAttempt](OnRconLoginAttempt): Appelée lorsqu'un joueur essaie de se connecter en RCON.
