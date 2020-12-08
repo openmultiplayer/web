@@ -60,6 +60,9 @@ Cette callback ne peut pas être appelée si l'actor est invulnérable _(il l'es
 - [GetActorHealth](../functions/GetActorHealth): Permet d'obtenir le heal de l'actor.
 - [IsActorInvulnerable](../functions/IsActorInvulnerable): Permet de vérifier si un actor est invulnérable.
 - [IsValidActor](../functions/IsValidActor): Vérifie si un actore st valide.
+
+## Callbacks connexes
+
 - [OnActorStreamOut](OnActorStreamOut): Appelé quand un actor n'est plus stream par un joueur. 
 - [OnPlayerStreamIn](OnPlayerStreamIn): Appelé quand un actor est stream par un joueur.
 
