@@ -37,12 +37,14 @@ func New(
 		web.WithLogger,
 		web.WithContentType,
 		cors.Handler(cors.Options{
-			// AllowedOrigins: []string{"https://www.open.mp"}, // TODO
-			AllowedOrigins:   []string{"*"},
+			AllowedOrigins: []string{
+				"http://localhost:3000", // Local development, `npm run dev`
+				"https://open.mp",       // Live public website
+			},
 			AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 			AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
 			ExposedHeaders:   []string{"Link"},
-			AllowCredentials: false,
+			AllowCredentials: true,
 			MaxAge:           300,
 		}),
 		auther.WithAuthentication,
