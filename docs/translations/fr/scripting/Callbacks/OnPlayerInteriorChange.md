@@ -37,4 +37,7 @@ public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
 - [SetPlayerInterior](../functions/SetPlayerInterior): Met un intérieur à un joueur.
 - [GetPlayerInterior](../functions/GetPlayerInterior): Permet d'obtenir l'intérieur actuel du joueur.
 - [LinkVehicleToInterior](../functions/LinkVehicleToInterior): Change l'intérieur dans lequel un véhicule est vu.
+
+## Callback connexe
+
 - [OnPlayerStateChange](OnPlayerStateChange): Appelé quand un joueur change d'état.
