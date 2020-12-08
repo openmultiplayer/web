@@ -21,6 +21,7 @@ Cette callback est appelée quand un joueur inflige des dégâts à un autre jou
 ## Valeur de retour
 
 **1** - Autorise la callback à être appelée par un autre script.
+
 **0** - Refuser que la callback soit appelée ailleurs.
 
 ## Exemple
