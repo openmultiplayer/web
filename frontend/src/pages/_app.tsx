@@ -2,7 +2,6 @@ import App, { AppInitialProps } from "next/app";
 import type { AppProps, AppContext } from "next/app";
 import Head from "next/head";
 import Router from "next/router";
-import cookie from "cookie";
 import { NextSeo } from "next-seo";
 import { ToastContainer } from "react-nextjs-toast";
 import { MDXProvider } from "@mdx-js/react";
@@ -18,7 +17,7 @@ import "remark-admonitions/styles/classic.css";
 
 import "src/styles/base.css";
 import { AuthProvider } from "src/auth/hooks";
-import { IncomingMessage } from "http";
+import { isAuthenticatedFromRequest } from "src/auth";
 
 // Trigger client-side progress bar for client-side page transitions.
 Router.events.on("routeChangeStart", () => NProgress.start());
@@ -113,16 +112,6 @@ MyApp.getInitialProps = async (
     ...appProps,
     authenticated,
   };
-};
-
-const isAuthenticatedFromRequest = (request?: IncomingMessage): boolean => {
-  if (!request) {
-    return false;
-  }
-
-  const c = cookie.parse(request.headers.cookie || "");
-
-  return !!c["openmultiplayer-session"];
 };
 
 export default MyApp;

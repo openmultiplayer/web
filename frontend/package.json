@@ -23,6 +23,7 @@
     "gray-matter": "^4.0.2",
     "html-react-parser": "^0.14.2",
     "iso-639-1": "^2.1.4",
+    "js-cookie": "^2.2.1",
     "lodash": "^4.17.20",
     "next": "10.0.3",
     "next-seo": "^4.17.0",

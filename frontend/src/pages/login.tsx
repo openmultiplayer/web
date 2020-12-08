@@ -1,6 +1,12 @@
-import { withoutAuth } from "src/auth/hoc";
+import Link from "next/link";
+import { getStaticPropsWithoutAuth, withoutAuth } from "src/auth/hoc";
+import api from "src/fetcher/fetcher";
 
-const Page = () => (
+type Props = {
+  link: string;
+};
+
+const Page = ({ link = "/" }: Props) => (
   <section className="measure center ma2">
     <h1>Login</h1>
 
@@ -19,10 +25,23 @@ const Page = () => (
         </svg>
       </span>
       <span className="pa2">
-        <h2 className="pa0 ma0">Continue with GitHub</h2>
+        <h2 className="pa0 ma0">
+          <Link href={link}>
+            <a className="link white">Continue with GitHub</a>
+          </Link>
+        </h2>
       </span>
     </a>
   </section>
 );
+
+export const getServerSideProps = getStaticPropsWithoutAuth(async () => {
+  const data = await api("/auth/github/link");
+  return {
+    props: {
+      link: data.url,
+    },
+  };
+});
 
 export default withoutAuth(Page);
