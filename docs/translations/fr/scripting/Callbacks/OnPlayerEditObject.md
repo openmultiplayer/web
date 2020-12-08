@@ -25,9 +25,9 @@ Cette callback est appelée quand un joueur a fini d'éditer un objet (EditObjec
 
 ## Valeur de retour
 
-**1** - Empêche les autres scripts de communiquer avec la callback.
+**1** - Autorise la callback à être appelée par un autre script.
 
-**0** - Indique que la callack doit passer au script suivant.
+**0** - Refuser que la callback soit appelée ailleurs.
 
 ## Exemple
 

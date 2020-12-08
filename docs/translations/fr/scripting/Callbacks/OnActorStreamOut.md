@@ -1,6 +1,6 @@
 ---
 title: OnActorStreamOut
-description: Cette callback est appelée quand un actor n'est plus stream par un joueur.
+description: Cette fonction est appelée quand un actor est déchargé (n'est plus visible) pour un joueur.
 tags: [actors, actorstream, forplayerid, actorid]
 ---
 
@@ -8,17 +8,16 @@ tags: [actors, actorstream, forplayerid, actorid]
 
 ## Description
 
-Cette callback est appelée quand un actor n'est plus stream par un joueur.
+Cette fonction est appelée quand un actor est déchargé _(n'est plus visible)_ pour un joueur.
 
-| Nom               | Description                                                   |
-| -----------       | ------------------------------------------------------------- |
-| `int` actorid     | ID de l'actor qui n'est plus stream par le joueur             |
-| `int` forplayerid | ID du joueur qui ne stream plus l'actor (`actorid`)           |
+| Nom               | Description                                  |
+| -----------       | -------------------------------------------- |
+| `int` actorid     | ID de l'actor déchargé par le joueur         |
+| `int` forplayerid | ID du joueur a déchargé l'actor (`actorid`)  |
 
+## Valeur de retour
 
-## Emplacement
-
-La callback est toujours appelée en premier dans les filterscripts.
+Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement dit, `return callback();` ne fonctionnera pas car la callback ne retourne rien, mais un return _(`return 1;` ou `return 0;`)_ doit être effectué dans la callback.
 
 ## Exemple
 

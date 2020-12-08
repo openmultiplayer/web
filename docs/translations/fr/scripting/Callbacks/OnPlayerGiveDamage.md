@@ -20,11 +20,9 @@ Cette callback est appelée quand un joueur inflige des dégâts à un autre jou
 
 ## Valeur de retour
 
-**1** - La callback ne sera pas appelée dans un autre filterscript.
+**1** - Autorise la callback à être appelée par un autre script.
 
-**0** - Autorise la callback à être appelée dans d'autres filterscripts.
-
-Cette callback est toujours appelée en premier dans les filterscripts, donc return 1 empêche les autres filterscripts de communiquer avec.
+**0** - Refuser que la callback soit appelée ailleurs.
 
 ## Exemple
 
@@ -53,9 +51,17 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
 
 :::tip
 
-Cette fonction peut être imprécise dans certains cas. Si vous voulez empêcher des joueurs à s'infliger mutuellement des dégâts, utilisez SetPlayerTeam.
+Gardez à l'esprit que cette fonction peut être inexacte dans certains cas.
 
-Le montant est toujours le maximum de dommage que l'arme peut faire, même si la vie restante au joueur est moins importante que le maximum du dégât. 
+Si vous voulez empêcher certains joueurs de s'endommager, utilisez SetPlayerTeam.
+
+Le weaponid retournera la raison 37 _(lance-flammes)_ de n'importe quelle source de feu _(par exemple molotov, 18)_.
+
+Le weaponid retournera la raison 51 de n'importe quelle arme qui crée une explosion _(par exemple RPG, grenade)_.
+
+`playerid` est le seul à pouvoir appeler le callback.
+
+Le montant est toujours le maximum de dégâts que l'arme peut faire, même si la santé restante est inférieure à ce maximum de dégâts. Ainsi, lorsqu'un joueur a 100,0 points de vie et se fait tirer dessus avec un Desert Eagle qui a une valeur de dégâts de 46,2, il faut 3 coups pour tuer ce joueur. Les 3 tirs montreront au final un montant de 46,2, même si lorsque le dernier coup frappe, le joueur n'a plus que 7,6 points de vie.
 
 :::
 

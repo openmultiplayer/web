@@ -14,7 +14,7 @@ Cette callback est appelée quand un objet s'est arrêté de bouger après un Mo
 
 ## Valeur de retour
 
-Cette callback est toujours appelée en premier dans les filterscripts.
+Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement dit, `return callback();` ne fonctionnera pas car la callback ne retourne rien, mais un return _(`return 1;` ou `return 0;`)_ doit être effectué dans la callback.
 
 ## Exemple
 
@@ -40,4 +40,7 @@ SetObjectPos ne fonctionne pas dans cette callback. Il faut recréer l'objet pou
 - [MovePlayerObject](../functions/MovePlayerObject): Déplace l'objet d'un joueur.
 - [IsObjectMoving](../functions/IsObjectMoving): Vérifie si l'objet se déplace.
 - [StopObject](../functions/StopObject): Arrête le mouvement d'un objet.
+
+## Callback connexe
+
 - [OnPlayerObjectMoved](OnPlayerObjectMoved): Callback appelée lorsque l'objet d'un joueur arrête de bouger.

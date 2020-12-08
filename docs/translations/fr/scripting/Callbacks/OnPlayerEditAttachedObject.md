@@ -28,9 +28,9 @@ Cette callback est appelée quand un joueur en a fini avec le mode édition des 
 
 ## Valeur de retour
 
-**1** - Empêche les autres scripts de communiquer avec la callback.
+**1** - Autorise la callback à être appelée par un autre script.
 
-**0** - Indique que la callack doit passer au script suivant.
+**0** - Refuser que la callback soit appelée ailleurs.
 
 ## Exemple
 
@@ -83,7 +83,7 @@ public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Fl
 
 :::warning
 
-L'édition doit être abandonnée si la réponse est '0' (cancelled). Cea doit être fait par le stockage des offsets au préalable dans un array. 
+L'édition doit être abandonnée si la réponse est '0' (cancelled). Cela doit être fait par le stockage des offsets au préalable dans un array. 
 
 :::
 
