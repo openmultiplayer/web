@@ -15,7 +15,7 @@ Cette callback est appelée quand un acteur est stream par joueur.
 | `int` actorid     | ID de l'actor qui va être stream par le joueur                |
 | `int` forplayerid | ID du joueur qui stream l'actor (`actorid`)                   |
 
-## Emplacement
+## Valeur de retour
 
 Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement dit, `return callback();` ne fonctionnera pas car la callback ne retourne rien, mais un return _(`return 1;` ou `return 0;`)_ doit être effectué dans la callback.
 
