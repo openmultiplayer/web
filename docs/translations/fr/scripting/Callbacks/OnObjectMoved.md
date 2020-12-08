@@ -40,4 +40,7 @@ SetObjectPos ne fonctionne pas dans cette callback. Il faut recréer l'objet pou
 - [MovePlayerObject](../functions/MovePlayerObject): Déplace l'objet d'un joueur.
 - [IsObjectMoving](../functions/IsObjectMoving): Vérifie si l'objet se déplace.
 - [StopObject](../functions/StopObject): Arrête le mouvement d'un objet.
+
+## Callback connexe
+
 - [OnPlayerObjectMoved](OnPlayerObjectMoved): Callback appelée lorsque l'objet d'un joueur arrête de bouger.
