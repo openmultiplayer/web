@@ -71,7 +71,7 @@ N'utilisez pas CancelSelectTextDraw sans condition dans cette callback. Il en r√
 
 :::
 
-## Fonctions connexes
+## Callbacks connexes
 
 - [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Quand un joueur clique sur un player-textdraw.
 - [OnPlayerClickPlayer](OnPlayerClickPlayer): Quand un joueur clique sur un autre joueur dans la tablist.
