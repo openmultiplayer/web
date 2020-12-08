@@ -10,6 +10,17 @@ import (
 	"go.uber.org/zap"
 )
 
+// Error represents the object returned from the API for any form of problem
+// encountered during a request.
+//
+// Errors contain technical information as well as optional human-readable
+// error messages and suggestions for solutions.
+type Error struct {
+	Message    string `json:"message,omitempty"`   // human readable message
+	Suggestion string `json:"suggested,omitempty"` // suggestion for fix
+	Error      string `json:"error,omitempty"`     // internal error string
+}
+
 // StatusNotFound writes a pretty error
 func StatusNotFound(w http.ResponseWriter, err error) {
 	w.WriteHeader(http.StatusNotFound)
@@ -81,11 +92,7 @@ func errToWriter(w io.Writer, err error) {
 		suggest = herr.suggest
 	}
 
-	if e := json.NewEncoder(w).Encode(struct {
-		Message    string `json:"message,omitempty"`   // human readable message
-		Suggestion string `json:"suggested,omitempty"` // suggestion for fix
-		Error      string `json:"error,omitempty"`     // internal error string
-	}{
+	if e := json.NewEncoder(w).Encode(Error{
 		Message:    message,
 		Suggestion: suggest,
 		Error:      err.Error(),
