@@ -28,6 +28,8 @@ require (
 	github.com/streadway/amqp v1.0.0
 	github.com/stretchr/testify v1.6.1
 	github.com/thanhpk/randstr v1.0.4
+	github.com/tkrajina/go-reflector v0.5.4 // indirect
+	github.com/tkrajina/typescriptify-golang-structs v0.1.3
 	go.uber.org/zap v1.16.0
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102 // indirect
