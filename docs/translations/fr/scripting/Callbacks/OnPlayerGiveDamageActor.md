@@ -20,11 +20,8 @@ Cette callback est appelée quand un joueur inflige des dégâts à un actor.
 
 ## Valeur de retour
 
-**1** - La callback ne sera pas appelée dans un autre filterscript.
-
-**0** - Autorise la callback à être appelée dans d'autres filterscripts.
-
-Cette callback est toujours appelée en premier dans les filterscripts, donc return 1 empêche les autres filterscripts de communiquer avec.
+**1** - Autorise la callback à être appelée par un autre script.
+**0** - Refuser que la callback soit appelée ailleurs.
 
 ## Exemple
 
