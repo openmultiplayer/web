@@ -29,6 +29,7 @@ Cette callback est appelée quand un joueur en a fini avec le mode édition des 
 ## Valeur de retour
 
 **1** - Autorise la callback à être appelée par un autre script.
+
 **0** - Refuser que la callback soit appelée ailleurs.
 
 ## Exemple
