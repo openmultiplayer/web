@@ -3,18 +3,39 @@ import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 
 import api from "src/fetcher/fetcher";
 
-const Page = () => {
-  return <></>;
+type Props = {
+  error?: Error;
 };
+
+const Page = ({ error }: Props) => (
+  <section className="center measure-wide">
+    <h1>An Error Occurred</h1>
+    <p>{error?.error_description}</p>
+    <pre>Error code: {error?.error}</pre>
+  </section>
+);
 
 type Payload = {
   code: string;
   state: string;
 };
 
+type Error = {
+  error: string;
+  error_description: string;
+};
+
 export const getServerSideProps = async (
   ctx: GetServerSidePropsContext
 ): Promise<GetServerSidePropsResult<{}>> => {
+  if ("error" in ctx.query) {
+    const error: Error = {
+      error: ctx.query["error"] as string,
+      error_description: ctx.query["error_description"] as string,
+    };
+    return { props: { error } };
+  }
+
   const payload: Payload = {
     code: ctx.query["code"] as string,
     state: ctx.query["state"] as string,
