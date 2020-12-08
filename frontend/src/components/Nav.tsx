@@ -98,7 +98,7 @@ const UserIcon = () => (
 const Nav = ({ items, route }: Props) => {
   const [show, setShow] = useState(false);
   const authenticated = useIsAuthenticated();
-  console.log({ authenticated });
+
   return (
     <>
       <nav role="main" className="flex items-stretch bb b--black-30 bg-white">
