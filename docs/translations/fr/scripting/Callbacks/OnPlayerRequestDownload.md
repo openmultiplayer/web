@@ -16,7 +16,7 @@ Cette callback est appelée quand un joueur sollicite le téléchargement des cu
 | `int` type     | Type de requête (voir _infra_)                                                                                    |
 | `int` crc      | Numéro CRC du fichier custom                                                                                      |
 
-## Valeur
+## Valeur de retour
 
 **1** - Accepte la requête de téléchargement
 
