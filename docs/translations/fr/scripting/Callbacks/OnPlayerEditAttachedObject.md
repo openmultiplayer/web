@@ -83,7 +83,7 @@ public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Fl
 
 :::warning
 
-L'édition doit être abandonnée si la réponse est '0' (cancelled). Cea doit être fait par le stockage des offsets au préalable dans un array. 
+L'édition doit être abandonnée si la réponse est '0' (cancelled). Cela doit être fait par le stockage des offsets au préalable dans un array. 
 
 :::
 
