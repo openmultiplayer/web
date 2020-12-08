@@ -2,7 +2,6 @@ package discord
 
 import (
 	"encoding/json"
-	"errors"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -29,34 +28,27 @@ func New(a *authentication.State, oa2 authentication.OAuthProvider) *chi.Mux {
 	return rtr
 }
 
-type linkPayload struct {
+type Link struct {
 	URL string `json:"url"`
 }
 
 func (s *service) link(w http.ResponseWriter, r *http.Request) {
-	json.NewEncoder(w).Encode(linkPayload{URL: s.oa2.Link()}) //nolint:errcheck
+	json.NewEncoder(w).Encode(Link{URL: s.oa2.Link()}) //nolint:errcheck
+}
+
+type Callback struct {
+	State string `json:"state"`
+	Code  string `json:"code"`
 }
 
 func (s *service) callback(w http.ResponseWriter, r *http.Request) {
-	err := r.ParseForm()
-	if err != nil {
+	var payload Callback
+	if err := web.DecodeBody(r, &payload); err != nil {
 		web.StatusBadRequest(w, err)
 		return
 	}
 
-	state := r.Form["state"][0]
-	if state == "" {
-		web.StatusBadRequest(w, errors.New("missing state nonce in request"))
-		return
-	}
-
-	code := r.Form["code"][0]
-	if state == "" {
-		web.StatusBadRequest(w, errors.New("missing oauth2 code in request"))
-		return
-	}
-
-	user, err := s.oa2.Login(r.Context(), state, code)
+	user, err := s.oa2.Login(r.Context(), payload.State, payload.Code)
 	if err != nil {
 		web.StatusBadRequest(w, err)
 		return
