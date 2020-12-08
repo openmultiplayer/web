@@ -42,7 +42,7 @@ public OnPlayerDisconnect(playerid, reason)
 }
 ```
 
-## Notes
+## Astuces
 
 :::tip
 
@@ -50,6 +50,6 @@ Certaines fonctions peuvent ne pas fonctionner correctement quand cette callback
 
 :::
 
-## Fonctions connexes
+## Callback connexe
 
 - [OnPlayerConnect](OnPlayerConnect) : Quand le joueur se connecte au serveur.
