@@ -5,6 +5,7 @@ import useSWR from "swr";
 
 import { getStaticPropsWithAuth, withAuth } from "src/auth/hoc";
 import { COOKIE_NAME } from "src/auth";
+import { UserModel } from "src/types/server";
 import api from "src/fetcher/fetcher";
 
 type Props = {
@@ -36,13 +37,8 @@ const Page = ({ initialData }: Props) => {
         <InfoItem title="Authentication Method" value={data?.authMethod} />
       </ul>
       <Link href="/">
-        <a
-          className="link"
-          onClick={() => {
-            console.log("removing cookie");
-            remove(COOKIE_NAME);
-          }}
-        >
+        {/* TODO: fix logout with an API endpoint */}
+        <a className="link" onClick={() => remove(COOKIE_NAME)}>
           Logout
         </a>
       </Link>
@@ -56,7 +52,7 @@ export const getServerSideProps = getStaticPropsWithAuth(
   ): Promise<GetServerSidePropsResult<Props>> => {
     return {
       props: {
-        initialData: await api("/users/self", {}, ctx),
+        initialData: (await api<UserModel>("/users/self", {}, ctx)).unwrap(),
       },
     };
   }
