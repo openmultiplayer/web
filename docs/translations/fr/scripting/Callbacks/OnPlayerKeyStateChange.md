@@ -1,121 +1,126 @@
 ---
 title: OnPlayerKeyStateChange
-description: Cette callback est appelée quand quand n'importe quelle touche prise en charge est pressée ou relâchée.
+description: Cette callback est appelée lorsqu'un joueur appuie / lâche une touche de son clavier (uniquement les touches supportées par SA:MP)
 tags: ["player"]
 ---
 
-## Description
- Cette callback est appelée quand quand n'importe quelle [touche prise en charge](../resources/keys) est pressée ou relâchée.
-This callback is called when the state of any [touche prise en charge](../resources/keys) key is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
+## Paramètres
 
-| Name     | Description                                                                                      |
-| -------- | ------------------------------------------------------------------------------------------------ |
-| playerid | The ID of the player that pressed or released a key.                                             |
-| newkeys  | A map (bitmask) of the keys currently held - [see here](../resources/keys)                    |
-| oldkeys  | A map (bitmask) of the keys held prior to the current change - [see here](../resources/keys). |
+Cette callback est appelée lorsqu'un joueur appuie / lâche une touche de son clavier (uniquement les touches supportées par SA:MP).
 
-## Returns
+ 
+| Nom	 	 | Description                                                                         |
+| -------------- | ----------------------------------------------------------------------------------- |
+| `int` playerid | ID du joueur qui appuie/relâche la touche					       |
+| `int` newkeys  | Un [tableau des touches](../resources/keys) est disponible après l'action           |
+| `int` oldkeys  | Un [tableau des touches](../resources/keys) est également disponible avant l'action |
 
-- This callback does not handle returns.
-- It is always called first in gamemode.
+## Valeur de retour
 
-## Notes
+**1** - Autorise la callback à être appelée par un autre script.
+**0** - Refuser que la callback soit appelée ailleurs.
+
+Elle est toujours appelée **1**, il faut donc la remplacer par **0** pour que les filterscripts ne s'en occupent pas.
+
+## Astuces
 
 :::info
 
-This callback can also be called by NPC.
+Cette callback peut aussi être appelée par un NPC.
 
 :::
 
 :::tip
 
-Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](../callbacks/OnPlayerUpdate) or a timer).
+Les touches directionnelles ne fonctionnent pas avec OnPlayerKeyStateChange. Elles ne peuvent être détectées qu'avec [GetPlayerKeys](../functions/GetPlayerKeys) (dans [OnPlayerUpdate](../callbacks/OnPlayerUpdate) ou un timer)
 
 :::
 
-## Related Functions
+## Fonctions connexes
 
-    #test
+- [GetPlayerKeys](../functions/GetPlayerKeys): Vérifie quelle touche presse un joueur
 
-- [GetPlayerKeys](../functions/GetPlayerKeys): Check what keys a player is holding.
-
-## Additional Information
+## Informations suppleméntaires
 
 ### Introduction
 
-This callback is called whenever a player presses or releases one of the supported keys (see [Keys](../resources/keys)).<br/>The keys which are supported are not actual keyboard keys, but San Andreas mapped function keys, this means that, for example, you can't detect when someone presses the <strong>spacebar</strong>, but can detect when they press their sprint key (which may, or may not, be assigned to the spacebar (it is by default)).
+Cette callback est appelée indifféremment selon que le joueur presse une touche ou la relâche _(v. [Keys](../resources/keys))_. 
 
-### Parameters
+Les touches qui sont prises en charge ne sont pas les touches réelles du clavier, mais des touches de fonction attribuées à San Andreas. Cela signifie que, par exemple, vous ne pouvez pas détecter quand quelqu'un appuie sur la barre d'espace, mais ils peuvent détecter le moment où ils pressent leur touche sprint (qui peut, ou pas, être affectée à la barre d'espacement).
 
-The parameters to this function are a list of all keys currently being held down and all the keys held down a moment ago. The callback is called when a key state changes (that is, when a key is either pressed or released) and passes the states or all keys before and after this change. This information can be used to see exactly what happened but the variables can not be used directly in the same way as parameters to other functions. To reduce the number of variables only a single BIT is used to represent a key, this means that one variable may contain multiple keys at once and simply comparing values will not always work.
+### Paramètres
 
-### How to NOT to check for a key
+Les paramètres de cette fonction sont une liste de toutes les touches actuellement maintenue enfoncée et toutes les touches enfoncées il y a un instant. La callback est appelée quand l'état d'une touche change _(quand une touche est relâchée ou enfoncée)_ et regarde les états de toutes les touches avant et après ce changement. Cette information peut être utilisée pour voir exactement ce qu'il se passe avec le clavier du joueur, mais les variables ne peuvent pas être utilisées de la même manière que les paramètres d'une autre fonction.
 
-Let's presume that you want to detect when a player presses their FIRE button, the obvious code would be:
+Pour réduire le nombre de variables, un seul BIT est utilisé pour représenter une clé, cela signifie qu'une variable peut contenir plusieurs clés à la fois et la simple comparaison des valeurs ne fonctionnera pas toujours.
+
+### Comment NE PAS vérifier une touche
+
+Présumons que vous voulez détecter quand le joueur presse la touche `KEY_FIRE`, le code devrait être :
 
 ```c
 if (newkeys == KEY_FIRE)
 ```
 
-This code may even work in your testing, but it is wrong and your testing is insufficient. Try crouching and pressing fire - your code will instantly stop working. Why? Because "newkeys" is no longer the same as "KEY_FIRE", it is the same as "KEY_FIRE" COMBINED WITH "KEY_CROUCH".
+Ce code peut même fonctionner dans vos tests, mais il est incorrect et vos tests sont insuffisants. Essayez de vous accroupir et d'appuyer sur le feu et votre code cessera instantanément de fonctionner. **Pourquoi?** Parce que `newkeys` n'est plus le même que `KEY_FIRE`, c'est le même que `KEY_FIRE` COMBINÉ AVEC `KEY_CROUCH`.
 
-### How to check for a key
+### Comment vérifier une touche 
 
-So, if the variable can contain multiple keys at once, how do you check for just a single one? The answer is bit masking. Each key has its own bit in the variable (some keys have the same bit, but they are onfoot/incar keys, so can never be pressed at the same time anyway) and you need to check for just that single bit:
+Donc, si la variable peut contenir plusieurs clés à la fois, comment en vérifier une seule ? La réponse est le masquage de bits. Chaque touche a son propre bit dans la variable _(certaines touches ont le même bit, mais ce sont des touches onfoot / incar, donc ne peuvent jamais être pressées en même temps de toute façon)_ et vous devez vérifier juste ce seul bit :
 
 ```c
 if (newkeys & KEY_FIRE)
 ```
 
-Note that the single <strong>&</strong> is correct - this is a bitwise AND, not a logical AND, which is what the two ampersands are called.
+Notez que le simple **&** est correct - il s'agit d'un ET au niveau du bit, pas d'un ET logique, c'est ainsi que les deux esperluettes sont appelées.
 
-Now if you test this code it will work whether you are crouching or standing when you press the fire key. However there is still one slight problem - it will fire as long as you are holding the key. OnPlayerKeyStateChange is called every time a key changes and that code is true whenever the the fire key is held down. If you press fire the code will fire, if that key is held and you press crouch - that code will fire again because a key (crouch) has changed and fire is still held down How do you detect when a key is first pressed, but not trigger again when it's still held and another key changes?
+Maintenant, si vous testez ce code, cela fonctionnera que vous soyez accroupi ou debout lorsque vous appuyez sur `KEY_FIRE`. Cependant, il reste un léger problème : il se déclenchera tant que vous maintiendrez la clé. `OnPlayerKeyStateChange` est appelé chaque fois qu'une clé change et ce code est vrai chaque fois que `KEY_FIRE` est maintenue enfoncée. Si vous appuyez `KEY_FIRE`, le code se déclenchera, si cette touche est maintenue et que vous appuyez sur `KEY_CROUCH`, ce code se déclenchera à nouveau parce qu'une touche _(CROUCH)_ a changé et que `KEY_FIRE` est toujours maintenu.
 
-### How to check for a key that has been pressed
+### Comment vérifier une touche qui a été enfoncée
 
-This is where "oldkeys" comes in. To check if a key has just been pressed you need to first check whether it is set in "newkeys" - meaning it's held down, and then check that it's NOT in "oldkeys" - meaning it's only just been held down. The following code does this:
+C'est là qu'intervient `oldkeys`. Pour vérifier si une touche vient d'être enfoncée, vous devez d'abord vérifier si elle est définie dans `newkeys` - ce qui signifie qu'elle est maintenue enfoncée, puis vérifier qu'elle n'est PAS dans `oldkeys` - ce qui signifie que c'est juste juste été maintenu. Le code suivant fait cela :
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
 ```
 
-That will ONLY be true when the FIRE key is first pressed, not when it's held and another key changes.
+Cela ne sera vrai que lorsque `KEY_FIRE` est enfoncée pour la première fois, pas lorsqu'elle est maintenue et qu'une autre touche change.
 
-### How to check for a key being released
+### Comment vérifier une touche qui a été relâchée
 
-Exactly the same principle as above, but reversed:
+C'est exactement le même principe que ci-dessus, mais inversé :
 
 ```c
 if ((oldkeys & KEY_FIRE) && !(newkeys & KEY_FIRE))
 ```
 
-### How to check for multiple keys
+### Comment vérifier plusieurs touches
 
-If you want to check for players HOLDING crouch and fire then the following code will work fine:
+Si vous voulez vérifier qu'un joueur MAINTIEN `KEY_CROUCH` **et** `KEY_FIRE`, voici le code :
 
 ```c
 if ((newkeys & KEY_FIRE) && (newkeys & KEY_CROUCH))
 ```
 
-However if you want to detect when they FIRST press fire and crouch the following code WILL NOT work. It will work if they manage to press the two keys at exactly the same time, but if they're fractionally out (far less than half a second) it won't:
+Cependant, si vous voulez détecter lorsqu'ils appuient pour la première fois sur `KEY_FIRE` et s'accroupissent, le code suivant NE FONCTIONNERA PAS. Cela fonctionnera s'ils parviennent à appuyer sur les deux touches exactement en même temps, mais si les appuis sont partiellement espacés _(bien moins d'une demi-seconde)_, ce ne sera pas le cas:
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Why not? Because OnPlayerKeyStateChange is called every time a single key changes. So they press "KEY_FIRE" - OnPlayerKeyStateChange is called with "KEY_FIRE" in "newkeys" and not in "oldkeys", then they press "KEY_CROUCH" - OnPlayerKeyStateChange is called with "KEY_CROUCH" and "KEY_FIRE" in "newkeys", but "KEY_FIRE" is now also in "oldkeys" as it's already been pressed, so "!(oldkeys & KEY_FIRE)" will fail. Fortunately the solution is very simple (in fact simpler than the original code):
+**Pourquoi pas?** Parce que `OnPlayerKeyStateChange` est appelé à chaque fois qu'une seule clé change. Alors ils appuient sur `KEY_FIRE` - `OnPlayerKeyStateChange` est appelé avec `KEY_FIRE` dans `newkeys` et pas dans `oldkeys`, puis ils appuient sur `KEY_CROUCH` - `OnPlayerKeyStateChange` est appelé avec `KEY_CROUCH` et `KEY_FIRE` dans `newkeys`, mais `KEY_FIRE` est maintenant aussi dans `oldkeys` car il a déjà été pressé, donc `! (Oldkeys & KEY_FIRE)` échouera. Heureusement la solution est très simple _(en fait plus simple que le code d'origine)_ :
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
-This may look complicated, but it checks that both keys are set in "newkeys" and that both the keys were not set in "oldkeys", if one of them was set in "oldkeys" that doesn't matter as not both of them were. All these things can be simplified greatly with defines.
+Cela peut paraître compliqué, mais cela vérifie que les deux touches sont définies dans `newkeys` et que les deux clés ne sont pas définies dans `oldkeys`, si l'une d'elles était définie dans `oldkeys` cela n'a pas d'importance. Toutes ces choses peuvent être grandement simplifiées avec des définitions.
 
-## Simplification
+## Simplifications
 
-### Detecting holding a key
+### Détecter un maintien de touche
 
-The define:
+Le define :
 
 ```c
 // HOLDING(keys)
@@ -123,21 +128,21 @@ The define:
 	((newkeys & (%0)) == (%0))
 ```
 
-Holding one key:
+Maintien d'une seule touche :
 
 ```c
 if (HOLDING( KEY_FIRE ))
 ```
 
-Holding multiple keys:
+Maintien de plusieurs touches :
 
 ```c
 if (HOLDING( KEY_FIRE | KEY_CROUCH ))
 ```
 
-### Detecting first pressing a key
+### Détecter la première pression sur une touche
 
-The define:
+Le define :
 
 ```c
 // PRESSED(keys)
@@ -145,21 +150,21 @@ The define:
 	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 ```
 
-Pressed one key:
+Pression d'une seule touche :
 
 ```c
 if (PRESSED( KEY_FIRE ))
 ```
 
-Pressed multiple keys:
+Pression de plusieurs touches :
 
 ```c
 if (PRESSED( KEY_FIRE | KEY_CROUCH ))
 ```
 
-### Detecting if a player is pressing a key currently
+### Détecter si un joueur enfonce actuellement une touche
 
-The define:
+Le define :
 
 ```c
 // PRESSING(keyVariable, keys)
@@ -167,21 +172,21 @@ The define:
 	(%0 & (%1))
 ```
 
-Pressing one key:
+Enfoncement d'une seule touche :
 
 ```c
 if (PRESSING( newkeys, KEY_FIRE ))
 ```
 
-Pressing multiple keys:
+Enfoncement de plusieurs touches :
 
 ```c
 if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
 ```
 
-### Detecting releasing a key
+### Détecter le relâchement d'une touche
 
-The define:
+Le define :
 
 ```c
 // RELEASED(keys)
@@ -189,35 +194,19 @@ The define:
 	(((newkeys & (%0)) != (%0)) && ((oldkeys & (%0)) == (%0)))
 ```
 
-Released one key:
+Relâchement d'une seule touche :
 
 ```c
 if (RELEASED( KEY_FIRE ))
 ```
 
-Released multiple keys:
+Relâchement de plusieurs touches :
 
 ```c
 if (RELEASED( KEY_FIRE | KEY_CROUCH ))
 ```
 
-## Examples
-
-### Attach NOS when the player presses fire
-
-```c
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
-{
-	if (PRESSED(KEY_FIRE))
-	{
-		if (IsPlayerInAnyVehicle(playerid))
-		{
-			AddVehicleComponent(GetPlayerVehicleID(playerid), 1010);
-		}
-	}
-	return 1;
-}
-```
+## Exemple
 
 ### Super jump
 
@@ -236,94 +225,3 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	return 1;
 }
 ```
-
-### God mode while holding use
-
-```c
-new
-	Float:gPlayerHealth[MAX_PLAYERS];
-
-#if !defined INFINITY
-	#define INFINITY (Float:0x7F800000)
-#endif
-
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
-{
-	if (PRESSED(KEY_ACTION))
-	{
-		// They just pressed the action key, save their
-		// old health for restoration.
-		GetPlayerHealth(playerid, gPlayerHealth[playerid]);
-		SetPlayerHealth(playerid, INFINITY);
-	}
-	else if (RELEASED(KEY_ACTION))
-	{
-		// They just let go of action - restore
-		// their old health again.
-		SetPlayerHealth(playerid, gPlayerHealth[playerid]);
-	}
-	return 1;
-}
-```
-
-### Explanation
-
-You don't need to worry about HOW it's done, just that it is. HOLDING detects if they're pressing a key (or keys), regardless of wether they were pressing it before, PRESSED detects if they only just pressed the key(s) and RELEASED detects if they just released a key(s). However if you want to know more - read on.
-
-The reason why you need to do it this way, not just using & or ==, is to detect exactly the keys you want while ignoring others which may or may not be pressed. In binary KEY_SPRINT is:
-
-```
-0b00001000
-```
-
-and KEY_JUMP is:
-
-```
-0b00100000
-```
-
-thus ORing them into the wanted keys (we could also add them in this example but that's not always the case) gives:
-
-```
-0b00101000
-```
-
-If we were only using & and OnPlayerKeyStateChange was called for a player pressing jump we would get the following code:
-
-```
-newkeys = 0b00100000
-wanted  = 0b00101000
-ANDed   = 0b00100000
-```
-
-The AND of the two numbers is not 0, thus the result of the check is true, which isn't what we want.
-
-If we only used == the two numbers are clearly not the same thus the check would fail, which is what we want.
-
-If the player was pressing jump, sprint and crouch we would get the following code:
-
-```
-newkeys = 0b00101010
-wanted  = 0b00101000
-ANDed   = 0b00101000
-```
-
-The ANDed version is the same as the required keys and also not 0, thus will give the correct answer, however the two original numbers are not the same so == will fail. In both the examples one of the two has given the right answer and one has given the wrong answer. If we compare the first one using & and == we get:
-
-```
-newkeys = 0b00100000
-wanted  = 0b00101000
-ANDed   = 0b00100000
-```
-
-Obviously wanted and ANDed are not the same so the check fails, which is correct. For the second example:
-
-```
-newkeys = 0b00101010
-wanted  = 0b00101000
-ANDed   = 0b00101000
-```
-
-Wanted and ANDed are the same so comparing them as equal will result in a true result, which again is correct.
-
-So using this method we can accurately check if certain keys are pressed ignoring all other keys which may or may not be pressed. the oldkeys check just uses != instead of == to ensure that the required keys were not previously pressed, so we know one of them was just pressed.
