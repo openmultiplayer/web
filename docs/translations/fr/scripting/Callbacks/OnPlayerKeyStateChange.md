@@ -18,6 +18,7 @@ Cette callback est appelée lorsqu'un joueur appuie / lâche une touche de son c
 ## Valeur de retour
 
 **1** - Autorise la callback à être appelée par un autre script.
+
 **0** - Refuser que la callback soit appelée ailleurs.
 
 Elle est toujours appelée **1**, il faut donc la remplacer par **0** pour que les filterscripts ne s'en occupent pas.
