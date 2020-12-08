@@ -8,7 +8,6 @@ tags: ["player", "checkpoint"]
 
 Cette callback est appelée quand un joueur quitte un checkpoint configuré pour lui avec [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint). Seulement 1 checkpoint peut être mis.
 
-
 | Nom            | Description                                      |
 | -------------- | ------------------------------------------------ |
 | `int` playerid | ID du joueur qui a quitté son checkpoint         |
