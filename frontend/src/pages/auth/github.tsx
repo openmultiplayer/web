@@ -47,6 +47,11 @@ export const getServerSideProps = async (
       {
         method: "post",
         body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+          Cookie: ctx.req.headers.cookie,
+        },
+        credentials: "include",
       },
       undefined,
       true

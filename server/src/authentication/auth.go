@@ -71,12 +71,20 @@ func GetAuthenticationInfo(
 	w http.ResponseWriter,
 	r *http.Request,
 ) (*Info, bool) {
-	if auth, ok := r.Context().Value(contextKey).(Info); ok {
-		return &auth, true
+	if auth, ok := GetAuthenticationInfoFromContext(r.Context()); ok {
+		return auth, true
 	}
 	web.StatusInternalServerError(w, web.WithSuggestion(
 		errors.New("failed to extract auth context from request"),
 		"Could not read session data from cookies.",
 		"Try clearing your cookies and logging in to your account again."))
+	return nil, false
+}
+
+// GetAuthenticationInfoFromContext pulls out auth data from a request context
+func GetAuthenticationInfoFromContext(ctx context.Context) (*Info, bool) {
+	if auth, ok := ctx.Value(contextKey).(Info); ok {
+		return &auth, true
+	}
 	return nil, false
 }

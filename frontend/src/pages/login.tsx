@@ -6,6 +6,7 @@ import { apiSSP } from "src/fetcher/fetcher";
 import GitHubIcon from "src/components/icons/GitHub";
 import DiscordIcon from "src/components/icons/Discord";
 import { DiscordLink } from "src/types/discordAuth";
+import OAuthButton from "src/components/OAuthButton";
 
 type Props = {
   github: string;
@@ -39,16 +40,28 @@ const Page = ({ github, discord }: Props) => (
 
     <p>Please log in using one of the providers below.</p>
     <p>Email based login is not currently available.</p>
+    <p>
+      You can link multiple account types to your open.mp account from your
+      dashboard once you've logged in.
+    </p>
 
     <br />
 
     <ul className="list pa0">
-      <Button bg="black" icon={<GitHubIcon />} link={github}>
-        <h2 className="pa0 ma0">Continue with GitHub</h2>
-      </Button>
-      <Button bg="#2C2F33" icon={<DiscordIcon fill="white" />} link={discord}>
-        <h2 className="pa0 ma0">Continue with Discord</h2>
-      </Button>
+      <OAuthButton
+        bg="black"
+        icon={<GitHubIcon width={24} />}
+        type="github"
+        text="Login With GitHub"
+        initialData={{ url: github }}
+      />
+      <OAuthButton
+        bg="#2C2F33"
+        icon={<DiscordIcon width={24} fill="white" />}
+        type="discord"
+        text="Login With Discord"
+        initialData={{ url: discord }}
+      />
     </ul>
   </section>
 );

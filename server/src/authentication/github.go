@@ -88,19 +88,31 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 		return &u, err
 	}
 
-	// Create a new account with the authentication method set to "GitHub"
-	user, err := p.db.User.CreateOne(
-		db.User.Email.Set(fmt.Sprint(email)),
-		db.User.AuthMethod.Set(db.AuthMethodGITHUB),
-		db.User.Name.Set(githubUser.GetName()),
-	).Exec(ctx)
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to create user account")
+	// Check if this request came from a user who was already logged in. If they
+	// are, get their existing account. If not, create a new account.
+	var user db.UserModel
+	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok {
+		user, err = p.db.User.FindOne(
+			db.User.ID.Equals(existing.Cookie.UserID),
+		).Exec(ctx)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to find user account")
+		}
+	} else {
+		// Create a new account with the authentication method set to "GitHub"
+		user, err = p.db.User.CreateOne(
+			db.User.Email.Set(fmt.Sprint(email)),
+			db.User.AuthMethod.Set(db.AuthMethodGITHUB),
+			db.User.Name.Set(githubUser.GetLogin()),
+		).Exec(ctx)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to create user account")
+		}
 	}
 
 	// Create their GitHub record and link it to the newly created user account
 	_, err = p.db.GitHub.CreateOne(
-		db.GitHub.User.Link(db.User.Email.Equals(email)),
+		db.GitHub.User.Link(db.User.ID.Equals(user.ID)),
 		db.GitHub.AccountID.Set(fmt.Sprint(githubUser.GetID())),
 		db.GitHub.Username.Set(githubUser.GetLogin()),
 		db.GitHub.Email.Set(email),

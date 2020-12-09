@@ -52,7 +52,7 @@ func (p *DiscordProvider) Link() string {
 }
 
 // Login is called when the callback URL is hit by a user who has successfully
-// authenticated against GitHub. `code` is the query parameter passed back by
+// authenticated against Discord. `code` is the query parameter passed back by
 // the provider. It is exchanged for a token which is used to look up the user
 // in our DB or create their account if it doesn't exist.
 func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.UserModel, error) {
@@ -62,7 +62,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 	}
 	p.cache.Delete(state)
 
-	// Exchange the code for a token, this makes an API call to GitHub.
+	// Exchange the code for a token, this makes an API call to Discord.
 	token, err := p.oaconf.Exchange(ctx, code)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to perform OAuth2 token exchange")
@@ -104,7 +104,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 		return nil, errors.New("email missing from Discord account data")
 	}
 
-	// Attempt to find a user via their associated GitHub profile
+	// Attempt to find a user via their associated Discord profile
 	if userdc, err := p.db.Discord.FindOne(
 		db.Discord.Email.Equals(email),
 	).With(
@@ -114,19 +114,33 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 		return &u, err
 	}
 
-	// Create a new account with the authentication method set to "Discord"
-	user, err := p.db.User.CreateOne(
-		db.User.Email.Set(fmt.Sprint(email)),
-		db.User.AuthMethod.Set(db.AuthMethodDISCORD),
-		db.User.Name.Set(dcuser.Username),
-	).Exec(ctx)
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to create user account")
+	// Check if this request came from a user who was already logged in. If they
+	// are, get their existing account. If not, create a new account.
+	var user db.UserModel
+	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
+		fmt.Printf("Finding '%#v'\n", existing)
+		user, err = p.db.User.FindOne(
+			db.User.ID.Equals(existing.Cookie.UserID),
+		).Exec(ctx)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to find user account")
+		}
+	} else {
+		// Create a new account with the authentication method set to "Discord"
+		user, err = p.db.User.CreateOne(
+			db.User.Email.Set(fmt.Sprint(email)),
+			db.User.AuthMethod.Set(db.AuthMethodDISCORD),
+			db.User.Name.Set(dcuser.Username),
+		).Exec(ctx)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to create user account")
+		}
 	}
 
-	// Create their Discord record and link it to the newly created user account
+	// Create their Discord record and link it to the account that was either
+	// found or created above.
 	_, err = p.db.Discord.CreateOne(
-		db.Discord.User.Link(db.User.Email.Equals(email)),
+		db.Discord.User.Link(db.User.ID.Equals(user.ID)),
 		db.Discord.AccountID.Set(dcuser.ID),
 		db.Discord.Username.Set(dcuser.Username),
 		db.Discord.Email.Set(email),
