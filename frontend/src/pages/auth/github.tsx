@@ -1,7 +1,7 @@
 import React from "react";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 
-import api from "src/fetcher/fetcher";
+import { apiSSP } from "src/fetcher/fetcher";
 
 type Props = {
   error?: Error;
@@ -42,7 +42,7 @@ export const getServerSideProps = async (
   };
 
   const response = (
-    await api<{ headers: Headers }>(
+    await apiSSP<{ headers: Headers }>(
       "/auth/github/callback",
       {
         method: "post",

@@ -8,7 +8,13 @@ const API_ADDRESS = "http://localhost";
 
 const success = (code: number) => code >= 200 && code <= 299;
 
-export default async function api<T, E extends APIError = APIError>(
+// For use in `useSWR` hooks.
+export function apiSWR<T, E>(path: string) {
+  return apiSSP<T, E>(path).then((r) => r.unwrap());
+}
+
+// For use in getServerSideProps.
+export async function apiSSP<T, E extends APIError = APIError>(
   path: string,
   init?: RequestInit,
   ctx?: GetServerSidePropsContext, // pass ctx from GSSP for server side cookies

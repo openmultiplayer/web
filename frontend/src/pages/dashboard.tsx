@@ -1,12 +1,14 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { remove } from "js-cookie";
 import Link from "next/link";
+import Error from "next/error";
 import useSWR from "swr";
 
 import { getStaticPropsWithAuth, withAuth } from "src/auth/hoc";
 import { COOKIE_NAME } from "src/auth";
 import { UserModel } from "src/types/server";
-import api from "src/fetcher/fetcher";
+import { apiSWR, apiSSP } from "src/fetcher/fetcher";
+import { APIError } from "src/types/error";
 
 type Props = {
   initialData: any;
@@ -26,7 +28,13 @@ const InfoItem = ({ title, value }) => (
 );
 
 const Page = ({ initialData }: Props) => {
-  const { data } = useSWR("/users/self", api, { initialData });
+  const { data, error } = useSWR<UserModel, APIError>("/users/self", apiSWR, {
+    initialData,
+  });
+
+  if (error) {
+    return <Error statusCode={500} title={error.message} />;
+  }
 
   return (
     <section className="measure-wide center">
@@ -52,7 +60,7 @@ export const getServerSideProps = getStaticPropsWithAuth(
   ): Promise<GetServerSidePropsResult<Props>> => {
     return {
       props: {
-        initialData: (await api<UserModel>("/users/self", {}, ctx)).unwrap(),
+        initialData: (await apiSSP<UserModel>("/users/self", {}, ctx)).unwrap(),
       },
     };
   }

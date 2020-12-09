@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { getStaticPropsWithoutAuth, withoutAuth } from "src/auth/hoc";
 import { GitHubLink } from "src/types/githubAuth";
-import api from "src/fetcher/fetcher";
+import { apiSSP } from "src/fetcher/fetcher";
 import GitHubIcon from "src/components/icons/GitHub";
 import DiscordIcon from "src/components/icons/Discord";
 import { DiscordLink } from "src/types/discordAuth";
@@ -54,8 +54,8 @@ const Page = ({ github, discord }: Props) => (
 );
 
 export const getServerSideProps = getStaticPropsWithoutAuth(async () => {
-  const github = (await api<GitHubLink>("/auth/github/link")).unwrap();
-  const discord = (await api<DiscordLink>("/auth/discord/link")).unwrap();
+  const github = (await apiSSP<GitHubLink>("/auth/github/link")).unwrap();
+  const discord = (await apiSSP<DiscordLink>("/auth/discord/link")).unwrap();
 
   return {
     props: {
