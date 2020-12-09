@@ -34,7 +34,7 @@ const Button = ({ children, bg, icon, link = "/" }) => (
 );
 
 const Page = ({ github, discord }: Props) => (
-  <section className="measure center ma2">
+  <section className="measure center pa3">
     <h1>Login</h1>
 
     <p>Please log in using one of the providers below.</p>
