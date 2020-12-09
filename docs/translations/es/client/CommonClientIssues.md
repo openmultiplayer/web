@@ -6,25 +6,25 @@ title: Common Issues
 
 ## Client
 
-### I get the error "San Andreas cannot be found"
+### Tengo constantemente el error "San Andreas cannot be found"
 
-San Andreas Multiplayer is **not** a stand-alone program! It adds multiplayer functionality to San Andreas, and thus you need GTA San Andreas for the PC - it also needs to be **EU/US v1.0**, other versions such as v2.0 or Steam and Direct2Drive versions will not work. [Click here to download a patch to downgrade your GTA: SA version to 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+¡San Andreas Multiplayer **NO ES** un programa independiente! Solo añade funciones multijugador al GTA: San Andreas (y, por lo tanto, necesitas GTA:SA instalado en tu computadora). Tiene que ser, además, la versión **EU/US v1.0**, ya que otras versiones como 2.0, versiones de Steam o versiones de Direct2Drive no funcionarán. [Cliquea aquí para descargar un parche para downgradear tu GTA:SA a la version 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
 
-### I can not see any servers in SA:MP browser
+### No veo ningún servidor en el buscador de servidores de SA:MP.
 
-First off, ensure you are following the procedures set out in the [Quick-start guide](https://wiki.sa-mp.com/wiki/Getting_Started). If you have followed what it says, and still cannot see any servers, you must allow SA:MP access through your firewall. Unfortunately, due to the large amount of available firewall software, we can not offer further support on this - we suggest looking at the manufacturers website or trying a Google search. Also make sure you have the latest SA:MP version!
+Primero que nada, asegúrate de seguir los procedimientos previstos en la [Guía de inicio rápido](https://wiki.sa-mp.com/wiki/Getting_Started). Si el problema persiste aún si verificaste lo anterior, debes permitir el acceso de SA:MP a través de tu cortafuegos. Desafortunadamente, debido a la gran cantidad de software cortafuego que existe, no podemos dar soporte con esto, pero sugerimos el revisar en el sitio del programa (o realizar una busqueda ante nuestro todo poderoso Google). Asegúrate además de tener la última versión de SA:MP.
 
-### Singleplayer loads instead of SA:MP
+### El modo un jugador inicia en vez de SA:MP
 
 :::warning
 
-You are not supposed to see the singleplayer options (new game, load game, etc) - SA:MP should load by itself and not present these options. If you see "new game", singleplayer has loaded, not San Andreas Multiplayer.
+No se supone que debas ver las opciones del modo un jugador (Iniciar Partida, Cargar Partida, etcétera) - SA:MP debería iniciarse por si solo y no presentar estas opciones. Si ves la opción de "Inciar Partida", se inició el modo de un jugador en ves de SA:MP.
 
 :::
 
-Singleplayer can load for 2 reasons; you have installed SA:MP to the wrong folder or you have the wrong version of San Andreas. If you have the wrong version you can downgrade your game using the GTA San Andreas downgrader. Click [here](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) to download it.
+El modo un jugador puede iniciarse por 2 razones: Tienes SA:MP instalado en la carpeta incorrecta o no tienes una versión compatible de GTA:SA. Si tienes la versión incorrecta puedes reallizar un downgrade a tu juego utilizando el downgrader de GTA:SA. Cliquea [aquí](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) para descargarlo.
 
-Sometimes the single player menu will be shown, but SA:MP will in fact have loaded properly. To fix this you simply need to select an item on the menu, then hit the escape key to exit out of it. SA:MP will then proceed to load.
+Existen ciertos casos en el que el menú del modo un jugador será mostrado, pero SA:MP habrá correctamente inciado. Para arreglar esto simplemente tienes que seleccionar un elemento en el menú, seguido de tocarla tecla Escape para salir de este. De esta forma, SA:MP procederá a cargar.
 
 ### I get "Unacceptable Nickname" when connecting to a server
 

@@ -2,3 +2,5 @@ data/
 *.exe
 node_modules
 .env
+openmp.sublime-workspace
+openmp.sublime-project
