@@ -26,38 +26,39 @@ El modo un jugador puede iniciarse por 2 razones: Tienes SA:MP instalado en la c
 
 Existen ciertos casos en el que el menú del modo un jugador será mostrado, pero SA:MP habrá correctamente inciado. Para arreglar esto simplemente tienes que seleccionar un elemento en el menú, seguido de tocarla tecla Escape para salir de este. De esta forma, SA:MP procederá a cargar.
 
-### I get "Unacceptable Nickname" when connecting to a server
+### Obtengo el error "Unacceptable Nickname" cuando conecto a un servidor.
 
-Ensure you are not using any disallowed characters in your name (use 0-9, a-z, \[\], (), \$, @, ., \_ and = only), and that your name is no longer than 20 characters. This also could be caused when a player is on a server with the same name as you (which can happen if you reconnect to a server quickkly after timing out or crashing). A Windows server running SA:MP with an uptime greater than 50 days can sometimes cause this bug.
 
-### Screen sticks at "Connecting to IP:Port..."
+Asegúrate de que no estas usando ningun carácter no permitido (solo puedes utilizar números del 0-9, letras de la A a la Z, \[\], (), \$, @, ., \_ y =), además de asegurarte que tu nombre no supera los 20 carácteres. Esto también podría ser causado cuando un jugador está conectado en el servidor con el mismo nombre que tú (que puede pasar si reconectas a un servidor de manera rápida antes de que el servidor registre tu desconexión). Un servidor de SA:MP corriendo en Windows durante mas de 50 días seguidos puede también ocasionar este bug.
 
-The server could be offline, or if you can't connect to any server, disable your firewall and see if it works. If it does, you will need to reconfigure your firwall. It could also be that you are running an outdated version of SA:MP - you can find new versions [here](http://sa-mp.com/download.php).
+### La pantalla se queda en "Connecting to  IP:Port..."
 
-### I have a modified GTA: San Andreas and SA:MP won't load
+Esto puede ser causado porque el servidor no esta encendido. Si tienes este error con mas de 1 servidor y estas seguro que estos servidores no están apagados, deshabilita tu cortafuegos y comprueba si el error persiste. Caso contrario, reconfigura tu cortafuegos para aceptar el tráfico entrante-saliente de SA:MP. Puede ser también que estes ejecutando una versión obsoleta de SA:MP - Puedes encontrar la versión más reciente [Aquí](http://sa-mp.com/download.php).
 
-If it won't load then remove your mods.
+### Tengo un GTA:SA modificado y SA:MP no inicia
 
-### When launching GTA with SA:MP it won't start
+Si SA:MP no inicia, intenta remover las modificaciones instaladas.
 
-Delete the gta_sa.set file from your userfiles folder and make sure you don't have any cheats/mods.
+### Cuando ejecuto GTA con SA:MP no sucede nada (no inicia)
 
-### The game crashes when a vehicle explodes
+Borra gta_sa.set de tu carpeta "GTA San Andreas User Files", además de asegurarte de que no tienes ningun cheat o modificaciones.
 
-If you have 2 monitors then there are 3 ways to solve this:
+### El juego crashea (se cierra) cuando un vehículo explota
 
-1. Disable your 2dr monitor when you play sa-mp. (Maybe not so smart if you like to have the monitor on.)
-2. Set your Visual FX quality to low. (Esc > Options > Display Setup > Advanced)
-3. Rename your GTA San Andreas folder (e.g. to "GTA San Andreas2") (This often works, however sometimes it may stop working again so you need to rename it to something else.)
+Si tienes 2 monitores, hay 3 maneras de resolverlo:
 
-### My mouse doesn't work after exiting the pause menu
+1. Deshabilita tu segundo monitor cuando juegues SA:MP. (Quizás no sea lo mejor, pero es lo más rapido si no te importa el no poder utilizar el otro monitor).
+2. Configura "Efectos Visuales" a Bajo (Escape > Opciones > Configuración de pantalla > Avanzados).
+3. Renombra tu carpeta de GTA:SA (ejemplo "GTA San Andreas2") (Esto puede funcionar a veces, de todas maneras a veces puede dejar de funcionar nuevamente así que tienes que renombrarla de otra forma).
 
-If your mouse seems to be frozen ingame while it (partially) works in the pause menu, then you should disable the multicore option [sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (set it to 0). Continuously tapping Escape until the mouse responds again may also work, but it is not as neat a solution.
+### Mi ratón no funciona luego de slair del menú de pausa
 
-### The file dinput8.dll is missing
+Si tu ratón no funciona en el juego y funciona de manera incompleta en el menú de pausa, deberías desactivar la función multinúcleo ("multicore") de tu[sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (Colocala en 0). Pulsar repetidamente la tecla Escape o mantenerla apretada hasta que el ratón responda de nuevo puede funcionar, pero no es una solución definitiva.
 
-This is possibly arises when DirectX is not properly installed, try re-installing it - don't forget to restart your PC. If the problem still arises, just go at C:\\Windows\\System32 and copy paste the dinput.dll file to the root directory of your GTA San Andreas. That would solve it.
+### El archivo dinput8.dll no existe
 
-### I cannot see other player's nametags!
+Este problema puede aparecer cuando DirectX no esta instalado correctamente. Intenta reinstalarlo (no olvides de reiniciar tu PC). Si el problema persiste, solo ve a C:\\Windows\\System32 y copia el archivo dinput.dll a tu carpeta de GTA.
 
-Please be aware that some servers may have nametags globally disabled. Otherwise, this problem often occurs on computers with Intel HD integrated graphics processors (which aren't really meant for gaming, anyway). Unfortunately, the exact cause is unknown and there doesn't seem to be a universal fix available at present time either. A long term fix would be to install a dedicated graphics card in your computer, if this is possible and if your budget allows it.
+### No puedo ver los nombres de los demás jugadores
+
+Por favor comprender que algunos servidores tienen sus nametags desactivados de forma global. De todas formas, este problema puede ocurrir en computadores con procesadores que incluyen gráficos integrados Intel HD (Que no estarían exactamente hechos para gaming, aún así). Desafortunadamente, la causa exacta es desconocida y no parece haber ninguna forma de arreglarlo hasta ahora. Una solución sería el instalar un procesador gráfico dedicado (tarjeta de video) en tu computadora, siempre y cuando sea posible y tu presupuesto monetario te lo permita.
