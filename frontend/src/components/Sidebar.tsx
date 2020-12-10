@@ -27,7 +27,7 @@ type Props = {
 export const DocsSidebar = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <nav className="br-ns bb b--black-30 pa2 b--black-30 truncate w4-ns w4-m w5-l flex-shrink-0">
+    <nav className="br-ns bb b--black-30 pa2 b--black-30 truncate w4-ns w4-m w5-l flex-auto">
       <div className="tr pa2 dn-ns">
         <label htmlFor="sidebar">{visible ? "Hide" : "Show"} Menu</label>
         <input

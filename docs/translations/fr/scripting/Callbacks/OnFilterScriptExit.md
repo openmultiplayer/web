@@ -20,5 +20,6 @@ public OnFilterScriptExit()
 }
 ```
 
-## Fonctions connexes
+## Callback connnexe
+
 - [OnFilterScriptInit](OnFilterScriptInit) : chargement d'un filterscript

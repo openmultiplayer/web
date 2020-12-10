@@ -26,5 +26,6 @@ Cette fonction peut aussi être utilisée dans un filterscript pour détecter si
 
 :::
 
-## Fonctions connexes
+## Callback connexe
+
 - [OnGameModeExit](OnGameModeExit) : callback appelée quand le gamemode s'éteint

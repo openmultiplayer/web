@@ -26,5 +26,6 @@ Cette fonction peut également être utilisée dans un filterscript pour détect
 
 :::
 
-## Fonctions connexes
+## Callback connexe
+
 - [OnGameModeInit](OnGameModeInit) : callback appelée quand le gamemode démarre

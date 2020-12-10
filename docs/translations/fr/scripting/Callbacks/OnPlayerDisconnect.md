@@ -15,9 +15,7 @@ Cette callback est appelée quand un joueur se déconnecte du serveur.
 
 ## Valeur de retour
 
-**1** - Empêche les autres filterscripts de recevoir cette callback.
-
-**0** - Indique que cette callback doit passer au filterscript suivant.
+Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement dit, `return callback();` ne fonctionnera pas car la callback ne retourne rien, mais un return _(`return 1;` ou `return 0;`)_ doit être effectué dans la callback.
 
 ## Exemple
 
@@ -44,7 +42,7 @@ public OnPlayerDisconnect(playerid, reason)
 }
 ```
 
-## Notes
+## Astuces
 
 :::tip
 
@@ -52,6 +50,6 @@ Certaines fonctions peuvent ne pas fonctionner correctement quand cette callback
 
 :::
 
-## Fonctions connexes
+## Callback connexe
 
 - [OnPlayerConnect](OnPlayerConnect) : Quand le joueur se connecte au serveur.
