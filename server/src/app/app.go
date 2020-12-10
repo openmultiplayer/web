@@ -13,9 +13,11 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/server/src/api/docs"
 	"github.com/openmultiplayer/web/server/src/api/legacy"
 	"github.com/openmultiplayer/web/server/src/api/servers"
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/scraper"
 	"github.com/openmultiplayer/web/server/src/seed"
@@ -73,8 +75,14 @@ func Initialise(root context.Context) (app *App, err error) {
 		}),
 	)
 
+	idx, err := docsindex.New("docs.bleve", "docs/")
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to create docs index")
+	}
+
 	router.Mount("/", legacy.New(app.ctx, storage, sampqueryer))
 	router.Mount("/server", servers.New(app.ctx, storage, sampqueryer))
+	router.Mount("/docs", docs.New(app.ctx, idx))
 	// router.Mount("/user", user.New(app.prisma, auther))
 
 	zap.L().Debug("constructed router", zap.Any("router", router))
