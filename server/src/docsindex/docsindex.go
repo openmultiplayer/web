@@ -2,32 +2,66 @@ package docsindex
 
 import (
 	"bytes"
-	"errors"
-	"fmt"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
 
+	"github.com/PuerkitoBio/goquery"
+	"github.com/blevesearch/bleve"
+	"github.com/russross/blackfriday"
 	"gopkg.in/yaml.v2"
 )
 
 type Index struct {
+	db bleve.Index
 }
 
 type Document struct {
 	Title       string
 	Description string
-	Keywords    string
+	Keywords    []string
 
 	Path string
 }
 
-func (i *Index) Build(dir string) error {
+func New(dbpath, docspath string) (*Index, error) {
+	i := Index{}
+
+	idx, err := bleve.Open(dbpath)
+	if err != nil {
+		idx, err = bleve.New(dbpath, bleve.NewIndexMapping())
+		if err != nil {
+			return nil, err
+		}
+	}
+	i.db = idx
+
+	if err := i.buildIndex(docspath); err != nil {
+		return nil, err
+	}
+	return &i, nil
+}
+
+func (i *Index) Search(query string) (*bleve.SearchResult, error) {
+	req := bleve.NewSearchRequest(bleve.NewQueryStringQuery(query))
+	req.Highlight = bleve.NewHighlight()
+	res, err := i.db.Search(req)
+	if err != nil {
+		return nil, err
+	}
+	return res, nil
+}
+
+func (i *Index) buildIndex(dir string) error {
 	if err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
+
+		// TODO: Translations should be handled differently. Search queries
+		// should have a language passed in too and there should be an index for
+		// each translation directory.
 
 		if !isMarkdown(info.Name()) {
 			return nil
@@ -44,9 +78,7 @@ func (i *Index) Build(dir string) error {
 			d.Title = info.Name()
 		}
 
-		fmt.Printf("DOC: %#v\n", d)
-
-		return errors.New("stop")
+		return i.db.Index(d.Path, d)
 	}); err != nil {
 		return err
 	}
@@ -54,10 +86,14 @@ func (i *Index) Build(dir string) error {
 	return nil
 }
 
+// Turns all path elements into forward slashes.
 func canonicalisePath(path string) string {
 	return strings.ReplaceAll(strings.Trim(path, ".\\/"), "\\", "/")
 }
 
+// There are two kinds of Markdown document: those with frontmatter and those
+// without. This function checks if the document has a frontmatter block for
+// metadata at the top and calls the relevant parser for it.
 func (i *Index) extract(content []byte) Document {
 	if bytes.HasPrefix(content, []byte("---")) {
 		return i.withFrontmatter(content)
@@ -65,6 +101,10 @@ func (i *Index) extract(content []byte) Document {
 	return i.withoutFrontmatter(content)
 }
 
+// Simply parses the frontmatter as YAML and looks for:
+// title
+// description
+// keywords
 func (i *Index) withFrontmatter(content []byte) Document {
 	end := bytes.Index(content[3:], []byte("---"))
 	frontmatter := content[3 : end+3]
@@ -72,13 +112,18 @@ func (i *Index) withFrontmatter(content []byte) Document {
 	yaml.Unmarshal(frontmatter, &d) //nolint:errcheck
 	return d
 }
+
+// Uses the first paragraph by first converting the Markdown into HTML and then
+// querying the HTML for the first paragraph.
 func (i *Index) withoutFrontmatter(content []byte) Document {
-	// html = blackfriday.MarkdownCommon(content)
-	// goquery.Document
-	// Parse HTML
-	// Find first p tag
-	// use that as description
-	return Document{}
+	html := blackfriday.MarkdownCommon(content)
+	doc, err := goquery.NewDocumentFromReader(bytes.NewBuffer(html))
+	if err != nil {
+		return Document{}
+	}
+	return Document{
+		Description: doc.Find("p").Text(),
+	}
 }
 
 func isMarkdown(name string) bool {

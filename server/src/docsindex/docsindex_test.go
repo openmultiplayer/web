@@ -1,15 +1,23 @@
 package docsindex
 
 import (
-	"log"
+	"encoding/json"
+	"fmt"
 	"testing"
 )
 
 func TestIndex_Build(t *testing.T) {
-	i := Index{}
-
-	err := i.Build("../../../docs/")
+	idx, err := New("docsearch.bleve", "../../../docs/scripting")
 	if err != nil {
-		log.Println(err)
+		panic(err)
 	}
+
+	res1, err := idx.Search("position")
+	if err != nil {
+		panic(err)
+	}
+
+	b, _ := json.MarshalIndent(res1, "", "  ")
+
+	fmt.Printf("result: %v\n", string(b))
 }
