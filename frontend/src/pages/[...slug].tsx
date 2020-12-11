@@ -1,7 +1,7 @@
 import DefaultErrorPage from "next/error";
 import components from "src/components/templates";
-import hydrate from "next-mdx-remote/hydrate";
 
+import { hydrate } from "src/mdx-helpers/csr";
 import Admonition from "src/components/Admonition";
 
 type Props = {
@@ -42,9 +42,9 @@ const Page = ({ source, error, data, fallback }: Props) => {
 
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import matter from "gray-matter";
-import renderToString from "next-mdx-remote/render-to-string";
 
 import { readLocaleContent } from "src/utils/content";
+import { renderToString } from "src/mdx-helpers/ssr";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ slug: string[] }>
