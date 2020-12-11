@@ -22,7 +22,6 @@
     "iso-639-1": "^2.1.4",
     "lodash": "^4.17.20",
     "next": "10.0.3",
-    "next-mdx-remote": "^1.0.0",
     "next-seo": "^4.17.0",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",

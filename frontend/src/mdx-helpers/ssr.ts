@@ -10,12 +10,12 @@ import { renderToString as reactRenderToString } from "react-dom/server";
 import React from "react";
 
 import { MDX_COMPONENTS } from "src/components/typography";
-import { Content } from "./content";
+import { MarkdownContent, MarkdownRenderConfig } from "./types";
 
 export const markdownSSR = async (
   locale: string,
   file: string
-): Promise<Content> => {
+): Promise<MarkdownContent> => {
   let content: Buffer;
 
   try {
@@ -29,61 +29,62 @@ export const markdownSSR = async (
   });
 };
 
-type renderToStringConfig = {
-  components?: any;
-  mdxOptions?: any;
-  scope?: any;
-};
-
-export const renderToString = (
+export const renderToString = async (
   source: Buffer | string,
-  { components, mdxOptions, scope = {} }: renderToStringConfig
-) => {
-  let jsSource;
+  { components, mdxOptions, scope = {} }: MarkdownRenderConfig
+): Promise<MarkdownContent> => {
   // transform it into react
-  return mdx(source, { ...mdxOptions, skipExport: true })
-    .then((code) => {
-      // mdx gives us back es6 code, we then need to transform into two formats:
-      // - first a version we can render to string right now as a "serialized" result
-      // - next a version that is fully browser-compatible that we can eval to rehydrate
-      return Promise.all([
-        // this one is for immediate evaluation so we can renderToString below
-        transformAsync(code, {
-          presets: [presetReact, presetEnv],
-          configFile: false,
-        }),
-        // this one is for the browser to eval and rehydrate, later
-        transformAsync(code, {
-          presets: [presetReact, presetEnv],
-          plugins: [pluginBrowser],
-          configFile: false,
-        }),
-      ]);
-    })
-    .then(([now, later]) => {
-      // evaluate the code
-      // NOTES:
-      // - relative imports can't be expected to work with remote files, we'd need
-      //   an extra babel transform to be able to import specific file paths
-      jsSource = later.code;
-      return new Function(
-        "React",
-        "MDXProvider",
-        "mdx",
-        "components",
-        ...Object.keys(scope),
-        `${now.code}
-    return React.createElement(MDXProvider, { components },
-      React.createElement(MDXContent, {})
-    );`
-      )(React, MDXProvider, mdxReact, components, ...Object.values(scope));
-    })
-    .then((component) => {
-      return {
-        compiledSource: jsSource,
-        // react: render to string
-        renderedOutput: reactRenderToString(component),
-        scope,
-      };
-    });
+  const code = await mdx(source, { ...mdxOptions, skipExport: true });
+
+  // mdx gives us back es6 code, we then need to transform into two formats:
+  // - first a version we can render to string right now as a "serialized" result
+  // - next a version that is fully browser-compatible that we can eval to rehydrate
+
+  // this one is for immediate evaluation so we can renderToString below
+  const now = await transformAsync(code, {
+    presets: [presetReact, presetEnv],
+    configFile: false,
+  });
+
+  // this one is for the browser to eval and rehydrate, later
+  const later = await transformAsync(code, {
+    presets: [presetReact, presetEnv],
+    plugins: [pluginBrowser],
+    configFile: false,
+  });
+
+  // evaluate the code
+  // NOTES:
+  // - relative imports can't be expected to work with remote files, we'd need
+  //   an extra babel transform to be able to import specific file paths
+  const fn = new Function(
+    "React",
+    "MDXProvider",
+    "mdx",
+    "components",
+    ...Object.keys(scope),
+    `${now.code}
+  return React.createElement(MDXProvider, { components },
+    React.createElement(MDXContent, {})
+  );`
+  );
+
+  const component = fn(
+    React,
+    MDXProvider,
+    mdxReact,
+    components,
+    ...Object.values(scope)
+  );
+
+  // react: render to string
+  // THIS WARNING HAPPENS HERE:
+  // "Component VersionWarn was not imported, exported, or provided by MDXProvider as global scope"
+  const renderedOutput = reactRenderToString(component);
+
+  return {
+    compiledSource: later.code,
+    renderedOutput,
+    scope,
+  };
 };

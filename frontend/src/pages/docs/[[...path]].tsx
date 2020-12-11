@@ -4,7 +4,7 @@ import components from "src/components/templates";
 // Client side
 // -
 
-import hydrate from "next-mdx-remote/hydrate";
+import { hydrate } from "src/mdx-helpers/csr";
 import { DocsSidebar } from "src/components/Sidebar";
 import Admonition from "src/components/Admonition";
 
@@ -64,15 +64,14 @@ const Page = (props: Props) => {
 // -
 
 import { extname } from "path";
-// import renderToString from "next-mdx-remote/render-to-string";
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import matter from "gray-matter";
 import glob from "glob";
 import admonitions from "remark-admonitions";
 
+import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
-import { renderToString } from "src/mdx-helpers/ssr";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
@@ -95,10 +94,8 @@ export async function getStaticProps(
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
   const mdxSource = await renderToString(content, {
-    mdxOptions: {
-      components,
-      remarkPlugins: [admonitions],
-    },
+    components,
+    remarkPlugins: [admonitions],
   });
 
   return {
