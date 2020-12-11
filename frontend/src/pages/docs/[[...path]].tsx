@@ -95,7 +95,7 @@ export async function getStaticProps(
   // also, pawn syntax highlighting
   const mdxSource = await renderToString(content, {
     components,
-    remarkPlugins: [admonitions],
+    mdxOptions: { remarkPlugins: [admonitions] },
   });
 
   return {
