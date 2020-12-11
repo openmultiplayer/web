@@ -20,7 +20,10 @@ func New(ctx context.Context, idx *docsindex.Index) *chi.Mux {
 	rtr := chi.NewRouter()
 	svc := service{ctx, idx}
 
+	fs := http.FileServer(http.Dir("docs/"))
+
 	rtr.Get("/search", svc.search)
+	rtr.Get("/*", http.StripPrefix("/docs/", fs).ServeHTTP)
 
 	return rtr
 }
