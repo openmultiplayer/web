@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import { Content } from "src/mdx-helpers/content";
 import { markdownCSR } from "src/mdx-helpers/csr";
+import { MarkdownContent } from "src/mdx-helpers/types";
 
 type Props = {
-  content: Content;
+  content: MarkdownContent;
 };
 
 const Page = ({ content }: Props) => (
