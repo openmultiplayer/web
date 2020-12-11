@@ -22,8 +22,8 @@ func New(ctx context.Context, idx *docsindex.Index) *chi.Mux {
 
 	fs := http.FileServer(http.Dir("docs/"))
 
-	rtr.Get("/search", svc.search)
 	rtr.Get("/*", http.StripPrefix("/docs/", fs).ServeHTTP)
+	rtr.Get("/search", svc.search)
 
 	return rtr
 }
