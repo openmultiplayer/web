@@ -108,11 +108,6 @@ export async function getStaticProps(
 }
 
 export async function getStaticPaths() {
-  const paths = glob
-    .sync("../docs/**/*.md") // read docs from the repo root
-    .map((v: string) => "/" + v.slice(3, v.length - extname(v).length))
-    .map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v));
-
   return {
     paths: [],
     fallback: true,
