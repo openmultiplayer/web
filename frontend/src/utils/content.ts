@@ -11,13 +11,24 @@ export const exists = (path: string): boolean => {
 };
 
 export const readMd = async (path: string): Promise<string> => {
-  const path_mdx = path + ".mdx";
-  const path_md = path + ".md";
-  if (exists(path_mdx)) {
-    return readFileSync(path_mdx).toString();
-  } else if (exists(path_md)) {
-    return readFileSync(path_md).toString();
+  const stripped = path.slice("../docs/".length, path.length);
+  const path_mdx = stripped + ".mdx";
+  const path_md = stripped + ".md";
+
+  let response: Response;
+
+  // TODO: Perform the md/mdx differentiation on the API, instead of here.
+
+  response = await fetch("https://api.open.mp/docs/" + path_md);
+  if (response.status !== 404) {
+    return response.text();
   }
+
+  response = await fetch("https://api.open.mp/docs/" + path_mdx);
+  if (response.status !== 404) {
+    return response.text();
+  }
+
   return undefined;
 };
 
