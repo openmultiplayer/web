@@ -20,12 +20,12 @@ export const readMd = async (path: string): Promise<string> => {
   // TODO: Perform the md/mdx differentiation on the API, instead of here.
 
   response = await fetch("https://api.open.mp/docs/" + path_md);
-  if (response.status !== 404) {
+  if (response.status === 200) {
     return response.text();
   }
 
   response = await fetch("https://api.open.mp/docs/" + path_mdx);
-  if (response.status !== 404) {
+  if (response.status === 200) {
     return response.text();
   }
 
