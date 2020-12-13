@@ -20,7 +20,7 @@ Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağr�
 | clickedplayerid | Tıklanılan oyuncunun id'si.     |
 | source          | Oyuncunun tıklamasının kaynağı. |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 1 - Bu callbackin diğer filterscriptlerde çağrılmasını engeller.
 

@@ -13,7 +13,7 @@ Bu callback oyuncu chat ekranında herhangi bir komut kullandığında çağrıl
 | playerid  | Komutu kullanan oyuncunun id'si.         |
 | cmdtext[] | Kullanılan komut ('/' işareti de dahil). |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman öncelikle filterscriptlerde çalışır ve 1 değerini döndürmek diğer scriptlerin çağrılmasını engeller.
 

@@ -14,7 +14,7 @@ Bu callback, bir oyuncu bir araca binmeye başladığında çağırılır, oyunc
 | vehicleid   | Oyuncunun binmeye çalıştığı aracın ID'si.            |
 | ispassenger | Şöför koltuğuna biniyor ise 0, yolu koltuğu ise 1.   |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 

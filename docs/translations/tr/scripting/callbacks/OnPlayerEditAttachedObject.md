@@ -30,7 +30,7 @@ Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağr
 | Float:fScaleY  | Editlenen objenin Y skalası.                                      |
 | Float:fScaleZ  | Editlenen objenin Z skalası.                                      |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 1 - Diğer filterscriptlerde çağrılmasını engeller.
 

@@ -15,7 +15,7 @@ Bu callback, bir oyuncu model cache indirmesini bitirdiğinde çağırılır.
 | playerid     | Model cacheini indirmeyi bitiren oyuncunun ID'si.                              |
 | virtualworld | Oyuncunun model cache indirmesini bitirdiği virtual world ID'si.               |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Bu callback herhangi bir geri döndürülen değer içermemekte.
 

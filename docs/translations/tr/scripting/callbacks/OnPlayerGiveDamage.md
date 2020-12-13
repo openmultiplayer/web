@@ -18,7 +18,7 @@ Bu callback, bir oyuncu başka bir oyuncuya hasar verdiğinde çağırılır.
 | weaponid  | Hasar alan oyuncunun hasar alma nedeni.                                                                                    |
 | bodypart  | Hasar alan oyuncuda hasarın isabet ettiği vücut bölümü. (Bu parametre 0.3z sürümünde eklenmiştir, eski sürümlerde yoktur.) |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 1 - Callback diğer filterscriptlerde çağırılmayacak.
 

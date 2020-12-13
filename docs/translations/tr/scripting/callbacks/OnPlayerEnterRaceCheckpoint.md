@@ -12,7 +12,7 @@ Bu callback, bir oyuncu yarış checkpointine girdiğinde çağırılır.
 | -------- | ----------------------------------------------------- |
 | playerid | Yarış checkpointine giren oyuncunun ID'si.            |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 

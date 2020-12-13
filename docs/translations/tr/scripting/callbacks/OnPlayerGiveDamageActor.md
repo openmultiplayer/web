@@ -18,7 +18,7 @@ Bu callback, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
 | weaponid        | Hasarın sebebi.                                       |
 | bodypart        | Hasarın isabet ettiği vücut bölümü.                   |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 1- Callback diğer filterscriptlerde çağırılmayacak.
 

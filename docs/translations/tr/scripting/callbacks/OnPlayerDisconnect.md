@@ -8,12 +8,12 @@ tags: ["player"]
 
 Bu callback oyuncu sunucudan ayrıldığında çağrılır.
 
-| Name     | Description                        |
+| İsim     | Açıklama                           |
 | -------- | ---------------------------------- |
 | playerid | Sunucudan ayrılan oyuncunun id'si. |
 | reason   | Sunucudan ayrılma sebebi.          |
 
-## Returns
+## Çalışınca Vereceği Sonuçlar
 
 0 - Diğer filterscriptlerde çağrılmasını engeller.
 

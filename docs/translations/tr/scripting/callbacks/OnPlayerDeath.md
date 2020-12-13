@@ -14,7 +14,7 @@ Bu callback bir oyuncu öldüğünde, intihar ettiğinde yada başka bir oyuncu 
 | killerid | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu yoksa INVALID_PLAYER_ID değeri döndürülür. |
 | reason   | Oyuncunun ölüm sebebinin ID'si.                                                             |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 0 - Diğer filterscriptlerin bu callbacki çağırmasını engeller.
 

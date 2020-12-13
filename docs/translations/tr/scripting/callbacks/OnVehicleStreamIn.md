@@ -15,7 +15,7 @@ Bir araç, oyuncunun işlem alanına girdiğinde çağırılıyor.
 | vehicleid   | Oyuncunun işlem aracına giren aracın ID'si.            |
 | forplayerid | İşlem alanına araç giren oyuncunun ID'si.              |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 

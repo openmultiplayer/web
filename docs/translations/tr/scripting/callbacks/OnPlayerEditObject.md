@@ -23,7 +23,7 @@ Bu callback bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObjec
 | Float:fRotY  | Güzenlenen objenin Y yönündeki rotasyonu.                                 |
 | Float:fRotZ  | Güzenlenen objenin Z yönündeki rotasyonu.                                 |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 1 - Diğer scriptlerin bu callbacke ulaşmasını engeller.
 
