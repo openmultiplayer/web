@@ -15,7 +15,7 @@ Bu callback bir oyuncu bir textdrawa tıkladığında yada ESC tuşu ile seçim 
 | playerid  | Textdrawa tıklayan oyuncunun ID'si.                                                     |
 | clickedid | Tıklanan tectdraw ID'si. Eğer seçim iptal edilirse INVALID_TEXT_DRAW değeri döndürülür. |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Filterscriptlerde her zaman ilk çağırılır, 1 değerini döndürmek diğer filterscriptlerin görmesini engeller.
 

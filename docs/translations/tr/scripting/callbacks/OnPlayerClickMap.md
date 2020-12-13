@@ -21,7 +21,7 @@ Bu callback oyuncu haritada bir yer işaretlediğinde çağrılır.
 | Float:fY | İşaretlediği yerin Y koordinatı.                                |
 | Float:fZ | İşaretlediği yerin Z koordinatı. (kullanışsız - notu inceleyin) |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 1 - Diğer filterscriptlerin bu callbacki çalıştırmasını engeller.
 

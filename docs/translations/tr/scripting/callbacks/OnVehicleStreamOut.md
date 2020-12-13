@@ -8,7 +8,6 @@ tags: ["vehicle"]
 
 ## Açıklama
 
-This callback is called when a vehicle is streamed out for a player's client (it's so far away that they can't see it).
 Bir araç, oyuncunun işlem alanının dışına çıktığında çağırılır(Oyuncuların göremeyeceği kadar uzakta).
 
 | İsim        | Açıklama                                                     |
@@ -16,7 +15,7 @@ Bir araç, oyuncunun işlem alanının dışına çıktığında çağırılır(
 | vehicleid   | İşlem alanının dışına çıkan aracın ID'si.                    |
 | forplayerid | İşlem alanından araç çıkan oyuncunun ID'si.                  |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 

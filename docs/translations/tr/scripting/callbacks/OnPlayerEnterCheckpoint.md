@@ -12,7 +12,7 @@ Bu callback, bir oyuncu kendisi için oluşturulan checkpointe giriş yaptığı
 | -------- | -------------------------------------- |
 | playerid | Checkpointe giren oyuncunun ID'si.     |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 

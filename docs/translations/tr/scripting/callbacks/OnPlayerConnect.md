@@ -12,7 +12,7 @@ Bu callback oyuncu sunucuya bağlandığında çağrılır.
 | -------- | ------------------------- |
 | playerid | Bağlanan oyuncunun id'si. |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 0 - Diğer filterscriptler içerisinde çağrılmasını engeller.
 

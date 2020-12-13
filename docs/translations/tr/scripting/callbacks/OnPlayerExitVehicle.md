@@ -13,7 +13,7 @@ Bu callback, araçta bulunan bir oyuncu bir araçtan inmeye başladığında ça
 | playerid  | Araçtan inmekte olan oyuncunun ID'si.           |
 | vehicleid | Oyuncunun inmekte olduğu aracın ID'si.          |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 

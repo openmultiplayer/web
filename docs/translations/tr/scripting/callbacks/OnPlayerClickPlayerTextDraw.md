@@ -15,7 +15,7 @@ Bu callback, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır.
 | playerid     | Textdrawa tıklayan oyuncunun ID'si. |
 | playertextid | Tıklanan player-textdrawın ID'si.   |
 
-## Geri Döndürülen Değerler
+## Çalışınca vereceği sonuçlar
 
 Filterscriptlerde her zaman ilk çağırılır, 1 değerini döndürmek diğer filterscriptlerin görmesini engeller.
 
