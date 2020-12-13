@@ -18,7 +18,7 @@ Radyanlardaki bir ark kosininin ters değerini alın.
 | ----------- | -------------------- |
 | Float:value | ark kosinüsü girişi. |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 [0, pi] radyanlarda x'in ana ark kosinüsü. Bir radyan 180/PI'ye eşdeğerdir.
 

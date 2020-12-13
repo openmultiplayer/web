@@ -15,7 +15,7 @@ Bu fonksiyon, /scriptfiles klasörü içerisinde bir SQLite veritabanı açmak i
 | ------ | ------------------------ |
 | name[] | Veritabanının dosya adı. |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 Veritabanı dosyasının dizinini döndürür. (1'den başlar.)
 

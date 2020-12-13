@@ -14,7 +14,7 @@ Belirli bir menüye öğe ekler.
 | column  | Öğenin ekleneceği sütun.       |
 | title[] | Yeni menü öğesinin başlığı.    |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 Bu öğenin eklendiği satırın dizini.
 
