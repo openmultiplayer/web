@@ -15,7 +15,7 @@ Daha önceden [db_open](db_open) fonksiyonu ile açılmış olan veritabanı ba�
 | ----- | --------------------------------------------------------------------------------- |
 | DB:db | Kapatılacak veritabanı bağlantısı adı. ([db_open](db_open)'dan geri döndürülür.). |
 
-## Geri Döndürülen Değerler
+## Çalışınca Vereceği Sonuçlar
 
 1: Fonksiyon başarılı bir şekilde gerçekleştirildi.
 

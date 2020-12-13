@@ -22,7 +22,7 @@ Class seçimine yeni bir class ekler. Kullanıcılar seçtikleri classın skinle
 | weapon3       | Class oyuncularının üçüncül silah numarası.                   |
 | weapon3_ammo  | Class oyuncularının üçüncül silahlarının mermi sayısı.        |
 
-## Geri Dönüşler
+## Çalışınca Vereceği Sonuçlar
 
 Bu fonksiyon, geri dönüş olarak oluşturulan classın ID bilgisini verecektir.
 

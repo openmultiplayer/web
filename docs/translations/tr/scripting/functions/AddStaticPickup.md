@@ -17,7 +17,7 @@ Bu işlev oyuna "statik" bir toplama ekler. Bu manyetikler, komut dosyası yazma
 | Float:Z                             | pickup mekanizmasını oluşturmak için Z koordinatı.                                                     |
 | virtualworld                        | Toplanma sağlayacak sanal dünya kimliği. Dünyalarda teslim alma özelliğini göstermek için -1 kullanın. |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 1 kaldırma mekanizması başarıyla oluşturuldu.
 

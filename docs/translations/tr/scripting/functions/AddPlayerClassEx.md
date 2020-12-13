@@ -23,7 +23,7 @@ Bu işlev, bir takım parametresi eklenmesiyle birlikte AddPlayerClass işleviyl
 | weapon3       | Oyuncunun üçüncü silahı.                |
 | weapon3_ammo  | Üçüncü silah mühimmat miktarı.          |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 Yeni eklenen sınıfın kimliği.
 

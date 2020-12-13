@@ -24,7 +24,7 @@ Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacak
 | timeon       | Dünya oyun zamanı (saat) bu nesne görünür.                                                                                    |
 | timeoff      | Dünya oyun zamanı (saat) bu nesne kaybolacak.                                                                                 |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 1: İşlev başarıyla yürütüldü.
 

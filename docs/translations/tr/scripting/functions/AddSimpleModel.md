@@ -22,7 +22,7 @@ Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacak
 | dffname      | Modellerde bulunan .dff modeli çarpışma dosyasının adı varsayılan olarak sunucu klasörü (çalışma yolu ayarı)                  |
 | txdname      | Modeller sunucu klasöründe varsayılan olarak bulunan .txd model kaplama dosyasının adı (çalışma yolu ayarı).                  |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 1: İşlev başarıyla yürütüldü.
 

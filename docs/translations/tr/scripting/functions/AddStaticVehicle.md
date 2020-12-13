@@ -18,7 +18,7 @@ Oyun moduna bir "statik" araç ekler (modeller oyuncular için önceden yükleni
 | [color1](../resources/vehiclecolorid.md) | Birincil renk kimliği. rastgele için -1. |
 | [color2](../resources/vehiclecolorid.md) | İkincil renk kimliği. rastgele için -1.  |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 Oluşturulan aracın araç kimliği (1 ile MAX_VEHICLES arasında).
 
