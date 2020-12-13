@@ -1,9 +1,9 @@
 ---
 title: Hozzájárulás
-description: Hogyan járulhatunk hozzá az SA-MP Wiki és az open.mp dokumentációhoz.
+description: Hogyan járulhatok hozzá az SA-MP Wiki és az open.mp dokumentációhoz.
 ---
 
-Ez a dokumentációs forrás bárki számára elérhető, hogy hozzájáruljon a változtatásokhoz! Minden amire szüksége van az a [GitHub](https://github.com) fiók és egy kevés szabadidő. Nem is kell ismerned hozzá a Git-et, mindezt megteheted a webes felületről!
+Ez a dokumentációs forrás bárki számára elérhető, azért hogy hozzá tudjon járulni a változtatásokhoz! Amire szükséged van az egy [GitHub](https://github.com) fiók és egy kevés szabadidő. Valamint ajánlott egy [Notepad++](https://notepad-plus-plus.org/downloads/)-t is beszerezni, de nem kötelező. Nem kell ismerned hozzá a Git-et, mindezt megteheted a webes felületről!
 
 ## Tartalom szerkesztése
 
@@ -21,15 +21,15 @@ Végezzd el a szerkesztést, és küldj be egy "Pull Request" ("Húzási kérele
 
 ### GitHub Felület
 
-Ha egy könyvtárat tallóz a GitHubon, a fájllista jobb felső sarkában található egy Add file ("Fájl hozzáadása") gomb:
+Ha egy könyvtárat tallózol a GitHubon, a fájllista jobb felső sarkában található egy Add file ("Fájl hozzáadása") gomb:
 
 ![Add file button](/images/contributing/add-new-file.png)
 
-Vagy feltölthet egy már írt Markdown fájlt, vagy közvetlenül a GitHub szövegszerkesztőbe írhatja.
+Vagy feltölthetsz egy már írt Markdown fájlt, vagy közvetlenül a GitHub szövegszerkesztőbe írhatod.
 
-A fájlnak `.md` kiterjesztéssel _kell_ rendelkeznie és tartalmaznia kell a Markdown-t. Ha többet szeretne tudni a Markdownról, olvassa el [ezt az útmutatót](https://guides.github.com/features/mastering-markdown/).
+A fájlnak `.md` kiterjesztéssel _kell_ rendelkeznie és tartalmaznia kell a Markdown-t. Ha többet szeretnél tudni a Markdownról, olvasd el [ezt az útmutatót](https://guides.github.com/features/mastering-markdown/).
 
-Miután ez megtörtént, nyomja meg a "Propose new file" ("Új fájl javaslata") gombot, és a húzási kérelem megnyílik áttekintésre.
+Miután ez megtörtént, nyomd meg a "Propose new file" ("Új fájl javaslata") gombot, és a húzási kérelem megnyílik áttekintésre.
 
 ### Git
 
@@ -46,9 +46,7 @@ Nyisd meg a kedvenc szerkesztődben. Én ajánlom a Visual Studio Code-t, mivel 
 Két bővítményt ajánlok az élmény javítása érdekében:
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) David Anson által - ez egy olyan kiterjesztés, amely biztosítja, hogy a Markdown formázása megfelelő legyen. Megakadályozza egyes szintaktikai és szemantikai hibákat. Nem minden figyelmeztetés fontos, de néhány segíthet az olvashatóság javításában. Használd a legjobb megítélésed szerint, és ha kétséged vannak, kérdezz meg egy ebben jártas személyt!
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Prettier.js Csapat által - this is a formatter that will automatically format your Markdown files so they all use a consistent style. The Wiki repository has some settings in its `package.json` that the extension should automatically use. Be sure to enable "Format On Save" in your editor settings so your Markdown files will be automatically formatted every time you save!
-
-ez egy formázó, amely automatikusan formázza a Markdown fájlokat, így azok használata következetes stílusban történik. A Wiki adattárban vannak olyan beállítások, `package.json` amelyeket a bővítménynek automatikusan használnia kell. Ügyeljen arra, hogy engedélyezze a "Format On Save" elemet a szerkesztő beállításaiban, így a Markdown fájlok minden formázáskor automatikusan formázódnak!
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Prettier.js Csapat által - ez egy formázó, amely automatikusan formázza a Markdown fájlokat, így azok használata következetes stílusban történik. A Wiki adattárban vannak olyan beállítások, `package.json` amelyeket a bővítménynek automatikusan használnia kell. Ügyeljen arra, hogy engedélyezze a "Format On Save" elemet a szerkesztő beállításaiban, így a Markdown fájlok minden formázáskor automatikusan formázódnak!
 
 ## Jegyzetek, tippek és egyezmények
 
@@ -160,7 +158,7 @@ Ha egy táblázat fejléceket tartalmaz, akkor a felső részre kerülnek:
 
 ## Áttérés a SA-MP Wikiből
 
-A tartalom nagy része áthelyezésre került, de ha hiányzó oldalt talál, íme egy rövid útmutató a tartalom Markdown-fé konvertálásához.
+A tartalom nagy része áthelyezésre került, de ha hiányzó oldalt találsz, íme egy rövid útmutató a tartalom Markdown-fé konvertálásához.
 
 ### A HTML megszerzése
 
@@ -184,7 +182,7 @@ Először nyisd meg a fejlesztői eszközt a Ctrl + Shift + I billentyűkombiná
 
    ![image](/images/contributing/77befe2749fd.png)
 
-3. Copy the inner HTML of that element
+3. Másold ki az Inner HTML-t (Copy -> Inner HTML)
 
    ![image](/images/contributing/8c7c75cfabad.png)
 
