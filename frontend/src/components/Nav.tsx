@@ -77,7 +77,7 @@ const NavList = ({ items, route, show, auth }) => (
     ].join(" ")}
   >
     {buildNav(route)(items)}
-    {auth
+    {/* TODO: Add this back after the dust settles! {auth
       ? navItemToJSX({
           name: "Dashboard",
           path: "/dashboard",
@@ -87,7 +87,7 @@ const NavList = ({ items, route, show, auth }) => (
           name: "Login",
           path: "/login",
           extra: selectedClass(route === "/login"),
-        })}
+        })} */}
     <NavListItem className={show || "db-ns dn"}>
       <LanguageSelect />
     </NavListItem>
