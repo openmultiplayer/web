@@ -28,7 +28,7 @@ func New(
 	db *db.PrismaClient,
 	storage serverdb.Storer,
 	sampqueryer queryer.Queryer,
-	docsindex docsindex.Index,
+	idx *docsindex.Index,
 	oaGitHub authentication.OAuthProvider,
 	oaDiscord authentication.OAuthProvider,
 ) *chi.Mux {
@@ -52,7 +52,7 @@ func New(
 
 	router.Mount("/", legacy.New(ctx, storage, sampqueryer))
 	router.Mount("/server", servers.New(ctx, storage, sampqueryer))
-	router.Mount("/docs", docs.New(app.ctx, docsindex))
+	router.Mount("/docs", docs.New(ctx, idx))
 	router.Mount("/auth", auth.New(
 		auther,
 		oaGitHub,
