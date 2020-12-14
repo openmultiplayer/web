@@ -16,6 +16,8 @@ import (
 	"golang.org/x/oauth2"
 
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/mailreg"
+	"github.com/openmultiplayer/web/server/src/mailworker"
 )
 
 var _ OAuthProvider = &DiscordProvider{}
@@ -147,6 +149,16 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 	).Exec(ctx)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to create user Discord relationship")
+	}
+
+	if err := mailworker.Enqueue(
+		dcuser.Username,
+		dcuser.Email,
+		"Welcome to open.mp!",
+		mailreg.TemplateID("welcome"),
+		struct{}{},
+	); err != nil {
+		return nil, err
 	}
 
 	return &user, nil

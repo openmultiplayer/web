@@ -13,6 +13,8 @@ import (
 	githuboa "golang.org/x/oauth2/github"
 
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/mailreg"
+	"github.com/openmultiplayer/web/server/src/mailworker"
 )
 
 var _ OAuthProvider = &GitHubProvider{}
@@ -119,6 +121,16 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 	).Exec(ctx)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to create user GitHub relationship")
+	}
+
+	if err := mailworker.Enqueue(
+		githubUser.GetName(),
+		githubUser.GetEmail(),
+		"Welcome to open.mp!",
+		mailreg.TemplateID("welcome"),
+		struct{}{},
+	); err != nil {
+		return nil, err
 	}
 
 	return &user, nil
