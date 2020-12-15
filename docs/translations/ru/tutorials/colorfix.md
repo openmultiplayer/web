@@ -3,7 +3,7 @@ title: "Color Fix"
 descripion: Базовый скрипт для добавления большего количества цветов для ников игроков.
 ---
 
-Этот туториал придназначен для работы с [GetPlayerColor](../scripting/functions/GetPlayerColor), если вы не используете [SetPlayerColor](../scripting/functions/SetPlayerColor) в вашем скрипте при подключении игрока.
+Этот туториал предназначен для работы с [GetPlayerColor](../scripting/functions/GetPlayerColor), если вы не используете [SetPlayerColor](../scripting/functions/SetPlayerColor) в вашем скрипте при подключении игрока.
 
 ```c
 new PlayerColors[] = {
