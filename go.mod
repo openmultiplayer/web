@@ -38,4 +38,5 @@ require (
 	golang.org/x/text v0.3.4 // indirect
 	golang.org/x/tools v0.0.0-20201201161351-ac6f37ff4c2a // indirect
 	gopkg.in/yaml.v2 v2.4.0
+	nhooyr.io/websocket v1.8.6
 )

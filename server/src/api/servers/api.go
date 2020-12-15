@@ -21,6 +21,7 @@ func New(ctx context.Context, storer serverdb.Storer, queryer queryer.Queryer) *
 	rtr.Get("/{address}", svc.get)
 	rtr.Get("/", svc.list)
 	rtr.Post("/", svc.add)
+	rtr.Post("/{address}/vertify", svc.vertify)
 
 	return rtr
 }
