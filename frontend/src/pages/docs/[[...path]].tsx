@@ -63,10 +63,8 @@ const Page = (props: Props) => {
 // Server side
 // -
 
-import { extname } from "path";
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import matter from "gray-matter";
-import glob from "glob";
 import admonitions from "remark-admonitions";
 
 import { renderToString } from "src/mdx-helpers/ssr";

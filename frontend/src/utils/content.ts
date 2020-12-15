@@ -1,4 +1,4 @@
-import { statSync, readFileSync } from "fs";
+import { statSync } from "fs";
 import { resolve } from "path";
 
 export const exists = (path: string): boolean => {
@@ -11,9 +11,12 @@ export const exists = (path: string): boolean => {
 };
 
 export const readMd = async (path: string): Promise<string> => {
-  const stripped = path.slice("../docs/".length, path.length);
-  const path_mdx = stripped + ".mdx";
-  const path_md = stripped + ".md";
+  if (path === "") {
+    path = "index";
+  }
+
+  const path_mdx = path + ".mdx";
+  const path_md = path + ".md";
 
   let response: Response;
 
@@ -21,12 +24,12 @@ export const readMd = async (path: string): Promise<string> => {
 
   response = await fetch("https://api.open.mp/docs/" + path_md);
   if (response.status === 200) {
-    return response.text();
+    return await response.text();
   }
 
   response = await fetch("https://api.open.mp/docs/" + path_mdx);
   if (response.status === 200) {
-    return response.text();
+    return await response.text();
   }
 
   return undefined;
@@ -52,17 +55,15 @@ export const readLocaleDocs = async (name: string, locale?: string) => {
     fullName = `translations/${locale}/${name}`;
   }
 
-  let fullPath = `../docs/${fullName}`;
-  let source = await readMd(fullPath);
+  let source = await readMd(fullName);
   if (source !== undefined) {
-    return { source, fallback: false, fullPath };
+    return { source, fallback: false, fullName };
   }
 
-  fullPath = `../docs/${name}`;
-  source = await readMd(fullPath);
+  source = await readMd(name);
   if (source !== undefined) {
-    return { source, fallback: true, fullPath };
+    return { source, fallback: true, name };
   }
 
-  throw new Error("Not found");
+  throw new Error(`Not found (${name})`);
 };
