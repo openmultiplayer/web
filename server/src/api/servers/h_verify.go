@@ -8,10 +8,11 @@ import (
 	"nhooyr.io/websocket"
 
 	"github.com/go-chi/chi"
-	"github.com/openmultiplayer/web/server/src/serververify"
-	"github.com/openmultiplayer/web/server/src/web"
 	"github.com/pkg/errors"
 	"github.com/thanhpk/randstr"
+
+	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/web"
 )
 
 // This is a WebSocket handler.
@@ -32,18 +33,25 @@ func (s *service) vertify(w http.ResponseWriter, r *http.Request) {
 		web.StatusBadRequest(w, errors.New("missing address in path"))
 		return
 	}
-
-	c, err := websocket.Accept(w, r, nil)
-	if err != nil {
-		web.StatusBadRequest(w, err)
+	info, ok := authentication.GetAuthenticationInfo(w, r)
+	if !ok {
 		return
+	}
+
+	c, err := websocket.Accept(w, r, &websocket.AcceptOptions{
+		OriginPatterns: []string{
+			"localhost:3000", // Local development, `npm run dev`
+			"open.mp",        // Live public website
+		},
+	})
+	if err != nil {
+		return // websocket.Accept writes its own errors
 	}
 	defer c.Close(websocket.StatusInternalError, "unknown")
 
-	v := serververify.Verifyer{}
 	code := randstr.String(16)
 
-	ch, err := v.Verify(r.Context(), address, code)
+	ch, err := s.verifier.Verify(r.Context(), address, code)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
@@ -61,9 +69,16 @@ func (s *service) vertify(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
+		if m.Verified {
+			if _, err := s.verifier.Link(r.Context(), info.Cookie.UserID, address); err != nil {
+				m.Verified = false
+				m.Error = err.Error()
+			}
+		}
+
 		if err := json.NewEncoder(ws).Encode(m); err != nil {
-			web.StatusInternalServerError(w, err)
 			return
 		}
+		ws.Close()
 	}
 }

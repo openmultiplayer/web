@@ -23,6 +23,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/scraper"
 	"github.com/openmultiplayer/web/server/src/seed"
 	"github.com/openmultiplayer/web/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/worker"
 )
 
@@ -85,8 +86,10 @@ func Initialise(root context.Context) (app *App, err error) {
 	oaGitHub := authentication.NewGitHubProvider(app.prisma, app.config.GithubClientID, app.config.GithubClientSecret)
 	oaDiscord := authentication.NewDiscordProvider(app.prisma, app.config.DiscordClientID, app.config.DiscordClientSecret)
 
+	verifier := serververify.New(app.prisma)
+
 	app.server = http.Server{
-		Handler: api.New(app.ctx, auth, app.prisma, storage, sampqueryer, idx, oaGitHub, oaDiscord),
+		Handler: api.New(app.ctx, auth, app.prisma, storage, sampqueryer, idx, oaGitHub, oaDiscord, verifier),
 		Addr:    "0.0.0.0:80",
 		BaseContext: func(net.Listener) context.Context {
 			return app.ctx

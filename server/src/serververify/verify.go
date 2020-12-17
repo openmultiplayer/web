@@ -5,9 +5,17 @@ import (
 	"time"
 
 	sampquery "github.com/Southclaws/go-samp-query"
+
+	"github.com/openmultiplayer/web/server/src/db"
 )
 
-type Verifyer struct{}
+type Verifyer struct {
+	db *db.PrismaClient
+}
+
+func New(db *db.PrismaClient) *Verifyer {
+	return &Verifyer{db}
+}
 
 type VerifyStatus struct {
 	Verified bool   `json:"verified"`
@@ -53,4 +61,12 @@ func (v *Verifyer) Verify(ctx context.Context, ip, code string) (chan VerifyStat
 	}()
 
 	return ch, nil
+}
+
+func (v *Verifyer) Link(ctx context.Context, userid, serverip string) (db.UserModel, error) {
+	return v.db.User.FindOne(db.User.ID.Equals(userid)).Update(
+		db.User.Servers.Link(
+			db.Server.IP.Equals(serverip),
+		),
+	).Exec(ctx)
 }
