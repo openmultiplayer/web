@@ -1,12 +1,13 @@
 ---
 title: "Color Fix"
-descripion: A basic script to add more player colours.
+descripion: Un script básico para agregar más colores al jugador.
 ---
 
-This tutorial is to be used with [GetPlayerColor](../scripting/functions/GetPlayerColor), if you do not use [SetPlayerColor](../scripting/functions/SetPlayerColor) in your script when players connect.
+Este tutorial se debe utilizar con [GetPlayerColor](../scripting/functions/GetPlayerColor), si no usas [SetPlayerColor](../scripting/functions/SetPlayerColor) En tu guión cuando los jugadores se conectan.
 
 ```c
-new PlayerColors[] = {
+new PlayerColors[] = 
+{
     0xFF8C13FF,0xC715FFFF,0x20B2AAFF,0xDC143CFF,0x6495EDFF,0xf0e68cFF,0x778899FF,0xFF1493FF,0xF4A460FF,0xEE82EEFF,
     0xFFD720FF,0x8b4513FF,0x4949A0FF,0x148b8bFF,0x14ff7fFF,0x556b2fFF,0x0FD9FAFF,0x10DC29FF,0x534081FF,0x0495CDFF,
     0xEF6CE8FF,0xBD34DAFF,0x247C1BFF,0x0C8E5DFF,0x635B03FF,0xCB7ED3FF,0x65ADEBFF,0x5C1ACCFF,0xF2F853FF,0x11F891FF,
@@ -20,20 +21,21 @@ new PlayerColors[] = {
 };
 ```
 
-First place that at the top of your script.
+Primero coloque eso en la parte superior de su guión.
 
-Next place this under the OnPlayerConnect callback:
+A continuación, coloque esto debajo en el callback llamado OnPlayerConnect:
 
 ```c
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);
 ```
 
-Now [GetPlayerColor](../scripting/functions/GetPlayerColor) will work!
+Ahora [GetPlayerColor](../scripting/functions/GetPlayerColor) ¡trabajará!
 
-For new versions of SA-MP you can add this array:
+Para nuevas versiones de SA-MP, puede agregar este array:
 
 ```c
-new PlayerRainbowColors[511] = {
+new PlayerRainbowColors[511] = 
+{
     /*OKStyle*/ 0x000022FF, 0x000044FF, 0x000066FF, 0x000088FF, 0x0000AAFF, 0x0000CCFF, 0x0000EEFF,
     0x002200FF, 0x002222FF, 0x002244FF, 0x002266FF, 0x002288FF, 0x0022AAFF, 0x0022CCFF, 0x0022EEFF,
     0x004400FF, 0x004422FF, 0x004444FF, 0x004466FF, 0x004488FF, 0x0044AAFF, 0x0044CCFF, 0x0044EEFF,
@@ -108,4 +110,5 @@ new PlayerRainbowColors[511] = {
 };
 ```
 
-Now there are no duplicated colors, the colors are distributed to the maximum number of slots, the step of color - 34, and the TAB of full server looks like a rainbow!
+Ahora no hay colores duplicados, los colores se distribuyen al número máximo de ranuras, el paso de color - 34, ¡y la TAB de servidor completo parece un arcoíris!
+
