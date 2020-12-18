@@ -9,9 +9,8 @@ networks:
 
 services:
   api:
-    build: .
     restart: on-failure
-    image: southclaws/openmp-api
+    image: southclaws/openmp-web
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/prisma?schema=public
       LOG_LEVEL: debug
