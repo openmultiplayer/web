@@ -8,7 +8,6 @@ import NProgress from "nprogress";
 
 import Nav from "src/components/Nav";
 import Footer from "src/components/Footer";
-import components from "src/components/templates";
 
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
