@@ -15,6 +15,7 @@ import (
 
 type Index struct {
 	db bleve.Index
+	path string
 }
 
 type Document struct {
@@ -26,7 +27,9 @@ type Document struct {
 }
 
 func New(dbpath, docspath string) (*Index, error) {
-	i := Index{}
+	i := Index{
+		path: docspath,
+	}
 
 	idx, err := bleve.Open(dbpath)
 	if err != nil {
@@ -36,11 +39,11 @@ func New(dbpath, docspath string) (*Index, error) {
 		}
 	}
 	i.db = idx
-
-	if err := i.buildIndex(docspath); err != nil {
-		return nil, err
-	}
 	return &i, nil
+}
+
+func (i *Index) Build() error {
+	return i.buildIndex(i.path)
 }
 
 func (i *Index) Search(query string) (*bleve.SearchResult, error) {
