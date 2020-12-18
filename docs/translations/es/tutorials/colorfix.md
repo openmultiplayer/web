@@ -110,5 +110,5 @@ new PlayerRainbowColors[511] =
 };
 ```
 
-Ahora no hay colores duplicados, los colores se distribuyen al número máximo de ranuras, el paso de color - 34, ¡y la TAB de servidor completo parece un arcoíris!
+Ahora no hay colores duplicados, los colores se distribuyen al número máximo de ranuras, el paso de color - 34, y el TAB del servidor completo parece un arcoíris!
 
