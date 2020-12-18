@@ -1,0 +1,15 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-go@v2-beta
+      - uses: actions/checkout@v2
+      - run: go get -v -t -d ./server
+
+      - name: Test
+        run: go test -v ./server/...
