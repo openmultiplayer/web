@@ -18,6 +18,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -31,6 +32,7 @@ func New(
 	idx *docsindex.Index,
 	oaGitHub authentication.OAuthProvider,
 	oaDiscord authentication.OAuthProvider,
+	verifier *serververify.Verifyer,
 ) *chi.Mux {
 	router := chi.NewRouter()
 	router.Use(
@@ -51,7 +53,7 @@ func New(
 	)
 
 	router.Mount("/", legacy.New(ctx, storage, sampqueryer))
-	router.Mount("/server", servers.New(ctx, storage, sampqueryer))
+	router.Mount("/server", servers.New(ctx, storage, sampqueryer, verifier))
 	router.Mount("/docs", docs.New(ctx, idx))
 	router.Mount("/auth", auth.New(
 		auther,
