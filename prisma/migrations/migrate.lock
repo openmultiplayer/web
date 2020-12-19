@@ -1,3 +1,7 @@
 # Prisma Migrate lockfile v1
 
 20201009191311-genesis
+20201119212409-auth
+20201120005130-verification-key-unique
+20201204161750-oauth-github
+20201206045716-oauth-discord

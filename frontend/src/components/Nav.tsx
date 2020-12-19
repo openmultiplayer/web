@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import LanguageSelect from "./LanguageSelect";
 import Hamburger from "./Hamburger";
+import { useIsAuthenticated } from "src/auth/hooks";
 
 type NavItem = {
   name: string;
@@ -53,7 +54,7 @@ type Props = {
   route: string;
 };
 
-const NavList = ({ items, route, show }) => (
+const NavList = ({ items, route, show, auth }) => (
   <ul
     className={[
       // Generic
@@ -76,6 +77,17 @@ const NavList = ({ items, route, show }) => (
     ].join(" ")}
   >
     {buildNav(route)(items)}
+    {/* TODO: Add this back after the dust settles! {auth
+      ? navItemToJSX({
+          name: "Dashboard",
+          path: "/dashboard",
+          extra: selectedClass(route === "/dashboard"),
+        })
+      : navItemToJSX({
+          name: "Login",
+          path: "/login",
+          extra: selectedClass(route === "/login"),
+        })} */}
     <NavListItem className={show || "db-ns dn"}>
       <LanguageSelect />
     </NavListItem>
@@ -84,6 +96,8 @@ const NavList = ({ items, route, show }) => (
 
 const Nav = ({ items, route }: Props) => {
   const [show, setShow] = useState(false);
+  const authenticated = useIsAuthenticated();
+
   return (
     <>
       <nav role="main" className="flex items-stretch bb b--black-30 bg-white">
@@ -98,7 +112,7 @@ const Nav = ({ items, route }: Props) => {
             </a>
           </Link>
         </div>
-        <NavList items={items} route={route} show={show} />
+        <NavList items={items} route={route} show={show} auth={authenticated} />
         <div className="flex-shrink-0 pa2 dn-ns ml-auto">
           <Hamburger active={show} toggle={setShow} />
         </div>

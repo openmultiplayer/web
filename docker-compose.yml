@@ -84,6 +84,13 @@ services:
       traefik.http.routers.omp_index_prom.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
 
+  rabbit:
+    image: rabbitmq
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+
   pgadmin:
     image: dpage/pgadmin4
     restart: always

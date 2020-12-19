@@ -10,11 +10,43 @@ generator client {
   binaryTargets = ["native"]
 }
 
+enum AuthMethod {
+  GITHUB
+  DISCORD
+}
+
 model User {
-  id      String   @id @default(uuid())
-  email   String
-  name    String
+  id         String     @id @default(uuid())
+  email      String     @unique
+  authMethod AuthMethod
+  github     GitHub?
+  discord    Discord?
+
+  name  String
+  admin Boolean @default(false)
+
   servers Server[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GitHub {
+  userId String @id
+  user   User   @relation(fields: [userId], references: [id])
+
+  accountId String @unique
+  username  String @unique
+  email     String @unique
+}
+
+model Discord {
+  userId String @id
+  user   User   @relation(fields: [userId], references: [id])
+
+  accountId String @unique
+  username  String @unique
+  email     String @unique
 }
 
 model Server {

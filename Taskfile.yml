@@ -8,15 +8,21 @@ tasks:
 
   services:
     cmds:
-      - docker-compose up -d rudolfs postgres
+      - docker-compose -f .\docker-compose.dev.yml up -d
 
   generate:
     cmds:
-      - npx prisma generate
+      # Calling the Go generator from the Prisma CLI is not supported yet...
+      # - npx @prisma/cli generate
+      # so we call it directly:
+      - go run github.com/prisma/prisma-client-go generate
+      # Also generate TypeScript type declarations from some backend structs.
+      - go run types.go
 
   migrate:
     cmds:
-      - npx prisma migrate save --experimental
+      - npx @prisma/cli migrate save --experimental
+      - npx @prisma/cli migrate up --experimental
 
   dbuild:
     cmds:
@@ -26,3 +32,8 @@ tasks:
     dir: frontend/public
     cmds:
       - mc cp --recursive images omp/assets
+
+  build-email-templates:
+    dir: emails
+    cmds:
+      - npm run build

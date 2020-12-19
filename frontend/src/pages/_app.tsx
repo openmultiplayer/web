@@ -1,6 +1,7 @@
+import App, { AppInitialProps } from "next/app";
+import type { AppProps, AppContext } from "next/app";
 import Head from "next/head";
 import Router from "next/router";
-import type { AppProps } from "next/app";
 import { NextSeo } from "next-seo";
 import { ToastContainer } from "react-nextjs-toast";
 import { MDXProvider } from "@mdx-js/react";
@@ -15,13 +16,24 @@ import "nprogress/nprogress.css";
 import "remark-admonitions/styles/classic.css";
 
 import "src/styles/base.css";
+import { AuthProvider } from "src/auth/hooks";
+import { isAuthenticatedFromRequest } from "src/auth";
 
 // Trigger client-side progress bar for client-side page transitions.
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
-const MyApp = ({ Component, pageProps, router }: AppProps) => (
+type Props = {
+  authenticated: boolean;
+};
+
+const MyApp = ({
+  Component,
+  pageProps,
+  router,
+  authenticated,
+}: AppProps & Props) => (
   <>
     <Head>
       <link rel="stylesheet" href="/fonts.css" />
@@ -43,30 +55,32 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
 
     {/* This is flex to make <section> elements gapless */}
     <div id="container">
-      <Nav
-        items={[
-          { name: "Home", path: "/", exact: true },
-          { name: "Servers", path: "/servers" },
-          { name: "Docs", path: "/docs" },
-        ]}
-        route={router.pathname}
-      />
+      <AuthProvider authenticated={authenticated}>
+        <Nav
+          items={[
+            { name: "Home", path: "/", exact: true },
+            { name: "Servers", path: "/servers" },
+            { name: "Docs", path: "/docs" },
+          ]}
+          route={router.pathname}
+        />
 
-      <main>
-        {router.pathname.startsWith("/blog") ? (
-          <MDXProvider
-            components={{
-              wrapper: ({ children }) => (
-                <article className="measure-wide center">{children}</article>
-              ),
-            }}
-          >
+        <main>
+          {router.pathname.startsWith("/blog") ? (
+            <MDXProvider
+              components={{
+                wrapper: ({ children }) => (
+                  <article className="measure-wide center">{children}</article>
+                ),
+              }}
+            >
+              <Component {...pageProps} />
+            </MDXProvider>
+          ) : (
             <Component {...pageProps} />
-          </MDXProvider>
-        ) : (
-          <Component {...pageProps} />
-        )}
-      </main>
+          )}
+        </main>
+      </AuthProvider>
     </div>
 
     <Footer />
@@ -87,5 +101,17 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
     `}</style>
   </>
 );
+
+MyApp.getInitialProps = async (
+  appContext: AppContext
+): Promise<AppInitialProps & Props> => {
+  const appProps = await App.getInitialProps(appContext);
+  const authenticated = isAuthenticatedFromRequest(appContext.ctx.req);
+
+  return {
+    ...appProps,
+    authenticated,
+  };
+};
 
 export default MyApp;
