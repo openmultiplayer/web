@@ -41,6 +41,8 @@ export const getServerSideProps = async (
     state: ctx.query["state"] as string,
   };
 
+  console.log("state:", ctx.query);
+
   const response = (
     await apiSSP<{ headers: Headers }>(
       "/auth/github/callback",
