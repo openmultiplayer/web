@@ -20,11 +20,16 @@ WORKDIR /server
 
 ADD . .
 
-RUN go get github.com/prisma/prisma-client-go@master
-RUN prisma-client-go generate
-RUN go build -o server.exe ./server/
+# Install prisma client code generation tool and generate prisma bindings
+RUN go run github.com/prisma/prisma-client-go generate
 
 # Install prisma command for automatic migrations.
 RUN npm install --global @prisma/cli
+
+# Build the docs search index
+RUN go run ./server/indexbuilder/main.go
+
+# Build the server binary
+RUN go build -o server.exe ./server/
 
 ENTRYPOINT [ "/server/server.exe" ]
