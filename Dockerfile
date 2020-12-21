@@ -21,8 +21,7 @@ WORKDIR /server
 ADD . .
 
 # Install prisma client code generation tool and generate prisma bindings
-RUN go get github.com/prisma/prisma-client-go@master
-RUN go run prisma-client-go generate
+RUN go run github.com/prisma/prisma-client-go generate
 
 # Install prisma command for automatic migrations.
 RUN npm install --global @prisma/cli
