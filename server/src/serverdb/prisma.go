@@ -89,8 +89,6 @@ func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 			if err != nil {
 				return errors.Wrapf(err, "failed to create rule '%s': '%s' for %s", k, v, svr.ID)
 			}
-		} else if err != nil {
-			return errors.Wrapf(err, "failed to update rule '%s': '%s'", k, v)
 		}
 	}
 
