@@ -12,7 +12,7 @@ Callback ini akan terpanggil ketika player di sekitar player lain.
 
 | Nama        | Deskripsi                                                 |
 | ----------- | ------------------------------------------------------ |
-| playerid    | ID pemain yang berada di sekitar pemain. |
+| playerid    | ID pemain yang mendekat ke pemain. |
 | forplayerid | ID pemain. | // Kalau salah tolong koreksi
 
 ## Returns
