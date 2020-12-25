@@ -36,9 +36,7 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Catatan
 
-::tip
-Callback ini juga dipanggil oleh NPC
-::
+<TipNPCCallbacks />
 
 ## Fungsi Terkait
 // Tidak Ada
