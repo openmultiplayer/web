@@ -8,7 +8,7 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika pemain melakukan perubahan status. (misalnya saat player yang sedang mengendarai)
 
-| Name     | Description                                     |
+| Nama     | Deskripsi                                     |
 | -------- | ----------------------------------------        |
 | playerid | ID dari pemain yang melakukan perubahan status. |
 | newstate | Status baru dari player.                        |
@@ -17,10 +17,6 @@ Callback ini akan terpanggil ketika pemain melakukan perubahan status. (misalnya
 Pergi ke [Player States](../resources/playerstates) untuk list semua variable player state.
 
 ## Returns
-
-0 - Akan melarang filterscript lain untuk menerima callback ini.
-
-1 - Mengindikasikan bahwa callback ini akan dilanjutkan ke filtercript lain.
 
 Selalu terpanggil pertama di filterscripts.
 
