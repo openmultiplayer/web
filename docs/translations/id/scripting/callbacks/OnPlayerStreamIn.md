@@ -4,11 +4,7 @@ description: Callback ini akan terpanggil ketika pemain di sekitar pemain lain.
 tags: ["player"]
 ---
 
-:::warning
-
-Callback ini telah ditambahkan dalam SA-MP 0.3a dan tidak akan bekerja pada versi sebelumnya!
-
-:::
+<VersionWarnID name='Callback' version='SA-MP 0.3a' />
 
 ## Deskripsi
 
