@@ -141,7 +141,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-## Mga dapat tandaan
+## Mga Dapat Unawain
 
 :::tip
 
@@ -161,6 +161,6 @@ Ang dialog ng isang player ay hindi mawawala kapag nag restart ang server, nagda
 
 :::
 
-## Mga Related na Functions
+## Mga Kaugnay na Functions
 
 - [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Ipakita ang dialog sa player.

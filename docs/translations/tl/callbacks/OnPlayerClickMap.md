@@ -35,7 +35,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 }
 ```
 
-## Mga dapat tandaan
+## Mga Dapat Unawain
 
 :::tip
 
@@ -43,4 +43,4 @@ Sabi nga sa pangalan ng callback, ito ay itinatawag lang kapag ang player ay nag
 
 :::
 
-## Mga Related na Functions
+## Mga Kaugnay na Functions

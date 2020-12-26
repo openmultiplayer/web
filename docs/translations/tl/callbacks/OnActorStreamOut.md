@@ -31,7 +31,7 @@ public OnActorStreamOut(actorid, forplayerid)
 }
 ```
 
-## Mga Dapat Tandaan
+## Mga Dapat Unawain
 
 <TipNPCCallbacks />
 
