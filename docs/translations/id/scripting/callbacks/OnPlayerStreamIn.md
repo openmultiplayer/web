@@ -1,19 +1,24 @@
 ---
 title: OnPlayerStreamIn
-description: Callback ini akan terpanggil ketika pemain di sekitar pemain lain.
+description: Callback ini akan terpanggil ketika pemain lain berada di jangkauan stream dari klien pemain.
 tags: ["player"]
 ---
 
-<VersionWarnID name='Callback' version='SA-MP 0.3a' />
+:::warning
+
+Fungsi ini telah ditambahkan dalam SA-MP 0.3a dan tidak bekerja pada versi dibawahnya!
+
+:::
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika player di sekitar player lain.
+Callback ini akan terpanggil ketika pemain lain berada di jangkauan stream dari klien pemain.
+
 
 | Nama        | Deskripsi                                                 |
 | ----------- | ------------------------------------------------------ |
-| playerid    | ID pemain yang mendekat ke pemain. |
-| forplayerid | ID pemain. | // Kalau salah tolong koreksi
+| playerid    | ID dari pemain lain yang berada dalam jangakauan stream klien pemain. |
+| forplayerid | ID dari pemain yang berada di jangkauan stream pemain lain. |
 
 ## Returns
 
@@ -32,7 +37,11 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Catatan
 
-<TipNPCCallbacks />
+:::tip
+
+Callback ini akan terpanggil juga oleh NPC.
+
+:::
+
 
 ## Fungsi Terkait
-// Tidak Ada
