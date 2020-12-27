@@ -1,19 +1,24 @@
 ---
 title: OnPlayerStreamOut
-description: Callback ini akan terpanggil ketika pemain menjauh dari pemain lain.
+description: Callback ini akan terpanggil ketika pemain lain keluar dari jangkauan stream dari klien pemain.
 tags: ["player"]
 ---
 
-<VersionWarnID name='Callback' version='SA-MP 0.3a' />
+:::warning
+
+Fungsi ini telah ditambahkan dalam SA-MP 0.3a dan tidak bekerja pada versi dibawahnya!
+
+:::
+
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika pemain menjauhi pemain lain
+Callback ini akan terpanggil ketika pemain lain keluar dari jangkauan stream dari klien pemain.
 
 | Nama        | Deskripsi                                                 |
 | ----------- | ------------------------------------------------------ |
-| playerid    | ID pemain yang menjauh dari pemain. |
-| forplayerid | ID pemain. | // Kalau salah tolong koreksi
+| playerid    | ID dari pemain lain yang keluar jangakauan stream klien pemain. |
+| forplayerid | ID dari pemain yang berada di luar jangkauan stream pemain lain.|
 
 ## Returns
 
@@ -32,7 +37,10 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## Catatan
 
-<TipNPCCallbacks />
+:::tip
+
+Callback ini akan terpanggil juga oleh NPC.
+
+:::
 
 ## Fungsi Terkait
-// Tidak Ada
