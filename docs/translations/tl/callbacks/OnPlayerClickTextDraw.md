@@ -67,7 +67,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 }
 ```
 
-## Mga dapat tandaan
+## Mga Dapat Unawain
 
 :::warning
 

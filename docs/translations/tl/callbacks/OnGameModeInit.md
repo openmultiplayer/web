@@ -18,7 +18,7 @@ public OnGameModeInit()
 }
 ```
 
-## Mga dapat tandaan
+## Mga Dapat Unawain
 
 :::tip
 
@@ -26,4 +26,4 @@ Ang function na ito ay maaari rin gamitin sa mga filterscript upang mai-detect k
 
 :::
 
-## Mga Related na Functions
+## Mga Kaugnay na Functions
