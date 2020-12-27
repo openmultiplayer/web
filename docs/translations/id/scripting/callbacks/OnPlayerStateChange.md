@@ -1,5 +1,5 @@
 ---
-title: OnPlayerSpawn
+title: OnPlayerStateChange
 description: Callback ini akan terpanggil ketika pemain melakukan perubahan status.
 tags: ["player"]
 ---
@@ -24,7 +24,7 @@ Selalu terpanggil pertama di filterscripts.
 ```c
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if (oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Player entered a vehicle as a driver
+    if (oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Pemain menaiki kendaraan (Wajib Mobil) dan menjadi supir
     {
         new vehicleid = GetPlayerVehicleID(playerid);
         AddVehicleComponent(vehicleid, 1010); // Menambahkan NOS ke Kendaraan Anda
