@@ -1,5 +1,4 @@
-import App, { AppInitialProps } from "next/app";
-import type { AppProps, AppContext } from "next/app";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 import Router from "next/router";
 import { NextSeo } from "next-seo";
@@ -17,23 +16,13 @@ import "remark-admonitions/styles/classic.css";
 
 import "src/styles/base.css";
 import { AuthProvider } from "src/auth/hooks";
-import { isAuthenticatedFromRequest } from "src/auth";
 
 // Trigger client-side progress bar for client-side page transitions.
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
-type Props = {
-  authenticated: boolean;
-};
-
-const MyApp = ({
-  Component,
-  pageProps,
-  router,
-  authenticated,
-}: AppProps & Props) => (
+const MyApp = ({ Component, pageProps, router }: AppProps) => (
   <>
     <Head>
       <link rel="stylesheet" href="/fonts.css" />
@@ -101,17 +90,5 @@ const MyApp = ({
     `}</style>
   </>
 );
-
-MyApp.getInitialProps = async (
-  appContext: AppContext
-): Promise<AppInitialProps & Props> => {
-  const appProps = await App.getInitialProps(appContext);
-  const authenticated = isAuthenticatedFromRequest(appContext.ctx.req);
-
-  return {
-    ...appProps,
-    authenticated,
-  };
-};
 
 export default MyApp;
