@@ -63,13 +63,16 @@ const Page = (props: Props) => {
 // Server side
 // -
 
+import { extname } from "path";
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import matter from "gray-matter";
+import glob from "glob";
 import admonitions from "remark-admonitions";
 
 import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
+import { statSync } from "fs";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
@@ -106,9 +109,15 @@ export async function getStaticProps(
 }
 
 export async function getStaticPaths() {
+  const paths = glob
+    .sync("../docs/**/*.md") // read docs from the repo root
+    .filter((v: string) => statSync(v).size > 60000) // only build large pages
+    .map((v: string) => "/" + v.slice(3, v.length - extname(v).length))
+    .map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v));
+
   return {
-    paths: [],
-    fallback: true,
+    paths: paths,
+    fallback: "blocking",
   };
 }
 
