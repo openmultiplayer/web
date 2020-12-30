@@ -44,7 +44,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
 
     {/* This is flex to make <section> elements gapless */}
     <div id="container">
-      <AuthProvider authenticated={authenticated}>
+      <AuthProvider authenticated={false}>
         <Nav
           items={[
             { name: "Home", path: "/", exact: true },
