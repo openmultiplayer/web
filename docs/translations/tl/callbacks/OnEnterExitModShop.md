@@ -34,7 +34,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 }
 ```
 
-## Mga dapat tandaan
+## Mga Dapat Unawain
 
 :::warning
 
@@ -42,6 +42,6 @@ Mga Kadalasang Bugs: Nag bubungguan ang mga players kapag parehas na pumasok sa 
 
 :::
 
-## Mga Related na Functions
+## Mga Kaugnay na Functions
 
 - [AddVehicleComponent](../functions/AddVehicleComponent.md): Maglagay ng component sa sasakyan.

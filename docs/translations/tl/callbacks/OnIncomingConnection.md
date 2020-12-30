@@ -34,7 +34,7 @@ public OnIncomingConnection(playerid, ip_address[], port)
 }
 ```
 
-## Mga Related na Functions
+## Mga Kaugnay na Functions
 
 - [BlockIpAddress](../functions/BlockIpAddress.md): I-Block ang isang IP address na kumonekta sa server sa ibinigay na oras.
 - [UnBlockIpAddress](../functions/UnBlockIpAddress.md): I-unblock ang isang IP address na iblinock.

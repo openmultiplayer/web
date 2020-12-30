@@ -20,4 +20,4 @@ public OnFilterScriptInit()
 }
 ```
 
-## Mga Related na Functions
+## Mga Kaugnay na Functions
