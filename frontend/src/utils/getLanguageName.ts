@@ -1,8 +1,8 @@
 import ISO6391 from "iso-639-1";
 
 const missingLanguages = {
-  "zh-TW": "正體中文/繁體中文",
-  "zh-CN": "简化字",
+  "zh-TW": "繁体中文",
+  "zh-CN": "简体中文",
 };
 
 const getLanguageName = (short: string) =>
