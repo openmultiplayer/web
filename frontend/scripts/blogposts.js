@@ -4,44 +4,23 @@ const { parse } = require("@babel/parser");
 const generate = require("@babel/generator").default;
 const traverse = require("@babel/traverse").default;
 const visit = require("unist-util-visit");
+const matter = require("gray-matter");
 
-const POSTS_DIRECTORY = "./src/pages/blog/";
+const POSTS_DIRECTORY = "./content/en/blog/";
 
 const extractMdxMeta = (filename) => {
-  const content = fs.readFileSync(POSTS_DIRECTORY + filename, "utf8");
-  let meta = {};
-  mdx.sync(content, {
-    remarkPlugins: [
-      () => (tree) => {
-        visit(tree, "export", (node) => {
-          const ast = parse(node.value, {
-            plugins: ["jsx"],
-            sourceType: "module",
-          });
-          traverse(ast, {
-            VariableDeclarator: (path) => {
-              if (path.node.id.name === "meta") {
-                // eslint-disable-next-line no-eval
-                meta = eval(
-                  `module.exports = ${generate(path.node.init).code}`
-                );
-              }
-            },
-          });
-        });
-      },
-    ],
-  });
-  if (meta.title === undefined) {
+  const { data } = matter(fs.readFileSync(POSTS_DIRECTORY + filename, "utf8"));
+
+  if (data.title === undefined) {
     throw new Error("property 'title' not found in meta for post " + filename);
   }
-  if (meta.author === undefined) {
+  if (data.author === undefined) {
     throw new Error("property 'author' not found in meta for post " + filename);
   }
-  if (meta.date === undefined) {
+  if (data.date === undefined) {
     throw new Error("property 'date' not found in meta for post " + filename);
   }
-  return meta;
+  return data;
 };
 
 const getBlogPostPages = () =>
@@ -55,6 +34,5 @@ const getBlogPostPages = () =>
     }))
     .map((post) => ({ ...post, date: new Date(post.date) }))
     .sort((a, b) => b.date - a.date);
-
 
 module.exports = getBlogPostPages;

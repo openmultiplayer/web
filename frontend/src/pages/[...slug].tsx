@@ -56,7 +56,7 @@ export async function getStaticProps(
   try {
     result = await readLocaleContent(route.join("/"), locale);
   } catch (e) {
-    return { props: { error: "Not found" } };
+    return { props: { error: "Not found: " + e.message } };
   }
 
   const { content, data } = matter(result.source);
