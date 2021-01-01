@@ -49,7 +49,9 @@ function parseDir(filename) {
         // Taiwan uses Traditional Chinese as its script, we're using ISO codes
         // for countries not languages, so this slight modification is for that.
         if (catName == "zh-tw") {
-          catName = "正體中文/繁體中文";
+          catName = "繁體中文";
+        } else if (catName == "zh-cn") {
+          catName = "简体中文";
         }
       }
 
