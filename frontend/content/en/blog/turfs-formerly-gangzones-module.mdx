@@ -1,13 +1,10 @@
-export const meta = {
-  title: "Turfs (formerly gangzones) module",
-  date: "2019-10-19T04:20:00",
-  author: "J0sh",
-};
+---
+title: Turfs (formerly gangzones) module
+date: "2019-10-19T04:20:00"
+author: J0sh
+---
 
-# Turfs (formerly gangzones) module
-
-Hello! I have just finished our Turf implementation into the server and I thought of posting a
-overview of this module and to show we haven't quit or anything!
+Hello! I have just finished our Turf implementation into the server and I thought of posting a overview of this module and to show we haven't quit or anything!
 
 ```pawn
 // Creates a Turf. A playerid can be passed in order to make it a player turf.
@@ -33,10 +30,6 @@ native Turf_Flash(Turf:turf, colour, Player:playerid = INVALID_PLAYER_ID);
 native Turf_StopFlashing(Turf:turf, Player:playerid = INVALID_PLAYER_ID);
 ```
 
-This is obviously different from the traditional API, but not to worry, there will be wrappers in
-place for this kind of stuff to make sure a normal script can be recompiled with no issues and
-without edits.
+This is obviously different from the traditional API, but not to worry, there will be wrappers in place for this kind of stuff to make sure a normal script can be recompiled with no issues and without edits.
 
-Another important fact that you may want to know is that every turf is in the same pool and there's
-a maximum of 4,294,967,295 turfs to be created from the script. However, the client can only handle
-1024 turfs at one time.
+Another important fact that you may want to know is that every turf is in the same pool and there's a maximum of 4,294,967,295 turfs to be created from the script. However, the client can only handle 1024 turfs at one time.

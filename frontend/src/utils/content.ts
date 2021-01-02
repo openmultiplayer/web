@@ -1,4 +1,4 @@
-import { statSync } from "fs";
+import { statSync, readFileSync } from "fs";
 import { resolve } from "path";
 
 export const exists = (path: string): boolean => {
@@ -10,7 +10,26 @@ export const exists = (path: string): boolean => {
   }
 };
 
-export const readMd = async (path: string): Promise<string> => {
+export const readMdFromLocal = async (path: string): Promise<string> => {
+  if (path === "") {
+    path = "index";
+  }
+
+  const path_mdx = path + ".mdx";
+  const path_md = path + ".md";
+
+  if (exists(path_mdx)) {
+    return readFileSync(path_mdx).toString();
+  }
+
+  if (exists(path_md)) {
+    return readFileSync(path_md).toString();
+  }
+
+  return undefined;
+};
+
+export const readMdFromAPI = async (path: string): Promise<string> => {
   if (path === "") {
     path = "index";
   }
@@ -36,12 +55,12 @@ export const readMd = async (path: string): Promise<string> => {
 };
 
 export const readLocaleContent = async (name: string, locale: string) => {
-  let source = await readMd(resolve("content", locale, name));
+  let source = await readMdFromLocal(resolve("content", locale, name));
   if (source !== undefined) {
     return { source, fallback: false };
   }
 
-  source = await readMd(resolve("content", "en", name));
+  source = await readMdFromLocal(resolve("content", "en", name));
   if (source !== undefined) {
     return { source, fallback: true };
   }
@@ -55,12 +74,12 @@ export const readLocaleDocs = async (name: string, locale?: string) => {
     fullName = `translations/${locale}/${name}`;
   }
 
-  let source = await readMd(fullName);
+  let source = await readMdFromAPI(fullName);
   if (source !== undefined) {
     return { source, fallback: false, fullName };
   }
 
-  source = await readMd(name);
+  source = await readMdFromAPI(name);
   if (source !== undefined) {
     return { source, fallback: true, name };
   }

@@ -50,6 +50,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
             { name: "Home", path: "/", exact: true },
             { name: "Servers", path: "/servers" },
             { name: "Docs", path: "/docs" },
+            { name: "Blog", path: "/blog" },
           ]}
           route={router.pathname}
         />

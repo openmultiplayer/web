@@ -42,9 +42,11 @@ const Page = ({ source, error, data, fallback }: Props) => {
 
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import matter from "gray-matter";
+import { flow, map } from "lodash/fp";
 
 import { readLocaleContent } from "src/utils/content";
 import { renderToString } from "src/mdx-helpers/ssr";
+import { Post } from "src/types/blogPost";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ slug: string[] }>
@@ -56,7 +58,7 @@ export async function getStaticProps(
   try {
     result = await readLocaleContent(route.join("/"), locale);
   } catch (e) {
-    return { props: { error: "Not found" } };
+    return { props: { error: "Not found: " + e.message } };
   }
 
   const { content, data } = matter(result.source);
@@ -68,9 +70,15 @@ export async function getStaticProps(
   return { props: { source: mdxSource, data, fallback: result.fallback } };
 }
 
+const getPostPaths = flow(
+  map((v: Post) => v.slug),
+  map((v: string) => `/blog/${v}`)
+);
+
 export async function getStaticPaths() {
+  const posts: Post[] = (process.env.BLOG_POST_LIST as unknown) as Post[];
   return {
-    paths: [],
+    paths: getPostPaths(posts),
     fallback: true,
   };
 }

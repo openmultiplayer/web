@@ -15,7 +15,6 @@
     "@babel/preset-react": "^7.12.10",
     "@babel/traverse": "^7.12.9",
     "@mdx-js/loader": "^1.6.21",
-    "@next/mdx": "^10.0.3",
     "cookie": "^0.4.1",
     "date-fns": "^2.16.1",
     "fuse.js": "^6.4.3",

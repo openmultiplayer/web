@@ -2,12 +2,7 @@ import Link from "next/link";
 import format from "date-fns/format";
 import parseISO from "date-fns/parseISO";
 
-type Post = {
-  title: string;
-  date: string;
-  author: string;
-  slug: string;
-};
+import { Post } from "src/types/blogPost";
 
 const Posts = ({ list }) =>
   list.map((v: Post) => (
