@@ -148,5 +148,16 @@ export const readLocaleDocs = async (
     return { source, fallback: true };
   }
 
+  // If the API does not respond with a page, this final fallback attempts to
+  // load the content from the local filesystem. This ONLY works at build-time
+  // on Vercel because the content in ../docs isn't added to the serverless
+  // environment. This is only used for previewing changes currently.
+  if (process.env.VERCEL_ENV === "preview") {
+    source = await readMdFromLocal(name);
+    if (source !== undefined) {
+      return { source, fallback: false, name };
+    }
+  }
+
   throw new Error(`Not found (${name})`);
 };

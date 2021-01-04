@@ -82,12 +82,14 @@ import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import matter from "gray-matter";
 import glob from "glob";
 import admonitions from "remark-admonitions";
+import { Components } from "@mdx-js/react";
+import { statSync } from "fs";
+import { execSync } from "child_process";
+import { flow, indexOf, map } from "lodash/fp";
 
 import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
-import { concat } from "lodash/fp";
-import { Components } from "@mdx-js/react";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
@@ -123,14 +125,53 @@ export async function getStaticProps(
   };
 }
 
+// all this code is kept inside this function in order to ensure it's bundled
+// for server/client split correctly. Putting buildOnlyChangedPages in global
+// scope results in the build process adding import "fs" on client side code.
 export async function getStaticPaths() {
-  const paths = concat(["/docs/"])(
-    glob
-      .sync("../docs/**/*.md") // read docs from the repo root
-      // .filter((v: string) => statSync(v).size > 60000) // only build large pages
-      .map((v: string) => "/" + v.slice(3, v.length - extname(v).length))
-      .map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v))
-  );
+  type FilterFn = (v: string) => boolean;
+
+  const buildOnlyLargePages = (size: number): FilterFn => (v: string) =>
+    statSync(v).size > size;
+
+  const buildOnlyChangedPages = (): FilterFn => {
+    // get changed files
+    // the result is relative from the root, regardless of CWD so the `../`
+    // path element is not present in results.
+    const changes = execSync("git diff master HEAD --name-only -- ../docs")
+      .toString()
+      .split("\n");
+
+    // combine the two lists and remove duplicates/empty
+    const files = flow(
+      map((v: string) => v.replace("../", "")), // strip ../ from changed files
+      map((v: string) => "../" + v) // add ../ prefix to all files in the list
+    )(changes);
+
+    // return a filter function that only returns true when the given file being
+    // visited is present in the list of files that were modified or added.
+    return (v: string): boolean => indexOf(v)(files) !== -1;
+  };
+
+  let filterFn: FilterFn;
+
+  // If the environment is "preview", the app is running for a Pull Request and
+  // thus should statically build all the pages that were changed or added in
+  // the pull request. This simply passes the new/changed file paths to the
+  // build-time process. Some additional checks are required in the Markdown
+  // rendering code to bypass the standard behaviour of getting the content from
+  // the API. See the `readLocaleDocs` function above for this logic.
+  if (process.env.VERCEL_ENV === "preview") {
+    filterFn = buildOnlyChangedPages();
+  } else {
+    filterFn = buildOnlyLargePages(60000);
+  }
+
+  const paths = glob
+    .sync("../docs/meta/*.md") // read docs from the repo root
+    .filter(filterFn)
+    .map((v: string) => "/" + v.slice(3, v.length - extname(v).length))
+    .map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v));
 
   return {
     paths: paths,
