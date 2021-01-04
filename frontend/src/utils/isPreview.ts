@@ -21,6 +21,8 @@ export const isPreviewBuildtime = (): boolean => {
   if ("VERCEL_ENV" in env) {
     return env["VERCEL_ENV"] === "preview";
   } else {
-    return execSync("git branch --show-current").toString().trim() !== "master";
+    const branch = execSync("git branch --show-current").toString().trim();
+    console.debug("BRANCH: ", branch);
+    return branch !== "master";
   }
 };
