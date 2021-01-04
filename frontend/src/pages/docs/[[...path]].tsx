@@ -135,6 +135,8 @@ export async function getStaticPaths() {
     statSync(v).size > size;
 
   const buildOnlyChangedPages = (): FilterFn => {
+    console.debug("Statically building any new/changed docs pages...");
+
     // get changed files
     // the result is relative from the root, regardless of CWD so the `../`
     // path element is not present in results.
