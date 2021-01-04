@@ -169,6 +169,8 @@ export async function getStaticPaths() {
     filterFn = buildOnlyLargePages(60000);
   }
 
+  console.log("ENV:", process.env); // TODO: Remove!
+
   const paths = glob
     .sync("../docs/meta/*.md") // read docs from the repo root
     .filter(filterFn)
