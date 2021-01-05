@@ -38,8 +38,8 @@ This monorepo contains the web services and documentation for open.mp and SA-MP.
 
 - `docs/` Wiki documentation for SA-MP and open.mp in Markdown format including translations.
 - `emails/` [MJML](https://mjml.io) email templates for account registration and other things.
-- `frontend/` [Next.js](https://nextjs.org) app for the https://open.mp site
-- `prisma/` [Prisma](https://prisma.io/)
+- `frontend/` [Next.js](https://nextjs.org) app for the https://open.mp site.
+- `prisma/` [Prisma](https://prisma.io/) database models for generating Go code and SQL migrations.
 - `server/` Backend API for server listings, accounts, etc.
 
 ## Frontend Development
@@ -55,6 +55,14 @@ When working on the backend, the root of the repository is where you need to be.
 To start the API server, use [Taskfile](https://taskfile.dev) and run `task`, the default task is to build and run the API server.
 
 The frontend, by default, only uses the live API. To change this you must edit any URLs from `https://api.open.mp/...` to `http://localhost/...`.
+
+You can run the following command to get a minimal development environment ready:
+
+```
+docker-compose -f .\docker-compose.dev.yml up -d
+```
+
+The `.dev.yml` Compose configuration contains services that aren't secure or production ready and suitable for local testing.
 
 ## Deployment
 
