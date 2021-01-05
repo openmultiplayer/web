@@ -249,22 +249,22 @@ application could support non-ascii characters in strings and character
 literals:
 
 1 Support codepages: in this strategy the entire complexity of choosing the
-  correct glyphs and fonts is delegated to the host application. The codepage
-  support is based on codepage mapping files with a file format of the “cross
-  mapping tables” distributed by the Unicode consortium.
+correct glyphs and fonts is delegated to the host application. The codepage
+support is based on codepage mapping files with a file format of the “cross
+mapping tables” distributed by the Unicode consortium.
 
 2 Support Unicode or UCS-4 and let the PAWN compiler convert scripts that
-  were written using a codepage to “wide” characters: for this strategy, you
-  need to set #pragma codepage or use the equivalent compiler option. The
-  compiler will only correctly translate characters in unpacked strings.
+were written using a codepage to “wide” characters: for this strategy, you
+need to set #pragma codepage or use the equivalent compiler option. The
+compiler will only correctly translate characters in unpacked strings.
 
 3 Support Unicode or UCS-4 and let the PAWN compiler convert scripts encoded
-  in UTF-8 to “wide” characters: when the source file for the PAWN
-  compiler is in UTF-8 encoding, the compiler expands characters to Unicode/UCS-4 in unpacked strings.
+in UTF-8 to “wide” characters: when the source file for the PAWN
+compiler is in UTF-8 encoding, the compiler expands characters to Unicode/UCS-4 in unpacked strings.
 
 4 Support UTF-8 encoding internally (in the host application) and write the
-  source file in UTF-8 too: all strings should now be packed strings to avoid
-  the compiler to convert them.
+source file in UTF-8 too: all strings should now be packed strings to avoid
+the compiler to convert them.
 
 For most internationalization strategies, as you can see, the host application
 needs to support Unicode or UCS-4. As a side note, the PAWN compiler does not
@@ -354,7 +354,7 @@ For example, with the declarations of the previous code snippet, if you would
 wish to compare apples with oranges (recent research indicates that comparing
 apples to oranges is not as absurd than popular belief holds), you could use:
 
-```c
+````c
 
 if (apple:valencia < elstar)
     valencia = orange:elstar
@@ -364,7 +364,7 @@ if (apple:valencia < elstar)
 The test expression of the if statement (between parentheses) compares the
 variable valencia to the variable elstar. To avoid a “tag mismatch” diagnos-
 tic, it puts a tag override apple: on valencia —after that, the expressions
-on the left and the right hands of the > operator have the same tag  
+on the left and the right hands of the > operator have the same tag
 name: “apple:”. The second line, the assignment of elstar to valencia, overrides
 the tag name of elstar or orange: before the assignment. In an assignment,
 you cannot override the tag name of the destination; i.e., the left hand of
@@ -372,7 +372,7 @@ the = operator. It is an error to write “apple:valencia = elstar”. In the as
 signment, valencia is an “lvalue” and you cannot override the tag name of an
 lvalue.
 
-As shown earlier, when the left hand of an assignment holds an  
+As shown earlier, when the left hand of an assignment holds an
 untagged variable, the expression on the right hand may have any weak tag name. When
 used as an lvalue, an untagged variable is compatible with all weak tag names.
 Or rather, a weak tag is silently dropped when it is assigned to an untagged
@@ -395,7 +395,7 @@ if (value < limit)
 else
     printf("Value above limit\n")
 
-```
+````
 
 Through the “#pragma rational”, all rational numbers receive the “float”
 tag name and these numbers are encoded in the 4-byte IEEE 754 format. The
@@ -583,4 +583,3 @@ Listing: quine.p
 [Go Back to Contents](00-Contents.md)
 
 </div>
-

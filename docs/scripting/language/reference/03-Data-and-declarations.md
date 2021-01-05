@@ -463,7 +463,7 @@ expression becomes an untagged expression. The tag checking mechanism verifies t
 
 <div align="right">
 
-`Label syntax: 112` 
+`Label syntax: 112`
 
 `“enum” statement: 101`
 

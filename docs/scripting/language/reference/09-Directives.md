@@ -12,14 +12,14 @@ All directives must appear first on a line (they may be preceded by white space,
 but not by any other characters). All directives start with the character # and
 the complete instruction may not span more than one line.
 
-**#assert** *constant expression*
+**#assert** _constant expression_
 
     Issues a compile time error if the supplied constant expression evalu-
     ates to zero. The #assert directive is most useful to guard against
     implementation defined constructs on which a program may depend,
     such as the cell size in bits, or the number of packed characters per cell.
 
-**#define** *pattern replacement*
+**#define** _pattern replacement_
 
     Defines a text substitution macro. The pattern is matched to all lines
     read from the source files; the sections that match are replaced by
@@ -27,7 +27,7 @@ the complete instruction may not span more than one line.
     contain parameters, denoted by “%0” to “%9”. See page 93 for details
     and examples on text substitution.
 
-**#emit** *opcode, parameters*
+**#emit** _opcode, parameters_
 
     The #emit directive serves as an inline assembler. It is currently used
     only for testing the abstract machine.
@@ -44,13 +44,13 @@ the complete instruction may not span more than one line.
     rors are fatal errors and they serve a similar purpose as the #assert
     directive.
 
-**#file** *name*
+**#file** _name_
 
     Adjusts the name for the current file. This directive is used implicitly
     by the text preprocessor; there is usually no need to set a filename
     explicitly.
 
-**#if** *constant expression*, #elseif, #else, #endif
+**#if** _constant expression_, #elseif, #else, #endif
 
     Portions of a program may be parsed or be ignored depending on cer-
     tain conditions. The pawn parser (compiler or interpreter) generates
@@ -74,7 +74,7 @@ the complete instruction may not span more than one line.
     ditionally. Conditional directives can be nested and each #if directive
     must be ended by an #endif directive.
 
-**#include** *filename* or *< filename >*
+**#include** _filename_ or _< filename >_
 
     Inserts the contents of the specified file at the current position within
     the current file. A filename between angle brackets (“<” and “>”)
@@ -97,13 +97,13 @@ the complete instruction may not span more than one line.
     ble include, remove the constant definition with the #undef directive
     before the second inclusion of the file.
 
-**#line** *number*
+**#line** _number_
 
     The current line number (in the current file). This directive is used
     implicitly by the text preprocessor; there is usually no need to set the
     line number explicitly.
 
-**#pragma** *extra information*
+**#pragma** _extra information_
 
     A “pragma” is a hook for a parser to specify additional settings, such
     as warning levels or extra capabilities. Common #pragmas are:
@@ -282,7 +282,7 @@ the complete instruction may not span more than one line.
         Multiple symbol names may appear in a single #pragma; the
         symbols must be separated by commas.
 
-**#section** *name*
+**#section** _name_
 
     Starts a new section for the generated code. Any variables and func-
     tions that are declared “static” are only visible to the section to
@@ -296,13 +296,13 @@ the complete instruction may not span more than one line.
 
     Any declared section ends automatically at the end of the file.
 
-**#tryinclude** *filename* or *< filename >*
+**#tryinclude** _filename_ or _< filename >_
 
     This directive behaves similarly as the #include directive, but it does
     not give an error when the file to include does not exist —i.e., try to
     include but fail silently on error.
 
-**#undef** *name*
+**#undef** _name_
 
     Removes a text substitution macro or a numeric constant declared
     with const. The “name” parameter must be the macro “prefix” —the

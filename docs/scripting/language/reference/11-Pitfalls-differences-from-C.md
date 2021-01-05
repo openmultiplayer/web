@@ -24,11 +24,11 @@
 
 - PAWN supports “array assignment”, with the restriction that both arrays must have the same size. For example, if “a” and “b” are both arrays with 6 cells, the expression “a = b” is valid. Next to literal strings, PAWN also supports literal arrays, allowing the expression “a = {0,1,2,3,4,5}” (where “a” is an array variable with 6 elements).
 
-- *char* is an operator, not a type. See page 110 and the tips on page 137.
+- _char_ is an operator, not a type. See page 110 and the tips on page 137.
 
-- *defined* is an operator, not a preprocessor directive. The defined operator in PAWN operates on constants (with const and enum), global variables, local variables and functions.
+- _defined_ is an operator, not a preprocessor directive. The defined operator in PAWN operates on constants (with const and enum), global variables, local variables and functions.
 
-- The *sizeof* operator returns the size of a variable in “elements”, not in “bytes”. An element may be a cell or a sub-array. See page 109 for details.
+- The _sizeof_ operator returns the size of a variable in “elements”, not in “bytes”. An element may be a cell or a sub-array. See page 109 for details.
 
 - The empty instruction is an empty compound block, not a semicolon (page 112). This modification avoids a frequent error.
 

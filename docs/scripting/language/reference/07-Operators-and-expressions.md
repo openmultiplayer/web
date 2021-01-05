@@ -14,7 +14,7 @@ The operation of some operators depends on the specific kinds of operands.
 Therefore, operands are notated thus:
 
 | Operators | Usage                                                                   |
-|-----------|-------------------------------------------------------------------------|
+| --------- | ----------------------------------------------------------------------- |
 | e         | any expression;                                                         |
 | v         | any expression to which a value can be assigned (“lvalue” expressions); |
 | a         | an array;                                                               |
@@ -40,14 +40,14 @@ v = (ia1 * ia2) / ia3
 ### • Arithmetic
 
 | Sign   | Description                                                                                                                                                                                                 |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | +      | e1 + e2                                                                                                                                                                                                     |
 |        | Results in the addition of e1 and e2                                                                                                                                                                        |
 | -      | e1 - e2                                                                                                                                                                                                     |
 |        | Results in sthe subtraction of e1 and e2                                                                                                                                                                    |
 |        | -e                                                                                                                                                                                                          |
 |        | Results in the arithmetic negation of a (two’s complement).                                                                                                                                                 |
-| *      | e1 * e2                                                                                                                                                                                                     |
+| \*     | e1 \* e2                                                                                                                                                                                                    |
 |        | Results in the multiplication of e1 and e2.                                                                                                                                                                 |
 | /      | e1 / e2                                                                                                                                                                                                     |
 |        | Results in the division of e1 by e2. The result is truncated to the nearest integral value that is less than or equal to the quotient. Both negative and positive values are rounded down, i.e. towards −∞. |
@@ -67,7 +67,7 @@ v = (ia1 * ia2) / ia3
 ### • Bit manipulation
 
 | Sign | Description                                                                                                                                                           |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ~    | ~e                                                                                                                                                                    |
 |      | results in the one’s complement of e.                                                                                                                                 |
 | >>   | e1 >> e2                                                                                                                                                              |
@@ -78,7 +78,7 @@ v = (ia1 * ia2) / ia3
 |      | results in the value of e1 shifted to the left by e2 bits; the rightmost bits are set to zero. There is no distinction between an arithmetic and a logical left shift |
 | &    | eq & e2                                                                                                                                                               |
 |      | results in the bitwise logical “and” of e1 and e2.                                                                                                                    |
-| |    | e1 | e2                                                                                                                                                              |
+|      |                                                                                                                                                                       | e1 | e2 |
 |      | results in the bitwise logical “or” of e1 and e2.                                                                                                                     |
 | ^    | e1 ^ e2                                                                                                                                                               |
 |      | results in the bitwise “exclusive or” of e1 and e2.                                                                                                                   |
@@ -88,7 +88,7 @@ v = (ia1 * ia2) / ia3
 The result of an assignment expression is the value of the left operand after the assignment. The left operand may not be tagged.
 
 | Sign | Description                                                                                                                                                                                       |
-|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | =    | v = e                                                                                                                                                                                             |
 |      | assigns the value of e to variable v.                                                                                                                                                             |
 |      | If “v” is an array, it must have an explicit size and “e” must be an array of the same size; “e” may be a string or a literal array.                                                              |
@@ -97,7 +97,7 @@ The result of an assignment expression is the value of the left operand after th
 |      | increments v with a.                                                                                                                                                                              |
 | -=   | v -= e                                                                                                                                                                                            |
 |      | decrements v with e                                                                                                                                                                               |
-| *=   | v *= e                                                                                                                                                                                            |
+| \*=  | v \*= e                                                                                                                                                                                           |
 |      | multiplies v with e                                                                                                                                                                               |
 | /=   | v /= e                                                                                                                                                                                            |
 |      | divides v by e.                                                                                                                                                                                   |
@@ -111,7 +111,7 @@ The result of an assignment expression is the value of the left operand after th
 |      | shifts v to the left by e bits.                                                                                                                                                                   |
 | &=   | v &= e                                                                                                                                                                                            |
 |      | applies a bitwise “and” to v and e and assigns the result to v.                                                                                                                                   |
-| |=   | v  |= e                                                                                                                                                                                           |
+|      | =                                                                                                                                                                                                 | v | = e |
 |      | applies a bitwise “or” to v and e and assigns the result to v.                                                                                                                                    |
 | ^=   | v ^= e                                                                                                                                                                                            |
 |      | applies a bitwise “exclusive or” to v and e and assigns the                                                                                                                                       |
@@ -122,7 +122,7 @@ The result of an assignment expression is the value of the left operand after th
 A logical “false” is represented by an integer value of 0; a logical “true” is represented by any value other than 0. Value results of relational expressions are either 0 or 1, and their tag is set to “bool:”.
 
 | Sign  | Description                                                                                                                                                                      |
-|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ==    | e1 == e2                                                                                                                                                                         |
 |       | results in a logical “true” if e1 is equal to e2.                                                                                                                                |
 | !=    | e1 != e2                                                                                                                                                                         |
@@ -142,10 +142,10 @@ A logical “false” is represented by an integer value of 0; a logical “true
 A logical “false” is represented by an integer value of 0; a logical “true” is represented by any value other than 0. Value results of Boolean expressions are either 0 or 1, and their tag is set to “bool”.
 
 | Sign | Description                                                                                                                                    |
-|------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | !    | !e                                                                                                                                             |
 |      | results to a logical “true” if e was logically “false”.                                                                                        |
-| ||   | e1 || e2                                                                                                                                     |
+|      |                                                                                                                                                |  | e1 |  | e2 |
 |      | results to a logical “true” if either e1 or e2 (or both) are logically “true”. The expression e2 is only evaluated if e1 is logically “false”. |
 | &&   | e1 && e2                                                                                                                                       |
 |      | results to a logical “true” if both e1 and e2 are logically “true”.                                                                            |
@@ -154,7 +154,7 @@ A logical “false” is represented by an integer value of 0; a logical “true
 ### • Miscellaneous
 
 | Sign    | Description                                                                                                                                                                                                                                                                                                                                                                 |
-|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | []      | a[e]                                                                                                                                                                                                                                                                                                                                                                        |
 |         | array index: results to cell e from array a.                                                                                                                                                                                                                                                                                                                                |
 | {}      | a{e}                                                                                                                                                                                                                                                                                                                                                                        |
@@ -191,45 +191,45 @@ If the expression evaluation order is not explicitly established by parentheses,
 it is determined by the association rules. For example: a*b/c is
 equivalent with (a*b)/c because of the left-to-right association, and a=b=c is equivalent with a=(b=c).
 
-| Sign                                  | Description                                  |               |
-|---------------------------------------|----------------------------------------------|---------------|
-| ()                                    | function call                                | left-to-right |
-| []                                    | array index (cell)                           |               |
-| {}                                    | array index (character)                      |               |
-| !                                     | logical not                                  | right-to-left |
-| ~                                     | one's complement                             |               |
-| -                                     | two's complement                             |               |
-| ++                                    | increment                                    |               |
-| --                                    | decrement                                    |               |
-| :                                     | tag override                                 |               |
-| char                                  | convert number of packed characters to cells |               |
-| defined                               | symbol definition status                     |               |
-| sizeof                                | symbol size in "elements"                    |               |
-| state                                 | automaton/state condition                    |               |
-| tagof                                 | unique number for the tag                    |               |
-| *                                     | multiplication                               | left-to-right |
-| /                                     | division                                     |               |
-| %                                     | modulus                                      |               |
-| +                                     | addition                                     | left-to-right |
-| -                                     | subtraction                                  |               |
-| >>                                    | shift right                                  | left-to-right |
-| >>>                                   | logical shift right                          |               |
-| <<                                    | shift left                                   |               |
-| &                                     | bitwise and                                  | left-to-right |
-| ^                                     | bitwise exclusive or                         | left-to-right |
-| |                                     | bitwise or                                   | left-to-right |
-| <                                     | smaller than                                 | left-to-right |
-| <=                                    | smaller than or eaqual to                    |               |
-| >                                     | greater than                                 |               |
-| >=                                    | greater than or eaqual to                    |               |
-| ==                                    | equality                                     | left-to-right |
-| !=                                    | inequality                                   |               |
-| &&                                    | logical and                                  | left-to-right |
-| ||                                    | logical or                                   | left-to-right |
-| ? :                                   | conditional                                  | right-to-left |
-| =                                     | assignment                                   | right-to-left |
-| *= /= %= += -= >>= >>>= <<= &= ^= |=  |                                              |               |
-| ,                                     | comma                                        | left-to-right |
+| Sign                               | Description                                  |               |
+| ---------------------------------- | -------------------------------------------- | ------------- |
+| ()                                 | function call                                | left-to-right |
+| []                                 | array index (cell)                           |               |
+| {}                                 | array index (character)                      |               |
+| !                                  | logical not                                  | right-to-left |
+| ~                                  | one's complement                             |               |
+| -                                  | two's complement                             |               |
+| ++                                 | increment                                    |               |
+| --                                 | decrement                                    |               |
+| :                                  | tag override                                 |               |
+| char                               | convert number of packed characters to cells |               |
+| defined                            | symbol definition status                     |               |
+| sizeof                             | symbol size in "elements"                    |               |
+| state                              | automaton/state condition                    |               |
+| tagof                              | unique number for the tag                    |               |
+| \*                                 | multiplication                               | left-to-right |
+| /                                  | division                                     |               |
+| %                                  | modulus                                      |               |
+| +                                  | addition                                     | left-to-right |
+| -                                  | subtraction                                  |               |
+| >>                                 | shift right                                  | left-to-right |
+| >>>                                | logical shift right                          |               |
+| <<                                 | shift left                                   |               |
+| &                                  | bitwise and                                  | left-to-right |
+| ^                                  | bitwise exclusive or                         | left-to-right |
+|                                    |                                              | bitwise or    | left-to-right |
+| <                                  | smaller than                                 | left-to-right |
+| <=                                 | smaller than or eaqual to                    |               |
+| >                                  | greater than                                 |               |
+| >=                                 | greater than or eaqual to                    |               |
+| ==                                 | equality                                     | left-to-right |
+| !=                                 | inequality                                   |               |
+| &&                                 | logical and                                  | left-to-right |
+|                                    |                                              |               | logical or | left-to-right |
+| ? :                                | conditional                                  | right-to-left |
+| =                                  | assignment                                   | right-to-left |
+| \*= /= %= += -= >>= >>>= <<= &= ^= | =                                            |               |  |
+| ,                                  | comma                                        | left-to-right |
 
 </div>
 

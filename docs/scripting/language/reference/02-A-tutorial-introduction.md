@@ -698,8 +698,7 @@ case for rational numbers, its memory lay-out.
 
 <hr>
 
-<div align="left">
----
+## <div align="left">
 
 The Rational: tag tells the pawn parser that the variables Celsius and Fahrenheit
 contain fractional values, rather than whole numbers.
@@ -746,6 +745,7 @@ is most widely used in public electronic forums (BBSes, Usenet) to hide texts
 from casual reading, such as the solution to puzzles or riddles. ROT13 simply
 “rotates” the alphabet by half its length, i.e. 13 characters. It is a symmetric
 operation: applying it twice on the same text reveals the original.
+
 ---
 
 Listing: rot13.p
@@ -813,8 +813,7 @@ them by value requires a copy of this data structure to be made, taking both mem
 
 </div>
 
-<div align="left">
----
+## <div align="left">
 
 Due to this rule, function rot13 can modify its function
 parameter (called “string” in the example) without needing to declare as a
@@ -897,8 +896,7 @@ strtok(const  string[],  &index)
 
 </div>
 
-<div align="left">
----
+## <div align="left">
 
 Function main first displays a message and retrieves a string that  
 the user must type. Then it enters a loop: writing “for (;;)” creates a loop
@@ -931,6 +929,7 @@ the same name from C/C++, but it does not modify the source string. Instead
 
 it copies characters from the source string, word for word, into a local array,
 which it then returns.
+
 ---
 
 ### • Arrays and enumerations (structured data)
@@ -1041,8 +1040,7 @@ extract(item[message])
 
 </div>
 
-<div align="left">
----
+## <div align="left">
 
 Near the top of the program listing is the declaration of the enumeration mes-
 sage. This enumeration defines two constants: text, which is zero, and pri-
@@ -1107,6 +1105,7 @@ declared
 outside the scope of any function. Variables must still be declared before they
 are used, so main cannot access variables queue and queueitems, but both
 insert and extract can.
+
 ---
 
 Function extract returns the messages with the highest priority via its func-
@@ -1153,6 +1152,7 @@ setting the result set equal to the next_step set for the departure point. Now
 we have in the result set all points that one can reach in one step. Then, for
 every point in our result set, we create a union of the result set and the
 next_step set for that point. This process is iterated for a specified number of loops.
+
 ---
 
 An example may clarify the procedure outlined above. When the departure
@@ -1191,6 +1191,7 @@ lower case letter for an element from that set.
 | complement   | A                     | ~A              |
 | empty set    | ε                     | 0               |
 | membership   | x ∈ A                 | (1 << x ) & A   |
+
 ---
 
 To test for membership —that is, to query whether a set holds a particular
@@ -1257,6 +1258,7 @@ findtargets(source,  steps,  nextstep[],  numpoints  =  sizeof  nextstep)
 }
 
 ```
+
 ---
 
 The enum statement just below the header of the main function declares the
@@ -1331,8 +1333,7 @@ bitcount(set)
 
 <hr>
 
-<div align="left">
----
+## <div align="left">
 
 ### • A simple RPN calculator
 
@@ -1383,9 +1384,8 @@ proposed later to put operators behind the operands, calling it the “Reverse P
 <hr>
 
 <div align="left">
-	
 
-***
+---
 
 The advantage of reversing the order is that the operators
 are listed in the same order as they must be executed: when  
@@ -1437,6 +1437,7 @@ main()
 }
 
 ```
+
 ---
 
 The main program contains very little code itself; instead it includes the re-
@@ -1452,7 +1453,7 @@ file rpnparse.inc, reproduced below:
 
 Listing: rpnparse.inc
 
-```c
+````c
 
 /*  main  rpn  parser  and  lexical  analysis,  part  of  the  RPN  calculator  */
 #include  <rational>
@@ -1531,13 +1532,13 @@ gettoken(const  string[],  &index)
 
 The rpn calculator uses rational number support and rpnparse.inc includes
 the “rational” file for that purpose. Almost all of the operations on rational
-numbers is hidden in the arithmetic. The only direct references to  
+numbers is hidden in the arithmetic. The only direct references to
 rational numbers are the “%r” format code in the printf statement near the bottom
 of function rpncalc and the call to rationalstr halfway function gettoken.
 
 The first remarkable element in the file rpnparse.inc is the enum
 declaration, where one element has a tag (t_field) and the other element has a size
-(t_word). Function rpncalc declares variable field as an array using  
+(t_word). Function rpncalc declares variable field as an array using
 the enumeration symbol as its size. Behind the screens, this declaration does more
 than just create an array with 22 cells:
 
@@ -1554,7 +1555,7 @@ where the format code %s expects a string —a zero-terminated array.
 </div>
 
 <div align="right">
-	
+
 `Rational numbers, see also the “Celsius to Fahrenheit” example on page page 16`
 
 `“enum” statement: 101`
@@ -1566,7 +1567,7 @@ where the format code %s expects a string —a zero-terminated array.
 // came to here
 
 <div align="left">
-	
+
 
 ***
 
@@ -1576,14 +1577,14 @@ that provide it. The cases are not fall-through, for example, which in
 turn means that the break statement for the case EndOfExpr breaks out of the
 enclosing loop, instead of out of the switch.
 
-On the top of the for loop in function rpncalc, you will find the  
+On the top of the for loop in function rpncalc, you will find the
 instruction “field = gettoken(string, index)”. As already exemplified in the
 wcount.p (“word count”) program on page 19, functions may return arrays.
 It gets more interesting for a similar line in function gettoken:
 
 field[t_word] = word
 
-where word is an array of 20 cells and field is an array of 22 cells.  
+where word is an array of 20 cells and field is an array of 22 cells.
 However, as the t_word enumeration field is declared as having a size of 20 cells,
 “field[t_word]” is considered a sub-array of 20 cells, precisely matching the
 array size of word.
@@ -1618,7 +1619,7 @@ strtok(const string[], &index)
 	return result
 }
 
-```
+````
 
 </div>
 
@@ -1633,9 +1634,8 @@ strtok(const string[], &index)
 <hr>
 
 <div align="left">
-	
 
-***
+---
 
 Function strtok is the same as the one used in the wcount.p example. It is
 implemented in a separate file for the rpn calculator program. Note that the
@@ -1830,7 +1830,7 @@ Listing: turtle.p
 		case ’r’: x++ /_ right _/
 		case ’\e’: exit /_ Escape = exit _/
 	}
-	
+
 	/_ adjust the cursor position and draw something _/
 	moveturtle x, y
 }
@@ -1954,11 +1954,11 @@ they are also responded to individually. On occasion, though, an event is part
 of a sequential flow, that must be handled in order. Examples are data transfer
 protocols over, for example, a serial line. Each event may carry a command,
 a snippet of data that is part of a larger file, an acknowledgement, or
-other signals that take part in the protocol. 
+other signals that take part in the protocol.
 
 ---
 
-###### ∗ As this script makes no attempt to separate received messages from typed messages (for example, in two different scrollable regions), the terminal/console will look confusing when this happens. With an improved user-interface, this simple script could indeed be a nice message-base chat program. 
+###### ∗ As this script makes no attempt to separate received messages from typed messages (for example, in two different scrollable regions), the terminal/console will look confusing when this happens. With an improved user-interface, this simple script could indeed be a nice message-base chat program.
 
 <hr>***
 
@@ -2102,7 +2102,7 @@ is declared at all in this script. The information about a character being held
 back is “hidden” in the state of the automaton.
 
 As is apparent in the script, state changes may be conditional. The condition
-is optional, and you can also use the common if–else construct to change states.***
+is optional, and you can also use the common if–else construct to change states.\*\*\*
 
 Being state-dependent is not reserved for the event functions. Other functions
 may have state declarations as well, as the echo function demonstrates. When
@@ -2143,7 +2143,7 @@ when actions (output) were tied to the states rather than to the events (input).
 
 <hr>
 
-###### * A function that has the same implementation for all states, does not need a state classifierat all —see printchar.
+###### \* A function that has the same implementation for all states, does not need a state classifierat all —see printchar.
 
 <hr>***
 
@@ -2496,7 +2496,7 @@ in the state diagrams —in part because it is in line with the usual notation.
 For a state, the rounded rectangle holds the name of the state and optionally
 a brief description of what the state entry function does. The  
 arrow for a transition contains the name of the event (or pseudo-event), an  
-optional condition between square brackets and an optional action behind a slash (“/”).***
+optional condition between square brackets and an optional action behind a slash (“/”).\*\*\*
 
 • Program verification
 
@@ -2531,11 +2531,11 @@ function.
 The name “design by contract” was coined by Bertrand Meyer and its princi-
 ples trace back to predicate logic and algorithmic analysis.
 
-   • Preconditions specify the valid values of the input parameters and environmental attributes;
+• Preconditions specify the valid values of the input parameters and environmental attributes;
 
-   • Postconditions specify the output and the (possibly modified) environment;
+• Postconditions specify the output and the (possibly modified) environment;
 
-   • Invariants indicate the conditions that must hold true at key points in a function, regardless of the path taken through the function.
+• Invariants indicate the conditions that must hold true at key points in a function, regardless of the path taken through the function.
 
 For example, a function that computes a square root of a number may specify
 that its input parameter be non-negative. This is a precondition. It may also
@@ -2633,7 +2633,7 @@ The report file contains a reference to the “smalldoc.xsl” stylesheet.
 
 <hr>
 
-***
+---
 
 The example below illustrates documentation comments in a simple script that
 has a few functions. You may write documentation comments for a function
@@ -2697,7 +2697,7 @@ main()
             print "Friday"
         }
     }
-    else   
+    else
         print "Invalid date"
     print "\n"
 }
@@ -2955,7 +2955,7 @@ function/variable/constant. The parser also generates few tags of its own:
 
 <hr>
 
-***
+---
 
 </div>
 
@@ -2977,7 +2977,7 @@ function/variable/constant. The parser also generates few tags of its own:
 
 <hr>
 
-***
+---
 
 All text in the documentation comment(s) is also copied to each  
 function,
@@ -3007,7 +3007,7 @@ processors usually do. The pawn toolkit comes with an example XSLT file
 
 <hr>
 
-***
+---
 
 The following additional HTML tags are supported for general purpose formatting text inside any of the above sections:
 
@@ -3023,7 +3023,7 @@ The following additional HTML tags are supported for general purpose formatting 
 
 <hr>
 
-***
+---
 
 As stated, there is one exception in the processing of documentation  
 comments: if your documentation comment contains a <param ...> tag (and a
@@ -3046,30 +3046,30 @@ Regardless of the differences in launching the compile, the phenomenon that
 results from launching the compile are likely to be very similar  
 between all systems:
 
-   • either the compile succeeds and produces an executable program —that may or may not run automatically after the compile;
+• either the compile succeeds and produces an executable program —that may or may not run automatically after the compile;
 
-   • or the compile gives a list of warning and error messages.
+• or the compile gives a list of warning and error messages.
 
 <hr>
 
-***
+---
 
-   • Mistakes happen and the pawn parser tries to catch as many of them as it
+• Mistakes happen and the pawn parser tries to catch as many of them as it
 can. When you inspect the code that the pawn parser complains about, it
 may on occasion be rather difficult for you to see why the code is erroneous
 (or suspicious). The following hints may help:
 
-   • Each error or warning number is numbered. You can look up the error message with this number in appendix A, along with a brief description on what the message really means.
+• Each error or warning number is numbered. You can look up the error message with this number in appendix A, along with a brief description on what the message really means.
 
-   • If the pawn parser produces a list of errors, the first error in this list is a true error, but the diagnostic messages below it may not be errors at all. After the pawn parser sees an error, it tries to step over it and complete the compilation. However, the stumbling on the error may have confused the pawn parser so that subsequent legitimate statements are misinterpreted and reported as errors too. When in doubt, fix the first error and recompile.
+• If the pawn parser produces a list of errors, the first error in this list is a true error, but the diagnostic messages below it may not be errors at all. After the pawn parser sees an error, it tries to step over it and complete the compilation. However, the stumbling on the error may have confused the pawn parser so that subsequent legitimate statements are misinterpreted and reported as errors too. When in doubt, fix the first error and recompile.
 
-   • The pawn parser checks only the syntax (spelling/grammar), not the semantics (i.e. the “meaning”) of the code. When it detects code that does not comply to the syntactical rules, there may actually be different ways in which the code can be changed to be “correct”, in the syntactical sense of the word —even though many of these “corrections” would lead to nonsensical code. The result is, though, that the pawn parser may have difficulty to precisely locate the error: it does not know what you meant to write. Hence, the parser often outputs two line numbers and the error is somewhere in the range (between the line numbers).
+• The pawn parser checks only the syntax (spelling/grammar), not the semantics (i.e. the “meaning”) of the code. When it detects code that does not comply to the syntactical rules, there may actually be different ways in which the code can be changed to be “correct”, in the syntactical sense of the word —even though many of these “corrections” would lead to nonsensical code. The result is, though, that the pawn parser may have difficulty to precisely locate the error: it does not know what you meant to write. Hence, the parser often outputs two line numbers and the error is somewhere in the range (between the line numbers).
 
-   • Remember that a program that has no syntactical errors (the pawn parser accepts it without error & warning messages) may still have semantical and logical errors which the pawn parser cannot catch. The assert instruction (page 112) is meant to help you catch these “run-time” errors.
+• Remember that a program that has no syntactical errors (the pawn parser accepts it without error & warning messages) may still have semantical and logical errors which the pawn parser cannot catch. The assert instruction (page 112) is meant to help you catch these “run-time” errors.
 
 <hr>
 
-***
+---
 
 ### • In closing
 
@@ -3092,5 +3092,6 @@ and functions, are covered first. The operators, the statements and general
 syntax rules follow later —not that they are less important, but they are easier
 to learn, to look up, or to take for granted.
 
-_______
+---
+
 ###### ∗ It is no longer the only book on Pawn.

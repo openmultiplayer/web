@@ -20,37 +20,37 @@ language itself. Several of the functions are needed to pull arguments out of a 
 argument list (see page 80).
 
 | clamp    |                                                                                                             |  Force a value inside a range |
-|----------|-------------------------------------------------------------------------------------------------------------|------------------------------:|
+| -------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------: |
 | Syntax   | clamp(value, min=cellmin, max=cellmax)                                                                      |                               |
 |          | value                                                                                                       | The value to force in a range |
-|          | min                                                                                                         | The low bound of the range.   |
-|          | max                                                                                                         | The high bound of the range.  |
+|          | min                                                                                                         |   The low bound of the range. |
+|          | max                                                                                                         |  The high bound of the range. |
 | Returns  | value if it is in the range min – max; min if value is lower than min; and max if value is higher than max. |                               |
 | See also | max, min                                                                                                    |                               |
 
 | funcidx |                                                                                                                                                                                                                                                           | Return a public funtion index |
-|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------:|
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------: |
 | Syntax  | funcidx(const name[])                                                                                                                                                                                                                                     |                               |
 | Returns | The index of the named public function. If no public function with the given name exists, funcidx returns −1.                                                                                                                                             |                               |
 | Notes:  | A host application runs a public function from the script by passing the public function’s index to amx_Exec. With this function, the script can query the index of a public function, and thereby return the “next function to call” to the application. |                               |
 
 | getarg   |                                                                                                                                                                                                       |                                         Get an argument |
-|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------:|
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------: |
 | Syntax   | getarg(arg, index=0)                                                                                                                                                                                  |                                                         |
 |          | arg                                                                                                                                                                                                   | The argument sequence number, use 0 for first argument. |
-|          | index                                                                                                                                                                                                 | The index, in case arg refers to an array.              |
+|          | index                                                                                                                                                                                                 |              The index, in case arg refers to an array. |
 | Returns  | The value of the argument                                                                                                                                                                             |                                                         |
 | Notes:   | This function retrieves an argument from a variable argument list. When the argument is an array, the index parameter specifies the index into the array. The return value is the retrieved argument. |                                                         |
 | See also | numargs, setarg                                                                                                                                                                                       |                                                         |
 
 | heapspace |                                                                                                                                                                            | Return free heap space |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------:|
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------: |
 | Syntax    | heapspace()                                                                                                                                                                |                        |
 | Returns   | The free space on the heap. The stack and the heap occupy a shared memory area, so this value indicates the number of bytes that is left for either the stack or the heap. |                        |
 | Notes:    | In absence of recursion, the pawn parser can also give an estimate of the required stack/heap space.                                                                       |                        |
 
 | max      |                                       |                    Return the highest of two numbers |
-|----------|---------------------------------------|-----------------------------------------------------:|
+| -------- | ------------------------------------- | ---------------------------------------------------: |
 | Syntax   | max(value1, value2)                   |                                                      |
 |          | value1                                |                                                      |
 |          | value2                                | The two values for which to find the highest number. |
@@ -58,7 +58,7 @@ argument list (see page 80).
 | See also | clamp, min                            |                                                      |
 
 | min      |                                       |                    Return the lowest of two numbers |
-|----------|---------------------------------------|----------------------------------------------------:|
+| -------- | ------------------------------------- | --------------------------------------------------: |
 | Syntax   | min(value1, value2)                   |                                                     |
 |          | value1                                |                                                     |
 |          | value2                                | The two values for which to find the lowest number. |
@@ -66,36 +66,36 @@ argument list (see page 80).
 | See also | clamp, max                            |                                                     |
 
 | numargs  |                                                                                                                | Return the number of arguments |
-|----------|----------------------------------------------------------------------------------------------------------------|-------------------------------:|
+| -------- | -------------------------------------------------------------------------------------------------------------- | -----------------------------: |
 | Syntax   | numargs()                                                                                                      |                                |
 | Returns  | The number of arguments passed to a function; numargs is useful inside functions with a variable argument list |                                |
 | See also | getarg, setarg                                                                                                 |                                |
 
 | random  |                                                                                                                                                                                                                                                                                                                                               |   Return a pseudo-random number |
-|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------:|
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------: |
 | Syntax  | random(max)                                                                                                                                                                                                                                                                                                                                   |                                 |
 |         | max                                                                                                                                                                                                                                                                                                                                           | The limit for the random number |
 | Returns | A pseudo-random number in the range 0 - max-1                                                                                                                                                                                                                                                                                                 |                                 |
 | Notes:  | The standard random number generator of pawn is likely a linear congruential pseudo-random number generator with a range and a period of 2³¹. Linear congruential pseudo-random number generators suffer from serial correlation (especially in the low bits) and it is unsuitable for applications that require high-quality random numbers. |                                 |
 
 | setarg   |                                                                                                                                                                   |                                                        |
-|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------:|
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------: |
 | Syntax   | setarg(arg, index=0, value)                                                                                                                                       |                                                        |
 |          | arg                                                                                                                                                               | The argument sequence number, use 0 for first argument |
-|          | index                                                                                                                                                             | The index, in case arg refers to an array              |
-|          | value                                                                                                                                                             | The value to set the argument to                       |
+|          | index                                                                                                                                                             |              The index, in case arg refers to an array |
+|          | value                                                                                                                                                             |                       The value to set the argument to |
 | Returns  | true on success and false if the argument or the index are invalid                                                                                                |                                                        |
 | Notes:   | This function sets the value of an argument from a variable argument list. When the argument is an array, the index parameter specifies the index into the array. |                                                        |
 | See also | getarg, numargs                                                                                                                                                   |                                                        |
 
 | swapchars |                                                                                                 |                  Swap bytes in a cell |
-|-----------|-------------------------------------------------------------------------------------------------|--------------------------------------:|
+| --------- | ----------------------------------------------------------------------------------------------- | ------------------------------------: |
 | Syntax    | swapchars(c)                                                                                    |                                       |
 |           | c                                                                                               | The value for which to swap the bytes |
 | Returns   | A value where the bytes in parameter "c" are swapped (the lowest byte becomes the highest byte) |                                       |
 
 | tolower  |                                                                                                                                                      |       Convert a character to lower case |
-|----------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------:|
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
 | Syntax   | tolower(c)                                                                                                                                           |                                         |
 |          | c                                                                                                                                                    | The character to convert to lower case. |
 | Returns  | The upper case variant of the input character, if one exists, or the unchanged character code of “c” if the letter “c” has no lower case equivalent. |                                         |
@@ -103,7 +103,7 @@ argument list (see page 80).
 | See also | toupper                                                                                                                                              |                                         |
 
 | toupper  |                                                                                                                                                      |       Convert a character to upper case |
-|----------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------:|
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
 | Syntax   | toupper(c)                                                                                                                                           |                                         |
 |          | c                                                                                                                                                    | The character to convert to upper case. |
 | Returns  | The lower case variant of the input character, if one exists, or the unchanged character code of “c” if the letter “c” has no upper case equivalent. |                                         |

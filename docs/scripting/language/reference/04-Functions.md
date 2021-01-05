@@ -358,7 +358,7 @@ sign (“=”) and the value to the argument name.
 
 When the function call specifies an argument placeholder instead of a valid ar-
 gument, the default value applies. The argument placeholder is the underscore
-character (“_”). The argument placeholder is only valid for function arguments
+character (“\_”). The argument placeholder is only valid for function arguments
 that have a default value.
 
 The rightmost argument placeholders may simply be stripped from the function
@@ -569,7 +569,6 @@ formal and actual arguments have the size and dimensions.
 <hr>
 
 <div align="left">
-
 
 ### • Arguments with tag names
 
@@ -1179,7 +1178,7 @@ might have been abbreviated to “chksum += value”.
 
 The parser recognizes commutative operators (“+”, “\*”, “==”, and “!=”)
 and it will swap the operands of a commutative operator if that produces
-a fit with a user-defined operator. For example, there is usually no need to implement both 
+a fit with a user-defined operator. For example, there is usually no need to implement both
 
 `ones:operator+(ones:a, b)`
 

@@ -48,7 +48,7 @@ Control flow statements (if, if–else, for, while, do–while and switch) may b
     before the closing brace of a compound statement.
     An empty statement does not end with a semicolon.
 
-**assert** *expression*
+**assert** _expression_
 
     Aborts the program with a run-time error
     if the expression evaluates to logically “false”.
@@ -68,13 +68,13 @@ Control flow statements (if, if–else, for, while, do–while and switch) may b
     control moves to the third expression in the for statement
     (and thereafter to the second expression).
 
-**do** *statement* **while** ( *expression* )
+**do** _statement_ **while** ( _expression_ )
 
     Executes a statement before the condition part (the while clause) is evaluated.
     The statement is repeated while the condition is logically “true”.
     The statement is at least executed once.
 
-**exit** *expression*
+**exit** _expression_
 
     Abort the program. The expression is optional, but it must start
     on the same line as the exit statement if it is present.
@@ -82,7 +82,7 @@ Control flow statements (if, if–else, for, while, do–while and switch) may b
     to the host application, or zero if no exit expression is present.
     The significance and purpose of exit codes is implementation defined.
 
-**for** ( *expression 1* ; *expression 2* ; *expression 3* ) *statement*
+**for** ( _expression 1_ ; _expression 2_ ; _expression 3_ ) _statement_
 
     All three expressions are optional.
 
@@ -103,13 +103,13 @@ Control flow statements (if, if–else, for, while, do–while and switch) may b
         for the next (conditional) iteration of the loop.
         The statement for( ; ; ) is equivalent with while (true).
 
-**goto** *label*
+**goto** _label_
 
     Moves program control (unconditionally) to the statement that follows the specified label.
     The label must be within the same function as the
     goto statement (a goto statement cannot jump out of a function).
 
-**if** ( *expression* ) *statement 1* **else** *statement 2*
+**if** ( _expression_ ) _statement 1_ **else** _statement 2_
 
     Executes statement 1 if the expression results to logically “true”.
     The else clause of the if statement is optional.
@@ -119,7 +119,7 @@ Control flow statements (if, if–else, for, while, do–while and switch) may b
     When if statements are nested and else clauses are present,
     a given else is associated with the closest preceding if statement in the same block.
 
-**return** *expression*
+**return** _expression_
 
     Terminates the current function and moves program control
     to the statement following the calling statement.
@@ -130,7 +130,7 @@ Control flow statements (if, if–else, for, while, do–while and switch) may b
     as the return statement if it is present.
     If absent, the value of the function is zero.
 
-**sleep** *expression*
+**sleep** _expression_
 
     Abort the program, but leave it in a re-startable state.
     The expression is optional. If included, the sleep instruction
@@ -141,7 +141,7 @@ Control flow statements (if, if–else, for, while, do–while and switch) may b
     light-weight multitasking of several concurrent pawn programs,
     or to implement “latent” functions.
 
-**state** ( *expression* ) **automaton** :*name*
+**state** ( _expression_ ) **automaton** :_name_
 
     Changes the current state in the specified automaton.
     The expression between parentheses is optional; if it is absent,
@@ -175,7 +175,7 @@ state gps:handshake
     The state instruction causes an implied call to the
     entry function for the indicated state —if such entry function exists.
 
-**switch** ( *expression* ) { *case list* }
+**switch** ( _expression_ ) { _case list_ }
 
     Transfers control to different statements within the switch body depending
     on the value of the switch expression.
@@ -227,7 +227,7 @@ switch (weekday(12,31,1999))
 
 ```
 
-**while** ( *expression* ) *statement*
+**while** ( _expression_ ) _statement_
 
     Evaluates the expression and executes the statement
     if the expression result yields logically “true”.
