@@ -14,7 +14,7 @@ Oyuncu interior değiştirdiğinde çalışır. SetPlayerInterior tarafından ya
 | newinteriorid | Oyuncunun şu an bulunduğu interior.    |
 | oldinteriorid | Oyuncunun daha önce bulunduğu interior.|
 
-## Çalışınca Vereceği Sonuçlar
+## Çalışınca Vereceği Sonuçlar (Returns)
 
 Her zaman öncelikle oyun modunda çağrılır.
 
