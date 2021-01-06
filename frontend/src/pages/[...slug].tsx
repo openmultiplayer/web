@@ -1,8 +1,9 @@
-import DefaultErrorPage from "next/error";
-import components from "src/components/templates";
+import Error from "next/error";
+import { NextSeo } from "next-seo";
 
 import { hydrate } from "src/mdx-helpers/csr";
 import Admonition from "src/components/Admonition";
+import components from "src/components/templates";
 
 type Props = {
   source?: any;
@@ -15,9 +16,7 @@ const Page = ({ source, error, data, fallback }: Props) => {
   if (error) {
     return (
       <section>
-        <h1>Error!</h1>
-        <p>{error}</p>
-        <DefaultErrorPage statusCode={404} />
+        <Error statusCode={404} title={error} />
       </section>
     );
   }
@@ -26,6 +25,7 @@ const Page = ({ source, error, data, fallback }: Props) => {
 
   return (
     <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
+      <NextSeo title={data?.title} />
       <section className="mw7 pa3 flex-auto">
         {fallback && (
           <Admonition type="warning" title="Not Translated">
