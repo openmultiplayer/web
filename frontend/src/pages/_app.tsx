@@ -49,6 +49,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
         <Nav
           items={[
             { name: "Home", path: "/", exact: true },
+            { name: "FAQ", path: "/faq" },
             { name: "Servers", path: "/servers" },
             { name: "Docs", path: "/docs" },
             { name: "Blog", path: "/blog" },
