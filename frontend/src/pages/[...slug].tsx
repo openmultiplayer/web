@@ -25,7 +25,7 @@ const Page = ({ source, error, data, fallback }: Props) => {
 
   return (
     <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
-      <NextSeo title={data?.title} />
+      <NextSeo title={data?.title} description={data?.description} />
       <section className="mw7 pa3 flex-auto">
         {fallback && (
           <Admonition type="warning" title="Not Translated">
