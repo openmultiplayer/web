@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Router from "next/router";
-import { NextSeo } from "next-seo";
+import { DefaultSeo } from "next-seo";
 import { ToastContainer } from "react-nextjs-toast";
 import { MDXProvider } from "@mdx-js/react";
 import NProgress from "nprogress";
@@ -28,9 +28,10 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => (
       <link rel="stylesheet" href="/fonts.css" />
     </Head>
 
-    <NextSeo
+    <DefaultSeo
       title="Open Multiplayer"
       titleTemplate="open.mp | %s"
+      description="An upcoming multiplayer mod for Grand Theft Auto: San Andreas that will be fully backwards compatible with the existing multiplayer mod San Andreas Multiplayer."
       canonical="https://www.open.mp"
       twitter={{
         cardType: "summary",

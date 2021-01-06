@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { NextSeo } from "next-seo";
 import { differenceInMilliseconds } from "date-fns";
 import parseISO from "date-fns/fp/parseISO";
 import formatDistance from "date-fns/fp/formatDistance";
@@ -324,6 +325,11 @@ const ProgressError = () => (
 );
 const Progress = ({ items, error }) => (
   <section className="measure-wide center ph2">
+    <NextSeo
+      title="open.mp Progress"
+      description="Shows the progress of open.mp issues and pull requests from the GitHub repository."
+    />
+
     {error ? <ProgressError /> : <ProgressItems items={items} />}
   </section>
 );

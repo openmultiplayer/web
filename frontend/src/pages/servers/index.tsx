@@ -339,7 +339,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
   return (
     <section className="measure-wide center ph2 pb2">
       <NextSeo
-        title="Server List"
+        title="SA-MP Servers Index"
         description="Live indexing and data for all SA-MP servers."
       />
 
