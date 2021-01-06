@@ -1,3 +1,5 @@
+import { NextSeo } from "next-seo";
+
 import components from "src/components/templates";
 
 // -
@@ -29,6 +31,11 @@ const Page = (props: Props) => {
 
   return (
     <div className="flex flex-column flex-auto items-center">
+      <NextSeo
+        title={props?.data?.title}
+        description={props?.data?.description}
+      />
+
       <div className="flex flex-row-ns justify-center-ns">
         <div className="flex flex-column flex-grow">
           <Search />

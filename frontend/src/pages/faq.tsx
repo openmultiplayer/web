@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { NextSeo } from "next-seo";
+
 import { markdownCSR } from "src/mdx-helpers/csr";
 import { MarkdownContent } from "src/mdx-helpers/types";
 
@@ -8,6 +10,11 @@ type Props = {
 
 const Page = ({ content }: Props) => (
   <section className="pa0 ma0 center">
+    <NextSeo
+      title="Frequently Asked Questions"
+      description="Common questions and answers about the open.mp project and its relationship to SA-MP."
+    />
+
     <div className="mw8 center">
       <Image
         src="https://assets.open.mp/assets/images/assets/wordmark-light-mono.png"
