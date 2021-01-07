@@ -25,8 +25,9 @@ const Page = ({ content }: Props) => (
 
 // Server side
 import { markdownSSR } from "src/mdx-helpers/ssr";
-export const getStaticProps = async ({ locale }) => ({
-  props: { content: await markdownSSR(locale, "index") },
+import { GetStaticPropsContext } from "next";
+export const getStaticProps = async ({ locale }: GetStaticPropsContext) => ({
+  props: { content: await markdownSSR(locale || "en", "index") },
 });
 
 export default Page;

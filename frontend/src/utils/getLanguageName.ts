@@ -1,6 +1,6 @@
 import ISO6391 from "iso-639-1";
 
-const missingLanguages = {
+const missingLanguages: Record<string, string> = {
   "zh-TW": "正體中文/繁體中文",
   "zh-CN": "简化字",
 };

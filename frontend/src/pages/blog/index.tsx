@@ -12,23 +12,27 @@ type Props = {
   posts: Content[];
 };
 
-const Posts = ({ list }) =>
-  list.map((v: Content) => (
-    <article key={v.slug} className="ba b--black-10 br3 ph4 mv4">
-      <h2>
-        <Link href={`/blog/${v.slug}`}>
-          <a>{v.title}</a>
-        </Link>
-      </h2>
-      <p>
-        <time>{format(parseISO(v.date), "yyyy-MM-dd")}</time> by {v.author}
-      </p>
-    </article>
-  ));
+const Posts = ({ list }: { list: Content[] }) => (
+  <>
+    {list.map((v: Content) => (
+      <article key={v.slug} className="ba b--black-10 br3 ph4 mv4">
+        <h2>
+          <Link href={`/blog/${v.slug}`}>
+            <a>{v.title}</a>
+          </Link>
+        </h2>
+        <p>
+          <time>{format(parseISO(v.date!), "yyyy-MM-dd")}</time> by {v.author}
+        </p>
+      </article>
+    ))}
+  </>
+);
 
 const NoContent = () => <h3>There are currently no posts.</h3>;
 
-const PostList = ({ list }) => (list ? <Posts list={list} /> : <NoContent />);
+const PostList = ({ list }: { list: Content[] }) =>
+  list ? <Posts list={list} /> : <NoContent />;
 
 const Page = ({ posts }: Props) => (
   <>
@@ -54,7 +58,7 @@ export async function getStaticProps(
   const posts: Content[] = await Promise.all(
     paths.map(async (v: string) => {
       const name = v.slice(1, v.length);
-      const { source } = await readLocaleContent(name, context.locale);
+      const { source } = await readLocaleContent(name, context.locale || "en");
       const { data } = matter(source);
       data.slug = name.split("/")[1]; // get the slug from the name minus blog/
       return data as Content;

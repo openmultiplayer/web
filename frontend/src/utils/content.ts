@@ -57,7 +57,9 @@ export const exists = (path: string): boolean => {
 
 // Reads a markdown content file from the local filesystem. Only works at build
 // time. Will not work in production on Vercel at request-time.
-export const readMdFromLocal = async (path: string): Promise<string> => {
+export const readMdFromLocal = async (
+  path: string
+): Promise<string | undefined> => {
   if (path === "") {
     path = "index";
   }
@@ -78,7 +80,9 @@ export const readMdFromLocal = async (path: string): Promise<string> => {
 
 // Reads a markdown content file from the API. This is suitable for runtime use
 // and is used to build docs pages at request-time.
-export const readMdFromAPI = async (path: string): Promise<string> => {
+export const readMdFromAPI = async (
+  path: string
+): Promise<string | undefined> => {
   if (path === "") {
     path = "index";
   }

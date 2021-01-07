@@ -27,7 +27,9 @@ const Page = (props: Props) => {
     );
   }
 
-  const content = props.source && hydrate(props.source, { components });
+  const content =
+    props.source &&
+    hydrate(props.source, { components: components as Components });
 
   return (
     <div className="flex flex-column flex-auto items-center">
@@ -80,12 +82,13 @@ import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
 import { concat } from "lodash/fp";
+import { Components } from "@mdx-js/react";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
 ): Promise<GetStaticPropsResult<Props>> {
   const { locale } = context;
-  const route = context?.params.path || ["index"];
+  const route = context?.params?.path || ["index"];
 
   let result: { source: string; fallback: boolean };
   const path = route.join("/");
@@ -102,7 +105,7 @@ export async function getStaticProps(
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
   const mdxSource = await renderToString(content, {
-    components,
+    components: components as Components,
     mdxOptions: { remarkPlugins: [admonitions] },
   });
 

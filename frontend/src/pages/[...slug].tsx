@@ -35,7 +35,8 @@ const Page = ({ source, error, data, fallback }: Props) => {
     );
   }
 
-  const content = source && hydrate(source, { components });
+  const content =
+    source && hydrate(source, { components: components as Components });
 
   return (
     <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
@@ -65,19 +66,26 @@ import {
 } from "next";
 import matter from "gray-matter";
 
-import { getContentPaths, readLocaleContent } from "src/utils/content";
+import {
+  getAllContentLocales,
+  getContentPaths,
+  getContentPathsForLocale,
+  readLocaleContent,
+} from "src/utils/content";
 import { renderToString } from "src/mdx-helpers/ssr";
 import { RawContent } from "src/types/content";
+import { Components } from "@mdx-js/react";
+import { concat, flatten, flow, map } from "lodash/fp";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ slug: string[] }>
 ): Promise<GetStaticPropsResult<Props>> {
   const { locale } = context;
-  const route = context?.params.slug || ["index"];
+  const route = context?.params?.slug || ["index"];
 
   let result: RawContent;
   try {
-    result = await readLocaleContent(route.join("/"), locale);
+    result = await readLocaleContent(route.join("/"), locale || "en");
   } catch (e) {
     return { props: { error: "Not found: " + e.message } };
   }
@@ -85,7 +93,10 @@ export async function getStaticProps(
   const { content, data } = matter(result.source);
 
   const mdxSource = await renderToString(content, {
-    mdxOptions: { components },
+    components: components as Components,
+    mdxOptions: {
+      components: components as Components,
+    },
   });
 
   return { props: { source: mdxSource, data, fallback: result.fallback } };

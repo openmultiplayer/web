@@ -32,11 +32,11 @@ export async function apiSSP<T, E extends APIError = APIError>(
   responseHeaders?: boolean // encode headers into response object under `headers` key
 ): Promise<Result<T, E>> {
   // merge any specified headers with an additional cookie header - if given
-  const headers = {
+  const headers = new Headers({
     ...{ "Content-Type": "application/json" },
     ...init?.headers,
-    ...(ctx?.req ? { cookie: ctx.req.headers.cookie } : undefined),
-  };
+    ...(ctx?.req.headers.cookie && { cookie: ctx?.req.headers.cookie }),
+  });
 
   const r = await fetch(`${API_ADDRESS}${path}`, {
     mode: "cors",

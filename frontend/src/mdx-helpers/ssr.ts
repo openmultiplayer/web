@@ -59,7 +59,7 @@ export const renderToString = async (
     "mdx",
     "components",
     ...Object.keys(scope),
-    `${now.code}
+    `${now?.code}
   return React.createElement(MDXProvider, { components },
     React.createElement(MDXContent, {})
   );`
@@ -74,12 +74,10 @@ export const renderToString = async (
   );
 
   // react: render to string
-  // THIS WARNING HAPPENS HERE:
-  // "Component VersionWarn was not imported, exported, or provided by MDXProvider as global scope"
   const renderedOutput = reactRenderToString(component);
 
   return {
-    compiledSource: later.code,
+    compiledSource: later?.code || "",
     renderedOutput,
     scope,
   };

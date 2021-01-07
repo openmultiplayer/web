@@ -14,9 +14,13 @@ type NavItem = {
   extra?: string;
 };
 
-const NavListItem = ({ className = "", children }) => (
-  <li className={"self-center br2 pa2 mh2 tc " + className}>{children}</li>
-);
+const NavListItem = ({
+  className = "",
+  children,
+}: {
+  className: string;
+  children: React.ReactNode;
+}) => <li className={"self-center br2 pa2 mh2 tc " + className}>{children}</li>;
 
 const getPathComparator = (exact: boolean) => (a: string, b: string) =>
   exact ? a === b : a.startsWith(b);
@@ -34,12 +38,12 @@ const hydrateNavItemClasses = (current: string) => ([i, v]: [
   extra: [
     v.extra,
     ...hoverClasses(i === "0"),
-    selectedClass(getPathComparator(v.exact)(current, v.path)),
+    selectedClass(getPathComparator(v.exact!)(current, v.path)),
   ].join(" "),
 });
 
 const navItemToJSX = (v: NavItem) => (
-  <NavListItem key={v.path} className={v.extra}>
+  <NavListItem key={v.path} className={v.extra!}>
     <Link href={v.path}>
       <a className="link">{v.name}</a>
     </Link>
@@ -54,7 +58,12 @@ type Props = {
   route: string;
 };
 
-const NavList = ({ items, route, show, auth }) => (
+const NavList = ({
+  items,
+  route,
+  show,
+  auth,
+}: Props & { show: boolean; auth: boolean }) => (
   <ul
     className={[
       // Generic
@@ -88,7 +97,7 @@ const NavList = ({ items, route, show, auth }) => (
           path: "/login",
           extra: selectedClass(route === "/login"),
         })} */}
-    <NavListItem className={show || "db-ns dn"}>
+    <NavListItem className={show ? "db-ns dn" : ""}>
       <LanguageSelect />
     </NavListItem>
   </ul>
