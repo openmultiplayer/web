@@ -1,34 +1,30 @@
-import { readFileSync } from "fs";
-import { join } from "path";
+import React from "react";
 import mdx from "@mdx-js/mdx";
 import { MDXProvider, mdx as mdxReact } from "@mdx-js/react";
 import { transformAsync } from "@babel/core";
 import presetEnv from "@babel/preset-env";
 import presetReact from "@babel/preset-react";
-import pluginBrowser from "./babel-plugin-mdx-browser";
 import { renderToString as reactRenderToString } from "react-dom/server";
-import React from "react";
 
-import { MDX_COMPONENTS } from "src/components/typography";
+import { readLocaleContent } from "src/utils/content";
+
+import { MDX_COMPONENTS } from "./components";
 import { MarkdownContent, MarkdownRenderConfig } from "./types";
+import pluginBrowser from "./babel-plugin-mdx-browser";
 
+// Renders markdown content on the server for the given locale. Uses
+// readLocaleContent under the hood which handles fallbacks/extensions.
 export const markdownSSR = async (
   locale: string,
   file: string
 ): Promise<MarkdownContent> => {
-  let content: Buffer;
-
-  try {
-    content = readFileSync(join("content", locale, file));
-  } catch (e) {
-    content = readFileSync(join("content", "en", file));
-  }
-
-  return await renderToString(content, {
+  const { source } = await readLocaleContent(file, locale);
+  return await renderToString(source, {
     components: MDX_COMPONENTS,
   });
 };
 
+// Stolen from Hashicorp's next-mdx-remote!
 export const renderToString = async (
   source: Buffer | string,
   { components, mdxOptions, scope = {} }: MarkdownRenderConfig

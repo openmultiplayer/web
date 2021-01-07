@@ -5,3 +5,8 @@ export type Content = {
   author?: string;
   slug?: string;
 };
+
+export type RawContent = {
+  source: string;
+  fallback: boolean;
+};

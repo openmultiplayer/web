@@ -67,6 +67,7 @@ import matter from "gray-matter";
 
 import { getContentPaths, readLocaleContent } from "src/utils/content";
 import { renderToString } from "src/mdx-helpers/ssr";
+import { RawContent } from "src/types/content";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ slug: string[] }>
@@ -74,7 +75,7 @@ export async function getStaticProps(
   const { locale } = context;
   const route = context?.params.slug || ["index"];
 
-  let result: { source: string; fallback: boolean };
+  let result: RawContent;
   try {
     result = await readLocaleContent(route.join("/"), locale);
   } catch (e) {
