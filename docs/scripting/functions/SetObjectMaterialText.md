@@ -53,7 +53,7 @@ Color embedding can be used for multiple colors in the text.
 :::warning
 
 You MUST use ARGB color format, not RGBA like used in client messages etc.
-
+Text does not updates after 16 times this function is used.
 :::
 
 ## Related Functions
