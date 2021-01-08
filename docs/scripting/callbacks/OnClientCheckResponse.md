@@ -1,12 +1,12 @@
 ---
 title: OnClientCheckResponse
-description: This callback is called when a SendClientCheck request comletes
+description: This callback is called when a SendClientCheck request completes
 tags: []
 ---
 
 ## Description
 
-This callback is called when a SendClientCheck request comletes.
+This callback is called when a SendClientCheck request completes.
 
 | Name          | Description                       |
 | ------------- | --------------------------------- |
@@ -30,9 +30,10 @@ public OnPlayerConnect(playerid)
 
 public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
-    if(actionid == 0x48)
+    if(actionid == 0x48) // or 72
     {
-        print("The player's client response is 0x48");
+        print("WARNING: The player doesn't seem to be using a regular computer!");
+        Kick(playerid);
     }
     return 1;
 }
@@ -43,6 +44,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 :::warning
 
 This callback is only called when it is in a filterscript.
+
+:::
 
 ## Related Functions
 

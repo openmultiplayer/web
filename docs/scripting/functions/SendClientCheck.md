@@ -33,9 +33,10 @@ public OnPlayerConnect(playerid)
 
 public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
-    if(actionid == 0x48)
+    if(actionid == 0x48) // or 72
     {
-        print("The player's client response is 0x48");
+        print("WARNING: The player doesn't seem to be using a regular computer!");
+        Kick(playerid);
     }
     return 1;
 }
@@ -43,10 +44,19 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 ## Notes
 
+:::tip
+
+There are 6 types of requests that the client processes  2, 5, 69, 70, 71, 72.
+> Type 72 doesn't use any of the other arguments [arg | offset | size]. The arg returns the uptime of the computer.
+
+:::
+
 :::warning
 
 This callback is only called when it is in a filterscript.
 
 :::
 
-## Related Functions
+## Related Callbacks
+
+- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): called when a SendClientCheck request completes.
