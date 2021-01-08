@@ -67,8 +67,10 @@ size of 11 points.
 
 <br/><br/>
 
-<hr>
-<hr>
+</div>
+
+---
+
 <div align="center">
 
 # Table of contents
@@ -77,7 +79,7 @@ size of 11 points.
 
 </div>
 <div align="left">
-      
+
 [Foreword](01-Foreword.md) - Page 3-5
 
 [A tutorial introduction](02-A-tutorial-introduction.md) - Page 5-62
