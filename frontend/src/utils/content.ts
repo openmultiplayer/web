@@ -122,5 +122,16 @@ export const readLocaleDocs = async (name: string, locale?: string) => {
     return { source, fallback: true, name };
   }
 
+  // Fall back to local files if the API didn't provide the file.
+  source = await readMdFromLocal("../docs/" + fullName);
+  if (source !== undefined) {
+    return { source, fallback: false, fullName };
+  }
+
+  source = await readMdFromLocal("../docs/" + name);
+  if (source !== undefined) {
+    return { source, fallback: true, name };
+  }
+
   throw new Error(`Not found (${name})`);
 };
