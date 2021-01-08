@@ -1,11 +1,6 @@
-<div align="center">
-
 # A tutorial introduction
 
 ---
-
-</div>
-<div align="left">
 
 pawn is a simple programming language with a syntax reminiscent to the “C”
 programming language. A pawn program consists of a set of functions and
@@ -50,15 +45,9 @@ the string, because a string may not wrap over multiple lines.
 
 ###### ∗ This should not be confused with the “state” entry functions, which are called entry, but serve a different purpose — see page 42.
 
-</div>
-<div align="right">
-
 `Compiling and running scripts: see page 168`
 
 `String literals: 99 Escape sequence: 99`
-
-</div>
-<div align="left">
 
 ---
 
@@ -81,7 +70,6 @@ Listing: hello.p — C style
 main()
 {
 	printf("Hello  world\n");
-
 }
 
 ```
@@ -112,16 +100,9 @@ available by the host application and be “declared” to the pawn parser.
 
 ###### ∗ In the language specification, the term “parser” refers to any implementation that processes and runs on conforming Pawn programs —either interpreters or compilers.
 
-</div>
-<div align="right">
-
 `More function descriptions at page 124`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ---
 
@@ -175,18 +156,11 @@ The new keyword creates a variable. The name of the variable follows new.
 It Data declarations is common, but not imperative,
 to assign a value to the variable already at the moment of its creation.
 
-</div>
-<div align="right">
-
 `Compound statement: 112`
 
 `Data declarations are covered in detail starting at page 62`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ---
 
@@ -246,16 +220,13 @@ Function print can only print text; it is quicker than printf. If you want to
 print a literal “%” at the display, you have to use print, or you have to double
 it in the string that you give to printf. That is:
 
-    print  "20%  of  the  personnel  accounts  for  80%  of  the  costs\n"
+`print "20% of the personnel accounts for 80% of the costs\n"`
 
 and
 
-    printf  "20%%  of  the  personnel  accounts  for  80%%  of  the  costs\n"
+`printf "20%% of the personnel accounts for 80%% of the costs\n"`
 
 print the same string.
-
-</div>
-<div align="right">
 
 `"while" loop: 116`
 
@@ -263,11 +234,7 @@ print the same string.
 
 `Relational operators: 107`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Arrays and constants
 
@@ -333,9 +300,6 @@ arrays. The first element in the series array is series[0], so if the array
 holds max_primes elements, the last element in the array is series[max_primes 1].
 If max_primes is 100, the last element, then, is series[99]. Accessing series[100] is invalid.
 
-</div>
-<div align="right">
-
 `Constant declaration: 101`
 
 `Progressive initiallers: 65`
@@ -343,10 +307,6 @@ If max_primes is 100, the last element, then, is series[99]. Accessing series[10
 `"for" loop: 113`
 
 `An overview of all operators: 104`
-
-</div>
-
-<div align="left">
 
 ### • Functions
 
@@ -412,16 +372,9 @@ the call to the function.
 The return statement ends a function and sets the result of the function.
 It need not appear at the very end of the function; early exits are permitted.
 
-</div>
-<div align="right">
-
 `"assert" statement: 112`
 
 `Funcitons: properties & features: 70`
-
-</div>
-
-<div align="left">
 
 ---
 
@@ -463,15 +416,7 @@ embraced it to calculate intervals between two events more easily.
 
 ###### ∗ The Gregorian calendar was decreed to start on 15 October 1582 by pope Gregory XIII, which means that earlier dates do not really exist in the Gregorian calendar. When extending the Gregorian calendar to days before 15 October 1582, we refer to it as the proleptic Gregorian calendar.
 
-</div>
-
-<div align="right">
-
 `Native function interface: 85`
-
-</div>
-
-<div align="left">
 
 ---
 
@@ -585,15 +530,7 @@ and year respectively, does not change the matter: then you just happen to have
 two local variables called day, two called month and two called year, which is
 perfectly valid in pawn.
 
-</div>
-
-<div align="right">
-
 `"Call by value" versus "Call by reference": 71`
-
-</div>
-
-<div align="left">
 
 ---
 
@@ -688,32 +625,18 @@ case for rational numbers, its memory lay-out.
 
 ###### ∗ Actually, this is already true of all native functions, including all native functions that the examples in this manual use.
 
-</div>
-
-<div align="right">
-
 `Tag names: 68`
 
-</div>
+---
 
-<hr>
-
-## <div align="left">
+##
 
 The Rational: tag tells the pawn parser that the variables Celsius and Fahrenheit
 contain fractional values, rather than whole numbers.
 
 The equation for obtaining degrees Fahrenheit from degrees Celsius is
 
-</div>
-
-<div align="center">
-
 °F = ⁹⁄₅ + 32 °C
-
-</div>
-
-<div align="left">
 
 The program uses the value 1.8 for the quotient 9/₅. When rational number
 support is enabled, pawn supports values with a fractional part behind  
@@ -803,17 +726,11 @@ that pawn always passes arrays by reference. It does this to conserve memory
 and to increase performance —arrays can be large data structures and passing
 them by value requires a copy of this data structure to be made, taking both memory and time.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `A function that takes an array as an argument and that does not change it, may mark the argument as “const”; see page 72`
 
-</div>
-
-## <div align="left">
+##
 
 Due to this rule, function rot13 can modify its function
 parameter (called “string” in the example) without needing to declare as a
@@ -884,19 +801,13 @@ strtok(const  string[],  &index)
 
 ```
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Relational operators: 107`
 
 `Escape sequence: 99`
 
-</div>
-
-## <div align="left">
+##
 
 Function main first displays a message and retrieves a string that  
 the user must type. Then it enters a loop: writing “for (;;)” creates a loop
@@ -1026,11 +937,7 @@ extract(item[message])
 
 ```
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `"for" loop: 113`
 
@@ -1038,9 +945,7 @@ extract(item[message])
 
 `"char" operator: 110`
 
-</div>
-
-## <div align="left">
+##
 
 Near the top of the program listing is the declaration of the enumeration mes-
 sage. This enumeration defines two constants: text, which is zero, and pri-
@@ -1123,17 +1028,9 @@ rameters. The order in which named parameters are listed is not important.
 Named parameters are convenient in specifying —and deciphering— long pa-
 rameter lists.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Named parameters: 74`
-
-</div>
-
-<div align="left">
 
 ### • Bit operations to manipulate ‘‘sets’’
 
@@ -1319,21 +1216,15 @@ bitcount(set)
 
 ```
 
-</div>
+---
 
-<hr>
-
-<div align="right">
-	
-`“enum”  statement: 101`
+`“enum” statement: 101`
 
 `“cellbits” constant: 102`
 
-</div>
+---
 
-<hr>
-
-## <div align="left">
+##
 
 ### • A simple RPN calculator
 
@@ -1369,21 +1260,13 @@ proposed later to put operators behind the operands, calling it the “Reverse P
 
 ###### \* Polish Notation is completely unrelated to “Hungarian Notation” —which is just the habit of adding “type” or “purpose” identification warts to names of variables or functions.
 
-</div>
+---
 
-<hr>
-
-<div align="right">
-	
 `Algebraic notation is also called “infix” notation`
 
 `Reverse Polish Notation is also called “postfix” notation`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ---
 
@@ -1552,9 +1435,9 @@ than just create an array with 22 cells:
 
 where the format code %s expects a string —a zero-terminated array.
 
-</div>
 
-<div align="right">
+
+
 
 `Rational numbers, see also the “Celsius to Fahrenheit” example on page page 16`
 
@@ -1562,11 +1445,11 @@ where the format code %s expects a string —a zero-terminated array.
 
 `Another example of an index tag: page 68`
 
-</div>
+
 
 // came to here
 
-<div align="left">
+
 
 
 ***
@@ -1621,19 +1504,11 @@ strtok(const string[], &index)
 
 ````
 
-</div>
+---
 
-<hr>
-
-<div align="right">
-	
 `“switch” statement: page 115`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ---
 
@@ -1686,19 +1561,11 @@ clearstack()
 
 ```
 
-</div>
+---
 
-<hr>
-
-<div align="right">
-	
 `wcount.p: page 19`
 
-</div>
-
-<hr>
-
-<div align="left">***
+---
 
 The file stack.inc includes the file rational again. This is technically not
 necessary (rpnparse.inc already included the definitions for rational number
@@ -1738,7 +1605,7 @@ and a second task/thread that sits in a loop continuously requesting user input.
 This is a heavy-weight solution, however. A more light-weight implementation
 of a responsive system is what is called the “event-driven” programming model.
 
-<hr>***
+---\*\*\*
 
 In the event-driven programming model, a program or script decomposes any
 lengthy (background) task into short manageable blocks and in between, it is
@@ -1792,19 +1659,11 @@ a (usually triangular) cursor of the computer display, again under control of a
 program. A novelty was that the turtle now left a trail behind it, allowing you
 to create drawings by properly programming the turtle —it became known as turtle graphics.
 
-<hr>
+---
 
-</div>
-
-<div align="right">
-	
 `Public functions: 83`
-	
-</div>
 
-<hr>
-
-<div align="left">***
+---
 
 The term “turtle graphics” was also used for drawing inter-
 actively with the arrow keys on the keyboard and a “turtle” for the current
@@ -1861,7 +1720,7 @@ Support for function keys and other special keys (e.g. the arrow keys) is highly
 system-dependent. On ANSI terminals, these keys produce different codes
 than in a Windows “DOS box”.
 
-<hr>***
+---\*\*\*
 
 In the spirit of keeping the example program
 portable, I have used common letters (“u” for up, “l” for left, etc.). This
@@ -1894,7 +1753,7 @@ line or using TCP/IP, the host application may decide itself. The tools in the
 standard pawn distribution push the messages over the TCP/IP network, and
 allow for a “broadcast” mode so that more than two people can chat with each other.
 
-<hr>***
+---\*\*\*
 
 Listing: chat.p
 
@@ -1960,7 +1819,7 @@ other signals that take part in the protocol.
 
 ###### ∗ As this script makes no attempt to separate received messages from typed messages (for example, in two different scrollable regions), the terminal/console will look confusing when this happens. With an improved user-interface, this simple script could indeed be a nice message-base chat program.
 
-<hr>***
+---\*\*\*
 
 For the stream of events (and the data packets that they carry) to make sense,
 the event-driven program must follow a precise hand-shaking protocol.
@@ -1986,21 +1845,13 @@ finite number of states, are deterministic (i.e. predictable in behaviour)
 and their relatively simple design allows a straightforward
 implementation from a “state diagram”.
 
-</div>
-
-<div align="center">
-
 ![State diagram](https://i.ibb.co/k3kWVvy/image.png)
-
-</div>
-
-<div align="left">
 
 In a state diagram, the states are usually represented as circles or  
 rounded rectangles and the arrows represent the transitions. As transitions are
 the response of the automaton to events, an arrow may also be seen as an event “that does something”.
 
-<hr>***
+---\*\*\*
 
 An event/transition that is not defined in a particular
 state is assumed to have no effect —it is silently ignored. A filled dot
@@ -2076,11 +1927,11 @@ printchar(ch, colour)
 
 ```
 
-<hr>
+---
 
 ###### ∗ With the exception of “native functions” and user-defined operators.
 
-<hr>***
+---\*\*\*
 
 Function main sets the starting state to main and exits; all logic  
 is eventdriven. when a key arrives in state plain, the program checks for  
@@ -2119,7 +1970,7 @@ cedure in all other cases. The function for handling the event in such “error�
 condition might then hold a lot of state names, if you were to mention them
 explicitly. There is a shorter way: by not mentioning any name between the
 angle brackets, the function matches all states that have not explicit imple-
-mentation elsewhere. So, for example, you could use the signature “echo(key) <>”
+mentation elsewhere. So, for example, you could use the signature `echo(key) <>`
 for either of the two implementations (but not for both).
 
 A single anonymous automaton is pre-defined. If a program contains more
@@ -2141,25 +1992,17 @@ and communication switching circuits. In these applications, robustness and pre-
 dictability are paramount, and it was found that these goals were best achieved
 when actions (output) were tied to the states rather than to the events (input).
 
-<hr>
+---
 
 ###### \* A function that has the same implementation for all states, does not need a state classifierat all —see printchar.
 
-<hr>***
+---\*\*\*
 
-</div>
-
-<div align="center">
-	
 ![pcl](https://i.ibb.co/PYnBGS9/image.png)
-	
-</div>
-
-<div align="left">
 
 ###### Figure 1: Pedestrian crossing lights
 
-<hr>
+---
 
 Entering a state (optionally) causes activity; events cause state changes, but
 do not carry out other operations.
@@ -2172,22 +2015,14 @@ dangerous. Thus, four combinations remain to be handled. The figure below is a
 state diagram for the pedestrian crossing lights. The entire process is activated with
 a button, and operates on a timer.
 
-</div>
-
-<div align="center">
-	
 ![pcl](https://i.ibb.co/9wNR3ry/image.png)
-	
-</div>
-
-<div align="left">
 
 When the state red/walk times out, the state cannot immediately go back to
 green/wait, because the pedestrians that are busy crossing the road at  
 that moment need some time to clear the road —the state red/wait
 allows for this.
 
-<hr>***
+---\*\*\*
 
 For purpose of demonstration, this pedestrian crossing has the added
 functionality that when a pedestrian pushes the button while the light for the
@@ -2253,7 +2088,7 @@ entry() <red_wait>
 
 ```
 
-<hr>***
+---\*\*\*
 
 This example program has an additional dependency on the host application/
 environment: in addition to the “@keypressed” event function, the host must
@@ -2298,7 +2133,7 @@ control is the mirt system (Mobile Infra-Red Transmitter) but not de facto
 standard exists —the Netherlands use a radiographic system called vetag for
 instance.
 
-<hr>***
+---\*\*\*
 
 The new state diagram for the pedestrian crossing light has two more states,
 but more importantly: it needs to save data across events and share it between
@@ -2330,7 +2165,7 @@ the ones listed). Apart from the state classifier, the declaration of a state
 variable is similar to that of a global variable. The declaration of the
 variable button_memo in the next listing illustrates the concept.
 
-<hr>***
+---\*\*\*
 
 Listing: traffic2.p
 
@@ -2422,7 +2257,7 @@ entry() <mirt_override>
 
 ```
 
-<hr>***
+---\*\*\*
 
 If a pedestrian pushes the button during mirt activity, that button press
 is
@@ -2447,7 +2282,7 @@ known riddle of the man that must move a cabbage, a sheep and a wolf across a ri
 ∗ the states are obvious —the trick of the riddle is to avoid the forbidden
 states. But now that we are seeing states everywhere, the task is not to overdo it.
 
-<hr>***
+---\*\*\*
 
 For example, in the second implementation of a pedestrian crossing light, see
 page 47, I used a variable (button_memo) to hold a criterion for a decision made
@@ -2526,7 +2361,7 @@ execute the function. In addition, the function may also specify any conditions
 that hold true after it completes its operation. This is the “contract” of the
 function.
 
-<hr>***
+---\*\*\*
 
 The name “design by contract” was coined by Bertrand Meyer and its princi-
 ples trace back to predicate logic and algorithmic analysis.
@@ -2564,19 +2399,11 @@ not with assertions. As a rule, the expressions contained in assertions should b
 free of side effects: an assertion should never contain code that your
 application requires for correct operation.
 
-</div>
+---
 
-<hr>
-
-<div align="right">
-	
 `Example square root funczion (usin bisection): 79`
-	
-</div>
-	
-<hr>
 
-<div align="left">***
+---
 
 This does have the effect, however, that assertions never fire in a  
 bug-free program: they just make the code fatter and slower, without any user-visible
@@ -2621,17 +2448,11 @@ that of the “.Net” developer products —except that the pawn compiler store
 more information in the report than just the extracted documentation strings.
 The report file contains a reference to the “smalldoc.xsl” stylesheet.
 
-</div>
+---
 
-<hr>
-
-<div align="right">
-	
 `Comment syntax: 97`
 
-</div>
-
-<hr>
+---
 
 ---
 
@@ -2953,19 +2774,11 @@ function/variable/constant. The parser also generates few tags of its own:
 | paraminfo  | Tags and array or reference information on a parameter.                                                                                                                                                                            |
 | referrer   | All functions that refer to this symbol; i.e., all functions that use or call this variable/function. This information is sufficient to serve as a “cross-reference” —the “referrer” tree is the inverse of the “dependency” tree. |
 
-<hr>
+---
 
 ---
 
-</div>
-
-<div align="center">
-	
 ![fig2](https://i.ibb.co/VmQS0fL/image.png)
-
-</div>
-
-<div align="left">
 
 ###### Figure 2: Documentation generated from the source code
 
@@ -2975,7 +2788,7 @@ function/variable/constant. The parser also generates few tags of its own:
 | tagname    | The tag of the constant, variable, function result or function parameter(s).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | transition | The transitions that the function provokes and their conditions —see the section of automatons on page 38.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-<hr>
+---
 
 ---
 
@@ -2992,42 +2805,42 @@ processors usually do. The pawn toolkit comes with an example XSLT file
 
 (with a matching style sheet) which supports the following XML/HTML tags:
 
-| name                         | info                                                                                                                                               |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <code> </code>               | Preformatted source code in a monospaced font; although the “&”, “<” and “>” must be typed as “&amp;”, “&lt;” and “&rt;” respectively.             |
-| <example> </example>         | Text set under the sub-header “Example”.                                                                                                           |
-| <param  name="..."> </param> | A parameter description, with the parameter name appearing inside the opening tag (the “name=” option) and the parameter description following it. |
-| <paramref  name="..."  />    | A reference to a parameter, with the parameter name appearing inside the opening tag (the “name=” option).                                         |
-| <remarks> </remarks>         | Text set under the sub-header "Remarks”.                                                                                                           |
-| <returns> </returns>         | Text set under the sub-header “Returns”.                                                                                                           |
-| <seealso> </seealso>         | Text set under the sub-header “See also”.                                                                                                          |
-| <summary> </summary>         | Text set immediately below the header of the symbol.                                                                                               |
-| <section> </section>         | Sets the text in a header. This should only be used in documentation that is not attached to a function or a variable.                             |
-| <subsection> </subsection>   | Sets the text in a sub-header. This should only be used in documentation that is not attached to a function or a variable.                         |
+| name                          | info                                                                                                                                               |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<code> </code>`              | Preformatted source code in a monospaced font; although the “&”, “<” and “>” must be typed as “&amp;”, “&lt;” and “&rt;” respectively.             |
+| `<example> </example>`        | Text set under the sub-header “Example”.                                                                                                           |
+| `<param name="..."> </param>` | A parameter description, with the parameter name appearing inside the opening tag (the “name=” option) and the parameter description following it. |
+| `<paramref name="..." />`     | A reference to a parameter, with the parameter name appearing inside the opening tag (the “name=” option).                                         |
+| `<remarks> </remarks>`        | Text set under the sub-header "Remarks”.                                                                                                           |
+| `<returns> </returns>`        | Text set under the sub-header “Returns”.                                                                                                           |
+| `<seealso> </seealso>`        | Text set under the sub-header “See also”.                                                                                                          |
+| `<summary> </summary>`        | Text set immediately below the header of the symbol.                                                                                               |
+| `<section> </section>`        | Sets the text in a header. This should only be used in documentation that is not attached to a function or a variable.                             |
+| `<subsection> </subsection>`  | Sets the text in a sub-header. This should only be used in documentation that is not attached to a function or a variable.                         |
 
-<hr>
+---
 
 ---
 
 The following additional HTML tags are supported for general purpose formatting text inside any of the above sections:
 
-| name           | info                                                                                                                                                                 |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <c> </c>       | Text set in a monospaced font.                                                                                                                                       |
-| <em> </em>     | Text set emphasized, usually in italics.                                                                                                                             |
-| <p> </p>       | Text set in a new paragraph. Instead of wrapping <p> and </p> around every paragraph, inserting <p/> as a separator between two paragraphs produces the same effect. |
-| <para> </para> | An alternative for <p> </p>.                                                                                                                                         |
-| <ul> </ul>     | An unordered (bulleted) list.                                                                                                                                        |
-| <ol> </ol>     | An ordered (numbered) list.                                                                                                                                          |
-| <li> </li>     | An item in an ordered or unordered list.                                                                                                                             |
+| name             | info                                                                                                                                                                 |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<c> </c>`       | Text set in a monospaced font.                                                                                                                                       |
+| `<em> </em>`     | Text set emphasized, usually in italics.                                                                                                                             |
+| `<p> </p>`       | Text set in a new paragraph. Instead of wrapping <p> and </p> around every paragraph, inserting <p/> as a separator between two paragraphs produces the same effect. |
+| `<para> </para>` | An alternative for <p> </p>.                                                                                                                                         |
+| `<ul> </ul>`     | An unordered (bulleted) list.                                                                                                                                        |
+| `<ol> </ol>`     | An ordered (numbered) list.                                                                                                                                          |
+| `<li> </li>`     | An item in an ordered or unordered list.                                                                                                                             |
 
-<hr>
+---
 
 ---
 
 As stated, there is one exception in the processing of documentation  
-comments: if your documentation comment contains a <param ...> tag (and a
-matching </param>), the pawn parser looks up the parameter and combines
+comments: if your documentation comment contains a `<param ...>` tag (and a
+matching `</param>`), the pawn parser looks up the parameter and combines
 your description of the parameter with the contents that it has automatically
 generated.
 
@@ -3050,7 +2863,7 @@ between all systems:
 
 • or the compile gives a list of warning and error messages.
 
-<hr>
+---
 
 ---
 
@@ -3067,7 +2880,7 @@ may on occasion be rather difficult for you to see why the code is erroneous
 
 • Remember that a program that has no syntactical errors (the pawn parser accepts it without error & warning messages) may still have semantical and logical errors which the pawn parser cannot catch. The assert instruction (page 112) is meant to help you catch these “run-time” errors.
 
-<hr>
+---
 
 ---
 

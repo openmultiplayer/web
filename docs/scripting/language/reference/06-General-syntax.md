@@ -1,12 +1,6 @@
-<div align="center">
-
 # General syntax
 
 ---
-
-</div>
-
-<div align="left">
 
 **Format**
 
@@ -310,11 +304,7 @@ A tag consists of an identifier followed by a colon. There may be no white space
 | Fixed: | Rational numbers typically have this tag when fixed point support is enabled (page 121).    |
 | Float: | Rational numbers typically have this tag when floating point support is enabled (page 121). |
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Optional semicolons: 122`
 
@@ -338,8 +328,6 @@ A tag consists of an identifier followed by a colon. There may be no white space
 
 `Identifiers: 97`
 
-<hr>
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

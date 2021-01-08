@@ -1,12 +1,6 @@
-<div align="center">
-
 # Directives
 
 ---
-
-</div>
-
-<div align="left">
 
 All directives must appear first on a line (they may be preceded by white space,
 but not by any other characters). All directives start with the character # and
@@ -309,11 +303,7 @@ the complete instruction may not span more than one line.
     alphanumeric part of the macro. See page 93 for details and examples
     on text substitution.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `See also “Predefined constants” on page 102`
 
@@ -323,8 +313,6 @@ the complete instruction may not span more than one line.
 
 `Warning messages: 161`
 
-<hr>
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

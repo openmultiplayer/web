@@ -1,12 +1,6 @@
-<div align="center">
-
 # The preprocessor
 
 ---
-
-</div>
-
-<div align="left">
 
 The first phase of compiling a pawn source file to the executable  
 P-code is “preprocessing”: a general purpose text filter that modifies/cleans up the text
@@ -191,18 +185,12 @@ you check the result of text substitution through macros. If you are using the
 standard pawn toolset, you will find instructions of how to use the compiler
 and run-time in the companion booklet “The pawn booklet — Implementor’s Guide”.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Operator precedence: 110`
 
 `Directives: 117`
 
-<hr>
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

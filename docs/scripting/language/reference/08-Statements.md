@@ -1,12 +1,6 @@
-<div align="center">
-
 # Statements
 
 ---
-
-</div>
-
-<div align="left">
 
 A statement may take one or more lines, whereas one line may contain two or
 more statements.
@@ -199,11 +193,11 @@ state gps:handshake
 
     Example:
 
-<hr>
+---
 
 ###### ∗ The alternative is to fold unconditional state changes in the common if–else construct.
 
-<hr>
+---
 
 ```c
 
@@ -234,11 +228,7 @@ switch (weekday(12,31,1999))
     After the statement has executed, program control returns to the expression again.
     The statement is thus executed while the expression is true.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Identifiers: 97`
 
@@ -262,8 +252,6 @@ switch (weekday(12,31,1999))
 
 `Examples: 7, 21, 26 (while)`
 
-<hr>
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

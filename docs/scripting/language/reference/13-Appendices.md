@@ -1,5 +1,3 @@
-<div align="center">
-
 # APPENDICES
 
 ---
@@ -7,10 +5,6 @@
 # Error and warning messages
 
 ---
-
-</div>
-
-<div align="left">
 
 When the compiler finds an error in a file, it outputs a message giving, in this order:
 
@@ -370,11 +364,7 @@ Errors are separated into three classes:
 | 236    | **unknown parameter in substitution (incorrect #define pattern)**                                                                                                                                                                                                                                                                                                                                              |
 |        | A #define pattern contains a parameter in the replacement (e.g. “%1”, but one in the match pattern. See page 93 for the preprocessor syntax.                                                                                                                                                                                                                                                                   |
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Pitfalls: 134`
 
@@ -420,21 +410,13 @@ Errors are separated into three classes:
 
 `#if . . . #else . . . #endif: 117`
 
-`State specifiers: 83`
+`State specifiers: 83 `
 
-<hr>
-
-</div>
-
-<div align="center">
+---
 
 # The compiler
 
 ---
-
-</div>
-
-<div align="left">
 
 Many applications that embed the PAWN scripting language use the stand-
 alone compiler that comes with the PAWN toolkit. The PAWN compiler is a
@@ -558,11 +540,7 @@ the same directory as the compiler executable program.
 In a sense, the configuration file is an implicit response file. Options
 specified on the command line may overrule those in the configuration file.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Packed/unpacked strings: 99`
 
@@ -576,19 +554,11 @@ specified on the command line may overrule those in the configuration file.
 
 `See also #pragma amxram on page 120`
 
-<hr>
-
-</div>
-
-<div align="center">
+---
 
 # Rationale
 
 ---
-
-</div>
-
-<div align="left">
 
 _The first issue in the presentation of a new computer language should be: why
 a new language at all?_
@@ -847,27 +817,15 @@ final point, which is unrelated to language design, but important nonetheless,
 is the license: PAWN is distributed under a liberal license allowing you to use
 and/or adapt the code with a minimum of restrictions —see appendix D.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Support for Unicode string literals: 139`
 
-<hr>
-
-</div>
-
-<div align="center">
+---
 
 # License
 
 ---
-
-</div>
-
-<div align="left">
 
 The software toolkit “PAWN” (the compiler, the abstract machine and  
 the documentation) are copyright c 1997–2006 by ITB CompuPhase. The Intel
@@ -904,12 +862,6 @@ misrepresented as being the original software.
 
 The zLib/libpng license has been approved by the “Open Source Initiative” organization.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

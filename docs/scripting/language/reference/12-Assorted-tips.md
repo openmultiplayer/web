@@ -1,12 +1,6 @@
-<div align="center">
-
 # Assorted tips
 
 ---
-
-</div>
-
-<div align="left">
 
 ### • Working with characters and strings
 
@@ -550,11 +544,7 @@ Listing: quine.p
 
 ```
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `See the separate application note for proposed native functions that operate on both packed and unpacked strings`
 
@@ -578,8 +568,6 @@ Listing: quine.p
 
 `Directives: 117`
 
-<hr>
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

@@ -1,33 +1,14 @@
-<div align="center">
-
 # PAWN
 
 ![Pawn](https://i.ibb.co/SRbRt3C/pawn-icon-daddy-DOT-small.png)
 
 ### embedded scripting language
 
-</div>
-
-<br/><br/>
-
-<div align="right">
-
 ##### February 2006
-
-</div>
 
 ---
 
-<div align="right">
-
 ##### ITB CompuPhase
-
-</div>
-
-<br/><br/>
-<br/><br/>
-
-<div align="left">
 
 ##### ii
 
@@ -43,10 +24,6 @@ Microsoft Corporation.
 “CompuPhase” is a registered trademark of ITB CompuPhase.
 
 “Unicode” is a registered trademark of Unicode, Inc.
-
-<br/><br/>
-<br/><br/>
-<br/><br/>
 
 Copyright c 1997–2006, ITB CompuPhase
 
@@ -65,20 +42,11 @@ directed to ITB CompuPhase at the above address.
 Typeset with TEX in the “Computer Modern” and “Palatino” typefaces at a base
 size of 11 points.
 
-<br/><br/>
-
-</div>
-
 ---
-
-<div align="center">
 
 # Table of contents
 
 ---
-
-</div>
-<div align="left">
 
 [Foreword](01-Foreword.md) - Page 3-5
 
@@ -113,5 +81,3 @@ size of 11 points.
 ∟ [Rationale](13-Appendices.md#rationale) - Page 174-181
 
 ∟ [License](13-Appendices.md#license) - Page 181-183
-
-</div>

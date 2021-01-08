@@ -1,11 +1,6 @@
-<div align="center">
-
 # Data and declarations
 
 ---
-
-</div>
-<div align="left">
 
 PAWN is a typeless language. All data elements are of type “cell”, and a cell
 can hold an integral number. The size of a cell (in bytes) is system dependent
@@ -32,21 +27,13 @@ A variable declaration may occur:
 
 `A global declaration appears outside a function and a global variable is accessible to any function. Global data objects can only be initialized with constant expressions.`
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `“for” loop: 113`
 
 `Compound statement: 112`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • State variable declarations
 
@@ -104,21 +91,13 @@ program is unaware of them. As such, a host program may require that you declare
 variable with a specific name as “public” for special purposes —such as the
 most recent error number, or the general program state.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Symbolic constants: 101`
 
 `Stock functions: 84`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 • Constant variables
 
@@ -148,19 +127,11 @@ Three typical situations where one may use a constant variable are:
 
 - A special case is to mark array arguments to functions as const. Array arguments are always passed by reference, declaring them as const guards against unintentional modification. Refer to page 72 for an example of const function arguments.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `See also “multidimensional arrays”, page 66`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Arrays (single dimension)
 
@@ -211,19 +182,11 @@ new p[2] = { i + j, k - 3 }             /* array initiallers must be constants *
 
 ```
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Constants: 98`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Progressive initiallers for arrays
 
@@ -348,19 +311,11 @@ printf("%d %d", sizeof matrix, sizeof matrix[]);
 
 The application of the sizeof operator on multi-dimensional arrays is especially convenient when used as a default value for function arguments.
 
-</div>
-
-<hr>
-
-<div align="right>
+---
 
 `Default function arguments and sizeof: 77`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Tag names
 
@@ -457,11 +412,7 @@ expression becomes an untagged expression. The tag checking mechanism verifies t
 
 - An array may specify a tag for every dimension, see the “my_rect” example above. Tag checking array indices follows the rule of binary operator tag checking: there is no difference between weak and strong tags.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Label syntax: 112`
 
@@ -469,8 +420,6 @@ expression becomes an untagged expression. The tag checking mechanism verifies t
 
 `“lvalue”: the variable on the left side in an assignment, see page 104`
 
-<hr>
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

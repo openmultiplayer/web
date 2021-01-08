@@ -1,12 +1,6 @@
-<div align="center">
-
 # Pitfalls: differences from C
 
 ---
-
-</div>
-
-<div align="left">
 
 - PAWN lacks the typing mechanism of C. PAWN is an “integer-only” variety of C; there are no structures or unions, and floating point support must be implemented with user-defined operators and the help of native functions.
 
@@ -55,12 +49,6 @@ eters, the compiler must already know the names of the parameters (and
 their position in the parameter list). As a result, the parameter names in a
 prototype must be equal to the ones in the definition.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

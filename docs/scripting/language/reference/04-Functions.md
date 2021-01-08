@@ -1,12 +1,6 @@
-<div align="center">
-
 # Functions
 
 ---
-
-</div>
-
-<div align="left">
 
 A function declaration specifies the name of the function and, between paren-
 theses, its formal parameters. A function may also return a value. A function
@@ -73,21 +67,13 @@ to quickly exit a function on a parameter error or when it turns
 out that the function has nothing to do. If a function returns an array,  
 all return statements must specify an array with the same size and the same dimensions.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `The preferred way to declare forward functions is at page 82`
 
 `“assert” statement: 112`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 • Function arguments (call-by-value versus call-by-reference)
 
@@ -193,11 +179,7 @@ addvector(vect, {5, 5, 5}, 3)
 The invocation of function printf with the string "Hello world\n" in the first
 ubiquitous program is another example of passing a literal array to a function.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Another example is function JulianToDate at page 13`
 
@@ -205,11 +187,7 @@ ubiquitous program is another example of passing a literal array to a function.
 
 `“Hello world” program: 5`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Calling functions
 
@@ -278,11 +256,7 @@ are required: the return values of the calls to getvalue are stored
 in two variables, and therefore an empty pair of parentheses must follow the function
 name. Function getvalue has optional parameters, but none are passed in this example program.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Function power: 70`
 
@@ -290,11 +264,7 @@ name. Function getvalue has optional parameters, but none are passed in this exa
 
 `Function swap: 71`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Named parameters versus positional parameters
 
@@ -449,19 +419,11 @@ addvector(a[], const b[] = {1, 1, 1}, size = 3)
 
 ```
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Public functions do not support default argument values; see page 83`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • sizeof operator & default function arguments
 
@@ -550,11 +512,7 @@ Series[10], it would be redundant to add a Number argument with the array
 size of the actual argument, because the parser would then enforce that both
 formal and actual arguments have the size and dimensions.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `“sizeof ” operator 109`
 
@@ -564,11 +522,7 @@ formal and actual arguments have the size and dimensions.
 
 `Tag names: 68`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Arguments with tag names
 
@@ -646,21 +600,13 @@ intersection(dest[rectangle], const src1[rectangle], const src2[rectangle])
 
 ```
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Fixed point arithmetic: 90; see also the application note “Fixed Point Support Library”`
 
 `For the “rectangle” tag, see page 68`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Variable arguments
 
@@ -705,19 +651,11 @@ variable arguments) one should be cautious of this, as neither the compiler nor
 the abstract machine can check this. Actual parameters that are passed
 as part of a “variable argument list” are always passed by reference.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Tag names: 68`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Coercion rules
 
@@ -785,11 +723,7 @@ move(from, to, spare, numdisks)
 
 ```
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `“faculty”: 71`
 
@@ -797,11 +731,7 @@ move(from, to, spare, numdisks)
 
 `There exists an intriguing iterative solution to the Towers of Hanoi.`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Forward declarations
 
@@ -825,23 +755,15 @@ implemented elsewhere in the source file (except for forbidden user-defined oper
 
 State classifiers are ignored on forward declarations.
 
-<hr>
+---
 
 ###### ∗ Other implementations of the Pawn language (if they exist) may use “single pass” parsers, requiring functions to be defined before use.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Forbidden userdefined operators: 92`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • State classifiers
 
@@ -892,19 +814,11 @@ public onkey(keycode)
 
 ```
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Example: 40`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 Functions whose name starts with the “@” symbol are also public. So
 an alternative way to write the public function onkey function is:
@@ -963,11 +877,7 @@ ables are not longer accessed either. Those functions are then removed as well,
 thereby continuing the chain reaction until only the functions that are used,
 directly or indirectly, remain.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Default values of function arguments: 75`
 
@@ -975,11 +885,7 @@ directly or indirectly, remain.
 
 `Stock variables: 63`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Native functions
 
@@ -1032,19 +938,11 @@ See the “Implementor’s Guide” for implementing native functions in C/C++(o
 
 Native functions may not have state specifiers.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `An example of a native user-defined operator is on page 89`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • User-defined operators
 
@@ -1234,11 +1132,7 @@ value, and to optionally change the memory representation of the value in the
 process. Specifically, the statement “new ones:A = -5” causes the user-defined
 operator to run, and for the constant -5 the operator will return “~(- -5)”, or ~5, or −6.∗
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `Tags: 68`
 
@@ -1252,11 +1146,7 @@ operator to run, and for the constant -5 the operator will return “~(- -5)”,
 
 `#pragma rational: 121`
 
-</div>
-
-<hr>
-
-<div align="left">
+---
 
 ### • Floating point and fixed point arithmetic
 
@@ -1278,11 +1168,11 @@ be stored —floating point or fixed point. For fixed point rational values, the
 
 ```
 
-<hr>
+---
 
 ###### ∗ Modern CPUs use two’s complement integer arithmetic. For positive values, the bitwise representation of a value is the same in one’s complement and two’s complement, but the representations differ for negative values. For instance, the same bit pattern that means -5 in one’s complement stands for -6 in two’s complement.
 
-<hr>
+---
 
 Since a fixed point value must still fit in a cell, the number of decimals
 has a direct influence of the range of a fixed point value. For a fixed point value
@@ -1367,16 +1257,10 @@ Because of the presence of the (forward) declaration of the operator, the pawn
 parser will attempt to use the user-defined operator rather than the default
 “%” operator. By not implementing the operator, the parser will subsequently issue an error message.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `User-defined operators: 86`
 
-<hr>
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

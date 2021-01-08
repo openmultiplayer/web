@@ -1,12 +1,6 @@
-<div align="center">
-
 # Proposed function library
 
 ---
-
-</div>
-
-<div align="left">
 
 Since PAWN is targeted as an application extension language, most of the
 functions that are accessible to PAWN programs will be specific to the  
@@ -360,16 +354,10 @@ All string parameters may be in both packed or unpacked form.
     machine is the 16-bit version (running either on Windows 3.1x or on
     any later version of Microsoft Windows).
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 `amx_Exec: see the “Implementor’s Guide”`
 
-<hr>
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>

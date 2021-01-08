@@ -1,11 +1,6 @@
-<div align="center">
-
 # Foreword
 
 ---
-
-</div>
-<div align="left">
 
 “pawn” is a simple, typeless, 32-bit “scripting” language with a C-like syntax.
 Execution speed, stability, simplicity and a small footprint were essential
@@ -15,7 +10,7 @@ pawn program runs on.
 
 An application or tool cannot do or be everything for all users.  
 This not
-only justifies the diversity of editors, compilers, operating systems and many
+
 other software systems, it also explains the presence of extensive configuration
 options and macro or scripting languages in applications. My own applications
 have contained a variety of little languages; most were very simple, some were
@@ -30,13 +25,7 @@ written so that they were easily extensible and would run on different
 soft-
 ware/hardware architectures.
 
-<div>
-<div align="center">
-
 ## ♦
-
-</div>
-<div align="left">
 
 pawn is a descendent of the original Small C by Ron Cain and James Hendrix,
 which at its turn was a subset of C. Some of the modifications that I did to
@@ -58,15 +47,7 @@ Yuen), and to Dr. Dobb’s Journal to get this ball rolling. Although I must
 have touched nearly every line of the original code multiple times, the Small
 C origins are still clearly visible.
 
-</div>
-<div align="center">
-
 ## ♦
-
-</div>
-<div align="left">
-
-##### 4 ♙ Foreword
 
 ---
 
@@ -91,19 +72,12 @@ checking”
 mechanism, called “tags”. The tag system is especially convenient for function
 arguments because each argument may specify multiple acceptable tags.
 
-For any language, the power (or weakness) lies not in the individual features,
 but in their combination. For pawn, I feel that the combination of named ar-
 guments —which lets you specify function arguments in any order, and default
 values —which allows you to skip specifying arguments that you are not inter-
 ested in, blend together to a convenient and “descriptive” way to call (native)
 functions to manipulate objects in the host application.
 
-</div>
-
-<hr>
-
-<div align="right">
+---
 
 [Go Back to Contents](00-Contents.md)
-
-</div>
