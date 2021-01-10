@@ -2879,3 +2879,7 @@ to learn, to look up, or to take for granted.
 ---
 
 ###### ∗ It is no longer the only book on Pawn.
+
+---
+
+[Go Back to Contents](00-Contents.md)
