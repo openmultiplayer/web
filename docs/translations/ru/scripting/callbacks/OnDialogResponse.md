@@ -4,9 +4,7 @@ description: Этот коллбэк вызывается, когда игрок
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Описание
 

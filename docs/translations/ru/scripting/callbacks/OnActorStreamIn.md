@@ -4,9 +4,7 @@ description: Этот коллбэк вызывается, когда актёр
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Описание
 

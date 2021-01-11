@@ -4,9 +4,7 @@ description: Этот коллбэк вызывается, когда NPC вид
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn name='NPC callback' version='SA-MP 0.3a' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Описание
 
