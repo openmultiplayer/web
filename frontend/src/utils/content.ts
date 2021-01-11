@@ -112,12 +112,12 @@ export const readLocaleDocs = async (name: string, locale?: string) => {
     fullName = `translations/${locale}/${name}`;
   }
 
-  let source = await readMdFromAPI(fullName);
+  let source = await readMdFromLocal(fullName);
   if (source !== undefined) {
     return { source, fallback: false, fullName };
   }
 
-  source = await readMdFromAPI(name);
+  source = await readMdFromLocal(name);
   if (source !== undefined) {
     return { source, fallback: true, name };
   }
