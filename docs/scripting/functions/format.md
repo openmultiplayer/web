@@ -25,8 +25,8 @@ This function does not return any specific values.
 
 | Specifier | Meaning                                       |
 | --------- | --------------------------------------------- |
-| %i        | Integer                                       |
-| %d        | Integer                                       |
+| %i        | Unsigned Integer                              |
+| %d        | Signed Integer                                |
 | %s        | String                                        |
 | %f        | Floating-point number                         |
 | %c        | ASCII character                               |
