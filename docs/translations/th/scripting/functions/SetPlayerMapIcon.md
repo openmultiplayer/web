@@ -46,7 +46,7 @@ If you use an invalid marker type, it will create ID 1 (White Square). If you us
 
 :::warning
 
-You can only have 100 map icons! Marker type 1 (), 2 (), 4 (), and 56 () will cause your game to crash if you have map legends enabled while viewing the map.
+You can only have 100 map icons! Marker type 1 (![](/images/mapIcons/icon1.gif)), 2 (![](/images/mapIcons/icon2.gif)), 4 (![](/images/mapIcons/icon4.gif)), and 56 (![](/images/mapIcons/icon56.gif)) will cause your game to crash if you have map legends enabled while viewing the map.
 
 :::
 
