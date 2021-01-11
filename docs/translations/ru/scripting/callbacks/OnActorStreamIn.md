@@ -33,6 +33,6 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Примечания
 
-<T.TipNPCCallbacks />
+<TipNPCCallbacks />
 
 ## Функции
