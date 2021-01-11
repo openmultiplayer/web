@@ -15,7 +15,7 @@ Listing: hello.p
 ```c
 
 main()
-	printf  "Hello  world\n"
+    printf  "Hello  world\n"
 
 ```
 
@@ -69,7 +69,7 @@ Listing: hello.p — C style
 
 main()
 {
-	printf("Hello  world\n");
+    printf("Hello  world\n");
 }
 
 ```
@@ -104,8 +104,6 @@ available by the host application and be “declared” to the pawn parser.
 
 ---
 
----
-
 It is assumed, however, that all host applications provide a minimal set of common
 functions, like print and printf.
 
@@ -133,15 +131,15 @@ algorithm  */
 
 main()
 {
-	print  "Input  two  values\n"
-	new  a  =  getvalue()
-	new  b  =  getvalue()
-	while  (a  !=  b)
-	if  (a  >  b)
-		a  =  a  -  b
-	else
-		b  =  b  -  a
-	printf  "The  greatest  common  divisor  is  %d\n",  a
+    print  "Input  two  values\n"
+    new  a  =  getvalue()
+    new  b  =  getvalue()
+    while  (a  !=  b)
+    if  (a  >  b)
+        a  =  a  -  b
+    else
+        b  =  b  -  a
+    printf  "The  greatest  common  divisor  is  %d\n",  a
 }
 
 ```
@@ -159,8 +157,6 @@ to assign a value to the variable already at the moment of its creation.
 `Compound statement: 112`
 
 `Data declarations are covered in detail starting at page 62`
-
----
 
 ---
 
@@ -228,6 +224,8 @@ and
 
 print the same string.
 
+---
+
 `"while" loop: 116`
 
 `"if else": 114`
@@ -252,16 +250,16 @@ Listing: sieve.p
 
 main()
 {
-	const  max_primes  =  100
-	new  series[max_primes]  =  {  true,  ...  }
-	for  (new  i  =  2;  i  <  max_primes;  ++i)
-	if  (series[i])
-	{
-		printf  "%d  ",  i
-		/*  filter  all  multiples  of  this  "prime"  from  the  list  */
-		for  (new  j  =  2  *  i;  j  <  max_primes;  j  +=  i)
-		series[j]  =  false
-	}
+    const  max_primes  =  100
+    new  series[max_primes]  =  {  true,  ...  }
+    for  (new  i  =  2;  i  <  max_primes;  ++i)
+    if  (series[i])
+    {
+        printf  "%d  ",  i
+        /*  filter  all  multiples  of  this  "prime"  from  the  list  */
+        for  (new  j  =  2  *  i;  j  <  max_primes;  j  +=  i)
+            series[j]  =  false
+    }
 }
 
 ```
@@ -331,24 +329,24 @@ Listing: fib.p
 
 main()
 {
-	print  "Enter  a  value:  "
-	new  v  =  getvalue()
-	if  (v  >  0)
-		printf  "The  value  of  Fibonacci  number  %d  is  %d\n", v,  fibonacci(v)
-	else
-		printf  "The  Fibonacci  number  %d  does  not  exist\n",  v
+    print  "Enter  a  value:  "
+    new  v  =  getvalue()
+    if  (v  >  0)
+        printf  "The  value  of  Fibonacci  number  %d  is  %d\n", v,  fibonacci(v)
+    else
+        printf  "The  Fibonacci  number  %d  does  not  exist\n",  v
 }
 fibonacci(n)
 {
-	assert  n  >  0
-	new  a  =  0,  b  =  1
-	(new  i  =  2;  i  <  n;  i++)
-	{
-		new  c  =  a  +  b
-		a  =  b
-		b  =  c
-	}
-	return  a  +  b
+    assert  n  >  0
+    new  a  =  0,  b  =  1
+    (new  i  =  2;  i  <  n;  i++)
+    {
+        new  c  =  a  +  b
+        a  =  b
+        b  =  c
+    }
+    return  a  +  b
 }
 
 ```
@@ -438,68 +436,70 @@ Listing: julian.p
 
 main()
 {
-	new  d,  m,  y,  jdn
-	print  "Give  a  date  (dd-mm-yyyy):  "
+    new  d,  m,  y,  jdn
+    print  "Give  a  date  (dd-mm-yyyy):  "
 
-	d  =  getvalue(_,  ’-’,  ’/’)
-	m  =  getvalue(_,  ’-’,  ’/’)
-	y  =  getvalue()
-	jdn  =  DateToJulian(d,  m,  y)
+    d  =  getvalue(_,  ’-’,  ’/’)
+    m  =  getvalue(_,  ’-’,  ’/’)
+    y  =  getvalue()
+    jdn  =  DateToJulian(d,  m,  y)
 
-	printf("Date  %d/%d/%d  =  %d  JD\n",  d,  m,  y,  jdn)
-	print  "Give  a  Julian  Day  Number:  "
+    printf("Date  %d/%d/%d  =  %d  JD\n",  d,  m,  y,  jdn)
+    print  "Give  a  Julian  Day  Number:  "
 
-	jdn  =  getvalue()
-	JulianToDate  jdn,  d,  m,  y
+    jdn  =  getvalue()
+    JulianToDate  jdn,  d,  m,  y
 
-	printf  "%d  JD  =  %d/%d/%d\n",  jdn,  d,  m,  y
+    printf  "%d  JD  =  %d/%d/%d\n",  jdn,  d,  m,  y
 }
+
 DateToJulian(day,  month,  year)
 {
-	/*  The  first  year  is  1.  Year  0  does  not  exist:  it  is  1  BC  (or  -1)  */
+    /*  The  first  year  is  1.  Year  0  does  not  exist:  it  is  1  BC  (or  -1)  */
 
-	assert  year  !=  0
-	if  (year  <  0)
-	year++
+    assert  year  !=  0
+    if  (year  <  0)
+    year++
 
-	/*  move  January  and  February  to  the  end  of  the  previous  year  */
+    /*  move  January  and  February  to  the  end  of  the  previous  year  */
 
-	if  (month  <=  2)
-	year--,  month  +=  12
-	new  jdn  =  365*year  +  year/4  -  year/100  +  year/400
-	+  (153*month  -  457)  /  5
-	+  day  +  1721119
+    if  (month  <=  2)
+    year--,  month  +=  12
+    new  jdn  =  365*year  +  year/4  -  year/100  +  year/400
+    +  (153*month  -  457)  /  5
+    +  day  +  1721119
 
-	return  jdn
+    return  jdn
 }
+
 JulianToDate(jdn,  &day,  &month,  &year)
 {
-	jdn  -=  1721119
+    jdn  -=  1721119
 
-	/*  approximate  year,  then  adjust  in  a  loop  */
+    /*  approximate  year,  then  adjust  in  a  loop  */
 
-	year  =  (400  *  jdn)  /  146097
-	while  (365*year  +  year/4  -  year/100  +  year/400  <  jdn)
-	year++
-	year--
-	/*  determine  month  */
+    year  =  (400  *  jdn)  /  146097
+    while  (365*year  +  year/4  -  year/100  +  year/400  <  jdn)
+        year++
+    year--
+    /*  determine  month  */
 
-	jdn  -=  365*year  +  year/4  -  year/100  +  year/400
-	month  =  (5*jdn  +  457)  /  153
+    jdn  -=  365*year  +  year/4  -  year/100  +  year/400
+    month  =  (5*jdn  +  457)  /  153
 
-	/*  determine  day  */
+    /*  determine  day  */
 
-	day  =  jdn  -  (153*month  -  457)  /  5
+    day  =  jdn  -  (153*month  -  457)  /  5
 
-	/*  move  January  and  February  to  start  of  the  year  */
+    /*  move  January  and  February  to  start  of  the  year  */
 
-	if  (month  >  12)
-		month  -=  12,  year++
+    if  (month  >  12)
+        month  -=  12,  year++
 
-	/*  adjust  negative  years  (year  0  must  become  1  BC,  or  -1)  */
+    /*  adjust  negative  years  (year  0  must  become  1  BC,  or  -1)  */
 
-	if  (year  <=  0)
-		year--
+    if  (year  <=  0)
+        year--
 }
 
 ```
@@ -598,15 +598,14 @@ Listing: c2f.p
 
 main()
 {
-	new  Rational:  Celsius
-	new  Rational:  Fahrenheit
-
-	print  "Celsius\t  Fahrenheit\n"
-	for  (Celsius  =  5;  Celsius  <=  25;  Celsius++)
-	{
-		Fahrenheit  =  (Celsius  *  1.8)  +  32
-		printf  "%r  \t  %r\n",  Celsius,  Fahrenheit
-	}
+    new  Rational:  Celsius
+    new  Rational:  Fahrenheit
+    print  "Celsius\t  Fahrenheit\n"
+    for  (Celsius  =  5;  Celsius  <=  25;  Celsius++)
+    {
+        Fahrenheit  =  (Celsius  *  1.8)  +  32
+        printf  "%r  \t  %r\n",  Celsius,  Fahrenheit
+    }
 }
 
 ```
@@ -628,8 +627,6 @@ case for rational numbers, its memory lay-out.
 `Tag names: 68`
 
 ---
-
-##
 
 The Rational: tag tells the pawn parser that the variables Celsius and Fahrenheit
 contain fractional values, rather than whole numbers.
@@ -679,22 +676,22 @@ Listing: rot13.p
 
 main()
 {
-	printf  "Please  type  the  string  to  mangle:  "
+    printf  "Please  type  the  string  to  mangle:  "
 
-	new  str[100]
-	getstring  str,  sizeof  str
-	rot13  str
+    new  str[100]
+    getstring  str,  sizeof  str
+    rot13  str
 
-	printf  "After  mangling,  the  string  is:  \"%s\"\n",  str
+    printf  "After  mangling,  the  string  is:  \"%s\"\n",  str
 }
 
 rot13(string[])
 {
-	for  (new  index  =  0;  string[index];  index++)
-	if  (’a’  <=  string[index]  <=  ’z’)
-		string[index]  =  (string[index]  -  ’a’  +  13)  %  26  +  ’a’
-	else  if  (’A’  <=  string[index]  <=  ’Z’)
-		string[index]  =  (string[index]  -  ’A’  +  13)  %  26  +  ’A’
+    for  (new  index  =  0;  string[index];  index++)
+    if  (’a’  <=  string[index]  <=  ’z’)
+        string[index]  =  (string[index]  -  ’a’  +  13)  %  26  +  ’a’
+    else  if  (’A’  <=  string[index]  <=  ’Z’)
+        string[index]  =  (string[index]  -  ’A’  +  13)  %  26  +  ’A’
 }
 
 ```
@@ -730,8 +727,6 @@ them by value requires a copy of this data structure to be made, taking both mem
 
 `A function that takes an array as an argument and that does not change it, may mark the argument as “const”; see page 72`
 
-##
-
 Due to this rule, function rot13 can modify its function
 parameter (called “string” in the example) without needing to declare as a
 reference argument.
@@ -759,44 +754,44 @@ Listing: wcount.p
 
 main()
 {
-	print  "Please  type  a  string:  "
-	new  string[100]
-	getstring  string,  sizeof  string
+    print  "Please  type  a  string:  "
+    new  string[100]
+    getstring  string,  sizeof  string
 
-	new  count  =  0
+    new  count  =  0
 
-	new  word[20]
-	new  index
-	for (  ;;  )
-	{
-		word  =  strtok(string,  index)
-		if  (strlen(word)  ==  0)
-			break
-		count++
-		printf  "Word  %d:  ’%s’\n",  count,  word
-	}
-	printf  "\nNumber  of  words:  %d\n",  count
+    new  word[20]
+    new  index
+    for (  ;;  )
+    {
+        word  =  strtok(string,  index)
+        if  (strlen(word)  ==  0)
+            break
+        count++
+        printf  "Word  %d:  ’%s’\n",  count,  word
+    }
+    printf  "\nNumber  of  words:  %d\n",  count
 }
 
 strtok(const  string[],  &index)
 {
-	new  length  =  strlen(string)
+    new  length  =  strlen(string)
 
-	/*  skip  leading  white  space  */
-	while  (index  <  length  &&  string[index]  <=  ’  ’)
-		index++
-	/*  store  the  word  letter  for  letter  */
-	new  offset  =  index                            /*  save  start position  of  token  */
-	new  result[20]                                  /*  string  to store  the  word  in  */
-	while  (index  <  length
-		&&  string[index]  >  ’  ’
-		&&  index  -  offset  <  sizeof  result  -  1)
-	{
-		result[index  -  offset]  =  string[index]
-		index++
-	}
-	result[index  -  offset]  =  EOS                 /*  zero-terminate  the string  */
-	return  result
+    /*  skip  leading  white  space  */
+    while  (index  <  length  &&  string[index]  <=  ’  ’)
+        index++
+    /*  store  the  word  letter  for  letter  */
+    new  offset  =  index                            /*  save  start position  of  token  */
+    new  result[20]                                  /*  string  to store  the  word  in  */
+    while  (index  <  length
+        &&  string[index]  >  ’  ’
+        &&  index  -  offset  <  sizeof  result  -  1)
+    {
+        result[index  -  offset]  =  string[index]
+        index++
+    }
+    result[index  -  offset]  =  EOS                 /*  zero-terminate  the string  */
+    return  result
 }
 
 ```
@@ -806,8 +801,6 @@ strtok(const  string[],  &index)
 `Relational operators: 107`
 
 `Escape sequence: 99`
-
-##
 
 Function main first displays a message and retrieves a string that  
 the user must type. Then it enters a loop: writing “for (;;)” creates a loop
@@ -861,36 +854,36 @@ Listing: queue.p
 
 enum  message
 {
-	text[40  char],
-	priority
+    text[40  char],
+    priority
 }
 
 main()
 {
-	new  msg[message]
+    new  msg[message]
 
-	/*  insert  a  few  items  (read  from  console  input)  */
+    /*  insert  a  few  items  (read  from  console  input)  */
 
-	printf  "Please  insert  a  few  messages  and  their  priorities;  \
-		end  with  an  empty  string\n"
-	for  (  ;;  )
-	{
-		printf  "Message:    "
-		getstring  .string  =  msg[text],  .maxlength  =  40,  .pack  =  true
-		if  (strlen(msg[text])  ==  0)
-			break
-		printf  "Priority:  "
-		msg[priority]  =  getvalue()
-		if  (!insert(msg))
-		{
-			printf  "Queue  is  full,  cannot  insert  more  items\n"
-			break
-		}
-	}
-	/*  now  print  the  messages  extracted  from  the  queue  */
-	printf  "\nContents  of  the  queue:\n"
-	while  (extract(msg))
-		printf  "[%d]  %s\n",  msg[priority],  msg[text]
+    printf  "Please  insert  a  few  messages  and  their  priorities;  \
+        end  with  an  empty  string\n"
+    for  (  ;;  )
+    {
+        printf  "Message:    "
+        getstring  .string  =  msg[text],  .maxlength  =  40,  .pack  =  true
+        if  (strlen(msg[text])  ==  0)
+            break
+        printf  "Priority:  "
+        msg[priority]  =  getvalue()
+        if  (!insert(msg))
+        {
+            printf  "Queue  is  full,  cannot  insert  more  items\n"
+            break
+        }
+    }
+    /*  now  print  the  messages  extracted  from  the  queue  */
+    printf  "\nContents  of  the  queue:\n"
+    while  (extract(msg))
+        printf  "[%d]  %s\n",  msg[priority],  msg[text]
 }
 
 const  queuesize  =  10
@@ -898,41 +891,41 @@ new  queue[queuesize][message]
 new  queueitems  =  0
 insert(const  item[message])
 {
-	/*  check  if  the  queue  can  hold  one  more  message  */
-	if  (queueitems  ==  queuesize)
-		return  false                         /*  queue  is  full  */
+    /*  check  if  the  queue  can  hold  one  more  message  */
+    if  (queueitems  ==  queuesize)
+        return  false                         /*  queue  is  full  */
 
-	/*  find  the  position  to  insert  it  to  */
-	new  pos  =  queueitems                 /*  start  at  the  bottom  */
-	while  (pos  >  0  &&  item[priority]  >  queue[pos-1][priority])
-		--pos                                        /*  higher  priority:  move  one  position  up  */
+    /*  find  the  position  to  insert  it  to  */
+    new  pos  =  queueitems                 /*  start  at  the  bottom  */
+    while  (pos  >  0  &&  item[priority]  >  queue[pos-1][priority])
+        --pos                                        /*  higher  priority:  move  one  position  up  */
 
-	/*  make  place  for  the  item  at  the  insertion  spot  */
-	for  (new  i  =  queueitems;  i  >  pos;  --i)
-		queue[i]  =  queue[i-1]
+    /*  make  place  for  the  item  at  the  insertion  spot  */
+    for  (new  i  =  queueitems;  i  >  pos;  --i)
+        queue[i]  =  queue[i-1]
 
-	/*  add  the  message  to  the  correct  slot  */
-		queue[pos]  =  item
-	queueitems++
+    /*  add  the  message  to  the  correct  slot  */
+        queue[pos]  =  item
+    queueitems++
 
-	return  true
+    return  true
 }
 
 extract(item[message])
 {
-	/*  check  whether  the  queue  has  one  more  message  */
-	if  (queueitems  ==  0)
-		return  false                         /*  queue  is  empty  */
+    /*  check  whether  the  queue  has  one  more  message  */
+    if  (queueitems  ==  0)
+        return  false                         /*  queue  is  empty  */
 
-	/*  copy  the  topmost  item  */
-	item  =  queue[0]
-	--queueitems
+    /*  copy  the  topmost  item  */
+    item  =  queue[0]
+    --queueitems
 
-	/*  move  the  queue  one  position  up  */
-	for  (new  i  =  0;  i  <  queueitems;  ++i)
-		queue[i]  =  queue[i+1]
+    /*  move  the  queue  one  position  up  */
+    for  (new  i  =  0;  i  <  queueitems;  ++i)
+        queue[i]  =  queue[i+1]
 
-	return  true
+    return  true
 }
 
 ```
@@ -944,8 +937,6 @@ extract(item[message])
 `"enum" statement: 101`
 
 `"char" operator: 110`
-
-##
 
 Near the top of the program listing is the declaration of the enumeration mes-
 sage. This enumeration defines two constants: text, which is zero, and pri-
@@ -1110,48 +1101,48 @@ Listing: set.p
 
 main()
 {
-	enum  (<<=  1)  {  A  =  1,  B,  C,  D,  E,  F,  G  }
-	new  nextstep[]  =
+    enum  (<<=  1)  {  A  =  1,  B,  C,  D,  E,  F,  G  }
+    new  nextstep[]  =
 
-		{  C  |  E,       /*  A  can  reach  C  and  E  */
-		   D  |  E,          /*  B    "        "      D  and  E  */
-		   G,                /*  C    "        "      G  */
-		   C  |  F,          /*  D    "        "      C  and  F  */
-		   0,                /*  E    "        "      none  */
-		   0,                /*  F    "        "      none  */
-		   E  |  F,          /*  G    "        "      E  and  F  */
-		}
-	#pragma  unused  A,  B
+        {  C  |  E,       /*  A  can  reach  C  and  E  */
+           D  |  E,          /*  B    "        "      D  and  E  */
+           G,                /*  C    "        "      G  */
+           C  |  F,          /*  D    "        "      C  and  F  */
+           0,                /*  E    "        "      none  */
+           0,                /*  F    "        "      none  */
+           E  |  F,          /*  G    "        "      E  and  F  */
+        }
+    #pragma  unused  A,  B
 
-	print  "The  departure  point:  "
-	new  source  =  clamp(  .value  =  toupper(getchar())  -  ’A’,
-				.min  =  0,
-				.max  =  sizeof  nextstep  -  1
-			     )
-	print  "\nThe  number  of  steps:  "
-	new  steps  =  getvalue()
+    print  "The  departure  point:  "
+    new  source  =  clamp(  .value  =  toupper(getchar())  -  ’A’,
+                .min  =  0,
+                .max  =  sizeof  nextstep  -  1
+                 )
+    print  "\nThe  number  of  steps:  "
+    new  steps  =  getvalue()
 
-	/*  make  the  set  */
-	new  result  =  findtargets(source,  steps,  nextstep)
-	printf  "The  points  reachable  from  %c  in  %d  steps:  ",  source+’A’,
-	steps
-	for  (new  i  =  0;  i  <  sizeof  nextstep;  i++)
-		if  (result  &  1  <<  i)
-			printf  "%c  ",  i  +  ’A’
+    /*  make  the  set  */
+    new  result  =  findtargets(source,  steps,  nextstep)
+    printf  "The  points  reachable  from  %c  in  %d  steps:  ",  source+’A’,
+    steps
+    for  (new  i  =  0;  i  <  sizeof  nextstep;  i++)
+        if  (result  &  1  <<  i)
+            printf  "%c  ",  i  +  ’A’
 }
 
 findtargets(source,  steps,  nextstep[],  numpoints  =  sizeof  nextstep)
 {
-	new  result  =  0
-	new  addedpoints  =  nextstep[source]
-	while  (steps--  >  0  &&  result  !=  addedpoints)
-	{
-		result  =  addedpoints
-		for  (new  i  =  0;  i  <  numpoints;  i++)
-			if  (result  &  1  <<  i)
-				addedpoints  |=  nextstep[i]
-	}
-	return  result
+    new  result  =  0
+    new  addedpoints  =  nextstep[source]
+    while  (steps--  >  0  &&  result  !=  addedpoints)
+    {
+        result  =  addedpoints
+        for  (new  i  =  0;  i  <  numpoints;  i++)
+            if  (result  &  1  <<  i)
+                addedpoints  |=  nextstep[i]
+    }
+    return  result
 }
 
 ```
@@ -1168,14 +1159,14 @@ counting from zero; here, the value of the first constant, A, is explicitly set 
     1 above its predecessor, but you can specify every successive constant
     in an enumeration to have a value that is:
 
-\*its predecessor incremented by any value (not just 1) —e.g., “(+= 5)”;
+_its predecessor incremented by any value (not just 1) —e.g., “(+= 5)”;_
 
-_its predecessor multiplied by any value —e.g., “(_= 3)”;
+_its predecessor multiplied by any value —e.g., “(_= 3)”;\_
 
-\*its predecessor bit-shifted to the left by any value —e.g., “(<<= 1)”;
+_its predecessor bit-shifted to the left by any value —e.g., “(<<= 1)”;_
 
 Note that, in binary arithmetic, shifting left by one bit amounts to the same
-as multiplying by two, meaning that “(\*= 2)” and “(<<= 1)” do the same thing.
+as multiplying by two, meaning that `(/*= 2)` and `(<<= 1)` do the same thing.
 
 When working with sets, a typical task that pops up is to determine the number
 of elements in the set. A straightforward function that does this is below:
@@ -1186,11 +1177,11 @@ Listing: simple bitcount function
 
 bitcount(set)
 {
-	new  count  =  0
-	for  (new  i  =  0;  i  <  cellbits;  i++)
-		if  (set  &  (1  <<  i))
-			count++
-	return  count
+    new  count  =  0
+    for  (new  i  =  0;  i  <  cellbits;  i++)
+        if  (set  &  (1  <<  i))
+            count++
+    return  count
 }
 
 ```
@@ -1206,12 +1197,12 @@ Listing: improved bitcount function
 
 bitcount(set)
 {
-	new  count  =  0
-	if  (set)
-		do
-			count++
-		while  ((set  =  set  &  (set  -  1)))
-	return  count
+    new  count  =  0
+    if  (set)
+        do
+            count++
+        while  ((set  =  set  &  (set  -  1)))
+    return  count
 }
 
 ```
@@ -1223,8 +1214,6 @@ bitcount(set)
 `“cellbits” constant: 102`
 
 ---
-
-##
 
 ### • A simple RPN calculator
 
@@ -1256,9 +1245,9 @@ proposed later to put operators behind the operands, calling it the “Reverse P
 
 ---
 
-###### ∗ These rules are often summarized in a mnemonic like “Please Excuse My Dear Aunt Sally” (Parentheses, Exponentiation, Multiplication, Division, Addition, Subtraction).
+###### ∗ These rules are often summarized in a mnemonic like “Please Excuse My Dear Aunt Sally” (Parentheses, Exponentiation, Multiplication, Division, Addition, Subtraction)
 
-###### \* Polish Notation is completely unrelated to “Hungarian Notation” —which is just the habit of adding “type” or “purpose” identification warts to names of variables or functions.
+###### \* Polish Notation is completely unrelated to “Hungarian Notation” —which is just the habit of adding “type” or “purpose” identification warts to names of variables or functions
 
 ---
 
@@ -1268,15 +1257,13 @@ proposed later to put operators behind the operands, calling it the “Reverse P
 
 ---
 
----
-
 The advantage of reversing the order is that the operators
 are listed in the same order as they must be executed: when  
 reading the operators from the left to the right, you also have the operations to perform in
 that order. The algebraic expression from the beginning of this section would
 read in rpn as:
 
-    26 3 5 2 + × −
+`26 3 5 2 + × −`
 
 When looking at the operators only, we have: first an addition, then a mul-
 tiplication and finally a subtraction. The operands of each operator are read
@@ -1313,10 +1300,10 @@ Listing: rpn.p
 
 main()
 {
-	print  "Type  an  expression  in  Reverse  Polish  Notation:  "
-	new  string[100]
-	getstring  string,  sizeof  string
-	rpncalc  string
+    print  "Type  an  expression  in  Reverse  Polish  Notation:  "
+    new  string[100]
+    getstring  string,  sizeof  string
+    rpncalc  string
 }
 
 ```
@@ -1344,9 +1331,9 @@ Listing: rpnparse.inc
 
 enum  token
 {
-	t_type,                       /*  operator  or  token  type  */
-	Rational:  t_value,           /*  value,  if  t_type  is  "Number"  */
-	t_word[20],                   /*  raw  string  */
+    t_type,                       /*  operator  or  token  type  */
+    Rational:  t_value,           /*  value,  if  t_type  is  "Number"  */
+    t_word[20],                   /*  raw  string  */
 
 }
 
@@ -1355,59 +1342,59 @@ const  EndOfExpr  =  ’#’
 
 rpncalc(const  string[])
 {
-	new  index
-	new  field[token]
-	for  (  ;;  )
-	{
-		field  =  gettoken(string,  index)
-		switch  (field[t_type])
-		{
-			case  Number:
-				push  field[t_value]
-			case  ’+’:
-				push  pop()  +  pop()
-			case  ’-’:
-				push  -  pop()  +  pop()
-			case  ’*’:
-				push  pop()  *  pop()
-			case  ’/’,  ’:’:
-				push  1.0  /  pop()  *  pop()
-			case  EndOfExpr:
-				break      /*  exit  "for"  loop  */
-			default:
-				printf  "Unknown  operator  ’%s’\n",  field[t_word]
-		}
-	}
-	printf  "Result  =  %r\n",  pop()
-	if  (clearstack())
-		print  "Stack  not  empty\n",  red
+    new  index
+    new  field[token]
+    for  (  ;;  )
+    {
+        field  =  gettoken(string,  index)
+        switch  (field[t_type])
+        {
+            case  Number:
+                push  field[t_value]
+            case  ’+’:
+                push  pop()  +  pop()
+            case  ’-’:
+                push  -  pop()  +  pop()
+            case  ’*’:
+                push  pop()  *  pop()
+            case  ’/’,  ’:’:
+                push  1.0  /  pop()  *  pop()
+            case  EndOfExpr:
+                break      /*  exit  "for"  loop  */
+            default:
+                printf  "Unknown  operator  ’%s’\n",  field[t_word]
+        }
+    }
+    printf  "Result  =  %r\n",  pop()
+    if  (clearstack())
+        print  "Stack  not  empty\n",  red
 }
 
 gettoken(const  string[],  &index)
 {
-	/*  first  get  the  next  "word"  from  the  string  */
-	new  word[20]
-	word  =  strtok(string,  index)
+    /*  first  get  the  next  "word"  from  the  string  */
+    new  word[20]
+    word  =  strtok(string,  index)
 
-	/*  then  parse  it  */
-	new  field[token]
-	field[t_word]  =  word
-	if  (strlen(word)  ==  0)
-	{
-		field[t_type]  =  EndOfExpr  /*  special  "stop"  symbol  */
-		field[t_value]  =  0
-	}
-	else  if  (’0’  <=  word[0]  <=  ’9’)
-	{
-		field[t_type]  =  Number
-		field[t_value]  =  rationalstr(word)
-	}
-	else
-	{
-		field[t_type]  =  word[0]
-		field[t_value]  =  0
-	}
-	return  field
+    /*  then  parse  it  */
+    new  field[token]
+    field[t_word]  =  word
+    if  (strlen(word)  ==  0)
+    {
+        field[t_type]  =  EndOfExpr  /*  special  "stop"  symbol  */
+        field[t_value]  =  0
+    }
+    else  if  (’0’  <=  word[0]  <=  ’9’)
+    {
+        field[t_type]  =  Number
+        field[t_value]  =  rationalstr(word)
+    }
+    else
+    {
+        field[t_type]  =  word[0]
+        field[t_value]  =  0
+    }
+    return  field
 
 }
 
@@ -1425,11 +1412,11 @@ declaration, where one element has a tag (t_field) and the other element has a s
 the enumeration symbol as its size. Behind the screens, this declaration does more
 than just create an array with 22 cells:
 
-\*The index tag of the array is set to the tag name “token:”. This means that you can index the array with any of the elements from the enumeration, but not with values that have a different tag. In other words, field[t_type] is okay, but field[1] gives a parser diagnostic.
+/*The index tag of the array is set to the tag name “token:”. This means that you can index the array with any of the elements from the enumeration, but not with values that have a different tag. In other words, field[t_type] is okay, but field[1] gives a parser diagnostic.
 
-\*The tag name of the enumeration overrules the tag name of the array variable, if any. The field variable is untagged, but field[t_value] has the tag Rational:, because the enumeration element t_value is declared as such. This, hence, allows you to create an array whose elements have different tag names.
+/*The tag name of the enumeration overrules the tag name of the array variable, if any. The field variable is untagged, but field[t_value] has the tag Rational:, because the enumeration element t_value is declared as such. This, hence, allows you to create an array whose elements have different tag names.
 
-\*When the enumeration element has a size, the array element indicated with that element is sometimes treated as a sub-array. In rpncalc, expression “field[t_type]” is a single cell, “field[t_value]” is a single cell, but “field[t_word]” is a one-dimensional array of 20 cells. We see that specifically in the line:
+/*When the enumeration element has a size, the array element indicated with that element is sometimes treated as a sub-array. In rpncalc, expression “field[t_type]” is a single cell, “field[t_value]” is a single cell, but “field[t_word]” is a one-dimensional array of 20 cells. We see that specifically in the line:
 
     printf  "Unknown  operator  ’%s’\n",  field[t_word]
 
@@ -1481,25 +1468,25 @@ Listing: strtok.inc
 
 strtok(const string[], &index)
 {
-	new length = strlen(string)
+    new length = strlen(string)
 
-	/* skip leading white space */
-	while (index < length && string[index] <= ’ ’)
-		index++
+    /* skip leading white space */
+    while (index < length && string[index] <= ’ ’)
+        index++
 
-	/* store the word letter for letter */
-	new offset = index 	/* save start position of token */
-	new result[20] 		/* string to store the word in */
-	while (index < length
-		&& string[index] > ’ ’
-		&& index - offset < sizeof result - 1)
-		{
-			result[index - offset] = string[index]
-			index++
-		}
-	result[index - offset] = EOS /* zero-terminate the string */
+    /* store the word letter for letter */
+    new offset = index     /* save start position of token */
+    new result[20]         /* string to store the word in */
+    while (index < length
+        && string[index] > ’ ’
+        && index - offset < sizeof result - 1)
+        {
+            result[index - offset] = string[index]
+            index++
+        }
+    result[index - offset] = EOS /* zero-terminate the string */
 
-	return result
+    return result
 }
 
 ````
@@ -1507,8 +1494,6 @@ strtok(const string[], &index)
 ---
 
 `“switch” statement: page 115`
-
----
 
 ---
 
@@ -1540,23 +1525,23 @@ static stackidx = 0
 
 push(Rational: value)
 {
-	assert stackidx < sizeof stack
-	stack[stackidx++] = value
+    assert stackidx < sizeof stack
+    stack[stackidx++] = value
 }
 
 Rational: pop()
 {
-	assert stackidx > 0
-	return stack[--stackidx]
+    assert stackidx > 0
+    return stack[--stackidx]
 }
 
 clearstack()
 {
-	assert stackidx >= 0
-	if (stackidx == 0)
-		return false
-	stackidx = 0
-	return true
+    assert stackidx >= 0
+    if (stackidx == 0)
+        return false
+    stackidx = 0
+    return true
 }
 
 ```
@@ -1605,7 +1590,7 @@ and a second task/thread that sits in a loop continuously requesting user input.
 This is a heavy-weight solution, however. A more light-weight implementation
 of a responsive system is what is called the “event-driven” programming model.
 
----\*\*\*
+---
 
 In the event-driven programming model, a program or script decomposes any
 lengthy (background) task into short manageable blocks and in between, it is
@@ -1676,29 +1661,29 @@ Listing: turtle.p
 
 @keypressed(key)
 {
-	/_ get current position _/
-	new x, y
-	wherexy x, y
+    /_ get current position */
+    new x, y
+    wherexy x, y
 
-	/_ determine how the update the current position _/
-	switch (key)
-	{
-		case ’u’: y-- /_ up _/
-		case ’d’: y++ /_ down _/
-		case ’l’: x-- /_ left _/
-		case ’r’: x++ /_ right _/
-		case ’\e’: exit /_ Escape = exit _/
-	}
+    /_ determine how the update the current position */
+    switch (key)
+    {
+        case ’u’: y-- /_ up */
+        case ’d’: y++ /_ down */
+        case ’l’: x-- /_ left */
+        case ’r’: x++ /_ right */
+        case ’\e’: exit /_ Escape = exit */
+    }
 
-	/_ adjust the cursor position and draw something _/
-	moveturtle x, y
+    /_ adjust the cursor position and draw something */
+    moveturtle x, y
 }
 
 moveturtle(x, y)
 {
-	gotoxy x, y
-	print ’\*’
-	gotoxy x, y
+    gotoxy x, y
+    print ’/*’
+    gotoxy x, y
 }
 
 ```
@@ -1720,7 +1705,7 @@ Support for function keys and other special keys (e.g. the arrow keys) is highly
 system-dependent. On ANSI terminals, these keys produce different codes
 than in a Windows “DOS box”.
 
----\*\*\*
+---
 
 In the spirit of keeping the example program
 portable, I have used common letters (“u” for up, “l” for left, etc.). This
@@ -1753,7 +1738,7 @@ line or using TCP/IP, the host application may decide itself. The tools in the
 standard pawn distribution push the messages over the TCP/IP network, and
 allow for a “broadcast” mode so that more than two people can chat with each other.
 
----\*\*\*
+---
 
 Listing: chat.p
 
@@ -1766,31 +1751,31 @@ printf "[%s] says: %s\n", source, message
 
 @keypressed(key)
 {
-	static string[100 char]
-	static index
+    static string[100 char]
+    static index
 
-	if (key == ’\e’)
-		exit /* quit on ’Esc’ key */
+    if (key == ’\e’)
+        exit /* quit on ’Esc’ key */
 
-	echo key
+    echo key
 
-	if (key == ’\r’ || key == ’\n’ || index char == sizeof string)
-	{
-		string{index} = ’\0’ /* terminate string */
-		sendstring string
+    if (key == ’\r’ || key == ’\n’ || index char == sizeof string)
+    {
+        string{index} = ’\0’ /* terminate string */
+        sendstring string
 
-		index = 0
-		string[index] = ’\0’
-	}
-	else
-		string{index++} = key
+        index = 0
+        string[index] = ’\0’
+    }
+    else
+        string{index++} = key
 }
 
 echo(key)
 {
-	new string[2 char] = { 0 }
-	string{0} = key == ’\r’ ? ’\n’ : key
-	printf string
+    new string[2 char] = { 0 }
+    string{0} = key == ’\r’ ? ’\n’ : key
+    printf string
 }
 
 ```
@@ -1817,9 +1802,9 @@ other signals that take part in the protocol.
 
 ---
 
-###### ∗ As this script makes no attempt to separate received messages from typed messages (for example, in two different scrollable regions), the terminal/console will look confusing when this happens. With an improved user-interface, this simple script could indeed be a nice message-base chat program.
+###### ∗ As this script makes no attempt to separate received messages from typed messages (for example, in two different scrollable regions), the terminal/console will look confusing when this happens. With an improved user-interface, this simple script could indeed be a nice message-base chat program
 
----\*\*\*
+---
 
 For the stream of events (and the data packets that they carry) to make sense,
 the event-driven program must follow a precise hand-shaking protocol.
@@ -1851,7 +1836,7 @@ In a state diagram, the states are usually represented as circles or
 rounded rectangles and the arrows represent the transitions. As transitions are
 the response of the automaton to events, an arrow may also be seen as an event “that does something”.
 
----\*\*\*
+---
 
 An event/transition that is not defined in a particular
 state is assumed to have no effect —it is silently ignored. A filled dot
@@ -1859,8 +1844,8 @@ represents the entry state, which your program (or the host application) must se
 up. It is common to omit in a state diagram all event arrows that drop back
 into the same state, but here I have chosen to make the response to all events explicit.
 
-This state diagram is for “parsing” comments that start with “/_” and end
-with “_/”. There are states for plain text and for text inside a comment, plus
+This state diagram is for “parsing” comments that start with `/*` and end
+with `*/`. There are states for plain text and for text inside a comment, plus
 two states for tentative entry into or exit from a comment. The automaton
 is intended to parse the comments interactively, from characters that the user
 types on the keyboard. Therefore, the only events that the automaton reacts
@@ -1882,47 +1867,47 @@ Listing: comment.p
 /* parse C comments interactively, using events and a state machine */
 
 main()
-	state plain
+    state plain
 
 @keypressed(key) <plain>
 {
-	state (key == ’/’) slash
-	if (key != ’/’)
-		echo key
+    state (key == ’/’) slash
+    if (key != ’/’)
+        echo key
 }
 
 @keypressed(key) <slash>
 {
-	state (key != ’/’) plain
-	state (key == ’\*’) comment
-	echo ’/’	/* print ’/’ held back from previous state */
-	if (key != ’/’)
-		echo key
+    state (key != ’/’) plain
+    state (key == ’/*’) comment
+    echo ’/’    /* print ’/’ held back from previous state */
+    if (key != ’/’)
+        echo key
 }
 
 @keypressed(key) <comment>
 {
-	echo key
-	state (key == ’\*’) star
+    echo key
+    state (key == ’/*’) star
 }
 
 @keypressed(key) <star>
 {
-	echo key
-	state (key != ’\*’) comment
-	state (key == ’/’) plain
+    echo key
+    state (key != ’/*’) comment
+    state (key == ’/’) plain
 }
 
 echo(key) <plain, slash>
-	printchar key, yellow
+    printchar key, yellow
 
 echo(key) <comment, star>
-	printchar key, green
+    printchar key, green
 
 printchar(ch, colour)
 {
-	setattr .foreground = colour
-	printf "%c", ch
+    setattr .foreground = colour
+    printf "%c", ch
 }
 
 ```
@@ -1931,7 +1916,7 @@ printchar(ch, colour)
 
 ###### ∗ With the exception of “native functions” and user-defined operators.
 
----\*\*\*
+---
 
 Function main sets the starting state to main and exits; all logic  
 is eventdriven. when a key arrives in state plain, the program checks for  
@@ -1945,7 +1930,7 @@ event, there is a good chance that you cannot erase it on a future event and
 pretend that it never happened.
 
 In our particular case, when a slash arrives, this might be the start of a
-comment sequence (“/\*”), but it is not necessarily so. By inference, we cannot decide
+comment sequence (`/*`), but it is not necessarily so. By inference, we cannot decide
 on reception of the slash character what colour to print it in. Hence, we hold
 it back. However, there is no global variable in the script that says
 that a character is held back —in fact, apart from function parameters, no variable
@@ -1953,7 +1938,7 @@ is declared at all in this script. The information about a character being held
 back is “hidden” in the state of the automaton.
 
 As is apparent in the script, state changes may be conditional. The condition
-is optional, and you can also use the common if–else construct to change states.\*\*\*
+is optional, and you can also use the common if–else construct to change states.
 
 Being state-dependent is not reserved for the event functions. Other functions
 may have state declarations as well, as the echo function demonstrates. When
@@ -1996,7 +1981,7 @@ when actions (output) were tied to the states rather than to the events (input).
 
 ###### \* A function that has the same implementation for all states, does not need a state classifierat all —see printchar.
 
----\*\*\*
+---
 
 ![pcl](https://i.ibb.co/PYnBGS9/image.png)
 
@@ -2022,7 +2007,7 @@ green/wait, because the pedestrians that are busy crossing the road at
 that moment need some time to clear the road —the state red/wait
 allows for this.
 
----\*\*\*
+---
 
 For purpose of demonstration, this pedestrian crossing has the added
 functionality that when a pedestrian pushes the button while the light for the
@@ -2054,41 +2039,41 @@ Listing: traffic.p
 /* traffic light synchronizer, using states in an event-driven model */
 #include <time>
 
-main() 					state green_wait
+main()                     state green_wait
 
-@keypressed(key) <green_wait> 		state yellow_wait
-@keypressed(key) <red_walk, red_wait> 	state red_walk
-@keypressed(key) <> 			{} /* fallback */
+@keypressed(key) <green_wait>         state yellow_wait
+@keypressed(key) <red_walk, red_wait>     state red_walk
+@keypressed(key) <>             {} /* fallback */
 
-@timer() <yellow_wait>			state red_walk
-@timer() <red_walk> 			state red_wait
-@timer() <red_wait> 			state green_wait
-@timer() <> 				{} /* fallback */
+@timer() <yellow_wait>            state red_walk
+@timer() <red_walk>             state red_wait
+@timer() <red_wait>             state green_wait
+@timer() <>                 {} /* fallback */
 
 entry() <green_wait>
-	print "Green / Don’t walk\n"
+    print "Green / Don’t walk\n"
 
 entry() <yellow_wait>
 {
-	print "Yellow / Don’t walk\n"
-	settimer 2000
+    print "Yellow / Don’t walk\n"
+    settimer 2000
 }
 
 entry() <red_walk>
 {
-	print "Red / Walk\n"
-	settimer 5000
+    print "Red / Walk\n"
+    settimer 5000
 }
 
 entry() <red_wait>
 {
-	print "Red / Don’t walk\n"
-	settimer 2000
+    print "Red / Don’t walk\n"
+    settimer 2000
 }
 
 ```
 
----\*\*\*
+---
 
 This example program has an additional dependency on the host application/
 environment: in addition to the “@keypressed” event function, the host must
@@ -2133,7 +2118,7 @@ control is the mirt system (Mobile Infra-Red Transmitter) but not de facto
 standard exists —the Netherlands use a radiographic system called vetag for
 instance.
 
----\*\*\*
+---
 
 The new state diagram for the pedestrian crossing light has two more states,
 but more importantly: it needs to save data across events and share it between
@@ -2165,7 +2150,7 @@ the ones listed). Apart from the state classifier, the declaration of a state
 variable is similar to that of a global variable. The declaration of the
 variable button_memo in the next listing illustrates the concept.
 
----\*\*\*
+---
 
 Listing: traffic2.p
 
@@ -2178,86 +2163,86 @@ Listing: traffic2.p
 #include <time>
 
 main()
-	state green_wait_interim
+    state green_wait_interim
 
 new bool: button_memo <red_wait, green_wait_interim, yellow_wait>
 
 @keypressed(key)
 {
-	switch (key)
-	{
-		case ’ ’: button_press
-		case ’\*’: mirt_detect
-	}
+    switch (key)
+    {
+        case ’ ’: button_press
+        case ’/*’: mirt_detect
+    }
 }
 
 button_press() <green_wait>
-	state yellow_wait
+    state yellow_wait
 
 button_press() <red_wait, green_wait_interim>
-	button_memo = true
+    button_memo = true
 
-button_press() <> 		/* fallback */
-	{}
+button_press() <>         /* fallback */
+    {}
 
 mirt_detect()
-	state mirt_override
+    state mirt_override
 
 @timer() <yellow_wait>
-	state red_walk
+    state red_walk
 
 @timer() <red_walk>
-	state red_wait
+    state red_wait
 
 @timer() <red_wait>
-	state green_wait_interim
+    state green_wait_interim
 
 @timer() <green_wait_interim>
 {
-	state (!button_memo) green_wait
-	state (button_memo) yellow_wait
+    state (!button_memo) green_wait
+    state (button_memo) yellow_wait
 }
 
 @timer() <mirt_override>
-	state green_wait
+    state green_wait
 
-@timer() <> 			/* fallback */
-	{}
+@timer() <>             /* fallback */
+    {}
 
 entry() <green_wait_interim>
 {
-	print "Green / Don’t walk\n"
-	settimer 5000
+    print "Green / Don’t walk\n"
+    settimer 5000
 }
 
 entry() <yellow_wait>
 {
-	print "Yellow / Don’t walk\n"
-	button_memo = false
-	settimer 2000
+    print "Yellow / Don’t walk\n"
+    button_memo = false
+    settimer 2000
 }
 
 entry() <red_walk>
 {
-	print "Red / Walk\n"
-	settimer 5000
+    print "Red / Walk\n"
+    settimer 5000
 }
 
 entry() <red_wait>
 {
-	print "Red / Don’t walk\n"
-	settimer 2000
+    print "Red / Don’t walk\n"
+    settimer 2000
 }
 
 entry() <mirt_override>
 {
-	print "Green / Don’t walk\n"
-	settimer 5000
+    print "Green / Don’t walk\n"
+    settimer 5000
 }
 
 ```
 
----\*\*\*
+---
 
 If a pedestrian pushes the button during mirt activity, that button press
 is
@@ -2282,7 +2267,7 @@ known riddle of the man that must move a cabbage, a sheep and a wolf across a ri
 ∗ the states are obvious —the trick of the riddle is to avoid the forbidden
 states. But now that we are seeing states everywhere, the task is not to overdo it.
 
----\*\*\*
+---
 
 For example, in the second implementation of a pedestrian crossing light, see
 page 47, I used a variable (button_memo) to hold a criterion for a decision made
@@ -2331,7 +2316,7 @@ in the state diagrams —in part because it is in line with the usual notation.
 For a state, the rounded rectangle holds the name of the state and optionally
 a brief description of what the state entry function does. The  
 arrow for a transition contains the name of the event (or pseudo-event), an  
-optional condition between square brackets and an optional action behind a slash (“/”).\*\*\*
+optional condition between square brackets and an optional action behind a slash (“/”).
 
 • Program verification
 
@@ -2361,7 +2346,7 @@ execute the function. In addition, the function may also specify any conditions
 that hold true after it completes its operation. This is the “contract” of the
 function.
 
----\*\*\*
+---
 
 The name “design by contract” was coined by Bertrand Meyer and its princi-
 ples trace back to predicate logic and algorithmic analysis.
@@ -2432,13 +2417,13 @@ double as documentation, and the parser helps your documentation efforts in
 generating syntax descriptions and cross references.
 
 Every comment that starts with three slashes
-(“/// ”) followed by white-space, or that starts with a slash and two stars (“/\*\* ”)
+(“/// ”) followed by white-space, or that starts with a slash and two stars (“//_/_ ”)
 followed by white-space is a
 special documentation comment. The pawn compiler extracts documentation
 comments and optionally writes these to a “report” file. See the application
 documentation, or appendix B, how to enable the report generation.
 
-As an aside, comments that start with “/\*_” must still be closed with “_/”.
+As an aside, comments that start with “/_” must still be closed with “_/”.
 Single line documentation comments (“///”) close at the end of the line.
 
 The report file is an XML file that can subsequently be transformed to HTML
@@ -2451,8 +2436,6 @@ The report file contains a reference to the “smalldoc.xsl” stylesheet.
 ---
 
 `Comment syntax: 97`
-
----
 
 ---
 
@@ -2776,8 +2759,6 @@ function/variable/constant. The parser also generates few tags of its own:
 
 ---
 
----
-
 ![fig2](https://i.ibb.co/VmQS0fL/image.png)
 
 ###### Figure 2: Documentation generated from the source code
@@ -2787,8 +2768,6 @@ function/variable/constant. The parser also generates few tags of its own:
 | stacksize  | The estimated number of cells that the function will allocate on the stack and heap. This stack usage estimate excludes the stack requirements of any functions that are “called” from the function to which the documentation applies. For example, function readdate is documented as taking 6 cells on the stack, but it also calls daysinmonth which takes 4 additional cells —and in turn calls isleapyear. To calculate the total stack requirements for function readdate, the call tree should be considered. In addition to the local variables and function parameters, the compiler also uses the stack for storing intermediate results in complex expressions. The stack space needed for these intermediate results are also excluded from this report. In general, the required overhead for the intermediate results is not cumulative (over all functions), which is why it would be inaccurate to add a “safety margin” to every function. For the program as a whole, a safety margin would be highly advised. See appendix B (page 168. for the -v option which can tell you the maximum estimate stack usage, based on the call tree. |
 | tagname    | The tag of the constant, variable, function result or function parameter(s).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | transition | The transitions that the function provokes and their conditions —see the section of automatons on page 38.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-
----
 
 ---
 
@@ -2820,8 +2799,6 @@ processors usually do. The pawn toolkit comes with an example XSLT file
 
 ---
 
----
-
 The following additional HTML tags are supported for general purpose formatting text inside any of the above sections:
 
 | name             | info                                                                                                                                                                 |
@@ -2833,8 +2810,6 @@ The following additional HTML tags are supported for general purpose formatting 
 | `<ul> </ul>`     | An unordered (bulleted) list.                                                                                                                                        |
 | `<ol> </ol>`     | An ordered (numbered) list.                                                                                                                                          |
 | `<li> </li>`     | An item in an ordered or unordered list.                                                                                                                             |
-
----
 
 ---
 
@@ -2865,8 +2840,6 @@ between all systems:
 
 ---
 
----
-
 • Mistakes happen and the pawn parser tries to catch as many of them as it
 can. When you inspect the code that the pawn parser complains about, it
 may on occasion be rather difficult for you to see why the code is erroneous
@@ -2879,8 +2852,6 @@ may on occasion be rather difficult for you to see why the code is erroneous
 • The pawn parser checks only the syntax (spelling/grammar), not the semantics (i.e. the “meaning”) of the code. When it detects code that does not comply to the syntactical rules, there may actually be different ways in which the code can be changed to be “correct”, in the syntactical sense of the word —even though many of these “corrections” would lead to nonsensical code. The result is, though, that the pawn parser may have difficulty to precisely locate the error: it does not know what you meant to write. Hence, the parser often outputs two line numbers and the error is somewhere in the range (between the line numbers).
 
 • Remember that a program that has no syntactical errors (the pawn parser accepts it without error & warning messages) may still have semantical and logical errors which the pawn parser cannot catch. The assert instruction (page 112) is meant to help you catch these “run-time” errors.
-
----
 
 ---
 
@@ -2908,3 +2879,7 @@ to learn, to look up, or to take for granted.
 ---
 
 ###### ∗ It is no longer the only book on Pawn.
+
+---
+
+[Go Back to Contents](00-Contents.md)
