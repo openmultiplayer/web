@@ -2,7 +2,7 @@
 
 ---
 
-# Error and warning messages
+## Error and warning messages
 
 ---
 
@@ -410,11 +410,11 @@ Errors are separated into three classes:
 
 `#if . . . #else . . . #endif: 117`
 
-`State specifiers: 83 `
+`State specifiers: 83`
 
 ---
 
-# The compiler
+## The compiler
 
 ---
 
@@ -556,7 +556,7 @@ specified on the command line may overrule those in the configuration file.
 
 ---
 
-# Rationale
+## Rationale
 
 ---
 
@@ -722,7 +722,7 @@ passing, array indexing and other operations.
 
 ---
 
-###### † You should see this remark in the context of my earlier assertion that many “PAWN” programmers will be novice programmers. In my (teaching) experience, novice programmers make many pointer errors, as opposed to experienced C/C++ programmers.
+###### † You should see this remark in the context of my earlier assertion that many “PAWN” programmers will be novice programmers. In my (teaching) experience, novice programmers make many pointer errors, as opposed to experienced C/C++ programmers
 
 ---
 
@@ -823,7 +823,7 @@ and/or adapt the code with a minimum of restrictions —see appendix D.
 
 ---
 
-# License
+## License
 
 ---
 
