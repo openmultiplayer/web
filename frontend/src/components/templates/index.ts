@@ -6,6 +6,10 @@ import VersionWarnID from "./id/version-warning";
 import LowercaseNoteID from "./id/lowercase-note";
 import TipNPCCallbacksID from "./id/npc-callbacks-tip";
 
+import VersionWarnPT from "./pt/version-warning";
+import LowercaseNotePT from "./pt/lowercase-note";
+import TipNPCCallbacksPT from "./pt/npc-callbacks-tip";
+
 export default {
   VersionWarn,
   LowercaseNote,
@@ -13,4 +17,7 @@ export default {
   VersionWarnID,
   LowercaseNoteID,
   TipNPCCallbacksID,
+  VersionWarnPT,
+  LowercaseNotePT,
+  TipNPCCallbacksPT,
 };
