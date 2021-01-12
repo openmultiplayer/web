@@ -6,7 +6,6 @@ import { NextSeo } from "next-seo";
 import { FormEvent, useState } from "react";
 import Fuse from "fuse.js";
 import { toast } from "react-nextjs-toast";
-import { mutateCallback } from "swr/dist/types";
 import NProgress from "nprogress";
 
 const API_SERVERS = `https://api.open.mp/server/`;
@@ -348,8 +347,8 @@ const Page = ({ initialData, errorMessage }: Props) => {
         <Error message={errorMessage} />
       ) : (
         <List
-          data={data}
-          onAdd={(server: All) => mutate([...data, server.core], false)}
+          data={data!}
+          onAdd={(server: All) => mutate([...data!, server.core], false)}
         />
       )}
     </section>

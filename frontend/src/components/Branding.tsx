@@ -1,5 +1,5 @@
-export const Wordmark = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1660 560" {...props}>
+export const Wordmark = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1660 560">
     <defs>
       <filter
         id="prefix__luminosity-invert-noclip"

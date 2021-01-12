@@ -14,9 +14,14 @@ type Props = {
   initialData: any;
 };
 
-const Placeholder = ({ children }) => (children ? children : <span>...</span>);
+const Placeholder: React.FC = (props) =>
+  props.children ? (
+    (props.children as React.ReactElement<any>)
+  ) : (
+    <span>...</span>
+  );
 
-const InfoItem = ({ title, value }) => (
+const InfoItem = ({ title, value }: { title: string; value?: string }) => (
   <li className="pv2 mv2">
     <dl className="pa2 flex justify-between">
       <dt>{title}</dt>
@@ -52,14 +57,14 @@ const Page = ({ initialData }: Props) => {
           <OAuthButton
             bg="black"
             icon={<GitHubIcon width={24} />}
-            account={data.github}
+            account={data!.github}
             type="github"
             text="Link With GitHub"
           />
           <OAuthButton
             bg="#2C2F33"
             icon={<DiscordIcon width={24} fill="white" />}
-            account={data.discord}
+            account={data!.discord}
             type="discord"
             text="Link With Discord"
           />

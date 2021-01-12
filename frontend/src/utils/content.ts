@@ -1,7 +1,13 @@
+// Content acquisition helper APIs for retrieving Markdown text from various
+// sources. The helpers here wrap various fallbacks and different extensions
+// and list files/locales.
+
 import { statSync, readFileSync, readdirSync } from "fs";
 import { join, resolve } from "path";
 import glob from "glob";
+import { RawContent } from "src/types/content";
 
+// relative to the `frontend/` directory, the app's working directory.
 const CONTENT_PATH = "content";
 
 // Gets a list of all content. English is the default and all other languages
@@ -39,6 +45,7 @@ export const getContentPathsForLocale = (
 export const getAllContentLocales = () =>
   readdirSync(CONTENT_PATH).filter((path: string) => !path.startsWith(".")); // ignore dotfiles
 
+// A helper for checking if a file exists because it's easier than exceptions.
 export const exists = (path: string): boolean => {
   try {
     statSync(path);
@@ -48,7 +55,11 @@ export const exists = (path: string): boolean => {
   }
 };
 
-export const readMdFromLocal = async (path: string): Promise<string> => {
+// Reads a markdown content file from the local filesystem. Only works at build
+// time. Will not work in production on Vercel at request-time.
+export const readMdFromLocal = async (
+  path: string
+): Promise<string | undefined> => {
   if (path === "") {
     path = "index";
   }
@@ -67,7 +78,11 @@ export const readMdFromLocal = async (path: string): Promise<string> => {
   return undefined;
 };
 
-export const readMdFromAPI = async (path: string): Promise<string> => {
+// Reads a markdown content file from the API. This is suitable for runtime use
+// and is used to build docs pages at request-time.
+export const readMdFromAPI = async (
+  path: string
+): Promise<string | undefined> => {
   if (path === "") {
     path = "index";
   }
@@ -92,7 +107,13 @@ export const readMdFromAPI = async (path: string): Promise<string> => {
   return undefined;
 };
 
-export const readLocaleContent = async (name: string, locale: string) => {
+// Reads "content" (not docs) based on the given name and locale. It first
+// attempts the given locale and if that isn't found, it attempts the "en"
+// version. If the English version is used as a fallback, `fallback` is `true`.
+export const readLocaleContent = async (
+  name: string,
+  locale: string
+): Promise<RawContent> => {
   let source = await readMdFromLocal(resolve("content", locale, name));
   if (source !== undefined) {
     return { source, fallback: false };
@@ -106,7 +127,12 @@ export const readLocaleContent = async (name: string, locale: string) => {
   throw new Error(`Not found (${name} - ${locale})`);
 };
 
-export const readLocaleDocs = async (name: string, locale?: string) => {
+// Reads docs with the given name and locale. Attempts the locale version first
+// (if not English) and falls back to the English if not found.
+export const readLocaleDocs = async (
+  name: string,
+  locale?: string
+): Promise<RawContent> => {
   let fullName = name;
   if (locale && locale != "en") {
     fullName = `translations/${locale}/${name}`;
@@ -114,12 +140,12 @@ export const readLocaleDocs = async (name: string, locale?: string) => {
 
   let source = await readMdFromLocal("../docs/" + fullName);
   if (source !== undefined) {
-    return { source, fallback: false, fullName };
+    return { source, fallback: false };
   }
 
   source = await readMdFromLocal("../docs/" + name);
   if (source !== undefined) {
-    return { source, fallback: true, name };
+    return { source, fallback: true };
   }
 
   throw new Error(`Not found (${name})`);
