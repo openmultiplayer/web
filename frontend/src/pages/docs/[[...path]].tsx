@@ -1,3 +1,5 @@
+import { NextSeo } from "next-seo";
+
 import components from "src/components/templates";
 
 // -
@@ -25,10 +27,17 @@ const Page = (props: Props) => {
     );
   }
 
-  const content = props.source && hydrate(props.source, { components });
+  const content =
+    props.source &&
+    hydrate(props.source, { components: components as Components });
 
   return (
     <div className="flex flex-column flex-auto items-center">
+      <NextSeo
+        title={props?.data?.title}
+        description={props?.data?.description}
+      />
+
       <div className="flex flex-row-ns justify-center-ns">
         <div className="flex flex-column flex-grow">
           <Search />
@@ -72,13 +81,14 @@ import admonitions from "remark-admonitions";
 import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
-import { statSync } from "fs";
+import { concat } from "lodash/fp";
+import { Components } from "@mdx-js/react";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
 ): Promise<GetStaticPropsResult<Props>> {
   const { locale } = context;
-  const route = context?.params.path || ["index"];
+  const route = context?.params?.path || ["index"];
 
   let result: { source: string; fallback: boolean };
   const path = route.join("/");
@@ -95,7 +105,7 @@ export async function getStaticProps(
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
   const mdxSource = await renderToString(content, {
-    components,
+    components: components as Components,
     mdxOptions: { remarkPlugins: [admonitions] },
   });
 
@@ -109,11 +119,13 @@ export async function getStaticProps(
 }
 
 export async function getStaticPaths() {
-  const paths = glob
-    .sync("../docs/**/*.md") // read docs from the repo root
-    .filter((v: string) => statSync(v).size > 60000) // only build large pages
-    .map((v: string) => "/" + v.slice(3, v.length - extname(v).length))
-    .map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v));
+  const paths = concat(["/docs/"])(
+    glob
+      .sync("../docs/**/*.md") // read docs from the repo root
+      // .filter((v: string) => statSync(v).size > 60000) // only build large pages
+      .map((v: string) => "/" + v.slice(3, v.length - extname(v).length))
+      .map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v))
+  );
 
   return {
     paths: paths,

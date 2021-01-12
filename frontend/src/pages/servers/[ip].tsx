@@ -31,6 +31,7 @@ interface Server {
   description?: any;
   banner?: any;
   active: boolean;
+  ru: Record<string, string>;
 }
 
 type Props = {
@@ -38,7 +39,7 @@ type Props = {
   initialData: Server;
 };
 
-const Item = ({ k, v }) => {
+const Item = ({ k, v }: { k: string; v: string }) => {
   return (
     <>
       <dt className="f6 pt2 b">{k}</dt>
@@ -46,7 +47,10 @@ const Item = ({ k, v }) => {
     </>
   );
 };
-const Description = ({ server }) => {
+
+type ServerProp = { server: Server };
+
+const Description = ({ server }: ServerProp) => {
   if (!server.description) {
     return null;
   }
@@ -57,7 +61,8 @@ const Description = ({ server }) => {
     </>
   );
 };
-const Properties = ({ server }) => {
+
+const Properties = ({ server }: ServerProp) => {
   if (!server.core) {
     return null;
   }
@@ -75,7 +80,8 @@ const Properties = ({ server }) => {
     </>
   );
 };
-const Rules = ({ server }) => {
+
+const Rules = ({ server }: ServerProp) => {
   if (!server.ru) {
     return null;
   }
@@ -136,7 +142,7 @@ const Page = ({ ip, initialData }: Props) => {
           <a className="black-80 hover-blue">Back</a>
         </Link>
 
-        {error ? <Error error={error} /> : <Info data={data} />}
+        {error ? <Error error={error} /> : <Info data={data!} />}
       </section>
     </>
   );

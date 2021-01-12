@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { NextSeo } from "next-seo";
 import { differenceInMilliseconds } from "date-fns";
 import parseISO from "date-fns/fp/parseISO";
 import formatDistance from "date-fns/fp/formatDistance";
@@ -14,15 +15,15 @@ export interface Author {
   name: string;
 }
 
-export interface Node2 {
-  updatedAt: Date;
+export interface Issue {
+  updatedAt: string;
   title: string;
   author: Author;
   state: string;
 }
 
 export interface Issues {
-  nodes: Node2[];
+  nodes: Issue[];
 }
 
 export interface User2 {
@@ -45,8 +46,8 @@ export interface MergedBy {
   name: string;
 }
 
-export interface Node3 {
-  updatedAt: Date;
+export interface PullRequest {
+  updatedAt: string;
   title: string;
   reviews: Reviews;
   author: Author2;
@@ -55,7 +56,7 @@ export interface Node3 {
 }
 
 export interface PullRequests {
-  nodes: Node3[];
+  nodes: PullRequest[];
 }
 
 export interface Node {
@@ -83,21 +84,21 @@ export interface Payload {
 // A function to format a string describing the amount of time since now.
 const formatSinceToday = formatDistance(Date.now());
 
-const reHydrateDate = (d) => (typeof d === "string" ? parseISO(d) : d);
+const reHydrateDate = (d: any) => (typeof d === "string" ? parseISO(d) : d);
 
 // reHydrateDates ensures that the date fields in a progress item object are not
 // strings. This can occur when Next.js serialises props from the server and
 // sends them to components on the client after a server-side render. In these
 // cases, date fields are strings instead of Date objects.
 // See: https://github.com/zeit/next.js/issues/9352
-const reHydrateDates = (value) => ({
+const reHydrateDates = (value: Item): Item => ({
   ...value,
   updatedAt: reHydrateDate(value.updatedAt),
   earlier: reHydrateDate(value.earlier),
   later: reHydrateDate(value.later),
 });
 
-const ProgressBox = ({ children }) => (
+const ProgressBox: React.FC = ({ children }) => (
   <div>
     {children}
     <style jsx>{`
@@ -113,24 +114,26 @@ const ProgressBox = ({ children }) => (
   </div>
 );
 
-const issueStateColourBG = {
+const issueStateColourBG: Record<string, string> = {
   OPEN: "white",
   MERGED: "green",
   CLOSED: "red",
 };
 
-const issueStateColour = {
+const issueStateColour: Record<string, string> = {
   OPEN: "black",
   MERGED: "white",
   CLOSED: "white",
 };
 
-const IssueState = ({ state, mergedBy }) => (
+type IssueDetail = { state: string; mergedBy?: MergedBy };
+
+const IssueState = ({ state, mergedBy }: IssueDetail) => (
   <div>
     <p>
       <span>{state}</span>
     </p>
-    {state === "MERGED" ? <p>(by {mergedBy.name})</p> : null}
+    {state === "MERGED" ? <p>(by {mergedBy!.name})</p> : null}
     <style jsx>{`
       div {
         text-align: right;
@@ -151,7 +154,11 @@ const Common = ({
   updatedAt,
   icon,
   children,
-  detail: { state = "", mergedBy = "" } = {},
+  detail,
+}: Partial<Item> & {
+  icon: React.ReactNode;
+  children: React.ReactNode;
+  detail: IssueDetail;
 }) => (
   <section>
     <h2>
@@ -159,15 +166,15 @@ const Common = ({
     </h2>
 
     <h3>
-      <time dateTime={updatedAt.toISOString()}>{`Updated ${formatSinceToday(
-        updatedAt
+      <time dateTime={updatedAt!.toISOString()}>{`Updated ${formatSinceToday(
+        updatedAt!
       )} ago`}</time>
     </h3>
     <div className="separator" />
 
     <div className="container">
       {children}
-      <IssueState state={state} mergedBy={mergedBy} />
+      <IssueState state={detail.state} mergedBy={detail.mergedBy} />
     </div>
 
     <style jsx>{`
@@ -202,28 +209,25 @@ const Common = ({
 const ProgressRowPull = ({
   title,
   state,
-  reviews: { users },
-  author: { name: author },
+  reviews,
+  author,
   mergedBy,
   updatedAt,
-}) => {
+}: Partial<Item>) => {
   return (
     <Common
       title={title}
       updatedAt={updatedAt}
       icon={<Pull fill="hsla(0deg, 100%, 0%, 80%)" display="inline" />}
-      detail={{ state, mergedBy }}
+      detail={{ state: state!, mergedBy: mergedBy! }}
     >
       <div>
-        <p>Opened by: {author}</p>
-        {users.length === 0 ? null : (
+        <p>Opened by: {author?.name}</p>
+        {reviews?.users.length === 0 ? null : (
           <p>
             Reviewed by:{" "}
-            {users.map((v, i) => {
-              return (
-                /* eslint-disable-next-line react/no-array-index-key */
-                <span key={i}>{v.user.name}</span>
-              );
+            {reviews?.users.map((v, i) => {
+              return <span key={i}>{v.user.name}</span>;
             })}
           </p>
         )}
@@ -235,28 +239,28 @@ const ProgressRowPull = ({
 const ProgressRowIssue = ({
   title,
   state,
-  author: { name: author },
+  author,
   updatedAt,
-}) => {
+}: Partial<Item>) => {
   return (
     <Common
       title={title}
       updatedAt={updatedAt}
       icon={<Issue fill="hsla(0deg, 100%, 0%, 80%)" display="inline" />}
-      detail={{ state }}
+      detail={{ state: state! }}
     >
       <div>
-        <p>Opened by: {author}</p>
+        <p>Opened by: {author?.name}</p>
       </div>
     </Common>
   );
 };
 
-const ProgressRowPeriod = ({ earlier, later }) => {
+const ProgressRowPeriod = ({ earlier, later }: Partial<Item>) => {
   return (
     <div className="period">
       <div className="timeline" />
-      <div className="time">{formatDistance(earlier)(later)}</div>
+      <div className="time">{formatDistance(earlier!)(later!)}</div>
       <div className="timeline" />
 
       <style jsx>{`
@@ -279,7 +283,7 @@ const ProgressRowPeriod = ({ earlier, later }) => {
   );
 };
 
-const ProgressRowItem = (props) => {
+const ProgressRowItem = (props: Partial<Item>) => {
   switch (props.type) {
     case "pull":
       return (
@@ -303,14 +307,14 @@ const ProgressRowItem = (props) => {
   }
 };
 
-const ProgressItems = ({ items }) => (
+const ProgressItems = ({ items }: { items: Item[] }) => (
   <>
     <p>
       Below is a progress report of the state of recent issues and pull
       requests.
     </p>
 
-    {items.map(reHydrateDates).map((value) => {
+    {items.map(reHydrateDates).map((value: Item) => {
       return <ProgressRowItem key={value.id} {...value} />;
     })}
   </>
@@ -322,8 +326,33 @@ const ProgressError = () => (
     GitHub. Please let us know about this issue so we can fix it.
   </p>
 );
-const Progress = ({ items, error }) => (
+
+type Item = {
+  id: number;
+  updatedAt: Date;
+  type: string;
+  title?: string;
+  author?: Author;
+  state?: string;
+  length?: number;
+  earlier?: Date;
+  later?: Date;
+  reviews?: Reviews;
+  mergedBy?: MergedBy;
+};
+
+type Props = {
+  items: Item[];
+  error: boolean;
+};
+
+const Progress = ({ items, error }: Props) => (
   <section className="measure-wide center ph2">
+    <NextSeo
+      title="open.mp Progress"
+      description="Shows the progress of open.mp issues and pull requests from the GitHub repository."
+    />
+
     {error ? <ProgressError /> : <ProgressItems items={items} />}
   </section>
 );
@@ -341,12 +370,12 @@ Progress.getInitialProps = async () => {
   const items = [
     ...issues.map((v) => ({
       ...v,
-      updatedAt: parseISO(v.updatedAt.toString()),
+      updatedAt: parseISO(v.updatedAt),
       type: "issue",
     })),
     ...pullRequests.map((v) => ({
       ...v,
-      updatedAt: parseISO(v.updatedAt.toString()),
+      updatedAt: parseISO(v.updatedAt),
       type: "pull",
     })),
   ].sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : 0));
@@ -370,13 +399,15 @@ Progress.getInitialProps = async () => {
     }
   }
 
+  const dateStringDiff = (a: Date, b: Date) => a.getTime() - b.getTime();
+
   return {
     items: [...items, ...periods]
       .sort((a, b) => {
-        if (a.updatedAt - b.updatedAt < 0) {
+        if (dateStringDiff(a.updatedAt, b.updatedAt) < 0) {
           return 1;
         }
-        if (a.updatedAt - b.updatedAt > 0) {
+        if (dateStringDiff(a.updatedAt, b.updatedAt) > 0) {
           return -1;
         }
         return 0;

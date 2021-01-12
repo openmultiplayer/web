@@ -11,13 +11,13 @@ import visit from "unist-util-visit";
 const colourPattern = /{(.+?)}\(#([a-f0-9]{6})\)/gm;
 
 export const remarkColour = function attacher() {
-  return (tree) => {
+  return (tree: any) => {
     visit(tree, "paragraph", (node) => {
       let children: Array<any> = node.children as Array<any>;
       let newChildren: Array<any> = node.children as Array<any>;
 
       children.map((v: { value: string }, i: number) => {
-        let match: RegExpExecArray;
+        let match: RegExpExecArray | null;
         let insertions: number = 0;
         let lastIndex = 0;
         do {

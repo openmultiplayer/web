@@ -1,6 +1,14 @@
 name: Test
 
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore:
+      - "docs/**"
+      - "frontend/**"
+  pull_request:
+    paths-ignore:
+      - "docs/**"
+      - "frontend/**"
 
 jobs:
   test:

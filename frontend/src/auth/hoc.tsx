@@ -1,4 +1,8 @@
-import { GetServerSideProps } from "next";
+import {
+  GetServerSideProps,
+  GetServerSidePropsContext,
+  GetStaticPropsContext,
+} from "next";
 
 import { COOKIE_NAME } from ".";
 import { useIsAuthenticated } from "./hooks";
@@ -14,13 +18,13 @@ export function withAuth<P>(
   WrappedComponent: React.FunctionComponent<P>,
   location = "/login"
 ) {
-  return withConditionalRedirect({
+  return withConditionalRedirect(
     WrappedComponent,
     location,
-    clientCondition: function withAuthClientCondition() {
+    function withAuthClientCondition() {
       return !useIsAuthenticated();
-    },
-  });
+    }
+  );
 }
 
 /**
@@ -33,13 +37,13 @@ export function withoutAuth<P>(
   WrappedComponent: React.FunctionComponent<P>,
   location = "/dashboard"
 ) {
-  return withConditionalRedirect({
+  return withConditionalRedirect(
     WrappedComponent,
     location,
-    clientCondition: function withoutAuthClientCondition() {
+    function withoutAuthClientCondition() {
       return useIsAuthenticated();
-    },
-  });
+    }
+  );
 }
 
 /**
@@ -49,7 +53,7 @@ export function withoutAuth<P>(
  * @param gssp The actual getServerSideProps function.
  */
 export function getStaticPropsWithAuth(gssp: GetServerSideProps) {
-  return async (ctx) => {
+  return async (ctx: any /* GetServerSidePropsContext but with cookies */) => {
     if (!ctx.req?.cookies[COOKIE_NAME]) {
       ctx.res.writeHead(302, { Location: "/login" });
       ctx.res.end();
@@ -66,7 +70,7 @@ export function getStaticPropsWithAuth(gssp: GetServerSideProps) {
  * @param gssp The actual getServerSideProps function.
  */
 export function getStaticPropsWithoutAuth(gssp: GetServerSideProps) {
-  return async (ctx) => {
+  return async (ctx: any /* GetServerSidePropsContext but with cookies */) => {
     if (!!ctx.req?.cookies[COOKIE_NAME]) {
       ctx.res.writeHead(302, { Location: "/dashboard" });
       ctx.res.end();

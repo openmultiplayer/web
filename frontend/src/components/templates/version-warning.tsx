@@ -1,6 +1,12 @@
 import Admonition from "../Admonition";
 
-export default function WarningVersion({ version, name = "function" }) {
+export default function WarningVersion({
+  version,
+  name = "function",
+}: {
+  version: string;
+  name: string;
+}) {
   return (
     <Admonition type="warning">
       <p>

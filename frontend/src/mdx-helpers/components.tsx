@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const A = (props) => (
+const A = (props: any) => (
   <Link {...props}>
     <a>{props.children}</a>
   </Link>

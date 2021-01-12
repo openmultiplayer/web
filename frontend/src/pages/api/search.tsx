@@ -1,9 +1,11 @@
+import { NextApiRequest, NextApiResponse } from "next";
+
 const posts = require("../../../cache/data");
 
-export default (req, res) => {
+export default (req: NextApiRequest, res: NextApiResponse) => {
   const results = req.query.q
-    ? posts.filter((post) =>
-        post.title.toLowerCase().includes(req.query.q.toLowerCase())
+    ? posts.filter((post: any) =>
+        post.title.toLowerCase().includes((req.query.q as string).toLowerCase())
       )
     : [];
   res.statusCode = 200;

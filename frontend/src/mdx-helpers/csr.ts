@@ -2,15 +2,18 @@ import React from "react";
 import { mdx, MDXProvider } from "@mdx-js/react";
 import { useEffect } from "react";
 
-import { MDX_COMPONENTS } from "src/components/typography";
+import { MDX_COMPONENTS } from "./components";
 import { MarkdownContent, MarkdownRenderConfig } from "./types";
 import "./idle-callback-polyfill";
 
+// Renders markdown content on the client side using the props passed to the
+// page component from `markdownSSR`.
 export const markdownCSR = (content: MarkdownContent): JSX.Element =>
   hydrate(content, {
     components: MDX_COMPONENTS,
   });
 
+// Stolen from Hashicorp's next-mdx-remote!
 export const hydrate = (
   { compiledSource, renderedOutput, scope }: MarkdownContent,
   { components }: MarkdownRenderConfig
