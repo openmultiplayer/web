@@ -37,6 +37,6 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+Esta callback também pode ser chamada por um NPC.
 
 ## Funções Relacionadas
