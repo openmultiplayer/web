@@ -14,7 +14,7 @@ Esta callback é chamada quando um jogador sai de um checkpoint de corrida
 
 ## Retorno
 
-É chamado nos filterscripts.
+É sempre chamado primeiro nos filterscripts.
 
 ## Examples
 
@@ -28,7 +28,7 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 ## Notes
 
-<TipNPCCallbacks />
+Esta callback também pode ser chamada por um NPC
 
 ## Related Functions
 
