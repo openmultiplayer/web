@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
 
 import components from "src/components/templates";
@@ -18,6 +19,10 @@ type Props = {
 };
 
 const Page = (props: Props) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => setIsMounted(true), []);
+
   if (props.error) {
     return (
       <section>
@@ -41,7 +46,7 @@ const Page = (props: Props) => {
       <div className="flex flex-row-ns justify-center-ns">
         <div className="flex flex-column flex-grow">
           <Search />
-          <DocsSidebar />
+          {isMounted && <DocsSidebar />}
         </div>
 
         <section className="mw7 pa3 flex-auto">
