@@ -1,8 +1,8 @@
-export const meta = {
-  title: "Timers module",
-  date: "2019-05-22T03:15:00",
-  author: "Y_Less",
-};
+---
+title: Timers module
+date: "2019-05-22T03:15:00"
+author: Y_Less
+---
 
 This is a sneak-peek at one of the improved modules we've done, for timers in open.mp:
 
@@ -41,10 +41,6 @@ native Timer:Timer_Create(const func[], usDelay, usInterval, repeatCount, const 
 
 - `func` - Fairly obvious; what to call.
 - `usDelay` - Again obvious, the delay before the call (in microseconds).
-- `usInterval` - What to reset `usDelay` to after the first call. So if you wanted a timer on the
-  hour every hour, but it was 8:47am right now, the call would be
-  `Timer_Create("OnTheHour", 780 SECONDS, 3600 SECONDS, 0);`
-- `repeatCount` - Unlike the old functions, which are just "once" or "forever", this instead takes
-  the number of times to call the function. "once" would be `1`, `500` would stop after 500 calls,
-  and (backwards from the old API) `0` means "forever".
+- `usInterval` - What to reset `usDelay` to after the first call. So if you wanted a timer on the hour every hour, but it was 8:47am right now, the call would be `Timer_Create("OnTheHour", 780 SECONDS, 3600 SECONDS, 0);`
+- `repeatCount` - Unlike the old functions, which are just "once" or "forever", this instead takes the number of times to call the function. "once" would be `1`, `500` would stop after 500 calls, and (backwards from the old API) `0` means "forever".
 - `GLOBAL_TAG_TYPES` - Like `{Float, ...}`, but with more tags.
