@@ -31,7 +31,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 :::tip
 
-Esta callback também pode ser chamada por um NPC.
+<TipNPCCallbacksPT />
 
 :::
 

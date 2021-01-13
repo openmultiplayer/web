@@ -28,7 +28,7 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 ## Notes
 
-Esta callback também pode ser chamada por um NPC
+<TipNPCCallbacksPT />
 
 ## Related Functions
 

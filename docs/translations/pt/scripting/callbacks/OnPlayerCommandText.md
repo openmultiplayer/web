@@ -42,11 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notas
 
-:::tip
-
-Esta callback também pode ser chamada por um NPC.
-
-:::
+<TipNPCCallbacksPT />
 
 ## Funções Relacionadas
 

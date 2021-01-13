@@ -4,11 +4,7 @@ description: Esta callback é chamada quando um jogador causa danos a algum joga
 tags: ["player"]
 ---
 
-:::warning
-
-Esta função foi implementada no SA-MP 0.3.d e não funcionará em versões anteriores.
-
-:::
+<VersionWarnPT name='callback' version='SA-MP 0.3.d' />
 
 ## Descrição
 
