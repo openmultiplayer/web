@@ -28,6 +28,8 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **[progress2.inc](https://github.com/Southclaws/progress2/)** - Display time, health, vehicle fuel and other things as a progressive bar.
 - **[weapon-data.inc](https://github.com/Southclaws/samp-weapon-dat/)** - Finely tuned, customisable weapon data.
 - **[MV_Youtube.inc](https://github.com/MichaelBelgium/MV_Youtube)** - Youtube Converter API for Audio Stream.
+- **[MySQL-Prepared-Statements](https://github.com/PatrickGTR/MySQL-Prepared-Statements)** - Emulating Prepared Statement for PAWN MySQL plugin.
+- **[Actor-Robbery](https://github.com/PatrickGTR/actor_robbery)** - Inspired by GTA V store robbery. actor_robbery.inc imitates it!
 
 ## Command Processors
 
@@ -54,3 +56,4 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 
 - **[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)** - Lists of gamemodes that are compatible with open.mp.
 - **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Based PvP Survival Gamemode.
+- **[gta-open](https://github.com/PatrickGTR/gta-open)** - A Cops and robbers mode based in Los Santos.
