@@ -46,7 +46,7 @@ export const DocsSidebar = () => {
       <div className={visible ? `db-ns` : `db-ns dn`}>
         <DocsSidebarNode
           title="Contents"
-          path="/"
+          path="/docs"
           tree={((process.env.tree as unknown) as SidebarTree).Sidebar}
           open={true}
         />
