@@ -41,6 +41,7 @@ function parseDir(filename) {
       }
 
       info.type = "category";
+      info.path = filename.replace("..", "");
       let catName = path.basename(filename);
 
       if (catName[0] == "_") {
