@@ -4,11 +4,7 @@ description: Essa callback é chamada quando um veículo entra na área visível
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Esta callback foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
-
-:::
+<VersionWarnPT name='callback' version='SA-MP 0.3.a' />
 
 ## Descrição
 
@@ -37,6 +33,6 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Notas
 
-Esta callback também pode ser chamada por um NPC.
+<TipNPCCallbacksPT />
 
 ## Funções Relacionadas

@@ -4,12 +4,7 @@ description: Esta callback é chamada quando o jogador entra ou sai de um modsho
 tags: []
 ---
 
-:::warning
-
-Esta callback foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
-
-:::
-
+<VersionWarnPT name='callback' version='SA-MP 0.3a' />
 ## Descrição
 
 Esta callback é chamada quando o jogador entra ou sai de um shop mod.
