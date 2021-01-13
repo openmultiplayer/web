@@ -5,6 +5,7 @@ import { statSync, readFileSync, readdirSync } from "fs";
 import { join, resolve } from "path";
 import glob from "glob";
 import { RawContent } from "src/types/content";
+import { flow, map, join as ldjoin, filter } from "lodash/fp";
 
 // relative to the `frontend/` directory, the app's working directory.
 const CONTENT_PATH = "content";
@@ -124,12 +125,28 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
-  if (statSync(name).isDirectory()) {
-    const list = readdirSync(name);
+  const dir = "../docs/" + name;
+  if (statSync(dir).isDirectory()) {
+    const list = readdirSync(dir);
 
-    // generate page etc
-    console.log("dir", name, name, list);
-    return { source: "generated", fallback: false };
+    // Attempt to read a file named _.md from the directory
+    let source = await readMdFromLocal(dir + "/_");
+    if (source === undefined) {
+      source = "";
+    }
+
+    // Generate some content for this category page. A heading, some content
+    // from the index.md if it exists and a list of pages inside it.
+    const additional = flow(
+      filter((v: string) => v !== "index.md"), // filter out the special index page
+      map((v: string) => `- [${v.replace(".md", "")}](${name + "/" + v})`), // generate a ul element
+      ldjoin("\n")
+    )(list);
+
+    return {
+      source: source + additional,
+      fallback: false,
+    };
   }
 
   if (name === "") {
