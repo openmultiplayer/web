@@ -150,8 +150,8 @@ export async function getStaticPaths(
     // slices off "index" from pages so they lead to the base path
     map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v)),
 
-    // Add the docs base path
-    concat(["/docs/"]),
+    // Add the docs base path (open.mp/docs)
+    concat(["docs"]),
 
     // Transform the paths into a matrix of Path objects for each locale
     map((v: string) =>

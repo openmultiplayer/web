@@ -133,17 +133,18 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
-  let fullName = name;
+  let withLocale = "../docs/" + name;
   if (locale && locale != "en") {
-    fullName = `translations/${locale}/${name}`;
+    withLocale = `../docs/translations/${locale}/${name}`;
   }
 
-  let source = await readMdFromLocal("../docs/" + fullName);
+  let source = await readMdFromLocal(withLocale);
   if (source !== undefined) {
     return { source, fallback: false };
   }
 
-  source = await readMdFromLocal("../docs/" + name);
+  const fallbackPath = "../docs/" + name;
+  source = await readMdFromLocal(fallbackPath);
   if (source !== undefined) {
     return { source, fallback: true };
   }
