@@ -101,7 +101,11 @@ export async function getStaticProps(
   const route = context?.params?.path || ["index"];
 
   let result: { source: string; fallback: boolean };
-  const path = route.join("/");
+  const path = route
+    // remove /docs/ part of the route
+    .slice(1)
+    // join together as a path
+    .join("/");
   try {
     result = await readLocaleDocs(path, locale);
   } catch (e) {

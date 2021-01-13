@@ -60,10 +60,6 @@ export const exists = (path: string): boolean => {
 export const readMdFromLocal = async (
   path: string
 ): Promise<string | undefined> => {
-  if (path === "") {
-    path = "index";
-  }
-
   const path_mdx = path + ".mdx";
   const path_md = path + ".md";
 
@@ -83,10 +79,6 @@ export const readMdFromLocal = async (
 export const readMdFromAPI = async (
   path: string
 ): Promise<string | undefined> => {
-  if (path === "") {
-    path = "index";
-  }
-
   const path_mdx = path + ".mdx";
   const path_md = path + ".md";
 
@@ -133,6 +125,10 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
+  if (name === "") {
+    name = "index";
+  }
+
   let withLocale = "../docs/" + name;
   if (locale && locale != "en") {
     withLocale = `../docs/translations/${locale}/${name}`;
