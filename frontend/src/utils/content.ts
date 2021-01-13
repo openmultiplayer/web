@@ -125,6 +125,9 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
+  // The path may not be a file, it may be a directory. If so, generate a page
+  // for this directory that lists all its children as well as any content in
+  // a special file named `_.md`.
   const dir = "../docs/" + name;
   if (statSync(dir).isDirectory()) {
     const list = readdirSync(dir);
@@ -138,8 +141,9 @@ export const readLocaleDocs = async (
     // Generate some content for this category page. A heading, some content
     // from the index.md if it exists and a list of pages inside it.
     const additional = flow(
-      filter((v: string) => v !== "index.md"), // filter out the special index page
-      map((v: string) => `- [${v.replace(".md", "")}](${name + "/" + v})`), // generate a ul element
+      filter((v: string) => v !== "_.md"), // filter out the special index page
+      map((v: string) => v.replace(".md", "")), // remove the file extension
+      map((v: string) => `- [${v}](${name + "/" + v})`), // generate a ul element
       ldjoin("\n")
     )(list);
 
