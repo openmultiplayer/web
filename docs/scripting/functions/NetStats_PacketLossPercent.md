@@ -1,7 +1,7 @@
 ---
 title: NetStats_PacketLossPercent
 description: Gets the packet loss percentage of a player.
-tags: []
+tags: ["network monitoring"]
 ---
 
 <VersionWarn version='SA-MP 0.3z' />
@@ -49,8 +49,8 @@ Anything greater than 0.0% should already be a cause of concern. Anything greate
 
 ## Related Functions
 
-- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
-- [GetNetworkStats](GetNetworkStats): Gets the servers networkstats and saves it into a string.
+- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player's networkstats and saves it into a string.
+- [GetNetworkStats](GetNetworkStats): Gets the server's networkstats and saves it into a string.
 - [NetStats_GetConnectedTime](NetStats_GetConnectedTime): Get the time that a player has been connected for.
 - [NetStats_MessagesReceived](NetStats_MessagesReceived): Get the number of network messages the server has received from the player.
 - [NetStats_BytesReceived](NetStats_BytesReceived): Get the amount of information (in bytes) that the server has received from the player.

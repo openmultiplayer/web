@@ -1,7 +1,7 @@
 ---
 title: NetStats_GetConnectedTime
 description: Gets the amount of time (in milliseconds) that a player has been connected to the server for.
-tags: []
+tags: ["network monitoring"]
 ---
 
 <VersionWarn version='SA-MP 0.3z' />
@@ -43,8 +43,8 @@ The return value is not reset to zero after changing the game mode (using the RC
 
 ## Related Functions
 
-- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
-- [GetNetworkStats](GetNetworkStats): Gets the servers networkstats and saves it into a string.
+- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player's networkstats and saves it into a string.
+- [GetNetworkStats](GetNetworkStats): Gets the server's networkstats and saves it into a string.
 - [NetStats_MessagesReceived](NetStats_MessagesReceived): Get the number of network messages the server has received from the player.
 - [NetStats_BytesReceived](NetStats_BytesReceived): Get the amount of information (in bytes) that the server has received from the player.
 - [NetStats_MessagesSent](NetStats_MessagesSent): Get the number of network messages the server has sent to the player.
