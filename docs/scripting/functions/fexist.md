@@ -1,7 +1,7 @@
 ---
 title: fexist
 description: Checks if a specific file exists in the scriptfiles directory.
-tags: []
+tags: ["file management"]
 ---
 
 <LowercaseNote />
@@ -51,5 +51,4 @@ else
 - [fblockread](fblockread): Read blocks of data from a file.
 - [fseek](fseek): Jump to a specific character in a file.
 - [flength](flength): Get the file length.
-- [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.

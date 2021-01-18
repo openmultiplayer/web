@@ -13,6 +13,7 @@ sidebar_label: Glossary
 | Plugins       | Extra functions/capabilites added through a .dll (Windows) or .so (Linux) file                          |
 | Include       | Pieces of script placed in .inc files to be included in Filterscripts/Gamemodes using `#include <name>` |
 | Pawno         | The script editor most people use for PAWN                                                              |
+| Pawncc        | The compiler that convertes P-code to amx                                                               |
 | Masterlist    | The server SA:MP stores its data on such as the Internet list                                           |
 | Deathmatch    | A contest where players try to kill each other to win                                                   |
 | Roleplay      | A gamemode type where players acting like in real life                                                  |
