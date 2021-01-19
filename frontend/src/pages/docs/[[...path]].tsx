@@ -157,16 +157,13 @@ export async function getStaticPaths(
     // Add the docs base path (open.mp/docs)
     concat(["docs"]),
 
-    // Transform the paths into a matrix of Path objects for each locale
-    map((v: string) =>
-      map((l: string) => ({
-        params: { path: v.split("/") },
-        locale: l,
-      }))(ctx.locales)
-    ),
-
-    // Flatten the above structure back to an array of Path items
-    flatten
+    // Transform the paths into Path objects for "en" locale
+    map((v: string) => ({
+      params: {
+        path: v.split("/"),
+      },
+      locale: "en",
+    }))
   )(all);
 
   return {

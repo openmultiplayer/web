@@ -35,11 +35,6 @@ function parseDir(filename) {
     }
     // it's a directory inside `docs` folder
     else {
-      // ignore translations, these are handled automatically
-      if (path.basename(filename) === "translations") {
-        return null;
-      }
-
       info.type = "category";
       let catName = path.basename(filename);
 
