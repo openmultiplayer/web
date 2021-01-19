@@ -145,5 +145,10 @@ export const readLocaleDocs = async (
     return { source, fallback: true };
   }
 
+  source = await readMdFromAPI(name);
+  if (source !== undefined) {
+    return { source, fallback: true };
+  }
+
   throw new Error(`Not found (${name})`);
 };
