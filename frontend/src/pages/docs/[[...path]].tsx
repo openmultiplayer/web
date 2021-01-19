@@ -148,14 +148,14 @@ export async function getStaticPaths(
     // Filter out category content pages
     filter((v: string) => !v.endsWith("_.md")),
 
-    // Chop off the `../` and the extension, and prefix with `/`
-    map((v: string) => v.slice(3, v.length - extname(v).length)),
+    // Chop off the `../docs/` and the extension
+    map((v: string) => v.slice(8, v.length - extname(v).length)),
 
     // slices off "index" from pages so they lead to the base path
     map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v)),
 
     // Add the docs base path (open.mp/docs)
-    concat(["docs"]),
+    concat([""]),
 
     // Transform the paths into Path objects for "en" locale
     map((v: string) => ({
