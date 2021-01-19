@@ -60,10 +60,6 @@ export const exists = (path: string): boolean => {
 export const readMdFromLocal = async (
   path: string
 ): Promise<string | undefined> => {
-  if (path === "") {
-    path = "index";
-  }
-
   const path_mdx = path + ".mdx";
   const path_md = path + ".md";
 
@@ -83,10 +79,6 @@ export const readMdFromLocal = async (
 export const readMdFromAPI = async (
   path: string
 ): Promise<string | undefined> => {
-  if (path === "") {
-    path = "index";
-  }
-
   const path_mdx = path + ".mdx";
   const path_md = path + ".md";
 
@@ -133,17 +125,27 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
-  let fullName = name;
-  if (locale && locale != "en") {
-    fullName = `translations/${locale}/${name}`;
+  if (name === "") {
+    name = "index";
   }
 
-  let source = await readMdFromLocal("../docs/" + fullName);
+  let withLocale = "../docs/" + name;
+  if (locale && locale != "en") {
+    withLocale = `../docs/translations/${locale}/${name}`;
+  }
+
+  let source = await readMdFromLocal(withLocale);
   if (source !== undefined) {
     return { source, fallback: false };
   }
 
-  source = await readMdFromLocal("../docs/" + name);
+  const fallbackPath = "../docs/" + name;
+  source = await readMdFromLocal(fallbackPath);
+  if (source !== undefined) {
+    return { source, fallback: true };
+  }
+
+  source = await readMdFromAPI(name);
   if (source !== undefined) {
     return { source, fallback: true };
   }

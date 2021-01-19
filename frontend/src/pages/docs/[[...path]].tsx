@@ -78,7 +78,12 @@ const Page = (props: Props) => {
 // -
 
 import { extname } from "path";
-import { GetStaticPropsContext, GetStaticPropsResult } from "next";
+import {
+  GetStaticPathsContext,
+  GetStaticPathsResult,
+  GetStaticPropsContext,
+  GetStaticPropsResult,
+} from "next";
 import matter from "gray-matter";
 import glob from "glob";
 import admonitions from "remark-admonitions";
@@ -86,7 +91,7 @@ import admonitions from "remark-admonitions";
 import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
-import { concat } from "lodash/fp";
+import { concat, filter, flatten, flow, map } from "lodash/fp";
 import { Components } from "@mdx-js/react";
 
 export async function getStaticProps(
@@ -123,14 +128,39 @@ export async function getStaticProps(
   };
 }
 
-export async function getStaticPaths() {
-  const paths = concat(["/docs/"])(
-    glob
-      .sync("../docs/**/*.md") // read docs from the repo root
-      // .filter((v: string) => statSync(v).size > 60000) // only build large pages
-      .map((v: string) => "/" + v.slice(3, v.length - extname(v).length))
-      .map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v))
-  );
+export async function getStaticPaths(
+  ctx: GetStaticPathsContext
+): Promise<GetStaticPathsResult> {
+  type P = { path: string[] };
+  type Path = { params: P; locale?: string };
+
+  // read docs from the repo root
+  const all = glob.sync("../docs/**/*.md");
+
+  const paths: Array<Path> = flow(
+    // Filter out translations directory - these are handled separately
+    filter((v: string) => !v.startsWith("../docs/translations")),
+
+    // Filter out category content pages
+    filter((v: string) => !v.endsWith("_.md")),
+
+    // Chop off the `../docs/` and the extension
+    map((v: string) => v.slice(8, v.length - extname(v).length)),
+
+    // slices off "index" from pages so they lead to the base path
+    map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v)),
+
+    // Add the docs base path (open.mp/docs)
+    concat([""]),
+
+    // Transform the paths into Path objects for "en" locale
+    map((v: string) => ({
+      params: {
+        path: v.split("/"),
+      },
+      locale: "en",
+    }))
+  )(all);
 
   return {
     paths: paths,
