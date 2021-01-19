@@ -1,7 +1,7 @@
 ---
 title: strcmp
 description: Compares two strings to see if they are the same.
-tags: []
+tags: ["string"]
 ---
 
 <LowercaseNote />

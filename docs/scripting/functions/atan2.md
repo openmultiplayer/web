@@ -1,7 +1,7 @@
 ---
 title: atan2
-description: .
-tags: []
+description: Get the inversed value of an arc tangent of y/x, expressed in radians.
+tags: ["math"]
 ---
 
 <LowercaseNote />
