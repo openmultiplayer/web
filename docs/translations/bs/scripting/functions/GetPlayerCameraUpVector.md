@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraUpVector
 description: Ova funkcija vraća vektor koji pokazuje na gornju stranu pogleda kamere, ili, drugim riječima, na srednji vrh vašeg ekrana.
-: ["player"]
+tags: ["player"]
 ---
 
 :::warning
