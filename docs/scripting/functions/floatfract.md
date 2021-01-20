@@ -1,7 +1,7 @@
 ---
 title: floatfract
 description: Get the fractional part of a float.
-tags: []
+tags: ["math", "floating-point"]
 ---
 
 <LowercaseNote />

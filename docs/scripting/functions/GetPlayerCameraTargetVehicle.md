@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraTargetVehicle
 description: Get the ID of the vehicle the player is looking at.
-tags: ["player", "vehicle"]
+tags: ["player", "vehicle", "camera"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />

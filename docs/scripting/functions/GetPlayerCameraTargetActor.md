@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraTargetActor
 description: Allows you to retrieve the ID of the actor the player is looking at (in any).
-tags: ["player"]
+tags: ["player", "camera", "actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
