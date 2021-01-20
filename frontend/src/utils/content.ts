@@ -145,9 +145,16 @@ export const readLocaleDocs = async (
     return { source, fallback: true };
   }
 
-  source = await readMdFromAPI(name);
+  // Only attempt to find translated copies on the API. These aren't built
+  // statically at build-time because the traffic is lower than the English
+  // (default) pages so it's fine to sacrifice a bit of performance here.
+  withLocale = name;
+  if (locale && locale != "en") {
+    withLocale = `translations/${locale}/${name}`;
+  }
+  source = await readMdFromAPI(withLocale);
   if (source !== undefined) {
-    return { source, fallback: true };
+    return { source, fallback: false };
   }
 
   throw new Error(`Not found (${name})`);
