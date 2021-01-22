@@ -1,7 +1,7 @@
 ---
 title: asin
-description: .
-tags: []
+description: Get the inversed value of an arc sine in radians
+tags: ["math"]
 ---
 
 <LowercaseNote />

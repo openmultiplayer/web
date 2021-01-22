@@ -13,27 +13,6 @@ type Props = {
   discord: string;
 };
 
-const Button = ({ children, bg, icon, link = "/" }) => (
-  <li className="pv2">
-    <Link href={link}>
-      <a className="link pa2 br3 h3 flex align-center justify-center">
-        <span className="pa2">{icon}</span>
-        <span className="pa2">{children}</span>
-      </a>
-    </Link>
-
-    <style jsx>{`
-      a {
-        background-color: ${bg};
-        color: white;
-      }
-      span {
-        margin: auto 0 auto 0;
-      }
-    `}</style>
-  </li>
-);
-
 const Page = ({ github, discord }: Props) => (
   <section className="measure center pa3">
     <h1>Login</h1>

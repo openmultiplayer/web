@@ -1,7 +1,7 @@
 ---
 title: SHA256_PassHash
 description: Hashes a password using the SHA-256 hashing algorithm.
-tags: []
+tags: ["encryption"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7 R1' />

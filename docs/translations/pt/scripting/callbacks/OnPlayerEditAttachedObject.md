@@ -4,11 +4,7 @@ description: Esta callback é chamada quando um jogador termina o modo de ediç�
 tags: ["player"]
 ---
 
-:::warning
-
-Esta callback foi implementada no SA-MP 0.3e e não funcionará em versões anteriores.
-
-:::
+<VersionWarnPT name='callback' version='SA-MP 0.3e' />
 
 ## Descrição
 

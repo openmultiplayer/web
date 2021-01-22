@@ -1,6 +1,6 @@
 import React from "react";
 
-const Issue = (props) => (
+const Issue = ({ fill = "white", display = "inline" }) => (
   <svg
     className="octicon octicon-issue-opened"
     viewBox="0 0 14 16"
@@ -11,7 +11,8 @@ const Issue = (props) => (
     focusable="false"
     role="img"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
+    fill={fill}
+    display={display}
   >
     <path
       fillRule="evenodd"

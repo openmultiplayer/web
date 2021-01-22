@@ -101,7 +101,13 @@ const types: { [key: string]: AdType } = {
   },
 };
 
-const Admonition = ({ type, title, children }) => {
+type Props = {
+  type: string;
+  title?: string;
+  children: React.ReactNode;
+};
+
+const Admonition = ({ type, title, children }: Props) => {
   const adtype = types[type];
 
   return (

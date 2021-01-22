@@ -1,7 +1,7 @@
 ---
 title: fwrite
 description: Write text into a file.
-tags: []
+tags: ["file management"]
 ---
 
 <LowercaseNote />
@@ -110,7 +110,6 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [fclose](fclose): Close a file.
 - [ftemp](ftemp): Create a temporary file stream.
 - [fremove](fremove): Remove a file.
-- [fwrite](fwrite): Write to a file.
 - [fread](fread): Read a file.
 - [fputchar](fputchar): Put a character in a file.
 - [fgetchar](fgetchar): Get a character from a file.

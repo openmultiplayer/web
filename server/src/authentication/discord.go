@@ -120,7 +120,6 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 	// are, get their existing account. If not, create a new account.
 	var user db.UserModel
 	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
-		fmt.Printf("Finding '%#v'\n", existing)
 		user, err = p.db.User.FindOne(
 			db.User.ID.Equals(existing.Cookie.UserID),
 		).Exec(ctx)

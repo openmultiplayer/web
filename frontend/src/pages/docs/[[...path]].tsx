@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import { NextSeo } from "next-seo";
+
 import components from "src/components/templates";
 
 // -
@@ -16,6 +19,10 @@ type Props = {
 };
 
 const Page = (props: Props) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => setIsMounted(true), []);
+
   if (props.error) {
     return (
       <section>
@@ -25,14 +32,21 @@ const Page = (props: Props) => {
     );
   }
 
-  const content = props.source && hydrate(props.source, { components });
+  const content =
+    props.source &&
+    hydrate(props.source, { components: components as Components });
 
   return (
     <div className="flex flex-column flex-auto items-center">
+      <NextSeo
+        title={props?.data?.title}
+        description={props?.data?.description}
+      />
+
       <div className="flex flex-row-ns justify-center-ns">
         <div className="flex flex-column flex-grow">
           <Search />
-          <DocsSidebar />
+          {isMounted && <DocsSidebar />}
         </div>
 
         <section className="mw7 pa3 flex-auto">
@@ -63,19 +77,28 @@ const Page = (props: Props) => {
 // Server side
 // -
 
-import { GetStaticPropsContext, GetStaticPropsResult } from "next";
+import { extname } from "path";
+import {
+  GetStaticPathsContext,
+  GetStaticPathsResult,
+  GetStaticPropsContext,
+  GetStaticPropsResult,
+} from "next";
 import matter from "gray-matter";
+import glob from "glob";
 import admonitions from "remark-admonitions";
 
 import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
+import { concat, filter, flatten, flow, map } from "lodash/fp";
+import { Components } from "@mdx-js/react";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
 ): Promise<GetStaticPropsResult<Props>> {
   const { locale } = context;
-  const route = context?.params.path || ["index"];
+  const route = context?.params?.path || ["index"];
 
   let result: { source: string; fallback: boolean };
   const path = route.join("/");
@@ -92,7 +115,7 @@ export async function getStaticProps(
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
   const mdxSource = await renderToString(content, {
-    components,
+    components: components as Components,
     mdxOptions: { remarkPlugins: [admonitions] },
   });
 
@@ -105,10 +128,43 @@ export async function getStaticProps(
   };
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths(
+  ctx: GetStaticPathsContext
+): Promise<GetStaticPathsResult> {
+  type P = { path: string[] };
+  type Path = { params: P; locale?: string };
+
+  // read docs from the repo root
+  const all = glob.sync("../docs/**/*.md");
+
+  const paths: Array<Path> = flow(
+    // Filter out translations directory - these are handled separately
+    filter((v: string) => !v.startsWith("../docs/translations")),
+
+    // Filter out category content pages
+    filter((v: string) => !v.endsWith("_.md")),
+
+    // Chop off the `../docs/` and the extension
+    map((v: string) => v.slice(8, v.length - extname(v).length)),
+
+    // slices off "index" from pages so they lead to the base path
+    map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v)),
+
+    // Add the docs base path (open.mp/docs)
+    concat([""]),
+
+    // Transform the paths into Path objects for "en" locale
+    map((v: string) => ({
+      params: {
+        path: v.split("/"),
+      },
+      locale: "en",
+    }))
+  )(all);
+
   return {
-    paths: [],
-    fallback: true,
+    paths: paths,
+    fallback: "blocking",
   };
 }
 

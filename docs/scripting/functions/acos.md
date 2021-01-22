@@ -1,7 +1,7 @@
 ---
 title: acos
-description: .
-tags: []
+description: Get the inversed value of an arc cosine in radians.
+tags: ["math"]
 ---
 
 <LowercaseNote />

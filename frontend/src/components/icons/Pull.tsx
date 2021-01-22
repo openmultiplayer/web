@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pull = (props) => (
+const Pull = ({ fill = "white", display = "inline" }) => (
   <svg
     className="octicon octicon-git-pull-request"
     viewBox="0 0 12 16"
@@ -11,7 +11,8 @@ const Pull = (props) => (
     focusable="false"
     role="img"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
+    fill={fill}
+    display={display}
   >
     <path
       fillRule="evenodd"

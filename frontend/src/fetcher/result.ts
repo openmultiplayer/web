@@ -12,6 +12,10 @@ interface ResultError<E extends APIError> {
 
 type Res<T, E extends APIError> = ResultValue<T> | ResultError<E>;
 
+// This is a "Result Type" or "Either Type" designed for wrapping API responses
+// and errors. It is constructed with `withValue` or `withError` depending on
+// the response and then the caller calls `unwrap` which throws if en error is
+// enclosed.
 export class Result<T, E extends APIError = APIError> {
   constructor(public result: Res<T, E>) {}
 
@@ -28,7 +32,9 @@ export class Result<T, E extends APIError = APIError> {
       case "value":
         return this.result.value;
       case "error":
-        throw new TypeError(`${this.result.error.error}, ${this.result.error.message}`);
+        throw new TypeError(
+          `${this.result.error.error}, ${this.result.error.message}`
+        );
     }
   }
 }

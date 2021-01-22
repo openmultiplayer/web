@@ -4,11 +4,7 @@ description: Chamado quando um jogador realiza um clique duplo em um jogador no 
 tags: ["player"]
 ---
 
-:::warning
-
-Esta callback foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
-
-:::
+<VersionWarnPT name='callback' version='SA-MP 0.3a' />
 
 ## Descrição
 

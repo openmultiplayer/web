@@ -4,11 +4,7 @@ description: OnPlayerClickMap é chamado quando um jogador pocisiona um ponto no
 tags: ["player"]
 ---
 
-:::warning
-
-Esta callback foi implementada no SA-MP 0.3d e não funcionará em versões anteriores.
-
-:::
+<VersionWarnPT name='callback' version='SA-MP 0.3b' />
 
 ## Descrição
 

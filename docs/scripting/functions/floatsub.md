@@ -1,7 +1,7 @@
 ---
 title: floatsub
 description: Subtracts one float from another one.
-tags: []
+tags: ["math", "floating-point"]
 ---
 
 <LowercaseNote />

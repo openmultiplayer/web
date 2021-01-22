@@ -1,8 +1,23 @@
-import DefaultErrorPage from "next/error";
-import components from "src/components/templates";
+// This page is a catch-all ([...slug]) for all pages (including sub-routes)
+// it will take the slug and use it to locate content in the "content" directory
+// in the frontend directory. The user's locale from Next.js is used to pick a
+// directory.
+//
+// For example, if the user visits /blog/somepost and their Locale is French,
+// the server render code will serve the content from content/fr/blog/somepost.
+// If there is none available, a fallback from content/en/blog/somepost will be
+// displayed with a warning that the content is unavailable in their language.
+
+import Error from "next/error";
+import { NextSeo } from "next-seo";
+
+// -
+// Client side
+// -
 
 import { hydrate } from "src/mdx-helpers/csr";
 import Admonition from "src/components/Admonition";
+import components from "src/components/templates";
 
 type Props = {
   source?: any;
@@ -15,17 +30,17 @@ const Page = ({ source, error, data, fallback }: Props) => {
   if (error) {
     return (
       <section>
-        <h1>Error!</h1>
-        <p>{error}</p>
-        <DefaultErrorPage statusCode={404} />
+        <Error statusCode={404} title={error} />
       </section>
     );
   }
 
-  const content = source && hydrate(source, { components });
+  const content =
+    source && hydrate(source, { components: components as Components });
 
   return (
     <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
+      <NextSeo title={data?.title} description={data?.description} />
       <section className="mw7 pa3 flex-auto">
         {fallback && (
           <Admonition type="warning" title="Not Translated">
@@ -40,37 +55,56 @@ const Page = ({ source, error, data, fallback }: Props) => {
   );
 };
 
-import { GetStaticPropsContext, GetStaticPropsResult } from "next";
+// -
+// Server side
+// -
+
+import {
+  GetStaticPathsResult,
+  GetStaticPropsContext,
+  GetStaticPropsResult,
+} from "next";
 import matter from "gray-matter";
 
-import { readLocaleContent } from "src/utils/content";
+import {
+  getAllContentLocales,
+  getContentPaths,
+  getContentPathsForLocale,
+  readLocaleContent,
+} from "src/utils/content";
 import { renderToString } from "src/mdx-helpers/ssr";
+import { RawContent } from "src/types/content";
+import { Components } from "@mdx-js/react";
+import { concat, flatten, flow, map } from "lodash/fp";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ slug: string[] }>
 ): Promise<GetStaticPropsResult<Props>> {
   const { locale } = context;
-  const route = context?.params.slug || ["index"];
+  const route = context?.params?.slug || ["index"];
 
-  let result: { source: string; fallback: boolean };
+  let result: RawContent;
   try {
-    result = await readLocaleContent(route.join("/"), locale);
+    result = await readLocaleContent(route.join("/"), locale || "en");
   } catch (e) {
-    return { props: { error: "Not found" } };
+    return { props: { error: "Not found: " + e.message } };
   }
 
   const { content, data } = matter(result.source);
 
   const mdxSource = await renderToString(content, {
-    mdxOptions: { components },
+    components: components as Components,
+    mdxOptions: {
+      components: components as Components,
+    },
   });
 
   return { props: { source: mdxSource, data, fallback: result.fallback } };
 }
 
-export async function getStaticPaths() {
+export function getStaticPaths(): GetStaticPathsResult {
   return {
-    paths: [],
+    paths: getContentPaths(),
     fallback: true,
   };
 }
