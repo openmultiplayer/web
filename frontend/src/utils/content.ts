@@ -82,20 +82,28 @@ export const readMdFromAPI = async (
   const path_mdx = path + ".mdx";
   const path_md = path + ".md";
 
-  let response: Response;
+  let response: string | undefined;
 
   // TODO: Perform the md/mdx differentiation on the API, instead of here.
 
-  response = await fetch("https://api.open.mp/docs/" + path_md);
-  if (response.status === 200) {
+  response = await rawAPI(path_md);
+  if (response) {
     return await response.text();
   }
 
-  response = await fetch("https://api.open.mp/docs/" + path_mdx);
-  if (response.status === 200) {
+  response = await rawAPI(path_mdx);
+  if (response) {
     return await response.text();
   }
 
+  return undefined;
+};
+
+const rawAPI = async (path: string): Promise<string | undefined> => {
+  const response = await fetch("https://api.open.mp/docs/" + path);
+  if (response.status === 200) {
+    return await response.text();
+  }
   return undefined;
 };
 
@@ -129,7 +137,7 @@ export const readLocaleDocs = async (
   // for this directory that lists all its children as well as any content in
   // a special file named `_.md`.
   const dir = "../docs/" + name;
-  if (statSync(dir).isDirectory()) {
+  if (exists(dir) && statSync(dir).isDirectory()) {
     const list = readdirSync(dir);
 
     // Attempt to read a file named _.md from the directory
@@ -183,6 +191,16 @@ export const readLocaleDocs = async (
   source = await readMdFromAPI(withLocale);
   if (source !== undefined) {
     return { source, fallback: false };
+  }
+
+  // Finally, try the API for the directory listing or the raw file. This is
+  // usually hit for when a category page is request for a non-en locale.
+  // In dev mode, this is never hit because the local files are found but in
+  // prod, those local files aren't available.
+
+  source = await rawAPI(name);
+  if (source !== undefined) {
+    return { source, fallback: true };
   }
 
   throw new Error(`Not found (${name})`);
