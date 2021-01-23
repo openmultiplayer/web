@@ -88,12 +88,12 @@ export const readMdFromAPI = async (
 
   response = await rawAPI(path_md);
   if (response) {
-    return await response.text();
+    return response;
   }
 
   response = await rawAPI(path_mdx);
   if (response) {
-    return await response.text();
+    return response;
   }
 
   return undefined;
