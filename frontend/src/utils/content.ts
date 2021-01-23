@@ -200,6 +200,15 @@ export const readLocaleDocs = async (
 
   source = await rawAPI(name);
   if (source !== undefined) {
+    // Little hack because of how the API server's filesystem router works. If
+    // you hit a directory, it gives you a <pre> list of <a> tags linking to
+    // the pages. So we want to remove the tags and the `.md` extensions.
+    if (source.startsWith("<pre>")) {
+      source = source
+        .replace("<pre>", "")
+        .replace("</pre>", "")
+        .replaceAll(".md", "");
+    }
     return { source, fallback: true };
   }
 
