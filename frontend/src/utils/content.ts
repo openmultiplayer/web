@@ -205,9 +205,10 @@ export const readLocaleDocs = async (
     // the pages. So we want to remove the tags and the `.md` extensions.
     if (source.startsWith("<pre>")) {
       source = source
-        .replace("<pre>", "")
-        .replace("</pre>", "")
-        .replaceAll(".md", "");
+        .replace("<pre>", "<ul>") // unordered list
+        .replace("</pre>", "</ul>")
+        .replace(/<a/g, "<li><a") // turn links into list items
+        .replace(/<\/a>/g, "</a></li>");
     }
     return { source, fallback: true };
   }
