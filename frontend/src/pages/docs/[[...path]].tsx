@@ -147,9 +147,6 @@ export async function getStaticPaths(
       // Filter out non-directories.
       filter((path: string) => statSync(path).isDirectory()),
 
-      // Filter out translations, these are handled automatically by locales.
-      filter((path: string) => path.startsWith("../docs/translations")),
-
       // Mix in the paths being iterated with their children, the pipeline is
       // now dealing with string[][]
       map((path: string) => concat(path)(walk(path))),
@@ -159,17 +156,20 @@ export async function getStaticPaths(
     )(readdirSync(root));
 
   const paths: Array<Path> = flow(
+    // Mix in the flat list of directories from the above recursive function
+    concat(walk("../docs")),
+
     // Filter out translations directory - these are handled separately
-    filter((v: string) => !v.startsWith("../docs/translations")),
+    filter((v: string) => v.indexOf("translations") === -1),
 
     // Filter out category content pages
     filter((v: string) => !v.endsWith("_.md")),
 
-    // Mix in the flat list of directories from the above recursive function
-    concat(walk("../docs")),
+    // Chop off the `../docs/` base path
+    map((v: string) => v.replace("../docs/", "")),
 
-    // Chop off the `../docs/` and the extension
-    map((v: string) => v.slice(8, v.length - extname(v).length)),
+    // Chop off the file extension
+    map((v: string) => v.slice(0, v.length - extname(v).length)),
 
     // slices off "index" from pages so they lead to the base path
     map((v: string) => (v.endsWith("index") ? v.slice(0, v.length - 5) : v)),
