@@ -51,6 +51,40 @@ export const DocsSidebar = () => {
           open={true}
         />
       </div>
+
+      <style jsx global>{`
+        nav details {
+          user-select: none;
+        }
+        nav details > summary {
+          border-radius: 0.25em;
+          line-height: 1.1em;
+          margin: 0em;
+          font-size: 1.1em;
+          font-weight: 600;
+        }
+        nav details > summary::marker,
+        nav details > summary::-webkit-details-marker {
+          color: black;
+        }
+        nav details > summary a {
+          text-decoration: none;
+          padding: 0 0.2em 0 0.2em;
+          color: black;
+        }
+        nav details a,
+        nav details a:visited {
+          color: black;
+        }
+        nav details a:hover {
+          color: var(--ifm-color-primary-darkest);
+          border-radius: 0.25em;
+        }
+        nav details > ul > li > a {
+          margin-left: 1em;
+          line-height: 1.5em;
+        }
+      `}</style>
     </nav>
   );
 };
@@ -82,11 +116,5 @@ const DocsSidebarNode = ({ title, path, tree, open = false }: Props) => (
         )(tree)}
       </ul>
     </details>
-
-    <style jsx>{`
-      details {
-        user-select: none;
-      }
-    `}</style>
   </>
 );
