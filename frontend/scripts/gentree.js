@@ -15,6 +15,9 @@ function shouldIgnore(name) {
   if (name.includes("README")) {
     return true;
   }
+  if (name.includes("_.md")) {
+    return true;
+  }
   return false;
 }
 
