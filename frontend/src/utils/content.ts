@@ -143,7 +143,7 @@ export const readLocaleDocs = async (
     // Attempt to read a file named _.md from the directory
     let source = await readMdFromLocal(dir + "/_");
     if (source === undefined) {
-      source = "";
+      source = "# " + name + "\n\n";
     }
 
     // Generate some content for this category page. A heading, some content
