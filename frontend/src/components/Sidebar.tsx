@@ -62,23 +62,33 @@ export const DocsSidebar = () => {
           margin: 0em;
           font-size: 1.1em;
           font-weight: 600;
+          cursor: pointer;
+          padding: 0.25rem;
         }
         nav details > summary::marker,
         nav details > summary::-webkit-details-marker {
-          color: black;
-        }
-        nav details > summary a {
-          text-decoration: none;
-          padding: 0 0.2em 0 0.2em;
-          color: black;
+          color: var(--ifm-color-gray-700);
         }
         nav details a,
         nav details a:visited {
-          color: black;
+          text-decoration: none;
+          padding: 0 0.2em 0 0.2em;
+          color: var(--ifm-color-gray-700);
         }
         nav details a:hover {
           color: var(--ifm-color-primary-darkest);
           border-radius: 0.25em;
+        }
+        nav details > ul {
+          list-style-type: none;
+          margin: 0;
+          padding-left: 0.5em;
+        }
+        nav details > ul > li {
+          padding: 0.25em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         nav details > ul > li > a {
           margin-left: 1em;
@@ -92,23 +102,23 @@ export const DocsSidebar = () => {
 const DocsSidebarNode = ({ title, path, tree, open = false }: Props) => (
   <>
     <details open={open}>
-      <summary className="pointer pa1 hover-blue">
+      <summary>
         <Link href={path}>
           <a>{title}</a>
         </Link>
       </summary>
-      <ul className="list pl2 ma0">
+      <ul>
         {flow(
           sortBy((v: SidebarItem) => typeof v === "string"),
           map((v: SidebarItem) =>
             typeof v === "string" ? (
-              <li key={v} className="pa1 truncate">
+              <li key={v}>
                 <Link href={`/${v}`}>
-                  <a className="link black hover-blue">{nicenPath(v)}</a>
+                  <a>{nicenPath(v)}</a>
                 </Link>
               </li>
             ) : (
-              <li key={v.label} className="">
+              <li key={v.label}>
                 <DocsSidebarNode title={v.label} path={v.path} tree={v.items} />
               </li>
             )
