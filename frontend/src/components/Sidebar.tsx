@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { flow, map, sortBy } from "lodash/fp";
 import { last } from "lodash";
 import { useState } from "react";
@@ -22,12 +23,14 @@ const nicenPath = (s: string) => last(s.split("/"));
 type Props = {
   title: string;
   path: string;
+  current: string;
   tree: SidebarItem[];
   open?: boolean;
 };
 
 export const DocsSidebar = () => {
   const [visible, setVisible] = useState(false);
+  const { asPath } = useRouter();
   return (
     <nav className="br-ns bb b--black-30 pa2 b--black-30 truncate w4-ns w4-m w5-l flex-auto">
       <div className="tr pa2 dn-ns">
@@ -47,6 +50,7 @@ export const DocsSidebar = () => {
         <DocsSidebarNode
           title="Contents"
           path="/docs"
+          current={asPath}
           tree={((process.env.tree as unknown) as SidebarTree).Sidebar}
           open={true}
         />
@@ -99,7 +103,7 @@ export const DocsSidebar = () => {
   );
 };
 
-const DocsSidebarNode = ({ title, path, tree, open = false }: Props) => (
+const DocsSidebarNode = ({ title, path, current, tree, open }: Props) => (
   <>
     <details open={open}>
       <summary>
@@ -119,7 +123,13 @@ const DocsSidebarNode = ({ title, path, tree, open = false }: Props) => (
               </li>
             ) : (
               <li key={v.label}>
-                <DocsSidebarNode title={v.label} path={v.path} tree={v.items} />
+                <DocsSidebarNode
+                  title={v.label}
+                  path={v.path}
+                  current={current}
+                  tree={v.items}
+                  open={current.includes(v.path)}
+                />
               </li>
             )
           )
