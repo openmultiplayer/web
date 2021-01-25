@@ -207,8 +207,9 @@ export const readLocaleDocs = async (
       source = source
         .replace("<pre>", "<ul>") // unordered list
         .replace("</pre>", "</ul>")
-        .replace(/<a/g, "<li><a") // turn links into list items
-        .replace(/<\/a>/g, "</a></li>");
+        .replace(/<a href="/g, `<li><a href="/docs/${name}/`) // turn links into list items
+        .replace(/<\/a>/g, "</a></li>")
+        .replace(/.md/g, ""); // remove file extensions
     }
     return { source, fallback: true };
   }
