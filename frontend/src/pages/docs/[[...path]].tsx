@@ -37,13 +37,13 @@ const Page = (props: Props) => {
     hydrate(props.source, { components: components as Components });
 
   return (
-    <div className="flex flex-column flex-auto items-center">
+    <div className="flex flex-column flex-auto items-stretch">
       <NextSeo
         title={props?.data?.title}
         description={props?.data?.description}
       />
 
-      <div className="flex flex-row-ns justify-center-ns">
+      <div className="flex flex-column flex-row-ns justify-center-ns">
         <div className="flex flex-column flex-grow">
           <Search />
           {isMounted && <DocsSidebar />}
