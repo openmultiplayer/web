@@ -1,11 +1,11 @@
 // Content acquisition helper APIs for retrieving Markdown text from various
 // sources. The helpers here wrap various fallbacks and different extensions
 // and list files/locales.
-
 import { statSync, readFileSync, readdirSync } from "fs";
 import { join, resolve } from "path";
 import glob from "glob";
 import { RawContent } from "src/types/content";
+import { flow, map, join as ldjoin, filter } from "lodash/fp";
 
 // relative to the `frontend/` directory, the app's working directory.
 const CONTENT_PATH = "content";
@@ -82,20 +82,28 @@ export const readMdFromAPI = async (
   const path_mdx = path + ".mdx";
   const path_md = path + ".md";
 
-  let response: Response;
+  let response: string | undefined;
 
   // TODO: Perform the md/mdx differentiation on the API, instead of here.
 
-  response = await fetch("https://api.open.mp/docs/" + path_md);
+  response = await rawAPI(path_md);
+  if (response) {
+    return response;
+  }
+
+  response = await rawAPI(path_mdx);
+  if (response) {
+    return response;
+  }
+
+  return undefined;
+};
+
+const rawAPI = async (path: string): Promise<string | undefined> => {
+  const response = await fetch("https://api.open.mp/docs/" + path);
   if (response.status === 200) {
     return await response.text();
   }
-
-  response = await fetch("https://api.open.mp/docs/" + path_mdx);
-  if (response.status === 200) {
-    return await response.text();
-  }
-
   return undefined;
 };
 
@@ -125,6 +133,34 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
+  // The path may not be a file, it may be a directory. If so, generate a page
+  // for this directory that lists all its children as well as any content in
+  // a special file named `_.md`.
+  const dir = "../docs/" + name;
+  if (exists(dir) && statSync(dir).isDirectory()) {
+    const list = readdirSync(dir);
+
+    // Attempt to read a file named _.md from the directory
+    let source = await readMdFromLocal(dir + "/_");
+    if (source === undefined) {
+      source = "# " + name + "\n\n";
+    }
+
+    // Generate some content for this category page. A heading, some content
+    // from the index.md if it exists and a list of pages inside it.
+    const additional = flow(
+      filter((v: string) => v !== "_.md"), // filter out the special index page
+      map((v: string) => v.replace(".md", "")), // remove the file extension
+      map((v: string) => `- [${v}](${name + "/" + v})`), // generate a ul element
+      ldjoin("\n")
+    )(list);
+
+    return {
+      source: source + additional,
+      fallback: false,
+    };
+  }
+
   if (name === "") {
     name = "index";
   }
@@ -155,6 +191,27 @@ export const readLocaleDocs = async (
   source = await readMdFromAPI(withLocale);
   if (source !== undefined) {
     return { source, fallback: false };
+  }
+
+  // Finally, try the API for the directory listing or the raw file. This is
+  // usually hit for when a category page is request for a non-en locale.
+  // In dev mode, this is never hit because the local files are found but in
+  // prod, those local files aren't available.
+
+  source = await rawAPI(name);
+  if (source !== undefined) {
+    // Little hack because of how the API server's filesystem router works. If
+    // you hit a directory, it gives you a <pre> list of <a> tags linking to
+    // the pages. So we want to remove the tags and the `.md` extensions.
+    if (source.startsWith("<pre>")) {
+      source = source
+        .replace("<pre>", "<ul>") // unordered list
+        .replace("</pre>", "</ul>")
+        .replace(/<a href="/g, `<li><a href="/docs/${name}/`) // turn links into list items
+        .replace(/<\/a>/g, "</a></li>")
+        .replace(/.md/g, ""); // remove file extensions
+    }
+    return { source, fallback: true };
   }
 
   throw new Error(`Not found (${name})`);

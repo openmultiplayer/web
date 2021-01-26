@@ -15,6 +15,9 @@ function shouldIgnore(name) {
   if (name.includes("README")) {
     return true;
   }
+  if (name.includes("_.md")) {
+    return true;
+  }
   return false;
 }
 
@@ -41,6 +44,7 @@ function parseDir(filename) {
       }
 
       info.type = "category";
+      info.path = filename.replace("..", "");
       let catName = path.basename(filename);
 
       if (catName[0] == "_") {
