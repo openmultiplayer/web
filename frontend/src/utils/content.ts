@@ -151,7 +151,7 @@ export const readLocaleDocs = async (
     const additional = flow(
       filter((v: string) => v !== "_.md"), // filter out the special index page
       map((v: string) => v.replace(".md", "")), // remove the file extension
-      map((v: string) => `- [${v}](${name + "/" + v})`), // generate a ul element
+      map((v: string) => `- [${v}](${"/docs/" + name + "/" + v})`), // generate a ul element
       ldjoin("\n")
     )(list);
 
@@ -164,6 +164,10 @@ export const readLocaleDocs = async (
   if (name === "") {
     name = "index";
   }
+
+  //
+  // Local Filesystem Docs Content
+  //
 
   let withLocale = "../docs/" + name;
   if (locale && locale != "en") {
@@ -180,6 +184,10 @@ export const readLocaleDocs = async (
   if (source !== undefined) {
     return { source, fallback: true };
   }
+
+  //
+  // API Docs Content
+  //
 
   // Only attempt to find translated copies on the API. These aren't built
   // statically at build-time because the traffic is lower than the English

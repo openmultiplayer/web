@@ -25,7 +25,7 @@ const Page = (props: Props) => {
 
   if (props.error) {
     return (
-      <section>
+      <section className="mw7 pa3 measure-wide center">
         <h1>Error!</h1>
         <p>{props.error}</p>
       </section>
