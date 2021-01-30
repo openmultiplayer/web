@@ -225,6 +225,12 @@ export const readLocaleDocs = async (
     return { source, fallback: false };
   }
 
+  //Next, try the English version as a fallback.
+  source = await readMdFromAPI(name);
+  if (source !== undefined) {
+    return { source, fallback: true };
+  }
+
   // Finally, try the API for the directory listing or the raw file. This is
   // usually hit for when a category page is request for a non-en locale.
   // In dev mode, this is never hit because the local files are found but in
