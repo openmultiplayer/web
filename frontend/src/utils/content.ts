@@ -199,6 +199,7 @@ export const readLocaleDocs = async (
   locale?: string
 ): Promise<RawContent> => {
   const { serverRuntimeConfig } = getConfig();
+  console.log("[Request] Phase:", serverRuntimeConfig.phase);
   // If dev mode (`npm run dev`) or a production build (`npm run build`) then
   // read docs from the local filesystem.
   if (
