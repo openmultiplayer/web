@@ -3,9 +3,14 @@
 // and list files/locales.
 import { statSync, readFileSync, readdirSync } from "fs";
 import { join, resolve } from "path";
+import {
+  PHASE_DEVELOPMENT_SERVER,
+  PHASE_PRODUCTION_BUILD,
+} from "next/constants";
 import glob from "glob";
-import { RawContent } from "src/types/content";
 import { flow, map, join as ldjoin, filter } from "lodash/fp";
+
+import { RawContent } from "src/types/content";
 
 // relative to the `frontend/` directory, the app's working directory.
 const CONTENT_PATH = "content";
@@ -127,9 +132,7 @@ export const readLocaleContent = async (
   throw new Error(`Not found (${name} - ${locale})`);
 };
 
-// Reads docs with the given name and locale. Attempts the locale version first
-// (if not English) and falls back to the English if not found.
-export const readLocaleDocs = async (
+const readLocaleDocsDevMode = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
@@ -185,18 +188,35 @@ export const readLocaleDocs = async (
     return { source, fallback: true };
   }
 
-  //
-  // API Docs Content
-  //
+  throw new Error(`Not found locally (${name}) check ../docs for the file.`);
+};
+
+// Reads docs with the given name and locale. Attempts the locale version first
+// (if not English) and falls back to the English if not found.
+export const readLocaleDocs = async (
+  name: string,
+  locale?: string
+): Promise<RawContent> => {
+  // If dev mode (`npm run dev`) or a production build (`npm run build`) then
+  // read docs from the local filesystem.
+  if (
+    process.env.phase === PHASE_DEVELOPMENT_SERVER ||
+    process.env.phase === PHASE_PRODUCTION_BUILD
+  ) {
+    return await readLocaleDocsDevMode(name, locale);
+  }
+
+  // Otherwise, this is being run in production and is happening at request-time
+  // so use the API to get the content.
 
   // Only attempt to find translated copies on the API. These aren't built
   // statically at build-time because the traffic is lower than the English
   // (default) pages so it's fine to sacrifice a bit of performance here.
-  withLocale = name;
+  let withLocale = name;
   if (locale && locale != "en") {
     withLocale = `translations/${locale}/${name}`;
   }
-  source = await readMdFromAPI(withLocale);
+  let source = await readMdFromAPI(withLocale);
   if (source !== undefined) {
     return { source, fallback: false };
   }
