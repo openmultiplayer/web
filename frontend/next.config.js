@@ -9,8 +9,8 @@ generateCache();
 module.exports = (phase) => {
   console.log("Phase:", phase);
   return {
+    serverRuntimeConfig: { phase },
     env: {
-      phase,
       tree: parseDir("../docs"),
     },
     i18n: {

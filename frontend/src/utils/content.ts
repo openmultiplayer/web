@@ -3,6 +3,7 @@
 // and list files/locales.
 import { statSync, readFileSync, readdirSync } from "fs";
 import { join, resolve } from "path";
+import getConfig from "next/config";
 import {
   PHASE_DEVELOPMENT_SERVER,
   PHASE_PRODUCTION_BUILD,
@@ -197,12 +198,15 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
+  const { serverRuntimeConfig } = getConfig();
   // If dev mode (`npm run dev`) or a production build (`npm run build`) then
   // read docs from the local filesystem.
   if (
-    process.env.phase === PHASE_DEVELOPMENT_SERVER ||
-    process.env.phase === PHASE_PRODUCTION_BUILD
+    serverRuntimeConfig.phase === PHASE_DEVELOPMENT_SERVER ||
+    serverRuntimeConfig.phase === PHASE_PRODUCTION_BUILD
   ) {
+    // If you want to simulate how the production site fetches content, comment
+    // out the line below so local files aren't used to render docs pages.
     return await readLocaleDocsDevMode(name, locale);
   }
 
