@@ -203,8 +203,9 @@ export const readLocaleDocs = async (
   // If dev mode (`npm run dev`) or a production build (`npm run build`) then
   // read docs from the local filesystem.
   if (
-    serverRuntimeConfig.phase === PHASE_DEVELOPMENT_SERVER ||
-    serverRuntimeConfig.phase === PHASE_PRODUCTION_BUILD
+    (serverRuntimeConfig.phase === PHASE_DEVELOPMENT_SERVER ||
+      serverRuntimeConfig.phase === PHASE_PRODUCTION_BUILD) &&
+    process.env.VERCEL !== "1"
   ) {
     // If you want to simulate how the production site fetches content, comment
     // out the line below so local files aren't used to render docs pages.
