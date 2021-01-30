@@ -198,10 +198,9 @@ export const readLocaleDocs = async (
   name: string,
   locale?: string
 ): Promise<RawContent> => {
+  // If dev mode (`npm run dev`) or a production build (`npm run build`) and the
+  // then site is not on Vercel, read docs from the local filesystem.
   const { serverRuntimeConfig } = getConfig();
-  console.log("[Request] Phase:", serverRuntimeConfig.phase);
-  // If dev mode (`npm run dev`) or a production build (`npm run build`) then
-  // read docs from the local filesystem.
   if (
     (serverRuntimeConfig.phase === PHASE_DEVELOPMENT_SERVER ||
       serverRuntimeConfig.phase === PHASE_PRODUCTION_BUILD) &&
