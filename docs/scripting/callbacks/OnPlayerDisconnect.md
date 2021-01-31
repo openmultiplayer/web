@@ -21,6 +21,14 @@ This callback is called when a player disconnects from the server.
 
 It is always called first in filterscripts.
 
+## Reasons
+
+| ID | Reason        | Details                                                                                   |
+| -- | ------------- | ----------------------------------------------------------------------------------------- |
+| 0  | Timeout/Crash | The player's connection was lost. Either their game crashed or their network had a fault. |
+| 1  | Quit          | The player purposefully quit, either using the /quit (/q) command or via the pause menu.  |
+| 2  | Kick/Ban      | The player was kicked or banned by the server. |
+
 ## Examples
 
 ```c
