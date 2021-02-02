@@ -1,6 +1,6 @@
 ---
-title: Limits
-description: A list of all standard library macros.
+title: Constnts
+description: A list of all standard library constant definitions.
 tags: []
 ---
 
@@ -8,7 +8,7 @@ tags: []
 
 ## Limits
 
-| Macro                 | Value             |
+| Constant              | Value             |
 |-----------------------|-------------------|
 | MAX_PLAYER_NAME       | 24                |
 | MAX_PLAYERS           | 1000              |
@@ -23,9 +23,9 @@ tags: []
 | MAX_3DTEXT_PLAYER     | PlayerText3D:1024 |
 | MAX_PICKUPS           | 4096              |
 
-## Invalid Macros
+## Invalid Constants
 
-| Macro                    | Value               |
+| Constant                 | Value               |
 |--------------------------|---------------------|
 | NO_TEAM                  | 255                 |
 | INVALID_PLAYER_ID        | 0xFFFF              |
@@ -39,9 +39,9 @@ tags: []
 | INVALID_3DTEXT_ID        | Text3D:0xFFFF       |
 | INVALID_PLAYER_3DTEXT_ID | PlayerText3D:0xFFFF |
 
-## Weapon Macros
+## Weapon Constants
 
-| Weapon            | Macro                   | Value |
+| Weapon            | Constant                | Value |
 |-------------------|-------------------------|-------|
 | Brass Knuckle     | WEAPON_BRASSKNUCKLE     | 1     |
 | Golf Club         | WEAPON_GOLFCLUB         | 2     |
@@ -90,7 +90,7 @@ tags: []
 
 ## Marker Modes used by ShowPlayerMarkers()
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | PLAYER_MARKERS_MODE_OFF        | 0     |
 | PLAYER_MARKERS_MODE_GLOBAL     | 1     |
@@ -98,7 +98,7 @@ tags: []
 
 ## Keys
 
-| Macro                          | Value  |
+| Constant                       | Value  |
 |--------------------------------|--------|
 | KEY_ACTION                     | 1      |
 | KEY_CROUCH                     | 2      |
@@ -122,7 +122,7 @@ tags: []
 
 ## Dialog Styles
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | DIALOG_STYLE_MSGBOX            | 0     |
 | DIALOG_STYLE_INPUT             | 1     |
@@ -133,14 +133,14 @@ tags: []
 
 ## TextDraw
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | TEXT_DRAW_FONT_SPRITE_DRAW     | 4     |
 | TEXT_DRAW_FONT_MODEL_PREVIEW   | 5     |
 
 ## SVar Enumeration
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | SERVER_VARTYPE_NONE            | 0     |
 | SERVER_VARTYPE_INT             | 1     |
@@ -149,7 +149,7 @@ tags: []
 
 ## Artwork / Net Models
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | DOWNLOAD_REQUEST_EMPTY         | 0     |
 | DOWNLOAD_REQUEST_MODEL_FILE    | 1     |
@@ -157,13 +157,13 @@ tags: []
 
 ## Click Source Scoreboard
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | CLICK_SOURCE_SCOREBOARD        | 0     |
 
 ## Edit Response
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | EDIT_RESPONSE_CANCEL           | 0     |
 | EDIT_RESPONSE_FINAL            | 1     |
@@ -171,14 +171,14 @@ tags: []
 
 ## Select Object
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | SELECT_OBJECT_GLOBAL_OBJECT    | 1     |
 | SELECT_OBJECT_PLAYER_OBJECT    | 2     |
 
 ## Bullet Hit Type
 
-| Macro                          | Value |
+| Constant                       | Value |
 |--------------------------------|-------|
 | BULLET_HIT_TYPE_NONE           | 0     |
 | BULLET_HIT_TYPE_PLAYER         | 1     |
@@ -190,14 +190,14 @@ tags: []
 
 ## Limits
 
-| Macro                           | Value |
+| Constant                        | Value |
 |---------------------------------|-------|
 | MAX_PLAYER_ATTACHED_OBJECTS     | 10    |
 | MAX_CHATBUBBLE_LENGTH           | 144   |
 
 ## Special Actions
 
-| Macro                           | Value |
+| Constant                        | Value |
 |---------------------------------|-------|
 | SPECIAL_ACTION_NONE             | 0     |
 | SPECIAL_ACTION_DUCK             | 1     |
@@ -222,7 +222,7 @@ tags: []
 
 ## Fighting Styles
 
-| Macro                           | Value |
+| Constant                        | Value |
 |---------------------------------|-------|
 | FIGHT_STYLE_NORMAL              | 0     |
 | FIGHT_STYLE_BOXING              | 1     |
@@ -233,7 +233,7 @@ tags: []
 
 ## Weapon Skills
 
-| Macro                           | Value |
+| Constant                        | Value |
 |---------------------------------|-------|
 | WEAPONSKILL_PISTOL              | 0     |
 | WEAPONSKILL_PISTOL_SILENCED     | 1     |
@@ -249,7 +249,7 @@ tags: []
 
 ## Weapon States
 
-| Macro                      | Value |
+| Constant                   | Value |
 |----------------------------|-------|
 | WEAPONSTATE_UNKNOWN        | -1    |
 | WEAPONSTATE_NO_BULLETS     | 0     |
@@ -259,7 +259,7 @@ tags: []
 
 ## PVar Enumeration
 
-| Macro                      | Value |
+| Constant                   | Value |
 |----------------------------|-------|
 | PLAYER_VARTYPE_NONE        | 0     |
 | PLAYER_VARTYPE_INT         | 1     |
@@ -268,7 +268,7 @@ tags: []
 
 ## Map Icon
 
-| Macro                      | Value |
+| Constant                   | Value |
 |----------------------------|-------|
 | MAPICON_LOCAL              | 0     |
 | MAPICON_GLOBAL             | 1     |
@@ -277,14 +277,14 @@ tags: []
 
 ## Camera
 
-| Macro                      | Value |
+| Constant                   | Value |
 |----------------------------|-------|
 | CAMERA_CUT                 | 2     |
 | CAMERA_MOVE                | 1     |
 
 ## Spectating
 
-| Macro                      | Value |
+| Constant                   | Value |
 |----------------------------|-------|
 | SPECTATE_MODE_NORMAL       | 1     |
 | SPECTATE_MODE_FIXED        | 2     |
@@ -292,7 +292,7 @@ tags: []
 
 ## Recording for NPC playback
 
-| Macro                                | Value |
+| Constant                             | Value |
 |--------------------------------------|-------|
 | PLAYER_RECORDING_TYPE_NONE           | 1     |
 | PLAYER_RECORDING_TYPE_DRIVER         | 2     |
@@ -302,7 +302,7 @@ tags: []
 
 ## Car Mod Type
 
-| Macro                   | Value |
+| Constant                | Value |
 |-------------------------|-------|
 | CARMODTYPE_SPOILER      | 0     |
 | CARMODTYPE_HOOD         | 1     |
@@ -321,7 +321,7 @@ tags: []
 
 ## Vehicle Params
 
-| Macro                     | Value |
+| Constant                  | Value |
 |---------------------------|-------|
 | VEHICLE_PARAMS_UNSET      | 0     |
 | VEHICLE_PARAMS_OFF        | 1     |
@@ -329,7 +329,7 @@ tags: []
 
 ## Vehicle Model Info
 
-| Macro                             | Value |
+| Constant                          | Value |
 |-----------------------------------|-------|
 | VEHICLE_MODEL_INFO_SIZE           | 1     |
 | VEHICLE_MODEL_INFO_FRONTSEAT      | 2     |
@@ -345,7 +345,7 @@ tags: []
 
 ## Object Material Size
 
-| Macro                        | Value |
+| Constant                     | Value |
 |------------------------------|-------|
 | OBJECT_MATERIAL_SIZE_32x32   | 10    |
 | OBJECT_MATERIAL_SIZE_64x32   | 20    |
@@ -364,7 +364,7 @@ tags: []
 
 ## Object Material Text Alignmment
 
-| Macro                             | Value |
+| Constant                          | Value |
 |-----------------------------------|-------|
 | OBJECT_MATERIAL_TEXT_ALIGN_LEFT   | 0     |
 | OBJECT_MATERIAL_TEXT_ALIGN_CENTER | 1     |
@@ -373,7 +373,7 @@ tags: []
 # a_http
 
 
-| Macro                         | Value |
+| Constant                      | Value |
 |-------------------------------|-------|
 | HTTP_ERROR_BAD_HOST           | 1     |
 | HTTP_ERROR_NO_SOCKET          | 2     |
