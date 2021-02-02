@@ -2,12 +2,12 @@ export default function BabelPluginMdxBrowser() {
   return {
     visitor: {
       // remove all imports, we will add these to scope manually
-      ImportDeclaration(path) {
+      ImportDeclaration(path: any) {
         path.remove();
       },
       // the `makeShortcode` template is nice for error handling but we
       // don't need it here as we are manually injecting dependencies
-      VariableDeclaration(path) {
+      VariableDeclaration(path: any) {
         // this removes the `makeShortcode` function
         if (path.node.declarations[0].id.name === "makeShortcode") {
           path.remove();

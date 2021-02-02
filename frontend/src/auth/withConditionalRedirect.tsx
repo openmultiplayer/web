@@ -4,11 +4,11 @@ function isBrowser() {
   return typeof window !== "undefined";
 }
 
-export default function withConditionalRedirect<P>({
-  WrappedComponent,
-  clientCondition,
-  location,
-}) {
+export default function withConditionalRedirect<P>(
+  WrappedComponent: React.FunctionComponent<P>,
+  location: string,
+  clientCondition: () => boolean
+) {
   const WithConditionalRedirectWrapper = (props: P) => {
     const router = useRouter();
     const redirectCondition = clientCondition();

@@ -51,7 +51,7 @@ export const getServerSideProps = async (
         body: JSON.stringify(payload),
         headers: {
           "Content-Type": "application/json",
-          Cookie: ctx.req.headers.cookie,
+          Cookie: ctx?.req?.headers?.cookie!,
         },
         credentials: "include",
       },
@@ -60,7 +60,7 @@ export const getServerSideProps = async (
     )
   ).unwrap();
 
-  ctx.res.setHeader("set-cookie", response.headers.get("set-cookie"));
+  ctx.res.setHeader("set-cookie", response.headers.get("set-cookie")!);
   ctx.res.writeHead(302, { Location: "/dashboard" });
   ctx.res.end();
   return { props: {} };

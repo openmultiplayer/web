@@ -38,10 +38,6 @@ public OnPlayerConnect(playerid)
 
 ## Notas
 
-:::tip
-
-Esta callback também pode ser chamada por um NPC.
-
-:::
+<TipNPCCallbacksPT />
 
 ## Funções Relacionadas

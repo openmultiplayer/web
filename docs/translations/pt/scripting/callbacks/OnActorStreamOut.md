@@ -4,11 +4,7 @@ description: Esta callback é chamada quando um ator é descarregado (torna-se i
 tags: []
 ---
 
-:::warning
-
-Esta callback foi implementada no SA-MP 0.3.7 e não funcionará em versões anteriores.
-
-:::
+<VersionWarnPT name='callback' version='SA-MP 0.3.7' />
 
 ## Descrição
 
@@ -37,10 +33,6 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Notas
 
-:::tip
-
-Este callback também pode ser chamada por um NPC.
-
-:::
+<TipNPCCallbacksPT />
 
 ## Funções Relacionadas

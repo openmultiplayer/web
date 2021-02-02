@@ -1,3 +1,5 @@
+import { Components } from "@mdx-js/react";
+
 export type MarkdownContent = {
   compiledSource: string;
   renderedOutput?: string;
@@ -5,7 +7,7 @@ export type MarkdownContent = {
 };
 
 export type MarkdownRenderConfig = {
-  components?: any;
+  components: Components;
   mdxOptions?: any;
   scope?: any;
 };

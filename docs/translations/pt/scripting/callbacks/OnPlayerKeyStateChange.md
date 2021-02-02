@@ -21,11 +21,7 @@ Esta callback é chamada quando o estado de qualquer tecla [suportada](../resour
 
 ## Notas
 
-:::info
-
-Esta callback também pode ser chamada por um NPC.
-
-:::
+<TipNPCCallbacksPT />
 
 :::tip
 

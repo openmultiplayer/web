@@ -26,7 +26,7 @@ public OnObjectMoved(objectid)
 }
 ```
 
-## Mga dapat tandaan
+## Mga Dapat Unawain
 
 :::tip
 
@@ -34,7 +34,7 @@ Ang SetObjectPos ay hindi gumagana kapag ginamit sa callback na ito. Upang ito'y
 
 :::
 
-## Mga Related na Functions
+## Mga Kaugnay na Functions
 
 - [MoveObject](../functions/MoveObject.md): Galawin ang isang Object.
 - [MovePlayerObject](../functions/MovePlayerObject.md): Galawin ang isang player Object.

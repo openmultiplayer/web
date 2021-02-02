@@ -93,7 +93,7 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 	// Check if this request came from a user who was already logged in. If they
 	// are, get their existing account. If not, create a new account.
 	var user db.UserModel
-	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok {
+	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
 		user, err = p.db.User.FindOne(
 			db.User.ID.Equals(existing.Cookie.UserID),
 		).Exec(ctx)

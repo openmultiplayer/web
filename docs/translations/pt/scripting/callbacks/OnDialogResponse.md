@@ -4,11 +4,7 @@ description: Esta callback é chamada quando um jogador responde a um dialog mos
 tags: []
 ---
 
-:::warning
-
-Esta callback foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
-
-:::
+<VersionWarnPT name='callback' version='SA-MP 0.3a' />
 
 ## Descrição
 

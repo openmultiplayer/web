@@ -1,7 +1,7 @@
 ---
 title: VectorSize
 description: Returns the norm (length) of the provided vector.
-tags: []
+tags: ["math"]
 ---
 
 <VersionWarn version='SA-MP 0.3z' />

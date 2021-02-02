@@ -1,7 +1,7 @@
 ---
 title: NetStats_BytesSent
 description: Gets the amount of data (in bytes) that the server has sent to the player.
-tags: []
+tags: ["network monitoring"]
 ---
 
 <VersionWarn version='SA-MP 0.3z' />
@@ -35,8 +35,8 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## Related Functions
 
-- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
-- [GetNetworkStats](GetNetworkStats): Gets the servers networkstats and saves it into a string.
+- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player's networkstats and saves it into a string.
+- [GetNetworkStats](GetNetworkStats): Gets the server's networkstats and saves it into a string.
 - [NetStats_GetConnectedTime](NetStats_GetConnectedTime): Get the time that a player has been connected for.
 - [NetStats_MessagesReceived](NetStats_MessagesReceived): Get the number of network messages the server has received from the player.
 - [NetStats_MessagesSent](NetStats_MessagesSent): Get the number of network messages the server has sent to the player.

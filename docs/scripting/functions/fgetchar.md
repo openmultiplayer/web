@@ -1,7 +1,7 @@
 ---
 title: fgetchar
 description: Reads a single character from a file.
-tags: []
+tags: ["file management"]
 ---
 
 <LowercaseNote />
@@ -66,7 +66,6 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [fwrite](fwrite): Write to a file.
 - [fread](fread): Read a file.
 - [fputchar](fputchar): Put a character in a file.
-- [fgetchar](fgetchar): Get a character from a file.
 - [fblockwrite](fblockwrite): Write blocks of data into a file.
 - [fblockread](fblockread): Read blocks of data from a file.
 - [fseek](fseek): Jump to a specific character in a file.

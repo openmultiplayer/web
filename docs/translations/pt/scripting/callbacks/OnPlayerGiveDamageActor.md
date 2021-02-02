@@ -4,7 +4,7 @@ description: Esta callback é chamada quando o jogador causa dano a um ator.
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnPT name='callback' version='SA-MP 0.3.7' />
 
 ## Descrição
 

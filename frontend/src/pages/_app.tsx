@@ -1,10 +1,8 @@
-import App, { AppInitialProps } from "next/app";
-import type { AppProps, AppContext } from "next/app";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 import Router from "next/router";
-import { NextSeo } from "next-seo";
+import { DefaultSeo } from "next-seo";
 import { ToastContainer } from "react-nextjs-toast";
-import { MDXProvider } from "@mdx-js/react";
 import NProgress from "nprogress";
 
 import Nav from "src/components/Nav";
@@ -17,31 +15,26 @@ import "remark-admonitions/styles/classic.css";
 
 import "src/styles/base.css";
 import { AuthProvider } from "src/auth/hooks";
-import { isAuthenticatedFromRequest } from "src/auth";
 
 // Trigger client-side progress bar for client-side page transitions.
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
-type Props = {
-  authenticated: boolean;
-};
-
-const MyApp = ({
-  Component,
-  pageProps,
-  router,
-  authenticated,
-}: AppProps & Props) => (
+const App = ({ Component, pageProps, router }: AppProps) => (
   <>
     <Head>
       <link rel="stylesheet" href="/fonts.css" />
     </Head>
 
-    <NextSeo
+    {/* 
+      Sets the default meta tags for all pages.
+      https://github.com/garmeeh/next-seo
+    */}
+    <DefaultSeo
       title="Open Multiplayer"
       titleTemplate="open.mp | %s"
+      description="An upcoming multiplayer mod for Grand Theft Auto: San Andreas that will be fully backwards compatible with the existing multiplayer mod San Andreas Multiplayer."
       canonical="https://www.open.mp"
       twitter={{
         cardType: "summary",
@@ -55,30 +48,21 @@ const MyApp = ({
 
     {/* This is flex to make <section> elements gapless */}
     <div id="container">
-      <AuthProvider authenticated={authenticated}>
+      {/* Provides authentication context for child components */}
+      <AuthProvider authenticated={false}>
         <Nav
           items={[
             { name: "Home", path: "/", exact: true },
+            { name: "FAQ", path: "/faq" },
             { name: "Servers", path: "/servers" },
             { name: "Docs", path: "/docs" },
+            { name: "Blog", path: "/blog" },
           ]}
           route={router.pathname}
         />
 
         <main>
-          {router.pathname.startsWith("/blog") ? (
-            <MDXProvider
-              components={{
-                wrapper: ({ children }) => (
-                  <article className="measure-wide center">{children}</article>
-                ),
-              }}
-            >
-              <Component {...pageProps} />
-            </MDXProvider>
-          ) : (
-            <Component {...pageProps} />
-          )}
+          <Component {...pageProps} />
         </main>
       </AuthProvider>
     </div>
@@ -102,16 +86,4 @@ const MyApp = ({
   </>
 );
 
-MyApp.getInitialProps = async (
-  appContext: AppContext
-): Promise<AppInitialProps & Props> => {
-  const appProps = await App.getInitialProps(appContext);
-  const authenticated = isAuthenticatedFromRequest(appContext.ctx.req);
-
-  return {
-    ...appProps,
-    authenticated,
-  };
-};
-
-export default MyApp;
+export default App;

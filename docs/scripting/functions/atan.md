@@ -1,7 +1,7 @@
 ---
 title: atan
 description: Get the inversed value of an arc tangent in radians.
-tags: []
+tags: ["math"]
 ---
 
 <LowercaseNote />

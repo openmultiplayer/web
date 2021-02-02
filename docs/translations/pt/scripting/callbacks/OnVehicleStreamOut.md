@@ -4,16 +4,16 @@ description: Essa callback é chamada quando um veículo sai da área visível d
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnPT name='callback' version='SA-MP 0.3a' />
 
 ## Descrição
 
 Essa callback é chamada quando um veículo sai da área visível de um jogador.
 
-| Nome        | Descrição                                                             |
-| ----------- | --------------------------------------------------------------------- |
-| vehicleid   | ID do carro que saiu da área visível do jogador.                      |
-| forplayerid | ID do jogador cujo o carro saiu da área visível de um jogador.        |
+| Nome        | Descrição                                                      |
+| ----------- | -------------------------------------------------------------- |
+| vehicleid   | ID do carro que saiu da área visível do jogador.               |
+| forplayerid | ID do jogador cujo o carro saiu da área visível de um jogador. |
 
 ## Retornos
 
@@ -33,6 +33,6 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+<TipNPCCallbacksPT />
 
 ## Funções Relacionadas

@@ -22,7 +22,12 @@ func New(ctx context.Context, idx *docsindex.Index) *chi.Mux {
 
 	fs := http.FileServer(http.Dir("docs/"))
 
-	rtr.Get("/*", http.StripPrefix("/docs/", fs).ServeHTTP)
+	rtr.With(func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Add("Content-Type", "text/markdown")
+			next.ServeHTTP(w, r)
+		})
+	}).Get("/*", http.StripPrefix("/docs/", fs).ServeHTTP)
 	rtr.Get("/search", svc.search)
 
 	return rtr

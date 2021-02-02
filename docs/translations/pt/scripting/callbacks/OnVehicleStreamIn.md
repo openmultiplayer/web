@@ -4,16 +4,16 @@ description: Essa callback é chamada quando um veículo entra na área visível
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnPT name='callback' version='SA-MP 0.3.a' />
 
 ## Descrição
 
 Essa callback é chamada quando um veículo entra na área visível de um jogador.
 
-| Nome        | Descrição                                                            |
-| ----------- | -------------------------------------------------------------------- |
-| vehicleid   | ID do veículo que acabara de entrar na área visível do jogador.      |
-| forplayerid | ID do jogador cujo o carro entrou na área visível do jogador.        |
+| Nome        | Descrição                                                       |
+| ----------- | --------------------------------------------------------------- |
+| vehicleid   | ID do veículo que acabara de entrar na área visível do jogador. |
+| forplayerid | ID do jogador cujo o carro entrou na área visível do jogador.   |
 
 ## Retornos
 
@@ -33,6 +33,6 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+<TipNPCCallbacksPT />
 
 ## Funções Relacionadas

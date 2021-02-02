@@ -1,7 +1,7 @@
 ---
 title: GetActorFacingAngle
 description: Get the facing angle of an actor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />

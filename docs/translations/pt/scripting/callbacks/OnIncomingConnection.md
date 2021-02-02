@@ -4,11 +4,7 @@ description: Esta callback é chamada quando um endereço de IP tenta conectar n
 tags: []
 ---
 
-:::warning
-
-Esta callback foi implementada no 0.3z R2-2 e não funcionará em versões anteriores!
-
-:::
+<VersionWarnPT name='callback' version='SA-MP 0.3z R2-2' />
 
 ## Descrição
 

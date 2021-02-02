@@ -53,7 +53,6 @@ public OnPlayerDeath(playerid, killerid, reason)
 - Hindi mo na kailangan tignan kung ang killerid ay valid bago gamitin ang SendDeathMessage. Ang INVALID_PLAYER_ID ay isang valid na killerid ID parameter sa function na iyon.
 - Ang playerid lamang ang may kapakanan na tawagin itong callback. (Magandang alamin para sa anti-fake death na mga hacks/cleo.)
 
-:::
 
 :::warning
 

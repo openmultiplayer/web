@@ -1,27 +1,26 @@
 const fs = require("fs");
 const path = require("path");
-const withMDX = require("@next/mdx")({ extension: /\.mdx?$/ });
 
 const parseDir = require("./scripts/gentree");
-const getBlogPostPages = require("./scripts/blogposts");
 const generateCache = require("./scripts/gencache");
 
 generateCache();
 
-module.exports = withMDX({
-  env: {
-    tree: parseDir("../docs"),
-    BLOG_POST_LIST: getBlogPostPages(),
-  },
-  i18n: {
-    locales: fs
-      .readdirSync("content")
-      .filter((v) => fs.statSync(path.join("content", v)).isDirectory())
-      .map((v) => v),
-    defaultLocale: "en",
-  },
-  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
-  images: {
-    domains: ["assets.open.mp"],
-  },
-});
+module.exports = (phase) => {
+  console.log("Phase:", phase);
+  return {
+    serverRuntimeConfig: { phase },
+    env: {
+      tree: parseDir("../docs"),
+    },
+    i18n: {
+      locales: fs
+        .readdirSync("content")
+        .filter((v) => fs.statSync(path.join("content", v)).isDirectory()),
+      defaultLocale: "en",
+    },
+    images: {
+      domains: ["assets.open.mp"],
+    },
+  };
+};

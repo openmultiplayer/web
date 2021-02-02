@@ -6,7 +6,6 @@ import { NextSeo } from "next-seo";
 import { FormEvent, useState } from "react";
 import Fuse from "fuse.js";
 import { toast } from "react-nextjs-toast";
-import { mutateCallback } from "swr/dist/types";
 import NProgress from "nprogress";
 
 const API_SERVERS = `https://api.open.mp/server/`;
@@ -339,7 +338,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
   return (
     <section className="measure-wide center ph2 pb2">
       <NextSeo
-        title="Server List"
+        title="SA-MP Servers Index"
         description="Live indexing and data for all SA-MP servers."
       />
 
@@ -348,8 +347,8 @@ const Page = ({ initialData, errorMessage }: Props) => {
         <Error message={errorMessage} />
       ) : (
         <List
-          data={data}
-          onAdd={(server: All) => mutate([...data, server.core], false)}
+          data={data!}
+          onAdd={(server: All) => mutate([...data!, server.core], false)}
         />
       )}
     </section>

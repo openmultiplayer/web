@@ -15,6 +15,9 @@ function shouldIgnore(name) {
   if (name.includes("README")) {
     return true;
   }
+  if (name.includes("_.md")) {
+    return true;
+  }
   return false;
 }
 
@@ -35,7 +38,13 @@ function parseDir(filename) {
     }
     // it's a directory inside `docs` folder
     else {
+      // ignore translations, these are handled automatically
+      if (path.basename(filename) === "translations") {
+        return null;
+      }
+
       info.type = "category";
+      info.path = filename.replace("..", "");
       let catName = path.basename(filename);
 
       if (catName[0] == "_") {
@@ -49,7 +58,9 @@ function parseDir(filename) {
         // Taiwan uses Traditional Chinese as its script, we're using ISO codes
         // for countries not languages, so this slight modification is for that.
         if (catName == "zh-tw") {
-          catName = "正體中文/繁體中文";
+          catName = "繁體中文";
+        } else if (catName == "zh-cn") {
+          catName = "简体中文";
         }
       }
 

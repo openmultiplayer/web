@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { map } from "lodash/fp";
 
-const footerList = (heading, items) => (
+type Item = [string, string];
+
+const footerList = (heading: string, items: Array<Item>) => (
   <div className="flex flex-column">
     <h4 className="ma0">{heading}</h4>
     <ul className="list pa0">

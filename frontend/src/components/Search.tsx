@@ -2,12 +2,12 @@ import { useCallback, useRef, useState } from "react";
 import Link from "next/link";
 
 const Search = () => {
-  const searchRef = useRef(null);
+  const searchRef = useRef<HTMLDivElement>(null);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(false);
   const [results, setResults] = useState([]);
 
-  const searchEndpoint = (query) => `/api/search?q=${query}`;
+  const searchEndpoint = (query: string) => `/api/search?q=${query}`;
 
   const onChange = useCallback((event) => {
     const query = event.target.value;
@@ -16,7 +16,7 @@ const Search = () => {
       fetch(searchEndpoint(query))
         .then((res) => res.json())
         .then((res) => {
-          res.results.sort(function (a, b) {
+          res.results.sort(function (a: any, b: any) {
             const indexA = a.title.toLowerCase().indexOf(query.toLowerCase());
             const indexB = b.title.toLowerCase().indexOf(query.toLowerCase());
             return indexB < indexA;

@@ -1,7 +1,7 @@
 ---
 title: fopen
 description: Open a file (to read from or write to).
-tags: []
+tags: ["file management"]
 ---
 
 <LowercaseNote />
@@ -129,7 +129,6 @@ If you use io_read and the file doesn't exist, it will return a NULL reference. 
 
 ## Related Functions
 
-- [fopen](fopen): Open a file.
 - [fclose](fclose): Close a file.
 - [ftemp](ftemp): Create a temporary file stream.
 - [fremove](fremove): Remove a file.
