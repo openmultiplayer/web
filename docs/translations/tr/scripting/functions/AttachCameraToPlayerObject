@@ -14,7 +14,7 @@ Oyuncu, objeye bağlıyken kamerasını hareket ettirebilir. MovePlayerObject ve
 | Parametre      | Açıklama                                                                       |
 | -------------- | ------------------------------------------------------------------------------ |
 | playerid       | Kamerası bağlanılacak oyuncunun ID'si.                                         |
-| playerobjectid | Bağlanılacak olan objenin oyuncusunun ID'si.                                   |
+| playerobjectid | Bağlanılacak olan objenin ID'si                                                |
 
 ## Çalışınca Vereceği Sonuçlar
 
