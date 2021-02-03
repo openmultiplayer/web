@@ -1,38 +1,38 @@
 ---
 título: OnActorStreamOut
-descripción: This callback is called when an actor is streamed out by a player's client.
+descripción: Este callback se llama cuando un actor se deja de transmitir por el cliente de un jugador.
 tags: []
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
 
-## Description
+## Descripción
 
-This callback is called when an actor is streamed out by a player's client.
+Este callback se llama cuando un actor se deja de transmitir por el cliente de un jugador.
 
-| Name        | Description                                                    |
+| Nombre      | Descripción                                                    |
 | ----------- | -------------------------------------------------------------- |
-| actorid     | The ID of the actor that has been streamed out for the player. |
-| forplayerid | The ID of the player that streamed the actor out.              |
+| actorid     | El id del actor que dejó de ser transmitido por el jugador.    |
+| forplayerid | El id del jugador que dejó de transmitir al actor.             |
 
 ## Returns
 
-It is always called first in filterscripts.
+Siempre se llama primero en filterscripts.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnActorStreamOut(actorid, forplayerid)
 {
     new string[40];
-    format(string, sizeof(string), "Actor %d is now streamed out for you.", actorid);
+    format(string, sizeof(string), "El actor %d dejó de ser transmitido a tu jugador.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
 ```
 
-## Notes
+## Notas
 
 <TipNPCCallbacks />
 
-## Related Functions
+## Funciones Relacionadas
