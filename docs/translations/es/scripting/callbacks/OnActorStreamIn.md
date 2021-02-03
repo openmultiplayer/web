@@ -1,12 +1,12 @@
 ---
-title: OnActorStreamIn
-description: Este callback se llama cuando un actor es transmitido por el cliente de un jugador.
+título: OnActorStreamIn
+descripción: Este callback se llama cuando un actor es transmitido por el cliente de un jugador.
 tags: []
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
 
-## Description
+## Descripción
 
 Este callback se llama cuando un actor es transmitido por el cliente de un jugador.
 
@@ -19,7 +19,7 @@ Este callback se llama cuando un actor es transmitido por el cliente de un jugad
 
 Siempre se llama primero en los filterscripts.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnActorStreamIn(actorid, forplayerid)
@@ -31,8 +31,8 @@ public OnActorStreamIn(actorid, forplayerid)
 }
 ```
 
-## Notes
+## Notas
 
 <TipNPCCallbacks />
 
-## Related Functions
+## Funciones Relacionadas
