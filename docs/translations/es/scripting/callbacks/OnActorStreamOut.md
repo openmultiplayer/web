@@ -1,6 +1,6 @@
 ---
-title: OnActorStreamOut
-description: This callback is called when an actor is streamed out by a player's client.
+título: OnActorStreamOut
+descripción: This callback is called when an actor is streamed out by a player's client.
 tags: []
 ---
 
