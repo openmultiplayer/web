@@ -25,136 +25,136 @@ Siempre se llama primero en filterscripts, devolviendo 1 acá va a bloquear a ot
 ## Ejemplos
 
 ```c
-// Define the dialog ID so we can handle responses
+// Definimos el ID del diálogo para poder controlar las respuestas
 #define DIALOG_RULES 1
 
-// In some command
-ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Server Rules", "- No Cheating\n- No Spamming\n- Respect Admins\n\nDo you agree to these rules?", "Yes", "No");
+// En algún comando
+ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Reglas del servidor", "- No Cheating\n- No Spamming\n- Respect Admins\n\nAceptas las reglas?", "Sí", "No");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == DIALOG_RULES)
     {
-        if (response) // If they clicked 'Yes' or pressed enter
+        if (response) // Si clickeó en "Sí" o apretó enter
         {
-            SendClientMessage(playerid, COLOR_GREEN, "Thank you for agreeing to the server rules!");
+            SendClientMessage(playerid, COLOR_GREEN, "Gracias por aceptar las reglas del servidor!");
         }
-        else // Pressed ESC or clicked cancel
+        else // Si apretó la tecla ESC o clickeó en "No".
         {
             Kick(playerid);
         }
-        return 1; // We handled a dialog, so return 1. Just like OnPlayerCommandText.
+        return 1; // Manejamos un diálogo, así que hay que devolver 1. Como en OnPlayerCommandText.
     }
 
-    return 0; // You MUST return 0 here! Just like OnPlayerCommandText.
+    return 0; // TENÉS que devolver 0 acá! Como en OnPlayerCommandText.
 }
 #define DIALOG_LOGIN 2
 
-// In some command
-ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Please enter your password:", "Login", "Cancel");
+// En algún comando
+ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Ingresá tu contraseña:", "Login", "Cancelar");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == DIALOG_LOGIN)
     {
-        if (!response) // If they clicked 'Cancel' or pressed esc
+        if (!response) // Si clickeó 'Cancelar' o apretó la tecla ESC
         {
             Kick(playerid);
         }
-        else // Pressed ENTER or clicked 'Login' button
+        else // Si apretó enter o clickeó en el botón 'Login'
         {
             if (CheckPassword(playerid, inputtext))
             {
-                SendClientMessage(playerid, COLOR_RED, "You are now logged in!");
+                SendClientMessage(playerid, COLOR_RED, "Ahora estás logeado!");
             }
             else
             {
-                SendClientMessage(playerid, COLOR_RED, "LOGIN FAILED.");
+                SendClientMessage(playerid, COLOR_RED, "Contraseña incorrecta.");
 
-                // Re-show the login dialog
-                ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Please enter your password:", "Login", "Cancel");
+                // Mostrando de nuevo el diálogo de login
+                ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Ingresá tu contraseña:", "Login", "Cancelar");
             }
         }
-        return 1; // We handled a dialog, so return 1. Just like OnPlayerCommandText.
+        return 1; // Manejamos un diálogo, así que hay que devolver 1. Como en OnPlayerCommandText.
     }
 
-    return 0; // You MUST return 0 here! Just like OnPlayerCommandText.
+    return 0; // TENÉS que devolver 0 acá! Como en OnPlayerCommandText.
 }
 #define DIALOG_WEAPONS 3
 
-// In some command
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons", "Desert Eagle\nAK-47\nCombat Shotgun", "Select", "Close");
+// En algún comando
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Armas", "Desert Eagle\nAK-47\nCombat Shotgun", "Seleccionar", "Cerrar");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == DIALOG_WEAPONS)
     {
-        if (response) // If they clicked 'Select' or double-clicked a weapon
+        if (response) // Si clickeó en 'Seleccionar' o apretó enter.
         {
-            // Give them the weapon
+            // Dándole el arma al jugador
             switch(listitem)
             {
-                case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Give them a desert eagle
-                case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Give them an AK-47
-                case 2: GivePlayerWeapon(playerid, WEAPON_SHOTGSPA, 28); // Give them a Combat Shotgun
+                case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Dándole una Desert Eagle
+                case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Dándole una AK-47
+                case 2: GivePlayerWeapon(playerid, WEAPON_SHOTGSPA, 28); // Dándole una Combat Shotgun
             }
         }
-        return 1; // We handled a dialog, so return 1. Just like OnPlayerCommandText.
+        return 1; // Manejamos un diálogo, así que hay que devolver 1. Como en OnPlayerCommandText.
     }
 
-    return 0; // You MUST return 0 here! Just like OnPlayerCommandText.
+    return 0; // TENÉS que devolver 0 acá! Como en OnPlayerCommandText.
 }
 #define DIALOG_WEAPONS 3
 
-// In some command
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
-"Weapon\tAmmo\tPrice\n\
+// En algún comando
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Armas",
+"Arma\tMunición\tPrecio\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\
 AK-47\t120\t400",
-"Select", "Close");
+"Seleccionar", "Cerrar");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == DIALOG_WEAPONS)
     {
-        if (response) // If they clicked 'Select' or double-clicked a weapon
+        if (response) // Si clickeó en seleccionar o hizo doble click en algún arma
         {
-            // Give them the weapon
+            // Dándole el arma al jugador
             switch(listitem)
             {
-                case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Give them an M4
-                case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Give them an MP5
-                case 2: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Give them an AK-47
+                case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Dándole una M4
+                case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Dándole una MP5
+                case 2: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Dándole una AK-47
             }
         }
-        return 1; // We handled a dialog, so return 1. Just like OnPlayerCommandText.
+        return 1; // Manejamos un diálogo, así que hay que devolver 1. Como en OnPlayerCommandText.
     }
 
-    return 0; // You MUST return 0 here! Just like OnPlayerCommandText.
+    return 0; // TENÉS que devolver 0 acá! Como en OnPlayerCommandText.
 }
 ```
 
-## Notes
+## Notas
 
 :::tip
 
-Parameters can contain different values, based on dialog's style ([click for more examples](../resources/dialogstyles)).
+Los parámetros pueden contener diferentes valores, según el estilo del diálogo ([click para más ejemplos](../resources/dialogstyles)).
 
 :::
 
 :::tip
 
-It is appropriate to switch through different dialogids, if you have many.
+Es apropiado usar la sentencia 'switch' para ir cambiando entre los diferentes ID's de diálogos, si tenés muchos.
 
 :::
 
 :::warning
 
-A player's dialog doesn't hide when the gamemode restarts, causing the server to print "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID" if a player responded to this dialog after restart.
+El diálogo de un jugador no se oculta cuando el gamemode se reinicia, causando que el server imprima en la consola "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID" en caso de que algún jugador responda a este después del reinicio.
 
 :::
 
-## Related Functions
+## Funciones Relacionadas
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog): Show a dialog to a player.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Mostrar un diálogo a un jugador.
