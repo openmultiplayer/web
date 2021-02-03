@@ -12,8 +12,8 @@ Este callback se llama cuando un actor se deja de transmitir por el cliente de u
 
 | Nombre      | Descripción                                                    |
 | ----------- | -------------------------------------------------------------- |
-| actorid     | El id del actor que dejó de ser transmitido por el jugador.    |
-| forplayerid | El id del jugador que dejó de transmitir al actor.             |
+| actorid     | El ID del actor que dejó de ser transmitido por el jugador.    |
+| forplayerid | El ID del jugador que dejó de transmitir al actor.             |
 
 ## Returns
 
