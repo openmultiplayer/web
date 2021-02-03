@@ -1,28 +1,28 @@
 ---
-title: OnDialogResponse
-description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).
+título: OnDialogResponse
+descripción: Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog ya sea clickeando un botón, presionando ENTER/ESC o haciendo doble click en un elemento de lista (si el diálogo utiliza el estilo DIALOG_STYLE_LIST).
 tags: []
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
 
-## Description
+## Descripción
 
-This callback is called when a player responds to a dialog shown using ShowPlayerDialog by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).
+Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog ya sea clickeando un botón, presionando ENTER/ESC o haciendo doble click en un elemento de lista (si el diálogo utiliza el estilo DIALOG_STYLE_LIST).
 
-| Name        | Description                                                                                                             |
+| Nombre      | Descripción                                                                                                             |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| playerid    | The ID of the player that responded to the dialog.                                                                      |
-| dialogid    | The ID of the dialog the player responded to, assigned in ShowPlayerDialog.                                             |
-| response    | 1 for left button and 0 for right button (if only one button shown, always 1)                                           |
-| listitem    | The ID of the list item selected by the player (starts at 0) (only if using a list style dialog, otherwise will be -1). |
-| inputtext[] | The text entered into the input box by the player or the selected list item text.                                       |
+| playerid    | El ID del jugador que respondió el diálogo.                                                                             |
+| dialogid    | El ID del diálogo al que respondió el jugador, asignado en ShowPlayerDialog.                                            |
+| response    | 1 para botón izquierdo y 0 para botón derecho (si sólo hay un botón, siempre 1).                                        |
+| listitem    | El ID del elemento de lista que seleccionó el jugador (empieza de 0) (si no se está usando DIALOG_STYLE_LIST, será -1)  |
+| inputtext[] | El texto ingresado en la caja de entrada por el jugador o el texto del elemento de lista seleccionado.                  |
 
-## Returns
+## Devoluciones
 
-It is always called first in filterscripts so returning 1 there blocks other filterscripts from seeing it.
+Siempre se llama primero en filterscripts, devolviendo 1 acá va a bloquear a otros filterscripts de verlo.
 
-## Examples
+## Ejemplos
 
 ```c
 // Define the dialog ID so we can handle responses

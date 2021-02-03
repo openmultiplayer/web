@@ -1,34 +1,34 @@
 ---
-title: OnClientMessage
-description: This callback gets called whenever the NPC sees a ClientMessage.
-tags: []
+título: OnClientMessage
+descripción: Este callback se llama cuando el NPC ve un ClientMessage.
+tags: [NPC, ClientMessage, SendClientMessageToAll, ]
 ---
 
 <VersionWarn name='NPC callback' version='SA-MP 0.3a' />
 
-## Description
+## Descripción
 
-This callback gets called whenever the NPC sees a ClientMessage. This will be everytime a SendClientMessageToAll function is used and everytime a SendClientMessage function is sent towards the NPC. This callback won't be called when someone says something. For a version of this with player text, see NPC:OnPlayerText.
+Este callback se llama cuando el NPC ve un ClientMessage. Esto va a ser cada vez que la función SendClientMessageToAll sea usada o también cuando la función SendClientMessage sea enviada hacia un NPC. Este callback no va a ser llamado cuando un jugador envíe un mensaje. Para una version de esto con textos de jugadores, vea NPC:OnPlayerText.
 
-| Name   | Description                     |
+| Nombre | Descripción                     |
 | ------ | ------------------------------- |
-| color  | The color the ClientMessage is. |
-| text[] | The actual message.             |
+| color  | El color del mensaje.           |
+| text[] | El texto del mensaje.           |
 
-## Returns
+## Devoluciones
 
-This callback does not handle returns.
+Este callback no controla devoluciones.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Bank Balance: $0") != -1)
+    if (strfind(text,"Balance Bancario: $0") != -1)
     {
-        SendClientMessage(playerid, -1, "I am poor :(");
+        SendClientMessage(playerid, -1, "Soy pobre :(");
     }
 }
 ```
 
-## Related Functions
+## Funciones Relacionadas

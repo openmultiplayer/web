@@ -15,7 +15,7 @@ Este callback se llama cuando un actor se deja de transmitir por el cliente de u
 | actorid     | El ID del actor que dejó de ser transmitido por el jugador.    |
 | forplayerid | El ID del jugador que dejó de transmitir al actor.             |
 
-## Returns
+## Devoluciones
 
 Siempre se llama primero en filterscripts.
 

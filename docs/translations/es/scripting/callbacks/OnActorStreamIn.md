@@ -15,7 +15,7 @@ Este callback se llama cuando un actor es transmitido por el cliente de un jugad
 | actorid     | El ID del actor que está siendo transmitido por el jugador.   |
 | forplayerid | El ID del jugador que está transmitiendo al actor.            |
 
-## Returns
+## Devoluciones
 
 Siempre se llama primero en los filterscripts.
 

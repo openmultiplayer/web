@@ -1,25 +1,25 @@
 ---
-title: OnClientCheckResponse
-description: This callback is called when a SendClientCheck request completes
+título: OnClientCheckResponse
+descripción: Este callback se llama cuando una función SendClientCheck es completada.
 tags: []
 ---
 
-## Description
+## Descripción
 
-This callback is called when a SendClientCheck request completes.
+Este callback se llama cuando una función SendClientCheck es completada.
 
-| Name          | Description                       |
+| Nombre        | Descripción                       |
 | ------------- | --------------------------------- |
-| playerid      | The ID of the player checked.     |
-| actionid      | The type of check performed.      |
-| memaddr       | The address requested.            |
-| retndata      | The result of the check.          |
+| playerid      | El ID del jugador verificado.     |
+| actionid      | El tipo de chequeo realizado.     |
+| memaddr       | La dirección requerida.           |
+| retndata      | El resultado del chequeo.         |
 
-## Returns
+## Devoluciones
 
-It is always called first in filterscripts.
+Siempre se llama primero en los filterscripts.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnPlayerConnect(playerid)
@@ -32,21 +32,21 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
     if(actionid == 0x48) // or 72
     {
-        print("WARNING: The player doesn't seem to be using a regular computer!");
+        print("ADVERTENCIA: El jugador no parece estar usando una computadora normal!");
         Kick(playerid);
     }
     return 1;
 }
 ```
 
-## Notes
+## Notas
 
 :::warning
 
-This callback is only called when it is in a filterscript.
+Este callback sólo se llama cuando está en un filterscript.
 
 :::
 
 ## Related Functions
 
-- [SendClientCheck](../functions/SendClientCheck): Perform a memory check on the client.
+- [SendClientCheck](../functions/SendClientCheck): Realiza un chequeo de memoria en el cliente.
