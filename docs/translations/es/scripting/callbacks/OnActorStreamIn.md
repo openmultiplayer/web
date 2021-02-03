@@ -1,6 +1,6 @@
 ---
 title: OnActorStreamIn
-description: This callback is called when an actor is streamed in by a player's client.
+description: Este callback se llama cuando un actor es transmitido por el cliente de un jugador.
 tags: []
 ---
 
@@ -8,16 +8,16 @@ tags: []
 
 ## Description
 
-This callback is called when an actor is streamed in by a player's client.
+Este callback se llama cuando un actor es transmitido por el cliente de un jugador.
 
 | Name        | Description                                                   |
 | ----------- | ------------------------------------------------------------- |
-| actorid     | The ID of the actor that has been streamed in for the player. |
-| forplayerid | The ID of the player that streamed the actor in.              |
+| actorid     | El ID del actor que está siendo transmitido por el jugador.   |
+| forplayerid | El ID del jugador que está transmitiendo al actor.            |
 
 ## Returns
 
-It is always called first in filterscripts.
+Siempre se llama primero en los filterscripts.
 
 ## Examples
 
@@ -25,7 +25,7 @@ It is always called first in filterscripts.
 public OnActorStreamIn(actorid, forplayerid)
 {
     new string[40];
-    format(string, sizeof(string), "Actor %d is now streamed in for you.", actorid);
+    format(string, sizeof(string), "El actor %d está siendo transmitido a tu jugador.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
