@@ -12,13 +12,13 @@ Este callback se llama cuando una dirección IP intenta establecer una conexión
 
 | Nombre       | Descripción                                        |
 | ------------ | -------------------------------------------------- |
-| playerid     | El ID del jugador que está intentando conectarse   |
-| ip_address[] | La IP del jugador que está intentando conectarse   |
-| port         | El puerto de la conexión intentada                 |
+| playerid     | El ID del jugador que está intentando conectarse.  |
+| ip_address[] | La IP del jugador que está intentando conectarse.  |
+| port         | El puerto de la conexión intentada.                |
 
 ## Devoluciones
 
-1 - Prevenirá a otros filterscripts de recibir este callback.
+1 - Prevendrá a otros filterscripts de recibir este callback.
 
 0 - Indica que este callback será pasado al siguiente filterscript.
 

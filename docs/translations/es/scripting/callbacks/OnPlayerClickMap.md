@@ -12,10 +12,10 @@ OnPlayerClickMap se llama cuando un jugador pone un objetivo/marca en el mapa de
 
 | Nombre   | Descripción                                                                   |
 | -------- | ----------------------------------------------------------------------------- |
-| playerid | El ID del jugador que puso un objetivo/marcador en el mapa                    |
-| Float:fX | La coordenada X donde el jugador clickeó                                      |
-| Float:fY | La coordenada Y donde el jugador clickeó                                      |
-| Float:fZ | La coordenada Z donde el jugador clickeó (impreciso - ver nota abajo)         |
+| playerid | El ID del jugador que puso un objetivo/marcador en el mapa.                   |
+| Float:fX | La coordenada X donde el jugador clickeó.                                     |
+| Float:fY | La coordenada Y donde el jugador clickeó.                                     |
+| Float:fZ | La coordenada Z donde el jugador clickeó (impreciso - ver nota abajo).        |
 
 ## Devoluciones
 

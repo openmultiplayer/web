@@ -10,14 +10,14 @@ tags: []
 
 Este callback se llama cuando un actor es transmitido por el cliente de un jugador.
 
-| Nombre      | Descripción                                                 |
+| Nombre      | Descripción                                                   |
 | ----------- | ------------------------------------------------------------- |
 | actorid     | El ID del actor que está siendo transmitido por el jugador.   |
 | forplayerid | El ID del jugador que está transmitiendo al actor.            |
 
 ## Devoluciones
 
-Siempre se llama primero en los filterscripts.
+Siempre se llama primero en filterscripts.
 
 ## Ejemplos
 

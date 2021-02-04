@@ -17,7 +17,7 @@ Este callback se llama cuando una función SendClientCheck es completada.
 
 ## Devoluciones
 
-Siempre se llama primero en los filterscripts.
+Siempre se llama primero en filterscripts.
 
 ## Ejemplos
 
@@ -47,6 +47,6 @@ Este callback sólo se llama cuando está en un filterscript.
 
 :::
 
-## Related Functions
+## Funciones Relacionadas
 
 - [SendClientCheck](../functions/SendClientCheck): Realiza un chequeo de memoria en el cliente.

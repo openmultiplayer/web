@@ -10,7 +10,7 @@ Este callback se llama cuando un objeto es movido después de usar MoveObject (c
 
 | Nombre   | Descripción                         |
 | -------- | ----------------------------------- |
-| objectid | El ID del objeto que fue movido     |
+| objectid | El ID del objeto que fue movido.    |
 
 ## Devoluciones
 
