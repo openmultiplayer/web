@@ -1,31 +1,31 @@
 ---
-title: OnPlayerClickMap
-description: OnPlayerClickMap is called when a player places a target/waypoint on the pause menu map (by right-clicking).
-tags: ["player"]
+título: OnPlayerClickMap
+descripción: OnPlayerClickMap se llama cuando un jugador pone un objetivo/marca en el mapa del menú de pausa (usando click derecho).
+tags: ["jugador"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3d' />
 
-## Description
+## Descripción
 
-OnPlayerClickMap is called when a player places a target/waypoint on the pause menu map (by right-clicking).
+OnPlayerClickMap se llama cuando un jugador pone un objetivo/marca en el mapa del menú de pausa (usando click derecho).
 
-| Name     | Description                                                                   |
+| Nombre   | Descripción                                                                   |
 | -------- | ----------------------------------------------------------------------------- |
-| playerid | The ID of the player that placed a target/waypoint                            |
-| Float:fX | The X float coordinate where the player clicked                               |
-| Float:fY | The Y float coordinate where the player clicked                               |
-| Float:fZ | The Z float coordinate where the player clicked (inaccurate - see note below) |
+| playerid | El ID del jugador que puso un objetivo/marcador en el mapa                    |
+| Float:fX | La coordenada X donde el jugador clickeó                                      |
+| Float:fY | La coordenada Y donde el jugador clickeó                                      |
+| Float:fZ | La coordenada Z donde el jugador clickeó (impreciso - ver nota abajo)         |
 
-## Returns
+## Devoluciones
 
-1 - Will prevent other filterscripts from receiving this callback.
+1 - Prevendrá a otros filterscripts de recibir este callback.
 
-0 - Indicates that this callback will be passed to the next filterscript.
+0 - Indica que este callback será pasado al siguiente filterscript.
 
-It is always called first in gamemode.
+Siempre se llama primero en filterscripts.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
@@ -35,12 +35,12 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 }
 ```
 
-## Notes
+## Notas
 
 :::tip
 
-As the callback name says, its only called when the player click to mark the target and not when pressed the key. The Z value returned will be 0 (invalid) if the clicked area on the map is far away from the player; use the MapAndreas or ColAndreas plugin to get a more accurate Z coordinate.
+Como dice el nombre del callback, sólo se llama cuando el jugador hace click para marcar el punto y no cuando presiona la tecla. El valor Z devuelto será 0 (inválido) si el área clickeada en el mapa está muy lejos del jugador; usá los plugins MapAndreas o ColAndreas para recibir una coordenada Z más precisa.
 
 :::
 
-## Related Functions
+## Funciones Relacionadas

@@ -1,49 +1,49 @@
 ---
-title: OnPlayerClickPlayer
-description: Called when a player double-clicks on a player on the scoreboard.
+título: OnPlayerClickPlayer
+descripción: Se llama cuando un jugador hace doble click a un jugador en el scoreboard (menú TAB).
 tags: ["player"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
 
-## Description
+## Descripción
 
-Called when a player double-clicks on a player on the scoreboard.
+Se llama cuando un jugador hace doble click a un jugador en el scoreboard (menú TAB).
 
-| Name            | Description                                                      |
+| Nombre          | Descripción                                                      |
 | --------------- | ---------------------------------------------------------------- |
-| playerid        | The ID of the player that clicked on a player on the scoreboard. |
-| clickedplayerid | The ID of the player that was clicked on.                        |
-| source          | The source of the player's click.                                |
+| playerid        | El ID del jugador que clickeó a otro jugador en el scoreboard.   |
+| clickedplayerid | El ID del jugador que fue clickeado en el scoreboard.            |
+| source          | El origen del click del jugador (ver notas abajo).               |
 
-## Returns
+## Devoluciones
 
-1 - Will prevent other filterscripts from receiving this callback.
+1 - Prevendrá a otros filterscripts de recibir este callback.
 
-0 - Indicates that this callback will be passed to the next filterscript.
+0 - Indica que este callback será pasado al siguiente filterscript.
 
-It is always called first in filterscripts.
+Siempre se llama primero en filterscripts.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 {
     new message[32];
-    format(message, sizeof(message), "You clicked on player %d", clickedplayerid);
+    format(message, sizeof(message), "Clickeaste en el jugador %d", clickedplayerid);
     SendClientMessage(playerid, 0xFFFFFFFF, message);
     return 1;
 }
 ```
 
-## Notes
+## Notas
 
 :::tip
 
-There is currently only one 'source' (0 - CLICK_SOURCE_SCOREBOARD). The existence of this argument suggests that more sources may be supported in the future.
+Actualmente hay un solo origen/source (0 - CLICK_SOURCE_SCOREBOARD). La existencia de este argumento sugiere que más origenes pueden ser soportados en el futuro.
 
 :::
 
-## Related Functions
+## Funciones Relacionadas
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Se llama cuando un jugador clickea en un textdraw.

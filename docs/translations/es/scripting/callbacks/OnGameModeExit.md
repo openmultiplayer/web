@@ -1,31 +1,31 @@
 ---
-title: OnGameModeExit
-description: This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.
+título: OnGameModeExit
+descripción: Este callback es llamado cuando un gamemode termina, ya sea mediante 'gmx', cuando el servidor se apaga, o cuando se usa GameModeExit.
 tags: []
 ---
 
-## Description
+## Descripción
 
-This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.
+Este callback es llamado cuando un gamemode termina, ya sea mediante 'gmx', cuando el servidor se apaga, o cuando se usa GameModeExit.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnGameModeExit()
 {
-    print("Gamemode ended.");
+    print("Gamemode terminado.");
     return 1;
 }
 ```
 
-## Notes
+## Notas
 
 :::tip
 
-This function can also be used in a filterscript to detect if the gamemode changes with RCON commands like changemode or gmx, as changing the gamemode does not reload a filterscript. When using OnGameModeExit in conjunction with the 'rcon gmx' console command keep in mind there is a potential for client bugs to occur an example of this is excessive RemoveBuildingForPlayer calls during OnGameModeInit which could result in a client crash. This callback will NOT be called if the server crashes or the process is killed by other means, such as using the Linux kill command or pressing the close-button on the Windows console.
+Esta función también puede ser usada en un filterscript para detectar si el gamemode cambia, con comandos RCON como 'changemode' o 'gmx', ya que cambiando el gamemode no recarga un filterscript. Cuando usamos OnGameModeExit en conjunto con el comando de consola 'rcon gmx' tener en cuenta que hay una potencial posibilidad de que ocurran bugs en el cliente. Un ejemplo de esto son las excesivas llamadas a RemoveBuildingForPlayer durante OnGameModeInit, lo que podría causar un crash en el cliente. Este callback NO será llamado si el servidor crashea o el proceso es finalizado por otros medios, como usando el comando de Linux 'kill' o presionando el botón cerrar en la consola de Windows.
 
 :::
 
-## Related Functions
+## Funciones Relacionadas
 
-- [GameModeExit](../functions/GameModeExit): Exit the current gamemode.
+- [GameModeExit](../functions/GameModeExit): Salir del gamemode actual.

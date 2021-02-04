@@ -1,24 +1,24 @@
 ---
-title: OnFilterScriptExit
-description: This callback is called when a filterscript is unloaded. It is only called inside the filterscript which is unloaded.
+título: OnFilterScriptExit
+descripción: Este callback se llama cuando termina la ejecución de un filterscript. Sólo se llama adentro del mismo filterscript.
 
 tags: []
 ---
 
-## Description
+## Descripción
 
-Ang callback na ito ay natatawag kapag ang filterscript ay in-unload sa server.
+Este callback se llama cuando termina la ejecución de un filterscript. Sólo se llama adentro del mismo filterscript.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnFilterScriptExit()
 {
     print("\n--------------------------------------");
-    print(" My filterscript unloaded");
+    print(" Mi filterscript dejó de ejecutarse");
     print("--------------------------------------\n");
     return 1;
 }
 ```
 
-## Mga Kaugnay na Functions
+## Funciones Relacionadas

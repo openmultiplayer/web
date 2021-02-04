@@ -1,47 +1,47 @@
 ---
-title: OnEnterExitModShop
-description: This callback is called when a player enters or exits a mod shop.
+titulo: OnEnterExitModShop
+descripción: Este callback se llama cuando un jugador entra o sale de un taller de modificación.
 tags: []
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
 
-## Description
+## Descripción
 
-This callback is called when a player enters or exits a mod shop.
+Este callback se llama cuando un jugador entra o sale de un taller de modificación.
 
-| Name       | Description                                                                  |
+| Nombre     | Descripción                                                                  |
 | ---------- | ---------------------------------------------------------------------------- |
-| playerid   | The ID of the player that entered or exited the modshop                      |
-| enterexit  | 1 if the player entered or 0 if they exited                                  |
-| interiorid | The interior ID of the modshop that the player is entering (or 0 if exiting) |
+| playerid   | El ID del jugador que entró o salió del taller de modificación               |
+| enterexit  | 1 si el jugador entró o 0 si salió                                           |
+| interiorid | El ID del interior del taller al que el jugador entró (0 si salió)           |
 
-## Returns
+## Devoluciones
 
-It is always called first in filterscripts.
+Siempre se llama primero en filterscripts.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnEnterExitModShop(playerid, enterexit, interiorid)
 {
-    if (enterexit == 0) // If enterexit is 0, this means they are exiting
+    if (enterexit == 0) // Si enterexit es 0, esto quiere decir que está saliendo del taller
     {
-        SendClientMessage(playerid, COLOR_WHITE, "Nice car! You have been taxed $100.");
+        SendClientMessage(playerid, COLOR_WHITE, "Buen auto! Pagás $100.");
         GivePlayerMoney(playerid, -100);
     }
     return 1;
 }
 ```
 
-## Notes
+## Notas
 
 :::warning
 
-Known Bug(s): Players collide when they get into the same mod shop.
+Bugs conocidos: Los jugadores colisionan cuando entran al mismo taller de modificación.
 
 :::
 
-## Related Functions
+## Funciones Relacionadas
 
-- [AddVehicleComponent](../functions/AddVehicleComponent): Add a component to a vehicle.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Añadir un componente a un vehículo.

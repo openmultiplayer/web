@@ -1,43 +1,43 @@
 ---
-title: OnObjectMoved
-description: This callback is called when an object is moved after MoveObject (when it stops moving).
+título: OnObjectMoved
+descripción: Este callback se llama cuando un objeto es movido después de usar MoveObject (cuando este termina de moverse).
 tags: []
 ---
 
-## Description
+## Descripción
 
-This callback is called when an object is moved after MoveObject (when it stops moving).
+Este callback se llama cuando un objeto es movido después de usar MoveObject (cuando este termina de moverse).
 
-| Name     | Description                         |
+| Nombre   | Descripción                         |
 | -------- | ----------------------------------- |
-| objectid | The ID of the object that was moved |
+| objectid | El ID del objeto que fue movido     |
 
-## Returns
+## Devoluciones
 
-It is always called first in filterscripts.
+Siempre se llama primero en filterscripts.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnObjectMoved(objectid)
 {
-    printf("Object %d finished moving.", objectid);
+    printf("El objeto %d finalizó su movimiento.", objectid);
     return 1;
 }
 ```
 
-## Notes
+## Notas
 
 :::tip
 
-SetObjectPos does not work when used in this callback. To fix it, recreate the object.
+SetObjectPos no funciona cuando es usado en este callback. Para solucionarlo, vuelva a crear el objeto.
 
 :::
 
-## Related Functions
+## Funciones Relacionadas
 
-- [MoveObject](../functions/MoveObject): Move an object.
-- [MovePlayerObject](../functions/MovePlayerObject): Move a player object.
-- [IsObjectMoving](../functions/IsObjectMoving): Check if the object is moving.
-- [StopObject](../functions/StopObject): Stop an object from moving.
-- [OnPlayerObjectMoved](OnPlayerObjectMoved): Called when a player-object stops moving.
+- [MoveObject](../functions/MoveObject): Mover un objeto.
+- [MovePlayerObject](../functions/MovePlayerObject): Mover un objeto de jugador.
+- [IsObjectMoving](../functions/IsObjectMoving): Chequear si el objeto está moviéndose.
+- [StopObject](../functions/StopObject): Para el movimiento de un objeto.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): Se llama cuando un objeto de jugador deja de moverse.

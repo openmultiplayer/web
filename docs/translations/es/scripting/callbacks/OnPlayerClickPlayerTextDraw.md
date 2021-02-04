@@ -1,25 +1,25 @@
 ---
-title: OnPlayerClickPlayerTextDraw
-description: This callback is called when a player clicks on a player-textdraw.
+título: OnPlayerClickPlayerTextDraw
+descripción: Este callback se llama cuando un jugador clickea en un player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3e' />
 
-## Description
+## Descripción
 
-This callback is called when a player clicks on a player-textdraw. It is not called when player cancels the select mode (ESC) - however, OnPlayerClickTextDraw is.
+Este callback se llama cuando un jugador clickea en un player-textdraw. No se llama cuando el jugador cancela el modo de selección (ESC), sin embargo, OnPlayerClickTextdraw sí. 
 
-| Name         | Description                                             |
+| Nombre       | Descripción                                             |
 | ------------ | ------------------------------------------------------- |
-| playerid     | The ID of the player that selected a textdraw           |
-| playertextid | The ID of the player-textdraw that the player selected. |
+| playerid     | El ID del jugador que seleccionó un textdraw.           |
+| playertextid | El ID del player-textdraw que el jugador seleccionó.    |
 
-## Returns
+## Devoluciones
 
-It is always called first in filterscripts so returning 1 there also blocks other scripts from seeing it.
+Siempre se llama primero en filterscripts, por lo que devolviendo 1 acá también bloquea a otros filterscripts de verlo.
 
-## Examples
+## Ejemplos
 
 ```c
 new PlayerText:gPlayerTextDraw[MAX_PLAYERS];
@@ -58,7 +58,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {
     if (playertextid == gPlayerTextDraw[playerid])
     {
-         SendClientMessage(playerid, 0xFFFFFFAA, "You clicked on a textdraw.");
+         SendClientMessage(playerid, 0xFFFFFFAA, "Clickeaste en un textdraw.");
          CancelSelectTextDraw(playerid);
          return 1;
     }
@@ -66,16 +66,16 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 }
 ```
 
-## Notes
+## Notas
 
 :::warning
 
-When a player presses ESC to cancel selecting a textdraw, OnPlayerClickTextDraw is called with a textdraw ID of 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw won't be called also.
+Cuando un jugador presiona ESC para cancelar la selección de un textdraw, OnPlayerClickTextDraw es llamado con un textdraw ID 'INVALID_TEXT_DRAW'. En estos casos, OnPlayerClickPlayerTextDraw no se llamará.
 
 :::
 
-## Related Functions
+## Funciones Relacionadas
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Sets whether a player-textdraw is selectable through SelectTextDraw
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer): Called when a player click on another.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Establece si un player-textdraw es seleccionable mediante SelectTextDraw.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Se llama cuando un jugador clickea en un textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Se llama cuando un jugador clickea en otro (scoreboard).

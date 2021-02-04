@@ -1,23 +1,23 @@
 ---
-title: OnFilterScriptInit
-description: This callback is called when a filterscript is initialized (loaded).
+título: OnFilterScriptInit
+descripción: Este callback se llama cuando un filterscript es inicializado (cargado).
 tags: []
 ---
 
-## Description
+## Descripción
 
-This callback is called when a filterscript is initialized (loaded). It is only called inside the filterscript which is starting.
+Este callback se llama cuando un filterscript es inicializado (cargado). Solo se llama adentro del filterscript que está siendo iniciado.
 
-## Examples
+## Ejemplos
 
 ```c
 public OnFilterScriptInit()
 {
     print("\n--------------------------------------");
-    print("The filterscript is loaded.");
+    print("El filterscript fue cargado");
     print("--------------------------------------\n");
     return 1;
 }
 ```
 
-## Related Functions
+## Funciones Relacionadas
