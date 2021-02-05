@@ -9,7 +9,11 @@ function isBrowser(): boolean {
 }
 
 function DefaultLoadingFallback(): ReactElement {
-  return <p>Loading...</p>;
+  return (
+    <section className="measure-wide center">
+      <h1 className="tc">Loading...</h1>
+    </section>
+  );
 }
 
 export default function withAuthRedirect<CP = {}, IP = CP>(
