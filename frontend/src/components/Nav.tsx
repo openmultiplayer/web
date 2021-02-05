@@ -27,7 +27,7 @@ const getPathComparator = (exact: boolean) => (a: string, b: string) =>
 const hoverClasses = (leftMargin: boolean) =>
   leftMargin ? ["hover-bg-black-10", "ml-auto-ns"] : ["hover-bg-black-10"];
 
-const selectedClass = (selected: boolean) => selected && "bg-black-10";
+const selectedClass = (selected: boolean) => (selected ? "bg-black-10" : "");
 
 const hydrateNavItemClasses = (current: string) => ([i, v]: [
   string,
@@ -85,7 +85,7 @@ const NavList = ({
     ].join(" ")}
   >
     {buildNav(route)(items)}
-    {/* TODO: Add this back after the dust settles! {auth
+    {auth
       ? navItemToJSX({
           name: "Dashboard",
           path: "/dashboard",
@@ -95,7 +95,7 @@ const NavList = ({
           name: "Login",
           path: "/login",
           extra: selectedClass(route === "/login"),
-        })} */}
+        })}
     <NavListItem className={show ? "db-ns dn" : ""}>
       <LanguageSelect />
     </NavListItem>

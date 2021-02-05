@@ -1,18 +1,13 @@
-import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Error from "next/error";
 import useSWR from "swr";
 
-import { getStaticPropsWithAuth, withAuth } from "src/auth/hoc";
+import { withAuth } from "src/auth/hoc";
 import { UserModel } from "src/types/server";
-import { apiSWR, apiSSP } from "src/fetcher/fetcher";
+import { apiSWR } from "src/fetcher/fetcher";
 import GitHubIcon from "src/components/icons/GitHub";
 import DiscordIcon from "src/components/icons/Discord";
 import { APIError } from "src/types/error";
 import OAuthButton from "src/components/OAuthButton";
-
-type Props = {
-  initialData: any;
-};
 
 const Placeholder: React.FC = (props) =>
   props.children ? (
@@ -32,10 +27,8 @@ const InfoItem = ({ title, value }: { title: string; value?: string }) => (
   </li>
 );
 
-const Page = ({ initialData }: Props) => {
-  const { data, error } = useSWR<UserModel, APIError>("/users/self", apiSWR, {
-    initialData,
-  });
+const Page = () => {
+  const { data, error } = useSWR<UserModel, APIError>("/users/self", apiSWR);
 
   if (error) {
     return <Error statusCode={500} title={error.message} />;
@@ -78,17 +71,5 @@ const Page = ({ initialData }: Props) => {
     </>
   );
 };
-
-export const getServerSideProps = getStaticPropsWithAuth(
-  async (
-    ctx: GetServerSidePropsContext
-  ): Promise<GetServerSidePropsResult<Props>> => {
-    return {
-      props: {
-        initialData: (await apiSSP<UserModel>("/users/self", {}, ctx)).unwrap(),
-      },
-    };
-  }
-);
 
 export default withAuth(Page);
