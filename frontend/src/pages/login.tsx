@@ -1,17 +1,9 @@
 import { withoutAuth } from "src/auth/hoc";
-import { GitHubLink } from "src/types/githubAuth";
-import { apiSSP } from "src/fetcher/fetcher";
 import GitHubIcon from "src/components/icons/GitHub";
 import DiscordIcon from "src/components/icons/Discord";
-import { DiscordLink } from "src/types/discordAuth";
 import OAuthButton from "src/components/OAuthButton";
 
-type Props = {
-  github: string;
-  discord: string;
-};
-
-const Page = ({ github, discord }: Props) => (
+const Page = () => (
   <section className="measure center pa3">
     <h1>Login</h1>
 
@@ -25,34 +17,14 @@ const Page = ({ github, discord }: Props) => (
     <br />
 
     <ul className="list pa0">
-      <OAuthButton
-        bg="black"
-        icon={<GitHubIcon width={24} />}
-        type="github"
-        text="Login With GitHub"
-        initialData={{ url: github }}
-      />
+      <OAuthButton bg="black" icon={<GitHubIcon width={24} />} type="github" />
       <OAuthButton
         bg="#2C2F33"
         icon={<DiscordIcon width={24} fill="white" />}
         type="discord"
-        text="Login With Discord"
-        initialData={{ url: discord }}
       />
     </ul>
   </section>
 );
-
-export const getServerSideProps = async () => {
-  const github = (await apiSSP<GitHubLink>("/auth/github/link")).unwrap();
-  const discord = (await apiSSP<DiscordLink>("/auth/discord/link")).unwrap();
-
-  return {
-    props: {
-      github: github.url,
-      discord: discord.url,
-    },
-  };
-};
 
 export default withoutAuth(Page);
