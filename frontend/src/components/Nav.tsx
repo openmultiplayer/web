@@ -5,7 +5,6 @@ import { useState } from "react";
 
 import LanguageSelect from "./LanguageSelect";
 import Hamburger from "./Hamburger";
-import { useIsAuthenticated } from "src/auth/hooks";
 
 type NavItem = {
   name: string;
@@ -105,7 +104,7 @@ const NavList = ({
 
 const Nav = ({ items, route }: Props) => {
   const [show, setShow] = useState(false);
-  const authenticated = useIsAuthenticated();
+  const authenticated = false; // TODO: Add back auth hook
 
   return (
     <>
