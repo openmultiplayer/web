@@ -8,19 +8,19 @@ import DiscordIcon from "src/components/icons/Discord";
 import { APIError } from "src/types/error";
 import OAuthButton from "src/components/OAuthButton";
 
-const placeholder = (key: string, data: any, error?: APIError): JSX.Element => {
+const placeholder = (idx: string, data: any, error?: APIError): JSX.Element => {
   if (error) return <span>(error)</span>;
   if (!data) return <span>(no data)</span>;
-  return <span>{(data as any)[key]}</span>;
+  return <span>{(data as any)[idx]}</span>;
 };
 
-const InfoItem = ({ title, key }: { title: string; key: string }) => {
+const InfoItem = ({ title, idx }: { title: string; idx: string }) => {
   const { data, error } = useSWR<UserModel, APIError>("/users/self", apiSWR);
   return (
     <li className="pv2 mv2">
       <dl className="pa2 flex justify-between">
         <dt>{title}</dt>
-        <dd>{placeholder(key, data, error)}</dd>
+        <dd>{placeholder(idx, data, error)}</dd>
       </dl>
     </li>
   );
@@ -31,9 +31,9 @@ const Page = () => (
     <section className="measure-wide center ph3">
       <h1>Dashboard</h1>
       <ul className="measure center list pa0">
-        <InfoItem title="Name" key="name" />
-        <InfoItem title="Email" key="email" />
-        <InfoItem title="Authentication Method" key="authMethod" />
+        <InfoItem title="Name" idx="name" />
+        <InfoItem title="Email" idx="email" />
+        <InfoItem title="Authentication Method" idx="authMethod" />
       </ul>
     </section>
     <section className="measure-wide center ph3">
