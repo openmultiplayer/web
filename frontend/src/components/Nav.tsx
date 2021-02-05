@@ -3,6 +3,7 @@ import Link from "next/link";
 import { entries, flow, map } from "lodash/fp";
 import { useState } from "react";
 
+import { useIsAuthenticated } from "src/auth/hooks";
 import LanguageSelect from "./LanguageSelect";
 import Hamburger from "./Hamburger";
 
@@ -104,7 +105,7 @@ const NavList = ({
 
 const Nav = ({ items, route }: Props) => {
   const [show, setShow] = useState(false);
-  const authenticated = false; // TODO: Add back auth hook
+  const authenticated = useIsAuthenticated();
 
   return (
     <>
