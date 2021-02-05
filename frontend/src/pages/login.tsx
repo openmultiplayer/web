@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { withoutAuth } from "src/auth/hoc";
 import { GitHubLink } from "src/types/githubAuth";
 import { apiSSP } from "src/fetcher/fetcher";
