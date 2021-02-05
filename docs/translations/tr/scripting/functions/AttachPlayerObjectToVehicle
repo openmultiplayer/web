@@ -31,7 +31,7 @@ Bu fonksiyon belirli bir değer döndürmez.
 ```c
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if (newstate == PLAYER_STATE_DRIVER) // Oyuncu eğer araca şoför olarak binerse...
+    if (newstate == PLAYER_STATE_DRIVER) // Oyuncu durumu sürücü olarak değişirse.
     {
         new cow_object = CreatePlayerObject(playerid, 16442, 0, 0, 0, 0, 0, 0); // İnek objesini yaratıyoruz.
 
