@@ -25,6 +25,8 @@ const OAuthButton = ({ bg, icon, type }: Props) => {
     } else if (link) {
       text = "Login with GitHub";
       href = link.url;
+    } else {
+      throw new Error(`No OAuth account or link data`);
     }
   } else if (type === "discord") {
     if (!error && data && data.discord) {
@@ -33,6 +35,8 @@ const OAuthButton = ({ bg, icon, type }: Props) => {
     } else if (link) {
       text = "Login with Discord";
       href = link.url;
+    } else {
+      throw new Error(`No OAuth account or link data`);
     }
   } else {
     throw new Error(`Unknown OAuth type: ${type}`);
