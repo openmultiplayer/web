@@ -63,6 +63,9 @@
     "unist-util-visit": "^3.1.0"
   },
   "eslintConfig": {
+    "ignorePatterns": [
+      "**/generated_*.ts"
+    ],
     "env": {
       "browser": true,
       "es2021": true,
