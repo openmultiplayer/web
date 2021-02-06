@@ -37,6 +37,7 @@ type Config struct {
 	GithubClientSecret  string `required:"true" split_words:"true"`
 	DiscordClientID     string `required:"true" split_words:"true"`
 	DiscordClientSecret string `required:"true" split_words:"true"`
+	SendgridAPIKey      string `required:"true" split_words:"true"`
 }
 
 // App stores root application state
@@ -72,7 +73,7 @@ func Initialise(root context.Context) (app *App, err error) {
 	queueEmail := ps.Declare("system.email")
 
 	mailreg.Init("emails") // assume the binary is exected from the repo root
-	mailworker.Init(queueEmail, ps, &mailer.Mock{})
+	mailworker.Init(queueEmail, ps, mailer.NewSendGrid(app.config.SendgridAPIKey))
 	auth := authentication.New(app.prisma, app.config.HashKey, app.config.BlockKey)
 
 	storage := serverdb.NewPrisma(app.prisma)
