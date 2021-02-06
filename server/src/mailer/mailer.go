@@ -25,6 +25,14 @@ type SendGrid struct {
 	client   *sendgrid.Client
 }
 
+func NewSendGrid(key string) *SendGrid {
+	return &SendGrid{
+		"The open.mp Team",
+		"team@open.mp",
+		sendgrid.NewSendClient(key),
+	}
+}
+
 func (m *SendGrid) Mail(toname, toaddr, subj, rich, text string) error {
 	from := mail.NewEmail(m.fromname, m.fromaddr)
 	to := mail.NewEmail(toname, toaddr)
