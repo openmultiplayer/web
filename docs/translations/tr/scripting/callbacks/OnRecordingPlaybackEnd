@@ -1,0 +1,20 @@
+---
+title: OnRecordingPlaybackEnd
+description: Bu fonksiyon, NPCStartRecordingPlayback ile başlatılan NPC kayıt dosyasının sonuna gelindiğinde çağrılır.
+tags: []
+---
+
+<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
+
+## Açıklama
+
+Bu fonksiyon, NPCStartRecordingPlayback ile başlatılan NPC kayıt dosyasının sonuna gelindiğinde çağrılır.
+
+## Örnekler
+
+```c
+public OnRecordingPlaybackEnd()
+{
+    StartRecordingPlayback(PLAYER_RECORDING_TYPE_DRIVER, "all_around_lv_bus"); // Başlatılan kayıt bittiğinde kayıtı yeniden başlatır.
+}
+```
