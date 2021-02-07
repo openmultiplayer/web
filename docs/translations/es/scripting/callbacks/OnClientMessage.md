@@ -4,7 +4,7 @@ descripción: Este callback se llama cuando el NPC ve un ClientMessage.
 tags: [NPC, ClientMessage, SendClientMessageToAll, ]
 ---
 
-<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
+<VersionWarnES name='NPC callback' version='SA-MP 0.3a' />
 
 ## Descripción
 

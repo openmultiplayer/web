@@ -4,7 +4,7 @@ descripción: Este callback se llama cuando un jugador entra o sale de un taller
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnES name='callback' version='SA-MP 0.3a' />
 
 ## Descripción
 

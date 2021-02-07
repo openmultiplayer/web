@@ -15,7 +15,11 @@ Este callback se llama cuando un jugador ingresa un comando dentro de la ventana
 
 ## Devoluciones
 
-Siempre se llama primero en filterscripts por lo que devolviendo 1 acá bloqueará a otros scripts de verlo.
+1 - Prevendrá a otros filterscripts de recibir este callback.
+
+0 - Indica que este callback será pasado al siguiente filterscript.
+
+Siempre se llama primero en filterscripts.
 
 ## Ejemplos
 
@@ -38,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notas
 
-<TipNPCCallbacks />
+<TipNPCCallbacksES />
 
 ## Funciones Relacionadas
 

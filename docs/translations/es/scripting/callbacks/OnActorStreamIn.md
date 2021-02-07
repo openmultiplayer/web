@@ -4,7 +4,7 @@ descripción: Este callback se llama cuando un actor es transmitido por el clien
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnES name='callback' version='SA-MP 0.3.7' />
 
 ## Descripción
 
@@ -33,6 +33,6 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+<TipNPCCallbacksES />
 
 ## Funciones Relacionadas
