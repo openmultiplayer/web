@@ -1,6 +1,6 @@
 ---
 título: OnActorStreamIn
-descripción: Este callback se llama cuando un actor es transmitido por el cliente de un jugador.
+descripción: Este callback se llama cuando un actor es cargado (se hace visible) por el cliente de un jugador.
 tags: []
 ---
 
@@ -8,7 +8,7 @@ tags: []
 
 ## Descripción
 
-Este callback se llama cuando un actor es transmitido por el cliente de un jugador.
+Este callback se llama cuando un actor es cargado (se hace visible) por el cliente de un jugador.
 
 | Nombre      | Descripción                                                   |
 | ----------- | ------------------------------------------------------------- |
