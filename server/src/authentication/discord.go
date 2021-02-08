@@ -62,7 +62,6 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 	if _, ok := p.cache.Get(state); !ok {
 		return nil, ErrStateMismatch
 	}
-	p.cache.Delete(state)
 
 	// Exchange the code for a token, this makes an API call to Discord.
 	token, err := p.oaconf.Exchange(ctx, code)
