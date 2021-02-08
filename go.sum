@@ -40,6 +40,8 @@ github.com/RoaringBitmap/roaring v0.4.23 h1:gpyfd12QohbqhFO4NVDUdoPOCXsyahYRQhIN
 github.com/RoaringBitmap/roaring v0.4.23/go.mod h1:D0gp8kJQgE1A4LQ5wFLggQEyvDi06Mq5mKs52e1TwOo=
 github.com/Southclaws/go-samp-query v1.1.2 h1:2U+vQ43CzAI7EA3LwCEC08yY8bHZpJUGDtn9/4CFxBw=
 github.com/Southclaws/go-samp-query v1.1.2/go.mod h1:veYZpOaPw6PXwvTGo9Rg3INKQV/2PR8Bn8p+bQedFNM=
+github.com/Southclaws/go-samp-query v1.1.3 h1:I+KKF/QW5kx1xbGPzPe60FaNaE6BQa87D+E1epkEtuI=
+github.com/Southclaws/go-samp-query v1.1.3/go.mod h1:veYZpOaPw6PXwvTGo9Rg3INKQV/2PR8Bn8p+bQedFNM=
 github.com/Southclaws/qstring v1.1.0 h1:6Gj//09Tue8+0HtX0IAgVNAau4XZ+6TQOH7koWjdNKI=
 github.com/Southclaws/qstring v1.1.0/go.mod h1:3KvScfejPnEaP1scQndt0CXDTfQKDdUqbRSJxSAPZu4=
 github.com/andybalholm/cascadia v1.1.0 h1:BuuO6sSfQNFRu1LppgbD25Hr2vLYW25JvxHs5zzsLTo=

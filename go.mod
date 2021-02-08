@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	github.com/PuerkitoBio/goquery v1.6.0
-	github.com/Southclaws/go-samp-query v1.1.2
+	github.com/Southclaws/go-samp-query v1.1.3
 	github.com/Southclaws/qstring v1.1.0
 	github.com/blevesearch/bleve v1.0.14
 	github.com/bwmarrin/discordgo v0.22.0
