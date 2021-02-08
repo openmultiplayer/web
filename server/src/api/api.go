@@ -2,6 +2,7 @@ package api
 
 import (
 	"context"
+	"encoding/json"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -19,6 +20,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/serverdb"
 	"github.com/openmultiplayer/web/server/src/serververify"
+	"github.com/openmultiplayer/web/server/src/version"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -61,6 +63,10 @@ func New(
 		oaDiscord,
 	))
 	router.Mount("/users", users.New(ctx, auther, db))
+
+	router.Get("/version", func(w http.ResponseWriter, r *http.Request) {
+		json.NewEncoder(w).Encode(map[string]string{"version": version.Version}) //nolint:errcheck
+	})
 
 	zap.L().Debug("constructed router", zap.Any("router", router))
 
