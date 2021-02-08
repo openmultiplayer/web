@@ -1,10 +1,10 @@
 ---
 título: OnActorStreamOut
-descripción: Este callback se llama cuando un actor se deja de transmitir por el cliente de un jugador.
+descripción: Este callback se llama cuando un actor se deja de cargar (se hace invisible) por el cliente de un jugador.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnES name='callback' version='SA-MP 0.3.7' />
 
 ## Descripción
 
@@ -33,6 +33,6 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+<TipNPCCallbacksES />
 
 ## Funciones Relacionadas
