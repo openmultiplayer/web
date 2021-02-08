@@ -4,7 +4,7 @@ descripción: OnPlayerClickMap se llama cuando un jugador pone un objetivo/marca
 tags: ["jugador"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
+<VersionWarnES name='callback' version='SA-MP 0.3d' />
 
 ## Descripción
 

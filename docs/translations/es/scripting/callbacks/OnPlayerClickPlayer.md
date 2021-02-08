@@ -4,7 +4,7 @@ descripción: Se llama cuando un jugador hace doble click a un jugador en el sco
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnES name='callback' version='SA-MP 0.3a' />
 
 ## Descripción
 

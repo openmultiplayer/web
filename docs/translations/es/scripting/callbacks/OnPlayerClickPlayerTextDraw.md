@@ -4,7 +4,7 @@ descripción: Este callback se llama cuando un jugador clickea en un player-text
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
+<VersionWarnES name='callback' version='SA-MP 0.3e' />
 
 ## Descripción
 
@@ -17,7 +17,11 @@ Este callback se llama cuando un jugador clickea en un player-textdraw. No se ll
 
 ## Devoluciones
 
-Siempre se llama primero en filterscripts, por lo que devolviendo 1 acá también bloquea a otros filterscripts de verlo.
+1 - Prevendrá a otros filterscripts de recibir este callback.
+
+0 - Indica que este callback será pasado al siguiente filterscript.
+
+Siempre se llama primero en filterscripts.
 
 ## Ejemplos
 
