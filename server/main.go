@@ -11,6 +11,7 @@ import (
 	"go.uber.org/zap/zapcore"
 
 	"github.com/openmultiplayer/web/server/src/app"
+	"github.com/openmultiplayer/web/server/src/version"
 )
 
 func main() {
@@ -31,7 +32,7 @@ func init() {
 	godotenv.Load()
 
 	prod, err := strconv.ParseBool(os.Getenv("PRODUCTION"))
-	if _, ok := err.(*strconv.NumError); !ok {
+	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
@@ -39,6 +40,7 @@ func init() {
 	var config zap.Config
 	if prod {
 		config = zap.NewProductionConfig()
+		config.InitialFields = map[string]interface{}{"v": version.Version}
 	} else {
 		config = zap.NewDevelopmentConfig()
 	}
