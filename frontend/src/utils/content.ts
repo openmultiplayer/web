@@ -105,8 +105,11 @@ export const readMdFromAPI = async (
   return undefined;
 };
 
+// Fetches content directly from GitHub's raw content CDN.
 const rawAPI = async (path: string): Promise<string | undefined> => {
-  const response = await fetch("https://api.open.mp/docs/" + path);
+  const response = await fetch(
+    "https://raw.githubusercontent.com/openmultiplayer/web/master/docs/" + path
+  );
   if (response.status === 200) {
     return await response.text();
   }
