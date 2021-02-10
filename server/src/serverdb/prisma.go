@@ -21,11 +21,11 @@ func NewPrisma(client *db.PrismaClient) *PrismaStorer {
 
 func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 	if !e.Active {
-		s.client.Server.
+		_, err := s.client.Server.
 			FindOne(db.Server.IP.Equals(e.IP)).
 			Update(db.Server.Active.Set(false)).
 			Exec(ctx)
-		return nil
+		return err
 	}
 
 	var svr db.ServerModel

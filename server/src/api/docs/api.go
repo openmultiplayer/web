@@ -50,5 +50,6 @@ func (s *service) search(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	//nolint:errcheck
 	json.NewEncoder(w).Encode(results)
 }
