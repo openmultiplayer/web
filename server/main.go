@@ -32,7 +32,7 @@ func init() {
 	godotenv.Load()
 
 	prod, err := strconv.ParseBool(os.Getenv("PRODUCTION"))
-	if err != nil {
+	if _, ok := err.(*strconv.NumError); err != nil && !ok {
 		fmt.Println(err)
 		os.Exit(1)
 	}
