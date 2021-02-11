@@ -24,6 +24,7 @@ var _ OAuthProvider = &DiscordProvider{}
 
 type DiscordProvider struct {
 	db     *db.PrismaClient
+	mw     *mailworker.Worker
 	cache  *cache.Cache
 	oaconf *oauth2.Config
 }
@@ -33,9 +34,10 @@ var endpoint = oauth2.Endpoint{
 	TokenURL: "https://discord.com/api/oauth2/token",
 }
 
-func NewDiscordProvider(db *db.PrismaClient, clientID, clientSecret string) *DiscordProvider {
+func NewDiscordProvider(db *db.PrismaClient, mw *mailworker.Worker, clientID, clientSecret string) *DiscordProvider {
 	return &DiscordProvider{
 		db:    db,
+		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
 			ClientID:     clientID,
@@ -149,7 +151,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 		return nil, errors.Wrap(err, "failed to create user Discord relationship")
 	}
 
-	if err := mailworker.Enqueue(
+	if err := p.mw.Enqueue(
 		dcuser.Username,
 		dcuser.Email,
 		"Welcome to open.mp!",

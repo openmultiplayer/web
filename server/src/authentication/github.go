@@ -26,13 +26,15 @@ var (
 
 type GitHubProvider struct {
 	db     *db.PrismaClient
+	mw     *mailworker.Worker
 	cache  *cache.Cache
 	oaconf *oauth2.Config
 }
 
-func NewGitHubProvider(db *db.PrismaClient, clientID, clientSecret string) *GitHubProvider {
+func NewGitHubProvider(db *db.PrismaClient, mw *mailworker.Worker, clientID, clientSecret string) *GitHubProvider {
 	return &GitHubProvider{
 		db:    db,
+		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
 			ClientID:     clientID,
@@ -122,7 +124,7 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 		return nil, errors.Wrap(err, "failed to create user GitHub relationship")
 	}
 
-	if err := mailworker.Enqueue(
+	if err := p.mw.Enqueue(
 		githubUser.GetName(),
 		githubUser.GetEmail(),
 		"Welcome to open.mp!",

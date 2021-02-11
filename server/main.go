@@ -16,15 +16,13 @@ import (
 
 func main() {
 	zap.L().Info("service initialising")
-	a, err := app.Initialise(context.Background())
+	a, err := app.Initialise()
 	if err != nil {
 		zap.L().Fatal("service initialisation failed", zap.Error(err))
 	}
 	zap.L().Info("service initialised")
-	if err := a.Start(); err != nil {
-		zap.L().Fatal("service terminated", zap.Error(err))
-	}
-	zap.L().Info("service terminated gracefully")
+	a.Start(context.Background())
+	zap.L().Info("service terminated")
 }
 
 func init() {

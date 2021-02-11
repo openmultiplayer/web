@@ -24,7 +24,7 @@ func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
 		zap.String("version", version),
 		zap.String("address", address))
 
-	result, err := s.queryer.Query(s.ctx, address)
+	result, err := s.queryer.Query(r.Context(), address)
 	if err != nil {
 		zap.L().Debug("failed to query server", zap.Error(err))
 		web.StatusNotAcceptable(w, errors.Wrap(err, "failed to query server"))
@@ -33,7 +33,7 @@ func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
 
 	formatted := server.TransformQueryResult(result, nil)
 
-	if err := s.storer.Upsert(s.ctx, formatted); err != nil {
+	if err := s.storer.Upsert(r.Context(), formatted); err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to query server"))
 		return
 	}

@@ -1,24 +1,25 @@
 package docs
 
 import (
-	"context"
 	"encoding/json"
 	"net/http"
 
 	"github.com/Southclaws/qstring"
 	"github.com/go-chi/chi"
+	"github.com/golobby/container"
+
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
 type service struct {
-	ctx context.Context
 	idx *docsindex.Index
 }
 
-func New(ctx context.Context, idx *docsindex.Index) *chi.Mux {
+func New() *chi.Mux {
 	rtr := chi.NewRouter()
-	svc := service{ctx, idx}
+	svc := service{}
+	container.Make(&svc.idx)
 
 	fs := http.FileServer(http.Dir("docs/"))
 

@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
+	"github.com/golobby/container"
 	"github.com/pkg/errors"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
@@ -13,15 +14,14 @@ import (
 
 type service struct {
 	auth *authentication.State
-	oa2  authentication.OAuthProvider
+	oa2  *authentication.DiscordProvider
 }
 
-func New(a *authentication.State, oa2 authentication.OAuthProvider) *chi.Mux {
+func New() *chi.Mux {
 	rtr := chi.NewRouter()
-	svc := service{
-		auth: a,
-		oa2:  oa2,
-	}
+	svc := service{}
+	container.Make(&svc.auth)
+	container.Make(&svc.oa2)
 
 	rtr.Get("/link", http.HandlerFunc(svc.link))
 	rtr.Post("/callback", http.HandlerFunc(svc.callback))

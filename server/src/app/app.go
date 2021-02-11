@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/golobby/container"
 	"github.com/kelseyhightower/envconfig"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
@@ -40,108 +41,161 @@ type Config struct {
 	SendgridAPIKey      string `required:"true" split_words:"true"`
 }
 
-// App stores root application state
-type App struct {
-	config Config
-	server http.Server
-	prisma *db.PrismaClient
-	ctx    context.Context
-	cancel context.CancelFunc
-	worker *worker.Worker
-}
+type App struct{}
 
-func Initialise(root context.Context) (app *App, err error) {
+func Initialise() (app *App, err error) {
 	app = &App{}
 
-	app.config, err = config()
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to load config")
-	}
+	// -
+	// Config
+	// -
+	container.Singleton(func() Config {
+		config, err := config()
+		if err != nil {
+			panic(errors.Wrap(err, "failed to load config"))
+		}
+		return config
+	})
 
-	app.ctx, app.cancel = WithSignal(root)
+	// -
+	// Prisma
+	// -
+	container.Singleton(func() *db.PrismaClient {
+		prisma := db.NewClient()
+		if err = prisma.Connect(); err != nil {
+			panic(errors.Wrap(err, "failed to connect to prisma"))
+		}
+		return prisma
+	})
 
-	app.prisma = db.NewClient()
-	if err = app.prisma.Connect(); err != nil {
-		return nil, errors.Wrap(err, "failed to connect to prisma")
-	}
+	// -
+	// RabbitMQ
+	// -
+	container.Singleton(func(config Config) pubsub.Bus {
+		ps, err := pubsub.NewRabbit(config.AmqpAddress)
+		if err != nil {
+			panic(errors.Wrap(err, "failed to connect to rabbitmq"))
+		}
+		return ps
+	})
 
-	ps, err := pubsub.NewRabbit(app.config.AmqpAddress)
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to connect to rabbitmq")
-	}
+	// -
+	// Mailer
+	// -
+	container.Singleton(func(config Config) mailer.Mailer {
+		return mailer.NewSendGrid(config.SendgridAPIKey)
+	})
 
-	queueEmail := ps.Declare("system.email")
+	// -
+	// Mail Worker
+	// -
+	container.Singleton(func(ps pubsub.Bus, m mailer.Mailer) *mailworker.Worker {
+		mailreg.Init("emails") // assume the binary is exected from the repo root
+		queueEmail := ps.Declare("system.email")
+		return mailworker.New(queueEmail, ps, m)
+	})
 
-	mailreg.Init("emails") // assume the binary is exected from the repo root
-	mailworker.Init(queueEmail, ps, mailer.NewSendGrid(app.config.SendgridAPIKey))
-	auth := authentication.New(app.prisma, app.config.HashKey, app.config.BlockKey)
+	// -
+	// Auther
+	// -
+	container.Singleton(func(config Config, prisma *db.PrismaClient) *authentication.State {
+		return authentication.New(prisma, config.HashKey, config.BlockKey)
+	})
 
-	storage := serverdb.NewPrisma(app.prisma)
-	sampqueryer := &queryer.SAMPQueryer{}
+	// -
+	// Server Database
+	// -
+	container.Singleton(func(prisma *db.PrismaClient) serverdb.Storer {
+		return serverdb.NewPrisma(prisma)
+	})
 
-	idx, err := docsindex.New("docs.bleve", "docs/")
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to create docs index")
-	}
+	// -
+	// Server Database
+	// -
+	container.Singleton(func() queryer.Queryer {
+		return &queryer.SAMPQueryer{}
+	})
 
-	oaGitHub := authentication.NewGitHubProvider(app.prisma, app.config.GithubClientID, app.config.GithubClientSecret)
-	oaDiscord := authentication.NewDiscordProvider(app.prisma, app.config.DiscordClientID, app.config.DiscordClientSecret)
+	// -
+	// Docs Search Index
+	// -
+	container.Singleton(func() *docsindex.Index {
+		idx, err := docsindex.New("docs.bleve", "docs/")
+		if err != nil {
+			panic(errors.Wrap(err, "failed to create docs index"))
+		}
+		return idx
+	})
 
-	verifier := serververify.New(app.prisma)
+	// -
+	// Server Verifier
+	// -
+	container.Singleton(func(prisma *db.PrismaClient) *serververify.Verifyer {
+		return serververify.New(prisma)
+	})
 
-	app.server = http.Server{
-		Handler: api.New(app.ctx, auth, app.prisma, storage, sampqueryer, idx, oaGitHub, oaDiscord, verifier),
-		Addr:    "0.0.0.0:80",
-		BaseContext: func(net.Listener) context.Context {
-			return app.ctx
-		},
-	}
+	// -
+	// OAuth2 Services
+	// -
+	container.Singleton(func(config Config, db *db.PrismaClient, mw *mailworker.Worker) *authentication.GitHubProvider {
+		return authentication.NewGitHubProvider(db, mw, config.GithubClientID, config.GithubClientSecret)
+	})
+	container.Singleton(func(config Config, db *db.PrismaClient, mw *mailworker.Worker) *authentication.DiscordProvider {
+		return authentication.NewDiscordProvider(db, mw, config.DiscordClientID, config.DiscordClientSecret)
+	})
 
-	app.worker = worker.New(
-		app.ctx,
-		storage,
-		&scraper.PooledScraper{
-			Q: sampqueryer,
-		},
-	)
+	// -
+	// Server Scraper
+	// -
+	container.Singleton(func(q queryer.Queryer) scraper.Scraper {
+		return &scraper.PooledScraper{Q: q}
+	})
 
 	return
 }
 
 // Start starts the application and blocks until fatal error
 // The server will shut down if the root context is cancelled
-func (app *App) Start() error {
+func (app *App) Start(ctx context.Context) {
 	defer func() {
-		err := app.prisma.Disconnect()
+		var prisma *db.PrismaClient
+		container.Make(&prisma)
+		err := prisma.Disconnect()
 		if err != nil {
 			panic(fmt.Errorf("could not disconnect: %w", err))
 		}
 	}()
 
 	go func() {
-		if err := app.server.ListenAndServe(); err != nil {
-			zap.L().Error("server stopped unexpectedly", zap.Error(err))
+		s := http.Server{
+			Handler:     api.New(),
+			Addr:        "0.0.0.0:80",
+			BaseContext: func(net.Listener) context.Context { return ctx },
+		}
+
+		if err := s.ListenAndServe(); err != nil {
+			zap.L().Error("http server stopped unexpectedly", zap.Error(err))
 		}
 	}()
 
 	go func() {
-		if err := app.worker.RunWithSeed(time.Second*30, seed.Addresses); err != nil {
-			zap.L().Error("failed to upsert new data",
-				zap.Error(err))
+		w := worker.New()
+		if err := w.RunWithSeed(ctx, time.Second*30, seed.Addresses); err != nil {
+			zap.L().Error("index worker stopped unexpectedly", zap.Error(err))
 		}
 	}()
 
 	go func() {
-		if err := mailworker.Run(); err != nil {
+		var mw *mailworker.Worker
+		container.Make(&mw)
+		if err := mw.Run(); err != nil {
 			zap.L().Fatal("mailworker stopped unexpectedly", zap.Error(err))
 		}
 	}()
 
-	<-app.ctx.Done()
+	<-ctx.Done()
 
-	zap.L().Error("server context cancelled", zap.Error(app.ctx.Err()))
-
-	return app.server.Shutdown(context.Background())
+	zap.L().Error("context cancelled", zap.Error(ctx.Err()))
 }
 
 func config() (c Config, err error) {

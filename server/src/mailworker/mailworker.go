@@ -11,19 +11,14 @@ import (
 	"github.com/openmultiplayer/web/server/src/pubsub"
 )
 
-var global *Worker
-
 type Worker struct {
 	t pubsub.Topic
 	b pubsub.Bus
 	m mailer.Mailer
 }
 
-func Init(t pubsub.Topic, b pubsub.Bus, m mailer.Mailer) {
-	if global != nil {
-		panic("mailworker doubly initialised")
-	}
-	global = &Worker{t, b, m}
+func New(t pubsub.Topic, b pubsub.Bus, m mailer.Mailer) *Worker {
+	return &Worker{t, b, m}
 }
 
 type Message struct {
@@ -34,7 +29,7 @@ type Message struct {
 	Data     interface{}
 }
 
-func Enqueue(name, addr, subj string, template mailreg.TemplateID, data interface{}) error {
+func (w *Worker) Enqueue(name, addr, subj string, template mailreg.TemplateID, data interface{}) error {
 	body, err := json.Marshal(Message{
 		Name:     name,
 		Addr:     addr,
@@ -45,15 +40,15 @@ func Enqueue(name, addr, subj string, template mailreg.TemplateID, data interfac
 	if err != nil {
 		return err
 	}
-	return global.b.Publish(global.t, body)
+	return w.b.Publish(w.t, body)
 }
 
-func Run() error {
-	return backoff.Retry(global.run, backoff.NewExponentialBackOff())
+func (w *Worker) Run() error {
+	return backoff.Retry(w.run, backoff.NewExponentialBackOff())
 }
 
 func (w *Worker) run() error {
-	return global.b.Subscribe(global.t, func(body []byte) (bool, error) {
+	return w.b.Subscribe(w.t, func(body []byte) (bool, error) {
 		var message Message
 		if err := json.Unmarshal(body, &message); err != nil {
 			return true, errors.Wrap(err, "unexpected message in mailer topic")
@@ -64,7 +59,7 @@ func (w *Worker) run() error {
 			return false, errors.Wrap(err, "mailworker failed to format email")
 		}
 
-		if err := global.m.Mail(message.Name, message.Addr, message.Subj, t.Rich, t.Text); err != nil {
+		if err := w.m.Mail(message.Name, message.Addr, message.Subj, t.Rich, t.Text); err != nil {
 			return false, errors.Wrap(err, "mailworker failed to send email")
 		}
 

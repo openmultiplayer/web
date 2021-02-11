@@ -1,12 +1,12 @@
 package api
 
 import (
-	"context"
 	"encoding/json"
 	"net/http"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
+	"github.com/golobby/container"
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/server/src/api/auth"
@@ -15,27 +15,15 @@ import (
 	"github.com/openmultiplayer/web/server/src/api/servers"
 	"github.com/openmultiplayer/web/server/src/api/users"
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/db"
-	"github.com/openmultiplayer/web/server/src/docsindex"
-	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/serverdb"
-	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/version"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
 // TODO: sort this mess out...
-func New(
-	ctx context.Context,
-	auther *authentication.State,
-	db *db.PrismaClient,
-	storage serverdb.Storer,
-	sampqueryer queryer.Queryer,
-	idx *docsindex.Index,
-	oaGitHub authentication.OAuthProvider,
-	oaDiscord authentication.OAuthProvider,
-	verifier *serververify.Verifyer,
-) *chi.Mux {
+func New() *chi.Mux {
+	var auther *authentication.State
+	container.Make(&auther)
+
 	router := chi.NewRouter()
 	router.Use(
 		web.WithLogger,
@@ -54,15 +42,11 @@ func New(
 		auther.WithAuthentication,
 	)
 
-	router.Mount("/", legacy.New(ctx, storage, sampqueryer))
-	router.Mount("/server", servers.New(ctx, storage, sampqueryer, verifier))
-	router.Mount("/docs", docs.New(ctx, idx))
-	router.Mount("/auth", auth.New(
-		auther,
-		oaGitHub,
-		oaDiscord,
-	))
-	router.Mount("/users", users.New(ctx, auther, db))
+	router.Mount("/", legacy.New())
+	router.Mount("/server", servers.New())
+	router.Mount("/docs", docs.New())
+	router.Mount("/auth", auth.New())
+	router.Mount("/users", users.New())
 
 	router.Get("/version", func(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(map[string]string{"version": version.Version}) //nolint:errcheck

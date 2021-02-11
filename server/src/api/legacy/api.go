@@ -1,22 +1,22 @@
 package legacy
 
 import (
-	"context"
-
 	"github.com/go-chi/chi"
+	"github.com/golobby/container"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/serverdb"
 )
 
 type service struct {
-	ctx     context.Context
 	storer  serverdb.Storer
 	queryer queryer.Queryer
 }
 
-func New(ctx context.Context, storer serverdb.Storer, queryer queryer.Queryer) *chi.Mux {
+func New() *chi.Mux {
 	rtr := chi.NewRouter()
-	svc := service{ctx, storer, queryer}
+	svc := service{}
+	container.Make(&svc.storer)
+	container.Make(&svc.queryer)
 
 	// legacy announce.exe pattern: server.sa-mp.com/0.3.7/announce/7777
 	rtr.Get("/{version}/announce/{port}", svc.postLegacy)
