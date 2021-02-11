@@ -1,10 +1,9 @@
-package worker
+package serverworker
 
 import (
 	"context"
 	"time"
 
-	"github.com/golobby/container"
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/server/src/scraper"
@@ -16,10 +15,8 @@ type Worker struct {
 	sc scraper.Scraper
 }
 
-func New() *Worker {
-	w := &Worker{}
-	container.Make(&w.db)
-	container.Make(&w.sc)
+func New(db serverdb.Storer, sc scraper.Scraper) *Worker {
+	w := &Worker{db, sc}
 	return w
 }
 

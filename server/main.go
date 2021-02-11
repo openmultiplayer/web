@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"os"
+	"os/signal"
 
 	"github.com/joho/godotenv"
 	"github.com/kelseyhightower/envconfig"
@@ -15,22 +16,35 @@ import (
 )
 
 func main() {
+	ctx, cf := withSignal(context.Background())
+	defer cf()
+
 	zap.L().Info("service initialising")
-	a, err := app.Initialise()
-	if err != nil {
-		zap.L().Fatal("service initialisation failed", zap.Error(err))
-	}
-	zap.L().Info("service initialised")
-	a.Start(context.Background())
+	app.Start(ctx)
 	zap.L().Info("service terminated")
+}
+
+// withSignal returns a context that's cancelled when the process is interrupted
+func withSignal(ctx context.Context) (context.Context, context.CancelFunc) {
+	child, cancel := context.WithCancel(ctx)
+	c := make(chan os.Signal, 1)
+	signal.Notify(c, os.Interrupt)
+	go func() {
+		select {
+		case <-c:
+			cancel()
+		case <-ctx.Done():
+		}
+	}()
+	return child, cancel
 }
 
 func init() {
 	//nolint:errcheck
 	godotenv.Load()
 	var env struct {
-		Production bool
-		LogLevel   zapcore.Level
+		Production bool          `envconfig:"PRODUCTION" default:"false"`
+		LogLevel   zapcore.Level `envconfig:"LOG_LEVEL"  default:"info"`
 	}
 	envconfig.MustProcess("", &env)
 

@@ -19,9 +19,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-// TODO: sort this mess out...
-func New() *chi.Mux {
-	var auther *authentication.State
+func New(auther *authentication.State) *chi.Mux {
 	container.Make(&auther)
 
 	router := chi.NewRouter()

@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/go-chi/chi"
 	"github.com/golobby/container"
 	"github.com/kelseyhightower/envconfig"
 	"github.com/pkg/errors"
@@ -25,7 +26,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/seed"
 	"github.com/openmultiplayer/web/server/src/serverdb"
 	"github.com/openmultiplayer/web/server/src/serververify"
-	"github.com/openmultiplayer/web/server/src/worker"
+	"github.com/openmultiplayer/web/server/src/serverworker"
 )
 
 // Config represents environment variable configuration parameters
@@ -41,11 +42,7 @@ type Config struct {
 	SendgridAPIKey      string `required:"true" split_words:"true"`
 }
 
-type App struct{}
-
-func Initialise() (app *App, err error) {
-	app = &App{}
-
+func build() {
 	// -
 	// Config
 	// -
@@ -62,7 +59,7 @@ func Initialise() (app *App, err error) {
 	// -
 	container.Singleton(func() *db.PrismaClient {
 		prisma := db.NewClient()
-		if err = prisma.Connect(); err != nil {
+		if err := prisma.Connect(); err != nil {
 			panic(errors.Wrap(err, "failed to connect to prisma"))
 		}
 		return prisma
@@ -105,16 +102,12 @@ func Initialise() (app *App, err error) {
 	// -
 	// Server Database
 	// -
-	container.Singleton(func(prisma *db.PrismaClient) serverdb.Storer {
-		return serverdb.NewPrisma(prisma)
-	})
+	container.Singleton(serverdb.NewPrisma)
 
 	// -
-	// Server Database
+	// Server Queryer
 	// -
-	container.Singleton(func() queryer.Queryer {
-		return &queryer.SAMPQueryer{}
-	})
+	container.Singleton(queryer.NewSAMPQueryer)
 
 	// -
 	// Docs Search Index
@@ -130,9 +123,17 @@ func Initialise() (app *App, err error) {
 	// -
 	// Server Verifier
 	// -
-	container.Singleton(func(prisma *db.PrismaClient) *serververify.Verifyer {
-		return serververify.New(prisma)
-	})
+	container.Singleton(serververify.New)
+
+	// -
+	// Server Scraper
+	// -
+	container.Singleton(scraper.NewPooledScraper)
+
+	// -
+	// Server Worker
+	// -
+	container.Singleton(serverworker.New)
 
 	// -
 	// OAuth2 Services
@@ -145,18 +146,16 @@ func Initialise() (app *App, err error) {
 	})
 
 	// -
-	// Server Scraper
+	// HTTP API
 	// -
-	container.Singleton(func(q queryer.Queryer) scraper.Scraper {
-		return &scraper.PooledScraper{Q: q}
-	})
-
-	return
+	container.Singleton(api.New)
 }
 
 // Start starts the application and blocks until fatal error
 // The server will shut down if the root context is cancelled
-func (app *App) Start(ctx context.Context) {
+func Start(ctx context.Context) {
+	build()
+
 	defer func() {
 		var prisma *db.PrismaClient
 		container.Make(&prisma)
@@ -167,8 +166,10 @@ func (app *App) Start(ctx context.Context) {
 	}()
 
 	go func() {
+		var api *chi.Mux
+		container.Make(&api)
 		s := http.Server{
-			Handler:     api.New(),
+			Handler:     api,
 			Addr:        "0.0.0.0:80",
 			BaseContext: func(net.Listener) context.Context { return ctx },
 		}
@@ -179,7 +180,8 @@ func (app *App) Start(ctx context.Context) {
 	}()
 
 	go func() {
-		w := worker.New()
+		var w *serverworker.Worker
+		container.Make(&w)
 		if err := w.RunWithSeed(ctx, time.Second*30, seed.Addresses); err != nil {
 			zap.L().Error("index worker stopped unexpectedly", zap.Error(err))
 		}

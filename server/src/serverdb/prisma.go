@@ -15,17 +15,22 @@ type PrismaStorer struct {
 	client *db.PrismaClient
 }
 
-func NewPrisma(client *db.PrismaClient) *PrismaStorer {
+func NewPrisma(client *db.PrismaClient) Storer {
 	return &PrismaStorer{client}
 }
 
 func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 	if !e.Active {
-		_, err := s.client.Server.
+		// If a server is inactive and it doesn't already exist in the database
+		// then no data needs to be written and this is not an error. This only
+		// happens during seeding where a server from the initial seed list is
+		// offline during the first-time query and DB seed process.
+		//nolint:errcheck
+		s.client.Server.
 			FindOne(db.Server.IP.Equals(e.IP)).
 			Update(db.Server.Active.Set(false)).
 			Exec(ctx)
-		return err
+		return nil
 	}
 
 	var svr db.ServerModel
