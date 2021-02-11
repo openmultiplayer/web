@@ -32,6 +32,10 @@ type GitHubScraper struct {
 	GitHub *github.Client
 }
 
+func NewGitHubScraper(gh *github.Client) Scraper {
+	return &GitHubScraper{gh}
+}
+
 func (g *GitHubScraper) Scrape(ctx context.Context, name string) (*pkgdef.Package, error) {
 	splitname := strings.Split(name, "/")
 

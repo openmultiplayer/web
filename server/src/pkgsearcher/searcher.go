@@ -17,6 +17,10 @@ type GitHubSearcher struct {
 	GitHub *github.Client
 }
 
+func NewGitHubSearcher(gh *github.Client) Searcher {
+	return &GitHubSearcher{gh}
+}
+
 func (g *GitHubSearcher) Search(queries ...string) ([]string, error) {
 	var repos []string
 	for _, q := range queries {

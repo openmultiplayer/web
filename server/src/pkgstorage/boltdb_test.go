@@ -18,8 +18,8 @@ var (
 )
 
 func TestMain(m *testing.M) {
-	os.Remove("test.db")
-	db, err := New("test.db")
+	os.Remove("packages.db")
+	db, err := New()
 	if err != nil {
 		panic(err)
 	}

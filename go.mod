@@ -17,6 +17,7 @@ require (
 	github.com/go-chi/cors v1.1.1
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/google/go-cmp v0.5.4 // indirect
+	github.com/google/go-github v0.0.0-20180819205025-d7732128a00e
 	github.com/google/go-github/v28 v28.1.1
 	github.com/gorilla/schema v1.2.0
 	github.com/gorilla/securecookie v1.1.1

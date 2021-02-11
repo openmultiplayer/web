@@ -21,6 +21,7 @@ type Config struct {
 	DiscordClientID     string `envconfig:"DISCORD_CLIENT_ID"     required:"true"`
 	DiscordClientSecret string `envconfig:"DISCORD_CLIENT_SECRET" required:"true"`
 	SendgridAPIKey      string `envconfig:"SENDGRID_API_KEY"      required:"true"`
+	GithubToken         string `envconfig:"GITHUB_TOKEN"          required:"true"`
 	DocsSourcesPath     string `required:"false"                  default:"docs/"      split_words:"false" `
 	DocsIndexPath       string `required:"false"                  default:"docs.bleve" split_words:"false" `
 }

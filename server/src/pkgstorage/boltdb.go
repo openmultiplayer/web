@@ -19,8 +19,8 @@ type Entry struct {
 	Marked bool
 }
 
-func New(path string) (*DB, error) {
-	db, err := bolt.Open(path, 0o666, nil)
+func New() (*DB, error) {
+	db, err := bolt.Open("packages.db", 0o666, nil)
 	if err != nil {
 		return nil, err
 	}
