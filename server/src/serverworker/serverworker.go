@@ -4,6 +4,7 @@ import (
 	"context"
 	"time"
 
+	"go.uber.org/fx"
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/server/src/scraper"
@@ -15,8 +16,15 @@ type Worker struct {
 	sc scraper.Scraper
 }
 
-func New(db serverdb.Storer, sc scraper.Scraper) *Worker {
+func New(lc fx.Lifecycle, db serverdb.Storer, sc scraper.Scraper) *Worker {
 	w := &Worker{db, sc}
+
+	lc.Append(fx.Hook{
+		OnStart: func(ctx context.Context) error {
+			return w.Run(ctx, time.Second*30)
+		},
+	})
+
 	return w
 }
 
