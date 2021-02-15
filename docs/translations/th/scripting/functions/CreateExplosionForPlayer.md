@@ -14,14 +14,14 @@ This function was added in SA-MP 0.3z R2-2 and will not work in earlier versions
 
 Creates an explosion that is only visible to a single player. This can be used to isolate explosions from other players or to make them only appear in specific virtual worlds.
 
-| Name         | Description                                       |
-| ------------ | ------------------------------------------------- |
-| playerid     | The ID of the player to create the explosion for. |
-| Float:X      | The X coordinate of the explosion.                |
-| Float:Y      | The Y coordinate of the explosion.                |
-| Float:Z      | The Z coordinate of the explosion.                |
-| type         | The explosion type.                               |
-| Float:Radius | The radius of the explosion.                      |
+| Name         | Description                                              |
+| ------------ | -------------------------------------------------------- |
+| playerid     | The ID of the player to create the explosion for.        |
+| Float:X      | The X coordinate of the explosion.                       |
+| Float:Y      | The Y coordinate of the explosion.                       |
+| Float:Z      | The Z coordinate of the explosion.                       |
+| type         | The [type](../resources/explosionlist) of the explosion. |
+| Float:radius | The radius of the explosion.                             |
 
 ## ส่งคืน
 
@@ -49,4 +49,5 @@ There is a limit as to how many explosions can be seen at once by a player. This
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CreateExplosion](../../scripting/functions/CreateExplosion.md): Create an explosion which is visible for all players.
+- [CreateExplosion](CreateExplosion.md): Create an explosion which is visible for all players.
+- [Explosion Types](explosionlist): A list of all the explosion types.
