@@ -20,8 +20,8 @@ func main() {
 	defer cf()
 
 	zap.L().Info("service initialising")
-	app.Start(ctx)
-	zap.L().Info("service terminated")
+	err := app.Start(ctx)
+	zap.L().Info("service terminated", zap.Error(err))
 }
 
 // withSignal returns a context that's cancelled when the process is interrupted

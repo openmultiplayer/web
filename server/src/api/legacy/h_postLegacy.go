@@ -14,7 +14,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
+func (s *LegacyService) postLegacy(w http.ResponseWriter, r *http.Request) {
 	version := chi.URLParam(r, "version")
 	port := chi.URLParam(r, "port")
 

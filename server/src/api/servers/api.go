@@ -2,7 +2,6 @@ package servers
 
 import (
 	"github.com/go-chi/chi"
-	"github.com/golobby/container"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/queryer"
@@ -10,25 +9,26 @@ import (
 	"github.com/openmultiplayer/web/server/src/serververify"
 )
 
-type service struct {
+type ServersService struct {
+	R        chi.Router
 	storer   serverdb.Storer
 	queryer  queryer.Queryer
 	verifier *serververify.Verifyer
 }
 
-func New() *chi.Mux {
-	rtr := chi.NewRouter()
-	svc := service{}
-	container.Make(&svc.storer)
-	container.Make(&svc.queryer)
-	container.Make(&svc.verifier)
+func New(
+	storer serverdb.Storer,
+	queryer queryer.Queryer,
+	verifier *serververify.Verifyer,
+) *ServersService {
+	svc := &ServersService{chi.NewRouter(), storer, queryer, verifier}
 
-	rtr.Get("/{address}", svc.get)
-	rtr.Get("/", svc.list)
-	rtr.Post("/", svc.add)
-	rtr.
+	svc.R.Get("/{address}", svc.get)
+	svc.R.Get("/", svc.list)
+	svc.R.Post("/", svc.add)
+	svc.R.
 		With(authentication.MustBeAuthenticated).
 		Get("/{address}/vertify", svc.vertify)
 
-	return rtr
+	return svc
 }

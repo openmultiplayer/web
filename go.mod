@@ -31,8 +31,8 @@ require (
 	github.com/thanhpk/randstr v1.0.4
 	github.com/tkrajina/go-reflector v0.5.4 // indirect
 	github.com/tkrajina/typescriptify-golang-structs v0.1.3
+	go.uber.org/dig v1.10.0
 	go.uber.org/zap v1.16.0
-	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102 // indirect
 	golang.org/x/oauth2 v0.0.0-20201203001011-0b49973bad19
 	golang.org/x/sys v0.0.0-20201201145000-ef89a241ccb3 // indirect
