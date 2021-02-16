@@ -26,7 +26,12 @@ func New(lc fx.Lifecycle, b pubsub.Bus, m mailer.Mailer) *Worker {
 
 	lc.Append(fx.Hook{
 		OnStart: func(context.Context) error {
-			return backoff.Retry(w.run, backoff.NewExponentialBackOff())
+			go func() {
+				if err := backoff.Retry(w.run, backoff.NewExponentialBackOff()); err != nil {
+					panic(err)
+				}
+			}()
+			return nil
 		},
 	})
 

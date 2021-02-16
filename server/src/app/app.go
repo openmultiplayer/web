@@ -69,8 +69,7 @@ func Start(ctx context.Context) error {
 				return authentication.NewDiscordProvider(db, mw, config.DiscordClientID, config.DiscordClientSecret)
 			},
 
-			api.NewServer,
-			api.NewRouter,
+			api.New,
 
 			// Route group handlers
 			// Note:
@@ -103,7 +102,14 @@ func Start(ctx context.Context) error {
 		),
 	)
 
-	return app.Start(ctx)
+	err := app.Start(ctx)
+	if err != nil {
+		return err
+	}
+
+	<-ctx.Done()
+
+	return nil
 }
 
 func config() (c Config, err error) {

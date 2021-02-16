@@ -16,31 +16,13 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func NewServer(lc fx.Lifecycle, router chi.Router) *http.Server {
+func New(lc fx.Lifecycle, auther *authentication.State) chi.Router {
+	router := chi.NewRouter()
 	server := &http.Server{
 		Handler: router,
 		Addr:    "0.0.0.0:80",
 	}
 
-	lc.Append(fx.Hook{
-		OnStart: func(ctx context.Context) error {
-			zap.L().Debug("started server", zap.Any("server", server))
-			server.BaseContext = func(net.Listener) context.Context { return ctx }
-			go server.ListenAndServe() //nolint:errcheck
-			return nil
-		},
-		OnStop: func(ctx context.Context) error {
-			return server.Shutdown(ctx)
-		},
-	})
-
-	zap.L().Debug("constructed server", zap.Any("server", server))
-
-	return server
-}
-
-func NewRouter(auther *authentication.State) chi.Router {
-	router := chi.NewRouter()
 	router.Use(
 		web.WithLogger,
 		web.WithContentType,
@@ -70,7 +52,16 @@ func NewRouter(auther *authentication.State) chi.Router {
 			}
 		})
 
-	zap.L().Debug("constructed router", zap.Any("router", router))
+	lc.Append(fx.Hook{
+		OnStart: func(ctx context.Context) error {
+			server.BaseContext = func(net.Listener) context.Context { return ctx }
+			go server.ListenAndServe() //nolint:errcheck
+			return nil
+		},
+		OnStop: func(ctx context.Context) error {
+			return server.Shutdown(ctx)
+		},
+	})
 
 	return router
 }
