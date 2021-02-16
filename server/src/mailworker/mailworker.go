@@ -1,10 +1,12 @@
 package mailworker
 
 import (
+	"context"
 	"encoding/json"
 
 	"github.com/cenkalti/backoff"
 	"github.com/pkg/errors"
+	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/mailer"
 	"github.com/openmultiplayer/web/server/src/mailreg"
@@ -17,8 +19,23 @@ type Worker struct {
 	m mailer.Mailer
 }
 
-func New(t pubsub.Topic, b pubsub.Bus, m mailer.Mailer) *Worker {
-	return &Worker{t, b, m}
+func New(lc fx.Lifecycle, b pubsub.Bus, m mailer.Mailer) *Worker {
+	w := &Worker{b.Declare("system.email"), b, m}
+
+	mailreg.Init("emails")
+
+	lc.Append(fx.Hook{
+		OnStart: func(context.Context) error {
+			go func() {
+				if err := backoff.Retry(w.run, backoff.NewExponentialBackOff()); err != nil {
+					panic(err)
+				}
+			}()
+			return nil
+		},
+	})
+
+	return w
 }
 
 type Message struct {
@@ -41,10 +58,6 @@ func (w *Worker) Enqueue(name, addr, subj string, template mailreg.TemplateID, d
 		return err
 	}
 	return w.b.Publish(w.t, body)
-}
-
-func (w *Worker) Run() error {
-	return backoff.Retry(w.run, backoff.NewExponentialBackOff())
 }
 
 func (w *Worker) run() error {

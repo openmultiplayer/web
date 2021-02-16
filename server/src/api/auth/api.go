@@ -5,14 +5,24 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/api/auth/discord"
 	"github.com/openmultiplayer/web/server/src/api/auth/github"
+	"github.com/openmultiplayer/web/server/src/authentication"
 )
 
+type AuthService struct {
+	R chi.Router
+}
+
 // Routes provides service routes
-func New() *chi.Mux {
-	rtr := chi.NewRouter()
+func New(
+	auth *authentication.State,
+	gh *authentication.GitHubProvider,
+	dc *authentication.DiscordProvider,
 
-	rtr.Mount("/github", github.New())
-	rtr.Mount("/discord", discord.New())
+) *AuthService {
+	svc := &AuthService{chi.NewRouter()}
 
-	return rtr
+	svc.R.Mount("/github", github.New(auth, gh))
+	svc.R.Mount("/discord", discord.New(auth, dc))
+
+	return svc
 }

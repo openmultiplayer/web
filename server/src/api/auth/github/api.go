@@ -5,7 +5,6 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
-	"github.com/golobby/container"
 	"github.com/pkg/errors"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
@@ -17,11 +16,9 @@ type service struct {
 	oa2  *authentication.GitHubProvider
 }
 
-func New() *chi.Mux {
+func New(auth *authentication.State, oa2 *authentication.GitHubProvider) *chi.Mux {
 	rtr := chi.NewRouter()
-	svc := service{}
-	container.Make(&svc.auth)
-	container.Make(&svc.oa2)
+	svc := service{auth, oa2}
 
 	rtr.Get("/link", http.HandlerFunc(svc.link))
 	rtr.Post("/callback", http.HandlerFunc(svc.callback))
