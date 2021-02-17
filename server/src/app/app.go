@@ -4,7 +4,6 @@ import (
 	"context"
 
 	"github.com/go-chi/chi"
-	"github.com/kelseyhightower/envconfig"
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/api"
@@ -14,6 +13,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/api/servers"
 	"github.com/openmultiplayer/web/server/src/api/users"
 	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/mailer"
@@ -26,32 +26,19 @@ import (
 	"github.com/openmultiplayer/web/server/src/serverworker"
 )
 
-// Config represents environment variable configuration parameters
-type Config struct {
-	ListenAddr          string `default:"0.0.0.0:8080" split_words:"true"`
-	AmqpAddress         string `default:"amqp://rabbit:5672" split_words:"true"`
-	HashKey             []byte `required:"true" split_words:"true"`
-	BlockKey            []byte `required:"true" split_words:"true"`
-	GithubClientID      string `required:"true" split_words:"true"`
-	GithubClientSecret  string `required:"true" split_words:"true"`
-	DiscordClientID     string `required:"true" split_words:"true"`
-	DiscordClientSecret string `required:"true" split_words:"true"`
-	SendgridAPIKey      string `required:"true" split_words:"true"`
-}
-
 // Start starts the application and blocks until fatal error
 // The server will shut down if the root context is cancelled
 // nolint:errcheck
 func Start(ctx context.Context) error {
 	app := fx.New(
 		fx.Provide(
-			config,
+			config.New,
 			NewDatabase,
 
-			func(config Config) (pubsub.Bus, error) { return pubsub.NewRabbit(config.AmqpAddress) },
-			func(config Config) mailer.Mailer { return mailer.NewSendGrid(config.SendgridAPIKey) },
+			func(config config.Config) (pubsub.Bus, error) { return pubsub.NewRabbit(config.AmqpAddress) },
+			func(config config.Config) mailer.Mailer { return mailer.NewSendGrid(config.SendgridAPIKey) },
 			func() (*docsindex.Index, error) { return docsindex.New("docs.bleve", "docs/") },
-			func(config Config, prisma *db.PrismaClient) *authentication.State {
+			func(config config.Config, prisma *db.PrismaClient) *authentication.State {
 				return authentication.New(prisma, config.HashKey, config.BlockKey)
 			},
 
@@ -62,10 +49,10 @@ func Start(ctx context.Context) error {
 			scraper.NewPooledScraper,
 			serverworker.New,
 
-			func(config Config, db *db.PrismaClient, mw *mailworker.Worker) *authentication.GitHubProvider {
+			func(config config.Config, db *db.PrismaClient, mw *mailworker.Worker) *authentication.GitHubProvider {
 				return authentication.NewGitHubProvider(db, mw, config.GithubClientID, config.GithubClientSecret)
 			},
-			func(config Config, db *db.PrismaClient, mw *mailworker.Worker) *authentication.DiscordProvider {
+			func(config config.Config, db *db.PrismaClient, mw *mailworker.Worker) *authentication.DiscordProvider {
 				return authentication.NewDiscordProvider(db, mw, config.DiscordClientID, config.DiscordClientSecret)
 			},
 
@@ -110,12 +97,4 @@ func Start(ctx context.Context) error {
 	<-ctx.Done()
 
 	return app.Stop(context.Background())
-}
-
-func config() (c Config, err error) {
-	if err = envconfig.Process("", &c); err != nil {
-		return c, err
-	}
-
-	return
 }
