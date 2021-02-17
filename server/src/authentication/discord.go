@@ -15,6 +15,7 @@ import (
 	"github.com/thanhpk/randstr"
 	"golang.org/x/oauth2"
 
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
@@ -34,14 +35,14 @@ var endpoint = oauth2.Endpoint{
 	TokenURL: "https://discord.com/api/oauth2/token",
 }
 
-func NewDiscordProvider(db *db.PrismaClient, mw *mailworker.Worker, clientID, clientSecret string) *DiscordProvider {
+func NewDiscordProvider(db *db.PrismaClient, mw *mailworker.Worker, cfg config.Config) *DiscordProvider {
 	return &DiscordProvider{
 		db:    db,
 		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
-			ClientID:     clientID,
-			ClientSecret: clientSecret,
+			ClientID:     cfg.DiscordClientID,
+			ClientSecret: cfg.DiscordClientSecret,
 			Scopes:       []string{"identify", "email"},
 			Endpoint:     endpoint,
 		},

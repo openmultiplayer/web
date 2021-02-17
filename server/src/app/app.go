@@ -14,7 +14,6 @@ import (
 	"github.com/openmultiplayer/web/server/src/api/users"
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/config"
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/mailer"
 	"github.com/openmultiplayer/web/server/src/mailworker"
@@ -34,28 +33,18 @@ func Start(ctx context.Context) error {
 		fx.Provide(
 			config.New,
 			NewDatabase,
-
-			func(config config.Config) (pubsub.Bus, error) { return pubsub.NewRabbit(config.AmqpAddress) },
-			func(config config.Config) mailer.Mailer { return mailer.NewSendGrid(config.SendgridAPIKey) },
-			func() (*docsindex.Index, error) { return docsindex.New("docs.bleve", "docs/") },
-			func(config config.Config, prisma *db.PrismaClient) *authentication.State {
-				return authentication.New(prisma, config.HashKey, config.BlockKey)
-			},
-
+			pubsub.NewRabbit,
+			mailer.NewSendGrid,
+			docsindex.New,
+			authentication.New,
 			mailworker.New,
 			serverdb.NewPrisma,
 			queryer.NewSAMPQueryer,
 			serververify.New,
 			scraper.NewPooledScraper,
 			serverworker.New,
-
-			func(config config.Config, db *db.PrismaClient, mw *mailworker.Worker) *authentication.GitHubProvider {
-				return authentication.NewGitHubProvider(db, mw, config.GithubClientID, config.GithubClientSecret)
-			},
-			func(config config.Config, db *db.PrismaClient, mw *mailworker.Worker) *authentication.DiscordProvider {
-				return authentication.NewDiscordProvider(db, mw, config.DiscordClientID, config.DiscordClientSecret)
-			},
-
+			authentication.NewGitHubProvider,
+			authentication.NewDiscordProvider,
 			api.New,
 
 			// Route group handlers
