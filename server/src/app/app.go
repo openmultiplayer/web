@@ -109,7 +109,7 @@ func Start(ctx context.Context) error {
 
 	<-ctx.Done()
 
-	return nil
+	return app.Stop(context.Background())
 }
 
 func config() (c Config, err error) {
