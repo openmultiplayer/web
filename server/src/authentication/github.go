@@ -12,6 +12,7 @@ import (
 	"golang.org/x/oauth2"
 	githuboa "golang.org/x/oauth2/github"
 
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
@@ -26,17 +27,19 @@ var (
 
 type GitHubProvider struct {
 	db     *db.PrismaClient
+	mw     *mailworker.Worker
 	cache  *cache.Cache
 	oaconf *oauth2.Config
 }
 
-func NewGitHubProvider(db *db.PrismaClient, clientID, clientSecret string) *GitHubProvider {
+func NewGitHubProvider(db *db.PrismaClient, mw *mailworker.Worker, cfg config.Config) *GitHubProvider {
 	return &GitHubProvider{
 		db:    db,
+		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
-			ClientID:     clientID,
-			ClientSecret: clientSecret,
+			ClientID:     cfg.GithubClientID,
+			ClientSecret: cfg.GithubClientSecret,
 			Scopes:       []string{"read:user", "user:email"},
 			Endpoint:     githuboa.Endpoint,
 		},
@@ -122,7 +125,7 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 		return nil, errors.Wrap(err, "failed to create user GitHub relationship")
 	}
 
-	if err := mailworker.Enqueue(
+	if err := p.mw.Enqueue(
 		githubUser.GetName(),
 		githubUser.GetEmail(),
 		"Welcome to open.mp!",

@@ -3,40 +3,26 @@ package api
 import (
 	"context"
 	"encoding/json"
+	"net"
 	"net/http"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
+	"go.uber.org/fx"
 	"go.uber.org/zap"
 
-	"github.com/openmultiplayer/web/server/src/api/auth"
-	"github.com/openmultiplayer/web/server/src/api/docs"
-	"github.com/openmultiplayer/web/server/src/api/legacy"
-	"github.com/openmultiplayer/web/server/src/api/servers"
-	"github.com/openmultiplayer/web/server/src/api/users"
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/db"
-	"github.com/openmultiplayer/web/server/src/docsindex"
-	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/serverdb"
-	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/version"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-// TODO: sort this mess out...
-func New(
-	ctx context.Context,
-	auther *authentication.State,
-	db *db.PrismaClient,
-	storage serverdb.Storer,
-	sampqueryer queryer.Queryer,
-	idx *docsindex.Index,
-	oaGitHub authentication.OAuthProvider,
-	oaDiscord authentication.OAuthProvider,
-	verifier *serververify.Verifyer,
-) *chi.Mux {
+func New(lc fx.Lifecycle, auther *authentication.State) chi.Router {
 	router := chi.NewRouter()
+	server := &http.Server{
+		Handler: router,
+		Addr:    "0.0.0.0:80",
+	}
+
 	router.Use(
 		web.WithLogger,
 		web.WithContentType,
@@ -54,21 +40,9 @@ func New(
 		auther.WithAuthentication,
 	)
 
-	router.Mount("/", legacy.New(ctx, storage, sampqueryer))
-	router.Mount("/server", servers.New(ctx, storage, sampqueryer, verifier))
-	router.Mount("/docs", docs.New(ctx, idx))
-	router.Mount("/auth", auth.New(
-		auther,
-		oaGitHub,
-		oaDiscord,
-	))
-	router.Mount("/users", users.New(ctx, auther, db))
-
 	router.Get("/version", func(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(map[string]string{"version": version.Version}) //nolint:errcheck
 	})
-
-	zap.L().Debug("constructed router", zap.Any("router", router))
 
 	router.HandleFunc(
 		"/{rest:[a-zA-Z0-9=\\-\\/]+}",
@@ -77,6 +51,17 @@ func New(
 				zap.L().Warn("failed to write error", zap.Error(err))
 			}
 		})
+
+	lc.Append(fx.Hook{
+		OnStart: func(ctx context.Context) error {
+			server.BaseContext = func(net.Listener) context.Context { return ctx }
+			go server.ListenAndServe() //nolint:errcheck
+			return nil
+		},
+		OnStop: func(ctx context.Context) error {
+			return server.Shutdown(ctx)
+		},
+	})
 
 	return router
 }

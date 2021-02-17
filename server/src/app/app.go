@@ -2,152 +2,88 @@ package app
 
 import (
 	"context"
-	"fmt"
-	"net"
-	"net/http"
-	"time"
 
-	"github.com/kelseyhightower/envconfig"
-	"github.com/pkg/errors"
-	"go.uber.org/zap"
+	"github.com/go-chi/chi"
+	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/api"
+	"github.com/openmultiplayer/web/server/src/api/auth"
+	"github.com/openmultiplayer/web/server/src/api/docs"
+	"github.com/openmultiplayer/web/server/src/api/legacy"
+	"github.com/openmultiplayer/web/server/src/api/servers"
+	"github.com/openmultiplayer/web/server/src/api/users"
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/mailer"
-	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/scraper"
-	"github.com/openmultiplayer/web/server/src/seed"
 	"github.com/openmultiplayer/web/server/src/serverdb"
 	"github.com/openmultiplayer/web/server/src/serververify"
-	"github.com/openmultiplayer/web/server/src/worker"
+	"github.com/openmultiplayer/web/server/src/serverworker"
 )
-
-// Config represents environment variable configuration parameters
-type Config struct {
-	ListenAddr          string `default:"0.0.0.0:8080" split_words:"true"`
-	AmqpAddress         string `default:"amqp://rabbit:5672" split_words:"true"`
-	HashKey             []byte `required:"true" split_words:"true"`
-	BlockKey            []byte `required:"true" split_words:"true"`
-	GithubClientID      string `required:"true" split_words:"true"`
-	GithubClientSecret  string `required:"true" split_words:"true"`
-	DiscordClientID     string `required:"true" split_words:"true"`
-	DiscordClientSecret string `required:"true" split_words:"true"`
-	SendgridAPIKey      string `required:"true" split_words:"true"`
-}
-
-// App stores root application state
-type App struct {
-	config Config
-	server http.Server
-	prisma *db.PrismaClient
-	ctx    context.Context
-	cancel context.CancelFunc
-	worker *worker.Worker
-}
-
-func Initialise(root context.Context) (app *App, err error) {
-	app = &App{}
-
-	app.config, err = config()
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to load config")
-	}
-
-	app.ctx, app.cancel = WithSignal(root)
-
-	app.prisma = db.NewClient()
-	if err = app.prisma.Connect(); err != nil {
-		return nil, errors.Wrap(err, "failed to connect to prisma")
-	}
-
-	ps, err := pubsub.NewRabbit(app.config.AmqpAddress)
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to connect to rabbitmq")
-	}
-
-	queueEmail := ps.Declare("system.email")
-
-	mailreg.Init("emails") // assume the binary is exected from the repo root
-	mailworker.Init(queueEmail, ps, mailer.NewSendGrid(app.config.SendgridAPIKey))
-	auth := authentication.New(app.prisma, app.config.HashKey, app.config.BlockKey)
-
-	storage := serverdb.NewPrisma(app.prisma)
-	sampqueryer := &queryer.SAMPQueryer{}
-
-	idx, err := docsindex.New("docs.bleve", "docs/")
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to create docs index")
-	}
-
-	oaGitHub := authentication.NewGitHubProvider(app.prisma, app.config.GithubClientID, app.config.GithubClientSecret)
-	oaDiscord := authentication.NewDiscordProvider(app.prisma, app.config.DiscordClientID, app.config.DiscordClientSecret)
-
-	verifier := serververify.New(app.prisma)
-
-	app.server = http.Server{
-		Handler: api.New(app.ctx, auth, app.prisma, storage, sampqueryer, idx, oaGitHub, oaDiscord, verifier),
-		Addr:    "0.0.0.0:80",
-		BaseContext: func(net.Listener) context.Context {
-			return app.ctx
-		},
-	}
-
-	app.worker = worker.New(
-		app.ctx,
-		storage,
-		&scraper.PooledScraper{
-			Q: sampqueryer,
-		},
-	)
-
-	return
-}
 
 // Start starts the application and blocks until fatal error
 // The server will shut down if the root context is cancelled
-func (app *App) Start() error {
-	defer func() {
-		err := app.prisma.Disconnect()
-		if err != nil {
-			panic(fmt.Errorf("could not disconnect: %w", err))
-		}
-	}()
+// nolint:errcheck
+func Start(ctx context.Context) error {
+	app := fx.New(
+		fx.Provide(
+			config.New,
+			NewDatabase,
+			pubsub.NewRabbit,
+			mailer.NewSendGrid,
+			docsindex.New,
+			authentication.New,
+			mailworker.New,
+			serverdb.NewPrisma,
+			queryer.NewSAMPQueryer,
+			serververify.New,
+			scraper.NewPooledScraper,
+			serverworker.New,
+			authentication.NewGitHubProvider,
+			authentication.NewDiscordProvider,
+			api.New,
 
-	go func() {
-		if err := app.server.ListenAndServe(); err != nil {
-			zap.L().Error("server stopped unexpectedly", zap.Error(err))
-		}
-	}()
+			// Route group handlers
+			// Note:
+			// When adding new route groups, don't forget to also mount their
+			// subrouters into the main router below...
+			legacy.New,
+			servers.New,
+			docs.New,
+			auth.New,
+			users.New,
+		),
+		fx.Invoke(
+			// Route group handlers from above are mounted here:
+			func(
+				legacyService *legacy.LegacyService,
+				serversService *servers.ServersService,
+				docsService *docs.DocsService,
+				authService *auth.AuthService,
+				usersService *users.UsersService,
 
-	go func() {
-		if err := app.worker.RunWithSeed(time.Second*30, seed.Addresses); err != nil {
-			zap.L().Error("failed to upsert new data",
-				zap.Error(err))
-		}
-	}()
+				// The router to mount the service handlers onto.
+				router chi.Router,
+			) {
+				router.Mount("/", legacyService.R)
+				router.Mount("/server", serversService.R)
+				router.Mount("/docs", docsService.R)
+				router.Mount("/auth", authService.R)
+				router.Mount("/users", usersService.R)
+			},
+		),
+	)
 
-	go func() {
-		if err := mailworker.Run(); err != nil {
-			zap.L().Fatal("mailworker stopped unexpectedly", zap.Error(err))
-		}
-	}()
-
-	<-app.ctx.Done()
-
-	zap.L().Error("server context cancelled", zap.Error(app.ctx.Err()))
-
-	return app.server.Shutdown(context.Background())
-}
-
-func config() (c Config, err error) {
-	if err = envconfig.Process("", &c); err != nil {
-		return c, err
+	err := app.Start(ctx)
+	if err != nil {
+		return err
 	}
 
-	return
+	<-ctx.Done()
+
+	return app.Stop(context.Background())
 }

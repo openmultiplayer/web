@@ -10,6 +10,7 @@ import (
 type Topic string
 
 type Bus interface {
+	Declare(topic string) Topic
 	Publish(topic Topic, message []byte) error
 	Subscribe(topic Topic, handler func([]byte) (bool, error)) error
 }
@@ -22,6 +23,10 @@ type Embedded struct {
 
 func NewEmbedded() *Embedded {
 	return &Embedded{pubsub.New(0)}
+}
+
+func (b *Embedded) Declare(topic string) Topic {
+	return Topic(topic)
 }
 
 func (b *Embedded) Publish(topic Topic, message []byte) error {

@@ -4,10 +4,15 @@ import (
 	"encoding/json"
 	"fmt"
 	"testing"
+
+	"github.com/openmultiplayer/web/server/src/config"
 )
 
 func TestIndex_Build(t *testing.T) {
-	idx, err := New("docsearch.bleve", "../../../docs/scripting")
+	idx, err := New(config.Config{
+		DocsSourcesPath: "../../../docs/scripting",
+		DocsIndexPath:   "docsearch.bleve",
+	})
 	if err != nil {
 		panic(err)
 	}

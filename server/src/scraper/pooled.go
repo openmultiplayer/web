@@ -15,6 +15,10 @@ type PooledScraper struct {
 	Q queryer.Queryer
 }
 
+func NewPooledScraper(q queryer.Queryer) Scraper {
+	return &PooledScraper{q}
+}
+
 // Scrape scrapes a list of addresses by spawning a goroutine for each address
 // and transforming each result into a Result object. The amount of results
 // should be the same as the amount of addresses.
