@@ -3,6 +3,7 @@ package pkgsearcher
 import (
 	"context"
 	"fmt"
+	"time"
 
 	"github.com/google/go-github/github"
 	"github.com/pkg/errors"
@@ -41,7 +42,6 @@ func (g *GitHubSearcher) doPagedSearch(query string) (repos []string, err error)
 		if err != nil {
 			break
 		}
-		zap.L().Debug("found repositories", zap.Int("count", len(result)), zap.Int("page", page))
 		if len(result) == 0 {
 			break
 		}
@@ -55,7 +55,7 @@ func (g *GitHubSearcher) doPagedSearch(query string) (repos []string, err error)
 }
 
 func (g *GitHubSearcher) runQueryForPage(query string, page int) (repos []github.Repository, err error) {
-	results, _, err := g.GitHub.Search.Repositories(
+	results, resp, err := g.GitHub.Search.Repositories(
 		context.Background(),
 		query,
 		&github.SearchOptions{ListOptions: github.ListOptions{
@@ -65,6 +65,14 @@ func (g *GitHubSearcher) runQueryForPage(query string, page int) (repos []github
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to search repositories")
 	}
+	if resp.Rate.Remaining < 100 {
+		time.Sleep(time.Hour)
+	}
+
+	zap.L().Debug("found repositories",
+		zap.Int("count", len(results.Repositories)),
+		zap.Int("page", page),
+		zap.Int("remaining", resp.Rate.Remaining))
 
 	return results.Repositories, nil
 }
