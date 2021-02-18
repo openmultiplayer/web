@@ -14,7 +14,7 @@ import (
 
 var (
 	database *DB
-	now      = time.Now().Truncate(time.Hour)
+	now      = time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC)
 )
 
 func TestMain(m *testing.M) {
