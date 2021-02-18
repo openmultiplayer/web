@@ -15,7 +15,7 @@ import (
 
 func TestGitHubSearcher_Search(t *testing.T) {
 	godotenv.Load("../.env") //nolint:errcheck
-	token := os.Getenv("PAWNDEX_GITHUBTOKEN")
+	token := os.Getenv("GITHUB_TOKEN")
 	if token == "" {
 		panic("tests need a token to run.")
 	}
