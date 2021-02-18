@@ -30,8 +30,8 @@ func NewPackageWorker(
 		searcher,
 		scraper,
 		storer,
-		time.Hour * 6,
-		time.Hour * 6,
+		time.Hour * 24,
+		time.Hour * 24,
 	}
 
 	lc.Append(fx.Hook{
