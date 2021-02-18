@@ -24,6 +24,7 @@ type Config struct {
 	GithubToken         string `envconfig:"GITHUB_TOKEN"          required:"true"`
 	DocsSourcesPath     string `required:"false"                  default:"docs/"      split_words:"false" `
 	DocsIndexPath       string `required:"false"                  default:"docs.bleve" split_words:"false" `
+	PackagesDB          string `required:"false"                  default:"/data/packages.db" split_words:"true" `
 }
 
 func New() (c Config, err error) {

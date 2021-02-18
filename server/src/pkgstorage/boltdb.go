@@ -5,6 +5,7 @@ import (
 
 	bolt "go.etcd.io/bbolt"
 
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/pkgdef"
 )
 
@@ -19,8 +20,8 @@ type Entry struct {
 	Marked bool
 }
 
-func New() (*DB, error) {
-	db, err := bolt.Open("packages.db", 0o666, nil)
+func New(cfg config.Config) (*DB, error) {
+	db, err := bolt.Open(cfg.PackagesDB, 0o666, nil)
 	if err != nil {
 		return nil, err
 	}
