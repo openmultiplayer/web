@@ -20,7 +20,7 @@ type Entry struct {
 	Marked bool
 }
 
-func New(cfg config.Config) (*DB, error) {
+func New(cfg config.Config) (Storer, error) {
 	db, err := bolt.Open(cfg.PackagesDB, 0o666, nil)
 	if err != nil {
 		return nil, err
