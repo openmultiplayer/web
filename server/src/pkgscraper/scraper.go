@@ -39,9 +39,12 @@ func NewGitHubScraper(gh *github.Client) Scraper {
 func (g *GitHubScraper) Scrape(ctx context.Context, name string) (*pkgdef.Package, error) {
 	splitname := strings.Split(name, "/")
 
-	repo, _, err := g.GitHub.Repositories.Get(ctx, splitname[0], splitname[1])
+	repo, resp, err := g.GitHub.Repositories.Get(ctx, splitname[0], splitname[1])
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get repo metadata from github")
+	}
+	if resp.Rate.Remaining < 100 {
+		time.Sleep(time.Hour)
 	}
 
 	meta := versioning.DependencyMeta{

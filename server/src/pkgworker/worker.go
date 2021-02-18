@@ -83,6 +83,8 @@ func (d *PackageWorker) run(ctx context.Context) error {
 						zap.String("name", r), zap.Error(err))
 					continue
 				}
+
+				time.Sleep(time.Second * 30)
 			}
 
 		case <-ctx.Done():
