@@ -31,9 +31,9 @@ public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 0.5;
-    result = asin (param) * 180.0 / PI;
-    printf ("Sinusni luk od %f je %f stepeni\n", param, result);
-    return 0;
+    result = asin(param);
+    printf("Sinusni luk od %f je %f stepeni.", param, result);
+    return 1;
 }
 ```
 
