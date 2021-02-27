@@ -1,39 +1,43 @@
 ---
 title: strdel
-description: Delete part of a string.
+description: Obriši dio stringa.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-Delete part of a string.
+:::
 
-| Name     | Description                                    |
-| -------- | ---------------------------------------------- |
-| string[] | The string to delete part of.                  |
-| start    | The position of the first character to delete. |
-| end      | The position of the last character to delete.  |
+## Deskripcija
+
+Obriši dio stringa.
+
+| Ime      | Deskripcija                                  |
+| -------- | -------------------------------------------- |
+| string[] | Stringa za izbrisati njegov dio.             |
+| start    | Pozicija prvog karaktera za izbrisati.       |
+| end      | Pozicija posljednjeg karaktera za izbrisati. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
-new string[42] = "We will delete everything apart from this";
-strdel(string, 0, 37); // string is now "this"
+new string[42] = "We will delete everything apart from this"; // izbrisati ćemo sve osim 'this'
+strdel(string, 0, 37); // string je sada "this"
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [strcmp](strcmp): Compare two strings to check if they are the same.
-- [strfind](strfind): Search for a string in another string.
-- [strins](strins): Insert text into a string.
-- [strlen](strlen): Get the length of a string.
-- [strmid](strmid): Extract part of a string into another string.
-- [strpack](strpack): Pack a string into a destination string.
-- [strval](strval): Convert a string into an integer.
-- [strcat](strcat): Concatenate two strings into a destination reference.
+- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
+- [strfind](strfind): Pretraži string u drugom stringu.
+- [strins](strins): Unesi tekst u string.
+- [strlen](strlen): Dobij dužinu stringa.
+- [strmid](strmid): Izdvoji dio stringa u drugi string.
+- [strpack](strpack): Upakuj string u odredišni string.
+- [strval](strval): Pretvori string u cijeli broj.
+- [strcat](strcat): Spojite dva stringa u odredišnu referencu.

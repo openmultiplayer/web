@@ -1,25 +1,25 @@
 ---
 title: ShowMenuForPlayer
-description: Shows a previously created menu for a player.
+description: Prikazuje prethodno kreirani meni za igrača.
 tags: ["player", "menu"]
 ---
 
-## Description
+## Deskripcija
 
-Shows a previously created menu for a player.
+Prikazuje prethodno kreirani meni za igrača.
 
-| Name     | Description                                          |
-| -------- | ---------------------------------------------------- |
-| menuid   | The ID of the menu to show. Returned by CreateMenu.  |
-| playerid | The ID of the player to whom the menu will be shown. |
+| Ime      | Deskripcija                                              |
+| -------- | -------------------------------------------------------- |
+| menuid   | ID menija za prikazati. Returnovan/vraćen od CreateMenu. |
+| playerid | ID igrača kojem će meni biti prikazan.                   |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. Menu and/or player doesn't exist.
+0: Funkcija neuspješno izvršena. Menu i/ili igrač ne postoje.
 
-## Examples
+## Primjeri
 
 ```c
 new Menu:gPlayerTeleport;
@@ -37,19 +37,19 @@ if (strcmp(cmdtext, "/tele", true) == 0)
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Crashes the both server and player if an invalid menu ID given.
+Crashuje (ruši) i server i igrača ako se proslijedi nevažeći ID menija.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [CreateMenu](CreateMenu): Create a menu.
-- [AddMenuItem](AddMenuItem): Adds an item to a specified menu.
-- [SetMenuColumnHeader](SetMenuColumnHeader): Set the header for one of the columns in a menu.
-- [DestroyMenu](DestroyMenu): Destroy a menu.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Called when a player exits a menu.
+- [CreateMenu](CreateMenu): Kreiraj meni.
+- [AddMenuItem](AddMenuItem): Dodaje artikal u određeni meni.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Postavi zaglavlje za jednu kolonu u meniju.
+- [DestroyMenu](DestroyMenu): Uništi meni.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Pozvano kada igrač odabere red u meniju.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Pozvano kada igrač napusti meni.

@@ -1,22 +1,22 @@
 ---
 title: SetWeather
-description: Set the world weather for all players.
+description: Postavite vrijeme (weather) za sve igrače.
 tags: []
 ---
 
-## Description
+## Deskripcija
 
-Set the world weather for all players.
+Postavite vrijeme (weather) za sve igrače.
 
-| Name      | Description                                      |
-| --------- | ------------------------------------------------ |
-| weatherid | The [weather](../resources/weatherid) to set. |
+| Ime       | Deskripcija                                             |
+| --------- | ------------------------------------------------------- |
+| weatherid | [Vrijeme/weather](../resources/weatherid) za postaviti. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 if (!strcmp(cmdtext, "/sandstorm", true))
@@ -26,15 +26,15 @@ if (!strcmp(cmdtext, "/sandstorm", true))
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-If TogglePlayerClock is enabled, weather will slowly change over time, instead of changing instantly. There are only valid 21 weather IDs in the game (0 - 20), however the game does not have any form of range check.
+Ako je omogućen TogglePlayerClock, vrijeme će se polahko mijenjati s vremenom, umjesto da se promijeni trenutno. U igri postoje samo važeći 21 vremenski ID (0 - 20), ali igra nema bilo kakav oblik provjere dometa.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerWeather](SetPlayerWeather): Set a player's weather.
-- [SetGravity](SetGravity): Set the global gravity.
+- [SetPlayerWeather](SetPlayerWeather): Postavite vrijeme (weather) igrača.
+- [SetGravity](SetGravity): Postavite globalnu gravitaciju.

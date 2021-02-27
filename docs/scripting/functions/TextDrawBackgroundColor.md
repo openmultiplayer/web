@@ -1,66 +1,66 @@
 ---
 title: TextDrawBackgroundColor
-description: Adjusts the text draw area background color (the outline/shadow - NOT the box.
+description: Prilagođava boju pozadine područja za textdraw (obris / sjena - NE okvir).
 tags: ["textdraw"]
 ---
 
-## Description
+## Deskripcija
 
-Adjusts the text draw area background color (the outline/shadow - NOT the box. For box color, see TextDrawBoxColor).
+Prilagođava boju pozadine područja za textdraw (obris / sjena - NE box. Za boju boxa, pogledajte TextDrawBoxColor).
 
-| Name  | Description                                           |
-| ----- | ----------------------------------------------------- |
-| text  | The ID of the textdraw to set the background color of |
-| color | The color that the textdraw should be set to.         |
+| Ime   | Deskripcija                              |
+| ----- | ---------------------------------------- |
+| text  | ID textdrawa za postaviti boju pozadine. |
+| color | Boja koja će biti postavljena.           |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
+    gMyTextdraw = TextDrawCreate(320.0, 425.0, "Ovo je primjer textdrawa");
     TextDrawUseBox(gMyTextdraw, 1);
-    TextDrawBackgroundColor(gMyTextdraw, 0xFFFFFFFF); // Set the background color of MyTextdraw to white
+    TextDrawBackgroundColor(gMyTextdraw, 0xFFFFFFFF); // Postavlja pozadinu MyTextdraw-a u bijelu
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-If TextDrawSetOutline is used with size > 0, the outline color will match the color used in TextDrawBackgroundColor. Changing the value of color seems to alter the color used in TextDrawColor
+Ako je TextDrawSetOutline korišten sa veličinom > 0, boja outline-a će se uklopiti sa bojom korištenom u TextDrawBackgroundColor. Mijenjanjem vrijednosti boje se čini kao da mijenja boju korištenu u TextDrawColor.
 
 :::
 
 :::tip
 
-If you want to change the background colour of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+Ukoliko želite promijeniti boju pozadine textdrawa koji je već prikazan, ne morate ga ponovno kreirati. Prosto koristite TextDrawShowForPlayer/TextDrawShowForAll nakon uređivanja i promjena će biti vidljiva.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [TextDrawCreate](TextDrawCreate): Create a textdraw.
-- [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
-- [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
-- [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
-- [TextDrawAlignment](TextDrawAlignment): Set the alignment of a textdraw.
-- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
-- [TextDrawLetterSize](TextDrawLetterSize): Set the letter size of the text in a textdraw.
-- [TextDrawTextSize](TextDrawTextSize): Set the size of a textdraw box.
-- [TextDrawSetOutline](TextDrawSetOutline): Choose whether the text has an outline.
-- [TextDrawSetShadow](TextDrawSetShadow): Toggle shadows on a textdraw.
-- [TextDrawSetProportional](TextDrawSetProportional): Scale the text spacing in a textdraw to a proportional ratio.
-- [TextDrawUseBox](TextDrawUseBox): Toggle if the textdraw has a box or not.
-- [TextDrawSetString](TextDrawSetString): Set the text in an existing textdraw.
-- [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
-- [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
-- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
-- [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.
+- [TextDrawCreate](TextDrawCreate): Kreiraj textdraw.
+- [TextDrawDestroy](TextDrawDestroy): Uništi textdraw.
+- [TextDrawColor](TextDrawColor): Postavi boju teksta u textdrawu.
+- [TextDrawBoxColor](TextDrawBoxColor): Postavi boju boxa u textdrawu.
+- [TextDrawAlignment](TextDrawAlignment): Postavi poravnanje textdrawa.
+- [TextDrawFont](TextDrawFont): Postavi font textdrawa.
+- [TextDrawLetterSize](TextDrawLetterSize): Postavi veličinu znakova teksta u textdrawu.
+- [TextDrawTextSize](TextDrawTextSize): Postavi veličinu boxa u textdrawu.
+- [TextDrawSetOutline](TextDrawSetOutline): Odluči da li da tekst ima outline.
+- [TextDrawSetShadow](TextDrawSetShadow): Uključi/isključi sjene (shadows) na textdrawu.
+- [TextDrawSetProportional](TextDrawSetProportional): Razmjestite razmak između teksta u texstdrawu na proporcionalni omjer.
+- [TextDrawUseBox](TextDrawUseBox): Uključite ili isključite da li textdraw koristi box ili ne.
+- [TextDrawSetString](TextDrawSetString): Postavi tekst u već postojećem textdrawu.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Prikaži textdraw za određenog igrača.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer): Sakrij textdraw za određenog igrača.
+- [TextDrawShowForAll](TextDrawShowForAll): Prikaži textdraw za sve igrače.
+- [TextDrawHideForAll](TextDrawHideForAll): Sakrij textdraw za sve igrače.

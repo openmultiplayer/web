@@ -1,35 +1,39 @@
 ---
 title: valstr
-description: Convert an integer into a string.
+description: Pretvori cijeli broj u string.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-Convert an integer into a string.
+:::
 
-| Name            | Description                                       |
-| --------------- | ------------------------------------------------- |
-| dest            | The destination of the string.                    |
-| value           | The value to convert to a string.                 |
-| pack (optional) | Whether to pack the destination (off by default). |
+## Deskripcija
+
+Pretvori cijeli broj u string.
+
+| Ime             | Deskripcija                                                            |
+| --------------- | ---------------------------------------------------------------------- |
+| dest            | Odredište stringa.                                                     |
+| value           | Vrijednost koju treba pretvoriti u string.                             |
+| pack (optional) | Da li treba spakirati odredište (isključeno prema zadanim postavkama). |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 new string[4];
 new iValue = 250;
-valstr(string,iValue); // string is now "250"
+valstr(string,iValue); // string je sada "250"
 // valstr fix by Slice
 stock FIX_valstr(dest[], value, bool:pack = false)
 {
-    // format can't handle cellmin properly
+    // format ne može pravilno obraditi cellmin
     static const cellmin_value[] = !"-2147483648";
 
     if (value == cellmin)
@@ -40,15 +44,15 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 #define valstr FIX_valstr
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). fixes.inc includes this fix.
+Prosljeđivanje velike vrijednosti ovoj funkciji može dovesti do zamrzavanja / pada sistema. Dostupni su popravci. Ispod je popravak koji se može staviti ravno u vašu skriptu (prije nego što se valstr koristi bilo gdje). fixes.inc uključuje ovaj popravak.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [strval](strval): Convert a string into an integer.
-- [strcmp](strcmp): Compare two strings to check if they are the same.
+- [strval](strval): Pretvori string u cijeli broj.
+- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.

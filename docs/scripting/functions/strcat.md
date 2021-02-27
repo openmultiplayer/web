@@ -1,41 +1,45 @@
 ---
 title: strcat
-description: This function concatenates (joins together) two strings into the destination string.
+description: Ova funkcija spaja dva stringa u odredišni string.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-This function concatenates (joins together) two strings into the destination string.
+:::
 
-| Name                  | Description                                          |
-| --------------------- | ---------------------------------------------------- |
-| dest[]                | The string to store the two concatenated strings in. |
-| const source[]        | The source string.                                   |
-| maxlength=sizeof dest | The maximum length of the destination.               |
+## Deskripcija
+
+Ova funkcija spaja dva stringa u odredišni string.
+
+| Ime                   | Deskripcija                              |
+| --------------------- | ---------------------------------------- |
+| dest[]                | String za pohraniti dva spojena stringa. |
+| const source[]        | Izvorni string.                          |
+| maxlength=sizeof dest | Maksimalna dužina odredišta.             |
 
 ## Returns
 
-The length of the new destination string.
+Dužina novog odredišnog stringa.
 
-## Examples
+## Primjeri
 
 ```c
 new string[40] = "Hello";
 strcat(string, " World!");
 
-// The string is now 'Hello World!'
+// string je sada 'Hello World!'
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [strcmp](strcmp): Compare two strings to check if they are the same.
-- [strfind](strfind): Search for a string in another string.
-- [strdel](strdel): Delete part of a string.
-- [strins](strins): Insert text into a string.
-- [strlen](strlen): Get the length of a string.
-- [strmid](strmid): Extract part of a string into another string.
-- [strpack](strpack): Pack a string into a destination string.
-- [strval](strval): Convert a string into an integer.
+- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
+- [strfind](strfind): Pretraži string u drugom stringu.
+- [strdel](strdel): Obriši dio stringa.
+- [strins](strins): Unesi tekst u string.
+- [strlen](strlen): Dobij dužinu stringa.
+- [strmid](strmid): Izdvoji dio stringa u drugi string.
+- [strpack](strpack): Upakuj string u odredišni string.
+- [strval](strval): Pretvori string u cijeli broj.

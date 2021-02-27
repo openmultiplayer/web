@@ -1,33 +1,37 @@
 ---
 title: uuencode
-description: Encode a string to an UU-decoded string.
+description: Kodirajte string u UU dekodirani string.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-Encode a string to an UU-decoded string.
+:::
 
-| Name           | Description                                               |
+## Deskripcija
+
+Kodirajte string u UU dekodirani string.
+
+| Ime            | Deskripcija                                               |
 | -------------- | --------------------------------------------------------- |
-| dest[]         | The destination string for the encoded stream.            |
-| const source[] | The source, non-encoded string.                           |
-| numbytes       | The number of bytes to encode, this should not exceed 45. |
-| maxlength      | The maximum length of the dest[] array.                   |
+| dest[]         | Odredišni string za kodirani tok.                         |
+| const source[] | Izvor, nekodirani string.                                 |
+| numbytes       | Broj bajtova za kodiranje, ovaj ne smije biti veći od 45. |
+| maxlength      | Maksimalna dužina dest[] niza.                            |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 uuencode(encodedString, normalString, 45);
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [Uudecode](Undecode): Decode an UU-encoded stream.
-- [Memcpy](Memcpy): Copy bytes from one location to another.
+- [Uudecode](Uudecode): Dekodirajte UU kodirani string.
+- [Memcpy](Memcpy): Kopirajte bajtove s jedne lokacije na drugu.

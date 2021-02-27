@@ -1,29 +1,35 @@
 ---
 title: uudecode
-description: Decode an UU-encoded string.
+description: Dekodirajte UU kodirani string.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-Decode an UU-encoded string.
+:::
 
-| Name           | Description                                   |
-| -------------- | --------------------------------------------- |
-| dest[]         | The destination for the decoded string array. |
-| const source[] | The UU-encoded source string.                 |
-| maxlength      | The maximum length of dest that can be used.  |
+## Deskripcija
+
+Dekodirajte UU kodirani string.
+
+| Ime            | Deskripcija                                         |
+| -------------- | --------------------------------------------------- |
+| dest[]         | Odredište za niz dekodiranog stringa.               |
+| const source[] | Izvorni string kodiran UU.                          |
+| maxlength      | Maksimalna dužina odredišta koja se može koristiti. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 uudecode(normalString, encodedString);
 ```
 
-## Related Functions
+## Srodne Funkcije
+
+- [uuencode](Uuencode): Kodirajte string u UU dekodirani string.

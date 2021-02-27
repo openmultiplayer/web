@@ -1,25 +1,25 @@
 ---
 title: SetVehicleHealth
-description: Set a vehicle's health.
+description: Postavlja helte (zdravlje/health) vozila.
 tags: ["vehicle"]
 ---
 
-## Description
+## Deskripcija
 
-Set a vehicle's health. When a vehicle's health decreases the engine will produce smoke, and finally fire when it decreases to less than 250 (25%).
+Postavlja helte (zdravlje/health) vozila. Kada se health stanje vozila smanji, motor će stvoriti dim, a na kraju i vatru kada padne na manje od 250 (25%).
 
-| Name         | Description                                 |
-| ------------ | ------------------------------------------- |
-| vehicleid    | The ID of the vehicle to set the health of. |
-| Float:health | The health, given as a float value.         |
+| Ime          | Deskripcija                            |
+| ------------ | -------------------------------------- |
+| vehicleid    | ID vozila za postaviti stanje healtha. |
+| Float:health | Health, dat kao float vrijednost.      |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the vehicle does not exist.
+0: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 if (strcmp("/fixengine", cmdtext, true) == 0)
@@ -28,22 +28,22 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
         vehicleid = GetPlayerVehicleID(playerid);
 
     SetVehicleHealth(vehicleid, 1000);
-    SendClientMessage(playerid, COLOUR_WHITE, "The vehicles engine has been fully repaired.");
+    SendClientMessage(playerid, COLOUR_WHITE, "Motor vozila je u potpunosti popravljen.");
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Full vehicle health is 1000. Higher values are possible. For more information on health values, see [this](../resources/vehiclehealth) page.
+Ukupan health vozila je 1000. Veće vrijednosti su moguće. Za više informacija o vrijednostima healtha, pogledaj [ovu](../resources/vehiclehealth) stranicu.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
-- [RepairVehicle](RepairVehicle): Fully repair a vehicle.
-- [SetPlayerHealth](SetPlayerHealth): Set a player's health.
-- [OnVehicleDeath](../callbacks/OnVehicleDeath): Called when a vehicle is destroyed.
+- [GetVehicleHealth](GetVehicleHealth): Provjeri helte vozila.
+- [RepairVehicle](RepairVehicle): U potpunosti popravite vozilo.
+- [SetPlayerHealth](SetPlayerHealth): Postavlja igraču helte.
+- [OnVehicleDeath](../callbacks/OnVehicleDeath): Pozvano kada vozilo biva uništeno.

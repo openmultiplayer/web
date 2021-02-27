@@ -1,48 +1,48 @@
 ---
 title: StopPlayerObject
-description: Stop a moving player-object after MovePlayerObject has been used.
+description: Zaustavi player-object koji se kreće nakon što se MovePlayerObject koristio.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Stop a moving player-object after MovePlayerObject has been used.
+Zaustavi player-object koji se kreće nakon što se MovePlayerObject koristio.
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
-| playerid | The ID of the player whose player-object to stop. |
-| objectid | The ID of the player-object to stop.              |
+| Ime      | Deskripcija                                    |
+| -------- | ---------------------------------------------- |
+| playerid | ID igrača čiji player-object treba zaustaviti. |
+| objectid | ID player-object-a za zaustaviti.              |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 StopPlayerObject(playerid, objectid);
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [MovePlayerObject](MovePlayerObject): Move a player object.
-- [CreatePlayerObject](CreatePlayerObject): Create an object for only one player.
-- [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.
-- [IsValidPlayerObject](IsValidPlayerObject): Checks if a certain player object is vaild.
-- [IsPlayerObjectMoving](IsPlayerObjectMoving): Check if the player object is moving.
-- [SetPlayerObjectPos](SetPlayerObjectPos): Set the position of a player object.
-- [SetPlayerObjectRot](SetPlayerObjectRot): Set the rotation of a player object.
-- [GetPlayerObjectPos](GetPlayerObjectPos): Locate a player object.
-- [GetPlayerObjectRot](GetPlayerObjectRot): Check the rotation of a player object.
-- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Attach a player object to a player.
-- [CreateObject](CreateObject): Create an object.
-- [DestroyObject](DestroyObject): Destroy an object.
-- [IsValidObject](IsValidObject): Checks if a certain object is vaild.
-- [MoveObject](MoveObject): Move an object.
-- [IsObjectMoving](IsObjectMoving): Check if the object is moving.
-- [StopObject](StopObject): Stop an object from moving.
-- [SetObjectPos](SetObjectPos): Set the position of an object.
-- [SetObjectRot](SetObjectRot): Set the rotation of an object.
-- [GetObjectPos](GetObjectPos): Locate an object.
-- [GetObjectRot](GetObjectRot): Check the rotation of an object.
-- [AttachObjectToPlayer](AttachObjectToPlayer): Attach an object to a player.
+- [MovePlayerObject](MovePlayerObject): Pomjeri player objekat.
+- [CreatePlayerObject](CreatePlayerObject): Kreiraj objekat za samo jednog igrača.
+- [DestroyPlayerObject](DestroyPlayerObject): Uništi player objekat.
+- [IsValidPlayerObject](IsValidPlayerObject): Provjeri da li je određeni player objekat validan.
+- [IsPlayerObjectMoving](IsPlayerObjectMoving): Provjeri da li se player objekat kreće.
+- [SetPlayerObjectPos](SetPlayerObjectPos): Postavi poziciju player objekta.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Postavi rotaciju player objekta.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Lociraj player objekat.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Provjeri rotaciju player objekta.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Prikvači player objekat za igrača.
+- [CreateObject](CreateObject): Kreiraj objekat.
+- [DestroyObject](DestroyObject): Uništi objekat.
+- [IsValidObject](IsValidObject): Provjeri da li je određeni objekat validan.
+- [MoveObject](MoveObject): Pomjeri objekat.
+- [IsObjectMoving](IsObjectMoving): Provjeri da li se objekat kreće.
+- [StopObject](StopObject): Zaustavi objekat od kretanja.
+- [SetObjectPos](SetObjectPos): Postavi poziciju objekta.
+- [SetObjectRot](SetObjectRot): Postavi rotaciju objekta.
+- [GetObjectPos](GetObjectPos): Lociraj objekat.
+- [GetObjectRot](GetObjectRot): Provjeri rotaciju objekta.
+- [AttachObjectToPlayer](AttachObjectToPlayer): Prikvači objekat za igrača.

@@ -1,40 +1,44 @@
 ---
 title: strmid
-description: Extract a range of characters from a string.
+description: Izvuci niz znakova iz stringa.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-Extract a range of characters from a string.
+:::
 
-| Name                  | Description                                                          |
-| --------------------- | -------------------------------------------------------------------- |
-| dest[]                | The string to store the extracted characters in.                     |
-| const source[]        | The string from which to extract characters.                         |
-| start                 | The position of the first character.                                 |
-| end                   | The position of the last character.                                  |
-| maxlength=sizeof dest | The length of the destination. (Will be the size of dest by default) |
+## Deskripcija
+
+Izvuci niz znakova iz stringa.
+
+| Ime                   | Deskripcija                                                    |
+| --------------------- | -------------------------------------------------------------- |
+| dest[]                | String za pohraniti izdvojene karaktere.                       |
+| const source[]        | String iz kojeg se izdvajaju karakteri.                        |
+| start                 | Pozicija prvog karaktera.                                      |
+| end                   | Pozicija posljednjeg karaktera.                                |
+| maxlength=sizeof dest | Dužina odredišta. (Biće veličina dest-a po zadanim postavkama) |
 
 ## Returns
 
-The number of characters stored in dest[]
+Broj karaktera pohranjenih u dest[]
 
-## Examples
+## Primjeri
 
 ```c
-strmid(string, "Extract 'HELLO' without the !!!!: HELLO!!!!", 34, 39); //string contains "HELLO"
+strmid(string, "Extract 'HELLO' without the !!!!: HELLO!!!!", 34, 39); //string sadrži "HELLO"
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [strcmp](strcmp): Compare two strings to check if they are the same.
-- [strfind](strfind): Search for a string in another string.
-- [strins](../function/strins): Insert text into a string.
-- [strlen](../function/strlen): Get the length of a string.
-- [strpack](strpack): Pack a string into a destination string.
-- [strval](strval): Convert a string into an integer.
-- [strcat](strcat): Concatenate two strings into a destination reference.
-- [strdel](strdel): Delete part of a string.
+- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
+- [strfind](strfind): Pretraži string u drugom stringu.
+- [strins](../function/strins): Unesi tekst u string.
+- [strlen](../function/strlen): Dobij dužinu stringa.
+- [strpack](strpack): Upakuj string u odredišni string.
+- [strval](strval): Pretvori string u cijeli broj.
+- [strcat](strcat): Spojite dva stringa u odredišnu referencu.
+- [strdel](strdel): Obriši dio stringa.

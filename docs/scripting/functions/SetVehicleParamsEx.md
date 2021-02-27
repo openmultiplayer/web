@@ -1,54 +1,58 @@
 ---
 title: SetVehicleParamsEx
-description: Sets a vehicle's parameters for all players.
+description: Postavlja parametre vozila za sve igrače.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
 
-Sets a vehicle's parameters for all players.
+:::
 
-| Name      | Description                                                     |
-| --------- | --------------------------------------------------------------- |
-| vehicleid | The ID of the vehicle to set the parameters of.                 |
-| engine    | Engine status. 0 - Off, 1 - On.                                 |
-| lights    | Light status. 0 - Off, 1 - On.                                  |
-| alarm     | Vehicle alarm status. If on, the alarm starts. 0 - Off, 1 - On. |
-| doors     | Door lock status. 0 - Unlocked, 1 - Locked.                     |
-| bonnet    | Bonnet (hood) status. 0 - Closed, 1 - Open.                     |
-| boot      | Boot/trunk status. 0 - Closed, 1 - Open.                        |
-| objective | Toggle the objective arrow above the vehicle. 0 - Off, 1 - On.  |
+## Deskripcija
+
+Postavlja parametre vozila za sve igrače.
+
+| Ime       | Deskripcija                                                                             |
+| --------- | --------------------------------------------------------------------------------------- |
+| vehicleid | ID vozila za postaviti parametre.                                                       |
+| engine    | Status motora. 0 - Ugašen, 1 - Upaljen.                                                 |
+| lights    | Status svjetla. 0 - Ugašena, 1 - Upaljena.                                              |
+| alarm     | Status alarma vozila. Ako je uključen, alarm počinje. 0 - Ugašen, 1 - Upaljen.          |
+| doors     | Status zaključavanja vrata. 0 - Otključana, 1 - Zaključana.                             |
+| bonnet    | Status haube (hood). 0 - Zatvorena, 1 - Otvorena.                                       |
+| boot      | Status gepeka (boot). 0 - Zatvoren, 1 - Otvoren.                                        |
+| objective | Omogući/onemogući ciljnu (objective) strelicu iznad vozila. 0 - Onemogući, 1 - Omogući. |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the vehicle does not exist.
+0: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
-// On top of our script, declaring a global variable
+// Na vrhu naše skripte, deklarišemo globalnu varijablu
 new
     gVehicleAlarmTimer[MAX_VEHICLES] = {-1, ...};
 
-// If setting a single parameter, you should obtain the current parameters so they aren't ALL changed
+// Ako postavljate jedan parametar, trebali biste dobiti trenutne parametre kako se ne bi SVE promijenili
 new
     engine, lights, alarm, doors, bonnet, boot, objective;
 
-// Somewhere where you create the vehicle..
+// Negdje gdje kreirate vozilo..
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
-SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // ONLY the engine param was changed to VEHICLE_PARAMS_ON (1)
+SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // SAMO parametar motora je promijenjen u VEHICLE_PARAMS_ON (1)
 
-// The function
+// Funkcija
 SetVehicleParamsEx_Fixed(vehicleid, &engine, &lights, &alarm, &doors, &bonnet, &boot, &objective)
 {
     SetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
     if (alarm)
     {
-        // Kill the timer, reset the timer identifier and then restart it if it was already running
+        // Ubij tajmer, resetirajte identifikator tajmera, a zatim ga ponovo pokrenite ako je već bio pokrenut
         KillTimer(gVehicleAlarmTimer[vehicleid]);
         gVehicleAlarmTimer[vehicleid] = -1;
         gVehicleAlarmTimer[vehicleid] = SetTimerEx("DisableVehicleAlarm", 20000, false, "d", vehicleid);
@@ -72,16 +76,16 @@ public DisableVehicleAlarm(vehicleid)
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-The alarm will not reset when finished, you'll need to reset it by yourself with this function. Lights also operate during the day (Only when ManualVehicleEngineAndLights is enabled).
+Alarm se neće resetirati po završetku, morat ćete ga resetirati sami pomoću ove funkcije. Svjetla rade i danju (samo kada je omogućen ManualVehicleEngineAndLights).
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetVehicleParamsEx](GetVehicleParamsEx): Get a vehicle's parameters.
-- [SetVehicleParamsForPlayer](SetVehicleParamsForPlayer): Set the parameters of a vehicle for a player.
-- [UpdateVehicleDamageStatus](UpdateVehicleDamageStatus): Update the vehicle damage.
+- [GetVehicleParamsEx](GetVehicleParamsEx): Dobij parametre vozila.
+- [SetVehicleParamsForPlayer](SetVehicleParamsForPlayer): Postavi parametre vozila za igrača.
+- [UpdateVehicleDamageStatus](UpdateVehicleDamageStatus): Ažurirajte štetu na vozilu.

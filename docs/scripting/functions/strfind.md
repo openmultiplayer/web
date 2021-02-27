@@ -1,42 +1,46 @@
 ---
 title: strfind
-description: Search for a sub string in a string.
+description: Potraži podstring u stringu.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-Search for a sub string in a string.
+:::
 
-| Name                  | Description                                                                                               |
-| --------------------- | --------------------------------------------------------------------------------------------------------- |
-| const string[]        | The string you want to search in (haystack).                                                              |
-| const sub[]           | The string you want to search for (needle).                                                               |
-| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same. |
-| Position (optional)   | The offset to start searching from.                                                                       |
+## Deskripcija
+
+Potraži podstring u stringu.
+
+| Ime                   | Deskripcija                                                                                                                       |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| const string[]        | String u kojem želite tražiti (haystack).                                                                                         |
+| const sub[]           | String kojeg želite tražiti (needle).                                                                                             |
+| ignorecase (optional) | Kada je postavljeno na 'true', velika slova nemaju veze - HeLLo je isto kao Hello. Kada je postavljeno na 'false', oni nisu isti. |
+| Position (optional)   | Pomak od kojeg treba započeti pretragu.                                                                                           |
 
 ## Returns
 
-The number of characters before the sub string (the sub string's start position) or -1 if it's not found.
+Broj znakova prije podstringa (početna pozicija podstringa) ili -1 ako nije pronađen.
 
-## Examples
+## Primjeri
 
 ```c
-if (strfind("Are you in here?", "you", true) != -1) //returns 4, because the start of 'you' (y) is at index 4 in the string
+if (strfind("Are you in here?", "you", true) != -1) //vraća 4, zato što početak od 'you' (y) je na indexu 4 u stringu
 {
-    SendClientMessageToAll(0xFFFFFFFF, "I found you!");
+    SendClientMessageToAll(0xFFFFFFFF, "Pronašao sam te!");
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [strcmp](strcmp): Compare two strings to check if they are the same.
-- [strdel](strdel): Delete part of a string.
-- [strins](strins): Insert text into a string.
-- [strlen](strlen): Get the length of a string.
-- [strmid](strmid): Extract part of a string into another string.
-- [strpack](strpack): Pack a string into a destination string.
-- [strval](strval): Convert a string into an integer.
-- [strcat](strcat): Concatenate two strings into a destination reference.
+- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
+- [strdel](strdel): Obriši dio stringa.
+- [strins](strins): Unesi tekst u string.
+- [strlen](strlen): Dobij dužinu stringa.
+- [strmid](strmid): Izdvoji dio stringa u drugi string.
+- [strpack](strpack): Upakuj string u odredišni string.
+- [strval](strval): Pretvori string u cijeli broj.
+- [strcat](strcat): Spojite dva stringa u odredišnu referencu.

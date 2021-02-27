@@ -1,25 +1,25 @@
 ---
 title: SetVehicleZAngle
-description: Set the Z rotation (yaw) of a vehicle.
+description: Postavi Z rotaciju (yaw) vozila.
 tags: ["vehicle"]
 ---
 
-## Description
+## Deskripcija
 
-Set the Z rotation (yaw) of a vehicle.
+Postavi Z rotaciju (yaw) vozila.
 
-| Name          | Description                                   |
-| ------------- | --------------------------------------------- |
-| vehicleid     | The ID of the vehicle to set the rotation of. |
-| Float:z_angle | The Z angle to set.                           |
+| Ime           | Deskripcija                      |
+| ------------- | -------------------------------- |
+| vehicleid     | ID vozila za postaviti rotaciju. |
+| Float:z_angle | Z ugao za postaviti.             |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The vehicle specified does not exist.
+0: Funkcija neuspješno izvršena. Navedeno vozilo ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -32,7 +32,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         currentVehicle = GetPlayerVehicleID(playerid);
         GetVehicleZAngle(currentVehicle, angle);
         SetVehicleZAngle(currentVehicle, angle);
-        SendClientMessage(playerid, 0xFFFFFFFF, "Your vehicle has been flipped.");
+        SendClientMessage(playerid, 0xFFFFFFFF, "Tvoje vozilo je prevrnuto.");
         return 1;
     }
 
@@ -40,15 +40,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::**tip**
 
-A vehicle's X and Y (pitch and roll) rotation will be reset when this function is used. The X and Y rotations can not be set. This function does not work on unoccupied vehicles (It is believed to be a GTA limitation).
+Kada se koristi ova funkcija, okretanje vozila X i Y (nagib i kotrljanje) resetirat će se. Rotacije X i Y ne mogu se postaviti. Ova funkcija ne radi na neuzetim vozilima (vjeruje se da je to GTA ograničenje).
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
-- [SetVehiclePos](SetVehiclePos): Set the position of a vehicle.
+- [GetVehicleZAngle](GetVehicleZAngle): Provjerite trenutni ugao vozila.
+- [SetVehiclePos](SetVehiclePos): Postavi poziciju vozila.

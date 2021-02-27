@@ -1,61 +1,61 @@
 ---
 title: TextDrawAlignment
-description: Set the alignment of text in a text draw.
+description: Postavite poravnanje teksta u textdrawu.
 tags: ["textdraw"]
 ---
 
-## Description
+## Deskripcija
 
-Set the alignment of text in a text draw.
+Postavite poravnanje teksta u textdrawu.
 
-| Name      | Description                                     |
-| --------- | ----------------------------------------------- |
-| Text:text | The ID of the textdraw to set the alignment of. |
-| alignment | 1-left 2-centered 3-right.                      |
+| Ime       | Deskripcija                           |
+| --------- | ------------------------------------- |
+| Text:text | ID textdrawa za postaviti poravnanje. |
+| alignment | 1-lijevo 2-centrirano 3-desno.        |
 
 ## Returns
 
 Note
 
-For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at TextDrawTextSize, also position coordinate become position of center of textdraw and not left/top edges.
+Za poravnanje 2 (centrirano) x i y vrijednosti TextSize-a treba zamijeniti, pogledaj zabilješke na TextDrawTextSize, zakođer pozicija kordinata postaje pozicija centra textdrawa a ne lijevi/gornji rubovi.
 
-## Examples
+## Primjeri
 
 ```c
 new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawAlignment(gMyTextdraw, 2); // Align the textdraw text in the center
+    gMyTextdraw = TextDrawCreate(320.0, 425.0, "Ovo je primjer textdrawa");
+    TextDrawAlignment(gMyTextdraw, 2); // Poravnajte tekst za textdraw u sredinu (centar)
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) to show the changes of this function.
+Ako je textdraw već prikazan, on mora biti ponovno prikazan (TextDrawShowForAll/TextDrawShowForPlayer) kako bi se prikazale promjene ove funkcije.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [TextDrawCreate](TextDrawCreate): Create a textdraw.
-- [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
-- [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
-- [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
-- [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.
-- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
-- [TextDrawLetterSize](TextDrawLetterSize): Set the letter size of the text in a textdraw.
-- [TextDrawTextSize](TextDrawTextSize): Set the size of a textdraw box.
-- [TextDrawSetOutline](TextDrawSetOutline): Choose whether the text has an outline.
-- [TextDrawSetShadow](TextDrawSetShadow): Toggle shadows on a textdraw.
-- [TextDrawSetProportional](TextDrawSetProportional): Scale the text spacing in a textdraw to a proportional ratio.
-- [TextDrawUseBox](TextDrawUseBox): Toggle if the textdraw has a box or not.
-- [TextDrawSetString](TextDrawSetString): Set the text in an existing textdraw.
-- [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
-- [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
-- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
-- [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.
+- [TextDrawCreate](TextDrawCreate): Kreiraj textdraw.
+- [TextDrawDestroy](TextDrawDestroy): Uništi textdraw.
+- [TextDrawColor](TextDrawColor): Postavi boju teksta u textdrawu.
+- [TextDrawBoxColor](TextDrawBoxColor): Postavi boju boxa u textdrawu.
+- [TextDrawBackgroundColor](TextDrawBackgroundColor): Postavi boju pozadine textdrawa.
+- [TextDrawFont](TextDrawFont): Postavi font textdrawa.
+- [TextDrawLetterSize](TextDrawLetterSize): Postavi veličinu znakova teksta u textdrawu.
+- [TextDrawTextSize](TextDrawTextSize): Postavi veličinu boxa u textdrawu.
+- [TextDrawSetOutline](TextDrawSetOutline): Odluči da li da tekst ima outline.
+- [TextDrawSetShadow](TextDrawSetShadow): Uključi/isključi sjene (shadows) na textdrawu.
+- [TextDrawSetProportional](TextDrawSetProportional): Razmjestite razmak između teksta u texstdrawu na proporcionalni omjer.
+- [TextDrawUseBox](TextDrawUseBox): Uključite ili isključite da li textdraw koristi box ili ne.
+- [TextDrawSetString](TextDrawSetString): Postavi tekst u već postojećem textdrawu.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Prikaži textdraw za određenog igrača.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer): Sakrij textdraw za određenog igrača.
+- [TextDrawShowForAll](TextDrawShowForAll): Prikaži textdraw za sve igrače.
+- [TextDrawHideForAll](TextDrawHideForAll): Sakrij textdraw za sve igrače.

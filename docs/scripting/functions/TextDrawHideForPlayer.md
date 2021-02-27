@@ -1,23 +1,23 @@
 ---
 title: TextDrawHideForPlayer
-description: Hides a textdraw for a specific player.
+description: Sakriva textdraw za određenog igrača.
 tags: ["player", "textdraw"]
 ---
 
-## Description
+## Deskripcija
 
-Hides a textdraw for a specific player.
+Sakriva textdraw za određenog igrača.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player that the textdraw should be hidden for |
-| text     | The ID of the textdraw to hide                              |
+| Ime      | Deskripcija                                   |
+| -------- | --------------------------------------------- |
+| playerid | ID igrača za kojeg će textdraw biti sakriven. |
+| text     | ID textdrawa za sakriti.                      |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 new Text: gMyTextdraw;
@@ -47,8 +47,8 @@ public OnPlayerDeath(playerid, reason)
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.
-- [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
-- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+- [TextDrawHideForAll](TextDrawHideForAll): Sakrij textdraw za sve igrače.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Prikaži textdraw za određenog igrača.
+- [TextDrawShowForAll](TextDrawShowForAll): Prikaži textdraw za sve igrače.

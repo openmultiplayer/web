@@ -1,26 +1,30 @@
 ---
 title: TextDrawSetPreviewVehCol
-description: If a vehicle model is used in a 3D preview textdraw, this sets the two colour values for that vehicle.
+description: Ako je model vozila korišten u 3D textdraw pregledu (3D preview textdraw), ovo postavlja dvije vrijednosti boja za to vozilo.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
 
-If a vehicle model is used in a 3D preview textdraw, this sets the two colour values for that vehicle.
+:::
 
-| Name   | Description                                                        |
-| ------ | ------------------------------------------------------------------ |
-| text   | The textdraw id that is set to display a 3D vehicle model preview. |
-| color1 | The primary Color ID to set the vehicle to.                        |
-| color2 | The secondary Color ID to set the vehicle to.                      |
+## Deskripcija
+
+Ako je model vozila korišten u 3D textdraw pregledu (3D preview textdraw), ovo postavlja dvije vrijednosti boja za to vozilo.
+
+| Ime    | Deskripcija                                                                |
+| ------ | -------------------------------------------------------------------------- |
+| text   | ID textdrawa koji je postavljen za prikazivanje pregleda 3D modela vozila. |
+| color1 | ID Primarne boje za postaviti vozilu.                                      |
+| color2 | ID Sekundarne boje za postaviti vozilu.                                    |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 new Text: gMyTextdraw;
@@ -32,25 +36,25 @@ public OnGameModeInit()
     TextDrawUseBox(gMyTextdraw, 1);
     TextDrawBoxColor(gMyTextdraw, 0x000000FF);
     TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
-    TextDrawSetPreviewModel(gMyTextdraw, 411); // Display model 411 (Infernus)
-    TextDrawSetPreviewVehCol(gMyTextdraw, 6, 6); // Set the Infernus to have colour 6 (Yellow)
+    TextDrawSetPreviewModel(gMyTextdraw, 411); // Prikaži model 411 (Infernus)
+    TextDrawSetPreviewVehCol(gMyTextdraw, 6, 6); // Postavi infernusu boju 6 (Žuta)
 
-    // You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
+    // Još uvijek moraš da koristiš TextDrawShowForAll/TextDrawShowForPlayer kako bi textdraw bio vidljiv.
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for this function to have effect.
+Textdraw MORA korisiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkcija imala efekta.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [TextDrawSetPreviewModel](TextDrawSetPreviewModel): Set the 3D preview model of a textdraw.
-- [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Set rotation of a 3D textdraw preview.
-- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
+- [TextDrawSetPreviewModel](TextDrawSetPreviewModel): Postavi 3D pregled modela textdrawa.
+- [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Postavlja rotaciju 3D prikaza u textdraw-u.
+- [TextDrawFont](TextDrawFont): Postavi font textdrawa.
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Pozvano kada igrač klikne na textdraw.

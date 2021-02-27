@@ -1,25 +1,29 @@
 ---
 title: TextDrawSetPreviewModel
-description: Set the model for a textdraw model preview.
+description: Postavi Model za textdraw prikaz modela.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
 
-Set the model for a textdraw model preview. Click here to see this function's effect.
+:::
 
-| Name       | Description                                       |
-| ---------- | ------------------------------------------------- |
-| text       | The textdraw id that will display the 3D preview. |
-| modelindex | The GTA SA or SA:MP model ID to display.          |
+## Deskripcija
+
+Postavi Model za textdraw prikaz modela. Klikni ovdje da vidiš efekat ove funkcije.
+
+| Ime        | Deskripcija                                |
+| ---------- | ------------------------------------------ |
+| text       | ID textdrawa koji će prikazati 3D pregled. |
+| modelindex | GTA SA ili SA:MP model ID za prikazati.    |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 new Text:textdraw;
@@ -31,33 +35,33 @@ public OnGameModeInit()
     TextDrawUseBox(textdraw, 1);
     TextDrawBoxColor(textdraw, 0x000000FF);
     TextDrawTextSize(textdraw, 40.0, 40.0);
-    TextDrawSetPreviewModel(textdraw, 411); //Display model 411 (Infernus)
-        //TextDrawSetPreviewModel(textdraw, 1); //Display model 1 (CJ Skin)
-        //TextDrawSetPreviewModel(textdraw, 18646); //Display model 18646 (Police light object)
+    TextDrawSetPreviewModel(textdraw, 411); //Prikaži model 411 (Infernus)
+        //TextDrawSetPreviewModel(textdraw, 1); //Prikaži model 1 (CJ Skin)
+        //TextDrawSetPreviewModel(textdraw, 18646); //Prikaži model 18646 (Police light objekat)
 
-    //You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
+    //Još uvijek moraš da koristiš TextDrawShowForAll/TextDrawShowForPlayer kako bi textdraw bio vidljiv.
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Use TextDrawBackgroundColor to set the background color behind the model.
+Koristi TextDrawBackgroundColor da postaviš boju pozadine iza Modela.
 
 :::
 
 :::warning
 
-The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for this function to have effect.
+Textdraw MORA korisiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkcija imala efekta.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Set rotation of a 3D textdraw preview.
-- [TextDrawSetPreviewVehCol](TextDrawSetPreviewVehCol): Set the colours of a vehicle in a 3D textdraw preview.
-- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
-- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Set model ID of a 3D player textdraw preview.
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
+- [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Postavlja rotaciju 3D prikaza u textdraw-u.
+- [TextDrawSetPreviewVehCol](TextDrawSetPreviewVehCol): Postavi boju vozila u 3D pregledu modela textdrawa.
+- [TextDrawFont](TextDrawFont): Postavi font textdrawa.
+- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Postavlja ID modela 3D prikaza u player-textdrawu.
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Pozvano kada igrač klikne na textdraw.

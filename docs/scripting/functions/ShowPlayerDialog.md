@@ -1,35 +1,39 @@
 ---
 title: ShowPlayerDialog
-description: Shows the player a synchronous (only one at a time) dialog box.
+description: Prikazuje igraču za sinkroni (samo jedan po jedan) dijaloški box.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Shows the player a synchronous (only one at a time) dialog box.
+:::
 
-| Name      | Description                                                                                                                             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player to show the dialog to.                                                                                             |
-| dialogid  | An ID to assign this dialog to, so responses can be processed. Max dialogid is 32767. Using negative values will close any open dialog. |
-| style     | The [style](../resources/dialogstyles) of the dialog.                                                                                |
-| caption[] | The title at the top of the dialog. The length of the caption can not exceed more than 64 characters before it starts to cut off.       |
-| info[]    | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                  |
-| button1[] | The text on the left button.                                                                                                            |
-| button2[] | The text on the right button. Leave it blank ( "" ) to hide it.                                                                         |
+## Deskripcija
+
+Prikazuje igraču za sinkroni (samo jedan po jedan) dijaloški box.
+
+| Ime       | Deskripcija                                                                                                                                                                  |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | ID igrača za prikazati dijalog.                                                                                                                                              |
+| dialogid  | ID kojem treba dodijeliti ovaj dijalog, tako da se odgovori mogu obraditi. Maksimalni dialogid je 32767. Upotreba negativnih vrijednosti zatvorit će svaki otvoreni dijalog. |
+| style     | [Stil](../resources/dialogstyles) dijaloga.                                                                                                                                  |
+| caption[] | Naslov na vrhu dijaloga. Dužina opisa ne može premašiti više od 64 znaka prije nego što se počne odsjeći.                                                                    |
+| info[]    | Tekst za prikaz u glavnom dijaloškom okviru. Koristite \n za započinjanje novog retka i \t za tabeliranje.                                                                   |
+| button1[] | Tekst na lijevom dugmetu.                                                                                                                                                    |
+| button2[] | Tekst na desnom dugmetu. Ostavite ga praznog ( "" ) da ga sakrijete.                                                                                                         |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the player is not connected.
+0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
-## Examples
+## Primjeri
 
 ```c
-// Define the dialog IDs either with an enum:
+// Definiraj ID-eve dijaloga sa enumom
 enum
 {
     DIALOG_NULL,
@@ -38,48 +42,48 @@ enum
     DIALOG_WEAPONS
 }
 
-// Alternatively, using macros:
+// Alternativno, koristi macros:
 #define DIALOG_NULL 0
 #define DIALOG_LOGIN 1
 #define DIALOG_WELCOME 2
 #define DIALOG_WEAPONS 3
 
-// Enums are recommended, as you don't have to keep track of used IDs. However, enums use memory to store the defines, whereas defines are processed in the 'pre-processor' (compiling) stage.
+// Enums su preporučljivi, jer ne morate pratiti korištene ID-ove. Međutim, enumi koriste memoriju za pohranjivanje definicija, dok se definicije obrađuju u fazi 'pretprocesora' (kompajliranja).
 
-// Example for DIALOG_STYLE_MSGBOX:
-ShowPlayerDialog(playerid, DIALOG_WELCOME, DIALOG_STYLE_MSGBOX, "Notice", "You are connected to the server", "Close", "");
+// Primjer za DIALOG_STYLE_MSGBOX:
+ShowPlayerDialog(playerid, DIALOG_WELCOME, DIALOG_STYLE_MSGBOX, "Notice", "Konektovan si na server", "Close", "");
 
-// Example for DIALOG_STYLE_INPUT:
-ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Enter your password below:", "Login", "Cancel");
+// Primjer za DIALOG_STYLE_INPUT:
+ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Unesite svoju lozinku ispod:", "Login", "Cancel");
 
-// Example for DIALOG_STYLE_LIST:
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons", "AK47\nM4\nSniper Rifle", "Option 1", "Option 2");
+// Primjer za DIALOG_STYLE_LIST:
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Oruzja", "AK47\nM4\nSniper Rifle", "Option 1", "Option 2");
 
-// Example for DIALOG_STYLE_PASSWORD:
-ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "Login", "Enter your password below:", "Login", "Cancel");
+// Primjer za DIALOG_STYLE_PASSWORD:
+ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "Login", "Unesite svoju lozinku ispod:", "Login", "Cancel");
 
-// Example for DIALOG_STYLE_TABLIST:
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST, "Buy Weapon", "Deagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Select", "Cancel");
+// Primjer za DIALOG_STYLE_TABLIST:
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST, "Kupi oruzje", "Deagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Select", "Cancel");
 
 // Example for DIALOG_STYLE_TABLIST_HEADERS:
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy Weapon", "Weapon\tPrice\tAmmo\nDeagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Select", "Cancel");
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Kupi oruzje", "Weapon\tPrice\tAmmo\nDeagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Select", "Cancel");
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-It is recommended to use enumerations (see above) or definitions (#define) to determine which IDs dialogs have, to avoid confusion in the future. You should never use literal numbers for IDs - it gets confusing.
+Preporučuje se upotreba enuma (vidi gore) ili definicija (#define) da bi se utvrdilo koji ID dijalozi imaju, kako bi se izbjegla zabuna u budućnosti. Nikada ne biste trebali koristiti doslovne brojeve za ID-ove - postaje zbunjujuće.
 
 :::
 
 :::tip
 
-Use color embedding for multiple colors in the text. Using -1 as dialogid closes all dialogs currently shown on the client's screen.
+Koristite ugrađivanje boja za više boja u tekstu. Korišćenje -1 kao dijalogida zatvara sve dijaloge koji su trenutno prikazani na ekranu klijenta.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
-- [OnDialogResponse](../callbacks/OnDialogResponse): Called when a player responds to a dialog.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Prikaži textdraw za određenog igrača.
+- [OnDialogResponse](../callbacks/OnDialogResponse): Pozvano kada igrač odgovori na dijalog.

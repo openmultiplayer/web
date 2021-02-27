@@ -1,33 +1,33 @@
 ---
 title: SetVehicleParamsForPlayer
-description: Set the parameters of a vehicle for a player.
+description: Postavi parametre vozila za igrača.
 tags: ["player", "vehicle"]
 ---
 
-## Description
+## Deskripcija
 
-Set the parameters of a vehicle for a player.
+Postavi parametre vozila za igrača.
 
-| Name        | Description                                                                                   |
-| ----------- | --------------------------------------------------------------------------------------------- |
-| vehicle     | The ID of the vehicle to set the parameters of.                                               |
-| playerid    | The ID of the player to set the vehicle's parameters for.                                     |
-| objective   | 0 to disable the objective or 1 to show it. This is a bobbing yellow arrow above the vehicle. |
-| doorslocked | 0 to unlock the doors or 1 to lock them.                                                      |
+| Ime         | Deskripcija                                                                                         |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| vehicle     | ID vozila za postaviti parametre.                                                                   |
+| playerid    | ID igrača za kojeg treba postaviti parametre vozila.                                                |
+| objective   | 0 da onemogućite cilj (objective) ili 1 da ga prikažete. Ovo je klimava žuta strelica iznad vozila. |
+| doorslocked | 0 za otključati vrata ili 1 da ih zaključate.                                                       |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The player and/or vehicle specified do not exist.
+0: Funkcija neuspješno izvršena. Navedeni igrač i/ili vozilo ne postoje.
 
-## Examples
+## Primjeri
 
 ```c
-// sometime earlier:
+// nekad ranije:
 SetVehicleParamsForPlayer(iPlayerVehicle, iPlayerID, 1, 0);
 
-// sometime later when you want the vehicle to respawn:
+// nekad kasnije kada želite respawnovati auto:
 new
     iEngine, iLights, iAlarm,
     iDoors, iBonnet, iBoot,
@@ -35,12 +35,12 @@ new
 
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
 SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, 0);
-// Locks own car for all players, except the player who used the command.
+// Zaključava svoje vozilo za sve igrače, osim igrača koji je koristio komandu.
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext,"/lock",true))
     {
-        if (!IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid,0xFFFFFFAA,"You have to be inside a vehicle.");
+        if (!IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid,0xFFFFFFAA,"Moraš biti unutar vozila.");
         for (new i = 0; i < MAX_PLAYERS; i++)
         {
             if (i == playerid) continue;
@@ -53,11 +53,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 // Will show vehicle markers for players streaming in for 0.3a+
 new iVehicleObjective[MAX_VEHICLES][2];
 
-public OnGameModeInit() //Or another callback
+public OnGameModeInit() //ili drugi callback
 {
     new temp = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0,0, -1); //ID 1
     iVehicleObjective[temp][0] = 1; //Marker
-    iVehicleObjective[temp][1] = 0; //Door Lock
+    iVehicleObjective[temp][1] = 0; //Zaklujčavanje vrata
     return 1;
 }
 
@@ -77,35 +77,35 @@ new myMarkedCar;
 
 public OnGameModeInit() //Or another callback
 {
-    myMarkedCar = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0,0, -1); //For example: Black Landstalker near Blueberry Acres
+    myMarkedCar = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0,0, -1); //Npr: Black Landstalker u blizini Blueberry Acres-a
     return 1;
 }
 
-//Whatever your want
+//Gdje god želite
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     if (vehicleid == myMarkedCar)
     {
-        SetVehicleParamsForPlayer(myMarkedCar, forplayerid, 1, 0); // marker can be visible only if the vehicle streamed for player
+        SetVehicleParamsForPlayer(myMarkedCar, forplayerid, 1, 0); // marker može biti vidljiv samo ako je vozilo učitano za igrača
     }
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Vehicles must be respawned for the 'objective' to be removed.
+Vozila se moraju respawnovati kako bi se 'objective' uklonio.
 
 :::
 
 :::warning
 
-Since 0.3a you will have to reapply this function when OnVehicleStreamIn is called.
+Od 0.3a verzije morati ćete ponovo primijeniti ovu funkciju kada je OnVehicleStreamIn pozvan.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetVehicleParamsEx](SetVehicleParamsEx): Sets a vehicle's params for all players.
+- [SetVehicleParamsEx](SetVehicleParamsEx): Postavlja parametre vozila za sve igrače.

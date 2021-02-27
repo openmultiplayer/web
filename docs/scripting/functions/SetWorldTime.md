@@ -1,44 +1,44 @@
 ---
 title: SetWorldTime
-description: Sets the world time (for all players) to a specific hour.
+description: Postavlja vrijeme svijeta (za sve igrače) na određeni sat.
 tags: []
 ---
 
-## Description
+## Deskripcija
 
-Sets the world time (for all players) to a specific hour.
+Postavlja vrijeme svijeta (za sve igrače) na određeni sat.
 
-| Name | Description            |
-| ---- | ---------------------- |
-| hour | The hour to set (0-23) |
+| Ime  | Deskripcija             |
+| ---- | ----------------------- |
+| hour | Sat za postaviti (0-23) |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
-// Set the time to 12 o'clock (noon)
+// Postavi vrijeme na 12 sati (podne)
 SetWorldTime(12);
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-This function is only relevant for players that do not use a passing clock - see TogglePlayerClock.
+Ova je funkcija relevantna samo za igrače koji ne koriste sat koji prolazi - pogledajte TogglePlayerClock.
 
 :::
 
 :::tip
 
-To set the minutes and/or to set the time for individual players, see SetPlayerTime.
+Da biste postavili minute i/ili postavili vrijeme za pojedine igrače, pogledajte SetPlayerTime.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerTime](SetPlayerTime): Set a player's time.
-- [SetWeather](SetWeather): Set the global weather.
-- [SetGravity](SetGravity): Set the global gravity.
+- [SetPlayerTime](SetPlayerTime): Postavi igraču vrijeme.
+- [SetWeather](SetWeather): Postavite globalno vrijeme (weather).
+- [SetGravity](SetGravity): Postavite globalnu gravitaciju.

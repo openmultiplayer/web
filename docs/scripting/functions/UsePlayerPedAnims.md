@@ -1,14 +1,14 @@
 ---
 title: UsePlayerPedAnims
-description: Uses standard player walking animation (animation of the CJ skin) instead of custom animations for every skin (e.
+description: Koristi standardnu ​​animaciju hodanja igrača (animacija CJ kože) umjesto prilagođenih animacija za svaku kožu (npr. Klizanje za kože klizača).
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Uses standard player walking animation (animation of the CJ skin) instead of custom animations for every skin (e.g. skating for skater skins).
+Koristi standardnu ​​animaciju hodanja igrača (animacija CJ kože) umjesto prilagođenih animacija za svaku kožu (npr. Klizanje za kože klizača).
 
-## Examples
+## Primjeri
 
 ```c
 public OnGameModeInit()
@@ -18,15 +18,15 @@ public OnGameModeInit()
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Only works when placed under OnGameModeInit. Not using this function causes two-handed weapons (not dual-handed - a single weapon that is held by both hands) to be held in only one hand.
+Radi samo kada se postavi pod OnGameModeInit. Neupotreba ove funkcije dovodi do toga da se dvoručno oružje (ne dvostruko - jedno oružje koje drže obje ruke) drži u samo jednoj ruci.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.
-- [ClearAnimations](ClearAnimations): Clear any animations a player is performing.
+- [ApplyAnimation](ApplyAnimation): Primijeni animaciju na igrača.
+- [ClearAnimations](ClearAnimations): Očisti svaku animaciju koju igrač izvodi.

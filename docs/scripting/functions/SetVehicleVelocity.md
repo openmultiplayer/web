@@ -1,29 +1,33 @@
 ---
 title: SetVehicleVelocity
-description: Sets the X, Y and Z velocity of a vehicle.
+description: Postavlja X, Y i Z brzinu vozila.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Sets the X, Y and Z velocity of a vehicle.
+:::
 
-| Name      | Description                                   |
-| --------- | --------------------------------------------- |
-| vehicleid | The ID of the vehicle to set the velocity of. |
-| Float:X   | The velocity in the X direction.              |
-| Float:Y   | The velocity in the Y direction .             |
-| Float:Z   | The velocity in the Z direction.              |
+## Deskripcija
+
+Postavlja X, Y i Z brzinu vozila.
+
+| Ime       | Deskripcija                    |
+| --------- | ------------------------------ |
+| vehicleid | ID vozila za postaviti brzinu. |
+| Float:X   | Brzina u X smjeru.             |
+| Float:Y   | Brzina u Y smjeru.             |
+| Float:Z   | Brzina u Z smjeru.             |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The vehicle does not exist.
+0: Funkcija neuspješno izvršena. Vozilo ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -39,12 +43,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-This function has no affect on un-occupied vehicles and does not affect trains.
+Ova funkcija ne utječe na vozila koja nisu zauzeta i ne utječe na vlakove.
 
 :::
 
-## Related Functions
+## Srodne Funkcije

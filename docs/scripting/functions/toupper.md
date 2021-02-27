@@ -1,34 +1,38 @@
 ---
 title: toupper
-description: This function changes a single character to uppercase.
+description: Ova funkcija mijenja jedan znak u veliko slovo.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-This function changes a single character to uppercase.
+:::
 
-| Name | Description                           |
-| ---- | ------------------------------------- |
-| c    | The character to change to uppercase. |
+## Deskripcija
+
+Ova funkcija mijenja jedan znak u veliko slovo.
+
+| Ime | Deskripcija                         |
+| --- | ----------------------------------- |
+| c   | Znak za promijeniti u veliko slovo. |
 
 ## Returns
 
-The ASCII value of the character provided, but in uppercase.
+Vrijednost ASCII znaka, ali velikim slovima.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerText(playerid, text[])
 {
     text[0] = toupper(text[0]);
-    //This sets the first character to upper case.
+    //Ovo postavlja prvi znak u veliko slovo
     return 1;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [tolower](tolower)
+- [tolower](tolower): Ova funkcija mijenja jedan znak u malo slovo.

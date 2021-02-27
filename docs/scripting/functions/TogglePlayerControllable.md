@@ -1,36 +1,36 @@
 ---
 title: TogglePlayerControllable
-description: Toggles whether a player can control their character or not.
+description: Uključuje / isključuje da li igrač može kontrolirati svog lika ili ne.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Toggles whether a player can control their character or not. The player will also be unable to move their camera.
+Uključuje / isključuje da li igrač može kontrolirati svog lika ili ne.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to toggle the controllability of       |
-| toggle   | 0 to make them uncontrollable, 1 to make them controllable. |
+| Ime      | Deskripcija                                       |
+| -------- | ------------------------------------------------- |
+| playerid | ID igrača za prebacivanje mogućnosti upravljanja. |
+| toggle   | 0 da ne mogu kontrolisati, 1 da mogu.             |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The player specified does not exist.
+0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-     // Freezes a player when they types /freezeme
+     // Zaledi igrača kada napiše /freezeme
      if (strcmp(cmdtext, "/freezeme", true) == 0)
      {
           TogglePlayerControllable(playerid,0);
           return 1;
      }
-     // Unfreezes a player when they types /unfreezeme
+     // Odledi igrača kada napiše /unfreezeme
      if (strcmp(cmdtext, "/unfreezeme", true) == 0)
      {
           TogglePlayerControllable(playerid,1);
@@ -40,4 +40,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Related Functions
+## Srodne Funkcije

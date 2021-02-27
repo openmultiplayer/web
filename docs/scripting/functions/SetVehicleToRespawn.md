@@ -1,27 +1,27 @@
 ---
 title: SetVehicleToRespawn
-description: Sets a vehicle back to the position at where it was created.
+description: Postavlja vozila nazad na poziciju gdje je kreirano.
 tags: ["vehicle"]
 ---
 
-## Description
+## Deskripcija
 
-Sets a vehicle back to the position at where it was created.
+Postavlja vozila nazad na poziciju gdje je kreirano.
 
-| Name      | Description                      |
-| --------- | -------------------------------- |
-| vehicleid | The ID of the vehicle to respawn |
+| Ime       | Deskripcija          |
+| --------- | -------------------- |
+| vehicleid | ID vozila za respawn |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The vehicle does not exist
+0: Funkcija neuspješno izvršena. Vozilo ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
-// Respawns the first vehicle.
+// Respawnuje prvo vozilo.
 SetVehicleToRespawn(1);
 for(new i = GetVehiclePoolSize(); i > 0; i--)
 {
@@ -29,7 +29,7 @@ for(new i = GetVehiclePoolSize(); i > 0; i--)
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [CreateVehicle](CreateVehicle): Create a vehicle.
-- [DestroyVehicle](DestroyVehicle): Destroy a vehicle.
+- [CreateVehicle](CreateVehicle): Kreiraj vozilo.
+- [DestroyVehicle](DestroyVehicle): Uništi vozilo.

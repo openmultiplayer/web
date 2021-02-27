@@ -1,24 +1,28 @@
 ---
 title: StopPlayerHoldingObject
-description: Removes attached objects.
+description: Uklanja prikvačene objekte.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3b i ne radi u nižim verzijama!
 
-Removes attached objects.
+:::
 
-| Name     | Description                                          |
-| -------- | ---------------------------------------------------- |
-| playerid | ID of the player you want to remove the object from. |
+## Deskripcija
+
+Uklanja prikvačene objekte.
+
+| Ime      | Deskripcija                                         |
+| -------- | --------------------------------------------------- |
+| playerid | ID igrača kojem želite ukloniti prikvačeni objekat. |
 
 ## Returns
 
-1 on success, 0 on failure
+1 pri uspjehu, 0 pri grešci
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -31,14 +35,14 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-This function was removed in SA-MP 0.3c. check RemovePlayerAttachedObject
+Je uklonjena u SA-MP 0.3c. provjerite RemovePlayerAttachedObject
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerHoldingObject](SetPlayerHoldingObject): Attaches an object to a bone.
+- [SetPlayerHoldingObject](SetPlayerHoldingObject): Pričvršćuje objekat za kost.

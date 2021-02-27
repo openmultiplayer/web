@@ -1,49 +1,49 @@
 ---
 title: SetTimer
-description: Sets a 'timer' to call a function after some time.
+description: Postavlja 'timer' za pozvati funkciju nakon određenog vremena.
 tags: []
 ---
 
-## Description
+## Deskripcija
 
-Sets a 'timer' to call a function after some time. Can be set to repeat.
+Postavlja 'timer' za pozvati funkciju nakon određenog vremena. Može biti postavljen da se ponavlja.
 
-| Name       | Description                                                                                                                     |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| funcname[] | Name of the function to call as a string. This must be a public function (forwarded). A null string here will crash the server. |
-| interval   | Interval in milliseconds.                                                                                                       |
-| repeating  | Boolean (true/false) on whether the timer should repeat or not.                                                                 |
+| Ime        | Deskripcija                                                                                                           |
+| ---------- | --------------------------------------------------------------------------------------------------------------------- |
+| funcname[] | Ime funkcije za pozvati kao string. Ovo mora biti public/javna funkcija (forwarded). Prazan string će srušiti server. |
+| interval   | Interval u milisekundama.                                                                                             |
+| repeating  | Boolean (true/false) o tome treba li tajmer ponoviti ili ne.                                                          |
 
 ## Returns
 
-The ID of the timer that was started. Timer IDs start at 1.
+ID tajmera koji je pokrenut. ID-ovi tajmera počinju od 1.
 
-## Examples
+## Primjeri
 
 ```c
 forward message();
 
 public OnGameModeInit()
 {
-    print("Starting timer...");
-    SetTimer("message", 1000, false); // Set a timer of 1000 miliseconds (1 second)
+    print("Pokrecemo tajmer...");
+    SetTimer("message", 1000, false); // Postavi tajmer od 1000 milisekundi (1 sekunda)
 }
 
 public message()
 {
-    print("1 second has passed.");
+    print("1 sekunda je prošla.");
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Timer intervals are not accurate (roughly 25% off). There are fixes available here and here. Timer IDs are never used twice. You can use KillTimer() on a timer ID and it won't matter if it's running or not. The function that should be called, must be public, meaning it has to be forwarded. The use of many timers will result in increased memory/cpu usage.
+Intervali tajmera nisu tačni (otprilike 25% popusta). Postoje ispravci dostupni ovdje i ovdje. ID-ovi tajmera nikada se ne koriste dva puta. Možete koristiti KillTimer () na ID-u tajmera i neće biti važno pokreće li se ili ne. Funkcija koju treba pozvati mora biti javna, što znači da mora biti proslijeđena. Korištenje mnogih tajmera rezultirat će povećanom upotrebom memorije / procesora.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetTimerEx](SetTimerEx): Set a timer with parameters.
-- [KillTimer](KillTimer): Stop a timer.
+- [SetTimerEx](SetTimerEx): Postavi tajmer sa parametrima.
+- [KillTimer](KillTimer): Zaustavi tajmer.

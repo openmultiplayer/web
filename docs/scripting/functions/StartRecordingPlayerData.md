@@ -1,26 +1,30 @@
 ---
 title: StartRecordingPlayerData
-description: Starts recording a player's movements to a file, which can then be reproduced by an NPC.
+description: Počinje snimati pokrete igrača u datoteku, koju NPC može reproducirati.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Starts recording a player's movements to a file, which can then be reproduced by an NPC.
+:::
 
-| Name         | Description                                                                                                                                                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | The ID of the player to record.                                                                                                                                                                                               |
-| recordtype   | The [type](../resources/recordtypes) of recording.                                                                                                                                                                         |
-| recordname[] | The name of the file which will hold the recorded data. It will be saved in the scriptfiles directory, with an automatically added .rec extension, you will need to move the file to npcmodes/recordings to use for playback. |
+## Deskripcija
+
+Počinje snimati pokrete igrača u datoteku, koju NPC može reproducirati.
+
+| Ime          | Deskripcija                                                                                                                                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | ID igrača za snimati.                                                                                                                                                                                                               |
+| recordtype   | [Tip](../resources/recordtypes) snimke.                                                                                                                                                                                             |
+| recordname[] | Ime datoteke koja će sadržavati snimljene podatke. Bit će spremljen u direktorij skript datoteka, s automatski dodanom .rec ekstenzijom, morat ćete datoteku premjestiti u npcmodes / snimke da biste je koristili za reprodukciju. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 if (!strcmp("/recordme", cmdtext))
@@ -33,11 +37,11 @@ if (!strcmp("/recordme", cmdtext))
     {
         StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_DRIVER, "MyFile");
     }
-    SendClientMessage(playerid, 0xFFFFFFFF, "All your movements are now being recorded!");
+    SendClientMessage(playerid, 0xFFFFFFFF, "Svi vaši pokreti su sada zabilježeni!");
     return 1;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [StopRecordingPlayerData](StopRecordingPlayerData): Stops recording player data.
+- [StopRecordingPlayerData](StopRecordingPlayerData): Zaustavlja snimanje podataka sa igrača.

@@ -1,51 +1,55 @@
 ---
 title: Update3DTextLabelText
-description: Updates a 3D Text Label text and color.
+description: Ažurira text i boju 3D Text Labela.
 tags: ["3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Updates a 3D Text Label text and color.
+:::
 
-| Name      | Description                                                   |
-| --------- | ------------------------------------------------------------- |
-| Text3D:id | The 3D Text Label you want to update.                         |
-| color     | The color the 3D Text Label should have from now on.          |
-| text[]    | The new text which the 3D Text Label should have from now on. |
+## Deskripcija
+
+Ažurira text i boju 3D Text Labela.
+
+| Ime       | Deskripcija                                     |
+| --------- | ----------------------------------------------- |
+| Text3D:id | 3D Text Label kojeg želite ažurirati.           |
+| color     | Boja 3D Text Labela kojeg će od sada imati.     |
+| text[]    | Novi text kojeg će 3D Text Label od sada imati. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnGameModeInit()
 {
     new Text3D: mylabel;
-    mylabel = Create3DTextLabel("I'm at the coordinates:\n30.0,40.0,50.0", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0);
+    mylabel = Create3DTextLabel("Ja sam na kordinatama:\n30.0,40.0,50.0", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0);
     Update3DTextLabelText(mylabel, 0xFFFFFFFF, "New text.");
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-If text[] is empty, the server/clients next to the text might crash!
+Ako je text[] prazan, server/client-i pored texta će možda crashovati.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
-- [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
-- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
-- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
-- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
-- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
-- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.
+- [Create3DTextLabel](Create3DTextLabel): Kreiraj 3D text label.
+- [Delete3DTextLabel](Delete3DTextLabel): Obriši 3D text label.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Prikvači 3D text label za igrača.
+- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Prikvači 3D text label za vozilo.
+- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Kreiraj 3D text label za jednog igrača.
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Obriši igračev 3D text label.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Promijeni tekst igračevog 3D text labela.

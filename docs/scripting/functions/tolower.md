@@ -1,34 +1,38 @@
 ---
 title: tolower
-description: This function changes a single character to lowercase.
+description: Ova funkcija mijenja jedan znak u malo slovo.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-This function changes a single character to lowercase.
+:::
 
-| Name | Description                           |
-| ---- | ------------------------------------- |
-| c    | The character to change to lowercase. |
+## Deskripcija
+
+Ova funkcija mijenja jedan znak u malo slovo.
+
+| Ime | Deskripcija                         |
+| --- | ----------------------------------- |
+| c   | Znak za promijeniti u veliko slovo. |
 
 ## Returns
 
-The ASCII value of the character provided as lowercase.
+Vrijednost ASCII znaka, ali malim slovima.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerText(playerid, text[])
 {
     text[0] = tolower(text[0]);
-    //This sets the first character to lowercase.
+    //Ovo postavlja prvi karakter u malo slovo
     return 1;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [toupper](toupper)
+- [toupper](toupper): Ova funkcija mijenja jedan znak u veliko slovo.

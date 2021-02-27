@@ -1,46 +1,50 @@
 ---
 title: UpdateVehicleDamageStatus
-description: Sets the various visual damage statuses of a vehicle, such as popped tires, broken lights and damaged panels.
+description: Postavlja različite statuse vizuelnog oštećenja vozila, kao što su ispucale gume, slomljena svjetla i oštećeni paneli.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-:::tip
-
-For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus).
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
 :::
 
-## Description
+:::tip
 
-Sets the various visual damage statuses of a vehicle, such as popped tires, broken lights and damaged panels.
+Za neke korisne funkcije za rad s vrijednostima oštećenja vozila pogledajte [ovdje](../resources/damagestatus).
 
-| Name      | Description                                       |
+:::
+
+## Deskripcija
+
+Postavlja različite statuse vizuelnog oštećenja vozila, kao što su ispucale gume, slomljena svjetla i oštećeni paneli.
+
+| Ime       | Deskripcija                                       |
 | --------- | ------------------------------------------------- |
-| vehicleid | The ID of the vehicle to set the damage of.       |
-| panels    | A set of bits containing the panel damage status. |
-| doors     | A set of bits containing the door damage status.  |
-| lights    | A set of bits containing the light damage status. |
-| tires     | A set of bits containing the tire damage status.  |
+| vehicleid | ID vozila za utvrđivanje štete.                   |
+| panels    | Skup bitova koji sadrže status oštećenja panela.  |
+| doors     | Skup bitova koji sadrže status oštećenja vrata.   |
+| lights    | Skup bitova koji sadrže status oštećenja svjetla. |
+| tires     | Skup bitova koji sadrže status oštećenja guma.    |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 new
-	panels, doors, lights, tires;
+    panels, doors, lights, tires;
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, 15); // Setting tires to 15 will pop them all
+UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, 15); // Stavljajući gume na 15 biće probušene
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetVehicleHealth](SetVehicleHealth): Set the health of a vehicle.
-- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
-- [RepairVehicle](RepairVehicle): Fully repair a vehicle.
-- [GetVehicleDamageStatus](GetVehicleDamageStatus): Get the vehicle damage state for each part individually.
-- [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate): Called when a vehicle's damage state changes.
+- [SetVehicleHealth](SetVehicleHealth): Postavi helte vozila.
+- [GetVehicleHealth](GetVehicleHealth): Provjeri helte vozila.
+- [RepairVehicle](RepairVehicle): U potpunosti popravite vozilo.
+- [GetVehicleDamageStatus](GetVehicleDamageStatus): Dobij status oštečenja za svaki dio posebno.
+- [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate): Pozvano kada se stanje oštećenja vozila promijeni.

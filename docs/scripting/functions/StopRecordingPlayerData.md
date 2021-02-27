@@ -1,24 +1,28 @@
 ---
 title: StopRecordingPlayerData
-description: Stops all the recordings that had been started with StartRecordingPlayerData for a specific player.
+description: Zaustavlja sve snimke započete sa StartRecordingPlayerData za određenog igrača.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Stops all the recordings that had been started with StartRecordingPlayerData for a specific player.
+:::
 
-| Name     | Description                                    |
-| -------- | ---------------------------------------------- |
-| playerid | The player you want to stop the recordings of. |
+## Deskripcija
+
+Zaustavlja sve snimke započete sa StartRecordingPlayerData za određenog igrača.
+
+| Ime      | Deskripcija                              |
+| -------- | ---------------------------------------- |
+| playerid | Igrač za kojeg želite zaustaviti snimke. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -26,12 +30,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp("/stoprecording", cmdtext))
     {
         StopRecordingPlayerData(playerid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "Your recorded file has been saved to the scriptfiles folder!");
+        SendClientMessage(playerid, 0xFFFFFFFF, "Snimljena datoteka je spremljena u mapu scriptfiles!");
         return 1;
     }
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [StartRecordingPlayerData](StartRecordingPlayerData): Start recording player data.
+- [StartRecordingPlayerData](StartRecordingPlayerData): Počnite snimati podatke o igraču.
