@@ -1,7 +1,7 @@
 ---
 title: strunpack
 description: Ovom se funkcijom može raspakirati string.
-tags: []
+tags: ["string"]
 ---
 
 :::warning

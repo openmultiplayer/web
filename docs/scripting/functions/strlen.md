@@ -1,7 +1,7 @@
 ---
 title: strlen
 description: Dobij dužinu stringa.
-tags: []
+tags: ["string"]
 ---
 
 :::warning

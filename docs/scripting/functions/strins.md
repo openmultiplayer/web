@@ -1,7 +1,7 @@
 ---
 title: strins
 description: Umetni string u drugi string.
-tags: []
+tags: ["string"]
 ---
 
 :::warning

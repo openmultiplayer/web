@@ -1,7 +1,7 @@
 ---
 title: SetTimerEx
 description: Postavlja tajmer za pozivanje funkcije nakon navedenog intervala.
-tags: []
+tags: ["timer"]
 ---
 
 ## Deskripcija

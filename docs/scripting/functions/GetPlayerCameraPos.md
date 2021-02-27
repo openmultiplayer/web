@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraPos
 description: Get the position of the player's camera.
-tags: ["player"]
+tags: ["player", "camera"]
 ---
 
 <VersionWarn version='SA-MP 0.3a' />

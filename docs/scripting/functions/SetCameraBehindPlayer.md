@@ -1,7 +1,7 @@
 ---
 title: SetCameraBehindPlayer
 description: Vratite kameru na mjesto iza igrača nakon upotrebe funkcije poput SetPlayerCameraPos.
-tags: ["player"]
+tags: ["player", "camera"]
 ---
 
 ## Deskripcija

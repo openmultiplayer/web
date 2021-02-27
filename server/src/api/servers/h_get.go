@@ -9,7 +9,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-func (s *service) get(w http.ResponseWriter, r *http.Request) {
+func (s *ServersService) get(w http.ResponseWriter, r *http.Request) {
 	result, err := s.storer.GetByAddress(r.Context(), chi.URLParam(r, "address"))
 	if err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to get server"))

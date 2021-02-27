@@ -1,7 +1,7 @@
 ---
 title: floatsqroot
 description: Calculates the square root of given value.
-tags: []
+tags: ["math", "floating-point"]
 ---
 
 <LowercaseNote />

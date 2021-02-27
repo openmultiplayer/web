@@ -1,7 +1,7 @@
 ---
 title: uuencode
 description: Kodirajte string u UU dekodirani string.
-tags: []
+tags: ["string", "encryption"]
 ---
 
 :::warning

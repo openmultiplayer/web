@@ -1,7 +1,7 @@
 ---
 title: SetTimer
 description: Postavlja 'timer' za pozvati funkciju nakon određenog vremena.
-tags: []
+tags: ["timer"]
 ---
 
 ## Deskripcija

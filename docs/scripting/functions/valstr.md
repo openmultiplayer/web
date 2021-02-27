@@ -1,7 +1,7 @@
 ---
 title: valstr
 description: Pretvori cijeli broj u string.
-tags: []
+tags: ["string"]
 ---
 
 :::warning

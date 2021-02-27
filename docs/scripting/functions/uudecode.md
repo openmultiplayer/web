@@ -1,7 +1,7 @@
 ---
 title: uudecode
 description: Dekodirajte UU kodirani string.
-tags: []
+tags: ["string", "encryption"]
 ---
 
 :::warning

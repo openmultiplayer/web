@@ -4,12 +4,16 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 )
 
 func main() {
 	start := time.Now()
-	idx, err := docsindex.New("docs.bleve", "docs/")
+	idx, err := docsindex.New(config.Config{
+		DocsSourcesPath: "docs/",
+		DocsIndexPath:   "docs.bleve",
+	})
 	if err != nil {
 		panic(err)
 	}

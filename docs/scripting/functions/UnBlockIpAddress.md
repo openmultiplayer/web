@@ -1,7 +1,7 @@
 ---
 title: UnBlockIpAddress
 description: Deblokirajte IP adresu koja je prethodno bila blokirana pomoću BlockIpAddress.
-tags: []
+tags: ["administration"]
 ---
 
 :::warning

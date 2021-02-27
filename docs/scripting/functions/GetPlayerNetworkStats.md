@@ -1,7 +1,7 @@
 ---
 title: GetPlayerNetworkStats
 description: Gets a player's network stats and saves them into a string.
-tags: ["player"]
+tags: ["player", "network monitoring"]
 ---
 
 <VersionWarn version='SA-MP 0.3c R4' />
