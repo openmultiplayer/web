@@ -1,7 +1,7 @@
 ---
 title: fblockread
 description: This function allows you to read data from a file, without encoding and line terminators.
-tags: ["file management"]
+tags: []
 ---
 
 <LowercaseNote />
@@ -37,7 +37,7 @@ new some_data[some_enum];
 // ...
 
 // Open "file.bin" in "read only" mode
-new File:handle = fopen("file.bin", io_read),
+new File:handle = fopen("file.bin", io_write)
 
     // Declare "file_len"
     file_len;
@@ -50,7 +50,7 @@ if (handle)
     // Get the file length of "file.bin"
     file_len = flength(handle);
 
-    // If file is equally larger than the array
+    // If file is equally large than the array
     if (file_len == (some_enum*4))
     {
         // Success
@@ -83,16 +83,3 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 :::
 
 ## Related Functions
-- [fopen](fopen): Open a file.
-- [fclose](fclose): Close a file.
-- [ftemp](ftemp): Create a temporary file stream.
-- [fremove](fremove): Remove a file.
-- [fwrite](fwrite): Write to a file.
-- [fread](fread): Read a file.
-- [fputchar](fputchar): Put a character in a file.
-- [fgetchar](fgetchar): Get a character from a file.
-- [fblockwrite](fblockwrite): Write blocks of data into a file.
-- [fseek](fseek): Jump to a specific character in a file.
-- [flength](flength): Get the file length.
-- [fexist](fexist): Check, if a file exists.
-- [fmatch](fmatch): Check, if patterns with a file name matches.

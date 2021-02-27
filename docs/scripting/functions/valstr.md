@@ -1,7 +1,7 @@
 ---
 title: valstr
 description: Convert an integer into a string.
-tags: ["string"]
+tags: []
 ---
 
 <LowercaseNote />

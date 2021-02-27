@@ -1,7 +1,7 @@
 ---
 title: ispacked
 description: Checks if the given string is packed.
-tags: ["string"]
+tags: []
 ---
 
 <LowercaseNote />

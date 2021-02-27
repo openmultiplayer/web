@@ -66,5 +66,5 @@ ReturnCI(iPlayerID)
 
 ## Related Functions
 
-- [GetNetworkStats](GetNetworkStats): Gets the servers networkstats and saves it into a string.
+- [GetNetworkStats]GetNetworkStats): Gets the servers networkstats and saves it into a string.
 - [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.

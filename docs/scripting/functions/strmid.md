@@ -1,7 +1,7 @@
 ---
 title: strmid
 description: Extract a range of characters from a string.
-tags: ["string"]
+tags: []
 ---
 
 <LowercaseNote />

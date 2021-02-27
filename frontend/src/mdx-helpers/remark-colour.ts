@@ -16,7 +16,7 @@ export const remarkColour = function attacher() {
       let children: Array<any> = node.children as Array<any>;
       let newChildren: Array<any> = node.children as Array<any>;
 
-      children.forEach((v: { value: string }, i: number) => {
+      children.map((v: { value: string }, i: number) => {
         let match: RegExpExecArray | null;
         let insertions: number = 0;
         let lastIndex = 0;

@@ -1,7 +1,7 @@
 ---
 title: SetObjectNoCameraCol
 description: Disable collisions between players' cameras and the specified object.
-tags: ["camera"]
+tags: []
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />

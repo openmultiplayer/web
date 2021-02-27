@@ -1,7 +1,7 @@
 ---
 title: floatcmp
 description: floatcmp can be used to compare float values to each other, to validate the comparison.
-tags: ["math", "floating-point"]
+tags: []
 ---
 
 <LowercaseNote />

@@ -1,7 +1,7 @@
 ---
 title: strins
 description: Insert a string into another string.
-tags: ["string"]
+tags: []
 ---
 
 <LowercaseNote />

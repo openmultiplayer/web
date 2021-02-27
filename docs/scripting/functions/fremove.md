@@ -1,7 +1,7 @@
 ---
 title: fremove
 description: Delete a file.
-tags: ["file management"]
+tags: []
 ---
 
 <LowercaseNote />
@@ -45,6 +45,7 @@ The file path must be valid.
 - [fopen](fopen): Open a file.
 - [fclose](fclose): Close a file.
 - [ftemp](ftemp): Create a temporary file stream.
+- [fremove](fremove): Remove a file.
 - [fwrite](fwrite): Write to a file.
 - [fread](fread): Read a file.
 - [fputchar](fputchar): Put a character in a file.

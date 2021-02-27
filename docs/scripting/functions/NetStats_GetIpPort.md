@@ -1,7 +1,7 @@
 ---
 title: NetStats_GetIpPort
 description: Get a player's IP and port.
-tags: ["network monitoring"]
+tags: []
 ---
 
 <VersionWarn version='SA-MP 0.3z' />
@@ -41,8 +41,8 @@ public OnPlayerCommandText(playerid,cmdtext[])
 ## Related Functions
 
 - [GetPlayerIp](GetPlayerIp): Get a player's IP.
-- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player's networkstats and saves it into a string.
-- [GetNetworkStats](GetNetworkStats): Gets the server's networkstats and saves it into a string.
+- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
+- [GetNetworkStats](GetNetworkStats): Gets the servers networkstats and saves it into a string.
 - [NetStats_GetConnectedTime](NetStats_GetConnectedTime): Get the time that a player has been connected for.
 - [NetStats_MessagesReceived](NetStats_MessagesReceived): Get the number of network messages the server has received from the player.
 - [NetStats_BytesReceived](NetStats_BytesReceived): Get the amount of information (in bytes) that the server has received from the player.

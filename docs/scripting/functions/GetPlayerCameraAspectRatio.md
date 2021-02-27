@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraAspectRatio
 description: Retrieves the aspect ratio of a player's camera.
-tags: ["player", "camera"]
+tags: ["player"]
 ---
 
 <VersionWarn version='SA-MP 0.3z' />

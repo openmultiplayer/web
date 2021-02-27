@@ -1,7 +1,7 @@
 ---
 title: fseek
 description: Change the current position in the file.
-tags: ["file management"]
+tags: []
 ---
 
 <LowercaseNote />
@@ -73,6 +73,7 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [fgetchar](fgetchar): Get a character from a file.
 - [fblockwrite](fblockwrite): Write blocks of data into a file.
 - [fblockread](fblockread): Read blocks of data from a file.
+- [fseek](fseek): Jump to a specific character in a file.
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.

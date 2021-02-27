@@ -1,42 +1,38 @@
 package docs
 
 import (
+	"context"
 	"encoding/json"
 	"net/http"
 
 	"github.com/Southclaws/qstring"
 	"github.com/go-chi/chi"
-
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-type DocsService struct {
-	R   chi.Router
+type service struct {
+	ctx context.Context
 	idx *docsindex.Index
 }
 
-func New(idx *docsindex.Index) *DocsService {
-	svc := &DocsService{chi.NewRouter(), idx}
+func New(ctx context.Context, idx *docsindex.Index) *chi.Mux {
+	rtr := chi.NewRouter()
+	svc := service{ctx, idx}
 
 	fs := http.FileServer(http.Dir("docs/"))
 
-	svc.R.With(func(next http.Handler) http.Handler {
-		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			w.Header().Add("Content-Type", "text/markdown")
-			next.ServeHTTP(w, r)
-		})
-	}).Get("/*", http.StripPrefix("/docs/", fs).ServeHTTP)
-	svc.R.Get("/search", svc.search)
+	rtr.Get("/*", http.StripPrefix("/docs/", fs).ServeHTTP)
+	rtr.Get("/search", svc.search)
 
-	return svc
+	return rtr
 }
 
 type query struct {
 	Query string `qstring:"q"`
 }
 
-func (s *DocsService) search(w http.ResponseWriter, r *http.Request) {
+func (s *service) search(w http.ResponseWriter, r *http.Request) {
 	var q query
 	if err := qstring.Unmarshal(r.URL.Query(), &q); err != nil {
 		web.StatusBadRequest(w, err)
@@ -49,6 +45,5 @@ func (s *DocsService) search(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	//nolint:errcheck
 	json.NewEncoder(w).Encode(results)
 }

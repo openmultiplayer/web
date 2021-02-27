@@ -8,7 +8,6 @@ import (
 	"github.com/gorilla/securecookie"
 	"github.com/pkg/errors"
 
-	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/web"
 )
@@ -32,10 +31,14 @@ type OAuthProvider interface {
 }
 
 // New initialises a new authentication service
-func New(db *db.PrismaClient, cfg config.Config) *State {
+func New(
+	db *db.PrismaClient,
+	hashKey,
+	blockKey []byte,
+) *State {
 	a := &State{
 		db: db,
-		sc: securecookie.New(cfg.HashKey, cfg.BlockKey),
+		sc: securecookie.New(hashKey, blockKey),
 	}
 
 	return a
@@ -56,9 +59,8 @@ func (a *State) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
 		Name:     secureCookieName,
 		Value:    encoded,
 		Path:     "/",
-		Domain:   ".open.mp",
-		Secure:   true,
-		HttpOnly: false,
+		Secure:   false,
+		HttpOnly: true,
 	})
 }
 

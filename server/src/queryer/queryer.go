@@ -14,10 +14,6 @@ type Queryer interface {
 
 type SAMPQueryer struct{}
 
-func NewSAMPQueryer() Queryer {
-	return &SAMPQueryer{}
-}
-
 func (q *SAMPQueryer) Query(ctx context.Context, address string) (sampquery.Server, error) {
 	ctx, cf := context.WithTimeout(ctx, time.Second*10)
 	defer cf()

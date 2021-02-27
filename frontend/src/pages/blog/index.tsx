@@ -1,7 +1,6 @@
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { orderBy } from "lodash/fp";
 import format from "date-fns/format";
 import parseISO from "date-fns/parseISO";
 import matter from "gray-matter";
@@ -66,11 +65,7 @@ export async function getStaticProps(
     })
   );
 
-  return {
-    props: {
-      posts: orderBy("date", "desc")(posts) as Content[],
-    },
-  };
+  return { props: { posts } };
 }
 
 export default Page;

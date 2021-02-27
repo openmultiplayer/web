@@ -5,8 +5,6 @@ import (
 
 	"github.com/streadway/amqp"
 	"go.uber.org/zap"
-
-	"github.com/openmultiplayer/web/server/src/config"
 )
 
 var _ Bus = &Rabbit{}
@@ -17,8 +15,8 @@ type Rabbit struct {
 	queues map[Topic]amqp.Queue
 }
 
-func NewRabbit(cfg config.Config) (Bus, error) {
-	conn, err := amqp.Dial(cfg.AmqpAddress)
+func NewRabbit(url string) (*Rabbit, error) {
+	conn, err := amqp.Dial(url)
 	if err != nil {
 		return nil, err
 	}

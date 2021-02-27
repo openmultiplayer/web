@@ -10,10 +10,6 @@ import VersionWarnPT from "./pt/version-warning";
 import LowercaseNotePT from "./pt/lowercase-note";
 import TipNPCCallbacksPT from "./pt/npc-callbacks-tip";
 
-import VersionWarnES from "./es/version-warning";
-import LowercaseNoteES from "./es/lowercase-note";
-import TipNPCCallbacksES from "./es/npc-callbacks-tip";
-
 export default {
   VersionWarn,
   LowercaseNote,
@@ -24,7 +20,4 @@ export default {
   VersionWarnPT,
   LowercaseNotePT,
   TipNPCCallbacksPT,
-  VersionWarnES,
-  LowercaseNoteES,
-  TipNPCCallbacksES,
 };

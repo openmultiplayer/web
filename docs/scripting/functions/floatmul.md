@@ -1,7 +1,7 @@
 ---
 title: floatmul
 description: Multiplies two floats with each other.
-tags: ["math", "floating-point"]
+tags: []
 ---
 
 <LowercaseNote />

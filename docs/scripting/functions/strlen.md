@@ -1,7 +1,7 @@
 ---
 title: strlen
 description: Get the length of a string.
-tags: ["string"]
+tags: []
 ---
 
 <LowercaseNote />

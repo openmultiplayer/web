@@ -1,7 +1,7 @@
 ---
 title: floatsin
 description: Get the sine from a given angle.
-tags: ["math", "floating-point"]
+tags: []
 ---
 
 <LowercaseNote />

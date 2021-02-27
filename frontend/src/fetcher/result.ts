@@ -37,26 +37,4 @@ export class Result<T, E extends APIError = APIError> {
         );
     }
   }
-
-  public isError(): boolean {
-    return this.result.result === "error";
-  }
-
-  public value(): T {
-    if (this.result.result === "value") {
-      return this.result.value;
-    } else {
-      throw new TypeError(
-        `${this.result.error.error}, ${this.result.error.message}`
-      );
-    }
-  }
-
-  public error(): E {
-    if (this.result.result === "error") {
-      return this.result.error;
-    } else {
-      throw new Error("no error present in result");
-    }
-  }
 }

@@ -1,7 +1,7 @@
 ---
 title: floattan
 description: Get the tangent from a given angle.
-tags: ["math", "floating-point"]
+tags: []
 ---
 
 <LowercaseNote />

@@ -16,23 +16,20 @@ RUN mkdir -p $NVM_DIR && \
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
-# Install prisma command for automatic migrations.
-RUN npm install --global @prisma/cli
-
-# Install Taskfile
-RUN sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
-
 WORKDIR /server
 
 ADD . .
 
 # Install prisma client code generation tool and generate prisma bindings
-RUN task generate
+RUN go run github.com/prisma/prisma-client-go generate
+
+# Install prisma command for automatic migrations.
+RUN npm install --global @prisma/cli
 
 # Build the docs search index
-RUN task docsindex
+RUN go run ./server/indexbuilder/main.go
 
 # Build the server binary
-RUN task build
+RUN go build -o server.exe ./server/
 
 ENTRYPOINT [ "/server/server.exe" ]

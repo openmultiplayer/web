@@ -1,7 +1,7 @@
 ---
 title: strval
 description: Convert a string to an integer.
-tags: ["string"]
+tags: []
 ---
 
 <LowercaseNote />

@@ -8,21 +8,16 @@ import (
 	"github.com/openmultiplayer/web/server/src/authentication"
 )
 
-type AuthService struct {
-	R chi.Router
-}
-
 // Routes provides service routes
 func New(
-	auth *authentication.State,
-	gh *authentication.GitHubProvider,
-	dc *authentication.DiscordProvider,
+	a *authentication.State,
+	githuboa authentication.OAuthProvider,
+	discordoa authentication.OAuthProvider,
+) *chi.Mux {
+	rtr := chi.NewRouter()
 
-) *AuthService {
-	svc := &AuthService{chi.NewRouter()}
+	rtr.Mount("/github", github.New(a, githuboa))
+	rtr.Mount("/discord", discord.New(a, discordoa))
 
-	svc.R.Mount("/github", github.New(auth, gh))
-	svc.R.Mount("/discord", discord.New(auth, dc))
-
-	return svc
+	return rtr
 }

@@ -2,16 +2,9 @@ version: "2"
 
 tasks:
   default:
-    deps: [build]
     cmds:
+      - go build -o server.exe ./server/
       - ./server.exe
-
-  build:
-    cmds:
-      - go build -o server.exe -ldflags="-X 'github.com/openmultiplayer/web/server/src/version.Version={{.VERSION}}'" ./server/
-    vars:
-      VERSION:
-        sh: git describe --always --dirty --tags
 
   services:
     cmds:
@@ -25,10 +18,6 @@ tasks:
       - go run github.com/prisma/prisma-client-go generate
       # Also generate TypeScript type declarations from some backend structs.
       - go run types.go
-
-  docsindex:
-    cmds:
-      - go run ./server/indexbuilder/main.go
 
   migrate:
     cmds:

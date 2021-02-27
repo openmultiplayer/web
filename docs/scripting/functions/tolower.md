@@ -1,7 +1,7 @@
 ---
 title: tolower
 description: This function changes a single character to lowercase.
-tags: ["string"]
+tags: []
 ---
 
 <LowercaseNote />

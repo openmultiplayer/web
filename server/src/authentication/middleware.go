@@ -40,6 +40,7 @@ func (a *State) WithAuthentication(next http.Handler) http.Handler {
 			// } else if a.doTokenAuth(r, &auth) {
 			// 	auth.Authenticated = true
 		} else {
+			zap.L().Debug("request does not contain an auth cookie")
 			auth.Authenticated = false
 		}
 
