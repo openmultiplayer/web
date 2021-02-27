@@ -10,7 +10,7 @@ const footerList = (heading: string, items: Array<Item>) => (
       {map(([path, name]) => (
         <li key={path}>
           <Link href={path}>
-            <a className="link near-white hover-white" target="_blank">{name}</a>
+            <a className="link near-white hover-white">{name}</a>
           </Link>
         </li>
       ))(items)}

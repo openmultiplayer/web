@@ -1,7 +1,7 @@
 ---
 title: strpack
 description: Upakuj string.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

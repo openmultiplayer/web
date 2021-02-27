@@ -41,31 +41,24 @@ export const getServerSideProps = async (
     state: ctx.query["state"] as string,
   };
 
-  const result = await apiSSP<{ headers: Headers }>(
-    "/auth/github/callback",
-    {
-      method: "post",
-      body: JSON.stringify(payload),
-      headers: {
-        "Content-Type": "application/json",
-        Cookie: ctx?.req?.headers?.cookie!,
-      },
-      credentials: "include",
-    },
-    undefined,
-    true
-  );
-  if (result.isError()) {
-    return {
-      props: {
-        error: {
-          error: result.error().error!,
-          error_description: result.error().message!,
+  console.log("state:", ctx.query);
+
+  const response = (
+    await apiSSP<{ headers: Headers }>(
+      "/auth/github/callback",
+      {
+        method: "post",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+          Cookie: ctx?.req?.headers?.cookie!,
         },
+        credentials: "include",
       },
-    };
-  }
-  const response = result.value();
+      undefined,
+      true
+    )
+  ).unwrap();
 
   ctx.res.setHeader("set-cookie", response.headers.get("set-cookie")!);
   ctx.res.writeHead(302, { Location: "/dashboard" });

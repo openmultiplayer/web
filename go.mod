@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	github.com/PuerkitoBio/goquery v1.6.0
-	github.com/Southclaws/go-samp-query v1.1.3
+	github.com/Southclaws/go-samp-query v1.1.2
 	github.com/Southclaws/qstring v1.1.0
 	github.com/blevesearch/bleve v1.0.14
 	github.com/bwmarrin/discordgo v0.22.0
@@ -30,8 +30,8 @@ require (
 	github.com/thanhpk/randstr v1.0.4
 	github.com/tkrajina/go-reflector v0.5.4 // indirect
 	github.com/tkrajina/typescriptify-golang-structs v0.1.3
-	go.uber.org/fx v1.13.1
 	go.uber.org/zap v1.16.0
+	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102 // indirect
 	golang.org/x/oauth2 v0.0.0-20201203001011-0b49973bad19
 	golang.org/x/sys v0.0.0-20201201145000-ef89a241ccb3 // indirect

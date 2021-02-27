@@ -1,7 +1,7 @@
 ---
 title: strcat
 description: Ova funkcija spaja dva stringa u odredišni string.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

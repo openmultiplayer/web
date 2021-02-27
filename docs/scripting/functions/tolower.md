@@ -1,7 +1,7 @@
 ---
 title: tolower
 description: Ova funkcija mijenja jedan znak u malo slovo.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

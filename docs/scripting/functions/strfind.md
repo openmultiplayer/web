@@ -1,7 +1,7 @@
 ---
 title: strfind
 description: Potraži podstring u stringu.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

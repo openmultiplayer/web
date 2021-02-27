@@ -1,7 +1,7 @@
 ---
 title: VectorSize
 description: Vraća normu (dužinu) navedenog vektora.
-tags: ["math"]
+tags: []
 ---
 
 :::warning

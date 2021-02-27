@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraZoom
 description: Retrieves the game camera zoom level for a given player.
-tags: ["player", "camera"]
+tags: ["player"]
 ---
 
 <VersionWarn version='SA-MP 0.3z' />

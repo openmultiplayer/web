@@ -1,7 +1,7 @@
 ---
 title: fread
 description: Read a single line from a file.
-tags: ["file management"]
+tags: []
 ---
 
 <LowercaseNote />
@@ -91,6 +91,7 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [ftemp](ftemp): Create a temporary file stream.
 - [fremove](fremove): Remove a file.
 - [fwrite](fwrite): Write to a file.
+- [fread](fread): Read a file.
 - [fputchar](fputchar): Put a character in a file.
 - [fgetchar](fgetchar): Get a character from a file.
 - [fblockwrite](fblockwrite): Write blocks of data into a file.

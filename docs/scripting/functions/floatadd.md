@@ -1,7 +1,7 @@
 ---
 title: floatadd
 description: Adds two floats together.
-tags: ["math", "floating-point"]
+tags: []
 ---
 
 <LowercaseNote />

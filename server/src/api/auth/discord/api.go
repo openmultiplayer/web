@@ -13,12 +13,15 @@ import (
 
 type service struct {
 	auth *authentication.State
-	oa2  *authentication.DiscordProvider
+	oa2  authentication.OAuthProvider
 }
 
-func New(auth *authentication.State, oa2 *authentication.DiscordProvider) *chi.Mux {
+func New(a *authentication.State, oa2 authentication.OAuthProvider) *chi.Mux {
 	rtr := chi.NewRouter()
-	svc := service{auth, oa2}
+	svc := service{
+		auth: a,
+		oa2:  oa2,
+	}
 
 	rtr.Get("/link", http.HandlerFunc(svc.link))
 	rtr.Post("/callback", http.HandlerFunc(svc.callback))

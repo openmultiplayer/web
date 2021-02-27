@@ -1,7 +1,7 @@
 ---
 title: SHA256_PassHash
 description: Hashira lozinku pomoću algoritma heširanja SHA-256.
-tags: ["encryption"]
+tags: []
 ---
 
 :::warning

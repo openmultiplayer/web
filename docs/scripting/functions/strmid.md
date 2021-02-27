@@ -1,7 +1,7 @@
 ---
 title: strmid
 description: Izvuci niz znakova iz stringa.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

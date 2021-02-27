@@ -1,7 +1,7 @@
 ---
 title: format
 description: Formats a string to include variables and other strings inside it.
-tags: ["string"]
+tags: []
 ---
 
 <LowercaseNote />

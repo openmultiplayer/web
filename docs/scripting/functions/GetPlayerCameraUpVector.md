@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraUpVector
 description: This function returns the vector, that points to the upside of the camera's view, or, in other words, to the middle top of your screen.
-tags: ["player", "camera"]
+tags: ["player"]
 ---
 
 <VersionWarn version='SA-MP 0.3a' />

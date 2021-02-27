@@ -1,7 +1,7 @@
 ---
 title: strcmp
 description: Upoređuje dva stringa kako pi vidjelo da li su isti.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

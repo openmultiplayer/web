@@ -1,7 +1,7 @@
 ---
 title: floatcos
 description: Get the cosine from a given angle.
-tags: ["math", "floating-point"]
+tags: []
 ---
 
 <LowercaseNote />

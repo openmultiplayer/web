@@ -348,12 +348,12 @@ For example, with the declarations of the previous code snippet, if you would
 wish to compare apples with oranges (recent research indicates that comparing
 apples to oranges is not as absurd than popular belief holds), you could use:
 
-```c
+````c
 
 if (apple:valencia < elstar)
     valencia = orange:elstar
 
-```
+``
 
 The test expression of the if statement (between parentheses) compares the
 variable valencia to the variable elstar. To avoid a “tag mismatch” diagnos-
@@ -389,7 +389,7 @@ if (value < limit)
 else
     printf("Value above limit\n")
 
-```
+````
 
 Through the “#pragma rational”, all rational numbers receive the “float”
 tag name and these numbers are encoded in the 4-byte IEEE 754 format. The

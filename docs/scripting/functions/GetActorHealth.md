@@ -1,7 +1,7 @@
 ---
 title: GetActorHealth
 description: Get the health of an actor.
-tags: ["actor"]
+tags: []
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />

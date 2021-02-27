@@ -15,7 +15,6 @@ import (
 	"github.com/thanhpk/randstr"
 	"golang.org/x/oauth2"
 
-	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
@@ -25,7 +24,6 @@ var _ OAuthProvider = &DiscordProvider{}
 
 type DiscordProvider struct {
 	db     *db.PrismaClient
-	mw     *mailworker.Worker
 	cache  *cache.Cache
 	oaconf *oauth2.Config
 }
@@ -35,14 +33,13 @@ var endpoint = oauth2.Endpoint{
 	TokenURL: "https://discord.com/api/oauth2/token",
 }
 
-func NewDiscordProvider(db *db.PrismaClient, mw *mailworker.Worker, cfg config.Config) *DiscordProvider {
+func NewDiscordProvider(db *db.PrismaClient, clientID, clientSecret string) *DiscordProvider {
 	return &DiscordProvider{
 		db:    db,
-		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
-			ClientID:     cfg.DiscordClientID,
-			ClientSecret: cfg.DiscordClientSecret,
+			ClientID:     clientID,
+			ClientSecret: clientSecret,
 			Scopes:       []string{"identify", "email"},
 			Endpoint:     endpoint,
 		},
@@ -65,6 +62,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 	if _, ok := p.cache.Get(state); !ok {
 		return nil, ErrStateMismatch
 	}
+	p.cache.Delete(state)
 
 	// Exchange the code for a token, this makes an API call to Discord.
 	token, err := p.oaconf.Exchange(ctx, code)
@@ -152,7 +150,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 		return nil, errors.Wrap(err, "failed to create user Discord relationship")
 	}
 
-	if err := p.mw.Enqueue(
+	if err := mailworker.Enqueue(
 		dcuser.Username,
 		dcuser.Email,
 		"Welcome to open.mp!",

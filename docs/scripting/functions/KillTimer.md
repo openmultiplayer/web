@@ -1,7 +1,7 @@
 ---
 title: KillTimer
 description: Kills (stops) a running timer.
-tags: ["timer"]
+tags: []
 ---
 
 ## Description

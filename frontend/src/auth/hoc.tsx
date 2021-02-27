@@ -1,6 +1,12 @@
-import { NextPage } from "next";
+import {
+  GetServerSideProps,
+  GetServerSidePropsContext,
+  GetStaticPropsContext,
+} from "next";
 
-import withAuthRedirect from "./withAuthRedirect";
+import { COOKIE_NAME } from ".";
+import { useIsAuthenticated } from "./hooks";
+import withConditionalRedirect from "./withConditionalRedirect";
 
 /**
  * Ensures a page is only displayed for users who are authenticated.
@@ -9,10 +15,16 @@ import withAuthRedirect from "./withAuthRedirect";
  * @param location location to redirect to if not authenticated.
  */
 export function withAuth<P>(
-  WrappedComponent: NextPage<P>,
+  WrappedComponent: React.FunctionComponent<P>,
   location = "/login"
 ) {
-  return withAuthRedirect(WrappedComponent, true, location);
+  return withConditionalRedirect(
+    WrappedComponent,
+    location,
+    function withAuthClientCondition() {
+      return !useIsAuthenticated();
+    }
+  );
 }
 
 /**
@@ -25,5 +37,45 @@ export function withoutAuth<P>(
   WrappedComponent: React.FunctionComponent<P>,
   location = "/dashboard"
 ) {
-  return withAuthRedirect(WrappedComponent, false, location);
+  return withConditionalRedirect(
+    WrappedComponent,
+    location,
+    function withoutAuthClientCondition() {
+      return useIsAuthenticated();
+    }
+  );
+}
+
+/**
+ * Use this to wrap getServerSideProps functions for pages. This implements
+ * server side redirects for unauthenticated page loads.
+ *
+ * @param gssp The actual getServerSideProps function.
+ */
+export function getStaticPropsWithAuth(gssp: GetServerSideProps) {
+  return async (ctx: any /* GetServerSidePropsContext but with cookies */) => {
+    if (!ctx.req?.cookies[COOKIE_NAME]) {
+      ctx.res.writeHead(302, { Location: "/login" });
+      ctx.res.end();
+      return { props: {} };
+    }
+    return await gssp(ctx);
+  };
+}
+
+/**
+ * Use this to wrap getServerSideProps functions for pages. This implements
+ * server side redirects for authenticated page loads.
+ *
+ * @param gssp The actual getServerSideProps function.
+ */
+export function getStaticPropsWithoutAuth(gssp: GetServerSideProps) {
+  return async (ctx: any /* GetServerSidePropsContext but with cookies */) => {
+    if (!!ctx.req?.cookies[COOKIE_NAME]) {
+      ctx.res.writeHead(302, { Location: "/dashboard" });
+      ctx.res.end();
+      return { props: {} };
+    }
+    return await gssp(ctx);
+  };
 }

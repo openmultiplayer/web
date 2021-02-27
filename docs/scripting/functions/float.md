@@ -1,7 +1,7 @@
 ---
 title: float
 description: Converts an integer into a float.
-tags: ["floating-point"]
+tags: []
 ---
 
 <LowercaseNote />

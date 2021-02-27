@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraTargetObject
 description: Allows you to retrieve the ID of the object the player is looking at.
-tags: ["player", "camera"]
+tags: ["player"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />

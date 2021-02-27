@@ -1,28 +1,31 @@
 package users
 
 import (
+	"context"
+
 	"github.com/go-chi/chi"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/db"
 )
 
-type UsersService struct {
-	R    chi.Router
+type service struct {
+	ctx  context.Context
 	auth *authentication.State
 	db   *db.PrismaClient
 }
 
-func New(auth *authentication.State, db *db.PrismaClient) *UsersService {
-	svc := &UsersService{chi.NewRouter(), auth, db}
+func New(ctx context.Context, a *authentication.State, db *db.PrismaClient) *chi.Mux {
+	rtr := chi.NewRouter()
+	svc := service{ctx, a, db}
 
-	svc.R.
+	rtr.
 		With(authentication.MustBeAuthenticated).
 		Get("/self", svc.get)
 
-	svc.R.
+	rtr.
 		With(authentication.MustBeAuthenticated).
 		Patch("/self", svc.patch)
 
-	return svc
+	return rtr
 }

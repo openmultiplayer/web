@@ -1,7 +1,7 @@
 ---
 title: strval
 description: Pretvori string u cijeli broj.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

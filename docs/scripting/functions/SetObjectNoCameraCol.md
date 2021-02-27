@@ -1,7 +1,7 @@
 ---
 title: SetObjectNoCameraCol
 description: Onemogućite sudare između kamera igrača i navedenog objekta.
-tags: ["camera"]
+tags: []
 ---
 
 :::warning

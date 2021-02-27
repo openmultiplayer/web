@@ -9,9 +9,11 @@
       "type": "go",
       "request": "launch",
       "mode": "auto",
-      "cwd": "${workspaceFolder}",
       "program": "${workspaceFolder}/server",
-      "env": {},
+      "env": {
+        "DATABASE_URL": "postgresql://prisma:prisma@localhost:5432/prisma?schema=public",
+        "LOG_LEVEL": "debug"
+      },
       "args": []
     }
   ]

@@ -1,7 +1,7 @@
 ---
 title: strdel
 description: Obriši dio stringa.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

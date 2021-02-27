@@ -1,7 +1,7 @@
 ---
 title: fclose
 description: Closes a file.
-tags: ["file management"]
+tags: []
 ---
 
 <LowercaseNote />

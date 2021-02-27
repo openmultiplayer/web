@@ -1,7 +1,7 @@
 ---
 title: toupper
 description: Ova funkcija mijenja jedan znak u veliko slovo.
-tags: ["string"]
+tags: []
 ---
 
 :::warning

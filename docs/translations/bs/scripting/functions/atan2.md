@@ -41,9 +41,9 @@ public OnGameModeInit()
     new Float:x, Float:y, Float:result;
     x = -10.0;
     y = 10.0;
-    result = atan2(y,x);
-    printf("Tangenta luka za (x=%f, y=%f) je %f stepeni.", x, y, result);
-    return 1;
+    result = atan2 (y,x) * 180 / PI;
+    printf ("Tangenta luka za (x=%f, y=%f) je %f stepeni\n", x, y, result );
+    return 0;
 }
 ```
 

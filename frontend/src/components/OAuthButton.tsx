@@ -2,40 +2,37 @@ import useSWR from "swr";
 
 import { apiSWR } from "src/fetcher/fetcher";
 import { GitHubLink } from "src/types/githubAuth";
-import { UserModel } from "src/types/user";
-import { APIError } from "src/types/error";
+import { DiscordModel } from "src/types/user";
+import { GitHubModel } from "src/types/server";
+import { DiscordLink } from "src/types/discordAuth";
 
 type Props = {
   bg: string;
   icon: JSX.Element;
   type: string;
+  text: string;
+  initialData?: GitHubLink | DiscordLink;
+  account?: GitHubModel | DiscordModel;
 };
 
-const OAuthButton = ({ bg, icon, type }: Props) => {
-  const { data: link } = useSWR<GitHubLink>(`/auth/${type}/link`, apiSWR);
-  const { data, error } = useSWR<UserModel, APIError>("/users/self", apiSWR);
+const OAuthButton = ({
+  bg,
+  icon,
+  type,
+  text,
+  initialData,
+  account = undefined,
+}: Props) => {
+  const { data: link } = useSWR<GitHubLink>(`/auth/${type}/link`, apiSWR, {
+    initialData,
+  });
 
-  let text: string;
   let href = link?.url;
 
-  if (type === "github") {
-    if (!error && data && data.github) {
-      text = data.github.username;
-      href = undefined;
-    } else {
-      text = "Login with GitHub";
-      href = link?.url;
-    }
-  } else if (type === "discord") {
-    if (!error && data && data.discord) {
-      text = data.discord.username;
-      href = undefined;
-    } else {
-      text = "Login with Discord";
-      href = link?.url;
-    }
-  } else {
-    throw new Error(`Unknown OAuth type: ${type}`);
+  // if the user has data for this account type
+  if (account) {
+    text = account.username; // show the user's linked account name
+    href = undefined; // make the button unclickable
   }
 
   return (
