@@ -1,41 +1,41 @@
 ---
 title: SetPlayerPosFindZ
-description: Ovo postavlja poziciju igrača a potom prilagođava igračevu Z-kordinatu na najbliže čvrsto tlo ispod pozicije (položaja).
+description: This sets the players position then adjusts the players z-coordinate to the nearest solid ground under the position.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Ovo postavlja poziciju igrača a potom prilagođava igračevu Z-kordinatu na najbliže čvrsto tlo ispod pozicije (položaja).
+This sets the players position then adjusts the players z-coordinate to the nearest solid ground under the position.
 
-| Ime      | Deskripcija                          |
-| -------- | ------------------------------------ |
-| playerid | ID igrača za postaviti poziciju.     |
-| Float:x  | X kordinata za pozicionirati igrača. |
-| Float:y  | X kordinata za pozicionirati igrača. |
-| Float:z  | Z kordinata za pozicionirati igrača. |
+| Name     | Description                                  |
+| -------- | -------------------------------------------- |
+| playerid | The ID of the player to set the position of. |
+| Float:x  | The X coordinate to position the player at.  |
+| Float:y  | The X coordinate to position the player at.  |
+| Float:z  | The Z coordinate to position the player at.  |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+0: The function failed to execute. This means the player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 SetPlayerPosFindZ(playerid, 1234.5, 1234.5, 1000.0);
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Ova funkcija ne radi ako su nove kordinate mnogo daleko od pozicije na kojima je igrač trenutno. Z visina će biti 0 što će igrača u većini slučajeva staviti pod zemlju. Vrlo je preporučljivo da koristite MapAndreas ili ColAndreas plugine umjesto ovoga.
+This function does not work if the new coordinates are far away from where the player currently is. The Z height will be 0, which will likely put them underground. It is highly recommended that the MapAndreas or ColAndreas plugin be used instead.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerPos](SetPlayerPos): Postavite poziciju igrača.
-- [OnPlayerClickMap](../callbacks/OnPlayerClickMap): Pozvano kada igrač postavi marker ili target na mapi u pause meniju.
+- [SetPlayerPos](SetPlayerPos): Set a player's position.
+- [OnPlayerClickMap](../callbacks/OnPlayerClickMap): Called when a player sets a waypoint/target on the pause menu map.

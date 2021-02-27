@@ -1,47 +1,43 @@
 ---
 title: SetActorVirtualWorld
-description: Postavi virtualni svijet za aktora.
+description: Set the virtual world of an actor.
 tags: []
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3.7' />
 
-Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
+## Description
 
-:::
+Set the virtual world of an actor. Only players in the same world will see the actor.
 
-## Deskripcija
-
-Postavi virtualni svijet za aktora. Samo igrači u istom virtualnom svijetu će ga vidjeti.
-
-| Ime     | Deskripcija                                                                 |
-| ------- | --------------------------------------------------------------------------- |
-| actorid | ID aktora (returnovan/vraćen od CreateActor) za postaviti virtualni svijet. |
-| vworld  | Virtualni svijet za ubaciti aktora.                                         |
+| Name    | Description                                                                |
+| ------- | -------------------------------------------------------------------------- |
+| actorid | The ID of the actor (returned by CreateActor) to set the virtual world of. |
+| vworld  | The virtual world to put the actor ID.                                     |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Navedeni aktor ne postoji.
+0: The function failed to execute. The actor specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 new gMyActor;
 
 public OnGameModeInit()
 {
-    // Kreiraj aktora
+    // Create the actor
     gMyActor = CreateActor(69, 0.0, 0.0, 3.0, 0.0);
 
-    // Postavi mu virtualni svijet
+    // Set their virtual world
     SetActorVirtualWorld(gMyActor, 69);
     return 1;
 }
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetActorVirtualWorld](GetActorVirtualWorld): Dobij virtualni svijet aktora.
-- [CreateActor](CreateActor): Kreiraj aktora (statičnog NPC-a).
+- [GetActorVirtualWorld](GetActorVirtualWorld): Get the virtual world of an actor.
+- [CreateActor](CreateActor): Create an actor (static NPC).

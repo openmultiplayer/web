@@ -1,33 +1,29 @@
 ---
 title: PlayerTextDrawSetPreviewRot
-description: Postavlja rotaciju i zumiranje prikaza 3D modela u player-textdrawu.
+description: Sets the rotation and zoom of a 3D model preview player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3x' />
 
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
+## Description
 
-:::
+Sets the rotation and zoom of a 3D model preview player-textdraw.
 
-## Deskripcija
-
-Postavlja rotaciju i zumiranje prikaza 3D modela u player-textdrawu.
-
-| Ime             | Deskripcija                                                                                                              |
+| Name            | Description                                                                                                              |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| playerid        | ID igrača čiji player-textdraw treba izmijeniti.                                                                         |
-| PlayerText:text | ID player-textdrawa za izmijeniti.                                                                                       |
-| Float:fRotX     | X vrijednost rotacije.                                                                                                   |
-| Float:fRotY     | Y vrijednost rotacije.                                                                                                   |
-| Float:fRotZ     | Z vrijednost rotacije.                                                                                                   |
-| Float:fZoom     | Vrijednost zumiranja, zadana vrijednost 1.0, manje vrijednosti čine kameru bližom i veće vrijednosti čine kameru daljom. |
+| playerid        | The ID of the player whose player-textdraw to change.                                                                    |
+| PlayerText:text | The ID of the player-textdraw to change.                                                                                 |
+| Float:fRotX     | The X rotation value.                                                                                                    |
+| Float:fRotY     | The Y rotation value.                                                                                                    |
+| Float:fRotZ     | The Z rotation value.                                                                                                    |
+| Float:fZoom     | The zoom value, default value 1.0, smaller values make the camera closer and larger values make the camera further away. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 new PlayerText: gMyTextdraw[MAX_PLAYERS];
@@ -46,18 +42,18 @@ public OnPlayerConnect(playerid)
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Textdraw MORA koristiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkcija imala efekta.
+The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW and already have a model set in order for this function to have effect.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Postavlja rotaciju 3D prikaza u textdraw-u.
-- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Postavlja ID modela 3D prikaza u player-textdrawu.
-- [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol): Postavlja boju vozila 3D prikazu u player-textdrawu.
-- [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Pozvano kada igrač klikne na player-textdraw.
+- [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Set rotation of a 3D textdraw preview.
+- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Set model ID of a 3D player textdraw preview.
+- [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol): Set the colours of a vehicle in a 3D player textdraw preview.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

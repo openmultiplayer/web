@@ -1,68 +1,64 @@
 ---
 title: printf
-description: Ispisuje formatirani niz na konzoli (prozor servera, a ne chat u igri).
+description: Outputs a formatted string on the console (the server window, not the in-game chat).
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+Outputs a formatted string on the console (the server window, not the in-game chat).
 
-## Deskripcija
-
-Ispisuje formatirani niz na konzoli (prozor servera, a ne chat u igri).
-
-| Ime            | Deskripcija                                    |
-| -------------- | ---------------------------------------------- |
-| format[]       | Formatirani string.                            |
-| {Float,\_}:... | Neograničeni broj argumenata bilo koje oznake. |
+| Name           | Description                               |
+| -------------- | ----------------------------------------- |
+| format[]       | The format string                         |
+| {Float,\_}:... | Indefinite number of arguments of any tag |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
 ## Format Specifiers
 
-| Specifier | Meaning                                         |
-| --------- | ----------------------------------------------- |
-| %i        | Cijeli broj                                     |
-| %d        | Cijeli broj                                     |
-| %s        | String                                          |
-| %f        | Float broj                                      |
-| %c        | ASCII karakter                                  |
-| %x        | Hexadecimalni broj                              |
-| %b        | Binarni broj                                    |
-| %%        | Literal '%'                                     |
-| %q        | Izbjegnite tekst za SQLite. (Dodano u 0.3.7 R2) |
+| Specifier | Meaning                                       |
+| --------- | --------------------------------------------- |
+| %i        | Integer                                       |
+| %d        | Integer                                       |
+| %s        | String                                        |
+| %f        | Floating-point number                         |
+| %c        | ASCII character                               |
+| %x        | Hexadecimal number                            |
+| %b        | Binary number                                 |
+| %%        | Literal '%'                                   |
+| %q        | Escape a text for SQLite. (Added in 0.3.7 R2) |
 
-Vrijednosti rezerviranih mjesta slijede se potpuno istim redoslijedom kao i parametri u pozivu, tj. "Imam %i godina" - `%i` će biti zamijenjena cjelobrojnom varijablom, što je dob osobe.
+The values for the placeholders follow in the exact same order as parameters in the call, i.e. `"I am %i years old"` - the `%i` will be replaced with an integer variable, which is the person's age.
 
-Po želji možete staviti broj između `%` i slovo koda rezerviranog mjesta. Ovaj broj označava širinu polja; ako je veličina parametra za ispis na mjestu rezerviranog mjesta manja od širine polja, polje se proširuje razmacima. Da biste smanjili broj decimalnih mjesta koja se prikazuju na floatu, možete dodati `.\<max number\>` između `%` i `f`, tj. `%.2f`.
+You may optionally put a number between the `%` and the letter of the placeholder code. This number indicates the field width; if the size of the parameter to print at the position of the placeholder is smaller than the field width, the field is expanded with spaces. To cut the number of decimal places beeing shown of a float, you can add '.\<max number\>' between the `%` and the `f`, i.e. `%.2f`.
 
-## Primjeri
+## Examples
 
 ```c
 new number = 42;
-printf("The number is %d.",number);  //-> Broj je 42.
+printf("The number is %d.",number);  //-> The number is 42.
 
-new string[]= "prosta poruka";
-printf("This is a %s containing the number %d.", string, number); //-> Ovo je prosta poruka koja sadrži broj 42.
+new string[]= "simple message";
+printf("This is a %s containing the number %d.", string, number); //-> This is a simple message containing the number 42.
 
 new character = 64;
 printf("I'm %c home",character); //-> I'm @ home
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Niz formata ili njegov izlaz ne smije prelaziti 1024 znaka. Sve što je duže od te dužine može dovesti do pada servera.
+The format string or its output should not exceed 1024 characters. Anything beyond that length can lead to a server to crash.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [print](./print): Ispišite osnovnu poruku u zapisnike poslužitelja i konzolu.
-- [format](./format): Formatira string.
+- [print](./print): Print a basic message to the server logs and console.
+- [format](./format): Format a string.

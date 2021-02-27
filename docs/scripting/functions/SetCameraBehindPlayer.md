@@ -1,30 +1,30 @@
 ---
 title: SetCameraBehindPlayer
-description: Vratite kameru na mjesto iza igrača nakon upotrebe funkcije poput SetPlayerCameraPos.
+description: Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Vratite kameru na mjesto iza igrača nakon upotrebe funkcije poput SetPlayerCameraPos.
+Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.
 
-| Ime      | Deskripcija                                            |
-| -------- | ------------------------------------------------------ |
-| playerid | Igrač kojem želite vratiti kameru na mjesto iza njega. |
+| Name     | Description                                    |
+| -------- | ---------------------------------------------- |
+| playerid | The player you want to restore the camera for. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+0: The function failed to execute. This means the player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 SetCameraBehindPlayer(playerid);
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerCameraPos](SetPlayerCameraPos): Postavi poziciju kamere igrača.
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Postavite gdje će igračeva kamera gledati.
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.

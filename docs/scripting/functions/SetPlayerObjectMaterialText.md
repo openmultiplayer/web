@@ -1,66 +1,62 @@
 ---
 title: SetPlayerObjectMaterialText
-description: Zamijeni teksturu player objekta sa tekstom.
+description: Replace the texture of a player object with text.
 tags: ["player"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3e' />
 
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
+## Description
 
-:::
+Replace the texture of a player object with text.
 
-## Deskripcija
-
-Zamijeni teksturu player objekta sa tekstom.
-
-| Ime           | Deskripcija                                                               |
-| ------------- | ------------------------------------------------------------------------- |
-| playerid      | ID igrača čijem player-objektu želite promijeniti teksturu.               |
-| objectid      | ID objekta na kojeg želite postaviti tekst.                               |
-| text          | Tekst za postaviti.                                                       |
-| materialindex | Index materijala za zamijeniti sa tekstom (DEFAULT: 0).                   |
-| materialsize  | [Veličina](../resources/materialtextsizes) materijala (DEFAULT: 256x128). |
-| fontface      | Font za koristiti (DEFAULT: Arial).                                       |
-| fontsize      | Veličina teksta (DEFAULT: 24) (MAX 255).                                  |
-| bold          | Bold text. Postavi na 1 za bold (deblje), 0 za ne (DEFAULT: 1).           |
-| fontcolor     | Boja teksta (DEFAULT: White).                                             |
-| backcolor     | Boja pozadine (DEFAULT: Ništa (transparent)).                             |
-| textalignment | [Poravnanje](../resources/materialtextsizes) teksta (DEFAULT: Left).      |
+| Name          | Description                                                                       |
+| ------------- | --------------------------------------------------------------------------------- |
+| playerid      | The ID of the player whose player object to set the text of.                      |
+| objectid      | The ID of the object on which to place the text.                                  |
+| text          | The text to set.                                                                  |
+| materialindex | The material index to replace with text (DEFAULT: 0).                             |
+| materialsize  | The [size](../resources/materialtextsizes) of the material (DEFAULT: 256x128). |
+| fontface      | The font to use (DEFAULT: Arial).                                                 |
+| fontsize      | The size of the text (DEFAULT: 24) (MAX 255).                                     |
+| bold          | Bold text. Set to 1 for bold, 0 for not (DEFAULT: 1).                             |
+| fontcolor     | The color of the text (DEFAULT: White).                                           |
+| backcolor     | The background color (DEFAULT: None (transparent)).                               |
+| textalignment | The [alignment](../resources/materialtextsizes) of the text (DEFAULT: Left).   |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 if (strcmp("/text", cmdtext, true) == 0)
 {
-    new myObject = CreatePlayerObject(playerid, 19353, 0, 0, 10, 0.0, 0.0, 90.0); // kreiraj objekat
+    new myObject = CreatePlayerObject(playerid, 19353, 0, 0, 10, 0.0, 0.0, 90.0); //create the object
     SetPlayerObjectMaterialText(playerid, myObject, "SA-MP {FFFFFF}0.3{008500}e {FF8200}RC7", 0, OBJECT_MATERIAL_SIZE_256x128,\
 "Arial", 28, 0, 0xFFFF8200, 0xFF000000, OBJECT_MATERIAL_TEXT_ALIGN_CENTER);
-    // napiši "SA-MP 0.3e RC7" na objekat, sa narandžastom bojom fonta i crnom pozadinom
+    // write "SA-MP 0.3e RC7" on the object, with orange font color and black background
 return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Ugradnja boja može se koristiti za više boja u tekstu.
+Color embedding can be used for multiple colors in the text.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetObjectMaterialText](SetObjectMaterialText): Zamijeni teksturu objekta sa tekstom.
-- [SetPlayerObjectMaterial](SetPlayerObjectMaterial): Zamijeni teksturu player objekta sa teksturom drugog modela iz igre.
+- [SetObjectMaterialText](SetObjectMaterialText): Replace the texture of an object with text.
+- [SetPlayerObjectMaterial](SetPlayerObjectMaterial): Replace the texture of a player object with the texture from another model in the game.
 
-## Filterskripte koje podržavaju teksturisanje/text
+## Filterscripts with texturing/text support
 
-- Ultimate Creator od Nexius
-- Texture Studio od \[uL\]Pottus
-- Fusez's Map Editor od RedFusion
-- Map Editor I od adri1
+- Ultimate Creator by Nexius
+- Texture Studio by \[uL\]Pottus
+- Fusez's Map Editor by RedFusion
+- Map Editor I by adri1

@@ -1,55 +1,55 @@
 ---
 title: SetPlayerObjectPos
-description: Postavlja poziciju player-objekta u navedenim kordinatama.
+description: Sets the position of a player-object to the specified coordinates.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavlja poziciju player-objekta u navedenim kordinatama.
+Sets the position of a player-object to the specified coordinates.
 
-| Ime      | Deskripcija                                                                       |
-| -------- | --------------------------------------------------------------------------------- |
-| playerid | ID čijem će se player-objektu promijeniti pozicija.                               |
-| objectid | ID player-objekta za postaviti poziciju. Returnovan/vraćen od CreatePlayerObject. |
-| Float:X  | X kordinata za staviti objekat.                                                   |
-| Float:Y  | Y kordinata za staviti objekat.                                                   |
-| Float:Z  | Z kordinata za staviti objekat.                                                   |
+| Name     | Description                                                                         |
+| -------- | ----------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose player-object to set the position of.                    |
+| objectid | The ID of the player-object to set the position of. Returned by CreatePlayerObject. |
+| Float:X  | The X coordinate to put the object at.                                              |
+| Float:Y  | The Y coordinate to put the object at.                                              |
+| Float:Z  | The Z coordinate to put the object at.                                              |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Igrač i/ili objekat ne postoje.
+0: The function failed to execute. Player and/or object do not exist.
 
-## Primjeri
+## Examples
 
 ```c
 new obj = CreatePlayerObject(...);
 
-// Kasnije
+// Later on
 
 SetPlayerObjectPos(playerid, obj, 2001.195679, 1547.113892, 14.283400);
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [CreatePlayerObject](CreatePlayerObject): Kreiraj objekat za samo jednog igrača.
-- [DestroyPlayerObject](DestroyPlayerObject): Uništi player objekat.
-- [IsValidPlayerObject](IsValidPlayerObject): Provjeri da li je određeni player objekat validan.
-- [MovePlayerObject](MovePlayerObject): Pomjeri player objekat.
-- [StopPlayerObject](StopPlayerObject): Zaustavi player objekat od kretanja.
-- [SetPlayerObjectRot](SetPlayerObjectRot): Postavi rotaciju player objekta.
-- [GetPlayerObjectPos](GetPlayerObjectPos): Lociraj player objekat.
-- [GetPlayerObjectRot](GetPlayerObjectRot): Provjeri rotaciju player objekta.
-- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Prikvači player objekat za igrača.
-- [CreateObject](CreateObject): Kreiraj objekat.
-- [DestroyObject](DestroyObject): Uništi objekat.
-- [IsValidObject](IsValidObject): Provjeri da li je određeni objekat validan.
-- [MoveObject](MoveObject): Pomjeri objekat.
-- [StopObject](StopObject): Zaustavi objekat od kretanja.
-- [SetObjectPos](SetObjectPos): Postavi poziciju objekta.
-- [SetObjectRot](SetObjectRot): Postavi rotaciju objekta.
-- [GetObjectPos](GetObjectPos): Lociraj objekat.
-- [GetObjectRot](GetObjectRot): Provjeri rotaciju objekta.
-- [AttachObjectToPlayer](AttachObjectToPlayer): Prikvači objekat za igrača.
+- [CreatePlayerObject](CreatePlayerObject): Create an object for only one player.
+- [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.
+- [IsValidPlayerObject](IsValidPlayerObject): Checks if a certain player object is vaild.
+- [MovePlayerObject](MovePlayerObject): Move a player object.
+- [StopPlayerObject](StopPlayerObject): Stop a player object from moving.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Set the rotation of a player object.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Locate a player object.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Check the rotation of a player object.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Attach a player object to a player.
+- [CreateObject](CreateObject): Create an object.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [IsValidObject](IsValidObject): Checks if a certain object is vaild.
+- [MoveObject](MoveObject): Move an object.
+- [StopObject](StopObject): Stop an object from moving.
+- [SetObjectPos](SetObjectPos): Set the position of an object.
+- [SetObjectRot](SetObjectRot): Set the rotation of an object.
+- [GetObjectPos](GetObjectPos): Locate an object.
+- [GetObjectRot](GetObjectRot): Check the rotation of an object.
+- [AttachObjectToPlayer](AttachObjectToPlayer): Attach an object to a player.

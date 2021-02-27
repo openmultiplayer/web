@@ -1,37 +1,37 @@
 ---
 title: SetNameTagDrawDistance
-description: Postavi maksimalnu distancu sa koje se prikazuju imena igrača.
+description: Set the maximum distance to display the names of players.
 tags: []
 ---
 
-## Deskripcija
+## Description
 
-Postavi maksimalnu distancu sa koje se prikazuju imena igrača.
+Set the maximum distance to display the names of players.
 
-| Ime            | Deskripcija            |
-| -------------- | ---------------------- |
-| Float:distance | Distanca za postaviti. |
+| Name           | Description          |
+| -------------- | -------------------- |
+| Float:distance | The distance to set. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 SetNameTagDrawDistance(20.0);
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Zadana distanca je 70 SA jedinica.
+Default distance is 70 SA units
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [LimitGlobalChatRadius](LimitGlobalChatRadius): Ograničite udaljenost između igrača potrebnih da biste vidjeli njihov chat.
-- [ShowNameTags](ShowNameTags): Postavi nametagove uključeno ili isključeno.
-- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Prikaži ili sakrij nametag za određenog igrača.
+- [LimitGlobalChatRadius](LimitGlobalChatRadius): Limit the distance between players needed to see their chat.
+- [ShowNameTags](ShowNameTags): Set nametags on or off.
+- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Show or hide a nametag for a certain player.

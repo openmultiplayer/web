@@ -1,47 +1,47 @@
 ---
 title: SetPlayerFacingAngle
-description: Postavi smjer gledanja igrača (Z rotacija).
+description: Set a player's facing angle (Z rotation).
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavi smjer gledanja igrača (Z rotacija).
+Set a player's facing angle (Z rotation).
 
-| Ime       | Deskripcija                            |
-| --------- | -------------------------------------- |
-| playerid  | ID igrača za postaviti smjer gledanja. |
-| Float:ang | Ugao pod kojim će igrač gledati.       |
+| Name      | Description                                      |
+| --------- | ------------------------------------------------ |
+| playerid  | The ID of the player to set the facing angle of. |
+| Float:ang | The angle the player should face.                |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+0: The function failed to execute. The player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
-SetPlayerFacingAngle( playerid, 0 ); // Igrač gleda sjeverno
+SetPlayerFacingAngle( playerid, 0 ); //Player faces north
 ```
 
 ```
-         sjever (0)
-            |
-(90) zapad-   -istok (270)      (Dobro za zapamtiti: Nikad ne jedite isjeckanu pšenicu)
-            |
-         south (180)
+        north (0)
+           |
+(90) west-   -east (270)      (Good way to remember: Never Eat Shredded Wheat)
+           |
+        south (180)
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Uglovi su obrnuti u GTA:SA; 90 stepeni bi bilo istočno u stvarnom svijetu, ali u GTA:SA 90 stepeni je zapravo zapad. Sjever i Jug su i dalje 0/360 i 180. Da biste to pretvorili, jednostavno napravite kut od 360.
+Angles are reversed in GTA:SA; 90 degrees would be East in the real world, but in GTA:SA 90 degrees is in fact West. North and South are still 0/360 and 180. To convert this, simply do 360 - angle.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerFacingAngle](GetPlayerFacingAngle): Provjeri gdje igrač gleda.
-- [SetPlayerPos](SetPlayerPos): Postavite poziciju igrača.
+- [GetPlayerFacingAngle](GetPlayerFacingAngle): Check where a player is facing.
+- [SetPlayerPos](SetPlayerPos): Set a player's position.

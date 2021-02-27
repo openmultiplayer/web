@@ -1,57 +1,53 @@
 ---
 title: SetPlayerHoldingObject
-description: Pričvršćuje objekat za kost.
+description: Attaches an object to a bone.
 tags: ["player"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3b' />
 
-Ova funkcija je dodana u SA-MP 0.3b i ne radi u nižim verzijama!
+## Description
 
-:::
+Attaches an object to a bone.
 
-## Deskripcija
-
-Pričvršćuje objekat za kost.
-
-| Ime      | Deskripcija                                                    |
-| -------- | -------------------------------------------------------------- |
-| playerid | ID igrača za kojeg želite prikvačiti objekat.                  |
-| modelid  | Model kojeg želite koristiti.                                  |
-| bone     | [Kost](../resources/boneid) za koju želite prikvačiti objekat. |
-| fOffsetX | (neobavezno) Pomak osi X za položaj objekta.                   |
-| fOffsetY | (neobavezno) Pomak osi Y za položaj objekta.                   |
-| fOffsetZ | (neobavezno) Pomak osi Z za položaj objekta.                   |
-| fRotX    | (neobavezno) Pomak osi X za rotaciju objekta.                  |
-| fRotY    | (neobavezno) Pomak osi Y za rotaciju objekta.                  |
-| fRotZ    | (neobavezno) Pomak osi Z za rotaciju objekta.                  |
+| Name     | Description                                                          |
+| -------- | -------------------------------------------------------------------- |
+| playerid | ID of the player you want to attach the object to.                   |
+| modelid  | The model you want to use.                                           |
+| bone     | The [bone](../resources/boneid) you want to attach the object to. |
+| fOffsetX | (optional) X axis offset for the object position.                    |
+| fOffsetY | (optional) Y axis offset for the object position.                    |
+| fOffsetZ | (optional) Z axis offset for the object position.                    |
+| fRotX    | (optional) X axis rotation of the object.                            |
+| fRotY    | (optional) Y axis rotation of the object.                            |
+| fRotZ    | (optional) Z axis rotation of the object.                            |
 
 ## Returns
 
-1 pri uspjehu, 0 pri grešci.
+1 on success, 0 on failure
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerSpawn(playerid)
 {
-    SetPlayerHoldingObject(playerid, 1609, 2); // Prikvači kornjaču za playerid-evu glavu!
+    SetPlayerHoldingObject(playerid, 1609, 2); //Attach a turtle to the playerid's head!
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Po igraču se može prikačiti samo jedan predmet. Ova je funkcija odvojena od spremišta CreateObject / CreatePlayerObject.
+Only one object may be attached per player. This function is seperate from the CreateObject / CreatePlayerObject pools.
 
 :::
 
 :::warning
 
-uklonjena je u SA-MP 0.3c. Provjeri SetPlayerAttachedObject
+This function was removed in SA-MP 0.3c. check SetPlayerAttachedObject
 
 :::
 
-## Srodne Funkcije
+## Related Functions

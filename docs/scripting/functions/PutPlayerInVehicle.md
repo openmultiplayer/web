@@ -1,26 +1,26 @@
 ---
 title: PutPlayerInVehicle
-description: Stavlja igrača u vozilo.
+description: Puts a player in a vehicle.
 tags: ["player", "vehicle"]
 ---
 
-## Deskripcija
+## Description
 
-Stavlja igrača u vozilo.
+Puts a player in a vehicle.
 
-| Ime       | Deskripcija                              |
-| --------- | ---------------------------------------- |
-| playerid  | ID igrača za ubaciti u vozilo.           |
-| vehicleid | ID vozila u koje treba ubaciti igrača.   |
-| seatid    | ID sjedišta u koje treba ubaciti igrača. |
+| Name      | Description                                 |
+| --------- | ------------------------------------------- |
+| playerid  | The ID of the player to put in a vehicle.   |
+| vehicleid | The ID of the vehicle to put the player in. |
+| seatid    | The ID of the seat to put the player in.    |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Igrač ili vozilo ne postoje.
+0: The function failed to execute. The player or vehicle don't exist.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
@@ -30,32 +30,32 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 }
 ```
 
-```p
-0 - Vozač
-1 - Suvozač
-2 - Lijevi-pozadi
-3 - Desni-pozadi
-4+ - Putnička sjedala (kauč i sl.)
+```
+0 - Driver
+1 - Front passenger
+2 - Back-left passenger
+3 - Back-right passenger
+4+ - Passenger seats (coach etc.)
 
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Možete koristiti GetPlayerVehicleSeat u petlji kako biste provjerili da li neko mjesto zauzima bilo koji igrač.
+You can use GetPlayerVehicleSeat in a loop to check if a seat is occupied by any players.
 
 :::
 
 :::warning
 
-Ako je sedište neispravno ili je zauzeto, izazvat će crash kada IZLAZE iz vozila.
+If the seat is invalid or is taken, will cause a crash when they EXIT the vehicle.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Izbaci igrača iz njegovog vozila.
-- [GetPlayerVehicleID](GetPlayerVehicleID): Dobij ID vozila u kojem je igrač trenutno.
-- [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Provjeri u kojem je igrač sjedištu.
-- [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle): Pozvano kada igrač počne da ulazi u vozilo.
+- [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Throw a player out of their vehicle.
+- [GetPlayerVehicleID](GetPlayerVehicleID): Get the ID of the vehicle the player is in.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.
+- [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle): Called when a player starts to enter a vehicle.

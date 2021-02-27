@@ -1,33 +1,33 @@
 ---
 title: SetTeamCount
-description: Ova se funkcija koristi za promjenu količine timova korištenih u gamemodeu.
+description: This function is used to change the amount of teams used in the gamemode.
 tags: []
 ---
 
-## Deskripcija
+## Description
 
-Ova se funkcija koristi za promjenu količine timova korištenih u gamemodeu. Nema očigledan način upotrebe, ali može pomoći da se naznači broj timova koji se koriste za bolje (efikasnije) interno rukovanje. Ovu funkciju treba koristiti samo u OnGameModeInit povratnom pozivu. Važno: Ovdje možete proslijediti 2 milijarde ako želite, ova funkcija uopće nema efekta.
+This function is used to change the amount of teams used in the gamemode. It has no obvious way of being used, but can help to indicate the number of teams used for better (more effective) internal handling. This function should only be used in the OnGameModeInit callback. Important: You can pass 2 billion here if you like, this function has no effect at all.
 
-| Ime   | Deskripcija                    |
-| ----- | ------------------------------ |
-| teams | Broj timova koje gamemode zna. |
+| Name  | Description                         |
+| ----- | ----------------------------------- |
+| teams | Number of teams the gamemode knows. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnGameModeInit( )
 {
-    // Koristimo 18 timova, definirajmo ih;
+    // We use 18 teams in this use Team-Deathmatch mode, define it;
     SetTeamCount(18);
     return 1;
 }
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerTeam](GetPlayerTeam): Provjerite u kojem je igrač timu.
-- [SetPlayerTeam](SetPlayerTeam): Postavi tim igrača.
+- [GetPlayerTeam](GetPlayerTeam): Check what team a player is on.
+- [SetPlayerTeam](SetPlayerTeam): Set a player's team.

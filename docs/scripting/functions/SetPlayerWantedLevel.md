@@ -1,25 +1,25 @@
 ---
 title: SetPlayerWantedLevel
-description: Postavi wanted level igrača (6 smeđih zvjetdica ispod HUD-a).
+description: Set a player's wanted level (6 brown stars under HUD).
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavi wanted level igrača (6 smeđih zvjetdica ispod HUD-a).
+Set a player's wanted level (6 brown stars under HUD).
 
-| Ime      | Deskripcija                             |
-| -------- | --------------------------------------- |
-| playerid | ID igrača za postaviti wanted level.    |
-| level    | Wanted level za postaviti igraču (0-6). |
+| Name     | Description                                      |
+| -------- | ------------------------------------------------ |
+| playerid | The ID of the player to set the wanted level of. |
+| level    | The wanted level to set for the player (0-6).    |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+0: The function failed to execute. The player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 if (strcmp(cmdtext, "/turnuptheheat", true) == 0)
@@ -30,7 +30,7 @@ if (strcmp(cmdtext, "/turnuptheheat", true) == 0)
 }
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerWantedLevel](GetPlayerWantedLevel): Provjeri wanted level igrača.
-- [PlayCrimeReportForPlayer](PlayCrimeReportForPlayer): Pusti krivičnu prijavu za igrača.
+- [GetPlayerWantedLevel](GetPlayerWantedLevel): Check a player's wanted level.
+- [PlayCrimeReportForPlayer](PlayCrimeReportForPlayer): Play a crime report for a player.

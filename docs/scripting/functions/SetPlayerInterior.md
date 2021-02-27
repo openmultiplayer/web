@@ -1,33 +1,33 @@
 ---
 title: SetPlayerInterior
-description: Postavlja igraču enterijer
+description: Set a player's interior.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavlja igraču enterijer. Lista trenutno poznatih enterijera i njihovih pozicija možete pronaći ovdje.
+Set a player's interior. A list of currently known interiors and their positions can be found here.
 
-| Ime        | Deskripcija                                                               |
-| ---------- | ------------------------------------------------------------------------- |
-| playerid   | ID igrača za postaviti enterijer.                                         |
-| interiorid | [ID enterijera](../resources/interiorids) u kojeg treba postaviti igrača. |
+| Name       | Description                                                          |
+| ---------- | -------------------------------------------------------------------- |
+| playerid   | The ID of the player to set the interior of.                         |
+| interiorid | The [interior ID](../resources/interiorids) to set the player in. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+0: The function failed to execute. This means the player is not connected.
 
-## Primjeri
+## Examples
 
 ```c
-// Postavi igraču zadani enterijer (napolju)
+// Set player to default interior (outside)
 SetPlayerInterior(playerid, 0);
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerInterior](GetPlayerInterior): Dobij trenutni enterijer igrača.
-- [LinkVehicleToInterior](LinkVehicleToInterior): Promijeni enterijer u kojem je vozilo vidljivo.
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Pozvano kada igrač promijeni enterijer.
+- [GetPlayerInterior](GetPlayerInterior): Get the current interior of a player.
+- [LinkVehicleToInterior](LinkVehicleToInterior): Change the interior that a vehicle is seen in.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Called when a player changes interior.

@@ -1,43 +1,43 @@
 ---
 title: SetPlayerTeam
-description: Postavi tim igrača.
+description: Set the team of a player.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavi tim igrača.
+Set the team of a player.
 
-| Ime      | Deskripcija                                                                   |
-| -------- | ----------------------------------------------------------------------------- |
-| playerid | ID igrača kojem želite postaviti tim.                                         |
-| teamid   | Tim za ubaciti igrača. Koristi NO_TEAM da uklonite igrača iz bilo kojeg tima. |
+| Name     | Description                                                                    |
+| -------- | ------------------------------------------------------------------------------ |
+| playerid | The ID of the player you want to set the team of.                              |
+| teamid   | The team to put the player in. Use NO_TEAM to remove the player from any team. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerSpawn(playerid)
 {
-    // Postavi tim 4 igraču kada se spawnuje
+    // Set a player's team to 4 when they spawn
     SetPlayerTeam(playerid, 4);
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Igrači ne mogu oštetiti / ubiti igrače iz istog tima, osim ako nožem ne prerežu grkljan. Od SA-MP 0.3x, igrači takođe ne mogu oštetiti vozila koja vozi igrač iz istog tima. To se može omogućiti pomoću EnableVehicleFriendlyFire. 255 (ili NO_TEAM) je zadani tim koji može pucati na druge igrače, a ne na 0.
+Players can not damage/kill players on the same team unless they use a knife to slit their throat. As of SA-MP 0.3x, players are also unable to damage vehicles driven by a player from the same team. This can be enabled with EnableVehicleFriendlyFire. 255 (or NO_TEAM) is the default team to be able to shoot other players, not 0.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerTeam](GetPlayerTeam): Provjerite u kojem je igrač timu.
-- [SetTeamCount](SetTeamCount): Postavi broj dostupnih timova.
-- [EnableVehicleFriendlyFire](EnableVehicleFriendlyFire): Omogućite prijateljsku vatru za timska vozila.
+- [GetPlayerTeam](GetPlayerTeam): Check what team a player is on.
+- [SetTeamCount](SetTeamCount): Set the number of teams available.
+- [EnableVehicleFriendlyFire](EnableVehicleFriendlyFire): Enable friendly fire for team vehicles.

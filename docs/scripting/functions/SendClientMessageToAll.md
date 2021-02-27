@@ -1,46 +1,46 @@
 ---
 title: SendClientMessageToAll
-description: Prikazuje poruku u chatu za sve igrače.
+description: Displays a message in chat to all players.
 tags: []
 ---
 
-## Deskripcija
+## Description
 
-Prikazuje poruku u chatu za sve igrače. Ovo je ekvivalent SendClientMessage za više igrača.
+Displays a message in chat to all players. This is a multi-player equivalent of SendClientMessage.
 
-| Ime             | Deskripcija                              |
-| --------------- | ---------------------------------------- |
-| color           | Boja poruke (0xRRGGBBAA Hex format).     |
-| const message[] | Poruka za prikazati (max 144 karaktera). |
+| Name            | Description                                       |
+| --------------- | ------------------------------------------------- |
+| color           | The color of the message (0xRRGGBBAA Hex format). |
+| const message[] | The message to show (max 144 characters).         |
 
 ## Returns
 
-Ova funkcija ubijek vraća true/uspješno (1).
+This function always returns true (1).
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/helloworld", true) == 0)
     {
-        // Pošalji poruku svima
-        SendClientMessageToAll(-1, "Zdravo!");
+        // Send a message to everyone.
+        SendClientMessageToAll(-1, "Hello!");
         return 1;
     }
     return 0;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Izbjegavajte koristiti specifikatore formata u svojim porukama bez formatiranja poslanog stringa. U suprotnom će rezultirati padovima.
+Avoid using format specifiers in your messages without formatting the string that is sent. It will result in crashes otherwise.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SendClientMessage](SendClientMessage): Pošalji poruku određenom igraču.
-- [SendPlayerMessageToAll](SendPlayerMessageToAll): Prisilite igrača da pošalje tekst za sve igrače.
+- [SendClientMessage](SendClientMessage): Send a message to a certain player.
+- [SendPlayerMessageToAll](SendPlayerMessageToAll): Force a player to send text for all players.

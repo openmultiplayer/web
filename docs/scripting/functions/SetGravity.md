@@ -1,43 +1,43 @@
 ---
 title: SetGravity
-description: Postavi gravitaciju za sve igrače.
+description: Set the gravity for all players.
 tags: []
 ---
 
-## Deskripcija
+## Description
 
-Postavi gravitaciju za sve igrače.
+Set the gravity for all players.
 
-| Ime           | Deskripcija                                                                   |
-| ------------- | ----------------------------------------------------------------------------- |
-| Float:gravity | Vrijednost na koju bi gravitacija trebala biti postavljena (između -50 i 50). |
+| Name          | Description                                                       |
+| ------------- | ----------------------------------------------------------------- |
+| Float:gravity | The value that the gravity should be set to (between -50 and 50). |
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, čak i kada se neuspješno izvrši ako je gravitacija iznad limita (manja od -50 ili veća od +50).
+This function always returns 1, even when it fails to execute if the gravity is out of the limits (lower than -50 or high than +50).
 
-## Primjeri
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    // Postavi gravitaciju kao na mjesecu
+    // Set moon-like gravity
     SetGravity(0.001);
 
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Zadana gravitacija je 0.008.
+Default gravity is 0.008.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetGravity](GetGravity): Dobij trenutno postavljenu gravitaciju.
-- [SetWeather](SetWeather): Postavite globalno vrijeme (weather).
-- [SetWorldTime](SetWorldTime): Postavi globalno vrijeme servera.
+- [GetGravity](GetGravity): Get the currently set gravity.
+- [SetWeather](SetWeather): Set the global weather.
+- [SetWorldTime](SetWorldTime): Set the global server time.

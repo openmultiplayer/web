@@ -1,30 +1,26 @@
 ---
 title: SetObjectNoCameraCol
-description: Onemogućite sudare između kamera igrača i navedenog objekta.
+description: Disable collisions between players' cameras and the specified object.
 tags: []
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3.7' />
 
-Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
+## Description
 
-:::
+Disable collisions between players' cameras and the specified object.
 
-## Deskripcija
-
-Onemogućite sudare između kamera igrača i navedenog objekta.
-
-| Ime      | Deskripcija                                            |
-| -------- | ------------------------------------------------------ |
-| objectid | ID objekta za onemogućiti sudare između kamere igrača. |
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
+| objectid | The ID of the object to disable camera collisions on. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Navedeni objekat ne postoji.
+0: The function failed to execute. The object specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 public OnObjectMoved(objectid)
@@ -39,14 +35,14 @@ public OnObjectMoved(objectid)
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Ovo radi samo izvan granica karte (prošlih -3000/3000 jedinica na x i/ili y osi).
+This only works outside the map boundaries (past -3000/3000 units on the x and/or y axis).
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerObjectNoCameraCol](SetPlayerObjectNoCameraCol): Onemogućava sudare između kamere i objekta playera.
+- [SetPlayerObjectNoCameraCol](SetPlayerObjectNoCameraCol): Disables collisions between camera and player object.

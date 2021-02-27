@@ -1,55 +1,51 @@
 ---
 title: SelectTextDraw
-description: Prikaži miš i dozvoli igraču da selektuje textdraw.
+description: Display the cursor and allow the player to select a textdraw.
 tags: ["textdraw"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3e' />
 
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
+## Description
 
-:::
+Display the cursor and allow the player to select a textdraw
 
-## Deskripcija
-
-Prikaži miš i dozvoli igraču da selektuje textdraw.
-
-| Ime        | Deskripcija                                                   |
-| ---------- | ------------------------------------------------------------- |
-| playerid   | ID igrača koji može selektovati textdraw.                     |
-| hovercolor | Boja textdrawa prilikom prelaska preko njega sa mišem (RGBA). |
+| Name       | Description                                                    |
+| ---------- | -------------------------------------------------------------- |
+| playerid   | The ID of the player that should be able to select a textdraw  |
+| hovercolor | The color of the textdraw when hovering over with mouse (RGBA) |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/tdselect", true))
     {
-        SelectTextDraw(playerid, 0x00FF00FF); // Označite zeleno kada zadržite pokazivač iznad
-        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: Molimo selektujte textdraw!");
+        SelectTextDraw(playerid, 0x00FF00FF); // Highlight green when hovering over
+        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: Please select a textdraw!");
         return 1;
     }
     return 0;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-TEKST će biti istaknut kada zadržite pokazivač, a NE okvir (ako je jedan prikazan).
+It is the TEXT which will be highlighted when hovered over, NOT the box (if one is shown).
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [CancelSelectTextDraw](CancelSelectTextDraw): Prekida selekciju textdrawa sa mišem.
-- [TextDrawSetSelectable](TextDrawSetSelectable): Postavlja da li je textdraw klikljiv prilikom SelectTextDraw.
-- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): Postavlja da li je player-textdraw klikljiv prilikom SelectTextDraw.
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Pozvano kada igrač klikne na textdraw.
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Pozvano kada igrač klikne na player-textdraw.
+- [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
+- [TextDrawSetSelectable](TextDrawSetSelectable): Sets whether a textdraw is selectable through SelectTextDraw
+- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): Sets whether a player-textdraw is selectable through SelectTextDraw
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

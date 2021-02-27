@@ -1,42 +1,42 @@
 ---
 title: SetPlayerMarkerForPlayer
-description: Promijeni boju igračevog nametag-a i bljeskalice na radaru za drugog igrača.
+description: Change the colour of a player's nametag and radar blip for another player.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Promijeni boju igračevog nametag-a i bljeskalice na radaru za drugog igrača.
+Change the colour of a player's nametag and radar blip for another player.
 
-| Ime          | Deskripcija                                                                  |
-| ------------ | ---------------------------------------------------------------------------- |
-| playerid     | Igrač koji će vidjeti promijenjenu boju bljeskalice/nametag-a drugog igrača. |
-| showplayerid | Igrač čija će boja biti promijenjena.                                        |
-| color        | Nova boja. Podržava alfa vrijednosti.                                        |
+| Name         | Description                                                      |
+| ------------ | ---------------------------------------------------------------- |
+| playerid     | The player that will see the player's changed blip/nametag color |
+| showplayerid | The player whose color will be changed                           |
+| color        | New color. Supports alpha values.                                |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
-// Postavi da igrač ID 42 vidi igrača ID 1 kao crveni marker (crvenu oznaku na mapi/radaru)
+// Make player 42 see player 1 as a red marker
 SetPlayerMarkerForPlayer(42, 1, 0xFF0000FF);
 
-// Neka igračeva oznaka/marker bude nevidljivo bijeli/a (chat će biti bijeli, ali marker više neće biti).
+// Make the players marker an invisible white (chat will be white but marker will be gone).
 SetPlayerMarkerForPlayer(42, 1, 0xFFFFFF00);
 
-// Neka oznaka/marker igrača bude nevidljiva igraču, a boja chata će ostati ista. Ispravno će raditi samo ako je korišten SetPlayerColor:
+// Make the players marker invisible to the player while keeping chat colour the same. Will only work correctly if SetPlayerColor has been used:
 SetPlayerMarkerForPlayer(42, 1, (GetPlayerColor(1) & 0xFFFFFF00));
 
-// Neka oznaka/marker igrača bude potpuno neproziran (pun) za igrača, a da boja chata ostane ista. Ispravno će raditi samo ako je korišten SetPlayerColor:
+// Make the players marker fully opaque (solid) to the player while keeping chat colour the same. Will only work correctly if SetPlayerColor has been used:
 SetPlayerMarkerForPlayer(42, 1, (GetPlayerColor(1) | 0x000000FF));
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [ShowPlayerMarkers](ShowPlayerMarkers): Odlučite hoće li server prikazivati ​​oznake na radaru.
-- [LimitPlayerMarkerRadius](LimitPlayerMarkerRadius): Ograničite radijus markera/oznake igrača.
-- [SetPlayerColor](SetPlayerColor): Postavi boju igrača.
-- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Prikaži ili sakrij nametag za određenog igrača.
+- [ShowPlayerMarkers](ShowPlayerMarkers): Decide if the server should show markers on the radar.
+- [LimitPlayerMarkerRadius](LimitPlayerMarkerRadius): Limit the player marker radius.
+- [SetPlayerColor](SetPlayerColor): Set a player's color.
+- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Show or hide a nametag for a certain player.

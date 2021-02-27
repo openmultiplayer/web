@@ -1,51 +1,51 @@
 ---
 title: SetPlayerArmour
-description: Postavi nivo armora (pancira) igrača.
+description: Set a player's armor level.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavi nivo armora (pancira) igrača.
+Set a player's armor level.
 
-| Ime          | Deskripcija                                                                                                                            |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | ID igrača za postaviti nivo armora.                                                                                                    |
-| Float:armour | Količina armora za postaviti, kao postotak (float). Vrijednosti veće od 100 su validne ali neće biti prikazane u armor bar-u na HUD-u. |
+| Name         | Description                                                                                                                             |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | The ID of the player to set the armour of.                                                                                              |
+| Float:armour | The amount of armour to set, as a percentage (float). Values larger than 100 are valid, but won't be displayed in the HUD's armour bar. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+0: The function failed to execute. This means the player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerSpawn(playerid)
 {
-    // Daje igraču full armor (100%) kada se spawnuje.
+    // Give players full armour (100%) when they spawn.
     SetPlayerArmour(playerid, 100.0);
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Ime funkcije je armour, a ne armor (amerikaniziran). Ovo nije u skladu s ostatkom SA-MP-a, pa zapamtite to.
+The function's name is armour, not armor (Americanized). This is inconsistent with the rest of SA-MP, so remember that.
 
 :::
 
 :::warning
 
-Armor/pancir biva zaokružen na cijele brojeve: postavite 50.15, ali dobićete 50.0
+Armour is obtained rounded to integers: set 50.15, but get 50.0
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerArmour](GetPlayerArmour): Otkrijte koliko armora ima igrač.
-- [SetPlayerHealth](SetPlayerHealth): Postavlja igraču helte.
-- [GetPlayerHealth](GetPlayerHealth): Doznaj koliko healtha ima igrač.
+- [GetPlayerArmour](GetPlayerArmour): Find out how much armour a player has.
+- [SetPlayerHealth](SetPlayerHealth): Set a player's health.
+- [GetPlayerHealth](GetPlayerHealth): Find out how much health a player has.

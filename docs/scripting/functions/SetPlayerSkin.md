@@ -1,34 +1,34 @@
 ---
 title: SetPlayerSkin
-description: Postavi skin igrača.
+description: Set the skin of a player.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavi skin igrača. Igračev skin je njegov model karaktera.
+Set the skin of a player. A player's skin is their character model.
 
-| Ime      | Deskripcija                                          |
-| -------- | ---------------------------------------------------- |
-| playerid | ID igrača za postaviti skin.                         |
-| skinid   | [Skin](../resources/skins) kojeg će igrač koristiti. |
+| Name     | Description                                              |
+| -------- | -------------------------------------------------------- |
+| playerid | The ID of the player to set the skin of.                 |
+| skinid   | The [skin](../resources/skins) the player should use. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+0: The function failed to execute. This means the player specified does not exist.
 
-Zapamti da je 'success' (uspješno) prijavljeno i kada je ID skina nevažeći (nije 0-311, ili 74), ali skin će biti postavljen na ID 0 (CJ).
+Note that 'success' is reported even when skin ID is invalid (not 0-311, or 74), but the skin will be set to ID 0 (CJ).
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/fireman", true) == 0)
     {
-        // Postavi skin igrača na ID 277, a to je vatrogasac.
+        // Set the player's skin to ID 277, which is a fireman.
         SetPlayerSkin(playerid, 277);
         return 1;
     }
@@ -50,7 +50,7 @@ SetPlayerSkinFix(playerid, skinid)
     GetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
     GetPlayerFacingAngle(playerid, tmpPos[3]);
 
-    // Ako je ID skina nevažeći, manji od 0 ili veći od 311 ili jednak 74 (nevažeći skin), onda ne radi ništa
+    // If the skinid is invalid, less than 0 or more than 311 or is equal to 74 (invalid skin), then do nothing
     if (0 > skinid > 311 || skinid == 74)
     {
         return 0;
@@ -60,7 +60,7 @@ SetPlayerSkinFix(playerid, skinid)
     {
         SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
         SetPlayerFacingAngle(playerid, tmpPos[3]);
-        TogglePlayerControllable(playerid, true); // sprečavanje smrzavanja - neobavezno
+        TogglePlayerControllable(playerid, true); // preventing any freeze - optional
         return SetPlayerSkin(playerid, skinid);
     }
     else if (IsPlayerInAnyVehicle(playerid))
@@ -71,7 +71,7 @@ SetPlayerSkinFix(playerid, skinid)
         RemovePlayerFromVehicle(playerid);
         SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
         SetPlayerFacingAngle(playerid, tmpPos[3]);
-        TogglePlayerControllable(playerid, true); // sprečavanje smrzavanja - bitno! zbog izvođenja animacija izlaska iz vozila
+        TogglePlayerControllable(playerid, true); // preventing any freeze - important! because of doing animations of exiting vehicle
         tmp = SetPlayerSkin(playerid, skinid);
         PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
         return tmp;
@@ -83,15 +83,15 @@ SetPlayerSkinFix(playerid, skinid)
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Poznati Bug(ovi): Ako je igračeva koža postavljena kada čuči, u vozilu ili izvodi određene animacije, postat će smrznuti ili na neki drugi način uklonjeni. To se može popraviti pomoću TogglePlayerControllable. Igrači se mogu otkriti kako su čučali preko GetPlayerSpecialAction (SPECIAL_ACTION_DUCK). Ostali igrači oko igrača mogu se srušiti ako je u vozilu ili ako ulazi/izlazi iz vozila. Postavljanje kože igrača kada je mrtav može srušiti igrače oko njega. Prekidi sjedeći na biciklima.
+Known Bug(s): If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using TogglePlayerControllable. Players can be detected as being crouched through GetPlayerSpecialAction (SPECIAL_ACTION_DUCK). Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle. Setting a player's skin when he is dead may crash players around him. Breaks sitting on bikes.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerSkin](GetPlayerSkin): Dobij igračev trenutni skin.
-- [SetSpawnInfo](SetSpawnInfo): Postavi postavke spawnovanja za igrača.
+- [GetPlayerSkin](GetPlayerSkin): Get a player's current skin.
+- [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.

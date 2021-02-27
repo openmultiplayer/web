@@ -1,58 +1,54 @@
 ---
 title: print
-description: Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (server_log.txt).
+description: Prints a string to the server console (not in-game chat) and logs (server_log.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+Prints a string to the server console (not in-game chat) and logs (server_log.txt).
 
-## Deskripcija
-
-Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (server_log.txt).
-
-| Ime                   | Deskripcija                         |
-| --------------------- | ----------------------------------- |
-| string[]              | String za ispisati.                 |
-| foreground (optional) | Boja u prvom planu koja se koristi. |
-| background (optional) | Pozadinska boja koja se koristi.    |
-| highlight (optional)  | Istaknuta boja za upotrebu.         |
+| Name                  | Description                   |
+| --------------------- | ----------------------------- |
+| string[]              | The string to print.          |
+| foreground (optional) | The foreground colour to use. |
+| background (optional) | The background colour to use. |
+| highlight (optional)  | The highlight colour to use.  |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
 :::tip
 
-Kad kodovi boja ostanu -1, koriste se zadane boje poslužiteljske konzole.
+When the colour codes are left at -1, the default colours of the server console are used.
 
 :::
 
 :::tip
 
-Na većini sistema mogu se koristiti sljedeći kodovi boja u prvom planu i pozadini: crna (0), crvena (1), zelena (2), žuta (3), plava (4), magenta (5), cijan (6) i bijela (7).
+On most systems the following foreground and background colour codes can be used: black (0), red (1), green (2), yellow (3), blue (4), magenta (5), cyan (6) and white (7).
 
 :::
 
 :::tip
 
-Većina sistema takođe podržava jarke / podebljane verzije ovih boja. Mogu se koristiti sljedeće istaknute vrijednosti: uobičajena (0) i svijetla/podebljana (1).
+Most systems also support the bright/bold versions of these colours. The following highlight values can be used: regular (0) and bright/bold (1).
 
 :::
 
-## Primjeri
+## Examples
 
 ```c
 public OnGameModeInit( )
 {
-    print("Gamemode se pokrenuo.");
+    print("Gamemode started.");
     return 1;
 }
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [printf](printf): Ispišite formatiranu poruku u zapise poslužitelja i konzolu.
+- [printf](printf): Print a formatted message into the server logs and console.

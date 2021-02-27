@@ -1,66 +1,62 @@
 ---
 title: RemoveBuildingForPlayer
-description: Uklanja standardni model San Andreasa za jednog igrača u određenom opsegu.
+description: Removes a standard San Andreas model for a single player within a specified range.
 tags: ["player"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3d' />
 
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
+## Description
 
-:::
+Removes a standard San Andreas model for a single player within a specified range.
 
-## Deskripcija
-
-Uklanja standardni model San Andreasa za jednog igrača u određenom opsegu.
-
-| Ime           | Deskripcija                                                            |
-| ------------- | ---------------------------------------------------------------------- |
-| playerid      | ID igrača za ukloniti objekte.                                         |
-| modelid       | Model za ukloniti.                                                     |
-| Float:fX      | X kordinata oko koje će objekat biti obrisan.                          |
-| Float:fY      | Y kordinata oko koje će objekat biti obrisan.                          |
-| Float:fZ      | Z kordinata oko koje će objekat biti obrisan.                          |
-| Float:fRadius | Radijus oko navedene točke za uklanjanje objekata s navedenim modelom. |
+| Name          | Description                                                                       |
+| ------------- | --------------------------------------------------------------------------------- |
+| playerid      | The ID of the player to remove the objects for.                                   |
+| modelid       | The model to remove.                                                              |
+| Float:fX      | The X coordinate around which the objects will be removed.                        |
+| Float:fY      | The Y coordinate around which the objects will be removed.                        |
+| Float:fZ      | The Z coordinate around which the objects will be removed.                        |
+| Float:fRadius | The radius around the specified point to remove objects with the specified model. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerConnect(playerid)
 {
-    // Kada se igrač konektuje, objekat sa modelom 615 će biti uklonjen u
-    // rasponu od 200.0 od tačke 0.0, 0.0, 0.0, koja je centar San Andreas-a.
+    // When the player connects, objects with model 615 will be removed within a
+    // range of 200.0 from the point 0.0, 0.0, 0.0, which is the center of San Andreas.
     RemoveBuildingForPlayer(playerid, 615, 0.0, 0.0, 0.0, 200.0);
     return 1;
 }
 
 public OnPlayerConnect(playerid)
 {
-    // Kada se igrač konektuje, svi objekti sa mape će se ukloniti.
+    // When the player connects, all map objects will be removed.
     RemoveBuildingForPlayer(playerid, -1, 0.0, 0.0, 0.0, 6000.0);
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-U SA-MP 0.3.7 možete koristiti -1 za Modelid za uklanjanje svih objekata unutar navedenog radijusa.
+In SA-MP 0.3.7 you can use -1 for the modelid to remove all objects within the specified radius.
 
 :::
 
 :::warning
 
-Čini se da postoji ograničenje od oko 1000 linija/objekata. Zaobilazno rješenje nema. Kada uklonite isti predmet za igrača, oni će se srušiti. Obično se igrači sruše pri ponovnom povezivanju s serverom jer server uklanja zgrade na OnPlayerConnectu.
+There appears to be a limit of around 1000 lines/objects. There is no workaround. When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [DestroyObject](DestroyObject): Uništi objekat.
-- [DestroyPlayerObject](DestroyPlayerObject): Uništi player objekat.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.

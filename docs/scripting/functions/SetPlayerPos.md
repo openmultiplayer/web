@@ -1,30 +1,30 @@
 ---
 title: SetPlayerPos
-description: Postavite poziciju igrača.
+description: Set a player's position.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavite poziciju igrača.
+Set a player's position.
 
-| Ime      | Deskripcija                          |
-| -------- | ------------------------------------ |
-| playerid | ID igrača za postaviti poziciju.     |
-| Float:x  | X kordinata za pozicionirati igrača. |
-| Float:y  | Y kordinata za pozicionirati igrača. |
-| Float:z  | Z kordinata za pozicionirati igrača. |
+| Name     | Description                                  |
+| -------- | -------------------------------------------- |
+| playerid | The ID of the player to set the position of. |
+| Float:x  | The X coordinate to position the player at.  |
+| Float:y  | The Y coordinate to position the player at.  |
+| Float:z  | The Z coordinate to position the player at.  |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+0: The function failed to execute. This means the player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
-// Teleportuje igrača u centar San Andreasa kada napiše /middle
+// Teleports players to the center of San Andreas when they type /middle
 public OnPlayerCommandText(playerid,cmdtext[])
 {
     if (!strcmp(cmdtext, "/middle", true))
@@ -36,23 +36,23 @@ public OnPlayerCommandText(playerid,cmdtext[])
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Korištenje ove funkcije na igraču koji je u vozilu odmah će ga ukloniti iz vozila. Korisno za brzo izbacivanje igrača.
+Using this function on a player in a vehicle will instantly remove them from the vehicle. Useful for quickly ejecting players.
 
 :::
 
 :::tip
 
-Kada postavljate položaj igrača u enterijer, mora se postaviti i njegov enterijer.
+When setting a player's position to an interior, their interior must be set also.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerPosFindZ](SetPlayerPosFindZ): Postavi poziciju igrača i pronađi tlo.
-- [GetPlayerPos](GetPlayerPos): Dobij poziciju igrača.
-- [SetVehiclePos](SetVehiclePos): Postavi poziciju vozila.
-- [GetVehiclePos](GetVehiclePos): Doznajte položaj vozila.
+- [SetPlayerPosFindZ](SetPlayerPosFindZ): Set a player's position and find the ground.
+- [GetPlayerPos](GetPlayerPos): Get a player's position.
+- [SetVehiclePos](SetVehiclePos): Set the position of a vehicle.
+- [GetVehiclePos](GetVehiclePos): Get the position of a vehicle.

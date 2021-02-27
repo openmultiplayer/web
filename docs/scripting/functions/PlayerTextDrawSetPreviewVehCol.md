@@ -1,41 +1,37 @@
 ---
 title: PlayerTextDrawSetPreviewVehCol
-description: Postavlja boju vozila prikaza modela u player-textdrawu (ako je prikazano vozilo).
+description: Set the color of a vehicle in a player-textdraw model preview (if a vehicle is shown).
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3x' />
 
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
+## Description
 
-:::
+Set the color of a vehicle in a player-textdraw model preview (if a vehicle is shown).
 
-## Deskripcija
-
-Postavlja boju vozila prikaza modela u player-textdrawu (ako je prikazano vozilo).
-
-| Ime      | Deskripcija                                      |
-| -------- | ------------------------------------------------ |
-| playerid | ID igrača čiji player-textdraw treba izmijeniti. |
-| text     | ID igračevog player-textdrawaza izmijeniti.      |
-| color1   | Boja za postaviti primarnu boju vozila.          |
-| color2   | Boja za postaviti sekundarnu boju vozila.        |
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
+| playerid | The ID of the player whose player-textdraw to change. |
+| text     | The ID of the player's player-textdraw to change.     |
+| color1   | The color to set the vehicle's primary color to.      |
+| color2   | The color to set the vehicle's secondary color to.    |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Textdraw MORA koristiti font TEXT_DRAW_FONT_MODEL_PREVIEW i prikazivati ​​vozilo kako bi ova funkcija imala efekta.
+The textdraw MUST use the font TEXT_DRAW_FONT_MODEL_PREVIEW and be showing a vehicle in order for this function to have effect.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Postavlja ID modela 3D prikaza u player-textdrawu.
-- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Postavlja rotaciju 3D prikaza u player-textdrawu.
-- [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Pozvano kada igrač klikne na player-textdraw.
+- [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Set model ID of a 3D player textdraw preview.
+- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Set rotation of a 3D player textdraw preview.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

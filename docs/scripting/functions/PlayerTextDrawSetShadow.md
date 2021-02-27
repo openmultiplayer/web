@@ -1,60 +1,56 @@
 ---
 title: PlayerTextDrawSetShadow
-description: Dodaje sjenku na donju desnu stranu teksta u player-textdrawu.
+description: Adds a shadow to the bottom-right side of the text in a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
+<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
 
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
+## Description
 
-:::
+Adds a shadow to the bottom-right side of the text in a player-textdraw. The shadow font matches the text font.
 
-## Deskripcija
-
-Dodaje sjenku na donju desnu stranu teksta u player-textdrawu. Font sjene odgovara fontu teksta.
-
-| Ime      | Deskripcija                                                   |
-| -------- | ------------------------------------------------------------- |
-| playerid | ID igrača čijem se player-textdrawu postavlja veličina sjene. |
-| text     | ID player-textdrawa za izmijeniti.                            |
-| size     | Veličina sjene. 0 će sakriti sjenu.                           |
+| Name     | Description                                                           |
+| -------- | --------------------------------------------------------------------- |
+| playerid | The ID of the player whose player-textdraw to set the shadow size of. |
+| text     | The ID of the player-textdraw to change the shadow of                 |
+| size     | The size of the shadow. 0 will hide the shadow.                       |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da player-textdraw ne postoji.
+0: The function failed to execute. This means the player-textdraw doesn't exist.
 
-## Primjeri
+## Examples
 
 ```c
-new Text:MyTextDraw = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Primjer Teksta");
+new Text:MyTextDraw = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Example Text");
 PlayerTextDrawSetShadow(playerid, MyTextDraw, 1);
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Sjena se može izrezati po polju boxa/okvira ako je postavljena veličina prevelika za to područje.
+The shadow can be cut by the box area if the size is set too big for the area.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [CreatePlayerTextDraw](CreatePlayerTextDraw): Kreiraj player-textdraw.
-- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Uništi player-textdraw.
-- [PlayerTextDrawColor](PlayerTextDrawColor): Postavi boju teksta u player-textdrawu.
-- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Postavi boju box-a od player-textdrawa.
-- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Postavi boju pozadine player-textdrawa.
-- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Postavi poravnanje player-textdrawa.
-- [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
-- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Postavi veličinu slova u tekstu player-textdrawa.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za PlayerTextDrawSetSelectable).
-- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Omogući/onemogući korišćenje outline-a za player-textdraw.
-- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Razmjeri razmak teksta u player-textdrawu na proporcionalni omjer.
-- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Omogući/onemogući korišćenje box-a za player-textdraw.
-- [PlayerTextDrawSetString](PlayerTextDrawSetString): Postavi tekst player-textdrawa.
-- [PlayerTextDrawShow](PlayerTextDrawShow): Prikaži player-textdraw.
-- [PlayerTextDrawHide](PlayerTextDrawHide): Sakrij player-textdraw.
+- [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
+- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
+- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
+- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.
+- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Set the alignment of a player-textdraw.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
+- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Set the letter size of the text in a player-textdraw.
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Set the size of a player-textdraw box (or clickable area for PlayerTextDrawSetSelectable).
+- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Toggle the outline on a player-textdraw.
+- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Scale the text spacing in a player-textdraw to a proportional ratio.
+- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Toggle the box on a player-textdraw.
+- [PlayerTextDrawSetString](PlayerTextDrawSetString): Set the text of a player-textdraw.
+- [PlayerTextDrawShow](PlayerTextDrawShow): Show a player-textdraw.
+- [PlayerTextDrawHide](PlayerTextDrawHide): Hide a player-textdraw.

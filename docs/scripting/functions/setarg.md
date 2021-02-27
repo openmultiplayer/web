@@ -1,30 +1,26 @@
 ---
 title: setarg
-description: Postavite argument koji je proslijeđen funkciji.
+description: Set an argument that was passed to a function.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+Set an argument that was passed to a function.
 
-## Deskripcija
-
-Postavite argument koji je proslijeđen funkciji.
-
-| Ime   | Deskripcija                                          |
-| ----- | ---------------------------------------------------- |
-| arg   | Broj sekvence argumenta. Koristi 0 za prvi argument. |
-| index | Index (ako je argument niz/array).                   |
-| value | Vrijednost na koju treba postaviti argument.         |
+| Name  | Description                                                 |
+| ----- | ----------------------------------------------------------- |
+| arg   | The argument sequence number. Use 0 for the first argument. |
+| index | The index (if the argument is an array).                    |
+| value | The value to set the argument to.                           |
 
 ## Returns
 
 [edit]
 
-## Srodne Funkcije
+## Related Functions
 
-- [getarg](getarg): Dohvaćanje argumenta iz liste argumenata varijable.
-- [numargs](numargs): Vrati broj argumenata.
+- [getarg](getarg): Retrieve an argument from a variable argument list.
+- [numargs](numargs): Return the number of arguments.

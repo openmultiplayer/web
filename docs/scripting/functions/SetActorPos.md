@@ -1,33 +1,29 @@
 ---
 title: SetActorPos
-description: Postavi poziciju aktora.
+description: Set the position of an actor.
 tags: []
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3.7' />
 
-Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
+## Description
 
-:::
+Set the position of an actor.
 
-## Deskripcija
-
-Postavi poziciju aktora.
-
-| Ime     | Deskripcija                                                        |
-| ------- | ------------------------------------------------------------------ |
-| actorid | ID aktora za postaviti poziciju. Returnovan/vraćen od CreateActor. |
-| X       | X kordinata za pozicionirati aktora.                               |
-| Y       | Y kordinata za pozicionirati aktora.                               |
-| Z       | Z kordinata za pozicionirati aktora.                               |
+| Name    | Description                                                          |
+| ------- | -------------------------------------------------------------------- |
+| actorid | The ID of the actor to set the position of. Returned by CreateActor. |
+| X       | The X coordinate to position the actor at.                           |
+| Y       | The Y coordinate to position the actor at.                           |
+| Z       | The Z coordinate to position the actor at.                           |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Navedeni aktor ne postoji.
+0: The function failed to execute. The actor specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 new gMyActor;
@@ -38,19 +34,19 @@ public OnGameModeInit()
     return 1;
 }
 
-// Negdje drugo
+// Somewhere else
 SetActorPos(gMyActor, 1.0, 2.0, 3.0);
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Kada kreirate aktora pomoću CreateActor, vi odredite njegovu poziciju. Ovu funkciju ne trebate koristiti ako kasnije ne želite promijeniti njegov položaj.
+When creating an actor with CreateActor, you specify it's position. You do not need to use this function unless you want to change its position later.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetActorPos](GetActorPos): Dobij poziciju aktora.
-- [CreateActor](CreateActor): Kreiraj aktora (statičnog NPC-a).
+- [GetActorPos](GetActorPos): Get the position of an actor.
+- [CreateActor](CreateActor): Create an actor (static NPC).

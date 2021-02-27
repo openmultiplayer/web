@@ -1,49 +1,49 @@
 ---
 title: SetPVarString
-description: Čuva string player (igračevu) varijablu.
+description: Saves a string into a player variable.
 tags: ["pvar"]
 ---
 
-## Deskripcija
+## Description
 
-Čuva string player (igračevu) varijablu.
+Saves a string into a player variable.
 
-| Ime          | Deskripcija                                          |
-| ------------ | ---------------------------------------------------- |
-| playerid     | ID igrača čija će player varijabla biti postavljena. |
-| varname      | Ime player varijable.                                |
-| string_value | String kojeg želite sačuvati u player varijablu.     |
+| Name         | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| playerid     | The ID of the player whose player variable will be set. |
+| varname      | The name of the player variable.                        |
+| string_value | The string you want to save in the player variable.     |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerConnect(playerid)
 {
     new h,m,s,str[50];
-    gettime(h,m,s); // Dobij vrijeme
-    format(str,50,"Connected: %d:%d:%d",h,m,s); // kreiraj string sa povezanim vremenom
-    SetPVarString(playerid,"timeconnected",str); // sačuvaj string u varijablu igrača
+    gettime(h,m,s); // get the time
+    format(str,50,"Connected: %d:%d:%d",h,m,s); // create the string with the connect time
+    SetPVarString(playerid,"timeconnected",str); // save the string into a player variable
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Varijable se resetiraju tek nakon što se pozove OnPlayerDisconnect, tako da su vrijednosti i dalje dostupne u OnPlayerDisconnect.
+Variables aren't reset until after OnPlayerDisconnect is called, so the values are still accessible in OnPlayerDisconnect.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPVarInt](SetPVarInt): Postavi cijeli broj za igračevu varijablu.
-- [GetPVarInt](GetPVarInt): Dobij prethodno postavljeni cijeli broj iz igračeve varijable.
-- [GetPVarString](GetPVarString): Dobij prethodno postavljeni string iz igračeve varijable.
-- [SetPVarFloat](SetPVarFloat): Postavi float za igračevu varijablu.
-- [GetPVarFloat](GetPVarFloat): Dobij prethodno postavljeni float iz igračeve varijable.
-- [DeletePVar](DeletePVar): Ukloni igračevu varijablu.
+- [SetPVarInt](SetPVarInt): Set an integer for a player variable.
+- [GetPVarInt](GetPVarInt): Get the previously set integer from a player variable.
+- [GetPVarString](GetPVarString): Get the previously set string from a player variable.
+- [SetPVarFloat](SetPVarFloat): Set a float for a player variable.
+- [GetPVarFloat](GetPVarFloat): Get the previously set float from a player variable.
+- [DeletePVar](DeletePVar): Delete a player variable.

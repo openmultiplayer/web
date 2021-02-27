@@ -1,45 +1,45 @@
 ---
 title: SetPlayerCameraLookAt
-description: Postavi smjer u kojem će gledati kamera igrača.
+description: Set the direction a player's camera looks at.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavi smjer u kojem će gledati kamera igrača. Generalno namijenjeno korištenju u kombinaciji s SetPlayerCameraPos.
+Set the direction a player's camera looks at. Generally meant to be used in combination with SetPlayerCameraPos.
 
-| Ime      | Deskripcija                                                                                                                                                                                                          |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | ID player whose camera to set.                                                                                                                                                                                       |
-| Float:x  | X kordinata na koju će igračeva kamera gledati.                                                                                                                                                                      |
-| Float:y  | Y kordinata na koju će igračeva kamera gledati.                                                                                                                                                                      |
-| Float:z  | Z kordinata na koju će igračeva kamera gledati.                                                                                                                                                                      |
-| cut      | [Stil](../resources/cameracutstyles) promjene. Može se koristiti za interpolaciju (lagana promjena) Od stare do nove pozicije koristeći CAMERA_MOVE. ZABILJEŠKA: Dodano u 0.3e. Ostavite prazno u ranijim verzijama. |
+| Name     | Description                                                                                                                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose camera to set.                                                                                                                                                            |
+| Float:x  | The X coordinate for the player's camera to look at.                                                                                                                                                 |
+| Float:y  | The Y coordinate for the player's camera to look at.                                                                                                                                                 |
+| Float:z  | The Z coordinate for the player's camera to look at.                                                                                                                                                 |
+| cut      | The [style](../resources/cameracutstyles) of the change. Can be used to interpolate (change slowly) from old pos to new pos using CAMERA_MOVE. NOTE: Added in 0.3e. Leave out for older versions. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+0: The function failed to execute. The player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 SetPlayerCameraPos(playerid, 320.0, 50.0, 170.0);
 SetPlayerCameraLookAt(playerid, 324.34, 54.122, 173.35);
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Korištenje funkcija kamere izravno nakon omogućavanja režima spectatora ne radi.
+Using the camera functions directly after enabling spectator mode doesn't work.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerCameraPos](SetPlayerCameraPos): Postavi poziciju kamere igrača.
-- [SetCameraBehindPlayer](SetCameraBehindPlayer): Postavi kameru igrača iza njega.
-- [GetPlayerCameraPos](GetPlayerCameraPos): Saznajte gdje je kamera igrača.
-- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Dobij prednji vektor kamere igrača.
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [SetCameraBehindPlayer](SetCameraBehindPlayer): Set a player's camera behind them.
+- [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

@@ -1,35 +1,35 @@
 ---
 title: SetPlayerRaceCheckpoint
-description: Kreira race (trkački) checkpoint.
+description: Creates a race checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---
 
-## Deskripcija
+## Description
 
-Kreira race (trkački) checkpoint. Kada igrač uđe u njega, callback OnPlayerEnterRaceCheckpoint se poziva.
+Creates a race checkpoint. When the player enters it, the OnPlayerEnterRaceCheckpoint callback is called.
 
-| Ime         | Deskripcija                                                                                                                                                                                                                                       |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid    | ID igrača za postaviti race checkpoint.                                                                                                                                                                                                           |
-| type        | Tip checkpointa. 0-Normal, 1-Finish, 2-Ništa(checkpoint bez ičeg na sebi), 3-Air normal, 4-Air finish, 5-Air (rotira se i zaustavi), 6-Air (povećava se, smanjuje i nestaje), 7-Air (ljulja se prema dolje i gore), 8-Air (ljulja se gore-dolje). |
-| Float:x     | X-kordinata.                                                                                                                                                                                                                                      |
-| Float:y     | Y-kordinata.                                                                                                                                                                                                                                      |
-| Float:z     | Z-kordinata.                                                                                                                                                                                                                                      |
-| Float:nextx | X-kordinata sljedeće točke, za strelicu usmjerenu prema pravcu.                                                                                                                                                                                   |
-| Float:nexty | Y-kordinata sljedeće točke, za strelicu usmjerenu prema pravcu.                                                                                                                                                                                   |
-| Float:nextz | Z-kordinata sljedeće točke, za strelicu usmjerenu prema pravcu.                                                                                                                                                                                   |
-| Float:size  | Veličina (promjer) checkpointa.                                                                                                                                                                                                                   |
+| Name        | Description                                                                                                                                                                                                                                              |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | The ID of the player to set the checkpoint for                                                                                                                                                                                                           |
+| type        | Type of checkpoint.0-Normal, 1-Finish, 2-Nothing(Only the checkpoint without anything on it), 3-Air normal, 4-Air finish, 5-Air (rotates and stops), 6-Air (increases, decreases and disappears), 7-Air (swings down and up), 8-Air (swings up and down) |
+| Float:x     | X-Coordinate                                                                                                                                                                                                                                             |
+| Float:y     | Y-Coordinate                                                                                                                                                                                                                                             |
+| Float:z     | Z-Coordinate                                                                                                                                                                                                                                             |
+| Float:nextx | X-Coordinate of the next point, for the arrow facing direction                                                                                                                                                                                           |
+| Float:nexty | Y-Coordinate of the next point, for the arrow facing direction                                                                                                                                                                                           |
+| Float:nextz | Z-Coordinate of the next point, for the arrow facing direction                                                                                                                                                                                           |
+| Float:size  | Size (diameter) of the checkpoint                                                                                                                                                                                                                        |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+0: The function failed to execute. This means the player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
-//Iz Yagu-ove trkačke filterskripte, (c) by Yagu
+//from Yagu's race filterscript, (c) by Yagu
 public SetRaceCheckpoint(playerid, Airrace, target, next)
 {
      if (next == -1 && Airrace == 0)
@@ -47,22 +47,22 @@ public SetRaceCheckpoint(playerid, Airrace, target, next)
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Race checkpointi su asinhroni, što znači da se odjednom može prikazivati ​​samo jedan. Za 'streamovanje' race checkpointa (pokažite ih samo kad su igrači dovoljno blizu), upotrijebite streamer za provjeru checkpointa.
+Race checkpoints are asynchronous, meaning only one can be shown at a time. To 'stream' race checkpoints (only show them when players are close enough), use a race checkpoint streamer.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerCheckpoint](SetPlayerCheckpoint): Kreiraj checkpoint za igrača.
-- [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Onemogući igračev trenutni checkpoint.
-- [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Provjeri da li je igrač u checkpointu.
-- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Onemogući igračev trenutni race checkpoint.
-- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Provjeri da li je igrač u race checkpointu.
-- [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Pozvano kada igrač uđe u checkpoint.
-- [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Pozvano kada igrač napusti checkpoint.
-- [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Pozvano kada igrač uđe u race checkpoint.
-- [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint): Pozvano kada igrač napusti race checkpoint.
+- [SetPlayerCheckpoint](SetPlayerCheckpoint): Create a checkpoint for a player.
+- [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Disable the player's current checkpoint.
+- [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Check if a player is in a checkpoint.
+- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
+- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
+- [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
+- [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
+- [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Called when a player enters a race checkpoint.
+- [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint): Called when a player leaves a race checkpoint.

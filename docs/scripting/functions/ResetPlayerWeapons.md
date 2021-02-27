@@ -1,43 +1,43 @@
 ---
 title: ResetPlayerWeapons
-description: Uklanja sva oružja od igrača.
+description: Removes all weapons from a player.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Uklanja sva oružja od igrača.
+Removes all weapons from a player.
 
-| Ime      | Deskripcija                              |
-| -------- | ---------------------------------------- |
-| playerid | ID igrača čija će oružja biti uklonjena. |
+| Name     | Description                                   |
+| -------- | --------------------------------------------- |
+| playerid | The ID of the player whose weapons to remove. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+0: The function failed to execute. This means the player specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    // Ukloni oružja ubice
+    // Remove the killer's weapons
     ResetPlayerWeapons(killerid);
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Da biste uklonili pojedinačno oružje sa igrača, postavite njegovu municiju na 0 pomoću SetPlayerAmmo.
+To remove individual weapons from a player, set their ammo to 0 using SetPlayerAmmo.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GivePlayerWeapon](GivePlayerWeapon): Daj igraču oružje.
-- [GetPlayerWeapon](GetPlayerWeapon): Provjeri koje oružje igrač trenutno drži.
+- [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
+- [GetPlayerWeapon](GetPlayerWeapon): Check what weapon a player is currently holding.

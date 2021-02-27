@@ -1,35 +1,35 @@
 ---
 title: ResetPlayerMoney
-description: Resetiraj igračev novac na $0.
+description: Reset a player's money to $0.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Resetiraj igračev novac na $0.
+Reset a player's money to \$0.
 
-| Ime      | Deskripcija                    |
-| -------- | ------------------------------ |
-| playerid | ID igrača za resetovati novac. |
+| Name     | Description                                 |
+| -------- | ------------------------------------------- |
+| playerid | The ID of the player to reset the money of. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+0: The function failed to execute. This means the player is not connected.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    SendClientMessage(playerid, 0xFFFFFFAA, "Umro si i izgubio si sav svoj novac!");
+    SendClientMessage(playerid, 0xFFFFFFAA, "You died and lost all of your cash!");
     ResetPlayerMoney(playerid);
     return 1;
 }
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerMoney](GetPlayerMoney): Provjeri koliko novca igrač ima.
-- [GivePlayerMoney](GivePlayerMoney): Dajte igraču novac.
+- [GetPlayerMoney](GetPlayerMoney): Check how much money a player has.
+- [GivePlayerMoney](GivePlayerMoney): Give a player money.

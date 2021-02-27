@@ -4,41 +4,41 @@ description: .
 tags: []
 ---
 
-## Deskripcija
+## Description
 
 .
 
-| Ime    | Deskripcija |
+| Name   | Description |
 | ------ | ----------- |
 | amount |             |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnGameModeInit()
 {
     SetDeathDropAmount(5000);
 
-    // VIŠE KODA
+    // MORE CODE
 
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Ova funkcija ne radi u trenutnoj verziji SA:MP-a!
+This function does not work in the current SA:MP version!
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [CreatePickup](CreatePickup): Kreiraj pickup.
-- [GivePlayerMoney](GivePlayerMoney): Dajte igraču novac.
-- [OnPlayerDeath](../callbacks/OnPlayerDeath): Pozvano kada igrač umre.
+- [CreatePickup](CreatePickup): Create a pickup.
+- [GivePlayerMoney](GivePlayerMoney): Give a player money.
+- [OnPlayerDeath](../callbacks/OnPlayerDeath): Called when a player dies.

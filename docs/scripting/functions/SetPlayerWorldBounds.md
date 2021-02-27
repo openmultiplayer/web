@@ -1,26 +1,26 @@
 ---
 title: SetPlayerWorldBounds
-description: Postavite granice svijeta igraču.
+description: Set the world boundaries for a player.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavite granice svijeta igraču. Igrači ne mogu ići izvan granica (biće gurnuti nazad).
+Set the world boundaries for a player. Players can not go out of the boundaries (they will be pushed back in).
 
-| Ime         | Deskripcija                                 |
-| ----------- | ------------------------------------------- |
-| playerid    | ID igrača za postaviti granice svijeta.     |
-| Float:x_max | Maksimalna X kordinata gdje igrač može ići. |
-| Float:x_min | Maksimalna X kordinata gdje igrač može ići. |
-| Float:y_max | Minimalna Y kordinata gdje igrač može ići.  |
-| Float:y_min | Minimalna Y kordinata gdje igrač može ići.  |
+| Name        | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| playerid    | The ID of the player to set the world boundaries of. |
+| Float:x_max | The maximum X coordinate the player can go to.       |
+| Float:x_min | The minimum X coordinate the player can go to.       |
+| Float:y_max | The maximum Y coordinate the player can go to.       |
+| Float:y_min | The minimum Y coordinate the player can go to.       |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerSpawn(playerid)
@@ -31,31 +31,31 @@ public OnPlayerSpawn(playerid)
 ```
 
 ```
-               (Sjever)
-                 ymax
-             |----------|
-             |          |
-(Zapad) xmin |          | xmax (Istok)
-             |          |
-             |----------|
-                 ymin
-                 (Jug)
+               (North)
+                ymax
+            |----------|
+            |          |
+(West) xmin |          | xmax (East)
+            |          |
+            |----------|
+                ymin
+               (South)
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Svjetske granice igrača mogu se resetirati postavljanjem na 20000.0000, -20000.0000, 20000.0000, -20000.0000. To su zadane vrijednosti.
+A player's world boundaries can be reset by setting them to 20000.0000, -20000.0000, 20000.0000, -20000.0000. These are the default values.
 
 :::
 
 :::warning
 
-Ova funkcija ne radi u enterijerima!
+This function doesn't work in interiors!
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GangZoneCreate](GangZoneCreate): Kreiraj gangzonu.
+- [GangZoneCreate](GangZoneCreate): Create a gangzone.

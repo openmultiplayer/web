@@ -1,25 +1,25 @@
 ---
 title: SetPlayerVirtualWorld
-description: Postavite virtualni svijet igrača.
+description: Set the virtual world of a player.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Postavite virtualni svijet igrača. Mogu vidjeti samo one igrače i vozila koji su u istom svijetu.
+Set the virtual world of a player. They can only see other players or vehicles that are in that same world.
 
-| Ime      | Deskripcija                              |
-| -------- | ---------------------------------------- |
-| playerid | ID igrača za postaviti virutalni svijet. |
-| worldid  | ID virtualnog svijeta za ubaciti igrača. |
+| Name     | Description                                                |
+| -------- | ---------------------------------------------------------- |
+| playerid | The ID of the player you want to set the virtual world of. |
+| worldid  | The virtual world ID to put the player in.                 |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+0: The function failed to execute. This means the player is not connected.
 
-## Primjeri
+## Examples
 
 ```c
 if (strcmp(cmdtext, "/world3", true) == 0)
@@ -29,15 +29,15 @@ if (strcmp(cmdtext, "/world3", true) == 0)
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Zadani virtualni svijet je 0.
+The default virtual world is 0.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerVirtualWorld](GetPlayerVirtualWorld): Provjerava u kojem je igrač virtualnom svijetu.
-- [SetVehicleVirtualWorld](SetVehicleVirtualWorld): Postavi virtualni svijet vozila.
+- [GetPlayerVirtualWorld](GetPlayerVirtualWorld): Check what virtual world a player is in.
+- [SetVehicleVirtualWorld](SetVehicleVirtualWorld): Set the virtual world of a vehicle.

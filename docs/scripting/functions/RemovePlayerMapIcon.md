@@ -1,33 +1,33 @@
 ---
 title: RemovePlayerMapIcon
-description: Uklanja ikonicu na mapi koja je prethodno postavljena za igrača koristeći SetPlayerMapIcon.
+description: Removes a map icon that was set earlier for a player using SetPlayerMapIcon.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Uklanja ikonicu na mapi koja je prethodno postavljena za igrača koristeći SetPlayerMapIcon.
+Removes a map icon that was set earlier for a player using SetPlayerMapIcon.
 
-| Ime      | Deskripcija                                                         |
-| -------- | ------------------------------------------------------------------- |
-| playerid | ID igrača čija će ikonica biti uklonjena.                           |
-| iconid   | ID ikonice za ukloniti. Ovo je drugi parametar od SetPlayerMapIcon. |
+| Name     | Description                                                                     |
+| -------- | ------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose icon to remove.                                      |
+| iconid   | The ID of the icon to remove. This is the second parameter of SetPlayerMapIcon. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function was executed successfully.
 
-0: Funkcija neuspješno izvršena.
+0: The function failed to execute.
 
-## Primjeri
+## Examples
 
 ```c
 SetPlayerMapIcon(playerid, 12, 2204.9468, 1986.2877, 16.7380, 52, 0);
 
-// Kasnije
+// Later on
 RemovePlayerMapIcon(playerid, 12);
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerMapIcon](/docs/scripting/functions/SetPlayerMapIcon): Kreiraj map-ikonicu za igrača.
+- [SetPlayerMapIcon](/docs/scripting/functions/SetPlayerMapIcon): Create a mapicon for a player.

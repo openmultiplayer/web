@@ -1,47 +1,43 @@
 ---
 title: SetPlayerFightingStyle
-description: Postavi igraču specijalan stil borbe.
+description: Set a player's special fighting style.
 tags: ["player"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3a' />
 
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
+## Description
 
-:::
+Set a player's special fighting style. To use in-game, aim and press the 'secondary attack' key (ENTER by default).
 
-## Deskripcija
-
-Postavi igraču specijalan stil borbe. Za koristiti unutar igre, ciljaj i klikni 'secondary attack' dugme (ENTER po zadanim postavkama).
-
-| Ime      | Deskripcija                                             |
-| -------- | ------------------------------------------------------- |
-| playerid | ID igrača za postaviti stil borbe.                      |
-| style    | [Stil borbe](../resources/fightingstyles) za postaviti. |
+| Name     | Description                                                              |
+| -------- | ------------------------------------------------------------------------ |
+| playerid | The ID of player to set the fighting style of.                           |
+| style    | The fighting [style](../resources/fightingstyles) that should be set. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 if (strcmp(cmdtext, "/boxing", true) == 0)
 {
     SetPlayerFightingStyle(playerid, FIGHT_STYLE_BOXING);
-    SendClientMessage(playerid, 0xFFFFFFAA, "Promijenio si svoj stil borbe u Boxing!");
+    SendClientMessage(playerid, 0xFFFFFFAA, "You have changed your fighting style to boxing!");
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-To ne utječe na normalne napade šake - samo na specijalne/sekundarne napade (aim + klikni 'secondary attack' dugme).
+This does not affect normal fist attacks - only special/secondary attacks (aim + press 'secondary attack' key).
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerFightingStyle](scripting/functions/GetPlayerFightingStyle): Dobij igračev stil borbe.
+- [GetPlayerFightingStyle](scripting/functions/GetPlayerFightingStyle): Get a player's fighting style.
