@@ -1,26 +1,30 @@
 ---
 title: RepairVehicle
-description: Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.
+description: U potpunosti popravlja vozilo, uključujući vidljivu štetu (neravnine, udubljenja, ogrebotine, puknute gume itd.).
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.).
+:::
 
-| Name      | Description                      |
-| --------- | -------------------------------- |
-| vehicleid | The ID of the vehicle to repair. |
+## Deskripcija
+
+U potpunosti popravlja vozilo, uključujući vidljivu štetu (neravnine, udubljenja, ogrebotine, puknute gume itd.).
+
+| Ime       | Deskripcija             |
+| --------- | ----------------------- |
+| vehicleid | ID vozila za popraviti. |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the vehicle specified does not exist.
+0: Funkcija neuspješno izvršena. Ovo znači da navedeno vozilo ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -29,19 +33,19 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (!IsPlayerInAnyVehicle(playerid))
         {
-            return SendClientMessage(playerid, 0xFFFFFFFF, "You are not in a vehicle!");
+            return SendClientMessage(playerid, 0xFFFFFFFF, "Nisi u vozilu!");
         }
 
         RepairVehicle(GetPlayerVehicleID(playerid));
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "Your vehicle has been repaired!");
+        SendClientMessage(playerid, 0xFFFFFFFF, "Tvoje vozilo je popravljeno!");
         return 1;
     }
     return 0;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetVehicleHealth](SetVehicleHealth): Set the health of a vehicle.
-- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
+- [SetVehicleHealth](SetVehicleHealth): Postavi helte vozila.
+- [GetVehicleHealth](GetVehicleHealth): Provjeri helte vozila.

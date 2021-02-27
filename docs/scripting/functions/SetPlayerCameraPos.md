@@ -1,47 +1,47 @@
 ---
 title: SetPlayerCameraPos
-description: Sets the camera to a specific position for a player.
+description: Postavlja kameru u određenu poziciju za igrača.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Sets the camera to a specific position for a player.
+Postavlja kameru u određenu poziciju za igrača.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | ID of the player                         |
-| Float:x  | The X coordinate to place the camera at. |
-| Float:y  | The Y coordinate to place the camera at. |
-| Float:z  | The Z coordinate to place the camera at. |
+| Ime      | Deskripcija                      |
+| -------- | -------------------------------- |
+| playerid | ID igrača.                       |
+| Float:x  | X kordinata za postaviti kameru. |
+| Float:y  | Y kordinata za postaviti kameru. |
+| Float:z  | Z kordinata za postaviti kameru. |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The player specified doesn't exist.
+0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-You may also have to use SetPlayerCameraLookAt with this function in order to work properly. Use SetCameraBehindPlayer to reset the camera to behind the player.
+Možda ćete morati koristiti SetPlayerCameraLookAt s ovom funkcijom da bis ispravno radila. Koristite SetCameraBehindPlayer da vratite kameru iza uređaja.
 
 :::
 
 :::warning
 
-Using the camera functions directly after enabling spectator mode doesn't work.
+Korištenje funkcija kamere izravno nakon omogućavanja režima spectatora ne radi.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.
-- [SetCameraBehindPlayer](SetCameraBehindPlayer): Set a player's camera behind them.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Postavite gdje će igračeva kamera gledati.
+- [SetCameraBehindPlayer](SetCameraBehindPlayer): Postavi kameru igrača iza njega.

@@ -1,30 +1,30 @@
 ---
 title: SetPlayerScore
-description: Set a player's score.
+description: Postavite rezultat (score) igrača.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Set a player's score. Players' scores are shown in the scoreboard (shown by holding the TAB key).
+Postavite rezultat (score) igrača. Rezultati igrača prikazuju se na scoreboardu (prikazuje se držanjem tipke TAB).
 
-| Name     | Description                               |
-| -------- | ----------------------------------------- |
-| playerid | The ID of the player to set the score of. |
-| score    | The value to set the player's score to.   |
+| Ime      | Deskripcija                              |
+| -------- | ---------------------------------------- |
+| playerid | ID igrača za postaviti rezultat (score). |
+| score    | Vrijednost za postaviti.                 |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the player specified does not exist.
+0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    // Add 1 to this killer's score. We must check it is valid first.
+    // Dodaj 1 na rezultat (score) ubice. Moramo provjeriti da li je validan prvo.
     if (killerid != INVALID_PLAYER_ID)
     {
         SetPlayerScore(killerid, GetPlayerScore(killerid) + 1);
@@ -33,6 +33,6 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetPlayerScore](GetPlayerScore): Get the score of a player.
+- [GetPlayerScore](GetPlayerScore): Dobijte rezultat/score igrača.

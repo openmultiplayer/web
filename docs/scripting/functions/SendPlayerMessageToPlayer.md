@@ -1,51 +1,51 @@
 ---
 title: SendPlayerMessageToPlayer
-description: Sends a message in the name of a player to another player on the server.
+description: Pošalji poruku u ime drugog igrača nekom drugom igraču na serveru.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Sends a message in the name of a player to another player on the server. The message will appear in the chat box but can only be seen by the user specified with 'playerid'. The line will start with the sender's name in their color, followed by the message in white.
+Pošalji poruku u ime drugog igrača nekom drugom igraču na serveru. Poruka će se pojaviti u chat boxu ali će je vidjeti samo igrač naveden kao 'playerid'. Linija će početi sa imenom pošiljaoca u njegovoj boji, prateći poruku u bijeloj boji.
 
-| Name            | Description                                                |
-| --------------- | ---------------------------------------------------------- |
-| playerid        | The ID of the player who will receive the message.         |
-| senderid        | The sender's ID. If invalid, the message will not be sent. |
-| const message[] | The message that will be sent.                             |
+| Ime             | Deskripcija                                               |
+| --------------- | --------------------------------------------------------- |
+| playerid        | ID igrača koji će primiti poruku.                         |
+| senderid        | ID pošiljatelja. Ako je nevažeći, poruka se neće poslati. |
+| const message[] | Poruka koja će biti poslana.                              |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the player specified does not exist.
+0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/hello", true))
     {
-        SendPlayerMessageToPlayer(0, playerid, "Hello ID 0!"); //Will send a message to the user with the ID 0 in the name of the user who typed '/hello'.
-        // Assuming 'playerid' is called Tenpenny, the output will be 'Tenpenny: Hello ID 0!'
+        SendPlayerMessageToPlayer(0, playerid, "Hello ID 0!"); // Poslati će poruku korisniku sa ID-em 0 u igri u ime igrača koji je napisao '/hello'.
+        // Pod pretpostavkom da se 'playerid' zove Tenpenny, izlaz će biti 'Tenpenny: Hello ID 0!'
         return 1;
     }
     return 0;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-Avoid using format specifiers in your messages without formatting the string that is sent. It will result in crashes otherwise.
+Izbjegavajte koristiti specifikatore formata u svojim porukama bez formatiranja poslanog stringa. U suprotnom će rezultirati padovima.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SendPlayerMessageToAll](SendPlayerMessageToAll): Force a player to send text for all players.
-- [SendClientMessage](SendClientMessage): Send a message to a certain player.
-- [SendClientMessageToAll](SendClientMessageToAll): Send a message to all players.
-- [OnPlayerText](../callbacks/OnPlayerText): Called when a player sends a message via the chat.
+- [SendPlayerMessageToAll](SendPlayerMessageToAll): Prisilite igrača da pošalje tekst za sve igrače.
+- [SendClientMessage](SendClientMessage): Pošalji poruku određenom igraču.
+- [SendClientMessageToAll](SendClientMessageToAll): Pošalji poruku svim igračima.
+- [OnPlayerText](../callbacks/OnPlayerText): Pozvano kada igrač pošalje poruku putem chata.

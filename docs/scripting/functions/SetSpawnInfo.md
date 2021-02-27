@@ -1,47 +1,47 @@
 ---
 title: SetSpawnInfo
-description: This function can be used to change the spawn information of a specific player.
+description: Ova funkcija se može koristiti za promijeniti spawn informacije određenog igrača.
 tags: []
 ---
 
-## Description
+## Deskripcija
 
-This function can be used to change the spawn information of a specific player. It allows you to automatically set someone's spawn weapons, their team, skin and spawn position, normally used in case of minigames or automatic-spawn systems. This function is more crash-safe then using SetPlayerSkin in OnPlayerSpawn and/or OnPlayerRequestClass, even though this has been fixed in 0.2.
+Ova funkcija se može koristiti za promijeniti spawn informacije određenog igrača. Ona omogućava da automatski postaviš nekome spawn oružje, njihov tim, skin ili spawn poziciju, normalno se koristi u slučaju miniigara ili automatskih spawn sistema. Ova funkcija je sigurnija od crasha u odnosu na SetPlayerSkin u OnPlayerSpawn i/ili OnPlayerRequestClass, iako je ovo ispravljeno u 0.2.
 
-| Name           | Description                                                          |
-| -------------- | -------------------------------------------------------------------- |
-| playerid       | The PlayerID of who you want to set the spawn information.           |
-| team           | The Team-ID of the chosen player.                                    |
-| skin           | The skin which the player will spawn with.                           |
-| Float:X        | The X-coordinate of the player's spawn position.                     |
-| Float:Y        | The Y-coordinate of the player's spawn position.                     |
-| Float:Z        | The Z-coordinate of the player's spawn position.                     |
-| Float:rotation | The direction in which the player needs to be facing after spawning. |
-| weapon1        | The first spawn-weapon for the player.                               |
-| weapon1_ammo   | The amount of ammunition for the primary spawnweapon.                |
-| weapon2        | The second spawn-weapon for the player.                              |
-| weapon2_ammo   | The amount of ammunition for the second spawnweapon.                 |
-| weapon3        | The third spawn-weapon for the player.                               |
-| weapon3_ammo   | The amount of ammunition for the third spawnweapon.                  |
+| Ime            | Deskripcija                                               |
+| -------------- | --------------------------------------------------------- |
+| playerid       | ID igrača kojem želite postaviti spawn informacije.       |
+| team           | Team-ID odabranog igrača.                                 |
+| skin           | Skin s kojim će se igrač spawnovati.                      |
+| Float:X        | X-kordinata igračeve spawn pozicije.                      |
+| Float:Y        | Y-kordinata igračeve spawn pozicije.                      |
+| Float:Z        | Z-kordinata igračeve spawn pozicije.                      |
+| Float:rotation | Smjer u kojem igrač treba da gleda nakon što se spawnuje. |
+| weapon1        | Prvo spawn-oružje za igrača.                              |
+| weapon1_ammo   | Količina streljiva za primarni spawnweapon.               |
+| weapon2        | Drugo spawn-oružje za igrača.                             |
+| weapon2_ammo   | Količina streljiva za sekundarni spawnweapon.             |
+| weapon3        | Treće spawn-oružje za igrača.                             |
+| weapon3_ammo   | Količina streljiva za treći spawnweapon.                  |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerRequestClass(playerid, classid)
 {
-    // This simple example demonstrates how to spawn every player automatically with
-    // CJ's skin, which is number 0. The player will spawn in Las Venturas, with
-    // 36 Sawnoff-Shotgun rounds and 150 Tec9 rounds.
+    // Ovo je jednostavan primjer koji demonstrira kako spawnovati igrala automatski sa
+    // CJ skinom, koji je broj 0. Igrač će se spawnovati u Las Venturasu sa
+    // 36 Sawnoff-Shotgun i 150 Tec9 metaka.
     SetSpawnInfo( playerid, 0, 0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0 );
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerSkin](SetPlayerSkin): Set a player's skin.
-- [SetPlayerTeam](SetPlayerTeam): Set a player's team.
-- [SpawnPlayer](SpawnPlayer): Force a player to spawn.
+- [SetPlayerSkin](SetPlayerSkin): Postavi skin igraču.
+- [SetPlayerTeam](SetPlayerTeam): Postavi tim igrača.
+- [SpawnPlayer](SpawnPlayer): Natjeraj igrača da se spawnuje.

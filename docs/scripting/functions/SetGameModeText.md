@@ -1,29 +1,29 @@
 ---
 title: SetGameModeText
-description: Set the name of the game mode, which appears in the server browser.
+description: Postavi ime gamemode-a, koje se pojavljuje u pretraživaču servera (server listi).
 tags: []
 ---
 
-## Description
+## Deskripcija
 
-Set the name of the game mode, which appears in the server browser.
+Postavi ime gamemode-a, koje se pojavljuje u pretraživaču servera (server listi).
 
-| Name     | Description                   |
-| -------- | ----------------------------- |
-| string[] | The gamemode name to display. |
+| Ime      | Deskripcija                  |
+| -------- | ---------------------------- |
+| string[] | Ime gamemode-a za prikazati. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnGameModeInit()
 {
-    SetGameModeText("Team Deathmatch");
+    SetGameModeText("dDOT-GM v1.0");
     return 1;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije

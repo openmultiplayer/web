@@ -1,56 +1,56 @@
 ---
 title: SetPlayerMapIcon
-description: Place an icon/marker on a player's map.
+description: Postavi ikonu/marker na mapu igrača.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Place an icon/marker on a player's map. Can be used to mark locations such as banks and hospitals to players.
+Postavi ikonu/marker na mapu igrača. Može se koristiti da označite lokacije kao npr. banke i bolnice igračima.
 
-| Name       | Description                                                                                                                                                                         |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid   | The ID of the player to set the map icon for.                                                                                                                                       |
-| iconid     | The player's icon ID, ranging from 0 to 99. This means there is a maximum of 100 map icons. ID can be used in [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon). |
-| Float:x    | The X coordinate to place the map icon at.                                                                                                                                          |
-| Float:y    | The Y coordinate to place the map icon at.                                                                                                                                          |
-| Float:z    | The Z coordinate to place the map icon at.                                                                                                                                          |
-| markertype | The [icon](/docs/scripting/resources/mapicons) to set.                                                                                                                              |
-| color      | The color of the icon, as an integer or hex in RGBA color format. This should only be used with the square icon (ID: 0).                                                            |
-| style      | The [style](/docs/scripting/resources/mapiconstyles) of icon.                                                                                                                       |
+| Ime        | Deskripcija                                                                                                                                                           |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid   | ID igrača za postaviti ikonicu na mapu.                                                                                                                               |
+| iconid     | ID ikonice, od 0 do 99. Ovo znači da postoji maksimalno 100 map ikonica. ID se može koristiti u [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon). |
+| Float:x    | X kordinata za postaviti map ikonicu.                                                                                                                                 |
+| Float:y    | Y kordinata za postaviti map ikonicu.                                                                                                                                 |
+| Float:z    | Z kordinata za postaviti map ikonicu.                                                                                                                                 |
+| markertype | [Ikonica](/docs/scripting/resources/mapicons) za postaviti.                                                                                                           |
+| color      | Boja ikonice, kao cijeli broj ili hex u RGBA formatu. Ovo bi se trebalo koristiti samo sa ikonicom kocke (ID: 0).                                                     |
+| style      | [Stil](/docs/scripting/resources/mapiconstyles) ikonice.                                                                                                              |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. Player is not connected.
+0: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerConnect( playerid )
 {
-    // This example demonstrates how to create a dollar-icon on top of a 24/7 located
-    // in Las Venturas. This way new players know where to go with their money!
+    // Ovaj primjer demonstrira kako kreirati dollar-ikonicu na vrh locirane 24/7 trgovine
+    // u Las Venturasu. Na ovaj način novi igrači znaju gdje da odu sa svojim novcem!
     SetPlayerMapIcon(playerid, 12, 2204.9468, 1986.2877, 16.7380, 52, 0, MAPICON_LOCAL);
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-If you use an invalid marker type, it will create ID 1 (White Square). If you use an icon ID that is already in use, it will replace the current map icon using that ID.
+Ako koristite nevažeći tip markera, stvorit će se ID 1 (Bijeli kvadrat). Ako koristite ID ikone koji se već koristi, on će zamijeniti trenutnu ikonu karte pomoću tog ID-a.
 
 :::
 
 :::warning
 
-You can only have 100 map icons! Marker type 1 (![](/images/mapIcons/icon1.gif)), 2 (![](/images/mapIcons/icon2.gif)), 4 (![](/images/mapIcons/icon4.gif)), and 56 (![](/images/mapIcons/icon56.gif)) will cause your game to crash if you have map legends enabled while viewing the map.
+Možete imati samo 100 ikona mapa! Oznake tipa 1 (), 2 (), 4 () i 56 () uzrokovat će pad vaše igre ako ste tijekom pregledavanja karte omogućili legende karte.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon): Remove a map icon for a player.
-- [SetPlayerMarkerForPlayer](/docs/scripting/functions/SetPlayerMarkerForPlayer): Set a player's marker.
+- [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon): Ukloni ikonicu na mapi za igrača.
+- [SetPlayerMarkerForPlayer](/docs/scripting/functions/SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.

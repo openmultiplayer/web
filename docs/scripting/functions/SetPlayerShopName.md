@@ -1,25 +1,29 @@
 ---
 title: SetPlayerShopName
-description: Loads or unloads an interior script for a player (for example the ammunation menu).
+description: Učitava ili rasterećuje unutrašnju skriptu (enterijera) za igrača (na primjer meni za ammunation).
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Loads or unloads an interior script for a player (for example the ammunation menu).
+:::
 
-| Name       | Description                                                  |
-| ---------- | ------------------------------------------------------------ |
-| playerid   | The ID of the player to load the interior script for.        |
-| shopname[] | The shop script to load. Leave blank ("") to unload scripts. |
+## Deskripcija
+
+Učitava ili rasterećuje unutrašnju skriptu (enterijera) za igrača (na primjer meni za ammunation).
+
+| Ime        | Deskripcija                                                                      |
+| ---------- | -------------------------------------------------------------------------------- |
+| playerid   | ID igrača za učitati skripte enterijera.                                         |
+| shopname[] | Skripta trgovine za učitavanje. Ostavi prazno ("") za rasteretiti (onemogućiti). |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -29,22 +33,22 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SetPlayerInterior(playerid, 5);
         SetPlayerPos(playerid, 372.5565, -131.3607, 1001.4922);
         SetPlayerShopName(playerid,"FDPIZA");
-        SendClientMessage(playerid,0xFFFFFFFF,"Welcome to Pizza Stack!");
+        SendClientMessage(playerid,0xFFFFFFFF,"Dobrodošao u Pizza Stack!");
         return 1;
     }
     return 0;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-This function does not support casino scripts.
+Ova funkcija ne podržava casino skripte.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [DisableInteriorEnterExits](DisableInteriorEnterExits): Disable the yellow door markers.
-- [SetPlayerInterior](SetPlayerInterior): Set a player's interior.
+- [DisableInteriorEnterExits](DisableInteriorEnterExits): Onemogući žute markere na vratima.
+- [SetPlayerInterior](SetPlayerInterior): Postavlja igraču enterijer

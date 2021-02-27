@@ -1,24 +1,24 @@
 ---
 title: SendDeathMessage
-description: Adds a death to the 'killfeed' on the right-hand side of the screen for all players.
+description: Dodaje smrt 'killfeedu' s desne strane ekrana za sve igrače.
 tags: []
 ---
 
-## Description
+## Deskripcija
 
-Adds a death to the 'killfeed' on the right-hand side of the screen for all players.
+Dodaje smrt 'killfeedu' s desne strane ekrana za sve igrače.
 
-| Name     | Description                                                                                                                 |
-| -------- | --------------------------------------------------------------------------------------------------------------------------- |
-| killer   | The ID of the killer (can be INVALID_PLAYER_ID).                                                                            |
-| playerid | The ID of the player that died.                                                                                             |
-| weapon   | The reason (not always a weapon) for the victim's death. Special icons can also be used (ICON_CONNECT and ICON_DISCONNECT). |
+| Ime      | Deskripcija                                                                                                           |
+| -------- | --------------------------------------------------------------------------------------------------------------------- |
+| killer   | ID ubice (može biti INVALID_PLAYER_ID).                                                                               |
+| playerid | ID igrača koji je umro.                                                                                               |
+| weapon   | Razlog (ne uvijek oružje) smrti žrtve. Specijalne se ikonice također mogu koristiti (ICON_CONNECT i ICON_DISCONNECT). |
 
 ## Returns
 
-This function always returns 1, even if the function fails to execute. The function fails to execute (no death message shown) if 'playerid' is invalid. If 'reason' is invalid, a generic skull-and-crossbones icon is shown. 'killerid' being invalid (INVALID_PLAYER_ID) is valid.
+Ova funkcija uvijek returna (vraća) 1, bilo da se funkcija neuspješno izvrši. Funkcija će neuspješno da se izvrši (neće se prikazati poruka o smrti) ako je 'playerid' nevažeći. Ako je 'reason' nevažeći, prikazana je generička ikona lobanje i kostiju. 'killerid' nevažeći (INVALID_PLAYER_ID) je važeći.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -28,15 +28,15 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Death messages can be cleared by using a valid player ID for 'playerid' that is not connected. To show a death message for just a single player, use SendDeathMessageToPlayer. You can use NPCs to create your own custom death reasons.
+Poruke smrti mogu se obrisati upotrebom važećeg ID-a igrača za 'playerid' koji nije povezan. Da biste prikazali smrtnu poruku samo za jednog igrača, koristite SendDeathMessageToPlayer. NPC-ove možete koristiti za stvaranje vlastitih razloga smrti.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SendDeathMessageToPlayer](SendDeathMessageToPlayer): Add a kill to the death list for a player.
-- [OnPlayerDeath](../callbacks/OnPlayerDeath): Called when a player dies.
+- [SendDeathMessageToPlayer](SendDeathMessageToPlayer): Dodaj ubistvo na listu smrti za igrača.
+- [OnPlayerDeath](../callbacks/OnPlayerDeath): Pozvano kada igrač umre.

@@ -1,26 +1,30 @@
 ---
 title: PlayerTextDrawSetString
-description: Change the text of a player-textdraw.
+description: Promijeni tekst player-textdrawa.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
+:::warning
 
-## Description
+Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
 
-Change the text of a player-textdraw.
+:::
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
-| playerid | The ID of the player who's textdraw string to set |
-| text     | The ID of the textdraw to change                  |
-| string[] | The new string for the TextDraw                   |
+## Deskripcija
+
+Promijeni tekst player-textdrawa.
+
+| Ime      | Deskripcija                                 |
+| -------- | ------------------------------------------- |
+| playerid | ID igrača čijem textdrawu se mijenja tekst. |
+| text     | ID textdrawa za promijeniti.                |
+| string[] | Novi string za textdraw.                    |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 new pVehicleHealthTimer[MAX_PLAYERS];
@@ -28,12 +32,12 @@ new PlayerText:pVehicleHealthTD[MAX_PLAYERS];
 
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if (newstate == 2) // Entered a vehicle as driver
+    if (newstate == 2) // Ušao u vozilo kao vozač
     {
         pVehicleHealthTD[playerid] = CreatePlayerTextDraw(playerid, x, y, " ");
         PlayerTextDrawShow(playerid, pVehicleHealthTD[playerid]);
 
-        // Set a timer to update the textdraw every second
+        // Postavite tajmer za ažuriranje textdrawa svake sekunde
         pVehicleHealthTimer[playerid] = SetTimerEx("vhealth_td_update", 1000, true, "i", playerid);
     }
     if (oldstate == 2)
@@ -50,43 +54,43 @@ public vhealth_td_update(playerid)
 
     format(tdstring, sizeof(tdstring), "Vehicle Health: %0f", vHealth);
 
-    PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], tdstring); // <<< Update the text to show the vehicle health
+    PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], tdstring); // <<< Ažurirajte tekst da biste prikazali stanje vozila
     return 1;
 }
 
 /*
-NOTE: This example is purely for demonstration purposes, it is not guaranteed to work in-game. It is merely to show the usage of the PlayerTextDrawSetString function.
+NOTE: Ovaj primjer je isključivo u demonstracijske svrhe i nije zajamčeno da će raditi u igri. To je samo za prikaz upotrebe funkcije PlayerTextDrawSetString.
 */
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-You don't have to show the TextDraw again in order to apply the changes.
+Ne morate ponovo prikazivati ​​TextDraw da biste primijenili promjene.
 
 :::
 
 :::warning
 
-There are limits to the length of textdraw strings! See Limits for more info.
+Postoje ograničenja dužine stringova za textdraw! Pogledajte Ograničenja za više informacija.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
-- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
-- [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
-- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
-- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.
-- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Set the alignment of a player-textdraw.
-- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
-- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Set the letter size of the text in a player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Set the size of a player-textdraw box (or clickable area for PlayerTextDrawSetSelectable).
-- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Toggle the outline on a player-textdraw.
-- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Set the shadow on a player-textdraw.
-- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Scale the text spacing in a player-textdraw to a proportional ratio.
-- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Toggle the box on a player-textdraw.
-- [PlayerTextDrawShow](PlayerTextDrawShow): Show a player-textdraw.
-- [PlayerTextDrawHide](PlayerTextDrawHide): Hide a player-textdraw.
+- [CreatePlayerTextDraw](CreatePlayerTextDraw): Kreiraj player-textdraw.
+- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Uništi player-textdraw.
+- [PlayerTextDrawColor](PlayerTextDrawColor): Postavi boju teksta u player-textdrawu.
+- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Postavi boju box-a od player-textdrawa.
+- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Postavi boju pozadine player-textdrawa.
+- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Postavi poravnanje player-textdrawa.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
+- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Postavi veličinu slova u tekstu player-textdrawa.
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za PlayerTextDrawSetSelectable).
+- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Omogući/onemogući korišćenje outline-a za player-textdraw.
+- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Postavi sjenu na player-textdraw.
+- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Razmjeri razmak teksta u player-textdrawu na proporcionalni omjer.
+- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Omogući/onemogući korišćenje box-a za player-textdraw.
+- [PlayerTextDrawShow](PlayerTextDrawShow): Prikaži player-textdraw.
+- [PlayerTextDrawHide](PlayerTextDrawHide): Sakrij player-textdraw.

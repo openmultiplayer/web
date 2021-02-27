@@ -1,28 +1,28 @@
 ---
 title: SetPlayerHealth
-description: Set the health of a player.
+description: Postavi healthe (zdravlje) igrača.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Set the health of a player.
+Postavi healthe (zdravlje) igrača.
 
-| Name         | Description                                                                                                                  |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | The ID of the player to set the health of.                                                                                   |
-| Float:health | The value to set the player's health to. Max health that can be displayed in the HUD is 100, though higher values are valid. |
+| Ime          | Deskripcija                                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | ID igrača za postaviti healthe.                                                                                                     |
+| Float:health | Vrijednost za postaviti healthe igraču. Maksimalan health koji se može prikazati na HUD-u je 100, ali i veće vrijednosti su važeće. |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the player specified does not exist.
+0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
-//Sets the players health to full
+// Postavi igraču healthe na potpuno (full)
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/heal", cmdtext, true))
@@ -39,22 +39,22 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-If a player's health is set to 0 or a minus value, they will die instantly. If a player's health is below 10 or above 98303, their health bar will flash.
+Ako je health/zdravlje igrača postavljeno na 0 ili minus vrijednost, oni će odmah umrijeti. Ako je zdravstveno stanje igrača ispod 10 ili više od 98303, traka zdravlja će treptati.
 
 :::
 
 :::warning
 
-Health is obtained rounded to integers: set 50.15, but get 50.0
+Zdravlje se zaokružuje na cijele brojeve: postavite 50,15, ali ćete dobiti 50,0
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetPlayerHealth](GetPlayerHealth): Find out how much health a player has.
-- [GetPlayerArmour](GetPlayerArmour): Find out how much armour a player has.
-- [SetPlayerArmour](SetPlayerArmour): Set the armour of a player.
+- [GetPlayerHealth](GetPlayerHealth): Doznaj koliko healtha ima igrač.
+- [GetPlayerArmour](GetPlayerArmour): Otkrijte koliko armora ima igrač.
+- [SetPlayerArmour](SetPlayerArmour): Postavi armor igrača.

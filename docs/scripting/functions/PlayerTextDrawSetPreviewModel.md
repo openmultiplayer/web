@@ -1,28 +1,32 @@
 ---
 title: PlayerTextDrawSetPreviewModel
-description: Sets a player textdraw 2D preview sprite of a specified model ID.
+description: Postavlja player-textdrawu 3D pregled određenog ID-a modela.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
 
-Sets a player textdraw 2D preview sprite of a specified model ID.
+:::
 
-| Name       | Description                                       |
-| ---------- | ------------------------------------------------- |
-| playerid   | The PlayerTextDraw player ID.                     |
-| text       | The textdraw id that will display the 3D preview. |
-| modelindex | The GTA SA or SA:MP model ID to display.          |
+## Deskripcija
+
+Postavlja player-textdrawu 3D pregled određenog ID-a modela.
+
+| Ime        | Deskripcija                                |
+| ---------- | ------------------------------------------ |
+| playerid   | ID igrača PlayerTextDraw-a.                |
+| text       | ID textdraw-a koji će prikazati 3D prikaz. |
+| modelindex | GTA SA ili SA:MP model ID za prikazati.    |
 
 ## Returns
 
-1: The function was executed successfully. If an invalid model is passed 'success' is reported, but the model will appear as a yellow/black question mark.
+1: Funkcija uspješno izvršena. Ako je proslijeđen nevažeći ID modela 'success' (uspješno) je poslano, ali Model će se prikazati kao crno-žuti upitnik.
 
-0: The function failed to execute. Player and/or textdraw do not exist.
+0: Funkcija neuspješno izvršena. Igrač i/ili textdraw ne postoje.
 
-## Examples
+## Primjeri
 
 ```c
 new PlayerText: gTextDraw[MAX_PLAYERS];
@@ -34,25 +38,25 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawUseBox(playerid, gTextDraw[playerid], 1);
     PlayerTextDrawBoxColor(playerid, gTextDraw[playerid], 0x000000FF);
     PlayerTextDrawTextSize(playerid, gTextDraw[playerid], 40.0, 40.0);
-    PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 411); // Show an Infernus (model 411)
-    //PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 0); //Display model 0 (CJ Skin)
-    //PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 18646); //Display model 18646 (police light object)
+    PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 411); // Prikaži Infernus (model 411)
+    //PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 0); //Prikaži model 0 (CJ Skin)
+    //PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 18646); //Prikaži model 18646 (police light object)
     PlayerTextDrawShow(playerid, gTextDraw[playerid]);
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for this function to have effect.
+Textdraw MORA koristiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkcija imala efekta.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Set rotation of a 3D player textdraw preview.
-- [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol): Set the colours of a vehicle in a 3D player textdraw preview.
-- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.
+- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Postavlja rotaciju 3D prikaza u player-textdrawu.
+- [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol): Postavlja boju vozila 3D prikazu u player-textdrawu.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Pozvano kada igrač klikne na player-textdraw.

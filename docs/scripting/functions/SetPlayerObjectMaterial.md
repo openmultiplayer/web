@@ -1,30 +1,34 @@
 ---
 title: SetPlayerObjectMaterial
-description: Replace the texture of a player-object with the texture from another model in the game.
+description: Zamijeni teksturu player-objekta sa teksturom drugog modela u igri.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
 
-Replace the texture of a player-object with the texture from another model in the game.
+:::
 
-| Name          | Description                                                                                                                                      |
+## Deskripcija
+
+Zamijeni teksturu player-objekta sa teksturom drugog modela u igri.
+
+| Ime           | Deskripcija                                                                                                                                      |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| playerid      | The ID of the player the object is associated to.                                                                                                |
-| objectid      | The ID of the object to replace the texture of                                                                                                   |
-| materialindex | The material index on the object to change (0 to 15)                                                                                             |
-| modelid       | The modelid on which replacement texture is located. Use 0 for alpha. Use -1 to change the material color without altering the existing texture. |
-| txdname       | The name of the txd file which contains the replacement texture (use "none" if not required)                                                     |
-| texturename   | The name of the texture to use as the replacement (use "none" if not required)                                                                   |
-| materialcolor | The object color to set, as an integer or hex in ARGB format. Using 0 keeps the existing material color.                                         |
+| playerid      | ID igrača za kojeg je objekat povezan/asociran.                                                                                                  |
+| objectid      | ID objekta za zamijeniti teksturu.                                                                                                               |
+| materialindex | Index materijala na objektu za zamijeniti (od 0 do 15)                                                                                           |
+| modelid       | ID modela na kome se nalazi zamjenska tekstura. Koristite 0 za alfa. Koristite -1 za promjenu boje materijala bez mijenjanja postojeće teksture. |
+| txdname       | Ime txd fatoteke koja sadrži zamjensku teksturu (koristi "none" ako nije potrebno)                                                               |
+| texturename   | Ime teksture za koristiti kao zamjensku (koristi "none" ako nije potrebno)                                                                       |
+| materialcolor | Boja objekta za postaviti, kao cijeli broj ili hex u ARGB formatu. Korištenjem 0 čuva trenutnu boju materijala.                                  |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid,cmdtext[])
@@ -38,34 +42,34 @@ public OnPlayerCommandText(playerid,cmdtext[])
         GetPlayerPos(playerid, X, Y, Z);
         myObject = CreatePlayerObject(playerid, 19371, X, Y, Z+0.5, 0.0, 0.0, 0.0, 300.0);
         SetPlayerObjectMaterial(playerid, myObject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
-        // Replaces the texture of our player-object with the texture of model 19341
+        // Mijenja teksturu našeg player-objekta sa teksturom modela 19341
         return 1;
     }
     return 0;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Vertex lightning of the object will disappear if material color is changed.
+Vertex (vrhovno) osvjetljenje objekta će nestati ako se promijeni boja materijala.
 
 :::
 
 :::warning
 
-You MUST use ARGB color format, not RGBA like used in client messages etc.
+MORAŠ koristiti ARGB format boje, ne RGBA kao u client porukama itd.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetObjectMaterial](SetObjectMaterial): Replace the texture of an object with the texture from another model in the game.
+- [SetObjectMaterial](SetObjectMaterial): Zamijeni teksturu objekta sa teksturom drugog modela iz igre.
 
-## Filterscripts with texturing/text support
+## Filterskripte koje podržavaju teksturisanje/text
 
-- Ultimate Creator by Nexius
-- Texture Studio by \[uL\]Pottus
-- Fusez's Map Editor by RedFusion
-- Map Editor I by adri1
+- Ultimate Creator od Nexius
+- Texture Studio od \[uL\]Pottus
+- Fusez's Map Editor od RedFusion
+- Map Editor I od adri1

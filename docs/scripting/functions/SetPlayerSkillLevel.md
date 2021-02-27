@@ -1,49 +1,53 @@
 ---
 title: SetPlayerSkillLevel
-description: Set the skill level of a certain weapon type for a player.
+description: Postavite nivo vještine određene vrste oružja za igrača.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Set the skill level of a certain weapon type for a player.
+:::
 
-| Name     | Description                                                                                          |
-| -------- | ---------------------------------------------------------------------------------------------------- |
-| playerid | The ID of the player to set the weapon skill of.                                                     |
-| skill    | The [weapon](../resources/weaponskills) to set the skill of.                                      |
-| level    | The skill level to set for that weapon, ranging from 0 to 999. A level out of range will max it out. |
+## Deskripcija
+
+Postavite nivo vještine određene vrste oružja za igrača.
+
+| Ime      | Deskripcija                                                                                                     |
+| -------- | --------------------------------------------------------------------------------------------------------------- |
+| playerid | ID igrača za postaviti nivo vještine oružja.                                                                    |
+| skill    | [Oružje](../resources/weaponskills) za postaviti vještine.                                                      |
+| level    | Razina vještine koju treba postaviti za to oružje, u rasponu od 0 do 999. Nivo izvan dosega maksimaliziraće ga. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerSpawn(playerid)
 {
     SetPlayerSkillLevel(playerid, WEAPONSKILL_SAWNOFF_SHOTGUN, 1);
-    // This will make the player use single-handed sawn-off shotguns.
+    // To će natjerati igrača da koristi sawn-off sa jednom rukom.
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-The skill parameter is NOT the weapon ID, it is the skill type. Click here for a list of skill types.
+Parametar vještine NIJE ID oružja, to je vrsta vještine. Kliknite ovdje za listu vrsta vještina.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerArmedWeapon](SetPlayerArmedWeapon): Set a player's armed weapon.
-- [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
+- [SetPlayerArmedWeapon](SetPlayerArmedWeapon): Postavite igračevo "armed" oružje.
+- [GivePlayerWeapon](GivePlayerWeapon): Daj igraču oružje.
 
-## Related Information
+## Srodne Informacije
 
-- [Weapon Skills](../resources/weaponskills#skill-levels): List of weapon skills that are used to set player's skill level.
+- [Weapon Skills](../resources/weaponskills#skill-levels): Popis oružja koje se koriste za postavljanje nivoa vještine igrača.

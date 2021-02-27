@@ -1,32 +1,36 @@
 ---
 title: SetPlayerArmedWeapon
-description: Sets which weapon (that a player already has) the player is holding.
+description: Postavlja koje oružje (koje igrač posjeduje) igrač trenutno drži.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Sets which weapon (that a player already has) the player is holding.
+:::
 
-| Name     | Description                                                |
-| -------- | ---------------------------------------------------------- |
-| playerid | The ID of the player to arm with a weapon.                 |
-| weaponid | The ID of the weapon that the player should be armed with. |
+## Deskripcija
+
+Postavlja koje oružje (koje igrač posjeduje) igrač trenutno drži.
+
+| Ime      | Deskripcija                                      |
+| -------- | ------------------------------------------------ |
+| playerid | ID igrača za naoružati sa oružjem.               |
+| weaponid | ID oružja s kojim bi igrač trebao biti naoružan. |
 
 ## Returns
 
-1: The function was executed successfully. Success is returned even when the function fails to execute (the player doesn't have the weapon specified, or it is an invalid weapon).
+1: Funkcija uspješno izvršena. Uspješno je vraćeno i kada se funkcija neuspješno izvrši (igrač ne posjeduje navedeno oružje ili je proslijeđen nevažeći ID oružja).
 
-0: The function failed to execute. The player is not connected.
+0: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerUpdate(playerid)
 {
-    SetPlayerArmedWeapon(playerid,0); // disables weapons
+    SetPlayerArmedWeapon(playerid,0); // onemogućuje oružja
     return 1;
 }
 
@@ -39,22 +43,22 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
             weapon,
             ammo;
 
-        GetPlayerWeaponData(playerid, 4, weapon, ammo); // Get the players SMG weapon in slot 4
-        SetPlayerArmedWeapon(playerid, weapon); // Set the player to driveby with SMG
+        GetPlayerWeaponData(playerid, 4, weapon, ammo); // Uzmi igračev SMG u slot 4
+        SetPlayerArmedWeapon(playerid, weapon); // Postavi da igrač drive-by-ea uz SMG
     }
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-This function arms a player with a weapon they already have; it does not give them a new weapon. See GivePlayerWeapon.
+Ova funkcija naoružava igrača oružjem koje već ima; ne daje im novo oružje. Pogledajte GivePlayerWeapon.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
-- [GetPlayerWeapon](GetPlayerWeapon): Check what weapon a player is currently holding.
+- [GivePlayerWeapon](GivePlayerWeapon): Daj igraču oružje.
+- [GetPlayerWeapon](GetPlayerWeapon): Provjeri koje oružje igrač trenutno drži.

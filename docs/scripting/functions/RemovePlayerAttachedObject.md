@@ -1,30 +1,34 @@
 ---
 title: RemovePlayerAttachedObject
-description: Remove an attached object from a player.
+description: Ukloni prikvačeni objekat sa igrača.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
 
-Remove an attached object from a player.
+:::
 
-| Name     | Description                                                           |
-| -------- | --------------------------------------------------------------------- |
-| playerid | The ID of the player to remove the object from.                       |
-| index    | The index of the object to remove (set with SetPlayerAttachedObject). |
+## Deskripcija
+
+Ukloni prikvačeni objekat sa igrača.
+
+| Ime      | Deskripcija                                                        |
+| -------- | ------------------------------------------------------------------ |
+| playerid | ID igrača od kojeg treba ukloniti prikvačeni objekat.              |
+| index    | Index objekta za ukloniti (postavljen sa SetPlayerAttachedObject). |
 
 ## Returns
 
-1 on success, 0 on failure.
+1 uspješno, 0 pri grešci.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strmp(cmdtext, "/remao", true)) // Remove Attached Objects
+    if (!strmp(cmdtext, "/remao", true)) // Ukloni prikvačene objekte
     {
         for(new i=0; i<MAX_PLAYER_ATTACHED_OBJECTS; i++)
         {
@@ -36,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerAttachedObject](SetPlayerAttachedObject): Attach an object to a player
-- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed): Check whether an object is attached to a player in a specified index
+- [SetPlayerAttachedObject](SetPlayerAttachedObject): Prikvači objekat za igrača
+- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed): Provjeri da li je objekat prikvačen za igrača u oređenom indexu.

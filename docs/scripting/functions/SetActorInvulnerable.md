@@ -1,45 +1,49 @@
 ---
 title: SetActorInvulnerable
-description: Toggle an actor's invulnerability.
+description: Uključite/isključite aktorovu neranjivost.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
-Toggle an actor's invulnerability.
+:::
 
-| Name         | Description                                             |
-| ------------ | ------------------------------------------------------- |
-| actorid      | The ID of the actor to set invulnerability.             |
-| invulnerable | 0 to make them vulnerable, 1 to make them invulnerable. |
+## Deskripcija
+
+Uključite/isključite aktorovu neranjivost.
+
+| Ime          | Deskripcija                                           |
+| ------------ | ----------------------------------------------------- |
+| actorid      | ID aktora za postaviti ranjivost.                     |
+| invulnerable | 0 da ga učinite ranjivim, 1 da ga učinite neranjivim. |
 
 ## Returns
 
-1 - Success
+1 - uspješno
 
-0 - Failure (i.e. Actor is not created).
+0 - greška (Aktor nije kreiran).
 
-## Examples
+## Primjeri
 
 ```c
 new gMyActor;
 
 public OnGameModeInit()
 {
-    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
+    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Aktor kao prodavač u Ammunation-u.
     SetActorInvulnerable(gMyActor, true);
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-Once set invulnerable, the actor does not call OnPlayerGiveDamageActor. Players will have actor's invulnerability state changed only when it is restreamed to them.
+Jednom postavljen za neranjivog, aktor ne poziva OnPlayerGiveDamageActor. Igračima će se stanje aktorove neranjivosti promijeniti samo kad im se to ponovno učita.
 
 :::
 
-## Related Functions
+## Srodne Funkcije

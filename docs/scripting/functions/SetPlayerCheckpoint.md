@@ -1,32 +1,32 @@
 ---
 title: SetPlayerCheckpoint
-description: Sets a checkpoint (red cylinder) for a player.
+description: Postavi checkpoint (crveni cilindar) za igrača.
 tags: ["player", "checkpoint"]
 ---
 
-## Description
+## Deskripcija
 
-Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the radar. When players enter a checkpoint, OnPlayerEnterCheckpoint is called and actions can be performed.
+Postavi checkpoint (crveni cilindar) za igrača. Također prikazuje crvenu bljeskalicu na radaru/mapi. Kada igrač uđe u checkpoint, poziva se OnPlayerEnterCheckpoint i određene akcije se mogu izvršiti.
 
-| Name       | Description                                        |
-| ---------- | -------------------------------------------------- |
-| playerid   | The ID of the player for whom to set a checkpoint. |
-| Float:x    | The X coordinate to set the checkpoint at.         |
-| Float:y    | The Y coordinate to set the checkpoint at.         |
-| Float:z    | The Z coordinate to set the checkpoint at.         |
-| Float:size | The size of the checkpoint.                        |
+| Ime        | Deskripcija                          |
+| ---------- | ------------------------------------ |
+| playerid   | ID igrača za postaviti checkpoint.   |
+| Float:x    | X kordinata za postaviti checkpoint. |
+| Float:y    | Y kordinata za postaviti checkpoint. |
+| Float:z    | Z kordinata za postaviti checkpoint. |
+| Float:size | Veličina checkpointa.                |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the player specified does not exist.
+0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
-// In this example the player's checkpoint will be set when they spawn.
-// On entering the checkpoint they will receive $1000 and the checkpoint will be disabled.
+// U ovom primjeru igračev checkpoint će se postaviti kada se igrač spawnuje.
+// Prilikom ulaska u checkpoint dobiti će $1000 i checkpoint će se ugasiti.
 
 new bool: gOnCheck[MAX_PLAYERS];
 
@@ -39,7 +39,7 @@ public OnPlayerSpawn(playerid)
 
 public OnPlayerEnterCheckpoint(playerid)
 {
-    if (gOnCheck[playerid]) // if it's true
+    if (gOnCheck[playerid]) // ake je true/tačno
     {
         GivePlayerMoney(playerid, 1000);
         DisablePlayerCheckpoint(playerid);
@@ -49,22 +49,22 @@ public OnPlayerEnterCheckpoint(playerid)
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-Checkpoints are asynchronous, meaning only one can be shown at a time. To 'stream' checkpoints (only show them when players are close enough), use a checkpoint streamer.
+Checkpointi su asinhroni, što znači da se odjednom može prikazivati ​​samo jedan. Za 'streamanje' checkpointa (pokažite ih samo kada su igrači dovoljno blizu), upotrijebite streamer za provjeru checkpointa.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Disable the player's current checkpoint.
-- [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Check if a player is in a checkpoint.
-- [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
-- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
-- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
-- [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
-- [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
-- [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Called when a player enters a race checkpoint.
-- [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint): Called when a player leaves a race checkpoint.
+- [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Onemogući igračev trenutni checkpoint.
+- [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Provjeri da li je igrač u checkpointu.
+- [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Kreiraj race checkpoint za igrača.
+- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Onemogući igračev trenutni race checkpoint.
+- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Provjeri da li je igrač u race checkpointu.
+- [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Pozvano kada igrač uđe u checkpoint.
+- [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Pozvano kada igrač napusti checkpoint.
+- [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Pozvano kada igrač uđe u race checkpoint.
+- [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint): Pozvano kada igrač napusti race checkpoint.

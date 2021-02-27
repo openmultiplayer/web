@@ -1,26 +1,26 @@
 ---
 title: SetPVarFloat
-description: Set a float player variable's value.
+description: Postavi float vrijednost player (igračeve) varijable.
 tags: ["pvar"]
 ---
 
-## Description
+## Deskripcija
 
-Set a float player variable's value.
+Postavi float vrijednost player (igračeve) varijable.
 
-| Name        | Description                                             |
-| ----------- | ------------------------------------------------------- |
-| playerid    | The ID of the player whose player variable will be set. |
-| varname     | The name of the player variable.                        |
-| float_value | The float you want to save in the player variable.      |
+| Ime         | Deskripcija                                          |
+| ----------- | ---------------------------------------------------- |
+| playerid    | ID igrača čija će player varijabla biti postavljena. |
+| varname     | Ime player varijable.                                |
+| float_value | Float za pohraniti u player varijablu.               |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. Either the player specified is not connected, or the variable name is null or over 40 characters.
+0: Funkcija neuspješno izvršena. Ili navedeni igrač nije konektovan, ili je ime varijable prazno ili preko 40 karaktera.
 
-## Examples
+## Primjeri
 
 ```c
 forward SavePos(playerid);
@@ -29,27 +29,27 @@ public SavePos(playerid)
     new
         Float: x, Float: y, Float: z;
 
-    GetPlayerPos(playerid, x, y, z); // Get the players position
-    SetPVarFloat(playerid, "xpos", x); // Save the float into a player variable
-    SetPVarFloat(playerid, "ypos", y); // Save the float into a player variable
-    SetPVarFloat(playerid, "zpos", z); // Save the float into a player variable
+    GetPlayerPos(playerid, x, y, z); // Dobij poziciju igrača
+    SetPVarFloat(playerid, "xpos", x); // Pohrani float u player varijablu
+    SetPVarFloat(playerid, "ypos", y); // Pohrani float u player varijablu
+    SetPVarFloat(playerid, "zpos", z); // Pohrani float u player varijablu
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Variables aren't reset until after OnPlayerDisconnect is called, so the values are still accessible in OnPlayerDisconnect.
+Varijable se resetiraju tek nakon što se pozove OnPlayerDisconnect, tako da su vrijednosti i dalje dostupne u OnPlayerDisconnect.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPVarInt](SetPVarInt): Set an integer for a player variable.
-- [GetPVarInt](GetPVarInt): Get the previously set integer from a player variable.
-- [SetPVarString](SetPVarString): Set a string for a player variable.
-- [GetPVarString](GetPVarString): Get the previously set string from a player variable.
-- [GetPVarFloat](GetPVarFloat): Get the previously set float from a player variable.
-- [DeletePVar](DeletePVar): Delete a player variable.
+- [SetPVarInt](SetPVarInt): Postavi cijeli broj za igračevu varijablu.
+- [GetPVarInt](GetPVarInt): Dobij prethodno postavljeni cijeli broj iz igračeve varijable.
+- [SetPVarString](SetPVarString): Postavi string za igračevu varijablu.
+- [GetPVarString](GetPVarString): Dobij prethodno postavljeni string iz igračeve varijable.
+- [GetPVarFloat](GetPVarFloat): Dobij prethodno postavljeni float iz igračeve varijable.
+- [DeletePVar](DeletePVar): Ukloni igračevu varijablu.

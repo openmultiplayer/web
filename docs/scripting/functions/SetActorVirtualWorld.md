@@ -1,43 +1,47 @@
 ---
 title: SetActorVirtualWorld
-description: Set the virtual world of an actor.
+description: Postavi virtualni svijet za aktora.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
-Set the virtual world of an actor. Only players in the same world will see the actor.
+:::
 
-| Name    | Description                                                                |
-| ------- | -------------------------------------------------------------------------- |
-| actorid | The ID of the actor (returned by CreateActor) to set the virtual world of. |
-| vworld  | The virtual world to put the actor ID.                                     |
+## Deskripcija
+
+Postavi virtualni svijet za aktora. Samo igrači u istom virtualnom svijetu će ga vidjeti.
+
+| Ime     | Deskripcija                                                                 |
+| ------- | --------------------------------------------------------------------------- |
+| actorid | ID aktora (returnovan/vraćen od CreateActor) za postaviti virtualni svijet. |
+| vworld  | Virtualni svijet za ubaciti aktora.                                         |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The actor specified does not exist.
+0: Funkcija neuspješno izvršena. Navedeni aktor ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 new gMyActor;
 
 public OnGameModeInit()
 {
-    // Create the actor
+    // Kreiraj aktora
     gMyActor = CreateActor(69, 0.0, 0.0, 3.0, 0.0);
 
-    // Set their virtual world
+    // Postavi mu virtualni svijet
     SetActorVirtualWorld(gMyActor, 69);
     return 1;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetActorVirtualWorld](GetActorVirtualWorld): Get the virtual world of an actor.
-- [CreateActor](CreateActor): Create an actor (static NPC).
+- [GetActorVirtualWorld](GetActorVirtualWorld): Dobij virtualni svijet aktora.
+- [CreateActor](CreateActor): Kreiraj aktora (statičnog NPC-a).

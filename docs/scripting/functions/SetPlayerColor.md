@@ -1,42 +1,42 @@
 ---
 title: SetPlayerColor
-description: Set the colour of a player's nametag and marker (radar blip).
+description: Postavlja boju igračevog nametag-a i markera/oznake (bljeskalica na mapi/radaru).
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Set the colour of a player's nametag and marker (radar blip).
+Postavlja boju igračevog nametag-a i markera/oznake (bljeskalica na mapi/radaru).
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | The ID of the player whose color to set. |
-| color    | The color to set. Supports alpha values. |
+| Ime      | Deskripcija                                   |
+| -------- | --------------------------------------------- |
+| playerid | ID igrača za postaviti boju.                  |
+| color    | Boja za postaviti. Podržava alfa vrijednosti. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
-// Red, using hexadecimal notation:
+// Crvena, koristeći se hexadecimalnom notacijom:
 SetPlayerColor(playerid, 0xFF0000FF);
 
-//Red, using decimal notation:
+// Crvena, koristeći se decimalnom notacijom:
 SetPlayerColor(playerid, 4278190335);
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-This function will change player's color for everyone, even if player's color was changed with SetPlayerMarkerForPlayer for any other player. If used under OnPlayerConnect, the affecting player will not see the color in the TAB menu.
+Ova funkcija će promijeniti boju igrača za sve, čak i ako je boja igrača promijenjena pomoću SetPlayerMarkerForPlayer za bilo koji drugi igrač. Ako se koristi pod OnPlayerConnect, igrač koji utječe neće vidjeti boju u TAB izborniku.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Set a player's marker.
-- [GetPlayerColor](GetPlayerColor): Check the color of a player.
-- [ChangeVehicleColor](ChangeVehicleColor): Set the color of a vehicle.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.
+- [GetPlayerColor](GetPlayerColor): Provjeri boju igrača.
+- [ChangeVehicleColor](ChangeVehicleColor): Postavi boju vozila.

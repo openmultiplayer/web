@@ -1,27 +1,31 @@
 ---
 title: SetActorFacingAngle
-description: Set the facing angle of an actor.
+description: Postavi smjer gledanja aktora.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
-Set the facing angle of an actor.
+:::
 
-| Name    | Description                                                              |
+## Deskripcija
+
+Postavi smjer gledanja aktora.
+
+| Ime     | Deskripcija                                                              |
 | ------- | ------------------------------------------------------------------------ |
-| actorid | The ID of the actor to set the facing angle of. Returned by CreateActor. |
-| ang     | The facing angle to set for the actor.                                   |
+| actorid | ID aktora za postaviti smjer gledanja. Returnovan/vraćen od CreateActor. |
+| ang     | Smjer gledanja za postaviti.                                             |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The actor specified does not exist.
+0: Funkcija neuspješno izvršena. Navedeni aktor ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 new MyActor;
@@ -32,25 +36,25 @@ public OnGameModeInit()
     return 1;
 }
 
-// Somewhere else
+// Negdje drugo
 SetActorFacingAngle(MyActor, 180.0);
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-When creating an actor with CreateActor, you specify it's facing angle. You do not need to use this function unless you want to change its facing angle later.
+Kada kreirate aktora pomoću CreateActor-a, odredite njegov okrenuti ugao/smjer gledanja. Ovu funkciju ne morate koristiti ako kasnije ne želite promijeniti njegov ugao/smjer gledanja okretanja.
 
 :::
 
 :::warning
 
-Players will see actor's facing angle changed only when it is restreamed to them.
+Igrači će vijeti promjenu smjera gledanja aktora onda kada im se aktor ponovo učita.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetActorFacingAngle](GetActorFacingAngle): Get the facing angle of an actor.
-- [SetActorPos](SetActorPos): Set the position of an actor.
+- [GetActorFacingAngle](GetActorFacingAngle): Dobij smjer gledanja aktora.
+- [SetActorPos](SetActorPos): Postavi poziciju aktora.

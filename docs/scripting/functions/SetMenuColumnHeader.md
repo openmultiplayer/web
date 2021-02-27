@@ -1,54 +1,54 @@
 ---
 title: SetMenuColumnHeader
-description: Sets the caption of a column in a menu.
+description: Postavlja naslov stupca u meniju.
 tags: ["menu"]
 ---
 
-## Description
+## Deskripcija
 
-Sets the caption of a column in a menu.
+Postavlja naslov stupca u meniju.
 
-| Name   | Description                               |
-| ------ | ----------------------------------------- |
-| menuid | ID of the menu to change.                 |
-| column | The column (0 or 1) to set the header of. |
-| text[] | The caption text for the column.          |
+| Ime    | Deskripcija                           |
+| ------ | ------------------------------------- |
+| menuid | ID menija za izmijeniti.              |
+| column | Stupac (0 ili 1) za postaviti naslov. |
+| text[] | Tekst opisa za stupac.                |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 new Menu: gTestMenu;
 
-// There are two rows in this menu
+// U ovom su meniju dva reda
 gTestMenu = CreateMenu("Menu Header", 2, 200.0, 100.0, 150.0, 150.0);
 SetMenuColumnHeader(gTestMenu, 0, "Row 1");
 SetMenuColumnHeader(gTestMenu, 1, "Row 2");
 
-// Add menu items to it.
+// Dodajte mu stavke u meniju.
 AddMenuItem(gTestMenu, 0, "Row1 Item1");
 AddMenuItem(gTestMenu, 1, "Row2 Item1");
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Crashes when passed an invalid menu ID.
+Crashuje kada se proslijedi nevažeći ID menija.
 
 :::
 
 :::warning
 
-Note that you can add only 12 items with AddMenuItem. The 13th object of a menu would replace the header of the column which is correctly set with this function.
+Imajte na umu da pomoću AddMenuItem možete dodati samo 12 predmeta/stavki. 13. objekt menija zamijenio bi zaglavlje stupca koje je pravilno postavljeno ovom funkcijom.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [AddMenuItem](AddMenuItem): Add an item to a menu.
-- [CreateMenu](CreateMenu): Create a menu.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.
+- [AddMenuItem](AddMenuItem): Dodaj artikal u meni.
+- [CreateMenu](CreateMenu): Kreiraj meni.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Pozvano kada igrač odabere red u meniju.

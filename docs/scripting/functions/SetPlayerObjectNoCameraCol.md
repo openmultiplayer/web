@@ -1,27 +1,31 @@
 ---
 title: SetPlayerObjectNoCameraCol
-description: Toggles a player object camera collision.
+description: Uključuje / isključuje sudar kamere predmeta igrača.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
-Toggles a player object camera collision.
+:::
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | The playerID the object belongs to.      |
-| objectid | The ID of the object you want to toggle. |
+## Deskripcija
+
+Uključuje/isključuje sudar kamere predmeta igrača.
+
+| Ime      | Deskripcija                                                     |
+| -------- | --------------------------------------------------------------- |
+| playerid | ID igrača kojem objekat pripada.                                |
+| objectid | ID objekta kojem želite uključiti/isključiti collision (sudar). |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The object specified does not exist.
+0: Funkcija neuspješno izvršena. Navedeni objekat ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerObjectMoved(playerid, objectid)
@@ -36,14 +40,14 @@ public OnPlayerObjectMoved(playerid, objectid)
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-This does not work inside the normal SA map boundaries.
+Ovo ne radi unutar normalnih granica SA mape.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetObjectNoCameraCol](SetObjectNoCameraCol): Disables collisions between camera and object.
+- [SetObjectNoCameraCol](SetObjectNoCameraCol): Onemogućava sudare između kamere i objekta.

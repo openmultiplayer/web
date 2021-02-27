@@ -1,35 +1,35 @@
 ---
 title: RemoveVehicleComponent
-description: Remove a component from a vehicle.
+description: Ukloni komponentu sa vozila.
 tags: ["vehicle"]
 ---
 
-## Description
+## Deskripcija
 
-Remove a component from a vehicle.
+Ukloni komponentu sa vozila.
 
-| Name        | Description                    |
-| ----------- | ------------------------------ |
-| vehicleid   | ID of the vehicle.             |
-| componentid | ID of the component to remove. |
+| Ime         | Deskripcija                |
+| ----------- | -------------------------- |
+| vehicleid   | ID vozila.                 |
+| componentid | ID komponente za ukloniti. |
 
 ## Returns
 
-0 - The component was not removed because the vehicle does not exist.
+0 - Komponenta nije uklonjena jer vozilo ne postoji.
 
-1 - The component was successfully removed from the vehicle.
+1 - Komponenta je uspješno uklonjena sa vozila.
 
-## Examples
+## Primjeri
 
 ```c
-//remove Nitro from vehicle number 1
+//ukloni Nitro sa vozila broj 1
 RemoveVehicleComponent(1, 1010);
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [AddVehicleComponent](AddVehicleComponent): Add a component to a vehicle.
-- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Check what components a vehicle has.
-- [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
-- [OnVehicleMod](../callbacks/OnVehicleMod): Called when a vehicle is modded.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.
+- [AddVehicleComponent](AddVehicleComponent): Dodaje komponentu na vozilo.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Provjeri koje komponente vozilo ima.
+- [GetVehicleComponentType](GetVehicleComponentType): Provjeri tip komponente preko ID-a.
+- [OnVehicleMod](../callbacks/OnVehicleMod): Pozvano kada vozilo biva nadograđeno.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Pozvano kada vozilo uđe ili izađe iz mod shopa.

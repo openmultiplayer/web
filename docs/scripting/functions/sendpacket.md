@@ -4,4 +4,8 @@ description: .
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
+
+Ova funkcija započinje malim slovom.
+
+:::

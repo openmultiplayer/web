@@ -1,23 +1,23 @@
 ---
 title: SetPlayerWeather
-description: Set a player's weather.
+description: Postavite vrijeme (weather) igrača.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Set a player's weather.
+Postavite vrijeme (weather) igrača.
 
-| Name     | Description                                |
-| -------- | ------------------------------------------ |
-| playerid | The ID of the player whose weather to set. |
-| weather  | The weather to set.                        |
+| Ime      | Deskripcija                     |
+| -------- | ------------------------------- |
+| playerid | ID igrača za postaviti vrijeme. |
+| weather  | Vrijeme (weather) za postaviti. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -31,15 +31,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-If TogglePlayerClock is enabled, weather will slowly change over time, instead of changing instantly. There are only valid 21 weather IDs in the game (0 - 20), however the game does not have any form of range check.
+Ako je omogućen TogglePlayerClock, vrijeme će se polako mijenjati s vremenom, umjesto da se promijeni trenutno. U igri postoje samo važeći 21 vremenski ID (0 - 20), ali igra nema bilo kakav oblik provjere dometa.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetWeather](SetWeather): Set the global weather.
-- [SetGravity](SetGravity): Set the global gravity.
+- [SetWeather](SetWeather): Postavite globalno vrijeme (weather).
+- [SetGravity](SetGravity): Postavite globalnu gravitaciju.

@@ -1,69 +1,73 @@
 ---
 title: PlayerTextDrawTextSize
-description: Change the size of a player-textdraw (box if PlayerTextDrawUseBox is enabled and/or clickable area for use with PlayerTextDrawSetSelectable).
+description: Promijeni veličinu player-textdrawa (box ako je PlayerTextDrawUseBox omogućen i/ili klikljivo područje za koristiti sa PlayerTextDrawSetSelectable).
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
+:::warning
 
-## Description
-
-Change the size of a player-textdraw (box if PlayerTextDrawUseBox is enabled and/or clickable area for use with PlayerTextDrawSetSelectable).
-
-| Name     | Description                                                                            |
-| -------- | -------------------------------------------------------------------------------------- |
-| playerid | The ID of the player whose player-textdraw to set the size of                          |
-| text     | The ID of the player-textdraw to set the size of.                                      |
-| Float:x  | The size on the X axis (left/right) following the same 640x480 grid as TextDrawCreate. |
-| Float:y  | The size on the Y axis (up/down) following the same 640x480 grid as TextDrawCreate.    |
-
-## Returns
-
-The x and y have different meanings with different PlayerTextDrawAlignment values: 1 (left): they are the right-most corner of the box, absolute coordinates. 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box. 3 (right): the x and y are the coordinates of the left-most corner of the box
-
-1 (left): they are the right-most corner of the box, absolute coordinates.
-
-2 (center): they need to inverted (switch the two) and the x value is the overall width of the box.
-
-3 (right): the x and y are the coordinates of the left-most corner of the box
-
-Using font type 4 (sprite) and 5 (model preview) converts X and Y of this function from corner coordinates to WIDTH and HEIGHT (offsets).
-
-The TextDraw box starts 10.0 units up and 5.0 to the left as the origin (TextDrawCreate coordinate).
-
-This function defines the clickable area for use with PlayerTextDrawSetSelectable, whether a box is shown or not.
-
-## Examples
-
-```c
-MyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Example TextDraw");
-PlayerTextDrawTextSize(playerid, MyTextDraw[playerid], 2.0, 3.6);
-```
-
-## Notes
-
-:::tip
-
-The x and y have different meanings with different PlayerTextDrawAlignment values: 1 (left): they are the right-most corner of the box, absolute coordinates. 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box. 3 (right): the x and y are the coordinates of the left-most corner of the box
-
-Using font type 4 (sprite) and 5 (model preview) converts X and Y of this function from corner coordinates to WIDTH and HEIGHT (offsets). The TextDraw box starts 10.0 units up and 5.0 to the left as the origin (TextDrawCreate coordinate). This function defines the clickable area for use with PlayerTextDrawSetSelectable, whether a box is shown or not.
+Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
 
 :::
 
-## Related Functions
+## Deskripcija
 
-- [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
-- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
-- [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
-- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
-- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.
-- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Set the alignment of a player-textdraw.
-- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
-- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Set the letter size of the text in a player-textdraw.
-- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Toggle the outline on a player-textdraw.
-- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Set the shadow on a player-textdraw.
-- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Scale the text spacing in a player-textdraw to a proportional ratio.
-- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Toggle the box on a player-textdraw.
-- [PlayerTextDrawSetString](PlayerTextDrawSetString): Set the text of a player-textdraw.
-- [PlayerTextDrawShow](PlayerTextDrawShow): Show a player-textdraw.
-- [PlayerTextDrawHide](PlayerTextDrawHide): Hide a player-textdraw.
+Promijeni veličinu player-textdrawa (box ako je PlayerTextDrawUseBox omogućen i/ili klikljivo područje za koristiti sa PlayerTextDrawSetSelectable).
+
+| Ime      | Deskripcija                                                                         |
+| -------- | ----------------------------------------------------------------------------------- |
+| playerid | ID igrača čijem se player-textdrawu mijenja veličina.                               |
+| text     | ID player-textdrawa za postaviti veličinu.                                          |
+| Float:x  | Veličina na X osi (lijevo/desno) slijedeći istu mrežu 640x480 kao i TextDrawCreate. |
+| Float:y  | Veličina na Y osi (gore/dole) slijedeći istu mrežu 640x480 kao i TextDrawCreate.    |
+
+## Returns
+
+X i y imaju različita značenja s različitim vrijednostima PlayerTextDrawAlignment: 1 (lijevo): oni su krajnji desni ugao box-a, apsolutna kordinatama. 2 (sredina): trebaju se okrenuti (prebaciti dva), a X vrijednost je ukupna širina box-a. 3 (desno): x i y su kordinate krajnjeg lijevog ugla box-a
+
+1 (left): oni su krajnji desni ugao kutije, apsolutna kordinata.
+
+2 (center): trebaju ih okrenuti (prebaciti dva), a X vrijednost je ukupna širina boxa.
+
+3 (right): x i y su kordinate krajnjeg lijevog ugla kutije
+
+Upotrebom fonta tipa 4 (sprite) i 5 (pregled modela) pretvara se X i Y ove funkcije iz kordinatama ugla u WIDTH i HEIGHT (offseti).
+
+Box TextDraw-a započinje 10.0 jedinica gore i 5.0 lijevo kao ishodište (TextDrawCreate kordinata).
+
+Ova funkcija definira područje na koje je moguće kliknuti za upotrebu s PlayerTextDrawSetSelectable, bilo da je box prikazan ili ne.
+
+## Primjeri
+
+```c
+MyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Primjer Textdrawa");
+PlayerTextDrawTextSize(playerid, MyTextDraw[playerid], 2.0, 3.6);
+```
+
+## Zabilješke
+
+:::tip
+
+X i y imaju različita značenja s različitim vrijednostima PlayerTextDrawAlignment: 1 (lijevo): oni su krajnji desni ugao box-a, apsolutna kordinatama. 2 (sredina): trebaju se okrenuti (prebaciti dva), a X vrijednost je ukupna širina box-a. 3 (desno): x i y su kordinate krajnjeg lijevog ugla box-a
+
+Upotrebom fonta tipa 4 (sprite) i 5 (pregled modela) pretvara se X i Y ove funkcije iz kordinatama ugla u WIDTH i HEIGHT (offseti). The TextDraw box počinje sa 10.0 jedinica gore i 5.0 ulijevo po zadanom (TextDrawCreate kordinata). Ova funkcija definira područje na koje je moguće kliknuti za upotrebu s PlayerTextDrawSetSelectable, bilo da je box prikazan ili ne.
+
+:::
+
+## Srodne Funkcije
+
+- [CreatePlayerTextDraw](CreatePlayerTextDraw): Kreiraj player-textdraw.
+- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Uništi player-textdraw.
+- [PlayerTextDrawColor](PlayerTextDrawColor): Postavi boju teksta u player-textdrawu.
+- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Postavi boju box-a od player-textdrawa.
+- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Postavi boju pozadine player-textdrawa.
+- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Postavi poravnanje player-textdrawa.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
+- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Postavi veličinu slova u tekstu player-textdrawa.
+- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Omogući/onemogući korišćenje outline-a za player-textdraw.
+- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Postavi sjenu na player-textdraw.
+- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Razmjeri razmak teksta u player-textdrawu na proporcionalni omjer.
+- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Omogući/onemogući korišćenje box-a za player-textdraw.
+- [PlayerTextDrawSetString](PlayerTextDrawSetString): Postavi tekst player-textdrawa.
+- [PlayerTextDrawShow](PlayerTextDrawShow): Prikaži player-textdraw.
+- [PlayerTextDrawHide](PlayerTextDrawHide): Sakrij player-textdraw.

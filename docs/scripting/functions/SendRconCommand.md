@@ -1,50 +1,50 @@
 ---
 title: SendRconCommand
-description: Sends an RCON (Remote Console) command.
+description: Šalje RCON (Remote Console) komandu.
 tags: ["administration"]
 ---
 
-## Description
+## Deskripcija
 
-Sends an RCON (Remote Console) command.
+Šalje RCON (Remote Console) komandu.
 
-| Name      | Description                      |
-| --------- | -------------------------------- |
-| command[] | The RCON command to be executed. |
+| Ime       | Deskripcija               |
+| --------- | ------------------------- |
+| command[] | RCON komanda za izvršiti. |
 
 ## Returns
 
-This function always returns 1.
+Ova funkcija uvijek returna (vraća) 1.
 
-## Notes
+## Zabilješke
 
 :::warning
 
-- Does not support login, due to the lack of a 'playerid' parameter.
-- 'password 0' will remove the server's password if one is set.
-- This function will result in OnRconCommand being called.
+- Ne podržava login, zbog nedostatka 'playerid' parametra.
+- 'password 0' će ukloniti lozinku servera ako je postavljena.
+- Ova funkcija će rezultirati da se OnRconCommand pozove.
 
 :::
 
-## Examples
+## Primjeri
 
 ```c
 SendRconCommand("gmx");
-// This is a scripted version of typing "/rcon gmx" in-game.
-// GMX restarts the game mode.
+// Ovo je skriptana verzija korištenja "/rcon gmx" u igri.
+// GMX ponovno pokreće game mode.
 
-// Example using format()
+// Primjer koristeći format()
 new szMapName[] = "Los Santos";
 new szCmd[64];
 format(szCmd, sizeof(szCmd), "mapname %s", szMapName);
 SendRconCommand(szCmd);
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.
+- [IsPlayerAdmin](IsPlayerAdmin): Provjerava da li je igrač prijavljen/ulogovan u RCON.
 
-## Related Callbacks
+## Srodni Callback-ovi (Povratni pozivi)
 
-- [OnRconCommand](../callbacks/OnRconCommand): Called when an RCON command is sent.
-- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.
+- [OnRconCommand](../callbacks/OnRconCommand): Pozvano kada se pošalje RCON komanda.
+- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): Pozvano kada se napravi pokušaj pristupa ulogovanja u RCON.

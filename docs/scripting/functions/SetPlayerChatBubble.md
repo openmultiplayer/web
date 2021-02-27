@@ -1,28 +1,32 @@
 ---
 title: SetPlayerChatBubble
-description: Creates a chat bubble above a player's name tag.
+description: Kreira chat balončić iznad igračevog nametag-a.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
-Creates a chat bubble above a player's name tag.
+:::
 
-| Name         | Description                                                      |
-| ------------ | ---------------------------------------------------------------- |
-| playerid     | The player which should have the chat bubble.                    |
-| text[]       | The text to display.                                             |
-| color        | The text color                                                   |
-| drawdistance | The distance from where players are able to see the chat bubble. |
-| expiretime   | The time in miliseconds the bubble should be displayed for.      |
+## Deskripcija
+
+Kreira chat balončić iznad igračevog nametag-a.
+
+| Ime          | Deskripcija                                                |
+| ------------ | ---------------------------------------------------------- |
+| playerid     | Igrač koji će imati chat balončić.                         |
+| text[]       | Tekst za prikazati.                                        |
+| color        | Boja teksta.                                               |
+| drawdistance | Distanca sa koje će igrači moći vidjeti chat balončić.     |
+| expiretime   | Vrijeme u milisekundama za koje će balončić biti prikazan. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerText(playerid, text[])
@@ -32,18 +36,18 @@ public OnPlayerText(playerid, text[])
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-You can't see your own chat bubbles. The same applies to attached 3D text labels.
+Ne možete vidjeti svoje lične chat balončiće. Isto se dešava i sa prikavčenim 3D text labelom.
 
 :::
 
 :::tip
 
-You can use color embedding for multiple colors in the message. Using '-1' as the color will make the text white (for the simple reason that -1, when represented in hexadecimal notation, is 0xFFFFFFFF).
+Ugradnju boja možete koristiti za više boja u poruci. Korištenje '-1' kao boje učinit će tekst bijelim (iz jednostavnog razloga što je -1, kada je predstavljen u heksadecimalnom zapisu, 0xFFFFFFFF).
 
 :::
 
-## Related Functions
+## Srodne Funkcije

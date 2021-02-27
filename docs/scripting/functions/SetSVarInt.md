@@ -1,40 +1,44 @@
 ---
 title: SetSVarInt
-description: Set an integer server variable.
+description: Postavlja cjelobrojnu server varijablu.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7 R2' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3.7 R2 i ne radi u nižim verzijama!
 
-Set an integer server variable.
+:::
 
-| Name      | Description                      |
-| --------- | -------------------------------- |
-| varname[] | The name of the server variable. |
-| int_value | The integer to be set.           |
+## Deskripcija
+
+Postavlja cjelobrojnu server varijablu.
+
+| Ime       | Deskripcija               |
+| --------- | ------------------------- |
+| varname[] | Ime server varijable.     |
+| int_value | Cijeli broj za postaviti. |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. The variable name is null or over 40 characters.
+0: Funkcija neuspješno izvršena. Ime varijable je prazno ili je preko 40 karaktera.
 
-## Examples
+## Primjeri
 
 ```c
-// set "Version"
+// postavi "Version"
 SetSVarInt("Version", 37);
-// will print version that server has
+// ispisati će verziju koju server ima
 printf("Version: %d", GetSVarInt("Version"));
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetSVarInt](GetSVarInt): Get a player server as an integer.
-- [SetSVarString](SetSVarString): Set a string for a server variable.
-- [GetSVarString](GetSVarString): Get the previously set string from a server variable.
-- [SetSVarFloat](SetSVarFloat): Set a float for a server variable.
-- [GetSVarFloat](GetSVarFloat): Get the previously set float from a server variable.
-- [DeleteSVar](DeleteSVar): Delete a server variable.
+- [GetSVarInt](GetSVarInt): Dobij cjelobrojnu vrijednost server varijable.
+- [SetSVarString](SetSVarString): Postavite string za server varijablu.
+- [GetSVarString](GetSVarString): Dobij prethodno postavljeni string iz server varijable.
+- [SetSVarFloat](SetSVarFloat): Postavi float za server varijablu.
+- [GetSVarFloat](GetSVarFloat): Dobij prethodno postavljeni float iz server varijable.
+- [DeleteSVar](DeleteSVar): Obriši server varijablu.

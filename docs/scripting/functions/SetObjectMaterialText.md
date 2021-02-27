@@ -1,65 +1,72 @@
 ---
 title: SetObjectMaterialText
-description: Replace the texture of an object with text.
+description: Zamijeni teksturu objekta sa tekstom.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
 
-Replace the texture of an object with text.
+:::
 
-| Name          | Description                                                                                   |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| objectid      | The ID of the object to replace the texture of with text.                                     |
-| text          | The text to show on the object. (MAX 2048 characters)                                         |
-| materialindex | The object's material index to replace with text.                                             |
-| materialsize  | The [size](/docs/scripting/resources/materialtextsizes) of the material.                      |
-| fontface      | The font to use.                                                                              |
-| fontsize      | The size of the text (MAX 255).                                                               |
-| bold          | Bold text. Set to 1 for bold, 0 for not.                                                      |
-| fontcolor     | The color of the text, in ARGB format.                                                        |
-| backcolor     | The background color, in ARGB format.                                                         |
-| textalignment | The [alignment](/docs/scripting/resources/materialtextalignment) of the text (default: left). |
+## Deskripcija
+
+Zamijeni teksturu objekta sa tekstom.
+
+| Ime           | Deskripcija                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
+| objectid      | ID objekta za zamijeniti sa texturam sa tekstom.                                                      |
+| text          | Tekst za prikazati na objektu. (MAX 2048 karaktera)                                                   |
+| materialindex | Index materijala objekta za zamijeniti sa tekstom.                                                    |
+| materialsize  | [Veličina](/docs/scripting/resources/materialtextsizes) materijala.                                   |
+| fontface      | Font za koristiti.                                                                                    |
+| fontsize      | Veličina teksta (MAX 255).                                                                            |
+| bold          | Bold text. Postavi na 1 za bold (deblji font), 0 za ne.                                               |
+| fontcolor     | Boja teksta, u ARGB formatu.                                                                          |
+| backcolor     | Boja pozadine, u ARGB formatu.                                                                        |
+| textalignment | [Poravnanje](/docs/scripting/resources/materialtextalignment) teksta (po zadanim postavkama: lijevo). |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute.
+0: Funkcija neuspješno izvršena.
 
-## Examples
+## Primjeri
 
 ```c
 if (strcmp("/text", cmdtext, true) == 0)
 {
-    new objectId = CreateObject(19353, 0, 0, 10, 0.0, 0.0, 90.0); //create the object
+    new objectId = CreateObject(19353, 0, 0, 10, 0.0, 0.0, 90.0); // kreiraj objekat
     SetObjectMaterialText(objectId, "SA-MP {FFFFFF}0.3{008500}e {FF8200}RC7", 0, OBJECT_MATERIAL_SIZE_256x128,
     "Arial", 28, 0, 0xFFFF8200, 0xFF000000, OBJECT_MATERIAL_TEXT_ALIGN_CENTER);
-    // write "SA-MP 0.3e RC7" on the object, with orange font color and black background
+    // napiši "SA-MP 0.3e RC7" na objekat, sa narandžastom bojom fonta i crnom pozadinom
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Color embedding can be used for multiple colors in the text.
+Ugradnja boja može se koristiti za više boja u tekstu.
 
 :::
 
 :::warning
 
-You MUST use ARGB color format, not RGBA like used in client messages etc.
-Text does not update after 16 calls against the same object.
+MORAŠ koristiti ARGB format boje, ne RGBA kao što se koristi u klijent porukama i sl.
+
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetPlayerObjectMaterialText](SetPlayerObjectMaterialText): Replace the texture of a player object with text.
-- [SetObjectMaterial](SetObjectMaterial): Replace the texture of an object with the texture from another model in the game.
-- Ultimate Creator by Nexius
-- SetObjectMaterialText Editor by RIDE2DAY
-- Fusez's Map Editor by RedFusion
+- [SetPlayerObjectMaterialText](SetPlayerObjectMaterialText): Zamijeni teksturu player objekta sa tekstom.
+- [SetObjectMaterial](SetObjectMaterial): Zamijeni teksturu objekta sa teksturom drugog modela iz igre.
+
+## Filterskripte koje podržavaju teksturisanje/text
+
+- Ultimate Creator od Nexius
+- Texture Studio od \[uL\]Pottus
+- Fusez's Map Editor od RedFusion

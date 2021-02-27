@@ -1,48 +1,48 @@
 ---
 title: SetObjectRot
-description: Set the rotation of an object on the three axes (X, Y and Z).
+description: Postavi rotaciju objekta na tri ose (X, Y i Z).
 tags: []
 ---
 
-## Description
+## Deskripcija
 
-Set the rotation of an object on the three axes (X, Y and Z).
+Postavi rotaciju objekta na tri ose (X, Y i Z).
 
-| Name       | Description                                  |
-| ---------- | -------------------------------------------- |
-| objectid   | The ID of the object to set the rotation of. |
-| Float:RotX | The X rotation.                              |
-| Float:RotY | The Y rotation.                              |
-| Float:RotZ | The Z rotation.                              |
+| Ime        | Deskripcija                       |
+| ---------- | --------------------------------- |
+| objectid   | ID objekta za postaviti rotaciju. |
+| Float:RotX | X rotacija.                       |
+| Float:RotY | Y rotacija.                       |
+| Float:RotZ | Z rotacija.                       |
 
 ## Returns
 
-This function always returns 1, even if the object doesn't exist.
+Ova funkcija uvijek returna (vraća) 1, bilo da objekat ne postoji.
 
-## Examples
+## Primjeri
 
 ```c
 SetObjectRot(objectid, 45, 90, 180);
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [CreateObject](CreateObject): Create an object.
-- [DestroyObject](DestroyObject): Destroy an object.
-- [IsValidObject](IsValidObject): Checks if a certain object is vaild.
-- [MoveObject](MoveObject): Move an object.
-- [StopObject](StopObject): Stop an object from moving.
-- [SetObjectPos](SetObjectPos): Set the position of an object.
-- [GetObjectPos](GetObjectPos): Locate an object.
-- [GetObjectRot](GetObjectRot): Check the rotation of an object.
-- [AttachObjectToPlayer](AttachObjectToPlayer): Attach an object to a player.
-- [CreatePlayerObject](CreatePlayerObject): Create an object for only one player.
-- [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.
-- [IsValidPlayerObject](IsValidPlayerObject): Checks if a certain player object is vaild.
-- [MovePlayerObject](MovePlayerObject): Move a player object.
-- [StopPlayerObject](StopPlayerObject): Stop a player object from moving.
-- [SetPlayerObjectPos](SetPlayerObjectPos): Set the position of a player object.
-- [SetPlayerObjectRot](SetPlayerObjectRot): Set the rotation of a player object.
-- [GetPlayerObjectPos](GetPlayerObjectPos): Locate a player object.
-- [GetPlayerObjectRot](GetPlayerObjectRot): Check the rotation of a player object.
-- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Attach a player object to a player.
+- [CreateObject](CreateObject): Kreiraj objekat.
+- [DestroyObject](DestroyObject): Uništi objekat.
+- [IsValidObject](IsValidObject): Provjeri da li je određeni objekat validan.
+- [MoveObject](MoveObject): Pomjeri objekat.
+- [StopObject](StopObject): Zaustavi objekat od kretanja.
+- [SetObjectPos](SetObjectPos): Postavi poziciju objekta.
+- [GetObjectPos](GetObjectPos): Lociraj objekat.
+- [GetObjectRot](GetObjectRot): Provjeri rotaciju objekta.
+- [AttachObjectToPlayer](AttachObjectToPlayer): Prikvači objekat za igrača.
+- [CreatePlayerObject](CreatePlayerObject): Kreiraj objekat za samo jednog igrača.
+- [DestroyPlayerObject](DestroyPlayerObject): Uništi player objekat.
+- [IsValidPlayerObject](IsValidPlayerObject): Provjeri da li je određeni player objekat validan.
+- [MovePlayerObject](MovePlayerObject): Pomjeri player objekat.
+- [StopPlayerObject](StopPlayerObject): Zaustavi player objekat od kretanja.
+- [SetPlayerObjectPos](SetPlayerObjectPos): Postavi poziciju player objekta.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Postavi rotaciju player objekta.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Lociraj player objekat.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Provjeri rotaciju player objekta.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Prikvači player objekat za igrača.

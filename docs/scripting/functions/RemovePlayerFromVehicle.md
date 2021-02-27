@@ -1,30 +1,30 @@
 ---
 title: RemovePlayerFromVehicle
-description: Removes/ejects a player from their vehicle.
+description: Uklanja/izbacuje igrača iz njihovog vozila.
 tags: ["player", "vehicle"]
 ---
 
-## Description
+## Deskripcija
 
-Removes/ejects a player from their vehicle.
+Uklanja/izbacuje igrača iz njihovog vozila.
 
-| Name     | Description                                        |
-| -------- | -------------------------------------------------- |
-| playerid | The ID of the player to remove from their vehicle. |
+| Ime      | Deskripcija                      |
+| -------- | -------------------------------- |
+| playerid | ID igrača za izbaciti iz vozila. |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the player is not connected.
+0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
-## Examples
+## Primjeri
 
 ```c
-// Example - Players can only drive vehicles if they have 10 score.
+// Primjer - Igrači mogu da voze vozila samo ako imaju score 10.
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    if (newstate == PLAYER_STATE_DRIVER && GetPlayerScore(playerid) < 10) // PlAYER_STATE_DRIVER = 2
+    if (newstate == PLAYER_STATE_DRIVER && GetPlayerScore(playerid) < 10) // PLAYER_STATE_DRIVER = 2
     {
         RemovePlayerFromVehicle(playerid);
     }
@@ -32,14 +32,14 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-The exiting animation is not synced for other players. This function will not work when used in OnPlayerEnterVehicle, because the player isn't in the vehicle when the callback is called. Use OnPlayerStateChange instead(see the example below). The player isn't removed if he is in a RC Vehicle.
+Izlazna animacija nije sinhronizirana za druge igrače. Ova funkcija neće raditi kada se koristi u OnPlayerEnterVehicle, jer igrač nije u vozilu kad se pozove povratni poziv. Umjesto toga koristite OnPlayerStateChange (pogledajte primjer dolje). Igrač se ne uklanja ako je u RC vozilu.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [PutPlayerInVehicle](PutPlayerInVehicle): Put a player in a vehicle.
+- [PutPlayerInVehicle](PutPlayerInVehicle): Postavi igrača u vozilo.

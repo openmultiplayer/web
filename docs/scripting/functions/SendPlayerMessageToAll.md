@@ -1,50 +1,50 @@
 ---
 title: SendPlayerMessageToAll
-description: Sends a message in the name of a player to all other players on the server.
+description: Pošalji poruku u ime drugog igrača svim drugim igračima na serveru.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Sends a message in the name of a player to all other players on the server. The line will start with the sender's name in their color, followed by the message in white.
+Pošalji poruku u ime drugog igrača svim drugim igračima na serveru. Linija će početi sa imenom pošiljaoca u njegovoj boji, prateći poruku u bijeloj boji.
 
-| Name            | Description                                                     |
-| --------------- | --------------------------------------------------------------- |
-| senderid        | The ID of the sender. If invalid, the message will not be sent. |
-| const message[] | The message that will be sent.                                  |
+| Ime             | Deskripcija                                               |
+| --------------- | --------------------------------------------------------- |
+| senderid        | ID pošiljatelja. Ako je nevažeći, poruka se neće poslati. |
+| const message[] | Poruka koja će biti poslana.                              |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerText(playerid, text[])
 {
-    // format a message to contain the player's id in front of it
+    // formatiraj poruku da bi sadržala njegov ID pored imena
     new
         string[128];
 
     format(string, sizeof(string), "(%d): %s", playerid, text);
     SendPlayerMessageToAll(playerid, string);
 
-    return 0; // return 0 prevents the original message being sent
+    return 0; // return 0 sprečava slanje originalne poruke
 
-    // Assuming 'playerid' is 0 and the player is called Tenpenny, the output will be 'Tenpenny:(0) <message>'
+    // Pod pretpostavkom da je 'playerid' 0 i da se igrač zove Tenpenny, Izlaz će biti 'Tenpenny:(0) <message>'
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::warning
 
-Avoid using format specifiers in your messages without formatting the string that is sent. It will result in crashes otherwise.
+Izbjegavajte koristiti specifikatore formata u svojim porukama bez formatiranja poslanog stringa. U suprotnom će rezultirati padovima.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SendPlayerMessageToPlayer](SendPlayerMessageToPlayer): Force a player to send text for one player.
-- [SendClientMessageToAll](SendClientMessageToAll): Send a message to all players.
-- [OnPlayerText](../callbacks/OnPlayerText): Called when a player sends a message via the chat.
+- [SendPlayerMessageToPlayer](SendPlayerMessageToPlayer): Prisilite igrača da pošalje tekst za jednog igrača.
+- [SendClientMessageToAll](SendClientMessageToAll): Pošalji poruku svim igračima.
+- [OnPlayerText](../callbacks/OnPlayerText): Pozvano kada igrač pošalje poruku putem chata.

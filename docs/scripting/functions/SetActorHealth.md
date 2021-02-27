@@ -1,37 +1,41 @@
 ---
 title: SetActorHealth
-description: Set the health of an actor.
+description: Postavi healthe (zdravlje) aktoru.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
-Set the health of an actor.
+:::
 
-| Name         | Description                               |
-| ------------ | ----------------------------------------- |
-| actorid      | The ID of the actor to set the health of. |
-| Float:health | The value to set the actors's health to.  |
+## Deskripcija
+
+Postavi healthe (zdravlje) aktoru.
+
+| Ime          | Deskripcija                     |
+| ------------ | ------------------------------- |
+| actorid      | ID aktora za postaviti healthe. |
+| Float:health | Vrijednost za postaviti health. |
 
 ## Returns
 
-1 - success
+1 - uspješno
 
-0 - failure (i.e. actor is not created).
+0 - greška (Aktor nije kreiran).
 
-## Examples
+## Primjeri
 
 ```c
 new gMyActor;
 
 public OnGameModeInit()
 {
-    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
+    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Aktor kao prodavač u Ammunation-u.
     SetActorHealth(gMyActor, 100);
     return 1;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije

@@ -1,47 +1,47 @@
 ---
 title: SetPlayerAmmo
-description: Set the ammo of a player's weapon.
+description: Postavi streljivo igračevog oružja.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Set the ammo of a player's weapon.
+Postavi streljivo igračevog oružja.
 
-| Name     | Description                                                                      |
-| -------- | -------------------------------------------------------------------------------- |
-| playerid | The ID of the player to set the weapon ammo of.                                  |
-| weaponid | The ID of the weapon to set the ammo of. (not the weaponslot as in samp include) |
-| ammo     | The amount of ammo to set.                                                       |
+| Ime      | Deskripcija                                                            |
+| -------- | ---------------------------------------------------------------------- |
+| playerid | ID igrača za postaviti streljivo.                                      |
+| weaponid | ID oružja za postaviti streljivo. (ne weaponslot kao u samp include-u) |
+| ammo     | Količina streljiva za postaviti.                                       |
 
 ## Returns
 
-1: The function was executed successfully. Success is also returned when the weapon slot specified is invalid (not 0-12).
+1: Funkcija uspješno izvršena. Uspješno je također vraćeno i kada je navedeni slot oružja nevažeći (nije 0-12).
 
-0: The function failed to execute. The player isn't connected.
+0: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
-## Examples
+## Primjeri
 
 ```c
-SetPlayerAmmo(playerid, WEAPON_SHOTGUN, 100); // Set ammo of Shotgun to 100 bullets
+SetPlayerAmmo(playerid, WEAPON_SHOTGUN, 100); // Postavi streljivo za Shotgun na 100 metaka
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-The param 'weaponslot' is a typo in the sa-mp include. You must use the weapon ID and not the weapon slot of the weapon you would like to set the ammo of.
+Parametar 'weaponslot' je greška u kucanju u sa-mp include-u. Morate koristiti ID oružja, a ne otvor za oružje za koji želite postaviti streljivo.
 
 :::
 
 :::tip
 
-Set the ammo to 0 to remove a weapon from a player's inventory. Note that the weapon will still show up in GetPlayerWeaponData, albeit with 0 ammo.
+Postavite streljivo na 0 da biste uklonili oružje iz inventara igrača. Imajte na umu da će se oružje i dalje prikazivati ​​u GetPlayerWeaponData, iako sa 0 streljiva.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetPlayerAmmo](GetPlayerAmmo): Check how much ammo a player has in the specified slot.
-- [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
-- [SetPlayerArmedWeapon](SetPlayerArmedWeapon): Set a player's armed weapon.
+- [GetPlayerAmmo](GetPlayerAmmo): Provjeri koliko streljiva igrač ima u određenom slotu.
+- [GivePlayerWeapon](GivePlayerWeapon): Daj igraču oružje.
+- [SetPlayerArmedWeapon](SetPlayerArmedWeapon): Postavite igračevo "armed" oružje.

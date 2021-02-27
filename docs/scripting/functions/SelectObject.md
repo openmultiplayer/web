@@ -1,24 +1,28 @@
 ---
 title: SelectObject
-description: Display the cursor and allow the player to select an object.
+description: Prikaži miš i dozvoli igraču da selektuje objekat.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
 
-Display the cursor and allow the player to select an object. OnPlayerSelectObject is called when the player selects an object.
+:::
 
-| Name     | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| playerid | The ID of the player that should be able to select the object |
+## Deskripcija
+
+Prikaži miš i dozvoli igraču da selektuje objekat. OnPlayerSelectObject je pozvan kada igrač selektuje objekat.
+
+| Ime      | Deskripcija                        |
+| -------- | ---------------------------------- |
+| playerid | ID koji može da selektuje objekat. |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -26,20 +30,20 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/select", true))
     {
         SelectObject(playerid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: Please select the object you'd like to edit!");
+        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: Molimo selektuje objekat kojeg želite urediti!");
         return 1;
     }
     return 0;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [CreateObject](CreateObject): Create an object.
-- [DestroyObject](DestroyObject): Destroy an object.
-- [MoveObject](MoveObject): Move an object.
-- [EditObject](EditObject): Edit an object.
-- [EditPlayerObject](EditPlayerObject): Edit an object.
-- [EditAttachedObject](EditAttachedObject): Edit an attached object.
-- [CancelEdit](CancelEdit): Cancel the edition of an object.
-- [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject): Called when a player selected an object.
+- [CreateObject](CreateObject): Kreiraj objekat.
+- [DestroyObject](DestroyObject): Uništi objekat.
+- [MoveObject](MoveObject): Pomjeri objekat.
+- [EditObject](EditObject): Uredi objekat.
+- [EditPlayerObject](EditPlayerObject): Uredi objekat.
+- [EditAttachedObject](EditAttachedObject): Uredi prikvačeni objekat.
+- [CancelEdit](CancelEdit): Prekini uređivanje objekta.
+- [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject): Pozvano kada igrač odabere objekat.

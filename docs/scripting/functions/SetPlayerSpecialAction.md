@@ -1,25 +1,25 @@
 ---
 title: SetPlayerSpecialAction
-description: This function allows to set players special action.
+description: Ova funkcija dozvoljava da postavite igraču specijalnu akciju.
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-This function allows to set players special action.
+Ova funkcija dozvoljava da postavite igraču specijalnu akciju.
 
-| Name     | Description                                                            |
-| -------- | ---------------------------------------------------------------------- |
-| playerid | The player that should perform the action                              |
-| actionid | The [action](../resources/specialactions) that should be performed. |
+| Ime      | Deskripcija                                                  |
+| -------- | ------------------------------------------------------------ |
+| playerid | Igrač koji će vršiti specijalnu akciju.                      |
+| actionid | [Akcija](../resources/specialactions) koja će biti izvedena. |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the player is not connected.
+0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
-## Examples
+## Primjeri
 
 ```c
 if (strcmp(cmd, "/handsup", true) == 0)
@@ -29,15 +29,15 @@ if (strcmp(cmd, "/handsup", true) == 0)
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-Removing jetpacks from players by setting their special action to 0 causes the sound to stay until death.
+Uklanjanjem jetpacks-a s igrača postavljanjem njihove posebne akcije na 0 zvuk ostaje do smrti.
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetPlayerSpecialAction](GetPlayerSpecialAction): Get a player's current special action.
-- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.
+- [GetPlayerSpecialAction](GetPlayerSpecialAction): Dobij igračevu trenutnu specijalnu akciju.
+- [ApplyAnimation](ApplyAnimation): Primijeni animaciju na igrača.

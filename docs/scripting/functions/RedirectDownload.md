@@ -1,32 +1,32 @@
 ---
 title: RedirectDownload
-description: Redirect a player custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.
+description: Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja na određenu HTTP web stranicu.
 tags: []
 ---
 
 :::note
 
-This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions!
+This function was added in SA-MP 0.3.DL R1 and neće raditi u ranijim verzijama!
 
 :::
 
-## Description
+## Deskripcija
 
-Redirect a player custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.
+Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja na određenu HTTP web stranicu.
 
 ## Parameters
 
-| Name     | Description                                                 |
+| Ime      | Deskripcija                                                 |
 | -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player that requested custom models download. |
-| url[]    | The URL to redirect download                                |
+| playerid | ID igrača koji je zatražio preuzimanje prilagođenih modela. |
+| url[]    | URL za preusmjeravanje preuzimanja.                         |
 
 ## Return Values
 
-- 1: The function executed successfully.
-- 0: The function failed to execute.
+- 1: Funkcija uspješno izvršena.
+- 0: Funkcija neuspješno izvršena.
 
-## Example Usage from dl_redirect filterscript
+## Primjer upotrebe iz dl_redirect filterskripte
 
 ```c
 new baseurl[] = "https://files.sa-mp.com/server";
@@ -62,9 +62,9 @@ public OnPlayerRequestDownload(playerid, type, crc)
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [AddCharModel](AddCharModel): Adds a new custom character model for download.
-- [AddSimpleModel](AddSimpleModel): Adds a new custom simple object model for download.
-- [AddSimpleModelTimed](AddSimpleModelTimed): Adds a new custom simple object model for download.
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.
+- [AddCharModel](AddCharModel): Dodaje novi prilagođeni model za preuzeti.
+- [AddSimpleModel](AddSimpleModel): Dodaje novi prilagođeni model objekta za preuzeti.
+- [AddSimpleModelTimed](AddSimpleModelTimed): Dodaje novi prilagođeni model objekta za preuzeti.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Pozvano kada igrač dovrši preuzimanje prilagođenih modela.

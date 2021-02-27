@@ -1,73 +1,77 @@
 ---
 title: SetObjectsDefaultCameraCol
-description: Allows camera collisions with newly created objects to be disabled by default.
+description: Omogućuje da se sudaranje kamere s novostvorenim objektima onemogući prema zadanim postavkama.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
-Allows camera collisions with newly created objects to be disabled by default.
+:::
 
-| Name    | Description                                                                                         |
-| ------- | --------------------------------------------------------------------------------------------------- |
-| disable | 1 to disable camera collisions for newly created objects and 0 to enable them (enabled by default). |
+## Deskripcija
+
+Omogućuje da se sudaranje kamere s novostvorenim objektima onemogući prema zadanim postavkama.
+
+| Ime     | Deskripcija                                                                                                                 |
+| ------- | --------------------------------------------------------------------------------------------------------------------------- |
+| disable | 1 za onemogućavanje sudara kamere za novostvorene objekte i 0 za njihovo omogućavanje (omogućeno prema zadanim postavkama). |
 
 ## Returns
 
 Note
 
-This function only affects the camera collision of objects created AFTER its use - it does not toggle existing objects' camera collisions.
+Ova funkcija utječe samo na sudare kamera objekata stvorenih NAKON njegove upotrebe - ne uključuje sudare kamera postojećih objekata.
 
-## Examples
+## Primjeri
 
 ```c
 public OnGameModeInit()
 {
-    // Disable camera collision
+    // Onemogući sudar kamere
     SetObjectsDefaultCameraCol(1);
 
-    // Create mapped objects
+    // Stvaranje mapiranih objekata
     CreateObject(...);
     CreateObject(...);
     CreateObject(...);
     CreateObject(...);
 
-    // The above objects will NOT have camera collisions
+    // Gore navedeni objekti NEĆE imati sudara kamere
 
-    // Re-enable camera collisions
+    // Ponovo omogućite sudare kamere
     SetObjectsDefaultCameraCol(0);
 
-    // Create mapped objects
+    // Stvaranje mapiranih objekata
     CreateObject(...);
     CreateObject(...);
     CreateObject(...);
     CreateObject(...);
 
-    // The above objects WILL have camera collision
+    // Gore navedeni objekti NEĆE imati sudara kamere
 
-    // BUT, the first set will still NOT have camera collisions
+    // ALI, prvi set I dalje NEĆE imati sudara kamere
 
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-This function only affects the camera collision of objects created AFTER its use - it does not toggle existing objects' camera collisions.
+Ova funkcija utječe samo na sudare kamera objekata stvorenih NAKON njegove upotrebe - ne uključuje sudare kamera postojećih objekata.
 
 :::
 
 :::warning
 
-This function ONLY works outside the normal SA map boundaries (past 3000 units).
+Ova funkcija radi SAMO izvan normalnih granica SA mape (preko 3000 jedinica).
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [SetObjectNoCameraCol](SetObjectNoCameraCol): Disables collisions between camera and object.
-- [SetPlayerObjectNoCameraCol](SetPlayerObjectNoCameraCol): Disables collisions between camera and player object.
+- [SetObjectNoCameraCol](SetObjectNoCameraCol): Onemogućava sudare između kamere i objekta.
+- [SetPlayerObjectNoCameraCol](SetPlayerObjectNoCameraCol): Onemogućava sudare između kamere i objekta playera.

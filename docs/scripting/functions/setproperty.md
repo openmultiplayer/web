@@ -1,56 +1,60 @@
 ---
 title: setproperty
-description: Add a new property or change an existing property.
+description: Dodaj novu imovinu ili promijeni već postojeću.
 tags: []
 ---
 
-<LowercaseNote />
+:::warning
 
-## Description
+Ova funkcija započinje malim slovom.
 
-Add a new property or change an existing property.
+:::
 
-| Name     | Description                                                                                                                      |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| id       | The virtual machine to use, you should keep this zero.                                                                           |
-| name[]   | Used in combination with value when storing integers; don't use this if you want to store a string.                              |
-| value    | The integer value to store or the property's unique ID if storing a string. Use the hash-function to calculate it from a string. |
-| string[] | The value of the property, as a string. Don't use this if you want to store an integer.                                          |
+## Deskripcija
+
+Dodaj novu imovinu ili promijeni već postojeću.
+
+| Ime      | Deskripcija                                                                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| id       | Virtualna mašina za upotrebu, trebali biste zadržati ovu nulu.                                                                                  |
+| name[]   | Koristi se u kombinaciji s vrijednošću prilikom pohrane cijelih brojeva; nemojte koristiti ovo ako želite pohraniti niz.                        |
+| value    | Cjelobrojna vrijednost za pohraniti ili jedinstveni ID imovine ako pohranjujemo string. Upotrijebite hash-funkciju za izračunavanje iz stringa. |
+| string[] | Vrijednost svojstva, kao string. Ne koristite ovo ako želite pohraniti cijeli broj.                                                             |
 
 ## Returns
 
-This function does not return any specific values.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
-## Examples
+## Primjeri
 
 ```c
 setproperty(.name = "MyInteger", .value = 42);
 
 new value = getproperty(.name = "MyInteger");
-printf("Value that was stored is: %d", value);
+printf("Vrijednost koja je sacuvana: %d", value);
 setproperty(0, "", 123984334, ":)");
 
 new value[4];
 getproperty(0, "", 123984334, value);
-strunpack(value, value, sizeof(value)); // we need to unpack the string first
+strunpack(value, value, sizeof(value)); // Prvo moramo da otpakujemo string
 print(value);
 
-//should print :)
+// Ispisati će :)
 setproperty(.value = 123984334, .string = ":)");
 
-// The rest is the same as above.
+// Ostalo je isto kao i gore.
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-It is recommended to use the PVars/SVars or GVar plugin instead of these natives for being very slow.
+Preporučljivo je da koristite PVars/SVars ili GVar plugin umjesto ovih native-a zbog njihove brzine (spori su).
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [getproperty](getproperty): Get the value of a property.
-- [deleteproperty](deleteproperty): Delete a property.
-- [existproperty](existproperty): Check if a property exists.
+- [getproperty](getproperty): Dobij vrijednost imovine.
+- [deleteproperty](deleteproperty): Obriši imovinu.
+- [existproperty](existproperty): Provjeri da li imovina postoji.

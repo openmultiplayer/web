@@ -1,67 +1,71 @@
 ---
 title: SetPlayerAttachedObject
-description: Attach an object to a specific bone on a player.
+description: Prikvači objekat na određenu kost igrača.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
 
-Attach an object to a specific bone on a player.
+:::
 
-| Name           | Description                                                                          |
-| -------------- | ------------------------------------------------------------------------------------ |
-| playerid       | The ID of the player to attach the object to.                                        |
-| index          | The index (slot) to assign the object to (0-9 since 0.3d, 0-4 in previous versions). |
-| modelid        | The model to attach.                                                                 |
-| bone           | The bone to attach the object to.                                                    |
-| fOffsetX       | (optional) X axis offset for the object position.                                    |
-| fOffsetY       | (optional) Y axis offset for the object position.                                    |
-| fOffsetZ       | (optional) Z axis offset for the object position.                                    |
-| fRotX          | (optional) X axis rotation of the object.                                            |
-| fRotY          | (optional) Y axis rotation of the object.                                            |
-| fRotZ          | (optional) Z axis rotation of the object.                                            |
-| fScaleX        | (optional) X axis scale of the object.                                               |
-| fScaleY        | (optional) Y axis scale of the object.                                               |
-| fScaleZ        | (optional) Z axis scale of the object.                                               |
-| materialcolor1 | (optional) The first object color to set, as an integer or hex in ARGB color format. |
-| materialcolor2 | (optional) The second object color to set, as an integer or hex in ARGB color format |
+## Deskripcija
+
+Prikvači objekat na određenu kost igrača.
+
+| Ime            | Deskripcija                                                                              |
+| -------------- | ---------------------------------------------------------------------------------------- |
+| playerid       | ID igrača za prikvačiti objekat.                                                         |
+| index          | Index (slot) za dodijeliti objekat (0-9 od 0.3d, 0-4 u ranijim verzijama).               |
+| modelid        | Model kojeg želite koristiti.                                                            |
+| bone           | [Kost](../resources/boneid) za koju želite prikvačiti objekat.                           |
+| fOffsetX       | (neobavezno) Pomak osi X za položaj objekta.                                             |
+| fOffsetY       | (neobavezno) Pomak osi Y za položaj objekta.                                             |
+| fOffsetZ       | (neobavezno) Pomak osi Z za položaj objekta.                                             |
+| fRotX          | (neobavezno) Pomak osi X za rotaciju objekta.                                            |
+| fRotY          | (neobavezno) Pomak osi Y za rotaciju objekta.                                            |
+| fRotZ          | (neobavezno) Pomak osi Z za rotaciju objekta.                                            |
+| fScaleX        | (optional) Pomak osi X za veličinu objekta.                                              |
+| fScaleY        | (optional) Pomak osi Y za veličinu objekta.                                              |
+| fScaleZ        | (optional) Pomak osi Z za veličinu objekta.                                              |
+| materialcolor1 | (optional) Primarna boja za postaviti objektu, kao cijeli broj ili hex u ARGB formatu.   |
+| materialcolor2 | (optional) Sekundarna boja za postaviti objektu, kao cijeli broj ili hex u ARGB formatu. |
 
 ## Returns
 
-1 on success, 0 on failure.
+1 uspješno, 0 pri grešci.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerSpawn(playerid)
 {
-    SetPlayerAttachedObject(playerid, 3, 1609, 2); //Attach a turtle to the playerid's head, in slot 3
+    SetPlayerAttachedObject(playerid, 3, 1609, 2); // Prikvači kornjaču za playerid-evu glavu, in slou 3
 
-    // example of using colors on an object being attached to the player:
+    // Primjer korištenja boja na objektu koje je prikvačen za igrača:
     SetPlayerAttachedObject(playerid, 3, 19487, 2, 0.101, -0.0, 0.0, 5.50, 84.60, 83.7, 1.0, 1.0, 1.0, 0xFF00FF00);
-    // Attach a white hat to the head of the player and paint it green
+    // Prikvači bijeli šešir na glavu igrača i oboji ga u zeleno
     return 1;
 }
 ```
 
-## Notes
+## Zabilješke
 
 :::tip
 
-This function is separate from the CreateObject / CreatePlayerObject pools.
+Ova je funkcija odvojena od spremišta CreateObject / CreatePlayerObject.
 
 :::
 
 :::warning
 
-In version 0.3d and onwards, 10 objects can be attached to a single player (index 0-9). In earlier versions, the limit is 5 (index 0-4).
+U 0.3d verziji pa nadalje, 10 objekata se može prikvačiti za jednog igrača (index 0-9). U ranijim verzijama, limit je 5 (index 0-4).
 
 :::
 
-## Related Functions
+## Srodne Funkcije
 
-- [RemovePlayerAttachedObject](RemovePlayerAttachedObject): Remove an attached object from a player
-- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed): Check whether an object is attached to a player in a specified index
-- [EditAttachedObject](EditAttachedObject): Edit an attached object.
+- [RemovePlayerAttachedObject](RemovePlayerAttachedObject): Ukloni prikvačeni objekat sa igrača
+- [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed): Provjeri da li je objekat prikvačen za igrača u oređenom indexu.
+- [EditAttachedObject](EditAttachedObject): Uredi prikvačeni objekat.

@@ -1,33 +1,33 @@
 ---
 title: SetPlayerInterior
-description: Set a player's interior.
+description: Postavlja igraču enterijer
 tags: ["player"]
 ---
 
-## Description
+## Deskripcija
 
-Set a player's interior. A list of currently known interiors and their positions can be found here.
+Postavlja igraču enterijer. Lista trenutno poznatih enterijera i njihovih pozicija možete pronaći ovdje.
 
-| Name       | Description                                                          |
-| ---------- | -------------------------------------------------------------------- |
-| playerid   | The ID of the player to set the interior of.                         |
-| interiorid | The [interior ID](../resources/interiorids) to set the player in. |
+| Ime        | Deskripcija                                                               |
+| ---------- | ------------------------------------------------------------------------- |
+| playerid   | ID igrača za postaviti enterijer.                                         |
+| interiorid | [ID enterijera](../resources/interiorids) u kojeg treba postaviti igrača. |
 
 ## Returns
 
-1: The function executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute. This means the player is not connected.
+0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
-## Examples
+## Primjeri
 
 ```c
-// Set player to default interior (outside)
+// Postavi igraču zadani enterijer (napolju)
 SetPlayerInterior(playerid, 0);
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [GetPlayerInterior](GetPlayerInterior): Get the current interior of a player.
-- [LinkVehicleToInterior](LinkVehicleToInterior): Change the interior that a vehicle is seen in.
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Called when a player changes interior.
+- [GetPlayerInterior](GetPlayerInterior): Dobij trenutni enterijer igrača.
+- [LinkVehicleToInterior](LinkVehicleToInterior): Promijeni enterijer u kojem je vozilo vidljivo.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Pozvano kada igrač promijeni enterijer.

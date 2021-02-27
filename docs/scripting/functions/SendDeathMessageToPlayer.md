@@ -1,41 +1,45 @@
 ---
 title: SendDeathMessageToPlayer
-description: Adds a death to the 'killfeed' on the right-hand side of the screen for a single player.
+description: Dodaje smrt 'killfeedu' s desne strane ekrana za jednog igrača.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3z R2-2' />
+:::warning
 
-## Description
+Ova funkcija je dodana u SA-MP 0.3.z R2-2 i ne radi u nižim verzijama!
 
-Adds a death to the 'killfeed' on the right-hand side of the screen for a single player.
+:::
 
-| Name     | Description                                                                                                                 |
-| -------- | --------------------------------------------------------------------------------------------------------------------------- |
-| playerid | The ID of the player to send the death message to.                                                                          |
-| killer   | The ID of the killer (can be INVALID_PLAYER_ID).                                                                            |
-| killee   | The ID of the player that died.                                                                                             |
-| weapon   | The reason (not always a weapon) for the victim's death. Special icons can also be used (ICON_CONNECT and ICON_DISCONNECT). |
+## Deskripcija
+
+Dodaje smrt 'killfeedu' s desne strane ekrana za jednog igrača.
+
+| Ime      | Deskripcija                                                                                                           |
+| -------- | --------------------------------------------------------------------------------------------------------------------- |
+| playerid | ID igrača za poslati smrt killfeedu.                                                                                  |
+| killer   | ID ubice (može biti INVALID_PLAYER_ID).                                                                               |
+| killee   | ID igrača koji je umro.                                                                                               |
+| weapon   | Razlog (ne uvijek oružje) smrti žrtve. Specijalne se ikonice također mogu koristiti (ICON_CONNECT i ICON_DISCONNECT). |
 
 ## Returns
 
-1: The function was executed successfully.
+1: Funkcija uspješno izvršena.
 
-0: The function failed to execute.
+0: Funkcija neuspješno izvršena.
 
-## Examples
+## Primjeri
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    // Sends a death message to "playerid" shows that "killerid" killed "playerid" for "reason"
+    // Pošalji smrtnu poruku "playerid" prikazuje da je "killerid" ubio "playerid" zbog "reason"
     SendDeathMessageToPlayer(playerid, killerid, playerid, reason);
 
     return 1;
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
-- [SendDeathMessage](SendDeathMessage): Add a kill to the death list.
-- [OnPlayerDeath](../callbacks/OnPlayerDeath): Called when a player dies.
+- [SendDeathMessage](SendDeathMessage): Dodaj ubistvo na listu smrti.
+- [OnPlayerDeath](../callbacks/OnPlayerDeath): Pozvano kada igrač umre.
