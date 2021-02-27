@@ -1,27 +1,27 @@
 ---
 title: ShowPlayerMarkers
-description: Omogućava/onemogućava markere/oznake igrača (bljeskalice na radaru).
+description: Toggles player markers (blips on the radar).
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Omogućava/onemogućava markere/oznake igrača (bljeskalice na radaru). Mora se koristiti kada server počne (OnGameModeInit). Za ostala vremena, pogledaj SetPlayerMarkerForPlayer.
+Toggles player markers (blips on the radar). Must be used when the server starts (OnGameModeInit). For other times, see SetPlayerMarkerForPlayer.
 
-| Ime  | Deskripcija                                                                                                                                         |
-| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| mode | [Mode](#marker-modes) za koristiti za markere/oznake. Mogu se emitirati, što znači da su vidljivi samo igračima u blizini. Pogledajte donju tabelu. |
+| Name | Description                                                                                                                           |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| mode | The [mode](#marker-modes) to use for markers. They can be streamed, meaning they are only visible to nearby players. See table below. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    // Oznake igrača vidljive samo igračima u blizini
+    // Player markers only visible to nearby players
     ShowPlayerMarkers(PLAYER_MARKERS_MODE_STREAMED);
 }
 ```
@@ -34,17 +34,17 @@ public OnGameModeInit()
 | 1   | PLAYER_MARKERS_MODE_GLOBAL   |
 | 2   | PLAYER_MARKERS_MODE_STREAMED |
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Takođe je moguće postaviti boju igrača na boju koja ima potpunu prozirnost (bez alfa vrijednosti). To omogućava prikazivanje markera/oznaka po igraču.
+It is also possible to set a player's color to a color that has full transparency (no alpha value). This makes it possible to show markers on a per-player basis.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.
-- [LimitPlayerMarkerRadius](LimitPlayerMarkerRadius): Ograničite radijus markera/oznake igrača.
-- [ShowNameTags](ShowNameTags): Postavi nametagove uključeno ili isključeno.
-- [SetPlayerColor](SetPlayerColor): Postavi boju igrača.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Set a player's marker.
+- [LimitPlayerMarkerRadius](LimitPlayerMarkerRadius): Limit the player marker radius.
+- [ShowNameTags](ShowNameTags): Set nametags on or off.
+- [SetPlayerColor](SetPlayerColor): Set a player's color.

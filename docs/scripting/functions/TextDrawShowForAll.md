@@ -1,32 +1,32 @@
 ---
 title: TextDrawShowForAll
-description: Prikazuje textdraw svim igračima.
+description: Shows a textdraw for all players.
 tags: ["textdraw"]
 ---
 
-## Deskripcija
+## Description
 
-Prikazuje textdraw svim igračima.
+Shows a textdraw for all players.
 
-| Ime  | Deskripcija                                                     |
-| ---- | --------------------------------------------------------------- |
-| text | ID textdrawa za prikazati. Returnovan/vraćen od TextDrawCreate. |
+| Name | Description                                                 |
+| ---- | ----------------------------------------------------------- |
+| text | The ID of the textdraw to show. Returned by TextDrawCreate. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni textdraw ne postoji.
+0: The function failed to execute. This means the textdraw specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
-new Text: textId = TextDrawCreate(100.0, 100.0, "Zdravo!");
+new Text: textId = TextDrawCreate(100.0, 100.0, "Hello!");
 TextDrawShowForAll(textId);
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [TextDrawShowForPlayer](TextDrawShowForPlayer): Prikaži textdraw za određenog igrača.
-- [TextDrawHideForPlayer](TextDrawHideForPlayer): Sakrij textdraw za određenog igrača.
-- [TextDrawHideForAll](TextDrawHideForAll): Sakrij textdraw za sve igrače.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
+- [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.

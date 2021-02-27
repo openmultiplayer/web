@@ -1,24 +1,24 @@
 ---
 title: SpawnPlayer
-description: (Re)Spawnuje igrača.
+description: (Re)Spawns a player.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-(Re)Spawnuje igrača.
+(Re)Spawns a player.
 
-| Ime      | Deskripcija                          |
-| -------- | ------------------------------------ |
-| playerid | ID igrača za spawn-ovati (stvoriti). |
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | The ID of the player to spawn. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+0: The function failed to execute. This means the player is not connected.
 
-## Primjeri
+## Examples
 
 ```c
 if (strcmp(cmdtext, "/spawn", true) == 0)
@@ -28,16 +28,16 @@ if (strcmp(cmdtext, "/spawn", true) == 0)
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Ubija igrača ako je u vozilu, a zatim se spawnaju s bocom u ruci.
+Kills the player if they are in a vehicle and then they spawn with a bottle in their hand.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetSpawnInfo](SetSpawnInfo): Postavi postavke spawnovanja za igrača.
-- [AddPlayerClass](AddPlayerClass): Dodaj klasu.
-- [OnPlayerSpawn](../callbacks/OnPlayerSpawn): Pozvano kada se igrač stvori.
+- [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.
+- [AddPlayerClass](AddPlayerClass): Add a class.
+- [OnPlayerSpawn](../callbacks/OnPlayerSpawn): Called when a player spawns.

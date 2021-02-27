@@ -1,42 +1,38 @@
 ---
 title: StopAudioStreamForPlayer
-description: Zaustavlja trenutni audio tok za igrača.
+description: Stops the current audio stream for a player.
 tags: ["player"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3d' />
 
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
+## Description
 
-:::
+Stops the current audio stream for a player.
 
-## Deskripcija
-
-Zaustavlja trenutni audio tok za igrača.
-
-| Ime      | Deskripcija                                       |
+| Name     | Description                                       |
 | -------- | ------------------------------------------------- |
-| playerid | Igrač kojem želite zaustaviti trenutni audio tok. |
+| playerid | The player you want to stop the audio stream for. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
-    // Ako igrač napusti vozilo
+    // If the player exits a vehicle
     if (oldstate == PLAYER_STATE_DRIVER || oldstate == PLAYER_STATE_PASSENGER)
     {
-        StopAudioStreamForPlayer(playerid); // Zaustavi audio stream
+        StopAudioStreamForPlayer(playerid); // Stop the audio stream
     }
     return 1;
 }
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [PlayAudioStreamForPlayer](PlayAudioStreamForPlayer): Reprodukuje audio tok za igrača.
-- [PlayerPlaySound](PlayerPlaySound): Reprodukujte zvuk za igrača.
+- [PlayAudioStreamForPlayer](PlayAudioStreamForPlayer): Plays a audio stream for a player.
+- [PlayerPlaySound](PlayerPlaySound): Play a sound for a player.

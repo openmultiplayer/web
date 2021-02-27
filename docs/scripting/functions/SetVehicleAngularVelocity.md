@@ -1,39 +1,35 @@
 ---
 title: SetVehicleAngularVelocity
-description: Postavlja ugaonu brzinu X, Y i Z vozila.
+description: Sets the angular X, Y and Z velocity of a vehicle.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3b i ne radi u nižim verzijama!
-
-:::
+<VersionWarn version='SA-MP 0.3b' />
 
 :::info
 
-Ova funkcija je u _svjetskom_ prostoru a ne u _lokalnom_ prostoru. Ako želite izvršiti prilagodbe ugaone brzine lokalnog prostora, morate primijeniti matricu rotacije na temelju [quat rotacije vozila](GetVehicleRotationQuat).
+This function is in _world_ space not _local_ space. If you want to make local space angular velocity adjustments, you must apply a rotation matrix based on the [vehicle rotation quat](GetVehicleRotationQuat).
 
 :::
 
-## Deskripcija
+## Description
 
-Postavlja ugaonu brzinu X, Y i Z vozila.
+Sets the angular X, Y and Z velocity of a vehicle
 
-| Ime       | Deskripcija                      |
-| --------- | -------------------------------- |
-| vehicleid | ID vozila za postaviti brzinu.   |
-| Float:X   | Iznos brzine u ugaonom X smjeru. |
-| Float:Y   | Iznos brzine u ugaonom Y smjeru. |
-| Float:Z   | Iznos brzine u ugaonom Z smjeru. |
+| Name      | Description                                         |
+| --------- | --------------------------------------------------- |
+| vehicleid | The ID of the vehicle to set the velocity of.       |
+| Float:X   | The amount of velocity in the angular X direction.  |
+| Float:Y   | The amount of velocity in the angular Y direction . |
+| Float:Z   | The amount of velocity in the angular Z direction.  |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Vozilo ne postoji.
+0: The function failed to execute. The vehicle does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -49,15 +45,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Ova funkcija nema utjecaja na prazna vozila i ne utječe na vozove.
+This function has no effect on unoccupied vehicles and does not affect trains.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetVehicleVelocity](SetVehicleVelocity): Postavi brzinu vozila.
-- [GetVehicleVelocity](GetVehicleVelocity): Dobij brzinu vozila.
+- [SetVehicleVelocity](SetVehicleVelocity): Set a vehicle's velocity.
+- [GetVehicleVelocity](GetVehicleVelocity): Get a vehicle's velocity.

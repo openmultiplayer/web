@@ -1,30 +1,30 @@
 ---
 title: TextDrawSetString
-description: Mijenja tekst na textdrawu.
+description: Changes the text on a textdraw.
 tags: ["textdraw"]
 ---
 
-## Deskripcija
+## Description
 
-Mijenja tekst na textdrawu.
+Changes the text on a textdraw.
 
-| Ime      | Deskripcija              |
-| -------- | ------------------------ |
-| text     | textdraw za izmijeniti.  |
-| string[] | Novi string za textdraw. |
+| Name     | Description                     |
+| -------- | ------------------------------- |
+| text     | The TextDraw to change          |
+| string[] | The new string for the TextDraw |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(1.0, 5.6, "Cao, kako si?");
+    gMyTextdraw = TextDrawCreate(1.0, 5.6, "Hi, how are you?");
     return 1;
 }
 
@@ -35,37 +35,37 @@ public OnPlayerConnect(playerid)
         playerName[MAX_PLAYER_NAME];
 
     GetPlayerName(playerid, playerName, sizeof playerName);
-    format(message, sizeof(message), "Dobrodosao %s!", playerName);
+    format(message, sizeof(message), "Welcome %s!", playerName);
     TextDrawSetString(gMyTextdraw, message);
     TextDrawShowForPlayer(playerid, gMyTextdraw);
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Postoje ograničenja za dužinu textdraw stringova - pogledaj ovdje za više informacija.
+There are limits to the length of textdraw strings - see here for more info.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [TextDrawCreate](TextDrawCreate): Kreiraj textdraw.
-- [TextDrawDestroy](TextDrawDestroy): Uništi textdraw.
-- [TextDrawColor](TextDrawColor): Postavi boju teksta u textdrawu.
-- [TextDrawBoxColor](TextDrawBoxColor): Postavi boju boxa u textdrawu.
-- [TextDrawBackgroundColor](TextDrawBackgroundColor): Postavi boju pozadine textdrawa.
-- [TextDrawAlignment](TextDrawAlignment): Postavi poravnanje textdrawa.
-- [TextDrawFont](TextDrawFont): Postavi font textdrawa.
-- [TextDrawLetterSize](TextDrawLetterSize): Postavi veličinu znakova teksta u textdrawu.
-- [TextDrawTextSize](TextDrawTextSize): Postavi veličinu boxa u textdrawu.
-- [TextDrawSetOutline](TextDrawSetOutline): Odluči da li da tekst ima outline.
-- [TextDrawSetShadow](TextDrawSetShadow): Uključi/isključi sjene (shadows) na textdrawu.
-- [TextDrawSetProportional](TextDrawSetProportional): Razmjestite razmak između teksta u texstdrawu na proporcionalni omjer.
-- [TextDrawUseBox](TextDrawUseBox): Uključite ili isključite da li textdraw koristi box ili ne.
-- [TextDrawShowForPlayer](TextDrawShowForPlayer): Prikaži textdraw za određenog igrača.
-- [TextDrawHideForPlayer](TextDrawHideForPlayer): Sakrij textdraw za određenog igrača.
-- [TextDrawShowForAll](TextDrawShowForAll): Prikaži textdraw za sve igrače.
-- [TextDrawHideForAll](TextDrawHideForAll): Sakrij textdraw za sve igrače.
+- [TextDrawCreate](TextDrawCreate): Create a textdraw.
+- [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
+- [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
+- [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.
+- [TextDrawAlignment](TextDrawAlignment): Set the alignment of a textdraw.
+- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
+- [TextDrawLetterSize](TextDrawLetterSize): Set the letter size of the text in a textdraw.
+- [TextDrawTextSize](TextDrawTextSize): Set the size of a textdraw box.
+- [TextDrawSetOutline](TextDrawSetOutline): Choose whether the text has an outline.
+- [TextDrawSetShadow](TextDrawSetShadow): Toggle shadows on a textdraw.
+- [TextDrawSetProportional](TextDrawSetProportional): Scale the text spacing in a textdraw to a proportional ratio.
+- [TextDrawUseBox](TextDrawUseBox): Toggle if the textdraw has a box or not.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
+- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+- [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.

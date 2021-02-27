@@ -1,50 +1,50 @@
 ---
 title: ShowPlayerNameTagForPlayer
-description: Ova funkcija ti omogućava da omogućite/onemogućite iscrtavanje nametag-ova, healthbar-pva i armora igrača koji se prikazuju iznad njegove glave.
+description: This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Ova funkcija ti omogućava da omogućite/onemogućite iscrtavanje nametag-ova, healthbar-pva i armoa igrača koji se prikazuju iznad njegove glave. Za upotrebu slične funkcije poput ove na globalnom nivou, funkcija ShowNameTags.
+This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head. For use of a similar function like this on a global level, ShowNameTags function.
 
-| Ime          | Deskripcija                                       |
-| ------------ | ------------------------------------------------- |
-| playerid     | Igrač koji će vidjeti rezultate ove funkcije.     |
-| showplayerid | Player čiji će nametag biti skriven ili prikazan. |
-| show         | 1-prikaži nametag, 0-sakrij nametag.              |
+| Name         | Description                                      |
+| ------------ | ------------------------------------------------ |
+| playerid     | Player who will see the results of this function |
+| showplayerid | Player whose name tag will be shown or hidden    |
+| show         | 1-show name tag, 0-hide name tag                 |
 
 ## Returns
 
-## Važna Bilješka
+ImportantNote
 
-ShowNameTags mora biti postavljen na 1 da bi bilo moguće prikazati name tagove sa ShowPlayerNameTagForPlayer, to znači da u slučaju da bude efikasno moraš da izvršiš funkciju: ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ispred vremena (OnPlayerStreamIn je dobro mjesto).
+ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time(OnPlayerStreamIn is a good spot).
 
-## Primjeri
+## Examples
 
 ```c
-//igrač koji je napisao /nameoff neće biti u mogućnosti da vidi nametagove ostalih igrača.
+//The player who typed /nameoff will not be able to see any other players nametag.
 if (strcmp("/nameoff", cmdtext, true) == 0)
 {
     for (new i = 0; i != MAX_PLAYERS; -- i)
     {
         ShowPlayerNameTagForPlayer(playerid, i, false);
     }
-    GameTextForPlayer(playerid, "~W~Nametagovi ~R~ugaseni", 5000, 5);
+    GameTextForPlayer(playerid, "~W~Nametags ~R~off", 5000, 5);
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-ShowNameTags mora biti postavljen na 1 da bi bilo moguće prikazati name tagove sa ShowPlayerNameTagForPlayer, to znači da u slučaju da bude efikasno moraš da izvršiš funkciju: ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ispred vremena (OnPlayerStreamIn je dobro mjesto).
+ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time(OnPlayerStreamIn is a good spot).
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [ShowNameTags](ShowNameTags): Postavi nametagove uključeno ili isključeno.
-- [DisableNameTagLOS](DisableNameTagLOS): Onemogućite provjeru oznake imena.
-- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.
+- [ShowNameTags](ShowNameTags): Set nametags on or off.
+- [DisableNameTagLOS](DisableNameTagLOS): Disable nametag Line-Of-Sight checking.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Set a player's marker.

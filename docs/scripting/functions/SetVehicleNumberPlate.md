@@ -1,54 +1,50 @@
 ---
 title: SetVehicleNumberPlate
-description: Postavite registarsku tablicu vozila.
+description: Set a vehicle numberplate.
 tags: ["vehicle"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3c' />
 
-Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
+## Description
 
-:::
+Set a vehicle numberplate.
 
-## Deskripcija
-
-Postavite registarsku tablicu vozila.
-
-| Ime         | Deskripcija                                          |
-| ----------- | ---------------------------------------------------- |
-| vehicleid   | ID vozila za postaviti registarsku tablicu.          |
-| numberplate | Tekst koji će biti prikazan na registarskoj tablici. |
+| Name        | Description                                            |
+| ----------- | ------------------------------------------------------ |
+| vehicleid   | The ID of the vehicle to set the number plate of.      |
+| numberplate | The text that should be displayed on the number plate. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Vozilo ne postoji.
+0: The function failed to execute. The vehicle does not exist
 
-## Primjeri
+## Examples
 
 ```c
 new
-    vehicleid = CreateVehicle(542, 2074.73, 1089.89, 10.51, 0.0, -1, -1, -1);
+	vehicleid = CreateVehicle(542, 2074.73, 1089.89, 10.51, 0.0, -1, -1, -1);
 SetVehicleNumberPlate(vehicleid, "ABCD 123");
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Ova funkcija nema internu provjeru grešaka. Ne dodjeljujte prilagođene registarske tablice vozilima bez tablica (čamci, avioni, itd.) Jer će to rezultirati nekim nepotrebnim vremenom obrade na klijentu. Da bi promjene stupile na snagu, vozilo se mora ponovno mrijestiti ili reproducirati. Na svakoj tablici postoji ograničenje od 32 znaka (uključujući ugrađene boje). Dužina teksta koja se može vidjeti na pločici s brojevima je oko 9 do 10 znakova, a više znakova uzrokovat će razdvajanje teksta. Neki modeli vozila imaju unazad registarsku tablicu, npr. Boxville (498) (kao alternativu ovom vozilu možete koristiti model vozila ID 609, koji je duplicirani Boxville (zvan Boxburg), ali s redovnom tablicom). Ova funkcija radi samo u verzijama 0.2.1, 0.2.2, 0.2x i 0.3c (i novije).
+This function has no internal error checking. Do not assign custom number plates to vehicles without plates (boats, planes, etc) as this will result in some unneeded processing time on the client. The vehicle must be re-spawned or re-streamed for the changes to take effect. There's a limit of 32 characters on each number plate (including embedded colors). The text length that can be seen on the number plate is around 9 to 10 characters, more characters will cause the text to split. Some vehicle models has a backward number plate, e.g. Boxville (498) (as an alternative to this vehicle you can use vehicle model ID 609, which is a duplicated Boxville (aka Boxburg), but with a regular number plate). This function only works in versions 0.2.1, 0.2.2, 0.2x and 0.3c (and beyond).
 
 :::
 
 :::tip
 
-Na tekstu pločice možete koristiti ugrađivanje boja.
+You can use color embedding on the number plate text.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetVehicleToRespawn](SetVehicleToRespawn): Respawnuj vozilo.
-- [ChangeVehicleColor](ChangeVehicleColor): Postavi boju vozila.
-- [ChangeVehiclePaintjob](ChangeVehiclePaintjob): Promijeni paintjob na vozilu.
+- [SetVehicleToRespawn](SetVehicleToRespawn): Respawn a vehicle.
+- [ChangeVehicleColor](ChangeVehicleColor): Set the color of a vehicle.
+- [ChangeVehiclePaintjob](ChangeVehiclePaintjob): Change the paintjob on a vehicle.

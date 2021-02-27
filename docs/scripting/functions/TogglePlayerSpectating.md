@@ -1,25 +1,25 @@
 ---
 title: TogglePlayerSpectating
-description: Uključite ili isključite da li je igrač u režimu spectatora/gledatelja.
+description: Toggle whether a player is in spectator mode or not.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Uključite ili isključite da li je igrač u režimu spectatora/gledatelja. Dok je u spectator režimu igrač može gledati ostale igrače i vozila. Nakon korištenja ove funkcije ili PlayerSpectatePlayer ili PlayerSpectateVehicle mora biti korišten.
+Toggle whether a player is in spectator mode or not. While in spectator mode a player can spectate (watch) other players and vehicles. After using this function, either PlayerSpectatePlayer or PlayerSpectateVehicle needs to be used.
 
-| Ime      | Deskripcija                                           |
-| -------- | ----------------------------------------------------- |
-| playerid | ID koji bi trebao gledati                             |
-| toggle   | 1 da uključite spectate-anje/gledanje 0 da isključite |
+| Name     | Description                              |
+| -------- | ---------------------------------------- |
+| playerid | The ID of the player who should spectate |
+| toggle   | 1 to enable spectating and 0 to disable  |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Igrač ne postoji.
+0: The function failed to execute. The player does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
@@ -30,27 +30,27 @@ public OnPlayerDeath(playerid, killerid, reason)
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Kada je režim gledatelja onemogućen, automatski će se pozvati OnPlayerSpawn, ako želite vratiti stanje igrača u stanje prije gledanja, morat ćete to riješiti u OnPlayerSpawn. Takođe imajte na umu da taj igrač također može ići na odabir klase prije nego što je koristio F4 za vrijeme gledanja, igrač također MOŽE umrijeti u režimu spektakularnosti zbog različitih kvarova.
+When spectator mode is disabled, OnPlayerSpawn will automatically be called, if you wish to restore player to state before spectating, you will have to handle that in OnPlayerSpawn. Note also, that player can also go to class selection before if they used F4 during spectate, a player also CAN die in spectate mode due to various glitches.
 
 :::
 
 :::tip
 
-Kada je igrač u spectate načinu rada, njegov HUD je skriven, što ga čini korisnim za postavljanje igračeve kamere bez HUD-a. Također će se usmjeravati objekti u blizini kamere igrača, što ovo čini korisnim za interpolaciju kamera.
+When a player is in spectate mode their HUD is hidden, making it useful for setting a player's camera without the HUD. Also, objects near the player's camera will be streamed in, making this useful for interpolating cameras.
 
 :::
 
 :::warning
 
-Ako igrač nije učitan prije postavljanja statusa spectatora na 0, konekcija se može neočekivano prekinuti.
+If the player is not loaded in before setting the spectate status to false, the connection can be closed unexpectedly.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [PlayerSpectatePlayer](PlayerSpectatePlayer): Nadgledaj igrača.
-- [PlayerSpectateVehicle](PlayerSpectateVehicle): Nadgledaj vozilo.
+- [PlayerSpectatePlayer](PlayerSpectatePlayer): Spectate a player.
+- [PlayerSpectateVehicle](PlayerSpectateVehicle): Spectate a vehicle.

@@ -1,75 +1,75 @@
 ---
 title: TextDrawCreate
-description: Kreira textdraw.
+description: Creates a textdraw.
 tags: ["textdraw"]
 ---
 
-## Deskripcija
+## Description
 
-Kreira textdraw. Textdraw-ovi su, kako samo ime implicira, tekst (uglavnom - ovdje također mogu biti boxovi, sprite-ovi i pregledi modela (skinovi/vozila/oružja/objekti) koji je iscrtan na igračevom zaslonu. Pogledaj ovu stranicu za opsežne informacije o textdraw-ovima.
+Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See this page for extensive information about textdraws.
 
-| Ime     | Deskripcija                                         |
-| ------- | --------------------------------------------------- |
-| Float:x | X (left/right) kordinata to create the textdraw at. |
-| Float:y | Y (up/down) kordinata to create the textdraw at.    |
-| text[]  | The text that will appear in the textdraw.          |
+| Name    | Description                                              |
+| ------- | -------------------------------------------------------- |
+| Float:x | The X (left/right) coordinate to create the textdraw at. |
+| Float:y | The Y (up/down) coordinate to create the textdraw at.    |
+| text[]  | The text that will appear in the textdraw.               |
 
 ## Returns
 
-ID kreiranog textdraw-a. Textdraw IDs start at 0.
+The ID of the created textdraw. Textdraw IDs start at 0.
 
-## Primjeri
+## Examples
 
 ```c
-// ova varijabla je korištena za pohraniti ID textdrawa
-// kako bismo ga mogli koristiti kroz skriptu
+// This variable is used to store the id of the textdraw
+// so that we can use it throught the script
 new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    // Ova linija nam korisit kako bismo kreirali textdraw
-    // Zabilješka: Ovo kreira textdraw bez ikakvog formatiranja.
-    gMyTextdraw = TextDrawCreate(240.0,580.0,"Dobrodosli na moj SA-MP server");
+    // This line is used to create the textdraw.
+    // Note: This creates a textdraw without any formatting.
+    gMyTextdraw = TextDrawCreate(240.0,580.0,"Welcome to my SA-MP server");
     return 1;
 }
 
 public OnPlayerConnect(playerid)
 {
-    //Ovo je korišteno da prikaže textdraw igraču kada se konektuje.
+    //This is used to show the player the textdraw when they connect.
     TextDrawShowForPlayer(playerid, gMyTextdraw);
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-X, Y kordinata je gornja lijeva kordinata za područje textdrawa na osnovu 640x448 "platna" (bez obzira na razlučivost zaslona). Ako planirate koristiti TextDrawAlignment s poravnanjem 3 (desno), kordinata x, Y je gornja desna kordinata za crtanje teksta. Ova funkcija samo KREIRA izvlačenje teksta, za prikaz morate koristiti TextDrawShowForPlayer ili TextDrawShowForAll. Preporučuje se upotreba CIJELIH brojeva umjesto decimalnih mjesta prilikom kreiranja crteža teksta kako bi se osigurao dizajn prilagođen rezoluciji.
+The x,y coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution). If you plan on using TextDrawAlignment with alignment 3 (right), the x,y coordinate is the top right coordinate for the text draw. This function merely CREATES the textdraw, you must use TextDrawShowForPlayer or TextDrawShowForAll to show it. It is recommended to use WHOLE numbers instead of decimal positions when creating textdraws to ensure resolution friendly design.
 
 :::
 
 :::warning
 
-Kodovi preslikavanja tipki na tipkovnici (kao npr ~k~~VEHICLE_ENTER_EXIT~ ne rade preko 255-og karaktera.
+Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~ don't work beyond 255th character.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [TextDrawDestroy](TextDrawDestroy): Uništi textdraw.
-- [TextDrawColor](TextDrawColor): Postavi boju teksta u textdrawu.
-- [TextDrawBoxColor](TextDrawBoxColor): Postavi boju boxa u textdrawu.
-- [TextDrawBackgroundColor](TextDrawBackgroundColor): Postavi boju pozadine textdrawa.
-- [TextDrawAlignment](TextDrawAlignment): Postavi poravnanje textdrawa.
-- [TextDrawFont](TextDrawFont): Postavi font textdrawa.
-- [TextDrawLetterSize](TextDrawLetterSize): Postavi veličinu znakova teksta u textdrawu.
-- [TextDrawTextSize](TextDrawTextSize): Postavi veličinu boxa u textdrawu.
-- [TextDrawSetOutline](TextDrawSetOutline): Odluči da li da tekst ima outline.
-- [TextDrawSetShadow](TextDrawSetShadow): Uključi/isključi sjene (shadows) na textdrawu.
-- [TextDrawSetProportional](TextDrawSetProportional): Razmjestite razmak između teksta u texstdrawu na proporcionalni omjer.
-- [TextDrawUseBox](TextDrawUseBox): Uključite ili isključite da li textdraw koristi box ili ne.
-- [TextDrawSetString](TextDrawSetString): Postavi tekst u već postojećem textdrawu.
-- [TextDrawShowForPlayer](TextDrawShowForPlayer): Prikaži textdraw za određenog igrača.
-- [TextDrawHideForPlayer](TextDrawHideForPlayer): Sakrij textdraw za određenog igrača.
-- [TextDrawShowForAll](TextDrawShowForAll): Prikaži textdraw za sve igrače.
-- [TextDrawHideForAll](TextDrawHideForAll): Sakrij textdraw za sve igrače.
+- [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
+- [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
+- [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.
+- [TextDrawAlignment](TextDrawAlignment): Set the alignment of a textdraw.
+- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
+- [TextDrawLetterSize](TextDrawLetterSize): Set the letter size of the text in a textdraw.
+- [TextDrawTextSize](TextDrawTextSize): Set the size of a textdraw box.
+- [TextDrawSetOutline](TextDrawSetOutline): Choose whether the text has an outline.
+- [TextDrawSetShadow](TextDrawSetShadow): Toggle shadows on a textdraw.
+- [TextDrawSetProportional](TextDrawSetProportional): Scale the text spacing in a textdraw to a proportional ratio.
+- [TextDrawUseBox](TextDrawUseBox): Toggle if the textdraw has a box or not.
+- [TextDrawSetString](TextDrawSetString): Set the text in an existing textdraw.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
+- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+- [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.

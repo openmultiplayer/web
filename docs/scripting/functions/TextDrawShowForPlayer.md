@@ -1,44 +1,44 @@
 ---
 title: TextDrawShowForPlayer
-description: Prikazuje textdraw za određenog igrača.
+description: Shows a textdraw for a specific player.
 tags: ["player", "textdraw"]
 ---
 
-## Deskripcija
+## Description
 
-Prikazuje textdraw za određenog igrača.
+Shows a textdraw for a specific player.
 
-| Ime      | Deskripcija                                                     |
-| -------- | --------------------------------------------------------------- |
-| playerid | ID igrača za prikazati textdraw.                                |
-| text     | ID textdrawa za prikazati. Returnovan/vraćen od TextDrawCreate. |
+| Name     | Description                                                 |
+| -------- | ----------------------------------------------------------- |
+| playerid | The ID of the player to show the textdraw for.              |
+| text     | The ID of the textdraw to show. Returned by TextDrawCreate. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač i/ili textdraw ne postoji.
+0: The function failed to execute. This means either the player and/or textdraw specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerConnect(playerid)
 {
-    new Text: textId = TextDrawCreate(100.0, 100.0, "Dobrodosao!");
+    new Text: textId = TextDrawCreate(100.0, 100.0, "Welcome!");
     TextDrawShowForPlayer(playerid, textId);
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Ako će samo jedan igrač vidjeti textdraw, bilo bi pametno da koristite player-textdraw-ove. Ovo je također koristno za textdraw-ove koji moraju da prikažu informacije koje su posebne za svakog igrača posebno.
+If only a single player will see a textdraw, it might be wise to use player-textdraws instead. This is also useful for textdraws that need to show information specific for an individual player.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [TextDrawHideForPlayer](TextDrawHideForPlayer): Sakrij textdraw za određenog igrača.
-- [TextDrawShowForAll](TextDrawShowForAll): Prikaži textdraw za sve igrače.
-- [TextDrawHideForAll](TextDrawHideForAll): Sakrij textdraw za sve igrače.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
+- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+- [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.

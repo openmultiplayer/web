@@ -1,30 +1,30 @@
 ---
 title: SetVehicleVirtualWorld
-description: Postavi virtualni svijet ('virtual world') vozila.
+description: Sets the 'virtual world' of a vehicle.
 tags: ["vehicle"]
 ---
 
-## Deskripcija
+## Description
 
-Postavi virtualni svijet ('virtual world') vozila. Igrači će moći vidjeti samo ona vozila koja su u njihovom virtualnom svijetu.
+Sets the 'virtual world' of a vehicle. Players will only be able to see vehicles in their own virtual world.
 
-| Ime       | Deskripcija                                |
-| --------- | ------------------------------------------ |
-| vehicleid | ID vozila za postaviti virtualni svijet.   |
-| worldid   | ID virtualnog svijeta za postaviti vozilu. |
+| Name      | Description                                        |
+| --------- | -------------------------------------------------- |
+| vehicleid | The ID of vehicle to set the virtual world of.     |
+| worldid   | The ID of the virtual world to put the vehicle in. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 SetVehicleVirtualWorld(GetPlayerVehicleID(playerid), 10);
 SetPlayerVirtualWorld(playerid, 10);
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetVehicleVirtualWorld](GetVehicleVirtualWorld): Provjerite u kojem je virtualnom svijetu vozilo.
-- [SetPlayerVirtualWorld](SetPlayerVirtualWorld): Postavite virtualni svijet igrača.
+- [GetVehicleVirtualWorld](GetVehicleVirtualWorld): Check what virtual world a vehicle is in.
+- [SetPlayerVirtualWorld](SetPlayerVirtualWorld): Set the virtual world of a player.

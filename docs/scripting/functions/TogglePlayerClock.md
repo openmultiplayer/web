@@ -1,44 +1,44 @@
 ---
 title: TogglePlayerClock
-description: Uključite sat u igri (gornji desni kut) za određenog igrača.
+description: Toggle the in-game clock (top-right corner) for a specific player.
 tags: ["player"]
 ---
 
-## Deskripcija
+## Description
 
-Uključite sat u igri (gornji desni kut) za određenog igrača. Kada je ovo omogućeno, vrijeme će napredovati 1 minutu u sekundi. Vrijeme će se također interpolirati (polako mijenjati tokom vremena) kada se postavi pomoću SetWeather / SetPlayerWeather.
+Toggle the in-game clock (top-right corner) for a specific player. When this is enabled, time will progress at 1 minute per second. Weather will also interpolate (slowly change over time) when set using SetWeather/SetPlayerWeather.
 
-| Ime      | Deskripcija                                                         |
-| -------- | ------------------------------------------------------------------- |
-| playerid | Igrač čiji sat želite omogućiti / onemogućiti                       |
-| toggle   | 1 da ga prikažete 0 da ga sakrijete. Skriven po zadanim postavkama. |
+| Name     | Description                                       |
+| -------- | ------------------------------------------------- |
+| playerid | The player whose clock you want to enable/disable |
+| toggle   | 1 to show and 0 to hide. Hidden by default.       |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. The specified player does not exist.
+0: The function failed to execute. The specified player does not exist.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerConnect(playerid)
 {
-    TogglePlayerClock(playerid, 1); // Prikaži sat
+    TogglePlayerClock(playerid, 1); // Show the clock
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Vrijeme će automatski napredovati za 6 sati kada igrač umre.
+Time will automatically advance 6 hours when the player dies.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerTime](GetPlayerTime): Dobij vrijeme igrača.
-- [SetPlayerTime](SetPlayerTime): Postavi igraču vrijeme.
-- [SetWorldTime](SetWorldTime): Postavi globalno vrijeme servera.
+- [GetPlayerTime](GetPlayerTime): Get the time of a player.
+- [SetPlayerTime](SetPlayerTime): Set a player's time.
+- [SetWorldTime](SetWorldTime): Set the global server time.

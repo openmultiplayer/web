@@ -1,40 +1,36 @@
 ---
 title: strlen
-description: Dobij dužinu stringa.
+description: Get the length of a string.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+Get the length of a string.
 
-## Deskripcija
-
-Dobij dužinu stringa.
-
-| Ime            | Deskripcija              |
-| -------------- | ------------------------ |
-| const string[] | String za dobiti dužinu. |
+| Name           | Description                      |
+| -------------- | -------------------------------- |
+| const string[] | The string to get the length of. |
 
 ## Returns
 
-Dužina stringa kao cijeli broj.
+The length of the string as an integer.
 
-## Primjeri
+## Examples
 
 ```c
-new stringLength = strlen("Ovo je primjer stringa."); // stringLength je sata postavljenja na 24
+new stringLength = strlen("This is an example string."); // stringLength is now set to 26
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
-- [strfind](strfind): Pretraži string u drugom stringu.
-- [strins](../function/strins): Unesi tekst u string.
-- [strmid](strmid): Izdvoji dio stringa u drugi string.
-- [strpack](strpack): Upakuj string u odredišni string.
-- [strval](strval): Pretvori string u cijeli broj.
-- [strcat](strcat): Spojite dva stringa u odredišnu referencu.
-- [strdel](strdel): Obriši dio stringa.
+- [strcmp](strcmp): Compare two strings to check if they are the same.
+- [strfind](strfind): Search for a string in another string.
+- [strins](../function/strins): Insert text into a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.
+- [strdel](strdel): Delete part of a string.

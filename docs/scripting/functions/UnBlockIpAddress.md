@@ -1,28 +1,24 @@
 ---
 title: UnBlockIpAddress
-description: Deblokirajte IP adresu koja je prethodno bila blokirana pomoću BlockIpAddress.
+description: Unblock an IP address that was previously blocked using BlockIpAddress.
 tags: []
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3z R2-2' />
 
-Ova funkcija je dodana u SA-MP 0.3.z R2-2 i ne radi u nižim verzijama!
+## Description
 
-:::
+Unblock an IP address that was previously blocked using BlockIpAddress.
 
-## Deskripcija
-
-Deblokirajte IP adresu koja je prethodno bila blokirana pomoću BlockIpAddress.
-
-| Ime        | Deskripcija                |
+| Name       | Description                |
 | ---------- | -------------------------- |
-| ip_address | IP addresa za deblokirati. |
+| ip_address | The IP address to unblock. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnGameModeInit()
@@ -32,7 +28,7 @@ public OnGameModeInit()
 }
 ```
 
-## Srodne Funkcije
+## Related Functions
 
 - [BlockIpAddress](BlockIpAddress): Block an IP address from connecting to the server for a set amount of time.
-- [OnIncomingConnection](../callbacks/OnIncomingConnection): Pozvano kada igrač pokušava da se konektuje na server.
+- [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.

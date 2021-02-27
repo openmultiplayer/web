@@ -1,68 +1,68 @@
 ---
 title: TextDrawTextSize
-description: Promijeni veličinu textdrawa (veličinu boxa ako je TextDrawUseBox omogućen i/ili klikljivo područje za koristiti sa TextDrawSetSelectable).
+description: Change the size of a textdraw (box if TextDrawUseBox is enabled and/or clickable area for use with TextDrawSetSelectable).
 tags: ["textdraw"]
 ---
 
-## Deskripcija
+## Description
 
-Promijeni veličinu textdrawa (veličinu boxa ako je TextDrawUseBox omogućen i/ili klikljivo područje za koristiti sa TextDrawSetSelectable).
+Change the size of a textdraw (box if TextDrawUseBox is enabled and/or clickable area for use with TextDrawSetSelectable).
 
-| Ime     | Deskripcija                                                                         |
-| ------- | ----------------------------------------------------------------------------------- |
-| text    | TextDraw za promijeniti veličinu.                                                   |
-| Float:x | Veličina na X osi (lijevo/desno) slijedeći istu mrežu 640x480 kao i TextDrawCreate. |
-| Float:y | Veličina na Y osi (gore/dole) slijedeći istu mrežu 640x480 kao i TextDrawCreate.    |
+| Name    | Description                                                                            |
+| ------- | -------------------------------------------------------------------------------------- |
+| text    | The TextDraw to set the size of.                                                       |
+| Float:x | The size on the X axis (left/right) following the same 640x480 grid as TextDrawCreate. |
+| Float:y | The size on the Y axis (up/down) following the same 640x480 grid as TextDrawCreate.    |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(100.0, 33.0,"Primjer Textdrawa");
+    gMyTextdraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
     TextDrawTextSize(gMyTextdraw, 2.0, 3.6);
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-X i y imaju različita značenja s različitim vrijednostima TextDrawAlignment: 1 (lijevo): krajnji su desni ugao boxa, apsolutna kordinatama. 2 (sredina): trebaju se okrenuti (prebaciti dva), a X vrijednost je ukupna širina boxa. 3 (desno): x i y su kordinate krajnjeg lijevog ugla boxa.
+The x and y have different meanings with different TextDrawAlignment values: 1 (left): they are the right-most corner of the box, absolute coordinates. 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box. 3 (right): the x and y are the coordinates of the left-most corner of the box
 
-Upotrebom tipa fonta 4 (sprite) i 5 (pregled modela) pretvara X i Y ove funkcije iz kordinata ugla u WIDTH i HEIGHT (offseti). Okvir TextDraw započinje 10.0 jedinica gore i 5.0 lijevo kao ishodište (TextDrawCreate kordinata). Ova funkcija definira područje na koje je moguće kliknuti za upotrebu s TextDrawSetSelectable, bilo da je box prikazan ili ne.
+Using font type 4 (sprite) and 5 (model preview) converts X and Y of this function from corner coordinates to WIDTH and HEIGHT (offsets). The TextDraw box starts 10.0 units up and 5.0 to the left as the origin (TextDrawCreate coordinate). This function defines the clickable area for use with TextDrawSetSelectable, whether a box is shown or not.
 
 :::
 
 :::tip
 
-Ako želite promijeniti veličinu teksta textdrawa koji je već prikazan, ne morate ga ponovno kreirati. Prosto koristite TextDrawShowForPlayer/TextDrawShowForAll nakon uređivanja i promjena će biti vidljiva.
+If you want to change the text size of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [TextDrawCreate](TextDrawCreate): Kreiraj textdraw.
-- [TextDrawDestroy](TextDrawDestroy): Uništi textdraw.
-- [TextDrawColor](TextDrawColor): Postavi boju teksta u textdrawu.
-- [TextDrawBoxColor](TextDrawBoxColor): Postavi boju boxa u textdrawu.
-- [TextDrawBackgroundColor](TextDrawBackgroundColor): Postavi boju pozadine textdrawa.
-- [TextDrawAlignment](TextDrawAlignment): Postavi poravnanje textdrawa.
-- [TextDrawFont](TextDrawFont): Postavi font textdrawa.
-- [TextDrawLetterSize](TextDrawLetterSize): Postavi veličinu znakova teksta u textdrawu.
-- [TextDrawSetOutline](TextDrawSetOutline): Odluči da li da tekst ima outline.
-- [TextDrawSetShadow](TextDrawSetShadow): Uključi/isključi sjene (shadows) na textdrawu.
-- [TextDrawSetProportional](TextDrawSetProportional): Razmjestite razmak između teksta u texstdrawu na proporcionalni omjer.
-- [TextDrawUseBox](TextDrawUseBox): Uključite ili isključite da li textdraw koristi box ili ne.
-- [TextDrawSetString](TextDrawSetString): Postavi tekst u već postojećem textdrawu.
-- [TextDrawShowForPlayer](TextDrawShowForPlayer): Prikaži textdraw za određenog igrača.
-- [TextDrawHideForPlayer](TextDrawHideForPlayer): Sakrij textdraw za određenog igrača.
-- [TextDrawShowForAll](TextDrawShowForAll): Prikaži textdraw za sve igrače.
-- [TextDrawHideForAll](TextDrawHideForAll): Sakrij textdraw za sve igrače.
+- [TextDrawCreate](TextDrawCreate): Create a textdraw.
+- [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
+- [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
+- [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.
+- [TextDrawAlignment](TextDrawAlignment): Set the alignment of a textdraw.
+- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
+- [TextDrawLetterSize](TextDrawLetterSize): Set the letter size of the text in a textdraw.
+- [TextDrawSetOutline](TextDrawSetOutline): Choose whether the text has an outline.
+- [TextDrawSetShadow](TextDrawSetShadow): Toggle shadows on a textdraw.
+- [TextDrawSetProportional](TextDrawSetProportional): Scale the text spacing in a textdraw to a proportional ratio.
+- [TextDrawUseBox](TextDrawUseBox): Toggle if the textdraw has a box or not.
+- [TextDrawSetString](TextDrawSetString): Set the text in an existing textdraw.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
+- [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
+- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+- [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.

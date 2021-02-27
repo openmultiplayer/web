@@ -1,47 +1,43 @@
 ---
 title: strunpack
-description: Ovom se funkcijom može raspakirati string.
+description: This function can be used to unpack a string.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+This function can be used to unpack a string.
 
-## Deskripcija
-
-Ovom se funkcijom može raspakirati string.
-
-| Ime                     | Deskripcija                                                                 |
+| Name                    | Description                                                                 |
 | ----------------------- | --------------------------------------------------------------------------- |
-| dest[]                  | Odredišni string za spremanje nepakiranog stringa, proslijeđeno referencom. |
-| const source[]          | Izvor, originalno upakovani string.                                         |
-| maxlength=sizeof string | Maksimalna veličina za unijeti.                                             |
+| dest[]                  | The destination string to save the unpacked string in, passed by reference. |
+| const source[]          | The source, original packed string.                                         |
+| maxlength=sizeof string | The maximum size to insert.                                                 |
 
 ## Returns
 
-Broj upakovanih karaktera.
+The number of characters packed.
 
-## Primjeri
+## Examples
 
 ```c
 new string[17];
-new pstring[17 char] = !"Cao, kako si?";
+new pstring[17 char] = !"Hi, how are you?";
 strunpack(string, pstring);
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [ispacked](ispacked): Provjeri da li je dati string upakovan.
-- [strpack](strpack): Ova funkcija se može koristiti da upakujete string.
-- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
-- [strfind](strfind): Pretraži string u drugom stringu.
-- [strins](../function/strins): Unesi tekst u string.
-- [strlen](../function/strlen): Dobij dužinu stringa.
-- [strmid](strmid): Izdvoji dio stringa u drugi string.
-- [strpack](strpack): Upakuj string u odredišni string.
-- [strval](strval): Pretvori string u cijeli broj.
-- [strcat](strcat): Spojite dva stringa u odredišnu referencu.
-- [strdel](strdel): Obriši dio stringa.
+- [ispacked](ispacked): Check if the given string is packed.
+- [strpack](strpack): This function can be used to pack a string.
+- [strcmp](strcmp): Compare two strings to check if they are the same.
+- [strfind](strfind): Search for a string in another string.
+- [strins](../function/strins): Insert text into a string.
+- [strlen](../function/strlen): Get the length of a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.
+- [strdel](strdel): Delete part of a string.

@@ -1,29 +1,25 @@
 ---
 title: TextDrawSetSelectable
-description: Postavlja da li se textdraw može selektovati (kliknuti) ili ne.
+description: Sets whether a textdraw can be selected (clicked on) or not.
 tags: ["textdraw"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3e' />
 
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
+## Description
 
-:::
+Sets whether a textdraw can be selected (clicked on) or not
 
-## Deskripcija
-
-Postavlja da li se textdraw može selektovati (kliknuti) ili ne.
-
-| Ime  | Deskripcija                                          |
-| ---- | ---------------------------------------------------- |
-| text | ID textdrawa za postaviti da li se može selektovati. |
-| set  | 1 može se selektovati, ili 0 da se ne može.          |
+| Name | Description                                              |
+| ---- | -------------------------------------------------------- |
+| text | The ID of the textdraw to make selectable.               |
+| set  | 1 to make it selectable, or 0 to make it not selectable. |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -31,29 +27,29 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/selectd", true))
     {
         for(new i = 0; i < MAX_TEXT_DRAWS; i++) TextDrawSetSelectable(Text:i, 1);
-        SendClientMessage(playerid, 0xFFFFFFAA, "SERVER: Svi textdraw-ovi se sada mogu selektovati!");
+        SendClientMessage(playerid, 0xFFFFFFAA, "SERVER: All textdraws can be selected now!");
         return 1;
     }
     return 0;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Koristi TextDrawTextSize da definirate klikljivo područje.
+Use TextDrawTextSize to define the clickable area.
 
 :::
 
 :::warning
 
-TextDrawSetSelectable se mora koristiti PRIJE nego je textdraw prikazan igračima kako bi bio klikljiv (selektabilan).
+TextDrawSetSelectable must be used BEFORE the textdraw is shown to players for it to be selectable.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SelectTextDraw](SelectTextDraw): Omogućava miš kako bi igrač mogao da selektuje textdraw.
-- [CancelSelectTextDraw](CancelSelectTextDraw): Prekida selekciju textdrawa sa mišem.
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Pozvano kada igrač klikne na textdraw.
+- [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
+- [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

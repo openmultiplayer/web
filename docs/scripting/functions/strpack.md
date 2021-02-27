@@ -1,43 +1,39 @@
 ---
 title: strpack
-description: Upakuj string.
+description: Pack a string.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+Pack a string. Packed strings use 75% less memory.
 
-## Deskripcija
-
-Upakuj string. Upakovani stringovi koriste 75% manje memorije.
-
-| Ime                     | Deskripcija                                                             |
-| ----------------------- | ----------------------------------------------------------------------- |
-| dest[]                  | Odredišni string za sačuvati upakovani string, proslijeđeno referencom. |
-| const source[]          | Izvor, originalni string.                                               |
-| maxlength=sizeof string | Maksimalna veličina za unijeti.                                         |
+| Name                    | Description                                                               |
+| ----------------------- | ------------------------------------------------------------------------- |
+| dest[]                  | The destination string to save the packed string in, passed by reference. |
+| const source[]          | The source, original string.                                              |
+| maxlength=sizeof string | The maximum size to insert.                                               |
 
 ## Returns
 
-Broj upakovanih karaktera.
+The number of characters packed.
 
-## Primjeri
+## Examples
 
 ```c
 new string[32 char];
-strpack(string, "Cao, kako si?");
+strpack(string, "Hi, how are you?");
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
-- [strfind](strfind): Pretraži string u drugom stringu.
-- [strins](../function/strins): Unesi tekst u string.
-- [strlen](../function/strlen): Dobij dužinu stringa.
-- [strmid](strmid): Izdvoji dio stringa u drugi string.
-- [strval](strval): Pretvori string u cijeli broj.
-- [strcat](strcat): Spojite dva stringa u odredišnu referencu.
-- [strdel](strdel): Obriši dio stringa.
+- [strcmp](strcmp): Compare two strings to check if they are the same.
+- [strfind](strfind): Search for a string in another string.
+- [strins](../function/strins): Insert text into a string.
+- [strlen](../function/strlen): Get the length of a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.
+- [strdel](strdel): Delete part of a string.

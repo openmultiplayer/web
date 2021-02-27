@@ -1,43 +1,39 @@
 ---
 title: strdel
-description: Obriši dio stringa.
+description: Delete part of a string.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+Delete part of a string.
 
-## Deskripcija
-
-Obriši dio stringa.
-
-| Ime      | Deskripcija                                  |
-| -------- | -------------------------------------------- |
-| string[] | Stringa za izbrisati njegov dio.             |
-| start    | Pozicija prvog karaktera za izbrisati.       |
-| end      | Pozicija posljednjeg karaktera za izbrisati. |
+| Name     | Description                                    |
+| -------- | ---------------------------------------------- |
+| string[] | The string to delete part of.                  |
+| start    | The position of the first character to delete. |
+| end      | The position of the last character to delete.  |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
-new string[42] = "We will delete everything apart from this"; // izbrisati ćemo sve osim 'this'
-strdel(string, 0, 37); // string je sada "this"
+new string[42] = "We will delete everything apart from this";
+strdel(string, 0, 37); // string is now "this"
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
-- [strfind](strfind): Pretraži string u drugom stringu.
-- [strins](strins): Unesi tekst u string.
-- [strlen](strlen): Dobij dužinu stringa.
-- [strmid](strmid): Izdvoji dio stringa u drugi string.
-- [strpack](strpack): Upakuj string u odredišni string.
-- [strval](strval): Pretvori string u cijeli broj.
-- [strcat](strcat): Spojite dva stringa u odredišnu referencu.
+- [strcmp](strcmp): Compare two strings to check if they are the same.
+- [strfind](strfind): Search for a string in another string.
+- [strins](strins): Insert text into a string.
+- [strlen](strlen): Get the length of a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.

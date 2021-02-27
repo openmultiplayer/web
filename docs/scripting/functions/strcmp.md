@@ -1,69 +1,65 @@
 ---
 title: strcmp
-description: Upoređuje dva stringa kako pi vidjelo da li su isti.
+description: Compares two strings to see if they are the same.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+Compares two strings to see if they are the same.
 
-## Deskripcija
-
-Upoređuje dva stringa kako pi vidjelo da li su isti
-
-| Ime                   | Deskripcija                                                                                                                             |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| string1               | Prvi string za uporediti.                                                                                                               |
-| string2               | Drugi string za uporediti.                                                                                                              |
-| ignorecase (optional) | Kada je postavljeno na 'true', velika slova nemaju veze - HeLLo je isto kao Hello. Kada je postavljeno na 'false', oni nisu isti.       |
-| length (optional)     | Kada se postavi ova dužina, uspoređivat će se prvih x znakova - izvođenje "Hello" i "Hell No" s dužinom od 4 reći će da je to isti niz. |
+| Name                  | Description                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| string1               | The first string to compare.                                                                                                                |
+| string2               | The second string to compare.                                                                                                               |
+| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same.                                   |
+| length (optional)     | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
 
 ## Returns
 
-0 ako se stringovi podudaraju na zadanoj dužini; 1 ili -1 ako se neki znak ne podudara: string1 [i] - string2 [i] ('i' predstavlja indeks znakova počevši od 0); razlika u broju znakova ako jedan niz odgovara samo dijelu drugog stringa.
+0 if strings match each other on given length;1 o r -1 if some character do not match: string1[i] - string2[i] ('i' represents character index starting from 0);difference in number of characters if one string matches only part of another string.
 
-## Primjeri
+## Examples
 
 ```c
 new string1[] = "Hello World";
 new string2[] = "Hello World";
 
-// Provjeri ako su stringovi isti
+// Check if the strings are the same
 if (!strcmp(string1, string2))
 
 new string3[] = "Hell";
 
-// Provjeri ako se prva 4 karaktera podudaraju
+// Check if the first 4 characters match
 if (!strcmp(string2, string3, false, 4))
 
-// Provijerite ima li null nizova sa isnull()
+// Check for null strings with isnull()
 if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
-// Definicija za isnull():
+// Definition for isnull():
 #if !defined isnull
     #define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
 #endif
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Ova funkcija vraća 0 ako je bilo koji niz prazan. Provjerite ima li null nizova pomoću isnull (). Ako uspoređujete nizove iz tekstualne datoteke, trebali biste uzeti u obzir posebne znakove 'carriage return' i 'new line' (\r \n), kada su uključeni, kada koristite fread.
+This function returns 0 if either string is empty. Check for null strings with isnull(). If you compare strings from a text file, you should take in to account the 'carriage return' and 'new line' special characters (\r \n), as they are included, when using fread.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [strfind](strfind): Pretraži string u drugom stringu.
-- [strdel](strdel): Obriši dio stringa.
-- [strins](../function/strins): Unesi tekst u string.
-- [strlen](../function/strlen): Dobij dužinu stringa.
-- [strmid](strmid): Izdvoji dio stringa u drugi string.
-- [strpack](strpack): Upakuj string u odredišni string.
-- [strval](strval): Pretvori string u cijeli broj.
-- [strcat](strcat): Spojite dva stringa u odredišnu referencu.
+- [strfind](strfind): Search for a string in another string.
+- [strdel](strdel): Delete part of a string.
+- [strins](../function/strins): Insert text into a string.
+- [strlen](../function/strlen): Get the length of a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.
 - http://www.compuphase.com/pawn/String_Manipulation.pdf

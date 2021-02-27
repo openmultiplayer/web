@@ -1,33 +1,29 @@
 ---
 title: SetVehicleParamsCarDoors
-description: Dozvoljava ti da otvoriš i zatvoriš vrata vozila.
+description: Allows you to open and close the doors of a vehicle.
 tags: ["vehicle"]
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3.7' />
 
-Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
+## Description
 
-:::
+Allows you to open and close the doors of a vehicle.
 
-## Deskripcija
-
-Dozvoljava ti da otvoriš i zatvoriš vrata vozila.
-
-| Ime       | Deskripcija                                                                   |
-| --------- | ----------------------------------------------------------------------------- |
-| vehicleid | ID vozila za postaviti stanje vrata.                                          |
-| driver    | Stanje vozačevih vrata. 0 za otvoriti, 1 za zatvoriti.                        |
-| passenger | Stanje suvozačevih vrata. 0 za otvoriti, 1 za zatvoriti.                      |
-| backleft  | Stanje lijevih pozadi vrata (ako je dostupno). 0 za otvoriti, 1 za zatvoriti. |
-| backright | Stanje desnih pozadi vrata (ako je dostupno). 0 za otvoriti, 1 za zatvoriti.  |
+| Name      | Description                                                             |
+| --------- | ----------------------------------------------------------------------- |
+| vehicleid | The ID of the vehicle to set the door state of                          |
+| driver    | The state of the driver's door. 1 to open, 0 to close.                  |
+| passenger | The state of the passenger door. 1 to open, 0 to close.                 |
+| backleft  | The state of the rear left door (if available). 1 to open, 0 to close.  |
+| backright | The state of the rear right door (if available). 1 to open, 0 to close. |
 
 ## Returns
 
 [edit]
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetVehicleParamsCarDoors](GetVehicleParamsCarDoors): Doznaj trenutno stanje vrata od vozila
-- [SetVehicleParamsCarWindows](SetVehicleParamsCarWindows): Otvori i zatvori prozore vozila.
-- [GetVehicleParamsCarWindows](GetVehicleParamsCarWindows): Doznaj trenutno stanje prozora vozila.
+- [GetVehicleParamsCarDoors](GetVehicleParamsCarDoors): Retrive the current state of a vehicle's doors.
+- [SetVehicleParamsCarWindows](SetVehicleParamsCarWindows): Open and close the windows of a vehicle.
+- [GetVehicleParamsCarWindows](GetVehicleParamsCarWindows): Retrive the current state of a vehicle's windows

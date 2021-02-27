@@ -1,60 +1,56 @@
 ---
 title: SHA256_PassHash
-description: Hashira lozinku pomoću algoritma heširanja SHA-256.
+description: Hashes a password using the SHA-256 hashing algorithm.
 tags: []
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3.7 R1' />
 
-Ova funkcija je dodana u SA-MP 0.3.7 R1 i ne radi u nižim verzijama!
+## Description
 
-:::
+Hashes a password using the SHA-256 hashing algorithm. Includes a salt. The output is always 256 bits in length, or the equivalent of 64 Pawn cells.
 
-## Deskripcija
-
-Hashira lozinku pomoću algoritma heširanja SHA-256. Uključuje salt. Izlaz je uvijek 256 bita, ili ekvivalent od 64 Pawn ćelija.
-
-| Ime          | Deskripcija                                    |
-| ------------ | ---------------------------------------------- |
-| password[]   | Lozinka za heširati.                           |
-| salt[]       | Salt za koristiti u heširanju.                 |
-| ret_hash[]   | Vraćeni heš u velikom heksadecimalnom sažetku. |
-| ret_hash_len | Vraćeni heš u maksimalnoj dužini.              |
+| Name         | Description                                        |
+| ------------ | -------------------------------------------------- |
+| password[]   | The password to hash.                              |
+| salt[]       | The salt to use in the hash.                       |
+| ret_hash[]   | The returned hash in uppercase hexadecimal digest. |
+| ret_hash_len | The returned hash maximum length.                  |
 
 ## Returns
 
-Heš je pohranjen u određenom nizu.
+The hash is stored in the specified array.
 
-## Primjeri
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    new MyHash[64 + 1]; // + 1 za račun potrebnog nultog terminatora
+    new MyHash[64 + 1]; // + 1 to account for the required null terminator
     SHA256_PassHash("test", "78sdjs86d2h", MyHash, sizeof MyHash);
-    printf("Returned hash: %s", MyHash); // Vratio hash: CD16A1C8BF5792B48142FF6B67C9CB5B1BDC7260D8D11AFBA6BCDE0933A3C0AF
+    printf("Returned hash: %s", MyHash); // Returned hash: CD16A1C8BF5792B48142FF6B67C9CB5B1BDC7260D8D11AFBA6BCDE0933A3C0AF
     return 1;
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::tip
 
-Vraćeni hash nema nula popunjavanja (npr. mogući prefiks 00ABCD123...).
+The returned hash has zero padding (i.e. possible prefix 00ABCD123...).
 
 :::
 
 :::tip
 
-Salt je dodan na kraj lozinke, što znači da lozinka 'foo' i salt 'bar' čine 'foobar'. Salt bi treba biti nasumičan, jedinstven za svakog igrača i najmanje dug kao hashirana lozinka. Treba ga pohraniti uz stvarni heš na računu igrača.
+The salt is appended to the end of the password, meaning password 'foo' and salt 'bar' would form 'foobar'. The salt should be random, unique for each player and at least as long as the hashed password. It is to be stored alongside the actual hash in the player's account.
 
 :::
 
 :::warning
 
-Ova funkcija nije binarno sigurna. Korištenje binarnih vrijednosti na lozinci i soli može dati neočekivani rezultat.
+This function is not binary-safe. Using binary values on password and salt might give unexpected result.
 
 :::
 
-## Srodne Funkcije
+## Related Functions

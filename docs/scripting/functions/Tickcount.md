@@ -1,27 +1,23 @@
 ---
 title: tickcount
-description: Ova se funkcija može koristiti kao zamjena za GetTickCount, jer vraća broj milisekundi od pokretanja poslužitelja.
+description: This function can be used as a replacement for GetTickCount, as it returns the number of milliseconds since the start-up of the server.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+This function can be used as a replacement for GetTickCount, as it returns the number of milliseconds since the start-up of the server.
 
-## Deskripcija
-
-Ova se funkcija može koristiti kao zamjena za GetTickCount, jer vraća broj milisekundi od pokretanja poslužitelja.
-
-| Ime            | Deskripcija                                                                                                                                                                         |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| &granularity=0 | Po povratku, ova vrijednost sadrži broj otkucaja koje će unutarnje sistemsko vrijeme otkucati u sekundi. Ova vrijednost stoga ukazuje na točnost povratne vrijednosti ove funkcije. |
+| Name           | Description                                                                                                                                                                                |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| &granularity=0 | Upon return, this value contains the number of ticks that the internal system time will tick per second. This value therefore indicates the accuracy of the return value of this function. |
 
 ## Returns
 
-Broj milisekundi od pokretanja sistema. Za 32-bitnu ćeliju ovaj broj preplavljuje nakon približno 24 dana neprekidnog rada.
+The number of milliseconds since start-up of the system. For a 32-bit cell, this count overflows after approximately 24 days of continuous operation.
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetTickCount](GetTickCount): Nabavite vrijeme rada stvarnog servera.
+- [GetTickCount](GetTickCount): Get the uptime of the actual server.

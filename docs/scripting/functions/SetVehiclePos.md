@@ -1,44 +1,44 @@
 ---
 title: SetVehiclePos
-description: Postavlja poziciju vozila.
+description: Set a vehicle's position.
 tags: ["vehicle"]
 ---
 
-## Deskripcija
+## Description
 
-Postavlja poziciju vozila.
+Set a vehicle's position
 
-| Ime       | Deskripcija                                     |
-| --------- | ----------------------------------------------- |
-| vehicleid | ID vozila kojem želite postaviti novu poziciju. |
-| Float:x   | X kordinata na koju treba pozicirati vozilo.    |
-| Float:y   | Y kordinata na koju treba pozicirati vozilo.    |
-| Float:z   | Z kordinata na koju treba pozicirati vozilo.    |
+| Name      | Description                                  |
+| --------- | -------------------------------------------- |
+| vehicleid | Vehicle ID that you want set new position.   |
+| Float:x   | The X coordinate to position the vehicle at. |
+| Float:y   | The Y coordinate to position the vehicle at. |
+| Float:z   | The Z coordinate to position the vehicle at. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+1: The function executed successfully.
 
-0: Funkcija neuspješno izvršena. Navedeno vozilo ne postoji.
+0: The function failed to execute. The vehicle specified does not exist.
 
-## Primjeri
+## Examples
 
 ```c
-// Postavi vozilo igrača na kordinatama 0, 0, 3 (centar SA)
+// Put the player's vehicle at the coordinates 0, 0, 3 (center of SA)
 new vehicleid = GetPlayerVehicleID(playerid);
 SetVehiclePos(vehicleid, 0, 0, 3);
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Prazno vozilo neće padati nakon što se bude teleportovalo u zrak.
+An empty vehicle will not fall after being teleported into the air.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [SetPlayerPos](SetPlayerPos): Postavite poziciju igrača.
-- [GetVehiclePos](GetVehiclePos): Doznajte položaj vozila.
-- [SetVehicleZAngle](SetVehicleZAngle): Postavi smjer vozila.
+- [SetPlayerPos](SetPlayerPos): Set a player's position.
+- [GetVehiclePos](GetVehiclePos): Get the position of a vehicle.
+- [SetVehicleZAngle](SetVehicleZAngle): Set the direction of a vehicle.

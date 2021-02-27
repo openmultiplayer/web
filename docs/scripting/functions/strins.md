@@ -1,52 +1,48 @@
 ---
 title: strins
-description: Umetni string u drugi string.
+description: Insert a string into another string.
 tags: []
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+Insert a string into another string.
 
-## Deskripcija
-
-Umetni string u drugi string.
-
-| Ime                     | Deskripcija                                  |
-| ----------------------- | -------------------------------------------- |
-| string[]                | String u kojeg želite umetnuti substr.       |
-| const substr[]          | String kojeg želite umetnuti u drugi string. |
-| pos                     | Pozicija za početak umetanja.                |
-| maxlength=sizeof string | Maksimalna veličina za unijeti.              |
+| Name                    | Description                                |
+| ----------------------- | ------------------------------------------ |
+| string[]                | The string you want to insert substr in.   |
+| const substr[]          | The string you want to insert into string. |
+| pos                     | The position to start inserting.           |
+| maxlength=sizeof string | The maximum size to insert.                |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
-// Dodaj [AFK] tag na početak igračevog imena
+// Add an [AFK] tag to the start of players' names
 new playerName[MAX_PLAYER_NAME];
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 if (strlen(playerName) <= 18)
 {
-    strins(playerName, "[AFK]", 0);
+	strins(playerName, "[AFK]", 0);
 }
 SetPlayerName(playerid, playerName);
 
-// WARNING: Igrači sa imenom koji imaju 20+ karaktea ne mogu imati [AFK] tag, to če činiti njihovo ime velikim 25 karatkera a limit je 24.
+// WARNING: Players with names that are 20+ characters long can not have an [AFK] tag, as that would make their name 25 characters long and the limit is 24.
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
-- [strfind](strfind): Pretraži string u drugom stringu.
-- [strdel](strdel): Obriši dio stringa.
-- [strlen](strlen): Dobij dužinu stringa.
-- [strmid](strmid): Izdvoji dio stringa u drugi string.
-- [strpack](strpack): Upakuj string u odredišni string.
-- [strval](strval): Pretvori string u cijeli broj.
-- [strcat](strcat): Spojite dva stringa u odredišnu referencu.
+- [strcmp](strcmp): Compare two strings to check if they are the same.
+- [strfind](strfind): Search for a string in another string.
+- [strdel](strdel): Delete part of a string.
+- [strlen](strlen): Get the length of a string.
+- [strmid](strmid): Extract part of a string into another string.
+- [strpack](strpack): Pack a string into a destination string.
+- [strval](strval): Convert a string into an integer.
+- [strcat](strcat): Concatenate two strings into a destination reference.

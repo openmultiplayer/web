@@ -1,42 +1,42 @@
 ---
 title: ShowNameTags
-description: Omogući/onemogući iscrtavanje nametag-ova, healthbar-ova i armora iznad igrača.
+description: Toggle the drawing of nametags, health bars and armor bars above players.
 tags: []
 ---
 
-## Deskripcija
+## Description
 
-Omogući/onemogući iscrtavanje nametag-ova, healthbar-ova i armora iznad igrača.
+Toggle the drawing of nametags, health bars and armor bars above players.
 
-| Ime     | Deskripcija                                                         |
-| ------- | ------------------------------------------------------------------- |
-| enabled | 0 za onemogućiti, 1 za omogućiti (omogućeno po zadanim postavkama). |
+| Name    | Description                                     |
+| ------- | ----------------------------------------------- |
+| enabled | 0 to disable, 1 to enable (enabled by default). |
 
 ## Returns
 
-Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
+This function does not return any specific values.
 
-## Primjeri
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    // Ovo će u potpunosti onemogućiti sve nametag-ove
-    // (uključujući health i armour bar-ove)
+    // This will fully disable all player nametags
+    // (including health and armour bars)
     ShowNameTags(0);
 }
 ```
 
-## Zabilješke
+## Notes
 
 :::warning
 
-Ova funkcija se može koristiti samo u OnGameModeInit. Za ostala vremena, pogledajte ShowPlayerNameTagForPlayer.
+This function can only be used in OnGameModeInit. For other times, see ShowPlayerNameTagForPlayer.
 
 :::
 
-## Srodne Funkcije
+## Related Functions
 
-- [DisableNameTagLOS](DisableNameTagLOS): Onemogućite provjeru oznake imena.
-- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Prikaži ili sakrij nametag za određenog igrača.
-- [ShowPlayerMarkers](ShowPlayerMarkers): Odlučite hoće li server prikazivati ​​oznake na radaru.
+- [DisableNameTagLOS](DisableNameTagLOS): Disable nametag Line-Of-Sight checking.
+- [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Show or hide a nametag for a certain player.
+- [ShowPlayerMarkers](ShowPlayerMarkers): Decide if the server should show markers on the radar.

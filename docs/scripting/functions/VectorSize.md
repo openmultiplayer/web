@@ -1,30 +1,26 @@
 ---
 title: VectorSize
-description: Vraća normu (dužinu) navedenog vektora.
+description: Returns the norm (length) of the provided vector.
 tags: []
 ---
 
-:::warning
+<VersionWarn version='SA-MP 0.3z' />
 
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
+## Description
 
-:::
+Returns the norm (length) of the provided vector.
 
-## Deskripcija
-
-Vraća normu (dužinu) navedenog vektora.
-
-| Ime     | Deskripcija                |
-| ------- | -------------------------- |
-| Float:X | Veličina vektora na X osi. |
-| Float:Y | Veličina vektora na Y osi. |
-| Float:Z | Veličina vektora na Z osi. |
+| Name    | Description                           |
+| ------- | ------------------------------------- |
+| Float:X | The vector's magnitude on the X axis. |
+| Float:Y | The vector's magnitude on the Y axis. |
+| Float:Z | The vector's magnitude on the Z axis. |
 
 ## Returns
 
-Norma (dužina) predviđenog vektora kao float.
+The norm (length) of the provided vector as a float.
 
-## Primjeri
+## Examples
 
 ```c
 stock Float:GetDistanceBetweenPoints(Float:x1, Float:y1, Float:z1, Float:x2, Float:y2, Float:z2)
@@ -33,8 +29,8 @@ stock Float:GetDistanceBetweenPoints(Float:x1, Float:y1, Float:z1, Float:x2, Flo
 }
 ```
 
-## Srodne Funkcije
+## Related Functions
 
-- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint): Dobij razmak između igrača i tačke.
-- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint): Dobij razmak između vozila i tačke.
-- [floatsqroot](floatsqroot): Izračunajte kvadratni korijen float vrijednosti.
+- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint): Get the distance between a player and a point.
+- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint): Get the distance between a vehicle and a point.
+- [floatsqroot](floatsqroot): Calculate the square root of a floating point value.
