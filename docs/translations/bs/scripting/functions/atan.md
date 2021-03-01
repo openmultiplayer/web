@@ -25,13 +25,15 @@ Radijant ugla u radijanima.
 ## Primjeri
 
 ```c
+//Ova funkcija returna(vraća) radijane. Budući da većina SA-MP funkcija koristi stupnjeve, savjetuje se da ih konvertiraju koristeći formulu: rezultat = atan (param) * 180 / PI
+
 public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 1.0;
-    result = atan(param);
-    printf("Tangent luka od %f je %f stepeni.", param, result);
-    return 1;
+    result = atan(param) * 180 / 3.14159265; //1 radian equals 180 degrees. 3.14... is used to define PI.
+    printf ("Tangent luka od %f je %f stepeni\n", param, result );
+    return 0;
 }
 ```
 

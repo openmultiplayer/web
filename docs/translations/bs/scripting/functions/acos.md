@@ -31,9 +31,9 @@ public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 0.5;
-    result = acos(param);
-    printf("Glavni kosinus od %f je %f stepeni.", param, result);
-    return 1;
+    result = acos (param) * 180.0 / PI;
+    printf ("Glavni kosinus od %f je %f stepeni.\n", param, result);
+    return 0;
 }
 ```
 
