@@ -216,4 +216,4 @@ https://jmalarcon.github.io/markdowntables/
 
 ## 许可协议
 
-所有 open.mp 项目 都有一个 [贡献者许可协议][https://cla-assistant.io/openmultiplayer/homepage]。这基本上意味着你同意让我们使用你的作品，并将其置于开源许可之下。当你第一次打开拉取请求时，机器人助手会发布一个链接，你可以在那里签署协议。
+所有 open.mp 项目 都有一个[贡献者许可协议](https://cla-assistant.io/openmultiplayer/homepage)。这基本上意味着你同意让我们使用你的作品，并将其置于开源许可之下。当你第一次打开拉取请求时，机器人助手会发布一个链接，你可以在那里签署协议。

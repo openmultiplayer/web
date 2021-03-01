@@ -9,7 +9,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *service) patch(w http.ResponseWriter, r *http.Request) {
+func (s *UsersService) patch(w http.ResponseWriter, r *http.Request) {
 	ai, ok := authentication.GetAuthenticationInfo(w, r)
 	if !ok {
 		return

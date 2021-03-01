@@ -1,7 +1,7 @@
 ---
 title: floatround
 description: Round a floating point number to an integer value.
-tags: []
+tags: ["math", "floating-point"]
 ---
 
 <LowercaseNote />

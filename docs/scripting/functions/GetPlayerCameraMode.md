@@ -1,7 +1,7 @@
 ---
 title: GetPlayerCameraMode
 description: Returns the current GTA camera mode for the requested player.
-tags: ["player"]
+tags: ["player", "camera"]
 ---
 
 <VersionWarn version='SA-MP 0.3c R3' />

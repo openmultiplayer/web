@@ -1,7 +1,7 @@
 ---
 title: GetActorPos
 description: Get the position of an actor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />

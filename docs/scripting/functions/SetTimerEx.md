@@ -1,7 +1,7 @@
 ---
 title: SetTimerEx
 description: Sets a timer to call a function after the specified interval.
-tags: []
+tags: ["timer"]
 ---
 
 ## Description

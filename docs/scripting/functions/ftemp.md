@@ -1,7 +1,7 @@
 ---
 title: ftemp
 description: Creates a file in the "tmp", "temp" or root directory with random name for reading and writing.
-tags: []
+tags: ["file management"]
 ---
 
 <LowercaseNote />
@@ -116,7 +116,6 @@ This function can crash the server when the right directory isn't created.
 
 - [fopen](fopen): Open a file.
 - [fclose](fclose): Close a file.
-- [ftemp](ftemp): Create a temporary file stream.
 - [fremove](fremove): Remove a file.
 - [fwrite](fwrite): Write to a file.
 - [fread](fread): Read a file.

@@ -1,7 +1,7 @@
 ---
 title: fmatch
 description: Find a filename matching a pattern.
-tags: []
+tags: ["file management"]
 ---
 
 <LowercaseNote />
@@ -44,4 +44,3 @@ This function does not work in the current SA:MP version!
 - [fseek](fseek): Jump to a specific character in a file.
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
-- [fmatch](fmatch): Check, if patterns with a file name matches.

@@ -1,7 +1,7 @@
 ---
 title: strpack
 description: Pack a string.
-tags: []
+tags: ["string"]
 ---
 
 <LowercaseNote />

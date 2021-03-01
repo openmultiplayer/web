@@ -1,7 +1,7 @@
 ---
 title: floatstr
 description: Converts a string to a float.
-tags: []
+tags: ["string", "floating-point"]
 ---
 
 <LowercaseNote />

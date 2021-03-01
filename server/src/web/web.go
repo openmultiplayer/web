@@ -39,7 +39,6 @@ func StatusInternalServerError(w http.ResponseWriter, err error) {
 
 // StatusUnauthorized writes a pretty error
 func StatusUnauthorized(w http.ResponseWriter, err error) {
-	w.Header().Add("WWW-Authenticate", "Basic")
 	w.WriteHeader(http.StatusUnauthorized)
 	errToWriter(w, err)
 }
