@@ -6,6 +6,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sendgrid/sendgrid-go"
 	"github.com/sendgrid/sendgrid-go/helpers/mail"
+
+	"github.com/openmultiplayer/web/server/src/config"
 )
 
 type Mailer interface {
@@ -23,6 +25,14 @@ type SendGrid struct {
 	fromname string
 	fromaddr string
 	client   *sendgrid.Client
+}
+
+func NewSendGrid(cfg config.Config) Mailer {
+	return &SendGrid{
+		"The open.mp Team",
+		"team@open.mp",
+		sendgrid.NewSendClient(cfg.SendgridAPIKey),
+	}
 }
 
 func (m *SendGrid) Mail(toname, toaddr, subj, rich, text string) error {

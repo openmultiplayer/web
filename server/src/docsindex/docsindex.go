@@ -11,10 +11,12 @@ import (
 	"github.com/blevesearch/bleve"
 	"github.com/russross/blackfriday"
 	"gopkg.in/yaml.v2"
+
+	"github.com/openmultiplayer/web/server/src/config"
 )
 
 type Index struct {
-	db bleve.Index
+	db   bleve.Index
 	path string
 }
 
@@ -26,14 +28,14 @@ type Document struct {
 	Path string
 }
 
-func New(dbpath, docspath string) (*Index, error) {
+func New(cfg config.Config) (*Index, error) {
 	i := Index{
-		path: docspath,
+		path: cfg.DocsSourcesPath,
 	}
 
-	idx, err := bleve.Open(dbpath)
+	idx, err := bleve.Open(cfg.DocsIndexPath)
 	if err != nil {
-		idx, err = bleve.New(dbpath, bleve.NewIndexMapping())
+		idx, err = bleve.New(cfg.DocsIndexPath, bleve.NewIndexMapping())
 		if err != nil {
 			return nil, err
 		}

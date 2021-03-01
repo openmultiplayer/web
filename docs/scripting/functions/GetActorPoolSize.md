@@ -1,7 +1,7 @@
 ---
 title: GetActorPoolSize
 description: Gets the highest actorid created on the server.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
