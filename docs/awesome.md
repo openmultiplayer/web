@@ -1,6 +1,6 @@
 ---
 title: Awesome
-description: A curated list of useful tools, libraries and plugins for SA-MP development.
+description: A curated list of useful tools, libraries, gamemodes, filterscripts and plugins for SA-MP development.
 ---
 
 ## Tools
@@ -30,6 +30,7 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **[MV_Youtube.inc](https://github.com/MichaelBelgium/MV_Youtube)** - Youtube Converter API for Audio Stream.
 - **[MySQL-Prepared-Statements](https://github.com/PatrickGTR/MySQL-Prepared-Statements)** - Emulating Prepared Statement for PAWN MySQL plugin.
 - **[Actor-Robbery](https://github.com/PatrickGTR/actor_robbery)** - Inspired by GTA V store robbery. actor_robbery.inc imitates it!
+- **[samp-aviation](https://github.com/Southclaws/samp-aviation)** - A basic pitch-based altitude and roll-based heading autopilot for SA-MP.
 
 ## Command Processors
 
@@ -57,3 +58,8 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)** - Lists of gamemodes that are compatible with open.mp.
 - **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Based PvP Survival Gamemode.
 - **[gta-open](https://github.com/PatrickGTR/gta-open)** - A Cops and robbers mode based in Los Santos.
+
+## Filterscripts
+
+- **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Animation browser.
+- **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Checks if a player is an android user. 
