@@ -13,7 +13,7 @@ Su ogni pagina, vi è un bottone che porta alla pagina di GitHub per poterne mod
 
 !['Modifica questa pagina' link presente su ogni pagina della wiki](/images/contributing/edit-this-page.png)
 
-Per esempio, cliccando questo sulla funzione [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) ti porterà a [questa pagina](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) che presenta un text editor per poter effettuare modifiche ad un file (assumendo il fatto che tu sia loggato su GitHub).
+Per esempio, cliccando questo sulla funzione [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) ti porterà a [questa pagina](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) che presenta un text editor per poter effettuare modifiche ad un file (assumendo il fatto che tu sia loggato su GitHub).
 
 Fai la tua modifica e invia una "Pull request" ciò significa che i mantenitori della wiki e gli altri membri della community potranno revisionare le tue modifiche, discutere qualora vi sia il bisogno di ulteriori modifiche ed effettuare il merge.
 
