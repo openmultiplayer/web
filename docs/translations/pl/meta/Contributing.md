@@ -13,7 +13,7 @@ Na każdej stronie widoczny jest przycisk, który przenosi Cię do jej edycji na
 
 ![Link „Edit this page” obecny na każdej podstronie wiki](/images/contributing/edit-this-page.png)
 
-Na przykład, kliknięcie go na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) przeniesie Cię do [tej strony](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md), na której dostępny jest edytor tekstowy umożliwiający wprowadzenie zmian do pliku (zakładając, że jesteś zalogowany do GitHuba).
+Na przykład, kliknięcie go na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) przeniesie Cię do [tej strony](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md), na której dostępny jest edytor tekstowy umożliwiający wprowadzenie zmian do pliku (zakładając, że jesteś zalogowany do GitHuba).
 
 Wprowadź swoje zmiany i wyślij „Pull Request”, który umożliwi opiekunom Wiki oraz innym członkom społeczności na przegląd Twoich zmian, dyskusję na temat ewentualnych dodatkowych zmian, a ostatecznie ich wdrożenie.
 
