@@ -13,7 +13,7 @@ Di setiap halaman, ada sebuah tombol yang mengarahkan Anda ke halaman GitHub unt
 
 ![Link 'Sunting halaman ini' ada di setiap halaman Wiki](/images/contributing/edit-this-page.png)
 
-Sebagai contoh, klik di [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) akan mengarahkan Anda ke [halaman ini](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) yang di mana akan memunculkan sebuah _text editor_ untuk membuat perubahan ke file tersebut (asumsikan Anda sudah _login_ ke GitHub).
+Sebagai contoh, klik di [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) akan mengarahkan Anda ke [halaman ini](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) yang di mana akan memunculkan sebuah _text editor_ untuk membuat perubahan ke file tersebut (asumsikan Anda sudah _login_ ke GitHub).
 
 Lakukan penyuntingan Anda and kirimkan sebuah "Pull Request" yang artinya pengelola Wiki ini dan anggota komunitas lainnya dapat mengulas (me-_review_) perubahan Anda, diskusikas apakah perlu ada perubahan dan kemudian gabungkan.
 
