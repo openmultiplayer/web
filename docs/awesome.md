@@ -26,7 +26,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[geo-ip.inc](https://github.com/Southclaws/SAMP-geoip/)** - Geographical information based on IP Address.
 - **[samp-aviation](https://github.com/Southclaws/samp-aviation/)** - Autopilot in SA:MP.
 - **[progress2.inc](https://github.com/Southclaws/progress2/)** - Display time, health, vehicle fuel and other things as a progressive bar.
-- **[weapon-data.inc](https://github.com/Southclaws/samp-weapon-dat/)** - Finely tuned, customisable weapon data.
+- **[weapon-data.inc](https://github.com/Southclaws/samp-weapon-data/)** - Finely tuned, customisable weapon data.
 - **[MV_Youtube.inc](https://github.com/MichaelBelgium/MV_Youtube)** - Youtube Converter API for Audio Stream.
 - **[MySQL-Prepared-Statements](https://github.com/PatrickGTR/MySQL-Prepared-Statements)** - Emulating Prepared Statement for PAWN MySQL plugin.
 - **[Actor-Robbery](https://github.com/PatrickGTR/actor_robbery)** - Inspired by GTA V store robbery. actor_robbery.inc imitates it!
