@@ -20,4 +20,4 @@ public OnFilterScriptExit()
 }
 ```
 
-## Srodne Funkcije
+## Povezane Funkcijo

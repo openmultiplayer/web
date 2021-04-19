@@ -18,7 +18,7 @@ public OnGameModeInit()
 }
 ```
 
-## Zabilješke
+## Opombe
 
 :::tip
 
