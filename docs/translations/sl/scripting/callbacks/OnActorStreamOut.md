@@ -23,7 +23,7 @@ Ta "callback" se pokliče, ko se "actor" neha pojavi v igralčevi "client".
 
 Vedno je bila povabljena prva v "filterscript".
 
-## Primjeri
+## Primeri
 
 ```c
 public OnActorStreamOut(actorid, forplayerid)
