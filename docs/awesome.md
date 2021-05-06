@@ -38,10 +38,12 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[samp-async-dialogs](https://github.com/AGraber/samp-async-dialogs)** - Asynchronous dialog handling with PawnPlus tasks.
 - **[speedcap.inc](https://github.com/ff-agus44/archive/blob/master/includes/speedcap.inc)** - A libraries to control speed of vehicles.
 - **[samp-command-guess](https://github.com/Kirima2nd/samp-command-guess)** - A command guesser for SA:MP using Levenshtein Distance function.
-- **[strlib](https://github.com/oscar-broman/strlib/)** - A list of useful string functions.
+- **[strlib](https://github.com/oscar-broman/strlib)** - A list of useful string functions.
 - **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - A list of useful mathematical functions.
 - **[samp-distance](https://github.com/Y-Less/samp-distance)** - A list of useful distancing check functions.
 - **[samp-callbacks](https://github.com/emmet-jones/New-SA-MP-callbacks)** - A list of useful new callback functions.
+- **[eSelection](https://github.com/TommyB123/eSelection)** - Adds the ability to create dynamic model selection menus in your SA-MP gamemodes. 
+- **[mSelection](https://github.com/alextwothousand/mSelection)** - Same as eSelection, but different style.
 
 ## Command Processors
 
