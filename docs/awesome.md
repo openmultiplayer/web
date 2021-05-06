@@ -8,6 +8,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Community Compiler](https://github.com/pawn-lang/compiler)** - A vastly updated version of the compiler, with many fixes and enhancements.
 - **[sampctl](https://github.com/Southclaws/sampctl)** - Package manager for installing libraries and running your server.
 - **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)** - Tool to run a lightweight version of the server directly from command-line (no server.cfg required) for testing plugins.
+- **[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)** - Making a plugin easier with boilerplate.
 - **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - A place to test your scripts (snippets, PoC, debugging, etc) and share it to others.
 - **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)** - Pawn autocompletes for Sublime Text.
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocompletes for Visual Studio Code.
@@ -23,9 +24,6 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[indirection](https://github.com/Y-Less/indirection)** - System for passing pointers and calling functions indirectly, with abstract methods to customise calls.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - Parse and customise pawn code at compile-time.
 - **[extended-vehicle-information](https://github.com/Vince0789/sa-mp-extended-vehicle-information)** - Large amounts of vehicle flags from single player into an SQLite Database.
-- **[strlib](https://github.com/oscar-broman/strlib/)** - A list of useful string functions.
-- **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - A list of useful mathematical functions.
-- **[samp-distance](https://github.com/Y-Less/samp-distance)** - A list of useful distancing check functions.
 - **[sqlitei](https://github.com/oscar-broman/sqlitei)** - High-level API for the SA-MP SQLite functions.
 - **[samp-geoip](https://github.com/Southclaws/SAMP-geoip)** - Geographical information based on IP Address.
 - **[progress2](https://github.com/Southclaws/progress2)** - Display time, health, vehicle fuel and other things as a progressive bar.
@@ -40,6 +38,10 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[samp-async-dialogs](https://github.com/AGraber/samp-async-dialogs)** - Asynchronous dialog handling with PawnPlus tasks.
 - **[speedcap.inc](https://github.com/ff-agus44/archive/blob/master/includes/speedcap.inc)** - A libraries to control speed of vehicles.
 - **[samp-command-guess](https://github.com/Kirima2nd/samp-command-guess)** - A command guesser for SA:MP using Levenshtein Distance function.
+- **[strlib](https://github.com/oscar-broman/strlib/)** - A list of useful string functions.
+- **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - A list of useful mathematical functions.
+- **[samp-distance](https://github.com/Y-Less/samp-distance)** - A list of useful distancing check functions.
+- **[samp-callbacks](https://github.com/emmet-jones/New-SA-MP-callbacks)** - A list of useful new callback functions.
 
 ## Command Processors
 
@@ -60,12 +62,26 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[pawn-requests](https://github.com/Southclaws/pawn-requests)** - Provides an API for interacting with HTTP(S) APIs with support for text and JSON data types.
 - **[samp-FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
 - **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - extends the possibilities of the Pawn scripting language with new constructs, data types, and programming techniques.
+- **[YSF](https://github.com/IllidanS4/YSF)** - A Plugin whose purpose is to pull out maximum possibilities from the server, mainly with memory editing and hooking.
+- **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - Adds support for regular expressions in Pawn.
+- **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** -  Allows you to analyze RakNet traffic.
+- **[Sampvoice](https://github.com/CyberMor/sampvoice)** - Software Development Kit (SDK) for implementing voice communication systems in the Pawn language for SA:MP servers.
+- **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - allows you to use TOTP authentication in a sa-mp gamemode.
 
 ## Crypto Plugins
 
 - **[whirlpool](https://github.com/Southclaws/samp-whirlpool)** - Whirlpool Cryptographic plugin for SA:MP.
 - **[bcrypt](https://github.com/LassiR/bcrypt-samp)** - Bcrypt Cryptographic plugin for SA:MP.
 - **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - SHA512 Cryptographic plugin for SA:MP.
+
+## GDK/SDKs
+
+ - **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ Language Support for writing a gamemode for SA:MP
+ - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
+ - **[sampgo](https://github.com/sampgo/sampgo)** - Go Language Support for writing a gamemode/plugins for SA:MP
+ - **[samp-node](https://github.com/AmyrAhmady/samp-node)** - Javascript/Typescript Language Support for writing a gamemode for SA:MP
+ - **[pySAMP](https://github.com/habecker/PySAMP)** - Python Language Support for writing a gamemode for SA:MP
+ - **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Rust Language Support for writing a plugin for SA:MP
 
 ## Game Modes
 
