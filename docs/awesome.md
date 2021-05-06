@@ -10,7 +10,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)** - Tool to run a lightweight version of the server directly from command-line (no server.cfg required) for testing plugins.
 - **[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)** - Making a plugin easier with boilerplate.
 - **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - A place to test your scripts (snippets, PoC, debugging, etc) and share it to others.
-- **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)** - Pawn autocompletes for Sublime Text.
+- **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)** - Pawn autocompletes for Sublime Text.
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocompletes for Visual Studio Code.
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Zone Editor for making Area and stuff.
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Popular Map Editor for SA:MP.
@@ -62,8 +62,8 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Discord Connector](https://github.com/maddinat0r/samp-discord-connector)** - Making bot easily within your scripts.
 - **[pawn-chrono](https://github.com/Southclaws/pawn-chrono)** - A modern Pawn library for working with dates and times.
 - **[pawn-requests](https://github.com/Southclaws/pawn-requests)** - Provides an API for interacting with HTTP(S) APIs with support for text and JSON data types.
-- **[samp-FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
-- **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - extends the possibilities of the Pawn scripting language with new constructs, data types, and programming techniques.
+- **[samp-FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
+- **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - Extends the possibilities of the Pawn scripting language with new constructs, data types, and programming techniques.
 - **[YSF](https://github.com/IllidanS4/YSF)** - A Plugin whose purpose is to pull out maximum possibilities from the server, mainly with memory editing and hooking.
 - **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - Adds support for regular expressions in Pawn.
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** -  Allows you to analyze RakNet traffic.
@@ -78,6 +78,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 
 ## GDK/SDKs
 
+ - **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - This is the bare minium that you need to develop plugins.
  - **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ Language Support for writing a gamemode for SA:MP
  - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
  - **[sampgo](https://github.com/sampgo/sampgo)** - Go Language Support for writing a gamemode/plugins for SA:MP
