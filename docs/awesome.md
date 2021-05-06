@@ -22,8 +22,10 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Low-level access to the pawn script itself.
 - **[indirection](https://github.com/Y-Less/indirection)** - System for passing pointers and calling functions indirectly, with abstract methods to customise calls.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - Parse and customise pawn code at compile-time.
-- **[strlib](https://github.com/oscar-broman/strlib/)** - A list of useful string utilities.
 - **[extended-vehicle-information](https://github.com/Vince0789/sa-mp-extended-vehicle-information)** - Large amounts of vehicle flags from single player into an SQLite Database.
+- **[strlib](https://github.com/oscar-broman/strlib/)** - A list of useful string functions.
+- **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - A list of useful mathematical functions.
+- **[samp-distance](https://github.com/Y-Less/samp-distance)** - A list of useful distancing check functions.
 - **[sqlitei](https://github.com/oscar-broman/sqlitei)** - High-level API for the SA-MP SQLite functions.
 - **[samp-geoip](https://github.com/Southclaws/SAMP-geoip)** - Geographical information based on IP Address.
 - **[progress2](https://github.com/Southclaws/progress2)** - Display time, health, vehicle fuel and other things as a progressive bar.
@@ -37,6 +39,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[mdialog](https://github.com/Open-GTO/mdialog)** - Modern Dialog System, simillar to easyDialog.
 - **[samp-async-dialogs](https://github.com/AGraber/samp-async-dialogs)** - Asynchronous dialog handling with PawnPlus tasks.
 - **[speedcap.inc](https://github.com/ff-agus44/archive/blob/master/includes/speedcap.inc)** - A libraries to control speed of vehicles.
+- **[samp-command-guess](https://github.com/Kirima2nd/samp-command-guess)** - A command guesser for SA:MP using Levenshtein Distance function.
 
 ## Command Processors
 
