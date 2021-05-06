@@ -68,7 +68,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - Adds support for regular expressions in Pawn.
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** -  Allows you to analyze RakNet traffic.
 - **[Sampvoice](https://github.com/CyberMor/sampvoice)** - Software Development Kit (SDK) for implementing voice communication systems in the Pawn language for SA:MP servers.
-- **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - allows you to use TOTP authentication in a sa-mp gamemode.
+- **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - Allows you to use TOTP authentication in a sa-mp gamemode.
 
 ## Crypto Plugins
 
