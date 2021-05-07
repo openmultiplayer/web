@@ -83,6 +83,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
  - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
  - **[sampgo](https://github.com/sampgo/sampgo)** - Go Language Support for writing a gamemode/plugins for SA:MP
  - **[samp-node](https://github.com/AmyrAhmady/samp-node)** - Javascript/Typescript Language Support for writing a gamemode for SA:MP
+ - **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Java Language Support for writing a gamemode for SA:MP
  - **[pySAMP](https://github.com/habecker/PySAMP)** - Python Language Support for writing a gamemode for SA:MP
  - **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Rust Language Support for writing a plugin for SA:MP
 
