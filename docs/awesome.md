@@ -36,7 +36,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[easyDialog](https://github.com/Awsomedude/easyDialog)** - Make dialogs easier to use in general.
 - **[mdialog](https://github.com/Open-GTO/mdialog)** - Modern Dialog System, simillar to easyDialog.
 - **[samp-async-dialogs](https://github.com/AGraber/samp-async-dialogs)** - Asynchronous dialog handling with PawnPlus tasks.
-- **[speedcap.inc](https://github.com/ff-agus44/archive/blob/master/includes/speedcap.inc)** - A libraries to control speed of vehicles.
+- **[speedcap.inc](https://github.com/openmultiplayer/archive/blob/master/includes/speedcap.inc)** - A libraries to control speed of vehicles.
 - **[samp-command-guess](https://github.com/Kirima2nd/samp-command-guess)** - A command guesser for SA:MP using Levenshtein Distance function.
 - **[strlib](https://github.com/oscar-broman/strlib)** - A list of useful string functions.
 - **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - A list of useful mathematical functions.
