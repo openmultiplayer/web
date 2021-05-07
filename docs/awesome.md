@@ -59,7 +59,6 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[MySQL](https://github.com/pBlueG/SA-MP-MySQL)** - Connect your server to a MySQL server.
 - **[streamer](https://github.com/samp-incognito/samp-streamer-plugin)** - Bypass many SA:MP limits, like objects and pickups.
 - **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - Checking natives when server starts.
-- **[Discord Connector](https://github.com/maddinat0r/samp-discord-connector)** - Making bot easily within your scripts.
 - **[pawn-chrono](https://github.com/Southclaws/pawn-chrono)** - A modern Pawn library for working with dates and times.
 - **[pawn-requests](https://github.com/Southclaws/pawn-requests)** - Provides an API for interacting with HTTP(S) APIs with support for text and JSON data types.
 - **[samp-FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
@@ -69,6 +68,11 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** -  Allows you to analyze RakNet traffic.
 - **[Sampvoice](https://github.com/CyberMor/sampvoice)** - Software Development Kit (SDK) for implementing voice communication systems in the Pawn language for SA:MP servers.
 - **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - Allows you to use TOTP authentication in a sa-mp gamemode.
+
+## Connector Plugin
+- **[Discord Connector](https://github.com/maddinat0r/samp-discord-connector)** - Allows you to control a Discord bot from within your PAWN script.
+- **[Teamspeak3 Connector](https://github.com/maddinat0r/samp-tsconnector)** - Allows you to control a Teamspeak3 Server from from within your PAWN script.
+- **[SA:MP IRC Plugin](https://github.com/samp-incognito/samp-irc-plugin)** - Allows for the creation and management of IRC bots through the SA-MP server. 
 
 ## Crypto Plugins
 
