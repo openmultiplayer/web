@@ -40,6 +40,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[samp-command-guess](https://github.com/Kirima2nd/samp-command-guess)** - A command guesser for SA:MP using Levenshtein Distance function.
 - **[strlib](https://github.com/oscar-broman/strlib)** - A list of useful string functions.
 - **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - A list of useful mathematical functions.
+- **[rotations.inc](https://github.com/sampctl/rotations.inc)** - A list of useful rotartion functions by Nero_3D's rotations.inc.
 - **[samp-distance](https://github.com/Y-Less/samp-distance)** - A list of useful distancing check functions.
 - **[samp-callbacks](https://github.com/emmet-jones/New-SA-MP-callbacks)** - A list of useful new callback functions.
 - **[eSelection](https://github.com/TommyB123/eSelection)** - Adds the ability to create dynamic model selection menus in your SA-MP gamemodes. 
@@ -68,11 +69,11 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** -  Allows you to analyze RakNet traffic.
 - **[Sampvoice](https://github.com/CyberMor/sampvoice)** - Software Development Kit (SDK) for implementing voice communication systems in the Pawn language for SA:MP servers.
 - **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - Allows you to use TOTP authentication in a sa-mp gamemode.
-
-## Connector Plugin
-- **[Discord Connector](https://github.com/maddinat0r/samp-discord-connector)** - Allows you to control a Discord bot from within your PAWN script.
-- **[Teamspeak3 Connector](https://github.com/maddinat0r/samp-tsconnector)** - Allows you to control a Teamspeak3 Server from from within your PAWN script.
-- **[SA:MP IRC Plugin](https://github.com/samp-incognito/samp-irc-plugin)** - Allows for the creation and management of IRC bots through the SA-MP server. 
+- **[MapAndreas](https://github.com/Southclaws/samp-plugin-mapandreas)** - Allows you to load different height maps and check the min height for x,y coordinates.
+- **[ColAndreas](https://github.com/Pottus/ColAndreas)** - Creates a simulation of the San Andreas world. Using the Bullet Physics library.
+- **[samp-discord-connector](https://github.com/maddinat0r/samp-discord-connector)** - Allows you to control a Discord bot from within your PAWN script.
+- **[samp-tsconnector](https://github.com/maddinat0r/samp-tsconnector)** - Allows you to control a Teamspeak3 Server from from within your PAWN script.
+- **[samp-irc-plugin](https://github.com/samp-incognito/samp-irc-plugin)** - Allows for the creation and management of IRC bots through the SA-MP server. 
 
 ## Crypto Plugins
 
@@ -104,3 +105,4 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Checks if a player is an android user. 
 - **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - A TextDraw editor which have some rich features.
 - **[FuseZ-Map-Editor](https://github.com/fusez/Map-Editor-V3)** - An In-Game map editor for SA:MP
+- **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - This is an in game map editor that will let you texture up to material index 15 (16 materials) as well as set color for that material index on objects.
