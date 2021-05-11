@@ -22,6 +22,6 @@ public OnFilterScriptExit()
 
 ## Related Callbacks
 
-- [OnFilterSciptInit](OnFilterScriptInit): Called when a filterscript is loaded.
+- [OnFilterScriptInit](OnFilterScriptInit): Called when a filterscript is loaded.
 - [OnGameModeInit](OnGameModeInit): Called when a gamemode starts.
 - [OnGameModeExit](OnGameModeExit): Called when a gamemode ends.
