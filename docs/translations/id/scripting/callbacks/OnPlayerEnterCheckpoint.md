@@ -8,8 +8,8 @@ tags: ["player", "checkpoint"]
 
 Callback ini terpanggil ketika seorang pemain memasuki checkpoint untuk pemain itu.
 
-| Name     | Description                     |
-| -------- | ------------------------------- |
+| Nama     | Deskripsi                          |
+| -------- | ---------------------------------- |
 | playerid | ID pemain yang memasuki checkpoint |
 
 ## Returns
@@ -19,8 +19,8 @@ Selalu terpanggil pertama di filterscripts.
 ## Contoh
 
 ```c
-//Dalam contoh ini, sebuah checkpoint dibuat untuk pemain saat spawn,
-//yang membuat kendaraan dan menonaktifkan checkpoint.
+// Dalam contoh ini, sebuah checkpoint dibuat untuk pemain saat spawn,
+// yang membuat kendaraan dan menonaktifkan checkpoint.
 public OnPlayerSpawn(playerid)
 {
     SetPlayerCheckpoint(playerid, 1982.6150, -220.6680, -0.2432, 3.0);
