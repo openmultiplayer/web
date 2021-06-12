@@ -1,0 +1,44 @@
+---
+title: OnPlayerObjectMoved
+description: Callback ini dipanggil ketika objek pemain dipindahkan setelah MovePlayerObject (ketika berhenti bergerak).
+tags: ["player"]
+---
+
+## Description
+
+Callback ini dipanggil ketika objek pemain dipindahkan setelah MovePlayerObject (ketika berhenti bergerak).
+
+| Name     | Description                       |
+| -------- | --------------------------------- |
+| playerid | ID pemain yang ditugaskan         |
+| objectid | ID object pemain yang dipindahkan |
+
+## Returns
+
+Selalu terpanggil pertama di filterscripts.
+
+## Examples
+
+```c
+public OnPlayerObjectMoved(playerid, objectid)
+{
+    printf("Player object moved: objectid: %d playerid: %d", objectid, playerid);
+    return 1;
+}
+```
+
+## Notes
+
+:::tip
+
+Callback ini juga bisa dipanggil untuk NPC.
+
+:::
+
+## Related Functions
+
+- [MovePlayerObject](../functions/MovePlayerObject): Memindahkan objek pemain
+- [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving): Memeriksa apakah objek pemain bergerak
+- [StopPlayerObject](../functions/StopPlayerObject): Menghentikan objek pemain agar tidak bergerak
+- [CreatePlayerObject](../functions/CreatePlayerObject): Membuat sebuah objek untuk satu pemain
+- [DestroyPlayerObject](../functions/DestroyPlayerObject): Menghancurkan objek pemain
