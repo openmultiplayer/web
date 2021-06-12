@@ -4,7 +4,7 @@ description: Callback ini dipanggil ketika objek pemain dipindahkan setelah Move
 tags: ["player"]
 ---
 
-## Description
+## Deskripsi
 
 Callback ini dipanggil ketika objek pemain dipindahkan setelah MovePlayerObject (ketika berhenti bergerak).
 
@@ -17,7 +17,7 @@ Callback ini dipanggil ketika objek pemain dipindahkan setelah MovePlayerObject 
 
 Selalu terpanggil pertama di filterscripts.
 
-## Examples
+## Contoh
 
 ```c
 public OnPlayerObjectMoved(playerid, objectid)
@@ -27,7 +27,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 }
 ```
 
-## Notes
+## Catatan
 
 :::tip
 
@@ -35,7 +35,7 @@ Callback ini juga bisa dipanggil untuk NPC.
 
 :::
 
-## Related Functions
+## Fungsi Terkait
 
 - [MovePlayerObject](../functions/MovePlayerObject): Memindahkan objek pemain
 - [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving): Memeriksa apakah objek pemain bergerak
