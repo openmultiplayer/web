@@ -4,11 +4,11 @@ description: Callback ini akan terpanggil ketika seorang pemain mengubah kelas p
 tags: ["player"]
 ---
 
-## Description
+## Deskripsi
 
 Callback ini akan terpanggil ketika seorang pemain mengubah kelas pada pemilihan kelas (dan saat pemilihan kelas pertama kali muncul).
 
-| Name     | Description                                                            |
+| Name     | Description                                                        |
 | -------- | ------------------------------------------------------------------ |
 | playerid | ID pemain yang mengubah kelas                                      |
 | classid  | ID kelas yang saat ini dilihat (dikembalikan oleh AddPlayerClass). |
@@ -17,7 +17,7 @@ Callback ini akan terpanggil ketika seorang pemain mengubah kelas pada pemilihan
 
 Selalu terpanggil pertama di filterscripts.
 
-## Examples
+## Contoh
 
 ```c
 public OnPlayerRequestClass(playerid,classid)
@@ -31,7 +31,7 @@ public OnPlayerRequestClass(playerid,classid)
 }
 ```
 
-## Notes
+## Catatan
 
 :::tip
 
@@ -39,6 +39,6 @@ Callback ini juga dipanggil ketika pemain menekan tombol F4.
 
 :::
 
-## Related Functions
+## Fungsi Terkait
 
 - [AddPlayerClass](../functions/AddPlayerClass): Menambahkan kelas
