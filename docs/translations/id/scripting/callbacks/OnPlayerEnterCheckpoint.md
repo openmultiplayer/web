@@ -4,7 +4,7 @@ description: Callback ini terpanggil ketika seorang pemain memasuki checkpoint u
 tags: ["player", "checkpoint"]
 ---
 
-## Description
+## Deskripsi
 
 Callback ini terpanggil ketika seorang pemain memasuki checkpoint untuk pemain itu.
 
@@ -16,7 +16,7 @@ Callback ini terpanggil ketika seorang pemain memasuki checkpoint untuk pemain i
 
 Selalu terpanggil pertama di filterscripts.
 
-## Examples
+## Contoh
 
 ```c
 //Dalam contoh ini, sebuah checkpoint dibuat untuk pemain saat spawn,
@@ -35,11 +35,11 @@ public OnPlayerEnterCheckpoint(playerid)
 }
 ```
 
-## Notes
+## Catatan
 
 <TipNPCCallbacks />
 
-## Related Functions
+## Fungsi Terkait
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Membuat sebuah checkpoint untuk pemain.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Menonaktifkan checkpoint pemain saat ini.
