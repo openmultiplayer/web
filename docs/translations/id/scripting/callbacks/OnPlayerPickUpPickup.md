@@ -8,7 +8,7 @@ tags: ["player"]
 
 Callback ini dipanggil ketika pemain mengambil pickup yang dibuat dengan CreatePickup.
 
-| Name     | Description                                |
+| Nama     | Deskripsi                                  |
 | -------- | ------------------------------------------ |
 | playerid | ID pemain yang mengambil pickup.           |
 | pickupid | ID pickup, dikembalikan oleh CreatePickup. |
@@ -44,7 +44,7 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 }
 ```
 
-## Related Functions
+## Fungsi Terkait
 
 - [CreatePickup](../functions/CreatePickup): Membuat sebuah pickup.
 - [DestroyPickup](../functions/DestroyPickup): Menghancurkan sebuah pickup.
