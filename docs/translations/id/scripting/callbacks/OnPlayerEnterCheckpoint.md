@@ -14,7 +14,7 @@ Callback ini terpanggil ketika seorang pemain memasuki checkpoint untuk pemain i
 
 ## Returns
 
-Selalu terpanggil pertama di filterscripts.
+Selalu terpanggil pertama di filterscript.
 
 ## Contoh
 
