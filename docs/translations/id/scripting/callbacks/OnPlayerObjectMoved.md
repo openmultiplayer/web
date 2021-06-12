@@ -8,10 +8,10 @@ tags: ["player"]
 
 Callback ini dipanggil ketika objek pemain dipindahkan setelah MovePlayerObject (ketika berhenti bergerak).
 
-| Name     | Description                       |
-| -------- | --------------------------------- |
-| playerid | ID pemain yang ditugaskan         |
-| objectid | ID object pemain yang dipindahkan |
+| Name     | Description                      |
+| -------- | -------------------------------- |
+| playerid | ID pemain yang ditugaskan        |
+| objectid | ID objek pemain yang dipindahkan |
 
 ## Returns
 
