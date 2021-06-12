@@ -8,14 +8,14 @@ tags: ["player"]
 
 Callback ini dipanggil ketika objek pemain dipindahkan setelah MovePlayerObject (ketika berhenti bergerak).
 
-| Name     | Description                      |
+| Nama     | Deskripsi                        |
 | -------- | -------------------------------- |
 | playerid | ID pemain yang ditugaskan        |
 | objectid | ID objek pemain yang dipindahkan |
 
 ## Returns
 
-Selalu terpanggil pertama di filterscripts.
+Selalu terpanggil pertama di filterscript.
 
 ## Contoh
 
