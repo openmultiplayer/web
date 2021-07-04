@@ -35,7 +35,7 @@ password whatever
 
 ### Logging In
 
-You can log in either while ingame by typing `/rcon login password` or out of game by using the RCON mode in the [Remote Console](remoteconsole).
+You can log in either while ingame by typing `/rcon login password` or out of game by using the RCON mode in the [Remote Console](RemoteConsole).
 
 The password is the same as what you set it as in [server.cfg](server.cfg)
 
@@ -61,7 +61,7 @@ Where `IP_HERE` is, is where you put the IP you would like to ban.
 
 ##### Ban() function
 
-The [Ban](../../functions/Ban) function can be used to ban a player from a script. The [BanEx](../../functions/BanEx) function will add an optional reason like so:
+The [Ban](../scripting/functions/Ban) function can be used to ban a player from a script. The [BanEx](../scripting/functions/BanEx) function will add an optional reason like so:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
@@ -109,7 +109,7 @@ samp.ban can be found in your sa-mp server directory, it contains lines with the
 - IP
 - Date
 - Time
-- Name (Name of person or a reason (see [BanEx](../../functions/BanEx)))
+- Name (Name of person or a reason (see [BanEx](../scripting/functions/BanEx)))
 - Type of ban (INGAME, IP BAN etc,)
 
 Examples:
@@ -198,10 +198,10 @@ The following callbacks and functions might be useful, as they're related to thi
 
 #### Callbacks
 
-- [OnRconLoginAttempt](../../callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.
+- [OnRconLoginAttempt](../scripting/callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.
 
 #### Functions
 
-- [IsPlayerAdmin](../../functions/IsPlayerAdmin): Checks if a player is logged into RCON.
+- [IsPlayerAdmin](../scripting/functions/IsPlayerAdmin): Checks if a player is logged into RCON.
 
-- [SendRconCommand](../../functions/SendRconCommand): Sends an RCON command via the script.
+- [SendRconCommand](../scripting/functions/SendRconCommand): Sends an RCON command via the script.
