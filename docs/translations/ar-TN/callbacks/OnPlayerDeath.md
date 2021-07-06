@@ -65,7 +65,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 > :::
 
 
-## Functions lihom 3ale9a bel callback OnPlayerDeath
+## Functions teb3in el callback:
 
 
 - [SendDeathMessage](../functions/SendDeathMessage): tab3eth el kill fel kill log eli tal9ah 3al ymin el screen.
