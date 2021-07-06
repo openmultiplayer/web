@@ -37,6 +37,7 @@ if (strcmp(cmdtext, "/doctor", true) == 0)
 :::warning
 
 El health mta3 el player ki t7oto 255 keyenk 7attitou 0 w kol matzid 1 fou9 el 255 tzid we7ed fel hp mel 0.
+
 :::
 
 ## Functions tab3in el callback
