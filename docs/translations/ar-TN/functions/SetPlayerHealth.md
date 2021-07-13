@@ -12,7 +12,6 @@ ta3ti health lel player.
 | 3dad el dam         | 9adech t7eb tzid dam.                                                       |
 |---------------------|-----------------------------------------------------------------------------|
 
-
 ## El Returns
 
 el function t3adet ki tebda el return `1`.
