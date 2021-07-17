@@ -21,7 +21,7 @@ To be used with [GameText](../functions/GameTextForPlayer) and [GameTextForAll](
 | ~g~~h~                    | ![](/images/gameTextStyles/gh.png) | |
 | ~g~~h~~h~                 | ![](/images/gameTextStyles/ghh.png) | |
 | ~g~~h~~h~~h~              | ![](/images/gameTextStyles/ghhh.png) | |
-| ~g~~h~~h~~h~~h~           | ![](/images/gameTextStyles/ghhhh.png) | |
+| ~g~~h~~h~~h~~h~           | ![](/images/gameTextStyles/ghhhh.png) | Same as `~y~~h~~h~`. |
 | ~b~                       | ![](/images/gameTextStyles/b.png) | Has three levels of lightening. |
 | ~b~~h~                    | ![](/images/gameTextStyles/bh.png) | |
 | ~b~~h~~h~                 | ![](/images/gameTextStyles/bhh.png) | |
@@ -31,7 +31,7 @@ To be used with [GameText](../functions/GameTextForPlayer) and [GameTextForAll](
 | ~p~~h~~h~                 | ![](/images/gameTextStyles/phh.png) | |
 | ~y~                       | ![](/images/gameTextStyles/y.png) | Has two levels of lightening. |
 | ~y~~h~                    | ![](/images/gameTextStyles/yh.png) | |
-| ~y~~h~~h~                 | ![](/images/gameTextStyles/yhh.png) | |
+| ~y~~h~~h~                 | ![](/images/gameTextStyles/yhh.png) | Same as `~g~~h~~h~~h~~h~`. |
 | ~l~                       | ![](/images/gameTextStyles/l.png) | Lower case "L".  Can't be lightened. |
 | ~w~                       | ![](/images/gameTextStyles/w.png) | Has one level of lightening. |
 | ~w~~h~                    | ![](/images/gameTextStyles/wh.png) | All colours become this when lightened too much. |
