@@ -56,4 +56,4 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Связанные функции
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Вызывается когда игрок закончил скачку сторонних файлов.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Вызывается когда игрок закончил скачку сторонних файлов.

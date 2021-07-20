@@ -54,5 +54,5 @@ public OnGameModeInit()
 
 ## Связанные функции
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Вызывается когда игрок закончил скачивание сторонних файлов.
-- [AddSimpleModel](AddSimpleModel.md): Добавляет стороннюю модель объекта для скачивания.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Вызывается когда игрок закончил скачивание сторонних файлов.
+- [AddSimpleModel](AddSimpleModel): Добавляет стороннюю модель объекта для скачивания.
