@@ -85,4 +85,4 @@ Callback ini di panggil, rata-rata, 30 kali per detik, per pemain; hanya di guna
 
 :::
 
-## Related Functions
+## Fungsi Terkait

@@ -38,7 +38,7 @@ Callback ini di panggil ketika PEMAIN mulai memasuki kendaraan, bukan ketika pem
 
 :::
 
-## Related Functions
+## Fungsi Terkait
 
 - [PutPlayerInVehicle](../functions/PutPlayerInVehicle): 
 Masukkan pemain ke dalam kendaraan.

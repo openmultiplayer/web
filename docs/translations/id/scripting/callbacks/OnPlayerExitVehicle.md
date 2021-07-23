@@ -39,7 +39,7 @@ Tidak di panggil jika pemain jatuh dari sepeda atau dikeluarkan dari kendaraan d
 
 :::
 
-## Related Functions
+## Fungsi Terkait
 
 - [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): Mengeluarkan pemain dari kendaraan mereka.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Memeriksa di kursi mana seorang pemain berada.

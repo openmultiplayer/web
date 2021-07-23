@@ -64,6 +64,6 @@ Bug yang Diketahui: callback tidak dipanggil jika Anda menembak di kendaraan seb
 
 :::
 
-## Related Functions
+## Fungsi Terkait
 
 - [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): Mengambil vektor tembakan terakhir yang di tembakkan oleh pemain.
