@@ -160,13 +160,21 @@ export async function getStaticPaths(
       flatten
     )(readdirSync(root));
 
+  const localeFromPathMatch = /translations\/([a-zA-Z-]+)/;
+  const localeFromPath = (path: string) => {
+    const r = localeFromPathMatch.exec(path);
+    if (r === null) {
+      throw new Error(`no locale derived from path ${path}`);
+    }
+    return r[1];
+  };
+
   const paths: Array<Path> = flow(
     // Mix in the flat list of directories from the above recursive function
     concat(walk("../docs")),
 
-    // Filter out translations directory - these are handled separately
-    // NOTE: Currently this is not the case, these are built statically too.
-    // filter((v: string) => v.indexOf("translations") === -1),
+    // Filter out translations readme
+    filter((v: string) => v.indexOf("translations/README.md") === -1),
 
     // Filter out category content pages
     filter((v: string) => !v.endsWith("_.md")),
@@ -184,12 +192,21 @@ export async function getStaticPaths(
     concat([""]),
 
     // Transform the paths into Path objects for "en" locale
-    map((v: string) => ({
-      params: {
-        path: v.split("/"),
-      },
-      locale: "en",
-    }))
+    map((v: string) =>
+      v.startsWith("translations/")
+        ? {
+            params: {
+              path: v.split("/").splice(2),
+            },
+            locale: localeFromPath(v),
+          }
+        : {
+            params: {
+              path: v.split("/"),
+            },
+            locale: "en",
+          }
+    )
   )(all);
 
   return {
