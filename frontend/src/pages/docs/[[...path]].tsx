@@ -116,7 +116,7 @@ export async function getStaticProps(
     };
   }
 
-  const { content, data } = matter("result.source");
+  const { content, data } = matter(result.source);
 
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
