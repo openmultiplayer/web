@@ -16,7 +16,9 @@ const localesFromDocs = fs
     fs.statSync(path.join("../docs/translations", v)).isDirectory()
   );
 
-const locales = [...localesFromContent, ...localesFromDocs];
+const locales = [
+  ...new Set([...localesFromContent, ...localesFromDocs]),
+].sort();
 
 module.exports = (phase) => {
   console.log("Phase:", phase);
