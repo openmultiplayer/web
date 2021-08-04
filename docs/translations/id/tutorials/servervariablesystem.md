@@ -36,7 +36,7 @@ Sistem SVar ini mirip seperti PVars, tetapi variabel dibuat secara keseluruhan s
 
 - SVars lebih lambat dari variabel regular. Secara umum lebih menguntungkan untuk mengoptimalisasi memori untuk kecepatan, daripada sebaliknya.
 
-## Related Functions
+## Fungsi yang Berelasi
 
 - [SetSVarInt](../scripting/functions/SetSVarInt): mengatur sebuah nilai integer didalam variabel server.
 - [GetSVarInt](../scripting/functions/GetSVarInt): mengambil nilai pemain yang sedang bermain dala bentuk integer.
