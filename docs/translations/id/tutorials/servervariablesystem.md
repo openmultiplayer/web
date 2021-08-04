@@ -38,10 +38,10 @@ Sistem SVar ini mirip seperti PVars, tetapi variabel dibuat secara keseluruhan s
 
 ## Related Functions
 
-- [SetSVarInt](../../scripting/functions/SetSVarInt): mengatur sebuah nilai integer didalam variabel server.
-- [GetSVarInt](../../scripting/functions/GetSVarInt): mengambil nilai pemain yang sedang bermain dala bentuk integer.
-- [SetSVarString](../../scripting/functions/SetSVarString): mengatur sebuah nilai string didalam variabel server.
-- [GetSVarString](../../scripting/functions/GetSVarString): mengambil nilai yang sebelumnya telah diatur stringnya di dalam variabel server.
-- [SetSVarFloat](../../scripting/functions/SetSVarFloat): mengatur sebuah nilai float didalam server variabel.
-- [GetSVarFloat](../../scripting/functions/GetSVarFloat): mengambil nilai yang sebelumnya telah diatur floatnya di dalam variabel server.
-- [DeleteSVar](../../scripting/functions/DeleteSVar): hapus sebuah variabel server.
+- [SetSVarInt](../scripting/functions/SetSVarInt): mengatur sebuah nilai integer didalam variabel server.
+- [GetSVarInt](../scripting/functions/GetSVarInt): mengambil nilai pemain yang sedang bermain dala bentuk integer.
+- [SetSVarString](../scripting/functions/SetSVarString): mengatur sebuah nilai string didalam variabel server.
+- [GetSVarString](../scripting/functions/GetSVarString): mengambil nilai yang sebelumnya telah diatur stringnya di dalam variabel server.
+- [SetSVarFloat](../scripting/functions/SetSVarFloat): mengatur sebuah nilai float didalam server variabel.
+- [GetSVarFloat](../scripting/functions/GetSVarFloat): mengambil nilai yang sebelumnya telah diatur floatnya di dalam variabel server.
+- [DeleteSVar](../scripting/functions/DeleteSVar): hapus sebuah variabel server.
