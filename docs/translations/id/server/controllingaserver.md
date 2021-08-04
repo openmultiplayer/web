@@ -49,7 +49,7 @@ samp.ban adalah file yang digunakan untuk menyimpan pelarangan, termasuk informa
 - IP
 - Tanggal
 - Waktu
-- Nama (Nama dari orang atau alasan, lihat [BanEx](../../functiions/BanEx))
+- Nama (Nama dari orang atau alasan, lihat [BanEx](../../functions/BanEx))
 - Jenis pelarangan
 
 Untuk menambah sebuah pelarangan, tambahkan sebuah baris seperti ini:
@@ -110,7 +110,7 @@ samp.ban dapat ditemukan di direktori server SA-MP Anda, terdapat baris yang ber
 - IP
 - Date
 - Time
-- Nama (Nama dari orang atau alasan, lihat [BanEx](../../functiions/BanEx))
+- Nama (Nama dari orang atau alasan, lihat [BanEx](../../functions/BanEx))
 - Jenis pelarangan (INGAME, IP BAN, dll.)
 
 Examples:
