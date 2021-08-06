@@ -27,16 +27,16 @@ func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 		// offline during the first-time query and DB seed process.
 		//nolint:errcheck
 		s.client.Server.
-			FindOne(db.Server.IP.Equals(e.IP)).
+			FindUnique(db.Server.IP.Equals(e.IP)).
 			Update(db.Server.Active.Set(false)).
 			Exec(ctx)
 		return nil
 	}
 
-	var svr db.ServerModel
+	var svr *db.ServerModel
 	var err error
 	svr, err = s.client.Server.
-		FindOne(db.Server.IP.Equals(e.IP)).
+		FindUnique(db.Server.IP.Equals(e.IP)).
 		Update(
 			db.Server.IP.Set(e.IP),
 			db.Server.Hn.Set(e.Core.Hostname),
@@ -79,7 +79,7 @@ func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 
 	for k, v := range e.Rules {
 		_, err := s.client.Rule.
-			FindOne(db.Rule.RuleServerIDRuleNameIndex(
+			FindUnique(db.Rule.RuleServerIDRuleNameIndex(
 				db.Rule.Name.Equals(k),
 				db.Rule.ServerID.Equals(svr.ID),
 			)).
@@ -101,19 +101,19 @@ func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 }
 
 func (s *PrismaStorer) GetByID(ctx context.Context, id string) (*server.All, error) {
-	r, err := s.client.Server.FindOne(db.Server.ID.Equals(id)).Exec(ctx)
+	r, err := s.client.Server.FindUnique(db.Server.ID.Equals(id)).Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
-	return dbToAPI(r), nil
+	return dbToAPI(*r), nil
 }
 
 func (s *PrismaStorer) GetByAddress(ctx context.Context, address string) (*server.All, error) {
-	r, err := s.client.Server.FindOne(db.Server.IP.Equals(address)).Exec(ctx)
+	r, err := s.client.Server.FindUnique(db.Server.IP.Equals(address)).Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
-	return dbToAPI(r), nil
+	return dbToAPI(*r), nil
 }
 
 func (s *PrismaStorer) GetEssential(context.Context, string) (*server.Essential, error) {
@@ -145,7 +145,7 @@ func (s *PrismaStorer) GetAll(ctx context.Context) ([]server.All, error) {
 func dbToAPI(r db.ServerModel) *server.All {
 	return &server.All{
 		IP:     r.IP,
-		Domain: r.InternalServer.Domain,
+		Domain: r.InnerServer.Domain,
 		Core: server.Essential{
 			IP:         r.IP,
 			Hostname:   r.Hn,
@@ -157,8 +157,8 @@ func dbToAPI(r db.ServerModel) *server.All {
 			Version:    r.Vn,
 		},
 		Rules:       transformRules(r.Ru()),
-		Description: r.InternalServer.Description,
-		Banner:      r.InternalServer.Banner,
+		Description: r.InnerServer.Description,
+		Banner:      r.InnerServer.Banner,
 		Active:      r.Active,
 	}
 }

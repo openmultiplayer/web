@@ -63,8 +63,8 @@ func (v *Verifyer) Verify(ctx context.Context, ip, code string) (chan VerifyStat
 	return ch, nil
 }
 
-func (v *Verifyer) Link(ctx context.Context, userid, serverip string) (db.UserModel, error) {
-	return v.db.User.FindOne(db.User.ID.Equals(userid)).Update(
+func (v *Verifyer) Link(ctx context.Context, userid, serverip string) (*db.UserModel, error) {
+	return v.db.User.FindUnique(db.User.ID.Equals(userid)).Update(
 		db.User.Servers.Link(
 			db.Server.IP.Equals(serverip),
 		),

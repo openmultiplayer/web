@@ -15,13 +15,13 @@ func (s *UsersService) patch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var user db.UserModel
+	var user *db.UserModel
 	if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
 		web.StatusBadRequest(w, err)
 		return
 	}
 
-	user, err := s.db.User.FindOne(db.User.ID.Equals(ai.Cookie.UserID)).Update(
+	user, err := s.db.User.FindUnique(db.User.ID.Equals(ai.Cookie.UserID)).Update(
 	// TODO: Waiting for Prisma update.
 	// db.User.Email.SetIfPresent(user.Email),
 	// db.User.Name.SetIfPresent(user.Name),

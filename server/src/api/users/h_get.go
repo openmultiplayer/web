@@ -16,7 +16,7 @@ func (s *UsersService) get(w http.ResponseWriter, r *http.Request) {
 	}
 
 	user, err := s.db.User.
-		FindOne(db.User.ID.Equals(ai.Cookie.UserID)).
+		FindUnique(db.User.ID.Equals(ai.Cookie.UserID)).
 		With(
 			db.User.Github.Fetch(),
 			db.User.Discord.Fetch(),

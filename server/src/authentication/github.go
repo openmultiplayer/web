@@ -83,20 +83,20 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 	}
 
 	// Attempt to find a user via their associated GitHub profile
-	if usergh, err := p.db.GitHub.FindOne(
+	if usergh, err := p.db.GitHub.FindUnique(
 		db.GitHub.Email.Equals(email),
 	).With(
 		db.GitHub.User.Fetch(),
 	).Exec(ctx); err == nil {
 		u := usergh.User()
-		return &u, err
+		return u, err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
 	// are, get their existing account. If not, create a new account.
-	var user db.UserModel
+	var user *db.UserModel
 	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
-		user, err = p.db.User.FindOne(
+		user, err = p.db.User.FindUnique(
 			db.User.ID.Equals(existing.Cookie.UserID),
 		).Exec(ctx)
 		if err != nil {
@@ -135,5 +135,5 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 		return nil, err
 	}
 
-	return &user, nil
+	return user, nil
 }

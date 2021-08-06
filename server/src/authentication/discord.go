@@ -109,20 +109,20 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 	}
 
 	// Attempt to find a user via their associated Discord profile
-	if userdc, err := p.db.Discord.FindOne(
+	if userdc, err := p.db.Discord.FindUnique(
 		db.Discord.Email.Equals(email),
 	).With(
 		db.Discord.User.Fetch(),
 	).Exec(ctx); err == nil {
 		u := userdc.User()
-		return &u, err
+		return u, err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
 	// are, get their existing account. If not, create a new account.
-	var user db.UserModel
+	var user *db.UserModel
 	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
-		user, err = p.db.User.FindOne(
+		user, err = p.db.User.FindUnique(
 			db.User.ID.Equals(existing.Cookie.UserID),
 		).Exec(ctx)
 		if err != nil {
@@ -162,5 +162,5 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 		return nil, err
 	}
 
-	return &user, nil
+	return user, nil
 }
