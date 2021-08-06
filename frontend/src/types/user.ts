@@ -1,6 +1,98 @@
 /* Do not change, this code is generated from Golang structs */
 
 
+export class TagModel {
+    id: string;
+    name: string;
+    posts: PostModel[];
+
+    static createFrom(source: any = {}) {
+        return new TagModel(source);
+    }
+
+    constructor(source: any = {}) {
+        if ('string' === typeof source) source = JSON.parse(source);
+        this.id = source["id"];
+        this.name = source["name"];
+        this.posts = this.convertValues(source["posts"], PostModel);
+    }
+
+	convertValues(a: any, classs: any, asMap: boolean = false): any {
+	    if (!a) {
+	        return a;
+	    }
+	    if (a.slice) {
+	        return (a as any[]).map(elem => this.convertValues(elem, classs));
+	    } else if ("object" === typeof a) {
+	        if (asMap) {
+	            for (const key of Object.keys(a)) {
+	                a[key] = new classs(a[key]);
+	            }
+	            return a;
+	        }
+	        return new classs(a);
+	    }
+	    return a;
+	}
+}
+export class PostModel {
+    id: string;
+    slug: string;
+    title: string;
+    body: string;
+    short: string;
+    createdAt: Time;
+    updatedAt: Time;
+    deletedAt?: Time;
+    userId: string;
+    topicId?: string;
+    postId?: string;
+    author?: UserModel;
+    replyTo?: PostModel;
+    replies: PostModel[];
+    tags: TagModel[];
+
+    static createFrom(source: any = {}) {
+        return new PostModel(source);
+    }
+
+    constructor(source: any = {}) {
+        if ('string' === typeof source) source = JSON.parse(source);
+        this.id = source["id"];
+        this.slug = source["slug"];
+        this.title = source["title"];
+        this.body = source["body"];
+        this.short = source["short"];
+        this.createdAt = this.convertValues(source["createdAt"], Time);
+        this.updatedAt = this.convertValues(source["updatedAt"], Time);
+        this.deletedAt = this.convertValues(source["deletedAt"], Time);
+        this.userId = source["userId"];
+        this.topicId = source["topicId"];
+        this.postId = source["postId"];
+        this.author = this.convertValues(source["author"], UserModel);
+        this.replyTo = this.convertValues(source["replyTo"], PostModel);
+        this.replies = this.convertValues(source["replies"], PostModel);
+        this.tags = this.convertValues(source["tags"], TagModel);
+    }
+
+	convertValues(a: any, classs: any, asMap: boolean = false): any {
+	    if (!a) {
+	        return a;
+	    }
+	    if (a.slice) {
+	        return (a as any[]).map(elem => this.convertValues(elem, classs));
+	    } else if ("object" === typeof a) {
+	        if (asMap) {
+	            for (const key of Object.keys(a)) {
+	                a[key] = new classs(a[key]);
+	            }
+	            return a;
+	        }
+	        return new classs(a);
+	    }
+	    return a;
+	}
+}
 export class RuleModel {
     id: number;
     name: string;
@@ -194,12 +286,14 @@ export class UserModel {
     email: string;
     authMethod: string;
     name: string;
+    bio?: string;
     admin: boolean;
     createdAt: Time;
     updatedAt: Time;
     github?: GitHubModel;
     discord?: DiscordModel;
     servers: ServerModel[];
+    posts: PostModel[];
 
     static createFrom(source: any = {}) {
         return new UserModel(source);
@@ -211,12 +305,14 @@ export class UserModel {
         this.email = source["email"];
         this.authMethod = source["authMethod"];
         this.name = source["name"];
+        this.bio = source["bio"];
         this.admin = source["admin"];
         this.createdAt = this.convertValues(source["createdAt"], Time);
         this.updatedAt = this.convertValues(source["updatedAt"], Time);
         this.github = this.convertValues(source["github"], GitHubModel);
         this.discord = this.convertValues(source["discord"], DiscordModel);
         this.servers = this.convertValues(source["servers"], ServerModel);
+        this.posts = this.convertValues(source["posts"], PostModel);
     }
 
 	convertValues(a: any, classs: any, asMap: boolean = false): any {

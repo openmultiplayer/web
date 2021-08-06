@@ -22,10 +22,12 @@ model User {
   github     GitHub?
   discord    Discord?
 
-  name  String
+  name  String  @db.VarChar(30)
+  bio   String?
   admin Boolean @default(false)
 
   servers Server[]
+  posts   Post[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -86,4 +88,33 @@ model Rule {
   serverId String?
 
   @@unique([name, serverId], name: "Rule_serverId_rule_name_index")
+}
+
+model Post {
+  id String @id @default(cuid())
+
+  slug    String @unique
+  title   String
+  body    String
+  short   String
+  author  User   @relation(fields: [userId], references: [id])
+  thread  Post?  @relation("PostToThread", fields: [postId], references: [id])
+  replyTo Post?  @relation("PostToPost", fields: [postId], references: [id])
+  replies Post[] @relation("PostToPost")
+  tags    Tag[]  @relation("TagToPost")
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  userId String
+  postId String?
+  Post   Post[]  @relation("PostToThread")
+}
+
+model Tag {
+  id String @id @default(cuid())
+
+  name  String @unique
+  posts Post[] @relation("TagToPost")
 }
