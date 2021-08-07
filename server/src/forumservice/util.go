@@ -1,4 +1,4 @@
-package forum
+package forumservice
 
 import (
 	"math"

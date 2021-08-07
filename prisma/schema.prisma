@@ -93,23 +93,28 @@ model Rule {
 model Post {
   id String @id @default(cuid())
 
-  slug    String @unique
-  title   String
+  // For threads
+  title String?
+  slug  String? @unique
+
+  // For posts
   body    String
   short   String
-  author  User   @relation(fields: [userId], references: [id])
-  thread  Post?  @relation("PostToThread", fields: [postId], references: [id])
-  replyTo Post?  @relation("PostToPost", fields: [postId], references: [id])
-  replies Post[] @relation("PostToPost")
-  tags    Tag[]  @relation("TagToPost")
+  first   Boolean
+  author  User    @relation(fields: [userId], references: [id])
+  root    Post?   @relation("PostToRoot", fields: [rootPostId], references: [id])
+  posts   Post[]  @relation("PostToRoot")
+  replyTo Post?   @relation("ReplyToPost", fields: [replyPostId], references: [id])
+  replies Post[]  @relation("ReplyToPost")
+  tags    Tag[]   @relation("TagToPost")
 
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
   deletedAt DateTime?
 
-  userId String
-  postId String?
-  Post   Post[]  @relation("PostToThread")
+  userId      String
+  rootPostId  String?
+  replyPostId String?
 }
 
 model Tag {

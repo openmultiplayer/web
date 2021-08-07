@@ -5,6 +5,8 @@ tasks:
     deps: [build]
     cmds:
       - ./server.exe
+    sources:
+      - server/**/*.go
 
   build:
     cmds:
@@ -32,8 +34,7 @@ tasks:
 
   migrate:
     cmds:
-      - npx @prisma/cli migrate save --experimental
-      - npx @prisma/cli migrate up --experimental
+      - npx prisma migrate dev
 
   dbuild:
     cmds:

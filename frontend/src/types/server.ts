@@ -37,17 +37,20 @@ export class TagModel {
 }
 export class PostModel {
     id: string;
-    slug: string;
-    title: string;
+    title?: string;
+    slug?: string;
     body: string;
     short: string;
+    first: boolean;
     createdAt: Time;
     updatedAt: Time;
     deletedAt?: Time;
     userId: string;
-    topicId?: string;
-    postId?: string;
+    replyPostId?: string;
+    rootPostId?: string;
     author?: UserModel;
+    root?: PostModel;
+    posts: PostModel[];
     replyTo?: PostModel;
     replies: PostModel[];
     tags: TagModel[];
@@ -59,17 +62,20 @@ export class PostModel {
     constructor(source: any = {}) {
         if ('string' === typeof source) source = JSON.parse(source);
         this.id = source["id"];
-        this.slug = source["slug"];
         this.title = source["title"];
+        this.slug = source["slug"];
         this.body = source["body"];
         this.short = source["short"];
+        this.first = source["first"];
         this.createdAt = this.convertValues(source["createdAt"], Time);
         this.updatedAt = this.convertValues(source["updatedAt"], Time);
         this.deletedAt = this.convertValues(source["deletedAt"], Time);
         this.userId = source["userId"];
-        this.topicId = source["topicId"];
-        this.postId = source["postId"];
+        this.replyPostId = source["replyPostId"];
+        this.rootPostId = source["rootPostId"];
         this.author = this.convertValues(source["author"], UserModel);
+        this.root = this.convertValues(source["root"], PostModel);
+        this.posts = this.convertValues(source["posts"], PostModel);
         this.replyTo = this.convertValues(source["replyTo"], PostModel);
         this.replies = this.convertValues(source["replies"], PostModel);
         this.tags = this.convertValues(source["tags"], TagModel);
