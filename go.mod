@@ -6,6 +6,7 @@ require (
 	github.com/PuerkitoBio/goquery v1.6.0
 	github.com/Southclaws/go-samp-query v1.1.3
 	github.com/Southclaws/qstring v1.1.0
+	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
 	github.com/blevesearch/bleve v1.0.14
 	github.com/bwmarrin/discordgo v0.22.0
 	github.com/cenkalti/backoff v2.2.1+incompatible
@@ -35,6 +36,7 @@ require (
 	github.com/tkrajina/go-reflector v0.5.4 // indirect
 	github.com/tkrajina/typescriptify-golang-structs v0.1.3
 	go.uber.org/fx v1.13.1
+	go.uber.org/ratelimit v0.2.0 // indirect
 	go.uber.org/zap v1.16.0
 	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102 // indirect
 	golang.org/x/oauth2 v0.0.0-20201203001011-0b49973bad19

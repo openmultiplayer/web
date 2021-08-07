@@ -9,24 +9,23 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-type patchBody struct {
-	Title string `json:"parent" valid:"stringlength(1|64)"`
-	Body  string `json:"body"   valid:"stringlength(1|65535)"`
+type postPostBody struct {
+	Body string `json:"body"   valid:"required,stringlength(1|65535)"`
 }
 
-func (s *ForumService) patch(w http.ResponseWriter, r *http.Request) {
+func (s *ForumService) postPost(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	info, ok := authentication.GetAuthenticationInfo(w, r)
 	if !ok {
 		return
 	}
 
-	var b patchBody
-	if !web.ParseBody(w, r, b) {
+	var b postPostBody
+	if !web.ParseBody(w, r, &b) {
 		return
 	}
 
-	post, err := s.repo.EditPost(r.Context(), info.Cookie.UserID, id, &b.Title, &b.Body)
+	post, err := s.repo.CreatePost(r.Context(), b.Body, info.Cookie.UserID, id)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

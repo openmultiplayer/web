@@ -5,8 +5,6 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Southclaws/qstring"
-
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -19,8 +17,7 @@ type listParams struct {
 
 func (s *ForumService) list(w http.ResponseWriter, r *http.Request) {
 	var p listParams
-	if err := qstring.Unmarshal(r.URL.Query(), &p); err != nil {
-		web.StatusBadRequest(w, err)
+	if !web.ParseQuery(w, r, &p) {
 		return
 	}
 

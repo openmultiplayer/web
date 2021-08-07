@@ -23,7 +23,11 @@ func New(repo forumservice.Repository) *ForumService {
 
 	svc.R.
 		With(authentication.MustBeAuthenticated).
-		Post("/{id}", svc.post)
+		Post("/", svc.postThread)
+
+	svc.R.
+		With(authentication.MustBeAuthenticated).
+		Post("/{id}", svc.postPost)
 
 	svc.R.
 		With(authentication.MustBeAuthenticated).

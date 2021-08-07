@@ -24,5 +24,7 @@ func New(auth *authentication.State, db *db.PrismaClient) *UsersService {
 		With(authentication.MustBeAuthenticated).
 		Patch("/self", svc.patch)
 
+	svc.R.Get("/dev", svc.dev)
+
 	return svc
 }

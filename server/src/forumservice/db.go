@@ -2,6 +2,7 @@ package forumservice
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"time"
 
@@ -9,6 +10,12 @@ import (
 	"github.com/prisma/prisma-client-go/runtime/types"
 
 	"github.com/openmultiplayer/web/server/src/db"
+)
+
+var (
+	ErrNoTitle      = errors.New("missing title")
+	ErrNoBody       = errors.New("missing body")
+	ErrUnauthorised = errors.New("unauthorised")
 )
 
 type DB struct {
@@ -73,11 +80,28 @@ func (d *DB) CreatePost(
 	return FromModel(post), nil
 }
 
-func (d *DB) EditPost(ctx context.Context, id string, title *string, body *string) (*Post, error) {
-	post, err := d.db.Post.FindUnique(db.Post.ID.Equals(id)).Update(
-		db.Post.Title.SetIfPresent(title),
-		db.Post.Body.SetIfPresent(body),
-	).Exec(ctx)
+func (d *DB) EditPost(ctx context.Context, authorID, id string, title *string, body *string) (*Post, error) {
+	// This could probably be optimised. I am too lazy to do it rn.
+	post, err := d.db.Post.
+		FindUnique(
+			db.Post.ID.Equals(id),
+		).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+	if post.Author().ID != authorID {
+		return nil, ErrUnauthorised
+	}
+
+	post, err = d.db.Post.
+		FindUnique(
+			db.Post.ID.Equals(id),
+		).
+		Update(
+			db.Post.Title.SetIfPresent(title),
+			db.Post.Body.SetIfPresent(body),
+		).Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -85,9 +109,22 @@ func (d *DB) EditPost(ctx context.Context, id string, title *string, body *strin
 	return FromModel(post), err
 }
 
-func (d *DB) DeletePost(ctx context.Context, id string) error {
-	_, err := d.db.Post.
-		FindUnique(db.Post.ID.Equals(id)).
+func (d *DB) DeletePost(ctx context.Context, authorID, postID string) error {
+	// This could probably be optimised. I am too lazy to do it rn.
+	post, err := d.db.Post.
+		FindUnique(
+			db.Post.ID.Equals(postID),
+		).
+		Exec(ctx)
+	if err != nil {
+		return err
+	}
+	if post.Author().ID != authorID {
+		return ErrUnauthorised
+	}
+
+	_, err = d.db.Post.
+		FindUnique(db.Post.ID.Equals(postID)).
 		Update(
 			db.Post.DeletedAt.Set(time.Now()),
 		).
@@ -112,6 +149,7 @@ func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, so
 
 	result := []Post{}
 	for _, p := range posts {
+		p.Body = ""
 		result = append(result, *FromModel(&p))
 	}
 

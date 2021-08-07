@@ -4,21 +4,19 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/Southclaws/qstring"
 	"github.com/go-chi/chi"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
 type getParams struct {
-	Max  int `qstring:"max"`
+	Max  int `qstring:"max"  valid:"range(1|50)"`
 	Skip int `qstring:"skip"`
 }
 
 func (s *ForumService) get(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	var p getParams
-	if err := qstring.Unmarshal(r.URL.Query(), &p); err != nil {
-		web.StatusBadRequest(w, err)
+	if !web.ParseQuery(w, r, &p) {
 		return
 	}
 
