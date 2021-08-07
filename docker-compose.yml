@@ -69,6 +69,7 @@ services:
       traefik.http.routers.omp_index_minio.rule: Host(`assets.open.mp`)
       traefik.http.routers.omp_index_minio.entrypoints: https
       traefik.http.routers.omp_index_minio.tls.certresolver: default
+      traefik.http.routers.omp_index_minio.loadbalancer.server.port: "9000"
 
   prometheus:
     image: prom/prometheus
