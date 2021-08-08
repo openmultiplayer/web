@@ -1,12 +1,13 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formatRelative } from "date-fns";
 import { map } from "lodash/fp";
-import { GetStaticPropsContext, GetStaticPropsResult } from "next";
+import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import ReactMarkdown from "react-markdown";
+import admonitions from "remark-admonitions";
 import Editor from "rich-markdown-editor";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
 import { PostModel } from "src/types/server";
@@ -94,6 +95,12 @@ const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
             onChange={(v) => setBody(v)}
             placeholder="Your post content..."
             className="mv2"
+            disableExtensions={[
+              "container_notice",
+              "table",
+              "checkbox_list",
+              "placeholder",
+            ]}
           />
         )}
 
@@ -138,9 +145,9 @@ const Page: FC<Props> = ({ id, posts }) => {
   );
 };
 
-export async function getStaticProps(
-  context: GetStaticPropsContext<{ slug: string[] }>
-): Promise<GetStaticPropsResult<Props>> {
+export async function getServerSideProps(
+  context: GetServerSidePropsContext<{ slug: string[] }>
+): Promise<GetServerSidePropsResult<Props>> {
   const slug = context?.params?.slug;
 
   const resp = await apiSSP<PostModel[]>(`/forum/${slug}`);
@@ -162,13 +169,6 @@ export async function getStaticProps(
       id: posts[0].id,
       posts: posts,
     },
-  };
-}
-
-export function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: true,
   };
 }
 
