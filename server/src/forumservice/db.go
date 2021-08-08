@@ -140,6 +140,7 @@ func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, so
 			db.Post.CreatedAt.Before(before),
 			db.Post.DeletedAt.IsNull(),
 		).
+		With(db.Post.Author.Fetch()).
 		Take(max).
 		OrderBy(db.Post.CreatedAt.Order(types.Direction(sort))).
 		Exec(ctx)
@@ -156,21 +157,22 @@ func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, so
 	return result, nil
 }
 
-func (d *DB) GetPosts(ctx context.Context, threadID string, max, skip int) ([]Post, error) {
+func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int) ([]Post, error) {
 	posts, err := d.db.Post.
 		FindMany(
 			db.Post.Or(
 				db.Post.And(
 					db.Post.First.Equals(true),
-					db.Post.ID.Equals(threadID),
+					db.Post.Slug.Equals(slug),
 				),
 				db.Post.And(
 					db.Post.First.Equals(false),
-					db.Post.Root.Where(db.Post.ID.Equals(threadID)),
+					db.Post.Root.Where(db.Post.Slug.Equals(slug)),
 				),
 			),
 			db.Post.DeletedAt.IsNull(),
 		).
+		With(db.Post.Author.Fetch()).
 		Take(max).
 		Skip(skip).
 		OrderBy(db.Post.CreatedAt.Order(types.ASC)).

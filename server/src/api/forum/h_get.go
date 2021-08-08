@@ -14,7 +14,7 @@ type getParams struct {
 }
 
 func (s *ForumService) get(w http.ResponseWriter, r *http.Request) {
-	id := chi.URLParam(r, "id")
+	slug := chi.URLParam(r, "slug")
 	var p getParams
 	if !web.ParseQuery(w, r, &p) {
 		return
@@ -26,7 +26,7 @@ func (s *ForumService) get(w http.ResponseWriter, r *http.Request) {
 		p.Max = 100
 	}
 
-	posts, err := s.repo.GetPosts(r.Context(), id, p.Max, p.Skip)
+	posts, err := s.repo.GetPosts(r.Context(), slug, p.Max, p.Skip)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

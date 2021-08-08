@@ -19,7 +19,7 @@ func New(repo forumservice.Repository) *ForumService {
 		Get("/", svc.list)
 
 	svc.R.
-		Get("/{id}", svc.get)
+		Get("/{slug}", svc.get)
 
 	svc.R.
 		With(authentication.MustBeAuthenticated).

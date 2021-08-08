@@ -6,6 +6,16 @@ import (
 	"github.com/openmultiplayer/web/server/src/db"
 )
 
+type Author struct {
+	ID        string    `json:"id"`
+	Email     string    `json:"email"`
+	Name      string    `json:"name"`
+	Bio       *string   `json:"bio"`
+	Admin     bool      `json:"admin"`
+	CreatedAt time.Time `json:"createdAt"`
+	UpdatedAt time.Time `json:"updatedAt"`
+}
+
 type Post struct {
 	ID          string     `json:"id"`
 	Title       *string    `json:"title"`
@@ -19,6 +29,7 @@ type Post struct {
 	UserID      string     `json:"userId"`
 	ReplyPostID *string    `json:"replyPostId"`
 	RootPostID  *string    `json:"rootPostId"`
+	Author      Author     `json:"author"`
 }
 
 func FromModel(u *db.PostModel) (w *Post) {
@@ -35,24 +46,14 @@ func FromModel(u *db.PostModel) (w *Post) {
 		UserID:      u.InnerPost.UserID,
 		ReplyPostID: u.InnerPost.ReplyPostID,
 		RootPostID:  u.InnerPost.RootPostID,
-	}
-}
-
-func (w *Post) ToModel() *db.PostModel {
-	return &db.PostModel{
-		InnerPost: db.InnerPost{
-			ID:          w.ID,
-			Slug:        w.Slug,
-			Title:       w.Title,
-			Body:        w.Body,
-			Short:       w.Short,
-			First:       w.First,
-			CreatedAt:   w.CreatedAt,
-			UpdatedAt:   w.UpdatedAt,
-			DeletedAt:   w.DeletedAt,
-			UserID:      w.UserID,
-			ReplyPostID: w.ReplyPostID,
-			RootPostID:  w.RootPostID,
+		Author: Author{
+			ID:        u.RelationsPost.Author.InnerUser.ID,
+			Email:     u.RelationsPost.Author.InnerUser.Email,
+			Name:      u.RelationsPost.Author.InnerUser.Name,
+			Bio:       u.RelationsPost.Author.InnerUser.Bio,
+			Admin:     u.RelationsPost.Author.InnerUser.Admin,
+			CreatedAt: u.RelationsPost.Author.InnerUser.CreatedAt,
+			UpdatedAt: u.RelationsPost.Author.InnerUser.UpdatedAt,
 		},
 	}
 }

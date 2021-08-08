@@ -23,5 +23,5 @@ type Repository interface {
 	DeletePost(ctx context.Context, authorID, postID string) error
 
 	GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int) ([]Post, error)
-	GetPosts(ctx context.Context, threadID string, max, skip int) ([]Post, error)
+	GetPosts(ctx context.Context, slug string, max, skip int) ([]Post, error)
 }
