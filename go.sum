@@ -292,6 +292,8 @@ github.com/sendgrid/rest v2.6.2+incompatible h1:zGMNhccsPkIc8SvU9x+qdDz2qhFoGUPG
 github.com/sendgrid/rest v2.6.2+incompatible/go.mod h1:kXX7q3jZtJXK5c5qK83bSGMdV6tsOE70KbHoqJls4lE=
 github.com/sendgrid/sendgrid-go v3.7.2+incompatible h1:ePQr9ns8so+28whk+gLKRYiyI5IiCESkDIqy7cjiwLg=
 github.com/sendgrid/sendgrid-go v3.7.2+incompatible/go.mod h1:QRQt+LX/NmgVEvmdRw0VT/QgUn499+iza2FnDca9fg8=
+github.com/sethvargo/go-limiter v0.7.0 h1:CSvIHUxzNBVmsopHcMmYANZMsJFFJTi9kO+Ms+EYIhM=
+github.com/sethvargo/go-limiter v0.7.0/go.mod h1:C0kbSFbiriE5k2FFOe18M1YZbAR2Fiwf72uGu0CXCcU=
 github.com/shopspring/decimal v1.2.0 h1:abSATXmQEYyShuxI4/vyW3tV1MrKAJzCZ/0zLUXYbsQ=
 github.com/shopspring/decimal v1.2.0/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
 github.com/spf13/afero v1.1.2/go.mod h1:j4pytiNVoe2o6bmDsKpLACNPDBIoEAkihy7loJ1B0CQ=

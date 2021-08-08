@@ -14,6 +14,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/version"
 	"github.com/openmultiplayer/web/server/src/web"
+	"github.com/openmultiplayer/web/server/src/web/ratelimiter"
 )
 
 func New(lc fx.Lifecycle, auther *authentication.State) chi.Router {
@@ -38,6 +39,7 @@ func New(lc fx.Lifecycle, auther *authentication.State) chi.Router {
 			MaxAge:           300,
 		}),
 		auther.WithAuthentication,
+		ratelimiter.WithRateLimit(1000),
 	)
 
 	router.Get("/version", func(w http.ResponseWriter, r *http.Request) {
