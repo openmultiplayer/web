@@ -56,8 +56,8 @@ func (a *State) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
 		Name:     secureCookieName,
 		Value:    encoded,
 		Path:     "/",
-		Domain:   ".open.mp",
-		Secure:   true,
+		Domain:   "localhost",
+		Secure:   false,
 		HttpOnly: false,
 	})
 }

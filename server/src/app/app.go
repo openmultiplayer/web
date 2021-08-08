@@ -9,12 +9,14 @@ import (
 	"github.com/openmultiplayer/web/server/src/api"
 	"github.com/openmultiplayer/web/server/src/api/auth"
 	"github.com/openmultiplayer/web/server/src/api/docs"
+	"github.com/openmultiplayer/web/server/src/api/forum"
 	"github.com/openmultiplayer/web/server/src/api/legacy"
 	"github.com/openmultiplayer/web/server/src/api/servers"
 	"github.com/openmultiplayer/web/server/src/api/users"
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/docsindex"
+	"github.com/openmultiplayer/web/server/src/forumservice"
 	"github.com/openmultiplayer/web/server/src/mailer"
 	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
@@ -46,6 +48,7 @@ func Start(ctx context.Context) error {
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
 			api.New,
+			forumservice.New,
 
 			// Route group handlers
 			// Note:
@@ -56,6 +59,7 @@ func Start(ctx context.Context) error {
 			docs.New,
 			auth.New,
 			users.New,
+			forum.New,
 		),
 		fx.Invoke(
 			// Route group handlers from above are mounted here:
@@ -65,6 +69,7 @@ func Start(ctx context.Context) error {
 				docsService *docs.DocsService,
 				authService *auth.AuthService,
 				usersService *users.UsersService,
+				forumService *forum.ForumService,
 
 				// The router to mount the service handlers onto.
 				router chi.Router,
@@ -74,6 +79,7 @@ func Start(ctx context.Context) error {
 				router.Mount("/docs", docsService.R)
 				router.Mount("/auth", authService.R)
 				router.Mount("/users", usersService.R)
+				router.Mount("/forum", forumService.R)
 			},
 		),
 	)

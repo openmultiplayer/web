@@ -6,6 +6,7 @@ require (
 	github.com/PuerkitoBio/goquery v1.6.0
 	github.com/Southclaws/go-samp-query v1.1.3
 	github.com/Southclaws/qstring v1.1.0
+	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
 	github.com/blevesearch/bleve v1.0.14
 	github.com/bwmarrin/discordgo v0.22.0
 	github.com/cenkalti/backoff v2.2.1+incompatible
@@ -17,6 +18,7 @@ require (
 	github.com/google/go-github/v28 v28.1.1
 	github.com/gorilla/schema v1.2.0
 	github.com/gorilla/securecookie v1.1.1
+	github.com/gosimple/slug v1.10.0 // indirect
 	github.com/iancoleman/strcase v0.0.0-20190422225806-e506e3ef7365 // indirect
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
@@ -26,6 +28,7 @@ require (
 	github.com/russross/blackfriday v1.6.0
 	github.com/sendgrid/rest v2.6.2+incompatible // indirect
 	github.com/sendgrid/sendgrid-go v3.7.2+incompatible
+	github.com/sethvargo/go-limiter v0.7.0 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
 	github.com/streadway/amqp v1.0.0
 	github.com/stretchr/testify v1.6.1
@@ -34,6 +37,7 @@ require (
 	github.com/tkrajina/go-reflector v0.5.4 // indirect
 	github.com/tkrajina/typescriptify-golang-structs v0.1.3
 	go.uber.org/fx v1.13.1
+	go.uber.org/ratelimit v0.2.0 // indirect
 	go.uber.org/zap v1.16.0
 	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102 // indirect
 	golang.org/x/oauth2 v0.0.0-20201203001011-0b49973bad19

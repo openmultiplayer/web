@@ -4,7 +4,8 @@ import { APIError } from "src/types/error";
 import { Result } from "./result";
 
 // TODO: Switch based on dev/prod or load from env vars
-const API_ADDRESS = "https://api.open.mp";
+// const API_ADDRESS = "https://api.open.mp";
+const API_ADDRESS = "http://localhost";
 
 const success = (code: number) => code >= 200 && code <= 299;
 
