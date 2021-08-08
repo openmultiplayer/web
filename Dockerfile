@@ -35,4 +35,4 @@ RUN task docsindex
 # Build the server binary
 RUN task build
 
-ENTRYPOINT [ "/server/server.exe" ]
+ENTRYPOINT [ "task", "production" ]

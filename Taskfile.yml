@@ -13,6 +13,16 @@ tasks:
       VERSION:
         sh: git describe --always --dirty --tags
 
+  # Production deployment run - migrate DB first, then
+  production:
+    cmds:
+      - npx prisma migrate deploy
+      - ./server.exe
+
+  deploy:
+    cmds:
+      - docker compose up --detach
+
   services:
     cmds:
       - docker-compose -f .\docker-compose.dev.yml up -d
