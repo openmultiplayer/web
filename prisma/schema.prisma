@@ -22,7 +22,7 @@ model User {
   github     GitHub?
   discord    Discord?
 
-  name  String  @db.VarChar(30)
+  name  String  @db.VarChar(64)
   bio   String?
   admin Boolean @default(false)
 

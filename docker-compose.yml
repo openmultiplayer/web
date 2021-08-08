@@ -107,7 +107,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
-      - 8081:80
+      - 5433:80
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway

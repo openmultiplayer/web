@@ -12,7 +12,7 @@ DROP INDEX "GitHub_userId_unique";
 
 -- AlterTable
 ALTER TABLE "User" ADD COLUMN     "bio" TEXT,
-ALTER COLUMN "name" SET DATA TYPE VARCHAR(30);
+ALTER COLUMN "name" SET DATA TYPE VARCHAR(64);
 
 -- CreateTable
 CREATE TABLE "Post" (
