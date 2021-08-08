@@ -34,23 +34,30 @@ func (d *DB) CreateThread(
 	slug := slug.Make(title)
 	short := makeShortBody(body)
 
-	post, err := d.db.Post.CreateOne(
-		db.Post.Body.Set(body),
-		db.Post.Short.Set(short),
-		db.Post.First.Set(true),
-		db.Post.Author.Link(db.User.ID.Equals(authorID)),
+	post, err := d.db.Post.
+		CreateOne(
+			db.Post.Body.Set(body),
+			db.Post.Short.Set(short),
+			db.Post.First.Set(true),
+			db.Post.Author.Link(db.User.ID.Equals(authorID)),
 
-		db.Post.Title.Set(title),
-	).Exec(ctx)
+			db.Post.Title.Set(title),
+		).
+		With(db.Post.Author.Fetch()).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
 
-	post, err = d.db.Post.FindUnique(
-		db.Post.ID.Equals(post.ID),
-	).Update(
-		db.Post.Slug.Set(fmt.Sprintf("%s-%s", post.ID, slug)),
-	).Exec(ctx)
+	post, err = d.db.Post.
+		FindUnique(
+			db.Post.ID.Equals(post.ID),
+		).
+		With(db.Post.Author.Fetch()).
+		Update(
+			db.Post.Slug.Set(fmt.Sprintf("%s-%s", post.ID, slug)),
+		).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -65,14 +72,17 @@ func (d *DB) CreatePost(
 ) (*Post, error) {
 	short := makeShortBody(body)
 
-	post, err := d.db.Post.CreateOne(
-		db.Post.Body.Set(body),
-		db.Post.Short.Set(short),
-		db.Post.First.Set(false),
-		db.Post.Author.Link(db.User.ID.Equals(authorID)),
+	post, err := d.db.Post.
+		CreateOne(
+			db.Post.Body.Set(body),
+			db.Post.Short.Set(short),
+			db.Post.First.Set(false),
+			db.Post.Author.Link(db.User.ID.Equals(authorID)),
 
-		db.Post.Root.Link(db.Post.ID.Equals(parentID)),
-	).Exec(ctx)
+			db.Post.Root.Link(db.Post.ID.Equals(parentID)),
+		).
+		With(db.Post.Author.Fetch()).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -86,6 +96,7 @@ func (d *DB) EditPost(ctx context.Context, authorID, id string, title *string, b
 		FindUnique(
 			db.Post.ID.Equals(id),
 		).
+		With(db.Post.Author.Fetch()).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
@@ -98,10 +109,12 @@ func (d *DB) EditPost(ctx context.Context, authorID, id string, title *string, b
 		FindUnique(
 			db.Post.ID.Equals(id),
 		).
+		With(db.Post.Author.Fetch()).
 		Update(
 			db.Post.Title.SetIfPresent(title),
 			db.Post.Body.SetIfPresent(body),
-		).Exec(ctx)
+		).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
