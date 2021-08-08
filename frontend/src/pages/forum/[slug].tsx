@@ -1,4 +1,5 @@
 import { map } from "lodash/fp";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { FC } from "react";
 import { apiSWR } from "src/fetcher/fetcher";
@@ -46,7 +47,11 @@ const Page = () => {
   }
 
   return (
-    <div className="center">
+    <div className="center pv2">
+      <Link href="/forum">
+        <a>Back</a>
+      </Link>
+
       <PostList data={data} />
 
       <style jsx>{`
