@@ -165,8 +165,7 @@ export async function getStaticPaths(
     concat(walk("../docs")),
 
     // Filter out translations directory - these are handled separately
-    // NOTE: Currently this is not the case, these are built statically too.
-    // filter((v: string) => v.indexOf("translations") === -1),
+    filter((v: string) => v.indexOf("translations") === -1),
 
     // Filter out category content pages
     filter((v: string) => !v.endsWith("_.md")),
