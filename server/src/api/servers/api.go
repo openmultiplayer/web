@@ -33,6 +33,9 @@ func Build() fx.Option {
 			rtr := chi.NewRouter()
 			r.Mount("/servers", rtr)
 
+			// TODO: Remove this at some point.
+			r.Mount("/server", rtr)
+
 			rtr.Use(
 				cors.Handler(cors.Options{
 					AllowedOrigins: []string{
