@@ -10,4 +10,5 @@ import (
 type Repository interface {	
 	GetUser(ctx context.Context, userId string) (*db.UserModel, error)
 	GetUsers(ctx context.Context, sort types.Direction, max, skip int) ([]db.UserModel, error)
+	SetAdmin(ctx context.Context, userId string, status bool) (bool, error)
 }
