@@ -7,10 +7,10 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *UsersService) patchAdmin(w http.ResponseWriter, r *http.Request) {
+func (s *service) patchAdmin(w http.ResponseWriter, r *http.Request) {
 	type queryParams struct {
 		UserId string `json:"userId"`
-		Status bool `json:"status"`
+		Status bool   `json:"status"`
 	}
 	var p queryParams
 	if !web.ParseBody(w, r, &p) {
@@ -29,6 +29,6 @@ func (s *UsersService) patchAdmin(w http.ResponseWriter, r *http.Request) {
 
 	if !done {
 		web.StatusNotFound(w, errors.New("failed to update user"))
-		return 
+		return
 	}
 }

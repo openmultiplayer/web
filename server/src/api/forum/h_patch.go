@@ -14,7 +14,7 @@ type patchBody struct {
 	Body  string `json:"body"   valid:"stringlength(1|65535)"`
 }
 
-func (s *ForumService) patch(w http.ResponseWriter, r *http.Request) {
+func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	info, ok := authentication.GetAuthenticationInfo(w, r)
 	if !ok {

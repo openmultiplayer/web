@@ -14,7 +14,7 @@ type postThreadBody struct {
 	Tags  []string `json:"tags"  valid:"required"`
 }
 
-func (s *ForumService) postThread(w http.ResponseWriter, r *http.Request) {
+func (s *service) postThread(w http.ResponseWriter, r *http.Request) {
 	info, ok := authentication.GetAuthenticationInfo(w, r)
 	if !ok {
 		return

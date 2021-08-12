@@ -6,9 +6,10 @@ import (
 	"net/http"
 	"os"
 
+	"go.uber.org/zap"
+
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/web"
-	"go.uber.org/zap"
 )
 
 type devParams struct {
@@ -16,7 +17,7 @@ type devParams struct {
 	Secret string `qstring:"secret"`
 }
 
-func (s *UsersService) dev(w http.ResponseWriter, r *http.Request) {
+func (s *service) dev(w http.ResponseWriter, r *http.Request) {
 	secret := os.Getenv("DEV_LOGIN_SECRET")
 	if secret == "" {
 		web.StatusNotAcceptable(w, errors.New("dev login not enabled"))

@@ -10,11 +10,11 @@ import (
 
 type queryParams struct {
 	Sort types.Direction `qstring:"sort"`
-	Max  int    `qstring:"max"`	
-	Skip int `qstring:"skip"`
+	Max  int             `qstring:"max"`
+	Skip int             `qstring:"skip"`
 }
 
-func (s *UsersService) list(w http.ResponseWriter, r *http.Request) {
+func (s *service) list(w http.ResponseWriter, r *http.Request) {
 	var p queryParams
 	if !web.ParseQuery(w, r, &p) {
 		return
@@ -27,7 +27,7 @@ func (s *UsersService) list(w http.ResponseWriter, r *http.Request) {
 		p.Max = 50
 	} else if p.Max > 100 {
 		p.Max = 100
-	}	
+	}
 
 	users, err := s.repo.GetUsers(r.Context(), p.Sort, p.Max, p.Skip)
 	if err != nil {
