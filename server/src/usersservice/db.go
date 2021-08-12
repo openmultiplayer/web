@@ -46,7 +46,7 @@ func (d *DB) GetUsers(ctx context.Context, sort types.Direction, max, skip int) 
 
 func (d *DB) SetAdmin(ctx context.Context, userId string, status bool) (bool, error) {
 	_, err := d.db.User.FindUnique(db.User.ID.Equals(userId)).Update(
-		db.User.Admin.SetIfPresent(&status),
+		db.User.Admin.Set(status),
 	).Exec(ctx)
 	if err != nil {
 		return false, err
