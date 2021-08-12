@@ -109,7 +109,10 @@ func (s *PrismaStorer) GetByID(ctx context.Context, id string) (*server.All, err
 }
 
 func (s *PrismaStorer) GetByAddress(ctx context.Context, address string) (*server.All, error) {
-	r, err := s.client.Server.FindUnique(db.Server.IP.Equals(address)).Exec(ctx)
+	r, err := s.client.Server.
+		FindUnique(db.Server.IP.Equals(address)).
+		With(db.Server.Ru.Fetch()).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
