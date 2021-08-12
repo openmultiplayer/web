@@ -8,7 +8,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *ForumService) delete(w http.ResponseWriter, r *http.Request) {
+func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	info, ok := authentication.GetAuthenticationInfo(w, r)
 	if !ok {

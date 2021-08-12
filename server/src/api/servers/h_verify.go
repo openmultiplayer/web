@@ -27,7 +27,7 @@ import (
 // { "verified": false }     server ownership not verified, aborting
 // { "error": "some error" } not verified, error occurred, retrying
 //
-func (s *ServersService) vertify(w http.ResponseWriter, r *http.Request) {
+func (s *service) vertify(w http.ResponseWriter, r *http.Request) {
 	address := chi.URLParam(r, "address")
 	if address == "" {
 		web.StatusBadRequest(w, errors.New("missing address in path"))

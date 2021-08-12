@@ -15,7 +15,7 @@ type listParams struct {
 	Max    int       `qstring:"max"`
 }
 
-func (s *ForumService) list(w http.ResponseWriter, r *http.Request) {
+func (s *service) list(w http.ResponseWriter, r *http.Request) {
 	var p listParams
 	if !web.ParseQuery(w, r, &p) {
 		return

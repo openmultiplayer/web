@@ -13,7 +13,7 @@ type getParams struct {
 	Skip int `qstring:"skip"`
 }
 
-func (s *ForumService) get(w http.ResponseWriter, r *http.Request) {
+func (s *service) get(w http.ResponseWriter, r *http.Request) {
 	slug := chi.URLParam(r, "slug")
 	var p getParams
 	if !web.ParseQuery(w, r, &p) {

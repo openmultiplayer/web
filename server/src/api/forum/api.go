@@ -2,41 +2,49 @@ package forum
 
 import (
 	"github.com/go-chi/chi"
+	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/forumservice"
 	"github.com/openmultiplayer/web/server/src/web/ratelimiter"
 )
 
-type ForumService struct {
-	R    chi.Router
+type service struct {
 	repo forumservice.Repository
 }
 
-func New(repo forumservice.Repository) *ForumService {
-	svc := &ForumService{chi.NewRouter(), repo}
+func Build() fx.Option {
+	return fx.Options(
+		fx.Provide(func(repo forumservice.Repository) *service { return &service{repo} }),
+		fx.Invoke(func(
+			r chi.Router,
+			s *service,
 
-	svc.R.
-		Get("/", svc.list)
+		) {
+			rtr := chi.NewRouter()
+			r.Mount("/forum", rtr)
 
-	svc.R.
-		Get("/{slug}", svc.get)
+			rtr.
+				Get("/", s.list)
 
-	svc.R.
-		With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(5)).
-		Post("/", svc.postThread)
+			rtr.
+				Get("/{slug}", s.get)
 
-	svc.R.
-		With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
-		Post("/{id}", svc.postPost)
+			rtr.
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(5)).
+				Post("/", s.postThread)
 
-	svc.R.
-		With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
-		Patch("/{id}", svc.patch)
+			rtr.
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
+				Post("/{id}", s.postPost)
 
-	svc.R.
-		With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
-		Delete("/{id}", svc.delete)
+			rtr.
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
+				Patch("/{id}", s.patch)
 
-	return svc
+			rtr.
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
+				Delete("/{id}", s.delete)
+		}),
+	)
 }

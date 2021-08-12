@@ -13,7 +13,7 @@ type postPostBody struct {
 	Body string `json:"body"   valid:"required,stringlength(1|65535)"`
 }
 
-func (s *ForumService) postPost(w http.ResponseWriter, r *http.Request) {
+func (s *service) postPost(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	info, ok := authentication.GetAuthenticationInfo(w, r)
 	if !ok {

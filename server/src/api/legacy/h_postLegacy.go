@@ -9,12 +9,13 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/go-chi/chi"
+	"github.com/pkg/errors"
+
 	"github.com/openmultiplayer/web/server/src/server"
 	"github.com/openmultiplayer/web/server/src/web"
-	"github.com/pkg/errors"
 )
 
-func (s *LegacyService) postLegacy(w http.ResponseWriter, r *http.Request) {
+func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
 	version := chi.URLParam(r, "version")
 	port := chi.URLParam(r, "port")
 

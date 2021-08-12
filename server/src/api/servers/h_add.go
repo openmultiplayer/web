@@ -14,7 +14,7 @@ type addPayload struct {
 	IP string `json:"ip"`
 }
 
-func (s *ServersService) add(w http.ResponseWriter, r *http.Request) {
+func (s *service) add(w http.ResponseWriter, r *http.Request) {
 	var address string
 	switch r.Header.Get("Content-Type") {
 	case "application/json":
