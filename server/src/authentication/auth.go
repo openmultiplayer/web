@@ -10,6 +10,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/usersservice"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -18,6 +19,7 @@ type State struct {
 	db     *db.PrismaClient
 	sc     *securecookie.SecureCookie
 	domain string
+	users usersservice.Repository
 }
 
 // OAuthProvider describes a type that can provide an OAuth2 authentication
@@ -33,11 +35,12 @@ type OAuthProvider interface {
 }
 
 // New initialises a new authentication service
-func New(db *db.PrismaClient, cfg config.Config) *State {
+func New(db *db.PrismaClient, cfg config.Config, users usersservice.Repository) *State {
 	a := &State{
 		db:     db,
 		sc:     securecookie.New(cfg.HashKey, cfg.BlockKey),
 		domain: cfg.CookieDomain,
+		users: users,
 	}
 
 	return a
