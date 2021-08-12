@@ -32,5 +32,9 @@ func New(auth *authentication.State, db *db.PrismaClient, repo usersservice.Repo
 
 	svc.R.Get("/dev", svc.dev)
 
+	svc.R.
+		With(authentication.MustBeAuthenticated, auth.MustBeAdmin).
+		Patch("/admin", svc.patchAdmin)
+
 	return svc
 }
