@@ -3,9 +3,6 @@ networks:
   default:
     external:
       name: gateway
-  database:
-    driver: bridge
-    internal: true
 
 services:
   api:
@@ -24,9 +21,6 @@ services:
       SENDGRID_API_KEY: ${SENDGRID_API_KEY}
     ports:
       - 8000:8000
-    networks:
-      - default
-      - database
     depends_on:
       - postgres
     labels:
@@ -47,8 +41,6 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - ${DATA_DIR}/openmp-index/postgres:/var/lib/postgresql/data
-    networks:
-      - database
 
   minio:
     image: minio/minio
@@ -61,8 +53,6 @@ services:
       - 8082:9000
     volumes:
       - ${DATA_DIR}/openmp-index/minio:/data
-    networks:
-      - default
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
@@ -83,8 +73,6 @@ services:
     volumes:
       - ${DATA_DIR}/openmp-index/prometheus:/prometheus
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    networks:
-      - default
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
@@ -115,6 +103,3 @@ services:
       traefik.http.routers.omp_index_pgadmin.entrypoints: https
       traefik.http.routers.omp_index_pgadmin.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
-    networks:
-      - default
-      - database
