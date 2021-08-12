@@ -12,16 +12,17 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/version"
 	"github.com/openmultiplayer/web/server/src/web"
 	"github.com/openmultiplayer/web/server/src/web/ratelimiter"
 )
 
-func New(lc fx.Lifecycle, auther *authentication.State) chi.Router {
+func New(lc fx.Lifecycle, cfg config.Config, auther *authentication.State) chi.Router {
 	router := chi.NewRouter()
 	server := &http.Server{
 		Handler: router,
-		Addr:    "0.0.0.0:80",
+		Addr:    cfg.ListenAddr,
 	}
 
 	router.Use(

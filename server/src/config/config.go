@@ -2,21 +2,27 @@ package config
 
 import (
 	"github.com/kelseyhightower/envconfig"
+	"go.uber.org/zap/zapcore"
 )
 
 // Config represents environment variable configuration parameters
 type Config struct {
-	ListenAddr          string `default:"0.0.0.0:8080" split_words:"true"`
-	AmqpAddress         string `default:"amqp://rabbit:5672" split_words:"true"`
-	HashKey             []byte `required:"true" split_words:"true"`
-	BlockKey            []byte `required:"true" split_words:"true"`
-	GithubClientID      string `required:"true" split_words:"true"`
-	GithubClientSecret  string `required:"true" split_words:"true"`
-	DiscordClientID     string `required:"true" split_words:"true"`
-	DiscordClientSecret string `required:"true" split_words:"true"`
-	SendgridAPIKey      string `required:"true" split_words:"true"`
-	DocsSourcesPath     string `required:"false" split_words:"false" default:"docs/"`
-	DocsIndexPath       string `required:"false" split_words:"false" default:"docs.bleve"`
+	Production bool          `envconfig:"PRODUCTION" default:"false"`
+	LogLevel   zapcore.Level `envconfig:"LOG_LEVEL"  default:"info"`
+
+	DatabaseURL         string `envconfig:"DATABASE_URL"          required:"true"`
+	ListenAddr          string `envconfig:"LISTEN_ADDR"           default:"0.0.0.0:8000"`
+	CookieDomain        string `envconfig:"COOKIE_DOMAIN"         default:".open.mp"`
+	AmqpAddress         string `envconfig:"AMQP_ADDRESS"          default:"amqp://rabbit:5672"`
+	HashKey             []byte `envconfig:"HASH_KEY"              required:"true"`
+	BlockKey            []byte `envconfig:"BLOCK_KEY"             required:"true"`
+	GithubClientID      string `envconfig:"GITHUB_CLIENT_ID"      required:"true"`
+	GithubClientSecret  string `envconfig:"GITHUB_CLIENT_SECRET"  required:"true"`
+	DiscordClientID     string `envconfig:"DISCORD_CLIENT_ID"     required:"true"`
+	DiscordClientSecret string `envconfig:"DISCORD_CLIENT_SECRET" required:"true"`
+	SendgridAPIKey      string `envconfig:"SENDGRID_API_KEY"      required:"true"`
+	DocsSourcesPath     string `required:"false"                  default:"docs/"      split_words:"false" `
+	DocsIndexPath       string `required:"false"                  default:"docs.bleve" split_words:"false" `
 }
 
 func New() (c Config, err error) {

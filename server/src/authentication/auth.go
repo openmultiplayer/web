@@ -15,8 +15,9 @@ import (
 
 // State stores state for performing authentication
 type State struct {
-	db *db.PrismaClient
-	sc *securecookie.SecureCookie
+	db     *db.PrismaClient
+	sc     *securecookie.SecureCookie
+	domain string
 }
 
 // OAuthProvider describes a type that can provide an OAuth2 authentication
@@ -34,8 +35,9 @@ type OAuthProvider interface {
 // New initialises a new authentication service
 func New(db *db.PrismaClient, cfg config.Config) *State {
 	a := &State{
-		db: db,
-		sc: securecookie.New(cfg.HashKey, cfg.BlockKey),
+		db:     db,
+		sc:     securecookie.New(cfg.HashKey, cfg.BlockKey),
+		domain: cfg.CookieDomain,
 	}
 
 	return a
@@ -56,7 +58,7 @@ func (a *State) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
 		Name:     secureCookieName,
 		Value:    encoded,
 		Path:     "/",
-		Domain:   ".open.mp",
+		Domain:   a.domain,
 		Secure:   true,
 		HttpOnly: true,
 	})

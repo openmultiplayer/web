@@ -23,7 +23,7 @@ services:
       DISCORD_CLIENT_SECRET: ${DISCORD_CLIENT_SECRET}
       SENDGRID_API_KEY: ${SENDGRID_API_KEY}
     ports:
-      - 8080:80
+      - 8000:8000
     networks:
       - default
       - database
