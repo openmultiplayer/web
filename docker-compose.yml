@@ -20,6 +20,7 @@ services:
       DISCORD_CLIENT_SECRET: ${DISCORD_CLIENT_SECRET}
       SENDGRID_API_KEY: ${SENDGRID_API_KEY}
       GITHUB_TOKEN: ${GITHUB_TOKEN}
+      PACKAGES_DB: /data/packages.db
     ports:
       - 8000:8000
     volumes:

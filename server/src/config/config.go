@@ -22,9 +22,9 @@ type Config struct {
 	DiscordClientSecret string `envconfig:"DISCORD_CLIENT_SECRET" required:"true"`
 	SendgridAPIKey      string `envconfig:"SENDGRID_API_KEY"      required:"true"`
 	GithubToken         string `envconfig:"GITHUB_TOKEN"          required:"true"`
-	DocsSourcesPath     string `required:"false"                  default:"docs/"      split_words:"false" `
-	DocsIndexPath       string `required:"false"                  default:"docs.bleve" split_words:"false" `
-	PackagesDB          string `required:"false"                  default:"/data/packages.db" split_words:"true" `
+	DocsSourcesPath     string `envconfig:"DOCS_SOURCES_PATH"     required:"false" default:"docs/"`
+	DocsIndexPath       string `envconfig:"DOCS_INDEX_PATH"       required:"false" default:"docs.bleve"`
+	PackagesDB          string `envconfig:"PACKAGES_DB"           required:"false" default:"data/packages.db"`
 }
 
 func New() (c Config, err error) {

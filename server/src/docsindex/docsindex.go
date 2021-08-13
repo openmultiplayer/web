@@ -9,7 +9,9 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/blevesearch/bleve"
+	"github.com/pkg/errors"
 	"github.com/russross/blackfriday"
+	"go.uber.org/zap"
 	"gopkg.in/yaml.v2"
 
 	"github.com/openmultiplayer/web/server/src/config"
@@ -28,16 +30,17 @@ type Document struct {
 	Path string
 }
 
-func New(cfg config.Config) (*Index, error) {
+func New(l *zap.Logger, cfg config.Config) (*Index, error) {
 	i := Index{
 		path: cfg.DocsSourcesPath,
 	}
 
 	idx, err := bleve.Open(cfg.DocsIndexPath)
 	if err != nil {
+		l.Warn("could not open bleve index, creating new one", zap.String("path", cfg.DocsIndexPath))
 		idx, err = bleve.New(cfg.DocsIndexPath, bleve.NewIndexMapping())
 		if err != nil {
-			return nil, err
+			return nil, errors.Wrap(err, "failed to create new bleve db")
 		}
 	}
 	i.db = idx
