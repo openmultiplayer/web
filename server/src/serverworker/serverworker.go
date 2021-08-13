@@ -8,15 +8,15 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/server/src/scraper"
-	"github.com/openmultiplayer/web/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/server"
 )
 
 type Worker struct {
-	db serverdb.Storer
+	db server.Repository
 	sc scraper.Scraper
 }
 
-func New(lc fx.Lifecycle, db serverdb.Storer, sc scraper.Scraper) *Worker {
+func New(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper) *Worker {
 	w := &Worker{db, sc}
 
 	lc.Append(fx.Hook{

@@ -7,12 +7,12 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/server"
 	"github.com/openmultiplayer/web/server/src/serververify"
 )
 
 type service struct {
-	storer   serverdb.Storer
+	storer   server.Repository
 	queryer  queryer.Queryer
 	verifier *serververify.Verifyer
 }
@@ -20,7 +20,7 @@ type service struct {
 func Build() fx.Option {
 	return fx.Options(
 		fx.Provide(func(
-			storer serverdb.Storer,
+			storer server.Repository,
 			queryer queryer.Queryer,
 			verifier *serververify.Verifyer,
 		) *service {
