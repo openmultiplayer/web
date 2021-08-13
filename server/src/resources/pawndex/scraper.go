@@ -1,4 +1,4 @@
-package pkgscraper
+package pawndex
 
 import (
 	"bytes"
@@ -17,15 +17,13 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 	"gopkg.in/yaml.v2"
-
-	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 )
 
 // Scraper is responsible for taking a repo and checking its contents for the qualifying
 // properties of a Pawn Package. This includes the presence of one or more .inc files and optionally
 // a pawn.json or pawn.yaml file. If one of these files exists, additional information is extracted.
 type Scraper interface {
-	Scrape(context.Context, string) (*pawndex.Package, error)
+	Scrape(context.Context, string) (*Package, error)
 }
 
 type GitHubScraper struct {
@@ -36,7 +34,7 @@ func NewGitHubScraper(gh *github.Client) Scraper {
 	return &GitHubScraper{gh}
 }
 
-func (g *GitHubScraper) Scrape(ctx context.Context, name string) (*pawndex.Package, error) {
+func (g *GitHubScraper) Scrape(ctx context.Context, name string) (*Package, error) {
 	splitname := strings.Split(name, "/")
 
 	repo, resp, err := g.GitHub.Repositories.Get(ctx, splitname[0], splitname[1])
@@ -56,7 +54,7 @@ func (g *GitHubScraper) Scrape(ctx context.Context, name string) (*pawndex.Packa
 		return nil, errors.New("repository details empty")
 	}
 
-	var processedPackage pawndex.Package // the result - a package with some additional metadata
+	var processedPackage Package // the result - a package with some additional metadata
 	pkg, err := packageFromRepo(repo, meta)
 	if err != nil {
 		processedPackage, err = g.findPawnSource(ctx, repo, meta)
@@ -64,9 +62,9 @@ func (g *GitHubScraper) Scrape(ctx context.Context, name string) (*pawndex.Packa
 			return nil, err
 		}
 	} else {
-		processedPackage = pawndex.Package{
+		processedPackage = Package{
 			Package:        pkg,
-			Classification: pawndex.ClassificationPawnPackage,
+			Classification: ClassificationPawnPackage,
 		}
 	}
 
@@ -77,7 +75,7 @@ func (g *GitHubScraper) Scrape(ctx context.Context, name string) (*pawndex.Packa
 		processedPackage.Repo = meta.Repo
 	}
 
-	if processedPackage.Classification == pawndex.ClassificationInvalid {
+	if processedPackage.Classification == ClassificationInvalid {
 		return nil, nil
 	}
 
@@ -153,7 +151,7 @@ func packageFromRepo(
 	return pkg, errors.New("package does not point to a valid remote package")
 }
 
-func (g *GitHubScraper) findPawnSource(ctx context.Context, repo *github.Repository, meta versioning.DependencyMeta) (pkg pawndex.Package, err error) {
+func (g *GitHubScraper) findPawnSource(ctx context.Context, repo *github.Repository, meta versioning.DependencyMeta) (pkg Package, err error) {
 	ref, _, err := g.GitHub.Git.GetRef(ctx, meta.User, meta.Repo,
 		fmt.Sprintf("heads/%s", repo.GetDefaultBranch()))
 	if err != nil {
@@ -168,16 +166,16 @@ func (g *GitHubScraper) findPawnSource(ctx context.Context, repo *github.Reposit
 		return
 	}
 
-	pkg = pawndex.Package{Package: pawnpackage.Package{DependencyMeta: meta}}
+	pkg = Package{Package: pawnpackage.Package{DependencyMeta: meta}}
 
 	for _, file := range tree.Entries {
 		ext := filepath.Ext(file.GetPath())
 		if ext == ".inc" || ext == ".pwn" {
 			if filepath.Dir(file.GetPath()) == "." {
-				pkg.Classification = pawndex.ClassificationBarebones
+				pkg.Classification = ClassificationBarebones
 				break
 			} else {
-				pkg.Classification = pawndex.ClassificationBuried
+				pkg.Classification = ClassificationBuried
 				// no break, keep searching
 			}
 		}

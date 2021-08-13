@@ -1,4 +1,4 @@
-package pkgworker
+package pawndexworker
 
 import (
 	"context"
@@ -7,41 +7,52 @@ import (
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 
-	"github.com/openmultiplayer/web/server/src/pkgscraper"
-	"github.com/openmultiplayer/web/server/src/pkgsearcher"
 	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 )
 
-type PackageWorker struct {
-	Searcher       pkgsearcher.Searcher
-	Scraper        pkgscraper.Scraper
+type worker struct {
+	Searcher       pawndex.Searcher
+	Scraper        pawndex.Scraper
 	Storer         pawndex.Repository
 	SearchInterval time.Duration
 	ScrapeInterval time.Duration
 }
 
-func NewPackageWorker(
-	lc fx.Lifecycle,
-	searcher pkgsearcher.Searcher,
-	scraper pkgscraper.Scraper,
-	storer pawndex.Repository,
-) *PackageWorker {
-	w := &PackageWorker{
-		searcher,
-		scraper,
-		storer,
-		time.Hour * 24,
-		time.Hour * 24,
-	}
+func Build() fx.Option {
+	return fx.Options(
+		fx.Provide(
+			pawndex.NewGitHubSearcher,
+			pawndex.NewGitHubScraper,
+		),
 
-	lc.Append(fx.Hook{
-		OnStart: w.run,
-	})
+		fx.Invoke(func(
+			lc fx.Lifecycle,
+			searcher pawndex.Searcher,
+			scraper pawndex.Scraper,
+			storer pawndex.Repository,
+		) *worker {
+			w := &worker{
+				searcher,
+				scraper,
+				storer,
+				time.Hour * 24,
+				time.Hour * 24,
+			}
 
-	return w
+			lc.Append(fx.Hook{
+				OnStart: w.run,
+			})
+
+			return w
+		}),
+	)
 }
 
-func (d *PackageWorker) run(ctx context.Context) error {
+func (d *worker) run(ctx context.Context) error {
+	zap.L().Debug("starting pawndex worker",
+		zap.Duration("search_interval", d.SearchInterval),
+		zap.Duration("scrape_interval", d.ScrapeInterval))
+
 	search := time.NewTicker(d.SearchInterval)
 	scrape := time.NewTicker(d.ScrapeInterval)
 

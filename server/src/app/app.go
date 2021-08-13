@@ -15,13 +15,10 @@ import (
 	"github.com/openmultiplayer/web/server/src/logger"
 	"github.com/openmultiplayer/web/server/src/mailer"
 	"github.com/openmultiplayer/web/server/src/mailworker"
-	"github.com/openmultiplayer/web/server/src/pkgscraper"
-	"github.com/openmultiplayer/web/server/src/pkgsearcher"
-	"github.com/openmultiplayer/web/server/src/pkgworker"
+	"github.com/openmultiplayer/web/server/src/pawndexworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/resources"
-	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 	"github.com/openmultiplayer/web/server/src/scraper"
 	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/serverworker"
@@ -46,10 +43,6 @@ func Start(ctx context.Context) {
 			queryer.NewSAMPQueryer,
 			serververify.New,
 			scraper.NewPooledScraper,
-			pawndex.New,
-			pkgsearcher.NewGitHubSearcher,
-			pkgscraper.NewGitHubScraper,
-			pkgworker.NewPackageWorker,
 			serverworker.New,
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
@@ -58,6 +51,7 @@ func Start(ctx context.Context) {
 		logger.Build(),
 		api.Build(),
 		resources.Build(),
+		pawndexworker.Build(),
 	)
 
 	err := app.Start(ctx)

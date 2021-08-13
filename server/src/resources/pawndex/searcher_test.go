@@ -1,4 +1,4 @@
-package pkgsearcher_test
+package pawndex_test
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"github.com/joho/godotenv" // loads environment variables from .env
 	"golang.org/x/oauth2"
 
-	"github.com/openmultiplayer/web/server/src/pkgsearcher"
+	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 )
 
 func TestGitHubSearcher_Search(t *testing.T) {
@@ -20,7 +20,7 @@ func TestGitHubSearcher_Search(t *testing.T) {
 		panic("tests need a token to run.")
 	}
 
-	s := pkgsearcher.GitHubSearcher{
+	s := pawndex.GitHubSearcher{
 		GitHub: github.NewClient(
 			oauth2.NewClient(
 				context.Background(),

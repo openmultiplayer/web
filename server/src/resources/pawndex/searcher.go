@@ -1,4 +1,4 @@
-package pkgsearcher
+package pawndex
 
 import (
 	"context"

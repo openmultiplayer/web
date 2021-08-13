@@ -1,4 +1,4 @@
-package pkgscraper_test
+package pawndex_test
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"github.com/joho/godotenv"
 	"golang.org/x/oauth2"
 
-	"github.com/openmultiplayer/web/server/src/pkgscraper"
+	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 )
 
 func TestGitHubScraper_Scrape(t *testing.T) {
@@ -20,7 +20,7 @@ func TestGitHubScraper_Scrape(t *testing.T) {
 		panic("tests need a token to run.")
 	}
 
-	s := pkgscraper.GitHubScraper{
+	s := pawndex.GitHubScraper{
 		GitHub: github.NewClient(
 			oauth2.NewClient(
 				context.Background(),
