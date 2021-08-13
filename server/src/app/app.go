@@ -11,7 +11,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/docsindex"
-	"github.com/openmultiplayer/web/server/src/forumservice"
+	"github.com/openmultiplayer/web/server/src/forum"
 	"github.com/openmultiplayer/web/server/src/logger"
 	"github.com/openmultiplayer/web/server/src/mailer"
 	"github.com/openmultiplayer/web/server/src/mailworker"
@@ -46,7 +46,7 @@ func Start(ctx context.Context) {
 			serverworker.New,
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
-			forumservice.New,
+			forum.New,
 			usersservice.New,
 		),
 

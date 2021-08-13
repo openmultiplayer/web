@@ -1,4 +1,4 @@
-package forumservice
+package forum
 
 import (
 	"time"

@@ -5,17 +5,17 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/forumservice"
+	"github.com/openmultiplayer/web/server/src/forum"
 	"github.com/openmultiplayer/web/server/src/web/ratelimiter"
 )
 
 type service struct {
-	repo forumservice.Repository
+	repo forum.Repository
 }
 
 func Build() fx.Option {
 	return fx.Options(
-		fx.Provide(func(repo forumservice.Repository) *service { return &service{repo} }),
+		fx.Provide(func(repo forum.Repository) *service { return &service{repo} }),
 		fx.Invoke(func(
 			r chi.Router,
 			s *service,
