@@ -4,9 +4,7 @@ description: Добавляет сторонний объект для скач�
 tags: []
 ---
 
-import T from '../../../src/components/templates.js'
-
-<T.VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL R1' />
 
 ## Описание
 
@@ -56,5 +54,5 @@ public OnGameModeInit()
 
 ## Связанные функции
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Вызывается когда игрок закончил скачивание сторонних файлов.
-- [AddSimpleModel](AddSimpleModel.md): Добавляет стороннюю модель объекта для скачивания.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Вызывается когда игрок закончил скачивание сторонних файлов.
+- [AddSimpleModel](AddSimpleModel): Добавляет стороннюю модель объекта для скачивания.

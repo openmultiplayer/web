@@ -3,9 +3,6 @@ networks:
   default:
     external:
       name: gateway
-  database:
-    driver: bridge
-    internal: true
 
 services:
   api:
@@ -22,11 +19,12 @@ services:
       DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID}
       DISCORD_CLIENT_SECRET: ${DISCORD_CLIENT_SECRET}
       SENDGRID_API_KEY: ${SENDGRID_API_KEY}
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
+      PACKAGES_DB: /data/packages.db
     ports:
-      - 8080:80
-    networks:
-      - default
-      - database
+      - 8000:8000
+    volumes:
+      - ${DATA_DIR}/openmp-index/backend:/data
     depends_on:
       - postgres
     labels:
@@ -47,12 +45,10 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - ${DATA_DIR}/openmp-index/postgres:/var/lib/postgresql/data
-    networks:
-      - database
 
   minio:
     image: minio/minio
-    command: server /data
+    command: server /data --console-address ":9001"
     restart: always
     environment:
       MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
@@ -61,14 +57,13 @@ services:
       - 8082:9000
     volumes:
       - ${DATA_DIR}/openmp-index/minio:/data
-    networks:
-      - default
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
       traefik.http.routers.omp_index_minio.rule: Host(`assets.open.mp`)
       traefik.http.routers.omp_index_minio.entrypoints: https
       traefik.http.routers.omp_index_minio.tls.certresolver: default
+      traefik.http.services.omp_index_minio.loadbalancer.server.port: "9000"
 
   prometheus:
     image: prom/prometheus
@@ -82,8 +77,6 @@ services:
     volumes:
       - ${DATA_DIR}/openmp-index/prometheus:/prometheus
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    networks:
-      - default
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
@@ -106,7 +99,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
-      - 8081:80
+      - 5433:80
     labels:
       traefik.enable: "true"
       traefik.docker.network: gateway
@@ -114,6 +107,3 @@ services:
       traefik.http.routers.omp_index_pgadmin.entrypoints: https
       traefik.http.routers.omp_index_pgadmin.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
-    networks:
-      - default
-      - database

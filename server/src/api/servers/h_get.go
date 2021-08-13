@@ -5,11 +5,12 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
-	"github.com/openmultiplayer/web/server/src/web"
 	"github.com/pkg/errors"
+
+	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *ServersService) get(w http.ResponseWriter, r *http.Request) {
+func (s *service) get(w http.ResponseWriter, r *http.Request) {
 	result, err := s.storer.GetByAddress(r.Context(), chi.URLParam(r, "address"))
 	if err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to get server"))

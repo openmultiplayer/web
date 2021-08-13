@@ -5,7 +5,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh && \
 
 # Node
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 12.18.3
+ENV NODE_VERSION 14.17.4
 
 RUN mkdir -p $NVM_DIR && \
     curl --silent -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \
@@ -17,7 +17,7 @@ ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 # Install prisma command for automatic migrations.
-RUN npm install --global @prisma/cli
+RUN npm install --global prisma
 
 # Install Taskfile
 RUN sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
@@ -35,4 +35,4 @@ RUN task docsindex
 # Build the server binary
 RUN task build
 
-ENTRYPOINT [ "/server/server.exe" ]
+ENTRYPOINT [ "task", "production" ]

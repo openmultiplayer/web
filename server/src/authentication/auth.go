@@ -10,13 +10,16 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/resources/user"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
 // State stores state for performing authentication
 type State struct {
-	db *db.PrismaClient
-	sc *securecookie.SecureCookie
+	db     *db.PrismaClient
+	sc     *securecookie.SecureCookie
+	domain string
+	users  user.Repository
 }
 
 // OAuthProvider describes a type that can provide an OAuth2 authentication
@@ -32,10 +35,12 @@ type OAuthProvider interface {
 }
 
 // New initialises a new authentication service
-func New(db *db.PrismaClient, cfg config.Config) *State {
+func New(db *db.PrismaClient, cfg config.Config, users user.Repository) *State {
 	a := &State{
-		db: db,
-		sc: securecookie.New(cfg.HashKey, cfg.BlockKey),
+		db:     db,
+		sc:     securecookie.New(cfg.HashKey, cfg.BlockKey),
+		domain: cfg.CookieDomain,
+		users:  users,
 	}
 
 	return a
@@ -56,9 +61,9 @@ func (a *State) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
 		Name:     secureCookieName,
 		Value:    encoded,
 		Path:     "/",
-		Domain:   ".open.mp",
+		Domain:   a.domain,
 		Secure:   true,
-		HttpOnly: false,
+		HttpOnly: true,
 	})
 }
 

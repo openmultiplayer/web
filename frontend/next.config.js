@@ -6,6 +6,20 @@ const generateCache = require("./scripts/gencache");
 
 generateCache();
 
+const localesFromContent = fs
+  .readdirSync("content")
+  .filter((v) => fs.statSync(path.join("content", v)).isDirectory());
+
+const localesFromDocs = fs
+  .readdirSync("../docs/translations")
+  .filter((v) =>
+    fs.statSync(path.join("../docs/translations", v)).isDirectory()
+  );
+
+const locales = [
+  ...new Set([...localesFromContent, ...localesFromDocs]),
+].sort();
+
 module.exports = (phase) => {
   console.log("Phase:", phase);
   return {
@@ -14,9 +28,7 @@ module.exports = (phase) => {
       tree: parseDir("../docs"),
     },
     i18n: {
-      locales: fs
-        .readdirSync("content")
-        .filter((v) => fs.statSync(path.join("content", v)).isDirectory()),
+      locales: locales,
       defaultLocale: "en",
     },
     images: {

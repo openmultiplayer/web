@@ -1,25 +1,25 @@
-package serverdb
+package server
 
 import (
 	"context"
 	"time"
 
-	"github.com/openmultiplayer/web/server/src/db"
-	"github.com/openmultiplayer/web/server/src/server"
 	"github.com/pkg/errors"
+
+	"github.com/openmultiplayer/web/server/src/db"
 )
 
-var _ Storer = &PrismaStorer{}
+var _ Repository = &DB{}
 
-type PrismaStorer struct {
+type DB struct {
 	client *db.PrismaClient
 }
 
-func NewPrisma(client *db.PrismaClient) Storer {
-	return &PrismaStorer{client}
+func New(client *db.PrismaClient) Repository {
+	return &DB{client}
 }
 
-func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
+func (s *DB) Upsert(ctx context.Context, e All) error {
 	if !e.Active {
 		// If a server is inactive and it doesn't already exist in the database
 		// then no data needs to be written and this is not an error. This only
@@ -27,16 +27,16 @@ func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 		// offline during the first-time query and DB seed process.
 		//nolint:errcheck
 		s.client.Server.
-			FindOne(db.Server.IP.Equals(e.IP)).
+			FindUnique(db.Server.IP.Equals(e.IP)).
 			Update(db.Server.Active.Set(false)).
 			Exec(ctx)
 		return nil
 	}
 
-	var svr db.ServerModel
+	var svr *db.ServerModel
 	var err error
 	svr, err = s.client.Server.
-		FindOne(db.Server.IP.Equals(e.IP)).
+		FindUnique(db.Server.IP.Equals(e.IP)).
 		Update(
 			db.Server.IP.Set(e.IP),
 			db.Server.Hn.Set(e.Core.Hostname),
@@ -79,7 +79,7 @@ func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 
 	for k, v := range e.Rules {
 		_, err := s.client.Rule.
-			FindOne(db.Rule.RuleServerIDRuleNameIndex(
+			FindUnique(db.Rule.RuleServerIDRuleNameIndex(
 				db.Rule.Name.Equals(k),
 				db.Rule.ServerID.Equals(svr.ID),
 			)).
@@ -100,27 +100,30 @@ func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 	return nil
 }
 
-func (s *PrismaStorer) GetByID(ctx context.Context, id string) (*server.All, error) {
-	r, err := s.client.Server.FindOne(db.Server.ID.Equals(id)).Exec(ctx)
+func (s *DB) GetByID(ctx context.Context, id string) (*All, error) {
+	r, err := s.client.Server.FindUnique(db.Server.ID.Equals(id)).Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
-	return dbToAPI(r), nil
+	return dbToAPI(*r), nil
 }
 
-func (s *PrismaStorer) GetByAddress(ctx context.Context, address string) (*server.All, error) {
-	r, err := s.client.Server.FindOne(db.Server.IP.Equals(address)).Exec(ctx)
+func (s *DB) GetByAddress(ctx context.Context, address string) (*All, error) {
+	r, err := s.client.Server.
+		FindUnique(db.Server.IP.Equals(address)).
+		With(db.Server.Ru.Fetch()).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
-	return dbToAPI(r), nil
+	return dbToAPI(*r), nil
 }
 
-func (s *PrismaStorer) GetEssential(context.Context, string) (*server.Essential, error) {
+func (s *DB) GetEssential(context.Context, string) (*Essential, error) {
 	return nil, nil
 }
 
-func (s *PrismaStorer) GetServersToQuery(ctx context.Context, since time.Duration) ([]string, error) {
+func (s *DB) GetServersToQuery(ctx context.Context, since time.Duration) ([]string, error) {
 	result, err := s.client.Server.
 		FindMany(db.Server.UpdatedAt.Before(time.Now().Add(-since))).
 		Exec(ctx)
@@ -134,48 +137,13 @@ func (s *PrismaStorer) GetServersToQuery(ctx context.Context, since time.Duratio
 	return addresses, nil
 }
 
-func (s *PrismaStorer) GetAll(ctx context.Context) ([]server.All, error) {
-	result, err := s.client.Server.FindMany(db.Server.Active.Equals(true)).Exec(ctx)
+func (s *DB) GetAll(ctx context.Context) ([]All, error) {
+	result, err := s.client.Server.
+		FindMany(db.Server.Active.Equals(true)).
+		With(db.Server.Ru.Fetch()).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
 	return dbToAPISlice(result), err
-}
-
-func dbToAPI(r db.ServerModel) *server.All {
-	return &server.All{
-		IP:     r.IP,
-		Domain: r.InternalServer.Domain,
-		Core: server.Essential{
-			IP:         r.IP,
-			Hostname:   r.Hn,
-			Players:    r.Pc,
-			MaxPlayers: r.Pm,
-			Gamemode:   r.Gm,
-			Language:   r.La,
-			Password:   r.Pa,
-			Version:    r.Vn,
-		},
-		Rules:       transformRules(r.Ru()),
-		Description: r.InternalServer.Description,
-		Banner:      r.InternalServer.Banner,
-		Active:      r.Active,
-	}
-}
-
-func dbToAPISlice(r []db.ServerModel) []server.All {
-	result := []server.All{}
-	for _, s := range r {
-		obj := dbToAPI(s)
-		result = append(result, *obj)
-	}
-	return result
-}
-
-func transformRules(ru []db.RuleModel) map[string]string {
-	out := make(map[string]string)
-	for _, r := range ru {
-		out[r.Name] = r.Value
-	}
-	return out
 }

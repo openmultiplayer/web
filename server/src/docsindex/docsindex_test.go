@@ -5,11 +5,14 @@ import (
 	"fmt"
 	"testing"
 
+	"go.uber.org/zap"
+
 	"github.com/openmultiplayer/web/server/src/config"
 )
 
 func TestIndex_Build(t *testing.T) {
-	idx, err := New(config.Config{
+	l, _ := zap.NewDevelopment()
+	idx, err := New(l, config.Config{
 		DocsSourcesPath: "../../../docs/scripting",
 		DocsIndexPath:   "docsearch.bleve",
 	})

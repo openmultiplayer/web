@@ -4,13 +4,16 @@ import (
 	"fmt"
 	"time"
 
+	"go.uber.org/zap"
+
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 )
 
 func main() {
+	l, _ := zap.NewDevelopment()
 	start := time.Now()
-	idx, err := docsindex.New(config.Config{
+	idx, err := docsindex.New(l, config.Config{
 		DocsSourcesPath: "docs/",
 		DocsIndexPath:   "docs.bleve",
 	})

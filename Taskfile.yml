@@ -5,6 +5,8 @@ tasks:
     deps: [build]
     cmds:
       - ./server.exe
+    sources:
+      - server/**/*.go
 
   build:
     cmds:
@@ -12,6 +14,16 @@ tasks:
     vars:
       VERSION:
         sh: git describe --always --dirty --tags
+
+  # Production deployment run - migrate DB first, then
+  production:
+    cmds:
+      - npx prisma migrate deploy
+      - ./server.exe
+
+  deploy:
+    cmds:
+      - docker compose up --detach
 
   services:
     cmds:
@@ -32,8 +44,7 @@ tasks:
 
   migrate:
     cmds:
-      - npx @prisma/cli migrate save --experimental
-      - npx @prisma/cli migrate up --experimental
+      - npx prisma migrate dev
 
   dbuild:
     cmds:

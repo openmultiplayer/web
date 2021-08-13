@@ -6,7 +6,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/openmultiplayer/web/server/src/server"
+	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -14,7 +14,7 @@ type addPayload struct {
 	IP string `json:"ip"`
 }
 
-func (s *ServersService) add(w http.ResponseWriter, r *http.Request) {
+func (s *service) add(w http.ResponseWriter, r *http.Request) {
 	var address string
 	switch r.Header.Get("Content-Type") {
 	case "application/json":

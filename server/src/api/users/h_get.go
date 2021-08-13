@@ -9,14 +9,14 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *UsersService) get(w http.ResponseWriter, r *http.Request) {
+func (s *service) get(w http.ResponseWriter, r *http.Request) {
 	ai, ok := authentication.GetAuthenticationInfo(w, r)
 	if !ok {
 		return
 	}
 
 	user, err := s.db.User.
-		FindOne(db.User.ID.Equals(ai.Cookie.UserID)).
+		FindUnique(db.User.ID.Equals(ai.Cookie.UserID)).
 		With(
 			db.User.Github.Fetch(),
 			db.User.Discord.Fetch(),

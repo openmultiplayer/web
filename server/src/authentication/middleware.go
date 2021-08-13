@@ -86,3 +86,27 @@ func MustBeAuthenticated(next http.Handler) http.Handler {
 		next.ServeHTTP(w, r)
 	})
 }
+
+func (a *State)MustBeAdmin(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		auth, ok := GetAuthenticationInfo(w, r)
+		if !ok {
+			return
+		}
+		user, err := a.users.GetUser(r.Context(), auth.Cookie.UserID)
+		if err != nil {
+			web.StatusInternalServerError(w, err)
+			return
+		}
+		if user == nil {
+			return
+		}
+
+		if !user.Admin {
+			web.StatusUnauthorized(w, errors.New("user is not an administrator"))			
+			return
+		}
+
+		next.ServeHTTP(w, r)
+	})
+}

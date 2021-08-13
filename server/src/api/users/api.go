@@ -2,27 +2,53 @@ package users
 
 import (
 	"github.com/go-chi/chi"
+	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/resources/user"
 )
 
-type UsersService struct {
-	R    chi.Router
+type service struct {
 	auth *authentication.State
 	db   *db.PrismaClient
+	repo user.Repository
 }
 
-func New(auth *authentication.State, db *db.PrismaClient) *UsersService {
-	svc := &UsersService{chi.NewRouter(), auth, db}
+func Build() fx.Option {
+	return fx.Options(
+		fx.Provide(func(
+			auth *authentication.State,
+			db *db.PrismaClient,
+			repo user.Repository,
+		) *service {
+			return &service{auth, db, repo}
+		}),
+		fx.Invoke(func(
+			r chi.Router,
+			s *service,
+			auth *authentication.State,
+		) {
+			rtr := chi.NewRouter()
+			r.Mount("/users", rtr)
 
-	svc.R.
-		With(authentication.MustBeAuthenticated).
-		Get("/self", svc.get)
+			rtr.
+				With(authentication.MustBeAuthenticated, auth.MustBeAdmin).
+				Get("/", s.list)
 
-	svc.R.
-		With(authentication.MustBeAuthenticated).
-		Patch("/self", svc.patch)
+			rtr.
+				With(authentication.MustBeAuthenticated).
+				Get("/self", s.get)
 
-	return svc
+			rtr.
+				With(authentication.MustBeAuthenticated).
+				Patch("/self", s.patch)
+
+			rtr.
+				With(authentication.MustBeAuthenticated, auth.MustBeAdmin).
+				Patch("/admin", s.patchAdmin)
+
+			rtr.Get("/dev", s.dev)
+		}),
+	)
 }

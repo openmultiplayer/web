@@ -3,9 +3,10 @@ package scraper
 import (
 	"context"
 
-	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/server"
 	"go.uber.org/zap"
+
+	"github.com/openmultiplayer/web/server/src/queryer"
+	"github.com/openmultiplayer/web/server/src/resources/server"
 )
 
 type SimpleScraper struct {
