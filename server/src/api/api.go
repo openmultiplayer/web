@@ -15,7 +15,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/api/docs"
 	"github.com/openmultiplayer/web/server/src/api/forum"
 	"github.com/openmultiplayer/web/server/src/api/legacy"
-	"github.com/openmultiplayer/web/server/src/api/ppackage"
+	"github.com/openmultiplayer/web/server/src/api/pawndex"
 	"github.com/openmultiplayer/web/server/src/api/servers"
 	"github.com/openmultiplayer/web/server/src/api/users"
 	"github.com/openmultiplayer/web/server/src/authentication"
@@ -33,7 +33,7 @@ func Build() fx.Option {
 		legacy.Build(),
 		servers.Build(),
 		users.Build(),
-		ppackage.Build(),
+		pawndex.Build(),
 
 		// Starts the HTTP server in a goroutine and fatals if it errors.
 		fx.Invoke(func(l *zap.Logger, server *http.Server) {

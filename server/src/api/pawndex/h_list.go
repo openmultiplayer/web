@@ -1,4 +1,4 @@
-package ppackage
+package pawndex
 
 import (
 	"encoding/json"
