@@ -16,9 +16,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/resources/forum"
-	"github.com/openmultiplayer/web/server/src/resources/server"
-	"github.com/openmultiplayer/web/server/src/resources/user"
+	"github.com/openmultiplayer/web/server/src/resources"
 	"github.com/openmultiplayer/web/server/src/scraper"
 	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/serverworker"
@@ -39,19 +37,17 @@ func Start(ctx context.Context) {
 			docsindex.New,
 			authentication.New,
 			mailworker.New,
-			server.New,
 			queryer.NewSAMPQueryer,
 			serververify.New,
 			scraper.NewPooledScraper,
 			serverworker.New,
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
-			forum.New,
-			user.New,
 		),
 
 		logger.Build(),
 		api.Build(),
+		resources.Build(),
 	)
 
 	err := app.Start(ctx)
