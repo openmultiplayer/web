@@ -21,7 +21,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/serverdb"
 	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/serverworker"
-	"github.com/openmultiplayer/web/server/src/usersservice"
+	"github.com/openmultiplayer/web/server/src/user"
 )
 
 // Start starts the application and blocks until fatal error
@@ -47,7 +47,7 @@ func Start(ctx context.Context) {
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
 			forum.New,
-			usersservice.New,
+			user.New,
 		),
 
 		logger.Build(),

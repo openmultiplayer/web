@@ -6,13 +6,13 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/db"
-	"github.com/openmultiplayer/web/server/src/usersservice"
+	"github.com/openmultiplayer/web/server/src/user"
 )
 
 type service struct {
 	auth *authentication.State
 	db   *db.PrismaClient
-	repo usersservice.Repository
+	repo user.Repository
 }
 
 func Build() fx.Option {
@@ -20,7 +20,7 @@ func Build() fx.Option {
 		fx.Provide(func(
 			auth *authentication.State,
 			db *db.PrismaClient,
-			repo usersservice.Repository,
+			repo user.Repository,
 		) *service {
 			return &service{auth, db, repo}
 		}),
