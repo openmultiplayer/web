@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 
-import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { APIError } from "src/types/error";
-import { UserModel } from "src/types/user";
+import { apiSSP } from "src/fetcher/fetcher";
+import { APIError } from "src/types/generated_error";
+import { UserModel } from "src/types/generated_user";
 
 type AuthenticationContext = {
   isAuthenticated: boolean;
@@ -13,7 +13,7 @@ type AuthenticationContext = {
 const AuthContext = React.createContext<AuthenticationContext>({
   isAuthenticated: false,
   isLoading: true,
-  setAuthenticated: (_: any) => {},
+  setAuthenticated: () => undefined,
 });
 
 // to be used in _app.tsx where `authenticated` is set

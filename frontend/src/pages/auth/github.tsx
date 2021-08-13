@@ -27,7 +27,7 @@ type Error = {
 
 export const getServerSideProps = async (
   ctx: GetServerSidePropsContext
-): Promise<GetServerSidePropsResult<{}>> => {
+): Promise<GetServerSidePropsResult<unknown>> => {
   if ("error" in ctx.query) {
     const error: Error = {
       error: ctx.query["error"] as string,
@@ -48,7 +48,7 @@ export const getServerSideProps = async (
       body: JSON.stringify(payload),
       headers: {
         "Content-Type": "application/json",
-        Cookie: ctx?.req?.headers?.cookie!,
+        Cookie: ctx?.req?.headers?.cookie ?? "",
       },
       credentials: "include",
     },

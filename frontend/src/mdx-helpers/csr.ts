@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import { mdx, MDXProvider } from "@mdx-js/react";
 import { useEffect } from "react";

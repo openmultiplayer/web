@@ -10,7 +10,7 @@ import ReactMarkdown from "react-markdown";
 import admonitions from "remark-admonitions";
 import Editor from "rich-markdown-editor";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { PostModel } from "src/types/server";
+import { PostModel } from "src/types/generated_server";
 import useSWR, { mutate } from "swr";
 import * as z from "zod";
 

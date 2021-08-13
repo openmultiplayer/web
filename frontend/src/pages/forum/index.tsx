@@ -3,7 +3,7 @@ import map from "lodash/fp/map";
 import Link from "next/link";
 import React, { FC } from "react";
 import { apiSWR } from "src/fetcher/fetcher";
-import { PostModel, TagModel } from "src/types/server";
+import { PostModel, TagModel } from "src/types/generated_server";
 import useSWR from "swr";
 
 const ListHeader = () => {

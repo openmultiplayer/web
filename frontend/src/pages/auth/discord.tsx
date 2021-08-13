@@ -48,7 +48,7 @@ export const getServerSideProps = async (
       body: JSON.stringify(payload),
       headers: {
         "Content-Type": "application/json",
-        Cookie: ctx?.req?.headers?.cookie!,
+        Cookie: ctx?.req?.headers?.cookie ?? "",
       },
       credentials: "include",
     },
