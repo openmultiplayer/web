@@ -4,7 +4,7 @@ import Editor from "rich-markdown-editor";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { PostModel } from "src/types/server";
+import { PostModel } from "src/types/generated_server";
 import { useRouter } from "next/router";
 
 export const PostPayloadSchema = z.object({
