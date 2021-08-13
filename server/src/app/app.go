@@ -15,6 +15,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/logger"
 	"github.com/openmultiplayer/web/server/src/mailer"
 	"github.com/openmultiplayer/web/server/src/mailworker"
+	"github.com/openmultiplayer/web/server/src/pawndexworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/resources"
@@ -34,6 +35,7 @@ func Start(ctx context.Context) {
 			config.New,
 			db.New,
 			pubsub.NewRabbit,
+			NewGitHubClient,
 			mailer.NewSendGrid,
 			docsindex.New,
 			authentication.New,
@@ -49,6 +51,7 @@ func Start(ctx context.Context) {
 		logger.Build(),
 		api.Build(),
 		resources.Build(),
+		pawndexworker.Build(),
 	)
 
 	err := app.Start(ctx)
