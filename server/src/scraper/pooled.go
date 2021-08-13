@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/server"
+	"github.com/openmultiplayer/web/server/src/resources/server"
 )
 
 var _ Scraper = &PooledScraper{}

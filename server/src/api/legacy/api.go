@@ -5,7 +5,7 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/server"
+	"github.com/openmultiplayer/web/server/src/resources/server"
 )
 
 type service struct {

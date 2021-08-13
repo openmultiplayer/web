@@ -5,8 +5,9 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
-	"github.com/openmultiplayer/web/server/src/web"
 	"github.com/pkg/errors"
+
+	"github.com/openmultiplayer/web/server/src/web"
 )
 
 func (s *service) get(w http.ResponseWriter, r *http.Request) {

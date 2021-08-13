@@ -11,7 +11,7 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/pkg/errors"
 
-	"github.com/openmultiplayer/web/server/src/server"
+	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 

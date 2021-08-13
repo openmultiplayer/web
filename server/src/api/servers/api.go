@@ -7,7 +7,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/server"
+	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/serververify"
 )
 

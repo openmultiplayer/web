@@ -4,9 +4,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/openmultiplayer/web/server/src/server"
-	"github.com/openmultiplayer/web/server/src/web"
 	"github.com/pkg/errors"
+
+	"github.com/openmultiplayer/web/server/src/resources/server"
+	"github.com/openmultiplayer/web/server/src/web"
 )
 
 func (s *service) list(w http.ResponseWriter, r *http.Request) {

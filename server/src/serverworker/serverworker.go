@@ -7,8 +7,8 @@ import (
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/scraper"
-	"github.com/openmultiplayer/web/server/src/server"
 )
 
 type Worker struct {

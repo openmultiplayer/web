@@ -11,17 +11,17 @@ import (
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/docsindex"
-	"github.com/openmultiplayer/web/server/src/forum"
 	"github.com/openmultiplayer/web/server/src/logger"
 	"github.com/openmultiplayer/web/server/src/mailer"
 	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/queryer"
+	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/server"
+	"github.com/openmultiplayer/web/server/src/resources/user"
 	"github.com/openmultiplayer/web/server/src/scraper"
-	"github.com/openmultiplayer/web/server/src/server"
 	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/serverworker"
-	"github.com/openmultiplayer/web/server/src/user"
 )
 
 // Start starts the application and blocks until fatal error

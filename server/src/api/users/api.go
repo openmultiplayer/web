@@ -6,7 +6,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/db"
-	"github.com/openmultiplayer/web/server/src/user"
+	"github.com/openmultiplayer/web/server/src/resources/user"
 )
 
 type service struct {

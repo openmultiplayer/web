@@ -5,7 +5,7 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/forum"
+	"github.com/openmultiplayer/web/server/src/resources/forum"
 	"github.com/openmultiplayer/web/server/src/web/ratelimiter"
 )
 
