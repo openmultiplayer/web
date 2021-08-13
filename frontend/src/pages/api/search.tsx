@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const posts = require("../../../cache/data");
 
 export default (req: NextApiRequest, res: NextApiResponse) => {

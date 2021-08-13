@@ -16,12 +16,12 @@ function DefaultLoadingFallback(): ReactElement {
   );
 }
 
-export default function withAuthRedirect<CP = {}, IP = CP>(
+export default function withAuthRedirect<CP = unknown, IP = CP>(
   WrappedComponent: NextPage<CP, IP>,
   expectedAuth: boolean,
   location: string,
   LoadingComponent = DefaultLoadingFallback
-) {
+): NextPage<CP, IP> {
   const WithAuthRedirectWrapper: NextPage<CP, IP> = (props) => {
     const router = useRouter();
     const { isLoading, isAuthenticated } = useAuth();

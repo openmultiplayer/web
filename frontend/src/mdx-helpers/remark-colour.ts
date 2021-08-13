@@ -13,12 +13,12 @@ const colourPattern = /{(.+?)}\(#([a-f0-9]{6})\)/gm;
 export const remarkColour = function attacher() {
   return (tree: any) => {
     visit(tree, "paragraph", (node) => {
-      let children: Array<any> = node.children as Array<any>;
-      let newChildren: Array<any> = node.children as Array<any>;
+      const children: Array<any> = node.children as Array<any>;
+      const newChildren: Array<any> = node.children as Array<any>;
 
       children.forEach((v: { value: string }, i: number) => {
         let match: RegExpExecArray | null;
-        let insertions: number = 0;
+        let insertions = 0;
         let lastIndex = 0;
         do {
           match = colourPattern.exec(v.value);
