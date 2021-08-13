@@ -48,7 +48,7 @@ Once a pull request is approved, if it has data model changes, an admin will app
 
 ### SA-MP Server Query
 
-SA-MP server queries are done by the `Worker` periodically querying the database for servers that haven't been updated within some time window. These servers are then passed to a `Scraper` which uses a `Queryer` to fetch updated information about the servers. The `Worker` then updates the database with the new data using a `serverdb.Storer`
+SA-MP server queries are done by the `Worker` periodically querying the database for servers that haven't been updated within some time window. These servers are then passed to a `Scraper` which uses a `Queryer` to fetch updated information about the servers. The `Worker` then updates the database with the new data using the `server.Repository`
 
 ### Documentation
 

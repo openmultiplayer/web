@@ -1,25 +1,25 @@
-package serverdb
+package server
 
 import (
 	"context"
 	"time"
 
-	"github.com/openmultiplayer/web/server/src/db"
-	"github.com/openmultiplayer/web/server/src/server"
 	"github.com/pkg/errors"
+
+	"github.com/openmultiplayer/web/server/src/db"
 )
 
-var _ Storer = &PrismaStorer{}
+var _ Repository = &DB{}
 
-type PrismaStorer struct {
+type DB struct {
 	client *db.PrismaClient
 }
 
-func NewPrisma(client *db.PrismaClient) Storer {
-	return &PrismaStorer{client}
+func New(client *db.PrismaClient) Repository {
+	return &DB{client}
 }
 
-func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
+func (s *DB) Upsert(ctx context.Context, e All) error {
 	if !e.Active {
 		// If a server is inactive and it doesn't already exist in the database
 		// then no data needs to be written and this is not an error. This only
@@ -100,7 +100,7 @@ func (s *PrismaStorer) Upsert(ctx context.Context, e server.All) error {
 	return nil
 }
 
-func (s *PrismaStorer) GetByID(ctx context.Context, id string) (*server.All, error) {
+func (s *DB) GetByID(ctx context.Context, id string) (*All, error) {
 	r, err := s.client.Server.FindUnique(db.Server.ID.Equals(id)).Exec(ctx)
 	if err != nil {
 		return nil, err
@@ -108,7 +108,7 @@ func (s *PrismaStorer) GetByID(ctx context.Context, id string) (*server.All, err
 	return dbToAPI(*r), nil
 }
 
-func (s *PrismaStorer) GetByAddress(ctx context.Context, address string) (*server.All, error) {
+func (s *DB) GetByAddress(ctx context.Context, address string) (*All, error) {
 	r, err := s.client.Server.
 		FindUnique(db.Server.IP.Equals(address)).
 		With(db.Server.Ru.Fetch()).
@@ -119,11 +119,11 @@ func (s *PrismaStorer) GetByAddress(ctx context.Context, address string) (*serve
 	return dbToAPI(*r), nil
 }
 
-func (s *PrismaStorer) GetEssential(context.Context, string) (*server.Essential, error) {
+func (s *DB) GetEssential(context.Context, string) (*Essential, error) {
 	return nil, nil
 }
 
-func (s *PrismaStorer) GetServersToQuery(ctx context.Context, since time.Duration) ([]string, error) {
+func (s *DB) GetServersToQuery(ctx context.Context, since time.Duration) ([]string, error) {
 	result, err := s.client.Server.
 		FindMany(db.Server.UpdatedAt.Before(time.Now().Add(-since))).
 		Exec(ctx)
@@ -137,7 +137,7 @@ func (s *PrismaStorer) GetServersToQuery(ctx context.Context, since time.Duratio
 	return addresses, nil
 }
 
-func (s *PrismaStorer) GetAll(ctx context.Context) ([]server.All, error) {
+func (s *DB) GetAll(ctx context.Context) ([]All, error) {
 	result, err := s.client.Server.
 		FindMany(db.Server.Active.Equals(true)).
 		With(db.Server.Ru.Fetch()).
@@ -146,42 +146,4 @@ func (s *PrismaStorer) GetAll(ctx context.Context) ([]server.All, error) {
 		return nil, err
 	}
 	return dbToAPISlice(result), err
-}
-
-func dbToAPI(r db.ServerModel) *server.All {
-	return &server.All{
-		IP:     r.IP,
-		Domain: r.InnerServer.Domain,
-		Core: server.Essential{
-			IP:         r.IP,
-			Hostname:   r.Hn,
-			Players:    r.Pc,
-			MaxPlayers: r.Pm,
-			Gamemode:   r.Gm,
-			Language:   r.La,
-			Password:   r.Pa,
-			Version:    r.Vn,
-		},
-		Rules:       transformRules(r.Ru()),
-		Description: r.InnerServer.Description,
-		Banner:      r.InnerServer.Banner,
-		Active:      r.Active,
-	}
-}
-
-func dbToAPISlice(r []db.ServerModel) []server.All {
-	result := []server.All{}
-	for _, s := range r {
-		obj := dbToAPI(s)
-		result = append(result, *obj)
-	}
-	return result
-}
-
-func transformRules(ru []db.RuleModel) map[string]string {
-	out := make(map[string]string)
-	for _, r := range ru {
-		out[r.Name] = r.Value
-	}
-	return out
 }

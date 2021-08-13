@@ -1,6 +1,10 @@
 package server
 
-import "errors"
+import (
+	"errors"
+
+	"github.com/openmultiplayer/web/server/src/db"
+)
 
 // All contains all the information associated with a game server including the core information, the standard SA:MP
 // "rules" and "players" lists as well as any additional fields to enhance the server browsing experience.
@@ -74,4 +78,42 @@ func (server All) Example() All {
 		Banner:      &[]string{"https://i.imgur.com/Juaezhv.jpg"}[0],
 		Active:      true,
 	}
+}
+
+func dbToAPI(r db.ServerModel) *All {
+	return &All{
+		IP:     r.IP,
+		Domain: r.InnerServer.Domain,
+		Core: Essential{
+			IP:         r.IP,
+			Hostname:   r.Hn,
+			Players:    r.Pc,
+			MaxPlayers: r.Pm,
+			Gamemode:   r.Gm,
+			Language:   r.La,
+			Password:   r.Pa,
+			Version:    r.Vn,
+		},
+		Rules:       transformRules(r.Ru()),
+		Description: r.InnerServer.Description,
+		Banner:      r.InnerServer.Banner,
+		Active:      r.Active,
+	}
+}
+
+func dbToAPISlice(r []db.ServerModel) []All {
+	result := []All{}
+	for _, s := range r {
+		obj := dbToAPI(s)
+		result = append(result, *obj)
+	}
+	return result
+}
+
+func transformRules(ru []db.RuleModel) map[string]string {
+	out := make(map[string]string)
+	for _, r := range ru {
+		out[r.Name] = r.Value
+	}
+	return out
 }

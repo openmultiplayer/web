@@ -18,7 +18,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/scraper"
-	"github.com/openmultiplayer/web/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/server"
 	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/serverworker"
 	"github.com/openmultiplayer/web/server/src/user"
@@ -39,7 +39,7 @@ func Start(ctx context.Context) {
 			docsindex.New,
 			authentication.New,
 			mailworker.New,
-			serverdb.NewPrisma,
+			server.New,
 			queryer.NewSAMPQueryer,
 			serververify.New,
 			scraper.NewPooledScraper,

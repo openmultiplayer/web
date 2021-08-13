@@ -5,17 +5,17 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/queryer"
-	"github.com/openmultiplayer/web/server/src/serverdb"
+	"github.com/openmultiplayer/web/server/src/server"
 )
 
 type service struct {
-	storer  serverdb.Storer
+	storer  server.Repository
 	queryer queryer.Queryer
 }
 
 func Build() fx.Option {
 	return fx.Options(
-		fx.Provide(func(storer serverdb.Storer, queryer queryer.Queryer) *service { return &service{storer, queryer} }),
+		fx.Provide(func(storer server.Repository, queryer queryer.Queryer) *service { return &service{storer, queryer} }),
 		fx.Invoke(func(
 			r chi.Router,
 			s *service,
