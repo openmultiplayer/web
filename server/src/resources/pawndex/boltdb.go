@@ -1,4 +1,4 @@
-package pkgstorage
+package pawndex
 
 import (
 	"encoding/json"
@@ -20,7 +20,7 @@ type Entry struct {
 	Marked bool
 }
 
-func New(cfg config.Config) (Storer, error) {
+func New(cfg config.Config) (Repository, error) {
 	db, err := bolt.Open(cfg.PackagesDB, 0o666, nil)
 	if err != nil {
 		return nil, err

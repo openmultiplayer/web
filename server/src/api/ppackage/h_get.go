@@ -9,7 +9,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *PackagesService) get(w http.ResponseWriter, r *http.Request) {
+func (s *service) get(w http.ResponseWriter, r *http.Request) {
 	user := chi.URLParam(r, "user")
 	repo := chi.URLParam(r, "repo")
 

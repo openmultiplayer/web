@@ -17,11 +17,11 @@ import (
 	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/pkgscraper"
 	"github.com/openmultiplayer/web/server/src/pkgsearcher"
-	"github.com/openmultiplayer/web/server/src/pkgstorage"
 	"github.com/openmultiplayer/web/server/src/pkgworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/resources"
+	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 	"github.com/openmultiplayer/web/server/src/scraper"
 	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/serverworker"
@@ -46,7 +46,7 @@ func Start(ctx context.Context) {
 			queryer.NewSAMPQueryer,
 			serververify.New,
 			scraper.NewPooledScraper,
-			pkgstorage.New,
+			pawndex.New,
 			pkgsearcher.NewGitHubSearcher,
 			pkgscraper.NewGitHubScraper,
 			pkgworker.NewPackageWorker,

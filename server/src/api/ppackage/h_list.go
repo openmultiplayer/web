@@ -7,7 +7,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *PackagesService) list(w http.ResponseWriter, r *http.Request) {
+func (s *service) list(w http.ResponseWriter, r *http.Request) {
 	all, err := s.store.GetAll()
 	if err != nil {
 		web.StatusInternalServerError(w, err)

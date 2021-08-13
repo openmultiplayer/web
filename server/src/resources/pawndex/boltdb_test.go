@@ -1,4 +1,4 @@
-package pkgstorage
+package pawndex
 
 import (
 	"os"
@@ -9,17 +9,20 @@ import (
 	"github.com/Southclaws/sampctl/pawnpackage"
 	"github.com/Southclaws/sampctl/versioning"
 
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/pkgdef"
 )
 
 var (
-	database *DB
+	database Repository
 	now      = time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC)
 )
 
 func TestMain(m *testing.M) {
 	os.Remove("packages.db")
-	db, err := New()
+	db, err := New(config.Config{
+		PackagesDB: "test.db",
+	})
 	if err != nil {
 		panic(err)
 	}
@@ -34,7 +37,7 @@ func TestDB_Set(t *testing.T) {
 	}
 	tests := []struct {
 		name    string
-		db      *DB
+		db      Repository
 		args    args
 		wantErr bool
 	}{
@@ -87,7 +90,7 @@ func TestDB_Get(t *testing.T) {
 	}
 	tests := []struct {
 		name       string
-		db         *DB
+		db         Repository
 		args       args
 		wantPkg    pkgdef.Package
 		wantExists bool
@@ -148,7 +151,7 @@ func TestDB_Get(t *testing.T) {
 func TestDB_GetAll(t *testing.T) {
 	tests := []struct {
 		name    string
-		db      *DB
+		db      Repository
 		want    []pkgdef.Package
 		wantErr bool
 	}{
@@ -208,7 +211,7 @@ func TestDB_MarkForScrape(t *testing.T) {
 	}
 	tests := []struct {
 		name    string
-		db      *DB
+		db      Repository
 		args    args
 		wantErr bool
 	}{
@@ -226,7 +229,7 @@ func TestDB_MarkForScrape(t *testing.T) {
 func TestDB_GetMarked(t *testing.T) {
 	tests := []struct {
 		name    string
-		db      *DB
+		db      Repository
 		want    []string
 		wantErr bool
 	}{
@@ -254,7 +257,7 @@ func TestDB_MarkForScrape2(t *testing.T) {
 	}
 	tests := []struct {
 		name    string
-		db      *DB
+		db      Repository
 		args    args
 		wantErr bool
 	}{
@@ -272,7 +275,7 @@ func TestDB_MarkForScrape2(t *testing.T) {
 func TestDB_GetMarked2(t *testing.T) {
 	tests := []struct {
 		name    string
-		db      *DB
+		db      Repository
 		want    []string
 		wantErr bool
 	}{
@@ -301,7 +304,7 @@ func TestDB_MarkForScrapeUnscraped(t *testing.T) {
 	}
 	tests := []struct {
 		name    string
-		db      *DB
+		db      Repository
 		args    args
 		wantErr bool
 	}{
@@ -322,7 +325,7 @@ func TestDB_GetUnscraped(t *testing.T) {
 	}
 	tests := []struct {
 		name       string
-		db         *DB
+		db         Repository
 		args       args
 		wantPkg    pkgdef.Package
 		wantExists bool

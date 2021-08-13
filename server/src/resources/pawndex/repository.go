@@ -1,8 +1,8 @@
-package pkgstorage
+package pawndex
 
 import "github.com/openmultiplayer/web/server/src/pkgdef"
 
-type Storer interface {
+type Repository interface {
 	GetAll() ([]pkgdef.Package, error)
 	Get(string) (pkgdef.Package, bool, error)
 	Set(pkgdef.Package) error

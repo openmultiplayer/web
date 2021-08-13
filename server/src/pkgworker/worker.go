@@ -9,13 +9,13 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/pkgscraper"
 	"github.com/openmultiplayer/web/server/src/pkgsearcher"
-	"github.com/openmultiplayer/web/server/src/pkgstorage"
+	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 )
 
 type PackageWorker struct {
 	Searcher       pkgsearcher.Searcher
 	Scraper        pkgscraper.Scraper
-	Storer         pkgstorage.Storer
+	Storer         pawndex.Repository
 	SearchInterval time.Duration
 	ScrapeInterval time.Duration
 }
@@ -24,7 +24,7 @@ func NewPackageWorker(
 	lc fx.Lifecycle,
 	searcher pkgsearcher.Searcher,
 	scraper pkgscraper.Scraper,
-	storer pkgstorage.Storer,
+	storer pawndex.Repository,
 ) *PackageWorker {
 	w := &PackageWorker{
 		searcher,

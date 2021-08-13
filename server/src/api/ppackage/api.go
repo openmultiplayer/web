@@ -2,21 +2,28 @@ package ppackage
 
 import (
 	"github.com/go-chi/chi"
-
-	"github.com/openmultiplayer/web/server/src/pkgstorage"
+	"github.com/openmultiplayer/web/server/src/resources/pawndex"
+	"go.uber.org/fx"
 )
 
-type PackagesService struct {
-	R     chi.Router
-	store pkgstorage.Storer
+type service struct {
+	store pawndex.Repository
 }
 
-func New(store pkgstorage.Storer) *PackagesService {
-	svc := &PackagesService{chi.NewMux(), store}
+func Build() fx.Option {
+	return fx.Options(
+		fx.Provide(func(repo pawndex.Repository) *service { return &service{repo} }),
+		fx.Invoke(func(
+			r chi.Router,
+			s *service,
 
-	svc.R.Get("/", svc.list)
-	svc.R.Get("/package/{user}/{repo}", svc.get)
-	svc.R.Get("/package/{user}/{repo}/latest", svc.getLatest)
+		) {
+			rtr := chi.NewRouter()
+			r.Mount("/package", rtr)
 
-	return svc
+			rtr.Get("/", s.list)
+			rtr.Get("/package/{user}/{repo}", s.get)
+			rtr.Get("/package/{user}/{repo}/latest", s.getLatest)
+		}),
+	)
 }
