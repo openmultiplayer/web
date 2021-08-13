@@ -1,15 +1,13 @@
-package app
+package db
 
 import (
 	"context"
 
 	"go.uber.org/fx"
-
-	"github.com/openmultiplayer/web/server/src/db"
 )
 
-func NewDatabase(lc fx.Lifecycle) (*db.PrismaClient, error) {
-	prisma := db.NewClient()
+func New(lc fx.Lifecycle) (*PrismaClient, error) {
+	prisma := NewClient()
 
 	lc.Append(fx.Hook{
 		OnStart: func(context.Context) error {

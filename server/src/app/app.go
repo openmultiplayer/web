@@ -10,6 +10,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/api"
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/config"
+	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/logger"
 	"github.com/openmultiplayer/web/server/src/mailer"
@@ -31,7 +32,7 @@ func Start(ctx context.Context) {
 
 		fx.Provide(
 			config.New,
-			NewDatabase,
+			db.New,
 			pubsub.NewRabbit,
 			mailer.NewSendGrid,
 			docsindex.New,
