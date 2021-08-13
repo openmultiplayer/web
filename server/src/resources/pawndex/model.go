@@ -1,4 +1,4 @@
-package pkgdef
+package pawndex
 
 import (
 	"fmt"

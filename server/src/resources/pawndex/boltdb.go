@@ -6,7 +6,6 @@ import (
 	bolt "go.etcd.io/bbolt"
 
 	"github.com/openmultiplayer/web/server/src/config"
-	"github.com/openmultiplayer/web/server/src/pkgdef"
 )
 
 var packagesBucket = []byte("packages")
@@ -16,7 +15,7 @@ type DB struct {
 }
 
 type Entry struct {
-	Pkg    pkgdef.Package
+	Pkg    Package
 	Marked bool
 }
 
@@ -45,8 +44,8 @@ func (db *DB) Close() error {
 	return db.db.Close()
 }
 
-func (db *DB) GetAll() ([]pkgdef.Package, error) {
-	packages := []pkgdef.Package{}
+func (db *DB) GetAll() ([]Package, error) {
+	packages := []Package{}
 
 	if err := db.db.View(func(t *bolt.Tx) error {
 		bkt := t.Bucket(packagesBucket)
@@ -72,7 +71,7 @@ func (db *DB) GetAll() ([]pkgdef.Package, error) {
 	return packages, nil
 }
 
-func (db *DB) Get(name string) (pkg pkgdef.Package, exists bool, err error) {
+func (db *DB) Get(name string) (pkg Package, exists bool, err error) {
 	if err := db.db.View(func(t *bolt.Tx) error {
 		bkt := t.Bucket(packagesBucket)
 		raw := bkt.Get([]byte(name))
@@ -99,7 +98,7 @@ func (db *DB) Get(name string) (pkg pkgdef.Package, exists bool, err error) {
 	return
 }
 
-func (db *DB) Set(p pkgdef.Package) error {
+func (db *DB) Set(p Package) error {
 	return db.db.Update(func(t *bolt.Tx) error {
 		bkt, err := t.CreateBucketIfNotExists(packagesBucket)
 		if err != nil {

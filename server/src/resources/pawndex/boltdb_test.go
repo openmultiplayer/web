@@ -10,7 +10,6 @@ import (
 	"github.com/Southclaws/sampctl/versioning"
 
 	"github.com/openmultiplayer/web/server/src/config"
-	"github.com/openmultiplayer/web/server/src/pkgdef"
 )
 
 var (
@@ -33,7 +32,7 @@ func TestMain(m *testing.M) {
 
 func TestDB_Set(t *testing.T) {
 	type args struct {
-		p pkgdef.Package
+		p Package
 	}
 	tests := []struct {
 		name    string
@@ -41,36 +40,36 @@ func TestDB_Set(t *testing.T) {
 		args    args
 		wantErr bool
 	}{
-		{"insert 1", database, args{pkgdef.Package{
+		{"insert 1", database, args{Package{
 			Package: pawnpackage.Package{
 				DependencyMeta: versioning.DependencyMeta{
 					User: "Southclaws",
 					Repo: "TestPackage1",
 				},
 			},
-			Classification: pkgdef.ClassificationPawnPackage,
+			Classification: ClassificationPawnPackage,
 			Stars:          100,
 			Updated:        now,
 		}}, false},
-		{"insert 2", database, args{pkgdef.Package{
+		{"insert 2", database, args{Package{
 			Package: pawnpackage.Package{
 				DependencyMeta: versioning.DependencyMeta{
 					User: "Southclaws",
 					Repo: "TestPackage2",
 				},
 			},
-			Classification: pkgdef.ClassificationPawnPackage,
+			Classification: ClassificationPawnPackage,
 			Stars:          100,
 			Updated:        now,
 		}}, false},
-		{"insert 3", database, args{pkgdef.Package{
+		{"insert 3", database, args{Package{
 			Package: pawnpackage.Package{
 				DependencyMeta: versioning.DependencyMeta{
 					User: "Southclaws",
 					Repo: "TestPackage3",
 				},
 			},
-			Classification: pkgdef.ClassificationPawnPackage,
+			Classification: ClassificationPawnPackage,
 			Stars:          100,
 			Updated:        now,
 		}}, false},
@@ -92,44 +91,44 @@ func TestDB_Get(t *testing.T) {
 		name       string
 		db         Repository
 		args       args
-		wantPkg    pkgdef.Package
+		wantPkg    Package
 		wantExists bool
 		wantErr    bool
 	}{
-		{"get 1", database, args{"Southclaws/TestPackage1"}, pkgdef.Package{
+		{"get 1", database, args{"Southclaws/TestPackage1"}, Package{
 			Package: pawnpackage.Package{
 				DependencyMeta: versioning.DependencyMeta{
 					User: "Southclaws",
 					Repo: "TestPackage1",
 				},
 			},
-			Classification: pkgdef.ClassificationPawnPackage,
+			Classification: ClassificationPawnPackage,
 			Stars:          100,
 			Updated:        now,
 		}, true, false},
-		{"get 2", database, args{"Southclaws/TestPackage2"}, pkgdef.Package{
+		{"get 2", database, args{"Southclaws/TestPackage2"}, Package{
 			Package: pawnpackage.Package{
 				DependencyMeta: versioning.DependencyMeta{
 					User: "Southclaws",
 					Repo: "TestPackage2",
 				},
 			},
-			Classification: pkgdef.ClassificationPawnPackage,
+			Classification: ClassificationPawnPackage,
 			Stars:          100,
 			Updated:        now,
 		}, true, false},
-		{"get 3", database, args{"Southclaws/TestPackage3"}, pkgdef.Package{
+		{"get 3", database, args{"Southclaws/TestPackage3"}, Package{
 			Package: pawnpackage.Package{
 				DependencyMeta: versioning.DependencyMeta{
 					User: "Southclaws",
 					Repo: "TestPackage3",
 				},
 			},
-			Classification: pkgdef.ClassificationPawnPackage,
+			Classification: ClassificationPawnPackage,
 			Stars:          100,
 			Updated:        now,
 		}, true, false},
-		{"get none", database, args{"none"}, pkgdef.Package{}, false, false},
+		{"get none", database, args{"none"}, Package{}, false, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -152,10 +151,10 @@ func TestDB_GetAll(t *testing.T) {
 	tests := []struct {
 		name    string
 		db      Repository
-		want    []pkgdef.Package
+		want    []Package
 		wantErr bool
 	}{
-		{"all", database, []pkgdef.Package{
+		{"all", database, []Package{
 			{
 				Package: pawnpackage.Package{
 					DependencyMeta: versioning.DependencyMeta{
@@ -163,7 +162,7 @@ func TestDB_GetAll(t *testing.T) {
 						Repo: "TestPackage1",
 					},
 				},
-				Classification: pkgdef.ClassificationPawnPackage,
+				Classification: ClassificationPawnPackage,
 				Stars:          100,
 				Updated:        now,
 			},
@@ -174,7 +173,7 @@ func TestDB_GetAll(t *testing.T) {
 						Repo: "TestPackage2",
 					},
 				},
-				Classification: pkgdef.ClassificationPawnPackage,
+				Classification: ClassificationPawnPackage,
 				Stars:          100,
 				Updated:        now,
 			},
@@ -185,7 +184,7 @@ func TestDB_GetAll(t *testing.T) {
 						Repo: "TestPackage3",
 					},
 				},
-				Classification: pkgdef.ClassificationPawnPackage,
+				Classification: ClassificationPawnPackage,
 				Stars:          100,
 				Updated:        now,
 			},
@@ -327,11 +326,11 @@ func TestDB_GetUnscraped(t *testing.T) {
 		name       string
 		db         Repository
 		args       args
-		wantPkg    pkgdef.Package
+		wantPkg    Package
 		wantExists bool
 		wantErr    bool
 	}{
-		{"get none", database, args{"Southclaws/TestPackage4"}, pkgdef.Package{}, false, false},
+		{"get none", database, args{"Southclaws/TestPackage4"}, Package{}, false, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
