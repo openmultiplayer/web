@@ -150,18 +150,12 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 }
 
 func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int, deleted bool) ([]Post, error) {
-	var now *time.Time
-
-	if !deleted {
-		*now = time.Now()
-	}
-
 	posts, err := d.db.Post.
 		FindMany(
 			db.Post.First.Equals(true),
 			db.Post.Tags.Every(db.Tag.Name.In(tags)),
 			db.Post.CreatedAt.Before(before),
-			db.Post.DeletedAt.BeforeIfPresent(now),
+			db.Post.DeletedAt.AfterEqualsIfPresent(timeOrNil(!deleted)),
 		).
 		With(db.Post.Author.Fetch()).
 		Take(max).
@@ -180,7 +174,7 @@ func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, so
 	return result, nil
 }
 
-func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int) ([]Post, error) {
+func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error) {
 	posts, err := d.db.Post.
 		FindMany(
 			db.Post.Or(
@@ -193,7 +187,7 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int) ([]Post, 
 					db.Post.Root.Where(db.Post.Slug.Equals(slug)),
 				),
 			),
-			db.Post.DeletedAt.IsNull(),
+			db.Post.DeletedAt.AfterEqualsIfPresent(timeOrNil(!deleted)),
 		).
 		With(db.Post.Author.Fetch()).
 		Take(max).
@@ -202,6 +196,10 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int) ([]Post, 
 		Exec(ctx)
 	if err != nil {
 		return nil, err
+	}
+
+	if len(posts) == 0 {
+		return nil, nil
 	}
 
 	result := []Post{}
