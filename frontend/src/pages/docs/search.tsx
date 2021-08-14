@@ -2,11 +2,12 @@ import React, { FC } from "react";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Error from "next/error";
 import useSWR from "swr";
-import { map } from "lodash/fp";
+import { last, map } from "lodash/fp";
 
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/generated_error";
 import { Hit, SearchResults } from "src/types/searchResult";
+import Link from "next/link";
 
 type Params = {
   q: string;
@@ -18,7 +19,18 @@ type Props = {
   error?: string;
 };
 
-const resultToItem = (h: Hit) => <li>{h.id}</li>;
+const clean = (path: string): string =>
+  noExtension(last(path.split("/")) ?? path);
+
+const noExtension = (path: string) => path.replace(".md", "");
+
+const resultToItem = (h: Hit) => (
+  <li>
+    <Link href={h.id}>
+      <a>{clean(h.id)}</a>
+    </Link>
+  </li>
+);
 
 const Results: FC<Partial<Props>> = ({ query, results }) => {
   const { data, error } = useSWR<SearchResults, APIError>(
@@ -39,9 +51,19 @@ const Results: FC<Partial<Props>> = ({ query, results }) => {
 };
 
 const Form: FC = () => (
-  <form>
-    <input type="text" name="q" />
-    <button type="submit">Search</button>{" "}
+  <form className="flex justify-between">
+    <input
+      className="w-100 b--solid b--black-10 br2 br--left"
+      type="text"
+      name="q"
+      required
+    />
+    <button
+      className="br2 b--solid b--black-10 b--black br--right"
+      type="submit"
+    >
+      Search
+    </button>
   </form>
 );
 
@@ -51,7 +73,7 @@ const Page: FC<Props> = ({ query, results, error }) => {
   }
 
   return (
-    <section className="center measure-wide">
+    <section className="center measure-wide pa4">
       <Form />
       {query && (
         <>
