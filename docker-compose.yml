@@ -46,8 +46,8 @@ services:
       traefik.http.routers.omp_frontend.rule: Host(`open.mp`)
       traefik.http.routers.omp_frontend.entrypoints: https
       traefik.http.routers.omp_frontend.tls.certresolver: default
-      traefik.http.middlewares.test-redirectregex.redirectregex.regex: "^https://www.open.mp/(.*)"
-      traefik.http.middlewares.test-redirectregex.redirectregex.replacement: "https://open.mp/$${1}"
+      traefik.http.middlewares.omp_frontend.redirectregex.regex: "^https://www.open.mp/(.*)"
+      traefik.http.middlewares.omp_frontend.redirectregex.replacement: "https://open.mp/$${1}"
       com.centurylinklabs.watchtower.enable: "true"
 
   postgres:
