@@ -69,3 +69,21 @@ The `.dev.yml` Compose configuration contains services that aren't secure or pro
 The frontend is deployed directly to [Vercel](https://vercel.com) from the `master` branch.
 
 The backend is deployed to a server from the `master` branch using the `docker-compose.yml` file. You can simulate a production deployment by running `docker-compose up`.
+
+### Uploading Assets
+
+We host large static assets such as images and videos on an S3-compatible object storage. This runs at `assets.open.mp` and you can use the task `upload-assets` to upload all public assets from `frontend/public`.
+
+The easiest way to do this is via the [Minio client](https://docs.min.io/docs/minio-client-quickstart-guide.html). Once installed, set up an alias called `omp`:
+
+```
+mc alias set omp https://assets.open.mp ACCESS_KEY SECRET_KEY
+```
+
+Replace the two keys with the real keys.
+
+Then run the task:
+
+```
+task upload-assets
+```
