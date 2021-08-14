@@ -50,6 +50,7 @@ func New(db *db.PrismaClient, cfg config.Config, users user.Repository) *State {
 func (a *State) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
 	encoded, err := a.sc.Encode(secureCookieName, Cookie{
 		UserID:  user.ID,
+		Admin:   user.Admin,
 		Created: time.Now(),
 	})
 	if err != nil {

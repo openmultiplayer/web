@@ -23,6 +23,7 @@ type Info struct {
 // any future requests and propagated to handlers.
 type Cookie struct {
 	UserID  string
+	Admin   bool
 	Created time.Time
 }
 
@@ -87,23 +88,15 @@ func MustBeAuthenticated(next http.Handler) http.Handler {
 	})
 }
 
-func (a *State)MustBeAdmin(next http.Handler) http.Handler {
+func (a *State) MustBeAdmin(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		auth, ok := GetAuthenticationInfo(w, r)
 		if !ok {
 			return
 		}
-		user, err := a.users.GetUser(r.Context(), auth.Cookie.UserID)
-		if err != nil {
-			web.StatusInternalServerError(w, err)
-			return
-		}
-		if user == nil {
-			return
-		}
 
-		if !user.Admin {
-			web.StatusUnauthorized(w, errors.New("user is not an administrator"))			
+		if !auth.Cookie.Admin {
+			web.StatusUnauthorized(w, errors.New("user is not an administrator"))
 			return
 		}
 
