@@ -64,7 +64,7 @@ tasks:
   web:
     dir: frontend
     env:
-      API_ADDRESS: "http://localhost:8000"
+      NEXT_PUBLIC_API_ADDRESS: "http://localhost:8000"
     cmds:
       - npm run dev
 
@@ -72,6 +72,6 @@ tasks:
   web-live:
     dir: frontend
     env:
-      API_ADDRESS: "https://api.open.mp"
+      NEXT_PUBLIC_API_ADDRESS: "https://api.open.mp"
     cmds:
       - npm run dev

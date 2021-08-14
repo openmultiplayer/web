@@ -1,1 +1,1 @@
-export const API_ADDRESS = process.env.API_ADDRESS ?? "https://api.open.mp";
+export const API_ADDRESS = process.env.NEXT_PUBLIC_API_ADDRESS;
