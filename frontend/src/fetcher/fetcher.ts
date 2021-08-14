@@ -1,11 +1,8 @@
 import { GetServerSidePropsContext } from "next";
 
+import { API_ADDRESS } from "src/config";
 import { APIError } from "src/types/generated_error";
 import { Result } from "./result";
-
-// TODO: Switch based on dev/prod or load from env vars
-const API_ADDRESS = "https://api.open.mp";
-// const API_ADDRESS = "http://localhost:8000";
 
 const success = (code: number) => code >= 200 && code <= 299;
 

@@ -1,4 +1,4 @@
-version: "2"
+version: 3
 
 tasks:
   default:
@@ -59,3 +59,19 @@ tasks:
     dir: emails
     cmds:
       - npm run build
+
+  # Run the web frontend and use a local API server.
+  web:
+    dir: frontend
+    env:
+      API_ADDRESS: "http://localhost:8000"
+    cmds:
+      - npm run dev
+
+  # Run the web frontend and use the live API.
+  web-live:
+    dir: frontend
+    env:
+      API_ADDRESS: "https://api.open.mp"
+    cmds:
+      - npm run dev
