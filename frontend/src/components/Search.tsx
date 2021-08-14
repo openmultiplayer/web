@@ -1,13 +1,22 @@
-import { useCallback, useRef, useState } from "react";
+import { last } from "lodash/fp";
 import Link from "next/link";
+import { FC, useCallback, useRef, useState } from "react";
+import { API_ADDRESS } from "src/config";
+import { Hit, SearchResults } from "src/types/searchResult";
 
-const Search = () => {
+const clean = (path: string): string =>
+  noExtension(last(path.split("/")) ?? path);
+
+const noExtension = (path: string) => path.replace(".md", "");
+
+const Search: FC = () => {
   const searchRef = useRef<HTMLDivElement>(null);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(false);
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<Hit[]>([]);
 
-  const searchEndpoint = (query: string) => `/api/search?q=${query}`;
+  const searchEndpoint = (query: string) =>
+    `${API_ADDRESS}/docs/search?q=${query}`;
 
   const onChange = useCallback((event) => {
     const query = event.target.value;
@@ -15,22 +24,12 @@ const Search = () => {
     if (query.length) {
       fetch(searchEndpoint(query))
         .then((res) => res.json())
-        .then((res) => {
-          res.results.sort(function (a: any, b: any) {
-            const indexA = a.title.toLowerCase().indexOf(query.toLowerCase());
-            const indexB = b.title.toLowerCase().indexOf(query.toLowerCase());
-            return indexB < indexA;
-          });
-          setResults(res.results);
+        .then((res: SearchResults) => {
+          setResults(res.hits);
         });
     } else {
       setResults([]);
     }
-  }, []);
-
-  const onFocus = useCallback(() => {
-    setActive(true);
-    window.addEventListener("click", onClick);
   }, []);
 
   const onClick = useCallback((event) => {
@@ -39,6 +38,11 @@ const Search = () => {
       window.removeEventListener("click", onClick);
     }
   }, []);
+
+  const onFocus = useCallback(() => {
+    setActive(true);
+    window.addEventListener("click", onClick);
+  }, [onClick]);
 
   return (
     <>
@@ -53,10 +57,10 @@ const Search = () => {
         />
         {active && results.length > 0 && (
           <ul className="results">
-            {results.map(({ id, title, url }) => (
+            {results.map(({ id }) => (
               <li className="result" key={id}>
-                <Link href={url} as={url}>
-                  <a>{title}</a>
+                <Link href={`/${noExtension(id)}`} as={`/${noExtension(id)}`}>
+                  <a>{clean(id)}</a>
                 </Link>
               </li>
             ))}
