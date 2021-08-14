@@ -1,6 +1,7 @@
 package forum
 
 import (
+	"encoding/json"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -15,7 +16,10 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if err := s.repo.DeletePost(r.Context(), info.Cookie.UserID, id); err != nil {
+	post, err := s.repo.DeletePost(r.Context(), info.Cookie.UserID, id, info.Cookie.Admin)
+	if err != nil {
 		web.StatusInternalServerError(w, err)
 	}
+
+	json.NewEncoder(w).Encode(post)
 }

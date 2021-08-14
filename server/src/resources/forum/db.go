@@ -122,18 +122,21 @@ func (d *DB) EditPost(ctx context.Context, authorID, id string, title *string, b
 	return FromModel(post), err
 }
 
-func (d *DB) DeletePost(ctx context.Context, authorID, postID string) error {
+func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool) (*Post, error) {
 	// This could probably be optimised. I am too lazy to do it rn.
 	post, err := d.db.Post.
 		FindUnique(
 			db.Post.ID.Equals(postID),
 		).
+		With(db.Post.Author.Fetch()).
 		Exec(ctx)
 	if err != nil {
-		return err
+		return nil, err
 	}
-	if post.Author().ID != authorID {
-		return ErrUnauthorised
+	if force == false {
+		if post.Author().ID != authorID {
+			return nil, ErrUnauthorised
+		}
 	}
 
 	_, err = d.db.Post.
@@ -142,7 +145,8 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string) error {
 			db.Post.DeletedAt.Set(time.Now()),
 		).
 		Exec(ctx)
-	return err
+
+	return FromModel(post), err
 }
 
 func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int) ([]Post, error) {

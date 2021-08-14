@@ -20,7 +20,7 @@ type Repository interface {
 
 	EditPost(ctx context.Context, authorID, postID string, title *string, body *string) (*Post, error)
 
-	DeletePost(ctx context.Context, authorID, postID string) error
+	DeletePost(ctx context.Context, authorID, postID string, force bool) (*Post, error)
 
 	GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int) ([]Post, error)
 	GetPosts(ctx context.Context, slug string, max, skip int) ([]Post, error)
