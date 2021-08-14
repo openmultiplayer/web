@@ -35,6 +35,19 @@ services:
       traefik.http.routers.omp_api.tls.certresolver: default
       com.centurylinklabs.watchtower.enable: "true"
 
+  frontend:
+    restart: on-failure
+    image: southclaws/openmp-frontend
+    ports:
+      - 3000:3000
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: gateway
+      traefik.http.routers.omp_frontend.rule: Host(`open.mp`)
+      traefik.http.routers.omp_frontend.entrypoints: https
+      traefik.http.routers.omp_frontend.tls.certresolver: default
+      com.centurylinklabs.watchtower.enable: "true"
+
   postgres:
     image: postgres
     restart: always
