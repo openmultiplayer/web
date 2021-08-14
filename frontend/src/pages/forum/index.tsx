@@ -2,13 +2,12 @@ import { formatRelative } from "date-fns";
 import map from "lodash/fp/map";
 import Link from "next/link";
 import nProgress from "nprogress";
-import React, { FC } from "react";
-import { useCallback } from "react";
+import React, { FC, useCallback } from "react";
 import { toast } from "react-nextjs-toast";
-import { useAuth, useIsAdmin } from "src/auth/hooks";
+import { useIsAdmin } from "src/auth/hooks";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
 import { PostModel, TagModel } from "src/types/generated_server";
-import useSWR from "swr";
+import useSWR, { mutate } from "swr";
 
 const ListHeader = () => {
   return (
@@ -32,6 +31,8 @@ type PostItemProps = {
   onDelete: (id: string) => void;
 };
 
+const niceDate = (d: string) => formatRelative(new Date(d), new Date());
+
 const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
   const onClick = useCallback(
     (e) => {
@@ -49,9 +50,17 @@ const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
           <header className="flex justify-between">
             <h1 className="ma0">{post.title}</h1>
             {showAdminTools && (
-              <span>
-                <button onClick={onClick}>Delete</button>
-              </span>
+              <div>
+                {post.deletedAt === null ? (
+                  <span>
+                    <button onClick={onClick}>Delete</button>
+                  </span>
+                ) : (
+                  <span className="white bg-red br2 lh-copy ph2 pv1 ma0">{`Deleted ${niceDate(
+                    post.deletedAt as string
+                  )}`}</span>
+                )}
+              </div>
             )}
           </header>
           <div className="flex flex-row justify-between">
@@ -61,9 +70,8 @@ const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
             </div>
 
             <div className="right flex-grow self-end black-50">
-              <span>{`Posted by ${post.author?.name} ${formatRelative(
-                new Date(post.createdAt as string),
-                new Date()
+              <span>{`Posted by ${post.author?.name} ${niceDate(
+                post.createdAt as string
               )}`}</span>
             </div>
           </div>
@@ -93,6 +101,7 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
         type: "success",
       });
     }
+    mutate("/forum");
     nProgress.done();
   }, []);
 

@@ -92,3 +92,11 @@ func GetAuthenticationInfoFromContext(ctx context.Context) (*Info, bool) {
 	}
 	return nil, false
 }
+
+func IsRequestAdmin(r *http.Request) bool {
+	info, _ := GetAuthenticationInfoFromContext(r.Context())
+	if info == nil {
+		return false
+	}
+	return info.Cookie.Admin
+}

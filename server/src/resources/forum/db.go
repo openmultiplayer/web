@@ -149,13 +149,19 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 	return FromModel(post), err
 }
 
-func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int) ([]Post, error) {
+func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int, deleted bool) ([]Post, error) {
+	var now *time.Time
+
+	if !deleted {
+		*now = time.Now()
+	}
+
 	posts, err := d.db.Post.
 		FindMany(
 			db.Post.First.Equals(true),
 			db.Post.Tags.Every(db.Tag.Name.In(tags)),
 			db.Post.CreatedAt.Before(before),
-			db.Post.DeletedAt.IsNull(),
+			db.Post.DeletedAt.BeforeIfPresent(now),
 		).
 		With(db.Post.Author.Fetch()).
 		Take(max).
