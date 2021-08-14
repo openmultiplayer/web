@@ -2,9 +2,6 @@ const fs = require("fs");
 const path = require("path");
 
 const parseDir = require("./scripts/gentree");
-const generateCache = require("./scripts/gencache");
-
-generateCache();
 
 const localesFromContent = fs
   .readdirSync("content")
