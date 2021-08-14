@@ -14,7 +14,6 @@ func WithLogger(next http.Handler) http.Handler {
 			zap.String("method", r.Method),
 			zap.String("path", r.URL.Path),
 			zap.Any("query", r.URL.Query()),
-			zap.Any("headers", r.Header),
 			zap.Int64("body", r.ContentLength),
 		)
 		next.ServeHTTP(w, r)
