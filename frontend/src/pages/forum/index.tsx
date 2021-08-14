@@ -1,10 +1,13 @@
 import { formatRelative } from "date-fns";
 import map from "lodash/fp/map";
 import Link from "next/link";
-import React, { FC } from "react";
-import { apiSWR } from "src/fetcher/fetcher";
+import nProgress from "nprogress";
+import React, { FC, useCallback } from "react";
+import { toast } from "react-nextjs-toast";
+import { useIsAdmin } from "src/auth/hooks";
+import { apiSSP, apiSWR } from "src/fetcher/fetcher";
 import { PostModel, TagModel } from "src/types/generated_server";
-import useSWR from "swr";
+import useSWR, { mutate } from "swr";
 
 const ListHeader = () => {
   return (
@@ -22,44 +25,101 @@ const tagToPill = (t: TagModel) => (
   </>
 );
 
-const threadToListItem = (t: PostModel) => (
-  <li key={t.id} className="list pv2">
-    <a href={`/forum/${t.slug}`} className="link">
-      <article className="bb b--black-10 flex flex-column">
-        <header>
-          <h1 className="ma0">{t.title}</h1>
-        </header>
-        <div className="flex flex-row justify-between">
-          <div className="left">
-            <p className="ma0 black-80">{t.short}</p>
-            <ul>{map(tagToPill)(t.tags)}</ul>
-          </div>
+type PostItemProps = {
+  post: PostModel;
+  showAdminTools: boolean;
+  onDelete: (id: string) => void;
+};
 
-          <div className="right flex-grow self-end black-50">
-            <span>{`Posted by ${t.author?.name} ${formatRelative(
-              new Date(t.createdAt as string),
-              new Date()
-            )}`}</span>
+const niceDate = (d: string) => formatRelative(new Date(d), new Date());
+
+const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
+  const onClick = useCallback(
+    (e) => {
+      // The whole element is wrapped inside an <a> tag so this prevents
+      // clicking the button from navigating to the link.
+      e.preventDefault();
+      onDelete(post.id);
+    },
+    [post, onDelete]
+  );
+  return (
+    <li key={post.id} className="list pv2">
+      <a href={`/forum/${post.slug}`} className="link">
+        <article className="bb b--black-10 flex flex-column">
+          <header className="flex justify-between">
+            <h1 className="ma0">{post.title}</h1>
+            {showAdminTools && (
+              <div>
+                {post.deletedAt === null ? (
+                  <span>
+                    <button onClick={onClick}>Delete</button>
+                  </span>
+                ) : (
+                  <span className="white bg-red br2 lh-copy ph2 pv1 ma0">{`Deleted ${niceDate(
+                    post.deletedAt as string
+                  )}`}</span>
+                )}
+              </div>
+            )}
+          </header>
+          <div className="flex flex-row justify-between">
+            <div className="left">
+              <p className="ma0 black-80">{post.short}</p>
+              <ul>{map(tagToPill)(post.tags)}</ul>
+            </div>
+
+            <div className="right flex-grow self-end black-50">
+              <span>{`Posted by ${post.author?.name} ${niceDate(
+                post.createdAt as string
+              )}`}</span>
+            </div>
           </div>
-        </div>
-      </article>
-    </a>
-  </li>
-);
+        </article>
+      </a>
+    </li>
+  );
+};
 
 type ThreadListProps = {
   data: PostModel[];
+  isAdmin: boolean;
 };
 
-const ThreadList: FC<ThreadListProps> = ({ data }) => (
-  <div>
-    <ListHeader />
+const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
+  const onDelete = useCallback(async (id: string) => {
+    nProgress.start();
+    const result = await apiSSP(`/forum/${id}`, { method: "DELETE" });
+    if (result.isError()) {
+      const err = result.error();
+      toast.notify(err.message ?? "An unknown error occurred", {
+        title: err.error,
+        type: "error",
+      });
+    } else {
+      toast.notify("Post deleted!", {
+        type: "success",
+      });
+    }
+    mutate("/forum");
+    nProgress.done();
+  }, []);
 
-    <ol className="pa2">{map(threadToListItem)(data)}</ol>
-  </div>
-);
+  const mapping = map((post: PostModel) => (
+    <PostItem post={post} showAdminTools={isAdmin} onDelete={onDelete} />
+  ));
+
+  return (
+    <div>
+      <ListHeader />
+
+      <ol className="pa2">{mapping(data)}</ol>
+    </div>
+  );
+};
 
 const Page = () => {
+  const isAdmin = useIsAdmin();
   const { data, error } = useSWR<PostModel[]>("/forum", apiSWR);
   if (error) {
     console.error(error);
@@ -70,7 +130,7 @@ const Page = () => {
   }
   return (
     <div className="center pv2">
-      <ThreadList data={data} />
+      <ThreadList data={data} isAdmin={isAdmin} />
 
       <style jsx>{`
         div {

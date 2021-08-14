@@ -2,9 +2,11 @@ package forum
 
 import (
 	"encoding/json"
+	"errors"
 	"net/http"
 
 	"github.com/go-chi/chi"
+	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -26,9 +28,16 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		p.Max = 100
 	}
 
-	posts, err := s.repo.GetPosts(r.Context(), slug, p.Max, p.Skip)
+	isAdmin := authentication.IsRequestAdmin(r)
+
+	posts, err := s.repo.GetPosts(r.Context(), slug, p.Max, p.Skip, isAdmin)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
+		return
+	}
+
+	if posts == nil {
+		web.StatusNotFound(w, web.WithDescription(errors.New("not found"), "No posts were found with that ID"))
 		return
 	}
 

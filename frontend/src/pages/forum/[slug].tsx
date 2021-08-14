@@ -20,17 +20,27 @@ type Props = {
   error?: string;
 };
 
+const niceDate = (d: string) => formatRelative(new Date(d), new Date());
+
 const postToListItem = (p: PostModel) => (
   <li key={p.id} className="list pv2">
     <article className="">
       <header className="bb b--black-20 pv2">
-        <h1 className="mv2">{p.title}</h1>
+        <div className="flex justify-between content-center">
+          <h1 className="mv2">{p.title}</h1>
+          <div className="flex flex-row">
+            <span className="self-center white bg-red br2 lh-copy ph2 pv1 ma0">
+              Deleted {niceDate(p.deletedAt as string)}
+            </span>
+          </div>
+        </div>
+
         <span className="flex justify-between content-center">
           <p className="f5 mv0">
             <em>Posted by {p.author?.name}</em>
           </p>
           <time className="mv0 black-50">
-            {formatRelative(new Date(p.createdAt as string), new Date())}
+            posted {formatRelative(new Date(p.createdAt as string), new Date())}
           </time>
         </span>
       </header>

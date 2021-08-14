@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -33,7 +34,10 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		p.Max = 100
 	}
 
-	posts, err := s.repo.GetThreads(r.Context(), p.Tags, p.Before, p.Sort, p.Max)
+	// Admins get to see deleted posts
+	isAdmin := authentication.IsRequestAdmin(r)
+
+	posts, err := s.repo.GetThreads(r.Context(), p.Tags, p.Before, p.Sort, p.Max, isAdmin)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
