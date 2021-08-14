@@ -164,6 +164,7 @@ const App = ({ Component, pageProps, router }: AppProps) => (
           items={[
             { name: "Home", path: "/", exact: true },
             { name: "FAQ", path: "/faq" },
+            { name: "Forum", path: "/forum" },
             { name: "Servers", path: "/servers" },
             { name: "Docs", path: "/docs" },
             { name: "Blog", path: "/blog" },
