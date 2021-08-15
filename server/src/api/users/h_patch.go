@@ -5,9 +5,13 @@ import (
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/web"
 )
+
+type patchPayload struct {
+	Email *string `json:"email"`
+	Name  *string `json:"name"`
+}
 
 func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 	ai, ok := authentication.GetAuthenticationInfo(w, r)
@@ -15,21 +19,13 @@ func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var user *db.UserModel
-	if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
-		web.StatusBadRequest(w, err)
+	var p patchPayload
+	if !web.ParseBody(w, r, &p) {
 		return
 	}
 
-	user, err := s.db.User.FindUnique(db.User.ID.Equals(ai.Cookie.UserID)).Update(
-	// TODO: Waiting for Prisma update.
-	// db.User.Email.SetIfPresent(user.Email),
-	// db.User.Name.SetIfPresent(user.Name),
-	).Exec(r.Context())
+	user, err := s.repo.UpdateUser(r.Context(), ai.Cookie.UserID, p.Email, p.Name)
 	if err != nil {
-		// a "not found" in this context is still an internal server error
-		// because the user *should* exist in order for the auth middleware to
-		// allow the code to reach this point.
 		web.StatusInternalServerError(w, err)
 	}
 

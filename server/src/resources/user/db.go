@@ -31,7 +31,7 @@ func (d *DB) GetUser(ctx context.Context, userId string) (*db.UserModel, error) 
 		// allow the code to reach this point.
 		return nil, err
 	}
-	
+
 	return user, nil
 }
 
@@ -42,6 +42,21 @@ func (d *DB) GetUsers(ctx context.Context, sort types.Direction, max, skip int) 
 	}
 
 	return users, nil
+}
+
+func (d *DB) UpdateUser(ctx context.Context, userId string, email, name *string) (*db.UserModel, error) {
+	user, err := d.db.User.
+		FindUnique(db.User.ID.Equals(userId)).
+		Update(
+			db.User.Email.SetIfPresent(email),
+			db.User.Name.SetIfPresent(name),
+		).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	return user, nil
 }
 
 func (d *DB) SetAdmin(ctx context.Context, userId string, status bool) (bool, error) {
