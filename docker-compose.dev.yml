@@ -22,7 +22,7 @@ services:
     ports:
       - 8082:9000
     volumes:
-      - ${DATA_DIR}/openmp-index/minio:/data
+      - ./data/openmp-index/minio:/data
     networks:
       - default
     labels:
