@@ -1,19 +1,17 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formatRelative } from "date-fns";
-import { map, props } from "lodash/fp";
+import { map } from "lodash/fp";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-import { serialize } from 'next-mdx-remote/serialize'
+import { serialize } from "next-mdx-remote/serialize";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { FC, useState } from "react";
 import { useForm } from "react-hook-form";
-import ReactMarkdown from "react-markdown";
-import admonitions from "remark-admonitions";
 import Editor from "rich-markdown-editor";
-import { apiSSP, apiSWR } from "src/fetcher/fetcher";
+import { apiSSP } from "src/fetcher/fetcher";
 import { PostModel } from "src/types/generated_server";
-import useSWR, { mutate } from "swr";
+import { mutate } from "swr";
 import * as z from "zod";
 
 type Props = {
@@ -177,11 +175,15 @@ export async function getServerSideProps(
 
   // TODO This is a temporary hacky solution, for some reason this request is returning an object,
   // even though when you test it manually it returns an array. Possibly an issue with apiSSP.
-  posts = [...Object.values(posts)]
+  posts = [...Object.values(posts)].sort((a, b) => {
+    const ac = new Date(a.createdAt as string);
+    const bc = new Date(b.createdAt as string);
+    return ac.getTime() - bc.getTime();
+  });
 
-  let postsWithMarkdown: PostModelWithMarkdown[] = [];
+  const postsWithMarkdown: PostModelWithMarkdown[] = [];
 
-  for(let k in posts) {
+  for (const k in posts) {
     postsWithMarkdown.push({
       postModel: posts[k],
       markdown: await serialize(posts[k].body)
