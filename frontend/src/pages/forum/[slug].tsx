@@ -2,36 +2,36 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { formatRelative } from "date-fns";
 import { map } from "lodash/fp";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { FC, useState } from "react";
 import { useForm } from "react-hook-form";
-import ReactMarkdown from "react-markdown";
-import admonitions from "remark-admonitions";
 import Editor from "rich-markdown-editor";
-import { apiSSP, apiSWR } from "src/fetcher/fetcher";
+import { apiSSP } from "src/fetcher/fetcher";
 import { PostModel } from "src/types/generated_server";
-import useSWR, { mutate } from "swr";
+import { mutate } from "swr";
 import * as z from "zod";
 
 type Props = {
   id: string;
-  posts?: PostModel[];
+  posts?: PostModelWithMarkdown[];
   error?: string;
 };
 
 const niceDate = (d: string) => formatRelative(new Date(d), new Date());
 
-const postToListItem = (p: PostModel) => (
-  <li key={p.id} className="list pv2">
+const postToListItem = (p: PostModelWithMarkdown) => (
+  <li key={p.postModel.id} className="list pv2">
     <article className="">
       <header className="bb b--black-20 pv2">
         <div className="flex justify-between content-center">
-          <h1 className="mv2">{p.title}</h1>
+          <h1 className="mv2">{p.postModel.title}</h1>
           <div className="flex flex-row">
-            {p.deletedAt !== null && (
+            {p.postModel.deletedAt !== null && (
               <span className="self-center white bg-red br2 lh-copy ph2 pv1 ma0">
-                Deleted {niceDate(p.deletedAt as string)}
+                Deleted {niceDate(p.postModel.deletedAt as string)}
               </span>
             )}
           </div>
@@ -39,22 +39,22 @@ const postToListItem = (p: PostModel) => (
 
         <span className="flex justify-between content-center">
           <p className="f5 mv0">
-            <em>Posted by {p.author?.name}</em>
+            <em>Posted by {p.postModel.author?.name}</em>
           </p>
           <time className="mv0 black-50">
-            posted {formatRelative(new Date(p.createdAt as string), new Date())}
+            posted {formatRelative(new Date(p.postModel.createdAt as string), new Date())}
           </time>
         </span>
       </header>
       <div className="">
-        <ReactMarkdown>{p.body}</ReactMarkdown>
+        <MDXRemote {...p.markdown}></MDXRemote>
       </div>
     </article>
   </li>
 );
 
 type PostListProps = {
-  data: PostModel[];
+  data: PostModelWithMarkdown[];
 };
 
 const PostList: FC<PostListProps> = ({ data }) => (
@@ -127,16 +127,8 @@ const Page: FC<Props> = ({ id, posts }) => {
   const {
     query: { slug },
   } = useRouter();
-  const { data, error } = useSWR<PostModel[]>(`/forum/${slug}`, apiSWR, {
-    initialData: posts,
-  });
-  if (error) {
-    console.error(error);
-    return <p>"Error"</p>;
-  }
-  if (!data) {
-    return <p>"Loading..."</p>;
-  }
+
+  // TODO Render markdown client side if applicable.
 
   return (
     <div className="center pv2">
@@ -144,7 +136,7 @@ const Page: FC<Props> = ({ id, posts }) => {
         <a>Back</a>
       </Link>
 
-      <PostList data={data} />
+      <PostList data={posts ?? []} />
 
       <Reply id={id} slug={slug as string} />
 
@@ -156,6 +148,11 @@ const Page: FC<Props> = ({ id, posts }) => {
     </div>
   );
 };
+
+type PostModelWithMarkdown = {
+  postModel: PostModel,
+  markdown: MDXRemoteSerializeResult<Record<string, unknown>>
+}
 
 export async function getServerSideProps(
   context: GetServerSidePropsContext<{ slug: string[] }>
@@ -174,12 +171,29 @@ export async function getServerSideProps(
     };
   }
 
-  const posts = resp.value();
+  let posts = resp.value();
+
+  // TODO This is a temporary hacky solution, for some reason this request is returning an object,
+  // even though when you test it manually it returns an array. Possibly an issue with apiSSP.
+  posts = [...Object.values(posts)].sort((a, b) => {
+    const ac = new Date(a.createdAt as string);
+    const bc = new Date(b.createdAt as string);
+    return ac.getTime() - bc.getTime();
+  });
+
+  const postsWithMarkdown: PostModelWithMarkdown[] = [];
+
+  for (const k in posts) {
+    postsWithMarkdown.push({
+      postModel: posts[k],
+      markdown: await serialize(posts[k].body)
+    })
+  }
 
   return {
     props: {
       id: posts[0].id,
-      posts: posts,
+      posts: postsWithMarkdown,
     },
   };
 }
