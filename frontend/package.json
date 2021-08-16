@@ -28,6 +28,7 @@
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.21",
     "next": "11.0.1",
+    "next-mdx-remote": "^3.0.4",
     "next-seo": "^4.26.0",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
