@@ -45,38 +45,40 @@ const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
   );
   return (
     <li key={post.id} className="list pv2">
-      <a href={`/forum/${post.slug}`} className="link">
-        <article className="bb b--black-10 flex flex-column">
-          <header className="flex justify-between">
-            <h1 className="ma0">{post.title}</h1>
-            {showAdminTools && (
-              <div>
-                {post.deletedAt === null ? (
-                  <span>
-                    <button onClick={onClick}>Delete</button>
-                  </span>
-                ) : (
-                  <span className="white bg-red br2 lh-copy ph2 pv1 ma0">{`Deleted ${niceDate(
-                    post.deletedAt as string
-                  )}`}</span>
-                )}
+      <Link href={`/forum/${post.slug}`}>
+        <a className="link">
+          <article className="bb b--black-10 flex flex-column">
+            <header className="flex justify-between">
+              <h1 className="ma0">{post.title}</h1>
+              {showAdminTools && (
+                <div>
+                  {post.deletedAt === null ? (
+                    <span>
+                      <button onClick={onClick}>Delete</button>
+                    </span>
+                  ) : (
+                    <span className="white bg-red br2 lh-copy ph2 pv1 ma0">{`Deleted ${niceDate(
+                      post.deletedAt as string
+                    )}`}</span>
+                  )}
+                </div>
+              )}
+            </header>
+            <div className="flex flex-row justify-between">
+              <div className="left">
+                <p className="ma0 black-80">{post.short}</p>
+                <ul>{map(tagToPill)(post.tags)}</ul>
               </div>
-            )}
-          </header>
-          <div className="flex flex-row justify-between">
-            <div className="left">
-              <p className="ma0 black-80">{post.short}</p>
-              <ul>{map(tagToPill)(post.tags)}</ul>
-            </div>
 
-            <div className="right flex-grow self-end black-50">
-              <span>{`Posted by ${post.author?.name} ${niceDate(
-                post.createdAt as string
-              )}`}</span>
+              <div className="right flex-grow self-end black-50">
+                <span>{`Posted by ${post.author?.name} ${niceDate(
+                  post.createdAt as string
+                )}`}</span>
+              </div>
             </div>
-          </div>
-        </article>
-      </a>
+          </article>
+        </a>
+      </Link>
     </li>
   );
 };
