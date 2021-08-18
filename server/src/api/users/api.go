@@ -5,13 +5,11 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/resources/user"
 )
 
 type service struct {
 	auth *authentication.State
-	db   *db.PrismaClient
 	repo user.Repository
 }
 
@@ -19,10 +17,9 @@ func Build() fx.Option {
 	return fx.Options(
 		fx.Provide(func(
 			auth *authentication.State,
-			db *db.PrismaClient,
 			repo user.Repository,
 		) *service {
-			return &service{auth, db, repo}
+			return &service{auth, repo}
 		}),
 		fx.Invoke(func(
 			r chi.Router,

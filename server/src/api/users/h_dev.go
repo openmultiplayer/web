@@ -8,7 +8,6 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -37,7 +36,7 @@ func (s *service) dev(w http.ResponseWriter, r *http.Request) {
 
 	zap.L().Info("dev login", zap.Any("params", p))
 
-	user, err := s.db.User.FindUnique(db.User.ID.Equals(p.ID)).Exec(r.Context())
+	user, err := s.repo.GetUser(r.Context(), p.ID)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

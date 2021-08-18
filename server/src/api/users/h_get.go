@@ -5,7 +5,6 @@ import (
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -15,14 +14,7 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	user, err := s.db.User.
-		FindUnique(db.User.ID.Equals(ai.Cookie.UserID)).
-		With(
-			db.User.Github.Fetch(),
-			db.User.Discord.Fetch(),
-			db.User.Servers.Fetch(),
-		).
-		Exec(r.Context())
+	user, err := s.repo.GetUser(r.Context(), ai.Cookie.UserID)
 	if err != nil {
 		// a "not found" in this context is still an internal server error
 		// because the user *should* exist in order for the auth middleware to
