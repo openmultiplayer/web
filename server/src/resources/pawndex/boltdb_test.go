@@ -18,7 +18,7 @@ var (
 )
 
 func TestMain(m *testing.M) {
-	os.Remove("packages.db")
+	os.Remove("test.db")
 	db, err := New(config.Config{
 		PackagesDB: "test.db",
 	})
