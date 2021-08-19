@@ -66,6 +66,8 @@ import "remark-admonitions/styles/classic.css";
 
 import "src/styles/base.css";
 import { AuthProvider } from "src/auth/hooks";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "../styles/theme";
 import React from "react";
 
 // Trigger client-side progress bar for client-side page transitions.
@@ -74,7 +76,7 @@ Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
 const App = ({ Component, pageProps, router }: AppProps) => (
-  <>
+  <ChakraProvider theme={theme}>
     <Head>
       <link rel="stylesheet" href="/fonts.css" />
 
@@ -194,7 +196,7 @@ const App = ({ Component, pageProps, router }: AppProps) => (
         flex: 1 0 auto;
       }
     `}</style>
-  </>
+  </ChakraProvider>
 );
 
 export default App;

@@ -108,7 +108,12 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
   }, []);
 
   const mapping = map((post: PostModel) => (
-    <PostItem post={post} showAdminTools={isAdmin} onDelete={onDelete} />
+    <PostItem
+      post={post}
+      showAdminTools={isAdmin}
+      onDelete={onDelete}
+      key={post.id}
+    />
   ));
 
   return (
