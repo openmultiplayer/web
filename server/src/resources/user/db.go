@@ -2,6 +2,7 @@ package user
 
 import (
 	"context"
+	"time"
 
 	"github.com/prisma/prisma-client-go/runtime/types"
 
@@ -68,4 +69,20 @@ func (d *DB) SetAdmin(ctx context.Context, userId string, status bool) (bool, er
 	}
 
 	return true, nil
+}
+
+func (d *DB) Ban(ctx context.Context, userId string) (*db.UserModel, error) {
+	user, err := d.db.User.
+		FindUnique(
+			db.User.ID.Equals(userId),
+		).
+		Update(
+			db.User.DeletedAt.Set(time.Now()),
+		).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	return user, nil
 }
