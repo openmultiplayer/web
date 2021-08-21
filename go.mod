@@ -5,11 +5,13 @@ go 1.14
 require (
 	github.com/Masterminds/semver v1.5.0
 	github.com/PuerkitoBio/goquery v1.6.0
+	github.com/RoaringBitmap/roaring v0.9.4 // indirect
 	github.com/Southclaws/go-samp-query v1.1.3
 	github.com/Southclaws/qstring v1.1.0
-	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
 	github.com/Southclaws/sampctl v0.0.0-20210109143621-2daeb58d756a
-	github.com/blevesearch/bleve v1.0.14
+	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
+	github.com/bbalet/stopwords v1.0.0
+	github.com/blevesearch/bleve/v2 v2.1.0
 	github.com/bwmarrin/discordgo v0.22.0
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/cskr/pubsub v1.0.2
@@ -21,8 +23,8 @@ require (
 	github.com/google/go-github/v28 v28.1.1
 	github.com/gorilla/schema v1.2.0
 	github.com/gorilla/securecookie v1.1.1
-	github.com/gosimple/slug v1.10.0 // indirect
-	github.com/iancoleman/strcase v0.0.0-20190422225806-e506e3ef7365 // indirect
+	github.com/gosimple/slug v1.10.0
+	github.com/iancoleman/strcase v0.2.0
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
@@ -31,17 +33,17 @@ require (
 	github.com/russross/blackfriday v1.6.0
 	github.com/sendgrid/rest v2.6.2+incompatible // indirect
 	github.com/sendgrid/sendgrid-go v3.7.2+incompatible
-	github.com/sethvargo/go-limiter v0.7.0 // indirect
-	github.com/shopspring/decimal v1.2.0 // indirect
+	github.com/sethvargo/go-limiter v0.7.0
+	github.com/shopspring/decimal v1.2.0
 	github.com/streadway/amqp v1.0.0
 	github.com/stretchr/testify v1.6.1
-	github.com/takuoki/gocase v1.0.0 // indirect
+	github.com/takuoki/gocase v1.0.0
 	github.com/thanhpk/randstr v1.0.4
 	github.com/tkrajina/go-reflector v0.5.4 // indirect
 	github.com/tkrajina/typescriptify-golang-structs v0.1.3
 	go.etcd.io/bbolt v1.3.5
+	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/fx v1.13.1
-	go.uber.org/ratelimit v0.2.0 // indirect
 	go.uber.org/zap v1.16.0
 	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102 // indirect
 	golang.org/x/oauth2 v0.0.0-20201203001011-0b49973bad19
