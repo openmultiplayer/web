@@ -20,6 +20,7 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		// because the user *should* exist in order for the auth middleware to
 		// allow the code to reach this point.
 		web.StatusInternalServerError(w, err)
+		return
 	}
 
 	json.NewEncoder(w).Encode(user) //nolint:errcheck
