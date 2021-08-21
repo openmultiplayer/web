@@ -12,4 +12,5 @@ type Repository interface {
 	GetUsers(ctx context.Context, sort types.Direction, max, skip int) ([]db.UserModel, error)
 	UpdateUser(ctx context.Context, userId string, email, name *string) (*db.UserModel, error)
 	SetAdmin(ctx context.Context, userId string, status bool) (bool, error)
+	Ban(ctx context.Context, userId string) (*db.UserModel, error)
 }

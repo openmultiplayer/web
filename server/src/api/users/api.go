@@ -34,6 +34,10 @@ func Build() fx.Option {
 				Get("/", s.list)
 
 			rtr.
+				With(authentication.MustBeAuthenticated, auth.MustBeAdmin).
+				Delete("/{id}", s.delete)
+
+			rtr.
 				With(authentication.MustBeAuthenticated).
 				Get("/self", s.get)
 

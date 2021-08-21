@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button, HStack, Input, Select, useDisclosure } from "@chakra-ui/react";
 import {
   Modal,
@@ -10,6 +10,10 @@ import {
   ModalBody,
   useToast,
 } from "@chakra-ui/react";
+import useSWR from "swr";
+import { apiSSP, apiSWR } from "src/fetcher/fetcher";
+import { UserModel } from "src/types/generated_user";
+import nProgress from "nprogress";
 
 const User = ({ user, users, setUsers }: any) => {
   return (
@@ -17,7 +21,7 @@ const User = ({ user, users, setUsers }: any) => {
       style={{
         display: "grid",
         padding: "0.4em 0.8em",
-        backgroundColor: "#FAFAFA",
+        backgroundColor: user.deletedAt ? "#FC5900" : "#FAFAFA",
         margin: "0.4em 0",
         border: "1px solid #E2E8F0",
         borderRadius: "8px",
@@ -38,9 +42,10 @@ const User = ({ user, users, setUsers }: any) => {
 const BanModal = ({ users, user, setUsers }: any) => {
   const toast = useToast();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const handleBan = (id: string) => {
-    const user = users.find((user: any) => user.id === id);
+  const handleBan = async (id: string) => {
+    nProgress.start();
     setUsers(users.filter((user: any) => user.id !== id));
+    await apiSSP(`/users/${user.id}`, { method: "DELETE" });
     toast({
       title: "Operation successful",
       description: `${user.name} has been banned.`,
@@ -49,6 +54,7 @@ const BanModal = ({ users, user, setUsers }: any) => {
       isClosable: true,
       position: "top-right",
     });
+    nProgress.done();
   };
 
   return (
@@ -81,27 +87,22 @@ const BanModal = ({ users, user, setUsers }: any) => {
 };
 
 export default function Members() {
-  const [users, setUsers] = useState([]);
   const [memberSearch, setMemberSearch] = useState("");
   const [sort, setSort] = useState("asc");
   const [pageExtremes, setPageExtremes] = useState({
     start: 0,
     end: 10,
   });
+  const { data, error, mutate } = useSWR<UserModel[]>("/users", apiSWR);
 
-  const API_USERS = "https://api.open.mp/users";
+  if (error) {
+    return "error";
+  }
+  if (!data) {
+    return "loading";
+  }
 
-  // useEffect(() => {
-  //   const fetchUsers = async () => {
-  //     const usersResult = await fetch(`${API_USERS}?sort=${sort}`, {
-  //       credentials: "include",
-  //     });
-  //     console.log(usersResult.json());
-  //     // setUsers(JSON.parse(usersResult));
-  //   };
-
-  //   fetchUsers();
-  // }, [sort]);
+  const users = Object.values(data);
 
   const handleMemberSearch = (event: any) => {
     setMemberSearch(event.target.value);
@@ -179,7 +180,7 @@ export default function Members() {
               )
               .slice(pageExtremes.start, pageExtremes.end)
               .map((el) => (
-                <User key={el.id} user={el} setUsers={setUsers} users={users} />
+                <User key={el.id} user={el} setUsers={mutate} users={users} />
               ))}
           </div>
           <HStack justifyContent="center" margin="1em">
