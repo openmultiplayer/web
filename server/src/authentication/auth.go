@@ -31,7 +31,7 @@ type State struct {
 // returns a User object to the caller to be encoded into a cookie.
 type OAuthProvider interface {
 	Link() string
-	Login(ctx context.Context, state, code string) (*db.UserModel, error)
+	Login(ctx context.Context, state, code string) (*user.User, error)
 }
 
 // New initialises a new authentication service
@@ -47,7 +47,7 @@ func New(db *db.PrismaClient, cfg config.Config, users user.Repository) *State {
 }
 
 // EncodeAuthCookie writes the secure user auth cookie to the response writer.
-func (a *State) EncodeAuthCookie(w http.ResponseWriter, user db.UserModel) {
+func (a *State) EncodeAuthCookie(w http.ResponseWriter, user user.User) {
 	encoded, err := a.sc.Encode(secureCookieName, Cookie{
 		UserID:  user.ID,
 		Admin:   user.Admin,

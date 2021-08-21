@@ -19,6 +19,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
+	"github.com/openmultiplayer/web/server/src/resources/user"
 )
 
 var _ OAuthProvider = &DiscordProvider{}
@@ -60,7 +61,7 @@ func (p *DiscordProvider) Link() string {
 // authenticated against Discord. `code` is the query parameter passed back by
 // the provider. It is exchanged for a token which is used to look up the user
 // in our DB or create their account if it doesn't exist.
-func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.UserModel, error) {
+func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.User, error) {
 	// check if the state is one this API sent out.
 	if _, ok := p.cache.Get(state); !ok {
 		return nil, ErrStateMismatch
@@ -115,14 +116,14 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 		db.Discord.User.Fetch(),
 	).Exec(ctx); err == nil {
 		u := userdc.User()
-		return u, err
+		return user.FromModel(u), err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
 	// are, get their existing account. If not, create a new account.
-	var user *db.UserModel
+	var u *db.UserModel
 	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
-		user, err = p.db.User.FindUnique(
+		u, err = p.db.User.FindUnique(
 			db.User.ID.Equals(existing.Cookie.UserID),
 		).Exec(ctx)
 		if err != nil {
@@ -130,7 +131,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 		}
 	} else {
 		// Create a new account with the authentication method set to "Discord"
-		user, err = p.db.User.CreateOne(
+		u, err = p.db.User.CreateOne(
 			db.User.Email.Set(fmt.Sprint(email)),
 			db.User.AuthMethod.Set(db.AuthMethodDISCORD),
 			db.User.Name.Set(dcuser.Username),
@@ -143,7 +144,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 	// Create their Discord record and link it to the account that was either
 	// found or created above.
 	_, err = p.db.Discord.CreateOne(
-		db.Discord.User.Link(db.User.ID.Equals(user.ID)),
+		db.Discord.User.Link(db.User.ID.Equals(u.ID)),
 		db.Discord.AccountID.Set(dcuser.ID),
 		db.Discord.Username.Set(dcuser.Username),
 		db.Discord.Email.Set(email),
@@ -162,5 +163,5 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*db.Us
 		return nil, err
 	}
 
-	return user, nil
+	return user.FromModel(u), nil
 }

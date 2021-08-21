@@ -17,7 +17,7 @@ func New(db *db.PrismaClient) Repository {
 	return &DB{db}
 }
 
-func (d *DB) GetUser(ctx context.Context, userId string) (*db.UserModel, error) {
+func (d *DB) GetUser(ctx context.Context, userId string) (*User, error) {
 	user, err := d.db.User.
 		FindUnique(db.User.ID.Equals(userId)).
 		With(
@@ -33,19 +33,26 @@ func (d *DB) GetUser(ctx context.Context, userId string) (*db.UserModel, error) 
 		return nil, err
 	}
 
-	return user, nil
+	return FromModel(user), nil
 }
 
-func (d *DB) GetUsers(ctx context.Context, sort types.Direction, max, skip int) ([]db.UserModel, error) {
-	users, err := d.db.User.FindMany().Take(max).Skip(skip).OrderBy(db.User.CreatedAt.Order(sort)).Exec(ctx)
+func (d *DB) GetUsers(ctx context.Context, sort string, max, skip int) ([]User, error) {
+	users, err := d.db.User.
+		FindMany().
+		Take(max).
+		Skip(skip).
+		OrderBy(
+			db.User.CreatedAt.Order(types.Direction(sort)),
+		).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
 
-	return users, nil
+	return FromModelMany(users), nil
 }
 
-func (d *DB) UpdateUser(ctx context.Context, userId string, email, name *string) (*db.UserModel, error) {
+func (d *DB) UpdateUser(ctx context.Context, userId string, email, name *string) (*User, error) {
 	user, err := d.db.User.
 		FindUnique(db.User.ID.Equals(userId)).
 		Update(
@@ -57,7 +64,7 @@ func (d *DB) UpdateUser(ctx context.Context, userId string, email, name *string)
 		return nil, err
 	}
 
-	return user, nil
+	return FromModel(user), nil
 }
 
 func (d *DB) SetAdmin(ctx context.Context, userId string, status bool) (bool, error) {
@@ -71,7 +78,7 @@ func (d *DB) SetAdmin(ctx context.Context, userId string, status bool) (bool, er
 	return true, nil
 }
 
-func (d *DB) Ban(ctx context.Context, userId string) (*db.UserModel, error) {
+func (d *DB) Ban(ctx context.Context, userId string) (*User, error) {
 	user, err := d.db.User.
 		FindUnique(
 			db.User.ID.Equals(userId),
@@ -84,5 +91,5 @@ func (d *DB) Ban(ctx context.Context, userId string) (*db.UserModel, error) {
 		return nil, err
 	}
 
-	return user, nil
+	return FromModel(user), nil
 }

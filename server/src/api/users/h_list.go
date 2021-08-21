@@ -5,13 +5,12 @@ import (
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/web"
-	"github.com/prisma/prisma-client-go/runtime/types"
 )
 
 type queryParams struct {
-	Sort types.Direction `qstring:"sort"`
-	Max  int             `qstring:"max"`
-	Skip int             `qstring:"skip"`
+	Sort string `qstring:"sort"`
+	Max  int    `qstring:"max"`
+	Skip int    `qstring:"skip"`
 }
 
 func (s *service) list(w http.ResponseWriter, r *http.Request) {
@@ -21,7 +20,7 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if p.Sort == "" {
-		p.Sort = types.DESC
+		p.Sort = "desc"
 	}
 	if p.Max == 0 {
 		p.Max = 50

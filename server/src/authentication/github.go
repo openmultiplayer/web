@@ -16,6 +16,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
+	"github.com/openmultiplayer/web/server/src/resources/user"
 )
 
 var _ OAuthProvider = &GitHubProvider{}
@@ -57,7 +58,7 @@ func (p *GitHubProvider) Link() string {
 // authenticated against GitHub. `code` is the query parameter passed back by
 // the provider. It is exchanged for a token which is used to look up the user
 // in our DB or create their account if it doesn't exist.
-func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.UserModel, error) {
+func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*user.User, error) {
 	// check if the state is one this API sent out.
 	if _, ok := p.cache.Get(state); !ok {
 		return nil, ErrStateMismatch
@@ -89,14 +90,14 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 		db.GitHub.User.Fetch(),
 	).Exec(ctx); err == nil {
 		u := usergh.User()
-		return u, err
+		return user.FromModel(u), err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
 	// are, get their existing account. If not, create a new account.
-	var user *db.UserModel
+	var u *db.UserModel
 	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
-		user, err = p.db.User.FindUnique(
+		u, err = p.db.User.FindUnique(
 			db.User.ID.Equals(existing.Cookie.UserID),
 		).Exec(ctx)
 		if err != nil {
@@ -104,7 +105,7 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 		}
 	} else {
 		// Create a new account with the authentication method set to "GitHub"
-		user, err = p.db.User.CreateOne(
+		u, err = p.db.User.CreateOne(
 			db.User.Email.Set(fmt.Sprint(email)),
 			db.User.AuthMethod.Set(db.AuthMethodGITHUB),
 			db.User.Name.Set(githubUser.GetLogin()),
@@ -116,7 +117,7 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 
 	// Create their GitHub record and link it to the newly created user account
 	_, err = p.db.GitHub.CreateOne(
-		db.GitHub.User.Link(db.User.ID.Equals(user.ID)),
+		db.GitHub.User.Link(db.User.ID.Equals(u.ID)),
 		db.GitHub.AccountID.Set(fmt.Sprint(githubUser.GetID())),
 		db.GitHub.Username.Set(githubUser.GetLogin()),
 		db.GitHub.Email.Set(email),
@@ -135,5 +136,5 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*db.Use
 		return nil, err
 	}
 
-	return user, nil
+	return user.FromModel(u), nil
 }
