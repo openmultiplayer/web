@@ -14,7 +14,9 @@ Destroy a gangzone.
 
 ## Returns
 
-This function does not return any specific values.
+1: The function executed successfully.
+
+0: The function failed to execute. The gangzone with the ID specified does not exist.
 
 ## Examples
 
