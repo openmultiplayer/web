@@ -5,7 +5,7 @@ import useSWR from "swr";
 import { last, map } from "lodash/fp";
 
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { APIError } from "src/types/generated_error";
+import { APIError } from "src/types/_generated_Error";
 import { Hit, SearchResults } from "src/types/searchResult";
 import Link from "next/link";
 

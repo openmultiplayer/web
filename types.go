@@ -2,12 +2,16 @@ package main
 
 import (
 	"fmt"
+	"io/fs"
+	"io/ioutil"
+	"strings"
 
-	"github.com/tkrajina/typescriptify-golang-structs/typescriptify"
-
+	"github.com/Southclaws/supervillain"
 	"github.com/openmultiplayer/web/server/src/api/auth/discord"
 	"github.com/openmultiplayer/web/server/src/api/auth/github"
-	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/server"
+	"github.com/openmultiplayer/web/server/src/resources/user"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -25,27 +29,34 @@ import (
 //
 // -
 
-func convert(prefix, out string, objs ...interface{}) {
-	t := typescriptify.New()
-	t.BackupDir = ""
-	t.Prefix = prefix
+func convert(name, prefix string, objs ...interface{}) {
+	out := fmt.Sprintf("frontend/src/types/_generated_%s.ts", name)
 
-	for _, i := range objs {
-		t.Add(i)
+	fmt.Println("Generating schemas for", out)
+
+	output := strings.Builder{}
+	output.WriteString(`import * as z from "zod"
+
+`)
+	for _, v := range objs {
+		output.WriteString(supervillain.StructToZodSchemaWithPrefix(prefix, v))
 	}
 
-	if err := t.ConvertToFile("frontend/src/types/generated_" + out + ".ts"); err != nil {
-		panic(err.Error())
-	}
+	ioutil.WriteFile(
+		out,
+		[]byte(output.String()),
+		fs.ModePerm,
+	)
 }
 
 func main() {
-	convert("API", "error", web.Error{})
-	convert("", "server", db.ServerModel{})
-	convert("", "user", db.UserModel{})
+	convert("Error", "API", web.Error{})
+	convert("Server", "", server.All{})
+	convert("User", "", user.User{})
+	convert("Forum", "", forum.Post{})
 
-	convert("GitHub", "githubAuth", github.Link{}, github.Callback{})
-	convert("Discord", "discordAuth", discord.Link{}, discord.Callback{})
+	convert("GitHub", "", github.Link{}, github.Callback{})
+	convert("Discord", "", discord.Link{}, discord.Callback{})
 
 	fmt.Println("DONE")
 }

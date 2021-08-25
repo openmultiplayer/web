@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import useSWR from "swr";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { UserModel } from "src/types/generated_user";
+import { User } from "src/types/_generated_User";
 import nProgress from "nprogress";
 
 const User = ({ user, users, setUsers }: any) => {
@@ -93,7 +93,7 @@ export default function Members() {
     start: 0,
     end: 10,
   });
-  const { data, error, mutate } = useSWR<UserModel[]>("/users", apiSWR);
+  const { data, error, mutate } = useSWR<User[]>("/users", apiSWR);
 
   if (error) {
     return "error";

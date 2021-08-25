@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from "react";
 
 import { apiSSP } from "src/fetcher/fetcher";
-import { APIError } from "src/types/generated_error";
-import { UserModel } from "src/types/generated_user";
+import { APIError } from "src/types/_generated_Error";
+import { User } from "src/types/_generated_User";
 
 type AuthenticationContext = {
   isAuthenticated: boolean;
   isLoading: boolean;
   setAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
-  user?: UserModel;
+  user?: User;
 };
 
 const AuthContext = React.createContext<AuthenticationContext>({
@@ -22,11 +22,11 @@ const AuthContext = React.createContext<AuthenticationContext>({
 export const AuthProvider: FunctionComponent = ({ children }) => {
   const [isAuthenticated, setAuthenticated] = React.useState(false);
   const [isLoading, setLoading] = React.useState(true);
-  const [user, setUser] = React.useState<UserModel | undefined>(undefined);
+  const [user, setUser] = React.useState<User | undefined>(undefined);
 
   React.useEffect(() => {
     const initializeAuth = async () => {
-      const response = await apiSSP<UserModel, APIError>("/users/self");
+      const response = await apiSSP<User, APIError>("/users/self");
 
       try {
         const user = response.unwrap();
