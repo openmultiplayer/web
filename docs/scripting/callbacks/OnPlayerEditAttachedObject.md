@@ -13,7 +13,8 @@ This callback is called when a player ends attached object edition mode.
 | Name           | Description                                                   |
 | -------------- | ------------------------------------------------------------- |
 | playerid       | The ID of the player that ended edition mode                  |
-| response       | 0 if they cancelled (ESC) or 1 if they clicked the save icon. |
+| response       | 0 if they cancelled (ESC) or 1 if they clicked the save icon  |
+| index          | The index of the attached object (0-9)                        |
 | modelid        | The model of the attached object that was edited              |
 | boneid         | The bone of the attached object that was edited               |
 | Float:fOffsetX | The X offset for the attached object that was edited          |
