@@ -9,6 +9,12 @@ To learn more about Next.js, take a look at the following resources:
 
 ## Getting Started
 
+To install the required dependencies:
+
+```
+npm install
+```
+
 To run the local development server:
 
 ```
