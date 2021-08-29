@@ -32,18 +32,20 @@ module.exports = (phase) => {
       domains: ["assets.open.mp"],
     },
     // prettier-ignore
-    redirects: [
-      { source: "/about", destination: "/", permanent: true },
-      { source: "/forum", destination: "https://burgershot.gg", permanent: true},
-      { source: "/wiki", destination: "https://open.mp/docs ", permanent: true},
-      { source: "/links", destination: "https://linktr.ee/openmultiplayer", permanent: true},
-      { source: "/videos", destination: "https://youtube.com/openmultiplayer", permanent: true},
-      { source: "/youtube", destination: "https://youtube.com/openmultiplayer", permanent: true},
-      { source: "/live", destination: "https://twitch.tv/openmultiplayer", permanent: true},
-      { source: "/twitch", destination: "https://twitch.tv/openmultiplayer", permanent: true},
-      { source: "/stream", destination: "https://twitch.tv/openmultiplayer", permanent: true},
-      { source: "/twitter", destination: "https://twitter.com/openmultiplayer", permanent: true},
-      { source: "/instagram", destination: "https://instagram.com/openmultiplayer", permanent: true},
-    ],
+    redirects() {
+      return [
+        { source: "/about", destination: "/", permanent: true },
+        { source: "/forum", destination: "https://burgershot.gg", permanent: true},
+        { source: "/wiki", destination: "https://open.mp/docs ", permanent: true},
+        { source: "/links", destination: "https://linktr.ee/openmultiplayer", permanent: true},
+        { source: "/videos", destination: "https://youtube.com/openmultiplayer", permanent: true},
+        { source: "/youtube", destination: "https://youtube.com/openmultiplayer", permanent: true},
+        { source: "/live", destination: "https://twitch.tv/openmultiplayer", permanent: true},
+        { source: "/twitch", destination: "https://twitch.tv/openmultiplayer", permanent: true},
+        { source: "/stream", destination: "https://twitch.tv/openmultiplayer", permanent: true},
+        { source: "/twitter", destination: "https://twitter.com/openmultiplayer", permanent: true},
+        { source: "/instagram", destination: "https://instagram.com/openmultiplayer", permanent: true},
+      ]
+    },
   };
 };
