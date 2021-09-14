@@ -8,7 +8,6 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Community Compiler](https://github.com/pawn-lang/compiler)** - A vastly updated version of the compiler, with many fixes and enhancements.
 - **[sampctl](https://github.com/Southclaws/sampctl)** - Package manager for installing libraries and running your server.
 - **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)** - Tool to run a lightweight version of the server directly from command-line (no server.cfg required) for testing plugins.
-- **[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)** - Making your own plugins very easy and fast with this template library.
 - **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - A place to test your scripts (snippets, PoC, debugging, etc) and share it to others.
 - **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)** - Pawn autocompletes for Sublime Text.
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocompletes for Visual Studio Code.
