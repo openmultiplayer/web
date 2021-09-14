@@ -4,9 +4,9 @@ title: "Keys"
 
 :::note
 
-To be used with [GetPlayerKeys](../functions/GetPlayerKeys) and [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange).
+Here you can find information about key input constants used by [GetPlayerKeys](../functions/GetPlayerKeys) and [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange).
 
-Here you can find information about key input constants. SA-MP uses bitmasking to determine which keys are pressed and which are not. Here's an article on bitmasking: [http://en.wikipedia.org/wiki/Mask\_(computing)](<http://en.wikipedia.org/wiki/Mask_(computing)>)
+SA-MP uses bitmasking to determine which keys are pressed and which are not. Here's an article on bitmasking: [http://en.wikipedia.org/wiki/Mask\_(computing)](<http://en.wikipedia.org/wiki/Mask_(computing)>)
 
 :::
 
