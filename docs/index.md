@@ -14,4 +14,4 @@ If you're interested, check out [this page](meta/Contributing.md) for more infor
 
 If you're not experienced with using GitHub or converting HTML, don't worry! You can help by just letting us know about issues (via Discord, Burgershot or social media) and the most important thing: _spreading the word!_ So be sure to bookmark this site and share it with anyone you know who's wondering where the SA-MP Wiki went.
 
-We welcome contributions for improvements to documentation as well as tutorials and guides for common tasks such as building simple gamemodes and using common libraries and plugins. If you're interested in contributing then head over to the [GitHub page](https://github.com/openmultiplayer/wiki).
+We welcome contributions for improvements to documentation as well as tutorials and guides for common tasks such as building simple gamemodes and using common libraries and plugins. If you're interested in contributing then head over to the [GitHub page](https://github.com/openmultiplayer/web).
