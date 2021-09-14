@@ -4,7 +4,7 @@ title: Bullet Hit Types
 
 :::info
 
-To be used with [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot).
+This page contains all of the bullet hit types which are used by [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot).
 
 :::
 
