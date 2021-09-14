@@ -10,7 +10,7 @@ Unfortunately, the SA-MP wiki was taken offline in late september and then resto
 
 Alas, we need the community's help to transfer the old wiki's content to its new home, here!
 
-If you're interested, check out [this page](meta/Contributing.md) for more information.
+If you're interested, check out [this page](/docs/meta/Contributing) for more information.
 
 If you're not experienced with using GitHub or converting HTML, don't worry! You can help by just letting us know about issues (via Discord, Burgershot or social media) and the most important thing: _spreading the word!_ So be sure to bookmark this site and share it with anyone you know who's wondering where the SA-MP Wiki went.
 
