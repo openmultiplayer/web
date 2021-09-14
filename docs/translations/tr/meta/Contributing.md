@@ -218,4 +218,4 @@ If you don't have time, don't worry! Submit an unfinished draft and someone else
 
 ## License Agreement
 
-All open.mp projects have a [Contributor License Agreement][https://cla-assistant.io/openmultiplayer/homepage]. This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
+All open.mp projects have a [Contributor License Agreement](https://cla-assistant.io/openmultiplayer/homepage). This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
