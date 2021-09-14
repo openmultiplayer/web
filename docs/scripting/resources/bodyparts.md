@@ -8,6 +8,8 @@ The following entries are body part IDs which can be used by [OnPlayerGiveDamage
 
 :::
 
+---
+
 | ID  | Body Part |
 | --- | --------- |
 | 3   | Torso     |
