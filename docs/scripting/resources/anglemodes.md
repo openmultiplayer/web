@@ -9,6 +9,8 @@ These angle modes are used by [floatsin](../functions/Floatsin), [floatcos](../f
 
 :::
 
+---
+
 |  Mode   | Description |
 | ------- | ----------- |
 | radian  | The angle will be in radians. |
