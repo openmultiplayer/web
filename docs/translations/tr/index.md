@@ -14,4 +14,4 @@ Eğer ilgilenirseniz, daha fazla bilgi için [bu sayfaya](/docs/meta/Contributin
 
 Eğer daha önce GitHub kullanmadıysanız ya da HTML'e dönüştürmeyi deneyimlemediyseniz endişelenmeyin! Bize karşılaştığınız sorunlar hakkında bilgi vererek (Discord Burgershot veya sosyal medya aracılığıyla) yardımcı olabilirsiniz ve tabiki en önemlisi: _duyurmak!_ bu yüzden bu siteye yer işareti koyduğunuzdan emin olun ve SA-MP Wiki'nin nereye gittiğini merak eden tüm tanıdıklarınızla paylaşın.
 
-Biz, dokümantasyonu, aynı şekilde öğreticileri, basit oyun modları inşa etmek, yaygın kütüphaneler ve eklentiler için rehberleri geliştirmek amacıyla yapılan katkıları memnuniyetle karşılıyoruz. Eğer katkı sağlamakla ilgileniyorsanız [GitHub page](https://github.com/openmultiplayer/wiki) adresine gidin.
+Biz, dokümantasyonu, aynı şekilde öğreticileri, basit oyun modları inşa etmek, yaygın kütüphaneler ve eklentiler için rehberleri geliştirmek amacıyla yapılan katkıları memnuniyetle karşılıyoruz. Eğer katkı sağlamakla ilgileniyorsanız [GitHub page](https://github.com/openmultiplayer/web) adresine gidin.
