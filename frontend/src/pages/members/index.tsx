@@ -107,12 +107,12 @@ export default function Members() {
   const handleMemberSearch = (event: any) => {
     setMemberSearch(event.target.value);
     if (event.target.value != "") {
-      let extremeObj = { ...pageExtremes };
+      const extremeObj = { ...pageExtremes };
       extremeObj.start = 0;
       extremeObj.end = users.length;
       setPageExtremes(extremeObj);
     } else {
-      let extremeObj = { ...pageExtremes };
+      const extremeObj = { ...pageExtremes };
       extremeObj.start = 0;
       extremeObj.end = 10;
       setPageExtremes(extremeObj);
@@ -124,7 +124,7 @@ export default function Members() {
   };
 
   const nextPage = () => {
-    let extremeObj = { ...pageExtremes };
+    const extremeObj = { ...pageExtremes };
     if (extremeObj.end + 10 > users.length) {
       extremeObj.start += 10;
       extremeObj.end = users.length;
@@ -136,7 +136,7 @@ export default function Members() {
   };
 
   const lastPage = () => {
-    let extremeObj = { ...pageExtremes };
+    const extremeObj = { ...pageExtremes };
     if (extremeObj.end + 10 > users.length && extremeObj.end % 10 != 0) {
       extremeObj.start -= 10;
       extremeObj.end = extremeObj.end - (extremeObj.end % 10);
