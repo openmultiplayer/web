@@ -9,8 +9,8 @@ To be used with [floatsin](../functions/Floatsin), [floatcos](../functions/Float
 
 :::
 
-| Modes   |
-| ------- |
-| radian  |
-| degrees |
-| grades  |
+|  Mode   | Description |
+| ------- | ----------- |
+| radian  | The angle will be in radians. |
+| degrees | The angle will be in degrees. |
+| grades  | The angle will be in grades.  |
