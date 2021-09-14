@@ -2,9 +2,13 @@
 title: Camera Cut Styles
 ---
 
-## Description
+:::info
 
 Camera cut styles are used by natives such as [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt), [InterpolateCameraPos](../functions/InterpolateCameraPos) and [InterpolateCameraLookAt](../functions/InterpolateCameraLookAt).
+
+:::
+
+---
 
 ## Cut Styles
 
