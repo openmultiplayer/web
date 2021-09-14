@@ -5,7 +5,7 @@ description: SI unit constants for measuring angles.
 
 :::note
 
-To be used with [floatsin](../functions/Floatsin), [floatcos](../functions/Floatcos), or [floattan](../functions/Floattan).
+These angle modes are used by [floatsin](../functions/Floatsin), [floatcos](../functions/Floatcos), and [floattan](../functions/Floattan).
 
 :::
 
