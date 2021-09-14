@@ -38,7 +38,7 @@ tags: []
 | Filterscripts               | 16                    |
 | Text Input (Chat/Commands)  | 128 cells (512 bytes) |
 | Text Output                 | 144 cells (576 bytes) |
-| Name Length (SetPlayerName) | 24 characters         |
+| Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 characters         |
 
 ## Textdraws
 
