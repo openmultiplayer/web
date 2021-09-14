@@ -8,8 +8,6 @@ The following car mod types can be used to work with the [GetVehicleComponentInS
 
 :::
 
----
-
 | Slot | Name                    |
 | ---- | ----------------------- |
 | 0    | CARMODTYPE_SPOILER      |
@@ -26,5 +24,3 @@ The following car mod types can be used to work with the [GetVehicleComponentInS
 | 11   | CARMODTYPE_REAR_BUMPER  |
 | 12   | CARMODTYPE_VENT_RIGHT   |
 | 13   | CARMODTYPE_VENT_LEFT    |
-
----
