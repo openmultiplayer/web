@@ -49,7 +49,7 @@ or use KEY_HANDBRAKE.
 
 **(3):** GROUP_CONTROL_FWD cannot be detected in SA-MP, as it used internally to enter vehicles as passenger. However, the gametext definition still exists.
 
-**(4):* If the key number "262144" does not work, just use key number "2".
+**(4):** If the key number "262144" does not work, just use key number "2".
 
 **(5):** This value is the sum of KEY_LOOK_LEFT and KEY_LOOK_RIGHT.
 
