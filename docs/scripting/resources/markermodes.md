@@ -2,7 +2,11 @@
 title: Marker Modes
 ---
 
+:::info
+
 Here you can find all of the marker modes used by [ShowPlayerMarkers](../functions/ShowPlayerMarkers).
+
+:::
 
 |  ID   | Definition |
 | ------- | ----------- |
