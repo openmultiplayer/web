@@ -8,7 +8,7 @@ Camera cut styles are used by natives such as [SetPlayerCameraLookAt](../functio
 
 ## Cut Styles
 
-```c
-1 - CAMERA_MOVE
-2 - CAMERA_CUT
-```
+| ID | Style | Description                    |
+| -- | ---- | ------------------------------- |
+| 1 | CAMERA_MOVE | The camera position and/or target will move to its new value over time. |
+| 2 | CAMERA_CUT | The camera position and/or target will move to its new value instantly. |
