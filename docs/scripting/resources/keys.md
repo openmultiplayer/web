@@ -10,6 +10,8 @@ SA-MP uses bitmasking to determine which keys are pressed and which are not. Her
 
 :::
 
+---
+
 | Macro                    | Value     | Embedding Code (On Foot) <sup>(6)</sup> | Embedding Code (In Vehicle) <sup>(6)</sup> | Default Key (On Foot)                                    | Default Key (In Vehicle) |
 | ------------------------ | --------- | ---------------------------- | ------------------------------- | -------------------------------------------------------- | ------------------------ |
 | KEY_ACTION               | 1         | \~k~\~PED_ANSWER_PHONE~        | \~k~\~VEHICLE_FIREWEAPON_ALT~     | TAB                                                      | ALT GR / LCTRL / NUM0    |
@@ -36,6 +38,8 @@ SA-MP uses bitmasking to determine which keys are pressed and which are not. Her
 | KEY_DOWN                 | 128       | \~k~\~GO_BACK~                 | \~k~\~VEHICLE_STEERDOWN~          | DOWN                                                     | DOWN                     |
 | KEY_LEFT                 | -128      | \~k~\~GO_LEFT~                 | \~k~\~VEHICLE_STEERLEFT~          | LEFT                                                     | LEFT                     |
 | KEY_RIGHT                | 128       | \~k~\~GO_RIGHT~                | \~k~\~VEHICLE_STEERRIGHT~         | RIGHT                                                    | RIGHT                    |
+
+---
 
 **(1):** Key not defined in SA:MP includes. You must
 
