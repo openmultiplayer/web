@@ -2,11 +2,12 @@
 title: Fighting Styles
 ---
 
-## Description
+:::info
 
 All fighting styles used by [SetPlayerFightingStyle](../functions/SetPlayerFightingStyle) and [GetPlayerFightingStyle](../functions/GetPlayerFightingStyle) are listed below.
 
-## Fighting Styles
+:::
+
 
 | ID  | Definition |
 | --- | --------- |
