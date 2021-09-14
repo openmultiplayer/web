@@ -2,7 +2,11 @@
 title: Object Edition Response Types
 ---
 
+:::info
+
 Here you can find all of the object edition response types used by [OnPlayerEditObject](../callbacks/OnPlayerEditObject) and [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject).
+
+:::
 
 | ID  | Definition | Description |
 | --- | --------- | ------------ |
