@@ -29,6 +29,6 @@ jobs:
           context: .
           file: ./Dockerfile.frontend
           push: true
-          tags: southclaws/openmp-web-frontend:latest
+          tags: southclaws/openmp-frontend:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
