@@ -3,14 +3,16 @@ title: Material Text Alignments
 description: A list of Material Text Alignments
 ---
 
-## Text alignments
+:::info
 
-| ID                                | Value |
-| --------------------------------- | ----- |
-| OBJECT_MATERIAL_TEXT_ALIGN_LEFT   | 0     |
-| OBJECT_MATERIAL_TEXT_ALIGN_CENTER | 1     |
-| OBJECT_MATERIAL_TEXT_ALIGN_RIGHT  | 2     |
+There are two kinds of parameters for [SetObjectMaterialText](../functions/SetObjectMaterialText) - material text alignments and material text sizes.  
+Text alignments are listed on this page.
 
-## Related Functions
+:::
 
-- [SetObjectMaterialText](/docs/scripting/functions/SetObjectMaterialText): Replace the texture of an object with text.
+
+| ID | Definition                       |
+| -- | -------------------------------- |
+| 0 | OBJECT_MATERIAL_TEXT_ALIGN_LEFT   |
+| 1 | OBJECT_MATERIAL_TEXT_ALIGN_CENTER |
+| 2 | OBJECT_MATERIAL_TEXT_ALIGN_RIGHT  |
