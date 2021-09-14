@@ -1,10 +1,10 @@
 ---
 title: Crime List
-description: Crime List to be used with [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer) function.
+description: Crime List used by [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer) function.
 sidebar_label: Crime List
 ---
 
-To be used with [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer) function.
+Here you can find all of the crime IDs used by [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer) function.
 
 | Crime ID | Ten-code | Description                                              |
 | -------- | -------- | -------------------------------------------------------- |
