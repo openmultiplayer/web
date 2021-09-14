@@ -4,7 +4,11 @@ description: The rounding modes used with floatround.
 sidebar_label: Floatround Modes
 ---
 
+:::info
+
 A list of possible floatround modes which can be used by [floatround](../functions/floatround).
+
+:::
 
 | Mode              | Description                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
