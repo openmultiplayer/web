@@ -200,7 +200,7 @@ Kung wala kang oras, wag magalala! I submit mo lang ang hindi mo pa tapos na tra
 
 ## License Agreement
 
-All open.mp projects have a [Contributor License Agreement][https://cla-assistant.io/openmultiplayer/homepage]. This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
+All open.mp projects have a [Contributor License Agreement](https://cla-assistant.io/openmultiplayer/homepage). This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
 
 
 Dito na magtatapos ang Contributing page
