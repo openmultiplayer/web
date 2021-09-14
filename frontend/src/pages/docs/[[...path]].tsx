@@ -191,8 +191,6 @@ export async function getStaticPaths(
     }))
   )(all);
 
-  paths.map(console.log);
-
   return {
     paths: paths,
     fallback: "blocking",
