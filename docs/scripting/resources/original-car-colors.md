@@ -5,7 +5,7 @@ description: A list of the original car colours from single player.
 
 Here is a list of the original car colors used by each car type in single player.
 
-| Vehicle name  | Components                                               |
+| Vehicle name  | Color pairs                                              |
 | ------------- | -------------------------------------------------------- |
 | admiral | 34,34, 35,35, 37,37, 39,39, 41,41, 43,43, 45,45, 47,47 |
 | alpha | 58,1, 69,1, 75,77, 18,1, 32,1, 45,45, 13,1, 34,1 |
