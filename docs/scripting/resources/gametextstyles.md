@@ -4,7 +4,7 @@ description: GameText Styles to be used in textdraws and gametext
 ---
 
 This page covers everything you need to know about gametext styles, and how they can be used in textdraws and in text rendered for a (single) player.
-To be used with [GameText](../functions/GameTextForPlayer) and [GameTextForAll](../functions/GameTextForAll).
+Mainly used by [GameText](../functions/GameTextForPlayer) and [GameTextForAll](../functions/GameTextForAll).
 
 ## Text Colors
 It is possible to draw certain parts of your text in different colors. To do this, you simply need to use the colour slugs listed below, and encapsulate the part of your text which you want to draw in a specific color (e.g. \~y\~I'm drawn in yellow!\~y\~).
