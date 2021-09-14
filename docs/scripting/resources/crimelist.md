@@ -4,7 +4,11 @@ description: Crime List used by [PlayCrimeReportForPlayer](../functions/PlayCrim
 sidebar_label: Crime List
 ---
 
+:::info
+
 Here you can find all of the crime IDs used by [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer) function.
+
+:::
 
 | Crime ID | Ten-code | Description                                              |
 | -------- | -------- | -------------------------------------------------------- |
