@@ -10,10 +10,6 @@ Below is a list of click sources used by [OnPlayerClickPlayer](../callbacks/OnPl
 
 :::
 
----
-
 | Value | Constant symbol         |
 | ----- | ----------------------- |
 | 0     | CLICK_SOURCE_SCOREBOARD |
-
----
