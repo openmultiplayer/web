@@ -17,4 +17,4 @@ Se estiver interessado, veja este link para seguir instruções de como converte
 
 Se você não tiver experiência com o uso do GitHub ou conversão de HTML, não se preocupe! Você pode ajudar nos informando sobre problemas (via Discord, Burgershot ou Mídias Sociais) e a parte mais importante: _divulgando tudo_. Então tenha certeza de guardar este site e compartilhar com qualquer pessoa que conheça que está se perguntando para onde o SA-MP Wiki foi.
 
-Aceitamos contribuições para melhorias na documentação, assim como tutoriais e guias para tarefas simles como construir uma gamemode e como usar plugins e bibliotecas. Se você estiver interessado em contribuir então vá para a [página do GitHub](https://github.com/openmultiplayer/wiki).
+Aceitamos contribuições para melhorias na documentação, assim como tutoriais e guias para tarefas simles como construir uma gamemode e como usar plugins e bibliotecas. Se você estiver interessado em contribuir então vá para a [página do GitHub](https://github.com/openmultiplayer/web).
