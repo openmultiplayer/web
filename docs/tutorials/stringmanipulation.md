@@ -1688,8 +1688,8 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 #### Related includes/plugins/contributers
 
 - [Westie](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=56481)'s [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=85697)
-- [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)'s [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=362764)
-- [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)'s [formatex](https://github.com/Southclaws/formatex)
+- [Slice](https://github.com/oscar-broman)'s [strlib](https://github.com/oscar-broman/strlib)
+- [Slice](https://github.com/oscar-broman)'s [formatex](https://github.com/Southclaws/formatex)
 - [corne](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=98345)'s [y_stringhash](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=571305)
 - [Y-Less](https://github.com/Y-Less)'s [sscanf](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=570927)
 
