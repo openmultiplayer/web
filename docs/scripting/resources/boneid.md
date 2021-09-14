@@ -8,6 +8,8 @@ This page contains all of the bone IDs used by [SetPlayerAttachedObject](../func
 
 :::
 
+---
+
 | ID  | Bone                      |
 | --- | ------------------------- |
 | 1   | Spine                     |
@@ -28,3 +30,5 @@ This page contains all of the bone IDs used by [SetPlayerAttachedObject](../func
 | 16  | Right clavicle (shoulder) |
 | 17  | Neck                      |
 | 18  | Jaw                       |
+
+---
