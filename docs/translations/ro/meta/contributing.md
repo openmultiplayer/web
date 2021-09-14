@@ -217,4 +217,4 @@ Dacă nu ai timp, nu-ți face griji! Trimiteți o schiță neterminată și altc
 
 ## Acord de licențiere
 
-Toate proiectele open.mp au un [Acord de licență pentru colaboratori][https://cla-assistant.io/openmultiplayer/homepage]. Acest lucru înseamnă doar că sunteți de acord să ne permiteți să vă folosim lucrarea și să o puneți sub o licență open-source. Când deschideți o cerere de extragere pentru prima dată, botul CLA-Assistant va posta un link unde puteți semna acordul.
+Toate proiectele open.mp au un [Acord de licență pentru colaboratori](https://cla-assistant.io/openmultiplayer/homepage). Acest lucru înseamnă doar că sunteți de acord să ne permiteți să vă folosim lucrarea și să o puneți sub o licență open-source. Când deschideți o cerere de extragere pentru prima dată, botul CLA-Assistant va posta un link unde puteți semna acordul.
