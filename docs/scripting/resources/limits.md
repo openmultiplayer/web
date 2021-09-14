@@ -9,25 +9,25 @@ tags: []
 | Type                                                          | Limit           |
 | ------------------------------------------------------------- | --------------- |
 | Players                                                       | 1000            |
-| Vehicles <sup>(4)(6)</sup>                                    | 2000            |
-| Vehicle Models <sup>(1)</sup>                                 | Unlimited       |
-| Objects <sup>(4)(6)</sup>                                     | 1000            |
+| Vehicles<sup>(4)(6)</sup>                                     | 2000            |
+| Vehicle Models<sup>(1)</sup>                                  | Unlimited       |
+| Objects<sup>(4)(6)</sup>                                      | 1000            |
 | Virtual Worlds                                                | 2,147,483,647   |
 | Interiors                                                     | 256             |
 | Classes                                                       | 320             |
-| Map Icons <sup>(4)</sup>                                      | 100             |
-| Race Checkpoints <sup>(4)</sup>                               | 1               |
-| Checkpoints <sup>(4)</sup>                                    | 1               |
-| Pickups <sup>(4)</sup>                                        | 4096            |
-| Global 3D Labels <sup>(4)</sup>                               | 1024            |
-| Per-player 3D Text Labels <sup>(4)</sup>                      | 1024            |
+| Map Icons<sup>(4)</sup>                                       | 100             |
+| Race Checkpoints<sup>(4)</sup>                                | 1               |
+| Checkpoints<sup>(4)</sup>                                     | 1               |
+| Pickups<sup>(4)</sup>                                         | 4096            |
+| Global 3D Labels<sup>(4)</sup>                                | 1024            |
+| Per-player 3D Text Labels<sup>(4)</sup>                       | 1024            |
 | Chat Bubble String                                            | 144 characters  |
 | SetObjectMaterialText,SetPlayerObjectMaterialText Text length | 2048 characters |
 | Gangzones                                                     | 1024            |
 | Menus                                                         | 128             |
 | Attached player objects                                       | 10              |
 | Player Variables                                              | 800             |
-| Actors (since 0.3.7) <sup>(4)(5)</sup>                        | 1000            |
+| Actors (since 0.3.7)<sup>(4)(5)</sup>                         | 1000            |
 | Explosions                                                    | 10              |
 
 ## Server Properties
