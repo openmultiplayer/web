@@ -6,7 +6,7 @@ tags: []
 
 ## In-game Entities
 
-| Type                                                          | Limit           |
+| Type                                                          | Limit (0.3.7)   |
 | ------------------------------------------------------------- | --------------- |
 | Players                                                       | 1000            |
 | Vehicles<sup>(4)(6)</sup>                                     | 2000            |
@@ -32,7 +32,7 @@ tags: []
 
 ## Server Properties
 
-| Type                        | Limit                 |
+| Type                        | Limit (0.3.7)         |
 | --------------------------- | --------------------- |
 | Gamemodes                   | 16                    |
 | Filterscripts               | 16                    |
@@ -42,7 +42,7 @@ tags: []
 
 ## Textdraws
 
-| Type                                        | Limit           |
+| Type                                        | Limit (0.3.7)   |
 | ------------------------------------------- | --------------- |
 | String Length (2)                           | 1024 characters |
 | Shown In A Single Client's Screen (3)       | 2048 + 256      |
@@ -52,15 +52,15 @@ tags: []
 
 ## Dialogs
 
-| Type                                                         | Limit |
-| ------------------------------------------------------------ | ----- |
-| Dialog IDs                                                   | 32768 |
-| Info (Main text)                                             | 4096  |
-| Caption                                                      | 64    |
-| Input Text Box (DIALOG_STYLE_INPUT/PASSWORD)                 | 128   |
-| Tab List Columns (DIALOG_STYLE_TABLIST(\_HEADERS))           | 4     |
-| Tab List Column Characters (DIALOG_STYLE_TABLIST(\_HEADERS)) | 128   |
-| Tab List Row Characters (DIALOG_STYLE_TABLIST(\_HEADERS))    | 256   |
+| Type                                                         | Limit (0.3.7) |
+| ------------------------------------------------------------ | ------------- |
+| Dialog IDs                                                   | 32768         |
+| Info (Main text)                                             | 4096          |
+| Caption                                                      | 64            |
+| Input Text Box (DIALOG_STYLE_INPUT/PASSWORD)                 | 128           |
+| Tab List Columns (DIALOG_STYLE_TABLIST(\_HEADERS))           | 4             |
+| Tab List Column Characters (DIALOG_STYLE_TABLIST(\_HEADERS)) | 128           |
+| Tab List Row Characters (DIALOG_STYLE_TABLIST(\_HEADERS))    | 256           |
 
 **Notes:**
 
