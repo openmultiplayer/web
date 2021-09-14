@@ -214,4 +214,4 @@ Se você não tem tempo, não se preocupe! Envie um rascunho não finalizado, en
 
 ## Acordo de Licença
 
-Todo projeto open.mp contém um [Acordo de Licença do Contribuidor][https://cla-assistant.io/openmultiplayer/homepage]. Isso, basicamente, significa que você concorda em usarmos o seu trabalho e coloca-lo sob a licença de código aberto. Quando abrir um Pull Request pela primeira vez, o bot CLA-Assistant irá colocar um link onde você pode assinar o acordo.
+Todo projeto open.mp contém um [Acordo de Licença do Contribuidor](https://cla-assistant.io/openmultiplayer/homepage). Isso, basicamente, significa que você concorda em usarmos o seu trabalho e coloca-lo sob a licença de código aberto. Quando abrir um Pull Request pela primeira vez, o bot CLA-Assistant irá colocar um link onde você pode assinar o acordo.
