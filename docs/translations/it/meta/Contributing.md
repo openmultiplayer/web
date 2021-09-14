@@ -216,4 +216,4 @@ Se non hai tempo, non ti preoccupare! Inoltra una bozza non finita e qualcun alt
 
 ## Contratto di licenza
 
-Tutti i progetti open.mp hanno un [Contratto di licenza per collaboratori][https://cla-assistant.io/openmultiplayer/homepage]. Questo in pratica significa solamente che accetti di lasciarci usare il tuo lavoro, e metterlo sotto licenza open-source. Quando si apre una Pull Request per la prima volta, il bot assistente CLA posterà un link dove puoi firmare il contratto.
+Tutti i progetti open.mp hanno un [Contratto di licenza per collaboratori](https://cla-assistant.io/openmultiplayer/homepage). Questo in pratica significa solamente che accetti di lasciarci usare il tuo lavoro, e metterlo sotto licenza open-source. Quando si apre una Pull Request per la prima volta, il bot assistente CLA posterà un link dove puoi firmare il contratto.

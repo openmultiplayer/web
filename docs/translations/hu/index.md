@@ -16,4 +16,4 @@ Ha még nem vagy jártas a GitHub használatában vagy a HTML konvertálásában
 Úgy is segíthetsz, ha csak tájékoztatsz minket a kérdésekről (a [Discord](https://discord.com/invite/samp)on, a [Burgershot](https://www.burgershot.gg/)on vagy a közösségi médián keresztül) és a legfontosabb dologról: a szó terjesztéséről!
 Tehát feltétlenül jelöljd be könyvjelzővel ezt a weboldalt, és osszd meg bárki mással, aki ismeri vagy kíváncsi arra, hogy hova került a SA-MP Wiki.
 
-Szívesen látjuk a dokumentáció fejlesztésével kapcsolatos hozzájárulásokat, valamint oktatóanyagokat és útmutatókat olyan általános feladatokhoz, mint például az egyszerű játékmódok felépítése, valamint a közös könyvtárak és beépülő modulok használata. Ha érdekel a közreműködés, akkor térjen át a [GitHub oldal](https://github.com/openmultiplayer/wiki)ra.
+Szívesen látjuk a dokumentáció fejlesztésével kapcsolatos hozzájárulásokat, valamint oktatóanyagokat és útmutatókat olyan általános feladatokhoz, mint például az egyszerű játékmódok felépítése, valamint a közös könyvtárak és beépülő modulok használata. Ha érdekel a közreműködés, akkor térjen át a [GitHub oldal](https://github.com/openmultiplayer/web)ra.

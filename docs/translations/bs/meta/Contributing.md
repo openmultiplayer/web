@@ -214,4 +214,4 @@ Ako nemate vremena, ne brinite! Predajte nedovršenu skicu i neko drugi je može
 
 ## Ugovor o Licenci
 
-Svi open.mp projekti imaju [Ugovor o Licenci Za Saradnike][https://cla-assistant.io/openmultiplayer/homepage]. Ovo zapravo znači da vi pristajete na to da mi koristimo vaš radi i da ga stavimo pod "open-source" licencu (da ju svako može preuzeti i editovati). Kada otvorite Pull Request prvi put, CLA-Assistant bot će postaviti link gdje možete potpisati ugovor.
+Svi open.mp projekti imaju [Ugovor o Licenci Za Saradnike](https://cla-assistant.io/openmultiplayer/homepage). Ovo zapravo znači da vi pristajete na to da mi koristimo vaš radi i da ga stavimo pod "open-source" licencu (da ju svako može preuzeti i editovati). Kada otvorite Pull Request prvi put, CLA-Assistant bot će postaviti link gdje možete potpisati ugovor.

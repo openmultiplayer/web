@@ -216,4 +216,4 @@ Ha nincs időd, ne aggódj! Küld be a befejezetlen vázlatot, és valaki más f
 
 ## Licencszerződés
 
-Minden open.mp projekt rendelkezik [Közreműködői licencszerződéssel][https://cla-assistant.io/openmultiplayer/homepage].Ez alapvetően csak azt jelenti, hogy beleegyezik abba, hogy felhasználja munkáját, és nyílt forráskódú licenc alá helyezi. A "Pull Request" első megnyitásakor a CLA-Assistant bot egy linket tesz közzé, ahol aláírhatja a megállapodást.
+Minden open.mp projekt rendelkezik [Közreműködői licencszerződéssel](https://cla-assistant.io/openmultiplayer/homepage). Ez alapvetően csak azt jelenti, hogy beleegyezik abba, hogy felhasználja munkáját, és nyílt forráskódú licenc alá helyezi. A "Pull Request" első megnyitásakor a CLA-Assistant bot egy linket tesz közzé, ahol aláírhatja a megállapodást.

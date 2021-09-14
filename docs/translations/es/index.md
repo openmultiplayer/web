@@ -17,4 +17,4 @@ Si estás interesado, mira este link para obtener instrucciones de como converti
 
 Si no tienes experiencia utilizando GitHub o convirtiendo HTML, ¡no te preocupes! Puedes ayudar con solo avisarnos acerca de problemas (mediante Discord, el foro de Burgershot u otras redes sociales) y lo más importante: _¡Difundir este sitio!_, así que asegúrate de agregar este sitio a tus marcadores y compartirlo con cualquiera que conozcas y sepas que precisa la ya inexistente wiki de SA:MP.
 
-Sean bienvenidas las contribuciones y mejoras a la documentación al igual que los tutoriales o guías para tareas comunes como crear modos de juego (gamemodes) simples y el uso de librerías y plugins comunes. Si estás interesado en contribuir entonces dirígete a la [página de GitHub](https://github.com/openmultiplayer/wiki).
+Sean bienvenidas las contribuciones y mejoras a la documentación al igual que los tutoriales o guías para tareas comunes como crear modos de juego (gamemodes) simples y el uso de librerías y plugins comunes. Si estás interesado en contribuir entonces dirígete a la [página de GitHub](https://github.com/openmultiplayer/web).

@@ -216,4 +216,4 @@ Jeżeli nie masz czasu, nie przejmuj się! Wyślij nieskończoną wersję robocz
 
 ## Umowa licencyjna
 
-Wszystkie projekty open.mp posiadają [umowę licencyjną współtwórcy][https://cla-assistant.io/openmultiplayer/homepage]. To w zasadzie oznacza, że zgadzasz się na wykorzystanie przez nas Twojej pracy i umieszczenie jej pod licencją open-source. Gdy stworzysz swój pierwszy Pull Request, bot CLA-Assistant zamieści link, w którym możesz potwierdzić swoją zgodę.
+Wszystkie projekty open.mp posiadają [umowę licencyjną współtwórcy](https://cla-assistant.io/openmultiplayer/homepage). To w zasadzie oznacza, że zgadzasz się na wykorzystanie przez nas Twojej pracy i umieszczenie jej pod licencją open-source. Gdy stworzysz swój pierwszy Pull Request, bot CLA-Assistant zamieści link, w którym możesz potwierdzić swoją zgodę.

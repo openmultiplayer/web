@@ -14,4 +14,4 @@ Ako ste zainteresovani provjerite [ovu stranicu](/docs/meta/Contributing) za vi�
 
 Ako nemate iskustva s korištenjem GitHub-a ili pretvaranjem HTML-a, ne brinite! Možete nam pomoći tako što ćete nas samo obavijestiti o problemima (putem Discorda, Burgershot foruma ili društvenih mreža) i najvažnija stvar: _širenje riječi!_ Svakako dodajte ovu stranicu u vaše bookmarks oznake i podijelite je sa svima koje poznajete i koji se pitaju kamo je otišao SA-MP Wiki.
 
-Dobrodošli su doprinosi za poboljšanja dokumentacije, kao i upute i vodiče za uobičajene zadatke poput izrade jednostavnih gamemodova i korištenja zajedničkih "libraries-a" i plugina. Ako ste zainteresirani za doprinos, krenite na [GitHub stranicu](https://github.com/openmultiplayer/wiki).
+Dobrodošli su doprinosi za poboljšanja dokumentacije, kao i upute i vodiče za uobičajene zadatke poput izrade jednostavnih gamemodova i korištenja zajedničkih "libraries-a" i plugina. Ako ste zainteresirani za doprinos, krenite na [GitHub stranicu](https://github.com/openmultiplayer/web).
