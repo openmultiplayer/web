@@ -1,10 +1,9 @@
-name: Build Dev
+name: Build Prod Backend
 
 on:
   push:
     branches:
-      - "*"
-      - "!master"
+      - master
     paths-ignore:
       - "docs/**"
       - "frontend/**"
@@ -14,11 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Docker meta
-        id: docker_meta
-        uses: crazy-max/ghaction-docker-meta@v1
-        with:
-          images: southclaws/openmp-web
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
@@ -35,6 +29,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ steps.docker_meta.outputs.tags }}
+          tags: southclaws/openmp-web:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
