@@ -3,6 +3,12 @@ title: Vehicle Information Types
 description: Vehicle Information Type Constants
 ---
 
+:::info
+
+A list of vehicle info types used by [GetVehicleModelInfo](../functions/GetVehicleModelInfo) can be found here.
+
+:::
+
 | Vehicle Information Type              | Description                                                       |
 | ------------------------------------- | ----------------------------------------------------------------- |
 | `VEHICLE_MODEL_INFO_SIZE`             | The vehicle size                                                  |
@@ -16,7 +22,3 @@ description: Vehicle Information Type Constants
 | `VEHICLE_MODEL_INFO_REAR_BUMPER_Z`    | Height of the rear bumper. [GetVehicleModelInfo](../functions/GetVehicleModelInfo) will only return the Z value when used |
 
 \* These values are calculated from the pivot (usually the center) of the vehicle.
-
-## Related Functions
-
-- [GetVehicleModelInfo](../functions/GetVehicleModelInfo): Retrieve information about a specific vehicle model such as the size or position of seats.
