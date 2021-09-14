@@ -8,6 +8,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Community Compiler](https://github.com/pawn-lang/compiler)** - A vastly updated version of the compiler, with many fixes and enhancements.
 - **[sampctl](https://github.com/Southclaws/sampctl)** - Package manager for installing libraries and running your server.
 - **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)** - Tool to run a lightweight version of the server directly from command-line (no server.cfg required) for testing plugins.
+- **[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)** - Making a plugin easier with boilerplate.
 - **[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)** - Making your own plugins very easy and fast with this template library.
 - **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - A place to test your scripts (snippets, PoC, debugging, etc) and share it to others.
 - **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)** - Pawn autocompletes for Sublime Text.
@@ -52,7 +53,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[SA-MP Distance Functions](https://github.com/Y-Less/samp-distance)** - A list of useful distancing check functions.
 - **[New SA-MP callbacks](https://github.com/emmet-jones/New-SA-MP-callbacks)** - A list of useful new callback functions.
 - **[Alternative Dialogs](https://github.com/NexiusTailer/Alternative-Dialogs)** - Textdraw dialogs with a new design.
-- **[eSelection](https://github.com/TommyB123/eSelection)** - Adds the ability to create dynamic model selection menus in your SA-MP gamemodes. 
+- **[eSelection](https://github.com/TommyB123/eSelection)** - Adds the ability to create dynamic model selection menus in your SA-MP gamemodes.
 - **[mSelection](https://github.com/alextwothousand/mSelection)** - Same as eSelection, but different style.
 
 ## Command Processors
@@ -72,7 +73,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - Checking natives when server starts.
 - **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs.
 - **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
-- **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** -  Allows you to analyze RakNet traffic.
+- **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - Allows you to analyze RakNet traffic.
 - **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - A plugin for SA-MP providing precise timers, written in Rust.
 - **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - Extends the possibilities of the Pawn scripting language with new constructs, data types, and programming techniques.
 - **[PAWN memory access](https://github.com/BigETI/pawn-memory)** - Allows to allocate and free memory from heap in PAWN.
@@ -100,6 +101,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[SAMPSON](https://github.com/Hual/SAMPSON)** - A JSON plugin for SA-MP.
 
 ## Client-Server Plugins
+
 - **[SA-MP+](https://github.com/Hual/SA-MP-Plus)** - A client modification that uses SA-MP's plugin SDK to interact with the server and add new features.
 - **[CHandling](https://github.com/dotSILENT/chandling)** - Adds the ability to assign vehicle handlings to individual vehicles by modifying the default behaviour of the game.
 - **[SAMPVOICE](https://github.com/CyberMor/sampvoice)** - Implementing voice communication systems in the Pawn language for SA:MP servers.
@@ -116,19 +118,19 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 
 ## GDK/SDKs
 
- - **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - This is the bare minium that you need to develop plugins.
- - **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ Language Support for writing a gamemode for SA:MP
- - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
- - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# Language Support for writing a plugin for SA:MP
- - **[sampgo](https://github.com/sampgo/sampgo)** - Go Language Support for writing a gamemode/plugins for SA:MP
- - **[samp-node](https://github.com/AmyrAhmady/samp-node)** - Javascript/Typescript Language Support for writing a gamemode for SA:MP
- - **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Java Language Support for writing a gamemode for SA:MP
- - **[pySAMP](https://github.com/habecker/PySAMP)** - Python Language Support for writing a gamemode for SA:MP
- - **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Rust Language Support for writing a plugin for SA:MP
- - **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - Lua Language Support for writing a gamemode for SA:MP
- - **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - PHP Language Support for writing a gamemode for SA:MP
- - **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - D Language Support for writing a gamemode for SA:MP
- - **[Kamp](https://github.com/Double-O-Seven/kamp)** - Kotlin Language Support for writing a gamemode for SA:MP
+- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - This is the bare minium that you need to develop plugins.
+- **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ Language Support for writing a gamemode for SA:MP
+- **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
+- **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# Language Support for writing a plugin for SA:MP
+- **[sampgo](https://github.com/sampgo/sampgo)** - Go Language Support for writing a gamemode/plugins for SA:MP
+- **[samp-node](https://github.com/AmyrAhmady/samp-node)** - Javascript/Typescript Language Support for writing a gamemode for SA:MP
+- **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Java Language Support for writing a gamemode for SA:MP
+- **[pySAMP](https://github.com/habecker/PySAMP)** - Python Language Support for writing a gamemode for SA:MP
+- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Rust Language Support for writing a plugin for SA:MP
+- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - Lua Language Support for writing a gamemode for SA:MP
+- **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - PHP Language Support for writing a gamemode for SA:MP
+- **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - D Language Support for writing a gamemode for SA:MP
+- **[Kamp](https://github.com/Double-O-Seven/kamp)** - Kotlin Language Support for writing a gamemode for SA:MP
 
 ## Game Modes
 
