@@ -4,7 +4,7 @@ title: Component slots
 
 :::info
 
-Use them to work with the [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot) function.
+The following car mod types can be used to work with the [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot) function.
 
 :::
 
