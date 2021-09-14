@@ -8,6 +8,8 @@ A list of explosion types can be found in the table below. They can be used by [
 
 :::
 
+---
+
 | Type | Visible | Splits | Creates Fire | Physical Blast | Audible Sound | Special                                                                                                  | Range      |
 | ---- | ------- | ------ | ------------ | -------------- | ------------- | -------------------------------------------------------------------------------------------------------- | ---------- |
 | 0    | Yes     | --     | --           | Yes            | Yes           | Normal                                                                                                   | Large      |
