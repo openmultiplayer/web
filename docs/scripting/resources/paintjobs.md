@@ -3,9 +3,12 @@ title: Paintjobs
 description: Paint Jobs that can be applied on specific vehicles
 ---
 
-To be used with [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob)
+:::info
 
-This page contains a collection of the available All Paintjobs. Each paintjobs has information about vehicle's id and name.
+This page contains a collection of all the available paintjobs which can be used by [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob).  
+Each paintjob has information about vehicle's ID and name.
+
+:::
 
 ## Paintjob Table
 
