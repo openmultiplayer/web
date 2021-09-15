@@ -8,7 +8,7 @@ The following car mod types can be used to work with the [GetVehicleComponentInS
 
 :::
 
-| Slot | Name                    |
+| Slot | Definition              |
 | ---- | ----------------------- |
 | 0    | CARMODTYPE_SPOILER      |
 | 1    | CARMODTYPE_HOOD         |
