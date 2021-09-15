@@ -5,10 +5,14 @@ tags: ["player"]
 sidebar_label: Record Types
 ---
 
-Record types to be used with [StartRecordingPlayerData](../functions/StartRecordingPlayerData)
+:::info
 
-| Type                         | Value |
-| ---------------------------- | ----- |
-| PLAYER_RECORDING_TYPE_NONE   | (0)   |
-| PLAYER_RECORDING_TYPE_DRIVER | (1)   |
-| PLAYER_RECORDING_TYPE_ONFOOT | (2)   |
+Here you can find all of the record types which can be used by [StartRecordingPlayerData](../functions/StartRecordingPlayerData).
+
+:::
+
+| ID | Definition                   |
+| -- | ---------------------------- |
+| 0  | PLAYER_RECORDING_TYPE_NONE   |
+| 1  | PLAYER_RECORDING_TYPE_DRIVER |
+| 2  | PLAYER_RECORDING_TYPE_ONFOOT |
