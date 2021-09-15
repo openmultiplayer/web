@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"net/http"
+	"time"
 
 	"github.com/go-chi/chi"
 	"github.com/openmultiplayer/web/server/src/authentication"
@@ -41,5 +42,52 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(posts)
+	type Author struct {
+		ID        string    `json:"id"`
+		Name      string    `json:"name"`
+		CreatedAt time.Time `json:"createdAt"`
+		UpdatedAt time.Time `json:"updatedAt"`
+	}
+
+	type Post struct {
+		ID          string     `json:"id"`
+		Title       *string    `json:"title"`
+		Slug        *string    `json:"slug"`
+		Body        string     `json:"body"`
+		Short       string     `json:"short"`
+		First       bool       `json:"first"`
+		CreatedAt   time.Time  `json:"createdAt"`
+		UpdatedAt   time.Time  `json:"updatedAt"`
+		DeletedAt   *time.Time `json:"deletedAt"`
+		UserID      string     `json:"userId"`
+		ReplyPostID *string    `json:"replyPostId"`
+		RootPostID  *string    `json:"rootPostId"`
+		Author      Author     `json:"author"`
+	}
+
+	var data []Post
+	for _, post := range posts {
+		data = append(data, Post{
+			ID:          post.ID,
+			Title:       post.Title,
+			Slug:        post.Slug,
+			Body:        post.Body,
+			Short:       post.Short,
+			First:       post.First,
+			CreatedAt:   post.CreatedAt,
+			UpdatedAt:   post.UpdatedAt,
+			DeletedAt:   post.DeletedAt,
+			UserID:      post.UserID,
+			ReplyPostID: post.ReplyPostID,
+			RootPostID:  post.ReplyPostID,
+			Author: Author{
+				ID:        post.Author.ID,
+				Name:      post.Author.Name,
+				CreatedAt: post.Author.CreatedAt,
+				UpdatedAt: post.Author.UpdatedAt,
+			},
+		})
+	}
+
+	json.NewEncoder(w).Encode(data)
 }
