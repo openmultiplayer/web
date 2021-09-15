@@ -5,7 +5,9 @@ description: Information about byte size and its corresponding tire state bits.
 
 :::note
 
-To be used with [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+Tire states are used by natives such as [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).  
+Each tire has two states - popped and not popped. Binary digits (bits) also have two states - 0 and 1. A technique called [bit masking](https://en.wikipedia.org/wiki/Mask_(computing)) is used to store more information in less memory. A 1 represents a popped tire, and a 0 represents a tire that isn't popped. For example, '0101' - two tires are popped, two are not.  
+Bitwise operators can be used to work with bit masking.
 
 :::
 
