@@ -9,7 +9,11 @@ This page compiles the list of all the player special actions to be used with th
 
 ## Special Actions
 
-:::warning Special Actions marked with \* can't be set :::
+:::warning
+
+Special actions marked with \* cannot be set using [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction).
+
+:::
 
 | ID  | Action                          | Description                                     |
 | --- | ------------------------------- | ----------------------------------------------- |
@@ -24,7 +28,11 @@ This page compiles the list of all the player special actions to be used with th
 | 12  | SPECIAL_ACTION_SITTING \*       | Detects if the player is sitting                |
 | 13  | SPECIAL_ACTION_STOPUSECELLPHONE | Makes players stop using cellphone              |
 
-:::warning These animations are added in SA:MP 0.3 version. :::
+:::warning
+
+These animations are added in SA:MP 0.3 version.
+
+:::
 
 | ID  | Action                          | Description                                                               |
 | --- | ------------------------------- | ------------------------------------------------------------------------- |
@@ -37,13 +45,21 @@ This page compiles the list of all the player special actions to be used with th
 | 23  | SPECIAL_ACTION_DRINK_SPRUNK     | Will give the player a sprunk bottle to drink from                        |
 | 68  | SPECIAL_ACTION_PISSING          | Will make make the player perform the pissing animation with visible pee. |
 
-:::warning These animations are added in SA:MP 0.3e version. :::
+:::warning
+
+These animations are added in SA:MP 0.3e version.
+
+:::
 
 | ID  | Action                | Description                                                                                     |
 | --- | --------------------- | ----------------------------------------------------------------------------------------------- |
 | 24  | SPECIAL_ACTION_CUFFED | Will force the player in to cuffs (hands are behind their back) (**does not work on CJ skin**). |
 
-:::warning These animations are added in SA:MP 0.3x version. :::
+:::warning
+
+These animations are added in SA:MP 0.3x version.
+
+:::
 
 | ID  | Action               | Description                                                                                                                   |
 | --- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
