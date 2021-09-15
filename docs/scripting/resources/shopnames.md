@@ -8,13 +8,28 @@ To be used with [SetPlayerShopName](../functions/SetPlayerShopName).
 
 :::
 
-| Internal Shop name | What is it?   | Coordinates                    |
-| ------------------ | ------------- | ------------------------------ |
-| "FDPIZA"           | Pizza Stack   | 374.0000, -119.6410, 1001.4922 |
-| "FDBURG"           | Burger Shot   | 375.5660, -68.2220, 1001.5151  |
-| "FDCHICK"          | Cluckin' Bell | 368.7890, -6.8570, 1001.8516   |
-| "AMMUN1"           | Ammunation 1  | 296.5395, -38.2739, 1001.515   |
-| "AMMUN2"           | Ammunation 2  | 295.7359, -80.6865, 1001.5156  |
-| "AMMUN3"           | Ammunation 3  | 290.2011, -109.5698, 1001.5156 |
-| "AMMUN4"           | Ammunation 4  | 308.1619, -141.2549, 999.6016  |
-| "AMMUN5"           | Ammunation 5  | 312.7883, -166.0069, 999.6010  |
+| Shop name | GXT name          | External script | Description                    |
+| --------- | ----------------- | --------------- | ------------------------------ |
+| FDPIZA    | Pizza Stack       | Used for restaurants | The stock GTA: SA Pizza Stack interior |
+| FDCHICK   | Cluckin' Bell     | Used for restaurants | The stock GTA: SA Cluckin' Bell interior |
+| FDBURG    | Burger Shot       | Used for restaurants | The stock GTA: SA Burger Shot interior |
+| AMMUN1    | Ammunation        | Used for Ammu-Nation stores | The first Ammu-Nation interior in GTA: SA |
+| AMMUN2    | Ammunation        | Used for Ammu-Nation stores | The second Ammu-Nation interior in GTA: SA |
+| AMMUN3    | Ammunation        | Used for Ammu-Nation stores | The third Ammu-Nation interior in GTA: SA |
+| AMMUN4    | Ammunation        | Used for Ammu-Nation stores | The fourth Ammu-Nation interior in GTA: SA |
+| AMMUN5    | Ammunation        | Used for Ammu-Nation stores | The fifth Ammu-Nation interior in GTA: SA |
+| TATTOO    | Tattoo Parlor     | Used for tattoo parlors | The first tattoo parlor interior in GTA: SA |
+| TATTOO2   | Tattoo Parlor     | Used for tattoo parlors | The second tattoo parlor interior in GTA: SA |
+| TATTOO3   | Tattoo Parlor     | Used for tattoo parlors | The third tattoo parlor interior in GTA: SA |
+| BARBERS   | Barber            | Used for barber shops | The first barber shop interior in GTA: SA |
+| BARBER2   | Barber            | Used for barber shops | The second barber shop interior in GTA: SA |
+| BARBER3   | Barber            | Used for barber shops | The third barber shop interior in GTA: SA |
+| CSCHP     | Binco             | Used for clothing shops | The stock GTA: SA Binco interior (Clothing Store - Cheap) |
+| CSSPRT    | ProLapse          | Used for clothing shops | The stock GTA: SA ProLapse interior (Clothing Store - Sport) |
+| LACS1     | SubUrban          | Used for clothing shops | The stock GTA: SA SubUrban interior for Los Santos |
+| CLOTHGP   | ZIP               | Used for clothing shops | The stock GTA: SA ZIP interior |
+| CSDESGN   | Victim            | Used for clothing shops | The stock GTA: SA Victim interior |
+| CSEXL     | Didie Sachs       | Used for clothing shops | The stock GTA: SA Didie Sachs interior |
+| CARMOD1   | TransFender       | Used for tuning garages | The stock GTA: SA TransFender interior. Accepts most vehicles |
+| CARMOD2   | Loco Low Co.      | Used for tuning garages | The stock GTA: SA Loco Low Co. interior. Only accepts lowriders |
+| CARMOD3   | Wheel Arch Angels | Used for tuning garages | The stock GTA: SA Wheel Arch Angels interior. Only accepts street racers |
