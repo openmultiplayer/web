@@ -43,7 +43,7 @@ These animations are added in SA:MP 0.3 version.
 | 21  | SPECIAL_ACTION_SMOKE_CIGGY      | Will give the player a cigar.                                             |
 | 22  | SPECIAL_ACTION_DRINK_WINE       | Will give the player a wine bottle to get drunk from                      |
 | 23  | SPECIAL_ACTION_DRINK_SPRUNK     | Will give the player a sprunk bottle to drink from                        |
-| 68  | SPECIAL_ACTION_PISSING          | Will make make the player perform the pissing animation with visible pee. |
+| 68  | SPECIAL_ACTION_PISSING          | Will make make the player perform the pissing animation with visible pee (**the macro is not present in the SA-MP include files**). |
 
 :::warning
 
