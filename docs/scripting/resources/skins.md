@@ -14,7 +14,7 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 
 :::
 
-| Skin ID | Preview                               | Skin Model Name                          | Singleplayer Location                              | Gender |
+| Skin ID | Preview                               | Skin Name/Type                          | Singleplayer Location                              | Gender |
 | ------- | ------------------------------------- | ---------------------------------------- | -------------------------------------------------- | ------ |
 | 0       | ![Skin ID 0](/images/skins/0.png)     | Carl "CJ" Johnson (Main Character)       | Anywhere                                           | Male   |
 | 1       | ![Skin ID 1](/images/skins/1.png)     | The Truth                                | San Fierro and Las Venturas                        | Male   |
