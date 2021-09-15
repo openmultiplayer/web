@@ -2,7 +2,11 @@
 title: "Pvar Types"
 ---
 
+:::info
+
 Types of player variables (also called pvar types), to be used in [Per-player variable system.](../tutorials/perplayervariablesystem)
+
+:::
 
 |  ID   | Definition |
 | ------- | ----------- |
