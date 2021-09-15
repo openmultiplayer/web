@@ -5,7 +5,11 @@ tags: []
 sidebar_label: Spectate Modes
 ---
 
+:::info
+
 Spectate Modes to be used with [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer) and [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle) functions.
+
+:::
 
 | Type                 | Effect                                                                                                                                                      |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
