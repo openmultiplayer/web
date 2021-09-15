@@ -15,18 +15,25 @@ type Props = {
 
 const Posts = ({ list }: { list: Content[] }) => (
   <>
-    {list.map((v: Content) => (
-      <article key={v.slug} className="ba b--black-10 br3 ph4 mv4">
-        <h2>
-          <Link href={`/blog/${v.slug}`}>
-            <a>{v.title}</a>
-          </Link>
-        </h2>
-        <p>
-          <time>{format(parseISO(v.date!), "yyyy-MM-dd")}</time> by {v.author}
-        </p>
-      </article>
-    ))}
+    {list.map((v: Content) => {
+      try {
+        return (
+          <article key={v.slug} className="ba b--black-10 br3 ph4 mv4">
+            <h2>
+              <Link href={`/blog/${v.slug}`}>
+                <a>{v.title}</a>
+              </Link>
+            </h2>
+            <p>
+              <time>{format(parseISO(v.date!), "yyyy-MM-dd")}</time> by{" "}
+              {v.author}
+            </p>
+          </article>
+        );
+      } catch (e) {
+        console.error("Failed to generate post", v.title, "Error:", e.message);
+      }
+    })}
   </>
 );
 
