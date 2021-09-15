@@ -119,7 +119,7 @@ and you'll see the ID of the interior universe. Now you can safely use [SetPlaye
 | ------------------------- | ----------- | --------- | ---------- | --------- | -------------------------------------- |
 | The Johnson house         | 3           | 2496.0549 | -1695.1749 | 1014.7422 | ![](/images/interiors/interior46.png)  |
 | Angel Pine trailer        | 2           | 1.1853    | -3.2387    | 999.4284  | ![](/images/interiors/interior51.png)  |
-| Abandoned AC tower        | 10          | 419.8936  | 2537.1155  | 10 67     | ![](/images/interiors/interior59.png)  |
+| Abandoned AC tower        | 10          | 419.8936  | 2537.1155  | 10.0      | ![](/images/interiors/interior59.png)  |
 | Wardrobe/Changing room    | 14          | 256.9047  | -41.6537   | 1002.0234 | ![](/images/interiors/interior60.png)  |
 | The Camel's Toe safehouse | 1           | 2216.1282 | -1076.3052 | 1050.4844 | ![](/images/interiors/interior130.png) |
 | Verdant Bluffs safehouse  | 8           | 2365.1089 | -1133.0795 | 1050.875  | ![](/images/interiors/interior134.png) |
