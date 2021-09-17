@@ -80,7 +80,7 @@ SA-MP limits characters that can be stored in a single string and keeps scripter
 | **Dialog info**     | The text displayed on all dialogs of the type `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`. | 4096 |
 | **Dialog caption**  | The caption/title on top of the dialog.                                                                                | 64   |
 | **Dialog input**    | The input box on `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`.                                                     | 128  |
-| **Dialog columnt**  | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER` and `DIALOG_STYLE_TABLIST`.                             | 128  |
+| **Dialog column**  | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER` and `DIALOG_STYLE_TABLIST`.                             | 128  |
 | **Dialog row**      | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER`, `DIALOG_STYLE_TABLIST` and `DIALOG_STYLE_LIST`.        | 256  |
 | **Chat bubble**     | The chat bubble that displays above the player's name tag.                                                             | 144  |
 | **Menu title**      | The GTA San Andreas native menu (_mostly used for shops_) header.                                                      | 31   |
