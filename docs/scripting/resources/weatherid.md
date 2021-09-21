@@ -2,7 +2,7 @@
 title: Weather IDs
 ---
 
-To be used with [SetWeather](../functions/SetWeather) and [SetPlayerWeather](../functions/SetPlayerWeather).
+A list of weather IDs used by [SetWeather](../functions/SetWeather) and [SetPlayerWeather](../functions/SetPlayerWeather) functions.
 
 | ID |     Name     | Type |   Description (in singleplayer)    |
 | -- | ------------ | ---- | ---------------------------------- |
