@@ -4,7 +4,7 @@ title: Weapon IDs
 
 :::info
 
-To be used with [OnPlayerDeath](../callbacks/OnPlayerDeath), [GivePlayerWeapon](../functions/GivePlayerWeapon), [SendDeathMessage](../functions/SendDeathMessage).
+This page contains all of the in-game weapons used by [OnPlayerDeath](../callbacks/OnPlayerDeath), [GivePlayerWeapon](../functions/GivePlayerWeapon), [SendDeathMessage](../functions/SendDeathMessage).
 
 :::
 
