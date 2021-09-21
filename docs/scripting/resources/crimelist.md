@@ -1,6 +1,6 @@
 ---
 title: Crime List
-description: Crime List used by [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer) function.
+description: Crime List used by PlayCrimeReportForPlayer function.
 sidebar_label: Crime List
 ---
 
