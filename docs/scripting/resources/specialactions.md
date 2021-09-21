@@ -1,6 +1,6 @@
 ---
 title: Special Actions
-description: A list of all the player special actions used by the GetPlayerSpecialAction and SetPlayerSpecialAction functions.
+description: A list of all the player special actions used by GetPlayerSpecialAction and SetPlayerSpecialAction functions.
 tags: ["player"]
 sidebar_label: Special Actions
 ---
