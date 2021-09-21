@@ -6,7 +6,7 @@ sidebar_label: Skin IDs
 
 ## Skins List
 
-This page contains every available skin, to be used with [SetPlayerSkin](../functions/SetPlayerSkin) and [GetPlayerSkin](../functions/GetPlayerSkin).
+This page contains every available skin used by [SetPlayerSkin](../functions/SetPlayerSkin) and [GetPlayerSkin](../functions/GetPlayerSkin) functions.
 
 :::note
 
@@ -14,7 +14,7 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 
 :::
 
-| Skin ID | Preview                               | Skin Name/Type                          | Singleplayer Location                              | Gender |
+| Skin ID | Preview                               | Skin Name/Type                           | Singleplayer Location                              | Gender |
 | ------- | ------------------------------------- | ---------------------------------------- | -------------------------------------------------- | ------ |
 | 0       | ![Skin ID 0](/images/skins/0.png)     | Carl "CJ" Johnson (Main Character)       | Anywhere                                           | Male   |
 | 1       | ![Skin ID 1](/images/skins/1.png)     | The Truth                                | San Fierro and Las Venturas                        | Male   |
@@ -306,10 +306,10 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 | 287     | ![Skin ID 287](/images/skins/287.png) | San Andreas Army Soldier                 | San Andreas                                        | Male   |
 | 288     | ![Skin ID 288](/images/skins/288.png) | Desert Sheriff                           | Desert                                             | Male   |
 | 289     | ![Skin ID 289](/images/skins/289.png) | Zero                                     | San Fierro                                         | Male   |
-| 290     | ![Skin ID 290](/images/skins/290.png) | Ken Rosenberg                            | Las-Venturas Casino                                | Male   |
+| 290     | ![Skin ID 290](/images/skins/290.png) | Ken Rosenberg                            | Las Venturas Casino                                | Male   |
 | 291     | ![Skin ID 291](/images/skins/291.png) | Kent Paul                                | LV/LS                                              | Male   |
 | 292     | ![Skin ID 292](/images/skins/292.png) | Cesar Vialpando                          | LS/SF                                              | Male   |
-| 293     | ![Skin ID 293](/images/skins/293.png) | Jeffery "OG Loc" Martin/Cross            | Los-Santos Burger Shot                             | Male   |
+| 293     | ![Skin ID 293](/images/skins/293.png) | Jeffery "OG Loc" Martin/Cross            | Los Santos Burger Shot                             | Male   |
 | 294     | ![Skin ID 294](/images/skins/294.png) | Wu Zi Mu (Woozie)                        | San Fierro and Las Venturas                        | Male   |
 | 295     | ![Skin ID 295](/images/skins/295.png) | Michael Toreno (Mike)                    | Las Venturas and San Fierro                        | Male   |
 | 296     | ![Skin ID 296](/images/skins/296.png) | Jizzy B.                                 | San Fierro The Pleasure Domes                      | Male   |
@@ -325,17 +325,17 @@ These skins (300 to 311) were added in SA-MP 0.3.7 RC3 and will not work in earl
 
 :::
 
-| Skin ID | Preview                               | Skin Model Name                                     | Singleplayer Location | Gender |
-| ------- | ------------------------------------- | --------------------------------------------------- | --------------------- | ------ |
-| 300     | ![Skin ID 300](/images/skins/300.png) | Los Santos Police Officer (Without gun holster)     | -                     | Male   |
-| 301     | ![Skin ID 301](/images/skins/301.png) | San Fierro Police Officer (Without gun holster)     | -                     | Male   |
-| 302     | ![Skin ID 302](/images/skins/302.png) | Las Venturas Police Officer (Without gun holster)   | -                     | Male   |
-| 303     | ![Skin ID 303](/images/skins/303.png) | Los Santos Police Officer (Without uniform)         | -                     | Male   |
-| 304     | ![Skin ID 304](/images/skins/304.png) | Los Santos Police Officer (Without uniform)         | -                     | Male   |
-| 305     | ![Skin ID 305](/images/skins/305.png) | Las Venturas Police Officer (Without uniform)       | -                     | Male   |
-| 306     | ![Skin ID 306](/images/skins/306.png) | Los Santos Police Officer                           | -                     | Female |
-| 307     | ![Skin ID 307](/images/skins/307.png) | San Fierro Police Officer                           | -                     | Female |
-| 308     | ![Skin ID 308](/images/skins/308.png) | San Fierro Paramedic (Emergency Medical Technician) | -                     | Female |
-| 309     | ![Skin ID 309](/images/skins/309.png) | Las Venturas Police Officer                         | -                     | Female |
-| 310     | ![Skin ID 310](/images/skins/310.png) | Country Sheriff (Without hat)                       | -                     | Male   |
-| 311     | ![Skin ID 311](/images/skins/311.png) | Desert Sheriff (Without hat)                        | -                     | Male   |
+| Skin ID | Preview                               | Skin Model Name | Skin Name/Type                                      | Singleplayer Location | Gender |
+| ------- | ------------------------------------- | --------------- | --------------------------------------------------- | --------------------- | ------ |
+| 300     | ![Skin ID 300](/images/skins/300.png) | lapdna          | Los Santos Police Officer (Without gun holster)     | -                     | Male   |
+| 301     | ![Skin ID 301](/images/skins/301.png) | sfpdna          | San Fierro Police Officer (Without gun holster)     | -                     | Male   |
+| 302     | ![Skin ID 302](/images/skins/302.png) | lvpdna          | Las Venturas Police Officer (Without gun holster)   | -                     | Male   |
+| 303     | ![Skin ID 303](/images/skins/303.png) | lapdpc          | Los Santos Police Officer (Without uniform)         | -                     | Male   |
+| 304     | ![Skin ID 304](/images/skins/304.png) | lapdpd          | Los Santos Police Officer (Without uniform)         | -                     | Male   |
+| 305     | ![Skin ID 305](/images/skins/305.png) | lvpdpc          | Las Venturas Police Officer (Without uniform)       | -                     | Male   |
+| 306     | ![Skin ID 306](/images/skins/306.png) | wfyclpd         | Los Santos Police Officer                           | -                     | Female |
+| 307     | ![Skin ID 307](/images/skins/307.png) | vbfycpd         | San Fierro Police Officer                           | -                     | Female |
+| 308     | ![Skin ID 308](/images/skins/308.png) | wfyclem         | San Fierro Paramedic (Emergency Medical Technician) | -                     | Female |
+| 309     | ![Skin ID 309](/images/skins/309.png) | wfycllv         | Las Venturas Police Officer                         | -                     | Female |
+| 310     | ![Skin ID 310](/images/skins/310.png) | csherna         | Country Sheriff (Without hat)                       | -                     | Male   |
+| 311     | ![Skin ID 311](/images/skins/311.png) | dsherna         | Desert Sheriff (Without hat)                        | -                     | Male   |
