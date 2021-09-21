@@ -155,7 +155,7 @@ export const getServerSideProps = async (
   return {
     props: {
       ip: ip,
-      initialData: undefined, // TODO: put this back: await getServer(ip),
+      initialData: await getServer(ip),
     },
   };
 };
