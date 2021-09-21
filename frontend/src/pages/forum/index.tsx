@@ -6,7 +6,7 @@ import React, { FC, useCallback } from "react";
 import { toast } from "react-nextjs-toast";
 import { useIsAdmin } from "src/auth/hooks";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { PostModel, TagModel } from "src/types/generated_server";
+import { Post } from "src/types/_generated_Forum";
 import useSWR, { mutate } from "swr";
 
 const ListHeader = () => {
@@ -19,14 +19,14 @@ const ListHeader = () => {
   );
 };
 
-const tagToPill = (t: TagModel) => (
-  <>
-    <li>{t.name}</li>
-  </>
-);
+// const tagToPill = (t: TagModel) => (
+//   <>
+//     <li>{t.name}</li>
+//   </>
+// );
 
 type PostItemProps = {
-  post: PostModel;
+  post: Post;
   showAdminTools: boolean;
   onDelete: (id: string) => void;
 };
@@ -67,7 +67,7 @@ const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
             <div className="flex flex-row justify-between">
               <div className="left">
                 <p className="ma0 black-80">{post.short}</p>
-                <ul>{map(tagToPill)(post.tags)}</ul>
+                {/* <ul>{map(tagToPill)(post.tags)}</ul> */}
               </div>
 
               <div className="right flex-grow self-end black-50">
@@ -84,7 +84,7 @@ const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
 };
 
 type ThreadListProps = {
-  data: PostModel[];
+  data: Post[];
   isAdmin: boolean;
 };
 
@@ -107,7 +107,7 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
     nProgress.done();
   }, []);
 
-  const mapping = map((post: PostModel) => (
+  const mapping = map((post: Post) => (
     <PostItem
       post={post}
       showAdminTools={isAdmin}
@@ -127,7 +127,7 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
 
 const Page = () => {
   const isAdmin = useIsAdmin();
-  const { data, error } = useSWR<PostModel[]>("/forum", apiSWR);
+  const { data, error } = useSWR<Post[]>("/forum", apiSWR);
   if (error) {
     console.error(error);
     return "error";

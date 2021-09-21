@@ -1,7 +1,7 @@
 import { GetServerSidePropsContext } from "next";
 
 import { API_ADDRESS } from "src/config";
-import { APIError } from "src/types/generated_error";
+import { APIError } from "src/types/_generated_Error";
 import { Result } from "./result";
 
 const success = (code: number) => code >= 200 && code <= 299;

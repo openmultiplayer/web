@@ -3,8 +3,8 @@ import { useForm } from "react-hook-form";
 import Editor from "rich-markdown-editor";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { PostModel } from "src/types/generated_server";
+import { apiSSP } from "src/fetcher/fetcher";
+import { Post } from "src/types/_generated_Forum";
 import { useRouter } from "next/router";
 
 export const PostPayloadSchema = z.object({
@@ -31,7 +31,7 @@ const Page = () => {
     setError("");
     const payload = { ...data, body };
 
-    const resp = await apiSSP<PostModel>("/forum", {
+    const resp = await apiSSP<Post>("/forum", {
       method: "POST",
       body: JSON.stringify(payload),
     });

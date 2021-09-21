@@ -9,6 +9,7 @@ require (
 	github.com/Southclaws/go-samp-query v1.1.3
 	github.com/Southclaws/qstring v1.1.0
 	github.com/Southclaws/sampctl v0.0.0-20210109143621-2daeb58d756a
+	github.com/Southclaws/supervillain v0.0.0-20210825213357-1b09c419de41
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/bbalet/stopwords v1.0.0
 	github.com/blevesearch/bleve/v2 v2.1.0
@@ -36,11 +37,9 @@ require (
 	github.com/sethvargo/go-limiter v0.7.0
 	github.com/shopspring/decimal v1.2.0
 	github.com/streadway/amqp v1.0.0
-	github.com/stretchr/testify v1.6.1
+	github.com/stretchr/testify v1.7.0
 	github.com/takuoki/gocase v1.0.0
 	github.com/thanhpk/randstr v1.0.4
-	github.com/tkrajina/go-reflector v0.5.4 // indirect
-	github.com/tkrajina/typescriptify-golang-structs v0.1.3
 	go.etcd.io/bbolt v1.3.5
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/fx v1.13.1
