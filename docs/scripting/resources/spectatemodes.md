@@ -7,7 +7,7 @@ sidebar_label: Spectate Modes
 
 :::info
 
-Spectate Modes to be used with [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer) and [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle) functions.
+Spectate Modes used by [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer) and [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle) functions.
 
 :::
 
