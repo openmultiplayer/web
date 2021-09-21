@@ -1,6 +1,6 @@
 ---
 title: Connection status
-description: Connection status to be used with NetStats_ConnectionStatus.
+description: Connection status used by NetStats_ConnectionStatus.
 ---
 
 ## Description
