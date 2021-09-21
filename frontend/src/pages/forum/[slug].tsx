@@ -10,7 +10,7 @@ import React, { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import Editor from "rich-markdown-editor";
 import { apiSSP } from "src/fetcher/fetcher";
-import { PostModel } from "src/types/generated_server";
+import { Post } from "src/types/_generated_Forum";
 import { mutate } from "swr";
 import * as z from "zod";
 
@@ -42,7 +42,11 @@ const postToListItem = (p: PostModelWithMarkdown) => (
             <em>Posted by {p.postModel.author?.name}</em>
           </p>
           <time className="mv0 black-50">
-            posted {formatRelative(new Date(p.postModel.createdAt as string), new Date())}
+            posted{" "}
+            {formatRelative(
+              new Date(p.postModel.createdAt as string),
+              new Date()
+            )}
           </time>
         </span>
       </header>
@@ -83,7 +87,7 @@ const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
     setError("");
     const payload = { ...data, body };
 
-    const resp = await apiSSP<PostModel>(`/forum/${id}`, {
+    const resp = await apiSSP<Post>(`/forum/${id}`, {
       method: "POST",
       body: JSON.stringify(payload),
     });
@@ -150,16 +154,16 @@ const Page: FC<Props> = ({ id, posts }) => {
 };
 
 type PostModelWithMarkdown = {
-  postModel: PostModel,
-  markdown: MDXRemoteSerializeResult<Record<string, unknown>>
-}
+  postModel: Post;
+  markdown: MDXRemoteSerializeResult<Record<string, unknown>>;
+};
 
 export async function getServerSideProps(
   context: GetServerSidePropsContext<{ slug: string[] }>
 ): Promise<GetServerSidePropsResult<Props>> {
   const slug = context?.params?.slug;
 
-  const resp = await apiSSP<PostModel[]>(`/forum/${slug}`);
+  const resp = await apiSSP<Post[]>(`/forum/${slug}`);
   if (resp.isError()) {
     const err = resp.error();
     console.error(err.error);
@@ -186,8 +190,8 @@ export async function getServerSideProps(
   for (const k in posts) {
     postsWithMarkdown.push({
       postModel: posts[k],
-      markdown: await serialize(posts[k].body)
-    })
+      markdown: await serialize(posts[k].body),
+    });
   }
 
   return {

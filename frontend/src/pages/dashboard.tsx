@@ -1,12 +1,12 @@
 import useSWR from "swr";
 
 import { withAuth } from "src/auth/hoc";
-import { UserModel } from "src/types/generated_server";
 import { apiSWR } from "src/fetcher/fetcher";
 import GitHubIcon from "src/components/icons/GitHub";
 import DiscordIcon from "src/components/icons/Discord";
-import { APIError } from "src/types/generated_error";
+import { APIError } from "src/types/_generated_Error";
 import OAuthButton from "src/components/OAuthButton";
+import { User } from "src/types/_generated_User";
 
 const placeholder = (idx: string, data: any, error?: APIError): JSX.Element => {
   if (error) return <span>(error)</span>;
@@ -15,7 +15,7 @@ const placeholder = (idx: string, data: any, error?: APIError): JSX.Element => {
 };
 
 const InfoItem = ({ title, idx }: { title: string; idx: string }) => {
-  const { data, error } = useSWR<UserModel, APIError>("/users/self", apiSWR);
+  const { data, error } = useSWR<User, APIError>("/users/self", apiSWR);
   return (
     <li className="pv2 mv2">
       <dl className="pa2 flex justify-between">
