@@ -1,6 +1,6 @@
 ---
 title: SAMP Objects
-description: This page has the information about objects added in SA-MP.
+description: This page has the information about the objects added in SA-MP
 sidebar_label: SAMP Objects
 ---
 
