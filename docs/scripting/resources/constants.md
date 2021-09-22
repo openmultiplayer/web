@@ -85,8 +85,8 @@ tags: []
 | 43    | Camera             | WEAPON_CAMERA           |
 | 46    | Parachute          | WEAPON_PARACHUTE        |
 | 49    | Vehicle            | WEAPON_VEHICLE          |
-| 53    | Drown              | WEAPON_DROWN            |
-| 54    | Collision          | WEAPON_COLLISION        |
+| 53    | Drowned            | WEAPON_DROWN            |
+| 54    | Splat              | WEAPON_COLLISION        |
 
 ## Marker Modes
 
