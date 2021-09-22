@@ -22,62 +22,64 @@ You have to use sound ID **0** to stop the sound ID that is currently playing.
 
 ## 0.3.7-R2 sounds (found by Vince and BigETI)
 
-- 2 - 59 police radio
-- 66 - 134 radio adverts
-- 135 - 136 Ventilation
-- 137 Ammu-Nation interior
-- 138 Area 51 interior
-- 139 awards ceremony music
-- 140 Disco (Rock)
-- 141 Let's Get Ready to Bumble (Bee Bee Gone) music
-- 142 same as 1185
-- 143 Marco's Bistro music
-- 144 Diner music
-- 145 same as 1097
-- 146 casino music
-- 147 Disco (Electro)
-- 148 Plane interior humming
-- 149 same as 1183
-- 150 same as 1068
-- 151 Fan
-- 152 Bar (outside?)
-- 153 same as 1062
-- 154 Ventilation
-- 155, 156 plane interior humming
-- 157 Disco (Hip-Hop)
-- 158 Ventilation
-- 159 - 160 Horse race
-- 161 same as 1187
-- 162 Disco (Hip-Hop)
-- 163 Ventilation
-- 164, 165 aircraft carrier lift
-- 166 Riot
-- 167 Rain
-- 168 Plane interior
-- 169 Stunt race
-- 170 Strip club
-- 171 Disco (Rock): Guns N' Roses - Welcome To The Jungle
-- 172 Some dark theme
-- 173 Conveyor belt?
-- 174 Water
-- 175 Disco
-- 176 SA intro music
-- 177 - 179 Disco
-- 179 Lowrider challenge
-- 180 Lowrider challenge
-- 181 Lowrider challenge
-- 182 mission passed theme / property bought
-- 183 Mission passed
-- 184 Voice line
-- 185 - 314 Playback FM
-- 315 - 469 K-ROSE
-- 470 - 625 K-DST (534 Rod Stewart - Young hearts be free tonight)
-- 626 - 668 Voice samples
-- 669 girlfriend date failed music (''fuck you I won't do what you tell me'')
-- 670 girlfriend date success music
-- 671 - 766 Voice lines (743 - Big Smoke's order)
-- 767 - 945 Bounce FM
-- 946 - 999 SF-UR
+```
+2 - 59 police radio
+66 - 134 radio adverts
+135 - 136 Ventilation
+137 Ammu-Nation interior
+138 Area 51 interior
+139 awards ceremony music
+140 Disco (Rock)
+141 Let's Get Ready to Bumble (Bee Bee Gone) music
+142 same as 1185
+143 Marco's Bistro music
+144 Diner music
+145 same as 1097
+146 casino music
+147 Disco (Electro)
+148 Plane interior humming
+149 same as 1183
+150 same as 1068
+151 Fan
+152 Bar (outside?)
+153 same as 1062
+154 Ventilation
+155, 156 plane interior humming
+157 Disco (Hip-Hop)
+158 Ventilation
+159 - 160 Horse race
+161 same as 1187
+162 Disco (Hip-Hop)
+163 Ventilation
+164, 165 aircraft carrier lift
+166 Riot
+167 Rain
+168 Plane interior
+169 Stunt race
+170 Strip club
+171 Disco (Rock): Guns N' Roses - Welcome To The Jungle
+172 Some dark theme
+173 Conveyor belt?
+174 Water
+175 Disco
+176 SA intro music
+177 - 179 Disco
+179 Lowrider challenge
+180 Lowrider challenge
+181 Lowrider challenge
+182 mission passed theme / property bought
+183 Mission passed
+184 Voice line
+185 - 314 Playback FM
+315 - 469 K-ROSE
+470 - 625 K-DST (534 Rod Stewart - Young hearts be free tonight)
+626 - 668 Voice samples
+669 girlfriend date failed music (''fuck you I won't do what you tell me'')
+670 girlfriend date success music
+671 - 766 Voice lines (743 - Big Smoke's order)
+767 - 945 Bounce FM
+946 - 999 SF-UR
+```
 
 ---
 
