@@ -42,13 +42,13 @@ tags: []
 
 ## Textdraws
 
-| Type                                        | Limit (0.3.7)   |
-| ------------------------------------------- | --------------- |
-| String Length (2)                           | 1024 characters |
-| Shown In A Single Client's Screen (3)       | 2048 + 256      |
-| Shown In A Single Client's Screen (sprites) | 100             |
-| Created Serverwise (Global)                 | 2048            |
-| Created Serverwise (Per-Player)             | 256             |
+| Type                                            | Limit (0.3.7)   |
+| ----------------------------------------------- | --------------- |
+| String Length<sup>(2)</sup>                     | 1024 characters |
+| Shown In A Single Client's Screen<sup>(3)</sup> | 2048 + 256      |
+| Shown In A Single Client's Screen (sprites)     | 100             |
+| Created Serverwise (Global)                     | 2048            |
+| Created Serverwise (Per-Player)                 | 256             |
 
 ## Dialogs
 
