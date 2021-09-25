@@ -65,8 +65,9 @@ func (g *GitHubSearcher) runQueryForPage(query string, page int) (repos []github
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to search repositories")
 	}
-	if resp.Rate.Remaining < 100 {
-		time.Sleep(time.Hour)
+	if resp.Rate.Remaining <= 0 {
+		sleepfor := resp.Rate.Reset.Time.Sub(time.Now())
+		time.Sleep(sleepfor)
 	}
 
 	zap.L().Debug("found repositories",
