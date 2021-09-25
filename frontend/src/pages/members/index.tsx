@@ -15,7 +15,7 @@ import { apiSSP, apiSWR } from "src/fetcher/fetcher";
 import { User } from "src/types/_generated_User";
 import nProgress from "nprogress";
 
-const User = ({ user, users, setUsers }: any) => {
+const UserView = ({ user, users, setUsers }: any) => {
   return (
     <div
       style={{
@@ -180,7 +180,12 @@ export default function Members() {
               )
               .slice(pageExtremes.start, pageExtremes.end)
               .map((el) => (
-                <User key={el.id} user={el} setUsers={mutate} users={users} />
+                <UserView
+                  key={el.id}
+                  user={el}
+                  setUsers={mutate}
+                  users={users}
+                />
               ))}
           </div>
           <HStack justifyContent="center" margin="1em">
