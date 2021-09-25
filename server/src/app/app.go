@@ -43,7 +43,6 @@ func Start(ctx context.Context) {
 			queryer.NewSAMPQueryer,
 			serververify.New,
 			scraper.NewPooledScraper,
-			serverworker.New,
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
 		),
@@ -51,6 +50,7 @@ func Start(ctx context.Context) {
 		logger.Build(),
 		api.Build(),
 		resources.Build(),
+		serverworker.Build(),
 		pawndexworker.Build(),
 	)
 

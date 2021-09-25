@@ -16,16 +16,20 @@ type Worker struct {
 	sc scraper.Scraper
 }
 
-func New(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper) *Worker {
-	w := &Worker{db, sc}
+func Build() fx.Option {
+	return fx.Options(
+		fx.Invoke(func(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper) *Worker {
+			w := &Worker{db, sc}
 
-	lc.Append(fx.Hook{
-		OnStart: func(ctx context.Context) error {
-			return w.Run(ctx, time.Second*30)
-		},
-	})
+			lc.Append(fx.Hook{
+				OnStart: func(ctx context.Context) error {
+					return w.Run(ctx, time.Second*30)
+				},
+			})
 
-	return w
+			return w
+		}),
+	)
 }
 
 func (w *Worker) RunWithSeed(ctx context.Context, window time.Duration, addresses []string) error {
@@ -63,6 +67,9 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 					zap.Error(err), zap.String("ip", s.IP))
 			}
 		}
+
+		zap.L().Debug("finished updating servers",
+			zap.Int("servers", len(addresses)))
 	}
 
 	return nil
