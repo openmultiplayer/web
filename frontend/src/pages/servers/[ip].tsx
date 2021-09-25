@@ -33,33 +33,6 @@ type Props = {
   initialData?: All;
 };
 
-const Item = ({ k, v }: { k: string; v: string }) => {
-  return (
-    <>
-      <dt className="f6 pt2 b">{k}</dt>
-      <dd className="ml0 lh-copy black-50">{v}</dd>
-    </>
-  );
-};
-
-type ServerProp = { server: All };
-
-const Rules = ({ server }: ServerProp) => {
-  if (!server.ru) {
-    return null;
-  }
-  return (
-    <>
-      <h4>Game Rules:</h4>
-      <dl className="lh-title ph4 mt0">
-        {Object.keys(server.ru).map((v) => (
-          <Item key={v} k={v} v={server.ru[v]} />
-        ))}
-      </dl>
-    </>
-  );
-};
-
 const Info = ({ data }: { data: All }) => (
   <article>
     <NextSeo
@@ -147,7 +120,7 @@ const Info = ({ data }: { data: All }) => (
             </Flex>
 
             <Box>
-              {data.ru ? (
+              {data.ru !== undefined ? (
                 <Table variant="striped" width="full" size="sm">
                   <Thead>
                     <Tr>
@@ -156,10 +129,10 @@ const Info = ({ data }: { data: All }) => (
                     </Tr>
                   </Thead>
                   <Tbody>
-                    {Object.keys(data.ru).map((v) => (
+                    {Object.keys(data.ru).map((v: string) => (
                       <Tr key={v}>
                         <Td>{v}</Td>
-                        <Td>{data.ru[v]}</Td>
+                        <Td>{(data.ru as any)[v]}</Td>
                       </Tr>
                     ))}
                   </Tbody>
