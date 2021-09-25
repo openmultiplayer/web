@@ -7,6 +7,7 @@ import (
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/scraper"
 )
@@ -18,6 +19,11 @@ type Worker struct {
 
 func Build() fx.Option {
 	return fx.Options(
+		fx.Provide(
+			queryer.NewSAMPQueryer,
+			scraper.NewPooledScraper,
+		),
+
 		fx.Invoke(func(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper) *Worker {
 			w := &Worker{db, sc}
 
@@ -62,6 +68,10 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 			zap.Int("servers", len(addresses)))
 
 		for s := range w.sc.Scrape(ctx, addresses) {
+			zap.L().Debug("updating server",
+				zap.String("address", s.IP),
+				zap.Bool("active", s.Active))
+
 			if err := w.db.Upsert(ctx, s); err != nil {
 				zap.L().Error("failed to upsert server",
 					zap.Error(err), zap.String("ip", s.IP))
