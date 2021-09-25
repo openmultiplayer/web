@@ -111,10 +111,6 @@ func (d *worker) run(ctx context.Context) error {
 		}
 	}
 
-	// Initial search and scrape
-	doSearch()
-	doScrape()
-
 	for {
 		if err := f(); err != nil {
 			if err == context.Canceled {
