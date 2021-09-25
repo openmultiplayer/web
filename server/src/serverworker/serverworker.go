@@ -4,12 +4,32 @@ import (
 	"context"
 	"time"
 
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promauto"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/scraper"
+)
+
+var (
+	Active = promauto.NewGauge(prometheus.GaugeOpts{
+		Namespace: "servers",
+		Name:      "active",
+		Help:      "Total active servers.",
+	})
+	Inactive = promauto.NewGauge(prometheus.GaugeOpts{
+		Namespace: "servers",
+		Name:      "inactive",
+		Help:      "Total servers that are offline but being given a grace-period to come back online.",
+	})
+	Players = promauto.NewGaugeVec(prometheus.GaugeOpts{
+		Namespace: "servers",
+		Name:      "players",
+		Help:      "Total players across all servers",
+	}, []string{"addr"})
 )
 
 type Worker struct {
@@ -80,6 +100,30 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 
 		zap.L().Debug("finished updating servers",
 			zap.Int("servers", len(addresses)))
+
+		// TODO: GetAll needs an "include inactive" flag
+		// It should also probably just use existing data queried earlier.
+		all, err := w.db.GetAll(ctx)
+		if err != nil {
+			zap.L().Error("failed to get all servers for metrics",
+				zap.Error(err))
+			continue
+		}
+
+		active := 0
+		inactive := 0
+		for _, s := range all {
+			if s.Active {
+				active++
+			} else {
+				inactive++
+			}
+			Players.With(prometheus.Labels{
+				"addr": s.IP,
+			}).Set(float64(s.Core.Players))
+		}
+		Active.Set(float64(active))
+		Inactive.Set(float64(inactive))
 	}
 
 	return nil

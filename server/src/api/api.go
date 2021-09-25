@@ -15,6 +15,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/api/docs"
 	"github.com/openmultiplayer/web/server/src/api/forum"
 	"github.com/openmultiplayer/web/server/src/api/legacy"
+	"github.com/openmultiplayer/web/server/src/api/metrics"
 	"github.com/openmultiplayer/web/server/src/api/pawndex"
 	"github.com/openmultiplayer/web/server/src/api/servers"
 	"github.com/openmultiplayer/web/server/src/api/users"
@@ -26,6 +27,7 @@ import (
 
 func Build() fx.Option {
 	return fx.Options(
+		metrics.Build(),
 		auth.Build(),
 		docs.Build(),
 		forum.Build(),
