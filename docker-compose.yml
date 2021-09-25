@@ -11,6 +11,7 @@ services:
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/prisma?schema=public
       DEV_LOGIN_SECRET: ${DEV_LOGIN_SECRET}
+      PRODUCTION: "true"
       LOG_LEVEL: debug
       AMQP_ADDRESS: ${AMQP_ADDRESS}
       HASH_KEY: ${HASH_KEY}
