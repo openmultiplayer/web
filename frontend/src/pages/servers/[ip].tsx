@@ -1,6 +1,7 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
+import { All } from "src/types/_generated_Server";
 import useSWR from "swr";
 
 const API_PATH = (ip: string) => `/server/${ip}`;
@@ -9,34 +10,13 @@ const API_SERVER = (ip: string) => `https://api.open.mp${API_PATH(ip)}`;
 
 const getServer = async (ip: string) => {
   const r: Response = await fetch(API_SERVER(ip));
-  const servers: Server = await r.json();
+  const servers: All = await r.json();
   return servers;
 };
 
-interface Core {
-  ip: string;
-  hn: string;
-  pc: number;
-  pm: number;
-  gm: string;
-  la: string;
-  pa: boolean;
-  vn: string;
-}
-
-interface Server {
-  ip: string;
-  dm?: any;
-  core: Core;
-  description?: any;
-  banner?: any;
-  active: boolean;
-  ru: Record<string, string>;
-}
-
 type Props = {
   ip: string;
-  initialData?: Server;
+  initialData?: All;
 };
 
 const Item = ({ k, v }: { k: string; v: string }) => {
@@ -48,7 +28,7 @@ const Item = ({ k, v }: { k: string; v: string }) => {
   );
 };
 
-type ServerProp = { server: Server };
+type ServerProp = { server: All };
 
 const Description = ({ server }: ServerProp) => {
   if (!server.description) {
@@ -97,7 +77,7 @@ const Rules = ({ server }: ServerProp) => {
   );
 };
 
-const Info = ({ data }: { data: Server }) => (
+const Info = ({ data }: { data: All }) => (
   <article>
     <NextSeo
       title={`${data.core.hn} | SA-MP Servers Index`}
@@ -131,7 +111,7 @@ const Error = ({ error }: { error: TypeError }) => (
   </p>
 );
 const Page = ({ ip, initialData }: Props) => {
-  const { data, error } = useSWR<Server, TypeError>(ip, getServer, {
+  const { data, error } = useSWR<All, TypeError>(ip, getServer, {
     initialData,
   });
 
