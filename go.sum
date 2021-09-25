@@ -58,6 +58,10 @@ github.com/Southclaws/supervillain v0.0.0-20210825210729-c533a21b139d h1:Q609ZHt
 github.com/Southclaws/supervillain v0.0.0-20210825210729-c533a21b139d/go.mod h1:DN85eB/23vXsEmkXGZmFzWywoQ4bmaj3i548//Y2LFM=
 github.com/Southclaws/supervillain v0.0.0-20210825213357-1b09c419de41 h1:kRscBHFDldZfk0QJ/S1inRKfnKoXUGQerf3z4nxkoB0=
 github.com/Southclaws/supervillain v0.0.0-20210825213357-1b09c419de41/go.mod h1:DN85eB/23vXsEmkXGZmFzWywoQ4bmaj3i548//Y2LFM=
+github.com/Southclaws/supervillain v0.0.0-20210921194530-c56bc5478f25 h1:vb9FYwc8x3juV1kAVv1rouH0zHD67JuyL2MMdS/H94k=
+github.com/Southclaws/supervillain v0.0.0-20210921194530-c56bc5478f25/go.mod h1:DN85eB/23vXsEmkXGZmFzWywoQ4bmaj3i548//Y2LFM=
+github.com/Southclaws/supervillain v0.0.0-20210925132636-bc1e67b950a4 h1:8pHuu2RryYdRZG92OnlFTBrXeGNjDZY6t3GFqy5gixw=
+github.com/Southclaws/supervillain v0.0.0-20210925132636-bc1e67b950a4/go.mod h1:DN85eB/23vXsEmkXGZmFzWywoQ4bmaj3i548//Y2LFM=
 github.com/alcortesm/tgz v0.0.0-20161220082320-9c5fe88206d7 h1:uSoVVbwJiQipAclBbw+8quDsfcvFjOpI5iCf4p/cqCs=
 github.com/alcortesm/tgz v0.0.0-20161220082320-9c5fe88206d7/go.mod h1:6zEj6s6u/ghQa61ZWa/C2Aw3RkjiTBOix7dkqa1VLIs=
 github.com/andybalholm/cascadia v1.1.0 h1:BuuO6sSfQNFRu1LppgbD25Hr2vLYW25JvxHs5zzsLTo=
