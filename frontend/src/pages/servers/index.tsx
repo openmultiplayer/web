@@ -7,29 +7,10 @@ import { FormEvent, useState } from "react";
 import Fuse from "fuse.js";
 import { toast } from "react-nextjs-toast";
 import NProgress from "nprogress";
+import { All, Essential } from "src/types/_generated_Server";
+import { API_ADDRESS } from "src/config";
 
-const API_SERVERS = `https://api.open.mp/server/`;
-
-interface All {
-  ip: string;
-  dm?: any;
-  core: Essential;
-  ru: Map<string, string>;
-  description?: any;
-  banner?: any;
-  active: boolean;
-}
-
-interface Essential {
-  ip: string;
-  hn: string;
-  pc: number;
-  pm: number;
-  gm: string;
-  la: string;
-  pa: boolean;
-  vn: string;
-}
+const API_SERVERS = `${API_ADDRESS}/server/`;
 
 type Props = {
   initialData?: Array<Essential>;
