@@ -20,6 +20,7 @@ export const AllSchema = z.object({
   description: z.string().optional(),
   banner: z.string().optional(),
   active: z.boolean(),
+  lastUpdated: z.string(),
 })
 export type All = z.infer<typeof AllSchema>
 

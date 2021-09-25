@@ -2,6 +2,7 @@ package server
 
 import (
 	"errors"
+	"time"
 
 	"github.com/openmultiplayer/web/server/src/db"
 )
@@ -16,6 +17,7 @@ type All struct {
 	Description *string           `json:"description"`
 	Banner      *string           `json:"banner"`
 	Active      bool              `json:"active"`
+	LastUpdated time.Time         `json:"lastUpdated"`
 }
 
 // Essential stores the standard SA:MP 'info' query fields necessary for server
@@ -98,6 +100,7 @@ func dbToAPI(r db.ServerModel) *All {
 		Description: r.InnerServer.Description,
 		Banner:      r.InnerServer.Banner,
 		Active:      r.Active,
+		LastUpdated: r.UpdatedAt,
 	}
 }
 

@@ -6,6 +6,7 @@ import { Spinner } from "@chakra-ui/spinner";
 import { Stat, StatLabel, StatNumber } from "@chakra-ui/stat";
 import { chakra } from "@chakra-ui/system";
 import { Table, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/table";
+import { formatDistance, formatDuration, formatRelative } from "date-fns";
 import {
   GetServerSidePropsContext,
   GetServerSidePropsResult,
@@ -14,13 +15,14 @@ import {
 import { NextSeo } from "next-seo";
 import NextLink from "next/link";
 import { FC } from "react";
+import { API_ADDRESS } from "src/config";
 import { APIError } from "src/types/_generated_Error";
 import { All } from "src/types/_generated_Server";
 import useSWR from "swr";
 
 const API_PATH = (ip: string) => `/server/${ip}`;
 
-const API_SERVER = (ip: string) => `https://api.open.mp${API_PATH(ip)}`;
+const API_SERVER = (ip: string) => `${API_ADDRESS}${API_PATH(ip)}`;
 
 const getServer = async (ip: string) => {
   const r: Response = await fetch(API_SERVER(ip));
@@ -140,6 +142,16 @@ const Info = ({ data }: { data: All }) => (
               ) : null}
             </Box>
           </Stack>
+          <Flex justifyContent="end">
+            <Text color="teal">
+              <time>
+                {`Last updated ${formatDistance(
+                  new Date(data.lastUpdated),
+                  Date.now()
+                )} ago`}
+              </time>
+            </Text>
+          </Flex>
         </Stack>
       </Box>
     </Flex>
