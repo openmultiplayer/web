@@ -102,13 +102,13 @@ model Post {
   body     String
   short    String
   first    Boolean
-  author   User      @relation(fields: [userId], references: [id])
-  root     Post?     @relation("PostToRoot", fields: [rootPostId], references: [id])
-  posts    Post[]    @relation("PostToRoot")
-  replyTo  Post?     @relation("ReplyToPost", fields: [replyPostId], references: [id])
-  replies  Post[]    @relation("ReplyToPost")
-  tags     Tag[]     @relation("TagToPost")
-  category Category? @relation(fields: [categoryId], references: [id])
+  author   User     @relation(fields: [userId], references: [id])
+  root     Post?    @relation("PostToRoot", fields: [rootPostId], references: [id])
+  posts    Post[]   @relation("PostToRoot")
+  replyTo  Post?    @relation("ReplyToPost", fields: [replyPostId], references: [id])
+  replies  Post[]   @relation("ReplyToPost")
+  tags     Tag[]    @relation("TagToPost")
+  category Category @relation(fields: [categoryId], references: [id])
 
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
@@ -117,7 +117,7 @@ model Post {
   userId      String
   rootPostId  String?
   replyPostId String?
-  categoryId  String?
+  categoryId  String
 }
 
 model Tag {
