@@ -27,6 +27,12 @@ type Post struct {
 	ReplyPostID *string    `json:"replyPostId"`
 	RootPostID  *string    `json:"rootPostId"`
 	Author      Author     `json:"author"`
+	Category    Category   `json:"category"`
+}
+
+type Category struct {
+	ID   string `json:"id"`
+	Name string `json:"name"`
 }
 
 func FromModel(u *db.PostModel) (w *Post) {
@@ -48,6 +54,10 @@ func FromModel(u *db.PostModel) (w *Post) {
 			Name:      u.RelationsPost.Author.InnerUser.Name,
 			Admin:     u.RelationsPost.Author.InnerUser.Admin,
 			CreatedAt: u.RelationsPost.Author.InnerUser.CreatedAt,
+		},
+		Category: Category{
+			ID:   u.RelationsPost.Category.ID,
+			Name: u.RelationsPost.Category.Name,
 		},
 	}
 }

@@ -8,13 +8,13 @@ import (
 type Repository interface {
 	CreateThread(
 		ctx context.Context,
-		title, body, authorID string,
+		title, body, authorID, categoryID string,
 		tags []string,
 	) (*Post, error)
 
 	CreatePost(
 		ctx context.Context,
-		body, authorID string,
+		body, authorID,
 		parentID string,
 	) (*Post, error)
 
@@ -24,4 +24,5 @@ type Repository interface {
 
 	GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int, deleted bool) ([]Post, error)
 	GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error)
+	GetCategories(ctx context.Context) ([]Category, error)
 }

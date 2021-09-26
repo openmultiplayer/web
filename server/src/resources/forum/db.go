@@ -28,7 +28,7 @@ func New(db *db.PrismaClient) Repository {
 
 func (d *DB) CreateThread(
 	ctx context.Context,
-	title, body, authorID string,
+	title, body, authorID, categoryID string,
 	tags []string,
 ) (*Post, error) {
 	slug := slug.Make(title)
@@ -42,6 +42,7 @@ func (d *DB) CreateThread(
 			db.Post.Author.Link(db.User.ID.Equals(authorID)),
 
 			db.Post.Title.Set(title),
+			db.Post.Category.Link(db.Category.ID.Equals(categoryID)),
 		).
 		With(db.Post.Author.Fetch()).
 		Exec(ctx)
@@ -157,7 +158,10 @@ func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, so
 			db.Post.Tags.Every(db.Tag.Name.In(tags)),
 			db.Post.CreatedAt.Before(before),
 		).
-		With(db.Post.Author.Fetch()).
+		With(
+			db.Post.Author.Fetch(),
+			db.Post.Category.Fetch(),
+		).
 		Take(max).
 		OrderBy(db.Post.CreatedAt.Order(types.Direction(sort))).
 		Exec(ctx)
@@ -193,7 +197,10 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 				),
 			),
 		).
-		With(db.Post.Author.Fetch()).
+		With(
+			db.Post.Author.Fetch(),
+			db.Post.Category.Fetch(),
+		).
 		Take(max).
 		Skip(skip).
 		OrderBy(db.Post.CreatedAt.Order(types.ASC)).
@@ -214,6 +221,27 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 		}
 
 		result = append(result, *FromModel(&p))
+	}
+
+	return result, nil
+}
+
+func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
+	categories, err := d.db.Category.FindMany().Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	if len(categories) == 0 {
+		return nil, nil
+	}
+
+	result := []Category{}
+	for _, c := range categories {
+		result = append(result, Category{
+			ID:   c.ID,
+			Name: c.Name,
+		})
 	}
 
 	return result, nil
