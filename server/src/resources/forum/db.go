@@ -151,20 +151,38 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 }
 
 func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int, deleted bool) ([]Post, error) {
-	fmt.Println(timeOrNil(!deleted))
-	posts, err := d.db.Post.
-		FindMany(
-			db.Post.First.Equals(true),
-			db.Post.Tags.Every(db.Tag.Name.In(tags)),
-			db.Post.CreatedAt.Before(before),
-		).
-		With(
-			db.Post.Author.Fetch(),
-			db.Post.Category.Fetch(),
-		).
-		Take(max).
-		OrderBy(db.Post.CreatedAt.Order(types.Direction(sort))).
-		Exec(ctx)
+	posts, err := func() ([]db.PostModel, error) {
+		if len(tags) > 0 {
+			return d.db.Post.
+				FindMany(
+					db.Post.First.Equals(true),
+					db.Post.Tags.Some(db.Tag.Name.In(tags)),
+					db.Post.CreatedAt.Before(before),
+				).
+				With(
+					db.Post.Author.Fetch(),
+					db.Post.Tags.Fetch(),
+					db.Post.Category.Fetch(),
+				).
+				Take(max).
+				OrderBy(db.Post.CreatedAt.Order(types.Direction(sort))).
+				Exec(ctx)
+		} else {
+			return d.db.Post.
+				FindMany(
+					db.Post.First.Equals(true),
+					db.Post.CreatedAt.Before(before),
+				).
+				With(
+					db.Post.Author.Fetch(),
+					db.Post.Tags.Fetch(),
+					db.Post.Category.Fetch(),
+				).
+				Take(max).
+				OrderBy(db.Post.CreatedAt.Order(types.Direction(sort))).
+				Exec(ctx)
+		}
+	}()
 	if err != nil {
 		return nil, err
 	}

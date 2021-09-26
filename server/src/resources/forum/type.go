@@ -27,6 +27,7 @@ type Post struct {
 	ReplyPostID *string    `json:"replyPostId"`
 	RootPostID  *string    `json:"rootPostId"`
 	Author      Author     `json:"author"`
+	Tags        []string   `json:"tags"`
 	Category    Category   `json:"category"`
 }
 
@@ -36,6 +37,11 @@ type Category struct {
 }
 
 func FromModel(u *db.PostModel) (w *Post) {
+	tags := []string{}
+	for _, t := range u.RelationsPost.Tags {
+		tags = append(tags, t.Name)
+	}
+
 	return &Post{
 		ID:          u.InnerPost.ID,
 		Slug:        u.InnerPost.Slug,
@@ -55,6 +61,7 @@ func FromModel(u *db.PostModel) (w *Post) {
 			Admin:     u.RelationsPost.Author.InnerUser.Admin,
 			CreatedAt: u.RelationsPost.Author.InnerUser.CreatedAt,
 		},
+		Tags: tags,
 		Category: Category{
 			ID:   u.RelationsPost.Category.ID,
 			Name: u.RelationsPost.Category.Name,

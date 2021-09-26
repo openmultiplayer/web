@@ -28,6 +28,7 @@ export const PostSchema = z.object({
   replyPostId: z.string().nullable(),
   rootPostId: z.string().nullable(),
   author: AuthorSchema,
+  tags: z.string().array(),
   category: CategorySchema,
 })
 export type Post = z.infer<typeof PostSchema>
