@@ -8,12 +8,9 @@ import (
 
 type Author struct {
 	ID        string    `json:"id"`
-	Email     string    `json:"email"`
 	Name      string    `json:"name"`
-	Bio       *string   `json:"bio"`
 	Admin     bool      `json:"admin"`
 	CreatedAt time.Time `json:"createdAt"`
-	UpdatedAt time.Time `json:"updatedAt"`
 }
 
 type Post struct {
@@ -48,12 +45,9 @@ func FromModel(u *db.PostModel) (w *Post) {
 		RootPostID:  u.InnerPost.RootPostID,
 		Author: Author{
 			ID:        u.RelationsPost.Author.InnerUser.ID,
-			Email:     u.RelationsPost.Author.InnerUser.Email,
 			Name:      u.RelationsPost.Author.InnerUser.Name,
-			Bio:       u.RelationsPost.Author.InnerUser.Bio,
 			Admin:     u.RelationsPost.Author.InnerUser.Admin,
 			CreatedAt: u.RelationsPost.Author.InnerUser.CreatedAt,
-			UpdatedAt: u.RelationsPost.Author.InnerUser.UpdatedAt,
 		},
 	}
 }

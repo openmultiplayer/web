@@ -116,7 +116,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 		db.Discord.User.Fetch(),
 	).Exec(ctx); err == nil {
 		u := userdc.User()
-		return user.FromModel(u), err
+		return user.FromModel(u, false), err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
@@ -163,5 +163,5 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 		return nil, err
 	}
 
-	return user.FromModel(u), nil
+	return user.FromModel(u, false), nil
 }

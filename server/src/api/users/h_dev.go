@@ -36,7 +36,7 @@ func (s *service) dev(w http.ResponseWriter, r *http.Request) {
 
 	zap.L().Info("dev login", zap.Any("params", p))
 
-	user, err := s.repo.GetUser(r.Context(), p.ID)
+	user, err := s.repo.GetUser(r.Context(), p.ID, false)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
