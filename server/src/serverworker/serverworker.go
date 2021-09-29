@@ -9,6 +9,7 @@ import (
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/scraper"
@@ -44,12 +45,12 @@ func Build() fx.Option {
 			scraper.NewPooledScraper,
 		),
 
-		fx.Invoke(func(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper) *Worker {
+		fx.Invoke(func(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper, cfg config.Config) *Worker {
 			w := &Worker{db, sc}
 
 			lc.Append(fx.Hook{
 				OnStart: func(ctx context.Context) error {
-					return w.Run(ctx, time.Second*30)
+					return w.Run(ctx, cfg.ServerScrapeInterval)
 				},
 			})
 
