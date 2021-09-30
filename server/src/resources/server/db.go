@@ -51,7 +51,7 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 			db.Server.Banner.SetOptional(e.Banner),
 			db.Server.Active.Set(e.Active),
 		).Exec(ctx)
-	if err == db.ErrNotFound {
+	if errors.Is(err, db.ErrNotFound) {
 		if !e.Active {
 			// don't store inactive servers that don't exist.
 			return nil
