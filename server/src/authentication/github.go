@@ -90,7 +90,7 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*user.U
 		db.GitHub.User.Fetch(),
 	).Exec(ctx); err == nil {
 		u := usergh.User()
-		return user.FromModel(u), err
+		return user.FromModel(u, false), err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
@@ -136,5 +136,5 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*user.U
 		return nil, err
 	}
 
-	return user.FromModel(u), nil
+	return user.FromModel(u, false), nil
 }

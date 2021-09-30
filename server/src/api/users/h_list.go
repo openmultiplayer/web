@@ -28,7 +28,7 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		p.Max = 100
 	}
 
-	users, err := s.repo.GetUsers(r.Context(), p.Sort, p.Max, p.Skip)
+	users, err := s.repo.GetUsers(r.Context(), p.Sort, p.Max, p.Skip, true)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

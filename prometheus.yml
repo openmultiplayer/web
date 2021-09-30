@@ -2,10 +2,10 @@ global:
   scrape_interval: 5s
   evaluation_interval: 5s
 scrape_configs:
-  - job_name: index
+  - job_name: api
     scrape_interval: 5s
     dns_sd_configs:
       - names:
-          - index
+          - api
         type: "A"
-        port: 80
+        port: 8000
