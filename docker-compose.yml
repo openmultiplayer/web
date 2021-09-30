@@ -1,8 +1,8 @@
 version: "3"
 networks:
   default:
-    external:
-      name: gateway
+    name: gateway
+    external: true
 
 services:
   api:
