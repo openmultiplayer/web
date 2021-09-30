@@ -21,7 +21,7 @@ type User struct {
 	Discord *string `json:"discord"`
 }
 
-func FromModel(u *db.UserModel) (o *User) {
+func FromModel(u *db.UserModel, public bool) (o *User) {
 	var github *string
 	if u.RelationsUser.Github != nil {
 		github = &u.RelationsUser.Github.Username
@@ -30,7 +30,7 @@ func FromModel(u *db.UserModel) (o *User) {
 	if u.RelationsUser.Discord != nil {
 		discord = &u.RelationsUser.Discord.Username
 	}
-	return &User{
+	result := &User{
 		ID:         u.InnerUser.ID,
 		Email:      u.InnerUser.Email,
 		AuthMethod: string(u.InnerUser.AuthMethod),
@@ -44,11 +44,20 @@ func FromModel(u *db.UserModel) (o *User) {
 		Github:  github,
 		Discord: discord,
 	}
+
+	if public {
+		// Email is not included for privacy reasons.
+		// If it's required for some API only accessible by either the user
+		// themselves or an armin, it must be assigned manually by the caller.
+		result.Email = ""
+	}
+
+	return result
 }
 
-func FromModelMany(u []db.UserModel) (o []User) {
+func FromModelMany(u []db.UserModel, public bool) (o []User) {
 	for _, v := range u {
-		o = append(o, *FromModel(&v))
+		o = append(o, *FromModel(&v, public))
 	}
 	return
 }

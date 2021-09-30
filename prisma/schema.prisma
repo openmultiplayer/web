@@ -95,8 +95,9 @@ model Post {
   id String @id @default(cuid())
 
   // For threads
-  title String?
-  slug  String? @unique
+  title    String?
+  slug     String?   @unique
+  category Category? @relation(fields: [categoryId], references: [id])
 
   // For posts
   body    String
@@ -116,6 +117,7 @@ model Post {
   userId      String
   rootPostId  String?
   replyPostId String?
+  categoryId  String?
 }
 
 model Tag {
@@ -123,4 +125,11 @@ model Tag {
 
   name  String @unique
   posts Post[] @relation("TagToPost")
+}
+
+model Category {
+  id String @id @default(cuid())
+
+  name  String @unique
+  posts Post[]
 }

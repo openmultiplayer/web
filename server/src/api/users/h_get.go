@@ -14,7 +14,7 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	user, err := s.repo.GetUser(r.Context(), ai.Cookie.UserID)
+	user, err := s.repo.GetUser(r.Context(), ai.Cookie.UserID, false)
 	if err != nil {
 		// a "not found" in this context is still an internal server error
 		// because the user *should* exist in order for the auth middleware to

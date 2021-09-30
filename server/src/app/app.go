@@ -17,9 +17,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/pawndexworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
-	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/resources"
-	"github.com/openmultiplayer/web/server/src/scraper"
 	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/serverworker"
 )
@@ -40,10 +38,7 @@ func Start(ctx context.Context) {
 			docsindex.New,
 			authentication.New,
 			mailworker.New,
-			queryer.NewSAMPQueryer,
 			serververify.New,
-			scraper.NewPooledScraper,
-			serverworker.New,
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
 		),
@@ -51,6 +46,7 @@ func Start(ctx context.Context) {
 		logger.Build(),
 		api.Build(),
 		resources.Build(),
+		serverworker.Build(),
 		pawndexworker.Build(),
 	)
 

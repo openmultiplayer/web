@@ -4,11 +4,33 @@ import (
 	"context"
 	"time"
 
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promauto"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/server/src/config"
+	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/scraper"
+)
+
+var (
+	Active = promauto.NewGauge(prometheus.GaugeOpts{
+		Namespace: "servers",
+		Name:      "active",
+		Help:      "Total active servers.",
+	})
+	Inactive = promauto.NewGauge(prometheus.GaugeOpts{
+		Namespace: "servers",
+		Name:      "inactive",
+		Help:      "Total servers that are offline but being given a grace-period to come back online.",
+	})
+	Players = promauto.NewGaugeVec(prometheus.GaugeOpts{
+		Namespace: "servers",
+		Name:      "players",
+		Help:      "Total players across all servers",
+	}, []string{"addr"})
 )
 
 type Worker struct {
@@ -16,16 +38,25 @@ type Worker struct {
 	sc scraper.Scraper
 }
 
-func New(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper) *Worker {
-	w := &Worker{db, sc}
+func Build() fx.Option {
+	return fx.Options(
+		fx.Provide(
+			queryer.NewSAMPQueryer,
+			scraper.NewPooledScraper,
+		),
 
-	lc.Append(fx.Hook{
-		OnStart: func(ctx context.Context) error {
-			return w.Run(ctx, time.Second*30)
-		},
-	})
+		fx.Invoke(func(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper, cfg config.Config) *Worker {
+			w := &Worker{db, sc}
 
-	return w
+			lc.Append(fx.Hook{
+				OnStart: func(ctx context.Context) error {
+					return w.Run(ctx, cfg.ServerScrapeInterval)
+				},
+			})
+
+			return w
+		}),
+	)
 }
 
 func (w *Worker) RunWithSeed(ctx context.Context, window time.Duration, addresses []string) error {
@@ -58,11 +89,42 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 			zap.Int("servers", len(addresses)))
 
 		for s := range w.sc.Scrape(ctx, addresses) {
+			zap.L().Debug("updating server",
+				zap.String("address", s.IP),
+				zap.Bool("active", s.Active))
+
 			if err := w.db.Upsert(ctx, s); err != nil {
 				zap.L().Error("failed to upsert server",
 					zap.Error(err), zap.String("ip", s.IP))
 			}
 		}
+
+		zap.L().Debug("finished updating servers",
+			zap.Int("servers", len(addresses)))
+
+		// TODO: GetAll needs an "include inactive" flag
+		// It should also probably just use existing data queried earlier.
+		all, err := w.db.GetAll(ctx)
+		if err != nil {
+			zap.L().Error("failed to get all servers for metrics",
+				zap.Error(err))
+			continue
+		}
+
+		active := 0
+		inactive := 0
+		for _, s := range all {
+			if s.Active {
+				active++
+			} else {
+				inactive++
+			}
+			Players.With(prometheus.Labels{
+				"addr": s.IP,
+			}).Set(float64(s.Core.Players))
+		}
+		Active.Set(float64(active))
+		Inactive.Set(float64(inactive))
 	}
 
 	return nil

@@ -17,7 +17,7 @@ func New(db *db.PrismaClient) Repository {
 	return &DB{db}
 }
 
-func (d *DB) GetUser(ctx context.Context, userId string) (*User, error) {
+func (d *DB) GetUser(ctx context.Context, userId string, public bool) (*User, error) {
 	user, err := d.db.User.
 		FindUnique(db.User.ID.Equals(userId)).
 		With(
@@ -33,10 +33,10 @@ func (d *DB) GetUser(ctx context.Context, userId string) (*User, error) {
 		return nil, err
 	}
 
-	return FromModel(user), nil
+	return FromModel(user, public), nil
 }
 
-func (d *DB) GetUsers(ctx context.Context, sort string, max, skip int) ([]User, error) {
+func (d *DB) GetUsers(ctx context.Context, sort string, max, skip int, public bool) ([]User, error) {
 	users, err := d.db.User.
 		FindMany().
 		Take(max).
@@ -49,7 +49,7 @@ func (d *DB) GetUsers(ctx context.Context, sort string, max, skip int) ([]User, 
 		return nil, err
 	}
 
-	return FromModelMany(users), nil
+	return FromModelMany(users, public), nil
 }
 
 func (d *DB) UpdateUser(ctx context.Context, userId string, email, name *string) (*User, error) {
@@ -64,7 +64,7 @@ func (d *DB) UpdateUser(ctx context.Context, userId string, email, name *string)
 		return nil, err
 	}
 
-	return FromModel(user), nil
+	return FromModel(user, false), nil
 }
 
 func (d *DB) SetAdmin(ctx context.Context, userId string, status bool) (bool, error) {
@@ -91,5 +91,5 @@ func (d *DB) Ban(ctx context.Context, userId string) (*User, error) {
 		return nil, err
 	}
 
-	return FromModel(user), nil
+	return FromModel(user, false), nil
 }
