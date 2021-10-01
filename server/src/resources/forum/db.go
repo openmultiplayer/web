@@ -151,13 +151,21 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 }
 
 func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int, deleted bool) ([]Post, error) {
+	// NOTE: this doesn't work with multiple tags.
+	// TODO: Fix this when prisma-client-go has a fix for array intersection queries.
+	tagFilter := []db.PostWhereParam{}
+	for _, tag := range tags {
+		fmt.Println("tag:", tag)
+		tagFilter = append(tagFilter, db.Post.Tags.Some(db.Tag.Name.Equals(tag)))
+	}
+
 	posts, err := func() ([]db.PostModel, error) {
 		if len(tags) > 0 {
 			return d.db.Post.
 				FindMany(
 					db.Post.First.Equals(true),
-					db.Post.Tags.Some(db.Tag.Name.In(tags)),
 					db.Post.CreatedAt.Before(before),
+					db.Post.Or(tagFilter...),
 				).
 				With(
 					db.Post.Author.Fetch(),
