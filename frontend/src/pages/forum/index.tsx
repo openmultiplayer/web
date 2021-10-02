@@ -1,3 +1,11 @@
+import {
+  Button,
+  Input,
+  InputGroup,
+  InputRightElement,
+  Select,
+  Tag,
+} from "@chakra-ui/react";
 import { formatRelative } from "date-fns";
 import map from "lodash/fp/map";
 import Link from "next/link";
@@ -10,21 +18,48 @@ import { Post, PostSchema } from "src/types/_generated_Forum";
 import useSWR, { mutate } from "swr";
 import { APIError } from "src/types/_generated_Error";
 
-const ListHeader = () => {
+const ListHeader = ({ categories }) => {
   return (
-    <div className="flex justify-end">
-      <Link href="/forum/new">
-        <a>New Thread</a>
-      </Link>
+    <div>
+      <div>
+        <span className="categories">
+          <Select className="categories">
+            {categories.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </Select>
+        </span>
+
+        <span className="search">
+          <InputGroup>
+            <InputRightElement pointerEvents="none">
+              <Button minWidth="min-content">Search</Button>
+            </InputRightElement>
+            <Input type="tel" placeholder="Search query" />
+          </InputGroup>
+        </span>
+      </div>
+
+      <div>
+        <span className="new">
+          <Link href="/forum/new" passHref>
+            <Button colorScheme="green">New Thread</Button>
+          </Link>
+        </span>
+      </div>
+
+      <style jsx>{`
+        div {
+          display: flex;
+          justify-content: space-between;
+          gap: 0.5em;
+        }
+      `}</style>
     </div>
   );
 };
-
-// const tagToPill = (t: TagModel) => (
-//   <>
-//     <li>{t.name}</li>
-//   </>
-// );
 
 type PostItemProps = {
   post: Post;
@@ -45,41 +80,88 @@ const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
     [post, onDelete]
   );
   return (
-    <li key={post.id} className="list pv2">
-      <Link href={`/forum/${post.slug}`}>
-        <a className="link">
-          <article className="bb b--black-10 flex flex-column">
-            <header className="flex justify-between">
-              <h1 className="ma0">{post.title}</h1>
-              {showAdminTools && (
+    <li key={post.id}>
+      <article>
+        <div className="content">
+          <header>
+            <div className="category">
+              <span>general</span>
+
+              {!showAdminTools && (
                 <div>
                   {post.deletedAt === null ? (
-                    <span>
-                      <button onClick={onClick}>Delete</button>
-                    </span>
+                    <Button colorScheme="red" size="xs" onClick={onClick}>
+                      Delete
+                    </Button>
                   ) : (
-                    <span className="white bg-red br2 lh-copy ph2 pv1 ma0">{`Deleted ${niceDate(
+                    <span>{`Deleted ${niceDate(
                       post.deletedAt as string
                     )}`}</span>
                   )}
                 </div>
               )}
-            </header>
-            <div className="flex flex-row justify-between">
-              <div className="left">
-                <p className="ma0 black-80">{post.short}</p>
-                {/* <ul>{map(tagToPill)(post.tags)}</ul> */}
-              </div>
-
-              <div className="right flex-grow self-end black-50">
-                <span>{`Posted by ${post.author?.name} ${niceDate(
-                  post.createdAt as string
-                )}`}</span>
-              </div>
             </div>
-          </article>
-        </a>
-      </Link>
+
+            <h1>
+              <Link href={`/forum/${post.slug}`}>
+                <a>{post.title}</a>
+              </Link>
+            </h1>
+          </header>
+
+          <main>
+            <p>{post.short}</p>
+          </main>
+        </div>
+
+        <footer>
+          <p>
+            <em>{post.author.name}</em> posted{" "}
+            <em>{niceDate(post.createdAt)}</em> • updated{" "}
+            <em>{niceDate(post.updatedAt)}</em>
+          </p>
+
+          <ul>
+            {["open.mp", "question", "help"].map((t) => (
+              <li key={t}>
+                <Tag>{t}</Tag>
+              </li>
+            ))}
+          </ul>
+        </footer>
+      </article>
+
+      <style jsx>{`
+        article {
+          padding: 0.5em 1em;
+          border: 1px solid hsla(0, 100%, 0%, 10%);
+          border-radius: 0.5em;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+        }
+        .category {
+          display: flex;
+          justify-content: space-between;
+        }
+        .category span {
+          border-left: 0.25em solid lightblue;
+          padding-left: 0.25em;
+          height: min-content;
+        }
+        h1 {
+          margin: 0;
+        }
+        footer {
+          display: flex;
+          justify-content: space-between;
+        }
+        footer ul {
+          display: flex;
+          gap: 0.5em;
+          list-style: none;
+        }
+      `}</style>
     </li>
   );
 };
@@ -119,9 +201,23 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
 
   return (
     <div>
-      <ListHeader />
+      <ListHeader categories={["general", "games", "music", "random"]} />
 
-      <ol className="pa2">{mapping(data)}</ol>
+      <ol>{mapping(data)}</ol>
+
+      <style jsx>{`
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+        }
+        ol {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+        }
+      `}</style>
     </div>
   );
 };
