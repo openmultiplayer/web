@@ -11,8 +11,8 @@ Text alignments are listed on this page.
 :::
 
 
-| ID | Definition                       |
-| -- | -------------------------------- |
-| 0 | OBJECT_MATERIAL_TEXT_ALIGN_LEFT   |
-| 1 | OBJECT_MATERIAL_TEXT_ALIGN_CENTER |
-| 2 | OBJECT_MATERIAL_TEXT_ALIGN_RIGHT  |
+| Value | Definition                       |
+| ----- | -------------------------------- |
+| 0     | OBJECT_MATERIAL_TEXT_ALIGN_LEFT   |
+| 1     | OBJECT_MATERIAL_TEXT_ALIGN_CENTER |
+| 2     | OBJECT_MATERIAL_TEXT_ALIGN_RIGHT  |
