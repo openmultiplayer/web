@@ -36,8 +36,8 @@ public OnPlayerSelectedMenuRow(playerid, row)
     {
         switch(row)
         {
-            case 0: print("Item 1 Selected");
-            case 1: print("Item 2 Selected");
+            case 0: print("Item 1 Selecionado");
+            case 1: print("Item 2 Selecionado");
         }
     }
     return 1;
