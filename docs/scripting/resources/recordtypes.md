@@ -11,8 +11,8 @@ Here you can find all of the record types which can be used by [StartRecordingPl
 
 :::
 
-| ID | Definition                   |
-| -- | ---------------------------- |
-| 0  | PLAYER_RECORDING_TYPE_NONE   |
-| 1  | PLAYER_RECORDING_TYPE_DRIVER |
-| 2  | PLAYER_RECORDING_TYPE_ONFOOT |
+| Value | Definition                   |
+| ----- | ---------------------------- |
+| 0     | PLAYER_RECORDING_TYPE_NONE   |
+| 1     | PLAYER_RECORDING_TYPE_DRIVER |
+| 2     | PLAYER_RECORDING_TYPE_ONFOOT |
