@@ -1,6 +1,6 @@
 ---
 title: Vehicle Health
-description: Vehicle Health Values
+description: Vehicle Health Values.
 ---
 
 :::info
