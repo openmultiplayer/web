@@ -74,7 +74,11 @@ A per-player textdraw is exactly the same as a regular 'global' textdraw, but on
 new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 ```
 
-:::info IMPORTANT NOTE: An array is still needed for the variable, as the ID of the textdraws may differ from player to player, as other players may have more or less textdraws created than the other. :::
+:::info
+
+IMPORTANT NOTE: An array is still needed for the variable, as the ID of the textdraws may differ from player to player, as other players may have more or less textdraws created than the other.
+
+:::
 
 The function names only differ slightly, with 'TextDraw' becoming 'PlayerTextDraw', with one exception: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) ('TextDrawSetString' becomes 'PlayerTextDrawSetString').
 
