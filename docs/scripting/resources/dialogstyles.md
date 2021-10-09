@@ -23,7 +23,7 @@ public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
 ```
 
 ---
-
+  
 ## Style 0: `DIALOG_STYLE_MSGBOX`
 
 ![](/images/dialogStyles/Dialog_style_msgbox.png)
@@ -60,7 +60,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 ```
 
 ---
-
+  
 ## Style 1: `DIALOG_STYLE_INPUT`
 
 ![](/images/dialogStyles/Dialog_style_input.png)
@@ -97,7 +97,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 ```
 
 ---
-
+  
 ## Style 2: `DIALOG_STYLE_LIST`
 
 ![](/images/dialogStyles/Dialog_style_list.png)
@@ -134,7 +134,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 ```
 
 ---
-
+  
 ## Style 3: `DIALOG_STYLE_PASSWORD`
 
 :::note
@@ -176,7 +176,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 ```
 
 ---
-
+  
 ## Style 4: `DIALOG_STYLE_TABLIST`
 
 :::tip This style was added in **SA-MP 0.3.7** and will not work in earlier versions!
@@ -226,7 +226,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 ```
 
 ---
-
+  
 ## Style 5: `DIALOG_STYLE_TABLIST_HEADERS`
 
 :::tip This style was added in **SA-MP 0.3.7** and will not work in earlier versions!
