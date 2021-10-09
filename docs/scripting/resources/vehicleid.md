@@ -1,6 +1,6 @@
 ---
 title: Vehicle IDs
-description: A complete list of vehicle IDs
+description: A complete list of vehicle IDs.
 ---
 
 | ID                                           | Description                                                                                                                                        |
