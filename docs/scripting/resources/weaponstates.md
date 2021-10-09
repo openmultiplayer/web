@@ -1,6 +1,6 @@
 ---
 title: Weapon States
-description: Weapon State Constants
+description: Weapon State Constants.
 ---
 
 The following weapon states are available, used by [GetPlayerWeaponState](../functions/GetPlayerWeaponState) function:

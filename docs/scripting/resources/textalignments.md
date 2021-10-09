@@ -1,6 +1,6 @@
 ---
 title: Material Text Alignments
-description: A list of Material Text Alignments
+description: A list of Material Text Alignments.
 ---
 
 :::info

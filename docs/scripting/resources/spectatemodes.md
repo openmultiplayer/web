@@ -1,6 +1,6 @@
 ---
 title: Spectate Modes
-description: Spectate Modes used by PlayerSpectatePlayer and PlayerSpectateVehicle functions
+description: Spectate Modes used by PlayerSpectatePlayer and PlayerSpectateVehicle functions.
 tags: []
 sidebar_label: Spectate Modes
 ---

@@ -1,6 +1,6 @@
 ---
 title: Vehicle Information Types
-description: Vehicle Information Type Constants
+description: Vehicle Information Type Constants.
 ---
 
 :::info
