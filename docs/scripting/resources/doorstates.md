@@ -28,6 +28,8 @@ It seems like there is no bit which stores if the door will lock or not.
 
 Notice that the bits are counted from behind, so the first bit is the rightmost bit.
 
+---
+  
 ## Which byte stores what?
 
 - The **first byte** stores the state of the **hood**.
@@ -37,6 +39,8 @@ Notice that the bits are counted from behind, so the first bit is the rightmost 
 
 Notice that the bytes are counted from behind, so the first byte is the rightmost byte.
 
+---
+  
 ## Example
 
 The following code tells that the hood is removed, the front left door is damaged, the front right door is opened and the trunk is damaged and opened:
@@ -47,6 +51,8 @@ However, SA-MP returns a decimal number so you have to convert it to a binary nu
 
 `16909060`
 
+---
+  
 ## Info table
 
 **Legend:**
@@ -97,6 +103,8 @@ Static        Doors                    Hood / Trunk
   °--°      °--°      °--°      °--°      °--°      °--°      °--°      °--°
 ```
 
+---
+  
 ## Wrapper
 
 Useful little snippet to avoid working with the bits and bytes too much.
@@ -123,6 +131,8 @@ stock GetDoorState(doorStates, Door:door, DoorState:doorState)
 }
 ```
 
+---
+  
 ## Example usage
 
 ```c
