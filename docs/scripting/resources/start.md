@@ -18,6 +18,8 @@ main()
 
 The various aspects will be covered in turn but we'll start by looking at the first line.
 
+---
+  
 ## Include
 
 ```c
@@ -41,6 +43,8 @@ This basically loads the code from pawno/includes/a_samp.inc into your script, s
 
 This includes all the other files in that directory so by adding that one line you have access to all the functions in SA:MP (more on functions later).
 
+---
+  
 ## Calls
 
 The next part has two sides of a function call. main() is a function which you write the code for and is called from elsewhere, print(string\[\]) is a function with the code elsewhere which you call. Currently all this will do is load, print a string (i.e. print "Hello World!" (without the ""s) (a tradition in all scripting languages)) to the server console and end. The:
@@ -51,6 +55,8 @@ return 1;
 
 Passes a value (1) back to the place which called main to tell it what happened (the exact value passed here doesn't matter but in other places it does). You now have your first (very basic) script. If you select file->new in pawno it will give you a much bigger start point will all the callbacks in (see below), including main (which isn't technically a callback but acts like one).
 
+---
+  
 ## Statements
 
 The print and return lines have ';' (a semi colon) on them, this just denotes the end of a statement (a statement is a group of one or more functions and operators which together do something, similar to a sentence in common language). Most people put separate statements on separate lines but this is not required, it just makes things clearer, the following is equally valid:
@@ -77,6 +83,8 @@ main() print("Hello World!"), return 1;
 
 A function is basically a chunk of code which does something and can be told to do this thing from somewhere else. It can also pass data about what it did back to the place which told it to run (the place which "called" it).
 
+---
+  
 ## Calling
 
 ```c
@@ -103,6 +111,8 @@ printf("Hello World!", 1, 2, 3, 4, 5, 6);
 
 Don't worry about what that function does for now, just that it has 7 parameters, each separated by a comma.
 
+---
+  
 ## Defining
 
 As well as being able to call existing functions you can also write and call your own:
@@ -154,6 +164,8 @@ MyFunction()
 }
 ```
 
+---
+  
 ## Parameters
 
 Parameters are a type of [variable](/wiki/Scripting_Basics#Variables "Scripting Basics") which you don't need to declare as they come from the place which called the function:
@@ -179,6 +191,8 @@ This code still does the same thing but we're now telling MyFunction() what to d
 
 A variable is basically a bit of memory, it's where data is stored and can be changed and read as required. Variables are one or more cells, a cell is 32 bits (4 bytes) big and by default signed so they can store from -2147483648 to 2147483647 (although -2147483648 is poorly defined in PAWN and gives odd results if displayed). A variable made from more than one cell is called an array, strings are a special type of array where each cell holds a character of the string (or 4 characters in packed strings, but they're not covered here).
 
+---
+  
 ## Declaration
 
 To create a new variable you have to declare it:
@@ -190,6 +204,8 @@ new
 
 This tells the system to create a new variable called myVariable, the initial value of this variable will be 0.
 
+---
+  
 ## Setting
 
 ```c
@@ -247,10 +263,14 @@ myVariable /= 4;
 
 That will divide the value by 4.
 
+---
+  
 ## Arrays
 
 ### Declaration
 
+---
+  
 An array is a variable in which you can store multiple pieces of data at once and access them dynamically. An array is declared to a set size at compile time so you need to know how many pieces of data you need to store in advance, a good example of this is the very common MAX_PLAYERS array, this will have one slot for every possibly connected player, so you know data for one player will not interfere with data for another player (more on defines later).
 
 ```c
@@ -268,6 +288,8 @@ new
 
 That code looks like it would create an array the size of whatever number is stored in myVariable (here 5 but it could be anything), but you can't do this. In PAWN the memory for variables is assigned when you compile your code, this means arrays are always one size, you can't set the size to anything you like whenever you like.
 
+---
+  
 ### Accessing
 
 To set a value in an array you need to say which part of the array you want to store the data in, this CAN be done with another variable:
@@ -328,6 +350,8 @@ myArray[2] += 1;
 myArray[2]++;
 ```
 
+---
+  
 ### Example
 
 As mentioned above a common type of array is the MAX_PLAYERS array. MAX_PLAYERS is not a variable, it's a define which is explained later, but for now accept that it is a constant number equal to the max number of players a server can hold (this by default is 500, even if you change the number in your server.cfg file). The following code uses normal variables to hold data for 4 players and do something with those players in a function (for simplicity's sake assume MAX_PLAYERS is 4 for now):
@@ -367,10 +391,14 @@ SetPlayerValue(playerid, value)
 
 That will create a global array (see section on scope) with one slot for every player, then the function will assign whatever is in the variable "value" to the slot for the player specified. The first example was large with only four players, using 4 lines per player, that's 2000 lines for 500 players (if can be less but it's still a lot), the second version is a single line no matter how many players you have.
 
+---
+  
 ## Strings
 
 ### Basic use
 
+---
+  
 A string is a special type of array, one which is used to hold multiple characters to create a word or sentence or other human readable text. A character is one byte big (although there are extended sets where a character is multiple bytes but these are not well defined in SA:MP) and by default a character takes up one cell (one normal variable or one array slot). Characters are encoded in a system called [ASCII](http://www.asciitable.com/ "http://www.asciitable.com/"), the character "A" is represented by the number 65, telling the system to display a number will give 65, telling the system to display a character will give a capital a. Obviously is a single character takes up a single cell multiple characters (i.e. text) will take up multiple cells, collections of cells, as just explained, are called arrays.
 
 Strings in PAWN (and other languages) are what's called "NULL terminated", this means that when 0 is reached, the string ends. This is not the same as the character "0", represented by the number 48, this is the NULL character, represented by the number 0. This means that you can have a string array 20 cells large but only have a string 3 characters long if the fourth character is the NULL character, signalling the end of the string. You can not however have a string 20 characters long as the NULL character MUST be in the string, so in a 20 cell array you can have a 19 character string and a NULL termination character.
@@ -440,6 +468,8 @@ The third version will result in the string being:
 h0llo
 ```
 
+---
+  
 ### Escape character
 
 As briefly mentioned a backslash is a special character, doing:
@@ -479,6 +509,8 @@ Used to set the character to the character represented by the number specified i
 
 There are others but those are the main ones.
 
+---
+  
 ## Tags
 
 A tag is an additional piece of information on a variable which defines where it can be used, providing information about its functionality. Tags can be strong (starting with a capitalized letter) or weak. For example:
@@ -521,6 +553,8 @@ new myTag: variable = 0,
 
 This is perfectly valid, however, when adding these two variables _directly_, you must use '\_:' to 'de-tag' them, otherwise the compiler will produce a 'tag mismatch' warning.
 
+---
+  
 ## Scope
 
 Scope is where a variable can be used. There are four main scopes: local, local static, global and global static. All variables can only be used after they are declared so this is right:
@@ -539,6 +573,8 @@ new
     var = 4;
 ```
 
+---
+  
 ### local
 
 A local variable is one declared "new" inside a function or part of a function:
@@ -582,6 +618,8 @@ Will print:
 
 Because j is created, printed, incremented then destroyed, then the code loops.
 
+---
+  
 ### static local
 
 A static local can be used in the same place as a local but doesn't forget it's old value, for example:
@@ -625,6 +663,8 @@ Will print:
 
 Because `j` is static so remembers its old value.
 
+---
+  
 ### global
 
 Global variables are declared outside a function and can be used in any functions:
@@ -641,6 +681,8 @@ MyFunc()
 
 They are never reset or lost.
 
+---
+  
 ### global static
 
 Global static variables are like normal globals but can only be used in the file in which they are declared:
