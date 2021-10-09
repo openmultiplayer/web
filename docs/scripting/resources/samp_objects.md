@@ -16,6 +16,8 @@ You can refer this [website](https://dev.prineside.com/en/gtasa_samp_model_id/) 
 This page contains a list of the custom objects added to SA:MP in the 0.3c,
 0.3d, 0.3e, 0.3x and 0.3.7 versions.
 
+---
+
 ## **Objects added in 0.3.7 RC4 (61 objects)**
 
 The following objects (11692 to 11753) were added in SA-MP 0.3.7 RC4 and are not
