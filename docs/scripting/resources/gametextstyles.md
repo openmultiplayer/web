@@ -61,12 +61,12 @@ Be careful, using too many text colors or special characters in one gametext may
 You can use the following text styles in game texts.
 |  Style  | Preview                                | Description |
 | ------- | -------------------------------------- | ----------- |
-| Style 0 | ![](/images/gameTextStyles/style0.png) | Appears for 9 seconds regardless of time setting. Hides textdraws and any other gametext on screen. Fixed in fixes.inc. |
-| Style 1 | ![](/images/gameTextStyles/style1.png) | Fades out after 8 seconds, regardless of time set. If you have a time setting longer than that, it will re-appear after fading out and repeat until the time ends. Fixed in fixes.inc. |
+| Style 0 | ![](/images/gameTextStyles/style0.png) | Appears for 9 seconds regardless of time setting. Hides textdraws and any other gametext on screen (fixed in fixes.inc) |
+| Style 1 | ![](/images/gameTextStyles/style1.png) | Fades out after 8 seconds, regardless of time set. If you have a time setting longer than that, it will re-appear after fading out and repeat until the time ends (fixed in fixes.inc) |
 | Style 2 | ![](/images/gameTextStyles/style2.png) | N/A |
 | Style 3 | ![](/images/gameTextStyles/style3.png) | N/A |
 | Style 4 | ![](/images/gameTextStyles/style4.png) | N/A |
-| Style 5 | ![](/images/gameTextStyles/style5.png) | Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed'.  Fixed in fixes.inc. |
+| Style 5 | ![](/images/gameTextStyles/style5.png) | Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed' (fixed in fixes.inc) |
 | Style 6 | ![](/images/gameTextStyles/style6.png) | N/A |
 
 ## Text Styles added by [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)
