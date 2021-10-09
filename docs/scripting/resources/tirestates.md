@@ -26,6 +26,8 @@ The damage of all tires will be saved together in 1 nibble (which is 4 bits) for
 
 Notice that the bits are counted from behind, so the first bit is the rightmost bit.
 
+---
+  
 ## Example
 
 The following code tells that for a 4-wheeled vehicle two tires are popped and two are not:
@@ -36,6 +38,8 @@ However, SA-MP returns a decimal number so you have to convert it to a binary nu
 
 `5`
 
+---
+  
 ## Info table
 
 Here is a visual representation of the tire states. Vehicle viewed from a top-down perspective, with the upper values being the front of the vehicle and the lower values the back of the vehicle.
@@ -47,6 +51,8 @@ o - inflated tire
 x - popped tire
 ```
 
+---
+  
 ### 4-wheeled vehicles
 
 4 bits for 4-wheeled vehicles: (FL)(BL)(FR)(BR) (Front-Left, Back-Left, Front-Right and Back-Right).
@@ -181,6 +187,8 @@ x - popped tire
 
 After 15 the values are repeated, so 16 is 0, 17 is 1 and so on.
 
+---
+  
 ### 2-wheeled vehicles (bikes)
 
 2 bits for 2-wheeled vehicles: (F)(B) (Front and Back).
@@ -219,6 +227,8 @@ After 15 the values are repeated, so 16 is 0, 17 is 1 and so on.
 
 After 3 the values are repeated, so 4 is 0, 5 is 1 and so on.
 
+---
+  
 ## Example usage
 
 To pop the back two tires of a 4-wheeled vehicle while keeping the front unchanged:

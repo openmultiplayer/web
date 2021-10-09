@@ -15,6 +15,8 @@ You can refer this [website](https://dev.prineside.com/en/gtasa_samp_model_id/) 
 This page contains a list of the custom objects added to SA:MP in the 0.3c,
 0.3d, 0.3e, 0.3x and 0.3.7 versions.
 
+---
+  
 ## **Objects added in 0.3.7 RC4 (61 objects)**
 
 The following objects (11692 to 11753) were added in SA-MP 0.3.7 RC4 and are not
@@ -160,6 +162,8 @@ can be attached to an officers belt.
 11753	AreaBoundary1m
 ```
 
+---
+  
 ## **Objects added in 0.3.7 RC3 (138 objects)**
 
 ```
@@ -171,10 +175,6 @@ can be attached to an officers belt.
 
 This door is the same as object ID 2947 except it is not dynamic (breakable) and
 the pivot point has been moved.
-
-| col 1 | col 2       |
-| ----- | ----------- |
-| 19875 | CRDoor01New |
 
 ```
 19875	CRDoor01New
@@ -513,6 +513,8 @@ Speed limit signs.
 11691	CTable2
 ```
 
+---
+  
 ## **Objects added in 0.3.7 RC2 (82 objects)**
 
 ### **Modular Island Road Corner**
@@ -767,6 +769,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19870	MeshFence1
 ```
 
+---
+  
 ## **Objects added in 0.3.7 RC1 (265 objects)**
 
 ```
@@ -775,6 +779,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19307	kmb_goflag3
 ```
 
+---
+  
 ## **Objects added in 0.3.7 (3 Objects)**
 
 ```
@@ -783,6 +789,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19307	kmb_goflag3
 ```
 
+---
+  
 ## **Objects added in 0.3x RC2-4 (6 objects)**
 
 ```
@@ -794,6 +802,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19521	policeHat01
 ```
 
+---
+  
 ## **Objects added in 0.3e RC7 (31 objects)**
 
 ```
@@ -840,6 +850,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19515	SWATAgrey
 ```
 
+---
+  
 ## **Objects added in 0.3e RC6 (5 objects)**
 
 ```
@@ -850,6 +862,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19474	pokertable01
 ```
 
+---
+  
 ## **Objects added in 0.3e RC4 (44 objects)**
 
 ```
@@ -899,6 +913,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19469	scarf01
 ```
 
+---
+  
 ## **Objects added in 0.3e RC3 (54 objects)**
 
 ```
@@ -958,6 +974,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19425	speed_bump01
 ```
 
+---
+  
 ## **Objects added in 0.3e RC1 (25 objects)**
 
 ```
@@ -988,6 +1006,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19371	wall019
 ```
 
+---
+  
 ## **Objects added in 0.3d (8 objects)**
 
 ```
@@ -1001,6 +1021,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19346	hotdog01
 ```
 
+---
+  
 ## **Objects added in 0.3d RC7 (16 Objects)**
 
 ```
@@ -1022,6 +1044,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19338	Hot_Air_Balloon07
 ```
 
+---
+  
 ## **Objects added in 0.3d RC3-3 (14 Objects)**
 
 ```
@@ -1041,6 +1065,8 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 19321	cuntainer
 ```
 
+---
+  
 ## **Objects added in 0.3d RC3-3 (4 Objects)**
 
 ```
@@ -1065,6 +1091,8 @@ The following objects (19300 to 19307) were removed in SA:MP 0.3d
 19307	verticalift_bridge
 ```
 
+---
+  
 ## **Objects added in 0.3c RC5 (143 Objects)**
 
 ```
@@ -1205,6 +1233,8 @@ The following objects (19300 to 19307) were removed in SA:MP 0.3d
 19299	PointLightMoon1
 ```
 
+---
+  
 ## **Objects added in 0.3c RC4 (109 Objects)**
 
 ```
@@ -1321,6 +1351,8 @@ The following objects (19300 to 19307) were removed in SA:MP 0.3d
 19901	animtube
 ```
 
+---
+  
 ## **Objects added in 0.3c RC2 and RC3 - 154 Objects**
 
 ```
@@ -1529,6 +1561,8 @@ The following objects (19300 to 19307) were removed in SA:MP 0.3d
 19053	WatchType15
 ```
 
+---
+  
 ## **Objects added in 0.3c RC1**
 
 The objects below were added in 0.3c RC1.

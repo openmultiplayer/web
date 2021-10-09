@@ -27,6 +27,8 @@ It seems that you can only read the value of the windshield. Setting it does upd
 
 Notice that the nibbles are counted from behind, so the first nibble is the rightmost nibble.
 
+---
+  
 ## Example
 
 The following code tells that for a car the front and back bumpers are removed:
@@ -37,6 +39,8 @@ However, SA-MP returns a decimal number so you have to convert it to a binary nu
 
 `53477376`
 
+---
+  
 ## Example usage
 
 To remove the front bumper of a car while keeping the other panels unchanged:

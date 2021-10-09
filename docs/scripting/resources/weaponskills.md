@@ -7,6 +7,8 @@ description: Weapon skill values to be used with SetPlayerSkillLevel.
 
 The table below contains a list of valid weapon skill types used by [SetPlayerSkillLevel](../functions/SetPlayerSkillLevel) function.
 
+---
+  
 ## Skill Types
 
 | Value | Definition |
@@ -23,6 +25,8 @@ The table below contains a list of valid weapon skill types used by [SetPlayerSk
 | 9     | WEAPONSKILL_M4 |
 | 10    | WEAPONSKILL_SNIPERRIFLE |
 
+---
+  
 ## Skill Levels
 
 There are 3 weapon skill levels: Poor, Gangster and Hitman. The follow table shows the weapon skill levels needed to advance to the next skill level:

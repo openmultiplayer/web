@@ -7,8 +7,6 @@ sidebar_label: Special Actions
 
 This page compiles the list of all the player special actions used by [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction) and [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction) functions. Both pages contain examples on how to use the values below.
 
-## Special Actions
-
 :::warning
 
 Special actions marked with \* cannot be set using [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction).

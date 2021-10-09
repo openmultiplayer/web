@@ -10,6 +10,8 @@ As the name implies, a textdraw is text that is drawn on a player's screen. Unli
 
 This 'textdraw editor' tool can make designing textdraws much easier.
 
+---
+  
 ## Global Textdraws
 
 Global textdraws can be created, then shown to all players. There is a [limit](../resources/Limits) as to how many can be created, though. This means if you have a server with 500 players, creating more than 4 textdraws per-player is not possible. That's where **player**-textdraws come in. See further down. Here is a list of all the functions related to **global** textdraws:
@@ -33,6 +35,8 @@ Global textdraws can be created, then shown to all players. There is a [limit](.
 - [TextDrawShowForAll](../functions/TextDrawShowForAll): Show a textdraw for all players.
 - [TextDrawHideForAll](../functions/TextDrawHideForAll): Hide a textdraw for all players.
 
+---
+  
 ## Player-textdraws
 
 Player-textdraws are only created for one specific player. Up to 256 textdraws can be created PER-PLAYER. That's 128,000 on a server with 500 players. A little more than 2048. Player-textdraws should be used for things that are not 'static'. Do not use them to display a website address for example, but for a vehicle health indicator.
@@ -54,9 +58,12 @@ Player-textdraws are only created for one specific player. Up to 256 textdraws c
 - [PlayerTextDrawShow](../functions/PlayerTextDrawShow): Show a player-textdraw.
 - [PlayerTextDrawHide](../functions/PlayerTextDrawHide): Hide a player-textdraw.
 
+---
+  
 ## Variable Declaration
 
 When creating a textdraw, you should always decide if the textdraw you're going to create has to be global (eg. your website address, global annoucement) or if it's going to differ per player (eg. kills, deaths, score).
+
 
 ### Global Textdraw
 
@@ -66,6 +73,7 @@ A global textdraw is the easiest to create and requires only one variable. This 
 new Text:gMyText = Text:INVALID_TEXT_DRAW;
 ```
 
+
 ### Per-Player Textdraw
 
 A per-player textdraw is exactly the same as a regular 'global' textdraw, but only creates the textdraw for a single player. This is useful for textdraws that are unique to each player, such as a 'stats' bar showing their kills or score. This can be used to avoid going over the global-textdraw limit, as you can create 256 (as of 0.3e R2) textdraws per player. They are also easier to manage, as they automatically destroy themselves when the player disconnects.
@@ -74,10 +82,16 @@ A per-player textdraw is exactly the same as a regular 'global' textdraw, but on
 new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 ```
 
-:::info IMPORTANT NOTE: An array is still needed for the variable, as the ID of the textdraws may differ from player to player, as other players may have more or less textdraws created than the other. :::
+:::info
+
+IMPORTANT NOTE: An array is still needed for the variable, as the ID of the textdraws may differ from player to player, as other players may have more or less textdraws created than the other.
+
+:::
 
 The function names only differ slightly, with 'TextDraw' becoming 'PlayerTextDraw', with one exception: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) ('TextDrawSetString' becomes 'PlayerTextDrawSetString').
 
+---
+  
 ## Creating the Textdraw
 
 ![Image:320px-Textdraw_map.png](/images/textdraws/320px-Textdraw_map.png)
@@ -112,6 +126,8 @@ public OnGameModeInit()
 
 We have created a textdraw in the center of the screen that says "Hello World!".
 
+---
+  
 ## Setting the font
 
 There are 4 fonts available for textdraw text:
@@ -127,6 +143,8 @@ There are 4 fonts available for textdraw text:
 
 As of SA-MP 0.3d, a new font (id 4) can be set. This is used in combination with the [TextDrawCreate](../functions/TextDrawCreate) and [TextDrawTextSize](../functions/TextDrawTextSize) functions to show a texture 'sprite' on the player's screen. We'll cover this later.
 
+---
+  
 ## Showing the textdraw
 
 For this example, the textdraw has been created globally under OnGameModeInit and will be shown to player when they join the server.
@@ -162,6 +180,8 @@ public OnPlayerConnect(playerid)
 }
 ```
 
+---
+  
 ## Assorted Tips
 
 - Try to use whole number when specifying positions, this ensures the best compatibility on different resolutions.
