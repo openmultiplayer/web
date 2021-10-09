@@ -64,8 +64,7 @@ Player-textdraws are only created for one specific player. Up to 256 textdraws c
 
 When creating a textdraw, you should always decide if the textdraw you're going to create has to be global (eg. your website address, global annoucement) or if it's going to differ per player (eg. kills, deaths, score).
 
----
-  
+
 ### Global Textdraw
 
 A global textdraw is the easiest to create and requires only one variable. This variable is needed to modify the textdraw and to show it to the players later on. The declaration for such a textdraw needs to be a global variable in most cases. The textdraw variable also needs to be prefixed with the _Text:_ tag and should be initialized with the value _Text:INVALID_TEXT_DRAW_. If you omit the initialization, the textdraw may conflict with others as you add more textdraws.
@@ -74,8 +73,7 @@ A global textdraw is the easiest to create and requires only one variable. This 
 new Text:gMyText = Text:INVALID_TEXT_DRAW;
 ```
 
----
-  
+
 ### Per-Player Textdraw
 
 A per-player textdraw is exactly the same as a regular 'global' textdraw, but only creates the textdraw for a single player. This is useful for textdraws that are unique to each player, such as a 'stats' bar showing their kills or score. This can be used to avoid going over the global-textdraw limit, as you can create 256 (as of 0.3e R2) textdraws per player. They are also easier to manage, as they automatically destroy themselves when the player disconnects.
