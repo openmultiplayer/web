@@ -173,10 +173,6 @@ can be attached to an officers belt.
 This door is the same as object ID 2947 except it is not dynamic (breakable) and
 the pivot point has been moved.
 
-| col 1 | col 2       |
-| ----- | ----------- |
-| 19875 | CRDoor01New |
-
 ```
 19875	CRDoor01New
 ```
