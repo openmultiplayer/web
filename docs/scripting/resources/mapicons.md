@@ -1,6 +1,6 @@
 ---
 title: Map Icons
-description: A list of Map Icons
+description: A list of Map Icons.
 ---
 
 | ID  | Icon                             | Name                              |
