@@ -6,6 +6,8 @@ description: GameText Styles used in textdraws and gametext
 This page covers everything you need to know about gametext styles, and how they can be used in textdraws and in text rendered for a (single) player.
 Mainly used by [GameText](../functions/GameTextForPlayer) and [GameTextForAll](../functions/GameTextForAll).
 
+---
+  
 ## Text Colors
 It is possible to draw certain parts of your text in different colors. To do this, you simply need to use the colour slugs listed below, and encapsulate the part of your text which you want to draw in a specific color (e.g. \~y\~I'm drawn in yellow!\~y\~).
 | Code | Colour | Description |
@@ -38,6 +40,8 @@ It is possible to draw certain parts of your text in different colors. To do thi
 | `~w~ (or ~s~)` | ![](/images/gameTextStyles/w.png) | Has one level of lightening. |
 | `~w~~h~ (or ~s~~h~)` | ![](/images/gameTextStyles/wh.png) | All colours become this when lightened too much. |
 
+---
+  
 ## Special Text Letters
 Unlike text colors, these slugs do not require encapsulation. They can be used as-is.
 |  Code  | Description |
@@ -69,6 +73,8 @@ You can use the following text styles in game texts.
 | Style 5 | ![](/images/gameTextStyles/style5.png) | Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed' (fixed in fixes.inc) |
 | Style 6 | ![](/images/gameTextStyles/style6.png) | N/A |
 
+---
+  
 ## Text Styles added by [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)
 |  Style  | Preview                                | Description |
 | ------- | -------------------------------------- | ----------- |
