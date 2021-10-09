@@ -1,6 +1,6 @@
 ---
 title: Material Text Sizes
-description: A list of Material Text Sizes
+description: A list of Material Text Sizes.
 ---
 
 :::info
