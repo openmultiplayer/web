@@ -4,19 +4,19 @@ title: Bullet Hit Types
 
 :::info
 
-To be used with [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot).
+This page contains all of the bullet hit types which are used by [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot).
 
 :::
 
 ---
 
-| Name                          | Value |
-| ----------------------------- | ----- |
-| BULLET_HIT_TYPE_NONE          | 0     |
-| BULLET_HIT_TYPE_PLAYER        | 1     |
-| BULLET_HIT_TYPE_VEHICLE       | 2     |
-| BULLET_HIT_TYPE_OBJECT        | 3     |
-| BULLET_HIT_TYPE_PLAYER_OBJECT | 4     |
+| Value | Definition                    |
+| ----- | ----------------------------- |
+| 0     | BULLET_HIT_TYPE_NONE          |
+| 1     | BULLET_HIT_TYPE_PLAYER        |
+| 2     | BULLET_HIT_TYPE_VEHICLE       |
+| 3     | BULLET_HIT_TYPE_OBJECT        |
+| 4     | BULLET_HIT_TYPE_PLAYER_OBJECT |
 
 ---
 

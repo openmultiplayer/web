@@ -88,7 +88,7 @@ and you'll see the ID of the interior universe. Now you can safely use [SetPlaye
 | Burglary house 3  | 1           | 224.288       | 1289.1907 | 1082.1406 | ![](/images/interiors/interior77.png)  |
 | Burglary house 4  | 5           | 239.2819      | 1114.1991 | 1080.9922 | ![](/images/interiors/interior78.png)  |
 | Burglary house 5  | 15          | 295.1391      | 1473.3719 | 1080.2578 | ![](/images/interiors/interior80.png)  |
-| Burglary house 6  | 2           | 446.626 1397. | 738 1084. | 3047 343  | ![](/images/interiors/interior91.png)  |
+| Burglary house 6  | 2           | 446.626       | 1397.738  | 1084.3047 | ![](/images/interiors/interior91.png)  |
 | Burglary house 7  | 5           | 227.7559      | 1114.3844 | 1080.9922 | ![](/images/interiors/interior93.png)  |
 | Burglary house 8  | 4           | 261.1165      | 1287.2197 | 1080.2578 | ![](/images/interiors/interior94.png)  |
 | Burglary house 9  | 10          | 24.3769       | 1341.1829 | 1084.375  | ![](/images/interiors/interior100.png) |
@@ -119,7 +119,7 @@ and you'll see the ID of the interior universe. Now you can safely use [SetPlaye
 | ------------------------- | ----------- | --------- | ---------- | --------- | -------------------------------------- |
 | The Johnson house         | 3           | 2496.0549 | -1695.1749 | 1014.7422 | ![](/images/interiors/interior46.png)  |
 | Angel Pine trailer        | 2           | 1.1853    | -3.2387    | 999.4284  | ![](/images/interiors/interior51.png)  |
-| Abandoned AC tower        | 10          | 419.8936  | 2537.1155  | 10 67     | ![](/images/interiors/interior59.png)  |
+| Abandoned AC tower        | 10          | 419.8936  | 2537.1155  | 10.0000   | ![](/images/interiors/interior59.png)  |
 | Wardrobe/Changing room    | 14          | 256.9047  | -41.6537   | 1002.0234 | ![](/images/interiors/interior60.png)  |
 | The Camel's Toe safehouse | 1           | 2216.1282 | -1076.3052 | 1050.4844 | ![](/images/interiors/interior130.png) |
 | Verdant Bluffs safehouse  | 8           | 2365.1089 | -1133.0795 | 1050.875  | ![](/images/interiors/interior134.png) |

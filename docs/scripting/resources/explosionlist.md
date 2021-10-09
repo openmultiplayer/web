@@ -2,7 +2,13 @@
 title: Explosion Lists
 ---
 
-To be used with [CreateExplosion](../functions/CreateExplosion) or with [CreateExplosionForPlayer](../functions/CreateExplosionForPlayer)
+:::info
+
+A list of explosion types can be found in the table below. They can be used by [CreateExplosion](../functions/CreateExplosion) and with [CreateExplosionForPlayer](../functions/CreateExplosionForPlayer).
+
+:::
+
+---
 
 | Type | Visible | Splits | Creates Fire | Physical Blast | Audible Sound | Special                                                                                                  | Range      |
 | ---- | ------- | ------ | ------------ | -------------- | ------------- | -------------------------------------------------------------------------------------------------------- | ---------- |
@@ -20,5 +26,7 @@ To be used with [CreateExplosion](../functions/CreateExplosion) or with [CreateE
 | 11   | Yes     | --     | --           | Yes            | Yes           | Normal                                                                                                   | Small      |
 | 12   | Yes     | --     | --           | Yes            | Yes           | Really Small                                                                                             | Very Small |
 | 13   | --      | --     | --           | --             | --            | Produces no special effects other than black burn effects on the ground, does no damage either.          | Large      |
+
+---
 
 [Here's a visual showcase of all these types](http://weedarr.wikidot.com/explosion)

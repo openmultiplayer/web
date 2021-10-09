@@ -5,7 +5,7 @@ description: Information about vehicle damage status and sample code.
 
 :::note
 
-To be used with [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+Information about vehicle damage status used by [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
 
 :::
 

@@ -41,7 +41,7 @@ The functions for setting and retrieving the player variables are:
 - [GetPVarString](../scripting/functions/GetPVarString) Get the previously set string from a player variable.
 - [SetPVarFloat](../scripting/functions/SetPVarFloat) Set a float for a player variable.
 - [GetPVarFloat](../scripting/functions/GetPVarFloat) Get the previously set float from a player variable.
-- [DeletePVar](../scripting/functions/GetPVarFloat) Delete a player variable.
+- [DeletePVar](../scripting/functions/DeletePVar) Delete a player variable.
 
 ```c
 #define PLAYER_VARTYPE_NONE   (0)

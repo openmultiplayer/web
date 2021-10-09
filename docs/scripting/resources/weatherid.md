@@ -2,33 +2,35 @@
 title: Weather IDs
 ---
 
-To be used with [SetWeather](../functions/SetWeather) and [SetPlayerWeather](../functions/SetPlayerWeather).
+A list of weather IDs used by [SetWeather](../functions/SetWeather) and [SetPlayerWeather](../functions/SetPlayerWeather) functions.
 
-```c
-0 = EXTRASUNNY_LA
-1 = SUNNY_LA
-2 = EXTRASUNNY_SMOG_LA
-3 = SUNNY_SMOG_LA
-4 = CLOUDY_LA
-5 = SUNNY_SF
-6 = EXTRASUNNY_SF
-7 = CLOUDY_SF
-8 = RAINY_SF
-9 = FOGGY_SF
-10 = SUNNY_VEGAS
-11 = EXTRASUNNY_VEGAS (heat waves)
-12 = CLOUDY_VEGAS
-13 = EXTRASUNNY_COUNTRYSIDE
-14 = SUNNY_COUNTRYSIDE
-15 = CLOUDY_COUNTRYSIDE
-16 = RAINY_COUNTRYSIDE
-17 = EXTRASUNNY_DESERT
-18 = SUNNY_DESERT
-19 = SANDSTORM_DESERT
-20 = UNDERWATER (greenish, foggy)
-```
+| ID |     Name     | Type |   Description (in singleplayer)    |
+| -- | ------------ | ---- | ---------------------------------- |
+| 0 | EXTRASUNNY_LA | Blue skies | Los Santos specific weather |
+| 1 | SUNNY_LA | Blue skies | Los Santos specific weather |
+| 2 | EXTRASUNNY_SMOG_LA | Blue skies | Los Santos specific weather |
+| 3 | SUNNY_SMOG_LA | Blue skies | Los Santos specific weather |
+| 4 | CLOUDY_LA | Blue skies | Los Santos specific weather |
+| 5 | SUNNY_SF | Blue skies | San Fierro specific weather |
+| 6 | EXTRASUNNY_SF | Blue skies | San Fierro specific weather |
+| 7 | CLOUDY_SF | Blue skies | San Fierro specific weather |
+| 8 | RAINY_SF | Stormy | San Fierro specific weather |
+| 9 | FOGGY_SF | Cloudy and foggy | San Fierro specific weather |
+| 10 | SUNNY_VEGAS | Clear blue sky | Las Venturas specific weather |
+| 11 | EXTRASUNNY_VEGAS | Heat waves | Las Venturas specific weather |
+| 12 | CLOUDY_VEGAS | Dull, colourless | Las Venturas specific weather |
+| 13 | EXTRASUNNY_COUNTRYSIDE | Dull, colourless | Countryside specific weather |
+| 14 | SUNNY_COUNTRYSIDE | Dull, colourless | Countryside specific weather |
+| 15 | CLOUDY_COUNTRYSIDE | Dull, colourless | Countryside specific weather |
+| 16 | RAINY_COUNTRYSIDE | Dull, cloudy, rainy | Countryside specific weather |
+| 17 | EXTRASUNNY_DESERT | Heat waves | Bone County specific weather |
+| 18 | SUNNY_DESERT | Heat waves | Bone County specific weather |
+| 19 | SANDSTORM_DESERT | Sandstorm | Bone County specific weather |
+| 20 | UNDERWATER | Greenish, foggy | Used internally when camera is underwater |
+| 21 | EXTRACOLOURS_1 | Very dark, gradiented skyline, purple | Weather used in interiors |
+| 22 | EXTRACOLOURS_2 | Very dark, gradiented skyline, purple | Weather used in interiors |
 
-There are 21 different weather IDs (0-20), however the game does not feature any range checking for weather IDs and thus you can use weather IDs upto 255. Values higher than 255 or lower than 0 are turned into remainder of the division by 256 (for example, weather ID 300 is the same as ID 44, because 300 % 256 = 44). Weather IDs 0-22 appear to work correctly but other IDs result in strange effects such as pink sky and flashing textures during certain times.
+There are 23 different weather IDs (0-22), the last two of which being the extra colour weather types. However, the game does not feature any range checking for weather IDs and thus you can use weather IDs upto 255. Values higher than 255 or lower than 0 are turned into remainder of the division by 256 (for example, weather ID 300 is the same as ID 44, because 300 % 256 = 44). Weather IDs 0-22 works correctly but other IDs result undefined behavior: strange effects such as pink sky and flashing textures during certain times.
 
 :::note
 

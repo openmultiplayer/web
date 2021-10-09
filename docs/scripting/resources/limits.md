@@ -6,63 +6,63 @@ tags: []
 
 ## In-game Entities
 
-| Type                                                          | Limit           |
+| Type                                                          | Limit (0.3.7)   |
 | ------------------------------------------------------------- | --------------- |
 | Players                                                       | 1000            |
-| Vehicles (4)(6)                                               | 2000            |
-| Vehicle Models (1)                                            | Unlimited       |
-| Objects (4)(6)                                                | 1000            |
+| Vehicles<sup>(4)(6)</sup>                                     | 2000            |
+| Vehicle Models<sup>(1)</sup>                                  | Unlimited       |
+| Objects<sup>(4)(6)</sup>                                      | 1000            |
 | Virtual Worlds                                                | 2,147,483,647   |
 | Interiors                                                     | 256             |
 | Classes                                                       | 320             |
-| Map Icons (4)                                                 | 100             |
-| Race Checkpoints (4)                                          | 1               |
-| Checkpoints (4)                                               | 1               |
-| Pickups (4)                                                   | 4096            |
-| Global 3D Labels (4)                                          | 1024            |
-| Per-player 3D Text Labels (4)                                 | 1024            |
+| Map Icons<sup>(4)</sup>                                       | 100             |
+| Race Checkpoints<sup>(4)</sup>                                | 1               |
+| Checkpoints<sup>(4)</sup>                                     | 1               |
+| Pickups<sup>(4)</sup>                                         | 4096            |
+| Global 3D Labels<sup>(4)</sup>                                | 1024            |
+| Per-player 3D Text Labels<sup>(4)</sup>                       | 1024            |
 | Chat Bubble String                                            | 144 characters  |
 | SetObjectMaterialText,SetPlayerObjectMaterialText Text length | 2048 characters |
 | Gangzones                                                     | 1024            |
 | Menus                                                         | 128             |
 | Attached player objects                                       | 10              |
 | Player Variables                                              | 800             |
-| Actors (since 0.3.7) (4)(5)                                   | 1000            |
+| Actors (since 0.3.7)<sup>(4)(5)</sup>                         | 1000            |
 | Explosions                                                    | 10              |
 
 ## Server Properties
 
-| Type                        | Limit                 |
+| Type                        | Limit (0.3.7)         |
 | --------------------------- | --------------------- |
 | Gamemodes                   | 16                    |
 | Filterscripts               | 16                    |
 | Text Input (Chat/Commands)  | 128 cells (512 bytes) |
 | Text Output                 | 144 cells (576 bytes) |
-| Name Length (SetPlayerName) | 24 characters         |
+| Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 characters         |
 
 ## Textdraws
 
-| Type                                        | Limit           |
-| ------------------------------------------- | --------------- |
-| String Length (2)                           | 1024 characters |
-| Shown In A Single Client's Screen (3)       | 2048 + 256      |
-| Shown In A Single Client's Screen (sprites) | 100             |
-| Created Serverwise (Global)                 | 2048            |
-| Created Serverwise (Per-Player)             | 256             |
+| Type                                            | Limit (0.3.7)   |
+| ----------------------------------------------- | --------------- |
+| String Length<sup>(2)</sup>                     | 1024 characters |
+| Shown In A Single Client's Screen<sup>(3)</sup> | 2048 + 256      |
+| Shown In A Single Client's Screen (sprites)     | 100             |
+| Created Serverwise (Global)                     | 2048            |
+| Created Serverwise (Per-Player)                 | 256             |
 
 ## Dialogs
 
-| Type                                                         | Limit |
-| ------------------------------------------------------------ | ----- |
-| Dialog IDs                                                   | 32768 |
-| Info (Main text)                                             | 4096  |
-| Caption                                                      | 64    |
-| Input Text Box (DIALOG_STYLE_INPUT/PASSWORD)                 | 128   |
-| Tab List Columns (DIALOG_STYLE_TABLIST(\_HEADERS))           | 4     |
-| Tab List Column Characters (DIALOG_STYLE_TABLIST(\_HEADERS)) | 128   |
-| Tab List Row Characters (DIALOG_STYLE_TABLIST(\_HEADERS))    | 256   |
+| Type                                                         | Limit (0.3.7) |
+| ------------------------------------------------------------ | ------------- |
+| Dialog IDs                                                   | 32768         |
+| Info (Main text)                                             | 4096          |
+| Caption                                                      | 64            |
+| Input Text Box (DIALOG_STYLE_INPUT/PASSWORD)                 | 128           |
+| Tab List Columns (DIALOG_STYLE_TABLIST(\_HEADERS))           | 4             |
+| Tab List Column Characters (DIALOG_STYLE_TABLIST(\_HEADERS)) | 128           |
+| Tab List Row Characters (DIALOG_STYLE_TABLIST(\_HEADERS))    | 256           |
 
-Notes:
+**Notes:**
 
 1. Although the vehicle model limit in 0.3 is unlimited, if you use a large amount of vehicle models then it will affect client performance.
 2. Although the textdraw string limit is 1024 characters, if colour codes (e.g. ~r~) are used beyond the 255th character it may crash the client.

@@ -1,7 +1,31 @@
 ---
 title: Vending Machines
-description: List of all vending machine locations, player using them should be within 2 units distance. Very useful for anti-cheats.
+description: List of all vending machine locations, player using them should be within 2 units distance.
 ---
+
+:::info
+
+In GTA: SA (and SA-MP too), it is possible to use vending machines which can be found around the map. The models in the table below are usable vending machines.
+
+:::
+
+| Model ID | Model name     |	Description                                                         |
+| -------- | -------------- | ------------------------------------------------------------------- |
+| 1209     | VENDMACH       | The red soda vending machine                                        |
+| 1302     | VENDMACHFD     | Same model as 1209                                                  |
+| 1977     | VENDIN3        | Probably not used anywhere |
+| 1775     | CJ_SPRUNK1     | A Sprunk vending machine                                            |
+| 1776     | CJ_CANDYVENDOR | A vending machine which sells candy                                 |
+| 956      | CJ_EXT_CANDY   | Same model as 1776                                                  |
+| 955      | CJ_EXT_SPRUNK  | Same model as 1775                                                  |
+
+---
+
+:::info
+
+List of all vending machine locations, player using them should be within 2 units distance.
+
+:::
 
 Exterior:
 
@@ -52,6 +76,8 @@ Exterior:
 -2420.18,   985.95,   44.30
 -2420.22,   984.58,   44.30
 ```
+
+---
 
 Interior:
 

@@ -4,13 +4,11 @@ title: Component slots
 
 :::info
 
-Use them to work with the [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot) function.
+The following car mod types can be used to work with the [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot) function.
 
 :::
 
----
-
-| Slot | Name                    |
+| Slot | Definition              |
 | ---- | ----------------------- |
 | 0    | CARMODTYPE_SPOILER      |
 | 1    | CARMODTYPE_HOOD         |
@@ -26,5 +24,3 @@ Use them to work with the [GetVehicleComponentInSlot](../functions/GetVehicleCom
 | 11   | CARMODTYPE_REAR_BUMPER  |
 | 12   | CARMODTYPE_VENT_RIGHT   |
 | 13   | CARMODTYPE_VENT_LEFT    |
-
----

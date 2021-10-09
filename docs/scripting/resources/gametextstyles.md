@@ -1,11 +1,13 @@
 ---
 title: GameText Styles
-description: GameText Styles to be used in textdraws and gametext
+description: GameText Styles used in textdraws and gametext
 ---
 
-To be used with [GameText](../functions/GameTextForPlayer) and [GameTextForAll](../functions/GameTextForAll).
+This page covers everything you need to know about gametext styles, and how they can be used in textdraws and in text rendered for a (single) player.
+Mainly used by [GameText](../functions/GameTextForPlayer) and [GameTextForAll](../functions/GameTextForAll).
 
 ## Text Colors
+It is possible to draw certain parts of your text in different colors. To do this, you simply need to use the colour slugs listed below, and encapsulate the part of your text which you want to draw in a specific color (e.g. \~y\~I'm drawn in yellow!\~y\~).
 | Code                      | Colour | Description |
 | ----------                | ------ | ----- |
 | N/A                       | ![](/images/gameTextStyles/-.png) | Default colour, has no code.           |
@@ -33,11 +35,11 @@ To be used with [GameText](../functions/GameTextForPlayer) and [GameTextForAll](
 | `~y~~h~                 ` | ![](/images/gameTextStyles/yh.png) | |
 | `~y~~h~~h~              ` | ![](/images/gameTextStyles/yhh.png) | Same as `~g~~h~~h~~h~~h~`. |
 | `~l~                    ` | ![](/images/gameTextStyles/l.png) | Lower case "L".  Can't be lightened. |
-| `~w~                    ` | ![](/images/gameTextStyles/w.png) | Has one level of lightening. |
-| `~w~~h~                 ` | ![](/images/gameTextStyles/wh.png) | All colours become this when lightened too much. |
+| `~w~ (or ~s~)           ` | ![](/images/gameTextStyles/w.png) | Has one level of lightening. |
+| `~w~~h~ (or ~s~~h~)     ` | ![](/images/gameTextStyles/wh.png) | All colours become this when lightened too much. |
 
 ## Special Text Letters
-
+Unlike text colors, these slugs do not require encapsulation. They can be used as-is.
 | Code | Description                                                                                                                         |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `~n~ ` | New line                                                                                                                            |
@@ -56,7 +58,7 @@ Be careful, using too many text colors or special characters in one gametext may
 :::
 
 ## Text Styles
-
+You can use the following text styles in game texts.
 | Style   | Preview                                | Description                                                                                                                                                        |
 | ------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Style 0 | ![](/images/gameTextStyles/style0.png) | Appears for 9 seconds regardless of time setting. Hides textdraws and any other gametext on screen.  Fixed in fixes.inc.                                                                |
@@ -66,12 +68,16 @@ Be careful, using too many text colors or special characters in one gametext may
 | Style 4 | ![](/images/gameTextStyles/style4.png) | N/A                                                                                                                                                                |
 | Style 5 | ![](/images/gameTextStyles/style5.png) | Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed'.  Fixed in fixes.inc.                                                               |
 | Style 6 | ![](/images/gameTextStyles/style6.png) | N/A                                                                                                                                                                |
-| Style 7 | ![](/images/gameTextStyles/style7.png) | Based on SA vehicle names.  Added by fixes.inc                                                                                                                                                               |
-| Style 8 | ![](/images/gameTextStyles/style8.png) | Based on SA location names.  Added by fixes.inc                                                                                                                                                               |
-| Style 9 | ![](/images/gameTextStyles/style9.png) | Based on SA radio station names (once selected).  Added by fixes.inc                                                                                                                                                               |
-| Style 10 | ![](/images/gameTextStyles/style10.png) | Based on SA radio station names (while switching).  Added by fixes.inc                                                                                                                                                               |
-| Style 11 | ![](/images/gameTextStyles/style11.png) | Based on SA positive money.  Added by fixes.inc                                                                                                                                                               |
-| Style 12 | ![](/images/gameTextStyles/style12.png) | Based on SA negative money.  Added by fixes.inc                                                                                                                                                               |
-| Style 13 | ![](/images/gameTextStyles/style13.png) | Based on SA stunt bonuses.  Added by fixes.inc                                                                                                                                                               |
-| Style 14 | ![](/images/gameTextStyles/style14.png) | Based on SA in-game clock.  Added by fixes.inc                                                                                                                                                               |
-| Style 15 | ![](/images/gameTextStyles/style15.png) | Based on SA notification popup.  Added by fixes.inc                                                                                                                                                               |
+
+## Text Styles added by [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)  
+| Style   | Preview                                | Description                                                                                                                                                        |
+| ------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Style 7 | ![](/images/gameTextStyles/style7.png) | Based on SA vehicle names.                                                                                                                                                             |
+| Style 8 | ![](/images/gameTextStyles/style8.png) | Based on SA location names.                                                                                                                                                              |
+| Style 9 | ![](/images/gameTextStyles/style9.png) | Based on SA radio station names (once selected).                                                                                                                                                              |
+| Style 10 | ![](/images/gameTextStyles/style10.png) | Based on SA radio station names (while switching).                                                                                                                                                            |
+| Style 11 | ![](/images/gameTextStyles/style11.png) | Based on SA positive money.                                                                                                                                                              |
+| Style 12 | ![](/images/gameTextStyles/style12.png) | Based on SA negative money.                                                                                                                                                             |
+| Style 13 | ![](/images/gameTextStyles/style13.png) | Based on SA stunt bonuses.                                                                                                                                                             |
+| Style 14 | ![](/images/gameTextStyles/style14.png) | Based on SA in-game clock.                                                                                                                                                             |
+| Style 15 | ![](/images/gameTextStyles/style15.png) | Based on SA notification popup.                                                                                                                                                              |

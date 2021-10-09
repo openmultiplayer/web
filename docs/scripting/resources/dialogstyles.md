@@ -32,7 +32,7 @@ Showing:
 
 - **\t** adds a TAB (more space).
 - **\n** creates a new line.
-- Color Embedding won't reset after \n \t
+- [Color embedding](colorslist#color-embedding) won't reset after **\n** or **\t**.
 
 :::
 
@@ -67,7 +67,7 @@ Showing:
 
 - **\t** adds a TAB (more space).
 - **\n** creates a new line.
-- Color Embedding won't reset after \n \t
+- [Color embedding](colorslist#color-embedding) won't reset after **\n** or **\t**.
 
 :::
 
@@ -102,7 +102,7 @@ Showing:
 
 - **\t** adds a TAB (more space).
 - **\n** creates a new line.
-- Color Embedding won't reset after \n \t
+- [Color embedding](colorslist#color-embedding) won't reset after **\t**.
 
 :::
 
@@ -187,7 +187,8 @@ Showing:
 
 - **\t** creates a new column.
 - **\n** creates a new list item.
-- Color embedding resets after \n and \t.
+- [Color embedding](colorslist#color-embedding) resets after **\n** and **\t**.
+- The first **info** row contains the header.
 
 :::
 
@@ -201,6 +202,7 @@ Pistol\t$1000\t50",
 
 :::note
 
+- **listitem** is the number of the selected item, starting from **0**.
 - **inputtext** is the text contained by the _first column_ of the selected **listitem**, without the colors.
 
 :::
@@ -233,7 +235,8 @@ Showing:
 
 - **\t** creates a new column.
 - **\n** creates a new list item.
-- Color embedding resets after \n and \t. The first **info** row contains the header.
+- [Color embedding](colorslist#color-embedding) resets after **\n** and **\t**.
+- The first **info** row contains the header.
 
 :::
 
@@ -247,6 +250,7 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 
 :::note
 
+- **listitem** is the number of the selected item, starting from **0**.
 - **inputtext** is the text contained by the _first column_ of the selected **listitem**, without the colors.
 
 :::

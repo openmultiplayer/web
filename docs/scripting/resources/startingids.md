@@ -4,6 +4,7 @@ description: Everything like objects, players or vehicles use IDs. Some IDs star
 sidebar_label: Starting IDs
 ---
 
+This page contains all of the starting IDs for numerous entities.  
 Everything like objects, players or vehicles use IDs. Some IDs start with 0, others start with 1.
 
 | Type                      | Starting ID |

@@ -4,7 +4,7 @@ title: "Bone IDs"
 
 :::note
 
-To be used with [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject).
+This page contains all of the bone IDs used by [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject).
 
 :::
 

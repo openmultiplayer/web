@@ -2,15 +2,15 @@
 title: "Svar Types"
 ---
 
-Types of server variables, to be used in [GetSVarType](../functions/GetSVarType)
+:::info
 
----
+Types of server variables (also called svar types) used by [GetSVarType](../functions/GetSVarType).
 
-| Type                  | ID  |
-| --------------------- | --- |
-| SERVER_VARTYPE_NONE   | 0   |
-| SERVER_VARTYPE_INT    | 1   |
-| SERVER_VARTYPE_STRING | 2   |
-| SERVER_VARTYPE_FLOAT  | 3   |
+:::
 
----
+| ID | Definition            |
+| -- | --------------------- |
+| 0  | SERVER_VARTYPE_NONE   |
+| 1  | SERVER_VARTYPE_INT    |
+| 2  | SERVER_VARTYPE_STRING |
+| 3  | SERVER_VARTYPE_FLOAT  |

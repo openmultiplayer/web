@@ -10,7 +10,7 @@ Menus look very complicated and difficult to script for the most players, althou
 
 ## First menu steps
 
-First we have to create a menu. The prefix before is `Menu:` this makes the variable the correct [tag](../scripting/language/tags). There are different types for different uses such as `Float:` `bool:` `Text3D:` etc. Write the following code near the top of your script:
+First we have to create a menu. The prefix before is `Menu:` this makes the variable the correct [tag](../scripting/language/Tags). There are different types for different uses such as `Float:` `bool:` `Text3D:` etc. Write the following code near the top of your script:
 
 ```c
 new Menu:teleportmenu;

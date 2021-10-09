@@ -4,7 +4,7 @@ title: Camera Modes
 
 ## Description
 
-A list of possible camera modes to be used with [GetPlayerCameraMode](../functions/GetPlayerCameraMode).
+The following camera modes are used by [GetPlayerCameraMode](../functions/GetPlayerCameraMode).
 
 :::note
 
@@ -12,26 +12,26 @@ There might still be more usable IDs hidden away in the game and some IDs are us
 
 :::
 
-## List
+## List of available camera modes
 
-| ID  | Mode                                                                                                                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 3   | Train/tram camera.                                                                                                              |
-| 4   | Follow ped (normal behind player camera).                                                                                       |
-| 7   | Sniper aiming.                                                                                                                  |
-| 8   | Rocket Launcher aiming.                                                                                                         |
-| 15  | Fixed camera (non-moving) - used for Pay 'n' Spray, chase camera, tune shops, entering buildings, buying food etc.              |
-| 16  | Vehicle front camera, bike side camera.                                                                                         |
-| 18  | Normal car (+skimmer+helicopter+airplane), several variable distances.                                                          |
-| 22  | Normal boat camera.                                                                                                             |
-| 46  | Camera weapon aiming.                                                                                                           |
-| 51  | Heat-seeking Rocket Launcher aiming.                                                                                            |
-| 53  | Aiming any other weapon.                                                                                                        |
-| 55  | Vehicle passenger drive-by camera.                                                                                              |
-| 56  | Chase camera: helicopter/bird view.                                                                                             |
-| 57  | Chase camera: ground camera, zooms in very quickly. (Similar to 56, but on the ground.)                                         |
-| 58  | Chase camera: horizontal flyby past vehicle.                                                                                    |
-| 59  | Chase camera (for air vehicles only): ground camera, looking up to the air vehicle.                                             |
-| 62  | Chase camera (for air vehicles only): vertical flyby past air vehicle.                                                          |
-| 63  | Chase camera (for air vehicles only): horizontal flyby past air vehicle (similar to 58 and 62).                                 |
-| 64  | Chase camera (for air vehicles only): camera focused on pilot, similar to pressing LOOK_BEHIND key on foot, but in air vehicle. |
+| ID  | Name from game files   | Description                                                                                                                    |
+| --- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| 3   | MODE_BEHINDCAR         | Train/tram camera                                                                                                              |
+| 4   | MODE_FOLLOWPED         | Follow ped (normal behind player camera), several variable distances                                                           |
+| 7   | MODE_SNIPER            | Sniper aiming (sniper scope)                                                                                                   |
+| 8   | MODE_ROCKETLAUNCHER    | Rocket Launcher aiming (rocket launcher scope)                                                                                 |
+| 15  | MODE_FIXED             | Fixed camera (non-moving) - used for garages, chase camera, entering buildings, buying food etc                                |
+| 16  | MODE_1STPERSON         | Vehicle front camera, bike side camera                                                                                         |
+| 18  | MODE_CAM_ON_A_STRING   | Normal car (+ skimmer + helicopter + airplane), several variable distances                                                     |
+| 22  | MODE_BEHINDBOAT        | Normal boat camera                                                                                                             |
+| 46  | MODE_CAMERA            | Weapon aiming (weapon scope)                                                                                                   |
+| 51  | MODE_ROCKETLAUNCHER_HS | Heat-seeking Rocket Launcher aiming                                                                                            |
+| 53  | MODE_AIMWEAPON         | Aiming any other weapon                                                                                                        |
+| 55  | MODE_AIMWEAPON_FROMCAR | Vehicle passenger aiming camera (drive by as a player)                                                                         |
+| 56  | MODE_DW_HELI_CHASE     | Chase camera: helicopter/bird view                                                                                             |
+| 57  | MODE_DW_CAM_MAN        | Chase camera: ground camera, zooms in quite quickly and pan to the vehicle                                                     |
+| 58  | MODE_DW_BIRDY          | Chase camera: horizontal flyby past vehicle                                                                                    |
+| 59  | MODE_DW_PLANE_SPOTTER  | Chase camera (for air vehicles only): ground camera, looking up to the air vehicle                                             |
+| 62  | MODE_DW_PLANECAM1      | Chase camera (for air vehicles only): vertical flyby past air vehicle                                                          |
+| 63  | MODE_DW_PLANECAM2      | Chase camera (for air vehicles only): horizontal flyby past air vehicle (similar to 58 and 62)                                 |
+| 64  | MODE_DW_PLANECAM3      | Chase camera (for air vehicles only): camera focused on pilot, similar to pressing LOOK_BEHIND key on foot, but in air vehicle |

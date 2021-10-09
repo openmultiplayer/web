@@ -2,10 +2,14 @@
 title: Marker Modes
 ---
 
-To be used with [ShowPlayerMarkers](../functions/ShowPlayerMarkers).
+:::info
 
-```c
-PLAYER_MARKERS_MODE_OFF        (0)
-PLAYER_MARKERS_MODE_GLOBAL     (1)
-PLAYER_MARKERS_MODE_STREAMED   (2)
-```
+Here you can find all of the marker modes used by [ShowPlayerMarkers](../functions/ShowPlayerMarkers).
+
+:::
+
+|  ID   | Definition |
+| ------- | ----------- |
+| 0  | PLAYER_MARKERS_MODE_OFF |
+| 1 | PLAYER_MARKERS_MODE_GLOBAL |
+| 2  | PLAYER_MARKERS_MODE_STREAMED |
