@@ -5,8 +5,7 @@ description: A list of Material Text Sizes
 
 :::info
 
-There are two kinds of parameters for [SetObjectMaterialText](../functions/SetObjectMaterialText) - material text alignments and material text sizes.  
-Text sizes are listed on this page.
+There are two kinds of parameters for [SetObjectMaterialText](../functions/SetObjectMaterialText) - material text alignments and material text sizes. Text sizes are listed on this page.
 
 :::
 
