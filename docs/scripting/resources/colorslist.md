@@ -12,12 +12,16 @@ _RR_ is the red part of the color, _GG_ the green and _BB_ the blue. _AA_ is the
 
 For the Hex code for these colors, go to the [Hex colors](../resources/hex-colors) page.
 
+---
+  
 ### Alpha values (transparency)
 
 The following images display the effect of transparency values used with a white quare under the player marker and left to the saving floppy icon. Increments of 0x11 (decimal 17) are used for demonstration, but of course you can use any value.
 
 ![Image:trans_matrix.png](/images/colorList/transparency/trans_matrix.png)
 
+---
+  
 ### Doing math
 
 Since colors are just numbers it is possible to calculate with them, although it may not always make sense. For example, it is possible to adjust the player's radar marker visibility (see above) while keeping their current color the same, regardless of what is is.
@@ -35,6 +39,8 @@ SetPlayerMarkerVisibility(playerid, alpha = 0xFF)
 }
 ```
 
+---
+  
 ### Convert string to value with pawn
 
 Since the colors are just numbers you have to convert them sometimes from an input string "RRGGBBAA" to its number. This can be done using sscanf or the following function:
@@ -62,6 +68,8 @@ stock HexToInt(string[])
 
 Use HexToInt("RRGGBBAA") and you'll get a usable number as result for [SetPlayerColor](../functions/SetPlayerColor).
 
+---
+  
 ### Color embedding
 
 :::tip
@@ -80,6 +88,8 @@ This type of color embedding does not work in textdraws. See [GameTextStyle](../
 
 :::
 
+---
+  
 #### Example
 
 ```c
@@ -90,6 +100,8 @@ Hello this is green and this is red
 
 ![Image:Example1.png](/images/colorList/Example1.png)
 
+---
+  
 #### Another example
 
 ![Image:Cembed.png](/images/colorList/Cembed.png)  
@@ -117,6 +129,8 @@ SendClientMessage(playerid, -1, "This is white and {"COLOR_RED_EMBED"}this is re
 
 The second example would be better as is it clearer that embedding is used.
 
+---
+  
 #### Using GetPlayerColor
 
 To use a player's color as an embedded color, you must first remove the alpha value. To do this, perform a logical right shift.
@@ -131,6 +145,8 @@ The %x is the placeholder for hexadecimal values, the 6 ensures that the output 
 
 The colors used in color embedding are not like normal hex colors in Pawn. There is no '0x' prefix and no alpha value (last 2 digits).
 
+---
+  
 ### Color Pickers
 
 - [SA-MP Colorpicker v1.1.0](http://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
@@ -139,6 +155,8 @@ The colors used in color embedding are not like normal hex colors in Pawn. There
 - [Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
 - [Color Scheme Designer](http://colorschemedesigner.com/)
 
+---
+  
 ## GameText
 
 For GameText colors you can use special tags to set the following text to a specific color.
@@ -174,6 +192,8 @@ Game text colour tags can be used to form different colours easily. The below co
 ~p~~h~             medium pink
 ```
 
+---
+  
 ### Example
 
 ```c
