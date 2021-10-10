@@ -52,7 +52,7 @@ Jika Anda memiliki 2 monitor, maka ada 3 cara untuk menyelesaikan permasalahan i
 
 ### Mouse saya tidak bekerja setelah keluar dari menu pause
 
-Jika mouse Anda tidak bisa bergerak di dalam game dan bekerja sebagian di menu pause, maka Anda seharusnya mematikan opsi multicore [sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (atur menjadi 0). Menekan Escape secara terus-menerus hingga mouse bergerak mungkin bisa dengan cara ini, namun ini bukan solusi yang cerdik.
+Jika mouse Anda tidak bisa bergerak di dalam game dan bekerja sebagian di menu pause, maka Anda seharusnya mematikan opsi multicore [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (atur menjadi 0). Menekan Escape secara terus-menerus hingga mouse bergerak mungkin bisa dengan cara ini, namun ini bukan solusi yang cerdik.
 
 ### File dinput8.dll menghilang
 
