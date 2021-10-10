@@ -1677,9 +1677,9 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 - [Understanding Strings](http://web-old.archive.org/web/20190420182625/https://forum.sa-mp.com/showthread.php?t=284112) by [\[HiC\]TheKiller](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=23565)
 - [How to use strcmp](http://web-old.archive.org/web/20190419172015/https://forum.sa-mp.com/showthread.php?t=199796) by [Ash.](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=78597)
 - [Beginner's Guide: Single/Two/Multi-dimensional Arrays](http://web-old.archive.org/web/20190419102936/https://forum.sa-mp.com/showthread.php?t=318212) by [iPLEAOMAX](http://web-old.archive.org/web/20190419112304/https://forum.sa-mp.com/member.php?u=122705)
-- [Tips and Tricks](http://web-old.archive.org/web/20190419112018/https://forum.sa-mp.com/showthread.php?t=216730) by [Slice](http://web-old.archive.org/web/20190419111436/https://forum.sa-mp.com/member.php?u=23640)
+- [Tips and Tricks](http://web-old.archive.org/web/20190419112018/https://forum.sa-mp.com/showthread.php?t=216730) by [Slice](https://github.com/oscar-broman)
 - [Code optimization](http://web-old.archive.org/web/20190419205837/https://forum.sa-mp.com/showthread.php?t=571550) by [Misiur](http://web-old.archive.org/web/20190419111434/https://forum.sa-mp.com/member.php?u=55934)
-- [Packed strings](http://web-old.archive.org/web/20190419172431/https://forum.sa-mp.com/showthread.php?t=480529) by Emmet\_
+- [Packed strings](http://web-old.archive.org/web/20190419172431/https://forum.sa-mp.com/showthread.php?t=480529) by [Emmet\_](https://github.com/emmet-jones)
 - [IRC string formatting](https://github.com/myano/jenni/wiki/IRC-String-Formatting) by [myano](https://github.com/myano)
 - [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) by [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
 - [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
