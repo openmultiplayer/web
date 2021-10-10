@@ -52,7 +52,7 @@ title: 常见问题
 
 ### 当我退出暂停菜单后，我的鼠标无法工作
 
-假如你的鼠标在游戏中看起来不能移动，并且在暂停菜单中（部分）可用，你应该禁用多核(multicore)选项[sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (把它设置为 0)。不断地按 Escape 键，直到鼠标再次响应，但这并不是一个完美的解决方案。
+假如你的鼠标在游戏中看起来不能移动，并且在暂停菜单中（部分）可用，你应该禁用多核(multicore)选项[sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (把它设置为 0)。不断地按 Escape 键，直到鼠标再次响应，但这并不是一个完美的解决方案。
 
 ### 文件 dinput8.dll 丢失
 
