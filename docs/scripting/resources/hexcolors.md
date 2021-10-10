@@ -68,14 +68,14 @@ FF
 
 The number 255 is pretty understandable, but what is 'FF'? Let's take a look at both in their exponential notation.
 
+---
+  
 :::caution
 
 **Note** | '^' is to the power of in this case, not the bitwise exclusive operator.
 
 :::
 
----
-  
 ### Decimal (base 10)
 
 ```c
