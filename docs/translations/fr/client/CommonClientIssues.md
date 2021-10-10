@@ -19,7 +19,7 @@ Il faut également que votre jeu soit en version **EU/US v1.0**, les autres vers
 
 ### Je ne vois aucun serveur sur le launcher
 
-Tout d'abord, assurez-vous de suivre le [guide prescrit](https://wiki.sa-mp.com/wiki/Getting_Started) par SA:MP. Si, en dépit du fait d'avoir suivi ce guide à la lettre, vous ne voyez toujours aucun serveur, vous devez autoriser SA:MP sur votre pare-feu.
+Tout d'abord, assurez-vous de suivre le [guide prescrit](https://team.sa-mp.com/wiki/Getting_Started) par SA:MP. Si, en dépit du fait d'avoir suivi ce guide à la lettre, vous ne voyez toujours aucun serveur, vous devez autoriser SA:MP sur votre pare-feu.
 
 Aucun support ne peut être fourni relativement à votre pare-feu tant il y en a.
 
