@@ -22,7 +22,7 @@ tags: []
 | Global 3D Labels<sup>(4)</sup>                                | 1024            |
 | Per-player 3D Text Labels<sup>(4)</sup>                       | 1024            |
 | Chat Bubble String                                            | 144 characters  |
-| SetObjectMaterialText,SetPlayerObjectMaterialText Text length | 2048 characters |
+| [SetObjectMaterialText](../functions/SetObjectMaterialText), [SetPlayerObjectMaterialText](../functions/SetPlayerObjectMaterialText) Text length | 2048 characters |
 | Gangzones                                                     | 1024            |
 | Menus                                                         | 128             |
 | Attached player objects                                       | 10              |
