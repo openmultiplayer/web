@@ -53,7 +53,7 @@ Si tienes 2 monitores, hay 3 maneras de resolverlo:
 
 ### Mi ratón no funciona luego de slair del menú de pausa
 
-Si tu ratón no funciona en el juego y funciona de manera incompleta en el menú de pausa, deberías desactivar la función multinúcleo ("multicore") de tu[sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (Colocala en 0). Pulsar repetidamente la tecla Escape o mantenerla apretada hasta que el ratón responda de nuevo puede funcionar, pero no es una solución definitiva.
+Si tu ratón no funciona en el juego y funciona de manera incompleta en el menú de pausa, deberías desactivar la función multinúcleo ("multicore") de tu[sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (Colocala en 0). Pulsar repetidamente la tecla Escape o mantenerla apretada hasta que el ratón responda de nuevo puede funcionar, pero no es una solución definitiva.
 
 ### El archivo dinput8.dll no existe
 
