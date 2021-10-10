@@ -58,7 +58,7 @@ descripion: Конфигурационный файл сервера.
 | messageholelimit  | int (целочисленный)| 3000  | Нет | Нет| [см. здесь](http://web-old.archive.org/web/20190426212838/https://forum.sa-mp.com/showpost.php?p=2868955&postcount=14).|
 | ackslimit  | int (целочисленный)| 3000  | Нет | Нет| [см. здесь](http://web-old.archive.org/web/20190419211451/https://forum.sa-mp.com/showpost.php?p=2989045&postcount=1).|
 | playertimeout | int (целочисленный)| 10000 | Нет | Нет| Время в миллисекундах, через которое игрок будет отключён, если не посылает никаких пакетов на сервер.  |
-| mtu | int (целочисленный)| 576| Да| Нет| [см. Здесь](https://en.wikipedia.org/wiki/Maximum_transmission_unit).<br /><br />**ПРИМЕЧАНИЕ:** Эта переменная была добавлена в 0.3.8 и не будет работать на предыдущих версиях.|
+| mtu | int (целочисленный)| 576| Да| Нет| [см. здесь](https://en.wikipedia.org/wiki/Maximum_transmission_unit).<br /><br />**ПРИМЕЧАНИЕ:** Эта переменная была добавлена в 0.3.8 и не будет работать на предыдущих версиях.|
 
 ## Logging
 
