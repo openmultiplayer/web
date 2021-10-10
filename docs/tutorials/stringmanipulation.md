@@ -1673,34 +1673,34 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 
 #### Similar tutorials
 
-- [String formatting](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=265433) by [krogsgaard20](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=126724)
-- [Understanding Strings](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=284112) by [\[HiC\]TheKiller](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23565)
-- [How to use strcmp](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=199796) by [Ash.](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=78597)
-- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=318212) by [iPLEAOMAX](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=122705)
-- [Tips and Tricks](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=216730) by [Slice](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23640)
-- [Code optimization](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=571550) by [Misiur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=55934)
-- [Packed strings](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=480529) by Emmet\_
+- [String formatting](http://web-old.archive.org/web/20190419210950/https://forum.sa-mp.com/showthread.php?t=265433) by [krogsgaard20](http://web-old.archive.org/web/20190421052543/https://forum.sa-mp.com/member.php?u=126724)
+- [Understanding Strings](http://web-old.archive.org/web/20190420182625/https://forum.sa-mp.com/showthread.php?t=284112) by [\[HiC\]TheKiller](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=23565)
+- [How to use strcmp](http://web-old.archive.org/web/20190419172015/https://forum.sa-mp.com/showthread.php?t=199796) by [Ash.](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=78597)
+- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](http://web-old.archive.org/web/20190419102936/https://forum.sa-mp.com/showthread.php?t=318212) by [iPLEAOMAX](http://web-old.archive.org/web/20190419112304/https://forum.sa-mp.com/member.php?u=122705)
+- [Tips and Tricks](http://web-old.archive.org/web/20190419112018/https://forum.sa-mp.com/showthread.php?t=216730) by [Slice](https://github.com/oscar-broman)
+- [Code optimization](http://web-old.archive.org/web/20190419205837/https://forum.sa-mp.com/showthread.php?t=571550) by [Misiur](http://web-old.archive.org/web/20190419111434/https://forum.sa-mp.com/member.php?u=55934)
+- [Packed strings](http://web-old.archive.org/web/20190419172431/https://forum.sa-mp.com/showthread.php?t=480529) by [Emmet\_](https://github.com/emmet-jones)
 - [IRC string formatting](https://github.com/myano/jenni/wiki/IRC-String-Formatting) by [myano](https://github.com/myano)
 - [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) by [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
 - [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
-- [An in-depth look at binary and binary operators](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=177523) by [Kyosaur](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=23990)
+- [An in-depth look at binary and binary operators](http://web-old.archive.org/web/20190419095051/https://forum.sa-mp.com/showthread.php?t=177523) by [Kyosaur](http://web-old.archive.org/web/20190419205838/https://forum.sa-mp.com/member.php?u=23990)
 
 #### Related includes/plugins/contributers
 
-- [Westie](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=56481)'s [strlib](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=85697)
+- [Westie](http://web-old.archive.org/web/20190419205841/https://forum.sa-mp.com/member.php?u=56481)'s [strlib](http://web-old.archive.org/web/20200923234356/https://forum.sa-mp.com/showthread.php?t=85697)
 - [Slice](https://github.com/oscar-broman)'s [strlib](https://github.com/oscar-broman/strlib)
 - [Slice](https://github.com/oscar-broman)'s [formatex](https://github.com/Southclaws/formatex)
-- [corne](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/member.php?u=98345)'s [y_stringhash](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=571305)
-- [Y-Less](https://github.com/Y-Less)'s [sscanf](https://web.archive.org/web/20190424140855/http://forum.sa-mp.com/showthread.php?t=570927)
+- [corne](http://web-old.archive.org/web/20190419205840/https://forum.sa-mp.com/member.php?u=98345)'s [y_stringhash](http://web-old.archive.org/web/20190419205838/https://forum.sa-mp.com/showthread.php?t=571305)
+- [Y-Less](https://github.com/Y-Less)'s [sscanf](https://github.com/maddinat0r/sscanf)
 
 #### References
 
-- [GTA San Andreas](http://www.rockstargames.com/sanandreas/)
+- [GTA San Andreas](https://www.rockstargames.com/sanandreas/)
 - [Textdraw](../scripting/resources/textdraws#what-is-a-textdraw)
 - [Gametext](../scripting/functions/GameTextForPlayer)
 - [Limitations](../scripting/resources/limits)
 - [ASCII](https://en.wikipedia.org/wiki/ASCII)
-- [ASCII table](http://www.asciitable.com/)
+- [ASCII table](https://www.asciitable.com/)
 - [Pawn Tutorial](https://wiki.alliedmods.net/Pawn_Tutorial)
 - [Control Structures](../scripting/language/ControlStructures)
 - [Null character](https://en.wikipedia.org/wiki/Null_character)
@@ -1713,7 +1713,7 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 - [r/programmerhumor](https://www.reddit.com/r/ProgrammerHumor/)
 - [Newline](https://en.wikipedia.org/wiki/Newline)
 - [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)
-- [Bobby table](http://bobby-tables.com/about)
+- [Bobby table](https://bobby-tables.com/about)
 - [strfind](../scripting/functions/strfind)
 - [format](../scripting/functions/format)
 - [Bitwise logical shift](https://en.wikipedia.org/wiki/Logical_shift)

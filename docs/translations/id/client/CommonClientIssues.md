@@ -12,7 +12,7 @@ San Andreas Multi-player **bukan** program stand-alone! Program ini menambahkan 
 
 ### Saya tidak bisa lihat server apapun di penjelajah SA-MP
 
-Pertama, pastikan Anda telah mengikuti prosedur di [Panduan cepat](https://wiki.sa-mp.com/wiki/Getting_Started). Jika Anda telah mengikut instruksinya dan tidak bisa melihat server apapun, Anda harus mengijinkan akses SA-MP melalui firewall Anda. Sayangnya, dikarenakan besarnya jumlah aplikasi firewall yang tersedia, kami tidak bisa menawarkan bantuan lebih lanjut - kami sarankan untuk mengunjungi situs jaringan manufaktur atau coba melakukan pencarian di Google. Dan juga pastikan Anda telah menggunakan versi SA:MP terbaru.
+Pertama, pastikan Anda telah mengikuti prosedur di [Panduan cepat](https://team.sa-mp.com/wiki/Getting_Started). Jika Anda telah mengikut instruksinya dan tidak bisa melihat server apapun, Anda harus mengijinkan akses SA-MP melalui firewall Anda. Sayangnya, dikarenakan besarnya jumlah aplikasi firewall yang tersedia, kami tidak bisa menawarkan bantuan lebih lanjut - kami sarankan untuk mengunjungi situs jaringan manufaktur atau coba melakukan pencarian di Google. Dan juga pastikan Anda telah menggunakan versi SA:MP terbaru.
 
 ### Hanya memuat Single Player, bukan memuat SA-MP
 
@@ -52,7 +52,7 @@ Jika Anda memiliki 2 monitor, maka ada 3 cara untuk menyelesaikan permasalahan i
 
 ### Mouse saya tidak bekerja setelah keluar dari menu pause
 
-Jika mouse Anda tidak bisa bergerak di dalam game dan bekerja sebagian di menu pause, maka Anda seharusnya mematikan opsi multicore [sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (atur menjadi 0). Menekan Escape secara terus-menerus hingga mouse bergerak mungkin bisa dengan cara ini, namun ini bukan solusi yang cerdik.
+Jika mouse Anda tidak bisa bergerak di dalam game dan bekerja sebagian di menu pause, maka Anda seharusnya mematikan opsi multicore [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (atur menjadi 0). Menekan Escape secara terus-menerus hingga mouse bergerak mungkin bisa dengan cara ini, namun ini bukan solusi yang cerdik.
 
 ### File dinput8.dll menghilang
 

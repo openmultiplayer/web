@@ -12,7 +12,7 @@ Ang San Andreas Multiplayer ay **hindi** stand-alone program! Nagdadag-dag laman
 
 ### Wala akong makitang server sa SA:MP client ko!
 
-Una, dapat ay siguraduhing sinusundan ang tamang proseso na nakalapat sa [Quick-start guide](https://wiki.sa-mp.com/wiki/Getting_Started). Kung sinundan ito, at hindi parin nakikita ang mga servers sa iyong SA:MP client, kaialangan mong i-allow ang SA:MP sa iyong firewall. Sa kasamaang palad, dahil sa dami ng availanle na firewall softwares, hindi namin kayo matutulungan dito - pero suggest namin na maghanap kayo sa website ng manufacturer o maghanap ng solusyon sa Google search. At wag kalimutin na updated ang inyong SA:MP client sa latest na version!
+Una, dapat ay siguraduhing sinusundan ang tamang proseso na nakalapat sa [Quick-start guide](https://team.sa-mp.com/wiki/Getting_Started). Kung sinundan ito, at hindi parin nakikita ang mga servers sa iyong SA:MP client, kaialangan mong i-allow ang SA:MP sa iyong firewall. Sa kasamaang palad, dahil sa dami ng availanle na firewall softwares, hindi namin kayo matutulungan dito - pero suggest namin na maghanap kayo sa website ng manufacturer o maghanap ng solusyon sa Google search. At wag kalimutin na updated ang inyong SA:MP client sa latest na version!
 
 ### Singleplayer loads instead of SA:MP
 
@@ -52,7 +52,7 @@ Kung meron kang dalawang monitor sa PC merong tatlong paraan para maayos ito:
 
 ### Hindi na gumagana ang aking mouse katapos kong umalis sa pause menu.
 
-Kung hindi na gumagana o nag freeze ang iyong mouse katapos umalis sa game menu pero gumagana ito sa game menu, kailangan mong i-disable ang multicore option [sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (set mo ito sa 0). Tuloy-tuloy na pag pindot sa `ESC` button hanggang gumana ang mouse ay maaaring maging solusyon, pero hindi ito malinis na solusyon at matagal itong gawin.
+Kung hindi na gumagana o nag freeze ang iyong mouse katapos umalis sa game menu pero gumagana ito sa game menu, kailangan mong i-disable ang multicore option [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (set mo ito sa 0). Tuloy-tuloy na pag pindot sa `ESC` button hanggang gumana ang mouse ay maaaring maging solusyon, pero hindi ito malinis na solusyon at matagal itong gawin.
 
 ### The file dinput8.dll is missing
 

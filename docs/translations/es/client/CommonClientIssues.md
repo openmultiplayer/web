@@ -8,32 +8,32 @@ title: Common Issues
 
 ### Tengo constantemente el error "San Andreas cannot be found"
 
-¡San Andreas Multiplayer **NO ES** un programa independiente! Solo añade funciones multijugador al GTA: San Andreas (y, por lo tanto, necesitas GTA:SA instalado en tu computadora). Tiene que ser, además, la versión **EU/US v1.0**, ya que otras versiones como 2.0, versiones de Steam o versiones de Direct2Drive no funcionarán. [Cliquea aquí para descargar un parche para downgradear tu GTA:SA a la version 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+Â¡San Andreas Multiplayer **NO ES** un programa independiente! Solo aÃ±ade funciones multijugador al GTA: San Andreas (y, por lo tanto, necesitas GTA:SA instalado en tu computadora). Tiene que ser, ademÃ¡s, la versiÃ³n **EU/US v1.0**, ya que otras versiones como 2.0, versiones de Steam o versiones de Direct2Drive no funcionarÃ¡n. [Cliquea aquÃ­ para descargar un parche para downgradear tu GTA:SA a la version 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
 
-### No veo ningún servidor en el buscador de servidores de SA:MP.
+### No veo ningÃºn servidor en el buscador de servidores de SA:MP.
 
-Primero que nada, asegúrate de seguir los procedimientos previstos en la [Guía de inicio rápido](https://wiki.sa-mp.com/wiki/Getting_Started). Si el problema persiste aún si verificaste lo anterior, debes permitir el acceso de SA:MP a través de tu cortafuegos. Desafortunadamente, debido a la gran cantidad de software cortafuego que existe, no podemos dar soporte con esto, pero sugerimos el revisar en el sitio del programa (o realizar una busqueda ante nuestro todo poderoso Google). Asegúrate además de tener la última versión de SA:MP.
+Primero que nada, asegÃºrate de seguir los procedimientos previstos en la [GuÃ­a de inicio rÃ¡pido](https://team.sa-mp.com/wiki/Getting_Started). Si el problema persiste aÃºn si verificaste lo anterior, debes permitir el acceso de SA:MP a travÃ©s de tu cortafuegos. Desafortunadamente, debido a la gran cantidad de software cortafuego que existe, no podemos dar soporte con esto, pero sugerimos el revisar en el sitio del programa (o realizar una busqueda ante nuestro todo poderoso Google). AsegÃºrate ademÃ¡s de tener la Ãºltima versiÃ³n de SA:MP.
 
 ### El modo un jugador inicia en vez de SA:MP
 
 :::warning
 
-No se supone que debas ver las opciones del modo un jugador (Iniciar Partida, Cargar Partida, etcétera) - SA:MP debería iniciarse por si solo y no presentar estas opciones. Si ves la opción de "Inciar Partida", se inició el modo de un jugador en ves de SA:MP.
+No se supone que debas ver las opciones del modo un jugador (Iniciar Partida, Cargar Partida, etcÃ©tera) - SA:MP deberÃ­a iniciarse por si solo y no presentar estas opciones. Si ves la opciÃ³n de "Inciar Partida", se iniciÃ³ el modo de un jugador en ves de SA:MP.
 
 :::
 
-El modo un jugador puede iniciarse por 2 razones: Tienes SA:MP instalado en la carpeta incorrecta o no tienes una versión compatible de GTA:SA. Si tienes la versión incorrecta puedes reallizar un downgrade a tu juego utilizando el downgrader de GTA:SA. Cliquea [aquí](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) para descargarlo.
+El modo un jugador puede iniciarse por 2 razones: Tienes SA:MP instalado en la carpeta incorrecta o no tienes una versiÃ³n compatible de GTA:SA. Si tienes la versiÃ³n incorrecta puedes reallizar un downgrade a tu juego utilizando el downgrader de GTA:SA. Cliquea [aquÃ­](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) para descargarlo.
 
-Existen ciertos casos en el que el menú del modo un jugador será mostrado, pero SA:MP habrá correctamente inciado. Para arreglar esto simplemente tienes que seleccionar un elemento en el menú, seguido de tocarla tecla Escape para salir de este. De esta forma, SA:MP procederá a cargar.
+Existen ciertos casos en el que el menÃº del modo un jugador serÃ¡ mostrado, pero SA:MP habrÃ¡ correctamente inciado. Para arreglar esto simplemente tienes que seleccionar un elemento en el menÃº, seguido de tocarla tecla Escape para salir de este. De esta forma, SA:MP procederÃ¡ a cargar.
 
 ### Obtengo el error "Unacceptable Nickname" cuando conecto a un servidor.
 
 
-Asegúrate de que no estas usando ningun carácter no permitido (solo puedes utilizar números del 0-9, letras de la A a la Z, \[\], (), \$, @, ., \_ y =), además de asegurarte que tu nombre no supera los 20 carácteres. Esto también podría ser causado cuando un jugador está conectado en el servidor con el mismo nombre que tú (que puede pasar si reconectas a un servidor de manera rápida antes de que el servidor registre tu desconexión). Un servidor de SA:MP corriendo en Windows durante mas de 50 días seguidos puede también ocasionar este bug.
+AsegÃºrate de que no estas usando ningun carÃ¡cter no permitido (solo puedes utilizar nÃºmeros del 0-9, letras de la A a la Z, \[\], (), \$, @, ., \_ y =), ademÃ¡s de asegurarte que tu nombre no supera los 20 carÃ¡cteres. Esto tambiÃ©n podrÃ­a ser causado cuando un jugador estÃ¡ conectado en el servidor con el mismo nombre que tÃº (que puede pasar si reconectas a un servidor de manera rÃ¡pida antes de que el servidor registre tu desconexiÃ³n). Un servidor de SA:MP corriendo en Windows durante mas de 50 dÃ­as seguidos puede tambiÃ©n ocasionar este bug.
 
 ### La pantalla se queda en "Connecting to  IP:Port..."
 
-Esto puede ser causado porque el servidor no esta encendido. Si tienes este error con mas de 1 servidor y estas seguro que estos servidores no están apagados, deshabilita tu cortafuegos y comprueba si el error persiste. Caso contrario, reconfigura tu cortafuegos para aceptar el tráfico entrante-saliente de SA:MP. Puede ser también que estes ejecutando una versión obsoleta de SA:MP - Puedes encontrar la versión más reciente [Aquí](http://sa-mp.com/download.php).
+Esto puede ser causado porque el servidor no esta encendido. Si tienes este error con mas de 1 servidor y estas seguro que estos servidores no estÃ¡n apagados, deshabilita tu cortafuegos y comprueba si el error persiste. Caso contrario, reconfigura tu cortafuegos para aceptar el trÃ¡fico entrante-saliente de SA:MP. Puede ser tambiÃ©n que estes ejecutando una versiÃ³n obsoleta de SA:MP - Puedes encontrar la versiÃ³n mÃ¡s reciente [AquÃ­](http://sa-mp.com/download.php).
 
 ### Tengo un GTA:SA modificado y SA:MP no inicia
 
@@ -41,24 +41,24 @@ Si SA:MP no inicia, intenta remover las modificaciones instaladas.
 
 ### Cuando ejecuto GTA con SA:MP no sucede nada (no inicia)
 
-Borra gta_sa.set de tu carpeta "GTA San Andreas User Files", además de asegurarte de que no tienes ningun cheat o modificaciones.
+Borra gta_sa.set de tu carpeta "GTA San Andreas User Files", ademÃ¡s de asegurarte de que no tienes ningun cheat o modificaciones.
 
-### El juego crashea (se cierra) cuando un vehículo explota
+### El juego crashea (se cierra) cuando un vehÃ­culo explota
 
 Si tienes 2 monitores, hay 3 maneras de resolverlo:
 
-1. Deshabilita tu segundo monitor cuando juegues SA:MP. (Quizás no sea lo mejor, pero es lo más rapido si no te importa el no poder utilizar el otro monitor).
-2. Configura "Efectos Visuales" a Bajo (Escape > Opciones > Configuración de pantalla > Avanzados).
-3. Renombra tu carpeta de GTA:SA (ejemplo "GTA San Andreas2") (Esto puede funcionar a veces, de todas maneras a veces puede dejar de funcionar nuevamente así que tienes que renombrarla de otra forma).
+1. Deshabilita tu segundo monitor cuando juegues SA:MP. (QuizÃ¡s no sea lo mejor, pero es lo mÃ¡s rapido si no te importa el no poder utilizar el otro monitor).
+2. Configura "Efectos Visuales" a Bajo (Escape > Opciones > ConfiguraciÃ³n de pantalla > Avanzados).
+3. Renombra tu carpeta de GTA:SA (ejemplo "GTA San Andreas2") (Esto puede funcionar a veces, de todas maneras a veces puede dejar de funcionar nuevamente asÃ­ que tienes que renombrarla de otra forma).
 
-### Mi ratón no funciona luego de slair del menú de pausa
+### Mi ratÃ³n no funciona luego de slair del menÃº de pausa
 
-Si tu ratón no funciona en el juego y funciona de manera incompleta en el menú de pausa, deberías desactivar la función multinúcleo ("multicore") de tu[sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (Colocala en 0). Pulsar repetidamente la tecla Escape o mantenerla apretada hasta que el ratón responda de nuevo puede funcionar, pero no es una solución definitiva.
+Si tu ratÃ³n no funciona en el juego y funciona de manera incompleta en el menÃº de pausa, deberÃ­as desactivar la funciÃ³n multinÃºcleo ("multicore") de tu[sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (Colocala en 0). Pulsar repetidamente la tecla Escape o mantenerla apretada hasta que el ratÃ³n responda de nuevo puede funcionar, pero no es una soluciÃ³n definitiva.
 
 ### El archivo dinput8.dll no existe
 
 Este problema puede aparecer cuando DirectX no esta instalado correctamente. Intenta reinstalarlo (no olvides de reiniciar tu PC). Si el problema persiste, solo ve a C:\\Windows\\System32 y copia el archivo dinput.dll a tu carpeta de GTA.
 
-### No puedo ver los nombres de los demás jugadores
+### No puedo ver los nombres de los demÃ¡s jugadores
 
-Por favor comprender que algunos servidores tienen sus nametags desactivados de forma global. De todas formas, este problema puede ocurrir en computadores con procesadores que incluyen gráficos integrados Intel HD (Que no estarían exactamente hechos para gaming, aún así). Desafortunadamente, la causa exacta es desconocida y no parece haber ninguna forma de arreglarlo hasta ahora. Una solución sería el instalar un procesador gráfico dedicado (tarjeta de video) en tu computadora, siempre y cuando sea posible y tu presupuesto monetario te lo permita.
+Por favor comprender que algunos servidores tienen sus nametags desactivados de forma global. De todas formas, este problema puede ocurrir en computadores con procesadores que incluyen grÃ¡ficos integrados Intel HD (Que no estarÃ­an exactamente hechos para gaming, aÃºn asÃ­). Desafortunadamente, la causa exacta es desconocida y no parece haber ninguna forma de arreglarlo hasta ahora. Una soluciÃ³n serÃ­a el instalar un procesador grÃ¡fico dedicado (tarjeta de video) en tu computadora, siempre y cuando sea posible y tu presupuesto monetario te lo permita.

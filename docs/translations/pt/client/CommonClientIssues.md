@@ -12,7 +12,7 @@ San Andreas Multi-player **NÃO** é um programa "stand-alone" (que funciona soz
 
 ### Não consigo ver nenhum servidor no aplicativo do SA-MP
 
-Primeiro, garanta que está seguindo os procedimetnos prescritos no [Quick-start guide](https://wiki.sa-mp.com/wiki/Getting_Started). Se você seguiu como descrito, e ainda não pode ver nenhum servidor, você precisa permitir que o SA:MP tenha acesso através do seu firewall. Infelizmente, devido ao grande número de firewalls disponíveis, não podemos oferecer suporte para esta ocasião, sugerimos procurar no site dos desenvolvedores ou pesquisar no Google. Também tenha certeza de estar usando a última versão do SA:MP!
+Primeiro, garanta que está seguindo os procedimetnos prescritos no [Quick-start guide](https://team.sa-mp.com/wiki/Getting_Started). Se você seguiu como descrito, e ainda não pode ver nenhum servidor, você precisa permitir que o SA:MP tenha acesso através do seu firewall. Infelizmente, devido ao grande número de firewalls disponíveis, não podemos oferecer suporte para esta ocasião, sugerimos procurar no site dos desenvolvedores ou pesquisar no Google. Também tenha certeza de estar usando a última versão do SA:MP!
 
 ### O modo single-player abre ao invés do multiplayer
 
@@ -52,7 +52,7 @@ Se você usa 2 monitores então há 3 maneiras de resolver isso:
 
 ### Meu mouse não funciona após sair do menu de pausa
 
-Você deve desativar a opção multicre do [sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (coloque em 0)
+Você deve desativar a opção multicre do [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (coloque em 0)
 
 ### O arquivo dinput8.dll está faltando
 
