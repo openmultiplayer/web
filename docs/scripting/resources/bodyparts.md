@@ -4,7 +4,7 @@ title: Body parts
 
 :::info
 
-The following entries are body part IDs which can be used by [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamags), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) and [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
+The following entries are body part IDs which can be used by [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) and [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
 
 :::
 
