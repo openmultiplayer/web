@@ -2,8 +2,9 @@ import useSWR from "swr";
 
 import { apiSWR } from "src/fetcher/fetcher";
 import { Link } from "src/types/_generated_GitHub";
-import { User } from "src/types/_generated_User";
+import { User, UserSchema } from "src/types/_generated_User";
 import { APIError } from "src/types/_generated_Error";
+import { LinkSchema } from "src/types/_generated_Discord";
 
 type Props = {
   bg: string;
@@ -12,8 +13,14 @@ type Props = {
 };
 
 const OAuthButton = ({ bg, icon, type }: Props) => {
-  const { data: link } = useSWR<Link>(`/auth/${type}/link`, apiSWR);
-  const { data, error } = useSWR<User, APIError>("/users/self", apiSWR);
+  const { data: link } = useSWR<Link, APIError>(
+    [`/auth/${type}/link`, LinkSchema],
+    apiSWR
+  );
+  const { data, error } = useSWR<User, APIError>(
+    ["/users/self", UserSchema],
+    apiSWR
+  );
 
   let text: string;
   let href = link?.url;

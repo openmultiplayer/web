@@ -1,8 +1,8 @@
 import { GetServerSidePropsContext } from "next";
 
 import { API_ADDRESS } from "src/config";
-import { APIError } from "src/types/_generated_Error";
-import { Result } from "./result";
+import { APIErrorSchema } from "src/types/_generated_Error";
+import { ZodSchema } from "zod";
 
 const success = (code: number) => code >= 200 && code <= 299;
 
@@ -11,8 +11,22 @@ const success = (code: number) => code >= 200 && code <= 299;
 // This is necessary because the SSP version returns a Result type but SWR
 // doesn't play well with this API design so this function simply immediately
 // unwraps the result (throwing if error) and otherwise returns the result.
-export function apiSWR<T, E>(path: string) {
-  return apiSSP<T, E>(path).then((r) => r.unwrap());
+export async function apiSWR<T>(
+  path: string,
+  schema: ZodSchema<T>
+): Promise<T | (T & { headers: Headers })> {
+  return apiSSP<T>(path, { schema });
+}
+
+export interface APIOptions<T> {
+  // pass ctx from GSSP for server side cookies
+  ctx?: GetServerSidePropsContext;
+
+  // encode headers into response object under `headers` key
+  responseHeaders?: boolean;
+
+  // the response schema
+  schema?: ZodSchema<T>;
 }
 
 // For use in getServerSideProps.
@@ -23,36 +37,41 @@ export function apiSWR<T, E>(path: string) {
 //
 // When being called from getServerSideProps, the request context may be passed
 // in so cookies are passed along for authentication.
-export async function apiSSP<T, E extends APIError = APIError>(
+export async function apiSSP<T>(
   path: string,
-  init?: RequestInit,
-  ctx?: GetServerSidePropsContext, // pass ctx from GSSP for server side cookies
-  responseHeaders?: boolean // encode headers into response object under `headers` key
-): Promise<Result<T, E>> {
+  opts?: RequestInit & APIOptions<T>
+): Promise<T | (T & { headers: Headers })> {
   // merge any specified headers with an additional cookie header - if given
   const headers = new Headers({
     ...{ "Content-Type": "application/json" },
-    ...init?.headers,
-    ...(ctx?.req.headers.cookie && { cookie: ctx?.req.headers.cookie }),
+    ...opts?.headers,
+    ...(opts?.ctx?.req.headers.cookie && {
+      cookie: opts?.ctx?.req.headers.cookie,
+    }),
   });
 
   const r = await fetch(`${API_ADDRESS}${path}`, {
     mode: "cors",
     credentials: "include",
     headers,
-    ...init,
+    ...opts,
   });
 
-  // TODO: handle empty responses
-  const decoded = await r.json();
+  const raw = await r.json();
+  const decoded: T = opts?.schema?.parse(raw) ?? raw;
 
   if (!success(r.status)) {
-    return Result.withError(decoded);
-  } else {
-    if (responseHeaders) {
-      return Result.withValue({ ...decoded, headers: r.headers });
+    const parsed = APIErrorSchema.safeParse(decoded);
+    if (parsed.success) {
+      throw parsed.data;
     } else {
-      return Result.withValue({ ...decoded });
+      throw new Error(`unknown error: ${r.statusText}: ${r.status}`);
+    }
+  } else {
+    if (opts?.responseHeaders) {
+      return { ...decoded, headers: r.headers };
+    } else {
+      return decoded;
     }
   }
 }
