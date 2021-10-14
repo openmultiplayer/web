@@ -40,16 +40,15 @@ Ada batas 1000 Object (MAX_OBJECTS). Untuk menghindari batasan ini, Anda dapat m
 ## Fungsi Terkait
 
 - [DestroyObject](DestroyObject): Menghapus suatu Object.
-- [IsValidObject](IsValidObject):Memeriksa apakah Object tertentu valid.
+- [IsValidObject](IsValidObject): Memeriksa apakah Object tertentu valid.
 - [MoveObject](MoveObject): Memindahkan suatu Object.
 - [StopObject](StopObject): Menghentikan suatu Object agar tidak bergerak.
-- [SetObjectPos](SetObjectPos):Mengatur posisi suatu Object.
+- [SetObjectPos](SetObjectPos): Mengatur posisi suatu Object.
 - [SetObjectRot](SetObjectRot): Mengatur rotasi suatu Object.
 - [GetObjectPos](GetObjectPos): Mencari Object.
-- [GetObjectRot](GetObjectRot): Periksa rotasi suatu Object.
+- [GetObjectRot](GetObjectRot): Memeriksa rotasi suatu Object.
 - [AttachObjectToPlayer](AttachObjectToPlayer): Menambahkan Object ke Player.
-- [SetObjectMaterialText](SetObjectMaterialText):
-  Mengganti tekstur Object dengan teks.
+- [SetObjectMaterialText](SetObjectMaterialText): Mengganti tekstur Object dengan teks.
 - [SetObjectMaterial](SetObjectMaterial): Mengganti tekstur suatu Object dengan tekstur dari model lain di dalam game.
 - [CreatePlayerObject](CreatePlayerObject): Membuat Object hanya untuk satu pemain.
 - [DestroyPlayerObject](DestroyPlayerObject): Menghapus suatu Object dari Player.
