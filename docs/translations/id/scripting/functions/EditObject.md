@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 Anda dapat menggerakkan kamera saat mengedit dengan menekan dan menahan spasi (atau W di kendaraan) dan menggerakkan mouse Anda.
 :::
 
-## Function Terkait
+## Fungsi Terkait
 
 - [CreateObject](CreateObject): Membuat suatu Object.
 - [DestroyObject](DestroyObject): Menghapus suatu Object.
