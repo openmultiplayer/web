@@ -9,7 +9,7 @@ require (
 	github.com/Southclaws/go-samp-query v1.1.3
 	github.com/Southclaws/qstring v1.1.0
 	github.com/Southclaws/sampctl v0.0.0-20210109143621-2daeb58d756a
-	github.com/Southclaws/supervillain v0.0.0-20210925132636-bc1e67b950a4
+	github.com/Southclaws/supervillain v1.0.0
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/bbalet/stopwords v1.0.0
 	github.com/blevesearch/bleve/v2 v2.1.0

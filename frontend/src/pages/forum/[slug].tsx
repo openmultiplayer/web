@@ -1,3 +1,4 @@
+import { toast } from "@chakra-ui/toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formatRelative } from "date-fns";
 import { map } from "lodash/fp";
@@ -10,7 +11,8 @@ import React, { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import Editor from "rich-markdown-editor";
 import { apiSSP } from "src/fetcher/fetcher";
-import { Post } from "src/types/_generated_Forum";
+import { APIError } from "src/types/_generated_Error";
+import { Post, PostSchema } from "src/types/_generated_Forum";
 import { mutate } from "swr";
 import * as z from "zod";
 
@@ -87,12 +89,14 @@ const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
     setError("");
     const payload = { ...data, body };
 
-    const resp = await apiSSP<Post>(`/forum/${id}`, {
-      method: "POST",
-      body: JSON.stringify(payload),
-    });
-    if (resp.isError()) {
-      const err = resp.error();
+    try {
+      const response = await apiSSP<Post>(`/forum/${id}`, {
+        method: "POST",
+        body: JSON.stringify(payload),
+        schema: PostSchema,
+      });
+    } catch (e) {
+      const err = e as APIError;
       console.error(err);
       setError(err?.message ?? "Unexpected error occurred");
     }
@@ -127,10 +131,19 @@ const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
   );
 };
 
-const Page: FC<Props> = ({ id, posts }) => {
+const Page: FC<Props> = ({ id, posts, error }) => {
   const {
     query: { slug },
   } = useRouter();
+
+  if (error) {
+    return (
+      <p>
+        Unfortunately there was an error while getting the server list! The
+        error message is below: <pre>{error}</pre>
+      </p>
+    );
+  }
 
   // TODO Render markdown client side if applicable.
 
@@ -163,9 +176,28 @@ export async function getServerSideProps(
 ): Promise<GetServerSidePropsResult<Props>> {
   const slug = context?.params?.slug;
 
-  const resp = await apiSSP<Post[]>(`/forum/${slug}`);
-  if (resp.isError()) {
-    const err = resp.error();
+  try {
+    const posts = await apiSSP<Post[]>(`/forum/${slug}`, {
+      schema: PostSchema.array(),
+    });
+
+    const postsWithMarkdown: PostModelWithMarkdown[] = [];
+
+    for (const k in posts) {
+      postsWithMarkdown.push({
+        postModel: posts[k],
+        markdown: await serialize(posts[k].body),
+      });
+    }
+
+    return {
+      props: {
+        id: posts[0].id,
+        posts: postsWithMarkdown,
+      },
+    };
+  } catch (e) {
+    const err = e as APIError;
     console.error(err.error);
     return {
       props: {
@@ -174,32 +206,6 @@ export async function getServerSideProps(
       },
     };
   }
-
-  let posts = resp.value();
-
-  // TODO This is a temporary hacky solution, for some reason this request is returning an object,
-  // even though when you test it manually it returns an array. Possibly an issue with apiSSP.
-  posts = [...Object.values(posts)].sort((a, b) => {
-    const ac = new Date(a.createdAt as string);
-    const bc = new Date(b.createdAt as string);
-    return ac.getTime() - bc.getTime();
-  });
-
-  const postsWithMarkdown: PostModelWithMarkdown[] = [];
-
-  for (const k in posts) {
-    postsWithMarkdown.push({
-      postModel: posts[k],
-      markdown: await serialize(posts[k].body),
-    });
-  }
-
-  return {
-    props: {
-      id: posts[0].id,
-      posts: postsWithMarkdown,
-    },
-  };
 }
 
 export default Page;

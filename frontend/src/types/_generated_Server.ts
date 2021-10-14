@@ -14,11 +14,11 @@ export type Essential = z.infer<typeof EssentialSchema>
 
 export const AllSchema = z.object({
   ip: z.string(),
-  dm: z.string().optional(),
+  dm: z.string().nullable(),
   core: EssentialSchema,
   ru: z.map(z.string(), z.string()).optional(),
-  description: z.string().optional(),
-  banner: z.string().optional(),
+  description: z.string().nullable(),
+  banner: z.string().nullable(),
   active: z.boolean(),
   lastUpdated: z.string(),
 })

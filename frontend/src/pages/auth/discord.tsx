@@ -1,13 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 
 import { apiSSP } from "src/fetcher/fetcher";
+import { APIError } from "src/types/_generated_Error";
 
 type Props = {
   error?: Error;
 };
 
-const Page = ({ error }: Props) => (
+const Page: FC<Props> = ({ error }) => (
   <section className="center measure-wide">
     <h1>An Error Occurred</h1>
     <p>{error?.error_description}</p>
@@ -41,36 +42,49 @@ export const getServerSideProps = async (
     state: ctx.query["state"] as string,
   };
 
-  const result = await apiSSP<{ headers: Headers }>(
-    "/auth/discord/callback",
-    {
-      method: "post",
-      body: JSON.stringify(payload),
-      headers: {
-        "Content-Type": "application/json",
-        Cookie: ctx?.req?.headers?.cookie ?? "",
-      },
-      credentials: "include",
-    },
-    undefined,
-    true
-  );
-  if (result.isError()) {
+  try {
+    const response: { headers: Headers } = await apiSSP(
+      "/auth/discord/callback",
+      {
+        method: "post",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+          Cookie: ctx?.req?.headers?.cookie ?? "",
+        },
+        credentials: "include",
+        responseHeaders: true,
+      }
+    );
+
+    const cookie = response.headers.get("set-cookie");
+    if (cookie == null) {
+      return {
+        props: {
+          error: {
+            error: "No cookie in authentication response",
+            error_description:
+              "The server did not respond with an authentication cookie.",
+          },
+        },
+      };
+    }
+
+    ctx.res.setHeader("set-cookie", cookie);
+    ctx.res.writeHead(302, { Location: "/dashboard" });
+    ctx.res.end();
+    return { props: {} };
+  } catch (e) {
+    const err = e as APIError;
     return {
       props: {
         error: {
-          error: result.error().error!,
-          error_description: result.error().message!,
+          error: err.error ?? "Unknown",
+          error_description: err.message ?? "Unknown",
         },
       },
     };
   }
-  const response = result.value();
-
-  ctx.res.setHeader("set-cookie", response.headers.get("set-cookie")!);
-  ctx.res.writeHead(302, { Location: "/dashboard" });
-  ctx.res.end();
-  return { props: {} };
 };
 
 export default Page;

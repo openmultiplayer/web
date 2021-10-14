@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { apiSSP } from "src/fetcher/fetcher";
 import { Post } from "src/types/_generated_Forum";
 import { useRouter } from "next/router";
+import { APIError } from "src/types/_generated_Error";
 
 export const PostPayloadSchema = z.object({
   title: z.string(),
@@ -31,17 +32,16 @@ const Page = () => {
     setError("");
     const payload = { ...data, body };
 
-    const resp = await apiSSP<Post>("/forum", {
-      method: "POST",
-      body: JSON.stringify(payload),
-    });
-    if (resp.isError()) {
-      const err = resp.error();
+    try {
+      const post = await apiSSP<Post>("/forum", {
+        method: "POST",
+        body: JSON.stringify(payload),
+      });
+      router.push(post.slug ?? "");
+    } catch (e) {
+      const err = e as APIError;
       console.error(err);
       setError(err?.message ?? "Unexpected error occurred");
-    } else {
-      const post = resp.value();
-      router.push(post.slug!);
     }
   };
 
