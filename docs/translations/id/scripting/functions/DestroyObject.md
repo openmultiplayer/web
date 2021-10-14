@@ -35,7 +35,7 @@ public OnObjectMoved(objectid)
 - [SetObjectPos](SetObjectPos): Mengatur posisi suatu Object.
 - [SetObjectRot](SetObjectRot): Mengatur rotasi suatu Object.
 - [GetObjectPos](GetObjectPos): Mencari Object.
-- [GetObjectRot](GetObjectRot): Periksa rotasi suatu Object.
+- [GetObjectRot](GetObjectRot): Memeriksa rotasi suatu Object.
 - [AttachObjectToPlayer](AttachObjectToPlayer): Menambahkan Object ke Player.
 - [CreatePlayerObject](CreatePlayerObject): Membuat Object hanya untuk satu Player.
 - [DestroyPlayerObject](DestroyPlayerObject): Menghapus suatu Object dari Player.
