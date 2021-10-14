@@ -6,8 +6,9 @@ import React, { FC, useCallback } from "react";
 import { toast } from "react-nextjs-toast";
 import { useIsAdmin } from "src/auth/hooks";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { Post } from "src/types/_generated_Forum";
+import { Post, PostSchema } from "src/types/_generated_Forum";
 import useSWR, { mutate } from "swr";
+import { APIError } from "src/types/_generated_Error";
 
 const ListHeader = () => {
   return (
@@ -91,16 +92,16 @@ type ThreadListProps = {
 const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
   const onDelete = useCallback(async (id: string) => {
     nProgress.start();
-    const result = await apiSSP(`/forum/${id}`, { method: "DELETE" });
-    if (result.isError()) {
-      const err = result.error();
-      toast.notify(err.message ?? "An unknown error occurred", {
-        title: err.error,
-        type: "error",
-      });
-    } else {
+    try {
+      await apiSSP(`/forum/${id}`, { method: "DELETE" });
       toast.notify("Post deleted!", {
         type: "success",
+      });
+    } catch (e) {
+      const err = e as APIError;
+      toast.notify(err.message ?? "An unknown error occurred", {
+        title: err.error ?? "Error",
+        type: "error",
       });
     }
     mutate("/forum");
@@ -127,7 +128,7 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
 
 const Page = () => {
   const isAdmin = useIsAdmin();
-  const { data, error } = useSWR<Post[]>("/forum", apiSWR);
+  const { data, error } = useSWR<Post[]>(["/forum"], apiSWR);
   if (error) {
     console.error(error);
     return "error";

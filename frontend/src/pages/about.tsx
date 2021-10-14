@@ -16,7 +16,7 @@ const Page: FC<Props> = ({ version }) => (
 );
 
 export const getServerSideProps: GetServerSideProps = async () => ({
-  props: (await apiSSP<Props>("/version")).unwrap(),
+  props: await apiSSP<Props>("/version"),
 });
 
 export default Page;
