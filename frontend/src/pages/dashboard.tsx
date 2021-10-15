@@ -16,8 +16,8 @@ const placeholder = (idx: string, data: any, error?: APIError): JSX.Element => {
 
 const InfoItem = ({ title, idx }: { title: string; idx: string }) => {
   const { data, error } = useSWR<User, APIError>(
-    ["/users/self", UserSchema],
-    apiSWR
+    "/users/self",
+    apiSWR({ schema: UserSchema })
   );
   return (
     <li className="pv2 mv2">
