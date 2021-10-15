@@ -6,18 +6,6 @@ import { ZodSchema } from "zod";
 
 const success = (code: number) => code >= 200 && code <= 299;
 
-// For use in `useSWR` hooks.
-//
-// This is necessary because the SSP version returns a Result type but SWR
-// doesn't play well with this API design so this function simply immediately
-// unwraps the result (throwing if error) and otherwise returns the result.
-export async function apiSWR<T>(
-  path: string,
-  schema: ZodSchema<T>
-): Promise<T | (T & { headers: Headers })> {
-  return apiSSP<T>(path, { schema });
-}
-
 export interface APIOptions<T> {
   // pass ctx from GSSP for server side cookies
   ctx?: GetServerSidePropsContext;
@@ -27,6 +15,18 @@ export interface APIOptions<T> {
 
   // the response schema
   schema?: ZodSchema<T>;
+}
+
+export type MaybeWithHeaders<T> = T | (T & { headers: Headers });
+
+// For use in `useSWR` hooks.
+//
+// This is curried in order to remove the need to pass the options on every call
+// because this messes with swr's dependency code and results in repeated calls.
+export function apiSWR<T>(opts?: APIOptions<T>) {
+  return (path: string): Promise<MaybeWithHeaders<T>> => {
+    return apiSSP<T>(path, opts);
+  };
 }
 
 // For use in getServerSideProps.

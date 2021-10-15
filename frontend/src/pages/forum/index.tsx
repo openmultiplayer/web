@@ -128,7 +128,7 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
 
 const Page = () => {
   const isAdmin = useIsAdmin();
-  const { data, error } = useSWR<Post[]>(["/forum"], apiSWR);
+  const { data, error } = useSWR<Post[]>("/forum", apiSWR());
   if (error) {
     console.error(error);
     return "error";

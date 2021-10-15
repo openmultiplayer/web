@@ -35,7 +35,7 @@ const resultToItem = (h: Hit) => (
 const Results: FC<Partial<Props>> = ({ query, results }) => {
   const { data, error } = useSWR<SearchResults, APIError>(
     `/docs/search?q=${query}`,
-    apiSWR,
+    apiSWR(),
     {
       initialData: results || undefined,
     }

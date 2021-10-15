@@ -14,12 +14,12 @@ type Props = {
 
 const OAuthButton = ({ bg, icon, type }: Props) => {
   const { data: link } = useSWR<Link, APIError>(
-    [`/auth/${type}/link`, LinkSchema],
-    apiSWR
+    `/auth/${type}/link`,
+    apiSWR({ schema: LinkSchema })
   );
   const { data, error } = useSWR<User, APIError>(
-    ["/users/self", UserSchema],
-    apiSWR
+    "/users/self",
+    apiSWR({ schema: UserSchema })
   );
 
   let text: string;
