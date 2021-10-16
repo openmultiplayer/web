@@ -7,7 +7,6 @@ import (
 	"time"
 
 	"github.com/gosimple/slug"
-	"github.com/prisma/prisma-client-go/runtime/types"
 
 	"github.com/openmultiplayer/web/server/src/db"
 )
@@ -163,7 +162,7 @@ func (d *DB) GetThreads(ctx context.Context, tags []string, category string, bef
 			db.Post.Category.Fetch(),
 		).
 		Take(max).
-		OrderBy(db.Post.CreatedAt.Order(types.Direction(sort))).
+		OrderBy(db.Post.CreatedAt.Order(db.Direction(sort))).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
@@ -203,7 +202,7 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 		).
 		Take(max).
 		Skip(skip).
-		OrderBy(db.Post.CreatedAt.Order(types.ASC)).
+		OrderBy(db.Post.CreatedAt.Order(db.ASC)).
 		Exec(ctx)
 	if err != nil {
 		return nil, err

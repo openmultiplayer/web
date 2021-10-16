@@ -29,7 +29,7 @@ require (
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pkg/errors v0.9.1
-	github.com/prisma/prisma-client-go v0.10.0
+	github.com/prisma/prisma-client-go v0.11.1-0.20211014160141-a4310b37583e
 	github.com/prometheus/client_golang v1.11.0 // indirect
 	github.com/prometheus/tsdb v0.7.1 // indirect
 	github.com/russross/blackfriday v1.6.0
