@@ -1,11 +1,4 @@
-import {
-  Button,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Select,
-  Tag,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, InputGroup, Select, Tag } from "@chakra-ui/react";
 import { formatRelative } from "date-fns";
 import map from "lodash/fp/map";
 import Link from "next/link";
@@ -13,10 +6,11 @@ import nProgress from "nprogress";
 import React, { FC, useCallback } from "react";
 import { toast } from "react-nextjs-toast";
 import { useIsAdmin } from "src/auth/hooks";
+import InputWithChips from "src/components/Chips";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
+import { APIError } from "src/types/_generated_Error";
 import { Category, CategorySchema, Post } from "src/types/_generated_Forum";
 import useSWR, { mutate } from "swr";
-import { APIError } from "src/types/_generated_Error";
 
 const CategoryList = ({ onSelect }) => {
   const { data, error } = useSWR<Category[], APIError>(
@@ -33,7 +27,8 @@ const CategoryList = ({ onSelect }) => {
   }
 
   return (
-    <Select onSelect={onSelect}>
+    <Select onSelect={onSelect} title="Category">
+      <option>All</option>
       {data.map((c) => (
         <option key={c.id}>{c.name}</option>
       ))}
@@ -41,40 +36,45 @@ const CategoryList = ({ onSelect }) => {
   );
 };
 
-const ListHeader = ({ categories }) => {
+const ThreadSearch = () => {
   return (
-    <div>
-      <div>
-        <span className="categories">
-          <CategoryList />
-        </span>
+    <InputGroup width="100%" alignItems="start">
+      <InputWithChips
+        containerProps={{ width: "100%", borderLeftRadius: "md" }}
+      />
 
-        <span className="search">
-          <InputGroup>
-            <InputRightElement pointerEvents="none">
-              <Button minWidth="min-content">Search</Button>
-            </InputRightElement>
-            <Input type="tel" placeholder="Search query" />
-          </InputGroup>
-        </span>
-      </div>
+      <Button
+        minWidth="min-content"
+        borderLeftRadius={0}
+        title="Search for threads"
+      >
+        Search
+      </Button>
+    </InputGroup>
+  );
+};
 
-      <div>
-        <span className="new">
-          <Link href="/forum/new" passHref>
-            <Button colorScheme="green">New Thread</Button>
-          </Link>
-        </span>
-      </div>
+const NewThreadButton = () => (
+  <Link href="/forum/new" passHref>
+    <Button colorScheme="green">New Thread</Button>
+  </Link>
+);
 
-      <style jsx>{`
-        div {
-          display: flex;
-          justify-content: space-between;
-          gap: 0.5em;
-        }
-      `}</style>
-    </div>
+const ListHeader = ({ onSelectCategory, onSearch }) => {
+  return (
+    <Flex direction="row" gridGap="0.5em">
+      <Box className="categories">
+        <CategoryList onSelect={onSelectCategory} />
+      </Box>
+
+      <Box className="search" flexGrow={1}>
+        <ThreadSearch />
+      </Box>
+
+      <Box className="new">
+        <NewThreadButton />
+      </Box>
+    </Flex>
   );
 };
 
