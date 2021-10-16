@@ -150,12 +150,29 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 }
 
 func (d *DB) GetThreads(ctx context.Context, tags []string, category string, before time.Time, sort string, max int, deleted bool) ([]Post, error) {
+	filters := []db.PostWhereParam{
+		db.Post.First.Equals(true),
+	}
+
+	if !before.IsZero() {
+		filters = append(filters, db.Post.CreatedAt.Before(before))
+	}
+	if category != "" {
+		filters = append(filters, db.Post.Category.Where(db.Category.Name.Equals(category)))
+	}
+	if len(tags) > 0 {
+		// TODO:
+		// filters = append(filters, db.Post.Tags.HasSome(tags))
+	}
+	if max < 1 {
+		max = 1
+	}
+	if max > 100 {
+		max = 100
+	}
+
 	posts, err := d.db.Post.
-		FindMany(
-			db.Post.First.Equals(true),
-			db.Post.CreatedAt.Before(before),
-			db.Post.Category.Where(db.Category.Name.Equals(category)),
-		).
+		FindMany(filters...).
 		With(
 			db.Post.Author.Fetch(),
 			db.Post.Tags.Fetch(),
