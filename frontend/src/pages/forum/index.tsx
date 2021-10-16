@@ -14,22 +14,39 @@ import React, { FC, useCallback } from "react";
 import { toast } from "react-nextjs-toast";
 import { useIsAdmin } from "src/auth/hooks";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { Post, PostSchema } from "src/types/_generated_Forum";
+import { Category, CategorySchema, Post } from "src/types/_generated_Forum";
 import useSWR, { mutate } from "swr";
 import { APIError } from "src/types/_generated_Error";
+
+const CategoryList = ({ onSelect }) => {
+  const { data, error } = useSWR<Category[], APIError>(
+    "/forum/categories",
+    apiSWR({ schema: CategorySchema.array() })
+  );
+  if (error) {
+    return (
+      <Select disabled title={`An error occurred: ${error.message}`}></Select>
+    );
+  }
+  if (!data) {
+    return <Select disabled title="Loading..."></Select>;
+  }
+
+  return (
+    <Select onSelect={onSelect}>
+      {data.map((c) => (
+        <option key={c.id}>{c.name}</option>
+      ))}
+    </Select>
+  );
+};
 
 const ListHeader = ({ categories }) => {
   return (
     <div>
       <div>
         <span className="categories">
-          <Select className="categories">
-            {categories.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </Select>
+          <CategoryList />
         </span>
 
         <span className="search">
