@@ -149,7 +149,16 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 	return FromModel(post), err
 }
 
-func (d *DB) GetThreads(ctx context.Context, tags []string, category string, before time.Time, sort string, max int, deleted bool) ([]Post, error) {
+func (d *DB) GetThreads(
+	ctx context.Context,
+	tags []string,
+	category string,
+	query string,
+	before time.Time,
+	sort string,
+	max int,
+	deleted bool,
+) ([]Post, error) {
 	filters := []db.PostWhereParam{
 		db.Post.First.Equals(true),
 	}
@@ -159,6 +168,9 @@ func (d *DB) GetThreads(ctx context.Context, tags []string, category string, bef
 	}
 	if category != "" {
 		filters = append(filters, db.Post.Category.Where(db.Category.Name.Equals(category)))
+	}
+	if query != "" {
+		filters = append(filters, db.Post.Title.Contains(query))
 	}
 	if len(tags) > 0 {
 		// TODO:
