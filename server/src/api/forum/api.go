@@ -47,6 +47,9 @@ func Build() fx.Option {
 
 			rtr.
 				Get("/categories", s.categories)
+
+			rtr.
+				Get("/tags", s.tags)
 		}),
 	)
 }

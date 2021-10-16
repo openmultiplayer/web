@@ -274,3 +274,28 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 
 	return result, nil
 }
+
+func (d *DB) GetTags(ctx context.Context, query string) ([]Tag, error) {
+	var tags []Tag
+	err := d.db.Prisma.Raw.QueryRaw(`
+		select
+			t.id, t.name, count(*) as posts
+		from
+			"_TagToPost" ttp
+		inner join
+			"Tag" t on ttp."B" = t.id
+		inner join
+			"Post" p on ttp."A" = p.id
+		where t.name like $1
+		group by t.id
+	`, query+"%").Exec(ctx, &tags)
+	if err != nil {
+		return nil, err
+	}
+
+	if len(tags) == 0 {
+		return nil, nil
+	}
+
+	return tags, nil
+}
