@@ -44,7 +44,7 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
             </div>
 
             <h1>
-              <Link href={`/forum/${post.slug}`}>
+              <Link href={`/discussion/${post.slug}`}>
                 <a>{post.title}</a>
               </Link>
             </h1>

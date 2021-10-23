@@ -18,7 +18,7 @@ type Callbacks = {
 };
 
 const NewThreadButton = () => (
-  <Link href="/forum/new" passHref>
+  <Link href="/discussion/new" passHref>
     <Button colorScheme="green">New Thread</Button>
   </Link>
 );

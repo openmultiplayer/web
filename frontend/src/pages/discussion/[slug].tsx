@@ -143,7 +143,7 @@ const Page: FC<Props> = ({ id, posts, error }) => {
 
   return (
     <div className="center pv2">
-      <Link href="/forum">
+      <Link href="/discussion">
         <a>Back</a>
       </Link>
 
