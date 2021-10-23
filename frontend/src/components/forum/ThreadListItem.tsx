@@ -26,7 +26,7 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
         <div className="content">
           <header>
             <div className="category">
-              <span>general</span>
+              <span>{post.category.name}</span>
 
               {showAdminTools && (
                 <div>
@@ -90,6 +90,8 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
         .category {
           display: flex;
           justify-content: space-between;
+          line-height: 1;
+          font-size: 0.9em;
         }
         .category span {
           border-left: 0.25em solid lightblue;
@@ -103,6 +105,7 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
         footer {
           display: flex;
           justify-content: space-between;
+          font-size: 0.9em;
           color: var(--chakra-colors-gray-400);
         }
         footer .byline {
