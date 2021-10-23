@@ -1,7 +1,9 @@
-// 1. Import the extendTheme function
 import { extendTheme } from "@chakra-ui/react";
 
-// 2. Extend the theme to include custom colors, fonts, etc
+const fonts = {
+  heading: "english-grotesque, sans-serif",
+};
+
 const colors = {
   o: {
     black: "#101013",
@@ -12,6 +14,6 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ colors });
+const theme = extendTheme({ colors, fonts });
 
 export default theme;
