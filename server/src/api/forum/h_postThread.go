@@ -9,9 +9,10 @@ import (
 )
 
 type postThreadBody struct {
-	Title string   `json:"title" valid:"required,stringlength(1|64)"`
-	Body  string   `json:"body"  valid:"required,stringlength(1|65535)"`
-	Tags  []string `json:"tags"  valid:"required"`
+	Title      string   `json:"title"      valid:"required,stringlength(1|64)"`
+	Body       string   `json:"body"       valid:"required,stringlength(1|65535)"`
+	Tags       []string `json:"tags"       valid:"required"`
+	CategoryID string   `json:"categoryId" valid:"required"`
 }
 
 func (s *service) postThread(w http.ResponseWriter, r *http.Request) {
@@ -25,7 +26,7 @@ func (s *service) postThread(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	post, err := s.repo.CreateThread(r.Context(), b.Title, b.Body, info.Cookie.UserID, b.Tags)
+	post, err := s.repo.CreateThread(r.Context(), b.Title, b.Body, info.Cookie.UserID, b.CategoryID, b.Tags)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

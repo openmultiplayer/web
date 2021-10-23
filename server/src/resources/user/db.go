@@ -4,8 +4,6 @@ import (
 	"context"
 	"time"
 
-	"github.com/prisma/prisma-client-go/runtime/types"
-
 	"github.com/openmultiplayer/web/server/src/db"
 )
 
@@ -42,7 +40,7 @@ func (d *DB) GetUsers(ctx context.Context, sort string, max, skip int, public bo
 		Take(max).
 		Skip(skip).
 		OrderBy(
-			db.User.CreatedAt.Order(types.Direction(sort)),
+			db.User.CreatedAt.Order(db.Direction(sort)),
 		).
 		Exec(ctx)
 	if err != nil {

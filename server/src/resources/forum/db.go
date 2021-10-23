@@ -7,7 +7,6 @@ import (
 	"time"
 
 	"github.com/gosimple/slug"
-	"github.com/prisma/prisma-client-go/runtime/types"
 
 	"github.com/openmultiplayer/web/server/src/db"
 )
@@ -28,7 +27,7 @@ func New(db *db.PrismaClient) Repository {
 
 func (d *DB) CreateThread(
 	ctx context.Context,
-	title, body, authorID string,
+	title, body, authorID, categoryID string,
 	tags []string,
 ) (*Post, error) {
 	slug := slug.Make(title)
@@ -42,6 +41,7 @@ func (d *DB) CreateThread(
 			db.Post.Author.Link(db.User.ID.Equals(authorID)),
 
 			db.Post.Title.Set(title),
+			db.Post.Category.Link(db.Category.ID.Equals(categoryID)),
 		).
 		With(db.Post.Author.Fetch()).
 		Exec(ctx)
@@ -149,17 +149,49 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 	return FromModel(post), err
 }
 
-func (d *DB) GetThreads(ctx context.Context, tags []string, before time.Time, sort string, max int, deleted bool) ([]Post, error) {
-	fmt.Println(timeOrNil(!deleted))
+func (d *DB) GetThreads(
+	ctx context.Context,
+	tags []string,
+	category string,
+	query string,
+	before time.Time,
+	sort string,
+	max int,
+	deleted bool,
+) ([]Post, error) {
+	filters := []db.PostWhereParam{
+		db.Post.First.Equals(true),
+	}
+
+	if !before.IsZero() {
+		filters = append(filters, db.Post.CreatedAt.Before(before))
+	}
+	if category != "" {
+		filters = append(filters, db.Post.Category.Where(db.Category.Name.Equals(category)))
+	}
+	if query != "" {
+		filters = append(filters, db.Post.Title.Contains(query))
+	}
+	if len(tags) > 0 {
+		// TODO:
+		// filters = append(filters, db.Post.Tags.HasSome(tags))
+	}
+	if max < 1 {
+		max = 1
+	}
+	if max > 100 {
+		max = 100
+	}
+
 	posts, err := d.db.Post.
-		FindMany(
-			db.Post.First.Equals(true),
-			db.Post.Tags.Every(db.Tag.Name.In(tags)),
-			db.Post.CreatedAt.Before(before),
+		FindMany(filters...).
+		With(
+			db.Post.Author.Fetch(),
+			db.Post.Tags.Fetch(),
+			db.Post.Category.Fetch(),
 		).
-		With(db.Post.Author.Fetch()).
 		Take(max).
-		OrderBy(db.Post.CreatedAt.Order(types.Direction(sort))).
+		OrderBy(db.Post.CreatedAt.Order(db.Direction(sort))).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
@@ -193,10 +225,13 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 				),
 			),
 		).
-		With(db.Post.Author.Fetch()).
+		With(
+			db.Post.Author.Fetch(),
+			db.Post.Category.Fetch(),
+		).
 		Take(max).
 		Skip(skip).
-		OrderBy(db.Post.CreatedAt.Order(types.ASC)).
+		OrderBy(db.Post.CreatedAt.Order(db.ASC)).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
@@ -217,4 +252,50 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 	}
 
 	return result, nil
+}
+
+func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
+	categories, err := d.db.Category.FindMany().Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	if len(categories) == 0 {
+		return nil, nil
+	}
+
+	result := []Category{}
+	for _, c := range categories {
+		result = append(result, Category{
+			ID:   c.ID,
+			Name: c.Name,
+		})
+	}
+
+	return result, nil
+}
+
+func (d *DB) GetTags(ctx context.Context, query string) ([]Tag, error) {
+	var tags []Tag
+	err := d.db.Prisma.Raw.QueryRaw(`
+		select
+			t.id, t.name, count(*) as posts
+		from
+			"_TagToPost" ttp
+		inner join
+			"Tag" t on ttp."B" = t.id
+		inner join
+			"Post" p on ttp."A" = p.id
+		where t.name like $1
+		group by t.id
+	`, query+"%").Exec(ctx, &tags)
+	if err != nil {
+		return nil, err
+	}
+
+	if len(tags) == 0 {
+		return nil, nil
+	}
+
+	return tags, nil
 }

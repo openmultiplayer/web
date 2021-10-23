@@ -1,4 +1,3 @@
-import { toast } from "@chakra-ui/toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formatRelative } from "date-fns";
 import { map } from "lodash/fp";
@@ -13,6 +12,7 @@ import Editor from "rich-markdown-editor";
 import { apiSSP } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Post, PostSchema } from "src/types/_generated_Forum";
+import { niceDate } from "src/utils/dates";
 import { mutate } from "swr";
 import * as z from "zod";
 
@@ -21,8 +21,6 @@ type Props = {
   posts?: PostModelWithMarkdown[];
   error?: string;
 };
-
-const niceDate = (d: string) => formatRelative(new Date(d), new Date());
 
 const postToListItem = (p: PostModelWithMarkdown) => (
   <li key={p.postModel.id} className="list pv2">

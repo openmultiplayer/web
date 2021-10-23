@@ -44,6 +44,12 @@ func Build() fx.Option {
 			rtr.
 				With(authentication.MustBeAuthenticated /*ratelimiter.WithRateLimit(20)*/).
 				Delete("/{id}", s.delete)
+
+			rtr.
+				Get("/categories", s.categories)
+
+			rtr.
+				Get("/tags", s.tags)
 		}),
 	)
 }

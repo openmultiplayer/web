@@ -380,6 +380,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/prisma/prisma-client-go v0.10.0 h1:8h6JqXwEDdrkZ6XrN3EYvhNTuEhwAoHOFmASiBwnWuQ=
 github.com/prisma/prisma-client-go v0.10.0/go.mod h1:M8YaRRW8pd/uUgrz8zW6JwnlaywqD15g1ETo9fXpmSQ=
+github.com/prisma/prisma-client-go v0.11.1-0.20211014160141-a4310b37583e h1:KWVGvpUZGHSrkew3Vgacf9Axa19tgZT3uO1UOGpyDsU=
+github.com/prisma/prisma-client-go v0.11.1-0.20211014160141-a4310b37583e/go.mod h1:M8YaRRW8pd/uUgrz8zW6JwnlaywqD15g1ETo9fXpmSQ=
 github.com/prometheus/client_golang v0.9.1/go.mod h1:7SWBe2y4D6OKWSNQJUaRYU/AaXPKyh/dDVn+NZz0KFw=
 github.com/prometheus/client_golang v1.0.0/go.mod h1:db9x61etRT2tGnBNRi70OPL5FsnadC4Ky3P0J6CfImo=
 github.com/prometheus/client_golang v1.7.1/go.mod h1:PY5Wy2awLA44sXw4AOSfFBetzPP4j5+D6mVACh+pe2M=
