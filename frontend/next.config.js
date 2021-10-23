@@ -35,7 +35,7 @@ module.exports = (phase) => {
     redirects() {
       return [
         { source: "/about", destination: "/", permanent: true },
-        { source: "/forum", destination: "https://burgershot.gg", permanent: true},
+        { source: "/forum", destination: "https://burgershot.gg", permanent: false},
         { source: "/wiki", destination: "https://open.mp/docs ", permanent: true},
         { source: "/links", destination: "https://linktr.ee/openmultiplayer", permanent: true},
         { source: "/videos", destination: "https://youtube.com/openmultiplayer", permanent: true},
