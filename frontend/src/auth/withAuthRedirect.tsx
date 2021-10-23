@@ -1,26 +1,18 @@
 import { useRouter } from "next/router";
 import { NextPage } from "next";
-import { ReactElement } from "react";
 
 import { useAuth } from "./hooks";
+import LoadingBanner from "src/components/LoadingBanner";
 
 function isBrowser(): boolean {
   return typeof window !== "undefined";
-}
-
-function DefaultLoadingFallback(): ReactElement {
-  return (
-    <section className="measure-wide center">
-      <h1 className="tc">Loading...</h1>
-    </section>
-  );
 }
 
 export default function withAuthRedirect<CP = unknown, IP = CP>(
   WrappedComponent: NextPage<CP, IP>,
   expectedAuth: boolean,
   location: string,
-  LoadingComponent = DefaultLoadingFallback
+  LoadingComponent = LoadingBanner
 ): NextPage<CP, IP> {
   const WithAuthRedirectWrapper: NextPage<CP, IP> = (props) => {
     const router = useRouter();
