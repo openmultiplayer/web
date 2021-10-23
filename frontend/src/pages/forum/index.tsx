@@ -3,7 +3,7 @@ import { formatRelative } from "date-fns";
 import map from "lodash/fp/map";
 import Link from "next/link";
 import nProgress from "nprogress";
-import React, { FC, useCallback } from "react";
+import React, { ChangeEvent, FC, useCallback, useState } from "react";
 import { toast } from "react-nextjs-toast";
 import { useIsAdmin } from "src/auth/hooks";
 import InputWithChips from "src/components/Chips";
@@ -13,6 +13,11 @@ import { Category, CategorySchema, Post } from "src/types/_generated_Forum";
 import useSWR, { mutate } from "swr";
 
 const CategoryList = ({ onSelect }) => {
+  const allOption = "All";
+  const onChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value;
+    onSelect(value === allOption ? "" : value);
+  };
   const { data, error } = useSWR<Category[], APIError>(
     "/forum/categories",
     apiSWR({ schema: CategorySchema.array() })
@@ -27,8 +32,8 @@ const CategoryList = ({ onSelect }) => {
   }
 
   return (
-    <Select onSelect={onSelect} title="Category">
-      <option>All</option>
+    <Select onChange={onChange} title="Category">
+      <option>{allOption}</option>
       {data.map((c) => (
         <option key={c.id}>{c.name}</option>
       ))}
@@ -186,9 +191,16 @@ const PostItem: FC<PostItemProps> = ({ post, showAdminTools, onDelete }) => {
 type ThreadListProps = {
   data: Post[];
   isAdmin: boolean;
+  onSelectCategory: (c: string) => void;
+  onSearch: (c: string) => void;
 };
 
-const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
+const ThreadList: FC<ThreadListProps> = ({
+  data,
+  isAdmin,
+  onSelectCategory,
+  onSearch,
+}) => {
   const onDelete = useCallback(async (id: string) => {
     nProgress.start();
     try {
@@ -218,7 +230,7 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
 
   return (
     <div>
-      <ListHeader categories={["general", "games", "music", "random"]} />
+      <ListHeader onSelectCategory={onSelectCategory} onSearch={onSearch} />
 
       <ol>{mapping(data)}</ol>
 
@@ -240,8 +252,14 @@ const ThreadList: FC<ThreadListProps> = ({ data, isAdmin }) => {
 };
 
 const Page = () => {
+  const [category, _setCategory] = useState("All");
+  const [query, setQuery] = useState("");
+  const setCategory = useCallback((c) => _setCategory(c), []);
   const isAdmin = useIsAdmin();
-  const { data, error } = useSWR<Post[]>("/forum", apiSWR());
+  const { data, error } = useSWR<Post[]>(
+    "/forum?" + new URLSearchParams({ category, query }).toString(),
+    apiSWR()
+  );
   if (error) {
     console.error(error);
     return "error";
@@ -251,7 +269,12 @@ const Page = () => {
   }
   return (
     <div className="center pv2">
-      <ThreadList data={data} isAdmin={isAdmin} />
+      <ThreadList
+        data={data}
+        isAdmin={isAdmin}
+        onSelectCategory={setCategory}
+        onSearch={setQuery}
+      />
 
       <style jsx>{`
         div {
