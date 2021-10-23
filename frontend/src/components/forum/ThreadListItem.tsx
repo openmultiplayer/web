@@ -1,17 +1,14 @@
 import { Button, Tag } from "@chakra-ui/react";
-import { formatRelative } from "date-fns";
-import Image from "next/image";
 import Link from "next/link";
 import React, { FC, useCallback } from "react";
 import { Post } from "src/types/_generated_Forum";
+import { niceDate } from "src/utils/dates";
 
 type Props = {
   post: Post;
   showAdminTools: boolean;
   onDelete: (id: string) => void;
 };
-
-const niceDate = (d: string) => formatRelative(new Date(d), new Date());
 
 const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
   const onClick = useCallback(
