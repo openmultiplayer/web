@@ -158,29 +158,25 @@ const App = ({ Component, pageProps, router }: AppProps) => (
     {/* Toast notification positioning container */}
     <ToastContainer align="right" />
 
-    {/* This is flex to make <section> elements gapless */}
-    <div id="container">
-      {/* Provides authentication context for child components */}
-      <AuthProvider>
-        <Nav
-          items={[
-            { name: "Home", path: "/", exact: true },
-            { name: "FAQ", path: "/faq" },
-            { name: "Forums", path: "https://burgershot.gg/" },
-            { name: "Servers", path: "/servers" },
-            { name: "Docs", path: "/docs" },
-            { name: "Blog", path: "/blog" },
-          ]}
-          route={router.pathname}
-        />
+    <AuthProvider>
+      <Nav
+        items={[
+          { name: "Home", path: "/", exact: true },
+          { name: "FAQ", path: "/faq" },
+          { name: "Forums", path: "https://burgershot.gg/" },
+          { name: "Servers", path: "/servers" },
+          { name: "Docs", path: "/docs" },
+          { name: "Blog", path: "/blog" },
+        ]}
+        route={router.pathname}
+      />
 
-        <main>
-          <Component {...pageProps} />
-        </main>
-      </AuthProvider>
-    </div>
+      <main>
+        <Component {...pageProps} />
+      </main>
 
-    <Footer />
+      <Footer />
+    </AuthProvider>
 
     <style jsx global>{`
       html,
@@ -192,7 +188,7 @@ const App = ({ Component, pageProps, router }: AppProps) => (
         display: flex;
         flex-direction: column;
       }
-      #container {
+      main {
         flex: 1 0 auto;
       }
     `}</style>

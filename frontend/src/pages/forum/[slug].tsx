@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import React, { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import Editor from "rich-markdown-editor";
+import ErrorBanner from "src/components/ErrorBanner";
 import { apiSSP } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Post, PostSchema } from "src/types/_generated_Forum";
@@ -135,12 +136,7 @@ const Page: FC<Props> = ({ id, posts, error }) => {
   } = useRouter();
 
   if (error) {
-    return (
-      <p>
-        Unfortunately there was an error while getting the server list! The
-        error message is below: <pre>{error}</pre>
-      </p>
-    );
+    return <ErrorBanner error={error} />;
   }
 
   // TODO Render markdown client side if applicable.

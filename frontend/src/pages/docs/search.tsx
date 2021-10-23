@@ -8,6 +8,8 @@ import { apiSSP, apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Hit, SearchResults } from "src/types/searchResult";
 import Link from "next/link";
+import LoadingBanner from "src/components/LoadingBanner";
+import ErrorBanner from "src/components/ErrorBanner";
 
 type Params = {
   q: string;
@@ -41,10 +43,10 @@ const Results: FC<Partial<Props>> = ({ query, results }) => {
     }
   );
   if (error) {
-    return <p>{error.message}</p>;
+    return <ErrorBanner {...error} />;
   }
   if (!data) {
-    return <p>"Loading..."</p>;
+    return <LoadingBanner />;
   }
 
   return <ul>{map(resultToItem)(data.hits)}</ul>;

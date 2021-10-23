@@ -14,6 +14,9 @@ import useSWR from "swr";
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
 import { User } from "src/types/_generated_User";
 import nProgress from "nprogress";
+import LoadingBanner from "src/components/LoadingBanner";
+import { APIError } from "src/types/_generated_Error";
+import ErrorBanner from "src/components/ErrorBanner";
 
 const UserView = ({ user, users, setUsers }: any) => {
   return (
@@ -93,13 +96,13 @@ export default function Members() {
     start: 0,
     end: 10,
   });
-  const { data, error, mutate } = useSWR<User[]>("/users", apiSWR());
+  const { data, error, mutate } = useSWR<User[], APIError>("/users", apiSWR());
 
   if (error) {
-    return "error";
+    return <ErrorBanner {...error} />;
   }
   if (!data) {
-    return "loading";
+    return <LoadingBanner />;
   }
 
   const users = Object.values(data);

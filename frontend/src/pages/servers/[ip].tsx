@@ -2,11 +2,10 @@ import { Button } from "@chakra-ui/button";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { Box, Flex, Link, Stack, Text } from "@chakra-ui/layout";
-import { Spinner } from "@chakra-ui/spinner";
 import { Stat, StatLabel, StatNumber } from "@chakra-ui/stat";
 import { chakra } from "@chakra-ui/system";
 import { Table, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/table";
-import { formatDistance, formatDuration, formatRelative } from "date-fns";
+import { formatDistance } from "date-fns";
 import {
   GetServerSidePropsContext,
   GetServerSidePropsResult,
@@ -14,9 +13,9 @@ import {
 } from "next";
 import { NextSeo } from "next-seo";
 import NextLink from "next/link";
-import { FC } from "react";
+import ErrorBanner from "src/components/ErrorBanner";
+import LoadingBanner from "src/components/LoadingBanner";
 import { API_ADDRESS } from "src/config";
-import { APIError } from "src/types/_generated_Error";
 import { All } from "src/types/_generated_Server";
 import useSWR from "swr";
 
@@ -163,25 +162,15 @@ const Content = ({ ip, initialData }: Props) => {
     initialData,
   });
   if (error) {
-    return <Error error={error} />;
+    return <ErrorBanner {...error} />;
   }
   if (!data) {
-    return (
-      <Flex justify="center" width="full">
-        <Spinner size="xl" />
-      </Flex>
-    );
+    return <LoadingBanner />;
   }
 
   return <Info data={data} />;
 };
 
-const Error: FC<{ error: APIError }> = ({ error }) => (
-  <p>
-    Unfortunately there was an error while getting the server list! The error
-    message is below: <pre>{error.message}</pre>
-  </p>
-);
 const Page: NextPage<Props> = ({ ip, initialData }) => {
   return (
     <>

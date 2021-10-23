@@ -1,8 +1,11 @@
 import { NextPage } from "next";
 import React, { useCallback, useState } from "react";
 import { useIsAdmin } from "src/auth/hooks";
+import ErrorBanner from "src/components/ErrorBanner";
 import ThreadList from "src/components/forum/ThreadList";
+import LoadingBanner from "src/components/LoadingBanner";
 import { apiSWR } from "src/fetcher/fetcher";
+import { APIError } from "src/types/_generated_Error";
 import { Post } from "src/types/_generated_Forum";
 import useSWR from "swr";
 
@@ -14,16 +17,16 @@ const Page: NextPage = () => {
   const setQuery = useCallback((q) => _setQuery(q), []);
 
   const isAdmin = useIsAdmin();
-  const { data, error } = useSWR<Post[]>(
+  const { data, error } = useSWR<Post[], APIError>(
     "/forum?" + new URLSearchParams({ category, query }).toString(),
     apiSWR()
   );
   if (error) {
     console.error(error);
-    return <p>Error</p>;
+    return <ErrorBanner {...error} />;
   }
   if (!data) {
-    return <p>Loading</p>;
+    return <LoadingBanner />;
   }
   return (
     <div className="center pv2">

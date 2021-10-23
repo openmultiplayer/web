@@ -9,6 +9,8 @@ import { toast } from "react-nextjs-toast";
 import NProgress from "nprogress";
 import { All, Essential } from "src/types/_generated_Server";
 import { API_ADDRESS } from "src/config";
+import ErrorBanner from "src/components/ErrorBanner";
+import LoadingBanner from "src/components/LoadingBanner";
 
 const API_SERVERS = `${API_ADDRESS}/server/`;
 
@@ -297,13 +299,6 @@ const List = ({
   );
 };
 
-const Error = ({ message }: { message: string }) => (
-  <p>
-    Unfortunately there was an error while getting the server list! The error
-    message is below: <pre>{message}</pre>
-  </p>
-);
-
 const Page = ({ initialData, errorMessage }: Props) => {
   const { data, error, mutate } = useSWR<Array<Essential>, TypeError>(
     API_SERVERS,
@@ -313,7 +308,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
     }
   );
   if (error) {
-    errorMessage = error.message;
+    return <ErrorBanner {...error} />;
+  }
+  if (!data) {
+    return <LoadingBanner />;
   }
 
   return (
@@ -324,14 +322,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       />
 
       <h1>Servers</h1>
-      {errorMessage ? (
-        <Error message={errorMessage} />
-      ) : (
-        <List
-          data={data!}
-          onAdd={(server: All) => mutate([...data!, server.core], false)}
-        />
-      )}
+      <List
+        data={data}
+        onAdd={(server: All) => mutate([...data!, server.core], false)}
+      />
     </section>
   );
 };
