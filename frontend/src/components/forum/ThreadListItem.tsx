@@ -30,7 +30,7 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
             <div className="category">
               <span>general</span>
 
-              {!showAdminTools && (
+              {showAdminTools && (
                 <div>
                   {post.deletedAt === null ? (
                     <Button colorScheme="red" size="xs" onClick={onClick}>
