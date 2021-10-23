@@ -2,6 +2,7 @@ import { SmallCloseIcon } from "@chakra-ui/icons";
 import { Flex, FlexProps } from "@chakra-ui/layout";
 import {
   Button,
+  InputGroup,
   Popover,
   PopoverArrow,
   PopoverBody,
@@ -12,8 +13,36 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import React, { Component } from "react";
+import React, { Component, FC } from "react";
 import { apiSWR } from "src/fetcher/fetcher";
+
+type Callbacks = {
+  onSearch: (tags: string[], query: string) => void;
+};
+
+const ThreadSearch: FC<Callbacks> = ({ onSearch }) => {
+  // const [tags, setTags] = useState([]);
+
+  // const onSubmit = () => {
+  //   onSearch(tags, query);
+  // };
+
+  return (
+    <InputGroup width="100%" alignItems="start">
+      <InputWithChips
+        containerProps={{ width: "100%", borderLeftRadius: "md" }}
+      />
+
+      <Button
+        minWidth="min-content"
+        borderLeftRadius={0}
+        title="Search for threads"
+      >
+        Search
+      </Button>
+    </InputGroup>
+  );
+};
 
 type Props = {
   // The tags to show the component with when it's created
@@ -179,6 +208,7 @@ class InputWithChips extends Component<Props, State> {
                 className="end"
                 type="text"
                 value={this.state.input}
+                placeholder="Filter by tags or search by content"
               />
             </PopoverTrigger>
             <PopoverContent width="100%">
@@ -252,4 +282,4 @@ class InputWithChips extends Component<Props, State> {
   }
 }
 
-export default InputWithChips;
+export default ThreadSearch;
