@@ -1,5 +1,6 @@
 import { Button, Tag } from "@chakra-ui/react";
 import { formatRelative } from "date-fns";
+import Image from "next/image";
 import Link from "next/link";
 import React, { FC, useCallback } from "react";
 import { Post } from "src/types/_generated_Forum";
@@ -58,11 +59,17 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
         </div>
 
         <footer>
-          <p>
+          <div className="byline">
+            {/* TODO: Profile pictures: <img
+              className="avatar"
+              src="https://via.placeholder.com/32"
+              width={24}
+              height={24}
+            /> */}
             <em>{post.author.name}</em> posted{" "}
             <em>{niceDate(post.createdAt)}</em> • updated{" "}
             <em>{niceDate(post.updatedAt)}</em>
-          </p>
+          </div>
 
           <ul>
             {["open.mp", "question", "help"].map((t) => (
@@ -94,10 +101,24 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
         }
         h1 {
           margin: 0;
+          font-size: 1.6em;
         }
         footer {
           display: flex;
           justify-content: space-between;
+          color: var(--chakra-colors-gray-400);
+        }
+        footer .byline {
+          display: flex;
+          gap: 0.25em;
+          align-content: center;
+        }
+        footer .avatar {
+          display: inline-block;
+        }
+        footer em {
+          font-style: normal;
+          color: var(--chakra-colors-gray-500);
         }
         footer ul {
           display: flex;
