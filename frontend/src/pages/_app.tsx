@@ -76,7 +76,7 @@ Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
 const App = ({ Component, pageProps, router }: AppProps) => (
-  <ChakraProvider theme={theme}>
+  <ChakraProvider theme={theme} resetCSS={false}>
     <Head>
       <link rel="stylesheet" href="/fonts.css" />
 
