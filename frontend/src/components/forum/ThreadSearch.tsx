@@ -6,7 +6,6 @@ import {
   Popover,
   PopoverArrow,
   PopoverBody,
-  PopoverCloseButton,
   PopoverContent,
   PopoverTrigger,
   Tag,
@@ -14,6 +13,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import React, { Component, FC } from "react";
+import debounce from "lodash.debounce";
 import { apiSWR } from "src/fetcher/fetcher";
 
 type Callbacks = {
@@ -120,7 +120,7 @@ class InputWithChips extends Component<Props, State> {
     }
   }
 
-  handlePrimaryInput(event: any): void {
+  handlePrimaryInputKey(event: any): void {
     if (
       event.code === "Backspace" &&
       // only remove the end item if the input box is empty otherwise,
@@ -142,13 +142,26 @@ class InputWithChips extends Component<Props, State> {
     const query = event.target.value;
 
     if (query.length > 0) {
-      apiSWR<Tag[]>()(`/forum/tags?query=${query}`).then((tags) =>
-        this.setState({ ...this.state, tags: tags ?? [] })
-      );
+      debounce(
+        () =>
+          apiSWR<Tag[]>()(`/forum/tags?query=${query}`).then((tags) =>
+            this.setState({ ...this.state, tags: tags ?? [] })
+          ),
+        500
+      )();
       this.setState({ ...this.state, input: query });
     } else {
       this.setState({ ...this.state, input: query, tags: [] });
     }
+  }
+
+  handleClickSuggestion(text: string): void {
+    const chips = this.state.chips.concat(text);
+    this.setState({
+      ...this.state,
+      chips,
+      input: "",
+    });
   }
 
   render(): JSX.Element {
@@ -178,14 +191,14 @@ class InputWithChips extends Component<Props, State> {
               <span key={idx}>
                 <label htmlFor={`between-${idx}`}>
                   {data}
-                  <button onClick={() => this.removeTag.bind(this)(idx)}>
+                  <button onClick={() => this.removeTag(idx)}>
                     <SmallCloseIcon />
                   </button>
                 </label>
                 {between ? (
                   <input
-                    onKeyUp={(e) => this.handleBetweenInput.bind(this)(idx, e)}
-                    onChange={(e) => this.handleBetweenInput.bind(this)(idx, e)}
+                    onKeyUp={(e) => this.handleBetweenInput(idx, e)}
+                    onChange={(e) => this.handleBetweenInput(idx, e)}
                     id={`chips-between-${idx}`}
                     className="chips-between"
                     type="text"
@@ -197,14 +210,14 @@ class InputWithChips extends Component<Props, State> {
           })}
 
           <Popover
-            isOpen={this.state.tags.length > 0}
+            isOpen={this.state.input.length > 0 && this.state.tags.length > 0}
             matchWidth
             autoFocus={false}
           >
             <PopoverTrigger>
               <input
-                onKeyDown={(e) => this.handlePrimaryInput.bind(this)(e)}
-                onChange={(e) => this.handlePrimaryInputChange.bind(this)(e)}
+                onKeyDown={this.handlePrimaryInputKey.bind(this)}
+                onChange={this.handlePrimaryInputChange.bind(this)}
                 className="end"
                 type="text"
                 value={this.state.input}
@@ -213,7 +226,6 @@ class InputWithChips extends Component<Props, State> {
             </PopoverTrigger>
             <PopoverContent width="100%">
               <PopoverArrow />
-              <PopoverCloseButton />
               <PopoverBody>
                 <Wrap>
                   {this.state.tags.map((tag: Tag) => (
@@ -221,9 +233,10 @@ class InputWithChips extends Component<Props, State> {
                       <Button
                         variant="solid"
                         colorScheme="teal"
-                        onClick={() => {
-                          this.addTag(tag.name);
-                        }}
+                        cursor="pointer"
+                        onClick={() =>
+                          this.handleClickSuggestion.bind(this)(tag.name)
+                        }
                       >
                         {tag.name} ({tag.posts})
                       </Button>
