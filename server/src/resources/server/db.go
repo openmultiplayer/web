@@ -123,9 +123,10 @@ func (s *DB) GetEssential(context.Context, string) (*Essential, error) {
 	return nil, nil
 }
 
-func (s *DB) GetServersToQuery(ctx context.Context, since time.Duration) ([]string, error) {
+func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]string, error) {
 	result, err := s.client.Server.
-		FindMany(db.Server.UpdatedAt.Before(time.Now().Add(-since))).
+		FindMany(db.Server.UpdatedAt.Before(time.Now().Add(-before))).
+		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderDesc)).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
