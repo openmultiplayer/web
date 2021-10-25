@@ -51,19 +51,23 @@ const ThreadSearch: FC<Props> = (props) => {
     setQuery(q);
   }, []);
 
-  const onAdd = useCallback((t) => setTags([...tags, t]), [tags]);
+  const onAdd = useCallback(
+    (t) => {
+      setTags([...tags, t]), [tags];
+    },
+    [tags]
+  );
 
   const onRemove = useCallback(
-    (t) => setTags([...tags].filter((p) => p === t)),
+    (t) => {
+      setTags([...tags].filter((p) => p === t));
+    },
     [tags]
   );
 
   const onSubmit = useCallback(() => {
-    console.log("onSubmit", { query });
     props.onSearch(tags, query ?? "");
   }, [props, tags, query]);
-
-  console.log("rendering", { tags, query });
 
   return (
     <InputGroup width="100%" alignItems="start">
@@ -134,6 +138,7 @@ class InputWithChips extends Component<InternalProps, State> {
   addTag(text: string): void {
     const chips = this.state.chips.concat(text);
     this.props.onQueryChange?.call(this, "");
+    this.props.onAdd?.call(this, text);
     this.setState({
       ...this.state,
       chips,
@@ -171,7 +176,6 @@ class InputWithChips extends Component<InternalProps, State> {
     } else if (event.code === "Space") {
       event.preventDefault();
       const tag = this.state.input;
-      this.props.onAdd?.call(this, tag);
       this.setState(
         {
           input: "",
