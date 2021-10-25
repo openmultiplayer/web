@@ -28,10 +28,6 @@ const ThreadView: FC<Props> = ({
 }) => {
   const router = useRouter();
   const [category, _setCategory] = useState(initialCategory);
-  const [query, setQuery] = useState<Query>({
-    tags: initialTags,
-    text: initialText,
-  });
 
   const setCategory = useCallback(
     (c) => {
@@ -44,17 +40,25 @@ const ThreadView: FC<Props> = ({
     },
     [router]
   );
-  const onSearch = useCallback((tags: string[], text: string) => {
-    setQuery({ tags, text });
-  }, []);
+  const onSearch = useCallback(
+    (tags: string[], text: string) => {
+      router.push(
+        `/discussion?${new URLSearchParams({
+          tags: tags.join(","),
+          query: text,
+        })}`
+      );
+    },
+    [router]
+  );
 
   const isAdmin = useIsAdmin();
   const { data, error } = useSWR<Post[], APIError>(
     "/forum?" +
       new URLSearchParams({
         category: category,
-        tags: query.tags.join(","),
-        query: query.text,
+        tags: initialTags.join(","),
+        query: initialText,
       }).toString(),
     apiSWR()
   );
@@ -72,7 +76,7 @@ const ThreadView: FC<Props> = ({
         isAdmin={isAdmin}
         category={category}
         tags={initialTags}
-        query={query.text}
+        query={initialText}
         onSelectCategory={setCategory}
         onSearch={onSearch}
       />

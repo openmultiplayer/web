@@ -125,9 +125,9 @@ class InputWithChips extends Component<InternalProps, State> {
     super(props);
 
     this.state = {
-      chips: this.props.initialTags ?? [],
+      chips: props.initialTags ?? [],
       tags: [],
-      input: "",
+      input: props.initialQuery ?? "",
     };
   }
 
