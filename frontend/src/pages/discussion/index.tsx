@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
   return {
     props: {
-      tags: tags !== "" ? tags.split(",") : [],
+      tags: tags !== undefined && tags !== "" ? tags.split(",") : [],
       text: text ?? "",
     },
   };
