@@ -12,7 +12,8 @@ import { mutate } from "swr";
 import CategoryList from "./CategoryList";
 import ThreadListItem from "./ThreadListItem";
 
-type Callbacks = {
+type HeaderProps = {
+  category: string;
   onSelectCategory: (c: string) => void;
   onSearch: (tags: string[], query: string) => void;
 };
@@ -23,11 +24,15 @@ const NewThreadButton = () => (
   </Link>
 );
 
-const ListHeader: FC<Callbacks> = ({ onSelectCategory, onSearch }) => {
+const ListHeader: FC<HeaderProps> = ({
+  category,
+  onSelectCategory,
+  onSearch,
+}) => {
   return (
     <Flex direction="row" gridGap="0.5em">
       <Box className="categories">
-        <CategoryList onSelect={onSelectCategory} />
+        <CategoryList category={category} onSelect={onSelectCategory} />
       </Box>
 
       <Box className="search" flexGrow={1}>
@@ -44,11 +49,13 @@ const ListHeader: FC<Callbacks> = ({ onSelectCategory, onSearch }) => {
 type Props = {
   data: Post[];
   isAdmin: boolean;
-} & Callbacks;
+  category: string;
+} & HeaderProps;
 
 const ThreadList: FC<Props> = ({
   data,
   isAdmin,
+  category,
   onSelectCategory,
   onSearch,
 }) => {
@@ -81,7 +88,11 @@ const ThreadList: FC<Props> = ({
 
   return (
     <div>
-      <ListHeader onSelectCategory={onSelectCategory} onSearch={onSearch} />
+      <ListHeader
+        category={category}
+        onSelectCategory={onSelectCategory}
+        onSearch={onSearch}
+      />
 
       <ol>{mapping(data)}</ol>
 
@@ -92,6 +103,8 @@ const ThreadList: FC<Props> = ({
           gap: 0.5em;
         }
         ol {
+          padding: 0;
+          margin: 0;
           list-style: none;
           display: flex;
           flex-direction: column;
