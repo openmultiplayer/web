@@ -12,14 +12,26 @@ import { allOption } from "./CategoryList";
 
 type Props = {
   initialCategory?: string;
-  initialQuery?: string;
   initialTags?: string[];
+  initialText?: string;
 };
 
-const ThreadView: FC<Props> = ({ initialCategory = "", initialQuery = "" }) => {
+type Query = {
+  tags: string[];
+  text: string;
+};
+
+const ThreadView: FC<Props> = ({
+  initialCategory = "",
+  initialTags = [],
+  initialText = "",
+}) => {
   const router = useRouter();
   const [category, _setCategory] = useState(initialCategory);
-  const [query, _setQuery] = useState(initialQuery);
+  const [query, setQuery] = useState<Query>({
+    tags: initialTags,
+    text: initialText,
+  });
 
   const setCategory = useCallback(
     (c) => {
@@ -32,11 +44,18 @@ const ThreadView: FC<Props> = ({ initialCategory = "", initialQuery = "" }) => {
     },
     [router]
   );
-  const setQuery = useCallback((q) => _setQuery(q), []);
+  const onSearch = useCallback((tags: string[], text: string) => {
+    setQuery({ tags, text });
+  }, []);
 
   const isAdmin = useIsAdmin();
   const { data, error } = useSWR<Post[], APIError>(
-    "/forum?" + new URLSearchParams({ category, query }).toString(),
+    "/forum?" +
+      new URLSearchParams({
+        category: category,
+        tags: query.tags.join(","),
+        query: query.text,
+      }).toString(),
     apiSWR()
   );
   if (error) {
@@ -52,8 +71,10 @@ const ThreadView: FC<Props> = ({ initialCategory = "", initialQuery = "" }) => {
         data={data}
         isAdmin={isAdmin}
         category={category}
+        tags={initialTags}
+        query={query.text}
         onSelectCategory={setCategory}
-        onSearch={setQuery}
+        onSearch={onSearch}
       />
 
       <style jsx>{`

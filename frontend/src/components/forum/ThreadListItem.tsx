@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { FC, useCallback } from "react";
 import { Post } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
+import LinkedTag from "./LinkedTag";
 
 type Props = {
   post: Post;
@@ -69,9 +70,9 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
           </div>
 
           <ul>
-            {["open.mp", "question", "help"].map((t) => (
+            {post.tags.map((t) => (
               <li key={t}>
-                <Tag>{t}</Tag>
+                <LinkedTag name={t} />
               </li>
             ))}
           </ul>

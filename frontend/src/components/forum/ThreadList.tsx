@@ -14,6 +14,8 @@ import ThreadListItem from "./ThreadListItem";
 
 type HeaderProps = {
   category: string;
+  tags: string[];
+  query: string;
   onSelectCategory: (c: string) => void;
   onSearch: (tags: string[], query: string) => void;
 };
@@ -26,6 +28,8 @@ const NewThreadButton = () => (
 
 const ListHeader: FC<HeaderProps> = ({
   category,
+  tags,
+  query,
   onSelectCategory,
   onSearch,
 }) => {
@@ -36,7 +40,11 @@ const ListHeader: FC<HeaderProps> = ({
       </Box>
 
       <Box className="search" flexGrow={1}>
-        <ThreadSearch onSearch={onSearch} />
+        <ThreadSearch
+          onSearch={onSearch}
+          initialTags={tags}
+          initialQuery={query}
+        />
       </Box>
 
       <Box className="new">
@@ -56,6 +64,8 @@ const ThreadList: FC<Props> = ({
   data,
   isAdmin,
   category,
+  tags,
+  query,
   onSelectCategory,
   onSearch,
 }) => {
@@ -90,6 +100,8 @@ const ThreadList: FC<Props> = ({
     <div>
       <ListHeader
         category={category}
+        tags={tags}
+        query={query}
         onSelectCategory={onSelectCategory}
         onSearch={onSearch}
       />

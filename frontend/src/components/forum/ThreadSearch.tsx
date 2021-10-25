@@ -12,41 +12,26 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import React, { Component, FC } from "react";
+import React, {
+  ChangeEvent,
+  Component,
+  FC,
+  KeyboardEvent,
+  useCallback,
+  useState,
+} from "react";
 import debounce from "lodash.debounce";
 import { apiSWR } from "src/fetcher/fetcher";
-
-type Callbacks = {
-  onSearch: (tags: string[], query: string) => void;
-};
-
-const ThreadSearch: FC<Callbacks> = ({ onSearch }) => {
-  // const [tags, setTags] = useState([]);
-
-  // const onSubmit = () => {
-  //   onSearch(tags, query);
-  // };
-
-  return (
-    <InputGroup width="100%" alignItems="start">
-      <InputWithChips
-        containerProps={{ width: "100%", borderLeftRadius: "md" }}
-      />
-
-      <Button
-        minWidth="min-content"
-        borderLeftRadius={0}
-        title="Search for threads"
-      >
-        Search
-      </Button>
-    </InputGroup>
-  );
-};
 
 type Props = {
   // The tags to show the component with when it's created
   initialTags?: string[];
+
+  // The query to pre fill the end of the input box with
+  initialQuery?: string;
+
+  // Callback for typing queries
+  onQueryChange?: (text: string) => void;
 
   // Callback to fire when the user adds a new tags
   onAdd?: (text: string) => void;
@@ -54,8 +39,52 @@ type Props = {
   // Callback to fire when the user removes a tag either by backspace or click
   onRemove?: (index: number, text: string) => void;
 
-  // Props to pass to <Box /> container
-  containerProps?: FlexProps;
+  // Callback to fire when the user hits the search button
+  onSearch: (tags: string[], query: string) => void;
+};
+
+const ThreadSearch: FC<Props> = (props) => {
+  const [tags, setTags] = useState<string[]>(props.initialTags ?? []);
+  const [query, setQuery] = useState(props.initialQuery);
+
+  const onQueryChange = useCallback((q) => {
+    setQuery(q);
+  }, []);
+
+  const onAdd = useCallback((t) => setTags([...tags, t]), [tags]);
+
+  const onRemove = useCallback(
+    (t) => setTags([...tags].filter((p) => p === t)),
+    [tags]
+  );
+
+  const onSubmit = useCallback(() => {
+    console.log("onSubmit", { query });
+    props.onSearch(tags, query ?? "");
+  }, [props, tags, query]);
+
+  console.log("rendering", { tags, query });
+
+  return (
+    <InputGroup width="100%" alignItems="start">
+      <InputWithChips
+        onQueryChange={onQueryChange}
+        onAdd={onAdd}
+        onRemove={onRemove}
+        containerProps={{ width: "100%", borderLeftRadius: "md" }}
+        {...props}
+      />
+
+      <Button
+        minWidth="min-content"
+        borderLeftRadius={0}
+        title="Search for threads"
+        onClick={onSubmit}
+      >
+        Search
+      </Button>
+    </InputGroup>
+  );
 };
 
 type Tag = {
@@ -69,6 +98,11 @@ type State = {
   tags: Tag[];
   input: string;
 };
+
+type InternalProps = {
+  // Props to pass to <Box /> container
+  containerProps?: FlexProps;
+} & Props;
 
 /**
  * InputWithChips renders what appears to be a single input field that contains
@@ -86,7 +120,7 @@ type State = {
  * It doesn't handle arrow keys so you can't move around the whole element like
  * an input but that could be added easily.
  */
-class InputWithChips extends Component<Props, State> {
+class InputWithChips extends Component<InternalProps, State> {
   constructor(props: Props) {
     super(props);
 
@@ -99,6 +133,7 @@ class InputWithChips extends Component<Props, State> {
 
   addTag(text: string): void {
     const chips = this.state.chips.concat(text);
+    this.props.onQueryChange?.call(this, "");
     this.setState({
       ...this.state,
       chips,
@@ -112,15 +147,20 @@ class InputWithChips extends Component<Props, State> {
     this.props.onRemove?.call(this, idx, this.state.chips[idx]);
   }
 
-  handleBetweenInput(idx: number, event: any): void {
+  handleBetweenInput(
+    idx: number,
+    event: KeyboardEvent<HTMLInputElement> | ChangeEvent<HTMLInputElement>
+  ): void {
     event.preventDefault();
 
-    if (event.code === "Backspace") {
-      this.removeTag(idx);
+    if (event instanceof KeyboardEvent) {
+      if (event.code === "Backspace") {
+        this.removeTag(idx);
+      }
     }
   }
 
-  handlePrimaryInputKey(event: any): void {
+  handlePrimaryInputKey(event: KeyboardEvent<HTMLInputElement>): void {
     if (
       event.code === "Backspace" &&
       // only remove the end item if the input box is empty otherwise,
@@ -128,17 +168,20 @@ class InputWithChips extends Component<Props, State> {
       this.state.input.length === 0
     ) {
       this.removeTag(this.state.chips.length - 1);
-    } else if (event.code === "Comma" || event.code === "Space") {
-      //   event.preventDefault();
-      //   this.props.onAdd?.call(this, this.state.input);
-      //   this.setState({
-      //     chips: [...this.state.chips, this.state.input],
-      //     input: "",
-      //   });
+    } else if (event.code === "Space") {
+      event.preventDefault();
+      const tag = this.state.input;
+      this.props.onAdd?.call(this, tag);
+      this.setState(
+        {
+          input: "",
+        },
+        () => this.addTag(tag)
+      );
     }
   }
 
-  handlePrimaryInputChange(event: any): void {
+  handlePrimaryInputChange(event: ChangeEvent<HTMLInputElement>): void {
     const query = event.target.value;
 
     if (query.length > 0) {
@@ -153,15 +196,18 @@ class InputWithChips extends Component<Props, State> {
     } else {
       this.setState({ ...this.state, input: query, tags: [] });
     }
+
+    this.props.onQueryChange?.call(this, query);
   }
 
   handleClickSuggestion(text: string): void {
-    const chips = this.state.chips.concat(text);
-    this.setState({
-      ...this.state,
-      chips,
-      input: "",
-    });
+    this.setState(
+      {
+        ...this.state,
+        input: "",
+      },
+      () => this.addTag(text)
+    );
   }
 
   render(): JSX.Element {
