@@ -55,11 +55,11 @@ const ThreadView: FC<Props> = ({
   const isAdmin = useIsAdmin();
   const { data, error } = useSWR<Post[], APIError>(
     "/forum?" +
-      new URLSearchParams({
-        category: category,
-        tags: initialTags.join(","),
-        query: initialText,
-      }).toString(),
+      new URLSearchParams([
+        ["category", category],
+        ["query", initialText],
+        ...initialTags.map((tag) => ["tags", tag]),
+      ]).toString(),
     apiSWR()
   );
   if (error) {
