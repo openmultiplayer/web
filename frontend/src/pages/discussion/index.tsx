@@ -1,49 +1,30 @@
-import { NextPage } from "next";
-import React, { useCallback, useState } from "react";
-import { useIsAdmin } from "src/auth/hooks";
-import ErrorBanner from "src/components/ErrorBanner";
-import ThreadList from "src/components/forum/ThreadList";
-import LoadingBanner from "src/components/LoadingBanner";
-import { apiSWR } from "src/fetcher/fetcher";
-import { APIError } from "src/types/_generated_Error";
-import { Post } from "src/types/_generated_Forum";
-import useSWR from "swr";
+import { GetServerSideProps, NextPage } from "next";
+import { useRouter } from "next/router";
+import ThreadView from "src/components/forum/ThreadView";
 
 const Page: NextPage = () => {
-  const [category, _setCategory] = useState("");
-  const [query, _setQuery] = useState("");
+  const {
+    query: { text, tags },
+  } = useRouter();
 
-  const setCategory = useCallback((c) => _setCategory(c), []);
-  const setQuery = useCallback((q) => _setQuery(q), []);
-
-  const isAdmin = useIsAdmin();
-  const { data, error } = useSWR<Post[], APIError>(
-    "/forum?" + new URLSearchParams({ category, query }).toString(),
-    apiSWR()
-  );
-  if (error) {
-    console.error(error);
-    return <ErrorBanner {...error} />;
-  }
-  if (!data) {
-    return <LoadingBanner />;
-  }
   return (
-    <div className="center pv2">
-      <ThreadList
-        data={data}
-        isAdmin={isAdmin}
-        onSelectCategory={setCategory}
-        onSearch={setQuery}
-      />
-
-      <style jsx>{`
-        div {
-          max-width: 48em;
-        }
-      `}</style>
-    </div>
+    <ThreadView
+      initialTags={tags !== "" ? (tags as string)?.split(",") : []}
+      initialText={text as string}
+    />
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const tags = ctx.query?.["tags"] as string;
+  const text = ctx.query?.["text"] as string;
+
+  return {
+    props: {
+      tags: tags !== undefined && tags !== "" ? tags.split(",") : [],
+      text: text ?? "",
+    },
+  };
 };
 
 export default Page;

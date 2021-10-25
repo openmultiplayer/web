@@ -5,16 +5,16 @@ import { APIError } from "src/types/_generated_Error";
 import { Category, CategorySchema } from "src/types/_generated_Forum";
 import useSWR from "swr";
 
-const allOption = "All";
+export const allOption = "All";
 
 type Props = {
+  category: string;
   onSelect: (c: string) => void;
 };
 
-const CategoryList: FC<Props> = ({ onSelect }) => {
+const CategoryList: FC<Props> = ({ category, onSelect }) => {
   const onChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    const value = event.target.value;
-    onSelect(value === allOption ? "" : value);
+    onSelect(event.target.value);
   };
   const { data, error } = useSWR<Category[], APIError>(
     "/forum/categories",
@@ -30,7 +30,7 @@ const CategoryList: FC<Props> = ({ onSelect }) => {
   }
 
   return (
-    <Select onChange={onChange} title="Category">
+    <Select onChange={onChange} title="Category" value={category}>
       <option>{allOption}</option>
       {data.map((c) => (
         <option key={c.id}>{c.name}</option>
