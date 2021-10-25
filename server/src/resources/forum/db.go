@@ -173,8 +173,9 @@ func (d *DB) GetThreads(
 		filters = append(filters, db.Post.Title.Contains(query))
 	}
 	if len(tags) > 0 {
-		// TODO:
-		// filters = append(filters, db.Post.Tags.HasSome(tags))
+		for _, v := range tags {
+			filters = append(filters, db.Post.Tags.Some(db.Tag.Name.Equals(v)))
+		}
 	}
 	if max < 1 {
 		max = 1
