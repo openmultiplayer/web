@@ -16,11 +16,6 @@ type Props = {
   initialText?: string;
 };
 
-type Query = {
-  tags: string[];
-  text: string;
-};
-
 const ThreadView: FC<Props> = ({
   initialCategory = "",
   initialTags = [],
