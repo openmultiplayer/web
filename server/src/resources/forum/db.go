@@ -169,7 +169,7 @@ func (d *DB) GetThreads(
 		filters = append(filters, db.Post.Category.Where(db.Category.Name.Equals(category)))
 	}
 	if query != "" {
-		filters = append(filters, db.Post.Title.Contains(query))
+		filters = append(filters, db.Post.Title.Search(query), db.Post.Body.Search(query))
 	}
 	if len(tags) > 0 {
 		for _, v := range tags {

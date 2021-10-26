@@ -4,10 +4,11 @@ datasource db {
 }
 
 generator client {
-  provider      = "go run github.com/prisma/prisma-client-go"
-  output        = "../server/src/db"
-  package       = "db"
-  binaryTargets = ["native"]
+  provider        = "go run github.com/prisma/prisma-client-go"
+  output          = "../server/src/db"
+  package         = "db"
+  binaryTargets   = ["native"]
+  previewFeatures = ["fullTextSearch"]
 }
 
 enum AuthMethod {
@@ -118,6 +119,8 @@ model Post {
   rootPostId  String?
   replyPostId String?
   categoryId  String?
+
+  @@index([title, body])
 }
 
 model Tag {
