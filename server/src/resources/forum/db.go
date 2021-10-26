@@ -157,11 +157,10 @@ func (d *DB) GetThreads(
 	before time.Time,
 	sort string,
 	max int,
-	deleted bool,
+	includePosts bool,
+	includeDeleted bool,
 ) ([]Post, error) {
-	filters := []db.PostWhereParam{
-		db.Post.First.Equals(true),
-	}
+	filters := []db.PostWhereParam{}
 
 	if !before.IsZero() {
 		filters = append(filters, db.Post.CreatedAt.Before(before))
@@ -170,7 +169,7 @@ func (d *DB) GetThreads(
 		filters = append(filters, db.Post.Category.Where(db.Category.Name.Equals(category)))
 	}
 	if query != "" {
-		filters = append(filters, db.Post.Title.Contains(query))
+		filters = append(filters, db.Post.Title.Search(query), db.Post.Body.Search(query))
 	}
 	if len(tags) > 0 {
 		for _, v := range tags {
@@ -182,6 +181,12 @@ func (d *DB) GetThreads(
 	}
 	if max > 100 {
 		max = 100
+	}
+	if !includePosts {
+		filters = append(filters, db.Post.First.Equals(true))
+	}
+	if includeDeleted {
+		filters = append(filters, db.Post.DeletedAt.Lte(time.Now()))
 	}
 
 	posts, err := d.db.Post.
@@ -200,11 +205,6 @@ func (d *DB) GetThreads(
 
 	result := []Post{}
 	for _, p := range posts {
-		// if "show deleted" is false, then filter out posts with a deleted date
-		if deleted == false && p.InnerPost.DeletedAt != nil {
-			continue
-		}
-
 		p.Body = ""
 		result = append(result, *FromModel(&p))
 	}

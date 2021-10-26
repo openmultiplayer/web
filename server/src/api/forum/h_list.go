@@ -16,6 +16,7 @@ type listParams struct {
 	Before   time.Time `qstring:"before"`
 	Sort     string    `qstring:"sort"`
 	Max      int       `qstring:"max"`
+	Posts    bool      `qstring:"posts"`
 }
 
 func (s *service) list(w http.ResponseWriter, r *http.Request) {
@@ -39,7 +40,7 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 	// Admins get to see deleted posts
 	isAdmin := authentication.IsRequestAdmin(r)
 
-	posts, err := s.repo.GetThreads(r.Context(), p.Tags, p.Category, p.Query, p.Before, p.Sort, p.Max, isAdmin)
+	posts, err := s.repo.GetThreads(r.Context(), p.Tags, p.Category, p.Query, p.Before, p.Sort, p.Max, p.Posts, isAdmin)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
