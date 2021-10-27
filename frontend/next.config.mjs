@@ -1,24 +1,21 @@
-const fs = require("fs");
-const path = require("path");
+import { readdirSync, statSync } from "fs";
+import { join } from "path";
 
-const parseDir = require("./scripts/gentree");
+import parseDir from "./scripts/gentree.mjs";
 
-const localesFromContent = fs
-  .readdirSync("content")
-  .filter((v) => fs.statSync(path.join("content", v)).isDirectory());
+const localesFromContent = readdirSync("content").filter((v) =>
+  statSync(join("content", v)).isDirectory()
+);
 
-const localesFromDocs = fs
-  .readdirSync("../docs/translations")
-  .filter((v) =>
-    fs.statSync(path.join("../docs/translations", v)).isDirectory()
-  );
+const localesFromDocs = readdirSync("../docs/translations").filter((v) =>
+  statSync(join("../docs/translations", v)).isDirectory()
+);
 
 const locales = [
   ...new Set([...localesFromContent, ...localesFromDocs]),
 ].sort();
 
-module.exports = (phase) => {
-  console.log("Phase:", phase);
+const config = (phase) => {
   return {
     serverRuntimeConfig: { phase },
     env: {
@@ -30,7 +27,9 @@ module.exports = (phase) => {
     },
     images: {
       domains: ["assets.open.mp"],
+      formats: ["image/avif", "image/webp"],
     },
+
     // prettier-ignore
     redirects() {
       return [
@@ -49,3 +48,5 @@ module.exports = (phase) => {
     },
   };
 };
+
+export default config;
