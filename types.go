@@ -9,6 +9,7 @@ import (
 	"github.com/Southclaws/supervillain"
 	"github.com/openmultiplayer/web/server/src/api/auth/discord"
 	"github.com/openmultiplayer/web/server/src/api/auth/github"
+	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/resources/forum"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/resources/user"
@@ -54,6 +55,7 @@ func main() {
 	convert("Server", "", server.All{})
 	convert("User", "", user.User{})
 	convert("Forum", "", forum.Post{})
+	convert("SearchResult", "", docsindex.SearchResults{})
 
 	convert("GitHub", "", github.Link{}, github.Callback{})
 	convert("Discord", "", discord.Link{}, discord.Callback{})

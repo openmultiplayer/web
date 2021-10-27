@@ -1,11 +1,7 @@
-import { last } from "lodash/fp";
 import Link from "next/link";
 import { FC, useCallback, useRef, useState } from "react";
 import { API_ADDRESS } from "src/config";
-import { Hit, SearchResults } from "src/types/searchResult";
-
-const clean = (path: string): string =>
-  noExtension(last(path.split("/")) ?? path);
+import { Hit, SearchResults } from "src/types/_generated_SearchResult";
 
 const noExtension = (path: string) => path.replace(".md", "");
 
@@ -57,10 +53,10 @@ const Search: FC = () => {
         />
         {active && results.length > 0 && (
           <ul className="results">
-            {results.map(({ id }) => (
-              <li className="result" key={id}>
-                <Link href={`/${noExtension(id)}`} as={`/${noExtension(id)}`}>
-                  <a>{clean(id)}</a>
+            {results.map(({ url, title }) => (
+              <li className="result" key={url}>
+                <Link href={`/${noExtension(url)}`} as={`/${noExtension(url)}`}>
+                  <a>{title}</a>
                 </Link>
               </li>
             ))}

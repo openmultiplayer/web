@@ -7,6 +7,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"time"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/bbalet/stopwords"
@@ -26,11 +27,28 @@ type Index struct {
 }
 
 type Document struct {
-	Title       string   `yaml:"title"`
-	Description string   `yaml:"description"`
-	Tags        []string `yaml:"tags"`
+	Title       string   `json:"title"`
+	Description string   `json:"description"`
+	Tags        []string `json:"tags"`
 
 	Path string
+}
+
+type SearchResults struct {
+	Total int           `json:"total"`
+	Took  time.Duration `json:"took"`
+	Hits  []Hit         `json:"hits"`
+}
+
+type Hit struct {
+	Score float64 `json:"score"`
+
+	URL   string `json:"url"`
+	Title string `json:"title"`
+	Desc  string `json:"desc"`
+
+	TitleFragment string `json:"title_fragment"`
+	DescFragment  string `json:"desc_fragment"`
 }
 
 func New(l *zap.Logger, cfg config.Config) (*Index, error) {
@@ -41,7 +59,21 @@ func New(l *zap.Logger, cfg config.Config) (*Index, error) {
 	idx, err := bleve.Open(cfg.DocsIndexPath)
 	if err != nil {
 		l.Warn("could not open bleve index, creating new one", zap.String("path", cfg.DocsIndexPath))
-		idx, err = bleve.New(cfg.DocsIndexPath, bleve.NewIndexMapping())
+		im := bleve.NewIndexMapping()
+		docsmapping := bleve.NewDocumentMapping()
+
+		// Field mappings for title and description
+		titleFieldMapping := bleve.NewTextFieldMapping()
+		titleFieldMapping.Analyzer = "en"
+		docsmapping.AddFieldMappingsAt("title", titleFieldMapping)
+
+		descFieldMapping := bleve.NewTextFieldMapping()
+		descFieldMapping.Analyzer = "en"
+		docsmapping.AddFieldMappingsAt("description", descFieldMapping)
+
+		im.AddDocumentMapping("Document", docsmapping)
+
+		idx, err = bleve.New(cfg.DocsIndexPath, im)
 		if err != nil {
 			return nil, errors.Wrap(err, "failed to create new bleve db")
 		}
@@ -55,14 +87,41 @@ func (i *Index) Build() error {
 	return i.buildIndex(i.path)
 }
 
-func (i *Index) Search(query string) (*bleve.SearchResult, error) {
+func (i *Index) Search(query string) (*SearchResults, error) {
 	req := bleve.NewSearchRequest(bleve.NewQueryStringQuery(query))
 	req.Highlight = bleve.NewHighlight()
-	res, err := i.db.Search(req)
+	req.Fields = []string{"title", "description", "tags"}
+	r, err := i.db.Search(req)
 	if err != nil {
 		return nil, err
 	}
-	return res, nil
+
+	res := SearchResults{
+		Total: int(r.Total),
+		Took:  r.Took,
+		Hits:  []Hit{},
+	}
+
+	for _, v := range r.Hits {
+		titleFragment := ""
+		descFragment := ""
+		if len(v.Fragments["title"]) > 0 {
+			titleFragment = v.Fragments["title"][0]
+		}
+		if len(v.Fragments["description"]) > 0 {
+			descFragment = v.Fragments["description"][0]
+		}
+		res.Hits = append(res.Hits, Hit{
+			Score:         v.Score,
+			URL:           v.ID,
+			Title:         v.Fields["title"].(string),
+			TitleFragment: titleFragment,
+			Desc:          v.Fields["description"].(string),
+			DescFragment:  descFragment,
+		})
+	}
+
+	return &res, nil
 }
 
 func (i *Index) buildIndex(dir string) error {
@@ -97,10 +156,10 @@ func (i *Index) buildIndex(dir string) error {
 	return nil
 }
 
-func (i *Index) buildDocument(path string) (*Document, error) {
+func (i *Index) buildDocument(path string) (Document, error) {
 	content, err := ioutil.ReadFile(path)
 	if err != nil {
-		return nil, err
+		return Document{}, err
 	}
 
 	d := i.extract(content)
@@ -137,7 +196,7 @@ func (i *Index) buildDocument(path string) (*Document, error) {
 		d.Title = name
 	}
 
-	return &d, nil
+	return d, nil
 }
 
 func nameFromPath(path string) string {
