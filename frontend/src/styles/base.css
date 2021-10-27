@@ -3,128 +3,10 @@
 
   English Grotesque is the primary brand typeface for headings 1, 2, 3 and 4.
   Paragraphcs should use the sans serif default stack from `body`.
-
-  The variables in :root were copied from the old Docusaurus site.
 */
-
-:root {
-  --ifm-dark-value: 10%;
-  --ifm-darker-value: 15%;
-  --ifm-darkest-value: 30%;
-  --ifm-light-value: 15%;
-  --ifm-lighter-value: 30%;
-  --ifm-lightest-value: 50%;
-  --ifm-color-primary: #3578e5;
-  --ifm-color-primary-dark: #306cce;
-  --ifm-color-primary-darker: #2d66c3;
-  --ifm-color-primary-darkest: #2554a0;
-  --ifm-color-primary-light: #538ce9;
-  --ifm-color-primary-lighter: #72a1ed;
-  --ifm-color-primary-lightest: #9abcf2;
-  --ifm-color-secondary: #ebedf0;
-  --ifm-color-secondary-dark: #d4d5d8;
-  --ifm-color-secondary-darker: #c8c9cc;
-  --ifm-color-secondary-darkest: #a4a6a8;
-  --ifm-color-secondary-light: #eef0f2;
-  --ifm-color-secondary-lighter: #f1f2f5;
-  --ifm-color-secondary-lightest: #f5f6f8;
-  --ifm-color-success: #00a400;
-  --ifm-color-success-dark: #009400;
-  --ifm-color-success-darker: #008b00;
-  --ifm-color-success-darkest: #007300;
-  --ifm-color-success-light: #26b226;
-  --ifm-color-success-lighter: #4dbf4d;
-  --ifm-color-success-lightest: #80d280;
-  --ifm-color-info: #54c7ec;
-  --ifm-color-info-dark: #4cb3d4;
-  --ifm-color-info-darker: #47a9c9;
-  --ifm-color-info-darkest: #3b8ba5;
-  --ifm-color-info-light: #6ecfef;
-  --ifm-color-info-lighter: #87d8f2;
-  --ifm-color-info-lightest: #aae3f6;
-  --ifm-color-warning: #ffba00;
-  --ifm-color-warning-dark: #e6a700;
-  --ifm-color-warning-darker: #d99e00;
-  --ifm-color-warning-darkest: #b38200;
-  --ifm-color-warning-light: #ffc426;
-  --ifm-color-warning-lighter: #ffcf4d;
-  --ifm-color-warning-lightest: #ffdd80;
-  --ifm-color-danger: #fa383e;
-  --ifm-color-danger-dark: #e13238;
-  --ifm-color-danger-darker: #d53035;
-  --ifm-color-danger-darkest: #af272b;
-  --ifm-color-danger-light: #fb565b;
-  --ifm-color-danger-lighter: #fb7478;
-  --ifm-color-danger-lightest: #fd9c9f;
-  --ifm-color-white: #fff;
-  --ifm-color-black: #000;
-  --ifm-color-gray-0: var(--ifm-color-white);
-  --ifm-color-gray-100: #f5f6f7;
-  --ifm-color-gray-200: #ebedf0;
-  --ifm-color-gray-300: #dadde1;
-  --ifm-color-gray-400: #ccd0d5;
-  --ifm-color-gray-500: #bec3c9;
-  --ifm-color-gray-600: #8d949e;
-  --ifm-color-gray-700: #606770;
-  --ifm-color-gray-800: #444950;
-  --ifm-color-gray-900: #1c1e21;
-  --ifm-color-gray-1000: var(--ifm-color-black);
-  --ifm-color-emphasis-0: var(--ifm-color-gray-0);
-  --ifm-color-emphasis-100: var(--ifm-color-gray-100);
-  --ifm-color-emphasis-200: var(--ifm-color-gray-200);
-  --ifm-color-emphasis-300: var(--ifm-color-gray-300);
-  --ifm-color-emphasis-400: var(--ifm-color-gray-400);
-  --ifm-color-emphasis-500: var(--ifm-color-gray-500);
-  --ifm-color-emphasis-600: var(--ifm-color-gray-600);
-  --ifm-color-emphasis-700: var(--ifm-color-gray-700);
-  --ifm-color-emphasis-800: var(--ifm-color-gray-800);
-  --ifm-color-emphasis-900: var(--ifm-color-gray-900);
-  --ifm-color-emphasis-1000: var(--ifm-color-gray-1000);
-  --ifm-color-content: var(--ifm-color-emphasis-900);
-  --ifm-color-content-inverse: var(--ifm-color-emphasis-0);
-  --ifm-color-content-secondary: #606770;
-  --ifm-background-color: transparent;
-  --ifm-background-surface-color: var(--ifm-color-content-inverse);
-  --ifm-global-border-width: 1px;
-  --ifm-global-radius: 0.2rem;
-  --ifm-hover-overlay: rgba(0, 0, 0, 0.05);
-  --ifm-font-color-base: var(--ifm-color-content);
-  --ifm-font-color-base-inverse: var(--ifm-color-content-inverse);
-  --ifm-font-color-secondary: var(--ifm-color-content-secondary);
-  --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-    Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  --ifm-font-size-base: 100%;
-  --ifm-font-weight-light: 300;
-  --ifm-font-weight-normal: 400;
-  --ifm-font-weight-semibold: 500;
-  --ifm-font-weight-bold: 700;
-  --ifm-font-weight-base: var(--ifm-font-weight-normal);
-  --ifm-line-height-base: 1.65;
-  --ifm-global-spacing: 1rem;
-  --ifm-spacing-vertical: var(--ifm-global-spacing);
-  --ifm-spacing-horizontal: var(--ifm-global-spacing);
-  --ifm-transition-fast: 200ms;
-  --ifm-transition-slow: 400ms;
-  --ifm-global-shadow-lw: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  --ifm-global-shadow-md: 0 5px 40px rgba(0, 0, 0, 0.2);
-  --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2),
-    0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  --ifm-z-index-dropdown: 100;
-  --ifm-z-index-fixed: 200;
-  --ifm-z-index-overlay: 400;
-}
 
 body {
   background-color: #fefefe;
-
-  /* from csstricks */
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans",
-    "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
-    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
 }
 
 /* Necessary to prevent overflow issues in flexbox. */
@@ -136,39 +18,6 @@ pre {
   border-radius: 0.2em;
 }
 
-/* Headings use the brand typeface, English Grotesque. */
-h1,
-h2,
-h3,
-h4 {
-  font-family: english-grotesque, sans-serif;
-}
-
-p {
-  line-height: 1.5;
-}
-
-a {
-  color: var(--ifm-color-primary);
-}
-
-a:visited {
-  color: var(--ifm-color-primary-darkest);
-}
-
-:root {
-  --ifm-code-background: var(--ifm-color-emphasis-200);
-  --ifm-code-border-radius: var(--ifm-global-radius);
-  --ifm-code-color: var(--ifm-color-emphasis-900);
-  --ifm-code-font-size: 90%;
-  --ifm-code-padding-horizontal: 0.3rem;
-  --ifm-code-padding-vertical: 0.2rem;
-  --ifm-pre-background: var(--ifm-color-emphasis-100);
-  --ifm-pre-border-radius: var(--ifm-code-border-radius);
-  --ifm-pre-color: inherit;
-  --ifm-pre-line-height: 1.45;
-  --ifm-pre-padding: 1rem;
-}
 :not(pre) > code {
   background-color: var(--ifm-code-background);
   border-radius: var(--ifm-code-border-radius);
