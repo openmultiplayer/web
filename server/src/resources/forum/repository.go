@@ -8,7 +8,7 @@ import (
 type Repository interface {
 	CreateThread(
 		ctx context.Context,
-		title, body, authorID, categoryID string,
+		title, body, authorID, categoryName string,
 		tags []string,
 	) (*Post, error)
 

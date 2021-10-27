@@ -2,11 +2,11 @@ package forum
 
 import (
 	"context"
-	"errors"
 	"fmt"
 	"time"
 
 	"github.com/gosimple/slug"
+	"github.com/pkg/errors"
 
 	"github.com/openmultiplayer/web/server/src/db"
 )
@@ -27,11 +27,22 @@ func New(db *db.PrismaClient) Repository {
 
 func (d *DB) CreateThread(
 	ctx context.Context,
-	title, body, authorID, categoryID string,
+	title, body, authorID, categoryName string,
 	tags []string,
 ) (*Post, error) {
 	slug := slug.Make(title)
 	short := makeShortBody(body)
+
+	tagset, err := d.createTags(ctx, tags)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to upsert tags for linking to post")
+	}
+
+	additional := []db.PostSetParam{
+		db.Post.Title.Set(title),
+		db.Post.Category.Link(db.Category.Name.Equals(categoryName)),
+		db.Post.Tags.Link(tagset...),
+	}
 
 	post, err := d.db.Post.
 		CreateOne(
@@ -40,8 +51,7 @@ func (d *DB) CreateThread(
 			db.Post.First.Set(true),
 			db.Post.Author.Link(db.User.ID.Equals(authorID)),
 
-			db.Post.Title.Set(title),
-			db.Post.Category.Link(db.Category.ID.Equals(categoryID)),
+			additional...,
 		).
 		With(db.Post.Author.Fetch()).
 		Exec(ctx)
@@ -53,7 +63,11 @@ func (d *DB) CreateThread(
 		FindUnique(
 			db.Post.ID.Equals(post.ID),
 		).
-		With(db.Post.Author.Fetch()).
+		With(
+			db.Post.Author.Fetch(),
+			db.Post.Category.Fetch(),
+			db.Post.Tags.Fetch(),
+		).
 		Update(
 			db.Post.Slug.Set(fmt.Sprintf("%s-%s", post.ID, slug)),
 		).
@@ -63,6 +77,23 @@ func (d *DB) CreateThread(
 	}
 
 	return FromModel(post), nil
+}
+
+func (d *DB) createTags(ctx context.Context, tags []string) ([]db.TagWhereParam, error) {
+	setters := []db.TagWhereParam{}
+	for _, tag := range tags {
+		t, err := d.db.Tag.
+			UpsertOne(db.Tag.Name.Equals(tag)).
+			Update().
+			Create(db.Tag.Name.Set(tag)).
+			Exec(ctx)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to upsert tag")
+		}
+		fmt.Println("upsert tag", tag, t)
+		setters = append(setters, db.Tag.Name.Equals(tag))
+	}
+	return setters, nil
 }
 
 func (d *DB) CreatePost(
@@ -128,7 +159,11 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 		FindUnique(
 			db.Post.ID.Equals(postID),
 		).
-		With(db.Post.Author.Fetch()).
+		With(
+			db.Post.Author.Fetch(),
+			db.Post.Tags.Fetch(),
+			db.Post.Category.Fetch(),
+		).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
@@ -186,7 +221,12 @@ func (d *DB) GetThreads(
 		filters = append(filters, db.Post.First.Equals(true))
 	}
 	if includeDeleted {
-		filters = append(filters, db.Post.DeletedAt.Lte(time.Now()))
+		filters = append(filters, db.Post.Or(
+			db.Post.DeletedAt.Lte(time.Now()),
+			db.Post.DeletedAt.IsNull()),
+		)
+	} else {
+		filters = append(filters, db.Post.DeletedAt.IsNull())
 	}
 
 	posts, err := d.db.Post.
