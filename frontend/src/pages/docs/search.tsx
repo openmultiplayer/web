@@ -6,10 +6,10 @@ import { last, map } from "lodash/fp";
 
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
-import { Hit, SearchResults } from "src/types/searchResult";
 import Link from "next/link";
 import LoadingBanner from "src/components/LoadingBanner";
 import ErrorBanner from "src/components/ErrorBanner";
+import { Hit, SearchResults } from "src/types/_generated_SearchResult";
 
 type Params = {
   q: string;
@@ -28,8 +28,8 @@ const noExtension = (path: string) => path.replace(".md", "");
 
 const resultToItem = (h: Hit) => (
   <li>
-    <Link href={h.id}>
-      <a>{clean(h.id)}</a>
+    <Link href={h.url}>
+      <a>{clean(h.url)}</a>
     </Link>
   </li>
 );
@@ -79,7 +79,7 @@ const Page: FC<Props> = ({ query, results, error }) => {
       <Form />
       {query && (
         <>
-          <h1>{results?.total_hits} Search Results</h1>
+          <h1>{results?.total} Search Results</h1>
           <Results query={query} results={results} />
         </>
       )}
