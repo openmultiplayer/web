@@ -71,7 +71,7 @@ services:
       MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
       MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
     ports:
-      - 8082:9000
+      - 9001:9001
     volumes:
       - ${DATA_DIR}/openmp/minio:/data
     labels:
@@ -80,7 +80,7 @@ services:
       traefik.http.routers.omp_index_minio.rule: Host(`assets.open.mp`)
       traefik.http.routers.omp_index_minio.entrypoints: https
       traefik.http.routers.omp_index_minio.tls.certresolver: default
-      traefik.http.services.omp_index_minio.loadbalancer.server.port: "9001"
+      traefik.http.services.omp_index_minio.loadbalancer.server.port: "9000"
 
   prometheus:
     image: prom/prometheus
