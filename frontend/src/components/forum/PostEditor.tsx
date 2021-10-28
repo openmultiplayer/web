@@ -25,9 +25,17 @@ type Props = {
   initialTitle?: string;
   initialBody?: string;
   onSubmit: (post: PostPayload) => void;
+  disableThreadCreationOptions: boolean;
+  postButtonText: string;
 };
 
-const PostEditor: FC<Props> = ({ initialTitle, initialBody, onSubmit }) => {
+const PostEditor: FC<Props> = ({
+  initialTitle,
+  initialBody,
+  onSubmit,
+  disableThreadCreationOptions,
+  postButtonText = "Create Post",
+}) => {
   const [body, setBody] = useState("");
   const [tags, setTags] = useState<string[]>([]);
   const [category, setCategory] = useState("General");
@@ -95,6 +103,12 @@ const PostEditor: FC<Props> = ({ initialTitle, initialBody, onSubmit }) => {
               defaultValue={initialBody}
               onChange={onChange}
               placeholder="Your post content..."
+              disableExtensions={[
+                "container_notice",
+                "table",
+                "checkbox_list",
+                "placeholder",
+              ]}
               onSearchLink={async (term: string) => {
                 // TODO: FIX THIS
                 const result = await apiSWR<SearchResults>({
@@ -109,18 +123,22 @@ const PostEditor: FC<Props> = ({ initialTitle, initialBody, onSubmit }) => {
             />
           </Box>
 
-          <TagsInput
-            allowNewTags={true}
-            placeholder="Search for existing tags or add new tags"
-            containerProps={{ borderRadius: "0.5em" }}
-            onAdd={onAddTag}
-            onRemove={onRemoveTag}
-          />
+          {disableThreadCreationOptions || (
+            <TagsInput
+              allowNewTags={true}
+              placeholder="Search for existing tags or add new tags"
+              containerProps={{ borderRadius: "0.5em" }}
+              onAdd={onAddTag}
+              onRemove={onRemoveTag}
+            />
+          )}
 
           <HStack>
-            <CategoryList category={category} onSelect={onSelectCategory} />
+            {disableThreadCreationOptions || (
+              <CategoryList category={category} onSelect={onSelectCategory} />
+            )}
             <Button type="submit" px="2em">
-              Create Post
+              {postButtonText}
             </Button>
           </HStack>
         </Stack>

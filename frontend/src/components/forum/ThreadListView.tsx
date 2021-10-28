@@ -8,6 +8,7 @@ import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Post } from "src/types/_generated_Forum";
 import useSWR from "swr";
+import Measured from "../Measured";
 import { allOption } from "./CategoryList";
 
 type Props = {
@@ -65,7 +66,7 @@ const ThreadListView: FC<Props> = ({
     return <LoadingBanner />;
   }
   return (
-    <div className="center pv2">
+    <Measured>
       <ThreadList
         data={data}
         isAdmin={isAdmin}
@@ -75,13 +76,7 @@ const ThreadListView: FC<Props> = ({
         onSelectCategory={setCategory}
         onSearch={onSearch}
       />
-
-      <style jsx>{`
-        div {
-          max-width: 48em;
-        }
-      `}</style>
-    </div>
+    </Measured>
   );
 };
 

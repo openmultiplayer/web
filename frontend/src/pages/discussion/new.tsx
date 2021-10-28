@@ -48,7 +48,11 @@ const Editor = () => {
 
   return (
     <div>
-      <PostEditor onSubmit={onSubmit} />
+      <PostEditor
+        onSubmit={onSubmit}
+        disableThreadCreationOptions={false}
+        postButtonText="Create Post"
+      />
     </div>
   );
 };

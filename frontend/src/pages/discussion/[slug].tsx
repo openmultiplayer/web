@@ -7,7 +7,7 @@ import ThreadView, { PostWithMarkdown } from "src/components/forum/ThreadView";
 import { apiSSP } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Post, PostSchema } from "src/types/_generated_Forum";
-import { serialize } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 
 type Props = {
   id: string;
@@ -43,17 +43,18 @@ const serializePostList = async (posts: Post[]): Promise<PostWithMarkdown[]> =>
   );
 
 export async function getServerSideProps(
-  context: GetServerSidePropsContext<{ slug: string[] }>
+  ctx: GetServerSidePropsContext<{ slug: string[] }>
 ): Promise<GetServerSidePropsResult<Props>> {
-  const slug = context?.params?.slug?.toString();
+  const slug = ctx?.params?.slug?.toString();
   if (!slug) {
-    context.res.writeHead(301, undefined, { Location: "/discussion" });
-    context.res.end();
+    ctx.res.writeHead(301, undefined, { Location: "/discussion" });
+    ctx.res.end();
     return { props: { id: "", slug: "" } };
   }
 
   try {
     const posts = await apiSSP<Post[]>(`/forum/${slug}`, {
+      ctx,
       schema: PostSchema.array(),
     });
 

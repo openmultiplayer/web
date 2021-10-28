@@ -253,6 +253,7 @@ func (d *DB) GetThreads(
 }
 
 func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error) {
+	fmt.Println(slug, max, skip, deleted)
 	posts, err := d.db.Post.
 		FindMany(
 			db.Post.Or(
@@ -269,6 +270,7 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 		With(
 			db.Post.Author.Fetch(),
 			db.Post.Category.Fetch(),
+			db.Post.Tags.Fetch(),
 		).
 		Take(max).
 		Skip(skip).
@@ -278,6 +280,8 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 		return nil, err
 	}
 
+	fmt.Println(posts)
+
 	if len(posts) == 0 {
 		return nil, nil
 	}
@@ -286,6 +290,7 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 	for _, p := range posts {
 		// if "show deleted" is false, then filter out posts with a deleted date
 		if deleted == false && p.InnerPost.DeletedAt != nil {
+			fmt.Println("removing deleted post", p.InnerPost.DeletedAt)
 			continue
 		}
 
