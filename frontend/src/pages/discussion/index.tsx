@@ -1,6 +1,6 @@
 import { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
-import ThreadView from "src/components/forum/ThreadView";
+import ThreadView from "src/components/forum/ThreadListView";
 
 const Page: NextPage = () => {
   const {

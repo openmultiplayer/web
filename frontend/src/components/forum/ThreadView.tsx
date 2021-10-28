@@ -1,86 +1,157 @@
-import { useRouter } from "next/router";
-import { FC, useCallback, useState } from "react";
-import { useIsAdmin } from "src/auth/hooks";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { formatRelative } from "date-fns";
+import { map } from "lodash/fp";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import Link from "next/link";
+import { FC, useState } from "react";
+import { useForm } from "react-hook-form";
+import Editor from "rich-markdown-editor";
 import ErrorBanner from "src/components/ErrorBanner";
-import ThreadList from "src/components/forum/ThreadList";
-import LoadingBanner from "src/components/LoadingBanner";
-import { apiSWR } from "src/fetcher/fetcher";
+import { apiSSP } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
-import { Post } from "src/types/_generated_Forum";
-import useSWR from "swr";
-import { allOption } from "./CategoryList";
+import { Post, PostSchema } from "src/types/_generated_Forum";
+import { niceDate } from "src/utils/dates";
+import * as z from "zod";
+import LoadingBanner from "../LoadingBanner";
 
-type Props = {
-  initialCategory?: string;
-  initialTags?: string[];
-  initialText?: string;
+export type PostWithMarkdown = {
+  post: Post;
+  markdown: MDXRemoteSerializeResult<Record<string, unknown>>;
 };
 
-const ThreadView: FC<Props> = ({
-  initialCategory = "",
-  initialTags = [],
-  initialText = "",
-}) => {
-  const router = useRouter();
-  const [category, _setCategory] = useState(initialCategory);
+type Props = {
+  id: string;
+  slug: string;
+  initialPosts?: PostWithMarkdown[];
+  initialError?: APIError;
+};
 
-  const setCategory = useCallback(
-    (c) => {
-      router.push(`/discussion/category/${c}`);
-      if (c === allOption) {
-        _setCategory("");
-      } else {
-        _setCategory(c);
-      }
-    },
-    [router]
-  );
-  const onSearch = useCallback(
-    (tags: string[], text: string) => {
-      router.push(
-        `/discussion?${new URLSearchParams({
-          tags: tags.join(","),
-          query: text,
-        })}`
-      );
-    },
-    [router]
-  );
+const postToListItem = (p: PostWithMarkdown) => (
+  <li key={p.post.id} className="list pv2">
+    <article className="">
+      <header className="bb b--black-20 pv2">
+        <div className="flex justify-between content-center">
+          <h1 className="mv2">{p.post.title}</h1>
+          <div className="flex flex-row">
+            {p.post.deletedAt !== null && (
+              <span className="self-center white bg-red br2 lh-copy ph2 pv1 ma0">
+                Deleted {niceDate(p.post.deletedAt as string)}
+              </span>
+            )}
+          </div>
+        </div>
 
-  const isAdmin = useIsAdmin();
-  const { data, error } = useSWR<Post[], APIError>(
-    "/forum?" +
-      new URLSearchParams([
-        ["category", category],
-        ["query", initialText],
-        ...initialTags.map((tag) => ["tags", tag]),
-      ]).toString(),
-    apiSWR()
+        <span className="flex justify-between content-center">
+          <p className="f5 mv0">
+            <em>Posted by {p.post.author?.name}</em>
+          </p>
+          <time className="mv0 black-50">
+            posted{" "}
+            {formatRelative(new Date(p.post.createdAt as string), new Date())}
+          </time>
+        </span>
+      </header>
+      <div className="">
+        <MDXRemote {...p.markdown}></MDXRemote>
+      </div>
+    </article>
+  </li>
+);
+
+type PostListProps = {
+  data: PostWithMarkdown[];
+};
+
+const PostList: FC<PostListProps> = ({ data }) => (
+  <ol className="pa2">{map(postToListItem)(data)}</ol>
+);
+
+export const PostPayloadSchema = z.object({});
+export type PostPayload = z.infer<typeof PostPayloadSchema>;
+
+const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
+  const {
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm({
+    resolver: zodResolver(PostPayloadSchema),
+  });
+  const [body, setBody] = useState("");
+  const [error, setError] = useState("");
+
+  const onSubmit = async (data: PostPayload) => {
+    if (body.length === 0 || body === "\\n") {
+      setError("Post has no content");
+      return;
+    }
+
+    setError("");
+    const payload = { ...data, body };
+
+    try {
+      const response = await apiSSP<Post>(`/forum/${id}`, {
+        method: "POST",
+        body: JSON.stringify(payload),
+        schema: PostSchema,
+      });
+    } catch (e) {
+      const err = e as APIError;
+      console.error(err);
+      setError(err?.message ?? "Unexpected error occurred");
+    }
+  };
+
+  return (
+    <div className="measure-wide center pv4">
+      <h2>Reply</h2>
+      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-column">
+        {isSubmitting ? (
+          "Posting..."
+        ) : (
+          <Editor
+            value=""
+            onChange={(v) => setBody(v)}
+            placeholder="Your post content..."
+            className="mv2"
+            disableExtensions={[
+              "container_notice",
+              "table",
+              "checkbox_list",
+              "placeholder",
+            ]}
+          />
+        )}
+
+        <button type="submit">Post</button>
+        {<span>{error}</span>}
+      </form>
+    </div>
   );
-  if (error) {
-    console.error(error);
-    return <ErrorBanner {...error} />;
+};
+
+const ThreadView: FC<Props> = ({ id, slug, initialPosts, initialError }) => {
+  if (initialError) {
+    return <ErrorBanner {...initialError} />;
   }
-  if (!data) {
+  if (!initialPosts) {
     return <LoadingBanner />;
   }
+
   return (
     <div className="center pv2">
-      <ThreadList
-        data={data}
-        isAdmin={isAdmin}
-        category={category}
-        tags={initialTags}
-        query={initialText}
-        onSelectCategory={setCategory}
-        onSearch={onSearch}
-      />
+      {/* <Link href="/discussion">
+        <a>Back</a>
+      </Link>
+
+      <PostList data={initialPosts} />
+
+      <Reply id={id} slug={slug as string} />
 
       <style jsx>{`
         div {
           max-width: 48em;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 };

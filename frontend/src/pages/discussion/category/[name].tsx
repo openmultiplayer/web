@@ -1,5 +1,5 @@
 import { GetServerSideProps, NextPage } from "next";
-import ThreadView from "src/components/forum/ThreadView";
+import ThreadView from "src/components/forum/ThreadListView";
 
 type Props = {
   name?: string;
