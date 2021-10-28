@@ -1,77 +1,67 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import Editor from "rich-markdown-editor";
-import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { apiSSP } from "src/fetcher/fetcher";
-import { Post } from "src/types/_generated_Forum";
+import { useToast, Box, Stack } from "@chakra-ui/react";
+import { NextPage } from "next";
 import { useRouter } from "next/router";
+import React from "react";
+import { withAuth } from "src/auth/hoc";
+import BackLink from "src/components/forum/BackLink";
+import PostEditor, { PostPayload } from "src/components/forum/PostEditor";
+import { apiSSP } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
+import { Post } from "src/types/_generated_Forum";
 
-export const PostPayloadSchema = z.object({
-  title: z.string(),
-  body: z.string().optional(), // optional because it's not in the form
-  tags: z.string().transform((s) => s.split(" ")),
-});
-export type PostPayload = z.infer<typeof PostPayloadSchema>;
-
-const Page = () => {
-  const { register, handleSubmit } = useForm({
-    resolver: zodResolver(PostPayloadSchema),
-  });
-  const [body, setBody] = useState("");
-  const [error, setError] = useState("");
+const Editor = () => {
   const router = useRouter();
+  const toast = useToast();
 
   const onSubmit = async (data: PostPayload) => {
-    if (body.length === 0 || body === "\\n") {
-      setError("Post has no content");
+    console.log({ data });
+
+    if (data?.body?.length === 0 || data?.body === "\\n") {
+      toast({
+        title: "Post has no content",
+        status: "error",
+      });
+
       return;
     }
-
-    setError("");
-    const payload = { ...data, body };
 
     try {
       const post = await apiSSP<Post>("/forum", {
         method: "POST",
-        body: JSON.stringify(payload),
+        body: JSON.stringify(data),
       });
       router.push(post.slug ?? "");
+      toast({
+        title: "Post created!",
+        status: "success",
+      });
     } catch (e) {
       const err = e as APIError;
       console.error(err);
-      setError(err?.message ?? "Unexpected error occurred");
+      toast({
+        title: "An error occurred",
+        description: err?.message ?? "Unexpected error occurred",
+        status: "error",
+      });
     }
   };
 
   return (
-    <div className="measure-wide center pv4">
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-column">
-        <input
-          {...register("title", { required: true, maxLength: 64 })}
-          placeholder="Title..."
-          required
-        />
-
-        <Editor
-          onChange={(v) => setBody(v)}
-          placeholder="Your post content..."
-          className="mv2"
-        />
-
-        <input
-          {...register("tags", { required: true, maxLength: 64 })}
-          placeholder="Tags separated by spaces"
-          className="mv2"
-          required
-        />
-
-        <button type="submit">Post</button>
-        {<span>{error}</span>}
-      </form>
+    <div>
+      <PostEditor onSubmit={onSubmit} />
     </div>
   );
 };
 
-export default Page;
+const Page: NextPage = () => {
+  return (
+    <Box paddingTop={2} paddingBottom={2} maxWidth="40em" margin="auto">
+      <Stack spacing={2}>
+        <BackLink to="/discussion" />
+        <Editor />
+      </Stack>
+    </Box>
+  );
+};
+
+export default withAuth(Page);
