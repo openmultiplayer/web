@@ -65,15 +65,8 @@ const ThreadList: FC<Props> = ({
   onSelectCategory,
   onSearch,
 }) => {
-  const onDelete = useDeletePost();
-
   const mapping = map((post: Post) => (
-    <ThreadListItem
-      post={post}
-      showAdminTools={isAdmin}
-      onDelete={onDelete}
-      key={post.id}
-    />
+    <ThreadListItem post={post} showAdminTools={isAdmin} key={post.id} />
   ));
 
   return (

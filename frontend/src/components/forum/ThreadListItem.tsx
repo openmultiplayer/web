@@ -1,27 +1,16 @@
-import { Button } from "@chakra-ui/react";
 import Link from "next/link";
-import React, { FC, useCallback } from "react";
+import React, { FC } from "react";
 import { Post } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
+import { AdminTools, CategoryName } from "./common";
 import LinkedTag from "./LinkedTag";
 
 type Props = {
   post: Post;
   showAdminTools: boolean;
-  onDelete: (id: string) => void;
 };
 
-const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
-  const onClick = useCallback(
-    (e) => {
-      // The whole element is wrapped inside an <a> tag so this prevents
-      // clicking the button from navigating to the link.
-      e.preventDefault();
-      onDelete(post.id);
-    },
-    [post, onDelete]
-  );
-
+const ThreadListItem: FC<Props> = ({ post, showAdminTools }) => {
   const createdAt = niceDate(post.createdAt);
   const updatedAt = niceDate(post.updatedAt);
   const isUpdated = createdAt !== updatedAt;
@@ -32,21 +21,8 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
         <div className="content">
           <header>
             <div className="category">
-              <span>{post.category.name}</span>
-
-              {showAdminTools && (
-                <div>
-                  {post.deletedAt === null ? (
-                    <Button colorScheme="red" size="xs" onClick={onClick}>
-                      Delete
-                    </Button>
-                  ) : (
-                    <span>{`Deleted ${niceDate(
-                      post.deletedAt as string
-                    )}`}</span>
-                  )}
-                </div>
-              )}
+              <CategoryName value={post.category.name} />
+              <AdminTools show={showAdminTools} post={post} />
             </div>
 
             <h1>
@@ -102,11 +78,6 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
           justify-content: space-between;
           line-height: 1;
           font-size: 0.9em;
-        }
-        .category span {
-          border-left: 0.25em solid lightblue;
-          padding-left: 0.25em;
-          height: min-content;
         }
         h1 {
           margin: 0;
