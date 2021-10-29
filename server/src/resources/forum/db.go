@@ -82,7 +82,7 @@ func (d *DB) CreateThread(
 func (d *DB) createTags(ctx context.Context, tags []string) ([]db.TagWhereParam, error) {
 	setters := []db.TagWhereParam{}
 	for _, tag := range tags {
-		t, err := d.db.Tag.
+		_, err := d.db.Tag.
 			UpsertOne(db.Tag.Name.Equals(tag)).
 			Update().
 			Create(db.Tag.Name.Set(tag)).
