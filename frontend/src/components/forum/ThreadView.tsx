@@ -10,7 +10,7 @@ import Measured from "../Measured";
 import BackLink from "./BackLink";
 import PostEditor from "./PostEditor";
 import PostListItem from "./PostListItem";
-import { useCreatePost, useDeletePost } from "./hooks";
+import { useCreatePost } from "./hooks";
 
 export type PostWithMarkdown = {
   post: Post;
@@ -25,8 +25,6 @@ type Props = {
 };
 
 const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
-  const onDelete = useDeletePost();
-
   return (
     <OrderedList spacing={2} margin={0} listStyleType="none">
       {map((post: PostWithMarkdown) => (
@@ -35,7 +33,6 @@ const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
           post={post.post}
           markdown={post.markdown}
           showAdminTools={true}
-          onDelete={onDelete}
         />
       ))(posts)}
     </OrderedList>
