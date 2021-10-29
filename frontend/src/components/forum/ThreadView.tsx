@@ -1,87 +1,80 @@
-import { useRouter } from "next/router";
-import { FC, useCallback, useState } from "react";
-import { useIsAdmin } from "src/auth/hooks";
+import { Box, OrderedList, Stack } from "@chakra-ui/layout";
+import { map } from "lodash/fp";
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
+import { FC } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
-import ThreadList from "src/components/forum/ThreadList";
-import LoadingBanner from "src/components/LoadingBanner";
-import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Post } from "src/types/_generated_Forum";
-import useSWR from "swr";
-import { allOption } from "./CategoryList";
+import LoadingBanner from "../LoadingBanner";
+import Measured from "../Measured";
+import BackLink from "./BackLink";
+import PostEditor from "./PostEditor";
+import PostListItem from "./PostListItem";
+import { useCreatePost, useDeletePost } from "./hooks";
 
-type Props = {
-  initialCategory?: string;
-  initialTags?: string[];
-  initialText?: string;
+export type PostWithMarkdown = {
+  post: Post;
+  markdown: MDXRemoteSerializeResult<Record<string, unknown>>;
 };
 
-const ThreadView: FC<Props> = ({
-  initialCategory = "",
-  initialTags = [],
-  initialText = "",
-}) => {
-  const router = useRouter();
-  const [category, _setCategory] = useState(initialCategory);
+type Props = {
+  id: string;
+  slug: string;
+  initialPosts?: PostWithMarkdown[];
+  initialError?: APIError;
+};
 
-  const setCategory = useCallback(
-    (c) => {
-      router.push(`/discussion/category/${c}`);
-      if (c === allOption) {
-        _setCategory("");
-      } else {
-        _setCategory(c);
-      }
-    },
-    [router]
-  );
-  const onSearch = useCallback(
-    (tags: string[], text: string) => {
-      router.push(
-        `/discussion?${new URLSearchParams({
-          tags: tags.join(","),
-          query: text,
-        })}`
-      );
-    },
-    [router]
-  );
+const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
+  const onDelete = useDeletePost();
 
-  const isAdmin = useIsAdmin();
-  const { data, error } = useSWR<Post[], APIError>(
-    "/forum?" +
-      new URLSearchParams([
-        ["category", category],
-        ["query", initialText],
-        ...initialTags.map((tag) => ["tags", tag]),
-      ]).toString(),
-    apiSWR()
+  return (
+    <OrderedList spacing={2} margin={0} listStyleType="none">
+      {map((post: PostWithMarkdown) => (
+        <PostListItem
+          key={post.post.id}
+          post={post.post}
+          markdown={post.markdown}
+          showAdminTools={true}
+          onDelete={onDelete}
+        />
+      ))(posts)}
+    </OrderedList>
   );
-  if (error) {
-    console.error(error);
-    return <ErrorBanner {...error} />;
+};
+
+const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
+  const onSubmit = useCreatePost(id, slug);
+
+  return (
+    <Box>
+      <PostEditor
+        onSubmit={onSubmit}
+        disableThreadCreationOptions
+        postButtonText="Post Reply"
+        placeholder="Your reply content..."
+      />
+    </Box>
+  );
+};
+
+const ThreadView: FC<Props> = ({ id, slug, initialPosts, initialError }) => {
+  if (initialError) {
+    return <ErrorBanner {...initialError} />;
   }
-  if (!data) {
+  if (!initialPosts) {
     return <LoadingBanner />;
   }
-  return (
-    <div className="center pv2">
-      <ThreadList
-        data={data}
-        isAdmin={isAdmin}
-        category={category}
-        tags={initialTags}
-        query={initialText}
-        onSelectCategory={setCategory}
-        onSearch={onSearch}
-      />
 
-      <style jsx>{`
-        div {
-          max-width: 48em;
-        }
-      `}</style>
-    </div>
+  return (
+    <Measured>
+      <Stack spacing={2}>
+        <BackLink to="/discussion" />
+
+        <PostList posts={initialPosts} />
+
+        <Reply id={id} slug={slug} />
+      </Stack>
+    </Measured>
   );
 };
 

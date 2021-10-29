@@ -1,4 +1,4 @@
-import { Button, Tag } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 import React, { FC, useCallback } from "react";
 import { Post } from "src/types/_generated_Forum";
@@ -21,6 +21,11 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
     },
     [post, onDelete]
   );
+
+  const createdAt = niceDate(post.createdAt);
+  const updatedAt = niceDate(post.updatedAt);
+  const isUpdated = createdAt !== updatedAt;
+
   return (
     <li key={post.id}>
       <article>
@@ -64,9 +69,13 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools, onDelete }) => {
               width={24}
               height={24}
             /> */}
-            <em>{post.author.name}</em> posted{" "}
-            <em>{niceDate(post.createdAt)}</em> • updated{" "}
-            <em>{niceDate(post.updatedAt)}</em>
+            <em>{post.author.name}</em> posted <em>{createdAt}</em>
+            {isUpdated && (
+              <span>
+                {" • updated "}
+                <em>{updatedAt}</em>
+              </span>
+            )}
           </div>
 
           <ul>

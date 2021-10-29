@@ -82,7 +82,7 @@ func (d *DB) CreateThread(
 func (d *DB) createTags(ctx context.Context, tags []string) ([]db.TagWhereParam, error) {
 	setters := []db.TagWhereParam{}
 	for _, tag := range tags {
-		t, err := d.db.Tag.
+		_, err := d.db.Tag.
 			UpsertOne(db.Tag.Name.Equals(tag)).
 			Update().
 			Create(db.Tag.Name.Set(tag)).
@@ -90,7 +90,6 @@ func (d *DB) createTags(ctx context.Context, tags []string) ([]db.TagWhereParam,
 		if err != nil {
 			return nil, errors.Wrap(err, "failed to upsert tag")
 		}
-		fmt.Println("upsert tag", tag, t)
 		setters = append(setters, db.Tag.Name.Equals(tag))
 	}
 	return setters, nil
@@ -269,6 +268,7 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 		With(
 			db.Post.Author.Fetch(),
 			db.Post.Category.Fetch(),
+			db.Post.Tags.Fetch(),
 		).
 		Take(max).
 		Skip(skip).

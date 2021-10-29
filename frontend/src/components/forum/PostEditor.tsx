@@ -25,19 +25,32 @@ type Props = {
   initialTitle?: string;
   initialBody?: string;
   onSubmit: (post: PostPayload) => void;
+  disableThreadCreationOptions?: boolean;
+  postButtonText?: string;
+  placeholder?: string;
 };
 
-const PostEditor: FC<Props> = ({ initialTitle, initialBody, onSubmit }) => {
+const PostEditor: FC<Props> = ({
+  initialTitle,
+  initialBody,
+  onSubmit,
+  disableThreadCreationOptions,
+  postButtonText = "Create Post",
+  placeholder = "Your post content...",
+}) => {
   const [body, setBody] = useState("");
   const [tags, setTags] = useState<string[]>([]);
   const [category, setCategory] = useState("General");
   const { register, handleSubmit } = useForm({
-    resolver: zodResolver(PostPayloadSchema),
+    // Only use the schema for creating new threads. Replies only contain a
+    // body, no title, category or tags, so there's no point validating it.
+    resolver: disableThreadCreationOptions
+      ? undefined
+      : zodResolver(PostPayloadSchema),
   });
 
   const _onSubmit = useCallback(
     (data: PostPayload) => {
-      console.log({ title: data.title, body, tags, category });
       onSubmit({
         title: data.title,
         body,
@@ -50,7 +63,7 @@ const PostEditor: FC<Props> = ({ initialTitle, initialBody, onSubmit }) => {
 
   const onChange = useCallback(
     (body: () => string) => {
-      setBody(body());
+      setBody(body().trim());
     },
     [setBody]
   );
@@ -77,12 +90,14 @@ const PostEditor: FC<Props> = ({ initialTitle, initialBody, onSubmit }) => {
     <>
       <form onSubmit={handleSubmit(_onSubmit)} className="flex flex-column">
         <Stack spacing={2}>
-          <Input
-            {...register("title", { required: true, maxLength: 64 })}
-            placeholder="Title..."
-            defaultValue={initialTitle}
-            required
-          />
+          {disableThreadCreationOptions || (
+            <Input
+              {...register("title", { required: true, maxLength: 64 })}
+              placeholder="Title..."
+              defaultValue={initialTitle}
+              required
+            />
+          )}
 
           <Box
             borderRadius="md"
@@ -94,12 +109,18 @@ const PostEditor: FC<Props> = ({ initialTitle, initialBody, onSubmit }) => {
               className="mv2"
               defaultValue={initialBody}
               onChange={onChange}
-              placeholder="Your post content..."
+              placeholder={placeholder}
+              disableExtensions={[
+                "container_notice",
+                "table",
+                "checkbox_list",
+                "placeholder",
+              ]}
               onSearchLink={async (term: string) => {
                 // TODO: FIX THIS
                 const result = await apiSWR<SearchResults>({
                   schema: SearchResultsSchema,
-                })(`/docs/search?${term}`);
+                })(`/docs/search?q=${term}`);
                 return result.hits.map((hit) => ({
                   title: hit.title,
                   subtitle: hit.desc,
@@ -109,18 +130,22 @@ const PostEditor: FC<Props> = ({ initialTitle, initialBody, onSubmit }) => {
             />
           </Box>
 
-          <TagsInput
-            allowNewTags={true}
-            placeholder="Search for existing tags or add new tags"
-            containerProps={{ borderRadius: "0.5em" }}
-            onAdd={onAddTag}
-            onRemove={onRemoveTag}
-          />
+          {disableThreadCreationOptions || (
+            <TagsInput
+              allowNewTags={true}
+              placeholder="Search for existing tags or add new tags"
+              containerProps={{ borderRadius: "0.5em" }}
+              onAdd={onAddTag}
+              onRemove={onRemoveTag}
+            />
+          )}
 
           <HStack>
-            <CategoryList category={category} onSelect={onSelectCategory} />
+            {disableThreadCreationOptions || (
+              <CategoryList category={category} onSelect={onSelectCategory} />
+            )}
             <Button type="submit" px="2em">
-              Create Post
+              {postButtonText}
             </Button>
           </HStack>
         </Stack>
