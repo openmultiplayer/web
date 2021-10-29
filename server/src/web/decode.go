@@ -22,11 +22,15 @@ func ParseQuery(w http.ResponseWriter, r *http.Request, out interface{}) bool {
 
 func ParseBody(w http.ResponseWriter, r *http.Request, out interface{}) bool {
 	if err := json.NewDecoder(r.Body).Decode(out); err != nil {
-		StatusBadRequest(w, err)
+		StatusBadRequest(w, WithSuggestion(err,
+			"Could not process request data",
+			"Please try again, if the issue persists contact the support team."))
 		return false
 	}
 	if _, err := govalidator.ValidateStruct(out); err != nil {
-		StatusBadRequest(w, err)
+		StatusBadRequest(w, WithSuggestion(err,
+			"Could not validate request data",
+			"Please try again, if the issue persists contact the support team."))
 		return false
 	}
 	return true

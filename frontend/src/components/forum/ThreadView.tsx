@@ -8,6 +8,7 @@ import ErrorBanner from "src/components/ErrorBanner";
 import { apiSSP } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Post, PostSchema } from "src/types/_generated_Forum";
+import { useErrorHandler } from "src/utils/useErrorHandler";
 import LoadingBanner from "../LoadingBanner";
 import Measured from "../Measured";
 import BackLink from "./BackLink";
@@ -49,6 +50,7 @@ const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
 const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
   const toast = useToast();
   const router = useRouter();
+  const handler = useErrorHandler();
 
   const onSubmit = async (data: PostPayload) => {
     if (data?.body?.length === 0 || data?.body === "\\n") {
@@ -71,13 +73,7 @@ const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
       });
       router.push(`/discussion/${slug}`);
     } catch (e) {
-      const err = e as APIError;
-      console.error(err);
-      toast({
-        title: "An error occurred",
-        description: err?.message ?? "Unexpected error occurred",
-        status: "error",
-      });
+      handler(e);
     }
   };
 
