@@ -63,7 +63,7 @@ type PostMetadataProps = { post: Post };
 export const PostMetadata: FC<PostMetadataProps> = ({ post }) => {
   const createdAt = niceDate(post.createdAt);
   const updatedAt = niceDate(post.updatedAt);
-  const isUpdated = createdAt !== updatedAt;
+  const isUpdated = createdAt !== updatedAt && post.deletedAt === null;
 
   // TODO: Profile pictures
   const hasProfilePicture = false;
