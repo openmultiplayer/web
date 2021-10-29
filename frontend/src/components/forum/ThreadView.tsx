@@ -2,6 +2,7 @@ import { Box, OrderedList, Stack } from "@chakra-ui/layout";
 import { useToast } from "@chakra-ui/toast";
 import { map } from "lodash/fp";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
+import { useRouter } from "next/router";
 import { FC, useCallback } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
 import { apiSSP } from "src/fetcher/fetcher";
@@ -46,6 +47,7 @@ const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
 
 const Reply: FC<{ id: string; slug: string }> = ({ id }) => {
   const toast = useToast();
+  const router = useRouter();
 
   const onSubmit = async (data: PostPayload) => {
     if (data?.body?.length === 0 || data?.body === "\\n") {
@@ -66,6 +68,7 @@ const Reply: FC<{ id: string; slug: string }> = ({ id }) => {
         title: "Post created!",
         status: "success",
       });
+      router.push(`/discussion/${id}`);
     } catch (e) {
       const err = e as APIError;
       console.error(err);
