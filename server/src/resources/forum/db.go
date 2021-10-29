@@ -90,7 +90,6 @@ func (d *DB) createTags(ctx context.Context, tags []string) ([]db.TagWhereParam,
 		if err != nil {
 			return nil, errors.Wrap(err, "failed to upsert tag")
 		}
-		fmt.Println("upsert tag", tag, t)
 		setters = append(setters, db.Tag.Name.Equals(tag))
 	}
 	return setters, nil
@@ -253,7 +252,6 @@ func (d *DB) GetThreads(
 }
 
 func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error) {
-	fmt.Println(slug, max, skip, deleted)
 	posts, err := d.db.Post.
 		FindMany(
 			db.Post.Or(
@@ -280,8 +278,6 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 		return nil, err
 	}
 
-	fmt.Println(posts)
-
 	if len(posts) == 0 {
 		return nil, nil
 	}
@@ -290,7 +286,6 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 	for _, p := range posts {
 		// if "show deleted" is false, then filter out posts with a deleted date
 		if deleted == false && p.InnerPost.DeletedAt != nil {
-			fmt.Println("removing deleted post", p.InnerPost.DeletedAt)
 			continue
 		}
 
