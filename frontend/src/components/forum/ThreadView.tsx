@@ -35,6 +35,7 @@ const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
     <OrderedList spacing={2} margin={0} listStyleType="none">
       {map((post: PostWithMarkdown) => (
         <PostListItem
+          key={post.post.id}
           post={post.post}
           markdown={post.markdown}
           showAdminTools={true}
@@ -45,7 +46,7 @@ const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
   );
 };
 
-const Reply: FC<{ id: string; slug: string }> = ({ id }) => {
+const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
   const toast = useToast();
   const router = useRouter();
 
@@ -68,7 +69,7 @@ const Reply: FC<{ id: string; slug: string }> = ({ id }) => {
         title: "Post created!",
         status: "success",
       });
-      router.push(`/discussion/${id}`);
+      router.push(`/discussion/${slug}`);
     } catch (e) {
       const err = e as APIError;
       console.error(err);
