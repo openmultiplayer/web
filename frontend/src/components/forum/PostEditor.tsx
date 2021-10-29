@@ -63,7 +63,7 @@ const PostEditor: FC<Props> = ({
 
   const onChange = useCallback(
     (body: () => string) => {
-      setBody(body());
+      setBody(body().trim());
     },
     [setBody]
   );
