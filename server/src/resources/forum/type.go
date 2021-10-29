@@ -48,6 +48,14 @@ func FromModel(u *db.PostModel) (w *Post) {
 		tags = append(tags, t.Name)
 	}
 
+	category := Category{}
+	if u.RelationsPost.Category != nil {
+		category = Category{
+			ID:   u.RelationsPost.Category.ID,
+			Name: u.RelationsPost.Category.Name,
+		}
+	}
+
 	return &Post{
 		ID:          u.InnerPost.ID,
 		Slug:        u.InnerPost.Slug,
@@ -67,10 +75,7 @@ func FromModel(u *db.PostModel) (w *Post) {
 			Admin:     u.RelationsPost.Author.InnerUser.Admin,
 			CreatedAt: u.RelationsPost.Author.InnerUser.CreatedAt,
 		},
-		Tags: tags,
-		Category: Category{
-			ID:   u.RelationsPost.Category.ID,
-			Name: u.RelationsPost.Category.Name,
-		},
+		Tags:     tags,
+		Category: category,
 	}
 }
