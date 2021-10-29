@@ -42,12 +42,15 @@ const PostEditor: FC<Props> = ({
   const [tags, setTags] = useState<string[]>([]);
   const [category, setCategory] = useState("General");
   const { register, handleSubmit } = useForm({
-    resolver: zodResolver(PostPayloadSchema),
+    // Only use the schema for creating new threads. Replies only contain a
+    // body, no title, category or tags, so there's no point validating it.
+    resolver: disableThreadCreationOptions
+      ? undefined
+      : zodResolver(PostPayloadSchema),
   });
 
   const _onSubmit = useCallback(
     (data: PostPayload) => {
-      console.log({ title: data.title, body, tags, category });
       onSubmit({
         title: data.title,
         body,
