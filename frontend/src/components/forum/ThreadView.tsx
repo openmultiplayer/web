@@ -83,6 +83,7 @@ const Reply: FC<{ id: string; slug: string }> = ({ id }) => {
         onSubmit={onSubmit}
         disableThreadCreationOptions
         postButtonText="Post Reply"
+        placeholder="Your reply content..."
       />
     </Box>
   );

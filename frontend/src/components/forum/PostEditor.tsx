@@ -25,8 +25,9 @@ type Props = {
   initialTitle?: string;
   initialBody?: string;
   onSubmit: (post: PostPayload) => void;
-  disableThreadCreationOptions: boolean;
-  postButtonText: string;
+  disableThreadCreationOptions?: boolean;
+  postButtonText?: string;
+  placeholder?: string;
 };
 
 const PostEditor: FC<Props> = ({
@@ -35,6 +36,7 @@ const PostEditor: FC<Props> = ({
   onSubmit,
   disableThreadCreationOptions,
   postButtonText = "Create Post",
+  placeholder = "Your post content...",
 }) => {
   const [body, setBody] = useState("");
   const [tags, setTags] = useState<string[]>([]);
@@ -85,12 +87,14 @@ const PostEditor: FC<Props> = ({
     <>
       <form onSubmit={handleSubmit(_onSubmit)} className="flex flex-column">
         <Stack spacing={2}>
-          <Input
-            {...register("title", { required: true, maxLength: 64 })}
-            placeholder="Title..."
-            defaultValue={initialTitle}
-            required
-          />
+          {disableThreadCreationOptions || (
+            <Input
+              {...register("title", { required: true, maxLength: 64 })}
+              placeholder="Title..."
+              defaultValue={initialTitle}
+              required
+            />
+          )}
 
           <Box
             borderRadius="md"
@@ -102,7 +106,7 @@ const PostEditor: FC<Props> = ({
               className="mv2"
               defaultValue={initialBody}
               onChange={onChange}
-              placeholder="Your post content..."
+              placeholder={placeholder}
               disableExtensions={[
                 "container_notice",
                 "table",
