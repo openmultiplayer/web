@@ -117,7 +117,7 @@ const PostEditor: FC<Props> = ({
                 // TODO: FIX THIS
                 const result = await apiSWR<SearchResults>({
                   schema: SearchResultsSchema,
-                })(`/docs/search?${term}`);
+                })(`/docs/search?q=${term}`);
                 return result.hits.map((hit) => ({
                   title: hit.title,
                   subtitle: hit.desc,
