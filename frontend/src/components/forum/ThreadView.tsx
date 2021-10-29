@@ -1,19 +1,16 @@
 import { Box, OrderedList, Stack } from "@chakra-ui/layout";
-import { useToast } from "@chakra-ui/toast";
 import { map } from "lodash/fp";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
-import { useRouter } from "next/router";
-import { FC, useCallback } from "react";
+import { FC } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
-import { apiSSP } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
-import { Post, PostSchema } from "src/types/_generated_Forum";
-import { useErrorHandler } from "src/utils/useErrorHandler";
+import { Post } from "src/types/_generated_Forum";
 import LoadingBanner from "../LoadingBanner";
 import Measured from "../Measured";
 import BackLink from "./BackLink";
-import PostEditor, { PostPayload } from "./PostEditor";
+import PostEditor from "./PostEditor";
 import PostListItem from "./PostListItem";
+import { useCreatePost, useDeletePost } from "./hooks";
 
 export type PostWithMarkdown = {
   post: Post;
@@ -28,9 +25,7 @@ type Props = {
 };
 
 const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
-  const onDelete = useCallback(() => {
-    console.log("delete");
-  }, []);
+  const onDelete = useDeletePost();
 
   return (
     <OrderedList spacing={2} margin={0} listStyleType="none">
@@ -48,34 +43,7 @@ const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
 };
 
 const Reply: FC<{ id: string; slug: string }> = ({ id, slug }) => {
-  const toast = useToast();
-  const router = useRouter();
-  const handler = useErrorHandler();
-
-  const onSubmit = async (data: PostPayload) => {
-    if (data?.body?.length === 0 || data?.body === "\\n") {
-      toast({
-        title: "Post has no content",
-        status: "error",
-      });
-      return;
-    }
-
-    try {
-      await apiSSP<Post>(`/forum/${id}`, {
-        method: "POST",
-        body: JSON.stringify(data),
-        schema: PostSchema,
-      });
-      toast({
-        title: "Post created!",
-        status: "success",
-      });
-      router.push(`/discussion/${slug}`);
-    } catch (e) {
-      handler(e);
-    }
-  };
+  const onSubmit = useCreatePost(id, slug);
 
   return (
     <Box>
