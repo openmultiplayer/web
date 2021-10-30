@@ -141,6 +141,7 @@ func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]str
 func (s *DB) GetAll(ctx context.Context) ([]All, error) {
 	result, err := s.client.Server.
 		FindMany(db.Server.Active.Equals(true)).
+		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderAsc)).
 		With(db.Server.Ru.Fetch()).
 		Exec(ctx)
 	if err != nil {

@@ -10,32 +10,36 @@ import (
 	sampquery "github.com/Southclaws/go-samp-query"
 )
 
-var ipMatcher = regexp.MustCompile(`\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b`)
-var resolver = net.DefaultResolver
+var (
+	ipMatcher = regexp.MustCompile(`\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b`)
+	resolver  = net.DefaultResolver
+)
 
 func TransformQueryResult(s sampquery.Server, err error) (r All) {
-	if err != nil || s.Address == "" {
-		r.IP = s.Address
+	if err != nil {
 		r.Active = false
-	} else {
-		version, ok := s.Rules["version"]
-		if !ok {
-			version = "unknown"
-		}
-		r.IP = s.Address
-		r.Rules = s.Rules
-		r.Active = true
-		r.Core = Essential{
-			IP:         s.Address,
-			Hostname:   s.Hostname,
-			Players:    s.Players,
-			MaxPlayers: s.MaxPlayers,
-			Gamemode:   s.Gamemode,
-			Language:   s.Language,
-			Password:   s.Password,
-			Version:    version,
-		}
+		return r
 	}
+
+	version, ok := s.Rules["version"]
+	if !ok {
+		version = "unknown"
+	}
+
+	r.IP = s.Address
+	r.Rules = s.Rules
+	r.Active = true
+	r.Core = Essential{
+		IP:         s.Address,
+		Hostname:   s.Hostname,
+		Players:    s.Players,
+		MaxPlayers: s.MaxPlayers,
+		Gamemode:   s.Gamemode,
+		Language:   s.Language,
+		Password:   s.Password,
+		Version:    version,
+	}
+
 	return r
 }
 
