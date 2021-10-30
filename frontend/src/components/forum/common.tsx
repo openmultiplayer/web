@@ -3,6 +3,7 @@ import { Box, Flex, ListItem, UnorderedList } from "@chakra-ui/layout";
 import { FC, useCallback } from "react";
 import { Post } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
+import ProfilePicture from "../ProfilePicture";
 import { useDeletePost } from "./hooks";
 import LinkedTag from "./LinkedTag";
 
@@ -65,23 +66,10 @@ export const PostMetadata: FC<PostMetadataProps> = ({ post }) => {
   const updatedAt = niceDate(post.updatedAt);
   const isUpdated = createdAt !== updatedAt && post.deletedAt === null;
 
-  // TODO: Profile pictures
-  const hasProfilePicture = false;
-
   return (
     <Flex justifyContent="space-between">
       <Flex gridGap="0.5em" alignItems="center">
-        {hasProfilePicture && (
-          <Box borderRadius="50%" overflow="hidden" width="1.5em">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://via.placeholder.com/32"
-              alt={`Profile picture for ${post.author.name}`}
-              width="100%"
-              height="100%"
-            />
-          </Box>
-        )}
+        <ProfilePicture id={post.author.id} />
         <em>{post.author.name}</em> posted <em>{createdAt}</em>
         {isUpdated && (
           <span>

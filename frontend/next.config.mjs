@@ -26,7 +26,7 @@ const config = (phase) => {
       defaultLocale: "en",
     },
     images: {
-      domains: ["assets.open.mp"],
+      domains: ["assets.open.mp", "api.open.mp", "localhost"],
       formats: ["image/avif", "image/webp"],
     },
 
