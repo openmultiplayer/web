@@ -49,6 +49,9 @@ func Build() fx.Option {
 				With(authentication.MustBeAuthenticated, auth.MustBeAdmin).
 				Patch("/admin", s.patchAdmin)
 
+			rtr.
+				Get("/image/{id}", s.image)
+
 			rtr.Get("/dev", s.dev)
 		}),
 	)
