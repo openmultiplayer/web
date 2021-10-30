@@ -2,6 +2,7 @@ package user
 
 import (
 	"context"
+	"errors"
 	"time"
 
 	"github.com/openmultiplayer/web/server/src/db"
@@ -25,9 +26,9 @@ func (d *DB) GetUser(ctx context.Context, userId string, public bool) (*User, er
 		).
 		Exec(ctx)
 	if err != nil {
-		// a "not found" in this context is still an internal server error
-		// because the user *should* exist in order for the auth middleware to
-		// allow the code to reach this point.
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 
