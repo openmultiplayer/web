@@ -12,8 +12,10 @@ const Page = ({ content }: Props) => (
     <div className="mw8 center">
       <Image
         src="https://assets.open.mp/assets/images/assets/wordmark-light-mono.png"
+        alt="The open.mp wordmark"
         width={1660}
         height={560}
+        unoptimized={true}
       />
     </div>
 

@@ -30,17 +30,16 @@ const hoverClasses = (leftMargin: boolean) =>
 
 const selectedClass = (selected: boolean) => (selected ? "bg-black-10" : "");
 
-const hydrateNavItemClasses = (current: string) => ([i, v]: [
-  string,
-  NavItem
-]) => ({
-  ...v,
-  extra: [
-    v.extra,
-    ...hoverClasses(i === "0"),
-    selectedClass(getPathComparator(v.exact!)(current, v.path)),
-  ].join(" "),
-});
+const hydrateNavItemClasses =
+  (current: string) =>
+  ([i, v]: [string, NavItem]) => ({
+    ...v,
+    extra: [
+      v.extra,
+      ...hoverClasses(i === "0"),
+      selectedClass(getPathComparator(v.exact!)(current, v.path)),
+    ].join(" "),
+  });
 
 const navItemToJSX = (v: NavItem) => (
   <NavListItem key={v.path} className={v.extra!}>
@@ -115,8 +114,10 @@ const Nav = ({ items, route }: Props) => {
             <a>
               <Image
                 src="https://assets.open.mp/assets/images/assets/logo-dark-trans.png"
+                alt="The open.mp logo"
                 width={50}
                 height={50}
+                unoptimized={true}
               />
             </a>
           </Link>
