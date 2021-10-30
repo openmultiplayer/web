@@ -30,6 +30,7 @@ export const PostSchema = z.object({
   author: AuthorSchema,
   tags: z.string().array(),
   category: CategorySchema,
+  posts: z.number(),
 })
 export type Post = z.infer<typeof PostSchema>
 
