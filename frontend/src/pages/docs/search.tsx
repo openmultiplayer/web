@@ -39,7 +39,7 @@ const Results: FC<Partial<Props>> = ({ query, results }) => {
     `/docs/search?q=${query}`,
     apiSWR(),
     {
-      initialData: results || undefined,
+      fallbackData: results || undefined,
     }
   );
   if (error) {

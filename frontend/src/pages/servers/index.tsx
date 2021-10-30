@@ -304,7 +304,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
     API_SERVERS,
     getServers,
     {
-      initialData,
+      fallbackData: initialData,
     }
   );
   if (error) {
@@ -337,7 +337,7 @@ export const getServerSideProps = async (
   try {
     servers = await getServers();
   } catch (e) {
-    return { props: { errorMessage: e.message } };
+    return { props: { errorMessage: (e as any)?.message } };
   }
   return {
     props: {

@@ -157,7 +157,7 @@ const Info = ({ data }: { data: All }) => (
 
 const Content = ({ ip, initialData }: Props) => {
   const { data, error } = useSWR<All, TypeError>(ip, getServer, {
-    initialData,
+    fallbackData: initialData,
   });
   if (error) {
     return <ErrorBanner {...error} />;
