@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "docs/**"
-      - "frontend/**"
-      - Dockerfile.frontend
+    paths-ignore:
+      - "server/**"
+      - "emails/**"
+      - "prisma/**"
 
 jobs:
   main:
