@@ -15,7 +15,7 @@ import (
 
 func (s *service) image(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
-	user, err := s.repo.GetUser(r.Context(), id, true)
+	user, err := s.repo.GetUser(r.Context(), id, false)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
