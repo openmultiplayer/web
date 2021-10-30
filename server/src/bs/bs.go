@@ -6,11 +6,8 @@ import (
 	"go.uber.org/fx"
 )
 
-type BurgershotPrismaClient PrismaClient
-
 func New(lc fx.Lifecycle) (*PrismaClient, error) {
 	prisma := NewClient()
-	// bs := BurgershotPrismaClient(*prisma)
 
 	lc.Append(fx.Hook{
 		OnStart: func(context.Context) error {
