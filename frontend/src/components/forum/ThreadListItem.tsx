@@ -10,9 +10,9 @@ type Props = {
 
 const ThreadListItem: FC<Props> = ({ post, showAdminTools }) => {
   return (
-    <li key={post.id}>
+    <li>
       <article>
-        <div className="content">
+        <div>
           <header>
             <div className="category">
               <CategoryName value={post.category.name} />
@@ -38,6 +38,12 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools }) => {
 
       <style jsx>{`
         article {
+          background-color: var(
+            ${post.deletedAt
+              ? "--chakra-colors-red-100"
+              : "--chakra-colors-white"}
+          );
+
           padding: 0.5em 1em;
           border: 1px solid hsla(0, 100%, 0%, 10%);
           border-radius: 0.5em;
