@@ -32,7 +32,7 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools }) => {
         </div>
 
         <footer>
-          <PostMetadata post={post} />
+          <PostMetadata post={post} showReplies={true} />
         </footer>
       </article>
 

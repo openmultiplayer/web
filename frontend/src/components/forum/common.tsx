@@ -60,30 +60,60 @@ export const TagList: FC<TagListProps> = ({ tags }) => (
   </UnorderedList>
 );
 
-type PostMetadataProps = { post: Post };
-export const PostMetadata: FC<PostMetadataProps> = ({ post }) => {
+type PostMetadataProps = { post: Post; showReplies?: boolean };
+export const PostMetadata: FC<PostMetadataProps> = ({
+  post,
+  showReplies = false,
+}) => {
   const createdAt = niceDate(post.createdAt);
   const updatedAt = niceDate(post.updatedAt);
   const isUpdated = createdAt !== updatedAt && post.deletedAt === null;
+  const posts = post.posts ?? 0;
 
   return (
     <Flex justifyContent="space-between">
-      <Flex gridGap="0.5em" alignItems="center">
+      <Flex gridGap="0.4em" alignItems="center">
         <ProfilePicture id={post.author.id} />
-        <em>{post.author.name}</em> posted <em>{createdAt}</em>
+
+        <span>
+          <em className="author">{post.author.name}</em>
+        </span>
+
+        <span className="posted">
+          {"posted "}
+          <em>{createdAt}</em>
+        </span>
         {isUpdated && (
-          <span>
-            {" • updated "}
-            <em>{updatedAt}</em>
-          </span>
+          <>
+            <span>•</span>
+            <span className="updated">
+              {"updated "}
+              <em>{updatedAt}</em>
+            </span>
+          </>
+        )}
+        {showReplies && (
+          <>
+            <span>•</span>
+            <span className="replies">
+              <em>{posts}</em> replies
+            </span>
+          </>
         )}
       </Flex>
 
       <TagList tags={post.tags} />
 
       <style jsx>{`
+        em.author {
+          font-style: normal;
+          color: var(--chakra-colors-black);
+        }
         em {
           font-style: normal;
+          color: var(--chakra-colors-black-500);
+        }
+        span {
           color: var(--chakra-colors-gray-500);
         }
       `}</style>

@@ -242,10 +242,17 @@ func (d *DB) GetThreads(
 		return nil, err
 	}
 
+	counts, err := d.GetPostCounts(ctx)
+	if err != nil {
+		return nil, err
+	}
+
 	result := []Post{}
 	for _, p := range posts {
 		p.Body = ""
-		result = append(result, *FromModel(&p))
+		post := *FromModel(&p)
+		post.Posts = counts[post.ID]
+		result = append(result, post)
 	}
 
 	return result, nil
@@ -339,4 +346,39 @@ func (d *DB) GetTags(ctx context.Context, query string) ([]Tag, error) {
 	}
 
 	return tags, nil
+}
+
+func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
+	type PostCount struct {
+		PostID string `json:"rootPostId"`
+		Count  int    `json:"count"`
+	}
+
+	var counts []PostCount
+	err := d.db.Prisma.Raw.QueryRaw(`
+		with recursive counts AS(
+			select id, "rootPostId"
+			from public."Post"
+			where "rootPostId" is not null
+
+			union
+
+			select s.id, s."rootPostId"
+			from public."Post" s
+			inner join counts c on c.id = s."rootPostId"
+		) select "rootPostId", count(*) from counts
+		group by "rootPostId"`).
+		Exec(ctx, &counts)
+	if err != nil {
+		return nil, err
+	}
+
+	fmt.Println(counts)
+
+	result := make(map[string]int)
+	for _, c := range counts {
+		result[c.PostID] = c.Count
+	}
+
+	return result, nil
 }

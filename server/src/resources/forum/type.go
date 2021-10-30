@@ -29,6 +29,7 @@ type Post struct {
 	Author      Author     `json:"author"`
 	Tags        []string   `json:"tags"`
 	Category    Category   `json:"category"`
+	Posts       int        `json:"posts"`
 }
 
 type Category struct {
