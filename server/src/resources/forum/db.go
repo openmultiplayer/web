@@ -98,9 +98,17 @@ func (d *DB) createTags(ctx context.Context, tags []string) ([]db.TagWhereParam,
 func (d *DB) CreatePost(
 	ctx context.Context,
 	body, authorID string,
-	parentID string,
+	parentID, replyToID string,
 ) (*Post, error) {
 	short := makeShortBody(body)
+
+	optional := []db.PostSetParam{
+		db.Post.Root.Link(db.Post.ID.Equals(parentID)),
+	}
+
+	if replyToID != "" {
+		optional = append(optional, db.Post.ReplyTo.Link(db.Post.ID.Equals(replyToID)))
+	}
 
 	post, err := d.db.Post.
 		CreateOne(
@@ -109,7 +117,7 @@ func (d *DB) CreatePost(
 			db.Post.First.Set(false),
 			db.Post.Author.Link(db.User.ID.Equals(authorID)),
 
-			db.Post.Root.Link(db.Post.ID.Equals(parentID)),
+			optional...,
 		).
 		With(db.Post.Author.Fetch()).
 		Exec(ctx)
