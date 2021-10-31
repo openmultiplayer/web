@@ -45,7 +45,11 @@ export const useCreateThread = (): CreateThreadFn => {
   return onSubmit;
 };
 
-export const useCreatePost = (id: string, slug: string): CreatePostFn => {
+export const useCreatePost = (
+  id: string,
+  slug: string,
+  replyTo?: Post
+): CreatePostFn => {
   const toast = useToast();
   const handler = useErrorHandler();
   const router = useRouter();
@@ -58,7 +62,7 @@ export const useCreatePost = (id: string, slug: string): CreatePostFn => {
       try {
         await apiSSP<Post>(`/forum/${id}`, {
           method: "POST",
-          body: JSON.stringify(data),
+          body: JSON.stringify({ ...data, replyTo: replyTo?.id ?? null }),
           schema: PostSchema,
         });
         toast({
@@ -70,7 +74,7 @@ export const useCreatePost = (id: string, slug: string): CreatePostFn => {
         handler(e);
       }
     },
-    [toast, handler, router, id, slug]
+    [toast, handler, router, id, slug, replyTo]
   );
 
   return onSubmit;

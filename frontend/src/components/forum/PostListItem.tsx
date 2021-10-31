@@ -32,13 +32,14 @@ type Props = {
   post: Post;
   markdown: MDXRemoteSerializeResult<Record<string, unknown>>;
   showAdminTools: boolean;
+  onSetReply: (post: Post) => void;
 };
 
 type PostHeadStripProps = {
   editing: boolean;
   post: Post;
   admin?: boolean;
-  onReply: (id: string) => void;
+  onReply: (post: Post) => void;
   onEdit: (id: string) => void;
   onTitleChange: (title: string) => void;
 };
@@ -48,6 +49,7 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
   post,
   admin,
   onEdit,
+  onReply,
   onTitleChange,
 }) => {
   const deletePost = useDeletePost();
@@ -64,6 +66,7 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
     },
     [setTitle, onTitleChange]
   );
+  const onSetReply = useCallback(() => onReply(post), [onReply, post]);
 
   return (
     <Flex justifyContent="space-between">
@@ -91,7 +94,9 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
           ></MenuButton>
           <MenuList>
             <MenuOptionGroup>
-              <MenuItem icon={<AtSignIcon />}>Reply</MenuItem>
+              <MenuItem icon={<AtSignIcon />} onClick={onSetReply}>
+                Reply
+              </MenuItem>
               {/* <MenuItem icon={<ChatIcon />}>Quote</MenuItem> */}
             </MenuOptionGroup>
             {admin && (
@@ -119,6 +124,7 @@ const PostListItem: FC<Props> = ({
   post,
   markdown,
   showAdminTools,
+  onSetReply,
 }) => {
   const router = useRouter();
   const { user } = useAuth();
@@ -128,9 +134,6 @@ const PostListItem: FC<Props> = ({
   const [editing, setEditing] = useState(false);
   const [title, setTitle] = useState(post.title ?? undefined);
   const onEdit = useCallback(() => setEditing(true), [setEditing]);
-  const onReply = useCallback((id: string) => {
-    console.log("reply", id);
-  }, []);
 
   const editPost = useEditPost();
   const onSubmitEdit = useCallback(
@@ -156,7 +159,7 @@ const PostListItem: FC<Props> = ({
                 onTitleChange={onTitleChange}
                 post={post}
                 admin={showTools}
-                onReply={onReply}
+                onReply={onSetReply}
                 onEdit={onEdit}
               />
               <PostMetadata post={post} />
