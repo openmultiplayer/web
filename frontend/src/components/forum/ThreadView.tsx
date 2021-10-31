@@ -24,12 +24,16 @@ type Props = {
   initialError?: APIError;
 };
 
-const PostList: FC<{ posts: PostWithMarkdown[] }> = ({ posts }) => {
+const PostList: FC<{ thread: Partial<Post>; posts: PostWithMarkdown[] }> = ({
+  thread,
+  posts,
+}) => {
   return (
     <OrderedList spacing={2} margin={0} listStyleType="none">
       {map((post: PostWithMarkdown) => (
         <PostListItem
           key={post.post.id}
+          thread={thread}
           post={post.post}
           markdown={post.markdown}
           showAdminTools={true}
@@ -67,7 +71,7 @@ const ThreadView: FC<Props> = ({ id, slug, initialPosts, initialError }) => {
       <Stack spacing={2}>
         <BackLink to="/discussion" />
 
-        <PostList posts={initialPosts} />
+        <PostList thread={{ id, slug }} posts={initialPosts} />
 
         <Reply id={id} slug={slug} />
       </Stack>
