@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"io/fs"
 	"io/ioutil"
+	"os"
 	"strings"
 
 	"github.com/Southclaws/supervillain"
@@ -46,7 +46,7 @@ func convert(name, prefix string, objs ...interface{}) {
 	ioutil.WriteFile(
 		out,
 		[]byte(output.String()),
-		fs.ModePerm,
+		os.ModePerm,
 	)
 }
 
