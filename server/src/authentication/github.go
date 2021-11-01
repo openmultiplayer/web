@@ -84,7 +84,7 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*user.U
 		return nil, errors.New("email missing from GitHub account data")
 	}
 
-	if u, err := p.repo.GetUserByEmail(ctx, email, false); err == nil {
+	if u, err := p.repo.GetUserByEmail(ctx, email, false); err == nil && u != nil {
 		return u, err
 	}
 

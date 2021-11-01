@@ -109,8 +109,8 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 		return nil, errors.New("email missing from Discord account data")
 	}
 
-	if u, err := p.repo.GetUserByEmail(ctx, email, false); err == nil {
-		return u, err
+	if u, err := p.repo.GetUserByEmail(ctx, email, false); err == nil && u != nil {
+		return u, nil
 	}
 
 	// Check if this request came from a user who was already logged in. If they
