@@ -21,9 +21,9 @@ func (w *Worker) migrateUsers(ctx context.Context) error {
 	for _, u := range mybbUsers {
 		nu, err := w.users.CreateUser(ctx, u.Email, "UNDEFINED", u.Username)
 		if err != nil {
-			zap.L().Info("failed to migrate user", zap.String("username", u.Username), zap.Error(err))
+			zap.L().Info("failed to migrate user", zap.String("username", u.Username), zap.String("email", u.Email), zap.Error(err))
 		} else {
-			zap.L().Debug("migrated user", zap.String("username", nu.Name), zap.Int("n", count))
+			zap.L().Debug("migrated user", zap.String("username", nu.Name), zap.String("email", nu.Email), zap.Int("n", count))
 			count++
 		}
 	}
