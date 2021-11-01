@@ -1,3 +1,5 @@
+// +build integration
+
 package serververify
 
 import (
