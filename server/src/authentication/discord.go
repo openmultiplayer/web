@@ -109,13 +109,17 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 		return nil, errors.New("email missing from Discord account data")
 	}
 
-	if u, err := p.repo.GetUserByEmail(ctx, email, false); err == nil && u != nil {
-		return u, nil
+	u, err := p.repo.GetUserByEmail(ctx, email, false)
+	if err != nil {
+		return nil, err
+	}
+	if u != nil {
+		return u, err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
 	// are, get their existing account. If not, create a new account.
-	u, err := p.as.GetOrCreateFromContext(ctx, email, "DISCORD", dcuser.Username)
+	u, err = p.as.GetOrCreateFromContext(ctx, email, "DISCORD", dcuser.Username)
 	if err != nil {
 		return nil, err
 	}

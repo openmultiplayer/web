@@ -76,7 +76,7 @@ func (d *DB) GetUser(ctx context.Context, userId string, public bool) (*User, er
 
 func (d *DB) GetUserByEmail(ctx context.Context, email string, public bool) (*User, error) {
 	user, err := d.db.User.
-		FindUnique(db.User.ID.Equals(email)).
+		FindUnique(db.User.Email.Equals(email)).
 		With(
 			db.User.Github.Fetch(),
 			db.User.Discord.Fetch(),
