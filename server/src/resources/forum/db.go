@@ -393,3 +393,18 @@ func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
 
 	return result, nil
 }
+
+func (d *DB) CreateCategory(ctx context.Context, name string) (*Category, error) {
+	c, err := d.db.Category.
+		UpsertOne(db.Category.Name.Equals(name)).
+		Create(db.Category.Name.Set(name)).
+		Update().
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+	return &Category{
+		ID:   c.ID,
+		Name: c.Name,
+	}, nil
+}
