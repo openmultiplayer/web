@@ -10,8 +10,8 @@ import (
 )
 
 type patchBody struct {
-	Title string `json:"parent" valid:"stringlength(1|64)"`
-	Body  string `json:"body"   valid:"stringlength(1|65535)"`
+	Title string `json:"title" valid:"stringlength(1|64)"`
+	Body  string `json:"body"  valid:"stringlength(1|65535)"`
 }
 
 func (s *service) patch(w http.ResponseWriter, r *http.Request) {
@@ -22,7 +22,7 @@ func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var b patchBody
-	if !web.ParseBody(w, r, b) {
+	if !web.ParseBody(w, r, &b) {
 		return
 	}
 

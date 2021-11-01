@@ -3,6 +3,7 @@ package resources
 import (
 	"go.uber.org/fx"
 
+	"github.com/openmultiplayer/web/server/src/resources/burgershot"
 	"github.com/openmultiplayer/web/server/src/resources/forum"
 	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 	"github.com/openmultiplayer/web/server/src/resources/server"
@@ -15,5 +16,6 @@ func Build() fx.Option {
 		forum.New,
 		user.New,
 		pawndex.New,
+		burgershot.New,
 	)
 }

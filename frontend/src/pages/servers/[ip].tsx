@@ -1,6 +1,4 @@
-import { Button } from "@chakra-ui/button";
 import { useColorModeValue } from "@chakra-ui/color-mode";
-import { ArrowBackIcon } from "@chakra-ui/icons";
 import { Box, Flex, Link, Stack, Text } from "@chakra-ui/layout";
 import { Stat, StatLabel, StatNumber } from "@chakra-ui/stat";
 import { chakra } from "@chakra-ui/system";
@@ -12,8 +10,8 @@ import {
   NextPage,
 } from "next";
 import { NextSeo } from "next-seo";
-import NextLink from "next/link";
 import ErrorBanner from "src/components/ErrorBanner";
+import BackLink from "src/components/forum/BackLink";
 import LoadingBanner from "src/components/LoadingBanner";
 import { API_ADDRESS } from "src/config";
 import { All } from "src/types/_generated_Server";
@@ -159,7 +157,7 @@ const Info = ({ data }: { data: All }) => (
 
 const Content = ({ ip, initialData }: Props) => {
   const { data, error } = useSWR<All, TypeError>(ip, getServer, {
-    initialData,
+    fallbackData: initialData,
   });
   if (error) {
     return <ErrorBanner {...error} />;
@@ -176,13 +174,7 @@ const Page: NextPage<Props> = ({ ip, initialData }) => {
     <>
       <section className="center mv3">
         <Stack direction={["column"]} spacing="4">
-          <NextLink href="/servers">
-            <Link className="black-80 hover-blue">
-              <Button leftIcon={<ArrowBackIcon />} variant="outline">
-                Back
-              </Button>
-            </Link>
-          </NextLink>
+          <BackLink to="/servers" />
 
           <Content ip={ip} initialData={initialData} />
         </Stack>

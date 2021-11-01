@@ -100,3 +100,19 @@ func IsRequestAdmin(r *http.Request) bool {
 	}
 	return info.Cookie.Admin
 }
+
+func (s *State) GetOrCreateFromContext(ctx context.Context, email, authMethod, username string) (*user.User, error) {
+	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
+		u, err := s.users.GetUser(ctx, existing.Cookie.UserID, false)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to find user account")
+		}
+		return u, nil
+	} else {
+		u, err := s.users.CreateUser(ctx, email, user.AuthMethod(authMethod), username)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to create user account")
+		}
+		return u, nil
+	}
+}

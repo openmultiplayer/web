@@ -8,14 +8,14 @@ import (
 type Repository interface {
 	CreateThread(
 		ctx context.Context,
-		title, body, authorID, categoryID string,
+		title, body, authorID, categoryName string,
 		tags []string,
 	) (*Post, error)
 
 	CreatePost(
 		ctx context.Context,
 		body, authorID,
-		parentID string,
+		parentID, replyToID string,
 	) (*Post, error)
 
 	EditPost(ctx context.Context, authorID, postID string, title *string, body *string) (*Post, error)
@@ -33,4 +33,14 @@ type Repository interface {
 	GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error)
 	GetCategories(ctx context.Context) ([]Category, error)
 	GetTags(ctx context.Context, query string) ([]Tag, error)
+
+	CreateCategory(ctx context.Context, name string) (*Category, error)
+
+	CreateLegacyThread(
+		ctx context.Context,
+		title string,
+		category string,
+		first Post,
+		replies []Post,
+	) (*Post, error)
 }

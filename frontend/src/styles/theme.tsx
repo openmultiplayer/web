@@ -34,11 +34,17 @@ const styles = {
     ul: {
       paddingLeft: "1em",
     },
+    a: {
+      color: "purple",
+      _hover: {
+        textDecoration: "underline",
+      },
+    },
   },
 };
 
 const colors = {
-  o: {
+  brand: {
     black: "#101013",
     darkpurple: "#282438",
     violet: "#463E55",

@@ -1,6 +1,8 @@
-const fs = require("fs");
-const path = require("path");
-const ISO6391 = require("iso-639-1");
+import { lstatSync, readdirSync } from "fs";
+import { basename } from "path";
+import pkg from "iso-639-1";
+
+const { getNativeName } = pkg;
 
 const SIDE_BAR_NAME = "Sidebar";
 const CATEGORY_NAME_CAPITALIZATION = true;
@@ -22,15 +24,14 @@ function shouldIgnore(name) {
 }
 
 function parseDir(filename) {
-  const stats = fs.lstatSync(filename);
+  const stats = lstatSync(filename);
   const info = {};
 
   // check if it's a directory
   if (stats.isDirectory()) {
     // if it's `docs` directory, set it as main and first key
-    if (path.basename(filename) === "docs") {
-      info[SIDE_BAR_NAME] = fs
-        .readdirSync(filename)
+    if (basename(filename) === "docs") {
+      info[SIDE_BAR_NAME] = readdirSync(filename)
         .map(function (child) {
           return parseDir(filename + "/" + child);
         })
@@ -39,13 +40,13 @@ function parseDir(filename) {
     // it's a directory inside `docs` folder
     else {
       // ignore translations, these are handled automatically
-      if (path.basename(filename) === "translations") {
+      if (basename(filename) === "translations") {
         return null;
       }
 
       info.type = "category";
       info.path = filename.replace("..", "");
-      let catName = path.basename(filename);
+      let catName = basename(filename);
 
       if (catName[0] == "_") {
         catName = catName.substring(1);
@@ -53,7 +54,7 @@ function parseDir(filename) {
       catName = catName.replace("_", " ");
 
       if (catName.length == 2) {
-        catName = ISO6391.getNativeName(catName);
+        catName = getNativeName(catName);
       } else if (catName.length == 5) {
         // Taiwan uses Traditional Chinese as its script, we're using ISO codes
         // for countries not languages, so this slight modification is for that.
@@ -71,13 +72,12 @@ function parseDir(filename) {
       }
 
       // sort files and directories alphabetical and files first
-      const sortedFilesAndDirs = fs
-        .readdirSync(filename, "utf8")
+      const sortedFilesAndDirs = readdirSync(filename, "utf8")
         .map((child) => {
           const path = filename + "/" + child;
           return {
             name: child,
-            isDir: fs.lstatSync(path).isDirectory(),
+            isDir: lstatSync(path).isDirectory(),
           };
         })
         .sort((a, b) =>
@@ -113,11 +113,9 @@ function parseDir(filename) {
     tmpPath.splice(0, 1);
     let docPath = "";
     tmpPath.map((name) => (docPath = docPath + name + "/"));
-    return (
-      docPath + path.basename(filename).replace(".mdx", "").replace(".md", "")
-    );
+    return docPath + basename(filename).replace(".mdx", "").replace(".md", "");
   }
   return info;
 }
 
-module.exports = parseDir;
+export default parseDir;

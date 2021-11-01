@@ -58,16 +58,16 @@ export async function apiSSP<T>(
   });
 
   const raw = await r.json();
-  const decoded: T = opts?.schema?.parse(raw) ?? raw;
 
   if (!success(r.status)) {
-    const parsed = APIErrorSchema.safeParse(decoded);
+    const parsed = APIErrorSchema.safeParse(raw);
     if (parsed.success) {
       throw parsed.data;
     } else {
       throw new Error(`unknown error: ${r.statusText}: ${r.status}`);
     }
   } else {
+    const decoded: T = opts?.schema?.parse(raw) ?? raw;
     if (opts?.responseHeaders) {
       return { ...decoded, headers: r.headers };
     } else {

@@ -1,77 +1,34 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import Editor from "rich-markdown-editor";
-import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { apiSSP } from "src/fetcher/fetcher";
-import { Post } from "src/types/_generated_Forum";
-import { useRouter } from "next/router";
-import { APIError } from "src/types/_generated_Error";
+import { Box, Stack } from "@chakra-ui/react";
+import { NextPage } from "next";
+import React from "react";
+import { withAuth } from "src/auth/hoc";
+import BackLink from "src/components/forum/BackLink";
+import PostEditor from "src/components/forum/PostEditor";
+import { useCreateThread } from "src/components/forum/hooks";
 
-export const PostPayloadSchema = z.object({
-  title: z.string(),
-  body: z.string().optional(), // optional because it's not in the form
-  tags: z.string().transform((s) => s.split(" ")),
-});
-export type PostPayload = z.infer<typeof PostPayloadSchema>;
-
-const Page = () => {
-  const { register, handleSubmit } = useForm({
-    resolver: zodResolver(PostPayloadSchema),
-  });
-  const [body, setBody] = useState("");
-  const [error, setError] = useState("");
-  const router = useRouter();
-
-  const onSubmit = async (data: PostPayload) => {
-    if (body.length === 0 || body === "\\n") {
-      setError("Post has no content");
-      return;
-    }
-
-    setError("");
-    const payload = { ...data, body };
-
-    try {
-      const post = await apiSSP<Post>("/forum", {
-        method: "POST",
-        body: JSON.stringify(payload),
-      });
-      router.push(post.slug ?? "");
-    } catch (e) {
-      const err = e as APIError;
-      console.error(err);
-      setError(err?.message ?? "Unexpected error occurred");
-    }
-  };
+const Editor = () => {
+  const onSubmit = useCreateThread();
 
   return (
-    <div className="measure-wide center pv4">
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-column">
-        <input
-          {...register("title", { required: true, maxLength: 64 })}
-          placeholder="Title..."
-          required
-        />
-
-        <Editor
-          onChange={(v) => setBody(v)}
-          placeholder="Your post content..."
-          className="mv2"
-        />
-
-        <input
-          {...register("tags", { required: true, maxLength: 64 })}
-          placeholder="Tags separated by spaces"
-          className="mv2"
-          required
-        />
-
-        <button type="submit">Post</button>
-        {<span>{error}</span>}
-      </form>
+    <div>
+      <PostEditor
+        onSubmit={onSubmit}
+        disableThreadCreationOptions={false}
+        postButtonText="Create Post"
+      />
     </div>
   );
 };
 
-export default Page;
+const Page: NextPage = () => {
+  return (
+    <Box paddingTop={2} paddingBottom={2} maxWidth="40em" margin="auto">
+      <Stack spacing={2}>
+        <BackLink to="/discussion" />
+        <Editor />
+      </Stack>
+    </Box>
+  );
+};
+
+export default withAuth(Page);

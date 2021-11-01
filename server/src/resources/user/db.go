@@ -2,6 +2,7 @@ package user
 
 import (
 	"context"
+	"errors"
 	"time"
 
 	"github.com/openmultiplayer/web/server/src/db"
@@ -15,6 +16,45 @@ func New(db *db.PrismaClient) Repository {
 	return &DB{db}
 }
 
+func (d *DB) CreateUser(ctx context.Context, email string, authMethod AuthMethod, username string) (*User, error) {
+	u, err := d.db.User.CreateOne(
+		db.User.Email.Set(email),
+		db.User.AuthMethod.Set(db.AuthMethod(authMethod)),
+		db.User.Name.Set(username),
+	).Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	return FromModel(u, false), nil
+}
+
+func (d *DB) LinkGitHub(ctx context.Context, userID, githubAccountID, githubUsername, githubEmail string) error {
+	_, err := d.db.GitHub.CreateOne(
+		db.GitHub.User.Link(db.User.ID.Equals(userID)),
+		db.GitHub.AccountID.Set(githubAccountID),
+		db.GitHub.Username.Set(githubUsername),
+		db.GitHub.Email.Set(githubEmail),
+	).Exec(ctx)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func (d *DB) LinkDiscord(ctx context.Context, userID, discordAccountID, discordUsername, discordEmail string) error {
+	_, err := d.db.Discord.CreateOne(
+		db.Discord.User.Link(db.User.ID.Equals(userID)),
+		db.Discord.AccountID.Set(discordAccountID),
+		db.Discord.Username.Set(discordUsername),
+		db.Discord.Email.Set(discordEmail),
+	).Exec(ctx)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
 func (d *DB) GetUser(ctx context.Context, userId string, public bool) (*User, error) {
 	user, err := d.db.User.
 		FindUnique(db.User.ID.Equals(userId)).
@@ -25,9 +65,27 @@ func (d *DB) GetUser(ctx context.Context, userId string, public bool) (*User, er
 		).
 		Exec(ctx)
 	if err != nil {
-		// a "not found" in this context is still an internal server error
-		// because the user *should* exist in order for the auth middleware to
-		// allow the code to reach this point.
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
+		return nil, err
+	}
+
+	return FromModel(user, public), nil
+}
+
+func (d *DB) GetUserByEmail(ctx context.Context, email string, public bool) (*User, error) {
+	user, err := d.db.User.
+		FindUnique(db.User.Email.Equals(email)).
+		With(
+			db.User.Github.Fetch(),
+			db.User.Discord.Fetch(),
+		).
+		Exec(ctx)
+	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 

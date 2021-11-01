@@ -3,6 +3,7 @@ module github.com/openmultiplayer/web
 go 1.14
 
 require (
+	github.com/JohannesKaufmann/html-to-markdown v1.3.0 // indirect
 	github.com/Masterminds/semver v1.5.0
 	github.com/PuerkitoBio/goquery v1.6.0
 	github.com/RoaringBitmap/roaring v0.9.4 // indirect
@@ -16,6 +17,7 @@ require (
 	github.com/bwmarrin/discordgo v0.22.0
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/cskr/pubsub v1.0.2
+	github.com/frustra/bbcode v0.0.0-20201127003707-6ef347fbe1c8 // indirect
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/cors v1.1.1
 	github.com/golang/protobuf v1.4.3 // indirect

@@ -32,14 +32,16 @@ func (s *PooledScraper) Scrape(ctx context.Context, addresses []string) chan ser
 			c, f := context.WithTimeout(ctx, time.Second*10)
 			defer f()
 
-			ss := server.HydrateDomain(c, server.TransformQueryResult(s.Q.Query(ctx, addr)))
-			if ss.IP == "" {
-				return
+			result := server.TransformQueryResult(s.Q.Query(ctx, addr))
+			if result.Active {
+				result = server.HydrateDomain(c, result)
+			} else {
+				result.IP = addr
 			}
 
-			ss.Core.IP = ss.IP
+			result.Core.IP = result.IP
 
-			out <- ss
+			out <- result
 		}(a)
 	}
 

@@ -31,10 +31,10 @@ tasks:
 
   generate:
     cmds:
-      # Calling the Go generator from the Prisma CLI is not supported yet...
-      # - npx @prisma/cli generate
-      # so we call it directly:
-      - go run github.com/prisma/prisma-client-go generate
+      # Generate main database bindings
+      - npx prisma generate
+      # Generate Burgershot (MyBB) database bindings
+      - npx prisma generate --schema=./prisma/burgershot.prisma
       # Also generate TypeScript type declarations from some backend structs.
       - go run types.go
 
@@ -66,6 +66,7 @@ tasks:
     dir: frontend
     env:
       NEXT_PUBLIC_API_ADDRESS: "http://localhost:8000"
+      NEXT_PUBLIC_WEB_ADDRESS: "http://localhost:3000"
     cmds:
       - npm run dev
 

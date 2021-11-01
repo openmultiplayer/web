@@ -15,11 +15,12 @@ type Searcher interface {
 }
 
 type GitHubSearcher struct {
-	GitHub *github.Client
+	GitHub   *github.Client
+	lastPage int
 }
 
 func NewGitHubSearcher(gh *github.Client) Searcher {
-	return &GitHubSearcher{gh}
+	return &GitHubSearcher{gh, 0}
 }
 
 func (g *GitHubSearcher) Search(queries ...string) ([]string, error) {
@@ -35,14 +36,17 @@ func (g *GitHubSearcher) Search(queries ...string) ([]string, error) {
 }
 
 func (g *GitHubSearcher) doPagedSearch(query string) (repos []string, err error) {
-	page := 0
+	page := g.lastPage
 	for {
 		var result []github.Repository
 		result, err = g.runQueryForPage(query, page)
 		if err != nil {
+			// only store the last page if there was a failure
+			g.lastPage = page
 			break
 		}
 		if len(result) == 0 {
+			g.lastPage = 0
 			break
 		}
 
@@ -66,6 +70,11 @@ func (g *GitHubSearcher) runQueryForPage(query string, page int) (repos []github
 		return nil, errors.Wrap(err, "failed to search repositories")
 	}
 	if resp.Rate.Remaining <= 0 {
+		zap.L().Debug("crossed request limit threshold",
+			zap.Int("remaining", resp.Rate.Remaining),
+			zap.Int("limit", resp.Rate.Limit),
+			zap.Time("reset", resp.Rate.Reset.Time))
+
 		sleepfor := resp.Rate.Reset.Time.Sub(time.Now())
 		time.Sleep(sleepfor)
 	}

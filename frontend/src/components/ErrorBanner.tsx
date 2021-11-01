@@ -11,7 +11,7 @@ const ErrorBanner: FC<Props> = ({ error, message, suggested }) => {
       <Stack spacing={4}>
         <header>
           <WarningTwoIcon w={7} h={7} />
-          <Heading>An Error Occurred</Heading>
+          <Heading my="0">An Error Occurred</Heading>
         </header>
 
         <Text>{message ?? "An unexpected error occurred."}</Text>
@@ -22,15 +22,13 @@ const ErrorBanner: FC<Props> = ({ error, message, suggested }) => {
           </Text>
         )}
 
-        <pre>
-          {error ?? "(no detailed error information was provided by the cause)"}
-        </pre>
+        <pre>{error ?? "(no detailed error information was provided)"}</pre>
       </Stack>
       <style jsx>{`
         section {
           max-width: 40em;
           margin: auto;
-          padding 3em;
+          padding: 3em;
           background-color: var(--chakra-colors-red-300);
         }
         header {

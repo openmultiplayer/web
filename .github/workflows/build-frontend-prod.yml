@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "docs/**"
-      - "frontend/**"
+    paths-ignore:
+      - "server/**"
+      - "emails/**"
+      - "prisma/**"
 
 jobs:
   main:

@@ -1,24 +1,21 @@
-const fs = require("fs");
-const path = require("path");
+import { readdirSync, statSync } from "fs";
+import { join } from "path";
 
-const parseDir = require("./scripts/gentree");
+import parseDir from "./scripts/gentree.mjs";
 
-const localesFromContent = fs
-  .readdirSync("content")
-  .filter((v) => fs.statSync(path.join("content", v)).isDirectory());
+const localesFromContent = readdirSync("content").filter((v) =>
+  statSync(join("content", v)).isDirectory()
+);
 
-const localesFromDocs = fs
-  .readdirSync("../docs/translations")
-  .filter((v) =>
-    fs.statSync(path.join("../docs/translations", v)).isDirectory()
-  );
+const localesFromDocs = readdirSync("../docs/translations").filter((v) =>
+  statSync(join("../docs/translations", v)).isDirectory()
+);
 
 const locales = [
   ...new Set([...localesFromContent, ...localesFromDocs]),
 ].sort();
 
-module.exports = (phase) => {
-  console.log("Phase:", phase);
+const config = (phase) => {
   return {
     serverRuntimeConfig: { phase },
     env: {
@@ -29,12 +26,13 @@ module.exports = (phase) => {
       defaultLocale: "en",
     },
     images: {
-      domains: ["assets.open.mp"],
+      domains: ["assets.open.mp", "api.open.mp", "localhost"],
+      formats: ["image/avif", "image/webp"],
     },
+
     // prettier-ignore
     redirects() {
       return [
-        { source: "/about", destination: "/", permanent: true },
         { source: "/forum", destination: "https://burgershot.gg", permanent: false},
         { source: "/wiki", destination: "https://open.mp/docs ", permanent: true},
         { source: "/links", destination: "https://linktr.ee/openmultiplayer", permanent: true},
@@ -49,3 +47,5 @@ module.exports = (phase) => {
     },
   };
 };
+
+export default config;

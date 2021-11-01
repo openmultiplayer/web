@@ -5,12 +5,14 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
+
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
 type postPostBody struct {
-	Body string `json:"body"   valid:"required,stringlength(1|65535)"`
+	Body    string `json:"body"   valid:"required,stringlength(1|65535)"`
+	ReplyTo string `json:"replyTo"`
 }
 
 func (s *service) postPost(w http.ResponseWriter, r *http.Request) {
@@ -25,7 +27,7 @@ func (s *service) postPost(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	post, err := s.repo.CreatePost(r.Context(), b.Body, info.Cookie.UserID, id)
+	post, err := s.repo.CreatePost(r.Context(), b.Body, info.Cookie.UserID, id, b.ReplyTo)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
