@@ -10,6 +10,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/api"
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/bs"
+	"github.com/openmultiplayer/web/server/src/bsworker"
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
@@ -28,7 +29,7 @@ import (
 // nolint:errcheck
 func Start(ctx context.Context) {
 	app := fx.New(
-		fx.NopLogger,
+		// fx.NopLogger,
 
 		fx.Provide(
 			config.New,
@@ -50,6 +51,7 @@ func Start(ctx context.Context) {
 		resources.Build(),
 		serverworker.Build(),
 		pawndexworker.Build(),
+		bsworker.Build(),
 	)
 
 	err := app.Start(ctx)
