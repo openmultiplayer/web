@@ -2,13 +2,16 @@ package bsworker
 
 import (
 	"context"
+	"time"
 
 	md "github.com/JohannesKaufmann/html-to-markdown"
 	"github.com/frustra/bbcode"
 	"go.uber.org/zap"
+
+	"github.com/openmultiplayer/web/server/src/resources/forum"
 )
 
-func (w *Worker) migratePosts(ctx context.Context) error {
+func (w *Worker) MigratePosts(ctx context.Context) error {
 	threads, err := w.bs.GetThreads(ctx)
 	if err != nil {
 		return err
@@ -46,58 +49,71 @@ func (w *Worker) migratePosts(ctx context.Context) error {
 
 		bsuser := usermap[first.UId]
 
-		user, err := w.users.GetUserByEmail(ctx, bsuser, false)
+		firstPostUser, err := w.users.GetUserByEmail(ctx, bsuser, false)
 		if err != nil {
 			return err
 		}
 
-		if user == nil {
+		if firstPostUser == nil {
 			zap.L().Info("could not find thread author", zap.String("email", bsuser), zap.Int("uid", first.UId), zap.String("username", first.Username))
 			continue
 		}
 
-		authorID := user.ID
-
 		categoryName := forummap[t.Fid]
 
-		markdown, err := bbcodeToMarkdown(first.Message)
+		firstMd, err := bbcodeToMarkdown(first.Message)
 		if err != nil {
 			zap.L().Info("failed to convert old thread first post to markdown", zap.Error(err))
-			markdown = first.Message
+			firstMd = first.Message
 		}
-
-		newthread, err := w.forum.CreateThread(ctx, t.Subject, markdown, authorID, categoryName, []string{})
-		if err != nil {
-			zap.L().Info("failed to create thread", zap.Error(err))
-		}
-
-		zap.L().Info("created thread", zap.String("thread", *newthread.Title), zap.String("b", newthread.Short))
 
 		replies := posts[1:]
+		replyPosts := []forum.Post{}
+
 		for _, r := range replies {
 			bsuser = usermap[r.UId]
-			user, err = w.users.GetUserByEmail(ctx, bsuser, false)
+			replyUser, err := w.users.GetUserByEmail(ctx, bsuser, false)
 			if err != nil {
 				return err
 			}
 
-			if user == nil {
+			if replyUser == nil {
 				zap.L().Info("could not find post author", zap.String("email", bsuser), zap.Int("uid", r.UId), zap.String("username", r.Username))
 				continue
 			}
 
-			markdown, err = bbcodeToMarkdown(r.Message)
+			replyMd, err := bbcodeToMarkdown(r.Message)
 			if err != nil {
 				zap.L().Info("failed to convert old post to markdown", zap.Error(err))
-				markdown = r.Message
+				replyMd = r.Message
 			}
 
-			post, err := w.forum.CreatePost(ctx, markdown, user.ID, newthread.ID, "")
-			if err != nil {
-				zap.L().Info("failed to create post", zap.Error(err))
-			}
+			replyPosts = append(replyPosts, forum.Post{
+				Body:      replyMd,
+				Author:    forum.Author{ID: replyUser.ID},
+				CreatedAt: time.Unix(int64(r.Dateline), 0).UTC(),
+				UpdatedAt: time.Unix(int64(r.Edittime), 0).UTC(),
+			})
 
-			zap.L().Info("created post", zap.String("thread", *newthread.Title), zap.String("b", post.Short))
+			zap.L().Info("prepared post", zap.Time("date", time.Unix(int64(r.Dateline), 0).UTC()), zap.String("thread", first.Subject))
+		}
+
+		newthread, err := w.forum.CreateLegacyThread(
+			ctx,
+			first.Subject,
+			categoryName,
+			forum.Post{
+				Body:      firstMd,
+				Author:    forum.Author{ID: firstPostUser.ID},
+				CreatedAt: time.Unix(int64(first.Dateline), 0).UTC(),
+				UpdatedAt: time.Unix(int64(first.Edittime), 0).UTC(),
+			},
+			replyPosts,
+		)
+		if err != nil {
+			zap.L().Info("failed to create legacy thread", zap.String("email", bsuser), zap.Int("uid", t.UId), zap.String("username", t.Username), zap.Error(err))
+		} else {
+			zap.L().Info("created thread", zap.String("thread", *newthread.Title), zap.String("b", newthread.Short))
 		}
 	}
 

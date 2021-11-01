@@ -65,6 +65,6 @@ func (w *Worker) run(ctx context.Context) error {
 	// commented out for now, should be controlled via config. Only really needs
 	// to be run once in production though.
 	// w.migrateUsers(ctx)
-	// w.migratePosts(ctx)
+	// w.MigratePosts(ctx)
 	return nil
 }
