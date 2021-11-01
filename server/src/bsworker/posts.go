@@ -3,6 +3,8 @@ package bsworker
 import (
 	"context"
 
+	md "github.com/JohannesKaufmann/html-to-markdown"
+	"github.com/frustra/bbcode"
 	"go.uber.org/zap"
 )
 
@@ -58,7 +60,13 @@ func (w *Worker) migratePosts(ctx context.Context) error {
 
 		categoryName := forummap[t.Fid]
 
-		newthread, err := w.forum.CreateThread(ctx, t.Subject, posts[0].Message, authorID, categoryName, []string{})
+		markdown, err := bbcodeToMarkdown(first.Message)
+		if err != nil {
+			zap.L().Info("failed to convert old thread first post to markdown", zap.Error(err))
+			markdown = first.Message
+		}
+
+		newthread, err := w.forum.CreateThread(ctx, t.Subject, markdown, authorID, categoryName, []string{})
 		if err != nil {
 			zap.L().Info("failed to create thread", zap.Error(err))
 		}
@@ -78,7 +86,13 @@ func (w *Worker) migratePosts(ctx context.Context) error {
 				continue
 			}
 
-			post, err := w.forum.CreatePost(ctx, r.Message, user.ID, newthread.ID, "")
+			markdown, err = bbcodeToMarkdown(r.Message)
+			if err != nil {
+				zap.L().Info("failed to convert old post to markdown", zap.Error(err))
+				markdown = r.Message
+			}
+
+			post, err := w.forum.CreatePost(ctx, markdown, user.ID, newthread.ID, "")
 			if err != nil {
 				zap.L().Info("failed to create post", zap.Error(err))
 			}
@@ -88,4 +102,17 @@ func (w *Worker) migratePosts(ctx context.Context) error {
 	}
 
 	return nil
+}
+
+func bbcodeToMarkdown(bbc string) (string, error) {
+	compiler := bbcode.NewCompiler(true, true)
+	converter := md.NewConverter("", true, nil)
+
+	html := compiler.Compile(bbc)
+	markdown, err := converter.ConvertString(html)
+	if err != nil {
+		return "", err
+	}
+
+	return markdown, nil
 }
