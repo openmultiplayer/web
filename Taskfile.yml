@@ -66,6 +66,7 @@ tasks:
     dir: frontend
     env:
       NEXT_PUBLIC_API_ADDRESS: "http://localhost:8000"
+      NEXT_PUBLIC_WEB_ADDRESS: "http://localhost:3000"
     cmds:
       - npm run dev
 

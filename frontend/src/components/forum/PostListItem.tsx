@@ -1,5 +1,7 @@
 import {
   AtSignIcon,
+  CheckIcon,
+  CopyIcon,
   DeleteIcon,
   EditIcon,
   HamburgerIcon,
@@ -7,21 +9,24 @@ import {
 import {
   Box,
   Flex,
-  Input,
   Heading,
   IconButton,
+  Input,
   Menu,
   MenuButton,
   MenuDivider,
   MenuItem,
   MenuList,
   MenuOptionGroup,
+  useClipboard,
+  useToast,
 } from "@chakra-ui/react";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { FC, useCallback, useState } from "react";
 import { useAuth } from "src/auth/hooks";
+import { WEB_ADDRESS } from "src/config";
 import { Post } from "src/types/_generated_Forum";
 import { PostMetadata } from "./common";
 import { useDeletePost, useEditPost } from "./hooks";
@@ -37,6 +42,7 @@ type Props = {
 
 type PostHeadStripProps = {
   editing: boolean;
+  thread: Partial<Post>;
   post: Post;
   admin?: boolean;
   onReply: (post: Post) => void;
@@ -46,6 +52,7 @@ type PostHeadStripProps = {
 
 const PostHeadStrip: FC<PostHeadStripProps> = ({
   editing,
+  thread,
   post,
   admin,
   onEdit,
@@ -67,6 +74,14 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
     [setTitle, onTitleChange]
   );
   const onSetReply = useCallback(() => onReply(post), [onReply, post]);
+  const { hasCopied, onCopy } = useClipboard(
+    `${WEB_ADDRESS}/discussion/${thread.slug}#${post.id}`
+  );
+  const toast = useToast();
+  const permalink = useCallback(() => {
+    onCopy();
+    toast({ status: "success", title: "Post link copied to clipboard!" });
+  }, [onCopy, toast]);
 
   return (
     <Flex justifyContent="space-between">
@@ -96,6 +111,12 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
             <MenuOptionGroup>
               <MenuItem icon={<AtSignIcon />} onClick={onSetReply}>
                 Reply
+              </MenuItem>
+              <MenuItem
+                icon={hasCopied ? <CheckIcon /> : <CopyIcon />}
+                onClick={permalink}
+              >
+                Copy Link
               </MenuItem>
               {/* <MenuItem icon={<ChatIcon />}>Quote</MenuItem> */}
             </MenuOptionGroup>
@@ -157,6 +178,7 @@ const PostListItem: FC<Props> = ({
               <PostHeadStrip
                 editing={editing}
                 onTitleChange={onTitleChange}
+                thread={thread}
                 post={post}
                 admin={showTools}
                 onReply={onSetReply}
