@@ -12,6 +12,7 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/server/src/api/auth"
+	"github.com/openmultiplayer/web/server/src/api/burgershot"
 	"github.com/openmultiplayer/web/server/src/api/docs"
 	"github.com/openmultiplayer/web/server/src/api/forum"
 	"github.com/openmultiplayer/web/server/src/api/legacy"
@@ -37,6 +38,7 @@ func Build() fx.Option {
 		users.Build(),
 		pawndex.Build(),
 		test.Build(),
+		burgershot.Build(),
 
 		// Starts the HTTP server in a goroutine and fatals if it errors.
 		fx.Invoke(func(l *zap.Logger, server *http.Server) {

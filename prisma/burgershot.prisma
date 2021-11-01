@@ -1,0 +1,1096 @@
+generator client {
+  provider      = "go run github.com/prisma/prisma-client-go"
+  output        = "../server/src/bs"
+  binaryTargets = ["native"]
+  package       = "bs"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL_BS")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_adminlog {
+  uid       Int    @default(0)
+  ipaddress Bytes  @default(dbgenerated("'\\x'::bytea"))
+  dateline  Int    @default(0)
+  module    String @default("") @db.VarChar(50)
+  action    String @default("") @db.VarChar(50)
+  data      String @default("")
+
+  @@ignore
+}
+
+model mybb_adminoptions {
+  uid                Int    @unique @default(0)
+  cpstyle            String @default("") @db.VarChar(50)
+  cplanguage         String @default("") @db.VarChar(50)
+  codepress          Int    @default(1) @db.SmallInt
+  notes              String @default("")
+  permissions        String @default("")
+  defaultviews       String
+  loginattempts      Int    @default(0) @db.SmallInt
+  loginlockoutexpiry Int    @default(0)
+  authsecret         String @default("") @db.VarChar(16)
+  recovery_codes     String @default("") @db.VarChar(177)
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_adminsessions {
+  sid           String @default("") @db.VarChar(32)
+  uid           Int    @default(0)
+  loginkey      String @default("") @db.VarChar(50)
+  ip            Bytes  @default(dbgenerated("'\\x'::bytea"))
+  dateline      Int    @default(0)
+  lastactive    Int    @default(0)
+  data          String @default("")
+  useragent     String @default("") @db.VarChar(200)
+  authenticated Int    @default(0) @db.SmallInt
+
+  @@ignore
+}
+
+model mybb_adminviews {
+  vid                   Int    @id @default(autoincrement())
+  uid                   Int    @default(0)
+  title                 String @default("") @db.VarChar(100)
+  type                  String @default("") @db.VarChar(6)
+  visibility            Int    @default(0) @db.SmallInt
+  fields                String
+  conditions            String
+  custom_profile_fields String
+  sortby                String @default("") @db.VarChar(20)
+  sortorder             String @default("") @db.VarChar(4)
+  perpage               Int    @default(0) @db.SmallInt
+  view_type             String @default("") @db.VarChar(6)
+}
+
+model mybb_announcements {
+  aid          Int    @id @default(autoincrement())
+  fid          Int    @default(0)
+  uid          Int    @default(0)
+  subject      String @default("") @db.VarChar(120)
+  message      String @default("")
+  startdate    Int    @default(0)
+  enddate      Int    @default(0)
+  allowhtml    Int    @default(0) @db.SmallInt
+  allowmycode  Int    @default(0) @db.SmallInt
+  allowsmilies Int    @default(0) @db.SmallInt
+}
+
+model mybb_attachments {
+  aid          Int     @id @default(autoincrement())
+  pid          Int     @default(0)
+  posthash     String  @default("") @db.VarChar(50)
+  uid          Int     @default(0)
+  filename     String? @default("") @db.VarChar(255)
+  filetype     String  @default("") @db.VarChar(120)
+  filesize     Int     @default(0)
+  attachname   String? @default("") @db.VarChar(255)
+  downloads    Int     @default(0)
+  dateuploaded Int     @default(0)
+  visible      Int     @default(0) @db.SmallInt
+  thumbnail    String  @default("") @db.VarChar(120)
+}
+
+model mybb_attachtypes {
+  atid       Int    @id @default(autoincrement())
+  name       String @default("") @db.VarChar(120)
+  mimetype   String @default("") @db.VarChar(120)
+  extension  String @default("") @db.VarChar(10)
+  maxsize    Int    @default(0)
+  icon       String @default("") @db.VarChar(100)
+  enabled    Int    @default(1) @db.SmallInt
+  groups     String @default("-1")
+  forums     String @default("-1")
+  avatarfile Int    @default(0) @db.SmallInt
+}
+
+model mybb_awaitingactivation {
+  aid       Int    @id @default(autoincrement())
+  uid       Int    @default(0)
+  dateline  Int    @default(0)
+  code      String @default("") @db.VarChar(100)
+  type      String @default("") @db.Char(1)
+  validated Int    @default(0) @db.SmallInt
+  misc      String @default("") @db.VarChar(255)
+}
+
+model mybb_badwords {
+  bid         Int    @id @default(autoincrement())
+  badword     String @default("") @db.VarChar(100)
+  regex       Int    @default(0) @db.SmallInt
+  replacement String @default("") @db.VarChar(100)
+}
+
+model mybb_banfilters {
+  fid      Int    @id @default(autoincrement())
+  filter   String @default("") @db.VarChar(200)
+  type     Int    @default(0) @db.SmallInt
+  lastuse  Int    @default(0)
+  dateline Int    @default(0)
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_banned {
+  uid                 Int    @default(0)
+  gid                 Int    @default(0)
+  oldgroup            Int    @default(0)
+  oldadditionalgroups String @default("")
+  olddisplaygroup     Int    @default(0)
+  admin               Int    @default(0)
+  dateline            Int    @default(0)
+  bantime             String @default("") @db.VarChar(50)
+  lifted              Int    @default(0)
+  reason              String @default("") @db.VarChar(255)
+
+  @@ignore
+}
+
+model mybb_buddyrequests {
+  id    Int @id @default(autoincrement())
+  uid   Int @default(0)
+  touid Int @default(0)
+  date  Int @default(0)
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_calendarpermissions {
+  cid               Int @default(autoincrement())
+  gid               Int @default(0)
+  canviewcalendar   Int @default(0) @db.SmallInt
+  canaddevents      Int @default(0) @db.SmallInt
+  canbypasseventmod Int @default(0) @db.SmallInt
+  canmoderateevents Int @default(0) @db.SmallInt
+
+  @@ignore
+}
+
+model mybb_calendars {
+  cid            Int    @id @default(autoincrement())
+  name           String @default("") @db.VarChar(100)
+  disporder      Int    @default(0) @db.SmallInt
+  startofweek    Int    @default(0) @db.SmallInt
+  showbirthdays  Int    @default(0) @db.SmallInt
+  eventlimit     Int    @default(0) @db.SmallInt
+  moderation     Int    @default(0) @db.SmallInt
+  allowhtml      Int    @default(0) @db.SmallInt
+  allowmycode    Int    @default(0) @db.SmallInt
+  allowimgcode   Int    @default(0) @db.SmallInt
+  allowvideocode Int    @default(0) @db.SmallInt
+  allowsmilies   Int    @default(0) @db.SmallInt
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_captcha {
+  imagehash   String @default("") @db.VarChar(32)
+  imagestring String @default("") @db.VarChar(8)
+  dateline    Int    @default(0)
+  used        Int    @default(0) @db.SmallInt
+
+  @@ignore
+}
+
+model mybb_datacache {
+  title String @id @default("") @db.VarChar(50)
+  cache String @default("")
+}
+
+model mybb_delayedmoderation {
+  did           Int    @id @default(autoincrement())
+  type          String @default("") @db.VarChar(30)
+  delaydateline Int    @default(0)
+  uid           Int    @default(0)
+  fid           Int    @default(0) @db.SmallInt
+  tids          String
+  dateline      Int    @default(0)
+  inputs        String @default("")
+}
+
+model mybb_events {
+  eid            Int    @id @default(autoincrement())
+  cid            Int    @default(0)
+  uid            Int    @default(0)
+  name           String @default("") @db.VarChar(120)
+  description    String
+  visible        Int    @default(0) @db.SmallInt
+  private        Int    @default(0) @db.SmallInt
+  dateline       Int    @default(0)
+  starttime      Int    @default(0)
+  endtime        Int    @default(0)
+  timezone       String @default("") @db.VarChar(5)
+  ignoretimezone Int    @default(0) @db.SmallInt
+  usingtime      Int    @default(0) @db.SmallInt
+  repeats        String
+}
+
+model mybb_forumpermissions {
+  pid                    Int @id @default(autoincrement())
+  fid                    Int @default(0)
+  gid                    Int @default(0)
+  canview                Int @default(0) @db.SmallInt
+  canviewthreads         Int @default(0) @db.SmallInt
+  canonlyviewownthreads  Int @default(0) @db.SmallInt
+  candlattachments       Int @default(0) @db.SmallInt
+  canpostthreads         Int @default(0) @db.SmallInt
+  canpostreplys          Int @default(0) @db.SmallInt
+  canonlyreplyownthreads Int @default(0) @db.SmallInt
+  canpostattachments     Int @default(0) @db.SmallInt
+  canratethreads         Int @default(0) @db.SmallInt
+  caneditposts           Int @default(0) @db.SmallInt
+  candeleteposts         Int @default(0) @db.SmallInt
+  candeletethreads       Int @default(0) @db.SmallInt
+  caneditattachments     Int @default(0) @db.SmallInt
+  canviewdeletionnotice  Int @default(0) @db.SmallInt
+  modposts               Int @default(0) @db.SmallInt
+  modthreads             Int @default(0) @db.SmallInt
+  mod_edit_posts         Int @default(0) @db.SmallInt
+  modattachments         Int @default(0) @db.SmallInt
+  canpostpolls           Int @default(0) @db.SmallInt
+  canvotepolls           Int @default(0) @db.SmallInt
+  cansearch              Int @default(0) @db.SmallInt
+}
+
+model mybb_forums {
+  fid               Int    @id @default(autoincrement())
+  name              String @default("") @db.VarChar(120)
+  description       String @default("")
+  linkto            String @default("") @db.VarChar(180)
+  type              String @default("") @db.Char(1)
+  pid               Int    @default(0) @db.SmallInt
+  parentlist        String @default("")
+  disporder         Int    @default(0) @db.SmallInt
+  active            Int    @default(0) @db.SmallInt
+  open              Int    @default(0) @db.SmallInt
+  threads           Int    @default(0)
+  posts             Int    @default(0)
+  lastpost          Int    @default(0)
+  lastposter        String @default("") @db.VarChar(120)
+  lastposteruid     Int    @default(0)
+  lastposttid       Int    @default(0)
+  lastpostsubject   String @default("") @db.VarChar(120)
+  allowhtml         Int    @default(0) @db.SmallInt
+  allowmycode       Int    @default(0) @db.SmallInt
+  allowsmilies      Int    @default(0) @db.SmallInt
+  allowimgcode      Int    @default(0) @db.SmallInt
+  allowvideocode    Int    @default(0) @db.SmallInt
+  allowpicons       Int    @default(0) @db.SmallInt
+  allowtratings     Int    @default(0) @db.SmallInt
+  usepostcounts     Int    @default(0) @db.SmallInt
+  usethreadcounts   Int    @default(0) @db.SmallInt
+  requireprefix     Int    @default(0) @db.SmallInt
+  password          String @default("") @db.VarChar(50)
+  showinjump        Int    @default(0) @db.SmallInt
+  style             Int    @default(0) @db.SmallInt
+  overridestyle     Int    @default(0) @db.SmallInt
+  rulestype         Int    @default(0) @db.SmallInt
+  rulestitle        String @default("") @db.VarChar(200)
+  rules             String @default("")
+  unapprovedthreads Int    @default(0)
+  unapprovedposts   Int    @default(0)
+  deletedthreads    Int    @default(0)
+  deletedposts      Int    @default(0)
+  defaultdatecut    Int    @default(0) @db.SmallInt
+  defaultsortby     String @default("") @db.VarChar(10)
+  defaultsortorder  String @default("") @db.VarChar(4)
+  enablepruning     Int    @default(0) @db.SmallInt
+  daysprune         Int    @default(240) @db.SmallInt
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_forumsread {
+  fid      Int @default(0)
+  uid      Int @default(0)
+  dateline Int @default(0)
+
+  @@ignore
+}
+
+model mybb_forumsubscriptions {
+  fsid Int @id @default(autoincrement())
+  fid  Int @default(0) @db.SmallInt
+  uid  Int @default(0)
+}
+
+model mybb_groupleaders {
+  lid               Int @id @default(autoincrement())
+  gid               Int @default(0) @db.SmallInt
+  uid               Int @default(0)
+  canmanagemembers  Int @default(0) @db.SmallInt
+  canmanagerequests Int @default(0) @db.SmallInt
+  caninvitemembers  Int @default(0) @db.SmallInt
+}
+
+model mybb_helpdocs {
+  hid            Int    @id @default(autoincrement())
+  sid            Int    @default(0) @db.SmallInt
+  name           String @default("") @db.VarChar(120)
+  description    String @default("")
+  document       String @default("")
+  usetranslation Int    @default(0) @db.SmallInt
+  enabled        Int    @default(0) @db.SmallInt
+  disporder      Int    @default(0) @db.SmallInt
+}
+
+model mybb_helpsections {
+  sid            Int    @id @default(autoincrement())
+  name           String @default("") @db.VarChar(120)
+  description    String @default("")
+  usetranslation Int    @default(0) @db.SmallInt
+  enabled        Int    @default(0) @db.SmallInt
+  disporder      Int    @default(0) @db.SmallInt
+}
+
+model mybb_icons {
+  iid  Int    @id @default(autoincrement())
+  name String @default("") @db.VarChar(120)
+  path String @default("") @db.VarChar(220)
+}
+
+model mybb_joinrequests {
+  rid      Int    @id @default(autoincrement())
+  uid      Int    @default(0)
+  gid      Int    @default(0) @db.SmallInt
+  reason   String @default("") @db.VarChar(250)
+  dateline Int    @default(0)
+  invite   Int    @default(0) @db.SmallInt
+}
+
+model mybb_mailerrors {
+  eid         Int    @id @default(autoincrement())
+  subject     String @default("") @db.VarChar(200)
+  message     String @default("")
+  toaddress   String @default("") @db.VarChar(150)
+  fromaddress String @default("") @db.VarChar(150)
+  dateline    Int    @default(0)
+  error       String @default("")
+  smtperror   String @default("") @db.VarChar(200)
+  smtpcode    Int    @default(0) @db.SmallInt
+}
+
+model mybb_maillogs {
+  mid       Int    @id @default(autoincrement())
+  subject   String @default("") @db.VarChar(200)
+  message   String @default("")
+  dateline  Int    @default(0)
+  fromuid   Int    @default(0)
+  fromemail String @default("") @db.VarChar(200)
+  touid     Int    @default(0)
+  toemail   String @default("") @db.VarChar(200)
+  tid       Int    @default(0)
+  ipaddress Bytes  @default(dbgenerated("'\\x'::bytea"))
+  type      Int    @default(0) @db.SmallInt
+}
+
+model mybb_mailqueue {
+  mid      Int    @id @default(autoincrement())
+  mailto   String @db.VarChar(200)
+  mailfrom String @db.VarChar(200)
+  subject  String @db.VarChar(200)
+  message  String @default("")
+  headers  String @default("")
+}
+
+model mybb_massemails {
+  mid         Int     @id @default(autoincrement())
+  uid         Int     @default(0)
+  subject     String  @default("") @db.VarChar(200)
+  message     String
+  htmlmessage String
+  type        Int     @default(0) @db.SmallInt
+  format      Int     @default(0) @db.SmallInt
+  dateline    Decimal @default(0) @db.Decimal(30, 0)
+  senddate    Decimal @default(0) @db.Decimal(30, 0)
+  status      Int     @default(0) @db.SmallInt
+  sentcount   Int     @default(0)
+  totalcount  Int     @default(0)
+  conditions  String
+  perpage     Int     @default(50)
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_moderatorlog {
+  uid       Int    @default(0)
+  dateline  Int    @default(0)
+  fid       Int    @default(0) @db.SmallInt
+  tid       Int    @default(0)
+  pid       Int    @default(0)
+  action    String @default("")
+  data      String
+  ipaddress Bytes  @default(dbgenerated("'\\x'::bytea"))
+
+  @@ignore
+}
+
+model mybb_moderators {
+  mid                        Int @id @default(autoincrement())
+  fid                        Int @default(0) @db.SmallInt
+  id                         Int @default(0)
+  isgroup                    Int @default(0) @db.SmallInt
+  caneditposts               Int @default(0) @db.SmallInt
+  cansoftdeleteposts         Int @default(0) @db.SmallInt
+  canrestoreposts            Int @default(0) @db.SmallInt
+  candeleteposts             Int @default(0) @db.SmallInt
+  cansoftdeletethreads       Int @default(0) @db.SmallInt
+  canrestorethreads          Int @default(0) @db.SmallInt
+  candeletethreads           Int @default(0) @db.SmallInt
+  canviewips                 Int @default(0) @db.SmallInt
+  canviewunapprove           Int @default(0) @db.SmallInt
+  canviewdeleted             Int @default(0) @db.SmallInt
+  canopenclosethreads        Int @default(0) @db.SmallInt
+  canstickunstickthreads     Int @default(0) @db.SmallInt
+  canapproveunapprovethreads Int @default(0) @db.SmallInt
+  canapproveunapproveposts   Int @default(0) @db.SmallInt
+  canapproveunapproveattachs Int @default(0) @db.SmallInt
+  canmanagethreads           Int @default(0) @db.SmallInt
+  canmanagepolls             Int @default(0) @db.SmallInt
+  canpostclosedthreads       Int @default(0) @db.SmallInt
+  canmovetononmodforum       Int @default(0) @db.SmallInt
+  canusecustomtools          Int @default(0) @db.SmallInt
+  canmanageannouncements     Int @default(0) @db.SmallInt
+  canmanagereportedposts     Int @default(0) @db.SmallInt
+  canviewmodlog              Int @default(0) @db.SmallInt
+}
+
+model mybb_modtools {
+  tid           Int    @id @default(autoincrement())
+  name          String @db.VarChar(200)
+  description   String @default("")
+  forums        String @default("")
+  groups        String @default("")
+  type          String @default("") @db.Char(1)
+  postoptions   String @default("")
+  threadoptions String @default("")
+}
+
+model mybb_mycode {
+  cid         Int    @id @default(autoincrement())
+  title       String @default("") @db.VarChar(100)
+  description String @default("")
+  regex       String @default("")
+  replacement String @default("")
+  active      Int    @default(0) @db.SmallInt
+  parseorder  Int    @default(0) @db.SmallInt
+}
+
+model mybb_polls {
+  pid        Int    @id @default(autoincrement())
+  tid        Int    @default(0)
+  question   String @default("") @db.VarChar(200)
+  dateline   Int    @default(0)
+  options    String @default("")
+  votes      String @default("")
+  numoptions Int    @default(0) @db.SmallInt
+  numvotes   Int    @default(0)
+  timeout    Int    @default(0)
+  closed     Int    @default(0) @db.SmallInt
+  multiple   Int    @default(0) @db.SmallInt
+  public     Int    @default(0) @db.SmallInt
+  maxoptions Int    @default(0) @db.SmallInt
+}
+
+model mybb_pollvotes {
+  vid        Int   @id @default(autoincrement())
+  pid        Int   @default(0)
+  uid        Int   @default(0)
+  voteoption Int   @default(0) @db.SmallInt
+  dateline   Int   @default(0)
+  ipaddress  Bytes @default(dbgenerated("'\\x'::bytea"))
+}
+
+model mybb_posts {
+  pid        Int    @id @default(autoincrement())
+  tid        Int    @default(0)
+  replyto    Int    @default(0)
+  fid        Int    @default(0) @db.SmallInt
+  subject    String @default("") @db.VarChar(120)
+  icon       Int    @default(0) @db.SmallInt
+  uid        Int    @default(0)
+  username   String @default("") @db.VarChar(80)
+  dateline   Int    @default(0)
+  message    String @default("")
+  ipaddress  Bytes  @default(dbgenerated("'\\x'::bytea"))
+  includesig Int    @default(0) @db.SmallInt
+  smilieoff  Int    @default(0) @db.SmallInt
+  edituid    Int    @default(0)
+  edittime   Int    @default(0)
+  editreason String @default("") @db.VarChar(150)
+  visible    Int    @default(0) @db.SmallInt
+}
+
+model mybb_privatemessages {
+  pmid       Int    @id @default(autoincrement())
+  uid        Int    @default(0)
+  toid       Int    @default(0)
+  fromid     Int    @default(0)
+  recipients String @default("")
+  folder     Int    @default(1) @db.SmallInt
+  subject    String @default("") @db.VarChar(120)
+  icon       Int    @default(0) @db.SmallInt
+  message    String @default("")
+  dateline   Int    @default(0)
+  deletetime Int    @default(0)
+  status     Int    @default(0) @db.SmallInt
+  statustime Int    @default(0)
+  includesig Int    @default(0) @db.SmallInt
+  smilieoff  Int    @default(0) @db.SmallInt
+  receipt    Int    @default(0) @db.SmallInt
+  readtime   Int    @default(0)
+  ipaddress  Bytes  @default(dbgenerated("'\\x'::bytea"))
+}
+
+model mybb_profilefields {
+  fid            Int    @id @default(autoincrement())
+  name           String @default("") @db.VarChar(100)
+  description    String @default("")
+  disporder      Int    @default(0) @db.SmallInt
+  type           String @default("")
+  regex          String @default("")
+  length         Int    @default(0) @db.SmallInt
+  maxlength      Int    @default(0) @db.SmallInt
+  required       Int    @default(0) @db.SmallInt
+  registration   Int    @default(0) @db.SmallInt
+  profile        Int    @default(0) @db.SmallInt
+  postbit        Int    @default(0) @db.SmallInt
+  viewableby     String @default("-1")
+  editableby     String @default("-1")
+  postnum        Int    @default(0) @db.SmallInt
+  allowhtml      Int    @default(0) @db.SmallInt
+  allowmycode    Int    @default(0) @db.SmallInt
+  allowsmilies   Int    @default(0) @db.SmallInt
+  allowimgcode   Int    @default(0) @db.SmallInt
+  allowvideocode Int    @default(0) @db.SmallInt
+}
+
+model mybb_promotionlogs {
+  plid         Int    @id @default(autoincrement())
+  pid          Int    @default(0)
+  uid          Int    @default(0)
+  oldusergroup String @default("0") @db.VarChar(200)
+  newusergroup Int    @default(0) @db.SmallInt
+  dateline     Int    @default(0)
+  type         String @default("primary") @db.VarChar(9)
+}
+
+model mybb_promotions {
+  pid               Int    @id @default(autoincrement())
+  title             String @default("") @db.VarChar(120)
+  description       String @default("")
+  enabled           Int    @default(1) @db.SmallInt
+  logging           Int    @default(0) @db.SmallInt
+  posts             Int    @default(0)
+  posttype          String @default("") @db.VarChar(2)
+  threads           Int    @default(0)
+  threadtype        String @default("") @db.VarChar(2)
+  registered        Int    @default(0)
+  registeredtype    String @default("") @db.VarChar(20)
+  online            Int    @default(0)
+  onlinetype        String @default("") @db.VarChar(20)
+  reputations       Int    @default(0)
+  reputationtype    String @default("") @db.VarChar(2)
+  referrals         Int    @default(0)
+  referralstype     String @default("") @db.VarChar(2)
+  warnings          Int    @default(0)
+  warningstype      String @default("") @db.VarChar(2)
+  requirements      String @default("") @db.VarChar(200)
+  originalusergroup String @default("0") @db.VarChar(120)
+  newusergroup      Int    @default(0) @db.SmallInt
+  usergrouptype     String @default("0") @db.VarChar(120)
+}
+
+model mybb_questions {
+  qid       Int    @id @default(autoincrement())
+  question  String @default("") @db.VarChar(200)
+  answer    String @default("") @db.VarChar(150)
+  shown     Int    @default(0)
+  correct   Int    @default(0)
+  incorrect Int    @default(0)
+  active    Int    @default(0) @db.SmallInt
+}
+
+model mybb_questionsessions {
+  sid      String @unique @default("") @db.VarChar(32)
+  qid      Int    @default(0)
+  dateline Int    @default(0)
+}
+
+model mybb_reportedcontent {
+  rid          Int    @id @default(autoincrement())
+  id           Int    @default(0)
+  id2          Int    @default(0)
+  id3          Int    @default(0)
+  uid          Int    @default(0)
+  reportstatus Int    @default(0) @db.SmallInt
+  reasonid     Int    @default(0) @db.SmallInt
+  reason       String @default("") @db.VarChar(250)
+  type         String @default("") @db.VarChar(50)
+  reports      Int    @default(0)
+  reporters    String @default("")
+  dateline     Int    @default(0)
+  lastreport   Int    @default(0)
+}
+
+model mybb_reportreasons {
+  rid       Int    @id @default(autoincrement())
+  title     String @default("") @db.VarChar(250)
+  appliesto String @default("") @db.VarChar(250)
+  extra     Int    @default(0) @db.SmallInt
+  disporder Int    @default(0) @db.SmallInt
+}
+
+model mybb_reputation {
+  rid        Int    @id @default(autoincrement())
+  uid        Int    @default(0)
+  adduid     Int    @default(0)
+  pid        Int    @default(0)
+  reputation Int    @default(0) @db.SmallInt
+  dateline   Int    @default(0)
+  comments   String @default("")
+}
+
+model mybb_searchlog {
+  sid        String @unique @default("") @db.VarChar(32)
+  uid        Int    @default(0)
+  dateline   Int    @default(0)
+  ipaddress  Bytes  @default(dbgenerated("'\\x'::bytea"))
+  threads    String @default("")
+  posts      String @default("")
+  resulttype String @default("") @db.VarChar(10)
+  querycache String @default("")
+  keywords   String @default("")
+}
+
+model mybb_sessions {
+  sid          String @unique @default("") @db.VarChar(32)
+  uid          Int    @default(0)
+  ip           Bytes  @default(dbgenerated("'\\x'::bytea"))
+  time         Int    @default(0)
+  location     String @default("") @db.VarChar(150)
+  useragent    String @default("") @db.VarChar(200)
+  anonymous    Int    @default(0) @db.SmallInt
+  nopermission Int    @default(0) @db.SmallInt
+  location1    Int    @default(0)
+  location2    Int    @default(0)
+}
+
+model mybb_settinggroups {
+  gid         Int    @id @default(autoincrement())
+  name        String @default("") @db.VarChar(100)
+  title       String @default("") @db.VarChar(220)
+  description String @default("")
+  disporder   Int    @default(0) @db.SmallInt
+  isdefault   Int    @default(0) @db.SmallInt
+}
+
+model mybb_settings {
+  sid         Int    @id @default(autoincrement())
+  name        String @default("") @db.VarChar(120)
+  title       String @default("") @db.VarChar(120)
+  description String @default("")
+  optionscode String @default("")
+  value       String @default("")
+  disporder   Int    @default(0) @db.SmallInt
+  gid         Int    @default(0) @db.SmallInt
+  isdefault   Int    @default(0) @db.SmallInt
+}
+
+model mybb_smilies {
+  sid           Int    @id @default(autoincrement())
+  name          String @default("") @db.VarChar(120)
+  find          String
+  image         String @default("") @db.VarChar(220)
+  disporder     Int    @default(0) @db.SmallInt
+  showclickable Int    @default(0) @db.SmallInt
+}
+
+model mybb_spamlog {
+  sid       Int     @id @default(autoincrement())
+  username  String  @default("") @db.VarChar(120)
+  email     String  @default("") @db.VarChar(220)
+  ipaddress Bytes   @default(dbgenerated("'\\x'::bytea"))
+  dateline  Decimal @default(0) @db.Decimal(30, 0)
+  data      String  @default("")
+}
+
+model mybb_spiders {
+  sid       Int    @id @default(autoincrement())
+  name      String @default("") @db.VarChar(100)
+  theme     Int    @default(0) @db.SmallInt
+  language  String @default("") @db.VarChar(20)
+  usergroup Int    @default(0) @db.SmallInt
+  useragent String @default("") @db.VarChar(200)
+  lastvisit Int    @default(0)
+}
+
+model mybb_stats {
+  dateline   Decimal @unique @default(0) @db.Decimal(30, 0)
+  numusers   Decimal @default(0) @db.Decimal(10, 0)
+  numthreads Decimal @default(0) @db.Decimal(10, 0)
+  numposts   Decimal @default(0) @db.Decimal(10, 0)
+}
+
+model mybb_tasklog {
+  lid      Int    @id @default(autoincrement())
+  tid      Int    @default(0)
+  dateline Int    @default(0)
+  data     String
+}
+
+model mybb_tasks {
+  tid         Int    @id @default(autoincrement())
+  title       String @default("") @db.VarChar(120)
+  description String @default("")
+  file        String @default("") @db.VarChar(30)
+  minute      String @default("") @db.VarChar(200)
+  hour        String @default("") @db.VarChar(200)
+  day         String @default("") @db.VarChar(100)
+  month       String @default("") @db.VarChar(30)
+  weekday     String @default("") @db.VarChar(15)
+  nextrun     Int    @default(0)
+  lastrun     Int    @default(0)
+  enabled     Int    @default(1) @db.SmallInt
+  logging     Int    @default(0) @db.SmallInt
+  locked      Int    @default(0)
+}
+
+model mybb_templategroups {
+  gid       Int    @id @default(autoincrement())
+  prefix    String @default("") @db.VarChar(50)
+  title     String @default("") @db.VarChar(100)
+  isdefault Int    @default(0) @db.SmallInt
+}
+
+model mybb_templates {
+  tid      Int    @id @default(autoincrement())
+  title    String @default("") @db.VarChar(120)
+  template String @default("")
+  sid      Int    @default(0) @db.SmallInt
+  version  String @default("0") @db.VarChar(20)
+  status   String @default("") @db.VarChar(10)
+  dateline Int    @default(0)
+}
+
+model mybb_templatesets {
+  sid   Int    @id @default(autoincrement())
+  title String @default("") @db.VarChar(120)
+}
+
+model mybb_themes {
+  tid           Int    @id @default(autoincrement())
+  name          String @default("") @db.VarChar(100)
+  pid           Int    @default(0) @db.SmallInt
+  def           Int    @default(0) @db.SmallInt
+  properties    String @default("")
+  stylesheets   String @default("")
+  allowedgroups String @default("")
+}
+
+model mybb_themestylesheets {
+  sid          Int     @id @default(autoincrement())
+  name         String  @default("") @db.VarChar(30)
+  tid          Decimal @default(0) @db.Decimal(10, 0)
+  attachedto   String
+  stylesheet   String
+  cachefile    String  @default("") @db.VarChar(100)
+  lastmodified Decimal @default(0) @db.Decimal(30, 0)
+}
+
+model mybb_threadprefixes {
+  pid          Int    @id @default(autoincrement())
+  prefix       String @default("") @db.VarChar(120)
+  displaystyle String @default("") @db.VarChar(200)
+  forums       String
+  groups       String
+}
+
+model mybb_threadratings {
+  rid       Int   @id @default(autoincrement())
+  tid       Int   @default(0)
+  uid       Int   @default(0)
+  rating    Int   @default(0) @db.SmallInt
+  ipaddress Bytes @default(dbgenerated("'\\x'::bytea"))
+}
+
+model mybb_threads {
+  tid             Int    @id @default(autoincrement())
+  fid             Int    @default(0) @db.SmallInt
+  subject         String @default("") @db.VarChar(120)
+  prefix          Int    @default(0) @db.SmallInt
+  icon            Int    @default(0) @db.SmallInt
+  poll            Int    @default(0)
+  uid             Int    @default(0)
+  username        String @default("") @db.VarChar(80)
+  dateline        Int    @default(0)
+  firstpost       Int    @default(0)
+  lastpost        Int    @default(0)
+  lastposter      String @default("") @db.VarChar(120)
+  lastposteruid   Int    @default(0)
+  views           Int    @default(0)
+  replies         Int    @default(0)
+  closed          String @default("") @db.VarChar(30)
+  sticky          Int    @default(0) @db.SmallInt
+  numratings      Int    @default(0) @db.SmallInt
+  totalratings    Int    @default(0) @db.SmallInt
+  notes           String @default("")
+  visible         Int    @default(0) @db.SmallInt
+  unapprovedposts Int    @default(0)
+  deletedposts    Int    @default(0)
+  attachmentcount Int    @default(0)
+  deletetime      Int    @default(0)
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_threadsread {
+  tid      Int @default(0)
+  uid      Int @default(0)
+  dateline Int @default(0)
+
+  @@ignore
+}
+
+model mybb_threadsubscriptions {
+  sid          Int @id @default(autoincrement())
+  uid          Int @default(0)
+  tid          Int @default(0)
+  notification Int @default(0) @db.SmallInt
+  dateline     Int @default(0)
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mybb_threadviews {
+  tid Int @default(0)
+
+  @@ignore
+}
+
+model mybb_upgrade_data {
+  title    String @unique @db.VarChar(30)
+  contents String
+}
+
+model mybb_userfields {
+  ufid Int     @id @default(0)
+  fid1 String  @default("")
+  fid2 String  @default("")
+  fid3 String  @default("")
+  fid4 String?
+}
+
+model mybb_usergroups {
+  gid                      Int    @id @default(autoincrement())
+  type                     Int    @default(2) @db.SmallInt
+  title                    String @default("") @db.VarChar(120)
+  description              String @default("")
+  namestyle                String @default("{username}") @db.VarChar(200)
+  usertitle                String @default("") @db.VarChar(120)
+  stars                    Int    @default(0) @db.SmallInt
+  starimage                String @default("") @db.VarChar(120)
+  image                    String @default("") @db.VarChar(120)
+  disporder                Int    @default(0) @db.SmallInt
+  isbannedgroup            Int    @default(0) @db.SmallInt
+  canview                  Int    @default(0) @db.SmallInt
+  canviewthreads           Int    @default(0) @db.SmallInt
+  canviewprofiles          Int    @default(0) @db.SmallInt
+  candlattachments         Int    @default(0) @db.SmallInt
+  canviewboardclosed       Int    @default(0) @db.SmallInt
+  canpostthreads           Int    @default(0) @db.SmallInt
+  canpostreplys            Int    @default(0) @db.SmallInt
+  canpostattachments       Int    @default(0) @db.SmallInt
+  canratethreads           Int    @default(0) @db.SmallInt
+  modposts                 Int    @default(0) @db.SmallInt
+  modthreads               Int    @default(0) @db.SmallInt
+  mod_edit_posts           Int    @default(0) @db.SmallInt
+  modattachments           Int    @default(0) @db.SmallInt
+  caneditposts             Int    @default(0) @db.SmallInt
+  candeleteposts           Int    @default(0) @db.SmallInt
+  candeletethreads         Int    @default(0) @db.SmallInt
+  caneditattachments       Int    @default(0) @db.SmallInt
+  canviewdeletionnotice    Int    @default(0) @db.SmallInt
+  canpostpolls             Int    @default(0) @db.SmallInt
+  canvotepolls             Int    @default(0) @db.SmallInt
+  canundovotes             Int    @default(0) @db.SmallInt
+  canusepms                Int    @default(0) @db.SmallInt
+  cansendpms               Int    @default(0) @db.SmallInt
+  cantrackpms              Int    @default(0) @db.SmallInt
+  candenypmreceipts        Int    @default(0) @db.SmallInt
+  pmquota                  Int    @default(0)
+  maxpmrecipients          Int    @default(5)
+  cansendemail             Int    @default(0) @db.SmallInt
+  cansendemailoverride     Int    @default(0) @db.SmallInt
+  maxemails                Int    @default(5)
+  emailfloodtime           Int    @default(5)
+  canviewmemberlist        Int    @default(0) @db.SmallInt
+  canviewcalendar          Int    @default(0) @db.SmallInt
+  canaddevents             Int    @default(0) @db.SmallInt
+  canbypasseventmod        Int    @default(0) @db.SmallInt
+  canmoderateevents        Int    @default(0) @db.SmallInt
+  canviewonline            Int    @default(0) @db.SmallInt
+  canviewwolinvis          Int    @default(0) @db.SmallInt
+  canviewonlineips         Int    @default(0) @db.SmallInt
+  cancp                    Int    @default(0) @db.SmallInt
+  issupermod               Int    @default(0) @db.SmallInt
+  cansearch                Int    @default(0) @db.SmallInt
+  canusercp                Int    @default(0) @db.SmallInt
+  canuploadavatars         Int    @default(0) @db.SmallInt
+  canratemembers           Int    @default(0) @db.SmallInt
+  canchangename            Int    @default(0) @db.SmallInt
+  canbereported            Int    @default(0) @db.SmallInt
+  canchangewebsite         Int    @default(1) @db.SmallInt
+  showforumteam            Int    @default(0) @db.SmallInt
+  usereputationsystem      Int    @default(0) @db.SmallInt
+  cangivereputations       Int    @default(0) @db.SmallInt
+  candeletereputations     Int    @default(0) @db.SmallInt
+  reputationpower          Int    @default(0)
+  maxreputationsday        Int    @default(0)
+  maxreputationsperuser    Int    @default(0)
+  maxreputationsperthread  Int    @default(0)
+  candisplaygroup          Int    @default(0) @db.SmallInt
+  attachquota              Int    @default(0)
+  cancustomtitle           Int    @default(0) @db.SmallInt
+  canwarnusers             Int    @default(0) @db.SmallInt
+  canreceivewarnings       Int    @default(0) @db.SmallInt
+  maxwarningsday           Int    @default(3)
+  canmodcp                 Int    @default(0) @db.SmallInt
+  showinbirthdaylist       Int    @default(0) @db.SmallInt
+  canoverridepm            Int    @default(0) @db.SmallInt
+  canusesig                Int    @default(0) @db.SmallInt
+  canusesigxposts          Int    @default(0) @db.SmallInt
+  signofollow              Int    @default(0) @db.SmallInt
+  edittimelimit            Int    @default(0) @db.SmallInt
+  maxposts                 Int    @default(0) @db.SmallInt
+  showmemberlist           Int    @default(1) @db.SmallInt
+  canmanageannounce        Int    @default(0) @db.SmallInt
+  canmanagemodqueue        Int    @default(0) @db.SmallInt
+  canmanagereportedcontent Int    @default(0) @db.SmallInt
+  canviewmodlogs           Int    @default(0) @db.SmallInt
+  caneditprofiles          Int    @default(0) @db.SmallInt
+  canbanusers              Int    @default(0) @db.SmallInt
+  canviewwarnlogs          Int    @default(0) @db.SmallInt
+  canuseipsearch           Int    @default(0) @db.SmallInt
+}
+
+model mybb_users {
+  uid                    Int    @id @default(autoincrement())
+  username               String @default("") @db.VarChar(120)
+  password               String @default("") @db.VarChar(120)
+  salt                   String @default("") @db.VarChar(10)
+  loginkey               String @default("") @db.VarChar(50)
+  email                  String @default("") @db.VarChar(220)
+  postnum                Int    @default(0)
+  threadnum              Int    @default(0)
+  avatar                 String @default("") @db.VarChar(200)
+  avatardimensions       String @default("") @db.VarChar(10)
+  avatartype             String @default("0") @db.VarChar(10)
+  usergroup              Int    @default(0) @db.SmallInt
+  additionalgroups       String @default("") @db.VarChar(200)
+  displaygroup           Int    @default(0) @db.SmallInt
+  usertitle              String @default("") @db.VarChar(250)
+  regdate                Int    @default(0)
+  lastactive             Int    @default(0)
+  lastvisit              Int    @default(0)
+  lastpost               Int    @default(0)
+  website                String @default("") @db.VarChar(200)
+  icq                    String @default("") @db.VarChar(10)
+  skype                  String @default("") @db.VarChar(75)
+  google                 String @default("") @db.VarChar(75)
+  birthday               String @default("") @db.VarChar(15)
+  birthdayprivacy        String @default("all") @db.VarChar(4)
+  signature              String @default("")
+  allownotices           Int    @default(0) @db.SmallInt
+  hideemail              Int    @default(0) @db.SmallInt
+  subscriptionmethod     Int    @default(0) @db.SmallInt
+  invisible              Int    @default(0) @db.SmallInt
+  receivepms             Int    @default(0) @db.SmallInt
+  receivefrombuddy       Int    @default(0) @db.SmallInt
+  pmnotice               Int    @default(0) @db.SmallInt
+  pmnotify               Int    @default(0) @db.SmallInt
+  buddyrequestspm        Int    @default(1) @db.SmallInt
+  buddyrequestsauto      Int    @default(0) @db.SmallInt
+  threadmode             String @default("") @db.VarChar(8)
+  showimages             Int    @default(0) @db.SmallInt
+  showvideos             Int    @default(0) @db.SmallInt
+  showsigs               Int    @default(0) @db.SmallInt
+  showavatars            Int    @default(0) @db.SmallInt
+  showquickreply         Int    @default(0) @db.SmallInt
+  showredirect           Int    @default(0) @db.SmallInt
+  ppp                    Int    @default(0) @db.SmallInt
+  tpp                    Int    @default(0) @db.SmallInt
+  daysprune              Int    @default(0) @db.SmallInt
+  dateformat             String @default("") @db.VarChar(4)
+  timeformat             String @default("") @db.VarChar(4)
+  timezone               String @default("") @db.VarChar(5)
+  dst                    Int    @default(0) @db.SmallInt
+  dstcorrection          Int    @default(0) @db.SmallInt
+  buddylist              String @default("")
+  ignorelist             String @default("")
+  style                  Int    @default(0) @db.SmallInt
+  away                   Int    @default(0) @db.SmallInt
+  awaydate               Int    @default(0)
+  returndate             String @default("") @db.VarChar(15)
+  awayreason             String @default("") @db.VarChar(200)
+  pmfolders              String @default("")
+  notepad                String @default("")
+  referrer               Int    @default(0)
+  referrals              Int    @default(0)
+  reputation             Int    @default(0)
+  regip                  Bytes  @default(dbgenerated("'\\x'::bytea"))
+  lastip                 Bytes  @default(dbgenerated("'\\x'::bytea"))
+  language               String @default("") @db.VarChar(50)
+  timeonline             Int    @default(0)
+  showcodebuttons        Int    @default(1) @db.SmallInt
+  totalpms               Int    @default(0)
+  unreadpms              Int    @default(0)
+  warningpoints          Int    @default(0)
+  moderateposts          Int    @default(0)
+  moderationtime         Int    @default(0)
+  suspendposting         Int    @default(0) @db.SmallInt
+  suspensiontime         Int    @default(0)
+  suspendsignature       Int    @default(0) @db.SmallInt
+  suspendsigtime         Int    @default(0)
+  coppauser              Int    @default(0) @db.SmallInt
+  classicpostbit         Int    @default(0) @db.SmallInt
+  loginattempts          Int    @default(0) @db.SmallInt
+  loginlockoutexpiry     Int    @default(0)
+  usernotes              String @default("")
+  sourceeditor           Int    @default(0) @db.SmallInt
+  disablegoogleanalytics Int    @default(0)
+}
+
+model mybb_usertitles {
+  utid      Int    @id @default(autoincrement())
+  posts     Int    @default(0)
+  title     String @default("") @db.VarChar(250)
+  stars     Int    @default(0) @db.SmallInt
+  starimage String @default("") @db.VarChar(120)
+}
+
+model mybb_warninglevels {
+  lid        Int    @id @default(autoincrement())
+  percentage Int    @default(0) @db.SmallInt
+  action     String
+}
+
+model mybb_warnings {
+  wid          Int    @id @default(autoincrement())
+  uid          Int    @default(0)
+  tid          Int    @default(0)
+  pid          Int    @default(0)
+  title        String @default("") @db.VarChar(120)
+  points       Int    @default(0) @db.SmallInt
+  dateline     Int    @default(0)
+  issuedby     Int    @default(0)
+  expires      Int    @default(0)
+  expired      Int    @default(0) @db.SmallInt
+  daterevoked  Int    @default(0)
+  revokedby    Int    @default(0)
+  revokereason String @default("")
+  notes        String @default("")
+}
+
+model mybb_warningtypes {
+  tid            Int    @id @default(autoincrement())
+  title          String @default("") @db.VarChar(120)
+  points         Int    @default(0) @db.SmallInt
+  expirationtime Int    @default(0)
+}

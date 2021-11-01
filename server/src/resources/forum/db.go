@@ -384,12 +384,115 @@ func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
 		return nil, err
 	}
 
-	fmt.Println(counts)
-
 	result := make(map[string]int)
 	for _, c := range counts {
 		result[c.PostID] = c.Count
 	}
 
 	return result, nil
+}
+
+func (d *DB) CreateCategory(ctx context.Context, name string) (*Category, error) {
+	c, err := d.db.Category.
+		UpsertOne(db.Category.Name.Equals(name)).
+		Create(db.Category.Name.Set(name)).
+		Update().
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+	return &Category{
+		ID:   c.ID,
+		Name: c.Name,
+	}, nil
+}
+
+func (d *DB) CreateLegacyThread(
+	ctx context.Context,
+	title string,
+	categoryName string,
+	first Post,
+	replies []Post,
+) (*Post, error) {
+	slug := slug.Make(title)
+	short := makeShortBody(first.Body)
+
+	var firstUpdatedAt *time.Time
+	if !first.UpdatedAt.IsZero() {
+		firstUpdatedAt = &first.UpdatedAt
+	} else {
+		firstUpdatedAt = &first.CreatedAt
+	}
+
+	additional := []db.PostSetParam{
+		db.Post.Title.Set(title),
+		db.Post.Category.Link(db.Category.Name.Equals(categoryName)),
+
+		db.Post.CreatedAt.Set(first.CreatedAt),
+		db.Post.UpdatedAt.SetIfPresent(firstUpdatedAt),
+	}
+
+	post, err := d.db.Post.
+		CreateOne(
+			db.Post.Body.Set(first.Body),
+			db.Post.Short.Set(short),
+			db.Post.First.Set(true),
+			db.Post.Author.Link(db.User.ID.Equals(first.Author.ID)),
+
+			additional...,
+		).
+		With(db.Post.Author.Fetch()).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	_, err = d.db.Post.
+		FindUnique(db.Post.ID.Equals(post.ID)).
+		Update(
+			db.Post.Slug.Set(fmt.Sprintf("%s-%s", post.ID, slug)),
+			db.Post.UpdatedAt.SetIfPresent(&first.CreatedAt), // keep the updated date old
+		).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	parentID := post.ID
+
+	for _, r := range replies {
+		short := makeShortBody(r.Body)
+
+		var updatedAt *time.Time
+		if !r.UpdatedAt.IsZero() {
+			updatedAt = &r.UpdatedAt
+		} else {
+			updatedAt = &r.CreatedAt
+		}
+
+		optional := []db.PostSetParam{
+			db.Post.Root.Link(db.Post.ID.Equals(parentID)),
+
+			db.Post.CreatedAt.Set(r.CreatedAt),
+			db.Post.UpdatedAt.SetIfPresent(updatedAt),
+		}
+
+		_, err = d.db.Post.
+			CreateOne(
+				db.Post.Body.Set(r.Body),
+				db.Post.Short.Set(short),
+				db.Post.First.Set(false),
+				db.Post.Author.Link(db.User.ID.Equals(r.Author.ID)),
+
+				optional...,
+			).
+			With(db.Post.Author.Fetch()).
+			Exec(ctx)
+		if err != nil {
+			return nil, err
+		}
+
+	}
+
+	return FromModel(post), nil
 }
