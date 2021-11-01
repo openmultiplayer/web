@@ -1,4 +1,5 @@
 import { Button } from "@chakra-ui/button";
+import { RepeatClockIcon } from "@chakra-ui/icons";
 import { Box, Flex, Grid, ListItem, UnorderedList } from "@chakra-ui/layout";
 import { FC, useCallback } from "react";
 import { Post } from "src/types/_generated_Forum";
@@ -118,6 +119,17 @@ export const PostMetadata: FC<PostMetadataProps> = ({
             <span>•</span>
             <span className="replies">
               <em>{posts}</em> replies
+            </span>
+          </>
+        )}
+        {post.replyTo && (
+          <>
+            <span>•</span>
+            <span>
+              <a href={`#${post.replyTo.postId}`}>
+                <RepeatClockIcon />
+                &nbsp;replying&nbsp;to&nbsp;<em>{post.replyTo.author}</em>
+              </a>
             </span>
           </>
         )}

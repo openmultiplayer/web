@@ -13,6 +13,7 @@ import CategoryList from "./CategoryList";
 import TagsInput from "./TagsInput";
 
 export const PostPayloadSchema = z.object({
+  id: z.string().optional(),
   title: z.string(),
   // optional because it's not in the form
   body: z.string().optional(),
@@ -22,6 +23,7 @@ export const PostPayloadSchema = z.object({
 export type PostPayload = z.infer<typeof PostPayloadSchema>;
 
 type Props = {
+  initialPostID?: string;
   initialTitle?: string;
   initialBody?: string;
   onSubmit: (post: PostPayload) => void;
@@ -30,7 +32,13 @@ type Props = {
   placeholder?: string;
 };
 
+const clean = (md: string): string => {
+  const cleaned = md.replace(/^\\/gm, "");
+  return cleaned.trim();
+};
+
 const PostEditor: FC<Props> = ({
+  initialPostID,
   initialTitle,
   initialBody,
   onSubmit,
@@ -38,7 +46,7 @@ const PostEditor: FC<Props> = ({
   postButtonText = "Create Post",
   placeholder = "Your post content...",
 }) => {
-  const [body, setBody] = useState("");
+  const [body, setBody] = useState(initialBody);
   const [tags, setTags] = useState<string[]>([]);
   const [category, setCategory] = useState("General");
   const { register, handleSubmit } = useForm({
@@ -52,18 +60,19 @@ const PostEditor: FC<Props> = ({
   const _onSubmit = useCallback(
     (data: PostPayload) => {
       onSubmit({
-        title: data.title,
+        id: initialPostID,
+        title: data.title ?? initialTitle,
         body,
         tags,
         category,
       });
     },
-    [onSubmit, body, tags, category]
+    [initialPostID, initialTitle, onSubmit, body, tags, category]
   );
 
   const onChange = useCallback(
     (body: () => string) => {
-      setBody(body().trim());
+      setBody(clean(body()));
     },
     [setBody]
   );

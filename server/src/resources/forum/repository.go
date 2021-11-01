@@ -15,7 +15,7 @@ type Repository interface {
 	CreatePost(
 		ctx context.Context,
 		body, authorID,
-		parentID string,
+		parentID, replyToID string,
 	) (*Post, error)
 
 	EditPost(ctx context.Context, authorID, postID string, title *string, body *string) (*Post, error)

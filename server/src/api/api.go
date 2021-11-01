@@ -59,7 +59,7 @@ func Build() fx.Option {
 						"http://localhost:3000", // Local development, `npm run dev`
 						"https://open.mp",       // Live public website
 					},
-					AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+					AllowedMethods:   []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
 					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
 					ExposedHeaders:   []string{"Link"},
 					AllowCredentials: true,

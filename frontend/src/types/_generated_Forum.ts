@@ -14,6 +14,12 @@ export const CategorySchema = z.object({
 })
 export type Category = z.infer<typeof CategorySchema>
 
+export const PostMetaSchema = z.object({
+  author: z.string(),
+  postId: z.string(),
+})
+export type PostMeta = z.infer<typeof PostMetaSchema>
+
 export const PostSchema = z.object({
   id: z.string(),
   title: z.string().nullable(),
@@ -25,12 +31,12 @@ export const PostSchema = z.object({
   updatedAt: z.string(),
   deletedAt: z.string().nullable(),
   userId: z.string(),
-  replyPostId: z.string().nullable(),
   rootPostId: z.string().nullable(),
   author: AuthorSchema,
   tags: z.string().array(),
   category: CategorySchema,
   posts: z.number(),
+  replyTo: PostMetaSchema.nullable(),
 })
 export type Post = z.infer<typeof PostSchema>
 

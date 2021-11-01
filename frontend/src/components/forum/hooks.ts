@@ -11,6 +11,7 @@ import { PostPayload } from "./PostEditor";
 type CreateThreadFn = (data: PostPayload) => void;
 type CreatePostFn = (data: PostPayload) => void;
 type DeleteFn = (id: string) => void;
+type EditFn = (data: PostPayload) => void;
 
 const isPostEmpty = (data: PostPayload) => data?.body?.length === 0;
 
@@ -44,7 +45,11 @@ export const useCreateThread = (): CreateThreadFn => {
   return onSubmit;
 };
 
-export const useCreatePost = (id: string, slug: string): CreatePostFn => {
+export const useCreatePost = (
+  id: string,
+  slug: string,
+  replyTo?: Post
+): CreatePostFn => {
   const toast = useToast();
   const handler = useErrorHandler();
   const router = useRouter();
@@ -57,7 +62,7 @@ export const useCreatePost = (id: string, slug: string): CreatePostFn => {
       try {
         await apiSSP<Post>(`/forum/${id}`, {
           method: "POST",
-          body: JSON.stringify(data),
+          body: JSON.stringify({ ...data, replyTo: replyTo?.id ?? null }),
           schema: PostSchema,
         });
         toast({
@@ -69,7 +74,7 @@ export const useCreatePost = (id: string, slug: string): CreatePostFn => {
         handler(e);
       }
     },
-    [toast, handler, router, id, slug]
+    [toast, handler, router, id, slug, replyTo]
   );
 
   return onSubmit;
@@ -97,4 +102,31 @@ export const useDeletePost = (): DeleteFn => {
   );
 
   return onDelete;
+};
+
+export const useEditPost = (): EditFn => {
+  const toast = useToast();
+  const handler = useErrorHandler();
+  const onEdit = useCallback(
+    async (data: PostPayload) => {
+      nProgress.start();
+      try {
+        await apiSSP<Post>(`/forum/${data.id}`, {
+          method: "PATCH",
+          body: JSON.stringify(data),
+        });
+        toast({
+          title: "Post edited!",
+          status: "success",
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate("/forum");
+      nProgress.done();
+    },
+    [handler, toast]
+  );
+
+  return onEdit;
 };
