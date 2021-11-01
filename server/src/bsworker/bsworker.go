@@ -18,26 +18,6 @@ type Worker struct {
 
 func Build() fx.Option {
 	return fx.Options(
-		fx.Provide(
-			func(
-				lc fx.Lifecycle,
-				bs burgershot.Repository,
-				users user.Repository,
-				forum forum.Repository,
-			) *Worker {
-				w := &Worker{bs, users, forum}
-
-				lc.Append(fx.Hook{
-					OnStart: func(ctx context.Context) error {
-						zap.L().Debug("onstart")
-						return w.migrateUsers(ctx)
-					},
-				})
-
-				return w
-			},
-		),
-
 		fx.Invoke(func(
 			lc fx.Lifecycle,
 			bs burgershot.Repository,
