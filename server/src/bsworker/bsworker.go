@@ -2,6 +2,7 @@ package bsworker
 
 import (
 	"context"
+	"time"
 
 	"go.uber.org/fx"
 	"go.uber.org/zap"
@@ -22,10 +23,10 @@ func New(
 	bs burgershot.Repository,
 	users user.Repository,
 	forum forum.Repository,
-) *Worker {
+) Worker {
 	zap.L().Debug("creating bs worker")
 
-	w := &Worker{bs, users, forum}
+	w := Worker{bs, users, forum}
 
 	lc.Append(fx.Hook{
 		OnStart: func(c context.Context) error {
@@ -33,6 +34,15 @@ func New(
 			return w.run(c)
 		},
 	})
+
+	go func() {
+		time.Sleep(time.Second)
+
+		// Invoke and hooks won't work for some unknown reason so this is the
+		// hacky solution for now.
+
+		w.run(context.TODO())
+	}()
 
 	return w
 }
@@ -43,7 +53,7 @@ func Build() fx.Option {
 
 		fx.Invoke(func(
 			lc fx.Lifecycle,
-			w *Worker,
+			w Worker,
 		) {
 			zap.L().Debug("invoking bs worker")
 		}),
@@ -52,5 +62,9 @@ func Build() fx.Option {
 
 func (w *Worker) run(ctx context.Context) error {
 	zap.L().Debug("running bsworker")
-	return w.migrateUsers(ctx)
+	// commented out for now, should be controlled via config. Only really needs
+	// to be run once in production though.
+	// w.migrateUsers(ctx)
+	// w.migratePosts(ctx)
+	return nil
 }
