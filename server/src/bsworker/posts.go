@@ -43,6 +43,11 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 			return err
 		}
 
+		if len(posts) == 0 {
+			zap.L().Info("thread has no posts", zap.Int("tid", t.Tid), zap.String("thread", t.Subject), zap.String("author", t.Username))
+			continue
+		}
+
 		first := posts[0]
 
 		zap.L().Info("creating thread", zap.String("thread", first.Subject), zap.String("author", first.Username))
