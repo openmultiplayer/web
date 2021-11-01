@@ -89,6 +89,12 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*user.U
 		return nil, err
 	}
 	if u != nil {
+		// This user account may exist but not be linked to GitHub yet.
+		if u.Github == nil {
+			if err := p.repo.LinkGitHub(ctx, u.ID, fmt.Sprint(githubUser.GetID()), githubUser.GetLogin(), githubUser.GetEmail()); err != nil {
+				return nil, errors.Wrap(err, "failed to create user GitHub relationship")
+			}
+		}
 		return u, err
 	}
 

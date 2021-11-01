@@ -114,6 +114,12 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 		return nil, err
 	}
 	if u != nil {
+		// This user account may exist but not be linked to Discord yet.
+		if u.Discord == nil {
+			if err := p.repo.LinkDiscord(ctx, u.ID, dcuser.ID, dcuser.Username, dcuser.Email); err != nil {
+				return nil, errors.Wrap(err, "failed to create user GitHub relationship")
+			}
+		}
 		return u, err
 	}
 
@@ -124,7 +130,7 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 		return nil, err
 	}
 
-	if err := p.repo.LinkGitHub(ctx, u.ID, dcuser.ID, dcuser.Username, dcuser.Email); err != nil {
+	if err := p.repo.LinkDiscord(ctx, u.ID, dcuser.ID, dcuser.Username, dcuser.Email); err != nil {
 		return nil, errors.Wrap(err, "failed to create user GitHub relationship")
 	}
 
