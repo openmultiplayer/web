@@ -121,7 +121,7 @@ model Post {
   replyPostId String?
   categoryId  String?
 
-  @@index([title, body])
+  @@index([title])
 }
 
 model Tag {
