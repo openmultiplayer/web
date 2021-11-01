@@ -13,7 +13,6 @@ import (
 	githuboa "golang.org/x/oauth2/github"
 
 	"github.com/openmultiplayer/web/server/src/config"
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/resources/user"
@@ -27,15 +26,17 @@ var (
 )
 
 type GitHubProvider struct {
-	db     *db.PrismaClient
+	repo   user.Repository
+	as     *State
 	mw     *mailworker.Worker
 	cache  *cache.Cache
 	oaconf *oauth2.Config
 }
 
-func NewGitHubProvider(db *db.PrismaClient, mw *mailworker.Worker, cfg config.Config) *GitHubProvider {
+func NewGitHubProvider(repo user.Repository, as *State, mw *mailworker.Worker, cfg config.Config) *GitHubProvider {
 	return &GitHubProvider{
-		db:    db,
+		repo:  repo,
+		as:    as,
 		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
@@ -83,46 +84,18 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*user.U
 		return nil, errors.New("email missing from GitHub account data")
 	}
 
-	// Attempt to find a user via their associated GitHub profile
-	if usergh, err := p.db.GitHub.FindUnique(
-		db.GitHub.Email.Equals(email),
-	).With(
-		db.GitHub.User.Fetch(),
-	).Exec(ctx); err == nil {
-		u := usergh.User()
-		return user.FromModel(u, false), err
+	if u, err := p.repo.GetUserByEmail(ctx, email, false); err == nil {
+		return u, err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
 	// are, get their existing account. If not, create a new account.
-	var u *db.UserModel
-	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
-		u, err = p.db.User.FindUnique(
-			db.User.ID.Equals(existing.Cookie.UserID),
-		).Exec(ctx)
-		if err != nil {
-			return nil, errors.Wrap(err, "failed to find user account")
-		}
-	} else {
-		// Create a new account with the authentication method set to "GitHub"
-		u, err = p.db.User.CreateOne(
-			db.User.Email.Set(fmt.Sprint(email)),
-			db.User.AuthMethod.Set(db.AuthMethodGITHUB),
-			db.User.Name.Set(githubUser.GetLogin()),
-		).Exec(ctx)
-		if err != nil {
-			return nil, errors.Wrap(err, "failed to create user account")
-		}
+	u, err := p.as.GetOrCreateFromContext(ctx, email, "GITHUB", githubUser.GetLogin())
+	if err != nil {
+		return nil, err
 	}
 
-	// Create their GitHub record and link it to the newly created user account
-	_, err = p.db.GitHub.CreateOne(
-		db.GitHub.User.Link(db.User.ID.Equals(u.ID)),
-		db.GitHub.AccountID.Set(fmt.Sprint(githubUser.GetID())),
-		db.GitHub.Username.Set(githubUser.GetLogin()),
-		db.GitHub.Email.Set(email),
-	).Exec(ctx)
-	if err != nil {
+	if err := p.repo.LinkGitHub(ctx, u.ID, fmt.Sprint(githubUser.GetID()), githubUser.GetLogin(), githubUser.GetEmail()); err != nil {
 		return nil, errors.Wrap(err, "failed to create user GitHub relationship")
 	}
 
@@ -136,5 +109,5 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*user.U
 		return nil, err
 	}
 
-	return user.FromModel(u, false), nil
+	return u, nil
 }

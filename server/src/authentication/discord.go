@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"time"
@@ -16,7 +15,6 @@ import (
 	"golang.org/x/oauth2"
 
 	"github.com/openmultiplayer/web/server/src/config"
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/mailreg"
 	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/resources/user"
@@ -25,7 +23,8 @@ import (
 var _ OAuthProvider = &DiscordProvider{}
 
 type DiscordProvider struct {
-	db     *db.PrismaClient
+	repo   user.Repository
+	as     *State
 	mw     *mailworker.Worker
 	cache  *cache.Cache
 	oaconf *oauth2.Config
@@ -36,9 +35,10 @@ var endpoint = oauth2.Endpoint{
 	TokenURL: "https://discord.com/api/oauth2/token",
 }
 
-func NewDiscordProvider(db *db.PrismaClient, mw *mailworker.Worker, cfg config.Config) *DiscordProvider {
+func NewDiscordProvider(repo user.Repository, as *State, mw *mailworker.Worker, cfg config.Config) *DiscordProvider {
 	return &DiscordProvider{
-		db:    db,
+		repo:  repo,
+		as:    as,
 		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
@@ -109,48 +109,19 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 		return nil, errors.New("email missing from Discord account data")
 	}
 
-	// Attempt to find a user via their associated Discord profile
-	if userdc, err := p.db.Discord.FindUnique(
-		db.Discord.Email.Equals(email),
-	).With(
-		db.Discord.User.Fetch(),
-	).Exec(ctx); err == nil {
-		u := userdc.User()
-		return user.FromModel(u, false), err
+	if u, err := p.repo.GetUserByEmail(ctx, email, false); err == nil {
+		return u, err
 	}
 
 	// Check if this request came from a user who was already logged in. If they
 	// are, get their existing account. If not, create a new account.
-	var u *db.UserModel
-	if existing, ok := GetAuthenticationInfoFromContext(ctx); ok && existing.Authenticated {
-		u, err = p.db.User.FindUnique(
-			db.User.ID.Equals(existing.Cookie.UserID),
-		).Exec(ctx)
-		if err != nil {
-			return nil, errors.Wrap(err, "failed to find user account")
-		}
-	} else {
-		// Create a new account with the authentication method set to "Discord"
-		u, err = p.db.User.CreateOne(
-			db.User.Email.Set(fmt.Sprint(email)),
-			db.User.AuthMethod.Set(db.AuthMethodDISCORD),
-			db.User.Name.Set(dcuser.Username),
-		).Exec(ctx)
-		if err != nil {
-			return nil, errors.Wrap(err, "failed to create user account")
-		}
+	u, err := p.as.GetOrCreateFromContext(ctx, email, "DISCORD", dcuser.Username)
+	if err != nil {
+		return nil, err
 	}
 
-	// Create their Discord record and link it to the account that was either
-	// found or created above.
-	_, err = p.db.Discord.CreateOne(
-		db.Discord.User.Link(db.User.ID.Equals(u.ID)),
-		db.Discord.AccountID.Set(dcuser.ID),
-		db.Discord.Username.Set(dcuser.Username),
-		db.Discord.Email.Set(email),
-	).Exec(ctx)
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to create user Discord relationship")
+	if err := p.repo.LinkGitHub(ctx, u.ID, dcuser.ID, dcuser.Username, dcuser.Email); err != nil {
+		return nil, errors.Wrap(err, "failed to create user GitHub relationship")
 	}
 
 	if err := p.mw.Enqueue(
@@ -163,5 +134,5 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 		return nil, err
 	}
 
-	return user.FromModel(u, false), nil
+	return u, nil
 }
