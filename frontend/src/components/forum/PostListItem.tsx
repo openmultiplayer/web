@@ -149,7 +149,7 @@ const PostListItem: FC<Props> = ({
   const onTitleChange = useCallback((t: string) => setTitle(t), [setTitle]);
 
   return (
-    <li>
+    <li id={post.id}>
       <article>
         <div>
           <header>

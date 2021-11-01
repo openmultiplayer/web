@@ -284,6 +284,9 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 			db.Post.Author.Fetch(),
 			db.Post.Category.Fetch(),
 			db.Post.Tags.Fetch(),
+			db.Post.ReplyTo.Fetch().With(
+				db.Post.Author.Fetch(),
+			),
 		).
 		Take(max).
 		Skip(skip).
