@@ -326,8 +326,10 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 	result := []Category{}
 	for _, c := range categories {
 		result = append(result, Category{
-			ID:   c.ID,
-			Name: c.Name,
+			ID:          c.ID,
+			Name:        c.Name,
+			Description: c.Description,
+			Colour:      c.Colour,
 		})
 	}
 
