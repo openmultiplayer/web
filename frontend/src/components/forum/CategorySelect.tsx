@@ -12,7 +12,7 @@ type Props = {
   onSelect: (c: string) => void;
 };
 
-const CategoryList: FC<Props> = ({ category, onSelect }) => {
+const CategorySelect: FC<Props> = ({ category, onSelect }) => {
   const onChange = (event: ChangeEvent<HTMLSelectElement>) => {
     onSelect(event.target.value);
   };
@@ -39,4 +39,4 @@ const CategoryList: FC<Props> = ({ category, onSelect }) => {
   );
 };
 
-export default CategoryList;
+export default CategorySelect;
