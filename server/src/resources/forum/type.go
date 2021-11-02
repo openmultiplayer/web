@@ -38,8 +38,10 @@ type Post struct {
 }
 
 type Category struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
+	ID          string `json:"id"`
+	Name        string `json:"name"`
+	Description string `json:"description"`
+	Colour      string `json:"colour"`
 }
 
 type Tag struct {
@@ -57,8 +59,10 @@ func FromModel(u *db.PostModel) (w *Post) {
 	category := Category{}
 	if u.RelationsPost.Category != nil {
 		category = Category{
-			ID:   u.RelationsPost.Category.ID,
-			Name: u.RelationsPost.Category.Name,
+			ID:          u.RelationsPost.Category.ID,
+			Name:        u.RelationsPost.Category.Name,
+			Description: u.RelationsPost.Category.Description,
+			Colour:      u.RelationsPost.Category.Colour,
 		}
 	}
 

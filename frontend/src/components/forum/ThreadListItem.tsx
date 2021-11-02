@@ -15,7 +15,7 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools }) => {
         <div>
           <header>
             <div className="category">
-              <CategoryName value={post.category.name} />
+              <CategoryName category={post.category} />
               <AdminTools show={showAdminTools} post={post} />
             </div>
 

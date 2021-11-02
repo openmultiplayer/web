@@ -11,6 +11,8 @@ export type Author = z.infer<typeof AuthorSchema>
 export const CategorySchema = z.object({
   id: z.string(),
   name: z.string(),
+  description: z.string(),
+  colour: z.string(),
 })
 export type Category = z.infer<typeof CategorySchema>
 

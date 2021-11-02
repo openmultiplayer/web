@@ -1,29 +1,44 @@
 import { Button } from "@chakra-ui/button";
 import { RepeatClockIcon } from "@chakra-ui/icons";
-import { Box, Flex, Grid, ListItem, UnorderedList } from "@chakra-ui/layout";
+import {
+  Box,
+  Flex,
+  Grid,
+  Link,
+  ListItem,
+  UnorderedList,
+} from "@chakra-ui/layout";
 import { FC, useCallback } from "react";
-import { Post } from "src/types/_generated_Forum";
+import { Category, Post } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
 import ProfilePicture from "../ProfilePicture";
 import { useDeletePost } from "./hooks";
 import LinkedTag from "./LinkedTag";
+import NextLink from "next/link";
+import { WEB_ADDRESS } from "src/config";
 
-type CategoryNameProps = { value: string; color?: string };
-export const CategoryName: FC<CategoryNameProps> = ({
-  value,
-  color = "lightblue",
-}) => (
-  <>
-    <span>{value}</span>
-
-    <style jsx>{`
-      span {
-        border-left: 0.25em solid ${color};
-        padding-left: 0.25em;
-        height: min-content;
-      }
-    `}</style>
-  </>
+type CategoryNameProps = { category: Category };
+export const CategoryName: FC<CategoryNameProps> = ({ category }) => (
+  <NextLink
+    passHref
+    href={`${WEB_ADDRESS}/discussion/category/${category.name}`}
+  >
+    <Link
+      borderLeftWidth="0.25em"
+      borderStyle="solid"
+      borderLeftColor={category.colour}
+      paddingLeft="0.25em"
+      paddingRight="0.5em"
+      borderRadius="0.25em"
+      height="min-content"
+      _hover={{
+        backgroundColor: "blackAlpha.100",
+        textDecor: "none",
+      }}
+    >
+      {category.name}
+    </Link>
+  </NextLink>
 );
 
 type AdminToolsProps = { show: boolean; post: Post };
