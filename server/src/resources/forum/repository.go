@@ -34,7 +34,7 @@ type Repository interface {
 	GetCategories(ctx context.Context) ([]Category, error)
 	GetTags(ctx context.Context, query string) ([]Tag, error)
 
-	CreateCategory(ctx context.Context, name string) (*Category, error)
+	CreateCategory(ctx context.Context, name, desc, colour string) (*Category, error)
 
 	CreateLegacyThread(
 		ctx context.Context,
