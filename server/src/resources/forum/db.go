@@ -314,7 +314,18 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 }
 
 func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
-	categories, err := d.db.Category.FindMany().Exec(ctx)
+	categories, err := d.db.Category.
+		FindMany().
+		With(
+			db.Category.Posts.
+				Fetch().
+				With(
+					db.Post.Author.Fetch(),
+				).
+				Take(5).
+				OrderBy(db.Post.UpdatedAt.Order(db.SortOrderDesc)),
+		).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -325,11 +336,16 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 
 	result := []Category{}
 	for _, c := range categories {
+		recent := []Post{}
+		for _, p := range c.Posts() {
+			recent = append(recent, *FromModel(&p))
+		}
 		result = append(result, Category{
 			ID:          c.ID,
 			Name:        c.Name,
 			Description: c.Description,
 			Colour:      c.Colour,
+			Recent:      recent,
 		})
 	}
 

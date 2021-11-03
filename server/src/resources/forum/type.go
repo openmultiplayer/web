@@ -42,6 +42,7 @@ type Category struct {
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	Colour      string `json:"colour"`
+	Recent      []Post `json:"recent,omitempty"`
 }
 
 type Tag struct {
