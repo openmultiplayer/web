@@ -1,16 +1,23 @@
+import { DeleteIcon, DragHandleIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Divider,
   Flex,
   Heading,
+  IconButton,
   Link,
   ListItem,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   OrderedList,
   UnorderedList,
-} from "@chakra-ui/layout";
+} from "@chakra-ui/react";
 import { map } from "lodash/fp";
 import NextLink from "next/link";
-import React, { FC } from "react";
+import React, { FC, forwardRef, useCallback, useState } from "react";
+import { ReactSortable } from "react-sortablejs";
 import { Category } from "src/types/_generated_Forum";
 import { PostLink } from "./common";
 
@@ -18,7 +25,25 @@ type Props = {
   categories: Category[];
 };
 
-const CategorListItem: FC<{ category: Category }> = ({ category }) => {
+const CategoryListItemMenu = () => {
+  return (
+    <Menu placement="left-start">
+      <MenuButton
+        as={IconButton}
+        aria-label="Options"
+        icon={<HamburgerIcon />}
+        variant="outline"
+        boxSize="1.5em"
+        borderWidth="0"
+      ></MenuButton>
+      <MenuList>
+        <MenuItem icon={<DeleteIcon />}>Delete</MenuItem>
+      </MenuList>
+    </Menu>
+  );
+};
+
+const CategoryListItem: FC<{ category: Category }> = ({ category }) => {
   return (
     <ListItem
       key={category.id}
@@ -56,11 +81,22 @@ const CategorListItem: FC<{ category: Category }> = ({ category }) => {
         </Box>
 
         <Box width="50%">
-          <Heading as="h3" size="md">
-            Recent posts
-          </Heading>
+          <Flex
+            justifyContent="space-between"
+            alignItems="center"
+            gridGap="0.5em"
+          >
+            <Heading as="h3" size="md" m="0">
+              Recent posts
+            </Heading>
+            <Flex alignItems="center">
+              <CategoryListItemMenu />
+              <DragHandleIcon className="drag-handle" cursor="grab" />
+            </Flex>
+          </Flex>
           <OrderedList
-            margin="0"
+            my="0.2em"
+            mx="0"
             display="flex"
             gridGap="0.25em"
             flexDir="column"
@@ -77,13 +113,46 @@ const CategorListItem: FC<{ category: Category }> = ({ category }) => {
   );
 };
 
-const categoriesToList = map((c: Category) => <CategorListItem category={c} />);
+const categoriesToList = map((c: Category) => (
+  <CategoryListItem key={c.id} category={c} />
+));
+
+// eslint-disable-next-line react/display-name
+const ListContainer = forwardRef<HTMLUListElement>((props, ref) => {
+  return (
+    <UnorderedList
+      ref={ref}
+      margin="0"
+      padding="0"
+      display="flex"
+      gridGap="0.5em"
+      flexDir="column"
+    >
+      {props.children}
+    </UnorderedList>
+  );
+});
 
 const CategoryList: FC<Props> = ({ categories }) => {
+  const [list, setList] = useState(categories);
+  const onSort = useCallback(
+    (e) => {
+      console.log(list);
+    },
+    [list]
+  );
+
   return (
-    <UnorderedList margin="0" display="flex" gridGap="0.5em" flexDir="column">
-      {categoriesToList(categories)}
-    </UnorderedList>
+    <ReactSortable
+      tag={ListContainer}
+      list={list}
+      setList={setList}
+      animation={200}
+      delayOnTouchOnly={true}
+      handle=".drag-handle"
+    >
+      {categoriesToList(list)}
+    </ReactSortable>
   );
 };
 
