@@ -16,6 +16,9 @@ type Author struct {
 type PostMeta struct {
 	Author string `json:"author"`
 	PostID string `json:"postId"`
+	Slug   string `json:"slug"`
+	Title  string `json:"title"`
+	Short  string `json:"short"`
 }
 
 type Post struct {
@@ -32,17 +35,17 @@ type Post struct {
 	RootPostID *string    `json:"rootPostId"`
 	Author     Author     `json:"author"`
 	Tags       []string   `json:"tags"`
-	Category   Category   `json:"category"`
 	Posts      int        `json:"posts"`
 	ReplyTo    *PostMeta  `json:"replyTo"`
+	Category   Category   `json:"category"`
 }
 
 type Category struct {
-	ID          string `json:"id"`
-	Name        string `json:"name"`
-	Description string `json:"description"`
-	Colour      string `json:"colour"`
-	Recent      []Post `json:"recent,omitempty"`
+	ID          string     `json:"id"`
+	Name        string     `json:"name"`
+	Description string     `json:"description"`
+	Colour      string     `json:"colour"`
+	Recent      []PostMeta `json:"recent,omitempty"`
 }
 
 type Tag struct {

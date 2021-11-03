@@ -318,7 +318,10 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 		FindMany().
 		With(
 			db.Category.Posts.
-				Fetch().
+				Fetch(
+					db.Post.First.Equals(true),
+					db.Post.DeletedAt.IsNull(),
+				).
 				With(
 					db.Post.Author.Fetch(),
 				).
@@ -336,9 +339,15 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 
 	result := []Category{}
 	for _, c := range categories {
-		recent := []Post{}
+		recent := []PostMeta{}
 		for _, p := range c.Posts() {
-			recent = append(recent, *FromModel(&p))
+			recent = append(recent, PostMeta{
+				Author: p.RelationsPost.Author.Name,
+				PostID: p.ID,
+				Slug:   *p.InnerPost.Slug,
+				Title:  *p.InnerPost.Title,
+				Short:  p.Short,
+			})
 		}
 		result = append(result, Category{
 			ID:          c.ID,
