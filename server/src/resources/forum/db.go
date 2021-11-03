@@ -316,6 +316,9 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 	categories, err := d.db.Category.
 		FindMany().
+		OrderBy(
+			db.Category.Sort.Order(db.SortOrderAsc),
+		).
 		With(
 			db.Category.Posts.
 				Fetch(
@@ -339,23 +342,7 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 
 	result := []Category{}
 	for _, c := range categories {
-		recent := []PostMeta{}
-		for _, p := range c.Posts() {
-			recent = append(recent, PostMeta{
-				Author: p.RelationsPost.Author.Name,
-				PostID: p.ID,
-				Slug:   *p.InnerPost.Slug,
-				Title:  *p.InnerPost.Title,
-				Short:  p.Short,
-			})
-		}
-		result = append(result, Category{
-			ID:          c.ID,
-			Name:        c.Name,
-			Description: c.Description,
-			Colour:      c.Colour,
-			Recent:      recent,
-		})
+		result = append(result, *CategoryFromModel(&c))
 	}
 
 	return result, nil
@@ -440,6 +427,20 @@ func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string) (*Ca
 		ID:   c.ID,
 		Name: c.Name,
 	}, nil
+}
+
+func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int) (*Category, error) {
+	c, err := d.db.Category.
+		FindUnique(db.Category.ID.Equals(id)).
+		Update(
+			db.Category.Name.SetIfPresent(name),
+			db.Category.Description.SetIfPresent(desc),
+			db.Category.Colour.SetIfPresent(colour),
+			db.Category.Sort.SetIfPresent(sort),
+		).
+		Exec(ctx)
+
+	return CategoryFromModel(c), err
 }
 
 func (d *DB) CreateLegacyThread(

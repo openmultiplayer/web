@@ -137,5 +137,6 @@ model Category {
   name        String @unique
   description String @default("(No description)")
   colour      String @default("#8577ce")
+  sort        Int    @default(-1)
   posts       Post[]
 }

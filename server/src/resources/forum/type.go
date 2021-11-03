@@ -101,3 +101,28 @@ func FromModel(u *db.PostModel) (w *Post) {
 		ReplyTo:  replyTo,
 	}
 }
+
+func PostMetaFromModel(p *db.PostModel) *PostMeta {
+	return &PostMeta{
+		Author: p.RelationsPost.Author.Name,
+		PostID: p.ID,
+		Slug:   *p.InnerPost.Slug,
+		Title:  *p.InnerPost.Title,
+		Short:  p.Short,
+	}
+}
+
+func CategoryFromModel(c *db.CategoryModel) *Category {
+	recent := []PostMeta{}
+	for _, p := range c.Posts() {
+		recent = append(recent, *PostMetaFromModel(&p))
+	}
+
+	return &Category{
+		ID:          c.ID,
+		Name:        c.Name,
+		Description: c.Description,
+		Colour:      c.Colour,
+		Recent:      recent,
+	}
+}
