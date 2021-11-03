@@ -1,5 +1,5 @@
 import { Button } from "@chakra-ui/button";
-import { RepeatClockIcon } from "@chakra-ui/icons";
+import { LinkIcon, RepeatClockIcon } from "@chakra-ui/icons";
 import {
   Box,
   Flex,
@@ -9,7 +9,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/layout";
 import { FC, useCallback } from "react";
-import { Category, Post } from "src/types/_generated_Forum";
+import { Category, Post, PostMeta } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
 import ProfilePicture from "../ProfilePicture";
 import { useDeletePost } from "./hooks";
@@ -168,5 +168,24 @@ export const PostMetadata: FC<PostMetadataProps> = ({
         }
       `}</style>
     </Flex>
+  );
+};
+
+type PostLinkProps = { post: PostMeta };
+export const PostLink: FC<PostLinkProps> = ({ post }) => {
+  return (
+    <NextLink passHref href={`${WEB_ADDRESS}/discussion/${post.slug}`}>
+      <Link
+        display="flex"
+        gridGap="0.25em"
+        alignItems="center"
+        backgroundColor="blackAlpha.100"
+        borderRadius="0.25em"
+        px="0.25em"
+      >
+        <LinkIcon p="0.1em" />
+        <span>{post.title}</span>
+      </Link>
+    </NextLink>
   );
 };

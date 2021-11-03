@@ -1,8 +1,18 @@
-import NextLink from "next/link";
-import { Heading, ListItem, UnorderedList, Link, Box } from "@chakra-ui/layout";
+import {
+  Box,
+  Divider,
+  Flex,
+  Heading,
+  Link,
+  ListItem,
+  OrderedList,
+  UnorderedList,
+} from "@chakra-ui/layout";
 import { map } from "lodash/fp";
+import NextLink from "next/link";
 import React, { FC } from "react";
 import { Category } from "src/types/_generated_Forum";
+import { PostLink } from "./common";
 
 type Props = {
   categories: Category[];
@@ -19,25 +29,50 @@ const CategorListItem: FC<{ category: Category }> = ({ category }) => {
       borderColor="blackAlpha.100"
       padding="1em"
     >
-      <Box
+      <Flex
         as="article"
         borderLeftColor={category.colour}
         borderLeftStyle="solid"
         borderLeftWidth="0.5em"
         borderRadius="0.25em"
         paddingLeft="0.5em"
+        justifyContent="space-between"
       >
-        <header>
-          <Heading margin="0">
-            <NextLink passHref href={`/discussion/category/${category.name}`}>
-              <Link>{category.name}</Link>
-            </NextLink>
+        <Box width="50%">
+          <header>
+            <Heading margin="0">
+              <NextLink passHref href={`/discussion/category/${category.name}`}>
+                <Link>{category.name}</Link>
+              </NextLink>
+            </Heading>
+          </header>
+          <main>
+            <p>{category.description}</p>
+          </main>
+        </Box>
+
+        <Box height="auto" px="1em">
+          <Divider orientation="vertical" />
+        </Box>
+
+        <Box width="50%">
+          <Heading as="h3" size="md">
+            Recent posts
           </Heading>
-        </header>
-        <main>
-          <p>{category.description}</p>
-        </main>
-      </Box>
+          <OrderedList
+            margin="0"
+            display="flex"
+            gridGap="0.25em"
+            flexDir="column"
+          >
+            {category.recent?.map((p) => (
+              <ListItem key={p.postId} listStyleType="none">
+                <PostLink post={p} />
+              </ListItem>
+            ))}
+          </OrderedList>
+        </Box>
+      </Flex>
     </ListItem>
   );
 };
