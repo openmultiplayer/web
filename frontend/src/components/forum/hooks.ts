@@ -13,6 +13,7 @@ type CreatePostFn = (data: PostPayload) => void;
 type DeleteFn = (id: string) => void;
 type EditFn = (data: PostPayload) => void;
 type UpdateCategoriesFn = (categories: Category[]) => void;
+type DeleteCategoryFn = (id: string, moveTo: string) => void;
 
 const isPostEmpty = (data: PostPayload) => data?.body?.length === 0;
 
@@ -145,6 +146,33 @@ export const useUpdateCategories = (): UpdateCategoriesFn => {
         });
         toast({
           title: "Categories updated!",
+          status: "success",
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate("/forum/categories");
+      nProgress.done();
+    },
+    [handler, toast]
+  );
+
+  return onEdit;
+};
+
+export const useDeleteCategory = (): DeleteCategoryFn => {
+  const toast = useToast();
+  const handler = useErrorHandler();
+  const onEdit = useCallback(
+    async (id: string, moveTo: string) => {
+      nProgress.start();
+      try {
+        await apiSSP<Post>(`/forum/categories/${id}`, {
+          method: "DELETE",
+          body: JSON.stringify({ moveTo }),
+        });
+        toast({
+          title: "Category deleted!",
           status: "success",
         });
       } catch (e) {

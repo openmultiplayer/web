@@ -1,5 +1,8 @@
 import { DeleteIcon, DragHandleIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
+  useDisclosure,
+  useToast,
+  Button,
   Box,
   Divider,
   Flex,
@@ -13,34 +16,104 @@ import {
   MenuList,
   OrderedList,
   UnorderedList,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Text,
 } from "@chakra-ui/react";
 import { map } from "lodash/fp";
 import NextLink from "next/link";
 import React, { FC, forwardRef, useCallback, useState } from "react";
 import { ReactSortable } from "react-sortablejs";
 import { Category } from "src/types/_generated_Forum";
+import CategorySelect from "./CategorySelect";
 import { PostLink } from "./common";
-import { useUpdateCategories } from "./hooks";
+import { useDeleteCategory, useUpdateCategories } from "./hooks";
 
 type Props = {
   categories: Category[];
 };
 
-const CategoryListItemMenu = () => {
+type CategoryListItemMenuProps = {
+  category: Category;
+};
+const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({ category }) => {
+  const toast = useToast();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [newCategory, setNewCategory] = useState<Category | undefined>();
+  const onSelectNewCategory = useCallback((_name, cat) => {
+    setNewCategory(cat);
+  }, []);
+
+  const deleteCategory = useDeleteCategory();
+  const onDelete = useCallback(() => {
+    if (newCategory === undefined) {
+      toast({
+        status: "error",
+        title: "Please select a new category to move posts to",
+      });
+    } else if (newCategory.name === category.name) {
+      toast({
+        status: "error",
+        title: "Please select a different new category to move posts to",
+      });
+    } else {
+      deleteCategory(category.id, newCategory.id);
+      onClose();
+    }
+  }, [toast, category, newCategory, deleteCategory, onClose]);
+
   return (
-    <Menu placement="left-start">
-      <MenuButton
-        as={IconButton}
-        aria-label="Options"
-        icon={<HamburgerIcon />}
-        variant="outline"
-        boxSize="1.5em"
-        borderWidth="0"
-      ></MenuButton>
-      <MenuList>
-        <MenuItem icon={<DeleteIcon />}>Delete</MenuItem>
-      </MenuList>
-    </Menu>
+    <>
+      <Menu placement="left-start">
+        <MenuButton
+          as={IconButton}
+          aria-label="Options"
+          icon={<HamburgerIcon />}
+          variant="outline"
+          boxSize="1.5em"
+          borderWidth="0"
+        ></MenuButton>
+        <MenuList>
+          <MenuItem icon={<DeleteIcon />} onClick={onOpen}>
+            Delete
+          </MenuItem>
+        </MenuList>
+      </Menu>
+
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Confirm Delete Category</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text>
+              To delete category {category.name} please choose a category to
+              move posts to:
+            </Text>
+            <CategorySelect
+              onSelect={onSelectNewCategory}
+              includeAllOption={false}
+              exclude={category.name}
+            />
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme="red" mr={3} onClick={onDelete}>
+              Delete
+            </Button>
+            <Button variant="ghost" onClick={onClose}>
+              Cancel
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
   );
 };
 
@@ -91,7 +164,7 @@ const CategoryListItem: FC<{ category: Category }> = ({ category }) => {
               Recent posts
             </Heading>
             <Flex alignItems="center">
-              <CategoryListItemMenu />
+              <CategoryListItemMenu category={category} />
               <DragHandleIcon className="drag-handle" cursor="grab" />
             </Flex>
           </Flex>

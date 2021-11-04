@@ -349,6 +349,36 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 	return result, nil
 }
 
+func (d *DB) DeleteCategory(ctx context.Context, id string, moveto string) (*Category, error) {
+	movePosts := d.db.Post.
+		FindMany(
+			db.Post.Category.Where(
+				db.Category.ID.Equals(id),
+			),
+		).
+		Update(
+			db.Post.CategoryID.Set(moveto),
+		).
+		Tx()
+
+	deleteCategory := d.db.Category.
+		FindUnique(
+			db.Category.ID.Equals(id),
+		).
+		Delete().
+		Tx()
+
+	err := d.db.Prisma.Transaction(
+		movePosts,
+		deleteCategory,
+	).Exec(ctx)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to perform move+delete transaction")
+	}
+
+	return CategoryFromModel(deleteCategory.Result()), nil
+}
+
 func (d *DB) GetTags(ctx context.Context, query string) ([]Tag, error) {
 	var tags []Tag
 	err := d.db.Prisma.Raw.QueryRaw(`
