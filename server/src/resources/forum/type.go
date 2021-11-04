@@ -47,6 +47,7 @@ type Category struct {
 	Colour      string     `json:"colour"`
 	Sort        int        `json:"sort"`
 	Recent      []PostMeta `json:"recent,omitempty"`
+	PostCount   int        `json:"postCount"`
 }
 
 type Tag struct {

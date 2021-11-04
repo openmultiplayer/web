@@ -340,9 +340,36 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 		return nil, nil
 	}
 
+	// NOTE:
+	// Lazy two queries because Prisma doesn't yet support Count aggregations.
+	// I could write the above query as raw SQL too but... screw that. Joins are
+	// super annoying to get nested data out of because SQL is awful. So for now
+	// there are two separate queries and the data is joined below. Besides,
+	// there won't be many categories anyway so it's not going to affect
+	// performance much.
+	type CategoryPostCount struct {
+		ID    string `json:"id"`
+		Name  string `json:"name"`
+		Sort  string `json:"sort"`
+		Posts int    `json:"posts"`
+	}
+	var categoryPostsList []CategoryPostCount
+	d.db.Prisma.QueryRaw(`
+		select c.id, c.name, c.sort, count(*) as posts
+		from "Category" c
+		inner join "Post" p on c.id = p."categoryId"
+		group by c.id
+		order by c.sort asc
+	`).Exec(ctx, &categoryPostsList)
+	categoryPosts := make(map[string]int)
+	for _, c := range categoryPostsList {
+		categoryPosts[c.ID] = c.Posts
+	}
+
 	result := []Category{}
 	for _, c := range categories {
 		category := CategoryFromModel(&c)
+		category.PostCount = categoryPosts[c.ID]
 		result = append(result, *category)
 	}
 

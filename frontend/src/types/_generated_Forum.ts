@@ -22,7 +22,9 @@ export const CategorySchema = z.object({
   name: z.string(),
   description: z.string(),
   colour: z.string(),
+  sort: z.number(),
   recent: PostMetaSchema.array().optional(),
+  postCount: z.number(),
 })
 export type Category = z.infer<typeof CategorySchema>
 

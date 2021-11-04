@@ -1,8 +1,14 @@
-import { DeleteIcon, DragHandleIcon, HamburgerIcon } from "@chakra-ui/icons";
+import {
+  DeleteIcon,
+  DragHandleIcon,
+  HamburgerIcon,
+  PlusSquareIcon,
+} from "@chakra-ui/icons";
 import {
   useDisclosure,
   useToast,
   Button,
+  Badge,
   Box,
   Divider,
   Flex,
@@ -34,6 +40,7 @@ import { Category } from "src/types/_generated_Forum";
 import CategorySelect from "./CategorySelect";
 import { PostLink } from "./common";
 import { useDeleteCategory, useUpdateCategories } from "./hooks";
+import NewThreadLink from "./NewThreadLink";
 
 type Props = {
   categories: Category[];
@@ -162,9 +169,23 @@ const CategoryListItem: FC<{ category: Category }> = ({ category }) => {
             alignItems="center"
             gridGap="0.5em"
           >
-            <Heading as="h3" size="md" m="0">
-              Recent posts
-            </Heading>
+            <Flex gridGap="0.5em">
+              {category.postCount === 0 ? (
+                <>
+                  <Heading as="h3" size="md" m="0">
+                    No posts
+                  </Heading>
+                  <NewThreadLink />
+                </>
+              ) : (
+                <Heading as="h3" size="md" m="0">
+                  {category.postCount === 1
+                    ? `1 Post`
+                    : `${category.postCount} Posts`}
+                </Heading>
+              )}
+            </Flex>
+
             {admin && (
               <Flex alignItems="center">
                 <CategoryListItemMenu category={category} />
