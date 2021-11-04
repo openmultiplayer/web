@@ -29,6 +29,7 @@ import { map } from "lodash/fp";
 import NextLink from "next/link";
 import React, { FC, forwardRef, useCallback, useState } from "react";
 import { ReactSortable } from "react-sortablejs";
+import { useIsAdmin } from "src/auth/hooks";
 import { Category } from "src/types/_generated_Forum";
 import CategorySelect from "./CategorySelect";
 import { PostLink } from "./common";
@@ -118,6 +119,7 @@ const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({ category }) => {
 };
 
 const CategoryListItem: FC<{ category: Category }> = ({ category }) => {
+  const admin = useIsAdmin();
   return (
     <ListItem
       key={category.id}
@@ -163,10 +165,12 @@ const CategoryListItem: FC<{ category: Category }> = ({ category }) => {
             <Heading as="h3" size="md" m="0">
               Recent posts
             </Heading>
-            <Flex alignItems="center">
-              <CategoryListItemMenu category={category} />
-              <DragHandleIcon className="drag-handle" cursor="grab" />
-            </Flex>
+            {admin && (
+              <Flex alignItems="center">
+                <CategoryListItemMenu category={category} />
+                <DragHandleIcon className="drag-handle" cursor="grab" />
+              </Flex>
+            )}
           </Flex>
           <OrderedList
             my="0.2em"
