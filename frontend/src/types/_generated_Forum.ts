@@ -8,17 +8,23 @@ export const AuthorSchema = z.object({
 })
 export type Author = z.infer<typeof AuthorSchema>
 
-export const CategorySchema = z.object({
-  id: z.string(),
-  name: z.string(),
-})
-export type Category = z.infer<typeof CategorySchema>
-
 export const PostMetaSchema = z.object({
   author: z.string(),
   postId: z.string(),
+  slug: z.string(),
+  title: z.string(),
+  short: z.string(),
 })
 export type PostMeta = z.infer<typeof PostMetaSchema>
+
+export const CategorySchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
+  colour: z.string(),
+  recent: PostMetaSchema.array().optional(),
+})
+export type Category = z.infer<typeof CategorySchema>
 
 export const PostSchema = z.object({
   id: z.string(),
@@ -34,9 +40,9 @@ export const PostSchema = z.object({
   rootPostId: z.string().nullable(),
   author: AuthorSchema,
   tags: z.string().array(),
-  category: CategorySchema,
   posts: z.number(),
   replyTo: PostMetaSchema.nullable(),
+  category: CategorySchema,
 })
 export type Post = z.infer<typeof PostSchema>
 

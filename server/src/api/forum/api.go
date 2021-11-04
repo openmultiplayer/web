@@ -4,6 +4,7 @@ import (
 	"github.com/go-chi/chi"
 	"go.uber.org/fx"
 
+	"github.com/openmultiplayer/web/server/src/api/forum/categories"
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/resources/forum"
 )
@@ -14,6 +15,8 @@ type service struct {
 
 func Build() fx.Option {
 	return fx.Options(
+		categories.Build(),
+
 		fx.Provide(func(repo forum.Repository) *service { return &service{repo} }),
 		fx.Invoke(func(
 			r chi.Router,
@@ -44,9 +47,6 @@ func Build() fx.Option {
 			rtr.
 				With(authentication.MustBeAuthenticated /*ratelimiter.WithRateLimit(20)*/).
 				Delete("/{id}", s.delete)
-
-			rtr.
-				Get("/categories", s.categories)
 
 			rtr.
 				Get("/tags", s.tags)

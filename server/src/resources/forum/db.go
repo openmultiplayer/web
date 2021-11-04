@@ -314,7 +314,24 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 }
 
 func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
-	categories, err := d.db.Category.FindMany().Exec(ctx)
+	categories, err := d.db.Category.
+		FindMany().
+		OrderBy(
+			db.Category.Sort.Order(db.SortOrderAsc),
+		).
+		With(
+			db.Category.Posts.
+				Fetch(
+					db.Post.First.Equals(true),
+					db.Post.DeletedAt.IsNull(),
+				).
+				With(
+					db.Post.Author.Fetch(),
+				).
+				Take(5).
+				OrderBy(db.Post.UpdatedAt.Order(db.SortOrderDesc)),
+		).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -325,13 +342,41 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 
 	result := []Category{}
 	for _, c := range categories {
-		result = append(result, Category{
-			ID:   c.ID,
-			Name: c.Name,
-		})
+		category := CategoryFromModel(&c)
+		result = append(result, *category)
 	}
 
 	return result, nil
+}
+
+func (d *DB) DeleteCategory(ctx context.Context, id string, moveto string) (*Category, error) {
+	movePosts := d.db.Post.
+		FindMany(
+			db.Post.Category.Where(
+				db.Category.ID.Equals(id),
+			),
+		).
+		Update(
+			db.Post.CategoryID.Set(moveto),
+		).
+		Tx()
+
+	deleteCategory := d.db.Category.
+		FindUnique(
+			db.Category.ID.Equals(id),
+		).
+		Delete().
+		Tx()
+
+	err := d.db.Prisma.Transaction(
+		movePosts,
+		deleteCategory,
+	).Exec(ctx)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to perform move+delete transaction")
+	}
+
+	return CategoryFromModel(deleteCategory.Result()), nil
 }
 
 func (d *DB) GetTags(ctx context.Context, query string) ([]Tag, error) {
@@ -392,19 +437,38 @@ func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
 	return result, nil
 }
 
-func (d *DB) CreateCategory(ctx context.Context, name string) (*Category, error) {
+func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string) (*Category, error) {
 	c, err := d.db.Category.
 		UpsertOne(db.Category.Name.Equals(name)).
-		Create(db.Category.Name.Set(name)).
-		Update().
+		Create(
+			db.Category.Name.Set(name),
+			db.Category.Description.Set(desc),
+			db.Category.Colour.Set(colour),
+		).
+		Update(
+			db.Category.Name.Set(name),
+			db.Category.Description.Set(desc),
+			db.Category.Colour.Set(colour),
+		).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
-	return &Category{
-		ID:   c.ID,
-		Name: c.Name,
-	}, nil
+	return CategoryFromModel(c), nil
+}
+
+func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int) (*Category, error) {
+	c, err := d.db.Category.
+		FindUnique(db.Category.ID.Equals(id)).
+		Update(
+			db.Category.Name.SetIfPresent(name),
+			db.Category.Description.SetIfPresent(desc),
+			db.Category.Colour.SetIfPresent(colour),
+			db.Category.Sort.SetIfPresent(sort),
+		).
+		Exec(ctx)
+
+	return CategoryFromModel(c), err
 }
 
 func (d *DB) CreateLegacyThread(

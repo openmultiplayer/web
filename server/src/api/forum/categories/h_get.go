@@ -1,4 +1,4 @@
-package forum
+package categories
 
 import (
 	"encoding/json"
@@ -7,7 +7,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-func (s *service) categories(w http.ResponseWriter, r *http.Request) {
+func (s *service) get(w http.ResponseWriter, r *http.Request) {
 	categories, err := s.repo.GetCategories(r.Context())
 	if err != nil {
 		web.StatusInternalServerError(w, err)

@@ -16,6 +16,9 @@ type Author struct {
 type PostMeta struct {
 	Author string `json:"author"`
 	PostID string `json:"postId"`
+	Slug   string `json:"slug"`
+	Title  string `json:"title"`
+	Short  string `json:"short"`
 }
 
 type Post struct {
@@ -32,14 +35,18 @@ type Post struct {
 	RootPostID *string    `json:"rootPostId"`
 	Author     Author     `json:"author"`
 	Tags       []string   `json:"tags"`
-	Category   Category   `json:"category"`
 	Posts      int        `json:"posts"`
 	ReplyTo    *PostMeta  `json:"replyTo"`
+	Category   Category   `json:"category"`
 }
 
 type Category struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
+	ID          string     `json:"id"`
+	Name        string     `json:"name"`
+	Description string     `json:"description"`
+	Colour      string     `json:"colour"`
+	Sort        int        `json:"sort"`
+	Recent      []PostMeta `json:"recent,omitempty"`
 }
 
 type Tag struct {
@@ -56,10 +63,7 @@ func FromModel(u *db.PostModel) (w *Post) {
 
 	category := Category{}
 	if u.RelationsPost.Category != nil {
-		category = Category{
-			ID:   u.RelationsPost.Category.ID,
-			Name: u.RelationsPost.Category.Name,
-		}
+		category = *CategoryFromModel(u.RelationsPost.Category)
 	}
 
 	var replyTo *PostMeta
@@ -91,5 +95,31 @@ func FromModel(u *db.PostModel) (w *Post) {
 		Tags:     tags,
 		Category: category,
 		ReplyTo:  replyTo,
+	}
+}
+
+func PostMetaFromModel(p *db.PostModel) *PostMeta {
+	return &PostMeta{
+		Author: p.RelationsPost.Author.Name,
+		PostID: p.ID,
+		Slug:   *p.InnerPost.Slug,
+		Title:  *p.InnerPost.Title,
+		Short:  p.Short,
+	}
+}
+
+func CategoryFromModel(c *db.CategoryModel) *Category {
+	recent := []PostMeta{}
+	for _, p := range c.RelationsCategory.Posts {
+		recent = append(recent, *PostMetaFromModel(&p))
+	}
+
+	return &Category{
+		ID:          c.ID,
+		Name:        c.Name,
+		Description: c.Description,
+		Colour:      c.Colour,
+		Sort:        c.Sort,
+		Recent:      recent,
 	}
 }

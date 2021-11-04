@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { FC } from "react";
 import ThreadSearch from "src/components/forum/ThreadSearch";
 import { Post } from "src/types/_generated_Forum";
-import CategoryList from "./CategoryList";
+import CategoryList from "./CategorySelect";
 import ThreadListItem from "./ThreadListItem";
 import { useDeletePost } from "./hooks";
 
