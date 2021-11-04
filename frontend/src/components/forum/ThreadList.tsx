@@ -4,15 +4,14 @@ import Link from "next/link";
 import React, { FC } from "react";
 import ThreadSearch from "src/components/forum/ThreadSearch";
 import { Post } from "src/types/_generated_Forum";
-import CategoryList from "./CategoryList";
+import CategoryList from "./CategorySelect";
 import ThreadListItem from "./ThreadListItem";
-import { useDeletePost } from "./hooks";
 
 type HeaderProps = {
   category: string;
   tags: string[];
   query: string;
-  onSelectCategory: (c: string) => void;
+  onSelectCategory: (c: string | undefined) => void;
   onSearch: (tags: string[], query: string) => void;
 };
 

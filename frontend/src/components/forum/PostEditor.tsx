@@ -9,7 +9,7 @@ import {
   SearchResultsSchema,
 } from "src/types/_generated_SearchResult";
 import * as z from "zod";
-import CategoryList from "./CategoryList";
+import CategoryList from "./CategorySelect";
 import TagsInput from "./TagsInput";
 
 export const PostPayloadSchema = z.object({

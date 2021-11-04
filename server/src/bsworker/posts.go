@@ -34,13 +34,18 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 	forummap := make(map[int]string)
 	for _, f := range forums {
 		forummap[f.Fid] = f.Name
-		w.forum.CreateCategory(ctx, f.Name)
+		w.forum.CreateCategory(ctx, f.Name, f.Description, "#8577ce")
 	}
 
 	for _, t := range threads {
 		posts, err := w.bs.GetPosts(ctx, t.Tid)
 		if err != nil {
 			return err
+		}
+
+		if len(posts) == 0 {
+			zap.L().Info("thread has no posts", zap.Int("tid", t.Tid), zap.String("thread", t.Subject), zap.String("author", t.Username))
+			continue
 		}
 
 		first := posts[0]
