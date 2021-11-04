@@ -1,15 +1,13 @@
 import {
+  ArrowDownIcon,
+  ArrowUpIcon,
   DeleteIcon,
   DragHandleIcon,
   HamburgerIcon,
-  PlusSquareIcon,
 } from "@chakra-ui/icons";
 import {
-  useDisclosure,
-  useToast,
-  Button,
-  Badge,
   Box,
+  Button,
   Divider,
   Flex,
   Heading,
@@ -20,16 +18,18 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  OrderedList,
-  UnorderedList,
   Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  OrderedList,
   Text,
+  UnorderedList,
+  useDisclosure,
+  useToast,
 } from "@chakra-ui/react";
 import { map } from "lodash/fp";
 import NextLink from "next/link";
@@ -46,10 +46,16 @@ type Props = {
   categories: Category[];
 };
 
+type MoveCategoryFn = (idx: number, start: boolean) => void;
+
 type CategoryListItemMenuProps = {
   category: Category;
+  onMove: MoveCategoryFn;
 };
-const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({ category }) => {
+const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({
+  category,
+  onMove,
+}) => {
   const toast = useToast();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -76,6 +82,16 @@ const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({ category }) => {
     }
   }, [toast, category, newCategory, deleteCategory, onClose]);
 
+  const onMoveToStart = useCallback(
+    () => onMove(category.sort, true),
+    [onMove, category]
+  );
+
+  const onMoveToEnd = useCallback(
+    () => onMove(category.sort, false),
+    [onMove, category]
+  );
+
   return (
     <>
       <Menu placement="left-start">
@@ -90,6 +106,12 @@ const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({ category }) => {
         <MenuList>
           <MenuItem icon={<DeleteIcon />} onClick={onOpen}>
             Delete
+          </MenuItem>
+          <MenuItem icon={<ArrowUpIcon />} onClick={onMoveToStart}>
+            Move to Start
+          </MenuItem>
+          <MenuItem icon={<ArrowDownIcon />} onClick={onMoveToEnd}>
+            Move to End
           </MenuItem>
         </MenuList>
       </Menu>
@@ -125,7 +147,10 @@ const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({ category }) => {
   );
 };
 
-const CategoryListItem: FC<{ category: Category }> = ({ category }) => {
+const CategoryListItem: FC<{ category: Category; onMove: MoveCategoryFn }> = ({
+  category,
+  onMove,
+}) => {
   const admin = useIsAdmin();
   return (
     <ListItem
@@ -188,7 +213,7 @@ const CategoryListItem: FC<{ category: Category }> = ({ category }) => {
 
             {admin && (
               <Flex alignItems="center">
-                <CategoryListItemMenu category={category} />
+                <CategoryListItemMenu category={category} onMove={onMove} />
                 <DragHandleIcon className="drag-handle" cursor="grab" />
               </Flex>
             )}
@@ -211,10 +236,6 @@ const CategoryListItem: FC<{ category: Category }> = ({ category }) => {
     </ListItem>
   );
 };
-
-const categoriesToList = map((c: Category) => (
-  <CategoryListItem key={c.id} category={c} />
-));
 
 // eslint-disable-next-line react/display-name
 const ListContainer = forwardRef<HTMLUListElement>((props, ref) => {
@@ -239,6 +260,27 @@ const CategoryList: FC<Props> = ({ categories }) => {
     const listWithSortField = list.map((c, i) => ({ ...c, sort: i }));
     updateCategories(listWithSortField);
   }, [updateCategories, list]);
+
+  const onMove = useCallback(
+    (idx: number, start: boolean) => {
+      const item = list[idx];
+      const without = list;
+      without.splice(idx, 1);
+      console.log(without);
+      if (start) {
+        setList([item, ...without]);
+        onSort();
+      } else {
+        setList([...without, item]);
+        onSort();
+      }
+    },
+    [list, onSort]
+  );
+
+  const categoriesToList = map((c: Category) => (
+    <CategoryListItem key={c.id} category={c} onMove={onMove} />
+  ));
 
   return (
     <ReactSortable
