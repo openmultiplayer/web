@@ -342,7 +342,8 @@ func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
 
 	result := []Category{}
 	for _, c := range categories {
-		result = append(result, *CategoryFromModel(&c))
+		category := CategoryFromModel(&c)
+		result = append(result, *category)
 	}
 
 	return result, nil
@@ -423,10 +424,7 @@ func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string) (*Ca
 	if err != nil {
 		return nil, err
 	}
-	return &Category{
-		ID:   c.ID,
-		Name: c.Name,
-	}, nil
+	return CategoryFromModel(c), nil
 }
 
 func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int) (*Category, error) {

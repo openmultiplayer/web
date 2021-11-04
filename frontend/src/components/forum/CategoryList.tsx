@@ -20,6 +20,7 @@ import React, { FC, forwardRef, useCallback, useState } from "react";
 import { ReactSortable } from "react-sortablejs";
 import { Category } from "src/types/_generated_Forum";
 import { PostLink } from "./common";
+import { useUpdateCategories } from "./hooks";
 
 type Props = {
   categories: Category[];
@@ -135,12 +136,11 @@ const ListContainer = forwardRef<HTMLUListElement>((props, ref) => {
 
 const CategoryList: FC<Props> = ({ categories }) => {
   const [list, setList] = useState(categories);
-  const onSort = useCallback(
-    (e) => {
-      console.log(list);
-    },
-    [list]
-  );
+  const updateCategories = useUpdateCategories();
+  const onSort = useCallback(() => {
+    const listWithSortField = list.map((c, i) => ({ ...c, sort: i }));
+    updateCategories(listWithSortField);
+  }, [updateCategories, list]);
 
   return (
     <ReactSortable
@@ -150,6 +150,7 @@ const CategoryList: FC<Props> = ({ categories }) => {
       animation={200}
       delayOnTouchOnly={true}
       handle=".drag-handle"
+      onSort={onSort}
     >
       {categoriesToList(list)}
     </ReactSortable>

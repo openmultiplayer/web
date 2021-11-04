@@ -45,6 +45,7 @@ type Category struct {
 	Name        string     `json:"name"`
 	Description string     `json:"description"`
 	Colour      string     `json:"colour"`
+	Sort        int        `json:"sort"`
 	Recent      []PostMeta `json:"recent,omitempty"`
 }
 
@@ -62,12 +63,7 @@ func FromModel(u *db.PostModel) (w *Post) {
 
 	category := Category{}
 	if u.RelationsPost.Category != nil {
-		category = Category{
-			ID:          u.RelationsPost.Category.ID,
-			Name:        u.RelationsPost.Category.Name,
-			Description: u.RelationsPost.Category.Description,
-			Colour:      u.RelationsPost.Category.Colour,
-		}
+		category = *CategoryFromModel(u.RelationsPost.Category)
 	}
 
 	var replyTo *PostMeta
@@ -114,7 +110,7 @@ func PostMetaFromModel(p *db.PostModel) *PostMeta {
 
 func CategoryFromModel(c *db.CategoryModel) *Category {
 	recent := []PostMeta{}
-	for _, p := range c.Posts() {
+	for _, p := range c.RelationsCategory.Posts {
 		recent = append(recent, *PostMetaFromModel(&p))
 	}
 
@@ -123,6 +119,7 @@ func CategoryFromModel(c *db.CategoryModel) *Category {
 		Name:        c.Name,
 		Description: c.Description,
 		Colour:      c.Colour,
+		Sort:        c.Sort,
 		Recent:      recent,
 	}
 }
