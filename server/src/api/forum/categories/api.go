@@ -29,11 +29,15 @@ func Build() fx.Option {
 
 			rtr.
 				With(authentication.MustBeAuthenticated, s.as.MustBeAdmin).
-				Patch("/", s.patch)
+				Patch("/", s.patchAll)
 
 			rtr.
 				With(authentication.MustBeAuthenticated, s.as.MustBeAdmin).
 				Delete("/{id}", s.delete)
+
+			rtr.
+				With(authentication.MustBeAuthenticated, s.as.MustBeAdmin).
+				Patch("/{id}", s.patch)
 		}),
 	)
 }

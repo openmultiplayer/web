@@ -1,11 +1,17 @@
 import { useToast } from "@chakra-ui/toast";
+import { omit } from "lodash/fp";
 import { useRouter } from "next/router";
 import nProgress from "nprogress";
 import { useCallback } from "react";
 import { apiSSP } from "src/fetcher/fetcher";
-import { Category, Post, PostSchema } from "src/types/_generated_Forum";
+import {
+  Category,
+  CategorySchema,
+  Post,
+  PostSchema,
+} from "src/types/_generated_Forum";
 import { useErrorHandler } from "src/utils/useErrorHandler";
-import { mutate } from "swr";
+import { useSWRConfig } from "swr";
 import { PostPayload } from "./PostEditor";
 
 type CreateThreadFn = (data: PostPayload) => void;
@@ -14,6 +20,7 @@ type DeleteFn = (id: string) => void;
 type EditFn = (data: PostPayload) => void;
 type UpdateCategoriesFn = (categories: Category[]) => void;
 type DeleteCategoryFn = (id: string, moveTo: string) => void;
+type UpdateCategoryFn = (category: Category) => void;
 
 const isPostEmpty = (data: PostPayload) => data?.body?.length === 0;
 
@@ -84,6 +91,7 @@ export const useCreatePost = (
 
 export const useDeletePost = (): DeleteFn => {
   const toast = useToast();
+  const { mutate } = useSWRConfig();
   const handler = useErrorHandler();
   const onDelete = useCallback(
     async (id: string) => {
@@ -100,7 +108,7 @@ export const useDeletePost = (): DeleteFn => {
       mutate("/forum");
       nProgress.done();
     },
-    [handler, toast]
+    [handler, toast, mutate]
   );
 
   return onDelete;
@@ -108,6 +116,7 @@ export const useDeletePost = (): DeleteFn => {
 
 export const useEditPost = (): EditFn => {
   const toast = useToast();
+  const { mutate } = useSWRConfig();
   const handler = useErrorHandler();
   const onEdit = useCallback(
     async (data: PostPayload) => {
@@ -127,7 +136,7 @@ export const useEditPost = (): EditFn => {
       mutate("/forum");
       nProgress.done();
     },
-    [handler, toast]
+    [handler, toast, mutate]
   );
 
   return onEdit;
@@ -135,6 +144,7 @@ export const useEditPost = (): EditFn => {
 
 export const useUpdateCategories = (): UpdateCategoriesFn => {
   const toast = useToast();
+  const { mutate } = useSWRConfig();
   const handler = useErrorHandler();
   const onEdit = useCallback(
     async (data: Category[]) => {
@@ -154,7 +164,7 @@ export const useUpdateCategories = (): UpdateCategoriesFn => {
       mutate("/forum/categories");
       nProgress.done();
     },
-    [handler, toast]
+    [handler, toast, mutate]
   );
 
   return onEdit;
@@ -162,6 +172,7 @@ export const useUpdateCategories = (): UpdateCategoriesFn => {
 
 export const useDeleteCategory = (): DeleteCategoryFn => {
   const toast = useToast();
+  const { mutate } = useSWRConfig();
   const handler = useErrorHandler();
   const onEdit = useCallback(
     async (id: string, moveTo: string) => {
@@ -181,7 +192,37 @@ export const useDeleteCategory = (): DeleteCategoryFn => {
       mutate("/forum/categories");
       nProgress.done();
     },
-    [handler, toast]
+    [handler, toast, mutate]
+  );
+
+  return onEdit;
+};
+
+const withoutRecent = omit("recent");
+
+export const useUpdateCategory = (): UpdateCategoryFn => {
+  const toast = useToast();
+  const { mutate } = useSWRConfig();
+  const handler = useErrorHandler();
+  const onEdit = useCallback(
+    async (category: Category) => {
+      nProgress.start();
+      try {
+        await apiSSP<Post>(`/forum/categories/${category.id}`, {
+          method: "PATCH",
+          body: JSON.stringify(CategorySchema.parse(withoutRecent(category))),
+        });
+        toast({
+          title: "Category updated!",
+          status: "success",
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate("/forum/categories");
+      nProgress.done();
+    },
+    [handler, toast, mutate]
   );
 
   return onEdit;
