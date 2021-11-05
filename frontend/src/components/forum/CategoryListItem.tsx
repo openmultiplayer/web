@@ -138,7 +138,7 @@ const RenameMenuItem: FC<{ category: Category }> = ({ category }) => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Confirm Delete Category</ModalHeader>
+          <ModalHeader>Rename Category</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text>Enter a new name for category {category.name}:</Text>
@@ -195,7 +195,7 @@ const ColourMenuItem: FC<{ category: Category }> = ({ category }) => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Confirm Delete Category</ModalHeader>
+          <ModalHeader>Set category colour</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text>Select a new colour for category {category.name}:</Text>
