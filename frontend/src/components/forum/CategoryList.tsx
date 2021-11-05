@@ -1,6 +1,6 @@
 import { UnorderedList } from "@chakra-ui/react";
 import { map } from "lodash/fp";
-import React, { FC, forwardRef, useCallback, useState } from "react";
+import { FC, forwardRef, useCallback, useEffect, useState } from "react";
 import { ReactSortable } from "react-sortablejs";
 import { Category } from "src/types/_generated_Forum";
 import { CategoryListItem } from "./CategoryListItem";
@@ -27,12 +27,14 @@ const ListContainer = forwardRef<HTMLUListElement>((props, ref) => {
 });
 
 const CategoryList: FC<Props> = ({ categories }) => {
-  const [list, setList] = useState(categories);
+  const [list, setList] = useState<Category[]>([]);
   const updateCategories = useUpdateCategories();
   const onSort = useCallback(() => {
     const listWithSortField = list.map((c, i) => ({ ...c, sort: i }));
     updateCategories(listWithSortField);
   }, [updateCategories, list]);
+
+  useEffect(() => setList(categories), [categories]);
 
   const onMove = useCallback(
     (idx: number, start: boolean) => {
