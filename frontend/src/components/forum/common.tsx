@@ -6,6 +6,7 @@ import {
   Grid,
   Link,
   ListItem,
+  Text,
   UnorderedList,
 } from "@chakra-ui/layout";
 import { FC, useCallback } from "react";
@@ -185,6 +186,14 @@ export const PostLink: FC<PostLinkProps> = ({ post }) => {
       >
         <LinkIcon p="0.1em" />
         <span>{post.title}</span>
+
+        <style jsx>{`
+          span {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        `}</style>
       </Link>
     </NextLink>
   );
