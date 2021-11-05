@@ -3,7 +3,9 @@ import {
   ArrowUpIcon,
   DeleteIcon,
   DragHandleIcon,
+  EditIcon,
   HamburgerIcon,
+  SunIcon,
 } from "@chakra-ui/icons";
 import {
   Box,
@@ -39,6 +41,7 @@ import CategorySelect from "./CategorySelect";
 import { PostLink } from "./common";
 import { useDeleteCategory, useUpdateCategory } from "./hooks";
 import NewThreadLink from "./NewThreadLink";
+import { SliderPicker, ColorResult } from "react-color";
 
 export type MoveCategoryFn = (idx: number, start: boolean) => void;
 
@@ -128,7 +131,7 @@ const RenameMenuItem: FC<{ category: Category }> = ({ category }) => {
 
   return (
     <>
-      <MenuItem icon={<DeleteIcon />} onClick={onOpen}>
+      <MenuItem icon={<EditIcon />} onClick={onOpen}>
         Rename
       </MenuItem>
 
@@ -148,6 +151,59 @@ const RenameMenuItem: FC<{ category: Category }> = ({ category }) => {
 
           <ModalFooter>
             <Button colorScheme="red" mr={3} onClick={onRename}>
+              Submit
+            </Button>
+            <Button variant="ghost" onClick={onClose}>
+              Cancel
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
+  );
+};
+
+const ColourMenuItem: FC<{ category: Category }> = ({ category }) => {
+  const toast = useToast();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [colour, setColour] = useState(category.colour);
+
+  const update = useUpdateCategory();
+
+  const onChange = useCallback(
+    (colour: ColorResult) => setColour(colour.hex),
+    [setColour]
+  );
+  const onColour = useCallback(() => {
+    if (colour.length === 0) {
+      toast({
+        status: "error",
+        title: `Please enter a new name for category ${category.name}`,
+      });
+    } else {
+      update({ ...category, colour });
+      onClose();
+    }
+  }, [toast, update, category, colour, onClose]);
+
+  return (
+    <>
+      <MenuItem icon={<SunIcon />} onClick={onOpen}>
+        Colour
+      </MenuItem>
+
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Confirm Delete Category</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text>Select a new colour for category {category.name}:</Text>
+            <SliderPicker color={colour} onChangeComplete={onChange} />
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme="red" mr={3} onClick={onColour}>
               Submit
             </Button>
             <Button variant="ghost" onClick={onClose}>
@@ -192,6 +248,7 @@ export const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({
         <MenuList>
           <DeleteMenuItem category={category} />
           <RenameMenuItem category={category} />
+          <ColourMenuItem category={category} />
 
           <MenuItem icon={<ArrowUpIcon />} onClick={onMoveToStart}>
             Move to Start
