@@ -8,7 +8,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-type patchBody []forum.Category
+type patchBody forum.Category
 
 func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 	var p patchBody
@@ -17,14 +17,10 @@ func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	result := []forum.Category{}
-	for _, c := range p {
-		newCategory, err := s.repo.UpdateCategory(r.Context(), c.ID, &c.Name, &c.Description, &c.Colour, &c.Sort)
-		if err != nil {
-			return
-		}
-		result = append(result, *newCategory)
+	updated, err := s.repo.UpdateCategory(r.Context(), p.ID, &p.Name, &p.Description, &p.Colour, &p.Sort)
+	if err != nil {
+		return
 	}
 
-	json.NewEncoder(w).Encode(result)
+	json.NewEncoder(w).Encode(updated)
 }

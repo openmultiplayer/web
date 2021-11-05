@@ -1,9 +1,15 @@
 import { useToast } from "@chakra-ui/toast";
+import { omit } from "lodash/fp";
 import { useRouter } from "next/router";
 import nProgress from "nprogress";
 import { useCallback } from "react";
 import { apiSSP } from "src/fetcher/fetcher";
-import { Category, Post, PostSchema } from "src/types/_generated_Forum";
+import {
+  Category,
+  CategorySchema,
+  Post,
+  PostSchema,
+} from "src/types/_generated_Forum";
 import { useErrorHandler } from "src/utils/useErrorHandler";
 import { mutate } from "swr";
 import { PostPayload } from "./PostEditor";
@@ -14,6 +20,7 @@ type DeleteFn = (id: string) => void;
 type EditFn = (data: PostPayload) => void;
 type UpdateCategoriesFn = (categories: Category[]) => void;
 type DeleteCategoryFn = (id: string, moveTo: string) => void;
+type UpdateCategoryFn = (category: Category) => void;
 
 const isPostEmpty = (data: PostPayload) => data?.body?.length === 0;
 
@@ -173,6 +180,35 @@ export const useDeleteCategory = (): DeleteCategoryFn => {
         });
         toast({
           title: "Category deleted!",
+          status: "success",
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate("/forum/categories");
+      nProgress.done();
+    },
+    [handler, toast]
+  );
+
+  return onEdit;
+};
+
+const withoutRecent = omit("recent");
+
+export const useUpdateCategory = (): UpdateCategoryFn => {
+  const toast = useToast();
+  const handler = useErrorHandler();
+  const onEdit = useCallback(
+    async (category: Category) => {
+      nProgress.start();
+      try {
+        await apiSSP<Post>(`/forum/categories/${category.id}`, {
+          method: "PATCH",
+          body: JSON.stringify(CategorySchema.parse(withoutRecent(category))),
+        });
+        toast({
+          title: "Category updated!",
           status: "success",
         });
       } catch (e) {
