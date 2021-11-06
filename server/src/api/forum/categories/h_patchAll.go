@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/forum/category"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-type patchAllBody []forum.Category
+type patchAllBody []category.Category
 
 func (s *service) patchAll(w http.ResponseWriter, r *http.Request) {
 	var p patchAllBody
@@ -17,7 +17,7 @@ func (s *service) patchAll(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	result := []forum.Category{}
+	result := []category.Category{}
 	for _, c := range p {
 		newCategory, err := s.repo.UpdateCategory(r.Context(), c.ID, &c.Name, &c.Description, &c.Colour, &c.Sort, &c.Admin)
 		if err != nil {

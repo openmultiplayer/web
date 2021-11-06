@@ -8,7 +8,7 @@ import (
 	"github.com/frustra/bbcode"
 	"go.uber.org/zap"
 
-	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/forum/post"
 )
 
 type TargetProperties struct {
@@ -110,7 +110,7 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 		zap.L().Info("creating category", zap.String("name", target.Category), zap.Bool("hidden", target.Hidden))
 
 		forummap[f.Fid] = f.Name
-		w.forum.CreateCategory(ctx, target.Category, f.Description, "#8577ce", target.Order, target.Hidden)
+		w.category.CreateCategory(ctx, target.Category, f.Description, "#8577ce", target.Order, target.Hidden)
 	}
 
 	for _, t := range threads {
@@ -154,7 +154,7 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 		}
 
 		replies := posts[1:]
-		replyPosts := []forum.Post{}
+		replyPosts := []post.Post{}
 
 		for _, r := range replies {
 			bsuser = usermap[r.UId]
@@ -174,9 +174,9 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 				replyMd = r.Message
 			}
 
-			replyPosts = append(replyPosts, forum.Post{
+			replyPosts = append(replyPosts, post.Post{
 				Body:      replyMd,
-				Author:    forum.Author{ID: replyUser.ID},
+				Author:    post.Author{ID: replyUser.ID},
 				CreatedAt: time.Unix(int64(r.Dateline), 0).UTC(),
 				UpdatedAt: time.Unix(int64(r.Edittime), 0).UTC(),
 			})
@@ -184,14 +184,14 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 			zap.L().Info("prepared post", zap.Time("date", time.Unix(int64(r.Dateline), 0).UTC()), zap.String("thread", first.Subject))
 		}
 
-		newthread, err := w.forum.CreateLegacyThread(
+		newthread, err := w.thread.CreateLegacyThread(
 			ctx,
 			first.Subject,
 			target.Category,
 			target.Tags,
-			forum.Post{
+			post.Post{
 				Body:      firstMd,
-				Author:    forum.Author{ID: firstPostUser.ID},
+				Author:    post.Author{ID: firstPostUser.ID},
 				CreatedAt: time.Unix(int64(first.Dateline), 0).UTC(),
 				UpdatedAt: time.Unix(int64(first.Edittime), 0).UTC(),
 			},

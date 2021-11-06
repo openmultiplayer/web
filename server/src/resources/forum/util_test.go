@@ -29,7 +29,7 @@ func Test_makeShortBody(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := makeShortBody(tt.args.long); got != tt.want {
+			if got := MakeShortBody(tt.args.long); got != tt.want {
 				t.Errorf("makeShortBody() = %v, want %v", got, tt.want)
 			}
 		})

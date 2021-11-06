@@ -16,7 +16,7 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	post, err := s.repo.DeletePost(r.Context(), info.Cookie.UserID, id, info.Cookie.Admin)
+	post, err := s.posts.DeletePost(r.Context(), info.Cookie.UserID, id, info.Cookie.Admin)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 	}

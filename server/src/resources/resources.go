@@ -4,7 +4,10 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/resources/burgershot"
-	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/forum/category"
+	"github.com/openmultiplayer/web/server/src/resources/forum/post"
+	"github.com/openmultiplayer/web/server/src/resources/forum/tag"
+	"github.com/openmultiplayer/web/server/src/resources/forum/thread"
 	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/resources/user"
@@ -13,7 +16,10 @@ import (
 func Build() fx.Option {
 	return fx.Provide(
 		server.New,
-		forum.New,
+		category.New,
+		post.New,
+		tag.New,
+		thread.New,
 		user.New,
 		pawndex.New,
 		burgershot.New,

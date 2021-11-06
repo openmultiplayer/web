@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/forum/category"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-type patchBody forum.Category
+type patchBody category.Category
 
 func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 	var p patchBody

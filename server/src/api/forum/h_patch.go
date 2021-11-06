@@ -26,7 +26,7 @@ func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	post, err := s.repo.EditPost(r.Context(), info.Cookie.UserID, id, &b.Title, &b.Body)
+	post, err := s.posts.EditPost(r.Context(), info.Cookie.UserID, id, &b.Title, &b.Body)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
