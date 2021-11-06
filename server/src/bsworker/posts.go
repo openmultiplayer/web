@@ -8,7 +8,7 @@ import (
 	"github.com/frustra/bbcode"
 	"go.uber.org/zap"
 
-	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/forum/post"
 )
 
 type TargetProperties struct {
@@ -154,7 +154,7 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 		}
 
 		replies := posts[1:]
-		replyPosts := []forum.Post{}
+		replyPosts := []post.Post{}
 
 		for _, r := range replies {
 			bsuser = usermap[r.UId]
@@ -174,9 +174,9 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 				replyMd = r.Message
 			}
 
-			replyPosts = append(replyPosts, forum.Post{
+			replyPosts = append(replyPosts, post.Post{
 				Body:      replyMd,
-				Author:    forum.Author{ID: replyUser.ID},
+				Author:    post.Author{ID: replyUser.ID},
 				CreatedAt: time.Unix(int64(r.Dateline), 0).UTC(),
 				UpdatedAt: time.Unix(int64(r.Edittime), 0).UTC(),
 			})
@@ -189,9 +189,9 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 			first.Subject,
 			target.Category,
 			target.Tags,
-			forum.Post{
+			post.Post{
 				Body:      firstMd,
-				Author:    forum.Author{ID: firstPostUser.ID},
+				Author:    post.Author{ID: firstPostUser.ID},
 				CreatedAt: time.Unix(int64(first.Dateline), 0).UTC(),
 				UpdatedAt: time.Unix(int64(first.Edittime), 0).UTC(),
 			},

@@ -3,6 +3,8 @@ package forum
 import (
 	"context"
 	"time"
+
+	"github.com/openmultiplayer/web/server/src/resources/forum/post"
 )
 
 type Repository interface {
@@ -10,17 +12,7 @@ type Repository interface {
 		ctx context.Context,
 		title, body, authorID, categoryName string,
 		tags []string,
-	) (*Post, error)
-
-	CreatePost(
-		ctx context.Context,
-		body, authorID,
-		parentID, replyToID string,
-	) (*Post, error)
-
-	EditPost(ctx context.Context, authorID, postID string, title *string, body *string) (*Post, error)
-
-	DeletePost(ctx context.Context, authorID, postID string, force bool) (*Post, error)
+	) (*post.Post, error)
 
 	GetThreads(
 		ctx context.Context,
@@ -29,17 +21,16 @@ type Repository interface {
 		includePosts bool,
 		includeDeleted bool,
 		includeAdmin bool,
-	) ([]Post, error)
+	) ([]post.Post, error)
 
-	GetPosts(ctx context.Context, slug string, max, skip int, deleted bool, admin bool) ([]Post, error)
-	GetTags(ctx context.Context, query string) ([]Tag, error)
+	GetTags(ctx context.Context, query string) ([]post.Tag, error)
 
 	CreateLegacyThread(
 		ctx context.Context,
 		title string,
 		category string,
 		tags []string,
-		first Post,
-		replies []Post,
-	) (*Post, error)
+		first post.Post,
+		replies []post.Post,
+	) (*post.Post, error)
 }

@@ -9,6 +9,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/resources/forum/post"
 )
 
 var (
@@ -29,7 +30,7 @@ func (d *DB) CreateThread(
 	ctx context.Context,
 	title, body, authorID, categoryName string,
 	tags []string,
-) (*Post, error) {
+) (*post.Post, error) {
 	slug := slug.Make(title)
 	short := makeShortBody(body)
 
@@ -44,7 +45,7 @@ func (d *DB) CreateThread(
 		db.Post.Tags.Link(tagset...),
 	}
 
-	post, err := d.db.Post.
+	p, err := d.db.Post.
 		CreateOne(
 			db.Post.Body.Set(body),
 			db.Post.Short.Set(short),
@@ -59,9 +60,9 @@ func (d *DB) CreateThread(
 		return nil, err
 	}
 
-	post, err = d.db.Post.
+	p, err = d.db.Post.
 		FindUnique(
-			db.Post.ID.Equals(post.ID),
+			db.Post.ID.Equals(p.ID),
 		).
 		With(
 			db.Post.Author.Fetch(),
@@ -69,14 +70,14 @@ func (d *DB) CreateThread(
 			db.Post.Tags.Fetch(),
 		).
 		Update(
-			db.Post.Slug.Set(fmt.Sprintf("%s-%s", post.ID, slug)),
+			db.Post.Slug.Set(fmt.Sprintf("%s-%s", p.ID, slug)),
 		).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
 
-	return FromModel(post), nil
+	return post.FromModel(p), nil
 }
 
 func (d *DB) createTags(ctx context.Context, tags []string) ([]db.TagWhereParam, error) {
@@ -95,102 +96,6 @@ func (d *DB) createTags(ctx context.Context, tags []string) ([]db.TagWhereParam,
 	return setters, nil
 }
 
-func (d *DB) CreatePost(
-	ctx context.Context,
-	body, authorID string,
-	parentID, replyToID string,
-) (*Post, error) {
-	short := makeShortBody(body)
-
-	optional := []db.PostSetParam{
-		db.Post.Root.Link(db.Post.ID.Equals(parentID)),
-	}
-
-	if replyToID != "" {
-		optional = append(optional, db.Post.ReplyTo.Link(db.Post.ID.Equals(replyToID)))
-	}
-
-	post, err := d.db.Post.
-		CreateOne(
-			db.Post.Body.Set(body),
-			db.Post.Short.Set(short),
-			db.Post.First.Set(false),
-			db.Post.Author.Link(db.User.ID.Equals(authorID)),
-
-			optional...,
-		).
-		With(db.Post.Author.Fetch()).
-		Exec(ctx)
-	if err != nil {
-		return nil, err
-	}
-
-	return FromModel(post), nil
-}
-
-func (d *DB) EditPost(ctx context.Context, authorID, id string, title *string, body *string) (*Post, error) {
-	// This could probably be optimised. I am too lazy to do it rn.
-	post, err := d.db.Post.
-		FindUnique(
-			db.Post.ID.Equals(id),
-		).
-		With(db.Post.Author.Fetch()).
-		Exec(ctx)
-	if err != nil {
-		return nil, err
-	}
-	if post.Author().ID != authorID {
-		return nil, ErrUnauthorised
-	}
-
-	post, err = d.db.Post.
-		FindUnique(
-			db.Post.ID.Equals(id),
-		).
-		With(db.Post.Author.Fetch()).
-		Update(
-			db.Post.Title.SetIfPresent(title),
-			db.Post.Body.SetIfPresent(body),
-		).
-		Exec(ctx)
-	if err != nil {
-		return nil, err
-	}
-
-	return FromModel(post), err
-}
-
-func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool) (*Post, error) {
-	// This could probably be optimised. I am too lazy to do it rn.
-	post, err := d.db.Post.
-		FindUnique(
-			db.Post.ID.Equals(postID),
-		).
-		With(
-			db.Post.Author.Fetch(),
-			db.Post.Tags.Fetch(),
-			db.Post.Category.Fetch(),
-		).
-		Exec(ctx)
-	if err != nil {
-		return nil, err
-	}
-	if force == false {
-		if post.Author().ID != authorID {
-			return nil, ErrUnauthorised
-		}
-	}
-
-	_, err = d.db.Post.
-		FindUnique(db.Post.ID.Equals(postID)).
-		Update(
-			db.Post.DeletedAt.Set(time.Now()),
-		).
-		Exec(ctx)
-
-	return FromModel(post), err
-}
-
 func (d *DB) GetThreads(
 	ctx context.Context,
 	tags []string,
@@ -202,7 +107,7 @@ func (d *DB) GetThreads(
 	includePosts bool,
 	includeDeleted bool,
 	includeAdmin bool,
-) ([]Post, error) {
+) ([]post.Post, error) {
 	filters := []db.PostWhereParam{}
 
 	if !before.IsZero() {
@@ -261,74 +166,19 @@ func (d *DB) GetThreads(
 		return nil, err
 	}
 
-	result := []Post{}
+	result := []post.Post{}
 	for _, p := range posts {
 		p.Body = ""
-		post := *FromModel(&p)
-		post.Posts = counts[post.ID]
-		result = append(result, post)
+		newpost := *post.FromModel(&p)
+		newpost.Posts = counts[p.ID]
+		result = append(result, newpost)
 	}
 
 	return result, nil
 }
 
-func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted, admin bool) ([]Post, error) {
-	filters := []db.PostWhereParam{
-		db.Post.Or(
-			db.Post.And(
-				db.Post.First.Equals(true),
-				db.Post.Slug.Equals(slug),
-			),
-			db.Post.And(
-				db.Post.First.Equals(false),
-				db.Post.Root.Where(db.Post.Slug.Equals(slug)),
-			),
-		),
-	}
-
-	if !admin {
-		filters = append(filters, db.Post.Category.Where(
-			db.Category.Admin.Equals(false),
-		))
-	}
-
-	posts, err := d.db.Post.
-		FindMany(filters...).
-		With(
-			db.Post.Author.Fetch(),
-			db.Post.Category.Fetch(),
-			db.Post.Tags.Fetch(),
-			db.Post.ReplyTo.Fetch().With(
-				db.Post.Author.Fetch(),
-			),
-		).
-		Take(max).
-		Skip(skip).
-		OrderBy(db.Post.CreatedAt.Order(db.ASC)).
-		Exec(ctx)
-	if err != nil {
-		return nil, err
-	}
-
-	if len(posts) == 0 {
-		return nil, nil
-	}
-
-	result := []Post{}
-	for _, p := range posts {
-		// if "show deleted" is false, then filter out posts with a deleted date
-		if deleted == false && p.InnerPost.DeletedAt != nil {
-			continue
-		}
-
-		result = append(result, *FromModel(&p))
-	}
-
-	return result, nil
-}
-
-func (d *DB) GetTags(ctx context.Context, query string) ([]Tag, error) {
-	var tags []Tag
+func (d *DB) GetTags(ctx context.Context, query string) ([]post.Tag, error) {
+	var tags []post.Tag
 	err := d.db.Prisma.Raw.QueryRaw(`
 		select
 			t.id, t.name, count(*) as posts
@@ -390,9 +240,9 @@ func (d *DB) CreateLegacyThread(
 	title string,
 	categoryName string,
 	tags []string,
-	first Post,
-	replies []Post,
-) (*Post, error) {
+	first post.Post,
+	replies []post.Post,
+) (*post.Post, error) {
 	slug := slug.Make(title)
 	short := makeShortBody(first.Body)
 
@@ -417,7 +267,7 @@ func (d *DB) CreateLegacyThread(
 		db.Post.UpdatedAt.SetIfPresent(firstUpdatedAt),
 	}
 
-	post, err := d.db.Post.
+	p, err := d.db.Post.
 		CreateOne(
 			db.Post.Body.Set(first.Body),
 			db.Post.Short.Set(short),
@@ -433,9 +283,9 @@ func (d *DB) CreateLegacyThread(
 	}
 
 	_, err = d.db.Post.
-		FindUnique(db.Post.ID.Equals(post.ID)).
+		FindUnique(db.Post.ID.Equals(p.ID)).
 		Update(
-			db.Post.Slug.Set(fmt.Sprintf("%s-%s", post.ID, slug)),
+			db.Post.Slug.Set(fmt.Sprintf("%s-%s", p.ID, slug)),
 			db.Post.UpdatedAt.SetIfPresent(&first.CreatedAt), // keep the updated date old
 		).
 		Exec(ctx)
@@ -443,7 +293,7 @@ func (d *DB) CreateLegacyThread(
 		return nil, err
 	}
 
-	parentID := post.ID
+	parentID := p.ID
 
 	for _, r := range replies {
 		short := makeShortBody(r.Body)
@@ -479,5 +329,5 @@ func (d *DB) CreateLegacyThread(
 
 	}
 
-	return FromModel(post), nil
+	return post.FromModel(p), nil
 }

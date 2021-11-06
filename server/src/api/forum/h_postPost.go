@@ -27,7 +27,7 @@ func (s *service) postPost(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	post, err := s.repo.CreatePost(r.Context(), b.Body, info.Cookie.UserID, id, b.ReplyTo)
+	post, err := s.posts.CreatePost(r.Context(), b.Body, info.Cookie.UserID, id, b.ReplyTo)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
