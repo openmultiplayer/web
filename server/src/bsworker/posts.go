@@ -110,7 +110,7 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 		zap.L().Info("creating category", zap.String("name", target.Category), zap.Bool("hidden", target.Hidden))
 
 		forummap[f.Fid] = f.Name
-		w.forum.CreateCategory(ctx, target.Category, f.Description, "#8577ce", target.Order, target.Hidden)
+		w.category.CreateCategory(ctx, target.Category, f.Description, "#8577ce", target.Order, target.Hidden)
 	}
 
 	for _, t := range threads {

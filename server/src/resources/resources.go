@@ -5,6 +5,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/resources/burgershot"
 	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/forum/category"
 	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/resources/user"
@@ -13,6 +14,7 @@ import (
 func Build() fx.Option {
 	return fx.Provide(
 		server.New,
+		category.New,
 		forum.New,
 		user.New,
 		pawndex.New,

@@ -32,12 +32,7 @@ type Repository interface {
 	) ([]Post, error)
 
 	GetPosts(ctx context.Context, slug string, max, skip int, deleted bool, admin bool) ([]Post, error)
-	GetCategories(ctx context.Context, admin bool) ([]Category, error)
 	GetTags(ctx context.Context, query string) ([]Tag, error)
-
-	CreateCategory(ctx context.Context, name, desc, colour string, sort int, admin bool) (*Category, error)
-	UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int, admin *bool) (*Category, error)
-	DeleteCategory(ctx context.Context, id string, moveto string) (*Category, error)
 
 	CreateLegacyThread(
 		ctx context.Context,

@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/resources/forum/category"
 )
 
 type Author struct {
@@ -13,42 +14,23 @@ type Author struct {
 	CreatedAt time.Time `json:"createdAt"`
 }
 
-type PostMeta struct {
-	Author string `json:"author"`
-	PostID string `json:"postId"`
-	Slug   string `json:"slug"`
-	Title  string `json:"title"`
-	Short  string `json:"short"`
-}
-
 type Post struct {
-	ID         string     `json:"id"`
-	Title      *string    `json:"title"`
-	Slug       *string    `json:"slug"`
-	Body       string     `json:"body"`
-	Short      string     `json:"short"`
-	First      bool       `json:"first"`
-	CreatedAt  time.Time  `json:"createdAt"`
-	UpdatedAt  time.Time  `json:"updatedAt"`
-	DeletedAt  *time.Time `json:"deletedAt"`
-	UserID     string     `json:"userId"`
-	RootPostID *string    `json:"rootPostId"`
-	Author     Author     `json:"author"`
-	Tags       []string   `json:"tags"`
-	Posts      int        `json:"posts"`
-	ReplyTo    *PostMeta  `json:"replyTo"`
-	Category   Category   `json:"category"`
-}
-
-type Category struct {
-	ID          string     `json:"id"`
-	Name        string     `json:"name"`
-	Description string     `json:"description"`
-	Colour      string     `json:"colour"`
-	Sort        int        `json:"sort"`
-	Admin       bool       `json:"admin"`
-	Recent      []PostMeta `json:"recent,omitempty"`
-	PostCount   int        `json:"postCount"`
+	ID         string             `json:"id"`
+	Title      *string            `json:"title"`
+	Slug       *string            `json:"slug"`
+	Body       string             `json:"body"`
+	Short      string             `json:"short"`
+	First      bool               `json:"first"`
+	CreatedAt  time.Time          `json:"createdAt"`
+	UpdatedAt  time.Time          `json:"updatedAt"`
+	DeletedAt  *time.Time         `json:"deletedAt"`
+	UserID     string             `json:"userId"`
+	RootPostID *string            `json:"rootPostId"`
+	Author     Author             `json:"author"`
+	Tags       []string           `json:"tags"`
+	Posts      int                `json:"posts"`
+	ReplyTo    *category.PostMeta `json:"replyTo"`
+	Category   category.Category  `json:"category"`
 }
 
 type Tag struct {
@@ -63,14 +45,14 @@ func FromModel(u *db.PostModel) (w *Post) {
 		tags = append(tags, t.Name)
 	}
 
-	category := Category{}
+	cat := category.Category{}
 	if u.RelationsPost.Category != nil {
-		category = *CategoryFromModel(u.RelationsPost.Category)
+		cat = *category.FromModel(u.RelationsPost.Category)
 	}
 
-	var replyTo *PostMeta
+	var replyTo *category.PostMeta
 	if u.RelationsPost.ReplyTo != nil {
-		replyTo = &PostMeta{
+		replyTo = &category.PostMeta{
 			Author: u.RelationsPost.Author.Name,
 			PostID: u.RelationsPost.ReplyTo.ID,
 		}
@@ -95,42 +77,7 @@ func FromModel(u *db.PostModel) (w *Post) {
 			CreatedAt: u.RelationsPost.Author.InnerUser.CreatedAt,
 		},
 		Tags:     tags,
-		Category: category,
+		Category: cat,
 		ReplyTo:  replyTo,
-	}
-}
-
-func PostMetaFromModel(p *db.PostModel) *PostMeta {
-	slug, ok := p.Slug()
-	if !ok {
-		slug = ""
-	}
-	title, ok := p.Title()
-	if !ok {
-		title = ""
-	}
-	return &PostMeta{
-		Author: p.RelationsPost.Author.Name,
-		PostID: p.ID,
-		Slug:   slug,
-		Title:  title,
-		Short:  p.Short,
-	}
-}
-
-func CategoryFromModel(c *db.CategoryModel) *Category {
-	recent := []PostMeta{}
-	for _, p := range c.RelationsCategory.Posts {
-		recent = append(recent, *PostMetaFromModel(&p))
-	}
-
-	return &Category{
-		ID:          c.ID,
-		Name:        c.Name,
-		Description: c.Description,
-		Colour:      c.Colour,
-		Sort:        c.Sort,
-		Admin:       c.Admin,
-		Recent:      recent,
 	}
 }
