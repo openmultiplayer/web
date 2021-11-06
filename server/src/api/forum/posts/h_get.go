@@ -1,4 +1,4 @@
-package forum
+package posts
 
 import (
 	"encoding/json"
@@ -30,7 +30,7 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 
 	isAdmin := authentication.IsRequestAdmin(r)
 
-	posts, err := s.posts.GetPosts(r.Context(), slug, p.Max, p.Skip, isAdmin, isAdmin)
+	posts, err := s.repo.GetPosts(r.Context(), slug, p.Max, p.Skip, isAdmin, isAdmin)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
