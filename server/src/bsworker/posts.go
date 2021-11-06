@@ -11,6 +11,74 @@ import (
 	"github.com/openmultiplayer/web/server/src/resources/forum"
 )
 
+type TargetProperties struct {
+	Hidden   bool
+	Category string
+	Tags     []string
+	Order    int
+}
+
+var targetMapping = map[string]TargetProperties{
+	"General Discussions":/*          */ {false, "Chat" /*                     */, []string{} /*                                */, 0},
+	"General":/*                      */ {false, "Chat" /*                     */, []string{} /*                                */, 0},
+	"Chat":/*                         */ {false, "Chat" /*                     */, []string{} /*                                */, 0},
+	"Life":/*                         */ {false, "Chat" /*                     */, []string{} /*                                */, 0},
+	"Questions and Suggestions":/*    */ {false, "Chat" /*                     */, []string{"question"} /*                      */, 0},
+	"Tech":/*                         */ {false, "Chat" /*                     */, []string{"tech"} /*                          */, 0},
+	"open.mp":/*                      */ {false, "Chat" /*                     */, []string{"open.mp"} /*                       */, 0},
+	"SA-MP":/*                        */ {false, "Chat" /*                     */, []string{"sa-mp"} /*                         */, 0},
+	"Other":/*                        */ {false, "Chat" /*                     */, []string{} /*                                */, 0},
+	"Offtopic":/*                     */ {false, "Chat" /*                     */, []string{} /*                                */, 0},
+	"Development Updates":/*          */ {false, "Chat" /*                     */, []string{"update"} /*                        */, 0},
+
+	"Releases":/*                     */ {false, "Show" /*                     */, []string{"release"} /*                       */, 1},
+	"Gamemodes":/*                    */ {false, "Show" /*                     */, []string{"release", "gamemode"} /*           */, 1},
+	"Filterscripts":/*                */ {false, "Show" /*                     */, []string{"release", "filterscript"} /*       */, 1},
+	"Libraries":/*                    */ {false, "Show" /*                     */, []string{"release", "include", "library"} /* */, 1},
+	"Plugins":/*                      */ {false, "Show" /*                     */, []string{"release", "plugin"} /*             */, 1},
+	"Maps":/*                         */ {false, "Show" /*                     */, []string{"map"} /*                           */, 1},
+	"Tutorials":/*                    */ {false, "Show" /*                     */, []string{"tutorial"} /*                      */, 1},
+	"Videos and Screenshots":/*       */ {false, "Show" /*                     */, []string{"media"} /*                         */, 1},
+	"Art":/*                          */ {false, "Show" /*                     */, []string{"art"} /*                           */, 1},
+
+	"Support":/*                      */ {false, "Support" /*                  */, []string{} /*                                */, 2},
+	"Pawn Scripting":/*               */ {false, "Support" /*                  */, []string{"pawn", "scripting", "help"} /*     */, 2},
+	"Programming":/*                  */ {false, "Support" /*                  */, []string{"programming", "help"} /*           */, 2},
+
+	"Internal":/*                     */ {true, "Admin" /*                     */, []string{} /*                                */, 3},
+	"Team":/*                         */ {true, "Admin" /*                     */, []string{} /*                                */, 3},
+
+	"Hidden":/*                       */ {true, "Archived" /*                  */, []string{} /**/, 4},
+	"Archived":/*                     */ {true, "Archived" /*                  */, []string{} /**/, 4},
+
+	"Other languages":/*              */ {true, "Other languages" /*           */, []string{} /**/, 99},
+
+	"Polish/Polski":/*                */ {true, "Polski" /*                    */, []string{} /*                          */, 99},
+	"Filmiki i zdjęcia":/*            */ {true, "Polski" /*                    */, []string{"filmiki", "zdjęcia"} /*      */, 99},
+	"Skryptowanie":/*                 */ {true, "Polski" /*                    */, []string{"skryptowanie"} /*            */, 99},
+	"Ogólne":/*                       */ {true, "Polski" /*                    */, []string{"ogólne"} /*                  */, 99},
+	"Serwery":/*                      */ {true, "Polski" /*                    */, []string{"serwery"} /*                 */, 99},
+
+	"Spanish/Español":/*              */ {true, "Español" /*                   */, []string{} /**/, 99},
+	"Mods":/*                         */ {true, "Español" /*                   */, []string{"mod"} /**/, 99},
+	"Programación":/*                 */ {true, "Español" /*                   */, []string{"programación"} /**/, 99},
+	"Discusión GTA SA Multijugador":/**/ {true, "Español" /*                   */, []string{} /**/, 99},
+
+	"Russian/Русский":/*              */ {true, "Русский" /*                   */, []string{} /**/, 99},
+	"Portuguese/Português":/*         */ {true, "Português" /*                 */, []string{} /**/, 99},
+	"Italian/Italiano":/*             */ {true, "Italiano" /*                  */, []string{} /**/, 99},
+	"Dutch/Nederlands":/*             */ {true, "Nederlands" /*                */, []string{} /**/, 99},
+	"German/Deutsch":/*               */ {true, "Deutsch" /*                   */, []string{} /**/, 99},
+	"Romanian/Română":/*              */ {true, "Română" /*                    */, []string{} /**/, 99},
+	"Ex-Yu":/*                        */ {true, "Ex-Yu" /*                     */, []string{} /**/, 99},
+	"Lithuanian/Lietuviškas":/*       */ {true, "Lietuviškas" /*               */, []string{} /**/, 99},
+	"Hungarian/Magyar":/*             */ {true, "Magyar" /*                    */, []string{} /**/, 99},
+	"Juegos":/*                       */ {true, "Juegos" /*                    */, []string{} /**/, 99},
+	"French/Français":/*              */ {true, "Français" /*                  */, []string{} /**/, 99},
+	"Hindi/Urdu":/*                   */ {true, "Urdu" /*                      */, []string{} /**/, 99},
+	"Turkish":/*                      */ {true, "Turkish" /*                   */, []string{} /**/, 99},
+}
+
 func (w *Worker) MigratePosts(ctx context.Context) error {
 	threads, err := w.bs.GetThreads(ctx)
 	if err != nil {
@@ -33,8 +101,16 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 	}
 	forummap := make(map[int]string)
 	for _, f := range forums {
+		target, ok := targetMapping[f.Name]
+		if !ok {
+			zap.L().Info("dropping forum", zap.String("forum", f.Name))
+			continue
+		}
+
+		zap.L().Info("creating category", zap.String("name", target.Category), zap.Bool("hidden", target.Hidden))
+
 		forummap[f.Fid] = f.Name
-		w.forum.CreateCategory(ctx, f.Name, f.Description, "#8577ce", true)
+		w.forum.CreateCategory(ctx, target.Category, f.Description, "#8577ce", target.Order, target.Hidden)
 	}
 
 	for _, t := range threads {
@@ -64,7 +140,12 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 			continue
 		}
 
-		categoryName := forummap[t.Fid]
+		forumName := forummap[t.Fid]
+		target, ok := targetMapping[forumName]
+		if !ok {
+			zap.L().Info("dropping post", zap.String("forum", forumName))
+			continue
+		}
 
 		firstMd, err := bbcodeToMarkdown(first.Message)
 		if err != nil {
@@ -106,7 +187,8 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 		newthread, err := w.forum.CreateLegacyThread(
 			ctx,
 			first.Subject,
-			categoryName,
+			target.Category,
+			target.Tags,
 			forum.Post{
 				Body:      firstMd,
 				Author:    forum.Author{ID: firstPostUser.ID},

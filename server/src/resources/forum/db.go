@@ -484,19 +484,21 @@ func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
 	return result, nil
 }
 
-func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string, admin bool) (*Category, error) {
+func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string, sort int, admin bool) (*Category, error) {
 	c, err := d.db.Category.
 		UpsertOne(db.Category.Name.Equals(name)).
 		Create(
 			db.Category.Name.Set(name),
 			db.Category.Description.Set(desc),
 			db.Category.Colour.Set(colour),
+			db.Category.Sort.Set(sort),
 			db.Category.Admin.Set(admin),
 		).
 		Update(
 			db.Category.Name.Set(name),
 			db.Category.Description.Set(desc),
 			db.Category.Colour.Set(colour),
+			db.Category.Sort.Set(sort),
 			db.Category.Admin.Set(admin),
 		).
 		Exec(ctx)
@@ -525,6 +527,7 @@ func (d *DB) CreateLegacyThread(
 	ctx context.Context,
 	title string,
 	categoryName string,
+	tags []string,
 	first Post,
 	replies []Post,
 ) (*Post, error) {
@@ -538,9 +541,15 @@ func (d *DB) CreateLegacyThread(
 		firstUpdatedAt = &first.CreatedAt
 	}
 
+	tagset, err := d.createTags(ctx, tags)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to upsert tags for linking to post")
+	}
+
 	additional := []db.PostSetParam{
 		db.Post.Title.Set(title),
 		db.Post.Category.Link(db.Category.Name.Equals(categoryName)),
+		db.Post.Tags.Link(tagset...),
 
 		db.Post.CreatedAt.Set(first.CreatedAt),
 		db.Post.UpdatedAt.SetIfPresent(firstUpdatedAt),

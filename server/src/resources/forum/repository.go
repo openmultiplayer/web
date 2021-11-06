@@ -35,7 +35,7 @@ type Repository interface {
 	GetCategories(ctx context.Context, admin bool) ([]Category, error)
 	GetTags(ctx context.Context, query string) ([]Tag, error)
 
-	CreateCategory(ctx context.Context, name, desc, colour string, admin bool) (*Category, error)
+	CreateCategory(ctx context.Context, name, desc, colour string, sort int, admin bool) (*Category, error)
 	UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int, admin *bool) (*Category, error)
 	DeleteCategory(ctx context.Context, id string, moveto string) (*Category, error)
 
@@ -43,6 +43,7 @@ type Repository interface {
 		ctx context.Context,
 		title string,
 		category string,
+		tags []string,
 		first Post,
 		replies []Post,
 	) (*Post, error)

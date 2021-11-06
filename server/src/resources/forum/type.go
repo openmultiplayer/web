@@ -101,11 +101,19 @@ func FromModel(u *db.PostModel) (w *Post) {
 }
 
 func PostMetaFromModel(p *db.PostModel) *PostMeta {
+	slug, ok := p.Slug()
+	if !ok {
+		slug = ""
+	}
+	title, ok := p.Title()
+	if !ok {
+		title = ""
+	}
 	return &PostMeta{
 		Author: p.RelationsPost.Author.Name,
 		PostID: p.ID,
-		Slug:   *p.InnerPost.Slug,
-		Title:  *p.InnerPost.Title,
+		Slug:   slug,
+		Title:  title,
 		Short:  p.Short,
 	}
 }
