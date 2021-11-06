@@ -35,7 +35,7 @@ export const useCreateThread = (): CreateThreadFn => {
       }
 
       try {
-        const post = await apiSSP<Post>("/forum", {
+        const post = await apiSSP<Post>("/forum/threads", {
           method: "POST",
           body: JSON.stringify(data),
         });
@@ -69,7 +69,7 @@ export const useCreatePost = (
       }
 
       try {
-        await apiSSP<Post>(`/forum/${id}`, {
+        await apiSSP<Post>(`/forum/posts/${id}`, {
           method: "POST",
           body: JSON.stringify({ ...data, replyTo: replyTo?.id ?? null }),
           schema: PostSchema,
@@ -97,7 +97,7 @@ export const useDeletePost = (): DeleteFn => {
     async (id: string) => {
       nProgress.start();
       try {
-        await apiSSP<Post>(`/forum/${id}`, { method: "DELETE" });
+        await apiSSP<Post>(`/forum/posts/${id}`, { method: "DELETE" });
         toast({
           title: "Post deleted!",
           status: "success",
@@ -122,7 +122,7 @@ export const useEditPost = (): EditFn => {
     async (data: PostPayload) => {
       nProgress.start();
       try {
-        await apiSSP<Post>(`/forum/${data.id}`, {
+        await apiSSP<Post>(`/forum/posts/${data.id}`, {
           method: "PATCH",
           body: JSON.stringify(data),
         });

@@ -53,7 +53,7 @@ export async function getServerSideProps(
   }
 
   try {
-    const posts = await apiSSP<Post[]>(`/forum/${slug}`, {
+    const posts = await apiSSP<Post[]>(`/forum/posts/${slug}`, {
       ctx,
       schema: PostSchema.array(),
     });

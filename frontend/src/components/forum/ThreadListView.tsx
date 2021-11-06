@@ -50,7 +50,7 @@ const ThreadListView: FC<Props> = ({
 
   const isAdmin = useIsAdmin();
   const { data, error } = useSWR<Post[], APIError>(
-    "/forum?" +
+    "/forum/threads?" +
       new URLSearchParams([
         ["category", category],
         ["query", initialText],

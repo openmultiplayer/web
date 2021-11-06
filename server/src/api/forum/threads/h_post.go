@@ -1,4 +1,4 @@
-package forum
+package threads
 
 import (
 	"encoding/json"
@@ -8,20 +8,20 @@ import (
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
-type postThreadBody struct {
+type postBody struct {
 	Title    string   `json:"title"      valid:"required,stringlength(1|64)"`
 	Body     string   `json:"body"       valid:"required,stringlength(1|65535)"`
 	Tags     []string `json:"tags"       valid:"required"`
 	Category string   `json:"category"   valid:"required"`
 }
 
-func (s *service) postThread(w http.ResponseWriter, r *http.Request) {
+func (s *service) post(w http.ResponseWriter, r *http.Request) {
 	info, ok := authentication.GetAuthenticationInfo(w, r)
 	if !ok {
 		return
 	}
 
-	var b postThreadBody
+	var b postBody
 	if !web.ParseBody(w, r, &b) {
 		return
 	}
