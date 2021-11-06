@@ -17,7 +17,7 @@ func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	updated, err := s.repo.UpdateCategory(r.Context(), p.ID, &p.Name, &p.Description, &p.Colour, &p.Sort)
+	updated, err := s.repo.UpdateCategory(r.Context(), p.ID, &p.Name, &p.Description, &p.Colour, &p.Sort, &p.Admin)
 	if err != nil {
 		return
 	}

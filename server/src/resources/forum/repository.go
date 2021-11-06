@@ -28,14 +28,15 @@ type Repository interface {
 		before time.Time, sort string, max int,
 		includePosts bool,
 		includeDeleted bool,
+		includeAdmin bool,
 	) ([]Post, error)
 
-	GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error)
-	GetCategories(ctx context.Context) ([]Category, error)
+	GetPosts(ctx context.Context, slug string, max, skip int, deleted bool, admin bool) ([]Post, error)
+	GetCategories(ctx context.Context, admin bool) ([]Category, error)
 	GetTags(ctx context.Context, query string) ([]Tag, error)
 
-	CreateCategory(ctx context.Context, name, desc, colour string) (*Category, error)
-	UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int) (*Category, error)
+	CreateCategory(ctx context.Context, name, desc, colour string, admin bool) (*Category, error)
+	UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int, admin *bool) (*Category, error)
 	DeleteCategory(ctx context.Context, id string, moveto string) (*Category, error)
 
 	CreateLegacyThread(

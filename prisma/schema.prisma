@@ -134,9 +134,10 @@ model Tag {
 model Category {
   id String @id @default(cuid())
 
-  name        String @unique
-  description String @default("(No description)")
-  colour      String @default("#8577ce")
-  sort        Int    @default(-1)
+  name        String  @unique
+  description String  @default("(No description)")
+  colour      String  @default("#8577ce")
+  sort        Int     @default(-1)
+  admin       Boolean @default(false)
   posts       Post[]
 }

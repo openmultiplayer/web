@@ -23,6 +23,7 @@ export const CategorySchema = z.object({
   description: z.string(),
   colour: z.string(),
   sort: z.number(),
+  admin: z.boolean(),
   recent: PostMetaSchema.array().optional(),
   postCount: z.number(),
 })

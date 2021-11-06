@@ -201,6 +201,7 @@ func (d *DB) GetThreads(
 	max int,
 	includePosts bool,
 	includeDeleted bool,
+	includeAdmin bool,
 ) ([]Post, error) {
 	filters := []db.PostWhereParam{}
 
@@ -235,6 +236,11 @@ func (d *DB) GetThreads(
 	} else {
 		filters = append(filters, db.Post.DeletedAt.IsNull())
 	}
+	if !includeAdmin {
+		filters = append(filters, db.Post.Category.Where(
+			db.Category.Admin.Equals(false),
+		))
+	}
 
 	posts, err := d.db.Post.
 		FindMany(filters...).
@@ -266,20 +272,28 @@ func (d *DB) GetThreads(
 	return result, nil
 }
 
-func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error) {
-	posts, err := d.db.Post.
-		FindMany(
-			db.Post.Or(
-				db.Post.And(
-					db.Post.First.Equals(true),
-					db.Post.Slug.Equals(slug),
-				),
-				db.Post.And(
-					db.Post.First.Equals(false),
-					db.Post.Root.Where(db.Post.Slug.Equals(slug)),
-				),
+func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted, admin bool) ([]Post, error) {
+	filters := []db.PostWhereParam{
+		db.Post.Or(
+			db.Post.And(
+				db.Post.First.Equals(true),
+				db.Post.Slug.Equals(slug),
 			),
-		).
+			db.Post.And(
+				db.Post.First.Equals(false),
+				db.Post.Root.Where(db.Post.Slug.Equals(slug)),
+			),
+		),
+	}
+
+	if !admin {
+		filters = append(filters, db.Post.Category.Where(
+			db.Category.Admin.Equals(false),
+		))
+	}
+
+	posts, err := d.db.Post.
+		FindMany(filters...).
 		With(
 			db.Post.Author.Fetch(),
 			db.Post.Category.Fetch(),
@@ -313,9 +327,15 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 	return result, nil
 }
 
-func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
+func (d *DB) GetCategories(ctx context.Context, admin bool) ([]Category, error) {
+	filters := []db.CategoryWhereParam{}
+
+	if !admin {
+		filters = append(filters, db.Category.Admin.Equals(false))
+	}
+
 	categories, err := d.db.Category.
-		FindMany().
+		FindMany(filters...).
 		OrderBy(
 			db.Category.Sort.Order(db.SortOrderAsc),
 		).
@@ -464,18 +484,20 @@ func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
 	return result, nil
 }
 
-func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string) (*Category, error) {
+func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string, admin bool) (*Category, error) {
 	c, err := d.db.Category.
 		UpsertOne(db.Category.Name.Equals(name)).
 		Create(
 			db.Category.Name.Set(name),
 			db.Category.Description.Set(desc),
 			db.Category.Colour.Set(colour),
+			db.Category.Admin.Set(admin),
 		).
 		Update(
 			db.Category.Name.Set(name),
 			db.Category.Description.Set(desc),
 			db.Category.Colour.Set(colour),
+			db.Category.Admin.Set(admin),
 		).
 		Exec(ctx)
 	if err != nil {
@@ -484,7 +506,7 @@ func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string) (*Ca
 	return CategoryFromModel(c), nil
 }
 
-func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int) (*Category, error) {
+func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int, admin *bool) (*Category, error) {
 	c, err := d.db.Category.
 		FindUnique(db.Category.ID.Equals(id)).
 		Update(
@@ -492,6 +514,7 @@ func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *
 			db.Category.Description.SetIfPresent(desc),
 			db.Category.Colour.SetIfPresent(colour),
 			db.Category.Sort.SetIfPresent(sort),
+			db.Category.Admin.SetIfPresent(admin),
 		).
 		Exec(ctx)
 

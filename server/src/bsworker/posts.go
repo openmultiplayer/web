@@ -34,7 +34,7 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 	forummap := make(map[int]string)
 	for _, f := range forums {
 		forummap[f.Fid] = f.Name
-		w.forum.CreateCategory(ctx, f.Name, f.Description, "#8577ce")
+		w.forum.CreateCategory(ctx, f.Name, f.Description, "#8577ce", true)
 	}
 
 	for _, t := range threads {
