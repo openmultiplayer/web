@@ -1,4 +1,4 @@
-package forum
+package tags
 
 import (
 	"encoding/json"
@@ -11,7 +11,7 @@ type tagsParams struct {
 	Query string `qstring:"query"`
 }
 
-func (s *service) getTags(w http.ResponseWriter, r *http.Request) {
+func (s *service) get(w http.ResponseWriter, r *http.Request) {
 	var p tagsParams
 	if !web.ParseQuery(w, r, &p) {
 		return
