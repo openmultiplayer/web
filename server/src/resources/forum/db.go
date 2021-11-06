@@ -201,6 +201,7 @@ func (d *DB) GetThreads(
 	max int,
 	includePosts bool,
 	includeDeleted bool,
+	includeAdmin bool,
 ) ([]Post, error) {
 	filters := []db.PostWhereParam{}
 
@@ -235,6 +236,11 @@ func (d *DB) GetThreads(
 	} else {
 		filters = append(filters, db.Post.DeletedAt.IsNull())
 	}
+	if !includeAdmin {
+		filters = append(filters, db.Post.Category.Where(
+			db.Category.Admin.Equals(false),
+		))
+	}
 
 	posts, err := d.db.Post.
 		FindMany(filters...).
@@ -266,20 +272,28 @@ func (d *DB) GetThreads(
 	return result, nil
 }
 
-func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error) {
-	posts, err := d.db.Post.
-		FindMany(
-			db.Post.Or(
-				db.Post.And(
-					db.Post.First.Equals(true),
-					db.Post.Slug.Equals(slug),
-				),
-				db.Post.And(
-					db.Post.First.Equals(false),
-					db.Post.Root.Where(db.Post.Slug.Equals(slug)),
-				),
+func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted, admin bool) ([]Post, error) {
+	filters := []db.PostWhereParam{
+		db.Post.Or(
+			db.Post.And(
+				db.Post.First.Equals(true),
+				db.Post.Slug.Equals(slug),
 			),
-		).
+			db.Post.And(
+				db.Post.First.Equals(false),
+				db.Post.Root.Where(db.Post.Slug.Equals(slug)),
+			),
+		),
+	}
+
+	if !admin {
+		filters = append(filters, db.Post.Category.Where(
+			db.Category.Admin.Equals(false),
+		))
+	}
+
+	posts, err := d.db.Post.
+		FindMany(filters...).
 		With(
 			db.Post.Author.Fetch(),
 			db.Post.Category.Fetch(),

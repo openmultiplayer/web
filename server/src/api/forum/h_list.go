@@ -40,7 +40,7 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 	// Admins get to see deleted posts
 	isAdmin := authentication.IsRequestAdmin(r)
 
-	posts, err := s.repo.GetThreads(r.Context(), p.Tags, p.Category, p.Query, p.Before, p.Sort, p.Max, p.Posts, isAdmin)
+	posts, err := s.repo.GetThreads(r.Context(), p.Tags, p.Category, p.Query, p.Before, p.Sort, p.Max, p.Posts, isAdmin, isAdmin)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
