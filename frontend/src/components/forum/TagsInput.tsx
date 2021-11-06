@@ -1,19 +1,17 @@
 import { SmallCloseIcon } from "@chakra-ui/icons";
 import { Flex, FlexProps } from "@chakra-ui/layout";
 import {
-  Button,
   Popover,
   PopoverArrow,
   PopoverBody,
   PopoverContent,
   PopoverTrigger,
   Tag,
-  Wrap,
-  WrapItem,
 } from "@chakra-ui/react";
 import debounce from "lodash.debounce";
 import React, { ChangeEvent, Component, KeyboardEvent } from "react";
 import { apiSWR } from "src/fetcher/fetcher";
+import LinkedTag from "./LinkedTag";
 
 type Tag = {
   id: string;
@@ -130,23 +128,30 @@ class TagsInput extends Component<Props, State> {
     }
   }
 
+  doTagQuery(query: string): void {
+    debounce(
+      () =>
+        apiSWR<Tag[]>()(`/forum/tags?query=${query}`).then((tags) =>
+          this.setState({ ...this.state, tags: tags ?? [] })
+        ),
+      500
+    )();
+
+    this.setState({ ...this.state, input: query });
+    this.props.onQueryChange?.call(this, query);
+  }
+
   handlePrimaryInputChange(event: ChangeEvent<HTMLInputElement>): void {
     const query = event.target.value;
+    this.doTagQuery(query);
+  }
 
-    if (query.length > 0) {
-      debounce(
-        () =>
-          apiSWR<Tag[]>()(`/forum/tags?query=${query}`).then((tags) =>
-            this.setState({ ...this.state, tags: tags ?? [] })
-          ),
-        500
-      )();
-      this.setState({ ...this.state, input: query });
-    } else {
-      this.setState({ ...this.state, input: query, tags: [] });
-    }
+  handlePrimaryInputFocus(): void {
+    this.doTagQuery("");
+  }
 
-    this.props.onQueryChange?.call(this, query);
+  handlePrimaryInputBlur(): void {
+    this.setState({ ...this.state, tags: [] });
   }
 
   handleClickSuggestion(text: string): void {
@@ -205,7 +210,7 @@ class TagsInput extends Component<Props, State> {
           })}
 
           <Popover
-            isOpen={this.state.input.length > 0 && this.state.tags.length > 0}
+            isOpen={this.state.tags.length > 0}
             matchWidth
             autoFocus={false}
           >
@@ -213,6 +218,8 @@ class TagsInput extends Component<Props, State> {
               <input
                 onKeyDown={this.handlePrimaryInputKey.bind(this)}
                 onChange={this.handlePrimaryInputChange.bind(this)}
+                onClick={this.handlePrimaryInputFocus.bind(this)}
+                onBlur={this.handlePrimaryInputBlur.bind(this)}
                 className="end"
                 type="text"
                 value={this.state.input}
@@ -222,22 +229,24 @@ class TagsInput extends Component<Props, State> {
             <PopoverContent width="100%">
               <PopoverArrow />
               <PopoverBody>
-                <Wrap>
+                <Flex
+                  wrap="wrap"
+                  maxW="26em"
+                  gridGap="0.2em"
+                  justifyContent="space-around"
+                  p="0.2em"
+                >
                   {this.state.tags.map((tag: Tag) => (
-                    <WrapItem key={tag.id}>
-                      <Button
-                        variant="solid"
-                        colorScheme="teal"
-                        cursor="pointer"
-                        onClick={() =>
-                          this.handleClickSuggestion.bind(this)(tag.name)
-                        }
-                      >
-                        {tag.name} ({tag.posts})
-                      </Button>
-                    </WrapItem>
+                    <LinkedTag
+                      key={tag.id}
+                      name={tag.name}
+                      posts={tag.posts}
+                      onClick={() =>
+                        this.handleClickSuggestion.bind(this)(tag.name)
+                      }
+                    />
                   ))}
-                </Wrap>
+                </Flex>
               </PopoverBody>
             </PopoverContent>
           </Popover>
