@@ -14,8 +14,15 @@ const LinkedTag: FC<Props> = ({ name, posts, coloured = false, ...rest }) => {
     <Link href={`/discussion/tag/${name}`}>
       <a>
         <Tag
+          borderLeftWidth="0.25em"
+          borderStyle="solid"
+          borderLeftColor={generateColour(name)}
+          paddingLeft="0.25em"
+          paddingRight="0.5em"
+          borderRadius="0.25em"
+          height="min-content"
+          pl="0.5em"
           color="rgba(0, 0, 0, 0.7)"
-          backgroundColor={coloured ? generateColour(name) : "gray.100"}
           _hover={{
             backgroundColor: coloured ? generateColour(name, true) : "gray.200",
           }}
