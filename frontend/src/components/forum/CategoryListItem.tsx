@@ -6,6 +6,8 @@ import {
   EditIcon,
   HamburgerIcon,
   SunIcon,
+  ViewIcon,
+  ViewOffIcon,
 } from "@chakra-ui/icons";
 import {
   Box,
@@ -216,6 +218,50 @@ const ColourMenuItem: FC<{ category: Category }> = ({ category }) => {
   );
 };
 
+const HiddenMenuItem: FC<{ category: Category }> = ({ category }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const updateCategory = useUpdateCategory();
+  const onUpdate = useCallback(() => {
+    updateCategory({ ...category, admin: !category.admin });
+    onClose();
+  }, [updateCategory, category, onClose]);
+
+  return (
+    <>
+      <MenuItem
+        icon={category.admin ? <ViewOffIcon /> : <ViewIcon />}
+        onClick={onOpen}
+      >
+        {category.admin ? "Make Public" : "Make Hidden"}
+      </MenuItem>
+
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Confirm Category Visibility</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text>
+              Confirm setting visibility of {category.name} to{" "}
+              {category.admin ? "public" : "admin only"}.
+            </Text>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme="red" mr={3} onClick={onUpdate}>
+              {category.admin ? "Public" : "Hidden"}
+            </Button>
+            <Button variant="ghost" onClick={onClose}>
+              Cancel
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
+  );
+};
+
 type CategoryListItemMenuProps = {
   category: Category;
   onMove: MoveCategoryFn;
@@ -249,6 +295,7 @@ export const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({
           <DeleteMenuItem category={category} />
           <RenameMenuItem category={category} />
           <ColourMenuItem category={category} />
+          <HiddenMenuItem category={category} />
 
           <MenuItem icon={<ArrowUpIcon />} onClick={onMoveToStart}>
             Move to Start
