@@ -2,13 +2,12 @@ package post
 
 import (
 	"context"
-	"math"
-	"strings"
 	"time"
 
 	"github.com/pkg/errors"
 
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/resources/forum"
 )
 
 var (
@@ -25,26 +24,12 @@ func New(db *db.PrismaClient) Repository {
 	return &DB{db}
 }
 
-const MaxShortBodyLength = 128
-
-func makeShortBody(long string) string {
-	full := math.Min(float64(len(long)), MaxShortBodyLength)
-	firstPara := strings.Index(long, "\n")
-	if firstPara == -1 {
-		firstPara = 999999
-	}
-
-	end := int(math.Min(full, float64(firstPara)))
-
-	return long[:end]
-}
-
 func (d *DB) CreatePost(
 	ctx context.Context,
 	body, authorID string,
 	parentID, replyToID string,
 ) (*Post, error) {
-	short := makeShortBody(body)
+	short := forum.MakeShortBody(body)
 
 	optional := []db.PostSetParam{
 		db.Post.Root.Link(db.Post.ID.Equals(parentID)),

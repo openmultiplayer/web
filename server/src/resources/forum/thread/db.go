@@ -3,14 +3,13 @@ package thread
 import (
 	"context"
 	"fmt"
-	"math"
-	"strings"
 	"time"
 
 	"github.com/gosimple/slug"
 	"github.com/pkg/errors"
 
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/resources/forum"
 	"github.com/openmultiplayer/web/server/src/resources/forum/post"
 )
 
@@ -28,29 +27,13 @@ func New(db *db.PrismaClient) Repository {
 	return &DB{db}
 }
 
-// TODO: Move this duplicate func to a common utils pkg
-
-const MaxShortBodyLength = 128
-
-func makeShortBody(long string) string {
-	full := math.Min(float64(len(long)), MaxShortBodyLength)
-	firstPara := strings.Index(long, "\n")
-	if firstPara == -1 {
-		firstPara = 999999
-	}
-
-	end := int(math.Min(full, float64(firstPara)))
-
-	return long[:end]
-}
-
 func (d *DB) CreateThread(
 	ctx context.Context,
 	title, body, authorID, categoryName string,
 	tags []string,
 ) (*post.Post, error) {
 	slug := slug.Make(title)
-	short := makeShortBody(body)
+	short := forum.MakeShortBody(body)
 
 	tagset, err := d.createTags(ctx, tags)
 	if err != nil {
@@ -123,7 +106,7 @@ func (d *DB) CreateLegacyThread(
 	replies []post.Post,
 ) (*post.Post, error) {
 	slug := slug.Make(title)
-	short := makeShortBody(first.Body)
+	short := forum.MakeShortBody(first.Body)
 
 	var firstUpdatedAt *time.Time
 	if !first.UpdatedAt.IsZero() {
@@ -175,7 +158,7 @@ func (d *DB) CreateLegacyThread(
 	parentID := p.ID
 
 	for _, r := range replies {
-		short := makeShortBody(r.Body)
+		short := forum.MakeShortBody(r.Body)
 
 		var updatedAt *time.Time
 		if !r.UpdatedAt.IsZero() {
