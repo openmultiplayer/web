@@ -267,6 +267,7 @@ export const CategoryListItem: FC<{
   onMove: MoveCategoryFn;
 }> = ({ category, onMove }) => {
   const admin = useIsAdmin();
+
   return (
     <ListItem
       key={category.id}
@@ -285,6 +286,7 @@ export const CategoryListItem: FC<{
         borderRadius="0.25em"
         paddingLeft="0.5em"
         justifyContent="space-between"
+        color={category.admin ? "blackAlpha.400" : ""}
       >
         <Box width="50%">
           <header>
