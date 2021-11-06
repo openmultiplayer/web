@@ -2,35 +2,10 @@ package forum
 
 import (
 	"context"
-	"time"
 
 	"github.com/openmultiplayer/web/server/src/resources/forum/post"
 )
 
 type Repository interface {
-	CreateThread(
-		ctx context.Context,
-		title, body, authorID, categoryName string,
-		tags []string,
-	) (*post.Post, error)
-
-	GetThreads(
-		ctx context.Context,
-		tags []string, category string, query string,
-		before time.Time, sort string, max int,
-		includePosts bool,
-		includeDeleted bool,
-		includeAdmin bool,
-	) ([]post.Post, error)
-
 	GetTags(ctx context.Context, query string) ([]post.Tag, error)
-
-	CreateLegacyThread(
-		ctx context.Context,
-		title string,
-		category string,
-		tags []string,
-		first post.Post,
-		replies []post.Post,
-	) (*post.Post, error)
 }

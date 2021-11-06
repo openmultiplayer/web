@@ -184,7 +184,7 @@ func (w *Worker) MigratePosts(ctx context.Context) error {
 			zap.L().Info("prepared post", zap.Time("date", time.Unix(int64(r.Dateline), 0).UTC()), zap.String("thread", first.Subject))
 		}
 
-		newthread, err := w.forum.CreateLegacyThread(
+		newthread, err := w.thread.CreateLegacyThread(
 			ctx,
 			first.Subject,
 			target.Category,

@@ -26,7 +26,7 @@ func (s *service) postThread(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	post, err := s.repo.CreateThread(r.Context(), b.Title, b.Body, info.Cookie.UserID, b.Category, b.Tags)
+	post, err := s.threads.CreateThread(r.Context(), b.Title, b.Body, info.Cookie.UserID, b.Category, b.Tags)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

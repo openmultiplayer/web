@@ -8,18 +8,26 @@ import (
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/resources/forum"
 	"github.com/openmultiplayer/web/server/src/resources/forum/post"
+	"github.com/openmultiplayer/web/server/src/resources/forum/thread"
 )
 
 type service struct {
-	repo  forum.Repository
-	posts post.Repository
+	repo    forum.Repository
+	posts   post.Repository
+	threads thread.Repository
 }
 
 func Build() fx.Option {
 	return fx.Options(
 		categories.Build(),
 
-		fx.Provide(func(repo forum.Repository, posts post.Repository) *service { return &service{repo, posts} }),
+		fx.Provide(func(
+			repo forum.Repository,
+			posts post.Repository,
+			threads thread.Repository,
+		) *service {
+			return &service{repo, posts, threads}
+		}),
 		fx.Invoke(func(
 			r chi.Router,
 			s *service,

@@ -9,6 +9,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/resources/burgershot"
 	"github.com/openmultiplayer/web/server/src/resources/forum"
 	"github.com/openmultiplayer/web/server/src/resources/forum/category"
+	"github.com/openmultiplayer/web/server/src/resources/forum/thread"
 	"github.com/openmultiplayer/web/server/src/resources/user"
 )
 
@@ -16,6 +17,7 @@ type Worker struct {
 	bs       burgershot.Repository
 	users    user.Repository
 	forum    forum.Repository
+	thread   thread.Repository
 	category category.Repository
 }
 
@@ -24,10 +26,11 @@ func New(
 	bs burgershot.Repository,
 	users user.Repository,
 	forum forum.Repository,
+	thread thread.Repository,
 	category category.Repository,
 ) Worker {
 
-	w := Worker{bs, users, forum, category}
+	w := Worker{bs, users, forum, thread, category}
 
 	wctx, stop := context.WithCancel(context.Background())
 	lc.Append(fx.Hook{
