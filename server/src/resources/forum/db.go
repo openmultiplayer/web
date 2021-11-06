@@ -506,7 +506,7 @@ func (d *DB) CreateCategory(ctx context.Context, name, desc, colour string, admi
 	return CategoryFromModel(c), nil
 }
 
-func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int) (*Category, error) {
+func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *string, sort *int, admin *bool) (*Category, error) {
 	c, err := d.db.Category.
 		FindUnique(db.Category.ID.Equals(id)).
 		Update(
@@ -514,6 +514,7 @@ func (d *DB) UpdateCategory(ctx context.Context, id string, name, desc, colour *
 			db.Category.Description.SetIfPresent(desc),
 			db.Category.Colour.SetIfPresent(colour),
 			db.Category.Sort.SetIfPresent(sort),
+			db.Category.Admin.SetIfPresent(admin),
 		).
 		Exec(ctx)
 

@@ -19,7 +19,7 @@ func (s *service) patchAll(w http.ResponseWriter, r *http.Request) {
 
 	result := []forum.Category{}
 	for _, c := range p {
-		newCategory, err := s.repo.UpdateCategory(r.Context(), c.ID, &c.Name, &c.Description, &c.Colour, &c.Sort)
+		newCategory, err := s.repo.UpdateCategory(r.Context(), c.ID, &c.Name, &c.Description, &c.Colour, &c.Sort, &c.Admin)
 		if err != nil {
 			return
 		}

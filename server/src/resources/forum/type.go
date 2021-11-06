@@ -46,6 +46,7 @@ type Category struct {
 	Description string     `json:"description"`
 	Colour      string     `json:"colour"`
 	Sort        int        `json:"sort"`
+	Admin       bool       `json:"admin"`
 	Recent      []PostMeta `json:"recent,omitempty"`
 	PostCount   int        `json:"postCount"`
 }
@@ -121,6 +122,7 @@ func CategoryFromModel(c *db.CategoryModel) *Category {
 		Description: c.Description,
 		Colour:      c.Colour,
 		Sort:        c.Sort,
+		Admin:       c.Admin,
 		Recent:      recent,
 	}
 }
