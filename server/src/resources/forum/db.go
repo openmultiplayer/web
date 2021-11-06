@@ -313,9 +313,15 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted b
 	return result, nil
 }
 
-func (d *DB) GetCategories(ctx context.Context) ([]Category, error) {
+func (d *DB) GetCategories(ctx context.Context, admin bool) ([]Category, error) {
+	filters := []db.CategoryWhereParam{}
+
+	if !admin {
+		filters = append(filters, db.Category.Admin.Equals(false))
+	}
+
 	categories, err := d.db.Category.
-		FindMany().
+		FindMany(filters...).
 		OrderBy(
 			db.Category.Sort.Order(db.SortOrderAsc),
 		).

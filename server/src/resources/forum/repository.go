@@ -31,7 +31,7 @@ type Repository interface {
 	) ([]Post, error)
 
 	GetPosts(ctx context.Context, slug string, max, skip int, deleted bool) ([]Post, error)
-	GetCategories(ctx context.Context) ([]Category, error)
+	GetCategories(ctx context.Context, admin bool) ([]Category, error)
 	GetTags(ctx context.Context, query string) ([]Tag, error)
 
 	CreateCategory(ctx context.Context, name, desc, colour string) (*Category, error)
