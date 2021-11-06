@@ -39,8 +39,16 @@ func Build() fx.Option {
 				time.Hour * 24,
 			}
 
+			wctx, stop := context.WithCancel(context.Background())
 			lc.Append(fx.Hook{
-				OnStart: w.run,
+				OnStart: func(ctx context.Context) error {
+					go w.run(wctx)
+					return nil
+				},
+				OnStop: func(c context.Context) error {
+					stop()
+					return nil
+				},
 			})
 
 			return w

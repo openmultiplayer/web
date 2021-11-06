@@ -2,7 +2,6 @@ package bsworker
 
 import (
 	"context"
-	"time"
 
 	"go.uber.org/fx"
 	"go.uber.org/zap"
@@ -24,25 +23,20 @@ func New(
 	users user.Repository,
 	forum forum.Repository,
 ) Worker {
-	zap.L().Debug("creating bs worker")
 
 	w := Worker{bs, users, forum}
 
+	wctx, stop := context.WithCancel(context.Background())
 	lc.Append(fx.Hook{
-		OnStart: func(c context.Context) error {
-			zap.L().Debug("starting bs worker")
-			return w.run(c)
+		OnStart: func(ctx context.Context) error {
+			go w.run(wctx)
+			return nil
+		},
+		OnStop: func(c context.Context) error {
+			stop()
+			return nil
 		},
 	})
-
-	go func() {
-		time.Sleep(time.Second)
-
-		// Invoke and hooks won't work for some unknown reason so this is the
-		// hacky solution for now.
-
-		w.run(context.TODO())
-	}()
 
 	return w
 }
@@ -50,13 +44,7 @@ func New(
 func Build() fx.Option {
 	return fx.Options(
 		fx.Provide(New),
-
-		fx.Invoke(func(
-			lc fx.Lifecycle,
-			w Worker,
-		) {
-			zap.L().Debug("invoking bs worker")
-		}),
+		fx.Invoke(func(w Worker) {}),
 	)
 }
 
