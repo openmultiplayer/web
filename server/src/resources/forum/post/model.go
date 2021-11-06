@@ -33,12 +33,6 @@ type Post struct {
 	Category   category.Category  `json:"category"`
 }
 
-type Tag struct {
-	ID    string `json:"id"`
-	Name  string `json:"name"`
-	Posts int    `json:"posts"`
-}
-
 func FromModel(u *db.PostModel) (w *Post) {
 	tags := []string{}
 	for _, t := range u.RelationsPost.Tags {

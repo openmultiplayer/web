@@ -1,18 +1,9 @@
-package forum
+package tag
 
 import (
 	"context"
 
-	"github.com/pkg/errors"
-
 	"github.com/openmultiplayer/web/server/src/db"
-	"github.com/openmultiplayer/web/server/src/resources/forum/post"
-)
-
-var (
-	ErrNoTitle      = errors.New("missing title")
-	ErrNoBody       = errors.New("missing body")
-	ErrUnauthorised = errors.New("unauthorised")
 )
 
 type DB struct {
@@ -23,8 +14,8 @@ func New(db *db.PrismaClient) Repository {
 	return &DB{db}
 }
 
-func (d *DB) GetTags(ctx context.Context, query string) ([]post.Tag, error) {
-	var tags []post.Tag
+func (d *DB) GetTags(ctx context.Context, query string) ([]Tag, error) {
+	var tags []Tag
 	err := d.db.Prisma.Raw.QueryRaw(`
 		select
 			t.id, t.name, count(*) as posts

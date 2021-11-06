@@ -11,13 +11,13 @@ type tagsParams struct {
 	Query string `qstring:"query"`
 }
 
-func (s *service) tags(w http.ResponseWriter, r *http.Request) {
+func (s *service) getTags(w http.ResponseWriter, r *http.Request) {
 	var p tagsParams
 	if !web.ParseQuery(w, r, &p) {
 		return
 	}
 
-	tags, err := s.repo.GetTags(r.Context(), p.Query)
+	tags, err := s.tags.GetTags(r.Context(), p.Query)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

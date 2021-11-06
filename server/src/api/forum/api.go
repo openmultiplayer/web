@@ -6,15 +6,15 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/api/forum/categories"
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/resources/forum"
 	"github.com/openmultiplayer/web/server/src/resources/forum/post"
+	"github.com/openmultiplayer/web/server/src/resources/forum/tag"
 	"github.com/openmultiplayer/web/server/src/resources/forum/thread"
 )
 
 type service struct {
-	repo    forum.Repository
 	posts   post.Repository
 	threads thread.Repository
+	tags    tag.Repository
 }
 
 func Build() fx.Option {
@@ -22,11 +22,11 @@ func Build() fx.Option {
 		categories.Build(),
 
 		fx.Provide(func(
-			repo forum.Repository,
 			posts post.Repository,
 			threads thread.Repository,
+			tags tag.Repository,
 		) *service {
-			return &service{repo, posts, threads}
+			return &service{posts, threads, tags}
 		}),
 		fx.Invoke(func(
 			r chi.Router,
@@ -59,7 +59,7 @@ func Build() fx.Option {
 				Delete("/{id}", s.delete)
 
 			rtr.
-				Get("/tags", s.tags)
+				Get("/tags", s.getTags)
 		}),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 const MaxShortBodyLength = 128
 
-func makeShortBody(long string) string {
+func MakeShortBody(long string) string {
 	full := math.Min(float64(len(long)), MaxShortBodyLength)
 	firstPara := strings.Index(long, "\n")
 	if firstPara == -1 {
