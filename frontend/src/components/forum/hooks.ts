@@ -35,7 +35,7 @@ export const useCreateThread = (): CreateThreadFn => {
       }
 
       try {
-        const post = await apiSSP<Post>("/forum", {
+        const post = await apiSSP<Post>("/forum/threads", {
           method: "POST",
           body: JSON.stringify(data),
         });

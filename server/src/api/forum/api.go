@@ -6,7 +6,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/api/forum/categories"
 	"github.com/openmultiplayer/web/server/src/api/forum/posts"
-	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/api/forum/threads"
 	"github.com/openmultiplayer/web/server/src/resources/forum/tag"
 	"github.com/openmultiplayer/web/server/src/resources/forum/thread"
 )
@@ -20,6 +20,7 @@ func Build() fx.Option {
 	return fx.Options(
 		categories.Build(),
 		posts.Build(),
+		threads.Build(),
 
 		fx.Provide(func(
 			threads thread.Repository,
@@ -34,13 +35,6 @@ func Build() fx.Option {
 		) {
 			rtr := chi.NewRouter()
 			r.Mount("/forum", rtr)
-
-			rtr.
-				Get("/", s.list)
-
-			rtr.
-				With(authentication.MustBeAuthenticated /*ratelimiter.WithRateLimit(5)*/).
-				Post("/", s.postThread)
 
 			rtr.
 				Get("/tags", s.getTags)

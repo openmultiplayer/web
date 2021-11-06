@@ -1,4 +1,4 @@
-package forum
+package threads
 
 import (
 	"encoding/json"
