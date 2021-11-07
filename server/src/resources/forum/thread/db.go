@@ -245,20 +245,23 @@ func (d *DB) GetThreads(
 		))
 	}
 
-	pinned, err := d.db.Post.
-		FindMany(append(filters, db.Post.Pinned.Equals(true))...).
-		With(
-			db.Post.Author.Fetch(),
-			db.Post.Tags.Fetch(),
-			db.Post.Category.Fetch(),
-		).
-		Take(max).
-		OrderBy(db.Post.CreatedAt.Order(db.Direction(sort))).
-		Exec(ctx)
-	if err != nil {
-		return nil, err
+	var pinned []db.PostModel
+	var err error
+	if category != "" {
+		pinned, err = d.db.Post.
+			FindMany(append(filters, db.Post.Pinned.Equals(true))...).
+			With(
+				db.Post.Author.Fetch(),
+				db.Post.Tags.Fetch(),
+				db.Post.Category.Fetch(),
+			).
+			Take(max).
+			OrderBy(db.Post.CreatedAt.Order(db.Direction(sort))).
+			Exec(ctx)
+		if err != nil {
+			return nil, err
+		}
 	}
-
 	posts, err := d.db.Post.
 		FindMany(filters...).
 		With(
