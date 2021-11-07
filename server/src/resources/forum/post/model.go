@@ -21,6 +21,7 @@ type Post struct {
 	Body       string             `json:"body"`
 	Short      string             `json:"short"`
 	First      bool               `json:"first"`
+	Pinned     bool               `json:"pinned"`
 	CreatedAt  time.Time          `json:"createdAt"`
 	UpdatedAt  time.Time          `json:"updatedAt"`
 	DeletedAt  *time.Time         `json:"deletedAt"`
@@ -35,8 +36,10 @@ type Post struct {
 
 func FromModel(u *db.PostModel) (w *Post) {
 	tags := []string{}
-	for _, t := range u.RelationsPost.Tags {
-		tags = append(tags, t.Name)
+	if u.RelationsPost.Tags != nil {
+		for _, t := range u.RelationsPost.Tags {
+			tags = append(tags, t.Name)
+		}
 	}
 
 	cat := category.Category{}

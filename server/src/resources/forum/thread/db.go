@@ -307,3 +307,25 @@ func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
 
 	return result, nil
 }
+
+func (d *DB) Update(ctx context.Context, id string, title, categoryID *string, pinned *bool) (*post.Post, error) {
+	updates := []db.PostSetParam{
+		db.Post.Title.SetIfPresent(title),
+		db.Post.CategoryID.SetIfPresent(categoryID),
+		db.Post.Pinned.SetIfPresent(pinned),
+	}
+
+	p, err := d.db.Post.
+		FindUnique(db.Post.ID.Equals(id)).
+		With(
+			db.Post.Author.Fetch(),
+			db.Post.Category.Fetch(),
+			db.Post.Tags.Fetch(),
+		).
+		Update(updates...).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+	return post.FromModel(p), nil
+}
