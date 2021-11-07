@@ -71,7 +71,45 @@ func (d *DB) GetUser(ctx context.Context, userId string, public bool) (*User, er
 		return nil, err
 	}
 
-	return FromModel(user, public), nil
+	threads, posts, err := d.getUserPostCounts(ctx, user.ID)
+	if err != nil {
+		return nil, err
+	}
+	u := FromModel(user, public)
+
+	u.ThreadCount = threads
+	u.PostCount = posts
+
+	return u, nil
+}
+
+func (d *DB) getUserPostCounts(ctx context.Context, id string) (int, int, error) {
+	type R struct {
+		Threads int `json:"threads"`
+		Posts   int `json:"posts"`
+	}
+	var count []R
+	err := d.db.Prisma.
+		QueryRaw(`
+		select
+			count(*) filter (where "first") as threads,
+			count(*) filter (where not "first") as posts
+		from (
+			select p.first
+			from "User" u
+			inner join "Post" p on p."userId" = u.id
+			where u.id = $1
+		) t`, id).
+		Exec(ctx, &count)
+	if err != nil {
+		return 0, 0, err
+	}
+
+	if len(count) == 0 {
+		return 0, 0, nil
+	}
+
+	return count[0].Threads, count[0].Posts, nil
 }
 
 func (d *DB) GetUserByEmail(ctx context.Context, email string, public bool) (*User, error) {
