@@ -9,9 +9,14 @@ import {
   Tag,
 } from "@chakra-ui/react";
 import debounce from "lodash.debounce";
-import React, { ChangeEvent, Component, KeyboardEvent } from "react";
+import React, {
+  ChangeEvent,
+  Component,
+  FocusEvent,
+  KeyboardEvent,
+} from "react";
 import { apiSWR } from "src/fetcher/fetcher";
-import LinkedTag from "./LinkedTag";
+import { TagButton } from "./LinkedTag";
 
 type Tag = {
   id: string;
@@ -22,6 +27,7 @@ type Tag = {
 type State = {
   chips: string[];
   tags: Tag[];
+  showTags: boolean;
   input: string;
 };
 
@@ -74,6 +80,7 @@ class TagsInput extends Component<Props, State> {
     this.state = {
       chips: props.initialTags ?? [],
       tags: [],
+      showTags: false,
       input: props.initialQuery ?? "",
     };
   }
@@ -132,7 +139,7 @@ class TagsInput extends Component<Props, State> {
     debounce(
       () =>
         apiSWR<Tag[]>()(`/forum/tags?query=${query}`).then((tags) =>
-          this.setState({ ...this.state, tags: tags ?? [] })
+          this.setState({ ...this.state, tags: tags ?? [], showTags: true })
         ),
       500
     )();
@@ -150,8 +157,25 @@ class TagsInput extends Component<Props, State> {
     this.doTagQuery("");
   }
 
-  handlePrimaryInputBlur(): void {
-    this.setState({ ...this.state, tags: [] });
+  handlePrimaryInputBlur(e: FocusEvent<HTMLInputElement>): void {
+    const target = e.relatedTarget as Element;
+
+    //
+    // NOTE:
+    //
+    // The following checks are for whether or not the user clicked somewhere in
+    // the tag list (either the list container itself or a tag). If they did not
+    // the tag list can be hidden. The implementation is somewhat flaky so watch
+    // out for this one when making changes to the tag list or TagButton element
+    //
+    if (
+      target == null ||
+      (!target.classList.contains("tag-list") &&
+        !target.classList.contains("tag-anchor") &&
+        !target.classList.contains("tag-remove"))
+    ) {
+      this.setState({ ...this.state, showTags: false });
+    }
   }
 
   handleClickSuggestion(text: string): void {
@@ -191,7 +215,10 @@ class TagsInput extends Component<Props, State> {
               <span key={idx}>
                 <label htmlFor={`between-${idx}`}>
                   {data}
-                  <button onClick={() => this.removeTag(idx)}>
+                  <button
+                    className="tag-remove"
+                    onClick={() => this.removeTag(idx)}
+                  >
                     <SmallCloseIcon />
                   </button>
                 </label>
@@ -210,7 +237,7 @@ class TagsInput extends Component<Props, State> {
           })}
 
           <Popover
-            isOpen={this.state.tags.length > 0}
+            isOpen={this.state.showTags && this.state.tags.length > 0}
             matchWidth
             autoFocus={false}
           >
@@ -226,7 +253,7 @@ class TagsInput extends Component<Props, State> {
                 placeholder={this.props.placeholder}
               />
             </PopoverTrigger>
-            <PopoverContent width="100%">
+            <PopoverContent width="100%" className="tag-list">
               <PopoverArrow />
               <PopoverBody>
                 <Flex
@@ -237,7 +264,7 @@ class TagsInput extends Component<Props, State> {
                   p="0.2em"
                 >
                   {this.state.tags.map((tag: Tag) => (
-                    <LinkedTag
+                    <TagButton
                       key={tag.id}
                       name={tag.name}
                       posts={tag.posts}

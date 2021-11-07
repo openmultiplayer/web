@@ -1,4 +1,3 @@
-import { Grid, GridItem, TagProps } from "@chakra-ui/react";
 import Link from "next/link";
 import { FC, useMemo } from "react";
 import { alternativeColour, generateColour } from "src/utils/colour-hash";
@@ -10,24 +9,36 @@ type Props = {
   onClick?: () => void;
 };
 
-const LinkedTag: FC<Props> = ({ name, posts, coloured = false, onClick }) => {
+export const TagButton: FC<Props & { href?: string }> = ({
+  name,
+  posts,
+  coloured = false,
+  onClick,
+
+  href,
+}) => {
   const colour = useMemo(() => generateColour(name), [name]);
   const alt = alternativeColour(colour);
   return (
     <>
-      <Link href={`/discussion/tag/${name}`}>
-        <a>
-          <div onClick={onClick} className="grid">
-            <div className="background" />
-            <div className="wipe" />
-            <div className="tag">
-              {name} {posts && `(${posts})`}
-            </div>
+      <a href={href} className="tag-anchor">
+        <div onClick={onClick} className="grid">
+          <div className="background" />
+          <div className="wipe" />
+          <div className="tag">
+            {name} {posts && `(${posts})`}
           </div>
-        </a>
-      </Link>
+        </div>
+      </a>
 
       <style jsx>{`
+        a:hover .tag {
+          color: ${alt};
+        }
+        a {
+          cursor: pointer;
+          text-decoration: none;
+        }
         .grid {
           display: grid;
         }
@@ -56,12 +67,6 @@ const LinkedTag: FC<Props> = ({ name, posts, coloured = false, onClick }) => {
 
           color: var(--chakra-colors-gray-700);
         }
-        a:hover .tag {
-          color: ${alt};
-        }
-        a {
-          text-decoration: none;
-        }
         .wipe {
           transition: all 0.2s;
 
@@ -86,6 +91,16 @@ const LinkedTag: FC<Props> = ({ name, posts, coloured = false, onClick }) => {
           background-color: ${coloured ? generateColour(name) : "gray.200"};
         }
       `}</style>
+    </>
+  );
+};
+
+const LinkedTag: FC<Props> = (props) => {
+  return (
+    <>
+      <Link href={`/discussion/tag/${props.name}`} passHref>
+        <TagButton {...props} />
+      </Link>
     </>
   );
 };
