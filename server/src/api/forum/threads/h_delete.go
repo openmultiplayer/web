@@ -19,12 +19,7 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var b patchBody
-	if !web.ParseBody(w, r, &b) {
-		return
-	}
-
-	post, err := s.threads.Delete(r.Context(), id, info.Cookie.UserID)
+	count, err := s.threads.Delete(r.Context(), id, info.Cookie.UserID)
 	if err != nil {
 		if errors.Is(err, db.ErrNotFound) {
 			web.StatusNotFound(w, err)
@@ -34,5 +29,5 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(post)
+	json.NewEncoder(w).Encode(map[string]int{"count": count})
 }

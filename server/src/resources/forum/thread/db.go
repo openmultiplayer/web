@@ -379,7 +379,7 @@ func (d *DB) Delete(ctx context.Context, id, authorID string) (int, error) {
 	// a different abstraction layer. Lower than the HTTP API but higher than
 	// the database implementation.
 	if err := forum.CanUserMutatePost(ctx, d.db, authorID, id); err != nil {
-		return 0, err
+		return 0, errors.Wrap(err, "failed to check user permissions")
 	}
 
 	result, err := d.db.Post.FindMany(
@@ -397,7 +397,7 @@ func (d *DB) Delete(ctx context.Context, id, authorID string) (int, error) {
 		db.Post.DeletedAt.Set(time.Now()),
 	).Exec(ctx)
 	if err != nil {
-		return 0, err
+		return 0, errors.Wrap(err, "failed to set deletedAt for posts")
 	}
 
 	return result.Count, nil

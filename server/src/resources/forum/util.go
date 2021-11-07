@@ -42,8 +42,11 @@ func CanUserMutatePost(ctx context.Context, d *db.PrismaClient, authorID, id str
 	if err != nil {
 		return err
 	}
-	if post.Author().ID != authorID || post.Author().Admin {
-		return ErrUnauthorised
+	if post.Author().Admin {
+		return nil
 	}
-	return nil
+	if post.Author().ID == authorID {
+		return nil
+	}
+	return ErrUnauthorised
 }
