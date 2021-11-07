@@ -370,3 +370,35 @@ func (d *DB) Update(ctx context.Context, id string, title, categoryID *string, p
 	}
 	return post.FromModel(p), nil
 }
+
+func (d *DB) Delete(ctx context.Context, id, authorID string) (int, error) {
+	// NOTE:
+	// We really want this authorID to eventually be removed from this API.
+	// Because this API should be user-agnostic, and should be usable by non-
+	// human users. Therefore, the validation of access rights should happen at
+	// a different abstraction layer. Lower than the HTTP API but higher than
+	// the database implementation.
+	if err := forum.CanUserMutatePost(ctx, d.db, authorID, id); err != nil {
+		return 0, errors.Wrap(err, "failed to check user permissions")
+	}
+
+	result, err := d.db.Post.FindMany(
+		db.Post.Or(
+			db.Post.And(
+				db.Post.First.Equals(true),
+				db.Post.ID.Equals(id),
+			),
+			db.Post.And(
+				db.Post.First.Equals(false),
+				db.Post.Root.Where(db.Post.ID.Equals(id)),
+			),
+		),
+	).Update(
+		db.Post.DeletedAt.Set(time.Now()),
+	).Exec(ctx)
+	if err != nil {
+		return 0, errors.Wrap(err, "failed to set deletedAt for posts")
+	}
+
+	return result.Count, nil
+}

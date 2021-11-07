@@ -20,7 +20,7 @@ import React, { FC, useCallback } from "react";
 import { useIsAdmin } from "src/auth/hooks";
 import { WEB_ADDRESS } from "src/config";
 import { Post } from "src/types/_generated_Forum";
-import { useDeletePost, useUpdateThread } from "./hooks";
+import { useDeleteThread, useUpdateThread } from "./hooks";
 
 type Props = {
   post: Post;
@@ -31,7 +31,7 @@ const ThreadMenu: FC<Props> = ({ post }) => {
   const admin = useIsAdmin();
 
   const updateThread = useUpdateThread();
-  const deleteThread = useDeletePost();
+  const deleteThread = useDeleteThread();
 
   const { hasCopied, onCopy } = useClipboard(
     `${WEB_ADDRESS}/discussion/${post.slug}#${post.id}`
