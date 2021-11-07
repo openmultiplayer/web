@@ -42,7 +42,7 @@ const ThreadMenu: FC<Props> = ({ post }) => {
   }, [onCopy, toast]);
 
   const onClickPin = useCallback(
-    () => updateThread({ ...post, pinned: true }),
+    () => updateThread({ ...post, pinned: !post.pinned }),
     [updateThread, post]
   );
   const onClickDelete = useCallback(
@@ -74,7 +74,7 @@ const ThreadMenu: FC<Props> = ({ post }) => {
             <MenuDivider />
             <MenuOptionGroup>
               <MenuItem icon={<EditIcon />} onClick={onClickPin}>
-                Pin
+                {post.pinned ? "Unpin" : "Pin"}
               </MenuItem>
               <MenuItem icon={<DeleteIcon />} onClick={onClickDelete}>
                 Delete
