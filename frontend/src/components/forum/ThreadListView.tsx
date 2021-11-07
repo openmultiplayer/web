@@ -48,7 +48,6 @@ const ThreadListView: FC<Props> = ({
     [router]
   );
 
-  const isAdmin = useIsAdmin();
   const { data, error } = useSWR<Post[], APIError>(
     "/forum/threads?" +
       new URLSearchParams([
@@ -69,7 +68,6 @@ const ThreadListView: FC<Props> = ({
     <Measured>
       <ThreadList
         data={data}
-        isAdmin={isAdmin}
         category={category}
         tags={initialTags}
         query={initialText}
