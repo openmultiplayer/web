@@ -62,6 +62,7 @@ func FromModel(u *db.PostModel) (w *Post) {
 		Body:       u.InnerPost.Body,
 		Short:      u.InnerPost.Short,
 		First:      u.InnerPost.First,
+		Pinned:     u.InnerPost.Pinned,
 		CreatedAt:  u.InnerPost.CreatedAt,
 		UpdatedAt:  u.InnerPost.UpdatedAt,
 		DeletedAt:  u.InnerPost.DeletedAt,
