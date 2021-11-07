@@ -27,7 +27,7 @@ type Repository interface {
 
 	Update(ctx context.Context, id string, title, category *string, pinned *bool) (*post.Post, error)
 
-	Delete(ctx context.Context, id string) (int, error)
+	Delete(ctx context.Context, id, authorID string) (int, error)
 
 	CreateLegacyThread(
 		ctx context.Context,
