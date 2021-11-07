@@ -32,6 +32,10 @@ func Build() fx.Option {
 			rtr.
 				With(authentication.MustBeAuthenticated /*ratelimiter.WithRateLimit(5)*/).
 				Post("/", s.post)
+
+			rtr.
+				With(authentication.MustBeAuthenticated /*ratelimiter.WithRateLimit(5)*/).
+				Patch("/{id}", s.patch)
 		}),
 	)
 }

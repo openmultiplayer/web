@@ -105,6 +105,7 @@ model Post {
   body    String
   short   String
   first   Boolean
+  pinned  Boolean @default(false)
   author  User    @relation(fields: [userId], references: [id])
   root    Post?   @relation("PostToRoot", fields: [rootPostId], references: [id])
   posts   Post[]  @relation("PostToRoot")

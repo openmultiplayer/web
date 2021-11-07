@@ -36,6 +36,7 @@ export const PostSchema = z.object({
   body: z.string(),
   short: z.string(),
   first: z.boolean(),
+  pinned: z.boolean(),
   createdAt: z.string(),
   updatedAt: z.string(),
   deletedAt: z.string().nullable(),
