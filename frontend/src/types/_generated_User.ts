@@ -7,6 +7,8 @@ export const UserSchema = z.object({
   name: z.string(),
   bio: z.string().nullable(),
   admin: z.boolean(),
+  threadCount: z.number(),
+  postCount: z.number(),
   createdAt: z.string(),
   updatedAt: z.string(),
   deletedAt: z.string().nullable(),
