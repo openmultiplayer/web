@@ -83,6 +83,34 @@ export const useUpdateThread = (): UpdateThreadFn => {
   return onUpdate;
 };
 
+export const useDeleteThread = (): DeleteFn => {
+  const toast = useToast();
+  const { mutate } = useSWRConfig();
+  const handler = useErrorHandler();
+  const onDelete = useCallback(
+    async (id: string) => {
+      nProgress.start();
+      try {
+        const r = await apiSSP<{ count: number }>(`/forum/threads/${id}`, {
+          method: "DELETE",
+        });
+        toast({
+          title: "Thread deleted!",
+          description: `${r.count} posts deleted.`,
+          status: "success",
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate("/forum/threads");
+      nProgress.done();
+    },
+    [handler, toast, mutate]
+  );
+
+  return onDelete;
+};
+
 export const useCreatePost = (
   id: string,
   slug: string,
