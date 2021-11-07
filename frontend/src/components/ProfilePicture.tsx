@@ -7,24 +7,21 @@ const imageUrl = (id: string) => `${API_ADDRESS}/users/image/${id}`;
 
 type Props = {
   id: string;
+  size?: string;
 };
 
-const ProfilePicture: FC<Props> = ({ id }) => {
+const ProfilePicture: FC<Props> = ({ id, size = "1.5em" }) => {
   const src = imageUrl(id);
 
   return (
-    <Box
-      position="relative"
-      borderRadius="50%"
-      overflow="hidden"
-      width="1.5em"
-      height="1.5em"
-    >
+    <Box overflow="hidden" borderRadius="50%" w={size}>
       <Image
         src={src}
         alt="User's profile picture"
-        layout="fill"
-        objectFit="cover"
+        width={40}
+        height={40}
+        layout="responsive"
+        objectFit="contain"
       />
     </Box>
   );
