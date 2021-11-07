@@ -15,6 +15,7 @@ import { useSWRConfig } from "swr";
 import { PostPayload } from "./PostEditor";
 
 type CreateThreadFn = (data: PostPayload) => void;
+type UpdateThreadFn = (data: Post) => void;
 type CreatePostFn = (data: PostPayload) => void;
 type DeleteFn = (id: string) => void;
 type EditFn = (data: PostPayload) => void;
@@ -52,6 +53,34 @@ export const useCreateThread = (): CreateThreadFn => {
   );
 
   return onSubmit;
+};
+
+export const useUpdateThread = (): UpdateThreadFn => {
+  const toast = useToast();
+  const { mutate } = useSWRConfig();
+  const handler = useErrorHandler();
+  const onUpdate = useCallback(
+    async (data: Post) => {
+      nProgress.start();
+      try {
+        await apiSSP<Post>(`/forum/threads/${data.id}`, {
+          method: "PATCH",
+          body: JSON.stringify(data),
+        });
+        toast({
+          title: "Thread updated!",
+          status: "success",
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate("/forum/threads");
+      nProgress.done();
+    },
+    [handler, toast, mutate]
+  );
+
+  return onUpdate;
 };
 
 export const useCreatePost = (

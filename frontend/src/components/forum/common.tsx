@@ -42,30 +42,6 @@ export const CategoryName: FC<CategoryNameProps> = ({ category }) => (
   </NextLink>
 );
 
-type AdminToolsProps = { show: boolean; post: Post };
-export const AdminTools: FC<AdminToolsProps> = ({ show, post }) => {
-  const onDelete = useDeletePost();
-  const onClick = useCallback(() => {
-    onDelete(post.id);
-  }, [post, onDelete]);
-
-  if (!show) {
-    return null;
-  }
-
-  return (
-    <div>
-      {post.deletedAt === null ? (
-        <Button colorScheme="red" size="xs" onClick={onClick}>
-          Delete
-        </Button>
-      ) : (
-        <span>{`Deleted ${niceDate(post.deletedAt as string)}`}</span>
-      )}
-    </div>
-  );
-};
-
 type TagListProps = { tags: string[] };
 export const TagList: FC<TagListProps> = ({ tags }) => (
   <Grid templateColumns="1fr" templateRows="1fr">

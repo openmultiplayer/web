@@ -1,14 +1,14 @@
 import Link from "next/link";
 import React, { FC } from "react";
 import { Post } from "src/types/_generated_Forum";
-import { AdminTools, CategoryName, PostMetadata } from "./common";
+import { CategoryName, PostMetadata } from "./common";
+import ThreadAdminMenu from "./ThreadMenu";
 
 type Props = {
   post: Post;
-  showAdminTools: boolean;
 };
 
-const ThreadListItem: FC<Props> = ({ post, showAdminTools }) => {
+const ThreadListItem: FC<Props> = ({ post }) => {
   return (
     <li>
       <article>
@@ -16,7 +16,7 @@ const ThreadListItem: FC<Props> = ({ post, showAdminTools }) => {
           <header>
             <div className="category">
               <CategoryName category={post.category} />
-              <AdminTools show={showAdminTools} post={post} />
+              <ThreadAdminMenu post={post} />
             </div>
 
             <h1>

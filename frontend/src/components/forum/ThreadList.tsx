@@ -51,13 +51,11 @@ const ListHeader: FC<HeaderProps> = ({
 
 type Props = {
   data: Post[];
-  isAdmin: boolean;
   category: string;
 } & HeaderProps;
 
 const ThreadList: FC<Props> = ({
   data,
-  isAdmin,
   category,
   tags,
   query,
@@ -65,7 +63,7 @@ const ThreadList: FC<Props> = ({
   onSearch,
 }) => {
   const mapping = map((post: Post) => (
-    <ThreadListItem post={post} showAdminTools={isAdmin} key={post.id} />
+    <ThreadListItem post={post} key={post.id} />
   ));
 
   return (
