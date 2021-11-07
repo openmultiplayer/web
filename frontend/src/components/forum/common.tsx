@@ -1,4 +1,3 @@
-import { Button } from "@chakra-ui/button";
 import { LinkIcon, RepeatClockIcon } from "@chakra-ui/icons";
 import {
   Box,
@@ -6,17 +5,15 @@ import {
   Grid,
   Link,
   ListItem,
-  Text,
   UnorderedList,
 } from "@chakra-ui/layout";
-import { FC, useCallback } from "react";
+import NextLink from "next/link";
+import { FC } from "react";
+import { WEB_ADDRESS } from "src/config";
 import { Category, Post, PostMeta } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
 import ProfilePicture from "../ProfilePicture";
-import { useDeletePost } from "./hooks";
 import LinkedTag from "./LinkedTag";
-import NextLink from "next/link";
-import { WEB_ADDRESS } from "src/config";
 
 type CategoryNameProps = { category: Category };
 export const CategoryName: FC<CategoryNameProps> = ({ category }) => (
@@ -57,7 +54,7 @@ export const TagList: FC<TagListProps> = ({ tags }) => (
     >
       {tags.map((t) => (
         <ListItem key={t}>
-          <LinkedTag name={t} />
+          <LinkedTag name={t} coloured />
         </ListItem>
       ))}
     </UnorderedList>

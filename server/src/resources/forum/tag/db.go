@@ -27,6 +27,7 @@ func (d *DB) GetTags(ctx context.Context, query string) ([]Tag, error) {
 			"Post" p on ttp."A" = p.id
 		where t.name like $1
 		group by t.id
+		order by posts desc
 	`, query+"%").Exec(ctx, &tags)
 	if err != nil {
 		return nil, err
