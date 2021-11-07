@@ -17,15 +17,15 @@ const ThreadListItem: FC<Props> = ({ post }) => {
   const categoryColourBack = opacify(-0.99, categoryColour);
   const categoryColourEdge = opacify(-0.8, categoryColour);
 
-  const backgroundColor = post.deletedAt
-    ? "chakra-colors-red.100"
-    : post.pinned
-    ? categoryColourBack
-    : "chakra-colors-white";
+  const deletedPostColour = "red.50";
+  const pinnedPostColour = post.pinned ? categoryColourBack : "white";
+  const backgroundColor = post.deletedAt ? deletedPostColour : pinnedPostColour;
 
-  const boxShadow = post.pinned
+  const deletedBoxShadow = `inset 0 0 0.5em var(--chakra-colors-red-100)`;
+  const pinnedPostBoxShadow = post.pinned
     ? `inset 0 0 0.5em ${categoryColourEdge}`
     : "none";
+  const boxShadow = post.deletedAt ? deletedBoxShadow : pinnedPostBoxShadow;
 
   return (
     <li>
