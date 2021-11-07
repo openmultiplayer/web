@@ -370,3 +370,25 @@ func (d *DB) Update(ctx context.Context, id string, title, categoryID *string, p
 	}
 	return post.FromModel(p), nil
 }
+
+func (d *DB) Delete(ctx context.Context, id string) (int, error) {
+	result, err := d.db.Post.FindMany(
+		db.Post.Or(
+			db.Post.And(
+				db.Post.First.Equals(true),
+				db.Post.ID.Equals(id),
+			),
+			db.Post.And(
+				db.Post.First.Equals(false),
+				db.Post.Root.Where(db.Post.ID.Equals(id)),
+			),
+		),
+	).Update(
+		db.Post.DeletedAt.Set(time.Now()),
+	).Exec(ctx)
+	if err != nil {
+		return 0, err
+	}
+
+	return result.Count, nil
+}
