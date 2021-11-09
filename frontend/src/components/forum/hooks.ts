@@ -9,6 +9,7 @@ import {
   CategorySchema,
   Post,
   PostSchema,
+  React,
 } from "src/types/_generated_Forum";
 import { useErrorHandler } from "src/utils/useErrorHandler";
 import { useSWRConfig } from "swr";
@@ -19,6 +20,8 @@ type UpdateThreadFn = (data: Post) => void;
 type CreatePostFn = (data: PostPayload) => void;
 type DeleteFn = (id: string) => void;
 type EditFn = (data: PostPayload) => void;
+type AddReactFn = (id: string, react: string) => void;
+type DeleteReactFn = (id: string, react: string) => void;
 type UpdateCategoriesFn = (categories: Category[]) => void;
 type DeleteCategoryFn = (id: string, moveTo: string) => void;
 type UpdateCategoryFn = (category: Category) => void;
@@ -197,6 +200,52 @@ export const useEditPost = (): EditFn => {
   );
 
   return onEdit;
+};
+
+export const useReaction = (): {
+  addReact: AddReactFn;
+  deleteReact: DeleteReactFn;
+} => {
+  const { mutate } = useSWRConfig();
+  const handler = useErrorHandler();
+  const addReact = useCallback(
+    async (id: string, react: string) => {
+      nProgress.start();
+      try {
+        await apiSSP<React>(`/forum/reacts/${id}`, {
+          method: "POST",
+          body: JSON.stringify({
+            emoji: react,
+          }),
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate("/forum/posts/${id}");
+      nProgress.done();
+    },
+    [handler, mutate]
+  );
+  const deleteReact = useCallback(
+    async (id: string) => {
+      nProgress.start();
+      try {
+        await apiSSP<React>(`/forum/reacts/${id}`, {
+          method: "DELETE",
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate("/forum/posts/${id}");
+      nProgress.done();
+    },
+    [handler, mutate]
+  );
+
+  return {
+    addReact,
+    deleteReact,
+  };
 };
 
 export const useUpdateCategories = (): UpdateCategoriesFn => {

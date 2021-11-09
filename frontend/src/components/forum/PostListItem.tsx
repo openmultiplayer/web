@@ -31,6 +31,7 @@ import { Post } from "src/types/_generated_Forum";
 import { PostMetadata } from "./common";
 import { useDeletePost, useEditPost } from "./hooks";
 import PostEditor, { PostPayload } from "./PostEditor";
+import PostReacts from "./PostReacts";
 
 type Props = {
   thread: Partial<Post>;
@@ -203,6 +204,10 @@ const PostListItem: FC<Props> = ({
             ) : (
               <MDXRemote {...markdown}></MDXRemote>
             )}
+          </Box>
+
+          <Box as="footer" mt="0.5em">
+            <PostReacts post={post} />
           </Box>
         </div>
       </article>
