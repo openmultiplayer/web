@@ -1,10 +1,12 @@
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { CheckIcon, EditIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Divider,
   Flex,
-  Heading,
   IconButton,
+  Heading,
+  Input,
   Menu,
   MenuButton,
   MenuItem,
@@ -13,20 +15,23 @@ import {
   Stat,
   StatLabel,
   StatNumber,
-  Text,
 } from "@chakra-ui/react";
-import { FC, useCallback } from "react";
-import { useIsAdmin } from "src/auth/hooks";
+import { FC, useCallback, useState, ChangeEvent } from "react";
+import ReactMarkdown from "react-markdown";
+import Editor from "rich-markdown-editor";
+import { useAuth, useIsAdmin } from "src/auth/hooks";
 import { User } from "src/types/_generated_User";
 import { niceDate } from "src/utils/dates";
+import { useBanStatus, useUpdateUser } from "./hooks";
 import ProfilePicture from "./ProfilePicture";
-import { useBanStatus } from "./hooks";
 
 type Props = {
   user: User;
 };
 
-const MemberMenu: FC<Props> = ({ user }) => {
+const MemberMenu: FC<Props & { onEdit: () => void }> = ({ user, onEdit }) => {
+  const loggedIn = useAuth();
+  const isOwner = user.id === loggedIn?.user?.id;
   const admin = useIsAdmin();
   const banstatus = useBanStatus();
   const isBanned = user.deletedAt != null;
@@ -46,6 +51,11 @@ const MemberMenu: FC<Props> = ({ user }) => {
         borderWidth="0"
       ></MenuButton>
       <MenuList>
+        {isOwner && (
+          <MenuItem icon={<EditIcon />} onClick={onEdit}>
+            Edit
+          </MenuItem>
+        )}
         {admin && (
           <MenuItem onClick={onClickBan}>{isBanned ? "Unban" : "Ban"}</MenuItem>
         )}
@@ -54,7 +64,57 @@ const MemberMenu: FC<Props> = ({ user }) => {
   );
 };
 
+const clean = (md: string): string => {
+  const cleaned = md.replace(/^\\/gm, "");
+  return cleaned.trim();
+};
+
+const BioEditor: FC<{ bio?: string; onChange: (s: string) => void }> = ({
+  bio,
+  onChange,
+}) => {
+  const _onChange = useCallback(
+    (body: () => string) => onChange(clean(body())),
+    [onChange]
+  );
+
+  return (
+    <Editor
+      className="mv2"
+      defaultValue={bio}
+      onChange={_onChange}
+      placeholder={"Enter your profile bio here"}
+      disableExtensions={[
+        "container_notice",
+        "table",
+        "checkbox_list",
+        "placeholder",
+      ]}
+    />
+  );
+};
+
 const MemberProfile: FC<Props> = ({ user }) => {
+  const [editing, setEditing] = useState(false);
+  const onEdit = useCallback(() => setEditing(true), [setEditing]);
+
+  const [editedUser, setEditedUser] = useState(user);
+  const onChangeName = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) =>
+      setEditedUser({ ...user, name: event.target.value }),
+    [user, setEditedUser]
+  );
+  const onChangeBio = useCallback(
+    (bio: string) => setEditedUser({ ...user, bio }),
+    [user, setEditedUser]
+  );
+
+  const update = useUpdateUser();
+  const onSave = useCallback(() => {
+    update(editedUser);
+    setEditing(false);
+  }, [update, editedUser]);
+
   return (
     <Box as="section" height="100%">
       <Flex gridGap="1em">
@@ -65,8 +125,12 @@ const MemberProfile: FC<Props> = ({ user }) => {
         <Box flexGrow={1}>
           <Stack>
             <Flex justifyContent="space-between" alignItems="center">
-              <Heading>{user.name}</Heading>
-              <MemberMenu user={user} />
+              {editing ? (
+                <Input onChange={onChangeName} defaultValue={user.name} />
+              ) : (
+                <Heading>{user.name}</Heading>
+              )}
+              <MemberMenu user={user} onEdit={onEdit} />
             </Flex>
 
             <Divider />
@@ -85,8 +149,6 @@ const MemberProfile: FC<Props> = ({ user }) => {
               )}
             </Flex>
 
-            <Divider />
-
             <Flex>
               <Stat>
                 <StatLabel>Threads created</StatLabel>
@@ -101,7 +163,26 @@ const MemberProfile: FC<Props> = ({ user }) => {
 
             <Divider />
 
-            <Text>{user.bio ?? "(This user has no bio)"}</Text>
+            {editing ? (
+              <BioEditor bio={user.bio ?? undefined} onChange={onChangeBio} />
+            ) : (
+              <ReactMarkdown>
+                {user.bio ?? "(This user has no bio)"}
+              </ReactMarkdown>
+            )}
+
+            {editing && (
+              <Box>
+                <Button
+                  leftIcon={<CheckIcon />}
+                  colorScheme="green"
+                  variant="solid"
+                  onClick={onSave}
+                >
+                  Save
+                </Button>
+              </Box>
+            )}
           </Stack>
         </Box>
       </Flex>
