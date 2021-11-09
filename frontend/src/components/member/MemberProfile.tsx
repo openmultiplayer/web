@@ -1,4 +1,9 @@
-import { CheckIcon, EditIcon, HamburgerIcon } from "@chakra-ui/icons";
+import {
+  CheckIcon,
+  EditIcon,
+  HamburgerIcon,
+  NotAllowedIcon,
+} from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -57,7 +62,9 @@ const MemberMenu: FC<Props & { onEdit: () => void }> = ({ user, onEdit }) => {
           </MenuItem>
         )}
         {admin && (
-          <MenuItem onClick={onClickBan}>{isBanned ? "Unban" : "Ban"}</MenuItem>
+          <MenuItem icon={<NotAllowedIcon />} onClick={onClickBan}>
+            {isBanned ? "Unban" : "Ban"}
+          </MenuItem>
         )}
       </MenuList>
     </Menu>
