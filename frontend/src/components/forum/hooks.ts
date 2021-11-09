@@ -226,7 +226,6 @@ export const useReaction = (): {
   );
   const deleteReact = useCallback(
     async (id: string) => {
-      nProgress.start();
       try {
         await apiSSP<React>(`/forum/reacts/${id}`, {
           method: "DELETE",
@@ -235,7 +234,6 @@ export const useReaction = (): {
         handler(e);
       }
       mutate("/forum/posts/${id}");
-      nProgress.done();
     },
     [handler, mutate]
   );
