@@ -3,6 +3,7 @@ package react
 import (
 	"context"
 	"errors"
+	"strings"
 
 	"github.com/openmultiplayer/web/server/src/db"
 	"golang.org/x/exp/utf8string"
@@ -10,7 +11,11 @@ import (
 	"github.com/prisma/prisma-client-go/runtime/types"
 )
 
-var ErrInvalidEmoji = errors.New("invalid emoji codepoint")
+var (
+	ErrInvalidEmoji   = errors.New("invalid emoji codepoint")
+	ErrAlreadyReacted = errors.New("user already reacted emoji to post")
+	ErrUnauthorised   = errors.New("not allowed to remove another user's react")
+)
 
 type DB struct {
 	db *db.PrismaClient
@@ -47,6 +52,15 @@ func (d *DB) Add(ctx context.Context, userID, postID, emojiID string) (*React, e
 		).
 		Exec(ctx)
 	if err != nil {
+		// NOTE: This depends on internal Prisma error implementation details
+		// and may change without notice. This will be reflected by the frontend
+		// showing an Internal Server Error when a user attempts to react to a
+		// post with an emoji they have already reacted with. This comment
+		// signposts this possibility.
+		// TODO: Clean this up when Prisma's Go client adds better errors.
+		if strings.Contains(err.Error(), "UniqueConstraintViolation") {
+			return nil, ErrAlreadyReacted
+		}
 		return nil, err
 	}
 
@@ -65,19 +79,30 @@ func (d *DB) Add(ctx context.Context, userID, postID, emojiID string) (*React, e
 	return FromModel(react, react.RelationsReact.Post.ID), nil
 }
 
-func (d *DB) Remove(ctx context.Context, reactID string) (*React, error) {
+func (d *DB) Remove(ctx context.Context, userID, reactID string) (*React, error) {
+	// First, look up the react to check if this user has permissions to remove.
 	p, err := d.db.React.
-		FindUnique(
-			db.React.ID.Equals(reactID),
-		).
+		FindUnique(db.React.ID.Equals(reactID)).
 		With(
 			db.React.User.Fetch(),
 			db.React.Post.Fetch(),
 		).
-		Delete().
 		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
+
+	if !p.RelationsReact.User.Admin && p.UserID != userID {
+		return nil, ErrUnauthorised
+	}
+
+	// the user has permission, remove it.
+	if _, err = d.db.React.
+		FindUnique(db.React.ID.Equals(reactID)).
+		Delete().
+		Exec(ctx); err != nil {
+		return nil, err
+	}
+
 	return FromModel(p, p.RelationsReact.Post.ID), nil
 }
