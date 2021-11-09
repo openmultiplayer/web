@@ -38,16 +38,16 @@ func Build() fx.Option {
 				Get("/{id}", s.get)
 
 			rtr.
+				With(authentication.MustBeAuthenticated).
+				Patch("/{id}", s.patch)
+
+			rtr.
 				With(authentication.MustBeAuthenticated, auth.MustBeAdmin).
 				Put("/banstatus/{id}", s.banstatus)
 
 			rtr.
 				With(authentication.MustBeAuthenticated).
 				Get("/self", s.self)
-
-			rtr.
-				With(authentication.MustBeAuthenticated).
-				Patch("/self", s.patch)
 
 			rtr.
 				With(authentication.MustBeAuthenticated, auth.MustBeAdmin).
