@@ -1,0 +1,42 @@
+package reacts
+
+import (
+	"encoding/json"
+	"errors"
+	"net/http"
+
+	"github.com/go-chi/chi"
+	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/web"
+)
+
+type postBody struct {
+	Emoji string `json:"emoji"`
+}
+
+func (s *service) post(w http.ResponseWriter, r *http.Request) {
+	postID := chi.URLParam(r, "post_id")
+	info, ok := authentication.GetAuthenticationInfo(w, r)
+	if !ok {
+		return
+	}
+
+	var b postBody
+	if err := web.DecodeBody(r, &b); err != nil {
+		web.StatusBadRequest(w, err)
+		return
+	}
+
+	react, err := s.reacts.Add(r.Context(), info.Cookie.UserID, postID, b.Emoji)
+	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			web.StatusNotFound(w, err)
+		} else {
+			web.StatusInternalServerError(w, err)
+		}
+		return
+	}
+
+	json.NewEncoder(w).Encode(react)
+}

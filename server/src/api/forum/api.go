@@ -5,6 +5,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/api/forum/categories"
 	"github.com/openmultiplayer/web/server/src/api/forum/posts"
+	"github.com/openmultiplayer/web/server/src/api/forum/reacts"
 	"github.com/openmultiplayer/web/server/src/api/forum/tags"
 	"github.com/openmultiplayer/web/server/src/api/forum/threads"
 )
@@ -15,5 +16,6 @@ func Build() fx.Option {
 		posts.Build(),
 		threads.Build(),
 		tags.Build(),
+		reacts.Build(),
 	)
 }
