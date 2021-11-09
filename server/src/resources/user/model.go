@@ -9,15 +9,18 @@ import (
 type AuthMethod string
 
 type User struct {
-	ID         string     `json:"id"`
-	Email      string     `json:"email"`
-	AuthMethod string     `json:"authMethod"` // enum: "DISCORD", "GITHUB"
-	Name       string     `json:"name"`
-	Bio        *string    `json:"bio"`
-	Admin      bool       `json:"admin"`
-	CreatedAt  time.Time  `json:"createdAt"`
-	UpdatedAt  time.Time  `json:"updatedAt"`
-	DeletedAt  *time.Time `json:"deletedAt"`
+	ID          string  `json:"id"`
+	Email       string  `json:"email"`
+	AuthMethod  string  `json:"authMethod"` // enum: "DISCORD", "GITHUB"
+	Name        string  `json:"name"`
+	Bio         *string `json:"bio"`
+	Admin       bool    `json:"admin"`
+	ThreadCount int     `json:"threadCount"`
+	PostCount   int     `json:"postCount"`
+
+	CreatedAt time.Time  `json:"createdAt"`
+	UpdatedAt time.Time  `json:"updatedAt"`
+	DeletedAt *time.Time `json:"deletedAt"`
 
 	Github  *string `json:"github"`
 	Discord *string `json:"discord"`

@@ -6,7 +6,7 @@ import { FC } from "react";
  */
 const Measured: FC = ({ children }) => {
   return (
-    <Box maxWidth="48em" mx="auto" py="0.5em">
+    <Box maxWidth="48em" mx="auto" py="0.5em" height="100%">
       {children}
     </Box>
   );

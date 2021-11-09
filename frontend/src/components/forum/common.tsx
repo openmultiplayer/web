@@ -12,7 +12,7 @@ import { FC } from "react";
 import { WEB_ADDRESS } from "src/config";
 import { Category, Post, PostMeta } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
-import ProfilePicture from "../ProfilePicture";
+import MemberLink from "../member/MemberLink";
 import LinkedTag from "./LinkedTag";
 
 type CategoryNameProps = { category: Category };
@@ -84,11 +84,7 @@ export const PostMetadata: FC<PostMetadataProps> = ({
   return (
     <Flex gridGap="1em" justifyContent="space-between">
       <Flex gridGap="0.4em" alignItems="center">
-        <ProfilePicture id={post.author.id} />
-
-        <span>
-          <em className="author">{post.author.name}</em>
-        </span>
+        <MemberLink user={post.author} />
 
         <span className="posted">
           posted&nbsp;
@@ -127,10 +123,6 @@ export const PostMetadata: FC<PostMetadataProps> = ({
       <TagList tags={post.tags} />
 
       <style jsx>{`
-        em.author {
-          font-style: normal;
-          color: var(--chakra-colors-black);
-        }
         em {
           font-style: normal;
           color: var(--chakra-colors-black-500);
