@@ -146,12 +146,13 @@ func (d *DB) GetUsers(ctx context.Context, sort string, max, skip int, public bo
 	return FromModelMany(users, public), nil
 }
 
-func (d *DB) UpdateUser(ctx context.Context, userId string, email, name *string) (*User, error) {
+func (d *DB) UpdateUser(ctx context.Context, userId string, email, name, bio *string) (*User, error) {
 	user, err := d.db.User.
 		FindUnique(db.User.ID.Equals(userId)).
 		Update(
 			db.User.Email.SetIfPresent(email),
 			db.User.Name.SetIfPresent(name),
+			db.User.Bio.SetIfPresent(bio),
 		).
 		Exec(ctx)
 	if err != nil {
