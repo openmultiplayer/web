@@ -10,9 +10,11 @@ import {
 import { TagLabel } from "@chakra-ui/tag";
 import { BaseEmoji, Picker } from "emoji-mart";
 import "emoji-mart/css/emoji-mart.css";
-import { entries, flow, groupBy, map } from "lodash/fp";
+import { entries, filter, flow, groupBy, head, map } from "lodash/fp";
 import { FC, useCallback } from "react";
+import { useAuth } from "src/auth/hooks";
 import { Post, React } from "src/types/_generated_Forum";
+import { User } from "src/types/_generated_User";
 import twemoji from "twemoji";
 import { useReaction } from "./hooks";
 
@@ -20,14 +22,34 @@ type Props = {
   post: Post;
 };
 
-type ReactWithCount = Pick<React, "emoji"> & { count: number };
+type ReactGroup = {
+  reacts: React[];
+  count: number;
+  emoji: string;
+};
 
-const reactsToList = (post: Post) =>
-  map((r: ReactWithCount) => {
-    const { addReact } = useReaction();
+const getUsersReact = (userID: string) =>
+  flow(
+    filter((r: React) => r.user === userID),
+    head
+  );
+
+const reactsToList = (post: Post, user?: User) =>
+  map((r: ReactGroup) => {
+    const { addReact, deleteReact } = useReaction();
+    // scan the react group for reacts by the current user
+    const hasReacted = user && getUsersReact(user.id)(r.reacts);
+
     const onAdd = useCallback(() => {
       addReact(post.id, r.emoji);
     }, [addReact, r]);
+    const onDelete = useCallback(() => {
+      hasReacted && deleteReact(hasReacted?.id);
+    }, [deleteReact, hasReacted]);
+
+    // If the user clicks a reaction, they add one if they haven't already
+    // reacted or they remove their own reaction.
+    const eventHandler = hasReacted ? onDelete : onAdd;
 
     const emoji = twemoji.parse(r.emoji, {
       folder: "svg",
@@ -44,7 +66,7 @@ const reactsToList = (post: Post) =>
           size="auto"
           px="0.5em"
           py="0.2em"
-          onClick={onAdd}
+          onClick={eventHandler}
         >
           <span
             dangerouslySetInnerHTML={{
@@ -71,11 +93,14 @@ const reactsToList = (post: Post) =>
 const groupReacts = flow(
   groupBy<React>((r: React) => r.emoji),
   entries,
-  map(([emoji, data]): ReactWithCount => ({ emoji, count: data.length }))
+  map(
+    ([emoji, reacts]): ReactGroup => ({ reacts, emoji, count: reacts.length })
+  )
 );
 
 const PostReacts: FC<Props> = ({ post }) => {
   const reacts = groupReacts(post.reacts);
+  const { user } = useAuth();
   const { addReact } = useReaction();
 
   const onSelect = useCallback(
@@ -85,7 +110,7 @@ const PostReacts: FC<Props> = ({ post }) => {
     [addReact, post]
   );
 
-  const list = reactsToList(post);
+  const list = reactsToList(post, user);
 
   return (
     <Flex gridGap="0.5em" alignItems="center">

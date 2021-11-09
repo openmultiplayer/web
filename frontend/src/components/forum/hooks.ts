@@ -21,7 +21,7 @@ type CreatePostFn = (data: PostPayload) => void;
 type DeleteFn = (id: string) => void;
 type EditFn = (data: PostPayload) => void;
 type AddReactFn = (id: string, react: string) => void;
-type DeleteReactFn = (id: string, react: string) => void;
+type DeleteReactFn = (id: string) => void;
 type UpdateCategoriesFn = (categories: Category[]) => void;
 type DeleteCategoryFn = (id: string, moveTo: string) => void;
 type UpdateCategoryFn = (category: Category) => void;
@@ -210,7 +210,6 @@ export const useReaction = (): {
   const handler = useErrorHandler();
   const addReact = useCallback(
     async (id: string, react: string) => {
-      nProgress.start();
       try {
         await apiSSP<React>(`/forum/reacts/${id}`, {
           method: "POST",
@@ -222,7 +221,6 @@ export const useReaction = (): {
         handler(e);
       }
       mutate("/forum/posts/${id}");
-      nProgress.done();
     },
     [handler, mutate]
   );
