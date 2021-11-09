@@ -34,7 +34,7 @@ func Build() fx.Option {
 				Get("/", s.list)
 
 			rtr.
-				With(authentication.MustBeAuthenticated).
+				With().
 				Get("/{id}", s.get)
 
 			rtr.
