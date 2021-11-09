@@ -15,10 +15,12 @@ import {
   StatNumber,
   Text,
 } from "@chakra-ui/react";
-import { FC } from "react";
+import { FC, useCallback } from "react";
 import { useIsAdmin } from "src/auth/hooks";
 import { User } from "src/types/_generated_User";
+import { niceDate } from "src/utils/dates";
 import ProfilePicture from "../ProfilePicture";
+import { useBanStatus } from "./hooks";
 
 type Props = {
   user: User;
@@ -26,6 +28,13 @@ type Props = {
 
 const MemberMenu: FC<Props> = ({ user }) => {
   const admin = useIsAdmin();
+  const banstatus = useBanStatus();
+  const isBanned = user.deletedAt != null;
+
+  const onClickBan = useCallback(() => {
+    banstatus(user.id, !isBanned);
+  }, [banstatus, user, isBanned]);
+
   return (
     <Menu placement="left-start">
       <MenuButton
@@ -36,7 +45,11 @@ const MemberMenu: FC<Props> = ({ user }) => {
         boxSize="1.5em"
         borderWidth="0"
       ></MenuButton>
-      <MenuList>{admin && <MenuItem>Ban</MenuItem>}</MenuList>
+      <MenuList>
+        {admin && (
+          <MenuItem onClick={onClickBan}>{isBanned ? "Unban" : "Ban"}</MenuItem>
+        )}
+      </MenuList>
     </Menu>
   );
 };
@@ -55,6 +68,23 @@ const MemberProfile: FC<Props> = ({ user }) => {
               <Heading>{user.name}</Heading>
               <MemberMenu user={user} />
             </Flex>
+
+            <Divider />
+
+            <Flex>
+              <Stat>
+                <StatLabel>Joined</StatLabel>
+                <StatNumber>{niceDate(user.createdAt)}</StatNumber>
+              </Stat>
+
+              {user.deletedAt && (
+                <Stat color="red">
+                  <StatLabel>Banned</StatLabel>
+                  <StatNumber>{niceDate(user.deletedAt)}</StatNumber>
+                </Stat>
+              )}
+            </Flex>
+
             <Divider />
 
             <Flex>
@@ -68,6 +98,8 @@ const MemberProfile: FC<Props> = ({ user }) => {
                 <StatNumber>{user.postCount}</StatNumber>
               </Stat>
             </Flex>
+
+            <Divider />
 
             <Text>{user.bio ?? "(This user has no bio)"}</Text>
           </Stack>
