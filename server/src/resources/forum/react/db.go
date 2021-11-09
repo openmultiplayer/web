@@ -5,9 +5,9 @@ import (
 	"errors"
 
 	"github.com/openmultiplayer/web/server/src/db"
-	"github.com/openmultiplayer/web/server/src/resources/forum/post"
-	"github.com/prisma/prisma-client-go/runtime/types"
 	"golang.org/x/exp/utf8string"
+
+	"github.com/prisma/prisma-client-go/runtime/types"
 )
 
 var ErrInvalidEmoji = errors.New("invalid emoji codepoint")
@@ -20,7 +20,7 @@ func New(db *db.PrismaClient) Repository {
 	return &DB{db}
 }
 
-func (d *DB) Add(ctx context.Context, userID, postID, emojiID string) (*post.Post, error) {
+func (d *DB) Add(ctx context.Context, userID, postID, emojiID string) (*React, error) {
 	s := utf8string.NewString(emojiID)
 	var emoji int64
 	if s.RuneCount() == 1 {
@@ -41,12 +41,16 @@ func (d *DB) Add(ctx context.Context, userID, postID, emojiID string) (*post.Pos
 				db.Post.ID.Equals(postID),
 			),
 		).
+		With(
+			db.React.User.Fetch(),
+			db.React.Post.Fetch(),
+		).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
 
-	p, err := d.db.Post.
+	_, err = d.db.Post.
 		FindUnique(db.Post.ID.Equals(postID)).
 		Update(
 			db.Post.Reacts.Link(
@@ -58,15 +62,16 @@ func (d *DB) Add(ctx context.Context, userID, postID, emojiID string) (*post.Pos
 		return nil, err
 	}
 
-	return post.FromModel(p), nil
+	return FromModel(react, react.RelationsReact.Post.ID), nil
 }
 
-func (d *DB) Remove(ctx context.Context, postID, reactID string) (*post.Post, error) {
+func (d *DB) Remove(ctx context.Context, reactID string) (*React, error) {
 	p, err := d.db.React.
 		FindUnique(
 			db.React.ID.Equals(reactID),
 		).
 		With(
+			db.React.User.Fetch(),
 			db.React.Post.Fetch(),
 		).
 		Delete().
@@ -74,5 +79,5 @@ func (d *DB) Remove(ctx context.Context, postID, reactID string) (*post.Post, er
 	if err != nil {
 		return nil, err
 	}
-	return post.FromModel(p.RelationsReact.Post), nil
+	return FromModel(p, p.RelationsReact.Post.ID), nil
 }

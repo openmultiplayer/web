@@ -86,6 +86,9 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted, 
 			db.Post.ReplyTo.Fetch().With(
 				db.Post.Author.Fetch(),
 			),
+			db.Post.Reacts.Fetch().With(
+				db.React.User.Fetch(),
+			),
 		).
 		Take(max).
 		Skip(skip).

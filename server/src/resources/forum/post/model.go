@@ -5,6 +5,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/resources/forum/category"
+	"github.com/openmultiplayer/web/server/src/resources/forum/react"
 )
 
 type Author struct {
@@ -32,6 +33,7 @@ type Post struct {
 	Posts      int                `json:"posts"`
 	ReplyTo    *category.PostMeta `json:"replyTo"`
 	Category   category.Category  `json:"category"`
+	Reacts     []react.React      `json:"reacts"`
 }
 
 func FromModel(u *db.PostModel) (w *Post) {
@@ -52,6 +54,13 @@ func FromModel(u *db.PostModel) (w *Post) {
 		replyTo = &category.PostMeta{
 			Author: u.RelationsPost.Author.Name,
 			PostID: u.RelationsPost.ReplyTo.ID,
+		}
+	}
+
+	var reacts []react.React
+	if u.RelationsPost.Reacts != nil {
+		for _, r := range u.RelationsPost.Reacts {
+			reacts = append(reacts, *react.FromModel(&r, u.ID))
 		}
 	}
 
@@ -77,5 +86,6 @@ func FromModel(u *db.PostModel) (w *Post) {
 		Tags:     tags,
 		Category: cat,
 		ReplyTo:  replyTo,
+		Reacts:   reacts,
 	}
 }

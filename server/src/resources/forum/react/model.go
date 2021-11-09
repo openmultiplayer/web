@@ -9,11 +9,11 @@ type React struct {
 	Post  string `json:"Post"`
 }
 
-func FromModel(model *db.ReactModel) *React {
+func FromModel(model *db.ReactModel, postID string) *React {
 	return &React{
 		ID:    model.ID,
 		Emoji: string(rune(model.Emoji)),
 		User:  model.RelationsReact.User.ID,
-		Post:  model.RelationsReact.Post.ID,
+		Post:  postID,
 	}
 }
