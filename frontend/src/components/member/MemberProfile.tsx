@@ -125,11 +125,11 @@ const MemberProfile: FC<Props> = ({ user }) => {
   return (
     <Box as="section" height="100%">
       <Flex gridGap="1em">
-        <Box maxW="10em" flexGrow={1}>
+        <Box maxW="20%" flexGrow={1}>
           <ProfilePicture id={user.id} size="100%" />
         </Box>
 
-        <Box flexGrow={1}>
+        <Box maxW="80%" flexGrow={2}>
           <Stack>
             <Flex justifyContent="space-between" alignItems="center">
               {editing ? (
@@ -170,13 +170,16 @@ const MemberProfile: FC<Props> = ({ user }) => {
 
             <Divider />
 
-            {editing ? (
-              <BioEditor bio={user.bio ?? undefined} onChange={onChangeBio} />
-            ) : (
-              <ReactMarkdown>
-                {user.bio ?? "(This user has no bio)"}
-              </ReactMarkdown>
-            )}
+            <Box width="80%">
+              hi
+              {editing ? (
+                <BioEditor bio={user.bio ?? undefined} onChange={onChangeBio} />
+              ) : (
+                <ReactMarkdown>
+                  {user.bio ?? "(This user has no bio)"}
+                </ReactMarkdown>
+              )}
+            </Box>
 
             {editing && (
               <Box>
