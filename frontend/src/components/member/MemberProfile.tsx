@@ -19,7 +19,7 @@ import { FC, useCallback } from "react";
 import { useIsAdmin } from "src/auth/hooks";
 import { User } from "src/types/_generated_User";
 import { niceDate } from "src/utils/dates";
-import ProfilePicture from "../ProfilePicture";
+import ProfilePicture from "./ProfilePicture";
 import { useBanStatus } from "./hooks";
 
 type Props = {
