@@ -30,6 +30,7 @@ model User {
 
   servers Server[]
   posts   Post[]
+  reacts  React[]
 
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
@@ -112,6 +113,7 @@ model Post {
   replyTo Post?   @relation("ReplyToPost", fields: [replyPostId], references: [id])
   replies Post[]  @relation("ReplyToPost")
   tags    Tag[]   @relation("TagToPost")
+  reacts  React[]
 
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
@@ -141,4 +143,16 @@ model Category {
   sort        Int     @default(-1)
   admin       Boolean @default(false)
   posts       Post[]
+}
+
+model React {
+  id String @id @default(cuid())
+
+  emoji BigInt
+
+  user User @relation(fields: [userId], references: [id])
+  Post Post @relation(fields: [postId], references: [id])
+
+  postId String
+  userId String
 }
