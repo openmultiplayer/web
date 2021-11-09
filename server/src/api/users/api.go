@@ -39,7 +39,7 @@ func Build() fx.Option {
 
 			rtr.
 				With(authentication.MustBeAuthenticated, auth.MustBeAdmin).
-				Delete("/{id}", s.delete)
+				Put("/banstatus/{id}", s.banstatus)
 
 			rtr.
 				With(authentication.MustBeAuthenticated).

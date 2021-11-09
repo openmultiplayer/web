@@ -15,4 +15,5 @@ type Repository interface {
 	UpdateUser(ctx context.Context, userId string, email, name *string) (*User, error)
 	SetAdmin(ctx context.Context, userId string, status bool) (bool, error)
 	Ban(ctx context.Context, userId string) (*User, error)
+	Unban(ctx context.Context, userId string) (*User, error)
 }

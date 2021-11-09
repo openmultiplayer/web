@@ -187,3 +187,19 @@ func (d *DB) Ban(ctx context.Context, userId string) (*User, error) {
 
 	return FromModel(user, false), nil
 }
+
+func (d *DB) Unban(ctx context.Context, userId string) (*User, error) {
+	user, err := d.db.User.
+		FindUnique(
+			db.User.ID.Equals(userId),
+		).
+		Update(
+			db.User.DeletedAt.SetOptional(nil),
+		).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	return FromModel(user, false), nil
+}
