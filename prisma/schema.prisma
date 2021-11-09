@@ -157,4 +157,7 @@ model React {
 
   postId String
   userId String
+
+  // User should only be able to post one of any react per post.
+  @@unique([emoji, postId, userId])
 }
