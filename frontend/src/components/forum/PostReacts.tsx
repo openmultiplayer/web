@@ -129,6 +129,7 @@ const PostReacts: FC<Props> = ({ post }) => {
 
   const list = map((group: ReactGroup) => (
     <PostReact
+      key={group.emoji}
       group={group}
       postId={post.id}
       userId={user?.id}
