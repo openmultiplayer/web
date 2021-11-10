@@ -58,8 +58,7 @@ export async function apiSSP<T>(
   });
 
   const contentType = r.headers.get("Content-Type");
-  const length = parseInt(r.headers.get("Content-Length") ?? "0");
-  const isJson = contentType === "application/json" && length > 0;
+  const isJson = contentType === "application/json";
 
   const raw = isJson ? await r.json() : undefined;
 
