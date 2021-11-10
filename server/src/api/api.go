@@ -61,8 +61,8 @@ func Build() fx.Option {
 						"https://open.mp",       // Live public website
 					},
 					AllowedMethods:   []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
-					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
-					ExposedHeaders:   []string{"Link"},
+					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "Content-Length", "X-CSRF-Token"},
+					ExposedHeaders:   []string{"Link", "Content-Length"},
 					AllowCredentials: true,
 					MaxAge:           300,
 				}),
