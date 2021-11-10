@@ -32,7 +32,7 @@ func StatusInternalServerError(w http.ResponseWriter, err error) {
 	}
 	zap.L().Error("internal error", zap.Error(err))
 	w.WriteHeader(http.StatusInternalServerError)
-	errToWriter(w, err)
+	errToWriter(w, errors.New("something went wrong but the details have been omitted from this error for security reasons"))
 }
 
 // StatusUnauthorized writes a pretty error
