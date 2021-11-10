@@ -16,13 +16,13 @@ Special actions marked with \* cannot be set using [SetPlayerSpecialAction](../f
 | ID  | Action                          | Description                                     |
 | --- | ------------------------------- | ----------------------------------------------- |
 | 0   | SPECIAL_ACTION_NONE             | Clears player of special actions                |
-| 2   | SPECIAL_ACTION_USEJETPACK       | Will make make the player using jetpack         |
+| 2   | SPECIAL_ACTION_USEJETPACK       | Will make the player using jetpack              |
 | 5   | SPECIAL_ACTION_DANCE1           | Applies dancing animation for player            |
 | 6   | SPECIAL_ACTION_DANCE2           | Applies dancing animation for player            |
 | 7   | SPECIAL_ACTION_DANCE3           | Applies dancing animation for player            |
 | 8   | SPECIAL_ACTION_DANCE4           | Applies dancing animation for player            |
-| 10  | SPECIAL_ACTION_HANDSUP          | Will make make the player put hands up          |
-| 11  | SPECIAL_ACTION_USECELLPHONE     | Will make make the player speaking on cellphone |
+| 10  | SPECIAL_ACTION_HANDSUP          | Will make the player put hands up               |
+| 11  | SPECIAL_ACTION_USECELLPHONE     | Will make the player speaking on cellphone      |
 | 12  | SPECIAL_ACTION_SITTING \*       | Detects if the player is sitting                |
 | 13  | SPECIAL_ACTION_STOPUSECELLPHONE | Makes players stop using cellphone              |
 
@@ -41,7 +41,7 @@ These animations are added in SA:MP 0.3 version.
 | 21  | SPECIAL_ACTION_SMOKE_CIGGY      | Will give the player a cigar.                                             |
 | 22  | SPECIAL_ACTION_DRINK_WINE       | Will give the player a wine bottle to get drunk from                      |
 | 23  | SPECIAL_ACTION_DRINK_SPRUNK     | Will give the player a sprunk bottle to drink from                        |
-| 68  | SPECIAL_ACTION_PISSING          | Will make make the player perform the pissing animation with visible pee (**the macro is not present in the SA-MP include files**). |
+| 68  | SPECIAL_ACTION_PISSING          | Will make the player perform the pissing animation with visible pee (**the macro is not present in the SA-MP include files**). |
 
 :::warning
 
