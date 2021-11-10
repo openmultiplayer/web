@@ -24,6 +24,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/version"
 	"github.com/openmultiplayer/web/server/src/web"
+	"github.com/openmultiplayer/web/server/src/web/ratelimiter"
 )
 
 func Build() fx.Option {
@@ -67,7 +68,7 @@ func Build() fx.Option {
 					MaxAge:           300,
 				}),
 				as.WithAuthentication,
-				// ratelimiter.WithRateLimit(1000),
+				ratelimiter.WithRateLimit(1000),
 			)
 
 			router.Get("/version", func(w http.ResponseWriter, r *http.Request) {

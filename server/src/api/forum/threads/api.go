@@ -6,6 +6,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/resources/forum/thread"
+	"github.com/openmultiplayer/web/server/src/web/ratelimiter"
 )
 
 type service struct {
@@ -32,15 +33,15 @@ func Build() fx.Option {
 				Get("/", s.list)
 
 			rtr.
-				With(authentication.MustBeAuthenticated /*ratelimiter.WithRateLimit(5)*/).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(5)).
 				Post("/", s.post)
 
 			rtr.
-				With(authentication.MustBeAuthenticated /*ratelimiter.WithRateLimit(5)*/).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(5)).
 				Patch("/{id}", s.patch)
 
 			rtr.
-				With(authentication.MustBeAuthenticated /*ratelimiter.WithRateLimit(5)*/).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(5)).
 				Delete("/{id}", s.delete)
 		}),
 	)

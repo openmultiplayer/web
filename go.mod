@@ -37,7 +37,7 @@ require (
 	github.com/russross/blackfriday v1.6.0
 	github.com/sendgrid/rest v2.6.2+incompatible // indirect
 	github.com/sendgrid/sendgrid-go v3.7.2+incompatible
-	github.com/sethvargo/go-limiter v0.7.0
+	github.com/sethvargo/go-limiter v0.7.2
 	github.com/shopspring/decimal v1.2.0
 	github.com/streadway/amqp v1.0.0
 	github.com/stretchr/testify v1.7.0
