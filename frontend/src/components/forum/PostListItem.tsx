@@ -88,12 +88,15 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
     <Flex justifyContent="space-between" alignItems="start">
       {title && editing ? (
         <Input onChange={onChange} defaultValue={post.title ?? undefined} />
-      ) : (
+      ) : post.first ? (
         <PostTitle
           title={post.title ?? "(No title)"}
           slug={post.slug ?? "/"}
           clamp={false}
         />
+      ) : (
+        // Empty div to fill the flex. Kind of a hack... but meh
+        <div />
       )}
 
       <Flex alignItems="center" gridGap="0.5em">
