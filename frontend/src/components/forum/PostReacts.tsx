@@ -145,28 +145,31 @@ const PostReacts: FC<Props> = ({ post }) => {
         // hide if there are no reacts in order for the grid-gap property to
         // not add an empty space to the left of the Add React button.
         display={listDisplay}
+        flexWrap="wrap"
         gridGap="0.5em"
         alignItems="center"
-        maxHeight="1.5em"
       >
         {list(reactGroups)}
+
+        <ListItem listStyleType="none">
+          <Flex>
+            <Popover matchWidth={false}>
+              <PopoverTrigger>
+                <IconButton
+                  aria-label="React to post"
+                  size="xs"
+                  variant="outline"
+                  icon={<AddIcon />}
+                />
+              </PopoverTrigger>
+              <PopoverContent width="fit-content">
+                <PopoverArrow />
+                <Picker set="twitter" onSelect={onSelect} autoFocus />
+              </PopoverContent>
+            </Popover>
+          </Flex>
+        </ListItem>
       </OrderedList>
-      <Flex>
-        <Popover matchWidth={false}>
-          <PopoverTrigger>
-            <IconButton
-              aria-label="React to post"
-              size="xs"
-              variant="outline"
-              icon={<AddIcon />}
-            />
-          </PopoverTrigger>
-          <PopoverContent width="fit-content">
-            <PopoverArrow />
-            <Picker set="twitter" onSelect={onSelect} autoFocus />
-          </PopoverContent>
-        </Popover>
-      </Flex>
     </Flex>
   );
 };
