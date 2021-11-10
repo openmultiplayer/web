@@ -80,8 +80,6 @@ const App = ({ Component, pageProps, router }: AppProps) => (
   <ChakraProvider theme={theme}>
     <Fonts />
     <Head>
-      <link rel="stylesheet" href="/fonts.css" />
-
       <div
         dangerouslySetInnerHTML={{
           __html: `<!--

@@ -5,6 +5,8 @@
   Paragraphcs should use the sans serif default stack from `body`.
 */
 
+@import "./fonts.css";
+
 body {
   background-color: #fefefe;
 }
