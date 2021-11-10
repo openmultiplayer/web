@@ -16,6 +16,7 @@ import { useAuth } from "src/auth/hooks";
 import { Post, React } from "src/types/_generated_Forum";
 import twemoji from "twemoji";
 import { useReaction } from "./hooks";
+import { Portal } from "@chakra-ui/react";
 
 type Props = {
   post: Post;
@@ -144,6 +145,7 @@ const PostReacts: FC<Props> = ({ post }) => {
       <OrderedList
         m="0"
         p="0"
+        display="flex"
         flexWrap="wrap"
         gridGap="0.5em"
         alignItems="center"
@@ -151,22 +153,22 @@ const PostReacts: FC<Props> = ({ post }) => {
         {list(reactGroups)}
 
         <ListItem listStyleType="none">
-          <Flex>
-            <Popover matchWidth={false}>
-              <PopoverTrigger>
-                <IconButton
-                  aria-label="React to post"
-                  size="xs"
-                  variant="outline"
-                  icon={<AddIcon />}
-                />
-              </PopoverTrigger>
+          <Popover matchWidth={false} isLazy>
+            <PopoverTrigger>
+              <IconButton
+                aria-label="React to post"
+                size="xs"
+                variant="outline"
+                icon={<AddIcon />}
+              />
+            </PopoverTrigger>
+            <Portal>
               <PopoverContent width="fit-content">
                 <PopoverArrow />
-                {/* <Picker set="twitter" onSelect={onSelect} autoFocus /> */}
+                <Picker set="twitter" onSelect={onSelect} autoFocus />
               </PopoverContent>
-            </Popover>
-          </Flex>
+            </Portal>
+          </Popover>
         </ListItem>
       </OrderedList>
     </Flex>
