@@ -22,7 +22,11 @@ type Error struct {
 // StatusNotFound writes a pretty error
 func StatusNotFound(w http.ResponseWriter, err error) {
 	w.WriteHeader(http.StatusNotFound)
-	errToWriter(w, err)
+	if err == nil {
+		errToWriter(w, errors.New("not found"))
+	} else {
+		errToWriter(w, err)
+	}
 }
 
 // StatusInternalServerError writes a pretty error and logs

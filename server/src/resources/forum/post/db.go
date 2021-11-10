@@ -51,6 +51,9 @@ func (d *DB) CreatePost(
 		With(db.Post.Author.Fetch()).
 		Exec(ctx)
 	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 
@@ -141,6 +144,9 @@ func (d *DB) EditPost(ctx context.Context, authorID, id string, title *string, b
 		With(db.Post.Author.Fetch()).
 		Exec(ctx)
 	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 	if post.Author().ID != authorID {
@@ -177,6 +183,9 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 		).
 		Exec(ctx)
 	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 	if force == false {
@@ -191,6 +200,12 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 			db.Post.DeletedAt.Set(time.Now()),
 		).
 		Exec(ctx)
+	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
+		return nil, err
+	}
 
 	return FromModel(post), err
 }

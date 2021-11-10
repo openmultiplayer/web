@@ -7,7 +7,6 @@ import (
 	"github.com/go-chi/chi"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/resources/forum/react"
 	"github.com/openmultiplayer/web/server/src/web"
 )
@@ -31,14 +30,16 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 
 	reaction, err := s.reacts.Add(r.Context(), info.Cookie.UserID, postID, b.Emoji)
 	if err != nil {
-		if errors.Is(err, db.ErrNotFound) {
-			web.StatusNotFound(w, err)
-		} else if errors.Is(err, react.ErrAlreadyReacted) {
+		if errors.Is(err, react.ErrAlreadyReacted) {
 			web.Write(w, b)
 			return
 		} else {
 			web.StatusInternalServerError(w, err)
 		}
+		return
+	}
+	if reaction == nil {
+		web.StatusNotFound(w, nil)
 		return
 	}
 
