@@ -12,7 +12,7 @@ type React struct {
 func FromModel(model *db.ReactModel, postID string) *React {
 	return &React{
 		ID:    model.ID,
-		Emoji: string(rune(model.Emoji)),
+		Emoji: model.Emoji,
 		User:  model.RelationsReact.User.ID,
 		Post:  postID,
 	}

@@ -148,7 +148,7 @@ model Category {
 model React {
   id String @id @default(cuid())
 
-  emoji BigInt
+  emoji String
 
   user User @relation(fields: [userId], references: [id])
   Post Post @relation(fields: [postId], references: [id])

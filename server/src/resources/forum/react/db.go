@@ -6,9 +6,6 @@ import (
 	"strings"
 
 	"github.com/openmultiplayer/web/server/src/db"
-	"golang.org/x/exp/utf8string"
-
-	"github.com/prisma/prisma-client-go/runtime/types"
 )
 
 var (
@@ -26,19 +23,9 @@ func New(db *db.PrismaClient) Repository {
 }
 
 func (d *DB) Add(ctx context.Context, userID, postID, emojiID string) (*React, error) {
-	s := utf8string.NewString(emojiID)
-	var emoji int64
-	if s.RuneCount() == 1 {
-		// Emoji is a Unicode emoji, store the codepoint integer.
-		emoji = int64(s.At(0))
-	} else {
-		// Custom emojis aren't supported yet.
-		return nil, ErrInvalidEmoji
-	}
-
 	react, err := d.db.React.
 		CreateOne(
-			db.React.Emoji.Set(types.BigInt(emoji)),
+			db.React.Emoji.Set(emojiID),
 			db.React.User.Link(
 				db.User.ID.Equals(userID),
 			),
