@@ -28,7 +28,7 @@ import React, { FC, useCallback, useState } from "react";
 import { useAuth } from "src/auth/hooks";
 import { WEB_ADDRESS } from "src/config";
 import { Post } from "src/types/_generated_Forum";
-import { PostMetadata } from "./common";
+import { PostMetadata, PostTitle } from "./common";
 import { useDeletePost, useEditPost } from "./hooks";
 import PostEditor, { PostPayload } from "./PostEditor";
 import PostReacts from "./PostReacts";
@@ -85,15 +85,15 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
   }, [onCopy, toast]);
 
   return (
-    <Flex justifyContent="space-between">
+    <Flex justifyContent="space-between" alignItems="start">
       {title && editing ? (
         <Input onChange={onChange} defaultValue={post.title ?? undefined} />
       ) : (
-        <Heading margin="0" fontSize="1.9em">
-          <Link href={`/discussion/${post.slug}`}>
-            <a>{title}</a>
-          </Link>
-        </Heading>
+        <PostTitle
+          title={post.title ?? "(No title)"}
+          slug={post.slug ?? "/"}
+          clamp={false}
+        />
       )}
 
       <Flex alignItems="center" gridGap="0.5em">

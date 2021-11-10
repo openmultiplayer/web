@@ -1,10 +1,9 @@
 import { WarningTwoIcon } from "@chakra-ui/icons";
 import { Box, Tag, TagLabel, TagLeftIcon } from "@chakra-ui/react";
-import Link from "next/link";
 import { opacify } from "polished";
 import React, { FC } from "react";
 import { Post } from "src/types/_generated_Forum";
-import { CategoryName, PostMetadata } from "./common";
+import { CategoryName, PostMetadata, PostTitle } from "./common";
 import ThreadAdminMenu from "./ThreadMenu";
 
 type Props = {
@@ -54,11 +53,10 @@ const ThreadListItem: FC<Props> = ({ post }) => {
               <ThreadAdminMenu post={post} />
             </div>
 
-            <h1>
-              <Link href={`/discussion/${post.slug}`}>
-                <a>{post.title}</a>
-              </Link>
-            </h1>
+            <PostTitle
+              title={post.title ?? "(No title)"}
+              slug={post.slug ?? "/"}
+            />
           </header>
 
           {!post.pinned && (

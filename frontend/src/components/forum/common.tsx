@@ -3,6 +3,7 @@ import {
   Box,
   Flex,
   Grid,
+  Heading,
   Link,
   ListItem,
   UnorderedList,
@@ -14,6 +15,33 @@ import { Category, Post, PostMeta } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
 import MemberLink from "../member/MemberLink";
 import LinkedTag from "./LinkedTag";
+
+import React from "react";
+
+type PostTitleProps = {
+  title: string;
+  slug: string;
+  clamp?: boolean;
+};
+export const PostTitle: FC<PostTitleProps> = ({
+  title,
+  slug,
+  clamp = true,
+}) => {
+  return (
+    <Heading
+      as="h1"
+      size="md"
+      overflow={clamp ? "hidden" : ""}
+      textOverflow="ellipsis"
+      whiteSpace={clamp ? "nowrap" : "normal"}
+    >
+      <NextLink href={`/discussion/${slug}`} passHref>
+        <Link>{title}</Link>
+      </NextLink>
+    </Heading>
+  );
+};
 
 type CategoryNameProps = { category: Category };
 export const CategoryName: FC<CategoryNameProps> = ({ category }) => (
