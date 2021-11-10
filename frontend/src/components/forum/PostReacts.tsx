@@ -163,7 +163,7 @@ const PostReacts: FC<Props> = ({ post }) => {
               </PopoverTrigger>
               <PopoverContent width="fit-content">
                 <PopoverArrow />
-                <Picker set="twitter" onSelect={onSelect} autoFocus />
+                {/* <Picker set="twitter" onSelect={onSelect} autoFocus /> */}
               </PopoverContent>
             </Popover>
           </Flex>
