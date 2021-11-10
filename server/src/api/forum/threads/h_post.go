@@ -1,9 +1,11 @@
 package threads
 
 import (
+	"errors"
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/resources/forum"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -27,7 +29,13 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 
 	post, err := s.threads.CreateThread(r.Context(), b.Title, b.Body, info.Cookie.UserID, b.Category, b.Tags)
 	if err != nil {
-		web.StatusInternalServerError(w, err)
+		if errors.Is(err, forum.ErrTagNameTooLong) {
+			web.StatusBadRequest(w, web.WithSuggestion(err,
+				"The name of one of the tags is too long",
+				"The character limit for a tag is 24, delete any tags longer than this and retry."))
+		} else {
+			web.StatusInternalServerError(w, err)
+		}
 		return
 	}
 
