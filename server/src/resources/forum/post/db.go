@@ -10,12 +10,6 @@ import (
 	"github.com/openmultiplayer/web/server/src/resources/forum"
 )
 
-var (
-	ErrNoTitle      = errors.New("missing title")
-	ErrNoBody       = errors.New("missing body")
-	ErrUnauthorised = errors.New("unauthorised")
-)
-
 type DB struct {
 	db *db.PrismaClient
 }
@@ -150,7 +144,7 @@ func (d *DB) EditPost(ctx context.Context, authorID, id string, title *string, b
 		return nil, err
 	}
 	if post.Author().ID != authorID {
-		return nil, ErrUnauthorised
+		return nil, forum.ErrUnauthorised
 	}
 
 	post, err = d.db.Post.
@@ -190,7 +184,7 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 	}
 	if force == false {
 		if post.Author().ID != authorID {
-			return nil, ErrUnauthorised
+			return nil, forum.ErrUnauthorised
 		}
 	}
 

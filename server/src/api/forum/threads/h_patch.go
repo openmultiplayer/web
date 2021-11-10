@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
+	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/resources/forum/post"
 	"github.com/openmultiplayer/web/server/src/web"
 )
@@ -12,13 +13,17 @@ type patchBody post.Post
 
 func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
+	info, ok := authentication.GetAuthenticationInfo(w, r)
+	if !ok {
+		return
+	}
 
 	var b patchBody
 	if !web.ParseBody(w, r, &b) {
 		return
 	}
 
-	post, err := s.threads.Update(r.Context(), id, b.Title, &b.Category.ID, &b.Pinned)
+	post, err := s.threads.Update(r.Context(), info.Cookie.UserID, id, b.Title, &b.Category.ID, &b.Pinned)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return

@@ -25,7 +25,7 @@ type Repository interface {
 
 	GetPostCounts(ctx context.Context) (map[string]int, error)
 
-	Update(ctx context.Context, id string, title, category *string, pinned *bool) (*post.Post, error)
+	Update(ctx context.Context, userID, id string, title, category *string, pinned *bool) (*post.Post, error)
 
 	Delete(ctx context.Context, id, authorID string) (int, error)
 

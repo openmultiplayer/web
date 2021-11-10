@@ -2,15 +2,12 @@ package forum
 
 import (
 	"context"
-	"errors"
 	"math"
 	"strings"
 	"time"
 
 	"github.com/openmultiplayer/web/server/src/db"
 )
-
-var ErrUnauthorised = errors.New("unauthorised")
 
 const MaxShortBodyLength = 128
 

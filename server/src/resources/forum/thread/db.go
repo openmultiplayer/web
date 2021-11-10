@@ -349,11 +349,15 @@ func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
 	return result, nil
 }
 
-func (d *DB) Update(ctx context.Context, id string, title, categoryID *string, pinned *bool) (*post.Post, error) {
+func (d *DB) Update(ctx context.Context, userID, id string, title, categoryID *string, pinned *bool) (*post.Post, error) {
 	updates := []db.PostSetParam{
 		db.Post.Title.SetIfPresent(title),
 		db.Post.CategoryID.SetIfPresent(categoryID),
 		db.Post.Pinned.SetIfPresent(pinned),
+	}
+
+	if err := forum.CanUserMutatePost(ctx, d.db, userID, id); err != nil {
+		return nil, forum.ErrUnauthorised
 	}
 
 	p, err := d.db.Post.
