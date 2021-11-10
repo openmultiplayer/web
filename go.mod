@@ -21,6 +21,7 @@ require (
 	github.com/frustra/bbcode v0.0.0-20201127003707-6ef347fbe1c8
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/cors v1.1.1
+	github.com/gomarkdown/markdown v0.0.0-20211105120026-16f708f914c3
 	github.com/google/go-github v0.0.0-20180819205025-d7732128a00e
 	github.com/google/go-github/v28 v28.1.1
 	github.com/gorilla/schema v1.2.0
