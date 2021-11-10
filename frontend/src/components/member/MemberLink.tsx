@@ -12,7 +12,7 @@ type Props = {
 const MemberLink: FC<Props> = ({ user }) => {
   return (
     <NextLink href={`${WEB_ADDRESS}/members/${user.id}`} passHref>
-      <Link>
+      <Link whiteSpace="nowrap">
         <Flex fontStyle="normal" color="black" gridGap="0.5em">
           <ProfilePicture id={user.id} />
 
