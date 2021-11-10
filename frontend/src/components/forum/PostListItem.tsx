@@ -246,7 +246,6 @@ const PostListItem: FC<Props> = ({
           justify-content: space-between;
           align-items: end;
           font-size: 0.9em;
-          color: var(--chakra-colors-gray-400);
         }
       `}</style>
     </li>
