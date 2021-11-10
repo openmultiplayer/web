@@ -72,9 +72,26 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted, 
 	}
 
 	if !admin {
-		filters = append(filters, db.Post.Category.Where(
-			db.Category.Admin.Equals(false),
-		))
+		filters = append(filters,
+			db.Post.Or(
+				// Root posts (first=true) have categories set, so simply check
+				// the linked category for admin status.
+				db.Post.And(
+					db.Post.First.Equals(true),
+					db.Post.Category.Where(
+						db.Category.Admin.Equals(false),
+					),
+				),
+				// Child posts (first=false) do not have categories, so it needs
+				// to check the root post category for admin status.
+				db.Post.And(
+					db.Post.First.Equals(false),
+					db.Post.Root.Where(db.Post.Category.Where(
+						db.Category.Admin.Equals(false),
+					)),
+				),
+			),
+		)
 	}
 
 	posts, err := d.db.Post.
