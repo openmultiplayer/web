@@ -6,6 +6,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/resources/burgershot"
 	"github.com/openmultiplayer/web/server/src/resources/forum/category"
 	"github.com/openmultiplayer/web/server/src/resources/forum/post"
+	"github.com/openmultiplayer/web/server/src/resources/forum/react"
 	"github.com/openmultiplayer/web/server/src/resources/forum/tag"
 	"github.com/openmultiplayer/web/server/src/resources/forum/thread"
 	"github.com/openmultiplayer/web/server/src/resources/pawndex"
@@ -23,5 +24,6 @@ func Build() fx.Option {
 		user.New,
 		pawndex.New,
 		burgershot.New,
+		react.New,
 	)
 }

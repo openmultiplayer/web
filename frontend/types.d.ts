@@ -6,3 +6,7 @@ declare module "react" {
     global?: boolean;
   }
 }
+
+declare module "react-twemoji" {
+  //
+}
