@@ -29,7 +29,7 @@ import (
 // nolint:errcheck
 func Start(ctx context.Context) {
 	app := fx.New(
-		// fx.NopLogger,
+		fx.NopLogger,
 
 		fx.Provide(
 			config.New,
