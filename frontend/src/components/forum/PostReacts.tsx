@@ -76,6 +76,9 @@ const PostReact: FC<PostReactProps> = ({
         px="0.5em"
         py="0.2em"
         onClick={eventHandler}
+        boxShadow={
+          hasReacted && "inset 0px 0px 3px 2px var(--chakra-colors-orange-100)"
+        }
       >
         <span
           dangerouslySetInnerHTML={{
