@@ -17,6 +17,7 @@ require (
 	github.com/bwmarrin/discordgo v0.22.0
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/cskr/pubsub v1.0.2
+	github.com/forPelevin/gomoji v0.0.0-20210718160015-5fcf0e405128
 	github.com/frustra/bbcode v0.0.0-20201127003707-6ef347fbe1c8
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/cors v1.1.1
@@ -43,9 +44,11 @@ require (
 	github.com/thanhpk/randstr v1.0.4
 	go.etcd.io/bbolt v1.3.5
 	go.uber.org/fx v1.13.1
+	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.16.0
-	golang.org/x/exp v0.0.0-20211105205138-14c72366447f
+	golang.org/x/mod v0.6.0-dev.0.20211013180041-c96bc1413d57 // indirect
 	golang.org/x/oauth2 v0.0.0-20201203001011-0b49973bad19
+	golang.org/x/tools v0.1.8-0.20211029000441-d6a9af8af023 // indirect
 	gopkg.in/yaml.v2 v2.4.0
 	nhooyr.io/websocket v1.8.6
 )

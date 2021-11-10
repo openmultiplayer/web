@@ -6,6 +6,7 @@ import (
 	"strings"
 
 	"github.com/openmultiplayer/web/server/src/db"
+	"github.com/openmultiplayer/web/server/src/resources/forum"
 )
 
 var (
@@ -23,9 +24,14 @@ func New(db *db.PrismaClient) Repository {
 }
 
 func (d *DB) Add(ctx context.Context, userID, postID, emojiID string) (*React, error) {
+	e, ok := forum.IsValidEmoji(emojiID)
+	if !ok {
+		return nil, ErrInvalidEmoji
+	}
+
 	react, err := d.db.React.
 		CreateOne(
-			db.React.Emoji.Set(emojiID),
+			db.React.Emoji.Set(e),
 			db.React.User.Link(
 				db.User.ID.Equals(userID),
 			),

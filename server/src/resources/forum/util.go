@@ -6,6 +6,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/forPelevin/gomoji"
 	"github.com/openmultiplayer/web/server/src/db"
 )
 
@@ -46,4 +47,14 @@ func CanUserMutatePost(ctx context.Context, d *db.PrismaClient, authorID, id str
 		return nil
 	}
 	return ErrUnauthorised
+}
+
+func IsValidEmoji(e string) (string, bool) {
+	if len(e) == 0 {
+		return "", false
+	}
+	if e[1] == ':' {
+		return "", false
+	}
+	return e, gomoji.ContainsEmoji(e)
 }
