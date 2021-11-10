@@ -50,16 +50,15 @@ const PostReact: FC<PostReactProps> = ({
   // scan the react group for reacts by the current user
   const hasReacted = userId && getUsersReact(userId)(group.reacts);
 
-  const onAdd = useCallback(() => {
-    !hasReacted && addReact(postId, group.emoji);
-  }, [hasReacted, postId, addReact, group]);
-  const onDelete = useCallback(() => {
-    hasReacted && deleteReact(hasReacted?.id);
-  }, [deleteReact, hasReacted]);
-
   // If the user clicks a reaction, they add one if they haven't already
   // reacted or they remove their own reaction.
-  const eventHandler = hasReacted ? onDelete : onAdd;
+  const eventHandler = useCallback(() => {
+    if (hasReacted) {
+      deleteReact(hasReacted?.id);
+    } else {
+      addReact(postId, group.emoji);
+    }
+  }, [hasReacted, deleteReact, addReact, postId, group]);
 
   const emoji = twemoji.parse(group.emoji, {
     folder: "svg",
