@@ -1,7 +1,6 @@
 package threads
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
@@ -32,5 +31,5 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(post)
+	web.Write(w, post)
 }

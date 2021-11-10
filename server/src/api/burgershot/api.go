@@ -1,7 +1,6 @@
 package burgershot
 
 import (
-	"encoding/json"
 	"net/http"
 	"strconv"
 
@@ -40,7 +39,7 @@ func Build() fx.Option {
 					return
 				}
 
-				json.NewEncoder(w).Encode(t)
+				web.Write(w, t)
 			})
 		}),
 	)

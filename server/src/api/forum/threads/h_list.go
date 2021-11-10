@@ -1,7 +1,6 @@
 package threads
 
 import (
-	"encoding/json"
 	"net/http"
 	"time"
 
@@ -46,5 +45,5 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(posts)
+	web.Write(w, posts)
 }

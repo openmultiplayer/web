@@ -1,7 +1,6 @@
 package tags
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/web"
@@ -23,5 +22,5 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(tags)
+	web.Write(w, tags)
 }

@@ -1,7 +1,6 @@
 package pawndex
 
 import (
-	"encoding/json"
 	"fmt"
 	"net/http"
 
@@ -24,5 +23,5 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(p) //nolint:errcheck
+	web.Write(w, p) //nolint:errcheck
 }

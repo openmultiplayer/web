@@ -1,7 +1,6 @@
 package posts
 
 import (
-	"encoding/json"
 	"errors"
 	"net/http"
 
@@ -41,5 +40,5 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(posts)
+	web.Write(w, posts)
 }

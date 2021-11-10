@@ -1,7 +1,6 @@
 package categories
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/resources/forum/category"
@@ -26,5 +25,5 @@ func (s *service) patchAll(w http.ResponseWriter, r *http.Request) {
 		result = append(result, *newCategory)
 	}
 
-	json.NewEncoder(w).Encode(result)
+	web.Write(w, result)
 }

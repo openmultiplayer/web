@@ -54,5 +54,5 @@ func (s *service) add(w http.ResponseWriter, r *http.Request) {
 	}
 
 	//nolint:errcheck
-	json.NewEncoder(w).Encode(ss)
+	web.Write(w, ss)
 }

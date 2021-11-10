@@ -1,7 +1,6 @@
 package categories
 
 import (
-	"encoding/json"
 	"errors"
 	"net/http"
 
@@ -33,5 +32,5 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(deleted)
+	web.Write(w, deleted)
 }

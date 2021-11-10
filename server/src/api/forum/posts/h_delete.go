@@ -1,7 +1,6 @@
 package posts
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -21,5 +20,5 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 		web.StatusInternalServerError(w, err)
 	}
 
-	json.NewEncoder(w).Encode(post)
+	web.Write(w, post)
 }

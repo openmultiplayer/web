@@ -2,7 +2,6 @@ package api
 
 import (
 	"context"
-	"encoding/json"
 	"net"
 	"net/http"
 
@@ -72,7 +71,7 @@ func Build() fx.Option {
 			)
 
 			router.Get("/version", func(w http.ResponseWriter, r *http.Request) {
-				json.NewEncoder(w).Encode(map[string]string{"version": version.Version}) //nolint:errcheck
+				web.Write(w, map[string]string{"version": version.Version}) //nolint:errcheck
 			})
 
 			router.HandleFunc(

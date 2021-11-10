@@ -1,7 +1,6 @@
 package github
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -31,7 +30,7 @@ type Link struct {
 }
 
 func (s *service) link(w http.ResponseWriter, r *http.Request) {
-	json.NewEncoder(w).Encode(Link{URL: s.oa2.Link()}) //nolint:errcheck
+	web.Write(w, Link{URL: s.oa2.Link()}) //nolint:errcheck
 }
 
 type Callback struct {
@@ -53,5 +52,5 @@ func (s *service) callback(w http.ResponseWriter, r *http.Request) {
 	}
 
 	s.auth.EncodeAuthCookie(w, *user)
-	json.NewEncoder(w).Encode(user) //nolint:errcheck
+	web.Write(w, user) //nolint:errcheck
 }

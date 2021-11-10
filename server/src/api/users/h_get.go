@@ -1,7 +1,6 @@
 package users
 
 import (
-	"encoding/json"
 	"errors"
 	"net/http"
 
@@ -34,5 +33,5 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(user) //nolint:errcheck
+	web.Write(w, user) //nolint:errcheck
 }

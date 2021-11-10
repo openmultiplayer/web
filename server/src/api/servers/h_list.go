@@ -1,7 +1,6 @@
 package servers
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/pkg/errors"
@@ -22,7 +21,5 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		essential = append(essential, item.Core)
 	}
 
-	if err := json.NewEncoder(w).Encode(essential); err != nil {
-		web.StatusInternalServerError(w, errors.Wrap(err, "failed to write response"))
-	}
+	web.Write(w, essential)
 }

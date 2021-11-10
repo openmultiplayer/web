@@ -1,7 +1,6 @@
 package legacy
 
 import (
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"strings"
@@ -39,8 +38,5 @@ func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if err := json.NewEncoder(w).Encode(formatted); err != nil {
-		web.StatusInternalServerError(w, errors.Wrap(err, "failed to write response"))
-		return
-	}
+	web.Write(w, formatted)
 }

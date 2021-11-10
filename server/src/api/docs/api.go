@@ -1,7 +1,6 @@
 package docs
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/Southclaws/qstring"
@@ -58,5 +57,5 @@ func (s *service) search(w http.ResponseWriter, r *http.Request) {
 	}
 
 	//nolint:errcheck
-	json.NewEncoder(w).Encode(results)
+	web.Write(w, results)
 }

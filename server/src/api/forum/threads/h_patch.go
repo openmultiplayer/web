@@ -1,7 +1,6 @@
 package threads
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -25,5 +24,5 @@ func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(post)
+	web.Write(w, post)
 }

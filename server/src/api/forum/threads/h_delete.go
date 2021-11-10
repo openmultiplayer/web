@@ -1,7 +1,6 @@
 package threads
 
 import (
-	"encoding/json"
 	"errors"
 	"net/http"
 
@@ -29,5 +28,5 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(map[string]int{"count": count})
+	web.Write(w, map[string]int{"count": count})
 }

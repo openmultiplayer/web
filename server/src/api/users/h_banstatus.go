@@ -1,7 +1,6 @@
 package users
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -27,13 +26,13 @@ func (s *service) banstatus(w http.ResponseWriter, r *http.Request) {
 			web.StatusInternalServerError(w, err)
 			return
 		}
-		json.NewEncoder(w).Encode(user)
+		web.Write(w, user)
 	} else {
 		user, err := s.repo.Unban(r.Context(), id)
 		if err != nil {
 			web.StatusInternalServerError(w, err)
 			return
 		}
-		json.NewEncoder(w).Encode(user)
+		web.Write(w, user)
 	}
 }

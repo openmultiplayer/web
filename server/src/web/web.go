@@ -2,9 +2,7 @@ package web
 
 import (
 	"context"
-	"encoding/json"
 	"errors"
-	"io"
 	"net/http"
 
 	"go.uber.org/zap"
@@ -78,7 +76,7 @@ func WithSuggestion(err error, desc, suggest string) error {
 	return &HumanReadable{err, desc, suggest}
 }
 
-func errToWriter(w io.Writer, err error) {
+func errToWriter(w http.ResponseWriter, err error) {
 	if err == nil {
 		err = errors.New("Unknown or unspecified error")
 	}
@@ -91,14 +89,9 @@ func errToWriter(w io.Writer, err error) {
 		suggest = herr.suggest
 	}
 
-	if e := json.NewEncoder(w).Encode(Error{
+	Write(w, Error{
 		Message:    message,
 		Suggestion: suggest,
 		Error:      err.Error(),
-	}); e != nil {
-		zap.L().Error(
-			"failed to write error response",
-			zap.Error(e),
-			zap.Any("original_error", err))
-	}
+	})
 }

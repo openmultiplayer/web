@@ -1,7 +1,6 @@
 package categories
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
@@ -15,5 +14,5 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(categories)
+	web.Write(w, categories)
 }

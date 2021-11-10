@@ -1,7 +1,6 @@
 package users
 
 import (
-	"encoding/json"
 	"net/http"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
@@ -23,5 +22,5 @@ func (s *service) self(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(user) //nolint:errcheck
+	web.Write(w, user) //nolint:errcheck
 }

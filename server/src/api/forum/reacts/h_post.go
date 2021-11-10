@@ -1,7 +1,6 @@
 package reacts
 
 import (
-	"encoding/json"
 	"errors"
 	"net/http"
 
@@ -43,5 +42,5 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	json.NewEncoder(w).Encode(reaction)
+	web.Write(w, reaction)
 }

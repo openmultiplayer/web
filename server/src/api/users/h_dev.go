@@ -1,7 +1,6 @@
 package users
 
 import (
-	"encoding/json"
 	"errors"
 	"net/http"
 	"os"
@@ -45,5 +44,5 @@ func (s *service) dev(w http.ResponseWriter, r *http.Request) {
 	zap.L().Info("dev login", zap.Any("user", user))
 
 	s.auth.EncodeAuthCookie(w, *user)
-	json.NewEncoder(w).Encode(user)
+	web.Write(w, user)
 }
