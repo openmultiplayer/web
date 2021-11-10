@@ -1,8 +1,8 @@
 import { useToast } from "@chakra-ui/toast";
-import { omit } from "lodash/fp";
+import { omit, remove } from "lodash/fp";
 import { useRouter } from "next/router";
 import nProgress from "nprogress";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { apiSSP } from "src/fetcher/fetcher";
 import {
   Category,
@@ -11,6 +11,7 @@ import {
   PostSchema,
   React,
 } from "src/types/_generated_Forum";
+import { User } from "src/types/_generated_User";
 import { useErrorHandler } from "src/utils/useErrorHandler";
 import { useSWRConfig } from "swr";
 import { PostPayload } from "./PostEditor";
@@ -202,43 +203,62 @@ export const useEditPost = (): EditFn => {
   return onEdit;
 };
 
-export const useReaction = (): {
+export const useReaction = (
+  post: Post,
+  user?: User
+): {
+  reacts: React[];
   addReact: AddReactFn;
   deleteReact: DeleteReactFn;
 } => {
+  const [reacts, setReacts] = useState(post.reacts);
   const { mutate } = useSWRConfig();
   const handler = useErrorHandler();
   const addReact = useCallback(
     async (id: string, react: string) => {
+      // Update the list of reactions immediately before API call - note that
+      // this is an incomplete react object, it has no ID.
+      setReacts([
+        ...reacts,
+        { id: "", emoji: react, post: post.id, user: user?.id ?? "" },
+      ]);
       try {
-        await apiSSP<React>(`/forum/reacts/${id}`, {
+        const newReact = await apiSSP<React>(`/forum/reacts/${id}`, {
           method: "POST",
           body: JSON.stringify({
             emoji: react,
           }),
         });
+        // Now write the *real* reaction to the list which contains all data.
+        setReacts([...reacts, newReact]);
       } catch (e) {
+        // Revert to the original list of reactions.
+        setReacts([...reacts]);
         handler(e);
       }
       mutate("/forum/posts/${id}");
     },
-    [handler, mutate]
+    [handler, setReacts, post, reacts, user, mutate]
   );
   const deleteReact = useCallback(
     async (id: string) => {
+      const removeReact = remove((r: React) => r.id === id);
+      setReacts([...removeReact(reacts)]);
       try {
         await apiSSP<React>(`/forum/reacts/${id}`, {
           method: "DELETE",
         });
       } catch (e) {
+        setReacts(reacts);
         handler(e);
       }
       mutate("/forum/posts/${id}");
     },
-    [handler, mutate]
+    [handler, setReacts, reacts, mutate]
   );
 
   return {
+    reacts,
     addReact,
     deleteReact,
   };

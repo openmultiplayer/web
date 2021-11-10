@@ -14,7 +14,6 @@ import { entries, filter, flow, groupBy, head, map } from "lodash/fp";
 import { FC, useCallback } from "react";
 import { useAuth } from "src/auth/hooks";
 import { Post, React } from "src/types/_generated_Forum";
-import { User } from "src/types/_generated_User";
 import twemoji from "twemoji";
 import { useReaction } from "./hooks";
 
@@ -36,17 +35,24 @@ const getUsersReact = (userID: string) =>
 
 type PostReactProps = {
   group: ReactGroup;
-  post: Post;
-  user?: User;
+  postId: string;
+  userId?: string;
+  addReact: (id: string, react: string) => void;
+  deleteReact: (id: string) => void;
 };
-const PostReact: FC<PostReactProps> = ({ group, user, post }) => {
-  const { addReact, deleteReact } = useReaction();
+const PostReact: FC<PostReactProps> = ({
+  group,
+  userId,
+  postId,
+  addReact,
+  deleteReact,
+}) => {
   // scan the react group for reacts by the current user
-  const hasReacted = user && getUsersReact(user.id)(group.reacts);
+  const hasReacted = userId && getUsersReact(userId)(group.reacts);
 
   const onAdd = useCallback(() => {
-    addReact(post.id, group.emoji);
-  }, [post, addReact, group]);
+    !hasReacted && addReact(postId, group.emoji);
+  }, [hasReacted, postId, addReact, group]);
   const onDelete = useCallback(() => {
     hasReacted && deleteReact(hasReacted?.id);
   }, [deleteReact, hasReacted]);
@@ -94,11 +100,6 @@ const PostReact: FC<PostReactProps> = ({ group, user, post }) => {
   );
 };
 
-const reactsToList = (post: Post, user?: User) =>
-  map((group: ReactGroup) => (
-    <PostReact group={group} post={post} user={user} />
-  ));
-
 const groupReacts = flow(
   groupBy<React>((r: React) => r.emoji),
   entries,
@@ -108,18 +109,33 @@ const groupReacts = flow(
 );
 
 const PostReacts: FC<Props> = ({ post }) => {
-  const reactGroups = groupReacts(post.reacts);
   const { user } = useAuth();
-  const { addReact } = useReaction();
+  const { addReact, deleteReact, reacts } = useReaction(post, user);
+  const reactGroups = groupReacts(reacts);
+  const listDisplay = reactGroups.length > 0 ? "flex" : "none";
 
   const onSelect = useCallback(
-    (emoji: BaseEmoji) => {
-      addReact(post.id, emoji.native);
-    },
+    (emoji: BaseEmoji) => addReact(post.id, emoji.native),
     [addReact, post]
   );
+  const onAdd = useCallback(
+    (id: string, react: string) => addReact(id, react),
+    [addReact]
+  );
+  const onRemove = useCallback(
+    (reactId: string) => deleteReact(reactId),
+    [deleteReact]
+  );
 
-  const list = reactsToList(post, user);
+  const list = map((group: ReactGroup) => (
+    <PostReact
+      group={group}
+      postId={post.id}
+      userId={user?.id}
+      addReact={onAdd}
+      deleteReact={onRemove}
+    />
+  ));
 
   return (
     <Flex gridGap="0.5em" alignItems="center">
@@ -128,7 +144,7 @@ const PostReacts: FC<Props> = ({ post }) => {
         p="0"
         // hide if there are no reacts in order for the grid-gap property to
         // not add an empty space to the left of the Add React button.
-        display={reactGroups ? "flex" : "none"}
+        display={listDisplay}
         gridGap="0.5em"
         alignItems="center"
         maxHeight="1.5em"
@@ -147,8 +163,7 @@ const PostReacts: FC<Props> = ({ post }) => {
           </PopoverTrigger>
           <PopoverContent width="fit-content">
             <PopoverArrow />
-
-            <Picker set="twitter" onSelect={onSelect} />
+            <Picker set="twitter" onSelect={onSelect} autoFocus />
           </PopoverContent>
         </Popover>
       </Flex>

@@ -33,7 +33,7 @@ export const ReactSchema = z.object({
   id: z.string(),
   emoji: z.string(),
   user: z.string(),
-  Post: z.string(),
+  post: z.string(),
 })
 export type React = z.infer<typeof ReactSchema>
 
