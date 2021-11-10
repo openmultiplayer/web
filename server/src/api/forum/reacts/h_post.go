@@ -34,7 +34,7 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 		if errors.Is(err, db.ErrNotFound) {
 			web.StatusNotFound(w, err)
 		} else if errors.Is(err, react.ErrAlreadyReacted) {
-			// 200 OK - nothing to do.
+			web.Write(w, b)
 			return
 		} else {
 			web.StatusInternalServerError(w, err)
