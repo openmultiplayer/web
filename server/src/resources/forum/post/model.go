@@ -57,7 +57,7 @@ func FromModel(u *db.PostModel) (w *Post) {
 		}
 	}
 
-	var reacts []react.React
+	reacts := []react.React{}
 	if u.RelationsPost.Reacts != nil {
 		for _, r := range u.RelationsPost.Reacts {
 			reacts = append(reacts, *react.FromModel(&r, u.ID))
