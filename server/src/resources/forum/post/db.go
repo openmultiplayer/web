@@ -10,12 +10,6 @@ import (
 	"github.com/openmultiplayer/web/server/src/resources/forum"
 )
 
-var (
-	ErrNoTitle      = errors.New("missing title")
-	ErrNoBody       = errors.New("missing body")
-	ErrUnauthorised = errors.New("unauthorised")
-)
-
 type DB struct {
 	db *db.PrismaClient
 }
@@ -51,6 +45,9 @@ func (d *DB) CreatePost(
 		With(db.Post.Author.Fetch()).
 		Exec(ctx)
 	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 
@@ -141,10 +138,13 @@ func (d *DB) EditPost(ctx context.Context, authorID, id string, title *string, b
 		With(db.Post.Author.Fetch()).
 		Exec(ctx)
 	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 	if post.Author().ID != authorID {
-		return nil, ErrUnauthorised
+		return nil, forum.ErrUnauthorised
 	}
 
 	post, err = d.db.Post.
@@ -177,11 +177,14 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 		).
 		Exec(ctx)
 	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 	if force == false {
 		if post.Author().ID != authorID {
-			return nil, ErrUnauthorised
+			return nil, forum.ErrUnauthorised
 		}
 	}
 
@@ -191,6 +194,12 @@ func (d *DB) DeletePost(ctx context.Context, authorID, postID string, force bool
 			db.Post.DeletedAt.Set(time.Now()),
 		).
 		Exec(ctx)
+	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
+		return nil, err
+	}
 
 	return FromModel(post), err
 }

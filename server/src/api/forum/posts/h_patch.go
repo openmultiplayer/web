@@ -30,6 +30,10 @@ func (s *service) patch(w http.ResponseWriter, r *http.Request) {
 		web.StatusInternalServerError(w, err)
 		return
 	}
+	if post == nil {
+		web.StatusNotFound(w, nil)
+		return
+	}
 
 	web.Write(w, post)
 }

@@ -1,11 +1,9 @@
 package categories
 
 import (
-	"errors"
 	"net/http"
 
 	"github.com/go-chi/chi"
-	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -24,11 +22,11 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 
 	deleted, err := s.repo.DeleteCategory(r.Context(), id, p.MoveTo)
 	if err != nil {
-		if errors.Is(err, db.ErrNotFound) {
-			web.StatusNotFound(w, err)
-		} else {
-			web.StatusInternalServerError(w, err)
-		}
+		web.StatusInternalServerError(w, err)
+		return
+	}
+	if deleted == nil {
+		web.StatusNotFound(w, nil)
 		return
 	}
 

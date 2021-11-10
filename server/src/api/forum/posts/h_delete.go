@@ -19,6 +19,10 @@ func (s *service) delete(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 	}
+	if post == nil {
+		web.StatusNotFound(w, nil)
+		return
+	}
 
 	web.Write(w, post)
 }

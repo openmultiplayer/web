@@ -34,7 +34,6 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		web.StatusInternalServerError(w, err)
 		return
 	}
-
 	if posts == nil {
 		web.StatusNotFound(w, web.WithDescription(errors.New("not found"), "No posts were found with that ID"))
 		return

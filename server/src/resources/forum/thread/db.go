@@ -349,11 +349,15 @@ func (d *DB) GetPostCounts(ctx context.Context) (map[string]int, error) {
 	return result, nil
 }
 
-func (d *DB) Update(ctx context.Context, id string, title, categoryID *string, pinned *bool) (*post.Post, error) {
+func (d *DB) Update(ctx context.Context, userID, id string, title, categoryID *string, pinned *bool) (*post.Post, error) {
 	updates := []db.PostSetParam{
 		db.Post.Title.SetIfPresent(title),
 		db.Post.CategoryID.SetIfPresent(categoryID),
 		db.Post.Pinned.SetIfPresent(pinned),
+	}
+
+	if err := forum.CanUserMutatePost(ctx, d.db, userID, id); err != nil {
+		return nil, forum.ErrUnauthorised
 	}
 
 	p, err := d.db.Post.
@@ -366,6 +370,9 @@ func (d *DB) Update(ctx context.Context, id string, title, categoryID *string, p
 		Update(updates...).
 		Exec(ctx)
 	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return nil, nil
+		}
 		return nil, err
 	}
 	return post.FromModel(p), nil
@@ -397,6 +404,9 @@ func (d *DB) Delete(ctx context.Context, id, authorID string) (int, error) {
 		db.Post.DeletedAt.Set(time.Now()),
 	).Exec(ctx)
 	if err != nil {
+		if errors.Is(err, db.ErrNotFound) {
+			return 0, nil
+		}
 		return 0, errors.Wrap(err, "failed to set deletedAt for posts")
 	}
 
