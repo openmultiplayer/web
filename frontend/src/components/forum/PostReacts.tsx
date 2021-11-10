@@ -34,61 +34,70 @@ const getUsersReact = (userID: string) =>
     head
   );
 
-const reactsToList = (post: Post, user?: User) =>
-  map((r: ReactGroup) => {
-    const { addReact, deleteReact } = useReaction();
-    // scan the react group for reacts by the current user
-    const hasReacted = user && getUsersReact(user.id)(r.reacts);
+type PostReactProps = {
+  group: ReactGroup;
+  post: Post;
+  user?: User;
+};
+const PostReact: FC<PostReactProps> = ({ group, user, post }) => {
+  const { addReact, deleteReact } = useReaction();
+  // scan the react group for reacts by the current user
+  const hasReacted = user && getUsersReact(user.id)(group.reacts);
 
-    const onAdd = useCallback(() => {
-      addReact(post.id, r.emoji);
-    }, [addReact, r]);
-    const onDelete = useCallback(() => {
-      hasReacted && deleteReact(hasReacted?.id);
-    }, [deleteReact, hasReacted]);
+  const onAdd = useCallback(() => {
+    addReact(post.id, group.emoji);
+  }, [post, addReact, group]);
+  const onDelete = useCallback(() => {
+    hasReacted && deleteReact(hasReacted?.id);
+  }, [deleteReact, hasReacted]);
 
-    // If the user clicks a reaction, they add one if they haven't already
-    // reacted or they remove their own reaction.
-    const eventHandler = hasReacted ? onDelete : onAdd;
+  // If the user clicks a reaction, they add one if they haven't already
+  // reacted or they remove their own reaction.
+  const eventHandler = hasReacted ? onDelete : onAdd;
 
-    const emoji = twemoji.parse(r.emoji, {
-      folder: "svg",
-      ext: ".svg",
-      className: "reacts-list-emoji",
-    });
-
-    return (
-      <ListItem listStyleType="none">
-        <Button
-          display="flex"
-          gridGap="0.25em"
-          alignItems="center"
-          size="auto"
-          px="0.5em"
-          py="0.2em"
-          onClick={eventHandler}
-        >
-          <span
-            dangerouslySetInnerHTML={{
-              __html: emoji,
-            }}
-          />
-
-          <TagLabel color="blackAlpha.600">{r.count}</TagLabel>
-        </Button>
-
-        {/* NOTE: This style is global - hence the unique class name. */}
-        <style jsx global>{`
-          .reacts-list-emoji {
-            display: inline-block;
-            width: auto;
-            height: 1em;
-            vertical-align: -0.125em;
-          }
-        `}</style>
-      </ListItem>
-    );
+  const emoji = twemoji.parse(group.emoji, {
+    folder: "svg",
+    ext: ".svg",
+    className: "reacts-list-emoji",
   });
+
+  return (
+    <ListItem listStyleType="none">
+      <Button
+        display="flex"
+        gridGap="0.25em"
+        alignItems="center"
+        size="auto"
+        px="0.5em"
+        py="0.2em"
+        onClick={eventHandler}
+      >
+        <span
+          dangerouslySetInnerHTML={{
+            __html: emoji,
+          }}
+        />
+
+        <TagLabel color="blackAlpha.600">{group.count}</TagLabel>
+      </Button>
+
+      {/* NOTE: This style is global - hence the unique class name. */}
+      <style jsx global>{`
+        .reacts-list-emoji {
+          display: inline-block;
+          width: auto;
+          height: 1em;
+          vertical-align: -0.125em;
+        }
+      `}</style>
+    </ListItem>
+  );
+};
+
+const reactsToList = (post: Post, user?: User) =>
+  map((group: ReactGroup) => (
+    <PostReact group={group} post={post} user={user} />
+  ));
 
 const groupReacts = flow(
   groupBy<React>((r: React) => r.emoji),
@@ -99,7 +108,7 @@ const groupReacts = flow(
 );
 
 const PostReacts: FC<Props> = ({ post }) => {
-  const reacts = groupReacts(post.reacts);
+  const reactGroups = groupReacts(post.reacts);
   const { user } = useAuth();
   const { addReact } = useReaction();
 
@@ -119,12 +128,12 @@ const PostReacts: FC<Props> = ({ post }) => {
         p="0"
         // hide if there are no reacts in order for the grid-gap property to
         // not add an empty space to the left of the Add React button.
-        display={reacts ? "flex" : "none"}
+        display={reactGroups ? "flex" : "none"}
         gridGap="0.5em"
         alignItems="center"
         maxHeight="1.5em"
       >
-        {list(reacts)}
+        {list(reactGroups)}
       </OrderedList>
       <Flex>
         <Popover matchWidth={false}>
