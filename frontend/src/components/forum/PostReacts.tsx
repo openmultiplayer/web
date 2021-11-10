@@ -114,7 +114,6 @@ const PostReacts: FC<Props> = ({ post }) => {
   const { user } = useAuth();
   const { addReact, deleteReact, reacts } = useReaction(post, user);
   const reactGroups = groupReacts(reacts);
-  const listDisplay = reactGroups.length > 0 ? "flex" : "none";
 
   const onSelect = useCallback(
     (emoji: BaseEmoji) => addReact(post.id, emoji.native),
@@ -145,9 +144,6 @@ const PostReacts: FC<Props> = ({ post }) => {
       <OrderedList
         m="0"
         p="0"
-        // hide if there are no reacts in order for the grid-gap property to
-        // not add an empty space to the left of the Add React button.
-        display={listDisplay}
         flexWrap="wrap"
         gridGap="0.5em"
         alignItems="center"
