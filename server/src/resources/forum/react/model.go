@@ -6,7 +6,7 @@ type React struct {
 	ID    string `json:"id"`
 	Emoji string `json:"emoji"`
 	User  string `json:"user"`
-	Post  string `json:"Post"`
+	Post  string `json:"post"`
 }
 
 func FromModel(model *db.ReactModel, postID string) *React {
