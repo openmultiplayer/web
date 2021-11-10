@@ -2,6 +2,7 @@ package posts
 
 import (
 	"errors"
+	"html"
 	"net/http"
 
 	"github.com/go-chi/chi"
@@ -37,6 +38,11 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 	if posts == nil {
 		web.StatusNotFound(w, web.WithDescription(errors.New("not found"), "No posts were found with that ID"))
 		return
+	}
+
+	// TODO: move this post body html escape elsewhere...
+	for i, p := range posts {
+		posts[i].Body = html.EscapeString(p.Body)
 	}
 
 	web.Write(w, posts)
