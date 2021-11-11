@@ -3,14 +3,14 @@ import { Flex, Heading, ListItem, OrderedList, Text } from "@chakra-ui/layout";
 import { map } from "lodash/fp";
 import { FC, useCallback } from "react";
 import { Subscription } from "src/types/_generated_Notification";
-import { useUnsubscribe } from "./hooks";
+import { useNotification } from "./hooks";
 
 type Props = {
   subscriptions: Subscription[];
 };
 
 const SubscriptionsList: FC<Props> = ({ subscriptions }) => {
-  const unsubscribe = useUnsubscribe();
+  const { unsubscribe } = useNotification(false);
 
   const onUnsub = useCallback(
     (id: string) => {
