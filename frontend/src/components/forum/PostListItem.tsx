@@ -9,7 +9,6 @@ import {
 import {
   Box,
   Flex,
-  Heading,
   IconButton,
   Input,
   Menu,
@@ -18,11 +17,12 @@ import {
   MenuItem,
   MenuList,
   MenuOptionGroup,
+  Stack,
+  Divider,
   useClipboard,
   useToast,
 } from "@chakra-ui/react";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { FC, useCallback, useState } from "react";
 import { useAuth } from "src/auth/hooks";
@@ -176,7 +176,7 @@ const PostListItem: FC<Props> = ({
   return (
     <li id={post.id}>
       <article>
-        <div>
+        <Stack spacing="0.5em">
           <header>
             <Flex direction="column" width="100%">
               <PostHeadStrip
@@ -191,6 +191,8 @@ const PostListItem: FC<Props> = ({
               <PostMetadata post={post} />
             </Flex>
           </header>
+
+          <Divider />
 
           <Box as="main">
             {editing ? (
@@ -212,7 +214,7 @@ const PostListItem: FC<Props> = ({
           <Box as="footer" mt="0.5em">
             <PostReacts post={post} />
           </Box>
-        </div>
+        </Stack>
       </article>
 
       <style jsx>{`
