@@ -8,10 +8,10 @@ import (
 	"github.com/sethvargo/go-limiter/memorystore"
 )
 
-func WithRateLimit(perhour int) func(next http.Handler) http.Handler {
+func WithRateLimit(per5minutes uint64, interval time.Duration) func(next http.Handler) http.Handler {
 	store, err := memorystore.New(&memorystore.Config{
-		Tokens:   uint64(perhour),
-		Interval: time.Hour,
+		Tokens:   per5minutes,
+		Interval: interval,
 	})
 	if err != nil {
 		panic(err)

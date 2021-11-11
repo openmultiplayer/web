@@ -1,7 +1,8 @@
+import { formatDistanceToNow } from "date-fns";
 import { GetServerSidePropsContext } from "next";
-
 import { API_ADDRESS } from "src/config";
-import { APIErrorSchema } from "src/types/_generated_Error";
+import { APIError, APIErrorSchema } from "src/types/_generated_Error";
+import { niceDate } from "src/utils/dates";
 import { ZodSchema } from "zod";
 
 const success = (code: number) => code >= 200 && code <= 299;
@@ -66,6 +67,8 @@ export async function apiSSP<T>(
     const parsed = APIErrorSchema.safeParse(raw);
     if (parsed.success) {
       throw parsed.data;
+    } else if (r.status === 429) {
+      throw new RateLimitError(r, path);
     } else {
       throw new Error(`unknown error: ${r.statusText}: ${r.status}`);
     }
@@ -76,5 +79,28 @@ export async function apiSSP<T>(
     } else {
       return decoded;
     }
+  }
+}
+
+export class RateLimitError implements APIError {
+  public message: string;
+  public error: string;
+  public suggested: string;
+
+  constructor(r: Response, path: string) {
+    const limit = r.headers.get("x-ratelimit-limit");
+    const reset = r.headers.get("x-ratelimit-reset");
+
+    this.message = limit
+      ? `You have exceeded the request rate limit (${limit} requests per minute) for a particular resource (${path}) required for this page.`
+      : `You have exceeded the request rate limit for a particular resource (${path}) required for this page.`;
+
+    this.suggested = reset
+      ? `Wait until ${niceDate(reset)} (${formatDistanceToNow(
+          new Date(reset)
+        )}) for the rate limit to reset`
+      : "Wait for a while for the rate limit to reset.";
+
+    this.error = "rate limit exceeded";
   }
 }
