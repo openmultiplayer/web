@@ -35,6 +35,7 @@ export const PostTitle: FC<PostTitleProps> = ({
       overflow={clamp ? "hidden" : ""}
       textOverflow="ellipsis"
       whiteSpace={clamp ? "nowrap" : "normal"}
+      wordBreak={clamp ? "initial" : "break-word"}
     >
       <NextLink href={`/discussion/${slug}`} passHref>
         <Link>{title}</Link>
