@@ -97,15 +97,15 @@ func (d *DB) GetSubscriptionsForItem(ctx context.Context, refersType Notificatio
 	return result, nil
 }
 
-func (d *DB) GetNotifications(ctx context.Context, userID string, unread bool, after time.Time) ([]Notification, error) {
+func (d *DB) GetNotifications(ctx context.Context, userID string, read bool, after time.Time) ([]Notification, error) {
 	filters := []db.NotificationWhereParam{
 		db.Notification.Subscription.Where(
 			db.Subscription.UserID.Equals(userID),
 		),
 	}
 
-	// if unread is true, only return unread notifications, otherwise, all.
-	if unread {
+	// if read is false (default), only return unread notifications, otherwise, all.
+	if !read {
 		filters = append(filters, db.Notification.Read.Equals(false))
 	}
 
@@ -113,7 +113,10 @@ func (d *DB) GetNotifications(ctx context.Context, userID string, unread bool, a
 		filters = append(filters, db.Notification.CreatedAt.After(after))
 	}
 
-	notifs, err := d.db.Notification.FindMany(filters...).Exec(ctx)
+	notifs, err := d.db.Notification.
+		FindMany(filters...).
+		With(db.Notification.Subscription.Fetch()).
+		Exec(ctx)
 	if err != nil {
 		return nil, err
 	}
