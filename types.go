@@ -11,6 +11,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/api/auth/github"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/resources/forum/post"
+	"github.com/openmultiplayer/web/server/src/resources/notification"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/resources/user"
 	"github.com/openmultiplayer/web/server/src/web"
@@ -56,6 +57,7 @@ func main() {
 	convert("User", "", user.User{})
 	convert("Forum", "", post.Post{})
 	convert("SearchResult", "", docsindex.SearchResults{})
+	convert("Notification", "", notification.Notification{})
 
 	convert("GitHub", "", github.Link{}, github.Callback{})
 	convert("Discord", "", discord.Link{}, discord.Callback{})
