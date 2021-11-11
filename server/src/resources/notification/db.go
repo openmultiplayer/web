@@ -49,10 +49,13 @@ func (d *DB) Unsubscribe(ctx context.Context, userID, subID string) (int, error)
 		Delete().
 		Tx()
 
-	d.db.Prisma.TX.Transaction(
+	err := d.db.Prisma.TX.Transaction(
 		updateSubscription,
 		deleteNotifications,
-	)
+	).Exec(ctx)
+	if err != nil {
+		return 0, err
+	}
 
 	return deleteNotifications.Result().Count, nil
 }
