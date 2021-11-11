@@ -6,6 +6,7 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/resources/forum"
+	"github.com/openmultiplayer/web/server/src/resources/notification"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -38,6 +39,8 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 		}
 		return
 	}
+
+	s.notifications.Subscribe(r.Context(), info.Cookie.UserID, notification.NotificationTypeForumPostResponse, post.ID)
 
 	web.Write(w, post)
 }
