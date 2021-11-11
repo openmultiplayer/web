@@ -8,11 +8,16 @@ import { useSWRConfig } from "swr";
 type SubscribeFn = (refersType: string, refersTo: string) => void;
 type UnsubscribeFn = (subId: string) => void;
 type SetReadFn = (id: string, read: boolean) => void;
+type DeleteFn = (id: string) => void;
 
-export const useNotification = (): {
+export const useNotification = (
+  // Temporary, see issue #462.
+  showRead: boolean
+): {
   subscribe: SubscribeFn;
   unsubscribe: UnsubscribeFn;
   setRead: SetReadFn;
+  deleteNotification: DeleteFn;
 } => {
   const toast = useToast();
   const { mutate } = useSWRConfig();
@@ -33,10 +38,10 @@ export const useNotification = (): {
         handler(e);
       }
       mutate(`/subscriptions`);
-      mutate(`/subscriptions/notifications`);
+      mutate(`/subscriptions/notifications?read=${showRead}`);
       nProgress.done();
     },
-    [handler, toast, mutate]
+    [handler, toast, mutate, showRead]
   );
 
   const unsubscribe = useCallback(
@@ -54,10 +59,10 @@ export const useNotification = (): {
         handler(e);
       }
       mutate(`/subscriptions`);
-      mutate(`/subscriptions/notifications`);
+      mutate(`/subscriptions/notifications?read=${showRead}`);
       nProgress.done();
     },
-    [handler, toast, mutate]
+    [handler, toast, mutate, showRead]
   );
 
   const setRead = useCallback(
@@ -75,11 +80,31 @@ export const useNotification = (): {
       } catch (e) {
         handler(e);
       }
-      mutate(`/subscriptions/notifications`);
+      mutate(`/subscriptions/notifications?read=${showRead}`);
       nProgress.done();
     },
-    [handler, toast, mutate]
+    [handler, toast, mutate, showRead]
   );
 
-  return { subscribe, unsubscribe, setRead };
+  const deleteNotification = useCallback(
+    async (id: string) => {
+      nProgress.start();
+      try {
+        await apiSSP<{ count: number }>(`/subscriptions/notifications/${id}`, {
+          method: "DELETE",
+        });
+        toast({
+          title: `Deleted notification!`,
+          status: "success",
+        });
+      } catch (e) {
+        handler(e);
+      }
+      mutate(`/subscriptions/notifications?read=${showRead}`);
+      nProgress.done();
+    },
+    [handler, toast, mutate, showRead]
+  );
+
+  return { subscribe, unsubscribe, setRead, deleteNotification };
 };

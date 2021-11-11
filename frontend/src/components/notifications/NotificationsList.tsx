@@ -1,4 +1,5 @@
 import { Button } from "@chakra-ui/button";
+import { CloseButton } from "@chakra-ui/close-button";
 import { DeleteIcon, ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import {
   Flex,
@@ -16,19 +17,26 @@ import { useNotification } from "./hooks";
 
 type Props = {
   notifications: Notification[];
+
+  /** @deprecated this is waiting for #462 */
+  showRead: boolean;
 };
 
-const NotificationsList: FC<Props> = ({ notifications }) => {
-  const { unsubscribe, setRead } = useNotification();
+const NotificationsList: FC<Props> = ({ notifications, showRead }) => {
+  const { unsubscribe, setRead, deleteNotification } =
+    useNotification(showRead);
 
   const onUnsub = useCallback(
     (id?: string) => id && unsubscribe(id),
     [unsubscribe]
   );
-
   const onSetRead = useCallback(
     (id: string, read: boolean) => setRead(id, read),
     [setRead]
+  );
+  const onDelete = useCallback(
+    (id: string) => deleteNotification(id),
+    [deleteNotification]
   );
 
   const list = map((ntf: Notification) => (
@@ -57,26 +65,12 @@ const NotificationsList: FC<Props> = ({ notifications }) => {
             textOverflow="ellipsis"
             overflow="hidden"
           >
-            {ntf.title} really long title xDD wow so long very much text to
-            render
+            {ntf.title}
           </Heading>
         </Stack>
 
         <Flex gridGap="0.5em" flexDirection="column" alignItems="end">
-          <Button
-            size="xs"
-            justifyContent="end"
-            w="min-content"
-            rightIcon={ntf.read ? <ViewOffIcon /> : <ViewIcon />}
-            onClick={() => onSetRead(ntf.id, !ntf.read)}
-            title={
-              ntf.read
-                ? "Mark notification as unread"
-                : "Mark notification as read"
-            }
-          >
-            {ntf.read ? "Unread" : "Read"}
-          </Button>
+          <CloseButton onClick={() => onDelete(ntf.id)} />
         </Flex>
       </Flex>
 
@@ -103,16 +97,32 @@ const NotificationsList: FC<Props> = ({ notifications }) => {
           {niceDate(ntf.createdAt)}
         </Text>
 
-        <Button
-          size="xs"
-          justifyContent="end"
-          rightIcon={<DeleteIcon />}
-          onClick={() => onUnsub(ntf.subscription?.id)}
-          variant="ghost"
-          title="Unsubscribe from this item and clear all related notifications"
-        >
-          Unsubscribe
-        </Button>
+        <Flex>
+          <Button
+            size="xs"
+            justifyContent="end"
+            rightIcon={<DeleteIcon />}
+            onClick={() => onUnsub(ntf.subscription?.id)}
+            variant="ghost"
+            title="Unsubscribe from this item and clear all related notifications"
+          >
+            Unsubscribe
+          </Button>
+          <Button
+            size="xs"
+            justifyContent="end"
+            w="min-content"
+            rightIcon={ntf.read ? <ViewOffIcon /> : <ViewIcon />}
+            onClick={() => onSetRead(ntf.id, !ntf.read)}
+            title={
+              ntf.read
+                ? "Mark notification as unread"
+                : "Mark notification as read"
+            }
+          >
+            {ntf.read ? "Unread" : "Read"}
+          </Button>
+        </Flex>
       </Flex>
     </ListItem>
   ));

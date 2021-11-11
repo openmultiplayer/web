@@ -1,15 +1,6 @@
 import { Checkbox } from "@chakra-ui/checkbox";
-import { FormLabel } from "@chakra-ui/form-control";
 import { CheckCircleIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Center,
-  Flex,
-  Heading,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/layout";
+import { Box, Flex, Heading, Stack, Text, VStack } from "@chakra-ui/layout";
 import React, { FC, useCallback, useState } from "react";
 import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
@@ -73,7 +64,7 @@ const NotificationsView: FC = () => {
           Show Read Notifications
         </Checkbox>
       </Flex>
-      <NotificationsList notifications={data} />;
+      <NotificationsList notifications={data} showRead={showRead} />;
     </Stack>
   );
 };
