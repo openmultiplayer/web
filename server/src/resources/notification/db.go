@@ -60,10 +60,30 @@ func (d *DB) Unsubscribe(ctx context.Context, userID, subID string) (int, error)
 	return deleteNotifications.Result().Count, nil
 }
 
-func (d *DB) GetSubscriptions(ctx context.Context, userID string) ([]Subscription, error) {
+func (d *DB) GetSubscriptionsForUser(ctx context.Context, userID string) ([]Subscription, error) {
 	subs, err := d.db.Subscription.
 		FindMany(
 			db.Subscription.UserID.Equals(userID),
+			db.Subscription.DeletedAt.IsNull(),
+		).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	result := []Subscription{}
+	for _, s := range subs {
+		result = append(result, *SubFromModel(&s))
+	}
+	return result, nil
+}
+
+func (d *DB) GetSubscriptionsForItem(ctx context.Context, refersType NotificationType, refersTo string) ([]Subscription, error) {
+	subs, err := d.db.Subscription.
+		FindMany(
+			db.Subscription.RefersType.Equals(db.NotificationType(refersType)),
+			db.Subscription.RefersTo.Equals(refersTo),
+			db.Subscription.DeletedAt.IsNull(),
 		).
 		Exec(ctx)
 	if err != nil {
@@ -104,6 +124,40 @@ func (d *DB) GetNotifications(ctx context.Context, userID string, unread bool, a
 	}
 
 	return result, nil
+}
+
+func (d *DB) Notify(ctx context.Context, refersType NotificationType, refersTo string, title, desc, link string) (int, error) {
+	// NOTE: This is extremely inefficient for large forums!
+	// TODO: Figure out a better way to do this. There are two options:
+	//       1. A message queue, just to defer the DB ops. This would
+	//          effectively be the same code, just spread over time.
+	//       2. A new table that stores subscription notifiation events that
+	//          aren't associated with specific users. Then, when a user queries
+	//          their notifications list, this table is checked for items they
+	//          are subscribed to and notifications are generated.
+	subs, err := d.GetSubscriptionsForItem(ctx, refersType, refersTo)
+	if err != nil {
+		return 0, err
+	}
+
+	for _, sub := range subs {
+		_, err := d.db.Notification.
+			CreateOne(
+				db.Notification.Title.Set(title),
+				db.Notification.Description.Set(desc),
+				db.Notification.Link.Set(link),
+				db.Notification.Read.Set(false),
+				db.Notification.Subscription.Link(
+					db.Subscription.ID.Equals(sub.ID),
+				),
+			).
+			Exec(ctx)
+		if err != nil {
+			return 0, err
+		}
+	}
+
+	return len(subs), nil
 }
 
 func (d *DB) SetReadState(ctx context.Context, userID string, notificationID string, read bool) (*Notification, error) {
