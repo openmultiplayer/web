@@ -15,4 +15,5 @@ type Repository interface {
 
 	Notify(ctx context.Context, refersType NotificationType, refersTo string, title, desc, link string) (int, error)
 	SetReadState(ctx context.Context, userID string, notificationID string, read bool) (*Notification, error)
+	Delete(ctx context.Context, userID, notificationID string) (*Notification, error)
 }

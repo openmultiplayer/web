@@ -198,3 +198,23 @@ func (d *DB) userHasRightsForNotification(ctx context.Context, userID, notificat
 	}
 	return n.Subscription().User().ID == userID, nil
 }
+
+func (d *DB) Delete(ctx context.Context, userID, notificationID string) (*Notification, error) {
+	ok, err := d.userHasRightsForNotification(ctx, userID, notificationID)
+	if err != nil {
+		return nil, err
+	}
+	if !ok {
+		return nil, forum.ErrUnauthorised
+	}
+
+	n, err := d.db.Notification.
+		FindUnique(db.Notification.ID.Equals(notificationID)).
+		Delete().
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	return FromModel(n), nil
+}
