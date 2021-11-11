@@ -187,6 +187,9 @@ model Subscription {
 model Notification {
   id String @id @default(cuid())
 
+  title        String
+  description  String
+  link         String
   read         Boolean
   subscription Subscription @relation(fields: [subscriptionId], references: [id])
 
