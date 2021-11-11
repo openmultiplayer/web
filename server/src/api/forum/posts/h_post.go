@@ -1,11 +1,13 @@
 package posts
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/go-chi/chi"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/resources/notification"
 	"github.com/openmultiplayer/web/server/src/web"
 )
 
@@ -35,6 +37,19 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 		web.StatusNotFound(w, nil)
 		return
 	}
+
+	var link string
+	if post.Slug != nil {
+		link = "https://open.mp/discussion/" + *post.Slug
+	}
+
+	s.notifications.Notify(
+		r.Context(),
+		notification.NotificationTypeForumPostResponse,
+		id,
+		"Reply",
+		fmt.Sprintf("%s: %s", post.Author.Name, post.Short),
+		link)
 
 	web.Write(w, post)
 }

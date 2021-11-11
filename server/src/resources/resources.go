@@ -9,6 +9,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/resources/forum/react"
 	"github.com/openmultiplayer/web/server/src/resources/forum/tag"
 	"github.com/openmultiplayer/web/server/src/resources/forum/thread"
+	"github.com/openmultiplayer/web/server/src/resources/notification"
 	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 	"github.com/openmultiplayer/web/server/src/resources/server"
 	"github.com/openmultiplayer/web/server/src/resources/user"
@@ -25,5 +26,6 @@ func Build() fx.Option {
 		pawndex.New,
 		burgershot.New,
 		react.New,
+		notification.New,
 	)
 }

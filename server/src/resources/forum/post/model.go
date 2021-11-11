@@ -1,6 +1,7 @@
 package post
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/openmultiplayer/web/server/src/db"
@@ -66,7 +67,7 @@ func FromModel(u *db.PostModel) (w *Post) {
 
 	return &Post{
 		ID:         u.InnerPost.ID,
-		Slug:       u.InnerPost.Slug,
+		Slug:       getSlug(u),
 		Title:      u.InnerPost.Title,
 		Body:       u.InnerPost.Body,
 		Short:      u.InnerPost.Short,
@@ -88,4 +89,17 @@ func FromModel(u *db.PostModel) (w *Post) {
 		ReplyTo:  replyTo,
 		Reacts:   reacts,
 	}
+}
+
+func getSlug(post *db.PostModel) *string {
+	slug, ok := post.Slug()
+	if ok {
+		return &slug
+	}
+
+	if post.RelationsPost.Root != nil && post.RelationsPost.Root.InnerPost.Slug != nil {
+		slug = fmt.Sprintf("%s#%s", *post.RelationsPost.Root.InnerPost.Slug, post.ID)
+	}
+
+	return &slug
 }

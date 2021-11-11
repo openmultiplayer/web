@@ -28,9 +28,10 @@ model User {
   bio   String?
   admin Boolean @default(false)
 
-  servers Server[]
-  posts   Post[]
-  reacts  React[]
+  servers       Server[]
+  posts         Post[]
+  reacts        React[]
+  subscriptions Subscription[]
 
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
@@ -160,4 +161,39 @@ model React {
 
   // User should only be able to post one of any react per post.
   @@unique([emoji, postId, userId])
+}
+
+enum NotificationType {
+  /// A post in a thread the user authored, a post in a thread a user subscribed
+  /// to, a post in a thread that's in-reply to a user's post.
+  FORUM_POST_RESPONSE
+}
+
+model Subscription {
+  id String @id @default(cuid())
+
+  user          User             @relation(fields: [userId], references: [id])
+  refersType    NotificationType
+  refersTo      String
+  notifications Notification[]
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  userId String
+}
+
+model Notification {
+  id String @id @default(cuid())
+
+  title        String
+  description  String
+  link         String
+  read         Boolean
+  subscription Subscription @relation(fields: [subscriptionId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  subscriptionId String
 }

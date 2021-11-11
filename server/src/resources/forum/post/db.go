@@ -42,7 +42,12 @@ func (d *DB) CreatePost(
 
 			optional...,
 		).
-		With(db.Post.Author.Fetch()).
+		With(
+			db.Post.Author.Fetch(),
+			db.Post.Root.Fetch().With(
+				db.Post.Author.Fetch(),
+			),
+		).
 		Exec(ctx)
 	if err != nil {
 		if errors.Is(err, db.ErrNotFound) {
@@ -102,6 +107,9 @@ func (d *DB) GetPosts(ctx context.Context, slug string, max, skip int, deleted, 
 			),
 			db.Post.Reacts.Fetch().With(
 				db.React.User.Fetch(),
+			),
+			db.Post.Root.Fetch().With(
+				db.Post.Author.Fetch(),
 			),
 		).
 		Take(max).
