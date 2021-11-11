@@ -1,6 +1,8 @@
 package threads
 
 import (
+	"time"
+
 	"github.com/go-chi/chi"
 	"go.uber.org/fx"
 
@@ -33,15 +35,15 @@ func Build() fx.Option {
 				Get("/", s.list)
 
 			rtr.
-				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(5)).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(3, time.Minute)).
 				Post("/", s.post)
 
 			rtr.
-				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(5)).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(3, time.Minute)).
 				Patch("/{id}", s.patch)
 
 			rtr.
-				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(5)).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(3, time.Minute)).
 				Delete("/{id}", s.delete)
 		}),
 	)

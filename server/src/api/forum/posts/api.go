@@ -1,6 +1,8 @@
 package posts
 
 import (
+	"time"
+
 	"github.com/go-chi/chi"
 	"go.uber.org/fx"
 
@@ -29,15 +31,15 @@ func Build() fx.Option {
 				Get("/{slug}", s.get)
 
 			rtr.
-				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(3, time.Minute)).
 				Post("/{id}", s.post)
 
 			rtr.
-				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(3, time.Minute)).
 				Patch("/{id}", s.patch)
 
 			rtr.
-				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(20)).
+				With(authentication.MustBeAuthenticated, ratelimiter.WithRateLimit(3, time.Minute)).
 				Delete("/{id}", s.delete)
 		}),
 	)

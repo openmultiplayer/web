@@ -4,6 +4,7 @@ import (
 	"context"
 	"net"
 	"net/http"
+	"time"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
@@ -63,12 +64,12 @@ func Build() fx.Option {
 					},
 					AllowedMethods:   []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
 					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "Content-Length", "X-CSRF-Token"},
-					ExposedHeaders:   []string{"Link", "Content-Length"},
+					ExposedHeaders:   []string{"Link", "Content-Length", "X-Ratelimit-Limit", "X-Ratelimit-Reset"},
 					AllowCredentials: true,
 					MaxAge:           300,
 				}),
 				as.WithAuthentication,
-				ratelimiter.WithRateLimit(1000),
+				ratelimiter.WithRateLimit(60, time.Minute),
 			)
 
 			router.Get("/version", func(w http.ResponseWriter, r *http.Request) {
