@@ -120,6 +120,7 @@ const NotificationsList: FC<Props> = ({ notifications }) => {
   return (
     <OrderedList
       listStyleType="none"
+      m="0"
       display="flex"
       flexDirection="column"
       gridGap="0.5em"

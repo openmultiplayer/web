@@ -1,6 +1,16 @@
+import { Checkbox } from "@chakra-ui/checkbox";
+import { FormLabel } from "@chakra-ui/form-control";
 import { CheckCircleIcon } from "@chakra-ui/icons";
-import { Box, Center, Heading, Text, VStack } from "@chakra-ui/layout";
-import React, { FC } from "react";
+import {
+  Box,
+  Center,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  VStack,
+} from "@chakra-ui/layout";
+import React, { FC, useCallback, useState } from "react";
 import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import {
@@ -13,8 +23,14 @@ import LoadingBanner from "../LoadingBanner";
 import NotificationsList from "./NotificationsList";
 
 const NotificationsView: FC = () => {
+  const [showRead, setShowRead] = useState(false);
+  const onChangeShowRead = useCallback(
+    () => setShowRead(!showRead),
+    [showRead, setShowRead]
+  );
+
   const { data, error } = useSWR<Notification[], APIError>(
-    "/subscriptions/notifications",
+    `/subscriptions/notifications?read=${showRead}`,
     apiSWR({ schema: NotificationSchema.array() })
   );
   if (error) {
@@ -40,7 +56,26 @@ const NotificationsView: FC = () => {
     );
   }
 
-  return <NotificationsList notifications={data} />;
+  return (
+    <Stack spacing="0.5em">
+      <Flex
+        p="0.5em"
+        borderColor="blackAlpha.100"
+        borderStyle="solid"
+        borderWidth="1px"
+        borderRadius="0.5em"
+        justifyContent="space-between"
+      >
+        <Text m="0">
+          <strong>Notifications</strong>
+        </Text>
+        <Checkbox onChange={onChangeShowRead} isChecked={showRead}>
+          Show Read Notifications
+        </Checkbox>
+      </Flex>
+      <NotificationsList notifications={data} />;
+    </Stack>
+  );
 };
 
 export default NotificationsView;
