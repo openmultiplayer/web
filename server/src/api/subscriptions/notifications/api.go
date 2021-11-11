@@ -26,6 +26,10 @@ func Build() fx.Option {
 			rtr.
 				With(authentication.MustBeAuthenticated).
 				Patch("/{id}", s.patch)
+
+			rtr.
+				With(authentication.MustBeAuthenticated).
+				Delete("/{id}", s.delete)
 		}),
 	)
 }
