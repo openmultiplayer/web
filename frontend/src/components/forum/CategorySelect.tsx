@@ -1,8 +1,9 @@
-import { Select } from "@chakra-ui/react";
+import { Select, useToast } from "@chakra-ui/react";
 import React, { useCallback, ChangeEvent, FC } from "react";
 import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Category, CategorySchema } from "src/types/_generated_Forum";
+import { useErrorHandler } from "src/utils/useErrorHandler";
 import useSWR from "swr";
 
 export const allOption = "All";
@@ -20,6 +21,7 @@ const CategorySelect: FC<Props> = ({
   includeAllOption = true,
   exclude,
 }) => {
+  const handler = useErrorHandler();
   const { data, error } = useSWR<Category[], APIError>(
     "/forum/categories",
     apiSWR({ schema: CategorySchema.array() })
@@ -33,8 +35,11 @@ const CategorySelect: FC<Props> = ({
     [onSelect, data]
   );
   if (error) {
+    handler(error);
     return (
-      <Select disabled title={`An error occurred: ${error.message}`}></Select>
+      <Select disabled title={`An error occurred: ${error.message}`}>
+        <option disabled>None</option>
+      </Select>
     );
   }
   if (!data) {
