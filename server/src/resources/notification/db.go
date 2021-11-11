@@ -188,7 +188,7 @@ func (d *DB) SetReadState(ctx context.Context, userID string, notificationID str
 func (d *DB) userHasRightsForNotification(ctx context.Context, userID, notificationID string) (bool, error) {
 	n, err := d.db.Notification.
 		FindUnique(db.Notification.ID.Equals(notificationID)).
-		With(db.Notification.Subscription.Fetch()).
+		With(db.Notification.Subscription.Fetch().With(db.Subscription.User.Fetch())).
 		Exec(ctx)
 	if err != nil {
 		return false, err
