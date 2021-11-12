@@ -74,7 +74,7 @@ const NotificationsList: FC<Props> = ({ notifications, showRead }) => {
           {niceDate(ntf.createdAt)}
         </Text>
 
-        <Flex>
+        <Flex gridGap="0.5em">
           <Button
             size="xs"
             justifyContent="end"
