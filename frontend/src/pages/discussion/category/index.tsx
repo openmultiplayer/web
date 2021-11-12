@@ -15,8 +15,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
   try {
     return {
       props: {
-        categories: await apiSSP("/forum/categories", {
-          ctx,
+        categories: await apiSSP<Category[]>("/forum/categories", ctx, {
           schema: CategorySchema.array(),
         }),
       },

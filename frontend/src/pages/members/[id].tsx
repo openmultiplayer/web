@@ -22,8 +22,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const id = ctx.params?.["id"];
 
   try {
-    const initialData = await apiSSP(`/users/${id}`, {
-      ctx,
+    const initialData = await apiSSP<User>(`/users/${id}`, ctx, {
       schema: UserSchema,
     });
     return {

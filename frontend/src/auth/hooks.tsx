@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import { apiSSP } from "src/fetcher/fetcher";
+import { api } from "src/fetcher/fetcher";
 import { User, UserSchema } from "src/types/_generated_User";
 
 type AuthenticationContext = {
@@ -26,7 +26,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
   React.useEffect(() => {
     const initializeAuth = async () => {
       try {
-        const user = await apiSSP("/users/self", { schema: UserSchema });
+        const user = await api("/users/self", { schema: UserSchema });
         setAuthenticated(true);
         setUser(user);
       } catch (_) {

@@ -2,7 +2,7 @@ import { useToast, UseToastOptions } from "@chakra-ui/toast";
 import nProgress from "nprogress";
 import { useErrorHandler } from "src/utils/useErrorHandler";
 import { useSWRConfig } from "swr";
-import { apiSSP } from "./fetcher";
+import { api } from "./fetcher";
 
 export type UseMutationOptions = {
   mutate?: string;
@@ -27,7 +27,7 @@ export const useMutationAPI = <T, R = T>(): UseMutationAPI<T, R> => {
       const progress = opts?.progress ?? true;
       progress && nProgress.start();
 
-      return apiSSP<R>(path, {
+      return api<R>(path, {
         method: method,
         body: data ? JSON.stringify(data) : undefined,
       })

@@ -1,7 +1,6 @@
-import React, { FC } from "react";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
-
-import { apiSSP } from "src/fetcher/fetcher";
+import React, { FC } from "react";
+import { buildRequest } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 
 type Props = {
@@ -43,19 +42,17 @@ export const getServerSideProps = async (
   };
 
   try {
-    const response: { headers: Headers } = await apiSSP(
-      "/auth/discord/callback",
-      {
-        method: "post",
-        body: JSON.stringify(payload),
-        headers: {
-          "Content-Type": "application/json",
-          Cookie: ctx?.req?.headers?.cookie ?? "",
-        },
-        credentials: "include",
-        responseHeaders: true,
-      }
-    );
+    const request = buildRequest("/auth/discord/callback", {
+      method: "post",
+      body: JSON.stringify(payload),
+      headers: {
+        "Content-Type": "application/json",
+        Cookie: ctx?.req?.headers?.cookie ?? "",
+      },
+      credentials: "include",
+    });
+
+    const response = await fetch(request);
 
     const cookie = response.headers.get("set-cookie");
     if (cookie == null) {

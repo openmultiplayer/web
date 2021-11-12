@@ -92,7 +92,10 @@ export const getServerSideProps = async (
 ): Promise<GetServerSidePropsResult<Props>> => {
   const query = (context.query as Params).q || "";
   try {
-    const response = await apiSSP<SearchResults>(`/docs/search?q=${query}`);
+    const response = await apiSSP<SearchResults>(
+      `/docs/search?q=${query}`,
+      context
+    );
     return { props: { query, results: response, error: "" } };
   } catch (e) {
     const err = e as APIError;
