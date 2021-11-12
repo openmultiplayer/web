@@ -8,13 +8,34 @@ type Props = {
   csr?: string;
 };
 
+const Wrapper: FC = ({ children }) => (
+  <>
+    <div className="isomorphic-markdown-container">{children}</div>
+
+    <style jsx global>{`
+      .isomorphic-markdown-container > * {
+        padding: revert;
+        margin: revert;
+      }
+    `}</style>
+  </>
+);
+
 const IsomorphicMarkdown: FC<Props> = ({ ssr, csr }) => {
   if (ssr) {
-    return <MDXRemote {...ssr}></MDXRemote>;
+    return (
+      <Wrapper>
+        <MDXRemote {...ssr}></MDXRemote>
+      </Wrapper>
+    );
   }
 
   if (csr) {
-    return <ReactMarkdown>{csr}</ReactMarkdown>;
+    return (
+      <Wrapper>
+        <ReactMarkdown>{csr}</ReactMarkdown>
+      </Wrapper>
+    );
   }
 
   console.warn(
