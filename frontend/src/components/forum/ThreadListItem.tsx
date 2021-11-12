@@ -1,5 +1,6 @@
 import { WarningTwoIcon } from "@chakra-ui/icons";
 import { Box, Tag, TagLabel, TagLeftIcon } from "@chakra-ui/react";
+import { ChakraProps } from "@chakra-ui/system";
 import { opacify } from "polished";
 import React, { FC } from "react";
 import { Post } from "src/types/_generated_Forum";
@@ -8,9 +9,9 @@ import ThreadAdminMenu from "./ThreadMenu";
 
 type Props = {
   post: Post;
-};
+} & ChakraProps;
 
-const ThreadListItem: FC<Props> = ({ post }) => {
+const ThreadListItem: FC<Props> = ({ post, sx }) => {
   const categoryColour = post.category.colour;
   const categoryColourBadge = opacify(-0.6, categoryColour);
   const categoryColourBack = opacify(-0.99, categoryColour);
@@ -27,17 +28,15 @@ const ThreadListItem: FC<Props> = ({ post }) => {
   const boxShadow = post.deletedAt ? deletedBoxShadow : pinnedPostBoxShadow;
 
   return (
-    <li>
+    <>
       <Box
         as="article"
         backgroundColor={backgroundColor}
         boxShadow={boxShadow}
-        padding="0.5em 1em"
-        border="1px solid hsla(0, 100%, 0%, 10%)"
-        borderRadius="0.5em"
         display="flex"
         flexDirection="column"
         gridGap="0.5em"
+        sx={sx}
       >
         <div>
           <header>
@@ -83,7 +82,7 @@ const ThreadListItem: FC<Props> = ({ post }) => {
           font-size: 1.6em;
         }
       `}</style>
-    </li>
+    </>
   );
 };
 

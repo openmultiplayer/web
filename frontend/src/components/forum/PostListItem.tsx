@@ -22,6 +22,7 @@ import {
   useClipboard,
   useToast,
 } from "@chakra-ui/react";
+import { ChakraProps } from "@chakra-ui/system";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { useRouter } from "next/router";
 import React, { FC, useCallback, useState } from "react";
@@ -39,7 +40,7 @@ type Props = {
   markdown: MDXRemoteSerializeResult<Record<string, unknown>>;
   showAdminTools: boolean;
   onSetReply: (post: Post) => void;
-};
+} & ChakraProps;
 
 type PostHeadStripProps = {
   editing: boolean;
@@ -150,6 +151,7 @@ const PostListItem: FC<Props> = ({
   markdown,
   showAdminTools,
   onSetReply,
+  sx,
 }) => {
   const router = useRouter();
   const { user } = useAuth();
@@ -173,76 +175,55 @@ const PostListItem: FC<Props> = ({
 
   const onTitleChange = useCallback((t: string) => setTitle(t), [setTitle]);
 
+  const deletedPostColour = "red.50";
+  const deletedBoxShadow = `inset 0 0 0.5em var(--chakra-colors-red-100)`;
+
+  const backgroundColor = post.deletedAt ? deletedPostColour : "white";
+  const boxShadow = post.deletedAt ? deletedBoxShadow : "white";
+
   return (
-    <li id={post.id}>
-      <article>
-        <Stack spacing="0.5em">
-          <header>
-            <Flex direction="column" width="100%">
-              <PostHeadStrip
-                editing={editing}
-                onTitleChange={onTitleChange}
-                thread={thread}
-                post={post}
-                admin={showTools}
-                onReply={onSetReply}
-                onEdit={onEdit}
+    <Box id={post.id} sx={{ ...sx, backgroundColor, boxShadow }}>
+      <Stack spacing="0.5em">
+        <header>
+          <Flex direction="column" width="100%">
+            <PostHeadStrip
+              editing={editing}
+              onTitleChange={onTitleChange}
+              thread={thread}
+              post={post}
+              admin={showTools}
+              onReply={onSetReply}
+              onEdit={onEdit}
+            />
+            <PostMetadata post={post} />
+          </Flex>
+        </header>
+
+        <Divider />
+
+        <Box as="main">
+          {editing ? (
+            <Box paddingTop="0.5em">
+              <PostEditor
+                initialPostID={post.id}
+                initialTitle={title}
+                initialBody={post.body}
+                onSubmit={onSubmitEdit}
+                postButtonText="Save Edits"
+                disableThreadCreationOptions
               />
-              <PostMetadata post={post} />
-            </Flex>
-          </header>
+            </Box>
+          ) : (
+            <MDXRemote {...markdown}></MDXRemote>
+          )}
+        </Box>
 
-          <Divider />
-
-          <Box as="main">
-            {editing ? (
-              <Box paddingTop="0.5em">
-                <PostEditor
-                  initialPostID={post.id}
-                  initialTitle={title}
-                  initialBody={post.body}
-                  onSubmit={onSubmitEdit}
-                  postButtonText="Save Edits"
-                  disableThreadCreationOptions
-                />
-              </Box>
-            ) : (
-              <MDXRemote {...markdown}></MDXRemote>
-            )}
-          </Box>
-
-          <Box as="footer" mt="0.5em">
-            <PostReacts post={post} />
-          </Box>
-        </Stack>
-      </article>
+        <Box as="footer" mt="0.5em">
+          <PostReacts post={post} />
+        </Box>
+      </Stack>
 
       <style jsx>{`
-        article {
-          background-color: var(
-            ${post.deletedAt
-              ? "--chakra-colors-red-100"
-              : "--chakra-colors-white"}
-          );
-
-          padding: 0.5em 1em;
-          border: 1px solid hsla(0, 100%, 0%, 10%);
-          border-radius: 0.5em;
-          display: flex;
-          flex-direction: column;
-          gap: 0.5em;
-        }
-        .category {
-          display: flex;
-          justify-content: space-between;
-          line-height: 1;
-          font-size: 0.9em;
-        }
-        .category span {
-          border-left: 0.25em solid lightblue;
-          padding-left: 0.25em;
-          height: min-content;
-        }
         header {
           display: flex;
           justify-content: space-between;
@@ -250,7 +231,7 @@ const PostListItem: FC<Props> = ({
           font-size: 0.9em;
         }
       `}</style>
-    </li>
+    </Box>
   );
 };
 

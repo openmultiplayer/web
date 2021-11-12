@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { FC } from "react";
 import ThreadSearch from "src/components/forum/ThreadSearch";
 import { Post } from "src/types/_generated_Forum";
+import { CardList } from "../generic/CardList";
 import CategoryList from "./CategorySelect";
 import ThreadListItem from "./ThreadListItem";
 
@@ -76,18 +77,10 @@ const ThreadList: FC<Props> = ({
         onSearch={onSearch}
       />
 
-      <ol>{mapping(data)}</ol>
+      <CardList as="ol">{mapping(data)}</CardList>
 
       <style jsx>{`
         div {
-          display: flex;
-          flex-direction: column;
-          gap: 0.5em;
-        }
-        ol {
-          padding: 0;
-          margin: 0;
-          list-style: none;
           display: flex;
           flex-direction: column;
           gap: 0.5em;

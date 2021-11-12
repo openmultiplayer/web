@@ -1,18 +1,19 @@
-import { Box, Flex, OrderedList, Stack } from "@chakra-ui/layout";
+import { Button } from "@chakra-ui/button";
+import { AtSignIcon, SmallCloseIcon } from "@chakra-ui/icons";
+import { Box, Flex, Stack } from "@chakra-ui/layout";
 import { map } from "lodash/fp";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import { FC, useCallback, useState } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
 import { APIError } from "src/types/_generated_Error";
 import { Post } from "src/types/_generated_Forum";
+import { CardList } from "../generic/CardList";
 import LoadingBanner from "../LoadingBanner";
 import Measured from "../Measured";
 import BackLink from "./BackLink";
+import { useCreatePost } from "./hooks";
 import PostEditor from "./PostEditor";
 import PostListItem from "./PostListItem";
-import { useCreatePost } from "./hooks";
-import { AtSignIcon, SmallCloseIcon } from "@chakra-ui/icons";
-import { Button } from "@chakra-ui/button";
 
 export type PostWithMarkdown = {
   post: Post;
@@ -32,7 +33,7 @@ const PostList: FC<{
   onSetReply: (post: Post) => void;
 }> = ({ thread, posts, onSetReply }) => {
   return (
-    <OrderedList spacing={2} margin={0} listStyleType="none">
+    <CardList>
       {map((post: PostWithMarkdown) => (
         <PostListItem
           key={post.post.id}
@@ -43,7 +44,7 @@ const PostList: FC<{
           onSetReply={onSetReply}
         />
       ))(posts)}
-    </OrderedList>
+    </CardList>
   );
 };
 
