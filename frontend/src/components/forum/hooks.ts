@@ -1,208 +1,145 @@
 import { useToast } from "@chakra-ui/toast";
 import { omit, remove } from "lodash/fp";
 import { useRouter } from "next/router";
-import nProgress from "nprogress";
 import { useCallback, useState } from "react";
-import { apiSSP } from "src/fetcher/fetcher";
+import { useMutationAPI } from "src/fetcher/hooks";
 import {
   Category,
   CategorySchema,
   Post,
-  PostSchema,
   React,
 } from "src/types/_generated_Forum";
 import { User } from "src/types/_generated_User";
-import { useErrorHandler } from "src/utils/useErrorHandler";
-import { useSWRConfig } from "swr";
 import { PostPayload } from "./PostEditor";
-
-type CreateThreadFn = (data: PostPayload) => void;
-type UpdateThreadFn = (data: Post) => void;
-type CreatePostFn = (data: PostPayload) => void;
-type DeleteFn = (id: string) => void;
-type EditFn = (data: PostPayload) => void;
-type AddReactFn = (id: string, react: string) => void;
-type DeleteReactFn = (id: string) => void;
-type UpdateCategoriesFn = (categories: Category[]) => void;
-type DeleteCategoryFn = (id: string, moveTo: string) => void;
-type UpdateCategoryFn = (category: Category) => void;
 
 const isPostEmpty = (data: PostPayload) => data?.body?.length === 0;
 
+type CreateThreadFn = (data: PostPayload) => void;
 export const useCreateThread = (): CreateThreadFn => {
-  const toast = useToast();
-  const handler = useErrorHandler();
+  const api = useMutationAPI<PostPayload, Post>();
   const router = useRouter();
-  const onSubmit = useCallback(
-    async (data: PostPayload) => {
-      if (isPostEmpty(data)) {
-        return toast({ title: "Post has no content", status: "error" });
-      }
 
-      try {
-        const post = await apiSSP<Post>("/forum/threads", {
-          method: "POST",
-          body: JSON.stringify(data),
-        });
-        router.push(post.slug ?? "");
-        toast({
+  return useCallback(
+    async (post: PostPayload) => {
+      const newPost = await api("POST", "/forum/threads", {
+        toast: {
           title: "Thread created!",
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
+        },
+      })(post);
+
+      if (newPost) {
+        router.push(newPost.slug ?? "");
       }
     },
-    [toast, handler, router]
+    [api, router]
   );
-
-  return onSubmit;
 };
 
+type UpdateThreadFn = (data: Post) => void;
 export const useUpdateThread = (): UpdateThreadFn => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onUpdate = useCallback(
-    async (data: Post) => {
-      nProgress.start();
-      try {
-        await apiSSP<Post>(`/forum/threads/${data.id}`, {
-          method: "PATCH",
-          body: JSON.stringify(data),
-        });
-        toast({
+  const api = useMutationAPI();
+
+  return useCallback(
+    async (data: Post) =>
+      api("PATCH", `/forum/threads/${data.id}`, {
+        mutate: "/forum/threads",
+
+        toast: {
           title: "Thread updated!",
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate("/forum/threads");
-      nProgress.done();
-    },
-    [handler, toast, mutate]
+        },
+      })(data),
+    [api]
   );
-
-  return onUpdate;
 };
 
-export const useDeleteThread = (): DeleteFn => {
+type DeleteThreadFn = (id: string) => void;
+export const useDeleteThread = (): DeleteThreadFn => {
+  const api = useMutationAPI<Post, { count: number }>();
   const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onDelete = useCallback(
+
+  return useCallback(
     async (id: string) => {
-      nProgress.start();
-      try {
-        const r = await apiSSP<{ count: number }>(`/forum/threads/${id}`, {
-          method: "DELETE",
-        });
+      const r = await api("DELETE", `/forum/threads/${id}`, {
+        mutate: "/forum/threads",
+      })();
+      if (r) {
         toast({
           title: "Thread deleted!",
           description: `${r.count} posts deleted.`,
           status: "success",
         });
-      } catch (e) {
-        handler(e);
       }
-      mutate("/forum/threads");
-      nProgress.done();
     },
-    [handler, toast, mutate]
+    [api, toast]
   );
-
-  return onDelete;
 };
 
+type CreatePostFn = (data: PostPayload) => void;
 export const useCreatePost = (
   id: string,
   slug: string,
   replyTo?: Post
 ): CreatePostFn => {
   const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onSubmit = useCallback(
+  const api = useMutationAPI();
+
+  return useCallback(
     async (data: PostPayload) => {
       if (isPostEmpty(data)) {
         return toast({ title: "Post has no content", status: "error" });
       }
 
-      try {
-        await apiSSP<Post>(`/forum/posts/${id}`, {
-          method: "POST",
-          body: JSON.stringify({ ...data, replyTo: replyTo?.id ?? null }),
-          schema: PostSchema,
-        });
-        toast({
+      await api("POST", `/forum/posts/${id}`, {
+        mutate: `/forum/posts/${slug}`,
+        toast: {
           title: "Reply sent!",
           status: "success",
-        });
-        mutate(`/forum/posts/${slug}`);
-      } catch (e) {
-        handler(e);
-      }
+        },
+      })({ ...data, replyTo: replyTo?.id ?? null });
     },
-    [toast, handler, mutate, id, slug, replyTo]
+    [toast, api, id, slug, replyTo]
   );
-
-  return onSubmit;
 };
 
-export const useDeletePost = (): DeleteFn => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onDelete = useCallback(
-    async (id: string) => {
-      nProgress.start();
-      try {
-        await apiSSP<Post>(`/forum/posts/${id}`, { method: "DELETE" });
-        toast({
+type DeletePostFn = (id: string) => void;
+export const useDeletePost = (threadSlug: string): DeletePostFn => {
+  const api = useMutationAPI<Post>();
+
+  return useCallback(
+    async (id: string) =>
+      api("DELETE", `/forum/posts/${id}`, {
+        mutate: `/forum/posts/${threadSlug}`,
+        toast: {
           title: "Post deleted!",
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate("/forum");
-      nProgress.done();
-    },
-    [handler, toast, mutate]
+        },
+      })(),
+    [api, threadSlug]
   );
-
-  return onDelete;
 };
 
+type EditFn = (data: PostPayload) => void;
 export const useEditPost = (slug?: string): EditFn => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onEdit = useCallback(
+  const api = useMutationAPI<PostPayload>();
+
+  return useCallback(
     async (data: PostPayload) => {
-      nProgress.start();
-      try {
-        await apiSSP<Post>(`/forum/posts/${data.id}`, {
-          method: "PATCH",
-          body: JSON.stringify(data),
-        });
-        toast({
+      api("PATCH", `/forum/posts/${data.id}`, {
+        mutate: `/forum/posts/${slug}`,
+        toast: {
           title: "Post edited!",
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate(`/forum/posts/${slug}`);
-      nProgress.done();
+        },
+      })(data);
     },
-    [handler, toast, mutate, slug]
+    [api, slug]
   );
-
-  return onEdit;
 };
 
+type AddReactFn = (id: string, react: string) => void;
+type DeleteReactFn = (id: string) => void;
 export const useReaction = (
   post: Post,
   user?: User
@@ -212,8 +149,8 @@ export const useReaction = (
   deleteReact: DeleteReactFn;
 } => {
   const [reacts, setReacts] = useState(post.reacts);
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
+  const api = useMutationAPI<{ emoji: string }, React>();
+
   const addReact = useCallback(
     async (id: string, react: string) => {
       // Update the list of reactions immediately before API call - note that
@@ -222,39 +159,37 @@ export const useReaction = (
         ...reacts,
         { id: "", emoji: react, post: post.id, user: user?.id ?? "" },
       ]);
-      try {
-        const newReact = await apiSSP<React>(`/forum/reacts/${id}`, {
-          method: "POST",
-          body: JSON.stringify({
-            emoji: react,
-          }),
-        });
-        // Now write the *real* reaction to the list which contains all data.
+
+      const newReact = await api("POST", `/forum/reacts/${id}`, {
+        progress: false,
+      })({ emoji: react });
+      if (newReact) {
         setReacts([...reacts, newReact]);
-      } catch (e) {
-        // Revert to the original list of reactions.
+      } else {
         setReacts([...reacts]);
-        handler(e);
       }
-      mutate("/forum/posts/${id}");
     },
-    [handler, setReacts, post, reacts, user, mutate]
+    [api, post, reacts, user]
   );
+
+  const removeReact = (id: string) => remove((r: React) => r.id === id);
+
   const deleteReact = useCallback(
     async (id: string) => {
-      const removeReact = remove((r: React) => r.id === id);
-      setReacts([...removeReact(reacts)]);
-      try {
-        await apiSSP<React>(`/forum/reacts/${id}`, {
-          method: "DELETE",
-        });
-      } catch (e) {
+      setReacts([...removeReact(id)(reacts)]);
+      const deleted: React | undefined = await api(
+        "DELETE",
+        `/forum/reacts/${id}`,
+        {
+          mutate: `/forum/posts/${id}`,
+          progress: false,
+        }
+      )(undefined);
+      if (!deleted) {
         setReacts(reacts);
-        handler(e);
       }
-      mutate("/forum/posts/${id}");
     },
-    [handler, setReacts, reacts, mutate]
+    [api, setReacts, reacts]
   );
 
   return {
@@ -264,88 +199,55 @@ export const useReaction = (
   };
 };
 
+type UpdateCategoriesFn = (categories: Category[]) => void;
 export const useUpdateCategories = (): UpdateCategoriesFn => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onEdit = useCallback(
-    async (data: Category[]) => {
-      nProgress.start();
-      try {
-        await apiSSP<Post>(`/forum/categories`, {
-          method: "PATCH",
-          body: JSON.stringify(data),
-        });
-        toast({
-          title: "Categories updated!",
-          status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate("/forum/categories");
-      nProgress.done();
+  const api = useMutationAPI();
+  return api("PATCH", "/forum/categories", {
+    toast: {
+      title: "Categories updated!",
+      status: "success",
     },
-    [handler, toast, mutate]
-  );
-
-  return onEdit;
+  });
 };
 
+type DeleteCategoryFn = (id: string, moveTo: string) => void;
 export const useDeleteCategory = (): DeleteCategoryFn => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onEdit = useCallback(
+  const api = useMutationAPI();
+
+  const cb = useCallback(
     async (id: string, moveTo: string) => {
-      nProgress.start();
-      try {
-        await apiSSP<Post>(`/forum/categories/${id}`, {
-          method: "DELETE",
-          body: JSON.stringify({ moveTo }),
-        });
-        toast({
+      return api("DELETE", `/forum/categories/${id}`, {
+        mutate: "/forum/categories",
+        toast: {
           title: "Category deleted!",
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate("/forum/categories");
-      nProgress.done();
+        },
+      })({ moveTo });
     },
-    [handler, toast, mutate]
+    [api]
   );
 
-  return onEdit;
+  return cb;
 };
 
 const withoutRecent = omit("recent");
 
+type UpdateCategoryFn = (category: Category) => void;
 export const useUpdateCategory = (): UpdateCategoryFn => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onEdit = useCallback(
+  const api = useMutationAPI();
+
+  const cb = useCallback(
     async (category: Category) => {
-      nProgress.start();
-      try {
-        await apiSSP<Post>(`/forum/categories/${category.id}`, {
-          method: "PATCH",
-          body: JSON.stringify(CategorySchema.parse(withoutRecent(category))),
-        });
-        toast({
+      api("PATCH", `/forum/categories/${category.id}`, {
+        mutate: "/forum/categories",
+        toast: {
           title: "Category updated!",
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate("/forum/categories");
-      nProgress.done();
+        },
+      })(CategorySchema.parse(withoutRecent(category)));
     },
-    [handler, toast, mutate]
+    [api]
   );
 
-  return onEdit;
+  return cb;
 };

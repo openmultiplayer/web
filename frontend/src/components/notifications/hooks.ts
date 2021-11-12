@@ -1,9 +1,5 @@
-import { useToast } from "@chakra-ui/react";
-import nProgress from "nprogress";
 import { useCallback } from "react";
-import { apiSSP } from "src/fetcher/fetcher";
-import { useErrorHandler } from "src/utils/useErrorHandler";
-import { useSWRConfig } from "swr";
+import { useMutationAPI } from "src/fetcher/hooks";
 
 type SubscribeFn = (refersType: string, refersTo: string) => void;
 type UnsubscribeFn = (subId: string) => void;
@@ -19,91 +15,54 @@ export const useNotification = (
   setRead: SetReadFn;
   deleteNotification: DeleteFn;
 } => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
+  const api = useMutationAPI();
+
   const subscribe = useCallback(
-    async (refersType: string, refersTo: string) => {
-      nProgress.start();
-      try {
-        await apiSSP<{ count: number }>(`/subscriptions`, {
-          method: "POST",
-          body: JSON.stringify({ refersType, refersTo }),
-        });
-        toast({
+    async (refersType: string, refersTo: string) =>
+      api("POST", "/subscriptions", {
+        mutate: `/subscriptions/notifications?read=${showRead}`,
+        toast: {
           title: `Subscribed!`,
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate(`/subscriptions`);
-      mutate(`/subscriptions/notifications?read=${showRead}`);
-      nProgress.done();
-    },
-    [handler, toast, mutate, showRead]
+        },
+      })({ refersType, refersTo }),
+    [api, showRead]
   );
 
   const unsubscribe = useCallback(
-    async (subId: string) => {
-      nProgress.start();
-      try {
-        await apiSSP<{ count: number }>(`/subscriptions/${subId}`, {
-          method: "DELETE",
-        });
-        toast({
+    async (subId: string) =>
+      api("DELETE", `/subscriptions/${subId}`, {
+        mutate: `/subscriptions/notifications?read=${showRead}`,
+        toast: {
           title: `Unsubscribed!`,
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate(`/subscriptions`);
-      mutate(`/subscriptions/notifications?read=${showRead}`);
-      nProgress.done();
-    },
-    [handler, toast, mutate, showRead]
+        },
+      })(),
+    [api, showRead]
   );
 
   const setRead = useCallback(
-    async (id: string, read: boolean) => {
-      nProgress.start();
-      try {
-        await apiSSP<{ count: number }>(`/subscriptions/notifications/${id}`, {
-          method: "PATCH",
-          body: JSON.stringify({ read }),
-        });
-        toast({
+    async (id: string, read: boolean) =>
+      api("PATCH", `/subscriptions/notifications/${id}`, {
+        mutate: `/subscriptions/notifications?read=${showRead}`,
+        toast: {
           title: `Marked ${read ? "read" : "unread"}!`,
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate(`/subscriptions/notifications?read=${showRead}`);
-      nProgress.done();
-    },
-    [handler, toast, mutate, showRead]
+        },
+      })({ read }),
+    [api, showRead]
   );
 
   const deleteNotification = useCallback(
-    async (id: string) => {
-      nProgress.start();
-      try {
-        await apiSSP<{ count: number }>(`/subscriptions/notifications/${id}`, {
-          method: "DELETE",
-        });
-        toast({
+    async (id: string) =>
+      api("DELETE", `/subscriptions/notifications/${id}`, {
+        mutate: `/subscriptions/notifications?read=${showRead}`,
+        toast: {
           title: `Deleted notification!`,
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate(`/subscriptions/notifications?read=${showRead}`);
-      nProgress.done();
-    },
-    [handler, toast, mutate, showRead]
+        },
+      })(),
+    [api, showRead]
   );
 
   return { subscribe, unsubscribe, setRead, deleteNotification };

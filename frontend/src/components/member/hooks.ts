@@ -1,70 +1,38 @@
-import { useToast } from "@chakra-ui/react";
-import nProgress from "nprogress";
 import { useCallback } from "react";
-import { apiSSP } from "src/fetcher/fetcher";
+import { useMutationAPI } from "src/fetcher/hooks";
 import { User } from "src/types/_generated_User";
-import { useErrorHandler } from "src/utils/useErrorHandler";
-import { useSWRConfig } from "swr";
 
 type UpdateUserFn = (user: User) => void;
-type BanStatusFn = (id: string, banned: boolean) => void;
-
 export const useUpdateUser = (): UpdateUserFn => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onBan = useCallback(
-    async (user: User) => {
-      nProgress.start();
-      try {
-        await apiSSP<{ count: number }>(`/users/${user.id}`, {
-          method: "PATCH",
-          body: JSON.stringify(user),
-        });
-        toast({
+  const api = useMutationAPI<User>();
+
+  return useCallback(
+    async (user: User) =>
+      api("PATCH", `/users/${user.id}`, {
+        mutate: `/users/${user.id}`,
+        toast: {
           title: `Profile updated!`,
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate(`/users/${user.id}`);
-      mutate(`/users`);
-      nProgress.done();
-    },
-    [handler, toast, mutate]
+        },
+      })(user),
+    [api]
   );
-
-  return onBan;
 };
 
+type BanStatusFn = (id: string, banned: boolean) => void;
 export const useBanStatus = (): BanStatusFn => {
-  const toast = useToast();
-  const { mutate } = useSWRConfig();
-  const handler = useErrorHandler();
-  const onBan = useCallback(
+  const api = useMutationAPI();
+
+  return useCallback(
     async (id: string, banned: boolean) => {
-      nProgress.start();
-      try {
-        await apiSSP<{ count: number }>(`/users/banstatus/${id}`, {
-          method: "PUT",
-          body: JSON.stringify({
-            banned,
-          }),
-        });
-        toast({
+      api("PUT", `/users/banstatus/${id}`, {
+        mutate: `/users/${id}`,
+        toast: {
           title: `User ${banned ? "banned" : "unbanned"}!`,
           status: "success",
-        });
-      } catch (e) {
-        handler(e);
-      }
-      mutate(`/users/${id}`);
-      mutate(`/users`);
-      nProgress.done();
+        },
+      })({ banned });
     },
-    [handler, toast, mutate]
+    [api]
   );
-
-  return onBan;
 };

@@ -64,7 +64,7 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
   onReply,
   onTitleChange,
 }) => {
-  const deletePost = useDeletePost();
+  const deletePost = useDeletePost(thread.slug ?? "");
   const onClickDelete = useCallback(
     () => deletePost(post.id),
     [deletePost, post]
