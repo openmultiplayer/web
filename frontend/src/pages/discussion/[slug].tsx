@@ -3,41 +3,35 @@ import {
   GetServerSidePropsResult,
   NextPage,
 } from "next";
-import ThreadView, { PostWithMarkdown } from "src/components/forum/ThreadView";
+import PostListView from "src/components/forum/PostListView";
 import { apiSSP } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Post, PostSchema } from "src/types/_generated_Forum";
 import { serialize } from "next-mdx-remote/serialize";
+import { PostWithMarkdown } from "src/components/forum/PostListItem";
+import ErrorBanner from "src/components/ErrorBanner";
 
 type Props = {
   id: string;
   slug: string;
   initialPosts?: PostWithMarkdown[];
-  initialError?: APIError;
+  error?: APIError;
 };
 
-const Page: NextPage<Props> = ({
-  id,
-  slug,
-  initialPosts,
-  initialError,
-}: Props) => {
-  return (
-    <ThreadView
-      id={id}
-      slug={slug}
-      initialPosts={initialPosts}
-      initialError={initialError}
-    />
-  );
+const Page: NextPage<Props> = ({ id, slug, initialPosts, error }: Props) => {
+  if (error) {
+    return <ErrorBanner {...error} />;
+  }
+
+  return <PostListView id={id} slug={slug} initialPosts={initialPosts} />;
 };
 
 const serializePostList = async (posts: Post[]): Promise<PostWithMarkdown[]> =>
   Promise.all(
     posts.map(
-      async (p): Promise<PostWithMarkdown> => ({
-        post: p,
-        markdown: await serialize(p.body),
+      async (post): Promise<PostWithMarkdown> => ({
+        ...post,
+        serverSideMarkdown: await serialize(post.body),
       })
     )
   );
@@ -63,7 +57,7 @@ export async function getServerSideProps(
         props: {
           id: "",
           slug: "",
-          initialError: {
+          error: {
             message: "No posts returned",
           },
         },
@@ -84,7 +78,7 @@ export async function getServerSideProps(
       props: {
         id: "",
         slug,
-        initialError: {
+        error: {
           error: err.error ?? "",
           message: err.message ?? "",
           suggested: err.suggested ?? "",
