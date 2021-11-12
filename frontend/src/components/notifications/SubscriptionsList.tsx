@@ -10,7 +10,7 @@ type Props = {
 };
 
 const SubscriptionsList: FC<Props> = ({ subscriptions }) => {
-  const { unsubscribe } = useNotification(false);
+  const { unsubscribe } = useNotification();
 
   const onUnsub = useCallback(
     (id: string) => {

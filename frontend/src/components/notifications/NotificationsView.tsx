@@ -21,8 +21,11 @@ const NotificationsView: FC = () => {
   );
 
   const { data, error } = useSWR<Notification[], APIError>(
-    `/subscriptions/notifications?read=${showRead}`,
-    apiSWR({ schema: NotificationSchema.array() })
+    `/subscriptions/notifications`,
+    apiSWR({
+      schema: NotificationSchema.array(),
+      query: new URLSearchParams({ read: `${showRead}` }),
+    })
   );
   if (error) {
     return <ErrorBanner {...error} />;
@@ -64,7 +67,7 @@ const NotificationsView: FC = () => {
           Show Read Notifications
         </Checkbox>
       </Flex>
-      <NotificationsList notifications={data} showRead={showRead} />;
+      <NotificationsList notifications={data} />;
     </Stack>
   );
 };

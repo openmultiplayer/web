@@ -1,10 +1,10 @@
 import { DeleteIcon, ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import {
+  Box,
   Button,
   CloseButton,
   Flex,
   Heading,
-  Box,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -18,14 +18,10 @@ import { useNotification } from "./hooks";
 
 type Props = {
   notifications: Notification[];
-
-  /** @deprecated this is waiting for #462 */
-  showRead: boolean;
 };
 
-const NotificationsList: FC<Props> = ({ notifications, showRead }) => {
-  const { unsubscribe, setRead, deleteNotification } =
-    useNotification(showRead);
+const NotificationsList: FC<Props> = ({ notifications }) => {
+  const { unsubscribe, setRead, deleteNotification } = useNotification();
 
   const onUnsub = useCallback(
     (id?: string) => id && unsubscribe(id),
