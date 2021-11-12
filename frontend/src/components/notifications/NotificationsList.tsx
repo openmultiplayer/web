@@ -13,6 +13,7 @@ import { FC, useCallback } from "react";
 import { Notification } from "src/types/_generated_Notification";
 import { niceDate } from "src/utils/dates";
 import { CardList } from "../generic/CardList";
+import ClampedParagraph from "../generic/ClampedParagraph";
 import { useNotification } from "./hooks";
 
 type Props = {
@@ -66,7 +67,7 @@ const NotificationsList: FC<Props> = ({ notifications, showRead }) => {
       </Flex>
 
       <Flex>
-        <p>{ntf.description}</p>
+        <ClampedParagraph lines={2}>{ntf.description}</ClampedParagraph>
       </Flex>
 
       <Flex as="footer" justifyContent="space-between">
