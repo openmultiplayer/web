@@ -1,22 +1,33 @@
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import React, { FC } from "react";
 import ReactMarkdown from "react-markdown";
+import ErrorBanner from "../ErrorBanner";
 
 type Props = {
-  csr?: string;
   ssr?: MDXRemoteSerializeResult<Record<string, unknown>>;
+  csr?: string;
 };
 
-const IsomorphicMarkdown: FC<Props> = ({ csr, ssr }) => {
-  if (csr) {
-    return <ReactMarkdown>{csr}</ReactMarkdown>;
-  }
-
+const IsomorphicMarkdown: FC<Props> = ({ ssr, csr }) => {
   if (ssr) {
     return <MDXRemote {...ssr}></MDXRemote>;
   }
 
-  return null;
+  if (csr) {
+    return <ReactMarkdown>{csr}</ReactMarkdown>;
+  }
+
+  console.warn(
+    "IsomorphicMarkdown received neither csr or ssr props so it's rendering nothing. Ensure the parent is passing both optional server side rendered markdown (which isn't present during a client side page transition) and raw markdown direct from an SWR call (which should ALWAYS be present, regardless of client or server render)"
+  );
+
+  return (
+    <ErrorBanner
+      message="Markdown content was missing at the time of render."
+      suggested="Please report this issue to a team member. Make sure to include the page URL and some details about how you encountered this problem."
+      error="The IsomorphicMarkdown component was not provided with either server side or client side rendered markdown content."
+    />
+  );
 };
 
 export default IsomorphicMarkdown;
