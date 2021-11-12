@@ -1,18 +1,18 @@
-import { Button } from "@chakra-ui/button";
-import { CloseButton } from "@chakra-ui/close-button";
 import { DeleteIcon, ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import {
+  Button,
+  CloseButton,
   Flex,
-  Stack,
   Heading,
-  ListItem,
-  OrderedList,
+  Box,
+  Stack,
   Text,
-} from "@chakra-ui/layout";
+} from "@chakra-ui/react";
 import { map } from "lodash/fp";
 import { FC, useCallback } from "react";
 import { Notification } from "src/types/_generated_Notification";
 import { niceDate } from "src/utils/dates";
+import { CardList } from "../generic/CardList";
 import { useNotification } from "./hooks";
 
 type Props = {
@@ -40,20 +40,11 @@ const NotificationsList: FC<Props> = ({ notifications, showRead }) => {
   );
 
   const list = map((ntf: Notification) => (
-    <ListItem
+    <Box
       key={ntf.id}
-      p="0"
-      m="0"
-      as="article"
-      // backgroundColor={backgroundColor}
-      // boxShadow={boxShadow}
-      padding="0.5em"
-      border="1px solid hsla(0, 100%, 0%, 10%)"
-      borderRadius="0.5em"
       display="flex"
       flexDirection="column"
       gridGap="0.5em"
-      w="100%"
       color={ntf.read ? "blackAlpha.600" : "initial"}
     >
       <Flex justifyContent="space-between" gridGap="0.5em">
@@ -76,20 +67,6 @@ const NotificationsList: FC<Props> = ({ notifications, showRead }) => {
 
       <Flex>
         <p>{ntf.description}</p>
-
-        <style jsx>{`
-          p {
-            margin: 0.1em;
-            text-overflow: ellipsis;
-            overflow: hidden;
-
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            max-lines: 2;
-            line-clamp: 2;
-          }
-        `}</style>
       </Flex>
 
       <Flex as="footer" justifyContent="space-between">
@@ -124,20 +101,10 @@ const NotificationsList: FC<Props> = ({ notifications, showRead }) => {
           </Button>
         </Flex>
       </Flex>
-    </ListItem>
+    </Box>
   ));
 
-  return (
-    <OrderedList
-      listStyleType="none"
-      m="0"
-      display="flex"
-      flexDirection="column"
-      gridGap="0.5em"
-    >
-      {list(notifications)}
-    </OrderedList>
-  );
+  return <CardList>{list(notifications)}</CardList>;
 };
 
 export default NotificationsList;
