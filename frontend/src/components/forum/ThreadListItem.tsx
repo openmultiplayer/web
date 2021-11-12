@@ -4,6 +4,7 @@ import { ChakraProps } from "@chakra-ui/system";
 import { opacify } from "polished";
 import React, { FC } from "react";
 import { Post } from "src/types/_generated_Forum";
+import ClampedParagraph from "../generic/ClampedParagraph";
 import { CategoryName, PostMetadata, PostTitle } from "./common";
 import ThreadAdminMenu from "./ThreadMenu";
 
@@ -60,7 +61,7 @@ const ThreadListItem: FC<Props> = ({ post, sx }) => {
 
           {!post.pinned && (
             <main>
-              <p>{post.short}</p>
+              <ClampedParagraph lines={2}>{post.short}</ClampedParagraph>
             </main>
           )}
         </div>
