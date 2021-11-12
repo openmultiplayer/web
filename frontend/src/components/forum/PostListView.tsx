@@ -1,57 +1,31 @@
 import { Button } from "@chakra-ui/button";
 import { AtSignIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import { Box, Flex, Stack } from "@chakra-ui/layout";
-import { map } from "lodash/fp";
-import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import { FC, useCallback, useState } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
+import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
-import { Post } from "src/types/_generated_Forum";
-import { CardList } from "../generic/CardList";
+import { Post, PostSchema } from "src/types/_generated_Forum";
+import useSWR from "swr";
 import LoadingBanner from "../LoadingBanner";
 import Measured from "../Measured";
 import BackLink from "./BackLink";
 import { useCreatePost } from "./hooks";
 import PostEditor from "./PostEditor";
-import PostListItem from "./PostListItem";
-
-export type PostWithMarkdown = {
-  post: Post;
-  markdown: MDXRemoteSerializeResult<Record<string, unknown>>;
-};
+import PostList from "./PostList";
+import { PostWithMarkdown } from "./PostListItem";
 
 type Props = {
   id: string;
   slug: string;
   initialPosts?: PostWithMarkdown[];
-  initialError?: APIError;
 };
 
-const PostList: FC<{
-  thread: Partial<Post>;
-  posts: PostWithMarkdown[];
-  onSetReply: (post: Post) => void;
-}> = ({ thread, posts, onSetReply }) => {
-  return (
-    <CardList>
-      {map((post: PostWithMarkdown) => (
-        <PostListItem
-          key={post.post.id}
-          thread={thread}
-          post={post.post}
-          markdown={post.markdown}
-          showAdminTools={true}
-          onSetReply={onSetReply}
-        />
-      ))(posts)}
-    </CardList>
-  );
+type ReplyToPostProps = {
+  post: Post;
+  onCancel: () => void;
 };
-
-const ReplyToPost: FC<{ post: Post; onCancel: () => void }> = ({
-  post,
-  onCancel,
-}) => {
+const ReplyToPost: FC<ReplyToPostProps> = ({ post, onCancel }) => {
   const onClick = useCallback(() => onCancel(), [onCancel]);
 
   return (
@@ -79,12 +53,13 @@ const ReplyToPost: FC<{ post: Post; onCancel: () => void }> = ({
   );
 };
 
-const Reply: FC<{
+type ReplyProps = {
   id: string;
   slug: string;
   post?: Post;
   onCancelReply: () => void;
-}> = ({ id, slug, post, onCancelReply }) => {
+};
+const Reply: FC<ReplyProps> = ({ id, slug, post, onCancelReply }) => {
   const onSubmit = useCreatePost(id, slug, post);
 
   return (
@@ -100,15 +75,20 @@ const Reply: FC<{
   );
 };
 
-const ThreadView: FC<Props> = ({ id, slug, initialPosts, initialError }) => {
+const PostListView: FC<Props> = ({ id, slug, initialPosts }) => {
   const [reply, setReply] = useState<Post | undefined>(undefined);
   const onCancelReply = useCallback(() => setReply(undefined), [setReply]);
   const onSetReply = useCallback((post: Post) => setReply(post), [setReply]);
 
-  if (initialError) {
-    return <ErrorBanner {...initialError} />;
+  const { data, error } = useSWR<Post[], APIError>(
+    `/forum/posts/${slug}`,
+    apiSWR({ schema: PostSchema.array() }),
+    { fallbackData: initialPosts }
+  );
+  if (error) {
+    return <ErrorBanner {...error} />;
   }
-  if (!initialPosts) {
+  if (!data) {
     return <LoadingBanner />;
   }
 
@@ -117,11 +97,7 @@ const ThreadView: FC<Props> = ({ id, slug, initialPosts, initialError }) => {
       <Stack spacing={2}>
         <BackLink to="/discussion" />
 
-        <PostList
-          thread={{ id, slug }}
-          posts={initialPosts}
-          onSetReply={onSetReply}
-        />
+        <PostList thread={{ id, slug }} posts={data} onSetReply={onSetReply} />
 
         <Reply id={id} slug={slug} post={reply} onCancelReply={onCancelReply} />
       </Stack>
@@ -129,4 +105,4 @@ const ThreadView: FC<Props> = ({ id, slug, initialPosts, initialError }) => {
   );
 };
 
-export default ThreadView;
+export default PostListView;
