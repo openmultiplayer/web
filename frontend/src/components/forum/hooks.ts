@@ -121,8 +121,8 @@ export const useCreatePost = (
   replyTo?: Post
 ): CreatePostFn => {
   const toast = useToast();
+  const { mutate } = useSWRConfig();
   const handler = useErrorHandler();
-  const router = useRouter();
   const onSubmit = useCallback(
     async (data: PostPayload) => {
       if (isPostEmpty(data)) {
@@ -139,12 +139,12 @@ export const useCreatePost = (
           title: "Reply sent!",
           status: "success",
         });
-        router.push(`/discussion/${slug}`);
+        mutate(`/forum/posts/${slug}`);
       } catch (e) {
         handler(e);
       }
     },
-    [toast, handler, router, id, slug, replyTo]
+    [toast, handler, mutate, id, slug, replyTo]
   );
 
   return onSubmit;
@@ -175,7 +175,7 @@ export const useDeletePost = (): DeleteFn => {
   return onDelete;
 };
 
-export const useEditPost = (): EditFn => {
+export const useEditPost = (slug?: string): EditFn => {
   const toast = useToast();
   const { mutate } = useSWRConfig();
   const handler = useErrorHandler();
@@ -194,10 +194,10 @@ export const useEditPost = (): EditFn => {
       } catch (e) {
         handler(e);
       }
-      mutate("/forum");
+      mutate(`/forum/posts/${slug}`);
       nProgress.done();
     },
-    [handler, toast, mutate]
+    [handler, toast, mutate, slug]
   );
 
   return onEdit;

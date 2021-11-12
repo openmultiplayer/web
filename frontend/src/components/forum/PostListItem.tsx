@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/icons";
 import {
   Box,
+  Divider,
   Flex,
   IconButton,
   Input,
@@ -18,13 +19,11 @@ import {
   MenuList,
   MenuOptionGroup,
   Stack,
-  Divider,
   useClipboard,
   useToast,
 } from "@chakra-ui/react";
 import { ChakraProps } from "@chakra-ui/system";
-import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-import { useRouter } from "next/router";
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import React, { FC, useCallback, useState } from "react";
 import { useAuth } from "src/auth/hooks";
 import { WEB_ADDRESS } from "src/config";
@@ -33,11 +32,15 @@ import { PostMetadata, PostTitle } from "./common";
 import { useDeletePost, useEditPost } from "./hooks";
 import PostEditor, { PostPayload } from "./PostEditor";
 import PostReacts from "./PostReacts";
+import IsomorphicMarkdown from "./IsomorphicMarkdown";
+
+export type PostWithMarkdown = Post & {
+  serverSideMarkdown?: MDXRemoteSerializeResult<Record<string, unknown>>;
+};
 
 type Props = {
   thread: Partial<Post>;
-  post: Post;
-  markdown: MDXRemoteSerializeResult<Record<string, unknown>>;
+  post: PostWithMarkdown;
   showAdminTools: boolean;
   onSetReply: (post: Post) => void;
 } & ChakraProps;
@@ -145,32 +148,55 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
   );
 };
 
+type EditingProps = {
+  post: Post;
+  title?: string;
+  onSubmitEdit: (p: PostPayload) => void;
+};
+const Editing: FC<EditingProps> = ({ post, title, onSubmitEdit }) => {
+  return (
+    <Box paddingTop="0.5em">
+      <PostEditor
+        initialPostID={post.id}
+        initialTitle={title}
+        initialBody={post.body}
+        onSubmit={onSubmitEdit}
+        postButtonText="Save Edits"
+        disableThreadCreationOptions
+      />
+    </Box>
+  );
+};
+
 const PostListItem: FC<Props> = ({
   thread,
   post,
-  markdown,
   showAdminTools,
   onSetReply,
   sx,
 }) => {
-  const router = useRouter();
   const { user } = useAuth();
   const owned = user?.id === post.author.id;
   const showTools = showAdminTools || owned;
+
+  // The post.markdown field NEVER changes, it's serialised server side only
+  // for next-mdx-remote and used only for server side renders. Once the client
+  // takes over, this value is used instead which is the value that is mutated
+  // by the post editing flow.
+  const [csrMarkdown, setCSRMarkdown] = useState(post.body);
 
   const [editing, setEditing] = useState(false);
   const [title, setTitle] = useState(post.title ?? undefined);
   const onEdit = useCallback(() => setEditing(true), [setEditing]);
 
-  const editPost = useEditPost();
+  const editPost = useEditPost(thread.slug ?? "");
   const onSubmitEdit = useCallback(
     (p: PostPayload) => {
       editPost(p);
       setEditing(false);
-      // TODO: Edit markdown contents directly and re-render
-      router.push(`/discussion/${thread.slug}`);
+      p.body && setCSRMarkdown(p.body);
     },
-    [editPost, router, thread]
+    [editPost]
   );
 
   const onTitleChange = useCallback((t: string) => setTitle(t), [setTitle]);
@@ -203,18 +229,12 @@ const PostListItem: FC<Props> = ({
 
         <Box as="main">
           {editing ? (
-            <Box paddingTop="0.5em">
-              <PostEditor
-                initialPostID={post.id}
-                initialTitle={title}
-                initialBody={post.body}
-                onSubmit={onSubmitEdit}
-                postButtonText="Save Edits"
-                disableThreadCreationOptions
-              />
-            </Box>
+            <Editing post={post} title={title} onSubmitEdit={onSubmitEdit} />
           ) : (
-            <MDXRemote {...markdown}></MDXRemote>
+            <IsomorphicMarkdown
+              ssr={post.serverSideMarkdown}
+              csr={csrMarkdown}
+            />
           )}
         </Box>
 
