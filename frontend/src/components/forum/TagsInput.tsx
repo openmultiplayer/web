@@ -15,7 +15,7 @@ import React, {
   FocusEvent,
   KeyboardEvent,
 } from "react";
-import { apiSWR } from "src/fetcher/fetcher";
+import { api } from "src/fetcher/fetcher";
 import { TagButton } from "./LinkedTag";
 
 type Tag = {
@@ -138,7 +138,7 @@ class TagsInput extends Component<Props, State> {
   doTagQuery(query: string): void {
     debounce(
       () =>
-        apiSWR<Tag[]>()(`/forum/tags?query=${query}`).then((tags) =>
+        api<Tag[]>(`/forum/tags?query=${query}`).then((tags) =>
           this.setState({ ...this.state, tags: tags ?? [], showTags: true })
         ),
       500
