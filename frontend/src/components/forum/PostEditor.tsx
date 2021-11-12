@@ -47,6 +47,7 @@ const PostEditor: FC<Props> = ({
   placeholder = "Your post content...",
 }) => {
   const [body, setBody] = useState(initialBody);
+  const [resetKey, setResetKey] = useState(Math.random());
   const [tags, setTags] = useState<string[]>([]);
   const [category, setCategory] = useState("General");
   const { register, handleSubmit } = useForm({
@@ -66,6 +67,8 @@ const PostEditor: FC<Props> = ({
         tags,
         category,
       });
+      // Trigger the editor to re-render and clear its content.
+      setResetKey(Math.random());
     },
     [initialPostID, initialTitle, onSubmit, body, tags, category]
   );
@@ -115,6 +118,7 @@ const PostEditor: FC<Props> = ({
             minHeight="12em"
           >
             <Editor
+              key={resetKey}
               className="mv2"
               defaultValue={initialBody}
               onChange={onChange}
