@@ -234,12 +234,7 @@ func (d *DB) GetThreads(
 	if !includePosts {
 		filters = append(filters, db.Post.First.Equals(true))
 	}
-	if includeDeleted {
-		filters = append(filters, db.Post.Or(
-			db.Post.DeletedAt.Lte(time.Now()),
-			db.Post.DeletedAt.IsNull()),
-		)
-	} else {
+	if !includeDeleted {
 		filters = append(filters, db.Post.DeletedAt.IsNull())
 	}
 	if !includeAdmin {
@@ -248,23 +243,6 @@ func (d *DB) GetThreads(
 		))
 	}
 
-	var pinned []db.PostModel
-	var err error
-	if category != "" {
-		pinned, err = d.db.Post.
-			FindMany(append(filters, db.Post.Pinned.Equals(true))...).
-			With(
-				db.Post.Author.Fetch(),
-				db.Post.Tags.Fetch(),
-				db.Post.Category.Fetch(),
-			).
-			Take(max).
-			OrderBy(db.Post.CreatedAt.Order(db.Direction(sort))).
-			Exec(ctx)
-		if err != nil {
-			return nil, err
-		}
-	}
 	posts, err := d.db.Post.
 		FindMany(filters...).
 		With(
@@ -273,7 +251,10 @@ func (d *DB) GetThreads(
 			db.Post.Category.Fetch(),
 		).
 		Take(max).
-		OrderBy(db.Post.CreatedAt.Order(db.Direction(sort))).
+		OrderBy(
+			db.Post.Pinned.Order(db.SortOrderDesc),
+			db.Post.CreatedAt.Order(db.Direction(sort)),
+		).
 		Exec(ctx)
 	if err != nil {
 		return nil, err
@@ -284,32 +265,8 @@ func (d *DB) GetThreads(
 		return nil, err
 	}
 
-	//
-	// NOTE:
-	//
-	// This double query is a temporary solution for pinned posts. The reason
-	// for this is the multiple sort order query didn't work, details here:
-	// https://github.com/prisma/prisma-client-go/issues/681
-	//
-
 	result := []post.Post{}
-	pinnedIDs := make(map[string]struct{})
-	// First, add the pinned posts to the start of the list.
-	for _, p := range pinned {
-		p.Body = ""
-		newpost := *post.FromModel(&p)
-		newpost.Posts = counts[p.ID]
-		result = append(result, newpost)
-
-		// store the pinned post ID so we can filter it out below.
-		pinnedIDs[p.ID] = struct{}{}
-	}
-	// then add the rest of the posts, filtering out what's already there.
 	for _, p := range posts {
-		// don't duplicate pinned posts they are already at the top of the list.
-		if _, ok := pinnedIDs[p.ID]; ok {
-			continue
-		}
 		p.Body = ""
 		newpost := *post.FromModel(&p)
 		newpost.Posts = counts[p.ID]
