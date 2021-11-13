@@ -16,7 +16,6 @@ import PostList from "./PostList";
 import { PostWithMarkdown } from "./PostListItem";
 
 type Props = {
-  id: string;
   slug: string;
   initialPosts?: PostWithMarkdown[];
 };
@@ -75,7 +74,7 @@ const Reply: FC<ReplyProps> = ({ id, slug, post, onCancelReply }) => {
   );
 };
 
-const PostListView: FC<Props> = ({ id, slug, initialPosts }) => {
+const PostListView: FC<Props> = ({ slug, initialPosts }) => {
   const [reply, setReply] = useState<Post | undefined>(undefined);
   const onCancelReply = useCallback(() => setReply(undefined), [setReply]);
   const onSetReply = useCallback((post: Post) => setReply(post), [setReply]);
@@ -91,6 +90,8 @@ const PostListView: FC<Props> = ({ id, slug, initialPosts }) => {
   if (!data) {
     return <LoadingBanner />;
   }
+
+  const id = data[0].id;
 
   return (
     <Measured>

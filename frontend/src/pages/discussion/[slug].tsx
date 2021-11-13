@@ -3,27 +3,25 @@ import {
   GetServerSidePropsResult,
   NextPage,
 } from "next";
-import PostListView from "src/components/forum/PostListView";
-import { apiSSP } from "src/fetcher/fetcher";
-import { APIError } from "src/types/_generated_Error";
-import { Post, PostSchema } from "src/types/_generated_Forum";
 import { serialize } from "next-mdx-remote/serialize";
-import { PostWithMarkdown } from "src/components/forum/PostListItem";
+import { useRouter } from "next/router";
 import ErrorBanner from "src/components/ErrorBanner";
+import { PostWithMarkdown } from "src/components/forum/PostListItem";
+import PostListView from "src/components/forum/PostListView";
+import { apiSSP, mapSSP, SSP } from "src/fetcher/fetcher";
+import { Post, PostSchema } from "src/types/_generated_Forum";
 
-type Props = {
-  id: string;
-  slug: string;
-  initialPosts?: PostWithMarkdown[];
-  error?: APIError;
-};
+type Props = SSP<Post[]>;
 
-const Page: NextPage<Props> = ({ id, slug, initialPosts, error }: Props) => {
-  if (error) {
-    return <ErrorBanner {...error} />;
+const Page: NextPage<Props> = (props) => {
+  const {
+    query: { slug },
+  } = useRouter();
+  if (!props.success) {
+    return <ErrorBanner {...props.error} />;
   }
 
-  return <PostListView id={id} slug={slug} initialPosts={initialPosts} />;
+  return <PostListView slug={slug as string} initialPosts={props.data} />;
 };
 
 const serializePostList = async (posts: Post[]): Promise<PostWithMarkdown[]> =>
@@ -41,50 +39,14 @@ export async function getServerSideProps(
 ): Promise<GetServerSidePropsResult<Props>> {
   const slug = ctx?.params?.slug?.toString();
   if (!slug) {
-    ctx.res.writeHead(301, undefined, { Location: "/discussion" });
-    ctx.res.end();
-    return { props: { id: "", slug: "" } };
+    return { redirect: { destination: "/discussion", permanent: false } };
   }
 
-  try {
-    const posts = await apiSSP<Post[]>(`/forum/posts/${slug}`, ctx, {
+  return {
+    props: await apiSSP<Post[]>(`/forum/posts/${slug}`, ctx, {
       schema: PostSchema.array(),
-    });
-
-    if (posts.length === 0) {
-      return {
-        props: {
-          id: "",
-          slug: "",
-          error: {
-            message: "No posts returned",
-          },
-        },
-      };
-    }
-
-    return {
-      props: {
-        id: posts[0].id,
-        slug,
-        initialPosts: await serializePostList(posts),
-      },
-    };
-  } catch (e) {
-    const err = e as APIError;
-    console.error(err.error);
-    return {
-      props: {
-        id: "",
-        slug,
-        error: {
-          error: err.error ?? "",
-          message: err.message ?? "",
-          suggested: err.suggested ?? "",
-        },
-      },
-    };
-  }
+    }).then(mapSSP<Post[], PostWithMarkdown[]>(serializePostList)),
+  };
 }
 
 export default Page;

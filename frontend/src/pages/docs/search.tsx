@@ -1,25 +1,23 @@
-import React, { FC } from "react";
-import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
-import Error from "next/error";
-import useSWR from "swr";
 import { last, map } from "lodash/fp";
-
-import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { APIError } from "src/types/_generated_Error";
+import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Link from "next/link";
-import LoadingBanner from "src/components/LoadingBanner";
+import React, { FC } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
+import LoadingBanner from "src/components/LoadingBanner";
+import { apiSSP, apiSWR, mapSSP, SSP } from "src/fetcher/fetcher";
+import { APIError } from "src/types/_generated_Error";
 import { Hit, SearchResults } from "src/types/_generated_SearchResult";
+import useSWR from "swr";
 
 type Params = {
   q: string;
 };
 
-type Props = {
+type Data = {
   query: string;
   results: SearchResults | null;
-  error?: string;
 };
+type Props = SSP<Data>;
 
 const clean = (path: string): string =>
   noExtension(last(path.split("/")) ?? path);
@@ -27,14 +25,14 @@ const clean = (path: string): string =>
 const noExtension = (path: string) => path.replace(".md", "");
 
 const resultToItem = (h: Hit) => (
-  <li>
+  <li key={h.url}>
     <Link href={h.url}>
       <a>{clean(h.url)}</a>
     </Link>
   </li>
 );
 
-const Results: FC<Partial<Props>> = ({ query, results }) => {
+const Results: FC<Partial<Data>> = ({ query, results }) => {
   const { data, error } = useSWR<SearchResults, APIError>(
     `/docs/search`,
     apiSWR({ query: new URLSearchParams({ q: query ?? "" }) }),
@@ -69,10 +67,12 @@ const Form: FC = () => (
   </form>
 );
 
-const Page: FC<Props> = ({ query, results, error }) => {
-  if (error) {
-    return <Error statusCode={500} title={error} />;
+const Page: FC<Props> = (props) => {
+  if (!props.success) {
+    return <ErrorBanner {...props.error} />;
   }
+
+  const { query, results } = props.data;
 
   return (
     <section className="center measure-wide pa4">
@@ -91,16 +91,12 @@ export const getServerSideProps = async (
   context: GetServerSidePropsContext<Params>
 ): Promise<GetServerSidePropsResult<Props>> => {
   const query = (context.query as Params).q || "";
-  try {
-    const response = await apiSSP<SearchResults>(
-      `/docs/search?q=${query}`,
-      context
-    );
-    return { props: { query, results: response, error: "" } };
-  } catch (e) {
-    const err = e as APIError;
-    return { props: { query, results: null, error: err.message } };
-  }
+
+  return {
+    props: await apiSSP<SearchResults>(`/docs/search?q=${query}`, context).then(
+      mapSSP<SearchResults, Data>(async (results) => ({ results, query }))
+    ),
+  };
 };
 
 export default Page;
