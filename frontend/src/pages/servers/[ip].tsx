@@ -3,6 +3,9 @@ import { Box, Flex, Link, Stack, Text } from "@chakra-ui/layout";
 import { Stat, StatLabel, StatNumber } from "@chakra-ui/stat";
 import { chakra } from "@chakra-ui/system";
 import { Table, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/table";
+import { Button } from "@chakra-ui/button";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { Divider } from "@chakra-ui/react";
 import { formatDistance } from "date-fns";
 import {
   GetServerSidePropsContext,
@@ -42,11 +45,13 @@ const Info = ({ data }: { data: All }) => (
 
     <Flex alignItems="center" justifyContent="center">
       <Box
+        minW="50em"
         px={8}
-        py={4}
+        py={8}
         rounded="lg"
-        shadow="lg"
+        shadow="base"
         bg={useColorModeValue("white", "gray.800")}
+        border="1px solid #8477B7"
       >
         <Stack spacing="4">
           <Flex justifyContent="space-between" alignItems="center">
@@ -95,11 +100,12 @@ const Info = ({ data }: { data: All }) => (
           </Box>
 
           <Stack
-            spacing="4"
+            spacing="44"
             direction={["column", "row"]}
-            justifyContent="space-around"
+            justifyContent="space-between"
+            alignItems="center"
           >
-            <Flex direction="column" justify="space-around" align="center">
+            <Flex direction="column" justify="space-around" align="start">
               <Stat>
                 <StatLabel>Players Online</StatLabel>
                 <StatNumber>
@@ -116,6 +122,20 @@ const Info = ({ data }: { data: All }) => (
                 <StatLabel>Language</StatLabel>
                 <StatNumber>{data.core.la}</StatNumber>
               </Stat>
+              <Link href={`samp://${data.dm ?? data.ip}`} isExternal>
+                <Button
+                  mt={"1em"}
+                  bgColor="#8477B7"
+                  color="white"
+                  border="solid 3px transparent"
+                  _hover={{ bgColor: "#AEA0E1" }}
+                  _active={{ bgColor: "#AEA0E1" }}
+                  _focus={{ border: "solid 3px #BEB5DF" }}
+                  rightIcon={<ArrowForwardIcon />}
+                >
+                  Quick Join
+                </Button>
+              </Link>
             </Flex>
 
             <Box>
@@ -139,8 +159,9 @@ const Info = ({ data }: { data: All }) => (
               ) : null}
             </Box>
           </Stack>
-          <Flex justifyContent="end">
-            <Text color="teal">
+          <Divider style={{ marginTop: "1.2em" }} />
+          <Flex justifyContent="start" m="0">
+            <Text color="teal" m="0">
               <time>
                 {`Last updated ${formatDistance(
                   new Date(data.lastUpdated),
