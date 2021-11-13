@@ -84,6 +84,7 @@ func timeOrNil(x bool) *time.Time {
 }
 
 func CanUserMutatePost(ctx context.Context, d *db.PrismaClient, authorID, id string) error {
+	// First, check if this user is the author of the post.
 	post, err := d.Post.
 		FindUnique(db.Post.ID.Equals(id)).
 		With(db.Post.Author.Fetch()).
@@ -91,12 +92,22 @@ func CanUserMutatePost(ctx context.Context, d *db.PrismaClient, authorID, id str
 	if err != nil {
 		return err
 	}
-	if post.Author().Admin {
-		return nil
-	}
 	if post.Author().ID == authorID {
 		return nil
 	}
+
+	// If they are not the author, check if they are an admin.
+	user, err := d.User.
+		FindUnique(db.User.ID.Equals(authorID)).
+		Exec(ctx)
+	if err != nil {
+		return err
+	}
+	if user.Admin {
+		return nil
+	}
+
+	// Not either? Not authorised to edit.
 	return ErrUnauthorised
 }
 
