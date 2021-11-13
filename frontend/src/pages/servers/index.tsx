@@ -274,7 +274,12 @@ const List = ({
               <ModalBody>
                 <FormControl mb={4}>
                   <FormLabel>IP or Domain</FormLabel>
-                  <AddServer onAdd={onAdd} />
+                  <AddServer
+                    onAdd={(server: All) => {
+                      onAdd(server);
+                      onClose();
+                    }}
+                  />
                   <FormHelperText>
                     IP must be in format <strong>ip:port</strong>
                   </FormHelperText>
