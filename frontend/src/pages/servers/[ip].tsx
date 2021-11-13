@@ -19,6 +19,7 @@ import LoadingBanner from "src/components/LoadingBanner";
 import { API_ADDRESS } from "src/config";
 import { All } from "src/types/_generated_Server";
 import useSWR from "swr";
+import Measured from "src/components/Measured";
 
 const API_PATH = (ip: string) => `/server/${ip}`;
 
@@ -45,7 +46,7 @@ const Info = ({ data }: { data: All }) => (
 
     <Flex alignItems="center" justifyContent="center">
       <Box
-        minW="50em"
+        width="50em"
         px={8}
         py={8}
         rounded="lg"
@@ -54,7 +55,12 @@ const Info = ({ data }: { data: All }) => (
         border="1px solid #8477B7"
       >
         <Stack spacing="4">
-          <Flex justifyContent="space-between" alignItems="center">
+          <Flex
+            justifyContent="space-between"
+            alignItems="center"
+            wrap="wrap"
+            gridGap="0.5em"
+          >
             <chakra.span
               fontSize="sm"
               color={useColorModeValue("gray.600", "gray.400")}
@@ -100,10 +106,10 @@ const Info = ({ data }: { data: All }) => (
           </Box>
 
           <Stack
-            spacing="44"
+            spacing="4"
             direction={["column", "row"]}
             justifyContent="space-between"
-            alignItems="center"
+            alignItems="start"
           >
             <Flex direction="column" justify="space-around" align="start">
               <Stat>
@@ -192,7 +198,7 @@ const Content = ({ ip, initialData }: Props) => {
 
 const Page: NextPage<Props> = ({ ip, initialData }) => {
   return (
-    <>
+    <Measured>
       <section className="center mv3">
         <Stack direction={["column"]} spacing="4">
           <BackLink to="/servers" />
@@ -206,7 +212,7 @@ const Page: NextPage<Props> = ({ ip, initialData }) => {
           max-width: 50em;
         }
       `}</style>
-    </>
+    </Measured>
   );
 };
 
