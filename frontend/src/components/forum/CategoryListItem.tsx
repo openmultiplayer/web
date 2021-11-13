@@ -44,6 +44,7 @@ import { PostLink } from "./common";
 import { useDeleteCategory, useUpdateCategory } from "./hooks";
 import NewThreadLink from "./NewThreadLink";
 import { SliderPicker, ColorResult } from "react-color";
+import ClampedParagraph from "../generic/ClampedParagraph";
 
 export type MoveCategoryFn = (idx: number, start: boolean) => void;
 
@@ -335,7 +336,7 @@ export const CategoryListItem: FC<{
         justifyContent="space-between"
         color={category.admin ? "blackAlpha.400" : ""}
       >
-        <Box width="50%">
+        <Box flexBasis={0} flexShrink={1} flexGrow={10} minWidth={0}>
           <header>
             <Heading margin="0">
               <NextLink passHref href={`/discussion/category/${category.name}`}>
@@ -344,15 +345,23 @@ export const CategoryListItem: FC<{
             </Heading>
           </header>
           <main>
-            <p>{category.description}</p>
+            <ClampedParagraph lines={5}>
+              {category.description}
+            </ClampedParagraph>
           </main>
         </Box>
 
-        <Box height="auto" px="1em">
+        <Box
+          height="auto"
+          px="1em"
+          flexBasis="max-content"
+          flexShrink={1}
+          flexGrow={1}
+        >
           <Divider orientation="vertical" />
         </Box>
 
-        <Box width="50%">
+        <Box flexBasis={0} flexShrink={1} flexGrow={10} minWidth={0}>
           <Flex
             justifyContent="space-between"
             alignItems="center"
