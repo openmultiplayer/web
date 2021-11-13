@@ -63,7 +63,6 @@ const ThreadListView: FC<Props> = ({
     }
   );
   if (error) {
-    console.error(error);
     return <ErrorBanner {...error} />;
   }
   if (!data) {
