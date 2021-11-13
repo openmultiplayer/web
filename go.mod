@@ -28,17 +28,17 @@ require (
 	github.com/gorilla/securecookie v1.1.1
 	github.com/gosimple/slug v1.10.0
 	github.com/iancoleman/strcase v0.2.0
-	github.com/joho/godotenv v1.3.0
+	github.com/joho/godotenv v1.4.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pkg/errors v0.9.1
-	github.com/prisma/prisma-client-go v0.11.1-0.20211014160141-a4310b37583e
+	github.com/prisma/prisma-client-go v0.12.3-0.20211111111520-460d1d78ffcb
 	github.com/prometheus/client_golang v1.11.0
 	github.com/russross/blackfriday v1.6.0
 	github.com/sendgrid/rest v2.6.2+incompatible // indirect
 	github.com/sendgrid/sendgrid-go v3.7.2+incompatible
 	github.com/sethvargo/go-limiter v0.7.2
-	github.com/shopspring/decimal v1.2.0
+	github.com/shopspring/decimal v1.3.1
 	github.com/streadway/amqp v1.0.0
 	github.com/stretchr/testify v1.7.0
 	github.com/takuoki/gocase v1.0.0
