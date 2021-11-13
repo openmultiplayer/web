@@ -2,48 +2,25 @@ import { GetServerSideProps } from "next";
 import { FC } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
 import MemberView from "src/components/member/MemberView";
-import { apiSSP } from "src/fetcher/fetcher";
-import { APIError } from "src/types/_generated_Error";
+import { apiSSP, SSP } from "src/fetcher/fetcher";
 import { User, UserSchema } from "src/types/_generated_User";
 
-type Props = {
-  initialData?: User;
-  initialError?: APIError;
-};
+type Props = SSP<User>;
 
-const Page: FC<Props> = ({ initialData, initialError }) => {
-  if (initialError) {
-    return <ErrorBanner {...initialError} />;
+const Page: FC<Props> = (props) => {
+  if (!props.success) {
+    return <ErrorBanner {...props.error} />;
   }
-  return <MemberView user={initialData} />;
+  return <MemberView user={props.data} />;
 };
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
   const id = ctx.params?.["id"];
-
-  try {
-    const initialData = await apiSSP(`/users/${id}`, {
-      ctx,
+  return {
+    props: await apiSSP<User>(`/users/${id}`, ctx, {
       schema: UserSchema,
-    });
-    return {
-      props: {
-        initialData,
-      },
-    };
-  } catch (e) {
-    const err = e as APIError;
-    console.error(err.error);
-    return {
-      props: {
-        initialError: {
-          error: err.error ?? "",
-          message: err.message ?? "",
-          suggested: err.suggested ?? "",
-        },
-      },
-    };
-  }
+    }),
+  };
 };
 
 export default Page;

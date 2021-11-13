@@ -3,7 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FC, useCallback, useState } from "react";
 import { useForm } from "react-hook-form";
 import Editor from "rich-markdown-editor";
-import { apiSWR } from "src/fetcher/fetcher";
+import { api } from "src/fetcher/fetcher";
 import {
   SearchResults,
   SearchResultsSchema,
@@ -130,10 +130,10 @@ const PostEditor: FC<Props> = ({
                 "placeholder",
               ]}
               onSearchLink={async (term: string) => {
-                // TODO: FIX THIS
-                const result = await apiSWR<SearchResults>({
-                  schema: SearchResultsSchema,
-                })(`/docs/search?q=${term}`);
+                const result = await api<SearchResults>(
+                  `/docs/search?q=${term}`,
+                  { schema: SearchResultsSchema }
+                );
                 return result.hits.map((hit) => ({
                   title: hit.title,
                   subtitle: hit.desc,

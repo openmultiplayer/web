@@ -11,7 +11,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import useSWR from "swr";
-import { apiSSP, apiSWR } from "src/fetcher/fetcher";
+import { api, apiSWR } from "src/fetcher/fetcher";
 import { User } from "src/types/_generated_User";
 import nProgress from "nprogress";
 import LoadingBanner from "src/components/LoadingBanner";
@@ -48,7 +48,7 @@ const BanModal = ({ users, user, setUsers }: any) => {
   const handleBan = async (id: string) => {
     nProgress.start();
     setUsers(users.filter((user: any) => user.id !== id));
-    await apiSSP(`/users/${user.id}`, { method: "DELETE" });
+    await api(`/users/${user.id}`, { method: "DELETE" });
     toast({
       title: "Operation successful",
       description: `${user.name} has been banned.`,

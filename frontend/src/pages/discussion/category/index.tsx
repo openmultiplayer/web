@@ -1,33 +1,24 @@
 import { GetServerSideProps, NextPage } from "next";
+import ErrorBanner from "src/components/ErrorBanner";
 import CategoryListView from "src/components/forum/CategoryListView";
-import { apiSSP } from "src/fetcher/fetcher";
+import { apiSSP, SSP } from "src/fetcher/fetcher";
 import { Category, CategorySchema } from "src/types/_generated_Forum";
 
-type Props = {
-  categories: Category[];
-};
+type Props = SSP<Category[]>;
 
-const Page: NextPage<Props> = ({ categories }) => {
-  return <CategoryListView initialCategories={categories} />;
+const Page: NextPage<Props> = (props) => {
+  if (!props.success) {
+    return <ErrorBanner {...props.error} />;
+  }
+  return <CategoryListView initialCategories={props.data} />;
 };
 
 export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
-  try {
-    return {
-      props: {
-        categories: await apiSSP("/forum/categories", {
-          ctx,
-          schema: CategorySchema.array(),
-        }),
-      },
-    };
-  } catch (e) {
-    return {
-      props: {
-        categories: [],
-      },
-    };
-  }
+  return {
+    props: await apiSSP<Category[]>("/forum/categories", ctx, {
+      schema: CategorySchema.array(),
+    }),
+  };
 };
 
 export default Page;

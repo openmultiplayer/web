@@ -9,7 +9,7 @@ import Measured from "../Measured";
 import CategoryList from "./CategoryList";
 
 type Props = {
-  initialCategories: Category[];
+  initialCategories?: Category[];
 };
 
 const CategoryListView: FC<Props> = ({ initialCategories }) => {

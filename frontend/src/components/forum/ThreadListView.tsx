@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { FC, useCallback, useState } from "react";
-import { useIsAdmin } from "src/auth/hooks";
 import ErrorBanner from "src/components/ErrorBanner";
 import ThreadList from "src/components/forum/ThreadList";
 import LoadingBanner from "src/components/LoadingBanner";
@@ -12,12 +11,14 @@ import Measured from "../Measured";
 import { allOption } from "./CategorySelect";
 
 type Props = {
+  initialPosts?: Post[];
   initialCategory?: string;
   initialTags?: string[];
   initialText?: string;
 };
 
 const ThreadListView: FC<Props> = ({
+  initialPosts,
   initialCategory = "",
   initialTags = [],
   initialText = "",
@@ -49,16 +50,19 @@ const ThreadListView: FC<Props> = ({
   );
 
   const { data, error } = useSWR<Post[], APIError>(
-    "/forum/threads?" +
-      new URLSearchParams([
+    "/forum/threads",
+    apiSWR({
+      query: new URLSearchParams([
         ["category", category],
         ["query", initialText],
         ...initialTags.map((tag) => ["tags", tag]),
-      ]).toString(),
-    apiSWR()
+      ]),
+    }),
+    {
+      fallbackData: initialPosts,
+    }
   );
   if (error) {
-    console.error(error);
     return <ErrorBanner {...error} />;
   }
   if (!data) {

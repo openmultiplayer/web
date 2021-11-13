@@ -5,83 +5,243 @@ import { APIError, APIErrorSchema } from "src/types/_generated_Error";
 import { niceDate } from "src/utils/dates";
 import { ZodSchema } from "zod";
 
-const success = (code: number) => code >= 200 && code <= 299;
+const DEFAULT_HEADERS = {
+  "Content-Type": "application/json",
+};
 
-export interface APIOptions<T> {
-  // pass ctx from GSSP for server side cookies
-  ctx?: GetServerSidePropsContext;
-
-  // encode headers into response object under `headers` key
-  responseHeaders?: boolean;
-
-  // the response schema
+type Opts<T> = {
+  // TODO: Make this mandatory for all `api` calls.
+  // The response object schema to validate against if there are no errors.
   schema?: ZodSchema<T>;
+
+  // Query parameters, do not add these to the path manually when using swr.
+  query?: URLSearchParams;
+};
+
+export type APIOptions<T> = Opts<T> & RequestInit;
+
+/**
+ * For general use API calls
+ *
+ * Builds a request and executes it, then processes the result by checking for
+ * errors, checking for rate limit violations and parsing the response using a
+ * supplied schema in the options.
+ *
+ * @param path API endpoint
+ * @param opts API options for the schema and query parameters. You don't have
+ *             to use the query parameters here, it's fine to just stick them in
+ *             the path for API calls outside of `useSWR`, though it does make
+ *             it a little more ergonomic. See the `apiSWR` documentation for an
+ *             explanation of why this option exists. The schema is for just for
+ *             the response body JSON. It's optional.
+ * @returns The resulting data from the API call. Throws APIError on failure.
+ */
+export async function api<T>(path: string, opts?: APIOptions<T>): Promise<T> {
+  const withQuery = `${path}${opts?.query ? "?" + opts.query.toString() : ""}`;
+  const request = buildRequest(withQuery, opts);
+  const response = await fetch(request);
+  const data = await getData(response);
+
+  if (!isSuccessStatus(response.status)) {
+    handleError(data, response, path);
+  }
+
+  return opts?.schema?.parse(data) ?? (data as T);
 }
 
-export type MaybeWithHeaders<T> = T | (T & { headers: Headers });
+const isSuccessStatus = (code: number) => code >= 200 && code <= 299;
 
-// For use in `useSWR` hooks.
-//
-// This is curried in order to remove the need to pass the options on every call
-// because this messes with swr's dependency code and results in repeated calls.
+/**
+ * Build a request for the API server for use on either the server or client.
+ * @param path The API path endpoint to call
+ * @param opts Request options
+ * @returns A Request object ready for use with `fetch`
+ */
+export const buildRequest = (path: string, opts?: RequestInit): Request => {
+  const req = new Request(`${API_ADDRESS}${path}`, {
+    mode: "cors",
+    credentials: "include",
+    ...DEFAULT_HEADERS,
+    ...opts,
+  });
+  return req;
+};
+
+const getData = async (response: Response): Promise<unknown> => {
+  if (isJSON(response)) {
+    return response.json();
+  }
+  throw new Error("Unexpected non-JSON response");
+};
+
+const isJSON = (response: Response): boolean => {
+  const contentType = response.headers.get("Content-Type");
+  return contentType === "application/json";
+};
+
+function handleError(raw: unknown, r: Response, path: string): never {
+  if (r.status === 429) {
+    throw new RateLimitError(r, path);
+  }
+
+  throw deriveError(raw);
+}
+
+/**
+ * For use in `useSWR` hooks ONLY.
+ *
+ * This is curried in order to remove the need to pass the options on every call
+ * because this messes with swr's dependency code and results in repeated calls.
+ *
+ * @param opts Set the query parameter here, not in the useSWR key if you want
+ *             mutations to be generic and affect page updates regardless of the
+ *             query parameters used for the page.
+ * @returns A fetcher function for the second argument of `useSWR`.
+ */
 export function apiSWR<T>(opts?: APIOptions<T>) {
-  return (path: string): Promise<MaybeWithHeaders<T>> => {
-    return apiSSP<T>(path, opts);
+  return (path: string): Promise<T> => {
+    return api<T>(path, opts);
   };
 }
 
-// For use in getServerSideProps.
-//
-// Makes an API call and returns a Result type which is either the specified
-// payload type (T) or an APIError type. The result should be `.unwrap`d in
-// order to access the value or throw the error.
-//
-// When being called from getServerSideProps, the request context may be passed
-// in so cookies are passed along for authentication.
+/**
+ * The server side props discriminated type union. Looks very similar to what
+ * `useSWR` calls to keep things consistent. If success is true, data will be
+ * guaranteed not undefined. Makes things nice and ergonomic in page components.
+ *
+ * Usage:
+ *
+ * ```
+ * type Props = SSP<User>
+ *
+ * const Page: NextPage<Props> = (props) => {
+ *   if(!props.success) { return <ErrorBanner {...props.error} /> }
+ *
+ *   return <UserView fallbackData={props.data} />
+ * }
+ *
+ * export const getServerSideProps: GetServerSideProps<Props> => { ... }
+ * ```
+ */
+export type SSP<T> =
+  | {
+      success: true;
+      data: T;
+    }
+  | {
+      success: false;
+      error: APIError;
+    };
+
+/**
+ * For use in getServerSideProps ONLY!
+ *
+ * Makes an API call and returns a result type which is either the specified
+ * payload type (T) or an APIError type. The result should be returned directly
+ * from getServerSideProps to minimise additional code. If the data needs to be
+ * pre-processed on the server side before being passed, use `mapSSP` inside a
+ * `.then()` chain after the call:
+ *
+ * ```
+ * return {
+ *   props: await apiSSP(...).then(mapSSP((data) => preProcess(data)))
+ * }
+ * ```
+ *
+ * The page component should always have props that include `data?: T` and
+ * `error?: APIError`. Because of the way the `SSP` type works, TypeScript will
+ * know that if `error` is undefined, then `data` must be defined. Check `error`
+ * early in the component's render and return an `<ErrorBanner {...error} />` if
+ * it has a value. Otherwise, `data` is ready to use.
+ *
+ * Most of the time, you'll want to pass `data` into a "View" component which
+ * should make use of `useSWR` - in order to make use of the server side
+ * rendered `data` value, pass this in to useSWR's options under `fallbackData`.
+ *
+ * When being called from getServerSideProps, the request context must be
+ * passed in so cookies are added to the request for authentication purposes.
+ *
+ * @param path API endpoint
+ * @param ctx getServerSideProps context argument (for passing cookies)
+ * @param opts API call options
+ * @returns A discriminated union with data or error (similar to swr) this
+ *
+ */
 export async function apiSSP<T>(
   path: string,
+  ctx: GetServerSidePropsContext,
   opts?: RequestInit & APIOptions<T>
-): Promise<T | (T & { headers: Headers })> {
-  // merge any specified headers with an additional cookie header - if given
+): Promise<SSP<T>> {
   const headers = new Headers({
-    ...{ "Content-Type": "application/json" },
     ...opts?.headers,
-    ...(opts?.ctx?.req.headers.cookie && {
-      cookie: opts?.ctx?.req.headers.cookie,
-    }),
+    ...headersFromContext(ctx),
   });
-
-  const r = await fetch(`${API_ADDRESS}${path}`, {
-    mode: "cors",
-    credentials: "include",
-    headers,
-    ...opts,
-  });
-
-  const contentType = r.headers.get("Content-Type");
-  const isJson = contentType === "application/json";
-
-  const raw = isJson ? await r.json() : undefined;
-
-  if (!success(r.status)) {
-    const parsed = APIErrorSchema.safeParse(raw);
-    if (parsed.success) {
-      throw parsed.data;
-    } else if (r.status === 429) {
-      throw new RateLimitError(r, path);
-    } else {
-      throw new Error(`unknown error: ${r.statusText}: ${r.status}`);
-    }
-  } else {
-    const decoded: T = opts?.schema?.parse(raw) ?? raw;
-    if (opts?.responseHeaders) {
-      return { ...decoded, headers: r.headers };
-    } else {
-      return decoded;
-    }
-  }
+  return api(path, { ...opts, headers })
+    .then((data) => ({
+      success: true as const,
+      data,
+    }))
+    .catch((e) => ({
+      success: false as const,
+      error: deriveError(e),
+    }));
 }
 
+/**
+ * A helper function for running post-processing operations on successful calls
+ * to `apiSSP`. Handles success check boilerplate. For use in apiSSP().then().
+ * @param input The immediate return value of `apiSSP`
+ */
+export function mapSSP<T, U = T>(fn: (input: T) => Promise<U>) {
+  return async (input: SSP<T>): Promise<SSP<U>> => {
+    if (input.success) {
+      // If the API call succeeded, run the function on the data and return a
+      // new SSP result with the new data type U.
+      return {
+        success: true as const,
+        data: await fn(input.data),
+      };
+    } else {
+      // If the API call faled, do nothing and pass the input along unchanged.
+      return input;
+    }
+  };
+}
+
+/**
+ * Builds a headers object for use in getServerSideProps.
+ * @param ctx Next.js server side props context.
+ * @returns A headers object with the cookies (if any) set correctly.
+ */
+const headersFromContext = (ctx: GetServerSidePropsContext): Headers => {
+  const headers = new Headers();
+
+  if (ctx.req.headers.cookie) {
+    headers.append("cookie", ctx.req.headers.cookie);
+  }
+
+  return headers;
+};
+
+/**
+ * Derives a consistent error object from exception or response input.
+ * @param e Exception or error response object
+ * @returns An APIError object either parsed from `e` or built from toString
+ */
+const deriveError = (e: unknown): APIError => {
+  const parsed = APIErrorSchema.safeParse(e);
+  if (parsed.success) {
+    return parsed.data;
+  } else {
+    return { message: (e as Error).toString() };
+  }
+};
+
+/**
+ * This error is thrown when the API responds with a "429 Too Many Requests". It
+ * implements the `APIError` type and fills all the fields with some information
+ * about the rate limit so instances of this class can go into `<ErrorBanner />`
+ */
 export class RateLimitError implements APIError {
   public message: string;
   public error: string;
