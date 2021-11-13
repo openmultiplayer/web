@@ -11,12 +11,14 @@ import Measured from "../Measured";
 import { allOption } from "./CategorySelect";
 
 type Props = {
+  initialPosts?: Post[];
   initialCategory?: string;
   initialTags?: string[];
   initialText?: string;
 };
 
 const ThreadListView: FC<Props> = ({
+  initialPosts,
   initialCategory = "",
   initialTags = [],
   initialText = "",
@@ -55,7 +57,10 @@ const ThreadListView: FC<Props> = ({
         ["query", initialText],
         ...initialTags.map((tag) => ["tags", tag]),
       ]),
-    })
+    }),
+    {
+      fallbackData: initialPosts,
+    }
   );
   if (error) {
     console.error(error);
