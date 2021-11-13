@@ -12,11 +12,17 @@ import debounce from "lodash.debounce";
 import React, {
   ChangeEvent,
   Component,
-  FocusEvent,
+  FC,
   KeyboardEvent,
+  MutableRefObject,
+  RefObject,
+  useCallback,
+  useRef,
+  useState,
 } from "react";
 import { api } from "src/fetcher/fetcher";
 import { TagButton } from "./LinkedTag";
+import { useOutsideClick } from "@chakra-ui/react";
 
 type Tag = {
   id: string;
@@ -27,7 +33,6 @@ type Tag = {
 type State = {
   chips: string[];
   tags: Tag[];
-  showTags: boolean;
   input: string;
 };
 
@@ -46,6 +51,9 @@ type Props = {
 
   // Props to pass to <Box /> container
   containerProps?: FlexProps;
+
+  // Open state for the tag selection popover
+  open?: boolean;
 
   // Callback for typing queries
   onQueryChange?: (text: string) => void;
@@ -73,14 +81,13 @@ type Props = {
  * It doesn't handle arrow keys so you can't move around the whole element like
  * an input but that could be added easily.
  */
-class TagsInput extends Component<Props, State> {
+class TagsInputInner extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
     this.state = {
       chips: props.initialTags ?? [],
       tags: [],
-      showTags: false,
       input: props.initialQuery ?? "",
     };
   }
@@ -139,7 +146,7 @@ class TagsInput extends Component<Props, State> {
     debounce(
       () =>
         api<Tag[]>(`/forum/tags?query=${query}`).then((tags) =>
-          this.setState({ ...this.state, tags: tags ?? [], showTags: true })
+          this.setState({ ...this.state, tags: tags ?? [] })
         ),
       500
     )();
@@ -155,27 +162,6 @@ class TagsInput extends Component<Props, State> {
 
   handlePrimaryInputFocus(): void {
     this.doTagQuery("");
-  }
-
-  handlePrimaryInputBlur(e: FocusEvent<HTMLInputElement>): void {
-    const target = e.relatedTarget as Element;
-
-    //
-    // NOTE:
-    //
-    // The following checks are for whether or not the user clicked somewhere in
-    // the tag list (either the list container itself or a tag). If they did not
-    // the tag list can be hidden. The implementation is somewhat flaky so watch
-    // out for this one when making changes to the tag list or TagButton element
-    //
-    if (
-      target == null ||
-      (!target.classList.contains("tag-list") &&
-        !target.classList.contains("tag-anchor") &&
-        !target.classList.contains("tag-remove"))
-    ) {
-      this.setState({ ...this.state, showTags: false });
-    }
   }
 
   handleClickSuggestion(text: string): void {
@@ -236,17 +222,12 @@ class TagsInput extends Component<Props, State> {
             );
           })}
 
-          <Popover
-            isOpen={this.state.showTags && this.state.tags.length > 0}
-            matchWidth
-            autoFocus={false}
-          >
+          <Popover isOpen={this.props.open} matchWidth autoFocus={false}>
             <PopoverTrigger>
               <input
                 onKeyDown={this.handlePrimaryInputKey.bind(this)}
                 onChange={this.handlePrimaryInputChange.bind(this)}
                 onClick={this.handlePrimaryInputFocus.bind(this)}
-                onBlur={this.handlePrimaryInputBlur.bind(this)}
                 className="end"
                 type="text"
                 value={this.state.input}
@@ -325,5 +306,31 @@ class TagsInput extends Component<Props, State> {
     );
   }
 }
+
+const TagsInput: FC<Props> = (props) => {
+  const ref: MutableRefObject<HTMLDivElement> = useRef<
+    HTMLDivElement | undefined
+  >() as MutableRefObject<HTMLDivElement>;
+  const [open, setOpen] = useState(false);
+
+  useOutsideClick({
+    ref: ref as RefObject<HTMLElement>,
+    handler: () => {
+      console.log("CLICKED OUTSIDE");
+      setOpen(false);
+    },
+  });
+
+  const onClick = useCallback(() => {
+    console.log("OPEN TAG MENU");
+    setOpen(true);
+  }, [setOpen]);
+
+  return (
+    <div ref={ref} onClick={onClick}>
+      <TagsInputInner {...props} open={open} />
+    </div>
+  );
+};
 
 export default TagsInput;
