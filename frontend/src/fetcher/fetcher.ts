@@ -61,7 +61,9 @@ export const buildRequest = (path: string, opts?: RequestInit): Request => {
   const req = new Request(`${API_ADDRESS}${path}`, {
     mode: "cors",
     credentials: "include",
-    ...DEFAULT_HEADERS,
+    headers: {
+      ...DEFAULT_HEADERS,
+    },
     ...opts,
   });
   return req;
