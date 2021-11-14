@@ -1,4 +1,4 @@
-import { Flex, FlexProps } from "@chakra-ui/layout";
+import { Box, Flex, FlexProps } from "@chakra-ui/layout";
 import {
   Popover,
   PopoverArrow,
@@ -353,9 +353,9 @@ const TagsInput: FC<Props> = (props) => {
   }, [setOpen]);
 
   return (
-    <div ref={ref} onClick={onClick}>
+    <Box ref={ref} onClick={onClick} width="100%">
       <TagsInputInner {...props} open={open} />
-    </div>
+    </Box>
   );
 };
 
