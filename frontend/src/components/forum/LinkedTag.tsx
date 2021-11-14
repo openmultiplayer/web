@@ -1,3 +1,4 @@
+import { CloseButton } from "@chakra-ui/close-button";
 import Link from "next/link";
 import { FC, forwardRef, LegacyRef, useMemo } from "react";
 import { alternativeColour, generateColour } from "src/utils/colour-hash";
@@ -7,12 +8,14 @@ type Props = {
   posts?: number;
   coloured?: boolean;
   onClick?: () => void;
+  closeButton?: boolean;
+  onClose?: () => void;
 };
 
 // eslint-disable-next-line react/display-name
 export const TagButton: FC<Props & { href?: string }> = forwardRef(
   (
-    { name, posts, coloured = false, onClick, href },
+    { name, posts, coloured = false, onClick, closeButton, onClose, href },
     ref: LegacyRef<HTMLAnchorElement>
   ) => {
     const colour = useMemo(() => generateColour(name), [name]);
@@ -24,7 +27,20 @@ export const TagButton: FC<Props & { href?: string }> = forwardRef(
             <div className="background" />
             <div className="wipe" />
             <div className="tag">
-              {name} {posts && `(${posts})`}
+              <span>
+                {name} {posts && `(${posts})`}
+              </span>
+              {closeButton && (
+                <span>
+                  <CloseButton
+                    ml="0.25em"
+                    size="sm"
+                    className="tag-remove"
+                    onClick={() => onClose?.()}
+                    aria-label="Remove tag"
+                  />
+                </span>
+              )}
             </div>
           </div>
         </a>
@@ -50,11 +66,12 @@ export const TagButton: FC<Props & { href?: string }> = forwardRef(
           }
           .tag {
             transition: color 0.2s;
+            display: flex;
 
             grid-row: 1/2;
             grid-column: 1/2;
             height: min-content;
-            padding: 0em 0.75em 0em 0.5em;
+            padding: 0em 0em 0em 0.5em;
 
             border-top-right-radius: 0em;
             border-bottom-right-radius: 0em;

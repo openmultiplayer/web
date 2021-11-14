@@ -1,4 +1,3 @@
-import { SmallCloseIcon } from "@chakra-ui/icons";
 import { Flex, FlexProps } from "@chakra-ui/layout";
 import {
   Popover,
@@ -7,6 +6,7 @@ import {
   PopoverContent,
   PopoverTrigger,
   Tag,
+  useOutsideClick,
 } from "@chakra-ui/react";
 import debounce from "lodash.debounce";
 import React, {
@@ -22,7 +22,6 @@ import React, {
 } from "react";
 import { api } from "src/fetcher/fetcher";
 import { TagButton } from "./LinkedTag";
-import { useOutsideClick } from "@chakra-ui/react";
 
 type Tag = {
   id: string;
@@ -86,7 +85,7 @@ class TagsInputInner extends Component<Props, State> {
     super(props);
 
     this.state = {
-      chips: props.initialTags ?? [],
+      chips: props.initialTags ?? ["help", "question"],
       tags: [],
       input: props.initialQuery ?? "",
     };
@@ -115,10 +114,8 @@ class TagsInputInner extends Component<Props, State> {
   ): void {
     event.preventDefault();
 
-    if (event instanceof KeyboardEvent) {
-      if (event.code === "Backspace") {
-        this.removeTag(idx);
-      }
+    if ((event as KeyboardEvent).code === "Backspace") {
+      this.removeTag(idx);
     }
   }
 
@@ -186,7 +183,7 @@ class TagsInputInner extends Component<Props, State> {
             alignItems: "center",
             flexWrap: "wrap",
             border: "1px solid hsla(1, 50%, 50%, 10%)",
-            padding: "0.01em 0.1em",
+            padding: "0em 0.2em",
             gridGap: "0.1em",
             ...this.props.containerProps,
           }}
@@ -198,27 +195,14 @@ class TagsInputInner extends Component<Props, State> {
             // list of current chips the user has entered into the field already
             const between = idx < this.state.chips.length - 1;
             return (
-              <span key={idx}>
-                <label htmlFor={`between-${idx}`}>
-                  {data}
-                  <button
-                    className="tag-remove"
-                    onClick={() => this.removeTag(idx)}
-                  >
-                    <SmallCloseIcon />
-                  </button>
-                </label>
-                {between ? (
-                  <input
-                    onKeyUp={(e) => this.handleBetweenInput(idx, e)}
-                    onChange={(e) => this.handleBetweenInput(idx, e)}
-                    id={`chips-between-${idx}`}
-                    className="chips-between"
-                    type="text"
-                    value=""
-                  />
-                ) : null}
-              </span>
+              <Chip
+                key={data}
+                idx={idx}
+                name={data}
+                between={between}
+                onRemove={this.removeTag.bind(this)}
+                onBetweenInput={this.handleBetweenInput.bind(this)}
+              />
             );
           })}
 
@@ -239,7 +223,7 @@ class TagsInputInner extends Component<Props, State> {
               <PopoverBody>
                 <Flex
                   wrap="wrap"
-                  maxW="26em"
+                  maxW="48em"
                   gridGap="0.2em"
                   justifyContent="space-around"
                   p="0.2em"
@@ -261,38 +245,12 @@ class TagsInputInner extends Component<Props, State> {
         </Flex>
 
         <style jsx>{`
-          span {
-            display: flex;
-            margin: 0.1em;
-            align-content: center;
-            justify-content: space-around;
-            height: 2em;
-
-            --gap-size: 0.1em;
-          }
-          button {
-            padding: 0em;
-            cursor: pointer;
-            line-height: 1;
-          }
-          label {
-            display: flex;
-            align-items: center;
-
-            border: 1px solid hsla(180, 50%, 60%, 30%);
-            background-color: hsla(180, 50%, 60%, 30%);
-            border-radius: 0.2em;
-            padding: 0em 0.2em 0em 0.5em;
-          }
           input {
             border: none;
             background-color: rgba(0, 0, 0, 0);
             height: 2em;
             padding-left: 0.2em;
-
-            width: calc(var(--gap-size) * 10);
             margin-left: 0;
-            margin-right: calc(var(--gap-size) * -4);
           }
           input:focus {
             outline: none;
@@ -307,6 +265,76 @@ class TagsInputInner extends Component<Props, State> {
   }
 }
 
+type ChipProps = {
+  idx: number;
+  name: string;
+  between: boolean;
+  onRemove: (idx: number) => void;
+  onBetweenInput: (
+    idx: number,
+    event: KeyboardEvent<HTMLInputElement> | ChangeEvent<HTMLInputElement>
+  ) => void;
+};
+export const Chip: FC<ChipProps> = ({
+  idx,
+  name,
+  between,
+  onRemove,
+  onBetweenInput,
+}) => {
+  return (
+    <span>
+      <label htmlFor={`between-${idx}`}>
+        <TagButton name={name} closeButton onClose={() => onRemove(idx)} />
+      </label>
+      {between ? (
+        <input
+          onKeyUp={(e) => onBetweenInput(idx, e)}
+          onChange={(e) => onBetweenInput(idx, e)}
+          id={`chips-between-${idx}`}
+          className="chips-between"
+          type="text"
+          value=""
+        />
+      ) : null}
+
+      <style jsx>{`
+        span {
+          display: flex;
+          margin: 0.1em;
+          align-content: center;
+          justify-content: space-around;
+          height: 2em;
+
+          --gap-size: 0.1em;
+        }
+        button {
+          padding: 0em;
+          cursor: pointer;
+          line-height: 1;
+        }
+        label {
+          display: flex;
+          align-items: center;
+        }
+        input {
+          border: none;
+          background-color: rgba(0, 0, 0, 0);
+          height: 2em;
+          padding-left: 0.2em;
+
+          width: calc(var(--gap-size) * 10);
+          margin-left: 0;
+          margin-right: calc(var(--gap-size) * -4);
+        }
+        input:focus {
+          outline: none;
+        }
+      `}</style>
+    </span>
+  );
+};
+
 const TagsInput: FC<Props> = (props) => {
   const ref: MutableRefObject<HTMLDivElement> = useRef<
     HTMLDivElement | undefined
@@ -316,13 +344,11 @@ const TagsInput: FC<Props> = (props) => {
   useOutsideClick({
     ref: ref as RefObject<HTMLElement>,
     handler: () => {
-      console.log("CLICKED OUTSIDE");
       setOpen(false);
     },
   });
 
   const onClick = useCallback(() => {
-    console.log("OPEN TAG MENU");
     setOpen(true);
   }, [setOpen]);
 
