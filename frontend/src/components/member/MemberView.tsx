@@ -5,8 +5,8 @@ import { APIError } from "src/types/_generated_Error";
 import { User, UserSchema } from "src/types/_generated_User";
 import useSWR from "swr";
 import ErrorBanner from "../ErrorBanner";
+import Measured from "../generic/Measured";
 import LoadingBanner from "../LoadingBanner";
-import Measured from "../site/Measured";
 import MemberProfile from "./MemberProfile";
 
 type Props = {

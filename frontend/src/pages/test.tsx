@@ -1,9 +1,8 @@
 import { Button } from "@chakra-ui/button";
-import { Box, Text } from "@chakra-ui/layout";
-import { Flex, Stack } from "@chakra-ui/layout";
-import React, { FC, ReactElement, useState, useCallback } from "react";
+import { Box, Flex, Stack, Text } from "@chakra-ui/layout";
+import React, { FC, ReactElement, useCallback, useState } from "react";
 import { CardList } from "src/components/generic/CardList";
-import Measured from "src/components/site/Measured";
+import Measured from "src/components/generic/Measured";
 
 const initial = [
   Math.random(),

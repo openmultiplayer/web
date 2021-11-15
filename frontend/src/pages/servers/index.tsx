@@ -24,20 +24,19 @@ import {
 } from "@chakra-ui/react";
 import { ChakraProps } from "@chakra-ui/system";
 import Fuse from "fuse.js";
-import { FC } from "react";
 import { filter, flow, map, reverse, sortBy, sum } from "lodash/fp";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
 import NProgress from "nprogress";
-import { FormEvent, useState } from "react";
+import { FC, FormEvent, useState } from "react";
 import { toast } from "react-nextjs-toast";
 import ErrorBanner from "src/components/ErrorBanner";
+import { CardList } from "src/components/generic/CardList";
 import LoadingBanner from "src/components/LoadingBanner";
 import { API_ADDRESS } from "src/config";
 import { All, Essential } from "src/types/_generated_Server";
 import useSWR from "swr";
-import { CardList } from "src/components/generic/CardList";
 
 const API_SERVERS = `${API_ADDRESS}/server/`;
 

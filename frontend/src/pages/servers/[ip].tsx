@@ -1,11 +1,11 @@
+import { Button } from "@chakra-ui/button";
 import { useColorModeValue } from "@chakra-ui/color-mode";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Box, Flex, Link, Stack, Text } from "@chakra-ui/layout";
+import { Divider } from "@chakra-ui/react";
 import { Stat, StatLabel, StatNumber } from "@chakra-ui/stat";
 import { chakra } from "@chakra-ui/system";
 import { Table, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/table";
-import { Button } from "@chakra-ui/button";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Divider } from "@chakra-ui/react";
 import { formatDistance } from "date-fns";
 import {
   GetServerSidePropsContext,
@@ -13,14 +13,14 @@ import {
   NextPage,
 } from "next";
 import { NextSeo } from "next-seo";
+import { FC } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
 import BackLink from "src/components/forum/BackLink";
+import Measured from "src/components/generic/Measured";
 import LoadingBanner from "src/components/LoadingBanner";
 import { API_ADDRESS } from "src/config";
 import { All } from "src/types/_generated_Server";
 import useSWR from "swr";
-import Measured from "src/components/Measured";
-import { FC } from "react";
 
 const API_PATH = (ip: string) => `/server/${ip}`;
 
