@@ -108,6 +108,7 @@ class TagsInputInner extends Component<Props, State> {
     this.setState({
       ...this.state,
       chips,
+      tags: undefined,
     });
   }
 
