@@ -20,6 +20,7 @@ import { API_ADDRESS } from "src/config";
 import { All } from "src/types/_generated_Server";
 import useSWR from "swr";
 import Measured from "src/components/Measured";
+import { FC } from "react";
 
 const API_PATH = (ip: string) => `/server/${ip}`;
 
@@ -34,6 +35,26 @@ const getServer = async (ip: string) => {
 type Props = {
   ip: string;
   initialData?: All;
+};
+
+type ServerLinkProps = { address: string };
+const ServerLink: FC<ServerLinkProps> = ({ address }) => {
+  return (
+    <Link href={address} isExternal _hover={{ textDecor: "none" }}>
+      <Button
+        mt={"1em"}
+        bgColor="#8477B7"
+        color="white"
+        border="solid 3px transparent"
+        _hover={{ bgColor: "#AEA0E1" }}
+        _active={{ bgColor: "#AEA0E1" }}
+        _focus={{ border: "solid 3px #BEB5DF" }}
+        rightIcon={<ArrowForwardIcon />}
+      >
+        Quick Join
+      </Button>
+    </Link>
+  );
 };
 
 const Info = ({ data }: { data: All }) => (
@@ -128,20 +149,7 @@ const Info = ({ data }: { data: All }) => (
                 <StatLabel>Language</StatLabel>
                 <StatNumber>{data.core.la}</StatNumber>
               </Stat>
-              <Link href={`samp://${data.dm ?? data.ip}`} isExternal>
-                <Button
-                  mt={"1em"}
-                  bgColor="#8477B7"
-                  color="white"
-                  border="solid 3px transparent"
-                  _hover={{ bgColor: "#AEA0E1" }}
-                  _active={{ bgColor: "#AEA0E1" }}
-                  _focus={{ border: "solid 3px #BEB5DF" }}
-                  rightIcon={<ArrowForwardIcon />}
-                >
-                  Quick Join
-                </Button>
-              </Link>
+              <ServerLink address={`samp://${data.dm ?? data.ip}`} />
             </Flex>
 
             <Box>

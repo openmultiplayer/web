@@ -22,7 +22,9 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
+import { ChakraProps } from "@chakra-ui/system";
 import Fuse from "fuse.js";
+import { FC } from "react";
 import { filter, flow, map, reverse, sortBy, sum } from "lodash/fp";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { NextSeo } from "next-seo";
@@ -35,6 +37,7 @@ import LoadingBanner from "src/components/LoadingBanner";
 import { API_ADDRESS } from "src/config";
 import { All, Essential } from "src/types/_generated_Server";
 import useSWR from "swr";
+import { CardList } from "src/components/generic/CardList";
 
 const API_SERVERS = `${API_ADDRESS}/server/`;
 
@@ -62,56 +65,63 @@ const getStats = (servers: Array<Essential>): Stats => ({
   servers: servers.length,
 });
 
-const Row = ({ s }: { s: Essential }) => {
-  const { onCopy, hasCopied } = useClipboard(s.ip);
-
+type CopyBadgeProps = { text: string };
+const CopyBadge: FC<CopyBadgeProps> = ({ text }) => {
+  const { onCopy, hasCopied } = useClipboard(text);
   return (
-    <Box
-      style={{
-        border: "1px solid #8477B7",
-        borderRadius: "8px",
-        padding: "1em",
-        marginBottom: "1em",
-      }}
-      boxShadow="base"
-    >
+    <HStack>
+      <Text fontSize="xl" fontWeight="bold" marginTop="0">
+        {text}
+      </Text>
+      <Button
+        size="xs"
+        onClick={onCopy}
+        style={hasCopied ? { backgroundColor: "#81C784", color: "white" } : {}}
+      >
+        {hasCopied ? "COPIED" : "COPY"}
+      </Button>
+    </HStack>
+  );
+};
+
+type RowProps = { server: Essential };
+const Row: FC<RowProps & ChakraProps> = ({ server, sx }) => {
+  return (
+    <Box sx={{ ...sx, borderColor: "#8477B7" }}>
       <Box>
-        <Link href={"/servers/" + s.ip}>
+        <Link href={"/servers/" + server.ip}>
           <Heading
             fontSize={"xl"}
             style={{ marginTop: "0" }}
             _hover={{ textDecor: "underline", cursor: "pointer" }}
           >
-            {s.hn}
+            {server.hn}
           </Heading>
         </Link>
 
-        <Flex justifyContent="space-between" alignItems="center" my="0.4em">
+        <Flex
+          justifyContent="space-between"
+          alignItems="start"
+          my="0.4em"
+          flexWrap="wrap"
+        >
           <VStack align="left">
-            <Text style={{ marginTop: "0" }}>{s.gm}</Text>
+            <Text style={{ marginTop: "0" }}>{server.gm}</Text>
             {/* <Text style={{ marginTop: "0" }}>{"website"}</Text> */}
+            <CopyBadge text={server.ip} />
           </VStack>
-          <Flex flexDirection="row" alignItems="center" gridGap=".5em">
+          <Flex
+            flexDirection="row"
+            alignItems="center"
+            gridGap=".5em"
+            flexWrap="wrap"
+          >
             <Text fontWeight={"bold"} fontSize="2xl" style={{ marginTop: "0" }}>
-              {s.pc}/{s.pm}
+              {server.pc}/{server.pm}
             </Text>
             <Text style={{ marginTop: "0" }}>players</Text>
           </Flex>
         </Flex>
-        <HStack>
-          <Text fontSize="2xl" fontWeight="bold" marginTop="0">
-            {s.ip}
-          </Text>
-          <Button
-            size="xs"
-            onClick={onCopy}
-            style={
-              hasCopied ? { backgroundColor: "#81C784", color: "white" } : {}
-            }
-          >
-            {hasCopied ? "COPIED" : "COPY"}
-          </Button>
-        </HStack>
       </Box>
     </Box>
   );
@@ -144,7 +154,7 @@ const dataToList = (data: Essential[], q: Query) => {
     filter((s: Essential) => (!q.showFull ? s.pc !== s.pm : true)),
     q.sort != "relevance" ? sortBy(q.sort) : sortBy(""),
     reverse,
-    map((s: Essential) => <Row key={s.ip} s={s} />)
+    map((s: Essential) => <Row key={s.ip} server={s} />)
   )(items);
 };
 
@@ -199,7 +209,6 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
       action={API_SERVERS}
       target="_self"
       method="post"
-      className="flex items-center justify-center pa0 f7"
       onSubmit={handleSubmit}
     >
       <Flex gridGap={2} width="100%">
@@ -234,10 +243,10 @@ const List = ({
   return (
     <>
       <form action="">
-        <Flex gridGap={2}>
+        <Flex gridGap={2} flexDir={{ base: "column", md: "row" }}>
           <Select
+            flexShrink={2}
             placeholder="Sort by"
-            maxW="10em"
             name="sortBy"
             id="sortBy"
             value={sort}
@@ -248,9 +257,9 @@ const List = ({
           </Select>
 
           <Input
+            flexGrow={2}
             type="text"
             placeholder="Search by IP or Name"
-            maxW="30em"
             name="search"
             id="search"
             value={search}
@@ -260,6 +269,7 @@ const List = ({
           />
 
           <Button
+            flexGrow={1}
             px="3em"
             onClick={onOpen}
             rightIcon={<AddIcon boxSize="0.8em" />}
@@ -291,14 +301,14 @@ const List = ({
       </form>
       <Stats stats={getStats(data)} />
 
-      <ul className="list pl0 mt0 center">
+      <CardList>
         {dataToList(data, {
           search,
           showFull,
           showEmpty,
           sort: sort as SortBy,
         })}
-      </ul>
+      </CardList>
     </>
   );
 };
@@ -319,7 +329,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
   }
 
   return (
-    <section style={{ maxWidth: "50em", margin: "auto", padding: "1em 2em" }}>
+    <Box as="section" maxWidth="50em" margin="auto" padding="1em 2em">
       <NextSeo
         title="SA-MP Servers Index"
         description="Live indexing and data for all SA-MP servers."
@@ -331,7 +341,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
         data={data}
         onAdd={(server: All) => mutate([...data!, server.core], false)}
       />
-    </section>
+    </Box>
   );
 };
 
