@@ -1,11 +1,13 @@
 import { Box, Flex, FlexProps } from "@chakra-ui/layout";
 import {
+  Kbd,
   Popover,
   PopoverArrow,
   PopoverBody,
   PopoverContent,
   PopoverTrigger,
   Tag,
+  Text,
   useOutsideClick,
 } from "@chakra-ui/react";
 import debounce from "lodash.debounce";
@@ -31,7 +33,7 @@ type Tag = {
 
 type State = {
   chips: string[];
-  tags: Tag[];
+  tags?: Tag[];
   input: string;
 };
 
@@ -81,17 +83,25 @@ type Props = {
  * an input but that could be added easily.
  */
 class TagsInputInner extends Component<Props, State> {
+  private inputEndEvents = ["Space", "Comma", "Tab"];
+
   constructor(props: Props) {
     super(props);
 
     this.state = {
       chips: props.initialTags ?? [],
-      tags: [],
+      tags: undefined,
       input: props.initialQuery ?? "",
     };
   }
 
   addTag(text: string): void {
+    const stripped = text.trim();
+
+    if (stripped.length < 3) {
+      return;
+    }
+
     const chips = this.state.chips.concat(text);
     this.props.onQueryChange?.call(this, "");
     this.props.onAdd?.call(this, text);
@@ -127,7 +137,10 @@ class TagsInputInner extends Component<Props, State> {
       this.state.input.length === 0
     ) {
       this.removeTag(this.state.chips.length - 1);
-    } else if (this.props.allowNewTags && event.code === "Space") {
+    } else if (
+      this.props.allowNewTags &&
+      this.inputEndEvents.includes(event.code)
+    ) {
       event.preventDefault();
       const tag = this.state.input;
       this.setState(
@@ -155,10 +168,6 @@ class TagsInputInner extends Component<Props, State> {
   handlePrimaryInputChange(event: ChangeEvent<HTMLInputElement>): void {
     const query = event.target.value;
     this.doTagQuery(query);
-  }
-
-  handlePrimaryInputFocus(): void {
-    this.doTagQuery("");
   }
 
   handleClickSuggestion(text: string): void {
@@ -211,7 +220,6 @@ class TagsInputInner extends Component<Props, State> {
               <input
                 onKeyDown={this.handlePrimaryInputKey.bind(this)}
                 onChange={this.handlePrimaryInputChange.bind(this)}
-                onClick={this.handlePrimaryInputFocus.bind(this)}
                 className="end"
                 type="text"
                 value={this.state.input}
@@ -221,24 +229,10 @@ class TagsInputInner extends Component<Props, State> {
             <PopoverContent width="100%" className="tag-list">
               <PopoverArrow />
               <PopoverBody>
-                <Flex
-                  wrap="wrap"
-                  maxW="48em"
-                  gridGap="0.2em"
-                  justifyContent="space-around"
-                  p="0.2em"
-                >
-                  {this.state.tags.map((tag: Tag) => (
-                    <TagButton
-                      key={tag.id}
-                      name={tag.name}
-                      posts={tag.posts}
-                      onClick={() =>
-                        this.handleClickSuggestion.bind(this)(tag.name)
-                      }
-                    />
-                  ))}
-                </Flex>
+                <TagSuggestionList
+                  tags={this.state.tags}
+                  onClick={this.handleClickSuggestion.bind(this)}
+                />
               </PopoverBody>
             </PopoverContent>
           </Popover>
@@ -264,6 +258,70 @@ class TagsInputInner extends Component<Props, State> {
     );
   }
 }
+
+type TagSuggestionListProps = {
+  tags?: Tag[];
+  onClick: (name: string) => void;
+};
+export const TagSuggestionList: FC<TagSuggestionListProps> = ({
+  tags,
+  onClick,
+}) => {
+  if (tags === undefined) {
+    return (
+      <Box textAlign="center" py="1em">
+        <Text>Start typing to see existing tag suggestions</Text>
+        <Text color="blackAlpha.500" letterSpacing="0.1em">
+          <em>— or —</em>
+        </Text>
+        <Text>
+          Add tags by typing a word and hitting <Kbd>space</Kbd>,
+          <Kbd>comma</Kbd> or <Kbd>tab</Kbd>.
+        </Text>
+      </Box>
+    );
+  }
+
+  if (tags.length == 0) {
+    return (
+      <Box textAlign="center" py="1em">
+        <Text>
+          Add a new tag after typing it by pressing <Kbd>space</Kbd>,{" "}
+          <Kbd>comma</Kbd> or <Kbd>tab</Kbd>.
+        </Text>
+      </Box>
+    );
+  }
+
+  return (
+    <Flex
+      wrap="wrap"
+      maxW="48em"
+      gridGap="0.2em"
+      justifyContent="space-around"
+      p="0.2em"
+    >
+      {tags.map((tag: Tag) => (
+        <TagSuggestion key={tag.id} tag={tag} onClick={onClick} />
+      ))}
+    </Flex>
+  );
+};
+type TagSuggestionProps = {
+  tag: Tag;
+  onClick: (name: string) => void;
+};
+const TagSuggestion: FC<TagSuggestionProps> = ({ tag, onClick }) => {
+  const _onClick = useCallback(() => onClick(tag.name), [onClick, tag]);
+  return (
+    <TagButton
+      key={tag.id}
+      name={tag.name}
+      posts={tag.posts}
+      onClick={_onClick}
+    />
+  );
+};
 
 type ChipProps = {
   idx: number;
