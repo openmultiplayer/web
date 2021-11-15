@@ -85,7 +85,7 @@ class TagsInputInner extends Component<Props, State> {
     super(props);
 
     this.state = {
-      chips: props.initialTags ?? ["help", "question"],
+      chips: props.initialTags ?? [],
       tags: [],
       input: props.initialQuery ?? "",
     };
