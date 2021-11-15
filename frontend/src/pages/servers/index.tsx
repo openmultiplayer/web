@@ -1,16 +1,43 @@
-import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
-import useSWR from "swr";
-import { map, flow, sum, filter, sortBy, reverse } from "lodash/fp";
-import Link from "next/link";
-import { NextSeo } from "next-seo";
-import { FormEvent, useState } from "react";
+import { AddIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  FormControl,
+  FormHelperText,
+  FormLabel,
+  Heading,
+  HStack,
+  Input,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
+  Select,
+  Text,
+  useClipboard,
+  useDisclosure,
+  VStack,
+} from "@chakra-ui/react";
+import { ChakraProps } from "@chakra-ui/system";
 import Fuse from "fuse.js";
-import { toast } from "react-nextjs-toast";
+import { FC } from "react";
+import { filter, flow, map, reverse, sortBy, sum } from "lodash/fp";
+import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
+import { NextSeo } from "next-seo";
+import Link from "next/link";
 import NProgress from "nprogress";
-import { All, Essential } from "src/types/_generated_Server";
-import { API_ADDRESS } from "src/config";
+import { FormEvent, useState } from "react";
+import { toast } from "react-nextjs-toast";
 import ErrorBanner from "src/components/ErrorBanner";
 import LoadingBanner from "src/components/LoadingBanner";
+import { API_ADDRESS } from "src/config";
+import { All, Essential } from "src/types/_generated_Server";
+import useSWR from "swr";
+import { CardList } from "src/components/generic/CardList";
 
 const API_SERVERS = `${API_ADDRESS}/server/`;
 
@@ -38,27 +65,67 @@ const getStats = (servers: Array<Essential>): Stats => ({
   servers: servers.length,
 });
 
-const Row = ({ s }: { s: Essential }) => (
-  <li className="hover-bg-black-10 lh-copy pa2 ph0-l bb b--black-10">
-    <Link href={"/servers/" + s.ip}>
-      <a className="link black flex items-center justify-between">
-        <div className="overflow-hidden">
-          <span className="db black-70 measure truncate">{s.hn}</span>
-          <span className="db black-30 f6 measure truncate">{s.gm}</span>
-        </div>
+type CopyBadgeProps = { text: string };
+const CopyBadge: FC<CopyBadgeProps> = ({ text }) => {
+  const { onCopy, hasCopied } = useClipboard(text);
+  return (
+    <HStack>
+      <Text fontSize="xl" fontWeight="bold" marginTop="0">
+        {text}
+      </Text>
+      <Button
+        size="xs"
+        onClick={onCopy}
+        style={hasCopied ? { backgroundColor: "#81C784", color: "white" } : {}}
+      >
+        {hasCopied ? "COPIED" : "COPY"}
+      </Button>
+    </HStack>
+  );
+};
 
-        <div className="pr2 tr dn di-ns flex-shrink-0">
-          <div className="black-70">
-            {s.pa ? <span>🔐</span> : null} <span>{s.ip}</span>
-          </div>
-          <div className="db black-30 f6 measure">
-            {s.pc}/{s.pm} playing now
-          </div>
-        </div>
-      </a>
-    </Link>
-  </li>
-);
+type RowProps = { server: Essential };
+const Row: FC<RowProps & ChakraProps> = ({ server, sx }) => {
+  return (
+    <Box sx={{ ...sx, borderColor: "#8477B7" }}>
+      <Box>
+        <Link href={"/servers/" + server.ip}>
+          <Heading
+            fontSize={"xl"}
+            style={{ marginTop: "0" }}
+            _hover={{ textDecor: "underline", cursor: "pointer" }}
+          >
+            {server.hn}
+          </Heading>
+        </Link>
+
+        <Flex
+          justifyContent="space-between"
+          alignItems="start"
+          my="0.4em"
+          flexWrap="wrap"
+        >
+          <VStack align="left">
+            <Text style={{ marginTop: "0" }}>{server.gm}</Text>
+            {/* <Text style={{ marginTop: "0" }}>{"website"}</Text> */}
+            <CopyBadge text={server.ip} />
+          </VStack>
+          <Flex
+            flexDirection="row"
+            alignItems="center"
+            gridGap=".5em"
+            flexWrap="wrap"
+          >
+            <Text fontWeight={"bold"} fontSize="2xl" style={{ marginTop: "0" }}>
+              {server.pc}/{server.pm}
+            </Text>
+            <Text style={{ marginTop: "0" }}>players</Text>
+          </Flex>
+        </Flex>
+      </Box>
+    </Box>
+  );
+};
 
 type SortBy = "relevance" | "pc";
 
@@ -87,23 +154,21 @@ const dataToList = (data: Essential[], q: Query) => {
     filter((s: Essential) => (!q.showFull ? s.pc !== s.pm : true)),
     q.sort != "relevance" ? sortBy(q.sort) : sortBy(""),
     reverse,
-    map((s: Essential) => <Row key={s.ip} s={s} />)
+    map((s: Essential) => <Row key={s.ip} server={s} />)
   )(items);
 };
 
 const Stats = ({ stats: { players, servers } }: { stats: Stats }) => {
   return (
-    <div>
-      <p>
-        <span>{players}</span> players on <span>{servers}</span> servers with an
-        average of <span>{(players / servers).toFixed(1)}</span> players per
-        server.
-      </p>
-    </div>
+    <Center>
+      <Text my={4}>
+        <strong>{players}</strong> players on <strong>{servers}</strong> servers
+        with an average of <strong>{(players / servers).toFixed(1)}</strong>{" "}
+        players per server.
+      </Text>
+    </Center>
   );
 };
-
-const formItemStyle = "pa1 ph2 flex flex-column flex-row-ns tl-ns tc";
 
 const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
   const [value, setValue] = useState("");
@@ -144,42 +209,20 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
       action={API_SERVERS}
       target="_self"
       method="post"
-      className="flex items-center justify-center pa0 f7"
       onSubmit={handleSubmit}
     >
-      <span className="pa1 ph2 flex flex-row tl-ns tc">
-        <label className="pr2 self-center" htmlFor="address">
-          Add
-        </label>
-        <input
-          className="pr2"
+      <Flex gridGap={2} width="100%">
+        <Input
           type="text"
           name="address"
           placeholder="IP/Domain"
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
-        <input
-          className={[
-            "ph2",
-            "w3",
-            "f6",
-            "pointer",
-            "no-underline",
-            "black",
-            "bg-white",
-            "hover-bg-blue",
-            "hover-white",
-            "inline-flex",
-            "items-center",
-            "pa2",
-            "ba",
-            "border-box",
-          ].join(" ")}
-          type="submit"
-          value="Add"
-        />
-      </span>
+        <Button colorScheme="blue" mr={3} type="submit">
+          Add
+        </Button>
+      </Flex>
     </form>
   );
 };
@@ -195,63 +238,15 @@ const List = ({
   const [showFull, setShowFull] = useState(false);
   const [showEmpty, setShowEmpty] = useState(false);
   const [sort, setSort] = useState("relevance");
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <Stats stats={getStats(data)} />
-      <form
-        action=""
-        className="form flex flex-wrap items-center justify-center pa0 f7"
-      >
-        <span className={formItemStyle}>
-          <label className="pr2 self-center" htmlFor="search">
-            Filter
-          </label>
-          <input
-            type="text"
-            name="search"
-            id="search"
-            style={{ width: "8em" }}
-            value={search}
-            onChange={(e) => {
-              setSearch(e.target.value);
-            }}
-          />
-        </span>
-
-        <span className={formItemStyle}>
-          <label className="pr2 self-center" htmlFor="showFull">
-            Full
-          </label>
-          <input
-            type="checkbox"
-            name="showFull"
-            id="showFull"
-            checked={showFull}
-            onChange={(e) => {
-              setShowFull(e.target.checked);
-            }}
-          />
-        </span>
-
-        <span className={formItemStyle}>
-          <label className="pr2 self-center" htmlFor="showEmpty">
-            Empty
-          </label>
-          <input
-            type="checkbox"
-            name="showEmpty"
-            id="showEmpty"
-            checked={showEmpty}
-            onChange={(e) => setShowEmpty(e.target.checked)}
-          />
-        </span>
-
-        <span className={formItemStyle}>
-          <label className="pr2 self-center" htmlFor="sortBy">
-            Sort
-          </label>
-          <select
+      <form action="">
+        <Flex gridGap={2} flexDir={{ base: "column", md: "row" }}>
+          <Select
+            flexShrink={2}
+            placeholder="Sort by"
             name="sortBy"
             id="sortBy"
             value={sort}
@@ -259,42 +254,61 @@ const List = ({
           >
             <option value="relevance">Relevance</option>
             <option value="pc">Players</option>
-          </select>
-        </span>
+          </Select>
 
-        {/* <span className={formItemStyle}>
-          <button
-            className={[
-              "ph3",
-              "f6",
-              "pointer",
-              "no-underline",
-              "black",
-              "bg-white",
-              "hover-bg-light-red",
-              "hover-white",
-              "inline-flex",
-              "items-center",
-              "pa2",
-              "ba",
-              "border-box",
-              "mr4",
-            ].join(" ")}
-            type="submit"
+          <Input
+            flexGrow={2}
+            type="text"
+            placeholder="Search by IP or Name"
+            name="search"
+            id="search"
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
+          />
+
+          <Button
+            flexGrow={1}
+            px="3em"
+            onClick={onOpen}
+            rightIcon={<AddIcon boxSize="0.8em" />}
           >
-            Apply
-          </button>
-        </span> */}
+            Add server
+          </Button>
+          <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false}>
+            <ModalOverlay />
+            <ModalContent top={10}>
+              <ModalHeader>Add a server</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                <FormControl mb={4}>
+                  <FormLabel>IP or Domain</FormLabel>
+                  <AddServer
+                    onAdd={(server: All) => {
+                      onAdd(server);
+                      onClose();
+                    }}
+                  />
+                  <FormHelperText>
+                    IP must be in format <strong>ip:port</strong>
+                  </FormHelperText>
+                </FormControl>
+              </ModalBody>
+            </ModalContent>
+          </Modal>
+        </Flex>
       </form>
-      <AddServer onAdd={onAdd} />
-      <ul className="list pl0 mt0 center">
+      <Stats stats={getStats(data)} />
+
+      <CardList>
         {dataToList(data, {
           search,
           showFull,
           showEmpty,
           sort: sort as SortBy,
         })}
-      </ul>
+      </CardList>
     </>
   );
 };
@@ -315,18 +329,19 @@ const Page = ({ initialData, errorMessage }: Props) => {
   }
 
   return (
-    <section className="measure-wide center ph2 pb2">
+    <Box as="section" maxWidth="50em" margin="auto" padding="1em 2em">
       <NextSeo
         title="SA-MP Servers Index"
         description="Live indexing and data for all SA-MP servers."
       />
 
-      <h1>Servers</h1>
+      <Heading mb={"1em"}>Servers</Heading>
+
       <List
         data={data}
         onAdd={(server: All) => mutate([...data!, server.core], false)}
       />
-    </section>
+    </Box>
   );
 };
 
