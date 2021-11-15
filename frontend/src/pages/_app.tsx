@@ -57,8 +57,8 @@ import { ToastContainer } from "react-nextjs-toast";
 import NProgress from "nprogress";
 import { ChakraProvider } from "@chakra-ui/react";
 
-import Nav from "src/components/Nav";
-import Footer from "src/components/Footer";
+import Nav from "src/components/site/Nav";
+import Footer from "src/components/site/Footer";
 
 import "normalize.css";
 import "tachyons/css/tachyons.min.css";
@@ -70,13 +70,14 @@ import { AuthProvider } from "src/auth/hooks";
 import theme from "../styles/theme";
 import Fonts from "src/styles/Fonts";
 import React from "react";
+import { NextPage } from "next";
 
 // Trigger client-side progress bar for client-side page transitions.
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
-const App = ({ Component, pageProps, router }: AppProps) => (
+const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
   <ChakraProvider theme={theme}>
     <Fonts />
     <Head>

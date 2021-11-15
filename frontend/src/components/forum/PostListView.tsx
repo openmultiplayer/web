@@ -8,7 +8,7 @@ import { APIError } from "src/types/_generated_Error";
 import { Post, PostSchema } from "src/types/_generated_Forum";
 import useSWR from "swr";
 import LoadingBanner from "../LoadingBanner";
-import Measured from "../Measured";
+import Measured from "../site/Measured";
 import BackLink from "./BackLink";
 import { useCreatePost } from "./hooks";
 import PostEditor from "./PostEditor";

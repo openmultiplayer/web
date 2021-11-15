@@ -5,7 +5,7 @@ import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Category, CategorySchema } from "src/types/_generated_Forum";
 import useSWR from "swr";
-import Measured from "../Measured";
+import Measured from "../site/Measured";
 import CategoryList from "./CategoryList";
 
 type Props = {

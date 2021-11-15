@@ -6,7 +6,7 @@ import { User, UserSchema } from "src/types/_generated_User";
 import useSWR from "swr";
 import ErrorBanner from "../ErrorBanner";
 import LoadingBanner from "../LoadingBanner";
-import Measured from "../Measured";
+import Measured from "../site/Measured";
 import MemberProfile from "./MemberProfile";
 
 type Props = {

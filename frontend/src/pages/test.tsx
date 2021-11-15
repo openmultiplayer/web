@@ -3,7 +3,7 @@ import { Box, Text } from "@chakra-ui/layout";
 import { Flex, Stack } from "@chakra-ui/layout";
 import React, { FC, ReactElement, useState, useCallback } from "react";
 import { CardList } from "src/components/generic/CardList";
-import Measured from "src/components/Measured";
+import Measured from "src/components/site/Measured";
 
 const initial = [
   Math.random(),
