@@ -36,6 +36,7 @@ const Nav: FC<Props> = ({ items, route }) => {
         flexDirection="row"
         justifyContent="space-between"
         alignItems="center"
+        px={2}
       >
         <Logo />
         <NavMenu items={items} route={route} />
