@@ -234,12 +234,7 @@ func (d *DB) GetThreads(
 	if !includePosts {
 		filters = append(filters, db.Post.First.Equals(true))
 	}
-	if includeDeleted {
-		filters = append(filters, db.Post.Or(
-			db.Post.DeletedAt.Lte(time.Now()),
-			db.Post.DeletedAt.IsNull()),
-		)
-	} else {
+	if !includeDeleted {
 		filters = append(filters, db.Post.DeletedAt.IsNull())
 	}
 	if !includeAdmin {
