@@ -1,63 +1,122 @@
-import Link from "next/link";
+import { Button } from "@chakra-ui/button";
+import { useDisclosure } from "@chakra-ui/hooks";
+import { Box, Stack, Text } from "@chakra-ui/layout";
+import {
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
+} from "@chakra-ui/modal";
+import {
+  RadioGroup,
+  useRadio,
+  useRadioGroup,
+  UseRadioProps,
+} from "@chakra-ui/radio";
+import { VisuallyHidden } from "@chakra-ui/visually-hidden";
 import { useRouter } from "next/router";
-import { useState } from "react";
-
+import { FC, useCallback, useState } from "react";
 import getLanguageName from "src/utils/getLanguageName";
 
-// Progressively enhanced language menu.
-//
-// Without JS, the menu is shown via CSS and when clicked, triggers a new page
-// load which will load the page with the menu hidden.
-// With JS, the component is state-controlled and will disable once a menu item
-// is selected.
-//
-const LanguageSelect = () => {
-  const { asPath, locale, locales } = useRouter();
-  const [showLocales, setShowLocales] = useState(false);
+const LanguageSelect: FC = ({ children }) => {
+  const { locale, locales, pathname, asPath, query, push } = useRouter();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [newLocale, setNewLocale] = useState(locale);
+
+  const { getRadioProps } = useRadioGroup({
+    name: "language",
+    defaultValue: locale,
+    onChange: (locale: string) => {
+      setNewLocale(locale);
+    },
+  });
+
+  const onSet = useCallback(() => {
+    onClose();
+    push({ pathname, query }, asPath, { locale: newLocale });
+  }, [onClose, push, pathname, query, asPath, newLocale]);
+
+  if (!locales || !locale) {
+    return (
+      <Box
+        backgroundColor="red.100"
+        borderRadius="0.5em"
+        p="0.5em"
+        lineHeight="1"
+      >
+        <Text m="0">Could not load locales menu</Text>
+      </Box>
+    );
+  }
 
   return (
     <>
-      <label
-        htmlFor="dialogControl"
-        className="ph2 pv1 self-center br2 hover-bg-black-10 pointer"
-      >
-        {getLanguageName(locale!)}
-      </label>
+      <span onClick={onOpen}>{children}</span>
 
-      <input
-        id="dialogControl"
-        type="checkbox"
-        className="toggle"
-        checked={showLocales}
-        onChange={(e) => setShowLocales(e.target.checked)}
-      />
-      <div className="dialog absolute center ma2 measure aspect-ratio--object">
-        <div className="list flex flex-column flex-wrap bg-near-white br2 pa2">
-          {locales!.map((v: string) => (
-            <Link key={v} href={"/" + v + asPath} locale={false}>
-              <a
-                className="link br2 black pa1 hover-bg-black-20"
-                onClick={() => setShowLocales(false)}
-              >
-                {getLanguageName(v)}
-              </a>
-            </Link>
-          ))}
-        </div>
-      </div>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>
+            Change language from {getLanguageName(locale)}
+          </ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Stack>
+              <Button colorScheme="green" onClick={onSet}>
+                Save
+              </Button>
 
-      <style jsx>{`
-        .toggle {
-          display: none;
-        }
-        .toggle:checked ~ .dialog {
-          display: block;
-        }
-        .dialog {
-          display: none;
-        }
-      `}</style>
+              <RadioGroup as="fieldset">
+                <VisuallyHidden>
+                  <legend>Website language</legend>
+                </VisuallyHidden>
+                <Stack direction="column">
+                  {locales.map((value: string) => {
+                    const radio = getRadioProps({ value });
+                    return (
+                      <LanguageSelectItem key={value} {...radio}>
+                        {getLanguageName(value)}
+                      </LanguageSelectItem>
+                    );
+                  })}
+                </Stack>
+              </RadioGroup>
+            </Stack>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </>
+  );
+};
+
+const LanguageSelectItem: FC<UseRadioProps> = (props) => {
+  const { getInputProps, getCheckboxProps } = useRadio(props);
+
+  const input = getInputProps();
+  const checkbox = getCheckboxProps();
+
+  return (
+    <Box as="label">
+      <input {...input} />
+      <Box
+        {...checkbox}
+        cursor="pointer"
+        borderWidth="1px"
+        borderRadius={4}
+        _checked={{
+          borderColor: "purple.600",
+        }}
+        _focus={{
+          boxShadow: "outline",
+        }}
+        px={4}
+        py={2}
+      >
+        {props.children}
+      </Box>
+    </Box>
   );
 };
 

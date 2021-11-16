@@ -16,6 +16,7 @@ import {
 import NextLink from "next/link";
 import { FC } from "react";
 import { useAuth } from "src/auth/hooks";
+import LanguageSelect from "./LanguageSelect";
 
 export type NavItem = {
   name: string;
@@ -84,7 +85,10 @@ const NavMenu: FC<Props> = ({ items, route }) => {
                   <Link href="/login">Login</Link>
                 </MenuItem>
               )}
-              <MenuItem>Language</MenuItem>
+
+              <MenuItem>
+                <LanguageSelect>Language</LanguageSelect>
+              </MenuItem>
             </MenuGroup>
           </MenuList>
         </Menu>
