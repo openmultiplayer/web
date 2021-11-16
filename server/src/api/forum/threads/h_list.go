@@ -44,6 +44,10 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		web.StatusInternalServerError(w, err)
 		return
 	}
+	if posts == nil || len(posts) == 0 {
+		web.StatusNotFound(w, nil)
+		return
+	}
 
 	web.Write(w, posts)
 }
