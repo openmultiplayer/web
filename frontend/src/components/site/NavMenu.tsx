@@ -1,20 +1,21 @@
-import NextLink from "next/link";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
-  MenuGroup,
-  MenuDivider,
-  Link,
   Flex,
   IconButton,
+  Link,
   Menu,
   MenuButton,
+  MenuDivider,
+  MenuGroup,
   MenuItem,
   MenuList,
   useDisclosure,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 import { FC } from "react";
+import { useAuth } from "src/auth/hooks";
 
 export type NavItem = {
   name: string;
@@ -33,6 +34,7 @@ const ON_MOBILE = { base: "flex", md: "none" };
 
 const NavMenu: FC<Props> = ({ items, route }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { user } = useAuth();
 
   const isCurrent = (path: string) => path === route;
 
@@ -41,7 +43,11 @@ const NavMenu: FC<Props> = ({ items, route }) => {
       <Flex gridGap={1} alignItems={"center"} justifyContent={"space-between"}>
         <Flex gridGap={1} display={ON_DESKTOP}>
           {items.map((link) => (
-            <NavLink key={link.path} item={link} />
+            <NavLink
+              key={link.path}
+              item={link}
+              current={isCurrent(link.path)}
+            />
           ))}
         </Flex>
 
@@ -56,8 +62,12 @@ const NavMenu: FC<Props> = ({ items, route }) => {
           <MenuList>
             <MenuGroup>
               {items.map(({ path, name }) => (
-                <MenuItem key={path} display={ON_MOBILE}>
-                  {name}
+                <MenuItem
+                  key={path}
+                  display={ON_MOBILE}
+                  current={isCurrent(path)}
+                >
+                  <Link href={path}>{name}</Link>
                 </MenuItem>
               ))}
             </MenuGroup>
@@ -65,27 +75,17 @@ const NavMenu: FC<Props> = ({ items, route }) => {
             <MenuDivider display={ON_MOBILE} />
 
             <MenuGroup>
+              {user ? (
+                <MenuItem>
+                  <Link href="/dashboard">Dashboard</Link>
+                </MenuItem>
+              ) : (
+                <MenuItem>
+                  <Link href="/login">Login</Link>
+                </MenuItem>
+              )}
               <MenuItem>Language</MenuItem>
             </MenuGroup>
-
-            <Menu>
-              <MenuList>
-                <MenuGroup>
-                  {items.map(({ path, name }) => (
-                    <MenuItem key={path} display={ON_MOBILE}>
-                      {name}
-                    </MenuItem>
-                  ))}
-                </MenuGroup>
-                {/*
-                <MenuDivider display={ON_MOBILE} />
-
-                <MenuGroup>
-                  <MenuItem>Language</MenuItem>
-                </MenuGroup>
-                */}
-              </MenuList>
-            </Menu>
           </MenuList>
         </Menu>
       </Flex>
@@ -93,8 +93,15 @@ const NavMenu: FC<Props> = ({ items, route }) => {
   );
 };
 
-const NavLink = ({ item }: { item: NavItem }) => (
-  <Button variant="ghost" size="sm">
+type NavLinkProps = { item: NavItem; current: boolean };
+const NavLink: FC<NavLinkProps> = ({ item, current }) => (
+  <Button
+    // HACK: We want the button styling here but semantically, this is not a
+    // button, it's a link. So render this as a <div> only.
+    as="div"
+    variant={current ? "outline" : "ghost"}
+    size="sm"
+  >
     <NextLink href={item.path} passHref>
       <Link>{item.name}</Link>
     </NextLink>
