@@ -32,7 +32,7 @@ require (
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pkg/errors v0.9.1
-	github.com/prisma/prisma-client-go v0.12.3-0.20211111111520-460d1d78ffcb
+	github.com/prisma/prisma-client-go v0.11.1-0.20211014160141-a4310b37583e
 	github.com/prometheus/client_golang v1.11.0
 	github.com/russross/blackfriday v1.6.0
 	github.com/sendgrid/rest v2.6.2+incompatible // indirect
