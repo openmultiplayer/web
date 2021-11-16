@@ -286,6 +286,11 @@ func (d *DB) GetThreads(
 	// for this is the multiple sort order query didn't work, details here:
 	// https://github.com/prisma/prisma-client-go/issues/681
 	//
+	// NOTE 2:
+	//
+	// This code was removed, but the removal was reverted because of this bug:
+	// https://github.com/prisma/prisma-client-go/issues/698
+	//
 
 	result := []post.Post{}
 	pinnedIDs := make(map[string]struct{})
