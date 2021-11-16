@@ -14,7 +14,10 @@ import VersionWarnES from "./es/version-warning";
 import LowercaseNoteES from "./es/lowercase-note";
 import TipNPCCallbacksES from "./es/npc-callbacks-tip";
 
+import Image from "./Image";
+
 export default {
+  img: Image,
   VersionWarn,
   LowercaseNote,
   TipNPCCallbacks,
