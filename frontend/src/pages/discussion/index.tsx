@@ -4,6 +4,7 @@ import ErrorBanner from "src/components/ErrorBanner";
 import ThreadView from "src/components/forum/ThreadListView";
 import { apiSSP, SSP } from "src/fetcher/fetcher";
 import { Post } from "src/types/_generated_Forum";
+import { queryToParams } from "src/utils/query";
 
 type Props = SSP<Post[]>;
 
@@ -28,7 +29,7 @@ const Page: NextPage<Props> = (props) => {
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   return {
     props: await apiSSP("/forum/threads", ctx, {
-      query: new URLSearchParams(ctx.query as Record<string, string>),
+      query: queryToParams(ctx.query),
     }),
   };
 };
