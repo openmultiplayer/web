@@ -66,12 +66,13 @@ const ThreadListView: FC<Props> = ({
     (c) => {
       // NOTE: It's possible to be at /category/x?category=y
       // in this case, x will take precedence over the query param.
-      router.replace(
-        `/discussion/category/${c}?${queryToParamsBrowser(query)}`
-      );
       if (c === allOption) {
+        router.replace(`/discussion?${queryToParamsBrowser(query)}`);
         setQuery({ ...query, category: "" });
       } else {
+        router.replace(
+          `/discussion/category/${c}?${queryToParamsBrowser(query)}`
+        );
         setQuery({ ...query, category: c });
       }
     },
