@@ -55,8 +55,6 @@ export const queryToParams = <T extends Record<string, Value>>(
     filter(([, v]) => v)
   )(q);
 
-  console.log("init", init);
-
   // construct a URL query from the expanded object.
   return new URLSearchParams(init);
 };
