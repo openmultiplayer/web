@@ -1,24 +1,48 @@
 import { GetServerSideProps, NextPage } from "next";
-import ThreadView from "src/components/forum/ThreadListView";
+import ThreadListView from "src/components/forum/ThreadListView";
+import { z } from "zod";
 
 type Props = {
-  name?: string;
+  name: string | null;
+  query: Query | null;
 };
 
-const Page: NextPage<Props> = ({ name }) => {
-  return <ThreadView initialCategory={name as string} />;
+export const QuerySchema = z.object({
+  search: z.string().optional(),
+  tags: z
+    .string()
+    .array()
+    .or(z.string().transform((v) => [v]))
+    .optional(),
+});
+export type Query = z.infer<typeof QuerySchema>;
+
+const Page: NextPage<Props> = ({ name, query }) => {
+  return (
+    <ThreadListView
+      initialCategory={name as string}
+      initialTags={query?.tags}
+      initialText={query?.search}
+    />
+  );
 };
 
 export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
-  const name = ctx.params?.["name"] as string;
+  const name = (ctx.params?.["name"] as string) ?? null;
 
   if (!name) {
-    ctx.res.writeHead(302, { Location: "/discussion" });
-    ctx.res.end();
-    return { props: {} };
+    return {
+      redirect: {
+        destination: "/discussion/category",
+        permanent: false,
+      },
+    };
   }
 
-  return { props: { name } };
+  const result = QuerySchema.safeParse(ctx.query);
+  const query = result.success ? result.data : null;
+
+  return { props: { name, query } };
 };
 
 export default Page;

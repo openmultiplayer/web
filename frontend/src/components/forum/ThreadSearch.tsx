@@ -45,6 +45,7 @@ const ThreadSearch: FC<Props> = (props) => {
   );
 
   const onSubmit = useCallback(() => {
+    console.log("ThreadSearch", tags, query);
     props.onSearch(tags, query ?? "");
   }, [props, tags, query]);
 
