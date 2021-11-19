@@ -68,7 +68,7 @@ const ThreadListView: FC<Props> = ({
     max: PAGE_SIZE,
   });
 
-  // Pagination state
+  // Pagination state, I think length is wrong...
   const [length, setLength] = useState(0);
   const pagination = usePagination({
     totalItems: length,

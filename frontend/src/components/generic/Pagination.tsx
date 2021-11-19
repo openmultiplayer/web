@@ -64,6 +64,7 @@ const Pagination: FC<Props> = ({ category, onPage, state }) => {
     "/forum/categories",
     apiSWR({ schema: CategorySchema.array() })
   );
+
   if (error) {
     handler(error);
     return null;
@@ -98,7 +99,8 @@ const Pagination: FC<Props> = ({ category, onPage, state }) => {
       gridGap={1}
       justifyContent="space-evenly"
     >
-      <ListItem>
+      {/* TODO: These left/right buttons don't work yet. */}
+      {/* <ListItem>
         <IconButton
           aria-label="Previous page"
           size="sm"
@@ -106,11 +108,11 @@ const Pagination: FC<Props> = ({ category, onPage, state }) => {
           icon={<ArrowLeftIcon />}
           disabled={!state.previousEnabled}
         />
-      </ListItem>
+      </ListItem> */}
 
       {list}
 
-      <ListItem>
+      {/* <ListItem>
         <IconButton
           aria-label="Previous page"
           size="sm"
@@ -118,7 +120,7 @@ const Pagination: FC<Props> = ({ category, onPage, state }) => {
           icon={<ArrowRightIcon />}
           disabled={!state.nextEnabled}
         />
-      </ListItem>
+      </ListItem> */}
     </OrderedList>
   );
 };
