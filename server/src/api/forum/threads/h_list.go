@@ -32,9 +32,9 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		p.Sort = "desc"
 	}
 	if p.Max == 0 {
-		p.Max = 50
-	} else if p.Max > 100 {
-		p.Max = 100
+		p.Max = 20
+	} else if p.Max > 20 {
+		p.Max = 20
 	}
 
 	// Admins get to see deleted posts
