@@ -41,6 +41,11 @@ const Pagination: FC<Props> = ({ totalItems, pageSize, onPage }) => {
     [onPage, setPage]
   );
 
+  // don't render anything if the items will fit on a single page.
+  if (totalItems <= pageSize) {
+    return null;
+  }
+
   const allPages = range(0, totalItems);
   const end = allPages.length;
   const pages =
