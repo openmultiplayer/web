@@ -16,7 +16,7 @@ const isPostEmpty = (data: PostPayload) => data?.body?.length === 0;
 
 type CreateThreadFn = (data: PostPayload) => void;
 export const useCreateThread = (): CreateThreadFn => {
-  const api = useMutationAPI<PostPayload, Post>();
+  const api = useMutationAPI<PostPayload, Post>(true);
   const router = useRouter();
 
   return useCallback(
@@ -38,7 +38,7 @@ export const useCreateThread = (): CreateThreadFn => {
 
 type UpdateThreadFn = (data: Post) => void;
 export const useUpdateThread = (): UpdateThreadFn => {
-  const api = useMutationAPI();
+  const api = useMutationAPI(true);
 
   return useCallback(
     async (data: Post) =>
@@ -56,7 +56,7 @@ export const useUpdateThread = (): UpdateThreadFn => {
 
 type DeleteThreadFn = (id: string) => void;
 export const useDeleteThread = (): DeleteThreadFn => {
-  const api = useMutationAPI<Post, { count: number }>();
+  const api = useMutationAPI<Post, { count: number }>(true);
   const toast = useToast();
 
   return useCallback(

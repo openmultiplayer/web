@@ -17,7 +17,7 @@ export type UseMutationAPI<T, R> = (
 ) => (data?: T) => Promise<R | undefined>;
 
 export const useMutationAPI = <T, R = T>(
-  mutatePrefix: boolean
+  mutatePrefix?: boolean
 ): UseMutationAPI<T, R> => {
   const toast = useToast();
   const handler = useErrorHandler();
