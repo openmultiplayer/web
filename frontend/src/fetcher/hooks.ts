@@ -16,10 +16,15 @@ export type UseMutationAPI<T, R> = (
   opts?: UseMutationOptions
 ) => (data?: T) => Promise<R | undefined>;
 
-export const useMutationAPI = <T, R = T>(): UseMutationAPI<T, R> => {
+export const useMutationAPI = <T, R = T>(
+  mutatePrefix: boolean
+): UseMutationAPI<T, R> => {
   const toast = useToast();
   const handler = useErrorHandler();
-  const { mutate } = useSWRConfig();
+  const { mutate: mutateExact } = useSWRConfig();
+  const mutateWithPrefix = useMutateWithPrefix();
+
+  const mutate = mutatePrefix ? mutateWithPrefix : mutateExact;
 
   const request =
     (method: string, path: string, opts?: UseMutationOptions) =>
@@ -44,4 +49,26 @@ export const useMutationAPI = <T, R = T>(): UseMutationAPI<T, R> => {
     };
 
   return request;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type MutateWithPrefixFn = (prefix: string, ...args: any) => Promise<unknown>;
+export const useMutateWithPrefix = (): MutateWithPrefixFn => {
+  const { cache, mutate } = useSWRConfig();
+  return (prefix, ...args) => {
+    if (!(cache instanceof Map)) {
+      throw new Error(
+        "matchMutate requires the cache provider to be a Map instance"
+      );
+    }
+
+    const keys = [];
+    for (const key of cache.keys()) {
+      if (key.startsWith(prefix)) {
+        keys.push(key);
+      }
+    }
+
+    return Promise.all(keys.map((key) => mutate(key, ...args)));
+  };
 };
