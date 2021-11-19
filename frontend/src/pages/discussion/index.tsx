@@ -1,8 +1,7 @@
 import { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
 import ErrorBanner from "src/components/ErrorBanner";
-import ThreadView from "src/components/forum/ThreadListView";
-import { PAGE_SIZE } from "src/components/generic/Pagination";
+import ThreadView, { PAGE_SIZE } from "src/components/forum/ThreadListView";
 import { apiSSP, SSP } from "src/fetcher/fetcher";
 import { Post } from "src/types/_generated_Forum";
 import { queryToParams } from "src/utils/query";

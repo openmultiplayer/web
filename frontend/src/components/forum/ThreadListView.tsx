@@ -1,18 +1,19 @@
 import { Stack } from "@chakra-ui/layout";
 import { useRouter } from "next/router";
-import { FC, useCallback, useEffect, useState } from "react";
-import { usePagination } from "react-use-pagination";
+import { FC, useCallback, useState } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
 import ThreadList from "src/components/forum/ThreadList";
 import LoadingBanner from "src/components/LoadingBanner";
 import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
-import { Post } from "src/types/_generated_Forum";
+import { Category, CategorySchema, Post } from "src/types/_generated_Forum";
 import { queryToParams } from "src/utils/query";
 import useSWR from "swr";
 import Measured from "../generic/Measured";
-import Pagination, { PAGE_SIZE } from "../generic/Pagination";
+import Pagination from "../generic/Pagination";
 import { allOption } from "./CategorySelect";
+
+export const PAGE_SIZE = 20;
 
 type Props = {
   initialPosts?: Post[];
@@ -68,20 +69,13 @@ const ThreadListView: FC<Props> = ({
     max: PAGE_SIZE,
   });
 
-  // Pagination state, I think length is wrong...
-  const [length, setLength] = useState(0);
-  const pagination = usePagination({
-    totalItems: length,
-    initialPageSize: PAGE_SIZE,
-  });
-
   // This sets the query fields and updates the route in the address bar,
   const updateQueryParameters = useCallback(
     (q: APIQuery) => {
       setQuery(q);
       // use currentPath here because the user may either be on the
       // /discussions page or the /discussions/category/ page.
-      router.replace(`${currentPath}?${getBrowserQuery(q)}`);
+      router.push(`${currentPath}?${getBrowserQuery(q)}`);
     },
     [setQuery, router, currentPath]
   );
@@ -100,10 +94,10 @@ const ThreadListView: FC<Props> = ({
       // NOTE: It's possible to be at /category/x?category=y
       // in this case, x will take precedence over the query param.
       if (c === allOption) {
-        router.replace(`/discussion?${getBrowserQuery(query)}`);
+        router.push(`/discussion?${getBrowserQuery(query)}`);
         setQuery({ ...query, category: "" });
       } else {
-        router.replace(`/discussion/category/${c}?${getBrowserQuery(query)}`);
+        router.push(`/discussion/category/${c}?${getBrowserQuery(query)}`);
         setQuery({ ...query, category: c });
       }
     },
@@ -117,6 +111,11 @@ const ThreadListView: FC<Props> = ({
     [updateQueryParameters, query]
   );
 
+  const { data: categories } = useSWR<Category[], APIError>(
+    "/forum/categories",
+    apiSWR({ schema: CategorySchema.array() })
+  );
+
   // NOTE: This doesn't use the apiSWR query field because we want query changes
   // to trigger useSWR to rerequest the data and we don't need to mutate anyway.
   const { data, error } = useSWR<Post[], APIError>(
@@ -124,13 +123,15 @@ const ThreadListView: FC<Props> = ({
     apiSWR(),
     { fallbackData: initialPosts }
   );
-  useEffect(() => setLength(data?.length ?? 0), [data]);
   if (error) {
     return <ErrorBanner {...error} />;
   }
   if (!data) {
     return <LoadingBanner />;
   }
+
+  const totalItems = calculateTotalPages(categories ?? [], query.category);
+
   return (
     <Measured>
       <Stack>
@@ -143,9 +144,9 @@ const ThreadListView: FC<Props> = ({
           onSearch={onSearch}
         />
         <Pagination
-          category={query.category}
+          totalItems={totalItems}
+          pageSize={PAGE_SIZE}
           onPage={onPage}
-          state={pagination}
         />
       </Stack>
     </Measured>
@@ -154,10 +155,21 @@ const ThreadListView: FC<Props> = ({
 
 const getPath = (path: string): string => {
   const q = path.indexOf("?");
-  if (q) {
+  if (q !== -1) {
     return path.slice(0, q);
   }
   return path;
+};
+
+const calculateTotalPages = (categories: Category[], current?: string) =>
+  Math.ceil(calculateTotalThreads(categories, current) / PAGE_SIZE);
+
+const calculateTotalThreads = (categories: Category[], current?: string) => {
+  if (current === "" || current === undefined) {
+    return categories.reduce((acc, cur) => (acc += cur.postCount), 0);
+  } else {
+    return categories.find((c) => c.name === current)?.postCount ?? 0;
+  }
 };
 
 export default ThreadListView;
