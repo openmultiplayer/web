@@ -17,7 +17,7 @@ type Repository interface {
 	GetThreads(
 		ctx context.Context,
 		tags []string, category string, query string,
-		before time.Time, sort string, max int,
+		before time.Time, sort string, offset, max int,
 		includePosts bool,
 		includeDeleted bool,
 		includeAdmin bool,
