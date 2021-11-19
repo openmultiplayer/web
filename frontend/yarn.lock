@@ -5642,6 +5642,11 @@ react-twemoji@^0.3.0:
     prop-types "^15.7.2"
     twemoji "^13.0.1"
 
+react-use-pagination@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-use-pagination/-/react-use-pagination-2.0.1.tgz#debc6322cd3f14a4cdf082d913f7736d5cbed170"
+  integrity sha512-bo7vI2oZ/+PJJozN7DLWPkewrULLoHb8a6WO3dGudJfEKnj8BVZVbJPkvn5jtydhJ5xi0t0W7xI06XlWUe8Jbw==
+
 react@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"

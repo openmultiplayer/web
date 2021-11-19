@@ -8,7 +8,7 @@ import {
   negate,
 } from "lodash/fp";
 
-type Value = string | string[] | undefined;
+type Value = string | string[] | number | undefined;
 
 type ParamPair = [string, string];
 
@@ -28,7 +28,7 @@ const expand = ([k, v]: [string, Value]): ParamPair[] | undefined => {
   if (v instanceof Array) {
     return v.map((n: string): ParamPair => [k, n]);
   }
-  return [[k, v]];
+  return [[k, v.toString()]];
 };
 
 /**

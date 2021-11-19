@@ -1,4 +1,4 @@
-import { omit } from "lodash";
+import { Stack } from "@chakra-ui/layout";
 import { useRouter } from "next/router";
 import { FC, useCallback, useState } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
@@ -6,30 +6,53 @@ import ThreadList from "src/components/forum/ThreadList";
 import LoadingBanner from "src/components/LoadingBanner";
 import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
-import { Post } from "src/types/_generated_Forum";
+import { Category, CategorySchema, Post } from "src/types/_generated_Forum";
 import { queryToParams } from "src/utils/query";
 import useSWR from "swr";
 import Measured from "../generic/Measured";
+import Pagination from "../generic/Pagination";
 import { allOption } from "./CategorySelect";
+
+export const PAGE_SIZE = 20;
 
 type Props = {
   initialPosts?: Post[];
   initialCategory?: string;
   initialTags?: string[];
   initialText?: string;
+  initialPage?: number;
 };
 
-type Query = {
+export type APIQuery = {
   search: string;
   tags: string[];
   category: string;
+  offset: number;
+  max: number;
 };
+
+type BrowserQuery = {
+  search: string;
+  tags: string[];
+  page: number;
+};
+
+// On the browser, when constructing a new route for the address bar, because
+// categories and pages are handled as a special case (part of the path) this
+// function transforms API query params to browser address bar query params.
+const getBrowserQuery = ({ search, tags, offset }: APIQuery) =>
+  queryToParams({
+    search,
+    tags,
+    page: Math.floor(offset / PAGE_SIZE),
+  } as BrowserQuery);
 
 const ThreadListView: FC<Props> = ({
   initialPosts,
   initialCategory = "",
   initialTags = [],
   initialText = "",
+  initialPage = 0,
 }) => {
   const router = useRouter();
   const currentPath = getPath(router.asPath);
@@ -38,26 +61,30 @@ const ThreadListView: FC<Props> = ({
   // combination of a list of tags and/or a text search. A category is a
   // separate collection of threads entirely. So these are handled separately on
   // the actual user interface but internally, they use to the same API call.
-  const [query, setQuery] = useState<Query>({
+  const [query, setQuery] = useState<APIQuery>({
     search: initialText,
     tags: initialTags,
     category: initialCategory,
+    offset: initialPage * PAGE_SIZE,
+    max: PAGE_SIZE,
   });
-
-  // On the browser, when constructing a new route for the address bar, because
-  // categories are handled as a special case (part of the path) this function
-  // is used to construct the history replacement.
-  const queryToParamsBrowser = (o: Query) => queryToParams(omit(o, "category"));
 
   // This sets the query fields and updates the route in the address bar,
   const updateQueryParameters = useCallback(
-    (q: Query) => {
+    (q: APIQuery) => {
       setQuery(q);
       // use currentPath here because the user may either be on the
       // /discussions page or the /discussions/category/ page.
-      router.replace(`${currentPath}?${queryToParamsBrowser(q)}`);
+      router.push(`${currentPath}?${getBrowserQuery(q)}`);
     },
     [setQuery, router, currentPath]
+  );
+
+  const onPage = useCallback(
+    (page: number) => {
+      updateQueryParameters({ ...query, offset: page * PAGE_SIZE });
+    },
+    [updateQueryParameters, query]
   );
 
   // As mentioned above, categories are separate from queries so this handles
@@ -67,12 +94,10 @@ const ThreadListView: FC<Props> = ({
       // NOTE: It's possible to be at /category/x?category=y
       // in this case, x will take precedence over the query param.
       if (c === allOption) {
-        router.replace(`/discussion?${queryToParamsBrowser(query)}`);
+        router.push(`/discussion?${getBrowserQuery(query)}`);
         setQuery({ ...query, category: "" });
       } else {
-        router.replace(
-          `/discussion/category/${c}?${queryToParamsBrowser(query)}`
-        );
+        router.push(`/discussion/category/${c}?${getBrowserQuery(query)}`);
         setQuery({ ...query, category: c });
       }
     },
@@ -84,6 +109,11 @@ const ThreadListView: FC<Props> = ({
     (tags: string[], text: string) =>
       updateQueryParameters({ ...query, tags, search: text }),
     [updateQueryParameters, query]
+  );
+
+  const { data: categories } = useSWR<Category[], APIError>(
+    "/forum/categories",
+    apiSWR({ schema: CategorySchema.array() })
   );
 
   // NOTE: This doesn't use the apiSWR query field because we want query changes
@@ -99,26 +129,47 @@ const ThreadListView: FC<Props> = ({
   if (!data) {
     return <LoadingBanner />;
   }
+
+  const totalItems = calculateTotalPages(categories ?? [], query.category);
+
   return (
     <Measured>
-      <ThreadList
-        data={data}
-        category={query.category}
-        tags={initialTags}
-        query={initialText}
-        onSelectCategory={setCategory}
-        onSearch={onSearch}
-      />
+      <Stack>
+        <ThreadList
+          data={data}
+          category={query.category}
+          tags={initialTags}
+          query={initialText}
+          onSelectCategory={setCategory}
+          onSearch={onSearch}
+        />
+        <Pagination
+          totalItems={totalItems}
+          pageSize={PAGE_SIZE}
+          onPage={onPage}
+        />
+      </Stack>
     </Measured>
   );
 };
 
 const getPath = (path: string): string => {
   const q = path.indexOf("?");
-  if (q) {
+  if (q !== -1) {
     return path.slice(0, q);
   }
   return path;
+};
+
+const calculateTotalPages = (categories: Category[], current?: string) =>
+  Math.ceil(calculateTotalThreads(categories, current) / PAGE_SIZE);
+
+const calculateTotalThreads = (categories: Category[], current?: string) => {
+  if (current === "" || current === undefined) {
+    return categories.reduce((acc, cur) => (acc += cur.postCount), 0);
+  } else {
+    return categories.find((c) => c.name === current)?.postCount ?? 0;
+  }
 };
 
 export default ThreadListView;

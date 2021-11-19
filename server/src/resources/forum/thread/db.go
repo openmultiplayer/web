@@ -204,6 +204,7 @@ func (d *DB) GetThreads(
 	query string,
 	before time.Time,
 	sort string,
+	offset int,
 	max int,
 	includePosts bool,
 	includeDeleted bool,
@@ -255,6 +256,7 @@ func (d *DB) GetThreads(
 				db.Post.Tags.Fetch(),
 				db.Post.Category.Fetch(),
 			).
+			Skip(offset).
 			Take(max).
 			OrderBy(db.Post.CreatedAt.Order(db.Direction(sort))).
 			Exec(ctx)
@@ -269,6 +271,7 @@ func (d *DB) GetThreads(
 			db.Post.Tags.Fetch(),
 			db.Post.Category.Fetch(),
 		).
+		Skip(offset).
 		Take(max).
 		OrderBy(db.Post.CreatedAt.Order(db.Direction(sort))).
 		Exec(ctx)
