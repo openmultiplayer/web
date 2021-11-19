@@ -12,17 +12,21 @@ import useSWR from "swr";
 import Measured from "../generic/Measured";
 import { allOption } from "./CategorySelect";
 
+export const PAGE_SIZE = 20;
+
 type Props = {
   initialPosts?: Post[];
   initialCategory?: string;
   initialTags?: string[];
   initialText?: string;
+  initialPage?: number;
 };
 
-type Query = {
+export type Query = {
   search: string;
   tags: string[];
   category: string;
+  offset: number;
 };
 
 const ThreadListView: FC<Props> = ({
@@ -30,6 +34,7 @@ const ThreadListView: FC<Props> = ({
   initialCategory = "",
   initialTags = [],
   initialText = "",
+  initialPage = 0,
 }) => {
   const router = useRouter();
   const currentPath = getPath(router.asPath);
@@ -42,6 +47,7 @@ const ThreadListView: FC<Props> = ({
     search: initialText,
     tags: initialTags,
     category: initialCategory,
+    offset: initialPage * PAGE_SIZE,
   });
 
   // On the browser, when constructing a new route for the address bar, because
