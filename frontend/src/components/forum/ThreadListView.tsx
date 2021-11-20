@@ -44,7 +44,7 @@ const getBrowserQuery = ({ search, tags, offset }: APIQuery) =>
   queryToParams({
     search,
     tags,
-    page: Math.floor(offset / PAGE_SIZE),
+    page: offsetToPage(offset),
   } as BrowserQuery);
 
 const ThreadListView: FC<Props> = ({
@@ -65,7 +65,7 @@ const ThreadListView: FC<Props> = ({
     search: initialText,
     tags: initialTags,
     category: initialCategory,
-    offset: initialPage * PAGE_SIZE,
+    offset: pageToOffset(initialPage),
     max: PAGE_SIZE,
   });
 
@@ -82,7 +82,7 @@ const ThreadListView: FC<Props> = ({
 
   const onPage = useCallback(
     (page: number) => {
-      updateQueryParameters({ ...query, offset: page * PAGE_SIZE });
+      updateQueryParameters({ ...query, offset: pageToOffset(page) });
     },
     [updateQueryParameters, query]
   );
@@ -130,7 +130,7 @@ const ThreadListView: FC<Props> = ({
     return <LoadingBanner />;
   }
 
-  const totalItems = calculateTotalPages(categories ?? [], query.category);
+  const totalItems = calculateTotalThreads(categories ?? [], query.category);
 
   return (
     <Measured>
@@ -145,13 +145,18 @@ const ThreadListView: FC<Props> = ({
         />
         <Pagination
           totalItems={totalItems}
-          pageSize={PAGE_SIZE}
+          initialPage={offsetToPage(query.offset)}
+          initialPageSize={PAGE_SIZE}
           onPage={onPage}
         />
       </Stack>
     </Measured>
   );
 };
+
+const pageToOffset = (page: number) => Math.max(0, page - 1) * PAGE_SIZE;
+
+const offsetToPage = (offset: number) => Math.floor(offset / PAGE_SIZE);
 
 const getPath = (path: string): string => {
   const q = path.indexOf("?");
@@ -160,9 +165,6 @@ const getPath = (path: string): string => {
   }
   return path;
 };
-
-const calculateTotalPages = (categories: Category[], current?: string) =>
-  Math.ceil(calculateTotalThreads(categories, current) / PAGE_SIZE);
 
 const calculateTotalThreads = (categories: Category[], current?: string) => {
   if (current === "" || current === undefined) {
