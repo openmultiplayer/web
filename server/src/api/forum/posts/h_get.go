@@ -23,9 +23,7 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if p.Max == 0 {
-		p.Max = 50
-	} else if p.Max > 100 {
-		p.Max = 100
+		p.Max = 1000
 	}
 
 	isAdmin := authentication.IsRequestAdmin(r)

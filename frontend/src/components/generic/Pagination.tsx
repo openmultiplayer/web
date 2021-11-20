@@ -54,7 +54,7 @@ const Pagination: FC<Props> = ({
     return null;
   }
 
-  const allPages = range(1, totalItems);
+  const allPages = range(1, Math.ceil(totalItems / pageSize));
   const end = allPages.length;
   const pages =
     end <= 10
