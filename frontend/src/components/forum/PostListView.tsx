@@ -1,6 +1,7 @@
 import { Button } from "@chakra-ui/button";
 import { AtSignIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import { Box, Flex, Stack } from "@chakra-ui/layout";
+import { useRouter } from "next/router";
 import { FC, useCallback, useState } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
 import { apiSWR } from "src/fetcher/fetcher";
@@ -8,6 +9,7 @@ import { APIError } from "src/types/_generated_Error";
 import { Post, PostSchema } from "src/types/_generated_Forum";
 import useSWR from "swr";
 import Measured from "../generic/Measured";
+import Pagination from "../generic/Pagination";
 import LoadingBanner from "../LoadingBanner";
 import BackLink from "./BackLink";
 import { useCreatePost } from "./hooks";
@@ -15,9 +17,12 @@ import PostEditor from "./PostEditor";
 import PostList from "./PostList";
 import { PostWithMarkdown } from "./PostListItem";
 
+const PAGE_SIZE = 20;
+
 type Props = {
   slug: string;
   initialPosts?: PostWithMarkdown[];
+  initialPage?: number;
 };
 
 type ReplyToPostProps = {
@@ -74,14 +79,36 @@ const Reply: FC<ReplyProps> = ({ id, slug, post, onCancelReply }) => {
   );
 };
 
-const PostListView: FC<Props> = ({ slug, initialPosts }) => {
+const PostListView: FC<Props> = ({ slug, initialPosts, initialPage }) => {
+  const router = useRouter();
+  const { pathname, query } = router;
+
   const [reply, setReply] = useState<Post | undefined>(undefined);
   const onCancelReply = useCallback(() => setReply(undefined), [setReply]);
   const onSetReply = useCallback((post: Post) => setReply(post), [setReply]);
 
+  const [page, setPage] = useState(initialPage ?? 1);
+  const onPage = useCallback(
+    (p: number) => {
+      router.push({ pathname, query: { ...query, page: `${p}` } });
+      setPage(p);
+    },
+    [router, pathname, query, setPage]
+  );
+
   const { data, error } = useSWR<Post[], APIError>(
     `/forum/posts/${slug}`,
-    apiSWR({ schema: PostSchema.array() }),
+    apiSWR({
+      schema: PostSchema.array(),
+      query: new URLSearchParams({
+        //
+        // NOTE: This code currently does paging on the client, so ALL posts are
+        // fetched and rendered, but paging keeps things fast. This may change.
+        //
+        // offset: `${page * PAGE_SIZE}`,
+        // max: `${PAGE_SIZE}`,
+      }),
+    }),
     { fallbackData: initialPosts }
   );
   if (error) {
@@ -92,13 +119,22 @@ const PostListView: FC<Props> = ({ slug, initialPosts }) => {
   }
 
   const id = data[0].id;
+  const totalItems = data.length;
+  const paged = data.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   return (
     <Measured>
       <Stack spacing={2}>
         <BackLink to="/discussion" />
 
-        <PostList thread={{ id, slug }} posts={data} onSetReply={onSetReply} />
+        <Pagination
+          totalItems={totalItems}
+          initialPage={page}
+          initialPageSize={PAGE_SIZE}
+          onPage={onPage}
+        />
+
+        <PostList thread={{ id, slug }} posts={paged} onSetReply={onSetReply} />
 
         <Reply id={id} slug={slug} post={reply} onCancelReply={onCancelReply} />
       </Stack>
