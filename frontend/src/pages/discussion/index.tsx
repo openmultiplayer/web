@@ -28,7 +28,9 @@ const Page: NextPage<Props> = (props) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const offset = parseInt(ctx.query?.page?.toString() ?? "0") * PAGE_SIZE;
+  // Pages start at 1 and are not negative.
+  const page = Math.min(parseInt(ctx.query?.page?.toString() ?? "1"), 1);
+  const offset = (page - 1) * PAGE_SIZE;
   return {
     props: await apiSSP("/forum/threads", ctx, {
       query: queryToParams({ ...ctx.query, offset }),

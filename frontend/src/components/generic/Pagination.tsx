@@ -9,11 +9,18 @@ type OnPageFn = (page: number) => void;
 
 type Props = {
   totalItems: number;
-  pageSize: number;
+  initialPage: number;
+  initialPageSize: number;
   onPage: OnPageFn;
 };
-const Pagination: FC<Props> = ({ totalItems, pageSize, onPage }) => {
+const Pagination: FC<Props> = ({
+  totalItems,
+  initialPage,
+  initialPageSize,
+  onPage,
+}) => {
   const {
+    pageSize,
     setPage,
     currentPage,
     previousEnabled,
@@ -22,7 +29,8 @@ const Pagination: FC<Props> = ({ totalItems, pageSize, onPage }) => {
     setNextPage,
   } = usePagination({
     totalItems,
-    initialPageSize: pageSize,
+    initialPage,
+    initialPageSize,
   });
 
   const _setPreviousPage = useCallback(() => {
@@ -46,14 +54,14 @@ const Pagination: FC<Props> = ({ totalItems, pageSize, onPage }) => {
     return null;
   }
 
-  const allPages = range(0, totalItems);
+  const allPages = range(1, totalItems);
   const end = allPages.length;
   const pages =
     end <= 10
       ? allPages
       : // If there are more than 10 pages, split up the list and only show the
         // first 4 and the last 4 page number in the pagination navigation list.
-        [0, 1, 2, 3, -1, end - 4, end - 3, end - 2, end - 1];
+        [1, 2, 3, 4, -1, end - 3, end - 2, end - 1, end];
 
   const list = pages.map((page) =>
     page === -1 ? (
@@ -118,7 +126,7 @@ const PageButton: FC<PageButtonProps> = ({ page, current, onPage }) => {
         variant={current === page ? "solid" : "outline"}
         onClick={onClick}
       >
-        {page + 1}
+        {page}
       </Button>
     </ListItem>
   );
