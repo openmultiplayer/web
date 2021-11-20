@@ -130,7 +130,7 @@ const ThreadListView: FC<Props> = ({
     return <LoadingBanner />;
   }
 
-  const totalItems = calculateTotalPages(categories ?? [], query.category);
+  const totalItems = calculateTotalThreads(categories ?? [], query.category);
 
   return (
     <Measured>
@@ -165,9 +165,6 @@ const getPath = (path: string): string => {
   }
   return path;
 };
-
-const calculateTotalPages = (categories: Category[], current?: string) =>
-  Math.ceil(calculateTotalThreads(categories, current) / PAGE_SIZE);
 
 const calculateTotalThreads = (categories: Category[], current?: string) => {
   if (current === "" || current === undefined) {
