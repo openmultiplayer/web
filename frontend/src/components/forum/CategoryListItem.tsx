@@ -42,7 +42,6 @@ import { Category } from "src/types/_generated_Forum";
 import CategorySelect from "./CategorySelect";
 import { PostLink } from "./common";
 import { useDeleteCategory, useUpdateCategory } from "./hooks";
-import NewThreadLink from "./NewThreadLink";
 import { SliderPicker, ColorResult } from "react-color";
 import ClampedParagraph from "../generic/ClampedParagraph";
 
@@ -373,7 +372,6 @@ export const CategoryListItem: FC<{
                   <Heading as="h3" size="md" m="0">
                     No posts
                   </Heading>
-                  <NewThreadLink />
                 </>
               ) : (
                 <Heading as="h3" size="md" m="0">
