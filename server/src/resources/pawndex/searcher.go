@@ -20,7 +20,7 @@ type GitHubSearcher struct {
 }
 
 func NewGitHubSearcher(gh *github.Client) Searcher {
-	return &GitHubSearcher{gh, 0}
+	return &GitHubSearcher{gh, 1}
 }
 
 func (g *GitHubSearcher) Search(queries ...string) ([]string, error) {
@@ -82,6 +82,7 @@ func (g *GitHubSearcher) runQueryForPage(query string, page int) (repos []github
 	zap.L().Debug("found repositories",
 		zap.Int("count", len(results.Repositories)),
 		zap.Int("page", page),
+		zap.Time("reset", resp.Rate.Reset.Time),
 		zap.Int("remaining", resp.Rate.Remaining))
 
 	return results.Repositories, nil
