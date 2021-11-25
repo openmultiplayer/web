@@ -7,6 +7,7 @@ import (
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/resources/pawndex"
 )
 
@@ -27,6 +28,7 @@ func Build() fx.Option {
 
 		fx.Invoke(func(
 			lc fx.Lifecycle,
+			cfg config.Config,
 			searcher pawndex.Searcher,
 			scraper pawndex.Scraper,
 			storer pawndex.Repository,
@@ -35,8 +37,8 @@ func Build() fx.Option {
 				searcher,
 				scraper,
 				storer,
-				time.Hour * 24,
-				time.Hour * 24,
+				cfg.PackageSearchInterval,
+				cfg.PackageScrapeInterval,
 			}
 
 			wctx, stop := context.WithCancel(context.Background())
@@ -103,7 +105,7 @@ func (d *worker) run(ctx context.Context) error {
 				continue
 			}
 
-			time.Sleep(time.Second * 30)
+			time.Sleep(time.Second * 5)
 		}
 		return nil
 	}
