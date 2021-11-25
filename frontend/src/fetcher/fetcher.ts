@@ -72,8 +72,9 @@ export const buildRequest = (path: string, opts?: RequestInit): Request => {
 const getData = async (response: Response): Promise<unknown> => {
   if (isJSON(response)) {
     return response.json();
+  } else {
+    return undefined;
   }
-  throw new Error("Unexpected non-JSON response");
 };
 
 const isJSON = (response: Response): boolean => {
