@@ -50,7 +50,8 @@ func Build() fx.Option {
 
 			lc.Append(fx.Hook{
 				OnStart: func(ctx context.Context) error {
-					return w.Run(ctx, cfg.ServerScrapeInterval)
+					go w.Run(ctx, cfg.ServerScrapeInterval)
+					return nil
 				},
 			})
 
