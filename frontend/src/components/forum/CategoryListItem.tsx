@@ -92,8 +92,8 @@ const DeleteMenuItem: FC<{ category: Category }> = ({ category }) => {
               move posts to:
             </Text>
             <CategorySelect
+              category={category.name}
               onSelect={onSelectNewCategory}
-              includeAllOption={false}
               exclude={category.name}
             />
           </ModalBody>

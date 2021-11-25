@@ -1,4 +1,5 @@
 import { Stack } from "@chakra-ui/layout";
+import { isNull } from "lodash";
 import { useRouter } from "next/router";
 import { FC, useCallback, useState } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
@@ -11,7 +12,6 @@ import { queryToParams } from "src/utils/query";
 import useSWR from "swr";
 import Measured from "../generic/Measured";
 import Pagination from "../generic/Pagination";
-import { allOption } from "./CategorySelect";
 
 export const PAGE_SIZE = 20;
 
@@ -26,8 +26,8 @@ type Props = {
 export type APIQuery = {
   search: string;
   tags: string[];
-  category: string;
-  offset: number;
+  category: string | null;
+  offset: number | null;
   max: number;
 };
 
@@ -42,9 +42,9 @@ type BrowserQuery = {
 // function transforms API query params to browser address bar query params.
 const getBrowserQuery = ({ search, tags, offset }: APIQuery) =>
   queryToParams({
-    search,
-    tags,
-    page: offsetToPage(offset),
+    search: search ?? undefined,
+    tags: tags ?? undefined,
+    page: offset ? offsetToPage(offset) : undefined,
   } as BrowserQuery);
 
 const ThreadListView: FC<Props> = ({
@@ -52,7 +52,7 @@ const ThreadListView: FC<Props> = ({
   initialCategory = "",
   initialTags = [],
   initialText = "",
-  initialPage = 0,
+  initialPage = 1,
 }) => {
   const router = useRouter();
   const currentPath = getPath(router.asPath);
@@ -93,13 +93,13 @@ const ThreadListView: FC<Props> = ({
     (c) => {
       // NOTE: It's possible to be at /category/x?category=y
       // in this case, x will take precedence over the query param.
-      if (c === allOption) {
-        router.push(`/discussion?${getBrowserQuery(query)}`);
-        setQuery({ ...query, category: "" });
-      } else {
-        router.push(`/discussion/category/${c}?${getBrowserQuery(query)}`);
-        setQuery({ ...query, category: c });
-      }
+      router.push(
+        `/discussion/category/${c}?${getBrowserQuery({
+          ...query,
+          category: "",
+        })}`
+      );
+      setQuery({ ...query, category: c });
     },
     [router, query]
   );
@@ -130,14 +130,17 @@ const ThreadListView: FC<Props> = ({
     return <LoadingBanner />;
   }
 
-  const totalItems = calculateTotalThreads(categories ?? [], query.category);
+  const totalItems = calculateTotalThreads(
+    categories ?? [],
+    query.category ?? undefined
+  );
 
   return (
     <Measured>
       <Stack>
         <ThreadList
           data={data}
-          category={query.category}
+          category={query.category ?? ""}
           tags={initialTags}
           query={initialText}
           onSelectCategory={setCategory}
@@ -156,7 +159,8 @@ const ThreadListView: FC<Props> = ({
 
 const pageToOffset = (page: number) => Math.max(0, page - 1) * PAGE_SIZE;
 
-const offsetToPage = (offset: number) => Math.floor(offset / PAGE_SIZE);
+const offsetToPage = (offset: number | null) =>
+  isNull(offset) ? 1 : Math.floor(offset / PAGE_SIZE);
 
 const getPath = (path: string): string => {
   const q = path.indexOf("?");

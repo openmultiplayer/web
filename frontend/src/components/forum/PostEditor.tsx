@@ -9,7 +9,7 @@ import {
   SearchResultsSchema,
 } from "src/types/_generated_SearchResult";
 import * as z from "zod";
-import CategoryList from "./CategorySelect";
+import CategorySelect from "./CategorySelect";
 import TagsInput from "./TagsInput";
 
 export const PostPayloadSchema = z.object({
@@ -155,7 +155,7 @@ const PostEditor: FC<Props> = ({
 
           <HStack>
             {disableThreadCreationOptions || (
-              <CategoryList category={category} onSelect={onSelectCategory} />
+              <CategorySelect category={category} onSelect={onSelectCategory} />
             )}
             <Button type="submit" px="2em">
               {postButtonText}

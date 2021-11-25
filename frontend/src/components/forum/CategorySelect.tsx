@@ -1,26 +1,18 @@
-import { Select, useToast } from "@chakra-ui/react";
-import React, { useCallback, ChangeEvent, FC } from "react";
+import { Select } from "@chakra-ui/react";
+import React, { ChangeEvent, FC, useCallback } from "react";
 import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
 import { Category, CategorySchema } from "src/types/_generated_Forum";
 import { useErrorHandler } from "src/utils/useErrorHandler";
 import useSWR from "swr";
 
-export const allOption = "All";
-
 type Props = {
   onSelect: (c: string | undefined, cat?: Category) => void;
-  category?: string;
-  includeAllOption?: boolean;
+  category: string;
   exclude?: string;
 };
 
-const CategorySelect: FC<Props> = ({
-  category,
-  onSelect,
-  includeAllOption = true,
-  exclude,
-}) => {
+const CategorySelect: FC<Props> = ({ category, onSelect, exclude }) => {
   const handler = useErrorHandler();
   const { data, error } = useSWR<Category[], APIError>(
     "/forum/categories",
@@ -47,12 +39,7 @@ const CategorySelect: FC<Props> = ({
   }
 
   return (
-    <Select onChange={onChange} title="Category" value={category ?? "None"}>
-      {includeAllOption ? (
-        <option>{allOption}</option>
-      ) : (
-        <option disabled>None</option>
-      )}
+    <Select onChange={onChange} title="Category" value={category}>
       {data.map((c) => (
         <option key={c.id} disabled={c.name === exclude}>
           {c.name}

@@ -8,7 +8,7 @@ import {
   negate,
 } from "lodash/fp";
 
-type Value = string | string[] | number | undefined;
+type Value = string | string[] | number | undefined | null;
 
 type ParamPair = [string, string];
 
@@ -22,7 +22,7 @@ type ParamPair = [string, string];
  * Which is the necessary structure for URLSearchParams.
  */
 const expand = ([k, v]: [string, Value]): ParamPair[] | undefined => {
-  if (v === undefined) {
+  if (v === undefined || v == null) {
     return undefined;
   }
   if (v instanceof Array) {

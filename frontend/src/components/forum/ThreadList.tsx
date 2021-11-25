@@ -5,7 +5,7 @@ import React, { FC } from "react";
 import ThreadSearch from "src/components/forum/ThreadSearch";
 import { Post } from "src/types/_generated_Forum";
 import { CardList } from "../generic/CardList";
-import CategoryList from "./CategorySelect";
+import CategorySelect from "./CategorySelect";
 import ThreadListItem from "./ThreadListItem";
 
 type HeaderProps = {
@@ -32,7 +32,7 @@ const ListHeader: FC<HeaderProps> = ({
   return (
     <Flex direction="row" gridGap="0.5em">
       <Box className="categories">
-        <CategoryList category={category} onSelect={onSelectCategory} />
+        <CategorySelect category={category} onSelect={onSelectCategory} />
       </Box>
 
       <Box className="search" flexGrow={1}>
