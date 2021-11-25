@@ -14,6 +14,7 @@ import {
   Button,
   Divider,
   Flex,
+  Center,
   Heading,
   IconButton,
   Input,
@@ -337,7 +338,7 @@ export const CategoryListItem: FC<{
       >
         <Box flexBasis={0} flexShrink={1} flexGrow={10} minWidth={0}>
           <header>
-            <Heading margin="0">
+            <Heading size="m" margin="0">
               <NextLink passHref href={`/discussion/category/${category.name}`}>
                 <Link>{category.name}</Link>
               </NextLink>
@@ -350,15 +351,9 @@ export const CategoryListItem: FC<{
           </main>
         </Box>
 
-        <Box
-          height="auto"
-          px="1em"
-          flexBasis="max-content"
-          flexShrink={1}
-          flexGrow={1}
-        >
+        <Center height="auto" px="1em">
           <Divider orientation="vertical" />
-        </Box>
+        </Center>
 
         <Box flexBasis={0} flexShrink={1} flexGrow={10} minWidth={0}>
           <Flex
@@ -369,15 +364,27 @@ export const CategoryListItem: FC<{
             <Flex gridGap="0.5em">
               {category.postCount === 0 ? (
                 <>
-                  <Heading as="h3" size="md" m="0">
-                    No posts
+                  <Heading
+                    as="h3"
+                    size="sm"
+                    color="blackAlpha.800"
+                    fontWeight={400}
+                    m="0"
+                  >
+                    no posts
                   </Heading>
                 </>
               ) : (
-                <Heading as="h3" size="md" m="0">
+                <Heading
+                  as="h3"
+                  size="sm"
+                  color="blackAlpha.800"
+                  fontWeight={400}
+                  m="0"
+                >
                   {category.postCount === 1
-                    ? `1 Post`
-                    : `${category.postCount} Posts`}
+                    ? `1 post`
+                    : `${category.postCount} posts`}
                 </Heading>
               )}
             </Flex>

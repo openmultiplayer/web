@@ -174,7 +174,7 @@ export const PostLink: FC<PostLinkProps> = ({ post }) => {
         display="flex"
         gridGap="0.25em"
         alignItems="center"
-        backgroundColor="blackAlpha.100"
+        backgroundColor="blackAlpha.50"
         borderRadius="0.25em"
         px="0.25em"
       >
