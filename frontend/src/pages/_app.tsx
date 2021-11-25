@@ -55,7 +55,7 @@ import Router from "next/router";
 import { DefaultSeo } from "next-seo";
 import { ToastContainer } from "react-nextjs-toast";
 import NProgress from "nprogress";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Box, Heading, Text } from "@chakra-ui/react";
 
 import Nav from "src/components/site/Nav";
 import Footer from "src/components/site/Footer";
@@ -69,8 +69,11 @@ import "src/styles/base.css";
 import { AuthProvider } from "src/auth/hooks";
 import theme from "../styles/theme";
 import Fonts from "src/styles/Fonts";
-import React from "react";
+import React, { FC } from "react";
 import { NextPage } from "next";
+import Link from "next/link";
+import Measured from "src/components/generic/Measured";
+import Anchor from "src/components/generic/Anchor";
 
 // Trigger client-side progress bar for client-side page transitions.
 Router.events.on("routeChangeStart", () => NProgress.start());
@@ -164,7 +167,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
         items={[
           { name: "Home", path: "/", exact: true },
           { name: "FAQ", path: "/faq" },
-          { name: "Forums", path: "https://burgershot.gg/" },
+          { name: "Forums", path: "/discussion" },
           { name: "Servers", path: "/servers" },
           { name: "Docs", path: "/docs" },
           { name: "Blog", path: "/blog" },
@@ -173,6 +176,16 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
       />
 
       <main>
+        {/*
+          NOTE: Temporary announcement for new forum.
+        */}
+
+        <Announcement />
+
+        {/*
+          Remove once feedback and testing is done.
+        */}
+
         <Component {...pageProps} />
       </main>
 
@@ -195,5 +208,36 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
     `}</style>
   </ChakraProvider>
 );
+
+const Announcement: FC = () => {
+  return (
+    <Box maxWidth="48em" mx="auto" px="0.5em">
+      <Box
+        padding="0.8em"
+        borderColor="blackAlpha.100"
+        borderStyle="solid"
+        borderWidth="1px"
+        borderRadius="0.5em"
+        backgroundColor="blue.50"
+      >
+        <Heading m="0" fontSize="1.5em">
+          New Forums!
+        </Heading>
+
+        <Text>
+          Please check out our{" "}
+          <Anchor href="/discussion">brand new forums</Anchor> and help test!
+        </Text>
+
+        <Text>
+          More information is available{" "}
+          <Anchor href="/discussion/ckwf1z1o900698rw556q3p9e0-a-post">
+            here!
+          </Anchor>
+        </Text>
+      </Box>
+    </Box>
+  );
+};
 
 export default App;
