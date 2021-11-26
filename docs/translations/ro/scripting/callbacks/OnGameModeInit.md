@@ -8,7 +8,7 @@ tags: []
 
 Acest callback este apelat atunci când gamemode-ul a pornit.
 
-## Exemplu
+## Exemple
 
 ```c
 public OnGameModeInit()
@@ -26,4 +26,4 @@ Această funcție poate fi utilizată și într-un filterscript pentru a detecta
 
 :::
 
-## Related Functions
+## Funcții relatate
