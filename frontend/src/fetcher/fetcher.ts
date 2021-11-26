@@ -235,8 +235,10 @@ export const deriveError = (e: unknown): APIError => {
   const parsed = APIErrorSchema.safeParse(e);
   if (parsed.success) {
     return parsed.data;
+  } else if (e instanceof Error) {
+    return { message: e.toString() };
   } else {
-    return { message: (e as Error).toString() };
+    return { message: String(e) };
   }
 };
 
