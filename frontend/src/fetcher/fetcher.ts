@@ -3,7 +3,7 @@ import { GetServerSidePropsContext } from "next";
 import { API_ADDRESS } from "src/config";
 import { APIError, APIErrorSchema } from "src/types/_generated_Error";
 import { niceDate } from "src/utils/dates";
-import { ZodSchema } from "zod";
+import { z, ZodSchema } from "zod";
 
 const DEFAULT_HEADERS = {
   "Content-Type": "application/json",
@@ -231,7 +231,7 @@ const headersFromContext = (ctx: GetServerSidePropsContext): Headers => {
  * @param e Exception or error response object
  * @returns An APIError object either parsed from `e` or built from toString
  */
-const deriveError = (e: unknown): APIError => {
+export const deriveError = (e: unknown): APIError => {
   const parsed = APIErrorSchema.safeParse(e);
   if (parsed.success) {
     return parsed.data;
@@ -266,4 +266,50 @@ export class RateLimitError implements APIError {
 
     this.error = "rate limit exceeded";
   }
+}
+
+/**
+ * OAuth2 Callback API call for use in getServerSideProps.
+ */
+
+export const OAuthCallbackPayloadSchema = z.object({
+  code: z.string(),
+  state: z.string(),
+});
+export type OAuthCallbackPayload = z.infer<typeof OAuthCallbackPayloadSchema>;
+
+export async function oauth(
+  provider: "discord" | "github",
+  ctx: GetServerSidePropsContext
+): Promise<string> {
+  const payload = OAuthCallbackPayloadSchema.parse(ctx.query);
+  const cookie = ctx?.req?.headers?.cookie;
+  const path = `"/auth/${provider}/callback"`;
+
+  const request = buildRequest(path, {
+    method: "post",
+    body: JSON.stringify(payload),
+    headers: {
+      "Content-Type": "application/json",
+      Cookie: cookie ?? "",
+    },
+    credentials: "include",
+  });
+
+  const response = await fetch(request);
+  const data = await getData(response);
+
+  if (!isSuccessStatus(response.status)) {
+    handleError(data, response, path);
+  }
+
+  const setCookie = response.headers.get("set-cookie");
+  if (!setCookie) {
+    throw deriveError({
+      error: "No cookie in authentication response",
+      message: `The server did not respond with an authentication cookie after verifying your ${payload} account.`,
+    });
+  }
+
+  return setCookie;
 }
