@@ -280,10 +280,21 @@ export const OAuthCallbackPayloadSchema = z.object({
 });
 export type OAuthCallbackPayload = z.infer<typeof OAuthCallbackPayloadSchema>;
 
+export const OAuthErrorSchema = z.object({
+  error: z.string(),
+  error_description: z.string(),
+});
+export type OAuthError = z.infer<typeof OAuthErrorSchema>;
+
 export async function oauth(
   provider: "discord" | "github",
   ctx: GetServerSidePropsContext
 ): Promise<string> {
+  const error = errorFromOAuthError(ctx.query);
+  if (error) {
+    throw error;
+  }
+
   const payload = OAuthCallbackPayloadSchema.parse(ctx.query);
   const cookie = ctx?.req?.headers?.cookie;
   const path = `"/auth/${provider}/callback"`;
@@ -315,3 +326,13 @@ export async function oauth(
 
   return setCookie;
 }
+
+const errorFromOAuthError = (e: unknown): APIError | undefined => {
+  const parse = OAuthErrorSchema.safeParse(e);
+  if (parse.success) {
+    return {
+      error: parse.data.error,
+      message: parse.data.error_description,
+    };
+  }
+};

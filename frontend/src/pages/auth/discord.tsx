@@ -14,10 +14,6 @@ export const getServerSideProps = async (
   ctx: GetServerSidePropsContext
 ): Promise<GetServerSidePropsResult<Props>> => {
   try {
-    if ("error" in ctx.query) {
-      throw deriveError(ctx.query);
-    }
-
     const cookie = await oauth("discord", ctx);
 
     ctx.res.setHeader("set-cookie", cookie);
