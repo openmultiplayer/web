@@ -51,17 +51,21 @@ func Build() fx.Option {
 			}()
 		}),
 
-		fx.Provide(func(as *authentication.State) chi.Router {
+		fx.Provide(func(as *authentication.State, l *zap.Logger, cfg config.Config) chi.Router {
 			router := chi.NewRouter()
+
+			origins := []string{
+				"http://localhost:3000", // Local development, `npm run dev`
+				cfg.PublicWebAddress,    // Live public website
+			}
+
+			l.Debug("preparing router", zap.Strings("origins", origins))
 
 			router.Use(
 				web.WithLogger,
 				web.WithContentType,
 				cors.Handler(cors.Options{
-					AllowedOrigins: []string{
-						"http://localhost:3000", // Local development, `npm run dev`
-						"https://open.mp",       // Live public website
-					},
+					AllowedOrigins:   origins,
 					AllowedMethods:   []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
 					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "Content-Length", "X-CSRF-Token"},
 					ExposedHeaders:   []string{"Link", "Content-Length", "X-Ratelimit-Limit", "X-Ratelimit-Reset"},

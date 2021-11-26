@@ -15,6 +15,8 @@ type Config struct {
 	DatabaseURL           string        `envconfig:"DATABASE_URL"           required:"true"`
 	ListenAddr            string        `envconfig:"LISTEN_ADDR"            default:"0.0.0.0:8000"`
 	CookieDomain          string        `envconfig:"COOKIE_DOMAIN"          default:".open.mp"`
+	PublicWebAddress      string        `envconfig:"PUBLIC_WEB_ADDRESS"     default:"https://open.mp"`
+	PublicApiAddress      string        `envconfig:"PUBLIC_API_ADDRESS"     default:"https://api.open.mp"`
 	AmqpAddress           string        `envconfig:"AMQP_ADDRESS"           default:"amqp://rabbit:5672"`
 	HashKey               []byte        `envconfig:"HASH_KEY"               required:"true"`
 	BlockKey              []byte        `envconfig:"BLOCK_KEY"              required:"true"`

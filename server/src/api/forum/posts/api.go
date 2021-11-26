@@ -7,14 +7,16 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
+	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/resources/forum/post"
 	"github.com/openmultiplayer/web/server/src/resources/notification"
 	"github.com/openmultiplayer/web/server/src/web/ratelimiter"
 )
 
 type service struct {
-	as   *authentication.State
-	repo post.Repository
+	as            *authentication.State
+	repo          post.Repository
+	publicAddress string
 
 	// TODO: This should be event-driven so forum posts result in an event being
 	// emitted and a worker reacts to the event to create subscriptions.
@@ -27,8 +29,9 @@ func Build() fx.Option {
 			as *authentication.State,
 			repo post.Repository,
 			notifications notification.Repository,
+			cfg config.Config,
 		) *service {
-			return &service{as, repo, notifications}
+			return &service{as, repo, cfg.PublicWebAddress, notifications}
 		}),
 		fx.Invoke(func(
 			r chi.Router,

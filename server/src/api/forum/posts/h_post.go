@@ -40,7 +40,7 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 
 	var link string
 	if post.Slug != nil {
-		link = "https://open.mp/discussion/" + *post.Slug
+		link = s.publicAddress + "/discussion/" + *post.Slug
 	}
 
 	s.notifications.Notify(
