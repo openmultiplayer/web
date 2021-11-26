@@ -87,7 +87,7 @@ function handleError(raw: unknown, r: Response, path: string): never {
     throw new RateLimitError(r, path);
   }
 
-  throw deriveError(raw);
+  throw deriveError(raw, `${r.status}: ${r.statusText}`);
 }
 
 /**
@@ -231,14 +231,23 @@ const headersFromContext = (ctx: GetServerSidePropsContext): Headers => {
  * @param e Exception or error response object
  * @returns An APIError object either parsed from `e` or built from toString
  */
-export const deriveError = (e: unknown): APIError => {
+export const deriveError = (e: unknown, fallback?: string): APIError => {
   const parsed = APIErrorSchema.safeParse(e);
   if (parsed.success) {
     return parsed.data;
   } else if (e instanceof Error) {
-    return { message: e.toString() };
+    return { error: e.toString() };
+  } else if (e === undefined) {
+    return {
+      error: fallback ?? "Unknown error",
+      message: "deriveError was passed a value of `undefined`.",
+    };
   } else {
-    return { message: String(e) };
+    return {
+      error: `${String(e)} (${fallback})`,
+      message:
+        "deriveError was passed a value that was neither Error or APIError.",
+    };
   }
 };
 
@@ -313,7 +322,7 @@ export async function oauth(
   const data = await getData(response);
 
   if (!isSuccessStatus(response.status)) {
-    handleError(data, response, path);
+    throw deriveError(data, `${response.status}: ${response.statusText}`);
   }
 
   const setCookie = response.headers.get("set-cookie");
@@ -330,6 +339,7 @@ export async function oauth(
 const errorFromOAuthError = (e: unknown): APIError | undefined => {
   const parse = OAuthErrorSchema.safeParse(e);
   if (parse.success) {
+    console.error(parse.data);
     return {
       error: parse.data.error,
       message: parse.data.error_description,
