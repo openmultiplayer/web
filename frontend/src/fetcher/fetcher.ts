@@ -306,7 +306,7 @@ export async function oauth(
 
   const payload = OAuthCallbackPayloadSchema.parse(ctx.query);
   const cookie = ctx?.req?.headers?.cookie;
-  const path = `"/auth/${provider}/callback"`;
+  const path = `/auth/${provider}/callback`;
 
   const request = buildRequest(path, {
     method: "post",
