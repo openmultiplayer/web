@@ -1,6 +1,6 @@
 import { Box, Button, HStack, Input, Stack } from "@chakra-ui/react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { FC, useCallback, useState } from "react";
+import { FC, useCallback, useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import Editor from "rich-markdown-editor";
 import { api } from "src/fetcher/fetcher";
@@ -50,6 +50,7 @@ const PostEditor: FC<Props> = ({
   const [resetKey, setResetKey] = useState(Math.random());
   const [tags, setTags] = useState<string[]>([]);
   const [category, setCategory] = useState("General");
+  const editorInput = useRef<Editor>(null);
   const { register, handleSubmit } = useForm({
     // Only use the schema for creating new threads. Replies only contain a
     // body, no title, category or tags, so there's no point validating it.
@@ -98,6 +99,10 @@ const PostEditor: FC<Props> = ({
     [setCategory]
   );
 
+  const handleInputClick = () => {
+    editorInput.current?.focusAtStart();
+  };
+
   return (
     <>
       <form onSubmit={handleSubmit(_onSubmit)} className="flex flex-column">
@@ -116,9 +121,11 @@ const PostEditor: FC<Props> = ({
             px="1.6em"
             border="solid 1px var(--chakra-colors-blackAlpha-200)"
             minHeight="12em"
+            onClick={body ? () => {} : handleInputClick}
           >
             <Editor
               key={resetKey}
+              ref={editorInput}
               className="mv2"
               defaultValue={initialBody}
               onChange={onChange}
