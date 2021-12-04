@@ -62,7 +62,11 @@ public EndAntiSpawnKill(playerid)
 
 :::tip
 
-Timer ID variables should be initialized to -1 when they can to minimise the chance of accidentally killing timer ID 0 by mistake (or use timer ID 0 up at the start of OnGameModeInit). Timer intervals are not accurate (roughly 25% off). There are fixes available here and here. The function to be called must be public. That means it has to be forwarded.
+Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake.  `-1` is commonly mistaken to be the invalid ID - it isn't.
+
+Timer intervals are not accurate (roughly 25% off). There are fixes available.
+
+The function to be called must be public. That means it has to be forwarded.
 
 :::
 
