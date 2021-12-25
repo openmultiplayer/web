@@ -29,7 +29,7 @@ type Config struct {
 	DocsSourcesPath       string        `envconfig:"DOCS_SOURCES_PATH"      required:"false" default:"docs/"`
 	DocsIndexPath         string        `envconfig:"DOCS_INDEX_PATH"        required:"false" default:"docs.bleve"`
 	PackagesDB            string        `envconfig:"PACKAGES_DB"            required:"false" default:"data/packages.db"`
-	ServerScrapeInterval  time.Duration `envconfig:"SERVER_SCRAPE_INTERVAL" required:"false" default:"1m"`
+	ServerScrapeInterval  time.Duration `envconfig:"SERVER_SCRAPE_INTERVAL" required:"false" default:"1h"`
 	PackageSearchInterval time.Duration `envconfig:"PACKAGE_SEARCH_INTERVAL" required:"false" default:"24h"`
 	PackageScrapeInterval time.Duration `envconfig:"PACKAGE_SCRAPE_INTERVAL" required:"false" default:"24h"`
 }

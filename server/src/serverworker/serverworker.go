@@ -98,6 +98,8 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 				zap.L().Error("failed to upsert server",
 					zap.Error(err), zap.String("ip", s.IP))
 			}
+
+			time.Sleep(time.Second)
 		}
 
 		zap.L().Debug("finished updating servers",
