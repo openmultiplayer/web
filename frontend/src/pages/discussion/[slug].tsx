@@ -15,13 +15,19 @@ type Props = SSP<Post[]>;
 
 const Page: NextPage<Props> = (props) => {
   const {
-    query: { slug },
+    query: { slug, page },
   } = useRouter();
   if (!props.success) {
     return <ErrorBanner {...props.error} />;
   }
 
-  return <PostListView slug={slug as string} initialPosts={props.data} />;
+  return (
+    <PostListView
+      slug={slug as string}
+      initialPosts={props.data}
+      initialPage={parseInt(page as string)}
+    />
+  );
 };
 
 const serializePostList = async (posts: Post[]): Promise<PostWithMarkdown[]> =>

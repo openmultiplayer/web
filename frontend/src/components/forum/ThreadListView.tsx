@@ -1,5 +1,4 @@
 import { Stack } from "@chakra-ui/layout";
-import { isNull } from "lodash";
 import { useRouter } from "next/router";
 import { FC, useCallback, useState } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
@@ -11,7 +10,11 @@ import { Category, CategorySchema, Post } from "src/types/_generated_Forum";
 import { queryToParams } from "src/utils/query";
 import useSWR from "swr";
 import Measured from "../generic/Measured";
-import Pagination from "../generic/Pagination";
+import Pagination, {
+  offsetToPage,
+  offsetToPaginationIndex,
+  pageToOffset,
+} from "../generic/Pagination";
 
 export const PAGE_SIZE = 20;
 
@@ -34,6 +37,10 @@ export type APIQuery = {
 type BrowserQuery = {
   search: string;
   tags: string[];
+
+  /**
+   * Ranges from 1 to n inclusive, user-facing (browser address bar etc.)
+   */
   page: number;
 };
 
@@ -44,7 +51,7 @@ const getBrowserQuery = ({ search, tags, offset }: APIQuery) =>
   queryToParams({
     search: search ?? undefined,
     tags: tags ?? undefined,
-    page: offset ? offsetToPage(offset) : undefined,
+    page: offset ? offsetToPage(PAGE_SIZE)(offset) : undefined,
   } as BrowserQuery);
 
 const ThreadListView: FC<Props> = ({
@@ -65,7 +72,7 @@ const ThreadListView: FC<Props> = ({
     search: initialText,
     tags: initialTags,
     category: initialCategory,
-    offset: pageToOffset(initialPage),
+    offset: pageToOffset(PAGE_SIZE)(initialPage),
     max: PAGE_SIZE,
   });
 
@@ -82,7 +89,10 @@ const ThreadListView: FC<Props> = ({
 
   const onPage = useCallback(
     (page: number) => {
-      updateQueryParameters({ ...query, offset: pageToOffset(page) });
+      updateQueryParameters({
+        ...query,
+        offset: pageToOffset(PAGE_SIZE)(page),
+      });
     },
     [updateQueryParameters, query]
   );
@@ -148,19 +158,16 @@ const ThreadListView: FC<Props> = ({
         />
         <Pagination
           totalItems={totalItems}
-          initialPage={offsetToPage(query.offset)}
-          initialPageSize={PAGE_SIZE}
+          initialPaginationIndex={offsetToPaginationIndex(PAGE_SIZE)(
+            query.offset
+          )}
+          pageSize={PAGE_SIZE}
           onPage={onPage}
         />
       </Stack>
     </Measured>
   );
 };
-
-const pageToOffset = (page: number) => Math.max(0, page - 1) * PAGE_SIZE;
-
-const offsetToPage = (offset: number | null) =>
-  isNull(offset) ? 1 : Math.floor(offset / PAGE_SIZE);
 
 const getPath = (path: string): string => {
   const q = path.indexOf("?");
