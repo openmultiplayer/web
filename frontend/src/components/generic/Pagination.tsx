@@ -1,6 +1,7 @@
 import { Button, IconButton } from "@chakra-ui/button";
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
 import { ListItem, OrderedList, Text } from "@chakra-ui/layout";
+import { isNull } from "lodash";
 import { clamp, flow, map, reverse } from "lodash/fp";
 import range from "lodash/range";
 import { FC, useCallback, useState } from "react";
@@ -203,5 +204,20 @@ const generatePageList = (
 
   return [...left, cur, ...right];
 };
+
+export const pageToOffset =
+  (pageSize: number) =>
+  (page: number): number =>
+    Math.max(0, page - 1) * pageSize;
+
+export const offsetToPage =
+  (pageSize: number) =>
+  (offset: number | null): number =>
+    isNull(offset) ? 1 : 1 + Math.floor(offset / pageSize);
+
+export const offsetToPaginationIndex =
+  (pageSize: number) =>
+  (offset: number | null): number =>
+    isNull(offset) ? 0 : Math.floor(offset / pageSize);
 
 export default Pagination;
