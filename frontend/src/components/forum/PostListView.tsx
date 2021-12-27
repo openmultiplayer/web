@@ -121,6 +121,7 @@ const PostListView: FC<Props> = ({ slug, initialPosts, initialPage }) => {
   const id = data[0].id;
   const totalItems = data.length;
   const paged = data.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const pageIndex = page - 1;
 
   return (
     <Measured>
@@ -129,8 +130,8 @@ const PostListView: FC<Props> = ({ slug, initialPosts, initialPage }) => {
 
         <Pagination
           totalItems={totalItems}
-          initialPage={page}
-          initialPageSize={PAGE_SIZE}
+          initialPaginationIndex={pageIndex}
+          pageSize={PAGE_SIZE}
           onPage={onPage}
         />
 

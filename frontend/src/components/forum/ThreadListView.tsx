@@ -34,6 +34,10 @@ export type APIQuery = {
 type BrowserQuery = {
   search: string;
   tags: string[];
+
+  /**
+   * Ranges from 1 to n inclusive, user-facing (browser address bar etc.)
+   */
   page: number;
 };
 
@@ -148,8 +152,8 @@ const ThreadListView: FC<Props> = ({
         />
         <Pagination
           totalItems={totalItems}
-          initialPage={offsetToPage(query.offset)}
-          initialPageSize={PAGE_SIZE}
+          initialPaginationIndex={offsetToPaginationIndex(query.offset)}
+          pageSize={PAGE_SIZE}
           onPage={onPage}
         />
       </Stack>
@@ -160,7 +164,10 @@ const ThreadListView: FC<Props> = ({
 const pageToOffset = (page: number) => Math.max(0, page - 1) * PAGE_SIZE;
 
 const offsetToPage = (offset: number | null) =>
-  isNull(offset) ? 1 : Math.floor(offset / PAGE_SIZE);
+  isNull(offset) ? 1 : 1 + Math.floor(offset / PAGE_SIZE);
+
+const offsetToPaginationIndex = (offset: number | null) =>
+  isNull(offset) ? 0 : Math.floor(offset / PAGE_SIZE);
 
 const getPath = (path: string): string => {
   const q = path.indexOf("?");
