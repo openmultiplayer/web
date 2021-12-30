@@ -1,6 +1,7 @@
 import { Button, IconButton } from "@chakra-ui/button";
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
 import { ListItem, OrderedList, Text } from "@chakra-ui/layout";
+import { useBreakpointValue } from "@chakra-ui/react";
 import { isNull } from "lodash";
 import { clamp, flow, map, reverse } from "lodash/fp";
 import range from "lodash/range";
@@ -51,6 +52,7 @@ const Pagination: FC<Props> = ({
     initialPaginationIndex
   );
   const totalPages: PageNumber = Math.ceil(totalItems / pageSize);
+  const visiblePages = useBreakpointValue({ base: 5, md: 9 }, "base") ?? 5;
 
   const clampPage = clamp(0)(totalPages);
 
@@ -77,11 +79,11 @@ const Pagination: FC<Props> = ({
   const allPages = range(0, totalPages);
   const end = allPages.length;
   const pageIndices =
-    end <= 8
+    end <= visiblePages
       ? allPages
       : // If there are more than 10 pages, split up the list and only show the
         // first 4 and the last 4 page number in the pagination navigation list.
-        generatePageList(paginationIndex, end);
+        generatePageList(paginationIndex, end, visiblePages);
 
   const previousEnabled = initialPaginationIndex > 1;
   const nextEnabled = initialPaginationIndex < totalPages - 1;
@@ -104,7 +106,7 @@ const Pagination: FC<Props> = ({
       display="flex"
       listStyleType="none"
       marginLeft={0}
-      gridGap={4}
+      gridGap="0.5em"
       justifyContent="center"
     >
       <ListItem>
@@ -166,22 +168,24 @@ const PageButton: FC<PageButtonProps> = ({ index, current, onPage }) => {
  */
 const generatePageList = (
   cur: PaginationIndex,
-  end: PaginationIndex
+  end: PaginationIndex,
+  max = 9
 ): PaginationIndex[] => {
+  const halfMax = Math.floor(max / 2);
   // First, calculate the left-most index which is bounded by half the width of
   // the pagination strip (9 items, rounded down) this is 4 indices left of the
   // current with a minimum value of zero. This is needed to calculate the right
-  const _before = Math.max(0, cur - 4);
+  const _before = Math.max(0, cur - halfMax);
   // Now calculate the right-most index, which is...
   const after = Math.min(
     end - 1,
     // the current page index
     cur + // plus half the pagination strip item count (9) rounded down
-      4 +
+      halfMax +
       // then, with any unused slots on the left, because if the user is at page
       // 2 then there should be 1 item to the left (page 1) and 7 items on the
       // right, because first + 4 then + 3 because cur - _before = 1
-      (4 -
+      (halfMax -
         // subtract this from half the pagination width (9) rounded down
         (cur - _before))
     // and this gives us the number of items that should be on the right.
@@ -189,7 +193,7 @@ const generatePageList = (
   // Finally, do the same again for the left, but this time include the same
   // calculation as above so if the user is on page 17 out of 19, they don't
   // just see 14, 15, 16, 17 on the left, but all 9 page buttons.
-  const before = Math.max(0, cur - 4 - (4 + (cur - after)));
+  const before = Math.max(0, cur - halfMax - (halfMax + (cur - after)));
 
   // Now simply turn the page indices into an array and return it. The numbers
   // calculated above are offsets, so the code below just applies those offsets
