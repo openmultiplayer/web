@@ -44,6 +44,7 @@ export const useMutationAPI = <T, R = T>(
         })
         .catch((e) => {
           handler(e);
+          progress && nProgress.done();
           return undefined;
         });
     };

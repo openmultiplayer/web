@@ -29,7 +29,7 @@ func ParseBody(w http.ResponseWriter, r *http.Request, out interface{}) bool {
 	}
 	if _, err := govalidator.ValidateStruct(out); err != nil {
 		StatusBadRequest(w, WithSuggestion(err,
-			"Could not validate request data",
+			"Could not validate request",
 			"Please try again, if the issue persists contact the support team."))
 		return false
 	}

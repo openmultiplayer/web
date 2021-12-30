@@ -12,9 +12,13 @@ import {
 import { User } from "src/types/_generated_User";
 import { PostPayload } from "./PostEditor";
 
+// NOTE:
+// Some of these mutators return a simple boolean to indicate success so callers
+// can clean up inputs etc.
+
 const isPostEmpty = (data: PostPayload) => data?.body?.length === 0;
 
-type CreateThreadFn = (data: PostPayload) => void;
+type CreateThreadFn = (data: PostPayload) => Promise<boolean>;
 export const useCreateThread = (): CreateThreadFn => {
   const api = useMutationAPI<PostPayload, Post>(true);
   const router = useRouter();
@@ -30,6 +34,9 @@ export const useCreateThread = (): CreateThreadFn => {
 
       if (newPost) {
         router.push(newPost.slug ?? "");
+        return true;
+      } else {
+        return false;
       }
     },
     [api, router]
@@ -76,7 +83,7 @@ export const useDeleteThread = (): DeleteThreadFn => {
   );
 };
 
-type CreatePostFn = (data: PostPayload) => void;
+type CreatePostFn = (data: PostPayload) => Promise<boolean>;
 export const useCreatePost = (
   id: string,
   slug: string,
@@ -88,10 +95,11 @@ export const useCreatePost = (
   return useCallback(
     async (data: PostPayload) => {
       if (isPostEmpty(data)) {
-        return toast({ title: "Post has no content", status: "error" });
+        toast({ title: "Post has no content", status: "error" });
+        return false;
       }
 
-      await api("POST", `/forum/posts/${id}`, {
+      return !!api("POST", `/forum/posts/${id}`, {
         mutate: `/forum/posts/${slug}`,
         toast: {
           title: "Reply sent!",
@@ -120,13 +128,13 @@ export const useDeletePost = (threadSlug: string): DeletePostFn => {
   );
 };
 
-type EditFn = (data: PostPayload) => void;
+type EditFn = (data: PostPayload) => Promise<boolean>;
 export const useEditPost = (slug?: string): EditFn => {
   const api = useMutationAPI<PostPayload>();
 
   return useCallback(
     async (data: PostPayload) => {
-      api("PATCH", `/forum/posts/${data.id}`, {
+      return !!api("PATCH", `/forum/posts/${data.id}`, {
         mutate: `/forum/posts/${slug}`,
         toast: {
           title: "Post edited!",

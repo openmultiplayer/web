@@ -26,7 +26,7 @@ type Props = {
   initialPostID?: string;
   initialTitle?: string;
   initialBody?: string;
-  onSubmit: (post: PostPayload) => void;
+  onSubmit: (post: PostPayload) => Promise<boolean>;
   disableThreadCreationOptions?: boolean;
   postButtonText?: string;
   placeholder?: string;
@@ -60,16 +60,18 @@ const PostEditor: FC<Props> = ({
   });
 
   const _onSubmit = useCallback(
-    (data: PostPayload) => {
-      onSubmit({
+    async (data: PostPayload) => {
+      const shouldReset = await onSubmit({
         id: initialPostID,
         title: data.title ?? initialTitle,
         body,
         tags,
         category,
       });
-      // Trigger the editor to re-render and clear its content.
-      setResetKey(Math.random());
+      if (shouldReset) {
+        // Trigger the editor to re-render and clear its content.
+        setResetKey(Math.random());
+      }
     },
     [initialPostID, initialTitle, onSubmit, body, tags, category]
   );
@@ -121,7 +123,7 @@ const PostEditor: FC<Props> = ({
             px="1.6em"
             border="solid 1px var(--chakra-colors-blackAlpha-200)"
             minHeight="12em"
-            onClick={body ? () => {} : handleInputClick}
+            onClick={body ? () => ({}) : handleInputClick}
           >
             <Editor
               key={resetKey}

@@ -151,7 +151,7 @@ const PostHeadStrip: FC<PostHeadStripProps> = ({
 type EditingProps = {
   post: Post;
   title?: string;
-  onSubmitEdit: (p: PostPayload) => void;
+  onSubmitEdit: (p: PostPayload) => Promise<boolean>;
 };
 const Editing: FC<EditingProps> = ({ post, title, onSubmitEdit }) => {
   return (
@@ -191,10 +191,14 @@ const PostListItem: FC<Props> = ({
 
   const editPost = useEditPost(thread.slug ?? "");
   const onSubmitEdit = useCallback(
-    (p: PostPayload) => {
-      editPost(p);
-      setEditing(false);
-      p.body && setCSRMarkdown(p.body);
+    async (p: PostPayload) => {
+      if (await editPost(p)) {
+        setEditing(false);
+        p.body && setCSRMarkdown(p.body);
+        return true;
+      } else {
+        return false;
+      }
     },
     [editPost]
   );
