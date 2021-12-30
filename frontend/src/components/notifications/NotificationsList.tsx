@@ -1,9 +1,11 @@
+import NextLink from "next/link";
 import { DeleteIcon, ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
   CloseButton,
   Flex,
+  Link,
   Heading,
   Stack,
   Text,
@@ -15,6 +17,7 @@ import { niceDate } from "src/utils/dates";
 import { CardList } from "../generic/CardList";
 import ClampedParagraph from "../generic/ClampedParagraph";
 import { useNotification } from "./hooks";
+import { LinkBox, LinkOverlay } from "@chakra-ui/react";
 
 type Props = {
   notifications: Notification[];
@@ -38,14 +41,14 @@ const NotificationsList: FC<Props> = ({ notifications }) => {
 
   const list = map((ntf: Notification) => (
     <Box
+      as="article"
       key={ntf.id}
       display="flex"
       flexDirection="column"
-      gridGap="0.5em"
       color={ntf.read ? "blackAlpha.600" : "initial"}
     >
       <Flex justifyContent="space-between" gridGap="0.5em">
-        <Stack as="header" flexDirection="column" overflow="hidden">
+        <Stack as="header" overflow="hidden">
           <Heading
             size="sm"
             m="0"
@@ -62,42 +65,48 @@ const NotificationsList: FC<Props> = ({ notifications }) => {
         </Flex>
       </Flex>
 
-      <Flex>
-        <ClampedParagraph lines={2}>{ntf.description}</ClampedParagraph>
-      </Flex>
-
-      <Flex as="footer" justifyContent="space-between">
-        <Text as="time" color="blackAlpha.600" whiteSpace="nowrap">
-          {niceDate(ntf.createdAt)}
-        </Text>
-
-        <Flex gridGap="0.5em">
-          <Button
-            size="xs"
-            justifyContent="end"
-            rightIcon={<DeleteIcon />}
-            onClick={() => onUnsub(ntf.subscription?.id)}
-            variant="ghost"
-            title="Unsubscribe from this item and clear all related notifications"
-          >
-            Unsubscribe
-          </Button>
-          <Button
-            size="xs"
-            justifyContent="end"
-            w="min-content"
-            rightIcon={ntf.read ? <ViewOffIcon /> : <ViewIcon />}
-            onClick={() => onSetRead(ntf.id, !ntf.read)}
-            title={
-              ntf.read
-                ? "Mark notification as unread"
-                : "Mark notification as read"
-            }
-          >
-            {ntf.read ? "Unread" : "Read"}
-          </Button>
+      <LinkBox display="flex" gridGap="0.5em" flexDirection="column">
+        <Flex>
+          <NextLink href={ntf.link} passHref>
+            <LinkOverlay textDecor="none">
+              <ClampedParagraph lines={2}>{ntf.description}</ClampedParagraph>
+            </LinkOverlay>
+          </NextLink>
         </Flex>
-      </Flex>
+
+        <Flex as="footer" justifyContent="space-between">
+          <Text as="time" color="blackAlpha.600" whiteSpace="nowrap">
+            {niceDate(ntf.createdAt)}
+          </Text>
+
+          <Flex gridGap="0.5em">
+            <Button
+              size="xs"
+              justifyContent="end"
+              rightIcon={<DeleteIcon />}
+              onClick={() => onUnsub(ntf.subscription?.id)}
+              variant="ghost"
+              title="Unsubscribe from this item and clear all related notifications"
+            >
+              Unsubscribe
+            </Button>
+            <Button
+              size="xs"
+              justifyContent="end"
+              w="min-content"
+              rightIcon={ntf.read ? <ViewOffIcon /> : <ViewIcon />}
+              onClick={() => onSetRead(ntf.id, !ntf.read)}
+              title={
+                ntf.read
+                  ? "Mark notification as unread"
+                  : "Mark notification as read"
+              }
+            >
+              {ntf.read ? "Unread" : "Read"}
+            </Button>
+          </Flex>
+        </Flex>
+      </LinkBox>
     </Box>
   ));
 
