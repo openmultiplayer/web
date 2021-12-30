@@ -35,6 +35,8 @@ import {
   Text,
   useDisclosure,
   useToast,
+  Stack,
+  HStack,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FC, useCallback, useState } from "react";
@@ -326,7 +328,8 @@ export const CategoryListItem: FC<{
       borderColor="blackAlpha.100"
       padding="1em"
     >
-      <Flex
+      <Stack
+        direction={{ base: "column", md: "row" }}
         as="article"
         borderLeftColor={category.colour}
         borderLeftStyle="solid"
@@ -337,13 +340,20 @@ export const CategoryListItem: FC<{
         color={category.admin ? "blackAlpha.400" : ""}
       >
         <Box flexBasis={0} flexShrink={1} flexGrow={10} minWidth={0}>
-          <header>
+          <HStack justifyContent="space-between">
             <Heading size="m" margin="0">
               <NextLink passHref href={`/discussion/category/${category.name}`}>
                 <Link>{category.name}</Link>
               </NextLink>
             </Heading>
-          </header>
+
+            {admin && (
+              <Flex alignItems="center" display={{ base: "flex", md: "none" }}>
+                <CategoryListItemMenu category={category} onMove={onMove} />
+                <DragHandleIcon className="drag-handle" cursor="grab" />
+              </Flex>
+            )}
+          </HStack>
           <main>
             <ClampedParagraph lines={5}>
               {category.description}
@@ -390,7 +400,7 @@ export const CategoryListItem: FC<{
             </Flex>
 
             {admin && (
-              <Flex alignItems="center">
+              <Flex alignItems="center" display={{ base: "none", md: "flex" }}>
                 <CategoryListItemMenu category={category} onMove={onMove} />
                 <DragHandleIcon className="drag-handle" cursor="grab" />
               </Flex>
@@ -410,7 +420,7 @@ export const CategoryListItem: FC<{
             ))}
           </OrderedList>
         </Box>
-      </Flex>
+      </Stack>
     </ListItem>
   );
 };
