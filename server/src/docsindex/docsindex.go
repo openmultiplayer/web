@@ -12,6 +12,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/bbalet/stopwords"
 	"github.com/blevesearch/bleve/v2"
+	"github.com/blevesearch/bleve/v2/analysis/analyzer/keyword"
 	"github.com/blevesearch/bleve/v2/search/query"
 	"github.com/iancoleman/strcase"
 	"github.com/pkg/errors"
@@ -63,7 +64,7 @@ func New(l *zap.Logger, cfg config.Config) (*Index, error) {
 		im := bleve.NewIndexMapping()
 		docsmapping := bleve.NewDocumentMapping()
 
-		// Field mappings for title and description
+		// Field mappings for title, description and tags
 		titleFieldMapping := bleve.NewTextFieldMapping()
 		titleFieldMapping.Analyzer = "en"
 		docsmapping.AddFieldMappingsAt("title", titleFieldMapping)
@@ -71,6 +72,10 @@ func New(l *zap.Logger, cfg config.Config) (*Index, error) {
 		descFieldMapping := bleve.NewTextFieldMapping()
 		descFieldMapping.Analyzer = "en"
 		docsmapping.AddFieldMappingsAt("description", descFieldMapping)
+
+		tagsFieldMapping := bleve.NewTextFieldMapping()
+		tagsFieldMapping.Analyzer = keyword.Name
+		docsmapping.AddFieldMappingsAt("tags", tagsFieldMapping)
 
 		im.AddDocumentMapping("Document", docsmapping)
 
