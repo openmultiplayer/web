@@ -11,7 +11,7 @@ import (
 type listParams struct {
 	Tags     []string  `qstring:"tags"`
 	Category string    `qstring:"category"`
-	Query    string    `qstring:"query"`
+	Search   string    `qstring:"search"`
 	Before   time.Time `qstring:"before"`
 	Sort     string    `qstring:"sort"`
 	Offset   int       `qstring:"offset"`
@@ -40,7 +40,7 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 	// Admins get to see deleted posts
 	isAdmin := authentication.IsRequestAdmin(r)
 
-	posts, err := s.threads.GetThreads(r.Context(), p.Tags, p.Category, p.Query, p.Before, p.Sort, p.Offset, p.Max, p.Posts, isAdmin, isAdmin)
+	posts, err := s.threads.GetThreads(r.Context(), p.Tags, p.Category, p.Search, p.Before, p.Sort, p.Offset, p.Max, p.Posts, isAdmin, isAdmin)
 	if err != nil {
 		web.StatusInternalServerError(w, err)
 		return
