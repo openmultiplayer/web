@@ -6,17 +6,16 @@ import {
   Heading,
   Link,
   ListItem,
+  Stack,
   UnorderedList,
 } from "@chakra-ui/layout";
 import NextLink from "next/link";
-import { FC } from "react";
+import React, { FC } from "react";
 import { WEB_ADDRESS } from "src/config";
 import { Category, Post, PostMeta } from "src/types/_generated_Forum";
 import { niceDate } from "src/utils/dates";
 import MemberLink from "../member/MemberLink";
 import LinkedTag from "./LinkedTag";
-
-import React from "react";
 
 type PostTitleProps = {
   title: string;
@@ -111,8 +110,17 @@ export const PostMetadata: FC<PostMetadataProps> = ({
   const posts = post.posts ?? 0;
 
   return (
-    <Flex gridGap="1em" justifyContent="space-between">
-      <Flex gridGap="0.4em" alignItems="center">
+    <Stack
+      direction={{ base: "column", md: "row" }}
+      spacing="1em"
+      justifyContent="space-between"
+    >
+      <Flex
+        gridGap="0.4em"
+        alignItems="center"
+        flexWrap="wrap"
+        overflowX="hidden"
+      >
         <MemberLink user={post.author} />
 
         <span className="posted">
@@ -162,7 +170,7 @@ export const PostMetadata: FC<PostMetadataProps> = ({
           white-space: nowrap;
         }
       `}</style>
-    </Flex>
+    </Stack>
   );
 };
 
