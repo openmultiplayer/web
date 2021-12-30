@@ -10,23 +10,28 @@ import { PostWithMarkdown } from "src/components/forum/PostListItem";
 import PostListView from "src/components/forum/PostListView";
 import { apiSSP, mapSSP, SSP } from "src/fetcher/fetcher";
 import { Post, PostSchema } from "src/types/_generated_Forum";
+import { z } from "zod";
 
 type Props = SSP<Post[]>;
 
+const QuerySchema = z.object({
+  page: z.number().default(1),
+});
+const ParamsSchema = z.object({
+  slug: z.string(),
+});
+
 const Page: NextPage<Props> = (props) => {
-  const {
-    query: { slug, page },
-  } = useRouter();
+  const router = useRouter();
+  const { page } = QuerySchema.parse(router.query);
+  const { slug } = ParamsSchema.parse(router.query);
+
   if (!props.success) {
     return <ErrorBanner {...props.error} />;
   }
 
   return (
-    <PostListView
-      slug={slug as string}
-      initialPosts={props.data}
-      initialPage={parseInt(page as string)}
-    />
+    <PostListView slug={slug} initialPosts={props.data} initialPage={page} />
   );
 };
 
@@ -43,7 +48,8 @@ const serializePostList = async (posts: Post[]): Promise<PostWithMarkdown[]> =>
 export async function getServerSideProps(
   ctx: GetServerSidePropsContext<{ slug: string[] }>
 ): Promise<GetServerSidePropsResult<Props>> {
-  const slug = ctx?.params?.slug?.toString();
+  const params = ParamsSchema.parse(ctx.params);
+  const { slug } = params;
   if (!slug) {
     return { redirect: { destination: "/discussion", permanent: false } };
   }
