@@ -26,6 +26,7 @@ type Subscription struct {
 	ID         string           `json:"id"`
 	RefersType NotificationType `json:"refersType"`
 	RefersTo   string           `json:"refersTo"`
+	UserID     string           `json:"userId"`
 	CreatedAt  time.Time        `json:"createdAt"`
 	UpdatedAt  time.Time        `json:"updatedAt"`
 	DeletedAt  *time.Time       `json:"deletedAt"`
@@ -36,6 +37,7 @@ func SubFromModel(m *db.SubscriptionModel) *Subscription {
 		ID:         m.ID,
 		RefersType: NotificationType(m.RefersType),
 		RefersTo:   m.RefersTo,
+		UserID:     m.UserID,
 		CreatedAt:  m.CreatedAt,
 		UpdatedAt:  m.UpdatedAt,
 		DeletedAt:  m.InnerSubscription.DeletedAt,

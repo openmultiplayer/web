@@ -129,7 +129,7 @@ func (d *DB) GetNotifications(ctx context.Context, userID string, read bool, aft
 	return result, nil
 }
 
-func (d *DB) Notify(ctx context.Context, refersType NotificationType, refersTo string, title, desc, link string) (int, error) {
+func (d *DB) Notify(ctx context.Context, refersType NotificationType, refersTo, createdByUser, title, desc, link string) (int, error) {
 	// NOTE: This is extremely inefficient for large forums!
 	// TODO: Figure out a better way to do this. There are two options:
 	//       1. A message queue, just to defer the DB ops. This would
@@ -144,6 +144,10 @@ func (d *DB) Notify(ctx context.Context, refersType NotificationType, refersTo s
 	}
 
 	for _, sub := range subs {
+		if sub.UserID == createdByUser {
+			continue
+		}
+
 		_, err := d.db.Notification.
 			CreateOne(
 				db.Notification.Title.Set(title),
