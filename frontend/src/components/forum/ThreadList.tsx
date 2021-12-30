@@ -30,7 +30,7 @@ const ListHeader: FC<HeaderProps> = ({
   onSearch,
 }) => {
   return (
-    <Flex direction="row" gridGap="0.5em">
+    <Flex direction={{ base: "column", md: "row" }} gridGap="0.5em">
       <Box className="categories">
         <CategorySelect category={category} onSelect={onSelectCategory} />
       </Box>
@@ -43,7 +43,7 @@ const ListHeader: FC<HeaderProps> = ({
         />
       </Box>
 
-      <Box className="new">
+      <Box className="new" alignSelf="end">
         <NewThreadButton />
       </Box>
     </Flex>
