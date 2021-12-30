@@ -71,7 +71,7 @@ export const TagButton: FC<Props & { href?: string }> = forwardRef(
             grid-row: 1/2;
             grid-column: 1/2;
             height: min-content;
-            padding: 0em 0em 0em 0.5em;
+            padding: 0em 0.75em 0em 0.5em;
 
             border-top-right-radius: 0em;
             border-bottom-right-radius: 0em;
