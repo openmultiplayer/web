@@ -12,6 +12,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/bbalet/stopwords"
 	"github.com/blevesearch/bleve/v2"
+	"github.com/blevesearch/bleve/v2/search/query"
 	"github.com/iancoleman/strcase"
 	"github.com/pkg/errors"
 	"github.com/russross/blackfriday"
@@ -87,8 +88,36 @@ func (i *Index) Build() error {
 	return i.buildIndex(i.path)
 }
 
-func (i *Index) Search(query string) (*SearchResults, error) {
-	req := bleve.NewSearchRequest(bleve.NewQueryStringQuery(query))
+func (i *Index) Search(querystring string) (*SearchResults, error) {
+	parts := strings.Split(strcase.ToDelimited(querystring, ' '), " ")
+
+	// Tag query splits the query string by PascalCase or camel_case and uses
+	// the component parts as tags. This means you can search
+	// `TextDrawShowForPlayer` and the underlying query searches for:
+	// ["text", "draw", "show", "for", "player"]. When this is combined with
+	// other query types, it increases the chances of getting relevant results.
+	tagquery := []query.Query{
+		bleve.NewFuzzyQuery(querystring),
+	}
+	for _, p := range parts {
+		fq := bleve.NewFuzzyQuery(p)
+		fq.SetField("tags")
+		tagquery = append(tagquery, fq)
+	}
+
+	// For matching queries like "TextDrawHi..." in title
+	pq := bleve.NewPrefixQuery(querystring)
+	pq.SetField("title")
+
+	req := bleve.NewSearchRequest(
+		bleve.NewDisjunctionQuery(
+			bleve.NewQueryStringQuery(querystring),
+			bleve.NewPhraseQuery(parts, "tags"),
+			bleve.NewDisjunctionQuery(tagquery...),
+			pq,
+		),
+	)
+
 	req.Highlight = bleve.NewHighlight()
 	req.Fields = []string{"title", "description", "tags"}
 	r, err := i.db.Search(req)
