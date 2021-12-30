@@ -37,6 +37,7 @@ import {
   useToast,
   Stack,
   HStack,
+  VStack,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FC, useCallback, useState } from "react";
@@ -114,48 +115,58 @@ const DeleteMenuItem: FC<{ category: Category }> = ({ category }) => {
   );
 };
 
-const RenameMenuItem: FC<{ category: Category }> = ({ category }) => {
+const EditMenuItem: FC<{ category: Category }> = ({ category }) => {
   const toast = useToast();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [name, setName] = useState(category.name);
+  const [description, setDesc] = useState(category.description);
 
   const update = useUpdateCategory();
 
-  const onChange = useCallback((e) => setName(e.target.value), [setName]);
-  const onRename = useCallback(() => {
+  const onChangeName = useCallback((e) => setName(e.target.value), [setName]);
+  const onChangeDesc = useCallback((e) => setDesc(e.target.value), [setDesc]);
+  const onSubmit = useCallback(() => {
     if (name.length === 0) {
       toast({
         status: "error",
         title: `Please enter a new name for category ${category.name}`,
       });
     } else {
-      update({ ...category, name });
+      update({ ...category, name, description });
       onClose();
     }
-  }, [toast, update, category, name, onClose]);
+  }, [toast, update, category, name, description, onClose]);
 
   return (
     <>
       <MenuItem icon={<EditIcon />} onClick={onOpen}>
-        Rename
+        Edit
       </MenuItem>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Rename Category</ModalHeader>
+          <ModalHeader>Edit Category</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text>Enter a new name for category {category.name}:</Text>
-            <Input
-              placeholder="Category name"
-              value={name}
-              onChange={onChange}
-            />
+            <VStack>
+              <Input
+                title="Category name"
+                placeholder="Category name"
+                value={name}
+                onChange={onChangeName}
+              />
+              <Input
+                title="Category description"
+                placeholder="Category description"
+                value={description}
+                onChange={onChangeDesc}
+              />
+            </VStack>
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="red" mr={3} onClick={onRename}>
+            <Button colorScheme="red" mr={3} onClick={onSubmit}>
               Submit
             </Button>
             <Button variant="ghost" onClick={onClose}>
@@ -296,7 +307,7 @@ export const CategoryListItemMenu: FC<CategoryListItemMenuProps> = ({
         ></MenuButton>
         <MenuList>
           <DeleteMenuItem category={category} />
-          <RenameMenuItem category={category} />
+          <EditMenuItem category={category} />
           <ColourMenuItem category={category} />
           <HiddenMenuItem category={category} />
 
