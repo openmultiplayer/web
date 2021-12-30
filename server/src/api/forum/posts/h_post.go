@@ -47,6 +47,7 @@ func (s *service) post(w http.ResponseWriter, r *http.Request) {
 		r.Context(),
 		notification.NotificationTypeForumPostResponse,
 		id,
+		info.Cookie.UserID,
 		"Reply",
 		fmt.Sprintf("%s: %s", post.Author.Name, post.Short),
 		link)

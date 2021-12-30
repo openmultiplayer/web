@@ -13,7 +13,7 @@ type Repository interface {
 	GetSubscriptionsForItem(ctx context.Context, refersType NotificationType, refersTo string) ([]Subscription, error)
 	GetNotifications(ctx context.Context, userID string, read bool, after time.Time) ([]Notification, error)
 
-	Notify(ctx context.Context, refersType NotificationType, refersTo string, title, desc, link string) (int, error)
+	Notify(ctx context.Context, refersType NotificationType, refersTo string, createdByUser string, title, desc, link string) (int, error)
 	SetReadState(ctx context.Context, userID string, notificationID string, read bool) (*Notification, error)
 	Delete(ctx context.Context, userID, notificationID string) (*Notification, error)
 }
