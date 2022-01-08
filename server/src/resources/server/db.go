@@ -140,7 +140,7 @@ func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]str
 
 func (s *DB) GetAll(ctx context.Context) ([]All, error) {
 	result, err := s.client.Server.
-		FindMany(db.Server.Active.Equals(true)).
+		FindMany(db.Server.Active.Equals(true), db.Server.DeletedAt.IsNull()).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderAsc)).
 		With(db.Server.Ru.Fetch()).
 		Exec(ctx)
@@ -153,6 +153,7 @@ func (s *DB) GetAll(ctx context.Context) ([]All, error) {
 func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, error) {
 	result, err := s.client.Server.
 		FindUnique(db.Server.IP.Equals(ip)).
+		With(db.Server.Ru.Fetch()).
 		Update(db.Server.DeletedAt.SetOptional(at)).
 		Exec(ctx)
 	if err != nil {
