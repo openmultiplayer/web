@@ -27,6 +27,7 @@ func Build() fx.Option {
 			return &service{storer, queryer, verifier}
 		}),
 		fx.Invoke(func(
+			as *authentication.State,
 			r chi.Router,
 			s *service,
 		) {
@@ -55,6 +56,9 @@ func Build() fx.Option {
 			rtr.
 				With(authentication.MustBeAuthenticated).
 				Get("/{address}/vertify", s.vertify)
+			rtr.
+				With(authentication.MustBeAuthenticated, as.MustBeAdmin).
+				Patch("/{address}/deleted", s.deleted)
 		}),
 	)
 }
