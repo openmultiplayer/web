@@ -149,3 +149,14 @@ func (s *DB) GetAll(ctx context.Context) ([]All, error) {
 	}
 	return dbToAPISlice(result), err
 }
+
+func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, error) {
+	result, err := s.client.Server.
+		FindUnique(db.Server.IP.Equals(ip)).
+		Update(db.Server.DeletedAt.SetOptional(at)).
+		Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
+	return dbToAPI(*result), err
+}

@@ -13,4 +13,5 @@ type Repository interface {
 	GetEssential(context.Context, string) (*Essential, error)
 	GetServersToQuery(context.Context, time.Duration) ([]string, error)
 	GetAll(context.Context) ([]All, error)
+	SetDeleted(context.Context, string, *time.Time) (*All, error)
 }
