@@ -10,6 +10,7 @@ import {
   Heading,
   HStack,
   Input,
+  Link,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -27,12 +28,14 @@ import Fuse from "fuse.js";
 import { filter, flow, map, reverse, sortBy, sum } from "lodash/fp";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { NextSeo } from "next-seo";
-import Link from "next/link";
+import NextLink from "next/link";
 import NProgress from "nprogress";
-import { FC, FormEvent, useState } from "react";
+import { FC, FormEvent, useCallback, useState } from "react";
 import { toast } from "react-nextjs-toast";
+import { useIsAdmin } from "src/auth/hooks";
 import ErrorBanner from "src/components/ErrorBanner";
 import { CardList } from "src/components/generic/CardList";
+import { useDeleteServer } from "src/components/listing/hooks";
 import LoadingBanner from "src/components/LoadingBanner";
 import { API_ADDRESS } from "src/config";
 import { All, Essential } from "src/types/_generated_Server";
@@ -85,18 +88,27 @@ const CopyBadge: FC<CopyBadgeProps> = ({ text }) => {
 
 type RowProps = { server: Essential };
 const Row: FC<RowProps & ChakraProps> = ({ server, sx }) => {
+  const deleteServer = useDeleteServer();
+  const onDelete = useCallback(
+    () => deleteServer(server.ip),
+    [deleteServer, server]
+  );
+  const admin = useIsAdmin();
+
   return (
-    <Box sx={{ ...sx, borderColor: "#8477B7" }}>
+    <Box sx={sx}>
       <Box>
-        <Link href={"/servers/" + server.ip}>
-          <Heading
-            fontSize={"xl"}
-            style={{ marginTop: "0" }}
-            _hover={{ textDecor: "underline", cursor: "pointer" }}
-          >
-            {server.hn}
-          </Heading>
-        </Link>
+        <NextLink href={"/servers/" + server.ip} passHref>
+          <Link>
+            <Heading
+              fontSize={"xl"}
+              style={{ marginTop: "0" }}
+              _hover={{ textDecor: "underline", cursor: "pointer" }}
+            >
+              {server.hn}
+            </Heading>
+          </Link>
+        </NextLink>
 
         <Flex
           justifyContent="space-between"
@@ -109,17 +121,27 @@ const Row: FC<RowProps & ChakraProps> = ({ server, sx }) => {
             {/* <Text style={{ marginTop: "0" }}>{"website"}</Text> */}
             <CopyBadge text={server.ip} />
           </VStack>
-          <Flex
-            flexDirection="row"
-            alignItems="center"
-            gridGap=".5em"
-            flexWrap="wrap"
-          >
-            <Text fontWeight={"bold"} fontSize="2xl" style={{ marginTop: "0" }}>
-              {server.pc}/{server.pm}
-            </Text>
-            <Text style={{ marginTop: "0" }}>players</Text>
-          </Flex>
+          <VStack align="end">
+            <Flex
+              flexDirection="row"
+              alignItems="center"
+              gridGap=".5em"
+              flexWrap="wrap"
+            >
+              <Text
+                fontWeight={"bold"}
+                fontSize="2xl"
+                style={{ marginTop: "0" }}
+              >
+                {server.pc}/{server.pm}
+              </Text>
+              <Text style={{ marginTop: "0" }}>players</Text>
+            </Flex>
+
+            <Box display={admin ? "block" : "none"}>
+              <Button onClick={onDelete}>Delete</Button>
+            </Box>
+          </VStack>
         </Flex>
       </Box>
     </Box>

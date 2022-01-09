@@ -82,7 +82,8 @@ model Server {
   userId String?
 
   active    Boolean
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
 }
 
 model Rule {
