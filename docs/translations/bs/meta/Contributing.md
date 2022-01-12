@@ -11,7 +11,7 @@ Ako želite pomoći u održavanju određenog jezika, otvorite _pull request_(PR)
 
 Na svakoj stranici nalazi se dugme koje vas dovodi na GitHub stranicu za uređivanje:
 
-![Uredi ovu stranicu](/images/contributing/edit-this-page.png)
+![Uredi ovu stranicu](../../../../frontend/public/images/contributing/edit-this-page.png)
 
 Naprimjer, Ukoliko kliknete ovo dugme na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) odvesti će vas na [ovu stranicu](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) koji vam nudi uređivač teksta kako biste mogli napraviti promjene u fajlu (Pod pretpostavkom da ste prijavljeni na vaš GitHub račun).
 
@@ -25,7 +25,7 @@ Dodavanje novog sadržaja je malo više komplicirano. Možete to uraditi na dva 
 
 Kada pregledavate direktorijum na GitHub-u, Tu se nalazi "Dodaj fajl" (Add File) dugme u gornjem desnom ćošku od liste fajlova:
 
-![Dodaj fajl dugme](/images/contributing/add-new-file.png)
+![Dodaj fajl dugme](../../../../frontend/public/images/contributing/add-new-file.png)
 
 Možete prenijeti MarkDown fajl koji ste već prethodno napisali ili ga napisati u GitHub tekst uređivaču.
 
@@ -43,7 +43,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 Otvorite ga u vašem omiljenom text editoru. Preporučujem Visual Studio Code jer ima odličnih alata za uređivanje i formatiranje Markdown fajlova. Kao što možete da vidite, ja pišem ovo koristeći Visual Studio Code!
 
-![Visual Studio Code markdown pregled](/images/contributing/vscode.png)
+![Visual Studio Code markdown pregled](../../../../frontend/public/images/contributing/vscode.png)
 
 Predlažem dva produžetka (ekstenzije) za bolje iskustvo:
 
@@ -168,21 +168,23 @@ Većina sadržaja je premještena, ali ako pronađete stranicu koja fali, ovdje 
 
    (Firefox)
 
-   ![image](/images/contributing/04f024579f8d.png)
+   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](/images/contributing/f62bb8112543.png)
+   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
 
 2. Zadržite pokazivač u gornjem lijevom uglu glavne wiki stranice, na lijevoj margini ili uglu, dok ne vidite `#content`
 
-   ![image](/images/contributing/65761ffbc429.png)
+   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
 
    Ili tražite `<div id=content>`
 
-   ![image](/images/contributing/77befe2749fd.png)
+   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
 
-3. Kopirajte unutrašnji HTML tog elementa ![image](/images/contributing/8c7c75cfabad.png)
+3. Kopirajte unutrašnji HTML tog elementa
+
+    ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
 
    Sada imate _samo_ HTML kod pravog _sadržaja_ stranice, stvari koje nas zanimaju, i možete ih konvertovati u Markdown.
 
@@ -192,7 +194,7 @@ Za konvertovanje osnovnog HTML-a (bez tabela) u Markdown koristite:
 
 https://domchristie.github.io/turndown/
 
-![image](/images/contributing/77f4ea555bbb.png)
+![image](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
 
 ^^ Primijetite sada da je potpuno zeznuo tablicu...
 
@@ -204,7 +206,7 @@ https://jmalarcon.github.io/markdowntables/
 
 I kopirajte samo `<table>` elemente u:
 
-![image](/images/contributing/57f171ae0da7.png)
+![image](../../../../frontend/public/images/contributing/57f171ae0da7.png)
 
 ### Čišćenje
 
