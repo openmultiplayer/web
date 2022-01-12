@@ -11,7 +11,7 @@ description: 如何贡献SA-MP维基和open.mp文档。
 
 在每个页面上，有一个按钮，带你到 GitHub 页面编辑:
 
-![编辑每个维基页面上的这个页面链接](/images/contributing/edit-this-page.png)
+![编辑每个维基页面上的这个页面链接](../../../../frontend/public/images/contributing/edit-this-page.png)
 
 例如, 点击 [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) 跳转到 [这个页面](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) 它提供一个文本编辑器来修改文件 (假设你已经登录了 Github)。
 
@@ -25,7 +25,7 @@ description: 如何贡献SA-MP维基和open.mp文档。
 
 在 GitHub 上浏览目录时，文件列表的右上角有一个“添加文件”按钮:
 
-![添加文件按钮](/images/contributing/add-new-file.png)
+![添加文件按钮](../../../../frontend/public/images/contributing/add-new-file.png)
 
 你可以上传一个已经写好的 Markdown 文件，也可以直接写入到 GitHub 的文本编辑器中。
 
@@ -43,7 +43,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 在您最喜欢的编辑器中打开它。我推荐 Visual Studio Code，因为它有一些很棒的工具来编辑和格式化 Markdown 文件。如你所见，我是用 Visual Studio 写代码的!
 
-![Visual Studio Code markdown 预览](/images/contributing/vscode.png)
+![Visual Studio Code markdown 预览](../../../../frontend/public/images/contributing/vscode.png)
 
 我推荐两个扩展来让你的体验更好:
 
@@ -168,23 +168,23 @@ description: 这是一个关于汉堡和某些东西的页面，耶!
 
    (Firefox)
 
-   ![image](/images/contributing/04f024579f8d.png)
+   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](/images/contributing/f62bb8112543.png)
+   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
 
 2. 将鼠标悬停在主要维基页面的左上方，在左侧空白处或角落，直到你看到 `#content`
 
-   ![image](/images/contributing/65761ffbc429.png)
+   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
 
    或者搜索 `<div id=content>`
 
-   ![image](/images/contributing/77befe2749fd.png)
+   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
 
 3. 复制该元素的内部 HTML
 
-   ![image](/images/contributing/8c7c75cfabad.png)
+   ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
 
    目前你只有 HTML 页面代码的实际内容，还有我们所关心的，你可以把它转换成 Markdown。
 
@@ -194,7 +194,7 @@ description: 这是一个关于汉堡和某些东西的页面，耶!
 
 https://domchristie.github.io/turndown/
 
-![图片](/images/contributing/77f4ea555bbb.png)
+![图片](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
 
 ^^ 注意，现在它把表格完全弄乱了...
 
@@ -206,7 +206,7 @@ https://jmalarcon.github.io/markdowntables/
 
 并仅将`<table>`元素复制到:
 
-![图片](/images/contributing/57f171ae0da7.png)
+![图片](../../../../frontend/public/images/contributing/57f171ae0da7.png)
 
 ### 清理
 
