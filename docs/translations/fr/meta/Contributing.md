@@ -12,7 +12,7 @@ Dans le cas où vous souhaitez vous voulez participer à la traduction du wiki, 
 
 En parcourant le [Github « docs »](https://github.com/openmultiplayer/web/tree/master/docs) de open.MP, vous aurez un bouton "Add file"
 
-![Add file button](/images/contributing/add-new-file.png)
+![Add file button](../../../../frontend/public/images/contributing/add-new-file.png)
 
 Vous pourrez ainsi ajouter un fichier en Markdown.
 
@@ -32,7 +32,7 @@ git clone https://github.com/openmultiplayer/web/tree/master/docs.git
 
 Ouvrez-le dans votre éditeur de texte. D'aucuns recommanderaient Visual Studio, qui semble être l'outil le plus apprécié des développeurs tant il est pratique :
 
-![Visual Studio Code markdown preview](/images/contributing/vscode.png)
+![Visual Studio Code markdown preview](../../../../frontend/public/images/contributing/vscode.png)
 
 Cette extension peut être utile :
 

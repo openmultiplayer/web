@@ -13,7 +13,7 @@ Meron tayong dalawang paraan para mag add ng bagong Content
 
 Pag ikaw ay nagbrobrowse ng directory sa Github, meron kang makikitang Add file button sa kaliwang bahagi doon sa taas ng file list.
 
-![Add file button](/images/contributing/add-new-file.png)
+![Add file button](../../../../frontend/public/images/contributing/add-new-file.png)
 
 Pwede kang mag upload ng Markdown file `.md` na sinulat mo or pwede kang dumirecta sa GitHub text editor.
 
@@ -28,7 +28,7 @@ Kung gusto mo gumamit ng Git, ang gagawin mo lang ay icloclone ang forked versio
 
 Buksan ito sa gusto mong editor, Nirerekomenda ko gumamit ng [Visual Studio Code](https://code.visualstudio.com/) kasi pwede mo dito makita ang output ng ineedit mong .md file ginagamit ko din ito sa pag gawa ng mga documentation (Me XomoX)
 
-![vscode](/images/contributing/vscode.png)
+![vscode](../../../../frontend/public/images/contributing/vscode.png)
 
 Eto ang mga nirerekomenda kong extensions para dito
 
@@ -152,23 +152,23 @@ Halos lahat ng mga nilalaman ay nalipat na, pero kung may nakita kang page sa wi
 
    (Firefox)
 
-   ![image](/images/contributing/04f024579f8d.png)
+   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](/images/contributing/f62bb8112543.png)
+   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
 
 2. I tutok sa kaliwang bahagi ng main wiki page, sa kaliwang margin o sa sulok hanggang makita mo ang `#content`
 
-   ![image](/images/contributing/65761ffbc429.png)
+   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
 
    Or search for `<div id=content>`
 
-   ![image](/images/contributing/77befe2749fd.png)
+   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
 
 3. I-Copy ang inner HTML ng element na iyon.
 
-   ![image](/images/contributing/8c7c75cfabad.png)
+   ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
 
    Ngayon ay nasayo na ang HTML code para sa aktwal na _nilalaman_ ng page, mga bagay na importante, at maaari mo itong i-convert sa Markdown.
 
@@ -178,7 +178,7 @@ Para sa pag convert ng basic HTML (no tables) sa Markdown gamitin ang:
 
 https://domchristie.github.io/turndown/
 
-![image](/images/contributing/77f4ea555bbb.png)
+![image](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
 
 ^^ Tignan, nasira ang table dito...
 
@@ -190,7 +190,7 @@ https://jmalarcon.github.io/markdowntables/
 
 At i-copy lang ang `<table>` na element sa:
 
-![image](/images/contributing/57f171ae0da7.png)
+![image](../../../../frontend/public/images/contributing/57f171ae0da7.png)
 
 ### Cleaning Up
 

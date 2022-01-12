@@ -9,7 +9,7 @@ Ez a dokumentációs forrás bárki számára elérhető, azért hogy hozzá tud
 
 Minden oldalon található egy gomb, amely a GitHub szerkesztés oldalára vezet:
 
-![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
+![Edit this page link present on each wiki page](../../../../frontend/public/images/contributing/edit-this-page.png)
 
 Például, ezen az oldalon [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) erre az [oldal](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md)ra juttat el, ahol egy szövegszerkesztővel módosíthatod a fájlokat (feltéve, hogy be vagy jelentkezve a GitHub-ba).
 
@@ -23,7 +23,7 @@ Végezzd el a szerkesztést, és küldj be egy "Pull Request" ("Húzási kérele
 
 Ha egy könyvtárat tallózol a GitHubon, a fájllista jobb felső sarkában található egy Add file ("Fájl hozzáadása") gomb:
 
-![Add file button](/images/contributing/add-new-file.png)
+![Add file button](../../../../frontend/public/images/contributing/add-new-file.png)
 
 Vagy feltölthetsz egy már írt Markdown fájlt, vagy közvetlenül a GitHub szövegszerkesztőbe írhatod.
 
@@ -41,7 +41,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 Nyisd meg a kedvenc szerkesztődben. Én ajánlom a Visual Studio Code-t, mivel remek eszközökkel rendelkezik a Markdown fájlok szerkesztésére és formázására. Amint láthatod, ezt a Visual Studio Code segítségével írom!
 
-![Visual Studio Code markdown preview](/images/contributing/vscode.png)
+![Visual Studio Code markdown preview](../../../../frontend/public/images/contributing/vscode.png)
 
 Két bővítményt ajánlok az élmény javítása érdekében:
 
@@ -168,23 +168,23 @@ Először nyisd meg a fejlesztői eszközt a Ctrl + Shift + I billentyűkombiná
 
    (Firefox)
 
-   ![image](/images/contributing/04f024579f8d.png)
+   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](/images/contributing/f62bb8112543.png)
+   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
 
 2. Húzd az egérmutatót a wiki főoldalának bal felső sarkába, a bal margóba vagy a sarokba, amíg meg nem jelenik a `#content`
 
-   ![image](/images/contributing/65761ffbc429.png)
+   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
 
    Vagy keress rá (Ctrl + F)`<div id=content>`
 
-   ![image](/images/contributing/77befe2749fd.png)
+   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
 
 3. Másold ki az Inner HTML-t (Copy -> Inner HTML)
 
-   ![image](/images/contributing/8c7c75cfabad.png)
+   ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
 
    Most már _csak_ az oldal tényleges _tartalmának_ HTML kódja van ami minket érdekel, és át konvertálhatod Markdownra.
 
@@ -194,7 +194,7 @@ Az alapvető HTML-ek (táblázatok nélküli) Markdown-ba történő konvertál�
 
 https://domchristie.github.io/turndown/
 
-![image](/images/contributing/77f4ea555bbb.png)
+![image](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
 
 ^^ Figyelem most teljesen elcseszte a táblázotot...
 
@@ -206,7 +206,7 @@ https://jmalarcon.github.io/markdowntables/
 
 És csak a `<table>` elemet másolja be:
 
-![image](/images/contributing/57f171ae0da7.png)
+![image](../../../../frontend/public/images/contributing/57f171ae0da7.png)
 
 ### Takarítás
 
