@@ -11,7 +11,7 @@ Se vuoi mantenere una specifica lingua apri una pull request ai [`CODEOWNERS`](h
 
 Su ogni pagina, vi è un bottone che porta alla pagina di GitHub per poterne modificare il contenuto:
 
-!['Modifica questa pagina' link presente su ogni pagina della wiki](/images/contributing/edit-this-page.png)
+!['Modifica questa pagina' link presente su ogni pagina della wiki](../../../../frontend/public/images/contributing/edit-this-page.png)
 
 Per esempio, cliccando questo sulla funzione [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) ti porterà a [questa pagina](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) che presenta un text editor per poter effettuare modifiche ad un file (assumendo il fatto che tu sia loggato su GitHub).
 
@@ -25,7 +25,7 @@ Aggiungere nuovi contenuti è un po' più complicato. Puoi farlo in due maniere:
 
 Quando navighi su una directory su Github, troverai un pulsante "Add file" nell'angolo in alto a destra della lista file:
 
-![Bottone 'Add file'](/images/contributing/add-new-file.png)
+![Bottone 'Add file'](../../../../frontend/public/images/contributing/add-new-file.png)
 
 Vi è anche la possibilità di poter uploddare un file Markdown che hai già scritto oppure scriverlo direttamente nel text editor di GitHub.
 
@@ -43,7 +43,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 Ora potrai aprire la repository nel tuo editor di testo preferito. Raccomando personalmente Visual Studio Code dato che ha degli ottimi tools per editare e formattare i file Markdown. Come puoi vedere, sto scrivendo questa documentazione usando Visual Studio Code!
 
-![Anteprima Markdown Visual Studio Code](/images/contributing/vscode.png)
+![Anteprima Markdown Visual Studio Code](../../../../frontend/public/images/contributing/vscode.png)
 
 Raccomando due estensioni per un'esperienza migliore:
 
@@ -168,23 +168,23 @@ La maggior parte dei contenuti sono stati spostati, però se trovi una pagina ma
 
    (Firefox)
 
-   ![image](/images/contributing/04f024579f8d.png)
+   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](/images/contributing/f62bb8112543.png)
+   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
 
 2. Posiziona il mouse in alto a sinistra della pagina wiki principale, nel margine sinistro o nell'angolo finché non vedi `#content`
 
-   ![image](/images/contributing/65761ffbc429.png)
+   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
 
    Oppure cerca `<div id=content>`
 
-   ![image](/images/contributing/77befe2749fd.png)
+   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
 
 3. Copia l'HTML interno di quell'elemento
 
-   ![image](/images/contributing/8c7c75cfabad.png)
+   ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
 
    Ora hai _solamente_ il codice HTML per il _contenuto_ concreto della pagina, il materiale che ci importa e che puoi convertire in Markdown.
 
@@ -194,7 +194,7 @@ Per convertire l'HTML di base (niente tabelle) in Markdown usa:
 
 https://domchristie.github.io/turndown/
 
-![image](/images/contributing/77f4ea555bbb.png)
+![image](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
 
 ^^ Nota come tutta la tabella si sia sballata completamente...
 
@@ -206,7 +206,7 @@ https://jmalarcon.github.io/markdowntables/
 
 E copia solo l'elemento della tabella `<table>` dentro:
 
-![image](/images/contributing/57f171ae0da7.png)
+![image](../../../../frontend/public/images/contributing/57f171ae0da7.png)
 
 ### Pulire
 
