@@ -4,11 +4,11 @@ title: Uobičajena pitanja
 
 ## Sadržaj
 
-## Client
+## Klijenat
 
 ### Dobio sam error "San Andreas cannot be found"
 
-San Andreas Multiplayer nije **not** program koji može da radi sam! On dodaje multiplayer funkcionalnost za San Andreas, dakle morate imati GTA San Andreas za PC - Također, mora da bude **EU/US v1.0** verzija, ostale verzije kao npr. v2.0 ili Steam i Direct2Drive verzije neće raditi. [Kliknite ovdje da skinete patch kako biste vratili GTA na stariju verziju (1.0)](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multiplayer **nije** program koji može da radi sam! On dodaje multiplayer funkcionalnost za San Andreas, dakle morate imati GTA San Andreas za PC - također, mora da bude **EU/US v1.0** verzija, ostale verzije kao npr. v2.0 ili Steam i Direct2Drive verzije neće raditi. [Kliknite ovdje da skinete patch kako biste vratili GTA na stariju verziju (1.0)](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
 
 ### Ne vidim nijedan server u SA:MP browseru
 
@@ -22,13 +22,13 @@ Ne biste trebali vidjeti singleplayer opcije (new game, load game, itd.) - SA:MP
 
 :::
 
-Singleplayer se može učitati iz 2 razloga; instalirali ste SA:MP u pogrešan folder ili imate pogrešnu verziju San Andreasa. Ako imate pogrešnu verziju možete je vratiti na staru (1.0) koristeći GTA San Andreas downgrader. Kliknite [ovdje](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) da ga preuzmete.
+Singleplayer se može učitati iz 2 razloga; instalirali ste SA:MP u pogrešan folder ili imate pogrešnu verziju San Andreasa. Ako imate pogrešnu verziju, možete je vratiti na staru (1.0) koristeći GTA San Andreas downgrader. Kliknite [ovdje](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) da ga preuzmete.
 
-Ponekad singleplayer meni će se prikazati ali SA:MP će se zapravo učitati ispravno. Da popravite ovo prosto morate da selektujete neku stavku na meniju, zatim kliknite escape tipku kako biste to napustili. SA:MP će tada nastaviti da se učitava.
+Ponekad singleplayer meni će se prikazati, ali SA:MP će se zapravo učitati ispravno. Da popravite ovo prosto morate da selektujete neku stavku na meniju, zatim kliknite escape tipku kako biste to napustili. SA:MP će tada nastaviti da se učitava.
 
 ### Dobio sam "Unacceptable Nickname" kada sam se pokušao konektovati na server
 
-Provjerite da ne koristite neki od nedozvoljenih znakova u vašem imenu (koristite samo 0-9, a-z, \[\], (), \$, @, ., \_ i =), i da vaše ime nije duže od 20 znakova. Ovo može biti uzrokovano i kada je neki igrač već na serveru sa istim imenom kao i vašim (Što se može dogoditi kada se ponovo konektujete na server nedugo nakon pucanja konekcije ili crashovanja). Windows server koji pokreće SA:MP sa online vremenom većim od 50 dana može da uzrokuje ovaj bug.
+Provjerite da ne koristite neki od nedozvoljenih znakova u vašem imenu (koristite samo 0-9, a-z, \[\], (), \$, @, ., \_ i =), i da vaše ime nije duže od 20 znakova. Ovo može biti uzrokovano i kada je neki igrač već na serveru sa istim imenom kao i vašim (što se može dogoditi kada se ponovo konektujete na server nedugo nakon pucanja konekcije ili crashovanja). Windows server koji pokreće SA:MP sa online vremenom većim od 50 dana može da uzrokuje ovaj bug.
 
 ### Ekran se zadrži na "Connecting to IP:Port..."
 
@@ -52,11 +52,11 @@ Ako imate 2 monitora postoje 3 načina da ovo riješite:
 
 ### Moj miš ne radi nakon izlaska iz pause menija
 
-Ako vam se čini da se vaš miš zaledi u igri dok (polovično) radi u pause meniju, onda morate da isključite multicore opciju [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (postavite je na 0). Kontinuirano tapkanje escape tipke dok miš ponovo ne reagira također može raditi, ali to nije tako lijepo rješenje.
+Ako vam se čini da se vaš miš zaledi u igri dok (polovično) radi u pause meniju, onda morate da isključite multicore opciju [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (postavite je na 0). Kontinuirano tapkanje escape tipke dok miš ponovo ne reagira također može raditi, ali to nije preporučljiv način za rješenje.
 
 ### "The file dinput8.dll is missing"
 
-To se možda događa kada DirectX nije pravilno instaliran, pokušajte ga ponovo instalirati - ne zaboravite ponovo pokrenuti svoj računar. Ako se problem i dalje javlja, samo nastavite na C:\\Windows\\System32 i kopirajte datoteku dinput.dll u osnovni direktorij vašeg GTA San Andreas. To bi to riješilo.
+To se možda događa kada DirectX nije pravilno instaliran, pokušajte ga ponovo instalirati - ne zaboravite ponovo pokrenuti svoj računar. Ako se problem i dalje javlja, samo nastavite na C:\\Windows\\System32 i kopirajte datoteku dinput.dll u osnovni direktorij vašeg GTA San Andreas. To bi trebalo riješiti problem.
 
 ### Ne mogu vidjeti nametagove drugih igrača!
 
