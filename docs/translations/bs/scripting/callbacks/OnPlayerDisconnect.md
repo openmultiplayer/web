@@ -34,9 +34,9 @@ public OnPlayerDisconnect(playerid, reason)
 
     new szDisconnectReason[3][] =
     {
-        "Timeout/Crash",
-        "Quit",
-        "Kick/Ban"
+        "Timeout/Crash", // Ako je reason jednak 0, onda je igrac napustio server zbog timeouta ili crasha
+        "Svojevoljni izlaz", // Ako je reason jednak 1, igrac je svojevoljno napustio igru (komandom /(q)uit ili ESC menijem)
+        "Kick/Ban" // Ako je reason jednak 2, igrac je napustio server zbog kicka ili bana
     };
 
     format(szString, sizeof szString, "%s je izasao sa servera (%s).", playerName, szDisconnectReason[reason]);
