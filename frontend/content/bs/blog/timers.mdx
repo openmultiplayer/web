@@ -4,7 +4,7 @@ date: "2019-05-22T03:15:00"
 author: Y_Less
 ---
 
-This is a sneak-peek at one of the improved modules we've done, for timers in open.mp:
+Ovo je kratak pogled na jedan od poboljšanih modula koje smo uradili, za tajmere u open.mp:
 
 ```pawn
 native SetTimer(const func[], msInterval, bool:repeat) = SetTimerEx;
@@ -33,7 +33,7 @@ native Timer_GetInterval(Timer:timer);
 native bool:Timer_Restart(Timer:timer);
 ```
 
-The first two are just for backwards-compatibility, the rest are the improved API:
+Prva dva služe samo za kompatibilnost unatrag, a ostala su poboljšani API:
 
 ```pawn
 native Timer:Timer_Create(const func[], usDelay, usInterval, repeatCount, const params[] = "", GLOBAL_TAG_TYPES:...);
