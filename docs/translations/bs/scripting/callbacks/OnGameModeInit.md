@@ -13,7 +13,7 @@ Ovaj callback se aktivira kada se gamemode pokreće.
 ```c
 public OnGameModeInit()
 {
-    print("Gamemode pokrenut!");
+    print("Gamemode se pokrece!");
     return 1;
 }
 ```
