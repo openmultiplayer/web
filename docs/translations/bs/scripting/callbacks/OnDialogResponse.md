@@ -1,6 +1,6 @@
 ---
 title: OnDialogResponse
-description: Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcije bilo klikom dugmeta, klikom ENTER/ESC tipke ili duplim klikom na list item (ukoliko koristite "list" style dijalog).
+description: Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcijom bilo klikom dugmeta, klikom ENTER/ESC tipke ili duplim klikom na list item (ukoliko koristite "list" style dijalog).
 tags: []
 ---
 
@@ -12,12 +12,12 @@ Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcije bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).
+Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcijom bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).
 
 | Ime         | Deskripcija                                                                                                                            |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID igrača koji je odgovorio na dijalog.                                                                                                |
-| dialogid    | ID dijaloga na koji je igrač odgovorio, dodijeljenog iz ShowPlayerDialog.                                                              |
+| dialogid    | ID dijaloga na koji je igrač odgovorio, dodijeljenog pozivanjem ShowPlayerDialog funkcije.                                             |
 | response    | 1 za lijevo i 0 za desno dugme (ako je samo jedno dugme prikazano, uvijek 1)                                                           |
 | listitem    | ID list item-a koji je selektovan od strane igrača (počinje od 0) (samo ukoliko koristite list style dijalog, u suprotnom će biti -1). |
 | inputtext[] | Tekst upisan u input box od strane igrača text selektovanog list item-a.                                                               |
@@ -33,7 +33,7 @@ Uvijek je pozvana prva u filterskripti tako da return-ovanje 1 tu blokira ostale
 #define DIALOG_RULES 1
 
 // U nekoj komandi pokazujemo taj dijalog
-ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Pravila Servera", "- Bez Citovanja\n- Bez Spam-a\n- Respect Admine\n\nDa li se slazete sa pravilima?", "Da", "Ne");
+ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Pravila Servera", "- Bez varanja i cheatovanja\n- Bez Spam-a\n- Postujte administraciju\n\nDa li se slazete sa pravilima?", "Da", "Ne");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
@@ -56,13 +56,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 #define DIALOG_LOGIN 2
 
 // U nekoj komandi pokazujemo taj dijalog
-ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Molimo unesite vasu lozinku:", "Login", "Cancel");
+ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Molimo unesite vasu lozinku:", "Login", "Odustani");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == DIALOG_LOGIN)
     {
-        if (!response) // Ako su kliknuli 'Cancel' ili pritisnuli ESC
+        if (!response) // Ako su kliknuli 'Odustani' ili pritisnuli ESC
         {
             Kick(playerid);
         }
@@ -77,7 +77,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                 SendClientMessage(playerid, COLOR_RED, "LOGIN FAILED.");
 
                 // Ponovno prikazi dijalog igracu
-                ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Molimo unesite vasu lozinku:", "Login", "Cancel");
+                ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Molimo unesite vasu lozinku:", "Login", "Odustani");
             }
         }
         return 1; // Upravljali smo dijalogom zato dajemo return 1. Isto kao i u OnPlayerCommandText.
@@ -89,13 +89,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 #define DIALOG_WEAPONS 3
 
 // U nekoj komandi pokazujemo taj dijalog
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons", "Desert Eagle\nAK-47\nCombat Shotgun", "Select", "Close");
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Oruzja", "Desert Eagle\nAK-47\nCombat Shotgun", "Odaberi", "Zatvori");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == DIALOG_WEAPONS)
     {
-        if (response) // Ako su pritisnuli 'Select' ili dva puta pritisnuli na list item
+        if (response) // Ako su pritisnuli 'Odaberi' ili dva puta pritisnuli na list item
         {
             // Daje im weapon
             switch(listitem)
@@ -114,18 +114,18 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 #define DIALOG_WEAPONS 3
 
 // U nekoj komandi ga prikazujemo
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Oruzja",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\
 AK-47\t120\t400",
-"Select", "Close");
+"Odaberi", "Zatvori");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == DIALOG_WEAPONS)
     {
-        if (response) // Ako je pritisnuo 'Select' ili dva puta pritisnuo na weapon
+        if (response) // Ako je pritisnuo 'Odaberi' ili dva puta pritisnuo na weapon
         {
             // Daje im weapon
             switch(listitem)
