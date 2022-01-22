@@ -14,7 +14,7 @@ Ovaj callback se poziva kada se filterskripta pokrenula. Poziva se samo unutar f
 public OnFilterScriptInit()
 {
     print("\n--------------------------------------");
-    print("Ova filterskripta je pokrenuta.");
+    print("Filterskripta je pokrenuta.");
     print("--------------------------------------\n");
     return 1;
 }
