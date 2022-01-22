@@ -14,7 +14,7 @@ Ovaj callback se poziva kada je objekt pomjeren nakon MoveObject (kada se presta
 
 ## Returns
 
-It is always called first in filterscripts.
+Callback OnObjectMoved uvijek je prvo pozvan u filterskriptama!
 
 ## Primjeri
 
