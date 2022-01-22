@@ -50,7 +50,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, 
 
     GetObjectPos(objectid, oldX, oldY, oldZ);
     GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
-    if (!playerobject) // If this is a global object, sync the position for other players
+    if (!playerobject) // Ako je ovo globalni objekat, azurirati poziciju objekta za sve igrace
     {
         if (!IsValidObject(objectid))
         {
@@ -64,14 +64,14 @@ public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, 
     {
         case EDIT_RESPONSE_FINAL:
         {
-            // The player clicked on the save icon
-            // Do anything here to save the updated object position (and rotation)
+            // Igrac je kliknuo na save dugme
+            // Uradite bilo sta ovdje da sacuvate azuriranu poziciju i rotaciju objekta
         }
 
         case EDIT_RESPONSE_CANCEL:
         {
-            //The player cancelled, so put the object back to it's old position
-            if (!playerobject) //Object is not a playerobject
+            // Igrac je odustao promjene, vracamo objekat u staru poziciju (prije edita)
+            if (!playerobject) // Objekat nije "privatni objekat" (aka player object)
             {
                 SetObjectPos(objectid, oldX, oldY, oldZ);
                 SetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
