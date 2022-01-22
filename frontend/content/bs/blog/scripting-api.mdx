@@ -4,18 +4,18 @@ date: "2020-04-14T20:01:00"
 author: Y_Less
 ---
 
-## Introduction
+## Uvod
 
-Firstly, a VERY important clarification - existing scripts will still work as-is. We have worked very hard on backwards compatibility and bear it in mind for every decision. There are many improvements we'd like to make that we simply can't for this reason, and other code that is greatly complicated by this compatibility requirement.
+Kao prvo, veoma važna klarifikacija - postojeće skripte će i dalje raditi kao što jesu. Naporno smo radili na kompatibilnosti unatrag i imamo to na umu pri svakoj odluci. Postoje mnoga poboljšanja koja bismo željeli napraviti koja jednostavno ne možemo iz ovog razloga, kao i drugi kod koji je uvelike komplikovan ovim zahtjevom kompatibilnosti.
 
-That said, there are improvements that can be made all over the place. Let's look at some examples of the inconsistencies in SA:MP scripting:
+Ipak, postoje poboljšanja koja se mogu napraviti svuda. Pogledajmo neke primjere nedosljednosti u SA:MP skriptiranju:
 
-### Tags
+### Tagovi
 
-- `Menu:CreateMenu` - Tagged.
-- `DB:db_open` - Tagged.
-- `CreateVehicle` - Untagged.
-- `CreateActor` - Untagged.
+- `Menu:CreateMenu` - tag.
+- `DB:db_open` - tag.
+- `CreateVehicle` - bez taga.
+- `CreateActor` - bez taga.
 
 ```pawn
 #define SELECT_OBJECT_GLOBAL_OBJECT 1
@@ -30,7 +30,7 @@ forward OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:
 native File:fopen(const name[], filemode:mode = io_readwrite);
 ```
 
-### Naming
+### Imenovanje
 
 - `SetVehiclePos` - "Vehicle" in the middle of the function name.
 - `TextDrawTextSize` - "TextDraw" at the start.
