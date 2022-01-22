@@ -21,7 +21,7 @@ Ovaj callback se poziva kada god NPC vidi ClientMessage (poruku poslanu od game-
 
 ## Returns
 
-Ovaj callback ne obrađuje povrate(returnove).
+Ovaj callback ne obrađuje povratne vrijednosti (returnove).
 
 ## Primjeri
 
