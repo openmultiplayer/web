@@ -1,12 +1,12 @@
 ---
 title: OnGameModeInit
-description: Ovaj callback se aktivira kada se gamemode pokreće.
+description: Ovaj callback se aktivira kada se gamemode pokrene.
 tags: []
 ---
 
 ## Deskripcija
 
-Ovaj callback se aktivira kada se gamemode pokreće.
+Ovaj callback se aktivira kada se gamemode pokrene.
 
 ## Primjeri
 
