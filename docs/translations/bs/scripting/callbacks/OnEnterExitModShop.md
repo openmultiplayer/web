@@ -31,7 +31,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 {
     if (enterexit == 0) // Ako je enterexit 0, to znači da izlaze iz modshop-a
     {
-        SendClientMessage(playerid, COLOR_WHITE, "Nice car! You have been taxed $100.");
+        SendClientMessage(playerid, COLOR_WHITE, "Sjajno vozilo! Naplaceno ti je $100.");
         GivePlayerMoney(playerid, -100);
     }
     return 1;
