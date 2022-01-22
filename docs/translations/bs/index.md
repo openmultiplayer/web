@@ -6,7 +6,7 @@ Ova web stranica želi pružiti lako dostupan i jednostavan doprinos izvoru doku
 
 ## SA-MP wiki je nestao
 
-Nažalost, wiki SA-MP ugašen krajem septembra - iako se većina njegovog sadržaja može pronaći u javnoj internetskoj arhivi.
+Nažalost, SA-MP Wiki stranica je ugašena krajem septembra te je povraćena u obliku arhive koja se ne može uređivati.
 
 Potrebna nam je pomoć zajednice da prenesemo stari wiki sadržaj u svoj novi dom, ovdje!
 
