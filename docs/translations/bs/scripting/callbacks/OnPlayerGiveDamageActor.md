@@ -40,7 +40,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponi
     GetPlayerName(playerid, attacker, sizeof (attacker));
     GetWeaponName(weaponid, weaponname, sizeof (weaponname));
 
-    format(string, sizeof(string), "%s has made %.0f damage to actor id %d, weapon: %s", attacker, amount, damaged_actorid, weaponname);
+    format(string, sizeof(string), "%s je nanio %.0f stete aktoru id %d, oruzjem: %s", attacker, amount, damaged_actorid, weaponname);
     SendClientMessageToAll(0xFFFFFFFF, string);
     return 1;
 }
