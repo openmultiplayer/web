@@ -32,7 +32,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new playerobject = CreatePlayerObject(playerid, 1245, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0);
         AttachCameraToPlayerObject(playerid, playerobject);
-        SendClientMessage(playerid, 0xFFFFFFAA, "Your camera is now attached to an object.");
+        SendClientMessage(playerid, 0xFFFFFFAA, "Vasa kamera je zakacena na objekat.");
         return 1;
     }
     return 0;
