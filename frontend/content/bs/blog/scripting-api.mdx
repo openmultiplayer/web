@@ -32,115 +32,115 @@ native File:fopen(const name[], filemode:mode = io_readwrite);
 
 ### Imenovanje
 
-- `SetVehiclePos` - "Vehicle" in the middle of the function name.
-- `TextDrawTextSize` - "TextDraw" at the start.
-- `db_open` - "db" at the start and lower-case.
-- `fread` - "file" at the start, and shortened.
+- `SetVehiclePos` - "Vehicle" (vozilo) u sredini imena funkcije.
+- `TextDrawTextSize` - "TextDraw" na početku.
+- `db_open` - "db" (databaza) na početku, malim slovima.
+- `fread` - "file" (datoteka) na početku, i skraćeno (iz `file` u `f`).
 - `asin` - A SA:MP added function without camel/pascal case.
 
-Consistency:
+Konzistencije:
 
-- `GetVehicleZAngle` - "Z-Angle"
-- `GetVehicleRotationQuat` - "Rotation"
-- `SetPlayerFacingAngle` - "Facing Angle"
-- `SetObjectRot` - "Rot"
+- `GetVehicleZAngle` - "Z-Angle" (Z-Ugao)
+- `GetVehicleRotationQuat` - "Rotation" (rotacija)
+- `SetPlayerFacingAngle` - "Facing Angle" (gledani ugao)
+- `SetObjectRot` - "Rot" (rotacija, ali skraćeno - iz `Rotation` u `Rot`)
 
-And despite all this, most libraries have now settled on the `Module_Method` naming convention.
+I uprkos svemu tome, većina biblioteka je sada prihvatila konvenciju imenovanja `Module_Method`.
 
-### Constants
+### Konstantne vrijednosti
 
 - `65535`
 
-Value for invalid players, actors, TDs and a few other things. It is also the value for invalid vehicles, but `0` is ALSO an invalid vehicle ID sometimes returned.
+Vrijednost koja predstavlja nevažeće ID-ove igrača, aktora, TextDraw-ova i još nekoliko stvari. Također može biti i za vozila, ali `0` je također (može biti) ID za nevažeće vozilo ponakada returnovana kao povratna vrijednost u funkcijama.
 
 - `0`
 
-Value for invalid files, sometimes vehicles (as well as `65535`). Also the value for missing many things such as action states and weapons.
+Vrijednost za nevažeće ili nepostojeće datoteke, ponekada i za vozila (isto kao i `65535`). Također i vrijednost za neke nedostajuće stvari kao što su akciona stanja i oružje.
 
 - `255`
 
-Value for invalid teams and menus.
+Vrijednost za nevažeće timove i menije.
 
 - `-1`
 
-Value for invalid gang zones and weapon states.
+Vrijednosti za nevažeće teritorije i stanja oružja.
 
-Additionally many libraries use `0x80000000` and `-1` for invalid states because they are far less likely to eventually be a valid ID. 65535 is quite a large number, but a big server can easily have more objects than that.
+Uz to, mnoge biblioteke koriste `0x80000000` i `-1` za nevažeća stanja jer je mnogo manje vjerovatno da će na kraju biti važeći ID. 65535 je prilično velik broj, ali veliki server lako može imati više objekata od toga.
 
-### Per-Player Functions
+### Funkcije "po igraču"
 
-- `CreateObject` and `CreatePlayerObject`
+- `CreateObject` i `CreatePlayerObject`
 
-Has global and per-player versions.
+Ima verziju posebnu za igrača i globalnu verziju.
 
 - `SetPlayerMapIcon`
 
-Has no global version.
+Nema globalnu verziju.
 
 - `SetGravity`
 
-No per-player version, despite being possibly one of the most requested per-player functions, and added almost instantly by YSF and other plugins.
+Nema verziju "po igraču", uprkos tome što je to možda jedna od najtraženijih funkcija po igraču, a dodana je skoro i trenutno od strane YSF-a i drugih sličnih plugina.
 
 - `CreateVehicle`
 
-No per-player version, despite also being repeatedly requested. But also not added by any (public) plugin, not even the streamer plugin.
+Nema verziju "po igraču", uprkos tome što je isto tako još jedna od više traženih funkcija. Također, nije dodana od strane ni jednog (javnog / dostupnog) plugina, čak ni od strane streamera.
 
-- `SendClientMessage` and `SendClientMessageToAll`
+- `SendClientMessage` i `SendClientMessageToAll`
 
-Has global and per-player versions, but the per-player version is the default unlike most other functions.
+Ima globalne verzije i verzije po igraču, ali verzija po igraču je zadana za razliku od većine drugih funkcija.
 
-- `GangZoneShowForPlayer` and `GangZoneShowForAll`
+- `GangZoneShowForPlayer` i `GangZoneShowForAll`
 
-Menus, Gang Zones, and Text Draws are the only default SA:MP functions where you can specify exactly which players can see them. All others are either everyone or just one person. Of course, libraries and plugins have since vasly expanded on this model and most good ones now allow very fine-grained control over which subsets of players (groups) can use any given entity.
+Meniji, teritoriji i TextDrawovi jedine su zadane SA:MP funkcije u kojima možete točno odrediti koji igrači ih mogu vidjeti. Svi ostali su ili svi ili samo jedna osoba. Naravno, biblioteke i dodaci su se od tada značajno proširili na ovaj model i većina njih sada omogućava vrlo finu kontrolu nad tim koji podskupovi igrača (grupe) mogu koristiti bilo koji entitet (ili komponentu).
 
-### IDs
+### IDevi
 
-- `CreateObject` and `CreatePlayerObject`
+- `CreateObject` i `CreatePlayerObject`
 
-The IDs pool for these functions are shared. If a global object has ID `4` no player object can ever have ID `4`, but multiple players could have different objects all with ID `5`.
+Skup ID-ova za ove funkcije se dijeli. Ako globalni objekat ima ID `4`, nijedan objekt igrača nikada ne može imati ID `4`, ali više igrača može imati različite objekte sa ID-om `5`.
 
-- `Create3DTextLabel` and `CreatePlayer3DTextLabel`
+- `Create3DTextLabel` i `CreatePlayer3DTextLabel`
 
-The ID pool is split - the first `1024` IDs are globals, the second `1024` are per-player. Each player can have up to `2048` 3D texts, but only `1024` of each type despite the fact that it makes no difference client-side.
+Skup ID-ova je podijeljen - prvi `1024` ID-ovi su globalni, drugi `1024` su po igraču. Svaki igrač može imati do `2048` 3D tekstova, ali samo `1024` svake vrste uprkos činjenici da nema razlike na strani klijenta.
 
 - `SetPlayerMapIcon`
 
-IDs are manually specified, up to a limit of 32. For a while this limit was not checked client- side, leading to a potential ACE exploit.
+ID-ovi su ručno specificirani, do ograničenja od 32. Neko vrijeme ovo ograničenje nije provjeravano na strani klijenta, što je dovelo do potencijalnog ACE eksploatacije.
 
 - `ShowPlayerDialog`
 
-IDs are manually specified, with no limit at all. The IDs are also totally pointless since a player can only ever see one dialog at once.
+ID-ovi su ručno specificirani, bez ograničenja. ID-ovi su također potpuno besmisleni jer igrač može vidjeti samo jedan dijalog odjednom.
 
 - `SetTimer`
 
-IDs wrap around, with no checking that an existing timer has the same ID. You would have to start over 4,000,000,000 timers at some point to encounter this issue, but it could happen - they don't even have to all remain running.
+ID-ovi se omotavaju, bez provjere da postojeći tajmer ima isti ID. Morali biste pokrenuti više od 4.000.000.000 tajmera u nekom trenutku da biste naišli na ovaj problem, ali može se dogoditi - čak i ne moraju svi ostati uključeni.
 
-And of course some people rely on IDs being allocated in very specific orders, then wonder why their whole mode breaks when they for example add or remove a single vehicle.
+I naravno, neki ljudi se oslanjaju na to da se ID-ovi dodjeljuju u vrlo specifičnim redosljedima, a onda se pitaju zašto im se cijeli način prekida kada, na primjer, dodaju ili uklone jedno vozilo.
 
-## Compatibility
+## Kompatibilnost
 
-So, again, we must make it very clear that all existing _"SA:MP code"_ will work. What does that mean exactly? Any code that is:
+Dakle, opet, moramo jasno staviti do znanja da će sav postojeći _"SA:MP kod"_ raditi kao i prije. Šta to tačno znači? Bilo koji kod koji je:
 
-- Written in pawn.
-- Uses the original SA:MP API without plugins.
-- Is recompiled with our includes.
-- Already uses the community compiler.
+- Napisan u Pawn jeziku,
+- Koristi originalni SA:MP programski interfejs (bez dodataka i plugina),
+- Je (re)kompajlovan sa našim inkludovima (bibliotekama),
+- Već koristi brzi kompajler (poznat kao Pawn Kompajler zajednice)
 
-Will work.
+... će raditi.
 
-However:
+Kako god:
 
-- If you use a plugin to write in a language other than pawn, that plugin will probably need to be ported first. So your code won't work immediately.
+- Ako koristite dodatak za pisanje na jeziku koji nije Pawn, taj plugin (dodatak) će vjerovatno morati prvo biti prenjet. Dakle, vaš kod neće raditi odmah.
 
-- If you use other plugins such as the streamer, YSF, audio, etc; they may already work, may need porting, or may be entirely superfluous because their functionality has been integrated in to the core server. So your code may work.
+- Ako koristite druge dodatke kao što su streamer, YSF, audio, itd; možda već rade, možda će im trebati prijenos ili mogu biti potpuno suvišni jer je njihova funkcionalnost integrirana u osnovni server. Dakle, vaš kod može raditi.
 
-- If you only have the .AMX of your mode not the original source, why? Anyway, while all SA:MP functions exist, some have been redone or replaced by pawn code or macros and you MUST recompile. So if you can't, your code won't work at all.
+- Ako imate samo .AMX vašeg načina rada, a ne originalni izvor, zašto? U svakom slučaju, dok postoje sve SA:MP funkcije, neke su preuređene ili zamijenjene kodom ili makroima i MORATE ponovo kompajlirati. Dakle, ako ne možete, vaš kod uopće neće raditi.
 
-## Building
+## Kodiranje i gradnja
 
-### Eample
+### Primjer
 
-Let's look at an insanely simple SA:MP mode to begin with.
+Pogledajmo na ovaj jednostavni kod sa kojim ćemo započeti:
 
 ```pawn
 #include <a_samp>
@@ -149,7 +149,7 @@ main() {}
 
 public OnGameModeInit()
 {
-	SetGameModeText("Example Script");
+	SetGameModeText("Primjer");
 	AddPlayerClass(0, 0.0, 0.0, 4.0, 0.0, 0, 0, 0, 0, 0, 0);
 	return 1;
 }
@@ -162,18 +162,18 @@ public OnPlayerSpawn(playerid)
 
 public OnPlayerEnterCheckpoint(playerid)
 {
-	SendClientMessage(playerid, 0xFF0000AA, "You won!");
+	SendClientMessage(playerid, 0xFF0000AA, "Pobijedili ste!");
 	return 1;
 }
 ```
 
-You spawn. You go to the checkpoint. You win.
+Spawnujete se u igur. Idete do markera (checkpointa). Pobjeđujete - prilično jednostavno.
 
-### Conversion
+### Konverzija
 
-To build this for open.mp, we need to change just the first include and add one define.
+Da biste ovo isto uradili u open.mp-u, samo moramo promjeniti `a_samp.inc` i dodati jednu definiciju ispred.
 
-This:
+Dakle - ovo:
 
 ```pawn
 #include <a_samp>
@@ -181,7 +181,7 @@ This:
 main() {}
 ```
 
-Becomes:
+Postaje ovo:
 
 ```pawn
 #define OPENMP_COMPAT
@@ -190,29 +190,29 @@ Becomes:
 main() {}
 ```
 
-The first error you might get is:
+Prvi error koji možete dobiti je:
 
-`open.mp scripts require the community compiler from: git.io/pawn-compiler`
+`open.mp scripts require the community compiler from: git.io/pawn-compiler` (Prijevod: `open.mp skripte trebaju kompajler zajednice koji možete preuzeti sa: git.io/pawn-compiler`)
 
-If you get this, go to https://git.io/pawn-compiler and download compiler version 3.10.10 or later. For the release we would like a pawno-equivalent tool with this compiler integrated already, but haven't done that yet. I STRONGLY suggest trying to compile your mode with this compiler first as it re-enabled const correctness warnings so you're likely to have a load of new warnings straight away (this is NOT a problem with the compiler, these are problems in your code that always existed, but were previously ignored). You will also probably want to replace your includes with these ones:
+Ako dobijete ovo, idite na https://git.io/pawn-compiler i preuzmite verziju kompajlera 3.10.10 ili noviju. Za izdanje bismo željeli alat ekvivalentan pawno sa ovim kompajlerom već integriranim, ali to još nismo učinili. SNAŽNO predlažem da prvo pokušate kompajlirati svoj način rada s ovim kompajlerom jer je ponovo omogućio upozorenja o konstantnoj ispravnosti tako da ćete vjerovatno imati gomilu novih upozorenja odmah (ovo NIJE problem s kompajlerom, ovo su problemi u vašem kodu koji su oduvek postojali, ali su prethodno ignorisani). Također ćete vjerovatno htjeti zamijeniti svoje uključene sa ovim:
 
 https://github.com/pawn-lang/pawn-stdlib
 
 https://github.com/pawn-lang/samp-stdlib
 
-That's a good thing to do even if you don't use open.mp, as they fix a load of tag and const issues in the original includes.
+To je dobra stvar za učiniti čak i ako ne koristite open.mp, jer oni popravljaju mnoštvo problema sa oznakama i constom u originalnim uključenjima.
 
-### Warnings
+### Upozorenja
 
-If you don't get any warnings using the new compiler with the new version of _a_samp_, you will now see a load of new warnings along the lines of:
+Ako ne dobijete nikakva upozorenja koristeći novi kompajler s novom verzijom _a_samp_, sada ćete vidjeti mnoštvo novih upozorenja duž linija:
 
-`warning 234: function is deprecated (symbol "AddPlayerClass") Use "Class_Add" instead.`
+`warning 234: function is deprecated (symbol "AddPlayerClass") Use "Class_Add" instead.` (Znači: `upozorenje 234: funkcija je zastarjela (simbol "AddPlayerClass") Umjesto toga koristite "Class_Add".`)
 
-You have three options - and they're all supported:
+Imate tri opcije za učiniti - ali, sve će raditi:
 
-- **Ignore the warnings:** The code will still work.
+- **Ignorišite upozorenja:** Vaš kod će i dalje savršeno raditi.
 
-- **Suppress the warnings:** Change `OPENMP_COMPAT` to `OPENMP_QUIET`:
+- **Prigušte upozoranja:** Izmjenite već pomenutu definiciju `OPENMP_COMPAT` u `OPENMP_QUIET`:
 
 ```pawn
 #define OPENMP_QUIET
@@ -221,21 +221,21 @@ You have three options - and they're all supported:
 main() {}
 ```
 
-- **Fix the warnings:** Some functions have changed names for consistency with each other; some functions have changed parameters because the old ones evolved and didn't fully expose the capabilities of open.mp. There's no simple way to convert every function yet, but you can leave the warnings on while slowly converting code - the old functions will continue to work perfectly well.
+- **Jednostavno popravite upozorenja:** Neke funkcije su promijenile imena radi međusobnog usklađivanja; neke funkcije su promijenile parametre jer su se stare razvile i nisu u potpunosti otkrile mogućnosti open.mp. Još ne postoji jednostavan način za konvertovanje svake funkcije, ali možete ostaviti upozorenja uključena dok polako konvertujete kod - stare funkcije će nastaviti da rade savršeno dobro.
 
-There are three stages to conversion:
+Postoje tri faze konverzije:
 
 ### `#define OPENMP_QUIET`
 
-Using this define allows your mode to compile with no new warnings from deprecated functions. But you shouldn't stick to this define, and the implicit conversions will only work for pawn code. You can convert code in this mode, as the new API will also work, but you can't use the compiler to see where problems remain.
+Korištenje ove definicije omogućava vašem načinu kompajliranja bez novih upozorenja od zastarjelih funkcija. Ali ne biste se trebali držati ove definicije, a implicitne konverzije će raditi samo za kod zalagaonice. Možete konvertovati kod u ovom režimu, jer će novi API takođe raditi, ali ne možete koristiti kompajler da vidite gdje ostaju problemi.
 
 ### `#define OPENMP_COMPAT`
 
-This is the second stage. Once you want to start taking advantage of all the improved features of open.mp like fine-grained per-player entity controls and removed limits you need to start using the new versions of the functions. The new functions are always available, but you might not know everywhere that needs converting. This will give warnings for the old functions, but they will still work, allowing you to convert parts of your mode one at a time.
+Ovo je druga faza. Jednom kada poželite da počnete da koristite prednosti svih poboljšanih karakteristika open.mp-a kao što su fine kontrole entiteta po igraču i uklonjena ograničenja, morate da počnete da koristite nove verzije funkcija. Nove funkcije su uvijek dostupne, ali možda ne znate svugdje gdje je potrebna konverzija. Ovo će dati upozorenja za stare funkcije, ali one će i dalje raditi, omogućavajući vam da pretvarate dijelove vašeg načina rada jedan po jedan.
 
-### No define
+### Bez ikakvih definicija
 
-Once you think you've finished converting your code, you remove the defines:
+Onda kada mislite da ste završili za konverzijom vašega koda, slobodno možete ukloniti definicije.
 
 ```pawn
 #include <openmp\openmp>
@@ -243,46 +243,45 @@ Once you think you've finished converting your code, you remove the defines:
 main() {}
 ```
 
-Now you get errors instead of warnings for any old code still in use.
+Sada ćete dobijati errore (greške) umjesto warninga (upozorenja) za svaki stari kod koji se i dalje koristi.
+## Novi API
 
-## New API
+Dakle, sada smo vidjeli koji su problemi bili sa starim API-jem i kako pronaći gdje trebate primijeniti novi API, zapravo bismo trebali pogledati navedeni novi API u smislu prethodno identificiranih problema:
 
-So now we've seen what the problems were with the old API, and how to find where you need to apply the new API, we should actually look at said new API in terms of the previously identified issues:
+### Tagovi (tipovi podataka)
 
-### Tags
-
-Functions now use tags almost everywhere. We have tried to find a balance between too many tag warnings and not enough useful information, but warnings are there for a reason and can help find problems you may have missed. For example passing a vehicle as a parameter to an object function, or giving someone a weapon that doesn't exist:
+Funkcije sada koriste oznake skoro svuda. Pokušali smo pronaći balans između previše upozorenja o oznakama i premalo korisnih informacija, ali upozorenja su tu s razlogom i mogu vam pomoći da pronađete probleme koje ste možda propustili. Na primjer, prosljeđivanje vozila kao parametra funkciji objekta ili davanje nekome oružja koje ne postoji:
 
 ```pawn
-// No warnings for this code, despite it being clearly wrong.
+// Nema upozorenja od strane kompajlera, uprkos tome da je kod potpuno pogrešan!
 new object = CreateObject(various, parameters, here);
 PutPlayerInVehicle(playerid, object);
 
-// Same here - there's no weapon 20, despite it being amongst valid weapon IDs.
+// Isti slučaj ovjde - oružje ID 20 ne postoji, ali je 20 validan broj tako da nema upozorenja.
 GivePlayerWeapon(playerid, 20, 200);
 ```
 
-It would be much better if all pieces of clearly wrong code could give warnings. This is the power of a type-safe language, and while pawn isn't fully type-safe, we can get close with tags. Those examples become:
+Bilo bi mnogo bolje kada bi svi dijelovi očigledno pogrešnog koda mogli dati upozorenja. Ovo je moć jezika koji je siguran za tipove, i iako pawn nije u potpunosti siguran za tipove, možemo se približiti oznakama. Ti primjeri postaju:
 
 ```pawn
-// warning 213: tag mismatch: expected tag "Vehicle", but found "Object"
+// warning 213: tag mismatch: expected tag "Vehicle", but found "Object" (Znači: očekivan tag "Vozilo", ali je iskorišten "Objekat")
 new Object:object = Object@Create(various, parameters, here);
 Player_PutInVehicle(playerid, object);
 
-// warning 213: tag mismatch: expected tag "WeaponType", but found but found none ("_")
+// warning 213: tag mismatch: expected tag "WeaponType", but found but found none ("_") (Znači: očekivan tag "Oružje", ali ni jedan nije iskorišten: "_")
 GivePlayerWeapon(playerid, 20, 200);
 
 // This doesn't give a warning:
-GivePlayerWeapon(playerid, WEAPON_COLT45, 200);
+GivePlayerWeapon(playerid, WEAPON_COLT45, 200); //  Koristit ćemo konstantu "WEAPON_COLT45"
 ```
 
-### Naming
+### Imenovanje
 
-Most new functions use a refinement of the naming scheme already adopted by many libraries and plugins - `Module_VerbNoun`. Some don't, when they are a one-off that doesn't fit in to any larger module, but for the most part you can possibly guess the name of a function you need. No more wondering if it was "Rot" or "Rotation" for this type of element, there's no abbreviations unless the function name is otherwise too long (32+ characters, the compiler won't accept them). Want to change the model of an object? `Object_SetModel`. Want to show text to a player? `Text_Show`.
+Većina novih funkcija koristi preciziranje šeme imenovanja koju su već usvojile mnoge biblioteke i dodaci - `Module_VerbNoun`. Neki ne, kada su jednokratni koji se ne uklapaju ni u jedan veći modul, ali uglavnom možete pogoditi naziv funkcije koja vam je potrebna. Nema više razmišljanja da li je to bilo "Rot" ili "Rotation" za ovu vrstu elementa, nema skraćenica osim ako je naziv funkcije inače predugačak (32+ znaka, kompajler ih neće prihvatiti). Želite promijeniti model objekta? `Object_SetModel`. Želite pokazati tekst igraču? `Text_Show`.
 
-There are a limited set of verbs - `Get`, `Set`, `Create`, `Destroy`, `Add`, `Remove`, `Show`, `Hide`, `Run`, `Move`, `Stop`, and `Count`. More may be added and may show up in special situations, but generally if one of these fits, it's probably that one. By far the most common are `Get` and `Set`, which unlike in SA:MP now always come in pairs - if you can set any parameter you can get it as well later. They are also the verbs that most commonly come with a noun - you need to specify what to get or set - `Health`, `Position`, `Model`, `Width`, etc.
+Postoji ograničen skup glagola - `Get`, `Set`, `Create`, `Destroy`, `Add`, `Remove`, `Show`, `Hide`, `Run`, `Move`, `Stop ` i `Count`. Može se dodati još i možda se pojaviti u posebnim situacijama, ali općenito ako jedno od ovih odgovara, vjerovatno je to ono. Daleko najčešći su `Get` i `Set`, koji za razliku od SA:MP-a sada uvijek dolaze u paru - ako možete podesiti bilo koji parametar, možete ga dobiti i kasnije. Oni su ujedno i glagoli koji najčešće dolaze s imenicom - potrebno je navesti šta ćete dobiti ili postaviti - `Health`, `Position`, `Model`, `Width`, itd.
 
-Some examples:
+Nekoliko primjera:
 
 ```pawn
 native bool:Menu_SetDisabled(Menu:menuid, bool:disabled);
@@ -298,25 +297,25 @@ native DBResult_CountRows(DBResult:dbresult);
 native Player_Spawn(Player:playerid);
 ```
 
-Note that the module and tag names always match - `Vehicle`, `DB`, `Player` etc. [There are reasons besides consistency for this](https://github.com/pawn-lang/compiler/issues/234) - it gives a more OO -like interface, and is easier to remember. However, you might have noticed in an earlier example the function `Object@Create`, not `Object_Create`. The reason for this is what is in the first parameter.
+Imajte na umu da se nazivi modula i oznaka uvijek podudaraju - `Vehicle`, `DB`, `Player` itd. [Postoje razlozi osim dosljednosti za ovo](https://github.com/pawn-lang/compiler/issues/234 ) - daje sučelje više nalik na OO i lakše ga je zapamtiti. Međutim, možda ste primijetili u ranijem primjeru funkciju `Object@Create`, a ne `Object_Create`. Razlog tome je ono što se nalazi u prvom parametru.
 
-In all seven of the examples immediately above the first parameter is the entity (object, vehicle, player, etc) being operated on. You want to get the position of a specific entity. You want to move a specific entity. You want to get the remaining time of a specific entity. This again maps to the OO-like API - `Player_Spawn(playerid)` can be thought of as `player.Spawn()`. PAWN can't do that, but that doesn't mean other languages plugging in to this API can't. In C++ terms - `_` is `.` or `->` and always needs a valid ID given as the first parameter. However, the function `Dialog_IsValid(Dialog:id)` by definition may not have a valid ID as the first parameter (or what's the point of it\*?), and `Icon_Create(image, Float:x, Float:y, Float:z)` doesn't even take an ID at all. These thus become `@` instead - `::` in C++ syntax. They might not take an ID at all, and absolutely don't need a valid one (`@Destroy` also comes under this group of functions, as destroying an entity is an operation logically external to an entity, not an operation on the entity).
+U svih sedam primjera neposredno iznad prvog parametra nalazi se entitet (objekat, vozilo, igrač, itd.) kojim se operiše. Želite da dobijete poziciju određenog entiteta. Želite premjestiti određeni entitet. Želite dobiti preostalo vrijeme određenog entiteta. Ovo se opet preslikava na API sličan OO - `Player_Spawn(playerid)` se može smatrati `player.Spawn()`. PAWN to ne može učiniti, ali to ne znači da drugi jezici koji se priključe na ovaj API ne mogu. U C++ terminima - `_` je `.` ili `->` i uvijek treba važeći ID dat kao prvi parametar. Međutim, funkcija `Dialog_IsValid(Dialog:id)` po definiciji možda nema važeći ID kao prvi parametar (ili koja je poenta toga\*?), i `Icon_Create(image, Float:x, Float:y, Float:z)` uopće ne uzima ličnu kartu. Oni tako postaju `@` umjesto - `::` u C++ sintaksi. Možda uopće ne uzimaju ID i apsolutno im nije potreban važeći (`@Destroy` također spada u ovu grupu funkcija, jer je uništavanje entiteta operacija koja je logički van entiteta, a ne operacija na entitetu ).
 
-### Constants
+### Konstantne vrijednosti
 
-To start with, instead of `#define` for everything we use `const` and `enum` as much as possible, except where we expect things to be overridden (`MAX_PLAYERS`):
+Za početak, umjesto `#define` za sve koristimo `const` i `enum` koliko god je to moguće, osim gdje očekujemo da će stvari biti poništene (`MAX_PLAYERS`):
 
 ```pawn
-// Defining this first didn't previously work, now it does.
+// Prije definisanje konstante prije includovanja nije radilo, sada će raditi:
 #define MAX_PLAYERS 100
 #include <openmp\openmp>
 
-// The override method still works as well.
+// Re-definisanje će isto raditi:
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 200
 ```
 
-Using enums means that constants have tags for compile-time checking:
+Upotreba enuma znači da konstante imaju oznake za provjeru vremena kompajliranja:
 
 ```pawn
 enum ObjectMaterialTextAlignment
@@ -327,19 +326,19 @@ enum ObjectMaterialTextAlignment
 };
 ```
 
-`Object_SetMaterialText` will now only accept one of those three values, and nothing else.
+`Object_SetMaterialText` će moći prihvatiti samo jednu od te tri vrijednosti - ni jednu drugu.
 
-What about invalid IDs? We have made those consistent as well. All entities now use the same invalid value, well outside the range of possibly valid values - open.mp has removed almost all limits, so making a value like `65536` invalid just won't work. What is this new invalid value? We haven't decided... There are two main contenders both with pros and cons, and the decision isn't as easy as it might at first appear. But fortunately it doesn't make a big difference to the internal work as we can switch almost instantly.
+Šta je sa nevažećim ID-ovima? I njih smo učinili dosljednim. Svi entiteti sada koriste istu nevažeću vrijednost, daleko izvan raspona mogućih važećih vrijednosti - open.mp je uklonio skoro sva ograničenja, tako da nevažeći vrijednost poput `65536` jednostavno neće raditi. Koja je ova nova nevažeća vrijednost? Nismo odlučili... Postoje dva glavna kandidata i sa za i protiv, a odluka nije tako laka kao što se na prvi pogled čini. Ali, srećom, to ne čini veliku razliku u unutrašnjem radu jer se možemo prebaciti gotovo trenutno.
 
-The two choices are explained below, and we'd appreciate some feedback on this if possible:
+Ova dva izbora su objašnjena u nastavku i bili bismo zahvalni na povratnim informacijama o ovome ako je moguće:
 
 #### `0`
 
-Using `0` as an invalid value has a few advantages:
+Korištenje `0` kao nevažeće vrijednosti ima nekoliko prednosti:
 
-- it isn't an invalid index, so when returned and not correctly checked your code won't crash. It might not work perfectly, but it will keep doing something at least.
+- to nije nevažeći indeks, tako da kada se vrati i nije ispravno provjeren vaš kod se neće srušiti. Možda neće raditi savršeno, ali će barem nešto nastaviti.
 
-- It is very easy to check, and intent becomes obvious with it:
+- To je vrlo lako provjeriti, a namjera postaje očigledna sa njim:
 
 ```pawn
 new Object:object = Object@Create(various, parameters, here);
@@ -353,112 +352,112 @@ else
 }
 ```
 
-- A newly declared variable is by default an invalid value:
+- Novodeklarirana varijabla je po defaultu nevažeća vrijednost:
 
 ```pawn
 new Dialog:d;
 ```
 
-One of the most common bugs people get is their code only working for player 0, because they forgot to intialise a variable. If there's no player/object/vehicle 0, the code won't apply to anyone - it is better to have no player promoted to admin than the wrong player.
+Jedna od najčešćih grešaka koje ljudi dobijaju je njihov kod koji radi samo za igrača 0, jer su zaboravili da incijalizuju varijablu. Ako nema igrača/objekta/vozila (0), kod se neće primjenjivati ni na koga - bolje je da nijedan igrač nije promoviran u administratora nego pogrešan igrač.
 
 #### `-1`
 
-Using `-1` as an invalid value has a few advantages:
+Korištenje `-1` kao nevažeće vrijednosti ima nekoliko prednosti:
 
-- It IS an invalid index. Not being one was listed as an advantage for `0` because your code will often keep going instead of crashing, but with crashdetect that can be a good thing - there's a bug in your code and the crash will tell you exactly where it is, sometimes to the exact source code line. Which is better, silently continuing, or ending loudly?
+- To JE nevažeći indeks. To što niste jedan je navedeno kao prednost za `0` jer će vaš kod često nastaviti raditi umjesto da se ruši, ali s crashdetect to može biti dobra stvar - postoji greška u vašem kodu i rušenje će vam reći gdje je točno, ponekad na tačnu liniju izvornog koda. Što je bolje, tiho nastaviti ili završiti glasno?
 
-- People are used to `0` as a valid value most of the time. Programmers start counting at `0`, so it should be valid and something outside the realm of positive integers should be invalid.
+- Ljudi su navikli na `0` kao važeću vrijednost većinu vremena. Programeri počinju da broje na `0`, tako da bi trebalo da bude validno, a nešto izvan područja pozitivnih celih brojeva bi trebalo da bude nevažeće.
 
-- In unsigned maths it is the largest possible integer - `0xFFFFFFFF`, `4294967295`. This means the internal hard limit for any entity type is the highest it can possibly be - `4,294,967,295` items before running out of IDs (and memory).
+- U matematici bez predznaka to je najveći mogući cijeli broj - `0xFFFFFFFF`, `4294967295`. To znači da je interno ograničeno ograničenje za bilo koji tip entiteta najviše što može biti - `4,294,967,295` stavki prije nego što ponestane ID-ova (i memorije).
 
-### Per-Player Functions
+### Funkcije "po igraču"
 
-In short, these are no more. Every `ForPlayer`, `ForAll`, `CreatePlayerX` etc. function has been replaced by one simple function - `X_Display` (where `X` is any entity), and `X_Has` for checking:
+Ukratko, ovih više nema. Svaka funkcija `ForPlayer`, `ForAll`, `CreatePlayerX` itd. je zamijenjena jednom jednostavnom funkcijom - `X_Display` (gdje je `X` bilo koji entitet) i `X_Has` za provjeru:
 
 ```pawn
-Object_Display(objectid, playerid, true); // Show it.
-Object_Display(objectid, playerid, false); // Hide it.
+Object_Display(objectid, playerid, true); // Prikazati.
+Object_Display(objectid, playerid, false); // Sakriti.
 
-Text_Display(textid, true); // Show it to everyone.
+Text_Display(textid, true); // Prikazati je svima.
 
 if (Zone_Has(zoneid, playerid))
 {
-	// The player is ALLOWED to see the gang zone.
+	// Igrac ima dozvolu vidjeti teritoriju.
 }
 ```
 
-YSI used `X_SetPlayer`, but showing things to players is the most fundamental thing to do, so it deserves its own verb. Some libraries use `X_Show` and `X_Hide`, but that's two functions which just leads to excess code when checking which to do:
+YSI je koristio `X_SetPlayer`, ali pokazivanje stvari igračima je najosnovnija stvar, tako da zaslužuje svoj glagol. Neke biblioteke koriste `X_Show` i `X_Hide`, ali to su dvije funkcije koje samo dovode do viška koda kada se provjerava šta treba učiniti:
 
 ```pawn
 if (var) Checkpoint_Show(cpid, playerid);
 else Checkpoint_Hide(cpid, playerid);
 ```
 
-vs:
+Ovo je puno jednostavnije:
 
 ```pawn
 Checkpoint_Display(cpid, playerid, var);
 ```
 
-Note that just calling `X_Display` might not actually show the item. An object on the far side of the world still won't be visible. A checkpoint in a different virtual world won't be visible even if it is right next to you. For world entities this just says that the player is allowed to see it, not that they are currently able to. Conversely, for HUD elements such as menus and dialogs this does show them instantly, and may hide others when only one is allowed.
+Imajte na umu da samo pozivanje `X_Display` možda zapravo neće pokazati stavku. Objekt na drugom kraju svijeta i dalje neće biti vidljiv. Kontrolna tačka u drugom virtuelnom svetu neće biti vidljiva čak i ako je odmah pored vas. Za svjetske entitete ovo samo govori da je igraču dozvoljeno da to vidi, a ne da oni trenutno mogu. Nasuprot tome, za HUD elemente kao što su meniji i dijalozi ovo ih trenutno prikazuje, a druge može sakriti kada je samo jedan dozvoljen.
 
-### IDs
+### IDovi
 
-With the removal of per-player pools, and unification of invalid IDs, this is no longer an issue.
+Sa uklanjanjem skupova po igraču i objedinjavanjem nevažećih ID-ova, ovo više nije problem.
 
-## Smarter functions.
+## Pametnije funkcije
 
-The `X_Display` functions shown above can take two parameters - entity and display state, to enable every player to see them; or alternatively three parameters - entity, player, and display state. There are other functions that are smart about their parameters as well. One set of examples is the various rotation functions. As mentioned in the introduction, there are at least four different ways to get and set rotations on for different entities. Now there's one - `X_SetRotation` and `X_GetRotation`. For example:
+Funkcije `X_Display` prikazane gore mogu uzeti dva parametra - entitet i stanje prikaza, kako bi omogućili svakom igraču da ih vidi; ili alternativno tri parametra - entitet, igrač i stanje prikaza. Postoje i druge funkcije koje su također pametne u pogledu svojih parametara. Jedan skup primjera su različite funkcije rotacije. Kao što je spomenuto u uvodu, postoje najmanje četiri različita načina za dobivanje i postavljanje rotacija za različite entitete. Sada postoji jedan - `X_SetRotation` i `X_GetRotation`. Na primjer:
 
 ```pawn
-// Just get `z`.
+// Samo dobiti `z` kao povratni podatak.
 z = Player_GetRotation(playerid);
 
-// Get x, y, and z Euler angles.
+// Dobiti x, y, i z kao Eulerove uglove.
 Object_GetRotation(objectid, x, y, z);
 
-// Get w, x, y, and z quaternion angles.
+// Dobivamo w, x, y, i z kvaternion uglove.
 Vehicle_GetRotation(vehicleid, w, x, y, z);
 ```
 
-Which is used for which entity? All of them:
+Koji se koristi za koji entitet? Svi oni:
 
 ```pawn
-// Just get `z`.
+// Samo dobiti `z` kao povratni podatak.
 z = Object_GetRotation(objectid);
 
-// Get x, y, and z Euler angles.
+// Dobiti x, y, i z kao Eulerove uglove.
 Object_GetRotation(objectid, x, y, z);
 
-// Get w, x, y, and z quaternion angles.
+// Dobivamo w, x, y, i z kao kvaternion uglove.
 Object_GetRotation(objectid, w, x, y, z);
 ```
 
-The parameter and return meanings are determined by the number of parameters given. Also for `Set`:
+Značenja parametara i povratnih podataka određena su brojem datih parametara. Također za `Set`:
 
 ```pawn
-// Just set `z`.
+// Samo postavi 'z'.
 Vehicle_SetRotation(vehicleid, z);
 
-// Set x, y, and z Euler angles.
+// Postavi x, y, i z Eulerove uglove.
 Vehicle_SetRotation(vehicleid, x, y, z);
 
-// Set w, x, y, and z quaternion angles.
+// Postavi w, x, y, i z kvaternion uglove.
 Vehicle_SetRotation(vehicleid, w, x, y, z);
 ```
 
-## Conclusion
+## Zaključak
 
-We have tried very hard to make an API that's easy to use, easy to learn, but also backwards- compatibile. A lot of the success of SA:MP comes from it's ease of use, and we want to keep that, but are also aware that there are power users as well who want to get far more out of their code. Striking this balance is always hard, especially when the ones who comment the most are the most experienced - the ones who know the language inside and out and want to push it further. This creates a system that self-selects for advanced features at the expense of beginners. We don't want this, but we do still want to hear your thoughts. Which language and API features do you like, which do you not? What functions would help you get the most out of your code? Do you think the new design is simple, or too complicated? Are you fine with the haphazard names of the current functions? They serve their purpose, so why change them? Would you as a beginner have appreciated anything being done differently?
+Veoma smo se trudili da napravimo API koji je jednostavan za korišćenje, lak za učenje, ali i kompatibilan unazad. Veliki dio uspjeha SA:MP-a proizlazi iz njegove jednostavnosti korištenja, i mi to želimo zadržati, ali smo također svjesni da postoje i napredni korisnici koji žele da izvuku daleko više od svog koda. Postizanje ove ravnoteže je uvijek teško, posebno kada su najiskusniji oni koji najviše komentiraju - oni koji poznaju jezik iznutra i izvana i žele ga pogurati dalje. Ovo stvara sistem koji samostalno bira napredne funkcije na račun početnika. Ne želimo ovo, ali ipak želimo čuti vaše mišljenje. Koji jezik i API funkcije vam se sviđaju, a koje ne? Koje bi vam funkcije pomogle da izvučete maksimum iz svog koda? Mislite li da je novi dizajn jednostavan ili previše kompliciran? Da li vam odgovara slučajna imena trenutnih funkcija? Oni služe svojoj svrsi, pa zašto ih mijenjati? Da li biste kao početnik cijenili nešto što se radi drugačije?
 
-Please share any feedback you might have here in the burgershot topic below. We'd love to hear from you:
+- Molimo podijelite sve povratne informacije koje možda imate ovdje u temi burgershot ispod. Voljeli bismo čuti neke od primjedbi i komentara od vas:
 
 https://www.burgershot.gg/showthread.php?tid=1036
 
-\* Interesting side note. Thanks to the way we've abstracted the scripting API code, `Dialog_IsValid` is implemented as:
+\* Zanimljiva sporedna napomena. Zahvaljujući načinu na koji smo apstrahovali API kod za skriptovanje, `Dialog_IsValid` je implementiran kao:
 
 ```cpp
 SCRIPT_API(Dialog_IsValid, bool(Dialog_s)) { return true; }
 ```
 
-That's literally it. No actual implementation needed because for the function to be called the entity lookup must have succeeded, and thus we can return `true` instantly.
+To je doslovno to. Nije potrebna stvarna implementacija jer da bi funkcija bila pozvana, traženje entiteta mora biti uspješno, i stoga možemo odmah vratiti 'true'.
