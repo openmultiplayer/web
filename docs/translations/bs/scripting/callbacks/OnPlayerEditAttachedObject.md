@@ -62,7 +62,7 @@ public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Fl
 {
     if (response)
     {
-        SendClientMessage(playerid, COLOR_GREEN, "Attached object edition saved.");
+        SendClientMessage(playerid, COLOR_GREEN, "Uredjivanje zakacenog objekta sacuvano!");
 
         ao[playerid][index][ao_x] = fOffsetX;
         ao[playerid][index][ao_y] = fOffsetY;
@@ -76,7 +76,7 @@ public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Fl
     }
     else
     {
-        SendClientMessage(playerid, COLOR_RED, "Attached object edition not saved.");
+        SendClientMessage(playerid, COLOR_RED, "Uredjivanje zakacenog objekta nije sacuvano!");
 
         new i = index;
         SetPlayerAttachedObject(playerid, index, modelid, boneid, ao[playerid][i][ao_x], ao[playerid][i][ao_y], ao[playerid][i][ao_z], ao[playerid][i][ao_rx], ao[playerid][i][ao_ry], ao[playerid][i][ao_rz], ao[playerid][i][ao_sx], ao[playerid][i][ao_sy], ao[playerid][i][ao_sz]);
