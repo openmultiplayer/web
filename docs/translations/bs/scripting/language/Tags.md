@@ -3,13 +3,13 @@ title: "Scripting: Tags"
 description: A guide for Tags, a type-like feature of the Pawn language providing safety features for working with values of different intent.
 ---
 
-## Introduction
+## Uvod
 
-A tag is a prefix to a variable which tells the compiler to treat the variable specially under certain circumstances. For example you can use tags to define where a variable can and can't be used, or a special way to add two variables together.
+Oznaka je prefiks varijabli koja govori kompajleru da tretira varijablu posebno pod određenim okolnostima. Na primjer, možete koristiti oznake da definirate gdje se varijabla može, a gdje ne može koristiti, ili poseban način za dodavanje dvije varijable zajedno.
 
-There are two types of tag - strong tags (starting with a capital letter) and weak tags (starting with a lower case letter), for the most part they're the same however under certain circumstances weak tags can be converted to tagless silently by the compiler, i.e. you won't get a warning, most of the time with weak tags, and all the time with strong tags, implicitly changing the tag will result in a warning to tell you data is likely being used wrong.
+Postoje dvije vrste oznaka - jake oznake (počinju velikim slovom) i slabe oznake (počinju malim slovom), uglavnom su iste, međutim pod određenim okolnostima slabe oznake mogu se tiho pretvoriti u oznake bez oznaka kompajler, tj. nećete dobiti upozorenje, većinu vremena sa slabim oznakama, a sve vrijeme sa jakim oznakama, implicitna promjena oznake će rezultirati upozorenjem koje će vam reći da se podaci vjerovatno koriste pogrešno.
 
-A very simple example is the following:
+Vrlo jednostavan primjer je sljedeći:
 
 ```c
 new
@@ -17,11 +17,11 @@ new
 myFile += 4;
 ```
 
-The `fopen` function will return a value with a tag of type `File:`, there is no problem on that line as the return value is being stored to a variable also with a tag of `File:` (note the cases are the same too). However on the next line the value `4` is added to the file handle. `4` has no tag (it is actually tag type `_:` but variables, values and functions with no tag are automatically set to that and you don't need to worry about it normally) and myFile has a tag of `File:`, obviously nothing and something can't possibly be the same so the compiler will issue a warning, this is good as a handle to a file is meaningless in terms of it's actual value and so modifying it will merely destroy the handle and mean the file can't be closed as there is no longer a valid handle to pass and close the file with.
+Funkcija `fopen` će vratiti vrijednost s oznakom tipa `File:`, nema problema u toj liniji jer se povratna vrijednost pohranjuje u varijablu također sa oznakom `File:` (imajte na umu da su slučajevi isto tako). Međutim, u sljedećem redu vrijednost `4` se dodaje u ručicu datoteke. `4` nema oznaku (to je zapravo tip oznake `_:` ali varijable, vrijednosti i funkcije bez oznake se automatski postavljaju na to i ne morate se brinuti o tome normalno) i myFile ima oznaku `File :`, očito ništa i nešto ne može biti isto tako da će kompajler izdati upozorenje, ovo je dobro jer je rukohvat fajla besmislen u smislu njegove stvarne vrijednosti i tako će njegova modifikacija samo uništiti ručku i znači datoteka se ne može zatvoriti jer više ne postoji valjana ručica za prosljeđivanje i zatvaranje datoteke.
 
-### Strong tags
+### Jake oznake
 
-As mentioned above a strong tag is any tag starting with a capital letter. Examples of these in SA:MP include:
+Kao što je gore spomenuto, jaka oznaka je svaka oznaka koja počinje velikim slovom. Pod oznake misli se na tagove koji označavaju tip podatka. Primjeri ovih u SA:MP uključuju:
 
 ```c
 Float:
@@ -29,7 +29,7 @@ File:
 Text:
 ```
 
-These cannot be mixed with other variable types and will always issue a warning when you try to do so:
+One se ne mogu miješati s drugim tipovima varijabli i uvijek će izdati upozorenje kada to pokušate učiniti:
 
 ```c
 new
@@ -46,9 +46,9 @@ myFloat = 4; // Float: = _: (none), "tag mismatch" warning
 myBlank = myFloat; // _: (none) = Float:, "tag mismatch" warning
 ```
 
-### Weak tags
+### Slabe oznake
 
-A weak tag behaves mostly the same as a strong tag however the compiler will not issue a warning when the destination is tagless and the source is a weak tag. For example compare the following strong and weak tag codes, the first with the strong tag will give a warning, the second with the weak tag will not:
+Slaba oznaka se uglavnom ponaša isto kao i jaka oznaka, međutim kompajler neće izdati upozorenje kada je odredište bez oznaka, a izvor je slaba oznaka. Na primjer, uporedite sljedeće jake i slabe kodove oznaka, prvi sa jakom oznakom će dati upozorenje, drugi sa slabom oznakom neće:
 
 ```c
 new
@@ -60,13 +60,13 @@ myNone = myStrong; // Warning
 myNone = myWeak; // No warning
 ```
 
-However the reverse is not true:
+Međutim, obrnuto nije tačno:
 
 ```c
 myWeak = myNone; // Warning
 ```
 
-This is also true with functions, calling a function with a tagless parameter, passing a weak tagged variable will not give a warning:
+To vrijedi i za funkcije, pozivanje funkcije s parametrom bez oznaka, prosljeđivanje slabe označene varijable neće dati upozorenje:
 
 ```c
 new
@@ -81,7 +81,7 @@ MyFunction(myVar)
 }
 ```
 
-But calling a function with a tagged parameter (weak or strong), passing an untagged parameter will give a warning. Examples of weak tags in SA:MP are less well known as such though are often used and include:
+Ali pozivanje funkcije s označenim parametrom (slabim ili jakim), prosljeđivanje neoznačenog parametra će dati upozorenje. Primjeri slabih oznaka u SA:MP manje su poznati kao takvi iako se često koriste i uključuju:
 
 ```c
 bool:
@@ -89,22 +89,22 @@ filemode:
 floatround_method:
 ```
 
-## Use
+## Koristi
 
-### Declaring
+### Izjava
 
-Declaring a variable with a tag is very simple, just write the tag, there's no need to define a tag in advance in any way however this is possible and does have it's uses as will become apparent later:
+Deklarisanje varijable sa oznakom je vrlo jednostavno, samo napišite oznaku, nema potrebe da definišete oznaku unapred na bilo koji način, ali ovo je moguće i ima svoju upotrebu, što će kasnije postati jasno:
 
 ```c
 new
     Mytag:myVariable;
 ```
 
-Declaring a variable with one of the existing tags will allow you to use that variable with the functions and operators already written for that tag type.
+Deklarisanje varijable s jednom od postojećih oznaka omogućit će vam korištenje te varijable s funkcijama i operatorima koji su već napisani za taj tip oznake.
 
-### Functions
+### Funkcije
 
-Creating a function to take or return a tag is very simple, just prefix the relevant part with the desired tag type, for example:
+Kreiranje funkcije za preuzimanje ili vraćanje oznake je vrlo jednostavno, samo dodajte prefiks relevantnom dijelu željenom vrstom oznake, na primjer:
 
 ```c
 Float:GetValue(File:fHnd, const name[])
@@ -113,13 +113,13 @@ Float:GetValue(File:fHnd, const name[])
 }
 ```
 
-That function takes the handle to a file and returns a float value (presumably a value read from the file and corresponding to the value name passed in `name[]`). This function would most likely use the `floatstr` function, which also returns a Float: (as you can tell by looking at the status bar of pawno when you click on the function in the right hand function list), after taking a string. The implementation of this function is not important but it will convert the string to an IEEE float value, which is then stored as a cell (it's actually strictly stored as an integer which just happens to have an identical bit pattern to the relevant IEEE number as PAWN is typeless, but that's what tags are partially there to combat).
+Ta funkcija preuzima ručicu datoteke i vraća float vrijednost (vjerovatno vrijednost pročitanu iz datoteke i koja odgovara imenu vrijednosti proslijeđenom u `name[]`). Ova funkcija bi najvjerovatnije koristila funkciju `floatstr`, koja također vraća Float: (kao što možete vidjeti gledajući statusnu traku pawno-a kada kliknete na funkciju na desnoj listi funkcija), nakon što uzmete niz. Implementacija ove funkcije nije važna, ali će konvertovati niz u IEEE float vrijednost, koja se zatim pohranjuje kao ćelija (zapravo je striktno pohranjena kao cijeli broj koji samo slučajno ima identičan bitni uzorak relevantnom IEEE broju kao PAWN je bez tipa, ali to je ono protiv čega se tagovi djelimično mogu boriti).
 
-### Operators
+### Operatori
 
-Operators such as `+`, `==`, `>` etc can be overloaded for different tags, i.e. doing `+` on two Float:s does something different to doing it on two non-tagged variables. This is especially useful in the case of float variables as as mentioned they are not really floats they are integers with a very specific bit pattern, if the operators were not overloaded the operations would simply be performed on the integers which would give gibberish if the answer were interpreted as a float again. For this reason the Float: tag has overloaded versions of most of the operators to call special functions to do the maths in the server instead of in pawn.
+Operatori kao što su `+`, `==`, `>` itd. mogu se preopteretiti za različite oznake, tj. izvođenje `+` na dva Float: čini nešto drugačije od rada na dvije neoznačene varijable. Ovo je posebno korisno u slučaju varijabli s pomičnim stupnjem jer kao što je spomenuto, one zapravo nisu float, već su cijeli brojevi s vrlo specifičnim bitnim uzorkom, da operatori nisu preopterećeni, operacije bi se jednostavno izvodile nad cijelim brojevima što bi dalo glupost ako bi odgovor ponovo su protumačeni kao float. Iz tog razloga oznaka Float: ima preopterećene verzije većine operatora za pozivanje posebnih funkcija za obavljanje matematike na serveru umjesto u zalaganju.
 
-An operator is exactly like a normal function but instead of a function name you use "operator(**symbol**)" where (**symbol**) is the operator you want to overwrite. The valid operators are:
+Operator je potpuno sličan normalnoj funkciji, ali umjesto imena funkcije koristite "operator(**symbol**)" gdje je (**symbol**) operator koji želite prepisati. Važeći operateri su:
 
 ```c
 +
@@ -139,7 +139,7 @@ An operator is exactly like a normal function but instead of a function name you
 %
 ```
 
-Things like `\`, `*`, `=` etc are done automatically. Things like `&` etc can't be overloaded. You can also overload an operator multiple times with different combinations of tag. For example:
+Stvari poput `\`, `*`, `=` itd. rade se automatski. Stvari poput `&` itd. ne mogu biti preopterećene. Također možete preopteretiti operatora više puta s različitim kombinacijama oznaka. Na primjer:
 
 ```c
 stock Float:operator=(Mytag:oper)
@@ -148,7 +148,7 @@ stock Float:operator=(Mytag:oper)
 }
 ```
 
-If you add that to your code and do:
+Ako to dodate svom kodu i uradite:
 
 ```c
 new
@@ -158,17 +158,17 @@ new
 myFloat = myTag;
 ```
 
-You will no longer get a compiler warning as you would have before because the `=` operator for the case `Float: = Mytag:` is now handled so the compiler knows exactly what to do.
+Više nećete dobijati upozorenje kompajlera kao što ste ranije imali jer se sada rukuje operatorom `=` za slučaj `Float: = Mytag:` tako da kompajler tačno zna šta treba da uradi.
 
-### Overwriting
+### Prepisivanje
 
-In the overloading example above the functional line was:
+U primjeru preopterećenja iznad funkcionalna linija je bila:
 
 ```c
 return float(_:oper);
 ```
 
-This is an example of tag overwriting, the `_:` in front of oper means the compiler basically ignores the fact that oper has a tag type of Mytag: and treats it as tag type `_:` (i.e. no tag type). The function `float()` tags a normal number so must be passed one. In that example it is assumed that `Mytag` stores an ordinary integer but overwriting must be dealt with very carefully, for example the following will give very odd results:
+Ovo je primjer prepisivanja oznake, `_:` ispred oper znači da kompajler u osnovi zanemaruje činjenicu da oper ima tip oznake Mytag: i tretira je kao tip oznake `_:` (tj. nema tip oznake). Funkcija `float()` označava normalan broj tako da se mora proslijediti jedan. U tom primjeru se pretpostavlja da `Mytag` pohranjuje običan cijeli broj, ali se prepisivanjem mora postupati vrlo pažljivo, na primjer sljedeće će dati vrlo čudne rezultate:
 
 ```c
 new
@@ -177,4 +177,4 @@ new
 f1 = float(_:f2);
 ```
 
-Sense would dictate that `f1` would end up as `4.0`, however it won't. As mentioned f2 stores a representation of `4.0`, not just `4` as an integer would, this means the actual value of the variable as an integer is a very odd number. Thus if you tell the compiler to treat the variable as an integer it will simply take the bit pattern in the variable as the value, it won't convert the float to an integer, so you will get an almost random number (it's not actually random as there's a pattern to IEEE floating points but it will be nothing like `4.0`).
+Razum bi nalagao da će `f1` završiti kao `4.0`, međutim neće. Kao što je spomenuto, f2 pohranjuje reprezentaciju `4.0`, a ne samo `4` kao cijeli broj, to znači da je stvarna vrijednost varijable kao cijeli broj vrlo neparan broj. Dakle, ako kažete kompajleru da tretira varijablu kao cijeli broj, on će jednostavno uzeti uzorak bitova u varijabli kao vrijednost, neće pretvoriti float u cijeli broj, tako da ćete dobiti gotovo slučajni broj (to zapravo nije nasumično jer postoji obrazac za IEEE plutajuće zareze, ali neće biti ništa poput `4.0`).
