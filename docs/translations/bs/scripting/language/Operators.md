@@ -4,40 +4,39 @@ title: "Keywords: Operators"
 
 ## `char`
 
-char returns the number of cells required to hold the given number of characters in a packed string. I.e. the number of 4-byte cells required to hold a given number of bytes. For example:
+char vraća broj ćelija potrebnih za držanje zadanog broja znakova u upakovanom nizu. tj. broj 4-bajtnih ćelija potrebnih za držanje određenog broja bajtova. Na primjer:
 
 ```c
 4 char
 ```
 
-Returns 1.
+Vraća 1.
 
 ```c
 3 char
 ```
 
-Returns 1 (you can't have 3/4 of a variable).
+Vraća 1 (ne možete imati 3/4 varijable).
 
 ```c
 256 char
 ```
 
-Returns 64 (256 divided by 4).
+Vraća 64 (256 podijeljeno sa 4).
 
-This is generally used in variable declarations.
-
+Ovo je generalno korišćeno pri deklaracijama varijabli.
 ```c
 new
     someVar[40 char];
 ```
 
-Will make an array 10 cells big.
+Napraviće niz od 10 ćelija.
 
-For more information on packed strings read pawn-lang.pdf.
+Za više informacija o upakovanim nizovima pročitajte pawn-lang.pdf.
 
 ## `defined`
 
-Checks if a symbol exists. Generally used in #if statements:
+Provjerava da li neki simbol postoji. Generalno korišteno pri #if provjerama:
 
 ```c
 new
@@ -49,7 +48,7 @@ new
 #endif
 ```
 
-Most commonly it's used to check if a define is defined and generate code accordingly:
+Najčešće se koristi za provjeru da li je definicija definirana i generiranje koda u skladu s tim:
 
 ```c
 #define FILTERSCRIPT
@@ -73,7 +72,7 @@ public OnGameModeInit()
 
 ## `sizeof`
 
-Returns the size in ELEMENTS of an array:
+Vraća veličinu u ELEMENTIMA niza:
 
 ```c
 new
@@ -81,13 +80,13 @@ new
 printf("%d", sizeof (someVar));
 ```
 
-Output:
+Ispis:
 
 ```c
 10
 ```
 
-And:
+... i:
 
 ```c
 new
@@ -95,7 +94,7 @@ new
 printf("%d %d", sizeof (someVar), sizeof (someVar[]));
 ```
 
-Gives:
+Ispis:
 
 ```c
 2 10
@@ -103,11 +102,11 @@ Gives:
 
 ## `state`
 
-This again is related to the PAWN autonoma code and thus not covered here.
+Ovo se opet odnosi na PAWN autonomni kod i stoga ovdje nije obuhvaćeno.
 
 ## `tagof`
 
-This returns a number representing the tag of a variable:
+Ovo vraća broj koji predstavlja oznaku varijable:
 
 ```c
 new
@@ -116,19 +115,19 @@ new
 printf("%d %d", tagof (someVar), tagof (someFloat));
 ```
 
-Gives:
+Vraća:
 
 ```c
 -./,),(-*,( -1073741820
 ```
 
-Which is a slight bug but basically means:
+Što je zapravo mali bug ali zapravo ispisuje:
 
 ```c
 0x80000000 0xC0000004
 ```
 
-To check, for example, if a variable is a float (with the tag 'Float:'):
+Da biste provjerili, na primjer, da li je varijabla float (sa oznakom 'Float:'):
 
 ```c
 new Float: fValue = 6.9;
