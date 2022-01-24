@@ -153,7 +153,7 @@ func()
 ```c
 func()
 {
-    ako ()
+    if ()
     {
         singleLineExpr();
     }
@@ -163,17 +163,17 @@ func()
 ```c
 func()
 {
-    ako ()
+    if ()
     {
         singleLineExpr();
     }
-    inače ako ()
+    else if ()
     {
-        //
+        // code
     }
-    ostalo
+    else
     {
-        //
+        // code
     }
 }
 ```
