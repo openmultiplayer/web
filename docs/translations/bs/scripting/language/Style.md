@@ -3,40 +3,40 @@ title: "Pawn Style Guide"
 description: A short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.
 ---
 
-This document is a short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.
+Ovaj dokument je kratak vodič o opšte prihvaćenim konvencijama imenovanja i drugim aspektima Pawn izvornog koda kako bi se olakšala komunikacija o namjeri i pojednostavilo otklanjanje grešaka i dijeljenje koda.
 
-See also:
+Također preporučujemo Vam da pogledate:
 
-- [Modern Pawn](https://github.com/Southclaws/sampctl/wiki/Modern-Pawn)
-- [Pawn Package](https://github.com/Southclaws/sampctl/wiki/Packages)
+- [Moderni Pawn](https://github.com/Southclaws/sampctl/wiki/Modern-Pawn)
+- [Pawn Paketi](https://github.com/Southclaws/sampctl/wiki/Packages)
 
-## Terminology
+## Terminologija
 
-### Statement
+### Izjava
 
-A statement is a piece of code that imperatively tells the host program to do something. A statement is a valid piece of code that yields some result.
+Izjava je dio koda koji imperativno govori glavnom programu da nešto učini. Izjava je valjan dio koda koji daje neki rezultat.
 
 ```c
 a = b + c;
 ```
 
-This is a statement composed of a variable being assigned the result of an [#Expression].
+Ovo je izjava sastavljena od varijabli kojoj je dodijeljen rezultat izraza. Ili: [#Expression].
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
 ```
 
-This is a statement telling the program to call a function with some arguments.
+Ovo je izjava koja govori programu da pozove funkciju sa određenim parametrima (argumentima):
 
 ```c
 x + 8
 ```
 
-This is _not_ a statement as the result is not used anywhere, this is just an [#Expression].
+Ovo _nije_ izjava jer se rezultat nigdje ne koristi, ovo je samo izraz. Ili: [#Expression].
 
-### Compound Statement
+### Složena izjava
 
-A compound statement is a collection of statements surrounded by braces.
+Složeni iskaz je kolekcija iskaza okruženih zagradama.
 
 ```c
 {
@@ -45,7 +45,7 @@ A compound statement is a collection of statements surrounded by braces.
 }
 ```
 
-This is a compound statement composed of two statements.
+Ovo je složeni iskaz sastavljen od dva iskaza.
 
 ```c
 if (a == b)
@@ -54,15 +54,15 @@ if (a == b)
 }
 ```
 
-This is a compound statement with an `if` condition, this is usually referred to as an "if statement".
+Ovo je složena izjava sa uslovom `if`, ovo se obično naziva "if naredbom".
 
 ```c
 return Function1(), Function2(), Function3();
 ```
 
-This is _not_ a compound statement, it's a chain of statements separated by commas. This form of chaining statements is considered bad practice.
+Ovo _nije_ složena izjava, to je lanac iskaza odvojenih zarezima. Ovaj oblik ulančavanja izjava smatra se lošom praksom.
 
-### Expression
+### Izraz
 
 An expression is a piece of syntax that yields a value, it's not a valid statement unless the yielded value is used in some way.
 
@@ -72,13 +72,13 @@ Expressions are often composed to form statements.
 a + b
 ```
 
-This is a simple addition expression that takes two values and applies the add operator to them.
+Ovo je jednostavan izraz sabiranja koji uzima dvije vrijednosti i na njih primjenjuje operator dodavanja.
 
-## Guidelines
+## Smjernice
 
-### Braces
+### Zagrade
 
-Allman braces are preferred:
+Ove zagrade (zovu se još i Allman zagrade) u kodiranju su poželjnije:
 
 ```pawn
 function()
@@ -87,7 +87,7 @@ function()
 }
 ```
 
-However, if you can't shake the muscle memory, K&R braces are also valid Pawn:
+Međutim, ako ne možete uzdrmati mišićnu memoriju, K&R zagrada je također važeća u Pawn:
 
 ```pawn
 function() {
@@ -95,9 +95,9 @@ function() {
 }
 ```
 
-### Switches
+### Switchovi
 
-Switches must use two indent levels, one for the `switch` block and another for each `case` statement or compound statement.
+Switchovi moraju koristiti dva nivoa uvlačenja, jedan za blok `switch` i drugi za svaki izraz `case` ili složeni izraz.
 
 ```pawn
 switch (variable)
@@ -139,122 +139,122 @@ switch (variable)
 }
 ```
 
-### Compound Statements (Blocks)
+### složene izjave (blokovi)
 
-Blocks must always use braces, even if only a single line of code exists within a block. This applies to all levels including functions.
+Blokovi moraju uvijek koristiti zagrade, čak i ako postoji samo jedan red koda unutar bloka. Ovo se odnosi na sve nivoe uključujući funkcije.
 
-```pawn
+```pejon
 func()
 {
     singleLineExpr();
 }
 ```
 
-```pawn
+```pejon
 func()
 {
-    if ()
+    ako ()
     {
         singleLineExpr();
     }
 }
 ```
 
-```pawn
+```pejon
 func()
 {
-    if ()
+    ako ()
     {
         singleLineExpr();
     }
-    else if ()
+    inače ako ()
     {
         //
     }
-    else
+    ostalo
     {
         //
     }
 }
 ```
 
-### Naming
+### Imenovanje
 
-#### Functions
+#### Funkcije
 
-Functions must be named with `PascalCase`.
+Funkcije moraju biti imenovane sa `PascalCase`.
 
-#### Global Variables
+#### Globalne varijable
 
-Global variables declared using `new` must always use `g_` prefixed PascalCase, so `g_VariableName`, however if they are declared using `static` they must always use `s_` prefixed PascalCase, so `s_VariableName`
+Globalne varijable deklarirane pomoću `new` moraju uvijek koristiti PascalCase s prefiksom `g_`, dakle `g_VariableName`, međutim, ako su deklarirane koristeći `static`, uvijek moraju koristiti `s_` s prefiksom PascalCase, tako da `s_VariableName`
 
-Constant globals must use `SCREAMING_SNAKE_CASE`.
+Konstantni globali moraju koristiti `SCREAMING_SNAKE_CASE`.
 
-#### Local Variables
+#### Lokalne varijable
 
-Local variables must always use `camelCase` and must never use single letter names, apart from:
+Lokalne varijable uvijek moraju koristiti `camelCase` i nikada ne smiju koristiti imena od jednog slova, osim:
 
-- `i`, `j`, `k`, etc in `for` loops
-- `x`, `y`, `z`, etc in mathematical contexts
+- `i`, `j`, `k`, itd u `for` petljama
+- `x`, `y`, `z`, itd. u matematičkom kontekstu
 
 #### Enumerators
 
-Enumerators, if named, must be prefixed with `E_` (a strong tag) or `e_` (a weak tag)
+Popisivači, ako su imenovani, moraju imati prefiks `E_` (jaka oznaka) ili `e_` (slaba oznaka)
 
-Enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator name as a prefix.
+Polja popisivača također moraju biti `SCREAMING_SNAKE_CASE` i koristiti ime popisivača kao prefiks.
 
-```pawn
+```pejon
 static enum E_PLAYER_DATA {
     E_PLAYER_CASH,
     Float:E_PLAYER_HEALTH,
 }
 ```
 
-Using a weak tag
+Korištenje slabe oznake
 
-```pawn
+```pejon
 static enum e_PLAYER_DATA {
     E_PLAYER_CASH,
     Float:E_PLAYER_HEALTH,
 }
 ```
 
-Non-named enumerator fields must also be `SCREAMING_SNAKE_CASE` and use the enumerator name as a prefix.
+Neimenovana polja popisivača također moraju biti `SCREAMING_SNAKE_CASE` i koristiti ime popisivača kao prefiks.
 
-```pawn
-static enum {
+```pejon
+statički enum {
     ENUMATOR_INTEGER,
     Float:ENUMATOR_FLOAT,
 }
 ```
 
-Enumerators must always be declared `static` unless used outside the module.
+Enumeratori uvijek moraju biti deklarirani kao `statički` osim ako se ne koriste izvan modula.
 
-#### Macros and Pre-Processor Definitions
+#### Makroi i definicije predprocesora
 
-Macros must always use `SCREAMING_SNAKE_CASE` regardless of their usage.
+Makroi moraju uvijek koristiti `SCREAMING_SNAKE_CASE` bez obzira na njihovu upotrebu.
 
-Pre-Processor definitions (constant definitions) must also use `SCREAMING_SNAKE_CASE`.
+Definicije predprocesora (konstantne definicije) također moraju koristiti `SCREAMING_SNAKE_CASE`.
 
-This helps differentiate between variables and constants as well as functions and macros.
+Ovo pomaže u razlikovanju varijabli i konstanti, kao i funkcija i makroa.
 
-It's generally advised to avoid inventing new syntactical elements in order to prevent confusion among newcomers as to which words are part of the language and which words are from libraries.
+Općenito se savjetuje izbjegavanje izmišljanja novih sintaksičkih elemenata kako bi se spriječila zabuna među pridošlicama o tome koje su riječi dio jezika, a koje riječi su iz biblioteka.
 
-However, some older libraries do this and cannot change because of backwards compatibility.
+Međutim, neke starije biblioteke to rade i ne mogu se promijeniti zbog kompatibilnosti unatrag.
 
-### Documentation
+### Dokumentacija
 
-Always document exported functions with a simple line comment in the format `// FunctionName does X, Y and Z and returns A` where the first word is the name of the function itself followed by a brief description of what it does. No need to waste time describing each individual parameter. For example:
+Izvezene funkcije uvijek dokumentirajte jednostavnim komentarom linije u formatu `// FunctionName radi X, Y i Z i vraća A` gdje je prva riječ ime same funkcije praćeno kratkim opisom onoga što radi. Nema potrebe da gubite vreme na opisivanje svakog pojedinačnog parametra. Na primjer:
 
-```pawn
-// LoadPlayerAccount is called to initiate the account load process. This
-// function will trigger HTTP calls to get player data, it will display dialogs
-// to the player and eventually, once the process has completed, the event
-// `OnPlayerLogin` is emitted on success. On failure, the player is kicked.
-stock Error:LoadPlayerAccount(playerid)
+```pejon
+// LoadPlayerAccount se poziva da pokrene proces učitavanja naloga. Ovo
+// funkcija će pokrenuti HTTP pozive za dobivanje podataka o igraču, prikazat će dijaloge
+// igraču i na kraju, kada se proces završi, događaju
+// `OnPlayerLogin` se emituje nakon uspjeha. U slučaju neuspjeha, igrač biva izbačen.
+Stock Error:LoadPlayerAccount(playerid)
 {
-    // code...
+    // kod...
 }
 ```
 
-Each package should have a `README` and, if necessary, each module should have a comment on the very first line describing what that module provides.
+Svaki paket bi trebao imati `README` i, ako je potrebno, svaki modul bi trebao imati komentar u prvom redu koji opisuje šta taj modul pruža.
