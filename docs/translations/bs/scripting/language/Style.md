@@ -139,18 +139,18 @@ switch (variable)
 }
 ```
 
-### složene izjave (blokovi)
+### Složene izjave (blokovi)
 
 Blokovi moraju uvijek koristiti zagrade, čak i ako postoji samo jedan red koda unutar bloka. Ovo se odnosi na sve nivoe uključujući funkcije.
 
-```pejon
+```c
 func()
 {
     singleLineExpr();
 }
 ```
 
-```pejon
+```c
 func()
 {
     ako ()
@@ -160,7 +160,7 @@ func()
 }
 ```
 
-```pejon
+```c
 func()
 {
     ako ()
@@ -203,7 +203,7 @@ Popisivači, ako su imenovani, moraju imati prefiks `E_` (jaka oznaka) ili `e_` 
 
 Polja popisivača također moraju biti `SCREAMING_SNAKE_CASE` i koristiti ime popisivača kao prefiks.
 
-```pejon
+```pawn
 static enum E_PLAYER_DATA {
     E_PLAYER_CASH,
     Float:E_PLAYER_HEALTH,
@@ -212,7 +212,7 @@ static enum E_PLAYER_DATA {
 
 Korištenje slabe oznake
 
-```pejon
+```Pawn
 static enum e_PLAYER_DATA {
     E_PLAYER_CASH,
     Float:E_PLAYER_HEALTH,
@@ -221,7 +221,7 @@ static enum e_PLAYER_DATA {
 
 Neimenovana polja popisivača također moraju biti `SCREAMING_SNAKE_CASE` i koristiti ime popisivača kao prefiks.
 
-```pejon
+```Pawn
 statički enum {
     ENUMATOR_INTEGER,
     Float:ENUMATOR_FLOAT,
@@ -246,12 +246,12 @@ Međutim, neke starije biblioteke to rade i ne mogu se promijeniti zbog kompatib
 
 Izvezene funkcije uvijek dokumentirajte jednostavnim komentarom linije u formatu `// FunctionName radi X, Y i Z i vraća A` gdje je prva riječ ime same funkcije praćeno kratkim opisom onoga što radi. Nema potrebe da gubite vreme na opisivanje svakog pojedinačnog parametra. Na primjer:
 
-```pejon
+```pawn
 // LoadPlayerAccount se poziva da pokrene proces učitavanja naloga. Ovo
 // funkcija će pokrenuti HTTP pozive za dobivanje podataka o igraču, prikazat će dijaloge
 // igraču i na kraju, kada se proces završi, događaju
 // `OnPlayerLogin` se emituje nakon uspjeha. U slučaju neuspjeha, igrač biva izbačen.
-Stock Error:LoadPlayerAccount(playerid)
+stock Error:LoadPlayerAccount(playerid)
 {
     // kod...
 }
