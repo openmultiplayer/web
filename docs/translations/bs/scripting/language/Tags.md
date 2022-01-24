@@ -11,7 +11,7 @@ Postoje dvije vrste oznaka - jake oznake (počinju velikim slovom) i slabe oznak
 
 Vrlo jednostavan primjer je sljedeći:
 
-```c
+```Pawn
 new
     File:myfile = fopen("file.txt", io_read);
 myFile += 4;
@@ -23,7 +23,7 @@ Funkcija `fopen` će vratiti vrijednost s oznakom tipa `File:`, nema problema u 
 
 Kao što je gore spomenuto, jaka oznaka je svaka oznaka koja počinje velikim slovom. Pod oznake misli se na tagove koji označavaju tip podatka. Primjeri ovih u SA:MP uključuju:
 
-```c
+```Pawn
 Float:
 File:
 Text:
@@ -31,7 +31,7 @@ Text:
 
 One se ne mogu miješati s drugim tipovima varijabli i uvijek će izdati upozorenje kada to pokušate učiniti:
 
-```c
+```Pawn
 new
     Float:myFloat,
     File:myFile,
