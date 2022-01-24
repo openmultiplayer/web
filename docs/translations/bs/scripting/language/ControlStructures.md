@@ -3,18 +3,17 @@ title: "Control Structures"
 description: An overview of control structures in the Pawn language
 ---
 
-## Conditionals
+## Uvijeti (kondicije)
 
 ### if
 
-An if statement checks if something is true and does something if it is.
-
+``if`` provjerava da li je neki uvijet ispunjen te ako jeste izvršava nešto:
 ```c
 new
     a = 5;
 if (a == 5)
 {
-    print("a is 5");
+    print("a je 5");
 }
 ```
 
