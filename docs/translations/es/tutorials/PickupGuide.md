@@ -34,4 +34,11 @@ Ahora debemos decidir qué modelo aparecerá en el mundo, hay muchos modelos par
 
 Finalmente, necesitamos un [Tipo] (../scripting/resources/pickuptypes) para la pickup, en la misma página con los modelos de pickup hay una lista de tipos de pickup que describen lo que hacen los typos. Queremos que esta recolección desaparezca cuando la levante, para que no pueda levantarla repetidamente, pero que vuelva a aparecer después de unos minutos para que pueda levantarla nuevamente, el typo 2 hace exactamente esto.
 
-Pickups are most commonly created when the script starts, in [OnGameModeInit](../scripting/callbacks/OnGameModeInit) or [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
+Las pickups se crean más comúnmente cuando se inicia el script, en [OnGameModeInit](../scripting/callbacks/OnGameModeInit) o en [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) dependiendo del tipo de la script, también se puede ir en cualquier función (por ejemplo, podría crear un script de deja los armas del jugardor, eso se usaría OnPlayerDeath para crear pickup de armas).
+
+Aquí hacemos la pickup en la variable 'gMiPickup':
+
+
+```c
+gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
+```
