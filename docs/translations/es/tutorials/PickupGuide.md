@@ -1,0 +1,37 @@
+---
+title: Guía de Pickup
+---
+
+Un breve tutorial que describe cómo usar pickups.
+
+## Definir el pickup
+
+Lo primero que se debe hacer al crear pickup es crear su identificación. Esto se hará en una variable global. Para este ejemplo usaremos el nombre "gMiPickup".
+
+```c
+new gMiPickup;
+```
+
+## Creando la pickup
+
+Hay dos formas de crear pickup [CreatePickup](../scripting/functions/CreatePickup) y [AddStaticPickup](../scripting/functions/AddStaticPickup). AddStaticPickup no hay un id cuando esta creado, no se puede destruir y no mas puede usar en OnGameModeInit, para este guía vamos a usar [CreatePickup](../scripting/functions/CreatePickup).
+
+**La forma de [CreatePickup](../scripting/functions/CreatePickup) es:**
+
+**Parameters:**
+
+| modelo       | El modelo que queres usar                                                                                 |
+| ------------ | --------------------------------------------------------------------------------------------------------- |
+| typo         | El typo de pickup que es utiliza                                                                          |
+| Float:X      | La X-coordenada para el pickup.                                                                           |
+| Float:Y      | La Y-coordinate para el pickup.                                                                           |
+| Float:Z      | La Z-coordinate para el pickup.                                                                           |
+| Virtualworld | El mundo virtual de la pickup. La mundo virtual de -1 se va a ensenar para todos los mundos virtruales. |
+
+Para este ejemplo, crearemos un pickup en Grove Street.
+
+Ahora debemos decidir qué modelo aparecerá en el mundo, hay muchos modelos para elegir, algunos se enumeran en el sitio externo [aquí] (https://dev.prineside.com/en/gtasa_samp_model_id), aquí elija el número de modelo 1274, que es el signo de dólar.
+
+Finalmente, necesitamos un [Tipo] (../scripting/resources/pickuptypes) para la pickup, en la misma página con los modelos de pickup hay una lista de tipos de pickup que describen lo que hacen los typos. Queremos que esta recolección desaparezca cuando la levante, para que no pueda levantarla repetidamente, pero que vuelva a aparecer después de unos minutos para que pueda levantarla nuevamente, el typo 2 hace exactamente esto.
+
+Pickups are most commonly created when the script starts, in [OnGameModeInit](../scripting/callbacks/OnGameModeInit) or [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
