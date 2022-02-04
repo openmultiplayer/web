@@ -40,5 +40,28 @@ Aquí hacemos la pickup en la variable 'gMiPickup':
 
 
 ```c
-gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
+gMiPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 ```
+
+Cuando recoges una pickup, se llama la función [OnPlayerPickUpPickup](../scripting/callbacks/OnPlayerPickUpPickup), pasando playerid (el jugador que recogió la pickup) y pickupid (la ID de la pickup que se recogió). 
+
+Algunos typos de pickup están diseñados para funcionar automáticamente, por lo que no es necesario hacer nada en OnPlayerPickUpPickup. Consulte la página [Typos de pickup](../scripting/resources/pickuptypes) para obtener más información.
+
+Cuando un jugador recoge nuestra nueva pickup, queremos darle $100, para hacer esto primero debemos verificar que haya recogido nuestra pickup de dólares y no una diferente. Cuando hayamos hecho eso, podemos darles los $100:
+
+```c
+public OnPlayerPickUpPickup(playerid, pickupid)
+{
+    // Checka que el jugador esta en la correcta pickup
+    if(pickupid == gMiPickup)
+    {
+        // Mensaje a al jugador
+        SendClientMessage(playerid, 0xFFFFFFFF, "You received $100!");
+        // Darle dinero
+        GivePlayerMoney(playerid, 100);
+    }
+    return 1;
+}
+```
+
+¡Felicidades, ahora sabe cómo crear y manejar pickups!
