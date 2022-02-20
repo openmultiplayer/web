@@ -4,30 +4,30 @@ description: Mengambil jumlah uang yang dimiliki oleh pemain
 tags: ["player"]
 ---
 
-## Description
+## Deskripsi
 
-Retrieves the amount of money a player has.
+Mengambil jumlah uang yang dimiliki oleh pemain.
 
-| Name     | Description                               |
+| Nama     | Deskripsi                               |
 | -------- | ----------------------------------------- |
-| playerid | ID dari pemain yang akan diambil uang nya |
+| playerid | ID dari pemain yang ingin dilihat uangnya |
 
 ## Returns
 
 Jumlah uang yang dimiliki oleh pemain.
 
-## Examples
+## Contoh
 
 ```c
 public OnPlayerSpawn(playerid)
 {
    new string[32];
-   format(string, sizeof(string), "Uang anda: $%i.", GetPlayerMoney(playerid));
+   format(string, sizeof(string), "Uang anda senilai: $%i.", GetPlayerMoney(playerid));
    SendClientMessage(playerid, 0xFFFFFFAA, string);
 }
 ```
 
-## Related Functions
+## Fungsi Terkait
 
 - [GivePlayerMoney](GivePlayerMoney): Memberikan uang ke pemain.
 - [ResetPlayerMoney](ResetPlayerMoney): Mengatur uang pemain menjadi \$0.
