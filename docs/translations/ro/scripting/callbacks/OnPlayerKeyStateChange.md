@@ -35,8 +35,6 @@ Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/
 
 ## Funcții similare
 
-    #test
-
 - [GetPlayerKeys](../functions/GetPlayerKeys): Verificați ce taste ține un jucător.
 
 ## Informații suplimentare
