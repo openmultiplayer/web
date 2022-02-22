@@ -35,8 +35,6 @@ Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tet
 
 ## İlgili Fonksiyonlar
 
-    #test
-
 - [GetPlayerKeys](../functions/GetPlayerKeys): Oyuncunun hangi tuşlara bastığını kontrol etme.
 
 ## EK BİLGİ
