@@ -1524,14 +1524,14 @@ Please note that some of the listed animations may not be useable in SA-MP.
 | no    | SEX          | SEX_1_Fail_W           | 320    | 5.33           | Eagle position as female (fail)                               | Blocked in SA-MP     |
 | no    | SEX          | SEX_1_P                | 20     | 0.33           | Eagle position as male                                        | Blocked in SA-MP     |
 | no    | SEX          | SEX_1_W                | 20     | 0.33           | Eagle position as female                                      | Blocked in SA-MP     |
-| no    | SEX          | SEX_2to3_P             | 90     | 1.50           | Change position from butterfly to doggy as male              | Blocked in SA-MP     |
-| no    | SEX          | SEX_2to3_W             | 90     | 1.50           | Change position from butterfly to doggy as female            | Blocked in SA-MP     |
+| no    | SEX          | SEX_2to3_P             | 90     | 1.50           | Change position from butterfly to doggy as male               | Blocked in SA-MP     |
+| no    | SEX          | SEX_2to3_W             | 90     | 1.50           | Change position from butterfly to doggy as female             | Blocked in SA-MP     |
 | no    | SEX          | SEX_2_Fail_P           | 380    | 6.33           | Butterfly position as male (fail)                             | Blocked in SA-MP     |
 | no    | SEX          | SEX_2_Fail_W           | 380    | 6.33           | Butterfly position as female (fail)                           | Blocked in SA-MP     |
 | no    | SEX          | SEX_2_P                | 20     | 0.33           | Butterfly position as male                                    | Blocked in SA-MP     |
 | no    | SEX          | SEX_2_W                | 20     | 0.33           | Butterfly position as female                                  | Blocked in SA-MP     |
-| no    | SEX          | SEX_3to1_P             | 60     | 1.00           | Change position from doggy to eagle as male                  | Blocked in SA-MP     |
-| no    | SEX          | SEX_3to1_W             | 60     | 1.00           | Change position from doggy to eagle as female                | Blocked in SA-MP     |
+| no    | SEX          | SEX_3to1_P             | 60     | 1.00           | Change position from doggy to eagle as male                   | Blocked in SA-MP     |
+| no    | SEX          | SEX_3to1_W             | 60     | 1.00           | Change position from doggy to eagle as female                 | Blocked in SA-MP     |
 | no    | SEX          | SEX_3_Fail_P           | 260    | 4.33           | Doggy position as male (fail)                                 | Blocked in SA-MP     |
 | no    | SEX          | SEX_3_Fail_W           | 260    | 4.33           | Doggy position as female (fail)                               | Blocked in SA-MP     |
 | no    | SEX          | SEX_3_P                | 20     | 0.33           | Doggy position as male                                        | Blocked in SA-MP     |
