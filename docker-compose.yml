@@ -54,7 +54,7 @@ services:
       com.centurylinklabs.watchtower.enable: "true"
 
   postgres:
-    image: postgres
+    image: postgres:13
     restart: always
     ports:
       - "25432:5432"
