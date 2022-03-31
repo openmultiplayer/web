@@ -3,8 +3,24 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import Link from "next/link";
 import cardStyles from "../../styles/Card.module.css";
+import React, { VFC } from "react";
 
-const Card = ({ heading, bodyText, buttonLink, buttonText, img, imgAlt }) => {
+type CardProps = {
+  heading: string;
+  bodyText: string;
+  buttonLink: string;
+  buttonText: string;
+  img: string;
+  imgAlt: string;
+};
+const Card: VFC<CardProps> = ({
+  heading,
+  bodyText,
+  buttonLink,
+  buttonText,
+  img,
+  imgAlt,
+}) => {
   return (
     <Box
       maxW="60em"
