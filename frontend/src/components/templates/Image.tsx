@@ -12,7 +12,7 @@ const Img: FC<
   if (src?.startsWith("http")) {
     return <img {...props} />;
   }
-  return <img src={`https://assets.open.mp/assets/${props.src}`} {...props} />;
+  return <img {...props} src={`https://assets.open.mp/assets/${props.src}`} />;
 };
 
 export default Img;

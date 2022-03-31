@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
+import { MDXRemote } from "next-mdx-remote";
+import remarkGfm from "remark-gfm";
 
 import components from "src/components/templates";
 
@@ -7,7 +9,6 @@ import components from "src/components/templates";
 // Client side
 // -
 
-import { hydrate } from "src/mdx-helpers/csr";
 import { DocsSidebar } from "src/components/Sidebar";
 import Admonition from "src/components/Admonition";
 
@@ -22,15 +23,6 @@ const Page = (props: Props) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => setIsMounted(true), []);
-
-  // hydrate contains hook calls, and hooks must always be called
-  // unconditionally. Because they are called from a regular function here and
-  // not a nested component, the unconditionality applies to the call stack of
-  // *this* component, so the content must be hydrated regardless of whether or
-  // not there was an error in the following if-statement.
-  const content =
-    props.source &&
-    hydrate(props.source, { components: components as Components });
 
   if (props.error) {
     return (
@@ -70,7 +62,7 @@ const Page = (props: Props) => {
             </Admonition>
           )}
           <h1>{props?.data?.title}</h1>
-          {content}
+          <MDXRemote {...props.source} components={components} />
         </section>
         <nav>{/* TODO: Table of contents */}</nav>
       </div>
@@ -92,13 +84,12 @@ import {
 } from "next";
 import matter from "gray-matter";
 import glob from "glob";
-import admonitions from "remark-admonitions";
 import { concat, filter, flatten, flow, map } from "lodash/fp";
-import { Components } from "@mdx-js/react";
+import { serialize } from "next-mdx-remote/serialize";
 
-import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
+import { deriveError } from "src/fetcher/fetcher";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
@@ -112,7 +103,9 @@ export async function getStaticProps(
     result = await readLocaleDocs(path, locale);
   } catch (e) {
     return {
-      props: { error: `File ${path} (${locale}) not found: ${e.message}` },
+      props: {
+        error: `File ${path} (${locale}) not found: ${deriveError(e).error}`,
+      },
     };
   }
 
@@ -120,9 +113,15 @@ export async function getStaticProps(
 
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
-  const mdxSource = await renderToString(content, {
-    components: components as Components,
-    mdxOptions: { remarkPlugins: [admonitions] },
+  const mdxSource = await serialize(content, {
+    mdxOptions: {
+      remarkPlugins: [
+        //
+        // admonitions,
+        remarkGfm,
+      ],
+      components,
+    },
   });
 
   return {
