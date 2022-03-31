@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
-import { MDXRemote } from "next-mdx-remote";
-import remarkGfm from "remark-gfm";
+// import { MDXRemote } from "next-mdx-remote";
+// import remarkGfm from "remark-gfm";
 
 import components from "src/components/templates";
 
@@ -9,6 +9,7 @@ import components from "src/components/templates";
 // Client side
 // -
 
+import { hydrate } from "src/mdx-helpers/csr";
 import { DocsSidebar } from "src/components/Sidebar";
 import Admonition from "src/components/Admonition";
 
@@ -21,6 +22,15 @@ type Props = {
 
 const Page = (props: Props) => {
   const [isMounted, setIsMounted] = useState(false);
+
+  // hydrate contains hook calls, and hooks must always be called
+  // unconditionally. Because they are called from a regular function here and
+  // not a nested component, the unconditionality applies to the call stack of
+  // *this* component, so the content must be hydrated regardless of whether or
+  // not there was an error in the following if-statement.
+  const content =
+    props.source &&
+    hydrate(props.source, { components: components as Components });
 
   useEffect(() => setIsMounted(true), []);
 
@@ -62,7 +72,8 @@ const Page = (props: Props) => {
             </Admonition>
           )}
           <h1>{props?.data?.title}</h1>
-          <MDXRemote {...props.source} components={components} />
+          {/* <MDXRemote {...props.source} components={components} /> */}
+          {content}
         </section>
         <nav>{/* TODO: Table of contents */}</nav>
       </div>
@@ -85,11 +96,13 @@ import {
 import matter from "gray-matter";
 import glob from "glob";
 import { concat, filter, flatten, flow, map } from "lodash/fp";
-import { serialize } from "next-mdx-remote/serialize";
+// import { serialize } from "next-mdx-remote/serialize";
 
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
 import { deriveError } from "src/fetcher/fetcher";
+import { renderToString } from "src/mdx-helpers/ssr";
+import { Components } from "@mdx-js/react";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
@@ -113,14 +126,14 @@ export async function getStaticProps(
 
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
-  const mdxSource = await serialize(content, {
+  const mdxSource = await renderToString(content, {
+    components,
     mdxOptions: {
       remarkPlugins: [
         //
         // admonitions,
-        remarkGfm,
+        // remarkGfm,
       ],
-      components,
     },
   });
 
