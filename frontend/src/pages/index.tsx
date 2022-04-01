@@ -187,9 +187,6 @@ const Home = () => {
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <Box align="center">
                     <DownloadButton />
-                    <Text fontWeight="300" fontSize="sm" mt="4px">
-                      Cope and seethe
-                    </Text>
                   </Box>
                   <NextLink href="/docs">
                     <Button
