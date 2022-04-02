@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { map } from "lodash/fp";
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 type Item = [string, string];
 
@@ -28,7 +28,7 @@ const footerList = (heading: string, items: Array<Item>) => (
 );
 
 const Footer = () => (
-  <Box as="footer" bgColor="#253239">
+  <Box as="footer" bgColor={useColorModeValue('blackAlpha.800', "gray.900")}>
     <div className="near-white pa4-ns pv4 ph5 flex flex-column flex-row-ns justify-around center measure-wide">
       {/* {footerList("Docs", [
         ["/docs/scripting/resources/start", "Getting Started"],

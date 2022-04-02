@@ -29,7 +29,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
   <ChakraProvider theme={theme}>
     <Fonts />
 
-    {/* 
+    {/*
       Sets the default meta tags for all pages.
       https://github.com/garmeeh/next-seo
     */}

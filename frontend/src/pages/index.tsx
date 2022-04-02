@@ -11,6 +11,8 @@ import {
   HStack,
   Link,
   Text,
+  useColorMode,
+  useColorModeValue,
   VStack,
 } from "@chakra-ui/react";
 import { GetStaticPropsContext } from "next";
@@ -25,6 +27,7 @@ import Card from "../components/site/Card";
 //Styles
 import cardStyles from "../styles/Card.module.css";
 import heroStyles from "../styles/Hero.module.css";
+import Roads from "src/components/icons/Roads";
 
 const DownloadButton = () => {
   return (
@@ -50,7 +53,32 @@ const DownloadButton = () => {
   );
 };
 
+const DocumentationButton = () => {
+  return (
+    <Button
+      rightIcon={<ChevronRightIcon />}
+      border="1px solid #9083D2"
+      bg="transparent"
+      color="#9083D2F2"
+      _hover={{
+        backgroundColor: "#9083D240",
+      }}
+      _active={{
+        backgroundColor: "#9083D240",
+      }}
+      _focus={{
+        outline: "2px solid #695AD3",
+        transition: "outline 0.3s",
+      }}
+    >
+      Documentation
+    </Button>
+  )
+}
+
 const Home = () => {
+  const { colorMode } = useColorMode();
+
   const features = [
     {
       heading: "Fully backwards compatible to make switching a breeze",
@@ -189,36 +217,13 @@ const Home = () => {
                     <DownloadButton />
                   </Box>
                   <NextLink href="/docs">
-                    <Button
-                      rightIcon={<ChevronRightIcon />}
-                      border="1px solid #9083D2"
-                      bg="transparent"
-                      color="#9083D2"
-                      _hover={{
-                        backgroundColor: "#f4f2ff",
-                      }}
-                      _active={{
-                        backgroundColor: "#f4f2ff",
-                      }}
-                      _focus={{
-                        outline: "2px solid #695AD3",
-                        transition: "outline 0.3s",
-                      }}
-                    >
-                      Documentation
-                    </Button>
+                    <DocumentationButton />
                   </NextLink>
                 </Flex>
               </HStack>
             </VStack>
             <Box display={{ base: "none", md: "block" }} py="2em">
-              <Image
-                src={"/images/assets/roads.svg"}
-                alt="map of san andreas"
-                id={heroStyles.map}
-                width="400"
-                height="400"
-              />
+              <Roads width="400" height="400" dark={colorMode === 'dark'}/>
             </Box>
           </Flex>
           <Center>
@@ -241,7 +246,7 @@ const Home = () => {
           </Center>
         </Box>
         <Box align="center" my="4em">
-          <Text color="#281685" fontSize="md">
+          <Text color={useColorModeValue('#281685', 'white')} fontSize="md">
             Updates & Features
           </Text>
           <Text fontSize="3xl" fontWeight="900">
@@ -270,24 +275,7 @@ const Home = () => {
                     <DownloadButton />
                   </Box>
                   <NextLink href="/docs">
-                    <Button
-                      rightIcon={<ChevronRightIcon />}
-                      border="1px solid #9083D2"
-                      bg="transparent"
-                      color="#9083D2"
-                      _hover={{
-                        backgroundColor: "#f4f2ff",
-                      }}
-                      _active={{
-                        backgroundColor: "#f4f2ff",
-                      }}
-                      _focus={{
-                        outline: "2px solid #695AD3",
-                        transition: "outline 0.3s",
-                      }}
-                    >
-                      Documentation
-                    </Button>
+                    <DocumentationButton />
                   </NextLink>
                 </Flex>
               </HStack>
