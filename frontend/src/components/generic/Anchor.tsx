@@ -13,7 +13,7 @@ const Anchor: FC<Props> = (props) => {
             fontWeight: 600,
           }}
           _hover={{
-            color: "black",
+            color: "#9689db",
             textDecor: "none",
           }}
         >

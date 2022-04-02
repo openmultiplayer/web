@@ -67,7 +67,7 @@ const Card: VFC<CardProps> = ({
               >
                 {buttonText}
               </Link>
-              <ExternalLinkIcon w={4} h={4} color="rgba(40, 22, 133, 1)" />
+              <ExternalLinkIcon w={4} h={4} color="#9083D2" />
             </HStack>
           </NextLink>
         </Stack>

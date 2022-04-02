@@ -39,7 +39,7 @@ const styles = {
       paddingLeft: "1em",
     },
     a: {
-      color: "purple",
+      color: "#9083D2",
       _hover: {
         textDecoration: "underline",
       },
