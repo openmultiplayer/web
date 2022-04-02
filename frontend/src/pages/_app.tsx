@@ -58,7 +58,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
           { name: "Docs", path: "/docs" },
           { name: "Blog", path: "/blog" },
         ]}
-        route={router.pathname}
+        route={router.asPath}
       />
 
       <main>

@@ -43,17 +43,7 @@ const NavMenu: FC<Props> = ({ items, route }) => {
   const { user } = useAuth();
   const { colorMode, toggleColorMode } = useColorMode();
 
-  const isCurrent = (path: string) => {
-    if(route.includes('[...slug]') && path === '/faq') {
-      return true;
-    }
-
-    if(route.includes('/docs/') && path === '/docs') {
-      return true;
-    }
-
-    return path === route;
-  };
+  const isCurrent = (path: string) => path === route;
 
   return (
     <Box p="2">
