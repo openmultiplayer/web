@@ -1,5 +1,4 @@
 .card {
-  padding: 4em 4em;
   min-height: 320px;
 }
 .announcement {
@@ -13,10 +12,4 @@
   border-radius: 8px;
 
   padding: 0.8em 2em;
-}
-
-.panel:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-  cursor: pointer;
 }
