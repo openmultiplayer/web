@@ -38,6 +38,7 @@ import {
   Stack,
   HStack,
   VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FC, useCallback, useState } from "react";
@@ -328,6 +329,7 @@ export const CategoryListItem: FC<{
   onMove: MoveCategoryFn;
 }> = ({ category, onMove }) => {
   const admin = useIsAdmin();
+  const postCountColor = useColorModeValue('blackAlpha.800', 'gray.400');
 
   return (
     <ListItem
@@ -336,7 +338,7 @@ export const CategoryListItem: FC<{
       borderWidth="1px"
       borderRadius="0.5em"
       borderStyle="solid"
-      borderColor="blackAlpha.100"
+      borderColor={useColorModeValue('blackAlpha.100', 'blackAlpha.300')}
       padding="1em"
     >
       <Stack
@@ -399,7 +401,7 @@ export const CategoryListItem: FC<{
                 <Heading
                   as="h3"
                   size="sm"
-                  color="blackAlpha.800"
+                  color={postCountColor}
                   fontWeight={400}
                   m="0"
                 >

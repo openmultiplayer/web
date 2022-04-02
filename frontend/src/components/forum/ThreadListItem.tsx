@@ -1,5 +1,5 @@
 import { WarningTwoIcon } from "@chakra-ui/icons";
-import { Box, Tag, TagLabel, TagLeftIcon } from "@chakra-ui/react";
+import { Box, Tag, TagLabel, TagLeftIcon, useColorModeValue } from "@chakra-ui/react";
 import { ChakraProps } from "@chakra-ui/system";
 import { opacify } from "polished";
 import React, { FC } from "react";
@@ -17,9 +17,10 @@ const ThreadListItem: FC<Props> = ({ post, sx }) => {
   const categoryColourBadge = opacify(-0.6, categoryColour);
   const categoryColourBack = opacify(-0.99, categoryColour);
   const categoryColourEdge = opacify(-0.8, categoryColour);
+  const categoryColorDark = useColorModeValue('white', 'gray.700');
 
   const deletedPostColour = "red.50";
-  const pinnedPostColour = post.pinned ? categoryColourBack : "white";
+  const pinnedPostColour = post.pinned ? categoryColourBack : categoryColorDark;
   const backgroundColor = post.deletedAt ? deletedPostColour : pinnedPostColour;
 
   const deletedBoxShadow = `inset 0 0 0.5em var(--chakra-colors-red-100)`;
@@ -27,6 +28,8 @@ const ThreadListItem: FC<Props> = ({ post, sx }) => {
     ? `inset 0 0 0.5em ${categoryColourEdge}`
     : "none";
   const boxShadow = post.deletedAt ? deletedBoxShadow : pinnedPostBoxShadow;
+
+  const pinnedThreadColor = useColorModeValue('blackAlpha.800', 'brand.white');
 
   return (
     <>
@@ -44,8 +47,8 @@ const ThreadListItem: FC<Props> = ({ post, sx }) => {
             <div className="category">
               {post.pinned ? (
                 <Tag size="sm" variant="subtle" color={categoryColourBadge}>
-                  <TagLeftIcon as={WarningTwoIcon} color="blackAlpha.800" />
-                  <TagLabel color="blackAlpha.800">Pinned Thread</TagLabel>
+                  <TagLeftIcon as={WarningTwoIcon} color={pinnedThreadColor} />
+                  <TagLabel color={pinnedThreadColor}>Pinned Thread</TagLabel>
                 </Tag>
               ) : (
                 <CategoryName category={post.category} />
