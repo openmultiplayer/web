@@ -9,7 +9,6 @@ import {
   Flex,
   Heading,
   HStack,
-  Link,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -23,7 +22,6 @@ import { MarkdownContent } from "src/mdx-helpers/types";
 //Components
 import Card from "../components/site/Card";
 //Styles
-import cardStyles from "../styles/Card.module.css";
 import heroStyles from "../styles/Hero.module.css";
 
 const DownloadButton = () => {
@@ -65,7 +63,7 @@ const Home = () => {
       heading: "Community driven development",
       bodyText:
         "Open.mp is fully open source and is actively developed and maintained solely by the community. This helps in transparency and community input.",
-      buttonLink: "/forum",
+      buttonLink: "/discussion",
       buttonText: "Visit the GitHub repo",
       img: "/images/assets/f2.png",
       imgAlt: "Github stats illustration",
@@ -81,7 +79,8 @@ const Home = () => {
     },
     {
       heading: "Extensible C++ API",
-      bodyText: "Build upon the extensible C++ API with the open.mp SDK kit.",
+      bodyText:
+        "Build upon the extensible C++ API with the open.mp Software Development kit.",
       buttonLink: "/docs",
       buttonText: "Getting Started",
       img: "/images/assets/f4.png",
@@ -92,32 +91,32 @@ const Home = () => {
   const socials = [
     {
       alt: "discord icon",
-      src: "/icons/discord.svg",
+      src: "/images/assets/discord-icon.svg",
       href: "https://discord.com/invite/samp",
     },
     {
       alt: "facebook icon",
-      src: "/icons/facebook.svg",
+      src: "/images/assets/facebook.svg",
       href: "https://www.facebook.com/openmultiplayer",
     },
     {
       alt: "instagram icon",
-      src: "/icons/instagram.svg",
+      src: "/images/assets/instagram.svg",
       href: "https://instagram.com/openmultiplayer/",
     },
     {
       alt: "twitch icon",
-      src: "/icons/twitch.svg",
+      src: "/images/assets/twitch.svg",
       href: "https://twitch.tv/openmultiplayer",
     },
     {
       alt: "twitter icon",
-      src: "/icons/twitter.svg",
+      src: "/images/assets/twitter.svg",
       href: "https://twitter.com/openmultiplayer",
     },
     {
       alt: "youtube icon",
-      src: "/icons/youtube.svg",
+      src: "/images/assets/youtube.svg",
       href: "https://youtube.com/openmultiplayer",
     },
   ];
@@ -244,7 +243,7 @@ const Home = () => {
           <Text color="#281685" fontSize="md">
             Updates & Features
           </Text>
-          <Text fontSize="3xl" fontWeight="900">
+          <Text fontSize="3xl" fontWeight="900" mt="0">
             What is improved and new?
           </Text>
           <VStack spacing="6em" my="3em" px="1em">
