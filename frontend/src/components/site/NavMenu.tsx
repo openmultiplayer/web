@@ -11,8 +11,13 @@ import {
   MenuGroup,
   MenuItem,
   MenuList,
+  useColorMode,
   useDisclosure,
 } from "@chakra-ui/react";
+import {
+  MoonIcon,
+  SunIcon
+} from '@chakra-ui/icons';
 import NextLink from "next/link";
 import { FC } from "react";
 import { useAuth } from "src/auth/hooks";
@@ -36,6 +41,7 @@ const ON_MOBILE = { base: "flex", md: "none" };
 const NavMenu: FC<Props> = ({ items, route }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { user } = useAuth();
+  const { colorMode, toggleColorMode } = useColorMode();
 
   const isCurrent = (path: string) => path === route;
 
@@ -50,7 +56,15 @@ const NavMenu: FC<Props> = ({ items, route }) => {
               current={isCurrent(link.path)}
             />
           ))}
+
+          <IconButton cursor="pointer" as="div" size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
+            {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+          </IconButton>
         </Flex>
+
+        <IconButton cursor="pointer" display={ON_MOBILE} size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
+           {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+        </IconButton>
 
         <Menu isOpen={isOpen} onOpen={onOpen} onClose={onClose}>
           <MenuButton
@@ -66,7 +80,7 @@ const NavMenu: FC<Props> = ({ items, route }) => {
                 <MenuItem
                   key={path}
                   display={ON_MOBILE}
-                  current={String(isCurrent(path))}
+                  current={isCurrent(path).toString()}
                 >
                   <Link href={path}>{name}</Link>
                 </MenuItem>

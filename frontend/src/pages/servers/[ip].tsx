@@ -122,7 +122,7 @@ const Info = ({ data }: { data: All }) => (
             {data.description ? (
               <Text>{data.description}</Text>
             ) : (
-              <Text color="teal">This server has no description</Text>
+              <Text color="#9083D2">This server has no description</Text>
             )}
           </Box>
 
@@ -175,7 +175,7 @@ const Info = ({ data }: { data: All }) => (
           </Stack>
           <Divider style={{ marginTop: "1.2em" }} />
           <Flex justifyContent="start" m="0">
-            <Text color="teal" m="0">
+            <Text color="#9083D2" m="0">
               <time>
                 {`Last updated ${formatDistance(
                   new Date(data.lastUpdated),

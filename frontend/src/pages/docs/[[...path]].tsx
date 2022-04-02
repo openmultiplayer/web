@@ -32,6 +32,8 @@ const Page = (props: Props) => {
     props.source &&
     hydrate(props.source, { components: components as Components });
 
+  const codeColor = useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-700)');
+
   useEffect(() => setIsMounted(true), []);
 
   if (props.error) {
@@ -74,6 +76,11 @@ const Page = (props: Props) => {
           <h1>{props?.data?.title}</h1>
           {/* <MDXRemote {...props.source} components={components} /> */}
           {content}
+          <style global jsx>{`
+            pre, code {
+              background: ${codeColor};
+            }
+          `}</style>
         </section>
         <nav>{/* TODO: Table of contents */}</nav>
       </div>
@@ -103,6 +110,7 @@ import Search from "src/components/Search";
 import { deriveError } from "src/fetcher/fetcher";
 import { renderToString } from "src/mdx-helpers/ssr";
 import { Components } from "@mdx-js/react";
+import { useColorModeValue } from "@chakra-ui/react";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>

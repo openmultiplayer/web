@@ -1,4 +1,5 @@
 import { Flex, Link } from "@chakra-ui/layout";
+import { useColorModeValue } from "@chakra-ui/react";
 import NextLink from "next/link";
 import React, { FC } from "react";
 import { WEB_ADDRESS } from "src/config";
@@ -13,7 +14,7 @@ const MemberLink: FC<Props> = ({ user }) => {
   return (
     <NextLink href={`${WEB_ADDRESS}/members/${user.id}`} passHref>
       <Link whiteSpace="nowrap">
-        <Flex fontStyle="normal" color="black" gridGap="0.5em">
+        <Flex fontStyle="normal" color={useColorModeValue('black', 'white')} gridGap="0.5em">
           <ProfilePicture id={user.id} />
 
           <span>

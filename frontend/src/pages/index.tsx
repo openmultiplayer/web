@@ -9,7 +9,10 @@ import {
   Flex,
   Heading,
   HStack,
+  Link,
   Text,
+  useColorMode,
+  useColorModeValue,
   VStack,
 } from "@chakra-ui/react";
 import { GetStaticPropsContext } from "next";
@@ -23,6 +26,7 @@ import { MarkdownContent } from "src/mdx-helpers/types";
 import Card from "../components/site/Card";
 //Styles
 import heroStyles from "../styles/Hero.module.css";
+import Roads from "src/components/icons/Roads";
 
 const DownloadButton = () => {
   return (
@@ -48,7 +52,32 @@ const DownloadButton = () => {
   );
 };
 
+const DocumentationButton = () => {
+  return (
+    <Button
+      rightIcon={<ChevronRightIcon />}
+      border="1px solid #9083D2"
+      bg="transparent"
+      color="#9083D2F2"
+      _hover={{
+        backgroundColor: "#9083D240",
+      }}
+      _active={{
+        backgroundColor: "#9083D240",
+      }}
+      _focus={{
+        outline: "2px solid #695AD3",
+        transition: "outline 0.3s",
+      }}
+    >
+      Documentation
+    </Button>
+  )
+}
+
 const Home = () => {
+  const { colorMode } = useColorMode();
+
   const features = [
     {
       heading: "Fully backwards compatible to make switching a breeze",
@@ -187,37 +216,14 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton />
                   </Box>
-                  <NextLink href="/docs">
-                    <Button
-                      rightIcon={<ChevronRightIcon />}
-                      border="1px solid #9083D2"
-                      bg="transparent"
-                      color="#9083D2"
-                      _hover={{
-                        backgroundColor: "#f4f2ff",
-                      }}
-                      _active={{
-                        backgroundColor: "#f4f2ff",
-                      }}
-                      _focus={{
-                        outline: "2px solid #695AD3",
-                        transition: "outline 0.3s",
-                      }}
-                    >
-                      Documentation
-                    </Button>
-                  </NextLink>
+                  <Link href="/docs" _hover={{ textDecoration: 'none' }}>
+                    <DocumentationButton />
+                  </Link>
                 </Flex>
               </HStack>
             </VStack>
             <Box display={{ base: "none", md: "block" }} py="2em">
-              <Image
-                src={"/images/assets/roads.svg"}
-                alt="map of san andreas"
-                id={heroStyles.map}
-                width="400"
-                height="400"
-              />
+              <Roads width="400" height="400" dark={colorMode === 'dark'}/>
             </Box>
           </Flex>
           <Center>
@@ -240,26 +246,16 @@ const Home = () => {
           </Center>
         </Box>
         <Box align="center" my="4em">
-          <Text color="#281685" fontSize="md">
+          <Text color={useColorModeValue('#281685', 'white')} fontSize="md">
             Updates & Features
           </Text>
           <Text fontSize="3xl" fontWeight="900" mt="0">
             What is improved and new?
           </Text>
           <VStack spacing="6em" my="3em" px="1em">
-            {features.map((feature, index) => {
-              return (
-                <Card
-                  key={index}
-                  heading={feature.heading}
-                  bodyText={feature.bodyText}
-                  buttonLink={feature.buttonLink}
-                  buttonText={feature.buttonText}
-                  img={feature.img}
-                  imgAlt={feature.imgAlt}
-                />
-              );
-            })}
+            {features.map((feature, index) => (
+              <Card key={index} {...feature} />
+            ))}
 
             <Box maxW="60em">
               <Heading>Ready to get started?</Heading>
@@ -268,26 +264,9 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton />
                   </Box>
-                  <NextLink href="/docs">
-                    <Button
-                      rightIcon={<ChevronRightIcon />}
-                      border="1px solid #9083D2"
-                      bg="transparent"
-                      color="#9083D2"
-                      _hover={{
-                        backgroundColor: "#f4f2ff",
-                      }}
-                      _active={{
-                        backgroundColor: "#f4f2ff",
-                      }}
-                      _focus={{
-                        outline: "2px solid #695AD3",
-                        transition: "outline 0.3s",
-                      }}
-                    >
-                      Documentation
-                    </Button>
-                  </NextLink>
+                  <Link href="/docs" _hover={{ textDecoration: 'none' }}>
+                    <DocumentationButton />
+                  </Link>
                 </Flex>
               </HStack>
             </Box>
