@@ -66,7 +66,7 @@ const NavMenu: FC<Props> = ({ items, route }) => {
                 <MenuItem
                   key={path}
                   display={ON_MOBILE}
-                  current={isCurrent(path)}
+                  current={String(isCurrent(path))}
                 >
                   <Link href={path}>{name}</Link>
                 </MenuItem>
