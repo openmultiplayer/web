@@ -67,12 +67,12 @@ const NavMenu: FC<Props> = ({ items, route }) => {
             />
           ))}
 
-          <IconButton as="div" size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
+          <IconButton cursor="pointer" as="div" size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
             {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
           </IconButton>
         </Flex>
 
-        <IconButton display={ON_MOBILE} size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
+        <IconButton cursor="pointer" display={ON_MOBILE} size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
            {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
         </IconButton>
 
