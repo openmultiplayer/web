@@ -1,7 +1,7 @@
-import { Box, HStack, Stack, VStack, Text } from "@chakra-ui/react";
+import { Box, HStack, Stack, VStack, Text, Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Image from "next/image";
-import Link from "next/link";
+import NextLink from "next/link";
 import cardStyles from "../../styles/Card.module.css";
 import React, { VFC } from "react";
 
@@ -25,7 +25,7 @@ const Card: VFC<CardProps> = ({
     <Box
       maxW="60em"
       className={cardStyles.card}
-      px={{ base: "1em", md: "2em" }}
+      px={{ base: "1em", md: "4em" }}
       py={{ base: "3em", md: "4em" }}
     >
       <HStack
@@ -41,15 +41,20 @@ const Card: VFC<CardProps> = ({
           spacing="1em"
           mt={{ base: "1em", md: "0" }}
         >
-          <VStack align="left" spacing="0.2em">
+          <VStack align="left" spacing="0.6em">
             <Text fontWeight="700" fontSize="xl">
               {heading}
             </Text>
             <Text color="#505050">{bodyText}</Text>
           </VStack>
-          <HStack alignSelf={{ base: "center", md: "start" }}>
-            <Link href="/" passHref>
-              <a
+
+          <NextLink href={buttonLink} passHref>
+            <HStack
+              align="center"
+              spacing="0.2em"
+              justify={{ base: "center", md: "left" }}
+            >
+              <Link
                 href={buttonLink}
                 style={{
                   color: "rgba(40, 22, 133, 1)",
@@ -58,17 +63,17 @@ const Card: VFC<CardProps> = ({
                 }}
               >
                 {buttonText}
-                <ExternalLinkIcon w={4} h={4} />
-              </a>
-            </Link>
-          </HStack>
+              </Link>
+              <ExternalLinkIcon w={4} h={4} color="rgba(40, 22, 133, 1)" />
+            </HStack>
+          </NextLink>
         </Stack>
         <Box>
           <Image
             src={img}
             alt={imgAlt}
-            width="190"
-            height="180"
+            width="180"
+            height="160"
             quality="100"
           />
         </Box>
