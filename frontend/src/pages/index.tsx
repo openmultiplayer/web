@@ -9,6 +9,7 @@ import {
   Flex,
   Heading,
   HStack,
+  Link,
   Text,
   useColorMode,
   useColorModeValue,
@@ -26,7 +27,6 @@ import Card from "../components/site/Card";
 //Styles
 import heroStyles from "../styles/Hero.module.css";
 import Roads from "src/components/icons/Roads";
-import { useRouter } from "next/router";
 
 const DownloadButton = () => {
   return (
@@ -53,8 +53,6 @@ const DownloadButton = () => {
 };
 
 const DocumentationButton = () => {
-  const router = useRouter();
-
   return (
     <Button
       rightIcon={<ChevronRightIcon />}
@@ -71,7 +69,6 @@ const DocumentationButton = () => {
         outline: "2px solid #695AD3",
         transition: "outline 0.3s",
       }}
-      onClick={() => router.push('/docs')}
     >
       Documentation
     </Button>
@@ -219,9 +216,9 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton />
                   </Box>
-                  <NextLink href="/docs">
+                  <Link href="/docs" _hover={{ textDecoration: 'none' }}>
                     <DocumentationButton />
-                  </NextLink>
+                  </Link>
                 </Flex>
               </HStack>
             </VStack>
@@ -267,9 +264,9 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton />
                   </Box>
-                  <NextLink href="/docs">
+                  <Link href="/docs" _hover={{ textDecoration: 'none' }}>
                     <DocumentationButton />
-                  </NextLink>
+                  </Link>
                 </Flex>
               </HStack>
             </Box>
