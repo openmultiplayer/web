@@ -26,6 +26,7 @@ import Card from "../components/site/Card";
 //Styles
 import heroStyles from "../styles/Hero.module.css";
 import Roads from "src/components/icons/Roads";
+import { useRouter } from "next/router";
 
 const DownloadButton = () => {
   return (
@@ -52,6 +53,8 @@ const DownloadButton = () => {
 };
 
 const DocumentationButton = () => {
+  const router = useRouter();
+
   return (
     <Button
       rightIcon={<ChevronRightIcon />}
@@ -68,6 +71,7 @@ const DocumentationButton = () => {
         outline: "2px solid #695AD3",
         transition: "outline 0.3s",
       }}
+      onClick={() => router.push('/docs')}
     >
       Documentation
     </Button>
@@ -252,19 +256,9 @@ const Home = () => {
             What is improved and new?
           </Text>
           <VStack spacing="6em" my="3em" px="1em">
-            {features.map((feature, index) => {
-              return (
-                <Card
-                  key={index}
-                  heading={feature.heading}
-                  bodyText={feature.bodyText}
-                  buttonLink={feature.buttonLink}
-                  buttonText={feature.buttonText}
-                  img={feature.img}
-                  imgAlt={feature.imgAlt}
-                />
-              );
-            })}
+            {features.map((feature, index) => (
+              <Card key={index} {...feature} />
+            ))}
 
             <Box maxW="60em">
               <Heading>Ready to get started?</Heading>
