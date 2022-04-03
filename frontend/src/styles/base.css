@@ -12,14 +12,6 @@ body {
 }
 
 /* Necessary to prevent overflow issues in flexbox. */
-pre {
-  max-width: 100%;
-  overflow-x: auto;
-  background-color: rgb(219, 221, 233);
-  padding: 0.5em;
-  border-radius: 0.2em;
-}
-
 :not(pre) > code {
   background-color: var(--ifm-code-background);
   border-radius: var(--ifm-code-border-radius);

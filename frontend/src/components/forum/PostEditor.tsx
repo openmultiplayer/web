@@ -1,9 +1,10 @@
-import { Box, Button, HStack, Input, Stack } from "@chakra-ui/react";
+import { Box, Button, HStack, Input, Stack, useColorMode } from "@chakra-ui/react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FC, useCallback, useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import Editor from "rich-markdown-editor";
 import { api } from "src/fetcher/fetcher";
+import { editorDark, editorLight } from 'src/styles/theme'
 import {
   SearchResults,
   SearchResultsSchema,
@@ -58,6 +59,7 @@ const PostEditor: FC<Props> = ({
       ? undefined
       : zodResolver(PostPayloadSchema),
   });
+  const { colorMode } = useColorMode();
 
   const _onSubmit = useCallback(
     async (data: PostPayload) => {
@@ -126,6 +128,7 @@ const PostEditor: FC<Props> = ({
             onClick={body ? () => ({}) : handleInputClick}
           >
             <Editor
+              theme={colorMode === 'dark' ? editorDark : editorLight}
               key={resetKey}
               ref={editorInput}
               className="mv2"
