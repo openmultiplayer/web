@@ -33,5 +33,3 @@ public OnGameModeInit()
 This function was removed in SA-MP 0.3. This was due to crashes it caused.
 
 :::
-
-## Related Functions

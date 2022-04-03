@@ -25,7 +25,6 @@ public OnNPCDisconnect(reason[])
 
 ## Related Functions
 
-
 - [OnNPCConnect](../callbacks/OnNPCConnect): Gets called when the NPC successfully connects to the server.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Gets called when a player leaves the server.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Gets called when a player connects to the server.

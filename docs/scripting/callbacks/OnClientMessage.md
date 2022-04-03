@@ -30,5 +30,3 @@ public OnClientMessage(color, text[])
     }
 }
 ```
-
-## Related Functions

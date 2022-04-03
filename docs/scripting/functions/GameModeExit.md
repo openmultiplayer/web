@@ -16,5 +16,3 @@ if (OneTeamHasWon)
     GameModeExit();
 }
 ```
-
-## Related Functions

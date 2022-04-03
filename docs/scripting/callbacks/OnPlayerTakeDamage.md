@@ -73,5 +73,3 @@ The weaponid will return 37 (flame thrower) from any fire sources (e.g. molotov,
 GetPlayerHealth and GetPlayerArmour will return the old amounts of the player before this callback. Always check if issuerid is valid before using it as an array index.
 
 :::
-
-## Related Functions
