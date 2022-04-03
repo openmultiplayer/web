@@ -33,6 +33,7 @@ const Page = (props: Props) => {
     hydrate(props.source, { components: components as Components });
 
   const codeColor = useColorModeValue('var(--chakra-colors-gray-200)', 'var(--chakra-colors-gray-700)');
+  const tableRowBgColor = useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-700)');
 
   useEffect(() => setIsMounted(true), []);
 
@@ -97,7 +98,7 @@ const Page = (props: Props) => {
             }
 
             table tr:nth-child(2n) {
-              background-color: ${useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-700)')};
+              background-color: ${tableRowBgColor};
             }
 
             table td,
