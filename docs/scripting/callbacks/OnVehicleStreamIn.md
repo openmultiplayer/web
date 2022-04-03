@@ -34,5 +34,3 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 ## Notes
 
 <TipNPCCallbacks />
-
-## Related Functions

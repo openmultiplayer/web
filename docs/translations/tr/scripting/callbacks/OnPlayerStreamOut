@@ -1,6 +1,6 @@
 ---
 title: OnPlayerStreamOut
-description: Bu fonksiyon, bir oyuncu başka bir oyuncunun istemcisinden stream alanından çıktığında çağrılır. 
+description: Bu fonksiyon, bir oyuncu başka bir oyuncunun istemcisinden stream alanından çıktığında çağrılır.
 tags: ["player"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Açıklama
 
-Bu fonksiyon, bir oyuncu başka bir oyuncunun istemcisinden stream alanından çıktığında çağrılır. 
+Bu fonksiyon, bir oyuncu başka bir oyuncunun istemcisinden stream alanından çıktığında çağrılır.
 
 | Parametre   | Açıklama                                        |
 | ----------- | ----------------------------------------------- |
@@ -17,7 +17,7 @@ Bu fonksiyon, bir oyuncu başka bir oyuncunun istemcisinden stream alanından ç
 
 ## Çalışınca Vereceği Sonuçlar
 
-Filterscript komutlarında her zaman ilk olarak çağrılır. 
+Filterscript komutlarında her zaman ilk olarak çağrılır.
 
 ## Örnekler
 
@@ -34,5 +34,3 @@ public OnPlayerStreamOut(playerid, forplayerid)
 ## Notlar
 
 <TipNPCCallbacks />
-
-## Related Functions

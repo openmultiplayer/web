@@ -34,5 +34,3 @@ public OnPlayerStreamIn(playerid, forplayerid)
 ## Notes
 
 <TipNPCCallbacks />
-
-## Related Functions

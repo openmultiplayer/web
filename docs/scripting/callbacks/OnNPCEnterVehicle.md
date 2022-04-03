@@ -27,5 +27,4 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 
 ## Related Functions
 
-
 - [OnNPCExitVehicle](../callbacks/OnNPCExitVehicle): Gets called when a NPC leaves a Vehicle.

@@ -32,5 +32,3 @@ printf("The value is: %d", clamp(valueA, 5, 10)); // output: "The value is: 5" b
 printf("The value is: %d", clamp(valueB, 5, 10)); // output: "The value is: 7" because 7 is between 5 and 10.
 printf("The value is: %d", clamp(valueC, 5, 10)); // output: "The value is: 10" because 100 is more than 10.
 ```
-
-## Related Functions

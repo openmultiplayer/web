@@ -24,5 +24,3 @@ The absolute value of the float (as a float value).
 floatabs(47.0); // This will return 47.0.
 floatabs(-47.0); // This will return the same.
 ```
-
-## Related Functions

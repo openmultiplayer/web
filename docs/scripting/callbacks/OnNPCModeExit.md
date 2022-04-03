@@ -23,5 +23,4 @@ public OnNPCModeExit()
 
 ## Related Functions
 
-
 - [OnNPCModeInit](../callbacks/OnNPCModeInit): Gets called when a NPC script loaded.
