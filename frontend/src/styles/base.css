@@ -22,54 +22,32 @@ body {
   padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
 }
 
-:root {
-  --ifm-table-cell-padding: 0.75rem;
-  --ifm-table-background: transparent;
-  --ifm-table-stripe-background: var(--ifm-color-emphasis-100);
-  --ifm-table-border-width: 1px;
-  --ifm-table-border-color: var(--ifm-color-emphasis-300);
-  --ifm-table-head-background: inherit;
-  --ifm-table-head-color: inherit;
-  --ifm-table-head-font-weight: var(--ifm-font-weight-bold);
-  --ifm-table-cell-color: inherit;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
   margin-bottom: 1rem;
-  margin-bottom: var(--ifm-spacing-vertical);
   margin-top: 0;
   overflow: auto;
   width: 100%;
 }
 table tr {
   background-color: transparent;
-  background-color: var(--ifm-table-background);
   border-top: 1px solid #dadde1;
-  border-top: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 table tr:nth-child(2n) {
   background-color: #f5f6f7;
-  background-color: var(--ifm-table-stripe-background);
 }
 table td,
 table th {
   border: 1px solid #dadde1;
-  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
   padding: 0.75rem;
-  padding: var(--ifm-table-cell-padding);
 }
 table th {
   background-color: inherit;
-  background-color: var(--ifm-table-head-background);
   color: inherit;
-  color: var(--ifm-table-head-color);
   font-weight: 700;
-  font-weight: var(--ifm-table-head-font-weight);
 }
 table td {
   color: inherit;
-  color: var(--ifm-table-cell-color);
 }

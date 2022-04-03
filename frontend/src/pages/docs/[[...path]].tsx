@@ -80,6 +80,41 @@ const Page = (props: Props) => {
             pre, code {
               background: ${codeColor};
             }
+
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+              display: block;
+              margin-bottom: 1rem;
+              margin-top: 0;
+              overflow: auto;
+              width: 100%;
+            }
+
+            table tr {
+              background-color: transparent;
+              border-top: 1px solid #dadde1;
+            }
+
+            table tr:nth-child(2n) {
+              background-color: ${useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-700)')};
+            }
+
+            table td,
+            table th {
+              border: 1px solid #dadde1;
+              padding: 0.75rem;
+            }
+
+            table th {
+              background-color: inherit;
+              color: inherit;
+              font-weight: 700;
+            }
+
+            table td {
+              color: inherit;
+            }
           `}</style>
         </section>
         <nav>{/* TODO: Table of contents */}</nav>
