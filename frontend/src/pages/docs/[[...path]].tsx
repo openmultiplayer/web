@@ -102,6 +102,7 @@ import {
 } from "next";
 import matter from "gray-matter";
 import glob from "glob";
+import admonitions from "remark-admonitions";
 import { concat, filter, flatten, flow, map } from "lodash/fp";
 // import { serialize } from "next-mdx-remote/serialize";
 
@@ -138,8 +139,7 @@ export async function getStaticProps(
     components,
     mdxOptions: {
       remarkPlugins: [
-        //
-        // admonitions,
+        admonitions,
         // remarkGfm,
       ],
     },
