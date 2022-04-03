@@ -18,8 +18,8 @@ import {
   MoonIcon,
   SunIcon
 } from '@chakra-ui/icons';
-import NextLink from "next/link";
-import { FC } from "react";
+import { FC, useRef } from "react";
+import { useRouter } from "next/router";
 import { useAuth } from "src/auth/hooks";
 import LanguageSelect from "./LanguageSelect";
 
@@ -42,6 +42,8 @@ const NavMenu: FC<Props> = ({ items, route }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { user } = useAuth();
   const { colorMode, toggleColorMode } = useColorMode();
+  const languageRef = useRef<{ open: () => void }>(null);
+  const router = useRouter()
 
   const isCurrent = (path: string) => path === route;
 
@@ -50,11 +52,11 @@ const NavMenu: FC<Props> = ({ items, route }) => {
       <Flex gridGap={1} alignItems={"center"} justifyContent={"space-between"}>
         <Flex gridGap={1} display={ON_DESKTOP}>
           {items.map((link) => (
-            <NavLink
-              key={link.path}
-              item={link}
-              current={isCurrent(link.path)}
-            />
+              <NavLink
+                key={link.path}
+                item={link}
+                current={isCurrent(link.path)}
+              />
           ))}
 
           <IconButton cursor="pointer" as="div" size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
@@ -91,17 +93,17 @@ const NavMenu: FC<Props> = ({ items, route }) => {
 
             <MenuGroup>
               {user ? (
-                <MenuItem>
-                  <Link href="/dashboard">Dashboard</Link>
+                <MenuItem onClick={() => router.push('/dashboard')}>
+                  Dashboard
                 </MenuItem>
               ) : (
-                <MenuItem>
-                  <Link href="/login">Login</Link>
+                <MenuItem onClick={() => router.push('/login')}>
+                  Login
                 </MenuItem>
               )}
 
-              <MenuItem>
-                <LanguageSelect>Language</LanguageSelect>
+              <MenuItem onClick={()=> languageRef.current?.open()}>
+                <LanguageSelect title="Language" ref={languageRef} />
               </MenuItem>
             </MenuGroup>
           </MenuList>
@@ -112,18 +114,13 @@ const NavMenu: FC<Props> = ({ items, route }) => {
 };
 
 type NavLinkProps = { item: NavItem; current: boolean };
+
 const NavLink: FC<NavLinkProps> = ({ item, current }) => (
-  <Button
-    // HACK: We want the button styling here but semantically, this is not a
-    // button, it's a link. So render this as a <div> only.
-    as="div"
-    variant={current ? "outline" : "ghost"}
-    size="sm"
-  >
-    <NextLink href={item.path} passHref>
-      <Link>{item.name}</Link>
-    </NextLink>
-  </Button>
+  <Link _hover={undefined} href={item.path} _focus={{ outline: 'none', border: 'none' }}>
+      <Button as="div" variant={current ? "outline" : "ghost"} size="sm">
+        {item.name}
+      </Button>
+    </Link>
 );
 
 export default NavMenu;

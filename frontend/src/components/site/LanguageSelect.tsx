@@ -17,13 +17,23 @@ import {
 } from "@chakra-ui/radio";
 import { VisuallyHidden } from "@chakra-ui/visually-hidden";
 import { useRouter } from "next/router";
-import { FC, useCallback, useState } from "react";
+import { FC, forwardRef, useCallback, useImperativeHandle, useState } from "react";
 import getLanguageName from "src/utils/getLanguageName";
 
-const LanguageSelect: FC = ({ children }) => {
+interface Props {
+  title: string;
+}
+
+const LanguageSelect =  forwardRef(({ title }: Props, ref) => {
   const { locale, locales, pathname, asPath, query, push } = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [newLocale, setNewLocale] = useState(locale);
+
+  useImperativeHandle(ref, () => ({
+    open: () => {
+      onOpen()
+    }
+  }));
 
   const { getRadioProps } = useRadioGroup({
     name: "language",
@@ -53,7 +63,7 @@ const LanguageSelect: FC = ({ children }) => {
 
   return (
     <>
-      <span onClick={onOpen}>{children}</span>
+      <span>{title}</span>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
@@ -89,7 +99,7 @@ const LanguageSelect: FC = ({ children }) => {
       </Modal>
     </>
   );
-};
+});
 
 const LanguageSelectItem: FC<UseRadioProps> = (props) => {
   const { getInputProps, getCheckboxProps } = useRadio(props);
