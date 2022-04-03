@@ -32,7 +32,7 @@ const Page = (props: Props) => {
     props.source &&
     hydrate(props.source, { components: components as Components });
 
-  const codeColor = useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-700)');
+  const codeColor = useColorModeValue('var(--chakra-colors-gray-200)', 'var(--chakra-colors-gray-700)');
 
   useEffect(() => setIsMounted(true), []);
 
