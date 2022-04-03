@@ -1,4 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
+import { mode } from '@chakra-ui/theme-tools';
+import { theme as editorTheme } from 'rich-markdown-editor'
 
 const fonts = {
   body: `Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif`,
@@ -7,7 +9,7 @@ const fonts = {
 };
 
 const styles = {
-  global: {
+  global: (props: any) => ({
     h1: {
       marginTop: "0.5em",
       fontFamily: "english-grotesque",
@@ -44,7 +46,14 @@ const styles = {
         textDecoration: "underline",
       },
     },
-  },
+   pre: {
+    maxWidth: '100%',
+    overflowX: 'auto',
+    backgroundColor: mode('gray.200', 'gray.600')(props),
+    padding: '0.5em',
+    borderRadius: '0.2em'
+   }
+  }),
 };
 
 const colors = {
@@ -55,6 +64,20 @@ const colors = {
     bluepurple: "#8477B7",
     white: "#F3F2F5",
   },
+};
+
+export const editorLight = {
+  ...editorTheme
+};
+
+export const editorDark = {
+  ...editorTheme,
+  quote: "blue",
+  background: 'gray.900',
+  text: 'brand.white',
+  code: 'brand.white',
+  codeBackground: 'rgba(0, 0, 0, 0.3)',
+  codeBorder: editorTheme.lightBlack,
 };
 
 const theme = extendTheme({ colors, fonts, styles });

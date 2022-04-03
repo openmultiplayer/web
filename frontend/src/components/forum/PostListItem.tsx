@@ -20,6 +20,7 @@ import {
   MenuOptionGroup,
   Stack,
   useClipboard,
+  useColorModeValue,
   useToast,
 } from "@chakra-ui/react";
 import { ChakraProps } from "@chakra-ui/system";
@@ -208,7 +209,8 @@ const PostListItem: FC<Props> = ({
   const deletedPostColour = "red.50";
   const deletedBoxShadow = `inset 0 0 0.5em var(--chakra-colors-red-100)`;
 
-  const backgroundColor = post.deletedAt ? deletedPostColour : "white";
+  const postListItemColorDark = useColorModeValue('white', 'gray.700');
+  const backgroundColor = post.deletedAt ? deletedPostColour : postListItemColorDark;
   const boxShadow = post.deletedAt ? deletedBoxShadow : "white";
 
   return (
