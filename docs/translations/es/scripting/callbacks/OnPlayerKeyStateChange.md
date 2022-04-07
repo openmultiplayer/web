@@ -35,8 +35,6 @@ Las teclas direccionales no desencadenan OnPlayerKeyStateChange (arriba, abajo, 
 
 ## Funciones Relacionadas
 
-    #test
-
 - [GetPlayerKeys](../functions/GetPlayerKeys): Comprueba qué teclas está apretando un jugador.
 
 ## Información adicional
