@@ -35,8 +35,6 @@ Tipke sa smjerom neće uzrokovati pozivanje `OnPlayerKeyStateChange` (gore/dole/
 
 ## Srodne Funkcije
 
-    #test
-
 - [GetPlayerKeys](../functions/GetPlayerKeys.md): Provjeri koje tipke igrač drži.
 
 ## Dodatne Informacije
