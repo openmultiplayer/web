@@ -29,7 +29,7 @@ It is always called first in filterscripts.
 | 1  | Quit          | The player purposefully quit, either using the /quit (/q) command or via the pause menu.  |
 | 2  | Kick/Ban      | The player was kicked or banned by the server. |
 | 3  | Custom        | Used by some libraries.  Reserved for modes' private uses. |
-| 4  | Mode End      | The current mode is ending so disconnecting all players from it.  They are still on the server. |
+| 4  | Mode End      | The current mode is ending so disconnecting all players from it (they are still on the server).  Added by fixes.inc. |
 
 ## Examples
 
