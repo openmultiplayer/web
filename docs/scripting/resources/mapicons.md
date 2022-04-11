@@ -8,7 +8,7 @@ description: A list of Map Icons.
 | 0   | ![](/images/mapIcons/icon0.gif)  | Colored Square/Triangle (Dynamic) | Can be used in any colour. Used for Single Player objectives. Displays as triangle when the marker isn't at the same ground level with a player                                                                                         |
 | 1   | ![](/images/mapIcons/icon1.gif)  | White Square                      | 2 times bigger than ID 0 and without the border                  |
 | 2   | ![](/images/mapIcons/icon2.gif)  | Player position                   | Will be used on the minimap by default                           |
-| 3   | ![](/images/mapIcons/icon3.gif)  | Player (Menu Map)                 | Your position when on the large map                              |
+| 3   | ![](/images/mapIcons/icon3.gif)  | Player (Menu Map)                 | Your position when on the large map in the pause menu            |
 | 4   | ![](/images/mapIcons/icon4.gif)  | North                             | Always appears on the radar toward the north                     |
 | 5   | ![](/images/mapIcons/icon5.gif)  | Air Yard                          |                                                                  |
 | 6   | ![](/images/mapIcons/icon6.gif)  | Ammu-Nation                       |                                                                  |
