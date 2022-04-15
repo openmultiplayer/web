@@ -39,7 +39,7 @@ Puteți să vă logați dacă tastați `/rcon login parola` în joc sau dacă fo
 
 Parola va fi aceeași ca și în [server.cfg](server.cfg).
 
-### Despre ban
+### Cum să adăugați interdicții
 
 ##### samp.ban
 
