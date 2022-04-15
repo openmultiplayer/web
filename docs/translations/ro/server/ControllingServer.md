@@ -12,7 +12,7 @@ descriere: Comenzi utile pentru controlarea unui server.
 - Folosiți RCON ca să schimbați gamemode-ul, cum a fost descris mai sus (2.1)
 - Alternativ, puteți adăuga noul gamemode într-o rotație, cum a fost, de asemenea, descris mai sus (2.3)
 
-### Cum să folosiți un filterscript?
+### Cum să folosiți un filterscript
 
 La fel ca și folosirea unui gamemode custom, doar că:
 
