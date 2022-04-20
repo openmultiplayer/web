@@ -1,4 +1,3 @@
-import NextLink from "next/link";
 //Icons
 import { ArrowDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 //Chakra Imports
@@ -30,25 +29,29 @@ import Roads from "src/components/icons/Roads";
 
 const DownloadButton = () => {
   return (
-    <Button
-      bg="#9083D2"
-      color="white"
-      rightIcon={<ArrowDownIcon />}
-      _hover={{
-        bgColor: "#7466D4",
-      }}
-      _active={{
-        bgColor: "#5A4CBB",
-      }}
-      _focus={{
-        outline: "2px solid #695AD3",
-        transition: "outline 0.3s",
-      }}
-      disabled
-      title="We're not ready yet!"
+    <Link
+      href="https://github.com/openmultiplayer/server-beta"
+      _hover={{ textDecoration: "none" }}
     >
-      Download
-    </Button>
+      <Button
+        bg="#9083D2"
+        color="white"
+        rightIcon={<ArrowDownIcon />}
+        _hover={{
+          bgColor: "#7466D4",
+        }}
+        _active={{
+          bgColor: "#5A4CBB",
+        }}
+        _focus={{
+          outline: "2px solid #695AD3",
+          transition: "outline 0.3s",
+        }}
+        title="Beta Server has been launched"
+      >
+        Download Beta
+      </Button>
+    </Link>
   );
 };
 
@@ -72,8 +75,8 @@ const DocumentationButton = () => {
     >
       Documentation
     </Button>
-  )
-}
+  );
+};
 
 const Home = () => {
   const { colorMode } = useColorMode();
@@ -213,17 +216,15 @@ const Home = () => {
               </Text>
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
-                  <Box align="center">
-                    <DownloadButton />
-                  </Box>
-                  <Link href="/docs" _hover={{ textDecoration: 'none' }}>
+                  <DownloadButton />
+                  <Link href="/docs" _hover={{ textDecoration: "none" }}>
                     <DocumentationButton />
                   </Link>
                 </Flex>
               </HStack>
             </VStack>
             <Box display={{ base: "none", md: "block" }} py="2em">
-              <Roads width="400" height="400" dark={colorMode === 'dark'}/>
+              <Roads width="400" height="400" dark={colorMode === "dark"} />
             </Box>
           </Flex>
           <Center>
@@ -246,7 +247,7 @@ const Home = () => {
           </Center>
         </Box>
         <Box align="center" my="4em">
-          <Text color={useColorModeValue('#281685', 'white')} fontSize="md">
+          <Text color={useColorModeValue("#281685", "white")} fontSize="md">
             Updates & Features
           </Text>
           <Text fontSize="3xl" fontWeight="900" mt="0">
@@ -264,7 +265,7 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton />
                   </Box>
-                  <Link href="/docs" _hover={{ textDecoration: 'none' }}>
+                  <Link href="/docs" _hover={{ textDecoration: "none" }}>
                     <DocumentationButton />
                   </Link>
                 </Flex>
