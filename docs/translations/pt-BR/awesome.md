@@ -76,30 +76,30 @@ Simple structured logger which provides a simple set of functions for logging an
 - **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Permite gerenciar arquivos e pastas a partir da pasta root (não se limitando a pasta scriptfiles no diretório do servidor).
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - Permite analizar o tráfego RakNet.
 - **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - Plugin para o SA-MP que permite adicionar timers precisos, escrito em Rust.
-- **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - Extends the possibilities of the Pawn scripting language with new constructs, data types, and programming techniques.
-- **[PAWN memory access](https://github.com/BigETI/pawn-memory)** - Allows to allocate and free memory from heap in PAWN.
-- **[Native Fallback](https://github.com/IllidanS4/NativeFallback)** - SA-MP plugin that provides fallback implementation to unregistered natives.
-- **[YSF](https://github.com/IllidanS4/YSF)** - A Plugin whose purpose is to pull out maximum possibilities from the server, mainly with memory editing and hooking.
-- **[SKY](https://github.com/oscar-broman/SKY)** - This plugin provides low-level functions to let Pawn scripts do powerful things.
-- **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - Adds support for regular expressions in Pawn.
-- **[pawn-scraper](https://github.com/Sreyas-Sreelal/pawn-scraper)** - A powerful scraper plugin that provides interface for utlising html_parsers and css selectors in pawn.
-- **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - Allows you to use TOTP authentication in a sa-mp gamemode.
-- **[DNS Plugin](https://github.com/samp-incognito/samp-dns-plugin)** - This plugin provides functionality for DNS lookups and reverse DNS lookups.
-- **[MapAndreas](https://github.com/Southclaws/samp-plugin-mapandreas)** - Allows you to load different height maps and check the min height for x,y coordinates.
-- **[ColAndreas](https://github.com/Pottus/ColAndreas)** - Creates a simulation of the San Andreas world. Using the Bullet Physics library.
-- **[PathFinder](https://bitbucket.org/Pamdex/pathfinder/src/master)** - Allows you to calculate a route from point A to B on the San Andreas map.
-- **[Custom Query Flood Check](https://github.com/spmn/samp-custom-query-flood-check)** - Write custom protections against query flood.
-- **[sampml](https://github.com/YashasSamaga/sampml)** - Simplified machine learning toolkit and associated SAMP projects (Aimbot Detection).
-- **[TgConnector](https://github.com/Sreyas-Sreelal/tgconnector)** - A telegram connector plugin that helps to interact with telgram bots through SA-MP.
-- **[Discord connector](https://github.com/maddinat0r/samp-discord-connector)** - Allows you to control a Discord bot from within your PAWN script.
-- **[TSConnector](https://github.com/maddinat0r/samp-tsconnector)** - Allows you to control a Teamspeak3 Server from from within your PAWN script.
-- **[IRC Plugin](https://github.com/samp-incognito/samp-irc-plugin)** - Allows for the creation and management of IRC bots through the SA-MP server.
-- **[pawn-requests](https://github.com/Southclaws/pawn-requests)** - Provides an API for interacting with HTTP(S) APIs with support for text and JSON data types.
-- **[pawn-redis](https://github.com/Southclaws/pawn-redis)** - Granting access to a fast in-memory database and asynchronous message channels between other programs.
-- **[Chrono](https://github.com/Southclaws/pawn-chrono)** - A modern Pawn library for working with dates and times.
-- **[rustext](https://github.com/ziggi/rustext)** - Fix Russian text plugin for SA-MP: GameText's, TextDraw's and Menu's.
-- **[Advanced SA NickName](https://github.com/KrYpToDeN/Advanced-SA-NickName)** - Support for any symbols in nicknames.
-- **[SAMPSON](https://github.com/Hual/SAMPSON)** - A JSON plugin for SA-MP.
+- **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - Extende a capacidade da linguagem pawn com novas constructs, data types, e técnicas de programação.
+- **[PAWN memory access](https://github.com/BigETI/pawn-memory)** - Permite alocar e liberar memória em Pawn.
+- **[Native Fallback](https://github.com/IllidanS4/NativeFallback)** - Plugin SA-MP que providência implementações de fallbacks para natives sem registro.
+- **[YSF](https://github.com/IllidanS4/YSF)** - Plugin que possibilita obter ao máximo recursos e possibilidades do servidor, feito a partir de edição de memória e hooking.
+- **[SKY](https://github.com/oscar-broman/SKY)** - Esse plugin providencia funções low-level para abrir novas possibilidades à scripts pawn, levando os mesmos a realizarem feitos incríveis.
+- **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - Adiciona suporte para expressões regulares no Pawn.
+- **[pawn-scraper](https://github.com/Sreyas-Sreelal/pawn-scraper)** - Poderoso plugin de scraper que dá acesso a uma interface para utilização de html_parsers e css selectors utilizando Pawn.
+- **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - Permite utilizar autenticação  TOTP no gamemode SA-MP.
+- **[DNS Plugin](https://github.com/samp-incognito/samp-dns-plugin)** - Esse plugin permite buscas de DNS, e buscas de DNS reversas.
+- **[MapAndreas](https://github.com/Southclaws/samp-plugin-mapandreas)** - Permite carregar diferentes alturas e realizar verificações para as coordenadas x,y.
+- **[ColAndreas](https://github.com/Pottus/ColAndreas)** - Cria uma simulação geral do mundo de San Andreas. Utilizando a Lib de  Bullet Physics.
+- **[PathFinder](https://bitbucket.org/Pamdex/pathfinder/src/master)** - Permite calcular uma rota de A até B no mapa de San Andreas.
+- **[Custom Query Flood Check](https://github.com/spmn/samp-custom-query-flood-check)** - Proteção customizada para Anti-query Flood.
+- **[sampml](https://github.com/YashasSamaga/sampml)** - Kit de machine learning simplificado associado com projetos do SA-MP. (Detecção de Aimbot)
+- **[TgConnector](https://github.com/Sreyas-Sreelal/tgconnector)** - Plugin de conexão com o Telegram que ajuda na interação com bots a partir do SA-MP.
+- **[Discord connector](https://github.com/maddinat0r/samp-discord-connector)** - Permite controlar um bot de discord juntamente com o seu script Pawn.
+- **[TSConnector](https://github.com/maddinat0r/samp-tsconnector)** - Permite controlar um servidor Teamspeak3 através do servidor SA-MP utilizando Pawn scripts.
+- **[IRC Plugin](https://github.com/samp-incognito/samp-irc-plugin)** - Permite a criação e gerenciamento de bots IRC através do servidor SA-MP.
+- **[pawn-requests](https://github.com/Southclaws/pawn-requests)** - Providencia uma API para interagir com requisições HTTP(s), com suporte para texto e JSON.
+- **[pawn-redis](https://github.com/Southclaws/pawn-redis)** - Garate acesso a um banco de dados assíncrono, rápido e integrado na memória para troca de informações com outros programas.
+- **[Chrono](https://github.com/Southclaws/pawn-chrono)** - Moderna Lib em Pawn para trabalhar com data, horas, minutos e segundos.
+- **[rustext](https://github.com/ziggi/rustext)** - Arruma as textos em russo no SA-MP: GameTexts, TextDraws e Menus.
+- **[Advanced SA NickName](https://github.com/KrYpToDeN/Advanced-SA-NickName)** - Suporte para diversos símbolos em usuários.
+- **[SAMPSON](https://github.com/Hual/SAMPSON)** - Plugin JSON para o SA-MP.
 
 ## Plugins  Client-Server
 
@@ -112,42 +112,42 @@ Simple structured logger which provides a simple set of functions for logging an
 
 ## Plugins de Criptografia
 
-- **[whirlpool](https://github.com/Southclaws/samp-whirlpool)** - Whirlpool Cryptographic plugin for SA:MP.
-- **[bcrypt](https://github.com/LassiR/bcrypt-samp)** - Bcrypt Cryptographic plugin for SA:MP.
-- **[samp-crypto](https://github.com/alextwothousand/samp-crypto)** - A list of cryptographic functions such as Argon2, Scrypt, and Bcrypt for SA:MP.
-- **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - SHA512 Cryptographic plugin for SA:MP.
+- **[whirlpool](https://github.com/Southclaws/samp-whirlpool)** - Plugin de criptografia Whirlpool para o SA:MP.
+- **[bcrypt](https://github.com/LassiR/bcrypt-samp)** - Plugin de criptografia Bcrypt para o SA:MP.
+- **[samp-crypto](https://github.com/alextwothousand/samp-crypto)** - Lista com diversas criptografias, tais como: Argon2, Scrypt, and Bcrypt para o SA-MP.
+- **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - Plugin de criptografia SHA512 para o SA:MP.
 
 ## GDK/SDKs
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - This is the bare minium that you need to develop plugins.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ Language Support for writing a gamemode for SA:MP
-- **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
-- **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# Language Support for writing a plugin for SA:MP
-- **[sampgo](https://github.com/sampgo/sampgo)** - Go Language Support for writing a gamemode/plugins for SA:MP
-- **[samp-node](https://github.com/AmyrAhmady/samp-node)** - Javascript/Typescript Language Support for writing a gamemode for SA:MP
-- **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Java Language Support for writing a gamemode for SA:MP
-- **[pySAMP](https://github.com/habecker/PySAMP)** - Python Language Support for writing a gamemode for SA:MP
-- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Rust Language Support for writing a plugin for SA:MP
-- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - Lua Language Support for writing a gamemode for SA:MP
-- **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - PHP Language Support for writing a gamemode for SA:MP
-- **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - D Language Support for writing a gamemode for SA:MP
-- **[Kamp](https://github.com/Double-O-Seven/kamp)** - Kotlin Language Support for writing a gamemode for SA:MP
+- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - Isso é o minimo que você precisa para desenvolver plugins.
+- **[sampgdk](https://github.com/Zeex/sampgdk)** - Implementação C/C++ para desenvolvimento de gamemodes para SA-MP.
+- **[SampSharp](https://github.com/ikkentim/SampSharp)** - Implementação C# para desenvolvimento de gamemodes SA-MP.
+- **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - Implementação C# para o desenovolvimento de plugins SA-MP.
+- **[sampgo](https://github.com/sampgo/sampgo)** - Implementação Go Language para o desenovolvimento de gamemodes/plugins SA-MP.
+- **[samp-node](https://github.com/AmyrAhmady/samp-node)** -  Implementação Javascript/Typescript para desenvolvimento de gamemodes SA-MP.
+- **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Implementação Java  para desenvolvimento de gamemodes SA-MP.
+- **[pySAMP](https://github.com/habecker/PySAMP)** - Implementação Python para o desenovolvimento de gamemodes SA-MP.
+- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Implementação Rust para o desenovolvimento de plugins SA-MP.
+- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - Implementação  Lua para o desenovolvimento de gamemodes SA-MP.
+- **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - Implementação PHP para o desenovolvimento de gamemodes SA-MP.
+- **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - Implementação D Language para o desenovolvimento de gamemodes SA-MP.
+- **[Kamp](https://github.com/Double-O-Seven/kamp)** - Implementação Kotlin para o desenovolvimento de gamemodes SA-MP.
 
 ## Game Modes
 
-- **[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)** - Lists of gamemodes that are compatible with open.mp.
-- **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Based PvP Survival Gamemode.
-- **[gta-open](https://github.com/PatrickGTR/gta-open)** - A Cops and robbers mode based in Los Santos.
-- **[SF-CnR](https://github.com/zeelorenc/sf-cnr)** - San Fierro Cops And Robbers Gamemode for SA-MP.
-- **[Next Generation Roleplay](https://github.com/NextGenerationGamingLLC/SA-MP-Development)** - The Next Generation Gaming, LLC SA:MP Gamemode.
-- **[SC-RP](https://github.com/seanny/SC-RP)** - A Roleplay Gamemode with MySQL support.
+- **[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)** - Lista de gamemodes compatíveis com o open.mp.
+- **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Gamode de PvP Survival.
+- **[gta-open](https://github.com/PatrickGTR/gta-open)** - Gamemode de Cops and Robbers em Los Santos.
+- **[SF-CnR](https://github.com/zeelorenc/sf-cnr)** -  Gamemode de Cops And Robbers em San Fierro para o SA-MP.
+- **[Next Generation Roleplay](https://github.com/NextGenerationGamingLLC/SA-MP-Development)** - The Next Generation Gaming, LLC SA-MP Gamemode.
+- **[SC-RP](https://github.com/seanny/SC-RP)** - Gamemode Roleplay com suporte a MySQL.
 
 ## Filterscripts
 
-- **[MapFix](https://github.com/NexiusTailer/MapFix)** - Texture bug fixes of the GTA San Andreas map.
-- **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Animation browser tool for SA:MP.
-- **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Checks if a player is an android user.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - A TextDraw editor which have some rich features.
-- **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Advanced map editor with a lot of features.
-- **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - An In-Game map editor for SA:MP.
-- **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - This is an in game map editor that will let you texture up to material index 15 (16 materials) as well as set color for that material index on objects.
+- **[MapFix](https://github.com/NexiusTailer/MapFix)** - Arruma o bug de texturas no mapa do GTA San Andreas.
+- **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Ferramenta para buscar animações para o SA-MP.
+- **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Verifica se o jogador está em dispositivo Android.
+- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Editor de TextDraw rico em possibilidades.
+- **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Editor de mapas avançado com muitos recursos.
+- **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Editor de mapas in-game para o SA-MP.
+- **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Editor de mapas in-game que permite a texturização até 15 partes (16 materiais), como também definição de cores para determinado material nas partes do objeto.
