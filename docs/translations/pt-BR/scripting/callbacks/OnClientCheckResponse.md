@@ -19,7 +19,7 @@ Essa callback é executada quando a requisição enviada pela função SendClien
 
 Sempre a primeira a ser declarada em filterscripts.
 
-## Examples
+## Exemplos
 
 ```c
 public OnPlayerConnect(playerid)
@@ -39,7 +39,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 }
 ```
 
-## Notes
+## Notas
 
 :::warning
 
