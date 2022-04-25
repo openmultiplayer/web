@@ -30,8 +30,9 @@ import Roads from "src/components/icons/Roads";
 const DownloadButton = () => {
   return (
     <Link
-      href="https://github.com/openmultiplayer/server-beta"
+      href="https://github.com/openmultiplayer/server-beta/releases"
       _hover={{ textDecoration: "none" }}
+      isExternal
     >
       <Button
         bg="#9083D2"
@@ -217,7 +218,7 @@ const Home = () => {
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <DownloadButton />
-                  <Link href="/docs" _hover={{ textDecoration: "none" }}>
+                  <Link href="/docs" _hover={{ textDecoration: "none" }} isExternal>
                     <DocumentationButton />
                   </Link>
                 </Flex>
@@ -265,7 +266,7 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton />
                   </Box>
-                  <Link href="/docs" _hover={{ textDecoration: "none" }}>
+                  <Link href="/docs" _hover={{ textDecoration: "none" }} isExternal>
                     <DocumentationButton />
                   </Link>
                 </Flex>

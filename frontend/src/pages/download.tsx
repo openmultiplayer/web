@@ -1,5 +1,5 @@
 //Icons
-import { ArrowDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import { ArrowDownIcon } from "@chakra-ui/icons";
 //Chakra Imports
 import {
   Box,
@@ -21,9 +21,16 @@ import { MarkdownContent } from "src/mdx-helpers/types";
 //Styles
 import heroStyles from "../styles/Hero.module.css";
 
-const DownloadButton = ({ link, title, text, disabled = false }) => {
+interface DownloadButtonProps {
+  link: string;
+  title: string;
+  text: string;
+  disabled?: boolean;
+}
+
+const DownloadButton = ({ link, title, text, disabled = false }: DownloadButtonProps) => {
   return (
-    <Link href={disabled || link} _hover={{ textDecoration: "none" }}>
+    <Link href={disabled ? '#' : link} _hover={{ textDecoration: "none" }} isExternal>
       <Button
         disabled={disabled}
         bg="#9083D2"
