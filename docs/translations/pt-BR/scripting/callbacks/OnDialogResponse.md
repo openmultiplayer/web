@@ -22,7 +22,7 @@ Essa callback é executada quando um player responde a um Dialog criado através
 
 Sempre a primeira a ser declarada em filterscripts, retornar 1 impedirá outros filterscripts de lerem o resultado.
 
-## Examples
+## Exemplos
 
 ```c
 // Definindo o ID do dialog para que possamos identifica-lo.
