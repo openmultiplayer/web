@@ -30,8 +30,9 @@ import Roads from "src/components/icons/Roads";
 const DownloadButton = () => {
   return (
     <Link
-      href="https://github.com/openmultiplayer/server-beta"
+      href="https://github.com/openmultiplayer/server-beta/releases"
       _hover={{ textDecoration: "none" }}
+      isExternal={true}
     >
       <Button
         bg="#9083D2"
@@ -72,6 +73,7 @@ const DocumentationButton = () => {
         outline: "2px solid #695AD3",
         transition: "outline 0.3s",
       }}
+      isExternal={true}
     >
       Documentation
     </Button>
