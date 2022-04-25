@@ -4,7 +4,7 @@ description: Esse callback é executado quando o filterscript é inciado (carreg
 tags: []
 ---
 
-## Description
+## Descrição
 
 Esse callback é executado quando o filterscript é inciado (carregado). É utilizado somente em filterscripts!
 
