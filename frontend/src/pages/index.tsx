@@ -32,7 +32,7 @@ const DownloadButton = () => {
     <Link
       href="https://github.com/openmultiplayer/server-beta/releases"
       _hover={{ textDecoration: "none" }}
-      isExternal={true}
+      isExternal
     >
       <Button
         bg="#9083D2"
@@ -73,7 +73,6 @@ const DocumentationButton = () => {
         outline: "2px solid #695AD3",
         transition: "outline 0.3s",
       }}
-      isExternal={true}
     >
       Documentation
     </Button>
@@ -219,7 +218,7 @@ const Home = () => {
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <DownloadButton />
-                  <Link href="/docs" _hover={{ textDecoration: "none" }}>
+                  <Link href="/docs" _hover={{ textDecoration: "none" }} isExternal>
                     <DocumentationButton />
                   </Link>
                 </Flex>
@@ -267,7 +266,7 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton />
                   </Box>
-                  <Link href="/docs" _hover={{ textDecoration: "none" }}>
+                  <Link href="/docs" _hover={{ textDecoration: "none" }} isExternal>
                     <DocumentationButton />
                   </Link>
                 </Flex>

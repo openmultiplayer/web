@@ -30,7 +30,7 @@ interface DownloadButtonProps {
 
 const DownloadButton = ({ link, title, text, disabled = false }: DownloadButtonProps) => {
   return (
-    <Link href={disabled ? '#' : link} _hover={{ textDecoration: "none" }} isExternal={true}>
+    <Link href={disabled ? '#' : link} _hover={{ textDecoration: "none" }} isExternal>
       <Button
         disabled={disabled}
         bg="#9083D2"
