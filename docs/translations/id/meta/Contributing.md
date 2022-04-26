@@ -11,7 +11,7 @@ Jika Anda ingin membantu mempertahankan wiki ini dalam Bahasa Indonesia, buka se
 
 Di setiap halaman, ada sebuah tombol yang mengarahkan Anda ke halaman GitHub untuk penyuntingan:
 
-![Link 'Sunting halaman ini' ada di setiap halaman Wiki](../../../../frontend/public/images/contributing/edit-this-page.png)
+![Link 'Sunting halaman ini' ada di setiap halaman Wiki](images/contributing/edit-this-page.png)
 
 Sebagai contoh, klik di [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) akan mengarahkan Anda ke [halaman ini](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) yang di mana akan memunculkan sebuah _text editor_ untuk membuat perubahan ke file tersebut (asumsikan Anda sudah _login_ ke GitHub).
 
@@ -25,7 +25,7 @@ Menambah konten baru sedikit lebih rumit. Anda dapat melakukannya dengan dua car
 
 Ketika menjelajahi sebuah direktori di GitHub, ada sebuah tombol Add file terletak di sudut kanan atas daftar file (_file list_):
 
-![Tombol Add file](../../../../frontend/public/images/contributing/add-new-file.png)
+![Tombol Add file](images/contributing/add-new-file.png)
 
 Anda bisa meng-_upload_ file Markdown yang sudah Anda tulis atau menulisnya langsung ke _text editor_ GitHub.
 
@@ -43,7 +43,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 Buka dengan editor favorit Anda. Saya merekomendasikan Visual Studio Code karena memiliki peralatan yang bagus untuk menyunting dan _formatting_ _file_ Markdown. Yang Anda lihat, saya sedang menulis ini menggunakan Visual Studio Code!
 
-![Pratinjau markdown di Visual Studio Code](../../../../frontend/public/images/contributing/vscode.png)
+![Pratinjau markdown di Visual Studio Code](images/contributing/vscode.png)
 
 Saya merekomendasikan dua ekstension untuk membuat pengalaman Anda menjadi lebih baik:
 
@@ -168,23 +168,23 @@ Hampir seluruh konten dari Wiki SA-MP telah dipindahkan, namun jika Anda menemuk
 
    (Firefox)
 
-   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
+   ![image](images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
+   ![image](images/contributing/f62bb8112543.png)
 
 2. Arahkan ke sudut kiri atas dari halaman utama wiki, di margin kiri atau sudut hingga Anda menemukan `#content`
 
-   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
+   ![image](images/contributing/65761ffbc429.png)
 
    Atau cari `<div id=content>`
 
-   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
+   ![image](images/contributing/77befe2749fd.png)
 
 3. Salin kode HTML pada elemen tersebut
 
-   ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
+   ![image](images/contributing/8c7c75cfabad.png)
 
    Sekarang Anda **hanya** memiliki memiliki kode HTML yang berisi **konten** aktual pada halaman tersebut, hal-hal yang kami minati, dan Anda bisa konversikan menjadi Markdown.
 
@@ -194,7 +194,7 @@ Untuk mengkonversi HTML dasar (tanpa tabel), ke Markdown, gunakan:
 
 [https://domchristie.github.io/turndown/](https://domchristie.github.io/turndown/)
 
-![image](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
+![image](images/contributing/77f4ea555bbb.png)
 
 ^^ Perhatikan sekarang. Hasil konversi mengacaukan tabel seluruhnya...
 
@@ -206,7 +206,7 @@ Karena _tool_ di atas tidak mendukung tabel, gunakan _tool_ ini:
 
 Dan salin hanya elemen `<table>` di:
 
-![image](../../../../frontend/public/images/contributing/57f171ae0da7.png)
+![image](images/contributing/57f171ae0da7.png)
 
 ### Merapikan
 
