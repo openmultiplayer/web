@@ -11,7 +11,7 @@ Belirli bir dilin sayfasını yaratmak istiyorsanız, [`CODEOWNERS`](https://git
 
 Her sayfada düzenleme yapabilmek Github düzenleme sayfasına yönlendiren buton vardır.
 
-![Edit this page link present on each wiki page](../../../../frontend/public/images/contributing/edit-this-page.png)
+![Edit this page link present on each wiki page](images/contributing/edit-this-page.png)
 
 Örneğin, [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) bu tıklatma [bu sayfa](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) sizi bu dosya üzerinde değişiklik yapmanız için yönlendirir. (eğer ki github üzerinden oturum açtıysanız).
 
@@ -25,7 +25,7 @@ Yeni içerik eklemek biraz daha fazla ilgi ister. Bunu iki şekilde yapabilirsin
 
 Github'da bir dizine göz atarken dosya listeninin en sağ üst köşesinde bir "Add File(Dosya Ekle)" düğmesini göreceksiniz.
 
-![Add file button](../../../../frontend/public/images/contributing/add-new-file.png)
+![Add file button](images/contributing/add-new-file.png)
 
 Önceden yazdığınız bir Markdown(.md) dosyasını yükleyebilir veya doğrudan GitHub metin düzenleyicisini kullanarak yeni bir içerik ekleyebilirsiniz.
 
@@ -43,7 +43,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 En sevdiğiniz editörü açın. Ben düzenleme yapmak için Visual Studio Code'yi öneriyorum. Markdown dosyalarını biçimlendirmek için güzel bir editör ve gördüğünüz gibi ben Visual Studio Code kullanıyorum.
 
-![Visual Studio Code markdown preview](../../../../frontend/public/images/contributing/vscode.png)
+![Visual Studio Code markdown preview](images/contributing/vscode.png)
 
 Bu işlemleri kolaylaştırmak ve daha rahat hale getirmek için iki Visual Studio Code eklentisi öneriyoruz.
 
@@ -170,23 +170,23 @@ Most of the content has been moved, but if you find a page that's missing, here'
 
    (Firefox)
 
-   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
+   ![image](images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
+   ![image](images/contributing/f62bb8112543.png)
 
 2. Hover the top left of the main wiki page, in the left margin or the corner until you see `#content`
 
-   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
+   ![image](images/contributing/65761ffbc429.png)
 
    Or search for `<div id=content>`
 
-   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
+   ![image](images/contributing/77befe2749fd.png)
 
 3. Copy the inner HTML of that element
 
-   ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
+   ![image](images/contributing/8c7c75cfabad.png)
 
    Now you have _only_ the HTML code for the actual _content_ of the page, the stuff we care about, and you can convert it to Markdown.
 
@@ -196,7 +196,7 @@ For converting basic HTML (no tables) to Markdown use:
 
 https://domchristie.github.io/turndown/
 
-![image](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
+![image](images/contributing/77f4ea555bbb.png)
 
 ^^ Notice now it screwed up the table completely...
 
@@ -208,7 +208,7 @@ https://jmalarcon.github.io/markdowntables/
 
 And copy only the `<table>` element in:
 
-![image](../../../../frontend/public/images/contributing/57f171ae0da7.png)
+![image](images/contributing/57f171ae0da7.png)
 
 ### Cleaning Up
 

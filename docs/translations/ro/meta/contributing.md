@@ -11,7 +11,7 @@ Dacă doriți să ajutați la menținerea unei limbi specifice, deschideți un P
 
 În fiecare pagină, există un buton care vă duce la pagina GitHub pentru editare:
 
-![Edit this page](../../../../frontend/public/images/contributing/edit-this-page.png)
+![Edit this page](images/contributing/edit-this-page.png)
 
 De exemplu, făcând clic pe aceasta pe [SetVehicleAngularVelocity](https://www.open.mp/docs/scripting/functions/SetVehicleAngularVelocity) vă duce la [această pagină](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) care vă prezintă un editor de text pentru a face modificări la fișier (presupunând că sunteți conectat la GitHub).
 
@@ -25,7 +25,7 @@ Adăugarea de conținut nou este puțin mai implicată. Puteți face acest lucru
 
 Când răsfoiți un director pe GitHub, există un buton „Add File” în colțul din dreapta sus al listei de fișiere:
 
-![Add file](../../../../frontend/public/images/contributing/add-new-file.png)
+![Add file](images/contributing/add-new-file.png)
 
 Puteți încărca fie un fișier Markdown pe care l-ați scris deja, fie îl puteți scrie direct în editorul de text GitHub.
 
@@ -43,7 +43,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 Deschide-l în editorul tău preferat. Recomand Visual Studio Code, deoarece are unele instrumente excelente pentru editarea și formatarea fișierelor Markdown. După cum puteți vedea, scriu acest lucru folosind Visual Studio Code!
 
-![Visual Studio Code markdown preview](../../../../frontend/public/images/contributing/vscode.png)
+![Visual Studio Code markdown preview](images/contributing/vscode.png)
 
 Vă recomandăm două extensii pentru a vă îmbunătăți experiența:
 
@@ -169,23 +169,23 @@ Majoritatea conținutului a fost mutat, dar dacă găsiți o pagină care lipse�
 
    (Firefox)
 
-   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
+   ![image](images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
+   ![image](images/contributing/f62bb8112543.png)
 
 2. Plasați cursorul în partea stângă sus a paginii principale wiki, în marginea stângă sau în colț până când vedeți `#content`
 
-   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
+   ![image](images/contributing/65761ffbc429.png)
 
    Sau cautati pentru `<div id=content>`
 
-   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
+   ![image](images/contributing/77befe2749fd.png)
 
 3. Copiați HTML-ul interior al acelui element
 
-   ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
+   ![image](images/contributing/8c7c75cfabad.png)
 
    Acum aveți _numai_ codul HTML pentru _contenutul_ real al paginii, lucrurile care ne interesează și îl puteți converti în Markdown.
 
@@ -195,7 +195,7 @@ Pentru conversia HTML de bază (fără tabele) la Markdown utilizați:
 
 https://domchristie.github.io/turndown/
 
-![image](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
+![image](images/contributing/77f4ea555bbb.png)
 
 ^^ Observă acum că se distrug tabelele ...
 
@@ -207,7 +207,7 @@ https://jmalarcon.github.io/markdowntables/
 
 Și copiați doar elementul `<table>` în:
 
-![image](../../../../frontend/public/images/contributing/57f171ae0da7.png)
+![image](images/contributing/57f171ae0da7.png)
 
 ### Curatare
 

@@ -12,11 +12,11 @@ Dans le cas où vous souhaitez vous voulez participer à la traduction du wiki, 
 
 En parcourant le [Github « docs »](https://github.com/openmultiplayer/web/tree/master/docs) de open.MP, vous aurez un bouton "Add file"
 
-![Add file button](../../../../frontend/public/images/contributing/add-new-file.png)
+![Add file button](images/contributing/add-new-file.png)
 
 Vous pourrez ainsi ajouter un fichier en Markdown.
 
-Le fichier créer _doit_ avoir l'extension `.md` et contenir du Markdown. 
+Le fichier créer _doit_ avoir l'extension `.md` et contenir du Markdown.
 
 Pour plus d'informations sur l'utilisation de Markdown, référez vous à [ce guide](https://guides.github.com/features/mastering-markdown/).
 
@@ -32,7 +32,7 @@ git clone https://github.com/openmultiplayer/web/tree/master/docs.git
 
 Ouvrez-le dans votre éditeur de texte. D'aucuns recommanderaient Visual Studio, qui semble être l'outil le plus apprécié des développeurs tant il est pratique :
 
-![Visual Studio Code markdown preview](../../../../frontend/public/images/contributing/vscode.png)
+![Visual Studio Code markdown preview](images/contributing/vscode.png)
 
 Cette extension peut être utile :
 
@@ -112,7 +112,7 @@ Quand vous écrivez un paragraphe contenant des noms de fonction, des numéros, 
 - ✔
 
   > La fonction `fopen` [...] un tag type `File:` [...]
-  
+
 Dans l'exemple ci-dessus, `fopen` est un nom de fonction, donc il convient de l'entourer avec des guillemets obliques pour la distinguer des autres mots du langage courant.
 
 ### Tables
@@ -141,7 +141,7 @@ La structure de la table répond à des règles précises lorsque vous lui mette
   | 650-550 | Fumée blanche                        |
   | 550-390 | Fumée grise                          |
   | 390-250 | Fumée noire                          |
-  | < 250   | En feu (explosion imminente)         |  
+  | < 250   | En feu (explosion imminente)         |
   ```
 
 ## Licence d'agrément
