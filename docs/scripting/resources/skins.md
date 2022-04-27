@@ -90,7 +90,6 @@ These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in S
 | 71      | ![Skin ID 71](/images/skins/71.png)   | wmysgrd         | Security Guard                           | Airport Guard Boxes                                | Male   |
 | 72      | ![Skin ID 72](/images/skins/72.png)   | swmyhp1         | Hippy                                    | San Andreas                                        | Male   |
 | 73      | ![Skin ID 73](/images/skins/73.png)   | swmyhp2         | Hippy                                    | San Fierro                                         | Male   |
-| 74      | ![Skin ID 74](/images/skins/74.png)   | -               | -                                        | -                                                  | -      |
 | 75      | ![Skin ID 75](/images/skins/75.png)   | swfopro         | Prostitute                               | San Andreas                                        | Female |
 | 76      | ![Skin ID 76](/images/skins/76.png)   | wfystew         | Stewardess                               | San Andreas                                        | Female |
 | 77      | ![Skin ID 77](/images/skins/77.png)   | swmotr1         | Homeless                                 | San Andreas                                        | Female |
