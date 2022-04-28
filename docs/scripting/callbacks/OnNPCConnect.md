@@ -23,7 +23,7 @@ public OnNPCConnect(myplayerid)
 }
 ```
 
-## Related Functions
+## Related Callbacks
 
 - [OnNPCDisconnect](../callbacks/OnNPCDisconnect): Gets called when the NPC gets disconnected from the server.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Gets called when a player connects to the server.

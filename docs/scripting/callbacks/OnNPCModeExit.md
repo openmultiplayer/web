@@ -21,6 +21,6 @@ public OnNPCModeExit()
 }
 ```
 
-## Related Functions
+## Related Callbacks
 
 - [OnNPCModeInit](../callbacks/OnNPCModeInit): Gets called when a NPC script loaded.

@@ -21,6 +21,6 @@ public OnNPCExitVehicle()
 }
 ```
 
-## Related Functions
+## Related Callbacks
 
-- [OnNPCEnterVehicle](../callbacks/OnNPCEnterVehicle): Gets called when a NPC leaves a Vehicle.
+- [OnNPCEnterVehicle](../callbacks/OnNPCEnterVehicle): Gets called when a NPC enters a vehicle.
