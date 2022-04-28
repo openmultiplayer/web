@@ -20,6 +20,7 @@ import {
 } from '@chakra-ui/icons';
 import { FC, useRef } from "react";
 import { useRouter } from "next/router";
+import NextLink from "next/link";
 import { useAuth } from "src/auth/hooks";
 import LanguageSelect from "./LanguageSelect";
 
@@ -83,8 +84,9 @@ const NavMenu: FC<Props> = ({ items, route }) => {
                   key={path}
                   display={ON_MOBILE}
                   current={isCurrent(path).toString()}
+                  onClick={() => router.push(path)}
                 >
-                  <Link href={path}>{name}</Link>
+                  {name}
                 </MenuItem>
               ))}
             </MenuGroup>
@@ -116,11 +118,13 @@ const NavMenu: FC<Props> = ({ items, route }) => {
 type NavLinkProps = { item: NavItem; current: boolean };
 
 const NavLink: FC<NavLinkProps> = ({ item, current }) => (
-  <Link _hover={undefined} href={item.path} _focus={{ outline: 'none', border: 'none' }}>
+  <NextLink href={item.path} passHref>
+    <Link _hover={undefined} href={item.path} _focus={{ outline: 'none', border: 'none' }}>
       <Button as="div" variant={current ? "outline" : "ghost"} size="sm">
         {item.name}
       </Button>
     </Link>
+  </NextLink>
 );
 
 export default NavMenu;
