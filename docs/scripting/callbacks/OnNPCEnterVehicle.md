@@ -8,11 +8,11 @@ tags: []
 
 ## Description
 
-This callback is called when the NPC gets disconnected from the server.
+This callback is called when a NPC enters a vehicle.
 
 | Name         | Description                                             |
 | ------------ | ------------------------------------------------------- |
-| vehicleid    | The reason why the bot has disconnected from the server |
+| vehicleid    | The vehicle ID the NPC enter                            |
 | seatid       | The seatid the NPC uses                                 |
 
 ## Examples
@@ -25,6 +25,6 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 }
 ```
 
-## Related Functions
+## Related Callbacks
 
 - [OnNPCExitVehicle](../callbacks/OnNPCExitVehicle): Gets called when a NPC leaves a Vehicle.
