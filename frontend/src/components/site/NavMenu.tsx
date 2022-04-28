@@ -119,7 +119,7 @@ type NavLinkProps = { item: NavItem; current: boolean };
 
 const NavLink: FC<NavLinkProps> = ({ item, current }) => (
   <NextLink href={item.path} passHref>
-    <Link _hover={undefined} href={item.path} _focus={{ outline: 'none', border: 'none' }}>
+    <Link _hover={undefined} _focus={{ outline: 'none', border: 'none' }}>
       <Button as="div" variant={current ? "outline" : "ghost"} size="sm">
         {item.name}
       </Button>
