@@ -8,7 +8,8 @@
 @import "./fonts.css";
 
 body {
-  background-color: #fefefe;
+  color: #000;
+  background: #fefefe;
 }
 
 /* Necessary to prevent overflow issues in flexbox. */
@@ -31,23 +32,35 @@ table {
   overflow: auto;
   width: 100%;
 }
+
 table tr {
   background-color: transparent;
   border-top: 1px solid #dadde1;
 }
+
 table tr:nth-child(2n) {
   background-color: #f5f6f7;
 }
+
 table td,
 table th {
   border: 1px solid #dadde1;
   padding: 0.75rem;
 }
+
 table th {
   background-color: inherit;
   color: inherit;
   font-weight: 700;
 }
+
 table td {
   color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background: var(--chakra-colors-gray-800);
+  }
 }

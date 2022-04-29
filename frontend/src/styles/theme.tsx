@@ -46,13 +46,16 @@ const styles = {
         textDecoration: "underline",
       },
     },
-   pre: {
-    maxWidth: '100%',
-    overflowX: 'auto',
-    backgroundColor: mode('gray.200', 'gray.600')(props),
-    padding: '0.5em',
-    borderRadius: '0.2em'
-   }
+    pre: {
+      maxWidth: '100%',
+      overflowX: 'auto',
+      backgroundColor: mode('gray.200', 'gray.600')(props),
+      padding: '0.5em',
+      borderRadius: '0.2em'
+    },
+    'table tr:nth-child(2n)': {
+      backgroundColor: mode('#f5f6f7', 'gray.800')(props),
+    }
   }),
 };
 

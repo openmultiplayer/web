@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { ColorModeScript } from "@chakra-ui/react";
 
 const forEdmund = `<!--
 //                                                                            //
@@ -61,6 +62,7 @@ export default function Document(): JSX.Element {
         <script dangerouslySetInnerHTML={{ __html: forEdmund }}></script>
       </Head>
       <body>
+        <ColorModeScript initialColorMode={'light'} />
         <Main />
         <NextScript />
       </body>

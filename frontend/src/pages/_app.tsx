@@ -3,7 +3,6 @@ import Router from "next/router";
 import { DefaultSeo } from "next-seo";
 import { ToastContainer } from "react-nextjs-toast";
 import NProgress from "nprogress";
-import { ChakraProvider } from "@chakra-ui/react";
 
 import Nav from "src/components/site/Nav";
 import Footer from "src/components/site/Footer";
@@ -15,7 +14,7 @@ import "remark-admonitions/styles/classic.css";
 
 import "src/styles/base.css";
 import { AuthProvider } from "src/auth/hooks";
-import theme from "../styles/theme";
+import { Chakra } from "src/components/Chakra";
 import Fonts from "src/styles/Fonts";
 import React from "react";
 import { NextPage } from "next";
@@ -26,7 +25,7 @@ Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
 const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
-  <ChakraProvider theme={theme}>
+  <Chakra cookies={pageProps.cookies}>
     <Fonts />
 
     {/*
@@ -82,7 +81,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
         flex: 1 0 auto;
       }
     `}</style>
-  </ChakraProvider>
+  </Chakra>
 );
 
 export default App;
