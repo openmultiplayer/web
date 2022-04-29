@@ -16,7 +16,6 @@ const PostList: FC<{
           key={post.id}
           thread={thread}
           post={post}
-          showAdminTools={true}
           onSetReply={onSetReply}
         />
       ))(posts)}
