@@ -17,6 +17,7 @@ import {
 import { GetStaticPropsContext } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import NextLink from "next/link";
 import Announcement from "src/components/site/Announcement";
 // Server side
 import { markdownSSR } from "src/mdx-helpers/ssr";
@@ -58,24 +59,28 @@ const DownloadButton = () => {
 
 const DocumentationButton = () => {
   return (
-    <Button
-      rightIcon={<ChevronRightIcon />}
-      border="1px solid #9083D2"
-      bg="transparent"
-      color="#9083D2F2"
-      _hover={{
-        backgroundColor: "#9083D240",
-      }}
-      _active={{
-        backgroundColor: "#9083D240",
-      }}
-      _focus={{
-        outline: "2px solid #695AD3",
-        transition: "outline 0.3s",
-      }}
-    >
-      Documentation
-    </Button>
+    <NextLink href="/docs" passHref>
+      <Link _hover={{ textDecoration: "none" }}>
+        <Button
+          rightIcon={<ChevronRightIcon />}
+          border="1px solid #9083D2"
+          bg="transparent"
+          color="#9083D2F2"
+          _hover={{
+            backgroundColor: "#9083D240",
+          }}
+          _active={{
+            backgroundColor: "#9083D240",
+          }}
+          _focus={{
+            outline: "2px solid #695AD3",
+            transition: "outline 0.3s",
+          }}
+        >
+          Documentation
+        </Button>
+      </Link>
+    </NextLink>
   );
 };
 
@@ -218,9 +223,7 @@ const Home = () => {
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <DownloadButton />
-                  <Link href="/docs" _hover={{ textDecoration: "none" }} isExternal>
-                    <DocumentationButton />
-                  </Link>
+                  <DocumentationButton />
                 </Flex>
               </HStack>
             </VStack>
@@ -266,9 +269,7 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton />
                   </Box>
-                  <Link href="/docs" _hover={{ textDecoration: "none" }} isExternal>
-                    <DocumentationButton />
-                  </Link>
+                  <DocumentationButton />
                 </Flex>
               </HStack>
             </Box>
