@@ -17,7 +17,7 @@ Available Styles:
 ![Available Styles](images/textdraws/Textdraw_font_styles.png)
 
 Available Fonts:
-![Available Fonts](https://i.imgur.com/n5iQMT0.png)
+![Available Fonts](images/textdraws/Textdraw_Fonts.png)
 
 ## Returns
 
