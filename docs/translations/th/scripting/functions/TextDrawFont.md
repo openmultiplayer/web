@@ -14,10 +14,10 @@ Changes the text font.
 | font | There are four font styles as shown below. Font value 4 specifies that this is a txd sprite; 5 specifies that this textdraw can display preview models. A font value greater than 5 does not display, and anything greater than 16 crashes the client. |
 
 Available Styles:
+![Available Styles](images/textdraws/Textdraw_font_styles.png)
 
 Available Fonts:
-
-|
+![Available Fonts](images/textdraws/Textdraw_Fonts.png)
 
 ## ส่งคืน
 

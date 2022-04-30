@@ -20,9 +20,11 @@ Change the font of a player-textdraw.
 | text     | The ID of the player-textdraw to change the font of                                                                                       |
 | font     | There are four font styles as shown below. A font value greater than 3 does not display, and anything greater than 16 crashes the client. |
 
-Available Fonts:
+Available Styles:
+![Available Styles](images/textdraws/Textdraw_font_styles.png)
 
-|
+Available Fonts:
+![Available Fonts](images/textdraws/Textdraw_Fonts.png)
 
 ## ส่งคืน
 
