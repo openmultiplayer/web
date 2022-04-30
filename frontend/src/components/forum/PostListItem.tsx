@@ -42,7 +42,6 @@ export type PostWithMarkdown = Post & {
 type Props = {
   thread: Partial<Post>;
   post: PostWithMarkdown;
-  showAdminTools: boolean;
   onSetReply: (post: Post) => void;
 } & ChakraProps;
 
@@ -172,13 +171,12 @@ const Editing: FC<EditingProps> = ({ post, title, onSubmitEdit }) => {
 const PostListItem: FC<Props> = ({
   thread,
   post,
-  showAdminTools,
   onSetReply,
   sx,
 }) => {
   const { user } = useAuth();
-  const owned = user?.id === post.author.id;
-  const showTools = showAdminTools || owned;
+  const [owned, admin] = [user?.id === post.author.id, user?.admin];
+  const showTools = owned || admin;
 
   // The post.markdown field NEVER changes, it's serialised server side only
   // for next-mdx-remote and used only for server side renders. Once the client
