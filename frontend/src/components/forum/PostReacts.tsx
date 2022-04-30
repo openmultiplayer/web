@@ -16,7 +16,7 @@ import { useAuth } from "src/auth/hooks";
 import { Post, React } from "src/types/_generated_Forum";
 import twemoji from "twemoji";
 import { useReaction } from "./hooks";
-import { Portal } from "@chakra-ui/react";
+import { Portal, useColorModeValue } from "@chakra-ui/react";
 
 type Props = {
   post: Post;
@@ -50,6 +50,7 @@ const PostReact: FC<PostReactProps> = ({
 }) => {
   // scan the react group for reacts by the current user
   const hasReacted = userId && getUsersReact(userId)(group.reacts);
+  const hasReactedColor = useColorModeValue('var(--chakra-colors-gray-300)', 'var(--chakra-colors-gray-500)');
 
   // If the user clicks a reaction, they add one if they haven't already
   // reacted or they remove their own reaction.
@@ -78,7 +79,7 @@ const PostReact: FC<PostReactProps> = ({
         py="0.2em"
         onClick={eventHandler}
         boxShadow={
-          hasReacted && "inset 0px 0px 3px 2px var(--chakra-colors-orange-100)"
+          hasReacted && `inset 0px 0px 3px 2px ${hasReactedColor}`
         }
       >
         <span
@@ -87,7 +88,7 @@ const PostReact: FC<PostReactProps> = ({
           }}
         />
 
-        <TagLabel color="blackAlpha.600">{group.count}</TagLabel>
+        <TagLabel color={useColorModeValue('blackAlpha.600', 'gray.400')}>{group.count}</TagLabel>
       </Button>
 
       {/* NOTE: This style is global - hence the unique class name. */}
