@@ -1,63 +1,63 @@
 ---
-title: Problemas Conhecidos
+title: Common Issues
 ---
 
 ## Conteúdos
 
 ## Cliente
 
-### Recebi o erro "San Andreas cannot be found"
+### Eu tenho o erro "San Andreas cannot be found"
 
-O San Andreas Multiplayer **não é** um software único! Ele adiciona o multiplayer para o San Andreas, mas ainda necessita do GTA San Andreas instalado no computador - o mesmo precisa ser a versão **EU/US v1.0**, outras versões, tais como v2.0, Steam ou Direct2Drive não são aceitas. [Clique aqui para fazer o download do path de Downgrade do GTA: SA para versão 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multi-player **NÃO** é um programa "stand-alone" (que funciona sozinho). Ele adiciona a funcionalidade de multi-jogador ao San Andreas e portanto você precisa do GTA San Andreas no seu computador, também precisa ser **EU/US v1.0**, outras versões como 2.0, Steam ou Direct2Drive não irão funcionar. [clique aqui para baixar um patch para desatualizar seu GTA: SA para a versão 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
 
-### Não consigo encontrar nenhum servidor no cliente SA:MP
+### Não consigo ver nenhum servidor no aplicativo do SA-MP
 
-Antes de qualquer coisa, tenha certeza de seguir todos os procedimentos informados no [Guia Ínicio Rápido](https://team.sa-mp.com/wiki/Getting_Started). Caso você tenha seguido todos os passos e ainda não consiga ver a lista de servidores tente permitir o SA-MP no firewall do seu computador. Infelizmente, devido a grande quantidade de firewalls disponíveis no mercado, nós não podemos oferecer suporte - sugerimos que você olhe o site do desenvolvedor (do firewall) ou faça uma breve pesquisa no Google. E claro, tenha 100% de certeza do seu cliente SA-MP estar atualizado com a última versão disponível!
+Primeiro, garanta que está seguindo os procedimetnos prescritos no [Quick-start guide](https://team.sa-mp.com/wiki/Getting_Started). Se você seguiu como descrito, e ainda não pode ver nenhum servidor, você precisa permitir que o SA:MP tenha acesso através do seu firewall. Infelizmente, devido ao grande número de firewalls disponíveis, não podemos oferecer suporte para esta ocasião, sugerimos procurar no site dos desenvolvedores ou pesquisar no Google. Também tenha certeza de estar usando a última versão do SA:MP!
 
-### O modo single-player carrega ao invés do SA-MP
+### O modo single-player abre ao invés do multiplayer
 
 :::warning
 
-Não é normal ver o menu de opções single-player (novo jogo, carregar jogo, etc) - o SA-MP deve carregar e direcionar para tela inicial do servidor em questão. Caso você veja "novo jogo" significa que o modo single-player foi carregado ao invés do San Andreas Multiplayer.
+Você, provavelmente, não deverá ver as opções do singleplayer (novo jogo, carregar jogo, etc), SA-MP deve carregar por sí mesmo e não apresentar estas opções, caso ocorra saiba que o modo singleplayer carregou e não o multiplayer.
 
 :::
 
-O singleplayer pode carregar por 2 motivos; Você instalou o SA-MP em uma pasta na qual não continha seu GTA: San Andreas ou sua versão do GTA está incorreta. Caso você identifique o problema sendo a versão, faça o downgrade da mesma para **EU/US v1.0** baixando o path nesse [link](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661).
+O modo singleplayer pode carregar por dois motivos, caso tenha instalado o SA:MP no diretório errado, ou você tem a versão errada do San Andreas. Caso tenha a versão errada é fácil de consertar, clique [aqui](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) para baixar o patch de desatualização.
 
-Em alguns casos o menu de singleplayer será exibido mesmo com o SA-MP sendo carregado corretamente. Para sair simplesmente selecione uma opção qualquer e pressione a tecla ESC até fechar o mesmo. O SA-MP prosseguirá normalmente com o carregamento.
+Algumas vezes o menu do singleplayer irá carregar, mas o SA:MP em fato terá carregado corretamente. Para consertar isso você precisa selecionar um item no menu e precionar ESC até que esteja fora, então o SA:MP irá proceder e carregar.
 
-### Recebi o aviso "Unacceptable Nickname" ao tentar conexão com o servidor
+### Eu tenho "Unacceptable NickName" ao conectar no servdior
 
-Tenha certeza de não estar utilizando nenhum caractere "fora dos padrões", **utilize somente** ( 0-9, a-z, \[\], (), \$, @, ., \_ e = ), por fim, confira se seu usuário não possuí mais de 20 caracteres. Esse problema também pode ocorrer quando há um jogador no servidor com o mesmo nome que o seu (o que pode ocorrer caso alguém já tenha escolhido um nick igual, ou você tente se reconectar rápidamente após um crash/timeout). Servidores Windows rodando o SA-MP à mais de 50 dias podem causar esse bug (algumas vezes).
+Garanta que você não está usando nenhum caractere não permitido no jogo (use 0-9, a-z, \[\], (), \$, @, ., \_ e = apenas) e que seu nome não seja maior que 20 caracteres. Isso também pode ser causado quando há um jogador no servidor com o mesmo nome que o seu. Um servidor Windows executando o SA-MP com um tempo maior que 50 dias também pode causar este bug.
 
-### Tela fica parada em "Connecting to IP:Port..."
+### Tela trava no "Connecting to ip:port..."
 
-O servidor pode estar offline, ou, caso você não consiga conectar a nenhum servidor, desabilite seu firewall e tente novamente, caso funcione você terá de reconfigurar o mesmo (firewall). Verifique se você está utilizando a ultima versão do SA-MP - você pode fazer o download da última versão disponível [aqui](http://sa-mp.com/download.php).
+O servidor pode estar offline, ou se você não pode conectar a nenhum servidor desative seu firewall e veja se funciona. Caso funciona você precisa configurar seu firewall corretamente. Também pode ser que você tenha uma versão antiga do SA-MP, baixa a última versão: [Página de download do SA-MP](http://sa-mp.com/download.php).
 
-### Meu GTA: San Andreas é modificado e meu SA:MP não carrega
+### Eu tenha um GTA modificado: San Andreas e SA:MP não irão carregar
 
-Caso não esteja carregando remova seus mods.
+Caso ambos não executem retire seus mods.
 
-### Quando abro o GTA com o SA:MP o mesmo não inicia
+### Ao carregar o GTA com SA:MP não irá iniciar
 
-Remova o arquivo gta_sa.set da pasta `GTA San Andreas User Files` e confirme que seu GTA não possí nenhum Mod instalado.
+Delete o arquivo gta_sa.set da paste onde está seu userfiles e tenha certeza que você não tem nenhum mod/cheat.
 
 ### O jogo crasha quando um veículo explode
 
-Caso você tenha 2 monitores tem dois modos de resolver isso:
+Se você usa 2 monitores então há 3 maneiras de resolver isso:
 
-1. Desabilite seu segundo monitor quando estiver jogando sa-mp. (Não é tão legal caso você queira utilizar o mesmo para outras tarefas.)
-2. Coloque o Visual FX para qualidade miníma. (Esc > Opções > Configurações de Display > Avançadas)
-3. Renomeie a pasta do seu GTA San Andreas (ex. "GTA San Andreas2") (Isso funciona de vez em quando, pode ser que de o mesmo problema após algum tempo, nesse caso basta repetir o processo.)
+1. Desligue o 2º motior ao jogar sa-mp. (Talvez não muito útil caso queira utilizar.)
+2. Defina seus efeitos visuais para "Low" baixo. (Esc > Options > Display Setup > Advanced)
+3. Renomeie a paste do seu Gta Sanandreas (ex: "GTA San Andreas2") (Isso funciona frequentemente, porém pode ser que volte a crashar, entãi será necessário trocar o nome para outro novamente.)
 
-### Meu mouse não funciona ao sair no menu de pausa
+### Meu mouse não funciona após sair do menu de pausa
 
-Caso seu mouse pareça estar travado (congelado) ao (parcialmente) funcionar no menu de pausa, você deve tentar desabilitar a opção "multicore" no arquivo sa-mp.cfg [sa-mp.cfg](ClientCommands#Arquivo-sa-mpcfg "Sa-mp.cfg") (troque de 1 para 0). Continue apertando ESC até seu mouse responder novamente (ainda não há uma solução própria para isso :/).
+Você deve desativar a opção multicre do [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (coloque em 0)
 
-### O arquivo dinput8.dll não foi encontrado
+### O arquivo dinput8.dll está faltando
 
-Esse aviso aparece quando o DirectX não foi instalado corretamente, tente reinstalar o mesmo - Não se esqueça de reiniciar seu computador. Se o problema persistir após realizar os passos anteriores, vá até o diretório C:\\Windows\\System32, copie o arquivo dinput.dll e cole na pasta do seu GTA San Andreas. Isso deve resolver!
+Isso possivelmente surge quando o DirectX não está propriamente instalado, tente instala-lo novamente, não esqueça de reiniciar seu computador. Se o problema persistir, apenas vá até C:\\Windows\\System32 então copie e cole o arquivo para a pasta raiz do seu GTA San Andreas, isso deve resolver o problema.
 
-### Não consigo ver o nome dos outros jogadores!
+### Não consigo ver a nametag de outros jogadores!
 
-Tenha em mente que os servidores **PODEM desabilitar** as name tags globalmente. Por outro lado, computadores com Intel HD Graphics podem sofrer com esse problema (pois não são feitos para jogos). Infelizmente, a causa desse problema é incerta, e até o momento não há uma correção disponível. Um modo de corrigir o problema é instalando uma placa de vídeo dedicada, caso seu orçamento permita.
+Esteja ciente que alguns servidores podem desativar as nametags. Por outro lado, este problema ocorre frequentemente com computadores com processadores gráficos integrados da Intel. Infelizmente, a causa do problema não aparente solução no presente momento. Uma forma de consertar, talvez seria instalando uma placa de vídeo dedicada em seu computador, caso seja possível e seu computador permitir, laptops (notebooks) não podem ser melhorados (geralmente).

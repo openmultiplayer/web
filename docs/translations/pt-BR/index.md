@@ -1,17 +1,18 @@
-# Documentação da SA-MP Wiki e open.mp
+---
+title: Bem-vindo
+sidebar_label: Bem-vindo
+---
 
-Seja bem vindo a Wiki do SA-MP, mantida pela equipe do open.mp e toda a comunidade SA-MP!
+Bem-vindo ao SA-MP wiki, mantido pelo time do open.mp e uma grande comunidade do SA-MP!
 
-Esse site tem como objetivo prover fácil acesso e contribuições para a documentação do SA-MP, e eventualmente, do open.mp.
+Este site tem como objetivo fornecer uma fonte de documentação de fácil acesso e contribuição para SA-MP e, eventualmente, open.mp.
 
 ## A Wiki do SA-MP se foi
 
-Infelizmente, a Wiki do SA-MP foi fechada em meados de setembro, algum tempo depois foi restaurada em formato de "arquivo", no qual não era permitido edições.
+Infelizmente, o SA-MP Wiki foi desativado em meados de setembro, mas precisamos da ajuda da comunidade para transferir e manter a antiga documentação da velha wiki para sua nova casa, aqui! Felizmente boa parte de toda a documentação já foi transferida.
 
-Necessitamos da ajuda da comunidade para transferir todo o conteúdo da Wiki antiga para sua "nova casa", aqui!
+Se estiver interessado, acesse [this page](/docs/meta/Contributing) para mais informações e guias.
 
-Caso você esteja interessado em contribuir confira [essa página](/meta/Contributing) para mais informações.
+Se você não tiver experiência com o uso do GitHub ou conversão de HTML, não se preocupe! Você pode ajudar nos informando sobre problemas (via Discord, Burgershot ou Mídias Sociais) e a parte mais importante: _divulgando tudo_. Então tenha certeza de guardar este site e compartilhar com qualquer pessoa que conheça que está se perguntando para onde o SA-MP Wiki foi.
 
-Caso você não tenha experiência com o GitHub ou convertendo HTML, não se preocupe! Você pode nos ajudar reportando erros e problemas (pelo Discord, fórum do Burgershot ou nas redes sociais), e o mais importante: _espalhe a palavra!_ Favorite esse site e compartilhe com qualquer um que esteja se perguntando "onde foi parar a Wiki do SA-MP".
-
-Nós aceitamos contribuições para melhorar a documentação, assim como tutoriais e guias de tarefas comuns, tais como: "criar um gamemode" e  "como usar libs e plugins". Caso esteja interessado em contribuir dá um pulinho na nossa [página do GitHub](https://github.com/openmultiplayer/web).
+Aceitamos contribuições para melhorias na documentação, assim como tutoriais e guias para tarefas simples como construir uma gamemode e como usar plugins e bibliotecas. Se você estiver interessado em contribuir então vá para a [página do GitHub](https://github.com/openmultiplayer/web).

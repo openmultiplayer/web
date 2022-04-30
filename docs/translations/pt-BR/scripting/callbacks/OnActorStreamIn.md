@@ -1,23 +1,23 @@
 ---
 title: OnActorStreamIn
-description: Essa callback é executada quando um determinado Actor entra no campo de visão do jogador (cliente).
+description: Esta callback é chamada quando um ator é carregado (torna-se visível) para um jogador.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnPT name='callback' version='SA-MP 0.3.7' />
 
 ## Descrição
 
-Essa callback é executada quando um determinado Actor entra no campo de visão do jogador (cliente).
+Esta callback é chamada quando um ator é carregado (torna-se visível) para um jogador.
 
-| Nome        | Descrição                                                     |
-| ----------- | ------------------------------------------------------------- |
-| actorid     | ID do Actor que está entrando no campo de visão do jogador.   |
-| forplayerid | ID do jogador no qual se baseia o campo de visão.             |
+| Nome        | Descrição                                   |
+| ----------- | ------------------------------------------- |
+| actorid     | O ID do ator que foi carregado pelo jogador |
+| forplayerid | O ID do jogador que carregou o ator.        |
 
 ## Retorno
 
-Sempre a primeira a ser declarada em filterscripts.
+Sempre é chamada primeiro em filterscripts.
 
 ## Exemplos
 
@@ -25,7 +25,7 @@ Sempre a primeira a ser declarada em filterscripts.
 public OnActorStreamIn(actorid, forplayerid)
 {
     new string[40];
-    format(string, sizeof(string), "O Actor %d está no seu campo de visão.", actorid);
+    format(string, sizeof(string), "Ator %d carrgou para você.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
@@ -33,4 +33,6 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+<TipNPCCallbacksPT />
+
+## Funções Relacionadas
