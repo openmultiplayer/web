@@ -101,7 +101,7 @@ const Home = () => {
       heading: "Community driven development",
       bodyText:
         "Open.mp is fully open source and is actively developed and maintained solely by the community. This helps in transparency and community input.",
-      buttonLink: "/discussion",
+      buttonLink: "https://github.com/openmultiplayer",
       buttonText: "Visit the GitHub repo",
       img: "/images/assets/f2.png",
       imgAlt: "Github stats illustration",
@@ -110,7 +110,7 @@ const Home = () => {
       heading: "Age old SAMP bugs fixed",
       bodyText:
         "Many well known SAMP bugs have been fixed - no more hacky workarounds, you have all the proper tools in your hands now.",
-      buttonLink: "/docs",
+      buttonLink: "/blog",
       buttonText: "Read the blog post",
       img: "/images/assets/f3.png",
       imgAlt: "pawn code screen",
