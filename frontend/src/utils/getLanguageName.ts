@@ -4,6 +4,7 @@ const missingLanguages: Record<string, string> = {
   "zh-tw": "繁體中文",
   "zh-cn": "简体中文",
   "ar-TN": "تونسي",
+  "pt-BR": "Português do Brasil"
 };
 
 const getLanguageName = (short: string) =>
