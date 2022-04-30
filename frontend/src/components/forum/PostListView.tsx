@@ -1,8 +1,10 @@
 import { Button } from "@chakra-ui/button";
 import { AtSignIcon, SmallCloseIcon } from "@chakra-ui/icons";
-import { Box, Flex, Stack } from "@chakra-ui/layout";
+import { Box, Flex, Link, Stack } from "@chakra-ui/layout";
 import { useRouter } from "next/router";
+import NextLink from "next/link";
 import { FC, useCallback, useState } from "react";
+import { useAuth } from "src/auth/hooks";
 import ErrorBanner from "src/components/ErrorBanner";
 import { apiSWR } from "src/fetcher/fetcher";
 import { APIError } from "src/types/_generated_Error";
@@ -29,6 +31,7 @@ type ReplyToPostProps = {
   post: Post;
   onCancel: () => void;
 };
+
 const ReplyToPost: FC<ReplyToPostProps> = ({ post, onCancel }) => {
   const onClick = useCallback(() => onCancel(), [onCancel]);
 
@@ -57,17 +60,45 @@ const ReplyToPost: FC<ReplyToPostProps> = ({ post, onCancel }) => {
   );
 };
 
+const SignInToReply = () => {
+  return (
+    <NextLink href={`/login`} passHref>
+      <Link _hover={{ textDecoration: "none" }} isExternal>
+        <Button
+          bg="#9083D2"
+          color="white"
+          _hover={{
+            bgColor: "#7466D4",
+          }}
+          _active={{
+            bgColor: "#5A4CBB",
+          }}
+          _focus={{
+            outline: "2px solid #695AD3",
+            transition: "outline 0.3s",
+          }}
+          title="Sign In to reply"
+        >
+          Sign In to reply
+        </Button>
+      </Link>
+    </NextLink>
+  )
+};
+
 type ReplyProps = {
   id: string;
   slug: string;
   post?: Post;
   onCancelReply: () => void;
 };
+
 const Reply: FC<ReplyProps> = ({ id, slug, post, onCancelReply }) => {
   const onSubmit = useCreatePost(id, slug, post);
+  const { isAuthenticated } = useAuth();
 
-  return (
-    <Box>
+  return <>
+    {isAuthenticated ? <Box>
       {post && <ReplyToPost post={post} onCancel={onCancelReply} />}
       <PostEditor
         onSubmit={onSubmit}
@@ -75,8 +106,8 @@ const Reply: FC<ReplyProps> = ({ id, slug, post, onCancelReply }) => {
         postButtonText="Post Reply"
         placeholder="Your reply content..."
       />
-    </Box>
-  );
+    </Box> : <SignInToReply />}
+  </>
 };
 
 const PostListView: FC<Props> = ({ slug, initialPosts, initialPage }) => {
