@@ -20,9 +20,11 @@ Promijeni font player-textdrawa.
 | text     | ID player-textdrawa za izmijeniti font.                                                                                             |
 | font     | Postoje četiri stila fontova kao što je prikazano dolje. Vrijednost fonta veća od 3 se ne prikazuje, a sve veće od 16 ruši klijent. |
 
-Dostupni fontovi:
+Dostupni stilovi:
+![Available Styles](images/textdraws/Textdraw_font_styles.png)
 
-|
+Dostupni fontovi:
+![Available Fonts](images/textdraws/Textdraw_Fonts.png)
 
 ## Returns
 
