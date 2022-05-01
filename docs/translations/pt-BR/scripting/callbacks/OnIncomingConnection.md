@@ -1,40 +1,40 @@
 ---
 title: OnIncomingConnection
-description: Essa callback é executada quando um IP tenta conexão com o servidor.
+description: Esta callback é chamada quando um endereço de IP tenta conectar no servidor.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R2-2' />
+<VersionWarnPT name='callback' version='SA-MP 0.3z R2-2' />
 
 ## Descrição
 
-Essa callback é executada quando um IP tenta conexão com o servidor. Para bloquear determinada conexão, use BlockIpAddress.
+Esta callback é chamada quando um endereço de IP tenta conectar no servidor. Para bloquear tentativas de conexão, use BlockIpAddress.
 
-| Nome         | Descrição                                             |
-| ------------ | ----------------------------------------------------- |
-| playerid     | ID atribuido ao jogador que está tentando a conexão.  |
-| ip_address[] | IP do jogador tentando a conexão.                     |
-| port         | Porta que o jogador está tentando a conexão.          |
+| Nome         | Descrição                             |
+| ------------ | ------------------------------------- |
+| playerid     | O ID do jogador que tentou conectar   |
+| ip_address[] | O IP do jogador que tentou conectar   |
+| port         | A porta de conexão usada na tentativa |
 
-## Retornos
+## Retorno
 
-1 - Irá previnir outros filterscripts de receberem esse callback.
+1 - Irá previnir que outro filterscript receba esta callback
 
-0 - Indica que esse callback deve ser passado para o próximo filterscript.
+0 - Indica que esta callback será passada para o próximo filterscript.
 
-Sempre é chamado primeiro nos filterscripts.
+Sempre é chamada primeiro em filterscripts.
 
 ## Exemplos
 
 ```c
 public OnIncomingConnection(playerid, ip_address[], port)
 {
-    printf("O Player de ID %i [IP/port: %s:%i] está tentando realizar uma conexão com o servidor.", playerid, ip_address, port);
+    printf("Há uma tentativa de conexão do jogador de ID %i [IP/port: %s:%i]", playerid, ip_address, port);
     return 1;
 }
 ```
 
 ## Funções Relacionadas
 
-- [BlockIpAddress](../functions/BlockIpAddress): Bloqueia o IP do jogador de tentar conexão com o servidor por um determinado tempo.
-- [UnBlockIpAddress](../functions/UnBlockIpAddress): Desbloqueia o IP do jogador bloqueado anteriormente.
+- [BlockIpAddress](../functions/BlockIpAddress.md): Bloqueia um IP de entrar no servidor por determinado tempo.
+- [UnBlockIpAddress](../functions/UnBlockIpAddress.md): Desbloqueia um IP previamente bloqueado.

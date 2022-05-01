@@ -1,219 +1,217 @@
 ---
-title: Contribuindo
-description: Como contribuir para a Wiki do SA-MP e a documentação do open.mp.
+title: Contribuição
+description: Como contribuir com SA-MP Wiki e a documentação open.mp.
 ---
 
-Essa documentação é aberta para todos que quiserem contribuir! Tudo o que você precisa é uma conta [GitHub](https://github.com) e um tempinho livre! Você não precisa saber Git, todo o processo pode ser feito pela interface web!
+Esta documentação está aberta para qualquer um contribuir para seu desenvolvimento e aperfeiçoamento! Tudo que você precisa é uma conta no [GitHub](https://github.com) e algum tempo livre. Você inclusive não necessita ter conhecimentos de Git, podendo fazer tudo pela interface da web.
 
-Caso você queira ajudar traduzindo o conteúdo para uma linguagem especifica: Abra uma PR no arquivo [`CODEOWNERS`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS) e inclua uma nova linha contendo o diretório da linguagem e seu usuário.
+## Editando Conteúdo
 
-## Editando o conteúdo
+Em cada página há um botão que o(a) leverá para uma página no GitHub para editar:
 
-Em cada página no topo direito há um botão para realizar a edição:
+![Edit this page link present on each wiki page](images/contributing/edit-this-page.png)
 
-![Botão de "editar página" presente em todas as páginas](images/contributing/edit-this-page.png)
+Por exemplo, clicando em [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) o(a) levará para [esta página](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) a qual contém um editor de texto para fazer algumas mudanças no arquivo(assumindo que você esteja logado(a) no GitHub).
 
-Por exemplo, clicando em [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) você será redirecionado para [essa página](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) onde será apresentado um editor de textos para realizar as edições no arquivo (presumindo que você esteja logado no GitHub).
+Faça suas edições e envie um "Pull Request", isso significa que os organizadores da Wiki e outros membros da comunidade irão revisar suas mudanças, discutir se são necessárias então incorporá-las ou não.
 
-Faça sua edição e envie um "Pull Request", ao realizar esse procedimento contribuidores da Wiki e outros membros da comunidade irão revisar sua edição, discutir e/ou adicionar informações (caso necessário), e então realizar o merge com a branch atual.
+## Adicionando um Conteúdo Novo
 
-## Adicionando novos conteúdos
-
-Adicionar novos conteúdos é um pouquinho mais "envolvente". Você pode fazer de duas maneiras:
+Adicionar um novo conteúdo pode ser um pouco mais complicado, poderá fazer de duas maneiras:
 
 ### Interface do GitHub
 
-Ao entrar em um diretório do GitHub, no canto superior direito à um botão acima da lista de arquivos:
+Quando pesquisar um diretório no GitHub, haverá um botão Add file no canto direito superior do arquivo:
 
-![Botão Adicionar arquivo](images/contributing/add-new-file.png)
+![Add file button](images/contributing/add-new-file.png)
 
-Você também pode enviar um arquivo em formato Markdown já escrito préviamente diretamente no editor de textos do Github.
+Você pode tanto enviar um arquivo 'Markdown' que você já escreveu, ou escrever diretamento no editor de texto do GitHub.
 
-O arquivo _deve sempre conter_ a extensão `.md`, e é claro, conter o texto em formato Markdown. Para mais informações sobre o Markdown, dá uma olhadinha [nesse link](https://guides.github.com/features/mastering-markdown/).
+Este arquivo _PRECISA_ conter a extensão `.md` e conter 'Markdown'. Para mais informações sobre 'Markdown, acesse [este guia](https://guides.github.com/features/mastering-markdown/).
 
-Uma vez que tudo estiver ok, clique no botão "Propose new file" e uma nova Pull Request será aberta para revisão.
+Uma vez feito isso, clique em "Propose new file" (Propor novo arquivo) e um "Pull Request" será aberto para revisão.
 
 ### Git
 
-Caso você queira usar o Git é necessário realizar um clone do repositório com comando:
+Se você deseja usar Git, tudo que precisa é clonar o repositório da WIki com:
 
 ```sh
 git clone https://github.com/openmultiplayer/wiki.git
 ```
 
-Abra seu editor favorito. Recomendamos o uso do Visual Studio Code, pois o mesmo tem diversas ferramentas para edição e formatação de texto em formato Markdown. Como podem ver, estou escrevendo esse texto utilizando o Visual Studio Code!
+Abre o repositório em seu editor favorito. Eu recomendo Visual Studio Code, pois contém ótimas ferramentas de edição e formatação de arquivos "Markdown". Como pode ver, estou escrevendo usando Visual Studio Code!
 
 ![Visual Studio Code markdown preview](images/contributing/vscode.png)
 
-Eu recomendo duas extensões para facilitar sua vida:
+Eu recomendo duas extensões que irão aperfeiçoar sua experiência:
 
-- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - Essa extensão garante que seu texto Markdown está formatado corretamente. Previne erros de semântica e sintáxe. Nem todos os avisos (warnings) apresentados pela extensão são importantes, mas alguns podem ajudar a melhorar a leitura. Use o bom senso na escrita, em caso de dúvidas, pergunte a um revisor.
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by the Prettier.js Team - Essa extensão formatará automaticamente seus arquivos Markdown para utilizar um padrão consistente. O repositório da Wiki tem pré-definições já estipuladas no arquivo `package.json` , o qual a extensão deve usar automaticamente. Lembre-se de habilitar a função "Format  On Save" no seu editor para que seus arquivos Markdown sejam automaticamente formatados e salvos por padrão!
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) por David Anson - Essa extensão faz com que o arquivo seja formatado corretamente, prevenindo alguns erros semânticos e sintáticos. Nem todos avisos são importantes, mas alguns podem ajudar a melhorar e leitura. Use ao seu julgamento, em caso de dúvida, consulte um revisor.
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Pelo time Prettier.js - Este formatará automaticamente seus arquivos "Markdown" para que todos usem um estilo consistente. O repositório da Wiki contém algumas configurações em `package.json` que a extensão deverá usar automaticamente. Tenha certeza de habilitar "Format On Save" nas configurações do seu editor, para que os arquivos sejam formatados automaticamente a cada save.
 
-## Notas, Dicas e Cerimônias...
+## Notas, Dicas e Convenções
 
 ### Links Internos
 
-Não utilize URLs absolutas para links internos. Utilize relative paths (caminhos relativos).
+Não utilize URL's absolutas para links dentro do site. Use caminhos relativos.
 
 - ❌
 
   ```md
-  Para ser usado com o [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+  Para ser usado com [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
   ```
 
 - ✔
 
   ```md
-   Para ser usado com o [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
+  Para ser usado com [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
   ```
 
-`../` significa "suba um diretório", caso o arquivo que você esteja editando estiver na pasta `functions` e você deseja linkar algo em `callbacks` utilize `../` para subir até `scripting/` e então `callbacks/` para entrar no diretório, por fim, digite o nome do arquivo (sem `.md`) da callback que você deseja linkar.
+`../` significa "vá até o diretório", então se o arquivo que está editando estiver dentro do diretório `functions` e estiver 'linkando' com `callbacks` você usará `../` para ir até `scripting/` e então `callbacks/` para entrar no diretório, e então o nome do arquivo (sem `.md`) da callback que gostaria de 'linkar'.
 
 ### Imagens
 
-Imagens vão no diretório `/static/images`. Quando você linkar a imagem utilizando `![]()` use somente `/images/` como diretório base (não é necessário utilizar o `static` logo que o mesmo é só para o repositório).
+Imagens vão dentro de um sub-diretório em `/static/images`. Então quando quando você 'linkar' uma imagem em `![]()` você utiliza `/images/` como o caminho base (sem necessidade de `static`, é apenas para o repositório).
 
-Caso tenha alguma duvida, acesse alguma página dentro do repositório que contém uma imagem e copie o código.
+Em caso de dúvida, leia uma página que contenha imagens e copie como está feito nela.
 
 ### Metadata
 
-A primeira coisa e _todo_ documento deve ser a metadata:
+A primeira coisa em _qualquer_ documento aqui deve ser a "metadata":
 
 ```mdx
 ---
-title: Minha documentação
-description: Essa página é sobre coisas, e mais coisas, e hambúrgers. yay!
+title: Minha Documentação
+description: Esta é uma página sobre coisas, comidas e X-Burguer!
 ---
 ```
 
-Todas as páginas devem incluir título e descrição.
+Toda página deve conter um título e uma descrição.
 
-Para uma lista completa do que pode ser usado entre os `---`, verifique a [documentação do Docusaurus](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
+Para uma lista completa do que pode ir entre `---`, verifique [a documentação do Docusaurus](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
 
-### Cabeçalhos
+### Títulos
 
-Não crie um cabeçalho de nível 1(`<h1>`), utilizando `#` o mesmo é gerado automaticamente. Seu primeiro cabeçalho deve _sempre_ ser  `##`
+Não crie um Título "level 1" (`<h1>`) com `#`, pois este é gerado automaticamente. Seu primeiro título deverá _sempre_ ser `##`
 
 - ❌
 
   ```md
-  # Meu título
+  # Meu Título
 
-  Essa documentação é para ...
+  Esta documentação é para...
 
-  # Subseção
+  # Sub-seção
   ```
 
 - ✔
 
   ```md
-  Essa documentação é para ...
+  Esta documentação é para...
 
-  ## Subseção
+  ## Sub-seção
   ```
 
-### Utilize partes de `códigos` para Referências Técnicas
+### Utilize `Code Snippets` para Referências Técnicas
 
-Quando estiver escrevendo um paragráfo que contem funções, números, expressões ou algo não relacionado a escrita padrão, coloque o mesmo entre acentos graves,  \`dessa forma\`. Torna-se mais fácil o discernimento entre linguagem de programação e descrições técnicas, tais como nomes de funções e partes de códigos.
+Quando escrever um parágrafo que contém nomes de funções, números, expressões ou qualquer outra coisa que não seja linguagem básica (comunicação), cerque-os com \`sinal de crase\`. Isso facilita separar a linguagem ao descrever coisas de referência técnica, elementos como nome de funções ou partes de códigos.
 
 - ❌
 
-  > A função fopen irá retornar o valor com tag de tipo File:, não há problemas no retorno dessa linha pois o valor da mesma esta sendo armazenado em uma variável também do tipo File: (note que os cases são iguais). Por outro lado, na próxima linha o valor 4 está sendo adicionado ao handle do arquivo. 4 não possuí tag [...]
+  > A função fopen retornará um valor com uma tag do tipo File:, não há problema nesta linha pois o valor de retorno é armazenado em um variável que também tem a tag File:. Entretanto, na próxima linha o valor 4 é adicionado ao arquivo. 5 não tem tag [...]
 
 - ✔
 
-  > A função `fopen` irá retornar o valor com tag de tipo `File:`, não há problemas no retorno dessa linha pois o valor da mesma esta sendo armazenado em uma variável também do tipo `File:` (note que os cases são iguais). Por outro lado, na próxima linha o valor `4` está sendo adicionado ao handle do arquivo. `4` não possuí tag
+  > A função `fopen` retornará um valor com uma tag do tipo `File:`', não há problema nesta linha pois o valor de retorno é armazenado em um variável que também tem a tag `File:`. Entretanto, na próxima linha o valor `4` é adicionado ao arquivo. `4` não tem tag [...]
 
-No exemplo acima, `fopen` é o nome de uma função, não uma palavra em inglês, então está marcada como um parte de  `código`, distinguindo-se do resto do conteúdo.
+No exemplo acima, `fopen` é o nome de uma função e não uma palavra em português, então cerca-la com `code` "snippet" (crase) ajuda a distinguir um do outro.
 
-Logo, se o paragráfo estiver se referindo a um exemplo em código, isso ajudará o leitor a associar as paravras com o exemplo.
+Também, se o parágrafo estiver relizando uma referência a um bloco de código, isso ajudaria o leitor a associar as palavras com o exemplo.
 
 ### Tabelas
 
-Caso uma tabela tenha cabeçalhos, esses devem ir na parte superior:
+Se a tabela tem títulos, eles vão na parte de cima:
 
 - ❌
 
   ```md
-  |         |                                             |
-  | ------- | ------------------------------------------- |
-  | Vida    | Status do Motor                             |
-  | 650     | N/A Dano                                    |
-  | 650-550 | Fumaça Branca                               |
-  | 550-390 | Fumaça Cinza                                |
-  | 390-250 | Fumaça Preta                                |
-  | < 250   | Em Chamas (irá explodir em alguns segundos) |
+  |         |                          |
+  | ------- | ------------------------ |
+  | Vida    | Estado do Motor          |
+  | 650     | Sem dano                 |
+  | 650-550 | Fumaça Branca            |
+  | 550-390 | Fumaça Cinza             |
+  | 390-250 | Fumaça Preta             |
+  | < 250   | Em chamas (irá explodir) |
   ```
 
 - ✔
 
   ```md
-  | Vida    | Status do Motor                             |
-  | ------- | ------------------------------------------- |
-  | 650     | N/A Dano                                    |
-  | 650-550 | Fumaça Branca                               |
-  | 550-390 | Fumaça Cinza                                |
-  | 390-250 | Fumaça Preta                                |
-  | < 250   | Em Chamas (irá explodir em alguns segundos) |
+  | Vida    | Estado do Motor          |
+  | ------- | ------------------------ |
+  | 650     | Sem dano                 |
+  | 650-550 | Fumaça Branca            |
+  | 550-390 | Fumaça Cinza             |
+  | 390-250 | Fumaça Preta             |
+  | < 250   | Em chamas (irá explodir) |
   ```
 
-## Migrando da SA-MP Wiki
+## Migrar do SA-MP Wiki
 
-A maioria do conteúdo foi movido, mas caso você encontre uma página que não foi migrada, aqui vai um pequeno guia de como converter o conteúdo para Markdown.
+Maior parte do conteúdo já foi movido, mas se encontrar uma página faltando, aqui está um pequeno guia de como converter o conteúdo para "Markdown".
 
 ### Pegando o HTML
 
-1. Clique nesse botão
+1. Clique neste botão
 
    (Firefox)
 
-   ![imagem](images/contributing/04f024579f8d.png)
+   ![image](images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![imagem](images/contributing/f62bb8112543.png)
+   ![image](images/contributing/f62bb8112543.png)
 
-2. Selecione a parte superior esquerda da página, na margem ou no canto até você encontrar o `#content`
+2. Passe o mouse sobre o canto esquerdo superior da página, na margem da esquerda ou no canto até você ver `#content`
 
-   ![imagem](images/contributing/65761ffbc429.png)
+   ![image](images/contributing/65761ffbc429.png)
 
-   Ou então procure por `<div id=content>`
+   Ou pesquise por `<div id=content>`
 
-   ![imagem](images/contributing/77befe2749fd.png)
+   ![image](images/contributing/77befe2749fd.png)
 
-3. Copie o conteúdo do elemento HTML por inteiro.
+3. Copie o HTML interno daquele elemento
 
-   ![imagem](images/contributing/8c7c75cfabad.png)
+   ![image](images/contributing/8c7c75cfabad.png)
 
-   Agora você possui _somente_ o código HTML do atual _conteúdo_ da página, a parte que realmente interessa, e que deve ser convertida para Markdown.
+   Agora você tem _apenas_ o código HTML do _conteúdo_ da página, então poderá converter para "Markdown".
 
 ### Convertendo HTML para Markdown
 
-Para converter HTML básico (sem tabelas) para Markdown use:
+Para converter HTML básico (sem tabelas) para "Markdown" use:
 
 https://domchristie.github.io/turndown/
 
 ![image](images/contributing/77f4ea555bbb.png)
 
-^^ Perceba que a tabela se lascou todinha...
+^^ Veja como bagunçou completamente a tabela...
 
-### Tabelas HTML para Tabelas Markdown
+### Tabelas HTML Para Tabelas Markdown
 
-Como a ferramenta acima não suporta a conversão de tabelas, vamos utilizar essa:
+Devido a ferramenta superior não suportar tabelas, utilize esta:
 
 https://jmalarcon.github.io/markdowntables/
 
-Copie somente o conteúdo entre o elemento `<table>`:
+Então copie apenas o elemento `<table>`:
 
-![image](images/contributing/57f171ae0da7.png)
+![imagem](images/contributing/57f171ae0da7.png)
 
-### Limpeza manual
+### Toques Finais
 
-A conversão do conteúdo não será 100% perfeita, nesse caso você terá de realizar uma parte da "limpeza" de forma manual. As ferramentas e extensões citadas acima podem ajudar nesse processo mas você ainda terá de fazer uma parte do trabalho manualmente.
+A conversão não será perfeita, então uma limpeza manual será necessária. As ferramentas de formatação listadas acima devem ajuda-lo, mas ainda poderá gastar um tempo realizando trabalho manual.
 
-Se você não tem tempo, sem problemas! Envie-nos o seu texto não finalizado e alguém da comunidade irá continuar o seu trabalho!
+Se você não tem tempo, não se preocupe! Envie um rascunho não finalizado, então alguém poderá continuar de onde você parou!
 
-## Acordo de Contribuição
+## Acordo de Licença
 
-Todos os projetos da open.mp possuem um [Acordo de Contribuição](https://cla-assistant.io/openmultiplayer/homepage). Basicamente, ao aceitar com o acordo você permite a open.mp utilizar seu trabalho e coloca-lo sob a licença de código aberto. Ao abrir sua primeira Pull Request o bot CLA-Assistant irá enviar um link no qual você pode assinar o acordo.
+Todo projeto open.mp contém um [Acordo de Licença do Contribuidor](https://cla-assistant.io/openmultiplayer/homepage). Isso, basicamente, significa que você concorda em usarmos o seu trabalho e coloca-lo sob a licença de código aberto. Quando abrir um Pull Request pela primeira vez, o bot CLA-Assistant irá colocar um link onde você pode assinar o acordo.

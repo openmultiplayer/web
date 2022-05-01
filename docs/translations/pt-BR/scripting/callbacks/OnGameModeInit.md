@@ -1,19 +1,19 @@
 ---
 title: OnGameModeInit
-description: Essa callback é executada quando o gamemode é iniciado.
+description: Esta callback é acionada quando uma gamemode inicia.
 tags: []
 ---
 
 ## Descrição
 
-Essa callback é executada quando o gamemode é iniciado.
+Esta callback é acionada quando uma gamemode inicia.
 
 ## Exemplos
 
 ```c
 public OnGameModeInit()
 {
-    print("GameMode Iniciado!");
+    print("A Gamemode Iniciou!");
     return 1;
 }
 ```
@@ -22,12 +22,8 @@ public OnGameModeInit()
 
 :::tip
 
-Essa função também pode ser usada em um filterscript para detectar se o gamemode foi trocado pela RCON, realizando uma troca de gamemodes ou um gmx, sendo que ao trocar o gamemode o filterscript não recarrega.
+Esta função também pode ser usada em um filterscript para detectar se a gamemode mudou através de comandos do RCON como o "changemode" ou "gmx", pois mudar o gamemode não recarrega um filterscript.
 
 :::
 
-## Callbacks Relacionadas
-
-- [OnGameModeExit](OnGameModeExit): Executada quando o gamemode é desligado.
-- [OnFilterScriptInit](OnFilterScriptInit): Executada quando o filterscript é carregado.
-- [OnFilterSciptExit](OnFilterScriptExit): Executada quando o filterscript é descarregado.
+## Funções Relacionadas

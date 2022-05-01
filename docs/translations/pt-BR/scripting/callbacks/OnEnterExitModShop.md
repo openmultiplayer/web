@@ -1,33 +1,32 @@
 ---
 title: OnEnterExitModShop
-description: Esse callback é executado quando um jogado entra ou sai de uma garagem de modificações.
+description: Esta callback é chamada quando o jogador entra ou sai de um modshop.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
+<VersionWarnPT name='callback' version='SA-MP 0.3a' />
 ## Descrição
 
-Esse callback é executado quando um jogado entra ou sai de uma garagem de modificações.
+Esta callback é chamada quando o jogador entra ou sai de um shop mod.
 
-| Nome       | Descrição                                                                       |
-| ---------- | ------------------------------------------------------------------------------- |
-| playerid   | ID do jogador que entrou ou saiu do Modshop.                                    |
-| enterexit  | 1 quando o jogador entra no Modshop 0 quando ele sai.                           |
-| interiorid | ID do interior da garagem  que o jogador está(ou 0 caso o mesmo esteja saindo). |
+| Nome       | Descrição                                                         |
+| ---------- | ----------------------------------------------------------------- |
+| playerid   | O ID do jogador que entrou/saiu do modshop                        |
+| enterexit  | 1 se o jogador entrou ou 0 se ele saiu                            |
+| interiorid | O ID do interior do modshop que o jogador entrou (ou 0 caso saia) |
 
-## Retorno
+## Retornos
 
-Sempre a primeira a ser declarada em filterscripts.
+É sempre chamado primeiro nas filterscripts.
 
 ## Exemplos
 
 ```c
 public OnEnterExitModShop(playerid, enterexit, interiorid)
 {
-    if (enterexit == 0) // Caso o enterexit for igual a 0 significa que o jogador está saindo do modshop.
+    if (enterexit == 0) // Se enterexit é 0, isso significa que ele está saindo
     {
-        SendClientMessage(playerid, COLOR_WHITE, "Belo carro! Uma taxa de $100 foi cobrada pelas modificações!");
+        SendClientMessage(playerid, COLOR_WHITE, "Ótimo carro! Você foi taxado em R$100.");
         GivePlayerMoney(playerid, -100);
     }
     return 1;
@@ -38,10 +37,10 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Bug(s) Conhecidos: Alguns players podem "colidir" quando entram em determinadas garagens.
+Bugs Conhecidos: Jogadores colidem quando entram no mesmo modshop.
 
 :::
 
 ## Funções Relacionadas
 
-- [AddVehicleComponent](../functions/AddVehicleComponent): Adiciona um componente a um veículo.
+- [AddVehicleComponent](../functions/AddVehicleComponent.md): Adiciona um componente a um veículo.

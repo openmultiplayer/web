@@ -1,12 +1,12 @@
 ---
 title: OnFilterScriptExit
-description: Esse callback é executado quando o filterscript é descarregado do servidor.
+description: Esta callback é chamada quando um filterscript é descarregado.
 tags: []
 ---
 
 ## Descrição
 
-Esse callback é executado somente quando o filterscript é descarregado do servidor. O mesmo só pode ser utilizado em de filterscripts.
+Esta callback é chamada quando um filterscript é descarregado. É apenas chamado dentro do filterscript que descarregou.
 
 ## Exemplos
 
@@ -14,14 +14,10 @@ Esse callback é executado somente quando o filterscript é descarregado do serv
 public OnFilterScriptExit()
 {
     print("\n--------------------------------------");
-    print(" Descarregando meu filterscript");
+    print("Meu Filterscript descarregou");
     print("--------------------------------------\n");
     return 1;
 }
 ```
 
-## Callbacks Relacionados
-
-- [OnFilterScriptInit](OnFilterScriptInit): Executada quando o filterscript é carregado.
-- [OnGameModeInit](OnGameModeInit): Executada quando o gamemode é iniciado.
-- [OnGameModeExit](OnGameModeExit): Executada quando o gamemode é desligado.
+## Funções Relacionadas
