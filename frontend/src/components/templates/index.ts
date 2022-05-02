@@ -6,9 +6,9 @@ import VersionWarnID from "./id/version-warning";
 import LowercaseNoteID from "./id/lowercase-note";
 import TipNPCCallbacksID from "./id/npc-callbacks-tip";
 
-import VersionWarnPT from "./pt/version-warning";
-import LowercaseNotePT from "./pt/lowercase-note";
-import TipNPCCallbacksPT from "./pt/npc-callbacks-tip";
+import VersionWarnPTBR from "./pt-BR/version-warning";
+import LowercaseNotePTBR from "./pt-BR/lowercase-note";
+import TipNPCCallbacksPTBR from "./pt-BR/npc-callbacks-tip";
 
 import VersionWarnES from "./es/version-warning";
 import LowercaseNoteES from "./es/lowercase-note";
