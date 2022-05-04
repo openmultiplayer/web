@@ -63,13 +63,13 @@ const UID = () => {
               textAlign={{ base: "center", md: "left" }}
               maxW="30em"
             >
-              Copy the UID provider macro in to your component, in place of the default provider,
+              Copy the UID provider macro in to your component in place of the default provider,
               which is not valid to avoid duplicates.  Each component should have a unique UID,
-              hence the <em>U</em> in <em>UID</em> (<em>Unique IDentifier</em>).  The result will
-              look something like:
+              hence the <em>U</em> in <em>UID</em> (<em>Unique IDentifier</em>).  The placeholder
+              you must find and replace is:
               <br />
               <br />
-              <pre>PROVIDE_UID(0x0123456789ABCDEF);</pre>
+              <pre>PROVIDE_UID(/* UID GOES HERE */);</pre>
             </Text>
             <Text
               fontSize="xl"
@@ -77,7 +77,7 @@ const UID = () => {
               textAlign={{ base: "center", md: "left" }}
               maxW="30em"
             >
-              {`0x${rnd[0].toString(16).toUpperCase()}${rnd[1].toString(16).toUpperCase()}${rnd[2].toString(16).toUpperCase()}${rnd[3].toString(16).toUpperCase()}${rnd[4].toString(16).toUpperCase()}${rnd[5].toString(16).toUpperCase()}${rnd[6].toString(16).toUpperCase()}${rnd[7].toString(16).toUpperCase()}`}
+              {`PROVIDE_UID(0x${rnd[0].toString(16).toUpperCase()}${rnd[1].toString(16).toUpperCase()}${rnd[2].toString(16).toUpperCase()}${rnd[3].toString(16).toUpperCase()}${rnd[4].toString(16).toUpperCase()}${rnd[5].toString(16).toUpperCase()}${rnd[6].toString(16).toUpperCase()}${rnd[7].toString(16).toUpperCase()});`}
             </Text>
           </Flex>
         </Box>
