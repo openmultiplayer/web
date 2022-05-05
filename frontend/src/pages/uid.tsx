@@ -4,7 +4,7 @@ import { GetServerSideProps, NextPage } from "next";
 import { NextSeo } from "next-seo";
 import { VFC } from "react";
 
-const UID: VFC<Props> = ({ serialised }) => {
+const UID: VFC<Props> = ({ serialized }) => {
   return (
     <Box as="section" maxWidth="50em" margin="auto" padding="1em 2em">
       <NextSeo title="UID" />
@@ -21,34 +21,34 @@ const UID: VFC<Props> = ({ serialised }) => {
         <pre>PROVIDE_UID(/* UID GOES HERE */);</pre>
         <br />
         And replace it with:
-        <pre>{`PROVIDE_UID(${serialised});`}</pre>
+        <pre>{`PROVIDE_UID(${serialized});`}</pre>
       </main>
     </Box>
   );
 };
 
 type Props = {
-  serialised: string;
+  serialized: string;
 };
 
-const Page: NextPage<Props> = ({ serialised }: Props) => (
-  <UID serialised={serialised} />
+const Page: NextPage<Props> = ({ serialized }: Props) => (
+  <UID serialized={serialized} />
 );
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const rnd = randomBytes(8);
 
-  function toHex(number) {
+  function toHex(number: number) {
     return ('00' + number.toString(16)).slice(-2).toUpperCase();
   }
 
-  const serialised = `0x${toHex(rnd[0])}${toHex(rnd[1])
+  const serialized = `0x${toHex(rnd[0])}${toHex(rnd[1])
     }${toHex(rnd[2])}${toHex(rnd[3])}${toHex(rnd[4])
     }${toHex(rnd[5])}${toHex(rnd[6])}${toHex(rnd[7])}`;
 
   return {
     props: {
-      serialised,
+      serialized,
     },
   };
 };
