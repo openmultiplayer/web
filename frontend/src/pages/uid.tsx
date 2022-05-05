@@ -42,7 +42,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
     return ('00' + number.toString(16)).slice(-2).toUpperCase();
   }
 
-  const serialised = `${toHex(rnd[0])}${toHex(rnd[1])
+  const serialised = `0x${toHex(rnd[0])}${toHex(rnd[1])
     }${toHex(rnd[2])}${toHex(rnd[3])}${toHex(rnd[4])
     }${toHex(rnd[5])}${toHex(rnd[6])}${toHex(rnd[7])}`;
 
