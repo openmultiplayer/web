@@ -43,7 +43,7 @@ const Page: NextPage<Props> = ({ serialised }: Props) => (
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const rnd = randomBytes(8);
 
-  function toHex(number: number) {
+  function toHex(number: number): string {
     return ('00' + number.toString(16)).slice(-2).toUpperCase();
   }
 
