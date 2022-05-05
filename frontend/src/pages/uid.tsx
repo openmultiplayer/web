@@ -36,22 +36,15 @@ const Page: NextPage<Props> = ({ serialised }: Props) => (
 );
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  // const a = new Uint8Array(8);
-  // for (let i = 0; i < 8; i += 65536) {
-  //   crypto.getRandomValues(a.subarray(i, i + Math.min(n - i, 65536)));
-  // }
-
   const rnd = randomBytes(8);
 
-  const serialised = `0x${rnd[0].toString(16).toUpperCase()}${rnd[1]
-    .toString(16)
-    .toUpperCase()}${rnd[2].toString(16).toUpperCase()}${rnd[3]
-    .toString(16)
-    .toUpperCase()}${rnd[4].toString(16).toUpperCase()}${rnd[5]
-    .toString(16)
-    .toUpperCase()}${rnd[6].toString(16).toUpperCase()}${rnd[7]
-    .toString(16)
-    .toUpperCase()}`;
+  function toHex(number) {
+    return ('00' + number.toString(16)).slice(-2).toUpperCase();
+  }
+
+  const serialised = `${toHex(rnd[0])}${toHex(rnd[1])
+    }${toHex(rnd[2])}${toHex(rnd[3])}${toHex(rnd[4])
+    }${toHex(rnd[5])}${toHex(rnd[6])}${toHex(rnd[7])}`;
 
   return {
     props: {
