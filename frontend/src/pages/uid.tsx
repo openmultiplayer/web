@@ -16,11 +16,12 @@ const UID: VFC<Props> = ({ serialised }) => {
         have a unique UID, hence the <em>U</em> in <em>UID</em> (
         <em>Unique IDentifier</em>).
         <br />
-        Find this placeholder:
         <br />
-        <pre>{`PROVIDE_UID(${serialised});`}</pre>
-        And replace it with:
+        Find this placeholder:
         <pre>PROVIDE_UID(/* UID GOES HERE */);</pre>
+        <br />
+        And replace it with:
+        <pre>{`PROVIDE_UID(${serialised});`}</pre>
       </main>
     </Box>
   );
