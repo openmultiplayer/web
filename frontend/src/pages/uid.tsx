@@ -11,10 +11,12 @@ const UID: VFC<Props> = ({ serialized }) => {
 
       <main>
         <h1>Component UID Generator</h1>
-        Copy the UID provider macro in to your component in place of the default
-        provider, which is not valid to avoid duplicates. Each component should
-        have a unique UID, hence the <em>U</em> in <em>UID</em> (
-        <em>Unique IDentifier</em>).
+        Copy the <code>PROVIDE_UID</code> macro below in to your new component,
+        in place of the default UID provider macro.  Each component should have
+        a unique UID, hence the <em>U</em> in <em>UID</em> (<em>Unique
+        IDentifier</em>).  The default <code>PROVIDE_UID</code> is invalid and
+        will not compile, to avoid duplicates when creating new components from
+        templates.
         <br />
         <br />
         Find this placeholder:
@@ -22,6 +24,9 @@ const UID: VFC<Props> = ({ serialized }) => {
         <br />
         And replace it with:
         <pre>{`PROVIDE_UID(${serialized});`}</pre>
+        <br />
+        If you are modifying an existing component still do remember to replace
+        the existing UID, which will be a valid value not a placeholder.
       </main>
     </Box>
   );
