@@ -11,10 +11,12 @@ const UID: VFC<Props> = ({ serialised }) => {
 
       <main>
         <h1>Component UID Generator</h1>
-        Copy the UID provider macro in to your component in place of the default
-        provider, which is not valid to avoid duplicates. Each component should
-        have a unique UID, hence the <em>U</em> in <em>UID</em> (
-        <em>Unique IDentifier</em>).
+        Copy the <code>PROVIDE_UID</code> macro below in to your new component,
+        in place of the default UID provider macro.  Each component should have
+        a unique UID, hence the <em>U</em> in <em>UID</em> (<em>Unique
+        IDentifier</em>).  The default <code>PROVIDE_UID</code> is invalid and
+        will not compile, to avoid duplicates when creating new components from
+        templates.
         <br />
         <br />
         Find this placeholder:
@@ -22,6 +24,9 @@ const UID: VFC<Props> = ({ serialised }) => {
         <br />
         And replace it with:
         <pre>{`PROVIDE_UID(${serialised});`}</pre>
+        <br />
+        If you are modifying an existing component still do remember to replace
+        the existing UID, which will be a valid value not a placeholder.
       </main>
     </Box>
   );
@@ -36,22 +41,15 @@ const Page: NextPage<Props> = ({ serialised }: Props) => (
 );
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  // const a = new Uint8Array(8);
-  // for (let i = 0; i < 8; i += 65536) {
-  //   crypto.getRandomValues(a.subarray(i, i + Math.min(n - i, 65536)));
-  // }
-
   const rnd = randomBytes(8);
 
-  const serialised = `0x${rnd[0].toString(16).toUpperCase()}${rnd[1]
-    .toString(16)
-    .toUpperCase()}${rnd[2].toString(16).toUpperCase()}${rnd[3]
-    .toString(16)
-    .toUpperCase()}${rnd[4].toString(16).toUpperCase()}${rnd[5]
-    .toString(16)
-    .toUpperCase()}${rnd[6].toString(16).toUpperCase()}${rnd[7]
-    .toString(16)
-    .toUpperCase()}`;
+  function toHex(number: number): string {
+    return ('00' + number.toString(16)).slice(-2).toUpperCase();
+  }
+
+  const serialised = `0x${toHex(rnd[0])}${toHex(rnd[1])
+    }${toHex(rnd[2])}${toHex(rnd[3])}${toHex(rnd[4])
+    }${toHex(rnd[5])}${toHex(rnd[6])}${toHex(rnd[7])}`;
 
   return {
     props: {
