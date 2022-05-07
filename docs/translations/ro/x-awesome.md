@@ -1,19 +1,19 @@
 ---
 title: Minunatii
-description: O listă organizată de instrumente utile, biblioteci și pluginuri pentru dezvoltarea SA-MP.
+description: O listă organizată de instrumente utile, pluginuri si librarii pentru dezvoltarea SA-MP.
 ---
 
 ## Unelte
 
 - **_[Community Compiler](https://github.com/pawn-lang/compiler/)_** - O versiune foarte actualizată a compilatorului, cu multe remedieri și îmbunătățiri.
-- **_[sampctl](http://sampctl.com/)_** - Manager de pachete pentru instalarea bibliotecilor și rularea serverului dvs.
+- **_[sampctl](http://sampctl.com/)_** - Manager de pachete pentru instalarea bibliotecilor și rularea serverului.
 - **_[Plugin Runner](https://github.com/Zeex/samp-plugin-runner/)_** - Instrument pentru a rula o versiune ușoară a serverului direct din linia de comandă (nu este necesar server.cfg) pentru testarea pluginurilor.
 
 ## Librarii
 
-- **_[SA:MP stdlib](https://github.com/pawn-lang/samp-stdlib/)_** - Versiunile actualizate ale valorii implicite includ. `const`-corect, documentat și complet.
-- **_[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes/)_** - Remedii extrem de optimizate pentru un număr mare de erori de server SA: MP. Conectează și utilizează.
-- **_[YSI](https://github.com/pawn-lang/YSI-Includes/)_** - Cea mai veche, cea mai mare, cea mai testată și bine susținută bibliotecă pentru SA: MP / pion, oferind un număr imens de noi caracteristici de joc și limbă.
+- **_[SA:MP stdlib](https://github.com/pawn-lang/samp-stdlib/)_** - Versiunile actualizate ale include-urilor. `const`-corect, documentat și complet.
+- **_[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes/)_** - Corectarea erorilor vechi din sa:mp.
+- **_[YSI](https://github.com/pawn-lang/YSI-Includes/)_** - Cea mai veche, cea mai mare, cea mai testată și bine susținută librarie pentru SA: MP / pawmo, oferind un număr imens de noi caracteristici de joc și limbă.
 - **_[amx_assembly](https://github.com/Zeex/amx_assembly/)_** - Acces la nivel scăzut la scriptul pawn în sine.
 - **_[indirection](https://github.com/Y-Less/indirection/)_** - Sistem pentru trecerea pointerilor și apelarea funcțiilor indirect, cu metode abstracte de personalizare a apelurilor.
 - **_[code-parse.inc](https://github.com/Y-Less/code-parse.inc/)_** - Analizați și personalizați codul de amanet la compilare.
