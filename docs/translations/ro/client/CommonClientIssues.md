@@ -8,9 +8,9 @@ title: Probleme comune
 
 ### Am primit eroarea "GTA San Andreas nu poate fi găsit"
 
-San Andreas Multiplayer (SA:MP) **nu poate** sa funcționeze de unul singur și, prin urmare, trebuie să instalați GTA San Andreas pentru PC. De asemenea, versiunea jocului trebuie să fie **EU / US v1.0**, alte versiuni precum v2.0 sau versiunile de pe Steam/Direct2Drive nu vor funcționa. [Faceți clic aici pentru a descărca un patch care o să vă facă downgrade la versiunea GTA:SA 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multiplayer (SA:MP) **nu poate** sa funcționeze de unul singur și, prin urmare, trebuie să instalați GTA San Andreas pentru PC. De asemenea, versiunea jocului trebuie să fie **EU / US v1.0**, alte versiuni precum v2.0 sau versiunile de pe Steam/Direct2Drive nu vor funcționa. [Faceți clic aici pentru a descărca un patch care o să vă facă downgrade la versiunea GTA:SA 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) 
 
-### Nu pot vedea niciun server în browserul SA:MP
+### Nu pot vedea niciun server în tabelul favorite din clientul SA:MP
 
 În primul rând, asigurați-vă că ați urmat procedurile stabilite în [ghidul de inceput](https://team.sa-mp.com/wiki/Getting_Started). Dacă ați urmat ceea ce scrie acolo și încă nu puteți vedea niciun server, trebuie să permiteți accesul SA:MP-ului prin firewall-ul dumneavoastră. Din păcate, datorită numărului mare de programe firewall care există, nu putem oferi asistență suplimentară în acest sens - vă sugerăm să consultați site-ul web al producătorilor sau să încercați să căutați pe Google. De asemenea, asigurați-vă că ați instalat cea mai recentă versiune de SA:MP!
 
@@ -19,6 +19,7 @@ San Andreas Multiplayer (SA:MP) **nu poate** sa funcționeze de unul singur și,
 :::warning
 
 Nu ar trebui să vedeți opțiunile pentru singleplayer (new game, load game, etc.) când intrați pe un server - SA-MP ar trebui să se încarce singur și să nu afișeze aceste opțiuni. Dacă vedeți "new game" inseamna ca s-a incarcat modul singleplayer, nu San Andreas Multiplayer.
+** Daca utilizati sampfuncs folositi versiunea R2 de client SA:MP **
 
 :::
 
