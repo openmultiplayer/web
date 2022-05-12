@@ -53,7 +53,7 @@ func FromModel(u *db.UserModel, public bool) (o *User) {
 	if public {
 		// Email is not included for privacy reasons.
 		// If it's required for some API only accessible by either the user
-		// themselves or an armin, it must be assigned manually by the caller.
+		// themselves or an admin, it must be assigned manually by the caller.
 		result.Email = ""
 	}
 
