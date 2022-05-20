@@ -6,7 +6,7 @@ networks:
 
 services:
   api:
-    restart: on-failure
+    restart: always
     image: southclaws/openmp-web
     environment:
       DATABASE_URL: ${DATABASE_URL}
@@ -39,7 +39,7 @@ services:
       com.centurylinklabs.watchtower.enable: "true"
 
   frontend:
-    restart: on-failure
+    restart: always
     image: southclaws/openmp-frontend
     ports:
       - 3000:3000
@@ -132,7 +132,7 @@ services:
 
   mybb:
     image: mybb/mybb:latest
-    restart: on-failure
+    restart: always
     volumes:
       - ${DATA_DIR:?required}/openmp/mybb:/var/www/html:rw
     labels:
@@ -140,7 +140,7 @@ services:
 
   nginx:
     image: nginx:mainline
-    restart: on-failure
+    restart: always
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ${DATA_DIR:?required}/openmp/mybb:/var/www/html:ro
