@@ -3,6 +3,7 @@ package servers
 import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
+	cache "github.com/victorspringer/http-cache"
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
@@ -29,10 +30,13 @@ func Build() fx.Option {
 		fx.Invoke(func(
 			as *authentication.State,
 			r chi.Router,
+			cacheClient *cache.Client,
 			s *service,
 		) {
 			rtr := chi.NewRouter()
-			r.Mount("/servers", rtr)
+			r.With(
+				cacheClient.Middleware,
+			).Mount("/servers", rtr)
 
 			// TODO: Remove this at some point.
 			r.Mount("/server", rtr)
