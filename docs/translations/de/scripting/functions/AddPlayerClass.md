@@ -1,55 +1,55 @@
 ---
-title: AddPlayerClass
-description: Adds a class to class selection.
+Titel: AddPlayerClass
+Beschreibung: Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu.
 tags: ["player"]
 ---
 
-## Description
+## Beschreibung
 
-Adds a class to class selection. Classes are used so players may spawn with a skin of their choice.
+Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu. Klassen ermöglichen dem Spieler mit einem Skin ihrer Wahl zu spawnen.
 
-| Name          | Description                                                   |
+| Name          | Beschreibung                                                   |
 | ------------- | ------------------------------------------------------------- |
-| modelid       | The skin which the player will spawn with.                    |
-| Float:spawn_x | The X coordinate of the spawnpoint of this class.             |
-| Float:spawn_y | The Y coordinate of the spawnpoint of this class.             |
-| Float:spawn_z | The Z coordinate of the spawnpoint of this class.             |
-| Float:z_angle | The direction in which the player should face after spawning. |
-| weapon1       | The first spawn-weapon for the player.                        |
-| weapon1_ammo  | The amount of ammunition for the primary spawn weapon.        |
-| weapon2       | The second spawn-weapon for the player.                       |
-| weapon2_ammo  | The amount of ammunition for the second spawn weapon.         |
-| weapon3       | The third spawn-weapon for the player.                        |
-| weapon3_ammo  | The amount of ammunition for the third spawn weapon.          |
+| modelid       | Der Skin(SkinID) mit dem der Spieler spawnt.                    |
+| Float:spawn_x | Die X Koordinate des Spawnpunkts der Klasse.             |
+| Float:spawn_y | Die Y Koordinate des Spawnpunkts der Klasse.             |
+| Float:spawn_z | Die Z Koordinate des Spawnpunkts der Klasse.             |
+| Float:z_angle | Die Blickrichtung des Spawnpunktes. |
+| weapon1       | Die erste Spawn-Waffe des Spielers.                        |
+| weapon1_ammo  | Die Menge der Munition der ersten Waffe.        |
+| weapon2       | Die zweite Spawn-Waffe des Spielers.                       |
+| weapon2_ammo  | Die Menge der Munition der zweiten Waffe.         |
+| weapon3       | Die dritte Spawn-Waffe des Spielers.                        |
+| weapon3_ammo  | Die Menge der Munition der dritten Waffe.          |
 
-## Returns
+## Rückgabe(return value)
 
-The ID of the class which was just added.
+Die ID der Klasse die erstellt wurde.
 
-319 if the class limit (320) was reached. The highest possible class ID is 319.
+319 wenn das Class-Limit (320) erreicht ist. Höchstmögliche Class ID: 319.
 
-## Examples
+## Beispiele
 
 ```c
 public OnGameModeInit()
 {
-    // Players can spawn with either the CJ skin (0) or The Truth skin (1).
+    // Spieler können entweder mit dem CJ Skin (0) oder The Truth skin (1) spawnen.
     AddPlayerClass(0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0); // CJ
     AddPlayerClass(1, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0); // The Truth
     return 1;
 }
 ```
 
-## Notes
+## Anmerkungen
 
 :::tip
 
-The maximum class ID is 319 (starting from 0, so a total of 320 classes). When this limit is reached, any more classes that are added will replace ID 319.
+Die maximale Class ID ist 319 (Start bei 0, also insgesamt 320 Klassen). Wenn das Limit erreicht ist ersetzen alle weiteren Klassen die Klasse mit class ID 319.
 
 :::
 
-## Related Functions
+## Ähnliche Funktionen
 
-- [AddPlayerClassEx](AddPlayerClassEx): Add a class with a default team.
-- [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.
-- [SetPlayerSkin](SetPlayerSkin): Set a player's skin.
+- [AddPlayerClassEx](AddPlayerClassEx): Erstelle einen Klasse mit einem zugewiesenen Team.
+- [SetSpawnInfo](SetSpawnInfo): Setze die Spawneinstellungen eines Spielers.
+- [SetPlayerSkin](SetPlayerSkin): Ändere den Skin eines Spielers.
