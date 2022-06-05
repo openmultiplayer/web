@@ -1,6 +1,6 @@
 ---
-title: "Client Befehle"
-descripion: Liste aller Client Befehle.
+Titel: "Client Befehle"
+Beschreibung: Liste aller Client Befehle.
 ---
 
 ## Befehle
