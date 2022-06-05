@@ -1,43 +1,43 @@
 ---
-title: AddStaticVehicle
-description: Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
+Titel: AddStaticVehicle
+Beschreibung: Fügt ein 'static' vehicle (models werden für den Spieler vorgeladen) zum Gamemode hinzu.
 tags: ["vehicle"]
 ---
 
-## Description
+## Beschreibung
 
-Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
+Fügt ein 'static' vehicle (models werden für den Spieler vorgeladen) zum Gamemode hinzu.
 
-| Name                                     | Description                            |
+| Name                                     | Beschreibung                            |
 | ---------------------------------------- | -------------------------------------- |
-| modelid                                  | The Model ID for the vehicle.          |
-| Float:spawn_X                            | The X-coordinate for the vehicle.      |
-| Float:spawn_Y                            | The Y-coordinate for the vehicle.      |
-| Float:spawn_Z                            | The Z-coordinate for the vehicle.      |
+| modelid                                  | Die Model ID des Fahrzeugs.          |
+| Float:spawn_X                            | Die X-Koordinate des Fahrzeugs.      |
+| Float:spawn_Y                            | Die Y-Koordinate des Fahrzeugs.      |
+| Float:spawn_Z                            | Die Z-Koordinate des Fahrzeugs.      |
 | Float:z_angle                            | Direction of vehicle - angle.          |
-| [color1](../resources/vehiclecolorid) | The primary color ID. -1 for random.   |
-| [color2](../resources/vehiclecolorid) | The secondary color ID. -1 for random. |
+| [color1](../resources/vehiclecolorid) | Die ID der Primärfarbe. -1 für zufällige Farbe.   |
+| [color2](../resources/vehiclecolorid) | Die ID der Sekundärfarbe. -1 für zufällige Farbe. |
 
-## Returns
+## Rückgabe(return value)
 
-The vehicle ID of the vehicle created (between 1 and MAX_VEHICLES).
+Die vehicleID des erstellten Fahrzeug (zwischen 1 und MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) if vehicle was not created (vehicle limit reached or invalid vehicle model ID passed).
+INVALID_VEHICLE_ID (65535) wenn das Fahrzeug nicht erstellt werden konnte (Fahrzeug-Limit ist erreicht oder fehlerhafte model ID).
 
-## Examples
+## Beispiele
 
 ```c
 public OnGameModeInit()
 {
-    // Add a Hydra to the game
-    AddStaticVehicle(520, 2109.1763, 1503.0453, 32.2887, 82.2873, 0, 1);
+    // Fügt einen Sultan zum Spiel hinzu
+    AddStaticVehicle(560, 2109.1763, 1503.0453, 32.2887, 82.2873, 0, 1);
 
     return 1;
 }
 ```
 
-## Related Functions
+## Ähnliche Funktionen
 
-- [AddStaticVehicleEx](AddStaticVehicleEx): Add a static vehicle with custom respawn time.
-- [CreateVehicle](CreateVehicle): Create a vehicle.
-- [DestroyVehicle](DestroyVehicle): Destroy a vehicle.
+- [AddStaticVehicleEx](AddStaticVehicleEx): Erstelle ein static Fahrzeug mit bestimmter Respawnzeit.
+- [CreateVehicle](CreateVehicle): Erstelle ein Fahrzeug.
+- [DestroyVehicle](DestroyVehicle): Lösche ein Fahrzeug.
