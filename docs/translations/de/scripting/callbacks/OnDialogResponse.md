@@ -1,7 +1,7 @@
 ---
-title: OnDialogResponse
-description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).
-tags: []
+Titel: OnDialogResponse
+Beschreibung: Dieses Callback wird ausgeführt wenn ein Spieler einem Dialog antwortet(benutzt), indem er einen der Buttons drückt, Enter / ESC drückt oder ein List-Item per Doppelklick auswählt(Dialog: List-Style)
+tags: [Dialog]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
