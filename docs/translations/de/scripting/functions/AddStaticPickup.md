@@ -1,53 +1,53 @@
 ---
-title: AddStaticPickup
-description: This function adds a 'static' pickup to the game.
-tags: []
+Titel: AddStaticPickup
+Beschreibung: Fügt ein 'static' Pickup zum Spiel hinzu.
+tags: [Pickup]
 ---
 
-## Description
+## Beschreibung
 
-This function adds a 'static' pickup to the game. These pickups support weapons, health, armor etc., with the ability to function without scripting them (weapons/health/armor will be given automatically).
+Fügt ein 'static' Pickup zum Spiel hinzu. Diese Pickups unterstützen Waffen, Leben, Rüstung etc., mit der Fähigkeit ohne gescripted zu werden zu funktionieren. (weapons/health/armor wird automatisch gegeben).
 
-| Name                                | Description                                                                         |
+| Name                                | Beschreibung                                                                         |
 | ----------------------------------- | ----------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | The model of the pickup.                                                            |
-| [type](../resources/pickuptypes) | The pickup type. Determines how the pickup responds when picked up.                 |
-| Float:X                             | The X coordinate to create the pickup at.                                           |
-| Float:Y                             | The Y coordinate to create the pickup at.                                           |
-| Float:Z                             | The Z coordinate to create the pickup at.                                           |
-| virtualworld                        | The virtual world ID to put tht pickup in. Use -1 to show the pickup in all worlds. |
+| [model](../resources/pickupids)  | Die Model ID des Pickups.                                    |
+| [type](../resources/pickuptypes) | Der Pickup Typ. Beeinflusst das Verhalten, wenn das Pickup aufgehoben wird.                 |
+| Float:X                             | Die X Koordinate an der das Pickup erstellt wird.                                           |
+| Float:Y                             | Die Y Koordinate an der das Pickup erstellt wird.                                           |
+| Float:Z                             | Die Z Koordinate an der das Pickup erstellt wird.                                           |
+| virtualworld                        | Die virtuelle Welt in der das Pickup erstellt wird. Nutze -1 um es in jeder virtuellen Welt zu zeigen. |
 
-## Returns
+## Rückgabe(return value)
 
-1 if the pickup is successfully created.
+1 wenn das Pickup erstellt wurde.
 
-0 if failed to create.
+0 wenn das Pickup nicht erstellt werden konnte.
 
-## Examples
+## Beispiele
 
 ```c
 public OnGameModeInit()
 {
-    // Create a pickup for armor
+    // Erstelle ein Pickup für Armor (Rüstung)
     AddStaticPickup(1242, 2, 1503.3359, 1432.3585, 10.1191, 0);
 
-    // Create a pickup for some health, right next to the armour
+    // Erstelle ein Pickup für Health (Leben)
     AddStaticPickup(1240, 2, 1506.3359, 1432.3585, 10.1191, 0);
 
     return 1;
 }
 ```
 
-## Notes
+## Anmerkungen
 
 :::tip
 
-This function doesn't return a pickup ID that you can use in, for example, OnPlayerPickUpPickup. Use CreatePickup if you'd like to assign IDs.
+Diese Funktion gibt keine ID zurück, mit der auf das Objekt zugegriffen werden kann (z.B. in OnPlayerPickUpPickup). Nutze stattdessen CreatePickup wenn du mit der ID arbeiten möchtest.
 
 :::
 
 ## Related Functions
 
-- [CreatePickup](CreatePickup): Create a pickup.
-- [DestroyPickup](DestroyPickup): Destroy a pickup.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Called when a player picks up a pickup.
+- [CreatePickup](CreatePickup): Erstellt ein Pickup.
+- [DestroyPickup](DestroyPickup): Löscht ein Pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Wird aufgerufen wenn ein Spieler ein Pickup aufhebt.
