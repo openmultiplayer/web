@@ -1,32 +1,32 @@
 ---
-title: DestroyPickup
-description: Destroys a pickup created with CreatePickup.
+Titel: DestroyPickup
+Beschreibung: Löscht ein mit CreatePickup erstelltes Pickup.
 tags: []
 ---
 
-## Description
+## Beschreibung
 
-Destroys a pickup created with CreatePickup.
+Löscht ein mit CreatePickup erstelltes Pickup.
 
-| Name   | Description                                                 |
+| Name   | Beschreibung                                                 |
 | ------ | ----------------------------------------------------------- |
-| pickup | The ID of the pickup to destroy (returned by CreatePickup). |
+| pickup | Die ID des Pickups, dass gelöscht wird (Rückgabewert bei CreatePickup). |
 
-## Returns
+## Rückgabe(return value)
 
-This function does not return any specific values.
+Diese Funktion hat keinen Rückgabewert.
 
-## Examples
+## Beispiel
 
 ```c
-// Create a pickup for armor.
+// Erstelle ein Pickup für Armor (Rüstung). ID wird in pickup_armor gespeichert.
 pickup_armour = CreatePickup ( 1242, 2, 1503.3359, 1432.3585, 10.1191 );
 
-//some time later...
+//Lösche das Pickup über die gespeicherte ID wieder...
 DestroyPickup(pickup_armour);
 ```
 
-## Related Functions
+## Ähnliche Funktionen
 
-- [CreatePickup](CreatePickup): Create a pickup.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Called when a player picks up a pickup.
+- [CreatePickup](CreatePickup): Erstelle ein Pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Wird aufgerufen wenn ein Spieler ein Pickup aufhebt.
