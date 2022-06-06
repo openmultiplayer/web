@@ -1,6 +1,6 @@
 ---
-title: OnActorStreamIn
-description: This callback is called when an actor is streamed in by a player's client.
+Titel: OnActorStreamIn
+Beschreibung: Dieses Callback wird ausgeführt wenn ein Actor von einem Spieler gestreamt wird.
 tags: []
 ---
 
@@ -8,29 +8,29 @@ tags: []
 
 ## Description
 
-This callback is called when an actor is streamed in by a player's client.
+Dieses Callback wird ausgeführt wenn ein Actor von einem Spieler gestreamt wird.
 
-| Name        | Description                                                   |
+| Name        | Beschreibung                                                   |
 | ----------- | ------------------------------------------------------------- |
-| actorid     | The ID of the actor that has been streamed in for the player. |
-| forplayerid | The ID of the player that streamed the actor in.              |
+| actorid     | Die ID des Actors der vom Spieler gestreamt wird. |
+| forplayerid | Die ID des Spielers der den Actor gestreamt hat.              |
 
-## Returns
+## Rückgabe(return value)
 
-It is always called first in filterscripts.
+Wird in Filterscripts immer zuerst aufgerufen.
 
-## Examples
+## Beispiele
 
 ```c
 public OnActorStreamIn(actorid, forplayerid)
 {
     new string[40];
-    format(string, sizeof(string), "Actor %d is now streamed in for you.", actorid);
+    format(string, sizeof(string), "Actor %d wird jetzt für dich gestreamt.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
 ```
 
-## Notes
+## Anmerkungen
 
 <TipNPCCallbacks />
