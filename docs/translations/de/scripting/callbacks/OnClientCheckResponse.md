@@ -1,25 +1,25 @@
 ---
-title: OnClientCheckResponse
-description: This callback is called when a SendClientCheck request completes
+Titel: OnClientCheckResponse
+Beschreibung: Dieses Callback wird ausgeführt wenn ein SendClientCheck Request abgeschlossen ist.
 tags: []
 ---
 
-## Description
+## Beschreibung
 
-This callback is called when a SendClientCheck request completes.
+Dieses Callback wird ausgeführt wenn ein SendClientCheck Request abgeschlossen ist.
 
-| Name          | Description                       |
+| Name          | Beschreibung                       |
 | ------------- | --------------------------------- |
-| playerid      | The ID of the player checked.     |
-| actionid      | The type of check performed.      |
-| memaddr       | The address requested.            |
-| retndata      | The result of the check.          |
+| playerid      | Die ID des Spielers, der geprüft wurde.     |
+| actionid      | Der Check Typ der geprüft wurde.      |
+| memaddr       | Die angefragte Adresse.            |
+| retndata      | Das Ergebnis des Checks.          |
 
-## Returns
+## Rückgabe (return value)
 
-It is always called first in filterscripts.
+Wird in Filterscripts immer zuerst aufgerufen.
 
-## Examples
+## Beispiele
 
 ```c
 public OnPlayerConnect(playerid)
@@ -32,21 +32,21 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
     if(actionid == 0x48) // or 72
     {
-        print("WARNING: The player doesn't seem to be using a regular computer!");
+        print("WARNUNG: Der Spieler scheint keinen stanrdmäßigen Computer zu nutzen!");
         Kick(playerid);
     }
     return 1;
 }
 ```
 
-## Notes
+## Anmerkungen
 
 :::warning
 
-This callback is only called when it is in a filterscript.
+Dieses Callback wird nur in Filterscripts aufgerufen.
 
 :::
 
-## Related Functions
+## Ähnliche Funktionen
 
-- [SendClientCheck](../functions/SendClientCheck): Perform a memory check on the client.
+- [SendClientCheck](../functions/SendClientCheck): Eine Memory-Überprüfung für einen Spieler durchführen.
