@@ -1,6 +1,6 @@
 ---
-title: OnClientMessage
-description: This callback gets called whenever the NPC sees a ClientMessage.
+Titel: OnClientMessage
+Beschreibung: Dieses Callback wird ausgeführt wenn ein NPC eine ClientMessage erkennt.
 tags: []
 ---
 
@@ -8,25 +8,25 @@ tags: []
 
 ## Description
 
-This callback gets called whenever the NPC sees a ClientMessage. This will be everytime a SendClientMessageToAll function is used and everytime a SendClientMessage function is sent towards the NPC. This callback won't be called when someone says something. For a version of this with player text, see NPC:OnPlayerText.
+Dieses Callback wird ausgeführt wenn ein NPC eine ClientMessage erkennt. Er erkennt die ClientMessage bei Benutzung von SendClientMessageToAll oder wenn SendClientMessage direkt an den NPC gesendet wird.function is used and everytime a SendClientMessage function is sent towards the NPC. ACHTUNG: Das Callback wird nicht ausgeführt, wenn jemand in den Chat schreibt. Für eine Version mit Spieler Text, siehe NPC:OnPlayerText.
 
-| Name   | Description                     |
+| Name   | Beschreibung                     |
 | ------ | ------------------------------- |
 | color  | The color the ClientMessage is. |
 | text[] | The actual message.             |
 
-## Returns
+## Rückgabe(return value)
 
-This callback does not handle returns.
+Dieses Callback hat keinen Rückgabewert.
 
-## Examples
+## Beispiele
 
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Bank Balance: $0") != -1)
+    if (strfind(text,"Kontostand: $0") != -1)
     {
-        SendClientMessage(playerid, -1, "I am poor :(");
+        SendClientMessage(playerid, -1, "Ich bin arm :(");
     }
 }
 ```
