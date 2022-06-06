@@ -28,7 +28,7 @@ Wird in Filterscripts immer zuerst ausgeführt. Bei Nutzung von return 1 können
 // Definieren der Dialog ID, mit der wie Antworten bearbeiten können
 #define DIALOG_REGELN 1
 
-// In some command
+// In einem Befehl
 ShowPlayerDialog(playerid, DIALOG_REGELN, DIALOG_STYLE_MSGBOX, "Server Regeln", "- Kein Cheaten\n- Kein Spamming\n- Respektiere die Admins\n\nAkzeptierst du die Regeln?", "Ja", "Nein");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
@@ -50,7 +50,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 #define DIALOG_LOGIN 2
 
-// In some command
+// In einem Befehl
 ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Bitte gebe dein Passwort ein:", "Login", "Abbruch");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
@@ -84,7 +84,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 #define DIALOG_WAFFEN 3
 
-// In some command
+// In einem Befehl
 ShowPlayerDialog(playerid, DIALOG_WAFFEN, DIALOG_STYLE_LIST, "Waffen", "Desert Eagle\nAK-47\nCombat Shotgun", "Wählen", "Schließen");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
