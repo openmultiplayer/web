@@ -1,24 +1,24 @@
 ---
-title: DestroyVehicle
-description: Destroy a vehicle.
+Titel: DestroyVehicle
+Beschreibung: Löscht ein Fahrzeug.
 tags: ["vehicle"]
 ---
 
-## Description
+## Beschreibung
 
-Destroy a vehicle. It will disappear instantly.
+Löscht ein Fahrzeug. Fahrzeug verschwindet sofort.
 
-| Name      | Description                       |
+| Name      | Beschreibung                       |
 | --------- | --------------------------------- |
-| vehicleid | The ID of the vehicle to destroy. |
+| vehicleid | Die ID des Fahrzeugs, das zerstört wird. |
 
-## Returns
+## Rückgabe(return value)
 
-1: The function executed successfully.
+1: Funktion erfolgreich ausgeführt.
 
-0: The function failed to execute. The vehicle does not exist.
+0: Funktion fehlgeschlagen. Das Fahrzeug existiert nicht.
 
-## Examples
+## Beispiele
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -34,8 +34,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Related Functions
+## Ähnliche Funktionen
 
-- [CreateVehicle](CreateVehicle): Create a vehicle.
-- [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Throw a player out of their vehicle.
-- [SetVehicleToRespawn](SetVehicleToRespawn): Respawn a vehicle.
+- [CreateVehicle](CreateVehicle): Erstelle ein Fahrzeug.
+- [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Wirft einen Spieler aus seinem Fahrzeug.
+- [SetVehicleToRespawn](SetVehicleToRespawn): Respawnt ein Fahrzeug.
