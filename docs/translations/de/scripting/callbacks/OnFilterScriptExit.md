@@ -20,7 +20,7 @@ public OnFilterScriptExit()
 }
 ```
 
-## Ähnliche Funktionen
+## Ähnliche Callbacks
 
 - [OnFilterScriptInit](OnFilterScriptInit): Wird aufgerufen wenn ein Filterscript geladen wird.
 - [OnGameModeInit](OnGameModeInit): Wird aufgerufen wenn ein Gamemode gestartet wird.
