@@ -1,14 +1,14 @@
 ---
 title: OnFilterScriptInit
-description: This callback is called when a filterscript is initialized (loaded).
+description: Wird ausgeführt wenn ein Filterscript gestartet wird (initialize).
 tags: []
 ---
 
-## Description
+## Beschreibung
 
-This callback is called when a filterscript is initialized (loaded). It is only called inside the filterscript which is starting.
+Wird ausgeführt wenn ein Filterscript gestartet wird (initialize). Wird nur im entsprechenden Filterscript ausgeführt.
 
-## Examples
+## Beispiele
 
 ```c
 public OnFilterScriptInit()
@@ -20,8 +20,8 @@ public OnFilterScriptInit()
 }
 ```
 
-## Related Callbacks
+## Ähnliche Callbacks
 
-- [OnFilterSciptExit](OnFilterScriptExit): Called when a filterscript is unloaded.
-- [OnGameModeInit](OnGameModeInit): Called when a gamemode starts.
-- [OnGameModeExit](OnGameModeExit): Called when a gamemode ends.
+- [OnFilterSciptExit](OnFilterScriptExit): Wird ausgeführt wenn ein Filterscript deaktiviert wird.
+- [OnGameModeInit](OnGameModeInit): Wird ausgeführt wenn ein Gamemode gestartet wird.
+- [OnGameModeExit](OnGameModeExit): Wird ausgeführt wenn ein Gamemode beendet wird.
