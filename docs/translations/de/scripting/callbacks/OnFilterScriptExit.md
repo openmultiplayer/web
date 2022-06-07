@@ -1,27 +1,27 @@
 ---
 title: OnFilterScriptExit
-description: This callback is called when a filterscript is unloaded.
+description: Wird aufgerufen wenn ein Filterscript deaktiviert wird.
 tags: []
 ---
 
-## Description
+## Beschreibung
 
-This callback is called when a filterscript is unloaded. It is only called inside the filterscript which is unloaded.
+Wird aufgerufen wenn ein Filterscript deaktiviert wird. Wird nur im entsprechenden Filterscript ausgeführt.
 
-## Examples
+## Beispiele
 
 ```c
 public OnFilterScriptExit()
 {
     print("\n--------------------------------------");
-    print(" My filterscript unloaded");
+    print(" Filterscript herausgeladen");
     print("--------------------------------------\n");
     return 1;
 }
 ```
 
-## Related Callbacks
+## Ähnliche Funktionen
 
-- [OnFilterScriptInit](OnFilterScriptInit): Called when a filterscript is loaded.
-- [OnGameModeInit](OnGameModeInit): Called when a gamemode starts.
-- [OnGameModeExit](OnGameModeExit): Called when a gamemode ends.
+- [OnFilterScriptInit](OnFilterScriptInit): Wird aufgerufen wenn ein Filterscript geladen wird.
+- [OnGameModeInit](OnGameModeInit): Wird aufgerufen wenn ein Gamemode gestartet wird.
+- [OnGameModeExit](OnGameModeExit): Wird aufgerufen wenn ein Gamemode gestoppt wird.
