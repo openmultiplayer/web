@@ -1,42 +1,42 @@
 ---
 title: OnVehicleSpawn
-description: This callback is called when a vehicle respawns.
+description: Dieses Callback wird ausgeführt wenn ein Fahrzeug respawnt.
 tags: ["vehicle"]
 ---
 
 :::warning
 
-This callback is called **only** when vehicle **re**spawns! CreateVehicle and AddStaticVehicle(Ex) **won't** trigger this callback.
+Diese Callback wird **nur** ausgeführt wenn ein Fahrzeug **re**spawnt! CreateVehicle und AddStaticVehicle(Ex) werden das Callbacks **nicht ** triggern.
 
 :::
 
-## Description
+## Beschreibung
 
-This callback is called when a vehicle respawns.
+Dieses Callback wird ausgeführt wenn ein Fahrzeug respawnt.
 
-| Name      | Description                         |
+| Name      | Beschreibung                         |
 | --------- | ----------------------------------- |
-| vehicleid | The ID of the vehicle that spawned. |
+| vehicleid | ID des Fahrzeugs das gespawnt ist. |
 
-## Returns
+## Rückgabe(return value)
 
-0 - Will prevent other filterscripts from receiving this callback.
+0 - Vermeidet, dass andere Filterscripts dieses Callback erhalten.
 
-1 - Indicates that this callback will be passed to the next filterscript.
+1 - Das Callback wird ans nächste Filterscript weitergegeben.
 
-It is always called first in filterscripts.
+Wird immer zuerst in Filterscripts ausgeführt.
 
-## Examples
+## Beispiele
 
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("Vehicle %i spawned!",vehicleid);
+    printf("Fahrzeug %i ist gespawnt!",vehicleid);
     return 1;
 }
 ```
 
-## Related Functions
+## Ähnliche Funktionen
 
-- [SetVehicleToRespawn](../functions/SetVehicleToRespawn): Respawn a vehicle.
-- [CreateVehicle](../functions/CreateVehicle): Create a vehicle.
+- [SetVehicleToRespawn](../functions/SetVehicleToRespawn): Respawne ein Fahrzeug.
+- [CreateVehicle](../functions/CreateVehicle): Erstelle ein Fahrzeug.
