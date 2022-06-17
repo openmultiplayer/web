@@ -4,24 +4,20 @@ description: 当玩家点击文本绘制或用Escape键取消选择模式时，�
 tags: ["player", "textdraw"]
 ---
 
-:::warning
-
-SA-MP 0.3e版本增加了这个回调函数，无法在以前的版本使用！
-
-:::
+<VersionWarn name='callback' version='SA-MP 0.3e' />
 
 ## 描述
 
-当玩家点击文本绘制或用Escape键取消选择模式时，这个回调函数被调用。
+当玩家点击文本绘制或用 Escape 键取消选择模式时，这个回调函数被调用。
 
-| 参数名    | 描述                                                         |
-| --------- | ------------------------------------------------------------ |
-| playerid  | 点击文本绘制的玩家的ID。                                     |
-| clickedid | 被点击的文本绘制的ID。如果选择模式被取消，则为INVALID_TEXT_DRAW。 |
+| 参数名    | 描述                                                                |
+| --------- | ------------------------------------------------------------------- |
+| playerid  | 点击文本绘制的玩家的 ID。                                           |
+| clickedid | 被点击的文本绘制的 ID。如果选择模式被取消，则为 INVALID_TEXT_DRAW。 |
 
 ## 返回值
 
-它在过滤脚本中总是先被调用，所以返回1会阻止其他脚本看到它。
+它在过滤脚本中总是先被调用，所以返回 1 会阻止其他脚本看到它。
 
 ## 案例
 
@@ -69,11 +65,11 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-TextDrawTextSize定义了可点击区域。向函数传递的x轴和 y轴参数不能为零或负值。不能无条件地在此回调函数中使用 CancelSelectTextDraw，这将导致无限循环。
+TextDrawTextSize 定义了可点击区域。向函数传递的 x 轴和 y 轴参数不能为零或负值。不能无条件地在此回调函数中使用 CancelSelectTextDraw，这将导致无限循环。
 
 :::
 
-## 相关函数
+## 相关回调
 
 - [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): 当玩家点击玩家文本绘制时调用。
 - [OnPlayerClickPlayer](OnPlayerClickPlayer): 当一个玩家点击另一个玩家时调用。

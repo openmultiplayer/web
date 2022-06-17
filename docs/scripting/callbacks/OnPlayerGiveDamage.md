@@ -10,21 +10,21 @@ tags: ["player"]
 
 This callback is called when a player gives damage to another player.
 
-| Name      | Description                                                                                                                               |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player that gave damage.                                                                                                    |
-| damagedid | The ID of the player that received damage.                                                                                                |
-| amount    | The amount of health/armour damagedid has lost (combined).                                                                                |
-| weaponid  | The reason that caused the damage.                                                                                                        |
-| bodypart  | The [body part](../resources/bodyparts) that was hit. (NOTE: This parameter was added in 0.3z. Leave it out if using an older version!)    |
+| Name      | Description                                                                                                                             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | The ID of the player that gave damage.                                                                                                  |
+| damagedid | The ID of the player that received damage.                                                                                              |
+| amount    | The amount of health/armour damagedid has lost (combined).                                                                              |
+| weaponid  | The reason that caused the damage.                                                                                                      |
+| bodypart  | The [body part](../resources/bodyparts) that was hit. (NOTE: This parameter was added in 0.3z. Leave it out if using an older version!) |
 
 ## Returns
 
-1 - Callback will not be called in other filterscripts.
+1 - 回调不会在其他过滤脚本中被调用。
 
-0 - Allows this callback to be called in other filterscripts.
+0 -允许在其他筛选脚本中调用此回调。
 
-It is always called first in filterscripts so returning 1 there blocks other filterscripts from seeing it.
+它在过滤脚本中总是先被调用，所以在那里返回 1 会阻止其他过滤脚本看到它。
 
 ## Examples
 

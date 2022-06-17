@@ -31,6 +31,6 @@ public OnActorStreamOut(actorid, forplayerid)
 }
 ```
 
-## 相关函数
+## 相关回调
 
 <TipNPCCallbacks />

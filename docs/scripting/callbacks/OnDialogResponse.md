@@ -20,7 +20,7 @@ This callback is called when a player responds to a dialog shown using ShowPlaye
 
 ## Returns
 
-It is always called first in filterscripts so returning 1 there blocks other filterscripts from seeing it.
+它在过滤脚本中总是先被调用，所以在那里返回 1 会阻止其他过滤脚本看到它。
 
 ## Examples
 

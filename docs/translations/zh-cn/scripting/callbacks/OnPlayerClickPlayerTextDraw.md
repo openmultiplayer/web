@@ -4,24 +4,20 @@ description: 这个回调函数在玩家点击玩家-文本绘制时被调用。
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-SA-MP 0.3e版本增加了这个回调函数，无法在以前的版本使用！
-
-:::
+<VersionWarn name='callback' version='SA-MP 0.3e' />
 
 ## 描述
 
-这个回调函数在玩家点击玩家-文本绘制时被调用。当玩家取消选择模式(ESC)时它不被调用，不过，OnPlayerClickTextDraw回调会调用。
+这个回调函数在玩家点击玩家-文本绘制时被调用。当玩家取消选择模式(ESC)时它不被调用，不过，OnPlayerClickTextDraw 回调会调用。
 
-| 参数名       | 描述                          |
-| ------------ | ----------------------------- |
-| playerid     | 选择文本绘制的玩家的ID        |
-| playertextid | 玩家选择的玩家-文本绘制的ID。 |
+| 参数名       | 描述                           |
+| ------------ | ------------------------------ |
+| playerid     | 选择文本绘制的玩家的 ID        |
+| playertextid | 玩家选择的玩家-文本绘制的 ID。 |
 
 ## 返回值
 
-它在过滤脚本中总是先被调用，所以返回1会阻止其他脚本看到它。
+它在过滤脚本中总是先被调用，所以返回 1 会阻止其他脚本看到它。
 
 ## 案例
 
@@ -74,12 +70,12 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-当一个玩家按ESC取消了选择一个文本绘制，OnPlayerClickTextDraw回调函数被调用时，文本绘制 ID为INVALID_TEXT_DRAW（无效\_文本\_绘制），也不会调用 OnPlayerClickPlayerTextDraw回调函数。
+当一个玩家按 ESC 取消了选择一个文本绘制，OnPlayerClickTextDraw 回调函数被调用时，文本绘制 ID 为 INVALID_TEXT_DRAW（无效\_文本\_绘制），也不会调用 OnPlayerClickPlayerTextDraw 回调函数。
 
 :::
 
-## 相关函数
+## 相关回调和函数
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): 通过SelectTextDraw函数设置玩家文本绘制是否可选择。
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): 通过 SelectTextDraw 函数设置玩家文本绘制是否可选择。
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): 当玩家点击文本绘制时调用。
 - [OnPlayerClickPlayer](OnPlayerClickPlayer): 当一个玩家点击另一个玩家时调用。

@@ -8,14 +8,15 @@ tags: ["player"]
 
 当玩家在客户端聊天框中输入指令时，这个回调函数被调用。
 
-| 参数名      | 描述                                                 |
-| --------- | ----------------------------------------------------------- |
-| playerid  | 输入指令的玩家的ID。              |
+| 参数名    | 描述                     |
+| --------- | ------------------------ |
+| playerid  | 输入指令的玩家的 ID。    |
 | cmdtext[] | 输入的指令(包括正斜杠)。 |
 
 ## 返回值
 
-它在过滤脚本中总是先被调用，所以返回1会阻止其他脚本看到它。
+它在过滤脚本中总是先被调用，所以返回 1 会阻止其他脚本看到它。
+
 ## 案例
 
 ```c
@@ -39,10 +40,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-这个回调函数也可以由 NPC调用。
+这个回调函数也可以由 NPC 调用。
 
 :::
 
 ## 相关函数
 
-- [SendRconCommand](../functions/SendRconCommand): 通过脚本发送RCON指令。
+- [SendRconCommand](../functions/SendRconCommand): 通过脚本发送 RCON 指令。
