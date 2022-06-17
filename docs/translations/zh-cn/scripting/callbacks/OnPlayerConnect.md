@@ -38,10 +38,6 @@ public OnPlayerConnect(playerid)
 
 ## 要点
 
-:::tip
-
-这个回调函数也可以被 NPC 调用。
-
-:::
+<TipNPCCallbacks />
 
 ## 相关回调

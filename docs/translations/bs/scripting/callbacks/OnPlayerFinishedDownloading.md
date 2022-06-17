@@ -21,7 +21,7 @@ Ovaj callback je pozvan kada igrač dovrši preuzimanje custom modela. Za više 
 
 ## Returns
 
-This callback does not handle returns.
+此回调不处理返回。
 
 ## Primjeri
 

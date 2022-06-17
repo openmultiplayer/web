@@ -8,22 +8,22 @@ tags: ["player"]
 
 Acest callback este apelat atunci când starea oricărei taste [acceptate](../resources/keys) este schimbată (apăsată/eliberată).<br/>Tastele direcționale nu declanșează OnPlayerKeyStateChange (sus/jos/stânga/dreapta).
 
-| Name     | Descriere                                                                                        |
-| -------- | ------------------------------------------------------------------------------------------------ |
-| playerid | ID-ul jucătorului care a apăsat sau a eliberat o tastă.                                          |
-| newkeys  | O hartă (mască de biți) a cheilor deținute în prezent - [vezi aici](../resources/keys)           |
+| Name     | Descriere                                                                                                   |
+| -------- | ----------------------------------------------------------------------------------------------------------- |
+| playerid | ID-ul jucătorului care a apăsat sau a eliberat o tastă.                                                     |
+| newkeys  | O hartă (mască de biți) a cheilor deținute în prezent - [vezi aici](../resources/keys)                      |
 | oldkeys  | O hartă (mască de biți) a cheilor deținute înainte de modificarea curentă - [vezi aici](../resources/keys). |
 
 ## Returnări
 
-- This callback does not handle returns.
-- It is always called first in gamemode.
+- 此回调不处理返回。
+- 它在游戏模式中总是先被调用。
 
 ## Note
 
 :::info
 
-This callback can also be called by NPC.
+该回调也可以被 npc 调用。
 
 :::
 

@@ -15,7 +15,7 @@ This callback is called when a player selects an item from a menu (ShowMenuForPl
 
 ## Returns
 
-It is always called first in gamemode.
+它在游戏模式中总是先被调用。
 
 ## Examples
 

@@ -1,6 +1,6 @@
 ---
 title: OnPlayerStreamOut
-description: This callback is called when a player is streamed out from some other player's client.
+description: 当某个玩家从其他玩家的客户端流出时，会调用此回调。
 tags: ["player"]
 ---
 
@@ -8,12 +8,12 @@ tags: ["player"]
 
 ## 描述
 
-This callback is called when a player is streamed out from some other player's client.
+当某个玩家从其他玩家的客户端流出时，会调用此回调。
 
-| 参数名      | 描述                                            |
-| ----------- | ----------------------------------------------- |
-| playerid    | The player who has been destreamed.             |
-| forplayerid | The player who has destreamed the other player. |
+| 参数名      | 描述                |
+| ----------- | ------------------- |
+| playerid    | 已被流出的玩家 ID。 |
+| forplayerid | 失去该流的玩家 ID   |
 
 ## 返回值
 
@@ -25,7 +25,7 @@ This callback is called when a player is streamed out from some other player's c
 public OnPlayerStreamOut(playerid, forplayerid)
 {
     new string[80];
-    format(string, sizeof(string), "Your computer has just unloaded player ID %d", playerid);
+    format(string, sizeof(string), "你的电脑刚刚流出了玩家ID %d", playerid);
     SendClientMessage(forplayerid, 0xFF0000FF, string);
     return 1;
 }

@@ -17,7 +17,7 @@ This callback gets called whenever the NPC sees a ClientMessage. This will be ev
 
 ## Returns
 
-This callback does not handle returns.
+此回调不处理返回。
 
 ## Examples
 

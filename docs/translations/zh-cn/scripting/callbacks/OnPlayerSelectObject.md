@@ -1,6 +1,6 @@
 ---
 title: OnPlayerSelectObject
-description: This callback is called when a player selects an object after SelectObject has been used.
+description: 当玩家在使用SelectObject之后选择一个物体时，这个回调会被调用。
 tags: ["player"]
 ---
 
@@ -8,17 +8,17 @@ tags: ["player"]
 
 ## 描述
 
-This callback is called when a player selects an object after SelectObject has been used.
+当玩家在使用 SelectObject 之后选择一个物体时，这个回调会被调用。
 
-| 参数名   | 描述                                                    |
-| -------- | ------------------------------------------------------- |
-| playerid | The ID of the player that selected an object            |
-| type     | The [type](../resources/selectobjecttypes) of selection |
-| objectid | The ID of the selected object                           |
-| modelid  | The model of the selected object                        |
-| Float:fX | The X position of the selected object                   |
-| Float:fY | The Y position of the selected object                   |
-| Float:fZ | The Z position of the selected object                   |
+| 参数名   | 描述                                         |
+| -------- | -------------------------------------------- |
+| playerid | 选择玩家的玩家 ID                            |
+| type     | [选择的类型](../resources/selectobjecttypes) |
+| objectid | 所选物体的 ID                                |
+| modelid  | 所选模型的 ID                                |
+| Float:fX | 选择玩家的 X 轴位置                          |
+| Float:fY | 选择玩家的 Y 轴位置                          |
+| Float:fZ | 选择玩家的 Z 轴位置                          |
 
 ## 返回值
 
@@ -33,7 +33,7 @@ This callback is called when a player selects an object after SelectObject has b
 ```c
 public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ)
 {
-    printf("Player %d selected object %d", playerid, objectid);
+    printf("玩家 %d 选择了物体 %d", playerid, objectid);
     if (type == SELECT_OBJECT_GLOBAL_OBJECT)
     {
         EditObject(playerid, objectid);
@@ -42,11 +42,11 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
     {
         EditPlayerObject(playerid, objectid);
     }
-    SendClientMessage(playerid, 0xFFFFFFFF, "You now are able to edit your object!");
+    SendClientMessage(playerid, 0xFFFFFFFF, "现在可以编辑物体了!");
     return 1;
 }
 ```
 
 ## 相关函数
 
-- [SelectObject](../functions/SelectObject): Select an object.
+- [SelectObject](../functions/SelectObject): 选择一个物体。

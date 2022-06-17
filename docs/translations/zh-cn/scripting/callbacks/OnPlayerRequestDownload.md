@@ -1,6 +1,6 @@
 ---
 title: OnPlayerRequestDownload
-description: This callback is called when a player request for custom model downloads.
+description: 当玩家请求自定义模型下载时，这个回调函数被调用。
 tags: ["player"]
 ---
 
@@ -8,19 +8,19 @@ tags: ["player"]
 
 ## 描述
 
-This callback is called when a player request for custom model downloads.
+当玩家请求自定义模型下载时，这个回调函数被调用。
 
-| 参数名   | 描述                                                     |
-| -------- | -------------------------------------------------------- |
-| playerid | The ID of the player that request custom model download. |
-| type     | The type of the request (see below).                     |
-| crc      | The CRC checksum of custom model file.                   |
+| 参数名   | 描述                          |
+| -------- | ----------------------------- |
+| playerid | 请求自定义模型下载的玩家 ID。 |
+| type     | 请求的类型(见下文)。          |
+| crc      | 自定义模型文件的 CRC 校验和。 |
 
 ## 返回值
 
-0 - Deny the download request
+0 - 拒绝下载请求
 
-1 - Accept the download request
+1 - 接收下载请求
 
 ## 案例
 
@@ -56,4 +56,4 @@ public OnPlayerRequestDownload(playerid, type, crc)
 
 ## 相关函数
 
-- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): 当玩家下载完自定义模型时调用。

@@ -1,20 +1,20 @@
 ---
 title: OnPlayerRequestSpawn
-description: Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
+description: 当玩家通过按下SHIFT键或点击“重生”按钮来尝试通过类选择器进行重生时调用。
 tags: ["player"]
 ---
 
 ## 描述
 
-Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
+当玩家通过按下 SHIFT 键或点击“重生”按钮来尝试通过类选择器进行重生时调用。
 
-| 参数名   | 描述                                          |
-| -------- | --------------------------------------------- |
-| playerid | The ID of the player that requested to spawn. |
+| 参数名   | 描述                  |
+| -------- | --------------------- |
+| playerid | 请求重生的玩家的 ID。 |
 
 ## 返回值
 
-It is always called first in filterscripts so returning 0 there also blocks other scripts from seeing it.
+它总是在过滤脚本中首先被调用，因此在那里返回 0 也会阻止其他脚本看到它。
 
 ## 案例
 
@@ -23,7 +23,7 @@ public OnPlayerRequestSpawn(playerid)
 {
     if (!IsPlayerAdmin(playerid))
     {
-        SendClientMessage(playerid, -1, "You may not spawn.");
+        SendClientMessage(playerid, -1, "你不能重生");
         return 0;
     }
     return 1;
@@ -36,6 +36,6 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-To prevent players from spawning with certain classes, the last viewed class must be saved in a variable in OnPlayerRequestClass.
+为了防止玩家重生特定的类，最后查看的类必须保存在 OnPlayerRequestClass 的一个变量中。
 
 :::

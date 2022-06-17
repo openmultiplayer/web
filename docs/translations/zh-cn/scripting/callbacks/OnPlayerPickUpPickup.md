@@ -1,21 +1,21 @@
 ---
 title: OnPlayerPickUpPickup
-description: Called when a player picks up a pickup created with CreatePickup.
+description: 当玩家拿到通过拾取器创建的拾取时调用。
 tags: ["player"]
 ---
 
 ## 描述
 
-Called when a player picks up a pickup created with CreatePickup.
+当玩家拿到通过拾取器创建的拾取时调用。
 
-| 参数名   | 描述                                            |
-| -------- | ----------------------------------------------- |
-| playerid | The ID of the player that picked up the pickup. |
-| pickupid | The ID of the pickup, returned by CreatePickup. |
+| 参数名   | 描述                              |
+| -------- | --------------------------------- |
+| playerid | 拿到拾取信息的玩家的 ID。         |
+| pickupid | 拿到的 ID，由 CreatePickup 返回。 |
 
 ## 返回值
 
-It is always called first in gamemode.
+它在游戏模式中总是先被调用。
 
 ## 案例
 
@@ -46,5 +46,5 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 
 ## 相关函数
 
-- [CreatePickup](../functions/CreatePickup): Create a pickup.
-- [DestroyPickup](../functions/DestroyPickup): Destroy a pickup.
+- [CreatePickup](../functions/CreatePickup): 创建一个拾取。
+- [DestroyPickup](../functions/DestroyPickup): 销毁一个拾取。

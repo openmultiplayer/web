@@ -1,16 +1,18 @@
 ---
 title: OnPlayerLeaveCheckpoint
-description: This callback is called when a player leaves the checkpoint set for them by SetPlayerCheckpoint.
+description: 当玩家离开SetPlayerCheckpoint函数为其设置的检查点时，会调用此回调。
 tags: ["player", "checkpoint"]
 ---
 
 ## 描述
 
-This callback is called when a player leaves the checkpoint set for them by SetPlayerCheckpoint. Only one checkpoint can be set at a time.
+当玩家离开 SetPlayerCheckpoint 函数为其设置的检查点时，会调用此回调。
 
-| 参数名   | 描述                                             |
-| -------- | ------------------------------------------------ |
-| playerid | The ID of the player that left their checkpoint. |
+一次只能设置一个检查点。
+
+| 参数名   | 描述                    |
+| -------- | ----------------------- |
+| playerid | 离开检查点的玩家的 ID。 |
 
 ## 返回值
 
@@ -21,7 +23,7 @@ This callback is called when a player leaves the checkpoint set for them by SetP
 ```c
 public OnPlayerLeaveCheckpoint(playerid)
 {
-    printf("Player %i left a checkpoint!", playerid);
+    printf("玩家 %i 离开了一个检查点!", playerid);
     return 1;
 }
 ```
@@ -32,9 +34,9 @@ public OnPlayerLeaveCheckpoint(playerid)
 
 ## 相关函数
 
-- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Create a checkpoint for a player.
-- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Disable the player's current checkpoint.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Check if a player is in a checkpoint.
-- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
-- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
-- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
+- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): 为玩家创建一个检查点。
+- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): 禁用玩家的当前检查点。
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): 检查玩家是否在检查站。
+- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): 为玩家创建一个比赛检查点。
+- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): 禁用玩家当前的比赛检查点。
+- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): 检查某位玩家是否在比赛检查点。

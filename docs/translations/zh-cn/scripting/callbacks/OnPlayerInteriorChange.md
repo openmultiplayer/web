@@ -16,7 +16,7 @@ Called when a player changes interior. Can be triggered by SetPlayerInterior or 
 
 ## 返回值
 
-It is always called first in gamemode.
+它在游戏模式中总是先被调用。
 
 ## 案例
 

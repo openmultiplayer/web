@@ -38,11 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 要点
 
-:::tip
-
-这个回调函数也可以由 NPC 调用。
-
-:::
+<TipNPCCallbacks />
 
 ## 相关函数
 

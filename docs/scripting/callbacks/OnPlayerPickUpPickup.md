@@ -15,7 +15,7 @@ Called when a player picks up a pickup created with CreatePickup.
 
 ## Returns
 
-It is always called first in gamemode.
+它在游戏模式中总是先被调用。
 
 ## Examples
 

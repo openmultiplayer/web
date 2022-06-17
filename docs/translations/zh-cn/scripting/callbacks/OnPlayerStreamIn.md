@@ -1,6 +1,6 @@
 ---
 title: OnPlayerStreamIn
-description: This callback is called when a player is streamed by some other player's client.
+description: 当某个玩家从其他玩家的客户端流入时，这个回调被调用。
 tags: ["player"]
 ---
 
@@ -8,12 +8,12 @@ tags: ["player"]
 
 ## 描述
 
-This callback is called when a player is streamed by some other player's client.
+当某个玩家从其他玩家的客户端流入时，这个回调被调用。
 
-| 参数名      | 描述                                                    |
-| ----------- | ------------------------------------------------------- |
-| playerid    | The ID of the player who has been streamed.             |
-| forplayerid | The ID of the player that streamed the other player in. |
+| 参数名      | 描述                  |
+| ----------- | --------------------- |
+| playerid    | 已被流入的玩家 ID。   |
+| forplayerid | 接收到该流的玩家 ID。 |
 
 ## 返回值
 
@@ -25,7 +25,7 @@ This callback is called when a player is streamed by some other player's client.
 public OnPlayerStreamIn(playerid, forplayerid)
 {
     new string[40];
-    format(string, sizeof(string), "Player %d is now streamed in for you.", playerid);
+    format(string, sizeof(string), "玩家 %d 现在正被你流入", playerid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

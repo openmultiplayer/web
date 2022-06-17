@@ -10,18 +10,18 @@ tags: ["player"]
 
 当玩家编辑完一个物体(EditObject/EditPlayerObject)时，会调用该回调。
 
-| 参数名       | 描述                                                   |
-| ------------ | ------------------------------------------------------ |
-| playerid     | 编辑物体的玩家的 ID                                    |
-| playerobject | 如果它是全局物体，则为 0；如果它是播放器物体，则为 1。 |
-| objectid     | 已编辑物体的 ID                                        |
-| response     | [响应类型](../resources/objecteditionresponsetypes)    |
-| Float:fX     | 已编辑物体的 X 偏移量                                  |
-| Float:fY     | 已编辑物体的 Y 偏移量                                  |
-| Float:fZ     | 已编辑物体的 Z 偏移量                                  |
-| Float:fRotX  | 已编辑物体的 X 向旋转                                  |
-| Float:fRotY  | 已编辑物体的 Y 向旋转                                  |
-| Float:fRotZ  | 已编辑物体的 Z 向旋转                                  |
+| 参数名       | 描述                                                 |
+| ------------ | ---------------------------------------------------- |
+| playerid     | 编辑物体的玩家的 ID                                  |
+| playerobject | 如果它是全局物体，则为 0；如果它是玩家物体，则为 1。 |
+| objectid     | 已编辑物体的 ID                                      |
+| response     | [响应类型](../resources/objecteditionresponsetypes)  |
+| Float:fX     | 已编辑物体的 X 偏移量                                |
+| Float:fY     | 已编辑物体的 Y 偏移量                                |
+| Float:fZ     | 已编辑物体的 Z 偏移量                                |
+| Float:fRotX  | 已编辑物体的 X 向旋转                                |
+| Float:fRotY  | 已编辑物体的 Y 向旋转                                |
+| Float:fRotZ  | 已编辑物体的 Z 向旋转                                |
 
 ## 返回值
 

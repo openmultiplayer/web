@@ -1,17 +1,17 @@
 ---
 title: OnPlayerObjectMoved
-description: This callback is called when a player object is moved after MovePlayerObject (when it stops moving).
+description: 当玩家物体在MovePlayerObject之后移动时(当它停止移动时)，该回调被调用。
 tags: ["player"]
 ---
 
 ## 描述
 
-This callback is called when a player object is moved after MovePlayerObject (when it stops moving).
+当玩家物体在 MovePlayerObject 之后移动时(当它停止移动时)，该回调被调用。
 
-| 参数名   | 描述                                       |
-| -------- | ------------------------------------------ |
-| playerid | The playerid the object is assigned to     |
-| objectid | The ID of the player object that was moved |
+| 参数名   | 描述              |
+| -------- | ----------------- |
+| playerid | 移动物体的玩家 ID |
+| objectid | 被移动的物体 ID   |
 
 ## 返回值
 
@@ -22,23 +22,19 @@ This callback is called when a player object is moved after MovePlayerObject (wh
 ```c
 public OnPlayerObjectMoved(playerid, objectid)
 {
-    printf("Player object moved: objectid: %d playerid: %d", objectid, playerid);
+    printf("玩家物体移动完毕: 物体id: %d 玩家id: %d", objectid, playerid);
     return 1;
 }
 ```
 
 ## 要点
 
-:::tip
-
-This callback can also be called for NPC.
-
-:::
+<TipNPCCallbacks />
 
 ## 相关函数
 
-- [MovePlayerObject](../functions/MovePlayerObject): Move a player object.
-- [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving): Check if the player object is moving.
-- [StopPlayerObject](../functions/StopPlayerObject): Stop a player object from moving.
-- [CreatePlayerObject](../functions/CreatePlayerObject): Create an object for only one player.
-- [DestroyPlayerObject](../functions/DestroyPlayerObject): Destroy a player object.
+- [MovePlayerObject](../functions/MovePlayerObject): 移动玩家物体。
+- [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving): 检查玩家物体是否在移动。
+- [StopPlayerObject](../functions/StopPlayerObject): 阻止玩家物体移动。
+- [CreatePlayerObject](../functions/CreatePlayerObject): 只为一个玩家创建一个物体。
+- [DestroyPlayerObject](../functions/DestroyPlayerObject): 销毁玩家物体。

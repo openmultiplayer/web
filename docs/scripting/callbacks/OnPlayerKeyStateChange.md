@@ -8,22 +8,22 @@ tags: ["player"]
 
 This callback is called when the state of any [supported](../resources/keys) key is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
 
-| Name     | Description                                                                                      |
-| -------- | ------------------------------------------------------------------------------------------------ |
-| playerid | The ID of the player that pressed or released a key.                                             |
+| Name     | Description                                                                                   |
+| -------- | --------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player that pressed or released a key.                                          |
 | newkeys  | A map (bitmask) of the keys currently held - [see here](../resources/keys)                    |
 | oldkeys  | A map (bitmask) of the keys held prior to the current change - [see here](../resources/keys). |
 
 ## Returns
 
-- This callback does not handle returns.
-- It is always called first in gamemode.
+- 此回调不处理返回。
+- 它在游戏模式中总是先被调用。
 
 ## Notes
 
 :::info
 
-This callback can also be called by NPC.
+该回调也可以被 npc 调用。
 
 :::
 

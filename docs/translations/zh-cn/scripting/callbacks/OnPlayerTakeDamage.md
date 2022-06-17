@@ -1,6 +1,6 @@
 ---
 title: OnPlayerTakeDamage
-description: This callback is called when a player takes damage.
+description: 当玩家受到伤害时，会调用该回调。
 tags: ["player"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## 描述
 
-This callback is called when a player takes damage.
+当玩家受到伤害时，会调用该回调。
 
 | 参数名   | 描述                                                                                                                                    |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@ This callback is called when a player takes damage.
 
 1 - 回调不会在其他过滤脚本中被调用。
 
-0 -允许在其他筛选脚本中调用此回调。
+0 -允许在其他过滤脚本中调用此回调。
 
 它在过滤脚本中总是先被调用，所以在那里返回 1 会阻止其他过滤脚本看到它。
 

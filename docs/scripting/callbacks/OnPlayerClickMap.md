@@ -23,7 +23,7 @@ OnPlayerClickMap is called when a player places a target/waypoint on the pause m
 
 0 - Indicates that this callback will be passed to the next filterscript.
 
-It is always called first in gamemode.
+它在游戏模式中总是先被调用。
 
 ## Examples
 
