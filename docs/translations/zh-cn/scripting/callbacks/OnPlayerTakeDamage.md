@@ -10,13 +10,13 @@ tags: ["player"]
 
 当玩家受到伤害时，会调用该回调。
 
-| 参数名   | 描述                                                                                                                                    |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | The ID of the player that took damage.                                                                                                  |
-| issuerid | The ID of the player that caused the damage. INVALID_PLAYER_ID if self-inflicted.                                                       |
-| amount   | The amount of damage the player took (health and armour combined).                                                                      |
-| weaponid | The ID of the weapon/reason for the damage.                                                                                             |
-| bodypart | The [body part](../resources/bodyparts) that was hit. (NOTE: This parameter was added in 0.3z. Leave it out if using an older version!) |
+| 参数名   | 描述                                                                                                |
+| -------- | --------------------------------------------------------------------------------------------------- |
+| playerid | 受伤的玩家的 ID。                                                                                   |
+| issuerid | 造成伤害的玩家的 ID。 如果是自己造成的则为 INVALID_PLAYER_ID。                                      |
+| amount   | 玩家受到的伤害(生命值和护甲的总和)。                                                                |
+| weaponid | 造成伤害的武器/原因的 ID                                                                            |
+| bodypart | 被击中的[身体部位](../resources/bodyparts)。(注：此参数在 0.3z 中增加。如果使用较旧的版本，请省略!) |
 
 ## 返回值
 
@@ -31,7 +31,7 @@ tags: ["player"]
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID) // If not self-inflicted
+    if (issuerid != INVALID_PLAYER_ID) // 如果不是自己造成的
     {
         new
             infoString[128],
@@ -44,7 +44,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
 
         GetWeaponName(weaponid, weaponName, sizeof (weaponName));
 
-        format(infoString, sizeof(infoString), "%s has made %.0f damage to %s, weapon: %s, bodypart: %d", attackerName, amount, victimName, weaponName, bodypart);
+        format(infoString, sizeof(infoString), "%s 已造成 %.0f 点伤害给 %s, 武器: %s, 身体部位: %d", attackerName, amount, victimName, weaponName, bodypart);
         SendClientMessageToAll(-1, infoString);
     }
     return 1;
@@ -53,7 +53,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
-        // One shot to the head to kill with sniper rifle
+        // 用狙击步枪一枪爆头
         SetPlayerHealth(playerid, 0.0);
     }
     return 1;
@@ -64,12 +64,22 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
 
 :::tip
 
-The weaponid will return 37 (flame thrower) from any fire sources (e.g. molotov, 18). The weaponid will return 51 from any weapon that creates an explosion (e.g. RPG, grenade) playerid is the only one who can call the callback. The amount is always the maximum damage the weaponid can do, even when the health left is less than that maximum damage. So when a player has 100.0 health and gets shot with a Desert Eagle which has a damage value of 46.2, it takes 3 shots to kill that player. All 3 shots will show an amount of 46.2, even though when the last shot hits, the player only has 7.6 health left.
+武器 ID 会从任何火源(如燃烧弹，18) 返回 37(火焰喷射器)；会从任何制造爆炸的武器(如 RPG，手榴弹) 返回 51 。
+
+只有玩家 ID 能调用该回调。
+
+数量总是武器所能造成的最大伤害，即使当剩余生命值低于最大伤害时也是如此。
+
+所以当玩家拥有 100.0 的生命值并被伤害值为 46.2 的沙漠之鹰击中时，他需要 3 次射击才能杀死该玩家。
+
+所有 3 次射击都将显示 46.2，即使当最后一次射击命中时，玩家只剩下 7.6 生命值。
 
 :::
 
 :::warning
 
-GetPlayerHealth and GetPlayerArmour will return the old amounts of the player before this callback. Always check if issuerid is valid before using it as an array index.
+GetPlayerHealth 和 GetPlayerArmour 将在此回调之前返回玩家的旧数值。
+
+在将 issuerid 用作数组索引之前，一定要检查它是否有效。
 
 :::

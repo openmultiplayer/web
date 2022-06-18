@@ -1,6 +1,6 @@
 ---
 title: OnVehicleStreamOut
-description: This callback is called when a vehicle is streamed out for a player's client (it's so far away that they can't see it).
+description: 当一辆车为玩家的客户端流出时，这个回调被调用(离太远了，以至于玩家看不到它)。
 tags: ["vehicle"]
 ---
 
@@ -8,12 +8,12 @@ tags: ["vehicle"]
 
 ## 描述
 
-This callback is called when a vehicle is streamed out for a player's client (it's so far away that they can't see it).
+当一辆车为玩家的客户端流出时，这个回调被调用(离太远了，以至于玩家看不到它)。
 
-| 参数名      | 描述                                                         |
-| ----------- | ------------------------------------------------------------ |
-| vehicleid   | The ID of the vehicle that streamed out.                     |
-| forplayerid | The ID of the player who is no longer streaming the vehicle. |
+| 参数名      | 描述                      |
+| ----------- | ------------------------- |
+| vehicleid   | 为玩家流出的车辆 ID。     |
+| forplayerid | 不再流入该车辆的玩家 ID。 |
 
 ## 返回值
 
@@ -25,7 +25,7 @@ This callback is called when a vehicle is streamed out for a player's client (it
 public OnVehicleStreamOut(vehicleid, forplayerid)
 {
     new string[48];
-    format(string, sizeof(string), "Your client is no longer streaming vehicle %d", vehicleid);
+    format(string, sizeof(string), "你的客户端不再流入车辆 %d", vehicleid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

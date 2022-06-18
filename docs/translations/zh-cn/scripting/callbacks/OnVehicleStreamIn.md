@@ -1,6 +1,6 @@
 ---
 title: OnVehicleStreamIn
-description: Called when a vehicle is streamed to a player's client.
+description: 当车辆流入玩家的客户端时调用。
 tags: ["vehicle"]
 ---
 
@@ -8,12 +8,12 @@ tags: ["vehicle"]
 
 ## 描述
 
-Called when a vehicle is streamed to a player's client.
+当车辆流入玩家的客户端时调用。
 
-| 参数名      | 描述                                                   |
-| ----------- | ------------------------------------------------------ |
-| vehicleid   | The ID of the vehicle that streamed in for the player. |
-| forplayerid | The ID of the player who the vehicle streamed in for.  |
+| 参数名      | 描述                           |
+| ----------- | ------------------------------ |
+| vehicleid   | 为玩家流入的车辆 ID。          |
+| forplayerid | 这辆车是为哪个玩家 ID 流入的。 |
 
 ## 返回值
 
@@ -25,7 +25,7 @@ Called when a vehicle is streamed to a player's client.
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     new string[32];
-    format(string, sizeof(string), "You can now see vehicle %d.", vehicleid);
+    format(string, sizeof(string), "你现在可以看到车辆 %d.", vehicleid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
