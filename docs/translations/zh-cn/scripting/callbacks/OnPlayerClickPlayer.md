@@ -4,21 +4,17 @@ description: 当一个玩家在记分板上双击另一个玩家时调用。
 tags: ["player"]
 ---
 
-:::warning
-
-SA-MP 0.3a版本增加了这个回调函数，无法在以前的版本使用！
-
-:::
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## 描述
 
 当一个玩家在记分板上双击另一个玩家时调用。
 
-| 参数名          | 描述                           |
-| --------------- | ------------------------------ |
-| playerid        | 在记分板上点击玩家的玩家的ID。 |
-| clickedplayerid | 被点击的玩家的ID。             |
-| source          | 玩家点击的来源。               |
+| 参数名          | 描述                            |
+| --------------- | ------------------------------- |
+| playerid        | 在记分板上点击玩家的玩家的 ID。 |
+| clickedplayerid | 被点击的玩家的 ID。             |
+| source          | 玩家点击的来源。                |
 
 ## 返回值
 
@@ -48,6 +44,6 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 
 :::
 
-## 相关函数
+## 相关回调
 
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): 当玩家点击文本绘制时调用。

@@ -22,9 +22,8 @@ public OnGameModeInit()
 
 :::tip
 
-因为更改游戏模式不会重新加载过滤脚本(filterscript)，所以该函数也可以在过滤脚本中使用，用于检测是否使用了RCON指令（例如changemode或gmx）更改游戏模式。
+因为更改游戏模式不会重新加载过滤脚本(filterscript)，所以该函数也可以在过滤脚本中使用，用于检测是否使用了 RCON 指令（例如 changemode 或 gmx）更改游戏模式。
 
 :::
 
-## 相关函数
-
+## 相关回调
