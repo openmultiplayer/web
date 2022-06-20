@@ -8,15 +8,15 @@ tags: ["vehicle"]
 
 当车辆被改装时，这个回调函数被调用。
 
-| 参数名      | 描述                   |
-| ----------- | ---------------------- |
-| playerid    | 车辆司机的ID。         |
-| vehicleid   | 被改装的车辆的ID。     |
-| componentid | 添加到车辆的组件的ID。 |
+| 参数名      | 描述                    |
+| ----------- | ----------------------- |
+| playerid    | 车辆司机的 ID。         |
+| vehicleid   | 被改装的车辆的 ID。     |
+| componentid | 添加到车辆的组件的 ID。 |
 
 ## 返回值
 
-它总是在游戏模式中先被调用，所以返回0也会阻止其他过滤脚本看到它。
+它总是在游戏模式中先被调用，所以返回 0 也会阻止其他过滤脚本看到它。
 
 ## 案例
 
@@ -38,13 +38,16 @@ public OnVehicleMod(playerid,vehicleid,componentid)
 
 :::tip
 
-这个回调函数不会被AddVehicleComponent函数调用。
+这个回调函数不会被 AddVehicleComponent 函数调用。
 
 :::
 
 ## 相关函数
 
 - [AddVehicleComponent](../functions/AddVehicleComponent): 向车辆添加组件。
+
+## 相关回调
+
 - [OnEnterExitModShop](OnEnterExitModShop): 当车辆进入或离开改装店时调用。
 - [OnVehiclePaintjob](OnVehiclePaintjob): 当车辆的油漆涂鸦样式被改变时调用。
 - [OnVehicleRespray](OnVehicleRespray): 当车辆的油漆涂鸦样式被改变时调用。

@@ -4,21 +4,17 @@ description: 不管成功与否，只要有人尝试登录RCON，就会调用这
 tags: []
 ---
 
-:::warning
-
-SA-MP 0.3a版本增加了这个回调函数，无法在以前的版本使用！
-
-:::
+<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## 描述
 
-不管成功与否，只要有人尝试登录RCON，就会调用这个回调函数。
+不管成功与否，只要有人尝试登录 RCON，就会调用这个回调函数。
 
-| 参数名     | 描述                         |
-| ---------- | ---------------------------- |
-| ip[]       | 试图登录RCON的玩家的IP。     |
-| password[] | 登录时的密码。               |
-| success    | 密码不正确则为0，正确则为1。 |
+| 参数名     | 描述                           |
+| ---------- | ------------------------------ |
+| ip[]       | 试图登录 RCON 的玩家的 IP。    |
+| password[] | 登录时的密码。                 |
+| success    | 密码不正确则为 0，正确则为 1。 |
 
 ## 返回值
 
@@ -51,15 +47,15 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-这个回调函数只在游戏中使用/rcon login指令时调用。
+这个回调函数只在游戏中使用/rcon login 指令时调用。
 
 这个回调函数只在玩家尚未登录时调用。
 
-当玩家登录时，OnRconCommand回调被调用。
+当玩家登录时，OnRconCommand 回调被调用。
 
 :::
 
 ## 相关函数
 
-- [IsPlayerAdmin](../functions/IsPlayerAdmin): 检查一个玩家是否登录到RCON。
-- [SendRconCommand](../functions/SendRconCommand): 通过脚本发送RCON指令。
+- [IsPlayerAdmin](../functions/IsPlayerAdmin): 检查一个玩家是否登录到 RCON。
+- [SendRconCommand](../functions/SendRconCommand): 通过脚本发送 RCON 指令。

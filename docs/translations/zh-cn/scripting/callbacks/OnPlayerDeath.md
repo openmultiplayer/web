@@ -8,11 +8,11 @@ tags: ["player"]
 
 当一个玩家自杀或被另一个玩家杀死时，这个回调函数会被调用。
 
-| 参数名     | 描述                                                                                   |
-| -------- | --------------------------------------------------------------------------------------------- |
-| playerid | 死亡玩家的ID。                                                       |
-| killerid | 杀死死亡玩家的玩家的ID，如果没有的话，则为INVALID_PLAYER_ID。 |
-| reason   | 玩家死亡原因的ID。                                        |
+| 参数名   | 描述                                                            |
+| -------- | --------------------------------------------------------------- |
+| playerid | 死亡玩家的 ID。                                                 |
+| killerid | 杀死死亡玩家的玩家的 ID，如果没有的话，则为 INVALID_PLAYER_ID。 |
+| reason   | 玩家死亡原因的 ID。                                             |
 
 ## 返回值
 
@@ -48,21 +48,21 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::tip
 
-任何火源(如土制燃烧弹，18)，reason参数都会返回37(火焰喷射器)。
+任何火源(如土制燃烧弹，18)，reason 参数都会返回 37(火焰喷射器)。
 
-任何制造爆炸的武器(如RPG，手榴弹)，reason参数都会返回51。
+任何制造爆炸的武器(如 RPG，手榴弹)，reason 参数都会返回 51。
 
-无需检查 killerid是否在 SendDeathMessage中使用之前是否有效，因为INVALID_PLAYER_ID是函数中有效的killerid ID参数。
+无需检查 killerid 是否在 SendDeathMessage 中使用之前是否有效，因为 INVALID_PLAYER_ID 是函数中有效的 killerid ID 参数。
 
-只有 playerid可以调用回调函数。(它有助于防假死)。
+只有 playerid 可以调用回调函数。(它有助于防假死)。
 
 :::
 
 :::warning
 
-您必须首先检查'killerid'是否有效(它不能是INVALID_PLAYER_ID)，然后才可以在数组(或任何地方)使用它，否则这会导致 OnPlayerDeath脚本崩溃(而不是整个脚本)。
+您必须首先检查'killerid'是否有效(它不能是 INVALID_PLAYER_ID)，然后才可以在数组(或任何地方)使用它，否则这会导致 OnPlayerDeath 脚本崩溃(而不是整个脚本)。
 
-因为INVALID_PLAYER_ID被定义为65535，如果一个数组中只有‘MAX_PLAYERS’个元素，比如500个，那么当您尝试访问一个高于499的索引，它就超出了上限，导致越界。
+因为 INVALID_PLAYER_ID 被定义为 65535，如果一个数组中只有‘MAX_PLAYERS’个元素，比如 500 个，那么当您尝试访问一个高于 499 的索引，它就超出了上限，导致越界。
 
 :::
 
@@ -70,4 +70,3 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 - [SendDeathMessage](../functions/SendDeathMessage): 添加一个杀戮信息到死亡反馈。
 - [SetPlayerHealth](../functions/SetPlayerHealth): 设置玩家的生命值。
-

@@ -6,19 +6,19 @@ tags: []
 
 :::warning
 
-SA-MP 0.3z R2-2版本增加了这个回调函数，无法在以前的版本使用！
+SA-MP 0.3z R2-2 版本增加了这个回调函数，无法在以前的版本使用！
 
 :::
 
 ## 描述
 
-当IP地址尝试连接到服务器时，将调用这个回调函数。要阻止传入的连接，请使用BlockIpAddress函数。
+当 IP 地址尝试连接到服务器时，将调用这个回调函数。要阻止传入的连接，请使用 BlockIpAddress 函数。
 
-| 参数名       | 描述                   |
-| ------------ | ---------------------- |
-| playerid     | 试图连接的玩家的ID     |
-| ip_address[] | 试图连接的玩家的IP地址 |
-| port         | 试图连接的端口         |
+| 参数名       | 描述                     |
+| ------------ | ------------------------ |
+| playerid     | 试图连接的玩家的 ID      |
+| ip_address[] | 试图连接的玩家的 IP 地址 |
+| port         | 试图连接的端口           |
 
 ## 返回值
 
@@ -40,5 +40,5 @@ public OnIncomingConnection(playerid, ip_address[], port)
 
 ## 相关函数
 
-- [BlockIpAddress](../functions/BlockIpAddress): 在一定时间内阻止一个IP地址连接到服务器。
-- [UnBlockIpAddress](../functions/UnBlockIpAddress): 解除先前阻止的IP。
+- [BlockIpAddress](../functions/BlockIpAddress): 在一定时间内阻止一个 IP 地址连接到服务器。
+- [UnBlockIpAddress](../functions/UnBlockIpAddress): 解除先前阻止的 IP。
