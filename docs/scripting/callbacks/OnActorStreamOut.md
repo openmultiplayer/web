@@ -39,4 +39,4 @@ public OnActorStreamOut(actorid, forplayerid)
 
 The following callbacks might be useful, as they're related to this callback in one way or another. 
 
-- [OnActorStreamIn](OnActorStreamOut): This callback is called when an actor is streamed in by a player's client.
+- [OnActorStreamIn](OnActorStreamIn): This callback is called when an actor is streamed in by a player's client.
