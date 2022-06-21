@@ -6,7 +6,7 @@ tags: ["player", "menu"]
 
 ## Description
 
-This callback is called when a player selects an item from a menu (ShowMenuForPlayer).
+This callback is called when a player selects an item from a menu ([ShowMenuForPlayer](../functions/ShowMenuForPlayer)).
 
 | Name     | Description                                                 |
 | -------- | ----------------------------------------------------------- |
@@ -48,11 +48,20 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 :::tip
 
-The menu ID is not passed to this callback. GetPlayerMenu must be used to determine which menu the player selected an item on.
+The menu ID is not passed to this callback. [GetPlayerMenu](../functions/GetPlayerMenu) must be used to determine which menu the player selected an item on.
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerExitedMenu](OnPlayerExitedMenu): This callback is called when a player exits a menu. 
+- [OnDialogResponse](OnDialogResponse): This callback is called when a player responds to a dialog. 
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [CreateMenu](../functions/CreateMenu): Create a menu.
 - [DestroyMenu](../functions/DestroyMenu): Destroy a menu.

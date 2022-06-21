@@ -1,12 +1,12 @@
 ---
 title: OnPlayerRequestSpawn
-description: Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
+description: This callback is called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
 tags: ["player"]
 ---
 
 ## Description
 
-Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
+This callback is called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
 
 | Name     | Description                                   |
 | -------- | --------------------------------------------- |
@@ -39,3 +39,10 @@ public OnPlayerRequestSpawn(playerid)
 To prevent players from spawning with certain classes, the last viewed class must be saved in a variable in OnPlayerRequestClass.
 
 :::
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerSpawn](OnPlayerSpawn): This callback is called when a player spawns. 
+- [OnPlayerRequestClass](OnPlayerRequestClass): This callback is called when a player changes class at class selection. 

@@ -35,6 +35,8 @@ Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/
 
 ## Related Functions
 
+The following functions might be useful, as they're related to this callback in one way or another. 
+
 - [GetPlayerKeys](../functions/GetPlayerKeys): Check what keys a player is holding.
 
 ## Additional Information

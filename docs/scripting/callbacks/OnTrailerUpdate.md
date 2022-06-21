@@ -43,6 +43,14 @@ This callback is called very frequently per second per trailer. You should refra
 
 ## Related Functions
 
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnUnoccupiedVehicleUpdate](OnUnoccupiedVehicleUpdate): This callback is called when a driver-less vehicle's position is synced by a client. 
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
 - [GetVehicleTrailer](../functions/GetVehicleTrailer): Check what trailer a vehicle is pulling.
 - [IsTrailerAttachedToVehicle](../functions/IsTrailerAttachedToVehicle): Check if a trailer is attached to a vehicle.
 - [AttachTrailerToVehicle](../functions/AttachTrailerToVehicle): Attach a trailer to a vehicle.

@@ -1,6 +1,6 @@
 ---
 title: OnPlayerClickPlayer
-description: Called when a player double-clicks on a player on the scoreboard.
+description: This callback is called when a player double-clicks on a player on the scoreboard.
 tags: ["player"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Description
 
-Called when a player double-clicks on a player on the scoreboard.
+This callback is called when a player double-clicks on a player on the scoreboard.
 
 | Name            | Description                                                      |
 | --------------- | ---------------------------------------------------------------- |
@@ -44,6 +44,8 @@ There is currently only one 'source' (0 - CLICK_SOURCE_SCOREBOARD). The existenc
 
 :::
 
-## Related Functions
+## Related Callbacks
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): This callback is called when a player clicks on a textdraw.

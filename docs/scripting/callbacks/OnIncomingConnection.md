@@ -34,7 +34,17 @@ public OnIncomingConnection(playerid, ip_address[], port)
 }
 ```
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player disconnects from the server.
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): This callback is called when a player finishes downloading custom models.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [BlockIpAddress](../functions/BlockIpAddress): Block an IP address from connecting to the server for a set amount of time.
 - [UnBlockIpAddress](../functions/UnBlockIpAddress): Unblock an IP that was previously blocked.

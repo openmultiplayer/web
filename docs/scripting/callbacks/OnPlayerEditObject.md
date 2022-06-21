@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player finishes editing an object (EditObject/EditPlayerObject).
+This callback is called when a player finishes editing an object ([EditObject](../functions/EditObject)/[EditPlayerObject](../functions/EditPlayerObject)).
 
 | Name         | Description                                                        |
 | ------------ | ------------------------------------------------------------------ |
@@ -93,6 +93,9 @@ When using 'EDIT_RESPONSE_UPDATE' be aware that this callback will not be called
 
 ## Related Functions
 
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [EditPlayerObject](../functions/EditPlayerObject): Edit a player-object.
 - [EditObject](../functions/EditObject): Edit an object.
 - [CreateObject](../functions/CreateObject): Create an object.
 - [DestroyObject](../functions/DestroyObject): Destroy an object.

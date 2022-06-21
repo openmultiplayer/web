@@ -1,12 +1,12 @@
 ---
 title: OnPlayerInteriorChange
-description: Called when a player changes interior.
+description: This callback is called when a player changes interior.
 tags: ["player"]
 ---
 
 ## Description
 
-Called when a player changes interior. Can be triggered by SetPlayerInterior or when a player enter/exits a building.
+This callback is called when a player changes interior. Can be triggered by SetPlayerInterior or when a player enter/exits a building.
 
 | Name          | Description                            |
 | ------------- | -------------------------------------- |
@@ -30,9 +30,16 @@ public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
 }
 ```
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerStateChange](OnPlayerStateChange): This callback is called when a player changes state.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [SetPlayerInterior](../functions/SetPlayerInterior): Set a player's interior.
 - [GetPlayerInterior](../functions/GetPlayerInterior): Get the current interior of a player.
 - [LinkVehicleToInterior](../functions/LinkVehicleToInterior): Change the interior that a vehicle is seen in.
-- [OnPlayerStateChange](OnPlayerStateChange): Called when a player changes state.

@@ -1,12 +1,12 @@
 ---
 title: OnPlayerText
-description: Called when a player sends a chat message.
+description: This callback is called when a player sends a chat message.
 tags: ["player"]
 ---
 
 ## Description
 
-Called when a player sends a chat message.
+This callback is called when a player sends a chat message.
 
 | Name     | Description                              |
 | -------- | ---------------------------------------- |
@@ -33,7 +33,15 @@ public OnPlayerText(playerid, text[])
 
 <TipNPCCallbacks />
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerCommandText](OnPlayerCommandText): Called when a player types a command.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Force a player to send text for one player.
 - [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Force a player to send text for all players.

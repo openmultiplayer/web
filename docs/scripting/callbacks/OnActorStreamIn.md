@@ -34,3 +34,9 @@ public OnActorStreamIn(actorid, forplayerid)
 ## Notes
 
 <TipNPCCallbacks />
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnActorStreamOut](OnActorStreamOut): This callback is called when an actor is streamed out by a player's client.

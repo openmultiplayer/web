@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player spawns.(i.e. after caling SpawnPlayer function)
+This callback is called when a player spawns.(i.e. after caling [SpawnPlayer](../functions/SpawnPlayer) function)
 
 | Name     | Description                        |
 | -------- | ---------------------------------- |
@@ -42,7 +42,16 @@ The game sometimes deducts \$100 from players after spawn.
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerDeath](OnPlayerDeath): This callback is called when a player dies. 
+- [OnVehicleSpawn](OnVehicleSpawn): This callback is called when a vehicle respawns. 
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [SpawnPlayer](../functions/SpawnPlayer): Force a player to spawn.
 - [AddPlayerClass](../functions/AddPlayerClass): Add a class.
