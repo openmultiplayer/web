@@ -1,17 +1,17 @@
 ---
 title: OnPlayerRequestClass
-description: Called when a player changes class at class selection (and when class selection first appears).
+description: This callback is called when a player changes class at class selection (and when class selection first appears).
 tags: ["player"]
 ---
 
 ## Description
 
-Called when a player changes class at class selection (and when class selection first appears).
+This callback is called when a player changes class at class selection (and when class selection first appears).
 
 | Name     | Description                                                            |
 | -------- | ---------------------------------------------------------------------- |
 | playerid | The ID of the player that changed class.                               |
-| classid  | The ID of the current class being viewed (returned by AddPlayerClass). |
+| classid  | The ID of the current class being viewed (returned by [AddPlayerClass](../functions/AddPlayerClass)). |
 
 ## Returns
 
@@ -22,7 +22,7 @@ It is always called first in filterscripts.
 ```c
 public OnPlayerRequestClass(playerid,classid)
 {
-    if (classid == 3 && !IsPlayerAdmin(playerid))
+    if (classid == 3 && !IsPlayerAdmin(playerid))
     {
         SendClientMessage(playerid, COLOR_RED, "This skin is only for admins!");
         return 0;
@@ -39,6 +39,14 @@ This callback is also called when a player presses F4.
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerRequestSpawn](OnPlayerRequestSpawn): This callback is called when a player attempts to spawn via class selection. 
+
 ## Related Functions
 
-- [AddPlayerClass](../functions/AddPlayerClass): Add a class.
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [AddPlayerClass](../functions/AddPlayerClass): Add a player class.

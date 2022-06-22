@@ -65,11 +65,20 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-The clickable area is defined by TextDrawTextSize. The x and y parameters passed to that function must not be zero or negative. Do not use CancelSelectTextDraw unconditionally within this callback. This results in an infinite loop.
+The clickable area is defined by [TextDrawTextSize](../functions/TextDrawTextSize). The x and y parameters passed to that function must not be zero or negative. Do not use [CancelSelectTextDraw](../functions/CancelSelectTextDraw) unconditionally within this callback. This results in an infinite loop.
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): This callback is called when a player clicks on a player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): This callback is called when a player click on another.
+
 ## Related Functions
 
-- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer): Called when a player click on another.
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [SelectTextDraw](../functions/SelectTextDraw): Enables the mouse, so the player can select a textdraw.
+- [CancelSelectTextDraw](../functions/CancelSelectTextDraw): Cancel textdraw selection with the mouse.

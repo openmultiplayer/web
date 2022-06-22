@@ -54,6 +54,8 @@ public OnPlayerRequestDownload(playerid, type, crc)
 }
 ```
 
-## Related Functions
+## Related Callbacks
 
-- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): This callback is called when a player finishes downloading custom models.

@@ -1,12 +1,12 @@
 ---
 title: OnPlayerExitedMenu
-description: Called when a player exits a menu.
+description: This callback is called when a player exits a menu.
 tags: ["player", "menu"]
 ---
 
 ## Description
 
-Called when a player exits a menu.
+This callback is called when a player exits a menu.
 
 | Name     | Description                               |
 | -------- | ----------------------------------------- |
@@ -26,7 +26,15 @@ public OnPlayerExitedMenu(playerid)
 }
 ```
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerSelectedMenuRow](OnPlayerSelectedMenuRow): This callback is called when a player selected a row in a menu.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [CreateMenu](../functions/CreateMenu): Create a menu.
 - [DestroyMenu](../functions/DestroyMenu): Destroy a menu.
