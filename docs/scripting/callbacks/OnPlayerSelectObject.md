@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player selects an object after SelectObject has been used.
+This callback is called when a player selects an object after [SelectObject](../functions/SelectObject) has been used.
 
 | Name     | Description                                                |
 | -------- | ---------------------------------------------------------- |
@@ -48,5 +48,7 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 ```
 
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [SelectObject](../functions/SelectObject): Select an object.

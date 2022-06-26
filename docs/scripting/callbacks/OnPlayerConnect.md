@@ -42,6 +42,8 @@ public OnPlayerConnect(playerid)
 
 ## Related Callbacks
 
-- [OnPlayerDisconnect](OnPlayerDisconnect): Called when a player leaves the server. 
-- [OnIncomingConnection](OnIncomingConnection): Called when a player is attempting to connect to the server. 
-- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models. 
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server. 
+- [OnIncomingConnection](OnIncomingConnection): This callback is called when a player is attempting to connect to the server. 
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): This callback is called when a player finishes downloading custom models. 

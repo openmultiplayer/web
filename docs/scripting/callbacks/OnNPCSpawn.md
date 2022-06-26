@@ -1,7 +1,7 @@
 ---
 title: OnNPCSpawn
 description: This callback is called when a NPC spawned.
-tags: []
+tags: ["npc"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />

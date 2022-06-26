@@ -47,10 +47,17 @@ Known Bug(s): previewing a component inside a mod shop might call this callback.
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnVehiclePaintjob](OnVehiclePaintjob): This callback is called when a vehicle's paintjob is changed.
+- [OnVehicleMod](OnVehicleMod): This callback is called when a vehicle is modded.
+- [OnEnterExitModShop](OnEnterExitModShop): This callback is called when a vehicle enters or exits a mod shop.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change the paintjob on a vehicle.
-- [OnVehiclePaintjob](OnVehiclePaintjob): Called when a vehicle's paintjob is changed.
-- [OnVehicleMod](OnVehicleMod): Called when a vehicle is modded.
-- [OnEnterExitModShop](OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.

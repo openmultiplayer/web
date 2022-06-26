@@ -92,5 +92,7 @@ Editions should be discarded if response was '0' (cancelled). This must be done 
 
 ## Related Functions
 
+The following functions might be useful, as they're related to this callback in one way or another. 
+
 - [EditAttachedObject](../functions/EditAttachedObject): Edit an attached object.
 - [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Attach an object to a player

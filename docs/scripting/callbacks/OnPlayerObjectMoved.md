@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player object is moved after MovePlayerObject (when it stops moving).
+This callback is called when a player object is moved after [MovePlayerObject](../functions/MovePlayerObject) (when it stops moving).
 
 | Name     | Description                                |
 | -------- | ------------------------------------------ |
@@ -35,7 +35,16 @@ This callback can also be called for NPC.
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnObjectMoved](OnObjectMoved): This callback is called when an object stops moving.
+
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [MovePlayerObject](../functions/MovePlayerObject): Move a player object.
 - [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving): Check if the player object is moving.
