@@ -1,6 +1,6 @@
 ---
-Titel: OnActorStreamIn
-Beschreibung: Dieses Callback wird ausgeführt wenn ein Actor von einem Spieler gestreamt wird.
+title: OnActorStreamIn
+description: Dieses Callback wird ausgeführt wenn ein Actor von einem Spieler gestreamt wird.
 tags: []
 ---
 
