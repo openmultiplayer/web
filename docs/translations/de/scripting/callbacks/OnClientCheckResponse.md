@@ -1,6 +1,6 @@
 ---
-Titel: OnClientCheckResponse
-Beschreibung: Dieses Callback wird ausgeführt wenn ein SendClientCheck Request abgeschlossen ist.
+title: OnClientCheckResponse
+description: Dieses Callback wird ausgeführt wenn ein SendClientCheck Request abgeschlossen ist.
 tags: []
 ---
 
