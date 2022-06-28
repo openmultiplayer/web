@@ -1,6 +1,6 @@
 ---
-Titel: AddStaticVehicle
-Beschreibung: Fügt ein 'static' vehicle (models werden für den Spieler vorgeladen) zum Gamemode hinzu.
+title: AddStaticVehicle
+description: Fügt ein 'static' vehicle (models werden für den Spieler vorgeladen) zum Gamemode hinzu.
 tags: ["vehicle"]
 ---
 
