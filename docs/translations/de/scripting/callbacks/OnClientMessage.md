@@ -1,6 +1,6 @@
 ---
-Titel: OnClientMessage
-Beschreibung: Dieses Callback wird ausgeführt wenn ein NPC eine ClientMessage erkennt.
+title: OnClientMessage
+description: Dieses Callback wird ausgeführt wenn ein NPC eine ClientMessage erkennt.
 tags: []
 ---
 
