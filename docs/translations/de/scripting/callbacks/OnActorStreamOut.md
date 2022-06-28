@@ -1,6 +1,6 @@
 ---
-Titel: OnActorStreamOut
-Beschreibung: Dieses Callback wird ausgeführt, wenn ein Actor nicht länger von einem Spieler gestreamt wird.
+title: OnActorStreamOut
+description: Dieses Callback wird ausgeführt, wenn ein Actor nicht länger von einem Spieler gestreamt wird.
 tags: []
 ---
 
