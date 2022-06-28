@@ -1,6 +1,6 @@
 ---
-Titel: OnEnterExitModShop
-Beschreibung: Das Callback wird aufgerufen, wenn ein Spieler eine Tuningwerkstatt betritt oder verlässt.
+title: OnEnterExitModShop
+description: Das Callback wird aufgerufen, wenn ein Spieler eine Tuningwerkstatt betritt oder verlässt.
 tags: []
 ---
 
