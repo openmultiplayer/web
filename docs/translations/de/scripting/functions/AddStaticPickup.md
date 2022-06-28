@@ -1,6 +1,6 @@
 ---
-Titel: AddStaticPickup
-Beschreibung: Fügt ein 'static' Pickup zum Spiel hinzu.
+title: AddStaticPickup
+description: Fügt ein 'static' Pickup zum Spiel hinzu.
 tags: [Pickup]
 ---
 
