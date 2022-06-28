@@ -1,6 +1,6 @@
 ---
-Titel: OnDialogResponse
-Beschreibung: Dieses Callback wird ausgeführt wenn ein Spieler einem Dialog antwortet(benutzt), indem er einen der Buttons drückt, Enter/ESC drückt oder ein List-Item per Doppelklick auswählt(List Style Dialog).
+title: OnDialogResponse
+description: Dieses Callback wird ausgeführt wenn ein Spieler einem Dialog antwortet(benutzt), indem er einen der Buttons drückt, Enter/ESC drückt oder ein List-Item per Doppelklick auswählt(List Style Dialog).
 tags: [Pickup]
 ---
 
