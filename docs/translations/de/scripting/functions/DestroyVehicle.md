@@ -1,6 +1,6 @@
 ---
-Titel: DestroyVehicle
-Beschreibung: Löscht ein Fahrzeug.
+title: DestroyVehicle
+description: Löscht ein Fahrzeug.
 tags: ["vehicle"]
 ---
 
