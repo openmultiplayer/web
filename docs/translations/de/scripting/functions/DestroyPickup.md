@@ -1,6 +1,6 @@
 ---
-Titel: DestroyPickup
-Beschreibung: Löscht ein mit CreatePickup erstelltes Pickup.
+title: DestroyPickup
+description: Löscht ein mit CreatePickup erstelltes Pickup.
 tags: []
 ---
 
