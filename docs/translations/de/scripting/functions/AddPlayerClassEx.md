@@ -1,6 +1,6 @@
 ---
-Titel: AddPlayerClassEx
-Beschreibung: Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu. Genau wie "AddPlayerClass" nur mit einem team Parameter.
+title: AddPlayerClassEx
+description: Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu. Genau wie "AddPlayerClass" nur mit einem team Parameter.
 tags: ["player"]
 ---
 
