@@ -35,9 +35,9 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [floatsin](floatsin): 从特定角度得到正弦值。
-- [floatcos](floatcos): 从特定角度得到余弦值。
+- [floatsin](floatsin): 从特定角度求正弦值。
+- [floatcos](floatcos): 从特定角度求余弦值。
 - [floattan](floattan): 从特定角度求正切值。
-- [asin](asin): 以度为单位获取正弦值的倒数。
-- [atan](atan): 以度为单位获取正切值的倒数。
-- [atan2](atan2): 得到以度为单位的正切的多值反值。
+- [asin](asin): 以度为单位求正弦值的倒数。
+- [atan](atan): 以度为单位求正切值的倒数。
+- [atan2](atan2): 以度为单位求正切的多值倒数。

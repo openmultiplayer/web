@@ -40,5 +40,5 @@ GTA/SA-MP 在大多数情况下使用角度来表示弧度，例如[GetPlayerFac
 
 ## 相关函数
 
-- [floatsin](floatsin): 从特定角度得到正弦值。
-- [floatcos](floatcos): 从特定角度得到余弦值。
+- [floatsin](floatsin): 从特定角度求正弦值。
+- [floatcos](floatcos): 从特定角度求余弦值。

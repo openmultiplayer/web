@@ -1,6 +1,6 @@
 ---
 title: floatsin
-description: 从特定角度得到正弦值。
+description: 从特定角度求正弦值。
 tags: ["math", "floating-point"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["math", "floating-point"]
 
 ## 描述
 
-从给定角度得到正弦值。输入的角度可以是弧度、角度或分数。
+从给定角度求正弦值。输入的角度可以是弧度、角度或分数。
 
 | 参数名      | 描述                                                          |
 | ----------- | ------------------------------------------------------------- |
@@ -49,4 +49,4 @@ GTA/SA-MP 在大多数情况下使用角度来表示弧度，例如[GetPlayerFac
 ## 相关函数
 
 - [floattan](floattan): 从特定角度求正切值。
-- [floatcos](floatcos): 从特定角度得到余弦值。
+- [floatcos](floatcos): 从特定角度求余弦值。
