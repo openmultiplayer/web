@@ -13,10 +13,8 @@ import { ChakraProps } from "@chakra-ui/system";
 import { map } from "lodash/fp";
 import { NextSeo } from "next-seo";
 import NextLink from "next/link";
-import { FC, useCallback } from "react";
-import { useIsAdmin } from "src/auth/hooks";
+import { FC } from "react";
 import { CardList } from "src/components/generic/CardList";
-import { useDeleteServer } from "src/components/listing/hooks";
 import { z } from "zod";
 
 export const ServerSchema = z.object({
@@ -51,13 +49,6 @@ const CopyBadge: FC<CopyBadgeProps> = ({ text }) => {
 
 type RowProps = { server: Server };
 const Row: FC<RowProps & ChakraProps> = ({ server, sx }) => {
-  const deleteServer = useDeleteServer();
-  const onDelete = useCallback(
-    () => deleteServer(server.ip),
-    [deleteServer, server]
-  );
-  const admin = useIsAdmin();
-
   return (
     <Box sx={sx}>
       <Box>
@@ -80,8 +71,6 @@ const Row: FC<RowProps & ChakraProps> = ({ server, sx }) => {
           flexWrap="wrap"
         >
           <VStack align="left">
-            <Text style={{ marginTop: "0" }}>{server.gm}</Text>
-            {/* <Text style={{ marginTop: "0" }}>{"website"}</Text> */}
             <CopyBadge text={server.ip} />
           </VStack>
         </Flex>
