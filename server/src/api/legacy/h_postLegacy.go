@@ -26,7 +26,7 @@ func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
 
 	result, err := s.queryer.Query(r.Context(), address)
 	if err != nil {
-		zap.L().Info("failed to query server", zap.Error(err))
+		zap.L().Debug("failed to query server", zap.Error(err))
 		web.StatusNotAcceptable(w, errors.Wrap(err, "failed to query server"))
 		return
 	}
