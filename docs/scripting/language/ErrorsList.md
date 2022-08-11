@@ -43,7 +43,7 @@ Example:
 ```
 error 001: expected token: ";", but found "return"
 ```
-```
+```pawn
 main()
 {
     print("test") // This line is missing a semi-colon. That is the token it is expecting.
@@ -60,7 +60,7 @@ Example:
 ```
 error 002: only a single statement (or expression) can follow each "case"
 ```
-```
+```pawn
 main()
 {
     switch(x)
@@ -77,7 +77,7 @@ warning 215: expression has no effect
 error 010: invalid function or declaration
 ```
 Fixed:
-```
+```pawn
 main()
 {
     switch(x)
@@ -100,13 +100,13 @@ This usually happen when new sa-mp version comes with new addition of argument t
 Caused by either the number of arguments or the argument name is different.
 
 Example:
-```
+```pawn
 forward MyFunction(playerid);
  
 public MyFunction(player, vehicleid)
 ```
 Fixed:
-```
+```pawn
 forward MyFunction(playerid, vehicleid);
  
 public MyFunction(playerid, vehicleid)
@@ -118,11 +118,11 @@ Example:
 ```
 error 035: argument type mismatch (argument 1)
 ```
-```
+```pawn
 Kick("playerid"); // We are passing a STRING, we should be passing an INTEGER
 ```
 Fixed:
-```
+```pawn
 Kick(playerid);
 ```
 
@@ -133,12 +133,12 @@ Caused by a rogue semicolon (;), usually inadvertently placed behind an if-state
 For array assignment, the size of both arrays must be explicitly defined, also if they are passed as function arguments.
 
 Example:
-```
+```pawn
 new string[];
 string = "hello";
 ```
 Fixed:
-```
+```pawn
 new string[6];
 string = "hello";
 ```
