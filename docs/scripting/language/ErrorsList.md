@@ -57,8 +57,10 @@ To put multiple statements in a case, enclose these statements
 between braces (which creates a compound statement).
 
 Example:
-
+```
 error 002: only a single statement (or expression) can follow each "case"
+```
+```
 main()
 {
     switch(x)
@@ -67,13 +69,15 @@ main()
     }
     return 1;
 }
-The above code also produces other warnings/errors:
-
+```
+The above code also produces other warnings/errors:<br />
+```
 error 002: only a single statement (or expression) can follow each "case"
 warning 215: expression has no effect
 error 010: invalid function or declaration
+```
 Fixed:
-
+```
 main()
 {
     switch(x)
@@ -86,50 +90,60 @@ main()
     }
     return 1;
 }
-004: function "x" is not implemented
-Most often caused by a missing brace in the function above.
+```
+**004: function "x" is not implemented**<br />
+Most often caused by a missing brace in the function above.<br />
 
-025: function heading differs from prototype
+**025: function heading differs from prototype**<br />
 This usually happen when new sa-mp version comes with new addition of argument to a function, like OnPlayerGiveDamage from 0.3x to 0.3z. The scripter must add "bodypart" argument to OnPlayerGiveDamage callback on their script.
 
 Caused by either the number of arguments or the argument name is different.
 
 Example:
-
+```
 forward MyFunction(playerid);
  
 public MyFunction(player, vehicleid)
+```
 Fixed:
-
+```
 forward MyFunction(playerid, vehicleid);
  
 public MyFunction(playerid, vehicleid)
-035: argument type mismatch (argument x)
-An argument passed to a function is of the wrong 'type'. For example, passing a string where you should be passing an integer.
+```
+**035: argument type mismatch (argument x)**<br />
+An argument passed to a function is of the wrong 'type'. For example, passing a string where you should be passing an integer.<br />
 
 Example:
-
+```
 error 035: argument type mismatch (argument 1)
+```
+```
 Kick("playerid"); // We are passing a STRING, we should be passing an INTEGER
+```
 Fixed:
-
+```
 Kick(playerid);
-036: empty statement
+```
+
+**036: empty statement**<br />
 Caused by a rogue semicolon (;), usually inadvertently placed behind an if-statement.
 
-046: unknown array size (variable x)
+**046: unknown array size (variable x)**<br />
 For array assignment, the size of both arrays must be explicitly defined, also if they are passed as function arguments.
 
 Example:
-
+```
 new string[];
 string = "hello";
+```
 Fixed:
-
+```
 new string[6];
 string = "hello";
+```
 
-047: array sizes do not match, or destination array is too small
+**047: array sizes do not match, or destination array is too small**<br />
 For array assignment, the arrays on the left and the right side of the assignment operator must have the same number of dimensions. In addition:
 
 for multi-dimensional arrays, both arrays must have the same size;
