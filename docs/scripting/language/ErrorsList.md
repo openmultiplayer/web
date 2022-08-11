@@ -3,48 +3,55 @@ title: "Scripting: Errors and Warnings list"
 description: The most common Errors and Warnings produced by the PAWN Compiler
 ---
 
-When the compiler finds an error in a file, it outputs a message giving, in this order:
+<br />When the compiler finds an error in a file, it outputs a message giving, in this order:
 
-the name of the file
-the line number were the compiler detected the error between parentheses, directly behind the filename
-the error class (error, fatal error or warning)
-an error number
-a descriptive error message
+- the name of the file
+- the line number were the compiler detected the error between parentheses, directly behind the filename
+- the error class (error, fatal error or warning)
+- an error number
+- a descriptive error message
 
 For example:
 ```
 hello.pwn(3) : error 001: expected token: ";", but found "{"
 ```
-Note: The error may be on the line ABOVE the line that is shown, since the compiler cannot always establish an error before having analyzed the complete expression.
+**Note**: The error may be on the line ABOVE the line that is shown, since the compiler cannot always establish an error before having analyzed the complete expression.
 
-Error categories
-Errors are separated into three classes:
+***Error categories***<br />
+----------------------------------------------------------------------------------------
+Errors are separated into three classes:<br />
 
-Errors
-Describe situations where the compiler is unable to generate appropriate code.
-Errors messages are numbered from 1 to 99.
-Fatal errors
-Fatal errors describe errors from which the compiler cannot recover.
-Parsing is aborted.
-Fatal error messages are numbered from 100 to 199.
-Warnings
-Warnings are displayed for unintended compiler assumptions and common mistakes.
-Warning messages are numbered from 200 to 299.
+**Errors**<br />
+- Describe situations where the compiler is unable to generate appropriate code.<br />
+- Errors messages are numbered from 1 to 99.<br />
 
-Common Errors
-001: expected token
-A required token is missing.
+**Fatal errors**<br />
+- Fatal errors describe errors from which the compiler cannot recover.<br />
+- Parsing is aborted.<br />
+- Fatal error messages are numbered from 100 to 199.<br />
+
+**Warnings**<br />
+- Warnings are displayed for unintended compiler assumptions and common mistakes.<br />
+- Warning messages are numbered from 200 to 299.<br />
+
+***Common Errors***<br />
+----------------------------------------------------------------------------------------
+**001: expected token**<br />
+A required token is missing.<br />
 
 Example:
-
+```
 error 001: expected token: ";", but found "return"
+```
+```
 main()
 {
     print("test") // This line is missing a semi-colon. That is the token it is expecting.
     return 1; // The error states that it found "return", this is this line it is referring to,
     // as it is after the point at which the missing token (in this case the semi-colon) should be.
 }
-002: only a single statement (or expression) can follow each “case”
+```
+**002: only a single statement (or expression) can follow each “case”**<br />
 Every case in a switch statement can hold exactly one statement.
 To put multiple statements in a case, enclose these statements
 between braces (which creates a compound statement).
