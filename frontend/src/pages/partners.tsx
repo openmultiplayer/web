@@ -97,6 +97,14 @@ const Page = ({ initialData, errorMessage }: Props) => {
       ip: "82.65.202.73:7777",
       hn: "The Matrix™ Stunting© - Races and Minigames!",
     },
+    {
+      ip: "rpg.b-hood.ro:7777",
+      hn: "B-HOOD RPG | Battlepass | [2x Payday]",
+    },
+    {
+      ip: "rpg.crowland.ro:7777",
+      hn: "Phoenix Crowland - 23:00 Bonus - 1 Year Event",
+    },
   ];
 
   return (
