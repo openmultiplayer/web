@@ -90,7 +90,7 @@ const List = ({ data }: { data: Array<Server> }) => {
 const Page = ({ initialData, errorMessage }: Props) => {
   const data: Server[] = [
     {
-      ip: "ruby.nephrite.ro:7777",
+      ip: "193.203.39.36:7777",
       hn: "ruby.nephrite.ro - battlepass season 10",
     },
     {
@@ -98,11 +98,11 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "The Matrix™ Stunting© - Races and Minigames!",
     },
     {
-      ip: "rpg.b-hood.ro:7777",
+      ip: "193.203.39.46:7777",
       hn: "B-HOOD RPG | Battlepass | [2x Payday]",
     },
     {
-      ip: "rpg.crowland.ro:7777",
+      ip: "193.203.39.228:7777",
       hn: "Phoenix Crowland - 23:00 Bonus - 1 Year Event",
     },
   ];
@@ -111,7 +111,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
     <Box as="section" maxWidth="50em" margin="auto" padding="1em 2em">
       <NextSeo
         title="SA-MP Servers Index"
-        description="Live indexing and data for all SA-MP servers."
+        description="open.mp partners and beta testers"
       />
 
       <Heading mb={"1em"}>Partners (BETA TESTERS)</Heading>
