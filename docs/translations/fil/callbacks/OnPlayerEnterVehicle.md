@@ -39,6 +39,8 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 - Ang callback na ito ay tinatawag kapag ang isang manlalaro ay NAGSIMULA na pumasok sa isang sasakyan, hindi kapag napasok na nila ito.
 - Ang callback na ito ay tinatawag pa rin kung ang player ay tinanggihan sa pagpasok sa sasakyan (hal. ito ay naka-lock o puno).
 
+:::
+
 ## Mga Kaugnay na Callback
 
 Maaaring maging kapaki-pakinabang din ang mga sumusunod na callback, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o sa iba pa.
