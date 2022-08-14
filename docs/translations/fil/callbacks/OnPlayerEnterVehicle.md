@@ -16,7 +16,7 @@ Ang callback na ito ay natatawag kapag ang isang manlalaro ay pumasok sa loob ng
 | vehicleid | Ang ID ng sasakyan na pinasukan ng manlalaro.               |
 | ispassenger | 0 kung ang manlalaro ay pumasok bilang driver, 1 kung pasahero.
 
-## Return Values
+## Returns
 
 Lagi itong na tatawag una sa mga filterscript.
 
@@ -34,7 +34,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Mga Dapat Unawain
 
-### Paalala:
+:::tip
 
 - Ang callback na ito ay tinatawag kapag ang isang manlalaro ay NAGSIMULA na pumasok sa isang sasakyan, hindi kapag napasok na nila ito.
 - Ang callback na ito ay tinatawag pa rin kung ang player ay tinanggihan sa pagpasok sa sasakyan (hal. ito ay naka-lock o puno).
