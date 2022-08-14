@@ -66,4 +66,4 @@ If a message is longer than 144 characters, it will not be sent. Truncation can 
 
 ## Related Functions
 
-- [SendClientMessageToAll](SendClientMessageToAllf): Send a message to all players.
+- [SendClientMessagef](SendClientMessagef): Send a formatted message to a certain player.
