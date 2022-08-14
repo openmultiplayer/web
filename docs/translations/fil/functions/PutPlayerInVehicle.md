@@ -42,13 +42,13 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 
 :::tip
 
-Maaari mong gamitin ang GetPlayerVehicleSeat sa isang loop upang tingnan kung ang isang upuan ay inookupahan ng sinumang manlalaro.
+- Maaari mong gamitin ang GetPlayerVehicleSeat sa isang loop upang tingnan kung ang isang upuan ay inookupahan ng sinumang manlalaro.
 
 :::
 
 :::warning
 
-Kung ang upuan ay hindi wasto o kinuha, ay magdudulot ng pag-crash kapag LUMABAS sila sa sasakyan.
+- Kung ang upuan ay hindi wasto o kinuha, ay magdudulot ng pag-crash kapag LUMABAS sila sa sasakyan.
 
 :::
 
