@@ -15,7 +15,7 @@ Ang callback na ito ay natatawag kapag ang isang manlalaro ay lumabas sa sasakya
 | playerid     | Ang ID ng manlalaro ng lumalabas sa sasakyan.                  |
 | vehicleid | Ang ID ng sasakyan na kung saan ang manlalaro ay lumalabas.               |
 
-## Return Values
+## Returns
 
 Lagi itong na tatawag una sa mga filterscript.
 
