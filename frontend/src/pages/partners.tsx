@@ -105,6 +105,20 @@ const Page = ({ initialData, errorMessage }: Props) => {
       ip: "193.203.39.228:7777",
       hn: "Phoenix Crowland - 23:00 Bonus - 1 Year Event",
     },
+    {
+      ip: "37.187.77.206:7777",
+      hn: "Los Santos Roleplay/Cops/Robbers [0.3.7]",
+    },
+    
+    {
+      ip: "20.213.250.237:7777",
+      hn: "Indonesia Roleplay V2 | FiveM | OPEN.MP | New UCP | MODERN",
+    },
+    
+    {
+      ip: "152.70.186.35:7777",
+      hn: "[HUN/ENG] Welcome to San Andreas",
+    },
   ];
 
   return (
