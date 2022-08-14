@@ -26,7 +26,7 @@ Ang callback na ito ay tinatawag kapag ang isang sasakyan ay nag respawn.
 
 Lagi itong na tatawag una sa mga filterscript.
 
-## Examples
+## Halimbawa ng Paggamit
 
 ```c
 public OnVehicleSpawn(vehicleid)
