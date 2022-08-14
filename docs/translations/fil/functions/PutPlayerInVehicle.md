@@ -52,7 +52,7 @@ Kung ang upuan ay hindi wasto o kinuha, ay magdudulot ng pag-crash kapag LUMABAS
 
 :::
 
-## Related Functions
+## Mga Kaugnay na Functions
 
 - [RemovePlayerFromVehicle](./RemovePlayerFromVehicle): Itapon ang isang manlalaro sa labas ng kanilang sasakyan.
 - [GetPlayerVehicleID](./GetPlayerVehicleID): Kunin ang ID ng sasakyan kung saan nakasakay ang player.
