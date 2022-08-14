@@ -90,9 +90,20 @@ const List = ({ data }: { data: Array<Server> }) => {
 const Page = ({ initialData, errorMessage }: Props) => {
   const data: Server[] = [
     {
-      //
+      ip: "193.203.39.36:7777",
+      hn: "ruby.nephrite.ro - battlepass season 10",
+    },
+    {
       ip: "82.65.202.73:7777",
       hn: "The Matrix™ Stunting© - Races and Minigames!",
+    },
+    {
+      ip: "193.203.39.46:7777",
+      hn: "B-HOOD RPG | Battlepass | [2x Payday]",
+    },
+    {
+      ip: "193.203.39.228:7777",
+      hn: "Phoenix Crowland - 23:00 Bonus - 1 Year Event",
     },
   ];
 
@@ -100,13 +111,18 @@ const Page = ({ initialData, errorMessage }: Props) => {
     <Box as="section" maxWidth="50em" margin="auto" padding="1em 2em">
       <NextSeo
         title="SA-MP Servers Index"
-        description="Live indexing and data for all SA-MP servers."
+        description="open.mp partners and beta testers"
       />
 
-      <Heading mb={"1em"}>Servers</Heading>
+      <Heading mb={"1em"}>Partners (BETA TESTERS)</Heading>
 
       <Box py={4}>
-        <p>This is the partnership page.</p>
+        <p>
+          Servers helping us in beta testing by running open.mp and reporting bugs and issues are listed here.
+          You can do the same by running your server using open.mp and help us with finding bugs and issues; Then tell us about your servers on <a href="https://discord.gg/samp">our discord</a> so we can list them here.
+        </p>
+        <p>Those who are contributing to our community will have permanent perks in future when we are releasing for public use and when our server listing is ready.</p>
+        <p><b>Note: Partners are not paid listed servers, only available to those helping us with beta testing open.mp</b></p>
       </Box>
 
       <List data={data} />
