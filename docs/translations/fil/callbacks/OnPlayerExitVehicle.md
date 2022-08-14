@@ -38,6 +38,8 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 - Hindi tinawag kung ang manlalaro ay nahulog mula sa isang bisikleta o inalis mula sa isang sasakyan sa pamamagitan ng iba pang paraan tulad ng paggamit ng [SetPlayerPos](../funcions/SetPlayerPos.md).
 - Dapat mong gamitin ang [OnPlayerStateChange](./OnPlayerStateChange) at tingnan kung ang kanilang lumang estado ay PLAYER_STATE_DRIVER o PLAYER_STATE_PASSENGER at ang kanilang bagong estado ay PLAYER_STATE_ONFOOT.
 
+:::
+
 ## Mga Kaugnay na Callback
 
 Maaaring maging kapaki-pakinabang din ang mga sumusunod na callback, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o sa iba pa.
