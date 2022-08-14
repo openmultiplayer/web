@@ -41,7 +41,7 @@ if (strcmp(cmdtext, "/myseat", true) == 0)
 }
 ```
 
-## Related Functions
+## Mga Kaugnay na Functions
 
 Maaaring makatulong ang mga sumusunod na function habang nauugnay ang mga ito sa function na ito sa isang paraan o sa iba pa.
 
