@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
+// import { MDXRemote } from "next-mdx-remote";
+// import remarkGfm from "remark-gfm";
 
 import components from "src/components/templates";
 
@@ -21,8 +23,6 @@ type Props = {
 const Page = (props: Props) => {
   const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => setIsMounted(true), []);
-
   // hydrate contains hook calls, and hooks must always be called
   // unconditionally. Because they are called from a regular function here and
   // not a nested component, the unconditionality applies to the call stack of
@@ -31,6 +31,11 @@ const Page = (props: Props) => {
   const content =
     props.source &&
     hydrate(props.source, { components: components as Components });
+
+  const codeColor = useColorModeValue('var(--chakra-colors-gray-200)', 'var(--chakra-colors-gray-700)');
+  const tableRowBgColor = useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-700)');
+
+  useEffect(() => setIsMounted(true), []);
 
   if (props.error) {
     return (
@@ -70,7 +75,48 @@ const Page = (props: Props) => {
             </Admonition>
           )}
           <h1>{props?.data?.title}</h1>
+          {/* <MDXRemote {...props.source} components={components} /> */}
           {content}
+          <style global jsx>{`
+            pre, code {
+              background: ${codeColor};
+            }
+
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+              display: block;
+              margin-bottom: 1rem;
+              margin-top: 0;
+              overflow: auto;
+              width: 100%;
+            }
+
+            table tr {
+              background-color: transparent;
+              border-top: 1px solid #dadde1;
+            }
+
+            table tr:nth-child(2n) {
+              background-color: ${tableRowBgColor};
+            }
+
+            table td,
+            table th {
+              border: 1px solid #dadde1;
+              padding: 0.75rem;
+            }
+
+            table th {
+              background-color: inherit;
+              color: inherit;
+              font-weight: 700;
+            }
+
+            table td {
+              color: inherit;
+            }
+          `}</style>
         </section>
         <nav>{/* TODO: Table of contents */}</nav>
       </div>
@@ -94,11 +140,14 @@ import matter from "gray-matter";
 import glob from "glob";
 import admonitions from "remark-admonitions";
 import { concat, filter, flatten, flow, map } from "lodash/fp";
-import { Components } from "@mdx-js/react";
+// import { serialize } from "next-mdx-remote/serialize";
 
-import { renderToString } from "src/mdx-helpers/ssr";
 import { readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
+import { deriveError } from "src/fetcher/fetcher";
+import { renderToString } from "src/mdx-helpers/ssr";
+import { Components } from "@mdx-js/react";
+import { useColorModeValue } from "@chakra-ui/react";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ path: string[] }>
@@ -112,7 +161,9 @@ export async function getStaticProps(
     result = await readLocaleDocs(path, locale);
   } catch (e) {
     return {
-      props: { error: `File ${path} (${locale}) not found: ${e.message}` },
+      props: {
+        error: `File ${path} (${locale}) not found: ${deriveError(e).error}`,
+      },
     };
   }
 
@@ -121,8 +172,13 @@ export async function getStaticProps(
   // TODO: plugins for admonitions and frontmatter etc
   // also, pawn syntax highlighting
   const mdxSource = await renderToString(content, {
-    components: components as Components,
-    mdxOptions: { remarkPlugins: [admonitions] },
+    components,
+    mdxOptions: {
+      remarkPlugins: [
+        admonitions,
+        // remarkGfm,
+      ],
+    },
   });
 
   return {

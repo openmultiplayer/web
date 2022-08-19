@@ -70,12 +70,19 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-When a player presses ESC to cancel selecting a textdraw, OnPlayerClickTextDraw is called with a textdraw ID of 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw won't be called also.
+When a player presses ESC to cancel selecting a textdraw, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) is called with a textdraw ID of 'INVALID_TEXT_DRAW'. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) won't be called also.
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): This callback is called when a player clicks on a textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): This callback is called when a player click on another.
+
 ## Related Functions
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Sets whether a player-textdraw is selectable through SelectTextDraw
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer): Called when a player click on another.
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Sets whether a player-textdraw is selectable through [SelectTextDraw](../functions/SelectTextDraw)

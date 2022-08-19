@@ -1,6 +1,7 @@
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
+import { useColorModeValue } from "@chakra-ui/react";
 import { orderBy } from "lodash/fp";
 import format from "date-fns/format";
 import parseISO from "date-fns/parseISO";
@@ -13,29 +14,44 @@ type Props = {
   posts: Content[];
 };
 
-const Posts = ({ list }: { list: Content[] }) => (
-  <>
-    {list.map((v: Content) => {
-      try {
-        return (
-          <article key={v.slug} className="ba b--black-10 br3 ph4 mv4">
-            <h2>
-              <Link href={`/blog/${v.slug}`}>
-                <a>{v.title}</a>
-              </Link>
-            </h2>
-            <p>
-              <time>{format(parseISO(v.date!), "yyyy-MM-dd")}</time> by{" "}
-              {v.author}
-            </p>
-          </article>
-        );
-      } catch (e) {
-        console.error("Failed to generate post", v.title, "Error:", e.message);
-      }
-    })}
-  </>
-);
+const Posts = ({ list }: { list: Content[] }) => {
+  const borderColor = useColorModeValue('var(--chakra-colors-gray-300)', 'var(--chakra-colors-gray-700)');
+
+  return (
+    <>
+      {list.map((post: Content) => {
+        try {
+          return (
+            <article key={post.slug} style={{
+              border: `1px solid ${borderColor}`,
+              borderRadius: "5px",
+              padding: "0.5rem",
+              marginTop: "2rem",
+            }}>
+              <h2 style={{
+                margin: '0',
+                marginLeft: "5px"
+              }}>
+                <Link href={`/blog/${post.slug}`}>
+                  <a>{post.title}</a>
+                </Link>
+              </h2>
+              <p style={{
+                margin: '0',
+                marginLeft: "5px"
+              }}>
+                <time>{format(parseISO(post.date!), "yyyy-MM-dd")}</time> by{" "}
+                {post.author}
+              </p>
+            </article>
+          );
+        } catch (e) {
+          console.error("Failed to generate post", post.title, "Error:", e.message);
+        }
+      })}
+    </>
+  );
+}
 
 const NoContent = () => <h3>There are currently no posts.</h3>;
 

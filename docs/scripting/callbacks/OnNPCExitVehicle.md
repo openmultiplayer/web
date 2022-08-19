@@ -1,7 +1,7 @@
 ---
 title: OnNPCExitVehicle
 description: This callback is called when a NPC leaves a vehicle.
-tags: []
+tags: ["npc"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
@@ -21,7 +21,8 @@ public OnNPCExitVehicle()
 }
 ```
 
-## Related Functions
+## Related Callbacks
 
+The following callbacks might be useful, as they're related to this callback in one way or another. 
 
-- [OnNPCEnterVehicle](../callbacks/OnNPCEnterVehicle): Gets called when a NPC leaves a Vehicle.
+- [OnNPCEnterVehicle](OnNPCEnterVehicle): This callback is called when a NPC enters a vehicle.

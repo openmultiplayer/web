@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player finishes downloading custom models. For more information on how to add custom models to your server, see the release thread and this tutorial.
+This callback is called when a player finishes downloading custom models. For more information on how to add custom models to your server, see the [release thread](https://sampforum.blast.hk/showthread.php?tid=644105) and [this tutorial](https://sampforum.blast.hk/showthread.php?tid=644123).
 
 | Name         | Description                                                                    |
 | ------------ | ------------------------------------------------------------------------------ |
@@ -24,7 +24,7 @@ This callback does not handle returns.
 ```c
 public OnPlayerFinishedDownloading(playerid, virtualworld)
 {
-    SendClientMessage(playerid, 0xffffffff, "Downloads finished.");
+    SendClientMessage(playerid, 0xFFFFFFFF, "Downloads finished.");
     return 1;
 }
 ```
@@ -37,4 +37,10 @@ This callback is called every time a player changes virtual worlds, even if ther
 
 :::
 
-## Related Functions
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another.
+
+- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server. 
+- [OnIncomingConnection](OnIncomingConnection): This callback is called when a player is attempting to connect to the server. 

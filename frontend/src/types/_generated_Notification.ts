@@ -4,6 +4,7 @@ export const SubscriptionSchema = z.object({
   id: z.string(),
   refersType: z.string(),
   refersTo: z.string(),
+  userId: z.string(),
   createdAt: z.string(),
   updatedAt: z.string(),
   deletedAt: z.string().nullable(),

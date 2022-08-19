@@ -11,6 +11,7 @@ import (
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/bs"
 	"github.com/openmultiplayer/web/server/src/bsworker"
+	"github.com/openmultiplayer/web/server/src/cache"
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
@@ -35,7 +36,8 @@ func Start(ctx context.Context) {
 			config.New,
 			db.New,
 			bs.New,
-			pubsub.NewRabbit,
+			// pubsub.NewRabbit,
+			pubsub.NewEmbedded,
 			NewGitHubClient,
 			mailer.NewSendGrid,
 			docsindex.New,
@@ -47,6 +49,7 @@ func Start(ctx context.Context) {
 		),
 
 		logger.Build(),
+		cache.Build(),
 		api.Build(),
 		resources.Build(),
 		serverworker.Build(),

@@ -49,4 +49,6 @@ This callback is only called when it is in a filterscript.
 
 ## Related Functions
 
+The following function might be useful, as they're related to this callback in one way or another. 
+
 - [SendClientCheck](../functions/SendClientCheck): Perform a memory check on the client.

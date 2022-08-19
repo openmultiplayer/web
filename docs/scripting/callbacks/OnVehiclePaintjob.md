@@ -1,12 +1,12 @@
 ---
 title: OnVehiclePaintjob
-description: Called when a player previews a vehicle paintjob inside a mod shop.
+description: This callback is called when a player previews a vehicle paintjob inside a mod shop.
 tags: ["vehicle"]
 ---
 
 ## Description
 
-Called when a player previews a vehicle paintjob inside a mod shop. Watch out, this callback is not called when the player buys the paintjob.
+This callback is called when a player previews a vehicle paintjob inside a mod shop. Watch out, this callback is not called when the player buys the paintjob.
 
 | Name       | Description                                                      |
 | ---------- | ---------------------------------------------------------------- |
@@ -38,9 +38,16 @@ This callback is not called by ChangeVehiclePaintjob. You might use OnVehicleCha
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnVehicleRespray](OnVehicleRespray): This callback is called when a vehicle is resprayed.
+- [OnVehicleMod](OnVehicleMod): This callback is called when a vehicle is modded.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change the paintjob on a vehicle.
 - [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.
-- [OnVehicleRespray](OnVehicleRespray): Called when a vehicle is resprayed.
-- [OnVehicleMod](OnVehicleMod): Called when a vehicle is modded.

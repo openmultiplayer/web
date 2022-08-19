@@ -83,5 +83,3 @@ public OnPlayerUpdate(playerid)
 This callback is called, on average, 30 times per second, per player; only use it when you know what it's meant for (or more importantly what it's NOT meant for). The frequency with which this callback is called for each player varies, depending on what the player is doing. Driving or shooting will trigger a lot more updates than idling.
 
 :::
-
-## Related Functions

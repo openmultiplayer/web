@@ -26,5 +26,3 @@ floatcmp(2.0, 2.0); // Returns 0 because they match.
 floatcmp(1.0, 2.0) // Returns -1 because the second value is bigger.
 floatcmp(2.0, 1.0) // Returns 1 because the first value is bigger.
 ```
-
-## Related Functions

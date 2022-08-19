@@ -11,7 +11,7 @@ Jeżeli chcesz zaopiekować się konkretnym językiem, otwórz PR do pliku [`COD
 
 Na każdej stronie widoczny jest przycisk, który przenosi Cię do jej edycji na GitHubie:
 
-![Link „Edit this page” obecny na każdej podstronie wiki](../../../../frontend/public/images/contributing/edit-this-page.png)
+![Link „Edit this page” obecny na każdej podstronie wiki](images/contributing/edit-this-page.png)
 
 Na przykład, kliknięcie go na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) przeniesie Cię do [tej strony](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md), na której dostępny jest edytor tekstowy umożliwiający wprowadzenie zmian do pliku (zakładając, że jesteś zalogowany do GitHuba).
 
@@ -25,7 +25,7 @@ Dodawanie nowej zawartości jest nieco bardziej zawiłe. Możesz to zrobić na d
 
 Gdy przeglądasz katalog na GitHubie, w prawym górnym rogu listy plików widoczny jest przycisk „Add file”:
 
-![Przycisk „Add file”](../../../../frontend/public/images/contributing/add-new-file.png)
+![Przycisk „Add file”](images/contributing/add-new-file.png)
 
 Możesz wgrać wcześniej napisany plik języka Markdown lub napisać go bezpośrednio w edytorze tekstowym GitHuba.
 
@@ -43,7 +43,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 Otwórz je w swoim ulubionym edytorze. Polecamy Visual Studio Code, ponieważ posiada on świetne narzędzia do edycji i formatowania plików Markdown. Jak możesz zobaczyć, ten plik został napisany przy użyciu Visual Studio Code!
 
-![Podgląd markdown w Visual Studio Code](../../../../frontend/public/images/contributing/vscode.png)
+![Podgląd markdown w Visual Studio Code](images/contributing/vscode.png)
 
 Polecamy także dwie wtyczki, aby uprzyjemnić pracę:
 
@@ -168,23 +168,23 @@ Większość zawartości została przeniesiona, ale jeśli znajdziesz brakując�
 
    (Firefox)
 
-   ![image](../../../../frontend/public/images/contributing/04f024579f8d.png)
+   ![image](images/contributing/04f024579f8d.png)
 
    (Chrome)
 
-   ![image](../../../../frontend/public/images/contributing/f62bb8112543.png)
+   ![image](images/contributing/f62bb8112543.png)
 
 2. Najeżdżaj na górną lewą część podstrony, na lewy margines lub na róg, aż zobaczysz `#content`
 
-   ![image](../../../../frontend/public/images/contributing/65761ffbc429.png)
+   ![image](images/contributing/65761ffbc429.png)
 
    Lub wyszukaj `<div id=content>`
 
-   ![image](../../../../frontend/public/images/contributing/77befe2749fd.png)
+   ![image](images/contributing/77befe2749fd.png)
 
 3. Skopiuj cały kod HTML znajdujący się wewnątrz tego elementu
 
-   ![image](../../../../frontend/public/images/contributing/8c7c75cfabad.png)
+   ![image](images/contributing/8c7c75cfabad.png)
 
    Teraz masz _tylko_ kod HTML konkretnej _zawartości_ strony, czyli to co nas interesuje i co możesz przekonwertować na Markdown.
 
@@ -194,7 +194,7 @@ Do konwersji podstawowego kodu HTML (bez tabel) na Markdown, użyj:
 
 https://domchristie.github.io/turndown/
 
-![image](../../../../frontend/public/images/contributing/77f4ea555bbb.png)
+![image](images/contributing/77f4ea555bbb.png)
 
 ^^ Zwróć uwagę, że tabela całkowicie się zepsuła...
 
@@ -206,7 +206,7 @@ https://jmalarcon.github.io/markdowntables/
 
 I skopiuj sam element `<table>` do:
 
-![image](../../../../frontend/public/images/contributing/57f171ae0da7.png)
+![image](images/contributing/57f171ae0da7.png)
 
 ### Porządkowanie
 

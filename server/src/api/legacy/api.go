@@ -2,6 +2,7 @@ package legacy
 
 import (
 	"github.com/go-chi/chi"
+	cache "github.com/victorspringer/http-cache"
 	"go.uber.org/fx"
 
 	"github.com/openmultiplayer/web/server/src/queryer"
@@ -19,9 +20,12 @@ func Build() fx.Option {
 		fx.Invoke(func(
 			r chi.Router,
 			s *service,
+			cacheClient *cache.Client,
 		) {
 			rtr := chi.NewRouter()
-			r.Mount("/", rtr)
+			r.With(
+				cacheClient.Middleware,
+			).Mount("/", rtr)
 
 			// legacy announce.exe pattern: server.sa-mp.com/0.3.7/announce/7777
 			rtr.Get("/{version}/announce/{port}", s.postLegacy)

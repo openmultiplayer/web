@@ -57,5 +57,7 @@ This does not include vehicle health changes.
 
 ## Related Functions
 
+The following functions might be useful, as they're related to this callback in one way or another. 
+
 - [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus): Get the vehicle damage state for each part individually.
 - [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus): Update the vehicle damage.

@@ -74,4 +74,9 @@ GetPlayerHealth and GetPlayerArmour will return the old amounts of the player be
 
 :::
 
-## Related Functions
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage. 
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon. 

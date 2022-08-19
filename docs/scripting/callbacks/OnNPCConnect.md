@@ -1,7 +1,7 @@
 ---
 title: OnNPCConnect
 description: This callback is called when a NPC successfully connects to the server.
-tags: []
+tags: ["npc"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
@@ -23,9 +23,10 @@ public OnNPCConnect(myplayerid)
 }
 ```
 
-## Related Functions
+## Related Callbacks
 
+The following callbacks might be useful, as they're related to this callback in one way or another. 
 
-- [OnNPCDisconnect](../callbacks/OnNPCDisconnect): Gets called when the NPC gets disconnected from the server.
-- [OnPlayerConnect](../callbacks/OnPlayerConnect): Gets called when a player connects to the server.
-- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Gets called when a player leaves the server.
+- [OnNPCDisconnect](OnNPCDisconnect): This callback is called when the NPC gets disconnected from the server.
+- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server.

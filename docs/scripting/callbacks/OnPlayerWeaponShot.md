@@ -63,6 +63,14 @@ Known Bug(s): Isn't called if you fired in vehicle as driver or if you are looki
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): Retrieves the vector of the last shot a player fired.

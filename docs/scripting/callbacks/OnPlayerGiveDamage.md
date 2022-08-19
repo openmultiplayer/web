@@ -51,4 +51,9 @@ Keep in mind this function can be inaccurate in some cases. If you want to preve
 
 :::
 
-## Related Functions
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another.
+
+- [OnPlayerTakeDamage](OnPlayerTakeDamage): This callback is called when a player takes damage. 
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon. 

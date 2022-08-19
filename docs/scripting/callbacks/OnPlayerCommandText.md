@@ -40,6 +40,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 <TipNPCCallbacks />
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerText](OnPlayerText): This callback is called when a player sends a chat message.
+- [OnRconCommand](OnRconCommand): This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [SendRconCommand](../functions/SendRconCommand): Sends an RCON command via the script.

@@ -26,13 +26,16 @@ This function can also be used in a filterscript to detect if the gamemode chang
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnGameModeInit](OnGameModeInit): This callback is called when a gamemode starts.
+- [OnFilterScriptInit](OnFilterScriptInit): This callback is called when a filterscript is loaded.
+- [OnFilterSciptExit](OnFilterScriptExit): This callback is called when a filterscript is unloaded.
 
 ## Related Functions
 
+The following functions might be useful, as they're related to this callback in one way or another. 
+
 - [GameModeExit](../functions/GameModeExit): Exit the current gamemode.
-
-## Related Callbacks
-
-- [OnGameModeInit](OnGameModeInit): Called when a gamemode starts.
-- [OnFilterScriptInit](OnFilterScriptInit): Called when a filterscript is loaded.
-- [OnFilterSciptExit](OnFilterScriptExit): Called when a filterscript is unloaded.

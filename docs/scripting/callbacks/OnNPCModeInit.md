@@ -1,7 +1,7 @@
 ---
 title: OnNPCModeInit.
 description: This callback is called when a NPC script is loaded.
-tags: []
+tags: ["npc"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
@@ -21,7 +21,8 @@ public OnNPCModeInit()
 }
 ```
 
-## Related Functions
+## Related Callbacks
 
+The following callbacks might be useful, as they're related to this callback in one way or another. 
 
-- [OnNPCModeExit](../callbacks/OnNPCModeExit): Gets called when a NPC script unloaded.
+- [OnNPCModeExit](OnNPCModeExit): This callback is called when a NPC script unloaded.

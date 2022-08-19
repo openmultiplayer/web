@@ -86,7 +86,6 @@ This page contains every available skin, to be used with [SetPlayerSkin](../../s
 | 71      | ![](/images/skins/71.png)  | Security Guard                           | Airport Guard Boxes                                | Male   |
 | 72      | ![](/images/skins/72.png)  | Hippy                                    | San Andreas                                        | Male   |
 | 73      | ![](/images/skins/73.png)  | Hippy                                    | San Fierro                                         | Male   |
-| 74      | ![](/images/skins/74.png)  | -                                        | -                                                  | -      |
 | 75      | ![](/images/skins/75.png)  | Prostitute                               | San Andreas                                        | Female |
 | 76      | ![](/images/skins/76.png)  | Stewardess                               | San Andreas                                        | Female |
 | 77      | ![](/images/skins/77.png)  | Homeless                                 | San Andreas                                        | Female |

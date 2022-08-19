@@ -20,6 +20,7 @@ import {
   MenuOptionGroup,
   Stack,
   useClipboard,
+  useColorModeValue,
   useToast,
 } from "@chakra-ui/react";
 import { ChakraProps } from "@chakra-ui/system";
@@ -41,7 +42,6 @@ export type PostWithMarkdown = Post & {
 type Props = {
   thread: Partial<Post>;
   post: PostWithMarkdown;
-  showAdminTools: boolean;
   onSetReply: (post: Post) => void;
 } & ChakraProps;
 
@@ -171,13 +171,12 @@ const Editing: FC<EditingProps> = ({ post, title, onSubmitEdit }) => {
 const PostListItem: FC<Props> = ({
   thread,
   post,
-  showAdminTools,
   onSetReply,
   sx,
 }) => {
   const { user } = useAuth();
-  const owned = user?.id === post.author.id;
-  const showTools = showAdminTools || owned;
+  const [owned, admin] = [user?.id === post.author.id, user?.admin];
+  const showTools = owned || admin;
 
   // The post.markdown field NEVER changes, it's serialised server side only
   // for next-mdx-remote and used only for server side renders. Once the client
@@ -208,7 +207,8 @@ const PostListItem: FC<Props> = ({
   const deletedPostColour = "red.50";
   const deletedBoxShadow = `inset 0 0 0.5em var(--chakra-colors-red-100)`;
 
-  const backgroundColor = post.deletedAt ? deletedPostColour : "white";
+  const postListItemColorDark = useColorModeValue('white', 'gray.700');
+  const backgroundColor = post.deletedAt ? deletedPostColour : postListItemColorDark;
   const boxShadow = post.deletedAt ? deletedBoxShadow : "white";
 
   return (

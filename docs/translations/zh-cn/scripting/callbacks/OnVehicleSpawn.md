@@ -6,7 +6,7 @@ tags: ["vehicle"]
 
 :::warning
 
-这个回调函数**仅**在载具**重生**时被调用。 CreateVehicle 和 AddStaticVehicle(Ex)  函数 **不会** 触发此回调。
+这个回调函数**仅**在载具**重生**时被调用。 CreateVehicle 和 AddStaticVehicle(Ex) 函数 **不会** 触发此回调。
 
 :::
 
@@ -14,9 +14,9 @@ tags: ["vehicle"]
 
 这个回调函数在载具重生时被调用。
 
-| 参数名    | 描述             |
-| --------- | ---------------- |
-| vehicleid | 生成的载具的ID。 |
+| 参数名    | 描述              |
+| --------- | ----------------- |
+| vehicleid | 生成的载具的 ID。 |
 
 ## 返回值
 

@@ -42,6 +42,16 @@ Known Bug(s): Players collide when they get into the same mod shop.
 
 :::
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnVehicleMod](OnVehicleMod): This callback is called when a vehicle is modded.
+- [OnVehicleRespray](OnVehicleRespray): This callback is called when a player exits a mod shop, even if the colors weren't changed.
+- [OnVehiclePaintjob](OnVehiclePaintjob): This callback is called when a player previews a vehicle paintjob inside a mod shop.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [AddVehicleComponent](../functions/AddVehicleComponent): Add a component to a vehicle.

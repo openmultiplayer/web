@@ -50,4 +50,8 @@ This callback is called very frequently per second per unoccupied vehicle. You s
 
 :::
 
-## Related Functions
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnTrailerUpdate](OnTrailerUpdate): Called when a trailer's position is synced by a client.

@@ -43,6 +43,7 @@ require (
 	github.com/stretchr/testify v1.7.0
 	github.com/takuoki/gocase v1.0.0
 	github.com/thanhpk/randstr v1.0.4
+	github.com/victorspringer/http-cache v0.0.0-20220131145941-ef3624e6666f // indirect
 	go.etcd.io/bbolt v1.3.5
 	go.uber.org/fx v1.13.1
 	go.uber.org/multierr v1.6.0 // indirect

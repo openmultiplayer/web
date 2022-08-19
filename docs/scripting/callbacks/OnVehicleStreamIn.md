@@ -1,6 +1,6 @@
 ---
 title: OnVehicleStreamIn
-description: Called when a vehicle is streamed to a player's client.
+description: This callback is called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Called when a vehicle is streamed to a player's client.
+This callback is called when a vehicle is streamed to a player's client.
 
 | Name        | Description                                            |
 | ----------- | ------------------------------------------------------ |
@@ -35,4 +35,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 <TipNPCCallbacks />
 
-## Related Functions
+## Related Callbacks
+- [OnVehicleStreamOut](OnVehicleStreamOut): This callback is called when a vehicle streams out for a player. 
+- [OnPlayerStreamIn](OnPlayerStreamIn): This callback is called when a player streams in for another player. 
+- [OnPlayerStreamOut](OnPlayerStreamOut): This callback is called when a player streams out for another player. 

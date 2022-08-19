@@ -21,7 +21,7 @@ type Embedded struct {
 	ps *pubsub.PubSub
 }
 
-func NewEmbedded() *Embedded {
+func NewEmbedded() Bus {
 	return &Embedded{pubsub.New(0)}
 }
 

@@ -1,3 +1,4 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 import { FC, useCallback, useRef, useState } from "react";
 import { API_ADDRESS } from "src/config";
@@ -69,6 +70,7 @@ const Search: FC = () => {
         }
 
         .search {
+          background-color: ${useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-800)')};
           border: 1px solid rgba(0, 0, 0, 0.3);
           border-top-width: 0px;
           box-sizing: border-box;
@@ -92,14 +94,14 @@ const Search: FC = () => {
         }
 
         .result {
-          background: #fff;
+          background-color: ${useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-900)')};
           padding: 18px;
           border: 1px solid rgba(0, 0, 0, 0.3);
           border-top-width: 0px;
         }
 
         .result:hover {
-          background: #f0f0f0;
+          background-color: ${useColorModeValue('var(--chakra-colors-gray-100)', 'var(--chakra-colors-gray-700)')};
         }
       `}</style>
     </>

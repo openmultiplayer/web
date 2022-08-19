@@ -8,10 +8,10 @@ tags: ["player", "vehicle"]
 
 当玩家开始离开载具时，这个回调函数被调用。
 
-| 参数名    | 描述                 |
-| --------- | -------------------- |
-| playerid  | 离开载具的玩家的ID。 |
-| vehicleid | 玩家离开的载具的ID。 |
+| 参数名    | 描述                  |
+| --------- | --------------------- |
+| playerid  | 离开载具的玩家的 ID。 |
+| vehicleid | 玩家离开的载具的 ID。 |
 
 ## 返回值
 
@@ -33,9 +33,9 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-如果玩家从自行车上摔下来或被其他函数从载具上移除，例如使用SetPlayerPos函数时，则不调用。
+如果玩家从自行车上摔下来或被其他函数从载具上移除，例如使用 SetPlayerPos 函数时，则不调用。
 
-你必须使用OnPlayerStateChange回调并检查它们的旧状态是PLAYER_STATE_DRIVER还是PLAYER_STATE_PASSENGER。它们现在的新状态是PLAYER_STATE_ONFOOT。
+你必须使用 OnPlayerStateChange 回调并检查它们的旧状态是 PLAYER_STATE_DRIVER 还是 PLAYER_STATE_PASSENGER。它们现在的新状态是 PLAYER_STATE_ONFOOT。
 
 :::
 

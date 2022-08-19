@@ -1,4 +1,5 @@
 import { CloseButton } from "@chakra-ui/close-button";
+import { useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 import { FC, forwardRef, LegacyRef, useMemo } from "react";
 import { alternativeColour, generateColour } from "src/utils/colour-hash";
@@ -62,7 +63,7 @@ export const TagButton: FC<Props & { href?: string }> = forwardRef(
 
             border-radius: 0.25em;
 
-            background-color: var(--chakra-colors-gray-50);
+            background-color: ${useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-800)')};
           }
           .tag {
             transition: color 0.2s;
@@ -80,7 +81,7 @@ export const TagButton: FC<Props & { href?: string }> = forwardRef(
             border-left-color: ${colour};
             border-radius: 0.25em;
 
-            color: var(--chakra-colors-gray-700);
+            color: ${useColorModeValue('var(--chakra-colors-gray-700)', 'var(--chakra-colors-gray-400)')};
           }
           .wipe {
             transition: all 0.2s;

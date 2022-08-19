@@ -35,4 +35,10 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 <TipNPCCallbacks />
 
-## Related Functions
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerStreamOut](OnPlayerStreamOut): This callback is called when a player streams out for another player. 
+- [OnActorStreamIn](OnPlayerStreamOut): This callback is called when an actor is streamed in by a player. 
+- [OnVehicleStreamIn](OnPlayerStreamOut): This callback is called when a vehicle streams in for a player. 

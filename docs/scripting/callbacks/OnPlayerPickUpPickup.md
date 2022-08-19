@@ -1,17 +1,17 @@
 ---
 title: OnPlayerPickUpPickup
-description: Called when a player picks up a pickup created with CreatePickup.
+description: This callback is called when a player picks up a pickup created with CreatePickup.
 tags: ["player"]
 ---
 
 ## Description
 
-Called when a player picks up a pickup created with CreatePickup.
+This callback is called when a player picks up a pickup created with [CreatePickup](../functions/CreatePickup).
 
 | Name     | Description                                     |
 | -------- | ----------------------------------------------- |
 | playerid | The ID of the player that picked up the pickup. |
-| pickupid | The ID of the pickup, returned by CreatePickup. |
+| pickupid | The ID of the pickup, returned by [CreatePickup](../functions/CreatePickup)|
 
 ## Returns
 
@@ -45,6 +45,8 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 ```
 
 ## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [CreatePickup](../functions/CreatePickup): Create a pickup.
 - [DestroyPickup](../functions/DestroyPickup): Destroy a pickup.
