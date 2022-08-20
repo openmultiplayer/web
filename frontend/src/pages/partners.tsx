@@ -114,10 +114,17 @@ const Page = ({ initialData, errorMessage }: Props) => {
       ip: "20.213.250.237:7777",
       hn: "Indonesia Roleplay V2 | FiveM | OPEN.MP | New UCP | MODERN",
     },
-    
     {
       ip: "152.70.186.35:7777",
       hn: "[HUN/ENG] Welcome to San Andreas",
+    },
+    {
+      ip: "143.244.135.145:7777",
+      hn: "Mallu Gamers Community Roleplay",
+    },
+    {
+      ip: "51.222.12.92:7777",
+      hn: "[R7] Revela7ion RP",
     },
   ];
 
