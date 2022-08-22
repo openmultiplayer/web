@@ -4,7 +4,7 @@ description: 以度为单位求正弦值的倒数。
 tags: ["math"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteCN />
 
 ## 描述
 

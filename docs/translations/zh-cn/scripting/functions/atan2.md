@@ -4,7 +4,7 @@ description: 以度为单位求正切的多值倒数。
 tags: ["math"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteCN />
 
 :::warning
 
