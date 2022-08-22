@@ -30,7 +30,7 @@ public OnPlayerLeaveCheckpoint(playerid)
 
 ## 要点
 
-<TipNPCCallbacks />
+<TipNPCCallbacksCNs />
 
 ## 相关函数
 

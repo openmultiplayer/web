@@ -4,7 +4,7 @@ description: 添加新的自定义简单物体模型以供下载。
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarnCN version='SA-MP 0.3.DL R1' />
 
 ## 描述
 

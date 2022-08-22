@@ -4,7 +4,7 @@ description: 这个回调函数在玩家点击玩家-文本绘制时被调用。
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
+<VersionWarnCN name='回调' version='SA-MP 0.3e' />
 
 ## 描述
 

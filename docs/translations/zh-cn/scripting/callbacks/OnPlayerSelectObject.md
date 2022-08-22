@@ -4,7 +4,7 @@ description: 当玩家在使用SelectObject之后选择一个物体时，这个�
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
+<VersionWarnCN name='回调' version='SA-MP 0.3e' />
 
 ## 描述
 

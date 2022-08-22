@@ -6,13 +6,13 @@ tags: []
 
 :::warning
 
-SA-MP 0.3a版本增加了这个NPC回调函数，无法在以前的版本使用！
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 :::
 
 ## 描述
 
-当使用NPC:StartRecordingPlayback复制的录制文件到达其末尾时，将调用此回调。
+当使用 NPC:StartRecordingPlayback 复制的录制文件到达其末尾时，将调用此回调。
 
 ## 案例
 

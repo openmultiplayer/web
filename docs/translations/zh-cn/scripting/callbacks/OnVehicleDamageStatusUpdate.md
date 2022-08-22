@@ -4,7 +4,7 @@ description: 这个回调是在汽车部件(例如车门、轮胎、面板或车
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 :::tip
 

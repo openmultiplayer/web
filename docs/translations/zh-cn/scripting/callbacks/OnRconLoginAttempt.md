@@ -4,7 +4,7 @@ description: 不管成功与否，只要有人尝试登录RCON，就会调用这
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 ## 描述
 

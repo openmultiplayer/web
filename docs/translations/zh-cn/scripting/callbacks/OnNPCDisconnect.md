@@ -4,7 +4,7 @@ description: 当NPC与服务器断开连接时，会调用此回调。
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 ## 描述
 

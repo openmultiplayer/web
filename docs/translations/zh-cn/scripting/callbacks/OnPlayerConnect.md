@@ -38,6 +38,6 @@ public OnPlayerConnect(playerid)
 
 ## 要点
 
-<TipNPCCallbacks />
+<TipNPCCallbacksCNs />
 
 ## 相关回调

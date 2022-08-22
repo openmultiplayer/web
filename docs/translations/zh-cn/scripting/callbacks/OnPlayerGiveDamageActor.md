@@ -4,7 +4,7 @@ description: 当一个玩家对一个演员造成伤害时，这个回调会被�
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnCN name='回调' version='SA-MP 0.3.7' />
 
 ## 描述
 

@@ -4,7 +4,7 @@ description: 当玩家受到伤害时，会调用该回调。
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
+<VersionWarnCN name='回调' version='SA-MP 0.3d' />
 
 ## 描述
 
