@@ -18,9 +18,9 @@ func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
 	version := chi.URLParam(r, "version")
 	port := chi.URLParam(r, "port")
 
-	address := fmt.Sprintf("%s:%s", strings.Split(r.RemoteAddr, ":")[0], port)
+	address := getConnectingIP(r, port)
 
-	zap.L().Debug("received request to index server",
+	zap.L().Info("received request to index server",
 		zap.String("version", version),
 		zap.String("address", address))
 
@@ -39,4 +39,16 @@ func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
 	}
 
 	web.Write(w, formatted)
+}
+
+func getConnectingIP(r *http.Request, port string) string {
+	if cfip := r.Header.Get("CF-Connecting-IP"); cfip != "" {
+		return fmt.Sprintf("%s:%s", cfip, port)
+	}
+
+	if cfip := r.Header.Get("X-Forwarded-For"); cfip != "" {
+		return fmt.Sprintf("%s:%s", cfip, port)
+	}
+
+	return fmt.Sprintf("%s:%s", strings.Split(r.RemoteAddr, ":")[0], port)
 }

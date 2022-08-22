@@ -54,6 +54,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
           { name: "FAQ", path: "/faq" },
           { name: "Forums", path: "/discussion" },
           { name: "Servers", path: "/servers" },
+          { name: "Partners", path: "/partners" },
           { name: "Docs", path: "/docs" },
           { name: "Blog", path: "/blog" },
         ]}
