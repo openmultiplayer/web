@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 要点
 
-<TipNPCCallbacksCNs />
+<TipNPCCallbacksCN />
 
 ## 相关函数
 

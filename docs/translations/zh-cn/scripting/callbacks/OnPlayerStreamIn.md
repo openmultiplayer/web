@@ -33,4 +33,4 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## 要点
 
-<TipNPCCallbacksCNs />
+<TipNPCCallbacksCN />

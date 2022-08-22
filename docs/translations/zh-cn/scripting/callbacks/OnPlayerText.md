@@ -31,7 +31,7 @@ public OnPlayerText(playerid, text[])
 
 ## 要点
 
-<TipNPCCallbacksCNs />
+<TipNPCCallbacksCN />
 
 ## 相关函数
 

@@ -28,7 +28,7 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 ## 要点
 
-<TipNPCCallbacksCNs />
+<TipNPCCallbacksCN />
 
 ## 相关函数
 

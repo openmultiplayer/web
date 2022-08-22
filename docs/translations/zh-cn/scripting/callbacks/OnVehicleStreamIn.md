@@ -33,4 +33,4 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## 要点
 
-<TipNPCCallbacksCNs />
+<TipNPCCallbacksCN />

@@ -33,4 +33,4 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## 相关回调
 
-<TipNPCCallbacksCNs />
+<TipNPCCallbacksCN />

@@ -32,7 +32,7 @@ public OnPlayerRequestSpawn(playerid)
 
 ## 要点
 
-<TipNPCCallbacksCNs />
+<TipNPCCallbacksCN />
 
 :::tip
 

@@ -36,7 +36,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 ## 要点
 
-<TipNPCCallbacksCNs />
+<TipNPCCallbacksCN />
 
 ## 相关函数
 
