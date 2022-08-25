@@ -111,7 +111,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
     },
     
     {
-      ip: "20.213.250.237:7777",
+      ip: "178.128.116.125:7777",
       hn: "Indonesia Roleplay V2 | FiveM | OPEN.MP | New UCP | MODERN",
     },
     {
@@ -125,6 +125,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
     {
       ip: "51.222.12.92:7777",
       hn: "[R7] Revela7ion RP",
+    },
+    {
+      ip: "138.3.241.127:7777",
+      hn: "rpg.game-time.lol (beta) || open.mp",
     },
   ];
 
