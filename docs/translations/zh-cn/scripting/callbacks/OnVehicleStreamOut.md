@@ -4,7 +4,7 @@ description: 当一辆车为玩家的客户端流出时，这个回调被调用(
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 ## 描述
 
@@ -33,4 +33,4 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 
 ## 要点
 
-<TipNPCCallbacks />
+<TipNPCCallbacksCN />

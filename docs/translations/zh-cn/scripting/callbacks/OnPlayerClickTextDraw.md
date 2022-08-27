@@ -4,7 +4,7 @@ description: 当玩家点击文本绘制或用Escape键取消选择模式时，�
 tags: ["player", "textdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
+<VersionWarnCN name='回调' version='SA-MP 0.3e' />
 
 ## 描述
 

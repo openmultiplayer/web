@@ -4,7 +4,7 @@ description: 当玩家编辑完一个物体(EditObject/EditPlayerObject)时，�
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
+<VersionWarnCN name='回调' version='SA-MP 0.3e' />
 
 ## 描述
 

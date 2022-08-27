@@ -4,7 +4,7 @@ description: 当一个玩家在记分板上双击另一个玩家时调用。
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 ## 描述
 

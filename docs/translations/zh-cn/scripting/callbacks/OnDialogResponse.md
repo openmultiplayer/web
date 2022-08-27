@@ -4,7 +4,7 @@ description: 当玩家通过单击按钮、按Enter/Esc键或双击列表项(如
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 ## 说明
 

@@ -4,7 +4,7 @@ description: 每当NPC看到一个客户端消息时，这个回调就会被调�
 tags: []
 ---
 
-<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='NPC 回调' version='SA-MP 0.3a' />
 
 ## 描述
 

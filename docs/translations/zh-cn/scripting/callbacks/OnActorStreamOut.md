@@ -4,7 +4,7 @@ description: 当演员被玩家的客户端流出时，就会调用这个回调�
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnCN name='回调' version='SA-MP 0.3.7' />
 
 ## 描述
 
@@ -33,4 +33,4 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## 相关回调
 
-<TipNPCCallbacks />
+<TipNPCCallbacksCN />

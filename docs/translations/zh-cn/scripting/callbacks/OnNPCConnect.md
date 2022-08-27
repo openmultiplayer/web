@@ -4,7 +4,7 @@ description: 当NPC成功连接到服务器时会调用该回调。
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 ## 描述
 

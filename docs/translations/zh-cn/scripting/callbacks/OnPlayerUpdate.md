@@ -23,7 +23,7 @@ tags: ["player"]
 
 ## 要点
 
-<TipNPCCallbacks />
+<TipNPCCallbacksCN />
 
 :::warning
 

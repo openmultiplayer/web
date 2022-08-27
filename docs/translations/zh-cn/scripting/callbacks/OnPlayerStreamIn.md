@@ -4,7 +4,7 @@ description: 当某个玩家从其他玩家的客户端流入时，这个回调�
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 ## 描述
 
@@ -33,4 +33,4 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## 要点
 
-<TipNPCCallbacks />
+<TipNPCCallbacksCN />

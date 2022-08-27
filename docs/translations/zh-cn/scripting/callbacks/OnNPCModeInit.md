@@ -4,7 +4,7 @@ description: This callback is called when a NPC script is loaded.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
+<VersionWarnCN name='回调' version='SA-MP 0.3a' />
 
 ## 描述
 

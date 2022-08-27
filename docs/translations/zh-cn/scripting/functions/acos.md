@@ -4,7 +4,7 @@ description: 以度为单位求余弦函数的倒数。
 tags: ["math"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteCN />
 
 ## 描述
 
