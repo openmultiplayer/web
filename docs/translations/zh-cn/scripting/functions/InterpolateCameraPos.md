@@ -52,6 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关函数
 
-- [InterpolateCameraLookAt](InterpolateCameraLookAt): Move a player's camera view from one location to another.
+- [InterpolateCameraLookAt](InterpolateCameraLookAt): 在设定的时间内，将玩家视角的朝向从一个位置移动到另一个位置。
 - [SetPlayerCameraPos](SetPlayerCameraPos): 设置玩家的视角位置。
 - [SetPlayerCameraLookAt](SetPlayerCameraLookAt): 设置玩家的视角所看的方向。
