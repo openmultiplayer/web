@@ -1,6 +1,6 @@
 ---
 title: "Lag Compensation"
-descripion: Lag compensation explanation.
+description: Lag compensation explanation.
 ---
 
 <VersionWarn name='feature' version='SA-MP 0.3z' />

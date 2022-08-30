@@ -1,6 +1,6 @@
 ---
 title: "server.cfg"
-descripion: 服务器配置文件.
+description: 服务器配置文件.
 ---
 
 ## 描述

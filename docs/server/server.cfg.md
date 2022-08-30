@@ -1,6 +1,6 @@
 ---
 title: "server.cfg"
-descripion: Server configuration file.
+description: Server configuration file.
 ---
 
 ## Description
