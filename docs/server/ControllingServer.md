@@ -1,6 +1,6 @@
 ---
 title: "Controlling a Server"
-descripion: Useful commands for controlling a server.
+description: Useful commands for controlling a server.
 ---
 
 ## Changing Gamemode
