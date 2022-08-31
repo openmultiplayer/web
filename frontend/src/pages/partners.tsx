@@ -130,6 +130,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       ip: "138.3.241.127:7777",
       hn: "rpg.game-time.lol (beta) || open.mp",
     },
+    {
+      ip: "91.200.100.99:7777",
+      hn: "GTA:O | Open Freeroam | Deathmatch | Minigames",
+    },
   ];
 
   return (
