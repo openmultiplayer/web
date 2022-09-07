@@ -1,5 +1,5 @@
 ---
-titre : Problèmes courants
+title : Problèmes courants
 ---
 
 ## Le serveur plante instantanément au démarrage
