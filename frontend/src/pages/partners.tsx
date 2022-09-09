@@ -98,6 +98,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "The Matrix™ Stunting© - Races and Minigames!",
     },
     {
+      ip: "51.89.19.31:7777",
+      hn: "Skill Arena | SA:RP [Dupli Respekti, 3x za igrace <level 20]"
+    },
+    {
       ip: "193.203.39.46:7777",
       hn: "B-HOOD RPG | Battlepass | [2x Payday]",
     },
@@ -109,7 +113,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       ip: "37.187.77.206:7777",
       hn: "Los Santos Roleplay/Cops/Robbers [0.3.7]",
     },
-    
+    {
+      ip: "51.77.238.90:7777",
+      hn: "GHW Project | Autumn Festival Event"
+    },
     {
       ip: "178.128.116.125:7777",
       hn: "Indonesia Roleplay V2 | FiveM | OPEN.MP | New UCP | MODERN",
