@@ -100,7 +100,7 @@ const Home = () => {
     {
       heading: "Community driven development",
       bodyText:
-        "Open.mp is fully open source and is actively developed and maintained solely by the community. This helps in transparency and community input.",
+        "Once fully released, the server will be fully open source. For now you can help by contributing to the wiki, Or by testing the beta server software.",
       buttonLink: "https://github.com/openmultiplayer",
       buttonText: "Visit the GitHub repo",
       img: "/images/assets/f2.png",
