@@ -114,6 +114,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "Los Santos Roleplay/Cops/Robbers [0.3.7]",
     },
     {
+      ip: "51.178.185.229:7777",
+      hn: "Diverse Gaming Freeroam / Roleplay [0.3.7 | 0.3.DL] (eLg)"
+    },
+    {
       ip: "51.77.238.90:7777",
       hn: "GHW Project | Autumn Festival Event"
     },
