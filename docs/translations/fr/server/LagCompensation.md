@@ -1,5 +1,5 @@
 ---
-titre : "Compensation des décalages"
+title : "Compensation des décalages"
 description : Explication de la compensation de décalage.
 ---
 
