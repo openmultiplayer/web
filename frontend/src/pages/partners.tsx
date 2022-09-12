@@ -149,6 +149,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       ip: "91.200.100.99:7777",
       hn: "GTA:O | Open Freeroam | Deathmatch | Minigames",
     },
+    {
+      ip: "samp.h0v1n8.nl:7776",
+      hn: "[ENG] Bayside Roleplay | open.mp",
+    },
   ];
 
   return (
