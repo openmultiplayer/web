@@ -122,6 +122,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "GHW Project | Autumn Festival Event"
     },
     {
+      ip: "51.38.115.171:7777",
+      hn: "City of Angels Roleplay | [0.3.DL]"
+    },
+    {
       ip: "178.128.116.125:7777",
       hn: "Indonesia Roleplay V2 | FiveM | OPEN.MP | New UCP | MODERN",
     },
