@@ -101,7 +101,7 @@ Now it's time to get this plugin compiled! You should have a module definition f
 #include "SDK\plugincommon.h"
 
 
-typedef void (*logprintf_t)(char* format, ...);
+typedef void (*logprintf_t)(const char* format, ...);
 logprintf_t logprintf;
 extern void *pAMXFunctions;
 
