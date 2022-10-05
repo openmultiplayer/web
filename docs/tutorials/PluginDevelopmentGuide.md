@@ -65,8 +65,6 @@ stackoverflow.com
 
 ## Getting started
 
-you can use a SAMP-Plugin VScode template: [download](https://github.com/LouzinDeev/VS-Template-for-SAMP-Plugins)
-
 You would be shocked how many times i get asked "How do i get started with plugin development?". I decided to add this entire section to answer that question! Just because you know the language doesn't mean you know your way around the IDE after all; I think that's especially true when it comes to VC++ 2010. Visual studio can be a very intimidating place to new users. I hardly think its fair to just hand you the plugin SDK without showing you around first! Messing with property pages/the linker can easily scare people away, so I'm going to guide you through it.
 
 **Note:** If you chose to use a different IDE/compiler that targets Windows, you're out of luck! It seems that the only way to successfully export functions is to use a module definition file (.DEF). I've tried to include an alternative method in this article using \_\_declspec(dllexport), but this simply didn't work due to the \_\_stdcall calling convention mangling the exported function's names (See: [Here](https://pastebin.com/y3xkVY70)).
@@ -648,17 +646,19 @@ cell AMX_NATIVE_CALL PrintPawnString2(AMX* amx, cell* params)
 ### Alternative Function to get an string
 ```cpp
 
-// Create a void function, passing AMX*, cell, char* and int params.
-
+/* here we will create a function, of type void, to get a string from an address,
+we will pass the parameters
+amx, which is the abstract machine, the address, which will be where we will get the string from, the destination of this string, and the size of the string
+*/
 void amx_GetStr(AMX* amx, cell amx_addr, char* dest, int len) {
-    cell* addr; // Addr for the cells
-    amx_GetAddr(amx, amx_addr, &addr);
-    amx_GetString(dest, addr, 0, len); // put the string in the dest char*.
+    cell* addr; // we create a cell-type pointer to store the contents of the address
+    amx_GetAddr(amx, amx_addr, &addr); // here we store the contents of the address, in our storage pointer
+    amx_GetString(dest, addr, 0, len); // here now, we take the string stored in our variable, and put it in its destination, with the size specified by the function
 }
 
 cell AMX_NATIVE_CALL PrintPawnString3(AMX* amx, cell* params)
 {
-    char* text = new char[101]; // creating a char* text with +1 len.
+    char* text = new char[101]; // now we create a pointer of type char to serve as the destination of the string, passing a size with +1 extra space
     amx_GetStr(amx, params[1], text, 100); // passing amx, source, the dest and len
 
     logprintf(text);
@@ -681,7 +681,6 @@ cell AMX_NATIVE_CALL SetPawnString(AMX* amx, cell* params)
 }
 
 ```
-
 ### Casting and returning floats
 
 ```cpp
