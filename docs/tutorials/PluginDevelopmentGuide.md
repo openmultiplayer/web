@@ -65,6 +65,8 @@ stackoverflow.com
 
 ## Getting started
 
+you can use a SAMP-Plugin VScode template: [download](https://github.com/LouzinDeev/VS-Template-for-SAMP-Plugins)
+
 You would be shocked how many times i get asked "How do i get started with plugin development?". I decided to add this entire section to answer that question! Just because you know the language doesn't mean you know your way around the IDE after all; I think that's especially true when it comes to VC++ 2010. Visual studio can be a very intimidating place to new users. I hardly think its fair to just hand you the plugin SDK without showing you around first! Messing with property pages/the linker can easily scare people away, so I'm going to guide you through it.
 
 **Note:** If you chose to use a different IDE/compiler that targets Windows, you're out of luck! It seems that the only way to successfully export functions is to use a module definition file (.DEF). I've tried to include an alternative method in this article using \_\_declspec(dllexport), but this simply didn't work due to the \_\_stdcall calling convention mangling the exported function's names (See: [Here](https://pastebin.com/y3xkVY70)).
