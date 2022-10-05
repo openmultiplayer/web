@@ -1611,7 +1611,6 @@ just add
 ...
 
 ```
-in you'r script
 
 ## Credits
 
