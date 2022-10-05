@@ -643,6 +643,24 @@ cell AMX_NATIVE_CALL PrintPawnString2(AMX* amx, cell* params)
     return 1;
 
 ```
+### Alternative Function to get an string
+```cpp
+
+// Create a void function, passing AMX*, cell, char* and int params.
+
+void amx_GetStr(AMX* amx, cell amx_addr, char* dest, int len) {
+    cell* addr; // Addr for the cells
+    amx_GetAddr(amx, amx_addr, &addr);
+    amx_GetString(dest, addr, 0, len); // put the string in the dest char*.
+}
+
+cell AMX_NATIVE_CALL PrintPawnString3(AMX* amx, cell* params)
+{
+    char* text = new char[101]; // creating a char* text with +1 len.
+    amx_GetStr(amx, params[1], text, 100); // passing amx, source, the dest and len
+
+    logprintf(text);
+```
 
 ### How to set a string
 
@@ -659,6 +677,7 @@ cell AMX_NATIVE_CALL SetPawnString(AMX* amx, cell* params)
     amx_SetString(addr, message.c_str(), 0, 0, params[2]);
     return 1;
 }
+
 ```
 
 ### Casting and returning floats
@@ -1580,10 +1599,27 @@ PLUGIN_EXPORT void PLUGIN_CALL ProcessTick()
     }
 }
 ```
+## Error C2371 int32_t redefinition diferent types
+This error occurs without this #define HAVE_STDINT_H, at the top of your project
+just add
+
+```cpp
+
+#define HAVE_STDINT_H
+#include <SDK/amx/amx.h>
+...
+
+```
+
+## Credits
+
+**Kyosaur**
 
 ## Special thanks
 
 **RyDeR`** - For contributing the pictures from his plugin tutorial.
+
+**LouzinDeev** - For Updating this tutorial
 
 **Incognito** - For Invoke, information about ProcessTick, and for all the help over my time learning C++.
 
