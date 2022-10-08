@@ -134,7 +134,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "[HUN/ENG] Welcome to San Andreas",
     },
     {
-      ip: "143.244.135.145:7777",
+      ip: "143.110.246.54:7777",
       hn: "Mallu Gamers Community Roleplay",
     },
     {
