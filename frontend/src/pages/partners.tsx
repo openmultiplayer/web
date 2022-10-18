@@ -134,6 +134,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "[HUN/ENG] Welcome to San Andreas",
     },
     {
+      ip: "15.235.140.162:7777",
+      hn: "PSA-RP | OPEN BETA | 0.3 DL",
+    },
+    {
       ip: "143.110.246.54:7777",
       hn: "Mallu Gamers Community Roleplay",
     },
