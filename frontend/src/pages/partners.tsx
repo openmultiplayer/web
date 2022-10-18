@@ -115,6 +115,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
     },
     {
       ip: "51.178.185.229:7777",
+      hn: "DG Freeroam | beckzy's RPG [0.3.7 | 0.3.DL] (eLg)"
+    },
+    {
+      ip: "51.178.185.229:7777",
       hn: "Diverse Gaming Freeroam / Roleplay [0.3.7 | 0.3.DL] (eLg)"
     },
     {
