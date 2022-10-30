@@ -1,6 +1,6 @@
 # Frontend
 
-This directory contains the frontend codebase which is a [Next.js](https://nextjs.org/). It's written in TypeScript with some fairly relaxed but standard tsconfig rules (no strict mode).
+This directory contains the [Next.js](https://nextjs.org/) frontend codebase. It's written in TypeScript with some fairly relaxed but standard tsconfig rules (no strict mode).
 
 To learn more about Next.js, take a look at the following resources:
 
