@@ -259,7 +259,6 @@ export const readLocaleDocs = async (
 
 // Gets the url for the corresponding docs page name and locale on Github.
 export const getDocsGithubUrl = (name: string, exists: boolean, locale ?: string) => {
-  console.log('name', name, 'locale', locale);
   const translation = locale === 'en' ? '' : `translations/${locale}/`;
   const mode = exists ? "edit" : "new";
   // TODO: are there ways for a new file to fill its content/title?
