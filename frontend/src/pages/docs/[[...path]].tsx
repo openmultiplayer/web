@@ -18,6 +18,7 @@ type Props = {
   error?: string;
   data?: { [key: string]: any };
   fallback?: boolean;
+  ghUrl?: string;
 };
 
 const Page = (props: Props) => {
@@ -46,6 +47,33 @@ const Page = (props: Props) => {
     );
   }
 
+  const contributeCallToAction = props.fallback ? (
+    <Admonition type="warning" title="Not Translated">
+      <p>
+        This page has not been translated into the language that your
+        browser requested yet. The English content is being shown as a
+        fallback.
+      </p>
+      <p>
+        If you want to contribute a translation for this page then
+        please click{" "}
+        <a href={props.ghUrl}>here</a>.
+      </p>
+    </Admonition>
+  ) : (
+    // TODO: would we want to translate this into the locale selected?
+    <Admonition type="note" title="Help Needed">
+      <p>
+        This wiki is the result of an ongoing community effort —
+        thank you all for helping!
+      </p>
+      <p>
+        If you want to provide changes to this page then please click{" "}
+        <a href={props.ghUrl}>here</a>.
+      </p>
+    </Admonition>
+  );
+
   return (
     <div className="flex flex-column flex-auto items-stretch">
       <NextSeo
@@ -60,20 +88,7 @@ const Page = (props: Props) => {
         </div>
 
         <section className="mw7 pa3 flex-auto">
-          {props.fallback && (
-            <Admonition type="warning" title="Not Translated">
-              <p>
-                This page has not been translated into the language that your
-                browser requested. The English content is being shown as a
-                fallback.
-              </p>
-              <p>
-                If you want to contribute a translation for this page then
-                please click{" "}
-                <a href="https://github.com/openmultiplayer/web">here</a>.
-              </p>
-            </Admonition>
-          )}
+          {!props.error && contributeCallToAction}
           <h1>{props?.data?.title}</h1>
           {/* <MDXRemote {...props.source} components={components} /> */}
           {content}
@@ -142,7 +157,7 @@ import admonitions from "remark-admonitions";
 import { concat, filter, flatten, flow, map } from "lodash/fp";
 // import { serialize } from "next-mdx-remote/serialize";
 
-import { readLocaleDocs } from "src/utils/content";
+import { getDocsGithubUrl, readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
 import { deriveError } from "src/fetcher/fetcher";
 import { renderToString } from "src/mdx-helpers/ssr";
@@ -186,6 +201,7 @@ export async function getStaticProps(
       source: mdxSource,
       data,
       fallback: result.fallback,
+      ghUrl: getDocsGithubUrl(path, !result.fallback, locale),
     },
   };
 }
