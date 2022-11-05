@@ -256,3 +256,11 @@ export const readLocaleDocs = async (
 
   throw new Error(`Not found (${name})`);
 };
+
+// Gets the url for the corresponding docs page name and locale on Github.
+export const getDocsGithubUrl = (name: string, exists: boolean, locale ?: string) => {
+  const translation = locale === 'en' ? '' : `translations/${locale}/`;
+  const mode = exists ? "edit" : "new";
+  // TODO: are there ways for a new file to fill its content/title?
+  return `https://github.com/openmultiplayer/web/${mode}/master/docs/${translation}${name}.md`;
+};

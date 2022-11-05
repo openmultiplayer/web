@@ -115,6 +115,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
     },
     {
       ip: "51.178.185.229:7777",
+      hn: "DG Freeroam | beckzy's RPG [0.3.7 | 0.3.DL] (eLg)"
+    },
+    {
+      ip: "51.178.185.229:7777",
       hn: "Diverse Gaming Freeroam / Roleplay [0.3.7 | 0.3.DL] (eLg)"
     },
     {
@@ -134,7 +138,11 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "[HUN/ENG] Welcome to San Andreas",
     },
     {
-      ip: "143.244.135.145:7777",
+      ip: "15.235.140.162:7777",
+      hn: "PSA-RP | OPEN BETA | 0.3 DL",
+    },
+    {
+      ip: "143.110.246.54:7777",
       hn: "Mallu Gamers Community Roleplay",
     },
     {
