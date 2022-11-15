@@ -643,6 +643,26 @@ cell AMX_NATIVE_CALL PrintPawnString2(AMX* amx, cell* params)
     return 1;
 
 ```
+### Alternative Function to get an string
+```cpp
+
+/* here we will create a function, of type void, to get a string from an address,
+we will pass the parameters
+amx, which is the abstract machine, the address, which will be where we will get the string from, the destination of this string, and the size of the string
+*/
+void amx_GetStr(AMX* amx, cell amx_addr, char* dest, int len) {
+    cell* addr; // we create a cell-type pointer to store the contents of the address
+    amx_GetAddr(amx, amx_addr, &addr); // here we store the contents of the address, in our storage pointer
+    amx_GetString(dest, addr, 0, len); // here now, we take the string stored in our variable, and put it in its destination, with the size specified by the function
+}
+
+cell AMX_NATIVE_CALL PrintPawnString3(AMX* amx, cell* params)
+{
+    char* text = new char[101]; // now we create a pointer of type char to serve as the destination of the string, passing a size with +1 extra space
+    amx_GetStr(amx, params[1], text, 100); // passing amx, source, the dest and len
+
+    logprintf(text);
+```
 
 ### How to set a string
 
@@ -659,8 +679,8 @@ cell AMX_NATIVE_CALL SetPawnString(AMX* amx, cell* params)
     amx_SetString(addr, message.c_str(), 0, 0, params[2]);
     return 1;
 }
-```
 
+```
 ### Casting and returning floats
 
 ```cpp
@@ -1580,10 +1600,27 @@ PLUGIN_EXPORT void PLUGIN_CALL ProcessTick()
     }
 }
 ```
+## Error C2371 int32_t redefinition diferent types
+This error occurs without this #define HAVE_STDINT_H, at the top of your project
+just add
+
+```cpp
+
+#define HAVE_STDINT_H
+#include <SDK/amx/amx.h>
+...
+
+```
+
+## Credits
+
+**Kyosaur**
 
 ## Special thanks
 
 **RyDeR`** - For contributing the pictures from his plugin tutorial.
+
+**LouzinDeev** - For Updating this tutorial
 
 **Incognito** - For Invoke, information about ProcessTick, and for all the help over my time learning C++.
 
