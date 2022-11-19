@@ -106,6 +106,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "B-HOOD RPG | Battlepass | [2x Payday]",
     },
     {
+      ip: "15.235.160.99:7777",
+      hn: "open.mp | City of Manila Roleplay"
+    },
+    {
       ip: "193.203.39.228:7777",
       hn: "Phoenix Crowland - 23:00 Bonus - 1 Year Event",
     },
