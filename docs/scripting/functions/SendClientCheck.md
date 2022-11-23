@@ -53,7 +53,9 @@ There are 6 types of requests that the client processes  2, 5, 69, 70, 71, 72.
 
 :::warning
 
-This callback is only called when it is in a filterscript.
+**SA:MP Server**: This function only works when it is in a filterscript.
+
+**Open Multiplayer Server**: This functions normally inside a gamemode / filterscript. 
 
 :::
 
