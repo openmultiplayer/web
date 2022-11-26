@@ -146,7 +146,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "PSA-RP | OPEN BETA | 0.3 DL",
     },
     {
-      ip: "143.110.246.54:7777",
+      ip: "139.59.63.83:7777",
       hn: "Mallu Gamers Community Roleplay",
     },
     {
