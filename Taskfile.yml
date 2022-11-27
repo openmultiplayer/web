@@ -1,5 +1,7 @@
 version: 3
 
+dotenv: [.env]
+
 tasks:
   default:
     deps: [build]
@@ -77,3 +79,22 @@ tasks:
       NEXT_PUBLIC_API_ADDRESS: "https://api.open.mp"
     cmds:
       - npm run dev
+
+  db-copy:
+    vars:
+      LOCAL_OUTPUT_PATH: data/dump.tar
+    cmds:
+      # - mkdir -p outputs/database
+      - pg_dump
+        --format=c
+        --file={{.LOCAL_OUTPUT_PATH}}
+        --schema=public
+        {{.DATABASE_URL_SOURCE}}
+      - pg_restore
+        --format=c
+        --schema=public
+        --single-transaction
+        --if-exists
+        --clean
+        --dbname={{.DATABASE_URL_DEST}}
+        {{.LOCAL_OUTPUT_PATH}}
