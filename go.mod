@@ -3,7 +3,6 @@ module github.com/openmultiplayer/web
 go 1.14
 
 require (
-	github.com/JohannesKaufmann/html-to-markdown v1.3.0
 	github.com/Masterminds/semver v1.5.0
 	github.com/PuerkitoBio/goquery v1.6.0
 	github.com/RoaringBitmap/roaring v0.9.4 // indirect
@@ -15,10 +14,7 @@ require (
 	github.com/bbalet/stopwords v1.0.0
 	github.com/blevesearch/bleve/v2 v2.1.0
 	github.com/bwmarrin/discordgo v0.22.0
-	github.com/cenkalti/backoff v2.2.1+incompatible
-	github.com/cskr/pubsub v1.0.2
 	github.com/forPelevin/gomoji v0.0.0-20210718160015-5fcf0e405128
-	github.com/frustra/bbcode v0.0.0-20201127003707-6ef347fbe1c8
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/cors v1.1.1
 	github.com/gomarkdown/markdown v0.0.0-20211105120026-16f708f914c3
@@ -35,15 +31,12 @@ require (
 	github.com/prisma/prisma-client-go v0.16.2
 	github.com/prometheus/client_golang v1.11.0
 	github.com/russross/blackfriday v1.6.0
-	github.com/sendgrid/rest v2.6.2+incompatible // indirect
-	github.com/sendgrid/sendgrid-go v3.7.2+incompatible
 	github.com/sethvargo/go-limiter v0.7.2
 	github.com/shopspring/decimal v1.3.1
-	github.com/streadway/amqp v1.0.0
 	github.com/stretchr/testify v1.8.0
 	github.com/takuoki/gocase v1.0.0
 	github.com/thanhpk/randstr v1.0.4
-	github.com/victorspringer/http-cache v0.0.0-20220131145941-ef3624e6666f // indirect
+	github.com/victorspringer/http-cache v0.0.0-20220131145941-ef3624e6666f
 	go.etcd.io/bbolt v1.3.5
 	go.uber.org/fx v1.13.1
 	go.uber.org/multierr v1.6.0 // indirect

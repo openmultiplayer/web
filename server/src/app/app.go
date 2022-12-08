@@ -9,17 +9,12 @@ import (
 
 	"github.com/openmultiplayer/web/server/src/api"
 	"github.com/openmultiplayer/web/server/src/authentication"
-	"github.com/openmultiplayer/web/server/src/bs"
-	"github.com/openmultiplayer/web/server/src/bsworker"
 	"github.com/openmultiplayer/web/server/src/cache"
 	"github.com/openmultiplayer/web/server/src/config"
 	"github.com/openmultiplayer/web/server/src/db"
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/logger"
-	"github.com/openmultiplayer/web/server/src/mailer"
-	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/pawndexworker"
-	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/resources"
 	"github.com/openmultiplayer/web/server/src/serververify"
 	"github.com/openmultiplayer/web/server/src/serverworker"
@@ -35,14 +30,9 @@ func Start(ctx context.Context) {
 		fx.Provide(
 			config.New,
 			db.New,
-			bs.New,
-			// pubsub.NewRabbit,
-			pubsub.NewEmbedded,
 			NewGitHubClient,
-			mailer.NewSendGrid,
 			docsindex.New,
 			authentication.New,
-			mailworker.New,
 			serververify.New,
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
@@ -54,7 +44,6 @@ func Start(ctx context.Context) {
 		resources.Build(),
 		serverworker.Build(),
 		pawndexworker.Build(),
-		bsworker.Build(),
 	)
 
 	err := app.Start(ctx)

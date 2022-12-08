@@ -1,0 +1,6 @@
+.github
+.task
+.vscode
+data/
+docs.bleve/
+frontend/
