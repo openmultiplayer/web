@@ -13,8 +13,6 @@ import (
 	githuboa "golang.org/x/oauth2/github"
 
 	"github.com/openmultiplayer/web/server/src/config"
-	"github.com/openmultiplayer/web/server/src/mailreg"
-	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/resources/user"
 )
 
@@ -28,16 +26,14 @@ var (
 type GitHubProvider struct {
 	repo   user.Repository
 	as     *State
-	mw     *mailworker.Worker
 	cache  *cache.Cache
 	oaconf *oauth2.Config
 }
 
-func NewGitHubProvider(repo user.Repository, as *State, mw *mailworker.Worker, cfg config.Config) *GitHubProvider {
+func NewGitHubProvider(repo user.Repository, as *State, cfg config.Config) *GitHubProvider {
 	return &GitHubProvider{
 		repo:  repo,
 		as:    as,
-		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
 			ClientID:     cfg.GithubClientID,
@@ -107,16 +103,6 @@ func (p *GitHubProvider) Login(ctx context.Context, state, code string) (*user.U
 
 	if err := p.repo.LinkGitHub(ctx, u.ID, fmt.Sprint(githubUser.GetID()), githubUser.GetLogin(), githubUser.GetEmail()); err != nil {
 		return nil, errors.Wrap(err, "failed to create user GitHub relationship")
-	}
-
-	if err := p.mw.Enqueue(
-		githubUser.GetName(),
-		githubUser.GetEmail(),
-		"Welcome to open.mp!",
-		mailreg.TemplateID("welcome"),
-		struct{}{},
-	); err != nil {
-		return nil, err
 	}
 
 	return u, nil

@@ -60,8 +60,8 @@ const CategoryList: FC<Props> = ({ categories }) => {
   return (
     <ReactSortable
       tag={ListContainer}
-      list={list}
-      setList={setList}
+      list={list as any}
+      setList={setList as any}
       animation={200}
       delayOnTouchOnly={true}
       handle=".drag-handle"

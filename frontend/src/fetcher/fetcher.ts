@@ -206,7 +206,7 @@ export function mapSSP<T, U = T>(fn: (input: T) => Promise<U>) {
       };
     } else {
       // If the API call faled, do nothing and pass the input along unchanged.
-      return input;
+      return new Promise(() => input);
     }
   };
 }

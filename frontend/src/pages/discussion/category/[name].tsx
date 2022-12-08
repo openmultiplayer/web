@@ -42,7 +42,7 @@ type Data = {
 type Props = SSP<Data>;
 
 const Page: NextPage<Props> = (props) => {
-  if (!props.success) {
+  if (props.success === false) {
     return <ErrorBanner {...props.error} />;
   }
 

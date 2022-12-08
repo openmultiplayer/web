@@ -8,7 +8,7 @@ import { User, UserSchema } from "src/types/_generated_User";
 type Props = SSP<User>;
 
 const Page: FC<Props> = (props) => {
-  if (!props.success) {
+  if (props.success === false) {
     return <ErrorBanner {...props.error} />;
   }
   return <MemberView user={props.data} />;

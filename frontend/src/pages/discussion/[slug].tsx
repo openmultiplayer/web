@@ -26,7 +26,7 @@ const Page: NextPage<Props> = (props) => {
   const { page } = QuerySchema.parse(router.query);
   const { slug } = ParamsSchema.parse(router.query);
 
-  if (!props.success) {
+  if (props.success === false) {
     return <ErrorBanner {...props.error} />;
   }
 

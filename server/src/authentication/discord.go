@@ -15,17 +15,15 @@ import (
 	"golang.org/x/oauth2"
 
 	"github.com/openmultiplayer/web/server/src/config"
-	"github.com/openmultiplayer/web/server/src/mailreg"
-	"github.com/openmultiplayer/web/server/src/mailworker"
 	"github.com/openmultiplayer/web/server/src/resources/user"
 )
 
 var _ OAuthProvider = &DiscordProvider{}
 
 type DiscordProvider struct {
-	repo   user.Repository
-	as     *State
-	mw     *mailworker.Worker
+	repo user.Repository
+	as   *State
+
 	cache  *cache.Cache
 	oaconf *oauth2.Config
 }
@@ -35,11 +33,10 @@ var endpoint = oauth2.Endpoint{
 	TokenURL: "https://discord.com/api/oauth2/token",
 }
 
-func NewDiscordProvider(repo user.Repository, as *State, mw *mailworker.Worker, cfg config.Config) *DiscordProvider {
+func NewDiscordProvider(repo user.Repository, as *State, cfg config.Config) *DiscordProvider {
 	return &DiscordProvider{
 		repo:  repo,
 		as:    as,
-		mw:    mw,
 		cache: cache.New(10*time.Minute, 20*time.Minute),
 		oaconf: &oauth2.Config{
 			ClientID:     cfg.DiscordClientID,
@@ -132,16 +129,6 @@ func (p *DiscordProvider) Login(ctx context.Context, state, code string) (*user.
 
 	if err := p.repo.LinkDiscord(ctx, u.ID, dcuser.ID, dcuser.Username, dcuser.Email); err != nil {
 		return nil, errors.Wrap(err, "failed to create user Discord relationship")
-	}
-
-	if err := p.mw.Enqueue(
-		dcuser.Username,
-		dcuser.Email,
-		"Welcome to open.mp!",
-		mailreg.TemplateID("welcome"),
-		struct{}{},
-	); err != nil {
-		return nil, err
 	}
 
 	return u, nil
