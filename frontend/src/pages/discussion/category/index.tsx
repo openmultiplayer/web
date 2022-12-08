@@ -7,7 +7,7 @@ import { Category, CategorySchema } from "src/types/_generated_Forum";
 type Props = SSP<Category[]>;
 
 const Page: NextPage<Props> = (props) => {
-  if (!props.success) {
+  if (props.success === false) {
     return <ErrorBanner {...props.error} />;
   }
   return <CategoryListView initialCategories={props.data} />;
