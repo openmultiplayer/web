@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
+import { trim } from "lodash";
 import React, { FC } from "react";
 
 const Img: FC<
@@ -12,7 +13,10 @@ const Img: FC<
   if (src?.startsWith("http")) {
     return <img {...props} />;
   }
-  return <img {...props} src={`https://assets.open.mp/assets/${props.src}`} />;
+
+  const path = trim(src, "/");
+
+  return <img {...props} src={`https://assets.open.mp/assets/${path}`} />;
 };
 
 export default Img;
