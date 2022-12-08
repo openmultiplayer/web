@@ -20,6 +20,10 @@ processes    = []
     PACKAGES_DB           = "/data/packages.db"
     PRODUCTION            = "true"
 
+[mounts]
+    destination = "/data"
+    source      = "openmp"
+
 [[services]]
     http_checks   = []
     internal_port = 8000
