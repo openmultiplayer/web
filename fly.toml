@@ -11,14 +11,9 @@ processes    = []
     auto_rollback        = true
 
 [env]
-    DISCORD_CLIENT_ID     = "${DISCORD_CLIENT_ID}"
-    DISCORD_CLIENT_SECRET = "${DISCORD_CLIENT_SECRET}"
-    GITHUB_CLIENT_ID      = "${GITHUB_CLIENT_ID}"
-    GITHUB_CLIENT_SECRET  = "${GITHUB_CLIENT_SECRET}"
-    GITHUB_TOKEN          = "${GITHUB_TOKEN}"
-    LOG_LEVEL             = "debug"
-    PACKAGES_DB           = "/data/packages.db"
-    PRODUCTION            = "true"
+    LOG_LEVEL   = "debug"
+    PACKAGES_DB = "/data/packages.db"
+    PRODUCTION  = "true"
 
 [mounts]
     destination = "/data"
