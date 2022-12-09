@@ -1,4 +1,4 @@
-name: Fly Deploy
+name: Fly Deploy Frontend
 
 on:
   push:
@@ -10,7 +10,7 @@ env:
 
 jobs:
   deploy:
-    name: Deploy app
+    name: Deploy frontend
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
