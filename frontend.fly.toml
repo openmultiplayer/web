@@ -6,6 +6,9 @@ processes    = []
 [env]
     PORT = "3000"
 
+[build]
+    dockerfile = "Dockerfile.frontend"
+
 [experimental]
     allowed_public_ports = []
     auto_rollback        = true
