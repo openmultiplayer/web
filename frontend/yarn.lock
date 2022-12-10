@@ -2785,9 +2785,9 @@ camelize@^1.0.0:
   integrity sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs=
 
 caniuse-lite@^1.0.30001202, caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.30001228:
-  version "1.0.30001273"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001273.tgz#ee94d4ad66e88c1b67f064e87540d5785a26db59"
-  integrity sha512-8oFW0P3LFmOJ6+jHPGN2cRyoXoRBFCSoe2x8vSGS8pQwNJjonKUwH370/GNR/TvheySHq0mnL+blvDZm0N7idQ==
+  version "1.0.30001439"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001439.tgz"
+  integrity sha512-1MgUzEkoMO6gKfXflStpYgZDlFM7M/ck/bgfVCACO5vnAf0fXoNVHdWtqGU+MYca+4bL9Z5bpOVmR33cWW9G2A==
 
 ccount@^1.0.0, ccount@^1.0.3:
   version "1.1.0"
