@@ -1,0 +1,8 @@
+{
+    "framework": "nextjs",
+    "git": {
+        "deploymentEnabled": {
+            "master": true
+        }
+    }
+}

@@ -1,3 +1,4 @@
+.git
 .github
 .task
 .vscode
@@ -8,6 +9,7 @@ frontend/node_modules/
 frontend/cache/
 frontend/build/
 frontend/.next/
+server/
 
 *.exe
 .env

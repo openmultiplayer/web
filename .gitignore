@@ -9,3 +9,4 @@ openmp.sublime-project
 prisma/Studio/
 *.db
 .task
+.vercel
