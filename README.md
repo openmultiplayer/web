@@ -40,7 +40,7 @@ This monorepo contains the web services and documentation for open.mp and SA-MP.
 - `emails/` [MJML](https://mjml.io) email templates for account registration and other things.
 - `frontend/` [Next.js](https://nextjs.org) app for the https://open.mp site.
 - `prisma/` [Prisma](https://prisma.io/) database models for generating Go code and SQL migrations.
-- `server/` Backend API for server listings, accounts, etc.
+- `app/` Backend API for server listings, accounts, etc.
 
 ## Frontend Development
 
@@ -50,7 +50,7 @@ The only files that the frontend need that _are not_ in that directory are `docs
 
 ## Backend/Full Stack Development
 
-When working on the backend, the root of the repository is where you need to be. The server application will assume it's being run from the root, _not_ from within `server/`.
+When working on the backend, the root of the repository is where you need to be. The server application will assume it's being run from the root, _not_ from within `cmd/`.
 
 To start the API server, use [Taskfile](https://taskfile.dev) and run `task`, the default task is to build and run the API server.
 

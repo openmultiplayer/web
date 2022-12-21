@@ -9,7 +9,8 @@ frontend/node_modules/
 frontend/cache/
 frontend/build/
 frontend/.next/
-server/
+app/
+internal/
 
 *.exe
 .env
