@@ -17,10 +17,10 @@ jobs:
       - uses: actions/setup-node@v2
       - uses: actions/checkout@v2
       - uses: arduino/setup-task@v1
-      - run: go get -v -t -d ./server
+      - run: go mod download
       - run: task generate
 
       - name: Test
-        run: go test -v ./server/...
+        run: go test -v ./app/...
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
