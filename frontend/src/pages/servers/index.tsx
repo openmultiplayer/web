@@ -334,13 +334,10 @@ const List = ({
   );
 };
 
-const Page = ({ initialData, errorMessage }: Props) => {
+const Page = () => {
   const { data, error, mutate } = useSWR<Array<Essential>, TypeError>(
     API_SERVERS,
-    getServers,
-    {
-      fallbackData: initialData,
-    }
+    getServers
   );
   if (error) {
     return <ErrorBanner {...error} />;
@@ -364,22 +361,6 @@ const Page = ({ initialData, errorMessage }: Props) => {
       />
     </Box>
   );
-};
-
-export const getServerSideProps = async (
-  _context: GetServerSidePropsContext
-): Promise<GetServerSidePropsResult<Props>> => {
-  let servers: Array<Essential>;
-  try {
-    servers = await getServers();
-  } catch (e) {
-    return { props: { errorMessage: (e as any)?.message } };
-  }
-  return {
-    props: {
-      initialData: servers,
-    },
-  };
 };
 
 export default Page;
