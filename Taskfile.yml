@@ -8,11 +8,13 @@ tasks:
     cmds:
       - ./server.exe
     sources:
-      - server/**/*.go
+      - app/**/*.go
+      - internal/**/*.go
+      - cmd/**/*.go
 
   build:
     cmds:
-      - go build -o server.exe -ldflags="-X 'github.com/openmultiplayer/web/server/src/version.Version={{.VERSION}}'" ./server/
+      - go build -o server.exe -ldflags="-X 'github.com/openmultiplayer/web/internal/version.Version={{.VERSION}}'" ./cmd/server
 
   # Production deployment run - migrate DB first, then
   production:
@@ -39,7 +41,7 @@ tasks:
 
   docsindex:
     cmds:
-      - go run ./server/indexbuilder/main.go
+      - go run ./cmd/indexbuilder/main.go
 
   migrate:
     cmds:

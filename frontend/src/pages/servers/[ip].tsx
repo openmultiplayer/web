@@ -13,6 +13,7 @@ import {
   NextPage,
 } from "next";
 import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 import { FC } from "react";
 import ErrorBanner from "src/components/ErrorBanner";
 import BackLink from "src/components/forum/BackLink";
@@ -204,14 +205,19 @@ const Content = ({ ip, initialData }: Props) => {
   return <Info data={data} />;
 };
 
-const Page: NextPage<Props> = ({ ip, initialData }) => {
+const Page: NextPage<Props> = () => {
+  const router = useRouter();
+  const ip = router.query["ip"] as string | undefined;
+  if (!ip) {
+    return <LoadingBanner />;
+  }
   return (
     <Measured>
       <section className="center mv3">
         <Stack direction={["column"]} spacing="4">
           <BackLink to="/servers" />
 
-          <Content ip={ip} initialData={initialData} />
+          <Content ip={ip} />
         </Stack>
       </section>
 
@@ -222,18 +228,6 @@ const Page: NextPage<Props> = ({ ip, initialData }) => {
       `}</style>
     </Measured>
   );
-};
-
-export const getServerSideProps = async (
-  context: GetServerSidePropsContext
-): Promise<GetServerSidePropsResult<Props>> => {
-  const ip: string = context.params?.ip as string;
-  return {
-    props: {
-      ip: ip,
-      initialData: await getServer(ip),
-    },
-  };
 };
 
 export default Page;

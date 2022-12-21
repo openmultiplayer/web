@@ -7,14 +7,15 @@ import (
 	"strings"
 
 	"github.com/Southclaws/supervillain"
-	"github.com/openmultiplayer/web/server/src/api/auth/discord"
-	"github.com/openmultiplayer/web/server/src/api/auth/github"
-	"github.com/openmultiplayer/web/server/src/docsindex"
-	"github.com/openmultiplayer/web/server/src/resources/forum/post"
-	"github.com/openmultiplayer/web/server/src/resources/notification"
-	"github.com/openmultiplayer/web/server/src/resources/server"
-	"github.com/openmultiplayer/web/server/src/resources/user"
-	"github.com/openmultiplayer/web/server/src/web"
+
+	"github.com/openmultiplayer/web/app/resources/forum/post"
+	"github.com/openmultiplayer/web/app/resources/notification"
+	"github.com/openmultiplayer/web/app/resources/server"
+	"github.com/openmultiplayer/web/app/resources/user"
+	"github.com/openmultiplayer/web/app/services/docsindex"
+	"github.com/openmultiplayer/web/app/transports/api/auth/discord"
+	"github.com/openmultiplayer/web/app/transports/api/auth/github"
+	"github.com/openmultiplayer/web/internal/web"
 )
 
 // -
