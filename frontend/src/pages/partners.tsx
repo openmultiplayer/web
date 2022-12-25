@@ -102,16 +102,8 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "Skill Arena | SA:RP [Dupli Respekti, 3x za igrace <level 20]"
     },
     {
-      ip: "193.203.39.46:7777",
-      hn: "B-HOOD RPG | Battlepass | [2x Payday]",
-    },
-    {
       ip: "15.235.160.99:7777",
       hn: "open.mp | City of Manila Roleplay"
-    },
-    {
-      ip: "193.203.39.228:7777",
-      hn: "Phoenix Crowland - 23:00 Bonus - 1 Year Event",
     },
     {
       ip: "37.187.77.206:7777",
@@ -122,20 +114,8 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "DG Freeroam | beckzy's RPG [0.3.7 | 0.3.DL] (eLg)"
     },
     {
-      ip: "51.178.185.229:7777",
-      hn: "Diverse Gaming Freeroam / Roleplay [0.3.7 | 0.3.DL] (eLg)"
-    },
-    {
       ip: "37.230.228.164:7777",
       hn: "GHW Project | Autumn Festival Event"
-    },
-    {
-      ip: "51.38.115.171:7777",
-      hn: "City of Angels Roleplay | [0.3.DL]"
-    },
-    {
-      ip: "178.128.116.125:7777",
-      hn: "Indonesia Roleplay V2 | FiveM | OPEN.MP | New UCP | MODERN",
     },
     {
       ip: "152.70.186.35:7777",
@@ -143,11 +123,7 @@ const Page = ({ initialData, errorMessage }: Props) => {
     },
     {
       ip: "15.235.197.147:7777",
-      hn: "PSA-RP | OPEN BETA | 0.3 DL",
-    },
-    {
-      ip: "139.59.63.83:7777",
-      hn: "Mallu Gamers Community Roleplay",
+      hn: "PSA-RP ~ New Update [OMP/0.3 DL]",
     },
     {
       ip: "51.222.12.92:7777",
@@ -156,10 +132,6 @@ const Page = ({ initialData, errorMessage }: Props) => {
     {
       ip: "138.3.241.127:7777",
       hn: "rpg.game-time.lol (beta) || open.mp",
-    },
-    {
-      ip: "91.200.100.99:7777",
-      hn: "GTA:O | Open Freeroam | Deathmatch | Minigames",
     },
   ];
 
