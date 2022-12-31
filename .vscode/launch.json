@@ -10,7 +10,7 @@
       "request": "launch",
       "mode": "auto",
       "cwd": "${workspaceFolder}",
-      "program": "${workspaceFolder}/server",
+      "program": "${workspaceFolder}/cmd/server",
       "env": {},
       "args": []
     }
