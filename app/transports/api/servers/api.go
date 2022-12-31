@@ -10,6 +10,7 @@ import (
 	"github.com/openmultiplayer/web/app/services/authentication"
 	"github.com/openmultiplayer/web/app/services/queryer"
 	"github.com/openmultiplayer/web/app/services/serververify"
+	"github.com/openmultiplayer/web/internal/config"
 )
 
 type service struct {
@@ -28,6 +29,7 @@ func Build() fx.Option {
 			return &service{storer, queryer, verifier}
 		}),
 		fx.Invoke(func(
+			cfg config.Config,
 			as *authentication.State,
 			r chi.Router,
 			cacheClient *cache.Client,
@@ -44,7 +46,9 @@ func Build() fx.Option {
 			rtr.Use(
 				cors.Handler(cors.Options{
 					AllowedOrigins: []string{
-						"*", // Any browser instance
+						"http://localhost:3000", // Local development, `npm run dev`
+						cfg.PublicWebAddress,    // Live public website
+						"*",                     // Any browser instance
 					},
 					AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},

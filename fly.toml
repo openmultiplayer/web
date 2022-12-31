@@ -11,9 +11,10 @@ processes    = []
     auto_rollback        = true
 
 [env]
-    LOG_LEVEL   = "debug"
-    PACKAGES_DB = "/data/packages.db"
-    PRODUCTION  = "true"
+    LOG_LEVEL          = "debug"
+    PACKAGES_DB        = "/data/packages.db"
+    PRODUCTION         = "true"
+    PUBLIC_WEB_ADDRESS = "https://www.open.mp"
 
 [mounts]
     destination = "/data"
