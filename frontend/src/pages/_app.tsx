@@ -52,7 +52,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
         items={[
           { name: "Home", path: "/", exact: true },
           { name: "FAQ", path: "/faq" },
-          { name: "Forums", path: "/discussion" },
+          { name: "Forums", path: "https://forum.open.mp" },
           { name: "Servers", path: "/servers" },
           { name: "Partners", path: "/partners" },
           { name: "Docs", path: "/docs" },
