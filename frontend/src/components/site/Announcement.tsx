@@ -18,8 +18,8 @@ const Announcement: FC = () => {
 
         <Text>
           Please check out our{" "}
-          <a href="https://github.com/openmultiplayer/server-beta">beta test</a>{" "}
-          today!
+          <a href="https://github.com/openmultiplayer/server-beta">first release candidate</a>{" "}
+          today!  See the(" ")<a href="https://www.open.mp/blog/release-candidate-1">blog post</a>(" ")for more details.
         </Text>
       </Box>
     </Box>
