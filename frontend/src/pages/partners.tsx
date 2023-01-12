@@ -102,8 +102,16 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "Skill Arena | SA:RP [Dupli Respekti, 3x za igrace <level 20]"
     },
     {
+      ip: "193.203.39.46:7777",
+      hn: "B-HOOD RPG | BROTHERHOOD RPG"
+    },
+    {
       ip: "15.235.160.99:7777",
       hn: "open.mp | City of Manila Roleplay"
+    },
+    {
+      ip: "146.59.35.252:7777",
+      hn: "Macedonia RolePlay | www.macedonia-rp.com"
     },
     {
       ip: "37.187.77.206:7777",
@@ -122,8 +130,16 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "[HUN/ENG] Welcome to San Andreas",
     },
     {
+      ip: "45.67.156.96:7777",
+      hn: "[HUN] NORTH RPG [PC/ANDROID]",
+    },
+    {
       ip: "15.235.197.147:7777",
       hn: "PSA-RP ~ New Update [OMP/0.3 DL]",
+    },
+    {
+      ip: "51.222.11.204:7777",
+      hn: "SkR SA-MP Freeroam/Roleplay[open.mp]",
     },
     {
       ip: "51.222.12.92:7777",
