@@ -31,7 +31,7 @@ import Roads from "src/components/icons/Roads";
 const DownloadButton = () => {
   return (
     <Link
-      href="https://github.com/openmultiplayer/server-beta/releases"
+      href="https://github.com/openmultiplayer/open.mp/releases"
       _hover={{ textDecoration: "none" }}
       isExternal
     >
@@ -49,9 +49,9 @@ const DownloadButton = () => {
           outline: "2px solid #695AD3",
           transition: "outline 0.3s",
         }}
-        title="Beta Server has been launched"
+        title="open.mp is released"
       >
-        Download Beta
+        Download open.mp (server)
       </Button>
     </Link>
   );

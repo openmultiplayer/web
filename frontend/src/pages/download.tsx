@@ -92,13 +92,13 @@ const Downloads = () => {
                 textAlign={{ base: "center", md: "left" }}
                 maxW="30em"
               >
-                Download the server package below. This is an early beta release
-                so run in production environments at your own risk.
+                Download the server package below. Despite being out of beta,
+                still run in production environments at your own risk.
               </Text>
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <DownloadButton
-                    link="https://github.com/openmultiplayer/server-beta/releases"
+                    link="https://github.com/openmultiplayer/open.mp/releases"
                     title="Server package download"
                     text="Server"
                   />
