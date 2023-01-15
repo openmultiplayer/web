@@ -28,7 +28,7 @@ Ezt a funkciót egy filterszkriptben is fel lehet használni, hogy érzékelje, 
 
 ## Kapcsolodó visszhívások
 
-Ezek a visszahívások hasznosak lehetnek mivel valamilyen módon kapcsolódik ehhbez a visszahívások.
+Ezek a visszahívások hasznosak lehetnek mivel valamilyen módon kapcsolódik ehhez a visszahíváshoz.
 
 - [OnGameModeExit](OnGameModeExit): Ezt a visszahívást akkor hívja meg amikor egy játékmód leáll.
 - [OnFilterScriptInit](OnFilterScriptInit): Ezt a visszahívást akkor hívja meg amikor egy filterszkript elindul.
