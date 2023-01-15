@@ -36,7 +36,7 @@ Példa erre a túlzott RemoveBuildingForPlayer hívása az OnGameModeInit alatt,
 
 ## Kapcsolodó visszhívások
 
-Ezek a visszahívások hasznosak lehetnek mivel valamilyen módon kapcsolódik ehhbez a visszahívások.
+Ezek a visszahívások hasznosak lehetnek mivel valamilyen módon kapcsolódik ehhez a visszahíváshoz.
 
 [OnGameModeInit](OnGameModeInit): Ezt a visszahívást akkor hívja meg amikor egy játékmód elindul.
 [OnFilterScriptInit](OnFilterScriptInit): Ezt a visszahívást akkor hívja meg amikor egy filterszkript elindul.
