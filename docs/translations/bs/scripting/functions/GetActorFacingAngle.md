@@ -1,6 +1,6 @@
 ---
 title: GetActorFacingAngle
-description: Pogledaj ugao posmatranja actora.
+description: Dobij ugao posmatranja actora.
 tags: ["actor"]
 ---
 
