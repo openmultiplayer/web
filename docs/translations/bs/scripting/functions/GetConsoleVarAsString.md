@@ -42,13 +42,13 @@ Upišite 'varlist' u konzolu servera da biste prikazali listu dostupnih console 
 
 :::
 
-:::upozorenje
+:::warning
 
 Korištenje ove funkcije s bilo čim drugim osim stringom (integerom, booleanom ili floatom) će uzrokovati pad vašeg servera. Korištenje s nepostojećom console varijablom također će uzrokovati pad vašeg servera.
 
 :::
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [GetConsoleVarAsInt](GetConsoleVarAsInt): Dobij cjelobrojnu (integer) vrijednost varijable iz konzole.
 - [GetConsoleVarAsBool](GetConsoleVarAsBool): Dobij bool(ean) vrijednost varijable iz konzole.
