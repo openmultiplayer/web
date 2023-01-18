@@ -8,7 +8,7 @@ tags: ["actor"]
 
 ## Deskripcija
 
-Dobij najviši actorid kreiran na serveru. Imajte na umu da je u SA:MP-u ova funkcija pokvarena i da će returnati `0` čak i kada nema actora. fixes.inc i open.mp ispravljaju ovo kako bi returnali `-1`, ali također odbijaju funkciju u korist `MAX_ACTORS` ili `foreach` pluginu.
+Dobij najviši actorid kreiran na serveru. Imajte na umu da je u SA:MP-u ova funkcija pokvarena i da će returnati `0` čak i kada nema actora. fixes.inc i open.mp ispravljaju ovo te returnaju (vraćaju) `-1`, ali također odbijaju funkciju u korist `MAX_ACTORS` ili `foreach` plugina.
 
 ## Primjeri
 
@@ -25,7 +25,7 @@ SetAllActorsHealth(Float:health)
 }
 ```
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [CreateActor](CreateActor): Kreiraj actora (statički NPC).
 - [IsValidActor](isValidActor): Provjerite da li je ID actora validan.
