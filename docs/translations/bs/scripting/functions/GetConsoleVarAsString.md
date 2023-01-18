@@ -1,12 +1,12 @@
 ---
 title: GetConsoleVarAsString
-description: Dobij vrijednost string-a console varijable.
+description: Dobij string vrijednost varijable iz konzole.
 tags: []
 ---
 
 ## Deskripcija
 
-Dobij vrijednost string-a console varijable.
+Dobij string vrijednost varijable iz konzole.
 
 | Ime             | Deskripcija                                                     |
 | --------------- | --------------------------------------------------------------- |
@@ -29,7 +29,7 @@ public OnGameModeInit()
 }
 ```
 
-## Bilješke
+## Zabilješke
 
 :::tip
 
@@ -50,5 +50,5 @@ Korištenje ove funkcije s bilo čim drugim osim stringom (integerom, booleanom 
 
 ## Povezane Funkcije
 
-- [GetConsoleVarAsInt](GetConsoleVarAsInt): Postavi server varijablu kao integer.
-- [GetConsoleVarAsBool](GetConsoleVarAsBool): Postavi server varijablu kao booleaan.
+- [GetConsoleVarAsInt](GetConsoleVarAsInt): Dobij cjelobrojnu (integer) vrijednost varijable iz konzole.
+- [GetConsoleVarAsBool](GetConsoleVarAsBool): Dobij bool(ean) vrijednost varijable iz konzole.
