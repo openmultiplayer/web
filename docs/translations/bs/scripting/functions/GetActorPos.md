@@ -32,6 +32,6 @@ new Float:x, Float:y, Float:z;
 GetActorPos(actorid, x, y, z);
 ```
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [SetActorPos](SetActorPos): Postavi poziciju actora.
