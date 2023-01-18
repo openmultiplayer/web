@@ -30,7 +30,7 @@ public OnGameModeInit()
 }
 ```
 
-## Bilješke
+## Zabilješke
 
 :::tip
 
