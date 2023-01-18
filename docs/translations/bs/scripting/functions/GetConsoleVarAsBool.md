@@ -40,5 +40,5 @@ Upišite 'varlist' u konzolu servera da biste prikazali listu dostupnih console 
 
 ## Srodne Funkcije
 
-- [GetConsoleVarAsString](GetConsoleVarAsString): Postavi server varijablu kao string.
-- [GetConsoleVarAsInt](GetConsoleVarAsInt): Postavi server varijablu kao cijeli broj (integer).
+- [GetConsoleVarAsString](GetConsoleVarAsString): Dobij string vrijednost varijable iz konzole.
+- [GetConsoleVarAsInt](GetConsoleVarAsInt): Dobij cjelobrojnu (integer) vrijednost varijable iz konzole.
