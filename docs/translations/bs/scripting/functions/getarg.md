@@ -17,7 +17,7 @@ Dobij argument koji je proslijeđen funkciji.
 
 ## Returns
 
-Value argumenta.
+Vrijednost argumenta.
 
 ## Primjeri
 
@@ -35,7 +35,7 @@ public OnFilterScriptInit()
 // Output: 7. Četvrti argument (indeks 3) je 7.
 ```
 
-## Povezane Funkcije
+## Srodne Funkcije
 
-- [numargs](numargs): Returna broj argumenata.
+- [numargs](numargs): Returna (Vraća) broj argumenata.
 - [setarg](setarg): Postavlja argument.
