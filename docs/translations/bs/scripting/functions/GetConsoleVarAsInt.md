@@ -1,12 +1,12 @@
 ---
 title: GetConsoleVarAsInt
-description: Dobij vrijednost integer-a console varijable.
+description: Dobij cjelobrojnu (integer) vrijednost varijable iz konzole.
 tags: []
 ---
 
 ## Deskripcija
 
-Dobij vrijednost integer-a console varijable.
+Dobij cjelobrojnu (integer) vrijednost varijable iz konzole.
 
 | Ime             | Deskripcija                                           |
 | --------------- | ----------------------------------------------------- |
@@ -23,7 +23,7 @@ new serverPort = GetConsoleVarAsInt("port");
 printf("Server Port: %i", serverPort);
 ```
 
-## Bilješke
+## Zabilješke
 
 :::tip
 
@@ -31,7 +31,7 @@ Upišite 'varlist' u konzolu servera da biste prikazali listu dostupnih console 
 
 :::
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [GetConsoleVarAsString](GetConsoleVarAsString): Postavi server varijablu kao string.
 - [GetConsoleVarAsBool](GetConsoleVarAsBool): Postavi server varijablu kao boolean.
