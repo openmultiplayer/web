@@ -37,6 +37,6 @@ if (GetActorVirtualWorld(MyActor) == 69)
 }
 ```
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [SetActorVirtualWorld](SetActorVirtualWorld): Postavi wirtual world actoru.
