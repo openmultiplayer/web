@@ -33,5 +33,5 @@ Upišite 'varlist' u konzolu servera da biste prikazali listu dostupnih console 
 
 ## Srodne Funkcije
 
-- [GetConsoleVarAsString](GetConsoleVarAsString): Postavi server varijablu kao string.
-- [GetConsoleVarAsBool](GetConsoleVarAsBool): Postavi server varijablu kao boolean.
+- [GetConsoleVarAsString](GetConsoleVarAsString): Dobij string vrijednost varijable iz konzole.
+- [GetConsoleVarAsBool](GetConsoleVarAsBool): Dobij bool(ean) vrijednost varijable iz konzole.
