@@ -42,6 +42,6 @@ public OnPlayerUpdate(playerid)
 }
 ```
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [GetPlayerAnimationIndex](GetPlayerAnimationIndex): Returna indeks bilo koje pokrenute primijenjene animacije.
