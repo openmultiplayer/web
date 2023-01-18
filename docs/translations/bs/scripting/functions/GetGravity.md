@@ -20,12 +20,12 @@ printf("Treutna gravitacija servera: %f", GetGravity());
 
 ## Bilješke
 
-:::upozorenje
+:::warning
 
-Ova funkcija nije defineovana po defaultu. Dodajte 'native Float:GetGravity();' ispod includea a_samp.inc kako bi ga mogli koristiti.
+Ova funkcija nije definisana po zadanim postavkama. Dodajte 'native Float:GetGravity();' ispod includea a_samp.inc kako bi je mogli koristiti.
 
 :::
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [SetGravity](SetGravity): Postavite globalnu gravitaciju servera.
