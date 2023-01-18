@@ -40,7 +40,7 @@ public OnGameModeInit()
 }
 ```
 
-## Related Functions
+## Srodne Funkcije
 
 - [CreateActor](CreateActor): Kreiranje actora (statički NPC).
 - [SetActorHealth](SetActorHealth): Postavite health actoru.
