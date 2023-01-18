@@ -18,13 +18,13 @@ SendClientMessage(playerid, 0xFFFFFFFF, str);
 
 ## Bilješke
 
-:::upozorenje
+:::warning
 
 Ova funkcija se ne može koristiti umjesto MAX_PLAYERS. Ne može se koristiti u vrijeme kompajlovanja (npr. za array sizes). MAX_PLAYERS uvijek treba redefinirati na ono što će biti var 'maxplayers' ili više. Pogledajte funkciju MAX_PLAYERS za više informacija.
 
 :::
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [GetPlayerPoolSize](GetPlayerPoolSize): Dobij najveći ID igrača koji je povezan na server.
 - [IsPlayerConnected](IsPlayerConnected): Provjeri da li je igrač povezan na server.
