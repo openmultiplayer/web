@@ -6,7 +6,7 @@ tags: ["actor"]
 
 <VersionWarn version='SA-MP 0.3.7' />
 
-## Description
+## Deskripcija
 
 Dobij health actora
 

@@ -6,7 +6,7 @@ tags: []
 
 <VersionWarn version='SA-MP 0.3b' />
 
-## Description
+## Deskripcija
 
 Dobij library/ime animacije za indeks.
 

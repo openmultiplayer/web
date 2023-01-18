@@ -6,7 +6,7 @@ tags: []
 
 <VersionWarn version='SA-MP 0.3.7' />
 
-## Description
+## Deskripcija
 
 Dobij id virtual world-a određenog actora.
 
