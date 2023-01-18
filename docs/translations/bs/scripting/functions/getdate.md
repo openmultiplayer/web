@@ -29,6 +29,6 @@ printf("%02d/%02d/%d", Day, Month, Year);
 printf("Broj dana od početka godine: %d", Days);
 ```
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [gettime](gettime): Dobij trenutno vrijeme servera kao unix timestamp.
