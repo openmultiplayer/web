@@ -1,12 +1,12 @@
 ---
 title: GetConsoleVarAsBool
-description: Dobij boolean value console varijable.
+description: Dobij bool(ean) vrijednost varijable iz konzole.
 tags: []
 ---
 
 ## Deskripcija
 
-Dobij boolean value console varijable.
+Dobij bool(ean) vrijednost varijable iz konzole.
 
 | Ime             | Deskripcija                                           |
 | --------------- | ----------------------------------------------------- |
@@ -38,7 +38,7 @@ Upišite 'varlist' u konzolu servera da biste prikazali listu dostupnih console 
 
 :::
 
-## Povezane Funkcije
+## Srodne Funkcije
 
 - [GetConsoleVarAsString](GetConsoleVarAsString): Postavi server varijablu kao string.
 - [GetConsoleVarAsInt](GetConsoleVarAsInt): Postavi server varijablu kao cijeli broj (integer).
