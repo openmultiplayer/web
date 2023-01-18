@@ -6,7 +6,7 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 ## Eszközök
 
 - **[Community Compiler](https://github.com/pawn-lang/compiler/)** - A fordító nagymértékben frissített változata, számos javítással és fejlesztéssel.
-- **[sampctl](http://sampctl.com/)** - Csomagkezelő, könyvtárak telepítéséhez és a szerver futtatásához.
+- **[sampctl](https://github.com/Southclaws/sampctl)** - Csomagkezelő, könyvtárak telepítéséhez és a szerver futtatásához.
 - **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner/)** - Eszköz a kiszolgáló könnyű verziójának futtatásához közvetlenül a parancssorból (nincs szükség server.cfg fájlra) a beépülő modulok teszteléséhez.
 - **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)** - Pawn automatikus kiegészítés a Sublime szöveghez.
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn/)** - Pawn autocomplet a Visual Studio Code-hoz.
@@ -47,7 +47,7 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 ## Crypto bővítmények
 
 - **[whirlpool](https://github.com/Southclaws/samp-whirlpool/)** - Whirlpool Kriptográfiai bővítmény a SA:MP számára.
-- **[bcrypt](https://github.com/LassiR/bcrypt-samp/)** - Bcrypt Kriptográfiai bővítmény a SA:MP számára.
+- **[bcrypt](https://github.com/Sreyas-Sreelal/samp-bcrypt)** - Bcrypt Kriptográfiai bővítmény a SA:MP számára.
 - **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - SHA512 Kriptográfiai bővítmény a SA:MP számára.
 
 ## Játék módok
