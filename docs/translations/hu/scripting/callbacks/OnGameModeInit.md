@@ -13,12 +13,12 @@ Ez a visszahívás akkor indul el, amikor a játékmód elindul.
 ```c
 public OnGameModeInit()
 {
-    print("Gamemode started!");
+    print("Játékmód elindítva!");
     return 1;
 }
 ```
 
-## Notes
+## Megjegyzések
 
 :::tip
 
@@ -26,4 +26,10 @@ Ezt a funkciót egy filterszkriptben is fel lehet használni, hogy érzékelje, 
 
 :::
 
-## Related Functions
+## Kapcsolodó visszhívások
+
+Ezek a visszahívások hasznosak lehetnek mivel valamilyen módon kapcsolódik ehhez a visszahíváshoz.
+
+- [OnGameModeExit](OnGameModeExit): Ezt a visszahívást akkor hívja meg amikor egy játékmód leáll.
+- [OnFilterScriptInit](OnFilterScriptInit): Ezt a visszahívást akkor hívja meg amikor egy filterszkript elindul.
+- [OnFilterSciptExit](OnFilterScriptExit): Ezt a visszahívást akkor hívja meg amikor egy filterszkript leáll.
