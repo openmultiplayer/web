@@ -1,6 +1,6 @@
 ---
 title: OnPlayerFinishedDownloading
-description: This callback is called when a player finishes downloading custom models.
+description: callback ini memanggil jika player sudah selesai mendownload custom models.
 tags: ["player"]
 ---
 
@@ -8,16 +8,16 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player finishes downloading custom models. For more information on how to add custom models to your server, see the [release thread](https://sampforum.blast.hk/showthread.php?tid=644105) and [this tutorial](https://sampforum.blast.hk/showthread.php?tid=644123).
+callback ini memanggil jika player sudah selesai mendownload custom models. Untuk informasi lebih lanjut cara menambahkan custom models ke dalam servermu, Kunjungi [release thread](https://sampforum.blast.hk/showthread.php?tid=644105) and [this tutorial](https://sampforum.blast.hk/showthread.php?tid=644123).
 
 | Name         | Description                                                                    |
 | ------------ | ------------------------------------------------------------------------------ |
-| playerid     | The ID of the player that finished downloading custom models.                  |
-| virtualworld | The ID of the virtual world the player finished downloading custom models for. |
+| playerid     | ID dari player yang sudah mendownload custom models.                  		    |   
+| virtualworld | ID dari virtual world jika player selesai mendownload custom models. 		    |
 
 ## Returns
 
-This callback does not handle returns.
+callback ini tidak menangani returns.
 
 ## Examples
 
@@ -33,14 +33,14 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 :::tip
 
-This callback is called every time a player changes virtual worlds, even if there are no custom models present in that world.
+Callback ini terpanggil sepanjang waktu jika player berganti virtual world, meskipun tidak ada custom models di world itu.
 
 :::
 
 ## Related Callbacks
 
-The following callbacks might be useful, as they're related to this callback in one way or another.
+Callback berikut mungkin berguna, karena terkait dengan callback ini dalam satu atau lain cara
 
-- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
-- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server. 
-- [OnIncomingConnection](OnIncomingConnection): This callback is called when a player is attempting to connect to the server. 
+- [OnPlayerConnect](OnPlayerConnect): Callback ini terpanggil jika player terhubung kedalam server.
+- [OnPlayerDisconnect](OnPlayerDisconnect): Callback ini terpanggil jika player keluar dari server. 
+- [OnIncomingConnection](OnIncomingConnection): Callback ini terpanggil jika player mencoba terhubung kedalam server. 
