@@ -20,7 +20,7 @@ Sets the angular X, Y and Z velocity of a vehicle
 | --------- | --------------------------------------------------- |
 | vehicleid | The ID of the vehicle to set the velocity of.       |
 | Float:X   | The amount of velocity in the angular X direction.  |
-| Float:Y   | The amount of velocity in the angular Y direction . |
+| Float:Y   | The amount of velocity in the angular Y direction.  |
 | Float:Z   | The amount of velocity in the angular Z direction.  |
 
 ## Returns
