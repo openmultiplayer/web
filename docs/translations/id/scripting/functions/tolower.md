@@ -1,6 +1,6 @@
 ---
 title: tolower
-description: Function ini mengubah sebuah huruf menjadi huruf kecil.
+description: Fungsi ini mengubah sebuah huruf menjadi huruf kecil.
 tags: ["string"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["string"]
 
 ## Deskripsi
 
-Function ini mengubah sebuah huruf menjadi huruf kecil.
+Fungsi ini mengubah sebuah huruf menjadi huruf kecil.
 
 | Nama | Deskripsi                                  |
 | ---- | ------------------------------------------ |

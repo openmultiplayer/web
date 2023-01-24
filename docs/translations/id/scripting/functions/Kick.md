@@ -14,7 +14,7 @@ Kick player dari server. Player harus keluar dari game dan re-connect jika merek
 
 ## Returns
 
-Function ini selalu me-return 1, walaupun jika function gagal di eksekusi (tidak ada player tersebut didalam server).
+Fungsi ini selalu me-return 1, walaupun fungsi gagal di eksekusi (tidak ada player tersebut didalam server).
 
 ## Catatan
 

@@ -14,7 +14,7 @@ Ban player yang sedang berada di dalam server. Player tersebut tidak bisa join l
 
 ## Returns
 
-Function ini tidak me-return value yang spesifik.
+Fungsi ini tidak me-return value yang spesifik.
 
 ## Contoh
 

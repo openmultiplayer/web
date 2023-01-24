@@ -33,7 +33,7 @@ public OnGameModeInit()
 }
 ```
 
-## Related Functions
+## Fungsi Terkait
 
 - [floatsin](floatsin): Dapatkan sinus dari sudut tertentu.
 - [floatcos](floatcos): Dapatkan cosinus dari sudut tertentu.

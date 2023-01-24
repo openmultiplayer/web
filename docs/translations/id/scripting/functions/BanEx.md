@@ -15,7 +15,7 @@ Ban player dengan alasan.
 
 ## Returns
 
-Function ini tidak me-return value yang spesifik.
+Fungsi ini tidak me-return value yang spesifik.
 
 ## Examples
 
