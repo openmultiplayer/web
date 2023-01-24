@@ -9,7 +9,7 @@ tags: ["administration"]
 Ban player yang sedang berada di dalam server. Player tersebut tidak bisa join lagi selamanya. Ban Player berbasis IP, dan akan disimpan di dalam format file samp.ban di dalam direktori root server. BanEx dapat digunakan untuk memberi alasan mengapa player tersebut di ban. IP ban dapat di tambah/di hapus menggunakan command RCON banip dan unbanip (SendRconCommand).
 
 | Nama     | Deskripsi                  |
-| -------- | ---------------------------- |
+| -------- | -------------------------- |
 | playerid | ID player yang mau di ban. |
 
 ## Returns

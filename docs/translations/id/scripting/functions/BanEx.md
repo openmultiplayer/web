@@ -10,8 +10,8 @@ Ban player dengan alasan.
 
 | Name     | Description                  |
 | -------- | ---------------------------- |
-| playerid | ID player yang mau di ban. |
-| reason   | Alasan ban.      |
+| playerid | ID player yang mau di ban.   |
+| reason   | Alasan ban.                  |
 
 ## Returns
 
