@@ -67,7 +67,7 @@ Pada versi SA-MP 0.3x, tindakan apa pun yang diambil langsung sebelum Ban() (sep
 
 :::
 
-## Related Functions
+## Fungsi Terkait
 
 - [Ban](Ban): Ban player yang sedang berada di dalam server.
 - [Kick](Kick): Kick player dari server.

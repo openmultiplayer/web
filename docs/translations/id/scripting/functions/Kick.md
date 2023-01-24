@@ -55,7 +55,7 @@ public DelayedKick(playerid)
 }
 ```
 
-## Related Functions
+## Fungsi Terkait
 
 - [Ban](Ban): Ban player yang sedang berada di dalam server.
 - [BanEx](BanEx): Ban player dengan alasan.

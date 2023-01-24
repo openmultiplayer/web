@@ -62,7 +62,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 Pada versi SA-MP 0.3x, tindakan apa pun yang diambil langsung sebelum Ban() (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player. Timer harus digunakan untuk menunda ban.
 :::
 
-## Related Functions
+## Fungsi Terkait
 
 - [BanEx](BanEx): Ban player dengan alasan.
 - [Kick](Kick): Kick player dari server.
