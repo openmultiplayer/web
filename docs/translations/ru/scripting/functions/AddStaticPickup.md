@@ -48,6 +48,6 @@ public OnGameModeInit()
 
 ## Связанные функции
 
-- [CreatePickup](CreatePickup): Создать пикап..
+- [CreatePickup](CreatePickup): Создать пикап.
 - [DestroyPickup](DestroyPickup): Уничтожить пикап.
 - [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Вызывается когда игрок подбирает пикап.
