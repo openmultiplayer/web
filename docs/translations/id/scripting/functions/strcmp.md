@@ -1,6 +1,6 @@
 ---
 title: strcmp
-description: Membanding dua string untuk mengecek apakah mereka sama.
+description: Fungsi ini membandingkan kedua string untuk mengecek apakah mereka sama.
 tags: ["string"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["string"]
 
 ## Deskripsi
 
-Membanding dua string untuk mengecek apakah mereka sama.
+Fungsi ini membandingkan kedua string untuk mengecek apakah mereka sama.
 
 | Nama                  | Deskripsi                                                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |

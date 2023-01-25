@@ -18,6 +18,6 @@ Fungsi ini dapat digunakan untuk mengganti GetTickCount, pada saat mengembalikan
 
 Jumlah milidetik sejak server menyala. Untuk sel 32-bit, hitungan ini akan melebihi setelah kira-kira 24 hari operasi berkelanjutan.
 
-## Related Functions
+## Fungsi Terkait
 
 - [GetTickCount](GetTickCount): Mendapatkan waktu uptime server.

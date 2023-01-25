@@ -1,16 +1,16 @@
 ---
 title: Kick
-description: Kick player dari server. Player harus keluar dari game dan re-connect jika mereka masih ingin lanjut bermain.
+description: Tendang player dari server. Player harus keluar dari game dan re-connect jika mereka masih ingin lanjut bermain.
 tags: ["administration"]
 ---
 
 ## Deskripsi
 
-Kick player dari server. Player harus keluar dari game dan re-connect jika mereka masih ingin lanjut bermain.
+Tendang player dari server. Player harus keluar dari game dan re-connect jika mereka masih ingin lanjut bermain.
 
 | Nama     | Deskripsi                     |
 | -------- | ----------------------------- |
-| playerid | ID player yang ingin di kick. |
+| playerid | ID player yang ingin ditendang. |
 
 ## Returns
 
@@ -35,12 +35,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/kickme", true) == 0)
     {
-        // Kick player yang menggunakan command ini.
+        // Tendang player yang menggunakan command ini.
 
         // Pertama, kirim player nya sebuah pesan.
-        SendClientMessage(playerid, 0xFF0000FF, "You have been kicked!");
+        SendClientMessage(playerid, 0xFF0000FF, "You have been Tendanged!");
 
-        // Mem-kick player nya sedetik kemudian menggunakan timer.
+        // Kemudian, buat sebuah timer untuk menunda fungsi Kick selama sedetik
         SetTimerEx("DelayedKick", 1000, false, "i", playerid);
         return 1;
     }

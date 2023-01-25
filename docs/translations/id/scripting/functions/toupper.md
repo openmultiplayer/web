@@ -31,4 +31,4 @@ public OnPlayerText(playerid, text[])
 
 ## Fungsi Terkait
 
-- [tolower](tolower)
+- [tolower](tolower): Fungsi ini mengubah sebuah huruf menjadi huruf kecil.

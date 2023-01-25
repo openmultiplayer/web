@@ -20,7 +20,7 @@ Fungsi ini menggabungkan dua buah string menjadi sebuah string.
 
 Panjang dari Hasil string yang telah digabungkan.
 
-## Examples
+## Contoh
 
 ```c
 new string[40] = "Hello";
