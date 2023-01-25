@@ -33,7 +33,7 @@ strdel(string, 0, 37); // string menjadi "this"
 - [strfind](strfind): Mencari sebuah string di string lainnya.
 - [strins](strins): Memasukkan teks kedalam sebuah string.
 - [strlen](strlen): Mendapatkan panjang dari sebuah string.
-- [strmid](strmid): Mengambil bagian dari sebuah string ke string lainnya.
+- [strmid](strmid): Mengekstrak bagian dari sebuah string ke string lainnya.
 - [strpack](strpack): Membungkus sebuah string menjadi string baru.
 - [strval](strval): Mengkonversi sebuah string menjadi integer.
 - [strcat](strcat): Menggabungkan dua buah string menjadi sebuah string.

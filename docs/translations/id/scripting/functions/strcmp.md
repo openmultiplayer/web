@@ -10,11 +10,11 @@ tags: ["string"]
 
 Fungsi ini membandingkan kedua string untuk mengecek apakah mereka sama.
 
-| Nama                  | Deskripsi                                                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| string1               | String pertama yang akan di bandingkan.                                                                                                                |
-| string2               | String kedua yang akan di bandingkan.                                                                                                               |
-| ignorecase (opsional) | Saat di set true, besar/kecil huruf tidak mempengaruhi - HeLLo sama dengan Hello. Saat di set false, mereka berbeda.                                   |
+| Nama                  | Deskripsi                                                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| string1               | String pertama yang akan di bandingkan.                                                                                                      |
+| string2               | String kedua yang akan di bandingkan.                                                                                                        |
+| ignorecase (opsional) | Saat di set true, besar/kecil huruf tidak mempengaruhi - HeLLo sama dengan Hello. Saat di set false, mereka berbeda.                         |
 | length (opsional)     | Saat panjang nya di set, karakter pertama x akan di bandingkan - "Hello" dan "Hell No" dengan panjang nya 4 akan melaporkan string nya sama. |
 
 ## Returns
@@ -27,7 +27,7 @@ Fungsi ini membandingkan kedua string untuk mengecek apakah mereka sama.
 new string1[] = "Hello World";
 new string2[] = "Hello World";
 
-// Cek apakah string nya sama 
+// Cek apakah string nya sama
 if (!strcmp(string1, string2))
 
 new string3[] = "Hell";
@@ -58,7 +58,7 @@ Fungsi ini me-return 0 jika stringnya kosong. Cek string kosong dengan isnull().
 - [strdel](strdel): Menghapus bagian dari sebuah string.
 - [strins](strins): Memasukkan teks kedalam sebuah string.
 - [strlen](strlen): Mendapatkan panjang dari sebuah string.
-- [strmid](strmid): Mengambil bagian dari sebuah string ke string lainnya.
+- [strmid](strmid): Mengekstrak bagian dari sebuah string ke string lainnya.
 - [strpack](strpack): Membungkus sebuah string menjadi string baru.
 - [strval](strval): Mengkonversi sebuah string menjadi integer.
 - [strcat](strcat): Menggabungkan dua buah string menjadi sebuah string.
