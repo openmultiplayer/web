@@ -1,16 +1,16 @@
 ---
 title: Ban
-description: Ban player yang sedang berada di dalam server.
+description: Melarang player yang sedang berada di dalam server.
 tags: ["administration"]
 ---
 
 ## Deskripsi
 
-Ban player yang sedang berada di dalam server. Player tersebut tidak bisa join lagi selamanya. Ban Player berbasis IP, dan akan disimpan di dalam format file samp.ban di dalam direktori root server. BanEx dapat digunakan untuk memberi alasan mengapa player tersebut di ban. IP ban dapat di tambah/di hapus menggunakan command RCON banip dan unbanip (SendRconCommand).
+Melarang player yang sedang berada di dalam server. Player tersebut tidak bisa bergabung lagi selamanya. Pelarangan pemain berbasis IP ini akan disimpan di dalam format file samp.ban di dalam direktori root server. BanEx dapat digunakan untuk memberi alasan mengapa player tersebut di ban. IP ban dapat di tambah/di hapus menggunakan command RCON banip dan unbanip (SendRconCommand).
 
-| Nama     | Deskripsi                  |
-| -------- | -------------------------- |
-| playerid | ID player yang mau di ban. |
+| Nama     | Deskripsi                              |
+| -------- | -------------------------------------- |
+| playerid | ID player yang ingin dilarang bermain. |
 
 ## Returns
 
@@ -64,5 +64,5 @@ Pada versi SA-MP 0.3x, tindakan apa pun yang diambil langsung sebelum Ban() (sep
 
 ## Fungsi Terkait
 
-- [BanEx](BanEx): Ban player dengan alasan.
+- [BanEx](BanEx): Melarang player dengan alasan.
 - [Kick](Kick): Kick player dari server.

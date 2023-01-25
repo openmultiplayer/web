@@ -31,4 +31,4 @@ public OnPlayerText(playerid, text[])
 
 ## Fungsi Terkait
 
-- [toupper](toupper)
+- [toupper](toupper): Fungsi ini mengubah sebuah huruf menjadi huruf besar.

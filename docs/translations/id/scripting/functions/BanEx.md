@@ -1,17 +1,17 @@
 ---
 title: BanEx
-description: Ban player dengan alasan.
+description: Melarang player dengan alasan.
 tags: ["administration"]
 ---
 
 ## Description
 
-Ban player dengan alasan.
+Melarang player dengan alasan.
 
-| Name     | Description                  |
-| -------- | ---------------------------- |
-| playerid | ID player yang mau di ban.   |
-| reason   | Alasan ban.                  |
+| Name     | Description                            |
+| -------- | -------------------------------------- |
+| playerid | ID player yang ingin dilarang bermain. |
+| reason   | Alasan dilarang bermain.               |
 
 ## Returns
 
@@ -24,7 +24,7 @@ public OnPlayerCommandText( playerid, cmdtext[] )
 {
     if (!strcmp(cmdtext, "/banme", true))
     {
-        // Bans the player who executed this command and includes a reason ("Request")
+        // Melarang player yang mengeksekusi perintah ini dengan mencantumkan alasan ("Request")
         BanEx(playerid, "Request");
         return 1;
     }
@@ -42,7 +42,7 @@ public BanExPublic(playerid, reason[])
 
 stock BanExWithMessage(playerid, color, message[], reason[])
 {
-    //reason - Alasan ban yang telah digunakan BanEx.
+    //reason - Alasan larangan yang telah digunakan BanEx.
     SendClientMessage(playerid, color, message);
     SetTimerEx("BanExPublic", 1000, false, "ds", playerid, reason);
 }
@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/banme", true) == 0)
     {
-        //Ban player yang menggunakan command ini.
+        //Larang player yang menggunakan perintah ini.
         BanExWithMessage(playerid, 0xFF0000FF, "Anda telah di Banned!", "Request");
         return 1;
     }
@@ -63,11 +63,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Pada versi SA-MP 0.3x, tindakan apa pun yang diambil langsung sebelum Ban() (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player. Timer harus digunakan untuk menunda ban.
+Pada versi SA-MP 0.3x, tindakan apa pun yang diambil langsung sebelum Ban() (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player, oleh karena itu timer harus digunakan untuk menunda pelarangan
 
 :::
 
 ## Fungsi Terkait
 
-- [Ban](Ban): Ban player yang sedang berada di dalam server.
+- [Ban](Ban): Melarang player yang sedang berada di dalam server.
 - [Kick](Kick): Kick player dari server.
