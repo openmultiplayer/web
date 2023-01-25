@@ -1,6 +1,6 @@
 ---
 title: AddSimpleModel
-description: Menambahkan sebuah simple object model untuk didownload.
+description: Menambahkan sebuah simpel objek model untuk diunggah.
 tags: []
 ---
 
@@ -8,7 +8,7 @@ tags: []
 
 ## Description
 
-Menambahkan simple custom object model untuk didownload. Model file bawaanya terletak di Documents\GTA San Andreas User Files\SAMP\cache milik player bernama IP dan PORT dalam bentuk nama CRC.
+Menambahkan model simpel kustom objek diunggah. Model file bawaanya terletak pada folder Documents\GTA San Andreas User Files\SAMP\cache milik player bernama IP dan PORT dalam bentuk nama CRC.
 
 | Name         | Description                                                                                                                 |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------- |
@@ -23,6 +23,7 @@ Menambahkan simple custom object model untuk didownload. Model file bawaanya ter
 1: Function berhasil dijalankan.
 
 0: Function gagal dijalankan
+
 ## Examples
 
 ```c
@@ -41,7 +42,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 :::tip
 
-`useartwork` harus diaktifkan terlebih dahulu dalam pengaturan server agar ini berfungsi Ketika virtualworld diatur, model akan didownload setelah player memasuki world tertentu
+`useartwork` harus diaktifkan terlebih dahulu dalam pengaturan server agar dapat berfungsi ketika virtualworld diatur, model akan didownload setelah player memasuki world tertentu
 
 :::
 
