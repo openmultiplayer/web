@@ -126,6 +126,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "GHW Project | Autumn Festival Event"
     },
     {
+      ip: "51.38.115.171:7777",
+      hn: "City of Angels Roleplay | [0.3.DL]"
+    },
+    {
       ip: "152.70.186.35:7777",
       hn: "[HUN/ENG] Welcome to San Andreas",
     },
@@ -140,6 +144,10 @@ const Page = ({ initialData, errorMessage }: Props) => {
     {
       ip: "51.222.11.204:7777",
       hn: "SkR SA-MP Freeroam/Roleplay[open.mp]",
+    },
+    {
+      ip: "159.65.158.139:7777",
+      hn: "Mallu Gamers Community Roleplay"
     },
     {
       ip: "51.222.12.92:7777",
