@@ -1258,6 +1258,54 @@ parser will attempt to use the user-defined operator rather than the default
 “%” operator. By not implementing the operator, the parser will subsequently issue an error message.
 
 ---
+### • Call by Value and Call by Reference
+In Pawn, function arguments can be passed in two ways: by value and by reference.
+#### Call by value
+In this method, the value of the variable is passed to the function. A copy of the variable is created and the function operates on the copy, not the original variable. Any changes made to the variable inside the function do not affect the original variable.
+
+```c
+swap(a, b){
+	new c = a;
+	a = b;
+	b = c;
+}
+
+main(){
+	new x = 10, y = 20;
+	printf("The value of x is %d and value of y is %d, before calling 'swap'.", x, y);
+	swap(x, y);
+	printf("The value of x is %d and value of y is %d, after calling 'swap'.", x, y);
+}
+```
+Output
+```
+The value of x is 10 and value of y is 20, before calling 'swap'.
+The value of x is 10 and value of y is 20, after calling 'swap'.
+```
+
+#### Call by reference
+In this method, the address of the variable is passed to the function. The function operates on the original variable and any changes made to the variable inside the function are reflected in the original variable.
+```c
+swap(&a, &b){
+	new c = a;
+	a = b;
+	b = c;
+}
+
+main(){
+	new x = 10, y = 20;
+	printf("The value of x is %d and value of y is %d, before calling 'swap'.", x, y);
+	swap(x, y);
+	printf("The value of x is %d and value of y is %d, after calling 'swap'.", x, y);
+}
+```
+Output
+```
+The value of x is 10 and value of y is 20, before calling 'swap'.
+The value of x is 20 and value of y is 10, after calling 'swap'.
+```
+
+---
 
 `User-defined operators: 86`
 
