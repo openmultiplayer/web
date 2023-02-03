@@ -53,6 +53,6 @@ Saat ini tidak ada batasan kapan Anda dapat memanggil fungsi ini, tetapi perhati
 
 :::
 
-## Function yang berelasi
+## Fungsi Terkait
 
 - [SetPlayerSkin](SetPlayerSkin): Mengatur skin player.
