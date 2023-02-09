@@ -122,16 +122,16 @@ Simple structured logger which provides a simple set of functions for logging an
 - **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - Isso é o minimo que você precisa para desenvolver plugins.
 - **[sampgdk](https://github.com/Zeex/sampgdk)** - Implementação C/C++ para desenvolvimento de gamemodes para SA-MP.
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - Implementação C# para desenvolvimento de gamemodes SA-MP.
-- **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - Implementação C# para o desenovolvimento de plugins SA-MP.
-- **[sampgo](https://github.com/sampgo/sampgo)** - Implementação Go Language para o desenovolvimento de gamemodes/plugins SA-MP.
+- **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - Implementação C# para o desenvolvimento de plugins SA-MP.
+- **[sampgo](https://github.com/sampgo/sampgo)** - Implementação Go Language para o desenvolvimento de gamemodes/plugins SA-MP.
 - **[samp-node](https://github.com/AmyrAhmady/samp-node)** -  Implementação Javascript/Typescript para desenvolvimento de gamemodes SA-MP.
 - **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Implementação Java  para desenvolvimento de gamemodes SA-MP.
-- **[pySAMP](https://github.com/habecker/PySAMP)** - Implementação Python para o desenovolvimento de gamemodes SA-MP.
-- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Implementação Rust para o desenovolvimento de plugins SA-MP.
-- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - Implementação  Lua para o desenovolvimento de gamemodes SA-MP.
-- **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - Implementação PHP para o desenovolvimento de gamemodes SA-MP.
-- **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - Implementação D Language para o desenovolvimento de gamemodes SA-MP.
-- **[Kamp](https://github.com/Double-O-Seven/kamp)** - Implementação Kotlin para o desenovolvimento de gamemodes SA-MP.
+- **[pySAMP](https://github.com/habecker/PySAMP)** - Implementação Python para o desenvolvimento de gamemodes SA-MP.
+- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Implementação Rust para o desenvolvimento de plugins SA-MP.
+- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - Implementação  Lua para o desenvolvimento de gamemodes SA-MP.
+- **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - Implementação PHP para o desenvolvimento de gamemodes SA-MP.
+- **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - Implementação D Language para o desenvolvimento de gamemodes SA-MP.
+- **[Kamp](https://github.com/Double-O-Seven/kamp)** - Implementação Kotlin para o desenvolvimento de gamemodes SA-MP.
 
 ## Game Modes
 
