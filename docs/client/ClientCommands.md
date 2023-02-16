@@ -1,6 +1,6 @@
 ---
 title: "Client Commands"
-descripion: List of all client commands.
+description: List of all client commands.
 ---
 
 ## Commands
