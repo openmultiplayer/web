@@ -3,6 +3,8 @@ title: "server.cfg"
 description: Server configuration file.
 ---
 
+# config.json is now used on open.mp instead of server.cfg! 
+
 ## Description
 
 - `server.cfg` is a server configuration file which allows you to change all kinds of settings of your sa-mp server.
