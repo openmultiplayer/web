@@ -3,9 +3,9 @@ title: "Controlando um Servidor"
 description: Comandos úteis para gerenciar um servidor.
 ---
 
-## Mudando a Gamemode
+## Mudando o Gamemode
 
-### Rodando uma gamemode customizada/baixada
+### Rodando um gamemode customizado/baixado
 
 - Abra o diretório em que você instalou o servidor (ex: /Rockstar Games/GTA San Andreas/server)
 - Pegue o arquivo .amx baixado/compilado e coloque-o na pasta gamemodes onde você instalou o servidor.
@@ -14,7 +14,7 @@ description: Comandos úteis para gerenciar um servidor.
 
 ### Usando Filterscripts
 
-O mesmo que rodar uma gamemode customizada, exceto:
+O mesmo que rodar um gamemode customizado, exceto:
 
 - Coloque o .amx em uma pasta chamada `filterscripts`
 - Adicione o seguinte no server.cfg `filterscripts <scriptname>`
@@ -35,7 +35,7 @@ password qualquercoisa
 
 ### Logando
 
-Você pode logar tanto quando estiver no jogo bastanto escrever `/rcon login password`, quanto fora do jogo usando a RCON no Console Remoto.
+Você pode logar quando estiver no jogo, basta escrever `/rcon login senha`, ou quando estiver fora do jogo usando a RCON no Console Remoto.
 
 A senha é a mesma que você colocou no server.cfg
 
@@ -61,7 +61,7 @@ Onde `IP_AQUI` é onde você coloca o IP que gostaria de banir.
 
 ##### Função Ban()
 
-A função de [Ban](../functions/Ban) pode ser usada para banir um jogador de um script. O [BanEx](../functions/BanEx) irá adicionar uma opção adicional como esta:
+A função de [Ban](../functions/Ban) pode ser usada para banir um jogador de um script. O [BanEx](../functions/BanEx) irá adicionar uma opção como esta:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Cheater - BANIMENTO NO JOGO
@@ -194,7 +194,7 @@ Estas são as funções que você como admin pode usar:
 
 #### Callbacks
 
-- [OnRconLoginAttempt](../../callbacks/OnRconLoginAttempt): Chamado quando já uma tentativa de logar no RCON.
+- [OnRconLoginAttempt](../../callbacks/OnRconLoginAttempt): Chamado quando há uma tentativa de logar no RCON.
 
 #### Functions
 
