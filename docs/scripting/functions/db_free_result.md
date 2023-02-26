@@ -89,8 +89,6 @@ public OnGameModeExit()
 }
 ```
 
-## Notes
-
 ## Related Functions
 
 - [db_open](db_open): Open a connection to an SQLite database
