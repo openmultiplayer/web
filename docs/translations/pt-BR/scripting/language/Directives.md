@@ -212,10 +212,9 @@ Isto retira todo o código de um arquivo especificado e insere-o no seu código 
 #include "include.pwn"
 ```
 
-would include the file "me.pwn" from the same directory as the file including that file. The other type, system, includes the file from the "include" directory that is located either in same directory as is Pawn compiler or parent directory(paths:"include","../include"):
-
+incluiria o arquivo "include.pwn" do mesmo diretório que o arquivo incluindo esse arquivo. O outro tipo, sistema, inclui o arquivo do diretório "include" que está localizado ou no mesmo diretório que o compilador Pawn ou diretório pai (caminhos: "include",".../include"):
 ```c
-#include "<me>"
+#include "<include>"
 ```
 
 Incluiria o arquivo "include.inc" (note a falta de extensão, pode especificar se um arquivo não for .p (não .pwn ou .inc) do diretório pawno/include (supondo que você esteja utilizando Pawno).
