@@ -1,5 +1,5 @@
 ---
-title: "Keywords: Diretivas, macros"
+title: "Diretivas"
 ---
 
 As diretivas são instruções passadas ao compilador para controlar como ele interpreta seu código fonte.
