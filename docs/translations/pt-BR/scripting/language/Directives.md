@@ -191,7 +191,7 @@ else
 }
 ```
 
-Mais uma vez, esta é uma verificação constante, que dará um aviso, mas ambas as impressões serão compiladas quando sabermos que apenas uma será executada. Usando #se isto se tornar:
+Mais uma vez, esta é uma verificação constante, que dará um aviso, mas ambas as impressões serão compiladas quando sabermos que apenas uma será executada. Usando #if isto se tornar:
 ```c
 #define LIMITE 10
 
