@@ -5,7 +5,7 @@ title: "Diretivas"
 As diretivas são instruções passadas ao compilador para controlar como ele interpreta seu código fonte.
 ## `#assert`
 
-Isto verifica se a expressão constante é verdadeira e se não para a compilação.
+Isto verifica se a expressão constante é verdadeira e se não aborta a compilação.
 ```c
 #define MOO 10
 #assert MOO > 5
@@ -25,12 +25,12 @@ Isso não vai dar e dará um erro fatal. Isto é semelhante a:
 #endif
 ```
 
-No entanto, a afirmação dará um erro de:
+No entanto, a afirmação dará um erro:
 ```
 Assertation failed: 1 > 5
 ```
 
-Onde o segundo dará um erro de:
+Onde o segundo dará um erro:
 ```
 User error: Moo check failed
 ```
@@ -58,7 +58,8 @@ printf("%d", 7);
 for(PL) printf("%d connected", i);
 ```
 
-Compilará para o loop de 1000, mais conhecido como Player Loop que todos nós conhecemos e amamos(desprezamos). Observe como os parênteses são usados aqui, alguns do para e outros do macro definido (o substituto).
+Compilará para o loop de 1000, mais conhecido como Player Loop que todos nós conhecemos e amamos(e desprezamos). Observe como os parênteses são usados aqui, alguns do loop 'for' e outros do macro definido (o substituto).
+
 Outro fato pouco conhecido sobre as definições é que elas podem ser multi-linhas se você pular da nova linha. Geralmente uma nova linha termina a definição, no entanto, o seguinte é válido:
 ```c
 #define PL \
@@ -68,7 +69,7 @@ Outro fato pouco conhecido sobre as definições é que elas podem ser multi-lin
 printf("%d", MOO(6));
 ```
 
-Isso resultará em 42 (não, não escolhido aleatoriamente). Notar os parênteses excessivos na definição? Isto porque as definições são substituições de texto reto, de modo que serão compiladas como:
+Isso resultará em 42 (não, não é escolhido aleatoriamente). Notou os parênteses excessivos na definição? Isto porque as definições são substituições de texto reto, de modo que serão compiladas como:
 ```c
 printf("%d", ((6) * 7));
 ```
@@ -93,7 +94,9 @@ O que converte para:
 printf("%d", MOO(5 + 6 * 7));
 ```
 
-Que, devido à ordem de operações, compila como (5 + (6 \* 7)), o que for 47 e muito errado. Um fato interessante sobre os parâmetros é que, se você tem muitos, o último é todo o extra. Assim fazendo:
+Que, devido à ordem de operações, compila como (5 + (6 \* 7)), o que se for 47 e é muito errado. 
+
+Um fato interessante sobre os parâmetros é que, se você tem muitos, o último será todos os parâmetros extras. Assim formando:
 ```c
 #define PP(%0,%1) \
         printf(%0, %1)
@@ -107,7 +110,7 @@ Irá imprimir de fato:
 hi hello hi
 ```
 
-Como `%1` contém "hi", "hello", "hi". Você também deve ter notado o uso de `#` para converter um literal em uma corda. Esta é uma característica apenas do SA-MP e pode ser útil. Foi apenas adicionado aqui para dar uma distinta distinção entre os parâmetros.
+Como `%1` contém "hi", "hello", "hi". Você também deve ter notado o uso de `#` para converter um literal em uma string. Esta é uma característica apenas do SA-MP e pode ser útil. Foi apenas adicionado aqui para dar uma distinta distinção entre os parâmetros.
 
 ## `#else`
 
@@ -141,7 +144,7 @@ Isto impede a inclusão de um único arquivo.
 
 ## `#error`
 
-Isto para o compilador instantaneamente e dá uma mensagem de erro personalizada. Veja #assert para um exemplo.
+Isto serve para o compilador instantaneamente imprimir mensagem de erro personalizada. Veja #assert para um exemplo.
 
 ## `#if`
 
