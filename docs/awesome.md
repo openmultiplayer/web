@@ -118,6 +118,8 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 
 ## GDK/SDKs
 
+Now you can make your scripts in languages other than pawn without any plugin using open.mp. See [this blog post](https://www.open.mp/blog/release-candidate-1)
+
 - **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - This is the bare minium that you need to develop plugins.
 - **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ Language Support for writing a gamemode for SA:MP
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
