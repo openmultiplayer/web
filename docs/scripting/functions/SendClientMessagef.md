@@ -60,6 +60,12 @@ You can use color embedding for multiple colors in the message. Using '-1' as th
 
 :::warning
 
+This function was deprecated in open.mp RC1. SendClientMessage function now is built-in with format.
+
+:::
+
+:::warning
+
 If a message is longer than 144 characters, it will not be sent. Truncation can be used to prevent this. Displaying a message on multiple lines will also solve this issue.
 
 :::
