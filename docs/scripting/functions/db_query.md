@@ -28,7 +28,7 @@ The query result index (starting at 1) if successful, otherwise 0.
 EntityStorage_SpawnAll(DB:connectionHandle)
 {
     // Select all entries in table "entities"
-    new DBResult:db_result_set = db_query(db_handle, "SELECT * FROM `entities`");
+    new DBResult:db_result_set = db_query(connectionHandle, "SELECT * FROM `entities`");
 
     // If database result set handle is valid
     if (db_result_set)
@@ -62,7 +62,7 @@ public OnGameModeInit()
     {
         // Successfully created a connection to the database
         print("Successfully created a connection to database \"example.db\".");
-        EntityStorage_SpawnAll();
+        EntityStorage_SpawnAll(gDBConnectionHandle);
     }
     else
     {
