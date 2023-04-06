@@ -30,5 +30,5 @@ new
 ;
 printf("O valor é: %d", clamp(valorA, 5, 10)); // saída: "O valor é: 5" porque 3 é menor que 5.
 printf("O valor é: %d", clamp(valorB, 5, 10)); // saída: "O valor é: 7" porque 7 está entre 5 e 10.
-printf("O valor é: %d", clamp(valorC, 5, 10)); // saída: "The valor is: 10" porque 100 é mais que 10.
+printf("O valor é: %d", clamp(valorC, 5, 10)); // saída: "O valor is: 10" porque 100 é mais que 10.
 ```
