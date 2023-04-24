@@ -14,7 +14,7 @@ tasks:
 
   build:
     cmds:
-      - go build -o server.exe -ldflags="-X 'github.com/openmultiplayer/web/internal/version.Version={{.VERSION}}'" ./cmd/server
+      - go build -o server.exe -ldflags="-X 'github.com/openmultiplayer/web/internal/version.Version={{.VERSION}}'" -buildvcs=false ./cmd/server
 
   # Production deployment run - migrate DB first, then
   production:
