@@ -1,25 +1,25 @@
 ---
 title: db_open
-description: The function is used to open a connection to a SQLite database file, which is inside the `/scriptfiles` folder.
+description: A função é usada para abrir uma conexão com um arquivo de banco de dados SQLite, que está dentro da pasta `../scriptfiles`.
 keywords:
   - sqlite
 ---
 
 <LowercaseNote />
 
-## Description
+## Descrição
 
-The function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.
+A função é usada para abrir uma conexão com um arquivo de banco de dados SQLite, que está dentro da pasta `../scriptfiles`.
 
-| Name   | Description               |
-| ------ | ------------------------- |
-| name[] | File name of the database |
+| Nome   | Descrição                            |
+| ------ | ------------------------------------ |
+| name[] | O nome do arquivo do banco de dados. |
 
-## Returns
+## Retorno
 
-Returns index (starting at 1) of the database connection.
+Retorna o índice (começando em 1) da conexão com o banco de dados.
 
-## Examples
+## Exemplos
 
 ```c
 static DB:gDBConnectionHandle;
@@ -28,67 +28,61 @@ static DB:gDBConnectionHandle;
 
 public OnGameModeInit()
 {
-    // ...
+    // Criar uma conexão com um banco de dados
+    gDBConnectionHandle = db_open("exemplo.db");
 
-    // Create a connection to a database
-    gDBConnectionHandle = db_open("example.db");
-
-    // If connection to the database exists
-    if (gDBConnectionHandle)
+    // Se a conexão com o banco de dados existir
+    if(gDBConnectionHandle)
     {
-        // Successfully created a connection to the database
-        print("Successfully created a connection to database \"example.db\".");
+        // Envia uma mensagem no console dizendo que uma conexão com o banco de dados foi criada com sucesso
+        print("Conexão com o banco de dados \"exemplo.db\" criada com sucesso.");
     }
     else
     {
-        // Failed to create a connection to the database
-        print("Failed to open a connection to database \"example.db\".");
+        // Se não, retorna uma mensagem no console dizendo que falhou ao criar uma conexão com o banco de dados
+        print("Falha ao abrir uma conexão com o banco de dados \"exemplo.db\".");
     }
-
-    // ...
-
     return 1;
 }
 
 public OnGameModeExit()
 {
-    // Close the connection to the database if connection is open
-    if (db_close(gDBConnectionHandle))
+    // Feche a conexão com o banco de dados se a conexão estiver aberta
+    if(db_close(gDBConnectionHandle))
     {
-        // Extra cleanup
+        // Limpeza extra
         gDBConnectionHandle = DB:0;
     }
 
     // ...
-
     return 1;
 }
 ```
 
-## Notes
+## Notas
 
 :::warning
 
-It will create a new SQLite database file, if there is no SQLite database file with the same file name available. Close your SQLite database connection with [db_close](db_close)!
+Ele criará um novo arquivo de banco de dados SQLite, se não houver nenhum arquivo de banco de dados SQLite com o mesmo nome de arquivo disponível. Feche sua conexão com o banco de dados SQLite com [db_close](db_close)!
 
 :::
 
-## Related Functions
+## Funções relacionadas
 
-- [db_close](db_close): Close the connection to an SQLite database
-- [db_query](db_query): Query an SQLite database
-- [db_free_result](db_free_result): Free result memory from a db_query
-- [db_num_rows](db_num_rows): Get the number of rows in a result
-- [db_next_row](db_next_row): Move to the next row
-- [db_num_fields](db_num_fields): Get the number of fields in a result
-- [db_field_name](db_field_name): Returns the name of a field at a particular index
-- [db_get_field](db_get_field): Get content of field with specified ID from current result row
-- [db_get_field_assoc](db_get_field_assoc): Get content of field with specified name from current result row
-- [db_get_field_int](db_get_field_int): Get content of field as an integer with specified ID from current result row
-- [db_get_field_assoc_int](db_get_field_assoc_int): Get content of field as an integer with specified name from current result row
-- [db_get_field_float](db_get_field_float): Get content of field as a float with specified ID from current result row
-- [db_get_field_assoc_float](db_get_field_assoc_float): Get content of field as a float with specified name from current result row
-- [db_get_mem_handle](db_get_mem_handle): Get memory handle for an SQLite database that was opened with db_open.
-- [db_get_result_mem_handle](db_get_result_mem_handle): Get memory handle for an SQLite query that was executed with db_query.
-- [db_debug_openfiles](db_debug_openfiles): The function gets the number of open database connections for debugging purposes.
-- [db_debug_openresults](db_debug_openresults): The function gets the number of open database results.
+- [db_close](db_close): Feche a conexão com um banco de dados SQLite.
+- [db_query](db_query): Consulta um banco de dados SQLite.
+- [db_free_result](db_free_result): Liberar memória de resultado de uma db_query.
+- [db_num_rows](db_num_rows): Obtenha o número de linhas em um resultado.
+- [db_next_row](db_next_row): Mover para a próxima linha.
+- [db_num_fields](db_num_fields): Obtenha o número de campos em um resultado.
+- [db_field_name](db_field_name): Retorna o nome de um campo em um determinado índice.
+- [db_get_field](db_get_field): Obtém o conteúdo do campo com o ID especificado da linha de resultado atual.
+- [db_get_field_assoc](db_get_field_assoc): Obtém o conteúdo do campo com o nome especificado da linha de resultado atual.
+- [db_get_field_int](db_get_field_int): Obtém o conteúdo do campo como um número inteiro com ID especificado da linha de resultado atual.
+- [db_get_field_assoc_int](db_get_field_assoc_int): Obtém o conteúdo do campo como um número inteiro com o nome especificado da linha de resultado atual.
+- [db_get_field_float](db_get_field_float): Obtém o conteúdo do campo como um float com ID especificado da linha de resultado atual.
+- [db_get_field_assoc_float](db_get_field_assoc_float): Obtém o conteúdo do campo como um float com o nome especificado da linha de resultado atual.
+- [db_get_mem_handle](db_get_mem_handle): Obtenha o identificador de memória para um banco de dados SQLite que foi aberto com db_open.
+- [db_get_result_mem_handle](db_get_result_mem_handle): Obtenha o identificador de memória para uma consulta SQLite que foi executada com db_query.
+- [db_debug_openfiles](db_debug_openfiles): A função obtém o número de conexões de banco de dados abertas para fins de depuração.
+- [db_debug_openresults](db_debug_openresults): A função obtém o número de resultados do banco de dados aberto.
