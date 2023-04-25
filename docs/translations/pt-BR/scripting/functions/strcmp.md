@@ -48,11 +48,11 @@ if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
 :::warning
 
-Esta função retorna 0 se uma das strings estiver vazia. Verifica se há strings nulas com isnull(). Se você comparar strings de um arquivo de texto, você deve levar em consideração os caracteres especiais 'carriage return' e 'new line' (\r \n), conforme eles são incluídos, ao usar fread.
+Esta função retorna 0 se uma das strings estiver vazia. Verifique se há strings nulas com isnull(). Se você comparar strings de um arquivo de texto, você deve levar em consideração os caracteres especiais 'carriage return' e 'new line' (\r \n), conforme eles são incluídos, ao usar fread().
 
 :::
 
-## Related Functions
+## Funções Relacionadas
 
 - [strfind](strfind): Procure uma string em outra string.
 - [strdel](strdel): Excluir parte de uma string.
