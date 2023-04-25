@@ -19,7 +19,8 @@ Compara duas strings para ver se são iguais.
 
 ## Retorno
 
-0 se as strings combinam entre si em determinado comprimento; 1 ou -1 se algum caractere não combina: string1[i] - string2[i] ('i' representa o índice de caracteres começando em 0); diferença no número de caracteres se uma string corresponde apenas a parte de outra string.
+0 se as strings combinam entre si em determinado comprimento; 
+1 ou -1 se algum caractere não combina: string1[i] - string2[i] ('i' representa o índice de caracteres começando em 0); Diferença no número de caracteres se uma string corresponde apenas a parte de outra string.
 
 ## Exemplos
 
