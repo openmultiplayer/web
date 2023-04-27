@@ -1,6 +1,6 @@
 ---
 title: getdate
-description: Retornar a data atual do servidor, que será armazenada nas variáveis &ano, &mes e &dia
+description: Retorna a data atual do servidor, que será armazenada nas variáveis &ano, &mes e &dia
 tags: []
 ---
 
