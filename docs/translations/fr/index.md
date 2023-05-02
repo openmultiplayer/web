@@ -11,6 +11,6 @@ Il ne vous aura pas échappé que le wiki et le forum SA:MP ont été mis hors l
 
 Vous pouvez facilement [contribuer](/meta/Contributing) à maintenir ce wiki et, puisqu'il s'agit de cela, à créer de nouvelles pages / transposer les anciennes pages du wiki SA:MP.
 
-Il n'est pas nécessaire que vous maîtrisez Github, d'abord parce que la contribution est très facile avec open.MP et ensuite parce que vous pouvez toujours poser des questions sur le Discord, sur le forum [Burgershot](https://www.burgershot.gg/) ou sur les médias de open.MP.
+Il n'est pas nécessaire que vous maîtrisez Github, d'abord parce que la contribution est très facile avec open.MP et ensuite parce que vous pouvez toujours poser des questions sur le Discord, sur le forum [Burgershot](https://forum.open.mp/) ou sur les médias de open.MP.
 
 Il convient également de rappeler que la communauté française dispose d'un [forum](http://sa-mp-fr.com/) elle aussi, vous y retrouverez également de l'aide et des ressources.
