@@ -33,7 +33,7 @@ const config = (phase) => {
     // prettier-ignore
     redirects() {
       return [
-        { source: "/forum", destination: "https://burgershot.gg", permanent: false},
+        { source: "/forum", destination: "https://forum.open.mp", permanent: false},
         { source: "/wiki", destination: "https://open.mp/docs ", permanent: true},
         { source: "/links", destination: "https://linktr.ee/openmultiplayer", permanent: true},
         { source: "/videos", destination: "https://youtube.com/openmultiplayer", permanent: true},
