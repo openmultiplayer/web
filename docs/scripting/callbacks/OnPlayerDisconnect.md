@@ -50,7 +50,7 @@ public OnPlayerDisconnect(playerid, reason)
 
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 
-    new szDisconnectReason[3][] =
+    new szDisconnectReason[5][] =
     {
         "Timeout/Crash",
         "Quit",
