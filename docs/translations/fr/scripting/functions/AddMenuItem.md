@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 ## Remarques
 
-:::conseil
+:::tip
 
 Crash lors de la transmission d'un ID de menu non valide. Vous ne pouvez avoir que 12 éléments par menu (le 13e va à droite de l'en-tête du nom de la colonne (en couleur), le 14e et les suivants ne s'affichent pas du tout). Vous ne pouvez utiliser que 2 colonnes (0 et 1). Vous ne pouvez ajouter que 8 codes de couleur par article (~r~, ~g~ etc.). La longueur maximale de l'élément de menu est de 31 symboles.
 
