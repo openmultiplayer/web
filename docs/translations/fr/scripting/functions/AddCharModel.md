@@ -41,13 +41,13 @@ AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 
 ## Remarques
 
-:::conseil
+:::tip
 
 useartwork doit d'abord être activé dans les paramètres du serveur pour que cela fonctionne
 
 :::
 
-:::avertissement
+:::warning
 
 Il n'y a actuellement aucune restriction sur le moment où vous pouvez appeler cette fonction, mais sachez que si vous ne les appelez pas dans OnFilterScriptInit/OnGameModeInit, vous courez le risque que certains joueurs, qui sont déjà sur le serveur, n'aient pas téléchargé les modèles.
 
