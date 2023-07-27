@@ -40,13 +40,13 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Remarques
 
-:::conseil
+:::tip
 
 `useartwork` doit d'abord être activé dans les paramètres du serveur pour que cela fonctionne Lorsque virtualworld est défini, les modèles seront téléchargés une fois que le joueur entrera dans le monde spécifique
 
 :::
 
-:::avertissement
+:::warning
 
 Il n'y a actuellement aucune restriction sur le moment où vous pouvez appeler cette fonction, mais sachez que si vous ne les appelez pas dans OnFilterScriptInit/OnGameModeInit, vous courez le risque que certains joueurs, qui sont déjà sur le serveur, n'aient pas téléchargé les modèles.
 
