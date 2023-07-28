@@ -10,11 +10,11 @@ Ang function na ito ay nagdaragdag ng 'static' pickup sa laro. Sinusuportahan ng
 
 | Name                                | Description                                                                         |
 | ----------------------------------- | ----------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | Ang modelo ng pickup.                                                            |
-| [type](../resources/pickuptypes) | Ang uri ng pickup. Tinutukoy kung paano tumugon ang pickup kapag kinuha.                 |
-| Float:X                             | Ang X coordinate para gawin ang pickup sa.                                           |
-| Float:Y                             | Ang Y coordinate para gawin ang pickup sa.                                           |
-| Float:Z                             | Ang Z coordinate para gawin ang pickup sa.                                           |
+| [model](../resources/pickupids)  | Ang modelo ng pickup.                                                                  |
+| [type](../resources/pickuptypes) | Ang uri ng pickup. Tinutukoy kung paano tumugon ang pickup kapag kinuha.               |
+| Float:X                             | Ang X coordinate para gawin ang pickup sa.                                          |
+| Float:Y                             | Ang Y coordinate para gawin ang pickup sa.                                          |
+| Float:Z                             | Ang Z coordinate para gawin ang pickup sa.                                          |
 | virtualworld                        | Ang virtual world ID para ilagay ang pickup na iyon. Gamitin ang -1 para ipakita ang pickup sa lahat ng mundo. |
 
 ## Returns

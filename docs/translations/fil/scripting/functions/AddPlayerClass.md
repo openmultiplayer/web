@@ -8,19 +8,19 @@ tags: ["player"]
 
 Nagdaragdag ng klase sa pagpili ng klase. Ginagamit ang mga klase upang ang mga manlalaro ay maaaring mag-spawn ng balat na kanilang pinili.
 
-| Name          | Description                                                   |
-| ------------- | ------------------------------------------------------------- |
-| modelid       | Ang balat na kung saan ang player ay pangingitlog sa.                    |
-| Float:spawn_x | Ang X coordinate ng spawnpoint ng klase na ito.             |
-| Float:spawn_y | Ang Y coordinate ng spawnpoint ng klase na ito.             |
-| Float:spawn_z | Ang Z coordinate ng spawnpoint ng klase na ito.             |
+| Name          | Description                                                                     |
+| ------------- | ------------------------------------------------------------------------------- |
+| modelid       | Ang balat na kung saan ang player ay pangingitlog sa.                           |
+| Float:spawn_x | Ang X coordinate ng spawnpoint ng klase na ito.                                 |
+| Float:spawn_y | Ang Y coordinate ng spawnpoint ng klase na ito.                                 |
+| Float:spawn_z | Ang Z coordinate ng spawnpoint ng klase na ito.                                 |
 | Float:z_angle | Ang direksyon kung saan dapat harapin ang manlalaro pagkatapos ng pangingitlog. |
-| weapon1       | Ang unang spawn-weapon para sa player.                        |
-| weapon1_ammo  | Ang dami ng bala para sa pangunahing spawn weapon.        |
-| weapon2       | Ang pangalawang spawn-weapon para sa player.                       |
-| weapon2_ammo  | Ang dami ng bala para sa pangalawang spawn weapon.         |
-| weapon3       | Ang ikatlong spawn-weapon para sa player.                        |
-| weapon3_ammo  | Ang dami ng bala para sa ikatlong spawn weapon.          |
+| weapon1       | Ang unang spawn-weapon para sa player.                                          |
+| weapon1_ammo  | Ang dami ng bala para sa pangunahing spawn weapon.                              |
+| weapon2       | Ang pangalawang spawn-weapon para sa player.                                    |
+| weapon2_ammo  | Ang dami ng bala para sa pangalawang spawn weapon.                              |
+| weapon3       | Ang ikatlong spawn-weapon para sa player.                                       |
+| weapon3_ammo  | Ang dami ng bala para sa ikatlong spawn weapon.                                 |
 
 ## Returns
 

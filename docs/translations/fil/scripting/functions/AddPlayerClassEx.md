@@ -8,20 +8,20 @@ tags: ["player"]
 
 Ang function na ito ay eksaktong kapareho ng AddPlayerClass function, kasama ang pagdaragdag ng isang parameter ng koponan.
 
-| Name          | Description                                                 |
-| ------------- | ----------------------------------------------------------- |
-| teamid        | Ang koponan na gusto mong ipanganak ng manlalaro.                   |
-| modelid       | Ang koponan na gusto mong ipanganak ng manlalaro.                  |
-| Float:spawn_x | Ang X coordinate ng posisyon ng spawn ng klase.              |
-| Float:spawn_y | Ang Y coordinate ng posisyon ng spawn ng klase.              |
-| Float:spawn_z | Ang Z coordinate ng posisyon ng spawn ng klase.              |
+| Name          | Description                                                                 |
+| ------------- | --------------------------------------------------------------------------- |
+| teamid        | Ang koponan na gusto mong ipanganak ng manlalaro.                           |
+| modelid       | Ang koponan na gusto mong ipanganak ng manlalaro.                           |
+| Float:spawn_x | Ang X coordinate ng posisyon ng spawn ng klase.                             |
+| Float:spawn_y | Ang Y coordinate ng posisyon ng spawn ng klase.                             |
+| Float:spawn_z | Ang Z coordinate ng posisyon ng spawn ng klase.                             |
 | Float:z_angle | Ang direksyon kung saan haharapin ang manlalaro pagkatapos ng pangingitlog. |
-| weapon1       | Ang unang spawn-weapon para sa player.                      |
-| weapon1_ammo  | Ang dami ng bala para sa unang spawn weapon.        |
-| weapon2       | Ang pangalawang spawn-weapon para sa player.                     |
-| weapon2_ammo  | Ang dami ng bala para sa pangalawang spawn weapon.       |
-| weapon3       | Ang ikatlong spawn-weapon para sa player.                      |
-| weapon3_ammo  | Ang dami ng bala para sa ikatlong spawn weapon.        |
+| weapon1       | Ang unang spawn-weapon para sa player.                                      |
+| weapon1_ammo  | Ang dami ng bala para sa unang spawn weapon.                                |
+| weapon2       | Ang pangalawang spawn-weapon para sa player.                                |
+| weapon2_ammo  | Ang dami ng bala para sa pangalawang spawn weapon.                          |
+| weapon3       | Ang ikatlong spawn-weapon para sa player.                                   |
+| weapon3_ammo  | Ang dami ng bala para sa ikatlong spawn weapon.                             |
 
 ## Returns
 

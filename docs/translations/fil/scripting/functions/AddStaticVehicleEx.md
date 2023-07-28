@@ -10,14 +10,14 @@ Nagdaragdag ng 'static' na sasakyan (mga modelo ay paunang na-load para sa mga m
 
 | Name                                     | Description                            |
 | ---------------------------------------- | -------------------------------------- |
-| modelid                                  | Ang Model ID para sa sasakyan.          |
-| Float:spawn_X                            | Ang X-coordinate para sa sasakyan.      |
-| Float:spawn_Y                            | Ang Y-coordinate para sa sasakyan.      |
-| Float:spawn_Z                            | Ang Z-coordinate para sa sasakyan.      |
-| Float:z_angle                            | Direksyon ng sasakyan - anggulo.          |
-| [color1](../resources/vehiclecolorid) | Ang pangunahing ID ng kulay. -1 para sa random.   |
+| modelid                                  | Ang Model ID para sa sasakyan.         |
+| Float:spawn_X                            | Ang X-coordinate para sa sasakyan.     |
+| Float:spawn_Y                            | Ang Y-coordinate para sa sasakyan.     |
+| Float:spawn_Z                            | Ang Z-coordinate para sa sasakyan.     |
+| Float:z_angle                            | Direksyon ng sasakyan - anggulo.       |
+| [color1](../resources/vehiclecolorid) | Ang pangunahing ID ng kulay. -1 para sa random. |
 | [color2](../resources/vehiclecolorid) | Ang pangalawang kulay ID. -1 para sa random. |
-| respawn_delay                            | Tantalahin niya hanggang sa ang kotse ay respawned nang walang driver, sa ilang segundo.|
+| respawn_delay                            | Tantalahin niya hanggang sa ang kotse ay respawned nang walang driver, sa ilang segundo. |
 | addsiren                                 | Idinagdag sa 0.3.7; hindi gagana sa mga naunang bersyon. May default na value na 0. Nagbibigay-daan sa sasakyan na magkaroon ng sirena, kung ang sasakyan ay may busina. |
 
 ## Returns

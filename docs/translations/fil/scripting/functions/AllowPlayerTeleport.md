@@ -14,10 +14,10 @@ Ang function na ito, mula sa 0.3d, ay hindi na ginagamit. Tignan ang [OnPlayerCl
 
 Paganahin/Huwag paganahin ang kakayahang mag-teleport para sa isang manlalaro sa pamamagitan ng pag-right-click sa mapa
 
-| Name     | Description                             |
-| -------- | --------------------------------------- |
+| Name     | Description                                  |
+| -------- | -------------------------------------------- |
 | playerid | Ang ID ng player upang payagan ang teleport. |
-| allow    | 1-payagan, 0-hindi payagan                     |
+| allow    | 1-payagan, 0-hindi payagan                   |
 
 ## Returns
 

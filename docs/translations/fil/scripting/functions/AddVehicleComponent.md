@@ -8,10 +8,10 @@ tags: ["vehicle"]
 
 Nagdaragdag ng 'bahagi' (madalas na tinutukoy bilang 'mod' (pagbabago)) sa isang sasakyan. Ang mga wastong bahagi ay matatagpuan dito.
 
-| Name                                          | Description                                                                     |
-| --------------------------------------------- | ------------------------------------------------------------------------------- |
+| Name                                          | Description                                                                       |
+| --------------------------------------------- | --------------------------------------------------------------------------------- |
 | vehicleid                                     | Ang ID ng sasakyan kung saan idaragdag ang bahagi. Hindi dapat malito sa modelid. |
-| [componentid](../resources/carcomponentid) | Ang ID ng component na idaragdag sa sasakyan.                                  |
+| [componentid](../resources/carcomponentid) | Ang ID ng component na idaragdag sa sasakyan.                                        |
 
 ## Returns
 

@@ -8,10 +8,10 @@ tags: ["menu"]
 
 Adds an item to a specified menu.
 
-| Name    | Description                      |
-| ------- | -------------------------------- |
-| menuid  | Ang menu id upang magdagdag ng item.   |
-| column  | Ang column kung saan idaragdag ang item.   |
+| Name    | Description                              |
+| ------- | ---------------------------------------- |
+| menuid  | Ang menu id upang magdagdag ng item.     |
+| column  | Ang column kung saan idaragdag ang item. |
 | title[] | Ang pamagat para sa bagong item sa menu. |
 
 ## Returns
