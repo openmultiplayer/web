@@ -1,6 +1,6 @@
 ---
-title: FindModelFileNameFromCRC
-description: Maghanap ng umiiral nang custom skin o simple object model file.
+title: FindTextureFileNameFromCRC
+description: Maghanap ng umiiral nang custom skin o simple object texture file.
 tags: []
 ---
 
@@ -8,7 +8,7 @@ tags: []
 
 ## Description
 
-Maghanap ng umiiral nang custom skin o simple object model file. Ang mga file ng model ay matatagpuan sa folder ng server ng mga models bilang default (setting ng artpath).
+Maghanap ng umiiral nang custom skin o simple object texture file. Ang mga file ng model ay matatagpuan sa folder ng server ng mga models bilang default (setting ng artpath).
 
 | Name        | Description                                                           |
 | ----------- | --------------------------------------------------------------------- |
