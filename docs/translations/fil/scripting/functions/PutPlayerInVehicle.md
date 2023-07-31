@@ -8,8 +8,8 @@ tags: ["player", "vehicle"]
 
 Inilalagay ang isang manlalaro sa isang sasakyan.
 
-| Name      | Description                                 |
-| --------- | ------------------------------------------- |
+| Name      | Description                                       |
+| --------- | ------------------------------------------------- |
 | playerid  | Ang ID ng player na ilalagay sa isang sasakyan.   |
 | vehicleid | Ang ID ng sasakyan kung saan ilalagay ang player. |
 | seatid    | Ang ID ng upuan kung saan ilalagay ang player.    |

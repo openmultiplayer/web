@@ -10,8 +10,8 @@ tags: ["player", "vehicle"]
 
 Alamin kung nasaang upuan nakaupo ang manlalaro.
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
+| Name     | Description                                         |
+| -------- | --------------------------------------------------- |
 | playerid | Ang ID ng manlalaro na gusto mong makuha ang upuan. |
 
 ## Returns
