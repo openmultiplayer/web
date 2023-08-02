@@ -10,3 +10,6 @@ prisma/Studio/
 *.db
 .task
 .vercel
+# Sublime Text
+*.sublime-project
+*.sublime-workspace

@@ -138,8 +138,8 @@ const Page = ({ initialData, errorMessage }: Props) => {
       hn: "[HUN] NORTH RPG [PC/ANDROID]",
     },
     {
-      ip: "216.146.26.6:7777",
-      hn: "PSA-RP ~ New Update [OMP/0.3 DL]",
+      ip: "149.18.62.76:7777",
+      hn: "PSA-RP ~ Summer Big Update [open.mp]",
     },
     {
       ip: "51.222.11.204:7777",
