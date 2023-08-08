@@ -1369,6 +1369,6 @@ N: 3
 .. .
 Stack/heap collision (insufficient stack size)
 ```
-![Stack](https://cdn.discordapp.com/attachments/966187760341901352/1138405264626815017/stack.png)
+![Stack](https://imgur.com/a/0vQYlqW)
 
 [Go Back to Contents](00-Contents.md)
