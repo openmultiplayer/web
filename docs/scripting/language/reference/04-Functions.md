@@ -1348,4 +1348,27 @@ factorial(3) \\ factorial initiate
                if(0 == 0) return 1 \\ checks the conition which is true and return 1
 		\\ at the final call 3 * 2 * 1 * 1 
 ```
+### Stack Memory
+The stack is a region of memory used for storing local variables, function call information, and control flow data. It operates in a Last-In-First-Out (LIFO) manner, which means that the last item pushed onto the stack is the first one to be popped off.
+#### Example (Stack Overflow)
+```c
+#pragma dynamic 35 // (35 * 4 bytes, a cell size) #pragma dynamic [cells] helps to modify the size of stack, read docs/scripting/language/Directives to know more about #pragma
+main(){
+	grow_stack(1);
+}
+grow_stacK(n){ // recursive function
+	printf("N: %d", n);
+	grow_stacK(n+1);
+}
+```
+#### Output
+```
+N: 1
+N: 2
+N: 3
+.. .
+Stack/heap collision (insufficient stack size)
+```
+![Stack](https://i.imgur.com/ZaIVUkJ.png)
+
 [Go Back to Contents](00-Contents.md)
