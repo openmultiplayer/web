@@ -1369,6 +1369,6 @@ N: 3
 .. .
 Stack/heap collision (insufficient stack size)
 ```
-![Stack](https://imgur.com/a/0vQYlqW)
+![Stack](https://i.imgur.com/ZaIVUkJ.png)
 
 [Go Back to Contents](00-Contents.md)
