@@ -1,0 +1,64 @@
+---
+title: CreateObject
+description: Oyun dünyasında belirtilen koordinatlarda bir obje oluşturur.
+tags: []
+---
+
+## Açıklama
+
+Oyun dünyasında belirtilen koordinatlarda bir obje oluşturur.
+
+| Name               | Description                                                                                                                                                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| modelid            | Oluşturulacak model.                                                                                                                                                       |
+| Float:X            | Objenin oluşturulacağı X koordinatı.                                                                                                                                       |
+| Float:Y            | Objenin oluşturulacağı Y koordinatı.                                                                                                                                       |
+| Float:Z            | Objenin oluşturulacağı Z koordinatı.                                                                                                                                       |
+| Float:rX           | Objenin X eğimi.                                                                                                                                                           |
+| Float:rY           | Objenin Y eğimi.                                                                                                                                                           |
+| Float:rZ           | Objenin Z eğimi.                                                                                                                                                           |
+| Float:DrawDistance | (isteğe bağlı) San Andreas'ın objeleri görüntülediği mesafe. 0.0, objeleri varsayılan mesafelerinde görüntüler. 0.3b'den beri kullanılabilir. 0.3x öncesinde 300 ile sınırlıydı. |
+
+## Örnekler
+
+```c
+public OnGameModeInit()
+{
+    CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0); // Obje varsayılan mesafede görüntülenecek.
+    CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0, 300.0); // Obje 300.0 birim mesafede görüntülenecek.
+    return 1;
+}
+```
+
+## Notlar
+
+:::tip
+
+1000 obje için bir sınırlama bulunur. (MAX_OBJECTS). Bu sınırlamayı aşmak için bir streamer kullanabilirsiniz.
+:::
+
+## İlgili Fonksiyonlar
+
+- [DestroyObject](DestroyObject): Bir objeyi yok eder.
+- [IsValidObject](IsValidObject): Belli bir objenin geçerli olup olmadığını kontrol eder.
+- [MoveObject](MoveObject): Bir objeyi hareket ettirir.
+- [StopObject](StopObject): Bir objenin hareket etmesini durdurur.
+- [SetObjectPos](SetObjectPos): Bir objenin pozisyonunu ayarlar.
+- [SetObjectRot](SetObjectRot): Bir objenin rotasyonunu ayarlar.
+- [GetObjectPos](GetObjectPos): Bir objeyi konumlandırır.
+- [GetObjectRot](GetObjectRot): Bir objenin rotasyonunu kontrol eder.
+- [AttachObjectToPlayer](AttachObjectToPlayer): Bir objeyi bir oyuncuya bağlar.
+- [SetObjectMaterialText](SetObjectMaterialText): Bir objenin dokusunu metinle değiştirir.
+- [SetObjectMaterial](SetObjectMaterial): Bir objenin dokusunu, oyundaki başka bir modelin dokusuyla değiştirir.
+- [CreatePlayerObject](CreatePlayerObject): Yalnızca bir oyuncu için bir obje oluşturur.
+- [DestroyPlayerObject](DestroyPlayerObject): Bir oyuncu objesini yok eder.
+- [IsValidPlayerObject](IsValidPlayerObject): Belli bir oyuncu objesinin geçerli olup olmadığını kontrol eder.
+- [MovePlayerObject](MovePlayerObject): Bir oyuncu objesini hareket ettirir.
+- [StopPlayerObject](StopPlayerObject): Bir oyuncu objesinin hareketini durdurur.
+- [SetPlayerObjectPos](SetPlayerObjectPos): Bir oyuncu objesinin pozisyonunu ayarlar.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Bir oyuncu objesinin rotasyonunu ayarlar.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Bir oyuncu objesini konumlandırır.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Bir oyuncu objesinin rotasyonunu kontrol eder.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Bir oyuncu objesini bir oyuncuya bağlar.
+- [SetPlayerObjectMaterialText](SetPlayerObjectMaterialText): Bir oyuncu objesinin dokusunu metinle değiştirir.
+- [SetPlayerObjectMaterial](SetPlayerObjectMaterial): Bir oyuncu objesinin dokusunu, oyundaki başka bir modelin dokusuyla değiştirir.
