@@ -1,20 +1,20 @@
 ---
 title: DestroyObject
-description: Menghancurkan (menghapus) Object yang dibuat menggunakan CreateObject.
+description: Menghapus Objek yang dibuat menggunakan CreateObject.
 tags: []
 ---
 
 ## Deskripsi
 
-Menghancurkan (menghapus) Object yang dibuat menggunakan CreateObject..
+Menghapus Objek yang dibuat menggunakan CreateObject.
 
-| Name     | Description                                                      |
+| Nama     | Deskripsi                                                      |
 | -------- | ---------------------------------------------------------------- |
-| objectid | ID Object yang akan dihancurkan. Dikembalikan oleh CreateObject. |
+| objectid | ID dari Objek yang akan dihapus. Dikembalikan oleh CreateObject. |
 
-## Returns
+## Pengembalian
 
-Function ini tidak mengembalikan nilai tertentu.
+Fungsi ini tidak mengembalikan nilai apapun.
 
 ## Contoh
 
@@ -28,22 +28,40 @@ public OnObjectMoved(objectid)
 
 ## Fungsi Terkait
 
-- [CreateObject](CreateObject): Membuat suatu Object.
-- [IsValidObject](IsValidObject): Memeriksa apakah Object tertentu valid.
-- [MoveObject](MoveObject): Memindahkan suatu Object.
-- [StopObject](StopObject): Menghentikan suatu Object agar tidak bergerak.
-- [SetObjectPos](SetObjectPos): Mengatur posisi suatu Object.
-- [SetObjectRot](SetObjectRot): Mengatur rotasi suatu Object.
-- [GetObjectPos](GetObjectPos): Mencari Object.
-- [GetObjectRot](GetObjectRot): Memeriksa rotasi suatu Object.
-- [AttachObjectToPlayer](AttachObjectToPlayer): Menambahkan Object ke Player.
-- [CreatePlayerObject](CreatePlayerObject): Membuat Object hanya untuk satu Player.
-- [DestroyPlayerObject](DestroyPlayerObject): Menghapus suatu Object dari Player.
-- [IsValidPlayerObject](IsValidPlayerObject): Memeriksa apakah Object Player tertentu valid.
-- [MovePlayerObject](MovePlayerObject): Memindahkan Object Player.
-- [StopPlayerObject](StopPlayerObject): Menghentikan Object Player agar tidak bergerak.
-- [SetPlayerObjectPos](SetPlayerObjectPos): Mengatur posisi Object Player.
-- [SetPlayerObjectRot](SetPlayerObjectRot): Mengatur rotasi Object Player.
-- [GetPlayerObjectPos](GetPlayerObjectPos): Mencari Object Player.
-- [GetPlayerObjectRot](GetPlayerObjectRot): Memeriksa rotasi Object Player.
-- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Menambahkan Object pemain ke Player.
+- [CreateObject](CreateObject): Membuat suatu objek.
+- [IsValidObject](IsValidObject): Memeriksa apakah Objek tertentu valid.
+- [MoveObject](MoveObject): Memindahkan suatu Objek.
+- [StopObject](StopObject): Menghentikan suatu Objek agar tidak bergerak.
+- [SetObjectPos](SetObjectPos): Mengatur posisi suatu Objek.
+- [SetObjectRot](SetObjectRot): Mengatur rotasi suatu Objek.
+- [GetObjectPos](GetObjectPos): Memeriksa posisi suatu Objek.
+- [GetObjectRot](GetObjectRot): Memeriksa rotasi suatu Objek.
+- [AttachObjectToPlayer](AttachObjectToPlayer): Menempelkan Objek ke seorang pemain.
+- [CreatePlayerObject](CreatePlayerObject): Membuat Objek hanya untuk satu Pemain.
+- [DestroyPlayerObject](DestroyPlayerObject): Menghapus suatu Objek dari Pemain.
+- [IsValidPlayerObject](IsValidPlayerObject): Memeriksa apakah Objek Pemain tertentu valid.
+- [MovePlayerObject](MovePlayerObject): Memindahkan Objek Pemain.
+- [StopPlayerObject](StopPlayerObject): Menghentikan Objek Pemain agar tidak bergerak.
+- [SetPlayerObjectPos](SetPlayerObjectPos): Mengatur posisi Objek Pemain.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Mengatur rotasi Objek Pemain.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Memeriksa posisi Objek Pemain.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Memeriksa rotasi Objek Pemain.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Menempelkan Objek pemain ke Pemain lain.
+): Memeriksa apakah Objek tertentu valid.
+- [MoveObject](MoveObject): Memindahkan suatu Objek.
+- [StopObject](StopObject): Menghentikan suatu Objek agar tidak bergerak.
+- [SetObjectPos](SetObjectPos): Mengatur posisi suatu Objek.
+- [SetObjectRot](SetObjectRot): Mengatur rotasi suatu Objek.
+- [GetObjectPos](GetObjectPos): Memeriksa posisi suatu Objek.
+- [GetObjectRot](GetObjectRot): Memeriksa rotasi suatu Objek.
+- [AttachObjectToPlayer](AttachObjectToPlayer): Menempelkan Objek ke seorang pemain.
+- [CreatePlayerObject](CreatePlayerObject): Membuat Objek hanya untuk satu Pemain.
+- [DestroyPlayerObject](DestroyPlayerObject): Menghapus suatu Objek dari Pemain.
+- [IsValidPlayerObject](IsValidPlayerObject): Memeriksa apakah Objek Pemain tertentu valid.
+- [MovePlayerObject](MovePlayerObject): Memindahkan Objek Pemain.
+- [StopPlayerObject](StopPlayerObject): Menghentikan Objek Pemain agar tidak bergerak.
+- [SetPlayerObjectPos](SetPlayerObjectPos): Mengatur posisi Objek Pemain.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Mengatur rotasi Objek Pemain.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Memeriksa posisi Objek Pemain.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Memeriksa rotasi Objek Pemain.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Menempelkan Objek pemain ke Pemain lain.
