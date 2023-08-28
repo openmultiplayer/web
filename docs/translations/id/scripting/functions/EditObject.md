@@ -1,6 +1,6 @@
 ---
 title: EditObject
-description: Memungkinkan Player untuk mengedit object (posisi dan rotasi) menggunakan mouse mereka pada GUI (Graphical User Interface).
+description: Memungkinkan seorang pemain untuk mengatur suatu objek (posisi dan rotasi) menggunakan mouse mereka pada GUI (Graphical User Interface).
 tags: []
 ---
 
@@ -8,18 +8,17 @@ tags: []
 
 ## Deskripsi
 
-Memungkinkan Player untuk mengedit object (posisi dan rotasi) menggunakan mouse mereka pada GUI (Graphical User Interface).
-
+Memungkinkan seorang pemain untuk mengatur suatu objek (posisi dan rotasi) menggunakan mouse mereka pada GUI (Graphical User Interface).
 | Name     | Description                         |
 | -------- | ----------------------------------- |
-| playerid | ID Player yang mengedit Object.     |
-| objectid | ID Object yang di edit oleh Player. |
+| playerid | ID dari seorang pemain yang mengatur objek tersebut.     |
+| objectid | ID dari sebuah objek yang sedang diatur oleh pemain. |
 
 ## Returns
 
-1: Function berhasil dijalankan. Sukses akan di laporkan ketika Object tidak di tentukan, Tetapi tidak akan terjadi apa-apa.
+1: Fungsi berhasil dijalankan. Keberhasilan akan ditentukan ketika objek yang tidak ada ditentukan, tetapi tidak akan ada yang terjadi.
 
-0: Function gagal di jalankan. Karena pemain tidak terhubung.
+0: Fungsi gagal dijalankan. Karena pemain tidak terhubung.
 
 ## Contoh
 
@@ -36,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/oedit", true))
     {
         EditObject(playerid, object);
-        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: Sekarang anda bisa mengedit Object!");
+        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: Saat ini kamu bisa mengatur objek!");
         return 1;
     }
     return 0;
@@ -47,15 +46,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Anda dapat menggerakkan kamera saat mengedit dengan menekan dan menahan spasi (atau W di kendaraan) dan menggerakkan mouse Anda.
+Anda dapat menggerakkan kamera saat mengatur dengan menekan dan menahan tombol spasi (atau W di kendaraan) dan menggerakkan mouse Anda.
 :::
 
 ## Fungsi Terkait
 
-- [CreateObject](CreateObject): Membuat suatu Object.
-- [DestroyObject](DestroyObject): Menghapus suatu Object.
-- [MoveObject](MoveObject): Memindahkan suatu Object.
-- [EditPlayerObject](EditPlayerObject): Mengedit suatu Object.
-- [EditAttachedObject](EditAttachedObject): Mengedit suatu Attached Object.
-- [SelectObject](SelectObject): Memilih suatu Object.
-- [CancelEdit](CancelEdit): Membatalkan mengedit suatu Object.
+- [CreateObject](CreateObject): Membuat suatu objek.
+- [DestroyObject](DestroyObject): Menghapus suatu objek.
+- [MoveObject](MoveObject): Memindahkan suatu objek.
+- [EditPlayerObject](EditPlayerObject): Mengatur suatu objek pemain.
+- [EditAttachedObject](EditAttachedObject): Mengatur suatu objek yang menempel.
+- [SelectObject](SelectObject): Memilih suatu index objek.
+- [CancelEdit](CancelEdit): Membatalkan mode pengaturan dari suatu objek.
