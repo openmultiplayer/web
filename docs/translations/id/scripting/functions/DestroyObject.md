@@ -1,12 +1,12 @@
 ---
 title: DestroyObject
-description: Menghapus Objek yang dibuat menggunakan CreateObject.
+description: Menghapus sebuah objek yang dibuat menggunakan CreateObject.
 tags: []
 ---
 
 ## Deskripsi
 
-Menghapus Objek yang dibuat menggunakan CreateObject.
+Menghapus sebuah objek yang dibuat menggunakan CreateObject.
 
 | Nama     | Deskripsi                                                      |
 | -------- | ---------------------------------------------------------------- |
