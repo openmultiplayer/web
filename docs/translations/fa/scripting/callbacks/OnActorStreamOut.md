@@ -1,8 +1,10 @@
 ---
-موضوع: OnActorStreamOut
-توضیحات: این کال‌بک زمانی فراخوانی می‌شود که یک اکتور برای بازیکن دیگر نمایش داده نمیشود
-تگ ها: []
+title: OnActorStreamOut
+description: این کال‌بک زمانی فراخوانی می‌شود که یک اکتور برای بازیکن دیگر نمایش داده نمیشود
+tags: []
 ---
+
+<div dir="rtl" style={{ textAlign: "right" }}>
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
 
@@ -40,3 +42,4 @@ public OnActorStreamOut(actorid, forplayerid)
 کال‌بک های زیر ممکن است مفید باشند، زیرا به هر طریقی با این کال‌بک مرتبط هستند.
 
 - [OnActorStreamIn](OnActorStreamIn): این کال‌بک زمانی فراخوانی می‌شود که یک اکتور برای بازیکن نمایش داده میشود
+</div>
