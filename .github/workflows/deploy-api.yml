@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - amir/remove-forum
 
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}

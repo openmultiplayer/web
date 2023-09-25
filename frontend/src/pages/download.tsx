@@ -62,15 +62,7 @@ const Downloads = () => {
 
       <main>
         <Box className={heroStyles.hero} py="2em" px="1em">
-          {/*
-            NOTE: Temporary announcement for new forum.
-          */}
-
           <Announcement />
-
-          {/*
-            Remove once feedback and testing is done.
-          */}
 
           <Flex
             align="center"

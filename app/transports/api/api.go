@@ -13,7 +13,6 @@ import (
 	"github.com/openmultiplayer/web/app/services/authentication"
 	"github.com/openmultiplayer/web/app/transports/api/auth"
 	"github.com/openmultiplayer/web/app/transports/api/docs"
-	"github.com/openmultiplayer/web/app/transports/api/forum"
 	"github.com/openmultiplayer/web/app/transports/api/legacy"
 	"github.com/openmultiplayer/web/app/transports/api/metrics"
 	"github.com/openmultiplayer/web/app/transports/api/pawndex"
@@ -33,7 +32,6 @@ func Build() fx.Option {
 		servers.Build(),
 		users.Build(),
 		pawndex.Build(),
-		forum.Build(),
 
 		// Starts the HTTP server in a goroutine and fatals if it errors.
 		fx.Invoke(func(l *zap.Logger, server *http.Server) {
