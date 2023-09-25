@@ -24,7 +24,7 @@ model User {
   github     GitHub?
   discord    Discord?
 
-  name  String  @db.VarChar(64)
+  name  String  @db.String
   bio   String?
   admin Boolean @default(false)
 
@@ -87,7 +87,7 @@ model Server {
 }
 
 model Rule {
-  id       Int     @id @default(autoincrement())
+  id       Int     @id @default(sequence())
   name     String
   value    String
   Server   Server? @relation(fields: [serverId], references: [id])
