@@ -32,8 +32,8 @@ func TransformQueryResult(s sampquery.Server, err error) (r All) {
 	r.Core = Essential{
 		IP:         s.Address,
 		Hostname:   s.Hostname,
-		Players:    s.Players,
-		MaxPlayers: s.MaxPlayers,
+		Players:    int64(s.Players),
+		MaxPlayers: int64(s.MaxPlayers),
 		Gamemode:   s.Gamemode,
 		Language:   s.Language,
 		Password:   s.Password,

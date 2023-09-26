@@ -27,8 +27,8 @@ type All struct {
 type Essential struct {
 	IP         string `json:"ip"`
 	Hostname   string `json:"hn"`
-	Players    int    `json:"pc"`
-	MaxPlayers int    `json:"pm"`
+	Players    int64  `json:"pc"`
+	MaxPlayers int64  `json:"pm"`
 	Gamemode   string `json:"gm"`
 	Language   string `json:"la"`
 	Password   bool   `json:"pa"`
@@ -90,8 +90,8 @@ func dbToAPI(r db.ServerModel) *All {
 		Core: Essential{
 			IP:         r.IP,
 			Hostname:   r.Hn,
-			Players:    r.Pc,
-			MaxPlayers: r.Pm,
+			Players:    int64(r.Pc),
+			MaxPlayers: int64(r.Pm),
 			Gamemode:   r.Gm,
 			Language:   r.La,
 			Password:   r.Pa,
