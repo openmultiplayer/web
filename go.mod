@@ -6,7 +6,7 @@ require (
 	github.com/Masterminds/semver v1.5.0
 	github.com/PuerkitoBio/goquery v1.6.0
 	github.com/RoaringBitmap/roaring v0.9.4 // indirect
-	github.com/Southclaws/go-samp-query v1.1.3
+	github.com/Southclaws/go-samp-query v1.2.0
 	github.com/Southclaws/qstring v1.1.0
 	github.com/Southclaws/sampctl v0.0.0-20210109143621-2daeb58d756a
 	github.com/Southclaws/supervillain v1.0.0
@@ -33,7 +33,7 @@ require (
 	github.com/russross/blackfriday v1.6.0
 	github.com/sethvargo/go-limiter v0.7.2
 	github.com/shopspring/decimal v1.3.1
-	github.com/steebchen/prisma-client-go v0.24.0 // indirect
+	github.com/steebchen/prisma-client-go v0.24.0
 	github.com/stretchr/testify v1.8.4
 	github.com/takuoki/gocase v1.0.0
 	github.com/thanhpk/randstr v1.0.4
@@ -43,7 +43,7 @@ require (
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.16.0
 	golang.org/x/oauth2 v0.0.0-20201203001011-0b49973bad19
-	golang.org/x/text v0.13.0 // indirect
+	golang.org/x/text v0.13.0
 	gopkg.in/yaml.v2 v2.4.0
 	nhooyr.io/websocket v1.8.6
 )
