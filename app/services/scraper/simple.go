@@ -33,6 +33,7 @@ func (s *SimpleScraper) Scrape(ctx context.Context, addresses []string) []server
 			Gamemode:   s.Gamemode,
 			Language:   s.Language,
 			Password:   s.Password,
+			IsOmp:      s.IsOmp,
 			// Version
 		})
 

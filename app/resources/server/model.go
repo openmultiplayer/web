@@ -33,6 +33,7 @@ type Essential struct {
 	Language   string `json:"la"`
 	Password   bool   `json:"pa"`
 	Version    string `json:"vn"`
+	IsOmp      bool   `json:"omp"`
 }
 
 // Validate checks the contents of a Server object to ensure all the required fields are valid.
@@ -95,6 +96,7 @@ func dbToAPI(r db.ServerModel) *All {
 			Language:   r.La,
 			Password:   r.Pa,
 			Version:    r.Vn,
+			IsOmp:      r.Omp,
 		},
 		Rules:       transformRules(r.Ru()),
 		Description: r.InnerServer.Description,

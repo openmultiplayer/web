@@ -38,6 +38,7 @@ func TransformQueryResult(s sampquery.Server, err error) (r All) {
 		Language:   s.Language,
 		Password:   s.Password,
 		Version:    version,
+		IsOmp:      s.IsOmp,
 	}
 
 	return r
