@@ -24,7 +24,7 @@ model User {
   github     GitHub?
   discord    Discord?
 
-  name  String  @db.String
+  name  String  @db.String(64)
   bio   String?
   admin Boolean @default(false)
 
@@ -59,8 +59,8 @@ model Server {
   // essential data (short names to save data!)
   ip String  @unique
   hn String
-  pc Int
-  pm Int
+  pc BigInt
+  pm BigInt
   gm String
   la String
   pa Boolean
