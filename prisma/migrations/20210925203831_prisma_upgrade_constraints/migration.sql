@@ -4,9 +4,6 @@ ALTER TABLE "Discord" DROP CONSTRAINT "Discord_userId_fkey";
 -- DropForeignKey
 ALTER TABLE "GitHub" DROP CONSTRAINT "GitHub_userId_fkey";
 
--- DropForeignKey
-ALTER TABLE "Post" DROP CONSTRAINT "Post_userId_fkey";
-
 -- AddForeignKey
 ALTER TABLE "GitHub" ADD CONSTRAINT "GitHub_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 

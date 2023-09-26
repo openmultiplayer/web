@@ -1,7 +1,4 @@
 -- RenameIndex
-ALTER INDEX "Category_name_key" RENAME TO "Category.name_unique";
-
--- RenameIndex
 ALTER INDEX "Discord_accountId_key" RENAME TO "Discord.accountId_unique";
 
 -- RenameIndex

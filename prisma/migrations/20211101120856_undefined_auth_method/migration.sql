@@ -2,9 +2,6 @@
 ALTER TYPE "AuthMethod" ADD VALUE 'UNDEFINED';
 
 -- RenameIndex
-ALTER INDEX "Category.name_unique" RENAME TO "Category_name_key";
-
--- RenameIndex
 ALTER INDEX "Discord.accountId_unique" RENAME TO "Discord_accountId_key";
 
 -- RenameIndex
