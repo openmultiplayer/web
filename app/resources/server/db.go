@@ -139,15 +139,23 @@ func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]str
 }
 
 func (s *DB) GetAll(ctx context.Context) ([]All, error) {
+	list := []db.ServerModel{}
 	result, err := s.client.Server.
-		FindMany(db.Server.Active.Equals(true), db.Server.DeletedAt.IsNull()).
+		FindMany( /*db.Server.Active.Equals(true), */ db.Server.DeletedAt.IsNull()).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderAsc)).
 		With(db.Server.Ru.Fetch()).
 		Exec(ctx)
+
+	for idx := range result {
+		if time.Now().Sub(result[idx].UpdatedAt).Hours() <= 36 {
+			list = append(list, result[idx])
+		}
+	}
+
 	if err != nil {
 		return nil, err
 	}
-	return dbToAPISlice(result), err
+	return dbToAPISlice(list), err
 }
 
 func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, error) {
