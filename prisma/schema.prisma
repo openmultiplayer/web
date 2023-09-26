@@ -4,7 +4,7 @@ datasource db {
 }
 
 generator client {
-  provider        = "go run github.com/prisma/prisma-client-go"
+  provider        = "go run github.com/steebchen/prisma-client-go"
   output          = "../internal/db"
   package         = "db"
   binaryTargets   = ["native"]
@@ -84,7 +84,7 @@ model Server {
 }
 
 model Rule {
-  id       Int     @id @default(sequence())
+  id       BigInt     @id @default(autoincrement())
   name     String
   value    String
   Server   Server? @relation(fields: [serverId], references: [id])
