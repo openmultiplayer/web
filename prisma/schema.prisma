@@ -65,7 +65,7 @@ model Server {
   la String
   pa Boolean
   vn String
-  omp Boolean
+  omp Boolean @default(false)
   ru Rule[]
 
   // domain name for de-duplication purposes
