@@ -82,6 +82,7 @@ model Server {
   updatedAt DateTime  @updatedAt
   deletedAt DateTime?
   omp Boolean @default(false)
+  partner Boolean @default(false)
 }
 
 model Rule {
