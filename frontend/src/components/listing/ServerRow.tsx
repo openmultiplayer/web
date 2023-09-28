@@ -1,8 +1,14 @@
 import {
   Box,
-  Button, Flex, Heading,
-  HStack, Link, Text,
-  useClipboard, VStack
+  Button,
+  Flex,
+  Heading,
+  HStack,
+  Image,
+  Link,
+  Text,
+  useClipboard,
+  VStack,
 } from "@chakra-ui/react";
 import { ChakraProps } from "@chakra-ui/system";
 import NextLink from "next/link";
@@ -42,22 +48,46 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
   return (
     <Box sx={sx}>
       <Box>
-        <NextLink href={"/servers/" + server.ip} passHref>
-          <Link>
-            <Heading
-              fontSize={"xl"}
-              style={{ marginTop: "0" }}
-              _hover={{ textDecor: "underline", cursor: "pointer" }}
-            >
-              {server.hn}
-            </Heading>
-          </Link>
-        </NextLink>
+        <Flex justifyContent="space-between" alignItems="start">
+          <NextLink href={"/servers/" + server.ip} passHref>
+            <Link>
+              <Heading
+                fontSize={"xl"}
+                style={{ marginTop: "0" }}
+                _hover={{ textDecor: "underline", cursor: "pointer" }}
+              >
+                {server.hn}
+              </Heading>
+            </Link>
+          </NextLink>
+          <Flex justifyContent="space-between" alignItems="start" gridGap={2}>
+            {server.pr && (
+              <Image
+                src="https://assets.open.mp/assets/images/assets/partners.png"
+                alt="partner server"
+                title="Has partnership!"
+                width={7}
+                height={7}
+                unoptimized={true}
+              />
+            )}
+            {server.omp && (
+              <Image
+                src="https://assets.open.mp/assets/images/assets/logo-light-trans.svg"
+                alt="open.mp server"
+                title="open.mp server"
+                width={7}
+                height={7}
+                unoptimized={true}
+              />
+            )}
+          </Flex>
+        </Flex>
 
         <Flex
           justifyContent="space-between"
           alignItems="start"
-          my="0.4em"
+          my="0.3em"
           flexWrap="wrap"
         >
           <VStack align="left">
