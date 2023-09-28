@@ -3,18 +3,22 @@ import {
   Box,
   Button,
   Center,
+  Checkbox,
   Flex,
   FormControl,
   FormHelperText,
   FormLabel,
-  Heading, Input, Modal,
+  Heading,
+  Input,
+  Modal,
   ModalBody,
   ModalCloseButton,
   ModalContent,
   ModalHeader,
   ModalOverlay,
   Select,
-  Text, useDisclosure
+  Text,
+  useDisclosure,
 } from "@chakra-ui/react";
 import Fuse from "fuse.js";
 import { filter, flow, map, reverse, sortBy, sum } from "lodash/fp";
@@ -55,8 +59,9 @@ type SortBy = "relevance" | "pc";
 
 type Query = {
   search?: string;
-  showFull: boolean;
   showEmpty: boolean;
+  showPartnersOnly: boolean;
+  showOmpOnly: boolean;
   sort: SortBy;
 };
 
@@ -75,7 +80,8 @@ const dataToList = (data: Essential[], q: Query) => {
 
   return flow(
     filter((s: Essential) => (!q.showEmpty ? s.pc > 0 : true)),
-    filter((s: Essential) => (!q.showFull ? s.pc !== s.pm : true)),
+    filter((s: Essential) => (q.showPartnersOnly ? s.pr === true : true)),
+    filter((s: Essential) => (q.showOmpOnly ? s.omp === true : true)),
     q.sort != "relevance" ? sortBy(q.sort) : sortBy(""),
     reverse,
     map((s: Essential) => <ServerRow key={s.ip} server={s} />)
@@ -159,8 +165,9 @@ const List = ({
   onAdd: (server: All) => void;
 }) => {
   const [search, setSearch] = useState("");
-  const [showFull, setShowFull] = useState(false);
-  const [showEmpty, setShowEmpty] = useState(false);
+  const [showEmpty, setShowEmpty] = useState(true);
+  const [showPartnersOnly, setShowPartnersOnly] = useState(false);
+  const [showOmpOnly, setShowOmpOnly] = useState(false);
   const [sort, setSort] = useState("relevance");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -222,14 +229,35 @@ const List = ({
             </ModalContent>
           </Modal>
         </Flex>
+        <Flex marginTop={2} gridGap={2} flexDir={{ base: "column", md: "row" }}>
+          <Checkbox
+            isChecked={showEmpty}
+            onChange={(e) => setShowEmpty(e.target.checked)}
+          >
+            Show empty servers
+          </Checkbox>
+          <Checkbox
+            isChecked={showOmpOnly}
+            onChange={(e) => setShowOmpOnly(e.target.checked)}
+          >
+            Show only open.mp servers
+          </Checkbox>
+          <Checkbox
+            isChecked={showPartnersOnly}
+            onChange={(e) => setShowPartnersOnly(e.target.checked)}
+          >
+            Show only partners
+          </Checkbox>
+        </Flex>
       </form>
       <Stats stats={getStats(data)} />
 
       <CardList>
         {dataToList(data, {
           search,
-          showFull,
           showEmpty,
+          showPartnersOnly,
+          showOmpOnly,
           sort: sort as SortBy,
         })}
       </CardList>
