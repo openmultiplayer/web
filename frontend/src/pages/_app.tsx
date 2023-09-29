@@ -44,7 +44,6 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
       }}
     />
 
-    {/* Toast notification positioning container */}
     <ToastContainer align="right" />
 
     <AuthProvider>

@@ -40,12 +40,13 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 		Update(
 			db.Server.IP.Set(e.IP),
 			db.Server.Hn.Set(e.Core.Hostname),
-			db.Server.Pc.Set(e.Core.Players),
-			db.Server.Pm.Set(e.Core.MaxPlayers),
+			db.Server.Pc.Set(db.BigInt(e.Core.Players)),
+			db.Server.Pm.Set(db.BigInt(e.Core.MaxPlayers)),
 			db.Server.Gm.Set(e.Core.Gamemode),
 			db.Server.La.Set(e.Core.Language),
 			db.Server.Pa.Set(e.Core.Password),
 			db.Server.Vn.Set(e.Core.Version),
+			db.Server.Omp.Set(e.Core.IsOmp),
 			db.Server.Domain.SetOptional(e.Domain),
 			db.Server.Description.SetOptional(e.Description),
 			db.Server.Banner.SetOptional(e.Banner),
@@ -59,13 +60,14 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 			if svr, err = s.client.Server.CreateOne(
 				db.Server.IP.Set(e.IP),
 				db.Server.Hn.Set(e.Core.Hostname),
-				db.Server.Pc.Set(e.Core.Players),
-				db.Server.Pm.Set(e.Core.MaxPlayers),
+				db.Server.Pc.Set(db.BigInt(e.Core.Players)),
+				db.Server.Pm.Set(db.BigInt(e.Core.MaxPlayers)),
 				db.Server.Gm.Set(e.Core.Gamemode),
 				db.Server.La.Set(e.Core.Language),
 				db.Server.Pa.Set(e.Core.Password),
 				db.Server.Vn.Set(e.Core.Version),
 				db.Server.Active.Set(e.Active),
+				db.Server.Omp.Set(e.Core.IsOmp),
 				db.Server.Domain.SetOptional(e.Domain),
 				db.Server.Description.SetOptional(e.Description),
 				db.Server.Banner.SetOptional(e.Banner),
@@ -139,15 +141,23 @@ func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]str
 }
 
 func (s *DB) GetAll(ctx context.Context) ([]All, error) {
+	list := []db.ServerModel{}
 	result, err := s.client.Server.
-		FindMany(db.Server.Active.Equals(true), db.Server.DeletedAt.IsNull()).
+		FindMany( /*db.Server.Active.Equals(true), */ db.Server.DeletedAt.IsNull()).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderAsc)).
 		With(db.Server.Ru.Fetch()).
 		Exec(ctx)
+
+	for idx := range result {
+		if time.Now().Sub(result[idx].UpdatedAt).Hours() <= 36 {
+			list = append(list, result[idx])
+		}
+	}
+
 	if err != nil {
 		return nil, err
 	}
-	return dbToAPISlice(result), err
+	return dbToAPISlice(list), err
 }
 
 func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, error) {

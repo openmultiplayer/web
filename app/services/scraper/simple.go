@@ -28,11 +28,12 @@ func (s *SimpleScraper) Scrape(ctx context.Context, addresses []string) []server
 		result = append(result, server.Essential{
 			IP:         s.Address,
 			Hostname:   s.Hostname,
-			Players:    s.Players,
-			MaxPlayers: s.MaxPlayers,
+			Players:    int64(s.Players),
+			MaxPlayers: int64(s.MaxPlayers),
 			Gamemode:   s.Gamemode,
 			Language:   s.Language,
 			Password:   s.Password,
+			IsOmp:      s.IsOmp,
 			// Version
 		})
 
