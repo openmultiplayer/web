@@ -52,6 +52,7 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
           <NextLink href={"/servers/" + server.ip} passHref>
             <Link>
               <Heading
+                wordBreak={"break-word"}
                 fontSize={"xl"}
                 style={{ marginTop: "0" }}
                 _hover={{ textDecor: "underline", cursor: "pointer" }}
