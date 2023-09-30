@@ -61,7 +61,7 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
               </Heading>
             </Link>
           </NextLink>
-          <Stack>
+          <HStack>
             {server.pr && (
               <Image
                 src="https://assets.open.mp/assets/images/assets/partners.png"
@@ -86,7 +86,7 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
                 unoptimized={true}
               />
             )}
-          </Stack>
+          </HStack>
         </Flex>
 
         <Flex
