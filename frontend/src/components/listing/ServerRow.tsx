@@ -61,12 +61,14 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
               </Heading>
             </Link>
           </NextLink>
-          <Flex justifyContent="space-between" alignItems="start" gridGap={2}>
+          <Stack>
             {server.pr && (
               <Image
                 src="https://assets.open.mp/assets/images/assets/partners.png"
                 alt="partner server"
                 title="Has partnership!"
+                maxWidth={7}
+                maxHeight={7}
                 width={7}
                 height={7}
                 unoptimized={true}
@@ -77,12 +79,14 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
                 src="https://assets.open.mp/assets/images/assets/logo-light-trans.svg"
                 alt="open.mp server"
                 title="open.mp server"
+                maxWidth={7}
+                maxHeight={7}
                 width={7}
                 height={7}
                 unoptimized={true}
               />
             )}
-          </Flex>
+          </Stack>
         </Flex>
 
         <Flex
