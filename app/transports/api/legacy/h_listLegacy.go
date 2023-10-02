@@ -2,6 +2,7 @@ package legacy
 
 import (
 	"net/http"
+	"time"
 
 	"github.com/pkg/errors"
 
@@ -9,7 +10,7 @@ import (
 )
 
 func (s *service) listLegacy(w http.ResponseWriter, r *http.Request) {
-	list, err := s.storer.GetAll(r.Context())
+	list, err := s.storer.GetAll(r.Context(), time.Duration(-12)*time.Hour)
 	if err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to get list of servers"))
 		return
