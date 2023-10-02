@@ -18,7 +18,7 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		since = 12
 	}
 
-	list, err := s.storer.GetAll(r.Context(), time.Duration(since)*time.Hour)
+	list, err := s.storer.GetAll(r.Context(), time.Duration(-since)*time.Hour)
 	if err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to get list of servers"))
 		return
