@@ -149,7 +149,7 @@ func (s *DB) GetAll(ctx context.Context) ([]All, error) {
 		Exec(ctx)
 
 	for idx := range result {
-		if time.Now().Sub(result[idx].UpdatedAt).Hours() <= 36 {
+		if time.Now().Sub(result[idx].UpdatedAt).Hours() <= 12 {
 			list = append(list, result[idx])
 		}
 	}
