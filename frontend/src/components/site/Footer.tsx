@@ -11,19 +11,13 @@ const footerList = (heading: string, items: Array<Item>) => (
       {map(([path, name]) => (
         <li key={path}>
           <Link href={path}>
-            <a className="link near-white hover-white" target="_blank">
+            <a className="link near-white" target="_blank">
               {name}
             </a>
           </Link>
         </li>
       ))(items)}
     </ul>
-
-    <style jsx>{`
-      a:visited {
-        color: lightblue;
-      }
-    `}</style>
   </div>
 );
 
@@ -48,7 +42,6 @@ const Footer = () => (
       ])}
 
       {footerList("More", [
-        ["https://sa-mp.com", "SA-MP"],
         ["/blog", "Blog"],
         ["https://github.com/openmultiplayer/", "GitHub"],
       ])}
