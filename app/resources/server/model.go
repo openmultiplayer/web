@@ -75,7 +75,7 @@ func (server All) Example() All {
 			"mapname":   "San Andreas",
 			"version":   "0.3.7-R2",
 			"weather":   "10",
-			"weburl":    "www.sa-mp.com",
+			"weburl":    "www.sa-mp.mp",
 			"worldtime": "10:00",
 		},
 		Description: &[]string{"An awesome server! Come and play with us."}[0],
