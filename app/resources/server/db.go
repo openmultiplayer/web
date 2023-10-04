@@ -171,6 +171,7 @@ func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, er
 
 func (s *DB) GetAllCached(updatedSince time.Duration) ([]All, error) {
 	result := []All{}
+	list := []All{}
 	dat, err := os.ReadFile(s.cfg.CachedServers)
 	if err != nil {
 		return nil, err
@@ -181,7 +182,13 @@ func (s *DB) GetAllCached(updatedSince time.Duration) ([]All, error) {
 		return nil, err
 	}
 
-	return result, nil
+	for idx := range result {
+		if result[idx].LastUpdated.After(time.Now().Add(updatedSince)) {
+			list = append(list, result[idx])
+		}
+	}
+
+	return list, nil
 }
 
 func (s *DB) GetByAddressCached(address string) (*All, error) {
