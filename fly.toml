@@ -13,7 +13,7 @@ processes    = []
 [env]
     LOG_LEVEL           = "debug"
     PACKAGES_DB         = "/data/packages.db"
-    CACHED_SERVERS_FILE = "/data/cachedServers.db"
+    CACHED_SERVERS_FILE = "/data/cachedServers.json"
     PRODUCTION          = "true"
     PUBLIC_WEB_ADDRESS  = "https://www.open.mp"
 
