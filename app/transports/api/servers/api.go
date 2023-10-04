@@ -36,7 +36,9 @@ func Build() fx.Option {
 			s *service,
 		) {
 			rtr := chi.NewRouter()
-			r.Mount("/servers", rtr)
+			r.With(
+				cacheClient.Middleware,
+			).Mount("/servers", rtr)
 
 			// TODO: Remove this at some point.
 			r.Mount("/server", rtr)
