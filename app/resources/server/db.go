@@ -7,6 +7,7 @@ import (
 
 	"github.com/goccy/go-json"
 	"github.com/pkg/errors"
+	"go.uber.org/zap"
 
 	"github.com/openmultiplayer/web/internal/config"
 	"github.com/openmultiplayer/web/internal/db"
@@ -169,17 +170,44 @@ func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, er
 	return dbToAPI(*result), err
 }
 
-func (s *DB) GetAllCached(updatedSince time.Duration) ([]All, error) {
+func (s *DB) GetAllCached(ctx context.Context, updatedSince time.Duration) ([]All, error) {
 	result := []All{}
 	list := []All{}
-	dat, err := os.ReadFile(s.cfg.CachedServers)
-	if err != nil {
-		return nil, err
-	}
 
-	err = json.Unmarshal(dat, &result)
-	if err != nil {
-		return nil, err
+	_, err := os.Stat(s.cfg.CachedServers)
+	if errors.Is(err, os.ErrNotExist) {
+		result, err = s.GetAll(ctx, updatedSince)
+		// Let's save all servers info our cache file to be used in our API data processing instead of DB
+		jsonData, err := json.Marshal(result)
+		if err != nil {
+			zap.L().Error("There was an error converting native array of servers to JSON data",
+				zap.Error(err))
+			return nil, err
+		}
+
+		cacheFile, err := os.Create(s.cfg.CachedServers)
+		if err != nil {
+			zap.L().Error("Could not create server cache file",
+				zap.Error(err))
+			return nil, err
+		}
+
+		_, err = cacheFile.Write(jsonData)
+		if err != nil {
+			zap.L().Error("There was an error writing collected servers into cache file",
+				zap.Error(err))
+			return nil, err
+		}
+	} else {
+		dat, err := os.ReadFile(s.cfg.CachedServers)
+		if err != nil {
+			return nil, err
+		}
+
+		err = json.Unmarshal(dat, &result)
+		if err != nil {
+			return nil, err
+		}
 	}
 
 	for idx := range result {
@@ -191,8 +219,8 @@ func (s *DB) GetAllCached(updatedSince time.Duration) ([]All, error) {
 	return list, nil
 }
 
-func (s *DB) GetByAddressCached(address string) (*All, error) {
-	result, err := s.GetAllCached(-120 * time.Hour)
+func (s *DB) GetByAddressCached(ctx context.Context, address string) (*All, error) {
+	result, err := s.GetAllCached(ctx, -120*time.Hour)
 	if err != nil {
 		return nil, err
 	}
