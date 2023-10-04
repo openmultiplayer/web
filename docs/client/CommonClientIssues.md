@@ -32,7 +32,7 @@ Ensure you are not using any disallowed characters in your name (use 0-9, a-z, \
 
 ### Screen sticks at "Connecting to IP:Port..."
 
-The server could be offline, or if you can't connect to any server, disable your firewall and see if it works. If it does, you will need to reconfigure your firwall. It could also be that you are running an outdated version of SA:MP - you can find new versions [here](http://sa-mp.com/download.php).
+The server could be offline, or if you can't connect to any server, disable your firewall and see if it works. If it does, you will need to reconfigure your firwall. It could also be that you are running an outdated version of SA:MP - you can find new versions [here](https://sa-mp.mp/downloads/).
 
 ### I have a modified GTA: San Andreas and SA:MP won't load
 
