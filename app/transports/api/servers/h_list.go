@@ -18,7 +18,12 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		since = 12
 	}
 
-	list, err := s.storer.GetAll(r.Context(), time.Duration(-since)*time.Hour)
+	// This used to be for getting servers from database directly
+	// list, err := s.storer.GetAll(r.Context(), time.Duration(-since)*time.Hour)
+
+	// Let's use cached servers, instead of getting them directly from database
+	// This way we can save a lot DB processing
+	list, err := s.storer.GetAllCached(time.Duration(-since) * time.Hour)
 	if err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to get list of servers"))
 		return
