@@ -2,10 +2,13 @@ package server
 
 import (
 	"context"
+	"os"
 	"time"
 
+	"github.com/goccy/go-json"
 	"github.com/pkg/errors"
 
+	"github.com/openmultiplayer/web/internal/config"
 	"github.com/openmultiplayer/web/internal/db"
 )
 
@@ -13,10 +16,11 @@ var _ Repository = &DB{}
 
 type DB struct {
 	client *db.PrismaClient
+	cfg    config.Config
 }
 
-func New(client *db.PrismaClient) Repository {
-	return &DB{client}
+func New(client *db.PrismaClient, cfg config.Config) Repository {
+	return &DB{client, cfg}
 }
 
 func (s *DB) Upsert(ctx context.Context, e All) error {
@@ -163,4 +167,34 @@ func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, er
 		return nil, err
 	}
 	return dbToAPI(*result), err
+}
+
+func (s *DB) GetAllCached(updatedSince time.Duration) ([]All, error) {
+	result := []All{}
+	dat, err := os.ReadFile(s.cfg.CachedServers)
+	if err != nil {
+		return nil, err
+	}
+
+	err = json.Unmarshal(dat, &result)
+	if err != nil {
+		return nil, err
+	}
+
+	return result, nil
+}
+
+func (s *DB) GetByAddressCached(address string) (*All, error) {
+	result, err := s.GetAllCached(-120 * time.Hour)
+	if err != nil {
+		return nil, err
+	}
+
+	for _, n := range result {
+		if address == n.IP {
+			return &n, nil
+		}
+	}
+
+	return nil, errors.New("server_not_found")
 }

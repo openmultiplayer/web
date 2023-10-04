@@ -7,11 +7,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/openmultiplayer/web/app/resources/server"
 	"github.com/openmultiplayer/web/internal/web"
 )
 
-func (s *service) list(w http.ResponseWriter, r *http.Request) {
+func (s *service) fulllist(w http.ResponseWriter, r *http.Request) {
 	queries := r.URL.Query()
 	since, err := strconv.Atoi(queries.Get("activeSince"))
 	if err != nil {
@@ -29,10 +28,5 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	essential := []server.Essential{}
-	for _, item := range list {
-		essential = append(essential, item.Core)
-	}
-
-	web.Write(w, essential)
+	web.Write(w, list)
 }
