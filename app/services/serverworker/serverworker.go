@@ -77,6 +77,7 @@ func (w *Worker) RunWithSeed(ctx context.Context, window time.Duration, addresse
 func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 	tc := time.NewTicker(window)
 	for range tc.C {
+		zap.L().Info("Running server scraper worker")
 		addresses, err := w.db.GetServersToQuery(ctx, window)
 		if err != nil {
 			zap.L().Error("failed to get servers to query",
@@ -117,6 +118,7 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 			continue
 		}
 
+		zap.L().Info("Saving all servers into a JSON file to be used as cache")
 		// Let's save all servers info our cache file to be used in our API data processing instead of DB
 		jsonData, err := json.Marshal(all)
 		if err != nil {
