@@ -2,10 +2,10 @@ package server
 
 import (
 	"context"
-	"encoding/json"
 	"os"
 	"time"
 
+	"github.com/goccy/go-json"
 	"github.com/pkg/errors"
 
 	"github.com/openmultiplayer/web/internal/config"

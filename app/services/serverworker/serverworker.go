@@ -2,10 +2,10 @@ package serverworker
 
 import (
 	"context"
-	"encoding/json"
 	"os"
 	"time"
 
+	"github.com/goccy/go-json"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"go.uber.org/fx"
