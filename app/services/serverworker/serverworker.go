@@ -2,6 +2,8 @@ package serverworker
 
 import (
 	"context"
+	"encoding/json"
+	"os"
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
@@ -34,8 +36,9 @@ var (
 )
 
 type Worker struct {
-	db server.Repository
-	sc scraper.Scraper
+	db  server.Repository
+	sc  scraper.Scraper
+	cfg config.Config
 }
 
 func Build() fx.Option {
@@ -46,7 +49,7 @@ func Build() fx.Option {
 		),
 
 		fx.Invoke(func(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper, cfg config.Config) *Worker {
-			w := &Worker{db, sc}
+			w := &Worker{db, sc, cfg}
 
 			lc.Append(fx.Hook{
 				OnStart: func(ctx context.Context) error {
@@ -110,6 +113,28 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 		all, err := w.db.GetAll(ctx, time.Duration(-12)*time.Hour)
 		if err != nil {
 			zap.L().Error("failed to get all servers for metrics",
+				zap.Error(err))
+			continue
+		}
+
+		// Let's save all servers info our cache file to be used in our API data processing instead of DB
+		jsonData, err := json.Marshal(all)
+		if err != nil {
+			zap.L().Error("There was an error converting native array of servers to JSON data",
+				zap.Error(err))
+			continue
+		}
+
+		cacheFile, err := os.Create(w.cfg.CachedServers)
+		if err != nil {
+			zap.L().Error("Could not create server cache file",
+				zap.Error(err))
+			continue
+		}
+
+		_, err = cacheFile.Write(jsonData)
+		if err != nil {
+			zap.L().Error("There was an error writing collected servers into cache file",
 				zap.Error(err))
 			continue
 		}
