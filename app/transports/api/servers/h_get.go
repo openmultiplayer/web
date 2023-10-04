@@ -16,7 +16,7 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 
 	// Let's use cached servers, instead of getting them directly from database
 	// This way we can save a lot DB processing
-	result, err := s.storer.GetByAddressCached(chi.URLParam(r, "address"))
+	result, err := s.storer.GetByAddressCached(r.Context(), chi.URLParam(r, "address"))
 	if err != nil {
 		if errors.Is(err, db.ErrNotFound) {
 			web.StatusNotFound(w, err)

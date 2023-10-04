@@ -22,7 +22,7 @@ func (s *service) fulllist(w http.ResponseWriter, r *http.Request) {
 
 	// Let's use cached servers, instead of getting them directly from database
 	// This way we can save a lot DB processing
-	list, err := s.storer.GetAllCached(time.Duration(-since) * time.Hour)
+	list, err := s.storer.GetAllCached(r.Context(), time.Duration(-since)*time.Hour)
 	if err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to get list of servers"))
 		return
