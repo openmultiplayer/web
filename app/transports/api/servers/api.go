@@ -58,6 +58,7 @@ func Build() fx.Option {
 
 			rtr.Get("/{address}", s.get)
 			rtr.Get("/", s.list)
+			rtr.Get("/full", s.fulllist)
 			rtr.Post("/", s.add)
 			rtr.
 				With(authentication.MustBeAuthenticated).
