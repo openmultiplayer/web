@@ -43,9 +43,10 @@ func Build() fx.Option {
 			rtr.Use(
 				cors.Handler(cors.Options{
 					AllowedOrigins: []string{
-						"http://localhost:3000", // Local development, `npm run dev`
-						cfg.PublicWebAddress,    // Live public website
-						"*",                     // Any browser instance
+						"http://localhost:3000",    // Local development, `npm run dev`
+						cfg.PublicWebAddress,       // Live public website
+						cfg.LauncherBackendAddress, // Launcher backend address
+						"*",                        // Any browser instance
 					},
 					AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
