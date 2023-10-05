@@ -40,9 +40,6 @@ func Build() fx.Option {
 				cacheClient.Middleware,
 			).Mount("/servers", rtr)
 
-			// TODO: Remove this at some point.
-			r.Mount("/server", rtr)
-
 			rtr.Use(
 				cors.Handler(cors.Options{
 					AllowedOrigins: []string{
