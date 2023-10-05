@@ -34,5 +34,6 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 		essential = append(essential, item.Core)
 	}
 
+	w.Header().Add("Content-Type", "application/json")
 	web.Write(w, essential)
 }

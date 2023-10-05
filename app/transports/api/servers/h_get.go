@@ -25,5 +25,7 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		}
 		return
 	}
+
+	w.Header().Add("Content-Type", "application/json")
 	web.Write(w, result)
 }

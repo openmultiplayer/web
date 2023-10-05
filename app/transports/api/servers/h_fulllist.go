@@ -28,5 +28,6 @@ func (s *service) fulllist(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	w.Header().Add("Content-Type", "application/json")
 	web.Write(w, list)
 }
