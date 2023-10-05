@@ -47,8 +47,9 @@ func Build() fx.Option {
 			router := chi.NewRouter()
 
 			origins := []string{
-				"http://localhost:3000", // Local development, `npm run dev`
-				cfg.PublicWebAddress,    // Live public website
+				"http://localhost:3000",    // Local development, `npm run dev`
+				cfg.LauncherBackendAddress, // Launcher backend address
+				cfg.PublicWebAddress,       // Live public website
 			}
 
 			l.Debug("preparing router", zap.Strings("origins", origins))
