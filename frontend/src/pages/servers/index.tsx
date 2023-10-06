@@ -34,7 +34,7 @@ import { API_ADDRESS } from "src/config";
 import { All, Essential } from "src/types/_generated_Server";
 import useSWR from "swr";
 
-const API_SERVERS = `${API_ADDRESS}/server/`;
+const API_SERVERS = `${API_ADDRESS}/servers/`;
 
 const getServers = async (): Promise<Array<Essential>> => {
   const r: Response = await fetch(API_SERVERS);
