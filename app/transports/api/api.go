@@ -72,6 +72,10 @@ func Build() fx.Option {
 				web.Write(w, map[string]string{"version": version.Version}) //nolint:errcheck
 			})
 
+			router.Get("/launcher", func(w http.ResponseWriter, r *http.Request) {
+				web.Write(w, map[string]string{"version": cfg.LauncherVersion, "download": "https://github.com/openmultiplayer/launcher/releases"}) //nolint:errcheck
+			})
+
 			router.HandleFunc(
 				"/{rest:[a-zA-Z0-9=\\-\\/]+}",
 				func(w http.ResponseWriter, r *http.Request) {
