@@ -13,6 +13,7 @@ import (
 	"github.com/openmultiplayer/web/app/services/authentication"
 	"github.com/openmultiplayer/web/app/transports/api/auth"
 	"github.com/openmultiplayer/web/app/transports/api/docs"
+	"github.com/openmultiplayer/web/app/transports/api/launcher"
 	"github.com/openmultiplayer/web/app/transports/api/legacy"
 	"github.com/openmultiplayer/web/app/transports/api/metrics"
 	"github.com/openmultiplayer/web/app/transports/api/pawndex"
@@ -32,6 +33,7 @@ func Build() fx.Option {
 		servers.Build(),
 		users.Build(),
 		pawndex.Build(),
+		launcher.Build(),
 
 		// Starts the HTTP server in a goroutine and fatals if it errors.
 		fx.Invoke(func(l *zap.Logger, server *http.Server) {
@@ -70,10 +72,6 @@ func Build() fx.Option {
 
 			router.Get("/version", func(w http.ResponseWriter, r *http.Request) {
 				web.Write(w, map[string]string{"version": version.Version}) //nolint:errcheck
-			})
-
-			router.Get("/launcher", func(w http.ResponseWriter, r *http.Request) {
-				web.Write(w, map[string]string{"version": cfg.LauncherVersion, "download": "https://github.com/openmultiplayer/launcher/releases"}) //nolint:errcheck
 			})
 
 			router.HandleFunc(
