@@ -11,10 +11,12 @@ processes    = []
     auto_rollback        = true
 
 [env]
-    LOG_LEVEL          = "debug"
-    PACKAGES_DB        = "/data/packages.db"
-    PRODUCTION         = "true"
-    PUBLIC_WEB_ADDRESS = "https://www.open.mp"
+    LOG_LEVEL                = "debug"
+    PACKAGES_DB              = "/data/packages.db"
+    CACHED_SERVERS_FILE      = "/data/cachedServers.json"
+    PRODUCTION               = "true"
+    PUBLIC_WEB_ADDRESS       = "https://www.open.mp"
+    LAUNCHER_BACKEND_ADDRESS = "http://localhost:1420"
 
 [mounts]
     destination = "/data"

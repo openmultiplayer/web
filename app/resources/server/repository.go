@@ -12,6 +12,8 @@ type Repository interface {
 	GetByAddress(context.Context, string) (*All, error)
 	GetEssential(context.Context, string) (*Essential, error)
 	GetServersToQuery(context.Context, time.Duration) ([]string, error)
-	GetAll(context.Context) ([]All, error)
+	GetAll(context.Context, time.Duration) ([]All, error)
 	SetDeleted(context.Context, string, *time.Time) (*All, error)
+	GetAllCached(context.Context, time.Duration) ([]All, error)
+	GetByAddressCached(context.Context, string) (*All, error)
 }

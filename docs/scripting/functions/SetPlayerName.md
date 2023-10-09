@@ -17,9 +17,9 @@ Sets the name of a player.
 
 1 The name was changed successfully
 
-0 The player already has that name
+0 The player is not connected or the name is already in use
 
--1 The name can not be changed (it's already in use, too long or has invalid characters)
+-1 The name can not be changed (it's less than 3 symbols, too long or has invalid characters)
 
 ## Examples
 
@@ -39,11 +39,11 @@ if (strcmp(cmdtext, "/superman", true) == 0)
     {
         case -1:
         {
-            SendClientMessage(playerid, 0xFF0000FF, "Unable to change your name, someone else is known as 'Superman' already.");
+            SendClientMessage(playerid, 0xFF0000FF, "The name has invalid characters or it's out of length.");
         }
         case 0:
         {
-            SendClientMessage(playerid, 0xFF0000FF, "You are already known as 'Superman'");
+            SendClientMessage(playerid, 0xFF0000FF, "Unable to change your name, someone else is known as 'Superman' already.");
         }
         case 1:
         {

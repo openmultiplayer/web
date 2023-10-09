@@ -5,7 +5,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh && \
 
 # Node
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 14.17.4
+ENV NODE_VERSION 16.13.2
 
 RUN mkdir -p $NVM_DIR && \
     curl --silent -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \

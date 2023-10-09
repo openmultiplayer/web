@@ -10,7 +10,7 @@ tags: ["player"]
 
 Callback appelée quand un joueur fini de télécharger les models custom du serveur.
 
-Pour plus d'informations sur comment ajouter des custom models sur son serveur, référez-vous aux tutoriels sur [Burgershot.gg](https://www.burgershot.gg/).
+Pour plus d'informations sur comment ajouter des custom models sur son serveur, référez-vous aux tutoriels sur [Burgershot.gg](https://forum.open.mp/).
 
 | Nom                | Description                                                                    |
 | ------------------ | ------------------------------------------------------------------------------ |

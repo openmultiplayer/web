@@ -27,16 +27,16 @@ gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 ```
 
 ```
-            MinY
-             v
-      MinX > *-------------
+                          MaxY
+                          v
+             -------------* < MaxX
              |            |
              |  gangzone  |
              |   center   |
              |            |
-             -------------* < MaxX
-                          ^
-                          MaxY
+      MinX > *-------------
+             ^
+             MinY
 ```
 
 ## Notes
@@ -49,7 +49,8 @@ This function merely CREATES the gangzone, you must use GangZoneShowForPlayer or
 
 :::warning
 
-There is a limit of 1024 gangzones. Putting the parameters in the wrong order results in glitchy behavior.
+* There is a limit of 1024 gangzones. 
+* Putting the parameters in the wrong order results in glitchy behavior.
 
 :::
 

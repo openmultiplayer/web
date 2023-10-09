@@ -2,10 +2,14 @@ package server
 
 import (
 	"context"
+	"os"
 	"time"
 
+	"github.com/goccy/go-json"
 	"github.com/pkg/errors"
+	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/internal/config"
 	"github.com/openmultiplayer/web/internal/db"
 )
 
@@ -13,10 +17,11 @@ var _ Repository = &DB{}
 
 type DB struct {
 	client *db.PrismaClient
+	cfg    config.Config
 }
 
-func New(client *db.PrismaClient) Repository {
-	return &DB{client}
+func New(client *db.PrismaClient, cfg config.Config) Repository {
+	return &DB{client, cfg}
 }
 
 func (s *DB) Upsert(ctx context.Context, e All) error {
@@ -40,12 +45,13 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 		Update(
 			db.Server.IP.Set(e.IP),
 			db.Server.Hn.Set(e.Core.Hostname),
-			db.Server.Pc.Set(e.Core.Players),
-			db.Server.Pm.Set(e.Core.MaxPlayers),
+			db.Server.Pc.Set(db.BigInt(e.Core.Players)),
+			db.Server.Pm.Set(db.BigInt(e.Core.MaxPlayers)),
 			db.Server.Gm.Set(e.Core.Gamemode),
 			db.Server.La.Set(e.Core.Language),
 			db.Server.Pa.Set(e.Core.Password),
 			db.Server.Vn.Set(e.Core.Version),
+			db.Server.Omp.Set(e.Core.IsOmp),
 			db.Server.Domain.SetOptional(e.Domain),
 			db.Server.Description.SetOptional(e.Description),
 			db.Server.Banner.SetOptional(e.Banner),
@@ -59,13 +65,14 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 			if svr, err = s.client.Server.CreateOne(
 				db.Server.IP.Set(e.IP),
 				db.Server.Hn.Set(e.Core.Hostname),
-				db.Server.Pc.Set(e.Core.Players),
-				db.Server.Pm.Set(e.Core.MaxPlayers),
+				db.Server.Pc.Set(db.BigInt(e.Core.Players)),
+				db.Server.Pm.Set(db.BigInt(e.Core.MaxPlayers)),
 				db.Server.Gm.Set(e.Core.Gamemode),
 				db.Server.La.Set(e.Core.Language),
 				db.Server.Pa.Set(e.Core.Password),
 				db.Server.Vn.Set(e.Core.Version),
 				db.Server.Active.Set(e.Active),
+				db.Server.Omp.Set(e.Core.IsOmp),
 				db.Server.Domain.SetOptional(e.Domain),
 				db.Server.Description.SetOptional(e.Description),
 				db.Server.Banner.SetOptional(e.Banner),
@@ -138,12 +145,13 @@ func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]str
 	return addresses, nil
 }
 
-func (s *DB) GetAll(ctx context.Context) ([]All, error) {
+func (s *DB) GetAll(ctx context.Context, updatedSince time.Duration) ([]All, error) {
 	result, err := s.client.Server.
-		FindMany(db.Server.Active.Equals(true), db.Server.DeletedAt.IsNull()).
+		FindMany(db.Server.UpdatedAt.After(time.Now().Add(updatedSince)), db.Server.DeletedAt.IsNull()).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderAsc)).
 		With(db.Server.Ru.Fetch()).
 		Exec(ctx)
+
 	if err != nil {
 		return nil, err
 	}
@@ -160,4 +168,68 @@ func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, er
 		return nil, err
 	}
 	return dbToAPI(*result), err
+}
+
+func (s *DB) GetAllCached(ctx context.Context, updatedSince time.Duration) ([]All, error) {
+	result := []All{}
+	list := []All{}
+
+	_, err := os.Stat(s.cfg.CachedServers)
+	if errors.Is(err, os.ErrNotExist) {
+		result, err = s.GetAll(ctx, updatedSince)
+		// Let's save all servers info our cache file to be used in our API data processing instead of DB
+		jsonData, err := json.Marshal(result)
+		if err != nil {
+			zap.L().Error("There was an error converting native array of servers to JSON data",
+				zap.Error(err))
+			return nil, err
+		}
+
+		cacheFile, err := os.Create(s.cfg.CachedServers)
+		if err != nil {
+			zap.L().Error("Could not create server cache file",
+				zap.Error(err))
+			return nil, err
+		}
+
+		_, err = cacheFile.Write(jsonData)
+		if err != nil {
+			zap.L().Error("There was an error writing collected servers into cache file",
+				zap.Error(err))
+			return nil, err
+		}
+	} else {
+		dat, err := os.ReadFile(s.cfg.CachedServers)
+		if err != nil {
+			return nil, err
+		}
+
+		err = json.Unmarshal(dat, &result)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	for idx := range result {
+		if result[idx].LastUpdated.After(time.Now().Add(updatedSince)) {
+			list = append(list, result[idx])
+		}
+	}
+
+	return list, nil
+}
+
+func (s *DB) GetByAddressCached(ctx context.Context, address string) (*All, error) {
+	result, err := s.GetAllCached(ctx, -120*time.Hour)
+	if err != nil {
+		return nil, err
+	}
+
+	for _, n := range result {
+		if address == n.IP {
+			return &n, nil
+		}
+	}
+
+	return nil, errors.New("server_not_found")
 }

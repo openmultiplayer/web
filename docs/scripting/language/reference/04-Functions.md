@@ -1256,6 +1256,7 @@ forward Fixed: operator%(val1, Fixed: val2)
 Because of the presence of the (forward) declaration of the operator, the pawn
 parser will attempt to use the user-defined operator rather than the default
 “%” operator. By not implementing the operator, the parser will subsequently issue an error message.
+`User-defined operators: 86`
 
 ---
 ### • Call by Value and Call by Reference
@@ -1305,10 +1306,69 @@ The value of x is 10 and value of y is 20, before calling 'swap'.
 The value of x is 20 and value of y is 10, after calling 'swap'.
 ```
 
----
-
-`User-defined operators: 86`
-
----
+### • Recursion / Function Recursion
+Recursion in programming refers to the process of a function calling itself in order to solve a problem. It's a fundamental concept used to solve problems that can be broken down into smaller instances of the same problem. Recursion consists of two main components: base cases and recursive cases.
+##### Base Case: 
+Every recursive function should have one or more base cases. A base case is a condition under which the function stops calling itself and returns a result directly. Without base cases, the recursion would continue indefinitely, causing a stack overflow. Read Stack/Heap section to know more about it.
+##### Recursive Case:
+The recursive case is where the function calls itself to solve a smaller instance of the problem. Each recursive call should bring the problem closer to a base case.
+#### Example
+```c
+stock factorial(n) {
+    // Base case: factorial of 0 is 1
+    if (n == 0) {
+        return 1;
+    }
+    // Recursive case: n! = n * (n - 1)!
+    else {
+        return n * factorial(n - 1);
+    }
+}
+main() {
+    new num = 3;
+    new result = factorial(num);
+    printf("Factorial of %d is %d", num, result); // Output: Factorial of 3 is 6
+}
+```
+#### Demonstrate the Output
+```
+main() \\ main function from where execution of program starts
+new num = 3; \\ creates a num variable
+new result = factorial(num); \\ create a result variable and calls the factorial() with passing value of num, factorial(5)
+factorial(3) \\ factorial initiate
+   if(3 == 0) \\ checks the condition which is false
+   else{ 3 * factorial(3-1) } \\ 3 * and calls the factorial(2)
+      factorial(2) \\ factorial initiate again
+         if(2 == 0) \\ checks the condition which is false
+         else{ 2 * factorial(2-1) } \\ 3 * 2 * and calls the factorial(1)
+            factorial(1) \\ factorial initiate again
+            if(1 == 0) \\ checks the condition which is false
+            else{ 1 * factorial(1-1) } \\ 3 * 2 * 1 and calls the factorial(0)
+ 	       factorial(0) \\ factorial initiate again
+               if(0 == 0) return 1 \\ checks the conition which is true and return 1
+		\\ at the final call 3 * 2 * 1 * 1 
+```
+### Stack Memory
+The stack is a region of memory used for storing local variables, function call information, and control flow data. It operates in a Last-In-First-Out (LIFO) manner, which means that the last item pushed onto the stack is the first one to be popped off.
+#### Example (Stack Overflow)
+```c
+#pragma dynamic 35 // (35 * 4 bytes, a cell size) #pragma dynamic [cells] helps to modify the size of stack, read docs/scripting/language/Directives to know more about #pragma
+main(){
+	grow_stack(1);
+}
+grow_stacK(n){ // recursive function
+	printf("N: %d", n);
+	grow_stacK(n+1);
+}
+```
+#### Output
+```
+N: 1
+N: 2
+N: 3
+.. .
+Stack/heap collision (insufficient stack size)
+```
+![Stack](https://i.imgur.com/ZaIVUkJ.png)
 
 [Go Back to Contents](00-Contents.md)

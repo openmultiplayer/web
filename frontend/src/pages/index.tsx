@@ -89,19 +89,37 @@ const Home = () => {
 
   const features = [
     {
-      heading: "Fully backwards compatible to make switching a breeze",
+      heading: "Fully backwards compatible with existing scripts and clients",
       bodyText:
-        "The open.mp team have put in extra effort to make sure open.mp stays fully backwards compatible i.e all your existing sa-mp server code will work out of the box.",
+        "Got an old AMX lying about?  Load it up on the open.mp server straight out the box and join you friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
       buttonLink: "/docs",
       buttonText: "Getting Started",
       img: "/images/assets/f1.png",
       imgAlt: "open.mp logo",
     },
     {
+      heading: "New and improved scripting system",
+      bodyText:
+        "We've stuck with pawn, but with a new compiler engineered to make your code more robust, and more functions to manipulate the server and client.  If that's still not enough there's an...",
+      buttonLink: "https://github.com/openmultiplayer/omp-stdlib/#openmp-includes",
+      buttonText: "Learn about the improvements",
+      img: "/images/assets/f5.png",
+      imgAlt: "pawn logo",
+    },
+    {
+      heading: "Extensible C++ API",
+      bodyText:
+        "Get access to all the server features available in pawn, plus the universe of C++ libraries and frameworks.  Once you've mastered this why not help improve the server via our...",
+      buttonLink: "/docs",
+      buttonText: "Getting Started",
+      img: "/images/assets/f4.png",
+      imgAlt: "C++ logo",
+    },
+    {
       heading: "Community driven development",
       bodyText:
-        "Once fully released, the server will be fully open source. For now you can help by contributing to the wiki, Or by testing the beta server software.",
-      buttonLink: "https://github.com/openmultiplayer",
+        "The server is fully open source, and we welcome all contributions big or small.  Help write the next version, or just post about any problems you find; despite our attempts to have...",
+      buttonLink: "https://github.com/openmultiplayer/open.mp",
       buttonText: "Visit the GitHub repo",
       img: "/images/assets/f2.png",
       imgAlt: "Github stats illustration",
@@ -109,20 +127,11 @@ const Home = () => {
     {
       heading: "Age old SAMP bugs fixed",
       bodyText:
-        "Many well known SAMP bugs have been fixed - no more hacky workarounds, you have all the proper tools in your hands now.",
+        "Many SA:MP bugs, well known and obscure, have been fixed.  No more hacky work-arounds; no more community bug-fix projects; you have all the proper tools in your hands now.",
       buttonLink: "/blog",
       buttonText: "Read the blog post",
       img: "/images/assets/f3.png",
       imgAlt: "pawn code screen",
-    },
-    {
-      heading: "Extensible C++ API",
-      bodyText:
-        "Build upon the extensible C++ API with the open.mp Software Development kit.",
-      buttonLink: "/docs",
-      buttonText: "Getting Started",
-      img: "/images/assets/f4.png",
-      imgAlt: "C++ logo",
     },
   ];
 
@@ -167,15 +176,7 @@ const Home = () => {
 
       <main>
         <Box className={heroStyles.hero} py="2em" px="1em">
-          {/*
-            NOTE: Temporary announcement for new forum.
-          */}
-
           <Announcement />
-
-          {/*
-            Remove once feedback and testing is done.
-          */}
 
           {/* <Box
             className={cardStyles.announcement}

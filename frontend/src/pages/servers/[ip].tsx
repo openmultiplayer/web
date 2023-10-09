@@ -23,7 +23,7 @@ import { API_ADDRESS } from "src/config";
 import { All } from "src/types/_generated_Server";
 import useSWR from "swr";
 
-const API_PATH = (ip: string) => `/server/${ip}`;
+const API_PATH = (ip: string) => `/servers/${ip}`;
 
 const API_SERVER = (ip: string) => `${API_ADDRESS}${API_PATH(ip)}`;
 
