@@ -1,20 +1,20 @@
 ---
 title: DestroyObject
-description: DestrÛi (remove) um objeto que foi criado usando CreateObject.
+description: Destr√≥i (remove) um objeto que foi criado usando CreateObject.
 tags: []
 ---
 
-## DescriÁ„o
+## Descri√ß√£o
 
-DestrÛi (remove) um objeto que foi criado usando CreateObject.
+Destr√≥i (remove) um objeto que foi criado usando CreateObject.
 
-| Nome     | DescriÁ„o                                                   |
+| Nome     | Descri√ß√£o                                                   |
 | -------- | ----------------------------------------------------------- |
-| objectid | O ID do objeto a ser destruÌdo. Retornado por CreateObject. |
+| objectid | O ID do objeto a ser destru√≠do. Retornado por CreateObject. |
 
 ## Retorno
 
-Esta funÁ„o n„o retorna nenhum valor especÌfico.
+Esta fun√ß√£o n√£o retorna nenhum valor espec√≠fico.
 
 ## Exemplos
 
@@ -26,24 +26,24 @@ public OnObjectMoved(objectid)
 }
 ```
 
-## FunÁıes relacionadas
+## Fun√ß√µes relacionadas
 
 - [CreateObject](CreateObject): Cria um objeto.
-- [IsValidObject](IsValidObject): Verifica se um determinado objeto È v·lido.
+- [IsValidObject](IsValidObject): Verifica se um determinado objeto √© v√°lido.
 - [MoveObject](MoveObject): Move um objeto.
-- [StopObject](StopObject): Pare a movimentaÁ„o de um objeto.
-- [SetObjectPos](SetObjectPos): Define a posiÁ„o de um objeto.
-- [SetObjectRot](SetObjectRot): Define a rotaÁ„o de um objeto.
-- [GetObjectPos](GetObjectPos): Localize a posiÁ„o de um objeto.
-- [GetObjectRot](GetObjectRot): Localize a rotaÁ„o de um objeto.
+- [StopObject](StopObject): Pare a movimenta√ß√£o de um objeto.
+- [SetObjectPos](SetObjectPos): Define a posi√ß√£o de um objeto.
+- [SetObjectRot](SetObjectRot): Define a rota√ß√£o de um objeto.
+- [GetObjectPos](GetObjectPos): Localize a posi√ß√£o de um objeto.
+- [GetObjectRot](GetObjectRot): Localize a rota√ß√£o de um objeto.
 - [AttachObjectToPlayer](AttachObjectToPlayer): Anexa um objeto a um jogador.
 - [CreatePlayerObject](CreatePlayerObject): Cria um objeto para apenas um jogador.
 - [DestroyPlayerObject](DestroyPlayerObject): Destrua um objeto do jogador.
-- [IsValidPlayerObject](IsValidPlayerObject): Verifica se um determinado objeto player È v·lido.
+- [IsValidPlayerObject](IsValidPlayerObject): Verifica se um determinado objeto player √© v√°lido.
 - [MovePlayerObject](MovePlayerObject): Move um objeto do jogador.
-- [StopPlayerObject](StopPlayerObject): Pare a movimentaÁ„o de um objeto do jogador.
-- [SetPlayerObjectPos](SetPlayerObjectPos): Define a posiÁ„o de um objeto do jogador.
-- [SetPlayerObjectRot](SetPlayerObjectRot): Defina a rotaÁ„o de um objeto do jogador.
-- [GetPlayerObjectPos](GetPlayerObjectPos): Localize a posiÁ„o de um objeto do jogador.
-- [GetPlayerObjectRot](GetPlayerObjectRot): Localize a rotaÁ„o de um objeto do jogador.
+- [StopPlayerObject](StopPlayerObject): Pare a movimenta√ß√£o de um objeto do jogador.
+- [SetPlayerObjectPos](SetPlayerObjectPos): Define a posi√ß√£o de um objeto do jogador.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Defina a rota√ß√£o de um objeto do jogador.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Localize a posi√ß√£o de um objeto do jogador.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Localize a rota√ß√£o de um objeto do jogador.
 - [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Anexa um objeto de jogador a um jogador.
