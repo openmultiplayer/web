@@ -1,5 +1,3 @@
-markdown
-
 ---
 title: Problemas Comunes
 ---
