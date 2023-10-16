@@ -157,9 +157,9 @@ const Home = () => {
       href: "https://twitch.tv/openmultiplayer",
     },
     {
-      alt: "twitter icon",
-      src: "/images/assets/twitter.svg",
-      href: "https://twitter.com/openmultiplayer",
+      alt: "x icon",
+      src: "/images/assets/x.svg",
+      href: "https://x.com/openmultiplayer",
     },
     {
       alt: "youtube icon",

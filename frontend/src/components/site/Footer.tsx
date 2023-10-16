@@ -34,7 +34,7 @@ const Footer = () => (
       {footerList("Community", [
         ["https://discord.gg/samp", "Discord"],
         ["https://instagram.com/openmultiplayer/", "Instagram"],
-        ["https://twitter.com/openmultiplayer", "Twitter"],
+        ["https://x.com/openmultiplayer", "X"],
         ["https://twitch.tv/openmultiplayer", "Twitch"],
         ["https://youtube.com/openmultiplayer", "YouTube"],
         ["https://facebook.com/openmultiplayer", "Facebook"],
