@@ -15,6 +15,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocompletes for Visual Studio Code.
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Zone Editor for making Area and stuff.
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Popular Map Editor for SA:MP.
+- **[open.mp Server Browser](https://github.com/adib-yg/openmp-server-browser)** - open.mp server browser GUI for Desktop.
 
 ## Libraries
 
