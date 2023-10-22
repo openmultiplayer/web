@@ -33,6 +33,7 @@ type Config struct {
 	PackageSearchInterval  time.Duration `envconfig:"PACKAGE_SEARCH_INTERVAL"  required:"false" default:"24h"`
 	PackageScrapeInterval  time.Duration `envconfig:"PACKAGE_SCRAPE_INTERVAL"  required:"false" default:"24h"`
 	LauncherVersion        string        `envconfig:"LAUNCHER_VERSION"         required:"false" default:"1"`
+	AuthenticatedAPIKey    string        `envconfig:"AUTHENTICATED_API_KEY"    required:"true"`
 }
 
 func New() (c Config, err error) {

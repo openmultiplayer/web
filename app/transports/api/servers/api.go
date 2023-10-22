@@ -56,6 +56,9 @@ func Build() fx.Option {
 				}),
 			)
 
+			rtr.
+				With(as.MustBeAuthenticatedWithAPIKey).
+				Post("/gencache", s.gencache)
 			rtr.Get("/{address}", s.get)
 			rtr.Get("/", s.list)
 			rtr.Get("/full", s.fulllist)
