@@ -109,7 +109,8 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 
 		// TODO: GetAll needs an "include inactive" flag, and make default duration configurable
 		// It should also probably just use existing data queried earlier.
-		all, err := w.db.GetAll(ctx, time.Duration(-12)*time.Hour)
+		// Only retrieve servers active since 3 hours ago
+		all, err := w.db.GetAll(ctx, time.Duration(-3)*time.Hour)
 		if err != nil {
 			zap.L().Error("failed to get all servers for metrics",
 				zap.Error(err))

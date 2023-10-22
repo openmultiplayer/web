@@ -68,6 +68,7 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 			db.Server.Banner.SetOptional(e.Banner),
 			db.Server.Active.Set(e.Active),
 			db.Server.Pending.Set(e.Pending),
+			db.Server.LastActive.Set(time.Now()),
 		).Exec(ctx)
 	if errors.Is(err, db.ErrNotFound) {
 		if !e.Active {
@@ -89,6 +90,7 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 				db.Server.Domain.SetOptional(e.Domain),
 				db.Server.Description.SetOptional(e.Description),
 				db.Server.Banner.SetOptional(e.Banner),
+				db.Server.LastActive.Set(time.Now()),
 			).Exec(ctx); err != nil {
 				return errors.Wrapf(err, "failed to create '%v'", e)
 			}
@@ -158,9 +160,9 @@ func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]str
 	return addresses, nil
 }
 
-func (s *DB) GetAll(ctx context.Context, updatedSince time.Duration) ([]All, error) {
+func (s *DB) GetAll(ctx context.Context, lastActive time.Duration) ([]All, error) {
 	result, err := s.client.Server.
-		FindMany(db.Server.UpdatedAt.After(time.Now().Add(updatedSince)), db.Server.DeletedAt.IsNull(), db.Server.Pending.Equals(false)).
+		FindMany(db.Server.LastActive.After(time.Now().Add(lastActive)), db.Server.DeletedAt.IsNull(), db.Server.Pending.Equals(false)).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderAsc)).
 		With(db.Server.Ru.Fetch()).
 		Exec(ctx)
@@ -183,11 +185,11 @@ func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, er
 	return dbToAPI(*result), err
 }
 
-func (s *DB) GetAllCached(ctx context.Context, updatedSince time.Duration) ([]All, error) {
+func (s *DB) GetAllCached(ctx context.Context, lastActive time.Duration) ([]All, error) {
 	result := []All{}
 	list := []All{}
 
-	s.GenerateCacheIfNeeded(ctx, updatedSince)
+	s.GenerateCacheIfNeeded(ctx, lastActive)
 
 	dat, err := os.ReadFile(s.cfg.CachedServers)
 	if err != nil {
@@ -200,7 +202,7 @@ func (s *DB) GetAllCached(ctx context.Context, updatedSince time.Duration) ([]Al
 	}
 
 	for idx := range result {
-		if result[idx].LastUpdated.After(time.Now().Add(updatedSince)) {
+		if result[idx].LastActive.After(time.Now().Add(lastActive)) {
 			list = append(list, result[idx])
 		}
 	}
@@ -223,16 +225,16 @@ func (s *DB) GetByAddressCached(ctx context.Context, address string) (*All, erro
 	return nil, errors.New("server_not_found")
 }
 
-func (s *DB) GenerateCacheIfNeeded(ctx context.Context, updatedSince time.Duration) error {
+func (s *DB) GenerateCacheIfNeeded(ctx context.Context, lastActive time.Duration) error {
 	_, err := os.Stat(s.cfg.CachedServers)
 	if errors.Is(err, os.ErrNotExist) {
-		return s.GenerateCache(ctx, updatedSince)
+		return s.GenerateCache(ctx, lastActive)
 	}
 	return nil
 }
 
-func (s *DB) GenerateCache(ctx context.Context, updatedSince time.Duration) error {
-	result, err := s.GetAll(ctx, updatedSince)
+func (s *DB) GenerateCache(ctx context.Context, lastActive time.Duration) error {
+	result, err := s.GetAll(ctx, lastActive)
 	if err != nil {
 		zap.L().Error("There was an error converting native array of servers to JSON data",
 			zap.Error(err))

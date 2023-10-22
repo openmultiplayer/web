@@ -14,7 +14,7 @@ func (s *service) listLegacy(w http.ResponseWriter, r *http.Request) {
 	queries := r.URL.Query()
 	since, err := strconv.Atoi(queries.Get("activeSince"))
 	if err != nil {
-		since = 12
+		since = 3
 	}
 
 	// This used to be for getting servers from database directly

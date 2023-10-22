@@ -14,7 +14,7 @@ func (s *service) gencache(w http.ResponseWriter, r *http.Request) {
 	queries := r.URL.Query()
 	since, err := strconv.Atoi(queries.Get("activeSince"))
 	if err != nil {
-		since = 12
+		since = 3
 	}
 
 	err = s.storer.GenerateCache(r.Context(), time.Duration(-since)*time.Hour)
