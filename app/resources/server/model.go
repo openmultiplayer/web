@@ -17,6 +17,7 @@ type All struct {
 	Description *string           `json:"description"`
 	Banner      *string           `json:"banner"`
 	Active      bool              `json:"active"`
+	Pending     bool              `json:"pending"`
 	LastUpdated time.Time         `json:"lastUpdated"`
 }
 
@@ -104,6 +105,7 @@ func dbToAPI(r db.ServerModel) *All {
 		Description: r.InnerServer.Description,
 		Banner:      r.InnerServer.Banner,
 		Active:      r.Active,
+		Pending:     r.Pending,
 		LastUpdated: r.UpdatedAt,
 	}
 }

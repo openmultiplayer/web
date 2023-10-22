@@ -56,6 +56,7 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 			db.Server.Description.SetOptional(e.Description),
 			db.Server.Banner.SetOptional(e.Banner),
 			db.Server.Active.Set(e.Active),
+			db.Server.Pending.Set(e.Pending),
 		).Exec(ctx)
 	if errors.Is(err, db.ErrNotFound) {
 		if !e.Active {
@@ -73,6 +74,7 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 				db.Server.Vn.Set(e.Core.Version),
 				db.Server.Active.Set(e.Active),
 				db.Server.Omp.Set(e.Core.IsOmp),
+				db.Server.Pending.Set(e.Pending),
 				db.Server.Domain.SetOptional(e.Domain),
 				db.Server.Description.SetOptional(e.Description),
 				db.Server.Banner.SetOptional(e.Banner),
@@ -132,7 +134,7 @@ func (s *DB) GetEssential(context.Context, string) (*Essential, error) {
 
 func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]string, error) {
 	result, err := s.client.Server.
-		FindMany(db.Server.UpdatedAt.Before(time.Now().Add(-before))).
+		FindMany(db.Server.UpdatedAt.Before(time.Now().Add(-before)), db.Server.DeletedAt.IsNull(), db.Server.Pending.Equals(false)).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderDesc)).
 		Exec(ctx)
 	if err != nil {
@@ -147,7 +149,7 @@ func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]str
 
 func (s *DB) GetAll(ctx context.Context, updatedSince time.Duration) ([]All, error) {
 	result, err := s.client.Server.
-		FindMany(db.Server.UpdatedAt.After(time.Now().Add(updatedSince)), db.Server.DeletedAt.IsNull()).
+		FindMany(db.Server.UpdatedAt.After(time.Now().Add(updatedSince)), db.Server.DeletedAt.IsNull(), db.Server.Pending.Equals(false)).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderAsc)).
 		With(db.Server.Ru.Fetch()).
 		Exec(ctx)

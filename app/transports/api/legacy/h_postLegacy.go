@@ -33,6 +33,9 @@ func (s *service) postLegacy(w http.ResponseWriter, r *http.Request) {
 
 	formatted := server.TransformQueryResult(result, nil)
 
+	// Switch pending status to true, let server managers handle this manually or automatically
+	formatted.Pending = true
+
 	if err := s.storer.Upsert(r.Context(), formatted); err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to query server"))
 		return

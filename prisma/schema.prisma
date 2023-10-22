@@ -83,6 +83,7 @@ model Server {
   deletedAt DateTime?
   omp Boolean @default(false)
   partner Boolean @default(false)
+  pending Boolean @default(false)
 }
 
 model Rule {
@@ -93,4 +94,10 @@ model Rule {
   serverId String?
 
   @@unique([name, serverId], name: "Rule_serverId_rule_name_index")
+}
+
+model ServerIPBlacklist {
+  id String @id @default(uuid())
+
+  ip String  @unique
 }
