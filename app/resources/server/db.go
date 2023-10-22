@@ -3,6 +3,7 @@ package server
 import (
 	"context"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/goccy/go-json"
@@ -30,14 +31,10 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 
 	// Check whether an IP is blocked or not, not port specific
 	blockedServer, err := s.client.ServerIPBlacklist.
-		FindUnique(db.ServerIPBlacklist.IP.Equals(e.IP)).
+		FindUnique(db.ServerIPBlacklist.IP.Equals(strings.Split(e.IP, ":")[0])).
 		Exec(ctx)
 
-	if err != nil {
-		return err
-	}
-
-	if blockedServer == nil {
+	if blockedServer != nil {
 		return errors.Wrapf(err, "IP address is blocked")
 	}
 
