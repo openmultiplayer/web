@@ -19,6 +19,7 @@ type All struct {
 	Active      bool              `json:"active"`
 	Pending     bool              `json:"pending"`
 	LastUpdated time.Time         `json:"lastUpdated"`
+	LastActive  *time.Time        `json:"lastActive"`
 }
 
 // Essential stores the standard SA:MP 'info' query fields necessary for server
@@ -107,6 +108,7 @@ func dbToAPI(r db.ServerModel) *All {
 		Active:      r.Active,
 		Pending:     r.Pending,
 		LastUpdated: r.UpdatedAt,
+		LastActive:  r.InnerServer.LastActive,
 	}
 }
 
