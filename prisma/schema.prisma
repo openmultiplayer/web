@@ -33,7 +33,6 @@ model User {
   createdAt  DateTime  @default(now())
   updatedAt  DateTime  @updatedAt
   deletedAt  DateTime?
-  lastActive DateTime?
 }
 
 model GitHub {
@@ -82,6 +81,7 @@ model Server {
   active    Boolean
   updatedAt DateTime  @updatedAt
   deletedAt DateTime?
+  lastActive DateTime?
   omp       Boolean   @default(false)
   partner   Boolean   @default(false)
   pending   Boolean   @default(false)
