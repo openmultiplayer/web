@@ -2,10 +2,8 @@ package serverworker
 
 import (
 	"context"
-	"os"
 	"time"
 
-	"github.com/goccy/go-json"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"go.uber.org/fx"
@@ -120,23 +118,9 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 
 		zap.L().Info("Saving all servers into a JSON file to be used as cache")
 		// Let's save all servers info our cache file to be used in our API data processing instead of DB
-		jsonData, err := json.Marshal(all)
+		err = w.db.GenerateCacheFromData(ctx, all)
 		if err != nil {
 			zap.L().Error("There was an error converting native array of servers to JSON data",
-				zap.Error(err))
-			continue
-		}
-
-		cacheFile, err := os.Create(w.cfg.CachedServers)
-		if err != nil {
-			zap.L().Error("Could not create server cache file",
-				zap.Error(err))
-			continue
-		}
-
-		_, err = cacheFile.Write(jsonData)
-		if err != nil {
-			zap.L().Error("There was an error writing collected servers into cache file",
 				zap.Error(err))
 			continue
 		}

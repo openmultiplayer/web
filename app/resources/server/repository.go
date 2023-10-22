@@ -16,4 +16,7 @@ type Repository interface {
 	SetDeleted(context.Context, string, *time.Time) (*All, error)
 	GetAllCached(context.Context, time.Duration) ([]All, error)
 	GetByAddressCached(context.Context, string) (*All, error)
+	GenerateCacheIfNeeded(context.Context, time.Duration) error
+	GenerateCache(context.Context, time.Duration) error
+	GenerateCacheFromData(context.Context, []All) error
 }

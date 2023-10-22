@@ -176,40 +176,16 @@ func (s *DB) GetAllCached(ctx context.Context, updatedSince time.Duration) ([]Al
 	result := []All{}
 	list := []All{}
 
-	_, err := os.Stat(s.cfg.CachedServers)
-	if errors.Is(err, os.ErrNotExist) {
-		result, err = s.GetAll(ctx, updatedSince)
-		// Let's save all servers info our cache file to be used in our API data processing instead of DB
-		jsonData, err := json.Marshal(result)
-		if err != nil {
-			zap.L().Error("There was an error converting native array of servers to JSON data",
-				zap.Error(err))
-			return nil, err
-		}
+	s.GenerateCacheIfNeeded(ctx, updatedSince)
 
-		cacheFile, err := os.Create(s.cfg.CachedServers)
-		if err != nil {
-			zap.L().Error("Could not create server cache file",
-				zap.Error(err))
-			return nil, err
-		}
+	dat, err := os.ReadFile(s.cfg.CachedServers)
+	if err != nil {
+		return nil, err
+	}
 
-		_, err = cacheFile.Write(jsonData)
-		if err != nil {
-			zap.L().Error("There was an error writing collected servers into cache file",
-				zap.Error(err))
-			return nil, err
-		}
-	} else {
-		dat, err := os.ReadFile(s.cfg.CachedServers)
-		if err != nil {
-			return nil, err
-		}
-
-		err = json.Unmarshal(dat, &result)
-		if err != nil {
-			return nil, err
-		}
+	err = json.Unmarshal(dat, &result)
+	if err != nil {
+		return nil, err
 	}
 
 	for idx := range result {
@@ -234,4 +210,48 @@ func (s *DB) GetByAddressCached(ctx context.Context, address string) (*All, erro
 	}
 
 	return nil, errors.New("server_not_found")
+}
+
+func (s *DB) GenerateCacheIfNeeded(ctx context.Context, updatedSince time.Duration) error {
+	_, err := os.Stat(s.cfg.CachedServers)
+	if errors.Is(err, os.ErrNotExist) {
+		return s.GenerateCache(ctx, updatedSince)
+	}
+	return nil
+}
+
+func (s *DB) GenerateCache(ctx context.Context, updatedSince time.Duration) error {
+	result, err := s.GetAll(ctx, updatedSince)
+	if err != nil {
+		zap.L().Error("There was an error converting native array of servers to JSON data",
+			zap.Error(err))
+		return err
+	}
+	return s.GenerateCacheFromData(ctx, result)
+}
+
+func (s *DB) GenerateCacheFromData(ctx context.Context, servers []All) error {
+	// Let's save all servers info our cache file to be used in our API data processing instead of DB
+	jsonData, err := json.Marshal(servers)
+	if err != nil {
+		zap.L().Error("There was an error converting native array of servers to JSON data",
+			zap.Error(err))
+		return err
+	}
+
+	cacheFile, err := os.Create(s.cfg.CachedServers)
+	if err != nil {
+		zap.L().Error("Could not create server cache file",
+			zap.Error(err))
+		return err
+	}
+
+	_, err = cacheFile.Write(jsonData)
+	if err != nil {
+		zap.L().Error("There was an error writing collected servers into cache file",
+			zap.Error(err))
+		return err
+	}
+
+	return nil
 }
