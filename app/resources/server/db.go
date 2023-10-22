@@ -202,7 +202,7 @@ func (s *DB) GetAllCached(ctx context.Context, lastActive time.Duration) ([]All,
 	}
 
 	for idx := range result {
-		if result[idx].LastActive.After(time.Now().Add(lastActive)) {
+		if result[idx].LastActive != nil && result[idx].LastActive.After(time.Now().Add(lastActive)) {
 			list = append(list, result[idx])
 		}
 	}
