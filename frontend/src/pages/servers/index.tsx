@@ -119,7 +119,7 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
       const server = (await response.json()) as All;
       onAdd(server);
       toast.notify(
-        `${server.core.hn} (${server.core.gm}) submitted to the index!`,
+        `${server.core.hn} is added to our pending list. If it's not available after maximum 48 hours, you can contact us on Discord!`,
         {
           title: "Server Submitted!",
         }
