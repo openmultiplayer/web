@@ -25,6 +25,22 @@ func New(client *db.PrismaClient, cfg config.Config) Repository {
 }
 
 func (s *DB) Upsert(ctx context.Context, e All) error {
+	var svr *db.ServerModel
+	var err error
+
+	// Check whether an IP is blocked or not, not port specific
+	blockedServer, err := s.client.ServerIPBlacklist.
+		FindUnique(db.ServerIPBlacklist.IP.Equals(e.IP)).
+		Exec(ctx)
+
+	if err != nil {
+		return err
+	}
+
+	if blockedServer == nil {
+		return errors.Wrapf(err, "IP address is blocked")
+	}
+
 	if !e.Active {
 		// If a server is inactive and it doesn't already exist in the database
 		// then no data needs to be written and this is not an error. This only
@@ -38,8 +54,6 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 		return nil
 	}
 
-	var svr *db.ServerModel
-	var err error
 	svr, err = s.client.Server.
 		FindUnique(db.Server.IP.Equals(e.IP)).
 		Update(
