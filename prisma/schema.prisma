@@ -28,11 +28,12 @@ model User {
   bio   String?
   admin Boolean @default(false)
 
-  servers       Server[]
+  servers Server[]
 
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  deletedAt DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  deletedAt  DateTime?
+  lastActive DateTime?
 }
 
 model GitHub {
@@ -81,13 +82,13 @@ model Server {
   active    Boolean
   updatedAt DateTime  @updatedAt
   deletedAt DateTime?
-  omp Boolean @default(false)
-  partner Boolean @default(false)
-  pending Boolean @default(false)
+  omp       Boolean   @default(false)
+  partner   Boolean   @default(false)
+  pending   Boolean   @default(false)
 }
 
 model Rule {
-  id       BigInt     @id @default(autoincrement())
+  id       BigInt  @id @default(autoincrement())
   name     String
   value    String
   Server   Server? @relation(fields: [serverId], references: [id])
@@ -99,5 +100,5 @@ model Rule {
 model ServerIPBlacklist {
   id String @id @default(uuid())
 
-  ip String  @unique
+  ip String @unique
 }
