@@ -37,7 +37,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 Essa callback não é chamada ao usar ChangeVehicleColor. Estranhamente, não é chamada também ao ir em uma Oficina de Pintura (só Garagens de Personalização).
 
-Código para conserto: http://pastebin.com/G81da7N1
+Código para conserto: https://pastebin.com/G81da7N1
 
 :::
 

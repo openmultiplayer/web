@@ -6,7 +6,7 @@ title: "دکمه ها"
 
 :::note نکته
 میتوانید در [GetPlayerKeys](../functions/GetPlayerKeys) و [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange) استفاده کنید.
-سمپ از bitmasking برای تعیین کردم کلید فشرده شده یا فشرده نشده استفاده میکند. این یک مقاله درباره bitmasking است: [http://en.wikipedia.org/wiki/Mask\_(computing)](<http://en.wikipedia.org/wiki/Mask_(computing)>)
+سمپ از bitmasking برای تعیین کردم کلید فشرده شده یا فشرده نشده استفاده میکند. این یک مقاله درباره bitmasking است: [https://en.wikipedia.org/wiki/Mask\_(computing)](<https://en.wikipedia.org/wiki/Mask_(computing)>)
 
 :::
 

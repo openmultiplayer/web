@@ -8,7 +8,7 @@ title: 常见问题
 
 ### 出现错误信息“无法找到 San Andreas”
 
-圣安地列斯多人游戏**不**是一个独立的程序! 它为圣安地列斯增加了联机功能，因此你需要圣安地列斯特定 PC 版本 - 并且它需要是**EU/US v1.0**版本，其他版本例如 v2.0 或 Steam 以及 Direct2Drive 版本不能联机。[点击这里下载一个补丁来降低你的 GTA:SA 版本到 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+圣安地列斯多人游戏**不**是一个独立的程序! 它为圣安地列斯增加了联机功能，因此你需要圣安地列斯特定 PC 版本 - 并且它需要是**EU/US v1.0**版本，其他版本例如 v2.0 或 Steam 以及 Direct2Drive 版本不能联机。[点击这里下载一个补丁来降低你的 GTA:SA 版本到 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### 我在 SA:MP 浏览页中看不到任何服务器
 
@@ -22,7 +22,7 @@ title: 常见问题
 
 :::
 
-加载为单人游戏可能有 2 个原因; 你将 SA:MP 安装到错误的文件夹，或者你的圣安地列斯版本错误。如果你使用的是错误的版本，你可以使用圣安地列斯降级器来降级你的游戏版本。 点击 [这里](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) 以下载.
+加载为单人游戏可能有 2 个原因; 你将 SA:MP 安装到错误的文件夹，或者你的圣安地列斯版本错误。如果你使用的是错误的版本，你可以使用圣安地列斯降级器来降级你的游戏版本。 点击 [这里](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) 以下载.
 
 有时仍然会显示单人游戏菜单，但实际上 SA:MP 已经正确加载。要解决这个问题，你只需要在菜单上选择一个选项，然后按下 escape(ESC)键退出它。随后 SA:MP 将继续加载。
 
@@ -32,7 +32,7 @@ title: 常见问题
 
 ### 屏幕上显示“正在连接到 IP:端口…(Connecting to IP:Port...)”
 
-可能是服务器处于脱机状态，再者如果你无法连接到任何服务器，关闭你的防火墙，看看它是否有效。如果有效，你将需要重新配置防火墙。也可能是你正在运行一个过时的 SA:MP 版本 - 你可以在[这里](http://sa-mp.com/download.php)找到新版本。
+可能是服务器处于脱机状态，再者如果你无法连接到任何服务器，关闭你的防火墙，看看它是否有效。如果有效，你将需要重新配置防火墙。也可能是你正在运行一个过时的 SA:MP 版本 - 你可以在[这里](https://sa-mp.mp/downloads/)找到新版本。
 
 ### 我有一个修改过的 GTA: San Andreas 并且 SA:MP 不会被载入
 

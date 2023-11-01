@@ -142,7 +142,7 @@ Dacă ar fi să afișezi `message_5 [0]`, ai primi **B**, ciudat nu? Ei bine, nu
 
 Aveți `65 + 1`, care returnează `66`, verificând tabelul _ASCII_, veți găsi că `66` este reprezentarea numerică a caracterului `_B_` (_capitalized_). Deci, fragmentul de mai sus este în esență același cu a face: `message_5 [0] = 'B'`;
 
-Pentru referință, utilizați [acest tabel ASCII](http://www.asciitable.com/).
+Pentru referință, utilizați [acest tabel ASCII](https://www.asciitable.com).
 
 De asemenea, puteți efectua aceeași operație între mai multe caractere sau o combinație a acestora, a acestora și a numerelor, iată câteva exemple;
 
@@ -1418,7 +1418,7 @@ Desigur, acest lucru se referă doar la funcții care acceptă formatarea, cum a
 
 - ** Specificatorul `%q` **
 
-Acesta nu are o mare importanță în subiectul nostru principal, este folosit pe scară largă pentru a scăpa de șirurile sensibile atunci când lucrați cu _SQLite_ și credeți-mă, nimeni nu vrea să cadă sub cazul [tabelului lui Bobby](http://bobby-tables.com/about).
+Acesta nu are o mare importanță în subiectul nostru principal, este folosit pe scară largă pentru a scăpa de șirurile sensibile atunci când lucrați cu _SQLite_ și credeți-mă, nimeni nu vrea să cadă sub cazul [tabelului lui Bobby](https://bobby-tables.com/about).
 
 Când am introdus substituenții, facem referire la o formulă specifică care îi privește, ca un memento, iată-l;
 

@@ -37,7 +37,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 这个回调不被 ChangeVehicleColor 函数调用。值得一提的是 Pay 'n' Spray 商店不会调用该回调。(仅改装店)。
 
-此处修正: http://pastebin.com/G81da7N1
+此处修正: https://pastebin.com/G81da7N1
 
 :::
 

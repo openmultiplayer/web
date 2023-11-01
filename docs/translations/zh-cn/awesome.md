@@ -5,38 +5,38 @@ description: 精选的有帮助的工具、库和插件列表，供SA-MP开发�
 
 ## 工具
 
-- **[Community Compiler](https://github.com/pawn-lang/compiler/)** - 一个大范围更新的编译器版本，修正并改进了很多地方。
-- **[sampctl](http://sampctl.com/)** - 用于安装库和运行服务器的包管理器。
-- **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner/)** - 用于直接从命令行(不需要`server.cfg`)运行服务器轻量级版本的工具，用于测试插件。
+- **[Community Compiler](https://github.com/pawn-lang/compiler)** - 一个大范围更新的编译器版本，修正并改进了很多地方。
+- **[sampctl](https://github.com/Southclaws/sampctl)** - 用于安装库和运行服务器的包管理器。
+- **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)** - 用于直接从命令行(不需要`server.cfg`)运行服务器轻量级版本的工具，用于测试插件。
 - **[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)** - 使用模板开发插件会更容易。
 - **[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)** - 用这个模板库让你开发插件变得更快，更容易。
 - **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - 测试你的脚本(代码片段、PoC、调试等)并将其共享给他人的平台。
-- **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)** - Sublime Text 编辑器的 Pawn 自动补全插件。
-- **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn/)** - Visual Studio Code 编辑器的 Pawn 自动补全插件。
-- **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads/)** - 用于创建地盘和其他相关东西的编辑器。
+- **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)** - Sublime Text 编辑器的 Pawn 自动补全插件。
+- **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Visual Studio Code 编辑器的 Pawn 自动补全插件。
+- **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - 用于创建地盘和其他相关东西的编辑器。
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - 广受欢迎的 SA:MP 地图编辑器。
 
 ## 库
 
-- **[samp-stdlib](https://github.com/pawn-lang/samp-stdlib/)** - 默认库文件的更新版本。正确的`常量(const)`，文档化且更完整。
-- **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes/)** - 针对大量 SA:MP 服务器错误的优化修复。即插即用。
-- **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes/)** - SA:MP/Pawn 历史最悠久、规模最大、经过大量测试且支持性最好的库，提供了大量的新游戏和语言功能。
+- **[samp-stdlib](https://github.com/pawn-lang/samp-stdlib)** - 默认库文件的更新版本。正确的`常量(const)`，文档化且更完整。
+- **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - 针对大量 SA:MP 服务器错误的优化修复。即插即用。
+- **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - SA:MP/Pawn 历史最悠久、规模最大、经过大量测试且支持性最好的库，提供了大量的新游戏和语言功能。
 - **[foreach](https://github.com/Open-GTO/foreach)** - foreach 独立库(非 y_iterate 版本)。
-- **[amx_assembly](https://github.com/Zeex/amx_assembly/)** - 对 Pawn 脚本自身的低级别访问。
+- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - 对 Pawn 脚本自身的低级别访问。
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - 对 Pawn 中的多维数组进行排序。修改数组的内部指针，而不是复制数据。
-- **[indirection](https://github.com/Y-Less/indirection/)** - 间接传递指针和调用函数的系统，使用抽象方法进行自定义调用。
-- **[code-parse.inc](https://github.com/Y-Less/code-parse.inc/)** - 在编译时解析并自定义 Pawn 代码。
-- **[Extended Vehicle Information](https://github.com/Vince0789/sa-mp-extended-vehicle-information/)** - 使用 SQLite 并且包含大量单人模式的载具标志。
+- **[indirection](https://github.com/Y-Less/indirection)** - 间接传递指针和调用函数的系统，使用抽象方法进行自定义调用。
+- **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - 在编译时解析并自定义 Pawn 代码。
+- **[Extended Vehicle Information](https://github.com/Vince0789/sa-mp-extended-vehicle-information)** - 使用 SQLite 并且包含大量单人模式的载具标志。
 - **[sqlitei](https://github.com/oscar-broman/sqlitei)** - SA-MP SQLite 的高级 API 函数。
 - **[weapon-config](https://github.com/oscar-broman/samp-weapon-config)** - 更一致和反应更灵敏的伤害系统，有许多新特性。
-- **[samp-geoip](https://github.com/Southclaws/SAMP-geoip/)** - 基于 IP 地址的地理信息。
-- **[progress2](https://github.com/Southclaws/progress2/)** - 以进度条显示时间、生命值、载具燃料等。
-- **[weapon-data](https://github.com/Southclaws/samp-weapon-data/)** - 微调，可定制的武器数据库。
+- **[samp-geoip](https://github.com/Southclaws/SAMP-geoip)** - 基于 IP 地址的地理信息。
+- **[progress2](https://github.com/Southclaws/progress2)** - 以进度条显示时间、生命值、载具燃料等。
+- **[weapon-data](https://github.com/Southclaws/samp-weapon-data)** - 微调，可定制的武器数据库。
 - **[MV_Youtube](https://github.com/MichaelBelgium/MV_Youtube)** - 转换 Youtube 影片至音频流的 API。
 - **[MySQL Prepared Statements](https://github.com/PatrickGTR/MySQL-Prepared-Statements)** - 模拟 PAWN MySQL 插件的准备语句。
 - **[samp-server-weapons](https://github.com/Brunoo16/samp-server-weapons)** - 武器完全由服务器控制。
 - **[actor_robbery](https://github.com/PatrickGTR/actor_robbery)** - 灵感来自 GTAV 商店抢劫，该库模仿了它!
-- **[samp-aviation](https://github.com/Southclaws/samp-aviation/)** - 在 SA:MP 中自动驾驶。
+- **[samp-aviation](https://github.com/Southclaws/samp-aviation)** - 在 SA:MP 中自动驾驶。
 - **[samp-logger](https://github.com/Southclaws/samp-logger)** - 简单的结构化日志记录器，它提供了一组简单的日志记录和调试功能。
 - **[TDW Recursion Scanner](https://github.com/tdworg/samp-include-rscan)** - 在代码中查找递归的库。
 - **[easyDialog](https://github.com/Awsomedude/easyDialog)** - 让对话框更容易使用。
@@ -47,7 +47,7 @@ description: 精选的有帮助的工具、库和插件列表，供SA-MP开发�
 - **[speedcap.inc](https://github.com/openmultiplayer/archive/blob/master/includes/speedcap.inc)** - 一个控制车速的库。
 - **[SA:MP Command Guess](https://github.com/Kirima2nd/samp-command-guess)** - 使用 Levenshtein 算法函数实现的 SA：MP 的指令猜测器。
 - **[vending](https://github.com/wuzi/vending)** - 面向 SA-MP 的服务器端自动售货机。
-- **[strlib.inc](https://github.com/oscar-broman/strlib/)** - SA:MP 中的字符串函数。
+- **[strlib.inc](https://github.com/oscar-broman/strlib)** - SA:MP 中的字符串函数。
 - **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - 一系列有用的数学函数列表。
 - **[rotations.inc](https://github.com/sampctl/rotations.inc)** - 由 Nero_3D 开发的 rotations.inc，提供了一系列有用的旋转函数列表。
 - **[SA-MP Distance Functions](https://github.com/Y-Less/samp-distance)** - 一系列有用的距离检查函数。
@@ -58,18 +58,18 @@ description: 精选的有帮助的工具、库和插件列表，供SA-MP开发�
 
 ## 指令处理
 
-- **[I-ZCMD](https://github.com/YashasSamaga/I-ZCMD/)** - ZCMD 的改良版本。
-- **[Pawn.CMD](https://github.com/katursis/Pawn.CMD/)** - 性能最强的指令处理库。
+- **[I-ZCMD](https://github.com/YashasSamaga/I-ZCMD)** - ZCMD 的改良版本。
+- **[Pawn.CMD](https://github.com/katursis/Pawn.CMD)** - 性能最强的指令处理库。
 - **[y_commands](https://github.com/pawn-lang/YSI-Includes/blob/5.x/YSI_Visual/y_commands.md)** - 来自 YSI Includes 的指令处理器
 
 ## 服务端插件
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit/)** - 一旦代码稳定，就可以使用它来大大提高速度。
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect/)** - 在测试过程中寻找错误的开发工具。
+- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - 一旦代码稳定，就可以使用它来大大提高速度。
+- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - 在测试过程中寻找错误的开发工具。
 - **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - SA-MP 服务器的性能分析器插件。
-- **[sscanf](https://github.com/Y-Less/sscanf/)** - 将字符串转换为多个值、整数、浮点数、玩家等。
-- **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL/)** - 将服务器连接到 MySQL 数据库。
-- **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin/)** - 绕过许多 SA:MP 限制，如物体和拾取工具。
+- **[sscanf](https://github.com/Y-Less/sscanf)** - 将字符串转换为多个值、整数、浮点数、玩家等。
+- **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - 将服务器连接到 MySQL 数据库。
+- **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - 绕过许多 SA:MP 限制，如物体和拾取工具。
 - **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - 在服务器启动时检查原生函数(natives)。
 - **[FCNPC](https://github.com/ziggi/FCNPC)** - 一个用于 SA-MP 服务器的插件，它为现有的标准 NPC 增加了许多功能。
 - **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - 允许你从根文件夹(不限于脚本文件服务器目录)管理文件和文件夹。
@@ -111,8 +111,8 @@ description: 精选的有帮助的工具、库和插件列表，供SA-MP开发�
 
 ## 加密插件
 
-- **[whirlpool](https://github.com/Southclaws/samp-whirlpool/)** - 用于 SA:MP 的漩涡加密插件.
-- **[bcrypt](https://github.com/LassiR/bcrypt-samp/)** - 用于 SA:MP 的 Bcrypt 加密插件。
+- **[whirlpool](https://github.com/Southclaws/samp-whirlpool)** - 用于 SA:MP 的漩涡加密插件.
+- **[bcrypt](https://github.com/LassiR/bcrypt-samp)** - 用于 SA:MP 的 Bcrypt 加密插件。
 - **[samp-crypto](https://github.com/alextwothousand/samp-crypto)** - 用于 SA:MP 的加密函数集，如 Argon2、Scrept 和 Bcrypt。
 - **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - 用于 SA:MP 的 SHA512 加密插件。
 

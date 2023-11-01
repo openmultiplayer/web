@@ -14,7 +14,7 @@ Le client SA:MP réserve parfois quelques surprises à ses utilisateurs, tantôt
 San Andreas Multiplayer n'est **pas** un programme indépendant du solo de GTA San Andreas. C'est un multijoueur qui ajoute plusieurs fonctionnalités à GTA San Andreas, il faut donc que vous ayez GTA:SA sur votre ordinateur.
 
 Il faut également que votre jeu soit en version **EU/US v1.0**, les autres versions comme la v2.0 ou celle de Steam et Direct2Drive ne sont pas compatibles.
-[Cliquez ici pour télécharger le patch du _downgrade_ de GTA:SA en version 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+[Cliquez ici pour télécharger le patch du _downgrade_ de GTA:SA en version 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 
 ### Je ne vois aucun serveur sur le launcher
@@ -36,7 +36,7 @@ SA: MP devrait se charger tout seul et ne pas présenter ces options. Si vous vo
 
 Le solo peut charger pour deux raisons :
 
-1. Vous avez installer SA:MP dans le mauvais fichier ou vous avez une mauvaise version de jeu. Cliquez [ici](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) pour télécharger le patch.
+1. Vous avez installer SA:MP dans le mauvais fichier ou vous avez une mauvaise version de jeu. Cliquez [ici](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) pour télécharger le patch.
 
 2. Parfois, le menu du solo peut apparaître, alors même que SA:MP a été chargé correctement. Il suffit de sélectionner une option du menu et cliquez sur la touche echap pour revenir en arrière. Le problème devrait être réglé.
 

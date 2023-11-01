@@ -8,7 +8,7 @@ title: Common Issues
 
 ### Nagka error ako "San Andreas cannot be found"
 
-Ang San Andreas Multiplayer ay **hindi** stand-alone program! Nagdadag-dag lamang ito ng functionality sa GTA San Andreas, bagkus ay kailangan ang GTA San Andreas na laro para sa PC. Kailangan din itong maging **EU/US v1.0**, ang ibang version tulad ng v2.0 o Steam at Direct2Drive versions ay hindi gagana. [pindutin dito upang i-downgrade ang iyong GTA: SA version sa 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+Ang San Andreas Multiplayer ay **hindi** stand-alone program! Nagdadag-dag lamang ito ng functionality sa GTA San Andreas, bagkus ay kailangan ang GTA San Andreas na laro para sa PC. Kailangan din itong maging **EU/US v1.0**, ang ibang version tulad ng v2.0 o Steam at Direct2Drive versions ay hindi gagana. [pindutin dito upang i-downgrade ang iyong GTA: SA version sa 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### Wala akong makitang server sa SA:MP client ko!
 
@@ -22,7 +22,7 @@ Hindi ka dapat makakita ng singleplayer options kapag binuksan ang GTA mula sa S
 
 :::
 
-Ang Singleplayer ay maaaring mag lumitaw sa dalawang rason; hindi mo na install ng maayos ang iyong SA:MP at wala ito sa GTA San Andreas game folder o maling version ng GTA San Andreas ang iyong gamit. Kung maling version ng GTA San Andreas ang iyong ginagamit ay maaari mo itong ma downgrade gamit ang GTA San Andreas Downgrader. Pindutin [ito](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) para ma download ito.
+Ang Singleplayer ay maaaring mag lumitaw sa dalawang rason; hindi mo na install ng maayos ang iyong SA:MP at wala ito sa GTA San Andreas game folder o maling version ng GTA San Andreas ang iyong gamit. Kung maling version ng GTA San Andreas ang iyong ginagamit ay maaari mo itong ma downgrade gamit ang GTA San Andreas Downgrader. Pindutin [ito](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) para ma download ito.
 
 Minsan ang single player menu ay lalabas, pero ang SA:MP ay nag bukas naman siguro, subukang pumili sa mga options na ito sa menu at pindutin ang `ESC` key para makaalis dito. Ang SA:MP ay magbubukas na.
 
@@ -32,7 +32,7 @@ Siguraduhing ikaw ay hindi gumagamit ng pinagbabawal na mga characters sa iyong 
 
 ### Ang screen ko ay nagpapakita lamang ng "Connecting to IP:Port..."
 
-Ang server ay pwedeng offline, o kung hindi maka connect sa server, subukang patayin ang firewall at tignan kung gagana ito. Kung gumana, kailangan mong i reconfigure ang iyong firewall. Maaari din na ikaw ay gumagamit ng outdated na version ng SA:MP - mahahanap mo ang updated na version ng SA:MP [dito](http://sa-mp.com/download.php).
+Ang server ay pwedeng offline, o kung hindi maka connect sa server, subukang patayin ang firewall at tignan kung gagana ito. Kung gumana, kailangan mong i reconfigure ang iyong firewall. Maaari din na ikaw ay gumagamit ng outdated na version ng SA:MP - mahahanap mo ang updated na version ng SA:MP [dito](https://sa-mp.mp/downloads/).
 
 ### Meron akong mods sa GTA San Andreas at ang SA:MP ay ayaw bumukas.
 

@@ -8,7 +8,7 @@ title: Частые Проблемы
 
 ## Сервер не работает - брандмауэр выключен
 
-Вам нужно будет перенаправить свои порты, чтобы игроки могли присоединиться к вашему серверу. Вы можете перенаправить свои порты с помощью PF Port Checker. Скачать его можно по адресу: www.portforward.com если порты не перенаправлены, это означает, что вы должны открыть их в своем маршрутизаторе. Вы можете проверить список маршрутизаторов по адресу [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm "http://portforward.com/english/routers/port_forwarding/routerindex.htm")
+Вам нужно будет перенаправить свои порты, чтобы игроки могли присоединиться к вашему серверу. Вы можете перенаправить свои порты с помощью PF Port Checker. Скачать его можно по адресу: www.portforward.com если порты не перенаправлены, это означает, что вы должны открыть их в своем маршрутизаторе. Вы можете проверить список маршрутизаторов по адресу [https://portforward.com/router.htm](https://portforward.com/router.htm "https://portforward.com/router.htm")
 
 Там есть вся информация по перенаправлению портов.
 

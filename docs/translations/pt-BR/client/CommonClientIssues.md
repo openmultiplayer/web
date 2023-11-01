@@ -8,7 +8,7 @@ title: Common Issues
 
 ### Eu tenho o erro "San Andreas cannot be found"
 
-San Andreas Multi-player **NÃO** é um programa "stand-alone" (que funciona sozinho). Ele adiciona a funcionalidade de multi-jogador ao San Andreas e portanto você precisa do GTA San Andreas no seu computador, também precisa ser **EU/US v1.0**, outras versões como 2.0, Steam ou Direct2Drive não irão funcionar. [clique aqui para baixar um patch para desatualizar seu GTA: SA para a versão 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multi-player **NÃO** é um programa "stand-alone" (que funciona sozinho). Ele adiciona a funcionalidade de multi-jogador ao San Andreas e portanto você precisa do GTA San Andreas no seu computador, também precisa ser **EU/US v1.0**, outras versões como 2.0, Steam ou Direct2Drive não irão funcionar. [clique aqui para baixar um patch para desatualizar seu GTA: SA para a versão 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### Não consigo ver nenhum servidor no aplicativo do SA-MP
 
@@ -22,7 +22,7 @@ Você, provavelmente, não deverá ver as opções do singleplayer (novo jogo, c
 
 :::
 
-O modo singleplayer pode carregar por dois motivos, caso tenha instalado o SA:MP no diretório errado, ou você tem a versão errada do San Andreas. Caso tenha a versão errada é fácil de consertar, clique [aqui](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) para baixar o patch de desatualização.
+O modo singleplayer pode carregar por dois motivos, caso tenha instalado o SA:MP no diretório errado, ou você tem a versão errada do San Andreas. Caso tenha a versão errada é fácil de consertar, clique [aqui](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) para baixar o patch de desatualização.
 
 Algumas vezes o menu do singleplayer irá carregar, mas o SA:MP em fato terá carregado corretamente. Para consertar isso você precisa selecionar um item no menu e precionar ESC até que esteja fora, então o SA:MP irá proceder e carregar.
 
@@ -32,7 +32,7 @@ Garanta que você não está usando nenhum caractere não permitido no jogo (use
 
 ### Tela trava no "Connecting to ip:port..."
 
-O servidor pode estar offline, ou se você não pode conectar a nenhum servidor desative seu firewall e veja se funciona. Caso funciona você precisa configurar seu firewall corretamente. Também pode ser que você tenha uma versão antiga do SA-MP, baixa a última versão: [Página de download do SA-MP](http://sa-mp.com/download.php).
+O servidor pode estar offline, ou se você não pode conectar a nenhum servidor desative seu firewall e veja se funciona. Caso funciona você precisa configurar seu firewall corretamente. Também pode ser que você tenha uma versão antiga do SA-MP, baixa a última versão: [Página de download do SA-MP](https://sa-mp.mp/downloads/).
 
 ### Eu tenha um GTA modificado: San Andreas e SA:MP não irão carregar
 

@@ -8,7 +8,7 @@ title: Probleme comune
 
 ### Am primit eroarea "GTA San Andreas nu poate fi găsit"
 
-San Andreas Multiplayer (SA:MP) **nu poate** sa funcționeze de unul singur și, prin urmare, trebuie să instalați GTA San Andreas pentru PC. De asemenea, versiunea jocului trebuie să fie **EU / US v1.0**, alte versiuni precum v2.0 sau versiunile de pe Steam/Direct2Drive nu vor funcționa. [Faceți clic aici pentru a descărca un patch care o să vă facă downgrade la versiunea GTA:SA 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multiplayer (SA:MP) **nu poate** sa funcționeze de unul singur și, prin urmare, trebuie să instalați GTA San Andreas pentru PC. De asemenea, versiunea jocului trebuie să fie **EU / US v1.0**, alte versiuni precum v2.0 sau versiunile de pe Steam/Direct2Drive nu vor funcționa. [Faceți clic aici pentru a descărca un patch care o să vă facă downgrade la versiunea GTA:SA 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### Nu pot vedea niciun server în browserul SA:MP
 
@@ -22,7 +22,7 @@ Nu ar trebui să vedeți opțiunile pentru singleplayer (new game, load game, et
 
 :::
 
-Modul singleplayer se poate încărca din 2 motive - ați instalat SA: MP în folderul greșit sau aveți versiunea greșită de GTA San Andreas. Dacă aveți o versiune greșită, acest lucru se poate remedia ușor. Click [aici](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) pentru a descărca patch-ul de downgrade.
+Modul singleplayer se poate încărca din 2 motive - ați instalat SA: MP în folderul greșit sau aveți versiunea greșită de GTA San Andreas. Dacă aveți o versiune greșită, acest lucru se poate remedia ușor. Click [aici](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) pentru a descărca patch-ul de downgrade.
 
 Uneori este posibil sa vedeți meniul din singleplayer, chiar dacă SA:MP s-a încărcat corect. Pentru a remedia acest lucru, trebuie pur și simplu să selectați un element din meniu, apoi să apăsați ESC până când ieșiți cu totul din meniu. După ce faceți asta, SA:MP va rula corespunzător.
 
@@ -32,7 +32,7 @@ Asigurați-vă că numele dvs. nu conține caractere interzise (utilizați numai
 
 ### Ecranul se blochează la "Connecting to IP:Port..."
 
-Serverul pe care încercați să vă conectați ar putea fi offline, dar dacă nu vă puteți conecta la niciun server, încercați să vă dezactivați firewall-ul. Dacă nu merge nici așa, trebuie să vă reconfigurați programul firewall pe care îl folosiți - accesați site-ul web al acestuia pentru a afla cum. De asemenea, s-ar putea să aveți o versiune veche de SA:MP, descărcați cea mai recentă versiune din [pagina de descarcare SA-MP](http://sa-mp.com/download.php).
+Serverul pe care încercați să vă conectați ar putea fi offline, dar dacă nu vă puteți conecta la niciun server, încercați să vă dezactivați firewall-ul. Dacă nu merge nici așa, trebuie să vă reconfigurați programul firewall pe care îl folosiți - accesați site-ul web al acestuia pentru a afla cum. De asemenea, s-ar putea să aveți o versiune veche de SA:MP, descărcați cea mai recentă versiune din [pagina de descarcare SA-MP](https://sa-mp.mp/downloads/).
 
 ### Mi-am instalt moduri în GTA San Andreas și acum SA:MP nu se mai deschide
 

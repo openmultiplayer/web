@@ -144,7 +144,7 @@ If you were to output `message_5[0]`, you would get **B**, weird right? Well, no
 
 You have `65 + 1`, that returns `66`, checking the _ASCII_ table, you will find that `66` is the numeric representation of the character “_B_” (_capitalized_). So, the snippet above is basically the same as doing: `message_5[0] = 'B'`;
 
-For reference, use [this ASCII table](http://www.asciitable.com/).
+For reference, use [this ASCII table](https://www.asciitable.com).
 
 You can also perform the same operation between multiple characters or a mix of both, them and numbers, here are few examples;
 
@@ -1426,7 +1426,7 @@ Of course, this only concerns functions that support formatting, such as `printf
 
 - **The `%q` specifier**
 
-This one doesn’t hold any big importance in our main topic, it’ widely used to escape sensitive strings when working with _SQLite_, and trust me, nobody wants to fall under the [Bobby table](http://bobby-tables.com/about) case.
+This one doesn’t hold any big importance in our main topic, it’ widely used to escape sensitive strings when working with _SQLite_, and trust me, nobody wants to fall under the [Bobby table](https://bobby-tables.com/about) case.
 
 Back when we introduced the placeholders, we reference a specific formula concerning them, as a reminder, here it is;
 
