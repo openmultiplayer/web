@@ -614,7 +614,7 @@ This only works in main(), not callbacks however as it's run in the PAWN thread.
 
 ## `state`
 
-state is part of the PAWN state machine and autonoma system, see this thread https://forum.sa-mp.com/showthread.php?t=86850 for more information.
+state is part of the PAWN state machine and autonoma system, see [this thread](https://sampforum.blast.hk/showthread.php?tid=570939) for more information.
 
 ## `switch`
 
