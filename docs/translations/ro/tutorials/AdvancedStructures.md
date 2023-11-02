@@ -279,19 +279,19 @@ apoi repetați procesul.
 
 Aveți matricea ordonată precedentă și doriți să aflați în ce slot este numărul 7 (dacă este deloc), în acest exemplu este probabil mai eficient să faceți doar o buclă directă prin matrice pentru a o găsi, dar asta nu este punctul metoda crește în timp liniar cu dimensiunea tabloului, un timp de căutare binar crește liniar pe măsură ce tabloul crește exponențial ca dimensiune. Adică o matrice 128 mare va dura de două ori mai mult pentru a căuta direct ca o matrice 64 mare, dar o căutare binară 128 mare va lua doar un cec mai mult decât o căutare binară 64 mare, deloc mult.
 
-Dacă construim un arbore binar din datele de mai sus, obținem: ![Imgur](https://web.archive.org/web/20190416012239im_/https://wiki.sa-mp.com/wroot/images2/f/fe/Binarytree.GIF)
+Dacă construim un arbore binar din datele de mai sus, obținem: ![Imgur](https://sampwiki.blast.hk/wiki/Image:Binarytree.GIF)
 
 Dacă citiți de la stânga la dreapta, ignorând aspectul vertical, puteți vedea că numerele sunt în ordine. Acum putem încerca să găsim 7.
 
 Numărul de start este 14, 7 este mai mic decât 14, așa că mergem la slotul indicat de ramura din stânga a 14. Aceasta ne aduce la 6, 7 este mai mare decât 6, așa că mergem la dreapta la 9, apoi din nou la stânga la 7. Această metodă a făcut 4 comparații pentru a găsi numărul (inclusiv verificarea finală pentru a confirma că suntem pe 7), folosind o căutare directă ar fi fost necesare 5.
 
-Să spunem că nu există 7, am ajunge la acest arbore binar: ![Binarytree-7-less](https://web.archive.org/web/20190416012239im_/https://wiki.sa-mp.com/wroot/images2/e/e5/Binarytree-7-less.GIF)
+Să spunem că nu există 7, am ajunge la acest arbore binar: ![Binarytree-7-less](https://sampwiki.blast.hk/wiki/Image:Binarytree-7-less.GIF)
 
 Acesta, spre deosebire de exemplul de mai sus, are un singur număr copil (cel 9), precum și 2 și 0 numere copil. Obțineți un arbore perfect numai atunci când există (2 ^ n) -1 numere (0, 1, 3, 7, 15, 31 ...), orice alte numere vor da un arbore nu destul de complet. În acest caz, când ajungem la 9, unde va fi 7, vom descoperi că nu există ramură stângă, adică 7 nu există (nu poate fi nicăieri altundeva în copac, gândiți-vă la asta), deci returnăm -1 pentru slot nevalid.
 
 #### Balansat si nebalansat
 
-Arborii din exemplele de mai sus sunt numiți arbori binari echilibrați, aceasta înseamnă cât mai aproape posibil toate ramurile au aceeași lungime (evident că în al doilea nu există suficiente numere pentru ca acest lucru să fie cazul, dar este cât mai aproape posibil). Construirea copacilor echilibrați nu este ușoară, metoda general acceptată de a construi copaci aproape echilibrați este plasarea numerelor într-o ordine aleatorie, acest lucru poate însemna că veți ajunge la așa ceva: ![Binarytree-uneven](https://web.archive.org/web/20190416012239im_/https://wiki.sa-mp.com/wroot/images2/a/a2/Binarytree-uneven.GIF)
+Arborii din exemplele de mai sus sunt numiți arbori binari echilibrați, aceasta înseamnă cât mai aproape posibil toate ramurile au aceeași lungime (evident că în al doilea nu există suficiente numere pentru ca acest lucru să fie cazul, dar este cât mai aproape posibil). Construirea copacilor echilibrați nu este ușoară, metoda general acceptată de a construi copaci aproape echilibrați este plasarea numerelor într-o ordine aleatorie, acest lucru poate însemna că veți ajunge la așa ceva: ![Binarytree-uneven](https://sampwiki.blast.hk/wiki/Image:Binarytree-uneven.GIF)
 
 Evident, acest arbore este încă valabil, dar partea dreaptă este mult mai mare decât stânga, totuși găsirea a 25 necesită doar 7 comparații în acest raport față de 12 din lista dreaptă. De asemenea, atâta timp cât începeți cu un număr destul de mediu, metoda de inserare aleatorie ar trebui să producă un arbore destul de echilibrat. Cel mai rău lucru posibil pe care îl puteți face este să puneți numerele în ordine, deoarece atunci nu vor exista deloc ramuri stângi (sau ramuri dreapta dacă se face invers), totuși chiar și în acest caz cel mai rău arborele binar nu va mai dura să caute decât lista dreaptă.
 
