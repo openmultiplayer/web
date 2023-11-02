@@ -12,7 +12,7 @@ title: Common Issues
 
 ### No veo ningún servidor en el buscador de servidores de SA:MP.
 
-Primero que nada, asegúrate de seguir los procedimientos previstos en la [Guía de inicio rápido](https://team.sa-mp.com/wiki/Getting_Started). Si el problema persiste aún si verificaste lo anterior, debes permitir el acceso de SA:MP a través de tu cortafuegos. Desafortunadamente, debido a la gran cantidad de software cortafuego que existe, no podemos dar soporte con esto, pero sugerimos el revisar en el sitio del programa (o realizar una busqueda ante nuestro todo poderoso Google). Asegúrate además de tener la última versión de SA:MP.
+Primero que nada, asegúrate de seguir los procedimientos previstos en la [Guía de inicio rápido](https://sampwiki.blast.hk/wiki/Getting_Started). Si el problema persiste aún si verificaste lo anterior, debes permitir el acceso de SA:MP a través de tu cortafuegos. Desafortunadamente, debido a la gran cantidad de software cortafuego que existe, no podemos dar soporte con esto, pero sugerimos el revisar en el sitio del programa (o realizar una busqueda ante nuestro todo poderoso Google). Asegúrate además de tener la última versión de SA:MP.
 
 ### El modo un jugador inicia en vez de SA:MP
 

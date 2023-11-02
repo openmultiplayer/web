@@ -12,7 +12,7 @@ San Andreas Multiplayer **nije** program koji može da radi sam! On dodaje multi
 
 ### Ne vidim nijedan server u SA:MP browseru
 
-Prvo, budite sigurni da slijedite postupke navedene u [Quick-start vodiču](https://team.sa-mp.com/wiki/Getting_Started). Ako ste pratili šta kaže i još uvijek ne vidite nijedan server, morate dozvoliti SA:MPu pristup kroz vaš firewall. Nažalost, zbog velike količine dostupnog softvera firewalla, ne možemo pružiti dodatnu podršku u vezi s tim - predlažemo da pogledate web lokaciju proizvođača ili isprobate Google pretragu. Obavezno imajte i najnoviju verziju SA:MP-a!
+Prvo, budite sigurni da slijedite postupke navedene u [Quick-start vodiču](https://sampwiki.blast.hk/wiki/Getting_Started). Ako ste pratili šta kaže i još uvijek ne vidite nijedan server, morate dozvoliti SA:MPu pristup kroz vaš firewall. Nažalost, zbog velike količine dostupnog softvera firewalla, ne možemo pružiti dodatnu podršku u vezi s tim - predlažemo da pogledate web lokaciju proizvođača ili isprobate Google pretragu. Obavezno imajte i najnoviju verziju SA:MP-a!
 
 ### Učitava se Singleplayer umjesto SA:MP-a
 

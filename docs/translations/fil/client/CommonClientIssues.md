@@ -12,7 +12,7 @@ Ang San Andreas Multiplayer ay **hindi** stand-alone program! Nagdadag-dag laman
 
 ### Wala akong makitang server sa SA:MP client ko!
 
-Una, dapat ay siguraduhing sinusundan ang tamang proseso na nakalapat sa [Quick-start guide](https://team.sa-mp.com/wiki/Getting_Started). Kung sinundan ito, at hindi parin nakikita ang mga servers sa iyong SA:MP client, kaialangan mong i-allow ang SA:MP sa iyong firewall. Sa kasamaang palad, dahil sa dami ng availanle na firewall softwares, hindi namin kayo matutulungan dito - pero suggest namin na maghanap kayo sa website ng manufacturer o maghanap ng solusyon sa Google search. At wag kalimutin na updated ang inyong SA:MP client sa latest na version!
+Una, dapat ay siguraduhing sinusundan ang tamang proseso na nakalapat sa [Quick-start guide](https://sampwiki.blast.hk/wiki/Getting_Started). Kung sinundan ito, at hindi parin nakikita ang mga servers sa iyong SA:MP client, kaialangan mong i-allow ang SA:MP sa iyong firewall. Sa kasamaang palad, dahil sa dami ng availanle na firewall softwares, hindi namin kayo matutulungan dito - pero suggest namin na maghanap kayo sa website ng manufacturer o maghanap ng solusyon sa Google search. At wag kalimutin na updated ang inyong SA:MP client sa latest na version!
 
 ### Singleplayer loads instead of SA:MP
 

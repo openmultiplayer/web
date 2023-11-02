@@ -12,7 +12,7 @@ San Andreas Multiplayer (SA:MP) **nu poate** sa funcționeze de unul singur și,
 
 ### Nu pot vedea niciun server în browserul SA:MP
 
-În primul rând, asigurați-vă că ați urmat procedurile stabilite în [ghidul de inceput](https://team.sa-mp.com/wiki/Getting_Started). Dacă ați urmat ceea ce scrie acolo și încă nu puteți vedea niciun server, trebuie să permiteți accesul SA:MP-ului prin firewall-ul dumneavoastră. Din păcate, datorită numărului mare de programe firewall care există, nu putem oferi asistență suplimentară în acest sens - vă sugerăm să consultați site-ul web al producătorilor sau să încercați să căutați pe Google. De asemenea, asigurați-vă că ați instalat cea mai recentă versiune de SA:MP!
+În primul rând, asigurați-vă că ați urmat procedurile stabilite în [ghidul de inceput](https://sampwiki.blast.hk/wiki/Getting_Started). Dacă ați urmat ceea ce scrie acolo și încă nu puteți vedea niciun server, trebuie să permiteți accesul SA:MP-ului prin firewall-ul dumneavoastră. Din păcate, datorită numărului mare de programe firewall care există, nu putem oferi asistență suplimentară în acest sens - vă sugerăm să consultați site-ul web al producătorilor sau să încercați să căutați pe Google. De asemenea, asigurați-vă că ați instalat cea mai recentă versiune de SA:MP!
 
 ### Se deschide jocul singleplayer în loc de SA:MP
 
