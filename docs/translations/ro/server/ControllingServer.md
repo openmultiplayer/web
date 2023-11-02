@@ -189,7 +189,7 @@ Acestea sunt comenzile pe care le puteți folosi ca admin:
 | `/rcon playertimeout [limită m/s]` | Schimba timpul în milisecunde în care un player este considerat AFK, după ce nu mai trimite semnale către server. (implicit 1000) |
 | `/rcon language [limbă]`       | Schimbă limba serverului (_exemplu: /rcon language English_). Se afișează și în browser.             |
 
-Aceste limite au fost făcute pentru a evita pe cât posibil atacurile asupra serverelor de SA-MP. Deci, pur și simplu setați-le în concordanță cu serverul dumneavoastră. [Citiți mai mult aici](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47).
+Aceste limite au fost făcute pentru a evita pe cât posibil atacurile asupra serverelor de SA-MP. Deci, pur și simplu setați-le în concordanță cu serverul dumneavoastră. [Citiți mai mult aici](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193).
 
 ### Funcții și callback-uri
 

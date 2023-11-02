@@ -137,7 +137,6 @@ The colors used in color embedding are not like normal hex colors in Pawn. There
 
 - [SA-MP Colorpicker v1.1.0](https://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
 - [December.com](https://johndecember.com/html/spec/color.html)
-- [RGB Picker](http://psyclops.com/tools/rgb)
 - [Adobe Color](https://color.adobe.com/create/color-wheel/)
 - [Color Scheme Designer](https://paletton.com)
 

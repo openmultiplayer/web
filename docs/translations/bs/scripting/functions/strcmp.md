@@ -66,4 +66,3 @@ Ova funkcija vraća 0 ako je bilo koji niz prazan. Provjerite ima li null nizova
 - [strpack](strpack): Upakuj string u odredišni string.
 - [strval](strval): Pretvori string u cijeli broj.
 - [strcat](strcat): Spojite dva stringa u odredišnu referencu.
-- http://www.compuphase.com/pawn/String_Manipulation.pdf

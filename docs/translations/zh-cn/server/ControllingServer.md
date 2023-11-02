@@ -190,7 +190,7 @@ unbanip 13.37.13.37
 | `/rcon playertimeout [limit m/s]` | 更改玩家超时时间。（以毫秒为单位，默认 1000）                |
 | `/rcon language [language]`       | 更改服务器语言（_例如：/rcon language Chinese_）。 在服务器信息中显示。 |
 
-上述四个限制只是为了避免一些工具攻击 SA-MP 服务器让服务器崩溃或无法进入。 因此，只需根据您的服务器设置它们即可。如果你看到任何玩家被误踢，只需尽快增加限制值，这样正常的玩家就不会被踢。 [在此处阅读更多内容](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47)。
+上述四个限制只是为了避免一些工具攻击 SA-MP 服务器让服务器崩溃或无法进入。 因此，只需根据您的服务器设置它们即可。如果你看到任何玩家被误踢，只需尽快增加限制值，这样正常的玩家就不会被踢。 [在此处阅读更多内容](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193)。
 
 ### 相关回调和函数
 
