@@ -12,7 +12,7 @@ Even vehicles with more than 4 wheels (e.g. trucks) only have 4 tire states.
 
 Each tire has two states - popped and not popped. Binary Digits (bits) also have two states - 0 and 1. A technique called [bit masking](<https://en.wikipedia.org/wiki/Mask_(computing)>) is used to store more information in less memory. Bit 1 represents a popped tire, and bit 0 represents a tire that isn't popped. For example, `0101` - two tires are popped, two are not.
 
-Bitwise operators can be used to work with bit masking.
+[Bitwise operators](https://sampforum.blast.hk/showthread.php?tid=177523) can be used to work with bit masking.
 
 Here is a visual representation of the tire states. Vehicle viewed from a top-down perspective, the top is the front of the vehicle.
 

@@ -692,7 +692,7 @@ This will send the following message to everyone (_and I'm no Italian_):
 
 Keep in mind that the hexadecimal notation is case insensitive, so typing `0xFFC0E1FF` is the same as typing `0xfFC0e1Ff`, the same goes for embedded colors, `{401C15}` is the same as `{401c15}`.
 
-Sometimes, working with colors can prove to be quite the labor, It’s not that easy to go around remembering all of those long hexadecimal numbers like no big deal, You should always have a reference to go back to, there are plenty of online color pickers you can use, you can simply google “_color picker_”, and choose between thousands of them, let me do that on you if you don’t mind, [here’s a simple tool](https://www.webpagefx.com/web-design/color-picker/) that I recommend using when working with colors.
+Sometimes, working with colors can prove to be quite the labor, It’s not that easy to go around remembering all of those long hexadecimal numbers like no big deal, You should always have a reference to go back to, there are plenty of online color pickers you can use, you can simply google “_color picker_”, and choose between thousands of them, let me do that on you if you don’t mind, [here’s a simple tool](https://www.webfx.com/web-design/color-picker/) that I recommend using when working with colors.
 
 One of the problems that people find, is managing their workflow, which if done right, it facilitates the work pacing, and makes it less painful to work around your projects, while color picker tools are of a great help, you can still waste plenty of time going on and off to it every time you need to pick a color, the frustration of that can be as annoying as a pizza with pineapples, luckily, you can take advantage of predefined constants, and define your most used colors for later usage, here’s a simple example;
 
@@ -1705,7 +1705,7 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 - [Control Structures](../scripting/language/ControlStructures)
 - [Null character](https://en.wikipedia.org/wiki/Null_character)
 - [RGBA color space](https://en.wikipedia.org/wiki/RGBA_color_space)
-- [Color picker](https://www.webpagefx.com/web-design/color-picker/)
+- [Color picker](https://www.webfx.com/web-design/color-picker/)
 - [TextDrawColor](../scripting/functions/TextDrawColor)
 - [Gametext styles](../scripting/resources/gametextstyles)
 - [Color list](../scripting/resources/colorslist)
