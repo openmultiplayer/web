@@ -36,9 +36,7 @@ func Build() fx.Option {
 			s *service,
 		) {
 			rtr := chi.NewRouter()
-			r.With(
-				cacheClient.Middleware,
-			).Mount("/servers", rtr)
+			r.Mount("/servers", rtr)
 
 			rtr.Use(
 				cors.Handler(cors.Options{
