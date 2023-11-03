@@ -62,7 +62,7 @@ Avertissement : Trop de messages dans le désordre du joueur <ip> :<port> (<co
 
 Se produit lorsque les "messages hors service" réutilisent le paramètre messageholelimit.
 
-Pour plus d'informations à ce sujet, consultez [ceci](https://open.mp/docs/server/ControllingServer#RCON_Commands)
+Pour plus d'informations à ce sujet, consultez [ceci](ControllingServer#Commandes_RCON)
 
 ## Les joueurs obtiennent constamment l'erreur "Unacceptable NickName" mais elle est valide
 
