@@ -23,9 +23,7 @@ func Build() fx.Option {
 			cacheClient *cache.Client,
 		) {
 			rtr := chi.NewRouter()
-			r.With(
-				cacheClient.Middleware,
-			).Mount("/", rtr)
+			r.Mount("/", rtr)
 
 			// legacy announce.exe pattern: server.sa-mp.com/0.3.7/announce/7777
 			rtr.Get("/{version}/announce/{port}", s.postLegacy)
