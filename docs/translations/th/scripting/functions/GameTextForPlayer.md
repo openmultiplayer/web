@@ -33,5 +33,5 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GameTextForAll](../functions/GameTextForAll): Display gametext to all players.
-- [TextDrawShowForAll](../functions/TextDrawShowForAll): Show a textdraw for all players.
+- [GameTextForAll](GameTextForAll): Display gametext to all players.
+- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.

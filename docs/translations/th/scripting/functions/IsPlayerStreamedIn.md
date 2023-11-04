@@ -50,9 +50,9 @@ Players aren't streamed in on their own client, so if playerid is the same as fo
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [IsActorStreamedIn](../../scripting/functions/IsActorStreamedIn.md): Checks if an actor is streamed in for a player.
-- [IsVehicleStreamedIn](../../scripting/functions/IsVehicleStreamedIn.md): Checks if a vehicle is streamed in for a player.
-- [OnPlayerStreamIn](../../scripting/callbacks/OnPlayerStreamIn.md): Called when a player streams in for another player.
-- [OnPlayerStreamOut](../../scripting/callbacks/OnPlayerStreamOut.md): Called when a player streams out for another player.
-- [OnVehicleStreamIn](../../scripting/callbacks/OnVehicleStreamIn.md): Called when a vehicle streams in for a player.
-- [OnVehicleStreamOut](../../scripting/callbacks/OnVehicleStreamOut.md): Called when a vehicle streams out for a player.
+- [IsActorStreamedIn](IsActorStreamedIn): Checks if an actor is streamed in for a player.
+- [IsVehicleStreamedIn](IsVehicleStreamedIn): Checks if a vehicle is streamed in for a player.
+- [OnPlayerStreamIn](../callbacks/OnPlayerStreamIn): Called when a player streams in for another player.
+- [OnPlayerStreamOut](../callbacks/OnPlayerStreamOut): Called when a player streams out for another player.
+- [OnVehicleStreamIn](../callbacks/OnVehicleStreamIn): Called when a vehicle streams in for a player.
+- [OnVehicleStreamOut](../callbacks/OnVehicleStreamOut): Called when a vehicle streams out for a player.

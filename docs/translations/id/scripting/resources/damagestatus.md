@@ -16,10 +16,10 @@ Sebagai contohnya, status ban menyimpan 4 bit untuk 4 ban. Nilainya bernilai 1 j
 
 :::note
 
-Untuk informasi selebihnya mengenai keadaan panel, lihat [Keadaan Panel](../resources/panelstates).  
-Untuk informasi selebihnya mengenai keadaan pintu, lihat [Keadaan Pintu](../resources/doorstates).  
-Untuk informasi selebihnya mengenai keadaan lampu, lihat [Keadaan Lampu](../resources/lightstates).  
-Untuk informasi selebihnya mengenai keadaan ban, lihat [Keadaan Ban](../resources/tirestates).
+Untuk informasi selebihnya mengenai keadaan panel, lihat [Keadaan Panel](panelstates).  
+Untuk informasi selebihnya mengenai keadaan pintu, lihat [Keadaan Pintu](doorstates).  
+Untuk informasi selebihnya mengenai keadaan lampu, lihat [Keadaan Lampu](lightstates).  
+Untuk informasi selebihnya mengenai keadaan ban, lihat [Keadaan Ban](tirestates).
 
 :::
 

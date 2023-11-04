@@ -34,6 +34,6 @@ ken testa3mlha ta7t OnPlayerConnect el player eli badaltlou el color mayrach el 
 
 ## Functions tab3in el callback
 
-- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer.md): t7ot Marker lel player.
-- [GetPlayerColor](GetPlayerColor.md): Tekhou el player color (ma3neha tnejem testa3mlou).
-- [ChangeVehicleColor](ChangeVehicleColor.md): tbadel el color mta3 el vehicle.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): t7ot Marker lel player.
+- [GetPlayerColor](GetPlayerColor): Tekhou el player color (ma3neha tnejem testa3mlou).
+- [ChangeVehicleColor](ChangeVehicleColor): tbadel el color mta3 el vehicle.

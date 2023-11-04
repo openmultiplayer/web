@@ -47,5 +47,5 @@ Nieprawidłowa biblioteka animacji zcrashuje klient gracza.
 
 ## Powiązane funkcje
 
-- [ClearAnimations](ClearAnimations.md): Wyłącza dowolną wykonywaną przez gracza animację.
-- [SetPlayerSpecialAction](SetPlayerSpecialAction.md): Ustawia graczowi specjalną akcję.
+- [ClearAnimations](ClearAnimations): Wyłącza dowolną wykonywaną przez gracza animację.
+- [SetPlayerSpecialAction](SetPlayerSpecialAction): Ustawia graczowi specjalną akcję.

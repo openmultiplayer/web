@@ -28,4 +28,4 @@ Bu callback aynı zamanda filterscript içinde changemode veya gmx gibi RCON kom
 
 ## Bağlantılı Fonksiyonlar
 
-- [GameModeExit](../functions/GameModeExit.md): Mevcut oyun modundan çıkış yapar.
+- [GameModeExit](../functions/GameModeExit): Mevcut oyun modundan çıkış yapar.

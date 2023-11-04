@@ -4,7 +4,7 @@ title: Fighting Styles
 
 ## คำอธิบาย
 
-Fighting Styles to be used with [SetPlayerFightingStyle](../functions/SetPlayerFightingStyle.md) and [GetPlayerFightingStyle](../functions/GetPlayerFightingStyle.md).
+Fighting Styles to be used with [SetPlayerFightingStyle](../functions/SetPlayerFightingStyle) and [GetPlayerFightingStyle](../functions/GetPlayerFightingStyle).
 
 ## Fighting Styles
 

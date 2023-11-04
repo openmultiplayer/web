@@ -6,7 +6,7 @@ tags: []
 
 :::warning
 
-Ova funkcija, kao 0.3d, je zastarjela. Molim vas pogledajte [OnPlayerClickMap](../callbacks/OnPlayerClickMap.md).
+Ova funkcija, kao 0.3d, je zastarjela. Molim vas pogledajte [OnPlayerClickMap](../callbacks/OnPlayerClickMap).
 
 :::
 
@@ -35,5 +35,5 @@ public OnGameModeInit()
 
 ## Srodne Funkcije
 
-- [IsPlayerAdmin](IsPlayerAdmin.md): Provjerava da li je igrač ulogovan u RCON kao admin.
-- [AllowPlayerTeleport](AllowPlayerTeleport.md): O(ne)mogućiti teleportanje igrača sa markerom.
+- [IsPlayerAdmin](IsPlayerAdmin): Provjerava da li je igrač ulogovan u RCON kao admin.
+- [AllowPlayerTeleport](AllowPlayerTeleport): O(ne)mogućiti teleportanje igrača sa markerom.

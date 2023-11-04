@@ -25,6 +25,6 @@ public OnNPCConnect(myplayerid)
 
 ## 相关回调
 
-- [OnNPCDisconnect](../callbacks/OnNPCDisconnect): 当 NPC 与服务器断开连接时调用。
-- [OnPlayerConnect](../callbacks/OnPlayerConnect): 当玩家连接到服务器时调用。
-- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): 在玩家离开服务器时调用。
+- [OnNPCDisconnect](OnNPCDisconnect): 当 NPC 与服务器断开连接时调用。
+- [OnPlayerConnect](OnPlayerConnect): 当玩家连接到服务器时调用。
+- [OnPlayerDisconnect](OnPlayerDisconnect): 在玩家离开服务器时调用。

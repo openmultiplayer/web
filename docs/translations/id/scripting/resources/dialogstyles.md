@@ -13,7 +13,7 @@ description: Informasi mengenai Gaya Dialog
 :::
 
 - Halaman ini mendeskripsikan perilaku dari [ShowPlayerDialog](../functions/ShowPlayerDialog) dan [OnDialogResponse](../callbacks/OnDialogResponse).
-- Untuk melihat batasannya, kunjungi halaman [Batasan](../resources/limits).
+- Untuk melihat batasannya, kunjungi halaman [Batasan](limits).
 - Untuk contoh responnya, berikut ini adalah kodenya:
 
 ```c

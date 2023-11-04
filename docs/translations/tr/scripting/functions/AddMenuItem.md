@@ -42,8 +42,8 @@ Geçersiz bir menü kimliği geçtiğinde çöker. Menü başına yalnızca 12 �
 
 ## İlgili Fonksiyonlar
 
-- [CreateMenu](CreateMenu.md): Menü oluşturmak.
-- [SetMenuColumnHeader](SetMenuColumnHeader.md): Menüdeki sütunlardan birinin başlığını ayarlayın.
-- [DestroyMenu](DestroyMenu.md): Menüyü yok et.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Oynatıcı menüde bir satır seçtiğinde çağrılır.
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Oynatıcı menüden çıktığında çağırılır.
+- [CreateMenu](CreateMenu): Menü oluşturmak.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Menüdeki sütunlardan birinin başlığını ayarlayın.
+- [DestroyMenu](DestroyMenu): Menüyü yok et.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Oynatıcı menüde bir satır seçtiğinde çağrılır.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Oynatıcı menüden çıktığında çağırılır.

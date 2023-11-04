@@ -80,6 +80,6 @@ Ketika player menekan ESC untuk membatalkan pemilihan textdraw, OnPlayerClickTex
 
 ## Fungsi Terkait
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md): Mengatur apakah player-textdraw dapat dipilih menggunakan SelectTextDraw
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Terpanggil ketika player mengklik sebuah textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Terpanggil ketika player mengklik yang lain.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Mengatur apakah player-textdraw dapat dipilih menggunakan SelectTextDraw
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Terpanggil ketika player mengklik sebuah textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Terpanggil ketika player mengklik yang lain.

@@ -59,4 +59,4 @@ Atualmente não há restrições sobre quando você pode chamar esta função, m
 
 ## Funções Relacionadas
 
-- [SetPlayerSkin](../functions/SetPlayerSkin.md): Define a skin (personagem) de um jogador.
+- [SetPlayerSkin](SetPlayerSkin): Define a skin (personagem) de um jogador.

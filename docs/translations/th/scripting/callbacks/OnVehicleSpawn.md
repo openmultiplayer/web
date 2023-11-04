@@ -38,5 +38,5 @@ public OnVehicleSpawn(vehicleid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetVehicleToRespawn](../../scripting/functions/SetVehicleToRespawn.md): Respawn a vehicle.
-- [CreateVehicle](../../scripting/functions/CreateVehicle.md): Create a vehicle.
+- [SetVehicleToRespawn](../functions/SetVehicleToRespawn): Respawn a vehicle.
+- [CreateVehicle](../functions/CreateVehicle): Create a vehicle.

@@ -6,13 +6,13 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada se stanje bilo koje [podržane](../resources/keys.md) tipke promijeni (pritisnuta/puštena).<br/>Tipke sa smjerom neće uzrokovati pozivanje `OnPlayerKeyStateChange` (gore/dole/lijevo/desno).
+Ovaj callback je pozvan kada se stanje bilo koje [podržane](../resources/keys) tipke promijeni (pritisnuta/puštena).<br/>Tipke sa smjerom neće uzrokovati pozivanje `OnPlayerKeyStateChange` (gore/dole/lijevo/desno).
 
-| Ime      | Deskripcija                                                                                     |
-| -------- | ----------------------------------------------------------------------------------------------- |
-| playerid | ID igrača koji je pritisnuo ili pustio tipku.                                                   |
-| newkeys  | Mapa (bitmaska) trenutno držanih tipki - [pogledaj ovdje](../resources/keys.md)                 |
-| oldkeys  | Mapa (bitmaska) tipki držanih prije trenutne promjene - [pogledaj ovdje](../resources/keys.md). |
+| Ime      | Deskripcija                                                                                  |
+| -------- | -------------------------------------------------------------------------------------------- |
+| playerid | ID igrača koji je pritisnuo ili pustio tipku.                                                |
+| newkeys  | Mapa (bitmaska) trenutno držanih tipki - [pogledaj ovdje](../resources/keys)                 |
+| oldkeys  | Mapa (bitmaska) tipki držanih prije trenutne promjene - [pogledaj ovdje](../resources/keys). |
 
 ## Returns
 
@@ -29,7 +29,7 @@ Ovaj callback takođerm ože biti pozvan od strane NPC-a.
 
 :::tip
 
-Tipke sa smjerom neće uzrokovati pozivanje `OnPlayerKeyStateChange` (gore/dole/lijevo/desno).<br/>Oni mogu biti detektovani samo sa [GetPlayerKeys](../functions/GetPlayerKeys.md) (u [OnPlayerUpdate](../callbacks/OnPlayerUpdate.md) ili u tajmeru).
+Tipke sa smjerom neće uzrokovati pozivanje `OnPlayerKeyStateChange` (gore/dole/lijevo/desno).<br/>Oni mogu biti detektovani samo sa [GetPlayerKeys](../functions/GetPlayerKeys) (u [OnPlayerUpdate](OnPlayerUpdate) ili u tajmeru).
 
 :::
 
@@ -37,13 +37,13 @@ Tipke sa smjerom neće uzrokovati pozivanje `OnPlayerKeyStateChange` (gore/dole/
 
     #test
 
-- [GetPlayerKeys](../functions/GetPlayerKeys.md): Provjeri koje tipke igrač drži.
+- [GetPlayerKeys](../functions/GetPlayerKeys): Provjeri koje tipke igrač drži.
 
 ## Dodatne Informacije
 
 ### Uvod
 
-Ovaj callback je pozvan kad god igrač pritisne ili pusti jedan od podržanih tipku (pogledajte [Keys](../resources/keys.md)).<br/>Tipke koje su podržane nisu zapravo tipke sa tipkovnice, već San Andreas preslikane funkcijske tipke, to znači da, naprimjer, ne možete detektovati kada neko pritisne <strong>spacebar</strong>, ali možete detektovati kada neko pritisne "sprint key" (koji može, ili ne mora biti dodijeljen razmaknici (to je prema zadanim postavkama)).
+Ovaj callback je pozvan kad god igrač pritisne ili pusti jedan od podržanih tipku (pogledajte [Keys](../resources/keys)).<br/>Tipke koje su podržane nisu zapravo tipke sa tipkovnice, već San Andreas preslikane funkcijske tipke, to znači da, naprimjer, ne možete detektovati kada neko pritisne <strong>spacebar</strong>, ali možete detektovati kada neko pritisne "sprint key" (koji može, ili ne mora biti dodijeljen razmaknici (to je prema zadanim postavkama)).
 
 ### Parametri
 

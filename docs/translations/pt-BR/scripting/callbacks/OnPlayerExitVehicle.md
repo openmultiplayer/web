@@ -39,5 +39,5 @@ Não é chamada quando o jogador cai de uma bicicleta ou é removido do veículo
 
 ## Funções Relacionadas
 
-- [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle.md): Tira o jogador do veículo.
-- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Verifica que assento o jogador está.
+- [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): Tira o jogador do veículo.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Verifica que assento o jogador está.

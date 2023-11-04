@@ -48,10 +48,10 @@ public OnGameModeExit ( )
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [Create3DTextLabel](../../scripting/functions/Create3DTextLabel.md): Create a 3D text label.
-- [Delete3DTextLabel](../../scripting/functions/Delete3DTextLabel.md): Delete a 3D text label.
-- [Attach3DTextLabelToPlayer](../../scripting/functions/Attach3DTextLabelToPlayer.md): Attach a 3D text label to a player.
-- [Update3DTextLabelText](../../scripting/functions/Update3DTextLabelText.md): Change the text of a 3D text label.
-- [CreatePlayer3DTextLabel](../../scripting/functions/CreatePlayer3DTextLabel.md): Create A 3D text label for one player.
-- [DeletePlayer3DTextLabel](../../scripting/functions/DeletePlayer3DTextLabel.md): Delete a player's 3D text label.
-- [UpdatePlayer3DTextLabelText](../../scripting/functions/UpdatePlayer3DTextLabel.md): Change the text of a player's 3D text label.
+- [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
+- [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
+- [Update3DTextLabelText](Update3DTextLabelText): Change the text of a 3D text label.
+- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabel): Change the text of a player's 3D text label.

@@ -2,7 +2,7 @@
 title: Tipuri de răspuns editare obiect
 ---
 
-Folosit in [OnPlayerEditObject](../callbacks/OnPlayerEditObject.md) si [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject.md).
+Folosit in [OnPlayerEditObject](../callbacks/OnPlayerEditObject) si [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject).
 
 ```c
 0 - EDIT_RESPONSE_CANCEL  // jucatorul a anulat (ESC)

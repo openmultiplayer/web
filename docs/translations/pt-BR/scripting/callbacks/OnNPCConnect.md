@@ -25,6 +25,6 @@ public OnNPCConnect(myplayerid)
 
 ## Callbacks Relacionadas
 
-- [OnNPCDisconnect](../callbacks/OnNPCDisconnect): Executada quando o NPC desconecta do servidor.
-- [OnPlayerConnect](../callbacks/OnPlayerConnect): Executada quando o jogador conecta no servidor.
-- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Executada quando o jogador desconecta do servidor.
+- [OnNPCDisconnect](OnNPCDisconnect): Executada quando o NPC desconecta do servidor.
+- [OnPlayerConnect](OnPlayerConnect): Executada quando o jogador conecta no servidor.
+- [OnPlayerDisconnect](OnPlayerDisconnect): Executada quando o jogador desconecta do servidor.

@@ -146,7 +146,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parametri mogu sadržavati različite vrijednosti, bazirane na stilu dijaloga ([Klikni za više primjera](../resources/dialogstyles.md)).
+Parametri mogu sadržavati različite vrijednosti, bazirane na stilu dijaloga ([Klikni za više primjera](../resources/dialogstyles)).
 
 :::
 
@@ -164,4 +164,4 @@ Dijalog igrača se ne sakriva kada se gamemode restartuje, uzrokujući to da ser
 
 ## Srodne Funkcije
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Prikaži dijalog igraču.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Prikaži dijalog igraču.

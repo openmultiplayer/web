@@ -50,4 +50,4 @@ Saat ini hanya ada satu 'source' (0 - CLICK_SOURCE_SCOREBOARD). Keberadaan argum
 
 ## Fungsi Terkait
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Terpanggil ketika player mengklik pada textdraw.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Terpanggil ketika player mengklik pada textdraw.

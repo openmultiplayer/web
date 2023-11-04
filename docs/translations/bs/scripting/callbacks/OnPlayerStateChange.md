@@ -14,7 +14,7 @@ Ovaj callback je pozvan kada igrač promijeni stanje. Naprimjer, kada igrač pro
 | newstate | Igračevo novo stanje.                |
 | oldstate | Igračevo prethodno stanje.           |
 
-Pogledajte [Igračeva stanja/Player States](../resources/playerstates.md) za listu svih dostupnih stanja igrača.
+Pogledajte [Igračeva stanja/Player States](../resources/playerstates) za listu svih dostupnih stanja igrača.
 
 ## Returns
 
@@ -44,6 +44,6 @@ Ovaj callback pozvat će i NPC.
 
 ## Srodne Funkcije
 
-- [GetPlayerState](../functions/GetPlayerState.md): Dobij trenutno igračevo stanje.
-- [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction.md): Dobij trenutnu igračevu specijalnu akciju (special action).
-- [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction.md): Postavi igraču specijalnu akciju (special action).
+- [GetPlayerState](../functions/GetPlayerState): Dobij trenutno igračevo stanje.
+- [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction): Dobij trenutnu igračevu specijalnu akciju (special action).
+- [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction): Postavi igraču specijalnu akciju (special action).

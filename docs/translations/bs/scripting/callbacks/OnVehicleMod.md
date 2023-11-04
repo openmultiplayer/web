@@ -44,7 +44,7 @@ Ovaj callback neće biti pozvan od strane `AddVehicleComponent`.
 
 ## Srodne Funkcije
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Dodaj komponentu na vozilo.
-- [OnEnterExitModShop](OnEnterExitModShop.md): Pozvano kada vozilo uđe ili izađe u mod shop.
-- [OnVehiclePaintjob](OnVehiclePaintjob.md): Pozvano kada se paintjob vozila promijeni.
-- [OnVehicleRespray](OnVehicleRespray.md): Pozvano kada vozilo biva respray-ovano(ponovno obojeno).
+- [AddVehicleComponent](../functions/AddVehicleComponent): Dodaj komponentu na vozilo.
+- [OnEnterExitModShop](OnEnterExitModShop): Pozvano kada vozilo uđe ili izađe u mod shop.
+- [OnVehiclePaintjob](OnVehiclePaintjob): Pozvano kada se paintjob vozila promijeni.
+- [OnVehicleRespray](OnVehicleRespray): Pozvano kada vozilo biva respray-ovano(ponovno obojeno).

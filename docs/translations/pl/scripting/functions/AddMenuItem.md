@@ -42,8 +42,8 @@ Podanie nieprawidłowego ID menu powoduje crash. Możesz mieć tylko 12 element�
 
 ## Powiązane funkcje
 
-- [CreateMenu](CreateMenu.md): Tworzy menu.
-- [SetMenuColumnHeader](SetMenuColumnHeader.md): Ustawia nagłówek dla jednej z kolumn w menu.
-- [DestroyMenu](DestroyMenu.md): Kasuje menu.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Wywoływane, gdy gracz wybrał rząd w menu.
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Wywoływane, gdy gracz zamknie menu.
+- [CreateMenu](CreateMenu): Tworzy menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Ustawia nagłówek dla jednej z kolumn w menu.
+- [DestroyMenu](DestroyMenu): Kasuje menu.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Wywoływane, gdy gracz wybrał rząd w menu.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Wywoływane, gdy gracz zamknie menu.

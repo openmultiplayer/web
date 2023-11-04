@@ -43,4 +43,4 @@ Bugs Conhecidos: Jogadores colidem quando entram no mesmo modshop.
 
 ## Funções Relacionadas
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Adiciona um componente a um veículo.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Adiciona um componente a um veículo.

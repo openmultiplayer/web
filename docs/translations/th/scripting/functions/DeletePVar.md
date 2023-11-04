@@ -39,9 +39,9 @@ Once a variable is deleted, attempts to retrieve the value will return 0 (for in
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPVarInt](../../scripting/functions/SetPVarInt.md): Set an integer for a player variable.
-- [GetPVarInt](../../scripting/functions/GetPVarInt.md): Get the previously set integer from a player variable.
-- [SetPVarString](../../scripting/functions/SetPVarString.md): Set a string for a player variable.
-- [GetPVarString](../../scripting/functions/GetPVarString.md): Get the previously set string from a player variable.
-- [SetPVarFloat](../../scripting/functions/SetPVarFloat.md): Set a float for a player variable.
-- [GetPVarFloat](../../scripting/functions/GetPVarFloat.md): Get the previously set float from a player variable.
+- [SetPVarInt](SetPVarInt): Set an integer for a player variable.
+- [GetPVarInt](GetPVarInt): Get the previously set integer from a player variable.
+- [SetPVarString](SetPVarString): Set a string for a player variable.
+- [GetPVarString](GetPVarString): Get the previously set string from a player variable.
+- [SetPVarFloat](SetPVarFloat): Set a float for a player variable.
+- [GetPVarFloat](GetPVarFloat): Get the previously set float from a player variable.

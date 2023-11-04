@@ -48,4 +48,4 @@ Znane napake: igralci trčijo, ko vstopijo v isto modshop
 
 ## Povezane Funkcijo
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): V vozilo dodajte komponento.
+- [AddVehicleComponent](../functions/AddVehicleComponent): V vozilo dodajte komponento.

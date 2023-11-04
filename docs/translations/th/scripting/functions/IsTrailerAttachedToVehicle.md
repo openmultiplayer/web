@@ -29,6 +29,6 @@ if (IsTrailerAttachedToVehicle(vehicleid))
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetVehicleTrailer](../../scripting/functions/GetVehicleTrailer.md): Check what trailer a vehicle is pulling.
-- [AttachTrailerToVehicle](../../scripting/functions/AttachTrailerToVehicle.md): Attach a trailer to a vehicle.
-- [DetachTrailerFromVehicle](../../scripting/functions/DetachTrailerFromVehicle.md): Detach a trailer from a vehicle.
+- [GetVehicleTrailer](GetVehicleTrailer): Check what trailer a vehicle is pulling.
+- [AttachTrailerToVehicle](AttachTrailerToVehicle): Attach a trailer to a vehicle.
+- [DetachTrailerFromVehicle](DetachTrailerFromVehicle): Detach a trailer from a vehicle.

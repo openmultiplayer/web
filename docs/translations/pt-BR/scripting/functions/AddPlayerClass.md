@@ -50,6 +50,6 @@ A identificação máxima da classe é 319 (começando em 0, portanto, um total 
 
 ## Funções Relacionadas
 
-- [AddPlayerClassEx](../functions/AddPlayerClassEx.md): Adiciona uma classe com uma equipe padrão.
-- [SetSpawnInfo](../functions/SetSpawnInfo.md): Define a configuração de spawn para um jogador.
-- [SetPlayerSkin](../functions/SetPlayerSkin.md): Define a skin (personagem) de um jogador.
+- [AddPlayerClassEx](AddPlayerClassEx): Adiciona uma classe com uma equipe padrão.
+- [SetSpawnInfo](SetSpawnInfo): Define a configuração de spawn para um jogador.
+- [SetPlayerSkin](SetPlayerSkin): Define a skin (personagem) de um jogador.

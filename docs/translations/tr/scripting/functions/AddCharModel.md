@@ -52,4 +52,4 @@ Bunun işe yaraması için kullanılabilir resmin öncelikle sunucu ayarlarında
 
 ## İlgili Fonksiyonlar
 
-- [SetPlayerSkin](SetPlayerSkin.md): Bir oyuncunun cildini ayarlayın.
+- [SetPlayerSkin](SetPlayerSkin): Bir oyuncunun cildini ayarlayın.

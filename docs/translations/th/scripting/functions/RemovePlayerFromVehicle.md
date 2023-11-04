@@ -42,4 +42,4 @@ The exiting animation is not synced for other players. This function will not wo
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [PutPlayerInVehicle](../functions/PutPlayerInVehicle.md): Put a player in a vehicle.
+- [PutPlayerInVehicle](PutPlayerInVehicle): Put a player in a vehicle.

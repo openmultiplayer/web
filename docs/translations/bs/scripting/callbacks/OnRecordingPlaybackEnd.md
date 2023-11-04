@@ -25,5 +25,5 @@ public OnRecordingPlaybackEnd()
 
 ## Related Functions
 
-- [NPC:StartRecordingPlayback](NPC:StartRecordingPlayback.md): Počinje da reproducita već snimljeni .rec fajl.
-- [NPC:StopRecordingPlayback](NPC:StopRecordingPlayback.md): Prestaje da reproducira .rec fajl.
+- [NPC:StartRecordingPlayback](NPC:StartRecordingPlayback): Počinje da reproducita već snimljeni .rec fajl.
+- [NPC:StopRecordingPlayback](NPC:StopRecordingPlayback): Prestaje da reproducira .rec fajl.

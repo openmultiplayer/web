@@ -44,6 +44,6 @@ Terkadang game akan mengurangi \$100 dari pemain setelah spawn.
 
 ## Fungsi Terkait
 
-- [SpawnPlayer](../functions/SpawnPlayer.md): Memaksa pemain untuk spawn.
-- [AddPlayerClass](../functions/AddPlayerClass.md): Menambahkan kelas.
-- [SetSpawnInfo](../functions/SetSpawnInfo.md): Menambahkan pengaturan spawn untuk pemain.
+- [SpawnPlayer](../functions/SpawnPlayer): Memaksa pemain untuk spawn.
+- [AddPlayerClass](../functions/AddPlayerClass): Menambahkan kelas.
+- [SetSpawnInfo](../functions/SetSpawnInfo): Menambahkan pengaturan spawn untuk pemain.

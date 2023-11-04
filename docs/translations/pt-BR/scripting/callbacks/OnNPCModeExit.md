@@ -23,4 +23,4 @@ public OnNPCModeExit()
 
 ## Callbacks Relacionadas
 
-- [OnNPCModeInit](../callbacks/OnNPCModeInit): Executada quando o script do NPC é carregado.
+- [OnNPCModeInit](OnNPCModeInit): Executada quando o script do NPC é carregado.

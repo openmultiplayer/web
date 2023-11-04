@@ -4,7 +4,7 @@ title: Camera Modes
 
 ## คำอธิบาย
 
-A list of possible camera modes to be used with [GetPlayerCameraMode](../functions/GetPlayerCameraMode.md). Note that there might still be more usable IDs hidden away in the game and some IDs are used for more than one situation.
+A list of possible camera modes to be used with [GetPlayerCameraMode](../functions/GetPlayerCameraMode). Note that there might still be more usable IDs hidden away in the game and some IDs are used for more than one situation.
 
 ## List
 

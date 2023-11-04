@@ -41,8 +41,8 @@ public OnVehicleSpawn(vehicleid)
 Maaaring maging kapaki-pakinabang ang mga sumusunod na callback, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa.
 
 
-- [OnVehicleDeath](./OnVehicleDeath): Ang callback na ito ay tinatawag kapag nasira ang isang sasakyan.
-- [OnPlayerSpawn](./OnPlayerSpawn): Tinatawag ang callback na ito kapag nag-spawn ang isang player.
+- [OnVehicleDeath](OnVehicleDeath): Ang callback na ito ay tinatawag kapag nasira ang isang sasakyan.
+- [OnPlayerSpawn](OnPlayerSpawn): Tinatawag ang callback na ito kapag nag-spawn ang isang player.
 
 ## Mga Kaugnay na Functions
 

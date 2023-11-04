@@ -56,11 +56,11 @@ Ova funkcije nije pozvana ako je aktor postavljen na "neranjiv" (invulnerable) (
 
 ## Srodne Funkcije
 
-- [CreateActor](../functions/CreateActor.md): Kreiraj aktora (statični NPC).
-- [SetActorInvulnerable](../functions/SetActorInvulnerable.md): Postavi aktorovu neranjivost.
-- [SetActorHealth](../functions/SetActorHealth.md): Postavi health aktoru.
-- [GetActorHealth](../functions/GetActorHealth.md): Dobij količinu healtha aktora.
-- [IsActorInvulnerable](../functions/IsActorInvulnerable.md): Provjeri da li je igrač neranjiv.
-- [IsValidActor](../functions/IsValidActor.md): Provjeri da li je ID aktora validan.
-- [OnActorStreamOut](OnActorStreamOut.md): Poziva se kada se aktor pojavi u igračevom klijentu.
-- [OnPlayerStreamIn](OnPlayerStreamIn.md): Poziva se kada se aktor prestane prikazivati na igračevom klijentu.
+- [CreateActor](../functions/CreateActor): Kreiraj aktora (statični NPC).
+- [SetActorInvulnerable](../functions/SetActorInvulnerable): Postavi aktorovu neranjivost.
+- [SetActorHealth](../functions/SetActorHealth): Postavi health aktoru.
+- [GetActorHealth](../functions/GetActorHealth): Dobij količinu healtha aktora.
+- [IsActorInvulnerable](../functions/IsActorInvulnerable): Provjeri da li je igrač neranjiv.
+- [IsValidActor](../functions/IsValidActor): Provjeri da li je ID aktora validan.
+- [OnActorStreamOut](OnActorStreamOut): Poziva se kada se aktor pojavi u igračevom klijentu.
+- [OnPlayerStreamIn](OnPlayerStreamIn): Poziva se kada se aktor prestane prikazivati na igračevom klijentu.

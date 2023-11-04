@@ -37,6 +37,6 @@ Bu fonksiyon şu anki SA:MP sürümünde çalışmamakta!
 
 ## İlgili Fonksiyonlar
 
-- [SetPlayerInterior](SetPlayerInterior.md): Oyuncunun interiorunu değiştirin.
-- [GetPlayerInterior](SetPlayerInterior.md): Oyuncunun interiorunu öğrenin.
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange.md): Bu callback oyuncunun interioru değiştiğinde çağrılır.
+- [SetPlayerInterior](SetPlayerInterior): Oyuncunun interiorunu değiştirin.
+- [GetPlayerInterior](SetPlayerInterior): Oyuncunun interiorunu öğrenin.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Bu callback oyuncunun interioru değiştiğinde çağrılır.

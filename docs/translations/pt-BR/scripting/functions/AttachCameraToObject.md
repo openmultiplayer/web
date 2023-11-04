@@ -45,4 +45,4 @@ Você precisa criar o objeto primeiro, antes de tentar conectar uma câmera do j
 
 ## Funções Relacionadas
 
-- [AttachCameraToPlayerObject](AttachCameraToPlayerObject.md): Anexa a câmera do jogador a um objeto de jogador (player-object).
+- [AttachCameraToPlayerObject](AttachCameraToPlayerObject): Anexa a câmera do jogador a um objeto de jogador (player-object).

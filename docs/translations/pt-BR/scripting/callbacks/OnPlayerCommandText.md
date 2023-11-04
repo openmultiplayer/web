@@ -46,4 +46,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Funções Relacionadas
 
-- [SendRconCommand](../functions/SendRconCommand.md): Envia um comando via RCON.
+- [SendRconCommand](../functions/SendRconCommand): Envia um comando via RCON.

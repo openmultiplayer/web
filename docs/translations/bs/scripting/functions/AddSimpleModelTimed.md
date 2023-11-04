@@ -56,4 +56,4 @@ Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite op
 
 ## Srodne Funkcije
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Pozvano kada igrač dovrši preuzimanje prilagođenih/custom modela.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Pozvano kada igrač dovrši preuzimanje prilagođenih/custom modela.

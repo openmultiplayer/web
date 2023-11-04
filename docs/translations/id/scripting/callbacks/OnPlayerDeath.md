@@ -60,5 +60,5 @@ Anda HARUS cek apakah 'killerid' valid (bukan INVALID_PLAYER_ID) sebelum menggun
 
 ## Fungsi Terkait
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): Menambahkan kematian didalam death list.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Mengatur darah pemain.
+- [SendDeathMessage](../functions/SendDeathMessage): Menambahkan kematian didalam death list.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Mengatur darah pemain.

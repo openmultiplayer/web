@@ -14,18 +14,18 @@ Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
 
 Ovaj callback je pozvan kada igrač dovrši uređivanje objekta (EditObject/EditPlayerObject).
 
-| Ime          | Deskripcija                                                |
-| ------------ | ---------------------------------------------------------- |
-| playerid     | ID igrača koji je uredi objekat                            |
-| playerobject | 0 ako je globalni objekat 1 ako je playerobject.           |
-| objectid     | ID uređenog objekta                                        |
-| response     | [Tip odgovora](../resources/objecteditionresponsetypes.md) |
-| Float:fX     | Ofset X prikvačenog objekta koji je editovan               |
-| Float:fY     | Ofset Y prikvačenog objekta koji je editovan               |
-| Float:fZ     | Ofset Z prikvačenog objekta koji je editovan               |
-| Float:fRotX  | Rotacija X prikvačenog objekta koji je editovan            |
-| Float:fRotY  | Rotacija Y prikvačenog objekta koji je editovan            |
-| Float:fRotZ  | Rotacija Z prikvačenog objekta koji je editovan            |
+| Ime          | Deskripcija                                             |
+| ------------ | ------------------------------------------------------- |
+| playerid     | ID igrača koji je uredi objekat                         |
+| playerobject | 0 ako je globalni objekat 1 ako je playerobject.        |
+| objectid     | ID uređenog objekta                                     |
+| response     | [Tip odgovora](../resources/objecteditionresponsetypes) |
+| Float:fX     | Ofset X prikvačenog objekta koji je editovan            |
+| Float:fY     | Ofset Y prikvačenog objekta koji je editovan            |
+| Float:fZ     | Ofset Z prikvačenog objekta koji je editovan            |
+| Float:fRotX  | Rotacija X prikvačenog objekta koji je editovan         |
+| Float:fRotY  | Rotacija Y prikvačenog objekta koji je editovan         |
+| Float:fRotZ  | Rotacija Z prikvačenog objekta koji je editovan         |
 
 ## Returns
 
@@ -97,7 +97,7 @@ Kada koristite 'EDIT_RESPONSE_UPDATE' budite svjesni da ovaj callback neče biti
 
 ## Srodne Funkcije
 
-- [EditObject](../functions/EditObject.md): UrRedi objekat.
-- [CreateObject](../functions/CreateObject.md): Kreiraj objekat.
-- [DestroyObject](../functions/DestroyObject.md): Uništi objekat.
-- [MoveObject](../functions/MoveObject.md): Pomjeri objekat.
+- [EditObject](../functions/EditObject): UrRedi objekat.
+- [CreateObject](../functions/CreateObject): Kreiraj objekat.
+- [DestroyObject](../functions/DestroyObject): Uništi objekat.
+- [MoveObject](../functions/MoveObject): Pomjeri objekat.

@@ -69,5 +69,5 @@ As of SA-MP 0.3x, any action taken directly before BanEx() (such as sending a me
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [Ban](../functions/Ban): Ban a player from playing on the server.
-- [Kick](../functions/Kick): Kick a player from the server.
+- [Ban](Ban): Ban a player from playing on the server.
+- [Kick](Kick): Kick a player from the server.

@@ -42,8 +42,8 @@ Crashuje kada se proslijedi nevažeći ID menija. Možete imati samo 12 stavki/i
 
 ## Srodne Funkcije
 
-- [CreateMenu](CreateMenu.md): Kreira meni.
-- [SetMenuColumnHeader](SetMenuColumnHeader.md): Postavite zaglavlje za jedan od stupaca u izborniku.
-- [DestroyMenu](DestroyMenu.md): Uništi meni.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Pozvano kada igrač selektuje red u meniju.
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Pozvano kada igrač napusti meni.
+- [CreateMenu](CreateMenu): Kreira meni.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Postavite zaglavlje za jedan od stupaca u izborniku.
+- [DestroyMenu](DestroyMenu): Uništi meni.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Pozvano kada igrač selektuje red u meniju.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Pozvano kada igrač napusti meni.

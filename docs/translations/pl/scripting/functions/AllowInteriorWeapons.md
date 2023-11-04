@@ -37,6 +37,6 @@ Ta funkcja nie działa w aktualnej wersji SA:MP!
 
 ## Powiązane funkcje
 
-- [SetPlayerInterior](SetPlayerInterior.md): Ustawia graczowi wnętrze.
-- [GetPlayerInterior](GetPlayerInterior.md): Pobiera aktualne wnętrze gracza.
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange.md): Wywoływane, gdy gracz zmienia wnętrze.
+- [SetPlayerInterior](SetPlayerInterior): Ustawia graczowi wnętrze.
+- [GetPlayerInterior](GetPlayerInterior): Pobiera aktualne wnętrze gracza.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Wywoływane, gdy gracz zmienia wnętrze.

@@ -55,4 +55,4 @@ Ovaj callback je pozvan samo kada se sirena vozila uključi/isključi, NE kada u
 
 ## Srodne Funkcije
 
-- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState.md): Provjeri da li je sirena vozila uključena ili isključena
+- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): Provjeri da li je sirena vozila uključena ili isključena

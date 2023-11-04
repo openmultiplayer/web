@@ -34,5 +34,5 @@ GetPlayerColor bech treturni 0 ken masta3maltech SetPlayerColor 9bal.
 
 ## Functions tab3in el callback
 
-- [SetPlayerColor](SetPlayerColor.md): tbadel el color mta3 el player.
-- [ChangeVehicleColor](ChangeVehicleColor.md): tbadel el color mta3 el vehicle.
+- [SetPlayerColor](SetPlayerColor): tbadel el color mta3 el player.
+- [ChangeVehicleColor](ChangeVehicleColor): tbadel el color mta3 el vehicle.

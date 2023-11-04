@@ -46,5 +46,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [IsPlayerInAnyVehicle](../../scripting/functions/IsPlayerInAnyVehicle.md): Check if a player is in any vehicle.
-- [GetPlayerVehicleSeat](../../scripting/functions/GetPlayerVehicleSeat.md): Check what seat a player is in.
+- [IsPlayerInAnyVehicle](IsPlayerInAnyVehicle): Check if a player is in any vehicle.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.

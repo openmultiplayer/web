@@ -33,7 +33,7 @@ Cette callback peut aussi être appelée par un NPC.
 
 :::tip
 
-Les touches directionnelles ne fonctionnent pas avec OnPlayerKeyStateChange. Elles ne peuvent être détectées qu'avec [GetPlayerKeys](../functions/GetPlayerKeys) (dans [OnPlayerUpdate](../callbacks/OnPlayerUpdate) ou un timer)
+Les touches directionnelles ne fonctionnent pas avec OnPlayerKeyStateChange. Elles ne peuvent être détectées qu'avec [GetPlayerKeys](../functions/GetPlayerKeys) (dans [OnPlayerUpdate](OnPlayerUpdate) ou un timer)
 
 :::
 

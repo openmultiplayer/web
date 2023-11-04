@@ -48,4 +48,4 @@ Poznati Bug(ovi): Igrači se sudaraju kad uđu u isti modshop
 
 ## Srodne Funkcije
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Dodaj komponentu na vozilo.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Dodaj komponentu na vozilo.

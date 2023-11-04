@@ -22,4 +22,4 @@ public OnNPCExitVehicle()
 
 ## 相关回调
 
-- [OnNPCEnterVehicle](../callbacks/OnNPCEnterVehicle): 当 NPC 进入车辆时被调用。
+- [OnNPCEnterVehicle](OnNPCEnterVehicle): 当 NPC 进入车辆时被调用。

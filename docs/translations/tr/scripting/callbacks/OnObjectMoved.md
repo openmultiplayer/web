@@ -36,8 +36,8 @@ SetObjectPos bu callback içerisinde çalışmaz. Bunu düzeltmek için objeyi y
 
 ## Bağlı Fonksiyonlar
 
-- [MoveObject](../functions/MoveObject.md): Objeyi hareket ettirme fonksiyonu.
-- [MovePlayerObject](../functions/MovePlayerObject.md): Oyuncu objesini hareket ettirme fonksiyonu.
-- [IsObjectMoving](../functions/IsObjectMoving.md): Objenin hareket edip etmediğini kontrol etme fonksiyonu.
-- [StopObject](../functions/StopObject.md): Hareket eden objeyi durdurur.
-- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Oyuncu objesi hareket etmeyi bıraktığında çağrılan callback.
+- [MoveObject](../functions/MoveObject): Objeyi hareket ettirme fonksiyonu.
+- [MovePlayerObject](../functions/MovePlayerObject): Oyuncu objesini hareket ettirme fonksiyonu.
+- [IsObjectMoving](../functions/IsObjectMoving): Objenin hareket edip etmediğini kontrol etme fonksiyonu.
+- [StopObject](../functions/StopObject): Hareket eden objeyi durdurur.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): Oyuncu objesi hareket etmeyi bıraktığında çağrılan callback.

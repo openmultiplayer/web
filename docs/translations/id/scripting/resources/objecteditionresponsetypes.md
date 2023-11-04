@@ -3,7 +3,7 @@ id: objecteditionresponsetypes
 title: Tipe Respon Penyuntingan Objek
 ---
 
-Digunakan di [OnPlayerEditObject](../callbacks/OnPlayerEditObject.md) dan [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject.md).
+Digunakan di [OnPlayerEditObject](../callbacks/OnPlayerEditObject) dan [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject).
 
 ```c
 0 - EDIT_RESPONSE_CANCEL  // pemain membatalkannnya (menekan tombol ESC)

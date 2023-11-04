@@ -69,5 +69,5 @@ A partir do SA-MP 0.3x, qualquer ação realizada diretamente antes do Ban() (co
 
 ## Funções Relacionadas
 
-- [BanEx](../functions/Ban.md): Bane um jogador do servidor.
-- [Kick](../functions/Kick.md): Expulsa um jogador do servidor.
+- [BanEx](Ban): Bane um jogador do servidor.
+- [Kick](Kick): Expulsa um jogador do servidor.

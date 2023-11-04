@@ -80,6 +80,6 @@ When a player presses ESC to cancel selecting a textdraw, OnPlayerClickTextDraw 
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [PlayerTextDrawSetSelectable](../../scripting/functions/PlayerTextDrawSetSelectable.md): Sets whether a player-textdraw is selectable through SelectTextDraw
-- [OnPlayerClickTextDraw](../../scripting/callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
-- [OnPlayerClickPlayer](../../scripting/callbacks/OnPlayerClickPlayer.md): Called when a player click on another.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Sets whether a player-textdraw is selectable through SelectTextDraw
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Called when a player click on another.

@@ -45,6 +45,6 @@ This function is rather redundant, for it is no different than the conventional 
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [Floatadd](../functions/Floatadd): Adds two floats.
-- [Floatsub](../functions/Floatsub): Subtracts two floats.
-- [Floatdiv](../functions/Floatdiv): Divides a float by another.
+- [floatadd](floatadd): Adds two floats.
+- [floatsub](floatsub): Subtracts two floats.
+- [floatdiv](floatdiv): Divides a float by another.

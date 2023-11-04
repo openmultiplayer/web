@@ -44,5 +44,5 @@ GTA/SA-MP use degrees for angles in most circumstances, for example GetPlayerFac
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [floatsin](../functions/floatsin): Get the sine from a specific angle.
-- [floattan](../functions/floattan): Get the tangent from a specific angle.
+- [floatsin](floatsin): Get the sine from a specific angle.
+- [floattan](floattan): Get the tangent from a specific angle.

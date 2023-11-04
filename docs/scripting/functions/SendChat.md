@@ -8,7 +8,7 @@ tags: []
 
 ## Description
 
-This will send a player text by the bot, just like using [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll), but this function is to be used inside the NPC scripts.
+This will send a player text by the bot, just like using [SendPlayerMessageToAll](SendPlayerMessageToAll), but this function is to be used inside the NPC scripts.
 
 | Name         | Description                                        |
 | ------------ | -------------------------------------------------- |
@@ -29,4 +29,4 @@ public OnPlayerDeath(playerid)
 
 ## Related Functions
 
-- [SendCommand](../functions/SendCommand): Sends a command as the NPC.
+- [SendCommand](SendCommand): Sends a command as the NPC.

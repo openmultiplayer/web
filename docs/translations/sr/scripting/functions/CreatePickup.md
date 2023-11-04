@@ -54,6 +54,6 @@ Poznati bagovi: Pickup-ovi koji imaju X ili Y manji od -4096.0 ili veci od 4096.
 
 ## Srodne Funkcije
 
-- [AddStaticPickup](AddStaticPickup.md): Doda statican pickup.
-- [DestroyPickup](DestroyPickup.md): Unistava pickup.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Poziva se kada igrac pokupi pickup.
+- [AddStaticPickup](AddStaticPickup): Doda statican pickup.
+- [DestroyPickup](DestroyPickup): Unistava pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Poziva se kada igrac pokupi pickup.

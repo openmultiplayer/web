@@ -10,18 +10,18 @@ tags: ["player"]
 
 Esta callback é chamada quando um jogador termina de editar um objeto (EditObject/EditPlayerObject).
 
-| Nome         | Descrição                                                          |
-| ------------ | ------------------------------------------------------------------ |
-| playerid     | The ID of the player that edited an object                         |
-| playerobject | 0 if it is a global object or 1 if it is a playerobject.           |
-| objectid     | The ID of the edited object                                        |
-| response     | The [type of response](../resources/objecteditionresponsetypes.md) |
-| Float:fX     | The X offset for the object that was edited                        |
-| Float:fY     | The Y offset for the object that was edited                        |
-| Float:fZ     | The Z offset for the object that was edited                        |
-| Float:fRotX  | The X rotation for the object that was edited                      |
-| Float:fRotY  | The Y rotation for the object that was edited                      |
-| Float:fRotZ  | The Z rotation for the object that was edited                      |
+| Nome         | Descrição                                                       |
+| ------------ | --------------------------------------------------------------- |
+| playerid     | The ID of the player that edited an object                      |
+| playerobject | 0 if it is a global object or 1 if it is a playerobject.        |
+| objectid     | The ID of the edited object                                     |
+| response     | The [type of response](../resources/objecteditionresponsetypes) |
+| Float:fX     | The X offset for the object that was edited                     |
+| Float:fY     | The Y offset for the object that was edited                     |
+| Float:fZ     | The Z offset for the object that was edited                     |
+| Float:fRotX  | The X rotation for the object that was edited                   |
+| Float:fRotY  | The Y rotation for the object that was edited                   |
+| Float:fRotZ  | The Z rotation for the object that was edited                   |
 
 | Name         | Descrição                                                     |
 | ------------ | ------------------------------------------------------------- |
@@ -106,7 +106,7 @@ Ao usar 'EDIT_RESPONSE_UPDATE' fique ciente que esta callback não será chamada
 
 ## Funções Relacionadas
 
-- [EditObject](../functions/EditObject.md): Edita um objeto.
-- [CreateObject](../functions/CreateObject.md): Cria um objeto.
-- [DestroyObject](../functions/DestroyObject.md): Destroi um objeto.
-- [MoveObject](../functions/MoveObject.md): Move um objeto.
+- [EditObject](../functions/EditObject): Edita um objeto.
+- [CreateObject](../functions/CreateObject): Cria um objeto.
+- [DestroyObject](../functions/DestroyObject): Destroi um objeto.
+- [MoveObject](../functions/MoveObject): Move um objeto.

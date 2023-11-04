@@ -91,5 +91,5 @@ Edições devem ser discartadas se a resposta for '0' (cancelado). Isso deve ser
 
 ## Funções Relacionadas
 
-- [EditAttachedObject](../functions/EditAttachedObject.md): Edita um objeto anexado.
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Anexa um objeto a um jogador.
+- [EditAttachedObject](../functions/EditAttachedObject): Edita um objeto anexado.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Anexa um objeto a um jogador.

@@ -35,8 +35,8 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-- Hindi tinawag kung ang manlalaro ay nahulog mula sa isang bisikleta o inalis mula sa isang sasakyan sa pamamagitan ng iba pang paraan tulad ng paggamit ng [SetPlayerPos](../funcions/SetPlayerPos.md).
-- Dapat mong gamitin ang [OnPlayerStateChange](./OnPlayerStateChange) at tingnan kung ang kanilang lumang estado ay PLAYER_STATE_DRIVER o PLAYER_STATE_PASSENGER at ang kanilang bagong estado ay PLAYER_STATE_ONFOOT.
+- Hindi tinawag kung ang manlalaro ay nahulog mula sa isang bisikleta o inalis mula sa isang sasakyan sa pamamagitan ng iba pang paraan tulad ng paggamit ng [SetPlayerPos](../funcions/SetPlayerPos).
+- Dapat mong gamitin ang [OnPlayerStateChange](OnPlayerStateChange) at tingnan kung ang kanilang lumang estado ay PLAYER_STATE_DRIVER o PLAYER_STATE_PASSENGER at ang kanilang bagong estado ay PLAYER_STATE_ONFOOT.
 
 :::
 
@@ -44,12 +44,12 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 Maaaring maging kapaki-pakinabang din ang mga sumusunod na callback, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o sa iba pa.
 
-- [OnPlayerEnterVehicle:](./OnPlayerEnterVehicle.md): Tinatawag kapag ang manlalaro ay sumakay sa sasakyan.
-- [OnPlayerStateChange](./OnPlayerStateChange.md): Tinatawag kapag nagbago ang estado ng manlalaro.
+- [OnPlayerEnterVehicle:](OnPlayerEnterVehicle): Tinatawag kapag ang manlalaro ay sumakay sa sasakyan.
+- [OnPlayerStateChange](OnPlayerStateChange): Tinatawag kapag nagbago ang estado ng manlalaro.
 
 ## Mga Kaugnay na Functions
 
 Maaaring maging kapaki-pakinabang ang mga sumusunod na function, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa.
 
-- [RemovePlayerFromVehicle](../functions/PutPlayerInVehicle.md): Itapon ang isang manlalaro sa labas ng kanilang sasakyan.
-- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Suriin kung saan nakaupo ang isang manlalaro.
+- [RemovePlayerFromVehicle](../functions/PutPlayerInVehicle): Itapon ang isang manlalaro sa labas ng kanilang sasakyan.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Suriin kung saan nakaupo ang isang manlalaro.

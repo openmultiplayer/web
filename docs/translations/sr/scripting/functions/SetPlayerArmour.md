@@ -46,6 +46,6 @@ Pancir se dobija zaokruzen na integer: postavi 50.15, ali dobijes 50.0
 
 ## Related Functions
 
-- [GetPlayerArmour](GetPlayerArmour.md): Dobija se vrednost pancira koju igrac trenutno ima.
-- [SetPlayerHealth](SetPlayerHealth.md): Podesava health igracu.
-- [GetPlayerHealth](GetPlayerHealth.md): Dobija se vrednost health-a koju igrac trenutno ima.
+- [GetPlayerArmour](GetPlayerArmour): Dobija se vrednost pancira koju igrac trenutno ima.
+- [SetPlayerHealth](SetPlayerHealth): Podesava health igracu.
+- [GetPlayerHealth](GetPlayerHealth): Dobija se vrednost health-a koju igrac trenutno ima.

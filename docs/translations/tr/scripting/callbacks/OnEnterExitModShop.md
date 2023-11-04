@@ -48,4 +48,4 @@ Bilinen Hata(lar): Oyuncular aynı modifiye garajına girdiğinde sıkışabilir
 
 ## Bağlantılı Fonksiyonlar
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Araca bir parça eklemeye yarar.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Araca bir parça eklemeye yarar.

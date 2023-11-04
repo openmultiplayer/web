@@ -46,5 +46,5 @@ Wildcards can be used with this function, for example blocking the IP '6.9._._' 
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [UnBlockIpAddress](../functions/UnBlockIpAddress): Unblock an IP that was previously blocked.
+- [UnBlockIpAddress](UnBlockIpAddress): Unblock an IP that was previously blocked.
 - [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.

@@ -62,7 +62,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 当“乱序消息”复用 messageholelimit 设置时发生。
 
-有关这方面的更多信息，请参阅 [此处](ControllingServer#RCON_Commands)
+有关这方面的更多信息，请参阅 [此处](ControllingServer#rcon-commands)
 
 ## 玩家持续收到“Unacceptable NickName”错误，但游戏名是有效的
 

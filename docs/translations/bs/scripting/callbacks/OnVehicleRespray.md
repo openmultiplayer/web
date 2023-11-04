@@ -49,8 +49,8 @@ Poznati bug(ovi): pregled komponente unutar mod shopa može pozvati ovaj callbac
 
 ## Srodne Funkcije
 
-- [ChangeVehicleColor](../functions/ChangeVehicleColor.md): Postavi boju vozila.
-- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob.md): Promijeni paintjob vozila.
-- [OnVehiclePaintjob](OnVehiclePaintjob.md): Pozvano kada se paintjob vozila promijeni.
-- [OnVehicleMod](OnVehicleMod.md): Pozvano kada se vozilo modira/uredi.
-- [OnEnterExitModShop](OnEnterExitModShop.md): Pozvano kada vozilo uđe ili izađe u/iz mod shopa.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Postavi boju vozila.
+- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Promijeni paintjob vozila.
+- [OnVehiclePaintjob](OnVehiclePaintjob): Pozvano kada se paintjob vozila promijeni.
+- [OnVehicleMod](OnVehicleMod): Pozvano kada se vozilo modira/uredi.
+- [OnEnterExitModShop](OnEnterExitModShop): Pozvano kada vozilo uđe ili izađe u/iz mod shopa.

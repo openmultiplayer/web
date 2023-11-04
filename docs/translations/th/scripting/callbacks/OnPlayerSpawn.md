@@ -44,6 +44,6 @@ The game sometimes deducts \$100 from players after spawn.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SpawnPlayer](../../scripting/functions/SpawnPlayer.md): Force a player to spawn.
-- [AddPlayerClass](../../scripting/functions/AddPlayerClass.md): Add a class.
-- [SetSpawnInfo](../../scripting/functions/SetSpawnInfo.md): Set the spawn setting for a player.
+- [SpawnPlayer](../functions/SpawnPlayer): Force a player to spawn.
+- [AddPlayerClass](../functions/AddPlayerClass): Add a class.
+- [SetSpawnInfo](../functions/SetSpawnInfo): Set the spawn setting for a player.

@@ -46,5 +46,5 @@ Angles are reversed in GTA:SA; 90 degrees would be East in the real world, but i
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetVehicleZAngle](../functions/GetVehicleZAngle): Check the current angle of a vehicle.
-- [SetPlayerFacingAngle](../functions/SetPlayerFacingAngle): Set a player's facing angle.
+- [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
+- [SetPlayerFacingAngle](SetPlayerFacingAngle): Set a player's facing angle.

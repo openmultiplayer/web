@@ -36,6 +36,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CreateVehicle](../../scripting/functions/CreateVehicle.md): Create a vehicle.
-- [RemovePlayerFromVehicle](../../scripting/functions/RemovePlayerFromVehicle.md): Throw a player out of their vehicle.
-- [SetVehicleToRespawn](../../scripting/functions/SetVehicleToRespawn.md): Respawn a vehicle.
+- [CreateVehicle](CreateVehicle): Create a vehicle.
+- [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Throw a player out of their vehicle.
+- [SetVehicleToRespawn](SetVehicleToRespawn): Respawn a vehicle.

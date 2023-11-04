@@ -60,4 +60,4 @@ public OnPlayerRequestDownload(playerid, type, crc)
 
 ## Srodne Funkcije
 
-- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading.md): Pozvano kada igrač završi sa preuzimanjem custom modela.
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Pozvano kada igrač završi sa preuzimanjem custom modela.

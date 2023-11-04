@@ -146,7 +146,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parametri lahko vsebujejo različne vrednosti, odvisno od sloga pogovornega okna ([Kliknite za več primerov](../resources/dialogstyles.md)).
+Parametri lahko vsebujejo različne vrednosti, odvisno od sloga pogovornega okna ([Kliknite za več primerov](../resources/dialogstyles)).
 
 :::
 
@@ -164,4 +164,4 @@ Pogovorno okno predvajalnika se ne skrije ob ponovnem zagonu igralnega načina, 
 
 ## Povezane Funkcijo
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Pokaži pogovorno okno predvajalniku.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Pokaži pogovorno okno predvajalniku.

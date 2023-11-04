@@ -75,5 +75,5 @@ Area yang dapat diklik ditentukan oleh TextDrawTextSize. parameter x dan y yang 
 
 ## Fungsi Terkait
 
-- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw.md): Terpanggil ketika player mengklik sebuah player-textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Terpanggil ketika player mengklik yang lain.
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Terpanggil ketika player mengklik sebuah player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Terpanggil ketika player mengklik yang lain.

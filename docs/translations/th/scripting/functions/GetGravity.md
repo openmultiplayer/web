@@ -32,4 +32,4 @@ This function is not defined by default. Add 'native Float:GetGravity();' under 
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetGravity](../functions/SetGravity): Set the global gravity.
+- [SetGravity](SetGravity): Set the global gravity.

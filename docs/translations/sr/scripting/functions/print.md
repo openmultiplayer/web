@@ -51,4 +51,4 @@ public OnGameModeInit( )
 
 ## Related Functions
 
-- [printf](printf.md): Stampa formatiranu poruku u server log i konzolu.
+- [printf](printf): Stampa formatiranu poruku u server log i konzolu.

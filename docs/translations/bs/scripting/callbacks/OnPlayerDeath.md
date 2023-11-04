@@ -60,5 +60,5 @@ MORAŠ provjeriti da li je 'killerid' validan (ako nije: INVALID_PLAYER_ID) prij
 
 ## Srodne Funkcije
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): Dodaj smrt na listu smrti.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Postavi health(zdravlje) igraču.
+- [SendDeathMessage](../functions/SendDeathMessage): Dodaj smrt na listu smrti.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Postavi health(zdravlje) igraču.

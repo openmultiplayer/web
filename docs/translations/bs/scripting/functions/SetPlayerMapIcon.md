@@ -52,5 +52,5 @@ Možete imati samo 100 ikona mapa! Oznake tipa 1 (), 2 (), 4 () i 56 () uzrokova
 
 ## Srodne Funkcije
 
-- [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon): Ukloni ikonicu na mapi za igrača.
-- [SetPlayerMarkerForPlayer](/docs/scripting/functions/SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.
+- [RemovePlayerMapIcon](RemovePlayerMapIcon): Ukloni ikonicu na mapi za igrača.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.

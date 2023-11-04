@@ -42,8 +42,8 @@ public OnGameModeInit()
 
 ## Связанные функции
 
-- [CreateMenu](CreateMenu.md): Создание меню.
-- [SetMenuColumnHeader](SetMenuColumnHeader.md): Устанавливает загаловок столбца.
-- [DestroyMenu](DestroyMenu.md): Удаляет меню.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Вызывается, когда игрок выбрал строку в меню.
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Вызывается, когда игрок закрыл меню.
+- [CreateMenu](CreateMenu): Создание меню.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Устанавливает загаловок столбца.
+- [DestroyMenu](DestroyMenu): Удаляет меню.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Вызывается, когда игрок выбрал строку в меню.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Вызывается, когда игрок закрыл меню.

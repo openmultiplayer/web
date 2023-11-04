@@ -28,4 +28,4 @@ Fungsi ini juga dapat digunakan dalam sebuah filterscript untuk mendeteksi apaka
 
 ## Related Functions
 
-- [GameModeExit](../functions/GameModeExit.md): Keluar dari gamemode saat ini.
+- [GameModeExit](../functions/GameModeExit): Keluar dari gamemode saat ini.

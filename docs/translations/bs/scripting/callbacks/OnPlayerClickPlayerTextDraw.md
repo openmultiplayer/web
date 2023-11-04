@@ -80,6 +80,6 @@ Kada igrač pritisne ESC da prekine selektovanje textdraw-a, OnPlayerClickTextDr
 
 ## Srodne Funkcije
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md): Postavlja da li je player-textraw moguć za selektovanje ili ne.
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Pozvana kada igrač klikne na player-textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Pozvana kada jedan igrač klikne na drugog.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Postavlja da li je player-textraw moguć za selektovanje ili ne.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Pozvana kada igrač klikne na player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Pozvana kada jedan igrač klikne na drugog.

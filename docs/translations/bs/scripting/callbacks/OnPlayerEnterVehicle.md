@@ -40,5 +40,5 @@ Ovaj callback je pozvana kada igrač KRENE da uđe u vozilo, ne kada su UŠLI u 
 
 ## Srodne Funkcije
 
-- [PutPlayerInVehicle](../functions/PutPlayerInVehicle.md): Postavi igrača u vozilo.
-- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Provjeri u kojem sjedištu se nalazi igrač.
+- [PutPlayerInVehicle](../functions/PutPlayerInVehicle): Postavi igrača u vozilo.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Provjeri u kojem sjedištu se nalazi igrač.

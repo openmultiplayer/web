@@ -50,6 +50,6 @@ ID-ul maxim de clasă este 319 (începând de la 0, deci un total de 320 de clas
 
 ## Funcții conexe
 
-- [AddPlayerClassEx](AddPlayerClassEx.md): Adăugați o clasă cu o echipă implicită.
-- [SetSpawnInfo](SetSpawnInfo.md): Setați setarile pentru spawn unui jucător.
-- [SetPlayerSkin](SetPlayerSkin.md): Setează kinul unui jucător.
+- [AddPlayerClassEx](AddPlayerClassEx): Adăugați o clasă cu o echipă implicită.
+- [SetSpawnInfo](SetSpawnInfo): Setați setarile pentru spawn unui jucător.
+- [SetPlayerSkin](SetPlayerSkin): Setează kinul unui jucător.

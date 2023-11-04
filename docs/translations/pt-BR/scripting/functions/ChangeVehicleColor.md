@@ -41,5 +41,5 @@ Alguns veículos apenas possuem uma cor primária e outros não podem ter a cor 
 
 ## Funções Relacionadas
 
-- [ChangeVehiclePaintjob](ChangeVehiclePaintjob.md): Mude o paintjob de um veículo.
-- [OnVehicleRespray](../callbacks/OnVehicleRespray.md): É chamado quando um veículo é pintado (Pay'n'Spray).
+- [ChangeVehiclePaintjob](ChangeVehiclePaintjob): Mude o paintjob de um veículo.
+- [OnVehicleRespray](../callbacks/OnVehicleRespray): É chamado quando um veículo é pintado (Pay'n'Spray).

@@ -54,6 +54,6 @@ TextDrawSetSelectable must be used BEFORE the textdraw is shown to players for i
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SelectTextDraw](../functions/SelectTextDraw.md): Enables the mouse, so the player can select a textdraw
-- [CancelSelectTextDraw](../functions/CancelSelectTextDraw.md): Cancel textdraw selection with the mouse
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
+- [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

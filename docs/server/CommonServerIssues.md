@@ -62,7 +62,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 Happens when 'out of order messages' reuses messageholelimit setting.
 
-For more information about this, refer to [this](ControllingServer#RCON_Commands)
+For more information about this, refer to [this](ControllingServer#rcon-commands)
 
 ## Players constantly getting "Unacceptable NickName" error but it is valid
 

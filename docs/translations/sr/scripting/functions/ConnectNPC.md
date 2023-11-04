@@ -43,5 +43,5 @@ NPC nema nametag. Ovo moze da se napravi preko Attach3DTextLabelToPlayer.
 
 ## Srodne Funkcije
 
-- [IsPlayerNPC](IsPlayerNPC.md): Proverava da li je igrac NPC ili pravi igrac.
-- [OnPlayerConnect](../callbacks/OnPlayerConnect.md): Poziva se kada se igrac poveze na server.
+- [IsPlayerNPC](IsPlayerNPC): Proverava da li je igrac NPC ili pravi igrac.
+- [OnPlayerConnect](../callbacks/OnPlayerConnect): Poziva se kada se igrac poveze na server.

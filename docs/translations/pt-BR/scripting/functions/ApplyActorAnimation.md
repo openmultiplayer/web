@@ -51,4 +51,4 @@ Você deve pré-carregar a biblioteca de animações para o jogador ao qual o at
 
 ## Funções Relacionadas
 
-- [ClearActorAnimations](ClearActorAnimations.md): Limpe qualquer animação aplicada a um ator.
+- [ClearActorAnimations](ClearActorAnimations): Limpe qualquer animação aplicada a um ator.
