@@ -52,7 +52,7 @@ Kung meron kang dalawang monitor sa PC merong tatlong paraan para maayos ito:
 
 ### Hindi na gumagana ang aking mouse katapos kong umalis sa pause menu.
 
-Kung hindi na gumagana o nag freeze ang iyong mouse katapos umalis sa game menu pero gumagana ito sa game menu, kailangan mong i-disable ang multicore option [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (set mo ito sa 0). Tuloy-tuloy na pag pindot sa `ESC` button hanggang gumana ang mouse ay maaaring maging solusyon, pero hindi ito malinis na solusyon at matagal itong gawin.
+Kung hindi na gumagana o nag freeze ang iyong mouse katapos umalis sa game menu pero gumagana ito sa game menu, kailangan mong i-disable ang multicore option [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "sa-mp.cfg") (set mo ito sa 0). Tuloy-tuloy na pag pindot sa `ESC` button hanggang gumana ang mouse ay maaaring maging solusyon, pero hindi ito malinis na solusyon at matagal itong gawin.
 
 ### The file dinput8.dll is missing
 

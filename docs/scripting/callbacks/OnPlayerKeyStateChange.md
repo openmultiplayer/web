@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when the state of any [supported](../resources/keys) key is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
+This callback is called when the state of any [supported key](../resources/keys) is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
 
 | Name     | Description                                                                                      |
 | -------- | ------------------------------------------------------------------------------------------------ |
@@ -29,7 +29,7 @@ This callback can also be called by NPC.
 
 :::tip
 
-Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](../callbacks/OnPlayerUpdate) or a timer).
+Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](OnPlayerUpdate) or a timer).
 
 :::
 

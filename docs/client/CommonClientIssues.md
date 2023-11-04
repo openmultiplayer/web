@@ -52,7 +52,7 @@ If you have 2 monitors then there are 3 ways to solve this:
 
 ### My mouse doesn't work after exiting the pause menu
 
-If your mouse seems to be frozen ingame while it (partially) works in the pause menu, then you should disable the multicore option [sa-mp.cfg](ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (set it to 0). Continuously tapping Escape until the mouse responds again may also work, but it is not as neat a solution.
+If your mouse seems to be frozen ingame while it (partially) works in the pause menu, then you should disable the multicore option [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") (set it to 0). Continuously tapping Escape until the mouse responds again may also work, but it is not as neat a solution.
 
 ### The file dinput8.dll is missing
 

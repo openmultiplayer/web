@@ -8,7 +8,7 @@ tags: []
 
 ## Description
 
-This callback is called when an IP address attempts a connection to the server. To block incoming connections, use BlockIpAddress.
+This callback is called when an IP address attempts a connection to the server. To block incoming connections, use [BlockIpAddress](../functions/BlockIpAddress).
 
 | Name         | Description                                        |
 | ------------ | -------------------------------------------------- |

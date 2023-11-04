@@ -52,7 +52,7 @@ Dacă aveți 2 monitoare, atunci există 3 moduri de a rezolva acest lucru:
 
 ### Mouse-ul meu nu mai funcționează după ce ies din meniul de pauză
 
-Dacă mouse-ul pare să nu mai functioneze în joc în timp ce funcționează (parțial) în meniul de pauză, atunci ar trebui să dezactivați opțiunea multicore [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (setați la 0). O altă metodă care ar putea să funcționeze este să spamați tasta ESC până când mouse-ul începe să funcționeze din nou.
+Dacă mouse-ul pare să nu mai functioneze în joc în timp ce funcționează (parțial) în meniul de pauză, atunci ar trebui să dezactivați opțiunea multicore [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "sa-mp.cfg") (setați la 0). O altă metodă care ar putea să funcționeze este să spamați tasta ESC până când mouse-ul începe să funcționeze din nou.
 
 ### Fișierul dinput8.dll lipsește
 

@@ -72,7 +72,7 @@ Si vous avez deux écrans, 3 solutions s'offrent à vous :
  
 ### Ma souris ne marche plus après avoir quitté le menu echap
 
-Si votre souris semble être, totalement ou partiellement, figée alors qu'elle fonctionne dans le menu pause, vous devriez désactiver l'option _multicore_ [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (valeur à mettre : 0). Ou alors spammmez la touche ECHAP jusqu'à ce que votre souris refonctionne.
+Si votre souris semble être, totalement ou partiellement, figée alors qu'elle fonctionne dans le menu pause, vous devriez désactiver l'option _multicore_ [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "sa-mp.cfg") (valeur à mettre : 0). Ou alors spammmez la touche ECHAP jusqu'à ce que votre souris refonctionne.
 
 ### Le fichier dinput8.dll est manquant
 
