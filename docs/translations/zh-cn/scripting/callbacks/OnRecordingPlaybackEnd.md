@@ -1,6 +1,6 @@
 ---
 title: OnRecordingPlaybackEnd
-description: 当使用NPC:StartRecordingPlayback复制的录制文件到达其末尾时，将调用此回调。
+description: 当使用StartRecordingPlayback复制的录制文件到达其末尾时，将调用此回调。
 tags: []
 ---
 
@@ -12,7 +12,7 @@ tags: []
 
 ## 描述
 
-当使用 NPC:StartRecordingPlayback 复制的录制文件到达其末尾时，将调用此回调。
+当使用 StartRecordingPlayback 复制的录制文件到达其末尾时，将调用此回调。
 
 ## 案例
 

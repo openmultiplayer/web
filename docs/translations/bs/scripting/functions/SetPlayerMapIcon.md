@@ -11,13 +11,13 @@ Postavi ikonu/marker na mapu igrača. Može se koristiti da označite lokacije k
 | Ime        | Deskripcija                                                                                                                                                           |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid   | ID igrača za postaviti ikonicu na mapu.                                                                                                                               |
-| iconid     | ID ikonice, od 0 do 99. Ovo znači da postoji maksimalno 100 map ikonica. ID se može koristiti u [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon). |
+| iconid     | ID ikonice, od 0 do 99. Ovo znači da postoji maksimalno 100 map ikonica. ID se može koristiti u [RemovePlayerMapIcon](RemovePlayerMapIcon).                           |
 | Float:x    | X kordinata za postaviti map ikonicu.                                                                                                                                 |
 | Float:y    | Y kordinata za postaviti map ikonicu.                                                                                                                                 |
 | Float:z    | Z kordinata za postaviti map ikonicu.                                                                                                                                 |
-| markertype | [Ikonica](/docs/scripting/resources/mapicons) za postaviti.                                                                                                           |
+| markertype | [Ikonica](../resources/mapicons) za postaviti.                                                                                                                        |
 | color      | Boja ikonice, kao cijeli broj ili hex u RGBA formatu. Ovo bi se trebalo koristiti samo sa ikonicom kocke (ID: 0).                                                     |
-| style      | [Stil](/docs/scripting/resources/mapiconstyles) ikonice.                                                                                                              |
+| style      | [Stil](../resources/mapiconstyles) ikonice.                                                                                                                           |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 ---
 title: OnRecordingPlaybackEnd
-description: This callback is called when a recorded file being reproduced with NPCStartRecordingPlayback has reached to its end.
+description: This callback is called when a recorded file being reproduced with StartRecordingPlayback has reached to its end.
 tags: []
 ---
 
@@ -12,7 +12,7 @@ This NPC callback was added in SA-MP 0.3a and will not work in earlier versions!
 
 ## คำอธิบาย
 
-This callback is called when a recorded file being reproduced with NPC:StartRecordingPlayback has reached to its end.
+This callback is called when a recorded file being reproduced with StartRecordingPlayback has reached to its end.
 
 | Name | Description |
 | ---- | ----------- |
@@ -29,5 +29,5 @@ public OnRecordingPlaybackEnd()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- NPC:StartRecordingPlayback: Starts reproducing an already recorded .rec file.
-- NPC:StopRecordingPlayback: Stops reproducing a .rec file.
+- StartRecordingPlayback: Starts reproducing an already recorded .rec file.
+- StopRecordingPlayback: Stops reproducing a .rec file.

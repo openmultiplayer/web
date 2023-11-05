@@ -1,6 +1,6 @@
 ---
 title: Player States
-description: A list of all the player states to be used with the [GetPlayerState](../functions/GetPlayerState) function or [OnPlayerStateChange](../callbacks/OnPlayerStateChange) callback.
+description: A list of all the player states to be used with the GetPlayerState function or OnPlayerStateChange callback.
 tags: ["player"]
 sidebar_label: Player States
 ---

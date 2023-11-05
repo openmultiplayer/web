@@ -1,6 +1,6 @@
 ---
 title: Record Types
-description: Record types to be used with [StartRecordingPlayerData]()../functions/StartRecordingPlayerData)
+description: Record types to be used with StartRecordingPlayerData.
 tags: ["player"]
 sidebar_label: Record Types
 ---

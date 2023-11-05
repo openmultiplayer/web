@@ -8,7 +8,7 @@ tags: []
 
 ## Description
 
-This callback is called when a recorded file being reproduced with NPC:[StartRecordingPlayback](../functions/StartRecordingPlayback) has reached to its end.
+This callback is called when a recorded file being reproduced with [StartRecordingPlayback](../functions/StartRecordingPlayback) has reached to its end.
 
 ## Examples
 

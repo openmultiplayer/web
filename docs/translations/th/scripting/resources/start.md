@@ -83,7 +83,7 @@ A function is basically a chunk of code which does something and can be told to 
 print("Hello World!");
 ```
 
-As described in [Starting out](/wiki/Scripting_Basics#Starting_out "Scripting Basics"), this calls the function called "print" (defined in a_samp.inc, which is why you need to include it) and tells it to display something in the server console (the word hello).
+As described in the very first example, this calls the function called "print" (defined in a_samp.inc, which is why you need to include it) and tells it to display something in the server console (the word hello).
 
 A function consists of the function name (e.g. print), which tells the system which chunk of code you want to call, and a parameter list, enclosed in ()s after the function name, which pass additional data to the function to help it run. If you didn't have parameters you would need millions of functions:
 
@@ -156,7 +156,7 @@ MyFunction()
 
 ## Parameters
 
-Parameters are a type of [variable](/wiki/Scripting_Basics#Variables "Scripting Basics") which you don't need to declare as they come from the place which called the function:
+Parameters are a type of [variable](start#variables) which you don't need to declare as they come from the place which called the function:
 
 ```c
 #include <a_samp>
@@ -173,7 +173,7 @@ MyFunction(string[])
 }
 ```
 
-This code still does the same thing but we're now telling MyFunction() what to display. The call passes the string "Hello World!" to the function where it is stored in a variable called string (the \[\] means it's an [array](/wiki/Scripting_Basics#Arrays "Scripting Basics") as explained later). The print function is the called, passing the contents of the string variable, we know it's a variable because it doesn't have the "" any more.
+This code still does the same thing but we're now telling MyFunction() what to display. The call passes the string "Hello World!" to the function where it is stored in a variable called string (the \[\] means it's an [array](start#arrays) as explained later). The print function is the called, passing the contents of the string variable, we know it's a variable because it doesn't have the "" any more.
 
 # Variables
 

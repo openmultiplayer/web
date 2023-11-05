@@ -1,6 +1,6 @@
 ---
 title: Lista crime
-description: Lista de crime se foloseste in functia [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer).
+description: Lista de crime se foloseste in functia PlayCrimeReportForPlayer.
 sidebar_label: Lista crime
 ---
 

@@ -13,4 +13,4 @@ description: Daftar Gaya Ikon Peta
 
 ## Fungsi Terkait
 
-- [SetPlayerMapIcon](/docs/scripting/functions/SetPlayerMapIcon): Membuat sebuah mapicon untuk player.
+- [SetPlayerMapIcon](../functions/SetPlayerMapIcon): Membuat sebuah mapicon untuk player.
