@@ -10,7 +10,7 @@ Culorile din SA-MP sunt în general reprezentate în notație hexazecimală (de�
 
 _RR_ este partea roșie a culorii, _GG_ verde și _BB_ albastru. _AA_ este valoarea alfa. Dacă se folosește FF acolo, culoarea se va afișa fără transparență și dacă se folosește 00, va fi invizibilă.
 
-Pentru codul Hex pentru aceste culori, accesați [Hex colors](hex-colors) page.
+Pentru codul Hex pentru aceste culori, accesați [Hex colors](hexcolors) page.
 
 ### Valori alfa (transparență)
 
