@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when the state of any [supported key](../resources/keys) is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
+This callback is called when the state of any [supported](../resources/keys) key is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
 
 | Name     | Description                                                                                      |
 | -------- | ------------------------------------------------------------------------------------------------ |

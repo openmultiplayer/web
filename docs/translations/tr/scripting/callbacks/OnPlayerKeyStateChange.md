@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Açıklama
 
-Bu fonksiyon, desteklenen(../resources/keys) herhangi bir tuşun durumu değiştirildiğinde (basıldığında / bırakıldığında) çağrılır. <br/>Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tetiklemez. 
+Bu fonksiyon, [desteklenen](../resources/keys) herhangi bir tuşun durumu değiştirildiğinde (basıldığında / bırakıldığında) çağrılır. <br/>Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tetiklemez. 
 
 | Parametre | Açıklama                                                                                         |
 | --------- | ------------------------------------------------------------------------------------------------ |

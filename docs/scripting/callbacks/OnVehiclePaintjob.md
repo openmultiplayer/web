@@ -12,7 +12,7 @@ This callback is called when a player previews a vehicle paintjob inside a mod s
 | ---------- | ---------------------------------------------------------------- |
 | playerid   | The ID of the player that changed the paintjob of their vehicle. |
 | vehicleid  | The ID of the vehicle that had its paintjob changed.             |
-| paintjobid | The ID of the new paintjob.                                      |
+| paintjobid | The ID of the new [paintjob](../resources/paintjobs).            |
 
 ## Returns
 
@@ -34,7 +34,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::tip
 
-This callback is not called by ChangeVehiclePaintjob. You might use OnVehicleChangePaintjob from vSync in order to know when the player buys the paintjob.
+This callback is not called by [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob). You might use OnVehicleChangePaintjob from vSync in order to know when the player buys the paintjob.
 
 :::
 

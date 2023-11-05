@@ -70,7 +70,7 @@ Colors List was added in **SA-MP 0.3c** and will not work in earlier versions!
 
 :::
 
-It is possible to use colors within text in [client messages](../functions/SendClientMessage"), [dialogs](../functions/ShowPlayerDialog), [3D text labels](../functions/Create3DTextLabel), [object material texts](../functions/SetObjectMaterialText) and [vehicle numberplates](../functions/SetVehicleNumberPlate).
+It is possible to use colors within text in [client messages](../functions/SendClientMessage), [dialogs](../functions/ShowPlayerDialog), [3D text labels](../functions/Create3DTextLabel), [object material texts](../functions/SetObjectMaterialText) and [vehicle numberplates](../functions/SetVehicleNumberPlate).
 
 It is very similar to [gametext colors](gametextstyles), but allows any color to be used.
 

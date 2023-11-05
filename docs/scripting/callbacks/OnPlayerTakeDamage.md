@@ -15,7 +15,7 @@ This callback is called when a player takes damage.
 | playerid | The ID of the player that took damage.                                                                                                 |
 | issuerid | The ID of the player that caused the damage. INVALID_PLAYER_ID if self-inflicted.                                                      |
 | amount   | The amount of damage the player took (health and armour combined).                                                                     |
-| weaponid | The ID of the weapon/reason for the damage.                                                                                            |
+| weaponid | The ID of the reason ([weapon id](../resources/weaponids)) for the damage.                                                              |
 | bodypart | The [body part](../resources/bodyparts) that was hit. (NOTE: This parameter was added in 0.3z. Leave it out if using an older version!) |
 
 ## Returns
@@ -70,7 +70,7 @@ The weaponid will return 37 (flame thrower) from any fire sources (e.g. molotov,
 
 :::warning
 
-GetPlayerHealth and GetPlayerArmour will return the old amounts of the player before this callback. Always check if issuerid is valid before using it as an array index.
+[GetPlayerHealth](../functions/GetPlayerHealth) and [GetPlayerArmour](../functions/GetPlayerArmour) will return the old amounts of the player before this callback. Always check if issuerid is valid before using it as an array index.
 
 :::
 

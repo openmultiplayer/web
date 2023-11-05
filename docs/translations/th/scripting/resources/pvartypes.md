@@ -2,7 +2,7 @@
 title: "Pvar Types"
 ---
 
-Types of player variables, to be used in [Per-player variable system.](../tutorials/perplayervariablesystem)
+Types of player variables, to be used in [Per-player variable system](../tutorials/perplayervariablesystem).
 
 ```c
 PLAYER_VARTYPE_NONE   (0)

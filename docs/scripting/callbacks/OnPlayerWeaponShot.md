@@ -44,7 +44,7 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 :::tip
 
-This callback is only called when lag compensation is enabled. If hittype is:
+This callback is only called when [lag compensation](../../server/LagCompensation) is enabled. If [hittype](../resources/bullethittypes) is:
 
 - BULLET_HIT_TYPE_NONE: the fX, fY and fZ parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
 - Others: the fX, fY and fZ are offsets relative to the hitid.
@@ -53,7 +53,7 @@ This callback is only called when lag compensation is enabled. If hittype is:
 
 :::tip
 
-GetPlayerLastShotVectors can be used in this callback for more detailed bullet vector information.
+[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) can be used in this callback for more detailed bullet vector information.
 
 :::
 

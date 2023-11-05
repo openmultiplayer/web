@@ -41,7 +41,7 @@ public OnRconCommand(cmd[])
 
 :::tip
 
-"/rcon " is not included in "cmd" when a player types a command. If you use the "print" function here, it will send a message to the player who typed the command in-game as well as the log. This callback is not called when the player is not logged in as RCON admin. When the player is not logged in as RCON admin and uses /rcon login, this callback will not be called and OnRconLoginAttempt is called instead. However, when the player is logged in as RCON admin, the use of this command will call this callback.
+"/rcon " is not included in "cmd" when a player types a command. If you use the [print](../functions/print) function here, it will send a message to the player who typed the command in-game as well as the log. This callback is not called when the player is not logged in as RCON admin. When the player is not logged in as RCON admin and uses /rcon login, this callback will not be called and [OnRconLoginAttempt](OnRconLoginAttempt) is called instead. However, when the player is logged in as RCON admin, the use of this command will call this callback.
 
 :::
 
