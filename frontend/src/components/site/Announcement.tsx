@@ -13,17 +13,19 @@ const Announcement: FC = () => {
         backgroundColor={useColorModeValue("blue.50", "gray.800")}
       >
         <Heading m="0" fontSize="1.5em">
-          open.mp is now open source!
+          open.mp launcher is out now and open source!
         </Heading>
 
         <Text>
-          open.mp is finally out and fully released!{" "}
-          <a href="https://github.com/openmultiplayer/open.mp">
+          open.mp released its own launcher to browse servers using a reliable
+          internet list and join your favorite servers!{" "}
+          <a href="https://github.com/openmultiplayer/launcher">
             check out our github repository
           </a>{" "}
-          See the{" "}
-          <a href="https://www.open.mp/blog/release-candidate-1">blog post</a>{" "}
-          for more details.
+          <br />
+          <a href="https://github.com/openmultiplayer/launcher/releases/latest">
+            Download it from here.
+          </a>{" "}
         </Text>
       </Box>
     </Box>
