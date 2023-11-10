@@ -28,13 +28,9 @@ import Card from "../components/site/Card";
 import heroStyles from "../styles/Hero.module.css";
 import Roads from "src/components/icons/Roads";
 
-const DownloadButton = () => {
+const DownloadButton = (props: { link: string; title: string }) => {
   return (
-    <Link
-      href="https://github.com/openmultiplayer/open.mp/releases"
-      _hover={{ textDecoration: "none" }}
-      isExternal
-    >
+    <Link href={props.link} _hover={{ textDecoration: "none" }} isExternal>
       <Button
         bg="#9083D2"
         color="white"
@@ -51,7 +47,7 @@ const DownloadButton = () => {
         }}
         title="open.mp is released"
       >
-        Download open.mp (server)
+        {props.title}
       </Button>
     </Link>
   );
@@ -101,7 +97,8 @@ const Home = () => {
       heading: "New and improved scripting system",
       bodyText:
         "We've stuck with pawn, but with a new compiler engineered to make your code more robust, and more functions to manipulate the server and client.  If that's still not enough there's an...",
-      buttonLink: "https://github.com/openmultiplayer/omp-stdlib/#openmp-includes",
+      buttonLink:
+        "https://github.com/openmultiplayer/omp-stdlib/#openmp-includes",
       buttonText: "Learn about the improvements",
       img: "/images/assets/f5.png",
       imgAlt: "pawn logo",
@@ -223,7 +220,14 @@ const Home = () => {
               </Text>
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
-                  <DownloadButton />
+                  <DownloadButton
+                    title={"Download open.mp (server)"}
+                    link={"https://github.com/openmultiplayer/open.mp/releases"}
+                  />
+                  <DownloadButton
+                    title={"Download SA-MP client"}
+                    link={"https://sa-mp.mp/downloads/"}
+                  />
                   <DocumentationButton />
                 </Flex>
               </HStack>
@@ -268,7 +272,12 @@ const Home = () => {
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <Box align="center">
-                    <DownloadButton />
+                    <DownloadButton
+                      title={"Download open.mp (server)"}
+                      link={
+                        "https://github.com/openmultiplayer/open.mp/releases"
+                      }
+                    />
                   </Box>
                   <DocumentationButton />
                 </Flex>
