@@ -36,9 +36,16 @@ public OnPlayerRequestClass(playerid, classid)
     // This simple example demonstrates how to spawn every player automatically with
     // CJ's skin, which is number 0. The player will spawn in Las Venturas, with
     // 36 Sawnoff-Shotgun rounds and 150 Tec9 rounds.
-    SetSpawnInfo( playerid, 0, 0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0 );
+    SetSpawnInfo( playerid, NO_TEAM, 0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0 );
 }
 ```
+
+## Notes
+
+:::warning
+
+In case you don't need to set a team to the player, make sure that the "team" parameter is set to NO_TEAM (255).
+Team ID 0 in open.mp is a valid team while in SA-MP it is not (SA-MP bug).
 
 ## Related Functions
 
