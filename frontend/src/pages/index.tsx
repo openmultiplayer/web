@@ -12,7 +12,7 @@ import {
   Text,
   useColorMode,
   useColorModeValue,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
 import { GetStaticPropsContext } from "next";
 import Head from "next/head";
@@ -25,8 +25,9 @@ import { MarkdownContent } from "src/mdx-helpers/types";
 //Components
 import Card from "../components/site/Card";
 //Styles
-import heroStyles from "../styles/Hero.module.css";
+import React from "react";
 import Roads from "src/components/icons/Roads";
+import heroStyles from "../styles/Hero.module.css";
 
 const DownloadButton = (props: { link: string; title: string }) => {
   return (
@@ -137,31 +138,38 @@ const Home = () => {
       alt: "discord icon",
       src: "/images/assets/discord-icon.svg",
       href: "https://discord.com/invite/samp",
+      size: 36,
     },
     {
       alt: "facebook icon",
       src: "/images/assets/facebook.svg",
       href: "https://www.facebook.com/openmultiplayer",
+      size: 33,
     },
     {
       alt: "instagram icon",
       src: "/images/assets/instagram.svg",
       href: "https://instagram.com/openmultiplayer/",
+      size: 33,
     },
     {
       alt: "twitch icon",
       src: "/images/assets/twitch.svg",
       href: "https://twitch.tv/openmultiplayer",
+      size: 29,
     },
     {
       alt: "x icon",
       src: "/images/assets/x.svg",
       href: "https://x.com/openmultiplayer",
+      size: 17,
+      background: true,
     },
     {
       alt: "youtube icon",
       src: "/images/assets/youtube.svg",
       href: "https://youtube.com/openmultiplayer",
+      size: 35,
     },
   ];
 
@@ -238,20 +246,47 @@ const Home = () => {
           </Flex>
           <Center>
             <HStack
-              gridGap="1.2em"
+              gridGap="0.5em"
               color="#7466D4"
               mt={{ base: "3em", md: "0" }}
+              style={{ justifyContent: "space-around" }}
             >
-              {socials.map((social, index) => (
-                <a key={index} href={social.href} target="__blank">
-                  <Image
-                    src={social.src}
-                    alt={social.alt}
-                    width="24px"
-                    height="24px"
-                  />
-                </a>
-              ))}
+              {socials.map((social, index) => {
+                const iconSize = `${social.size}px`;
+                const style: React.CSSProperties = {
+                  display: "flex",
+                  justifyContent: "center",
+                  ...(social.background && {
+                    backgroundColor: "#7466d4",
+                    width: `${social.size + 12}px`,
+                    height: `${social.size + 12}px`,
+                    borderRadius: 5,
+                  }),
+                };
+
+                return (
+                  <Box
+                    boxSize={10}
+                    alignItems="center"
+                    justifyContent={"center"}
+                    display="flex"
+                  >
+                    <a
+                      key={index}
+                      href={social.href}
+                      style={style}
+                      target="__blank"
+                    >
+                      <Image
+                        src={social.src}
+                        alt={social.alt}
+                        width={iconSize}
+                        height={iconSize}
+                      />
+                    </a>
+                  </Box>
+                );
+              })}
             </HStack>
           </Center>
         </Box>
