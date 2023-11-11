@@ -25,7 +25,7 @@ public OnNPCConnect(myplayerid)
 
 ## Srodne Funkcije
 
-Slijedeći callbackovi mogu biti korisni, zato što su povezani sa ovim callbackom na neki način.
+Slijedeći callbackovi mogu biti korisni, zato što su povezani sa ovim callback-om na neki način.
 
 - [OnNPCDisconnect](OnNPCDisconnect): Ovaj callback je pozvan kada se NPC diskonektuje sa servera.
 - [OnPlayerConnect](OnPlayerConnect): Ovaj callback je pozvan kada se igrač konektovao na server.
