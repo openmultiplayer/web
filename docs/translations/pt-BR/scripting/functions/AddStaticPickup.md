@@ -8,14 +8,14 @@ tags: []
 
 Esta função adiciona um pickup 'fixo' no jogo. Esses pickups suportam armas, vida, colete, etc, com a capacidade de funcionar sem scripts (armas/vida/colete são definidos automaticamente).
 
-| Nome                             | Descrição                                                                                     |
-| -------------------------------- | --------------------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | O modelo do pickup.                                                                           |
-| [type](../resources/pickuptypes) | O tipo de pickup. Determina como o pickup reage quando é coletado.                            |
-| Float:X                          | A coordenada-X para colocar o pickup.                                                         |
-| Float:Y                          | A coordenada-Y para colocar o pickup.                                                         |
-| Float:Z                          | A coordenada-Z para colocar o pickup.                                                         |
-| virtualworld                     | O ID do mundo virtual para colocar o pickup. Use -1 para mostrar o pickup em todos os mundos. |
+| Nome         | Descrição                                                                                      |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| model        | O [modelo](../resources/pickupids) do pickup.                                                  |
+| type         | O [tipo](../resources/pickuptypes) de pickup. Determina como o pickup reage quando é coletado. |
+| Float:X      | A coordenada-X para colocar o pickup.                                                          |
+| Float:Y      | A coordenada-Y para colocar o pickup.                                                          |
+| Float:Z      | A coordenada-Z para colocar o pickup.                                                          |
+| virtualworld | O ID do mundo virtual para colocar o pickup. Use -1 para mostrar o pickup em todos os mundos.  |
 
 ## Retorno
 

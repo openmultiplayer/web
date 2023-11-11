@@ -8,15 +8,15 @@ tags: ["vehicle"]
 
 Dodaje 'statično' vozilo (modeli su unaprijed učitani za igrač) u gamemode-u.
 
-| Ime                                   | Deskripcija                       |
-| ------------------------------------- | --------------------------------- |
-| modelid                               | ID modela za vozilo.              |
-| Float:spawn_X                         | X kordinata za vozilo.            |
-| Float:spawn_Y                         | Y kordinata za vozilo.            |
-| Float:spawn_Z                         | Z kordinata za vozilo.            |
-| Float:z_angle                         | Pravac vozila - angle.            |
-| [color1](../resources/vehiclecolorid) | ID primarne boje. -1 za random.   |
-| [color2](../resources/vehiclecolorid) | ID sekundarne boje. -1 za random. |
+| Ime           | Deskripcija                                                      |
+| ------------- | ---------------------------------------------------------------- |
+| modelid       | ID modela za vozilo.                                             |
+| Float:spawn_X | X kordinata za vozilo.                                           |
+| Float:spawn_Y | Y kordinata za vozilo.                                           |
+| Float:spawn_Z | Z kordinata za vozilo.                                           |
+| Float:z_angle | Pravac vozila - angle.                                           |
+| color1        | ID primarne [boje](../resources/vehiclecolorid). -1 za random.   |
+| color2        | ID sekundarne [boje](../resources/vehiclecolorid). -1 za random. |
 
 ## Returns
 

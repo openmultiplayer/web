@@ -6,12 +6,12 @@ tags: ["vehicle"]
 
 ## Descriere
 
-Adaugă o 'componentă' (adesea denumită 'mod' (modificare)) unui vehicul. Componentele valide pot fi găsite aici.
+Adaugă o 'componentă' (adesea denumită 'mod' (modificare)) unui vehicul. Componentele valide pot fi găsite [aici](../resources/carcomponentid).
 
-| Nume                                       | Descriere                                                                        |
-| ------------------------------------------ | -------------------------------------------------------------------------------- |
-| vehicleid                                  | ID-ul vehiculului la care se adaugă componenta. Nu trebuie confundat cu modelid. |
-| [componentid](../resources/carcomponentid) | ID-ul componentei de adăugat la vehicul.                                         |
+| Nume        | Descriere                                                                        |
+| ----------- | -------------------------------------------------------------------------------- |
+| vehicleid   | ID-ul vehiculului la care se adaugă componenta. Nu trebuie confundat cu modelid. |
+| componentid | ID-ul [componentei](../resources/carcomponentid) de adăugat la vehicul.          |
 
 ## Se intoarce
 

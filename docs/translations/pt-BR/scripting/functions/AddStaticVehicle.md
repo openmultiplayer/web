@@ -8,15 +8,15 @@ tags: ["vehicle"]
 
 Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode.
 
-| Name                                  | Descrição                                  |
-| ------------------------------------- | ------------------------------------------ |
-| modelid                               | O modelo ID para o veículo.                |
-| Float:spawn_X                         | A coordenada-X para o veículo.             |
-| Float:spawn_Y                         | A coordenada-Y para o veículo.             |
-| Float:spawn_Z                         | A coordenada-Z para o veículo.             |
-| Float:z_angle                         | Direção do veículo - Ângulo.               |
-| [color1](../resources/vehiclecolorid) | O ID da cor primária. -1 para aleatório.   |
-| [color2](../resources/vehiclecolorid) | O ID da cor secundária. -1 para aleatório. |
+| Name          | Descrição                                                                 |
+| ------------- | ------------------------------------------------------------------------- |
+| modelid       | O modelo ID para o veículo.                                               |
+| Float:spawn_X | A coordenada-X para o veículo.                                            |
+| Float:spawn_Y | A coordenada-Y para o veículo.                                            |
+| Float:spawn_Z | A coordenada-Z para o veículo.                                            |
+| Float:z_angle | Direção do veículo - Ângulo.                                              |
+| color1        | O ID da [cor](../resources/vehiclecolorid) primária. -1 para aleatório.   |
+| color2        | O ID da [cor](../resources/vehiclecolorid) secundária. -1 para aleatório. |
 
 ## Retorno
 

@@ -8,10 +8,10 @@ tags: []
 
 Girilen araç ID'sine uygun şekilde modifikasyon yapmanızı sağlar.
 
-| İsim         | Açıklama                                                                                                                      |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| vehicleid    | modifikasyon yapılacak aracın ID'si.                                                                                          |
-| [componentid](../resources/carcomponentid) | araca yapılacak modifikasyon ID'si.                                                             |
+| İsim        | Açıklama                                                           |
+| ----------- | ------------------------------------------------------------------ |
+| vehicleid   | modifikasyon yapılacak aracın ID'si.                               |
+| componentid | araca yapılacak [modifikasyon](../resources/carcomponentid) ID'si. |
 
 ## Dönence
 

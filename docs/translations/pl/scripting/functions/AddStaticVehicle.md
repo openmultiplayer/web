@@ -8,15 +8,15 @@ tags: ["vehicle"]
 
 Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu.
 
-| Nazwa                                 | Opis                                |
-| ------------------------------------- | ----------------------------------- |
-| modelid                               | ID modelu pojazdu.                  |
-| Float:spawn_X                         | Koordynat X pojazdu.                |
-| Float:spawn_Y                         | Koordynat Y pojazdu.                |
-| Float:spawn_Z                         | Koordynat Z pojazdu.                |
-| Float:z_angle                         | Kierunek pojazdu (kąt).             |
-| [color1](../resources/vehiclecolorid) | ID pierwszego koloru. -1 to losowy. |
-| [color2](../resources/vehiclecolorid) | ID drugiego koloru. -1 to losowy.   |
+| Nazwa         | Opis                                                               |
+| ------------- | ------------------------------------------------------------------ |
+| modelid       | ID modelu pojazdu.                                                 |
+| Float:spawn_X | Koordynat X pojazdu.                                               |
+| Float:spawn_Y | Koordynat Y pojazdu.                                               |
+| Float:spawn_Z | Koordynat Z pojazdu.                                               |
+| Float:z_angle | Kierunek pojazdu (kąt).                                            |
+| color1        | ID pierwszego [koloru](../resources/vehiclecolorid). -1 to losowy. |
+| color2        | ID drugiego [koloru](../resources/vehiclecolorid). -1 to losowy.   |
 
 ## Zwracane wartości
 

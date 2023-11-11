@@ -8,14 +8,14 @@ tags: [Pickup]
 
 Fügt ein 'static' Pickup zum Spiel hinzu. Diese Pickups unterstützen Waffen, Leben, Rüstung etc., mit der Fähigkeit ohne gescripted zu werden zu funktionieren. (weapons/health/armor wird automatisch gegeben).
 
-| Name                                | Beschreibung                                                                         |
-| ----------------------------------- | ----------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | Die Model ID des Pickups.                                    |
-| [type](../resources/pickuptypes) | Der Pickup Typ. Beeinflusst das Verhalten, wenn das Pickup aufgehoben wird.                 |
-| Float:X                             | Die X Koordinate an der das Pickup erstellt wird.                                           |
-| Float:Y                             | Die Y Koordinate an der das Pickup erstellt wird.                                           |
-| Float:Z                             | Die Z Koordinate an der das Pickup erstellt wird.                                           |
-| virtualworld                        | Die virtuelle Welt in der das Pickup erstellt wird. Nutze -1 um es in jeder virtuellen Welt zu zeigen. |
+| Name         | Beschreibung                                                                                            |
+| ------------ | ------------------------------------------------------------------------------------------------------- |
+| model        | Die [Model](../resources/pickupids) ID des Pickups.                                                     |
+| type         | Der Pickup [Typ](../resources/pickuptypes). Beeinflusst das Verhalten, wenn das Pickup aufgehoben wird. |
+| Float:X      | Die X Koordinate an der das Pickup erstellt wird.                                                       |
+| Float:Y      | Die Y Koordinate an der das Pickup erstellt wird.                                                       |
+| Float:Z      | Die Z Koordinate an der das Pickup erstellt wird.                                                       |
+| virtualworld | Die virtuelle Welt in der das Pickup erstellt wird. Nutze -1 um es in jeder virtuellen Welt zu zeigen.  |
 
 ## Rückgabe(return value)
 

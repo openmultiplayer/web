@@ -8,14 +8,14 @@ tags: []
 
 Ang function na ito ay nagdaragdag ng 'static' pickup sa laro. Sinusuportahan ng mga pickup na ito ang mga sandata, kalusugan, armor atbp., na may kakayahang gumana nang walang script ng mga ito (awtomatikong ibibigay ang mga armas/kalusugan/armor).
 
-| Name                                | Description                                                                         |
-| ----------------------------------- | ----------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | Ang modelo ng pickup.                                                                  |
-| [type](../resources/pickuptypes) | Ang uri ng pickup. Tinutukoy kung paano tumugon ang pickup kapag kinuha.               |
-| Float:X                             | Ang X coordinate para gawin ang pickup sa.                                          |
-| Float:Y                             | Ang Y coordinate para gawin ang pickup sa.                                          |
-| Float:Z                             | Ang Z coordinate para gawin ang pickup sa.                                          |
-| virtualworld                        | Ang virtual world ID para ilagay ang pickup na iyon. Gamitin ang -1 para ipakita ang pickup sa lahat ng mundo. |
+| Name         | Description                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------------------------------- |
+| model        | Ang [modelo](../resources/pickupids) ng pickup.                                                                |
+| type         | Ang [uri](../resources/pickuptypes) ng pickup. Tinutukoy kung paano tumugon ang pickup kapag kinuha.           |
+| Float:X      | Ang X coordinate para gawin ang pickup sa.                                                                     |
+| Float:Y      | Ang Y coordinate para gawin ang pickup sa.                                                                     |
+| Float:Z      | Ang Z coordinate para gawin ang pickup sa.                                                                     |
+| virtualworld | Ang virtual world ID para ilagay ang pickup na iyon. Gamitin ang -1 para ipakita ang pickup sa lahat ng mundo. |
 
 ## Returns
 

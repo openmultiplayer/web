@@ -8,15 +8,15 @@ tags: ["vehicle"]
 
 Oyun moduna bir "statik" araç ekler (modeller oyuncular için önceden yüklenir).
 
-| İsim                                  | Açıklama                                 |
-| ------------------------------------- | ---------------------------------------- |
-| modelid                               | Aracın Model Kimliği.                    |
-| Float:spawn_X                         | Aracın X koordinatı.                     |
-| Float:spawn_Y                         | Aracın Y koordinatı.                     |
-| Float:spawn_Z                         | Aracın Z koordinatı.                     |
-| Float:z_angle                         | Araç açısının yönü.                      |
-| [color1](../resources/vehiclecolorid) | Birincil renk kimliği. rastgele için -1. |
-| [color2](../resources/vehiclecolorid) | İkincil renk kimliği. rastgele için -1.  |
+| İsim          | Açıklama                                                                |
+| ------------- | ----------------------------------------------------------------------- |
+| modelid       | Aracın Model Kimliği.                                                   |
+| Float:spawn_X | Aracın X koordinatı.                                                    |
+| Float:spawn_Y | Aracın Y koordinatı.                                                    |
+| Float:spawn_Z | Aracın Z koordinatı.                                                    |
+| Float:z_angle | Araç açısının yönü.                                                     |
+| color1        | Birincil [renk](../resources/vehiclecolorid) kimliği. rastgele için -1. |
+| color2        | İkincil [renk](../resources/vehiclecolorid) kimliği. rastgele için -1.  |
 
 ## Çalışınca Vereceği Sonuçlar
 
