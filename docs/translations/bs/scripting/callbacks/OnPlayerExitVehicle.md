@@ -1,7 +1,7 @@
 ---
-title: OnPlayerExitVehicle
-description: Ovaj callback je pozvan kada igrač krene da izlazi iz vozila.
-tags: ["player", "vehicle"]
+Ime: OnPlayerExitVehicle
+Deskripcija: Ovaj callback je pozvan kada igrač krene da izlazi iz vozila.
+Tagovi: ["player", "vehicle"]
 ---
 
 ## Deskripcija
@@ -13,7 +13,7 @@ Ovaj callback je pozvan kada igrač krene da izlazi iz vozila.
 | playerid  | ID igrača koji izlazi iz vozila. |
 | vehicleid | ID vozila iz kojeg igrač izlazi. |
 
-## Returns
+## Return-ovi
 
 Uvijek je pozvana prva u filterskripti.
 
@@ -23,7 +23,7 @@ Uvijek je pozvana prva u filterskripti.
 public OnPlayerExitVehicle(playerid, vehicleid)
 {
     new string[35];
-    format(string, sizeof(string), "INFO: Izlazis iz vozila ID %i", vehicleid);
+    format(string, sizeof(string), "INFO: Izlaziš iz vozila ID %i", vehicleid);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }
