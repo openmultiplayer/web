@@ -1,20 +1,20 @@
 ---
-title: OnNPCConnect
-description: Ovaj callback je pozvan kada se NPC konektovao na server.
-tags: ["npc"]
+Ime: OnNPCConnect
+Deskripcija: Ovaj callback je pozvan kada se NPC konektovao na server.
+Tagovi: ["npc"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
 
-## Description
+## Deskripcija
 
 Ovaj callback je pozvan kada se NPC uspješno konektovao na server.
 
-| Name         | Description                                        |
+| Ime          | Deskripcija                                        |
 | ------------ | -------------------------------------------------- |
 | myplayerid   | playerid koji je dodijeljen NPC-u.                 |
 
-## Examples
+## Primjeri
 
 ```c
 public OnNPCConnect(myplayerid)
@@ -23,7 +23,7 @@ public OnNPCConnect(myplayerid)
 }
 ```
 
-## Related Callbacks
+## Srodne Funkcije
 
 Slijedeći callbackovi mogu biti korisni, zato što su povezani sa ovim callbackom na neki način.
 
