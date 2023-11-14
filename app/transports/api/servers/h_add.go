@@ -48,9 +48,6 @@ func (s *service) add(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Switch pending status to true, let server managers handle this manually or automatically
-	ss.Pending = true
-
 	if err := s.storer.Upsert(r.Context(), ss); err != nil {
 		web.StatusInternalServerError(w, errors.Wrap(err, "failed to upsert server information"))
 		return
