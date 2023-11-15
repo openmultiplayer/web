@@ -67,7 +67,6 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 			db.Server.Description.SetOptional(e.Description),
 			db.Server.Banner.SetOptional(e.Banner),
 			db.Server.Active.Set(e.Active),
-			db.Server.Pending.Set(e.Pending),
 			db.Server.LastActive.Set(time.Now()),
 		).Exec(ctx)
 	if errors.Is(err, db.ErrNotFound) {
@@ -86,7 +85,7 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 				db.Server.Vn.Set(e.Core.Version),
 				db.Server.Active.Set(e.Active),
 				db.Server.Omp.Set(e.Core.IsOmp),
-				db.Server.Pending.Set(e.Pending),
+				db.Server.Pending.Set(true),
 				db.Server.Domain.SetOptional(e.Domain),
 				db.Server.Description.SetOptional(e.Description),
 				db.Server.Banner.SetOptional(e.Banner),
