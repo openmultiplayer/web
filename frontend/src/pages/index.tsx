@@ -29,7 +29,7 @@ import React from "react";
 import Roads from "src/components/icons/Roads";
 import heroStyles from "../styles/Hero.module.css";
 
-const DownloadButton = (props: { link: string; title: string }) => {
+const DownloadButton = (props: { link: string; title: string; tooltip: string}) => {
   return (
     <Link href={props.link} _hover={{ textDecoration: "none" }} isExternal>
       <Button
@@ -46,7 +46,7 @@ const DownloadButton = (props: { link: string; title: string }) => {
           outline: "2px solid #695AD3",
           transition: "outline 0.3s",
         }}
-        title={props.title}
+        title={props.tooltip}
       >
       {props.title}
       </Button>
@@ -230,10 +230,12 @@ const Home = () => {
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <DownloadButton
                     title={"Download open.mp (server)"}
+                    tooltip="open.mp is released!"
                     link={"https://github.com/openmultiplayer/open.mp/releases"}
                   />
                   <DownloadButton
                     title={"Download SA-MP"}
+                    tooltip="Download SA-MP client and server"
                     link={"https://sa-mp.mp/downloads/"}
                   />
                   <DocumentationButton />
@@ -309,15 +311,12 @@ const Home = () => {
                   <Box align="center">
                     <DownloadButton
                       title={"Download open.mp (server)"}
+                      tooltip="open.mp is released!"
                       link={
                         "https://github.com/openmultiplayer/open.mp/releases"
                       }
                     />
                   </Box>
-                  <DownloadButton
-                    title={"Download SA-MP"}
-                    link={"https://sa-mp.mp/downloads/"}
-                  />
                   <DocumentationButton />
                 </Flex>
               </HStack>
