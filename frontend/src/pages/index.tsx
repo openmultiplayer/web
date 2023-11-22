@@ -46,9 +46,9 @@ const DownloadButton = (props: { link: string; title: string }) => {
           outline: "2px solid #695AD3",
           transition: "outline 0.3s",
         }}
-        title="open.mp is released"
+        title={props.title}
       >
-        {props.title}
+      {props.title}
       </Button>
     </Link>
   );
@@ -233,7 +233,7 @@ const Home = () => {
                     link={"https://github.com/openmultiplayer/open.mp/releases"}
                   />
                   <DownloadButton
-                    title={"Download SA-MP client"}
+                    title={"Download SA-MP"}
                     link={"https://sa-mp.mp/downloads/"}
                   />
                   <DocumentationButton />
@@ -314,6 +314,10 @@ const Home = () => {
                       }
                     />
                   </Box>
+                  <DownloadButton
+                    title={"Download SA-MP"}
+                    link={"https://sa-mp.mp/downloads/"}
+                  />
                   <DocumentationButton />
                 </Flex>
               </HStack>
