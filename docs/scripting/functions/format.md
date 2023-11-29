@@ -44,8 +44,7 @@ You may optionally put a number between the `%` and the letter of the placeholde
 ```c
 new result[128];
 new number = 42;
-format(result, sizeof(result), "The number is %i.", number);
-// The number is 42.
+format(result, sizeof(result), "The number is %i.", number); // The number is 42.
 
 new string[] = "simple message";
 format(result, sizeof(result), "This is a %s containing the number %i.", string, number);
