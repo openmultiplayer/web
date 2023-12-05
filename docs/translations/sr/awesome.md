@@ -39,10 +39,10 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **[crashdetect](https://github.com/Zeex/samp-plugin-crashdetect/)** - Развојни алат за проналажење багова током тестирања.
 - **[JIT](https://github.com/Zeex/samp-plugin-jit/)** - Након што је ваш код стабилан, употревите га да бисте га знатно убрзали.
 - **[sscanf](https://github.com/Y-Less/sscanf/)** - Претвори низове у више вредности, "intove", плутајуће, "player" итд.
-- **[MySQL](https://github.com/pBlueG/SA-MP-MySQL/)** - Конектујте свој сервер са MySQL сервером.
+- **[MySQL](https://github.com/pBlueG/SA-MP-MySQL/)** - Повежите свој сервер са MySQL сервером.
 - **[streamer](https://github.com/samp-incognito/samp-streamer-plugin/)** - Заобиђите многа SA:MP ограничења, попут предмета и преузимања.
 - **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - Провера изворних кад се послужитељ покрене.
-- **[Discord Connector](https://github.com/maddinat0r/samp-discord-connector)** - Лако стварање бота у оввиру скрипти.
+- **[Discord Connector](https://github.com/maddinat0r/samp-discord-connector)** - Лако стварање бота у оkвиру скрипти.
 
 ## Крипто Плугини
 
@@ -50,7 +50,7 @@ description: A curated list of useful tools, libraries and plugins for SA-MP dev
 - **[bcrypt](https://github.com/LassiR/bcrypt-samp/)** - "Bcrypt" криптографски додатак за SA:MP.
 - **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - "SHA512" криптографски додатак за SA:MP.
 
-## Гаме Мдови
+## Гаме Мoдови
 
 - **[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)** - Листа гамемодова који су компатибилни са open.mp.
-- **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Заснован на PvP преживљању.
+- **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Заснован на PvP(играч против играча) преживљавању.
