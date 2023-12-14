@@ -4,6 +4,8 @@ description: Get the class data.
 tags: ["class"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Get the class data.
