@@ -1,7 +1,7 @@
 ---
 title: ApplyAnimation
 description: Apply an animation to a player.
-tags: []
+tags: ["player", "animation"]
 ---
 
 ## Description
@@ -49,3 +49,4 @@ An invalid animation library will crash the player's game.
 
 - [ClearAnimations](ClearAnimations): Clear any animations a player is performing.
 - [SetPlayerSpecialAction](SetPlayerSpecialAction): Set a player's special action.
+- [GetPlayerAnimFlags](GetPlayerAnimFlags): Get the player animation flags.
