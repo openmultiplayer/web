@@ -1,7 +1,7 @@
 ---
 title: AddPlayerClassEx
 description: This function is exactly the same as the AddPlayerClass function, with the addition of a team parameter.
-tags: ["player"]
+tags: ["player", "class"]
 ---
 
 ## Description
@@ -54,6 +54,8 @@ The maximum class ID is 319 (starting from 0, so a total of 320 classes). When t
 ## Related Functions
 
 - [AddPlayerClass](AddPlayerClass): Add a class.
+- [GetAvailableClasses](GetAvailableClasses): Get the number of classes defined.
+- [EditPlayerClass](EditPlayerClass): Edit a class data.
 - [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.
 - [SetPlayerTeam](SetPlayerTeam): Set a player's team.
 - [SetPlayerSkin](SetPlayerSkin): Set a player's skin.
