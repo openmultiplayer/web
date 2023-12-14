@@ -42,3 +42,4 @@ stock CountAttachedObjects(playerid)
 
 - [SetPlayerAttachedObject](SetPlayerAttachedObject): Attach an object to a player
 - [RemovePlayerAttachedObject](RemovePlayerAttachedObject): Remove an attached object from a player
+- [GetPlayerAttachedObject](GetPlayerAttachedObject): Gets the player attachment object data by index.
