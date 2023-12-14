@@ -10,7 +10,7 @@ Checks if a menu ID is valid.
 
 | Name   | Description                  |
 | ------ | ---------------------------- |
-| menuid | The ID of the menu to check. |
+| Menu:menuid | The ID of the menu to check. |
 
 ## Returns
 
@@ -26,5 +26,7 @@ Checks if a menu ID is valid.
 - [DisableMenuRow](DisableMenuRow): Disable a specific row in a menu for all players.
 - [AddMenuItem](AddMenuItem): Adds an item to a specified menu.
 - [SetMenuColumnHeader](SetMenuColumnHeader): Set the header for one of the columns in a menu.
+- [IsMenuDisabled](IsMenuDisabled): Check if a menu is disabled.
+- [IsMenuRowDisabled](IsMenuRowDisabled): Check if a menu row is disabled.
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Called when a player exits a menu.

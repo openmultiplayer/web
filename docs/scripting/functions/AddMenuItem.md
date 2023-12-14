@@ -45,5 +45,6 @@ Crashes when passed an invalid menu ID. You can only have 12 items per menu (13t
 - [CreateMenu](CreateMenu): Create a menu.
 - [SetMenuColumnHeader](SetMenuColumnHeader): Set the header for one of the columns in a menu.
 - [DestroyMenu](DestroyMenu): Destroy a menu.
+- [IsMenuRowDisabled](IsMenuRowDisabled): Check if a menu row is disabled.
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Called when a player exits a menu.

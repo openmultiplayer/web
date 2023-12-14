@@ -59,6 +59,10 @@ There are 6 types of requests that the client processes  2, 5, 69, 70, 71, 72.
 
 :::
 
+## Related Functions
+
+- [IsPlayerUsingOfficialClient](IsPlayerUsingOfficialClient): Check if the player is using the official SA-MP client.
+
 ## Related Callbacks
 
 - [OnClientCheckResponse](../callbacks/OnClientCheckResponse): called when a SendClientCheck request completes.

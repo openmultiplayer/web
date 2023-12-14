@@ -48,3 +48,4 @@ Crashes when passed an invalid menu ID.
 - [CreateMenu](CreateMenu): Create a menu.
 - [DestroyMenu](DestroyMenu): Destroy a menu.
 - [AddMenuItem](AddMenuItem): Add an item to a menu.
+- [IsMenuDisabled](IsMenuDisabled): Check if a menu is disabled.
