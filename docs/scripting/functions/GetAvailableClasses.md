@@ -4,6 +4,8 @@ description: Get the number of classes defined.
 tags: ["class"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Get the number of classes defined.
