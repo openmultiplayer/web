@@ -44,6 +44,7 @@ PAWN is case-sensitive. GetPlayerIP will not work. This function does not work w
 ## Related Functions
 
 - [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
+- [GetPlayerRawIp](GetPlayerRawIp): Get a player's Raw IP.
 - [GetPlayerName](GetPlayerName): Get a player's name.
 - [GetPlayerPing](GetPlayerPing): Get the ping of a player.
 - [GetPlayerVersion](GetPlayerVerion): Get a player's client-version.
