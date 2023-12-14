@@ -1,7 +1,7 @@
 ---
 title: SetSpawnInfo
 description: This function can be used to change the spawn information of a specific player.
-tags: []
+tags: ["player"]
 ---
 
 ## Description
