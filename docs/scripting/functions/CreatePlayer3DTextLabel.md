@@ -61,7 +61,6 @@ If text[] is empty, the server/clients next to the text might crash!
 - [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
 - [IsValidPlayer3DTextLabel](IsValidPlayer3DTextLabel): Checks if an player's 3D text label is valid.
 - [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.
-
 - [GetPlayer3DTextLabelText](GetPlayer3DTextLabelText): Gets the player's 3D text label text.
 - [GetPlayer3DTextLabelColour](GetPlayer3DTextLabelColour): Gets the player's 3D text label colour.
 - [GetPlayer3DTextLabelPos](GetPlayer3DTextLabelPos): Gets the player's 3D text label position.
@@ -71,3 +70,4 @@ If text[] is empty, the server/clients next to the text might crash!
 - [SetPlayer3DTextLabelVirtualWorld](SetPlayer3DTextLabelVirtualWorld): Sets the player's 3D text label virtual world id.
 - [GetPlayer3DTextLabelLOS](GetPlayer3DTextLabelLOS): Gets the player's 3D text label line-of-sight.
 - [SetPlayer3DTextLabelLOS](SetPlayer3DTextLabelLOS): Sets the player's 3D text label line-of-sight.
+- [Create3DTextLabel](Create3DTextLabel): Create a global 3D text label.
