@@ -18,7 +18,7 @@ Gets the 3D text label attached data.
 
 ## Examples
 
-A example for parentPlayerid:
+An example for parentPlayerid:
 
 ```c
 new Text3D:gMyLabel;
@@ -31,7 +31,7 @@ Attach3DTextLabelToPlayer(gMyLabel, playerid, 0.0, 0.0, 0.7);
 Get3DTextLabelAttachedData(gMyLabel, parentPlayerid, parentVehicleid);
 ```
 
-A example for parentVehicleid:
+An example for parentVehicleid:
 
 ```c
 new Text3D:gVehicle3dText[MAX_VEHICLES];

@@ -1,6 +1,6 @@
 ---
 title: IsValidPlayer3DTextLabel
-description: Checks if an player's 3D text label is valid.
+description: Checks if a player's 3D text label is valid.
 tags: ["player", "3dtextlabel"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["player", "3dtextlabel"]
 
 ## Description
 
-Checks if an player's 3D text label is valid.
+Checks if a player's 3D text label is valid.
 
 | Name        | Description           |
 | ----------- | --------------------- |
@@ -37,4 +37,4 @@ if (IsValidPlayer3DTextLabel(playerid, playerTextId))
 ## Related Functions
 
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Creates a 3D Text Label only for a specific player.
-- [IsValid3DTextLabel](IsValid3DTextLabel): Checks if an 3D text label is valid.
+- [IsValid3DTextLabel](IsValid3DTextLabel): Checks if a 3D text label is valid.

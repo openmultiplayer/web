@@ -36,7 +36,7 @@ worldid = GetPlayer3DTextLabelVirtualWorld(playerid, playerTextId);
 
 :::warning
 
-There is not virtual world support for player 3D text labels.
+There is no virtual world support for player 3D text labels.
 This function just returns the player's virtual world!
 
 :::

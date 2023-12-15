@@ -1,6 +1,6 @@
 ---
 title: Is3DTextLabelStreamedIn
-description: Checks if an 3D text label is streamed in for a player.
+description: Checks if a 3D text label is streamed in for a player.
 tags: ["3dtextlabel"]
 ---
 
@@ -8,7 +8,7 @@ tags: ["3dtextlabel"]
 
 ## Description
 
-Checks if an 3D text label is streamed in for a player.
+Checks if a 3D text label is streamed in for a player.
 
 | Name        | Description           |
 | ----------- | --------------------- |

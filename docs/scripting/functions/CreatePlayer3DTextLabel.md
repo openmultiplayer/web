@@ -59,7 +59,7 @@ If text[] is empty, the server/clients next to the text might crash!
 ## Related Functions
 
 - [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
-- [IsValidPlayer3DTextLabel](IsValidPlayer3DTextLabel): Checks if an player's 3D text label is valid.
+- [IsValidPlayer3DTextLabel](IsValidPlayer3DTextLabel): Checks if a player's 3D text label is valid.
 - [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.
 - [GetPlayer3DTextLabelText](GetPlayer3DTextLabelText): Gets the player's 3D text label text.
 - [GetPlayer3DTextLabelColour](GetPlayer3DTextLabelColour): Gets the player's 3D text label colour.

@@ -19,7 +19,7 @@ Gets the player's 3D text label attached data.
 
 ## Examples
 
-A example for parentPlayerid:
+An example for parentPlayerid:
 
 ```c
 new PlayerText3D:playerTextId;
@@ -36,7 +36,7 @@ GetPlayer3DTextLabelAttachedData(playerid, playerTextId, parentPlayerid, parentV
 // The `parentPlayerid` will be '37'
 ```
 
-A example for parentVehicleid:
+An example for parentVehicleid:
 
 ```c
 new PlayerText3D:gVehicle3dText[MAX_VEHICLES];

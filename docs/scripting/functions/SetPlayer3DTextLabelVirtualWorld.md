@@ -32,7 +32,7 @@ SetPlayer3DTextLabelVirtualWorld(playerid, playerTextId, 60);
 
 :::warning
 
-There is not virtual world support for player 3D text labels.
+There is no virtual world support for player 3D text labels.
 This function does nothing and is fundamentally broken!
 
 :::
