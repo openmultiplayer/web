@@ -6,7 +6,7 @@ This site aims to provide an easily accessible, easy to contribute to documentat
 
 ## The SA-MP wiki is gone
 
-Unfortunately, the SA-MP wiki was taken offline in late september and then restored as uneditable archive.
+Unfortunately, the SA-MP wiki was taken offline in late september of 2020 and then restored as uneditable archive.
 
 Alas, we need the community's help to transfer the old wiki's content to its new home, here!
 
