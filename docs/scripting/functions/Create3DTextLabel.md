@@ -58,9 +58,20 @@ If text[] is empty, the server/clients next to the text might crash! If the virt
 ## Related Functions
 
 - [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
+- [IsValid3DTextLabel](IsValid3DTextLabel): Checks if a 3D text label is valid.
+- [Is3DTextLabelStreamedIn](Is3DTextLabelStreamedIn): Checks if a 3D text label is streamed in for a player.
 - [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
 - [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
 - [Update3DTextLabelText](Update3DTextLabelText): Change the text of a 3D text label.
+- [Get3DTextLabelText](Get3DTextLabelText): Gets the 3D text label text.
+- [Get3DTextLabelColour](Get3DTextLabelColour): Gets the 3D text label colour.
+- [Get3DTextLabelPos](Get3DTextLabelPos): Gets the 3D text label position.
+- [Get3DTextLabelDrawDistance](Get3DTextLabelDrawDistance): Gets the 3D text label draw distance.
+- [Set3DTextLabelDrawDistance](Set3DTextLabelDrawDistance): Sets the 3D text label draw distance.
+- [Get3DTextLabelVirtualWorld](Get3DTextLabelVirtualWorld): Gets the 3D text label virtual world id.
+- [Set3DTextLabelVirtualWorld](Set3DTextLabelVirtualWorld): Sets the 3D text label virtual world id.
+- [Get3DTextLabelLOS](Get3DTextLabelLOS): Gets the 3D text label line-of-sight.
+- [Set3DTextLabelLOS](Set3DTextLabelLOS): Sets the 3D text label line-of-sight.
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
 - [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
 - [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.

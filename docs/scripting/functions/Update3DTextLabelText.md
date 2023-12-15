@@ -44,6 +44,8 @@ If text[] is empty, the server/clients next to the text might crash!
 
 - [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
 - [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
+- [Get3DTextLabelText](Get3DTextLabelText): Gets the 3D text label text.
+- [Get3DTextLabelColour](Get3DTextLabelColour): Gets the 3D text label colour.
 - [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
 - [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
