@@ -47,3 +47,4 @@ Timer intervals are not accurate (roughly 25% off). There are fixes available he
 
 - [SetTimerEx](SetTimerEx): Set a timer with parameters.
 - [KillTimer](KillTimer): Stop a timer.
+- [CountRunningTimers](CountRunningTimers): Get the running timers.
