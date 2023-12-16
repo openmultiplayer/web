@@ -12,9 +12,9 @@ Checks if the RCON admins allowed to teleport by right-clicking on the map.
 
 ## Returns
 
-true: Allow.
+true: Allowed.
 
-false: Disallow.
+false: Not allowed.
 
 ## Examples
 
