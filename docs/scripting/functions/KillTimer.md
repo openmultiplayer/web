@@ -47,3 +47,4 @@ public WelcomeTimer(playerid)
 
 - [SetTimer](SetTimer): Set a timer.
 - [SetTimerEx](SetTimerEx): Set a timer with parameters.
+- [CountRunningTimers](CountRunningTimers): Get the running timers.

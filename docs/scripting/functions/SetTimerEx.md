@@ -74,5 +74,6 @@ The function to be called must be public. That means it has to be forwarded.
 
 - [SetTimer](SetTimer): Set a timer.
 - [KillTimer](KillTimer): Stop a timer.
+- [CountRunningTimers](CountRunningTimers): Get the running timers.
 - [CallLocalFunction](CallLocalFunction): Call a function in the script.
 - [CallRemoteFunction](CallRemoteFunction): Call a function in any loaded script.

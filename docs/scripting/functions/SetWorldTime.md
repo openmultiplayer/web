@@ -39,6 +39,7 @@ To set the minutes and/or to set the time for individual players, see SetPlayerT
 
 ## Related Functions
 
+- [GetWorldTime](GetWorldTime): Get the current world time.
 - [SetPlayerTime](SetPlayerTime): Set a player's time.
 - [SetWeather](SetWeather): Set the global weather.
 - [SetGravity](SetGravity): Set the global gravity.
