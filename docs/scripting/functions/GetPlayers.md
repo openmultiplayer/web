@@ -23,3 +23,8 @@ new players[MAX_PLAYERS];
 GetPlayers(players, sizeof(players));
 // The `players` array now contains online player IDs. { 0, 1, 2, 3, 4, ... }
 ```
+
+## Related Functions
+
+- [GetVehicles](GetVehicles): Gets an array variable of the IDs of the created vehicles on the server.
+- [GetActors](GetActors): Gets an array variable of the IDs of the created actors on the server.
