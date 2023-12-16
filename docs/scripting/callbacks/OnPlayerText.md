@@ -45,3 +45,4 @@ The following functions might be useful, as they're related to this callback in 
 
 - [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Force a player to send text for one player.
 - [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Force a player to send text for all players.
+- [ToggleChatTextReplacement](../functions/ToggleChatTextReplacement): Toggles the chat input filter.
