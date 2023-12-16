@@ -1,7 +1,7 @@
 ---
 title: IsValidAnimationLibrary
 description: Checks if the given animation library is valid.
-tags: []
+tags: ["animation"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
