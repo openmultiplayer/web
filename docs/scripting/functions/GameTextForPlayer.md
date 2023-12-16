@@ -43,5 +43,7 @@ Also, a blank space at end of the string may result in faliure. For example: `"H
 
 ## Related Functions
 
+- [HideGameTextForPlayer](HideGameTextForPlayer): Stop showing a gametext style to a player.
 - [GameTextForAll](GameTextForAll): Display gametext to all players.
+- [HideGameTextForAll](HideGameTextForAll): Stop showing a gametext style for all players.
 - [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
