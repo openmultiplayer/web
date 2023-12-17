@@ -36,6 +36,28 @@ public OnGameModeInit()
 }
 ```
 
+An example for open.mp:
+
+```c
+/*
+    TEXT_DRAW_FONT_0
+    TEXT_DRAW_FONT_1
+    TEXT_DRAW_FONT_2
+    TEXT_DRAW_FONT_3
+    TEXT_DRAW_FONT_SPRITE_DRAW
+    TEXT_DRAW_FONT_MODEL_PREVIEW
+*/
+
+new Text: gMyTextdraw;
+
+public OnGameModeInit()
+{
+    gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
+    TextDrawFont(gMyTextdraw, TEXT_DRAW_FONT_2);
+    return 1;
+}
+```
+
 ## Notes
 
 :::tip
@@ -48,6 +70,7 @@ If you want to change the font of a textdraw that is already shown, you don't ha
 
 - [TextDrawCreate](TextDrawCreate): Create a textdraw.
 - [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawGetFont](TextDrawGetFont): Gets the text font of a textdraw.
 - [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
 - [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
 - [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.
