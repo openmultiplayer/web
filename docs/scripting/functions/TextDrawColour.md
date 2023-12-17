@@ -12,7 +12,7 @@ Sets the text colour of a textdraw
 
 | Name  | Description                                     |
 | ----- | ----------------------------------------------- |
-| text  | The ID of the textdraw to change the colour of. |
+| Text:textid  | The ID of the textdraw to change the colour of. |
 | colour | The colour to set the textdraw to.               |
 
 ## Returns

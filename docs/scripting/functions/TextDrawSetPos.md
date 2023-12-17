@@ -12,7 +12,7 @@ Sets the position (in-screen x & y) of a textdraw.
 
 | Name | Description |
 | ---- | -------------------------------------------------------------- |
-| text | The ID of the textdraw to set the position of.   |
+| Text:textid | The ID of the textdraw to set the position of.   |
 | Float:x | The X coordinate. |
 | Float:y | The Y coordinate. |
 

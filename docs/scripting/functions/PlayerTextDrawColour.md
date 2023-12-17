@@ -13,7 +13,7 @@ Sets the text colour of a player-textdraw
 | Name     | Description                                             |
 | -------- | ------------------------------------------------------- |
 | playerid | The ID of the player who's textdraw to set the colour of |
-| text     | The TextDraw to change.                                 |
+| PlayerText:textid     | The TextDraw to change.                                 |
 | colour    | The colour in hexadecimal format.                        |
 
 ## Returns

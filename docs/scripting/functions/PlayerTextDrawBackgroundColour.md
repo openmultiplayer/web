@@ -13,7 +13,7 @@ Adjust the background colour of a player-textdraw.
 | Name     | Description                                                               |
 | -------- | ------------------------------------------------------------------------- |
 | playerid | The ID of the player whose player-textdraw to set the background colour of |
-| text     | The ID of the player-textdraw to set the background colour of              |
+| PlayerText:textid     | The ID of the player-textdraw to set the background colour of              |
 | colour    | The colour that the textdraw should be set to.                             |
 
 ## Returns

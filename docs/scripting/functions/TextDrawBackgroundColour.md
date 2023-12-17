@@ -12,7 +12,7 @@ Adjusts the text draw area background colour (the outline/shadow - NOT the box. 
 
 | Name  | Description                                           |
 | ----- | ----------------------------------------------------- |
-| text  | The ID of the textdraw to set the background colour of |
+| Text:textid  | The ID of the textdraw to set the background colour of |
 | colour | The colour that the textdraw should be set to.         |
 
 ## Returns

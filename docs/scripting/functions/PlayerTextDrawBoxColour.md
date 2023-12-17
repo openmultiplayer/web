@@ -13,7 +13,7 @@ Sets the colour of a textdraw's box (PlayerTextDrawUseBox ).
 | Name     | Description                                                  |
 | -------- | ------------------------------------------------------------ |
 | playerid | The ID of the player whose textdraw to set the box colour of. |
-| text     | The ID of the player textdraw to set the box colour of.       |
+| PlayerText:textid     | The ID of the player textdraw to set the box colour of.       |
 | colour    | The colour to set. Alpha (transparency) is supported.         |
 
 ## Returns

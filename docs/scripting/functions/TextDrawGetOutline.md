@@ -12,7 +12,7 @@ Gets the thickness of a textdraw's text's outline.
 
 | Name | Description                                                    |
 | ---- | -------------------------------------------------------------- |
-| text | The ID of the textdraw to get the outline size of. |
+| Text:textid | The ID of the textdraw to get the outline size of. |
 
 ## Returns
 

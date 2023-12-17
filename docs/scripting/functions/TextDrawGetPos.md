@@ -12,7 +12,7 @@ Gets the position (in-screen x & y) of a textdraw.
 
 | Name | Description |
 | ---- | -------------------------------------------------------------- |
-| text | The ID of the textdraw to get the position of.   |
+| Text:textid | The ID of the textdraw to get the position of.   |
 | &Float:x | A float variable into which to store X coordinate, passed by reference. |
 | &Float:y | A float variable into which to store Y coordinate, passed by reference. |
 

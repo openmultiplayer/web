@@ -12,7 +12,7 @@ Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 1).
 
 | Name  | Description                                                                                                                                                                    |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| text  | The TextDraw to change                                                                                                                                                         |
+| Text:textid  | The TextDraw to change                                                                                                                                                         |
 | colour | The colour. Opacity is set by the alpha intensity of colour (eg. colour 0x000000FF has a solid black box opacity, whereas 0x000000AA has a semi-transparent black box opacity). |
 
 ## Returns

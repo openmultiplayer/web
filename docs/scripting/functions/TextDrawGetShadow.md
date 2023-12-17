@@ -12,7 +12,7 @@ Gets the size of a textdraw's text's shadow.
 
 | Name | Description |
 | ---- | -------------------------------------------------------------------------- |
-| text | The ID of the textdraw to get the shadow size of. |
+| Text:textid | The ID of the textdraw to get the shadow size of. |
 
 ## Returns
 

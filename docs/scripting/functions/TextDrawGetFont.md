@@ -12,7 +12,7 @@ Gets the text font of a textdraw.
 
 | Name | Description |
 | ---- | ----------------------------------------------------------- |
-| text | The ID of the textdraw to get the font of. |
+| Text:textid | The ID of the textdraw to get the font of. |
 
 ## Returns
 
