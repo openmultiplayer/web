@@ -13,7 +13,7 @@ Sets whether a textdraw can be selected (clicked on) or not
 | Name | Description                                              |
 | ---- | -------------------------------------------------------- |
 | text | The ID of the textdraw to make selectable.               |
-| set  | 1 to make it selectable, or 0 to make it not selectable. |
+| bool:set  | 'true' to make it selectable, or 'false' to make it not selectable. |
 
 ## Returns
 
@@ -22,15 +22,14 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid, cmdtext[])
+new Text: gMyTextdraw;
+
+public OnGameModeInit()
 {
-    if (!strcmp(cmdtext, "/selectd", true))
-    {
-        for(new i = 0; i < MAX_TEXT_DRAWS; i++) TextDrawSetSelectable(Text:i, 1);
-        SendClientMessage(playerid, 0xFFFFFFAA, "SERVER: All textdraws can be selected now!");
-        return 1;
-    }
-    return 0;
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
+    TextDrawTextSize(gMyTextdraw, 30.0, 10.0);
+    TextDrawSetSelectable(gMyTextdraw, true);
+    return 1;
 }
 ```
 
@@ -50,6 +49,10 @@ TextDrawSetSelectable must be used BEFORE the textdraw is shown to players for i
 
 ## Related Functions
 
+- [TextDrawIsSelectable](TextDrawIsSelectable): Checks if a textdraw is selectable.
 - [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
 - [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
+
+## Related Callbacks
+
 - [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
