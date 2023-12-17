@@ -13,7 +13,7 @@ Gets the preview model of a 3D preview player-textdraw.
 | Name | Description |
 | ---- | -------------------------------------------------------------------------- |
 | playerid | The ID of the player. |
-| Text:textid | The ID of the player-textdraw to get the preview model of. |
+| PlayerText:textid | The ID of the player-textdraw to get the preview model of. |
 
 ## Returns
 
