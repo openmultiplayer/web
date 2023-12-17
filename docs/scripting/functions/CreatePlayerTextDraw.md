@@ -69,3 +69,5 @@ Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~ Doesn't work beyond 
 - [PlayerTextDrawSetString](PlayerTextDrawSetString): Set the text of a player-textdraw.
 - [PlayerTextDrawShow](PlayerTextDrawShow): Show a player-textdraw.
 - [PlayerTextDrawHide](PlayerTextDrawHide): Hide a player-textdraw.
+- [IsPlayerTextDrawVisible](IsPlayerTextDrawVisible): Checks if a player-textdraw is shown for the player.
+- [IsValidPlayerTextDraw](IsValidPlayerTextDraw): Checks if a player-textdraw is valid.
