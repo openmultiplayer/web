@@ -29,19 +29,20 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new PlayerText:gWelcomeText[MAX_PLAYERS];
+new PlayerText:welcomeText[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
     // First, create the textdraw
-    gWelcomeText[playerid] = CreatePlayerTextDraw(playerid, 240.0, 580.0, "Welcome to my SA-MP server");
-    // Set the font of player-textdraw 'gWelcomeText' to 2.
-    PlayerTextDrawFont(playerid, gWelcomeText[playerid], 2);
-}
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
+    
+    // Set the font of player-textdraw 'welcomeText[playerid]' to 2.
+    PlayerTextDrawFont(playerid, welcomeText[playerid], TEXT_DRAW_FONT_2);
+    
+    // Show 'welcomeText[playerid]' to player
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
-public OnPlayerDisconnect(playerid)
-{
-    PlayerTextDrawHide(playerid, gWelcomeText[playerid]);
+    return 1;
 }
 ```
 
@@ -49,6 +50,7 @@ public OnPlayerDisconnect(playerid)
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawGetFont](PlayerTextDrawGetFont): Gets the text font of a player-textdraw.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.
