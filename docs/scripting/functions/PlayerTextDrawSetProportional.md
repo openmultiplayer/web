@@ -20,10 +20,26 @@ Appears to scale text spacing to a proportional ratio. Useful when using PlayerT
 
 This function does not return any specific values.
 
+## Examples
+
+```c
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
+    PlayerTextDrawSetProportional(playerid, welcomeText[playerid], true);
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
+
+    return 1;
+}
+```
+
 ## Related Functions
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawIsProportional](PlayerTextDrawIsProportional): Checks if a player-textdraw is proportional.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.
