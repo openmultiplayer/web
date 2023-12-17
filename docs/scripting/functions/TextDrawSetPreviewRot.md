@@ -12,6 +12,7 @@ Sets the rotation and zoom of a 3D model preview textdraw.
 
 | Name        | Description                                                                                                              |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Text:textid | The ID of the textdraw to change. |
 | Float:fRotX | The X rotation value.                                                                                                    |
 | Float:fRotY | The Y rotation value.                                                                                                    |
 | Float:fRotZ | The Z rotation value.                                                                                                    |
@@ -24,13 +25,13 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(320.0, 240.0, "_");
     TextDrawFont(gMyTextdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    TextDrawUseBox(gMyTextdraw, 1);
+    TextDrawUseBox(gMyTextdraw, true);
     TextDrawBoxColor(gMyTextdraw, 0x000000FF);
     TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(gMyTextdraw, 411);
@@ -50,6 +51,7 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW and already hav
 
 ## Related Functions
 
+- [TextDrawGetPreviewRot](TextDrawGetPreviewRot): Gets the rotation and zoom of a 3D model preview textdraw.
 - [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Set rotation of a 3D player textdraw preview.
 - [TextDrawSetPreviewModel](TextDrawSetPreviewModel): Set the 3D preview model of a textdraw.
 - [TextDrawSetPreviewVehCol](TextDrawSetPreviewVehCol): Set the colours of a vehicle in a 3D textdraw preview.
