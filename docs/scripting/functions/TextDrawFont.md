@@ -26,19 +26,6 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
-
-public OnGameModeInit()
-{
-    gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawFont(gMyTextdraw, 2);
-    return 1;
-}
-```
-
-An example for open.mp:
-
-```c
 /*
     TEXT_DRAW_FONT_0
     TEXT_DRAW_FONT_1

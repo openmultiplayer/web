@@ -20,19 +20,6 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
-
-public OnGameModeInit()
-{
-    gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawAlignment(gMyTextdraw, 2); // Align the textdraw text in the center
-    return 1;
-}
-```
-
-An example for open.mp:
-
-```c
 /*
     TEXT_DRAW_ALIGN_LEFT
     TEXT_DRAW_ALIGN_CENTER
@@ -44,7 +31,7 @@ new Text: gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawAlignment(gMyTextdraw, TEXT_DRAW_ALIGN_CENTER);
+    TextDrawAlignment(gMyTextdraw, TEXT_DRAW_ALIGN_CENTER); // Align the textdraw text in the center
     return 1;
 }
 ```

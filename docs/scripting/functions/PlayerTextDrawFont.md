@@ -29,6 +29,15 @@ This function does not return any specific values.
 ## Examples
 
 ```c
+/*
+    TEXT_DRAW_FONT_0
+    TEXT_DRAW_FONT_1
+    TEXT_DRAW_FONT_2
+    TEXT_DRAW_FONT_3
+    TEXT_DRAW_FONT_SPRITE_DRAW
+    TEXT_DRAW_FONT_MODEL_PREVIEW
+*/
+
 new PlayerText:welcomeText[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
