@@ -15,7 +15,7 @@ Checks if a player-textdraw is selectable.
 | Name      | Description                        |
 | --------- | ---------------------------------- |
 | playerid | The ID of the player. |
-| Text:textid | The ID of the player-textdraw to check. |
+| PlayerText:textid | The ID of the player-textdraw to check. |
 
 ## Return Values
 
