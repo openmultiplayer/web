@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\docs",
+    "\\docs\\server",
+    "\\docs\\translations",
+    "\\docs\\translations\\cro",
+    "\\docs\\translations\\cro\\client",
+    "\\docs\\translations\\cro\\scripting",
+    "\\docs\\translations\\cro\\scripting\\callbacks",
+    "\\docs\\translations\\sr\\client"
+  ],
+  "SelectedNode": "\\docs\\translations\\cro\\scripting\\callbacks\\OnClientMessage.md",
+  "PreviewInSolutionExplorer": false
+}
