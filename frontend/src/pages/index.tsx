@@ -321,6 +321,11 @@ const Home = () => {
                         "https://github.com/openmultiplayer/open.mp/releases"
                       }
                     />
+                  <DownloadButton
+                    title={"Download open.mp launcher"}
+                    tooltip="Download open.mp launcher"
+                    link={"https://github.com/openmultiplayer/launcher/releases"}
+                  />
                   </Box>
                   <DocumentationButton />
                 </Flex>
