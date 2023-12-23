@@ -234,6 +234,11 @@ const Home = () => {
                     link={"https://github.com/openmultiplayer/open.mp/releases"}
                   />
                   <DownloadButton
+                    title={"Download open.mp launcher"}
+                    tooltip="Download open.mp launcher"
+                    link={"https://github.com/openmultiplayer/launcher/releases"}
+                  />
+                  <DownloadButton
                     title={"Download SA-MP client"}
                     tooltip="Download SA-MP client"
                     link={"https://sa-mp.mp/downloads/"}
