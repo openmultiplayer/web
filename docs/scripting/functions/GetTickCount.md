@@ -44,7 +44,7 @@ The difference in values that `GetTickCount` can handle is limited to just under
 new start = GetTickCount();
 // Long code.
 new end = GetTickCount();
-if (start + 2000 < end)
+if (start + 2000 > end)
 {
     // The code took less than two seconds.
 }
@@ -56,7 +56,7 @@ If `start` is very high this code will wrap around and may cause the check to pa
 new start = GetTickCount();
 // Long code.
 new end = GetTickCount();
-if (2000 < end - start)
+if (2000 > end - start)
 {
     // The code took less than two seconds.
 }
