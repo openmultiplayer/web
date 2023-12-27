@@ -1,7 +1,7 @@
 ---
 title: ShowPlayerDialog
 description: Shows the player a synchronous (only one at a time) dialog box.
-tags: ["player"]
+tags: ["player", "dialog"]
 ---
 
 <VersionWarn version='SA-MP 0.3a' />
@@ -81,5 +81,11 @@ Use color embedding for multiple colors in the text. Using -1 as dialogid closes
 
 ## Related Functions
 
+- [GetPlayerDialogID](GetPlayerDialogID): Get the ID of the dialog currently show to the player.
+- [GetPlayerDialogData](GetPlayerDialogData): Get the data of the dialog currently show to the player.
+- [HidePlayerDialog](HidePlayerDialog): Hides the dialog currently show to the player.
 - [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
+
+## Related Callbacks
+
 - [OnDialogResponse](../callbacks/OnDialogResponse): Called when a player responds to a dialog.
