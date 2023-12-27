@@ -1,7 +1,7 @@
 ---
 title: IsPlayerAdmin
 description: Check if a player is logged in as an RCON admin.
-tags: ["administration"]
+tags: ["player", "rcon", "administration"]
 ---
 
 ## Description
@@ -31,6 +31,7 @@ public OnPlayerSpawn(playerid)
 
 ## Related Functions
 
+- [SetPlayerAdmin](SetPlayerAdmin): Sets the player as an RCON admin.
 - [SendRconCommand](SendRconCommand): Sends an RCON command via the script.
 
 ## Related Callbacks
