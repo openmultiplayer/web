@@ -47,6 +47,21 @@ public OnPlayerConnect(playerid)
              MinY
 ```
 
+## Notes
+
+:::tip
+
+This function merely CREATES the gangzone, you must use PlayerGangZoneShow to show it.
+
+:::
+
+:::warning
+
+* There is a limit of 1024 gangzones. 
+* Putting the parameters in the wrong order results in glitchy behavior.
+
+:::
+
 ## Related Functions
 
 - [PlayerGangZoneDestroy](PlayerGangZoneDestroy): Destroy player gangzone.
