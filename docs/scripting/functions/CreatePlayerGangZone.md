@@ -34,6 +34,19 @@ public OnPlayerConnect(playerid)
 }
 ```
 
+```
+                          MaxY
+                          v
+             -------------* < MaxX
+             |            |
+             |  gangzone  |
+             |   center   |
+             |            |
+      MinX > *-------------
+             ^
+             MinY
+```
+
 ## Related Functions
 
 - [PlayerGangZoneDestroy](PlayerGangZoneDestroy): Destroy player gangzone.
