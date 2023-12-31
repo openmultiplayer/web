@@ -10,12 +10,12 @@ Get the position of a gangzone, represented by minX, minY, maxX, maxY coordinate
 
 | Name        | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound            |
-| zoneid      | The ID of the zone to the coordinates of which want to get       |
-| minX        | The X coordinate for the west side of the player gangzone        |
-| minY        | The Y coordinate for the south side of the player gangzone       |
-| maxX        | The X coordinate for the east side of the player gangzone        |
-| maxY        | The Y coordinate for the north side of the player gangzone       |
+| playerid    | The ID of the player to whom player gangzone is bound.           |
+| zoneid      | The ID of the zone to the coordinates of which want to get.      |
+| minX        | The X coordinate for the west side of the player gangzone.       |
+| minY        | The Y coordinate for the south side of the player gangzone.      |
+| maxX        | The X coordinate for the east side of the player gangzone.       |
+| maxY        | The Y coordinate for the north side of the player gangzone.      |
 
 ## Returns
 

@@ -10,9 +10,9 @@ Start player gangzone flash.
 
 | Name        | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound            |
-| zoneid      | The ID of the player gangzone for in start flashing              |
-| flashColour | The colour by which the player gangzone will be flashing         |
+| playerid    | The ID of the player to whom player gangzone is bound.           |
+| zoneid      | The ID of the player gangzone for in start flashing.             |
+| flashColour | The colour by which the player gangzone will be flashing.        |
 
 ## Returns
 

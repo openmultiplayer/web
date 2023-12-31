@@ -10,8 +10,8 @@ Stop player gangzone flash.
 
 | Name        | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound            |
-| zoneid      | The ID of the player gangzone for in stop flashing               |
+| playerid    | The ID of the player to whom player gangzone is bound.           |
+| zoneid      | The ID of the player gangzone for in stop flashing.              |
 
 ## Returns
 

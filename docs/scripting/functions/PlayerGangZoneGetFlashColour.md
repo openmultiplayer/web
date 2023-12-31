@@ -10,8 +10,8 @@ Get the flashing colour of a player gangzone.
 
 | Name        | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound            |
-| zoneid      | The ID of the player gangzone                                    |
+| playerid    | The ID of the player to whom player gangzone is bound.           |
+| zoneid      | The ID of the player gangzone.                                   |
 
 ## Returns
 

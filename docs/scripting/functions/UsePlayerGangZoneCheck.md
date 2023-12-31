@@ -10,8 +10,8 @@ Enables the callback when a player enters this zone.
 
 | Name        | Description                                                                                                      |
 | ----------- | ---------------------------------------------------------------------------------------------------------------- |
-| playerid    | The ID of the player for whom you want to enable callback triggering when the player enters this zone            |
-| zoneid      | The ID of the zone to enable area detection for                                                                  |
+| playerid    | The ID of the player for whom you want to enable callback triggering when the player enters this zone.           |
+| zoneid      | The ID of the zone to enable area detection for.                                                                 |
 | enable      | Should entry detection be started or stopped?                                                                    |
 
 

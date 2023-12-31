@@ -10,8 +10,8 @@ Hide player gangzone.
 
 | Name        | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound            |
-| zoneid      | The ID of the player gangzone for hide                           |
+| playerid    | The ID of the player to whom player gangzone is bound.           |
+| zoneid      | The ID of the player gangzone for hide.                          |
 
 ## Returns
 
