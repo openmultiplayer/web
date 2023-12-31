@@ -41,3 +41,4 @@ The following functions might be useful, as they're related to this callback in 
 
 - [GangZoneCreate](../functions/GangZoneCreate): Create a gangzone (colored radar area).
 - [GangZoneDestroy](../functions/GangZoneDestroy): Destroy a gangzone.
+- [UseGangZoneCheck](../functions/UseGangZoneCheck): Enables the callback when a player entered this zone.
