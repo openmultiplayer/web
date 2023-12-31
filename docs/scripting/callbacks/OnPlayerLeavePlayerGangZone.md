@@ -8,10 +8,10 @@ tags: ["player", "gangzone"]
 
 This callback is called when a player exited a player gangzone.
 
-| Name     | Description                            |
-| -------- | -------------------------------------- |
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
 | playerid | The ID of the player that exited the player gangzone. |
-| zoneid | The ID of the player gangzone the player exited. |
+| zoneid   | The ID of the player gangzone the player exited.      |
 
 ## Returns
 
