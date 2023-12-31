@@ -1,44 +1,49 @@
 ---
-title: CreatePlayerGangZone
-description: Create player gangzone
+title: PlayerGangZoneHide
+description: Hide player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
 ## Description
 
-Create player gangzone. This can be used as a way around the global gangzone limit.
+Hide player gangzone.
 
 | Name        | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom the player gangzone will be created |
-| Float:minX  | The X coordinate for the west side of the player gangzone        |
-| Float:minY  | The Y coordinate for the south side of the player gangzone        |
-| Float:maxX  | The X coordinate for the east side of the player gangzone        |
-| Float:maxY  | The Y coordinate for the north side of the player gangzone        |
+| playerid    | The ID of the player to whom player gangzone is bound            |
+| zoneid      | The ID of the player gangzone for hide                           |
 
 ## Returns
 
-The ID of the created player gangzone, returns -1 if not created
+1: The function executed successfully. Success is reported even if the player gangzone was hide to begin with.
+
+0: The function failed to execute. The gangzone specified does not exist.
 
 ## Examples
 
 ```c
 // This variable is used to store the id of the gangzone
 // so that we can use it throught the script
-new gGangZoneID[MAX_PLAYERS];
+new gGangZoneID[MAX_PLAYERS] = {INVALID_GANG_ZONE, ...};
 
 public OnPlayerConnect(playerid)
 {
     // Create the gangzone
     gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
 }
+
+public OnPlayerDeath(playerid, killerid, reason)
+{
+    if(gGangZoneID[playerid] != INVALID_GANG_ZONE)
+        PlayerGangZoneHide(playerid, gGangZoneID[playerid]);
+}
 ```
 
 ## Related Functions
 
+- [CreatePlayerGangZone](CreatePlayerGangZone): Create player gangzone.
 - [PlayerGangZoneDestroy](PlayerGangZoneDestroy): Destroy player gangzone.
-- [PlayerGangZoneShow](PlayerGangZoneShow): Show player gangzone in a color.
-- [PlayerGangZoneHide](PlayerGangZoneHide): Hide player gangzone.
+- [PlayerGangZoneShow](PlayerGangZoneShow): Show player gangzone.
 - [PlayerGangZoneFlash](PlayerGangZoneFlash): Start player gangzone flash.
 - [PlayerGangZoneStopFlash](PlayerGangZoneStopFlash): Stop player gangzone flash.
 - [PlayerGangZoneGetColour](PlayerGangZoneGetColour): Get the colour of a player gangzone.

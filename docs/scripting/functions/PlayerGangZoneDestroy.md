@@ -1,6 +1,6 @@
 ---
 title: PlayerGangZoneDestroy
-description: Destroy player gangzone.
+description: Destroy player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
@@ -42,7 +42,6 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
     }
     return 1;
 }
-
 ```
 
 ## Related Functions

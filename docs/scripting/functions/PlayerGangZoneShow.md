@@ -1,6 +1,6 @@
 ---
 title: PlayerGangZoneShow
-description: Show player gangzone in a color.
+description: Show player gangzone in a color
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
@@ -12,7 +12,7 @@ Show player gangzone in a color.
 | ----------- | ---------------------------------------------------------------- |
 | playerid    | The ID of the player to whom player gangzone is bound            |
 | zoneid      | The ID of the player gangzone for destroy                        |
-| colour      | The colour by which the player gangzone will be shown             |
+| colour      | The colour by which the player gangzone will be shown            |
 
 ## Returns
 
