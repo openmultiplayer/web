@@ -33,4 +33,4 @@ Check if the player gangzone is flashing.
 - [IsValidPlayerGangZone](IsValidPlayerGangZone): Check if the player gangzone valid.
 - [IsPlayerInPlayerGangZone](IsPlayerInPlayerGangZone): Check if the player in player gangzone.
 - [IsPlayerGangZoneVisible](IsPlayerGangZoneVisible): Check if the player gangzone is visible.
-- [UsePlayerGangZoneCheck](UsePlayerGangZoneCheck): Enables the callback when a player enters this zone.
+- [UsePlayerGangZoneCheck](UsePlayerGangZoneCheck): Enables the callback when a player enters/leaves this zone.

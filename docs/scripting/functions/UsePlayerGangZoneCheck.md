@@ -1,16 +1,16 @@
 ---
 title: UsePlayerGangZoneCheck
-description: Enables the callback when a player enters this zone
+description: Enables the callback when a player enters/leaves this zone
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
 ## Description
 
-Enables the callback when a player enters this zone.
+Enables the callback when a player enters/leaves this zone.
 
 | Name        | Description                                                                                                      |
 | ----------- | ---------------------------------------------------------------------------------------------------------------- |
-| playerid    | The ID of the player for whom you want to enable callback triggering when the player enters this zone.           |
+| playerid    | The ID of the player for whom you want to enable callback triggering when the player enters/leaves this zone.    |
 | zoneid      | The ID of the zone to enable area detection for.                                                                 |
 | enable      | Should entry detection be started or stopped?                                                                    |
 
@@ -33,7 +33,7 @@ public OnPlayerConnect(playerid)
     // Create the gangzone
     gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
 
-    // Enabled the callback when a player enters this zone
+    // Enabled the callback when a player enters/leaves this zone
     UsePlayerGangZoneCheck(playerid, gGangZoneID[playerid], true);
 }
 
@@ -43,6 +43,17 @@ public OnPlayerEnterPlayerGangZone(playerid, zoneid)
     {
         new string[128];
         format(string, sizeof(string), "You are entering player gangzone %i", zoneid);
+        SendClientMessage(playerid, 0xFFFFFFFF, string);
+    }
+    return 1;
+}
+
+public OnPlayerLeavePlayerGangZone(playerid, zoneid)
+{
+    if(gGangZoneID[playerid] == zoneid)
+    {
+        new string[128];
+        format(string, sizeof(string), "You are leaving player gangzone %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
     return 1;
