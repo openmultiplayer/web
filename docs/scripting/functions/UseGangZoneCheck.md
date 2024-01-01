@@ -55,7 +55,16 @@ public OnPlayerLeaveGangZone(playerid, zoneid)
 }
 ```
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this function in one way or another. 
+
+- [OnPlayerEnterGangZone](../callbacks/OnPlayerEnterGangZone): This callback is called when a player enters a gangzone.
+- [OnPlayerLeaveGangZone](../callbacks/OnPlayerLeaveGangZone): This callback is called when a player exited a gangzone.
+
 ## Related Functions
+
+The following functions might be useful, as they're related to this function in one way or another. 
 
 - [GangZoneCreate](GangZoneCreate): Create a gangzone.
 - [GangZoneDestroy](GangZoneDestroy): Destroy a gangzone.
