@@ -51,7 +51,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-This function merely CREATES the gangzone, you must use PlayerGangZoneShow to show it.
+This function merely CREATES the gangzone, you must use [PlayerGangZoneShow](PlayerGangZoneShow) to show it.
 
 :::
 
