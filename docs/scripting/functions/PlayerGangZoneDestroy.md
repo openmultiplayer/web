@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
 public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
     // Check for the existence of gangzone and if it exists, destroy it
-    if(gGangZoneID[playerid] != INVALID_GANG_ZONE)
+    if (IsValidPlayerGangZone(playerid, gGangZoneID[playerid]))
     {
         PlayerGangZoneDestroy(playerid, gGangZoneID[playerid]);
         gGangZoneID[playerid] = INVALID_GANG_ZONE;
