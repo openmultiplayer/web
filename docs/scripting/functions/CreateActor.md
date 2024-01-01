@@ -46,7 +46,7 @@ public OnGameModeExit()
 
 :::tip
 
-Actors are designed to just stand somewhere, for example cashiers and bartenders. They can perform animations (once or looping) using ApplyActorAnimation.
+Actors are designed to just stand somewhere, for example cashiers and bartenders. They can perform animations (once or looping) using [ApplyActorAnimation](ApplyActorAnimation).
 
 :::
 

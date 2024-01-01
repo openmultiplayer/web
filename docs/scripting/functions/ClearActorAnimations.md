@@ -10,9 +10,9 @@ tags: []
 
 Clear any animations applied to an actor.
 
-| Name    | Description                                                                |
-| ------- | -------------------------------------------------------------------------- |
-| actorid | The ID of the actor (returned by CreateActor) to clear the animations for. |
+| Name    | Description                                                                               |
+| ------- | ----------------------------------------------------------------------------------------- |
+| actorid | The ID of the actor (returned by [CreateActor](CreateActor)) to clear the animations for. |
 
 ## Returns
 

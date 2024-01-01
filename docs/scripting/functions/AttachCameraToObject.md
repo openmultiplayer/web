@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-You need to create the object first, before attempting to attach a player camera for that.
+You need to [create](CreateObject) the object first, before attempting to attach a player camera for that.
 
 :::
 

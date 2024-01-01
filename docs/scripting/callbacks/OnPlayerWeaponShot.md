@@ -59,7 +59,7 @@ This callback is only called when [lag compensation](../../server/LagCompensatio
 
 :::warning
 
-Known Bug(s): Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air). It is called as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as BULLET_HIT_TYPE_PLAYER at all. [Click here for a possible fix] Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
+Known Bug(s): Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air). It is called as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as BULLET_HIT_TYPE_PLAYER at all. Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
 
 :::
 

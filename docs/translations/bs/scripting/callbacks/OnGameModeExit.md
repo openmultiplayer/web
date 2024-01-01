@@ -6,7 +6,7 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback se poziva kada se gamemode završava, bilo to preko 'gmx', kada god se server ugasi, ili pod GameModeExit.
+Ovaj callback se poziva kada se gamemode završava, bilo to preko 'gmx', kada god se server ugasi, ili pod [GameModeExit](../functions/GameModeExit).
 
 ## Primjeri
 

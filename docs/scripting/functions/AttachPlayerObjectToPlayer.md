@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-The same as AttachObjectToPlayer but for objects which were created for player.
+The same as [AttachObjectToPlayer](AttachObjectToPlayer) but for objects which were created for player.
 
 | Name          | Description                                                        |
 | ------------- | ------------------------------------------------------------------ |

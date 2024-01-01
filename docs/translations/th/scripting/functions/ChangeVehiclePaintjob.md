@@ -6,12 +6,12 @@ tags: ["vehicle"]
 
 ## คำอธิบาย
 
-Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).
+Change a vehicle's paintjob (for plain colors see [ChangeVehicleColor](ChangeVehicleColor)).
 
-| Name       | Description                                                  |
-| ---------- | ------------------------------------------------------------ |
-| vehicleid  | The ID of the vehicle to change the paintjob of.             |
-| paintjobid | The ID of the Paintjob to apply. Use 3 to remove a paintjob. |
+| Name       | Description                                                                            |
+| ---------- | -------------------------------------------------------------------------------------- |
+| vehicleid  | The ID of the vehicle to change the paintjob of.                                       |
+| paintjobid | The ID of the [paintjob](../resources/paintjobs) to apply. Use 3 to remove a paintjob. |
 
 ## ส่งคืน
 

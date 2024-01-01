@@ -8,7 +8,7 @@ tags: ["player", "camera"]
 
 ## Description
 
-Attaches a player's camera to a player-object. The player is able to move their camera while it is attached to an object. Can be used with MovePlayerObject and AttachPlayerObjectToVehicle.
+Attaches a player's camera to a player-object. The player is able to move their camera while it is attached to an object. Can be used with [MovePlayerObject](MovePlayerObject) and [AttachPlayerObjectToVehicle](AttachPlayerObjectToVehicle).
 
 | Name           | Description                                                                    |
 | -------------- | ------------------------------------------------------------------------------ |
@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-The player-object must be created before attempting to attach the player's camera to it.
+The player-object must be [created](CreatePlayerObject) before attempting to attach the player's camera to it.
 
 :::
 

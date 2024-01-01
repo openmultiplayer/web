@@ -8,14 +8,14 @@ tags: []
 
 Ova funkcija radi u potpunosti isto kao i AddStaticPickup, osim što returna (vraća) ID pickupa koji se može upotrijebiti za njegovo uništavanje nakon čega se može pratiti pomoću OnPlayerPickUpPickup.
 
-| Ime                              | Deskripcija                                                                           |
-| -------------------------------- | ------------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | Model pickupa.                                                                        |
-| [type](../resources/pickuptypes) | Tip pickupa. Određuje kako će pickup reagovati.                                       |
-| Float:X                          | X kordinata za kreirati pickup.                                                       |
-| Float:Y                          | Y kordinata za kreirati pickup.                                                       |
-| Float:Z                          | Z kordinata za kreirati pickup.                                                       |
-| virtualworld                     | ID virtualnog svijeta pickupa. Koristi -1 da bi se pickup prikazao u svim svjetovima. |
+| Ime          | Deskripcija                                                                           |
+| ------------ | ------------------------------------------------------------------------------------- |
+| model        | [Model](../resources/pickupids) pickupa.                                              |
+| type         | [Tip](../resources/pickuptypes) pickupa. Određuje kako će pickup reagovati.           |
+| Float:X      | X kordinata za kreirati pickup.                                                       |
+| Float:Y      | Y kordinata za kreirati pickup.                                                       |
+| Float:Z      | Z kordinata za kreirati pickup.                                                       |
+| virtualworld | ID virtualnog svijeta pickupa. Koristi -1 da bi se pickup prikazao u svim svjetovima. |
 
 ## Returns
 

@@ -34,5 +34,5 @@ bech trodha bydha: ChangeVehicleColor(vehicleid,1,1);
 
 ## Functions tab3in el callback
 
-- [OnVehiclePaintjob](OnVehiclePaintjob): tetcalla wa9teli el player ybadel el paintjob.
+- [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): tetcalla wa9teli el player ybadel el paintjob.
 - [ChangeVehicleColor](ChangeVehicleColor): tbadel el vehicle color.

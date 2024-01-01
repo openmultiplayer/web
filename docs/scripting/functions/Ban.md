@@ -6,7 +6,7 @@ tags: ["administration"]
 
 ## Description
 
-Ban a player who is currently in the server. They will be unable to join the server ever again. The ban will be IP-based, and be saved in the samp.ban file in the server's root directory. BanEx can be used to give a reason for the ban. IP bans can be added/removed using the RCON banip and unbanip commands (SendRconCommand).
+Ban a player who is currently in the server. They will be unable to join the server ever again. The ban will be IP-based, and be saved in the samp.ban file in the server's root directory. [BanEx](BanEx) can be used to give a reason for the ban. IP bans can be added/removed using the RCON banip and unbanip commands ([SendRconCommand](SendRconCommand)).
 
 | Name     | Description                  |
 | -------- | ---------------------------- |
@@ -59,7 +59,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-As of SA-MP 0.3x, any action taken directly before Ban() (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the ban.
+As of SA-MP 0.3x, any action taken directly before Ban() (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the ban.
 
 :::
 

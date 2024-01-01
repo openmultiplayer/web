@@ -10,8 +10,8 @@ Ova funkcija radi isto sto i AddStaticPickup, osim sto vraca ID pickup-a koji mo
 
 | Ime          | Opis                                                                            |
 | ------------ | ------------------------------------------------------------------------------- |
-| model        | Model pickup-a                                                                  |
-| type         | Spawn tip pickup-a                                                              |
+| model        | [Model](../resources/pickupids) pickup-a                                        |
+| type         | Spawn [tip](../resources/pickuptypes) pickup-a                                  |
 | Float:X      | X koordinata gde se pickup kreira                                               |
 | Float:Y      | Y koordinata gde se pickup kreira                                               |
 | Float:Z      | Z koordinata gde se pickup kreira                                               |

@@ -6,7 +6,7 @@ tags: []
 
 ## Wasf
 
-Testa3mel el callback hadha wa9talli el gamemode shuts down (Yetsakar), ki testa3mel gmx wala GameModeExit wala server shuts down normally
+Testa3mel el callback hadha wa9talli el gamemode shuts down (Yetsakar), ki testa3mel gmx wala [GameModeExit](../functions/GameModeExit) wala server shuts down normally
 
 ## Mithal
 

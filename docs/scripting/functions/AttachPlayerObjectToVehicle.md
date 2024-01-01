@@ -45,7 +45,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 :::tip
 
-You need to create the object before attempting to attach it to a vehicle.
+You need to [create](CreatePlayerObject) the object before attempting to attach it to a vehicle.
 
 :::
 

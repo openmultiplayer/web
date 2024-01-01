@@ -8,14 +8,14 @@ tags: []
 
 This function does exactly the same as AddStaticPickup, except it returns a pickup ID which can be used to destroy it afterwards and be tracked using OnPlayerPickUpPickup.
 
-| Name                                | Description                                                                       |
-| ----------------------------------- | --------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | The model of the pickup.                                                          |
-| [type](../resources/pickuptypes) | The pickup type. Determines how the pickup responds when picked up.               |
-| Float:X                             | The X coordinate to create the pickup at.                                         |
-| Float:Y                             | The Y coordinate to create the pickup at.                                         |
-| Float:Z                             | The Z coordinate to create the pickup at.                                         |
-| virtualworld                        | The virtual world ID of the pickup. Use -1 to make the pickup show in all worlds. |
+| Name         | Description                                                                                     |
+| ------------ | ----------------------------------------------------------------------------------------------- |
+| model        | The [model](../resources/pickupids) of the pickup.                                              |
+| type         | The pickup [type](../resources/pickuptypes). Determines how the pickup responds when picked up. |
+| Float:X      | The X coordinate to create the pickup at.                                                       |
+| Float:Y      | The Y coordinate to create the pickup at.                                                       |
+| Float:Z      | The Z coordinate to create the pickup at.                                                       |
+| virtualworld | The virtual world ID of the pickup. Use -1 to make the pickup show in all worlds.               |
 
 ## Returns
 

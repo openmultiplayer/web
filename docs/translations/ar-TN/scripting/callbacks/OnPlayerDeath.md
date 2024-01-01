@@ -70,4 +70,3 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 - [SendDeathMessage](../functions/SendDeathMessage): tab3eth el kill fel kill log eli tal9ah 3al ymin el screen.
 - [SetPlayerHealth](../functions/SetPlayerHealth): ta3ti dam lel player.
-

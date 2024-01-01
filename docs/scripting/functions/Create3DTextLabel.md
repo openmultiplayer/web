@@ -45,7 +45,7 @@ drawdistance seems to be a lot smaller when spectating.
 
 :::tip
 
-Use color embedding for multiple colors in the text.
+Use [color embedding](../resources/colorslist#color-embedding) for multiple colors in the text.
 
 :::
 

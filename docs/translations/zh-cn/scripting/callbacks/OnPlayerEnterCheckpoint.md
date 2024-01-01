@@ -43,7 +43,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): 为玩家创造一个检查点,。
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): 禁用玩家当前的检查点。
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): 检查玩家是否处于检查点。
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): 检查玩家是否处于检查点。
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): 为玩家创造一个比赛检查点。
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): 禁用玩家当前的比赛检查点。
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): 检查玩家是否处于比赛检查点。
