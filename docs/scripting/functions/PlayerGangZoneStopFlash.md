@@ -42,7 +42,10 @@ public OnPlayerDeath(playerid, killerid, reason)
 {
     // Check if gangzone exists and also check if it flashing
     // If true, then stop flashing gangzone
-    if(gGangZoneID[playerid] != INVALID_GANG_ZONE && IsPlayerGangZoneFlashing(playerid, gGangZoneID[playerid]))
+    if (IsValidPlayerGangZone(playerid, gGangZoneID[playerid]) && IsPlayerGangZoneFlashing(playerid, gGangZoneID[playerid]))
+    {
+        PlayerGangZoneStopFlash(playerid, gGangZoneID[playerid]);
+    }
         PlayerGangZoneStopFlash(playerid, gGangZoneID[playerid]);
 }
 ```
