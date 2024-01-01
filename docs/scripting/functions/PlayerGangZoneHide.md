@@ -38,7 +38,6 @@ public OnPlayerDeath(playerid, killerid, reason)
     {
         PlayerGangZoneHide(playerid, gGangZoneID[playerid]);
     }
-        PlayerGangZoneHide(playerid, gGangZoneID[playerid]);
 }
 ```
 
