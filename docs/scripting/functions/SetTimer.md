@@ -47,4 +47,8 @@ Timer intervals are not accurate (roughly 25% off). There are fixes available he
 
 - [SetTimerEx](SetTimerEx): Set a timer with parameters.
 - [KillTimer](KillTimer): Stop a timer.
+- [IsValidTimer](IsValidTimer): Checks if a timer is valid.
+- [IsRepeatingTimer](IsRepeatingTimer): Checks if a timer is set to repeat.
+- [GetTimerInterval](GetTimerInterval): Gets the interval of a timer.
+- [GetTimerRemaining](GetTimerRemaining): Gets the remaining interval of a timer.
 - [CountRunningTimers](CountRunningTimers): Get the running timers.
