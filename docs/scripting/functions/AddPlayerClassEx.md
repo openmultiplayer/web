@@ -6,22 +6,22 @@ tags: ["player", "class"]
 
 ## Description
 
-This function is exactly the same as the AddPlayerClass function, with the addition of a team parameter.
+This function is exactly the same as the [AddPlayerClass](AddPlayerClass) function, with the addition of a team parameter.
 
-| Name          | Description                                                 |
-| ------------- | ----------------------------------------------------------- |
-| teamid        | The team you want the player to spawn in.                   |
-| modelid       | The skin which the player will spawn with.                  |
-| Float:spawn_x | The X coordinate of the class' spawn position.              |
-| Float:spawn_y | The Y coordinate of the class' spawn position.              |
-| Float:spawn_z | The Z coordinate of the class' spawn position.              |
-| Float:z_angle | The direction in which the player will face after spawning. |
-| weapon1       | The first spawn-weapon for the player.                      |
-| weapon1_ammo  | The amount of ammunition for the first spawn weapon.        |
-| weapon2       | The second spawn-weapon for the player.                     |
-| weapon2_ammo  | The amount of ammunition for the second spawn weapon.       |
-| weapon3       | The third spawn-weapon for the player.                      |
-| weapon3_ammo  | The amount of ammunition for the third spawn weapon.        |
+| Name          | Description                                                      |
+| ------------- | ---------------------------------------------------------------- |
+| teamid        | The team you want the player to spawn in.                        |
+| modelid       | The [skin](../resources/skins) which the player will spawn with. |
+| Float:spawn_x | The X coordinate of the class' spawn position.                   |
+| Float:spawn_y | The Y coordinate of the class' spawn position.                   |
+| Float:spawn_z | The Z coordinate of the class' spawn position.                   |
+| Float:z_angle | The direction in which the player will face after spawning.      |
+| weapon1       | The first spawn-weapon for the player.                           |
+| weapon1_ammo  | The amount of ammunition for the first spawn weapon.             |
+| weapon2       | The second spawn-weapon for the player.                          |
+| weapon2_ammo  | The amount of ammunition for the second spawn weapon.            |
+| weapon3       | The third spawn-weapon for the player.                           |
+| weapon3_ammo  | The amount of ammunition for the third spawn weapon.             |
 
 ## Returns
 

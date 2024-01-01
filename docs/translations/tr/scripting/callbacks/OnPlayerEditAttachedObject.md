@@ -95,5 +95,5 @@ Eğer 'response' parametresi 0 (iptal) gelirse objeyi eski haline döndürmek ge
 
 ## Bağlantılı Fonksiyonlar
 
-- [EditAttachedObject](../functions/EditAttachedObject.md): Üzerine takılan objeyi düzenleme.
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Oyuncunun üzerine obje takma.
+- [EditAttachedObject](../functions/EditAttachedObject): Üzerine takılan objeyi düzenleme.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Oyuncunun üzerine obje takma.

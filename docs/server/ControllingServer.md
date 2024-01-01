@@ -190,7 +190,7 @@ These are the functions that you as admin can use:
 | `/rcon playertimeout [limit m/s]` | Change the time in milliseconds until a player timeouts when not sending any packets. (default 1000) |
 | `/rcon language [language]`       | Change the server language (_example: /rcon language English_). Shown in server browser.             |
 
-The above four limits/counts are just made to avoid several tools which can attack any SA-MP server by freezing it or crashing. So, simply, just set them according to your server. The default values are default, if you see any wrong kicks, just increase the values as soon as possible so that the innocent players won't get kicked by it. [Read more here](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47).
+The above four limits/counts are just made to avoid several tools which can attack any SA-MP server by freezing it or crashing. So, simply, just set them according to your server. The default values are default, if you see any wrong kicks, just increase the values as soon as possible so that the innocent players won't get kicked by it. [Read more here](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193).
 
 ### Related Callbacks and Functions
 

@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Açıklama
 
-Bu fonksiyon, desteklenen(../resources/keys) herhangi bir tuşun durumu değiştirildiğinde (basıldığında / bırakıldığında) çağrılır. <br/>Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tetiklemez. 
+Bu fonksiyon, [desteklenen](../resources/keys) herhangi bir tuşun durumu değiştirildiğinde (basıldığında / bırakıldığında) çağrılır. <br/>Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tetiklemez. 
 
 | Parametre | Açıklama                                                                                         |
 | --------- | ------------------------------------------------------------------------------------------------ |
@@ -29,7 +29,7 @@ Bu fonksiyon, NPC tarafından da çağrılabilir.
 
 :::tip
 
-Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tetiklemez. Yalnıza zamanlayıcı (timer) veya [OnPlayerUpdate](../callbacks/OnPlayerUpdate) içerisinde kullanılan [GetPlayerKeys](../functions/GetPlayerKeys) ile tetiklenebilir.
+Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tetiklemez. Yalnıza zamanlayıcı (timer) veya [OnPlayerUpdate](OnPlayerUpdate) içerisinde kullanılan [GetPlayerKeys](../functions/GetPlayerKeys) ile tetiklenebilir.
 
 :::
 

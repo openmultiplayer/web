@@ -48,5 +48,5 @@ Ao criar um ator com CreateActor, você específica a sua posição. Você não 
 
 ## Funções Relacionadas
 
-- [GetActorPos](GetActorPos.md): Obtém a posição de um ator.
-- [CreateActor](CreateActor.md): Cria um ator (NPC fixo).
+- [GetActorPos](GetActorPos): Obtém a posição de um ator.
+- [CreateActor](CreateActor): Cria um ator (NPC fixo).

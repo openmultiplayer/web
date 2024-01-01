@@ -29,7 +29,6 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 
 ```c
 // example code: protect vehicle tires from being popped
-// uses encode_tires function from: http://forum.sa-mp.com/index.php?topic=161491.msg960040#msg960040
  
 public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 {

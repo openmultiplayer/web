@@ -53,7 +53,7 @@ Maaaring maging kapaki-pakinabang ang mga sumusunod na function, dahil nauugnay 
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Gumawa ng checkpoint para sa isang player.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Huwag paganahin ang kasalukuyang checkpoint ng player.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Suriin kung ang isang player ay nasa isang checkpoint.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Suriin kung ang isang player ay nasa isang checkpoint.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Gumawa ng race checkpoint para sa isang player.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): I-disable ang kasalukuyang race checkpoint ng player.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Suriin kung ang isang player ay nasa isang checkpoint ng karera.

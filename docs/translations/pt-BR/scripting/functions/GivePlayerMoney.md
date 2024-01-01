@@ -38,5 +38,5 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Funções Relacionadas
 
-- [ResetPlayerMoney](ResetPlayerMoney.md): Define o dinheiro de um jogador para \$0.
-- [GetPlayerMoney](GetPlayerMoney.md): Verifique quanto dinheiro um jogador tem.
+- [ResetPlayerMoney](ResetPlayerMoney): Define o dinheiro de um jogador para \$0.
+- [GetPlayerMoney](GetPlayerMoney): Verifique quanto dinheiro um jogador tem.

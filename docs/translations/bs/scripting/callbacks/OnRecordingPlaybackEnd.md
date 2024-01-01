@@ -1,6 +1,6 @@
 ---
 title: OnRecordingPlaybackEnd
-description: Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa "NPCStartRecordingPlayback" došao do kraja.
+description: Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa "StartRecordingPlayback" došao do kraja.
 tags: []
 ---
 
@@ -12,7 +12,7 @@ Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa "NPCStartRecordingPlayback" došao do kraja.
+Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa "StartRecordingPlayback" došao do kraja.
 
 ## Primjeri
 
@@ -25,5 +25,5 @@ public OnRecordingPlaybackEnd()
 
 ## Related Functions
 
-- [NPC:StartRecordingPlayback](NPC:StartRecordingPlayback.md): Počinje da reproducita već snimljeni .rec fajl.
-- [NPC:StopRecordingPlayback](NPC:StopRecordingPlayback.md): Prestaje da reproducira .rec fajl.
+- [StartRecordingPlayback](StartRecordingPlayback): Počinje da reproducita već snimljeni .rec fajl.
+- [StopRecordingPlayback](StopRecordingPlayback): Prestaje da reproducira .rec fajl.

@@ -43,4 +43,4 @@ ClearActorAnimations(gMyActor);
 
 ## Srodne Funkcije
 
-- [ApplyActorAnimation](ApplyActorAnimation.md): Postavlja animaciju na actora.
+- [ApplyActorAnimation](ApplyActorAnimation): Postavlja animaciju na actora.

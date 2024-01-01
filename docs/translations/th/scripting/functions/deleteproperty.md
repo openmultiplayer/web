@@ -32,6 +32,6 @@ deleteproperty(0, "", 123984334);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [Setproperty](../../scripting/functions/Setproperty.md): Set a property.
-- [Getproperty](../../scripting/functions/Getproperty.md): Get the value of a property.
-- [Existproperty](../../scripting/functions/Existproperty.md): Check if a property exists.
+- [Setproperty](Setproperty): Set a property.
+- [Getproperty](Getproperty): Get the value of a property.
+- [Existproperty](Existproperty): Check if a property exists.

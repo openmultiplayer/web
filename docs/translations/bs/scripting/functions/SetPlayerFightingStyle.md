@@ -44,4 +44,4 @@ To ne utječe na normalne napade šake - samo na specijalne/sekundarne napade (a
 
 ## Srodne Funkcije
 
-- [GetPlayerFightingStyle](scripting/functions/GetPlayerFightingStyle): Dobij igračev stil borbe.
+- [GetPlayerFightingStyle](GetPlayerFightingStyle): Dobij igračev stil borbe.

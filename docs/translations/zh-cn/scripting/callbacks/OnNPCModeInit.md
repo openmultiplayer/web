@@ -22,4 +22,4 @@ public OnNPCModeInit()
 
 ## 相关回调
 
-- [OnNPCModeExit](../callbacks/OnNPCModeExit): Gets called when a NPC script unloaded.
+- [OnNPCModeExit](OnNPCModeExit): Gets called when a NPC script unloaded.

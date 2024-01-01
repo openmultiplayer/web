@@ -48,8 +48,8 @@ It is the TEXT which will be highlighted when hovered over, NOT the box (if one 
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CancelSelectTextDraw](../functions/CancelSelectTextDraw.md): Cancel textdraw selection with the mouse
-- [TextDrawSetSelectable](../functions/TextDrawSetSelectable.md): Sets whether a textdraw is selectable through SelectTextDraw
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md): Sets whether a player-textdraw is selectable through SelectTextDraw
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
+- [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
+- [TextDrawSetSelectable](TextDrawSetSelectable): Sets whether a textdraw is selectable through SelectTextDraw
+- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): Sets whether a player-textdraw is selectable through SelectTextDraw
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

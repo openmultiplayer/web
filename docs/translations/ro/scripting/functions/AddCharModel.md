@@ -55,4 +55,4 @@ useartwork trebuie activat mai întâi în setările serverului pentru ca acest 
 
 ## Funcții relative
 
-- [SetPlayerSkin](SetPlayerSkin.md): Setează skinul unui jucător.
+- [SetPlayerSkin](SetPlayerSkin): Setează skinul unui jucător.

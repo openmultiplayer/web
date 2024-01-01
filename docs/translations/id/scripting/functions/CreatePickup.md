@@ -8,14 +8,14 @@ tags: []
 
 Fungsi ini melakukan sama persis dengan AddStaticPickup, kecuali ia mengembalikan ID pengembalian yang dapat digunakan untuk menghancurkannya setelah itu dilacak menggunakan OnPlayerPickUpPickup.
 
-| Nama                                | Deskripsi                                                                       |
-| ----------------------------------- | --------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | Model dari pickup                                                          |
-| [type](../resources/pickuptypes) | Tipe pickup. Menentukan bagaimana pickup merespon saat diambil.               |
-| Float:X                             | Membuat pickup di kordinat X.                                         |
-| Float:Y                             | Membuat pickup di kordinat Y.                                         |
-| Float:Z                             | Membuat pickup di kordinat Y                                         |
-| virtualworld                        | Virtual World dari pickup. Gunakan -1 untuk membuat pickup di seluruh Virtual World |
+| Nama         | Deskripsi                                                                       |
+| ------------ | --------------------------------------------------------------------------------- |
+| model        | [Model](../resources/pickupids) dari pickup                                         |
+| type         | [Tipe](../resources/pickuptypes) pickup. Menentukan bagaimana pickup merespon saat diambil. |
+| Float:X      | Membuat pickup di kordinat X.                                         |
+| Float:Y      | Membuat pickup di kordinat Y.                                         |
+| Float:Z      | Membuat pickup di kordinat Y                                         |
+| virtualworld | Virtual World dari pickup. Gunakan -1 untuk membuat pickup di seluruh Virtual World |
 
 ## Returns
 

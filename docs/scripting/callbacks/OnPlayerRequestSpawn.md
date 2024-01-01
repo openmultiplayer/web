@@ -36,7 +36,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-To prevent players from spawning with certain classes, the last viewed class must be saved in a variable in OnPlayerRequestClass.
+To prevent players from spawning with certain classes, the last viewed class must be saved in a variable in [OnPlayerRequestClass](OnPlayerRequestClass).
 
 :::
 

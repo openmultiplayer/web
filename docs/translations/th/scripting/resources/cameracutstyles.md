@@ -4,7 +4,7 @@ title: Camera Cut Styles
 
 ## คำอธิบาย
 
-Camera Cut Styles to be used with [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt), [InterpolateCameraPos](../functions/InterpolateCameraPos.md) and [InterpolateCameraLookAt](../functions/InterpolateCameraLookAt.md).
+Camera Cut Styles to be used with [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt), [InterpolateCameraPos](../functions/InterpolateCameraPos) and [InterpolateCameraLookAt](../functions/InterpolateCameraLookAt).
 
 ## Cut Styles
 

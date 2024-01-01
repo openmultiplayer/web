@@ -1,6 +1,6 @@
 ---
 title: OnRecordingPlaybackEnd
-description: Essa callback é executada quando uma gravação de NPC reproduzida com a função NPCStartRecordingPlayback finaliza sua reprodução.
+description: Essa callback é executada quando uma gravação de NPC reproduzida com a função StartRecordingPlayback finaliza sua reprodução.
 tags: []
 ---
 
@@ -8,7 +8,7 @@ tags: []
 
 ## Descrição
 
-Essa callback é executada quando uma gravação de NPC reproduzida com a função NPCStartRecordingPlayback finaliza sua reprodução.
+Essa callback é executada quando uma gravação de NPC reproduzida com a função StartRecordingPlayback finaliza sua reprodução.
 
 ## Exemplos
 

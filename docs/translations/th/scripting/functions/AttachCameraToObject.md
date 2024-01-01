@@ -49,4 +49,4 @@ You need to create the object first, before attempting to attach a player camera
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [AttachCameraToPlayerObject](../../scripting/functions/AttachCameraToPlayerObjecy.md): Attaches the player's camera to a player object.
+- [AttachCameraToPlayerObject](AttachCameraToPlayerObjecy): Attaches the player's camera to a player object.

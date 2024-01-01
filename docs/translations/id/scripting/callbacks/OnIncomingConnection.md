@@ -40,5 +40,5 @@ public OnIncomingConnection(playerid, ip_address[], port)
 
 ## Fungsi Terkait
 
-- [BlockIpAddress](../functions/BlockIpAddress.md): Blokir sebuah IP Address untuk mengkoneksi kedalam server dalam waktu yang ditentukan.
-- [UnBlockIpAddress](../functions/UnBlockIpAddress.md): Membuka Blokir sebuah IP Address yang sebelumnya di blokir.
+- [BlockIpAddress](../functions/BlockIpAddress): Blokir sebuah IP Address untuk mengkoneksi kedalam server dalam waktu yang ditentukan.
+- [UnBlockIpAddress](../functions/UnBlockIpAddress): Membuka Blokir sebuah IP Address yang sebelumnya di blokir.

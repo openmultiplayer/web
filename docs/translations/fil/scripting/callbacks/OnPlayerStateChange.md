@@ -42,7 +42,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 Maaaring maging kapaki-pakinabang ang mga sumusunod na callback, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa.
 
-- [OnPlayerInteriorChange](./OnPlayerInteriorChange): Tinatawag ang callback na ito kapag nagpalit ng interior ang isang player.
+- [OnPlayerInteriorChange](OnPlayerInteriorChange): Tinatawag ang callback na ito kapag nagpalit ng interior ang isang player.
 
 ## Mga Kaugnay na Functions
 

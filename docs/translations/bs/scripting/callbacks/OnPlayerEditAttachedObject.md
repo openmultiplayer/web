@@ -95,5 +95,5 @@ Izdanja treba odbaciti ako je odgovor bio '0' (otkazan). To se mora učiniti spr
 
 ## Srodne Funkcije
 
-- [EditAttachedObject](../functions/EditAttachedObject.md): Uredi prikvačeni objekat.
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Prikvači objekat za igrača.
+- [EditAttachedObject](../functions/EditAttachedObject): Uredi prikvačeni objekat.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Prikvači objekat za igrača.

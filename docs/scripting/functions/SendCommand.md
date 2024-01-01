@@ -33,4 +33,4 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [SendChat](../functions/SendChat): Sends a text as the NPC.
+- [SendChat](SendChat): Sends a text as the NPC.

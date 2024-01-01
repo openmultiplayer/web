@@ -8,7 +8,7 @@ Le plus souvent, il s'agit d'une erreur dans votre fichier server.cfg ou de votr
 
 ## Le serveur ne fonctionne pas - le pare-feu est désactivé
 
-Vous devrez rediriger vos ports pour permettre aux joueurs de rejoindre votre serveur. Vous pouvez rediriger vos ports à l'aide du vérificateur de ports PF. Téléchargez-le sur : www.portforward.com Si les ports ne sont pas redirigés, cela signifie que vous devez les ouvrir dans votre routeur. Vous pouvez consulter la liste des routeurs sur [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm "http://portforward .com/english/routers/port_forwarding/routerindex.htm")
+Vous devrez rediriger vos ports pour permettre aux joueurs de rejoindre votre serveur. Vous pouvez rediriger vos ports à l'aide du vérificateur de ports PF. Téléchargez-le sur : www.portforward.com Si les ports ne sont pas redirigés, cela signifie que vous devez les ouvrir dans votre routeur. Vous pouvez consulter la liste des routeurs sur [https://portforward.com/router.htm](https://portforward.com/router.htm "https://portforward.com/router.htm")
 
 Il contient toutes les informations sur la façon de transférer les ports.
 
@@ -62,7 +62,7 @@ Avertissement : Trop de messages dans le désordre du joueur <ip> :<port> (<co
 
 Se produit lorsque les "messages hors service" réutilisent le paramètre messageholelimit.
 
-Pour plus d'informations à ce sujet, consultez [ceci](https://open.mp/docs/server/ControllingServer#RCON_Commands)
+Pour plus d'informations à ce sujet, consultez [ceci](ControllingServer#commandes-rcon)
 
 ## Les joueurs obtiennent constamment l'erreur "Unacceptable NickName" mais elle est valide
 

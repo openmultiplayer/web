@@ -44,7 +44,7 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 :::tip
 
-This callback is only called when lag compensation is enabled. If hittype is:
+This callback is only called when [lag compensation](../../server/LagCompensation) is enabled. If [hittype](../resources/bullethittypes) is:
 
 - BULLET_HIT_TYPE_NONE: the fX, fY and fZ parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
 - Others: the fX, fY and fZ are offsets relative to the hitid.
@@ -53,13 +53,13 @@ This callback is only called when lag compensation is enabled. If hittype is:
 
 :::tip
 
-GetPlayerLastShotVectors can be used in this callback for more detailed bullet vector information.
+[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) can be used in this callback for more detailed bullet vector information.
 
 :::
 
 :::warning
 
-Known Bug(s): Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air). It is called as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as BULLET_HIT_TYPE_PLAYER at all. [Click here for a possible fix] Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
+Known Bug(s): Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air). It is called as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as BULLET_HIT_TYPE_PLAYER at all. Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
 
 :::
 

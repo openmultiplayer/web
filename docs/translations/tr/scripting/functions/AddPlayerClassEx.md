@@ -53,7 +53,7 @@ Maksimum sınıf kimliği 319'dir (0'dan başlayarak toplam 320 sınıf). Bu sı
 
 ## İlgili Fonksiyonlar
 
-- [AddPlayerClass](AddPlayerClass.md): Sınıf ekleyin.
-- [SetSpawnInfo](SetSpawnInfo.md): Bir oyuncunun doğma ayarını yapın.
-- [SetPlayerTeam](SetPlayerTeam.md): Bir oyuncunun takımını belirleyin.
-- [SetPlayerSkin](SetPlayerSkin.md): Bir oyuncunun cildini ayarlayın.
+- [AddPlayerClass](AddPlayerClass): Sınıf ekleyin.
+- [SetSpawnInfo](SetSpawnInfo): Bir oyuncunun doğma ayarını yapın.
+- [SetPlayerTeam](SetPlayerTeam): Bir oyuncunun takımını belirleyin.
+- [SetPlayerSkin](SetPlayerSkin): Bir oyuncunun cildini ayarlayın.

@@ -14,12 +14,12 @@ Le client SA:MP réserve parfois quelques surprises à ses utilisateurs, tantôt
 San Andreas Multiplayer n'est **pas** un programme indépendant du solo de GTA San Andreas. C'est un multijoueur qui ajoute plusieurs fonctionnalités à GTA San Andreas, il faut donc que vous ayez GTA:SA sur votre ordinateur.
 
 Il faut également que votre jeu soit en version **EU/US v1.0**, les autres versions comme la v2.0 ou celle de Steam et Direct2Drive ne sont pas compatibles.
-[Cliquez ici pour télécharger le patch du _downgrade_ de GTA:SA en version 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+[Cliquez ici pour télécharger le patch du _downgrade_ de GTA:SA en version 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 
 ### Je ne vois aucun serveur sur le launcher
 
-Tout d'abord, assurez-vous de suivre le [guide prescrit](https://team.sa-mp.com/wiki/Getting_Started) par SA:MP. Si, en dépit du fait d'avoir suivi ce guide à la lettre, vous ne voyez toujours aucun serveur, vous devez autoriser SA:MP sur votre pare-feu.
+Tout d'abord, assurez-vous de suivre le [guide prescrit](https://sampwiki.blast.hk/wiki/Getting_Started) par SA:MP. Si, en dépit du fait d'avoir suivi ce guide à la lettre, vous ne voyez toujours aucun serveur, vous devez autoriser SA:MP sur votre pare-feu.
 
 Aucun support ne peut être fourni relativement à votre pare-feu tant il y en a.
 
@@ -36,7 +36,7 @@ SA: MP devrait se charger tout seul et ne pas présenter ces options. Si vous vo
 
 Le solo peut charger pour deux raisons :
 
-1. Vous avez installer SA:MP dans le mauvais fichier ou vous avez une mauvaise version de jeu. Cliquez [ici](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) pour télécharger le patch.
+1. Vous avez installer SA:MP dans le mauvais fichier ou vous avez une mauvaise version de jeu. Cliquez [ici](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) pour télécharger le patch.
 
 2. Parfois, le menu du solo peut apparaître, alors même que SA:MP a été chargé correctement. Il suffit de sélectionner une option du menu et cliquez sur la touche echap pour revenir en arrière. Le problème devrait être réglé.
 
@@ -72,7 +72,7 @@ Si vous avez deux écrans, 3 solutions s'offrent à vous :
  
 ### Ma souris ne marche plus après avoir quitté le menu echap
 
-Si votre souris semble être, totalement ou partiellement, figée alors qu'elle fonctionne dans le menu pause, vous devriez désactiver l'option _multicore_ [sa-mp.cfg](/web/20190421141207/https://wiki.sa-mp.com/wiki/Sa-mp.cfg "Sa-mp.cfg") (valeur à mettre : 0). Ou alors spammmez la touche ECHAP jusqu'à ce que votre souris refonctionne.
+Si votre souris semble être, totalement ou partiellement, figée alors qu'elle fonctionne dans le menu pause, vous devriez désactiver l'option _multicore_ [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "sa-mp.cfg") (valeur à mettre : 0). Ou alors spammmez la touche ECHAP jusqu'à ce que votre souris refonctionne.
 
 ### Le fichier dinput8.dll est manquant
 

@@ -35,6 +35,6 @@ stock Float:GetDistanceBetweenPoints(Float:x1, Float:y1, Float:z1, Float:x2, Flo
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetPlayerDistanceFromPoint](../functions/GetPlayerDistanceFromPoint.md): Get the distance between a player and a point.
-- [GetVehicleDistanceFromPoint](../functions/GetVehicleDistanceFromPoint.md): Get the distance between a vehicle and a point.
-- [floatsqroot](../functions/floatsqroot.md): Calculate the square root of a floating point value.
+- [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint): Get the distance between a player and a point.
+- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint): Get the distance between a vehicle and a point.
+- [floatsqroot](floatsqroot): Calculate the square root of a floating point value.

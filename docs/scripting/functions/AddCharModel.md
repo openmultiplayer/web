@@ -10,12 +10,12 @@ tags: []
 
 Adds a new custom character model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
 
-| Name    | Description                                                                                                    |
-| ------- | -------------------------------------------------------------------------------------------------------------- |
-| baseid  | The base skin model ID to use (behavior of the character & original character to use when download is failed). |
-| newid   | The new skin model ID ranged from 20000 to 30000 (10000 slots) to be used later with SetPlayerSkin             |
-| dffname | Name of the .dff model collision file located in models server folder by default (artpath setting).            |
-| txdname | Name of the .txd model texture file located in models server folder by default (artpath setting).              |
+| Name    | Description                                                                                                                                  |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| baseid  | The base [skin model ID](../resources/skins) to use (behavior of the character & original character to use when download is failed).         |
+| newid   | The new skin model ID ranged from 20000 to 30000 (10000 slots) to be used later with [SetPlayerSkin](SetPlayerSkin).                         |
+| dffname | Name of the .dff model collision file located in models server folder by default ([artpath setting](../../server/server.cfg#custom-models)). |
+| txdname | Name of the .txd model texture file located in models server folder by default ([artpath setting](../../server/server.cfg#custom-models)).   |
 
 ## Returns
 
@@ -49,7 +49,7 @@ useartwork must be enabled first in server settings in order for this to work
 
 :::warning
 
-There are currently no restrictions on when you can call this function, but be aware that if you do not call them inside OnFilterScriptInit/OnGameModeInit, you run the risk that some players, who are already on the server, may not have downloaded the models.
+There are currently no restrictions on when you can call this function, but be aware that if you do not call them inside [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), you run the risk that some players, who are already on the server, may not have downloaded the models.
 
 :::
 

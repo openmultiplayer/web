@@ -6,7 +6,7 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback se poziva kada se gamemode završava, bilo to preko 'gmx', kada god se server ugasi, ili pod GameModeExit.
+Ovaj callback se poziva kada se gamemode završava, bilo to preko 'gmx', kada god se server ugasi, ili pod [GameModeExit](../functions/GameModeExit).
 
 ## Primjeri
 
@@ -28,4 +28,4 @@ Ova funkcija također može biti korištena unutar filterskripte da detektuje uk
 
 ## Srodne funkcije
 
-- [GameModeExit](../functions/GameModeExit.md): Ugasi trenutni GameMode.
+- [GameModeExit](../functions/GameModeExit): Ugasi trenutni GameMode.

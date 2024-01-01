@@ -48,5 +48,5 @@ Nevažeća biblioteka (library) animacije će crashovati igračevu igru.
 
 ## Srodne Funkcije
 
-- [ClearAnimations](ClearAnimations.md): Očisti sve animacije koje igrač izvodi.
-- [SetPlayerSpecialAction](SetPlayerSpecialAction.md): Postavi igraču specijalnu radnju/akciju.
+- [ClearAnimations](ClearAnimations): Očisti sve animacije koje igrač izvodi.
+- [SetPlayerSpecialAction](SetPlayerSpecialAction): Postavi igraču specijalnu radnju/akciju.

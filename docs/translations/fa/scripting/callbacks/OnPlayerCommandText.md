@@ -51,5 +51,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## تابع های مرتبط
 
 
-- [SendRconCommand](../functions/SendRconCommand.md): یک  دستور RCON را از طریق اسکریپت ارسال میکند.
+- [SendRconCommand](../functions/SendRconCommand): یک  دستور RCON را از طریق اسکریپت ارسال میکند.
 </div>

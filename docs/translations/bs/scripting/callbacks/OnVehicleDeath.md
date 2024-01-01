@@ -39,4 +39,4 @@ Ovaj callbak će također biti pozvan kada vozilo uđe u vodu, ali vozilo može 
 
 ## Srodne Funkcije
 
-- [SetVehicleHealth](../functions/SetVehicleHealth.md): Postavi healthe vozila.
+- [SetVehicleHealth](../functions/SetVehicleHealth): Postavi healthe vozila.

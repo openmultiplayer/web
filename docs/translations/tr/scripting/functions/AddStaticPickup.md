@@ -8,14 +8,14 @@ tags: []
 
 Bu işlev oyuna "statik" bir toplama ekler. Bu manyetikler, komut dosyası yazmadan çalışabilme özelliği ile silah, sağlık, zırh vb. destekler (silah / sağlık / zırh otomatik olarak verilecektir).
 
-| İsim                                | Açıklama                                                                                               |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [model](../resources/pickupids.md)  | pickup modeli.                                                                                         |
-| [type](../resources/pickuptypes.md) | Kaldırma mekanizması tipi. Toplayıcının pickup'a nasıl tepki vereceğini belirler.                      |
-| Float:X                             | pickup mekanizmasını oluşturmak için X koordinatı.                                                     |
-| Float:Y                             | pickup mekanizmasını oluşturmak için Y koordinatı.                                                     |
-| Float:Z                             | pickup mekanizmasını oluşturmak için Z koordinatı.                                                     |
-| virtualworld                        | Toplanma sağlayacak sanal dünya kimliği. Dünyalarda teslim alma özelliğini göstermek için -1 kullanın. |
+| İsim         | Açıklama                                                                                                      |
+| ------------ | ------------------------------------------------------------------------------------------------------------- |
+| model        | pickup [modeli](../resources/pickupids).                                                                      |
+| type         | Kaldırma mekanizması [tipi](../resources/pickuptypes). Toplayıcının pickup'a nasıl tepki vereceğini belirler. |
+| Float:X      | pickup mekanizmasını oluşturmak için X koordinatı.                                                            |
+| Float:Y      | pickup mekanizmasını oluşturmak için Y koordinatı.                                                            |
+| Float:Z      | pickup mekanizmasını oluşturmak için Z koordinatı.                                                            |
+| virtualworld | Toplanma sağlayacak sanal dünya kimliği. Dünyalarda teslim alma özelliğini göstermek için -1 kullanın.        |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -48,6 +48,6 @@ Bu işlev, OnPlayerPickUpPickup gibi kullanabileceğiniz bir pickup kimliği get
 
 ## İlgili Fonksiyonlar
 
-- [CreatePickup](CreatePickup.md): Pickup oluşturun.
-- [DestroyPickup](DestroyPickup.md): Pickup yok edin.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Oyuncu bir pickup aldığında çağrılır.
+- [CreatePickup](CreatePickup): Pickup oluşturun.
+- [DestroyPickup](DestroyPickup): Pickup yok edin.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Oyuncu bir pickup aldığında çağrılır.

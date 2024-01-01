@@ -5,9 +5,9 @@ description: Get the playerid of the person driving the vehicle.
 
 :::warning
 
-This function requires the Open Multiplayer server software. You can get that [here](https://github.com/openmultiplayer/server-beta)
+This function requires the Open Multiplayer server software. You can get that [here](https://github.com/openmultiplayer/open.mp)
 
-This function requires `omp.inc` provided by the Open Multiplayer server software. You can get that [here](https://github.com/openmultiplayer/server-beta/blob/master/omp.inc)
+This function requires `omp-stdlib` provided by the Open Multiplayer server software. You can get that [here](https://github.com/openmultiplayer/omp-stdlib)
 
 :::
 

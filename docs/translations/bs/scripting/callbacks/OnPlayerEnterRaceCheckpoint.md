@@ -34,9 +34,9 @@ Ovaj callback pozvat će i NPC.
 
 ## Srodne Funkcije
 
-- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint.md): Kreiraj checkpoint za igrača.
-- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint.md): Onesposobi igračev trenutni checkpoint.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint.md): Provjeri da li je igrač u checkpointu.
-- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint.md): Kreiraj trkački checkpoint.
-- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint.md): Onesposobi igračev trenutni trkački checkpoint.
-- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint.md): Provjeri da li je igrač u trkačkom checkpointu.
+- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Kreiraj checkpoint za igrača.
+- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Onesposobi igračev trenutni checkpoint.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Provjeri da li je igrač u checkpointu.
+- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Kreiraj trkački checkpoint.
+- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Onesposobi igračev trenutni trkački checkpoint.
+- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Provjeri da li je igrač u trkačkom checkpointu.

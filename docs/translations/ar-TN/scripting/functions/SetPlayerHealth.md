@@ -56,6 +56,6 @@ el health maynejm ykoun ken 3dad kemel ma3neha ki t7ot 50,15 bch yet3ada 50
 
 ## Functions teb3in el callback
 
--[GetPlayerHealth](GetPlayerHealth.md): tchouf 9adech el player 3andou hp 
--[GetPlayerArmour](GetPlayerArmour.md): tchouf 9adech el player 3andou armour.
--[SetPlayerArmour](SetPlayerArmour.md): Ta3ti Armour lel player.
+-[GetPlayerHealth](GetPlayerHealth): tchouf 9adech el player 3andou hp 
+-[GetPlayerArmour](GetPlayerArmour): tchouf 9adech el player 3andou armour.
+-[SetPlayerArmour](SetPlayerArmour): Ta3ti Armour lel player.

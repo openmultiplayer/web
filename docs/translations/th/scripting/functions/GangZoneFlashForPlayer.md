@@ -38,12 +38,12 @@ public OnPlayerSpawn(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GangZoneCreate](../functions/GangZoneCreate): Create a gangzone.
-- [GangZoneDestroy](../functions/GangZoneDestroy): Destroy a gangzone.
-- [GangZoneShowForPlayer](../functions/GangZoneShowForPlayer): Show a gangzone for a player.
-- [GangZoneShowForAll](../functions/GangZoneShowForAll): Show a gangzone for all players.
-- [GangZoneHideForPlayer](../functions/GangZoneHideForPlayer): Hide a gangzone for a player.
-- [GangZoneHideForAll](../functions/GangZoneHideForAll): Hide a gangzone for all players.
-- [GangZoneFlashForAll](../functions/GangZoneFlashForAll): Make a gangzone flash for all players.
-- [GangZoneStopFlashForPlayer](../functions/GangZoneStopFlashForPlayer): Stop a gangzone flashing for a player.
-- [GangZoneStopFlashForAll](../functions/GangZoneStopFlashForAll): Stop a gangzone flashing for all players.
+- [GangZoneCreate](GangZoneCreate): Create a gangzone.
+- [GangZoneDestroy](GangZoneDestroy): Destroy a gangzone.
+- [GangZoneShowForPlayer](GangZoneShowForPlayer): Show a gangzone for a player.
+- [GangZoneShowForAll](GangZoneShowForAll): Show a gangzone for all players.
+- [GangZoneHideForPlayer](GangZoneHideForPlayer): Hide a gangzone for a player.
+- [GangZoneHideForAll](GangZoneHideForAll): Hide a gangzone for all players.
+- [GangZoneFlashForAll](GangZoneFlashForAll): Make a gangzone flash for all players.
+- [GangZoneStopFlashForPlayer](GangZoneStopFlashForPlayer): Stop a gangzone flashing for a player.
+- [GangZoneStopFlashForAll](GangZoneStopFlashForAll): Stop a gangzone flashing for all players.

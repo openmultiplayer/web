@@ -33,7 +33,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-Not called if the player falls off a bike or is removed from a vehicle by other means such as using SetPlayerPos. You must use OnPlayerStateChange and check if their old state is PLAYER_STATE_DRIVER or PLAYER_STATE_PASSENGER and their new state is PLAYER_STATE_ONFOOT.
+Not called if the player falls off a bike or is removed from a vehicle by other means such as using [SetPlayerPos](../functions/SetPlayerPos). You must use [OnPlayerStateChange](OnPlayerStateChange) and check if their old state is PLAYER_STATE_DRIVER or PLAYER_STATE_PASSENGER and their new state is PLAYER_STATE_ONFOOT.
 
 :::
 

@@ -33,6 +33,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [Floatsub](Floatsub): Nag su-subtract ng dalawang floats.
-- [Floatmul](Floatmul): Nag mu-multiply ng dalawang floats.
-- [Floatdiv](Floatdiv): Nag di-dive ng isang float sa isa pa.
+- [floatsub](floatsub): Nag su-subtract ng dalawang floats.
+- [floatmul](floatmul): Nag mu-multiply ng dalawang floats.
+- [floatdiv](floatdiv): Nag di-dive ng isang float sa isa pa.

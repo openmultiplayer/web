@@ -8,11 +8,11 @@ title: Masalah Umum
 
 ### Saya mendapatkan error "San Andreas cannot be found"
 
-San Andreas Multi-player **bukan** program stand-alone! Program ini menambahkan fungsi multi-player ke San Andreas, dan maka dari itu Anda membutuhkan GTA San Andreas untuk PC - membutuhkan versi **EU/US v1.0**, versi lain, seperti v2.0 atau Steam dan Direct2Drive tidak akan bekerja [Klik di sini untuk mengunduh sebuah patch untuk downgrade GTA:SA Anda ke versi 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multi-player **bukan** program stand-alone! Program ini menambahkan fungsi multi-player ke San Andreas, dan maka dari itu Anda membutuhkan GTA San Andreas untuk PC - membutuhkan versi **EU/US v1.0**, versi lain, seperti v2.0 atau Steam dan Direct2Drive tidak akan bekerja [Klik di sini untuk mengunduh sebuah patch untuk downgrade GTA:SA Anda ke versi 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### Saya tidak bisa lihat server apapun di penjelajah SA-MP
 
-Pertama, pastikan Anda telah mengikuti prosedur di [Panduan cepat](https://team.sa-mp.com/wiki/Getting_Started). Jika Anda telah mengikut instruksinya dan tidak bisa melihat server apapun, Anda harus mengijinkan akses SA-MP melalui firewall Anda. Sayangnya, dikarenakan besarnya jumlah aplikasi firewall yang tersedia, kami tidak bisa menawarkan bantuan lebih lanjut - kami sarankan untuk mengunjungi situs jaringan manufaktur atau coba melakukan pencarian di Google. Dan juga pastikan Anda telah menggunakan versi SA:MP terbaru.
+Pertama, pastikan Anda telah mengikuti prosedur di [Panduan cepat](https://sampwiki.blast.hk/wiki/Getting_Started). Jika Anda telah mengikut instruksinya dan tidak bisa melihat server apapun, Anda harus mengijinkan akses SA-MP melalui firewall Anda. Sayangnya, dikarenakan besarnya jumlah aplikasi firewall yang tersedia, kami tidak bisa menawarkan bantuan lebih lanjut - kami sarankan untuk mengunjungi situs jaringan manufaktur atau coba melakukan pencarian di Google. Dan juga pastikan Anda telah menggunakan versi SA:MP terbaru.
 
 ### Hanya memuat Single Player, bukan memuat SA-MP
 
@@ -22,7 +22,7 @@ Anda seharusnya tidak melihat opsi single player (new game, load game, dll.) - S
 
 :::
 
-Single player bisa dimuat dengan 2 alasan - Anda memasang SA:MP ke folder yang salah atau Anda memiliki versi San Andreas yang salah. Jika Anda memiliki versi yang salah, ini mudah untuk diperbaiki. Klik [di sini](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) untuk mengunduh downgrade patch.
+Single player bisa dimuat dengan 2 alasan - Anda memasang SA:MP ke folder yang salah atau Anda memiliki versi San Andreas yang salah. Jika Anda memiliki versi yang salah, ini mudah untuk diperbaiki. Klik [di sini](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) untuk mengunduh downgrade patch.
 
 Terkadang menu single-player akan muncul, namun SA:MP akan dimuat dengan baik. Untuk memperbaiki ini, Anda cukup memilih item di menu, lalu tekan ESC hingga keluar, kemudian SA:MP akan termuat.
 
@@ -32,7 +32,7 @@ Pastikan Anda tidak menggunakan karakter yang tidak diperboleh di nama Anda (han
 
 ### Menyangkut di "Connecting to ip:port..."
 
-Server bisa jadi sedang offline, atau Anda tidak dapat terhubung ke server, matikan firewall Anda dan periksa kembali. Jika tetap tidak bisa, Anda harus mengatur firewall Anda dengan baik - jelajahi situr jaringannya dan cari tau caranya. Hal ini dapat terjadi di versi lawas SA-MP, unduh versi terbaru dari [halaman unduh SA-MP](http://sa-mp.com/download.php).
+Server bisa jadi sedang offline, atau Anda tidak dapat terhubung ke server, matikan firewall Anda dan periksa kembali. Jika tetap tidak bisa, Anda harus mengatur firewall Anda dengan baik - jelajahi situr jaringannya dan cari tau caranya. Hal ini dapat terjadi di versi lawas SA-MP, unduh versi terbaru dari [halaman unduh SA-MP](https://sa-mp.mp/downloads/).
 
 ### Saya memiliki GTA San Andreas yang telah dimodifikasi dan SA:MP tidak mau termuat
 
@@ -52,7 +52,7 @@ Jika Anda memiliki 2 monitor, maka ada 3 cara untuk menyelesaikan permasalahan i
 
 ### Mouse saya tidak bekerja setelah keluar dari menu pause
 
-Jika mouse Anda tidak bisa bergerak di dalam game dan bekerja sebagian di menu pause, maka Anda seharusnya mematikan opsi multicore [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (atur menjadi 0). Menekan Escape secara terus-menerus hingga mouse bergerak mungkin bisa dengan cara ini, namun ini bukan solusi yang cerdik.
+Jika mouse Anda tidak bisa bergerak di dalam game dan bekerja sebagian di menu pause, maka Anda seharusnya mematikan opsi multicore [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "sa-mp.cfg") (atur menjadi 0). Menekan Escape secara terus-menerus hingga mouse bergerak mungkin bisa dengan cara ini, namun ini bukan solusi yang cerdik.
 
 ### File dinput8.dll menghilang
 

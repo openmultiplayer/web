@@ -54,8 +54,8 @@ ID menija nije proslijeđen ovom callbacku. GetPlayerMenu se mora koristiti kako
 
 ## Srodne Funkcije
 
-- [CreateMenu](../functions/CreateMenu.md): Kreiraj meni.
-- [DestroyMenu](../functions/DestroyMenu.md): Uništi meni.
-- [AddMenuItem](../functions/AddMenuItem.md): Dodaj stavku u određeni meni.
-- [ShowMenuForPlayer](../functions/ShowMenuForPlayer.md): Prikaži meni igraču.
-- [HideMenuForPlayer](../functions/HideMenuForPlayer.md): Sakrij meni za igrača.
+- [CreateMenu](../functions/CreateMenu): Kreiraj meni.
+- [DestroyMenu](../functions/DestroyMenu): Uništi meni.
+- [AddMenuItem](../functions/AddMenuItem): Dodaj stavku u određeni meni.
+- [ShowMenuForPlayer](../functions/ShowMenuForPlayer): Prikaži meni igraču.
+- [HideMenuForPlayer](../functions/HideMenuForPlayer): Sakrij meni za igrača.

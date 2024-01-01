@@ -49,10 +49,10 @@ There is a limit of 12 items per menu, and a limit of 128 menus in total.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [AddMenuItem](../../scripting/functions/AddMenuItem.md): Adds an item to a specified menu.
-- [SetMenuColumnHeader](../../scripting/functions/SetMenuColumnHeader.md): Set the header for one of the columns in a menu.
-- [DestroyMenu](../../scripting/functions/DestroyMenu.md): Destroy a menu.
-- [ShowMenuForPlayer](../../scripting/functions/ShowMenuForPlayer.md): Show a menu for a player.
-- [HideMenuForPlayer](../../scripting/functions/HideMenuForPlayer.md): Hide a menu for a player.
-- [OnPlayerSelectedMenuRow](../../scripting/callbacks/OnPlayerSelectedMenuRow.md): Called when a player selected a row in a menu.
-- [OnPlayerExitedMenu](../../scripting/callbacks/OnPlayerExitedMenu.md): Called when a player exits a menu.
+- [AddMenuItem](AddMenuItem): Adds an item to a specified menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Set the header for one of the columns in a menu.
+- [DestroyMenu](DestroyMenu): Destroy a menu.
+- [ShowMenuForPlayer](ShowMenuForPlayer): Show a menu for a player.
+- [HideMenuForPlayer](HideMenuForPlayer): Hide a menu for a player.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Called when a player exits a menu.

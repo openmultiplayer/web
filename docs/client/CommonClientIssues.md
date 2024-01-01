@@ -8,11 +8,11 @@ title: Common Issues
 
 ### I get the error "San Andreas cannot be found"
 
-San Andreas Multiplayer is **not** a stand-alone program! It adds multiplayer functionality to San Andreas, and thus you need GTA San Andreas for the PC - it also needs to be **EU/US v1.0**, other versions such as v2.0 or Steam and Direct2Drive versions will not work. [Click here to download a patch to downgrade your GTA: SA version to 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multiplayer is **not** a stand-alone program! It adds multiplayer functionality to San Andreas, and thus you need GTA San Andreas for the PC - it also needs to be **EU/US v1.0**, other versions such as v2.0 or Steam and Direct2Drive versions will not work. [Click here to download a patch to downgrade your GTA: SA version to 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### I can not see any servers in SA:MP browser
 
-First off, ensure you are following the procedures set out in the [Quick-start guide](https://team.sa-mp.com/wiki/Getting_Started). If you have followed what it says, and still cannot see any servers, you must allow SA:MP access through your firewall. Unfortunately, due to the large amount of available firewall software, we can not offer further support on this - we suggest looking at the manufacturers website or trying a Google search. Also make sure you have the latest SA:MP version!
+First off, ensure you are following the procedures set out in the [Quick-start guide](https://sampwiki.blast.hk/wiki/Getting_Started). If you have followed what it says, and still cannot see any servers, you must allow SA:MP access through your firewall. Unfortunately, due to the large amount of available firewall software, we can not offer further support on this - we suggest looking at the manufacturers website or trying a Google search. Also make sure you have the latest SA:MP version!
 
 ### Singleplayer loads instead of SA:MP
 
@@ -22,7 +22,7 @@ You are not supposed to see the singleplayer options (new game, load game, etc) 
 
 :::
 
-Singleplayer can load for 2 reasons; you have installed SA:MP to the wrong folder or you have the wrong version of San Andreas. If you have the wrong version you can downgrade your game using the GTA San Andreas downgrader. Click [here](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) to download it.
+Singleplayer can load for 2 reasons; you have installed SA:MP to the wrong folder or you have the wrong version of San Andreas. If you have the wrong version you can downgrade your game using the GTA San Andreas downgrader. Click [here](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) to download it.
 
 Sometimes the single player menu will be shown, but SA:MP will in fact have loaded properly. To fix this you simply need to select an item on the menu, then hit the escape key to exit out of it. SA:MP will then proceed to load.
 
@@ -52,7 +52,7 @@ If you have 2 monitors then there are 3 ways to solve this:
 
 ### My mouse doesn't work after exiting the pause menu
 
-If your mouse seems to be frozen ingame while it (partially) works in the pause menu, then you should disable the multicore option [sa-mp.cfg](ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (set it to 0). Continuously tapping Escape until the mouse responds again may also work, but it is not as neat a solution.
+If your mouse seems to be frozen ingame while it (partially) works in the pause menu, then you should disable the multicore option [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") (set it to 0). Continuously tapping Escape until the mouse responds again may also work, but it is not as neat a solution.
 
 ### The file dinput8.dll is missing
 

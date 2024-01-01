@@ -44,6 +44,6 @@ Igrica ponekad odbija igraču \$100 nakon spawnovanja.
 
 ## Srodne Funkcije
 
-- [SpawnPlayer](../functions/SpawnPlayer.md): Forsira igrača da se spawnuje/stvori.
-- [AddPlayerClass](../functions/AddPlayerClass.md): Dodaj klasu.
-- [SetSpawnInfo](../functions/SetSpawnInfo.md): Postavi opcije spawnovanja za igrača.
+- [SpawnPlayer](../functions/SpawnPlayer): Forsira igrača da se spawnuje/stvori.
+- [AddPlayerClass](../functions/AddPlayerClass): Dodaj klasu.
+- [SetSpawnInfo](../functions/SetSpawnInfo): Postavi opcije spawnovanja za igrača.

@@ -54,4 +54,4 @@ Atualmente não há restrições sobre quando você pode chamar esta função, m
 
 ## Funções Relacionadas
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): É chamada quando um jogador termina o download dos modelos personalizados.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): É chamada quando um jogador termina o download dos modelos personalizados.

@@ -24,6 +24,6 @@ Permite abrir e fechar as portas de um veículo.
 
 ## Funções Relacionadas
 
-- [GetVehicleParamsCarDoors](GetVehicleParamsCarDoors.md): Retorna o estado atual das portas de um veículo.
-- [SetVehicleParamsCarWindows](SetVehicleParamsCarWindows.md): Permite abrir e fechar as janelas de um veículo.
-- [GetVehicleParamsCarWindows](GetVehicleParamsCarWindows.md): Retorna o estado atual das janelas de um veículo.
+- [GetVehicleParamsCarDoors](GetVehicleParamsCarDoors): Retorna o estado atual das portas de um veículo.
+- [SetVehicleParamsCarWindows](SetVehicleParamsCarWindows): Permite abrir e fechar as janelas de um veículo.
+- [GetVehicleParamsCarWindows](GetVehicleParamsCarWindows): Retorna o estado atual das janelas de um veículo.

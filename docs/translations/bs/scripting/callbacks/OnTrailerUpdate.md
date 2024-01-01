@@ -47,7 +47,7 @@ Ovaj callback poziva se vrlo često u sekundi po traileru.Trebali biste se suzdr
 
 ## Srodne Funkcije
 
-- [GetVehicleTrailer](../functions/GetVehicleTrailer.md): Provjeri koji trailer vozilo vuče.
-- [IsTrailerAttachedToVehicle](../functions/IsTrailerAttachedToVehicle.md): Provjeri da li je trailer prikvačen za vozilo.
-- [AttachTrailerToVehicle](../functions/AttachTrailerToVehicle.md): Prikvači trailer za vozila.
-- [DetachTrailerFromVehicle](../functions/DetachTrailerFromVehicle.md): Otkači trailer od vozila.
+- [GetVehicleTrailer](../functions/GetVehicleTrailer): Provjeri koji trailer vozilo vuče.
+- [IsTrailerAttachedToVehicle](../functions/IsTrailerAttachedToVehicle): Provjeri da li je trailer prikvačen za vozilo.
+- [AttachTrailerToVehicle](../functions/AttachTrailerToVehicle): Prikvači trailer za vozila.
+- [DetachTrailerFromVehicle](../functions/DetachTrailerFromVehicle): Otkači trailer od vozila.

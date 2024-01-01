@@ -48,4 +48,4 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [AddVehicleComponent](../../scripting/functions/AddVehicleComponent.md): เพิ่ม Component ให้กับยานพาหนะ
+- [AddVehicleComponent](../functions/AddVehicleComponent): เพิ่ม Component ให้กับยานพาหนะ

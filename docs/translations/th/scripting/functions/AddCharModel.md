@@ -59,4 +59,4 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPlayerSkin](../../scripting/functions/SetPlayerSkin.md): Set a player's skin.
+- [SetPlayerSkin](SetPlayerSkin): Set a player's skin.

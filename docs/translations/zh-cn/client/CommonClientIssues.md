@@ -8,11 +8,11 @@ title: 常见问题
 
 ### 出现错误信息“无法找到 San Andreas”
 
-圣安地列斯多人游戏**不**是一个独立的程序! 它为圣安地列斯增加了联机功能，因此你需要圣安地列斯特定 PC 版本 - 并且它需要是**EU/US v1.0**版本，其他版本例如 v2.0 或 Steam 以及 Direct2Drive 版本不能联机。[点击这里下载一个补丁来降低你的 GTA:SA 版本到 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+圣安地列斯多人游戏**不**是一个独立的程序! 它为圣安地列斯增加了联机功能，因此你需要圣安地列斯特定 PC 版本 - 并且它需要是**EU/US v1.0**版本，其他版本例如 v2.0 或 Steam 以及 Direct2Drive 版本不能联机。[点击这里下载一个补丁来降低你的 GTA:SA 版本到 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### 我在 SA:MP 浏览页中看不到任何服务器
 
-首先，确保你遵循了[快速入门指南](https://team.sa-mp.com/wiki/Getting_Started)中列出的程序。如果你按照它要求的做了，但仍然看不到任何服务器，那么你必须允许 SA:MP 通过防火墙访问。不幸的是，由于大量可用的防火墙软件，我们不能提供进一步的支持 - 我们建议看看防火墙软件制造商的网站或尝试谷歌搜索，还要确保你有最新的 SA:MP 版本!
+首先，确保你遵循了[快速入门指南](https://sampwiki.blast.hk/wiki/Getting_Started)中列出的程序。如果你按照它要求的做了，但仍然看不到任何服务器，那么你必须允许 SA:MP 通过防火墙访问。不幸的是，由于大量可用的防火墙软件，我们不能提供进一步的支持 - 我们建议看看防火墙软件制造商的网站或尝试谷歌搜索，还要确保你有最新的 SA:MP 版本!
 
 ### 加载了单机游戏而非 SA:MP
 
@@ -22,7 +22,7 @@ title: 常见问题
 
 :::
 
-加载为单人游戏可能有 2 个原因; 你将 SA:MP 安装到错误的文件夹，或者你的圣安地列斯版本错误。如果你使用的是错误的版本，你可以使用圣安地列斯降级器来降级你的游戏版本。 点击 [这里](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) 以下载.
+加载为单人游戏可能有 2 个原因; 你将 SA:MP 安装到错误的文件夹，或者你的圣安地列斯版本错误。如果你使用的是错误的版本，你可以使用圣安地列斯降级器来降级你的游戏版本。 点击 [这里](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) 以下载.
 
 有时仍然会显示单人游戏菜单，但实际上 SA:MP 已经正确加载。要解决这个问题，你只需要在菜单上选择一个选项，然后按下 escape(ESC)键退出它。随后 SA:MP 将继续加载。
 
@@ -32,7 +32,7 @@ title: 常见问题
 
 ### 屏幕上显示“正在连接到 IP:端口…(Connecting to IP:Port...)”
 
-可能是服务器处于脱机状态，再者如果你无法连接到任何服务器，关闭你的防火墙，看看它是否有效。如果有效，你将需要重新配置防火墙。也可能是你正在运行一个过时的 SA:MP 版本 - 你可以在[这里](http://sa-mp.com/download.php)找到新版本。
+可能是服务器处于脱机状态，再者如果你无法连接到任何服务器，关闭你的防火墙，看看它是否有效。如果有效，你将需要重新配置防火墙。也可能是你正在运行一个过时的 SA:MP 版本 - 你可以在[这里](https://sa-mp.mp/downloads/)找到新版本。
 
 ### 我有一个修改过的 GTA: San Andreas 并且 SA:MP 不会被载入
 
@@ -52,7 +52,7 @@ title: 常见问题
 
 ### 当我退出暂停菜单后，我的鼠标无法工作
 
-假如你的鼠标在游戏中看起来不能移动，并且在暂停菜单中（部分）可用，你应该禁用多核(multicore)选项[sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (把它设置为 0)。不断地按 Escape 键，直到鼠标再次响应，但这并不是一个完美的解决方案。
+假如你的鼠标在游戏中看起来不能移动，并且在暂停菜单中（部分）可用，你应该禁用多核(multicore)选项[sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "sa-mp.cfg") (把它设置为 0)。不断地按 Escape 键，直到鼠标再次响应，但这并不是一个完美的解决方案。
 
 ### 文件 dinput8.dll 丢失
 

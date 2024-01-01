@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-ClearAnimations doesn't do anything when the animation ends if we pass 1 for the freeze parameter in ApplyAnimation.
+ClearAnimations doesn't do anything when the animation ends if we pass 1 for the freeze parameter in [ApplyAnimation](ApplyAnimation).
 
 :::
 

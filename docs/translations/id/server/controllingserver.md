@@ -191,7 +191,7 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon playertimeout [limit m/s]` | Mengubah waktu dalam milisekon hingga pemain dianggap timeout ketika tidak mengirim paket apapun. (nilai awal 1000) |
 | `/rcon language [language]`       | Mengubah bahasa server (_contoh: /rcon language English_). Muncul di penjelajah server.                             |
 
-Jumlah/pembatasan di atas dibuat untuk menghindari beberapa alat yang bisa menyerang server SA-MP dengan membuatnya freeze atau crash. Jadi, cukup atur sesuai dengan server Anda. Nilai awal hanyalah nilai awal, jika Anda mengalami sesuatu yang tidak beres, cukup tambahkan nilainya secepat mungkin, jadi pemain yang tidak bersalah tidak akan ditendang. [Baca lebih lanjut](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47)
+Jumlah/pembatasan di atas dibuat untuk menghindari beberapa alat yang bisa menyerang server SA-MP dengan membuatnya freeze atau crash. Jadi, cukup atur sesuai dengan server Anda. Nilai awal hanyalah nilai awal, jika Anda mengalami sesuatu yang tidak beres, cukup tambahkan nilainya secepat mungkin, jadi pemain yang tidak bersalah tidak akan ditendang. [Baca lebih lanjut](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193)
 
 ### Callback dan Fungsi Terkait
 

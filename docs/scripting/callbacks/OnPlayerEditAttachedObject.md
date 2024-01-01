@@ -86,7 +86,7 @@ public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Fl
 
 :::warning
 
-Editions should be discarded if response was '0' (cancelled). This must be done by storing the offsets etc. in an array BEFORE using EditAttachedObject.
+Editions should be discarded if response was '0' (cancelled). This must be done by storing the offsets etc. in an array BEFORE using [EditAttachedObject](../functions/EditAttachedObject).
 
 :::
 

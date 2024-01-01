@@ -35,5 +35,5 @@ public OnGameModeInit()
 
 ## Powiązane funkcje
 
-- [IsPlayerAdmin](IsPlayerAdmin.md): Sprawdza, czy gracz jest zalogowany jako RCON.
-- [AllowPlayerTeleport](AllowPlayerTeleport.md): Włącza graczom teleportowanie do punktów docelowych.
+- [IsPlayerAdmin](IsPlayerAdmin): Sprawdza, czy gracz jest zalogowany jako RCON.
+- [AllowPlayerTeleport](AllowPlayerTeleport): Włącza graczom teleportowanie do punktów docelowych.

@@ -161,4 +161,4 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 ## تابع های مرتبط
 </div>
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md) 
+- [ShowPlayerDialog](../functions/ShowPlayerDialog) 

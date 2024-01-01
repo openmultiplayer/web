@@ -35,5 +35,5 @@ public OnGameModeInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [IsPlayerAdmin](../../scripting/functions/IsPlayerAdmin.md): Checks if a player is logged into RCON.
-- [AllowPlayerTeleport](../../scripting/functions/AllowPlayerTeleport.md): Toggle waypoint teleporting for players.
+- [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.
+- [AllowPlayerTeleport](AllowPlayerTeleport): Toggle waypoint teleporting for players.

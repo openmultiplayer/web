@@ -47,6 +47,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SelectTextDraw](../functions/SelectTextDraw.md): Enables the mouse, so the player can select a textdraw
-- [TextDrawSetSelectable](../functions/TextDrawSetSelectable.md): Sets whether a textdraw is selectable through SelectTextDraw
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
+- [TextDrawSetSelectable](TextDrawSetSelectable): Sets whether a textdraw is selectable through SelectTextDraw
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

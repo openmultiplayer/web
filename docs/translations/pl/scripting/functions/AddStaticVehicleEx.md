@@ -6,19 +6,19 @@ tags: ["vehicle"]
 
 ## Opis
 
-Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu. Różnica pomiędzy AddStaticVehicle polega na tym, że ta funkcja umożliwia ustawienie czasu respawnu pojazdu, gdy kierowca go porzuci.
+Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu. Różnica pomiędzy [AddStaticVehicle](AddStaticVehicle) polega na tym, że ta funkcja umożliwia ustawienie czasu respawnu pojazdu, gdy kierowca go porzuci.
 
-| Nazwa                                    | Opis                                                                                                                                                 |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid                                  | ID modelu pojazdu.                                                                                                                                   |
-| Float:spawn_X                            | Koordynat X pojazdu.                                                                                                                                 |
-| Float:spawn_Y                            | Koordynat Y pojazdu.                                                                                                                                 |
-| Float:spawn_Z                            | Koordynat Z pojazdu.                                                                                                                                 |
-| Float:z_angle                            | Kierunek pojazdu (kąt).                                                                                                                              |
-| [color1](../resources/vehiclecolorid.md) | ID pierwszego koloru. -1 to losowy.                                                                                                                  |
-| [color2](../resources/vehiclecolorid.md) | ID drugiego koloru. -1 to losowy.                                                                                                                    |
-| respawn_delay                            | Czas, po którym pojazd bez kierowcy zostanie zrespawnowany (w sekundach).                                                                            |
-| addsiren                                 | Dodane w 0.3.7; nie będzie działać w starszych wersjach. Domyślna wartość to 0. Umożliwia włączenie syren w każdym pojeździe, który posiada klakson. |
+| Nazwa         | Opis                                                                                                                                                 |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| modelid       | ID modelu pojazdu.                                                                                                                                   |
+| Float:spawn_X | Koordynat X pojazdu.                                                                                                                                 |
+| Float:spawn_Y | Koordynat Y pojazdu.                                                                                                                                 |
+| Float:spawn_Z | Koordynat Z pojazdu.                                                                                                                                 |
+| Float:z_angle | Kierunek pojazdu (kąt).                                                                                                                              |
+| color1        | ID pierwszego [koloru](../resources/vehiclecolorid). -1 to losowy.                                                                                   |
+| color2        | ID drugiego [koloru](../resources/vehiclecolorid). -1 to losowy.                                                                                     |
+| respawn_delay | Czas, po którym pojazd bez kierowcy zostanie zrespawnowany (w sekundach).                                                                            |
+| addsiren      | Dodane w 0.3.7; nie będzie działać w starszych wersjach. Domyślna wartość to 0. Umożliwia włączenie syren w każdym pojeździe, który posiada klakson. |
 
 ## Zwracane wartości
 
@@ -40,5 +40,5 @@ public OnGameModeInit()
 
 ## Powiązane funkcje
 
-- [AddStaticVehicle](AddStaticVehicle.md): Dodaje statyczny pojazd.
-- [CreateVehicle](CreateVehicle.md): Tworzy pojazd.
+- [AddStaticVehicle](AddStaticVehicle): Dodaje statyczny pojazd.
+- [CreateVehicle](CreateVehicle): Tworzy pojazd.

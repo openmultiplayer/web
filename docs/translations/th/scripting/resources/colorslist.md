@@ -10,7 +10,7 @@ Colors in SA-MP are generally represented in hexadecimal notation (though intege
 
 _RR_ is the red part of the color, _GG_ the green and _BB_ the blue. _AA_ is the alpha value. If FF is used there, the color will display without transparency and if 00 is used, it will be invisible.
 
-For the Hex code for these colors, go to the [Hex colors](../../scripting/resources/hex-colors.md) page.
+For the Hex code for these colors, go to the [Hex colors](hexcolors) page.
 
 ### Alpha values (transparency)
 
@@ -60,7 +60,7 @@ stock HexToInt(string[])
 }
 ```
 
-Use HexToInt("RRGGBBAA") and you'll get a usable number as result for [SetPlayerColor](../../scripting/functions/SetPlayerColor.md).
+Use HexToInt("RRGGBBAA") and you'll get a usable number as result for [SetPlayerColor](../functions/SetPlayerColor).
 
 ### Color embedding
 
@@ -70,13 +70,13 @@ Colors List was added in **SA-MP 0.3c** and will not work in earlier versions!
 
 :::
 
-It is possible to use colors within text in [client messages](../../scripting/functions/SendClientMessage.md"), [dialogs](../../scripting/functions/ShowPlayerDialog.md), [3D text labels](../../scripting/functions/Create3DTextLabel.md), [object material texts](../../scripting/functions/SetObjectMaterialText.md) and [vehicle numberplates](../../scripting/functions/SetVehicleNumberPlate.md").
+It is possible to use colors within text in [client messages](../functions/SendClientMessage), [dialogs](../functions/ShowPlayerDialog), [3D text labels](../functions/Create3DTextLabel), [object material texts](../functions/SetObjectMaterialText) and [vehicle numberplates](../functions/SetVehicleNumberPlate).
 
-It is very similar to [gametext colors](../../scripting/resources/gametextstyles.md), but allows any color to be used.
+It is very similar to [gametext colors](gametextstyles), but allows any color to be used.
 
 :::caution
 
-This type of color embedding does not work in textdraws. See [GameTextStyle](../../scripting/resources/gametextstyles.md).
+This type of color embedding does not work in textdraws. See [GameTextStyle](gametextstyles).
 
 :::
 
@@ -127,17 +127,16 @@ format(msg, sizeof(msg), "{ffffff}This is white and {%06x}this is the player's c
 SendClientMessage(playerid, 0xffffffff, msg);
 ```
 
-The %x is the placeholder for hexadecimal values, the 6 ensures that the output string will always be six characters long and the 0 will pad it with zeros if it's not. Note that [GetPlayerColor](../../scripting/resources/GetPlayerColor.md) only works properly if [SetPlayerColor](../../scripting/resources/SetPlayerColor.md) has been used beforehand.
+The %x is the placeholder for hexadecimal values, the 6 ensures that the output string will always be six characters long and the 0 will pad it with zeros if it's not. Note that [GetPlayerColor](../functions/GetPlayerColor) only works properly if [SetPlayerColor](../functions/SetPlayerColor) has been used beforehand.
 
 The colors used in color embedding are not like normal hex colors in Pawn. There is no '0x' prefix and no alpha value (last 2 digits).
 
 ### Color Pickers
 
-- [SA-MP Colorpicker v1.1.0](http://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
-- [December.com](http://www.december.com/html/spec/color.html)
-- [RGB Picker](http://psyclops.com/tools/rgb)
-- [Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
-- [Color Scheme Designer](http://colorschemedesigner.com/)
+- [SA-MP Colorpicker v1.1.0](https://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
+- [December.com](https://johndecember.com/html/spec/color.html)
+- [Adobe Color](https://color.adobe.com/create/color-wheel/)
+- [Color Scheme Designer](https://paletton.com)
 
 ## GameText
 

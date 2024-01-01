@@ -55,7 +55,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Les paramètres peuvent changer selon le style de dialog ([voir plus de styles de dialog](../resources/dialogstyles.md)).
+Les paramètres peuvent changer selon le style de dialog ([voir plus de styles de dialog](../resources/dialogstyles)).
 
 :::
 
@@ -73,4 +73,4 @@ Le dialog ouvert par un joueur ne se cache pas quand le serveur redémarre, le s
 
 ## Fonctions connexes
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): affiche le Dialog à un joueur.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): affiche le Dialog à un joueur.

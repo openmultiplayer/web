@@ -36,8 +36,8 @@ SetObjectPos จะไม่ทำงานถ้าใช้ใน Callback น
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [MoveObject](../../scripting/functions/MoveObject.md): เคลื่อนย้ายวัตถุ
-- [MovePlayerObject](../../scripting/functions/MovePlayerObject.md): เคลื่อนย้ายวัตถุผู้เล่น
-- [IsObjectMoving](../../scripting/functions/IsObjectMoving.md): ตรวจสอบว่าวัตถุกำลังเคลื่อนที่หรือไม่
-- [StopObject](../../scripting/functions/StopObject.md): หยุดวัตถุไม่ให้เคลื่อนที่
-- [OnPlayerObjectMoved](../../scripting/callbacks/OnPlayerObjectMoved.md): ถูกเรียกเมื่อวัตถุผู้เล่นหยุดเคลื่อนที่
+- [MoveObject](../functions/MoveObject): เคลื่อนย้ายวัตถุ
+- [MovePlayerObject](../functions/MovePlayerObject): เคลื่อนย้ายวัตถุผู้เล่น
+- [IsObjectMoving](../functions/IsObjectMoving): ตรวจสอบว่าวัตถุกำลังเคลื่อนที่หรือไม่
+- [StopObject](../functions/StopObject): หยุดวัตถุไม่ให้เคลื่อนที่
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): ถูกเรียกเมื่อวัตถุผู้เล่นหยุดเคลื่อนที่

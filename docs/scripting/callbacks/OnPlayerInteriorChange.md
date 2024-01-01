@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player changes interior. Can be triggered by SetPlayerInterior or when a player enter/exits a building.
+This callback is called when a player changes interior. Can be triggered by [SetPlayerInterior](../functions/SetPlayerInterior) or when a player enter/exits a building.
 
 | Name          | Description                            |
 | ------------- | -------------------------------------- |

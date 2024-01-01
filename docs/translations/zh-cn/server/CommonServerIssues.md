@@ -8,7 +8,7 @@ title: 常见问题
 
 ## 服务器不起作用 - 防火墙被禁用
 
-您需要转发您的端口以允许玩家加入您的服务器。 您可以使用 PF Port Checker 转发您的端口。 从以下网址下载：www.portforward.com 如果端口未转发，则意味着您必须在路由器中打开它们。 您可以在 [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm "http://portforward .com/english/routers/port_forwarding/routerindex.htm") 查看路由器列表。
+您需要转发您的端口以允许玩家加入您的服务器。 您可以使用 PF Port Checker 转发您的端口。 从以下网址下载：www.portforward.com 如果端口未转发，则意味着您必须在路由器中打开它们。 您可以在 [https://portforward.com/router.htm](https://portforward.com/router.htm "https://portforward.com/router.htm") 查看路由器列表。
 
 它包含有关如何转发端口的所有信息。
 
@@ -62,7 +62,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 当“乱序消息”复用 messageholelimit 设置时发生。
 
-有关这方面的更多信息，请参阅 [此处](https://open.mp/docs/server/ControllingServer#RCON_Commands)
+有关这方面的更多信息，请参阅 [此处](ControllingServer#rcon-commands)
 
 ## 玩家持续收到“Unacceptable NickName”错误，但游戏名是有效的
 

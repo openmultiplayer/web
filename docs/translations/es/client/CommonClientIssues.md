@@ -8,11 +8,11 @@ title: Common Issues
 
 ### Tengo constantemente el error "San Andreas cannot be found"
 
-¡San Andreas Multiplayer **NO ES** un programa independiente! Solo añade funciones multijugador al GTA: San Andreas (y, por lo tanto, necesitas GTA:SA instalado en tu computadora). Tiene que ser, además, la versión **EU/US v1.0**, ya que otras versiones como 2.0, versiones de Steam o versiones de Direct2Drive no funcionarán. [Cliquea aquí para descargar un parche para downgradear tu GTA:SA a la version 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+¡San Andreas Multiplayer **NO ES** un programa independiente! Solo añade funciones multijugador al GTA: San Andreas (y, por lo tanto, necesitas GTA:SA instalado en tu computadora). Tiene que ser, además, la versión **EU/US v1.0**, ya que otras versiones como 2.0, versiones de Steam o versiones de Direct2Drive no funcionarán. [Cliquea aquí para descargar un parche para downgradear tu GTA:SA a la version 1.0](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### No veo ningún servidor en el buscador de servidores de SA:MP.
 
-Primero que nada, asegúrate de seguir los procedimientos previstos en la [Guía de inicio rápido](https://team.sa-mp.com/wiki/Getting_Started). Si el problema persiste aún si verificaste lo anterior, debes permitir el acceso de SA:MP a través de tu cortafuegos. Desafortunadamente, debido a la gran cantidad de software cortafuego que existe, no podemos dar soporte con esto, pero sugerimos el revisar en el sitio del programa (o realizar una busqueda ante nuestro todo poderoso Google). Asegúrate además de tener la última versión de SA:MP.
+Primero que nada, asegúrate de seguir los procedimientos previstos en la [Guía de inicio rápido](https://sampwiki.blast.hk/wiki/Getting_Started). Si el problema persiste aún si verificaste lo anterior, debes permitir el acceso de SA:MP a través de tu cortafuegos. Desafortunadamente, debido a la gran cantidad de software cortafuego que existe, no podemos dar soporte con esto, pero sugerimos el revisar en el sitio del programa (o realizar una busqueda ante nuestro todo poderoso Google). Asegúrate además de tener la última versión de SA:MP.
 
 ### El modo un jugador inicia en vez de SA:MP
 
@@ -22,7 +22,7 @@ No se supone que debas ver las opciones del modo un jugador (Iniciar Partida, Ca
 
 :::
 
-El modo un jugador puede iniciarse por 2 razones: Tienes SA:MP instalado en la carpeta incorrecta o no tienes una versión compatible de GTA:SA. Si tienes la versión incorrecta puedes reallizar un downgrade a tu juego utilizando el downgrader de GTA:SA. Cliquea [aquí](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) para descargarlo.
+El modo un jugador puede iniciarse por 2 razones: Tienes SA:MP instalado en la carpeta incorrecta o no tienes una versión compatible de GTA:SA. Si tienes la versión incorrecta puedes reallizar un downgrade a tu juego utilizando el downgrader de GTA:SA. Cliquea [aquí](https://gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) para descargarlo.
 
 Existen ciertos casos en el que el menú del modo un jugador será mostrado, pero SA:MP habrá correctamente inciado. Para arreglar esto simplemente tienes que seleccionar un elemento en el menú, seguido de tocarla tecla Escape para salir de este. De esta forma, SA:MP procederá a cargar.
 
@@ -33,7 +33,7 @@ Asegúrate de que no estas usando ningun carácter no permitido (solo puedes uti
 
 ### La pantalla se queda en "Connecting to  IP:Port..."
 
-Esto puede ser causado porque el servidor no esta encendido. Si tienes este error con mas de 1 servidor y estas seguro que estos servidores no están apagados, deshabilita tu cortafuegos y comprueba si el error persiste. Caso contrario, reconfigura tu cortafuegos para aceptar el tráfico entrante-saliente de SA:MP. Puede ser también que estes ejecutando una versión obsoleta de SA:MP - Puedes encontrar la versión más reciente [Aquí](http://sa-mp.com/download.php).
+Esto puede ser causado porque el servidor no esta encendido. Si tienes este error con mas de 1 servidor y estas seguro que estos servidores no están apagados, deshabilita tu cortafuegos y comprueba si el error persiste. Caso contrario, reconfigura tu cortafuegos para aceptar el tráfico entrante-saliente de SA:MP. Puede ser también que estes ejecutando una versión obsoleta de SA:MP - Puedes encontrar la versión más reciente [Aquí](https://sa-mp.mp/downloads/).
 
 ### Tengo un GTA:SA modificado y SA:MP no inicia
 
@@ -53,7 +53,7 @@ Si tienes 2 monitores, hay 3 maneras de resolverlo:
 
 ### Mi ratón no funciona luego de slair del menú de pausa
 
-Si tu ratón no funciona en el juego y funciona de manera incompleta en el menú de pausa, deberías desactivar la función multinúcleo ("multicore") de tu[sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (Colocala en 0). Pulsar repetidamente la tecla Escape o mantenerla apretada hasta que el ratón responda de nuevo puede funcionar, pero no es una solución definitiva.
+Si tu ratón no funciona en el juego y funciona de manera incompleta en el menú de pausa, deberías desactivar la función multinúcleo ("multicore") de tu[sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "sa-mp.cfg") (Colocala en 0). Pulsar repetidamente la tecla Escape o mantenerla apretada hasta que el ratón responda de nuevo puede funcionar, pero no es una solución definitiva.
 
 ### El archivo dinput8.dll no existe
 

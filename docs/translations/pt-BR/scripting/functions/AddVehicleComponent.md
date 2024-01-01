@@ -6,12 +6,12 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Adiciona um 'componente' (frequentemente chamado de 'mod' (modificação)) a um veículo. Componentes válidos podem ser encontrados aqui.
+Adiciona um 'componente' (frequentemente chamado de 'mod' (modificação)) a um veículo. Componentes válidos podem ser encontrados [aqui](../resources/carcomponentid).
 
-| Name                                          | Descrição                                                               |
-| --------------------------------------------- | ----------------------------------------------------------------------- |
-| vehicleid                                     | O ID do veículo a adicionar um componente. Não confundir com o modelid. |
-| [componentid](../resources/carcomponentid.md) | O ID do componente a adicionar ao veículo.                              |
+| Name        | Descrição                                                                 |
+| ----------- | ------------------------------------------------------------------------- |
+| vehicleid   | O ID do veículo a adicionar um componente. Não confundir com o modelid.   |
+| componentid | O ID do [componente](../resources/carcomponentid) a adicionar ao veículo. |
 
 ## Retorno
 
@@ -54,8 +54,8 @@ Usar um ID de componente inválido causa um crash no jogador. Não existe verifi
 
 ## Funções Relacionadas
 
-- [RemoveVehicleComponent](RemoveVehicleComponent.md): Remove um componente de um veículo.
-- [GetVehicleComponentInSlot](GetVehicleComponentInSlot.md): Verifica quais componentes o veículo tem.
-- [GetVehicleComponentType](GetVehicleComponentType.md): Verifica o tipo de componente pelo ID.
-- [OnVehicleMod](../callbacks/OnVehicleMod.md): É chamado quando o veículo é modificado/tem componentes.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): É chamado quando um veículo entra ou sai de uma loja de tunning.
+- [RemoveVehicleComponent](RemoveVehicleComponent): Remove um componente de um veículo.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Verifica quais componentes o veículo tem.
+- [GetVehicleComponentType](GetVehicleComponentType): Verifica o tipo de componente pelo ID.
+- [OnVehicleMod](../callbacks/OnVehicleMod): É chamado quando o veículo é modificado/tem componentes.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): É chamado quando um veículo entra ou sai de uma loja de tunning.

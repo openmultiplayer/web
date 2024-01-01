@@ -36,8 +36,8 @@ SetObjectPos ne deluje, ko ga uporabljate v tem "callback". Če želite to popra
 
 ## Povezane Funkcijo
 
-- [MoveObject](../functions/MoveObject.md): Premakni predmet.
-- [MovePlayerObject](../functions/MovePlayerObject.md): Premaknite predmet predvajalnika.
-- [IsObjectMoving](../functions/IsObjectMoving.md): Prepričajte se, da se predmet premika.
-- [StopObject](../functions/StopObject.md): Zaustavite premikanje predmeta.
-- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Pokliče se, ko se predvajalnik neha premikati.
+- [MoveObject](../functions/MoveObject): Premakni predmet.
+- [MovePlayerObject](../functions/MovePlayerObject): Premaknite predmet predvajalnika.
+- [IsObjectMoving](../functions/IsObjectMoving): Prepričajte se, da se predmet premika.
+- [StopObject](../functions/StopObject): Zaustavite premikanje predmeta.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): Pokliče se, ko se predvajalnik neha premikati.

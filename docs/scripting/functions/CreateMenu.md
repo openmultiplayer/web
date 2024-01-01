@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 :::tip
 
-This function merely CREATES the menu - ShowMenuForPlayer must be used to show it. You can only create and access 2 columns (0 & 1). If the title's length is equal to or greater than 32 chars the title is truncated to 30 characters.
+This function merely CREATES the menu - [ShowMenuForPlayer](ShowMenuForPlayer) must be used to show it. You can only create and access 2 columns (0 & 1). If the title's length is equal to or greater than 32 chars the title is truncated to 30 characters.
 
 :::
 

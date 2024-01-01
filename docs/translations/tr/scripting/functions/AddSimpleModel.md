@@ -58,4 +58,4 @@ Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarl
 
 ## İlgili Fonksiyonlar
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Bir oyuncu özel modelleri indirmeyi bitirdiğinde çağrılır.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Bir oyuncu özel modelleri indirmeyi bitirdiğinde çağrılır.

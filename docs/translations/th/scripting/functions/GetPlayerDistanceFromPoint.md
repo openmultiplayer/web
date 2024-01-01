@@ -49,6 +49,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [IsPlayerInRangeOfPoint](../functions/IsPlayerInRangeOfPoint): Check whether a player is in range of a point.
-- [GetVehicleDistanceFromPoint](../functions/GetVehicleDistanceFromPoint): Get the distance between a vehicle and a point.
-- [GetPlayerPos](../functions/GetPlayerPos): Get a player's position.
+- [IsPlayerInRangeOfPoint](IsPlayerInRangeOfPoint): Check whether a player is in range of a point.
+- [GetVehicleDistanceFromPoint](GetVehicleDistanceFromPoint): Get the distance between a vehicle and a point.
+- [GetPlayerPos](GetPlayerPos): Get a player's position.

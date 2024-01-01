@@ -8,10 +8,10 @@ tags: ["vehicle"]
 
 Dodaje „komponent” (część tuningową) do pojazdu. Listę komponentów znajdziesz poniżej.
 
-| Nazwa                                         | Opis                                                                         |
-| --------------------------------------------- | ---------------------------------------------------------------------------- |
-| vehicleid                                     | ID pojazdu, w którym komponent ma zostać zamontowany. Nie mylić z ID modelu. |
-| [componentid](../resources/carcomponentid.md) | ID komponentu, który ma zostać zamontowany w pojeździe.                      |
+| Nazwa       | Opis                                                                                   |
+| ----------- | -------------------------------------------------------------------------------------- |
+| vehicleid   | ID pojazdu, w którym komponent ma zostać zamontowany. Nie mylić z ID modelu.           |
+| componentid | ID [komponentu](../resources/carcomponentid), który ma zostać zamontowany w pojeździe. |
 
 ## Zwracane wartości
 
@@ -54,8 +54,8 @@ Użycie nieprawidłwego ID komponentu powoduje zcrashowanie klienta. Nie ma żad
 
 ## Powiązane funkcje
 
-- [RemoveVehicleComponent](RemoveVehicleComponent.md): Usuwa komponent z pojazdu.
-- [GetVehicleComponentInSlot](GetVehicleComponentInSlot.md): Sprawdza, jakie komponenty pojazd posiada.
-- [GetVehicleComponentType](GetVehicleComponentType.md): Sprawdza typ komponentu po ID.
-- [OnVehicleMod](../callbacks/OnVehicleMod.md): Wywoływane, kiedy pojazd jest tuningowany.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Wywoływane, gdy pojazd wjedzie lub wyjedzie z warsztatu tuningowego.
+- [RemoveVehicleComponent](RemoveVehicleComponent): Usuwa komponent z pojazdu.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Sprawdza, jakie komponenty pojazd posiada.
+- [GetVehicleComponentType](GetVehicleComponentType): Sprawdza typ komponentu po ID.
+- [OnVehicleMod](../callbacks/OnVehicleMod): Wywoływane, kiedy pojazd jest tuningowany.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Wywoływane, gdy pojazd wjedzie lub wyjedzie z warsztatu tuningowego.

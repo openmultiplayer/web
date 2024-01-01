@@ -12,12 +12,12 @@ Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcijom bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).
+Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan [ShowPlayerDialog](../functions/ShowPlayerDialog) funkcijom bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).
 
 | Ime         | Deskripcija                                                                                                                            |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID igrača koji je odgovorio na dijalog.                                                                                                |
-| dialogid    | ID dijaloga na koji je igrač odgovorio, dodijeljenog pozivanjem ShowPlayerDialog funkcije.                                             |
+| dialogid    | ID dijaloga na koji je igrač odgovorio, dodijeljenog pozivanjem [ShowPlayerDialog](../functions/ShowPlayerDialog) funkcije.            |
 | response    | 1 za lijevo i 0 za desno dugme (ako je samo jedno dugme prikazano, uvijek 1)                                                           |
 | listitem    | ID list item-a koji je selektovan od strane igrača (počinje od 0) (samo ukoliko koristite list style dijalog, u suprotnom će biti -1). |
 | inputtext[] | Tekst upisan u input box od strane igrača text selektovanog list item-a.                                                               |
@@ -146,7 +146,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parametri mogu sadržavati različite vrijednosti, bazirane na stilu dijaloga ([Klikni za više primjera](../resources/dialogstyles.md)).
+Parametri mogu sadržavati različite vrijednosti, bazirane na stilu dijaloga ([Klikni za više primjera](../resources/dialogstyles)).
 
 :::
 
@@ -164,4 +164,4 @@ Dijalog igrača se ne sakriva kada se gamemode restartuje, uzrokujući to da ser
 
 ## Srodne Funkcije
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Prikaži dijalog igraču.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Prikaži dijalog igraču.

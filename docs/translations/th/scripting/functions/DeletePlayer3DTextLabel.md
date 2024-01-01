@@ -36,9 +36,9 @@ DeletePlayer3DTextLabel(playerid, labelid);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [Create3DTextLabel](../../scripting/functions/Create3DTextLabel.md): Create a 3D text label.
-- [Attach3DTextLabelToPlayer](../../scripting/functions/Attach3DTextLabelToPlayer.md): Attach a 3D text label to a player.
-- [Attach3DTextLabelToVehicle](../../scripting/functions/Attach3DTextLabelToVehicle.md): Attach a 3D text label to a vehicle.
-- [Update3DTextLabelText](../../scripting/functions/Update3DTextLabelText.md): Change the text of a 3D text label.
-- [CreatePlayer3DTextLabel](../../scripting/functions/CreatePlayer3DTextLabel.md): Create A 3D text label for one player.
-- [UpdatePlayer3DTextLabelText](../../scripting/functions/UpdatePlayer3DTextLabelText.md): Change the text of a player's 3D text label.
+- [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
+- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
+- [Update3DTextLabelText](Update3DTextLabelText): Change the text of a 3D text label.
+- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.

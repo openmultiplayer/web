@@ -28,5 +28,5 @@ public OnPlayerExitedMenu(playerid)
 
 ## Srodne Funkcije
 
-- [CreateMenu](../functions/CreateMenu.md): Kreiraj meni.
-- [DestroyMenu](../functions/DestroyMenu.md): Uništi meni.
+- [CreateMenu](../functions/CreateMenu): Kreiraj meni.
+- [DestroyMenu](../functions/DestroyMenu): Uništi meni.

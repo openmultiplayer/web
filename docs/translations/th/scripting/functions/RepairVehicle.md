@@ -44,5 +44,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetVehicleHealth](../functions/SetVehicleHealth.md): Set the health of a vehicle.
-- [GetVehicleHealth](../functions/GetVehicleHealth.md): Check the health of a vehicle.
+- [SetVehicleHealth](SetVehicleHealth): Set the health of a vehicle.
+- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.

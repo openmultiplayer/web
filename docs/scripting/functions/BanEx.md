@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-As of SA-MP 0.3x, any action taken directly before BanEx() (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the ban.
+As of SA-MP 0.3x, any action taken directly before BanEx() (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the ban.
 
 :::
 

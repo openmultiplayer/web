@@ -35,6 +35,6 @@ public OnGameModeInit()
 
 ## Functii relatate
 
-- [floatsin](floatsin.md): Obțineți sinusul dintr-un unghi specific.
-- [floatcos](floatcos.md): Obțineți cosinusul dintr-un unghi specific.
-- [floattan](floattan.md): Obțineți tangenta dintr-un unghi specific.
+- [floatsin](floatsin): Obțineți sinusul dintr-un unghi specific.
+- [floatcos](floatcos): Obțineți cosinusul dintr-un unghi specific.
+- [floattan](floattan): Obțineți tangenta dintr-un unghi specific.

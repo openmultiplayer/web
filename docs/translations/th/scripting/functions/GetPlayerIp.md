@@ -43,10 +43,10 @@ PAWN is case-sensitive. GetPlayerIP will not work. This function does not work w
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [NetStats_GetIpPort](../functions/NetStats_GetIpPort): Get a player's IP and port.
-- [GetPlayerName](../functions/GetPlayerName): Get a player's name.
-- [GetPlayerPing](../functions/GetPlayerPing): Get the ping of a player.
-- [GetPlayerVersion](../functions/GetPlayerVerion): Get a player's client-version.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
+- [GetPlayerName](GetPlayerName): Get a player's name.
+- [GetPlayerPing](GetPlayerPing): Get the ping of a player.
+- [GetPlayerVersion](GetPlayerVerion): Get a player's client-version.
 - [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.

@@ -59,12 +59,12 @@ Checkpointi su asinhroni, sto znaci da samo jedan moze da se prikaze u isto vrem
 
 ## Related Functions
 
-- [DisablePlayerCheckpoint](DisablePlayerCheckpoint.md): Gasi trenutno aktivni checkpoint igracu.
-- [IsPlayerInCheckpoint](IsPlayerInCheckpoint.md): Proverava da li je igrac u checkpointu.
-- [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint.md): Kreiraj Race Checkpoint za igraca.
-- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint.md): Gasi trenutno aktivni race checkpoint igracu.
-- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint.md): Proverava da li je igrac u race chekcpointu.
-- [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint.md): Poziva se kada igrac udje u checkpoint.
-- [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint.md): Poziva se kada igrac izadje iz checkpointa.
-- [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint.md): Poziva se kada igrac udje u race checkpoint.
-- [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint.md): Poziva se kada igrac izadje iz race checkpointa.
+- [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Gasi trenutno aktivni checkpoint igracu.
+- [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Proverava da li je igrac u checkpointu.
+- [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Kreiraj Race Checkpoint za igraca.
+- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Gasi trenutno aktivni race checkpoint igracu.
+- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Proverava da li je igrac u race chekcpointu.
+- [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Poziva se kada igrac udje u checkpoint.
+- [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Poziva se kada igrac izadje iz checkpointa.
+- [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Poziva se kada igrac udje u race checkpoint.
+- [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint): Poziva se kada igrac izadje iz race checkpointa.

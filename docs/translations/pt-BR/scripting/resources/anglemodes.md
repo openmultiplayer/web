@@ -5,7 +5,7 @@ description: Constantes unitárias no sistema internacional de medição de âng
 
 :::note
 
-Para ser usado com [floatsin](../functions/Floatsin), [floatcos](../functions/Floatcos), ou [floattan](../functions/Floattan).
+Para ser usado com [floatsin](../functions/floatsin), [floatcos](../functions/floatcos), ou [floattan](../functions/floattan).
 
 :::
 

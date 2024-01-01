@@ -22,7 +22,7 @@ public OnGameModeInit()
 
 :::tip
 
-This function can also be used in a filterscript to detect if the gamemode changes with RCON commands like changemode or gmx, as changing the gamemode does not reload a filterscript.
+This function can also be used in a filterscript to detect if the gamemode changes with [RCON commands](../../server/ControllingServer#rcon-commands) like changemode or gmx, as changing the gamemode does not reload a filterscript.
 
 :::
 

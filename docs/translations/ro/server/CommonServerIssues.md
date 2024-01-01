@@ -8,7 +8,7 @@ Cel mai frecvent este o eroare în fișierul server.cfg sau modul dvs. de joc li
 
 ## Serverul nu funcționează - firewall-ul este dezactivat
 
-Va trebui să vă redirecționați porturile pentru a permite jucătorilor să se alăture serverului dvs. Puteți redirecționa porturile folosind PF Port Checker. Descărcați-l de pe: www.portforward.com Dacă porturile nu sunt redirecționate, înseamnă că trebuie să le deschideți în router. Puteți verifica lista routerelor la [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm "http://portforward.com/english/routers/port_forwarding/routerindex.htm")
+Va trebui să vă redirecționați porturile pentru a permite jucătorilor să se alăture serverului dvs. Puteți redirecționa porturile folosind PF Port Checker. Descărcați-l de pe: www.portforward.com Dacă porturile nu sunt redirecționate, înseamnă că trebuie să le deschideți în router. Puteți verifica lista routerelor la [https://portforward.com/router.htm](https://portforward.com/router.htm "https://portforward.com/router.htm")
 
 Are toate informațiile despre cum să redirecționați porturile.
 
@@ -62,7 +62,7 @@ Avertisment: Prea multe mesaje ieșite din comandă de la player <ip>: <port> (<
 
 Se întâmplă atunci când `mesaje în afara comenzii` reutilizează setarea mesaj-limită.
 
-Pentru mai multe informații despre acest lucru, consultați [aici](http://wiki.sa-mp.com/wiki/Controlling_Your_Server#RCON_Commands)
+Pentru mai multe informații despre acest lucru, consultați [aici](../../../server/ControllingServer#rcon-commands)
 
 ## Jucatori primesc constant "Unacceptable NickName" dar numele acestora este valid
 

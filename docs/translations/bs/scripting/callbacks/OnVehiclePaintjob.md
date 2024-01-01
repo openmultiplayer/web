@@ -40,7 +40,7 @@ Ovaj callback nije pozvan od strane `ChangeVehiclePaintjob`. Možete koristiti `
 
 ## Srodne Funkcije
 
-- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob.md): Promijeni paintjob vozila.
-- [ChangeVehicleColor](../functions/ChangeVehicleColor.md): Postavi boju vozila.
-- [OnVehicleRespray](OnVehicleRespray.md): Pozvan kada vozilo biva respray-ovano (ponovno obojeno).
-- [OnVehicleMod](OnVehicleMod.md): Pozvano kada vozilo biva modovano/uređeno.
+- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Promijeni paintjob vozila.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Postavi boju vozila.
+- [OnVehicleRespray](OnVehicleRespray): Pozvan kada vozilo biva respray-ovano (ponovno obojeno).
+- [OnVehicleMod](OnVehicleMod): Pozvano kada vozilo biva modovano/uređeno.

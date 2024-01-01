@@ -284,19 +284,19 @@ Binary trees are a very fast method of searching for data in an array by using a
 
 You have the preceding ordered array and you want to find what slot the number 7 is in (if it's in at all), in this example it's probably more efficient to just loop straight through the array to find it but that's not the point, that method increases in time linearly with the size of the array, a binary search time increases linearly as the array increases exponentially in size. I.e. an array 128 big will take twice as long to search straight through as an array 64 big, but a binary search 128 big will only take one check more than a binary search 64 big, not a lot at all.
 
-If we construct a binary tree from the data above we get: ![Imgur](https://web.archive.org/web/20190416012239im_/https://wiki.sa-mp.com/wroot/images2/f/fe/Binarytree.GIF)
+If we construct a binary tree from the data above we get: ![Imgur](https://sampwiki.blast.hk/wiki/Image:Binarytree.GIF)
 
 If you read left to right, ignoring the vertical aspect you can see that the numbers are in order. Now we can try find the 7.
 
 The start number is 14, 7 is less than 14 so we go to the slot pointed to by the left branch of 14. This brings us to 6, 7 is bigger than 6 so we go right to 9, then left again to 7. This method took 4 comparisons to find the number (including the final check to confirm that we are on 7), using a straight search would have taken 5.
 
-Lets say there is no 7, we would end up with this binary tree: ![Binarytree-7-less](https://web.archive.org/web/20190416012239im_/https://wiki.sa-mp.com/wroot/images2/e/e5/Binarytree-7-less.GIF)
+Lets say there is no 7, we would end up with this binary tree: ![Binarytree-7-less](https://sampwiki.blast.hk/wiki/Image:Binarytree-7-less.GIF)
 
 This, unlike the example above, has a single child number (the 9), as well as 2 and 0 child numbers. You only get a perfect tree when there are (2^n)-1 numbers (0, 1, 3, 7, 15, 31 ...), any other numbers will give a not quite full tree. In this case when we get to the 9, where the 7 will be, we'll find there is no left branch, meaning the 7 doesn't exist (it cannot possibly be anywhere else in the tree, think about it), so we return -1 for invalid slot.
 
 #### Balanced and unbalanced
 
-The trees in the examples above are called balanced binary trees, this means as near as possible all the branches are the same length (obviously in the second there aren't enough numbers for this to be the case but it's as near as possible). Constructing balanced trees is not easy, the generally accepted method of constructing almost balanced trees is putting the numbers in in a random order, this may mean you end up with something like this: ![Binarytree-uneven](https://web.archive.org/web/20190416012239im_/https://wiki.sa-mp.com/wroot/images2/a/a2/Binarytree-uneven.GIF)
+The trees in the examples above are called balanced binary trees, this means as near as possible all the branches are the same length (obviously in the second there aren't enough numbers for this to be the case but it's as near as possible). Constructing balanced trees is not easy, the generally accepted method of constructing almost balanced trees is putting the numbers in in a random order, this may mean you end up with something like this: ![Binarytree-uneven](https://sampwiki.blast.hk/wiki/Image:Binarytree-uneven.GIF)
 
 Obviously this tree is still valid but the right side is much larger than the left, however finding 25 still only takes 7 comparisons in this compared to 12 in the straight list. Also, as long as you start with a fairly middle number the random insertion method should produced a fairly balanced tree. The worst possible thing you can do is put the numbers in in order as then there will be no left branches at all (or right branches if done the other way), however even in this worst case the binary tree will take no longer to search than the straight list.
 

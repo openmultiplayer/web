@@ -34,7 +34,6 @@ El Armour points ki ye7atou bel fasel yarj3 3dad kemel. ken t7ot 50,15 ray bech 
 
 ## Functions teb3in el callback
 
-[SetPlayerArmour](SetPlayerArmour.md): Ta3ti armour lel player.
-[GetPlayerHealth](GetPlayerHealth.md): Ta3ref health lel player.
-[GetVehicleHealth](GetVehicleHealth.md): Ta3ref el hp mta3 el vehicle.
-
+- [SetPlayerArmour](SetPlayerArmour): Ta3ti armour lel player.
+- [GetPlayerHealth](GetPlayerHealth): Ta3ref health lel player.
+- [GetVehicleHealth](GetVehicleHealth): Ta3ref el hp mta3 el vehicle.

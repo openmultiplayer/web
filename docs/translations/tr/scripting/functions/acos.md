@@ -39,6 +39,6 @@ public OnGameModeInit()
 
 ## İlgili Fonksiyonlar
 
-- [floatsin](floatsin.md): Sinüsü belirli bir açıdan alın.
-- [floatcos](floatcos.md): Kosinüsü belirli bir açıdan alın.
-- [floattan](floattan.md): Tanjantı belirli bir açıdan alın.
+- [floatsin](floatsin): Sinüsü belirli bir açıdan alın.
+- [floatcos](floatcos): Kosinüsü belirli bir açıdan alın.
+- [floattan](floattan): Tanjantı belirli bir açıdan alın.

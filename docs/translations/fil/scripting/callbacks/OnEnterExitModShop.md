@@ -44,4 +44,4 @@ Mga Kadalasang Bugs: Nag bubungguan ang mga players kapag parehas na pumasok sa 
 
 ## Mga Kaugnay na Functions
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Maglagay ng component sa sasakyan.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Maglagay ng component sa sasakyan.

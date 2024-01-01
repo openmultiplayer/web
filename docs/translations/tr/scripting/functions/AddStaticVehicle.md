@@ -8,15 +8,15 @@ tags: ["vehicle"]
 
 Oyun moduna bir "statik" araç ekler (modeller oyuncular için önceden yüklenir).
 
-| İsim                                     | Açıklama                                 |
-| ---------------------------------------- | ---------------------------------------- |
-| modelid                                  | Aracın Model Kimliği.                    |
-| Float:spawn_X                            | Aracın X koordinatı.                     |
-| Float:spawn_Y                            | Aracın Y koordinatı.                     |
-| Float:spawn_Z                            | Aracın Z koordinatı.                     |
-| Float:z_angle                            | Araç açısının yönü.                      |
-| [color1](../resources/vehiclecolorid.md) | Birincil renk kimliği. rastgele için -1. |
-| [color2](../resources/vehiclecolorid.md) | İkincil renk kimliği. rastgele için -1.  |
+| İsim          | Açıklama                                                                |
+| ------------- | ----------------------------------------------------------------------- |
+| modelid       | Aracın Model Kimliği.                                                   |
+| Float:spawn_X | Aracın X koordinatı.                                                    |
+| Float:spawn_Y | Aracın Y koordinatı.                                                    |
+| Float:spawn_Z | Aracın Z koordinatı.                                                    |
+| Float:z_angle | Araç açısının yönü.                                                     |
+| color1        | Birincil [renk](../resources/vehiclecolorid) kimliği. rastgele için -1. |
+| color2        | İkincil [renk](../resources/vehiclecolorid) kimliği. rastgele için -1.  |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -38,6 +38,6 @@ public OnGameModeInit()
 
 ## İlgili Fonksiyonlar
 
-- [AddStaticVehicleEx](AddStaticVehicleEx.md): Özel yeniden doğma süresine sahip statik bir araç ekleyin.
-- [CreateVehicle](CreateVehicle.md): Araç oluşturun.
-- [DestroyVehicle](DestroyVehicle.md): Araç yok edin.
+- [AddStaticVehicleEx](AddStaticVehicleEx): Özel yeniden doğma süresine sahip statik bir araç ekleyin.
+- [CreateVehicle](CreateVehicle): Araç oluşturun.
+- [DestroyVehicle](DestroyVehicle): Araç yok edin.

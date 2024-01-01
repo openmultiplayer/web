@@ -39,5 +39,5 @@ To remove individual weapons from a player, set their ammo to 0 using SetPlayerA
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GivePlayerWeapon](../functions/GivePlayerWeapon.md): Give a player a weapon.
-- [GetPlayerWeapon](../functions/GetPlayerWeapon.md): Check what weapon a player is currently holding.
+- [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
+- [GetPlayerWeapon](GetPlayerWeapon): Check what weapon a player is currently holding.

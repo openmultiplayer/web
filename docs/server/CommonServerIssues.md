@@ -8,7 +8,7 @@ Most commonly it's an error in your server.cfg file or your gamemode is missing.
 
 ## Server is not working - firewall is disabled
 
-You will need to forward your ports to allow players to join your server. You can forward your ports using the PF Port Checker. Download it from: www.portforward.com If the ports are not forwarded that means you have to open them in your router. You can check the router list at [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm "http://portforward.com/english/routers/port_forwarding/routerindex.htm")
+You will need to forward your ports to allow players to join your server. You can forward your ports using the PF Port Checker. Download it from: www.portforward.com If the ports are not forwarded that means you have to open them in your router. You can check the router list at [https://portforward.com/router.htm](https://portforward.com/router.htm "https://portforward.com/router.htm")
 
 It has all the information on how to forward ports.
 
@@ -62,7 +62,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 Happens when 'out of order messages' reuses messageholelimit setting.
 
-For more information about this, refer to [this](https://open.mp/docs/server/ControllingServer#RCON_Commands)
+For more information about this, refer to [this](ControllingServer#rcon-commands)
 
 ## Players constantly getting "Unacceptable NickName" error but it is valid
 

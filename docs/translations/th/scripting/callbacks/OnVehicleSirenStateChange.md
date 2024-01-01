@@ -55,4 +55,4 @@ This callback is only called when a vehicle's siren is toggled on or off, NOT wh
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetVehicleParamsSirenState](../../scripting/functions/GetVehicleParamsSirenState.md): Check whether a vehicle's siren is on or off.
+- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.

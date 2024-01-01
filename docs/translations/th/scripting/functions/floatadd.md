@@ -37,6 +37,6 @@ public OnGameModeInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [Floatsub](../functions/Floatsub): Subtracts two floats.
-- [Floatmul](../functions/Floatmul): Multiplies two floats.
-- [Floatdiv](../functions/Floatdiv): Divides a float by another.
+- [floatsub](floatsub): Subtracts two floats.
+- [floatmul](floatmul): Multiplies two floats.
+- [floatdiv](floatdiv): Divides a float by another.

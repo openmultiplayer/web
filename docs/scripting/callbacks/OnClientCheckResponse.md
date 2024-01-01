@@ -6,7 +6,7 @@ tags: []
 
 ## Description
 
-This callback is called when a SendClientCheck request completes.
+This callback is called when a [SendClientCheck](../functions/SendClientCheck) request completes.
 
 | Name          | Description                       |
 | ------------- | --------------------------------- |

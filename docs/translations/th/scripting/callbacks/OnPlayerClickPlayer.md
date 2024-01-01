@@ -50,4 +50,4 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [OnPlayerClickTextDraw](../../scripting/callbacks/OnPlayerClickTextDraw.md): ถูกเรียกเมื่อผู้เล่นคลิกบน Textdraw
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): ถูกเรียกเมื่อผู้เล่นคลิกบน Textdraw

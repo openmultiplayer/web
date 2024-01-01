@@ -70,5 +70,4 @@ if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 - [strpack](strpack): قرار دادن یک رشته به رشته مقصد.
 - [strval](strval): تبدیل کردن یک رشته به عدد صحیح.
 - [strcat](strcat): پیوند دادن دو رشته در یک مرجع مقصد.
-- http://www.compuphase.com/pawn/String_Manipulation.pdf
 </div>

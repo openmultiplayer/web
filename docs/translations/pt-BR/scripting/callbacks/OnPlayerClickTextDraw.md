@@ -75,5 +75,5 @@ A área 'clicável' é definida pelo TextDrawTextSize. Os parâmetros de X e Y p
 
 ## Funções Relacionadas
 
-- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw.md): Chamado quando o jogador clica em uma player-textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Chamado quando um jogador clica em outro.
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Chamado quando o jogador clica em uma player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Chamado quando um jogador clica em outro.

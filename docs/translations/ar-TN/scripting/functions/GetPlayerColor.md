@@ -3,6 +3,7 @@
 ## Wasf
 
 Tekhou el color mta3 el player's name wala el bilp eli fel map, w matekhdem ken mba3d SetPlayerColor
+
 | Argument      | el wasf                                                    |
 | ------------- | -----------------------------------------------------------|     
 | playerid      | el ID mta3 el player eli t7eb tekhou el color te3ou        |
@@ -34,5 +35,5 @@ GetPlayerColor bech treturni 0 ken masta3maltech SetPlayerColor 9bal.
 
 ## Functions tab3in el callback
 
-- [SetPlayerColor](SetPlayerColor.md): tbadel el color mta3 el player.
-- [ChangeVehicleColor](ChangeVehicleColor.md): tbadel el color mta3 el vehicle.
+- [SetPlayerColor](SetPlayerColor): tbadel el color mta3 el player.
+- [ChangeVehicleColor](ChangeVehicleColor): tbadel el color mta3 el vehicle.

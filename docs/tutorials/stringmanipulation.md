@@ -144,7 +144,7 @@ If you were to output `message_5[0]`, you would get **B**, weird right? Well, no
 
 You have `65 + 1`, that returns `66`, checking the _ASCII_ table, you will find that `66` is the numeric representation of the character “_B_” (_capitalized_). So, the snippet above is basically the same as doing: `message_5[0] = 'B'`;
 
-For reference, use [this ASCII table](http://www.asciitable.com/).
+For reference, use [this ASCII table](https://www.asciitable.com).
 
 You can also perform the same operation between multiple characters or a mix of both, them and numbers, here are few examples;
 
@@ -692,7 +692,7 @@ This will send the following message to everyone (_and I'm no Italian_):
 
 Keep in mind that the hexadecimal notation is case insensitive, so typing `0xFFC0E1FF` is the same as typing `0xfFC0e1Ff`, the same goes for embedded colors, `{401C15}` is the same as `{401c15}`.
 
-Sometimes, working with colors can prove to be quite the labor, It’s not that easy to go around remembering all of those long hexadecimal numbers like no big deal, You should always have a reference to go back to, there are plenty of online color pickers you can use, you can simply google “_color picker_”, and choose between thousands of them, let me do that on you if you don’t mind, [here’s a simple tool](https://www.webpagefx.com/web-design/color-picker/) that I recommend using when working with colors.
+Sometimes, working with colors can prove to be quite the labor, It’s not that easy to go around remembering all of those long hexadecimal numbers like no big deal, You should always have a reference to go back to, there are plenty of online color pickers you can use, you can simply google “_color picker_”, and choose between thousands of them, let me do that on you if you don’t mind, [here’s a simple tool](https://www.webfx.com/web-design/color-picker/) that I recommend using when working with colors.
 
 One of the problems that people find, is managing their workflow, which if done right, it facilitates the work pacing, and makes it less painful to work around your projects, while color picker tools are of a great help, you can still waste plenty of time going on and off to it every time you need to pick a color, the frustration of that can be as annoying as a pizza with pineapples, luckily, you can take advantage of predefined constants, and define your most used colors for later usage, here’s a simple example;
 
@@ -1426,7 +1426,7 @@ Of course, this only concerns functions that support formatting, such as `printf
 
 - **The `%q` specifier**
 
-This one doesn’t hold any big importance in our main topic, it’ widely used to escape sensitive strings when working with _SQLite_, and trust me, nobody wants to fall under the [Bobby table](http://bobby-tables.com/about) case.
+This one doesn’t hold any big importance in our main topic, it’ widely used to escape sensitive strings when working with _SQLite_, and trust me, nobody wants to fall under the [Bobby table](https://bobby-tables.com/about) case.
 
 Back when we introduced the placeholders, we reference a specific formula concerning them, as a reminder, here it is;
 
@@ -1673,24 +1673,24 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 
 #### Similar tutorials
 
-- [String formatting](http://web-old.archive.org/web/20190419210950/https://forum.sa-mp.com/showthread.php?t=265433) by [krogsgaard20](http://web-old.archive.org/web/20190421052543/https://forum.sa-mp.com/member.php?u=126724)
-- [Understanding Strings](http://web-old.archive.org/web/20190420182625/https://forum.sa-mp.com/showthread.php?t=284112) by [\[HiC\]TheKiller](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=23565)
-- [How to use strcmp](http://web-old.archive.org/web/20190419172015/https://forum.sa-mp.com/showthread.php?t=199796) by [Ash.](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=78597)
-- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](http://web-old.archive.org/web/20190419102936/https://forum.sa-mp.com/showthread.php?t=318212) by [iPLEAOMAX](http://web-old.archive.org/web/20190419112304/https://forum.sa-mp.com/member.php?u=122705)
-- [Tips and Tricks](http://web-old.archive.org/web/20190419112018/https://forum.sa-mp.com/showthread.php?t=216730) by [Slice](https://github.com/oscar-broman)
-- [Code optimization](http://web-old.archive.org/web/20190419205837/https://forum.sa-mp.com/showthread.php?t=571550) by [Misiur](http://web-old.archive.org/web/20190419111434/https://forum.sa-mp.com/member.php?u=55934)
-- [Packed strings](http://web-old.archive.org/web/20190419172431/https://forum.sa-mp.com/showthread.php?t=480529) by [Emmet\_](https://github.com/emmet-jones)
+- [String formatting](https://sampforum.blast.hk/showthread.php?tid=265433) by [krogsgaard20](https://sampforum.blast.hk/member.php?action=profile&uid=126724)
+- [Understanding Strings](https://sampforum.blast.hk/showthread.php?tid=284112) by [\[HiC\]TheKiller](https://sampforum.blast.hk/member.php?action=profile&uid=23565)
+- [How to use strcmp](https://sampforum.blast.hk/showthread.php?tid=199796) by [Ash.](https://sampforum.blast.hk/member.php?action=profile&uid=78597)
+- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](https://sampforum.blast.hk/showthread.php?tid=318212) by [iPLEAOMAX](https://sampforum.blast.hk/member.php?action=profile&uid=122705)
+- [Tips and Tricks](https://sampforum.blast.hk/showthread.php?tid=216730) by [Slice](https://github.com/oscar-broman)
+- [Code optimization](https://sampforum.blast.hk/showthread.php?tid=571550) by [Misiur](https://sampforum.blast.hk/member.php?action=profile&uid=55934)
+- [Packed strings](https://sampforum.blast.hk/showthread.php?tid=480529) by [Emmet\_](https://github.com/emmet-jones)
 - [IRC string formatting](https://github.com/myano/jenni/wiki/IRC-String-Formatting) by [myano](https://github.com/myano)
-- [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) by [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
+- [String manupilation](https://web.archive.org/web/20190416122537/https://www.compuphase.com/pawn/String_Manipulation.pdf) by [CompuPhase](https://www.compuphase.com/)
 - [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
-- [An in-depth look at binary and binary operators](http://web-old.archive.org/web/20190419095051/https://forum.sa-mp.com/showthread.php?t=177523) by [Kyosaur](http://web-old.archive.org/web/20190419205838/https://forum.sa-mp.com/member.php?u=23990)
+- [An in-depth look at binary and binary operators](https://sampforum.blast.hk/showthread.php?tid=177523) by [Kyosaur](https://sampforum.blast.hk/member.php?action=profile&uid=23990)
 
 #### Related includes/plugins/contributers
 
-- [Westie](http://web-old.archive.org/web/20190419205841/https://forum.sa-mp.com/member.php?u=56481)'s [strlib](http://web-old.archive.org/web/20200923234356/https://forum.sa-mp.com/showthread.php?t=85697)
+- [Westie](https://sampforum.blast.hk/member.php?action=profile&uid=56481)'s [strlib](https://sampforum.blast.hk/showthread.php?tid=85697)
 - [Slice](https://github.com/oscar-broman)'s [strlib](https://github.com/oscar-broman/strlib)
 - [Slice](https://github.com/oscar-broman)'s [formatex](https://github.com/Southclaws/formatex)
-- [corne](http://web-old.archive.org/web/20190419205840/https://forum.sa-mp.com/member.php?u=98345)'s [y_stringhash](http://web-old.archive.org/web/20190419205838/https://forum.sa-mp.com/showthread.php?t=571305)
+- [corne](https://sampforum.blast.hk/member.php?action=profile&uid=98345)'s [y_stringhash](https://sampforum.blast.hk/showthread.php?tid=571305)
 - [Y-Less](https://github.com/Y-Less)'s [sscanf](https://github.com/maddinat0r/sscanf)
 
 #### References
@@ -1705,7 +1705,7 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 - [Control Structures](../scripting/language/ControlStructures)
 - [Null character](https://en.wikipedia.org/wiki/Null_character)
 - [RGBA color space](https://en.wikipedia.org/wiki/RGBA_color_space)
-- [Color picker](https://www.webpagefx.com/web-design/color-picker/)
+- [Color picker](https://www.webfx.com/web-design/color-picker/)
 - [TextDrawColor](../scripting/functions/TextDrawColor)
 - [Gametext styles](../scripting/resources/gametextstyles)
 - [Color list](../scripting/resources/colorslist)

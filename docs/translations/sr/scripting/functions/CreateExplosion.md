@@ -46,4 +46,4 @@ Postoji limit koji ogranicava koliko igrac moze videti eksplozija odjednom. To j
 
 ## Srodne Funkcije
 
-- [CreateExplosionForPlayer](CreateExplosionForPlayer.md): Kreira eksploziju koja je vidljiva samo jednom igracu.
+- [CreateExplosionForPlayer](CreateExplosionForPlayer): Kreira eksploziju koja je vidljiva samo jednom igracu.

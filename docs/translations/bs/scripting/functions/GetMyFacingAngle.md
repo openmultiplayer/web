@@ -31,4 +31,4 @@ printf("Trenutno posmatram %f!", Angle);
 
 ## Srodne Funkcije
 
-- [SetMyFacingAngle](../functions/SetMyFacingAngle): Postavi ugao posmatranja NPC-u.
+- [SetMyFacingAngle](SetMyFacingAngle): Postavi ugao posmatranja NPC-u.

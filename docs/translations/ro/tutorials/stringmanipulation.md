@@ -142,7 +142,7 @@ Dacă ar fi să afișezi `message_5 [0]`, ai primi **B**, ciudat nu? Ei bine, nu
 
 Aveți `65 + 1`, care returnează `66`, verificând tabelul _ASCII_, veți găsi că `66` este reprezentarea numerică a caracterului `_B_` (_capitalized_). Deci, fragmentul de mai sus este în esență același cu a face: `message_5 [0] = 'B'`;
 
-Pentru referință, utilizați [acest tabel ASCII](http://www.asciitable.com/).
+Pentru referință, utilizați [acest tabel ASCII](https://www.asciitable.com).
 
 De asemenea, puteți efectua aceeași operație între mai multe caractere sau o combinație a acestora, a acestora și a numerelor, iată câteva exemple;
 
@@ -1418,7 +1418,7 @@ Desigur, acest lucru se referă doar la funcții care acceptă formatarea, cum a
 
 - ** Specificatorul `%q` **
 
-Acesta nu are o mare importanță în subiectul nostru principal, este folosit pe scară largă pentru a scăpa de șirurile sensibile atunci când lucrați cu _SQLite_ și credeți-mă, nimeni nu vrea să cadă sub cazul [tabelului lui Bobby](http://bobby-tables.com/about).
+Acesta nu are o mare importanță în subiectul nostru principal, este folosit pe scară largă pentru a scăpa de șirurile sensibile atunci când lucrați cu _SQLite_ și credeți-mă, nimeni nu vrea să cadă sub cazul [tabelului lui Bobby](https://bobby-tables.com/about).
 
 Când am introdus substituenții, facem referire la o formulă specifică care îi privește, ca un memento, iată-l;
 
@@ -1664,24 +1664,24 @@ Nu lăsați acest exemplu să vă păstreze sau să vă limitați așteptările 
 
 #### Tutoriale similare
 
-- [String formatting](http://web-old.archive.org/web/20190419210950/https://forum.sa-mp.com/showthread.php?t=265433) de [krogsgaard20](http://web-old.archive.org/web/20190421052543/https://forum.sa-mp.com/member.php?u=126724)
-- [Understanding Strings](http://web-old.archive.org/web/20190420182625/https://forum.sa-mp.com/showthread.php?t=284112) de [\[HiC\]TheKiller](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=23565)
-- [How to use strcmp](http://web-old.archive.org/web/20190419172015/https://forum.sa-mp.com/showthread.php?t=199796) de [Ash.](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=78597)
-- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](http://web-old.archive.org/web/20190419102936/https://forum.sa-mp.com/showthread.php?t=318212) de [iPLEAOMAX](http://web-old.archive.org/web/20190419112304/https://forum.sa-mp.com/member.php?u=122705)
-- [Tips and Tricks](http://web-old.archive.org/web/20190419112018/https://forum.sa-mp.com/showthread.php?t=216730) de [Slice](https://github.com/oscar-broman)
-- [Code optimization](http://web-old.archive.org/web/20190419205837/https://forum.sa-mp.com/showthread.php?t=571550) de [Misiur](http://web-old.archive.org/web/20190419111434/https://forum.sa-mp.com/member.php?u=55934)
-- [Packed strings](http://web-old.archive.org/web/20190419172431/https://forum.sa-mp.com/showthread.php?t=480529) de [Emmet\_](https://github.com/emmet-jones)
+- [String formatting](https://sampforum.blast.hk/showthread.php?tid=265433) de [krogsgaard20](https://sampforum.blast.hk/member.php?action=profile&uid=126724)
+- [Understanding Strings](https://sampforum.blast.hk/showthread.php?tid=284112) de [\[HiC\]TheKiller](https://sampforum.blast.hk/member.php?action=profile&uid=23565)
+- [How to use strcmp](https://sampforum.blast.hk/showthread.php?tid=199796) de [Ash.](https://sampforum.blast.hk/member.php?action=profile&uid=78597)
+- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](https://sampforum.blast.hk/showthread.php?tid=318212) de [iPLEAOMAX](https://sampforum.blast.hk/member.php?action=profile&uid=122705)
+- [Tips and Tricks](https://sampforum.blast.hk/showthread.php?tid=216730) de [Slice](https://github.com/oscar-broman)
+- [Code optimization](https://sampforum.blast.hk/showthread.php?tid=571550) de [Misiur](https://sampforum.blast.hk/member.php?action=profile&uid=55934)
+- [Packed strings](https://sampforum.blast.hk/showthread.php?tid=480529) de [Emmet\_](https://github.com/emmet-jones)
 - [IRC string formatting](https://github.com/myano/jenni/wiki/IRC-String-Formatting) de [myano](https://github.com/myano)
-- [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) de [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
+- [String manupilation](https://web.archive.org/web/20190416122537/https://www.compuphase.com/pawn/String_Manipulation.pdf) de [CompuPhase](https://www.compuphase.com/)
 - [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
-- [An in-depth look at binary and binary operators](http://web-old.archive.org/web/20190419095051/https://forum.sa-mp.com/showthread.php?t=177523) de [Kyosaur](http://web-old.archive.org/web/20190419205838/https://forum.sa-mp.com/member.php?u=23990)
+- [An in-depth look at binary and binary operators](https://sampforum.blast.hk/showthread.php?tid=177523) de [Kyosaur](https://sampforum.blast.hk/member.php?action=profile&uid=23990)
 
 #### Relatari/plugin-uri/contributii relatate
 
-- [Westie](http://web-old.archive.org/web/20190419205841/https://forum.sa-mp.com/member.php?u=56481)'s [strlib](http://web-old.archive.org/web/20200923234356/https://forum.sa-mp.com/showthread.php?t=85697)
+- [Westie](https://sampforum.blast.hk/member.php?action=profile&uid=56481)'s [strlib](https://sampforum.blast.hk/showthread.php?tid=85697)
 - [Slice](https://github.com/oscar-broman)'s [strlib](https://github.com/oscar-broman/strlib)
 - [Slice](https://github.com/oscar-broman)'s [formatex](https://github.com/Southclaws/formatex)
-- [corne](http://web-old.archive.org/web/20190419205840/https://forum.sa-mp.com/member.php?u=98345)'s [y_stringhash](http://web-old.archive.org/web/20190419205838/https://forum.sa-mp.com/showthread.php?t=571305)
+- [corne](https://sampforum.blast.hk/member.php?action=profile&uid=98345)'s [y_stringhash](https://sampforum.blast.hk/showthread.php?tid=571305)
 - [Y-Less](https://github.com/Y-Less)'s [sscanf](https://github.com/maddinat0r/sscanf)
 
 #### Referințe

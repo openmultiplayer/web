@@ -32,6 +32,7 @@ Ovaj callback je pozvan kada igrač zatraži preuzimanje custom modela.
 #define DOWNLOAD_REQUEST_EMPTY        (0)
 #define DOWNLOAD_REQUEST_MODEL_FILE   (1)
 #define DOWNLOAD_REQUEST_TEXTURE_FILE (2)
+
 new baseurl[] = "https://files.sa-mp.com/server";
 
 public OnPlayerRequestDownload(playerid, type, crc)
@@ -60,4 +61,4 @@ public OnPlayerRequestDownload(playerid, type, crc)
 
 ## Srodne Funkcije
 
-- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading.md): Pozvano kada igrač završi sa preuzimanjem custom modela.
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Pozvano kada igrač završi sa preuzimanjem custom modela.

@@ -58,18 +58,18 @@ Key mapping kodovi ( kao sto su ~k~~VEHICLE_ENTER_EXIT~ ne rade preko 255og kara
 
 ## Srodne Funkcije
 
-- [PlayerTextDrawDestroy](PlayerTextDrawDestroy.md): Unistava player textdraw.
-- [PlayerTextDrawColor](PlayerTextDrawColor.md): Podesava boju teksta od player textdraw-a.
-- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor.md): Podesava boju boxa od player textdraw-a.
-- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor.md): Podesava pozadinsku boju od player textdraw-a.
-- [PlayerTextDrawAlignment](PlayerTextDrawAlignment.md): Podesava poravnavanje od player textdraw-a.
-- [PlayerTextDrawFont](PlayerTextDrawFont.md): Podesava font od player textdraw-a.
-- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize.md): Podesava velicinu slova teksta od player textdraw-a.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize.md): Podesava velicinu od player textdraw-a ( Za OnPlayerClickPlayerTextdraw ).
-- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline.md): Podesava outline od player textdraw-a.
-- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow.md): Podesava senku od player textdraw-a.
-- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional.md): Podesava razmak teksta od player textdraw-a.
-- [PlayerTextDrawUseBox](PlayerTextDrawUseBox.md): Pali bog od player textdraw-a.
-- [PlayerTextDrawSetString](PlayerTextDrawSetString.md): Podesava tekst od player textdraw-a.
-- [PlayerTextDrawShow](PlayerTextDrawShow.md): Prikaze player textdraw.
-- [PlayerTextDrawHide](PlayerTextDrawHide.md): Sakrije player textdraw.
+- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Unistava player textdraw.
+- [PlayerTextDrawColor](PlayerTextDrawColor): Podesava boju teksta od player textdraw-a.
+- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Podesava boju boxa od player textdraw-a.
+- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Podesava pozadinsku boju od player textdraw-a.
+- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Podesava poravnavanje od player textdraw-a.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Podesava font od player textdraw-a.
+- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Podesava velicinu slova teksta od player textdraw-a.
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Podesava velicinu od player textdraw-a ( Za OnPlayerClickPlayerTextdraw ).
+- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Podesava outline od player textdraw-a.
+- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Podesava senku od player textdraw-a.
+- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Podesava razmak teksta od player textdraw-a.
+- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Pali bog od player textdraw-a.
+- [PlayerTextDrawSetString](PlayerTextDrawSetString): Podesava tekst od player textdraw-a.
+- [PlayerTextDrawShow](PlayerTextDrawShow): Prikaze player textdraw.
+- [PlayerTextDrawHide](PlayerTextDrawHide): Sakrije player textdraw.

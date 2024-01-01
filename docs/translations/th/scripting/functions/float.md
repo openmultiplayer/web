@@ -32,5 +32,5 @@ FloatValue = float(Value);   // Converts Value(52) into a float and stores it in
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [floatround](../functions/floatround): Convert a float to an integer (rounding).
-- [floatstr](../functions/floatstr): Convert an string to a float.
+- [floatround](floatround): Convert a float to an integer (rounding).
+- [floatstr](floatstr): Convert an string to a float.

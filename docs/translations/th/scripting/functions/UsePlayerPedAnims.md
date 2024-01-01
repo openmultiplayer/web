@@ -32,5 +32,5 @@ Only works when placed under OnGameModeInit. Not using this function causes two-
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [ApplyAnimation](../functions/ApplyAnimation.md): Apply an animation to a player.
-- [ClearAnimations](../functions/ClearAnimations.md): Clear any animations a player is performing.
+- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.
+- [ClearAnimations](ClearAnimations): Clear any animations a player is performing.

@@ -33,7 +33,5 @@ Famma vehicles 3andhom juste 1 color w famma vehicles el colors mte3hom maytbadl
 
 ## Functions teb3in el callback
 
-[ChangeVehiclePaintjob](ChangeVehiclePaintjob.md): Tbadel el paintjob mta3 el vehicle.
-[OnVehicleRespray](OnVehicleRespray.md): Tetcalla wa9teli el vehicle todkhol fel garage eli ybadel el loun.
-
-
+- [ChangeVehiclePaintjob](ChangeVehiclePaintjob): Tbadel el paintjob mta3 el vehicle.
+- [OnVehicleRespray](../callbacks/OnVehicleRespray): Tetcalla wa9teli el vehicle todkhol fel garage eli ybadel el loun.

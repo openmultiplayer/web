@@ -30,5 +30,5 @@ playerskin = GetPlayerCustomSkin(playerid);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetPlayerSkin](../functions/GetPlayerSkin): Get a player's current skin.
-- [SetPlayerSkin](../functions/SetPlayerSkin): Set a player's skin.
+- [GetPlayerSkin](GetPlayerSkin): Get a player's current skin.
+- [SetPlayerSkin](SetPlayerSkin): Set a player's skin.

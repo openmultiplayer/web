@@ -10,11 +10,11 @@ tags: []
 
 This callback is called when a player enters or exits a mod shop.
 
-| Name       | Description                                                                  |
-| ---------- | ---------------------------------------------------------------------------- |
-| playerid   | The ID of the player that entered or exited the modshop                      |
-| enterexit  | 1 if the player entered or 0 if they exited                                  |
-| interiorid | The interior ID of the modshop that the player is entering (or 0 if exiting) |
+| Name       | Description                                                                                              |
+| ---------- | -------------------------------------------------------------------------------------------------------- |
+| playerid   | The ID of the player that entered or exited the modshop                                                  |
+| enterexit  | 1 if the player entered or 0 if they exited                                                              |
+| interiorid | The [interior ID](../resources/interiorids) of the modshop that the player is entering (or 0 if exiting) |
 
 ## Returns
 

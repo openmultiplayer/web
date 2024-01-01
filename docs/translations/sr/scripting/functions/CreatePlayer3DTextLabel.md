@@ -62,10 +62,10 @@ Ako je text[] prazan, igraci blizu labela mogu da crash-aju.
 
 ## Related Functions
 
-- [Create3DTextLabel](Create3DTextLabel.md): Kreira 3D Text Label.
-- [Delete3DTextLabel](Delete3DTextLabel.md): Brise 3D text label.
-- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer.md): Zakaci 3D text label za igraca.
-- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle.md): Zakaci 3D text label za vozilo.
-- [Update3DTextLabelText](Update3DTextLabelText.md): Promeni tekst 3D text labela.
-- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel.md): Prise Player 3D text label.
-- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText.md): Promeni tekst Player 3D text labela.
+- [Create3DTextLabel](Create3DTextLabel): Kreira 3D Text Label.
+- [Delete3DTextLabel](Delete3DTextLabel): Brise 3D text label.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Zakaci 3D text label za igraca.
+- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Zakaci 3D text label za vozilo.
+- [Update3DTextLabelText](Update3DTextLabelText): Promeni tekst 3D text labela.
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Prise Player 3D text label.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Promeni tekst Player 3D text labela.

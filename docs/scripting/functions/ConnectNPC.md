@@ -33,7 +33,7 @@ public OnGameModeInit()
 
 :::tip
 
-NPCs do not have nametags. These can be scripted with Attach3DTextLabelToPlayer.
+NPCs do not have nametags. These can be scripted with [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer).
 
 :::
 

@@ -12,7 +12,7 @@ Ova funkcija je dodana u SA-MP 0.3z R2-2 i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Ovaj callback se poziva kada IP adresa pokuša da se konektuje na server. Da blokirate nadolazeće konekcije, koristite BlockIpAddress.
+Ovaj callback se poziva kada IP adresa pokuša da se konektuje na server. Da blokirate nadolazeće konekcije, koristite [BlockIpAddress](../functions/BlockIpAddress).
 
 | Name         | Description                                    |
 | ------------ | ---------------------------------------------- |
@@ -40,5 +40,5 @@ public OnIncomingConnection(playerid, ip_address[], port)
 
 ## Srodne Funkcije
 
-- [BlockIpAddress](../functions/BlockIpAddress.md): Blokirajte IP adresu od konektovanja na server za postavljeno vrijeme.
-- [UnBlockIpAddress](../functions/UnBlockIpAddress.md): Odblokirajte IP koji ste prethodno blokirali.
+- [BlockIpAddress](../functions/BlockIpAddress): Blokirajte IP adresu od konektovanja na server za postavljeno vrijeme.
+- [UnBlockIpAddress](../functions/UnBlockIpAddress): Odblokirajte IP koji ste prethodno blokirali.

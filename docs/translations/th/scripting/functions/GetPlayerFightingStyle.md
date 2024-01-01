@@ -33,4 +33,4 @@ if (GetPlayerFightingStyle(playerid) == FIGHT_STYLE_NORMAL)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPlayerFightingStyle](../functions/SetPlayerFightingStyle): Set a player's fighting style.
+- [SetPlayerFightingStyle](SetPlayerFightingStyle): Set a player's fighting style.

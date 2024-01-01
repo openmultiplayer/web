@@ -42,5 +42,5 @@ El health mta3 el player ki t7oto 255 keyenk 7attitou 0 w kol matzid 1 fou9 el 2
 
 ## Functions tab3in el callback
 
-- [SetPlayerHealth](SetPlayerHealth.md): Ta3ti health lel player.
-- [GetVehicleHealth](GetVehicleHealth.md): Tchouf el hp mta3 el vehicle.
+- [SetPlayerHealth](SetPlayerHealth): Ta3ti health lel player.
+- [GetVehicleHealth](GetVehicleHealth): Tchouf el hp mta3 el vehicle.

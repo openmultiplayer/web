@@ -32,7 +32,7 @@ public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
 
 ## Srodne Funkcije
 
-- [SetPlayerInterior](../functions/SetPlayerInterior.md): Postavlja igraču enterijer.
-- [GetPlayerInterior](../functions/GetPlayerInterior.md): Dobijate trenutni enterijer igrača.
-- [LinkVehicleToInterior](../functions/LinkVehicleToInterior.md): Promijenite enterijer u kojem se nalazi vozilo.
-- [OnPlayerStateChange](OnPlayerStateChange.md): Pozvana kada igrač promijeni stanje.
+- [SetPlayerInterior](../functions/SetPlayerInterior): Postavlja igraču enterijer.
+- [GetPlayerInterior](../functions/GetPlayerInterior): Dobijate trenutni enterijer igrača.
+- [LinkVehicleToInterior](../functions/LinkVehicleToInterior): Promijenite enterijer u kojem se nalazi vozilo.
+- [OnPlayerStateChange](OnPlayerStateChange): Pozvana kada igrač promijeni stanje.

@@ -12,7 +12,7 @@ Ova funkcija je dodana u SA-MP 0.3.DL i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač dovrši preuzimanje custom modela. Za više informmacija o tome kako dodati custom modele u vaš server, pogledajte pogledajte nit izdanja i ovaj vodič.
+Ovaj callback je pozvan kada igrač dovrši preuzimanje custom modela. Za više informmacija o tome kako dodati custom modele u vaš server, pogledajte pogledajte [nit izdanja](https://sampforum.blast.hk/showthread.php?tid=644105) i [ovaj vodič](https://sampforum.blast.hk/showthread.php?tid=644123).
 
 | Ime          | Deskripcija                                                                             |
 | ------------ | --------------------------------------------------------------------------------------- |

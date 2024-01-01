@@ -31,5 +31,5 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 ## Funções Relacionadas
 
-- [GetPlayerMoney](GetPlayerMoney.md): Retorna quanto dinheiro um jogador tem.
-- [GivePlayerMoney](GivePlayerMoney.md): Dê dinheiro a um jogador.
+- [GetPlayerMoney](GetPlayerMoney): Retorna quanto dinheiro um jogador tem.
+- [GivePlayerMoney](GivePlayerMoney): Dê dinheiro a um jogador.

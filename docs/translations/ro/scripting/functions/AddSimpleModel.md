@@ -54,4 +54,4 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Funcții conexe
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Apelat când un jucător termină de descărcat modele personalizate.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Apelat când un jucător termină de descărcat modele personalizate.

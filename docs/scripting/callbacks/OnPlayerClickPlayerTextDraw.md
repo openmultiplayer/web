@@ -8,7 +8,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Description
 
-This callback is called when a player clicks on a player-textdraw. It is not called when player cancels the select mode (ESC) - however, OnPlayerClickTextDraw is.
+This callback is called when a player clicks on a player-textdraw. It is not called when player cancels the select mode (ESC) - however, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) is.
 
 | Name         | Description                                             |
 | ------------ | ------------------------------------------------------- |
@@ -70,7 +70,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-When a player presses ESC to cancel selecting a textdraw, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) is called with a textdraw ID of 'INVALID_TEXT_DRAW'. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) won't be called also.
+When a player presses ESC to cancel selecting a textdraw, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) is called with a textdraw ID of 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw won't be called also.
 
 :::
 

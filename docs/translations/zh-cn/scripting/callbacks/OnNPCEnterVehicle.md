@@ -27,4 +27,4 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 
 ## 相关回调
 
-- [OnNPCExitVehicle](../callbacks/OnNPCExitVehicle): 当 NPC 离开车辆时被调用。
+- [OnNPCExitVehicle](OnNPCExitVehicle): 当 NPC 离开车辆时被调用。

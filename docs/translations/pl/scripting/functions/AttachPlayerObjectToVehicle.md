@@ -51,23 +51,23 @@ Obiekt musi zostać utworzony, zanim spróbujemy przyczepić go do pojazdu.
 
 ## Powiązane funkcje
 
-- [CreatePlayerObject](CreatePlayerObject.md): Tworzy obiekt dla konkretnego gracza.
-- [DestroyPlayerObject](DestroyPlayerObject.md): Kasuje obiekt gracza.
-- [IsValidPlayerObject](IsValidPlayerObject.md): Sprawdza, czy podany obiekt gracza istnieje.
-- [MovePlayerObject](MovePlayerObject.md): Przesuwa obiekt gracza.
-- [StopPlayerObject](StopPlayerObject.md): Zatrzymuje obiekt gracza.
-- [SetPlayerObjectRot](SetPlayerObjectRot.md): Ustawia rotację obiektu gracza.
-- [GetPlayerObjectPos](GetPlayerObjectPos.md): Podaje pozycję obiektu gracza.
-- [SetPlayerObjectPos](SetPlayerObjectPos.md): Ustawia pozycję obiektu gracza.
-- [GetPlayerObjectRot](GetPlayerObjectRot.md): Podaje rotację obiektu gracza.
-- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer.md): Przyczepia obiekt gracza do gracza.
-- [CreateObject](CreateObject.md): Tworzy obiekt.
-- [DestroyObject](DestroyObject.md): Kasuje obiekt.
-- [IsValidObject](IsValidObject.md): Sprawdza, czy podany obiekt istnieje.
-- [MoveObject](MoveObject.md): Przesuwa obiekt.
-- [StopObject](StopObject.md): Zatrzymuje obiekt.
-- [SetObjectPos](SetObjectPos.md): Ustawia pozycję obiektu.
-- [SetObjectRot](SetObjectRot.md): Ustawia rotację obiektu.
-- [GetObjectPos](GetObjectPos.md): Podaje pozycję obiektu.
-- [GetObjectRot](GetObjectRot.md): Podaje rotację obiektu.
-- [AttachObjectToPlayer](AttachObjectToPlayer.md): Przyczepia obiekt do gracza.
+- [CreatePlayerObject](CreatePlayerObject): Tworzy obiekt dla konkretnego gracza.
+- [DestroyPlayerObject](DestroyPlayerObject): Kasuje obiekt gracza.
+- [IsValidPlayerObject](IsValidPlayerObject): Sprawdza, czy podany obiekt gracza istnieje.
+- [MovePlayerObject](MovePlayerObject): Przesuwa obiekt gracza.
+- [StopPlayerObject](StopPlayerObject): Zatrzymuje obiekt gracza.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Ustawia rotację obiektu gracza.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Podaje pozycję obiektu gracza.
+- [SetPlayerObjectPos](SetPlayerObjectPos): Ustawia pozycję obiektu gracza.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Podaje rotację obiektu gracza.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Przyczepia obiekt gracza do gracza.
+- [CreateObject](CreateObject): Tworzy obiekt.
+- [DestroyObject](DestroyObject): Kasuje obiekt.
+- [IsValidObject](IsValidObject): Sprawdza, czy podany obiekt istnieje.
+- [MoveObject](MoveObject): Przesuwa obiekt.
+- [StopObject](StopObject): Zatrzymuje obiekt.
+- [SetObjectPos](SetObjectPos): Ustawia pozycję obiektu.
+- [SetObjectRot](SetObjectRot): Ustawia rotację obiektu.
+- [GetObjectPos](GetObjectPos): Podaje pozycję obiektu.
+- [GetObjectRot](GetObjectRot): Podaje rotację obiektu.
+- [AttachObjectToPlayer](AttachObjectToPlayer): Przyczepia obiekt do gracza.

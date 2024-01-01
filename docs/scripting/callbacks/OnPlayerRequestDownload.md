@@ -10,11 +10,11 @@ tags: ["player"]
 
 This callback is called when a player request for custom model downloads.
 
-| Name     | Description                                              |
-| -------- | -------------------------------------------------------- |
-| playerid | The ID of the player that request custom model download. |
-| type     | The type of the request (see below).                     |
-| crc      | The CRC checksum of custom model file.                   |
+| Name     | Description                                                                  |
+| -------- | ---------------------------------------------------------------------------- |
+| playerid | The ID of the player that request custom model download.                     |
+| type     | The type of the request ([see below](OnPlayerRequestDownload#request-type)). |
+| crc      | The CRC checksum of custom model file.                                       |
 
 ## Returns
 
@@ -22,12 +22,17 @@ This callback is called when a player request for custom model downloads.
 
 1 - Accept the download request
 
-## Examples
+## Request Type
 
 ```c
 #define DOWNLOAD_REQUEST_EMPTY        (0)
 #define DOWNLOAD_REQUEST_MODEL_FILE   (1)
 #define DOWNLOAD_REQUEST_TEXTURE_FILE (2)
+```
+
+## Examples
+
+```c
 new baseurl[] = "https://files.sa-mp.com/server";
 
 public OnPlayerRequestDownload(playerid, type, crc)

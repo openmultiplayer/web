@@ -46,5 +46,5 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 
 ## Srodne Funkcije
 
-- [CreatePickup](../functions/CreatePickup.md): Kreiraj pickup.
-- [DestroyPickup](../functions/DestroyPickup.md): Uništi pickup.
+- [CreatePickup](../functions/CreatePickup): Kreiraj pickup.
+- [DestroyPickup](../functions/DestroyPickup): Uništi pickup.

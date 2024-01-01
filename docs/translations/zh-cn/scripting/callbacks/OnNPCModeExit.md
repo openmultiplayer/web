@@ -22,4 +22,4 @@ public OnNPCModeExit()
 
 ## 相关回调
 
-- [OnNPCModeInit](../callbacks/OnNPCModeInit): 在加载 NPC 脚本时调用。
+- [OnNPCModeInit](OnNPCModeInit): 在加载 NPC 脚本时调用。

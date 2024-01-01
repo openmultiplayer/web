@@ -41,4 +41,4 @@ Ovaj callback je također pozvan kada igrač pritisne F4.
 
 ## Srodne Funkcije
 
-- [AddPlayerClass](../functions/AddPlayerClass.md): Dodaj klasu.
+- [AddPlayerClass](../functions/AddPlayerClass): Dodaj klasu.

@@ -39,4 +39,4 @@ This callback will also be called when a vehicle enters water, but the vehicle c
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetVehicleHealth](../../scripting/functions/SetVehicleHealth.md): Set the health of a vehicle.
+- [SetVehicleHealth](../functions/SetVehicleHealth): Set the health of a vehicle.

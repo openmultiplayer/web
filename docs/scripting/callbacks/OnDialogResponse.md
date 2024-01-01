@@ -8,12 +8,12 @@ tags: []
 
 ## Description
 
-This callback is called when a player responds to a dialog shown using ShowPlayerDialog by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).
+This callback is called when a player responds to a dialog shown using [ShowPlayerDialog](../functions/ShowPlayerDialog) by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).
 
 | Name        | Description                                                                                                             |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
 | playerid    | The ID of the player that responded to the dialog.                                                                      |
-| dialogid    | The ID of the dialog the player responded to, assigned in ShowPlayerDialog.                                             |
+| dialogid    | The ID of the dialog the player responded to, assigned in [ShowPlayerDialog](../functions/ShowPlayerDialog).            |
 | response    | 1 for left button and 0 for right button (if only one button shown, always 1)                                           |
 | listitem    | The ID of the list item selected by the player (starts at 0) (only if using a list style dialog, otherwise will be -1). |
 | inputtext[] | The text entered into the input box by the player or the selected list item text.                                       |

@@ -8,14 +8,14 @@ tags: []
 
 Esta função adiciona um pickup 'fixo' no jogo. Esses pickups suportam armas, vida, colete, etc, com a capacidade de funcionar sem scripts (armas/vida/colete são definidos automaticamente).
 
-| Nome                                | Descrição                                                                                     |
-| ----------------------------------- | --------------------------------------------------------------------------------------------- |
-| [model](../resources/pickupids.md)  | O modelo do pickup.                                                                           |
-| [type](../resources/pickuptypes.md) | O tipo de pickup. Determina como o pickup reage quando é coletado.                            |
-| Float:X                             | A coordenada-X para colocar o pickup.                                                         |
-| Float:Y                             | A coordenada-Y para colocar o pickup.                                                         |
-| Float:Z                             | A coordenada-Z para colocar o pickup.                                                         |
-| virtualworld                        | O ID do mundo virtual para colocar o pickup. Use -1 para mostrar o pickup em todos os mundos. |
+| Nome         | Descrição                                                                                      |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| model        | O [modelo](../resources/pickupids) do pickup.                                                  |
+| type         | O [tipo](../resources/pickuptypes) de pickup. Determina como o pickup reage quando é coletado. |
+| Float:X      | A coordenada-X para colocar o pickup.                                                          |
+| Float:Y      | A coordenada-Y para colocar o pickup.                                                          |
+| Float:Z      | A coordenada-Z para colocar o pickup.                                                          |
+| virtualworld | O ID do mundo virtual para colocar o pickup. Use -1 para mostrar o pickup em todos os mundos.  |
 
 ## Retorno
 
@@ -48,6 +48,6 @@ Esta função não retorna um pickup ID que você pode usar, por exemplo, em OnP
 
 ## Funções Relacionadas
 
-- [CreatePickup](CreatePickup.md): Cria um pickup.
-- [DestroyPickup](DestroyPickup.md): Destrói um pickup.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): É chamado quando um jogador pega num pickup.
+- [CreatePickup](CreatePickup): Cria um pickup.
+- [DestroyPickup](DestroyPickup): Destrói um pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): É chamado quando um jogador pega num pickup.

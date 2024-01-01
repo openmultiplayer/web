@@ -4,7 +4,7 @@ title: Modurile camerei
 
 ## Descriere
 
-O listă a posibilelor moduri de cameră pentru a fi utilizate [GetPlayerCameraMode](../functions/GetPlayerCameraMode.md).
+O listă a posibilelor moduri de cameră pentru a fi utilizate [GetPlayerCameraMode](../functions/GetPlayerCameraMode).
 
 :::note
 

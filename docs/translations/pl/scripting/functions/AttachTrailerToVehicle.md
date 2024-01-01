@@ -36,6 +36,6 @@ Ta funkcja zadziała tylko wtedy, gdy obydwa pojazdy są widoczne dla gracza (zo
 
 ## Powiązane funkcje
 
-- [DetachTrailerFromVehicle](DetachTrailerFromVehicle.md): Odczepia przyczepę od pojazdu.
-- [IsTrailerAttachedToVehicle](IsTrailerAttachedToVehicle.md): Sprawdza, czy przyczepa jest przyczepiona do pojazdu.
-- [GetVehicleTrailer](GetVehicleTrailer.md): Podaje przyczepę ciągniętą aktualnie przez pojazd.
+- [DetachTrailerFromVehicle](DetachTrailerFromVehicle): Odczepia przyczepę od pojazdu.
+- [IsTrailerAttachedToVehicle](IsTrailerAttachedToVehicle): Sprawdza, czy przyczepa jest przyczepiona do pojazdu.
+- [GetVehicleTrailer](GetVehicleTrailer): Podaje przyczepę ciągniętą aktualnie przez pojazd.

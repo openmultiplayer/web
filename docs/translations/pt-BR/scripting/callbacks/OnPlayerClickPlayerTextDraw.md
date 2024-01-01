@@ -80,6 +80,6 @@ Quando um jogador pressiona ESC para cancelar o modo de seleção, OnPlayerClick
 
 ## Funções Relacionadas
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md): Define se uma TextDraw é selecionável ou não.
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Chamado quando um jogador clica em uma TextDraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Chamado quando um jogador clica em outro.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Define se uma TextDraw é selecionável ou não.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Chamado quando um jogador clica em uma TextDraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Chamado quando um jogador clica em outro.

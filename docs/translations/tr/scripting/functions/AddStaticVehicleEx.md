@@ -6,7 +6,7 @@ tags: []
 
 ## Açıklama
 
-Oyun modunda oyuncular için modeli daha önceden yüklenmiş olan statik araç oluşturmanızı sağlar. AddStaticVehicle fonksiyonundan tek farkı vardır: sürücü aracı boş bıraktıktan sonra girdiğiniz parametre sayesinde aracın ne kadar süre sonra respawn olacağını ayarlayabilirsiniz.
+Oyun modunda oyuncular için modeli daha önceden yüklenmiş olan statik araç oluşturmanızı sağlar. [AddStaticVehicle](AddStaticVehicle) fonksiyonundan tek farkı vardır: sürücü aracı boş bıraktıktan sonra girdiğiniz parametre sayesinde aracın ne kadar süre sonra respawn olacağını ayarlayabilirsiniz.
 
 | İsim                                | Açıklama                                                                                               |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
@@ -15,8 +15,8 @@ Oyun modunda oyuncular için modeli daha önceden yüklenmiş olan statik araç 
 | Float:spawn_Y                       | aracın spawn olacağı Y koordinatı.                                                                     |
 | Float:spawn_Z                       | aracın spawn olacağı Z koordinatı.                                                                     |
 | Float:z_angle                       | aracın spawn olduğunda bakacağı rotasyon.                                                              |
-| color1                              | birinci renk.                                                                                          |
-| color2                              | ikinci renk.                                                                                           |
+| color1                              | birinci [renk](../resources/vehiclecolorid).                                                           |
+| color2                              | ikinci [renk](../resources/vehiclecolorid).                                                            |
 | respawn_delay                       | respawn delay süresi. (kaç saniye sonra re-spawn olacak (saniye bazlı))                                |
 | addsiren  (opsiyonel)               | siren değeri. (0 yok, 1 var)                                                                           |
 
@@ -40,5 +40,5 @@ public OnGameModeInit()
 
 ## İlgili Fonksiyonlar
 
-- [AddStaticVehicle](AddStaticVehicle.md): Statik araç ekleyin.
-- [CreateVehicle](CreateVehicle.md): Araç oluşturun.
+- [AddStaticVehicle](AddStaticVehicle): Statik araç ekleyin.
+- [CreateVehicle](CreateVehicle): Araç oluşturun.

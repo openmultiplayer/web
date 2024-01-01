@@ -20,7 +20,7 @@ tags: []
 | Float:ToY   | 视角停止移动的 Y 坐标                                                                                   |
 | Float:ToZ   | 视角停止移动的 Z 坐标                                                                                   |
 | time        | 以毫秒为单位的时间                                                                                      |
-| cut         | 要使用的[跳切](./resources/cameracutstyles)。默认为 CAMERA_CUT（无意义）。设置为 CAMERA_MOVE 用于插值。 |
+| cut         | 要使用的[跳切](../resources/cameracutstyles)。默认为 CAMERA_CUT（无意义）。设置为 CAMERA_MOVE 用于插值。 |
 
 ## 返回值
 

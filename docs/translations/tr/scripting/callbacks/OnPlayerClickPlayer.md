@@ -50,4 +50,4 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 
 ## Bağlı Fonksiyonlar
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Oyuncu bir textdrawa tıkladığında çağrılan callback.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Oyuncu bir textdrawa tıkladığında çağrılan callback.

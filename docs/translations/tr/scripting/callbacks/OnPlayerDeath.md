@@ -60,5 +60,5 @@ Bir dizi içerisinde kullanmadan önce killerid'nin geçerli olup olmadığını
 
 ## Bağlantılı Fonksiyonlar
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): killfeed'e (Sağdaki öldüren, silah, ölüm listesi.) bir yeni ölüm verisi girer.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Oyuncu canını belirler.
+- [SendDeathMessage](../functions/SendDeathMessage): killfeed'e (Sağdaki öldüren, silah, ölüm listesi.) bir yeni ölüm verisi girer.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Oyuncu canını belirler.

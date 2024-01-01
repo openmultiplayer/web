@@ -29,7 +29,7 @@ tags: ["player"]
 
 方向键不会触发 OnPlayerKeyStateChange(上/下/左/右)。
 
-它们只能通过 [GetPlayerKeys 函数](../functions/GetPlayerKeys) (在 [OnPlayerUpdate 回调](../callbacks/OnPlayerUpdate) 或计时器中被捕获)。
+它们只能通过 [GetPlayerKeys 函数](../functions/GetPlayerKeys) (在 [OnPlayerUpdate 回调](OnPlayerUpdate) 或计时器中被捕获)。
 
 :::
 

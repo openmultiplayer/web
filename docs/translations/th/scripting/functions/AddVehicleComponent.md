@@ -6,13 +6,12 @@ tags: ["vehicle"]
 
 ## คำอธิบาย
 
-Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. Valid components can be found here.
+Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. Valid components can be found [here](../resources/carcomponentid).
 
-| Name      | Description                                                                     |
-| --------- | ------------------------------------------------------------------------------- |
-| vehicleid | The ID of the vehicle to add the component to. Not to be confused with modelid. |
-
-| |[componentid](../../scripting/resources/carcomponentid.md) | The ID of the component to add to the vehicle.|
+| Name        | Description                                                                     |
+| ----------- | ------------------------------------------------------------------------------- |
+| vehicleid   | The ID of the vehicle to add the component to. Not to be confused with modelid. |
+| componentid | The ID of the [component](../resources/carcomponentid) to add to the vehicle.   |
 
 ## ส่งคืน
 
@@ -55,8 +54,8 @@ Using an invalid component ID crashes the player's game. There are no internal c
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [RemoveVehicleComponent](../../scripting/functions/RemoveVehicleComponent.md): Remove a component from a vehicle.
-- [GetVehicleComponentInSlot](../../scripting/functions/GetVehicleComponentInSlot.md): Check what components a vehicle has.
-- [GetVehicleComponentType](../../scripting/functions/GetVehicleComponentType.md): Check the type of component via the ID.
-- [OnVehicleMod](../../scripting/callbacks/OnVehicleMod.md): Called when a vehicle is modded.
-- [OnEnterExitModShop](../../scripting/callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.
+- [RemoveVehicleComponent](RemoveVehicleComponent): Remove a component from a vehicle.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Check what components a vehicle has.
+- [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
+- [OnVehicleMod](../callbacks/OnVehicleMod): Called when a vehicle is modded.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.

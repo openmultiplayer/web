@@ -8,14 +8,14 @@ tags: []
 
 Această funcție adaugă o preluare „statică” la joc. Aceste pickup-uri acceptă arme, sănătate, armuri etc., cu capacitatea de a funcționa fără a le scripta (armele / sănătatea / armura vor fi date automat).
 
-| Nume                                | Descriere                                                                                              |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [model](../resources/pickupids.md)  | Modelul pick-up-ului.                                                                                  |
-| [type](../resources/pickuptypes.md) | Tipul de preluare. Determină modul în care răspunde pickup-ul atunci când este ridicat.                |
-| Float:X                             | Coordonata X pentru a crea preluarea la.                                                               |
-| Float:Y                             | Coordonata Y pentru a crea preluarea la.                                                               |
-| Float:Z                             | Coordonata Z pentru a crea preluarea la.                                                               |
-| virtualworld                        | ID-ul lumii virtuale pentru a pune acest pickup. Folosiți -1 pentru a afișa pickup-ul în toate lumile. |
+| Nume         | Descriere                                                                                                           |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| model        | [Modelul](../resources/pickupids) pick-up-ului.                                                                     |
+| type         | [Tipul](../resources/pickuptypes) de preluare. Determină modul în care răspunde pickup-ul atunci când este ridicat. |
+| Float:X      | Coordonata X pentru a crea preluarea la.                                                                            |
+| Float:Y      | Coordonata Y pentru a crea preluarea la.                                                                            |
+| Float:Z      | Coordonata Z pentru a crea preluarea la.                                                                            |
+| virtualworld | ID-ul lumii virtuale pentru a pune acest pickup. Folosiți -1 pentru a afișa pickup-ul în toate lumile.              |
 
 ## Se intoarce
 
@@ -48,6 +48,6 @@ Această funcție nu returnează un ID de preluare pe care îl puteți utiliza, 
 
 ## Funcții conexe
 
-- [CreatePickup](CreatePickup.md): Creați un pick-up.
-- [DestroyPickup](DestroyPickup.md): Distruge un pick-up.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Apelat când un jucător ridică un pickup.
+- [CreatePickup](CreatePickup): Creați un pick-up.
+- [DestroyPickup](DestroyPickup): Distruge un pick-up.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Apelat când un jucător ridică un pickup.
