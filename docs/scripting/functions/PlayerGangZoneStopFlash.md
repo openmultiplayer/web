@@ -46,7 +46,6 @@ public OnPlayerDeath(playerid, killerid, reason)
     {
         PlayerGangZoneStopFlash(playerid, gGangZoneID[playerid]);
     }
-        PlayerGangZoneStopFlash(playerid, gGangZoneID[playerid]);
 }
 ```
 
