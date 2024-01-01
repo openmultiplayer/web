@@ -17,7 +17,7 @@ Get the flashing colour of a player gangzone.
 
 Flashing color of player gangzone.
 
-0: Failed to execute the function. The player gangzone is not showned for the player.
+0: Failed to execute the function. The player gangzone is not shown for the player.
 
 ## Related Functions
 
