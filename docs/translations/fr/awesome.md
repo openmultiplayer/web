@@ -1,5 +1,5 @@
 ---
-title : Génial
+title : Ressources
 description : une liste organisée d'outils, de bibliothèques, de modes de jeu, de scripts de filtrage et de plugins utiles pour le développement SA-MP.
 ---
 
