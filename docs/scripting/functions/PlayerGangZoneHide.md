@@ -34,7 +34,10 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    if(gGangZoneID[playerid] != INVALID_GANG_ZONE)
+    if (IsValidPlayerGangZone(playerid, gGangZoneID[playerid]))
+    {
+        PlayerGangZoneHide(playerid, gGangZoneID[playerid]);
+    }
         PlayerGangZoneHide(playerid, gGangZoneID[playerid]);
 }
 ```
