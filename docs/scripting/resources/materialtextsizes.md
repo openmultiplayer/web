@@ -14,7 +14,6 @@ There are two kinds of parameters for [SetObjectMaterialText](../functions/SetOb
 | 10    | OBJECT_MATERIAL_SIZE_32x32     |
 | 20    | OBJECT_MATERIAL_SIZE_64x32     |
 | 30    | OBJECT_MATERIAL_SIZE_64x64     |
-| 30    | OBJECT_MATERIAL_SIZE_64x64     |
 | 40    | OBJECT_MATERIAL_SIZE_128x32    |
 | 50    | OBJECT_MATERIAL_SIZE_128x64    |
 | 60    | OBJECT_MATERIAL_SIZE_128x128   |
