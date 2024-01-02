@@ -1,7 +1,7 @@
 ---
 title: ApplyActorAnimation
 description: Apply an animation to an actor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -52,3 +52,4 @@ You must preload the animation library for the player the actor will be applying
 ## Related Functions
 
 - [ClearActorAnimations](ClearActorAnimations): Clear any animations that are applied to an actor.
+- [GetActorAnimation](GetActorAnimation): Get the animation the actor is currently performing.

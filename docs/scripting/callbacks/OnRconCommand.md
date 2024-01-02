@@ -1,7 +1,7 @@
 ---
 title: OnRconCommand
 description: This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
-tags: []
+tags: ["rcon", "administration"]
 ---
 
 ## Description
@@ -62,3 +62,4 @@ The following callbacks might be useful, as they're related to this callback in 
 The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Checks if a player is logged into RCON.
+- [SetPlayerAdmin](../functions/SetPlayerAdmin): Sets the player as an RCON admin.

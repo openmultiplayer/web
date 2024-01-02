@@ -11,7 +11,7 @@ Appears to scale text spacing to a proportional ratio. Useful when using TextDra
 | Name | Description                                          |
 | ---- | ---------------------------------------------------- |
 | text | The ID of the textdraw to set the proportionality of |
-| set  | 1 to enable proportionality, 0 to disable.           |
+| bool:set  | 'true' to enable proportionality, 'false' to disable.           |
 
 ## Returns
 
@@ -25,7 +25,7 @@ new Text: gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
-    TextDrawSetProportional(gMyTextdraw, 1);
+    TextDrawSetProportional(gMyTextdraw, true);
     return 1;
 }
 ```
@@ -42,6 +42,7 @@ Proportionality is set to 1 by default, you might skip this function if you don'
 
 - [TextDrawCreate](TextDrawCreate): Create a textdraw.
 - [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawIsProportional](TextDrawIsProportional): Checks if a textdraw is proportional.
 - [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
 - [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
 - [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.

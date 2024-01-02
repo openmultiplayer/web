@@ -47,4 +47,8 @@ public WelcomeTimer(playerid)
 
 - [SetTimer](SetTimer): Set a timer.
 - [SetTimerEx](SetTimerEx): Set a timer with parameters.
+- [IsValidTimer](IsValidTimer): Checks if a timer is valid.
+- [IsRepeatingTimer](IsRepeatingTimer): Checks if a timer is set to repeat.
+- [GetTimerInterval](GetTimerInterval): Gets the interval of a timer.
+- [GetTimerRemaining](GetTimerRemaining): Gets the remaining interval of a timer.
 - [CountRunningTimers](CountRunningTimers): Get the running timers.
