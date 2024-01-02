@@ -73,7 +73,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Connect your server to a MySQL server.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Bypass many SA:MP limits, like objects and pickups.
 - **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - Checking natives when server starts.
-- **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs. It does not work in open.mp.
+- **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs. It does not currently work in open.mp, as of January 2023.
 - **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - Allows you to analyze RakNet traffic.
 - **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - A plugin for SA-MP providing precise timers, written in Rust. It is not needed in open.mp, as open.mp is provided with precise timers.
