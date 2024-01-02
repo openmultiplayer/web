@@ -73,3 +73,5 @@ Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~ don't work beyond 25
 - [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
 - [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
 - [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.
+- [IsTextDrawVisibleForPlayer](IsTextDrawVisibleForPlayer): Checks if a textdraw is shown for the player.
+- [IsValidTextDraw](IsValidTextDraw): Checks if a textdraw is valid.

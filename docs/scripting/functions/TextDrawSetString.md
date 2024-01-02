@@ -46,7 +46,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-There are limits to the length of textdraw strings - see here for more info.
+There are limits to the length of textdraw strings - see [here](../resources/limits) for more info.
 
 :::
 
@@ -54,6 +54,7 @@ There are limits to the length of textdraw strings - see here for more info.
 
 - [TextDrawCreate](TextDrawCreate): Create a textdraw.
 - [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawSetStringForPlayer](TextDrawSetStringForPlayer): Changes the text on a textdraw for a specific player.
 - [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
 - [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
 - [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.
@@ -69,3 +70,4 @@ There are limits to the length of textdraw strings - see here for more info.
 - [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
 - [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
 - [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.
+- [TextDrawGetString](TextDrawGetString): Gets the text of a textdraw.

@@ -61,7 +61,9 @@ Race checkpoints are asynchronous, meaning only one can be shown at a time. To '
 - [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Disable the player's current checkpoint.
 - [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Check if a player is in a checkpoint.
 - [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
+- [GetPlayerRaceCheckpoint](GetPlayerRaceCheckpoint): Get the location of the current race checkpoint.
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
+- [IsPlayerRaceCheckpointActive](IsPlayerRaceCheckpointActive): Check if the player currently has a race checkpoint visible.
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
 - [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Called when a player enters a race checkpoint.

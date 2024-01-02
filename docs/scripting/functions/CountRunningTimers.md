@@ -1,7 +1,7 @@
 ---
 title: CountRunningTimers
 description: Get the running timers.
-tags: []
+tags: ["timer"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />

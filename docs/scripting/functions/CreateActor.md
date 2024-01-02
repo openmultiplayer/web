@@ -1,7 +1,7 @@
 ---
 title: CreateActor
 description: Create a static 'actor' in the world.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -61,14 +61,18 @@ Actors are completely separate from NPCs. They do NOT use player IDs/slots on th
 - [DestroyActor](DestroyActor): Destroy an actor.
 - [SetActorPos](SetActorPos): Set the position of an actor.
 - [GetActorPos](GetActorPos): Get the position of an actor.
+- [GetActorSpawnInfo](GetActorSpawnInfo): Get the initial spawn point of the actor.
 - [SetActorFacingAngle](SetActorFacingAngle): Set the facing angle of an actor.
 - [GetActorFacingAngle](GetActorFacingAngle): Get the facing angle of an actor.
 - [SetActorVirtualWorld](SetActorVirtualWorld): Set the virtual world of an actor.
 - [GetActorVirtualWorld](GetActorVirtualWorld): Get the virtual world of an actor.
 - [ApplyActorAnimation](ApplyActorAnimation): Apply an animation to an actor.
 - [ClearActorAnimations](ClearActorAnimations): Clear any animations that are applied to an actor.
+- [GetActorAnimation](GetActorAnimation): Get the animation the actor is currently performing.
 - [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor): Get the ID of the actor (if any) a player is looking at.
 - [IsActorStreamedIn](IsActorStreamedIn): Checks if an actor is streamed in for a player.
+- [SetActorSkin](SetActorSkin): Set the skin of the actor.
+- [GetActorSkin](GetActorSkin): Get the skin of the actor.
 - [SetActorHealth](SetActorHealth): Set the health of an actor.
 - [GetActorHealth](GetActorHealth): Gets the health of an actor.
 - [SetActorInvulnerable](SetActorInvulnerable): Set actor invulnerable.
@@ -76,6 +80,9 @@ Actors are completely separate from NPCs. They do NOT use player IDs/slots on th
 - [IsValidActor](IsValidActor): Check if actor id is valid.
 - [GetActorPoolSize](GetActorPoolSize): Gets the highest actorid created on the server.
 - [GetPlayerTargetActor](GetPlayerTargetActor): Gets id of an actor which is aimed by certain player.
+
+## Related Callbacks
+
 - [OnActorStreamIn](../callbacks/OnActorStreamIn): Called when an actor is streamed in by a player.
 - [OnActorStreamOut](../callbacks/OnActorStreamOut): Called when an actor is streamed out by a player.
 - [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor): This callback is called when a player gives damage to an actor.
