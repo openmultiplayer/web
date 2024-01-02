@@ -73,14 +73,14 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Connect your server to a MySQL server.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Bypass many SA:MP limits, like objects and pickups.
 - **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - Checking natives when server starts.
-- **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs.
+- **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs. It does not currently work in open.mp, as of January 2023.
 - **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - Allows you to analyze RakNet traffic.
-- **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - A plugin for SA-MP providing precise timers, written in Rust.
+- **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - A plugin for SA-MP providing precise timers, written in Rust. It is not needed in open.mp, as open.mp is provided with precise timers.
 - **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - Extends the possibilities of the Pawn scripting language with new constructs, data types, and programming techniques.
 - **[PAWN memory access](https://github.com/BigETI/pawn-memory)** - Allows to allocate and free memory from heap in PAWN.
 - **[Native Fallback](https://github.com/IllidanS4/NativeFallback)** - SA-MP plugin that provides fallback implementation to unregistered natives.
-- **[YSF](https://github.com/IllidanS4/YSF)** - A Plugin whose purpose is to pull out maximum possibilities from the server, mainly with memory editing and hooking.
+- **[YSF](https://github.com/IllidanS4/YSF)** - A Plugin whose purpose is to pull out maximum possibilities from the server, mainly with memory editing and hooking. Many of its functions are now already in open.mp. See [this github issue](https://github.com/openmultiplayer/open.mp/issues/189) for a list of functions.
 - **[SKY](https://github.com/oscar-broman/SKY)** - This plugin provides low-level functions to let Pawn scripts do powerful things.
 - **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - Adds support for regular expressions in Pawn.
 - **[pawn-scraper](https://github.com/Sreyas-Sreelal/pawn-scraper)** - A powerful scraper plugin that provides interface for utlising html_parsers and css selectors in pawn.
