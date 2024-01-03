@@ -11,7 +11,7 @@ Show player gangzone in a color.
 | Name        | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
 | playerid    | The ID of the player to whom player gangzone is bound.           |
-| zoneid      | The ID of the player gangzone for destroy.                       |
+| zoneid      | The ID of the player gangzone for shown.                         |
 | colour      | The colour by which the player gangzone will be shown.           |
 
 ## Returns
