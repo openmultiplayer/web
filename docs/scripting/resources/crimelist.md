@@ -13,7 +13,7 @@ Here you can find all of the crime IDs used by [PlayCrimeReportForPlayer](../fun
 | Crime ID | Ten-code | Description                                              |
 | -------- | -------- | -------------------------------------------------------- |
 | 3        | 10-71    | Advise nature of fire (size, type, contents of building) |
-| 4        | 10-47    | Emergency road repairs needed                            |
+| 4        | 10-37    | Emergency road repairs needed                            |
 | 5        | 10-81    | Breatherlizer Report                                     |
 | 6        | 10-24    | Assignment Completed                                     |
 | 7        | 10-21    | Call () by phone                                         |
