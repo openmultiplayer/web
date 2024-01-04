@@ -8,11 +8,12 @@ tags: ["menu"]
 
 Sets the caption of a column in a menu.
 
-| Name   | Description                               |
-| ------ | ----------------------------------------- |
-| menuid | ID of the menu to change.                 |
-| column | The column (0 or 1) to set the header of. |
-| text[] | The caption text for the column.          |
+| Name             | Description                                                            |
+|------------------|------------------------------------------------------------------------|
+| menuid           | ID of the menu to change.                                              |
+| column           | The column (0 or 1) to set the header of.                              |
+| text[]           | The caption text for the column.                                       |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for text. (added in open.mp) |
 
 ## Returns
 
