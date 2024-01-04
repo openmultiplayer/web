@@ -41,8 +41,6 @@ public OnGameModeInit()
 - [AddStaticVehicleEx](AddStaticVehicleEx): Add a static vehicle with custom respawn time.
 - [CreateVehicle](CreateVehicle): Create a vehicle.
 - [DestroyVehicle](DestroyVehicle): Destroy a vehicle.
-- [AddStaticVehicle](AddStaticVehicle): Add a static vehicle.
-- [AddStaticVehicleEx](AddStaticVehicleEx): Add a static vehicle with custom respawn time.
 - [GetVehicleParamsSirenState](GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.
 - [SetVehicleSpawnInfo](SetVehicleSpawnInfo): Adjusts vehicle model, spawn location, colours, respawn delay and interior.
 - [GetVehicleSpawnInfo](GetVehicleSpawnInfo): Gets the vehicle spawn location and colours.
