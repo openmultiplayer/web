@@ -31,5 +31,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
+- [GetVehicleInterior](GetVehicleInterior): Get the interior id of a vehicle.
 - [SetVehicleVirtualWorld](SetVehicleVirtualWorld): Set the virtual world of a vehicle.
 - [SetPlayerInterior](SetPlayerInterior): Set a player's interior.
