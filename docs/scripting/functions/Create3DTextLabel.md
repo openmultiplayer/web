@@ -10,16 +10,17 @@ tags: ["3dtextlabel"]
 
 Creates a 3D Text Label at a specific location in the world
 
-| Name         | Description                                                                     |
-| ------------ | ------------------------------------------------------------------------------- |
-| text[]       | The initial text string.                                                        |
-| color        | The text Color, as an integer or hex in RGBA color format                       |
-| x            | X-Coordinate                                                                    |
-| y            | Y-Coordinate                                                                    |
-| z            | Z-Coordinate                                                                    |
-| DrawDistance | The distance from where you are able to see the 3D Text Label                   |
-| VirtualWorld | The virtual world in which you are able to see the 3D Text                      |
-| testLOS      | Test the line-of-sight so this text can't be seen through objects (true/false)  |
+| Name             | Description                                                                    |
+|------------------|--------------------------------------------------------------------------------|
+| text[]           | The initial text string.                                                       |
+| color            | The text Color, as an integer or hex in RGBA color format                      |
+| x                | X-Coordinate                                                                   |
+| y                | Y-Coordinate                                                                   |
+| z                | Z-Coordinate                                                                   |
+| DrawDistance     | The distance from where you are able to see the 3D Text Label                  |
+| VirtualWorld     | The virtual world in which you are able to see the 3D Text                     |
+| testLOS          | Test the line-of-sight so this text can't be seen through objects (true/false) |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for text. (added in open.mp)         |
 
 ## Returns
 
@@ -30,8 +31,26 @@ The ID of the newly created 3D Text Label, or INVALID_3DTEXT_ID if the 3D Text L
 ```c
 public OnGameModeInit()
 {
-        Create3DTextLabel("I'm at the coordinates:\n30.0, 40.0, 50.0", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0, false);
+    Create3DTextLabel("I'm at the coordinates:\n30.0, 40.0, 50.0", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0, false);
     return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/mark", true))
+    {
+        new name[MAX_PLAYER_NAME];
+        new Float:x, Float:y, Float:z;
+        new worldid;
+
+        GetPlayerName(playerid, name, sizeof(name));
+        GetPlayerPos(playerid, x, y, z);
+        worldid = GetPlayerVirtualWorld(playerid);
+
+        Create3DTextLabel("%s marked this place", 0xFF0000FF, x, y, z, 15.0, worldid, false, name);
+        return 1;
+    }
+    return 0;
 }
 ```
 
