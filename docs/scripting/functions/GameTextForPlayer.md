@@ -8,12 +8,13 @@ tags: ["player"]
 
 Shows 'game text' (on-screen text) for a certain length of time for a specific player.
 
-| Name           | Description                                                       |
-| -------------- | ----------------------------------------------------------------- |
-| playerid       | The ID of the player to show the gametext for.                    |
-| const string[] | The text to be displayed.                                         |
-| time           | The duration of the text being shown in milliseconds.             |
-| style          | The [style](../resources/gametextstyles) of text to be displayed. |
+| Name             | Description                                                              |
+|------------------|--------------------------------------------------------------------------|
+| playerid         | The ID of the player to show the gametext for.                           |
+| const string[]   | The text to be displayed.                                                |
+| time             | The duration of the text being shown in milliseconds.                    |
+| style            | The [style](../resources/gametextstyles) of text to be displayed.        |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for string. (added in open.mp) |
 
 ## Returns
 
@@ -27,6 +28,14 @@ Shows 'game text' (on-screen text) for a certain length of time for a specific p
 public OnPlayerDeath(playerid, killerid, reason)
 {
     GameTextForPlayer(playerid, "Wasted", 5000, 2);
+
+    if (killerid != INVALID_PLAYER_ID)
+    {
+        new name[MAX_PLAYER_NAME];
+        GetPlayerName(playerid, name, sizeof(name));
+
+        GameTextForPlayer(killerid, "~w~You killed ~r~%s", 3000, 3, name);
+    }
     return 1;
 }
 ```
