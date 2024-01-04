@@ -10,12 +10,13 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Creates a textdraw for a single player. This can be used as a way around the global text-draw limit.
 
-| Name     | Description                                     |
-| -------- | ----------------------------------------------- |
-| playerid | The ID of the player to create the textdraw for |
-| Float:x  | X-Coordinate                                    |
-| Float:y  | Y-Coordinate                                    |
-| text[]   | The text in the textdraw.                       |
+| Name             | Description                                                            |
+|------------------|------------------------------------------------------------------------|
+| playerid         | The ID of the player to create the textdraw for                        |
+| Float:x          | X-Coordinate                                                           |
+| Float:y          | Y-Coordinate                                                           |
+| text[]           | The text in the textdraw.                                              |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for text. (added in open.mp) |
 
 ## Returns
 
@@ -31,7 +32,7 @@ new PlayerText:welcomeText[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     // First, create the textdraw
-    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my SA-MP server");
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
 
     // Now show it
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
