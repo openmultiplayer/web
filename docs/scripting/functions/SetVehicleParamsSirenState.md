@@ -25,5 +25,6 @@ SetVehicleParamsSirenState(vehicleid, true);
 
 ## Related Functions
 
+- [GetVehicleParamsSirenState](GetVehicleParamsSirenState): Returns a vehicle's siren state (on/off).
 - [GetVehicleSirenState](GetVehicleSirenState): Gets the siren state of the vehicle.
 - [GetPlayerSirenState](GetPlayerSirenState): Gets the siren state of the player's vehicle.
