@@ -1,8 +1,10 @@
 ---
-title: ChangeVehicleColor
+title: ChangeVehicleColours
 description: Change a vehicle's primary and secondary colors.
 tags: ["vehicle"]
 ---
+
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 
@@ -26,7 +28,7 @@ Change a vehicle's primary and secondary colors.
 public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
     // Change the primary color to black and the secondary color to white
-    ChangeVehicleColor(vehicleid, 0, 1);
+    ChangeVehicleColours(vehicleid, 0, 1);
     return 1;
 }
 ```
