@@ -8,11 +8,12 @@ tags: ["pvar"]
 
 Saves a string into a player variable.
 
-| Name         | Description                                             |
-| ------------ | ------------------------------------------------------- |
-| playerid     | The ID of the player whose player variable will be set. |
-| varname      | The name of the player variable.                        |
-| string_value | The string you want to save in the player variable.     |
+| Name             | Description                                                                    |
+|------------------|--------------------------------------------------------------------------------|
+| playerid         | The ID of the player whose player variable will be set.                        |
+| varname[]        | The name of the player variable.                                               |
+| string_value[]   | The string you want to save in the player variable.                            |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for string_value. (added in open.mp) |
 
 ## Returns
 
@@ -23,10 +24,18 @@ This function does not return any specific values.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new h,m,s,str[50];
-    gettime(h,m,s); // get the time
-    format(str,50,"Connected: %d:%d:%d",h,m,s); // create the string with the connect time
-    SetPVarString(playerid,"timeconnected",str); // save the string into a player variable
+    new 
+        hours, 
+        minutes, 
+        seconds, 
+        string[46];
+
+    gettime(hours, minutes, seconds); // get the time
+    format(string, sizeof(string), "Connected on %02d:%02d:%02d", hours, minutes, seconds); // create the string with the connect time
+    SetPVarString(playerid, "timeconnected", string); // save the string into a player variable
+
+    // PRO TIP: You don't need `format` in open.mp
+    SetPVarString(playerid, "timeconnected", "Connected on %02d:%02d:%02d", hours, minutes, seconds);
     return 1;
 }
 ```
