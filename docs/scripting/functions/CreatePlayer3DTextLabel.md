@@ -22,7 +22,7 @@ Creates a 3D Text Label only for a specific player
 | attachedplayer   | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
 | attachedvehicle  | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
 | testLOS          | 0/1 Test the line-of-sight so this text can't be seen through walls             |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for text. (added in open.mp)          |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                      |
 
 ## Returns
 
