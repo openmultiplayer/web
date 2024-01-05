@@ -8,11 +8,11 @@ tags: []
 
 Displays a message in chat to all players. This is a multi-player equivalent of SendClientMessage.
 
-| Name             | Description                                                               |
-|------------------|---------------------------------------------------------------------------|
-| color            | The color of the message (0xRRGGBBAA Hex format).                         |
-| const message[]  | The message to show (max 144 characters).                                 |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for message. (added in open.mp) |
+| Name             | Description                                       |
+|------------------|---------------------------------------------------|
+| color            | The color of the message (0xRRGGBBAA Hex format). |
+| const message[]  | The message to show (max 144 characters).         |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.        |
 
 ## Returns
 
