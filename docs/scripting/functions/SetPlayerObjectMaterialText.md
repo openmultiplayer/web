@@ -23,7 +23,7 @@ Replace the texture of a player object with text.
 | fontcolor        | The color of the text (DEFAULT: White).                                        |
 | backcolor        | The background color (DEFAULT: None (transparent)).                            |
 | textalignment    | The [alignment](../resources/materialtextsizes) of the text (DEFAULT: Left).   |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for text. (added in open.mp)         |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                     |
 
 ## Returns
 
