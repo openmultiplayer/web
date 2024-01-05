@@ -3,6 +3,7 @@ title: db_open
 description: The function is used to open a connection to a SQLite database file, which is inside the `/scriptfiles` folder.
 keywords:
   - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
@@ -11,9 +12,10 @@ keywords:
 
 The function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.
 
-| Name   | Description               |
-| ------ | ------------------------- |
-| name[] | File name of the database |
+| Name                                                                | Description                                           |
+|---------------------------------------------------------------------|-------------------------------------------------------|
+| const name[]                                                        | File name of the database                             |
+| SQLITE_OPEN:flags = SQLITE_OPEN_READWRITE &#124; SQLITE_OPEN_CREATE | [Permissions / Flags](../resources/sqlite-open-flags) |
 
 ## Returns
 
@@ -92,3 +94,7 @@ It will create a new SQLite database file, if there is no SQLite database file w
 - [db_get_result_mem_handle](db_get_result_mem_handle): Get memory handle for an SQLite query that was executed with db_query.
 - [db_debug_openfiles](db_debug_openfiles): The function gets the number of open database connections for debugging purposes.
 - [db_debug_openresults](db_debug_openresults): The function gets the number of open database results.
+
+## Related Resources
+
+- [SQLite Open Flags](../resources/sqlite-open-flags)
