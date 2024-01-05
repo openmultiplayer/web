@@ -8,11 +8,12 @@ tags: ["menu"]
 
 Adds an item to a specified menu.
 
-| Name    | Description                      |
-| ------- | -------------------------------- |
-| menuid  | The menu id to add an item to.   |
-| column  | The column to add the item to.   |
-| title[] | The title for the new menu item. |
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| menuid           | The menu id to add an item to.             |
+| column           | The column to add the item to.             |
+| title[]          | The title for the new menu item.           |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
 

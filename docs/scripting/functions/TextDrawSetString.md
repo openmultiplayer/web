@@ -8,10 +8,11 @@ tags: ["textdraw"]
 
 Changes the text on a textdraw.
 
-| Name     | Description                     |
-| -------- | ------------------------------- |
-| text     | The TextDraw to change          |
-| string[] | The new string for the TextDraw |
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| text             | The TextDraw to change                     |
+| string[]         | The new string for the TextDraw            |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
 
@@ -35,8 +36,13 @@ public OnPlayerConnect(playerid)
         playerName[MAX_PLAYER_NAME];
 
     GetPlayerName(playerid, playerName, sizeof playerName);
+
     format(message, sizeof(message), "Welcome %s!", playerName);
     TextDrawSetString(gMyTextdraw, message);
+
+    // PRO TIP: You don't need `format` in open.mp
+    TextDrawSetString(gMyTextdraw, "Welcome %s!", playerName);
+
     TextDrawShowForPlayer(playerid, gMyTextdraw);
     return 1;
 }

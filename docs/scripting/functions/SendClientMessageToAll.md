@@ -8,10 +8,11 @@ tags: []
 
 Displays a message in chat to all players. This is a multi-player equivalent of SendClientMessage.
 
-| Name            | Description                                       |
-| --------------- | ------------------------------------------------- |
-| color           | The color of the message (0xRRGGBBAA Hex format). |
-| const message[] | The message to show (max 144 characters).         |
+| Name             | Description                                       |
+|------------------|---------------------------------------------------|
+| color            | The color of the message (0xRRGGBBAA Hex format). |
+| const message[]  | The message to show (max 144 characters).         |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.        |
 
 ## Returns
 
@@ -26,6 +27,19 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         // Send a message to everyone.
         SendClientMessageToAll(-1, "Hello!");
+        return 1;
+    }
+    if (strcmp(cmdtext, "/time", true) == 0)
+    {
+        new
+            hours,
+            minutes,
+            seconds;
+
+        gettime(hours, minutes, seconds);
+
+        // Send current time message to everyone.
+        SendClientMessageToAll(-1, "Current time is %02d:%02d:%02d", hours, minutes, seconds);
         return 1;
     }
     return 0;
