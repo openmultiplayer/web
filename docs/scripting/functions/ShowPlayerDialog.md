@@ -19,7 +19,7 @@ Shows the player a synchronous (only one at a time) dialog box.
 | body[]           | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                  |
 | button1[]        | The text on the left button.                                                                                                            |
 | button2[]        | The text on the right button. Leave it blank ( "" ) to hide it.                                                                         |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for body. (added in open.mp)                                                                  |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                                                                              |
 
 ## Returns
 
