@@ -8,10 +8,10 @@ tags: ["administration"]
 
 Sends an RCON (Remote Console) command.
 
-| Name             | Description                                                               |
-|------------------|---------------------------------------------------------------------------|
-| command[]        | The RCON command to be executed.                                          |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for command. (added in open.mp) |
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| command[]        | The RCON command to be executed.           |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
 
