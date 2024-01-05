@@ -10,13 +10,13 @@ tags: ["player", "3dtextlabel"]
 
 Updates a player 3D Text Label's text and color
 
-| Name             | Description                                                            |
-|------------------|------------------------------------------------------------------------|
-| playerid         | The ID of the player for which the 3D Text Label was created.          |
-| PlayerText3D:id  | The 3D Text Label you want to update.                                  |
-| color            | The color the 3D Text Label should have from now on.                   |
-| text[]           | The new text which the 3D Text Label should have from now on.          |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for text. (added in open.mp) |
+| Name             | Description                                                   |
+|------------------|---------------------------------------------------------------|
+| playerid         | The ID of the player for which the 3D Text Label was created. |
+| PlayerText3D:id  | The 3D Text Label you want to update.                         |
+| color            | The color the 3D Text Label should have from now on.          |
+| text[]           | The new text which the 3D Text Label should have from now on. |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                    |
 
 ## Returns
 
