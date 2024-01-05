@@ -10,11 +10,11 @@ tags: []
 
 Set a string server variable.
 
-| Name             | Description                                                                    |
-|------------------|--------------------------------------------------------------------------------|
-| varname[]        | The name of the server variable.                                               |
-| string_value[]   | The string to be set.                                                          |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for string_value. (added in open.mp) |
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| varname[]        | The name of the server variable.           |
+| string_value[]   | The string to be set.                      |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
 
