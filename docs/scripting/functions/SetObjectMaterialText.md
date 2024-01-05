@@ -22,7 +22,7 @@ Replace the texture of an object with text.
 | fontcolor        | The color of the text, in ARGB format.                                                        |
 | backcolor        | The background color, in ARGB format.                                                         |
 | textalignment    | The [alignment](/docs/scripting/resources/materialtextalignment) of the text (default: left). |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for text. (added in open.mp)                        |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                                    |
 
 ## Returns
 
