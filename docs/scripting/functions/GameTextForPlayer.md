@@ -8,13 +8,13 @@ tags: ["player"]
 
 Shows 'game text' (on-screen text) for a certain length of time for a specific player.
 
-| Name             | Description                                                              |
-|------------------|--------------------------------------------------------------------------|
-| playerid         | The ID of the player to show the gametext for.                           |
-| const string[]   | The text to be displayed.                                                |
-| time             | The duration of the text being shown in milliseconds.                    |
-| style            | The [style](../resources/gametextstyles) of text to be displayed.        |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for string. (added in open.mp) |
+| Name             | Description                                                       |
+|------------------|-------------------------------------------------------------------|
+| playerid         | The ID of the player to show the gametext for.                    |
+| const string[]   | The text to be displayed.                                         |
+| time             | The duration of the text being shown in milliseconds.             |
+| style            | The [style](../resources/gametextstyles) of text to be displayed. |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                        |
 
 ## Returns
 
