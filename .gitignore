@@ -13,3 +13,5 @@ prisma/Studio/
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
+# Visual Studio
+*.wsuo
