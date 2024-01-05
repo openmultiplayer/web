@@ -8,12 +8,12 @@ tags: ["pvar"]
 
 Saves a string into a player variable.
 
-| Name             | Description                                                                    |
-|------------------|--------------------------------------------------------------------------------|
-| playerid         | The ID of the player whose player variable will be set.                        |
-| varname[]        | The name of the player variable.                                               |
-| string_value[]   | The string you want to save in the player variable.                            |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for string_value. (added in open.mp) |
+| Name             | Description                                             |
+|------------------|---------------------------------------------------------|
+| playerid         | The ID of the player whose player variable will be set. |
+| varname[]        | The name of the player variable.                        |
+| string_value[]   | The string you want to save in the player variable.     |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.              |
 
 ## Returns
 
