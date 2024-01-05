@@ -10,12 +10,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Change the text of a player-textdraw.
 
-| Name             | Description                                                              |
-|------------------|--------------------------------------------------------------------------|
-| playerid         | The ID of the player who's textdraw string to set                        |
-| text             | The ID of the textdraw to change                                         |
-| string[]         | The new string for the TextDraw                                          |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for string. (added in open.mp) |
+| Name             | Description                                       |
+|------------------|---------------------------------------------------|
+| playerid         | The ID of the player who's textdraw string to set |
+| text             | The ID of the textdraw to change                  |
+| string[]         | The new string for the TextDraw                   |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.        |
 
 ## Returns
 
