@@ -8,11 +8,11 @@ tags: ["textdraw"]
 
 Changes the text on a textdraw.
 
-| Name             | Description                                                              |
-|------------------|--------------------------------------------------------------------------|
-| text             | The TextDraw to change                                                   |
-| string[]         | The new string for the TextDraw                                          |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for string. (added in open.mp) |
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| text             | The TextDraw to change                     |
+| string[]         | The new string for the TextDraw            |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
 
