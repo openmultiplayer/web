@@ -16,7 +16,7 @@ Creates a menu.
 | Float:y          | The Y position of the menu (640x460 canvas - 0 would put the menu at the far top).  |
 | Float:col1width  | The width for the first column.                                                     |
 | Float:col2width  | The width for the second column.                                                    |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for title. (added in open.mp)             |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                          |
 
 ## Returns
 
