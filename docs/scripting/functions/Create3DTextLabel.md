@@ -20,7 +20,7 @@ Creates a 3D Text Label at a specific location in the world
 | DrawDistance     | The distance from where you are able to see the 3D Text Label                  |
 | VirtualWorld     | The virtual world in which you are able to see the 3D Text                     |
 | testLOS          | Test the line-of-sight so this text can't be seen through objects (true/false) |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for text. (added in open.mp)         |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                     |
 
 ## Returns
 
