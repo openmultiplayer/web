@@ -8,12 +8,12 @@ tags: []
 
 This function sends a message to a specific player with a chosen color in the chat. The whole line in the chatbox will be in the set color unless color embedding is used (0.3c or later).
 
-| Name             | Description                                                               |
-|------------------|---------------------------------------------------------------------------|
-| playerid         | The ID of the player to display the message to.                           |
-| color            | The color of the message (0xRRGGBBAA Hex format).                         |
-| const message[]  | The text that will be displayed (max 144 characters).                     |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag for message. (added in open.mp) |
+| Name             | Description                                           |
+|------------------|-------------------------------------------------------|
+| playerid         | The ID of the player to display the message to.       |
+| color            | The color of the message (0xRRGGBBAA Hex format).     |
+| const message[]  | The text that will be displayed (max 144 characters). |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.            |
 
 ## Returns
 
