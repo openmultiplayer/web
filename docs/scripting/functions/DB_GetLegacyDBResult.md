@@ -1,26 +1,22 @@
 ---
-title: db_close
-description: Closes a SQLite database connection that was opened with `db_open`.
+title: DB_GetLegacyDBResult
+description: Gets the memory handle for a SQLite database result set that was allocated with `DB_ExecuteQuery`.
 keywords:
   - sqlite
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
-Closes a SQLite database connection that was opened with [db_open](db_open).
+The function gets the memory handle for a SQLite database result set that was allocated with [DB_ExecuteQuery](DB_ExecuteQuery).
 
-| Name  | Description                                                                      |
-| ----- | -------------------------------------------------------------------------------- |
-| DB:db | The handle of the database connection to close (returned by [db_open](db_open)). |
+| Name            | Description                                                              |
+|-----------------|--------------------------------------------------------------------------|
+| DBResult:result | The index of the query (returned by [DB_ExecuteQuery](DB_ExecuteQuery)). |
 
 ## Returns
 
-1: The function executed successfully.
-
-0: The function failed to execute. This could mean that the database connection handle is invalid.
+Returns the memory handle of the database result set handle.
 
 ## Examples
 
@@ -34,13 +30,19 @@ public OnGameModeInit()
     // ...
 
     // Create a connection to a database
-    gDBConnectionHandle = db_open("example.db");
+    gDBConnectionHandle = DB_Open("example.db");
 
     // If connection to the database exists
     if (gDBConnectionHandle)
     {
         // Successfully created a connection to the database
+        new DBResult:result_set = DB_ExecuteQuery("SELECT * FROM `examples`");
         print("Successfully created a connection to database \"example.db\".");
+        if (result_set)
+        {
+            printf("Database connection memory handle: 0x%x", DB_GetLegacyDBResult(result_set));
+            DB_FreeResultSet(result_set);
+        }
     }
     else
     {
@@ -56,7 +58,7 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     // Close the connection to the database if connection is open
-    if (db_close(gDBConnectionHandle))
+    if (DB_Close(gDBConnectionHandle))
     {
         // Extra cleanup
         gDBConnectionHandle = DB:0;
@@ -72,32 +74,11 @@ public OnGameModeExit()
 
 :::warning
 
-Using an invalid handle other than zero will crash your server! Get a valid database connection handle by using [db_open](db_open).
+Using an invalid handle other than zero will crash your server! Get a valid database connection handle by using [DB_ExecuteQuery](DB_ExecuteQuery).
 
 :::
 
 ## Related Functions
-
-- [db_open](db_open): Open a connection to an SQLite database
-- [db_close](db_close): Close the connection to an SQLite database
-- [db_query](db_query): Query an SQLite database
-- [db_free_result](db_free_result): Free result memory from a db_query
-- [db_num_rows](db_num_rows): Get the number of rows in a result
-- [db_next_row](db_next_row): Move to the next row
-- [db_num_fields](db_num_fields): Get the number of fields in a result
-- [db_field_name](db_field_name): Returns the name of a field at a particular index
-- [db_get_field](db_get_field): Get content of field with specified ID from current result row
-- [db_get_field_assoc](db_get_field_assoc): Get content of field with specified name from current result row
-- [db_get_field_int](db_get_field_int): Get content of field as an integer with specified ID from current result row
-- [db_get_field_assoc_int](db_get_field_assoc_int): Get content of field as an integer with specified name from current result row
-- [db_get_field_float](db_get_field_float): Get content of field as a float with specified ID from current result row
-- [db_get_field_assoc_float](db_get_field_assoc_float): Get content of field as a float with specified name from current result row
-- [db_get_mem_handle](db_get_mem_handle): Get memory handle for an SQLite database that was opened with db_open.
-- [db_get_result_mem_handle](db_get_result_mem_handle): Get memory handle for an SQLite query that was executed with db_query.
-- [db_debug_openfiles](db_debug_openfiles): The function gets the number of open database connections for debugging purposes.
-- [db_debug_openresults](db_debug_openresults): The function gets the number of open database results.
-
-## Modern SQLite Functions
 
 - [DB_Open](DB_Open): Open a connection to an SQLite database
 - [DB_Close](DB_Close): Close the connection to an SQLite database
