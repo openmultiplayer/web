@@ -15,3 +15,4 @@ prisma/Studio/
 *.sublime-workspace
 # Visual Studio
 *.wsuo
+VSWorkspaceState.json
