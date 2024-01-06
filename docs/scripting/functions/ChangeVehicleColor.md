@@ -74,5 +74,9 @@ Some vehicles have only a primary color and some can not have the color changed 
 
 ## Related Functions
 
+- [GetVehicleColours](GetVehicleColours): Gets the vehicle colours.
 - [ChangeVehiclePaintjob](ChangeVehiclePaintjob): Change the paintjob on a vehicle.
+
+## Related Callbacks
+
 - [OnVehicleRespray](../callbacks/OnVehicleRespray): Called when a vehicle is resprayed.

@@ -42,6 +42,7 @@ If you want to change the outline of a textdraw that is already shown, you don't
 
 - [TextDrawCreate](TextDrawCreate): Create a textdraw.
 - [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawGetOutline](TextDrawGetOutline): Gets the thickness of a textdraw's text's outline.
 - [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
 - [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
 - [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.

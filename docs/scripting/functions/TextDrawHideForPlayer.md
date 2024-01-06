@@ -52,3 +52,4 @@ public OnPlayerDeath(playerid, reason)
 - [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.
 - [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
 - [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+- [IsTextDrawVisibleForPlayer](IsTextDrawVisibleForPlayer): Checks if a textdraw is shown for a player.

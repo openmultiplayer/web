@@ -6,7 +6,7 @@ tags: ["textdraw"]
 
 ## Description
 
-Adjusts the text draw area background color (the outline/shadow - NOT the box. For box color, see TextDrawBoxColor).
+Adjusts the text draw area background color (the outline/shadow - NOT the box. For box color, see [TextDrawBoxColor](TextDrawBoxColor)).
 
 | Name  | Description                                           |
 | ----- | ----------------------------------------------------- |

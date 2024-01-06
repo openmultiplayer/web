@@ -10,11 +10,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Change the text of a player-textdraw.
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
-| playerid | The ID of the player who's textdraw string to set |
-| text     | The ID of the textdraw to change                  |
-| string[] | The new string for the TextDraw                   |
+| Name             | Description                                       |
+|------------------|---------------------------------------------------|
+| playerid         | The ID of the player who's textdraw string to set |
+| text             | The ID of the textdraw to change                  |
+| string[]         | The new string for the TextDraw                   |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.        |
 
 ## Returns
 
@@ -51,6 +52,9 @@ public vhealth_td_update(playerid)
     format(tdstring, sizeof(tdstring), "Vehicle Health: %0f", vHealth);
 
     PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], tdstring); // <<< Update the text to show the vehicle health
+
+    // PRO TIP: You don't need `format` in open.mp
+    PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], "Vehicle Health: %0f", vHealth);
     return 1;
 }
 
@@ -77,6 +81,7 @@ There are limits to the length of textdraw strings! See Limits for more info.
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawGetString](PlayerTextDrawGetString): Gets the text of a player-textdraw.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.

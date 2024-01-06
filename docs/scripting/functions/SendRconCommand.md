@@ -8,9 +8,10 @@ tags: ["administration"]
 
 Sends an RCON (Remote Console) command.
 
-| Name      | Description                      |
-| --------- | -------------------------------- |
-| command[] | The RCON command to be executed. |
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| command[]        | The RCON command to be executed.           |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
 
@@ -38,6 +39,9 @@ new szMapName[] = "Los Santos";
 new szCmd[64];
 format(szCmd, sizeof(szCmd), "mapname %s", szMapName);
 SendRconCommand(szCmd);
+
+// PRO TIP: You don't need `format` in open.mp
+SendRconCommand("mapname %s", szMapName);
 ```
 
 ## Related Functions

@@ -23,15 +23,23 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid, cmdtext[])
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
 {
-    if (!strcmp(cmdtext, "/select_ptd", true))
-    {
-        for(new i = 0; i < MAX_PLAYER_TEXT_DRAWS; i++) PlayerTextDrawSetSelectable(playerid, PlayerText:i, 1);
-        SendClientMessage(playerid, 0xFFFFFFAA, "SERVER: All player-textdraws can be selected now!");
-        return 1;
-    }
-    return 0;
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server");
+    PlayerTextDrawTextSize(playerid, welcomeText[playerid], 30.0, 10.0);
+    
+    // Set 'welcomeText[playerid]' selectable
+    PlayerTextDrawSetSelectable(playerid, welcomeText[playerid], true);
+
+    // Enable select textdraw for player
+    SelectTextDraw(playerid, 0xFF0000FF);
+
+    // Show 'welcomeText[playerid]' to the player
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
+
+    return 1;
 }
 ```
 
@@ -39,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Use PlayerTextDrawTextSize to define the clickable area.
+Use [PlayerTextDrawTextSize](PlayerTextDrawTextSize) to define the clickable area.
 
 :::
 
@@ -51,6 +59,10 @@ PlayerTextDrawSetSelectable MUST be used BEFORE the textdraw is shown to the pla
 
 ## Related Functions
 
+- [PlayerTextDrawIsSelectable](PlayerTextDrawIsSelectable): Checks if a player-textdraw is selectable.
 - [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
 - [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
+
+## Related Callbacks
+
 - [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

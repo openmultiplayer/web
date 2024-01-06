@@ -10,18 +10,19 @@ tags: ["player", "3dtextlabel"]
 
 Creates a 3D Text Label only for a specific player
 
-| Name            | Description                                                                     |
-| --------------- | ------------------------------------------------------------------------------- |
-| playerid        | The player which should see the newly created 3DText Label.                     |
-| text[]          | The text to display.                                                            |
-| color           | The text color                                                                  |
-| x               | X Coordinate (or offset if attached)                                            |
-| y               | Y Coordinate (or offset if attached)                                            |
-| z               | Z Coordinate (or offset if attached)                                            |
-| DrawDistance    | The distance where you are able to see the 3D Text Label                        |
-| attachedplayer  | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
-| attachedvehicle | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
-| testLOS         | 0/1 Test the line-of-sight so this text can't be seen through walls             |
+| Name             | Description                                                                     |
+|------------------|---------------------------------------------------------------------------------|
+| playerid         | The player which should see the newly created 3DText Label.                     |
+| text[]           | The text to display.                                                            |
+| color            | The text color                                                                  |
+| x                | X Coordinate (or offset if attached)                                            |
+| y                | Y Coordinate (or offset if attached)                                            |
+| z                | Z Coordinate (or offset if attached)                                            |
+| DrawDistance     | The distance where you are able to see the 3D Text Label                        |
+| attachedplayer   | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
+| attachedvehicle  | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
+| testLOS          | 0/1 Test the line-of-sight so this text can't be seen through walls             |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                      |
 
 ## Returns
 
@@ -30,15 +31,22 @@ The ID of the newly created Player 3D Text Label, or INVALID_3DTEXT_ID if the Pl
 ## Examples
 
 ```c
-if (strcmp(cmd, "/playerlabel", true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new
-        PlayerText3D: playerTextId,
-        Float: X, Float: Y, Float: Z;
+    if (!strcmp(cmdtext, "/playerlabel", true))
+    {
+        new
+            PlayerText3D: playerTextId,
+            name[MAX_PLAYER_NAME],
+            Float: X, Float: Y, Float: Z;
 
-    GetPlayerPos(playerid, X, Y, Z);
-    playerTextId = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 0x008080FF, X, Y, Z, 40.0);
-    return 1;
+        GetPlayerName(playerid, name, sizeof(name));
+        GetPlayerPos(playerid, X, Y, Z);
+
+        playerTextId = CreatePlayer3DTextLabel(playerid, "Hello %s!\nI'm at your position", 0x008080FF, X, Y, Z, 40.0, name);
+        return 1;
+    }
+    return 0;
 }
 ```
 

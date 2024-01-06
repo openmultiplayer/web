@@ -33,6 +33,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](SetPlayerCheckpoint): Create a checkpoint for a player.
 - [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Check if a player is in a checkpoint.
+- [IsPlayerCheckpointActive](IsPlayerCheckpointActive): Check if the player currently has a checkpoint visible.
 - [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
 - [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.

@@ -18,28 +18,38 @@ Set the text alignment of a player-textdraw.
 
 ## Returns
 
-Note
-
-For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at PlayerTextDrawTextSize.
+This function does not return any specific values.
 
 ## Examples
 
 ```c
+/*
+    TEXT_DRAW_ALIGN_LEFT
+    TEXT_DRAW_ALIGN_CENTER
+    TEXT_DRAW_ALIGN_RIGHT
+*/
+
 new PlayerText:gMyTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
     gMyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");
-    PlayerTextDrawAlignment(playerid, gMyTextdraw[playerid], 2); // Align the textdraw in the center
+    PlayerTextDrawAlignment(playerid, gMyTextdraw[playerid], TEXT_DRAW_ALIGN_CENTER); // Align the textdraw in the center
     return 1;
 }
 ```
 
 ## Notes
 
+:::warning
+
+For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
+
+:::
+
 :::tip
 
-For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at PlayerTextDrawTextSize.
+If the textdraw is already shown for the player, it must be re-shown (PlayerTextDrawShow) to show the changes of this function.
 
 :::
 
@@ -47,6 +57,7 @@ For alignment 2 (center) the x and y values of TextSize need to be swapped, see 
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawGetAlignment](PlayerTextDrawGetAlignment): Gets the text alignment of a player-textdraw.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.

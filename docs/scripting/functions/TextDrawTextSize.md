@@ -25,7 +25,7 @@ new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
     TextDrawTextSize(gMyTextdraw, 2.0, 3.6);
     return 1;
 }
@@ -51,6 +51,7 @@ If you want to change the text size of a textdraw that is already shown, you don
 
 - [TextDrawCreate](TextDrawCreate): Create a textdraw.
 - [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawGetTextSize](TextDrawGetTextSize): Gets the X axis and Y axis of the textdraw.
 - [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
 - [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
 - [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.

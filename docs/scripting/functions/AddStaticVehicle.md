@@ -41,3 +41,15 @@ public OnGameModeInit()
 - [AddStaticVehicleEx](AddStaticVehicleEx): Add a static vehicle with custom respawn time.
 - [CreateVehicle](CreateVehicle): Create a vehicle.
 - [DestroyVehicle](DestroyVehicle): Destroy a vehicle.
+- [GetVehicleParamsSirenState](GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.
+- [SetVehicleSpawnInfo](SetVehicleSpawnInfo): Adjusts vehicle model, spawn location, colours, respawn delay and interior.
+- [GetVehicleSpawnInfo](GetVehicleSpawnInfo): Gets the vehicle spawn location and colours.
+- [ChangeVehicleColours](ChangeVehicleColours): Change a vehicle's primary and secondary colors.
+- [GetVehicleColours](GetVehicleColours): Gets the vehicle colours.
+- [SetVehicleRespawnDelay](SetVehicleRespawnDelay): Set the respawn delay of a vehicle.
+- [GetVehicleRespawnDelay](GetVehicleRespawnDelay): Get the respawn delay of a vehicle.
+
+## Related Callbacks
+
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Called when a vehicle respawns.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Called when a vehicle's siren is toggled on/off.
