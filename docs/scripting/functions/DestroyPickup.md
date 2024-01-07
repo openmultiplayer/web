@@ -1,7 +1,7 @@
 ---
 title: DestroyPickup
 description: Destroys a pickup created with CreatePickup.
-tags: []
+tags: ["pickup"]
 ---
 
 ## Description
@@ -19,14 +19,20 @@ This function does not return any specific values.
 ## Examples
 
 ```c
+new g_PickupArmour;
+
 // Create a pickup for armor.
-pickup_armour = CreatePickup ( 1242, 2, 1503.3359, 1432.3585, 10.1191 );
+g_PickupArmour = CreatePickup(1242, 2, 1503.3359, 1432.3585, 10.1191);
 
 //some time later...
-DestroyPickup(pickup_armour);
+DestroyPickup(g_PickupArmour);
 ```
 
 ## Related Functions
 
 - [CreatePickup](CreatePickup): Create a pickup.
+- [IsValidPickup](IsValidPickup): Checks if a pickup is valid.
+
+## Related Callbacks
+
 - [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Called when a player picks up a pickup.

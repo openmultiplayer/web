@@ -1,17 +1,19 @@
 ---
-title: OnPlayerPickUpPickup
-description: This callback is called when a player picks up a pickup created with CreatePickup.
+title: OnPickupStreamIn
+description: This callback is called when a pickup enters the visual range of a player.
 tags: ["player"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
-This callback is called when a player picks up a pickup created with [CreatePickup](../functions/CreatePickup).
+This callback is called when a pickup enters the visual range of a player.
 
 | Name     | Description                                                                 |
 |----------|-----------------------------------------------------------------------------|
-| playerid | The ID of the player that picked up the pickup.                             |
 | pickupid | The ID of the pickup, returned by [CreatePickup](../functions/CreatePickup) |
+| playerid | The ID of the player that pickup enters the visual range.                   |
 
 ## Returns
 
@@ -20,25 +22,19 @@ It is always called first in gamemode.
 ## Examples
 
 ```c
-new pickup_Cash;
-new pickup_Health;
+new g_PickupHealth;
 
 public OnGameModeInit()
 {
-    pickup_Cash = CreatePickup(1274, 2, 2009.8658, 1220.0293, 10.8206, -1);
-    pickup_Health = CreatePickup(1240, 2, 2009.8474, 1218.0459, 10.8175, -1);
+    g_PickupHealth = CreatePickup(1240, 2, 2009.8474, 1218.0459, 10.8175);
     return 1;
 }
 
-public OnPlayerPickUpPickup(playerid, pickupid)
+public OnPickupStreamIn(pickupid, playerid)
 {
-    if (pickupid == pickup_Cash)
+    if (pickupid == g_PickupHealth)
     {
-        GivePlayerMoney(playerid, 1000);
-    }
-    else if (pickupid == pickup_Health)
-    {
-        SetPlayerHealth(playerid, 100.0);
+        printf("g_PickupHealth is streamed in for player id %d", playerid);
     }
     return 1;
 }
@@ -48,7 +44,7 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 
 The following callbacks might be useful, as they're related to this callback in one way or another. 
 
-- [OnPickupStreamIn](OnPickupStreamIn): Called when a pickup enters the visual range of a player.
+- [OnPlayerPickUpPickup](OnPlayerPickUpPickup): Called when a player picks up a pickup.
 - [OnPickupStreamOut](OnPickupStreamOut): Called when a pickup leaves the visual range of a player.
 
 ## Related Functions
