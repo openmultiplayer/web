@@ -34,4 +34,6 @@ public OnPlayerDeath(playerid, killerid, reason)
 - [HideGameTextForAll](HideGameTextForAll): Stop showing a gametext style for all players.
 - [GameTextForPlayer](GameTextForPlayer): Display gametext to a player.
 - [GameTextForAll](GameTextForAll): Display gametext to all players.
+- [GetGameText](GetGameText): Gets all the information on the given game text style.
+- [HasGameText](HasGameText): Does the player currently have text in the given gametext style displayed?
 - [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.

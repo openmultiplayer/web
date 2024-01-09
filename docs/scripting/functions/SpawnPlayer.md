@@ -38,6 +38,7 @@ Kills the player if they are in a vehicle and then they spawn with a bottle in t
 
 ## Related Functions
 
+- [IsPlayerSpawned](IsPlayerSpawned): Checks if a player is spawned.
 - [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.
 - [AddPlayerClass](AddPlayerClass): Add a class.
 - [OnPlayerSpawn](../callbacks/OnPlayerSpawn): Called when a player spawns.

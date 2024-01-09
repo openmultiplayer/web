@@ -37,3 +37,6 @@ public OnPlayerText(playerid, text[])
 ```
 
 ## Related Functions
+
+- [GetPlayerSurfingVehicleID](GetPlayerSurfingVehicleID): Get the ID of the vehicle that the player is surfing (stuck to the roof of).
+- [GetPlayerSurfingOffsets](GetPlayerSurfingOffsets): Gets a player's surfing offsets.

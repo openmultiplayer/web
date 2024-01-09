@@ -32,3 +32,5 @@ if (surfingVehicleId == INVALID_VEHICLE_ID)
 
 - [GetPlayerVehicleID](GetPlayerVehicleID): Get the ID of the vehicle the player is in.
 - [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.
+- [GetPlayerSurfingObjectID](GetPlayerSurfingObjectID): Gets the ID of the object the player is surfing on.
+- [GetPlayerSurfingOffsets](GetPlayerSurfingOffsets): Gets a player's surfing offsets.

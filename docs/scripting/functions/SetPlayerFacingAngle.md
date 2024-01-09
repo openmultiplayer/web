@@ -44,4 +44,5 @@ Angles are reversed in GTA:SA; 90 degrees would be East in the real world, but i
 ## Related Functions
 
 - [GetPlayerFacingAngle](GetPlayerFacingAngle): Check where a player is facing.
+- [GetPlayerRotationQuat](GetPlayerRotationQuat): Get the quaternion rotation of a player.
 - [SetPlayerPos](SetPlayerPos): Set a player's position.
