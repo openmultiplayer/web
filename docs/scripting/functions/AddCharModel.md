@@ -17,6 +17,12 @@ Adds a new custom character model for download. The model files will be stored i
 | dffname | Name of the .dff model collision file located in models server folder by default (artpath setting).            |
 | txdname | Name of the .txd model texture file located in models server folder by default (artpath setting).              |
 
+:::warning
+
+Model ID 20000 can be used as a custom skin, but it requires to be displayed as a preview model first, BUT, if a 0.3.7 client sees the custom skin, they will crash.
+
+:::
+
 ## Returns
 
 1: The function executed successfully.

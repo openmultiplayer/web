@@ -21,6 +21,12 @@ Adiciona um novo modelo de personagem personalizado para download. Os arquivos d
 | dffname | Nome do arquivo de extensão .dff localizado na pasta do servidor de modelos por padrão (configuração artpath).             |
 | txdname | Nome do arquivo de textura de extensão .txd localizado na pasta do servidor de modelos por padrão (configuração artpath).  |
 
+:::warning
+
+O ID do modelo 20000 pode ser usado como uma skin personalizada, mas necessita ser mostrado primeiramente como um preview model, PORÉM, se um client 0.3.7 ver a skin personalizada, o jogo deles irá crashar.
+
+:::
+
 ## Retorno
 
 1: A função foi executada com sucesso.
