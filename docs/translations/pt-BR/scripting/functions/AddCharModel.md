@@ -17,7 +17,7 @@ Adiciona um novo modelo de personagem personalizado para download. Os arquivos d
 | Nome    | Descrição                                                                                                                  |
 | ------- | -------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | O ID do modelo da skin original a ser usado como base (personagens originais são usados caso o download falhar).           |
-| newid   | O ID do modelo da nova skin. Varia entre 20.001 a 30.000 (10.000 slots) para serem usados posteriormente com SetPlayerSkin. |
+| newid   | O ID do modelo da nova skin. Varia entre 20001 a 30000 (10000 slots) para serem usados posteriormente com SetPlayerSkin. |
 | dffname | Nome do arquivo de extensão .dff localizado na pasta do servidor de modelos por padrão (configuração artpath).             |
 | txdname | Nome do arquivo de textura de extensão .txd localizado na pasta do servidor de modelos por padrão (configuração artpath).  |
 
