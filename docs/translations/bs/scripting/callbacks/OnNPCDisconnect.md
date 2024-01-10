@@ -1,7 +1,7 @@
 ---
-Ime: OnNPCDisconnect
-Deskripcija: Ovaj callback je pozvan kada se NPC diskonektuje sa servera.
-Tagovi: ["npc"]
+title: OnNPCDisconnect
+description: Ovaj callback je pozvan kada se NPC diskonektuje sa servera.
+tags: ["npc"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
