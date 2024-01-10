@@ -14,7 +14,7 @@ Toggle the box on a player-textdraw.
 | -------- | -------------------------------------------------------- |
 | playerid | The ID of the player whose textdraw to toggle the box of |
 | text     | The ID of the player-textdraw to toggle the box of       |
-| use      | 1 to use a box or 0 to not use a box                     |
+| bool:use | true to use a box or false to not use a box              |
 
 ## Returns
 
