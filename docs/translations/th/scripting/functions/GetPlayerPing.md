@@ -20,9 +20,9 @@ The current ping of the player (expressed in milliseconds).
 
 ```c
 // Declare an array of all possible timer identifiers for timers for kicking players with
-// generally high ping with default value of -1
+// generally high ping with default value of 0
 new
-    gPlayerPingTimer[MAX_PLAYERS] = {-1, ...};
+    gPlayerPingTimer[MAX_PLAYERS] = {0, ...};
 
 // A constant (nice documentation :))
 const
@@ -38,7 +38,7 @@ public OnPlayerDisconnect(playerid, reason)
 {
     // Kill the timer and reset the value to invalid
     KillTimer(gPlayerPingTimer[playerid]);
-    gPlayerPingTimer[playerid] = -1;
+    gPlayerPingTimer[playerid] = 0;
 }
 
 // A forwarded function (callback)
