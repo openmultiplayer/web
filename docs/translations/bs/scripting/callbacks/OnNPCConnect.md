@@ -1,5 +1,5 @@
 ---
-Ime: OnNPCConnect
+title: OnNPCConnect
 Deskripcija: Ovaj callback je pozvan kada se NPC konektovao na server.
 Tagovi: ["npc"]
 ---
