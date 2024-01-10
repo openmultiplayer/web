@@ -24,9 +24,9 @@ Apply an animation to an actor.
 
 ## Returns
 
-1: The function executed successfully.
+true: The function executed successfully.
 
-0: The function failed to execute. The actor specified does not exist.
+false: The function failed to execute. The actor specified does not exist.
 
 ## Examples
 
