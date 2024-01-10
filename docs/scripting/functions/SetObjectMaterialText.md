@@ -18,7 +18,7 @@ Replace the texture of an object with text.
 | materialsize     | The [size](/docs/scripting/resources/materialtextsizes) of the material.                      |
 | fontface         | The font to use.                                                                              |
 | fontsize         | The size of the text (MAX 255).                                                               |
-| bold             | Bold text. Set to true for bold, false for not.                                               |
+| bool:bold        | Bold text. Set to true for bold, false for not.                                               |
 | fontcolor        | The color of the text, in ARGB format.                                                        |
 | backcolor        | The background color, in ARGB format.                                                         |
 | textalignment    | The [alignment](/docs/scripting/resources/materialtextalignment) of the text (default: left). |
@@ -26,9 +26,9 @@ Replace the texture of an object with text.
 
 ## Returns
 
-1: The function was executed successfully.
+true: The function was executed successfully.
 
-0: The function failed to execute.
+false: The function failed to execute.
 
 ## Examples
 
