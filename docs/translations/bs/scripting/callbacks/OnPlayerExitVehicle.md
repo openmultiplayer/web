@@ -1,7 +1,7 @@
 ---
-Ime: OnPlayerExitVehicle
-Deskripcija: Ovaj callback je pozvan kada igrač krene da izlazi iz vozila.
-Tagovi: ["player", "vehicle"]
+title: OnPlayerExitVehicle
+description: Ovaj callback je pozvan kada igrač krene da izlazi iz vozila.
+tags: ["player", "vehicle"]
 ---
 
 ## Deskripcija
