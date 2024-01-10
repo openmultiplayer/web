@@ -1,7 +1,7 @@
 ---
-Ime: OnNPCEnterVehicle
-Deskripcija: Ovaj callback je pozvan kada NPC uđe u vozilo.
-Tagovi: ["npc"]
+title: OnNPCEnterVehicle
+description: Ovaj callback je pozvan kada NPC uđe u vozilo.
+tags: ["npc"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
