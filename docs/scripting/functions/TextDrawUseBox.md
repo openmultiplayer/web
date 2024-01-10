@@ -15,9 +15,9 @@ Toggle whether a textdraw uses a box or not.
 
 ## Returns
 
-1: The function executed successfully.
+true: The function executed successfully.
 
-0: The function failed to execute. This means the textdraw specified does not exist.
+false: The function failed to execute. This means the textdraw specified does not exist.
 
 ## Examples
 
