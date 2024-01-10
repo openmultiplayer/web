@@ -12,17 +12,17 @@ Replace the texture of an object with text.
 
 | Name             | Description                                                                                   |
 |------------------|-----------------------------------------------------------------------------------------------|
-| objectid         | The ID of the object to replace the texture of with text.                                     |
-| text[]           | The text to show on the object. (MAX 2048 characters)                                         |
-| materialindex    | The object's material index to replace with text.                                             |
-| materialsize     | The [size](/docs/scripting/resources/materialtextsizes) of the material.                      |
-| fontface         | The font to use.                                                                              |
-| fontsize         | The size of the text (MAX 255).                                                               |
-| bool:bold        | Bold text. Set to true for bold, false for not.                                               |
-| fontcolor        | The color of the text, in ARGB format.                                                        |
-| backcolor        | The background color, in ARGB format.                                                         |
-| textalignment    | The [alignment](/docs/scripting/resources/materialtextalignment) of the text (default: left). |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                                    |
+| objectid                                 | The ID of the object to replace the texture of with text.                                     |
+| text[]                                   | The text to show on the object. (MAX 2048 characters)                                         |
+| materialindex                            | The object's material index to replace with text.                                             |
+| OBJECT_MATERIAL_SIZE:materialsize        | The [size](/docs/scripting/resources/materialtextsizes) of the material.                      |
+| const fontface                           | The font to use.                                                                              |
+| fontsize                                 | The size of the text (MAX 255).                                                               |
+| bool:bold                                | Bold text. Set to true for bold, false for not.                                               |
+| fontcolor                                | The color of the text, in ARGB format.                                                        |
+| backcolor                                | The background color, in ARGB format.                                                         |
+| OBJECT_MATERIAL_TEXT_ALIGN:textalignment | The [alignment](/docs/scripting/resources/materialtextalignment) of the text (default: left). |
+| OPEN_MP_TAGS:...                         | Indefinite number of arguments of any tag.                                                    |
 
 ## Returns
 
