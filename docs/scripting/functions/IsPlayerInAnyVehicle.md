@@ -14,9 +14,9 @@ Check if a player is inside any vehicle (as a driver or passenger).
 
 ## Returns
 
-1: The player is in a vehicle.
+true: The player is in a vehicle.
 
-0: The player is not in a vehicle.
+false: The player is not in a vehicle.
 
 ## Examples
 
