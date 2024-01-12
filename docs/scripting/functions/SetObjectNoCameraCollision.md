@@ -16,9 +16,9 @@ Disable collisions between players' cameras and the specified object.
 
 ## Returns
 
-1: The function was executed successfully.
+`true` - The function was executed successfully.
 
-0: The function failed to execute. The object specified does not exist.
+`false` - The function failed to execute. The object specified does not exist.
 
 ## Examples
 
@@ -45,4 +45,5 @@ This only works outside the map boundaries (past -3000/3000 units on the x and/o
 
 ## Related Functions
 
+- [HasObjectCameraCollision](HasObjectCameraCollision): Checks if an object has camera collision enabled.
 - [SetPlayerObjectNoCameraCollision](SetPlayerObjectNoCameraCollision): Disables collisions between camera and player object.
