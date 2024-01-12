@@ -1,14 +1,14 @@
 ---
-title: GetPlayerSurfingObjectID
-description: Returns the ID of the object the player is surfing on.
-tags: ["player"]
+title: GetPlayerSurfingPlayerObjectID
+description: Returns the ID of the player-object the player is surfing on.
+tags: ["player", "object", "playerobject"]
 ---
 
-<VersionWarn version='SA-MP 0.3c R3' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 
-Returns the ID of the object the player is surfing on.
+Returns the ID of the player-object the player is surfing on.
 
 | Name     | Description                             |
 | -------- | --------------------------------------- |
@@ -27,9 +27,9 @@ public OnPlayerText(playerid, text[])
     if (strcmp(text, "objectsurfing", true) == 0)
     {
         new
-            szMessage[30];
+            szMessage[46];
 
-        format(szMessage, sizeof(szMessage), "You're surfing on object #%d.", GetPlayerSurfingObjectID(playerid));
+        format(szMessage, sizeof(szMessage), "You're surfing on object #%d.", GetPlayerSurfingPlayerObjectID(playerid));
         SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
     }
     return 0;
@@ -38,6 +38,6 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [GetPlayerSurfingPlayerObjectID](GetPlayerSurfingPlayerObjectID): Get the ID of the player-object that the player is surfing on.
+- [GetPlayerSurfingObjectID](GetPlayerSurfingObjectID): Get the ID of the object that the player is surfing on.
 - [GetPlayerSurfingVehicleID](GetPlayerSurfingVehicleID): Get the ID of the vehicle that the player is surfing (stuck to the roof of).
 - [GetPlayerSurfingOffsets](GetPlayerSurfingOffsets): Gets a player's surfing offsets.
