@@ -8,7 +8,7 @@ The following camera modes are used by [GetPlayerCameraMode](../functions/GetPla
 
 :::note
 
-There might still be more usable IDs hidden away in the game and some IDs are used for more than one situation. Name
+There might still be more usable IDs hidden away in the game and some IDs are used for more than one situation.
 
 :::
 
