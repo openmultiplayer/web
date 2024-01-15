@@ -1,7 +1,7 @@
 ---
 title: SetObjectsDefaultCameraCollision
 description: Omogućuje da se kolizije kamere s novostvorenim objektima onemoguće prema zadanim postavkama.
-tags: []
+tags: ["object", "camera"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
