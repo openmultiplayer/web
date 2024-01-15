@@ -90,3 +90,8 @@ Use color embedding for multiple colors in the text. Using -1 as dialogid closes
 ## Related Callbacks
 
 - [OnDialogResponse](../callbacks/OnDialogResponse): Called when a player responds to a dialog.
+
+## Related Resources
+
+- [Dialog Style](../resources/dialogstyles)
+- [Escape Codes](../resources/escapecodes)
