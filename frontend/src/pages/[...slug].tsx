@@ -38,8 +38,11 @@ const Page = ({ source, error, data, fallback }: Props) => {
 
   const content =
     source && hydrate(source, { components: components as Components });
-  
-  const codeColor = useColorModeValue('var(--chakra-colors-gray-200)', 'var(--chakra-colors-gray-700)');
+
+  const codeColor = useColorModeValue(
+    "var(--chakra-colors-gray-200)",
+    "var(--chakra-colors-gray-700)"
+  );
 
   return (
     <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
@@ -54,7 +57,8 @@ const Page = ({ source, error, data, fallback }: Props) => {
         <h1>{data?.title}</h1>
         {content}
         <style global jsx>{`
-          pre, code {
+          pre,
+          code {
             background: ${codeColor};
           }
         `}</style>
@@ -84,7 +88,7 @@ import { renderToString } from "src/mdx-helpers/ssr";
 import { RawContent } from "src/types/content";
 import { Components } from "@mdx-js/react";
 import { concat, flatten, flow, map } from "lodash/fp";
-import starryNight from "@microflash/remark-starry-night";
+import rehypeStarryNight from "@microflash/rehype-starry-night";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ slug: string[] }>
@@ -105,8 +109,8 @@ export async function getStaticProps(
     components: components as Components,
     mdxOptions: {
       components: components as Components,
-      remarkPlugins: [
-        [starryNight, { showLanguage: false, showLineNumbers: false, }],
+      rehypePlugins: [
+        [rehypeStarryNight, { showHeader: false, showLines: false }],
       ],
     },
   });

@@ -33,8 +33,14 @@ const Page = (props: Props) => {
     props.source &&
     hydrate(props.source, { components: components as Components });
 
-  const codeColor = useColorModeValue('var(--chakra-colors-gray-200)', 'var(--chakra-colors-gray-700)');
-  const tableRowBgColor = useColorModeValue('var(--chakra-colors-gray-50)', 'var(--chakra-colors-gray-700)');
+  const codeColor = useColorModeValue(
+    "var(--chakra-colors-gray-200)",
+    "var(--chakra-colors-gray-700)"
+  );
+  const tableRowBgColor = useColorModeValue(
+    "var(--chakra-colors-gray-50)",
+    "var(--chakra-colors-gray-700)"
+  );
 
   useEffect(() => setIsMounted(true), []);
 
@@ -50,13 +56,11 @@ const Page = (props: Props) => {
   const contributeCallToAction = props.fallback ? (
     <Admonition type="warning" title="Not Translated">
       <p>
-        This page has not been translated into the language that your
-        browser requested yet. The English content is being shown as a
-        fallback.
+        This page has not been translated into the language that your browser
+        requested yet. The English content is being shown as a fallback.
       </p>
       <p>
-        If you want to contribute a translation for this page then
-        please click{" "}
+        If you want to contribute a translation for this page then please click{" "}
         <a href={props.ghUrl}>here</a>.
       </p>
     </Admonition>
@@ -64,8 +68,8 @@ const Page = (props: Props) => {
     // TODO: would we want to translate this into the locale selected?
     <Admonition type="note" title="Help Needed">
       <p>
-        This wiki is the result of an ongoing community effort —
-        thank you all for helping!
+        This wiki is the result of an ongoing community effort — thank you all
+        for helping!
       </p>
       <p>
         If you want to provide changes to this page then please click{" "}
@@ -93,7 +97,8 @@ const Page = (props: Props) => {
           {/* <MDXRemote {...props.source} components={components} /> */}
           {content}
           <style global jsx>{`
-            pre, code {
+            pre,
+            code {
               background: ${codeColor};
             }
 
@@ -156,7 +161,7 @@ import glob from "glob";
 import admonitions from "remark-admonitions";
 import { concat, filter, flatten, flow, map } from "lodash/fp";
 // import { serialize } from "next-mdx-remote/serialize";
-import starryNight from "@microflash/remark-starry-night";
+import rehypeStarryNight from "@microflash/rehype-starry-night";
 
 import { getDocsGithubUrl, readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
@@ -192,7 +197,9 @@ export async function getStaticProps(
       remarkPlugins: [
         admonitions,
         // remarkGfm,
-        [starryNight, { showLanguage: false, showLineNumbers: false, }],
+      ],
+      rehypePlugins: [
+        [rehypeStarryNight, { showHeader: false, showLines: false }],
       ],
     },
   });
