@@ -44,3 +44,7 @@ If TogglePlayerClock is enabled, weather will slowly change over time, instead o
 - [GetPlayerWeather](GetPlayerWeather): Get a player's weather.
 - [SetWeather](SetWeather): Set the global weather.
 - [SetGravity](SetGravity): Set the global gravity.
+
+## Related Resources
+
+- [Weather IDs](../resources/weatherid)
