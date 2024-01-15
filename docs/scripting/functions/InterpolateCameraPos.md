@@ -55,3 +55,7 @@ Use TogglePlayerSpectating to make objects stream in for the player while the ca
 - [InterpolateCameraLookAt](InterpolateCameraLookAt): Move a player's camera view from one location to another.
 - [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
 - [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.
+
+## Related Resources
+
+- [Camera Cut Styles](../resources/cameracutstyles)
