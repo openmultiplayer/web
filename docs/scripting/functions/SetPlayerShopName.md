@@ -48,3 +48,7 @@ This function does not support casino scripts.
 
 - [DisableInteriorEnterExits](DisableInteriorEnterExits): Disable the yellow door markers.
 - [SetPlayerInterior](SetPlayerInterior): Set a player's interior.
+
+## Related Resources
+
+- [Shop Names](../resources/shopnames)
