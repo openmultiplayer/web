@@ -12,7 +12,7 @@ Prikazuje objekat igraču koji je sakriven sa [HideObjectForPlayer](HideObjectFo
 
 ## Parametri
 
-| Name     | Description                              |
+| Ime      | Deskripcija                              |
 |----------|------------------------------------------|
 | playerid | ID igrača.                               |
 | objectid | ID objekta da se prikaže igraču.         |
