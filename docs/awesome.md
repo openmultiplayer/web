@@ -45,7 +45,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Model Sizes Plus](https://github.com/Crayder/Model-Sizes-Plus)** - Updated, advanced, more precise version of the old modelsizes include.
 - **[physics.inc](https://github.com/uPeppe/physics.inc)** - Simulate 2D and 3D physics (realistic movements, collisions, and more).
 - **[samp-async-dialogs](https://github.com/AGraber/samp-async-dialogs)** - Asynchronous dialog handling with PawnPlus tasks.
-- **[speedcap.inc](https://github.com/openmultiplayer/archive/blob/master/includes/speedcap.inc)** - A libraries to control speed of vehicles.
+- **[speedcap.inc](https://github.com/openmultiplayer/archive/blob/master/includes/speedcap.inc)** - An include to control the speed of vehicles.
 - **[SA:MP Command Guess](https://github.com/Kirima2nd/samp-command-guess)** - A command guesser for SA:MP using Levenshtein Distance function.
 - **[vending](https://github.com/wuzi/vending)** - Server-side vending machines for SA-MP.
 - **[strlib](https://github.com/oscar-broman/strlib)** - A list of useful string functions.
