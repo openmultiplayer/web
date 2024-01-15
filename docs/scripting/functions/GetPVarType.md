@@ -57,3 +57,7 @@ stock PrintPVar(playerid, varname[])
 - [SetPVarFloat](SetPVarFloat): Set a float for a player variable.
 - [GetPVarFloat](GetPVarFloat): Get the previously set float from a player variable.
 - [DeletePVar](DeletePVar): Delete a player variable.
+
+## Related Resources
+
+- [Player Variable Types](../resources/pvartypes)
