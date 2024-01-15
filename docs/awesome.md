@@ -61,7 +61,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 ## Command Processors
 
 - **[I-ZCMD](https://github.com/YashasSamaga/I-ZCMD)** - Improved version of ZCMD.
-- **[Pawn.CMD](https://github.com/katursis/Pawn.CMD)** - Faster than any other command.
+- **[Pawn.CMD](https://github.com/katursis/Pawn.CMD)** - Faster than any other command processor.
 - **[y_commands](https://github.com/pawn-lang/YSI-Includes/blob/5.x/YSI_Visual/y_commands.md)** - Command processor from YSI Includes
 
 ## Plugins
