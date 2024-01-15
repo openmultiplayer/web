@@ -57,3 +57,7 @@ public OnPlayerUpdate(playerid)
 Only the FUNCTION of keys can be detected; not actual keys. For example, it is not possible to detect if a player presses SPACE, but you can detect if they press SPRINT (which can be mapped (assigned/binded) to ANY key (but is space by default)). As of update 0.3.7, the keys "A" and "D" are not recognized when in a vehicle. However, keys "W" and "S" can be detected with the "keys" parameter.
 
 :::
+
+## Related Resources
+
+- [Keys](../resources/keys)
