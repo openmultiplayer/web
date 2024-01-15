@@ -156,6 +156,7 @@ import glob from "glob";
 import admonitions from "remark-admonitions";
 import { concat, filter, flatten, flow, map } from "lodash/fp";
 // import { serialize } from "next-mdx-remote/serialize";
+import starryNight from "@microflash/remark-starry-night";
 
 import { getDocsGithubUrl, readLocaleDocs } from "src/utils/content";
 import Search from "src/components/Search";
@@ -184,14 +185,14 @@ export async function getStaticProps(
 
   const { content, data } = matter(result.source);
 
-  // TODO: plugins for admonitions and frontmatter etc
-  // also, pawn syntax highlighting
+  // TODO: plugin for frontmatter
   const mdxSource = await renderToString(content, {
     components,
     mdxOptions: {
       remarkPlugins: [
         admonitions,
         // remarkGfm,
+        [starryNight, { showLanguage: false, showLineNumbers: false, }],
       ],
     },
   });
