@@ -71,3 +71,8 @@ The following callbacks might be useful, as they're related to this function.
 - [OnPlayerPickUpPlayerPickup](../callbacks/OnPlayerPickUpPlayerPickup): Called when a player picks up a player-pickup.
 - [OnPlayerPickupStreamIn](../callbacks/OnPlayerPickupStreamIn): Called when a player-pickup enters the visual range of the player.
 - [OnPlayerPickupStreamOut](../callbacks/OnPlayerPickupStreamOut): Called when a player-pickup leaves the visual range of the player.
+
+## Related Resources
+
+- [Pickup IDs](../resources/pickupids)
+- [Pickup Types](../resources/pickuptypes)

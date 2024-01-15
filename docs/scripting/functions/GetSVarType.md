@@ -56,3 +56,7 @@ stock PrintSVar(varname[])
 - [SetSVarFloat](SetSVarFloat): Set a float for a server variable.
 - [GetSVarFloat](GetSVarFloat): Get the previously set float from a server variable.
 - [DeleteSVar](DeleteSVar): Delete a server variable.
+
+## Related Resources
+
+- [Server Variable Types](../resources/svartypes)

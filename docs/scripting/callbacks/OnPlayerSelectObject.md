@@ -52,3 +52,7 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [BeginObjectSelecting](../functions/BeginObjectSelecting): Select an object.
+
+## Related Resources
+
+- [Select Object Types](../resources/selectobjecttypes)

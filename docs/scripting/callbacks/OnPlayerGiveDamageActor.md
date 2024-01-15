@@ -67,3 +67,7 @@ The following functions might be useful, as they're related to this callback in 
 - [GetActorHealth](../functions/GetActorHealth): Gets the health of an actor.
 - [IsActorInvulnerable](../functions/IsActorInvulnerable): Check if actor is invulnerable.
 - [IsValidActor](../functions/IsValidActor): Check if actor id is valid.
+
+## Related Resources
+
+- [Body Parts](../resources/bodyparts)

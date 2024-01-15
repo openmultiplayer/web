@@ -29,3 +29,7 @@ floatround(3.3, floatround_ceil);
 
 - [float](float): Convert an integer to a float.
 - [floatstr](floatstr): Convert an string to a float.
+
+## Related Resources
+
+- [Floatround Modes](../resources/floatroundmodes)

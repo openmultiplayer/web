@@ -58,3 +58,7 @@ Also, a blank space at end of the string may result in faliure. For example: `"H
 - [GetGameText](GetGameText): Gets all the information on the given game text style.
 - [HasGameText](HasGameText): Does the player currently have text in the given gametext style displayed?
 - [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+
+## Related Resources
+
+- [GameText Styles](../resources/gametextstyles)

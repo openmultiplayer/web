@@ -4,7 +4,9 @@ title: "Svar Types"
 
 :::info
 
-Types of server variables (also called svar types) used by [GetSVarType](../functions/GetSVarType).
+Types of server variables (also called svar types) used by [GetSVarType](../functions/GetSVarType) function.
+
+See also: [Server variable system](../../tutorials/servervariablesystem)
 
 :::
 

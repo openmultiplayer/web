@@ -11,24 +11,24 @@ Place an icon/marker on a player's map. Can be used to mark locations such as ba
 | Name       | Description                                                                                                                                                                         |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid   | The ID of the player to set the map icon for.                                                                                                                                       |
-| iconid     | The player's icon ID, ranging from 0 to 99. This means there is a maximum of 100 map icons. ID can be used in [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon). |
+| iconid     | The player's icon ID, ranging from 0 to 99. This means there is a maximum of 100 map icons. ID can be used in [RemovePlayerMapIcon](RemovePlayerMapIcon). |
 | Float:x    | The X coordinate to place the map icon at.                                                                                                                                          |
 | Float:y    | The Y coordinate to place the map icon at.                                                                                                                                          |
 | Float:z    | The Z coordinate to place the map icon at.                                                                                                                                          |
-| markertype | The [icon](/docs/scripting/resources/mapicons) to set.                                                                                                                              |
+| markertype | The [icon](../resources/mapicons) to set.                                                                                                                              |
 | color      | The color of the icon, as an integer or hex in RGBA color format. This should only be used with the square icon (ID: 0).                                                            |
-| style      | The [style](/docs/scripting/resources/mapiconstyles) of icon.                                                                                                                       |
+| style      | The [style](../resources/mapiconstyles) of icon.                                                                                                                       |
 
 ## Returns
 
-1: The function executed successfully.
+`true` - The function executed successfully.
 
-0: The function failed to execute. Player is not connected.
+`false` - The function failed to execute. Player is not connected.
 
 ## Examples
 
 ```c
-public OnPlayerConnect( playerid )
+public OnPlayerConnect(playerid)
 {
     // This example demonstrates how to create a dollar-icon on top of a 24/7 located
     // in Las Venturas. This way new players know where to go with their money!
@@ -52,5 +52,10 @@ You can only have 100 map icons! Marker type 1 (![](/images/mapIcons/icon1.gif))
 
 ## Related Functions
 
-- [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon): Remove a map icon for a player.
-- [SetPlayerMarkerForPlayer](/docs/scripting/functions/SetPlayerMarkerForPlayer): Set a player's marker.
+- [RemovePlayerMapIcon](RemovePlayerMapIcon): Remove a map icon for a player.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Set a player's marker.
+
+## Related Resources
+
+- [Map Icons](../resources/mapicons): A list of map icons.
+- [Map Icon Styles](../resources/mapiconstyles): A list of map icon styles.

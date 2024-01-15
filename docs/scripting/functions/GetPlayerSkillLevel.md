@@ -40,7 +40,9 @@ The skill parameter is NOT the weapon ID, it is the skill type. Click [here](../
 :::
 
 # Related Functions
+
 - [SetPlayerSkillLevel](SetPlayerSkillLevel): Set the skill level of a certain weapon type for a player.
 
 # Related Information
-- [Weapon Skills](../resources/weaponskills#skill-levels): List of weapon skills that are used to set player's skill level.
+
+- [Weapon Skills](../resources/weaponskills): List of weapon skills that are used to set player's skill level.

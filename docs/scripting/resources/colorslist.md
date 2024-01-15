@@ -10,7 +10,7 @@ Colors in SA-MP are generally represented in hexadecimal notation (though intege
 
 _RR_ is the red part of the color, _GG_ the green and _BB_ the blue. _AA_ is the alpha value. If FF is used there, the color will display without transparency and if 00 is used, it will be invisible.
 
-For the Hex code for these colors, go to the [Hex colors](../resources/hex-colors) page.
+For the Hex code for these colors, go to the [Hex colors](hexcolors) page.
 
 ---
   

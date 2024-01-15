@@ -50,3 +50,7 @@ This function doesn't return a pickup ID that you can use in, for example, OnPla
 
 - [CreatePickup](CreatePickup): Create a pickup.
 - [DestroyPickup](DestroyPickup): Destroy a pickup.
+
+## Related Resources
+
+- [Pickup IDs](../resources/pickupids)

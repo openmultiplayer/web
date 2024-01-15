@@ -5,7 +5,7 @@ description: A list of Map Icons
 
 :::info
 
-This page has a list of all map icon styles which can be used by [SetPlayerMapIcon](/docs/scripting/functions/SetPlayerMapIcon).
+This page has a list of all map icon styles which can be used by [SetPlayerMapIcon](../functions/SetPlayerMapIcon) function.
 
 :::
 

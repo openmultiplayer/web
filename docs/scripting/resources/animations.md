@@ -6,6 +6,12 @@ tags: []
 
 :::note
 
+These animations are used by [ApplyAnimation](../functions/ApplyAnimation) function.
+
+:::
+
+:::note
+
 Please note that some of the listed animations may not be useable in SA-MP.
 
 :::
