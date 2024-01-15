@@ -1,7 +1,7 @@
 ---
 title: SetObjectsDefaultCameraCollision
 description: Allows camera collisions with newly created objects to be disabled by default.
-tags: []
+tags: ["object", "camera"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
