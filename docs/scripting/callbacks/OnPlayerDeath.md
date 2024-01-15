@@ -70,3 +70,7 @@ The following functions might be useful, as they're related to this callback in 
 
 - [SendDeathMessage](../functions/SendDeathMessage): Add a kill to the death list.
 - [SetPlayerHealth](../functions/SetPlayerHealth): Set a player's health.
+
+## Related Resources
+
+- [Weapon IDs](../resources/weaponids)
