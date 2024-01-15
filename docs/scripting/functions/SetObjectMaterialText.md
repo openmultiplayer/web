@@ -64,3 +64,8 @@ Text does not update after 16 calls against the same object.
 - Ultimate Creator by Nexius
 - SetObjectMaterialText Editor by RIDE2DAY
 - Fusez's Map Editor by RedFusion
+
+## Related Resources
+
+- [Material Text Sizes](../resources/materialtextsizes)
+- [Material Text Alignments](../resources/materialtextalignment)
