@@ -43,4 +43,11 @@ UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, 15); // Setting tire
 - [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
 - [RepairVehicle](RepairVehicle): Fully repair a vehicle.
 - [GetVehicleDamageStatus](GetVehicleDamageStatus): Get the vehicle damage state for each part individually.
+
+## Related Callbacks
+
 - [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate): Called when a vehicle's damage state changes.
+
+## Related Resources
+
+- [Damage Status](../resources/damagestatus)
