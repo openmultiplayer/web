@@ -31,3 +31,7 @@ printf("Player weather: %d", GetPlayerWeather(playerid));
 
 - [SetPlayerWeather](SetPlayerWeather): Set a player's weather.
 - [SetWeather](SetWeather): Set the world weather for all players.
+
+## Related Resources
+
+- [Weather IDs](../resources/weatherid)
