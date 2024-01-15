@@ -51,3 +51,7 @@ The following functions might be useful, as they're related to this callback in 
 - [GetPlayerState](../functions/GetPlayerState): Get a player's current state.
 - [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction): Get a player's current special action.
 - [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction): Set a player's special action.
+
+## Related Resources
+
+- [Player States](../resources/playerstates)
