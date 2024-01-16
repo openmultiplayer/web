@@ -160,7 +160,7 @@ description: open.mp server configuration file.
 |---------|--------|-------------------------|-----------|------|------------------------------------------------------------------------|
 | invite  | string | https://discord.gg/samp | ❌         | ❌    | The address of your server discord that appears in the server browser. |
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/cTRq5pr/294345382-54d77460-da32-458e-bcfa-10ebec90fbfa.png" alt="294345382-54d77460-da32-458e-bcfa-10ebec90fbfa" border="0"></a>
+![](https://i.ibb.co/cTRq5pr/294345382-54d77460-da32-458e-bcfa-10ebec90fbfa.png)
 
 ## Banners
 
@@ -169,7 +169,7 @@ description: open.mp server configuration file.
 | light   | string |               | ❌         | ❌    | Your server's light banner url address that appears in the server browser. |
 | dark    | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the server browser.  |
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/86T8wYG/image.png" alt="image" border="0"></a>
+![](https://i.ibb.co/86T8wYG/image.png)
 
 :::note
 
