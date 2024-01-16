@@ -51,11 +51,15 @@ format(result, sizeof(result), "This is a %s containing the number %i.", string,
 // This is a simple message containing the number 42.
 ```
 
+<br />
+
 ```c
 new string[64];
 format(string, sizeof(string), "Your score is: %d", GetPlayerScore(playerid));
 SendClientMessage(playerid, 0xFF8000FF, string);
 ```
+
+<br />
 
 ```c
 new string[32];
@@ -64,6 +68,8 @@ gettime(hour, minute, second);
 format(string, sizeof(string), "The time is %02d:%02d:%02d.", hour, minute, second);
 // will output something like "The time is 09:45:02."
 ```
+
+<br />
 
 ```c
 new string[32];
