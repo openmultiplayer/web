@@ -171,9 +171,11 @@ description: open.mp server configuration file.
 
 ![](https://i.ibb.co/86T8wYG/image.png)
 
+<br />
+
 :::note
 
-- Values marked as "Read-only" can not be changed during runtime. All other values can be (temporarily) changed by passing them to SendRconCommand or via server console.
+- Values marked as "Read-only" can not be changed during runtime. All other values can be (temporarily) changed by passing them to [SendRconCommand](../scripting/functions/SendRconCommand) or via server console.
 
 - Values marked as "Rule" are displayed in the server browser in the Rules section.
 
