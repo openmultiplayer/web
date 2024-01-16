@@ -61,4 +61,5 @@ Old weapons with no ammo left are still returned.
 
 ## Related Resources
 
-- [Weapon Slots](../resources/weaponslots).
+- [Weapon Slots](../resources/weaponslots)
+- [Weapon IDs](../resources/weaponids)
