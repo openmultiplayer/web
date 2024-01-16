@@ -16,7 +16,7 @@ This function can be used to change the spawn information of a specific player. 
 | Float:spawnX | The X-coordinate of the player's spawn position.                     |
 | Float:spawnY | The Y-coordinate of the player's spawn position.                     |
 | Float:spawnZ | The Z-coordinate of the player's spawn position.                     |
-| Float:anlge  | The direction in which the player needs to be facing after spawning. |
+| Float:angle  | The direction in which the player needs to be facing after spawning. |
 | weapon1      | The first spawn-weapon for the player.                               |
 | ammo1        | The amount of ammunition for the primary spawnweapon.                |
 | weapon2      | The second spawn-weapon for the player.                              |
