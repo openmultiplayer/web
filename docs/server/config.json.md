@@ -19,7 +19,7 @@ description: open.mp server configuration file.
 | Key                 | Type   | Default value | Read-only | Rule | Effect                                                                                                                   |
 |---------------------|--------|---------------|-----------|------|--------------------------------------------------------------------------------------------------------------------------|
 | artwork.cdn         | string |               | ✅         | ❌    | An http address for a remote model server.                                                                               |
-| artwork.enable      | bool   | true          | ✅         | ❌    | Toggles if the server uses custom models from the /models folder. Set to '**true**' to enable or '**false**' to disable. |
+| artwork.enable      | bool   | true          | ✅         | ✅    | Toggles if the server uses custom models from the /models folder. Set to '**true**' to enable or '**false**' to disable. |
 | artwork.models_path | string | models        | ✅         | ❌    | The path where the custom models are located.                                                                            |
 
 ## Chat Filter
@@ -28,7 +28,7 @@ description: open.mp server configuration file.
 |-------------------|------|---------------|-----------|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | chat_input_filter | bool | true          | ❌         | ❌    | Toggles the chat input filter. Disable it to use of chars like % in the chat. You can also use the [ToggleChatTextReplacement](../scripting/functions/ToggleChatTextReplacement) function. |
 
-## Server Query
+## Query Server Information
 
 | Key          | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                   |
 |--------------|------|---------------|-----------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -83,7 +83,7 @@ description: open.mp server configuration file.
 | logging.log_sqlite         | bool   | false                 | ❌         | ❌    | Logs sqlite DB\_\* function errors in the server console.                                                                                                                                                                                                                                                                                                                         |
 | logging.log_sqlite_queries | bool   | false                 | ❌         | ❌    | Logs all sqlite DB_Query calls, including the query string.                                                                                                                                                                                                                                                                                                                       |
 | logging.timestamp_format   | string | [%Y-%m-%dT%H:%M:%S%z] | ✅         | ❌    | The timestamp format that should be used. The format is based on the [strftime](http://cplusplus.com/reference/clibrary/ctime/strftime/) format from C/C++. Here are some examples:<br /><br />**[%H:%M:%S]** This displays only the time.<br /><br />**[%d/%m/%Y %H:%M:%S]** This would display the date in dd/mm/yyyy format followed by the time in hour:minute:second format. |
-| logging.use_prefix         | bool   | true                  | ❌         | ❌    | Toggles if prefixes such as [Info] should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                           |
+| logging.use_prefix         | bool   | true                  | ❌         | ❌    | Toggles if prefixes such as `[Info]` should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                         |
 | logging.use_timestamp      | bool   | true                  | ❌         | ❌    | Toggles if a timestamp should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                                       |
 
 ## NPCs and Players
@@ -164,18 +164,18 @@ description: open.mp server configuration file.
 
 ## Discord
 
-| Key     | Type   | Default value           | Read-only | Rule | Effect                                                                 |
-|---------|--------|-------------------------|-----------|------|------------------------------------------------------------------------|
-| discord.invite  | string | https://discord.gg/samp | ❌         | ❌    | The address of your server discord that appears in the server browser. |
+| Key            | Type   | Default value           | Read-only | Rule | Effect                                                                 |
+|----------------|--------|-------------------------|-----------|------|------------------------------------------------------------------------|
+| discord.invite | string | https://discord.gg/samp | ❌         | ❌    | The address of your server discord that appears in the server browser. |
 
 ![](https://i.ibb.co/cTRq5pr/294345382-54d77460-da32-458e-bcfa-10ebec90fbfa.png)
 
 ## Banners
 
-| Key     | Type   | Default value | Read-only | Rule | Effect                                                 |
-|---------|--------|---------------|-----------|------|--------------------------------------------------------|
-| light   | string |               | ❌         | ❌    | Your server's light banner url address that appears in the server browser. |
-| dark    | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the server browser.  |
+| Key   | Type   | Default value | Read-only | Rule | Effect                                                                     |
+|-------|--------|---------------|-----------|------|----------------------------------------------------------------------------|
+| light | string |               | ❌         | ❌    | Your server's light banner url address that appears in the server browser. |
+| dark  | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the server browser.  |
 
 ![](https://i.ibb.co/86T8wYG/image.png)
 
