@@ -67,12 +67,12 @@
 :root {
   .chakra-ui-dark {
     --color-prettylights-syntax-comment: #768390;
-    --color-prettylights-syntax-constant: #6cb6ff;
-    --color-prettylights-syntax-entity: #dcbdfb;
+    --color-prettylights-syntax-constant: #3399FF;
+    --color-prettylights-syntax-entity: #CF4181;
     --color-prettylights-syntax-storage-modifier-import: #adbac7;
     --color-prettylights-syntax-entity-tag: #8ddb8c;
-    --color-prettylights-syntax-keyword: #f47067;
-    --color-prettylights-syntax-string: #96d0ff;
+    --color-prettylights-syntax-keyword: #F25B4F;
+    --color-prettylights-syntax-string: #2397AB;
     --color-prettylights-syntax-variable: #f69d50;
     --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
     --color-prettylights-syntax-invalid-illegal-text: #cdd9e5;
