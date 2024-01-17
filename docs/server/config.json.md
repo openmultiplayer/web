@@ -16,18 +16,23 @@ description: open.mp server configuration file.
 
 ## Custom Models (Artwork)
 
-| Key         | Type   | Default value | Read-only | Rule | Effect                                                                                                                   |
-|-------------|--------|---------------|-----------|------|--------------------------------------------------------------------------------------------------------------------------|
-| cdn         | string |               | ✅         | ❌    | An http address for a remote model server.                                                                               |
-| enable      | bool   | true          | ✅         | ❌    | Toggles if the server uses custom models from the /models folder. Set to '**true**' to enable or '**false**' to disable. |
-| models_path | string | models        | ✅         | ❌    | The path where the custom models are located.                                                                            |
+| Key                 | Type   | Default value | Read-only | Rule | Effect                                                                                                                   |
+|---------------------|--------|---------------|-----------|------|--------------------------------------------------------------------------------------------------------------------------|
+| artwork.cdn         | string |               | ✅         | ❌    | An http address for a remote model server.                                                                               |
+| artwork.enable      | bool   | true          | ✅         | ❌    | Toggles if the server uses custom models from the /models folder. Set to '**true**' to enable or '**false**' to disable. |
+| artwork.models_path | string | models        | ✅         | ❌    | The path where the custom models are located.                                                                            |
 
-## Config
+## Chat Filter
 
-| Key               | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                   |
-|-------------------|------|---------------|-----------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| chat_input_filter | bool | true          | ❌         | ❌    | Toggles the chat input filter. Disable it to use of chars like % in the chat.                                                                                                                                                                            |
-| enable_query      | bool | true          | ❌         | ❌    | Toggles if the server information should be displayed in the server browser. Set to '**true**' to enable or '**false**' to disable. Players can still join a server that has disabled querying, but the server browser will not display any information. |
+| Key               | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                                     |
+|-------------------|------|---------------|-----------|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| chat_input_filter | bool | true          | ❌         | ❌    | Toggles the chat input filter. Disable it to use of chars like % in the chat. You can also use the [ToggleChatTextReplacement](../scripting/functions/ToggleChatTextReplacement) function. |
+
+## Server Query
+
+| Key          | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                   |
+|--------------|------|---------------|-----------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| enable_query | bool | true          | ❌         | ❌    | Toggles if the server information should be displayed in the server browser. Set to '**true**' to enable or '**false**' to disable. Players can still join a server that has disabled querying, but the server browser will not display any information. |
 
 ## Game
 
@@ -120,9 +125,9 @@ description: open.mp server configuration file.
 | network.time_sync_rate          | int    | 30000         | ❌         | ❌    | The rate at which a player's game time is updated in milliseconds.                                                                                                                                                                                                                                 |
 | network.use_lan_mode            | bool   | false         | ❌         | ❌    | Deprecated variable, has no effect.                                                                                                                                                                                                                                                                |
 
-> [*] Lower values of aiming_sync_rate, in_vehicle_sync_rate and on_foot_sync_rate increases sync performance, but uses more bandwidth.
+> [*] Lower values of `aiming_sync_rate`, `in_vehicle_sync_rate` and `on_foot_sync_rate` increases sync performance, but uses more bandwidth.
 
-## Server
+## Server Lock
 
 | Key      | Type   | Default value | Read-only | Rule | Effect                                                                                                                       |
 |----------|--------|---------------|-----------|------|------------------------------------------------------------------------------------------------------------------------------|
@@ -130,11 +135,11 @@ description: open.mp server configuration file.
 
 ## Pawn
 
-| Key            | Type         | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                           |
-|----------------|--------------|---------------|-----------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| legacy_plugins | list, string | []            | ✅         | ❌    | The .dll or .so file in the plugins folder, the server should use to run as a plugin. Plugins are scripts which are designed to enhance gamemodes and filterscripts.                                                                                                                                                             |
-| main_scripts   | list, string | [ "test 1" ]  | ✅         | ❌    | The .amx file in the gamemodes folder, the server should use to run as a gamemode.                                                                                                                                                                                                                                               |
-| side_scripts   | list, string | []            | ✅         | ❌    | The .amx file in the filterscripts folder, the server should use to run as a filterscript. Filterscripts are scripts that run in the background of your gamemode. They are there to add extras to the server without editing the gamemode. It is very useful if you want to carry a specific property to more than one gamemode. |
+| Key            | Type         | Default value | Read-only | Rule | Effect                                                                                                                                                                                                      |
+|----------------|--------------|---------------|-----------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| legacy_plugins | list, string | []            | ✅         | ❌    | The .dll or .so file in the /plugins folder, the server should use to run as a plugin. Plugins are scripts which are designed to enhance gamemodes and filterscripts.<br />Example: `["mysql", "streamer"]` |
+| main_scripts   | list, string | ["test 1"]    | ✅         | ❌    | The .amx file in the /gamemodes folder, the server should use to run as a gamemode.                                                                                                                         |
+| side_scripts   | list, string | []            | ✅         | ❌    | The .amx file in the /filterscripts folder, the server should use to run as a filterscript. Filterscripts are scripts that run in the background of your gamemode. They are there to add extras to the server without editing the gamemode. It is very useful if you want to carry a specific property to more than one gamemode.<br />Example: `["filterscripts/Race_System"]` |
 
 ## RCON
 
@@ -144,13 +149,18 @@ description: open.mp server configuration file.
 | rcon.enable         | bool   | false         | ✅         | ❌    | Toggles if the [Remote Console](RemoteConsole) feature should be used. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                |
 | rcon.password       | string | changeme      | ❌         | ❌    | The password used to administrate the server and use the remote console (rcon). You must make sure to change this to something hard to crack so that others cannot take control of your server. Your server will NOT start if changeme is the RCON password! |
 
-## Config
+## Sleep and Ticks
 
-| Key           | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                              |
-|---------------|--------|---------------|-----------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sleep         | float  | 5.0           | ❌         | ❌    | The time in milliseconds the main open.mp and raknet networking thread will "sleep" idly during each sync cycle. Higher values decreases server processing, but reduces sync quality. Lower values increases server processing, but improves sync quality. It is not advisable to change this value unless your player count is very high and you have server fps stability issues. |
-| use_dyn_ticks | bool   | true          | ✅         | ❌    |                                                                                                                                                                                                                                                                                                                                                                                     |
-| website       | string | open.mp       | ❌         | ✅    | The website people can visit to gain more information about the server.                                                                                                                                                                                                                                                                                                             |
+| Key           | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|---------------|--------|---------------|-----------|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| sleep         | float  | 5.0           | ❌         | ❌    | The time in milliseconds the main open.mp and raknet networking thread will "sleep" idly during each sync cycle. Higher values decreases server processing, but reduces sync quality. Lower values increases server processing, but improves sync quality. It is not advisable to change this value unless your player count is very high and you have server fps stability issues.                                                                                                                                      |
+| use_dyn_ticks | bool   | true          | ✅         | ❌    | dynticks config is basically for keeping your server's tickrate at a constant count by using cpu more to cover the gap if there's any drop.<br />It is calculated using provided sleep value so if sleep is 5, constant tick count would be 1000 / 5 = 200 ticks per second.<br />open.mp modifies internal sleep value on the fly based on each tick's code execution time, just to keep it steady at 200 ticks, and lower sleep means more cpu usage (which is not a massive difference if server code is written well) |
+
+## Web URL
+
+| Key     | Type   | Default value | Read-only | Rule | Effect                                                                  |
+|---------|--------|---------------|-----------|------|-------------------------------------------------------------------------|
+| website | string | open.mp       | ❌         | ✅    | The website people can visit to gain more information about the server. |
 
 ## Discord
 
