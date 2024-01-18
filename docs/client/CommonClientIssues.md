@@ -1,10 +1,6 @@
 ---
-title: Common Issues
+title: Common Client Issues
 ---
-
-## Contents
-
-## Client
 
 ### I get the error "San Andreas cannot be found"
 
