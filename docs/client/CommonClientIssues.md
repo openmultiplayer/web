@@ -12,7 +12,8 @@ San Andreas Multiplayer is **not** a stand-alone program! It adds multiplayer fu
 
 ### I can not see any servers in SA:MP browser
 
-First off, ensure you are following the procedures set out in the [Quick-start guide](https://team.sa-mp.com/wiki/Getting_Started). If you have followed what it says, and still cannot see any servers, you must allow SA:MP access through your firewall. Unfortunately, due to the large amount of available firewall software, we can not offer further support on this - we suggest looking at the manufacturers website or trying a Google search. Also make sure you have the latest SA:MP version!
+SA:MP browser does not work. Download the new [open.mp launcher](https://github.com/openmultiplayer/launcher/releases/latest).
+If you still cannot see any servers, you must allow open.mp access through your firewall. Unfortunately, due to the large amount of available firewall software, we can not offer further support on this - we suggest looking at the manufacturers website or trying a Google search. Also make sure you have the latest stable open.mp version!
 
 ### Singleplayer loads instead of SA:MP
 
