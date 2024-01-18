@@ -45,4 +45,11 @@ printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tires]: %d"
 - [SetVehicleHealth](SetVehicleHealth): Set the health of a vehicle.
 - [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
 - [RepairVehicle](RepairVehicle): Fully repair a vehicle.
+
+## Related Callbacks
+
 - [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate): Called when a vehicle's damage state changes.
+
+## Related Resources
+
+- [Damage Status](../resources/damagestatus)

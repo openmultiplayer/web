@@ -1,21 +1,21 @@
 ---
 title: CreatePickup
 description: This function does exactly the same as AddStaticPickup, except it returns a pickup ID which can be used to destroy it afterwards and be tracked using OnPlayerPickUpPickup.
-tags: []
+tags: ["pickup"]
 ---
 
 ## Description
 
 This function does exactly the same as AddStaticPickup, except it returns a pickup ID which can be used to destroy it afterwards and be tracked using OnPlayerPickUpPickup.
 
-| Name                                | Description                                                                       |
-| ----------------------------------- | --------------------------------------------------------------------------------- |
+| Name                             | Description                                                                       |
+|----------------------------------|-----------------------------------------------------------------------------------|
 | [model](../resources/pickupids)  | The model of the pickup.                                                          |
 | [type](../resources/pickuptypes) | The pickup type. Determines how the pickup responds when picked up.               |
-| Float:X                             | The X coordinate to create the pickup at.                                         |
-| Float:Y                             | The Y coordinate to create the pickup at.                                         |
-| Float:Z                             | The Z coordinate to create the pickup at.                                         |
-| virtualworld                        | The virtual world ID of the pickup. Use -1 to make the pickup show in all worlds. |
+| Float:x                          | The X coordinate to create the pickup at.                                         |
+| Float:y                          | The Y coordinate to create the pickup at.                                         |
+| Float:z                          | The Z coordinate to create the pickup at.                                         |
+| virtualWorld                     | The virtual world ID of the pickup. Use -1 to make the pickup show in all worlds. |
 
 ## Returns
 
@@ -56,4 +56,32 @@ Known Bug(s): Pickups that have a X or Y lower than -4096.0 or bigger than 4096.
 
 - [AddStaticPickup](AddStaticPickup): Add a static pickup.
 - [DestroyPickup](DestroyPickup): Destroy a pickup.
+- [IsValidPickup](IsValidPickup): Checks if a pickup is valid.
+- [IsPickupStreamedIn](IsPickupStreamedIn): Checks if a pickup is streamed in for a specific player.
+- [IsPickupHiddenForPlayer](IsPickupHiddenForPlayer): Checks if a pickup is hidden for a specific player.
+- [SetPickupPos](SetPickupPos): Sets the position of a pickup.
+- [GetPickupPos](GetPickupPos): Gets the coordinates of a pickup.
+- [SetPickupModel](SetPickupModel): Sets the model of a pickup.
+- [GetPickupModel](GetPickupModel): Gets the model ID of a pickup.
+- [SetPickupType](SetPickupType): Sets the type of a pickup.
+- [GetPickupType](GetPickupType): Gets the type of a pickup.
+- [SetPickupVirtualWorld](SetPickupVirtualWorld): Sets the virtual world ID of a pickup.
+- [GetPickupVirtualWorld](GetPickupVirtualWorld): Gets the virtual world ID of a pickup.
+- [ShowPickupForPlayer](ShowPickupForPlayer): Shows a pickup for a specific player.
+- [HidePickupForPlayer](HidePickupForPlayer): Hides a pickup for a specific player.
+- [SetPickupForPlayer](SetPickupForPlayer): Adjusts the pickup model, type, and position for a specific player.
+- [CreatePlayerPickup](CreatePlayerPickup): Creates a pickup which will be visible to only one player.
+- [DestroyPlayerPickup](DestroyPlayerPickup): Destroy a player-pickup.
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this function.
+
 - [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Called when a player picks up a pickup.
+- [OnPickupStreamIn](../callbacks/OnPickupStreamIn): Called when a pickup enters the visual range of a player.
+- [OnPickupStreamOut](../callbacks/OnPickupStreamOut): Called when a pickup leaves the visual range of a player.
+
+## Related Resources
+
+- [Pickup IDs](../resources/pickupids)
+- [Pickup Types](../resources/pickuptypes)

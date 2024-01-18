@@ -41,6 +41,7 @@ The skill parameter is NOT the weapon ID, it is the skill type. Click [here](../
 
 ## Related Functions
 
+- [GetPlayerSkillLevel](GetPlayerSkillLevel): Get the player skill level of a certain weapon type.
 - [SetPlayerArmedWeapon](SetPlayerArmedWeapon): Set a player's armed weapon.
 - [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
 

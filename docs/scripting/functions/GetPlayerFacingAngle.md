@@ -48,3 +48,4 @@ Angles are reversed in GTA:SA; 90 degrees would be East in the real world, but i
 
 - [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
 - [SetPlayerFacingAngle](SetPlayerFacingAngle): Set a player's facing angle.
+- [GetPlayerRotationQuat](GetPlayerRotationQuat): Get the quaternion rotation of a player.

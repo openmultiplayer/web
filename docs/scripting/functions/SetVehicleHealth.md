@@ -27,7 +27,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
     new
         vehicleid = GetPlayerVehicleID(playerid);
 
-    SetVehicleHealth(vehicleid, 1000);
+    SetVehicleHealth(vehicleid, 1000.0);
     SendClientMessage(playerid, COLOUR_WHITE, "The vehicles engine has been fully repaired.");
     return 1;
 }
@@ -46,4 +46,11 @@ Full vehicle health is 1000. Higher values are possible. For more information on
 - [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
 - [RepairVehicle](RepairVehicle): Fully repair a vehicle.
 - [SetPlayerHealth](SetPlayerHealth): Set a player's health.
+
+## Related Callbacks
+
 - [OnVehicleDeath](../callbacks/OnVehicleDeath): Called when a vehicle is destroyed.
+
+## Related Resources
+
+- [Vehicle Health Values](../resources/vehiclehealth)

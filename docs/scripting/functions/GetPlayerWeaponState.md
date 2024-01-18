@@ -31,3 +31,7 @@ public OnPlayerSpawn(playerid)
 ## Related Functions
 
 - [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
+
+## Related Resources
+
+- [Weapon States](../resources/weaponstates)

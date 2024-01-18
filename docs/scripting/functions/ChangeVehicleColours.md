@@ -82,3 +82,8 @@ Some vehicles have only a primary color and some can not have the color changed 
 ## Related Callbacks
 
 - [OnVehicleRespray](../callbacks/OnVehicleRespray): Called when a vehicle is resprayed.
+
+## Related Resources
+
+- [Vehicle Colour IDs](../resources/vehiclecolorid)
+- [Original Car Colors](../resources/original-car-colors)

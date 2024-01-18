@@ -1,27 +1,27 @@
 ---
 title: AddStaticPickup
 description: This function adds a 'static' pickup to the game.
-tags: []
+tags: ["pickup"]
 ---
 
 ## Description
 
 This function adds a 'static' pickup to the game. These pickups support weapons, health, armor etc., with the ability to function without scripting them (weapons/health/armor will be given automatically).
 
-| Name                                | Description                                                                         |
-| ----------------------------------- | ----------------------------------------------------------------------------------- |
+| Name                             | Description                                                                         |
+|----------------------------------|-------------------------------------------------------------------------------------|
 | [model](../resources/pickupids)  | The model of the pickup.                                                            |
 | [type](../resources/pickuptypes) | The pickup type. Determines how the pickup responds when picked up.                 |
-| Float:X                             | The X coordinate to create the pickup at.                                           |
-| Float:Y                             | The Y coordinate to create the pickup at.                                           |
-| Float:Z                             | The Z coordinate to create the pickup at.                                           |
-| virtualworld                        | The virtual world ID to put tht pickup in. Use -1 to show the pickup in all worlds. |
+| Float:x                          | The X coordinate to create the pickup at.                                           |
+| Float:y                          | The Y coordinate to create the pickup at.                                           |
+| Float:z                          | The Z coordinate to create the pickup at.                                           |
+| virtualWorld                     | The virtual world ID to put tht pickup in. Use -1 to show the pickup in all worlds. |
 
 ## Returns
 
-1 if the pickup is successfully created.
+**1** - if the pickup is successfully created.
 
-0 if failed to create.
+**0** - if failed to create.
 
 ## Examples
 
@@ -42,7 +42,7 @@ public OnGameModeInit()
 
 :::tip
 
-This function doesn't return a pickup ID that you can use in, for example, OnPlayerPickUpPickup. Use CreatePickup if you'd like to assign IDs.
+This function doesn't return a pickup ID that you can use in, for example, OnPlayerPickUpPickup. Use [CreatePickup](CreatePickup) if you'd like to assign IDs.
 
 :::
 
@@ -50,4 +50,7 @@ This function doesn't return a pickup ID that you can use in, for example, OnPla
 
 - [CreatePickup](CreatePickup): Create a pickup.
 - [DestroyPickup](DestroyPickup): Destroy a pickup.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Called when a player picks up a pickup.
+
+## Related Resources
+
+- [Pickup IDs](../resources/pickupids)

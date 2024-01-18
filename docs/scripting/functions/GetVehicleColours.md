@@ -39,3 +39,7 @@ public OnGameModeInit()
 ## Related Functions
 
 - [ChangeVehicleColours](ChangeVehicleColours): Change a vehicle's primary and secondary colors.
+
+## Related Resources
+
+- [Vehicle Colour IDs](../resources/vehiclecolorid)

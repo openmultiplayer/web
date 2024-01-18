@@ -24,3 +24,7 @@ printf("Current world weather: %d", GetWeather());
 - [SetWeather](SetWeather): Set the world weather for all players.
 - [GetPlayerWeather](GetPlayerWeather): Get a player's weather.
 - [SetPlayerWeather](SetPlayerWeather): Set a player's weather.
+
+## Related Resources
+
+- [Weather IDs](../resources/weatherid)

@@ -63,7 +63,7 @@ This function can (obviously) only return one vehicle ID at a time, while the pl
 
 :::warning
 
-This function is disabled by default to save bandwidth. Use EnablePlayerCameraTarget to enable it for each player.
+This function is disabled by default to save bandwidth. Use [EnablePlayerCameraTarget](EnablePlayerCameraTarget) to enable it for each player.
 
 :::
 

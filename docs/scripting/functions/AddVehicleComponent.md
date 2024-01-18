@@ -57,5 +57,12 @@ Using an invalid component ID crashes the player's game. There are no internal c
 - [RemoveVehicleComponent](RemoveVehicleComponent): Remove a component from a vehicle.
 - [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Check what components a vehicle has.
 - [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
+
+## Related Callbacks
+
 - [OnVehicleMod](../callbacks/OnVehicleMod): Called when a vehicle is modded.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.
+
+## Related Resources
+
+- [Car Component IDs](../resources/carcomponentid)

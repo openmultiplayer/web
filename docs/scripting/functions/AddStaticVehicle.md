@@ -10,7 +10,7 @@ Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 
 | Name                                     | Description                            |
 | ---------------------------------------- | -------------------------------------- |
-| modelid                                  | The Model ID for the vehicle.          |
+| modelid                                  | The [Model ID](../resources/vehicleid) for the vehicle.          |
 | Float:spawn_X                            | The X-coordinate for the vehicle.      |
 | Float:spawn_Y                            | The Y-coordinate for the vehicle.      |
 | Float:spawn_Z                            | The Z-coordinate for the vehicle.      |
@@ -53,3 +53,8 @@ public OnGameModeInit()
 
 - [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Called when a vehicle respawns.
 - [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Called when a vehicle's siren is toggled on/off.
+
+## Related Resources
+
+- [Vehicle Models](../resources/vehicleid): Comprehensive list of all vehicle models available in game.
+- [Vehicle Colour IDs](../resources/vehiclecolorid): List of all vehicle colour IDs.

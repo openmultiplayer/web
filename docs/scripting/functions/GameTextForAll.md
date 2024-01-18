@@ -54,3 +54,7 @@ Do note that the players may crash because of odd number of tilde (~) symbols us
 - [GameTextForPlayer](GameTextForPlayer): Display gametext to a player.
 - [HideGameTextForPlayer](HideGameTextForPlayer): Stop showing a gametext style to a player.
 - [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+
+## Related Resources
+
+- [GameText Styles](../resources/gametextstyles)

@@ -43,3 +43,9 @@ Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpect
 
 - [PlayerSpectateVehicle](PlayerSpectateVehicle): Spectate a vehicle.
 - [TogglePlayerSpectating](TogglePlayerSpectating): Start or stop spectating.
+- [GetPlayerSpectateID](GetPlayerSpectateID): Gets the ID of the player or vehicle the player is spectating (watching).
+- [GetPlayerSpectateType](GetPlayerSpectateType): Gets the player's spectate type.
+
+## Related Resources
+
+- [Spectate Modes](../resources/spectatemodes)

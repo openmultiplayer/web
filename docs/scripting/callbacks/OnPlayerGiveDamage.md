@@ -57,3 +57,7 @@ The following callbacks might be useful, as they're related to this callback in 
 
 - [OnPlayerTakeDamage](OnPlayerTakeDamage): This callback is called when a player takes damage. 
 - [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon. 
+
+## Related Resources
+
+- [Body Parts](../resources/bodyparts)

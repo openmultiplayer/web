@@ -41,8 +41,16 @@ format(szCmd, sizeof(szCmd), "mapname %s", szMapName);
 SendRconCommand(szCmd);
 
 // PRO TIP: You don't need `format` in open.mp
-SendRconCommand("mapname %s", szMapName);
+SendRconCommand("game.map %s", szMapName);
 ```
+
+## Notes
+
+:::info
+
+See [config.json](../../server/config.json)
+
+:::
 
 ## Related Functions
 

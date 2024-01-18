@@ -1,10 +1,10 @@
 ---
 title: Callbacks Sequence
-description: A list of callbacks available in SA-MP and its call sequence
+description: A list of callbacks available in SA-MP/open.mp and its call sequence
 tags: []
 ---
 
-Below is a list of callbacks available in SA-MP and its call sequence. Tickbox represent called first.
+Below is a list of callbacks available in SA-MP/open.mp and its call sequence. Tickbox represent called first.
 
 | Callback                                                                | FilterScript | GameMode |
 |-------------------------------------------------------------------------|--------------|----------|
@@ -44,6 +44,11 @@ Below is a list of callbacks available in SA-MP and its call sequence. Tickbox r
 | [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint) | ✅            |          |
 | [OnPlayerObjectMoved](../callbacks/OnPlayerObjectMoved)                 | ✅            |          |
 | [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup)               |              | ✅        |
+| [OnPickupStreamIn](../callbacks/OnPickupStreamIn)                       | ✅            |          |
+| [OnPickupStreamOut](../callbacks/OnPickupStreamOut)                     | ✅            |          |
+| [OnPlayerPickUpPlayerPickup](../callbacks/OnPlayerPickUpPlayerPickup)   |              | ✅        |
+| [OnPlayerPickupStreamIn](../callbacks/OnPlayerPickupStreamIn)           | ✅            |          |
+| [OnPlayerPickupStreamOut](../callbacks/OnPlayerPickupStreamOut)         | ✅            |          |
 | [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass)               | ✅            |          |
 | [OnPlayerRequestDownload](../callbacks/OnPlayerRequestDownload)         | ✅            |          |
 | [OnPlayerRequestSpawn](../callbacks/OnPlayerRequestSpawn)               | ✅            |          |

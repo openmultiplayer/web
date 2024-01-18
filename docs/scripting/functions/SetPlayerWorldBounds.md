@@ -46,7 +46,7 @@ public OnPlayerSpawn(playerid)
 
 :::tip
 
-A player's world boundaries can be reset by setting them to 20000.0000, -20000.0000, 20000.0000, -20000.0000. These are the default values.
+A player's world boundaries can be reset by setting them to 20000.0000, -20000.0000, 20000.0000, -20000.0000. These are the default values. You can also use [ClearPlayerWorldBounds](ClearPlayerWorldBounds).
 
 :::
 
@@ -58,4 +58,6 @@ This function doesn't work in interiors!
 
 ## Related Functions
 
+- [ClearPlayerWorldBounds](ClearPlayerWorldBounds): Reset the player's world boundaries to default world boundaries.
+- [GetPlayerWorldBounds](GetPlayerWorldBounds): Get a player's world boundaries.
 - [GangZoneCreate](GangZoneCreate): Create a gangzone.

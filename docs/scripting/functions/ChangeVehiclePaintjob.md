@@ -39,3 +39,7 @@ ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // changes the paintj
 ## Related Callbacks
 
 - [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Called when a vehicle's paintjob is changed.
+
+## Related Resources
+
+- [Vehicle Paintjob IDs](../resources/paintjobs)
