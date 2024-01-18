@@ -19,6 +19,14 @@ Check if the player in gangzone.
 
 0: The player is not in gangzone.
 
+## Notes
+
+:::warning
+
+This function is native to OMP and not SAMP. For use with SAMP, you will need YSF plugins.
+
+:::
+
 ## Related Functions
 
 - [GangZoneDestroy](GangZoneDestroy): Destroy a gangzone.
