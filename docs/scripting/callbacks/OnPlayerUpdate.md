@@ -23,19 +23,22 @@ It is always called first in filterscripts.
 ## Examples
 
 ```c
+// Example 1
+forward OnPlayerWeaponChange(playerid, oldweapon, newweapon);
+
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // Return the player's current weapon
     if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // If he changed weapons since the last update
     {
         // Lets call a callback named OnPlayerChangeWeapon
-        OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
+        CallLocalFunction("OnPlayerWeaponChange", "iii", playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
         SetPVarInt(playerid, "iCurrentWeapon", iCurWeap);//Update the weapon variable
     }
     return 1; // Send this update to other players.
 }
 
-stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
+public OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
 {
     new     s[128],
         oWeapon[24],
@@ -48,6 +51,8 @@ stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
 
     SendClientMessage(playerid, 0xFFFFFFFF, s);
 }
+
+// Example 2
 public OnPlayerUpdate(playerid)
 {
     new Float:fHealth;
@@ -57,7 +62,7 @@ public OnPlayerUpdate(playerid)
     if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // Player health has changed since the last update -> server, so obviously thats the thing updated.
-        // Lets do further checks see if he's lost or gained health, anti-health cheat? ;)
+        // Lets do further checks see if he's lost or gained health, anti-health cheat?Â ;)
 
         if (fHealth > GetPVarFloat(playerid, "faPlayerHealth"))
         {
