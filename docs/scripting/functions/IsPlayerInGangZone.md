@@ -19,6 +19,14 @@ Check if the player in gangzone.
 
 0: The player is not in gangzone.
 
+## Notes
+
+:::warning
+
+This function is for open.mp, not SA-MP. To use with SA-MP, you need the [YSF](https://github.com/IS4Code/YSF/releases) plugin.
+
+:::
+
 ## Related Functions
 
 - [GangZoneDestroy](GangZoneDestroy): Destroy a gangzone.
