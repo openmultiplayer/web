@@ -12,7 +12,7 @@ This function can be used to change the spawn information of a specific player. 
 |--------------|----------------------------------------------------------------------|
 | playerid     | The PlayerID of who you want to set the spawn information.           |
 | team         | The Team-ID of the chosen player.                                    |
-| skin         | The skin which the player will spawn with.                           |
+| skin         | The [skin](../resources/skins) which the player will spawn with.     |
 | Float:spawnX | The X-coordinate of the player's spawn position.                     |
 | Float:spawnY | The Y-coordinate of the player's spawn position.                     |
 | Float:spawnZ | The Z-coordinate of the player's spawn position.                     |
@@ -36,7 +36,7 @@ public OnPlayerRequestClass(playerid, classid)
     // This simple example demonstrates how to spawn every player automatically with
     // CJ's skin, which is number 0. The player will spawn in Las Venturas, with
     // 36 Sawnoff-Shotgun rounds and 150 Tec9 rounds.
-    SetSpawnInfo( playerid, NO_TEAM, 0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0 );
+    SetSpawnInfo(playerid, NO_TEAM, 0, 1958.33, 1343.12, 15.36, 269.15, WEAPON_SAWEDOFF, 36, WEAPON_UZI, 150, WEAPON_FIST, 0);
 }
 ```
 
@@ -54,3 +54,8 @@ Team ID 0 in open.mp is a valid team while in SA-MP it is not (SA-MP bug).
 - [SetPlayerSkin](SetPlayerSkin): Set a player's skin.
 - [SetPlayerTeam](SetPlayerTeam): Set a player's team.
 - [SpawnPlayer](SpawnPlayer): Force a player to spawn.
+
+## Related Resources
+
+- [Skin IDs](../resources/skins)
+- [Weapon IDs](../resources/weaponids)
