@@ -4,6 +4,8 @@ description: Get the flashing colour of a gangzone for player
 tags: ["player", "gangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Get the flashing colour of a gangzone for player.

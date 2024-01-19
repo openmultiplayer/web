@@ -4,6 +4,8 @@ description: Get the position of a gangzone, represented by minX, minY, maxX, ma
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Get the position of a gangzone, represented by minX, minY, maxX, maxY coordinates.

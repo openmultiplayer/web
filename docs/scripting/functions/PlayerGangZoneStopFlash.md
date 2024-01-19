@@ -4,6 +4,8 @@ description: Stop player gangzone flash
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Stop player gangzone flash.

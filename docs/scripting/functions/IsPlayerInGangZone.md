@@ -4,6 +4,8 @@ description: Check if the player in gangzone
 tags: ["player", "gangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Check if the player in gangzone.
