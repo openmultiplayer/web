@@ -1,30 +1,30 @@
 ---
-title: Body parts
+title: Dijelovi tijela
 ---
 
 :::info
 
-The following entries are body part IDs which can be used by [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) and [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
+Sljedeći unosi su ID-ovi dijelova tijela koje mogu koristiti [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) i [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
 
 :::
 
 ---
 
-| ID  | Body Part |
+| ID  | Dio Tijela |
 | --- | --------- |
-| 3   | Torso     |
-| 4   | Groin     |
-| 5   | Left arm  |
-| 6   | Right arm |
-| 7   | Left leg  |
-| 8   | Right leg |
-| 9   | Head      |
+| 3   | Torzo     |
+| 4   | Prepone     |
+| 5   | Lijeva ruka  |
+| 6   | Desna ruka |
+| 7   | Lijeva noga  |
+| 8   | Desna noga |
+| 9   | Glava      |
 
 ---
 
 :::note
 
-These IDs are not 100% confirmed, and are not defined in any SA-MP includes - they must be defined by the scripter. It is unknown if IDs 0, 1 and 2 have any use.
+Ovi ID-ovi nisu 100% potvrđeni i nisu definirani ni u jednom SA-MP include-u - mora ih definirati skripter. Nepoznato je da li ID-ovi 0, 1 i 2 imaju ikakve koristi.
 
 :::
 
