@@ -4,6 +4,8 @@ description: Get the colour of a player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Get the colour of a player gangzone.

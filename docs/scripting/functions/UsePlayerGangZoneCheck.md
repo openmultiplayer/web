@@ -4,6 +4,8 @@ description: Enables the callback when a player enters/leaves this zone
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Enables the callback when a player enters/leaves this zone.

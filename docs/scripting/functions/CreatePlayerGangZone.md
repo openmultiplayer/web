@@ -4,6 +4,8 @@ description: Create player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Create player gangzone. This can be used as a way around the global gangzone limit.

@@ -4,6 +4,8 @@ description: Check if the player gangzone is flashing
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Check if the player gangzone is flashing.

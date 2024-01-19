@@ -4,6 +4,8 @@ description: This callback is called when a player clicked a gangzone on the pau
 tags: ["player", "gangzone"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 This callback is called when a player clicked a gangzone on the pause menu map (by right-clicking).
