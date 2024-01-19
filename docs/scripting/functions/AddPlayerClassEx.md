@@ -8,20 +8,20 @@ tags: ["player", "class"]
 
 This function is exactly the same as the AddPlayerClass function, with the addition of a team parameter.
 
-| Name         | Description                                                   |
-|--------------|---------------------------------------------------------------|
-| team         | The team you want the player to spawn in.                     |
-| skin         | The skin which the player will spawn with.                    |
-| Float:spawnX | The X coordinate of the spawnpoint of this class.             |
-| Float:spawnY | The Y coordinate of the spawnpoint of this class.             |
-| Float:spawnZ | The Z coordinate of the spawnpoint of this class.             |
-| Float:angle  | The direction in which the player should face after spawning. |
-| weapon1      | The first spawn-weapon for the player.                        |
-| ammo1        | The amount of ammunition for the primary spawn weapon.        |
-| weapon2      | The second spawn-weapon for the player.                       |
-| ammo2        | The amount of ammunition for the second spawn weapon.         |
-| weapon3      | The third spawn-weapon for the player.                        |
-| ammo3        | The amount of ammunition for the third spawn weapon.          |
+| Name         | Description                                                      |
+|--------------|------------------------------------------------------------------|
+| team         | The team you want the player to spawn in.                        |
+| skin         | The [skin](../resources/skins) which the player will spawn with. |
+| Float:spawnX | The X coordinate of the spawnpoint of this class.                |
+| Float:spawnY | The Y coordinate of the spawnpoint of this class.                |
+| Float:spawnZ | The Z coordinate of the spawnpoint of this class.                |
+| Float:angle  | The direction in which the player should face after spawning.    |
+| weapon1      | The first spawn-weapon for the player.                           |
+| ammo1        | The amount of ammunition for the primary spawn weapon.           |
+| weapon2      | The second spawn-weapon for the player.                          |
+| ammo2        | The amount of ammunition for the second spawn weapon.            |
+| weapon3      | The third spawn-weapon for the player.                           |
+| ammo3        | The amount of ammunition for the third spawn weapon.             |
 
 ## Returns
 
@@ -59,3 +59,8 @@ The maximum class ID is 319 (starting from 0, so a total of 320 classes). When t
 - [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.
 - [SetPlayerTeam](SetPlayerTeam): Set a player's team.
 - [SetPlayerSkin](SetPlayerSkin): Set a player's skin.
+
+## Related Resources
+
+- [Skin IDs](../resources/skins)
+- [Weapon IDs](../resources/weaponids)
