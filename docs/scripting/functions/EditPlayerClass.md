@@ -10,21 +10,21 @@ tags: ["class"]
 
 Edit a class data.
 
-| Name          | Description                                                   |
-| ------------- | ------------------------------------------------------------- |
-| classid       | The class id to edit.                                         |
-| team         | The team you want the player to spawn in. |
-| skin         | The skin which the player will spawn with. |
-| Float:spawnX | The X coordinate of the spawnpoint of this class. |
-| Float:spawnY | The Y coordinate of the spawnpoint of this class. |
-| Float:spawnZ | The Z coordinate of the spawnpoint of this class. |
-| Float:angle  | The direction in which the player will face after spawning. |
-| WEAPON:weapon1 | The first spawn-weapon for the player. |
-| ammo1 | The amount of ammunition for the first spawn weapon. |
-| WEAPON:weapon2 | The second spawn-weapon for the player. |
-| ammo2 | The amount of ammunition for the second spawn weapon. |
-| WEAPON:weapon3 | The third spawn-weapon for the player. |
-| ammo3 | The amount of ammunition for the third spawn weapon. |
+| Name           | Description                                                      |
+|----------------|------------------------------------------------------------------|
+| classid        | The class id to edit.                                            |
+| team           | The team you want the player to spawn in.                        |
+| skin           | The [skin](../resources/skins) which the player will spawn with. |
+| Float:spawnX   | The X coordinate of the spawnpoint of this class.                |
+| Float:spawnY   | The Y coordinate of the spawnpoint of this class.                |
+| Float:spawnZ   | The Z coordinate of the spawnpoint of this class.                |
+| Float:angle    | The direction in which the player will face after spawning.      |
+| WEAPON:weapon1 | The first spawn-weapon for the player.                           |
+| ammo1          | The amount of ammunition for the first spawn weapon.             |
+| WEAPON:weapon2 | The second spawn-weapon for the player.                          |
+| ammo2          | The amount of ammunition for the second spawn weapon.            |
+| WEAPON:weapon3 | The third spawn-weapon for the player.                           |
+| ammo3          | The amount of ammunition for the third spawn weapon.             |
 
 ## Examples
 
@@ -38,3 +38,8 @@ EditPlayerClass(10, TEAM_NONE, 299, -253.8291, 2602.9312, 62.8527, -90.0000, WEA
 - [AddPlayerClass](AddPlayerClass): Adds a class.
 - [AddPlayerClassEx](AddPlayerClassEx): Add a class with a default team.
 - [GetAvailableClasses](GetAvailableClasses): Get the number of classes defined.
+
+## Related Resources
+
+- [Skin IDs](../resources/skins)
+- [Weapon IDs](../resources/weaponids)
