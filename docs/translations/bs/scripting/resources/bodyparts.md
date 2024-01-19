@@ -10,15 +10,15 @@ Sljedeći unosi su ID-ovi dijelova tijela koje mogu koristiti [OnPlayerGiveDamag
 
 ---
 
-| ID  | Dio Tijela |
-| --- | --------- |
-| 3   | Torzo     |
+| ID  | Dio Tijela  |
+| --- | ----------- |
+| 3   | Torzo       |
 | 4   | Prepone     |
-| 5   | Lijeva ruka  |
-| 6   | Desna ruka |
-| 7   | Lijeva noga  |
-| 8   | Desna noga |
-| 9   | Glava      |
+| 5   | Lijeva ruka |
+| 6   | Desna ruka  |
+| 7   | Lijeva noga |
+| 8   | Desna noga  |
+| 9   | Glava       |
 
 ---
 
