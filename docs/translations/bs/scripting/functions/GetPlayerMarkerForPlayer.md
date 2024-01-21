@@ -12,7 +12,7 @@ Dobij boju igračovog **nametag-a** i **radara** za drugog igrača.
 
 | Ime      | Deskripcija                                                                                                                                     |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | Igrač koji može vidjeti igračevu promijenjenu boju blipa/nametag-a                                                                              |                        |
+| playerid | Igrač koji može vidjeti igračevu promijenjenu boju blipa/nametag-a                                                                              |
 | targetid | Igrač čija je boja promijenjena.                                                                                                                |
 
 ## Return-ovi
@@ -22,7 +22,7 @@ Boja **nametag-a** i **radara** target igrača.
 ## Primjeri
 
 ```c
-// Make player 42 see player 1 as a red marker
+// Napraviti da igrač 42 vidi igrača 1 kao crveni marker
 SetPlayerMarkerForPlayer(42, 1, 0xFF0000FF);
 
 new markerColour = GetPlayerMarkerForPlayer(42, 1);
