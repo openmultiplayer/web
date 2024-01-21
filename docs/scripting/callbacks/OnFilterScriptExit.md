@@ -10,7 +10,7 @@ This callback is called when a filterscript is unloaded. It is only called insid
 
 ## Examples
 
-```c
+```pawn
 public OnFilterScriptExit()
 {
     print("\n--------------------------------------");
