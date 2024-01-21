@@ -19,7 +19,7 @@ It is always called first in filterscripts so returning 1 there blocks other scr
 
 ## Examples
 
-```c
+```pawn
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/help", true))
