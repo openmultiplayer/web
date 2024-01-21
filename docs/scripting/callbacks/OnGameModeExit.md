@@ -10,7 +10,7 @@ This callback is called when a gamemode ends, either through 'gmx', the server b
 
 ## Examples
 
-```c
+```pawn
 public OnGameModeExit()
 {
     print("Gamemode ended.");
