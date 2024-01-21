@@ -40,4 +40,4 @@ SetPlayerMarkerForPlayer(42, 1, (GetPlayerColor(1) | 0x000000FF));
 - [LimitPlayerMarkerRadius](LimitPlayerMarkerRadius): Limit the player marker radius.
 - [SetPlayerColor](SetPlayerColor): Set a player's color.
 - [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Show or hide a nametag for a certain player.
-- [GetPlayerMarkerForPlayer](GetPlayerMarkerForPlayer): Gets a player's marker for a specific player.
+- [GetPlayerMarkerForPlayer](GetPlayerMarkerForPlayer): Gets the colour of a player's nametag and radar blip for another player.
