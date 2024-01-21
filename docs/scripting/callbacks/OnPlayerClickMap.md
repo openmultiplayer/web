@@ -27,7 +27,7 @@ It is always called first in gamemode.
 
 ## Examples
 
-```c
+```pawn
 public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 {
     SetPlayerPosFindZ(playerid, fX, fY, fZ);
