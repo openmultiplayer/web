@@ -1,7 +1,7 @@
 ---
 title: OnClientMessage
 description: This callback gets called whenever the NPC sees a ClientMessage.
-tags: []
+tags: ["npc", "client"]
 ---
 
 <VersionWarn name='NPC callback' version='SA-MP 0.3a' />
@@ -21,7 +21,7 @@ This callback does not handle returns.
 
 ## Examples
 
-```c
+```pawn
 public OnClientMessage(color, text[])
 {
     if (strfind(text,"Bank Balance: $0") != -1)
