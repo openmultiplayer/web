@@ -22,7 +22,7 @@ It is always called first in gamemode.
 
 ## Examples
 
-```c
+```pawn
 public OnPlayerClickPlayerGangZone(playerid, zoneid)
 {
     new string[128];
