@@ -13,7 +13,7 @@ This callback is called when a NPC script unloaded.
 
 ## Examples
 
-```c
+```pawn
 public OnNPCModeExit()
 {
     print("NPC script unloaded");
