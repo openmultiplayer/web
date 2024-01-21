@@ -16,7 +16,7 @@ This callback is called when a NPC successfully connects to the server.
 
 ## Examples
 
-```c
+```pawn
 public OnNPCConnect(myplayerid)
 {
     printf("I successfully connected the server with ID %i!", myplayerid);
