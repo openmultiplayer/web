@@ -10,7 +10,7 @@ This callback is triggered when the gamemode starts.
 
 ## Examples
 
-```c
+```pawn
 public OnGameModeInit()
 {
     print("Gamemode started!");
