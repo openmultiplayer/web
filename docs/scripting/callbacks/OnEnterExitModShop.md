@@ -22,7 +22,7 @@ It is always called first in filterscripts.
 
 ## Examples
 
-```c
+```pawn
 public OnEnterExitModShop(playerid, enterexit, interiorid)
 {
     if (enterexit == 0) // If enterexit is 0, this means they are exiting
