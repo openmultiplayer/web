@@ -26,7 +26,7 @@ It is always called first in filterscripts.
 
 ## Examples
 
-```c
+```pawn
 public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 {
     new message[32];
