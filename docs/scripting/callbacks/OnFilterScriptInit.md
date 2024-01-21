@@ -10,7 +10,7 @@ This callback is called when a filterscript is initialized (loaded). It is only 
 
 ## Examples
 
-```c
+```pawn
 public OnFilterScriptInit()
 {
     print("\n--------------------------------------");
