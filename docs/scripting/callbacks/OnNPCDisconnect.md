@@ -16,7 +16,7 @@ This callback is called when the NPC gets disconnected from the server.
 
 ## Examples
 
-```c
+```pawn
 public OnNPCDisconnect(reason[])
 {
     printf("Disconnected from the server. %s", reason);
