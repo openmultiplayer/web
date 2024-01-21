@@ -1,7 +1,7 @@
 ---
 title: OnIncomingConnection
 description: This callback is called when an IP address attempts a connection to the server.
-tags: []
+tags: ["player"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3z R2-2' />
@@ -26,7 +26,7 @@ It is always called first in filterscripts.
 
 ## Examples
 
-```c
+```pawn
 public OnIncomingConnection(playerid, ip_address[], port)
 {
     printf("Incoming connection for player ID %i [IP/port: %s:%i]", playerid, ip_address, port);
