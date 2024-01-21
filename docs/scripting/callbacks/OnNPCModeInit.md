@@ -13,7 +13,7 @@ This callback is called when a NPC script is loaded.
 
 ## Examples
 
-```c
+```pawn
 public OnNPCModeInit()
 {
     print("NPC script loaded.");
