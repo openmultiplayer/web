@@ -1,7 +1,7 @@
 ---
 title: OnObjectMoved
 description: This callback is called when an object is moved after MoveObject (when it stops moving).
-tags: []
+tags: ["object"]
 ---
 
 ## Description
@@ -18,7 +18,7 @@ It is always called first in filterscripts.
 
 ## Examples
 
-```c
+```pawn
 public OnObjectMoved(objectid)
 {
     printf("Object %d finished moving.", objectid);
