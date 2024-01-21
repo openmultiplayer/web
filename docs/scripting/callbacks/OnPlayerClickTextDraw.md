@@ -21,7 +21,7 @@ It is always called first in filterscripts so returning 1 there also blocks othe
 
 ## Examples
 
-```c
+```pawn
 new Text:gTextDraw;
 
 public OnGameModeInit()
