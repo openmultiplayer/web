@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).
-tags: []
+tags: ["dialog"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
@@ -24,7 +24,7 @@ It is always called first in filterscripts so returning 1 there blocks other fil
 
 ## Examples
 
-```c
+```pawn
 // Define the dialog ID so we can handle responses
 #define DIALOG_RULES 1
 
