@@ -1,7 +1,7 @@
 ---
 title: OnPickupStreamIn
 description: This callback is called when a pickup enters the visual range of a player.
-tags: ["player"]
+tags: ["player", "pickup"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
@@ -21,7 +21,7 @@ It is always called first in gamemode.
 
 ## Examples
 
-```c
+```pawn
 new g_PickupHealth;
 
 public OnGameModeInit()
