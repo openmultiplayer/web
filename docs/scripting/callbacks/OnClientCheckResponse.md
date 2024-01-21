@@ -1,7 +1,7 @@
 ---
 title: OnClientCheckResponse
 description: This callback is called when a SendClientCheck request completes
-tags: []
+tags: ["client"]
 ---
 
 ## Description
@@ -21,7 +21,7 @@ It is always called first in filterscripts.
 
 ## Examples
 
-```c
+```pawn
 public OnPlayerConnect(playerid)
 {
     SendClientCheck(playerid, 0x48, 0, 0, 2);
