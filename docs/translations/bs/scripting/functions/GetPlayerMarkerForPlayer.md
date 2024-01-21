@@ -4,6 +4,8 @@ description: Dobij boju igračovog nametag-a i radara za drugog igrača.
 tags: ["player"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Deskripcija
 
 Dobij boju igračovog **nametag-a** i **radara** za drugog igrača.
