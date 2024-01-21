@@ -1,7 +1,7 @@
 ---
 title: OnNPCEnterVehicle
 description: This callback is called when a NPC enters a vehicle.
-tags: ["npc"]
+tags: ["npc", "vehicle"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
@@ -17,7 +17,7 @@ This callback is called when a NPC enters a vehicle.
 
 ## Examples
 
-```c
+```pawn
 public OnNPCEnterVehicle(vehicleid, seatid)
 {
     printf("OnNPCEnterVehicle ID: %d Seat: %d", vehicleid, seatid);
