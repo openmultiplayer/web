@@ -22,7 +22,11 @@ Boja **nametag-a** i **radara** target igrača.
 ## Primjeri
 
 ```c
-GetPlayerMarkerForPlayer(playerid, targetid);
+// Make player 42 see player 1 as a red marker
+SetPlayerMarkerForPlayer(42, 1, 0xFF0000FF);
+
+new markerColour = GetPlayerMarkerForPlayer(42, 1);
+// markerColour = 0xFF0000FF
 ```
 
 ## Srodne Funkcije
