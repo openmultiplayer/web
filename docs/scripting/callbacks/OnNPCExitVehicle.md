@@ -1,7 +1,7 @@
 ---
 title: OnNPCExitVehicle
 description: This callback is called when a NPC leaves a vehicle.
-tags: ["npc"]
+tags: ["npc", "vehicle"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
@@ -13,7 +13,7 @@ This callback is called when a NPC leaves a vehicle.
 
 ## Examples
 
-```c
+```pawn
 public OnNPCExitVehicle()
 {
     print("The NPC left the vehicle");
