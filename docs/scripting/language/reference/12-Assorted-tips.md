@@ -17,7 +17,7 @@ cells, which is just enough to contain the string with which it is initialized:
 
 Listing: unpacked string
 
-```c
+```pawn
 
 new ustring[5] = "test"
 
@@ -31,7 +31,7 @@ will be two cells in the array.
 
 Listing: packed string
 
-```c
+```pawn
 
 new pstring[5 char] = !"test"
 
@@ -51,7 +51,7 @@ The code snippet below returns true if the input string is packed and false othe
 
 Listing: ispacked function
 
-```c
+```pawn
 
 bool: ispacked(string[])
     return !(0 <= string[0] <= ucharmax)
@@ -70,7 +70,7 @@ string (packed or unpacked) is:
 
 Listing: my strlen function
 
-```c
+```pawn
 
 my_strlen(string[])
 {
@@ -91,7 +91,7 @@ it is a good idea to add an assertion to enforce this condition:
 
 Listing: strupper function
 
-```c
+```pawn
 
 strupper(string[])
 {
@@ -113,7 +113,7 @@ of a character in bytes and the size of a cell in bytes are powers of two.
 The char operator allows you to determine how many packed characters fit in
 a cell. For example:
 
-```c
+```pawn
 
 #if     4 char == 1
     /* code that assumes 4 packed characters per cell */
@@ -135,7 +135,7 @@ is not necessarily so; one can, for example, modify the first “hello world” 
 
 Listing: “hello world” in Greek
 
-```c
+```pawn
 
 main()
     printf "˙  ˙\n"
@@ -318,7 +318,7 @@ which give a “tag mismatch” diagnostic message:
 
 Listing: comparing apples to oranges
 
-```c
+```pawn
 
 new apple:elstar                /* variable "elstar" with tag "apple" */
 new orange:valencia             /* variable "valencia" with tag "orange" */
@@ -348,7 +348,7 @@ For example, with the declarations of the previous code snippet, if you would
 wish to compare apples with oranges (recent research indicates that comparing
 apples to oranges is not as absurd than popular belief holds), you could use:
 
-```c
+```pawn
 
 if (apple:valencia < elstar)
     valencia = orange:elstar
@@ -377,7 +377,7 @@ immediately obvious:
 
 Listing: bad way of using tags
 
-```c
+```pawn
 
 #pragma rational float
 
@@ -410,7 +410,7 @@ with the proposed adaptations:
 
 Listing: strong tags are safer
 
-```c
+```pawn
 
 #pragma rational Float
 
@@ -442,7 +442,7 @@ eral purpose functions: adjust the definition of the function to accept both
 all weak tags and a selective set of strong tag names. The PAWN language supports
 multiple tag names for every function arguments. The original definition of printf (from the file console.inc) is:
 
-```c
+```pawn
 
 native printf(const format[], ...);
 
@@ -457,7 +457,7 @@ add the empty tag specification to the list of tag names, because printf would
 otherwise only accept arguments with a Float: tag name. Below is the new
 definition of the function printf:
 
-```c
+```pawn
 
 native printf(const format[], {Float, \_}: ...);
 
@@ -495,7 +495,7 @@ line with the next line.
 
 For example:
 
-```c
+```pawn
 
 #define             max_path max_drivename + max_directorystring + \
                     max_filename + max_extension
@@ -508,7 +508,7 @@ and leading white space on the next line. The example below prints “Hello
 world” with one space between the two words (because there is a space between
 ”Hello” and the backslash):
 
-```c
+```pawn
 
 print("Hello \
       world")
@@ -538,7 +538,7 @@ were left in for readability.
 
 Listing: quine.p
 
-```c
+```pawn
 
     new s[]="new s[]=%c%s%c; main() printf s,34,s,34"; main() printf s,34,s,34
 
