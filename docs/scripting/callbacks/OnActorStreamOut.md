@@ -1,7 +1,7 @@
 ---
 title: OnActorStreamOut
 description: This callback is called when an actor is streamed out by a player's client.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
@@ -21,7 +21,7 @@ It is always called first in filterscripts.
 
 ## Examples
 
-```c
+```pawn
 public OnActorStreamOut(actorid, forplayerid)
 {
     new string[40];
