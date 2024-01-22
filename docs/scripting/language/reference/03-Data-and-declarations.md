@@ -111,7 +111,7 @@ variable name.
 
 Examples:
 
-```c
+```pawn
 
 new const address[4] = { 192, 0, 168, 66 }
 
@@ -156,7 +156,7 @@ Examples:
 
 Listing: good declaration
 
-```c
+```pawn
 
 new i = 1
 new j                                   /* j is zero */
@@ -173,7 +173,7 @@ Examples of invalid declarations:
 
 Listing: bad declarations
 
-```c
+```pawn
 
 new c[3] = 4                            /* an array cannot be set to a value */
 new i = "Good-bye"                      /* only an array can hold a string */
@@ -198,7 +198,7 @@ Examples:
 
 Listing: array initializers
 
-```c
+```pawn
 
 new a[10] = { 1, ... }                  /* sets all ten elements to 1 */
 new b[10] = { 1, 2, ... }               /* sets: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 */
@@ -221,7 +221,7 @@ array. Referring again to the “priority queue” sample program, to initialize
 
 Listing: array initializers
 
-```c
+```pawn
 
 enum message /* declaration copied from "QUEUE.P" */
     {
@@ -244,7 +244,7 @@ Below are a few examples of declarations of two-dimensional arrays.
 
 Listing: Two-dimensional arrays
 
-```c
+```pawn
 
 new a[4][3]
 new b[3][2] = { { 1, 2 }, { 3, 4 }, { 5, 6 } }
@@ -285,7 +285,7 @@ the display, because the array “msg” holds four characters (each in one cell
 
 Listing: sizeof operator
 
-```c
+```pawn
 
 new msg[] = "Help"
 printf("%d", sizeof msg);
@@ -302,7 +302,7 @@ this snippet prints are 3 and 2 (for the major and minor dimensions respectively
 
 Listing: sizeof operator and multidimensional arrays
 
-```c
+```pawn
 
 new matrix[3][2] = { { 1, 2 }, { 3, 4 }, { 5, 6 } }
 printf("%d %d", sizeof matrix, sizeof matrix[]);
@@ -332,7 +332,7 @@ Examples of valid tagged variable and constant definitions are:
 
 Listing: tag names
 
-```c
+```pawn
 
 new bool:flag = true            /* "flag" can only hold "true" or "false" */
 
@@ -351,7 +351,7 @@ fatal and error, all with the tag error.
 
 Listing: enumerations
 
-```c
+```pawn
 
 enum error {
     success,
@@ -367,7 +367,7 @@ of an array and to add tag checking to the array usage in a single step:
 
 Listing: enumerations and arrays
 
-```c
+```pawn
 
 enum rectangle
 {
