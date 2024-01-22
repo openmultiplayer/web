@@ -47,7 +47,9 @@ public OnRconCommand(cmd[])
 
 :::warning
 
-You will need to include this callback in a loaded filterscript for it to work in the gamemode!
+In SA-MP you will need to include this callback in a loaded filterscript for it to work in the gamemode!
+
+But it is fixed in open.mp
 
 :::
 
