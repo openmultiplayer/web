@@ -16,19 +16,19 @@ See also:
 
 A statement is a piece of code that imperatively tells the host program to do something. A statement is a valid piece of code that yields some result.
 
-```c
+```pawn
 a = b + c;
 ```
 
 This is a statement composed of a variable being assigned the result of an [#Expression].
 
-```c
+```pawn
 SetPlayerColor(playerid, 0xFF4700FF);
 ```
 
 This is a statement telling the program to call a function with some arguments.
 
-```c
+```pawn
 x + 8
 ```
 
@@ -38,7 +38,7 @@ This is _not_ a statement as the result is not used anywhere, this is just an [#
 
 A compound statement is a collection of statements surrounded by braces.
 
-```c
+```pawn
 {
     new message[] = "hi!";
     print(message);
@@ -47,7 +47,7 @@ A compound statement is a collection of statements surrounded by braces.
 
 This is a compound statement composed of two statements.
 
-```c
+```pawn
 if (a == b)
 {
     print("hello!");
@@ -56,7 +56,7 @@ if (a == b)
 
 This is a compound statement with an `if` condition, this is usually referred to as an "if statement".
 
-```c
+```pawn
 return Function1(), Function2(), Function3();
 ```
 
@@ -68,7 +68,7 @@ An expression is a piece of syntax that yields a value, it's not a valid stateme
 
 Expressions are often composed to form statements.
 
-```c
+```pawn
 a + b
 ```
 
@@ -100,7 +100,7 @@ function() {
 Switches must use two indent levels, one for the `switch` block and another for each `case` statement or compound statement.
 
 ```pawn
-switch (variable)
+switch(variable)
 {
     case 0:
         return 0;
@@ -114,7 +114,7 @@ switch (variable)
 ```
 
 ```pawn
-switch (variable)
+switch(variable)
 {
     case 0:
     {
