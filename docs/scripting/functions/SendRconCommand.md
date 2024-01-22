@@ -17,16 +17,6 @@ Sends an RCON (Remote Console) command.
 
 This function always returns 1.
 
-## Notes
-
-:::warning
-
-- Does not support login, due to the lack of a 'playerid' parameter.
-- 'password 0' will remove the server's password if one is set.
-- This function will result in OnRconCommand being called.
-
-:::
-
 ## Examples
 
 ```c
@@ -45,6 +35,14 @@ SendRconCommand("game.map %s", szMapName);
 ```
 
 ## Notes
+
+:::warning
+
+- Does not support login, due to the lack of a 'playerid' parameter.
+- 'password 0' will remove the server's password if one is set.
+- This function will result in [OnRconCommand](../callbacks/OnRconCommand) being called.
+
+:::
 
 :::info
 
