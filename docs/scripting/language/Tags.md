@@ -11,7 +11,7 @@ There are two types of tag - strong tags (starting with a capital letter) and we
 
 A very simple example is the following:
 
-```c
+```pawn
 new
     File:myfile = fopen("file.txt", io_read);
 myFile += 4;
@@ -23,7 +23,7 @@ The `fopen` function will return a value with a tag of type `File:`, there is no
 
 As mentioned above a strong tag is any tag starting with a capital letter. Examples of these in SA:MP include:
 
-```c
+```pawn
 Float:
 File:
 Text:
@@ -31,7 +31,7 @@ Text:
 
 These cannot be mixed with other variable types and will always issue a warning when you try to do so:
 
-```c
+```pawn
 new
     Float:myFloat,
     File:myFile,
@@ -50,7 +50,7 @@ myBlank = myFloat; // _: (none) = Float:, "tag mismatch" warning
 
 A weak tag behaves mostly the same as a strong tag however the compiler will not issue a warning when the destination is tagless and the source is a weak tag. For example compare the following strong and weak tag codes, the first with the strong tag will give a warning, the second with the weak tag will not:
 
-```c
+```pawn
 new
     Strong:myStrong,
     weak:myWeak,
@@ -62,13 +62,13 @@ myNone = myWeak; // No warning
 
 However the reverse is not true:
 
-```c
+```pawn
 myWeak = myNone; // Warning
 ```
 
 This is also true with functions, calling a function with a tagless parameter, passing a weak tagged variable will not give a warning:
 
-```c
+```pawn
 new
     weak:myWeak;
 MyFunction(myWeak);
@@ -83,7 +83,7 @@ MyFunction(myVar)
 
 But calling a function with a tagged parameter (weak or strong), passing an untagged parameter will give a warning. Examples of weak tags in SA:MP are less well known as such though are often used and include:
 
-```c
+```pawn
 bool:
 filemode:
 floatround_method:
@@ -95,7 +95,7 @@ floatround_method:
 
 Declaring a variable with a tag is very simple, just write the tag, there's no need to define a tag in advance in any way however this is possible and does have it's uses as will become apparent later:
 
-```c
+```pawn
 new
     Mytag:myVariable;
 ```
@@ -106,7 +106,7 @@ Declaring a variable with one of the existing tags will allow you to use that va
 
 Creating a function to take or return a tag is very simple, just prefix the relevant part with the desired tag type, for example:
 
-```c
+```pawn
 Float:GetValue(File:fHnd, const name[])
 {
     ...
@@ -121,7 +121,7 @@ Operators such as `+`, `==`, `>` etc can be overloaded for different tags, i.e. 
 
 An operator is exactly like a normal function but instead of a function name you use "operator(**symbol**)" where (**symbol**) is the operator you want to overwrite. The valid operators are:
 
-```c
+```pawn
 +
 -
 =
@@ -141,7 +141,7 @@ An operator is exactly like a normal function but instead of a function name you
 
 Things like `\`, `*`, `=` etc are done automatically. Things like `&` etc can't be overloaded. You can also overload an operator multiple times with different combinations of tag. For example:
 
-```c
+```pawn
 stock Float:operator=(Mytag:oper)
 {
     return float(_:oper);
@@ -150,7 +150,7 @@ stock Float:operator=(Mytag:oper)
 
 If you add that to your code and do:
 
-```c
+```pawn
 new
     Float:myFloat,
     Mytag:myTag;
@@ -164,13 +164,13 @@ You will no longer get a compiler warning as you would have before because the `
 
 In the overloading example above the functional line was:
 
-```c
+```pawn
 return float(_:oper);
 ```
 
 This is an example of tag overwriting, the `_:` in front of oper means the compiler basically ignores the fact that oper has a tag type of Mytag: and treats it as tag type `_:` (i.e. no tag type). The function `float()` tags a normal number so must be passed one. In that example it is assumed that `Mytag` stores an ordinary integer but overwriting must be dealt with very carefully, for example the following will give very odd results:
 
-```c
+```pawn
 new
     Float:f1,
     Float:f2 = 4.0;
