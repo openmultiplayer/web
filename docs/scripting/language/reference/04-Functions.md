@@ -17,7 +17,7 @@ a function that does not return a value.
 
 Listing: sum function
 
-```c
+```pawn
 
 sum(a, b)
 return a + b
@@ -32,7 +32,7 @@ Another example of a complete definition of the function leapyear
 
 Listing: leapyear function
 
-```c
+```pawn
 
 leapyear(y)
 return y % 4 == 0 && y % 100 != 0 || y % 400 == 0
@@ -48,7 +48,7 @@ guard against negative values for the exponent.
 
 Listing: power function (raise to a power)
 
-```c
+```pawn
 
 power(x, y)
 {
@@ -83,7 +83,7 @@ that the function modifies its argument.
 
 Listing: faculty.p
 
-```c
+```pawn
 
 /* Calculation of the faculty of a value */
 
@@ -123,7 +123,7 @@ Example:
 
 Listing: swap function
 
-```c
+```pawn
 
 swap(&a, &b)
 {
@@ -142,7 +142,7 @@ Example:
 
 Listing: addvector function
 
-```c
+```pawn
 
 addvector(a[], const b[], size)
 {
@@ -166,7 +166,7 @@ The following snippet calls addvector to add five to every element of the array 
 
 Listing: addvector usage
 
-```c
+```pawn
 
 new vect[3] = { 1, 2, 3 }
 
@@ -204,7 +204,7 @@ out the power function, the following program calls it thus:
 
 Listing: example program for the power function
 
-```c
+```pawn
 
 main()
 {
@@ -276,7 +276,7 @@ weekday(12,31,1999) to get the week day of the last day of the preceding century
 
 Listing: weekday function
 
-```c
+```pawn
 
 weekday(month, day, year)
 {
@@ -300,7 +300,7 @@ to use “named parameters”, as in the next examples (the three function calls
 
 Listing: weekday usage —positional parameters
 
-```c
+```pawn
 
 new wkday1 = weekday( .month = 12, .day = 31, .year = 1999)
 
@@ -336,7 +336,7 @@ argument list. For example, if function increment is defined as:
 
 Listing: increment function —default values
 
-```c
+```pawn
 
 increment(&value, incr=1) value += incr
 
@@ -346,7 +346,7 @@ the following function calls are all equivalent:
 
 Listing: increment usage
 
-```c
+```pawn
 
 increment(a)
 increment(a, \_)
@@ -361,7 +361,7 @@ its arguments, default values make these arguments optional:
 
 Listing: divmod function —default values for reference parameters
 
-```c
+```pawn
 
 divmod(a, b, &quotient=0, &remainder=0)
 {
@@ -376,7 +376,7 @@ are now all valid:
 
 Listing: divmod usage
 
-```c
+```pawn
 
 new p, q
 
@@ -393,7 +393,7 @@ string or prompt to a function that receives a string argument. For example:
 
 Listing: print error function
 
-```c
+```pawn
 
 print_error(const message[], const title[] = "Error: ")
 {
@@ -409,7 +409,7 @@ increments the first three elements of the destination array by one:
 
 Listing: addvector function, revised
 
-```c
+```pawn
 
 addvector(a[], const b[] = {1, 1, 1}, size = 3)
 {
@@ -446,7 +446,7 @@ unbiased —provided that the pseudo-random number generator is unbiased as well
 
 Listing: randlist.p
 
-```c
+```pawn
 
 main()
 {
@@ -539,7 +539,7 @@ on numeric literals and expression results.
 
 Listing: sqroot function —strong tags
 
-```c
+```pawn
 
 Fixed: sqroot(Fixed: value)
 {
@@ -574,7 +574,7 @@ a function that creates the intersection of two rectangles may be written as:
 
 Listing: intersection function
 
-```c
+```pawn
 
 intersection(dest[rectangle], const src1[rectangle], const src2[rectangle])
 {
@@ -620,7 +620,7 @@ It uses a variable length parameter list.
 
 Listing: sum function, revised
 
-```c
+```pawn
 
 sum(...)
 {
@@ -636,7 +636,7 @@ This function could be used in:
 
 Listing: sum function usage
 
-```c
+```pawn
 
 new v = sum(1, 2, 3, 4, 5)
 
@@ -701,7 +701,7 @@ The program below is an implementation of the famous “Towers of Hanoi” game 
 
 Listing: hanoi.p
 
-```c
+```pawn
 
 /* The Towers of Hanoi, a game solved through recursion */
 
@@ -802,7 +802,7 @@ Latin-1 character set) by the “hard space” code in the ANSI character table:
 
 Listing: onkey function
 
-```c
+```pawn
 
 public onkey(keycode)
 {
@@ -825,7 +825,7 @@ an alternative way to write the public function onkey function is:
 
 Listing: @onkey function
 
-```c
+```pawn
 
 @onkey(keycode)
     return key==’~’ ? 160 : key
@@ -895,7 +895,7 @@ of a function prototype. The function name must be preceded by the keyword nativ
 
 Examples:
 
-```c
+```pawn
 
 native getparam(a[], b[], size)
 
@@ -911,7 +911,7 @@ functions are known in the pawn program. Optionally, you may also set an externa
 name for the native function, which is the name of the function as the “host application” knows it.
 To do so, affix an equal sign to the function prototype followed by the external name. For example:
 
-```c
+```pawn
 
 native getparam(a[], b[], size) = host_getparam
 
@@ -923,7 +923,7 @@ When a native function returns an array, the dimensions and size of the ar-
 ray must be explicitly declared. The array specification occurs between  
 the function name and the parameter list. For example:
 
-```c
+```pawn
 
 enum rect { left, top, right, bottom }
 native intersect[rect](src1[rect], src2[rect])
@@ -962,7 +962,7 @@ to the least significant bit of the value.
 
 Listing: ones.p
 
-```c
+```pawn
 
 forward ones: operator+(ones: a, ones: b)
 forward ones: operator-(ones: a, ones: b)
@@ -1099,7 +1099,7 @@ User-defined operators can optionally be declared “stock” or “native”. I
 
 Listing: native operator+ function
 
-```c
+```pawn
 
 native Float: operator+(Float: val, Float: val) = float_add
 
@@ -1113,7 +1113,7 @@ a user-defined assignment operator is declared as:
 
 Listing: operator= function
 
-```c
+```pawn
 
 ones: operator=(a)
 
@@ -1161,7 +1161,7 @@ itly with a #pragma. The #pragma indicates how the rational numbers must
 be stored —floating point or fixed point. For fixed point rational values, the
 #pragma also specifies the precision in decimals. Two examples for the #pragma are:
 
-```c
+```pawn
 
 #pragma rational Float /* floating point format */
 #pragma rational Fixed(3) /* fixed point, with 3 decimals */
@@ -1188,7 +1188,7 @@ also defines the functions and operators.
 
 The include file † for fixed point arithmetic contains definitions like:
 
-```c
+```pawn
 
 native Fixed: operator\*(Fixed: val1, Fixed: val2) = fmul
 native Fixed: operator/(Fixed: val1, Fixed: val2) = fdiv
@@ -1202,7 +1202,7 @@ application must, then, provide these native functions.
 Another native user-defined operator is convenient to transform an integer to
 fixed point automatically, if it is assigned to a variable tagged as “Fixed:”:
 
-```c
+```pawn
 
 native Fixed: operator=(oper) = fixed
 
@@ -1224,7 +1224,7 @@ adding it. Hence, the include file implements operators for that purpose too:
 
 Listing: additive operators, commutative and non-commutative
 
-```c
+```pawn
 
 stock Fixed: operator+(Fixed: val1, val2)
     return val1 + fixed(val2)
@@ -1245,7 +1245,7 @@ point values: the modulus is only applicable to integer values:
 
 Listing: forbidden operators on fixed point values
 
-```c
+```pawn
 
 forward Fixed: operator%(Fixed: val1, Fixed: val2)
 forward Fixed: operator%(Fixed: val1, val2)
@@ -1264,7 +1264,7 @@ In Pawn, function arguments can be passed in two ways: by value and by reference
 #### Call by value
 In this method, the value of the variable is passed to the function. A copy of the variable is created and the function operates on the copy, not the original variable. Any changes made to the variable inside the function do not affect the original variable.
 
-```c
+```pawn
 swap(a, b){
 	new c = a;
 	a = b;
@@ -1286,7 +1286,7 @@ The value of x is 10 and value of y is 20, after calling 'swap'.
 
 #### Call by reference
 In this method, the address of the variable is passed to the function. The function operates on the original variable and any changes made to the variable inside the function are reflected in the original variable.
-```c
+```pawn
 swap(&a, &b){
 	new c = a;
 	a = b;
@@ -1313,7 +1313,7 @@ Every recursive function should have one or more base cases. A base case is a co
 ##### Recursive Case:
 The recursive case is where the function calls itself to solve a smaller instance of the problem. Each recursive call should bring the problem closer to a base case.
 #### Example
-```c
+```pawn
 stock factorial(n) {
     // Base case: factorial of 0 is 1
     if (n == 0) {
@@ -1351,7 +1351,7 @@ factorial(3) \\ factorial initiate
 ### Stack Memory
 The stack is a region of memory used for storing local variables, function call information, and control flow data. It operates in a Last-In-First-Out (LIFO) manner, which means that the last item pushed onto the stack is the first one to be popped off.
 #### Example (Stack Overflow)
-```c
+```pawn
 #pragma dynamic 35 // (35 * 4 bytes, a cell size) #pragma dynamic [cells] helps to modify the size of stack, read docs/scripting/language/Directives to know more about #pragma
 main(){
 	grow_stack(1);
