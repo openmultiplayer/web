@@ -6,7 +6,7 @@ title: "Keywords: Statements"
 
 Aborts execution with a runtime error if the expression evaluates to logically false. Seems to work only in the main() block. The assert statement should be used to indicate a logical(programmer's) error, never a run-time(user's) error.
 
-```c
+```pawn
 main()
 {
     assert (MAX_PLAYERS == GetMaxPlayers()); // ascertain that the definition of MAX_PLAYERS is equal to the actual number of server slots in use
@@ -17,8 +17,8 @@ main()
 
 Breaks out of a loop instantly, only leaves the top level loop, not all current loops.
 
-```c
-for (new i = 0; i < 10; i++)
+```pawn
+for(new i = 0; i < 10; i++)
 {
     printf("%d", i);
     if (i == 5)
@@ -30,7 +30,7 @@ for (new i = 0; i < 10; i++)
 
 Will produce:
 
-```c
+```pawn
 0
 1
 2
@@ -41,8 +41,8 @@ Will produce:
 
 While:
 
-```c
-for (new i = 0; i < 10; i++)
+```pawn
+for(new i = 0; i < 10; i++)
 {
     if (i == 5)
     {
@@ -54,7 +54,7 @@ for (new i = 0; i < 10; i++)
 
 Will produce:
 
-```c
+```pawn
 0
 1
 2
@@ -68,10 +68,11 @@ As the loop is instantly exited neither loop gets to 10 and the second one ends 
 
 Handles a specific result in a switch statement. The result can be either a single number, a selection of numbers or a range of numbers:
 
-```c
+```pawn
 new
     switchVar = 10;
-switch (switchVar)
+
+switch(switchVar)
 {
     case 1:
     {
@@ -100,10 +101,10 @@ switch (switchVar)
 
 Similar to break but just goes on to the next loop itteration. It is important to note that the point to which it jumps varies depending on which loop type you use.
 
-```c
-for (new i = 0; i < 10; i++)
+```pawn
+for(new i = 0; i < 10; i++)
 {
-    if (i == 5)
+    if(i == 5)
     {
         continue;
     }
@@ -113,7 +114,7 @@ for (new i = 0; i < 10; i++)
 
 Will produce:
 
-```c
+```pawn
 0
 1
 2
@@ -127,12 +128,13 @@ Will produce:
 
 A continue after the print will basically do nothing. In a for loop continue jumps to the third statement in the for statement (in this example the "i++;" bit), this is different to how it behaves in a while loop:
 
-```c
+```pawn
 new
     i = 0;
-while (i < 10)
+
+while(i < 10)
 {
-    if (i == 5)
+    if(i == 5)
     {
         continue;
     }
@@ -151,9 +153,10 @@ default handles switch statement results which aren't handled explicitly by case
 
 do is a type of loop which can be used with while to produce a loop which will always be run at least once. Note the semi-colon after the while () in the following example:
 
-```c
+```pawn
 new
     i = 10;
+
 do
 {
     printf("%d", i);
@@ -164,13 +167,13 @@ while (i < 10);
 
 "i" is clearly not less that 10 but this loop will produce:
 
-```c
+```pawn
 10
 ```
 
 anyway. The similar while loop:
 
-```c
+```pawn
 new
     i = 10;
 while (i < 10)
@@ -184,14 +187,16 @@ while (i < 10)
 
 These are also useful for avoiding double checks:
 
-```c
+```pawn
 new
     checkVar = 10;
-if (checkVar == 10)
+
+if(checkVar == 10)
 {
     new
         i = 0;
-    while (checkVar == 10)
+
+    while(checkVar == 10)
     {
         checkVar = someFunction(i);
         i++;
@@ -201,19 +206,21 @@ if (checkVar == 10)
 
 This isn't obviously a major issue but you are checking checkVar twice in quick succession at the start of the loop, which is quite pointless, however the if is required as you need to do code if the condition is true but outside the loop (this is a fairly common situation). This can be improved by doing:
 
-```c
+```pawn
 new
     checkVar = 10;
-if (checkVar == 10)
+
+if(checkVar == 10)
 {
     new
         i = 0;
+
     do
     {
         checkVar = someFunction(i);
         i++;
     }
-    while (checkVar == 10);
+    while(checkVar == 10);
 }
 ```
 
@@ -223,10 +230,11 @@ In this instance the result will be exactly the same but crucially with one less
 
 else is called when an if statement fails (assuming it is present):
 
-```c
+```pawn
 new
     checkVar = 5;
-if (checkVar == 10)
+
+if(checkVar == 10)
 {
     printf("This will never be called");
 }
@@ -238,14 +246,15 @@ else
 
 else can also be combined with if:
 
-```c
+```pawn
 new
     checkVar = 2;
-if (checkVar == 1)
+
+if(checkVar == 1)
 {
     printf("This will not be called"):
 }
-else if (checkVar == 2)
+else if(checkVar == 2)
 {
     printf("The first if failed so the second was checked and is true");
 }
@@ -259,7 +268,7 @@ else
 
 This exits the current program instantly.
 
-```c
+```pawn
 main()
 {
     exit;
@@ -271,16 +280,16 @@ main()
 
 A for loop is a type of loop involving three stages, initialisation, comparison and update. These are each separated by a semicolon (Wink and can each be excluded by just setting a blank space. The most basic for loop is:
 
-```c
-for ( ; ; ) {}
+```pawn
+for( ; ; ) {}
 ```
 
 This has no initialisation, no comparison and no update and as a result will go forever (the comparison, being absent, defaults to true).
 
 One of the more common loops is:
 
-```c
-for (new i = 0; i < MAX_PLAYERS; i++)
+```pawn
+for(new i = 0; i < MAX_PLAYERS; i++)
 {
     printf("%d", i);
 }
@@ -288,7 +297,7 @@ for (new i = 0; i < MAX_PLAYERS; i++)
 
 The initialisation in this loop is:
 
-```c
+```pawn
 new i = 0;
 ```
 
@@ -296,10 +305,11 @@ The semicolon marks the end of the initialisation. This declares a new variable,
 
 The result of this loop is all the numbers from 0 to 499 inclusive being printed out. The equivalent while loop (ignoring the effects of continue) would be:
 
-```c
+```pawn
 new
     i = 0;
-while (i < MAX_PLAYERS)
+
+while(i < MAX_PLAYERS)
 {
     printf("%d", i);
     i++;
@@ -308,8 +318,8 @@ while (i < MAX_PLAYERS)
 
 The three stages can be made a lot more complex if required using commas for the first and last sections and standard comparisons for the middle section:
 
-```c
-for (new i = 0, j = 200; i < MAX_PLAYERS && j > 10; i++, j -= 2)
+```pawn
+for(new i = 0, j = 200; i < MAX_PLAYERS && j > 10; i++, j -= 2)
 {
     printf("%d %d", i, j);
 }
@@ -319,8 +329,8 @@ This will create two new variables and set them to 0 and 200, then loop while on
 
 As stated before the scope of variables is limited to the loop usually:
 
-```c
-for (new i = 0; i < MAX_PLAYERS; i++)
+```pawn
+for(new i = 0; i < MAX_PLAYERS; i++)
 {
     printf("%d", i);
 }
@@ -329,10 +339,11 @@ printf("%d", i);
 
 That will produce an error as "i" doesn't exist after the loop ends. However:
 
-```c
+```pawn
 new
     i = 0;
-for ( ; i < MAX_PLAYERS; i++)
+
+for( ; i < MAX_PLAYERS; i++)
 {
     printf("%d", i);
 }
@@ -341,10 +352,11 @@ printf("%d", i);
 
 Is fine as "i" is not declared in the loop. You could also initialise "i" in the loop but not declare it there:
 
-```c
+```pawn
 new
     i;
-for (i = 0; i < MAX_PLAYERS; i++)
+
+for(i = 0; i < MAX_PLAYERS; i++)
 {
     printf("%d", i);
 }
@@ -355,7 +367,7 @@ printf("%d", i);
 
 goto and labels are generally discouraged in the coding community as what they do can usually be done better by restructuring your code properly. However basically a goto is a jump:
 
-```c
+```pawn
 goto my_label;
 printf("This will never be printed");
 my_label:
@@ -364,11 +376,12 @@ printf("This will be printed");
 
 The compiler however doesn't handle goto very well so that will not be optimised at all and things like:
 
-```c
+```pawn
 {
     new
         i = 5;
-    if (i == 5)
+
+    if(i == 5)
     {
         goto my_label;
     }
@@ -382,12 +395,13 @@ The compiler however doesn't handle goto very well so that will not be optimised
 
 Will give a warning about inconsistent return types as it things the true branch doesn't return anything when it actually does, just in a very roundabout way. Also:
 
-```c
+```pawn
 MyFunction()
 {
     new
         i = 5;
-    if (i == 5)
+
+    if(i == 5)
     {
         goto my_label;
     }
@@ -401,7 +415,7 @@ Will give an unreachable code warning despite the fact it actually is reachable.
 
 The basic syntax is:
 
-```c
+```pawn
 label:
 
 goto label;
@@ -413,19 +427,18 @@ The label should be on a line on it's own and ends in a colon, NOT a semicolon. 
 
 If is one of the most important operators. It determines wether something should be done or not and acts accordingly, it, along with goto, is the basis of almost all other control structures:
 
-```c
-for (new i = 0; i < 10; i++)
-{
-}
+```pawn
+for(new i = 0; i < 10; i++) {}
 ```
 
 Is equivalent to:
 
-```c
+```pawn
 new
     i = 0;
+
 for_loop:
-if (i < 10)
+if(i < 10)
 {
     i++;
     goto for_loop;
@@ -438,8 +451,8 @@ Operator Explanation Example Result when a=1, b=0 Result when a=1, b=1 Result wh
 
 Obviously with these you can build up complex conditionals:
 
-```c
-if (a == b && (c != d || f < g))
+```pawn
+if(a == b && (c != d || f < g))
 ```
 
 That will be true if a is the same as b and either f is less than g or c is not the same as d (or both).
@@ -448,7 +461,7 @@ That will be true if a is the same as b and either f is less than g or c is not 
 
 This breaks out a function and can return data to the calling function:
 
-```c
+```pawn
 MyFunction()
 {
     new
@@ -463,10 +476,10 @@ OtherFunction()
 
 someVar will now be 5.
 
-```c
+```pawn
 MyFunction()
 {
-    if (SomeFunction())
+    if(SomeFunction())
     {
         printf("Returned 1");
     }
@@ -480,10 +493,10 @@ SomeFunction()
 
 That will either return 1 or 0 to the calling function's if statement. 1 is true and 0 if false so the text will only be printed if 1 is returned. However:
 
-```c
+```pawn
 MyFunction()
 {
-    if (SomeFunction())
+    if(SomeFunction())
     {
         printf("Returned something between 1 and 10");
     }
@@ -499,7 +512,7 @@ That will return 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or 10. Anything which is not 0 is 
 
 You can also use return with strings:
 
-```c
+```pawn
 MyFunction()
 {
     printf("%s", SomeFunction());
@@ -517,7 +530,7 @@ Will print "Hello" (without the quotes).
 
 You also don't have to return anything:
 
-```c
+```pawn
 MyFunction()
 {
     SomeFunction();
@@ -531,10 +544,10 @@ SomeFunction()
 
 However if you do this you must make sure the function's return is never used:
 
-```c
+```pawn
 MyFunction()
 {
-    if (SomeFunction())
+    if(SomeFunction())
     {
         printf("Problem");
     }
@@ -548,7 +561,7 @@ SomeFunction()
 
 Here SomeFunction is not returning anything however MyFunction is checking if the value returned from SomeFunction is true or not - it's neither as it just doesn't exist, so you will get a compiler error. No return is the default, so:
 
-```c
+```pawn
 SomeFunction()
 {
     return;
@@ -557,17 +570,15 @@ SomeFunction()
 
 And:
 
-```c
-SomeFunction()
-{
-}
+```pawn
+SomeFunction() {}
 ```
 
 Are the same.
 
 Finally, you can't mix return values:
 
-```c
+```pawn
 MyFunction()
 {
     SomeFunction();
@@ -588,7 +599,7 @@ SomeFunction()
 
 This will give an error because it doesn't know what to do.
 
-```c
+```pawn
 SomeFunction()
 {
     if (random(2))
@@ -604,7 +615,7 @@ Is also not allowed as the default return is nothing.
 
 sleep is a psudo-function which makes execution pause for a given number of milliseconds:
 
-```c
+```pawn
 printf("Time 0s");
 sleep(1000);
 printf("Time 1s");
@@ -620,8 +631,8 @@ state is part of the PAWN state machine and autonoma system, see [this thread](h
 
 switch is basically a structured if/else if/else system:
 
-```c
-switch (someVar)
+```pawn
+switch(someVar)
 {
     case 1:
     {
@@ -644,16 +655,16 @@ switch (someVar)
 
 Is just a slightly more efficient (and much cleaner) way of doing:
 
-```c
-if (someVar == 1)
+```pawn
+if(someVar == 1)
 {
     printf("one");
 }
-else if (someVar == 2)
+else if(someVar == 2)
 {
     printf("two");
 }
-else if (someVar == 3)
+else if(someVar == 3)
 {
     printf("three");
 }
@@ -667,11 +678,12 @@ else
 
 while is a loop type similar to for and do..while. The basic operation is an if statement done which if true does some code and jumps back to the if. If it's false it goes to after the loop code - there is no else. Going back to the goto example:
 
-```c
+```pawn
 new
     i = 0;
+
 for_loop:
-if (i < 10)
+if(i < 10)
 {
     i++;
     goto for_loop;
@@ -680,13 +692,14 @@ if (i < 10)
 
 This can also be written as:
 
-```c
+```pawn
 new
     i = 0;
-while (i < 10)
+
+while(i < 10)
 {
     i++;
 }
 ```
 
-See do and for more information.
+See the **do** and **for** loops for more information.
