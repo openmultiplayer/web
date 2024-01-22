@@ -4,7 +4,7 @@ title: "Keywords: Initialisers"
 
 ## `const`
 
-```c
+```pawn
 new const
     MY_CONSTANT[] =  {1, 2, 3};
 ```
@@ -17,7 +17,7 @@ Enumerations are a very useful system for representing large groups of data and 
 
 By far the most common use is as array definitions:
 
-```c
+```pawn
 enum E_MY_ARRAY
 {
     E_MY_ARRAY_MONEY,
@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 That will create an array with two slots for every player. Into the one referenced by E_MY_ARRAY_MONEY it'll put 0 when a player connects and 5 into E_MY_ARRAY_GUN. Without an enum this would look like:
 
-```c
+```pawn
 new
     gPlayerData[MAX_PLAYERS][2];
 
@@ -49,7 +49,7 @@ public OnPlayerConnect(playerid)
 
 And that is how the first compiles. This is OK, however it's less readable - what is slot 0 for and what is slot 1 for? And it's less flexible, what if you want to add another slot between 0 and 1, you have to rename all your 1s to 2s, add the new one and hope you didn't miss anything, wheras with an enum you would just do:
 
-```c
+```pawn
 enum E_MY_ARRAY
 {
     E_MY_ARRAY_MONEY,
@@ -72,8 +72,8 @@ Recompile and everything will be updated for you.
 
 So how does an enum know what values to give things? The full format of an enum is:
 
-```c
-enum NAME (modifier)
+```pawn
+enum NAME(modifier)
 {
     NAME_ENTRY_1 = value,
     NAME_ENTRY_2 = value,
@@ -84,7 +84,7 @@ enum NAME (modifier)
 
 However much of this is implied. By default, if you don't specify a modifier it becomes (+= 1), this means that every value in the enum is the last value in the enum + 1, so for:
 
-```c
+```pawn
 enum E_EXAMPLE
 {
     E_EXAMPLE_0,
@@ -95,8 +95,8 @@ enum E_EXAMPLE
 
 The first value (E_EXAMPLE_0) is 0 (by default if no other value is specified), so the second value (E_EXAMPLE_1) is 1 (0 + 1) and the third value (E_EXAMPLE_2) is 2 (1 + 1). This makes the value of E_EXAMPLE 3 (2 + 1), the name of the enum is also the last value in the enum. If we change the modifier we get different values:
 
-```c
-enum E_EXAMPLE (+= 5)
+```pawn
+enum E_EXAMPLE(+= 5)
 {
     E_EXAMPLE_0,
     E_EXAMPLE_1,
@@ -106,15 +106,15 @@ enum E_EXAMPLE (+= 5)
 
 In that example every value is the last value + 5 so, starting from 0 again, we get: E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 5, E_EXAMPLE_2 = 10, E_EXAMPLE = 15. If you were to declare an array of:
 
-```c
+```pawn
 new
     gEnumArray[E_EXAMPLE];
 ```
 
 You would get an array 15 cells big however you would only be able to access cells 0, 5 and 10 using the enum values (you could however still use normal numbers). Lets look at another example:
 
-```c
-enum E_EXAMPLE (*= 2)
+```pawn
+enum E_EXAMPLE(*= 2)
 {
     E_EXAMPLE_0,
     E_EXAMPLE_1,
@@ -124,8 +124,8 @@ enum E_EXAMPLE (*= 2)
 
 In this all the values are 0. Why? Well the first value by default is 0, then 0 _ 2 = 0, then 0 _ 2 = 0 and 0 \* 2 = 0. So how do we correct this? This is what custom values are for:
 
-```c
-enum E_EXAMPLE (*= 2)
+```pawn
+enum E_EXAMPLE(*= 2)
 {
     E_EXAMPLE_0 = 1,
     E_EXAMPLE_1,
@@ -135,8 +135,8 @@ enum E_EXAMPLE (*= 2)
 
 That sets the first value to 1, so you end up with 1, 2, 4 and 8. Creating an array with that would give you an 8 cell array with named access to cells 1, 2 and 4. You can set whichever values you like and as many values as you like:
 
-```c
-enum E_EXAMPLE (*= 2)
+```pawn
+enum E_EXAMPLE(*= 2)
 {
     E_EXAMPLE_0,
     E_EXAMPLE_1 = 1,
@@ -146,14 +146,14 @@ enum E_EXAMPLE (*= 2)
 
 Gives:
 
-```c
+```pawn
 0, 1, 2, 4
 ```
 
 While:
 
-```c
-enum E_EXAMPLE (*= 2)
+```pawn
+enum E_EXAMPLE(*= 2)
 {
     E_EXAMPLE_0 = 1,
     E_EXAMPLE_1 = 1,
@@ -163,7 +163,7 @@ enum E_EXAMPLE (*= 2)
 
 Gives:
 
-```c
+```pawn
 1, 1, 1, 2
 ```
 
@@ -171,7 +171,7 @@ It's not advised to use anything but += 1 for arrays.
 
 You can also use arrays in enums:
 
-```c
+```pawn
 enum E_EXAMPLE
 {
     E_EXAMPLE_0[10],
@@ -184,7 +184,7 @@ That would make E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 10, E_EXAMPLE_2 = 11 and E_EXAMPL
 
 enums items can also have tags, so for out original example:
 
-```c
+```pawn
 enum E_MY_ARRAY
 {
     E_MY_ARRAY_MONEY,
@@ -209,8 +209,8 @@ That will not give a tag mismatch.
 
 Enums can also be used as tags themselves:
 
-```c
-enum E_MY_TAG (<<= 1)
+```pawn
+enum E_MY_TAG(<<= 1)
 {
     E_MY_TAG_NONE,
     E_MY_TAG_VAL_1 = 1,
@@ -225,20 +225,20 @@ new
 
 That will create a new variable and assign it the value 6 (4 | 2), and it will have a custom tag so doing:
 
-```c
+```pawn
 gMyTagVar = 7;
 ```
 
 Will generate a tag mismatch warning, although you can use tag overwrites to bypass it:
 
-```c
+```pawn
 gMyTagVar = E_MY_TAG:7;
 ```
 
 This can be very useful for flag data (i.e. one bit for some data), or even combined data:
 
-```c
-enum E_MY_TAG (<<= 1)
+```pawn
+enum E_MY_TAG(<<= 1)
 {
     E_MY_TAG_NONE,
     E_MY_TAG_MASK = 0xFF,
@@ -256,7 +256,7 @@ Which will produce a value of 1543 (0x0607).
 
 Finally, as stated originally, enums can be used to replace defines by ommitting the name:
 
-```c
+```pawn
 #define TEAM_NONE   0
 #define TEAM_COP    1
 #define TEAM_ROBBER 2
@@ -267,7 +267,7 @@ Finally, as stated originally, enums can be used to replace defines by ommitting
 
 I'm sure many of you have seen loads of things like that to define teams. It's all well and good but it's very static. That can easilly be replaced by an enum to handle numeric assignments automatically:
 
-```c
+```pawn
 enum
 {
     TEAM_NONE,
@@ -281,7 +281,7 @@ enum
 
 Those all have the same values as they had before, and can be used in exactly the same way:
 
-```c
+```pawn
 new
     gPlayerTeam[MAX_PLAYERS] = {TEAM_NONE, ...};
 
@@ -292,7 +292,7 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerRequestSpawn(playerid)
 {
-    if (gPlayerSkin[playerid] == gCopSkin)
+    if(gPlayerSkin[playerid] == gCopSkin)
     {
         gPlayerTeam[playerid] = TEAM_COP;
     }
@@ -301,8 +301,8 @@ public OnPlayerRequestSpawn(playerid)
 
 While we're on the subject there is a much better way of defining teams based on this method:
 
-```c
-enum (<<= 1)
+```pawn
+enum(<<= 1)
 {
     TEAM_NONE,
     TEAM_COP = 1,
@@ -315,8 +315,8 @@ enum (<<= 1)
 
 Now TEAM_COP is 1, TEAM_ROBBER is 2, TEAM_CIV is 4 etc, which in binary is 0b00000001, 0b00000010 and 0b00000100. This means that if a player's team is 3 then they are in both the cop team and the robber team. That may sound pointless but it does open up possibilities:
 
-```c
-enum (<<= 1)
+```pawn
+enum(<<= 1)
 {
     TEAM_NONE,
     TEAM_COP = 1,
@@ -332,19 +332,19 @@ Using that you can be in both a normal team and the admin team using only a sing
 
 To add a player to a team:
 
-```c
+```pawn
 gPlayerTeam[playerid] |= TEAM_COP;
 ```
 
 To remove a player from a team:
 
-```c
+```pawn
 gPlayerTeam[playerid] &= ~TEAM_COP;
 ```
 
 To check if a player is in a team:
 
-```c
+```pawn
 if (gPlayerTeam[playerid] & TEAM_COP)
 ```
 
@@ -354,17 +354,15 @@ Very simple and very useful.
 
 forward tells the compiler that a function is coming later. It is required for all public functions however can be used in other places. It's use is "forward" followed by the full name and parameters of the function you want to forward, followed by a semicolon:
 
-```c
+```pawn
 forward MyPublicFunction(playerid, const string[]);
 
-public MyPublicFunction(playerid, const string[])
-{
-}
+public MyPublicFunction(playerid, const string[]) {}
 ```
 
 As well as being required for all publics forward can be used to fix a rare warning when a function which returns a tag result (e.g. a float) is used before it's declared.
 
-```c
+```pawn
 main()
 {
     new
@@ -379,7 +377,7 @@ Float:MyFloatFunction()
 
 This will give a reparse warning because the compiler doesn't know how to convert the return of the function to a float because it doesn't know if the function returns a normal number or a float. Clearly in this example it returns a float. This can either be solved by putting the function at a point in the code before it's used:
 
-```c
+```pawn
 Float:MyFloatFunction()
 {
     return 5.0;
@@ -394,7 +392,7 @@ main()
 
 Or by forwarding the function so the compiler knows what to do:
 
-```c
+```pawn
 forward Float:MyFloatFunction();
 
 main()
@@ -415,13 +413,13 @@ Note the forward includes the return tag too.
 
 A native function is one defined in the virtual machine (i.e. the thing which runs the script), not in the script itself. You can only define native functions if they're coded into SA:MP or a plugin, however you can create fake natives. Because the native functions from .inc files are detected by pawno and listed in the box on the right hand side of pawno it can be useful to use native to get your own custom functions listed there. A normal native declaration could look like:
 
-```c
+```pawn
 native printf(const format[], {Float,_}:...);
 ```
 
 If you want your own functions to appear without being declared native you can do:
 
-```c
+```pawn
 /*
 native MyFunction(playerid);
 */
@@ -431,13 +429,13 @@ PAWNO doesn't recognise comments like that so will add the function to the list 
 
 The other interesting thing you can do with native is rename/overload functions:
 
-```c
+```pawn
 native my_print(const string[]) = print;
 ```
 
 Now the function print doesn't actually exist. It is still in SA:MP, and the compiler knows it's real name thanks to the "= print" part, but if you try call it in PAWN you will get an error as you have renamed print internally to my_print. As print now doesn't exist you can define it just like any other function:
 
-```c
+```pawn
 print(const string[])
 {
     my_print("Someone called print()");
@@ -451,14 +449,14 @@ Now whenever print() is used in a script your function will be called instead of
 
 This is the core of variables, one of the most important keywords about. new declares a new variable:
 
-```c
+```pawn
 new
     myVar = 5;
 ```
 
 That will create a variable, name it myVar and assign it the value of 5. By default all variables are 0 if nothing is specified:
 
-```c
+```pawn
 new
     myVar;
 
@@ -469,7 +467,7 @@ Will give "0".
 
 A variable's scope is where it can be used. Scope is restricted by braces (the curly brackets - {} ), any variable declared inside a set of braces can only be used within those braces.
 
-```c
+```pawn
 if (a == 1)
 {
     // Braces start the line above this one
@@ -480,7 +478,7 @@ if (a == 1)
     printf("%d", myVar);
 
     // This if statement is also within the braces, so it and everything in it can use myVar
-    if (myVar == 1)
+    if(myVar == 1)
     {
         printf("%d", myVar);
     }
@@ -496,7 +494,7 @@ If a global variable (i.e. one declared outside a function) is declared new, it 
 
 File1.pwn:
 
-```c
+```pawn
 MyFunc1()
 {
     // Error, gMyVar doesn't exist yet
@@ -519,7 +517,7 @@ MuFunc2()
 
 file2.pwn:
 
-```c
+```pawn
 MyFunc3()
 {
     // This is also fine as this file is included in the first file after the declaration and new is not file restricted
@@ -531,7 +529,7 @@ MyFunc3()
 
 This allows you to overload operators for custom tags. For example:
 
-```c
+```pawn
 stock BigEndian:operator=(b)
 {
     return BigEndian:(((b >>> 24) & 0x000000FF) | ((b >>> 8) & 0x0000FF00) | ((b << 8) & 0x00FF0000) | ((b << 24) & 0xFF000000));
@@ -547,13 +545,13 @@ main()
 
 Normal pawn numbers are stored in what's called little endian. This operator allows you to define an assignment to convert a normal number to a big endian number. The difference between big endian and little endian is the byte order. 7 in little endian is stored as:
 
-```c
+```pawn
 07 00 00 00
 ```
 
 7 in big endian is stored as:
 
-```c
+```pawn
 00 00 00 07
 ```
 
@@ -561,13 +559,13 @@ Therefore if you print the contents of a big endian stored number it will try re
 
 You can overload the following operators:
 
-```c
+```pawn
 +, -, *, /, %, ++, --, ==, !=, <, >, <=, >=, ! and =
 ```
 
 Also note that you can make them do whatever you like:
 
-```c
+```pawn
 stock BigEndian:operator+(BigEndian:a, BigEndian:b)
 {
     return BigEndian:42;
@@ -591,7 +589,7 @@ A public function has it's textual name stored in the amx file, unlike normal fu
 
 Calling a function by name:
 
-```c
+```pawn
 forward MyPublicFunc();
 
 main()
@@ -607,7 +605,7 @@ public MyPublicFunc()
 
 public functions prefixed by either "public" or "@" and, as mentioned in the forward section, all require forwarding:
 
-```c
+```pawn
 forward MyPublicFunc();
 forward @MyOtherPublicFunc(var);
 
@@ -634,7 +632,7 @@ main, used in most of these examples, is similar to a public function in that it
 
 All SA:MP callbacks are public and called from outside the script automatically:
 
-```c
+```pawn
 public OnPlayerConnect(playerid)
 {
     printf("%d connected", playerid);
@@ -645,7 +643,7 @@ When someone joins the server it will automatically look up this public function
 
 If you want to call a public function from inside the script however you do not have to call it by name, public functions also behave as normal functions too:
 
-```c
+```pawn
 forward MyPublicFunc();
 
 main()
@@ -667,7 +665,7 @@ A static variable is like a global new variable but with a more limited scope. W
 
 **file1.pwn**
 
-```c
+```pawn
 MyFunc1()
 {
     // Error, gMyVar doesn't exist yet
@@ -690,7 +688,7 @@ MuFunc2()
 
 file2.pwn
 
-```c
+```pawn
 MyFunc3()
 {
     // This is also fine as this file is included in the first file after the declaration and new is not file restricted
@@ -702,7 +700,7 @@ And modifying it for static would give:
 
 file1.pwn
 
-```c
+```pawn
 MyFunc1()
 {
     // Error, g_sMyVar doesn't exist yet
@@ -725,7 +723,7 @@ MuFunc2()
 
 file2.pwn
 
-```c
+```pawn
 MyFunc3()
 {
     // Error, g_sMyVar is limited to only the file (or section) in which it was declared, this is a different file
@@ -737,7 +735,7 @@ This means you can have two globals of the same name in different files.
 
 If you use static locally (i.e. in a function) then the variable, like local variables created with new, can only be used within the scope (based on braces - see the section on "new") in which it was declared. However unlike "new" variables "static" variables do not loose their value between calls.
 
-```c
+```pawn
 main()
 {
     for (new loopVar = 0; loopVar < 4; loopVar++)
@@ -758,7 +756,7 @@ MyFunc()
 
 Every time the function is called i is reset to 0, so the resulting output will be:
 
-```c
+```pawn
 0
 1
 0
@@ -771,7 +769,7 @@ Every time the function is called i is reset to 0, so the resulting output will 
 
 If we replace the "new" with "static" we get:
 
-```c
+```pawn
 main()
 {
     for (new loopVar = 0; loopVar < 4; loopVar++)
@@ -792,7 +790,7 @@ MyFunc()
 
 And, as static locals keep their value between calls, the resulting output it:
 
-```c
+```pawn
 0
 1
 1
@@ -805,7 +803,7 @@ And, as static locals keep their value between calls, the resulting output it:
 
 The value given in the declaration (if one is given, like new, static variables default to 0) is the value assigned to the variable the first time the function is called. So if "static i = 5;" were used instead the result would be:
 
-```c
+```pawn
 5
 6
 6
@@ -824,7 +822,7 @@ You can also have static functions which can only be called from the file in whi
 
 stock is used to declare variables and functions which may not be used but which you don't want to generate unused warnings for. With variables stock is like const in that it is a modifier, not a full declaration, so you could have:
 
-```c
+```pawn
 new stock
     gMayBeUsedVar;
 
@@ -836,7 +834,7 @@ If the variable or function is used the compiler will include it, if it is not u
 
 stock is most commonly used for custom libraries. If you write a library you provide a whole load of functions for other people to use but you've no idea if they'll use them or not. If your code gives loads of warnings for every function a person doesn't use people will complain (unless it's on purpose as they HAVE to use that function (e.g. for initialising variables). Having said that however, going from personal experience with YSI people will complain anyway.
 
-```c
+```pawn
 main()
 {
     Func1();
@@ -855,7 +853,7 @@ Func2()
 
 Here Func2 is never called so the compiler will give a warning. This may be useful as you may have forgotten to call it, as is generally the case in a straight script, however if Func1 and Func2 are in a library the user may simply not need Func2 so you do:
 
-```c
+```pawn
 main()
 {
     Func1();
