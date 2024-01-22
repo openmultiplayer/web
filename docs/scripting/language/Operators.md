@@ -6,19 +6,19 @@ title: "Keywords: Operators"
 
 char returns the number of cells required to hold the given number of characters in a packed string. I.e. the number of 4-byte cells required to hold a given number of bytes. For example:
 
-```c
+```pawn
 4 char
 ```
 
 Returns 1.
 
-```c
+```pawn
 3 char
 ```
 
 Returns 1 (you can't have 3/4 of a variable).
 
-```c
+```pawn
 256 char
 ```
 
@@ -26,7 +26,7 @@ Returns 64 (256 divided by 4).
 
 This is generally used in variable declarations.
 
-```c
+```pawn
 new
     someVar[40 char];
 ```
@@ -39,7 +39,7 @@ For more information on packed strings read pawn-lang.pdf.
 
 Checks if a symbol exists. Generally used in #if statements:
 
-```c
+```pawn
 new
     someVar = 5;
 #if defined someVar
@@ -51,7 +51,7 @@ new
 
 Most commonly it's used to check if a define is defined and generate code accordingly:
 
-```c
+```pawn
 #define FILTERSCRIPT
 
 #if defined FILTERSCRIPT
@@ -75,7 +75,7 @@ public OnGameModeInit()
 
 Returns the size in ELEMENTS of an array:
 
-```c
+```pawn
 new
     someVar[10];
 printf("%d", sizeof (someVar));
@@ -83,13 +83,13 @@ printf("%d", sizeof (someVar));
 
 Output:
 
-```c
+```pawn
 10
 ```
 
 And:
 
-```c
+```pawn
 new
     someVar[2][10];
 printf("%d %d", sizeof (someVar), sizeof (someVar[]));
@@ -97,7 +97,7 @@ printf("%d %d", sizeof (someVar), sizeof (someVar[]));
 
 Gives:
 
-```c
+```pawn
 2 10
 ```
 
@@ -109,7 +109,7 @@ This again is related to the PAWN autonoma code and thus not covered here.
 
 This returns a number representing the tag of a variable:
 
-```c
+```pawn
 new
     someVar,
     Float:someFloat;
@@ -118,24 +118,24 @@ printf("%d %d", tagof (someVar), tagof (someFloat));
 
 Gives:
 
-```c
+```pawn
 -./,),(-*,( -1073741820
 ```
 
 Which is a slight bug but basically means:
 
-```c
+```pawn
 0x80000000 0xC0000004
 ```
 
 To check, for example, if a variable is a float (with the tag 'Float:'):
 
-```c
+```pawn
 new Float: fValue = 6.9;
 
-new tag = tagof (fValue);
+new tag = tagof(fValue);
 
-if (tag == tagof (Float:))
+if(tag == tagof (Float:))
 {
     print("float");
 }
