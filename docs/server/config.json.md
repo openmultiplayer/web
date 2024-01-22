@@ -8,6 +8,8 @@ description: open.mp server configuration file.
 - `config.json` is a server configuration file which allows you to change all kinds of settings of your open.mp server.
 - You can still use [server.cfg](server.cfg) file in your open.mp server, but it is recommended to use config.json!
 
+<br />
+
 :::tip
 
 You can simply convert your server.cfg to config.json.
@@ -136,7 +138,7 @@ omp-server --default-config
 | network.cookie_reseed_time      | int    | 300000        | ❌         | ❌    | The time in milliseconds the connection cookie seed value updates.                                                                                                                                                                                                                                 |
 | network.in_vehicle_sync_rate\*  | int    | 30            | ✅         | ❌    | The time in milliseconds a client should update the server with new data while in a vehicle.                                                                                                                                                                                                       |
 | network.limits_ban_time         | int    | 60000         | ❌         | ❌    | Sets the raknet ban time for bad connect packets in milliseconds. (When acks/message limit is reached.)                                                                                                                                                                                            |
-| network.message_hole_limit      | int    | 3000          | ❌         | ❌    |                                                                                                                                                                                                                                                                                                    |
+| network.message_hole_limit      | int    | 3000          | ❌         | ❌    | A network level setting to deal with DoS attacks.                                                                                                                                                                                                                                                  |
 | network.messages_limit          | int    | 500           | ❌         | ❌    | The maximum number of messages a user can send per second.                                                                                                                                                                                                                                         |
 | network.minimum_connection_time | int    | 0             | ❌         | ❌    | The time in milliseconds the server will wait before accepting another incoming connection. It is not recommended that you use this variable unless your server is under a connection flood attack.                                                                                                |
 | network.mtu                     | int    | 576           | ✅         | ❌    | Keep it the default value, you don't really need or should change this if you have no idea what this is, because if you don't know, then you don't have anything on your server requiring higher MTU, but if you are still interested: https://en.wikipedia.org/wiki/Maximum_transmission_unit     |
