@@ -6,7 +6,33 @@ description: open.mp server configuration file.
 ## Description
 
 - `config.json` is a server configuration file which allows you to change all kinds of settings of your open.mp server.
-- This file is necessary for every server and has to be located in the server directory.
+- You can still use [server.cfg](server.cfg) file in your open.mp server, but it is recommended to use config.json!
+
+:::tip
+
+You can simply convert your server.cfg to config.json.
+
+Open a command prompt in your server directory and type the following line, then press Enter:
+
+```bash
+# Windows
+omp-server --dump-config
+
+# Linux
+./omp-server --dump-config
+```
+
+Or to generate a default config.json:
+
+```bash
+# Windows
+omp-server --default-config
+
+# Linux
+./omp-server --default-config
+```
+
+:::
 
 ## Announce
 
