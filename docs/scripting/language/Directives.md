@@ -8,21 +8,21 @@ Directives are instructions passed to the compiler to control how it interprets 
 
 This checks if constant expression is true and if not halts the compile.
 
-```c
+```pawn
 #define MOO 10
 #assert MOO > 5
 ```
 
 This will compile fine.
 
-```c
+```pawn
 #define MOO 1
 #assert MOO > 5
 ```
 
 That won't and will give a fatal error. This is similar to:
 
-```c
+```pawn
 #define MOO 1
 #if MOO <= 5
     #error MOO check failed
@@ -47,20 +47,20 @@ Which may or may not be helpful.
 
 `#define` is a text replacement directive, wherever the first symbol of the define is found the rest of it will be placed.
 
-```c
+```pawn
 #define MOO 7
 printf("%d", MOO);
 ```
 
 Will be changed to:
 
-```c
+```pawn
 printf("%d", 7);
 ```
 
 This is why all defines are lost in decompilation as they don't exist when the code is compiled (all directives are pre-processed). Defines don't have to contain numbers:
 
-```c
+```pawn
 #define PL new i = 0; i < MAX_PLAYERS; i++) if (IsPlayerConnected(i)
 
 for(PL) printf("%d connected", i);
@@ -70,7 +70,7 @@ Will compile to the player loop we all know and love (despise). Notice how the b
 
 Another little known fact about defines is that they can be multi-line if you escape the new line. Generally a new line ends the define however the following is valid:
 
-```c
+```pawn
 #define PL \
         new i = 0; i < MAX_PLAYERS; i++) \
                 if (IsPlayerConnected(i)
@@ -80,19 +80,19 @@ printf("%d", MOO(6));
 
 That will output 42 (no, not chosen randomly). Notice the excessive brackets in the define? This is because defines are straight text replacements so that will compile as:
 
-```c
+```pawn
 printf("%d", ((6) * 7));
 ```
 
 That's fine as it is but let's take this example:
 
-```c
+```pawn
 printf("%d", MOO(5 + 6));
 ```
 
 You would expect that to compile to output 77 ((5 + 6) \* 7) and with the brackets it will, however without the brackets you have:
 
-```c
+```pawn
 #define MOO(%0) \
         %0 * 7
 
@@ -101,13 +101,13 @@ printf("%d", MOO(5 + 6));
 
 Which converts to:
 
-```c
+```pawn
 printf("%d", MOO(5 + 6 * 7));
 ```
 
 Which, due to the order of operations, compules as (5 + (6 \* 7)), whiche is 47 and very wrong. One interesting fact about the parameters is that if you have too many, the last one is all the extra ones. So doing:
 
-```c
+```pawn
 #define PP(%0,%1) \
         printf(%0, %1)
 
@@ -130,7 +130,7 @@ As `%1` contains "hi", "hello", "hi". You may have also noticed the use of `#` t
 
 `#elseif` is like else if but for #if.
 
-```c
+```pawn
 #define MOO 10
 
 #if MOO == 9
@@ -162,7 +162,7 @@ This halts the compiler instantly and gives a custom error message. See #assert 
 
 `#if` is to the proprocessor what if is to code. You can choose exactly what to compile and what not to from here. For example consider the following code:
 
-```c
+```pawn
 #define LIMIT 10
 
 if (LIMIT < 10)
@@ -173,7 +173,7 @@ if (LIMIT < 10)
 
 That will compile as:
 
-```c
+```pawn
 if (10 < 10)
 {
     printf("Limit too low");
@@ -182,7 +182,7 @@ if (10 < 10)
 
 Which will clearly never be true and the compiler knows it - so it tells you so, giving you a "constant expression" warning. The question is, if it will never be true what's the point of including it at all? You could just remove the code but then there will be no checks if someone changes LIMIT and recompiles. This is what #if is for. Unlike normal if which gives a warning if the expression is constant, #if expressions MUST be constant. So:
 
-```c
+```pawn
 #define LIMIT 10
 
 #if LIMIT < 10
@@ -194,7 +194,7 @@ That will check that the limit is not too small when you compile and if it is wi
 
 Here's another example:
 
-```c
+```pawn
 #define LIMIT 10
 
 if (LIMIT < 10)
@@ -209,7 +209,7 @@ else
 
 Again this is a constant check, which will give a warning, but both prints will be compiled when we KNOW only one will ever run. Using #if this becomes:
 
-```c
+```pawn
 #define LIMIT 10
 
 #if LIMIT < 10
@@ -225,13 +225,13 @@ That way only the printf which is required will be compiled and the other one wi
 
 This takes all the code from a specified file and inserts it into your code at the point at which the include line is. There are two types of include: relative and system (I just made those terms up, if you have better ones please say). Relative includes use double quotes around the filename and are located relative to the current file, so:
 
-```c
+```pawn
 #include "me.pwn"
 ```
 
 would include the file "me.pwn" from the same directory as the file including that file. The other type, system, includes the file from the "include" directory that is located either in same directory as is Pawn compiler or parent directory(paths:"include","../include"):
 
-```c
+```pawn
 #include "<me>"
 ```
 
@@ -239,11 +239,11 @@ Would include the file "me.inc" (note the lack of extension, you can specify one
 
 Both these types can take directories:
 
-```c
+```pawn
 #include "folder/me.pwn"
 ```
 
-```c
+```pawn
 #include <folder/me>
 ```
 
@@ -253,7 +253,7 @@ Both of those will include a file one directory down from their respective defau
 
 This is one of the most complex directives. It has a number of options to control how your script works. An example setting would look like:
 
-```c
+```pawn
 #pragma ctrlchar '$'
 ```
 
@@ -272,7 +272,7 @@ That changes the escape character from \ to $, so a new line, instead of being "
 
 ### Deprecated
 
-```c
+```pawn
 new
     gOldVariable = 5;
 
@@ -289,7 +289,7 @@ This is similar to #include but if the file doesn't exist the compilation doesn'
 
 **myinc.inc**
 
-```c
+```pawn
 #if defined _MY_INC_INC
     #endinput
 #endif
@@ -300,7 +300,7 @@ stock MyIncFunc() {printf("Hello");}
 
 **Gamemode:**
 
-```c
+```pawn
 #tryinclude <myinc>
 
 main()
@@ -317,7 +317,7 @@ That will only call MyIncFunc if the file with it in was found and compiled. Thi
 
 Removes a previously defined macro or constant symbol.
 
-```c
+```pawn
 #define MOO 10
 printf("%d", MOO);
 #undef MOO
@@ -326,7 +326,7 @@ printf("%d", MOO);
 
 That will fail to compile as MOO doesn't exist anymore by the time the second printf is reached.
 
-```c
+```pawn
 enum {
     e_example = 300
 };
