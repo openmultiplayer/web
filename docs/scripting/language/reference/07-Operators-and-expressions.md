@@ -23,7 +23,7 @@ a semicolon is a statement.
 
 Listing: examples of expressions
 
-```c
+```pawn
 
 v++
 f(a1, a2)
