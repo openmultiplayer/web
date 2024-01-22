@@ -199,7 +199,7 @@ state gps:handshake
 
 ---
 
-```c
+```pawn
 
 switch (weekday(12,31,1999))
 {
