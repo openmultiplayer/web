@@ -21,7 +21,7 @@ preprocessor is incompatible with the C/C⁺⁺ preprocessor.
 
 The #define directive defines the preprocessor macros. Simple macros are:
 
-```c
+```pawn
 
 #define maxsprites          25
 #define CopyRightString     "(c) Copyright 2004 by me"
@@ -31,7 +31,7 @@ The #define directive defines the preprocessor macros. Simple macros are:
 In the pawn script, you can then use them as you would use constants. For
 example:
 
-```c
+```pawn
 
 #define maxsprites          25
 #define CopyRightString     "(c) Copyright 2004 by me"
@@ -45,7 +45,7 @@ main()
 
 By the way, for these simple macros there are equivalent pawn constructs:
 
-```c
+```pawn
 
 const maxsprites = 25
 
@@ -64,7 +64,7 @@ terized macros is to simulate tiny functions:
 
 Listing: the “min” macro
 
-```c
+```pawn
 
 #define min(%1,%2) ((%1) < (%2) ? (%1) : (%2))
 
@@ -77,7 +77,7 @@ If you use the above macro in a script in the following way:
 
 Listing: bad usage of the “min” macro
 
-```c
+```pawn
 
 new a = 1, b = 4
 new min = min(++a,b)
@@ -86,7 +86,7 @@ new min = min(++a,b)
 
 the preprocessor translates it to:
 
-```c
+```pawn
 
 new a = 1, b = 4
 new min = ((++a) < (b) ? (++a) : (b))
@@ -102,7 +102,7 @@ common practice to write preprocessor macros in all upper case.
 To show why enclosing macro arguments in parentheses is a good idea, consider
 the macro:
 
-```c
+```pawn
 
 #define ceil_div(%1,%2) (%1 + %2 - 1) / %2
 
@@ -112,7 +112,7 @@ This macro divides the first argument by the second argument, but rounding
 upwards to the nearest integer (the divide operator, “/”, rounds downwards).
 If you use it as follows:
 
-```c
+```pawn
 
 new a = 5
 new b = ceil_div(8, a - 2)
@@ -128,7 +128,7 @@ each parameter in parentheses solves the problem. For similar reasons, it is
 also advised to enclose the complete replacement text in parentheses. Below
 is the ceil_div macro modified accordingly:
 
-```c
+```pawn
 
 #define ceil_div(%1,%2) ( ((%1) + (%2) - 1) / (%2) )
 
@@ -140,7 +140,7 @@ pattern specifies a parameter. You can create patterns like:
 
 Listing: macro that translates a syntax for array access to a function call
 
-```c
+```pawn
 
 #define Object[%1] CallObject(%1)
 
@@ -149,7 +149,7 @@ Listing: macro that translates a syntax for array access to a function call
 When the expansion of a macro contains text that matches other macros, the
 expansion is performed at invocation time, not at definition time. Thus the code:
 
-```c
+```pawn
 
 #define a(%1)       (1+b(%1))
 #define b(%1)       (2\*(%1))
