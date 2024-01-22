@@ -1,7 +1,7 @@
 ---
 title: OnActorStreamIn
 description: This callback is called when an actor is streamed in by a player's client.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
@@ -21,7 +21,7 @@ It is always called first in filterscripts.
 
 ## Examples
 
-```c
+```pawn
 public OnActorStreamIn(actorid, forplayerid)
 {
     new string[40];
