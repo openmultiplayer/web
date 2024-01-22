@@ -13,7 +13,7 @@ The reason why variables are so important is because they are basically small un
 
 Following is the syntax for variable declaration :
 
-```c
+```pawn
 // Creating (more appropriately, 'declaring') a variable named 'myVariable
 
 new myVariable;
@@ -25,7 +25,7 @@ new myVariable;
 
 The declaration syntax can be better understood by looking at some examples :
 
-```c
+```pawn
 new var;
 new ammo;
 new score;
@@ -35,13 +35,13 @@ new topScore;
 
 Each of the above defined variable has a value by default, which is zero. There are different ways of assigning values to a variable. One method is directly assigning a value to the variable as it’s declared :
 
-```c
+```pawn
 new letters = 25;
 ```
 
 In the above example, a variable named ‘letters’ is being declared, with a value of 25. You will notice an equal sign which is a simple Assignment Operator that can be used for assigning values to variables. It evaluates the expression on its right and assigns the resultant value to the variable referenced on its left side. Other than assigning values directly at the declaration, you can also do it in later parts of the code :
 
-```c
+```pawn
 new letters;
 
 letters = 25;
@@ -51,25 +51,25 @@ letters = 25;
 
 Modifying a variable's value is possible only if the part of the code where you’re referencing the variable is within the scope of that variable. Scope of a variable depends upon the code block or position where that variable was declared. For example a variable being declared outside any block of code, usually in the beginning of the script, has a ‘Global’ scope and can be accessed from anywhere within the script:
 
-```c
+```pawn
 #include <a_samp>
 
 new g_var = 5;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     g_var = 10;
 
-    printf ("The value is %i", g_var);
+    printf("The value is %i", g_var);
 
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     g_var = 100;
 
-    printf ("The value is %i", g_var);
+    printf("The value is %i", g_var);
 
     return 1;
 }
@@ -83,10 +83,10 @@ public OnPlayerConnect (playerid)
 
 Other than ‘Global’ (scoped) variables, there are ‘local’ or ‘private’ variables that can be accessed only from inside the block of code where they were declared.
 
-```c
+```pawn
 #include <a_samp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new localVar;
 
@@ -95,7 +95,7 @@ public OnFilterScriptInit ()
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     localVar = 10; // This line will show an error upon compilation
 
@@ -107,12 +107,12 @@ If you try to compile the code above, the compiler will show an error which is r
 
 One important thing to note is that you cannot declare variables with the same names if their scopes intercede. For example if you already have a variable named ‘score’ on a global scope, you cannot create another variable named ‘score’ on the global scope as well as a local one, and this is true for other way around as well (if you already have a local variable, avoid declaring a global variable with the same name).
 
-```c
+```pawn
 #include <a_samp>
 
 new g_score;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new g_score = 5; // This line will show an error.
     return 1;
@@ -130,7 +130,7 @@ Now that you know how to declare variables, you need to know the naming rules fo
 
 #### Examples :
 
-```c
+```pawn
 new new; // Incorrect : Using a reserved word
 new _new; // Correct
 
@@ -149,7 +149,7 @@ new Internet; // Correct
 
 After that, now lets look at some examples of what types of data can be stored in variable and how :
 
-```c
+```pawn
 new letter = 'M';
 
 
@@ -172,7 +172,7 @@ new sentence = "This is a sentence";
 
 A variable is capable of holding a character, integer value, boolean (true or false) and a float value (decimal value). The comments in the above code show that storing a string in a variable results into an error (as strings can be stored in _Arrays_ only). Other than that, assigning a float value to a variable will result in a compiler warning, which can be avoided by adding ‘tags’. Without proper tags, the script will show warnings upon compilation but will be executable. Tags tell the compiler about the type of data that is intended to be stored in the variable, which in turn informs us in the form of errors or warning if we make a program-breaking mistake in the code. Example of tags :
 
-```c
+```pawn
 new decimalValue = 1.0; // Incorrect
 new bool: decimalValue = 1.0 // Incorrect
 new Float: decimalValue = 1.0; // Correct
@@ -186,13 +186,13 @@ Using correct tags is important to avoid any bugs or errors during program execu
 
 Pawn being a typeless language allows us to store different types of data in the same variable which can be useful in some cases and troublesome in others, but such usage of variables is not recommended.
 
-```c
+```pawn
 #include <a_samp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
 
-    new var ;
+    new var;
 
     var = 'a';
     printf ("%c", var);
