@@ -12,7 +12,7 @@ string; printing “Hello world” is a classic example. In pawn, the program wo
 
 Listing: hello.p
 
-```c
+```pawn
 
 main()
     printf  "Hello  world\n"
@@ -124,7 +124,7 @@ values using an algorithm invented by Euclides.
 
 Listing: gcd.p
 
-```c
+```pawn
 
 /*  the  greatest  common  divisor  of  two  values,  using  Euclides’
 algorithm  */
@@ -244,7 +244,7 @@ Symbolic constants look like variables, but they cannot be changed.
 
 Listing: sieve.p
 
-```c
+```pawn
 
 /*  Print  all  primes  below  100,  using  the  "Sieve  of  Eratosthenes"  */
 
@@ -323,7 +323,7 @@ and the sequence is 1, 1, 2, 3, 5, 8, 13, 21,. . .
 
 Listing: fib.p
 
-```c
+```pawn
 
 /*  Calculation  of  Fibonacci  numbers  by  iteration  */
 
@@ -430,7 +430,7 @@ negative year values for BC years and positive (non-zero) values for AD years.
 
 Listing: julian.p
 
-```c
+```pawn
 
 /*  calculate  Julian  Day  number  from  a  date,  and  vice  versa  */
 
@@ -594,7 +594,7 @@ not support rational numbers at all.
 
 Listing: c2f.p
 
-```c
+```pawn
 
 main()
 {
@@ -670,7 +670,7 @@ operation: applying it twice on the same text reveals the original.
 
 Listing: rot13.p
 
-```c
+```pawn
 
 /*  Simple  encryption,  using  ROT13  */
 
@@ -748,7 +748,7 @@ that shows a few new features of the pawn language.
 
 Listing: wcount.p
 
-```c
+```pawn
 
 /*  word  count:  count  words  on  a  string  that  the  user  types  */
 
@@ -848,7 +848,7 @@ previous pawn programs, and it also displays a few other features, such as globa
 variables and named parameters.
 Listing: queue.p
 
-```c
+```pawn
 
 /*  Priority  queue  (for  simple  text  strings)  */
 
@@ -1095,7 +1095,7 @@ steps. The algorithm is completely in the findtargets function.
 
 Listing: set.p
 
-```c
+```pawn
 
 /*  Set  operations,  using  bit  arithmetic  */
 
@@ -1173,7 +1173,7 @@ of elements in the set. A straightforward function that does this is below:
 
 Listing: simple bitcount function
 
-```c
+```pawn
 
 bitcount(set)
 {
@@ -1193,7 +1193,7 @@ That is, the following function iterates only once if the input value has only o
 
 Listing: improved bitcount function
 
-```c
+```pawn
 
 bitcount(set)
 {
@@ -1291,7 +1291,7 @@ The main program for a Reverse Polish Notation calculator is below:
 
 Listing: rpn.p
 
-```c
+```pawn
 
 /*  a  simple  RPN  calculator  */
 #include  strtok
@@ -1323,7 +1323,7 @@ file rpnparse.inc, reproduced below:
 
 Listing: rpnparse.inc
 
-````c
+````pawn
 
 /*  main  rpn  parser  and  lexical  analysis,  part  of  the  RPN  calculator  */
 #include  <rational>
@@ -1461,7 +1461,7 @@ array size of word.
 
 Listing: strtok.inc
 
-```c
+```pawn
 
 /* extract words from a string (words must be separated by white space) */
 #include <string>
@@ -1515,7 +1515,7 @@ and resetting the stack, there is a third function that clears the stack.
 
 Listing: stack.inc
 
-```c
+```pawn
 
 /* stack functions, part of the RPN calculator */
 #include <rational>
@@ -1657,7 +1657,7 @@ before the advent of the mouse.
 
 Listing: turtle.p
 
-```c
+```pawn
 
 @keypressed(key)
 {
@@ -1742,7 +1742,7 @@ allow for a “broadcast” mode so that more than two people can chat with each
 
 Listing: chat.p
 
-```c
+```pawn
 
 #include <datagram>
 
@@ -1862,7 +1862,7 @@ in a different colour.
 
 Listing: comment.p
 
-```c
+```pawn
 
 /* parse C comments interactively, using events and a state machine */
 
@@ -2034,7 +2034,7 @@ re-entry of the state.
 
 Listing: traffic.p
 
-```c
+```pawn
 
 /* traffic light synchronizer, using states in an event-driven model */
 #include <time>
@@ -2154,7 +2154,7 @@ variable button_memo in the next listing illustrates the concept.
 
 Listing: traffic2.p
 
-```c
+```pawn
 
 /* a more realistic traffic light synchronizer, including an
  * "override" for emergency vehicles
@@ -2453,7 +2453,7 @@ XSLT transformation file.
 
 Listing: weekday.p
 
-```c
+```pawn
 
 /**
 
