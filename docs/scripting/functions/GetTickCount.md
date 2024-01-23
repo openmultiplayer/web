@@ -6,7 +6,7 @@ tags: []
 
 ## Description
 
-Returns a value which increases every millisecond.  Th absolute value returned is undefined and varies between systems, it should only be used to compare two points in time.
+Returns a value which increases every millisecond. The absolute value returned is undefined and varies between systems, it should only be used to compare two points in time.
 
 ## Examples
 
@@ -23,6 +23,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             // Enough time has passed.
             SendClientMessage(playerid, COLOUR_ERROR, "Called!");
+            gLastCommandUse[playerid] = GetTickCount();
         }
         else
         {

@@ -11,7 +11,7 @@ This function allows to set players special action.
 | Name     | Description                                                            |
 | -------- | ---------------------------------------------------------------------- |
 | playerid | The player that should perform the action                              |
-| actionid | The [action](../resources/specialactions) that should be performed. |
+| actionid | The [action](../resources/specialactions) that should be performed.    |
 
 ## Returns
 
@@ -22,9 +22,14 @@ This function allows to set players special action.
 ## Examples
 
 ```c
-if (strcmp(cmd, "/handsup", true) == 0)
+if (strcmp(cmdtext, "/handsup", true) == 0)
 {
     SetPlayerSpecialAction(playerid, SPECIAL_ACTION_HANDSUP);
+    return 1;
+}
+if (strcmp(cmdtext, "/drink", true) == 0)
+{
+    SetPlayerSpecialAction(playerid, SPECIAL_ACTION_DRINK_WINE);
     return 1;
 }
 ```
@@ -33,7 +38,7 @@ if (strcmp(cmd, "/handsup", true) == 0)
 
 :::tip
 
-Removing jetpacks from players by setting their special action to 0 causes the sound to stay until death.
+Removing jetpacks from players by setting their special action to `SPECIAL_ACTION_NONE` (0) causes the sound to stay until death. There is a solution for this, Just apply a random animation to the player and their jetpack will be removed.
 
 :::
 

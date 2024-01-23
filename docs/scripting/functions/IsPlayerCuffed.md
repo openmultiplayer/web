@@ -1,6 +1,6 @@
 ---
 title: IsPlayerCuffed
-description: Check if the player special action is cuffed.
+description: Checks if the player special action is cuffed.
 tags: ["player"]
 ---
 
@@ -8,11 +8,11 @@ tags: ["player"]
 
 ## Description
 
-Check if the player special action is cuffed.
+Checks if the player special action is cuffed.
 
 | Name     | Description                                                 |
 | -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to check.       |
+| playerid | The ID of the player to check.                              |
 
 ## Returns
 
@@ -21,6 +21,8 @@ Returns true if the player is cuffed, otherwise false.
 ## Examples
 
 ```c
+SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CUFFED);
+
 if (IsPlayerCuffed(playerid))
 {
     // do something
