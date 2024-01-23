@@ -11,7 +11,7 @@ Sve što vam treba je samp-server ili omp-server i ruter. Ako nemate ruter, onda
 
 ## Početak
 
-Ok, evo početka, počnite pronalaženjem svog **kapija**. Pretpostavimo da imate vista. Kliknite na start, kliknite na polje za pretragu i napišite **cmd**. Tada se pojavljuje crna kutija. Unesite sljedeće; **ipconfig**. Sačekajte da se tekst učita, a zatim ga pogledajte. Nastavite tražiti dok ne pronađete _**gateway**_, i ne zatvarajte crnu kutiju!
+Ok, evo početka, počnite pronalaženjem svog **gateway-a**. Pretpostavimo da imate vista. Kliknite na start, kliknite na polje za pretragu i napišite **cmd**. Tada se pojavljuje crna kutija. Unesite sljedeće; **ipconfig**. Sačekajte da se tekst učita, a zatim ga pogledajte. Nastavite tražiti dok ne pronađete _**gateway**_, i ne zatvarajte crnu kutiju!
 Kada ga pronađete, otvorite svoj omiljeni web pretraživač. Kada se učita, idite na adresnu traku i unesite vrijednost _**gateway**_ (primjer: 192.168.0.1/192.168.1.1). Pritisnite enter.
 
 ## Konfiguracija Rutera
