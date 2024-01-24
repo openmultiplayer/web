@@ -1,7 +1,7 @@
 ---
 title: ApplyActorAnimation
 description: Apply an animation to an actor.
-tags: ["actor"]
+tags: ["actor", "animation"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
