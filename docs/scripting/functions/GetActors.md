@@ -21,7 +21,7 @@ The function returns the number of actors stored in the array.
 
 ## Examples
 
-```c
+```pawn
 new actors[MAX_ACTORS];
 
 GetActors(actors, sizeof(actors));
