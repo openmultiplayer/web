@@ -15,6 +15,10 @@ Gets an array variable of the IDs of the created vehicles on the server.
 | vehicles[]    | An array into which to store the vehicle IDs, passed by reference. |
 | size          | The size of the array.                                             |
 
+## Returns
+
+The function returns the number of vehicles stored in the array.
+
 ## Examples
 
 ```c
