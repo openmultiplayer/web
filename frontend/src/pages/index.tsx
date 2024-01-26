@@ -163,6 +163,7 @@ const Home = () => {
       src: "/images/assets/x.svg",
       href: "https://x.com/openmultiplayer",
       size: 17,
+      background: false,
     },
     {
       alt: "youtube icon",
