@@ -8,13 +8,13 @@ tags: ["timer"]
 
 Sets a timer to call a function after the specified interval. This variant ('Ex') can pass parameters (such as a player ID) to the function.
 
-| Name           | Description                                                                                                                                |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| funcname[]     | The name of a public function to call when the timer expires.                                                                              |
-| interval       | Interval in milliseconds (1 second = 1000 MS).                                                                                             |
-| repeating      | Boolean (true/false (or 1/0)) that states whether the timer should be called repeatedly (can only be stopped with KillTimer) or only once. |
-| format[]       | Special format indicating the types of values the timer will pass.                                                                         |
-| {Float,\_}:... | Indefinite number of arguments to pass (must follow format specified in previous parameter).                                               |
+| Name                 | Description                                                                                                                                |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| const functionName[] | The name of a public function to call when the timer expires.                                                                              |
+| interval             | Interval in milliseconds (1 second = 1000 MS).                                                                                             |
+| bool:repeating       | Boolean (true/false (or 1/0)) that states whether the timer should be called repeatedly (can only be stopped with KillTimer) or only once. |
+| const specifiers[]   | Special format indicating the types of values the timer will pass.                                                                         |
+| OPEN_MP_TAGS:...     | Indefinite number of arguments to pass (must follow format specified in previous parameter).                                               |
 
 ## Returns
 
@@ -29,13 +29,18 @@ SetTimerEx("EndAntiSpawnKill", 5000, false, "i", playerid);
 // false - Not repeating. Will only be called once.
 // "i" - I stands for integer (whole number). We are passing an integer (a player ID) to the function.
 // playerid - The value to pass. This is the integer specified in the previous parameter.
+```
+
+<br />
+
+```c
 // The event callback (OnPlayerSpawn) - we will start a timer here
 public OnPlayerSpawn(playerid)
 {
     // Anti-Spawnkill (5 seconds)
 
     // Set their health very high so they can't be killed
-    SetPlayerHealth(playerid, 999999);
+    SetPlayerHealth(playerid, 999999.0);
 
     // Notify them
     SendClientMessage(playerid, -1, "You are protected against spawn-killing for 5 seconds.");
@@ -50,7 +55,7 @@ forward EndAntiSpawnKill(playerid);
 public EndAntiSpawnKill(playerid)
 {
     // 5 seconds has passed, so let's set their health back to 100
-    SetPlayerHealth(playerid, 100);
+    SetPlayerHealth(playerid, 100.0);
 
     // Let's notify them also
     SendClientMessage(playerid, -1, "You are no longer protected against spawn-killing.");
@@ -60,15 +65,27 @@ public EndAntiSpawnKill(playerid)
 
 ## Notes
 
+:::warning
+
+Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes available [here](https://sampforum.blast.hk/showthread.php?tid=289675) and [here](https://sampforum.blast.hk/showthread.php?tid=650736).
+
+But it is fixed in open.mp
+
+:::
+
 :::tip
 
 Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake.  `-1` is commonly mistaken to be the invalid ID - it isn't.
 
-Timer intervals are not accurate (roughly 25% off). There are fixes available.
-
 The function to be called must be public. That means it has to be forwarded.
 
 :::
+
+## Definitions
+
+| Definition    | Value |
+|---------------|-------|
+| INVALID_TIMER | 0     |
 
 ## Related Functions
 
