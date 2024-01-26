@@ -138,7 +138,7 @@ const Home = () => {
       alt: "discord icon",
       src: "/images/assets/discord-icon.svg",
       href: "https://discord.com/invite/samp",
-      size: 36,
+      size: 45,
     },
     {
       alt: "facebook icon",
@@ -162,7 +162,7 @@ const Home = () => {
       alt: "x icon",
       src: "/images/assets/x.svg",
       href: "https://x.com/openmultiplayer",
-      size: 17,
+      size: 29,
       background: false,
     },
     {
