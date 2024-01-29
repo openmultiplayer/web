@@ -88,7 +88,7 @@ const Home = () => {
     {
       heading: "Fully backwards compatible with existing scripts and clients",
       bodyText:
-        "Got an old AMX lying about?  Load it up on the open.mp server straight out the box and join you friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
+        "Got an old AMX lying about?  Load it up on the open.mp server straight out of the box and join your friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
       buttonLink: "/docs",
       buttonText: "Getting Started",
       img: "/images/assets/f1.png",
