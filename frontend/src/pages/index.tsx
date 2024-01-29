@@ -236,7 +236,7 @@ const Home = () => {
                   <DownloadButton
                     title={"Download open.mp launcher"}
                     tooltip="Download open.mp launcher"
-                    link={"https://github.com/openmultiplayer/launcher/releases"}
+                    link={"https://github.com/openmultiplayer/launcher/releases/latest"}
                   />
                   <DownloadButton
                     title={"Download SA-MP client"}
