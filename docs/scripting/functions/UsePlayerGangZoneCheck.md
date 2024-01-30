@@ -10,18 +10,17 @@ tags: ["player", "gangzone", "playergangzone"]
 
 Enables the callback when a player enters/leaves this zone.
 
-| Name        | Description                                                                                                      |
-| ----------- | ---------------------------------------------------------------------------------------------------------------- |
-| playerid    | The ID of the player for whom you want to enable callback triggering when the player enters/leaves this zone.    |
-| zoneid      | The ID of the zone to enable area detection for.                                                                 |
-| enable      | Should entry detection be started or stopped?                                                                    |
-
+| Name        | Description                                                                                                   |
+|-------------|---------------------------------------------------------------------------------------------------------------|
+| playerid    | The ID of the player for whom you want to enable callback triggering when the player enters/leaves this zone. |
+| zoneid      | The ID of the player-zone to enable area detection for.                                                       |
+| bool:enable | Should entry detection be started or stopped?                                                                 |
 
 ## Returns
 
 1: The function executed successfully.
 
-0: The function failed to execute.  The gangzone specified does not exist.
+0: The function failed to execute. The gangzone specified does not exist.
 
 ## Examples
 
@@ -41,9 +40,9 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerEnterPlayerGangZone(playerid, zoneid)
 {
-    if(gGangZoneID[playerid] == zoneid)
+    if (zoneid == gGangZoneID[playerid])
     {
-        new string[128];
+        new string[64];
         format(string, sizeof(string), "You are entering player gangzone %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
@@ -52,9 +51,9 @@ public OnPlayerEnterPlayerGangZone(playerid, zoneid)
 
 public OnPlayerLeavePlayerGangZone(playerid, zoneid)
 {
-    if(gGangZoneID[playerid] == zoneid)
+    if (zoneid == gGangZoneID[playerid])
     {
-        new string[128];
+        new string[64];
         format(string, sizeof(string), "You are leaving player gangzone %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
