@@ -10,10 +10,10 @@ tags: ["player", "gangzone"]
 
 Enables the callback when a player enters/leaves this zone.
 
-| Name        | Description                                        |
-| ----------- | -------------------------------------------------- |
-| zoneid      | The ID of the zone to enable area detection for.   |
-| enable      | Should entry detection be started or stopped?      |
+| Name        | Description                                      |
+|-------------|--------------------------------------------------|
+| zoneid      | The ID of the zone to enable area detection for. |
+| bool:enable | Should entry detection be started or stopped?    |
 
 ## Returns
 
@@ -31,14 +31,14 @@ public OnGameModeInit()
     gGangZoneID = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 
     // Enabled the callback when a player enters/leaves this zone
-    UsePlayerGangZoneCheck(playerid, gGangZoneID, true);
+    UseGangZoneCheck(gGangZoneID, true);
 }
 
 public OnPlayerEnterGangZone(playerid, zoneid)
 {
-    if(gGangZoneID == zoneid)
+    if (zoneid == gGangZoneID)
     {
-        new string[128];
+        new string[64];
         format(string, sizeof(string), "You are entering gangzone %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
@@ -47,9 +47,9 @@ public OnPlayerEnterGangZone(playerid, zoneid)
 
 public OnPlayerLeaveGangZone(playerid, zoneid)
 {
-    if(gGangZoneID == zoneid)
+    if (zoneid == gGangZoneID)
     {
-        new string[128];
+        new string[64];
         format(string, sizeof(string), "You are leaving gangzone %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
