@@ -313,20 +313,20 @@ const Home = () => {
               <Heading>Ready to get started?</Heading>
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
-                  <Box align="center">
-                    <DownloadButton
-                      title={"Download open.mp (server)"}
-                      tooltip="open.mp is released!"
-                      link={
-                        "https://github.com/openmultiplayer/open.mp/releases"
-                      }
-                    />
+                  <DownloadButton
+                    title={"Download open.mp (server)"}
+                    tooltip="open.mp is released!"
+                    link={
+                      "https://github.com/openmultiplayer/open.mp/releases"
+                    }
+                  />
                   <DownloadButton
                     title={"Download open.mp launcher"}
                     tooltip="Download open.mp launcher"
-                    link={"https://github.com/openmultiplayer/launcher/releases/latest"}
+                    link={
+                      "https://github.com/openmultiplayer/launcher/releases/latest"
+                    }
                   />
-                  </Box>
                   <DocumentationButton />
                 </Flex>
               </HStack>
