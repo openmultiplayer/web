@@ -238,11 +238,6 @@ const Home = () => {
                     tooltip="Download open.mp launcher"
                     link={"https://github.com/openmultiplayer/launcher/releases/latest"}
                   />
-                  <DownloadButton
-                    title={"Download SA-MP client"}
-                    tooltip="Download SA-MP client"
-                    link={"https://sa-mp.mp/downloads/"}
-                  />
                   <DocumentationButton />
                 </Flex>
               </HStack>
