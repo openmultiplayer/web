@@ -1,9 +1,10 @@
+---
+title: OnPlayerDisconnect
+description: وقتی بازیکن از سرور خارج می شود، این کالبک فراخوانی می شود.
+tags: ["player"]
+---
+
 <div dir="rtl" style={{ textAlign: "right" }}>
----
-موضوع: OnPlayerDisconnect
-توضیحات: وقتی بازیکن از سرور خارج می شود، این کالبک فراخوانی می شود.
-تگ ها: ["player"]
----
 
 ## توضیحات
 
@@ -41,6 +42,8 @@
 
 ## مثال ها
 
+</div>
+
 ```c
 public OnPlayerDisconnect(playerid, reason)
 {
@@ -66,6 +69,8 @@ public OnPlayerDisconnect(playerid, reason)
 }
 ```
 
+<div dir="rtl" style={{ textAlign: "right" }}>
+
 ## نکته ها
 
 :::tip
@@ -81,4 +86,5 @@ public OnPlayerDisconnect(playerid, reason)
 - [OnPlayerConnect](OnPlayerConnect): این کال‌بک زمانی فراخوانی می شود که بازیکن به سرور متصل شود.
 - [OnIncomingConnection](OnIncomingConnection): این کال‌بک زمانی فراخوانی می شود که یک بازیکن در حال تلاش برای اتصال به سرور است.
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): زمانی که بازیکن دانلود مدل های سفارشی را تمام می کند، این کال‌بک فراخوانی می شود.
+
 </div>
