@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
      // Unfreezes a player when they types /unfreezeme
      if (strcmp(cmdtext, "/unfreezeme", true) == 0)
      {
-          TogglePlayerControllable(playerid,1);
+          TogglePlayerControllable(playerid, true);
           return 1;
      }
      return 0;
