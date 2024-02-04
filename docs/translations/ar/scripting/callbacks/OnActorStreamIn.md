@@ -8,7 +8,6 @@ tags: []
 
 <div dir="rtl" style={{ textAlign: "right" }}>
 
-
 ## الوصف
 
 يتم استدعاء هذا الاستدعاء أو الكال باك عند تدفق الممثل (أكتور) بواسطة كلاينت اللاعب
@@ -23,6 +22,7 @@ tags: []
 دائمًا يتم استدعاؤه أولاً في الفلترسكربتات.
 
 ## أمثلة
+
 </div>
 
 ```c
@@ -34,6 +34,7 @@ public OnActorStreamIn(actorid, forplayerid)
     return 1;
 }
 ```
+
 <div dir="rtl" style={{ textAlign: "right" }}>
 
 ## Notes
@@ -45,4 +46,5 @@ public OnActorStreamIn(actorid, forplayerid)
 قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى.
 
 - [OnActorStreamOut](OnActorStreamOut): يتم استدعاؤه عندما يتم تدفق ممثل (أكتور) خارج كلاينت اللاعب.
+
 </div>
