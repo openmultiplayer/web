@@ -24,7 +24,7 @@ Toggle the in-game clock (top-right corner) for a specific player. When this is 
 ```c
 public OnPlayerConnect(playerid)
 {
-    TogglePlayerClock(playerid, 1); // Show the clock
+    TogglePlayerClock(playerid, true); // Show the clock
     return 1;
 }
 ```
