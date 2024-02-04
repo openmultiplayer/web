@@ -1,5 +1,3 @@
-<div dir="rtl" style={{ textAlign: "right" }}>
-
 ---
 title: OnActorStreamIn
 description: This callback is called when an actor is streamed in by a player's client.
@@ -8,20 +6,24 @@ tags: []
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
 
-## Description
+<div dir="rtl" style={{ textAlign: "right" }}>
 
-This callback is called when an actor is streamed in by a player's client.
 
-| Name        | Description                                                   |
-| ----------- | ------------------------------------------------------------- |
-| actorid     | The ID of the actor that has been streamed in for the player. |
-| forplayerid | The ID of the player that streamed the actor in.              |
+## الوصف
+
+يتم استدعاء هذا الاستدعاء أو الكال باك عند تدفق الممثل (أكتور) بواسطة كلاينت اللاعب
+
+| Name        | Description                                                     |
+| ----------- | -------------------------------------------------------------   |
+| actorid     | ايدي الممثل الذي تم تدفقه للاعب.                                |
+| forplayerid | هوية اللاعب الذي قام بتدفق الممثل (أكتور)                              |
 
 ## Returns
 
-It is always called first in filterscripts.
+دائمًا يتم استدعاؤه أولاً في الفلترسكربتات.
 
-## Examples
+## أمثلة
+</div>
 
 ```c
 public OnActorStreamIn(actorid, forplayerid)
@@ -32,16 +34,15 @@ public OnActorStreamIn(actorid, forplayerid)
     return 1;
 }
 ```
+<div dir="rtl" style={{ textAlign: "right" }}>
 
 ## Notes
 
-<TipNPCCallbacks />
+<TipNPCCallbacks/>
 
-## Related Callbacks
+## الاستدعاءات او كالباكات ذات الصلة
 
-The following callbacks might be useful, as they're related to this callback in one way or another. 
+قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى.
 
-- [OnActorStreamOut](OnActorStreamOut): This callback is called when an actor is streamed out by a player's client.
-
-
+- [OnActorStreamOut](OnActorStreamOut): يتم استدعاؤه عندما يتم تدفق ممثل (أكتور) خارج كلاينت اللاعب.
 </div>
