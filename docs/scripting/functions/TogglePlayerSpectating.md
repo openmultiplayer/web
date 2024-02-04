@@ -24,7 +24,7 @@ Toggle whether a player is in spectator mode or not. While in spectator mode a p
 ```c
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    TogglePlayerSpectating(playerid, 1);
+    TogglePlayerSpectating(playerid, true);
     PlayerSpectatePlayer(playerid, killerid);
     return 1;
 }

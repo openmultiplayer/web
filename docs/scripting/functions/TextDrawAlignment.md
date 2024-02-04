@@ -8,16 +8,17 @@ tags: ["textdraw"]
 
 Set the alignment of text in a text draw.
 
-| Name      | Description                                     |
-| --------- | ----------------------------------------------- |
-| Text:text | The ID of the textdraw to set the alignment of. |
-| alignment | 1-left 2-centered 3-right.                      |
+| Parameter | Description                                               |
+| --------- | --------------------------------------------------------- |
+| Text      | The ID of the textdraw to set the alignment of.           |
+| Alignment | `TEXT_DRAW_ALIGN_LEFT` / `TEXT_DRAW_ALIGN_CENTER` / `TEXT_DRAW_ALIGN_RIGHT` |
+
 
 ## Returns
 
 Note
 
-For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at TextDrawTextSize, also position coordinate become position of center of textdraw and not left/top edges.
+For alignment TEXT_DRAW_ALIGN_CENTER (center) the x and y values of TextSize need to be swapped, see notes at TextDrawTextSize, also position coordinate become position of center of textdraw and not left/top edges.
 
 ## Examples
 
@@ -27,7 +28,7 @@ new Text: gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawAlignment(gMyTextdraw, 2); // Align the textdraw text in the center
+    TextDrawAlignment(gMyTextdraw, TEXT_DRAW_ALIGN_CENTER); // Align the textdraw text in the center
     return 1;
 }
 ```
