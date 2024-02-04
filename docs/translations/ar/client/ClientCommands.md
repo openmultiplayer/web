@@ -4,6 +4,7 @@ description: "قائمة بجميع أوامر العميل."
 ---
 
 <div dir="rtl" style={{ textAlign: "right" }}>
+
 ## الأوامر
 
 | الأمر                  | الوصف                                                                                                                                                                                                                                                                                                                                                                            |
