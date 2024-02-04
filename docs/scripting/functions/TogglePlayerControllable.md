@@ -41,3 +41,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 
 ## Related Functions
+
+- [IsPlayerControllable](IsPlayerControllable): Check if the player is controllable.

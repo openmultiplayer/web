@@ -1,5 +1,5 @@
 ---
-title: Common Issues
+title: Common Server Issues
 ---
 
 ## Server instantly crashes when started
@@ -62,7 +62,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 Happens when 'out of order messages' reuses messageholelimit setting.
 
-For more information about this, refer to [this](https://open.mp/docs/server/ControllingServer#RCON_Commands)
+For more information about this, refer to [this](ControllingServer#RCON_Commands)
 
 ## Players constantly getting "Unacceptable NickName" error but it is valid
 

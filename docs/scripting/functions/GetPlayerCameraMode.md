@@ -41,3 +41,7 @@ public OnPlayerText(playerid, text[])
 - [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
 - [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.
 - [SetCameraBehindPlayer](SetCameraBehindPlayer): Set a player's camera behind them.
+
+## Related Resources
+
+- [Camera Modes](../resources/cameramodes)

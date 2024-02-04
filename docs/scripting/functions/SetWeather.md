@@ -36,5 +36,10 @@ If TogglePlayerClock is enabled, weather will slowly change over time, instead o
 
 ## Related Functions
 
+- [GetWeather](GetWeather): Get the current world weather.
 - [SetPlayerWeather](SetPlayerWeather): Set a player's weather.
 - [SetGravity](SetGravity): Set the global gravity.
+
+## Related Resources
+
+- [Weather IDs](../resources/weatherid)

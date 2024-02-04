@@ -36,8 +36,16 @@ This function defines the clickable area for use with PlayerTextDrawSetSelectabl
 ## Examples
 
 ```c
-MyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Example TextDraw");
-PlayerTextDrawTextSize(playerid, MyTextDraw[playerid], 2.0, 3.6);
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
+    PlayerTextDrawTextSize(playerid, welcomeText[playerid], 2.0, 3.6);
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
+
+    return 1;
+}
 ```
 
 ## Notes
@@ -54,6 +62,7 @@ Using font type 4 (sprite) and 5 (model preview) converts X and Y of this functi
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawGetTextSize](PlayerTextDrawGetTextSize): Gets the X axis and Y axis of the player-textdraw text size.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.

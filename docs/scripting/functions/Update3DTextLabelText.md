@@ -10,11 +10,12 @@ tags: ["3dtextlabel"]
 
 Updates a 3D Text Label text and color.
 
-| Name      | Description                                                   |
-| --------- | ------------------------------------------------------------- |
-| Text3D:id | The 3D Text Label you want to update.                         |
-| color     | The color the 3D Text Label should have from now on.          |
-| text[]    | The new text which the 3D Text Label should have from now on. |
+| Name             | Description                                                   |
+|------------------|---------------------------------------------------------------|
+| Text3D:id        | The 3D Text Label you want to update.                         |
+| color            | The color the 3D Text Label should have from now on.          |
+| text[]           | The new text which the 3D Text Label should have from now on. |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                    |
 
 ## Returns
 
@@ -44,6 +45,8 @@ If text[] is empty, the server/clients next to the text might crash!
 
 - [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
 - [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
+- [Get3DTextLabelText](Get3DTextLabelText): Gets the 3D text label text.
+- [Get3DTextLabelColour](Get3DTextLabelColour): Gets the 3D text label colour.
 - [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
 - [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.

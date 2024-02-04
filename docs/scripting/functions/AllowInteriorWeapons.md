@@ -37,6 +37,7 @@ This function does not work in the current SA:MP version!
 
 ## Related Functions
 
+- [AreInteriorWeaponsAllowed](AreInteriorWeaponsAllowed): Can weapons be used in interiors?
 - [SetPlayerInterior](SetPlayerInterior): Set a player's interior.
 - [GetPlayerInterior](GetPlayerInterior): Get the current interior of a player.
 - [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Called when a player changes interior.

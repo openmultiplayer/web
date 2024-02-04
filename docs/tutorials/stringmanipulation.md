@@ -1673,24 +1673,24 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 
 #### Similar tutorials
 
-- [String formatting](http://web-old.archive.org/web/20190419210950/https://forum.sa-mp.com/showthread.php?t=265433) by [krogsgaard20](http://web-old.archive.org/web/20190421052543/https://forum.sa-mp.com/member.php?u=126724)
-- [Understanding Strings](http://web-old.archive.org/web/20190420182625/https://forum.sa-mp.com/showthread.php?t=284112) by [\[HiC\]TheKiller](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=23565)
-- [How to use strcmp](http://web-old.archive.org/web/20190419172015/https://forum.sa-mp.com/showthread.php?t=199796) by [Ash.](http://web-old.archive.org/web/20190419205839/https://forum.sa-mp.com/member.php?u=78597)
-- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](http://web-old.archive.org/web/20190419102936/https://forum.sa-mp.com/showthread.php?t=318212) by [iPLEAOMAX](http://web-old.archive.org/web/20190419112304/https://forum.sa-mp.com/member.php?u=122705)
-- [Tips and Tricks](http://web-old.archive.org/web/20190419112018/https://forum.sa-mp.com/showthread.php?t=216730) by [Slice](https://github.com/oscar-broman)
-- [Code optimization](http://web-old.archive.org/web/20190419205837/https://forum.sa-mp.com/showthread.php?t=571550) by [Misiur](http://web-old.archive.org/web/20190419111434/https://forum.sa-mp.com/member.php?u=55934)
-- [Packed strings](http://web-old.archive.org/web/20190419172431/https://forum.sa-mp.com/showthread.php?t=480529) by [Emmet\_](https://github.com/emmet-jones)
+- [String formatting](https://sampforum.blast.hk/showthread.php?tid=265433) by [krogsgaard20](https://sampforum.blast.hk/member.php?action=profile&uid=126724)
+- [Understanding Strings](https://sampforum.blast.hk/showthread.php?tid=284112) by [\[HiC\]TheKiller](https://sampforum.blast.hk/member.php?action=profile&uid=23565)
+- [How to use strcmp](https://sampforum.blast.hk/showthread.php?tid=199796) by [Ash.](https://sampforum.blast.hk/member.php?action=profile&uid=78597)
+- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](https://sampforum.blast.hk/showthread.php?tid=318212) by [iPLEAOMAX](https://sampforum.blast.hk/member.php?action=profile&uid=122705)
+- [Tips and Tricks](https://sampforum.blast.hk/showthread.php?tid=216730) by [Slice](https://github.com/oscar-broman)
+- [Code optimization](https://sampforum.blast.hk/showthread.php?tid=571550) by [Misiur](https://sampforum.blast.hk/member.php?action=profile&uid=55934)
+- [Packed strings](https://sampforum.blast.hk/showthread.php?tid=480529) by [Emmet\_](https://github.com/emmet-jones)
 - [IRC string formatting](https://github.com/myano/jenni/wiki/IRC-String-Formatting) by [myano](https://github.com/myano)
 - [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) by [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
 - [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
-- [An in-depth look at binary and binary operators](http://web-old.archive.org/web/20190419095051/https://forum.sa-mp.com/showthread.php?t=177523) by [Kyosaur](http://web-old.archive.org/web/20190419205838/https://forum.sa-mp.com/member.php?u=23990)
+- [An in-depth look at binary and binary operators](https://sampforum.blast.hk/showthread.php?tid=177523) by [Kyosaur](https://sampforum.blast.hk/member.php?action=profile&uid=23990)
 
 #### Related includes/plugins/contributers
 
-- [Westie](http://web-old.archive.org/web/20190419205841/https://forum.sa-mp.com/member.php?u=56481)'s [strlib](http://web-old.archive.org/web/20200923234356/https://forum.sa-mp.com/showthread.php?t=85697)
+- [Westie](https://sampforum.blast.hk/member.php?action=profile&uid=56481)'s [strlib](https://sampforum.blast.hk/showthread.php?tid=85697)
 - [Slice](https://github.com/oscar-broman)'s [strlib](https://github.com/oscar-broman/strlib)
 - [Slice](https://github.com/oscar-broman)'s [formatex](https://github.com/Southclaws/formatex)
-- [corne](http://web-old.archive.org/web/20190419205840/https://forum.sa-mp.com/member.php?u=98345)'s [y_stringhash](http://web-old.archive.org/web/20190419205838/https://forum.sa-mp.com/showthread.php?t=571305)
+- [corne](https://sampforum.blast.hk/member.php?action=profile&uid=98345)'s [y_stringhash](https://sampforum.blast.hk/showthread.php?tid=571305)
 - [Y-Less](https://github.com/Y-Less)'s [sscanf](https://github.com/maddinat0r/sscanf)
 
 #### References

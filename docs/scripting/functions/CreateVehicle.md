@@ -10,7 +10,7 @@ Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at an
 
 | Name                                     | Description                                                                                                                                      |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| vehicletype                              | The model for the vehicle.                                                                                                                       |
+| [vehicletype](../resources/vehicleid)                              | The model for the vehicle.                                                                                                                       |
 | Float:X                                  | The X coordinate for the vehicle.                                                                                                                |
 | Float:Y                                  | The Y coordinate for the vehicle.                                                                                                                |
 | Float:Z                                  | The Z coordinate for the vehicle.                                                                                                                |
@@ -53,5 +53,19 @@ Trains can only be added with AddStaticVehicle and AddStaticVehicleEx.
 - [AddStaticVehicle](AddStaticVehicle): Add a static vehicle.
 - [AddStaticVehicleEx](AddStaticVehicleEx): Add a static vehicle with custom respawn time.
 - [GetVehicleParamsSirenState](GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.
+- [SetVehicleSpawnInfo](SetVehicleSpawnInfo): Adjusts vehicle model, spawn location, colours, respawn delay and interior.
+- [GetVehicleSpawnInfo](GetVehicleSpawnInfo): Gets the vehicle spawn location and colours.
+- [ChangeVehicleColours](ChangeVehicleColours): Change a vehicle's primary and secondary colors.
+- [GetVehicleColours](GetVehicleColours): Gets the vehicle colours.
+- [SetVehicleRespawnDelay](SetVehicleRespawnDelay): Set the respawn delay of a vehicle.
+- [GetVehicleRespawnDelay](GetVehicleRespawnDelay): Get the respawn delay of a vehicle.
+
+## Related Callbacks
+
 - [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Called when a vehicle respawns.
 - [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Called when a vehicle's siren is toggled on/off.
+
+## Related Resources
+
+- [Vehicle Models](../resources/vehicleid): Comprehensive list of all vehicle models available in game.
+- [Vehicle Colour IDs](../resources/vehiclecolorid): List of all vehicle colour IDs.

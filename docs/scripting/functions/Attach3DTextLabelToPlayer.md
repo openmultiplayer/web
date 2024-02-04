@@ -39,6 +39,7 @@ public OnPlayerConnect(playerid)
 
 - [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
 - [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
+- [Get3DTextLabelAttachedData](Get3DTextLabelAttachedData): Gets the 3D text label attached data.
 - [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
 - [Update3DTextLabelText](Update3DTextLabelText): Change the text of a 3D text label.
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.

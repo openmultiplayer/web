@@ -23,14 +23,23 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-gMyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0,"Example TextDraw");
-PlayerTextDrawSetOutline(playerid, gMyTextDraw[playerid], 1);
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
+    PlayerTextDrawSetOutline(playerid, welcomeText[playerid], 1);
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
+
+    return 1;
+}
 ```
 
 ## Related Functions
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawGetOutline](PlayerTextDrawGetOutline): Get the outline size on a player-textdraw.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.

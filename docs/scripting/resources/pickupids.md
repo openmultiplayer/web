@@ -4,7 +4,7 @@ title: "Pickup IDs"
 
 :::note
 
-ANY valid object model can be used for [pickups](../functions/CreatePickup). This page just lists some common object models that are around the right size to be used as a pickup.
+ANY valid object model can be used for [CreatePickup](../functions/CreatePickup) and [CreatePlayerPickup](../functions/CreatePlayerPickup). This page just lists some common object models that are around the right size to be used as a pickup.
 
 :::
 

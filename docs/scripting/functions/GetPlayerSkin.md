@@ -33,3 +33,7 @@ Returns the new skin after [SetSpawnInfo](SetSpawnInfo) is called but before the
 ## Related Functions
 
 - [SetPlayerSkin](SetPlayerSkin): Set a player's skin.
+
+## Related Resources
+
+- [Skin IDs](../resources/skins)

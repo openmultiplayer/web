@@ -16,7 +16,7 @@ Gets the slot of one weapon.
 
 ## Returns
 
-The number of the slot (0 - 12)
+The number of the [weapon slot](../resources/weaponslots) (0 - 12)
 
 ## Examples
 
@@ -26,8 +26,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
      if(strcmp(cmdtext, "/weaponslot", true) == 0)
      {
         new weaponid = GetPlayerWeapon(playerid); // will store the id of the weapon the player is currently holding
-        new slot = GetWeaponSlot(weaponid); // will store the id of the weapon slot
-        SendClientMessage(playerid, -1, "Your weapon is occupying the slot %d.", slot); // sends a formatted message to the player
+        new WEAPON_SLOT:slot = GetWeaponSlot(weaponid); // will store the id of the weapon slot
+        SendClientMessage(playerid, -1, "Your weapon is occupying the slot %d.", _:slot); // sends a formatted message to the player
         return 1;
      }
 
@@ -42,3 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerAmmo](GetPlayerAmmo): Gets the amount of ammo in a player's current weapon..
 - [SetPlayerArmedWeapon](SetPlayerArmedWeapon): Sets which weapon (that a player already has) the player is holding.
 - [ResetPlayerWeapon](ResetPlayerWeapons): Removes all weapons from a player.
+
+## Related Resources
+
+- [Weapon Slots](../resources/weaponslots).

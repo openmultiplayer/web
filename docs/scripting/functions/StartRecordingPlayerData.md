@@ -41,3 +41,7 @@ if (!strcmp("/recordme", cmdtext))
 ## Related Functions
 
 - [StopRecordingPlayerData](StopRecordingPlayerData): Stops recording player data.
+
+## Related Resources
+
+- [Record Types](../resources/recordtypes)

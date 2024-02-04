@@ -24,8 +24,16 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-gMyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0,"Example TextDraw");
-PlayerTextDrawLetterSize(playerid, gMyTextDraw[playerid], 3.2 ,5.1);
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
+    PlayerTextDrawLetterSize(playerid, welcomeText[playerid], 3.2, 5.1);
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
+    
+    return 1;
+}
 ```
 
 ## Notes
@@ -46,6 +54,7 @@ Fonts appear to look the best with an X to Y ratio of 1 to 4 (e.g. if x is 0.5 t
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawGetLetterSize](PlayerTextDrawGetLetterSize): Gets the width and height of the letters.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.

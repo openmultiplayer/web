@@ -34,3 +34,7 @@ public OnPlayerUpdate(playerid)
 
 - [SetPlayerSpecialAction](SetPlayerSpecialAction): Set a player's special action.
 - [GetPlayerState](GetPlayerState): Get a player's current state.
+
+## Related Resources
+
+- [Special Action IDs](../resources/specialactions)
