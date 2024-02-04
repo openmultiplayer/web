@@ -8,12 +8,12 @@ tags: ["player"]
 
 Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in the 'SMG' slot).
 
-| Name     | Description                                                                                |
-| -------- | ------------------------------------------------------------------------------------------ |
-| playerid | The ID of the player whose weapon data to retrieve.                                        |
-| slot     | The weapon slot to get data for (0-12).                                                    |
-| &weapons | A variable in which to store the [weapon ID](../resources/weaponids), passed by reference. |
-| &ammo    | A variable in which to store the ammo, passed by reference.                                |
+| Name             | Description                                                                                |
+|------------------|--------------------------------------------------------------------------------------------|
+| playerid         | The ID of the player whose weapon data to retrieve.                                        |
+| WEAPON_SLOT:slot | The [weapon slot](../resources/weaponslots) to get data for (0-12).                        |
+| &WEAPON:weapons  | A variable in which to store the [weapon ID](../resources/weaponids), passed by reference. |
+| &ammo            | A variable in which to store the ammo, passed by reference.                                |
 
 ## Returns
 
@@ -35,6 +35,17 @@ for (new i = 0; i <= 12; i++)
 }
 ```
 
+Another example:
+
+```c
+new 
+    weaponid,
+    ammo;
+
+// Get the player weapon ID and ammo in the PISTOL slot
+GetPlayerWeaponData(playerid, WEAPON_SLOT_PISTOL, weaponid, ammo);
+```
+
 ## Notes
 
 :::tip
@@ -47,3 +58,8 @@ Old weapons with no ammo left are still returned.
 
 - [GetPlayerWeapon](GetPlayerWeapon): Check what weapon a player is currently holding.
 - [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
+
+## Related Resources
+
+- [Weapon Slots](../resources/weaponslots)
+- [Weapon IDs](../resources/weaponids)

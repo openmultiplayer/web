@@ -39,5 +39,6 @@ Default gravity is 0.008.
 ## Related Functions
 
 - [GetGravity](GetGravity): Get the currently set gravity.
+- [SetPlayerGravity](SetPlayerGravity): Set a player's gravity.
 - [SetWeather](SetWeather): Set the global weather.
 - [SetWorldTime](SetWorldTime): Set the global server time.

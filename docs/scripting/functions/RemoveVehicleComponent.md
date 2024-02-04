@@ -8,10 +8,10 @@ tags: ["vehicle"]
 
 Remove a component from a vehicle.
 
-| Name        | Description                    |
-| ----------- | ------------------------------ |
-| vehicleid   | ID of the vehicle.             |
-| componentid | ID of the component to remove. |
+| Name                                       | Description                    |
+|--------------------------------------------|--------------------------------|
+| vehicleid                                  | ID of the vehicle.             |
+| [componentid](../resources/carcomponentid) | ID of the component to remove. |
 
 ## Returns
 
@@ -31,5 +31,12 @@ RemoveVehicleComponent(1, 1010);
 - [AddVehicleComponent](AddVehicleComponent): Add a component to a vehicle.
 - [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Check what components a vehicle has.
 - [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
+
+## Related Callbacks
+
 - [OnVehicleMod](../callbacks/OnVehicleMod): Called when a vehicle is modded.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.
+
+## Related Resources
+
+- [Car Component IDs](../resources/carcomponentid)

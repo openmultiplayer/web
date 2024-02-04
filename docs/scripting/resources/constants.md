@@ -43,6 +43,7 @@ tags: []
 
 | Value | Weapon             | Constant                |
 | ----- | ------------------ | ----------------------- |
+| 0     | Fist               | WEAPON_FIST             |
 | 1     | Brass Knuckles     | WEAPON_BRASSKNUCKLE     |
 | 2     | Golf Club          | WEAPON_GOLFCLUB         |
 | 3     | Nite stick         | WEAPON_NITESTICK        |
@@ -135,8 +136,23 @@ tags: []
 
 | Value | Constant                       |
 | ----- | ------------------------------ |
+| 0     | TEXT_DRAW_FONT_0               |
+| 1     | TEXT_DRAW_FONT_1               |
+| 2     | TEXT_DRAW_FONT_2               |
+| 3     | TEXT_DRAW_FONT_3               |
 | 4     | TEXT_DRAW_FONT_SPRITE_DRAW     |
 | 5     | TEXT_DRAW_FONT_MODEL_PREVIEW   |
+
+## TextDraw Fonts (From open.mp)
+
+| Value | Constant                       |
+|-------|--------------------------------|
+| 0     | TEXT_DRAW_FONT_BECKETT_REGULAR |
+| 1     | TEXT_DRAW_FONT_AHARONI_BOLD    |
+| 2     | TEXT_DRAW_FONT_BANK_GOTHIC     |
+| 3     | TEXT_DRAW_FONT_PRICEDOWN       |
+| 4     | TEXT_DRAW_FONT_SPRITE          |
+| 5     | TEXT_DRAW_FONT_PREVIEW         |
 
 ## SVar Enumeration
 

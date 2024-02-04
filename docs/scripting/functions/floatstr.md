@@ -21,8 +21,11 @@ The requested float value.
 ## Examples
 
 ```c
-new before[4] = "6.9"; // A STRING holding a FLOAT.
-SetPlayerPos(playerid, 0, 0, floatstr(before));
+new string[4] = "6.9"; // A STRING holding a FLOAT.
+
+new Float:value = floatstr(string);
+
+SetPlayerPos(playerid, 0.0, 0.0, value);
 ```
 
 ## Related Functions

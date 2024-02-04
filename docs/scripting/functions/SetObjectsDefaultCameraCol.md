@@ -1,7 +1,7 @@
 ---
 title: SetObjectsDefaultCameraCol
 description: Allows camera collisions with newly created objects to be disabled by default.
-tags: []
+tags: ["object", "camera"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />

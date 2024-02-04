@@ -28,6 +28,7 @@ if (IsPlayerInCheckpoint(playerid))
 ## Related Functions
 
 - [SetPlayerCheckpoint](SetPlayerCheckpoint): Create a checkpoint for a player.
+- [IsPlayerCheckpointActive](IsPlayerCheckpointActive): Check if the player currently has a checkpoint visible.
 - [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Disable the player's current checkpoint.
 - [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
 - [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.

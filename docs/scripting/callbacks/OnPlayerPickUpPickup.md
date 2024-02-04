@@ -8,10 +8,10 @@ tags: ["player"]
 
 This callback is called when a player picks up a pickup created with [CreatePickup](../functions/CreatePickup).
 
-| Name     | Description                                     |
-| -------- | ----------------------------------------------- |
-| playerid | The ID of the player that picked up the pickup. |
-| pickupid | The ID of the pickup, returned by [CreatePickup](../functions/CreatePickup)|
+| Name     | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| playerid | The ID of the player that picked up the pickup.                             |
+| pickupid | The ID of the pickup, returned by [CreatePickup](../functions/CreatePickup) |
 
 ## Returns
 
@@ -25,8 +25,8 @@ new pickup_Health;
 
 public OnGameModeInit()
 {
-    pickup_Cash = CreatePickup(1274, 2, 0.0, 0.0, 9.0);
-    pickup_Health = CreatePickup(1240, 2, 0.0, 0.0, 9.0);
+    pickup_Cash = CreatePickup(1274, 2, 2009.8658, 1220.0293, 10.8206, -1);
+    pickup_Health = CreatePickup(1240, 2, 2009.8474, 1218.0459, 10.8175, -1);
     return 1;
 }
 
@@ -43,6 +43,13 @@ public OnPlayerPickUpPickup(playerid, pickupid)
     return 1;
 }
 ```
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPickupStreamIn](OnPickupStreamIn): Called when a pickup enters the visual range of a player.
+- [OnPickupStreamOut](OnPickupStreamOut): Called when a pickup leaves the visual range of a player.
 
 ## Related Functions
 

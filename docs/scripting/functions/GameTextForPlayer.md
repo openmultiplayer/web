@@ -8,12 +8,13 @@ tags: ["player"]
 
 Shows 'game text' (on-screen text) for a certain length of time for a specific player.
 
-| Name           | Description                                                       |
-| -------------- | ----------------------------------------------------------------- |
-| playerid       | The ID of the player to show the gametext for.                    |
-| const string[] | The text to be displayed.                                         |
-| time           | The duration of the text being shown in milliseconds.             |
-| style          | The [style](../resources/gametextstyles) of text to be displayed. |
+| Name             | Description                                                       |
+|------------------|-------------------------------------------------------------------|
+| playerid         | The ID of the player to show the gametext for.                    |
+| const string[]   | The text to be displayed.                                         |
+| time             | The duration of the text being shown in milliseconds.             |
+| style            | The [style](../resources/gametextstyles) of text to be displayed. |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                        |
 
 ## Returns
 
@@ -27,6 +28,14 @@ Shows 'game text' (on-screen text) for a certain length of time for a specific p
 public OnPlayerDeath(playerid, killerid, reason)
 {
     GameTextForPlayer(playerid, "Wasted", 5000, 2);
+
+    if (killerid != INVALID_PLAYER_ID)
+    {
+        new name[MAX_PLAYER_NAME];
+        GetPlayerName(playerid, name, sizeof(name));
+
+        GameTextForPlayer(killerid, "~w~You killed ~r~%s", 3000, 3, name);
+    }
     return 1;
 }
 ```
@@ -43,5 +52,13 @@ Also, a blank space at end of the string may result in faliure. For example: `"H
 
 ## Related Functions
 
+- [HideGameTextForPlayer](HideGameTextForPlayer): Stop showing a gametext style to a player.
 - [GameTextForAll](GameTextForAll): Display gametext to all players.
+- [HideGameTextForAll](HideGameTextForAll): Stop showing a gametext style for all players.
+- [GetGameText](GetGameText): Gets all the information on the given game text style.
+- [HasGameText](HasGameText): Does the player currently have text in the given gametext style displayed?
 - [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
+
+## Related Resources
+
+- [GameText Styles](../resources/gametextstyles)

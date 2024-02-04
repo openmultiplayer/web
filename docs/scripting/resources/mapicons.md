@@ -3,6 +3,12 @@ title: Map Icons
 description: A list of Map Icons.
 ---
 
+:::info
+
+This page has a list of all map icons which can be used by [SetPlayerMapIcon](../functions/SetPlayerMapIcon) function.
+
+:::
+
 | ID  | Icon                             | Name                              | Notes                                                            |
 | --- | -------------------------------- | --------------------------------- | ---------------------------------------------------------------- |
 | 0   | ![](/images/mapIcons/icon0.gif)  | Colored Square/Triangle (Dynamic) | Can be used in any colour. Used for Single Player objectives. Displays as triangle when the marker isn't at the same ground level with a player                                                                                         |
@@ -69,7 +75,3 @@ description: A list of Map Icons.
 | 61  | ![](/images/mapIcons/icon61.gif) | San Fierro Rifa                   |                                                                  |
 | 62  | ![](/images/mapIcons/icon62.gif) | Grove Street Families             |                                                                  |
 | 63  | ![](/images/mapIcons/icon63.gif) | Pay 'n' Spray                     |                                                                  |
-
-## Related Functions
-
-- [SetPlayerMapIcon](/docs/scripting/functions/SetPlayerMapIcon): Create a mapicon for a player.

@@ -29,7 +29,7 @@ import React from "react";
 import Roads from "src/components/icons/Roads";
 import heroStyles from "../styles/Hero.module.css";
 
-const DownloadButton = (props: { link: string; title: string }) => {
+const DownloadButton = (props: { link: string; title: string; tooltip: string}) => {
   return (
     <Link href={props.link} _hover={{ textDecoration: "none" }} isExternal>
       <Button
@@ -46,9 +46,9 @@ const DownloadButton = (props: { link: string; title: string }) => {
           outline: "2px solid #695AD3",
           transition: "outline 0.3s",
         }}
-        title="open.mp is released"
+        title={props.tooltip}
       >
-        {props.title}
+      {props.title}
       </Button>
     </Link>
   );
@@ -88,7 +88,7 @@ const Home = () => {
     {
       heading: "Fully backwards compatible with existing scripts and clients",
       bodyText:
-        "Got an old AMX lying about?  Load it up on the open.mp server straight out the box and join you friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
+        "Got an old AMX lying about?  Load it up on the open.mp server straight out of the box and join your friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
       buttonLink: "/docs",
       buttonText: "Getting Started",
       img: "/images/assets/f1.png",
@@ -138,7 +138,7 @@ const Home = () => {
       alt: "discord icon",
       src: "/images/assets/discord-icon.svg",
       href: "https://discord.com/invite/samp",
-      size: 36,
+      size: 45,
     },
     {
       alt: "facebook icon",
@@ -162,8 +162,8 @@ const Home = () => {
       alt: "x icon",
       src: "/images/assets/x.svg",
       href: "https://x.com/openmultiplayer",
-      size: 17,
-      background: true,
+      size: 29,
+      background: false,
     },
     {
       alt: "youtube icon",
@@ -230,11 +230,13 @@ const Home = () => {
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <DownloadButton
                     title={"Download open.mp (server)"}
+                    tooltip="open.mp is released!"
                     link={"https://github.com/openmultiplayer/open.mp/releases"}
                   />
                   <DownloadButton
-                    title={"Download SA-MP client"}
-                    link={"https://sa-mp.mp/downloads/"}
+                    title={"Download open.mp launcher"}
+                    tooltip="Download open.mp launcher"
+                    link={"https://github.com/openmultiplayer/launcher/releases/latest"}
                   />
                   <DocumentationButton />
                 </Flex>
@@ -306,14 +308,20 @@ const Home = () => {
               <Heading>Ready to get started?</Heading>
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
-                  <Box align="center">
-                    <DownloadButton
-                      title={"Download open.mp (server)"}
-                      link={
-                        "https://github.com/openmultiplayer/open.mp/releases"
-                      }
-                    />
-                  </Box>
+                  <DownloadButton
+                    title={"Download open.mp (server)"}
+                    tooltip="open.mp is released!"
+                    link={
+                      "https://github.com/openmultiplayer/open.mp/releases"
+                    }
+                  />
+                  <DownloadButton
+                    title={"Download open.mp launcher"}
+                    tooltip="Download open.mp launcher"
+                    link={
+                      "https://github.com/openmultiplayer/launcher/releases/latest"
+                    }
+                  />
                   <DocumentationButton />
                 </Flex>
               </HStack>

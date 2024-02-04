@@ -44,3 +44,7 @@ Only use the coordinates if you want the sound to be played at a certain positio
 - [PlayCrimeReportForPlayer](PlayCrimeReportForPlayer): Play a crime report for a player.
 - [PlayAudioStreamForPlayer](PlayAudioStreamForPlayer): Plays a audio stream for a player.
 - [StopAudioStreamForPlayer](StopAudioStreamForPlayer): Stops the current audio stream for a player.
+
+## Related Resources
+
+- [Sound IDs](../resources/sound-ids)

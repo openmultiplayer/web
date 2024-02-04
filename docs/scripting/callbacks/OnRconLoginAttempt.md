@@ -1,7 +1,7 @@
 ---
 title: OnRconLoginAttempt
 description: This callback is called when someone attempts to log in to RCON in-game; successful or not.
-tags: []
+tags: ["rcon", "administration"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3a' />
@@ -62,4 +62,5 @@ The following callbacks might be useful, as they're related to this callback in 
 The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Checks if a player is logged into RCON.
+- [SetPlayerAdmin](../functions/SetPlayerAdmin): Sets the player as an RCON admin.
 - [SendRconCommand](../functions/SendRconCommand): Sends an RCON command via the script.

@@ -64,4 +64,9 @@ In version 0.3d and onwards, 10 objects can be attached to a single player (inde
 
 - [RemovePlayerAttachedObject](RemovePlayerAttachedObject): Remove an attached object from a player
 - [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed): Check whether an object is attached to a player in a specified index
+- [GetPlayerAttachedObject](GetPlayerAttachedObject): Gets the player attachment object data by index.
 - [EditAttachedObject](EditAttachedObject): Edit an attached object.
+
+## Related Resources
+
+- [Bone IDs](../resources/boneid)

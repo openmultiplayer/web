@@ -10,12 +10,13 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Creates a textdraw for a single player. This can be used as a way around the global text-draw limit.
 
-| Name     | Description                                     |
-| -------- | ----------------------------------------------- |
-| playerid | The ID of the player to create the textdraw for |
-| Float:x  | X-Coordinate                                    |
-| Float:y  | Y-Coordinate                                    |
-| text[]   | The text in the textdraw.                       |
+| Name             | Description                                     |
+|------------------|-------------------------------------------------|
+| playerid         | The ID of the player to create the textdraw for |
+| Float:x          | X-Coordinate                                    |
+| Float:y          | Y-Coordinate                                    |
+| text[]           | The text in the textdraw.                       |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.      |
 
 ## Returns
 
@@ -31,7 +32,7 @@ new PlayerText:welcomeText[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     // First, create the textdraw
-    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my SA-MP server");
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
 
     // Now show it
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
@@ -69,3 +70,31 @@ Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~ Doesn't work beyond 
 - [PlayerTextDrawSetString](PlayerTextDrawSetString): Set the text of a player-textdraw.
 - [PlayerTextDrawShow](PlayerTextDrawShow): Show a player-textdraw.
 - [PlayerTextDrawHide](PlayerTextDrawHide): Hide a player-textdraw.
+- [IsPlayerTextDrawVisible](IsPlayerTextDrawVisible): Checks if a player-textdraw is shown for the player.
+- [IsValidPlayerTextDraw](IsValidPlayerTextDraw): Checks if a player-textdraw is valid.
+- [PlayerTextDrawBackgroundColour](PlayerTextDrawBackgroundColour): Adjust the background colour of a player-textdraw.
+- [PlayerTextDrawBoxColour](PlayerTextDrawBoxColour): Sets the colour of a textdraw's box (PlayerTextDrawUseBox ).
+- [PlayerTextDrawColour](PlayerTextDrawColour): Sets the text colour of a player-textdraw.
+- [PlayerTextDrawGetAlignment](PlayerTextDrawGetAlignment): Gets the text alignment of a player-textdraw.
+- [PlayerTextDrawGetBackgroundColour](PlayerTextDrawGetBackgroundColour): Gets the background colour of a player-textdraw.
+- [PlayerTextDrawGetBoxColour](PlayerTextDrawGetBoxColour): Gets the box colour of a player-textdraw.
+- [PlayerTextDrawGetColour](PlayerTextDrawGetColour): Gets the text colour of a player-textdraw.
+- [PlayerTextDrawGetFont](PlayerTextDrawGetFont): Gets the text font of a player-textdraw.
+- [PlayerTextDrawGetLetterSize](PlayerTextDrawGetLetterSize): Gets the width and height of the letters.
+- [PlayerTextDrawGetOutline](PlayerTextDrawGetOutline): Get the outline size on a player-textdraw.
+- [PlayerTextDrawGetPos](PlayerTextDrawGetPos): Gets the position of a player-textdraw.
+- [PlayerTextDrawGetPreviewModel](PlayerTextDrawGetPreviewModel): Gets the preview model of a 3D preview player-textdraw.
+- [PlayerTextDrawGetPreviewRot](PlayerTextDrawGetPreviewRot): Gets the rotation and zoom of a 3D model preview player-textdraw.
+- [PlayerTextDrawGetPreviewVehicleColours](PlayerTextDrawGetPreviewVehicleColours): Gets the preview vehicle colors of a 3D preview player-textdraw.
+- [PlayerTextDrawGetShadow](PlayerTextDrawGetShadow): Get the shadow size on a player-textdraw.
+- [PlayerTextDrawGetString](PlayerTextDrawGetString): Gets the text of a player-textdraw.
+- [PlayerTextDrawGetTextSize](PlayerTextDrawGetTextSize): Gets the X axis and Y axis of the player-textdraw text size.
+- [PlayerTextDrawIsBox](PlayerTextDrawIsBox): Checks if a player-textdraw is box.
+- [PlayerTextDrawIsProportional](PlayerTextDrawIsProportional): Checks if a player-textdraw is proportional.
+- [PlayerTextDrawIsSelectable](PlayerTextDrawIsSelectable): Checks if a player-textdraw is selectable.
+- [PlayerTextDrawSetPos](PlayerTextDrawSetPos): Sets the position of a player-textdraw.
+- [PlayerTextDrawSetPreviewVehicleColours](PlayerTextDrawSetPreviewVehicleColours): Set the color of a vehicle in a player-textdraw model preview (if a vehicle is shown).
+
+## Related Resources
+
+- [TextDraw Sprites](../resources/textdrawsprites)

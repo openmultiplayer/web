@@ -8,25 +8,25 @@ tags: []
 
 ## Description
 
-You can use this function to attach objects to other objects. The objects will folow the main object.
+You can use this function to attach objects to other objects. The objects will follow the main object.
 
-| Name          | Description                                                             |
-| ------------- | ----------------------------------------------------------------------- |
-| objectid      | The object to attach to another object.                                 |
-| attachtoid    | The object to attach the object to.                                     |
-| Float:OffsetX | The distance between the main object and the object in the X direction. |
-| Float:OffsetY | The distance between the main object and the object in the Y direction. |
-| Float:OffsetZ | The distance between the main object and the object in the Z direction. |
-| Float:RotX    | The X rotation between the object and the main object.                  |
-| Float:RotY    | The Y rotation between the object and the main object.                  |
-| Float:RotZ    | The Z rotation between the object and the main object.                  |
-| SyncRotation  | If set to 0, objectid's rotation will not change with attachtoid's.     |
+| Name              | Description                                                               |
+|-------------------|---------------------------------------------------------------------------|
+| objectid          | The object to attach to another object.                                   |
+| attachtoid        | The object to attach the object to.                                       |
+| Float:OffsetX     | The distance between the main object and the object in the X direction.   |
+| Float:OffsetY     | The distance between the main object and the object in the Y direction.   |
+| Float:OffsetZ     | The distance between the main object and the object in the Z direction.   |
+| Float:RotX        | The X rotation between the object and the main object.                    |
+| Float:RotY        | The Y rotation between the object and the main object.                    |
+| Float:RotZ        | The Z rotation between the object and the main object.                    |
+| bool:SyncRotation | If set to `false`, objectid's rotation will not change with attachtoid's. |
 
 ## Returns
 
-1: The function executed successfully.
+`true` - The function executed successfully.
 
-0: The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
+`false` - The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
 
 ## Examples
 
@@ -34,14 +34,22 @@ You can use this function to attach objects to other objects. The objects will f
 new gObjectId = CreateObject(...);
 new gAttachToId = CreateObject(...);
 
-AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
+AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, true);
 ```
 
 ## Notes
 
 :::tip
 
-Both objects need to be created before attempting to attach them. There is no player-object version of this function (AttachPlayerObjectToObject), meaning it will not be supported by streamers.
+Both objects need to be created before attempting to attach them. 
+
+:::
+
+:::tip
+
+There is no player-object version of this function in SA-MP.
+
+But there is [AttachPlayerObjectToObject](AttachPlayerObjectToObject) in open.mp
 
 :::
 

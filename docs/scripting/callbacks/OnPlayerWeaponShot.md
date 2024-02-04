@@ -74,3 +74,7 @@ The following callbacks might be useful, as they're related to this callback in 
 The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): Retrieves the vector of the last shot a player fired.
+
+## Related Resources
+
+- [Bullet Hit Types](../resources/bullethittypes)

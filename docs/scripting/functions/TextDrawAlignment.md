@@ -16,13 +16,17 @@ Set the alignment of text in a text draw.
 
 ## Returns
 
-Note
-
-For alignment TEXT_DRAW_ALIGN_CENTER (center) the x and y values of TextSize need to be swapped, see notes at TextDrawTextSize, also position coordinate become position of center of textdraw and not left/top edges.
+This function does not return any specific values.
 
 ## Examples
 
 ```c
+/*
+    TEXT_DRAW_ALIGN_LEFT
+    TEXT_DRAW_ALIGN_CENTER
+    TEXT_DRAW_ALIGN_RIGHT
+*/
+
 new Text: gMyTextdraw;
 
 public OnGameModeInit()
@@ -35,6 +39,12 @@ public OnGameModeInit()
 
 ## Notes
 
+:::warning
+
+For alignment TEXT_DRAW_ALIGN_CENTER (center) the x and y values of TextSize need to be swapped, see notes at [TextDrawTextSize](TextDrawTextSize), also position coordinate become position of center of textdraw and not left/top edges.
+
+:::
+
 :::tip
 
 If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) to show the changes of this function.
@@ -45,6 +55,7 @@ If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDr
 
 - [TextDrawCreate](TextDrawCreate): Create a textdraw.
 - [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawGetAlignment](TextDrawGetAlignment): Gets the text alignment of a textdraw.
 - [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
 - [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
 - [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.

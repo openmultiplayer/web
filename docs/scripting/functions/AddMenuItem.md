@@ -8,11 +8,12 @@ tags: ["menu"]
 
 Adds an item to a specified menu.
 
-| Name    | Description                      |
-| ------- | -------------------------------- |
-| menuid  | The menu id to add an item to.   |
-| column  | The column to add the item to.   |
-| title[] | The title for the new menu item. |
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| menuid           | The menu id to add an item to.             |
+| column           | The column to add the item to.             |
+| title[]          | The title for the new menu item.           |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
 
@@ -45,5 +46,6 @@ Crashes when passed an invalid menu ID. You can only have 12 items per menu (13t
 - [CreateMenu](CreateMenu): Create a menu.
 - [SetMenuColumnHeader](SetMenuColumnHeader): Set the header for one of the columns in a menu.
 - [DestroyMenu](DestroyMenu): Destroy a menu.
+- [IsMenuRowDisabled](IsMenuRowDisabled): Check if a menu row is disabled.
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Called when a player exits a menu.

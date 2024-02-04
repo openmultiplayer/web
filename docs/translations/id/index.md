@@ -10,7 +10,7 @@ Sayangnya, wiki SA-MP telah offline september lalu - beberapa konten website nya
 
 Pada intinya, kami butuh bantuan komunitas untuk memindahkan wiki yang lama ke rumah barunya, disini!
 
-Jika kamu berminat, cek [halaman ini](/meta/Contributing) untuk info lebih lanjut.
+Jika kamu berminat, cek [halaman ini](/docs/meta/Contributing) untuk info lebih lanjut.
 
 Jika kamu tidak mengerti menggunakan GitHub atau mengkonversi HTML, jangan khawatir! Kamu dapat membantu kami dengan memberi tahu kami tentang issue (melalui Discord, Burgershot atau social media) dan yang paling penting: _sebarkan!_ Jadi pastikan untuk bookmark situs ini dan bagikan kepada semua yang sedang mencari kemana Wiki SA-MP pergi.
 

@@ -36,7 +36,7 @@ Postavlja parametre vozila za sve igrače.
 ```c
 // Na vrhu naše skripte, deklarišemo globalnu varijablu
 new
-    gVehicleAlarmTimer[MAX_VEHICLES] = {-1, ...};
+    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
 
 // Ako postavljate jedan parametar, trebali biste dobiti trenutne parametre kako se ne bi SVE promijenili
 new
@@ -54,7 +54,7 @@ SetVehicleParamsEx_Fixed(vehicleid, &engine, &lights, &alarm, &doors, &bonnet, &
     {
         // Ubij tajmer, resetirajte identifikator tajmera, a zatim ga ponovo pokrenite ako je već bio pokrenut
         KillTimer(gVehicleAlarmTimer[vehicleid]);
-        gVehicleAlarmTimer[vehicleid] = -1;
+        gVehicleAlarmTimer[vehicleid] = 0;
         gVehicleAlarmTimer[vehicleid] = SetTimerEx("DisableVehicleAlarm", 20000, false, "d", vehicleid);
     }
 }
@@ -72,7 +72,7 @@ public DisableVehicleAlarm(vehicleid)
     }
 
     // Reset the timer identifier
-    gVehicleAlarmTimer[vehicleid] = -1;
+    gVehicleAlarmTimer[vehicleid] = 0;
 }
 ```
 

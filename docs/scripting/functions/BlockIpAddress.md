@@ -43,4 +43,9 @@ Wildcards can be used with this function, for example blocking the IP '6.9._._' 
 ## Related Functions
 
 - [UnBlockIpAddress](UnBlockIpAddress): Unblock an IP that was previously blocked.
+- [IsBanned](IsBanned): Checks if the given IP address is banned.
+
+## Related Callbacks
+
+- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): Called when someone attempts to log in to RCON in-game.
 - [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.

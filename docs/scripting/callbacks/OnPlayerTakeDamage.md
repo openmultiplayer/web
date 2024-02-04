@@ -80,3 +80,7 @@ The following callbacks might be useful, as they're related to this callback in 
 
 - [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage. 
 - [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon. 
+
+## Related Resources
+
+- [Body Parts](../resources/bodyparts)

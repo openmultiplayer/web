@@ -1,7 +1,7 @@
 ---
 title: ApplyAnimation
 description: Apply an animation to a player.
-tags: []
+tags: ["player", "animation"]
 ---
 
 ## Description
@@ -9,26 +9,39 @@ tags: []
 Apply an animation to a player.
 
 | Name       | Description                                                                                                                                                                                                                                                                                                   |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid   | The ID of the player to apply the animation to.                                                                                                                                                                                                                                                               |
-| animlib[]  | The animation library from which to apply an animation.                                                                                                                                                                                                                                                       |
-| animname[] | The name of the animation to apply, within the specified library.                                                                                                                                                                                                                                             |
-| fDelta     | The speed to play the animation (use 4.1).                                                                                                                                                                                                                                                                    |
-| loop       | If set to 1, the animation will loop. If set to 0, the animation will play once.                                                                                                                                                                                                                              |
-| lockx      | If set to 0, the player is returned to their old X coordinate once the animation is complete (for animations that move the player such as walking). 1 will not return them to their old position.                                                                                                             |
-| locky      | Same as above but for the Y axis. Should be kept the same as the previous parameter.                                                                                                                                                                                                                          |
-| freeze     | Setting this to 1 will freeze the player at the end of the animation. 0 will not.                                                                                                                                                                                                                             |
-| time       | Timer in milliseconds. For a never-ending loop it should be 0.                                                                                                                                                                                                                                                |
-| forcesync  | Set to 1 to make server sync the animation with all other players in streaming radius (optional). 2 works same as 1, but will ONLY apply the animation to streamed-in players, but NOT the actual player being animated (useful for npc animations and persistent animations when players are being streamed) |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid        | The ID of the player to apply the animation to.                                                                                                                                                                                                                                                               |
+| const animlib[]       | The [animation library](../resources/animations) from which to apply an animation.                                                                                                                                                                                                                                                       |
+| const animname[]      | The name of the animation to apply, within the specified library.                                                                                                                                                                                                                                             |
+| float:fDelta          | The speed to play the animation (use 4.1).                                                                                                                                                                                                                                                                    |
+| bool:loop       | If set to 'true', the animation will loop. If set to 'false', the animation will play once.                                                                                                                                                                                                                              |
+| bool:lockx      | If set to 'false', the player is returned to their old X coordinate once the animation is complete (for animations that move the player such as walking). 'true' will not return them to their old position.                                                                                                             |
+| bool:locky      | Same as above but for the Y axis. Should be kept the same as the previous parameter.                                                                                                                                                                                                                          |
+| bool:freeze     | Setting this to 'true' will freeze the player at the end of the animation. 'false' will not.                                                                                                                                                                                                                             |
+| time            | Timer in milliseconds. For a never-ending loop it should be 0.                                                                                                                                                                                                                                                |
+| forcesync        | Set to 1 to make server sync the animation with all other players in streaming radius (optional). 2 works same as 1, but will ONLY apply the animation to streamed-in players, but NOT the actual player being animated (useful for npc animations and persistent animations when players are being streamed) |
 
 ## Returns
 
-This function always returns 1, even if the player specified does not exist, or any of the parameters are invalid (e.g. invalid library).
+This function always returns true, even if the player specified does not exist, or any of the parameters are invalid (e.g. invalid library).
 
 ## Examples
 
 ```c
-ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
+ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, 1);
+```
+
+An example for open.mp:
+
+```c
+ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, SYNC_NONE);
+// SYNC_NONE: Don't force sync to anyone else.
+
+ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, SYNC_ALL);
+// SYNC_ALL: Sync to all streamed-in players.
+
+ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, SYNC_OTHER);
+// SYNC_OTHER: Sync to all streamed-in players, except the player with the animation.
 ```
 
 ## Notes
@@ -49,3 +62,10 @@ An invalid animation library will crash the player's game.
 
 - [ClearAnimations](ClearAnimations): Clear any animations a player is performing.
 - [SetPlayerSpecialAction](SetPlayerSpecialAction): Set a player's special action.
+- [GetPlayerAnimFlags](GetPlayerAnimFlags): Get the player animation flags.
+- [IsValidAnimationLibrary](IsValidAnimationLibrary): Checks if the given animation library is valid.
+- [EnableAllAnimations](EnableAllAnimations): Allow use of the animations missing from some versions.
+
+## Related Resources
+
+- [Animations](../resources/animations)

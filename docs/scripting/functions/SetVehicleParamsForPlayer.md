@@ -12,20 +12,20 @@ Set the parameters of a vehicle for a player.
 | ----------- | --------------------------------------------------------------------------------------------- |
 | vehicle     | The ID of the vehicle to set the parameters of.                                               |
 | playerid    | The ID of the player to set the vehicle's parameters for.                                     |
-| objective   | 0 to disable the objective or 1 to show it. This is a bobbing yellow arrow above the vehicle. |
-| doorslocked | 0 to unlock the doors or 1 to lock them.                                                      |
+| bool:objective   | false to disable the objective or true to show it. This is a bobbing yellow arrow above the vehicle. |
+| bool:doorslocked | false to unlock the doors or true to lock them.                                                      |
 
 ## Returns
 
-1: The function executed successfully.
+true: The function executed successfully.
 
-0: The function failed to execute. The player and/or vehicle specified do not exist.
+false: The function failed to execute. The player and/or vehicle specified do not exist.
 
 ## Examples
 
 ```c
 // sometime earlier:
-SetVehicleParamsForPlayer(iPlayerVehicle, iPlayerID, 1, 0);
+SetVehicleParamsForPlayer(iPlayerVehicle, iPlayerID, true, false);
 
 // sometime later when you want the vehicle to respawn:
 new
@@ -44,24 +44,24 @@ public OnPlayerCommandText(playerid, cmdtext[])
         for (new i = 0; i < MAX_PLAYERS; i++)
         {
             if (i == playerid) continue;
-            SetVehicleParamsForPlayer(GetPlayerVehicleID(playerid),i,0,1);
+            SetVehicleParamsForPlayer(GetPlayerVehicleID(playerid),i,false,true);
         }
         return 1;
     }
     return 0;
 }
 // Will show vehicle markers for players streaming in for 0.3a+
-new iVehicleObjective[MAX_VEHICLES][2];
+new bool:iVehicleObjective[MAX_VEHICLES][2];
 
 public OnGameModeInit() //Or another callback
 {
     new temp = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0,0, -1); //ID 1
-    iVehicleObjective[temp][0] = 1; //Marker
-    iVehicleObjective[temp][1] = 0; //Door Lock
+    iVehicleObjective[temp][0] = true; //Marker
+    iVehicleObjective[temp][1] = false; //Door Lock
     return 1;
 }
 
-stock SetVehicleParamsForPlayerEx(vehicleid, playerid, objective, doorslocked)
+stock SetVehicleParamsForPlayerEx(vehicleid, playerid, bool:objective, bool:doorslocked)
 {
     SetVehicleParamsForPlayer(vehicleid, playerid, objective, doorslocked);
     iVehicleObjective[vehicleid][0] = objective;
@@ -86,7 +86,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     if (vehicleid == myMarkedCar)
     {
-        SetVehicleParamsForPlayer(myMarkedCar, forplayerid, 1, 0); // marker can be visible only if the vehicle streamed for player
+        SetVehicleParamsForPlayer(myMarkedCar, forplayerid, true, false); // marker can be visible only if the vehicle streamed for player
     }
     return 1;
 }

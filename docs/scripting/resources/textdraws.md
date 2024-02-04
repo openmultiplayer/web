@@ -34,6 +34,28 @@ Global textdraws can be created, then shown to all players. There is a [limit](.
 - [TextDrawHideForPlayer](../functions/TextDrawHideForPlayer): Hide a textdraw for a certain player.
 - [TextDrawShowForAll](../functions/TextDrawShowForAll): Show a textdraw for all players.
 - [TextDrawHideForAll](../functions/TextDrawHideForAll): Hide a textdraw for all players.
+- [IsTextDrawVisibleForPlayer](../functions/IsTextDrawVisibleForPlayer): Checks if a textdraw is shown for the player.
+- [IsValidTextDraw](../functions/IsValidTextDraw): Checks if a textdraw is valid.
+- [TextDrawGetAlignment](../functions/TextDrawGetAlignment): Gets the text alignment of a textdraw.
+- [TextDrawGetBackgroundColour](../functions/TextDrawGetBackgroundColour): Gets the background colour of a textdraw.
+- [TextDrawGetBoxColour](../functions/TextDrawGetBoxColour): Gets the box colour of a textdraw.
+- [TextDrawGetColour](../functions/TextDrawGetColour): Gets the text colour of a textdraw.
+- [TextDrawGetFont](../functions/TextDrawGetFont): Gets the text font of a textdraw.
+- [TextDrawGetLetterSize](../functions/TextDrawGetLetterSize): Gets the width and height of the letters.
+- [TextDrawGetOutline](../functions/TextDrawGetOutline): Gets the thickness of a textdraw's text's outline.
+- [TextDrawGetPos](../functions/TextDrawGetPos): Gets the position of a textdraw.
+- [TextDrawGetPreviewModel](../functions/TextDrawGetPreviewModel): Gets the preview model of a 3D preview textdraw.
+- [TextDrawGetPreviewRot](../functions/TextDrawGetPreviewRot): Gets the rotation and zoom of a 3D model preview textdraw.
+- [TextDrawGetPreviewVehCol](../functions/TextDrawGetPreviewVehCol): Gets the preview vehicle colors of a 3D preview textdraw.
+- [TextDrawGetPreviewVehicleColours](../functions/TextDrawGetPreviewVehicleColours): Gets the preview vehicle colours of a 3D preview textdraw.
+- [TextDrawGetShadow](../functions/TextDrawGetShadow): Gets the size of a textdraw's text's shadow.
+- [TextDrawGetString](../functions/TextDrawGetString): Gets the text of a textdraw.
+- [TextDrawGetTextSize](../functions/TextDrawGetTextSize): Gets the X axis and Y axis of the textdraw.
+- [TextDrawIsBox](../functions/TextDrawIsBox): Checks if a textdraw is box.
+- [TextDrawIsProportional](../functions/TextDrawIsProportional): Checks if a textdraw is proportional.
+- [TextDrawIsSelectable](../functions/TextDrawIsSelectable): Checks if a textdraw is selectable.
+- [TextDrawSetPos](../functions/TextDrawSetPos): Sets the position of a textdraw.
+- [TextDrawSetStringForPlayer](../functions/TextDrawSetStringForPlayer): Changes the text on a textdraw for a specific player.
 
 ---
   
@@ -57,6 +79,30 @@ Player-textdraws are only created for one specific player. Up to 256 textdraws c
 - [PlayerTextDrawSetString](../functions/PlayerTextDrawSetString): Set the text of a player-textdraw.
 - [PlayerTextDrawShow](../functions/PlayerTextDrawShow): Show a player-textdraw.
 - [PlayerTextDrawHide](../functions/PlayerTextDrawHide): Hide a player-textdraw.
+- [IsPlayerTextDrawVisible](../functions/IsPlayerTextDrawVisible): Checks if a player-textdraw is shown for the player.
+- [IsValidPlayerTextDraw](../functions/IsValidPlayerTextDraw): Checks if a player-textdraw is valid.
+- [PlayerTextDrawBackgroundColour](../functions/PlayerTextDrawBackgroundColour): Adjust the background colour of a player-textdraw.
+- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Sets the colour of a textdraw's box (PlayerTextDrawUseBox ).
+- [PlayerTextDrawColour](../functions/PlayerTextDrawColour): Sets the text colour of a player-textdraw.
+- [PlayerTextDrawGetAlignment](../functions/PlayerTextDrawGetAlignment): Gets the text alignment of a player-textdraw.
+- [PlayerTextDrawGetBackgroundColour](../functions/PlayerTextDrawGetBackgroundColour): Gets the background colour of a player-textdraw.
+- [PlayerTextDrawGetBoxColour](../functions/PlayerTextDrawGetBoxColour): Gets the box colour of a player-textdraw.
+- [PlayerTextDrawGetColour](../functions/PlayerTextDrawGetColour): Gets the text colour of a player-textdraw.
+- [PlayerTextDrawGetFont](../functions/PlayerTextDrawGetFont): Gets the text font of a player-textdraw.
+- [PlayerTextDrawGetLetterSize](../functions/PlayerTextDrawGetLetterSize): Gets the width and height of the letters.
+- [PlayerTextDrawGetOutline](../functions/PlayerTextDrawGetOutline): Get the outline size on a player-textdraw.
+- [PlayerTextDrawGetPos](../functions/PlayerTextDrawGetPos): Gets the position of a player-textdraw.
+- [PlayerTextDrawGetPreviewModel](../functions/PlayerTextDrawGetPreviewModel): Gets the preview model of a 3D preview player-textdraw.
+- [PlayerTextDrawGetPreviewRot](../functions/PlayerTextDrawGetPreviewRot): Gets the rotation and zoom of a 3D model preview player-textdraw.
+- [PlayerTextDrawGetPreviewVehicleColours](../functions/PlayerTextDrawGetPreviewVehicleColours): Gets the preview vehicle colors of a 3D preview player-textdraw.
+- [PlayerTextDrawGetShadow](../functions/PlayerTextDrawGetShadow): Get the shadow size on a player-textdraw.
+- [PlayerTextDrawGetString](../functions/PlayerTextDrawGetString): Gets the text of a player-textdraw.
+- [PlayerTextDrawGetTextSize](../functions/PlayerTextDrawGetTextSize): Gets the X axis and Y axis of the player-textdraw text size.
+- [PlayerTextDrawIsBox](../functions/PlayerTextDrawIsBox): Checks if a player-textdraw is box.
+- [PlayerTextDrawIsProportional](../functions/PlayerTextDrawIsProportional): Checks if a player-textdraw is proportional.
+- [PlayerTextDrawIsSelectable](../functions/PlayerTextDrawIsSelectable): Checks if a player-textdraw is selectable.
+- [PlayerTextDrawSetPos](../functions/PlayerTextDrawSetPos): Sets the position of a player-textdraw.
+- [PlayerTextDrawSetPreviewVehicleColours](../functions/PlayerTextDrawSetPreviewVehicleColours): Set the color of a vehicle in a player-textdraw model preview (if a vehicle is shown).
 
 ---
   

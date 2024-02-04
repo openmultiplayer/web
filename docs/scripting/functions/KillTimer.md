@@ -20,7 +20,7 @@ This function always returns 0.
 
 ```c
 new
-    gConnectTimer[MAX_PLAYERS] = {-1, ...};
+    gConnectTimer[MAX_PLAYERS] = {0, ...};
 
 public OnPlayerConnect(playerid)
 {
@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
 public OnPlayerDisconnect(playerid)
 {
     KillTimer(gConnectTimer[playerid]);
-    gConnectTimer[playerid] = -1;
+    gConnectTimer[playerid] = 0;
     return 1;
 }
 
@@ -47,3 +47,8 @@ public WelcomeTimer(playerid)
 
 - [SetTimer](SetTimer): Set a timer.
 - [SetTimerEx](SetTimerEx): Set a timer with parameters.
+- [IsValidTimer](IsValidTimer): Checks if a timer is valid.
+- [IsRepeatingTimer](IsRepeatingTimer): Checks if a timer is set to repeat.
+- [GetTimerInterval](GetTimerInterval): Gets the interval of a timer.
+- [GetTimerRemaining](GetTimerRemaining): Gets the remaining interval of a timer.
+- [CountRunningTimers](CountRunningTimers): Get the running timers.

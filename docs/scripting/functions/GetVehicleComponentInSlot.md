@@ -49,5 +49,12 @@ Known Bug(s): Doesn't work for CARMODTYPE_STEREO. Both front bull bars and front
 
 - [AddVehicleComponent](AddVehicleComponent): Add a component to a vehicle.
 - [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
+
+## Related Callbacks
+
 - [OnVehicleMod](../callbacks/OnVehicleMod): Called when a vehicle is modded.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.
+
+## Related Resources
+
+- [Vehicle Component Slots](../resources/Componentslots)

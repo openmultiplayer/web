@@ -16,3 +16,7 @@ if (OneTeamHasWon)
     GameModeExit();
 }
 ```
+
+## Related Functions
+
+- [SetModeRestartTime](SetModeRestartTime): Sets the delay between loading main scripts, in seconds.

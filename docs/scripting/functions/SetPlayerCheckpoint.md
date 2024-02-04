@@ -60,7 +60,9 @@ Checkpoints are asynchronous, meaning only one can be shown at a time. To 'strea
 ## Related Functions
 
 - [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Disable the player's current checkpoint.
+- [GetPlayerCheckpoint](GetPlayerCheckpoint): Get the location of the current checkpoint.
 - [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Check if a player is in a checkpoint.
+- [IsPlayerCheckpointActive](IsPlayerCheckpointActive): Check if the player currently has a checkpoint visible.
 - [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
 - [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
