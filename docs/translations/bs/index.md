@@ -1,4 +1,4 @@
-# SA-MP Wiki and open.mp Dokumentacija
+# SA-MP Wiki i open.mp Dokumentacija
 
 Dobrodošao na SA-MP wiki, kojeg održava open.mp tim i šira SA-MP zajednica!
 
