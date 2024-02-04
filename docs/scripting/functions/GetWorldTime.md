@@ -1,7 +1,7 @@
 ---
 title: GetWorldTime
 description: Get the current world time.
-tags: []
+tags: ["worldtime"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
