@@ -65,9 +65,8 @@ const Page = () => {
         </p>
         <p>
           <b>
-            Note: Partnership program is temporarily closed as we promised.
-            Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested,
-            you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet.
+            Note: Partners are not paid listed servers, only available to those
+            helping us with beta testing open.mp, and have good quality content!
           </b>
         </p>
       </Box>
