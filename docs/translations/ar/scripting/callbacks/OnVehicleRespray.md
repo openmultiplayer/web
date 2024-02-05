@@ -4,6 +4,8 @@ description: يتم إستدعاء هذا الكالباك عند خروج ال�
 tags: ["vehicle"]
 ---
 
+<div dir="rtl" style={{ textAlign: "right" }}>
+    
 ## الوصف
 
 يتم إستدعاء هذا الكالباك عند خروج اللاعب من  مرآب تعديل السيارات حتى إذا كان طلاء السيارة لم يتغير. إحذر الإسم غامض مرائب (إدفع و رش¹) لا يفعلوا هذا الكالباك
@@ -25,7 +27,7 @@ It is always called first in gamemode so returning 0 there also blocks other fil
 
 
 ## أمثلة
-
+</div>
 ```c
 public OnVehicleRespray(playerid, vehicleid, color1, color2)
 {
@@ -35,7 +37,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
     return 1;
 }
 ```
-
+<div dir="rtl" style={{ textAlign: "right" }}>
 ## Notes
 
 :::tip
@@ -70,3 +72,4 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 - [ChangeVehicleColor](../functions/ChangeVehicleColor): يغير لون السيارة
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): يغير ستيكرات السيارة
+</div>
