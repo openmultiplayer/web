@@ -47,6 +47,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
     return 1;
 }
 ```
+
 <div dir="rtl" style={{ textAlign: "right" }}>
     
 ## Notes
