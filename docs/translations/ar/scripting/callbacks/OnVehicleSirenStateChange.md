@@ -6,6 +6,8 @@ tags: ["vehicle"]
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
 
+<div dir="rtl" style={{ textAlign: "right" }}>
+
 ## Description
 
 يتم إستدعاء هذا الكال باك عند تفعيل صفارة الإنذار للسيارة
@@ -28,7 +30,7 @@ tags: ["vehicle"]
 يتم إستدعائه أولا في الفيلترسكريبتات
 
 ## أمثلة
-
+</div>
 ```c
 public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 {
@@ -43,7 +45,8 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
     return 1;
 }
 ```
-
+<div dir="rtl" style={{ textAlign: "right" }}>
+    
 ## Notes
 
 :::tip
@@ -57,3 +60,5 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 قد تكون الوظائف التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى 
 
 - [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): التحقق إذ كانت صفارة الإنذار الخاصة بالسيارة مشغلة أو لا
+
+</div>
