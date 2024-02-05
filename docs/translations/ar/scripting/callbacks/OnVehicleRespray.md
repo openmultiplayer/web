@@ -39,7 +39,9 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
     return 1;
 }
 ```
+
 <div dir="rtl" style={{ textAlign: "right" }}>
+
 ## Notes
 
 :::tip
