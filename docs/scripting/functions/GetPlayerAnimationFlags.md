@@ -23,6 +23,12 @@ Returns the player animation flags as integer.
 In order to get each flag separately, bit masking is used.
 
 ```c
+
+#define ANIME_FREEZE_FLAG   0b0100000000000
+#define ANIME_LOCK_X_FLAG   0b0010000000000
+#define ANIME_LOCK_Y_FLAG   0b0001000000000
+#define ANIM_LOOP_FLAG      0b0000100000000
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/myanimflags"))
