@@ -31,7 +31,9 @@ This callback is called when a vehicle respawns.
 يتم إستدعائه أولا في الفيلترسكريبت
 
 ## أمثلة
+
 </div>
+
 ```c
 public OnVehicleSpawn(vehicleid)
 {
