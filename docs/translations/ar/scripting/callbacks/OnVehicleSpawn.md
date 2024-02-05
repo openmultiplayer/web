@@ -41,7 +41,9 @@ public OnVehicleSpawn(vehicleid)
     return 1;
 }
 ```
+
 <div dir="rtl" style={{ textAlign: "right" }}>
+
 ## الاستدعاءات او كالباكات ذات الصلة
 
 قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى 
