@@ -27,7 +27,9 @@ It is always called first in gamemode so returning 0 there also blocks other fil
 
 
 ## أمثلة
+
 </div>
+
 ```c
 public OnVehicleRespray(playerid, vehicleid, color1, color2)
 {
