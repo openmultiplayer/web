@@ -30,7 +30,9 @@ tags: ["vehicle"]
 يتم إستدعائه أولا في الفيلترسكريبتات
 
 ## أمثلة
+
 </div>
+
 ```c
 public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 {
