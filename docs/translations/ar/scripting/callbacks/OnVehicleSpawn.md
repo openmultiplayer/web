@@ -4,6 +4,10 @@ description: يتم إستدعاء هذا الكال باك عند رسبنت ا
 tags: ["vehicle"]
 ---
 
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
+
+<div dir="rtl" style={{ textAlign: "right" }}>
+    
 :::warning
 
 هذا الكال باك يتم إستدعائه فقط عندم يتم إعادة رسبنت السيارة . CreateVehicle و AddStaticVehicle(Ex) لن يفعلو هذا الكال باك
@@ -26,8 +30,8 @@ This callback is called when a vehicle respawns.
 
 يتم إستدعائه أولا في الفيلترسكريبت
 
-## Examples
-
+## أمثلة
+</div>
 ```c
 public OnVehicleSpawn(vehicleid)
 {
@@ -35,7 +39,7 @@ public OnVehicleSpawn(vehicleid)
     return 1;
 }
 ```
-
+<div dir="rtl" style={{ textAlign: "right" }}>
 ## الاستدعاءات او كالباكات ذات الصلة
 
 قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى 
@@ -49,3 +53,4 @@ public OnVehicleSpawn(vehicleid)
 
 - [SetVehicleToRespawn](../functions/SetVehicleToRespawn):إغادة رسبنت السيارة
 - [CreateVehicle](../functions/CreateVehicle): صنع سيارة
+</div>
