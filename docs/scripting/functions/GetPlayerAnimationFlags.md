@@ -16,7 +16,7 @@ Get the player animation flags.
 
 ## Returns
 
-Returns the player animation flags as integer.
+Returns the player animation flags as an integer.
 
 ## Examples
 
