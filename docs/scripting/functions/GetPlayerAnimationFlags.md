@@ -53,6 +53,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
+## Notes
+
 :::warning
 
 If the player state is not on-foot, all returned animation flags are 0.
