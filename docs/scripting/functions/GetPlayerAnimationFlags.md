@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new bool:locky   =   (flags & ANIM_LOCK_Y_FLAG) != 0 ? true : false;
         new bool:loop    =   (flags & ANIM_LOOP_FLAG) != 0 ? true : false;
 
-        format(messageString, sizeof(messageString), "You anim flags are: [freeze:%i] [lockx:%i] [locky:%i] [loop:%i]", freeze, lockx, locky, loop);
+        format(messageString, sizeof(messageString), "Your anim flags are: [freeze:%i] [lockx:%i] [locky:%i] [loop:%i]", freeze, lockx, locky, loop);
         SendClientMessage(playerid, -1, messageString);
 
         return 1;
