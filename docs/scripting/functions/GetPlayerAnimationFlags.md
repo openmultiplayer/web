@@ -53,7 +53,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-If the player is in a vehicle, all returned animation flags are 0.
+If the player state is not on-foot, all returned animation flags are 0.
 
 :::
 
