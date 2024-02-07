@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/myanimflags"))
     {
         new messageString[128];
-        new flags = GetPlayerAnimFlags(playerid);
+        new flags = GetPlayerAnimationFlags(playerid);
 
         new bool:freeze  =   (flags & ANIM_FREEZE_FLAG) != 0 ? true : false;
         new bool:lockx   =   (flags & ANIM_LOCK_X_FLAG) != 0 ? true : false;
