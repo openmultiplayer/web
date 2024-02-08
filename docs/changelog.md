@@ -18,7 +18,7 @@ description: open.mp development progress and changelog.
 - A few security fixes.
 - Announcer system now uses IPv4 by default, instead of using IPv6 when it's available.
 - Fix `Get(Player)ObjectMaterial(Text)` returning colours in the wrong format and modelid.
-- Fix `Get(Player)Gravity`
+- Fix `Get(Player)Gravity` returning integer instead of float.
 - Validate damage reasons (weapons) in various places.
 - Synchronize bans so multiple players are banned at once if needed.
 
