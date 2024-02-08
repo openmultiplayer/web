@@ -22,7 +22,6 @@ tags: ["vehicle"]
 
 ## Returns
 
-It is always called first in gamemode so returning 0 there also blocks other filterscripts from seeing it.
 يتم إستدعائه أولا في ال(الغيم مود²) إذا يرجع 0 و يقوم أيضا بتعطيل بقية الفيلترسكريبتات من رأيته
 
 
