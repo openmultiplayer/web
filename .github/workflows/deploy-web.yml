@@ -16,6 +16,7 @@ jobs:
       - name: Cancel previous runs
         uses: styfle/cancel-workflow-action@0.12.1
         with:
+          workflow_id: 42688838
           access_token: ${{ github.token }}
       - uses: actions/checkout@v3
       - uses: superfly/flyctl-actions/setup-flyctl@master
