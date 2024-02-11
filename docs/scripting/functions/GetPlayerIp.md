@@ -23,9 +23,9 @@ The player's IP address is stored in the specified array.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new plrIP[16];
-    GetPlayerIp(playerid, plrIP, sizeof(plrIP));
-    if (!strcmp(plrIP, "127.0.0.1"))
+    new ipAddress[16];
+    GetPlayerIp(playerid, ipAddress, sizeof(ipAddress));
+    if (!strcmp(ipAddress, "127.0.0.1"))
     {
         SendClientMessage(playerid, 0xFFFFFFFF, "Welcome to your server, master :)");
     }
@@ -48,6 +48,9 @@ PAWN is case-sensitive. GetPlayerIP will not work. This function does not work w
 - [GetPlayerName](GetPlayerName): Get a player's name.
 - [GetPlayerPing](GetPlayerPing): Get the ping of a player.
 - [GetPlayerVersion](GetPlayerVerion): Get a player's client-version.
+
+## Related Callbacks
+
 - [OnIncomingConnection](../callbacks/OnIncomingConnection): Called when a player is attempting to connect to the server.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.
