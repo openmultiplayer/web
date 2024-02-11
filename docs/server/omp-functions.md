@@ -29,32 +29,25 @@ This page contains all the functions and callbacks that were added in open.mp
 | [IsPlayerInModShop](../scripting/functions/IsPlayerInModShop)                                           |
 | [GetPlayerDialogData](../scripting/functions/GetPlayerDialogData)                                       |
 | [GetPlayerDialogID](../scripting/functions/GetPlayerDialogID)                                           |
-| [GetPlayerDialog](../scripting/functions/GetPlayerDialog)                                               |
+| [HidePlayerDialog](../scripting/functions/HidePlayerDialog)                                             |
 | [GetPlayerWeather](../scripting/functions/GetPlayerWeather)                                             |
 | [GetPlayerSkillLevel](../scripting/functions/GetPlayerSkillLevel)                                       |
-| [GetPlayerClass](../scripting/functions/GetPlayerClass)                                                 |
 | [GetPlayerRawIp](../scripting/functions/GetPlayerRawIp)                                                 |
 | [GetPlayerAttachedObject](../scripting/functions/GetPlayerAttachedObject)                               |
+| [GetSpawnInfo](../scripting/functions/GetSpawnInfo)                                                     |
+| [GetPlayerBuildingsRemoved](../scripting/functions/GetPlayerBuildingsRemoved)                           |
+| [RemovePlayerWeapon](../scripting/functions/RemovePlayerWeapon)                                         |
+| [AllowPlayerWeapons](../scripting/functions/AllowPlayerWeapons)                                         |
 | [IsPlayerControllable](../scripting/functions/IsPlayerControllable)                                     |
 | [IsPlayerCameraTargetEnabled](../scripting/functions/IsPlayerCameraTargetEnabled)                       |
 | [TogglePlayerGhostMode](../scripting/functions/TogglePlayerGhostMode)                                   |
 | [GetPlayerGhostMode](../scripting/functions/GetPlayerGhostMode)                                         |
-| [AllowPlayerWeapons](../scripting/functions/AllowPlayerWeapons)                                         |
 | [GetPlayerAnimationFlags](../scripting/functions/GetPlayerAnimationFlags)                               |
 | [IsPlayerUsingOfficialClient](../scripting/functions/IsPlayerUsingOfficialClient)                       |
 | [IsPlayerInDriveByMode](../scripting/functions/IsPlayerInDriveByMode)                                   |
 | [IsPlayerCuffed](../scripting/functions/IsPlayerCuffed)                                                 |
 | [SetPlayerAdmin](../scripting/functions/SetPlayerAdmin)                                                 |
 | [GetPlayers](../scripting/functions/GetPlayers)                                                         |
-
-## Checkpoint
-
-| Name                                                                                                    |
-|---------------------------------------------------------------------------------------------------------|
-| [IsPlayerCheckpointActive](../scripting/functions/IsPlayerCheckpointActive)                             |
-| [GetPlayerCheckpoint](../scripting/functions/GetPlayerCheckpoint)                                       |
-| [IsPlayerRaceCheckpointActive](../scripting/functions/IsPlayerRaceCheckpointActive)                     |
-| [GetPlayerRaceCheckpoint](../scripting/functions/GetPlayerRaceCheckpoint)                               |
 
 ## Object
 
@@ -135,27 +128,6 @@ This page contains all the functions and callbacks that were added in open.mp
 | [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)                                 |
 | [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)                               |
 
-## Database
-
-| Name                                                                                                    |
-|---------------------------------------------------------------------------------------------------------|
-| [DB_ExecuteQuery](../scripting/functions/DB_ExecuteQuery)                                               |
-| [DB_FreeResultSet](../scripting/functions/DB_FreeResultSet)                                             |
-| [DB_GetDatabaseConnectionCount](../scripting/functions/DB_GetDatabaseConnectionCount)                   |
-| [DB_GetDatabaseResultSetCount](../scripting/functions/DB_GetDatabaseResultSetCount)                     |
-| [DB_GetFieldCount](../scripting/functions/DB_GetFieldCount)                                             |
-| [DB_GetFieldFloat](../scripting/functions/DB_GetFieldFloat)                                             |
-| [DB_GetFieldFloatByName](../scripting/functions/DB_GetFieldFloatByName)                                 |
-| [DB_GetFieldInt](../scripting/functions/DB_GetFieldInt)                                                 |
-| [DB_GetFieldIntByName](../scripting/functions/DB_GetFieldIntByName)                                     |
-| [DB_GetFieldName](../scripting/functions/DB_GetFieldName)                                               |
-| [DB_GetFieldString](../scripting/functions/DB_GetFieldString)                                           |
-| [DB_GetFieldStringByName](../scripting/functions/DB_GetFieldStringByName)                               |
-| [DB_GetLegacyDBResult](../scripting/functions/DB_GetLegacyDBResult)                                     |
-| [DB_GetMemHandle](../scripting/functions/DB_GetMemHandle)                                               |
-| [DB_GetRowCount](../scripting/functions/DB_GetRowCount)                                                 |
-| [DB_SelectNextRow](../scripting/functions/DB_SelectNextRow)                                             |
-
 ## Vehicle
 
 | Name                                                                                                    |
@@ -169,6 +141,7 @@ This page contains all the functions and callbacks that were added in open.mp
 | [GetVehicleHydraReactorAngle](../scripting/functions/GetVehicleHydraReactorAngle)                       |
 | [GetVehicleInterior](../scripting/functions/GetVehicleInterior)                                         |
 | [GetVehicleLandingGearState](../scripting/functions/GetVehicleLandingGearState)                         |
+| [GetVehicleDriver](../scripting/functions/GetVehicleDriver)                                             |
 | [GetVehicleLastDriver](../scripting/functions/GetVehicleLastDriver)                                     |
 | [GetVehicleMatrix](../scripting/functions/GetVehicleMatrix)                                             |
 | [GetVehicleModelCount](../scripting/functions/GetVehicleModelCount)                                     |
@@ -197,7 +170,6 @@ This page contains all the functions and callbacks that were added in open.mp
 | [SetVehicleSpawnInfo](../scripting/functions/SetVehicleSpawnInfo)                                       |
 | [ToggleVehicleSirenEnabled](../scripting/functions/ToggleVehicleSirenEnabled)                           |
 | [VehicleColourIndexToColour](../scripting/functions/VehicleColourIndexToColour)                         |
-| [GetVehicleDriver](../scripting/functions/GetVehicleDriver)                                             |
 | [GetVehicles](../scripting/functions/GetVehicles)                                                       |
 
 ## TextDraw
@@ -269,6 +241,48 @@ This page contains all the functions and callbacks that were added in open.mp
 | [HideGameTextForAll](../scripting/functions/HideGameTextForAll)                                         |
 | [HideGameTextForPlayer](../scripting/functions/HideGameTextForPlayer)                                   |
 
+## GangZone
+
+| Name                                                                                                    |
+|---------------------------------------------------------------------------------------------------------|
+| [IsValidGangZone](../scripting/functions/IsValidGangZone)                                               |
+| [IsPlayerInGangZone](../scripting/functions/IsPlayerInGangZone)                                         |
+| [IsGangZoneVisibleForPlayer](../scripting/functions/IsGangZoneVisibleForPlayer)                         |
+| [GangZoneGetColourForPlayer](../scripting/functions/GangZoneGetColourForPlayer)                         |
+| [GangZoneGetFlashColourForPlayer](../scripting/functions/GangZoneGetFlashColourForPlayer)               |
+| [IsGangZoneFlashingForPlayer](../scripting/functions/IsGangZoneFlashingForPlayer)                       |
+| [GangZoneGetPos](../scripting/functions/GangZoneGetPos)                                                 |
+| [UseGangZoneCheck](../scripting/functions/UseGangZoneCheck)                                             |
+| [CreatePlayerGangZone](../scripting/functions/CreatePlayerGangZone)                                     |
+| [PlayerGangZoneDestroy](../scripting/functions/PlayerGangZoneDestroy)                                   |
+| [PlayerGangZoneShow](../scripting/functions/PlayerGangZoneShow)                                         |
+| [PlayerGangZoneHide](../scripting/functions/PlayerGangZoneHide)                                         |
+| [PlayerGangZoneFlash](../scripting/functions/PlayerGangZoneFlash)                                       |
+| [PlayerGangZoneStopFlash](../scripting/functions/PlayerGangZoneStopFlash)                               |
+| [PlayerGangZoneGetColour](../scripting/functions/PlayerGangZoneGetColour)                               |
+| [PlayerGangZoneGetFlashColour](../scripting/functions/PlayerGangZoneGetFlashColour)                     |
+| [PlayerGangZoneGetPos](../scripting/functions/PlayerGangZoneGetPos)                                     |
+| [IsValidPlayerGangZone](../scripting/functions/IsValidPlayerGangZone)                                   |
+| [IsPlayerInPlayerGangZone](../scripting/functions/IsPlayerInPlayerGangZone)                             |
+| [IsPlayerGangZoneVisible](../scripting/functions/IsPlayerGangZoneVisible)                               |
+| [IsPlayerGangZoneFlashing](../scripting/functions/IsPlayerGangZoneFlashing)                             |
+| [UsePlayerGangZoneCheck](../scripting/functions/UsePlayerGangZoneCheck)                                 |
+| [OnPlayerEnterGangZone](../scripting/callbacks/OnPlayerEnterGangZone)                                   |
+| [OnPlayerLeaveGangZone](../scripting/callbacks/OnPlayerLeaveGangZone)                                   |
+| [OnPlayerEnterPlayerGangZone](../scripting/callbacks/OnPlayerEnterPlayerGangZone)                       |
+| [OnPlayerLeavePlayerGangZone](../scripting/callbacks/OnPlayerLeavePlayerGangZone)                       |
+| [OnPlayerClickGangZone](../scripting/callbacks/OnPlayerClickGangZone)                                   |
+| [OnPlayerClickPlayerGangZone](../scripting/callbacks/OnPlayerClickPlayerGangZone)                       |
+
+## Checkpoint
+
+| Name                                                                                                    |
+|---------------------------------------------------------------------------------------------------------|
+| [IsPlayerCheckpointActive](../scripting/functions/IsPlayerCheckpointActive)                             |
+| [GetPlayerCheckpoint](../scripting/functions/GetPlayerCheckpoint)                                       |
+| [IsPlayerRaceCheckpointActive](../scripting/functions/IsPlayerRaceCheckpointActive)                     |
+| [GetPlayerRaceCheckpoint](../scripting/functions/GetPlayerRaceCheckpoint)                               |
+
 ## Actor
 
 | Name                                                                                                    |
@@ -315,6 +329,7 @@ This page contains all the functions and callbacks that were added in open.mp
 |---------------------------------------------------------------------------------------------------------|
 | [GetAvailableClasses](../scripting/functions/GetAvailableClasses)                                       |
 | [EditPlayerClass](../scripting/functions/EditPlayerClass)                                               |
+| [GetPlayerClass](../scripting/functions/GetPlayerClass)                                                 |
 
 ## Menu
 
@@ -329,6 +344,27 @@ This page contains all the functions and callbacks that were added in open.mp
 | [IsMenuDisabled](../scripting/functions/IsMenuDisabled)                                                 |
 | [IsMenuRowDisabled](../scripting/functions/IsMenuRowDisabled)                                           |
 
+## Database
+
+| Name                                                                                                    |
+|---------------------------------------------------------------------------------------------------------|
+| [DB_ExecuteQuery](../scripting/functions/DB_ExecuteQuery)                                               |
+| [DB_FreeResultSet](../scripting/functions/DB_FreeResultSet)                                             |
+| [DB_GetDatabaseConnectionCount](../scripting/functions/DB_GetDatabaseConnectionCount)                   |
+| [DB_GetDatabaseResultSetCount](../scripting/functions/DB_GetDatabaseResultSetCount)                     |
+| [DB_GetFieldCount](../scripting/functions/DB_GetFieldCount)                                             |
+| [DB_GetFieldFloat](../scripting/functions/DB_GetFieldFloat)                                             |
+| [DB_GetFieldFloatByName](../scripting/functions/DB_GetFieldFloatByName)                                 |
+| [DB_GetFieldInt](../scripting/functions/DB_GetFieldInt)                                                 |
+| [DB_GetFieldIntByName](../scripting/functions/DB_GetFieldIntByName)                                     |
+| [DB_GetFieldName](../scripting/functions/DB_GetFieldName)                                               |
+| [DB_GetFieldString](../scripting/functions/DB_GetFieldString)                                           |
+| [DB_GetFieldStringByName](../scripting/functions/DB_GetFieldStringByName)                               |
+| [DB_GetLegacyDBResult](../scripting/functions/DB_GetLegacyDBResult)                                     |
+| [DB_GetMemHandle](../scripting/functions/DB_GetMemHandle)                                               |
+| [DB_GetRowCount](../scripting/functions/DB_GetRowCount)                                                 |
+| [DB_SelectNextRow](../scripting/functions/DB_SelectNextRow)                                             |
+
 ## Core
 
 | Name                                                                                                    |
@@ -341,6 +377,7 @@ This page contains all the functions and callbacks that were added in open.mp
 | [IsValidAnimationLibrary](../scripting/functions/IsValidAnimationLibrary)                               |
 | [ArePlayerWeaponsAllowed](../scripting/functions/ArePlayerWeaponsAllowed)                               |
 | [AreInteriorWeaponsAllowed](../scripting/functions/AreInteriorWeaponsAllowed)                           |
+| [GetWeaponSlot](../scripting/functions/GetWeaponSlot)                                                   |
 | [GetWeather](../scripting/functions/GetWeather)                                                         |
 | [GetWorldTime](../scripting/functions/GetWorldTime)                                                     |
 | [ToggleChatTextReplacement](../scripting/functions/ToggleChatTextReplacement)                           |
