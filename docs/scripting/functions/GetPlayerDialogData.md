@@ -39,18 +39,20 @@ enum
 
 ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Enter your password below:", "Login", "Cancel");
 
-new DIALOG_STYLE:style,
+new 
+    DIALOG_STYLE:style,
     title[32],
     body[64],
     button1[16],
     button2[16];
 
-GetPlayerDialogData(playerid, style, title, sizeof title, body, sizeof body, button1, sizeof button1, button2, sizeof button2);
+GetPlayerDialogData(playerid, style, title, sizeof(title), body, sizeof(body), button1, sizeof(button1), button2, sizeof(button2));
 ```
 
 ## Related Functions
 
 - [ShowPlayerDialog](ShowPlayerDialog): Shows the player a synchronous (only one at a time) dialog box.
+- [HidePlayerDialog](HidePlayerDialog): Hides the dialog currently show to the player.
 - [GetPlayerDialogID](GetPlayerDialogID): Get the ID of the dialog currently show to the player.
 
 ## Related Callbacks

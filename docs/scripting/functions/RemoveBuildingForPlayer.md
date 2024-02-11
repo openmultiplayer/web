@@ -58,5 +58,6 @@ There appears to be a limit of around 1000 lines/objects. There is no workaround
 
 ## Related Functions
 
+- [GetPlayerBuildingsRemoved](GetPlayerBuildingsRemoved): Gets the number of removed buildings for a player.
 - [DestroyObject](DestroyObject): Destroy an object.
 - [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.
