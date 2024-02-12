@@ -3,7 +3,7 @@ title: Changelog
 description: open.mp development progress and changelog.
 ---
 
-## **v1.2.0.2670 (Latest)**
+## **[v1.2.0.2670](https://github.com/openmultiplayer/open.mp/releases/tag/v1.2.0.2670) (Latest)**
 
 We encourage every open.mp server to update to this version. There has been not only noticeable performance improvements, but also **critical security fixes**.
 
@@ -12,8 +12,8 @@ We encourage every open.mp server to update to this version. There has been not 
 **Added:**
 
 - New config variables to set banners and discord invite link to be shown in [open.mp launcher](https://github.com/openmultiplayer/launcher/releases/latest).
-- New config variables for join messages. (`logging.log_connection_messages`)
-- New config variables for animation validation. (`game.validate_animations`)
+- New config variable for join messages. (`logging.log_connection_messages`)
+- New config variable for animation validation. (`game.validate_animations`)
 - New definition to allow mixed spelling functions in your code. (`#define MIXED_SPELLINGS`)
 
 **Fixes:**
@@ -25,7 +25,7 @@ We encourage every open.mp server to update to this version. There has been not 
 - Validate damage reasons (weapons) in various places.
 - Synchronize bans so multiple players are banned at once if needed.
 
-## **v1.1.0.2612**
+## [v1.1.0.2612](https://github.com/openmultiplayer/open.mp/releases/tag/v1.1.0.2612)
 
 <details>
 <summary>Click here</summary>
@@ -53,7 +53,7 @@ It can be found at https://github.com/openmultiplayer/launcher/releases
 
 </details>
 
-## RC2
+## [RC2](https://github.com/openmultiplayer/open.mp/releases/tag/v1-RC2)
 
 <details>
 <summary>Click here</summary>
@@ -129,7 +129,7 @@ Release Candidate 2 (RC2) of the open.mp server.
 
 </details>
 
-## RC1
+## [RC1](https://github.com/openmultiplayer/open.mp/releases/tag/v1-RC1)
 
 <details>
 <summary>Click here</summary>
@@ -148,7 +148,7 @@ Release Candidate 2 (RC2) of the open.mp server.
 
 </details>
 
-## Beta v0.0.11.2331
+## [Beta v0.0.11.2331](https://github.com/openmultiplayer/open.mp/releases/tag/v0.0.11.2331)
 
 <details>
 <summary>Click here</summary>
