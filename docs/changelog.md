@@ -27,7 +27,7 @@ We encourage every open.mp server to update to this version. There has been not 
 
 ## **v1.1.0.2612**
 
-<details style='cursor:pointer'>
+<details>
 <summary>Click here</summary>
 
 open.mp is now out of RC phase, and we are happy to announce we are finally stable enough to go down the consistent development road. with v1.1.0.2612, we fixed a lot of bugs and issues, and resolved so many behavior differences. so make sure you update to latest builds and run your server smoothly.
@@ -55,7 +55,7 @@ It can be found at https://github.com/openmultiplayer/launcher/releases
 
 ## RC2
 
-<details style='cursor:pointer'>
+<details>
 <summary>Click here</summary>
 
 Release Candidate 2 (RC2) of the open.mp server.
@@ -131,7 +131,7 @@ Release Candidate 2 (RC2) of the open.mp server.
 
 ## RC1
 
-<details style='cursor:pointer'>
+<details>
 <summary>Click here</summary>
 
 [Release Candidate 1 (RC1)](https://www.open.mp/blog/release-candidate-1) of the open.mp server! We're now out of beta. 
@@ -150,7 +150,7 @@ Release Candidate 2 (RC2) of the open.mp server.
 
 ## Beta v0.0.11.2331
 
-<details style='cursor:pointer'>
+<details>
 <summary>Click here</summary>
 
 ### Server
