@@ -5,6 +5,8 @@ description: open.mp development progress and changelog.
 
 ## **v1.2.0.2670 (Latest)**
 
+We encourage every open.mp server to update to this version. There has been not only noticeable performance improvements, but also **critical security fixes**.
+
 ### Server
 
 **Added:**
@@ -12,6 +14,7 @@ description: open.mp development progress and changelog.
 - New config variables to set banners and discord invite link to be shown in [open.mp launcher](https://github.com/openmultiplayer/launcher/releases/latest).
 - New config variables for join messages. (`logging.log_connection_messages`)
 - New config variables for animation validation. (`game.validate_animations`)
+- New definition to enable mixed spellings in your code. (`#define MIXED_SPELLINGS`)
 
 **Fixes:**
 
@@ -37,7 +40,8 @@ It can be found at https://github.com/openmultiplayer/launcher/releases
 
 **Added:**
 
-- x64 version.
+- x64 version of omp-server.
+- Add `.so` to plugin names automatically.
 
 **Changes:**
 
@@ -398,5 +402,10 @@ Release Candidate 1 (RC1) of the open.mp server! We're now out of beta.
 - [OnPlayerEnterPlayerGangZone](scripting/callbacks/OnPlayerEnterPlayerGangZone)
 - [OnPlayerLeavePlayerGangZone](scripting/callbacks/OnPlayerLeavePlayerGangZone)
 - [OnPlayerClickPlayerGangZone](scripting/callbacks/OnPlayerClickPlayerGangZone)
+| [OnPickupStreamIn](../scripting/callbacks/OnPickupStreamIn)                                             |
+| [OnPickupStreamOut](../scripting/callbacks/OnPickupStreamOut)                                           |
+| [OnPlayerPickUpPlayerPickup](../scripting/callbacks/OnPlayerPickUpPlayerPickup)                         |
+| [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)                                 |
+| [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)                               |
 
 </details>
