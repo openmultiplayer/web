@@ -134,7 +134,7 @@ Release Candidate 2 (RC2) of the open.mp server.
 <details style='cursor:pointer'>
 <summary>Click here</summary>
 
-Release Candidate 1 (RC1) of the open.mp server! We're now out of beta. 
+[Release Candidate 1 (RC1)](https://www.open.mp/blog/release-candidate-1) of the open.mp server! We're now out of beta. 
 
 ### Server
 
