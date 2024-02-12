@@ -402,10 +402,10 @@ Release Candidate 1 (RC1) of the open.mp server! We're now out of beta.
 - [OnPlayerEnterPlayerGangZone](scripting/callbacks/OnPlayerEnterPlayerGangZone)
 - [OnPlayerLeavePlayerGangZone](scripting/callbacks/OnPlayerLeavePlayerGangZone)
 - [OnPlayerClickPlayerGangZone](scripting/callbacks/OnPlayerClickPlayerGangZone)
-| [OnPickupStreamIn](../scripting/callbacks/OnPickupStreamIn)                                             |
-| [OnPickupStreamOut](../scripting/callbacks/OnPickupStreamOut)                                           |
-| [OnPlayerPickUpPlayerPickup](../scripting/callbacks/OnPlayerPickUpPlayerPickup)                         |
-| [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)                                 |
-| [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)                               |
+- [OnPickupStreamIn](../scripting/callbacks/OnPickupStreamIn)
+- [OnPickupStreamOut](../scripting/callbacks/OnPickupStreamOut)
+- [OnPlayerPickUpPlayerPickup](../scripting/callbacks/OnPlayerPickUpPlayerPickup)
+- [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)
+- [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)
 
 </details>
