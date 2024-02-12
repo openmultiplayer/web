@@ -36,6 +36,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
+<hr />
+
+**Widescreen on:**
+
+![](https://i.ibb.co/Zcc2qmD/widescreen-on.png)
+
+**Widescreen off:**
+
+![](https://i.ibb.co/jb1YcQS/widescreen-off.png)
+
 ## Related Functions
 
 - [IsPlayerWidescreenToggled](IsPlayerWidescreenToggled): Checks if a player widescreen is on or off.
