@@ -14,7 +14,7 @@ We encourage every open.mp server to update to this version. There has been not 
 - New config variables to set banners and discord invite link to be shown in [open.mp launcher](https://github.com/openmultiplayer/launcher/releases/latest).
 - New config variables for join messages. (`logging.log_connection_messages`)
 - New config variables for animation validation. (`game.validate_animations`)
-- New definition to enable mixed spellings in your code. (`#define MIXED_SPELLINGS`)
+- New definition to allow mixed spelling functions in your code. (`#define MIXED_SPELLINGS`)
 
 **Fixes:**
 
