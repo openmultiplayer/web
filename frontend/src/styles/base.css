@@ -65,3 +65,7 @@ table td {
     background: var(--chakra-colors-gray-800);
   }
 }
+
+details {
+  cursor: pointer;
+}
