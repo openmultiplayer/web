@@ -25,6 +25,10 @@ We encourage every open.mp server to update to this version. There has been not 
 - Validate damage reasons (weapons) in various places.
 - Synchronize bans so multiple players are banned at once if needed.
 
+<br />
+
+<hr />
+
 ## [v1.1.0.2612](https://github.com/openmultiplayer/open.mp/releases/tag/v1.1.0.2612)
 
 <details>
@@ -52,6 +56,10 @@ It can be found at https://github.com/openmultiplayer/launcher/releases
 - Fixed `GetVehicleLastDriver` returning 0 when invalid `vehicleid` is passed.
 
 </details>
+
+<br />
+
+<hr />
 
 ## [RC2](https://github.com/openmultiplayer/open.mp/releases/tag/v1-RC2)
 
@@ -129,6 +137,10 @@ Release Candidate 2 (RC2) of the open.mp server.
 
 </details>
 
+<br />
+
+<hr />
+
 ## [RC1](https://github.com/openmultiplayer/open.mp/releases/tag/v1-RC1)
 
 <details>
@@ -147,6 +159,10 @@ Release Candidate 2 (RC2) of the open.mp server.
 - Memory reduction.
 
 </details>
+
+<br />
+
+<hr />
 
 ## [Beta v0.0.11.2331](https://github.com/openmultiplayer/open.mp/releases/tag/v0.0.11.2331)
 
