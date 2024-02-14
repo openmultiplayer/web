@@ -66,6 +66,6 @@ table td {
   }
 }
 
-details {
+details > summary {
   cursor: pointer;
 }
