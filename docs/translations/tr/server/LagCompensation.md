@@ -1,7 +1,6 @@
 ---
 title: "Gecikme Telafisi"
 description: Gecikme telafisi açıklaması.
-
 ---
 
 <VersionWarn name='feature' version='SA-MP 0.3z' />
