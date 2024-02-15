@@ -7,7 +7,6 @@ import DiscordIcon from "src/components/icons/Discord";
 import { APIError } from "src/types/_generated_Error";
 import OAuthButton from "src/components/OAuthButton";
 import { User, UserSchema } from "src/types/_generated_User";
-import NotificationsView from "src/components/notifications/NotificationsView";
 
 const placeholder = (idx: string, data: any, error?: APIError): JSX.Element => {
   if (error) return <span>(error)</span>;
@@ -59,10 +58,6 @@ const Page = () => (
       <a href="/logout" className="link">
         Logout
       </a>
-    </section>
-    <section className="measure-wide center pa3">
-      <NotificationsView />
-      {/* <SubscriptionsView /> */}
     </section>
   </>
 );

@@ -10,18 +10,19 @@ tags: ["player", "3dtextlabel"]
 
 Creates a 3D Text Label only for a specific player
 
-| Name            | Description                                                                     |
-| --------------- | ------------------------------------------------------------------------------- |
-| playerid        | The player which should see the newly created 3DText Label.                     |
-| text[]          | The text to display.                                                            |
-| color           | The text color                                                                  |
-| x               | X Coordinate (or offset if attached)                                            |
-| y               | Y Coordinate (or offset if attached)                                            |
-| z               | Z Coordinate (or offset if attached)                                            |
-| DrawDistance    | The distance where you are able to see the 3D Text Label                        |
-| attachedplayer  | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
-| attachedvehicle | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
-| testLOS         | 0/1 Test the line-of-sight so this text can't be seen through walls             |
+| Name             | Description                                                                     |
+|------------------|---------------------------------------------------------------------------------|
+| playerid         | The player which should see the newly created 3DText Label.                     |
+| text[]           | The text to display.                                                            |
+| color            | The text color                                                                  |
+| x                | X Coordinate (or offset if attached)                                            |
+| y                | Y Coordinate (or offset if attached)                                            |
+| z                | Z Coordinate (or offset if attached)                                            |
+| DrawDistance     | The distance where you are able to see the 3D Text Label                        |
+| attachedplayer   | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
+| attachedvehicle  | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
+| testLOS          | 0/1 Test the line-of-sight so this text can't be seen through walls             |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                      |
 
 ## Returns
 
@@ -30,15 +31,22 @@ The ID of the newly created Player 3D Text Label, or INVALID_3DTEXT_ID if the Pl
 ## Examples
 
 ```c
-if (strcmp(cmd, "/playerlabel", true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new
-        PlayerText3D: playerTextId,
-        Float: X, Float: Y, Float: Z;
+    if (!strcmp(cmdtext, "/playerlabel", true))
+    {
+        new
+            PlayerText3D: playerTextId,
+            name[MAX_PLAYER_NAME],
+            Float: X, Float: Y, Float: Z;
 
-    GetPlayerPos(playerid, X, Y, Z);
-    playerTextId = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 0x008080FF, X, Y, Z, 40.0);
-    return 1;
+        GetPlayerName(playerid, name, sizeof(name));
+        GetPlayerPos(playerid, X, Y, Z);
+
+        playerTextId = CreatePlayer3DTextLabel(playerid, "Hello %s!\nI'm at your position", 0x008080FF, X, Y, Z, 40.0, name);
+        return 1;
+    }
+    return 0;
 }
 ```
 
@@ -58,10 +66,16 @@ If text[] is empty, the server/clients next to the text might crash!
 
 ## Related Functions
 
-- [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
-- [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
-- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
-- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
-- [Update3DTextLabelText](Update3DTextLabelText): Change the text of a 3D text label.
 - [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
+- [IsValidPlayer3DTextLabel](IsValidPlayer3DTextLabel): Checks if a player's 3D text label is valid.
 - [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.
+- [GetPlayer3DTextLabelText](GetPlayer3DTextLabelText): Gets the player's 3D text label text.
+- [GetPlayer3DTextLabelColour](GetPlayer3DTextLabelColour): Gets the player's 3D text label colour.
+- [GetPlayer3DTextLabelPos](GetPlayer3DTextLabelPos): Gets the player's 3D text label position.
+- [GetPlayer3DTextLabelDrawDistance](GetPlayer3DTextLabelDrawDistance): Gets the player's 3D text label draw distance.
+- [SetPlayer3DTextLabelDrawDistance](SetPlayer3DTextLabelDrawDistance): Sets the player's 3D text label draw distance.
+- [GetPlayer3DTextLabelVirtualWorld](GetPlayer3DTextLabelVirtualWorld): Gets the player's 3D text label virtual world id.
+- [SetPlayer3DTextLabelVirtualWorld](SetPlayer3DTextLabelVirtualWorld): Sets the player's 3D text label virtual world id.
+- [GetPlayer3DTextLabelLOS](GetPlayer3DTextLabelLOS): Gets the player's 3D text label line-of-sight.
+- [SetPlayer3DTextLabelLOS](SetPlayer3DTextLabelLOS): Sets the player's 3D text label line-of-sight.
+- [Create3DTextLabel](Create3DTextLabel): Create a global 3D text label.

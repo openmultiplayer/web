@@ -95,3 +95,7 @@ Known Bug(s): If a player's skin is set when they are crouching, in a vehicle, o
 
 - [GetPlayerSkin](GetPlayerSkin): Get a player's current skin.
 - [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.
+
+## Related Resources
+
+- [Skin IDs](../resources/skins)

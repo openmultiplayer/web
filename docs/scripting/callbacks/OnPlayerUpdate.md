@@ -23,19 +23,22 @@ It is always called first in filterscripts.
 ## Examples
 
 ```c
+// Example 1
+forward OnPlayerWeaponChange(playerid, oldweapon, newweapon);
+
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // Return the player's current weapon
     if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // If he changed weapons since the last update
     {
         // Lets call a callback named OnPlayerChangeWeapon
-        OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
+        CallLocalFunction("OnPlayerWeaponChange", "iii", playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
         SetPVarInt(playerid, "iCurrentWeapon", iCurWeap);//Update the weapon variable
     }
     return 1; // Send this update to other players.
 }
 
-stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
+public OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
 {
     new     s[128],
         oWeapon[24],
@@ -47,7 +50,10 @@ stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
     format(s, sizeof(s), "You changed weapon from %s to %s!", oWeapon, nWeapon);
 
     SendClientMessage(playerid, 0xFFFFFFFF, s);
+    return 1;
 }
+
+// Example 2
 public OnPlayerUpdate(playerid)
 {
     new Float:fHealth;

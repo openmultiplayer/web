@@ -40,3 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Related Functions
 
 - [PlayerPlaySound](PlayerPlaySound): Play a sound for a player.
+
+## Related Resources
+
+- [Crime IDs](../resources/crimelist)

@@ -12,7 +12,7 @@ import {
   Text,
   useColorMode,
   useColorModeValue,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
 import { GetStaticPropsContext } from "next";
 import Head from "next/head";
@@ -25,16 +25,13 @@ import { MarkdownContent } from "src/mdx-helpers/types";
 //Components
 import Card from "../components/site/Card";
 //Styles
-import heroStyles from "../styles/Hero.module.css";
+import React from "react";
 import Roads from "src/components/icons/Roads";
+import heroStyles from "../styles/Hero.module.css";
 
-const DownloadButton = () => {
+const DownloadButton = (props: { link: string; title: string; tooltip: string}) => {
   return (
-    <Link
-      href="https://github.com/openmultiplayer/open.mp/releases"
-      _hover={{ textDecoration: "none" }}
-      isExternal
-    >
+    <Link href={props.link} _hover={{ textDecoration: "none" }} isExternal>
       <Button
         bg="#9083D2"
         color="white"
@@ -49,9 +46,9 @@ const DownloadButton = () => {
           outline: "2px solid #695AD3",
           transition: "outline 0.3s",
         }}
-        title="open.mp is released"
+        title={props.tooltip}
       >
-        Download open.mp (server)
+      {props.title}
       </Button>
     </Link>
   );
@@ -91,7 +88,7 @@ const Home = () => {
     {
       heading: "Fully backwards compatible with existing scripts and clients",
       bodyText:
-        "Got an old AMX lying about?  Load it up on the open.mp server straight out the box and join you friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
+        "Got an old AMX lying about?  Load it up on the open.mp server straight out of the box and join your friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
       buttonLink: "/docs",
       buttonText: "Getting Started",
       img: "/images/assets/f1.png",
@@ -101,7 +98,8 @@ const Home = () => {
       heading: "New and improved scripting system",
       bodyText:
         "We've stuck with pawn, but with a new compiler engineered to make your code more robust, and more functions to manipulate the server and client.  If that's still not enough there's an...",
-      buttonLink: "https://github.com/openmultiplayer/omp-stdlib/#openmp-includes",
+      buttonLink:
+        "https://github.com/openmultiplayer/omp-stdlib/#openmp-includes",
       buttonText: "Learn about the improvements",
       img: "/images/assets/f5.png",
       imgAlt: "pawn logo",
@@ -140,31 +138,38 @@ const Home = () => {
       alt: "discord icon",
       src: "/images/assets/discord-icon.svg",
       href: "https://discord.com/invite/samp",
+      size: 45,
     },
     {
       alt: "facebook icon",
       src: "/images/assets/facebook.svg",
       href: "https://www.facebook.com/openmultiplayer",
+      size: 33,
     },
     {
       alt: "instagram icon",
       src: "/images/assets/instagram.svg",
       href: "https://instagram.com/openmultiplayer/",
+      size: 33,
     },
     {
       alt: "twitch icon",
       src: "/images/assets/twitch.svg",
       href: "https://twitch.tv/openmultiplayer",
+      size: 29,
     },
     {
-      alt: "twitter icon",
-      src: "/images/assets/twitter.svg",
-      href: "https://twitter.com/openmultiplayer",
+      alt: "x icon",
+      src: "/images/assets/x.svg",
+      href: "https://x.com/openmultiplayer",
+      size: 29,
+      background: false,
     },
     {
       alt: "youtube icon",
       src: "/images/assets/youtube.svg",
       href: "https://youtube.com/openmultiplayer",
+      size: 35,
     },
   ];
 
@@ -176,15 +181,7 @@ const Home = () => {
 
       <main>
         <Box className={heroStyles.hero} py="2em" px="1em">
-          {/*
-            NOTE: Temporary announcement for new forum.
-          */}
-
           <Announcement />
-
-          {/*
-            Remove once feedback and testing is done.
-          */}
 
           {/* <Box
             className={cardStyles.announcement}
@@ -231,7 +228,16 @@ const Home = () => {
               </Text>
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
-                  <DownloadButton />
+                  <DownloadButton
+                    title={"Download open.mp (server)"}
+                    tooltip="open.mp is released!"
+                    link={"https://github.com/openmultiplayer/open.mp/releases"}
+                  />
+                  <DownloadButton
+                    title={"Download open.mp launcher"}
+                    tooltip="Download open.mp launcher"
+                    link={"https://github.com/openmultiplayer/launcher/releases/latest"}
+                  />
                   <DocumentationButton />
                 </Flex>
               </HStack>
@@ -242,20 +248,47 @@ const Home = () => {
           </Flex>
           <Center>
             <HStack
-              gridGap="1.2em"
+              gridGap="0.5em"
               color="#7466D4"
               mt={{ base: "3em", md: "0" }}
+              style={{ justifyContent: "space-around" }}
             >
-              {socials.map((social, index) => (
-                <a key={index} href={social.href} target="__blank">
-                  <Image
-                    src={social.src}
-                    alt={social.alt}
-                    width="24px"
-                    height="24px"
-                  />
-                </a>
-              ))}
+              {socials.map((social, index) => {
+                const iconSize = `${social.size}px`;
+                const style: React.CSSProperties = {
+                  display: "flex",
+                  justifyContent: "center",
+                  ...(social.background && {
+                    backgroundColor: "#7466d4",
+                    width: `${social.size + 12}px`,
+                    height: `${social.size + 12}px`,
+                    borderRadius: 5,
+                  }),
+                };
+
+                return (
+                  <Box
+                    boxSize={10}
+                    alignItems="center"
+                    justifyContent={"center"}
+                    display="flex"
+                  >
+                    <a
+                      key={index}
+                      href={social.href}
+                      style={style}
+                      target="__blank"
+                    >
+                      <Image
+                        src={social.src}
+                        alt={social.alt}
+                        width={iconSize}
+                        height={iconSize}
+                      />
+                    </a>
+                  </Box>
+                );
+              })}
             </HStack>
           </Center>
         </Box>
@@ -275,9 +308,20 @@ const Home = () => {
               <Heading>Ready to get started?</Heading>
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
-                  <Box align="center">
-                    <DownloadButton />
-                  </Box>
+                  <DownloadButton
+                    title={"Download open.mp (server)"}
+                    tooltip="open.mp is released!"
+                    link={
+                      "https://github.com/openmultiplayer/open.mp/releases"
+                    }
+                  />
+                  <DownloadButton
+                    title={"Download open.mp launcher"}
+                    tooltip="Download open.mp launcher"
+                    link={
+                      "https://github.com/openmultiplayer/launcher/releases/latest"
+                    }
+                  />
                   <DocumentationButton />
                 </Flex>
               </HStack>

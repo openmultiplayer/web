@@ -5,7 +5,7 @@ import { useMutationAPI } from "src/fetcher/hooks";
 import { All } from "src/types/_generated_Server";
 
 // TODO: Remove this when server listing is refactored.
-const mutateKey = `${API_ADDRESS}/server/`;
+const mutateKey = `${API_ADDRESS}/servers/`;
 
 type DeleteServerPayload = { time: string };
 type DeleteServerFn = (ip: string) => void;

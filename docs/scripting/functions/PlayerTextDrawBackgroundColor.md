@@ -18,9 +18,7 @@ Adjust the background color of a player-textdraw.
 
 ## Returns
 
-Note
-
-If PlayerTextDrawSetOutline is used with size > 0, the outline color will match the color used in PlayerTextDrawBackgroundColor. Changing the value of color seems to alter the color used in PlayerTextDrawColor
+This function does not return any specific values.
 
 ## Examples
 

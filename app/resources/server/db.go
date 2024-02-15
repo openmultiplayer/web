@@ -2,10 +2,15 @@ package server
 
 import (
 	"context"
+	"os"
+	"strings"
 	"time"
 
+	"github.com/goccy/go-json"
 	"github.com/pkg/errors"
+	"go.uber.org/zap"
 
+	"github.com/openmultiplayer/web/internal/config"
 	"github.com/openmultiplayer/web/internal/db"
 )
 
@@ -13,13 +18,26 @@ var _ Repository = &DB{}
 
 type DB struct {
 	client *db.PrismaClient
+	cfg    config.Config
 }
 
-func New(client *db.PrismaClient) Repository {
-	return &DB{client}
+func New(client *db.PrismaClient, cfg config.Config) Repository {
+	return &DB{client, cfg}
 }
 
 func (s *DB) Upsert(ctx context.Context, e All) error {
+	var svr *db.ServerModel
+	var err error
+
+	// Check whether an IP is blocked or not, not port specific
+	blockedServer, err := s.client.ServerIPBlacklist.
+		FindUnique(db.ServerIPBlacklist.IP.Equals(strings.Split(e.IP, ":")[0])).
+		Exec(ctx)
+
+	if blockedServer != nil {
+		return errors.Wrapf(err, "IP address is blocked")
+	}
+
 	if !e.Active {
 		// If a server is inactive and it doesn't already exist in the database
 		// then no data needs to be written and this is not an error. This only
@@ -33,23 +51,23 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 		return nil
 	}
 
-	var svr *db.ServerModel
-	var err error
 	svr, err = s.client.Server.
 		FindUnique(db.Server.IP.Equals(e.IP)).
 		Update(
 			db.Server.IP.Set(e.IP),
 			db.Server.Hn.Set(e.Core.Hostname),
-			db.Server.Pc.Set(e.Core.Players),
-			db.Server.Pm.Set(e.Core.MaxPlayers),
+			db.Server.Pc.Set(db.BigInt(e.Core.Players)),
+			db.Server.Pm.Set(db.BigInt(e.Core.MaxPlayers)),
 			db.Server.Gm.Set(e.Core.Gamemode),
 			db.Server.La.Set(e.Core.Language),
 			db.Server.Pa.Set(e.Core.Password),
 			db.Server.Vn.Set(e.Core.Version),
+			db.Server.Omp.Set(e.Core.IsOmp),
 			db.Server.Domain.SetOptional(e.Domain),
 			db.Server.Description.SetOptional(e.Description),
 			db.Server.Banner.SetOptional(e.Banner),
 			db.Server.Active.Set(e.Active),
+			db.Server.LastActive.Set(time.Now()),
 		).Exec(ctx)
 	if errors.Is(err, db.ErrNotFound) {
 		if !e.Active {
@@ -59,16 +77,19 @@ func (s *DB) Upsert(ctx context.Context, e All) error {
 			if svr, err = s.client.Server.CreateOne(
 				db.Server.IP.Set(e.IP),
 				db.Server.Hn.Set(e.Core.Hostname),
-				db.Server.Pc.Set(e.Core.Players),
-				db.Server.Pm.Set(e.Core.MaxPlayers),
+				db.Server.Pc.Set(db.BigInt(e.Core.Players)),
+				db.Server.Pm.Set(db.BigInt(e.Core.MaxPlayers)),
 				db.Server.Gm.Set(e.Core.Gamemode),
 				db.Server.La.Set(e.Core.Language),
 				db.Server.Pa.Set(e.Core.Password),
 				db.Server.Vn.Set(e.Core.Version),
 				db.Server.Active.Set(e.Active),
+				db.Server.Omp.Set(e.Core.IsOmp),
+				db.Server.Pending.Set(true),
 				db.Server.Domain.SetOptional(e.Domain),
 				db.Server.Description.SetOptional(e.Description),
 				db.Server.Banner.SetOptional(e.Banner),
+				db.Server.LastActive.Set(time.Now()),
 			).Exec(ctx); err != nil {
 				return errors.Wrapf(err, "failed to create '%v'", e)
 			}
@@ -125,7 +146,7 @@ func (s *DB) GetEssential(context.Context, string) (*Essential, error) {
 
 func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]string, error) {
 	result, err := s.client.Server.
-		FindMany(db.Server.UpdatedAt.Before(time.Now().Add(-before))).
+		FindMany(db.Server.UpdatedAt.Before(time.Now().Add(-before)), db.Server.DeletedAt.IsNull(), db.Server.Pending.Equals(false)).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderDesc)).
 		Exec(ctx)
 	if err != nil {
@@ -138,12 +159,13 @@ func (s *DB) GetServersToQuery(ctx context.Context, before time.Duration) ([]str
 	return addresses, nil
 }
 
-func (s *DB) GetAll(ctx context.Context) ([]All, error) {
+func (s *DB) GetAll(ctx context.Context, lastActive time.Duration) ([]All, error) {
 	result, err := s.client.Server.
-		FindMany(db.Server.Active.Equals(true), db.Server.DeletedAt.IsNull()).
+		FindMany(db.Server.LastActive.After(time.Now().Add(lastActive)), db.Server.DeletedAt.IsNull(), db.Server.Pending.Equals(false)).
 		OrderBy(db.Server.UpdatedAt.Order(db.SortOrderAsc)).
 		With(db.Server.Ru.Fetch()).
 		Exec(ctx)
+
 	if err != nil {
 		return nil, err
 	}
@@ -160,4 +182,88 @@ func (s *DB) SetDeleted(ctx context.Context, ip string, at *time.Time) (*All, er
 		return nil, err
 	}
 	return dbToAPI(*result), err
+}
+
+func (s *DB) GetAllCached(ctx context.Context, lastActive time.Duration) ([]All, error) {
+	result := []All{}
+	list := []All{}
+
+	s.GenerateCacheIfNeeded(ctx, lastActive)
+
+	dat, err := os.ReadFile(s.cfg.CachedServers)
+	if err != nil {
+		return nil, err
+	}
+
+	err = json.Unmarshal(dat, &result)
+	if err != nil {
+		return nil, err
+	}
+
+	for idx := range result {
+		if result[idx].LastActive != nil && result[idx].LastActive.After(time.Now().Add(lastActive)) {
+			list = append(list, result[idx])
+		}
+	}
+
+	return list, nil
+}
+
+func (s *DB) GetByAddressCached(ctx context.Context, address string) (*All, error) {
+	result, err := s.GetAllCached(ctx, -120*time.Hour)
+	if err != nil {
+		return nil, err
+	}
+
+	for _, n := range result {
+		if address == n.IP {
+			return &n, nil
+		}
+	}
+
+	return nil, errors.New("server_not_found")
+}
+
+func (s *DB) GenerateCacheIfNeeded(ctx context.Context, lastActive time.Duration) error {
+	_, err := os.Stat(s.cfg.CachedServers)
+	if errors.Is(err, os.ErrNotExist) {
+		return s.GenerateCache(ctx, lastActive)
+	}
+	return nil
+}
+
+func (s *DB) GenerateCache(ctx context.Context, lastActive time.Duration) error {
+	result, err := s.GetAll(ctx, lastActive)
+	if err != nil {
+		zap.L().Error("There was an error converting native array of servers to JSON data",
+			zap.Error(err))
+		return err
+	}
+	return s.GenerateCacheFromData(ctx, result)
+}
+
+func (s *DB) GenerateCacheFromData(ctx context.Context, servers []All) error {
+	// Let's save all servers info our cache file to be used in our API data processing instead of DB
+	jsonData, err := json.Marshal(servers)
+	if err != nil {
+		zap.L().Error("There was an error converting native array of servers to JSON data",
+			zap.Error(err))
+		return err
+	}
+
+	cacheFile, err := os.Create(s.cfg.CachedServers)
+	if err != nil {
+		zap.L().Error("Could not create server cache file",
+			zap.Error(err))
+		return err
+	}
+
+	_, err = cacheFile.Write(jsonData)
+	if err != nil {
+		zap.L().Error("There was an error writing collected servers into cache file",
+			zap.Error(err))
+		return err
+	}
+
+	return nil
 }

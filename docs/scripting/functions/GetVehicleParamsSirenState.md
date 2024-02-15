@@ -51,3 +51,5 @@ Because a siren state of -1 or 0 means 'off', you cannot use a boolean condition
 :::
 
 ## Related Functions
+
+- [SetVehicleParamsSirenState](SetVehicleParamsSirenState): Turn the siren for a vehicle on or off.

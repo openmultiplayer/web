@@ -40,3 +40,4 @@ SetPlayerMarkerForPlayer(42, 1, (GetPlayerColor(1) | 0x000000FF));
 - [LimitPlayerMarkerRadius](LimitPlayerMarkerRadius): Ograničite radijus markera/oznake igrača.
 - [SetPlayerColor](SetPlayerColor): Postavi boju igrača.
 - [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Prikaži ili sakrij nametag za određenog igrača.
+- [GetPlayerMarkerForPlayer](GetPlayerMarkerForPlayer): Dobiva igračev marker za određenog igrača.

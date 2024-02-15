@@ -44,21 +44,37 @@ You may optionally put a number between the `%` and the letter of the placeholde
 ```c
 new result[128];
 new number = 42;
-format(result,sizeof(result), "The number is %i.",number);  //-> The number is 42.
-new string[]= "simple message";
-format(result,sizeof(result), "This is a %s containing the number %i.", string, number);
-// This is a simple message containing the number 42.
-new string[64];
-format(string,sizeof(string),"Your score is: %d",GetPlayerScore(playerid));
-SendClientMessage(playerid,0xFFFFFFAA,string);
-new hour, minute, second, string[32];
-gettime(hour, minute, second);
+format(result, sizeof(result), "The number is %i.", number); // The number is 42.
 
-format(string, sizeof(string), "The time is %02d:%02d:%02d.", hour, minute, second); // will output something like 09:45:02
-SendClientMessage(playerid, -1, string);
-new string[35];
-format(string,sizeof(string),"43%s of my shirts are black.","%%");
-SendClientMessage(playerid,0xFFFFFAA,string);
+new string[] = "simple message";
+format(result, sizeof(result), "This is a %s containing the number %i.", string, number);
+// This is a simple message containing the number 42.
+```
+
+<br />
+
+```c
+new string[64];
+format(string, sizeof(string), "Your score is: %d", GetPlayerScore(playerid));
+SendClientMessage(playerid, 0xFF8000FF, string);
+```
+
+<br />
+
+```c
+new string[32];
+new hour, minute, second;
+gettime(hour, minute, second);
+format(string, sizeof(string), "The time is %02d:%02d:%02d.", hour, minute, second);
+// will output something like "The time is 09:45:02."
+```
+
+<br />
+
+```c
+new string[32];
+format(string, sizeof(string), "43%s of my shirts are black.", "%%");
+SendClientMessage(playerid, 0xFF8000FF, string);
 ```
 
 ## Notes

@@ -1,7 +1,7 @@
 ---
 title: ShowPlayerDialog
 description: Shows the player a synchronous (only one at a time) dialog box.
-tags: ["player"]
+tags: ["player", "dialog"]
 ---
 
 <VersionWarn version='SA-MP 0.3a' />
@@ -10,15 +10,16 @@ tags: ["player"]
 
 Shows the player a synchronous (only one at a time) dialog box.
 
-| Name      | Description                                                                                                                             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player to show the dialog to.                                                                                             |
-| dialogid  | An ID to assign this dialog to, so responses can be processed. Max dialogid is 32767. Using negative values will close any open dialog. |
-| style     | The [style](../resources/dialogstyles) of the dialog.                                                                                |
-| caption[] | The title at the top of the dialog. The length of the caption can not exceed more than 64 characters before it starts to cut off.       |
-| info[]    | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                  |
-| button1[] | The text on the left button.                                                                                                            |
-| button2[] | The text on the right button. Leave it blank ( "" ) to hide it.                                                                         |
+| Name             | Description                                                                                                                             |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| playerid         | The ID of the player to show the dialog to.                                                                                             |
+| dialogid         | An ID to assign this dialog to, so responses can be processed. Max dialogid is 32767. Using negative values will close any open dialog. |
+| style            | The [style](../resources/dialogstyles) of the dialog.                                                                                   |
+| title[]          | The title at the top of the dialog. The length of the caption can not exceed more than 64 characters before it starts to cut off.       |
+| body[]           | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                  |
+| button1[]        | The text on the left button.                                                                                                            |
+| button2[]        | The text on the right button. Leave it blank ( "" ) to hide it.                                                                         |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                                                                              |
 
 ## Returns
 
@@ -81,5 +82,16 @@ Use color embedding for multiple colors in the text. Using -1 as dialogid closes
 
 ## Related Functions
 
+- [GetPlayerDialogID](GetPlayerDialogID): Get the ID of the dialog currently show to the player.
+- [GetPlayerDialogData](GetPlayerDialogData): Get the data of the dialog currently show to the player.
+- [HidePlayerDialog](HidePlayerDialog): Hides the dialog currently show to the player.
 - [TextDrawShowForPlayer](TextDrawShowForPlayer): Show a textdraw for a certain player.
+
+## Related Callbacks
+
 - [OnDialogResponse](../callbacks/OnDialogResponse): Called when a player responds to a dialog.
+
+## Related Resources
+
+- [Dialog Style](../resources/dialogstyles)
+- [Escape Codes](../resources/escapecodes)

@@ -1,12 +1,12 @@
 ---
 title: GetGravity
-description: Get the currently set gravity.
+description: Get the currently global gravity.
 tags: []
 ---
 
 ## Description
 
-Get the currently set gravity.
+Get the currently global gravity.
 
 ## Examples
 
@@ -29,3 +29,4 @@ This function is not defined by default. Add 'native Float:GetGravity();' under 
 ## Related Functions
 
 - [SetGravity](SetGravity): Set the global gravity.
+- [GetPlayerGravity](GetPlayerGravity): Get a player's gravity.

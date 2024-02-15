@@ -1,28 +1,9 @@
-type RequestIdleCallbackHandle = any;
-type RequestIdleCallbackOptions = {
-  timeout: number;
-};
-type RequestIdleCallbackDeadline = {
-  readonly didTimeout: boolean;
-  timeRemaining: () => number;
-};
-
-declare global {
-  interface Window {
-    requestIdleCallback: (
-      callback: (deadline: RequestIdleCallbackDeadline) => void,
-      opts?: RequestIdleCallbackOptions
-    ) => RequestIdleCallbackHandle;
-    cancelIdleCallback: (handle: RequestIdleCallbackHandle) => void;
-  }
-}
-
 if (typeof window !== "undefined") {
   window.requestIdleCallback =
     window.requestIdleCallback ||
     function (cb) {
       const start = Date.now();
-      return setTimeout(function () {
+      return window.setTimeout(function () {
         cb({
           didTimeout: false,
           timeRemaining: function () {

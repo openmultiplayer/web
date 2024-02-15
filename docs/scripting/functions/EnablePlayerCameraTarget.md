@@ -33,6 +33,7 @@ public OnPlayerConnect(playerid)
 
 ## Related Functions
 
+- [IsPlayerCameraTargetEnabled](IsPlayerCameraTargetEnabled): Check if the player camera target is enabled.
 - [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): Get the ID of the vehicle a player is looking at.
 - [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): Get the ID of the player a player is looking at.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

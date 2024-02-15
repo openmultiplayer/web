@@ -8,11 +8,12 @@ tags: ["textdraw"]
 
 Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See this page for extensive information about textdraws.
 
-| Name    | Description                                              |
-| ------- | -------------------------------------------------------- |
-| Float:x | The X (left/right) coordinate to create the textdraw at. |
-| Float:y | The Y (up/down) coordinate to create the textdraw at.    |
-| text[]  | The text that will appear in the textdraw.               |
+| Name             | Description                                              |
+|------------------|----------------------------------------------------------|
+| Float:x          | The X (left/right) coordinate to create the textdraw at. |
+| Float:y          | The Y (up/down) coordinate to create the textdraw at.    |
+| text[]           | The text that will appear in the textdraw.               |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.               |
 
 ## Returns
 
@@ -29,7 +30,7 @@ public OnGameModeInit()
 {
     // This line is used to create the textdraw.
     // Note: This creates a textdraw without any formatting.
-    gMyTextdraw = TextDrawCreate(240.0,580.0,"Welcome to my SA-MP server");
+    gMyTextdraw = TextDrawCreate(240.0, 580.0, "Welcome to my OPEN.MP server");
     return 1;
 }
 
@@ -73,3 +74,29 @@ Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~ don't work beyond 25
 - [TextDrawHideForPlayer](TextDrawHideForPlayer): Hide a textdraw for a certain player.
 - [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.
 - [TextDrawHideForAll](TextDrawHideForAll): Hide a textdraw for all players.
+- [IsTextDrawVisibleForPlayer](IsTextDrawVisibleForPlayer): Checks if a textdraw is shown for the player.
+- [IsValidTextDraw](IsValidTextDraw): Checks if a textdraw is valid.
+- [TextDrawGetAlignment](TextDrawGetAlignment): Gets the text alignment of a textdraw.
+- [TextDrawGetBackgroundColour](TextDrawGetBackgroundColour): Gets the background colour of a textdraw.
+- [TextDrawGetBoxColour](TextDrawGetBoxColour): Gets the box colour of a textdraw.
+- [TextDrawGetColour](TextDrawGetColour): Gets the text colour of a textdraw.
+- [TextDrawGetFont](TextDrawGetFont): Gets the text font of a textdraw.
+- [TextDrawGetLetterSize](TextDrawGetLetterSize): Gets the width and height of the letters.
+- [TextDrawGetOutline](TextDrawGetOutline): Gets the thickness of a textdraw's text's outline.
+- [TextDrawGetPos](TextDrawGetPos): Gets the position of a textdraw.
+- [TextDrawGetPreviewModel](TextDrawGetPreviewModel): Gets the preview model of a 3D preview textdraw.
+- [TextDrawGetPreviewRot](TextDrawGetPreviewRot): Gets the rotation and zoom of a 3D model preview textdraw.
+- [TextDrawGetPreviewVehCol](TextDrawGetPreviewVehCol): Gets the preview vehicle colors of a 3D preview textdraw.
+- [TextDrawGetPreviewVehicleColours](TextDrawGetPreviewVehicleColours): Gets the preview vehicle colours of a 3D preview textdraw.
+- [TextDrawGetShadow](TextDrawGetShadow): Gets the size of a textdraw's text's shadow.
+- [TextDrawGetString](TextDrawGetString): Gets the text of a textdraw.
+- [TextDrawGetTextSize](TextDrawGetTextSize): Gets the X axis and Y axis of the textdraw.
+- [TextDrawIsBox](TextDrawIsBox): Checks if a textdraw is box.
+- [TextDrawIsProportional](TextDrawIsProportional): Checks if a textdraw is proportional.
+- [TextDrawIsSelectable](TextDrawIsSelectable): Checks if a textdraw is selectable.
+- [TextDrawSetPos](TextDrawSetPos): Sets the position of a textdraw.
+- [TextDrawSetStringForPlayer](TextDrawSetStringForPlayer): Changes the text on a textdraw for a specific player.
+
+## Related Resources
+
+- [TextDraw Sprites](../resources/textdrawsprites)

@@ -47,3 +47,4 @@ Crashes when passed an invalid menu ID. This function disabled the specified men
 - [CreateMenu](CreateMenu): Create a menu.
 - [DestroyMenu](DestroyMenu): Destroy a menu.
 - [AddMenuItem](AddMenuItem): Add an item to a menu.
+- [IsMenuRowDisabled](IsMenuRowDisabled): Check if a menu row is disabled.

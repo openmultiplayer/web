@@ -15,6 +15,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocompletes for Visual Studio Code.
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Zone Editor for making Area and stuff.
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Popular Map Editor for SA:MP.
+- **[open.mp Server Browser](https://github.com/adib-yg/openmp-server-browser)** - open.mp server browser GUI for Desktop.
 
 ## Libraries
 
@@ -44,7 +45,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Model Sizes Plus](https://github.com/Crayder/Model-Sizes-Plus)** - Updated, advanced, more precise version of the old modelsizes include.
 - **[physics.inc](https://github.com/uPeppe/physics.inc)** - Simulate 2D and 3D physics (realistic movements, collisions, and more).
 - **[samp-async-dialogs](https://github.com/AGraber/samp-async-dialogs)** - Asynchronous dialog handling with PawnPlus tasks.
-- **[speedcap.inc](https://github.com/openmultiplayer/archive/blob/master/includes/speedcap.inc)** - A libraries to control speed of vehicles.
+- **[speedcap.inc](https://github.com/openmultiplayer/archive/blob/master/includes/speedcap.inc)** - An include to control the speed of vehicles.
 - **[SA:MP Command Guess](https://github.com/Kirima2nd/samp-command-guess)** - A command guesser for SA:MP using Levenshtein Distance function.
 - **[vending](https://github.com/wuzi/vending)** - Server-side vending machines for SA-MP.
 - **[strlib](https://github.com/oscar-broman/strlib)** - A list of useful string functions.
@@ -55,11 +56,12 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Alternative Dialogs](https://github.com/NexiusTailer/Alternative-Dialogs)** - Textdraw dialogs with a new design.
 - **[eSelection](https://github.com/TommyB123/eSelection)** - Adds the ability to create dynamic model selection menus in your SA-MP gamemodes.
 - **[mSelection](https://github.com/alextwothousand/mSelection)** - Same as eSelection, but different style.
+- **[RGB-Textdraw](https://github.com/adib-yg/SAMP-RGB-Textdraw)** - Adds RGB to textdraw.
 
 ## Command Processors
 
 - **[I-ZCMD](https://github.com/YashasSamaga/I-ZCMD)** - Improved version of ZCMD.
-- **[Pawn.CMD](https://github.com/katursis/Pawn.CMD)** - Faster than any other command.
+- **[Pawn.CMD](https://github.com/katursis/Pawn.CMD)** - Faster than any other command processor.
 - **[y_commands](https://github.com/pawn-lang/YSI-Includes/blob/5.x/YSI_Visual/y_commands.md)** - Command processor from YSI Includes
 
 ## Plugins
@@ -71,14 +73,14 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Connect your server to a MySQL server.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Bypass many SA:MP limits, like objects and pickups.
 - **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - Checking natives when server starts.
-- **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs.
+- **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs. It does not currently work in open.mp, as of January 2023.
 - **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - Allows you to analyze RakNet traffic.
-- **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - A plugin for SA-MP providing precise timers, written in Rust.
+- **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - A plugin for SA-MP providing precise timers, written in Rust. It is not needed in open.mp, as open.mp is provided with precise timers.
 - **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - Extends the possibilities of the Pawn scripting language with new constructs, data types, and programming techniques.
 - **[PAWN memory access](https://github.com/BigETI/pawn-memory)** - Allows to allocate and free memory from heap in PAWN.
 - **[Native Fallback](https://github.com/IllidanS4/NativeFallback)** - SA-MP plugin that provides fallback implementation to unregistered natives.
-- **[YSF](https://github.com/IllidanS4/YSF)** - A Plugin whose purpose is to pull out maximum possibilities from the server, mainly with memory editing and hooking.
+- **[YSF](https://github.com/IllidanS4/YSF)** - A Plugin whose purpose is to pull out maximum possibilities from the server, mainly with memory editing and hooking. Many of its functions are now already in open.mp. See [this github issue](https://github.com/openmultiplayer/open.mp/issues/189) for a list of functions.
 - **[SKY](https://github.com/oscar-broman/SKY)** - This plugin provides low-level functions to let Pawn scripts do powerful things.
 - **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - Adds support for regular expressions in Pawn.
 - **[pawn-scraper](https://github.com/Sreyas-Sreelal/pawn-scraper)** - A powerful scraper plugin that provides interface for utlising html_parsers and css selectors in pawn.

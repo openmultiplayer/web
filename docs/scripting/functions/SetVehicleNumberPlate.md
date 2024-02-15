@@ -51,6 +51,7 @@ You can use color embedding on the number plate text.
 
 ## Related Functions
 
+- [GetVehicleNumberPlate](GetVehicleNumberPlate): Get the number plate of a vehicle.
 - [SetVehicleToRespawn](SetVehicleToRespawn): Respawn a vehicle.
 - [ChangeVehicleColor](ChangeVehicleColor): Set the color of a vehicle.
 - [ChangeVehiclePaintjob](ChangeVehiclePaintjob): Change the paintjob on a vehicle.

@@ -54,3 +54,8 @@ Sometimes the result can be -1 which is an invalid weapon ID. Circumstances of t
 - [GetPlayerWeaponData](GetPlayerWeaponData): Find out information about weapons a player has.
 - [GivePlayerWeapon](GivePlayerWeapon): Give a player a weapon.
 - [ResetPlayerWeapons](ResetPlayerWeapons): Remove all weapons from a player.
+- [RemovePlayerWeapon](RemovePlayerWeapon): Remove a specified weapon from a player.
+
+## Related Resources
+
+- [Weapon IDs](../resources/weaponids)

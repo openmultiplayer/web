@@ -36,19 +36,15 @@ func Build() fx.Option {
 			s *service,
 		) {
 			rtr := chi.NewRouter()
-			r.With(
-				cacheClient.Middleware,
-			).Mount("/servers", rtr)
-
-			// TODO: Remove this at some point.
-			r.Mount("/server", rtr)
+			r.Mount("/servers", rtr)
 
 			rtr.Use(
 				cors.Handler(cors.Options{
 					AllowedOrigins: []string{
-						"http://localhost:3000", // Local development, `npm run dev`
-						cfg.PublicWebAddress,    // Live public website
-						"*",                     // Any browser instance
+						"http://localhost:3000",    // Local development, `npm run dev`
+						cfg.PublicWebAddress,       // Live public website
+						cfg.LauncherBackendAddress, // Launcher backend address
+						"*",                        // Any browser instance
 					},
 					AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
@@ -58,8 +54,12 @@ func Build() fx.Option {
 				}),
 			)
 
+			rtr.
+				With(as.MustBeAuthenticatedWithAPIKey).
+				Post("/gencache", s.gencache)
 			rtr.Get("/{address}", s.get)
 			rtr.Get("/", s.list)
+			rtr.Get("/full", s.fulllist)
 			rtr.Post("/", s.add)
 			rtr.
 				With(authentication.MustBeAuthenticated).

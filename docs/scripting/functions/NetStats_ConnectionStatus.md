@@ -46,5 +46,12 @@ public OnPlayerCommandText(playerid,cmdtext[])
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Get a player's packet loss percent.
 - [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
 - [IsPlayerConnected](IsPlayerConnected): Check if a player is connected to the server.
+
+## Related Callbacks
+
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.
+
+## Related Resources
+
+- [Connection Status](../resources/connectionstatus)

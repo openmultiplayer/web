@@ -49,3 +49,7 @@ There is currently only one 'source' (0 - CLICK_SOURCE_SCOREBOARD). The existenc
 The following callbacks might be useful, as they're related to this callback in one way or another. 
 
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): This callback is called when a player clicks on a textdraw.
+
+## Related Resources
+
+- [Click Sources](../resources/clicksources)

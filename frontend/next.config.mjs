@@ -41,7 +41,8 @@ const config = (phase) => {
         { source: "/live", destination: "https://twitch.tv/openmultiplayer", permanent: true},
         { source: "/twitch", destination: "https://twitch.tv/openmultiplayer", permanent: true},
         { source: "/stream", destination: "https://twitch.tv/openmultiplayer", permanent: true},
-        { source: "/twitter", destination: "https://twitter.com/openmultiplayer", permanent: true},
+        { source: "/twitter", destination: "https://x.com/openmultiplayer", permanent: true},
+        { source: "/x", destination: "https://x.com/openmultiplayer", permanent: true},
         { source: "/instagram", destination: "https://instagram.com/openmultiplayer", permanent: true},
       ]
     },

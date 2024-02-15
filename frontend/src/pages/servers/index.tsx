@@ -3,14 +3,13 @@ import {
   Box,
   Button,
   Center,
+  Checkbox,
   Flex,
   FormControl,
   FormHelperText,
   FormLabel,
   Heading,
-  HStack,
   Input,
-  Link,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -19,34 +18,23 @@ import {
   ModalOverlay,
   Select,
   Text,
-  useClipboard,
   useDisclosure,
-  VStack,
 } from "@chakra-ui/react";
-import { ChakraProps } from "@chakra-ui/system";
 import Fuse from "fuse.js";
 import { filter, flow, map, reverse, sortBy, sum } from "lodash/fp";
-import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { NextSeo } from "next-seo";
-import NextLink from "next/link";
 import NProgress from "nprogress";
-import { FC, FormEvent, useCallback, useState } from "react";
+import { FormEvent, useState } from "react";
 import { toast } from "react-nextjs-toast";
-import { useIsAdmin } from "src/auth/hooks";
 import ErrorBanner from "src/components/ErrorBanner";
 import { CardList } from "src/components/generic/CardList";
-import { useDeleteServer } from "src/components/listing/hooks";
+import ServerRow from "src/components/listing/ServerRow";
 import LoadingBanner from "src/components/LoadingBanner";
 import { API_ADDRESS } from "src/config";
 import { All, Essential } from "src/types/_generated_Server";
 import useSWR from "swr";
 
-const API_SERVERS = `${API_ADDRESS}/server/`;
-
-type Props = {
-  initialData?: Array<Essential>;
-  errorMessage?: string;
-};
+const API_SERVERS = `${API_ADDRESS}/servers/`;
 
 const getServers = async (): Promise<Array<Essential>> => {
   const r: Response = await fetch(API_SERVERS);
@@ -67,93 +55,13 @@ const getStats = (servers: Array<Essential>): Stats => ({
   servers: servers.length,
 });
 
-type CopyBadgeProps = { text: string };
-const CopyBadge: FC<CopyBadgeProps> = ({ text }) => {
-  const { onCopy, hasCopied } = useClipboard(text);
-  return (
-    <HStack>
-      <Text fontSize="xl" fontWeight="bold" marginTop="0">
-        {text}
-      </Text>
-      <Button
-        size="xs"
-        onClick={onCopy}
-        style={hasCopied ? { backgroundColor: "#81C784", color: "white" } : {}}
-      >
-        {hasCopied ? "COPIED" : "COPY"}
-      </Button>
-    </HStack>
-  );
-};
-
-type RowProps = { server: Essential };
-const Row: FC<RowProps & ChakraProps> = ({ server, sx }) => {
-  const deleteServer = useDeleteServer();
-  const onDelete = useCallback(
-    () => deleteServer(server.ip),
-    [deleteServer, server]
-  );
-  const admin = useIsAdmin();
-
-  return (
-    <Box sx={sx}>
-      <Box>
-        <NextLink href={"/servers/" + server.ip} passHref>
-          <Link>
-            <Heading
-              fontSize={"xl"}
-              style={{ marginTop: "0" }}
-              _hover={{ textDecor: "underline", cursor: "pointer" }}
-            >
-              {server.hn}
-            </Heading>
-          </Link>
-        </NextLink>
-
-        <Flex
-          justifyContent="space-between"
-          alignItems="start"
-          my="0.4em"
-          flexWrap="wrap"
-        >
-          <VStack align="left">
-            <Text style={{ marginTop: "0" }}>{server.gm}</Text>
-            {/* <Text style={{ marginTop: "0" }}>{"website"}</Text> */}
-            <CopyBadge text={server.ip} />
-          </VStack>
-          <VStack align="end">
-            <Flex
-              flexDirection="row"
-              alignItems="center"
-              gridGap=".5em"
-              flexWrap="wrap"
-            >
-              <Text
-                fontWeight={"bold"}
-                fontSize="2xl"
-                style={{ marginTop: "0" }}
-              >
-                {server.pc}/{server.pm}
-              </Text>
-              <Text style={{ marginTop: "0" }}>players</Text>
-            </Flex>
-
-            <Box display={admin ? "block" : "none"}>
-              <Button onClick={onDelete}>Delete</Button>
-            </Box>
-          </VStack>
-        </Flex>
-      </Box>
-    </Box>
-  );
-};
-
 type SortBy = "relevance" | "pc";
 
 type Query = {
   search?: string;
-  showFull: boolean;
   showEmpty: boolean;
+  showPartnersOnly: boolean;
+  showOmpOnly: boolean;
   sort: SortBy;
 };
 
@@ -172,10 +80,11 @@ const dataToList = (data: Essential[], q: Query) => {
 
   return flow(
     filter((s: Essential) => (!q.showEmpty ? s.pc > 0 : true)),
-    filter((s: Essential) => (!q.showFull ? s.pc !== s.pm : true)),
+    filter((s: Essential) => (q.showPartnersOnly ? s.pr === true : true)),
+    filter((s: Essential) => (q.showOmpOnly ? s.omp === true : true)),
     q.sort != "relevance" ? sortBy(q.sort) : sortBy(""),
     reverse,
-    map((s: Essential) => <Row key={s.ip} server={s} />)
+    map((s: Essential) => <ServerRow key={s.ip} server={s} />)
   )(items);
 };
 
@@ -210,7 +119,7 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
       const server = (await response.json()) as All;
       onAdd(server);
       toast.notify(
-        `${server.core.hn} (${server.core.gm}) submitted to the index!`,
+        `${server.core.hn} is added to our pending list. If it's not available after maximum 48 hours, you can contact us on Discord!`,
         {
           title: "Server Submitted!",
         }
@@ -256,8 +165,9 @@ const List = ({
   onAdd: (server: All) => void;
 }) => {
   const [search, setSearch] = useState("");
-  const [showFull, setShowFull] = useState(false);
-  const [showEmpty, setShowEmpty] = useState(false);
+  const [showEmpty, setShowEmpty] = useState(true);
+  const [showPartnersOnly, setShowPartnersOnly] = useState(false);
+  const [showOmpOnly, setShowOmpOnly] = useState(false);
   const [sort, setSort] = useState("relevance");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -319,14 +229,35 @@ const List = ({
             </ModalContent>
           </Modal>
         </Flex>
+        <Flex marginTop={2} gridGap={2} flexDir={{ base: "column", md: "row" }}>
+          <Checkbox
+            isChecked={showEmpty}
+            onChange={(e) => setShowEmpty(e.target.checked)}
+          >
+            Show empty servers
+          </Checkbox>
+          <Checkbox
+            isChecked={showOmpOnly}
+            onChange={(e) => setShowOmpOnly(e.target.checked)}
+          >
+            Show only open.mp servers
+          </Checkbox>
+          <Checkbox
+            isChecked={showPartnersOnly}
+            onChange={(e) => setShowPartnersOnly(e.target.checked)}
+          >
+            Show only partners
+          </Checkbox>
+        </Flex>
       </form>
       <Stats stats={getStats(data)} />
 
       <CardList>
         {dataToList(data, {
           search,
-          showFull,
           showEmpty,
+          showPartnersOnly,
+          showOmpOnly,
           sort: sort as SortBy,
         })}
       </CardList>

@@ -103,3 +103,20 @@ func (a *State) MustBeAdmin(next http.Handler) http.Handler {
 		next.ServeHTTP(w, r)
 	})
 }
+
+func (a *State) MustBeAuthenticatedWithAPIKey(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		authKey := r.Header.Get("Authorization")
+
+		if authKey != a.authAPIKey {
+			web.StatusUnauthorized(w, web.WithSuggestion(
+				errors.New("request is not authenticated"),
+				"You must provide API auth key to use this endpoint",
+				"",
+			))
+			return
+		}
+
+		next.ServeHTTP(w, r)
+	})
+}

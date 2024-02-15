@@ -35,5 +35,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
+- [IsAdminTeleportAllowed](IsAdminTeleportAllowed): Checks if the RCON admins allowed to teleport by right-clicking on the map.
 - [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.
 - [AllowPlayerTeleport](AllowPlayerTeleport): Toggle waypoint teleporting for players.

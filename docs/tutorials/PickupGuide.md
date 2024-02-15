@@ -75,3 +75,5 @@ Congratulations, you now know how to create and handle pickups!
 ## Further Reading
 
 You can use the [Streamer](https://github.com/samp-incognito/samp-streamer-plugin) plugin to create unlimited pickups with [CreateDynamicPickup](<https://github.com/samp-incognito/samp-streamer-plugin/wiki/Natives-(Pickups)>)
+
+You can also create per-player pickup with [CreatePlayerPickup](../scripting/functions/CreatePlayerPickup).

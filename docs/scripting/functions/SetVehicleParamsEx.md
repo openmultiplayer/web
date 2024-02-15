@@ -32,7 +32,7 @@ Sets a vehicle's parameters for all players.
 ```c
 // On top of our script, declaring a global variable
 new
-    gVehicleAlarmTimer[MAX_VEHICLES] = {-1, ...};
+    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
 
 // If setting a single parameter, you should obtain the current parameters so they aren't ALL changed
 new
@@ -50,7 +50,7 @@ SetVehicleParamsEx_Fixed(vehicleid, &engine, &lights, &alarm, &doors, &bonnet, &
     {
         // Kill the timer, reset the timer identifier and then restart it if it was already running
         KillTimer(gVehicleAlarmTimer[vehicleid]);
-        gVehicleAlarmTimer[vehicleid] = -1;
+        gVehicleAlarmTimer[vehicleid] = 0;
         gVehicleAlarmTimer[vehicleid] = SetTimerEx("DisableVehicleAlarm", 20000, false, "d", vehicleid);
     }
 }
@@ -68,7 +68,7 @@ public DisableVehicleAlarm(vehicleid)
     }
 
     // Reset the timer identifier
-    gVehicleAlarmTimer[vehicleid] = -1;
+    gVehicleAlarmTimer[vehicleid] = 0;
 }
 ```
 

@@ -32,12 +32,12 @@ if (strcmp(cmdtext, "/repair", true) == 0)
 
     GetVehicleHealth(playerVehicleId, vehicleHealth);
 
-    if (vehicleHealth > 500)
+    if (vehicleHealth > 500.0)
     {
         return SendClientMessage(playerid, COLOR_RED, "Vehicle doesn't need repairing!");
     }
 
-    SetVehicleHealth(playerVehicleId, 1000);
+    SetVehicleHealth(playerVehicleId, 1000.0);
     SendClientMessage(playerid, COLOR_GREEN, "Vehicle repaired!");
 }
 ```
@@ -61,3 +61,7 @@ A vehicle catches on fire when its health is below 250. It will explode a few se
 - [SetVehicleHealth](SetVehicleHealth): Set the health of a vehicle.
 - [GetPlayerHealth](GetPlayerHealth): Find out how much health a player has.
 - [GetPlayerArmour](GetPlayerArmour): Find out how much armour a player has.
+
+## Related Resources
+
+- [Vehicle Health Values](../resources/vehiclehealth)

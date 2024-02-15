@@ -50,3 +50,7 @@ GTA/SA-MP use degrees for angles in most circumstances, for example [GetPlayerFa
 
 - [floattan](floattan): Get the tangent from a specific angle.
 - [floatcos](floatcos): Get the cosine from a specific angle.
+
+## Related Resources
+
+- [Angle Modes](../resources/anglemodes): SI unit constants for measuring angles.

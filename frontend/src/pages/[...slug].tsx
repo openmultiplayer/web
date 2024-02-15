@@ -18,6 +18,7 @@ import { NextSeo } from "next-seo";
 import { hydrate } from "src/mdx-helpers/csr";
 import Admonition from "src/components/Admonition";
 import components from "src/components/templates";
+import { useColorModeValue } from "@chakra-ui/react";
 
 type Props = {
   source?: any;
@@ -38,6 +39,11 @@ const Page = ({ source, error, data, fallback }: Props) => {
   const content =
     source && hydrate(source, { components: components as Components });
 
+  const codeColor = useColorModeValue(
+    "var(--chakra-colors-gray-200)",
+    "var(--chakra-colors-gray-700)"
+  );
+
   return (
     <div className="flex flex-column flex-row-ns flex-auto justify-center-ns">
       <NextSeo title={data?.title} description={data?.description} />
@@ -50,6 +56,12 @@ const Page = ({ source, error, data, fallback }: Props) => {
         )}
         <h1>{data?.title}</h1>
         {content}
+        <style global jsx>{`
+          pre,
+          code {
+            background: ${codeColor};
+          }
+        `}</style>
       </section>
     </div>
   );
@@ -76,6 +88,7 @@ import { renderToString } from "src/mdx-helpers/ssr";
 import { RawContent } from "src/types/content";
 import { Components } from "@mdx-js/react";
 import { concat, flatten, flow, map } from "lodash/fp";
+import rehypeStarryNight from "@microflash/rehype-starry-night";
 
 export async function getStaticProps(
   context: GetStaticPropsContext<{ slug: string[] }>
@@ -96,6 +109,9 @@ export async function getStaticProps(
     components: components as Components,
     mdxOptions: {
       components: components as Components,
+      rehypePlugins: [
+        [rehypeStarryNight, { showHeader: false, showLines: false }],
+      ],
     },
   });
 

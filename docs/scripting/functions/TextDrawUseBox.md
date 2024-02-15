@@ -10,14 +10,14 @@ Toggle whether a textdraw uses a box or not.
 
 | Name | Description                                       |
 | ---- | ------------------------------------------------- |
-| text | The ID of the text textdraw to toggle the box of. |
-| use  | 1 to show a box or 0 to not show a box.           |
+| Text:text | The ID of the text textdraw to toggle the box of. |
+| bool:use  | 'true' to show a box or 'false' to not show a box. |
 
 ## Returns
 
-1: The function executed successfully.
+true: The function executed successfully.
 
-0: The function failed to execute. This means the textdraw specified does not exist.
+false: The function failed to execute. This means the textdraw specified does not exist.
 
 ## Examples
 
@@ -27,7 +27,7 @@ new Text: gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    TextDrawUseBox(gMyTextdraw, 1); // Toggle box ON
+    TextDrawUseBox(gMyTextdraw, true); // Toggle box ON
     return 1;
 }
 ```
@@ -44,6 +44,7 @@ If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDr
 
 - [TextDrawCreate](TextDrawCreate): Create a textdraw.
 - [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.
+- [TextDrawIsBox](TextDrawIsBox): Checks if a textdraw is box.
 - [TextDrawColor](TextDrawColor): Set the color of the text in a textdraw.
 - [TextDrawBoxColor](TextDrawBoxColor): Set the color of the box in a textdraw.
 - [TextDrawBackgroundColor](TextDrawBackgroundColor): Set the background color of a textdraw.

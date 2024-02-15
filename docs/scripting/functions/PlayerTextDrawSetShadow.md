@@ -25,8 +25,16 @@ Adds a shadow to the bottom-right side of the text in a player-textdraw. The sha
 ## Examples
 
 ```c
-new Text:MyTextDraw = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Example Text");
-PlayerTextDrawSetShadow(playerid, MyTextDraw, 1);
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
+    PlayerTextDrawSetShadow(playerid, welcomeText[playerid], 1);
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
+
+    return 1;
+}
 ```
 
 ## Notes
@@ -41,6 +49,7 @@ The shadow can be cut by the box area if the size is set too big for the area.
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
+- [PlayerTextDrawGetShadow](PlayerTextDrawGetShadow): Get the shadow size on a player-textdraw.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.

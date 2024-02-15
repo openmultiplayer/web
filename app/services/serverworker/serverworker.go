@@ -34,8 +34,9 @@ var (
 )
 
 type Worker struct {
-	db server.Repository
-	sc scraper.Scraper
+	db  server.Repository
+	sc  scraper.Scraper
+	cfg config.Config
 }
 
 func Build() fx.Option {
@@ -46,7 +47,7 @@ func Build() fx.Option {
 		),
 
 		fx.Invoke(func(lc fx.Lifecycle, db server.Repository, sc scraper.Scraper, cfg config.Config) *Worker {
-			w := &Worker{db, sc}
+			w := &Worker{db, sc, cfg}
 
 			lc.Append(fx.Hook{
 				OnStart: func(ctx context.Context) error {
@@ -74,6 +75,7 @@ func (w *Worker) RunWithSeed(ctx context.Context, window time.Duration, addresse
 func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 	tc := time.NewTicker(window)
 	for range tc.C {
+		zap.L().Info("Running server scraper worker")
 		addresses, err := w.db.GetServersToQuery(ctx, window)
 		if err != nil {
 			zap.L().Error("failed to get servers to query",
@@ -105,11 +107,21 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 		zap.L().Debug("finished updating servers",
 			zap.Int("servers", len(addresses)))
 
-		// TODO: GetAll needs an "include inactive" flag
+		// TODO: GetAll needs an "include inactive" flag, and make default duration configurable
 		// It should also probably just use existing data queried earlier.
-		all, err := w.db.GetAll(ctx)
+		// Only retrieve servers active since 3 hours ago
+		all, err := w.db.GetAll(ctx, time.Duration(-3)*time.Hour)
 		if err != nil {
 			zap.L().Error("failed to get all servers for metrics",
+				zap.Error(err))
+			continue
+		}
+
+		zap.L().Info("Saving all servers into a JSON file to be used as cache")
+		// Let's save all servers info our cache file to be used in our API data processing instead of DB
+		err = w.db.GenerateCacheFromData(ctx, all)
+		if err != nil {
+			zap.L().Error("There was an error converting native array of servers to JSON data",
 				zap.Error(err))
 			continue
 		}

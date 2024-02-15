@@ -17,7 +17,9 @@ type All struct {
 	Description *string           `json:"description"`
 	Banner      *string           `json:"banner"`
 	Active      bool              `json:"active"`
+	Pending     bool              `json:"pending"`
 	LastUpdated time.Time         `json:"lastUpdated"`
+	LastActive  *time.Time        `json:"lastActive"`
 }
 
 // Essential stores the standard SA:MP 'info' query fields necessary for server
@@ -27,12 +29,14 @@ type All struct {
 type Essential struct {
 	IP         string `json:"ip"`
 	Hostname   string `json:"hn"`
-	Players    int    `json:"pc"`
-	MaxPlayers int    `json:"pm"`
+	Players    int64  `json:"pc"`
+	MaxPlayers int64  `json:"pm"`
 	Gamemode   string `json:"gm"`
 	Language   string `json:"la"`
 	Password   bool   `json:"pa"`
 	Version    string `json:"vn"`
+	IsOmp      bool   `json:"omp"`
+	Partner    bool   `json:"pr"`
 }
 
 // Validate checks the contents of a Server object to ensure all the required fields are valid.
@@ -73,7 +77,7 @@ func (server All) Example() All {
 			"mapname":   "San Andreas",
 			"version":   "0.3.7-R2",
 			"weather":   "10",
-			"weburl":    "www.sa-mp.com",
+			"weburl":    "www.sa-mp.mp",
 			"worldtime": "10:00",
 		},
 		Description: &[]string{"An awesome server! Come and play with us."}[0],
@@ -89,18 +93,22 @@ func dbToAPI(r db.ServerModel) *All {
 		Core: Essential{
 			IP:         r.IP,
 			Hostname:   r.Hn,
-			Players:    r.Pc,
-			MaxPlayers: r.Pm,
+			Players:    int64(r.Pc),
+			MaxPlayers: int64(r.Pm),
 			Gamemode:   r.Gm,
 			Language:   r.La,
 			Password:   r.Pa,
 			Version:    r.Vn,
+			IsOmp:      r.Omp,
+			Partner:    r.Partner,
 		},
 		Rules:       transformRules(r.Ru()),
 		Description: r.InnerServer.Description,
 		Banner:      r.InnerServer.Banner,
 		Active:      r.Active,
+		Pending:     r.Pending,
 		LastUpdated: r.UpdatedAt,
+		LastActive:  r.InnerServer.LastActive,
 	}
 }
 

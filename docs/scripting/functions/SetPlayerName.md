@@ -65,3 +65,5 @@ Changing the players' name to the same name but with different character cases (
 ## Related Functions
 
 - [GetPlayerName](GetPlayerName): Get a player's name.
+- [IsValidNickName](IsValidNickName): Checks if a nick name is valid.
+- [AllowNickNameCharacter](AllowNickNameCharacter): Allows a character to be used in the nick name.
