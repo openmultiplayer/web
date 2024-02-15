@@ -1,0 +1,27 @@
+---
+title: OnNPCModeExit
+description: Ce rappel est appelé lorsque le script d'un PNJ est déchargé.
+tags: ["npc"]
+---
+
+<VersionWarn name='callback' version='SA-MP 0.3a' />
+
+## Description
+
+Ce rappel est appelé lorsque le script d'un PNJ est déchargé.
+
+## Exemples
+
+```c
+public OnNPCModeExit()
+{
+    print("Le script du PNJ a été déchargé");
+    return 1;
+}
+```
+
+## Rappels Relatives
+
+Les rappels suivants peuvent être utiles, car ils sont liés à ce rappel d'une manière ou d'une autre.
+
+- [OnNPCModeInit](OnNPCModeInit): Ce rappel est appelé lorsque le script d'un PNJ est chargé.
