@@ -1,13 +1,13 @@
 ---
-title: open.mp functions
-description: New functions and callbacks.
+title: open.mp fonksiyonları
+description: Yeni fonksiyonlar ve callbackler.
 ---
 
-This page contains all the functions and callbacks that were added in open.mp
+Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 
-## Player
+## Oyuncu
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [TogglePlayerWidescreen](../scripting/functions/TogglePlayerWidescreen)                                 |
 | [IsPlayerWidescreenToggled](../scripting/functions/IsPlayerWidescreenToggled)                           |
@@ -49,9 +49,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [SetPlayerAdmin](../scripting/functions/SetPlayerAdmin)                                                 |
 | [GetPlayers](../scripting/functions/GetPlayers)                                                         |
 
-## Object
+## Obje
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [SetObjectNoCameraCollision](../scripting/functions/SetObjectNoCameraCollision)                         |
 | [SetPlayerObjectNoCameraCollision](../scripting/functions/SetPlayerObjectNoCameraCollision)             |
@@ -94,7 +94,7 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## Pickup
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [CreatePlayerPickup](../scripting/functions/CreatePlayerPickup)                                         |
 | [DestroyPlayerPickup](../scripting/functions/DestroyPlayerPickup)                                       |
@@ -128,9 +128,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)                                 |
 | [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)                               |
 
-## Vehicle
+## Araç
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [ChangeVehicleColours](../scripting/functions/ChangeVehicleColours)                                     |
 | [GetPlayerLastSyncedVehicleID](../scripting/functions/GetPlayerLastSyncedVehicleID)                     |
@@ -174,7 +174,7 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## TextDraw
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [TextDrawColour](../scripting/functions/TextDrawColour)                                                 |
 | [TextDrawBoxColour](../scripting/functions/TextDrawBoxColour)                                           |
@@ -234,7 +234,7 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## GameText
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [GetGameText](../scripting/functions/GetGameText)                                                       |
 | [HasGameText](../scripting/functions/HasGameText)                                                       |
@@ -243,7 +243,7 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## GangZone
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [IsValidGangZone](../scripting/functions/IsValidGangZone)                                               |
 | [IsPlayerInGangZone](../scripting/functions/IsPlayerInGangZone)                                         |
@@ -276,16 +276,16 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## Checkpoint
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [IsPlayerCheckpointActive](../scripting/functions/IsPlayerCheckpointActive)                             |
 | [GetPlayerCheckpoint](../scripting/functions/GetPlayerCheckpoint)                                       |
 | [IsPlayerRaceCheckpointActive](../scripting/functions/IsPlayerRaceCheckpointActive)                     |
 | [GetPlayerRaceCheckpoint](../scripting/functions/GetPlayerRaceCheckpoint)                               |
 
-## Actor
+## Aktör
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [SetActorSkin](../scripting/functions/SetActorSkin)                                                     |
 | [GetActorSkin](../scripting/functions/GetActorSkin)                                                     |
@@ -295,7 +295,7 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## 3D TextLabel
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [Is3DTextLabelStreamedIn](../scripting/functions/Is3DTextLabelStreamedIn)                               |
 | [Get3DTextLabelText](../scripting/functions/Get3DTextLabelText)                                         |
@@ -325,7 +325,7 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## Class
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [GetAvailableClasses](../scripting/functions/GetAvailableClasses)                                       |
 | [EditPlayerClass](../scripting/functions/EditPlayerClass)                                               |
@@ -333,7 +333,7 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## Menu
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [GetMenuItem](../scripting/functions/GetMenuItem)                                                       |
 | [GetMenuItems](../scripting/functions/GetMenuItems)                                                     |
@@ -344,9 +344,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [IsMenuDisabled](../scripting/functions/IsMenuDisabled)                                                 |
 | [IsMenuRowDisabled](../scripting/functions/IsMenuRowDisabled)                                           |
 
-## Database
+## Veri tabanı
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [DB_ExecuteQuery](../scripting/functions/DB_ExecuteQuery)                                               |
 | [DB_FreeResultSet](../scripting/functions/DB_FreeResultSet)                                             |
@@ -367,7 +367,7 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## Core
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [SetModeRestartTime](../scripting/functions/SetModeRestartTime)                                         |
 | [GetModeRestartTime](../scripting/functions/GetModeRestartTime)                                         |
@@ -387,9 +387,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [ClearBanList](../scripting/functions/ClearBanList)                                                     |
 | [IsBanned](../scripting/functions/IsBanned)                                                             |
 
-## Server Rule
+## Sunucu Kuralı
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [AddServerRule](../scripting/functions/AddServerRule)                                                   |
 | [RemoveServerRule](../scripting/functions/RemoveServerRule)                                             |
@@ -398,9 +398,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [SetServerRuleFlags](../scripting/functions/SetServerRuleFlags)                                         |
 | [GetServerRuleFlags](../scripting/functions/GetServerRuleFlags)                                         |
 
-## Timer
+## Zamanlayıcı
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [IsValidTimer](../scripting/functions/IsValidTimer)                                                     |
 | [IsRepeatingTimer](../scripting/functions/IsRepeatingTimer)                                             |
@@ -409,9 +409,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [CountRunningTimers](../scripting/functions/CountRunningTimers)                                         |
 | [GetRunningTimers](../scripting/functions/GetRunningTimers)                                             |
 
-## Custom Model
+## Özel Model
 
-| Name                                                                                                    |
+| İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [IsValidCustomModel](../scripting/functions/IsValidCustomModel)                                         |
 | [GetCustomModelPath](../scripting/functions/GetCustomModelPath)                                         |
