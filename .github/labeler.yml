@@ -1,0 +1,4 @@
+# Add 'area:translation' label to any changes within 'docs/translations' folder or any subfolders
+area:translation:
+- changed-files:
+  - any-glob-to-any-file: docs/translations/**
