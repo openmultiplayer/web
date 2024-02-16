@@ -13,4 +13,4 @@ Bu açı modları, [floatsin](../functions/floatsin), [floatcos](../functions/fl
 | ------- | ----------- |
 | radian  | Açı radyan cinsinden olacaktır. |
 | degrees | Açı derece cinsinden olacaktır. |
-| grad   | Açı grad cinsinden olacaktır. |
+| grades | Açı grad cinsinden olacaktır. |
