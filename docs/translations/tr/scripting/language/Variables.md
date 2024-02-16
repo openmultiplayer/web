@@ -123,9 +123,7 @@ public OnFilterScriptInit ()
 
 Artık değişkenleri nasıl bildireceğinizi bildiğinize göre, değişken bildirme için isimlendirme kurallarını da bilmelisiniz. İşte değişken bildirme için isimlendirme kuralları:
 
-- T
-
-üm değişken adları bir harfle veya alt çizgi (`_`) ile başlamalıdır.
+- Tüm değişken adları bir harfle veya alt çizgi (`_`) ile başlamalıdır.
 - İlk harf sonrasında değişken adları harf ve rakam içerebilir, ancak boşluk veya özel karakter içermemelidir.
 - Değişken adları büyük/küçük harfe duyarlıdır, yani büyük harfler küçük harflerden farklıdır.
 - Bir rezerve kelimeyi (anahtar kelime) bir değişken adı olarak kullanmak bir hatayı gösterir.
