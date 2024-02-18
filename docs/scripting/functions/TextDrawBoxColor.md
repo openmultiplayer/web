@@ -6,7 +6,7 @@ tags: ["textdraw"]
 
 ## Description
 
-Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 1).
+Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 'true').
 
 | Name  | Description                                                                                                                                                                    |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -24,7 +24,7 @@ new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(123.0, 123.0,"Example");
+    gMyTextdraw = TextDrawCreate(123.0, 123.0, "Example");
     TextDrawUseBox(gMyTextdraw, true);
     TextDrawBoxColor(gMyTextdraw, 0xFFFFFFFF);
     return 1;

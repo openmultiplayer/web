@@ -6,7 +6,7 @@ tags: ["textdraw"]
 
 ## คำอธิบาย
 
-Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 1).
+Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 'true').
 
 | Name  | Description                                                                                                                                                                    |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -24,7 +24,7 @@ new Text:Example;
 
 public OnGameModeInit()
 {
-    Example = TextDrawCreate(123.0, 123.0,"Example");
+    Example = TextDrawCreate(123.0, 123.0, "Example");
     TextDrawUseBox(Example, true);
     TextDrawBoxColor(Example, 0xFFFFFFFF);
     return 1;

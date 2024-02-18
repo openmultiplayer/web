@@ -6,7 +6,7 @@ tags: ["textdraw"]
 
 ## Deskripcija
 
-Prilagođava boju okvira za tekst (koristi se samo ako je parametar 'use' TextDrawUseBox 1).
+Prilagođava boju okvira za tekst (koristi se samo ako je parametar 'use' TextDrawUseBox 'true').
 
 | Ime   | Deskripcija                                                                                                                                      |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -24,7 +24,7 @@ new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(123.0, 123.0,"Primjer");
+    gMyTextdraw = TextDrawCreate(123.0, 123.0, "Primjer");
     TextDrawUseBox(gMyTextdraw, true);
     TextDrawBoxColor(gMyTextdraw, 0xFFFFFFFF);
     return 1;
