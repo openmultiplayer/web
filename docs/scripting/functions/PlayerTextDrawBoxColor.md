@@ -1,6 +1,6 @@
 ---
 title: PlayerTextDrawBoxColor
-description: Sets the color of a textdraw's box (PlayerTextDrawUseBox ).
+description: Sets the color of a textdraw's box (PlayerTextDrawUseBox).
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
@@ -8,13 +8,13 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Description
 
-Sets the color of a textdraw's box (PlayerTextDrawUseBox ).
+Sets the color of a textdraw's box (PlayerTextDrawUseBox).
 
-| Name     | Description                                                  |
-| -------- | ------------------------------------------------------------ |
-| playerid | The ID of the player whose textdraw to set the box color of. |
-| text     | The ID of the player textdraw to set the box color of.       |
-| color    | The color to set. Alpha (transparency) is supported.         |
+| Name            | Description                                                  |
+|-----------------|--------------------------------------------------------------|
+| playerid        | The ID of the player whose textdraw to set the box color of. |
+| PlayerText:text | The ID of the player textdraw to set the box color of.       |
+| color           | The color to set. Alpha (transparency) is supported.         |
 
 ## Returns
 
@@ -28,7 +28,7 @@ new PlayerText:pTextdraw[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");
-    PlayerTextDrawUseBox(playerid, pTextdraw[playerid], 1);
+    PlayerTextDrawUseBox(playerid, pTextdraw[playerid], true);
     PlayerTextDrawBoxColor(playerid, pTextdraw[playerid], 0xFF0000FF); // Red box with no transparency
     return 1;
 }
