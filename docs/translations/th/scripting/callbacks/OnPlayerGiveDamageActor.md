@@ -15,11 +15,11 @@ Callback นี้ถูกเพิ่มใน SA-MP 0.3.7 และจะไ�
 This callback is called when a player gives damage to an actor.
 
 | Name            | Description                                           |
-| --------------- | ----------------------------------------------------- |
+|-----------------|-------------------------------------------------------|
 | playerid        | The ID of the player that gave damage.                |
 | damaged_actorid | The ID of the actor that received damage.             |
-| amount          | The amount of health/armour damaged_actorid has lost. |
-| weaponid        | The reason that caused the damage.                    |
+| Float:amount    | The amount of health/armour damaged_actorid has lost. |
+| WEAPON:weaponid | The reason that caused the damage.                    |
 | bodypart        | The body part that was hit                            |
 
 ## ส่งคืน
@@ -33,7 +33,7 @@ It is always called first in filterscripts so returning 1 there blocks other fil
 ## ตัวอย่าง
 
 ```c
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponid, bodypart)
+public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -50,17 +50,20 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponi
 
 :::tip
 
-This function does not get called if the actor is set invulnerable (WHICH IS BY DEFAULT). See SetActorInvulnerable.
+This function does not get called if the actor is set invulnerable (WHICH IS BY DEFAULT). See [SetActorInvulnerable](../functions/SetActorInvulnerable).
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CreateActor](../../scripting/functions/CreateActor.md): Create an actor (static NPC).
-- [SetActorInvulnerable](../../scripting/functions/SetActorInvulnerable.md): Set actor invulnerable.
-- [SetActorHealth](../../scripting/functions/SetActorHealth.md): Set the health of an actor.
-- [GetActorHealth](../../scripting/functions/GetActorHealth.md): Gets the health of an actor.
-- [IsActorInvulnerable](../../scripting/functions/IsActorInvulnerable.md): Check if actor is invulnerable.
-- [IsValidActor](../../scripting/functions/IsValidActor.md): Check if actor id is valid.
-- [OnActorStreamOut](../../scripting/callbacks/OnActorStreamOut.md): Called when an actor is streamed out by a player.
-- [OnPlayerStreamIn](../../scripting/callbacks/OnPlayerStreamIn.md): Called when a player streams in for another player.
+- [CreateActor](../functions/CreateActor): Create an actor (static NPC).
+- [SetActorInvulnerable](../functions/SetActorInvulnerable): Set actor invulnerable.
+- [SetActorHealth](../functions/SetActorHealth): Set the health of an actor.
+- [GetActorHealth](../functions/GetActorHealth): Gets the health of an actor.
+- [IsActorInvulnerable](../functions/IsActorInvulnerable): Check if actor is invulnerable.
+- [IsValidActor](../functions/IsValidActor): Check if actor id is valid.
+
+## Related Callbacks
+
+- [OnActorStreamOut](OnActorStreamOut): Called when an actor is streamed out by a player.
+- [OnPlayerStreamIn](OnPlayerStreamIn): Called when a player streams in for another player.

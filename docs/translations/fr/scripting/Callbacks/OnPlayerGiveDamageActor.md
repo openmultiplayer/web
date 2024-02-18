@@ -11,11 +11,11 @@ tags: ["player"]
 Cette callback est appelée quand un joueur inflige des dégâts à un actor.
 
 | Nom                   | Description                                  |
-| --------------------- | -------------------------------------------- |
+|-----------------------|----------------------------------------------|
 | `int` playerid        | ID du joueur qui inflige le dégât            |
 | `int` damaged_actorid | ID de l'actor qui reçoit le dégât            |
-| `int` amount          | Montant de la perte en armure/vie (combinés) |
-| `int` weaponid        | Cause du dommage                             |
+| `float` Float:amount  | Montant de la perte en armure/vie (combinés) |
+| `int` WEAPON:weaponid | Cause du dommage                             |
 | `int` bodypart        | Partie du corps qui a été touchée            |
 
 ## Valeur de retour
@@ -27,7 +27,7 @@ Cette callback est appelée quand un joueur inflige des dégâts à un actor.
 ## Exemple
 
 ```c
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponid, bodypart)
+public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new 
       string[128], 
