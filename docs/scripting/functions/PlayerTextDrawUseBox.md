@@ -10,11 +10,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Toggle the box on a player-textdraw.
 
-| Name     | Description                                              |
-| -------- | -------------------------------------------------------- |
+| Name            | Description                                              |
+|-----------------|----------------------------------------------------------|
 | playerid        | The ID of the player whose textdraw to toggle the box of |
 | PlayerText:text | The ID of the player-textdraw to toggle the box of       |
-| bool:use        | true to use a box or false to not use a box              |
+| bool:use        | **true** to use a box or **false** to not use a box      |
 
 ## Returns
 

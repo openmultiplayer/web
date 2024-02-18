@@ -14,11 +14,11 @@ Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim
 
 Omogući/onemogući korišćenje box-a za player-textdraw.
 
-| Ime      | Deskripcija                                               |
-| -------- | --------------------------------------------------------- |
-| playerid | ID igrača za čiji se textdraw treba koristiti box ili ne. |
-| text     | ID player-textdrawa za omogućiti/onemogućiti box          |
-| use      | 1 da koristi box 0 da ne koristi box.                     |
+| Ime             | Deskripcija                                               |
+|-----------------|-----------------------------------------------------------|
+| playerid        | ID igrača za čiji se textdraw treba koristiti box ili ne. |
+| PlayerText:text | ID player-textdrawa za omogućiti/onemogućiti box          |
+| bool:use        | **true** da koristi box **false** da ne koristi box.      |
 
 ## Returns
 
@@ -32,7 +32,7 @@ new PlayerText:MyTD[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     MyTD[playerid] = CreatePlayerTextDraw(playerid, 40.0, 140.0, "_~N~Primjer Teksta!~N~_");
-    PlayerTextDrawUseBox(playerid, MyTD[playerid], 1);
+    PlayerTextDrawUseBox(playerid, MyTD[playerid], true);
     PlayerTextDrawBoxColor(playerid, MyTD[playerid], 0x00000066); // Postavite boju box-a na poluprozirnu crnu boju
     return 1;
 }
