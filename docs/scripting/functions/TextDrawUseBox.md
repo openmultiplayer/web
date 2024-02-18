@@ -8,9 +8,9 @@ tags: ["textdraw"]
 
 Toggle whether a textdraw uses a box or not.
 
-| Name | Description                                       |
-| ---- | ------------------------------------------------- |
-| Text:text | The ID of the text textdraw to toggle the box of. |
+| Name      | Description                                        |
+|-----------|----------------------------------------------------|
+| Text:text | The ID of the text textdraw to toggle the box of.  |
 | bool:use  | 'true' to show a box or 'false' to not show a box. |
 
 ## Returns
@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) to show the changes of this function.
+If the textdraw is already shown, it must be re-shown ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) to show the changes of this function.
 
 :::
 
