@@ -25,7 +25,7 @@ new Text:gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(123.0, 123.0,"Primjer");
-    TextDrawUseBox(gMyTextdraw, 1);
+    TextDrawUseBox(gMyTextdraw, true);
     TextDrawBoxColor(gMyTextdraw, 0xFFFFFFFF);
     return 1;
 }
@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-Ukoliko želite promijeniti boju boxa textdrawa koji je već prikazan, ne morate ga ponovno kreirati. Prosto koristite TextDrawShowForPlayer/TextDrawShowForAll nakon uređivanja i promjena će biti vidljiva.
+Ukoliko želite promijeniti boju boxa textdrawa koji je već prikazan, ne morate ga ponovno kreirati. Prosto koristite [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) nakon uređivanja i promjena će biti vidljiva.
 
 :::
 

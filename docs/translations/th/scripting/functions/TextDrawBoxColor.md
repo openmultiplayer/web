@@ -25,7 +25,7 @@ new Text:Example;
 public OnGameModeInit()
 {
     Example = TextDrawCreate(123.0, 123.0,"Example");
-    TextDrawUseBox(Example, 1);
+    TextDrawUseBox(Example, true);
     TextDrawBoxColor(Example, 0xFFFFFFFF);
     return 1;
 }
@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-If you want to change the boxcolour of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+If you want to change the boxcolour of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 
 :::
 
