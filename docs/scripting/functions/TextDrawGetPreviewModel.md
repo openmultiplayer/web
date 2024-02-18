@@ -10,8 +10,8 @@ tags: ["textdraw"]
 
 Gets the preview model of a 3D preview textdraw.
 
-| Name | Description |
-| ---- | -------------------------------------------------------------------------- |
+| Name        | Description                                         |
+|-------------|-----------------------------------------------------|
 | Text:textid | The ID of the textdraw to get the preview model of. |
 
 ## Returns
@@ -27,7 +27,7 @@ public OnGameModeInit()
 {
     textdraw = TextDrawCreate(320.0, 240.0, "_");
     TextDrawFont(textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    TextDrawUseBox(textdraw, 1);
+    TextDrawUseBox(textdraw, true);
     TextDrawBoxColor(textdraw, 0x000000FF);
     TextDrawTextSize(textdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(textdraw, 411);
