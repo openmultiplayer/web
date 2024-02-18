@@ -4,11 +4,7 @@ description: Sets a player textdraw 2D preview sprite of a specified model ID.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3x and will not work in earlier versions!
-
-:::
+<VersionWarn version='SA-MP 0.3x' />
 
 ## คำอธิบาย
 
@@ -35,7 +31,7 @@ public OnPlayerConnect(playerid)
 {
     textdraw = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");
     PlayerTextDrawFont(playerid, textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    PlayerTextDrawUseBox(playerid, textdraw, 1);
+    PlayerTextDrawUseBox(playerid, textdraw, true);
     PlayerTextDrawBoxColor(playerid, textdraw, 0x000000FF);
     PlayerTextDrawTextSize(playerid, textdraw, 40.0, 40.0);
     PlayerTextDrawSetPreviewModel(playerid, textdraw, 411); // Show an Infernus (model 411)
@@ -50,13 +46,16 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for this function to have effect.
+The textdraw MUST use the font type `TEXT_DRAW_FONT_MODEL_PREVIEW` in order for this function to have effect.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- PlayerTextDrawSetPreviewRot: Set rotation of a 3D player textdraw preview.
-- PlayerTextDrawSetPreviewVehCol: Set the colours of a vehicle in a 3D player textdraw preview.
-- PlayerTextDrawFont: Set the font of a player-textdraw.
-- OnPlayerClickPlayerTextDraw: Called when a player clicks on a player-textdraw.
+- [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Set rotation of a 3D player textdraw preview.
+- [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol): Set the colours of a vehicle in a 3D player textdraw preview.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
+
+## Related Callbacks
+
+- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

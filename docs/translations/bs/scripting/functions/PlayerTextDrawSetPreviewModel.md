@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
 {
     gTextDraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "_");
     PlayerTextDrawFont(playerid, gTextDraw[playerid], TEXT_DRAW_FONT_MODEL_PREVIEW);
-    PlayerTextDrawUseBox(playerid, gTextDraw[playerid], 1);
+    PlayerTextDrawUseBox(playerid, gTextDraw[playerid], true);
     PlayerTextDrawBoxColor(playerid, gTextDraw[playerid], 0x000000FF);
     PlayerTextDrawTextSize(playerid, gTextDraw[playerid], 40.0, 40.0);
     PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 411); // Prikaži Infernus (model 411)
@@ -50,7 +50,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-Textdraw MORA koristiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkcija imala efekta.
+Textdraw MORA koristiti tip fonta `TEXT_DRAW_FONT_MODEL_PREVIEW` kako bi ova funkcija imala efekta.
 
 :::
 
@@ -59,4 +59,7 @@ Textdraw MORA koristiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkc
 - [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Postavlja rotaciju 3D prikaza u player-textdrawu.
 - [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol): Postavlja boju vozila 3D prikazu u player-textdrawu.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
+
+## Related Callbacks
+
 - [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Pozvano kada igrač klikne na player-textdraw.

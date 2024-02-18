@@ -46,7 +46,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for this function to have effect.
+The textdraw MUST use the font type `TEXT_DRAW_FONT_MODEL_PREVIEW` in order for this function to have effect.
 
 :::
 
@@ -56,4 +56,7 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for th
 - [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Set rotation of a 3D player textdraw preview.
 - [PlayerTextDrawSetPreviewVehCol](PlayerTextDrawSetPreviewVehCol): Set the colours of a vehicle in a 3D player textdraw preview.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
+
+## Related Callbacks
+
 - [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.
