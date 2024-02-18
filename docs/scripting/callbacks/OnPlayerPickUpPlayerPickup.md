@@ -4,6 +4,8 @@ description: This callback is called when a player picks up a player-pickup crea
 tags: ["player", "pickup", "playerpickup"]
 ---
 
+<VersionWarn name='callback' version='omp v1.1.0.2612' />
+
 ## Description
 
 This callback is called when a player picks up a player-pickup created with [CreatePlayerPickup](../functions/CreatePlayerPickup).

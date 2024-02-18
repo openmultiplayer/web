@@ -4,7 +4,7 @@ description: Ce rappel est appelé lorsqu'un objet à récupérer entre dans la 
 tags: ["player"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarn name='callback' version='omp v1.1.0.2612' />
 
 ## Description
 

@@ -4,6 +4,8 @@ description: Ce rappel est appelé lorsqu'un joueur ramasse un objet joueur-pick
 tags: ["player", "pickup", "playerpickup"]
 ---
 
+<VersionWarn name='callback' version='omp v1.1.0.2612' />
+
 ## Description
 
 Ce rappel est appelé lorsqu'un joueur ramasse un objet joueur-pickup créé avec [CreatePlayerPickup](../functions/CreatePlayerPickup).

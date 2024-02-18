@@ -4,7 +4,7 @@ description: Ce rappel est appelé lorsqu'un joueur entre dans une zone de gang
 tags: ["player", "gangzone"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarn name='callback' version='omp v1.1.0.2612' />
 
 ## Description
 

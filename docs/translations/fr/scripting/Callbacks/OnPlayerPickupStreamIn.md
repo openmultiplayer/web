@@ -4,7 +4,7 @@ description: Ce rappel est appelé lorsque qu'un objet joueur-pickup entre dans 
 tags: ["player", "pickup", "playerpickup"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarn name='callback' version='omp v1.1.0.2612' />
 
 ## Description
 
