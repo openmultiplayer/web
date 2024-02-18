@@ -10,13 +10,13 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador sufre daño.
 
-| Nombre   | Descripción                                                                                                             |
-| -------- | ----------------------------------------------------------------------------------------------------------------------- |
-| playerid | El ID del jugador que sufrió daño.                                                                                      |
-| issuerid | El ID del jugador que causó el daño. O INVALID_PLAYER_ID si fue él mismo.                                               |
-| amount   | La cantidad de daño que sufrió el jugador (salud y chaleco combinados).                                                 |
-| weaponid | El ID del arma/origen del daño.                                                                                         |
-| bodypart | La parte del cuerpo del impacto. (NOTA: Este parámetro se añadió en 0.3z, sacar en caso de usar versiones anteriores!). |
+| Nombre          | Descripción                                                                                                             |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------|
+| playerid        | El ID del jugador que sufrió daño.                                                                                      |
+| issuerid        | El ID del jugador que causó el daño. O INVALID_PLAYER_ID si fue él mismo.                                               |
+| Float:amount    | La cantidad de daño que sufrió el jugador (salud y chaleco combinados).                                                 |
+| WEAPON:weaponid | El ID del arma/origen del daño.                                                                                         |
+| bodypart        | La parte del cuerpo del impacto. (NOTA: Este parámetro se añadió en 0.3z, sacar en caso de usar versiones anteriores!). |
 
 ## Devoluciones
 
@@ -29,7 +29,7 @@ Siempre se llama primero en filterscripts.
 ## Ejemplos
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID) // Si no fue causado por él mismo
     {
@@ -49,7 +49,8 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
     }
     return 1;
 }
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
@@ -73,5 +74,3 @@ El 'weaponid' va a retornar 37 (lanzallamas) de cualquier origen de fuego (ej. m
 GetPlayerHealth y GetPlayerArmour retornará los valores antiguos antes de este callback. Siempre comprobar si 'issuerid' es válido antes de usarlo en un array.
 
 :::
-
-## Funciones Relacionadas
