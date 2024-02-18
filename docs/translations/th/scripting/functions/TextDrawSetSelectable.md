@@ -4,20 +4,16 @@ description: Sets whether a textdraw can be selected (clicked on) or not.
 tags: ["textdraw"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
+<VersionWarn version='SA-MP 0.3e' />
 
 ## คำอธิบาย
 
 Sets whether a textdraw can be selected (clicked on) or not
 
-| Name | Description                                              |
-| ---- | -------------------------------------------------------- |
-| text | The ID of the textdraw to make selectable.               |
-| set  | 1 to make it selectable, or 0 to make it not selectable. |
+| Name     | Description                                                         |
+|----------|---------------------------------------------------------------------|
+| text     | The ID of the textdraw to make selectable.                          |
+| bool:set | 'true' to make it selectable, or 'false' to make it not selectable. |
 
 ## ส่งคืน
 
@@ -30,7 +26,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/selectd", true))
     {
-        for(new i = 0; i < MAX_TEXT_DRAWS; i++) TextDrawSetSelectable(Text:i, 1);
+        for (new i = 0; i < MAX_TEXT_DRAWS; i++)
+        {
+            TextDrawSetSelectable(Text:i, true);
+        }
         SendClientMessage(playerid, 0xFFFFFFAA, "SERVER: All textdraws can be selected now!");
         return 1;
     }
@@ -42,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Use TextDrawTextSize to define the clickable area.
+Use [TextDrawTextSize](TextDrawTextSize) to define the clickable area.
 
 :::
 
@@ -56,4 +55,7 @@ TextDrawSetSelectable must be used BEFORE the textdraw is shown to players for i
 
 - [SelectTextDraw](../functions/SelectTextDraw.md): Enables the mouse, so the player can select a textdraw
 - [CancelSelectTextDraw](../functions/CancelSelectTextDraw.md): Cancel textdraw selection with the mouse
+
+## Related Callbacks
+
 - [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.

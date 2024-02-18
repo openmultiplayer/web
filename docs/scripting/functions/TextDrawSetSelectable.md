@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Sets whether a textdraw can be selected (clicked on) or not
 
-| Name | Description                                              |
-| ---- | -------------------------------------------------------- |
-| text | The ID of the textdraw to make selectable.               |
-| bool:set  | 'true' to make it selectable, or 'false' to make it not selectable. |
+| Name     | Description                                                         |
+|----------|---------------------------------------------------------------------|
+| text     | The ID of the textdraw to make selectable.                          |
+| bool:set | 'true' to make it selectable, or 'false' to make it not selectable. |
 
 ## Returns
 
@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 :::tip
 
-Use TextDrawTextSize to define the clickable area.
+Use [TextDrawTextSize](TextDrawTextSize) to define the clickable area.
 
 :::
 
