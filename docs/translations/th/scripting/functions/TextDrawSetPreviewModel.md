@@ -32,7 +32,7 @@ public OnGameModeInit()
 {
     textdraw = TextDrawCreate(320.0, 240.0, "_");
     TextDrawFont(textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    TextDrawUseBox(textdraw, 1);
+    TextDrawUseBox(textdraw, true);
     TextDrawBoxColor(textdraw, 0x000000FF);
     TextDrawTextSize(textdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(textdraw, 411); //Display model 411 (Infernus)
@@ -48,13 +48,13 @@ public OnGameModeInit()
 
 :::tip
 
-Use TextDrawBackgroundColor to set the background color behind the model.
+Use [TextDrawBackgroundColor](TextDrawBackgroundColor) to set the background color behind the model.
 
 :::
 
 :::warning
 
-The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for this function to have effect.
+The textdraw MUST use the font type `TEXT_DRAW_FONT_MODEL_PREVIEW` in order for this function to have effect.
 
 :::
 
@@ -64,4 +64,7 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for th
 - [TextDrawSetPreviewVehCol](../functions/TextDrawSetPreviewVehCol.md): Set the colours of a vehicle in a 3D textdraw preview.
 - [TextDrawFont](../functions/TextDrawFont.md): Set the font of a textdraw.
 - [PlayerTextDrawSetPreviewModel](../functions/PlayerTextDrawSetPreviewModel.md): Set model ID of a 3D player textdraw preview.
+
+## Related Callbacks
+
 - [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
