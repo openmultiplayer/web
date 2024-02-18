@@ -14,18 +14,18 @@ Callback นี้ถูกเพิ่มใน SA-MP 0.3e และจะไ�
 
 This callback is called when a player finishes editing an object (EditObject/EditPlayerObject).
 
-| Name         | Description                                                        |
-| ------------ | ------------------------------------------------------------------ |
-| playerid     | The ID of the player that edited an object                         |
-| playerobject | 0 if it is a global object or 1 if it is a playerobject.           |
-| objectid     | The ID of the edited object                                        |
-| response     | The [type of response](../resources/objecteditionresponsetypes.md) |
-| Float:fX     | The X offset for the object that was edited                        |
-| Float:fY     | The Y offset for the object that was edited                        |
-| Float:fZ     | The Z offset for the object that was edited                        |
-| Float:fRotX  | The X rotation for the object that was edited                      |
-| Float:fRotY  | The Y rotation for the object that was edited                      |
-| Float:fRotZ  | The Z rotation for the object that was edited                      |
+| Name                   | Description                                                        |
+|------------------------|--------------------------------------------------------------------|
+| playerid               | The ID of the player that edited an object                         |
+| playerobject           | 0 if it is a global object or 1 if it is a playerobject.           |
+| objectid               | The ID of the edited object                                        |
+| EDIT_RESPONSE:response | The [type of response](../resources/objecteditionresponsetypes.md) |
+| Float:fX               | The X offset for the object that was edited                        |
+| Float:fY               | The Y offset for the object that was edited                        |
+| Float:fZ               | The Z offset for the object that was edited                        |
+| Float:fRotX            | The X rotation for the object that was edited                      |
+| Float:fRotY            | The Y rotation for the object that was edited                      |
+| Float:fRotZ            | The Z rotation for the object that was edited                      |
 
 ## ส่งคืน
 
@@ -38,7 +38,7 @@ This callback is called when a player finishes editing an object (EditObject/Edi
 ## ตัวอย่าง
 
 ```c
-public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
+public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new Float:oldX, Float:oldY, Float:oldZ, Float:oldRotX, Float:oldRotY, Float:oldRotZ;
     GetObjectPos(objectid, oldX, oldY, oldZ);
