@@ -10,13 +10,13 @@ tags: ["player"]
 
 Cette callback est appelée quand un joueur inflige des dégâts à un autre joueur.
 
-| Nom             | Description                                                              |
-| --------------- | ------------------------------------------------------------------------ |
-| `int` playerid  | ID du joueur qui inflige le dégât                                        |
-| `int` damagedid | ID du joueur qui reçoit le dégât                                         |
-| `int` amount    | Montant de la perte en armure/vie (combinés)                             |
-| `int` weaponid  | Cause du dommage                                                         |
-| `int` bodypart  | Partie du corps qui a été touchée (NOTE: Disponible à partir de la 0.3z) |
+| Nom                   | Description                                                              |
+|-----------------------|--------------------------------------------------------------------------|
+| `int` playerid        | ID du joueur qui inflige le dégât                                        |
+| `int` damagedid       | ID du joueur qui reçoit le dégât                                         |
+| `float` Float:amount  | Montant de la perte en armure/vie (combinés)                             |
+| `int` WEAPON:weaponid | Cause du dommage                                                         |
+| `int` bodypart        | Partie du corps qui a été touchée (NOTE: Disponible à partir de la 0.3z) |
 
 ## Valeur de retour
 
@@ -27,7 +27,7 @@ Cette callback est appelée quand un joueur inflige des dégâts à un autre jou
 ## Exemple
 
 ```c
-public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
+public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new 
       string[128], 
@@ -64,5 +64,3 @@ Le weaponid retournera la raison 51 de n'importe quelle arme qui crée une explo
 Le montant est toujours le maximum de dégâts que l'arme peut faire, même si la santé restante est inférieure à ce maximum de dégâts. Ainsi, lorsqu'un joueur a 100,0 points de vie et se fait tirer dessus avec un Desert Eagle qui a une valeur de dégâts de 46,2, il faut 3 coups pour tuer ce joueur. Les 3 tirs montreront au final un montant de 46,2, même si lorsque le dernier coup frappe, le joueur n'a plus que 7,6 points de vie.
 
 :::
-
-## Fonctions connexes
