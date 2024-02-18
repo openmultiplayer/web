@@ -13,12 +13,12 @@ Callback ini dipanggil ketika pemain melepaskan tembakan dari senjata. Hanya sen
 | Nama     | Deskripsi                                                                                               |
 | -------- | --------------------------------------------------------------------------------------------------------- |
 | playerid | ID pemain yang menembakkan senjata.                                                                  |
-| weaponid | ID dari [weapon](../resources/weaponids) yang di tembak oleh pemain.                                        |
-| hittype  | [type](../resources/bullethittypes) Tersebut dari benda yang di tembakkan (tidak ada, pemain, kendaraan, atau (pemain) objek). |
+| WEAPON:weaponid | ID dari [weapon](../resources/weaponids) yang di tembak oleh pemain.                                        |
+| BULLET_HIT_TYPE:hittype  | [type](../resources/bullethittypes) Tersebut dari benda yang di tembakkan (tidak ada, pemain, kendaraan, atau (pemain) objek). |
 | hitid    | ID pemain, kendaraan atau objek yang tertabrak.                                                     |
-| fX       | Koordinat X yang di tembak.                                                                       |
-| fY       | Koordinat Y yang di tembak.                                                                       |
-| fZ       | Koordinat Z yang di tembak.                                                                       |
+| Float:fX       | Koordinat X yang di tembak.                                                                       |
+| Float:fY       | Koordinat Y yang di tembak.                                                                       |
+| Float:fZ       | Koordinat Z yang di tembak.                                                                       |
 
 ## Returns
 
@@ -31,7 +31,7 @@ Itu selalu disebut pertama dalam filterscript sehingga mengembalikan 0 di sana j
 ## Contoh
 
 ```c
-public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
+public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
     new szString[144];
     format(szString, sizeof(szString), "Senjata %i telah di tembakkan. hittype: %i   hitid: %i   pos: %f, %f, %f", weaponid, hittype, hitid, fX, fY, fZ);
@@ -47,20 +47,24 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 Callback ini hanya di panggil ketika kompensasi lag diaktifkan. Jika tipe hit adalah:
 
-- BULLET_HIT_TYPE_NONE: parameter fX, fY dan fZ adalah koordinat normal, akan memberikan 0,0 untuk koordinat jika tidak ada yang terkena (misalnya objek jauh yang tidak dapat dijangkau oleh peluru);
+- `BULLET_HIT_TYPE_NONE`: parameter fX, fY dan fZ adalah koordinat normal, akan memberikan 0,0 untuk koordinat jika tidak ada yang terkena (misalnya objek jauh yang tidak dapat dijangkau oleh peluru);
 - Others: fX, fY dan fZ adalah offset relatif kepada hitid.
 
 :::
 
 :::tip
 
-GetPlayerLastShotVectors dapat digunakan dalam callback ini untuk informasi vektor peluru yang lebih detail.
+[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) dapat digunakan dalam callback ini untuk informasi vektor peluru yang lebih detail.
 
 :::
 
 :::warning
 
-Bug yang Diketahui: callback tidak dipanggil jika Anda menembak di kendaraan sebagai pengemudi atau jika Anda melihat ke belakang dengan bidikan di aktifkan (menembak di udara). Disebut sebagai BULLET_HIT_TYPE_VEHICLE dengan hitid yang benar (id kendaraan pemain yang dipukul) jika Anda menembak pemain yang berada di dalam kendaraan. Itu tidak akan disebut sebagai BULLET_HIT_TYPE_PLAYER sama sekali. [Klik di sini untuk kemungkinan perbaikan] Perbaikan sebagian di SA-MP 0.3.7: Jika data senjata palsu dikirim oleh pengguna jahat(chiter), klien pemain lain dapat membeku atau crash. Untuk mengatasi ini, periksa apakah weaponid yang di laporkan benar-benar dapat menembakkan peluru.
+Bug yang Diketahui:
+
+- callback tidak dipanggil jika Anda menembak di kendaraan sebagai pengemudi atau jika Anda melihat ke belakang dengan bidikan di aktifkan (menembak di udara).
+- Disebut sebagai `BULLET_HIT_TYPE_VEHICLE` dengan hitid yang benar (id kendaraan pemain yang dipukul) jika Anda menembak pemain yang berada di dalam kendaraan. Itu tidak akan disebut sebagai `BULLET_HIT_TYPE_PLAYER` sama sekali.
+- Perbaikan sebagian di SA-MP 0.3.7: Jika data senjata palsu dikirim oleh pengguna jahat(chiter), klien pemain lain dapat membeku atau crash. Untuk mengatasi ini, periksa apakah weaponid yang di laporkan benar-benar dapat menembakkan peluru.
 
 :::
 

@@ -10,18 +10,18 @@ tags: ["player"]
 
 Cette callback est appelée quand un joueur a fini d'éditer un objet (EditObject/EditPlayerObject).
 
-| Nom                  | Description                                                        |
-| -------------------- | ------------------------------------------------------------------ |
-| `int`   playerid     | ID du joueur qui a édité l'objet                                   |
-| `int`   playerobject | **0** si c'est un global object, **1** si c'est un playerobject    |
-| `int`   objectid     | ID de l'objet édité                                                |
-| `int`   response     | Le [type de réponse](../resources/objecteditionresponsetypes)      |
-| `float` Float:fX     | Offset X de l'objet qui a été édité                                |
-| `float` Float:fY     | Offset Y de l'objet qui a été édité                                |
-| `float` Float:fZ     | Offset Z de l'objet qui a été édité                                |
-| `float` Float:fRotX  | Rotation X de l'objet qui a été édité                              |
-| `float` Float:fRotY  | Rotation Y de l'objet qui a été édité                              |
-| `float` Float:fRotZ  | Rotation Z de l'objet qui a été édité                              |
+| Nom                            | Description                                                     |
+|--------------------------------|-----------------------------------------------------------------|
+| `int`   playerid               | ID du joueur qui a édité l'objet                                |
+| `int`   playerobject           | **0** si c'est un global object, **1** si c'est un playerobject |
+| `int`   objectid               | ID de l'objet édité                                             |
+| `int`   EDIT_RESPONSE:response | Le [type de réponse](../resources/objecteditionresponsetypes)   |
+| `float` Float:fX               | Offset X de l'objet qui a été édité                             |
+| `float` Float:fY               | Offset Y de l'objet qui a été édité                             |
+| `float` Float:fZ               | Offset Z de l'objet qui a été édité                             |
+| `float` Float:fRotX            | Rotation X de l'objet qui a été édité                           |
+| `float` Float:fRotY            | Rotation Y de l'objet qui a été édité                           |
+| `float` Float:fRotZ            | Rotation Z de l'objet qui a été édité                           |
 
 ## Valeur de retour
 
@@ -32,7 +32,7 @@ Cette callback est appelée quand un joueur a fini d'éditer un objet (EditObjec
 ## Exemple
 
 ```c
-public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
+public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new
         Float: oldX,

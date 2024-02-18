@@ -8,11 +8,11 @@ tags: ["player"]
 
 Cette callback est appelée quand le joueur est mort. Il peut s'agir aussi bien d'une mort par kill qu'une mort par suicide.
 
-| Nom            | Description                                                        |
-| -------------- | ------------------------------------------------------------------ |
-| `int` playerid | ID du joueur mort                                                  |
-| `int` killerid | ID du joueur qui kill le `playerid`, ou INVALID_PLAYER_ID à défaut |
-| `int` reason   | ID de la raison de la mort                                         |
+| Nom                 | Description                                                        |
+|---------------------|--------------------------------------------------------------------|
+| `int` playerid      | ID du joueur mort                                                  |
+| `int` killerid      | ID du joueur qui kill le `playerid`, ou INVALID_PLAYER_ID à défaut |
+| `int` WEAPON:reason | ID de la raison de la mort                                         |
 
 ## Valeur de retour
 
@@ -24,7 +24,7 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); // Notification dans le killfeed
 

@@ -8,11 +8,11 @@ tags: ["player"]
 
 Bu callback bir oyuncu öldüğünde, intihar ettiğinde yada başka bir oyuncu tarafından öldürüldüğünde çağırılır.
 
-| İsim     | Açıklama                                                                                    |
-| -------- | ------------------------------------------------------------------------------------------- |
-| playerid | Ölen oyuncunun ID'si.                                                                       |
-| killerid | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu yoksa INVALID_PLAYER_ID değeri döndürülür. |
-| reason   | Oyuncunun ölüm sebebinin ID'si.                                                             |
+| İsim          | Açıklama                                                                                    |
+|---------------|---------------------------------------------------------------------------------------------|
+| playerid      | Ölen oyuncunun ID'si.                                                                       |
+| killerid      | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu yoksa INVALID_PLAYER_ID değeri döndürülür. |
+| WEAPON:reason | Oyuncunun ölüm sebebinin ID'si.                                                             |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -28,7 +28,7 @@ Filterscriptlerde her zaman ilk olarak çağırılır.
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); // killfeed(Sağdaki öldüren, silah ve ölen oyuncu) listesine ölen, öldüren ve ölüm nedenini gösterir.
 
@@ -60,5 +60,5 @@ Bir dizi içerisinde kullanmadan önce killerid'nin geçerli olup olmadığını
 
 ## Bağlantılı Fonksiyonlar
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): killfeed'e (Sağdaki öldüren, silah, ölüm listesi.) bir yeni ölüm verisi girer.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Oyuncu canını belirler.
+- [SendDeathMessage](../functions/SendDeathMessage): killfeed'e (Sağdaki öldüren, silah, ölüm listesi.) bir yeni ölüm verisi girer.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Oyuncu canını belirler.

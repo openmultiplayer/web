@@ -8,11 +8,11 @@ tags: ["player"]
 
 Ovaj callback je pozvan kada igrač umre, bilo to samoubistvo ili ubistvo od strane drugog igrača.
 
-| Ime      | Deskripcija                                                                                          |
-| -------- | ---------------------------------------------------------------------------------------------------- |
-| playerid | ID igrača koji je umro.                                                                              |
-| killerid | ID igrača koji je ubio igrača koji je umro, ili INVALID_PLAYER_ID ako ga nema (igrač sam sebe ubio). |
-| reason   | ID razloga zbog kojeg je igrač umro.                                                                 |
+| Ime           | Deskripcija                                                                                          |
+|---------------|------------------------------------------------------------------------------------------------------|
+| playerid      | ID igrača koji je umro.                                                                              |
+| killerid      | ID igrača koji je ubio igrača koji je umro, ili INVALID_PLAYER_ID ako ga nema (igrač sam sebe ubio). |
+| WEAPON:reason | ID razloga zbog kojeg je igrač umro.                                                                 |
 
 ## Returns
 
@@ -28,7 +28,7 @@ Uvijek je pozvana prva u filterskripti.
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); // Prikazuje ubistvo u listi ubistava
 
@@ -60,5 +60,5 @@ MORAŠ provjeriti da li je 'killerid' validan (ako nije: INVALID_PLAYER_ID) prij
 
 ## Srodne Funkcije
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): Dodaj smrt na listu smrti.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Postavi health(zdravlje) igraču.
+- [SendDeathMessage](../functions/SendDeathMessage): Dodaj smrt na listu smrti.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Postavi health(zdravlje) igraču.

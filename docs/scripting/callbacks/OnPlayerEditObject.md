@@ -19,9 +19,9 @@ This callback is called when a player finishes editing an object ([BeginObjectEd
 | Float:fX               | The X offset for the object that was edited                     |
 | Float:fY               | The Y offset for the object that was edited                     |
 | Float:fZ               | The Z offset for the object that was edited                     |
-| Float:rotationX        | The X rotation for the object that was edited                   |
-| Float:rotationY        | The Y rotation for the object that was edited                   |
-| Float:rotationZ        | The Z rotation for the object that was edited                   |
+| Float:fRotX            | The X rotation for the object that was edited                   |
+| Float:fRotY            | The Y rotation for the object that was edited                   |
+| Float:fRotZ            | The Z rotation for the object that was edited                   |
 
 ## Returns
 
@@ -34,7 +34,7 @@ It is always called first in filterscripts.
 ## Examples
 
 ```c
-public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:rotationX, Float:rotationY, Float:rotationZ)
+public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new
         Float: oldX,
@@ -53,7 +53,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
             return 1;
         }
         SetObjectPos(objectid, fX, fY, fZ);
-        SetObjectRot(objectid, rotationX, rotationY, rotationZ);
+        SetObjectRot(objectid, fRotX, fRotY, fRotZ);
     }
 
     switch (response)

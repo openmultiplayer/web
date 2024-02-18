@@ -10,13 +10,13 @@ tags: ["player"]
 
 Bu fonksiyon, oyuncu hasar aldığında çağrılır. 
 
-| Parametre | Açıklama                                                                                                                          |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | Hasar alan oyuncunun ID'si.                                                                                                       |
-| issuerid  | Hasarı veren oyuncunun ID'si. Eğer kişi kendi kendine hasar vermişse INVALID_PLAYER_ID olarak geçer.                              |
-| amount    | Oyuncunun aldığı hasar miktarı. (can ve zırh birbirine kombinlidir)                                                               |
-| weaponid  | Hasarı veren silahın ID'si.                                                                                                       |
-| bodypart  | Vurulan vücut bölgesi. (NOT: Bu parametre 0.3z'de eklenmiştir. Daha eski bir sürüm kullanıyorsanız, bu parametreyi kullanmauyın!) |
+| Parametre       | Açıklama                                                                                                                          |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| playerid        | Hasar alan oyuncunun ID'si.                                                                                                       |
+| issuerid        | Hasarı veren oyuncunun ID'si. Eğer kişi kendi kendine hasar vermişse INVALID_PLAYER_ID olarak geçer.                              |
+| Float:amount    | Oyuncunun aldığı hasar miktarı. (can ve zırh birbirine kombinlidir)                                                               |
+| WEAPON:weaponid | Hasarı veren silahın ID'si.                                                                                                       |
+| bodypart        | Vurulan vücut bölgesi. (NOT: Bu parametre 0.3z'de eklenmiştir. Daha eski bir sürüm kullanıyorsanız, bu parametreyi kullanmauyın!) |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -29,7 +29,7 @@ Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle 1 dönd
 ## Örnekler
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)|
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)|
 {
     if (issuerid != INVALID_PLAYER_ID) // Hasar veren kişi kendi değilse...
     {
@@ -49,7 +49,8 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)|
     }
     return 1;
 }
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9) // Hasar veren kişi kendi değilse, silah ID'si keskin nişancı tüfeğine (34) eşitse ve vurulan vücut parçası 9 ise...
     {
@@ -73,5 +74,3 @@ Eğer hasar bir ateş kaynağındansa (molotof, vb.) weaponid 37(flame thrower) 
 GetPlayerHealth ve GetPlayerArmour, bu fonksiyon çağrılmadan önce oyuncunun eski miktarlarını döndürecektir. Bir dizi dizini kullanmadan önce daima issuerid'in geçerli olup olmadığını kontrol edin. 
 
 :::
-
-## Bağlantılı Fonksiyonlar

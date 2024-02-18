@@ -10,18 +10,18 @@ tags: ["player"]
 
 Bu callback bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObject/EditPlayerObject).
 
-| İsim         | Açıklama                                                                  |
-| ------------ | ------------------------------------------------------------------------- |
-| playerid     | Düzenlemeyi yapan oyuncunun ID'si.                                        |
-| playerobject | Genel bir obje ise 0 olur, oyuncu objesi ise 1 olur.                      |
-| objectid     | Düzenlenen objenin ID'si.                                                 |
-| response     | Verilen cevabın tipi. [tıkla](../resources/objecteditionresponsetypes.md) |
-| Float:fX     | Düzenlenen objenin X yönündeki koordinatı.                                |
-| Float:fY     | Düzenlenen objenin Y yönündeki koordinatı.                                |
-| Float:fZ     | Düzenlenen objenin Z yönündeki koordinatı.                                |
-| Float:fRotX  | Güzenlenen objenin X yönündeki rotasyonu.                                 |
-| Float:fRotY  | Güzenlenen objenin Y yönündeki rotasyonu.                                 |
-| Float:fRotZ  | Güzenlenen objenin Z yönündeki rotasyonu.                                 |
+| İsim                   | Açıklama                                                                  |
+|------------------------|---------------------------------------------------------------------------|
+| playerid               | Düzenlemeyi yapan oyuncunun ID'si.                                        |
+| playerobject           | Genel bir obje ise 0 olur, oyuncu objesi ise 1 olur.                      |
+| objectid               | Düzenlenen objenin ID'si.                                                 |
+| EDIT_RESPONSE:response | Verilen cevabın tipi. [tıkla](../resources/objecteditionresponsetypes.md) |
+| Float:fX               | Düzenlenen objenin X yönündeki koordinatı.                                |
+| Float:fY               | Düzenlenen objenin Y yönündeki koordinatı.                                |
+| Float:fZ               | Düzenlenen objenin Z yönündeki koordinatı.                                |
+| Float:fRotX            | Güzenlenen objenin X yönündeki rotasyonu.                                 |
+| Float:fRotY            | Güzenlenen objenin Y yönündeki rotasyonu.                                 |
+| Float:fRotZ            | Güzenlenen objenin Z yönündeki rotasyonu.                                 |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -34,7 +34,7 @@ Her zaman ilk olarak filterscriptlerde çağırılır.
 ## Örnekler
 
 ```c
-public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
+public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new
         Float: oldX,

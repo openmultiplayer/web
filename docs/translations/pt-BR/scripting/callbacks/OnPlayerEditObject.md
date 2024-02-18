@@ -10,31 +10,18 @@ tags: ["player"]
 
 Esta callback é chamada quando um jogador termina de editar um objeto (EditObject/EditPlayerObject).
 
-| Nome         | Descrição                                                          |
-| ------------ | ------------------------------------------------------------------ |
-| playerid     | The ID of the player that edited an object                         |
-| playerobject | 0 if it is a global object or 1 if it is a playerobject.           |
-| objectid     | The ID of the edited object                                        |
-| response     | The [type of response](../resources/objecteditionresponsetypes.md) |
-| Float:fX     | The X offset for the object that was edited                        |
-| Float:fY     | The Y offset for the object that was edited                        |
-| Float:fZ     | The Z offset for the object that was edited                        |
-| Float:fRotX  | The X rotation for the object that was edited                      |
-| Float:fRotY  | The Y rotation for the object that was edited                      |
-| Float:fRotZ  | The Z rotation for the object that was edited                      |
-
-| Name         | Descrição                                                     |
-| ------------ | ------------------------------------------------------------- |
-| playerid     | O ID do jogador que edtiou um objeto                          |
-| playerobject | 0 se for global, ou 1 se for um playerobject.                 |
-| objectid     | O ID do objeto que foi editado.                               |
-| response     | O [tipo de resposta](../resources/objecteditionresponsetypes) |
-| Float:fX     | O desclocamento de X para o objeto editado.                   |
-| Float:fY     | O desclocamento de Y para o objeto editado.                   |
-| Float:fZ     | O desclocamento de Z para o objeto editado.                   |
-| Float:fRotX  | A rotação de X para o objeto editado.                         |
-| Float:fRotY  | A rotação de Y para o objeto editado.                         |
-| Float:fRotZ  | A rotação de Z para o objeto editado.                         |
+| Name                   | Descrição                                                     |
+|------------------------|---------------------------------------------------------------|
+| playerid               | O ID do jogador que edtiou um objeto                          |
+| playerobject           | 0 se for global, ou 1 se for um playerobject.                 |
+| objectid               | O ID do objeto que foi editado.                               |
+| EDIT_RESPONSE:response | O [tipo de resposta](../resources/objecteditionresponsetypes) |
+| Float:fX               | O desclocamento de X para o objeto editado.                   |
+| Float:fY               | O desclocamento de Y para o objeto editado.                   |
+| Float:fZ               | O desclocamento de Z para o objeto editado.                   |
+| Float:fRotX            | A rotação de X para o objeto editado.                         |
+| Float:fRotY            | A rotação de Y para o objeto editado.                         |
+| Float:fRotZ            | A rotação de Z para o objeto editado.                         |
 
 ## Retorno
 
@@ -47,7 +34,7 @@ Sempre é chamada primeiro em filterscripts.
 ## Exemplos
 
 ```c
-public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
+public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new
         Float: oldX,

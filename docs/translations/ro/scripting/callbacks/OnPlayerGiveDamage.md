@@ -10,13 +10,13 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător dă daune altui jucător.
 
-| Nume      | Descriere                                                                                                                                 |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | ID-ul jucătorului care a provocat daune.                                                                                                  |
-| damagedid | ID-ul jucătorului care a primit daune.                                                                                                    |
-| amount    | Cantitatea de sănătate/armură deteriorată s-a pierdut (combinat).                                                                         |
-| weaponid  | Motivul care a cauzat dauna.                                                                                                              |
-| bodypart  | [partea corpului](../resources/bodyparts) care a fost lovită. (NOTĂ: Acest parametru a fost adăugat în 0.3z. Lăsați-l afară dacă utilizați o versiune mai veche!)    |
+| Nume            | Descriere                                                         |
+|-----------------|-------------------------------------------------------------------|
+| playerid        | ID-ul jucătorului care a provocat daune.                          |
+| damagedid       | ID-ul jucătorului care a primit daune.                            |
+| Float:amount    | Cantitatea de sănătate/armură deteriorată s-a pierdut (combinat). |
+| WEAPON:weaponid | Motivul care a cauzat dauna.                                      |
+| bodypart        | [partea corpului](../resources/bodyparts) care a fost lovită.     |
 
 ## Returnări
 
@@ -29,7 +29,7 @@ Este întotdeauna numit primul în filterscript-uri, astfel încât returnarea 1
 ## Exemple
 
 ```c
-public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
+public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], victim[MAX_PLAYER_NAME], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -50,5 +50,3 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
 Rețineți că această funcție poate fi inexactă în unele cazuri. Dacă doriți să împiedicați anumiți jucători să-și deterioreze unii pe alții, utilizați SetPlayerTeam. Armă va returna 37 (aruncător de flăcări) din orice sursă de foc (de exemplu, molotov, 18) Armă va returna 51 de la orice armă care creează o explozie (de exemplu, RPG, grenadă) playerid este singurul care poate apela înapoi. Suma este întotdeauna dauna maximă pe care o poate face armele, chiar și atunci când sănătatea rămasă este mai mică decât dauna maximă. Deci, atunci când un jucător are 100,0 de sănătate și este împușcat cu un Vultur deșert care are o valoare a daunelor de 46,2, este nevoie de 3 lovituri pentru a ucide acel jucător. Toate cele 3 lovituri vor arăta o sumă de 46,2, chiar dacă atunci când lovește ultima lovitură, jucătorului mai are doar 7,6 de sănătate.
 
 :::
-
-## Funcții similare

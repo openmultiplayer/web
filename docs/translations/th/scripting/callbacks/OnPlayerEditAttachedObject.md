@@ -14,21 +14,22 @@ Callback นี้ถูกเพิ่มใน SA-MP 0.3e และจะไ�
 
 This callback is called when a player ends attached object edition mode.
 
-| Name           | Description                                                   |
-| -------------- | ------------------------------------------------------------- |
-| playerid       | The ID of the player that ended edition mode                  |
-| response       | 0 if they cancelled (ESC) or 1 if they clicked the save icon. |
-| modelid        | The model of the attached object that was edited              |
-| boneid         | The bone of the attached object that was edited               |
-| Float:fOffsetX | The X offset for the attached object that was edited          |
-| Float:fOffsetY | The Y offset for the attached object that was edited          |
-| Float:fOffsetZ | The Z offset for the attached object that was edited          |
-| Float:fRotX    | The X rotation for the attached object that was edited        |
-| Float:fRotY    | The Y rotation for the attached object that was edited        |
-| Float:fRotZ    | The Z rotation for the attached object that was edited        |
-| Float:fScaleX  | The X scale for the attached object that was edited           |
-| Float:fScaleY  | The Y scale for the attached object that was edited           |
-| Float:fScaleZ  | The Z scale for the attached object that was edited           |
+| Name                   | Description                                                   |
+|------------------------|---------------------------------------------------------------|
+| playerid               | The ID of the player that ended edition mode                  |
+| EDIT_RESPONSE:response | 0 if they cancelled (ESC) or 1 if they clicked the save icon. |
+| index                  | The index of the attached object (0-9)                        |
+| modelid                | The model of the attached object that was edited              |
+| boneid                 | The bone of the attached object that was edited               |
+| Float:fOffsetX         | The X offset for the attached object that was edited          |
+| Float:fOffsetY         | The Y offset for the attached object that was edited          |
+| Float:fOffsetZ         | The Z offset for the attached object that was edited          |
+| Float:fRotX            | The X rotation for the attached object that was edited        |
+| Float:fRotY            | The Y rotation for the attached object that was edited        |
+| Float:fRotZ            | The Z rotation for the attached object that was edited        |
+| Float:fScaleX          | The X scale for the attached object that was edited           |
+| Float:fScaleY          | The Y scale for the attached object that was edited           |
+| Float:fScaleZ          | The Z scale for the attached object that was edited           |
 
 ## ส่งคืน
 
@@ -58,7 +59,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // The data should be stored in the above array when attached objects are attached.
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {
@@ -95,5 +96,5 @@ Editions should be discarded if response was '0' (cancelled). This must be done 
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [EditAttachedObject](../../scripting/functions/EditAttachedObject.md): Edit an attached object.
-- [SetPlayerAttachedObject](../../scripting/functions/SetPlayerAttachedObject.md): Attach an object to a player
+- [EditAttachedObject](../functions/EditAttachedObject): Edit an attached object.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Attach an object to a player

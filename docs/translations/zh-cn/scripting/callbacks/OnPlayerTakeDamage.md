@@ -14,8 +14,8 @@ tags: ["player"]
 | -------- | --------------------------------------------------------------------------------------------------- |
 | playerid | 受伤的玩家的 ID。                                                                                   |
 | issuerid | 造成伤害的玩家的 ID。 如果是自己造成的则为 INVALID_PLAYER_ID。                                      |
-| amount   | 玩家受到的伤害(生命值和护甲的总和)。                                                                |
-| weaponid | 造成伤害的武器/原因的 ID                                                                            |
+| Float:amount   | 玩家受到的伤害(生命值和护甲的总和)。                                                                |
+| WEAPON:weaponid | 造成伤害的武器/原因的 ID                                                                            |
 | bodypart | 被击中的[身体部位](../resources/bodyparts)。(注：此参数在 0.3z 中增加。如果使用较旧的版本，请省略!) |
 
 ## 返回值
@@ -29,7 +29,7 @@ tags: ["player"]
 ## 案例
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID) // 如果不是自己造成的
     {
@@ -49,7 +49,8 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
     }
     return 1;
 }
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {

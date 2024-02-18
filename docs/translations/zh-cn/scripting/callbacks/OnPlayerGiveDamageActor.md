@@ -14,8 +14,8 @@ tags: ["player"]
 | --------------- | ------------------------------------------ |
 | playerid        | 造成伤害的玩家 ID                          |
 | damaged_actorid | 受到伤害的演员 ID                          |
-| amount          | 演员 ID 所损失的生命值/装甲伤害            |
-| weaponid        | 造成伤害的原因                             |
+| Float:amount          | 演员 ID 所损失的生命值/装甲伤害            |
+| WEAPON:weaponid        | 造成伤害的原因                             |
 | bodypart        | 被击中的[身体部位](../resources/bodyparts) |
 
 ## 返回值
@@ -29,7 +29,7 @@ tags: ["player"]
 ## 案例
 
 ```c
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponid, bodypart)
+public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -58,5 +58,8 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponi
 - [GetActorHealth](../functions/GetActorHealth): 获取演员的健康值。
 - [IsActorInvulnerable](../functions/IsActorInvulnerable): 检查演员是否无懈可击。
 - [IsValidActor](../functions/IsValidActor): 检查演员 ID 是否有效。
+
+## Related Callbacks
+
 - [OnActorStreamOut](OnActorStreamOut): 当一个演员被一个玩家流出时调用。
 - [OnPlayerStreamIn](OnPlayerStreamIn): 当一个玩家被另一个玩家流入时调用。
