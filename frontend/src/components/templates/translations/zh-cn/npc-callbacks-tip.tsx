@@ -1,4 +1,4 @@
-import Admonition from "../../Admonition";
+import Admonition from "../../../Admonition";
 
 export default function TipNPCCallbacks() {
   return (
