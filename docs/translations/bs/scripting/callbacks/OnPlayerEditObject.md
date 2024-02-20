@@ -14,18 +14,18 @@ Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
 
 Ovaj callback je pozvan kada igrač dovrši uređivanje objekta (EditObject/EditPlayerObject).
 
-| Ime          | Deskripcija                                                |
-| ------------ | ---------------------------------------------------------- |
-| playerid     | ID igrača koji je uredi objekat                            |
-| playerobject | 0 ako je globalni objekat 1 ako je playerobject.           |
-| objectid     | ID uređenog objekta                                        |
-| response     | [Tip odgovora](../resources/objecteditionresponsetypes.md) |
-| Float:fX     | Ofset X prikvačenog objekta koji je editovan               |
-| Float:fY     | Ofset Y prikvačenog objekta koji je editovan               |
-| Float:fZ     | Ofset Z prikvačenog objekta koji je editovan               |
-| Float:fRotX  | Rotacija X prikvačenog objekta koji je editovan            |
-| Float:fRotY  | Rotacija Y prikvačenog objekta koji je editovan            |
-| Float:fRotZ  | Rotacija Z prikvačenog objekta koji je editovan            |
+| Ime                    | Deskripcija                                                |
+|------------------------|------------------------------------------------------------|
+| playerid               | ID igrača koji je uredi objekat                            |
+| playerobject           | 0 ako je globalni objekat 1 ako je playerobject.           |
+| objectid               | ID uređenog objekta                                        |
+| EDIT_RESPONSE:response | [Tip odgovora](../resources/objecteditionresponsetypes.md) |
+| Float:fX               | Ofset X prikvačenog objekta koji je editovan               |
+| Float:fY               | Ofset Y prikvačenog objekta koji je editovan               |
+| Float:fZ               | Ofset Z prikvačenog objekta koji je editovan               |
+| Float:fRotX            | Rotacija X prikvačenog objekta koji je editovan            |
+| Float:fRotY            | Rotacija Y prikvačenog objekta koji je editovan            |
+| Float:fRotZ            | Rotacija Z prikvačenog objekta koji je editovan            |
 
 ## Returns
 
@@ -38,7 +38,7 @@ Uvijek je pozvana prva u filterskripti.
 ## Primjeri
 
 ```c
-public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
+public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new
         Float: oldX,

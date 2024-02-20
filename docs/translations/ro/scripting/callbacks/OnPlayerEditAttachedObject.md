@@ -10,22 +10,22 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător încheie modul de ediție a obiectelor atașate.
 
-| Nume           | Descriere                                                                 |
-| -------------- | ------------------------------------------------------------------------- |
-| playerid       | ID-ul jucătorului care a încheiat modul ediție                            |
-| response       | 0 dacă au anulat (ESC) sau 1 dacă au făcut clic pe pictograma de salvare  |
-| index          | Indexul obiectului atașat (0-9)                                           |
-| modelid        | Modelul obiectului atașat care a fost editat                              |
-| boneid         | Osul obiectului atașat care a fost editat                                 |
-| Float:fOffsetX | Decalajul X pentru obiectul atașat care a fost editat                     |
-| Float:fOffsetY | Decalajul Y pentru obiectul atașat care a fost editat                     |
-| Float:fOffsetZ | Decalajul Z pentru obiectul atașat care a fost editat                     |
-| Float:fRotX    | Rotația X pentru obiectul atașat care a fost editat                       |
-| Float:fRotY    | Rotația Y pentru obiectul atașat care a fost editat                       |
-| Float:fRotZ    | Rotația Z pentru obiectul atașat care a fost editat                       |
-| Float:fScaleX  | Scara X pentru obiectul atașat care a fost editat                         |
-| Float:fScaleY  | Scara Y pentru obiectul atașat care a fost editat                         |
-| Float:fScaleZ  | Scara Z pentru obiectul atașat care a fost editat                         |
+| Nume                   | Descriere                                                                |
+|------------------------|--------------------------------------------------------------------------|
+| playerid               | ID-ul jucătorului care a încheiat modul ediție                           |
+| EDIT_RESPONSE:response | 0 dacă au anulat (ESC) sau 1 dacă au făcut clic pe pictograma de salvare |
+| index                  | Indexul obiectului atașat (0-9)                                          |
+| modelid                | Modelul obiectului atașat care a fost editat                             |
+| boneid                 | Osul obiectului atașat care a fost editat                                |
+| Float:fOffsetX         | Decalajul X pentru obiectul atașat care a fost editat                    |
+| Float:fOffsetY         | Decalajul Y pentru obiectul atașat care a fost editat                    |
+| Float:fOffsetZ         | Decalajul Z pentru obiectul atașat care a fost editat                    |
+| Float:fRotX            | Rotația X pentru obiectul atașat care a fost editat                      |
+| Float:fRotY            | Rotația Y pentru obiectul atașat care a fost editat                      |
+| Float:fRotZ            | Rotația Z pentru obiectul atașat care a fost editat                      |
+| Float:fScaleX          | Scara X pentru obiectul atașat care a fost editat                        |
+| Float:fScaleY          | Scara Y pentru obiectul atașat care a fost editat                        |
+| Float:fScaleZ          | Scara Z pentru obiectul atașat care a fost editat                        |
 
 ## Returnări
 
@@ -55,7 +55,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // Datele ar trebui să fie stocate în matricea de mai sus atunci când obiectele atașate sunt atașate.
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {

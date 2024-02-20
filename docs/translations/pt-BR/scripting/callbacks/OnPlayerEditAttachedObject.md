@@ -10,21 +10,22 @@ tags: ["player"]
 
 Esta callback é chamada quando um jogador termina o modo de edição de objetos anexados.
 
-| Name           | Descrição                                                        |
-| -------------- | ---------------------------------------------------------------- |
-| playerid       | O ID do jogador que terminou a edição                            |
-| response       | 0 se foi cancelado (ESC), ou 1 se o botão de salvar foi clicado. |
-| modelid        | O modelo do objeto que foi anexado                               |
-| boneid         | O ID da parte em que o modelo foi anexado                        |
-| Float:fOffsetX | O desclocamento de X para o objeto editado.                      |
-| Float:fOffsetY | O desclocamento de Y para o objeto editado.                      |
-| Float:fOffsetZ | O desclocamento de Z para o objeto editado.                      |
-| Float:fRotX    | A rotação de X para o objeto editado.                            |
-| Float:fRotY    | A rotação de Y para o objeto editado.                            |
-| Float:fRotZ    | A rotação de Z para o objeto editado.                            |
-| Float:fScaleX  | A escala de X para o objeto editado.                             |
-| Float:fScaleY  | A escala de Y para o objeto editado.                             |
-| Float:fScaleZ  | A escala de Z para o objeto editado.                             |
+| Name                   | Descrição                                                        |
+|------------------------|------------------------------------------------------------------|
+| playerid               | O ID do jogador que terminou a edição                            |
+| EDIT_RESPONSE:response | 0 se foi cancelado (ESC), ou 1 se o botão de salvar foi clicado. |
+| index                  | The index of the attached object (0-9)                           |
+| modelid                | O modelo do objeto que foi anexado                               |
+| boneid                 | O ID da parte em que o modelo foi anexado                        |
+| Float:fOffsetX         | O desclocamento de X para o objeto editado.                      |
+| Float:fOffsetY         | O desclocamento de Y para o objeto editado.                      |
+| Float:fOffsetZ         | O desclocamento de Z para o objeto editado.                      |
+| Float:fRotX            | A rotação de X para o objeto editado.                            |
+| Float:fRotY            | A rotação de Y para o objeto editado.                            |
+| Float:fRotZ            | A rotação de Z para o objeto editado.                            |
+| Float:fScaleX          | A escala de X para o objeto editado.                             |
+| Float:fScaleY          | A escala de Y para o objeto editado.                             |
+| Float:fScaleZ          | A escala de Z para o objeto editado.                             |
 
 ## Retorno
 
@@ -54,7 +55,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // Os dados devem ser armazenados na array acima.
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {
@@ -91,5 +92,5 @@ Edições devem ser discartadas se a resposta for '0' (cancelado). Isso deve ser
 
 ## Funções Relacionadas
 
-- [EditAttachedObject](../functions/EditAttachedObject.md): Edita um objeto anexado.
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Anexa um objeto a um jogador.
+- [EditAttachedObject](../functions/EditAttachedObject): Edita um objeto anexado.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Anexa um objeto a um jogador.

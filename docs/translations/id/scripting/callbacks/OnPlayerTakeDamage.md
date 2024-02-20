@@ -10,16 +10,13 @@ tags: ["player"]
 
 Callback ini terpanggil ketika pemain menerima damage.
 
-
-| Nama     | Deskripsi                                                                                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------- |
-| playerid | ID dari pemain yang mendapatkan damage.                                                                       |
-| issuerid | ID dari pemain yang memberikan damage. INVALID_PLAYER_ID jika bunuh diri.                                     |
-| amount   | Jumlah damage yang diterima (darah and armour dikombinasikan).                                                |
-| weaponid | ID dari senjata atau alasan yang digunakan untuk memberi damage.                                              |
-| bodypart | Bagian tubuh yang terkena. (NOTE: Parameter ini ditambahkan pada versi 0.3z. Biarkan ini jika versi anda berada pada sebelumnya!) |
-
-
+| Nama            | Deskripsi                                                                                                                         |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| playerid        | ID dari pemain yang mendapatkan damage.                                                                                           |
+| issuerid        | ID dari pemain yang memberikan damage. INVALID_PLAYER_ID jika bunuh diri.                                                         |
+| Float:amount    | Jumlah damage yang diterima (darah and armour dikombinasikan).                                                                    |
+| WEAPON:weaponid | ID dari senjata atau alasan yang digunakan untuk memberi damage.                                                                  |
+| bodypart        | Bagian tubuh yang terkena. (NOTE: Parameter ini ditambahkan pada versi 0.3z. Biarkan ini jika versi anda berada pada sebelumnya!) |
 
 ## Returns
 
@@ -31,9 +28,8 @@ Ini akan selalu terpanggil pertama di filterscripts jadi mengembalikan nilai 1 a
 
 ## Contoh
 
-
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID) // Jika bukan bunuh diri
     {
@@ -53,7 +49,10 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
     }
     return 1;
 }
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+```
+
+```c
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
@@ -77,6 +76,3 @@ ID senjata akan mengembalikan nilai 37 (flame thrower) dari semua senjata yang m
 GetPlayerHealth dan GetPlayerArmour akan memberikan amount lama dari pemain sebelum memanggil callback ini. Selalu cek jika issuerid valid sebelum melakukan array index.
 
 :::
-
-## Related Functions
-// Tidak Ada

@@ -10,13 +10,13 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător primește daune.
 
-| Nume     | Descriere                                                                                                                              |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | ID-ul jucătorului care a suferit daune. |                                                                                                
-| issuerid | ID-ul jucătorului care a cauzat prejudiciul. INVALID_PLAYER_ID dacă este autoprovocat. |
-| amount   | Cantitatea de daune suferite de jucător (sănătate și armură combinate). |
-| weaponid | ID-ul armei/motivul pagubei.                                                                                            |
-| bodypart | [partea corpului](../resources/bodyparts) care a fost lovită. (NOTĂ: Acest parametru a fost adăugat în 0.3z. Lăsați-l afară dacă utilizați o versiune mai veche!) |
+| Nume            | Descriere                                                                                                                                                         |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| playerid        | ID-ul jucătorului care a suferit daune.                                                                                                                           |
+| issuerid        | ID-ul jucătorului care a cauzat prejudiciul. INVALID_PLAYER_ID dacă este autoprovocat.                                                                            |
+| Float:amount    | Cantitatea de daune suferite de jucător (sănătate și armură combinate).                                                                                           |
+| WEAPON:weaponid | ID-ul armei/motivul pagubei.                                                                                                                                      |
+| bodypart        | [partea corpului](../resources/bodyparts) care a fost lovită. (NOTĂ: Acest parametru a fost adăugat în 0.3z. Lăsați-l afară dacă utilizați o versiune mai veche!) |
 
 ## Returnări
 
@@ -29,7 +29,7 @@ Este întotdeauna numit primul în filterscript-uri, astfel încât returnarea 1
 ## Exemple
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID) // Dacă nu se autoprovoca
     {
@@ -49,7 +49,10 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
     }
     return 1;
 }
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+```
+
+```c
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
@@ -73,5 +76,3 @@ Armă va returna 37 (aruncător de flăcări) din orice sursă de foc (de exempl
 GetPlayerHealth și GetPlayerArmour vor returna vechile sume ale jucătorului înainte de acest apel invers. Verificați întotdeauna dacă issuerid este valid înainte de a-l folosi ca index de matrice.
 
 :::
-
-## Funcții similare

@@ -11,12 +11,12 @@ tags: ["player"]
 This callback is called when a player gives damage to an actor.
 
 | Name            | Description                                           |
-| --------------- | ----------------------------------------------------- |
+|-----------------|-------------------------------------------------------|
 | playerid        | The ID of the player that gave damage.                |
 | damaged_actorid | The ID of the actor that received damage.             |
-| amount          | The amount of health/armour damaged_actorid has lost. |
-| weaponid        | The reason that caused the damage.                    |
-| bodypart        | The [body part](../resources/bodyparts) that was hit   |
+| Float:amount    | The amount of health/armour damaged_actorid has lost. |
+| WEAPON:weaponid | The reason that caused the damage.                    |
+| bodypart        | The [body part](../resources/bodyparts) that was hit  |
 
 ## Returns
 
@@ -29,7 +29,7 @@ It is always called first in filterscripts so returning 1 there blocks other fil
 ## Examples
 
 ```c
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponid, bodypart)
+public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -46,7 +46,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponi
 
 :::tip
 
-This function does not get called if the actor is set invulnerable (WHICH IS BY DEFAULT). See SetActorInvulnerable.
+This function does not get called if the actor is set invulnerable (WHICH IS BY DEFAULT). See [SetActorInvulnerable](../functions/SetActorInvulnerable).
 
 :::
 

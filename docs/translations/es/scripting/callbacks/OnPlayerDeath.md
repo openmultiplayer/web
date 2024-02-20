@@ -8,11 +8,11 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador muere, ya sea suicidándose o siendo asesinado por otro jugador.
 
-| Nombre   | Descripción                                                                                   |
-| -------- | --------------------------------------------------------------------------------------------- |
-| playerid | El ID del jugador que murió.                                                                  |
-| killerid | El ID del jugador que mató al jugador que murió, o INVALID_PLAYER_ID si no fue ninguno.       |
-| reason   | El ID de la causa de la muerte del jugador.                                                   |
+| Nombre        | Descripción                                                                             |
+|---------------|-----------------------------------------------------------------------------------------|
+| playerid      | El ID del jugador que murió.                                                            |
+| killerid      | El ID del jugador que mató al jugador que murió, o INVALID_PLAYER_ID si no fue ninguno. |
+| WEAPON:reason | El ID de la causa de la muerte del jugador.                                             |
 
 ## Devoluciones
 
@@ -28,7 +28,7 @@ Siempre se llama primero en filterscripts.
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); //Muestra el asesinato en la tabla de asesinatos
 

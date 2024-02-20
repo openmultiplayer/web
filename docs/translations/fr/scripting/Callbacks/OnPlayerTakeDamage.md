@@ -10,13 +10,13 @@ tags: ["player"]
 
 Cette callback est appelée lorsqu'un joueur prends des degats..
 
-| Nom              | Description                                                                                                                                            |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `int` playerid   | L'ID du joueur qui prends les dégats.                                                                                                                  |
-| `int` issuerid   | L'ID du joueur qui cause les dégats. Si il vaut INVALID_PLAYER_ID, le joueur les a infligés lui même.                                                  |
-| `int` amount     | Le montant des dégats reçus _(vie et armure combinés)_.                                                                                                |
-| `int` weaponid   | L'ID de l'arme/la raison qui a causé les dégats.                                                                                                       |
-| `int` bodypart   | La partie du corps qui s'est faite touchée. _(**NOTE**: Ce paramètre a été ajouté dans la 0.3z. Enlevez le si vous utilisez une version antérieure !)_ |
+| Nom                   | Description                                                                                                                                            |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `int` playerid        | L'ID du joueur qui prends les dégats.                                                                                                                  |
+| `int` issuerid        | L'ID du joueur qui cause les dégats. Si il vaut INVALID_PLAYER_ID, le joueur les a infligés lui même.                                                  |
+| `float` Float:amount  | Le montant des dégats reçus _(vie et armure combinés)_.                                                                                                |
+| `int` WEAPON:weaponid | L'ID de l'arme/la raison qui a causé les dégats.                                                                                                       |
+| `int` bodypart        | La partie du corps qui s'est faite touchée. _(**NOTE**: Ce paramètre a été ajouté dans la 0.3z. Enlevez le si vous utilisez une version antérieure !)_ |
 
 ## Valeur de retour
 
@@ -29,7 +29,7 @@ Elle est toujours appelée en premier dans le gamemode donc retourner **0** dans
 ## Exemples
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float: amount, weaponid, bodypart)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if(issuerid != INVALID_PLAYER_ID) // Si il ne se les inflige pas lui même
     {
@@ -52,7 +52,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float: amount, weaponid, bodypart)
 ```
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float: amount, weaponid, bodypart)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if(issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
@@ -62,7 +62,6 @@ public OnPlayerTakeDamage(playerid, issuerid, Float: amount, weaponid, bodypart)
     return 1;
 }
 ```
-
 
 ## Astuces
 
@@ -83,5 +82,3 @@ GetPlayerHealth et GetPlayerArmour renverront les anciens montants du joueur ava
 Vérifiez toujours si `issuerid` est valide avant de l'utiliser comme index de tableau.
 
 :::
-
-## Fonctions connexes

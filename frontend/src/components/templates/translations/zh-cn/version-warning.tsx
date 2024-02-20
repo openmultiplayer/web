@@ -1,8 +1,8 @@
-import Admonition from "../../Admonition";
+import Admonition from "../../../Admonition";
 
 export default function WarningVersion({
   version,
-  name = "function",
+  name = "函数",
 }: {
   version: string;
   name: string;
@@ -10,8 +10,7 @@ export default function WarningVersion({
   return (
     <Admonition type="warning">
       <p>
-        Esta {name} foi implementada no {version} e não funcionará em
-        versões anteriores.
+        这个{name}是在{version}中添加的，在以前的版本中不起作用!
       </p>
     </Admonition>
   );

@@ -8,11 +8,11 @@ tags: ["player"]
 
 Ang callback na ito ay itinatawag kapag ang isang player ay namatay. Sa mga dahilan na pwedeng namatay ang player sa kanyang sariling gawa o napatay ng iba pang player.
 
-| Name     | Description                                                             |
-| -------- | ----------------------------------------------------------------------- |
-| playerid | Ang ID ng player na namatay.                                            |
-| killerid | Ang ID ng player na nam-patay sa playerid, INVALID_PLAYER_ID kung wala. |
-| reason   | Ang ID ng rason kung bakit namatay ang playerid.                        |
+| Name          | Description                                                             |
+|---------------|-------------------------------------------------------------------------|
+| playerid      | Ang ID ng player na namatay.                                            |
+| killerid      | Ang ID ng player na nam-patay sa playerid, INVALID_PLAYER_ID kung wala. |
+| WEAPON:reason | Ang ID ng rason kung bakit namatay ang playerid.                        |
 
 ## Returns
 
@@ -28,7 +28,7 @@ Ito ay palaging unang tinatawag sa mga filterscripts.
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); // - Ipinapakita ang impormasyon ng pagpatay sa kill feed.
 
@@ -62,5 +62,5 @@ Kailangan mong tignan kung ang 'killerid' ay valid (not IVALID_PLAYER_ID) bago g
 
 ## Related Functions
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): Dagdagan ng kill sa Death list.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): I set ang health ng player.
+- [SendDeathMessage](../functions/SendDeathMessage): Dagdagan ng kill sa Death list.
+- [SetPlayerHealth](../functions/SetPlayerHealth): I set ang health ng player.

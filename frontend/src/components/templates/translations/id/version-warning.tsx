@@ -1,4 +1,4 @@
-import Admonition from "../../Admonition";
+import Admonition from "../../../Admonition";
 
 export default function WarningVersion({
   version,
@@ -10,7 +10,7 @@ export default function WarningVersion({
   return (
     <Admonition type="warning">
       <p>
-        ${name} ini telah ditambahkan dalam ${version} dan tidak bekerja pada
+        {name} ini telah ditambahkan dalam {version} dan tidak bekerja pada
         versi dibawahnya!
       </p>
     </Admonition>

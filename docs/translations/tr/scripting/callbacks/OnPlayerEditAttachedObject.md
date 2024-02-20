@@ -14,21 +14,22 @@ Bu callback SA-MP 0.3e sürümünde eklendi ve önceki sürümlerde çalıştır
 
 Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
 
-| Ad             | Açıklama                                                          |
-| -------------- | ----------------------------------------------------------------- |
-| playerid       | Düzenlemeyi bitiren oyuncunun id'si.                              |
-| response       | Eğer iptal ettiyse 0, kaydet tuşuna bastıysa 1 değerini döndürür. |
-| modelid        | model id'si.                                                      |
-| boneid         | objenin takıldığı kemik numarası.                                 |
-| Float:fOffsetX | Editlenen objenin X offset'i.                                     |
-| Float:fOffsetY | Editlenen objenin Y offset'i.                                     |
-| Float:fOffsetZ | Editlenen objenin Z offset'i.                                     |
-| Float:fRotX    | Editlenen objenin X açısı.                                        |
-| Float:fRotY    | Editlenen objenin Y açısı.                                        |
-| Float:fRotZ    | Editlenen objenin Z açısı.                                        |
-| Float:fScaleX  | Editlenen objenin X skalası.                                      |
-| Float:fScaleY  | Editlenen objenin Y skalası.                                      |
-| Float:fScaleZ  | Editlenen objenin Z skalası.                                      |
+| Ad                     | Açıklama                                                          |
+|------------------------|-------------------------------------------------------------------|
+| playerid               | Düzenlemeyi bitiren oyuncunun id'si.                              |
+| EDIT_RESPONSE:response | Eğer iptal ettiyse 0, kaydet tuşuna bastıysa 1 değerini döndürür. |
+| index                  | The index of the attached object (0-9)                            |
+| modelid                | model id'si.                                                      |
+| boneid                 | objenin takıldığı kemik numarası.                                 |
+| Float:fOffsetX         | Editlenen objenin X offset'i.                                     |
+| Float:fOffsetY         | Editlenen objenin Y offset'i.                                     |
+| Float:fOffsetZ         | Editlenen objenin Z offset'i.                                     |
+| Float:fRotX            | Editlenen objenin X açısı.                                        |
+| Float:fRotY            | Editlenen objenin Y açısı.                                        |
+| Float:fRotZ            | Editlenen objenin Z açısı.                                        |
+| Float:fScaleX          | Editlenen objenin X skalası.                                      |
+| Float:fScaleY          | Editlenen objenin Y skalası.                                      |
+| Float:fScaleZ          | Editlenen objenin Z skalası.                                      |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -58,7 +59,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // Veriler bir arrayde tutulmalıdır.
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {
@@ -95,5 +96,5 @@ Eğer 'response' parametresi 0 (iptal) gelirse objeyi eski haline döndürmek ge
 
 ## Bağlantılı Fonksiyonlar
 
-- [EditAttachedObject](../functions/EditAttachedObject.md): Üzerine takılan objeyi düzenleme.
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Oyuncunun üzerine obje takma.
+- [EditAttachedObject](../functions/EditAttachedObject): Üzerine takılan objeyi düzenleme.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Oyuncunun üzerine obje takma.

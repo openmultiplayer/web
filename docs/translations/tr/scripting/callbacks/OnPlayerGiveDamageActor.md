@@ -10,13 +10,13 @@ tags: ["player"]
 
 Bu callback, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
 
-| İsim            | Açıklama                                              |
-| --------------- | ----------------------------------------------------- |
-| playerid        | Hasar veren oyuncunun ID'si.                          |
-| damaged_actorid | Hasar alan NPC'nin ID'si.                             |
-| amount          | Hasar alan NPC'nin kaybettiği can/zırh miktarı.       |
-| weaponid        | Hasarın sebebi.                                       |
-| bodypart        | Hasarın isabet ettiği vücut bölümü.                   |
+| İsim            | Açıklama                                        |
+|-----------------|-------------------------------------------------|
+| playerid        | Hasar veren oyuncunun ID'si.                    |
+| damaged_actorid | Hasar alan NPC'nin ID'si.                       |
+| Float:amount    | Hasar alan NPC'nin kaybettiği can/zırh miktarı. |
+| WEAPON:weaponid | Hasarın sebebi.                                 |
+| bodypart        | Hasarın isabet ettiği vücut bölümü.             |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -29,7 +29,7 @@ Her zaman ilk önce filterscriptlerde çağırılır, yani 1 değerini döndürm
 ## Örnekler
 
 ```c
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponid, bodypart)
+public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -46,7 +46,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponi
 
 :::tip
 
-Bu fonksiyon hasar almayan NPC'lerde çağırılmaz, (NPC'ler varsayılan olarak hasar almazlar.) SetActırInvulnerable fonksiyonuna bakın.
+Bu fonksiyon hasar almayan NPC'lerde çağırılmaz, (NPC'ler varsayılan olarak hasar almazlar.) [SetActorInvulnerable](../functions/SetActorInvulnerable) fonksiyonuna bakın.
 
 :::
 
@@ -58,5 +58,8 @@ Bu fonksiyon hasar almayan NPC'lerde çağırılmaz, (NPC'ler varsayılan olarak
 - [GetActorHealth](../functions/GetActorHealth): Gets the health of an actor.
 - [IsActorInvulnerable](../functions/IsActorInvulnerable): Check if actor is invulnerable.
 - [IsValidActor](../functions/IsValidActor): Check if actor id is valid.
+
+## Bağlantılı Callbacks
+
 - [OnActorStreamOut](OnActorStreamOut): Called when an actor is streamed out by a player.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Called when a player streams in for another player.

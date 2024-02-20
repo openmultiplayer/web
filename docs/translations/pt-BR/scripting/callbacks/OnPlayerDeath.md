@@ -8,11 +8,11 @@ tags: ["player"]
 
 Esta callback é chamada quando um jogador morre, tanto por suicídio ou por ser morto por outros jogadores.
 
-| Nome     | Descrição                                                                             |
-| -------- | ------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador que morreu                                                            |
-| killerid | O ID do jogador que matou o jogador que morreu, ou INVALID_PLAYER_ID se não houve um. |
-| reason   | O ID do motivo da morte do jogador.                                                   |
+| Nome          | Descrição                                                                             |
+|---------------|---------------------------------------------------------------------------------------|
+| playerid      | O ID do jogador que morreu                                                            |
+| killerid      | O ID do jogador que matou o jogador que morreu, ou INVALID_PLAYER_ID se não houve um. |
+| WEAPON:reason | O ID do motivo da morte do jogador.                                                   |
 
 ## Retorno
 
@@ -28,7 +28,7 @@ Sempre é chamada primeiro em filterscripts.
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); // Mostra o kill no killfeed
 
@@ -60,5 +60,5 @@ Você PRECISA verificar se 'killerid' é valido (não INVALID_PLAYER_ID) antes d
 
 ## Related Functions
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): Adiciona a kill para a lista de mortes.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Define a vida de um jogador.
+- [SendDeathMessage](../functions/SendDeathMessage): Adiciona a kill para a lista de mortes.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Define a vida de um jogador.
