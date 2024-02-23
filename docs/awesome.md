@@ -114,7 +114,8 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 ## Crypto Plugins
 
 - **[whirlpool](https://github.com/Southclaws/samp-whirlpool)** - Whirlpool Cryptographic plugin for SA:MP.
-- **[bcrypt](https://github.com/Sreyas-Sreelal/samp-bcrypt)** - Bcrypt Cryptographic plugin for SA:MP.
+- **[SyS' bcrypt Plugin](https://github.com/Sreyas-Sreelal/samp-bcrypt)** - Bcrypt Cryptographic plugin made by Sreyas Sreelal for SA:MP.
+- **[lassir's bcrypt Plugin](https://github.com/lassir/bcrypt-samp)** - Bcrypt Cryptographic plugin made by lassir for SA:MP.
 - **[samp-crypto](https://github.com/alextwothousand/samp-crypto)** - A list of cryptographic functions such as Argon2, Scrypt, and Bcrypt for SA:MP.
 - **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - SHA512 Cryptographic plugin for SA:MP.
 
