@@ -98,6 +98,58 @@ Some textdraw sprites appear smaller compared to their actual size in the previe
 | siterocket          | ![](/images/sprites/hud/siterocket.png)          |
 | skipicon            | ![](/images/sprites/hud/skipicon.png)            |
 
+### Weapon Icons
+
+| Texture                       | Weapon ID | Preview                                       |
+|-------------------------------|-----------|-----------------------------------------------|
+| hud:fist                      | 0         | ![](/images/sprites/hud/fist.png)             |
+| brassknuckle:BRASSKNUCKLEicon | 1         | ![](/images/weaponIcons/brassKnuckles.png)    |
+| golfclub:golfclubicon         | 2         | ![](/images/weaponIcons/golfClub.png)         |
+| nitestick:nitestickicon       | 3         | ![](/images/weaponIcons/nightStick.png)       |
+| knifecur:knifecuricon         | 4         | ![](/images/weaponIcons/knife.png)            |
+| bat:baticon                   | 5         | ![](/images/weaponIcons/baseballBat.png)      |
+| shovel:shovelicon             | 6         | ![](/images/weaponIcons/shovel.png)           |
+| poolcue:poolcueicon           | 7         | ![](/images/weaponIcons/poolCue.png)          |
+| katana:katanaicon             | 8         | ![](/images/weaponIcons/katana.png)           |
+| chnsaw:chnsawicon             | 9         | ![](/images/weaponIcons/chainsaw.png)         |
+| gun_dildo1:gun_dildo1icon     | 10        | ![](/images/weaponIcons/purpleDildo.png)      |
+| gun_dildo2:gun_dildo2icon     | 11        | ![](/images/weaponIcons/dildo.png)            |
+| gun_vibe1:gun_vibe1icon       | 12        | ![](/images/weaponIcons/vibrator.png)         |
+| gun_vibe2:gun_vibe2icon       | 13        | ![](/images/weaponIcons/silverVibrator.png)   |
+| flowera:floweraicon           | 14        | ![](/images/weaponIcons/flowers.png)          |
+| gun_cane:gun_caneicon         | 15        | ![](/images/weaponIcons/cane.png)             |
+| grenade:grenadeicon           | 16        | ![](/images/weaponIcons/grenade.png)          |
+| teargas:TearGasicon           | 17        | ![](/images/weaponIcons/tearGas.png)          |
+| molotov:molotovicon           | 18        | ![](/images/weaponIcons/molotovCocktail.png)  |
+| colt45:colt45icon             | 22        | ![](/images/weaponIcons/9mm.png)              |
+| silenced:silencedicon         | 23        | ![](/images/weaponIcons/silenced9mm.png)      |
+| desert_eagle:desert_eagleicon | 24        | ![](/images/weaponIcons/desertEagle.png)      |
+| chromegun:chromegunicon       | 25        | ![](/images/weaponIcons/shotgun.png)          |
+| sawnoff:sawnofficon           | 26        | ![](/images/weaponIcons/sawnoffShotgun.png)   |
+| shotgspa:shotgspaicon         | 27        | ![](/images/weaponIcons/combatShotgun.png)    |
+| micro_uzi:micro_uziicon       | 28        | ![](/images/weaponIcons/microSMG-Uzi.png)     |
+| mp5lng:mp5lngicon             | 29        | ![](/images/weaponIcons/mp5.png)              |
+| ak47:ak47icon                 | 30        | ![](/images/weaponIcons/ak47.png)             |
+| m4:M4icon                     | 31        | ![](/images/weaponIcons/m4.png)               |
+| tec9:tec9icon                 | 32        | ![](/images/weaponIcons/tec9.png)             |
+| cuntgun:cuntgunicon           | 33        | ![](/images/weaponIcons/countryRifle.png)     |
+| sniper:SNIPERicon             | 34        | ![](/images/weaponIcons/sniperRifle.png)      |
+| rocketla:rocketlaicon         | 35        | ![](/images/weaponIcons/rpg.png)              |
+| heatseek:heatseekicon         | 36        | ![](/images/weaponIcons/hsRocket.png)         |
+| flame:flameicon               | 37        | ![](/images/weaponIcons/flame-Thrower.png)    |
+| minigun:minigunicon           | 38        | ![](/images/weaponIcons/minigun.png)          |
+| satchel:satchelicon           | 39        | ![](/images/weaponIcons/satchelCharge.png)    |
+| bomb:bombicon                 | 40        | ![](/images/weaponIcons/detonator.png)        |
+| spraycan:SPRAYCANicon         | 41        | ![](/images/weaponIcons/spraycan.png)         |
+| fire_ex:fire_exicon           | 42        | ![](/images/weaponIcons/fireExtinguisher.png) |
+| camera:Cameraicon             | 43        | ![](/images/weaponIcons/camera.png)           |
+| nvgoggles:nvgogglesicon       | 44        | ![](/images/weaponIcons/nightVisGoggles.png)  |
+| irgoggles:irgogglesicon       | 45        | ![](/images/weaponIcons/thermalGoggles.png)   |
+| gun_para:gun_paraIcon         | 46        | ![](/images/weaponIcons/parachute.png)        |
+| cellphone:cellphoneicon       | -         | ![](/images/weaponIcons/cellphone.png)        |
+| jetpack:jetpackicon           | -         | ![](/images/weaponIcons/jetpack.png)          |
+| skateboard:skateboardIcon     | -         | ![](/images/weaponIcons/skateboard.png)       |
+
 ### intro1.txd
 
 | Texture | Preview                                |
