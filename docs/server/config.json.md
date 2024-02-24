@@ -8,7 +8,11 @@ description: open.mp server configuration file.
 - `config.json` is a server configuration file which allows you to change all kinds of settings of your open.mp server.
 - You can still use [server.cfg](server.cfg) file in your open.mp server, but it is recommended to use config.json because there are more settings!
 
+<br />
+
 <hr />
+
+<br />
 
 :::tip
 
