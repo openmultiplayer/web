@@ -102,7 +102,7 @@ Some textdraw sprites appear smaller compared to their actual size in the previe
 
 | Texture                       | Weapon ID | Preview                                       |
 |-------------------------------|-----------|-----------------------------------------------|
-| hud:fist                      | 0         | ![](/images/sprites/hud/fist.png)             |
+| hud:fist                      | 0         | ![](/images/weaponIcons/fist.png)             |
 | brassknuckle:BRASSKNUCKLEicon | 1         | ![](/images/weaponIcons/brassKnuckles.png)    |
 | golfclub:golfclubicon         | 2         | ![](/images/weaponIcons/golfClub.png)         |
 | nitestick:nitestickicon       | 3         | ![](/images/weaponIcons/nightStick.png)       |
