@@ -57,3 +57,7 @@ printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tyres]: %d"
 ## Related Resources
 
 - [Damage Status](../resources/damagestatus)
+- [Vehicle Panel Status](../resources/vehicle-panel-status)
+- [Vehicle Door Status](../resources/vehicle-door-status)
+- [Vehicle Light Status](../resources/vehicle-light-status)
+- [Vehicle Tire Status](../resources/vehicle-tire-status)
