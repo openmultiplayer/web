@@ -139,3 +139,7 @@ new
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
 UpdateVehicleDamageStatus(vehicleid, panels, doors, (lights | VEHICLE_LIGHT_STATUS:0b01000000), tires); // The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
 ```
+
+## See also
+
+- [Vehicle Light Status](../resources/vehicle-light-status)
