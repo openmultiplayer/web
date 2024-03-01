@@ -1,6 +1,6 @@
 ---
 title: OnVehicleDamageStatusUpdate
-description: This callback is called when a vehicle element such as doors, tires, panels, or lights change their damage status.
+description: This callback is called when a vehicle element such as doors, tyres, panels, or lights change their damage status.
 tags: ["vehicle"]
 ---
 
@@ -14,7 +14,7 @@ For some useful functions for working with vehicle damage values, see [here](../
 
 ## Description
 
-This callback is called when a vehicle element such as doors, tires, panels, or lights change their damage status.
+This callback is called when a vehicle element such as doors, tyres, panels, or lights change their damage status.
 
 | Name      | Description                                                                                            |
 | --------- | ------------------------------------------------------------------------------------------------------ |
@@ -23,9 +23,9 @@ This callback is called when a vehicle element such as doors, tires, panels, or 
 
 ## Returns
 
-1 - Will prevent other filterscripts from receiving this callback.
+**1** - Will prevent other filterscripts from receiving this callback.
 
-0 - Indicates that this callback will be passed to the next filterscript.
+**0** - Indicates that this callback will be passed to the next filterscript.
 
 It is always called first in filterscripts.
 
@@ -35,14 +35,19 @@ It is always called first in filterscripts.
 public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 {
     // Get the damage status of all the components
-    new panels, doors, lights, tires;
-    GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
+    new 
+        VEHICLE_PANEL_STATUS:panels,
+        VEHICLE_DOOR_STATUS:doors,
+        VEHICLE_LIGHT_STATUS:lights,
+        VEHICLE_TYRE_STATUS:tyres;
 
-    // Set the tires to 0, which means none are popped
-    tires = 0;
+    GetVehicleDamageStatus(vehicleid, panels, doors, lights, tyres);
 
-    // Update the vehicle's damage status with unpopped tires
-    UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
+    // Set the tyres to 0, which means none are popped
+    tyres = VEHICLE_TYRE_STATUS_NONE;
+
+    // Update the vehicle's damage status with unpopped tyres
+    UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, tyres);
     return 1;
 }
 ```
