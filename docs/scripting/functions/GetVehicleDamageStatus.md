@@ -16,27 +16,31 @@ For some useful functions for working with vehicle damage values, see [here](../
 
 Retrieve the damage statuses of a vehicle.
 
-| Name      | Description                                                        |
-| --------- | ------------------------------------------------------------------ |
-| vehicleid | The ID of the vehicle to get the damage statuses of.               |
-| panels    | A variable to store the panel damage data in, passed by reference. |
-| doors     | A variable to store the door damage data in, passed by reference.  |
-| lights    | A variable to store the light damage data in, passed by reference. |
-| tires     | A variable to store the tire damage data in, passed by reference.  |
+| Name                        | Description                                                        |
+| --------------------------- | ------------------------------------------------------------------ |
+| vehicleid                   | The ID of the vehicle to get the damage statuses of.               |
+| VEHICLE_PANEL_STATUS:panels | A variable to store the panel damage data in, passed by reference. |
+| VEHICLE_DOOR_STATUS:doors   | A variable to store the door damage data in, passed by reference.  |
+| VEHICLE_LIGHT_STATUS:lights | A variable to store the light damage data in, passed by reference. |
+| VEHICLE_TYRE_STATUS:tyres   | A variable to store the tire damage data in, passed by reference.  |
 
 ## Returns
 
-1: The function was executed successfully.
+**1** - The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle specified does not exist.
+**0** - The function failed to execute. This means the vehicle specified does not exist.
 
 ## Examples
 
 ```c
-new
-	panels, doors, lights, tires;
-GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tires]: %d", panels, doors, lights, tires);
+new 
+	VEHICLE_PANEL_STATUS:panels,
+	VEHICLE_DOOR_STATUS:doors,
+	VEHICLE_LIGHT_STATUS:lights,
+	VEHICLE_TYRE_STATUS:tyres;
+
+GetVehicleDamageStatus(vehicleid, panels, doors, lights, tyres);
+printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tyres]: %d", panels, doors, lights, tyres);
 ```
 
 ## Related Functions

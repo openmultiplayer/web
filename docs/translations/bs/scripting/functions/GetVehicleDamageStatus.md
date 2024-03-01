@@ -20,13 +20,13 @@ Za neke korisne funkcije za rad sa vrijednostima oštećenja vozila pogledajte [
 
 Dohvatite status oštećenja vozila.
 
-| Ime       | Deskripcija                                                                    |
-| --------- | ------------------------------------------------------------------------------ |
-| vehicleid | ID vozila za dobiti status oštećenja.                                          |
-| panels    | Varijabla za pohraniti podatke o oštećenjima panela, proslijeđeno referencom.  |
-| doors     | Varijabla za pohraniti podatke o oštećenjima vrata, proslijeđeno referencom.   |
-| lights    | Varijabla za pohraniti podatke o oštećenjima svjetla, proslijeđeno referencom. |
-| tires     | Varijabla za pohraniti podatke o oštećenjima guma, proslijeđeno referencom.    |
+| Ime                         | Deskripcija                                                                    |
+| --------------------------- | ------------------------------------------------------------------------------ |
+| vehicleid                   | ID vozila za dobiti status oštećenja.                                          |
+| VEHICLE_PANEL_STATUS:panels | Varijabla za pohraniti podatke o oštećenjima panela, proslijeđeno referencom.  |
+| VEHICLE_DOOR_STATUS:doors   | Varijabla za pohraniti podatke o oštećenjima vrata, proslijeđeno referencom.   |
+| VEHICLE_LIGHT_STATUS:lights | Varijabla za pohraniti podatke o oštećenjima svjetla, proslijeđeno referencom. |
+| VEHICLE_TIRE_STATUS:tires   | Varijabla za pohraniti podatke o oštećenjima guma, proslijeđeno referencom.    |
 
 ## Returns
 
@@ -37,8 +37,12 @@ Dohvatite status oštećenja vozila.
 ## Primjeri
 
 ```c
-new
-    panels, doors, lights, tires;
+new 
+	VEHICLE_PANEL_STATUS:panels,
+	VEHICLE_DOOR_STATUS:doors,
+	VEHICLE_LIGHT_STATUS:lights,
+	VEHICLE_TIRE_STATUS:tires;
+
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
 printf("Vehicle Status: [Paneli]: %d - [Vrata]: %d - [Svjetla]: %d - [Gume]: %d", panels, doors, lights, tires);
 ```
@@ -49,4 +53,11 @@ printf("Vehicle Status: [Paneli]: %d - [Vrata]: %d - [Svjetla]: %d - [Gume]: %d"
 - [SetVehicleHealth](SetVehicleHealth): Postavi helte vozila.
 - [GetVehicleHealth](GetVehicleHealth): Provjeri helte vozila.
 - [RepairVehicle](RepairVehicle): U potpunosti popravite vozilo.
+
+## Srodne Callbacks
+
 - [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate): Pozvano kada se stanje oštećenja vozila promijeni.
+
+## Srodne Resources
+
+- [Damage Status](../resources/damagestatus)
