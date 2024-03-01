@@ -17,7 +17,7 @@ Membuat Object pada koordinat tertentu di dalam game.
 | Float:rX           | Rotasi X untuk membuat suatu Object.                                                                                                                                        |
 | Float:rY           | Rotasi Y untuk membuat suatu Object.                                                                                                                                        |
 | Float:rZ           | Rotasi Z untuk membuat suatu Object.                                                                                                                                        |
-| Float:DrawDistance | (optional) Jarak yang San Andreas untuk Object di. 0.0 akan menyebabkan objek dirender pada jarak defaultnya. Dapat digunakan sejak 0.3b. Terbatas hingga 300 sebelum 0,3x. |
+| Float:DrawDistance | (optional) Jarak yang San Andreas untuk Object di. 0.0 akan menyebabkan objek dirender pada jarak defaultnya. |
 
 ## Contoh
 

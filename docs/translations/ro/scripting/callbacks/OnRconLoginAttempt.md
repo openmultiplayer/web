@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când cineva încearcă să se co
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descriere
 
 Acest callback este apelat atunci când cineva încearcă să se conecteze la RCON în joc; succes sau nu.

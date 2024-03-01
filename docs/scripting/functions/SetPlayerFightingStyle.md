@@ -4,8 +4,6 @@ description: Set a player's special fighting style.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Set a player's special fighting style. To use in-game, aim and press the 'secondary attack' key (ENTER by default).

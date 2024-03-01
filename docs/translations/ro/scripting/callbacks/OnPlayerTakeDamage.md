@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător primește daune
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător primește daune.
@@ -16,7 +14,7 @@ Acest callback este apelat atunci când un jucător primește daune.
 | issuerid        | ID-ul jucătorului care a cauzat prejudiciul. INVALID_PLAYER_ID dacă este autoprovocat.                                                                            |
 | Float:amount    | Cantitatea de daune suferite de jucător (sănătate și armură combinate).                                                                                           |
 | WEAPON:weaponid | ID-ul armei/motivul pagubei.                                                                                                                                      |
-| bodypart        | [partea corpului](../resources/bodyparts) care a fost lovită. (NOTĂ: Acest parametru a fost adăugat în 0.3z. Lăsați-l afară dacă utilizați o versiune mai veche!) |
+| bodypart        | [partea corpului](../resources/bodyparts) care a fost lovită. |
 
 ## Returnări
 

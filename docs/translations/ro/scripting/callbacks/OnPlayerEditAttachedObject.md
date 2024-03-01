@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător încheie modul 
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător încheie modul de ediție a obiectelor atașate.

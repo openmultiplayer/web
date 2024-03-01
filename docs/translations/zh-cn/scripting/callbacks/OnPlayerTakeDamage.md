@@ -4,8 +4,6 @@ description: 当玩家受到伤害时，会调用该回调。
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3d' />
-
 ## 描述
 
 当玩家受到伤害时，会调用该回调。
@@ -16,7 +14,7 @@ tags: ["player"]
 | issuerid | 造成伤害的玩家的 ID。 如果是自己造成的则为 INVALID_PLAYER_ID。                                      |
 | Float:amount   | 玩家受到的伤害(生命值和护甲的总和)。                                                                |
 | WEAPON:weaponid | 造成伤害的武器/原因的 ID                                                                            |
-| bodypart | 被击中的[身体部位](../resources/bodyparts)。(注：此参数在 0.3z 中增加。如果使用较旧的版本，请省略!) |
+| bodypart | 被击中的[身体部位](../resources/bodyparts)。|
 
 ## 返回值
 

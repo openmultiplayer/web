@@ -4,8 +4,6 @@ description: Stops all the recordings that had been started with StartRecordingP
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Stops all the recordings that had been started with StartRecordingPlayerData for a specific player.

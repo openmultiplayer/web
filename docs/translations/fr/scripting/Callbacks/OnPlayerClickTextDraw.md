@@ -4,8 +4,6 @@ description: Cette callback est appelée quand un joueur clique sur un textdraw 
 tags: ["player", "textdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Paramètres
 
 Cette callback est appelée quand un joueur clique sur un textdraw ou le quitte avec la touche ECHAP.

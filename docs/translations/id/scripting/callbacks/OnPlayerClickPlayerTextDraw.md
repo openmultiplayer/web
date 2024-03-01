@@ -4,12 +4,6 @@ description: Callback ini terpanggil ketika pemain mengklik sebuah player-textdr
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Callback NPC ini telah ditambahkan dalam SA-MP 0.3e dan tidak akan bekerja pada versi sebelumnya!
-
-:::
-
 ## Deskripsi
 
 Callback ini terpanggil ketika pemain mengklik sebuah player-textdraw. Ini tidak akan terpanggil ketika player membatalkan mode 'select' (ESC) - tetapi pengecualian untuk OnPlayerClickTextDraw.

@@ -4,12 +4,6 @@ description: Ova funkcija reproducira prijavu zločina za igrača - baš kao i k
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ova funkcija reproducira prijavu zločina za igrača - baš kao i kod jednog igrača kada CJ počini zločin.

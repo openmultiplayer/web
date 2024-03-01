@@ -4,12 +4,6 @@ description: Find out which seat a player is in.
 tags: ["player", "vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Find out which seat a player is in.

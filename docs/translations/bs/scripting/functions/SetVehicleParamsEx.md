@@ -4,12 +4,6 @@ description: Postavlja parametre vozila za sve igrače.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja parametre vozila za sve igrače.

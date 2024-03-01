@@ -4,8 +4,6 @@ description: Get the animation library/name for the index.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
-
 ## Description
 
 Get the animation library/name for the index.

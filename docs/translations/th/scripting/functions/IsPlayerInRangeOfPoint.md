@@ -4,12 +4,6 @@ description: Checks if a player is in range of a point.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Checks if a player is in range of a point. This native function is faster than the PAWN implementation using distance formula.

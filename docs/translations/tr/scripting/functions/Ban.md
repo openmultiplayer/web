@@ -59,7 +59,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-SA-MP 0.3x itibariyle, Ban() fonksiyonu kullanılmadan önce giden mesaj (örn. SendClientMessage) veya başka bir fonksiyon oyuncuya ulaşmayacaktır. Mesajın veya bir başka fonksiyonun oyuncuya ulaşması için zamanlayıcı (timer) kullanılmalıdır.
+Ban() fonksiyonu kullanılmadan önce giden mesaj (örn. SendClientMessage) veya başka bir fonksiyon oyuncuya ulaşmayacaktır. Mesajın veya bir başka fonksiyonun oyuncuya ulaşması için zamanlayıcı (timer) kullanılmalıdır.
 
 :::
 

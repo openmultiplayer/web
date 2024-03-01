@@ -4,12 +4,6 @@ description: Nabavite IP adresu i port igrača.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Nabavite IP adresu i port igrača.

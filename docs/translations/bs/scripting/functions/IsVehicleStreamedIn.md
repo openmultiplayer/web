@@ -4,12 +4,6 @@ description: Provjerava ako je vozilo učitano za igrača.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Provjerava ako je vozilo učitano za igrača. Samo vozila u blizini su učitana (vidljiva) za igrača.

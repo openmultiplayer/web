@@ -4,12 +4,6 @@ description: Dohvaća ID instalirane komponente (modshop mod(ifikacija)) na vozi
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dohvaća ID instalirane komponente (modshop mod(ifikacija)) na vozilu u određenom slotu.

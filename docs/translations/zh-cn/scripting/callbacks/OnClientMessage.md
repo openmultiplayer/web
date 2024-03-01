@@ -4,8 +4,6 @@ description: 每当NPC看到一个客户端消息时，这个回调就会被调�
 tags: []
 ---
 
-<VersionWarnCN name='NPC 回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 每当 NPC 看到一个客户端消息时，这个回调就会被调用。

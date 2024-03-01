@@ -4,8 +4,6 @@ description: Check if a player is an actual player or an NPC.
 tags: ["player", "npc"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Check if a player is an actual player or an NPC.

@@ -4,8 +4,6 @@ description: Essa callback é executada quando uma gravação de NPC reproduzida
 tags: []
 ---
 
-<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
-
 ## Descrição
 
 Essa callback é executada quando uma gravação de NPC reproduzida com a função NPCStartRecordingPlayback finaliza sua reprodução.

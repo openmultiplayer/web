@@ -4,8 +4,6 @@ description: Ovaj callback je pozvan kada se NPC konektovao na server.
 tags: ["npc"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada se NPC uspješno konektovao na server.

@@ -4,8 +4,6 @@ description: Bu fonksiyon, oyuncu aracına römork bağladığında çağrılır
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R4' />
-
 ## Açıklama
 
 Bu fonksiyon, oyuncu aracına römork bağladığında çağrılır.

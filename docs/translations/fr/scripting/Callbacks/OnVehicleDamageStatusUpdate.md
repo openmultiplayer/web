@@ -4,8 +4,6 @@ description: Cette callback est appelée lorsqu'un élément de véhicule - tel 
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 :::tip
 
 Voir ["damagestatus"](../resources/damagestatus).

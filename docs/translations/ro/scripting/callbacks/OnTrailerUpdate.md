@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător a trimis o actu
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R4' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător a trimis o actualizare a trailerului.

@@ -4,12 +4,6 @@ description: Postavlja X, Y i Z brzinu vozila.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja X, Y i Z brzinu vozila.

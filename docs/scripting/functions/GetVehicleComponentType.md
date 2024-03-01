@@ -4,8 +4,6 @@ description: Find out what type of component a certain ID is.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Find out what type of component a certain ID is.

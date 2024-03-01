@@ -4,12 +4,6 @@ description: Postavlja rotaciju i zumiranje prikaza 3D modela u player-textdrawu
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja rotaciju i zumiranje prikaza 3D modela u player-textdrawu.

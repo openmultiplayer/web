@@ -4,8 +4,6 @@ description: Bu fonksiyon, aracın kapıları, farları, lastikleri veya panelle
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 :::tip
 
 Araç hasar değerlerinin ne işe yaradığını görmek için bkz. [here](../resources/damagestatus).

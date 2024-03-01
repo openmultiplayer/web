@@ -4,8 +4,6 @@ description: Attach a player object to a vehicle.
 tags: ["player", "vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Attach a player object to a vehicle.

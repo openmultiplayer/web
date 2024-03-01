@@ -4,12 +4,6 @@ description: U potpunosti popravlja vozilo, uključujući vidljivu štetu (nerav
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 U potpunosti popravlja vozilo, uključujući vidljivu štetu (neravnine, udubljenja, ogrebotine, puknute gume itd.).

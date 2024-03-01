@@ -4,8 +4,6 @@ description: Tek bir oyuncunun gördüğü patlama oluşturma.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3z R2-2' />
-
 ## Açıklama
 
 Tek bir oyuncunun gördüğü patlama oluşturma. Bu, patlamaları diğer oyunculardan izole etmek veya yalnızca belirli sanal dünyalarda görünmelerini sağlamak için kullanılabilir.

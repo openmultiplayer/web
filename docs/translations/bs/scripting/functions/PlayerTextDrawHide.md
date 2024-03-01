@@ -4,12 +4,6 @@ description: Sakrij player-textdraw za igrača kojem je kreiran.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Sakrij player-textdraw za igrača kojem je kreiran.

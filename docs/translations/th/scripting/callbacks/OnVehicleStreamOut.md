@@ -4,12 +4,6 @@ description: This callback is called when a vehicle is streamed out for a player
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Callback นี้ถูกเพิ่มใน SA-MP 0.3a และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
-
-:::
-
 ## คำอธิบาย
 
 This callback is called when a vehicle is streamed out for a player's client (it's so far away that they can't see it).

@@ -4,12 +4,6 @@ description: Saznaj koji je tip komponente određeni ID.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Saznaj koji je tip komponente određeni ID.

@@ -4,8 +4,6 @@ description: This callback is called when a player sent a trailer update.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R4' />
-
 ## Description
 
 This callback is called when a player sent a trailer update.

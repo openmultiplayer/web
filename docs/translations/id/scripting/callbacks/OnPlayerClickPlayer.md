@@ -4,12 +4,6 @@ description: Terpanggil ketika pemain mengklik dua kali pemain yang berada di sc
 tags: ["player"]
 ---
 
-:::warning
-
-Fungsi ini telah ditambahkan dalam SA-MP 0.3a dan tidak bekerja pada versi dibawahnya!
-
-:::
-
 ## Deskripsi
 
 Terpanggil ketika pemain mengklik dua kali pemain yang berada di scoreboard.

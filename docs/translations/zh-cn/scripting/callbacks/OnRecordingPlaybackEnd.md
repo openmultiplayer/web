@@ -6,8 +6,6 @@ tags: []
 
 :::warning
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 :::
 
 ## 描述

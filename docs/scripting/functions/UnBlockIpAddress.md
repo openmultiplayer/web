@@ -4,8 +4,6 @@ description: Unblock an IP address that was previously blocked using BlockIpAddr
 tags: ["administration"]
 ---
 
-<VersionWarn version='SA-MP 0.3z R2-2' />
-
 ## Description
 
 Unblock an IP address that was previously blocked using BlockIpAddress.

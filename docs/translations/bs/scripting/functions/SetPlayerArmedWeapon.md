@@ -4,12 +4,6 @@ description: Postavlja koje oružje (koje igrač posjeduje) igrač trenutno drž
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja koje oružje (koje igrač posjeduje) igrač trenutno drži.
@@ -34,7 +28,7 @@ public OnPlayerUpdate(playerid)
     return 1;
 }
 
-// SMG driveby by [03]Garsino (for SA:MP 0.3c)
+// SMG driveby by [03]Garsino
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER || newstate == PLAYER_STATE_PASSENGER)

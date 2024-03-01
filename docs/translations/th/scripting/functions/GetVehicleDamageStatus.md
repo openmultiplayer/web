@@ -4,12 +4,6 @@ description: Retrieve the damage statuses of a vehicle.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-ฟังก์ชั่นนี้ถูกเพิ่มใน SA-MP 0.3a และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
-
-:::
-
 ## คำอธิบาย
 
 Retrieve the damage statuses of a vehicle.

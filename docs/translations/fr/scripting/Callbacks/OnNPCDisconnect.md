@@ -4,8 +4,6 @@ description: Ce rappel est appelé lorsque le PNJ est déconnecté du serveur.
 tags: ["npc"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Ce rappel est appelé lorsque le PNJ est déconnecté du serveur.

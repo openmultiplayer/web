@@ -4,8 +4,6 @@ description: Dobij library/ime animacije za indeks.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
-
 ## Deskripcija
 
 Dobij library/ime animacije za indeks.

@@ -4,8 +4,6 @@ description: 当玩家结束附加物体编辑模式时，会调用此回调。
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3e' />
-
 ## 描述
 
 当玩家结束附加物体编辑模式时，会调用此回调。

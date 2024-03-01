@@ -4,8 +4,6 @@ description: Anexa uma Text Label 3D a um veículo específico.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-Esta função foi implementada no SA-MP 0.3a e não funcionará em versões anteriores.
-
 ## Descrição
 
 Anexa uma Text Label 3D a um veículo específico.

@@ -4,12 +4,6 @@ description: Set the model for a textdraw model preview.
 tags: ["textdraw"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3x and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Set the model for a textdraw model preview. Click here to see this function's effect.

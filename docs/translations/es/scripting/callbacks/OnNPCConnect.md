@@ -4,8 +4,6 @@ descripción: This callback is called when a NPC successfully connects to the se
 tags: ["npc"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Este callback se llama cuando un NPC se conecta con éxito al servidor.

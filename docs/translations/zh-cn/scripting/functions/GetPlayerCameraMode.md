@@ -4,8 +4,6 @@ description: 返回所请求玩家的当前GTA视角模式。
 tags: ["player", "camera"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3c R3' />
-
 ## 描述
 
 返回所请求玩家的当前 GTA [视角模式](../resources/cameramodes)。视角模式在判断玩家是否在瞄准、作为乘客在车内射击等方面非常有用。

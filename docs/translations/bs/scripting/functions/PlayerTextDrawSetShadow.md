@@ -4,12 +4,6 @@ description: Dodaje sjenku na donju desnu stranu teksta u player-textdrawu.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dodaje sjenku na donju desnu stranu teksta u player-textdrawu. Font sjene odgovara fontu teksta.

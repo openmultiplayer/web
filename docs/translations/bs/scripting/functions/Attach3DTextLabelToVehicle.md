@@ -4,12 +4,6 @@ description: Prikvači 3D text label za vozilo.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikvači 3D text label za vozilo.

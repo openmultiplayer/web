@@ -4,8 +4,6 @@ description: Bir araca 3D text label bağlar.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Bu fonksiyon bir araca 3D text label bağlamanızı sağlar.

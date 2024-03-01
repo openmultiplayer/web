@@ -4,12 +4,6 @@ description: Ovaj callback se poziva kada igrač klikne na textdraw ili napusti 
 tags: ["player", "textdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback se poziva kada igrač klikne na textdraw ili napusti select mode pritiskom na tipku 'Escape'.

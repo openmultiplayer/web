@@ -4,8 +4,6 @@ description: Bu fonksiyonu, bir oyuncuya kamera yerleştirmek için kullanabilir
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Açıklama
 
 Bu fonksiyonu, bir oyuncuya kamera yerleştirmek için kullanabilirsiniz.

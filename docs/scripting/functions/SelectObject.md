@@ -4,8 +4,6 @@ description: Display the cursor and allow the player to select an object.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Display the cursor and allow the player to select an object. OnPlayerSelectObject is called when the player selects an object.

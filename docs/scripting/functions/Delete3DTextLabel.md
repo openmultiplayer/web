@@ -4,8 +4,6 @@ description: Delete a 3D text label (created with Create3DTextLabel).
 tags: ["3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Delete a 3D text label (created with Create3DTextLabel).

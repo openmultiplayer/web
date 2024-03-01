@@ -4,8 +4,6 @@ description: Cette callback est appelée quand un joueur sélectionne un objet a
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Description
 
 Cette callback est appelée quand un joueur sélectionne un objet après que SelectObject a été utilisé.

@@ -4,12 +4,6 @@ description: Omogućuje igračima da uređuju player objekat (položaj i rotacij
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Omogućuje igračima da uređuju player objekat (položaj i rotacija) s GUI-jem i mišem.

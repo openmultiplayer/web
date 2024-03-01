@@ -4,8 +4,6 @@ description: Adds a death to the 'killfeed' on the right-hand side of the screen
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3z R2-2' />
-
 ## Description
 
 Adds a death to the 'killfeed' on the right-hand side of the screen for a single player.

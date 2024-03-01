@@ -4,8 +4,6 @@ description: Bu fonksiyon, bir oyuncu RCON olarak oturum açmaya çalıştığı
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Açıklama
 
 Bu fonksiyon, bir oyuncu RCON olarak oturum açmaya çalıştığında giriş denemesi başarısız olsa bile çağrılır.

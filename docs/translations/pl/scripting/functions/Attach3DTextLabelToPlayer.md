@@ -4,8 +4,6 @@ description: Przyczepia tekst 3D do gracza.
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Opis
 
 Przyczepia tekst 3D do gracza.

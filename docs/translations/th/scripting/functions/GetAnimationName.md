@@ -4,12 +4,6 @@ description: Get the animation library/name for the index.
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3b and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Get the animation library/name for the index.

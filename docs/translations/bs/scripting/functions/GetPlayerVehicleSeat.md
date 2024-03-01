@@ -4,12 +4,6 @@ description: Saznaj u kojem je igrač sjedištu.
 tags: ["player", "vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Saznaj u kojem je igrač sjedištu.

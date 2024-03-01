@@ -4,8 +4,6 @@ description: Sets a player textdraw 3D preview sprite of a specified model ID.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
-
 ## Description
 
 Sets a player textdraw 3D preview sprite of a specified model ID.

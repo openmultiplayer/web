@@ -4,8 +4,6 @@ description: Apelat atunci când un jucător dă dublu clic pe un jucător de pe
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descriere
 
 Apelat atunci când un jucător dă dublu clic pe un jucător de pe scoreboard.

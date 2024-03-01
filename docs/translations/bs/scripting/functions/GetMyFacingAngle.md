@@ -4,8 +4,6 @@ description: Dobij trenutni ugao posmatranja NPC-a.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Deskripcija
 
 Dobij trenutni ugao posmatranja NPC-a.

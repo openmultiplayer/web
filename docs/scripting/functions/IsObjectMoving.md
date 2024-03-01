@@ -4,8 +4,6 @@ description: Checks if the given objectid is moving.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 Checks if the given objectid is moving.

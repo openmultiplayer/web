@@ -4,8 +4,6 @@ description: 当NPC进入车辆时会调用此回调。
 tags: []
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 当 NPC 进入车辆时会调用此回调。

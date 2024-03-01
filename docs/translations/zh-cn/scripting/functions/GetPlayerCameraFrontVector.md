@@ -4,8 +4,6 @@ description: 该函数返回玩家在三维空间的当前瞄准方向，坐标�
 tags: ["player", "camera"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 该函数返回玩家在三维空间的当前瞄准方向，坐标是相对于视角的位置，参见 GetPlayerCameraPos。

@@ -4,8 +4,6 @@ description: Cette callback est appelée lorsqu'un joueur prends des degats.
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Paramètres
 
 Cette callback est appelée lorsqu'un joueur prends des degats..
@@ -16,7 +14,7 @@ Cette callback est appelée lorsqu'un joueur prends des degats..
 | `int` issuerid        | L'ID du joueur qui cause les dégats. Si il vaut INVALID_PLAYER_ID, le joueur les a infligés lui même.                                                  |
 | `float` Float:amount  | Le montant des dégats reçus _(vie et armure combinés)_.                                                                                                |
 | `int` WEAPON:weaponid | L'ID de l'arme/la raison qui a causé les dégats.                                                                                                       |
-| `int` bodypart        | La partie du corps qui s'est faite touchée. _(**NOTE**: Ce paramètre a été ajouté dans la 0.3z. Enlevez le si vous utilisez une version antérieure !)_ |
+| `int` bodypart        | La partie du corps qui s'est faite touchée. |
 
 ## Valeur de retour
 

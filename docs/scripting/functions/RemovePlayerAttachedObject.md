@@ -4,8 +4,6 @@ description: Remove an attached object from a player.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Remove an attached object from a player.

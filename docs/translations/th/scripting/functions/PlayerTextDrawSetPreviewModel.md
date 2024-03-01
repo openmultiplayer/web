@@ -4,8 +4,6 @@ description: Sets a player textdraw 2D preview sprite of a specified model ID.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
-
 ## คำอธิบาย
 
 Sets a player textdraw 2D preview sprite of a specified model ID.

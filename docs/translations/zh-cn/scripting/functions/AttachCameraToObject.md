@@ -4,8 +4,6 @@ description: 您可以使用此函数将玩家视角附加到物体上。
 tags: []
 ---
 
-<VersionWarnCN version='SA-MP 0.3e' />
-
 ## 描述
 
 您可以使用此函数将玩家视角附加到物体上。

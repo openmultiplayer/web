@@ -4,8 +4,6 @@ description: Cancel textdraw selection with the mouse.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Cancel textdraw selection with the mouse

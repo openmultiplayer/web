@@ -4,12 +4,6 @@ description: Replace the texture of a player-object with the texture from anothe
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Replace the texture of a player-object with the texture from another model in the game.

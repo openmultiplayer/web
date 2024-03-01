@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un vehicul este transmis î
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un vehicul este transmis în flux pentru clientul unui jucător (este atât de departe încât acesta nu îl poate vedea).

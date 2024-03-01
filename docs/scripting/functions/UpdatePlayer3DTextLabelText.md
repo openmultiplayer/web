@@ -4,8 +4,6 @@ description: Updates a player 3D Text Label's text and color.
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Updates a player 3D Text Label's text and color

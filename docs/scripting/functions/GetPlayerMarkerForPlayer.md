@@ -4,8 +4,8 @@ description: Get the colour of a player's nametag and radar blip for another pla
 tags: ["player"]
 ---
 
-<VersionWarn version='open.mp RC2' />
-
+<VersionWarn version='omp v1.1.0.2612' />
+ 
 ## Description
 
 Get the colour of a player's **nametag** and **radar blip** for another player.

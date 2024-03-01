@@ -4,8 +4,6 @@ description: Nag-attach ng camera ng player sa isang player-object.
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Nag-attach ng camera ng player sa isang player-object. Nagagawa ng player na ilipat ang kanyang camera habang nakakabit ito sa isang bagay. Maaaring gamitin sa MovePlayerObject at AttachPlayerObjectToVehicle.

@@ -4,8 +4,6 @@ description: Obje düzenleme modunu iptal etme.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Açıklama
 
 Obje düzenleme modunu iptal etme.

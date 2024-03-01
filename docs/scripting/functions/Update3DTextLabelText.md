@@ -4,8 +4,6 @@ description: Updates a 3D Text Label text and color.
 tags: ["3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Updates a 3D Text Label text and color.

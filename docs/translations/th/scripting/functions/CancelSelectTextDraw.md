@@ -4,12 +4,6 @@ description: Cancel textdraw selection with the mouse.
 tags: ["textdraw"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Cancel textdraw selection with the mouse

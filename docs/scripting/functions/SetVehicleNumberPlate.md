@@ -4,8 +4,6 @@ description: Set a vehicle numberplate.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Set a vehicle numberplate.
@@ -30,12 +28,6 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 ```
 
 ## Notes
-
-:::tip
-
-This function only works in versions 0.2.1, 0.2.2, 0.2x and 0.3c (and beyond).
-
-:::
 
 :::tip
 

@@ -4,8 +4,6 @@ description: Cette callback est appelée quand une adresse IP tente de se connec
 tags: [IP, connexion, joueur]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R2-2' />
-
 ## Paramètres
 
 Cette callback est appelée quand une adresse IP tente de se connecter au serveur. Pour bloquer une connexion, utilisez BlockIpAddress

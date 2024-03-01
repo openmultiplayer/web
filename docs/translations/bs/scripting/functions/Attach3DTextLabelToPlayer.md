@@ -4,12 +4,6 @@ description: Prikvači 3D tekst label za igrača.
 tags: ["player", "3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikvači 3D tekst label za igrača.

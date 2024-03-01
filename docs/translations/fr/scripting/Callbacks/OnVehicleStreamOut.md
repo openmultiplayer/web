@@ -4,8 +4,6 @@ description: Cette callback est appelé quand un véhicule disparait du champs d
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Paramètres
 
 Cette callback est appelé quand un véhicule disparait du champs de stream du joueur (le véhicule est tellement loin qu'il ne peut plus le voir).

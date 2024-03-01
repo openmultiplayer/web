@@ -4,12 +4,6 @@ description: Set a player's special fighting style.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Set a player's special fighting style. To use in-game, aim and press the 'secondary attack' key (ENTER by default).

@@ -4,8 +4,6 @@ description: Membatalkan mode mengedit objek untuk pemain.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Deskripsi
 
 Membatalkan mode mengedit objek untuk pemain.

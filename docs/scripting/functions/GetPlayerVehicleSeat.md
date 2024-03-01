@@ -4,8 +4,6 @@ description: Find out which seat a player is in.
 tags: ["player", "vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Find out which seat a player is in.

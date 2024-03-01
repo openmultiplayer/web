@@ -4,12 +4,6 @@ description: Attaches an object to a bone.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3b and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Attaches an object to a bone.

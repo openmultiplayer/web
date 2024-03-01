@@ -4,8 +4,6 @@ description: Use this function before any player connects (OnGameModeInit) to te
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Use this function before any player connects (OnGameModeInit) to tell all clients that the script will control vehicle engines and lights. This prevents the game automatically turning the engine on/off when players enter/exit vehicles and headlights automatically coming on when it is dark.

@@ -4,8 +4,6 @@ description: Essa callback é executada quando elementos do veíclo como portas,
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 :::tip
 
 Funções úteis para trabalhar com danos em veículos podem ser encontradas [aqui](../resources/damagestatus).

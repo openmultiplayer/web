@@ -4,12 +4,6 @@ description: Ako je model vozila korišten u 3D textdraw pregledu (3D preview te
 tags: ["textdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ako je model vozila korišten u 3D textdraw pregledu (3D preview textdraw), ovo postavlja dvije vrijednosti boja za to vozilo.

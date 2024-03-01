@@ -4,8 +4,6 @@ description: Define a velocidade angular X, Y e Z de um veículo.
 tags: ["vehicle"]
 ---
 
-Esta função foi implementada no SA-MP 0.3b e não funcionará em versões anteriores.
-
 :::info
 
 Esta função está no _world_ space e não no _local_ space. Se você quiser fazer ajustes locais à velocidade angular, deve aplicar uma matriz baseada em [vehicle rotation quat](GetVehicleRotationQuat).

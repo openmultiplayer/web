@@ -4,8 +4,6 @@ description: Display the cursor and allow the player to select a textdraw.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Display the cursor and allow the player to select a textdraw

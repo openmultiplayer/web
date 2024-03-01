@@ -4,12 +4,6 @@ description: Check who a player is aiming at.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3d and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Check who a player is aiming at.

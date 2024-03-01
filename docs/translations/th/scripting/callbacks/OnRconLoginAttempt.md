@@ -4,12 +4,6 @@ description: This callback is called when someone attempts to log in to RCON in-
 tags: []
 ---
 
-:::warning
-
-Callback นี้ถูกเพิ่มใน SA-MP 0.3a และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
-
-:::
-
 ## คำอธิบาย
 
 This callback is called when someone attempts to log in to RCON in-game; successful or not.

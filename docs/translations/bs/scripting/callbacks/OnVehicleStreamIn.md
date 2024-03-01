@@ -4,12 +4,6 @@ description: Pozvan kada se vozilo pojavi u igračevom klijentu.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Pozvan kada se vozilo pojavi u igračevom klijentu.

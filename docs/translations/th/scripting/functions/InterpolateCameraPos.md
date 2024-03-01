@@ -4,12 +4,6 @@ description: Move a player's camera from one position to another, within the set
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Move a player's camera from one position to another, within the set time. Useful for scripted cut scenes

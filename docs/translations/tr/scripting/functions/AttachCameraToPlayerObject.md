@@ -4,8 +4,6 @@ description: Oyuncunun kamerası bir başka oyuncunun nesnesine bağlanır.
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Açıklama
 
 Oyuncunun kamerası bir başka oyuncunun nesnesine bağlanır. 

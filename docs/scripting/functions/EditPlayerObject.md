@@ -4,8 +4,6 @@ description: Allows players to edit a player-object (position and rotation) with
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Allows players to edit a player-object (position and rotation) with a GUI and their mouse.

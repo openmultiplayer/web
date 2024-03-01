@@ -4,8 +4,6 @@ description: 以设定的速度在两个坐标之间插值玩家视角的朝向�
 tags: []
 ---
 
-<VersionWarnCN version='SA-MP 0.3e' />
-
 ## 描述
 
 以设定的速度在两个坐标之间插值玩家视角的朝向。可以与 InterpolateCameraPos 一起使用。

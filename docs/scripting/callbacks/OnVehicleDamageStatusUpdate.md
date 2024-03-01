@@ -4,8 +4,6 @@ description: This callback is called when a vehicle element such as doors, tires
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 :::tip
 
 For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus).

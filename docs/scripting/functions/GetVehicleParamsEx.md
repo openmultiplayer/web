@@ -4,8 +4,6 @@ description: Gets a vehicle's parameters.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Gets a vehicle's parameters.

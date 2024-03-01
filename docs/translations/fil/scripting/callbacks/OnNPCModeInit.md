@@ -4,8 +4,6 @@ description: Tinatawag ang callback na ito kapag na-load ang isang NPC script.
 tags: ["npc"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Tinatawag ang callback na ito kapag na-load ang isang NPC script.

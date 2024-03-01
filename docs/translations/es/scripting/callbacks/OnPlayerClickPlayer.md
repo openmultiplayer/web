@@ -4,8 +4,6 @@ descripción: Se llama cuando un jugador hace doble click a un jugador en el sco
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Se llama cuando un jugador hace doble click a un jugador en el scoreboard (menú TAB).

@@ -4,12 +4,6 @@ description: Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdi
 tags: ["player"]
 ---
 
-:::warning
-
-Bu callback SA-MP 0.3e sürümünde eklendi ve önceki sürümlerde çalıştırılamaz.
-
-:::
-
 ## Açıklama
 
 Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.

@@ -4,12 +4,6 @@ description: Gets a vehicle's parameters.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Gets a vehicle's parameters.

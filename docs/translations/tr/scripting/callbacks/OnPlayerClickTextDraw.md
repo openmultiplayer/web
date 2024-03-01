@@ -4,8 +4,6 @@ description: This callback is called when a player clicks on a textdraw or cance
 tags: ["player", "textdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Açıklama
 
 Bu callback bir oyuncu bir textdrawa tıkladığında yada ESC tuşu ile seçim modunu iptal ettiğinde çağırılır.

@@ -20,7 +20,7 @@ Esta função sempre retorna 1, mesmo que a função falhe a ser executada (Joga
 
 :::warning
 
-Após o SA-MP 0.3x, qualquer ação realizada antes de Kick() (como enviar mensagem com SendClientMessage) não irá funcionar. Um temporizador deve ser usado para atrasar a expulsão.
+Qualquer ação realizada antes de Kick() (como enviar mensagem com SendClientMessage) não irá funcionar. Um temporizador deve ser usado para atrasar a expulsão.
 
 :::
 

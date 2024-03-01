@@ -4,8 +4,6 @@ description: Enter edition mode for an attached object.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Enter edition mode for an attached object.

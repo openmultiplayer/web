@@ -4,8 +4,6 @@ description: Dieses Callback wird ausgeführt wenn ein Spieler einem Dialog antw
 tags: [Pickup]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Beschreibung
 
 Dieses Callback wird ausgeführt wenn ein Spieler einem Dialog antwortet(benutzt), indem er einen der Buttons drückt, Enter/ESC drückt oder ein List-Item per Doppelklick auswählt(Dialog: List-Style)

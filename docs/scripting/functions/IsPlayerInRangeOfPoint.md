@@ -4,8 +4,6 @@ description: Checks if a player is in range of a point.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Checks if a player is in range of a point. This native function is faster than the PAWN implementation using distance formula.

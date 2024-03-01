@@ -4,8 +4,6 @@ description: Attaches an object to a bone.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
-
 ## Description
 
 Attaches an object to a bone.
@@ -46,8 +44,10 @@ Only one object may be attached per player. This function is seperate from the C
 
 :::warning
 
-This function was removed in SA-MP 0.3c. check SetPlayerAttachedObject
+This function was removed in SA-MP 0.3c. See [SetPlayerAttachedObject](SetPlayerAttachedObject)
 
 :::
 
 ## Related Functions
+
+- [StopPlayerHoldingObject](StopPlayerHoldingObject): Removes attached objects.

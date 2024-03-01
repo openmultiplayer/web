@@ -4,12 +4,6 @@ description: Postavlja rotaciju i zumiranje 3D pregleda modela (3D model preview
 tags: ["textdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja rotaciju i zumiranje 3D pregleda modela (3D model preview) textdrawa.

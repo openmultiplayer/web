@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada igrač klikne na player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada igrač klikne na player-textdraw. Nije pozvan kada igrač napusti select mode (ESC) - međutim, OnPlayerClickTextDraw jeste.

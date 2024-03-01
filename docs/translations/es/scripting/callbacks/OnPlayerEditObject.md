@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador termina de editar un obje
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3e' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador termina de editar un objeto (EditObject/EditPlayerObject).

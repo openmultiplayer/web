@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător termină editar
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător termină editarea unui obiect (EditObject/EditPlayerObject).

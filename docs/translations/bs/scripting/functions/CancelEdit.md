@@ -4,12 +4,6 @@ description: Prekida mod za editovanje objekta za igrača.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prekida mod za editovanje objekta za igrača.

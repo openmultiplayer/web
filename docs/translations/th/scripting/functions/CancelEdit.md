@@ -4,12 +4,6 @@ description: Cancel object edition mode for a player.
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Cancel object edition mode for a player

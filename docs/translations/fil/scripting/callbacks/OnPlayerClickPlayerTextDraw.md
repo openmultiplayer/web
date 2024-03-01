@@ -4,8 +4,6 @@ description: This callback is called when a player clicks on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Deskripsyon
 
 Ang callback na ito ay natatawag kapag ang player ay pumindot sa isang player-textdraw. Hindi ito natatawag kapag ang player ay nag cancel gamit ang (ESC)

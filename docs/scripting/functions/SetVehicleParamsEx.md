@@ -4,8 +4,6 @@ description: Sets a vehicle's parameters for all players.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Sets a vehicle's parameters for all players.

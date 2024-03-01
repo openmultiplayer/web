@@ -4,8 +4,6 @@ description: Retrieves the game camera zoom level for a given player.
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Retrieves the game camera zoom level for a given player.

@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un fișier înregistrat car
 tags: []
 ---
 
-<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un fișier înregistrat care este reprodus cu NPCStartRecordingPlayback a ajuns la final.

@@ -4,12 +4,6 @@ description: Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno o
 tags: []
 ---
 
-:::warning
-
-Ta funkcijo je bila dodana SA-MP 0.3a in v spodnjih različicah ne deluje!
-
-:::
-
 ## Opis
 
 Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno okno s funkcijo "ShowPlayerDialog" s klikom na gumb, s pritiskom na tipko ENTER/ESC ali z dvojnim klikom na element seznama (če uporabljate pogovorno okno sloga seznama).

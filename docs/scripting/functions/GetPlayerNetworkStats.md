@@ -4,8 +4,6 @@ description: Gets a player's network stats and saves them into a string.
 tags: ["player", "network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3c R4' />
-
 ## Description
 
 Gets a player's network stats and saves them into a string.

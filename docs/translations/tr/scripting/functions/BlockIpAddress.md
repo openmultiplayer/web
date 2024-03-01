@@ -4,8 +4,6 @@ description: IP adresini sunucu üzerinden bloklama. (with wildcards allowed).
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3z R2-2' />
-
 ## Açıklama
 
 IP adresini sunucudan bloklar. Belirtilen oyuncu girmeye çalıştığında sunucudan bloklandığına dair mesaj alır ve giremez. Belirtilen IP'ye sahip birisi eğer sunucu üzerinde aktifse bir kaç saniye içerisinde yasaklanır ve zaman aşımına uğrar, bir süre sonra tekrar girmeye çalıştığında yasaklandığına dair mesaj alır ve sunucuyla bağlantı kuramaz.

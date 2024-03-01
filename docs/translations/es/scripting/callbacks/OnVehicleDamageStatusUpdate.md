@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un elemento de vehículo como las pu
 tags: ["vehicle"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 :::tip
 
 Para algunas funciones útiles para trabajar con valores de daños del vehículo, vea [aquí](../resources/damagestatus).

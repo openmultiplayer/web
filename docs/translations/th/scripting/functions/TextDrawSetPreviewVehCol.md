@@ -4,12 +4,6 @@ description: If a vehicle model is used in a 3D preview textdraw, this sets the 
 tags: ["textdraw"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3x and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 If a vehicle model is used in a 3D preview textdraw, this sets the two colour values for that vehicle.

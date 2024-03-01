@@ -4,12 +4,6 @@ description: Dohvatite informacije o određenom modelu vozila, poput veličine i
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dohvatite informacije o određenom modelu vozila, poput veličine ili položaja sjedala.

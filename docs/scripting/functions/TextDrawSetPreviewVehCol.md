@@ -4,8 +4,6 @@ description: If a vehicle model is used in a 3D preview textdraw, this sets the 
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
-
 ## Description
 
 If a vehicle model is used in a 3D preview textdraw, this sets the two colour values for that vehicle.

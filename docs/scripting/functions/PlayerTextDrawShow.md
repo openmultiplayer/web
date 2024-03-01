@@ -4,8 +4,6 @@ description: Show a player-textdraw to the player it was created for.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
 Show a player-textdraw to the player it was created for

@@ -4,7 +4,7 @@ description: Get the playerid of the person driving the vehicle.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='open.mp RC2' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 

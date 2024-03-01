@@ -4,8 +4,6 @@ description: Creates a chat bubble above a player's name tag.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Creates a chat bubble above a player's name tag.

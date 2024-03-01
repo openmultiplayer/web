@@ -177,14 +177,9 @@ Aşağıdaki komutları sadece RCON girişi yapmış yöneticiler kullanabilir:
 | `/rcon reloadfs`                  | Belirtilem filterscript'i tekrar yükler (_örnek: /rcon reloadfs adminfs_).                         |
 | `/rcon rcon_password [ŞİFRE]`     | Rcon'un şifresini değiştirir.                                                                   |
 | `/rcon password [şifre]`          | Sunucu şifresini ayarlar/sıfırlar.                                                              |
-
-**Aşağıdaki komutlar yalnızca 0.3z R2 ve sonrasında kullanılabilir**:
-
-| Komut                             | Açıklama                                                                                           |
-| --------------------------------- | --------------------------------------------------------------------------------------------------- |
 | `/rcon messageslimit [sayı]`      | İstemcinin sunucuya saniyede gönderdiği mesaj sayısını değiştirir. (varsayılan 500)               |
-| `/rcon ackslimit [sayı]`          | Ack'ların sınırını değiştirir (varsayılan 1000) (0.3z R2-2'den itibaren varsayılan sınır 3000'dir).|
-| `/rcon messageholelimit [sayı]`   | Mesaj deliklerinin sınırını değiştirir (0.3z R1'de de mevcuttur) (varsayılan 3000).                |
+| `/rcon ackslimit [sayı]`          | Ack'ların sınırını değiştirir (varsayılan 3000) |
+| `/rcon messageholelimit [sayı]`   | Mesaj deliklerinin sınırını değiştirir (varsayılan 3000).                |
 | `/rcon playertimeout [limit ms]`  | Bir oyuncunun hiç paket göndermediği süreyi milisaniye cinsinden değiştirir (varsayılan 1000).   |
 | `/rcon language [dil]`            | Sunucu dilini değiştirir (_örnek: /rcon language Turkish_). Sunucu tarayıcısında gösterilir.    |
 

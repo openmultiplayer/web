@@ -4,12 +4,6 @@ description: Returns a vehicle's rotation on all axes as a quaternion.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3b and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Returns a vehicle's rotation on all axes as a quaternion.

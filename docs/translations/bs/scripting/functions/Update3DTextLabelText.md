@@ -4,12 +4,6 @@ description: Ažurira text i boju 3D Text Labela.
 tags: ["3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ažurira text i boju 3D Text Labela.

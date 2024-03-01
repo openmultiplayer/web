@@ -4,8 +4,6 @@ description: Gets the amount of time (in milliseconds) that a player has been co
 tags: ["network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the amount of time (in milliseconds) that a player has been connected to the server for.

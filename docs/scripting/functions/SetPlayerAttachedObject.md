@@ -4,8 +4,6 @@ description: Attach an object to a specific bone on a player.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Attach an object to a specific bone on a player.
@@ -13,7 +11,7 @@ Attach an object to a specific bone on a player.
 | Name           | Description                                                                          |
 | -------------- | ------------------------------------------------------------------------------------ |
 | playerid       | The ID of the player to attach the object to.                                        |
-| index          | The index (slot) to assign the object to (0-9 since 0.3d, 0-4 in previous versions). |
+| index          | The index (slot 0-9) to assign the object to. |
 | modelid        | The model to attach.                                                                 |
 | bone           | The [bone](../resources/boneid) to attach the object to.                             |
 | fOffsetX       | (optional) X axis offset for the object position.                                    |
@@ -56,7 +54,7 @@ This function is separate from the CreateObject / CreatePlayerObject pools.
 
 :::warning
 
-In version 0.3d and onwards, 10 objects can be attached to a single player (index 0-9). In earlier versions, the limit is 5 (index 0-4).
+Atleast 10 objects can be attached to a single player (index 0-9)
 
 :::
 

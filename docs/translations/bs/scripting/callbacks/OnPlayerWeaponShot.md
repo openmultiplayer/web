@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada igrač ispali hitac iz oružja.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada igrač ispali hitac iz oružja. Samo oružja sa mecima su podržana. Drive-by je podržan samo od strane putnika (ne vozačev drive-by, i ne hice koje pucate iz sea sparrowa / huntera).

@@ -4,12 +4,6 @@ description: Returns the index of any running applied animations.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3b and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Returns the index of any running applied animations.

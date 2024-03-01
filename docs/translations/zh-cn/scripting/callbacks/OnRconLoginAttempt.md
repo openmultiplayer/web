@@ -4,8 +4,6 @@ description: 不管成功与否，只要有人尝试登录RCON，就会调用这
 tags: []
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 不管成功与否，只要有人尝试登录 RCON，就会调用这个回调函数。

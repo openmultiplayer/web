@@ -7,11 +7,6 @@ sidebar_label: Skin ID-ovi
 ## Lista Skinova
 
 Ova stranica sadrži sve dostupne skinove koje koriste funkcije [SetPlayerSkin](../functions/SetPlayerSkin) i [GetPlayerSkin](../functions/GetPlayerSkin).
-:::note
-
-Ovi skinovi (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) su dodani u SA-MP 0.3d RC5 i neće raditi u ranijim verzijama!
-
-:::
 
 | Skin ID | Pregled                               | Ime Skin Modela | Skin Ime/Tip                                     | Singleplayer Lokacija                                     | Rod    |
 | ------- | ------------------------------------- | --------------- | ------------------------------------------------ | --------------------------------------------------------- | ------ |

@@ -4,7 +4,7 @@ description: Hides any dialog the player may currently be able to see.
 tags: ["player", "dialog"]
 ---
 
-<VersionWarn version='open.mp beta build 1' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 

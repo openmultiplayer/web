@@ -4,8 +4,6 @@ description: Cette callback est appelée quand un joueur en a fini avec le mode 
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Paramètres
 
 Cette callback est appelée quand un joueur en a fini avec le mode édition des attach objects.

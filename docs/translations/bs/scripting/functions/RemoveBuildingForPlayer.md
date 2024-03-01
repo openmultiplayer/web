@@ -4,12 +4,6 @@ description: Uklanja standardni model San Andreasa za jednog igrača u određeno
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Uklanja standardni model San Andreasa za jednog igrača u određenom opsegu.

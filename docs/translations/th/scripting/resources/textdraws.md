@@ -100,7 +100,7 @@ new Text:gMyText = Text:INVALID_TEXT_DRAW;
 
 ### Per-Player Textdraw
 
-A per-player textdraw is exactly the same as a regular 'global' textdraw, but only creates the textdraw for a single player. This is useful for textdraws that are unique to each player, such as a 'stats' bar showing their kills or score. This can be used to avoid going over the global-textdraw limit, as you can create 256 (as of 0.3e R2) textdraws per player. They are also easier to manage, as they automatically destroy themselves when the player disconnects.
+A per-player textdraw is exactly the same as a regular 'global' textdraw, but only creates the textdraw for a single player. This is useful for textdraws that are unique to each player, such as a 'stats' bar showing their kills or score. This can be used to avoid going over the global-textdraw limit, as you can create 256 textdraws per player. They are also easier to manage, as they automatically destroy themselves when the player disconnects.
 
 ```c
 new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;

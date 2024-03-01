@@ -4,8 +4,6 @@ description: This will force the NPC to write a desired command, and this way, g
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This will force the NPC to write a desired command, and this way, getting the effects it would produce.

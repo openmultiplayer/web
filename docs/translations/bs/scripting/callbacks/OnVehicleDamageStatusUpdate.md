@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada dio vozila kao npr vrata, gume, paneli
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 :::tip
 
 Za neke korisne funkcije za raditi sa vozilima sa vrijednostima oštećenja vozila, pogledajte [ovdje](../resources/damagestatus.md).

@@ -4,8 +4,6 @@ description: Oyuncu objesini araca bağlama.
 tags: ["player", "vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Açıklama
 
 Bir oyuncu objesini araca bağlar. 

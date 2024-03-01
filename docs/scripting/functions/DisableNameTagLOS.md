@@ -4,8 +4,6 @@ description: Disables the nametag Line-Of-Sight checking so that players can see
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Disables the nametag Line-Of-Sight checking so that players can see nametags through objects.

@@ -4,8 +4,6 @@ description: This callback is called when a player responds to a dialog shown us
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Deskripsyon
 
 Ang callback na ito ay na cacall kapag ang player ay nag respond sa isang dialog na ipinakita gamit ang ShowPlayerDialog gamit ang pag click sa isang button, pagpindot ng `ENTER/ESC` o pag `Double Click` sa isang laman ng list. (kung ang dialog ay DIALOG_STYLE_LIST).

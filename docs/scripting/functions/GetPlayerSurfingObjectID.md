@@ -4,8 +4,6 @@ description: Returns the ID of the object the player is surfing on.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3c R3' />
-
 ## Description
 
 Returns the ID of the object the player is surfing on.

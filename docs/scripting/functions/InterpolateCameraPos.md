@@ -4,8 +4,6 @@ description: Move a player's camera from one position to another, within the set
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Move a player's camera from one position to another, within the set time. Useful for scripted cut scenes

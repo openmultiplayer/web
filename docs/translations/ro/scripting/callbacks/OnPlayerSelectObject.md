@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător selectează un 
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător selectează un obiect după ce SelectObject a fost folosit.

@@ -4,8 +4,6 @@ description: Check if a player has an object attached in the specified index (sl
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Check if a player has an object attached in the specified index (slot).

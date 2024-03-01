@@ -4,8 +4,6 @@ description: Obtém as estatísticas da rede do servidor e as armazena em uma st
 tags: []
 ---
 
-Esta função foi implementada no SA-MP 0.3c R4 e não funcionará em versões anteriores.
-
 ## Descrição
 
 Obtém as estatísticas da rede do servidor e as armazena em uma string.

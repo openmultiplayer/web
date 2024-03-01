@@ -4,12 +4,6 @@ description: Find out what type of component a certain ID is.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Find out what type of component a certain ID is.

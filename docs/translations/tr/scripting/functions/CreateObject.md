@@ -17,7 +17,7 @@ Oyun dünyası üzerinde obje oluşturma.
 | Float:rX           | Oluşturulacak objenin X rotasyonu.                                                                                                                                    |
 | Float:rY           | Oluşturulacak objenin Y rotasyonu.                                                                                                                                    |
 | Float:rZ           | Oluşturulacak objenin Z rotasyonu.                                                                                                                                    |
-| Float:DrawDistance | (opsiyonel) Objenin görüş mesafesi. 0.0, objenin varsayılan mesafelerinde oluşturulmasına neden olur. 0.3b'den beri kullanılabilir. 0.3x öncesi 300 ile sınırlıdır.   |
+| Float:DrawDistance | (opsiyonel) Objenin görüş mesafesi. 0.0, objenin varsayılan mesafelerinde oluşturulmasına neden olur. |
 
 ## Örnekler
 

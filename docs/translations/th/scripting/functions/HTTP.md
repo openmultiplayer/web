@@ -4,12 +4,6 @@ description: Sends a threaded HTTP request.
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3b and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Sends a threaded HTTP request.

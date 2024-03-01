@@ -4,8 +4,6 @@ description: 将玩家的视角附加在玩家物体上。
 tags: ["player", "camera"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3e' />
-
 ## 描述
 
 将玩家的视角附加在玩家物体上。当视角附加在物体上时，玩家可以移动视角。可与 MovePlayerObject 和 AttachPlayerObjectToVehicle 一起使用。

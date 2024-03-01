@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador le hace daño a otro juga
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3d' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador le hace daño a otro jugador.
@@ -16,7 +14,7 @@ Este callback se llama cuando un jugador le hace daño a otro jugador.
 | damagedid | El ID del jugador que recibió daño.                                                                                  |
 | Float:amount    | La cantidad de chaleco/vida que el jugador dañado perdió (combinados).                                               |
 | WEAPON:weaponid  | La razón (arma/causa) que causó el daño.                                                                             |
-| bodypart  | La parte del cuerpo que fue golpeada. (NOTA: Este parámetro se añadió en 0.3z. Sacalo si usas una version anterior!) |
+| bodypart  | La parte del cuerpo que fue golpeada. |
 
 ## Devoluciones
 

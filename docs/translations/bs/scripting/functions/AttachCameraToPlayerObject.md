@@ -4,12 +4,6 @@ description: Prikvači kameru igrača za player objekat.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikvači kameru igrača za player objekat. Igrač može pomicati svoju kameru dok je prikvačena za objekat. Može se koristiti s MovePlayerObject i AttachPlayerObjectToVehicle.

@@ -4,8 +4,6 @@ description: Replace the texture of an object with the texture from another mode
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Replace the texture of an object with the texture from another model in the game.

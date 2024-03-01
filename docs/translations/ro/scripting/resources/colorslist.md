@@ -1,6 +1,6 @@
 ---
 title: Lista de culori
-description: Culorile sunt pretutindeni în SA-MP - vehicule, nume de jucători și clipuri, extrase de text, gametext și de la 0.3c în chat, texte 3D și dialoguri (ca încorporare a culorilor)! Mai jos puteți găsi informații despre aceste lucruri diferite.
+description: Culorile sunt pretutindeni în SA-MP - vehicule, nume de jucători și clipuri, extrase de text, gametext, chat, texte 3D și dialoguri (ca încorporare a culorilor)! Mai jos puteți găsi informații despre aceste lucruri diferite.
 sidebar_label: Lista de culori
 ---
 
@@ -61,12 +61,6 @@ stock HexToInt(string[])
 Foloseste HexToInt("RRGGBBAA") și veți obține un număr utilizabil ca rezultat pentru [SetPlayerColor](../functions/SetPlayerColor.md).
 
 ### Incorporarea culorii
-
-:::tip
-
-Lista de culori a fost adăugată în ** SA-MP 0.3c ** și nu va funcționa în versiunile anterioare!
-
-:::
 
 Este posibil să utilizați culori în text în [mesajele clientului](../functions/SendClientMessage.md"), [dialogs](../functions/ShowPlayerDialog.md), [3D text labels](../functions/Create3DTextLabel.md), [object material texts](../functions/SetObjectMaterialText.md) si [vehicle numberplates](../functions/SetVehicleNumberPlate.md").
 

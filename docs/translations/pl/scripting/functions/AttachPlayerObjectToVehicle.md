@@ -4,8 +4,6 @@ description: Przyczepia obiekt gracza do pojazdu.
 tags: ["player", "vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Opis
 
 Przyczepia obiekt gracza do pojazdu.

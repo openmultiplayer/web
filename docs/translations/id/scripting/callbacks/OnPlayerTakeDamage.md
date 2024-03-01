@@ -4,8 +4,6 @@ description: Callback ini terpanggil ketika pemain menerima damage.
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Deskripsi
 
 Callback ini terpanggil ketika pemain menerima damage.
@@ -16,7 +14,7 @@ Callback ini terpanggil ketika pemain menerima damage.
 | issuerid        | ID dari pemain yang memberikan damage. INVALID_PLAYER_ID jika bunuh diri.                                                         |
 | Float:amount    | Jumlah damage yang diterima (darah and armour dikombinasikan).                                                                    |
 | WEAPON:weaponid | ID dari senjata atau alasan yang digunakan untuk memberi damage.                                                                  |
-| bodypart        | Bagian tubuh yang terkena. (NOTE: Parameter ini ditambahkan pada versi 0.3z. Biarkan ini jika versi anda berada pada sebelumnya!) |
+| bodypart        | Bagian tubuh yang terkena. |
 
 ## Returns
 

@@ -4,8 +4,6 @@ description: Checks if a vehicle is streamed in for a player.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Checks if a vehicle is streamed in for a player. Only nearby vehicles are streamed in (visible) for a player.

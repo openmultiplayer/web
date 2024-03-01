@@ -4,8 +4,6 @@ description: Adds a shadow to the bottom-right side of the text in a player-text
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
 Adds a shadow to the bottom-right side of the text in a player-textdraw. The shadow font matches the text font.

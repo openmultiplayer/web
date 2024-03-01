@@ -4,8 +4,6 @@ description: This callback is called when a recorded file being reproduced with 
 tags: []
 ---
 
-<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This callback is called when a recorded file being reproduced with NPC:[StartRecordingPlayback](../functions/StartRecordingPlayback) has reached to its end.

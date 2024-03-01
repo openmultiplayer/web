@@ -4,8 +4,6 @@ description: Sunucuya NPC bağlama.
 tags: ["npc"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Açıklama
 
 Sunucuya NPC bağlama.

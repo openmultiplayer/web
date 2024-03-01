@@ -4,12 +4,6 @@ description: Kliče se, ko igralec dvakrat klikne na igralca na semaforju (TAB).
 tags: ["player"]
 ---
 
-:::warning
-
-Ta funkcijo je bila dodana SA-MP 0.3a in v spodnjih različicah ne deluje!
-
-:::
-
 ## Opis
 
 Kliče se, ko igralec dvakrat klikne na igralca na semaforju (TAB).

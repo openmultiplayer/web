@@ -4,8 +4,6 @@ description: This callback is called when a vehicle is streamed out for a player
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Açıklama
 
 Bir araç, oyuncunun işlem alanının dışına çıktığında çağırılır(Oyuncuların göremeyeceği kadar uzakta).

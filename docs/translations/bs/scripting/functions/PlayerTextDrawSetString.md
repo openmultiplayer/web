@@ -4,12 +4,6 @@ description: Promijeni tekst player-textdrawa.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Promijeni tekst player-textdrawa.

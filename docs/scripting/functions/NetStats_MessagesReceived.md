@@ -4,8 +4,6 @@ description: Gets the number of messages the server has received from the player
 tags: ["network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the number of messages the server has received from the player.

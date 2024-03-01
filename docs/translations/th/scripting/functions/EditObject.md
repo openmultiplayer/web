@@ -4,12 +4,6 @@ description: Allows a player to edit an object (position and rotation) using the
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Allows a player to edit an object (position and rotation) using their mouse on a GUI (Graphical User Interface).

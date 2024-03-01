@@ -4,12 +4,6 @@ description: Postavi Model za textdraw prikaz modela.
 tags: ["textdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavi Model za textdraw prikaz modela. Klikni ovdje da vidiš efekat ove funkcije.

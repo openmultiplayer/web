@@ -4,8 +4,6 @@ description: Set the color of a vehicle in a player-textdraw model preview (if a
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
-
 ## Description
 
 Set the color of a vehicle in a player-textdraw model preview (if a vehicle is shown).

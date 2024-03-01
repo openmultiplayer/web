@@ -4,8 +4,6 @@ description: 这个回调是在汽车部件(例如车门、轮胎、面板或车
 tags: ["vehicle"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 :::tip
 
 关于处理车辆损坏度的一些有用函数，请参阅[这里](../resources/damagestatus)。

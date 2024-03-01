@@ -4,12 +4,6 @@ description: Postavlja player-textdrawu 3D pregled određenog ID-a modela.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja player-textdrawu 3D pregled određenog ID-a modela.

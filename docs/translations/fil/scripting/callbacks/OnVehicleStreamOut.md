@@ -4,8 +4,6 @@ description: Tinatawag ang callback na ito kapag na-stream out ang isang sasakya
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Tinatawag ang callback na ito kapag na-stream out ang isang sasakyan para sa client ng player (napakalayo nito kaya hindi nila ito nakikita).

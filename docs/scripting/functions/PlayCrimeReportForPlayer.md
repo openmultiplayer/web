@@ -4,8 +4,6 @@ description: This function plays a crime report for a player - just like in sing
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 This function plays a crime report for a player - just like in single-player when CJ commits a crime.

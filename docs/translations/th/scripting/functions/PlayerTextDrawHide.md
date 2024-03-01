@@ -4,12 +4,6 @@ description: Hide a player-textdraw from the player it was created for.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-This feature (player-textdraws) was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Hide a player-textdraw from the player it was created for

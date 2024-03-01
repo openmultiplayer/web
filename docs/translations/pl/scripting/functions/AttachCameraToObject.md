@@ -4,8 +4,6 @@ description: Możesz używać tej funkcji, aby przyczepiać kamerę gracza do ob
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Opis
 
 Możesz używać tej funkcji, aby przyczepiać kamerę gracza do obiektów.

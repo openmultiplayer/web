@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător dă clic pe un 
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător dă clic pe un player-textdraw. Nu este apelat atunci când jucătorul anulează modul de selectare (ESC) - cu toate acestea, OnPlayerClickTextDraw este.

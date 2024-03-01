@@ -4,8 +4,6 @@ description: This callback is called when a player places a target/waypoint on t
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Description
 
 This callback is called when a player places a target/waypoint on the pause menu map (by right-clicking).

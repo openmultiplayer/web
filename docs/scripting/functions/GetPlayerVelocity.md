@@ -4,8 +4,6 @@ description: Get the velocity (speed) of a player on the X, Y and Z axes.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Get the velocity (speed) of a player on the X, Y and Z axes.

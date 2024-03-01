@@ -4,12 +4,6 @@ description: Postavite outline za player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavite outline za player-textdraw. Boja outline-a ne može biti promijenjena osim ako se PlayerTextDrawBackgroundColor ne koristi.

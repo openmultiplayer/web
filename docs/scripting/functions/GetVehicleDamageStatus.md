@@ -4,8 +4,6 @@ description: Retrieve the damage statuses of a vehicle.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 :::tip
 
 For some useful functions for working with vehicle damage values, see [here](../resources/damagestatus).
