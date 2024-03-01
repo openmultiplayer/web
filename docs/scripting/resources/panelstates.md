@@ -46,7 +46,12 @@ However, SA-MP returns a decimal number so you have to convert it to a binary nu
 To remove the front bumper of a car while keeping the other panels unchanged:
 
 ```c
-new panels, doors, lights, tires;
+new 
+	VEHICLE_PANEL_STATUS:panels,
+	VEHICLE_DOOR_STATUS:doors,
+	VEHICLE_LIGHT_STATUS:lights,
+	VEHICLE_TIRE_STATUS:tires;
+
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-UpdateVehicleDamageStatus(vehicleid, (panels | 0b00000000001100000000000000000000), doors, lights, tires); // The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
+UpdateVehicleDamageStatus(vehicleid, (panels | VEHICLE_PANEL_STATUS:0b00000000001100000000000000000000), doors, lights, tires); // The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
 ```
