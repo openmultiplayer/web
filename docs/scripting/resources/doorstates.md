@@ -156,3 +156,7 @@ if (GetDoorState(_:doors, DOOR_HOOD, IS_OPENED | IS_DAMAGED))
     SendClientMessage(playerid, -1, "The hood of your vehicle is both opened and damaged!");
 }
 ```
+
+## See also
+
+- [Vehicle Door Status](../resources/vehicle-door-status)
