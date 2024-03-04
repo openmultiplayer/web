@@ -1,7 +1,7 @@
 ---
 title: NetStats_GetIpPort
 description: Get a player's IP and port.
-tags: ["network monitoring"]
+tags: ["network monitoring", "ip address"]
 ---
 
 <VersionWarn version='SA-MP 0.3z' />
