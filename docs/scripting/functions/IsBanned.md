@@ -1,7 +1,7 @@
 ---
 title: IsBanned
 description: Checks if the given IP address is banned.
-tags: []
+tags: ["ip address"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
