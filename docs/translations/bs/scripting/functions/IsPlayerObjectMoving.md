@@ -4,12 +4,6 @@ description: Provjerava ako se dati player objectid pomjera.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Provjerava ako se dati player objectid pomjera.

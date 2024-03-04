@@ -179,14 +179,9 @@ These are the functions that you as admin can use:
 | `/rcon reloadfs`                  | Reloads the given filterscript (_example: /rcon reloadfs adminfs_).                                                                                   |
 | `/rcon rcon\_password [PASSWORD]` | Change the rcon's password                                                                                                                            |
 | `/rcon password [password]`       | Sets/resets the server password                                                                                                                       |
-
-**The following commands are only available in 0.3z R2 and above**:
-
-| Command                           | Description                                                                                          |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | `/rcon messageslimit [count]`     | Change the number of messages per second a client sends to the server. (default 500)                 |
-| `/rcon ackslimit [count]`         | Change the limit of acks (default 1000) (Since 0.3z R2-2, default limit is 3000)                     |
-| `/rcon messageholelimit [count]`  | Change the limit of message holes (Also available in 0.3z R1) (default 3000)                         |
+| `/rcon ackslimit [count]`         | Change the limit of acks (default 3000)                      |
+| `/rcon messageholelimit [count]`  | Change the limit of message holes (default 3000)                         |
 | `/rcon playertimeout [limit m/s]` | Change the time in milliseconds until a player timeouts when not sending any packets. (default 1000) |
 | `/rcon language [language]`       | Change the server language (_example: /rcon language English_). Shown in server browser.             |
 

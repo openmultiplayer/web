@@ -4,8 +4,6 @@ description: 检索玩家视角的纵横比。
 tags: ["player", "camera"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3z' />
-
 ## 描述
 
 检索玩家视角的纵横比。

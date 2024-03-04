@@ -4,8 +4,6 @@ description: Set a player's velocity on the X, Y and Z axes.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Set a player's velocity on the X, Y and Z axes.

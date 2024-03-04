@@ -4,12 +4,6 @@ description: Called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Callback นี้ถูกเพิ่มใน SA-MP 0.3a และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
-
-:::
-
 ## คำอธิบาย
 
 Called when a vehicle is streamed to a player's client.

@@ -4,8 +4,6 @@ description: Returns a vehicle's rotation on all axes as a quaternion.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
-
 ## Description
 
 Returns a vehicle's rotation on all axes as a quaternion.

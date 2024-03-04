@@ -4,8 +4,6 @@ description: Returns the norm (length) of the provided vector.
 tags: ["math"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Returns the norm (length) of the provided vector.

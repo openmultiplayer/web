@@ -4,8 +4,6 @@ description: 获取玩家视角的位置。
 tags: ["player", "camera"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 获取玩家视角的位置。

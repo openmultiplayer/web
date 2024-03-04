@@ -4,8 +4,6 @@ description: Objeyi objeye bağlar.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Açıklama
 
 Bu fonksiyon, objeleri diğer objelere bağlar.

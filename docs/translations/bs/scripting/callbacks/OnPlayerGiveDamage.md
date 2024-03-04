@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada igrač zadaje povredu drugom igraču.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada igrač zadaje povredu drugom igraču.
@@ -20,7 +14,7 @@ Ovaj callback je pozvan kada igrač zadaje povredu drugom igraču.
 | damagedid       | ID igrača koji prima povredu.                                                                                               |
 | Float:amount    | Količina healtha i armora kojeg je izgubio (kombinirano).                                                                   |
 | WEAPON:weaponid | Razlog zbog kojeg je zadobio povredu.                                                                                       |
-| bodypart        | Dio tijela koji je udaren. (ZABILJEŠKA: Ovaj parametar je dodan u 0.3z verziji. Ostavite ga ako koristite starije verzije!) |
+| bodypart        | Dio tijela koji je udaren. |
 
 ## Returns
 

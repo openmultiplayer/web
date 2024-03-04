@@ -4,8 +4,6 @@ description: 当玩家进入或离开改装店时，这个回调函数被调用�
 tags: []
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 当玩家进入或离开改装店时，这个回调函数被调用。

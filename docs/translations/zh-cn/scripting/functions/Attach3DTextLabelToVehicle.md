@@ -4,8 +4,6 @@ description: 将一个三维文本标签附加到特定的载具上。
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 将一个三维文本标签附加到特定的载具上。

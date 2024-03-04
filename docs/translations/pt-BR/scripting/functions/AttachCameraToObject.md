@@ -4,8 +4,6 @@ description: Você pode usar esta função para anexar a câmera do jogador a ob
 tags: []
 ---
 
-Esta função foi implementada no SA-MP 0.3e e não funcionará em versões anteriores.
-
 ## Descrição
 
 Você pode usar esta função para anexar a câmera do jogador a objetos.

@@ -40,7 +40,7 @@ MovePlayerObject(playerid, objectid, 2001.195679, 1547.113892, 10);
 
 :::tip
 
-If using the rotation parameters, the object must be moved (X/Y/Z). The object will interpolate the rotation from when the objects starts moving and when it stops. The parameters below are for 0.3d R2 and older versions and should be ignored if you run the latest version of SA-MP.
+If using the rotation parameters, the object must be moved (X/Y/Z). The object will interpolate the rotation from when the objects starts moving and when it stops.
 
 :::
 

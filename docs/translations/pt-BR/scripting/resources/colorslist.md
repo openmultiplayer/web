@@ -1,6 +1,6 @@
 ---
 title: Lista de Cores
-description: Cores estão em toda parte no SA-MP - veículos, nomes de jogadores e blips, textdraws, gametext e desde a 0.3c no chat, textos 3D e dialogs (as color embedding)! Abaixo você pode encontrar informações sobre essas coisas.
+description: Cores estão em toda parte no SA-MP - veículos, nomes de jogadores e blips, textdraws, gametext, chat, textos 3D e dialogs (as color embedding)! Abaixo você pode encontrar informações sobre essas coisas.
 sidebar_label: Color List
 ---
 
@@ -65,12 +65,6 @@ stock HexToInt(string[])
 Use HexToInt("RRGGBBAA") and you'll get a usable number as result for [SetPlayerColor](../functions/SetPlayerColor.md).
 
 ### Color embedding
-
-:::tip
-
-Colors List was added in **SA-MP 0.3c** and will not work in earlier versions!
-
-:::
 
 It is possible to use colors within text in [client messages](../functions/SendClientMessage.md"), [dialogs](../functions/ShowPlayerDialog.md), [3D text labels](../functions/Create3DTextLabel.md), [object material texts](../functions/SetObjectMaterialText.md) and [vehicle numberplates](../functions/SetVehicleNumberPlate.md").
 

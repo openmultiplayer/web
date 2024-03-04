@@ -4,8 +4,6 @@ description: 当玩家编辑完一个物体(EditObject/EditPlayerObject)时，�
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3e' />
-
 ## 描述
 
 当玩家编辑完一个物体(EditObject/EditPlayerObject)时，会调用该回调。

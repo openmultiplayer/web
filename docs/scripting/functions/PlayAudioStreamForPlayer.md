@@ -4,8 +4,6 @@ description: Play an 'audio stream' for a player.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 Play an 'audio stream' for a player. Normal audio files also work (e.g. MP3).

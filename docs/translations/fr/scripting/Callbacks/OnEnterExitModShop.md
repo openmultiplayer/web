@@ -1,10 +1,8 @@
 ---
 title: OnEnterExitModShop
 description: Cette callback est appelée quand un joueur entre / sort d'un modshop.
-tags: [modshop, vehicle, véhicule, enterexit, interiorid, interior, intérieur, 0.3a]
+tags: [modshop, vehicle, véhicule, enterexit, interiorid, interior, intérieur]
 ---
-
-<VersionWarn name='callback' version='SA-MP 0.3a' />
 
 ## Paramètres
 

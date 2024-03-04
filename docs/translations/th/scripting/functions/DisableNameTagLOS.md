@@ -4,12 +4,6 @@ description: Disables the nametag Line-Of-Sight checking so that players can see
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Disables the nametag Line-Of-Sight checking so that players can see nametags through objects.

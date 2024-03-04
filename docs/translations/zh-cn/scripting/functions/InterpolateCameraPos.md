@@ -4,8 +4,6 @@ description: 在设定的时间内，将玩家的视角从一个位置移动到�
 tags: []
 ---
 
-<VersionWarnCN version='SA-MP 0.3e' />
-
 ## 描述
 
 在设定的时间内，将玩家的视角从一个位置移动到另一个位置。

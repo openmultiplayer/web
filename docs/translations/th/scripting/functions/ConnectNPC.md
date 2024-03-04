@@ -4,12 +4,6 @@ description: Connect an NPC to the server.
 tags: ["npc"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Connect an NPC to the server.

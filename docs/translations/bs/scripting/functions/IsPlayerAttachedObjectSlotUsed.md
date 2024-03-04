@@ -4,12 +4,6 @@ description: Provjeri da li igrač ima prikvačen objekat u određenom indexu (s
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Provjeri da li igrač ima prikvačen objekat u određenom indexu (slotu).

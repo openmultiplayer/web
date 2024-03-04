@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când clientul unui jucător actu
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3c R3' />
-
 ## Descriere
 
 Acest callback este apelat atunci când clientul unui jucător actualizează/sincronizează poziția unui vehicul pe care nu îl conduce. Acest lucru se poate întâmpla în afara vehiculului sau când jucătorul este pasagerul unui vehicul care nu are șofer.

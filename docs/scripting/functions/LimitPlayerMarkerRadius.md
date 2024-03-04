@@ -4,8 +4,6 @@ description: Set the player marker radius.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Set the player marker radius.

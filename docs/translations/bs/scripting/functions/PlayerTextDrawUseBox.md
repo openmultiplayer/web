@@ -4,12 +4,6 @@ description: Omogući/onemogući korišćenje box-a za player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Omogući/onemogući korišćenje box-a za player-textdraw.

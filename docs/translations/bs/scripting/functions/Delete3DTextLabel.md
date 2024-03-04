@@ -4,12 +4,6 @@ description: Obriši 3D text label (kreiran sa Create3DTextLabel).
 tags: ["3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Obriši 3D text label (kreiran sa Create3DTextLabel).

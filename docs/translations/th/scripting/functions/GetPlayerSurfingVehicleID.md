@@ -4,12 +4,6 @@ description: Get the ID of the vehicle that the player is surfing (stuck to the 
 tags: ["player", "vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Get the ID of the vehicle that the player is surfing (stuck to the roof of).

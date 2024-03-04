@@ -4,8 +4,6 @@ description: Cette callback est appelée lorsque quelqu'un tente de se connecte 
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Paramètres
 
 Cette callback est appelée lorsque quelqu'un tente de se connecte en RCON, avec succès ou pas.

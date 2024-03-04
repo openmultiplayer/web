@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător dă daune altui
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător dă daune altui jucător.

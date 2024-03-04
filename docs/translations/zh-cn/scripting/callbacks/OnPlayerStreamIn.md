@@ -4,8 +4,6 @@ description: 当某个玩家从其他玩家的客户端流入时，这个回调�
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 当某个玩家从其他玩家的客户端流入时，这个回调被调用。

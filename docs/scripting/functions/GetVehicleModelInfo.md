@@ -4,8 +4,6 @@ description: Retrieve information about a specific vehicle model such as the siz
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Retrieve information about a specific vehicle model such as the size or position of seats

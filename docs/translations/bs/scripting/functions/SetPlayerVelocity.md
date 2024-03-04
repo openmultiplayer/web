@@ -4,12 +4,6 @@ description: Postavi brzinu igrača na X, Y i Z osama.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavi brzinu igrača na X, Y i Z osama.

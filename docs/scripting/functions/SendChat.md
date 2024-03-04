@@ -4,8 +4,6 @@ description: This will send a player text by the bot, just like using SendPlayer
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This will send a player text by the bot, just like using [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll), but this function is to be used inside the NPC scripts.

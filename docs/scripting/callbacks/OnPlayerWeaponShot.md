@@ -4,8 +4,6 @@ description: This callback is called when a player fires a shot from a weapon.
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z' />
-
 ## Description
 
 This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).

@@ -6,6 +6,14 @@ tags: []
 
 <VersionWarn version='open.mp beta build 6' />
 
+:::warning
+
+This function was deprecated.
+
+[SendClientMessageToAll](SendClientMessageToAll) function now is built-in with format!
+
+:::
+
 ## Description
 
 Displays a formatted message in chat to all players. This is a multi-player equivalent of SendClientMessage.
@@ -30,13 +38,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (strcmp(cmdtext, "/helloworld", true) == 0)
     {
         // Send a message to everyone.
-        SendClientMessageToAll(-1, "%s!", HELLO_WORLD);
+        SendClientMessageToAllf(-1, "%s!", HELLO_WORLD);
         return 1;
     }
     return 0;
 }
 ```
-
-## Related Functions
-
-- [SendClientMessageToAllf](SendClientMessageToAllf): Send a message to all players.

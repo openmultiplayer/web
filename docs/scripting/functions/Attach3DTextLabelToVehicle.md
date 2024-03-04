@@ -4,8 +4,6 @@ description: Attaches a 3D Text Label to a specific vehicle.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Attaches a 3D Text Label to a specific vehicle.

@@ -4,12 +4,6 @@ description: Gets the number of messages the player has received in the last sec
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3z and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Gets the number of messages the player has received in the last second.

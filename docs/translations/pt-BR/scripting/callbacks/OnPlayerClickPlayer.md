@@ -4,8 +4,6 @@ description: Chamado quando um jogador realiza um clique duplo em um jogador no 
 tags: ["player"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3a' />
-
 ## Descrição
 
 Chamado quando um jogador realiza um clique duplo em um jogador no placar.

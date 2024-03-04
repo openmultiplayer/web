@@ -4,8 +4,6 @@ description: Suriin kung ang isang player ay isang aktwal na player o isang NPC.
 tags: ["player", "npc"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Suriin kung ang isang player ay isang aktwal na player o isang NPC.

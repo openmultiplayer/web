@@ -4,8 +4,6 @@ description: Bu callback bir oyuncu obje düzenlemeyi bitirdiğinde çağırıl�
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Açıklama
 
 Bu callback bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObject/EditPlayerObject).

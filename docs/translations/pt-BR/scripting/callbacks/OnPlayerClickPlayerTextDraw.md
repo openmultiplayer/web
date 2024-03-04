@@ -4,8 +4,6 @@ description: Esta callback é chamada quando um jogador clica em uma player-text
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3e' />
-
 ## Descrição
 
 Esta callback é chamada quando um jogador clica em uma player-textdraw. Não é chamada quando um jogador cancela o modo de seleção (pressionando ESC), entretanto, OnPlayerClickTextDraw é.

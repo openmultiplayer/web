@@ -14,7 +14,7 @@ tags: ["player"]
 | Float:x  | 玩家的视角所看向的 X 坐标。                                                                                                                                     |
 | Float:y  | 玩家的视角所看向的 Y 坐标。                                                                                                                                     |
 | Float:z  | 玩家的视角所看向的 Z 坐标。                                                                                                                                     |
-| cut      | 可使用的[风格](../resources/cameracutstyles)。可以使用 CAMERA_MOVE 从旧位置插值（缓慢变化）到新位置。注意：在 0.3e 版本中添加。对于旧版本来说，该参数可以省略。 |
+| cut      | 可使用的[风格](../resources/cameracutstyles)。可以使用 CAMERA_MOVE 从旧位置插值（缓慢变化）到新位置。|
 
 ## 返回值
 

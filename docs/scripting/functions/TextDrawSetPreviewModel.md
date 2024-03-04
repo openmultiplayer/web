@@ -4,8 +4,6 @@ description: Set the model for a textdraw model preview.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
-
 ## Description
 
 Set the model for a textdraw model preview. Click here to see this function's effect.

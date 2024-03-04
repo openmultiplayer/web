@@ -4,7 +4,7 @@ description: Acest callback este apelat atunci când un jucător termină descă
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.DL' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
 
 ## Descriere
 

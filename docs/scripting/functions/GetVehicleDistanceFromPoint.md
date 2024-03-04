@@ -4,8 +4,6 @@ description: This function can be used to calculate the distance (as a float) be
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c R3' />
-
 ## Description
 
 This function can be used to calculate the distance (as a float) between a vehicle and another map coordinate. This can be useful to detect how far a vehicle away is from a location.

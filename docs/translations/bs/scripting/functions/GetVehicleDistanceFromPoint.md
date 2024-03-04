@@ -4,12 +4,6 @@ description: Ova se funkcija može koristiti za izračunavanje udaljenosti (kao 
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3c R3 i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ova se funkcija može koristiti za izračunavanje udaljenosti (kao float) između vozila i druge kordinate na mapi. Ovo može biti korisno za provjeravanje koliko je vozilo daleko od lokacije.

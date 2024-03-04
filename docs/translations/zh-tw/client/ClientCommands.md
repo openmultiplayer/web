@@ -34,10 +34,10 @@ descripion: 所有在用戶端可使用的指令表。
 | disableheadmove | 請查閱指令 /headmove                                                                                                                                                                               |
 | timestamp       | 請查閱指令 /timestamp                                                                                                                                                                              |
 | ime             | 這個設定控制聊天視窗輸入框是否支援輸入法文字編輯和語言切換(IME)。1 啟用輸入法，0 停用輸入法。                                                         |
-| audiomsgoff     | 此選項於 0.3d 版本中被加入，請查閱指令 /audiomsg.                                                                                                                                                |
-| multicore       | 此選項於 0.3d 版本中被加入。切換當SA-MP用戶端運行時是否使用多個CPU核心。默認值為1（使用多個CPU核心）。如果您遇到滑鼠問題，請設置為0  |
-| directmode      | 此選項於 0.3d 版本中被加入。它允許在聊天文本繪製出現問題的玩家使用較慢的直接螢幕文字渲染模式。0為禁用，1為啟用。                        |
-| audioproxyoff   | 此選項於 0.3d 版本中被加入。如果此選項設置為1，且您的Windows網路設定中設有代理伺服器，當播放SA-MP中的音訊串流時將不會使用代理伺服器。 |
+| audiomsgoff     | 請查閱指令 /audiomsg.                                                                                                                                                |
+| multicore       | 切換當SA-MP用戶端運行時是否使用多個CPU核心。默認值為1（使用多個CPU核心）。如果您遇到滑鼠問題，請設置為0  |
+| directmode      | 它允許在聊天文本繪製出現問題的玩家使用較慢的直接螢幕文字渲染模式。0為禁用，1為啟用。                        |
+| audioproxyoff   | 如果此選項設置為1，且您的Windows網路設定中設有代理伺服器，當播放SA-MP中的音訊串流時將不會使用代理伺服器。 |
 | nonametagstatus | 此選項於 0.3x 版本中被加入，請查閱指令 /nametagstatus                                                                                                                                           |
 | fontface        | 此選項於 0.3.7 版本中被加入。允許您更改聊天、對話框和計分板的字體。例如：fontface="Comic Sans MS" 尚未正式支援，可能會發生錯誤。          |
 | fontweight      | 此選項於 0.3.7 版本中被加入。此選項用於切換聊天字體是否為粗體，預設為粗體（0 = 粗體），正常字體為 1                                                                |

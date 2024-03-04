@@ -4,12 +4,6 @@ description: Gets the player's current connection status.
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3z and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Gets the player's current connection status.

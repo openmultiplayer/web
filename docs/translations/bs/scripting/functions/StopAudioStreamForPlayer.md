@@ -4,12 +4,6 @@ description: Zaustavlja trenutni audio tok za igrača.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Zaustavlja trenutni audio tok za igrača.

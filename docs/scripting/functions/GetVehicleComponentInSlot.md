@@ -4,8 +4,6 @@ description: Retrieves the installed component ID (modshop mod(ification)) on a 
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific slot.

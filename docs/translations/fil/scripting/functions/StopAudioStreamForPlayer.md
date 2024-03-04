@@ -4,8 +4,6 @@ description: Ihihinto ang kasalukuyang audio stream para sa isang player.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 Ihihinto ang kasalukuyang audio stream para sa isang player.

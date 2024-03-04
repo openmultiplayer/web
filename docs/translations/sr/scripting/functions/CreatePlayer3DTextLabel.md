@@ -4,12 +4,6 @@ description: Kreira 3D Text Label samo za posebnog igraca.
 tags: ["player", "3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
-
-:::
-
 ## Opis
 
 Kreira 3D Text Label samo za posebnog igraca.

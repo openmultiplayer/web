@@ -4,12 +4,6 @@ description: Removes attached objects.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3b and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Removes attached objects.
@@ -39,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::warning
 
-This function was removed in SA-MP 0.3c. check RemovePlayerAttachedObject
+This function was removed in SA-MP 0.3c. See [RemovePlayerAttachedObject](RemovePlayerAttachedObject)
 
 :::
 

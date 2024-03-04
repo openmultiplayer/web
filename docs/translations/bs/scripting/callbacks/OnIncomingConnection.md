@@ -4,12 +4,6 @@ description: Ovaj callback se poziva kada IP adresa pokuša da se konektuje na s
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z R2-2 i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback se poziva kada IP adresa pokuša da se konektuje na server. Da blokirate nadolazeće konekcije, koristite BlockIpAddress.

@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada igrač pošalje trailer update.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z R4 i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada igrač pošalje trailer update.

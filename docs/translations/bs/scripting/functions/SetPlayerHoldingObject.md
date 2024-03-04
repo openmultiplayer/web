@@ -4,12 +4,6 @@ description: Pričvršćuje objekat za kost.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3b i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Pričvršćuje objekat za kost.
@@ -50,8 +44,10 @@ Po igraču se može prikačiti samo jedan predmet. Ova je funkcija odvojena od s
 
 :::warning
 
-uklonjena je u SA-MP 0.3c. Provjeri SetPlayerAttachedObject
+uklonjena je u SA-MP 0.3c. Provjeri [SetPlayerAttachedObject](SetPlayerAttachedObject)
 
 :::
 
 ## Srodne Funkcije
+
+- [StopPlayerHoldingObject](StopPlayerHoldingObject): Uklanja prikvačene objekte.

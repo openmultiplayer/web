@@ -4,12 +4,6 @@ description: Dohvatite status oštećenja vozila.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 :::tip
 
 Za neke korisne funkcije za rad sa vrijednostima oštećenja vozila pogledajte [ovdje](../resources/damagestatus).

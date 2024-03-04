@@ -4,8 +4,6 @@ description: Loads or unloads an interior script for a player (for example the a
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Loads or unloads an interior script for a player (for example the ammunation menu).

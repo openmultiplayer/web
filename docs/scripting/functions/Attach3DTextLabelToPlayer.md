@@ -4,8 +4,6 @@ description: Attach a 3D text label to a player.
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Attach a 3D text label to a player.

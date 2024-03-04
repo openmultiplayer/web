@@ -4,8 +4,6 @@ description: Checks if a player is streamed in another player's client.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Checks if a player is streamed in another player's client.

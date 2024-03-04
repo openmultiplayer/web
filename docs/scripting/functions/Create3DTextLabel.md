@@ -4,8 +4,6 @@ description: Creates a 3D Text Label at a specific location in the world.
 tags: ["3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Creates a 3D Text Label at a specific location in the world

@@ -4,12 +4,6 @@ description: Blokira IP adresu iz daljnje komunikacije sa serverom na određeno 
 tags: ["ip address"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z R2-2 i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Blokira IP adresu iz daljnje komunikacije sa serverom na određeno vrijeme (uz dopuštene zamjenske znakove). Igrači koji se pokušaju povezati na server s blokiranom IP adresom primit će generičku "You are banned from this server." poruku. Igrači koji su na mreži na navedenoj IP adresi,prije nego što će blokada isteći nakon nekoliko sekundi,nakon ponovnog povezivanja,primit će istu poruku.

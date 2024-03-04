@@ -4,8 +4,6 @@ description: Get the velocity of a vehicle on the X, Y and Z axes.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Get the velocity of a vehicle on the X, Y and Z axes.

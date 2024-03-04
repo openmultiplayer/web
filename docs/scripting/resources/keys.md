@@ -49,7 +49,7 @@ SA-MP uses bitmasking to determine which keys are pressed and which are not. Her
 
 or use KEY_HANDBRAKE.
 
-**(2):** Supported since 0.3d. Not detectable in earlier versions. This key can not be detected when the player is in [spectator mode](../functions/TogglePlayerSpectating).
+**(2):** This key can not be detected when the player is in [spectator mode](../functions/TogglePlayerSpectating).
 
 **(3):** GROUP_CONTROL_FWD cannot be detected in SA-MP, as it used internally to enter vehicles as passenger. However, the gametext definition still exists.
 

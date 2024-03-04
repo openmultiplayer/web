@@ -4,8 +4,6 @@ description: Das Callback wird aufgerufen, wenn ein Spieler eine Tuningwerkstatt
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Beschreibung
 
 Das Callback wird aufgerufen, wenn ein Spieler eine Tuningwerkstatt betritt oder verlässt.

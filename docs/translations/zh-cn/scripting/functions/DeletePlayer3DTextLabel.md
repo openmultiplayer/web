@@ -4,8 +4,6 @@ description: 删除由CreatePlayer3DTextLabel创建的三维文本标签。
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 删除由 CreatePlayer3DTextLabel 创建的三维文本标签。

@@ -4,8 +4,6 @@ description: Retrieves the start and end (hit) position of the last bullet a pla
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Retrieves the start and end (hit) position of the last bullet a player fired.

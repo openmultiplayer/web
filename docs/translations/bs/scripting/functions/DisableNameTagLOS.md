@@ -4,12 +4,6 @@ description: Onemogućava provjeru linije naziva vidljivosti kako bi igrači mog
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 DOnemogućava provjeru linije naziva vidljivosti kako bi igrači mogli vidjeti oznake imena kroz objekte.

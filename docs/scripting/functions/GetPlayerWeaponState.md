@@ -4,8 +4,6 @@ description: Check the state of a player's weapon.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Check the state of a player's weapon.

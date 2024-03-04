@@ -4,12 +4,6 @@ description: Dobij ID vozila na kojem igrač surfa (zapeo za krovu vozila).
 tags: ["player", "vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dobij ID vozila na kojem igrač surfa (zapeo za krovu vozila).

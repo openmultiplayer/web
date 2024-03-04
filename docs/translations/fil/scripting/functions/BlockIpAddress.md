@@ -4,8 +4,6 @@ description: Bina-block ang isang IP address mula sa karagdagang komunikasyon sa
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3z R2-2' />
-
 ## Description
 
 Bina-block ang isang IP address mula sa karagdagang komunikasyon sa server para sa isang nakatakdang tagal ng oras (na may pinapayagang mga wildcard). Ang mga manlalarong sumusubok na kumonekta sa server na may naka-block na IP address ay makakatanggap ng generic na "Ikaw ay pinagbawalan mula sa server na ito." mensahe. Ang mga manlalaro na online sa tinukoy na IP bago ang block ay mag-timeout pagkatapos ng ilang segundo at, kapag muling kumonekta, ay makakatanggap ng parehong mensahe.

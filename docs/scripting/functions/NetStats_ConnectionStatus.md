@@ -4,8 +4,6 @@ description: Gets the player's current connection status.
 tags: ["network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the player's current connection status.

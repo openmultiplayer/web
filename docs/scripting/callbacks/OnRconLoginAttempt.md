@@ -4,8 +4,6 @@ description: This callback is called when someone attempts to log in to RCON in-
 tags: ["rcon", "administration"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This callback is called when someone attempts to log in to RCON in-game; successful or not.

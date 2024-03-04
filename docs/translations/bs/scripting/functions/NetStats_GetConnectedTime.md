@@ -4,12 +4,6 @@ description: Dobija količinu vremena (u milisekundama) za koje je igrač poveza
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dobija količinu vremena (u milisekundama) za koje je igrač povezan na server.

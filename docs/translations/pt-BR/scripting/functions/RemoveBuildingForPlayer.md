@@ -4,8 +4,6 @@ description: Remove um modelo de San Andreas para um único jogador em um raio e
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Descrição
 
 Remove um modelo de San Andreas para um único jogador em um raio específico.

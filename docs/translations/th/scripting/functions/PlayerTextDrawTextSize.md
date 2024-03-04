@@ -4,12 +4,6 @@ description: Change the size of a player-textdraw (box if PlayerTextDrawUseBox i
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-This feature (player-textdraws) was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Change the size of a player-textdraw (box if PlayerTextDrawUseBox is enabled and/or clickable area for use with PlayerTextDrawSetSelectable).

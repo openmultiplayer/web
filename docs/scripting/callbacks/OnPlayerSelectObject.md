@@ -4,8 +4,6 @@ description: This callback is called when a player selects an object after Begin
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Description
 
 This callback is called when a player selects an object after [BeginObjectSelecting](../functions/BeginObjectSelecting) has been used.

@@ -4,12 +4,6 @@ description: Change the font of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-This feature (player-textdraws) was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Change the font of a player-textdraw.

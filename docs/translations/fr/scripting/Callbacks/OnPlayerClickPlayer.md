@@ -4,8 +4,6 @@ description: Callback appelée quand un joueur double-clique sur le pseudo d'un 
 tags: [player, clickplayer, clickedplayerid, source]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Paramètres
 
 Callback appelée quand un joueur double-clique sur le pseudo d'un joueur dans la tablist.

@@ -4,12 +4,6 @@ description: This function can be used to calculate the distance (as a float) be
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3c R3 and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 This function can be used to calculate the distance (as a float) between a vehicle and another map coordinate. This can be useful to detect how far a vehicle away is from a location.

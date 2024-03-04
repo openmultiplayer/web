@@ -4,8 +4,6 @@ description: Oyuncuya bir 3D Text Label bağlayın.
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Açıklama
 
 Oyuncuya 3D Text Label bağlama fonksiyonu.

@@ -4,8 +4,6 @@ description: Sets the color of a textdraw's box (PlayerTextDrawUseBox).
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
 Sets the color of a textdraw's box (PlayerTextDrawUseBox).

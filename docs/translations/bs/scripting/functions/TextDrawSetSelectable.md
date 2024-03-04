@@ -4,12 +4,6 @@ description: Postavlja da li se textdraw može selektovati (kliknuti) ili ne.
 tags: ["textdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja da li se textdraw može selektovati (kliknuti) ili ne.

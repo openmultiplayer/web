@@ -4,8 +4,6 @@ description: You can use this function to attach objects to other objects.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 You can use this function to attach objects to other objects. The objects will follow the main object.

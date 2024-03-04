@@ -4,8 +4,6 @@ description: Set the NPC's facing angle.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Set the NPC's facing angle.

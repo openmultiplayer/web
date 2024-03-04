@@ -4,8 +4,6 @@ description: 更新玩家的三维文本标签的文本和颜色。
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 更新玩家的三维文本标签的文本和颜色。

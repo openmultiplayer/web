@@ -4,8 +4,6 @@ description: Essa callback é executada quando um NPC é desconectado do servido
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descrição
 
 Essa callback é executada quando um NPC é desconectado do servidor.

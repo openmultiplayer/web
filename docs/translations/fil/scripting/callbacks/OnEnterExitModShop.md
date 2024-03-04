@@ -4,8 +4,6 @@ description: This callback is called when a player enters or exits a mod shop.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Deskripsyon
 
 Ang callback na ito ay na cacall kapag ang player ay pumasok o umalis mula sa mod shop.

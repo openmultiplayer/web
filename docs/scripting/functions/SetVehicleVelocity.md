@@ -4,8 +4,6 @@ description: Sets the X, Y and Z velocity of a vehicle.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Sets the X, Y and Z velocity of a vehicle.

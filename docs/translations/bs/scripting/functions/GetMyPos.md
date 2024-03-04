@@ -4,8 +4,6 @@ description: Dobij poziciju NPC-a
 tags: ["npc"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Deskripcija
 
 Dobij poziciju NPC-a

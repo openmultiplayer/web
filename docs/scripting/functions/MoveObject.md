@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new
             string[50],
-            moveTime = MoveObject(gAirportGate, 0, 0, 10, 2.00);
+            moveTime = MoveObject(gAirportGate, 0.0, 0.0, 10.0, 2.00);
 
         format(string, sizeof(string), "Object will finish moving in %d milliseconds", moveTime);
         SendClientMessage(playerid, 0xFF000000, string);
@@ -54,7 +54,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-This function can be used to make objects rotate smoothly. In order to achieve this however, the object must also be moved. The specified rotation is the rotation the object will have after the movement. Hence the object will not rotate when no movement is applied. For a script example take a look at the ferriswheel.pwn filterscript made by Kye included in the server package (SA-MP 0.3d and above). To fully understand the above note, you can (but not limited to) increase the z position by (+0.001) and then (-0.001) after moving it again, as not changing the X,Y or Z will not rotate the object.
+- This function can be used to make objects rotate smoothly. In order to achieve this however, the object must also be **moved**. The specified rotation is the rotation the object will have after the movement. Hence the object will not rotate when no movement is applied. For a script example take a look at the ferriswheel.pwn filterscript made by Kye included in the server package (SA-MP 0.3d and above).
+
+- To fully understand the above note, you can (but not limited to) increase the z position by (+0.001) and then (-0.001) after moving it again, as not changing the X,Y or Z will not rotate the object.
 
 :::
 

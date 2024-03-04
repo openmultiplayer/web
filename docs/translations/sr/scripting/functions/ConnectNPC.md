@@ -4,12 +4,6 @@ description: Poveze NPC-a na server.
 tags: ["npc"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
-
-:::
-
 ## Opis
 
 Poveze NPC-a na server.

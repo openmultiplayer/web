@@ -4,8 +4,6 @@ description: Get the ID of the vehicle that the player is surfing (stuck to the 
 tags: ["player", "vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Get the ID of the vehicle that the player is surfing (stuck to the roof of).

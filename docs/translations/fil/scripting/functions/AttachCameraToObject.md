@@ -4,8 +4,6 @@ description: Maaari mong gamitin ang function na ito upang ikabit ang player cam
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Maaari mong gamitin ang function na ito upang ikabit ang player camera sa mga bagay.

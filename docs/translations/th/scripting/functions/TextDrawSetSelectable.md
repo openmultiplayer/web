@@ -4,8 +4,6 @@ description: Sets whether a textdraw can be selected (clicked on) or not.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## คำอธิบาย
 
 Sets whether a textdraw can be selected (clicked on) or not

@@ -45,14 +45,6 @@ public OnPlayerDisconnect(playerid, reason)
 }
 ```
 
-## Zabilješke
-
-:::warning
-
-Parametar 'DrawDistance' dodan je u 0.3b. Mora se izostaviti u skriptama za starije verzije SA: MP.
-
-:::
-
 ## Srodne Funkcije
 
 - [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.

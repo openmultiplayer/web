@@ -4,12 +4,6 @@ description: 为玩家启用/禁用在地图上点击右键传送的功能。
 tags: ["player"]
 ---
 
-:::warning
-
-从 0.3d 版本开始，这个函数已被废弃。见[OnPlayerClickMap](../callbacks/OnPlayerClickMap)。
-
-:::
-
 ## 描述
 
 为玩家启用/禁用在地图上点击右键传送的功能。

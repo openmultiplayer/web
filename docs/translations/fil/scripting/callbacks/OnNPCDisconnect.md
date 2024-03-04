@@ -4,8 +4,6 @@ description: Ang callback na ito ay tinatawag kapag ang NPC ay nadiskonekta sa s
 tags: ["npc"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Ang callback na ito ay tinatawag kapag ang NPC ay nadiskonekta sa server.

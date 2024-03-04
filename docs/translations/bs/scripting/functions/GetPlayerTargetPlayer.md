@@ -4,12 +4,6 @@ description: Provjeri na koga igrač cilja.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Provjeri na koga igrač cilja.

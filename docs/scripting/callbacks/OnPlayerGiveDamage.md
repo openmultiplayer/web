@@ -4,8 +4,6 @@ description: This callback is called when a player gives damage to another playe
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Description
 
 This callback is called when a player gives damage to another player.

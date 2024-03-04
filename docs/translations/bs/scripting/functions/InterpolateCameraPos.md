@@ -4,12 +4,6 @@ description: Pomjerite kameru igrača od jedne pozicije do druge, unutar postavl
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Pomjerite kameru igrača od jedne pozicije do druge, unutar postavljenog vremena. Korisno za scenarije cut scnea

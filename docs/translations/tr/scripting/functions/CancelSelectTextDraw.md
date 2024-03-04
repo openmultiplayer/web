@@ -4,8 +4,6 @@ description: Fare seçim modunu iptal edin.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Açıklama
 
 Fare seçim modunu iptal edin. Fareniz ekrandan gider.

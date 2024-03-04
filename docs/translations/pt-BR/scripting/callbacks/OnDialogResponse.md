@@ -4,8 +4,6 @@ description: Esta callback é chamada quando um jogador responde a um dialog mos
 tags: []
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3a' />
-
 ## Descrição
 
 Esta callback é chamada quando um jogador responde a um dialog mostrado usando ShowPlayerDialog ao clicar em um botão, pressionar ENTER/ESC ou dar clique duplo em um item da lista. (se estiver usando o formato lista).

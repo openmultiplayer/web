@@ -59,7 +59,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Nakon verzije 0.3x, svaka akcija odmah pre Ban(), kao sto je slanje poruka sa SendClientMessage, nece doci do igraca. Mora se postaviti timer da bi se napravio vremenski razmak ban-a.
+Svaka akcija odmah pre Ban(), kao sto je slanje poruka sa SendClientMessage, nece doci do igraca. Mora se postaviti timer da bi se napravio vremenski razmak ban-a.
 
 :::
 

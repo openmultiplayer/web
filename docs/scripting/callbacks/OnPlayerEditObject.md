@@ -4,8 +4,6 @@ description: This callback is called when a player finishes editing an object (B
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Description
 
 This callback is called when a player finishes editing an object ([BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)).

@@ -4,8 +4,6 @@ description: 当玩家通过单击按钮、按Enter/Esc键或双击列表项(如
 tags: []
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 说明
 
 当玩家通过单击按钮、按 Enter/Esc 键或双击列表项(如果使用列表样式对话框)来响应使用 ShowPlayerDialog 显示的对话框时，将调用此回调。

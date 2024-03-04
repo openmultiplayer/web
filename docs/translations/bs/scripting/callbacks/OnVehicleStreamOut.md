@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada se vozilo prestane pojavljivati u igra
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada se vozilo prestane pojavljivati u igračevom klijentu (previše je daleko i ne može da ga vidi).

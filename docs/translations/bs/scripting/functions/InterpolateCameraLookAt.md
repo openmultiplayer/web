@@ -4,12 +4,6 @@ description: Interpolirajte/pomjerajte tačku "pogleda u" kamere kamere između 
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Interpolirajte/pomjerajte tačku "pogleda u" kamere kamere između dve kordinatame zadanom brzinom.

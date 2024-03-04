@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador responde a un cuadro de d
 tags: []
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog ya sea clickeando un botón, presionando ENTER/ESC o haciendo doble click en un elemento de lista (si el diálogo utiliza el estilo DIALOG_STYLE_LIST).

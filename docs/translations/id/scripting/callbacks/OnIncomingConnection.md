@@ -4,12 +4,6 @@ description: Callback ini akan terpanggil ketika sebuah IP address mencoba untuk
 tags: []
 ---
 
-:::warning
-
-Callback ini telah ditambahkan dalam SA-MP 0.3z dan tidak akan bekerja pada versi sebelumnya!
-
-:::
-
 ## Deskripsi
 
 Callback ini akan terpanggil ketika sebuah IP address mencoba untuk koneksi kedalam server. Untuk memblokir koneksi yang ingin masuk, gunakan BlockIpAddress.

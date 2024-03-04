@@ -4,8 +4,6 @@ description: 当一个玩家对另一个玩家造成伤害时，这个回调会�
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3d' />
-
 ## 描述
 
 当一个玩家对另一个玩家造成伤害时，这个回调会被调用。
@@ -16,7 +14,7 @@ tags: ["player"]
 | damagedid | 受到伤害的玩家的 ID。                                                                                    |
 | Float:amount    | 生命值/装甲伤害的损失(总和).                                                                             |
 | WEAPON:weaponid  | 造成伤害的武器/原因的 ID                                                                                 |
-| bodypart  | 被击中的[身体部位](../resources/bodyparts)(注意:该参数是在 0.3z 中添加的。如果使用旧版本，请不要使用它!) |
+| bodypart  | 被击中的[身体部位](../resources/bodyparts) |
 
 ## 返回值
 

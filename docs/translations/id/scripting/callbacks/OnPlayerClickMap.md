@@ -4,12 +4,6 @@ description: OnPlayerClickMap akan terpanggil ketika pemain menaruh target/waypo
 tags: ["player"]
 ---
 
-:::warning
-
-Callback ini telah ditambahkan dalam SA-MP 0.3d dan tidak akan bekerja pada versi sebelumnya!
-
-:::
-
 ## Deskripsi
 
 OnPlayerClickMap akan terpanggil ketika pemain menaruh target/waypoint saat jeda map menu (dengan cara klik kanan).

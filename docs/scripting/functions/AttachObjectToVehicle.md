@@ -4,8 +4,6 @@ description: Attach an object to a vehicle.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Attach an object to a vehicle.

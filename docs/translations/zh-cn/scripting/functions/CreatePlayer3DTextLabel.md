@@ -4,8 +4,6 @@ description: 只为某个特定的玩家创建一个三维文本标签。
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 只为某个特定的玩家创建一个三维文本标签。

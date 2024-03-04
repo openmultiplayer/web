@@ -4,12 +4,6 @@ description: Callback ini akan terpanggil ketika pemain mengklik sebuah textraw 
 tags: ["player", "textdraw"]
 ---
 
-:::warning
-
-Fungsi ini telah ditambahkan dalam SA-MP 0.3e dan tidak bekerja pada versi dibawahnya!
-
-:::
-
 ## Deskripsi
 
 Callback ini akan terpanggil ketika pemain mengklik sebuah textraw atau membatalkan 'select' mode dengan tombol ESC.

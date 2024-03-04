@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando el NPC ve un ClientMessage.
 tags: [NPC, ClientMessage, SendClientMessageToAll, ]
 ---
 
-<VersionWarnES name='NPC callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Este callback se llama cuando el NPC ve un ClientMessage. Esto va a ser cada vez que la función SendClientMessageToAll sea usada o también cuando la función SendClientMessage sea enviada hacia un NPC. Este callback no va a ser llamado cuando un jugador envíe un mensaje. Para una version de esto con textos de jugadores, vea NPC:OnPlayerText.

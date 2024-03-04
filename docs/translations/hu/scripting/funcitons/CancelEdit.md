@@ -4,8 +4,6 @@ description: Visszavonja a szerkesztési módot a játékos számára.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Leírás
 
 Visszavonja a szerkesztési módot a játékos számára.

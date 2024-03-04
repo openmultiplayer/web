@@ -4,12 +4,6 @@ description: Postavlja ugaonu brzinu X, Y i Z vozila.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3b i ne radi u nižim verzijama!
-
-:::
-
 :::info
 
 Ova funkcija je u _svjetskom_ prostoru a ne u _lokalnom_ prostoru. Ako želite izvršiti prilagodbe ugaone brzine lokalnog prostora, morate primijeniti matricu rotacije na temelju [quat rotacije vozila](GetVehicleRotationQuat).

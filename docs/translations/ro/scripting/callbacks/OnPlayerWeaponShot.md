@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător trage o lovitur
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător trage o lovitură dintr-o armă. Sunt acceptate doar armele cu gloanțe. Este acceptată doar trecerea pasagerilor (nu șoferul și nu loviturile de vrăbii de mare/vânători).

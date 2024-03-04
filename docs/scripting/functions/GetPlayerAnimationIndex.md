@@ -4,8 +4,6 @@ description: Returns the index of any running applied animations.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
-
 ## Description
 
 Returns the index of any running applied animations.

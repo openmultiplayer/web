@@ -4,8 +4,6 @@ description: Shows the player a synchronous (only one at a time) dialog box.
 tags: ["player", "dialog"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Shows the player a synchronous (only one at a time) dialog box.

@@ -4,8 +4,6 @@ description: Kanselahin ang pagpili ng textdraw gamit ang mouse.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Kanselahin ang pagpili ng textdraw gamit ang mouse.

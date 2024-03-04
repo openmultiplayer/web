@@ -4,12 +4,6 @@ description: Sets the various visual damage statuses of a vehicle, such as poppe
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Sets the various visual damage statuses of a vehicle, such as popped tires, broken lights and damaged panels.

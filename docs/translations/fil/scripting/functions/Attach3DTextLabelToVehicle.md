@@ -4,8 +4,6 @@ description: Naglalagay ng 3D Text Label sa isang partikular na sasakyan.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Naglalagay ng 3D Text Label sa isang partikular na sasakyan.

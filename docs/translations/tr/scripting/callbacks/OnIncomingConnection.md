@@ -4,12 +4,6 @@ description: Bu callback bir IP adresi sunucuya erişim sağlamaya çalıştığ
 tags: []
 ---
 
-:::warning
-
-Bu callback SA-MP 0.3z R2-2 sürümünde eklendi ve önceki sürümlerde çalıştırılamaz.
-
-:::
-
 ## Açıklama
 
 Bu callback bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir. BlockIpAddress kullanarak gelen bağlantıları engelleyebilirsiniz.

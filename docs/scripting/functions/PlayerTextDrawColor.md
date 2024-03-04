@@ -4,8 +4,6 @@ description: Sets the text color of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
 Sets the text color of a player-textdraw

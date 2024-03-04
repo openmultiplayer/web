@@ -4,8 +4,6 @@ description: Callback ini terpanggil ketika player sudah selesai mengedit attach
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Deskripsi
 
 Callback ini terpanggil ketika player sudah selesai mengedit attached object dengan edit mode.

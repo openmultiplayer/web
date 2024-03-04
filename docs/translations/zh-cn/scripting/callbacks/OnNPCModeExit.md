@@ -4,8 +4,6 @@ description: 当npc脚本卸载时调用此回调。
 tags: []
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 当 npc 脚本卸载时调用此回调。

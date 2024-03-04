@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Od SA-MP 0.3x, sve radnje poduzete izravno prije BanEx() (poput slanja poruke pomoću SendClientMessage) neće doći do igrača. Za razmak/odgodu zabrane mora se koristiti tajmer.
+Sve radnje poduzete izravno prije BanEx() (poput slanja poruke pomoću SendClientMessage) neće doći do igrača. Za razmak/odgodu zabrane mora se koristiti tajmer.
 
 :::
 

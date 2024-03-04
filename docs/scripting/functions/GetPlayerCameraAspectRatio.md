@@ -4,8 +4,6 @@ description: Retrieves the aspect ratio of a player's camera.
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Retrieves the aspect ratio of a player's camera.

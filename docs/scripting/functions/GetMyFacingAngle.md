@@ -4,8 +4,6 @@ description: Get the current facing angle of the NPC.
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Get the current facing angle of the NPC.

@@ -4,12 +4,6 @@ description: Ta povratni klic se pokliče, ko igralec vstopi v mod trgovino ali 
 tags: []
 ---
 
-:::warning
-
-Ta funkcijo je bila dodana SA-MP 0.3a in v spodnjih različicah ne deluje!
-
-:::
-
 ## Opis
 
 Ta povratni klic se pokliče, ko igralec vstopi v mod trgovino ali jo zapusti.

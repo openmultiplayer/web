@@ -4,8 +4,6 @@ description: This callback is called when a player clicks on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Description
 
 This callback is called when a player clicks on a player-textdraw. It is not called when player cancels the select mode (ESC) - however, OnPlayerClickTextDraw is.

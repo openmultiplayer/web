@@ -4,8 +4,6 @@ description: 3D Metin Etiketi oluşturma.
 tags: ["3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Açıklama
 
 3D Metin Etiketi oluşturma.

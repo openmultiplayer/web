@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador efectúa un disparo de un
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3z' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador efectúa un disparo de un arma. Solo soporta armas que usen balas. Sólo soporta drive-by por parte del pasajero (no drive-by del conductor, tampoco disparos de seasparrow / hunter).

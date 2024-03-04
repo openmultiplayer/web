@@ -4,12 +4,6 @@ description: Get the velocity of a vehicle on the X, Y and Z axes.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Get the velocity of a vehicle on the X, Y and Z axes.

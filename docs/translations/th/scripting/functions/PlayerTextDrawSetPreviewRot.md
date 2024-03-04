@@ -4,12 +4,6 @@ description: Sets the rotation and zoom of a 3D model preview player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3x and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Sets the rotation and zoom of a 3D model preview player-textdraw.

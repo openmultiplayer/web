@@ -4,12 +4,6 @@ description: Attaches a 3D Text Label to a specific vehicle.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Attaches a 3D Text Label to a specific vehicle.

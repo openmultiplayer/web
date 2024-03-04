@@ -4,12 +4,6 @@ description: Prikazuje igraču za sinkroni (samo jedan po jedan) dijaloški box.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikazuje igraču za sinkroni (samo jedan po jedan) dijaloški box.

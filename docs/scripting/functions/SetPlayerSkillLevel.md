@@ -4,8 +4,6 @@ description: Set the skill level of a certain weapon type for a player.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Set the skill level of a certain weapon type for a player.

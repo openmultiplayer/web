@@ -4,8 +4,6 @@ description: Cette callback est appelée lorsqu'un véhicule est chargé (devien
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Paramètres
 
 Cette callback est appelée lorsqu'un véhicule est chargé (devient visible) pour un joueur.

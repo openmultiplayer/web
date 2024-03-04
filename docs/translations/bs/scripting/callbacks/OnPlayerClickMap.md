@@ -4,12 +4,6 @@ description: OnPlayerClickMap je pozvan kada igrač postavi metu(target/waypoint
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 OnPlayerClickMap je pozvan kada igrač postavi metu(target/waypoint) na pause menu mapi (desnim klikom).

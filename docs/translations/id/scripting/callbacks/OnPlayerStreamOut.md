@@ -4,13 +4,6 @@ description: Callback ini akan terpanggil ketika pemain lain keluar dari jangkau
 tags: ["player"]
 ---
 
-:::warning
-
-Fungsi ini telah ditambahkan dalam SA-MP 0.3a dan tidak bekerja pada versi dibawahnya!
-
-:::
-
-
 ## Deskripsi
 
 Callback ini akan terpanggil ketika pemain lain keluar dari jangkauan stream dari klien pemain.

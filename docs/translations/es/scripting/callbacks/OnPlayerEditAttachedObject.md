@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador sale del modo edición de
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3e' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador sale del modo edición de objetos adjuntos.

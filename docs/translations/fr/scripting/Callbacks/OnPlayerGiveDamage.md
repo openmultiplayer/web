@@ -4,8 +4,6 @@ description: Cette callback est appelée quand un joueur inflige des dégâts à
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Paramètres
 
 Cette callback est appelée quand un joueur inflige des dégâts à un autre joueur.
@@ -16,7 +14,7 @@ Cette callback est appelée quand un joueur inflige des dégâts à un autre jou
 | `int` damagedid       | ID du joueur qui reçoit le dégât                                         |
 | `float` Float:amount  | Montant de la perte en armure/vie (combinés)                             |
 | `int` WEAPON:weaponid | Cause du dommage                                                         |
-| `int` bodypart        | Partie du corps qui a été touchée (NOTE: Disponible à partir de la 0.3z) |
+| `int` bodypart        | Partie du corps qui a été touchée |
 
 ## Valeur de retour
 

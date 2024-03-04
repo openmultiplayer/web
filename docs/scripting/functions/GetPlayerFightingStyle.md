@@ -4,8 +4,6 @@ description: Get the fighting style the player currently using.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Get the fighting style the player currently using.

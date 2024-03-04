@@ -4,12 +4,6 @@ description: This callback is called when a player clicks on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Callback นี้ถูกเพิ่มใน SA-MP 0.3e และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
-
-:::
-
 ## คำอธิบาย
 
 This callback is called when a player clicks on a player-textdraw. It is not called when player cancels the select mode (ESC) - however, OnPlayerClickTextDraw is.

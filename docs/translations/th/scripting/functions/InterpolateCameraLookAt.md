@@ -4,12 +4,6 @@ description: Interpolate a player's camera's 'look at' point between two coordin
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Interpolate a player's camera's 'look at' point between two coordinates with a set speed. Can be be used with InterpolateCameraPos.

@@ -4,12 +4,6 @@ description: Checks if a vehicle is streamed in for a player.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Checks if a vehicle is streamed in for a player. Only nearby vehicles are streamed in (visible) for a player.

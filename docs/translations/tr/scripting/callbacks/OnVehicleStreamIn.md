@@ -4,8 +4,6 @@ description: Called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Açıklama
 
 Bir araç, oyuncunun işlem alanına girdiğinde çağırılıyor.

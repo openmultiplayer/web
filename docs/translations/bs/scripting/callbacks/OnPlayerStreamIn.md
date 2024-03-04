@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada se igrač učita/pojavi u klijent neko
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada se igrač učita/pojavi u klijent nekog drugog igrača.

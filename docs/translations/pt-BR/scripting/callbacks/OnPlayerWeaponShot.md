@@ -4,8 +4,6 @@ description: Essa callback é executada todas as vezes que o player realiza um d
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z' />
-
 ## Descrição
 
 Essa callback é executada todas as vezes que o player realiza um disparo com uma arma. Somente armas com balas são suportadas. Somente o drive-by do passageiro é registrado (drive-by feitos pelo motorista, disparos de helicópteros como o sea sparrow / hunter também não são suportados).

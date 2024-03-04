@@ -18,7 +18,7 @@ Creates an object which will be visible to only one player.
 | Float:rX           | The X rotation of the object.                                                                                                                                                                                                                                                                                     |
 | Float:rY           | The Y rotation of the object.                                                                                                                                                                                                                                                                                     |
 | Float:rZ           | The Z rotation of the object.                                                                                                                                                                                                                                                                                     |
-| Float:DrawDistance | The distance from which objects will appear to players. 0.0 will cause an object to render at its default distance. Leaving this parameter out will cause objects to be rendered at their default distance. The maximum usable distance is 300 in versions prior to 0.3x, in which drawdistance can be unlimited. |
+| Float:DrawDistance | The distance from which objects will appear to players. 0.0 will cause an object to render at its default distance. Leaving this parameter out will cause objects to be rendered at their default distance. |
 
 ## ส่งคืน
 
@@ -44,14 +44,6 @@ public OnPlayerDisconnect(playerid, reason)
     return 1;
 }
 ```
-
-## บันทึก
-
-:::warning
-
-The 'DrawDistance' parameter was added in 0.3b. It must be left out in scripts for older versions of SA:MP.
-
-:::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 

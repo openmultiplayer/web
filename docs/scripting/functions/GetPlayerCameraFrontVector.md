@@ -4,8 +4,6 @@ description: This function will return the current direction of player's aiming 
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see GetPlayerCameraPos.

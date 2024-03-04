@@ -4,8 +4,6 @@ description: Get position of the NPC
 tags: ["npc"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Get the position of the NPC. 

@@ -4,8 +4,6 @@ description: Beállítja a jármű X, Y és Z szögsebességét.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
-
 :::info
 
 Ez a függvény a _world_ térben van, nem a _local_ térben. Ha a helyi tér szögsebességét szeretné módosítani, akkor a [jármű rotációs quat](GetVehicleRotationQuat) alapján elforgatási mátrixot kell alkalmaznia.

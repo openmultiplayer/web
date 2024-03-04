@@ -4,8 +4,6 @@ description: Returns the current GTA camera mode for the requested player.
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3c R3' />
-
 ## Description
 
 Returns the current GTA [camera mode](../resources/cameramodes) for the requested player. The camera modes are useful in determining whether a player is aiming, doing a passenger driveby etc.

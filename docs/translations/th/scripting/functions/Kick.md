@@ -20,7 +20,7 @@ This function always returns 1, even if the function failed to execute (player s
 
 :::warning
 
-As of SA-MP 0.3x, any action taken directly before Kick() (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the kick.
+Any action taken directly before Kick() (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the kick.
 
 :::
 

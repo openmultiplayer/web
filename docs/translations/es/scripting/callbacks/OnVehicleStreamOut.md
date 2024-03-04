@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un vehículo es dejado de cargar (de
 tags: ["vehicle"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Este callback se llama cuando un vehículo es dejado de cargar (deja de ser visible) por el cliente de un jugador.

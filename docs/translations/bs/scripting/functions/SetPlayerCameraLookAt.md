@@ -14,7 +14,7 @@ Postavi smjer u kojem će gledati kamera igrača. Generalno namijenjeno korište
 | Float:x  | X kordinata na koju će igračeva kamera gledati.                                                                                                                                                                      |
 | Float:y  | Y kordinata na koju će igračeva kamera gledati.                                                                                                                                                                      |
 | Float:z  | Z kordinata na koju će igračeva kamera gledati.                                                                                                                                                                      |
-| cut      | [Stil](../resources/cameracutstyles) promjene. Može se koristiti za interpolaciju (lagana promjena) Od stare do nove pozicije koristeći CAMERA_MOVE. ZABILJEŠKA: Dodano u 0.3e. Ostavite prazno u ranijim verzijama. |
+| cut      | [Stil](../resources/cameracutstyles) promjene. Može se koristiti za interpolaciju (lagana promjena) Od stare do nove pozicije koristeći CAMERA_MOVE. |
 
 ## Returns
 

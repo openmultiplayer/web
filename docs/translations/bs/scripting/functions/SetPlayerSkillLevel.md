@@ -4,12 +4,6 @@ description: Postavite nivo vještine određene vrste oružja za igrača.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavite nivo vještine određene vrste oružja za igrača.

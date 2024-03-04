@@ -4,8 +4,6 @@ description: Cette callback est appelée lorsqu'un fichier enregistré en cours 
 tags: []
 ---
 
-<VersionWarn name='NPC callback' version='SA-MP 0.3a' />
-
 ## Paramètres
 
 Cette callback est appelée lorsqu'un fichier enregistré en cours de reproduction avec NPC:StartRecordingPlayback a atteint sa fin.

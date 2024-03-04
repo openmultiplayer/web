@@ -4,8 +4,6 @@ description: Cette fonction est appelée lorsqu'un joueur tire avec une arme à 
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z' />
-
 ## Paramètres
 
 Cette fonction est appelée lorsqu'un joueur tire avec une arme à feu. Si un conducteur tire depuis son véhicule, la callback ne sera pas appelée. En revanche, si un passager tire depuis son véhicule, la callback sera bel et bien appelée.

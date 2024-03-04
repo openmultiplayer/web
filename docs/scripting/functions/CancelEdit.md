@@ -4,8 +4,6 @@ description: Cancel object edition mode for a player.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Cancel object edition mode for a player

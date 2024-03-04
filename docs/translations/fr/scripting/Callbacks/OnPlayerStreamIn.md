@@ -4,8 +4,6 @@ description: Cette fonction est appelée quand un joueur est chargé (devient vi
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Paramètres
 
 Cette fonction est appelée quand un joueur est chargé (devient visible) pour un joueur.

@@ -4,8 +4,6 @@ description: You can use this function to attach the player camera to objects.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 You can use this function to attach the player camera to objects.

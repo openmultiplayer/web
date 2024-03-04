@@ -4,12 +4,6 @@ description: Bu callback oyuncu haritada bir yer işaretlediğinde çağrılır.
 tags: ["player"]
 ---
 
-:::warning
-
-Bu callback SA-MP 0.3d sürümünde eklendi ve önceki sürümlerde çalışmaz!
-
-:::
-
 ## Açıklama
 
 Bu callback oyuncu haritada bir yer işaretlediğinde çağrılır.

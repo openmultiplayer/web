@@ -4,12 +4,6 @@ description: Returna/vraća verziju SA-MP klijenta, kako je izvijestio igrač.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Returna/vraća verziju SA-MP klijenta, kako je izvijestio igrač.

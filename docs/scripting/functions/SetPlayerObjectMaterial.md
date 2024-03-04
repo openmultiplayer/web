@@ -4,8 +4,6 @@ description: Replace the texture of a player-object with the texture from anothe
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Replace the texture of a player-object with the texture from another model in the game.

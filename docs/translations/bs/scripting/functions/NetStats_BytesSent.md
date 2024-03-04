@@ -4,12 +4,6 @@ description: Dobija količinu podataka (u bajtovima) koju je server poslao klije
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dobija količinu podataka (u bajtovima) koju je server poslao klijentu za reprodukciju.

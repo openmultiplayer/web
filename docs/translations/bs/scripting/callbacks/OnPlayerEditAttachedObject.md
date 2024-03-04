@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada igrač napusti mod uređivanja prikva�
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada igrač napusti mod uređivanja prikvačenih objekata (attached object edition mode).

@@ -4,12 +4,6 @@ description: Retrieves the start and end (hit) position of the last bullet a pla
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3z and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Retrieves the start and end (hit) position of the last bullet a player fired.

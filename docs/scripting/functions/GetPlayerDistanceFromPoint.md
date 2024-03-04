@@ -4,8 +4,6 @@ description: Calculate the distance between a player and a map coordinate.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3c R3' />
-
 ## Description
 
 Calculate the distance between a player and a map coordinate.

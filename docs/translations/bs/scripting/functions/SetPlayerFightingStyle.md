@@ -4,12 +4,6 @@ description: Postavi igraču specijalan stil borbe.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavi igraču specijalan stil borbe. Za koristiti unutar igre, ciljaj i klikni 'secondary attack' dugme (ENTER po zadanim postavkama).

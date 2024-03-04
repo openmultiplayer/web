@@ -4,8 +4,6 @@ description: Nagsisimulang i-record ang mga galaw ng isang player sa isang file,
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Nagsisimulang i-record ang mga galaw ng isang player sa isang file, na pagkatapos ay maaaring kopyahin ng isang NPC.

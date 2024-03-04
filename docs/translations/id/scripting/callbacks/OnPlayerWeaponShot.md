@@ -4,8 +4,6 @@ description: Callback ini di panggil ketika seorang pemain melepaskan tembakan d
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z' />
-
 ## Deskripsi
 
 Callback ini dipanggil ketika pemain melepaskan tembakan dari senjata. Hanya senjata yang di dukung. Hanya drive-by penumpang yang di dukung (bukan drive-by pengemudi, dan bukan tembakan burung / pemburu).

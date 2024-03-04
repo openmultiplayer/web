@@ -4,8 +4,6 @@ description: 该函数返回一个向量，它指向玩家视角的正上方，�
 tags: ["player", "camera"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 该函数返回一个向量，它指向玩家视角的正上方，换句话说，它指向屏幕的中上方。

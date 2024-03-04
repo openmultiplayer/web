@@ -4,8 +4,6 @@ description: Get a player's IP and port.
 tags: ["network monitoring", "ip address"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Get a player's IP and port.

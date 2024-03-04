@@ -4,12 +4,6 @@ description: Afișează jucătorlui un dialog sincron (doar unul o dată).
 tags: ["player"]
 ---
 
-:::warning
-
-Această funcție a fost adăugată în SA-MP 0.3a și nu va funcționa în versiuni anterioare!
-
-:::
-
 ## Description
 
 Afișează jucătorlui un dialog sincron (doar unul o dată).

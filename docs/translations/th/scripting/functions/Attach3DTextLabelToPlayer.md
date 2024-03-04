@@ -4,12 +4,6 @@ description: Attach a 3D text label to a player.
 tags: ["player", "3dtextlabel"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Attach a 3D text label to a player.

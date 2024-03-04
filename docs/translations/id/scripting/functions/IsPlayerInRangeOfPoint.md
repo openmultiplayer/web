@@ -4,8 +4,6 @@ description: Memeriksa apakah pemain berada dalam jangkauan suatu titik.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Deskripsi
 
 Memeriksa apakah pemain berada dalam jangkauan suatu titik. Fungsi asalnya lebih cepat dari pada implementasi PAWN menggunakan rumus jarak.

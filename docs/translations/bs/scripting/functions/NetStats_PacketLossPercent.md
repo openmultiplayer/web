@@ -4,12 +4,6 @@ description: Dobija procenat gubitka paketa (packet loss) igrača.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dobija procenat gubitka paketa (packet loss) igrača. Gubitak paketa znači da se podaci koje igrač šalje na server gube (ili obrnuto).

@@ -4,12 +4,6 @@ description: This function returns the vector, that points to the upside of the 
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 This function returns the vector, that points to the upside of the camera's view, or, in other words, to the middle top of your screen.

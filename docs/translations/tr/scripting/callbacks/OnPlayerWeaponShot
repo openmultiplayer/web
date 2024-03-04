@@ -4,8 +4,6 @@ description: Bu fonksiyon, oyuncu ateş ettiğinde çağrılır.
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z' />
-
 ## Açıklama
 
 Bu fonksiyon, oyuncu ateş ettiğinde çağrılır. Bu fonksiyon ateşli silahları destekler. Sadece yolcu drive-by'ını destekler.(buna sürücünün drive-by atması, sea sparrow/hunter gibi araçların silahları dahil değildir.).

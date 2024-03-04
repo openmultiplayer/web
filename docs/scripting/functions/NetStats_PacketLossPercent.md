@@ -4,8 +4,6 @@ description: Gets the packet loss percentage of a player.
 tags: ["network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the packet loss percentage of a player. Packet loss means data the player is sending to the server is being lost (or vice-versa).

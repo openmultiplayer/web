@@ -17,7 +17,7 @@ Creates an object at specified coordinates in the game world.
 | Float:rX           | The X rotation of the object.                                                                                                                                              |
 | Float:rY           | The Y rotation of the object.                                                                                                                                              |
 | Float:rZ           | The Z rotation of the object.                                                                                                                                              |
-| Float:DrawDistance | (optional) The distance that San Andreas renders objects at. 0.0 will cause objects to render at their default distances. Usable since 0.3b. Limited to 300 prior to 0.3x. |
+| Float:DrawDistance | (optional) The distance that San Andreas renders objects at. 0.0 will cause objects to render at their default distances. |
 
 ## ตัวอย่าง
 

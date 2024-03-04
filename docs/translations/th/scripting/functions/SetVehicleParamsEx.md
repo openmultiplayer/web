@@ -4,12 +4,6 @@ description: Sets a vehicle's parameters for all players.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3c and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Sets a vehicle's parameters for all players.

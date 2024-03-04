@@ -4,8 +4,6 @@ description: Essa callback é chamada quando um veículo sai da área visível d
 tags: ["vehicle"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3a' />
-
 ## Descrição
 
 Essa callback é chamada quando um veículo sai da área visível de um jogador.

@@ -4,8 +4,6 @@ description: Esta callback é chamada quando um jogador termina o modo de ediç�
 tags: ["player"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3e' />
-
 ## Descrição
 
 Esta callback é chamada quando um jogador termina o modo de edição de objetos anexados.

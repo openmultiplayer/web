@@ -4,8 +4,6 @@ description: 更新一个三维文本标签的文本内容和颜色。
 tags: ["3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 更新一个三维文本标签的文本内容和颜色。

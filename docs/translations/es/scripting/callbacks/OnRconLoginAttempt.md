@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando alguien intenta identificarse como R
 tags: []
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Este callback se llama cuando alguien intenta identificarse como RCON adentro del juego, sin importar si tiene éxito o no.

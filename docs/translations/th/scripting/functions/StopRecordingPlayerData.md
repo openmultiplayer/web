@@ -4,12 +4,6 @@ description: Stops all the recordings that had been started with StartRecordingP
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Stops all the recordings that had been started with StartRecordingPlayerData for a specific player.

@@ -4,8 +4,6 @@ description: Ce rappel est appelé lorsque qu'un fichier enregistré reproduit a
 tags: []
 ---
 
-<VersionWarn name='Rappel NPC' version='SA-MP 0.3a' />
-
 ## Description
 
 Ce rappel est appelé lorsque qu'un fichier enregistré reproduit avec NPC:[StartRecordingPlayback](../functions/StartRecordingPlayback) a atteint sa fin.

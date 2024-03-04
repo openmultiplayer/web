@@ -4,12 +4,6 @@ description: Enter edition mode for an attached object.
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Enter edition mode for an attached object.

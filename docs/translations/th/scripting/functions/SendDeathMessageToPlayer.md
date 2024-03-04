@@ -4,12 +4,6 @@ description: Adds a death to the 'killfeed' on the right-hand side of the screen
 tags: ["player"]
 ---
 
-:::warning
-
-This Function was added in SA-MP 0.3z R2-2 and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Adds a death to the 'killfeed' on the right-hand side of the screen for a single player.

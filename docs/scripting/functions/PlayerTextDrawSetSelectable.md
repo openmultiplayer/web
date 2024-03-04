@@ -4,8 +4,6 @@ description: Toggles whether a player-textdraw can be selected or not.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Toggles whether a player-textdraw can be selected or not.

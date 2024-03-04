@@ -4,12 +4,6 @@ description: Prikaži player-textdraw igraču za kojeg je kreiran.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikaži player-textdraw igraču za kojeg je kreiran.

@@ -4,12 +4,6 @@ description: Šalje navojni HTTP zahtjev.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3b i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Šalje navojni HTTP zahtjev.

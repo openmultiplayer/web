@@ -4,8 +4,6 @@ description: Sets the rotation and zoom of a 3D model preview textdraw.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3x' />
-
 ## Description
 
 Sets the rotation and zoom of a 3D model preview textdraw.

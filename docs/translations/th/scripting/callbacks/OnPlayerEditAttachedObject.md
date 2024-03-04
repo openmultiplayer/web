@@ -4,12 +4,6 @@ description: This callback is called when a player ends attached object edition 
 tags: ["player"]
 ---
 
-:::warning
-
-Callback นี้ถูกเพิ่มใน SA-MP 0.3e และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
-
-:::
-
 ## คำอธิบาย
 
 This callback is called when a player ends attached object edition mode.

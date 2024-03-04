@@ -4,12 +4,6 @@ description: Omogućuje/onemogućuje da li player-textdraw može biti selektovan
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Omogućuje/onemogućuje da li player-textdraw može biti selektovan ili ne.

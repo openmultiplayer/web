@@ -8,12 +8,6 @@ sidebar_label: Skin IDs
 
 This page contains every available skin used by [SetPlayerSkin](../functions/SetPlayerSkin) and [GetPlayerSkin](../functions/GetPlayerSkin) functions.
 
-:::note
-
-These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in SA-MP 0.3d RC5 and will not work in earlier versions!
-
-:::
-
 | Skin ID | Preview                               | Skin Model Name | Skin Name/Type                           | Singleplayer Location                              | Gender |
 | ------- | ------------------------------------- | --------------- | ---------------------------------------- | -------------------------------------------------- | ------ |
 | 0       | ![Skin ID 0](/images/skins/0.png)     | cj              | Carl "CJ" Johnson (Main Character)       | Anywhere                                           | Male   |

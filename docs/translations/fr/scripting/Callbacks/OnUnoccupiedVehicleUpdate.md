@@ -4,8 +4,6 @@ description: Cette callback est appelée quand un le client d'un joueur update/s
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3c R3' />
-
 ## Paramètres
 
 Cette callback est appelée quand un le client d'un joueur update/synchronise la position d'un véhicule qui n'est pas conduit.

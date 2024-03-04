@@ -4,12 +4,6 @@ description: Ovaj callback se poziva kada igrač odgovori na dijalog koji je poz
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcijom bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).

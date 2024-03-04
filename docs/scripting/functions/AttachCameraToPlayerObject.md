@@ -4,8 +4,6 @@ description: Attaches a player's camera to a player-object.
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Attaches a player's camera to a player-object. The player is able to move their camera while it is attached to an object. Can be used with MovePlayerObject and AttachPlayerObjectToVehicle.

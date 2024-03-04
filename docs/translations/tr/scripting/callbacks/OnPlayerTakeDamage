@@ -4,8 +4,6 @@ description: Bu fonksiyon, oyuncu hasar aldığında çağrılır.
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Açıklama
 
 Bu fonksiyon, oyuncu hasar aldığında çağrılır. 
@@ -16,7 +14,7 @@ Bu fonksiyon, oyuncu hasar aldığında çağrılır.
 | issuerid        | Hasarı veren oyuncunun ID'si. Eğer kişi kendi kendine hasar vermişse INVALID_PLAYER_ID olarak geçer.                              |
 | Float:amount    | Oyuncunun aldığı hasar miktarı. (can ve zırh birbirine kombinlidir)                                                               |
 | WEAPON:weaponid | Hasarı veren silahın ID'si.                                                                                                       |
-| bodypart        | Vurulan vücut bölgesi. (NOT: Bu parametre 0.3z'de eklenmiştir. Daha eski bir sürüm kullanıyorsanız, bu parametreyi kullanmauyın!) |
+| bodypart        | Vurulan vücut bölgesi. |
 
 ## Çalışınca Vereceği Sonuçlar
 

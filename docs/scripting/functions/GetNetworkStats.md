@@ -4,8 +4,6 @@ description: Gets the server's network stats and stores them in a string.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3c R4' />
-
 ## Description
 
 Gets the server's network stats and stores them in a string.

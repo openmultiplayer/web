@@ -4,12 +4,6 @@ description: Gets the packet loss percentage of a player.
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3z and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Gets the packet loss percentage of a player. Packet loss means data the player is sending to the server is being lost (or vice-versa).

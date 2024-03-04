@@ -4,8 +4,6 @@ description: Sets which weapon (that a player already has) the player is holding
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Sets which weapon (that a player already has) the player is holding.
@@ -30,7 +28,7 @@ public OnPlayerUpdate(playerid)
     return 1;
 }
 
-// SMG driveby by [03]Garsino (for SA:MP 0.3c)
+// SMG driveby by [03]Garsino
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER || newstate == PLAYER_STATE_PASSENGER)

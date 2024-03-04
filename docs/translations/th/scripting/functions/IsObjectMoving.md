@@ -4,12 +4,6 @@ description: Checks if the given objectid is moving.
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3d and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Checks if the given objectid is moving.

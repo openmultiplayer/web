@@ -4,8 +4,6 @@ description: 这个回调函数在玩家点击玩家-文本绘制时被调用。
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3e' />
-
 ## 描述
 
 这个回调函数在玩家点击玩家-文本绘制时被调用。当玩家取消选择模式(ESC)时它不被调用，不过，OnPlayerClickTextDraw 回调会调用。

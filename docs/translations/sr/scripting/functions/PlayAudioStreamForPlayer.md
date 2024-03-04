@@ -4,8 +4,6 @@ description: Pustanje 'audio stream-a' igracu.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 Pusta audio stream igracu. Audio fajlovi takodje rade (.mp3).

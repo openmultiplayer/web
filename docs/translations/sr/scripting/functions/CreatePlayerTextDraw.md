@@ -4,12 +4,6 @@ description: Kreira textdraw za samo jednog igraca.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
-
-:::
-
 ## Opis
 
 Kreira textdraw za samo jednog igraca. Ovo moze da se koristi kao izbegavanje limita za globalne textdraw-ove.

@@ -4,8 +4,6 @@ description: Przyczepia kamerę gracza do obiektu stworzonego tylko dla niego.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Opis
 
 Przyczepia kamerę gracza do obiektu stworzonego tylko dla niego. Gracz może poruszać swoją kamerą, gdy jest przyczepiona do obiektu. Można z tego korzystać razem z MovePlayerObject i AttachPlayerObjectToVehicle.

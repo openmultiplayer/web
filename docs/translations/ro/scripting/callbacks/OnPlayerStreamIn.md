@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci cﾃ｢nd un jucﾄフor este transmis ﾃ
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descriere
 
 Acest callback este apelat atunci cﾃ｢nd un jucﾄフor este transmis ﾃｮn flux de cﾄフre clientul altui jucﾄフor.

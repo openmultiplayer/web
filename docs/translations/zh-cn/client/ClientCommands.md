@@ -34,10 +34,10 @@ descripion: 所有客户端指令列表.
 | disableheadmove | 请查看 /headmove.                                                                                                                                                                               |
 | timestamp       | 请查看 /timestamp.                                                                                                                                                                              |
 | ime             | 设置聊天输入框是否支持输入法文本编辑和语言切换(以此可显示中文输入法候选字). 1 开启, 0 关闭.                                                         |
-| audiomsgoff     | 此选项在版本 0.3d 中添加. 请查看 /audiomsg.                                                                                                                                                |
-| multicore       | 此选项在版本 0.3d 中添加. 切换SA-MP客户端在运行时是否使用多个CPU核心. 默认是 1 (使用多个CPU核心). 如果你遇到鼠标问题, 请把它设置为 0.  |
-| directmode      | 此选项在版本 0.3d 中添加. 允许那些聊天栏文字显示有问题的玩家使用慢一些的直接显示屏幕的文本渲染模式. 0 关闭, 1 开启.                        |
-| audioproxyoff   | 此选项在版本 0.3d 中添加. 如果该选项设置为 1 并且你的Windows互联网选项中设置了一个代理服务器, 那么在SA-MP中播放音频流时将不会使用那个代理. |
+| audiomsgoff     | 请查看 /audiomsg.                                                                                                                                                |
+| multicore       | 切换SA-MP客户端在运行时是否使用多个CPU核心. 默认是 1 (使用多个CPU核心). 如果你遇到鼠标问题, 请把它设置为 0.  |
+| directmode      | 允许那些聊天栏文字显示有问题的玩家使用慢一些的直接显示屏幕的文本渲染模式. 0 关闭, 1 开启.                        |
+| audioproxyoff   | 如果该选项设置为 1 并且你的Windows互联网选项中设置了一个代理服务器, 那么在SA-MP中播放音频流时将不会使用那个代理. |
 | nonametagstatus | 此选项在版本 0.3x 中添加. 请查看 /nametagstatus.                                                                                                                                           |
 | fontface        | 此选项在版本 0.3.7 中添加. 允许你更换聊天栏、窗口和记分板上面的字体. 比如 fontface="Comic Sans MS". 不是官方支持, 可能会引起问题.          |
 | fontweight      | 此选项在版本 0.3.7 中添加. 该选项可设置您的聊天字体是否为粗体. 0 = 粗体 (默认) 1 = 正常.                                                                |

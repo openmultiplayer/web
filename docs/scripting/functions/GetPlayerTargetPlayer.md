@@ -4,8 +4,6 @@ description: Check who a player is aiming at.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 Check who a player is aiming at.

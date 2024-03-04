@@ -4,12 +4,6 @@ description: This callback is called when a recorded file being reproduced with 
 tags: []
 ---
 
-:::warning
-
-This NPC callback was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 This callback is called when a recorded file being reproduced with NPC:StartRecordingPlayback has reached to its end.

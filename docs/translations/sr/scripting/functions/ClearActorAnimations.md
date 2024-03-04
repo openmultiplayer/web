@@ -4,12 +4,6 @@ description: Prekine sve animacije aktivne na actoru.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
-
-:::
-
 ## Opis
 
 Prekine sve animacije aktivne na actoru.

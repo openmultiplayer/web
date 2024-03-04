@@ -4,8 +4,6 @@ description: Możesz używać tej funkcji, aby przyczepiać obiekty do innych ob
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Opis
 
 Możesz używać tej funkcji, aby przyczepiać obiekty do innych obiektów. Obiekty będą podążać za głównym obiektem.

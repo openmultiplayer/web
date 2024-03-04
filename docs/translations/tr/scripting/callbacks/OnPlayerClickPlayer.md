@@ -4,12 +4,6 @@ description: Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığ
 tags: ["player"]
 ---
 
-:::warning
-
-Bu callback SA-MP 0.3a sürümünde eklendi ve önceki sürümlerde çalıştırılamaz.
-
-:::
-
 ## Açıklama
 
 Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.

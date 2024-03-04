@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador sufre daño.
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3d' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador sufre daño.
@@ -16,7 +14,7 @@ Este callback se llama cuando un jugador sufre daño.
 | issuerid        | El ID del jugador que causó el daño. O INVALID_PLAYER_ID si fue él mismo.                                               |
 | Float:amount    | La cantidad de daño que sufrió el jugador (salud y chaleco combinados).                                                 |
 | WEAPON:weaponid | El ID del arma/origen del daño.                                                                                         |
-| bodypart        | La parte del cuerpo del impacto. (NOTA: Este parámetro se añadió en 0.3z, sacar en caso de usar versiones anteriores!). |
+| bodypart        | La parte del cuerpo del impacto. |
 
 ## Devoluciones
 

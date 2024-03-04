@@ -4,8 +4,6 @@ description: Connect an NPC to the server.
 tags: ["npc"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Connect an NPC to the server.

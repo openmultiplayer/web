@@ -4,8 +4,6 @@ description: Gets the amount of data (in bytes) that the server has received fro
 tags: ["network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the amount of data (in bytes) that the server has received from the player.

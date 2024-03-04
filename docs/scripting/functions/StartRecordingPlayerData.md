@@ -4,8 +4,6 @@ description: Starts recording a player's movements to a file, which can then be 
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Starts recording a player's movements to a file, which can then be reproduced by an NPC.
