@@ -1,7 +1,7 @@
 ---
 title: BlockIpAddress
 description: Blokira IP adresu iz daljnje komunikacije sa serverom na određeno vrijeme (uz dopuštene zamjenske znakove).
-tags: []
+tags: ["ip address"]
 ---
 
 :::warning

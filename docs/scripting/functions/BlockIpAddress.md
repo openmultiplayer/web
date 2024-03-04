@@ -1,7 +1,7 @@
 ---
 title: BlockIpAddress
 description: Blocks an IP address from further communication with the server for a set amount of time (with wildcards allowed).
-tags: []
+tags: ["ip address"]
 ---
 
 <VersionWarn version='SA-MP 0.3z R2-2' />
