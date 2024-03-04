@@ -1,7 +1,7 @@
 ---
 title: GetPlayerIp
 description: Get the specified player's IP address and store it in a string.
-tags: ["player"]
+tags: ["player", "ip address"]
 ---
 
 ## Description
@@ -37,7 +37,16 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-PAWN is case-sensitive. GetPlayerIP will not work. This function does not work when used in OnPlayerDisconnect because the player is already disconnected. It will return an invalid IP (255.255.255.255). Save players' IPs under OnPlayerConnect if they need to be used under OnPlayerDisconnect.
+PAWN is case-sensitive. GetPlayerIP will not work.
+
+:::
+
+:::warning
+
+**SA-MP server**: This function **does not work** when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) because the player is already disconnected. It will return an invalid IP (255.255.255.255). 
+Save players' IPs under [OnPlayerConnect](../callbacks/OnPlayerConnect) if they need to be used under [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
+
+**open.mp server**: This function **work** when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
 
 :::
 
