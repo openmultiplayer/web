@@ -14,7 +14,9 @@ Find out which seat a player is in.
 
 ## Returns
 
-The ID of the seat the player is in. -1 is not in vehicle, 0 is the driver, 1 is the front passenger, and 2 & 3 are the rear passengers.
+The ID of the seat the player is in.
+
+-1 is not in vehicle, 0 is the driver, 1 is the front passenger, and 2 & 3 are the rear passengers.
 
 ## Examples
 
@@ -38,6 +40,14 @@ if (strcmp(cmdtext, "/myseat", true) == 0)
     return 1;
 }
 ```
+
+| ID  | Seat                         |
+| --- | ---------------------------- |
+| 0   | Driver                       |
+| 1   | Front passenger              |
+| 2   | Back-left passenger          |
+| 3   | Back-right passenger         |
+| 4+  | Passenger seats (coach etc.) |
 
 ## Related Functions
 
