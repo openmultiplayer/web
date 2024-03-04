@@ -1,7 +1,7 @@
 ---
 title: UnBlockIpAddress
 description: Unblock an IP address that was previously blocked using BlockIpAddress.
-tags: ["administration"]
+tags: ["administration", "ip address"]
 ---
 
 <VersionWarn version='SA-MP 0.3z R2-2' />
