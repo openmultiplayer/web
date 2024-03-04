@@ -1,7 +1,7 @@
 ---
 title: GetPlayerRawIp
 description: Get the specified player's Raw IP address (v4).
-tags: ["player"]
+tags: ["player", "ip address"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
