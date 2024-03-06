@@ -1,7 +1,7 @@
 ---
 title: random
 description: Get a pseudo-random number.
-tags: []
+tags: ["core"]
 ---
 
 <LowercaseNote />
@@ -23,7 +23,7 @@ A random number ranging from 0 to max-1.
 ```c
 new value = random(5);
 
-// 'value' might be 0, 1, 2, 3 or 4. 5 possible values.
+// 'value' might be 0, 1, 2, 3 or 4. (5 possible values)
 new Float:RandomSpawn[][4] =
 {
     // Positions, (X, Y, Z and Facing Angle)
@@ -38,7 +38,7 @@ public OnPlayerSpawn(playerid)
     new rand = random(sizeof(RandomSpawn));
 
     // SetPlayerPos to the random spawn data
-    SetPlayerPos(playerid, RandomSpawn[rand][0], RandomSpawn[rand][1],RandomSpawn[rand][2]);
+    SetPlayerPos(playerid, RandomSpawn[rand][0], RandomSpawn[rand][1], RandomSpawn[rand][2]);
 
     // SetPlayerFacingAngle to the random facing angle data
     SetPlayerFacingAngle(playerid, RandomSpawn[rand][3]);
@@ -53,5 +53,3 @@ public OnPlayerSpawn(playerid)
 Using a value smaller than 1 gives weird values.
 
 :::
-
-## Related Functions
