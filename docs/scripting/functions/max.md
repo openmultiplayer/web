@@ -1,7 +1,7 @@
 ---
 title: max
-description: .
-tags: []
+description: Return the highest of two numbers.
+tags: ["core"]
 ---
 
 <LowercaseNote />
@@ -10,33 +10,35 @@ tags: []
 
 Function used to compare the values.
 
-| Name | Description         |
-| ---- | ------------------- |
-| a    | Value a to compare. |
-| b    | Value b to compare. |
+| Name   | Description             |
+| ------ | ----------------------- |
+| value1 | Value 1 (a) to compare. |
+| value2 | Value 2 (b) to compare. |
 
 ## Returns
 
-Returns the smallest of a and b. If both are equivalent, a is returned.
+The higher value of `value1` and `value2`
+
+If both are equivalent, `value1` is returned.
 
 ## Examples
 
 ```c
-//Since b is bigger than a so result will be 5.
-
 public OnGameModeInit()
 {
-    new
-        a, b, result;
+    new a, b, result;
+
     a = 5;
     b = 10;
-    result = max(a,b);
-    printf ("max(a,b) =", param, result);
-    return 0;
+    result = max(a, b);
+
+    printf("max(%d, %d) = %d", a, b, result);
+    // Since b is bigger than a so result will be 10.
+    
+    return 1;
 }
 ```
 
 ## Related Functions
 
-- [min](min): Compare and get the minimum value .
-- [max](max): Compare and get the maximum value .
+- [min](min): Compare and get the minimum value.
