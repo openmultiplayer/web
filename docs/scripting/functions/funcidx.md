@@ -1,7 +1,7 @@
 ---
 title: funcidx
 description: This function returns the ID of a public function by its name.
-tags: []
+tags: ["core"]
 ---
 
 <LowercaseNote />
@@ -16,7 +16,9 @@ This function returns the ID of a public function by its name.
 
 ## Returns
 
-The ID of the function (IDs start at 0). -1 if the function doesn't exist.
+The ID of the function (IDs start at **0**).
+
+**-1** if the function doesn't exist.
 
 ## Examples
 
