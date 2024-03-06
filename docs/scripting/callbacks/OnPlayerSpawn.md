@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player spawns.(i.e. after caling [SpawnPlayer](../functions/SpawnPlayer) function)
+This callback is called when a player spawns. (i.e. after caling [SpawnPlayer](../functions/SpawnPlayer) function)
 
 | Name     | Description                        |
 | -------- | ---------------------------------- |
