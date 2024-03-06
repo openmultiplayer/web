@@ -1,16 +1,16 @@
 ---
 title: OnPlayerRequestClass
 description: This callback is called when a player changes class at class selection (and when class selection first appears).
-tags: ["player"]
+tags: ["player", "class"]
 ---
 
 ## Description
 
 This callback is called when a player changes class at class selection (and when class selection first appears).
 
-| Name     | Description                                                            |
-| -------- | ---------------------------------------------------------------------- |
-| playerid | The ID of the player that changed class.                               |
+| Name     | Description                                                                                           |
+| -------- | ----------------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player that changed class.                                                              |
 | classid  | The ID of the current class being viewed (returned by [AddPlayerClass](../functions/AddPlayerClass)). |
 
 ## Returns
