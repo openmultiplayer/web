@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player spawns.(i.e. after caling [SpawnPlayer](../functions/SpawnPlayer) function)
+This callback is called when a player spawns. (i.e. after caling [SpawnPlayer](../functions/SpawnPlayer) function)
 
 | Name     | Description                        |
 | -------- | ---------------------------------- |
@@ -25,10 +25,12 @@ It is always called first in filterscripts.
 ```c
 public OnPlayerSpawn(playerid)
 {
-    new PlayerName[MAX_PLAYER_NAME],
-    string[40];
+    new PlayerName[MAX_PLAYER_NAME];
     GetPlayerName(playerid, PlayerName, sizeof(PlayerName));
+    
+    new string[64];
     format(string, sizeof(string), "%s has spawned successfully.", PlayerName);
+
     SendClientMessageToAll(0xFFFFFFFF, string);
     return 1;
 }
@@ -38,7 +40,11 @@ public OnPlayerSpawn(playerid)
 
 :::tip
 
-The game sometimes deducts \$100 from players after spawn.
+When a player dies in San Andreas they get $100 deducted from them to cover hospital bills automatically. This feature remains in SA:MP, but is removed from open.mp to allow scripts to manage all their own money. Several scripts attempt to fix this already by adding $100 to a player after death, or on spawn. If this is your script simply delete the additional fix, although the code in open.mp does attempt to account for scripts that do this. If your script relied on this feature, simply add the following code to [OnPlayerDeath](OnPlayerDeath):
+
+```c
+GivePlayerMoney(playerid, -100);
+```
 
 :::
 

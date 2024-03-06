@@ -6,23 +6,23 @@ tags: ["player"]
 
 ## Description
 
-This function can be used to change the spawn information of a specific player. It allows you to automatically set someone's spawn weapons, their team, skin and spawn position, normally used in case of minigames or automatic-spawn systems. This function is more crash-safe then using SetPlayerSkin in [OnPlayerSpawn](../callbacks/OnPlayerSpawn) and/or [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass), even though this has been fixed in 0.2.
+This function can be used to change the spawn information of a specific player. It allows you to automatically set someone's spawn weapons, their team, skin and spawn position, normally used in case of minigames or automatic-spawn systems. This function is more crash-safe then using [SetPlayerSkin](SetPlayerSkin) in [OnPlayerSpawn](../callbacks/OnPlayerSpawn) and/or [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass).
 
-| Name         | Description                                                          |
-|--------------|----------------------------------------------------------------------|
-| playerid     | The PlayerID of who you want to set the spawn information.           |
-| team         | The Team-ID of the chosen player.                                    |
-| skin         | The [skin](../resources/skins) which the player will spawn with.     |
-| Float:spawnX | The X-coordinate of the player's spawn position.                     |
-| Float:spawnY | The Y-coordinate of the player's spawn position.                     |
-| Float:spawnZ | The Z-coordinate of the player's spawn position.                     |
-| Float:angle  | The direction in which the player needs to be facing after spawning. |
-| weapon1      | The first spawn-weapon for the player.                               |
-| ammo1        | The amount of ammunition for the primary spawnweapon.                |
-| weapon2      | The second spawn-weapon for the player.                              |
-| ammo2        | The amount of ammunition for the second spawnweapon.                 |
-| weapon3      | The third spawn-weapon for the player.                               |
-| ammo3        | The amount of ammunition for the third spawnweapon.                  |
+| Name           | Description                                                          |
+| -------------- | -------------------------------------------------------------------- |
+| playerid       | The PlayerID of who you want to set the spawn information.           |
+| team           | The Team-ID of the chosen player.                                    |
+| skin           | The [skin](../resources/skins) which the player will spawn with.     |
+| Float:spawnX   | The X-coordinate of the player's spawn position.                     |
+| Float:spawnY   | The Y-coordinate of the player's spawn position.                     |
+| Float:spawnZ   | The Z-coordinate of the player's spawn position.                     |
+| Float:angle    | The direction in which the player needs to be facing after spawning. |
+| WEAPON:weapon1 | The first spawn-weapon for the player.                               |
+| ammo1          | The amount of ammunition for the primary spawnweapon.                |
+| WEAPON:weapon2 | The second spawn-weapon for the player.                              |
+| ammo2          | The amount of ammunition for the second spawnweapon.                 |
+| WEAPON:weapon3 | The third spawn-weapon for the player.                               |
+| ammo3          | The amount of ammunition for the third spawnweapon.                  |
 
 ## Returns
 
@@ -44,7 +44,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::warning
 
-In case you don't need to set a team to the player, make sure that the "team" parameter is set to NO_TEAM (255).
+In case you don't need to set a team to the player, make sure that the "team" parameter is set to `NO_TEAM` (255).
 
 Team ID 0 in open.mp is a valid team while in SA-MP it is not (SA-MP bug).
 
