@@ -41,6 +41,6 @@ Oyuncuya kamera yerleştirmeden önce, objeyi yaratman gerekir.
 
 :::
 
-## İlgili Fonksiyonlar
+## Bağlantılı Fonksiyonlar
 
 - [AttachCameraToPlayerObject](AttachCameraToPlayerObject): Kamerayı bir oyuncunun objesine yerleştirir.
