@@ -10,12 +10,12 @@ tags: ["string"]
 
 Search for a sub string in a string.
 
-| Name                  | Description                                                                                               |
-| --------------------- | --------------------------------------------------------------------------------------------------------- |
-| const string[]        | The string you want to search in (haystack).                                                              |
-| const sub[]           | The string you want to search for (needle).                                                               |
-| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same. |
-| Position (optional)   | The offset to start searching from.                                                                       |
+| Name                         | Description                                                                                               |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------- |
+| const string[]               | The string you want to search in (haystack).                                                              |
+| const sub[]                  | The string you want to search for (needle).                                                               |
+| bool:ignorecase *(optional)* | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same. |
+| Position *(optional)*        | The offset to start searching from.                                                                       |
 
 ## Returns
 
@@ -24,7 +24,7 @@ The number of characters before the sub string (the sub string's start position)
 ## Examples
 
 ```c
-if (strfind("Are you in here?", "you", true) != -1) //returns 4, because the start of 'you' (y) is at index 4 in the string
+if (strfind("Are you in here?", "you", true) != -1) // Returns 4, because the start of 'you' (y) is at index 4 in the string
 {
     SendClientMessageToAll(0xFFFFFFFF, "I found you!");
 }

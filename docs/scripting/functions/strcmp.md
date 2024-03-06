@@ -10,12 +10,12 @@ tags: ["string"]
 
 Compares two strings to see if they are the same.
 
-| Name                       | Description                                                                                                                                 |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| const string1              | The first string to compare.                                                                                                                |
-| const string2              | The second string to compare.                                                                                                               |
-| bool:ignorecase (optional) | When set to **true**, the case doesn't matter - HeLLo is the same as Hello. When **false**, they're not the same.                           |
-| length _(optional)_        | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
+| Name                         | Description                                                                                                                                 |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| const string1[]              | The first string to compare.                                                                                                                |
+| const string2[]              | The second string to compare.                                                                                                               |
+| bool:ignorecase *(optional)* | When set to **true**, the case doesn't matter - HeLLo is the same as Hello. When **false**, they're not the same.                           |
+| length *(optional)*          | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
 
 ## Returns
 
@@ -61,6 +61,7 @@ if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 ## Related Functions
 
 - [strfind](strfind): Search for a string in another string.
+- [strequal](strequal): Compares two strings to see if they are the same.
 - [strdel](strdel): Delete part of a string.
 - [strins](strins): Insert text into a string.
 - [strlen](strlen): Get the length of a string.

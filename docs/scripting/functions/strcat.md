@@ -10,11 +10,11 @@ tags: ["string"]
 
 This function concatenates (joins together) two strings into the destination string.
 
-| Name                  | Description                                          |
-| --------------------- | ---------------------------------------------------- |
-| dest[]                | The string to store the two concatenated strings in. |
-| const source[]        | The source string.                                   |
-| maxlength=sizeof dest | The maximum length of the destination.               |
+| Name                      | Description                                          |
+| ------------------------- | ---------------------------------------------------- |
+| dest[]                    | The string to store the two concatenated strings in. |
+| const source[]            | The source string.                                   |
+| maxlength = sizeof (dest) | The maximum length of the destination.               |
 
 ## Returns
 

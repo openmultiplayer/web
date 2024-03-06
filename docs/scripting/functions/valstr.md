@@ -10,11 +10,11 @@ tags: ["string"]
 
 Convert an integer into a string.
 
-| Name            | Description                                       |
-| --------------- | ------------------------------------------------- |
-| dest            | The destination of the string.                    |
-| value           | The value to convert to a string.                 |
-| pack (optional) | Whether to pack the destination (off by default). |
+| Name              | Description                                       |
+| ----------------- | ------------------------------------------------- |
+| dest              | The destination of the string.                    |
+| value             | The value to convert to a string.                 |
+| pack *(optional)* | Whether to pack the destination (off by default). |
 
 ## Returns
 
@@ -24,8 +24,17 @@ This function does not return any specific values.
 
 ```c
 new string[4];
-new iValue = 250;
-valstr(string,iValue); // string is now "250"
+new value = 250;
+valstr(string, value); // string is now "250"
+```
+
+## Notes
+
+:::warning
+
+Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes) includes this fix.
+
+```c
 // valstr fix by Slice
 stock FIX_valstr(dest[], value, bool:pack = false)
 {
@@ -39,12 +48,6 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 }
 #define valstr FIX_valstr
 ```
-
-## Notes
-
-:::warning
-
-Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). fixes.inc includes this fix.
 
 :::
 
