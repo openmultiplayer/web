@@ -1,4 +1,5 @@
-# Add 'area:translation' label to any changes within 'docs/translations' and 'templates/translations' folders or any subfolders
+# Add 'area:translation' label to any changes within 'docs/translations', 'templates/translations' and 'frontend/content' folders or any subfolders
 area:translation:
 - changed-files:
-  - any-glob-to-any-file: ['docs/translations/**', 'frontend/src/components/templates/translations/**']
+  - any-glob-to-any-file: ['docs/translations/**', 'frontend/src/components/templates/translations/**', 'frontend/content/**']
+  - all-globs-to-all-files: ['!frontend/content/en/*', '!frontend/content/.prettierrc']
