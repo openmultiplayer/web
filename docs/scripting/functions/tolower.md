@@ -31,4 +31,4 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [toupper](toupper)
+- [toupper](toupper): This function changes a single character to uppercase.

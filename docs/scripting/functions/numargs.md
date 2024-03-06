@@ -1,7 +1,7 @@
 ---
 title: numargs
 description: Get the number of arguments passed to a function.
-tags: []
+tags: ["core", "arguments", "args"]
 ---
 
 <LowercaseNote />

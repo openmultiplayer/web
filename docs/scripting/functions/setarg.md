@@ -1,7 +1,7 @@
 ---
 title: setarg
 description: Set an argument that was passed to a function.
-tags: []
+tags: ["core", "arguments", "args"]
 ---
 
 <LowercaseNote />
@@ -13,12 +13,12 @@ Set an argument that was passed to a function.
 | Name  | Description                                                 |
 | ----- | ----------------------------------------------------------- |
 | arg   | The argument sequence number. Use 0 for the first argument. |
-| index | The index (if the argument is an array).                    |
+| index | The index (if the argument is an array) *(optional=0)*      |
 | value | The value to set the argument to.                           |
 
 ## Returns
 
-[edit]
+**1** on success and **0** if the argument or the index are invalid.
 
 ## Related Functions
 
