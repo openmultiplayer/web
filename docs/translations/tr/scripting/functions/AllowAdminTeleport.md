@@ -18,7 +18,7 @@ Bu fonksiyon RCON olan kişilerin nokta seçtiğinde ışınlanıp ışınlanama
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | allow                               | açmak için 1, kapamak için 0                                                                           |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 Bu fonksiyon geliştiriciye dönüt vermez.
 
@@ -40,7 +40,7 @@ Bu fonksiyon şu anki SA:MP sürümünde çalışmamakta!
 
 :::
 
-## İlgili Fonksiyonlar
+## Bağlantılı Fonksiyonlar
 
 - [IsPlayerAdmin](IsPlayerAdmin.md): Oyuncunun interiorunu değiştirin.
 - [AllowPlayerTeleport](AllowPlayerTeleport.md): Oyuncunun interiorunu öğrenin.
