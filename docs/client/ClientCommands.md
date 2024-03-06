@@ -39,6 +39,6 @@ description: List of all client commands.
 | directmode      | This allows players with chat text drawing problems to use the slower direct-to-screen text rendering mode. 0 to disable, 1 to enable.                        |
 | audioproxyoff   | If this option is set to 1, and there is a proxy server set in your Windows Internet Options, the proxy will not be used when playing audio streams in SA-MP. |
 | nonametagstatus | See /nametagstatus.                                                                                                                                           |
-| fontface        | This option was added in 0.3.7. Allows you to change the font of chat, dialogs and the scoreboard. i.e. fontface="Comic Sans MS". Not officially supported, and may cause problems.          |
-| fontweight      | This option was added in 0.3.7. This option toggles whether your chat font is bold or not. 0 = BOLD (default) and 1 = NORMAL.                                                                |
+| fontface        | Allows you to change the font of chat, dialogs and the scoreboard. i.e. fontface="Comic Sans MS". Not officially supported, and may cause problems.          |
+| fontweight      | This option toggles whether your chat font is bold or not. 0 = BOLD (default) and 1 = NORMAL.                                                                |
 | nohudscale      | This option was added in 0.3.7 R3. See /hudscalefix.                                                                                                                                         |
