@@ -1,7 +1,7 @@
 ---
 title: clamp
 description: Force a value to be inside a range.
-tags: []
+tags: ["core"]
 ---
 
 <LowercaseNote />
@@ -10,11 +10,11 @@ tags: []
 
 Force a value to be inside a range.
 
-| Name  | Description                    |
-| ----- | ------------------------------ |
-| value | The value to force in a range. |
-| min   | The low bound of the range.    |
-| max   | The high bound of the range.   |
+| Name  | Description                                        |
+| ----- | -------------------------------------------------- |
+| value | The value to force in a range.                     |
+| min   | The low bound of the range. *(optional=cellmin)*   |
+| max   | The high bound of the range. *(optional=cellmax)*  |
 
 ## Returns
 
