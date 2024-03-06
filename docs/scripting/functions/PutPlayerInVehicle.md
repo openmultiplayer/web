@@ -16,9 +16,9 @@ Puts a player in a vehicle.
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. The player or vehicle don't exist.
+**false** - The function failed to execute. The player or vehicle don't exist.
 
 ## Examples
 
