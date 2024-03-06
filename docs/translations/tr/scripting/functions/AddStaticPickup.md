@@ -46,7 +46,7 @@ Bu işlev, OnPlayerPickUpPickup gibi kullanabileceğiniz bir pickup kimliği get
 
 :::
 
-## Bağlantılı Fonksiyonlar
+## İlgili Fonksiyonlar
 
 - [CreatePickup](CreatePickup.md): Pickup oluşturun.
 - [DestroyPickup](DestroyPickup.md): Pickup yok edin.

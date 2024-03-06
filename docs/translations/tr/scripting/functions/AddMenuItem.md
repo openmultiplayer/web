@@ -40,7 +40,7 @@ Geçersiz bir menü kimliği geçtiğinde çöker. Menü başına yalnızca 12 �
 
 :::
 
-## Bağlantılı Fonksiyonlar
+## İlgili Fonksiyonlar
 
 - [CreateMenu](CreateMenu.md): Menü oluşturmak.
 - [SetMenuColumnHeader](SetMenuColumnHeader.md): Menüdeki sütunlardan birinin başlığını ayarlayın.

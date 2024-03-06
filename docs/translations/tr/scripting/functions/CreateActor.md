@@ -58,7 +58,7 @@ Aktörler 1000 (MAX_ACTORS) ile sınırlıdır. Araçlar ile itilebilirler, ayr�
 
 :::
 
-## Bağlantılı Fonksiyonlar
+## İlgili Fonksiyonlar
 
 - [DestroyActor](DestroyActor): Oluşturduğunuz aktörü silme.
 - [SetActorPos](SetActorPos): Aktörün harita üzerindeki pozisyonunu düzenleme.

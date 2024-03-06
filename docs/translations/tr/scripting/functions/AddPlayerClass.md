@@ -48,7 +48,7 @@ Maksimum class numarası 319 olabileceği için (class numaralı sıfırdan baş
 
 :::
 
-## Bağlantılı Fonksiyonlar
+## İlgili Fonksiyonlar
 
 - [AddPlayerClassEx](AddPlayerClassEx.md): Classı bir takıma varsayılan bağlı olarak ekler.
 - [SetSpawnInfo](SetSpawnInfo.md): Oyuncunun doğacağı bölgeyi belirler.

@@ -13,7 +13,7 @@ Girilen araç ID'sine uygun şekilde modifikasyon yapmanızı sağlar.
 | vehicleid    | modifikasyon yapılacak aracın ID'si.                                                                                          |
 | [componentid](../resources/carcomponentid)  | araca yapılacak modifikasyon ID'si.                                                                                           |
 
-## Çalışınca Vereceği Sonuçlar
+## Dönence
 
 1: Modifikasyon başarıyla araca yüklendi.
 
@@ -52,7 +52,7 @@ Yanlış modifikasyon ID'si kullanmak bölgedeki oyuncuların oyununun çökmesi
 
 :::
 
-## Bağlantılı Fonksiyonlar
+## İlgili Fonksiyonlar
 
 - [RemoveVehicleComponent](RemoveVehicleComponent.md): Araçtan bir modifikasyon silin.
 - [GetVehicleComponentInSlot](GetVehicleComponentInSlot.md): Slottaki araç modifikasyonunu öğrenin.
