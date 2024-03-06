@@ -8,15 +8,16 @@ tags: ["player", "vehicle"]
 
 Removes/ejects a player from their vehicle.
 
-| Name     | Description                                        |
-| -------- | -------------------------------------------------- |
-| playerid | The ID of the player to remove from their vehicle. |
+| Name       | Description                                                   |
+| ---------- | ------------------------------------------------------------- |
+| playerid   | The ID of the player to remove from their vehicle.            |
+| bool:force | Force remove from vehicle instantly. (Default value: `false`) |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the player is not connected.
+**false** - The function failed to execute. This means the player is not connected.
 
 ## Examples
 
@@ -36,7 +37,9 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 
 :::tip
 
-The exiting animation is not synced for other players. This function will not work when used in OnPlayerEnterVehicle, because the player isn't in the vehicle when the callback is called. Use OnPlayerStateChange instead(see the example below). The player isn't removed if he is in a RC Vehicle.
+- The exiting animation is not synced for other players.
+- This function will not work when used in [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle), because the player isn't in the vehicle when the callback is called. Use [OnPlayerStateChange](../callbacks/OnPlayerStateChange) instead (see the example above).
+- The player isn't removed if he is in a RC Vehicle. (Use `.force = true`)
 
 :::
 
