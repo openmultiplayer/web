@@ -1,7 +1,7 @@
 ---
 title: GetTickCount
 description: Returns a value which increases every millisecond.
-tags: []
+tags: ["time"]
 ---
 
 ## Description
