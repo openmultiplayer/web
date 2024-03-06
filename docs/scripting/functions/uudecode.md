@@ -10,11 +10,11 @@ tags: ["string", "encryption"]
 
 Decode an UU-encoded string.
 
-| Name           | Description                                   |
-| -------------- | --------------------------------------------- |
-| dest[]         | The destination for the decoded string array. |
-| const source[] | The UU-encoded source string.                 |
-| maxlength      | The maximum length of dest that can be used.  |
+| Name                      | Description                                   |
+| ------------------------- | --------------------------------------------- |
+| dest[]                    | The destination for the decoded string array. |
+| const source[]            | The UU-encoded source string.                 |
+| maxlength = sizeof (dest) | The maximum length of dest that can be used.  |
 
 ## Returns
 
@@ -27,3 +27,6 @@ uudecode(normalString, encodedString);
 ```
 
 ## Related Functions
+
+- [uuencode](uuencode): Encode a string to an UU-decoded string.
+- [memcpy](memcpy): Copy bytes from one location to another.
