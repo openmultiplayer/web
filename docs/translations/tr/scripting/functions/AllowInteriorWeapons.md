@@ -12,7 +12,7 @@ Bu fonksiyonla interior içlerinde silah kullanıp kullanılamayacağını belir
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | allow                               | izni vermek için 1, kapatmak için 0  (default olarak 1 gelir)                                          |
 
-## Dönence
+## Çalışınca Vereceği Sonuçlar
 
 Bu fonksiyon geliştiriciye dönüt vermez.
 
@@ -35,7 +35,7 @@ Bu fonksiyon şu anki SA:MP sürümünde çalışmamakta!
 
 :::
 
-## İlgili Fonksiyonlar
+## Bağlantılı Fonksiyonlar
 
 - [SetPlayerInterior](SetPlayerInterior.md): Oyuncunun interiorunu değiştirin.
 - [GetPlayerInterior](SetPlayerInterior.md): Oyuncunun interiorunu öğrenin.

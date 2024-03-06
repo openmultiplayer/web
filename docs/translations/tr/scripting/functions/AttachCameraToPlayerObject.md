@@ -42,7 +42,7 @@ Oyuncunun kamerasını objeye bağlamadan önce oyuncu objesi oluşturulmalıdı
 
 :::
 
-## İlgili Fonksiyonlar
+## Bağlantılı Fonksiyonlar
 
 - [AttachCameraToObject](AttachCameraToObject): Oyuncunun kamerasını statik bir nesneye bağlama.
 - [SetPlayerCameraPos](SetPlayerCameraPos): Bir oyuncunun kamera konumunu ayarlama.

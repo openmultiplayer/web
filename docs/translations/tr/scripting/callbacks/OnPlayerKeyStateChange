@@ -33,7 +33,7 @@ Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tet
 
 :::
 
-## İlgili Fonksiyonlar
+## Bağlantılı Fonksiyonlar
 
     #test
 
