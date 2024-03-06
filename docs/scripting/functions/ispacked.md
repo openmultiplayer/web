@@ -10,13 +10,13 @@ tags: ["string"]
 
 Checks if the given string is packed.
 
-| Name   | Description          |
-| ------ | -------------------- |
-| string | The string to check. |
+| Name           | Description          |
+| -------------- | -------------------- |
+| const string[] | The string to check. |
 
 ## Returns
 
-1 if the string is packed, 0 if it's unpacked.
+**1** if the string is packed, **0** if it's unpacked.
 
 ## Examples
 
@@ -31,3 +31,6 @@ if (ispacked(string))
 ```
 
 ## Related Functions
+
+- [strpack](strpack): Pack a string.
+- [strunpack](strunpack): This function can be used to unpack a string.
