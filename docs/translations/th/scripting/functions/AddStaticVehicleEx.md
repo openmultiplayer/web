@@ -18,7 +18,7 @@ Adds a 'static' vehicle (models are pre-loaded for players)to the gamemode. Diff
 | [color1](../../scripting/resources/vehiclecolorid.md) | The primary color ID.                                                                                                                            |
 | [color2](../../scripting/resources/vehiclecolorid.md) | The secondary color ID.                                                                                                                          |
 | respawn_delay                                         | The delay until the car is respawned without a driver, in seconds.                                                                               |
-| addsiren                                              | Added in 0.3.7; will not work in earlier versions. Has a default value 0. Enables the vehicle to have a siren, providing the vehicle has a horn. |
+| addsiren                                              | Has a default value 0. Enables the vehicle to have a siren, providing the vehicle has a horn. |
 
 ## ส่งคืน
 
