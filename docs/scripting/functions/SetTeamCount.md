@@ -10,7 +10,7 @@ This function is used to change the amount of teams used in the gamemode. It has
 
 | Name  | Description                         |
 | ----- | ----------------------------------- |
-| teams | Number of teams the gamemode knows. |
+| count | Number of teams the gamemode knows. |
 
 ## Returns
 
