@@ -8,17 +8,17 @@ tags: ["vehicle"]
 
 Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.
 
-| Name                                     | Description                                                                                                                                      |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [vehicletype](../resources/vehicleid)                              | The model for the vehicle.                                                                                                                       |
-| Float:X                                  | The X coordinate for the vehicle.                                                                                                                |
-| Float:Y                                  | The Y coordinate for the vehicle.                                                                                                                |
-| Float:Z                                  | The Z coordinate for the vehicle.                                                                                                                |
-| Float:rotation                           | The facing angle for the vehicle.                                                                                                                |
-| [color1](../resources/vehiclecolorid) | The primary color ID.                                                                                                                            |
-| [color2](../resources/vehiclecolorid) | The secondary color ID.                                                                                                                          |
-| respawn_delay                            | The delay until the car is respawned without a driver in seconds. Using -1 will prevent the vehicle from respawning.                             |
-| addsiren                                 | Added in 0.3.7; will not work in earlier versions. Has a default value 0. Enables the vehicle to have a siren, providing the vehicle has a horn. |
+| Name                                   | Description                                                                                                          |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| [modelid](../resources/vehicleid)      | The model for the vehicle.                                                                                           |
+| Float:spawnX                           | The X coordinate for the vehicle.                                                                                    |
+| Float:spawnY                           | The Y coordinate for the vehicle.                                                                                    |
+| Float:spawnZ                           | The Z coordinate for the vehicle.                                                                                    |
+| Float:angle                            | The facing angle for the vehicle.                                                                                    |
+| [colour1](../resources/vehiclecolorid) | The primary color ID.                                                                                                |
+| [colour2](../resources/vehiclecolorid) | The secondary color ID.                                                                                              |
+| respawnDelay                           | The delay until the car is respawned without a driver in seconds. Using -1 will prevent the vehicle from respawning. |
+| bool:addSiren                          | Has a default value 'false'. Enables the vehicle to have a siren, providing the vehicle has a horn.                  |
 
 ## Returns
 
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::warning
 
-Trains can only be added with AddStaticVehicle and AddStaticVehicleEx.
+Trains can only be added with [AddStaticVehicle](AddStaticVehicle) and [AddStaticVehicleEx](AddStaticVehicleEx).
 
 :::
 

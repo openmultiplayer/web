@@ -18,7 +18,7 @@ Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at an
 | [color1](../resources/vehiclecolorid) | ID Primarne boje.                                                                                                                                    |
 | [color2](../resources/vehiclecolorid) | ID Sekundarne boje                                                                                                                                   |
 | respawn_delay                         | Razmak do ponovnog respawnovanja automobila bez vozača u sekundi. Korištenjem -1 spriječit će ponovno respawnovanje vozila.                          |
-| addsiren                              | Dodano u 0.3.7; neće raditi u ranijim verzijama. Ima zadanu vrijednost 0. Omogućuje vozilu da ima sirenu, pod uvjetom da vozilo ima sirenu(trubu H). |
+| bool:addsiren                         | Ima zadanu vrijednost 'false'. Omogućuje vozilu da ima sirenu, pod uvjetom da vozilo ima sirenu(trubu H). |
 
 ## Returns
 

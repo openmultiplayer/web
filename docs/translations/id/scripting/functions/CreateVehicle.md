@@ -18,7 +18,7 @@ Membuat kendaraan di dunia. Dapat digunakan sebagai pengganti AddStaticVehicleEx
 | [color1](../resources/vehiclecolorid) |ID warna primer kendaraan                                                                                                                            |
 | [color2](../resources/vehiclecolorid) | ID warna sekunder                                                                                                                          |
 | respawn_delay                            | Penundaan hingga mobil respawn tanpa pengemudi dalam hitungan detik. Menggunakan -1 akan mencegah kendaraan dari respawning.                             |
-| addsiren                                 | Ditambahkan di 0.3.7; Tidak akan berfungsi di versi sebelumnya. Memiliki nilai bawaan 0. Memungkinkan kendaraan memiliki sirine, asalkan kendaraan memiliki klakson. |
+| bool:addsiren                            | Ditambahkan di 0.3.7; Tidak akan berfungsi di versi sebelumnya. Memiliki nilai bawaan 'false'. Memungkinkan kendaraan memiliki sirine, asalkan kendaraan memiliki klakson. |
 
 ## Returns
 
