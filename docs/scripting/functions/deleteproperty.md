@@ -1,20 +1,20 @@
 ---
 title: deleteproperty
 description: Delete an earlier set property (setproperty).
-tags: []
+tags: ["core", "property"]
 ---
 
 <LowercaseNote />
 
 ## Description
 
-Delete an earlier set property (setproperty).
+Delete an earlier set property ([setproperty](setproperty)).
 
-| Name   | Description                                                                    |
-| ------ | ------------------------------------------------------------------------------ |
-| id     | The virtual machine to use. You should keep this as zero.                      |
-| name[] | The property's name, you should keep this blank ("").                          |
-| value  | The property's unique ID. Use the hash-function to calculate it from a string. |
+| Name   | Description                                                                                         |
+| ------ | --------------------------------------------------------------------------------------------------- |
+| id     | The virtual machine to use. You should keep this as zero. *(optional=0)*                            |
+| name[] | The property's name, you should keep this blank ("").                                               |
+| value  | The property's unique ID. Use the hash-function to calculate it from a string. *(optional=cellmin)* |
 
 ## Returns
 
