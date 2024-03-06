@@ -8,19 +8,19 @@ tags: ["player", "class"]
 
 Adds a class to class selection. Classes are used so players may spawn with a skin of their choice.
 
-| Name         | Description                                                      |
-|--------------|------------------------------------------------------------------|
-| skin         | The [skin](../resources/skins) which the player will spawn with. |
-| Float:spawnX | The X coordinate of the spawnpoint of this class.                |
-| Float:spawnY | The Y coordinate of the spawnpoint of this class.                |
-| Float:spawnZ | The Z coordinate of the spawnpoint of this class.                |
-| Float:angle  | The direction in which the player should face after spawning.    |
-| weapon1      | The first spawn-weapon for the player.                           |
-| ammo1        | The amount of ammunition for the primary spawn weapon.           |
-| weapon2      | The second spawn-weapon for the player.                          |
-| ammo2        | The amount of ammunition for the second spawn weapon.            |
-| weapon3      | The third spawn-weapon for the player.                           |
-| ammo3        | The amount of ammunition for the third spawn weapon.             |
+| Name           | Description                                                      |
+| -------------- | ---------------------------------------------------------------- |
+| skin           | The [skin](../resources/skins) which the player will spawn with. |
+| Float:spawnX   | The X coordinate of the spawnpoint of this class.                |
+| Float:spawnY   | The Y coordinate of the spawnpoint of this class.                |
+| Float:spawnZ   | The Z coordinate of the spawnpoint of this class.                |
+| Float:angle    | The direction in which the player should face after spawning.    |
+| WEAPON:weapon1 | The first spawn-weapon for the player.                           |
+| ammo1          | The amount of ammunition for the primary spawn weapon.           |
+| WEAPON:weapon2 | The second spawn-weapon for the player.                          |
+| ammo2          | The amount of ammunition for the second spawn weapon.            |
+| WEAPON:weapon3 | The third spawn-weapon for the player.                           |
+| ammo3          | The amount of ammunition for the third spawn weapon.             |
 
 ## Returns
 
