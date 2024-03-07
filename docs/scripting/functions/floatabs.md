@@ -21,6 +21,9 @@ The absolute value of the float (as a float value).
 ## Examples
 
 ```c
-floatabs(47.0); // This will return 47.0.
-floatabs(-47.0); // This will return the same.
+new Float:value;
+
+value = floatabs(47.0); // This will return 47.0
+
+value = floatabs(-47.0); // This will return the same.
 ```

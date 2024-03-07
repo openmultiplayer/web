@@ -1,8 +1,10 @@
 ---
-title: floatstr
+title: strfloat
 description: Converts a string to a float.
 tags: ["string", "floating-point"]
 ---
+
+<VersionWarn version='omp v1.1.0.2612' />
 
 <LowercaseNote />
 
@@ -23,10 +25,18 @@ The requested float value.
 ```c
 new string[4] = "6.9"; // A STRING holding a FLOAT.
 
-new Float:value = floatstr(string);
+new Float:value = strfloat(string);
 
 SetPlayerPos(playerid, 0.0, 0.0, value);
 ```
+
+## Notes
+
+:::tip
+
+This function is the same as [floatstr](floatstr).
+
+:::
 
 ## Related Functions
 

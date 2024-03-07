@@ -10,10 +10,10 @@ tags: ["math", "floating-point"]
 
 Raises the given value to the power of the exponent.
 
-| Name     | Description                                                               |
-| -------- | ------------------------------------------------------------------------- |
-| value    | The value to raise to a power, as a floating-point number.                |
-| exponent | The exponent is also a floating-point number. It may be zero or negative. |
+| Name           | Description                                                               |
+| -------------- | ------------------------------------------------------------------------- |
+| Float:value    | The value to raise to a power, as a floating-point number.                |
+| Float:exponent | The exponent is also a floating-point number. It may be zero or negative. |
 
 ## Returns
 
@@ -22,7 +22,7 @@ The result of 'value' to the power of 'exponent'.
 ## Examples
 
 ```c
-printf("2 to the power of 8 is %f", floatpower(2.0, 8.0));
+printf("2 to the power of 8 is %.1f", floatpower(2.0, 8.0));
 // Result: 256.0
 ```
 
