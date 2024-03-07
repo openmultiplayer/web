@@ -27,7 +27,7 @@ Copy a file.
 if (fcopy("example.txt", "file.txt"))
 {
     // Success
-    printf("The file \"example.txt\" copied to 'file.txt' successfully.");
+    printf("The file \"example.txt\" copied to \"file.txt\" successfully.");
 }
 else
 {
@@ -38,7 +38,7 @@ else
 
 ## Notes
 
-::tip
+:::warning
 
 If the target file already exists, it is overwritten.
 
