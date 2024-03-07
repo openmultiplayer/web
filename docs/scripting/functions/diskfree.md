@@ -8,7 +8,7 @@ tags: ["file management"]
 
 :::warning
 
-This function has not yet been declared.
+This function has not yet been implemented.
 
 :::
 
@@ -36,7 +36,7 @@ printf("freeSpace = %d KiB", freeSpace);
 
 ## Notes
 
-::tip
+:::tip
 
 The maximum size that can be supported 2048 GiB (2 terabyte).
 
