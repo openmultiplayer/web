@@ -10,10 +10,10 @@ tags: ["math", "floating-point"]
 
 Get the tangent from a given angle. The input angle may be in radians, degrees or grades.
 
-| Name        | Description                                            |
-| ----------- | ------------------------------------------------------ |
-| Float:value | The angle from which to get the tangent.               |
-| anglemode   | The [angle mode](../resources/anglemodes) to use, depending on the value entered. |
+| Name        | Description                                                                                         |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| Float:value | The angle from which to get the tangent.                                                            |
+| anglemode   | The [angle mode](../resources/anglemodes) to use, depending on the value entered. (default: radian) |
 
 ## Returns
 
@@ -24,7 +24,7 @@ The tangent from the value entered.
 ```c
 public OnGameModeInit()
 {
-    printf("The tangent from 30° is %f", floattan(30.0, degrees));
+    printf("The tangent from 30° is %.0f", floattan(30.0, degrees));
     // Output: 1
     return 1;
 }
