@@ -10,11 +10,11 @@ tags: ["file management"]
 
 Write one character to a file.
 
-| Name   | Description                                              |
-| ------ | -------------------------------------------------------- |
-| handle | The File handle to use, earlier opened by fopen().       |
-| value  | The character to write into the file.                    |
-| utf8   | If true, write in UTF8 mode, otherwise in extended ASCII |
+| Name        | Description                                                                   |
+| ----------- | ----------------------------------------------------------------------------- |
+| File:handle | The File handle to use, earlier opened by fopen().                            |
+| value       | The character to write into the file.                                         |
+| bool:utf8   | If `true`, write in UTF8 mode, otherwise in extended ASCII. (default: `true`) |
 
 ## Returns
 
@@ -25,6 +25,7 @@ This function does not return any specific values.
 ```c
 // Open "file.txt" in "write only" mode
 new File:handle = fopen("file.txt", io_write);
+
 if (handle)
 {
     // Success
@@ -46,7 +47,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
