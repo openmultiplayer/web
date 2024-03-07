@@ -10,9 +10,9 @@ tags: ["file management"]
 
 Returns the length of a file.
 
-| Name   | Description                                |
-| ------ | ------------------------------------------ |
-| handle | The file handle returned by fopen or ftemp |
+| Name        | Description                                |
+| ----------- | ------------------------------------------ |
+| File:handle | The file handle returned by fopen or ftemp |
 
 ## Returns
 
@@ -46,7 +46,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
