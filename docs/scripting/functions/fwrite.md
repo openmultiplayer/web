@@ -10,10 +10,10 @@ tags: ["file management"]
 
 Write text into a file.
 
-| Name   | Description                                             |
-| ------ | ------------------------------------------------------- |
-| handle | The handle of the file to write to (returned by fopen). |
-| string | The string of text to write in to the file.             |
+| Name           | Description                                             |
+| -------------- | ------------------------------------------------------- |
+| File:handle    | The handle of the file to write to (returned by fopen). |
+| const string[] | The string of text to write in to the file.             |
 
 ## Returns
 
@@ -41,11 +41,16 @@ else
     // Error
     print("Failed to open file \"file.txt\".");
 }
-// Open "file.txt" in "read and write" mode
-new File:handle = fopen("file.txt"),
+```
 
-    // Initialize "buf"
-    buf[128];
+<br />
+
+```c
+// Open "file.txt" in "read and write" mode
+new File:handle = fopen("file.txt");
+
+// Initialize "buf"
+new buf[128];
 
 // Check, if file is open
 if (handle)
@@ -53,7 +58,10 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf)) print(buf);
+    while(fread(handle, buf))
+    {
+        print(buf);
+    }
 
     // Set the file pointer to the first byte
     fseek(handle, _, seek_begin);
@@ -69,6 +77,11 @@ else
     // Error
     print("The file \"file.txt\" does not exists, or can't be opened.");
 }
+```
+
+<br />
+
+```c
 // Open "file.txt" in "append only" mode
 new File:handle = fopen("file.txt", io_append);
 
@@ -100,7 +113,7 @@ This functions writes to the file in UTF-8, which does not support some localize
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
