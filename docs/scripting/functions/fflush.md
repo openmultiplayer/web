@@ -1,24 +1,26 @@
 ---
-title: fclose
-description: Closes a file.
+title: fflush
+description: Flush a file to disk (ensure all writes are complete).
 tags: ["file management"]
 ---
+
+<VersionWarn version='omp v1.1.0.2612' />
 
 <LowercaseNote />
 
 ## Description
 
-Closes a file. Files should always be closed when the script no longer needs them (after reading/writing).
+Flush a file to disk (ensure all writes are complete). Actually just calls [flength](flength) as that has to force a flush to be accurate.
 
-| Name        | Description                                           |
-| ----------- | ----------------------------------------------------- |
-| File:handle | The file handle to close. Returned by [fopen](fopen). |
+| Name        | Description                                  |
+| ----------- | -------------------------------------------- |
+| File:handle | The handle of the file. (returned by fopen). |
 
 ## Returns
 
-**true** - The function executed successfully.
+**true** - The function was executed successfully.
 
-**false** - The function failed to execute. The file could not be closed. It may already be closed.
+**false** - The function failed to execute. (Invalid file handle)
 
 ## Examples
 
@@ -26,13 +28,15 @@ Closes a file. Files should always be closed when the script no longer needs the
 // Open "file.txt" in "append only" mode
 new File:handle = fopen("file.txt", io_append);
 
-// Check, if file is open
+// Check, if the file is opened
 if (handle)
 {
     // Success
 
-    // Write "Hi there!" into the file
-    fwrite(handle, "Hi there!");
+    // Append "This is a text.\r\n"
+    fwrite(handle, "This is a text.\r\n");
+
+    fflush(handle);
 
     // Close the file
     fclose(handle);
@@ -40,25 +44,17 @@ if (handle)
 else
 {
     // Error
-    print("Failed to open file \"file.txt\".");
+    print("The file \"file.txt\" does not exists, or can't be opened.");
 }
 ```
-
-## Notes
-
-:::warning
-
-Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
-
-:::
 
 ## Related Functions
 
 - [fopen](fopen): Open a file.
+- [fclose](fclose): Close a file.
 - [ftemp](ftemp): Create a temporary file stream.
 - [fremove](fremove): Remove a file.
 - [fwrite](fwrite): Write to a file.
-- [fread](fread): Read a file.
 - [fputchar](fputchar): Put a character in a file.
 - [fgetchar](fgetchar): Get a character from a file.
 - [fblockwrite](fblockwrite): Write blocks of data into a file.

@@ -1,38 +1,38 @@
 ---
-title: fexist
-description: Checks if a specific file exists in the scriptfiles directory.
+title: frename
+description: Rename a file.
 tags: ["file management"]
 ---
+
+<VersionWarn version='omp v1.1.0.2612' />
 
 <LowercaseNote />
 
 ## Description
 
-Checks if a specific file exists in the scriptfiles directory.
+Rename a file.
 
-| Name             | Description           |
-| ---------------- | --------------------- |
-| const filename[] | The name of the file. |
+| Name            | Description                                                     |
+| --------------- | --------------------------------------------------------------- |
+| const oldname[] | The current name of the file, optionally including a full path. |
+| const newname[] | The new name of the file, optionally including a full path.     |
 
 ## Returns
 
-The number of files that match the pattern.
+**true** on success, **false** on failure.
 
 ## Examples
 
 ```c
-// Check, if "file.txt" exists
-if (fexist("file.txt"))
+if (frename("example.txt", "file.txt"))
 {
     // Success
-
-    // Print the success
-    print("\"file.txt\" exists.");
+    printf("File 'example.txt' renamed to 'file.txt' successfully.");
 }
 else
 {
     // Error
-    print("\"file.txt\" does not exist.");
+    print("The file \"example.txt\" does not exists, or can't be opened.");
 }
 ```
 
@@ -43,11 +43,11 @@ else
 - [ftemp](ftemp): Create a temporary file stream.
 - [fremove](fremove): Remove a file.
 - [fwrite](fwrite): Write to a file.
-- [fread](fread): Read a file.
 - [fputchar](fputchar): Put a character in a file.
 - [fgetchar](fgetchar): Get a character from a file.
 - [fblockwrite](fblockwrite): Write blocks of data into a file.
 - [fblockread](fblockread): Read blocks of data from a file.
 - [fseek](fseek): Jump to a specific character in a file.
 - [flength](flength): Get the file length.
+- [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.

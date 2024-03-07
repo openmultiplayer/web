@@ -10,14 +10,11 @@ tags: ["file management"]
 
 Change the current position in the file. You can either seek forward or backward through the file.
 
-| Name         | Description                                                                                                           |
-| ------------ | --------------------------------------------------------------------------------------------------------------------- |
-| handle       | The file handle to use. Returned by fopen.                                                                            |
-| position     | The new position in the file, relative to the parameter whence (see below).                                           |
-| whence       | The starting position to which parameter position relates.                                                            |
-| seek_start   | Set the file position relative to the start of the file (the position parameter must be positive).                    |
-| seek_current | Set the file position relative to the current file position: the position parameter is added to the current position. |
-| seek_end     | Set the file position relative to the end of the file (parameter position must be zero or negative).                  |
+| Name                                                | Description                                                                 |
+| --------------------------------------------------- | --------------------------------------------------------------------------- |
+| File:handle                                         | The file handle to use. Returned by fopen.                                  |
+| position                                            | The new position in the file, relative to the parameter whence (see below). |
+| [seek_whence:whence](../resources/file-seek-whence) | The starting position to which parameter position relates.                  |
 
 ## Returns
 
@@ -57,7 +54,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
@@ -76,3 +73,7 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.
+
+## Related Resources
+
+- [File Seek Whence](../resources/file-seek-whence)
