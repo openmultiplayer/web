@@ -10,23 +10,25 @@ tags: ["file management"]
 
 Open a file (to read from or write to).
 
-| Name   | Description                                                                                                                                |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| name[] | The path to the file to open (if just a filename is specified, it will open the file with the name specified in the 'scriptfiles' folder). |
-| mode   | The mode to open the file with (default: io_readwrite).                                                                                    |
+| Name                                     | Description                                                                                                                                |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| const filename[]                         | The path to the file to open (if just a filename is specified, it will open the file with the name specified in the 'scriptfiles' folder). |
+| [filemode:mode](../resources/file-modes) | The mode to open the file with (default: io_readwrite).                                                                                    |
 
 ## Returns
 
-Returns the file handle. This handle is used for reading and writing. 0 if failed to open file.
+Returns the file handle. This handle is used for reading and writing.
+
+0 if failed to open file.
 
 ## Examples
 
 ```c
 // Open "file.txt" in "read only" mode
-new File:handle = fopen("file.txt", io_read),
+new File:handle = fopen("file.txt", io_read);
 
-    // Initialize "buf"
-    buf[128];
+// Initialize "buf"
+new buf[128];
 
 // Check, if the file is opened
 if (handle)
@@ -34,7 +36,10 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf)) print(buf);
+    while(fread(handle, buf))=
+    {
+        print(buf);
+    }
 
     // Close the file
     fclose(handle);
@@ -44,6 +49,11 @@ else
     // Error
     print("The file \"file.txt\" does not exists, or can't be opened.");
 }
+```
+
+<br />
+
+```c
 // Open "file.txt" in "write only" mode
 new File:handle = fopen("file.txt", io_write);
 
@@ -63,11 +73,18 @@ else
     // Error
     print("Failed to open file \"file.txt\".");
 }
-// Open "file.txt" in "read and write" mode
-new File:handle = fopen("file.txt"),
 
-    // Initialize "buf"
-    buf[128];
+```
+
+<br />
+
+```c
+// Open "file.txt" in "read and write" mode
+
+new File:handle = fopen("file.txt");
+
+// Initialize "buf"
+new buf[128];
 
 // Check, if file is open
 if (handle)
@@ -75,7 +92,10 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf)) print(buf);
+    while(fread(handle, buf))
+    {
+        print(buf);
+    }
 
     // Set the file pointer to the first byte
     fseek(handle, _, seek_begin);
@@ -91,6 +111,11 @@ else
     // Error
     print("The file \"file.txt\" does not exists, or can't be opened.");
 }
+```
+
+<br />
+
+```c
 // Open "file.txt" in "append only" mode
 new File:handle = fopen("file.txt", io_append);
 
@@ -100,7 +125,7 @@ if (handle)
     // Success
 
     // Append "This is a text.\r\n"
-    fwrite(handle, "This is a test.\r\n");
+    fwrite(handle, "This is a text.\r\n");
 
     // Close the file
     fclose(handle);
@@ -112,18 +137,11 @@ else
 }
 ```
 
-```
-io_read      Reads from the file.
-io_write     Write in the file, or create the file if it does not exist. Erases all existing contents.
-io_readwrite Reads the file or creates it if it doesn't already exist.
-io_append    Appends (adds) to file, write-only. If the file does not exist, it is created.
-```
-
 ## Notes
 
 :::warning
 
-If you use io_read and the file doesn't exist, it will return a NULL reference. Using invalid references on file functions will crash your server!
+If you use `io_read` and the file doesn't exist, it will return a NULL reference. Using invalid references on file functions will crash your server!
 
 :::
 
@@ -142,3 +160,16 @@ If you use io_read and the file doesn't exist, it will return a NULL reference. 
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.
+- [ftell](ftell): Get the current position in the file.
+- [fflush](fflush): Flush a file to disk (ensure all writes are complete).
+- [fstat](fstat): Return the size and the timestamp of a file.
+- [frename](frename): Rename a file.
+- [fcopy](fcopy): Copy a file.
+- [filecrc](filecrc): Return the 32-bit CRC value of a file.
+- [diskfree](diskfree): Returns the free disk space.
+- [fattrib](fattrib): Set the file attributes.
+- [fcreatedir](fcreatedir): Create a directory.
+
+## Related Resources
+
+- [File Modes](../resources/file-modes)
