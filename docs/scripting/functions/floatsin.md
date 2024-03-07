@@ -10,10 +10,10 @@ tags: ["math", "floating-point"]
 
 Get the sine from a given angle. The input angle may be in radians, degrees or grades.
 
-| Name        | Description                                            |
-| ----------- | ------------------------------------------------------ |
-| Float:value | The angle from which to get the sine.                  |
-| anglemode   | The [angle mode](../resources/anglemodes) to use, depending on the value entered. |
+| Name           | Description                                                                                         |
+| -------------- | --------------------------------------------------------------------------------------------------- |
+| Float:value    | The angle from which to get the sine.                                                               |
+| anglemode:mode | The [angle mode](../resources/anglemodes) to use, depending on the value entered. (default: radian) |
 
 ## Returns
 
