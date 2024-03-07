@@ -37,7 +37,7 @@ else
 
 ## Notes
 
-::tip
+:::tip
 
 To delete the directory again, use [fremove](fremove). The directory must be empty before it can be removed.
 
