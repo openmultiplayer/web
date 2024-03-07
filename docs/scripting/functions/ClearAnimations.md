@@ -1,21 +1,21 @@
 ---
 title: ClearAnimations
-description: Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.
+description: Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting, entering vehicles, driving (removes player out of vehicle), swimming, etc.
 tags: ["player", "animation"]
 ---
 
 ## Description
 
-Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.. ).
+Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting, entering vehicles, driving (removes player out of vehicle), swimming, etc.
 
-| Name      | Description                                                                                        |
-| --------- | -------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player to clear the animations of.                                                   |
-| forcesync | Set to 1 to force playerid to sync the animation with other players in streaming radius (optional) |
+| Name                 | Description                                                                                                           |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| playerid             | The ID of the player to clear the animations of.                                                                      |
+| FORCE_SYNC:forceSync | Set to `SYNC_ALL` to force playerid to sync the animation with other players in streaming radius (optional=SYNC_NONE) |
 
 ## Returns
 
-This function always returns 1, even when the player specified is not connected.
+This function always returns **true**, even when the player specified is not connected.
 
 ## Examples
 
@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-ClearAnimations doesn't do anything when the animation ends if we pass 1 for the freeze parameter in ApplyAnimation.
+ClearAnimations doesn't do anything when the animation ends if we pass 'true' for the freeze parameter in ApplyAnimation.
 
 :::
 
