@@ -23,6 +23,8 @@ Returns the file handle. This handle is used for reading and writing.
 
 ## Examples
 
+**io_read mode:**
+
 ```c
 // Open "file.txt" in "read only" mode
 new File:handle = fopen("file.txt", io_read);
@@ -36,7 +38,7 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf))=
+    while(fread(handle, buf))
     {
         print(buf);
     }
@@ -52,6 +54,8 @@ else
 ```
 
 <br />
+
+**io_write mode:**
 
 ```c
 // Open "file.txt" in "write only" mode
@@ -78,10 +82,12 @@ else
 
 <br />
 
+**io_readwrite mode:**
+
 ```c
 // Open "file.txt" in "read and write" mode
 
-new File:handle = fopen("file.txt");
+new File:handle = fopen("file.txt", io_readwrite);
 
 // Initialize "buf"
 new buf[128];
@@ -114,6 +120,8 @@ else
 ```
 
 <br />
+
+**io_append mode:**
 
 ```c
 // Open "file.txt" in "append only" mode
