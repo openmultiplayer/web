@@ -10,10 +10,10 @@ tags: ["math", "floating-point"]
 
 Multiplies two floats with each other.
 
-| Name  | Description                                       |
-| ----- | ------------------------------------------------- |
-| oper1 | First Float.                                      |
-| oper2 | Second Float, the first one gets multiplied with. |
+| Name        | Description                                       |
+| ----------- | ------------------------------------------------- |
+| Float:oper1 | First Float.                                      |
+| Float:oper2 | Second Float, the first one gets multiplied with. |
 
 ## Returns
 
@@ -24,9 +24,9 @@ The product of the two given floats
 ```c
 public OnGameModeInit()
 {
-    new Float:Number1 = 2.3, Float:Number2 = 3.5; //Declares two floats, Number1 (2.3) and Number2 (3.5)
+    new Float:Number1 = 2.3, Float:Number2 = 3.5; // Declares two floats, Number1 (2.3) and Number2 (3.5)
     new Float:Product;
-    Product = floatmul(Number1, Number2);       //Saves the product(=2.3*3.5 = 8.05) of Number1 and Number2 in the float "Product"
+    Product = floatmul(Number1, Number2); // Saves the product(=2.3*3.5 = 8.05) of Number1 and Number2 in the float "Product"
     return 1;
 }
 ```
