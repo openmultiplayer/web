@@ -4,7 +4,7 @@ description: Fonksiyon, bir oyuncu özel model indirmeleri istediğinde çağrı
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarnTR name='callback' version='SA-MP 0.3.DL R1' />
 
 ## Açıklama
 

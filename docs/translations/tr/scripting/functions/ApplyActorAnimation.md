@@ -4,7 +4,7 @@ description: Aktörlere animasyon yaptırma.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+<VersionWarnTR version='SA-MP 0.3.7' />
 
 ## Açıklama
 

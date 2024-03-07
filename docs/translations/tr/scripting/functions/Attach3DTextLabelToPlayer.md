@@ -22,7 +22,7 @@ Oyuncuya 3D Text Label bağlama fonksiyonu.
 
 0: Fonksiyon çalışamadı. Oyuncu veya label yok.
 
-## Examples
+## Örnekler
 
 ```c
 public OnPlayerConnect(playerid)

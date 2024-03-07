@@ -4,7 +4,7 @@ description: Bir sunucu kuralı ekleyin.
 tags: ["rule"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarnTR version='omp v1.1.0.2612' />
 
 ## Açıklama
 

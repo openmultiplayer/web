@@ -4,7 +4,7 @@ description: Oyuncunun baktığı aktörün (herhangi bir aktörün) ID'sini çe
 tags: ["player", "camera", "actor"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+<VersionWarnTR version='SA-MP 0.3.7' />
 
 ## Açıklama
 
