@@ -14,13 +14,13 @@ Creates a file in the "tmp", "temp" or root directory with random name for readi
 
 ```c
 // Create a temporary file stream
-new File:t_handle = ftemp(),
+new File:t_handle = ftemp();
 
-    // Declare "handle"
-    File:handle,
+// Declare "handle"
+new File:handle;
 
-    // Declare "g_char"
-    g_char;
+// Declare "g_char"
+new g_char;
 
 // Check, if temporary file stream is open
 if (t_handle)
