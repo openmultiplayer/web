@@ -4,7 +4,7 @@ description: Aktörün can değerini kontrol etme.
 tags: ["actor"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+<VersionWarnTR version='SA-MP 0.3.7' />
 
 ## Açıklama
 

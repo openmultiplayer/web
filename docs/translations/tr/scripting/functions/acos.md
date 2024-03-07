@@ -4,11 +4,7 @@ description: .
 tags: []
 ---
 
-:::warning
-
-Bu fonksiyon küçük harfle başlar.
-
-:::
+<LowercaseNoteTR />
 
 ## Açıklama
 

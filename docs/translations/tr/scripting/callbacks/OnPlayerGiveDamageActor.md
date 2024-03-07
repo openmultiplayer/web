@@ -4,7 +4,7 @@ description: Bu callback, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnTR name='callback' version='SA-MP 0.3.7' />
 
 ## Açıklama
 

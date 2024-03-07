@@ -20,7 +20,7 @@ Bu fonksiyon bir araca 3D text label bağlamanızı sağlar.
 
 Bu fonksiyon dönüt vermez.
 
-## Examples
+## Örnekler
 
 ```c
 new

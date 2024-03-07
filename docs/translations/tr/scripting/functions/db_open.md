@@ -5,7 +5,7 @@ keywords:
   - sqlite
 ---
 
-<LowercaseNote />
+<LowercaseNoteTR />
 
 ## Açıklama
 
