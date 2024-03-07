@@ -10,10 +10,9 @@ tags: ["file management"]
 
 Checks if a specific file exists in the scriptfiles directory.
 
-| Name        | Description                                            |
-| ----------- | ------------------------------------------------------ |
-| pattern[]   | The name of the file, optionally containing wild-cards |
-| characters. |
+| Name             | Description           |
+| ---------------- | --------------------- |
+| const filename[] | The name of the file. |
 
 ## Returns
 
