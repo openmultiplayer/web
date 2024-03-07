@@ -40,7 +40,7 @@ public OnGameModeInit()
 }
 ```
 
-## Notes
+## Notlar
 
 :::tip
 

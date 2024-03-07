@@ -28,7 +28,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## Notlar
 
-<TipNPCCallbacks />
+<TipNPCCallbacksTR />
 
 ## Geri Döndürülen Değerler
 

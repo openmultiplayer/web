@@ -4,7 +4,7 @@ description: Bu callback bir aracın siren durumu değiştiğinde çağrılır.
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnTR name='callback' version='SA-MP 0.3.7' />
 
 ## Açıklama
 
@@ -16,7 +16,7 @@ Bu callback bir aracın siren durumu değiştiğinde çağrılır.
 | vehicleid | Siren durumu değiştirilen araç ID'si.               |
 | newstate  | 0 ise siren kapalı, 1 ise açık durumda.             |
 
-## Çalışınca Vereceği Sonuçlar (Returns)
+## Çalışınca Vereceği Sonuçlar
 
 1 - Oyun modunda bu callbackin kullanılmasını önler.
 

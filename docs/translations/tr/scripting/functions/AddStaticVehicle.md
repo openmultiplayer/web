@@ -4,7 +4,7 @@ description: Oyun moduna bir "statik" araç ekler (modeller oyuncular için önc
 tags: ["vehicle"]
 ---
 
-## Description
+## Açıklama
 
 Oyun moduna bir "statik" araç ekler (modeller oyuncular için önceden yüklenir).
 

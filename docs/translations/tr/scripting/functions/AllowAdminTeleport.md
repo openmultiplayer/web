@@ -10,6 +10,7 @@ tags: []
 
 :::
 
+
 ## Açıklama
 
 Bu fonksiyon RCON olan kişilerin nokta seçtiğinde ışınlanıp ışınlanamayacağına karar vermenizi sağalar.

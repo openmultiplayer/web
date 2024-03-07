@@ -4,7 +4,7 @@ description: Bir araca 3D text label bağlar.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-## Description
+## Açıklama
 
 Bu fonksiyon bir araca 3D text label bağlamanızı sağlar.
 
@@ -20,7 +20,7 @@ Bu fonksiyon bir araca 3D text label bağlamanızı sağlar.
 
 Bu fonksiyon dönüt vermez.
 
-## Examples
+## Örnekler
 
 ```c
 new

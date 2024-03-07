@@ -36,7 +36,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## Notlar
 
-<TipNPCCallbacks />
+<TipNPCCallbacksTR />
 
 ## Bağlantılı Fonksiyonlar
 

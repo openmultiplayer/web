@@ -4,7 +4,7 @@ description: CreateActor ile oluşturulan aktörü silin.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+<VersionWarnTR version='SA-MP 0.3.7' />
 
 ## Açıklama
 

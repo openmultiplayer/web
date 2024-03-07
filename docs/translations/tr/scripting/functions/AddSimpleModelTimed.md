@@ -4,11 +4,7 @@ description: İndirmek için yeni bir basit nesne modeli ekler.
 tags: []
 ---
 
-:::warning
-
-Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacaktır!
-
-:::
+<VersionWarnTR version='SA-MP 0.3.DL R1' />
 
 ## Açıklama
 

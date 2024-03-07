@@ -4,7 +4,7 @@ description: Oyuncuyu sunucudan atma.
 tags: ["administration"]
 ---
 
-## Description
+## Açıklama
 
 Oyuncuyu sunucudan atma. Oynamaya devam etmek istiyorsa oyundan çıkıp tekrar girmesi gerekmekte.
 
