@@ -27,7 +27,7 @@ Rename a file.
 if (frename("example.txt", "file.txt"))
 {
     // Success
-    printf("File 'example.txt' renamed to 'file.txt' successfully.");
+    printf("File \"example.txt\" renamed to \"file.txt\" successfully.");
 }
 else
 {
