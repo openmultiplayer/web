@@ -4,7 +4,5 @@ area:translation:
   - any-glob-to-any-file: [
       'docs/translations/**',
       'frontend/src/components/templates/translations/**',
-      'frontend/content/**',
-      '!frontend/content/en/*',
-      '!frontend/content/.prettierrc'
+      'frontend/content/**'
     ]
