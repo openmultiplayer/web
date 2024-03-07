@@ -10,11 +10,11 @@ tags: ["file management"]
 
 This function allows you to read data from a file, without encoding and line terminators
 
-| Name                 | Description                           |
-| -------------------- | ------------------------------------- |
-| handle               | File handle to use, opened by fopen() |
-| buffer               | The buffer to save the read data in.  |
-| size = sizeof buffer | The number of cells to read.          |
+| Name                   | Description                           |
+| ---------------------- | ------------------------------------- |
+| File:handle            | File handle to use, opened by fopen() |
+| buffer                 | The buffer to save the read data in.  |
+| size = sizeof (buffer) | The number of cells to read.          |
 
 ## Returns
 
@@ -37,10 +37,10 @@ new some_data[some_enum];
 // ...
 
 // Open "file.bin" in "read only" mode
-new File:handle = fopen("file.bin", io_read),
+new File:handle = fopen("file.bin", io_read);
 
-    // Declare "file_len"
-    file_len;
+// Declare "file_len"
+new file_len;
 
 // Check, if "file.bin" is open
 if (handle)
@@ -78,7 +78,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
