@@ -10,22 +10,37 @@ tags: ["file management"]
 
 Find a filename matching a pattern.
 
-| Name          | Description                                                    |
-| ------------- | -------------------------------------------------------------- |
-| name          | The string to hold the result in, returned as a packed string. |
-| const pattern | The pattern that should be matched. May contain wildcards.     |
-| index         | The number of the file, in case there are multiple matches.    |
-| size          | The maximum size of parameter name                             |
+| Name                     | Description                                                              |
+| ------------------------ | ------------------------------------------------------------------------ |
+| const filename[]         | The string to hold the result in, returned as a packed string.           |
+| const pattern[]          | The pattern that should be matched. May contain wildcards.               |
+| index                    | The number of the file, in case there are multiple matches. (default: 0) |
+| size = sizeof (filename) | The maximum size of parameter name                                       |
 
 ## Returns
 
-true on success, false on failure
+**true** on success, **false** on failure
+
+## Examples
+
+```c
+if (fmatch("file.txt", "*.txt"))
+{
+    print("The file matches the pattern.");
+}
+else
+{
+    print("The file \"file.txt\" does not exists, or can't be opened.");
+}
+```
 
 ## Notes
 
 :::warning
 
-This function does not work in the current SA:MP version!
+This function does not work in the SA:MP server.
+
+This function work in the open.mp server.
 
 :::
 
