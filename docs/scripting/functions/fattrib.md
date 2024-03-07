@@ -25,7 +25,7 @@ Set the file attributes.
 ## Examples
 
 ```c
-// Change file modification time to 'Thu Mar 07 2024 06:28:15 GMT+0000'
+// Change file modification time to 'Thu Mar 07 2024 06:28:15'
 if (fattrib("file.txt", 1709792895))
 {
     // Success
@@ -40,7 +40,7 @@ else
 
 ## Notes
 
-::tip
+:::tip
 
 - The time is in number of seconds since midnight at 1 January 1970: the start of the UNIX system epoch.
 - The file attributes are a bit mask.
