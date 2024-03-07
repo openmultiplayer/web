@@ -19,7 +19,9 @@ Find a filename matching a pattern.
 
 ## Returns
 
-**true** on success, **false** on failure
+**true** - Success (the file matches the pattern)
+
+**false** - Failure (the file does not exist or the pattern does not match)
 
 ## Examples
 
@@ -30,7 +32,7 @@ if (fmatch("file.txt", "*.txt"))
 }
 else
 {
-    print("The file \"file.txt\" does not exists, or can't be opened.");
+    print("The file \"file.txt\" does not exists, or pattern does not match.");
 }
 ```
 
@@ -38,9 +40,7 @@ else
 
 :::warning
 
-This function does not work in the SA:MP server.
-
-This function work in the open.mp server.
+This function works on open.mp server but not on SA:MP server.
 
 :::
 
