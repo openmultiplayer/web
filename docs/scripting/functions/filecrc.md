@@ -39,7 +39,7 @@ else
 
 ## Notes
 
-::tip
+:::tip
 
 - The CRC value is a useful measure to check whether the contents of a file has changed during transmission or whether it has been edited (provided that the CRC value of the original file was saved).
 - The CRC value returned by this function is the same as the one used in ZIP archives (PKZip, WinZip) and the "SFV" utilities and file formats.
