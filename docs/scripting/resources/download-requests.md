@@ -1,6 +1,6 @@
 ---
 title: Download Request Types
-description: Download request types. (used by [OnPlayerRequestDownload](../callbacks/OnPlayerRequestDownload))
+description: Download request types. (used by OnPlayerRequestDownload)
 ---
 
 :::note
