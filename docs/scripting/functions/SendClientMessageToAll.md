@@ -6,17 +6,17 @@ tags: []
 
 ## Description
 
-Displays a message in chat to all players. This is a multi-player equivalent of SendClientMessage.
+Displays a message in chat to all players. This is a multi-player equivalent of [SendClientMessage](SendClientMessage).
 
 | Name             | Description                                       |
-|------------------|---------------------------------------------------|
-| color            | The color of the message (0xRRGGBBAA Hex format). |
-| const message[]  | The message to show (max 144 characters).         |
+| ---------------- | ------------------------------------------------- |
+| colour           | The color of the message (0xRRGGBBAA Hex format). |
+| const format[]   | The message to show (max 144 characters).         |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.        |
 
 ## Returns
 
-This function always returns true (1).
+This function always returns **true (1)**.
 
 ## Examples
 
