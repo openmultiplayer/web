@@ -1,16 +1,22 @@
 ---
 title: SetDeathDropAmount
-description: .
+description: Sets death drops money.
 tags: []
 ---
 
+:::warning
+
+Does not work, Use [CreatePickup](CreatePickup).
+
+:::
+
 ## Description
 
-.
+Sets death drops money.
 
-| Name   | Description |
-| ------ | ----------- |
-| amount |             |
+| Name   | Description             |
+| ------ | ----------------------- |
+| amount | Amount of money to set. |
 
 ## Returns
 
@@ -22,9 +28,6 @@ This function does not return any specific values.
 public OnGameModeInit()
 {
     SetDeathDropAmount(5000);
-
-    // MORE CODE
-
     return 1;
 }
 ```
@@ -41,4 +44,7 @@ This function does not work in the current SA:MP version!
 
 - [CreatePickup](CreatePickup): Create a pickup.
 - [GivePlayerMoney](GivePlayerMoney): Give a player money.
+
+## Related Callbacks
+
 - [OnPlayerDeath](../callbacks/OnPlayerDeath): Called when a player dies.
