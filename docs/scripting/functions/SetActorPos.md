@@ -30,7 +30,7 @@ new gMyActor;
 
 public OnGameModeInit()
 {
-    gActorCJ = CreateActor(24, 2050.7544, -1920.0621, 13.5485, -180.0);
+    gMyActor = CreateActor(24, 2050.7544, -1920.0621, 13.5485, -180.0);
     return 1;
 }
 
