@@ -30,7 +30,7 @@ public OnPlayerConnect(playerid)
 
 public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
-    if(actionid == 0x48) // or 72
+    if (actionid == 0x48) // or 72
     {
         print("WARNING: The player doesn't seem to be using a regular computer!");
         Kick(playerid);
