@@ -9,7 +9,7 @@ tags: ["timer"]
 Sets a timer to call a function after the specified interval. This variant ('Ex') can pass parameters (such as a player ID) to the function.
 
 | Name                 | Description                                                                                                                                |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | const functionName[] | The name of a public function to call when the timer expires.                                                                              |
 | interval             | Interval in milliseconds (1 second = 1000 MS).                                                                                             |
 | bool:repeating       | Boolean (true/false (or 1/0)) that states whether the timer should be called repeatedly (can only be stopped with KillTimer) or only once. |

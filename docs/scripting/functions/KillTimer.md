@@ -19,8 +19,7 @@ This function always returns 0.
 ## Examples
 
 ```c
-new
-    gConnectTimer[MAX_PLAYERS] = {0, ...};
+new gConnectTimer[MAX_PLAYERS] = {0, ...};
 
 public OnPlayerConnect(playerid)
 {

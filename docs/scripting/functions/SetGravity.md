@@ -8,13 +8,13 @@ tags: []
 
 Set the gravity for all players.
 
-| Name          | Description                                                       |
-| ------------- | ----------------------------------------------------------------- |
-| Float:gravity | The value that the gravity should be set to (between -50 and 50). |
+| Name          | Description                                                           |
+| ------------- | --------------------------------------------------------------------- |
+| Float:gravity | The value that the gravity should be set to (between -50.0 and 50.0). |
 
 ## Returns
 
-This function always returns 1, even when it fails to execute if the gravity is out of the limits (lower than -50 or high than +50).
+This function always returns 1, even when it fails to execute if the gravity is out of the limits (lower than -50.0 or high than +50.0).
 
 ## Examples
 

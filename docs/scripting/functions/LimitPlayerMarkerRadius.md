@@ -10,7 +10,7 @@ Set the player marker radius.
 
 | Name                | Description                          |
 | ------------------- | ------------------------------------ |
-| Float:marker_radius | The radius that markers will show at |
+| Float:markerRadius  | The radius that markers will show at |
 
 ## Returns
 

@@ -6,16 +6,22 @@ tags: ["encryption"]
 
 <VersionWarn version='SA-MP 0.3.7 R1' />
 
+:::warning
+
+This function is deprecated in open.mp, Use [samp-bcrypt](https://github.com/Sreyas-Sreelal/samp-bcrypt) plugin for hashing.
+
+:::
+
 ## Description
 
 Hashes a password using the SHA-256 hashing algorithm. Includes a salt. The output is always 256 bits in length, or the equivalent of 64 Pawn cells.
 
-| Name         | Description                                        |
-| ------------ | -------------------------------------------------- |
-| password[]   | The password to hash.                              |
-| salt[]       | The salt to use in the hash.                       |
-| ret_hash[]   | The returned hash in uppercase hexadecimal digest. |
-| ret_hash_len | The returned hash maximum length.                  |
+| Name                   | Description                                        |
+| ---------------------- | -------------------------------------------------- |
+| const password[]       | The password to hash.                              |
+| const salt[]           | The salt to use in the hash.                       |
+| output[]               | The returned hash in uppercase hexadecimal digest. |
+| size = sizeof (output) | The returned hash maximum length.                  |
 
 ## Returns
 
@@ -52,5 +58,3 @@ The salt is appended to the end of the password, meaning password 'foo' and salt
 This function is not binary-safe. Using binary values on password and salt might give unexpected result.
 
 :::
-
-## Related Functions

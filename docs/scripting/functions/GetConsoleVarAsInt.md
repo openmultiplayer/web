@@ -8,9 +8,9 @@ tags: []
 
 Get the integer value of a console variable.
 
-| Name            | Description                                           |
-| --------------- | ----------------------------------------------------- |
-| const varname[] | The name of the integer variable to get the value of. |
+| Name         | Description                                           |
+| ------------ | ----------------------------------------------------- |
+| const cvar[] | The name of the integer variable to get the value of. |
 
 ## Returns
 
@@ -19,7 +19,7 @@ The value of the specified console variable. 0 if the specified console variable
 ## Examples
 
 ```c
-new serverPort = GetConsoleVarAsInt("port");
+new serverPort = GetConsoleVarAsInt("network.port");
 printf("Server Port: %i", serverPort);
 ```
 

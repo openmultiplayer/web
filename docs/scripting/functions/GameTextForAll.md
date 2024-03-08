@@ -1,7 +1,7 @@
 ---
 title: GameTextForAll
 description: Shows 'game text' (on-screen text) for a certain length of time for all players.
-tags: []
+tags: ["gametext"]
 ---
 
 ## Description
@@ -10,7 +10,7 @@ Shows 'game text' (on-screen text) for a certain length of time for all players.
 
 | Name             | Description                                                       |
 |------------------|-------------------------------------------------------------------|
-| const string[]   | The text to be displayed.                                         |
+| const format[]   | The text to be displayed.                                         |
 | time             | The duration of the text being shown in milliseconds.             |
 | style            | The [style](../resources/gametextstyles) of text to be displayed. |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                        |
@@ -27,10 +27,11 @@ public OnPlayerDeath(playerid, killerid, reason)
     // This example shows a large, white text saying "[playerName] has
     // passed away" on everyone's screen, after a player has died or
     // has been killed. It shows in text-type 3, for 5 seconds (5000 ms)
-    new name[MAX_PLAYER_NAME], string[64];
+    new name[MAX_PLAYER_NAME];
     GetPlayerName(playerid, name, sizeof(name));
 
     // Format the passed-away message properly, and show it to everyone:
+    new string[64];
     format(string, sizeof(string), "~w~%s has passed away", name);
     GameTextForAll(string, 5000, 3);
 

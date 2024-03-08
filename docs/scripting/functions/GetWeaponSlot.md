@@ -10,9 +10,9 @@ tags: ["weapon"]
 
 Gets the slot of one weapon.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| weaponid  | The ID of the weapon to get the slot of.                                  |
+| Name            | Description                              |
+| --------------- | ---------------------------------------- |
+| WEAPON:weaponid | The ID of the weapon to get the slot of. |
 
 ## Returns
 

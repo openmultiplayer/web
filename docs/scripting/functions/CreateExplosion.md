@@ -10,9 +10,9 @@ Create an explosion at the specified coordinates.
 
 | Name         | Description                                              |
 | ------------ | -------------------------------------------------------- |
-| Float:X      | The X coordinate of the explosion.                       |
-| Float:Y      | The Y coordinate of the explosion.                       |
-| Float:Z      | The Z coordinate of the explosion.                       |
+| Float:x      | The X coordinate of the explosion.                       |
+| Float:y      | The Y coordinate of the explosion.                       |
+| Float:z      | The Z coordinate of the explosion.                       |
 | type         | The [type](../resources/explosionlist) of the explosion. |
 | Float:radius | The radius of the explosion.                             |
 

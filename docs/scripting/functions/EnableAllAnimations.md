@@ -10,8 +10,8 @@ tags: ["animation"]
 
 Allow use of the animations missing from some versions.
 
-| Name   | Description                                     |
-| ------ | ----------------------------------------------- |
+| Name        | Description                                                     |
+| ----------- | --------------------------------------------------------------- |
 | bool:enable | 'true' to enable missing animations or 'false' to disable them. |
 
 ## Returns
@@ -32,12 +32,10 @@ public OnGameModeInit()
 
 :::tip
 
-You can also enable or disable missing animations from the config.json file.
+You can also enable or disable missing animations from the [config.json](../../server/config.json) file.
 
 ```json
-"game": {
-    "use_all_animations": false,
-},
+"use_all_animations": false,
 ```
 
 :::
