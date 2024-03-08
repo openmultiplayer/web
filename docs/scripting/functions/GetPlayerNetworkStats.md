@@ -8,11 +8,11 @@ tags: ["player", "network monitoring"]
 
 Gets a player's network stats and saves them into a string.
 
-| Name        | Description                                                   |
-| ----------- | ------------------------------------------------------------- |
-| playerid    | The ID of the player you want to get the networkstats of.     |
-| retstr[]    | The string to store the networkstats in, passed by reference. |
-| retstr_size | The length of the string that should be stored.               |
+| Name                   | Description                                                   |
+| ---------------------- | ------------------------------------------------------------- |
+| playerid               | The ID of the player you want to get the networkstats of.     |
+| output[]               | The string to store the networkstats in, passed by reference. |
+| size = sizeof (output) | The length of the string that should be stored.               |
 
 ## Returns
 
@@ -21,13 +21,13 @@ This function always returns 1.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/mynetstats"))
     {
         new stats[400+1];
-        GetPlayerNetworkStats(playerid, stats, sizeof(stats)); // get your own network stats
-        ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "My NetworkStats", stats, "Okay", "");
+        GetPlayerNetworkStats(playerid, stats, sizeof(stats));
+        ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "My Network Stats", stats, "Okay", "");
     }
     return 1;
 }
@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 :::tip
 
-This function may not return accurate data when used under OnPlayerDisconnect if the player has quit normally. It usually returns accurate data if the player has been kicked or has timed out.
+This function may not return accurate data when used under [OnPlayerDisconnect](OnPlayerDisconnect) if the player has quit normally. It usually returns accurate data if the player has been kicked or has timed out.
 
 :::
 
