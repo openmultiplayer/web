@@ -10,13 +10,13 @@ tags: ["actor"]
 
 Create a static 'actor' in the world. These 'actors' are like NPCs, however they have limited functionality. They do not take up server player slots.
 
-| Name     | Description                                        |
-| -------- | -------------------------------------------------- |
-| modelid  | The model ID (skin ID) the actor should have.      |
-| x        | The X coordinate to create the actor at.           |
-| y        | The Y coordinate to create the actor at.           |
-| z        | The Z coordinate to create the actor at.           |
-| Rotation | The facing angle (rotation) for the actor to have. |
+| Name        | Description                                               |
+| ----------- | --------------------------------------------------------- |
+| skin        | The [model ID](../resources/skins) the actor should have. |
+| Float:x     | The X coordinate to create the actor at.                  |
+| Float:y     | The Y coordinate to create the actor at.                  |
+| Float:z     | The Z coordinate to create the actor at.                  |
+| Float:angle | The facing angle (rotation) for the actor to have.        |
 
 ## Returns
 
@@ -46,13 +46,15 @@ public OnGameModeExit()
 
 :::tip
 
-Actors are designed to just stand somewhere, for example cashiers and bartenders. They can perform animations (once or looping) using ApplyActorAnimation.
+Actors are designed to just stand somewhere, for example cashiers and bartenders. They can perform animations (once or looping) using [ApplyActorAnimation](ApplyActorAnimation).
 
 :::
 
 :::warning
 
-Actors are completely separate from NPCs. They do NOT use player IDs/slots on the server and CANNOT be handled like NPCs. Actors are limited to 1000 (MAX_ACTORS). Actors can be pushed by vehicles, use a timer to put them back at their positions. As of 0.3.7 R2 actors default to being invulnerable.
+- Actors are completely separate from NPCs. They do NOT use player IDs/slots on the server and CANNOT be handled like NPCs. Actors are limited to 1000 (MAX_ACTORS).
+- Actors can be pushed by vehicles, use a timer to put them back at their positions.
+- Actors default to being invulnerable.
 
 :::
 

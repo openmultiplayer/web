@@ -1,7 +1,7 @@
 ---
 title: SetActorFacingAngle
 description: Set the facing angle of an actor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -10,16 +10,16 @@ tags: []
 
 Set the facing angle of an actor.
 
-| Name    | Description                                                              |
-| ------- | ------------------------------------------------------------------------ |
-| actorid | The ID of the actor to set the facing angle of. Returned by CreateActor. |
-| ang     | The facing angle to set for the actor.                                   |
+| Name        | Description                                                              |
+| ----------- | ------------------------------------------------------------------------ |
+| actorid     | The ID of the actor to set the facing angle of. Returned by CreateActor. |
+| Float:angle | The facing angle to set for the actor.                                   |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. The actor specified does not exist.
+**false** - The function failed to execute. The actor specified does not exist.
 
 ## Examples
 
@@ -28,7 +28,7 @@ new MyActor;
 
 public OnGameModeInit()
 {
-    MyActor = CreateActor(...);
+    MyActor = CreateActor(38, 0.0, 0.0, 3.0, 90.0);
     return 1;
 }
 
@@ -40,7 +40,7 @@ SetActorFacingAngle(MyActor, 180.0);
 
 :::tip
 
-When creating an actor with CreateActor, you specify it's facing angle. You do not need to use this function unless you want to change its facing angle later.
+When creating an actor with [CreateActor](CreateActor), you specify it's facing angle. You do not need to use this function unless you want to change its facing angle later.
 
 :::
 

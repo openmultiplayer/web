@@ -17,9 +17,9 @@ Get the health of an actor.
 
 ## Returns
 
-1 - success
+**true** - success
 
-0 - failure (i.e. actor is not created).
+**false** - failure (i.e. actor is not created).
 
 NOTE: The actor's health is stored in the specified variable, not in the return value.
 
@@ -31,7 +31,8 @@ new gMyActor;
 public OnGameModeInit()
 {
     gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
-    SetActorHealth(gMyActor, 100);
+    
+    SetActorHealth(gMyActor, 100.0);
 
     new Float:actorHealth;
     GetActorHealth(gMyActor, actorHealth);

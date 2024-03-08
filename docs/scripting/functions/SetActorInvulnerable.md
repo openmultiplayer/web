@@ -1,7 +1,7 @@
 ---
 title: SetActorInvulnerable
 description: Toggle an actor's invulnerability.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -10,16 +10,16 @@ tags: []
 
 Toggle an actor's invulnerability.
 
-| Name         | Description                                             |
-| ------------ | ------------------------------------------------------- |
-| actorid      | The ID of the actor to set invulnerability.             |
-| invulnerable | 0 to make them vulnerable, 1 to make them invulnerable. |
+| Name              | Description                                                        |
+| ----------------- | ------------------------------------------------------------------ |
+| actorid           | The ID of the actor to set invulnerability.                        |
+| bool:invulnerable | 'false' to make them vulnerable, 'true' to make them invulnerable. |
 
 ## Returns
 
-1 - Success
+**true** - Success
 
-0 - Failure (i.e. Actor is not created).
+**false** - Failure (i.e. Actor is not created).
 
 ## Examples
 
@@ -38,8 +38,10 @@ public OnGameModeInit()
 
 :::warning
 
-Once set invulnerable, the actor does not call OnPlayerGiveDamageActor. Players will have actor's invulnerability state changed only when it is restreamed to them.
+Once set invulnerable, the actor does not call [OnPlayerGiveDamageActor](OnPlayerGiveDamageActor). Players will have actor's invulnerability state changed only when it is restreamed to them.
 
 :::
 
 ## Related Functions
+
+- [IsActorInvulnerable](IsActorInvulnerable): Check if an actor is invulnerable.

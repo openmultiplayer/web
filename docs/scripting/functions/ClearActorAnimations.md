@@ -1,7 +1,7 @@
 ---
 title: ClearActorAnimations
 description: Clear any animations applied to an actor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -10,15 +10,15 @@ tags: []
 
 Clear any animations applied to an actor.
 
-| Name    | Description                                                                |
-| ------- | -------------------------------------------------------------------------- |
-| actorid | The ID of the actor (returned by CreateActor) to clear the animations for. |
+| Name    | Description                                                                               |
+| ------- | ----------------------------------------------------------------------------------------- |
+| actorid | The ID of the actor (returned by [CreateActor](CreateActor)) to clear the animations for. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The actor specified does not exist.
+**false** - The function failed to execute. The actor specified does not exist.
 
 ## Examples
 
@@ -27,11 +27,10 @@ new gMyActor;
 
 public OnGameModeInit()
 {
-    gMyActor = CreateActor(...);
+    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
+    ApplyActorAnimation(gMyActor, "DEALER", "shop_pay", 4.1, false, false, false, false, 0); // Pay anim
+    return 1;
 }
-
-// Somewhere else
-ApplyActorAnimation(gMyActor, ...);
 
 // Somewhere else
 ClearActorAnimations(gMyActor);
