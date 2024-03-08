@@ -10,7 +10,7 @@ Set a radius limitation for the chat. Only players at a certain distance from th
 
 | Name              | Description                                          |
 | ----------------- | ---------------------------------------------------- |
-| Float:chat_radius | The range in which players will be able to see chat. |
+| Float:chatRadius  | The range in which players will be able to see chat. |
 
 ## Returns
 
@@ -31,4 +31,7 @@ public OnGameModeInit()
 - [SetNameTagDrawDistance](SetNameTagDrawDistance): Set the distance from where people can see other player's nametags.
 - [SendPlayerMessageToPlayer](SendPlayerMessageToPlayer): Force a player to send text for one player.
 - [SendPlayerMessageToAll](SendPlayerMessageToAll): Force a player to send text for all players.
+
+## Related Callbacks
+
 - [OnPlayerText](../callbacks/OnPlayerText): Called when a player sends a message via the chat.
