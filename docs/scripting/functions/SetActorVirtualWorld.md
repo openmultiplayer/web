@@ -1,7 +1,7 @@
 ---
 title: SetActorVirtualWorld
 description: Set the virtual world of an actor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -10,16 +10,16 @@ tags: []
 
 Set the virtual world of an actor. Only players in the same world will see the actor.
 
-| Name    | Description                                                                |
-| ------- | -------------------------------------------------------------------------- |
-| actorid | The ID of the actor (returned by CreateActor) to set the virtual world of. |
-| vworld  | The virtual world to put the actor ID.                                     |
+| Name         | Description                                                                |
+| ------------ | -------------------------------------------------------------------------- |
+| actorid      | The ID of the actor (returned by CreateActor) to set the virtual world of. |
+| virtualWorld | The virtual world to put the actor ID.                                     |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. The actor specified does not exist.
+**false** - The function failed to execute. The actor specified does not exist.
 
 ## Examples
 
