@@ -12,11 +12,11 @@ Checks if the given IP address is banned.
 
 | Name              | Description              |
 | ----------------- | ------------------------ |
-| const ipaddress[] | The IP address to check. |
+| const ipAddress[] | The IP address to check. |
 
 ## Returns
 
-Returns true if the IP address is banned, otherwise false.
+Returns **true** if the IP address is banned, otherwise **false**.
 
 ## Examples
 
@@ -31,7 +31,7 @@ if (IsBanned("255.255.255.255"))
 
 :::tip
 
-You can see the ban list in the bans.json file.
+You can see the ban list in the **bans.json** file.
 
 :::
 
