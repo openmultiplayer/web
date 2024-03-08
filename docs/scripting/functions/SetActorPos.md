@@ -1,7 +1,7 @@
 ---
 title: SetActorPos
 description: Set the position of an actor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -13,15 +13,15 @@ Set the position of an actor.
 | Name    | Description                                                          |
 | ------- | -------------------------------------------------------------------- |
 | actorid | The ID of the actor to set the position of. Returned by CreateActor. |
-| X       | The X coordinate to position the actor at.                           |
-| Y       | The Y coordinate to position the actor at.                           |
-| Z       | The Z coordinate to position the actor at.                           |
+| Float:x | The X coordinate to position the actor at.                           |
+| Float:y | The Y coordinate to position the actor at.                           |
+| Float:z | The Z coordinate to position the actor at.                           |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. The actor specified does not exist.
+**false** - The function failed to execute. The actor specified does not exist.
 
 ## Examples
 
@@ -30,19 +30,19 @@ new gMyActor;
 
 public OnGameModeInit()
 {
-    gMyActor = CreateActor(...);
+    gActorCJ = CreateActor(24, 2050.7544, -1920.0621, 13.5485, -180.0);
     return 1;
 }
 
 // Somewhere else
-SetActorPos(gMyActor, 1.0, 2.0, 3.0);
+SetActorPos(gMyActor, 2062.2332, -1908.1423, 13.5485);
 ```
 
 ## Notes
 
 :::tip
 
-When creating an actor with CreateActor, you specify it's position. You do not need to use this function unless you want to change its position later.
+When creating an actor with [CreateActor](CreateActor), you specify it's position. You do not need to use this function unless you want to change its position later.
 
 :::
 
