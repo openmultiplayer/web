@@ -10,10 +10,10 @@ tags: []
 
 Allows a character to be used in the nick name.
 
-| Name     | Description                             |
-| -------- | --------------------------------------- |
-| character | The character to allow or disallow.    |
-| bool:allow | true-Allow, false-Disallow            |
+| Name       | Description                         |
+| ---------- | ----------------------------------- |
+| character  | The character to allow or disallow. |
+| bool:allow | true-Allow, false-Disallow          |
 
 ## Returns
 
@@ -34,6 +34,7 @@ public OnGameModeInit()
 
 ## Related Functions
 
+- [IsNickNameCharacterAllowed](IsNickNameCharacterAllowed): Checks if a character is allowed in nickname.
 - [IsValidNickName](IsValidNickName): Checks if a nick name is valid.
 - [SetPlayerName](SetPlayerName): Sets the name of a player.
 - [GetPlayerName](GetPlayerName): Gets the name of a player.
