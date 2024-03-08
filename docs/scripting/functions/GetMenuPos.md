@@ -10,11 +10,11 @@ tags: ["menu"]
 
 Get the x/y screen position of the menu.
 
-| Name      | Description                                                       |
-| --------- | ----------------------------------------------------------------- |
-| Menu:menuid  | The ID of the menu.  |
-| &Float:x | A float variable in which to store the X position in, passed by reference. |
-| &Float:y | A float variable in which to store the Y position in, passed by reference. |
+| Name        | Description                                                                |
+| ----------- | -------------------------------------------------------------------------- |
+| Menu:menuid | The ID of the menu.                                                        |
+| &Float:x    | A float variable in which to store the X position in, passed by reference. |
+| &Float:y    | A float variable in which to store the Y position in, passed by reference. |
 
 ## Returns
 
