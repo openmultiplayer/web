@@ -10,13 +10,13 @@ tags: ["menu"]
 
 Checks if a menu is disabled.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| Menu:menuid | The ID of the menu to check.       |
+| Name        | Description                  |
+| ----------- | ---------------------------- |
+| Menu:menuid | The ID of the menu to check. |
 
 ## Returns
 
-Returns true if the menu is disabled, otherwise false.
+Returns **true** if the menu is disabled, otherwise **false**.
 
 ## Related Functions
 
