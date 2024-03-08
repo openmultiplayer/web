@@ -10,15 +10,15 @@ tags: ["menu"]
 
 Get the width of the one or two columns.
 
-| Name      | Description                                                       |
-| --------- | ----------------------------------------------------------------- |
-| Menu:menuid  | The ID of the menu.  |
+| Name                | Description                                                                   |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Menu:menuid         | The ID of the menu.                                                           |
 | &Float:column1Width | A float variable in which to store the column1 width in, passed by reference. |
 | &Float:column2Width | A float variable in which to store the column2 width in, passed by reference. |
 
 ## Returns
 
-This function always returns true.
+This function always returns **true**.
 
 ## Examples
 
