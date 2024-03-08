@@ -12,6 +12,12 @@ The function gets the number of open database results.
 
 The function has no parameters.
 
+## Examples
+
+```c
+printf("Database result set count: %d", DB_GetDatabaseResultSetCount());
+```
+
 ## Related Functions
 
 - [DB_Open](DB_Open): Open a connection to an SQLite database
