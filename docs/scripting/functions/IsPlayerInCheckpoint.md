@@ -14,7 +14,7 @@ Check if the player is currently inside a checkpoint, this could be used for pro
 
 ## Returns
 
-false if player isn't in his checkpoint else true
+**false** if the player isn't inside the checkpoint, otherwise **true**
 
 ## Examples
 
@@ -33,6 +33,9 @@ if (IsPlayerInCheckpoint(playerid))
 - [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
 - [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
+
+## Related Callbacks
+
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
 - [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Called when a player enters a race checkpoint.
