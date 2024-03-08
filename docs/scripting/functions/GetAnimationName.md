@@ -8,13 +8,13 @@ tags: []
 
 Get the animation library/name for the index.
 
-| Name       | Description                                               |
-| ---------- | --------------------------------------------------------- |
-| index      | The animation index, returned by GetPlayerAnimationIndex. |
-| animlib[]  | String variable that stores the animation library.        |
-| len1       | Size of the string that stores the animation library.     |
-| animname[] | String variable that stores the animation name.           |
-| len2       | Size of the string that stores the animation name.        |
+| Name                             | Description                                               |
+| -------------------------------- | --------------------------------------------------------- |
+| index                            | The animation index, returned by GetPlayerAnimationIndex. |
+| animationLibrary[]               | String variable that stores the animation library.        |
+| len1 = sizeof (animationLibrary) | Size of the string that stores the animation library.     |
+| animationName[]                  | String variable that stores the animation name.           |
+| len2 = sizeof (animationName)    | Size of the string that stores the animation name.        |
 
 ## Returns
 
