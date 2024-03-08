@@ -1,7 +1,7 @@
 ---
 title: IsActorInvulnerable
 description: Check if an actor is invulnerable.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -16,9 +16,9 @@ Check if an actor is invulnerable.
 
 ## Returns
 
-1: The actor is invulnerable.
+**true** - The actor is invulnerable.
 
-0: The actor is vulnerable.
+**false** - The actor is vulnerable.
 
 ## Examples
 
@@ -28,6 +28,7 @@ new gMyActor;
 public OnGameModeInit()
 {
     gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
+    
     if (IsActorInvulnerable(gMyActor))
     {
         print("Actor is invulnerable.");
