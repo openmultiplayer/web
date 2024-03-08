@@ -126,7 +126,7 @@ description: 精选的有帮助的工具、库和插件列表，供SA-MP开发�
 - **[samp-node](https://github.com/AmyrAhmady/samp-node)** - 为 SA:MP 编写游戏模式的 Javascript,Typescript 语言支持
 - **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - 为 SA:MP 编写游戏模式的 Java 语言支持
 - **[pySAMP](https://github.com/habecker/PySAMP)** - 为 SA:MP 编写游戏模式的 Python 语言支持
-- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - 为 SA:MP 编写游戏模式的 Rust 语言支持
+- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - 为 SA:MP 编写插件的 Rust 语言支持
 - **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - 为 SA:MP 编写游戏模式的 Lua 语言支持
 - **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - 为 SA:MP 编写游戏模式的 PHP 语言支持
 - **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - 为 SA:MP 编写游戏模式的 D 语言支持

@@ -1,38 +1,36 @@
 ---
 title: SetPVarFloat
 description: Set a float player variable's value.
-tags: ["pvar"]
+tags: ["player variable", "pvar"]
 ---
 
 ## Description
 
 Set a float player variable's value.
 
-| Name        | Description                                             |
-| ----------- | ------------------------------------------------------- |
-| playerid    | The ID of the player whose player variable will be set. |
-| varname     | The name of the player variable.                        |
-| float_value | The float you want to save in the player variable.      |
+| Name         | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| playerid     | The ID of the player whose player variable will be set. |
+| const pvar[] | The name of the player variable.                        |
+| Float:value  | The float you want to save in the player variable.      |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. Either the player specified is not connected, or the variable name is null or over 40 characters.
+**false** - The function failed to execute. Either the player specified is not connected, or the variable name is null or over 40 characters.
 
 ## Examples
 
 ```c
-forward SavePos(playerid);
-public SavePos(playerid)
+SavePlayerPos(playerid)
 {
-    new
-        Float: x, Float: y, Float: z;
-
+    new Float:x, Float:y, Float:z;
     GetPlayerPos(playerid, x, y, z); // Get the players position
-    SetPVarFloat(playerid, "xpos", x); // Save the float into a player variable
-    SetPVarFloat(playerid, "ypos", y); // Save the float into a player variable
-    SetPVarFloat(playerid, "zpos", z); // Save the float into a player variable
+
+    SetPVarFloat(playerid, "Xpos", x); // Save the float into a player variable
+    SetPVarFloat(playerid, "Ypos", y); // Save the float into a player variable
+    SetPVarFloat(playerid, "Zpos", z); // Save the float into a player variable
     return 1;
 }
 ```
@@ -41,7 +39,7 @@ public SavePos(playerid)
 
 :::tip
 
-Variables aren't reset until after OnPlayerDisconnect is called, so the values are still accessible in OnPlayerDisconnect.
+Variables aren't reset until after [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) is called, so the values are still accessible in OnPlayerDisconnect.
 
 :::
 

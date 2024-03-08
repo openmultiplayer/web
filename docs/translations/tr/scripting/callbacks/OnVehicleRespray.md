@@ -15,7 +15,7 @@ Bu callback, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağazasın
 | color1    | Aracın değiştirildiği yeni ana rengi.     |
 | color2    | Aracın değiştirildiği yeni ikinci rengi.  |
 
-## Çalışınca Vereceği Sonuçlar (Returns)
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman ilk olarak oyun modunda çağrılır, bu yüzden 0 döndürerek diğer filterscriptslerin görmesini engeller.
 

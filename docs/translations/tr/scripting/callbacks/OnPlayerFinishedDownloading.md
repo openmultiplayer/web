@@ -4,7 +4,7 @@ description: Bu callback, bir oyuncu model cache indirmesini bitirdiğinde çağ
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarnTR name='callback' version='SA-MP 0.3.DL R1' />
 
 ## Açıklama
 

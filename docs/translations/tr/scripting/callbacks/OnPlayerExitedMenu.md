@@ -12,7 +12,7 @@ Oyuncu bir menüden çıktığında çağrılır.
 | -------- | ----------------------------------------- |
 | playerid | Menüden çıkan oyuncunun ID'si             |
 
-## Çalışınca Vereceği Sonuçlar (Returns)
+## Çalışınca Vereceği Sonuçlar
 
 Her zaman öncelikle oyun modunda çağrılır.
 

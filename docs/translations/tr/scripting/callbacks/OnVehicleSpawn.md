@@ -18,7 +18,7 @@ Bu callback bir araç respawn edildiğinde çağrılır.
 | --------- | ----------------------------------- |
 | vehicleid | Spawnlanan aracın ID'si.            |
 
-## Çalışınca Vereceği Sonuçlar (Returns)
+## Çalışınca Vereceği Sonuçlar
 
 0 - Diğer filterscriptslerin bu callbacki çağırmasını önler.
 
