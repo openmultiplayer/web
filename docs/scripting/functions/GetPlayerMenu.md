@@ -14,7 +14,9 @@ Gets the ID of the menu the player is currently viewing (shown by ShowMenuForPla
 
 ## Returns
 
-The ID of the player's currently shown menu, or INVALID_MENU (255) if no menu shown. Value returned is tagged with Menu:.
+The ID of the player's currently shown menu, or `INVALID_MENU` (255) if no menu shown.
+
+Value returned is tagged with **Menu:**
 
 ## Examples
 
@@ -37,5 +39,8 @@ Returns previous menu when none is displayed.
 - [CreateMenu](CreateMenu): Create a menu.
 - [DestroyMenu](DestroyMenu): Destroy a menu.
 - [AddMenuItem](AddMenuItem): Add an item to a menu.
+
+## Related Callbacks
+
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Called when a player exits a menu.
