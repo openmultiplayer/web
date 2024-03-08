@@ -1,21 +1,29 @@
 ---
 title: BanEx
 description: Ban a player with a reason.
-tags: ["administration"]
+tags: ["player", "administration"]
 ---
 
 ## Description
 
 Ban a player with a reason.
 
-| Name     | Description                  |
-| -------- | ---------------------------- |
-| playerid | The ID of the player to ban. |
-| reason   | The reason for the ban.      |
+| Name           | Description                  |
+| -------------- | ---------------------------- |
+| playerid       | The ID of the player to ban. |
+| const reason[] | The reason for the ban.      |
 
 ## Returns
 
 This function does not return any specific values.
+
+## Notes
+
+:::warning
+
+Any action taken directly before BanEx() (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the ban.
+
+:::
 
 ## Examples
 
@@ -29,12 +37,16 @@ public OnPlayerCommandText( playerid, cmdtext[] )
         return 1;
     }
 }
-/*In order to display a message (eg. reason) for the player before the connection is closed
-you have to use a timer to create a delay. This delay needs only to be a few milliseconds long,
-but this example uses a full second just to be on the safe side.*/
+```
+
+<br />
+
+```c
+// In order to display a message (eg. reason) for the player before the connection is closed
+// you have to use a timer to create a delay. This delay needs only to be a few milliseconds long,
+// but this example uses a full second just to be on the safe side.
 
 forward BanExPublic(playerid, reason[]);
-
 public BanExPublic(playerid, reason[])
 {
     BanEx(playerid, reason);
@@ -58,14 +70,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
 }
 ```
-
-## Notes
-
-:::warning
-
-Any action taken directly before BanEx() (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the ban.
-
-:::
 
 ## Related Functions
 
