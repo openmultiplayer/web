@@ -12,6 +12,12 @@ The function gets the number of open database connections for debugging purposes
 
 The function has no parameters.
 
+## Examples
+
+```c
+printf("Database connection count: %d", DB_GetDatabaseConnectionCount());
+```
+
 ## Related Functions
 
 - [DB_Open](DB_Open): Open a connection to an SQLite database
