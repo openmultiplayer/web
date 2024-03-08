@@ -16,7 +16,7 @@ Frees result memory allocated from DB_ExecuteQuery.
 
 ## Returns
 
-Returns 1 if result set handle is valid, otherwise 0.
+Returns **true** if result set handle is valid, otherwise **false**.
 
 ## Examples
 
