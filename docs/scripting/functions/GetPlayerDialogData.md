@@ -25,9 +25,9 @@ Get the data of the dialog currently show to the player.
 
 ## Returns
 
-**true**: The function executed successfully.
+**true** - The function executed successfully.
 
-**false**: The function failed to execute. This means the player is not connected or they don't have a dialog open.
+**false** - The function failed to execute. This means the player is not connected or they don't have a dialog open.
 
 ## Examples
 
