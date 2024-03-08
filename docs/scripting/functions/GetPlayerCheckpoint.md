@@ -10,13 +10,13 @@ tags: ["player", "checkpoint"]
 
 Get the location of the current checkpoint.
 
-| Name     | Description                                                                  |
-| -------- | ---------------------------------------------------------------------------- |
-| playerid | The ID of the player to get the checkpoint position of.                                 |
+| Name           | Description                                                                        |
+| -------------- | ---------------------------------------------------------------------------------- |
+| playerid       | The ID of the player to get the checkpoint position of.                            |
 | &Float:centreX | A float variable in which to store the centreX coordinate in, passed by reference. |
 | &Float:centreY | A float variable in which to store the centreY coordinate in, passed by reference. |
 | &Float:centreZ | A float variable in which to store the centreZ coordinate in, passed by reference. |
-| &Float:radius | A float variable in which to store the radius in, passed by reference. |
+| &Float:radius  | A float variable in which to store the radius in, passed by reference.             |
 
 ## Returns
 
