@@ -8,11 +8,11 @@ tags: ["network monitoring", "ip address"]
 
 Get a player's IP and port.
 
-| Name        | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to get the IP and port of.                  |
-| ip_port[]   | A string array to store the IP and port in, passed by reference. |
-| ip_port_len | The maximum length of the IP/port. 22 is recommended.            |
+| Name                   | Description                                                      |
+| ---------------------- | ---------------------------------------------------------------- |
+| playerid               | The ID of the player to get the IP and port of.                  |
+| output[]               | A string array to store the IP and port in, passed by reference. |
+| size = sizeof (output) | The maximum length of the IP/port. 22 is recommended.            |
 
 ## Returns
 
@@ -21,7 +21,7 @@ The player's IP and port is stored in the specified array.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/ipandport"))
     {
