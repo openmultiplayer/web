@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).
-tags: []
+tags: ["dialog"]
 ---
 
 ## Description
@@ -21,6 +21,8 @@ This callback is called when a player responds to a dialog shown using ShowPlaye
 It is always called first in filterscripts so returning 1 there blocks other filterscripts from seeing it.
 
 ## Examples
+
+**DIALOG_STYLE_MSGBOX**
 
 ```c
 // Define the dialog ID so we can handle responses
@@ -46,6 +48,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // You MUST return 0 here! Just like OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 #define DIALOG_LOGIN 2
 
 // In some command
@@ -78,6 +85,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // You MUST return 0 here! Just like OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // In some command
@@ -90,11 +102,20 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // If they clicked 'Select' or double-clicked a weapon
         {
             // Give them the weapon
-            switch(listitem)
+            switch (listitem)
             {
-                case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Give them a desert eagle
-                case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Give them an AK-47
-                case 2: GivePlayerWeapon(playerid, WEAPON_SHOTGSPA, 28); // Give them a Combat Shotgun
+                case 0:
+                {
+                    GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Give them a desert eagle
+                }
+                case 1:
+                {
+                    GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Give them an AK-47
+                }
+                case 2:
+                {
+                    GivePlayerWeapon(playerid, WEAPON_SHOTGSPA, 28); // Give them a Combat Shotgun
+                }
             }
         }
         return 1; // We handled a dialog, so return 1. Just like OnPlayerCommandText.
@@ -102,10 +123,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // You MUST return 0 here! Just like OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_TABLIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // In some command
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST, "Weapons",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\
@@ -119,11 +145,20 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // If they clicked 'Select' or double-clicked a weapon
         {
             // Give them the weapon
-            switch(listitem)
+            switch (listitem)
             {
-                case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Give them an M4
-                case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Give them an MP5
-                case 2: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Give them an AK-47
+                case 0:
+                {
+                    GivePlayerWeapon(playerid, WEAPON_M4, 120); // Give them an M4
+                }
+                case 1:
+                {
+                    GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Give them an MP5
+                }
+                case 2:
+                {
+                    GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Give them an AK-47
+                }
             }
         }
         return 1; // We handled a dialog, so return 1. Just like OnPlayerCommandText.
@@ -158,3 +193,6 @@ A player's dialog doesn't hide when the gamemode restarts, causing the server to
 The following functions might be useful, as they're related to this callback in one way or another. 
 
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): Show a dialog to a player.
+- [GetPlayerDialogID](../functions/GetPlayerDialogID): Get the ID of the dialog currently show to the player.
+- [GetPlayerDialogData](../functions/GetPlayerDialogData): Get the data of the dialog currently show to the player.
+- [HidePlayerDialog](../functions/HidePlayerDialog): Hides the dialog currently show to the player.
