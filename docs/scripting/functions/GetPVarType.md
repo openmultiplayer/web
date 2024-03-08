@@ -1,17 +1,17 @@
 ---
 title: GetPVarType
 description: Gets the type (integer, float or string) of a player variable.
-tags: ["pvar"]
+tags: ["player variable", "pvar"]
 ---
 
 ## Description
 
 Gets the type (integer, float or string) of a player variable.
 
-| Name     | Description                                                    |
-| -------- | -------------------------------------------------------------- |
-| playerid | The ID of the player whose player variable to get the type of. |
-| varname  | The name of the player variable to get the type of.            |
+| Name         | Description                                                    |
+| ------------ | -------------------------------------------------------------- |
+| playerid     | The ID of the player whose player variable to get the type of. |
+| const pvar[] | The name of the player variable to get the type of.            |
 
 ## Returns
 
@@ -44,6 +44,14 @@ stock PrintPVar(playerid, varname[])
             printf("String PVar '%s': %s", varname, varstring);
         }
     }
+    return 1;
+}
+
+public OnPlayerConnect(playerid)
+{
+    SetPVarInt(playerid, "Level", 20);
+
+    PrintPVar(playerid, "Level"); // Output: "Integer PVar 'Level': 20"
     return 1;
 }
 ```

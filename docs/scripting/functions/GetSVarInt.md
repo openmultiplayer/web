@@ -1,7 +1,7 @@
 ---
 title: GetSVarInt
 description: Gets an integer server variable's value.
-tags: []
+tags: ["server variable", "svar"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7 R2' />
@@ -10,19 +10,22 @@ tags: []
 
 Gets an integer server variable's value.
 
-| Name    | Description                                                                 |
-| ------- | --------------------------------------------------------------------------- |
-| varname | The name of the server variable (case-insensitive). Assigned in SetSVarInt. |
+| Name         | Description                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| const svar[] | The name of the server variable (case-insensitive).<br />Assigned in [SetSVarInt](SetSVarInt). |
 
 ## Returns
 
-The integer value of the specified server variable. It will still return 0 if the variable is not set.
+The integer value of the specified server variable.
+
+It will still return 0 if the variable is not set.
 
 ## Examples
 
 ```c
 // set "Version"
 SetSVarInt("Version", 37);
+
 // will print version that server has
 printf("Version: %d", GetSVarInt("Version"));
 ```

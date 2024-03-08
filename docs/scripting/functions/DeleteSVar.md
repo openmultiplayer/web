@@ -1,22 +1,22 @@
 ---
 title: DeleteSVar
 description: Deletes a previously set server variable.
-tags: []
+tags: ["server variable", "svar"]
 ---
 
 ## Description
 
 Deletes a previously set server variable.
 
-| Name    | Description                                |
-| ------- | ------------------------------------------ |
-| varname | The name of the server variable to delete. |
+| Name         | Description                                |
+| ------------ | ------------------------------------------ |
+| const svar[] | The name of the server variable to delete. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. There is no variable set with the given name.
+**false** - The function failed to execute. There is no variable set with the given name.
 
 ## Examples
 
@@ -32,7 +32,7 @@ DeleteSVar("SomeVarName");
 
 :::tip
 
-Once a variable is deleted, attempts to retrieve the value will return 0 (for integers and floats and NULL for strings).
+Once a variable is deleted, attempts to retrieve the value will return 0 for integers and 0.0 for floats and NULL for strings.
 
 :::
 

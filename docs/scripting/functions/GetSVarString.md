@@ -1,7 +1,7 @@
 ---
 title: GetSVarString
 description: Gets a string server variable's value.
-tags: []
+tags: ["server variable", "svar"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7 R2' />
@@ -10,11 +10,11 @@ tags: []
 
 Gets a string server variable's value.
 
-| Name          | Description                                                                    |
-| ------------- | ------------------------------------------------------------------------------ |
-| varname       | The name of the server variable (case-insensitive). Assigned in SetSVarString. |
-| string_return | The array in which to store the string value in, passed by reference.          |
-| len           | The maximum length of the returned string.                                     |
+| Name                  | Description                                                                                          |
+| --------------------- | ---------------------------------------------------------------------------------------------------- |
+| const svar[]          | The name of the server variable (case-insensitive).<br />Assigned in [SetSVarString](SetSVarString). |
+| output[]              | The array in which to store the string value in, passed by reference.                                |
+| len = sizeof (output) | The maximum length of the returned string.                                                           |
 
 ## Returns
 
@@ -25,6 +25,7 @@ The length of the string.
 ```c
 // set "Version"
 SetSVarString("Version", "0.3.7");
+
 // will print version that server has
 new string[5 + 1];
 GetSVarString("Version", string, sizeof(string));

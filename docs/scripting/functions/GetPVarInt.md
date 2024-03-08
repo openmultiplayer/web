@@ -1,29 +1,37 @@
 ---
 title: GetPVarInt
 description: Gets an integer player variable's value.
-tags: ["pvar"]
+tags: ["player variable", "pvar"]
 ---
 
 ## Description
 
 Gets an integer player variable's value.
 
-| Name     | Description                                                                 |
-| -------- | --------------------------------------------------------------------------- |
-| playerid | The ID of the player whose player variable to get.                          |
-| varname  | The name of the player variable (case-insensitive). Assigned in SetPVarInt. |
+| Name         | Description                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| playerid     | The ID of the player whose player variable to get.                                             |
+| const pvar[] | The name of the player variable (case-insensitive).<br />Assigned in [SetPVarInt](SetPVarInt). |
 
 ## Returns
 
-The integer value of the specified player variable. It will still return 0 if the variable is not set, or the player does not exist.
+The integer value of the specified player variable.
+
+It will still return 0 if the variable is not set, or the player does not exist.
 
 ## Examples
 
 ```c
-public OnPlayerDisconnect(playerid,reason)
+public OnPlayerSpawn(playerid)
 {
-    printf("money: %d", GetPVarInt(playerid, "money")); // get the saved value ('money')
-    // will print 'money: amount'
+    SetPVarInt(playerid, "Level", 20);
+    return 1;
+}
+
+public OnPlayerDisconnect(playerid, reason)
+{
+    printf("Level: %d", GetPVarInt(playerid, "Level")); // get the saved value ('Level')
+    // will print 'Level: 20'
     return 1;
 }
 ```
@@ -32,7 +40,7 @@ public OnPlayerDisconnect(playerid,reason)
 
 :::tip
 
-Variables aren't reset until after OnPlayerDisconnect is called, so the values are still accessible in OnPlayerDisconnect.
+Variables aren't reset until after [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) is called, so the values are still accessible in OnPlayerDisconnect.
 
 :::
 

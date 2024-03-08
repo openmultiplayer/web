@@ -1,17 +1,17 @@
 ---
 title: GetPVarFloat
 description: Gets a player variable as a float.
-tags: ["pvar"]
+tags: ["player variable", "pvar"]
 ---
 
 ## Description
 
 Gets a player variable as a float.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player whose player variable you want to get. |
-| varname  | The name of the player variable.                            |
+| Name         | Description                                                 |
+| ------------ | ----------------------------------------------------------- |
+| playerid     | The ID of the player whose player variable you want to get. |
+| const pvar[] | The name of the player variable.                            |
 
 ## Returns
 
@@ -20,10 +20,15 @@ The float from the specified player variable
 ## Examples
 
 ```c
-forward LoadPos(playerid);
-public LoadPos(playerid)
+LoadPlayerPos(playerid)
 {
-    SetPlayerPos(playerid, GetPVarFloat(playerid,"xpos"), GetPVarFloat(playerid,"ypos"), GetPVarFloat(playerid,"zpos"));
+    new Float:x, Float:y, Float:z;
+
+    x = GetPVarFloat(playerid, "Xpos");
+    y = GetPVarFloat(playerid, "Ypos");
+    z = GetPVarFloat(playerid, "Zpos");
+
+    SetPlayerPos(playerid, x, y, z);
     return 1;
 }
 ```
@@ -32,7 +37,7 @@ public LoadPos(playerid)
 
 :::tip
 
-Variables aren't reset until after OnPlayerDisconnect is called, so the values are still accessible in OnPlayerDisconnect.
+Variables aren't reset until after [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) is called, so the values are still accessible in OnPlayerDisconnect.
 
 :::
 

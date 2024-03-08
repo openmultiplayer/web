@@ -1,7 +1,7 @@
 ---
 title: GetSVarFloat
 description: Gets a float server variable's value.
-tags: []
+tags: ["server variable", "svar"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7 R2' />
@@ -10,21 +10,24 @@ tags: []
 
 Gets a float server variable's value.
 
-| Name    | Description                                                                   |
-| ------- | ----------------------------------------------------------------------------- |
-| varname | The name of the server variable (case-insensitive). Assigned in SetSVarFloat. |
+| Name         | Description                                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| const svar[] | The name of the server variable (case-insensitive).<br />Assigned in [SetSVarFloat](SetSVarFloat). |
 
 ## Returns
 
-The float value of the specified server variable. It will still return 0 if the variable is not set.
+The float value of the specified server variable.
+
+It will still return 0.0 if the variable is not set.
 
 ## Examples
 
 ```c
 // set "Version"
 SetSVarFloat("Version", 0.37);
+
 // will print version that server has
-printf("Version: %f", GetSVarFloat("Version"));
+printf("Version: %.2f", GetSVarFloat("Version"));
 ```
 
 ## Related Functions

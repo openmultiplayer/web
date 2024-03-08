@@ -1,7 +1,7 @@
 ---
 title: SetPVarString
 description: Saves a string into a player variable.
-tags: ["pvar"]
+tags: ["player variable", "pvar"]
 ---
 
 ## Description
@@ -9,10 +9,10 @@ tags: ["pvar"]
 Saves a string into a player variable.
 
 | Name             | Description                                             |
-|------------------|---------------------------------------------------------|
+| ---------------- | ------------------------------------------------------- |
 | playerid         | The ID of the player whose player variable will be set. |
-| varname[]        | The name of the player variable.                        |
-| string_value[]   | The string you want to save in the player variable.     |
+| const pvar[]     | The name of the player variable.                        |
+| const value[]    | The string you want to save in the player variable.     |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.              |
 
 ## Returns
@@ -44,7 +44,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Variables aren't reset until after OnPlayerDisconnect is called, so the values are still accessible in OnPlayerDisconnect.
+Variables aren't reset until after [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) is called, so the values are still accessible in OnPlayerDisconnect.
 
 :::
 
