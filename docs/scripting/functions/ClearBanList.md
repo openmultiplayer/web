@@ -12,9 +12,9 @@ Clears the ban list.
 
 ## Returns
 
-false: Failed to execute the function.
+**true** - Success.
 
-true: Success.
+**false** - Failed to execute the function.
 
 ## Examples
 
@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-You can see the ban list in the bans.json file.
+You can see the ban list in the **bans.json** file.
 
 :::
 
