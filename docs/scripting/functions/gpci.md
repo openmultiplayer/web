@@ -18,51 +18,60 @@ A player's CI is NOT UNIQUE, some players may have similar or the same CI, don't
 
 ## Parameters
 
-| Name     | Description                                      |
-| -------- | ------------------------------------------------ |
-| playerid | The ID of the player to fetch their CI.          |
-| string[] | String to store the fetched CI in.               |
-| length   | Assigned size of the string, should use sizeof() |
+| Name                  | Description                             |
+| --------------------- | --------------------------------------- |
+| playerid              | The ID of the player to fetch their CI. |
+| serial[]              | String to store the fetched CI in.      |
+| len = sizeof (serial) | Assigned size of the string.            |
 
 ## Return Values
 
 This function will return the string value of a user's CI.
 
-:::warning
-
-You must add 'native gpci(playerid, serial[], len);' at the top of your script before using any CI functions
-
-:::
-
 ## Example Usage
 
+**SA-MP server:**
+
 ```c
+#include <a_samp>
+
 #if !defined gpci
     native gpci(playerid, serial[], len);
 #endif
 
-new szSerial[41]; // 40 + \0
-
-gpci(iPlayerID, szSerial, sizeof(szSerial));
-return szSerial;
-```
-
-:::tip
-
-This function may come in handy to easily get someone's CI.
-
-:::
-
-```c
-ReturnCI(iPlayerID)
+public OnPlayerConnect(playerid)
 {
-    new
-        szSerial[41]; // 40 + \0
+    new serial[41]; // 40 + \0
+    gpci(playerid, serial, sizeof(serial));
 
-    gpci(iPlayerID, szSerial, sizeof(szSerial));
-    return szSerial;
+    new string[128];
+    format(string, sizeof(string), "Your CI Serial: %s", serial);
+    SendClientMessage(playerid, -1, string);
+    return 1;
 }
 ```
+
+**open.mp server:**
+
+```c
+#include <open.mp>
+
+public OnPlayerConnect(playerid)
+{
+    new serial[41]; // 40 + \0
+    GPCI(playerid, serial, sizeof(serial));
+    SendClientMessage(playerid, -1, "Your CI Serial: %s", serial);
+    return 1;
+}
+```
+
+## Notes
+
+:::warning
+
+In SA-MP server you must add 'native gpci(playerid, serial[], len);' at the top of your script before using any CI functions.
+
+:::
 
 ## Related Functions
 
