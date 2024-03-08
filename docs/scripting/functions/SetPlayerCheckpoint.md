@@ -8,19 +8,19 @@ tags: ["player", "checkpoint"]
 
 Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the radar. When players enter a checkpoint, OnPlayerEnterCheckpoint is called and actions can be performed.
 
-| Name       | Description                                        |
-| ---------- | -------------------------------------------------- |
-| playerid   | The ID of the player for whom to set a checkpoint. |
-| Float:x    | The X coordinate to set the checkpoint at.         |
-| Float:y    | The Y coordinate to set the checkpoint at.         |
-| Float:z    | The Z coordinate to set the checkpoint at.         |
-| Float:size | The size of the checkpoint.                        |
+| Name          | Description                                        |
+| ------------- | -------------------------------------------------- |
+| playerid      | The ID of the player for whom to set a checkpoint. |
+| Float:centreX | The X coordinate to set the checkpoint at.         |
+| Float:centreY | The Y coordinate to set the checkpoint at.         |
+| Float:centreZ | The Z coordinate to set the checkpoint at.         |
+| Float:radius  | The size of the checkpoint.                        |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
@@ -28,7 +28,7 @@ Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the rada
 // In this example the player's checkpoint will be set when they spawn.
 // On entering the checkpoint they will receive $1000 and the checkpoint will be disabled.
 
-new bool: gOnCheck[MAX_PLAYERS];
+new bool:gOnCheck[MAX_PLAYERS];
 
 public OnPlayerSpawn(playerid)
 {
@@ -66,6 +66,9 @@ Checkpoints are asynchronous, meaning only one can be shown at a time. To 'strea
 - [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
 - [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
+
+## Related Callbacks
+
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
 - [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Called when a player enters a race checkpoint.
