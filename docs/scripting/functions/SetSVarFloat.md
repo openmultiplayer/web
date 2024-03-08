@@ -1,7 +1,7 @@
 ---
 title: SetSVarFloat
 description: Set a float server variable.
-tags: []
+tags: ["server variable", "svar"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7 R2' />
@@ -10,24 +10,25 @@ tags: []
 
 Set a float server variable.
 
-| Name        | Description                      |
-| ----------- | -------------------------------- |
-| varname[]   | The name of the server variable. |
-| float_value | The float to be set.             |
+| Name         | Description                      |
+| ------------ | -------------------------------- |
+| const svar[] | The name of the server variable. |
+| Float:value  | The float to be set.             |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The variable name is null or over 40 characters.
+**false** - The function failed to execute. The variable name is null or over 40 characters.
 
 ## Examples
 
 ```c
 // set "Version"
 SetSVarFloat("Version", 0.37);
+
 // will print version that server has
-printf("Version: %f", GetSVarFloat("Version"));
+printf("Version: %.2f", GetSVarFloat("Version"));
 ```
 
 ## Related Functions
