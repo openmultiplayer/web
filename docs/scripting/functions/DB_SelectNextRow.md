@@ -16,7 +16,7 @@ The function moves to the next row of the result set allocated with [DB_ExecuteQ
 
 ## Returns
 
-Returns 1 if result set handle is valid and the last row is not reached yet, otherwise 0.
+Returns **true** if result set handle is valid and the last row is not reached yet, otherwise **false**.
 
 ## Examples
 
