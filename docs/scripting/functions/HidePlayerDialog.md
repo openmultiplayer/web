@@ -16,9 +16,9 @@ Hides any dialog the player may currently be able to see.
 
 ## Returns
 
-`true` - The function was executed successfully.
+**true** - The function was executed successfully.
 
-`false` - The function failed to execute. This means the player is not connected or they aren't looking at a dialog.
+**false** - The function failed to execute. This means the player is not connected or they aren't looking at a dialog.
 
 ## Examples
 
