@@ -26,6 +26,16 @@ This can not be reversed until the server restarts.
 
 :::
 
+:::tip
+
+You can also disable nametags Line-Of-Sight via [config.json](../../server/config.json)
+
+```json
+"use_nametag_los": false,
+```
+
+:::
+
 ## Related Functions
 
 - [ShowNameTags](ShowNameTags): Set nametags on or off.
