@@ -10,16 +10,16 @@ tags: ["sqlite"]
 
 Get the contents of field with specified name.
 
-| Name            | Description                        |
-|-----------------|------------------------------------|
-| DBResult:result | The result to get the data from    |
-| const field[]   | The fieldname to get the data from |
-| output[]        | The result                         |
-| size            | The max length of the field        |
+| Name                   | Description                        |
+| ---------------------- | ---------------------------------- |
+| DBResult:result        | The result to get the data from    |
+| const field[]          | The fieldname to get the data from |
+| output[]               | The result                         |
+| size = sizeof (output) | The max length of the field        |
 
 ## Returns
 
-Returns 1 if result set handle is valid and the column is available, otherwise 0.
+Returns **true** if result set handle is valid and the column is available, otherwise **false**.
 
 ## Examples
 

@@ -10,16 +10,16 @@ tags: ["sqlite"]
 
 Returns the name of a field at a particular index.
 
-| Name            | Description                                                                      |
-|-----------------|----------------------------------------------------------------------------------|
-| DBResult:result | The result to get the data from; returned by [DB_ExecuteQuery](DB_ExecuteQuery). |
-| field           | The index of the field to get the name of.                                       |
-| output[]        | The result.                                                                      |
-| size            | The max length of the field.                                                     |
+| Name                   | Description                                                                      |
+| ---------------------- | -------------------------------------------------------------------------------- |
+| DBResult:result        | The result to get the data from; returned by [DB_ExecuteQuery](DB_ExecuteQuery). |
+| field                  | The index of the field to get the name of.                                       |
+| output[]               | The result.                                                                      |
+| size = sizeof (output) | The max length of the field.                                                     |
 
 ## Returns
 
-Returns 1 if result set handle is valid, otherwise 0.
+Returns **true** if result set handle is valid, otherwise **false**.
 
 ## Examples
 

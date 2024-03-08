@@ -10,16 +10,16 @@ tags: ["sqlite"]
 
 Get the content of a field from DB_ExecuteQuery
 
-| Name            | Description                      |
-|-----------------|----------------------------------|
-| DBResult:result | The result to get the data from. |
-| field           | The field to get the data from.  |
-| output[]        | The result.                      |
-| size            | The max length of the field.     |
+| Name                   | Description                      |
+| ---------------------- | -------------------------------- |
+| DBResult:result        | The result to get the data from. |
+| field                  | The field to get the data from.  |
+| output[]               | The result.                      |
+| size = sizeof (output) | The max length of the field.     |
 
 ## Returns
 
-Returns 1 if result set handle is valid and the column is available, otherwise 0.
+Returns **true** if result set handle is valid and the column is available, otherwise **false**.
 
 ## Example
 

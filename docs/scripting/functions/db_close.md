@@ -18,9 +18,9 @@ Closes a SQLite database connection that was opened with [db_open](db_open).
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This could mean that the database connection handle is invalid.
+**false** - The function failed to execute. This could mean that the database connection handle is invalid.
 
 ## Examples
 
