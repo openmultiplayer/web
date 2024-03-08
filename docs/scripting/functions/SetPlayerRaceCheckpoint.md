@@ -22,9 +22,9 @@ Creates a race checkpoint. When the player enters it, the OnPlayerEnterRaceCheck
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
@@ -74,6 +74,9 @@ Race checkpoints are asynchronous, meaning only one can be shown at a time. To '
 - [GetPlayerRaceCheckpoint](GetPlayerRaceCheckpoint): Get the location of the current race checkpoint.
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
 - [IsPlayerRaceCheckpointActive](IsPlayerRaceCheckpointActive): Check if the player currently has a race checkpoint visible.
+
+## Related Callbacks
+
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
 - [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Called when a player enters a race checkpoint.
