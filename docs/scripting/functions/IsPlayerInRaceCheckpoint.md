@@ -14,16 +14,16 @@ Check if the player is inside their current set race checkpoint (SetPlayerRaceCh
 
 ## Returns
 
-0: Player is not in a race checkpoint.
+**true** - Player is in a race checkpoint.
 
-1: Player is in a race checkpoint.
+**false** - Player is not in a race checkpoint.
 
 ## Examples
 
 ```c
 if (IsPlayerInRaceCheckpoint(playerid))
 {
-    SetPlayerHealth(playerid, 100);
+    SetPlayerHealth(playerid, 100.0);
 }
 ```
 
@@ -35,6 +35,9 @@ if (IsPlayerInRaceCheckpoint(playerid))
 - [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Check if a player is in a checkpoint.
 - [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
 - [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
+
+## Related Callbacks
+
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
 - [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Called when a player enters a race checkpoint.
