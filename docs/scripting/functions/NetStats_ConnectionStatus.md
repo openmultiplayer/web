@@ -19,13 +19,28 @@ The player's [connection status](../resources/connectionstatus), as an integer v
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/connectionstatus"))
     {
-        new szString[144];
-        format(szString, sizeof(szString), "Your current connection status: %i.", NetStats_ConnectionStatus(playerid));
-        SendClientMessage(playerid, -1, szString);
+        static ConnectionStatuses[9][48] = 
+        {
+            "No Action",
+            "Disconnect ASAP",
+            "Disconnect ASAP Silently",
+            "Disconnect On No Ack",
+            "Requested Connection",
+            "Handling Connection Request",
+            "Unverified Sender",
+            "Set Encryption On Multiple 16 Byte Packet",
+            "Connected"
+        };
+
+        new connectionStatus = NetStats_ConnectionStatus(playerid);
+
+        new string[144];
+        format(string, sizeof(string), "Your current connection status: %s", ConnectionStatuses[connectionStatus]);
+        SendClientMessage(playerid, -1, string);
     }
     return 1;
 }
