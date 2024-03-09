@@ -1,7 +1,7 @@
 ---
 title: OnObjectMoved
 description: This callback is called when an object is moved after MoveObject (when it stops moving).
-tags: []
+tags: ["object"]
 ---
 
 ## Description
@@ -30,7 +30,7 @@ public OnObjectMoved(objectid)
 
 :::tip
 
-SetObjectPos does not work when used in this callback. To fix it, recreate the object.
+[SetObjectPos](SetObjectPos) does not work when used in this callback. To fix it, recreate the object.
 
 :::
 
