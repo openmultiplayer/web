@@ -17,7 +17,7 @@ description: به یک بازیکن مشخص شده پول بدهید یا از 
 </div>
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (killerid != INVALID_PLAYER_ID)
     {

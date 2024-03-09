@@ -21,7 +21,7 @@ Ova funkcija uvijek returna (vraća) 1.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Ovaj primjer prikazuje veliki, bijeli tekst koji kaže
     // "[playerName] je preminuo" na ekranu svih,

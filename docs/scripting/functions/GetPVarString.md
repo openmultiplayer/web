@@ -30,7 +30,7 @@ public OnPlayerConnect(playerid,reason)
     return 1;
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     new playerName[MAX_PLAYER_NAME];
     GetPVarString(playerid, "PlayerName", playerName, sizeof(playerName));

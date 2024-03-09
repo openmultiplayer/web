@@ -22,7 +22,7 @@ Postavite rezultat (score) igrača. Rezultati igrača prikazuju se na scoreboard
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Dodaj 1 na rezultat (score) ubice. Moramo provjeriti da li je validan prvo.
     if (killerid != INVALID_PLAYER_ID)

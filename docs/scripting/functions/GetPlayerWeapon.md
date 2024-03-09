@@ -19,7 +19,7 @@ The ID of the player's current weapon. Returns -1 if the player specified does n
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Check if the killerid is not an invalid player (which means is connected).
     if (killerid != INVALID_PLAYER_ID)

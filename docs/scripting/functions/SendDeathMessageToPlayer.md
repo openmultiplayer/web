@@ -24,7 +24,7 @@ Adds a death to the 'killfeed' on the right-hand side of the screen for a single
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Sends a death message to "playerid" shows that "killerid" killed "playerid" for "reason"
     SendDeathMessageToPlayer(playerid, killerid, playerid, reason);

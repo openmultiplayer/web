@@ -19,7 +19,7 @@ Removes attached objects.
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (IsPlayerHoldingObject(playerid))
     {

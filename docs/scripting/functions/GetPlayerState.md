@@ -19,7 +19,7 @@ The player's current state as an integer (see: [Player States](../resources/play
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     new playerState = GetPlayerState(killerid); // Get the killer's state
 

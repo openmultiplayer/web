@@ -22,7 +22,7 @@ This function does not return any specific value.
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     HideGameTextForPlayer(playerid, 3);
     return 1;

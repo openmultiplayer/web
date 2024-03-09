@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
     PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0xFF00FFFF);
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Check if gangzone exists and also check if it flashing
     // If true, then stop flashing gangzone

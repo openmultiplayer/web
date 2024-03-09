@@ -21,7 +21,7 @@ Removes all weapons from a player.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Remove the killer's weapons
     ResetPlayerWeapons(killerid);

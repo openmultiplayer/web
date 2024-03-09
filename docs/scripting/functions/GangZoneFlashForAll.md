@@ -28,7 +28,7 @@ public OnGameModeInit()
     return 1;
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     GangZoneFlashForAll(gGangZoneId, 0xFF0000FF); // Red
     return 1;

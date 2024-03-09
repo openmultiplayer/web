@@ -19,7 +19,7 @@ Uklanja prikvačene objekte.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (IsPlayerHoldingObject(playerid))
     {

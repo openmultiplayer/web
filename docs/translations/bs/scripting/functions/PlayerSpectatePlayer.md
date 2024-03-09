@@ -23,7 +23,7 @@ Daje mogućnost igraču da spectate-a (nadgleda) drugog igrača.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     TogglePlayerSpectating(playerid, 1);
     PlayerSpectatePlayer(playerid, killerid);

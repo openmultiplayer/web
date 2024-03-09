@@ -21,7 +21,7 @@ This function always returns 1, even if the function fails to execute. The funct
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason);
     return 1;
