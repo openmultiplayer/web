@@ -1,7 +1,7 @@
 ---
 title: AttachObjectToObject
 description: You can use this function to attach objects to other objects.
-tags: []
+tags: ["object"]
 ---
 
 ## Description
@@ -9,22 +9,22 @@ tags: []
 You can use this function to attach objects to other objects. The objects will follow the main object.
 
 | Name              | Description                                                               |
-|-------------------|---------------------------------------------------------------------------|
+| ----------------- | ------------------------------------------------------------------------- |
 | objectid          | The object to attach to another object.                                   |
-| attachtoid        | The object to attach the object to.                                       |
-| Float:OffsetX     | The distance between the main object and the object in the X direction.   |
-| Float:OffsetY     | The distance between the main object and the object in the Y direction.   |
-| Float:OffsetZ     | The distance between the main object and the object in the Z direction.   |
-| Float:RotX        | The X rotation between the object and the main object.                    |
-| Float:RotY        | The Y rotation between the object and the main object.                    |
-| Float:RotZ        | The Z rotation between the object and the main object.                    |
-| bool:SyncRotation | If set to `false`, objectid's rotation will not change with attachtoid's. |
+| parentid          | The object to attach the object to.                                       |
+| Float:offsetX     | The distance between the main object and the object in the X direction.   |
+| Float:offsetY     | The distance between the main object and the object in the Y direction.   |
+| Float:offsetZ     | The distance between the main object and the object in the Z direction.   |
+| Float:rotationX   | The X rotation between the object and the main object.                    |
+| Float:rotationY   | The Y rotation between the object and the main object.                    |
+| Float:rotationZ   | The Z rotation between the object and the main object.                    |
+| bool:syncRotation | If set to `false`, objectid's rotation will not change with attachtoid's. |
 
 ## Returns
 
-`true` - The function executed successfully.
+**true** - The function executed successfully.
 
-`false` - The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
+**false** - The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
 
 ## Examples
 
