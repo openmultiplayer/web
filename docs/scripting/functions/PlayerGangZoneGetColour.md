@@ -19,7 +19,26 @@ Get the colour of a player gangzone.
 
 Color of player gangzone.
 
-0: Failed to execute the function. The player gangzone is not shown for the player.
+**0:** Failed to execute the function. The player gangzone is not shown for the player.
+
+## Examples
+
+```c
+new gGangZoneID[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    // Create the gangzone
+    gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
+
+    // Show the gangzone to player
+    PlayerGangZoneShow(playerid, gGangZoneID[playerid], 0xFF0000FF);
+
+    new colour = PlayerGangZoneGetColour(playerid, gGangZoneID[playerid]);
+    // colour = 0xFF0000FF
+    return 1;
+}
+```
 
 ## Related Functions
 
