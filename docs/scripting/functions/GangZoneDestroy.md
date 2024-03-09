@@ -8,9 +8,9 @@ tags: ["gangzone"]
 
 Destroy a gangzone.
 
-| Name | Description                    |
-| ---- | ------------------------------ |
-| zone | The ID of the zone to destroy. |
+| Name   | Description                    |
+| ------ | ------------------------------ |
+| zoneid | The ID of the zone to destroy. |
 
 ## Returns
 
@@ -21,10 +21,19 @@ Destroy a gangzone.
 ## Examples
 
 ```c
-new gangZoneId;
-gangZoneId = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
+new gangZone;
 
-GangZoneDestroy(gangZoneId);
+public OnGameModeInit()
+{
+    gangZone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
+    return 1;
+}
+
+public OnGameModeExit()
+{
+    GangZoneDestroy(gangZone);
+    return 1;
+}
 ```
 
 ## Related Functions
