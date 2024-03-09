@@ -1,27 +1,27 @@
 ---
 title: AttachObjectToPlayer
 description: Attach an object to a player.
-tags: ["player"]
+tags: ["object", "player"]
 ---
 
 ## Description
 
 Attach an object to a player.
 
-| Name          | Description                                                        |
-| ------------- | ------------------------------------------------------------------ |
-| objectid      | The ID of the object to attach to the player.                      |
-| playerid      | The ID of the player to attach the object to.                      |
-| Float:OffsetX | The distance between the player and the object in the X direction. |
-| Float:OffsetY | The distance between the player and the object in the Y direction. |
-| Float:OffsetZ | The distance between the player and the object in the Z direction. |
-| Float:RotX    | The X rotation between the object and the player.                  |
-| Float:RotY    | The Y rotation between the object and the player.                  |
-| Float:RotZ    | The Z rotation between the object and the player.                  |
+| Name            | Description                                                        |
+| --------------- | ------------------------------------------------------------------ |
+| objectid        | The ID of the object to attach to the player.                      |
+| parentid        | The ID of the player to attach the object to.                      |
+| Float:offsetX   | The distance between the player and the object in the X direction. |
+| Float:offsetY   | The distance between the player and the object in the Y direction. |
+| Float:offsetZ   | The distance between the player and the object in the Z direction. |
+| Float:rotationX | The X rotation between the object and the player.                  |
+| Float:rotationY | The Y rotation between the object and the player.                  |
+| Float:rotationZ | The Z rotation between the object and the player.                  |
 
 ## Returns
 
-This function always returns 0.
+This function always returns **false**.
 
 ## Examples
 
