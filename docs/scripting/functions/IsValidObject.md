@@ -1,7 +1,7 @@
 ---
 title: IsValidObject
 description: Checks if an object with the ID provided exists.
-tags: []
+tags: ["object"]
 ---
 
 ## Description
@@ -14,16 +14,28 @@ Checks if an object with the ID provided exists.
 
 ## Returns
 
-1: The object exists.
+**true** - The object exists.
 
-0: The object does not exist.
+**false** - The object does not exist.
 
 ## Examples
 
 ```c
-if (IsValidObject(objectid))
+new objectid;
+
+public OnGameModeInit()
 {
-	DestroyObject(objectid);
+    objectid = CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+    return 1;
+}
+
+public OnGameModeExit()
+{
+	if (IsValidObject(objectid))
+	{
+		DestroyObject(objectid);
+	}
+    return 1;
 }
 ```
 
