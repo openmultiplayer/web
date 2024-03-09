@@ -1,7 +1,7 @@
 ---
 title: GetObjectPos
 description: Get the position of an object.
-tags: []
+tags: ["object"]
 ---
 
 ## Description
@@ -11,21 +11,30 @@ Get the position of an object.
 | Name     | Description                                                         |
 | -------- | ------------------------------------------------------------------- |
 | objectid | The ID of the object to get the position of..                       |
-| &Float:X | A variable in which to store the X coordinate, passed by reference. |
-| &Float:Y | A variable in which to store the Y coordinate, passed by reference. |
-| &Float:Z | A variable in which to store the Z coordinate, passed by reference. |
+| &Float:x | A variable in which to store the X coordinate, passed by reference. |
+| &Float:y | A variable in which to store the Y coordinate, passed by reference. |
+| &Float:z | A variable in which to store the Z coordinate, passed by reference. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The specified object does not exist.
+**false** - The function failed to execute. The specified object does not exist.
 
 ## Examples
 
 ```c
-new Float:x, Float:y, Float:z;
-GetObjectPos(objectid, x, y, z);
+public OnGameModeInit()
+{
+    new objectid = CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    new Float:x, Float:y, Float:z;
+    GetObjectPos(objectid, x, y, z);
+    // x = 2001.195679
+    // y = 1547.113892
+    // z = 14.283400
+    return 1;
+}
 ```
 
 ## Related Functions
