@@ -17,9 +17,9 @@ Hide player gangzone.
 
 ## Returns
 
-1: The function executed successfully. Success is reported even if the player gangzone was hide to begin with.
+**1:** The function executed successfully. Success is reported even if the player gangzone was hide to begin with.
 
-0: The function failed to execute. The gangzone specified does not exist.
+**0:** The function failed to execute. The gangzone specified does not exist.
 
 ## Examples
 
