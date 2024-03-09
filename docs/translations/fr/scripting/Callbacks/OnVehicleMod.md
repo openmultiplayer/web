@@ -21,7 +21,7 @@ Retournez **0** pour empêcher la modification d'être visible pour les autres j
 ## Exemple
 
 ```c
-public OnVehicleMod(playerid,vehicleid,componentid)
+public OnVehicleMod(playerid, vehicleid, componentid)
 {
     printf("Le véhicule %d a été modifié par le joueur ID %d. L'ID de la partie de la voiture modifiée est %d",vehicleid,playerid,componentid);
     if(GetPlayerInterior(playerid) == 0)

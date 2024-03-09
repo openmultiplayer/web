@@ -29,7 +29,7 @@ Filterscript komut dosyalarında her zaman ilk olarak çağrılır, bu nedenle 0
 ## Örnekler
 
 ```c
-public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
+public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
     new szString[144];
     format(szString, sizeof(szString), "Silah %i ateşlendi. vuruş türü: %i   vurulan id: %i   koordinatlar: %f, %f, %f", weaponid, hittype, hitid, fX, fY, fZ);
