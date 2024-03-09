@@ -21,7 +21,7 @@ Uvijek je pozvan prvo u gamemodeu tako da će return-ovanje 0 ovdje blokirati os
 ## Primjeri
 
 ```c
-public OnVehicleMod(playerid,vehicleid,componentid)
+public OnVehicleMod(playerid, vehicleid, componentid)
 {
     printf("Vehicle %d was modded by ID %d with the componentid %d",vehicleid, playerid,componentid);
     if (GetPlayerInterior(playerid) == 0)

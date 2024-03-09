@@ -25,7 +25,7 @@ Siempre se llama primero en filterscripts.
 ## Ejemplos
 
 ```c
-public OnVehicleMod(playerid,vehicleid,componentid)
+public OnVehicleMod(playerid, vehicleid, componentid)
 {
     printf("El vehículo %d fue modificado por ID %d con el id de componente %d",vehicleid, playerid,componentid);
     if (GetPlayerInterior(playerid) == 0)

@@ -21,7 +21,7 @@ It is always called first in gamemode so returning 0 there also blocks other fil
 ## ตัวอย่าง
 
 ```c
-public OnVehicleMod(playerid,vehicleid,componentid)
+public OnVehicleMod(playerid, vehicleid, componentid)
 {
     printf("Vehicle %d was modded by ID %d with the componentid %d",vehicleid, playerid,componentid);
     if (GetPlayerInterior(playerid) == 0)
