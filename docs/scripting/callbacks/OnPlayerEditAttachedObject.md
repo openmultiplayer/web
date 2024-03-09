@@ -1,7 +1,7 @@
 ---
 title: OnPlayerEditAttachedObject
 description: This callback is called when a player ends attached object edition mode.
-tags: ["player"]
+tags: ["player", "object", "attachment"]
 ---
 
 ## Description
