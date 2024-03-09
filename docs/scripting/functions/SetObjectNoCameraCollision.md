@@ -1,7 +1,7 @@
 ---
 title: SetObjectNoCameraCollision
 description: Disable collisions between players' cameras and the specified object.
-tags: ["camera"]
+tags: ["object", "camera"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
