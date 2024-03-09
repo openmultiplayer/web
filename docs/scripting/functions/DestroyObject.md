@@ -1,7 +1,7 @@
 ---
 title: DestroyObject
 description: Destroys (removes) an object that was created using CreateObject.
-tags: []
+tags: ["object"]
 ---
 
 ## Description

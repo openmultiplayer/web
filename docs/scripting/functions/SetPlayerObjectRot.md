@@ -1,31 +1,39 @@
 ---
 title: SetPlayerObjectRot
 description: Set the rotation of an object on the X, Y and Z axis.
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
 
 Set the rotation of an object on the X, Y and Z axis.
 
-| Name       | Description                                         |
-| ---------- | --------------------------------------------------- |
-| playerid   | The ID of the player whose player-object to rotate. |
-| objectid   | The ID of the player-object to rotate.              |
-| Float:RotX | The X rotation to set.                              |
-| Float:RotY | The Y rotation to set.                              |
-| Float:RotZ | The Z rotation to set.                              |
+| Name            | Description                                         |
+| --------------- | --------------------------------------------------- |
+| playerid        | The ID of the player whose player-object to rotate. |
+| objectid        | The ID of the player-object to rotate.              |
+| Float:rotationX | The X rotation to set.                              |
+| Float:rotationY | The Y rotation to set.                              |
+| Float:rotationZ | The Z rotation to set.                              |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute.
+**false** - The function failed to execute.
 
 ## Examples
 
 ```c
-SetPlayerObjectRot(playerid, objectid, RotX, RotY, RotZ);
+new gPlayerObject[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    SetPlayerObjectRot(playerid, gPlayerObject[playerid], 0.0, 0.0, 180.0);
+    return 1;
+}
 ```
 
 ## Notes

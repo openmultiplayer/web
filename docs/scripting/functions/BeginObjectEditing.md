@@ -24,10 +24,11 @@ Allows a player to edit an object (position and rotation) using their mouse on a
 ## Examples
 
 ```c
-new object;
+new objectid;
+
 public OnGameModeInit()
 {
-    object = CreateObject(1337, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+    objectid = CreateObject(1337, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     return 1;
 }
 
@@ -35,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/oedit", true))
     {
-        BeginObjectEditing(playerid, object);
+        BeginObjectEditing(playerid, objectid);
         SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: You can now edit the object!");
         return 1;
     }

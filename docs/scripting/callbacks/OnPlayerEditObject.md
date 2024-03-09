@@ -1,7 +1,7 @@
 ---
 title: OnPlayerEditObject
 description: This callback is called when a player finishes editing an object (BeginObjectEditing/BeginPlayerObjectEditing).
-tags: ["player"]
+tags: ["player", "object"]
 ---
 
 ## Description
@@ -44,6 +44,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
     GetObjectPos(objectid, oldX, oldY, oldZ);
     GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
+    
     if (!playerobject) // If this is a global object, sync the position for other players
     {
         if (!IsValidObject(objectid))

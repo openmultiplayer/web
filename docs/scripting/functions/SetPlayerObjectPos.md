@@ -1,7 +1,7 @@
 ---
 title: SetPlayerObjectPos
 description: Sets the position of a player-object to the specified coordinates.
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
@@ -12,24 +12,29 @@ Sets the position of a player-object to the specified coordinates.
 | -------- | ----------------------------------------------------------------------------------- |
 | playerid | The ID of the player whose player-object to set the position of.                    |
 | objectid | The ID of the player-object to set the position of. Returned by CreatePlayerObject. |
-| Float:X  | The X coordinate to put the object at.                                              |
-| Float:Y  | The Y coordinate to put the object at.                                              |
-| Float:Z  | The Z coordinate to put the object at.                                              |
+| Float:x  | The X coordinate to put the object at.                                              |
+| Float:y  | The Y coordinate to put the object at.                                              |
+| Float:z  | The Z coordinate to put the object at.                                              |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. Player and/or object do not exist.
+**false** - The function failed to execute. Player and/or object do not exist.
 
 ## Examples
 
 ```c
-new obj = CreatePlayerObject(...);
+new gPlayerObject[MAX_PLAYERS];
 
-// Later on
+public OnPlayerConnect(playerid)
+{
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+    return 1;
+}
 
-SetPlayerObjectPos(playerid, obj, 2001.195679, 1547.113892, 14.283400);
+// Later
+SetPlayerObjectPos(playerid, gPlayerObject[playerid], 2001.195679, 1547.113892, 14.283400);
 ```
 
 ## Related Functions

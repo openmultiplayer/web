@@ -1,7 +1,7 @@
 ---
 title: SetObjectPos
 description: Change the position of an object.
-tags: []
+tags: ["object"]
 ---
 
 ## Description
@@ -11,13 +11,13 @@ Change the position of an object.
 | Name     | Description                                                            |
 | -------- | ---------------------------------------------------------------------- |
 | objectid | The ID of the object to set the position of. Returned by CreateObject. |
-| Float:X  | The X coordinate to position the object at.                            |
-| Float:Y  | The Y coordinate to position the object at.                            |
-| Float:Z  | The Z coordinate to position the object at.                            |
+| Float:x  | The X coordinate to position the object at.                            |
+| Float:y  | The Y coordinate to position the object at.                            |
+| Float:z  | The Z coordinate to position the object at.                            |
 
 ## Returns
 
-This function always returns 1, even if the object specified does not exist.
+This function always returns **true**, even if the object specified does not exist.
 
 ## Examples
 

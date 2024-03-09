@@ -20,7 +20,25 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-StopPlayerObject(playerid, objectid);
+new gPlayerObject[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    MovePlayerObject(playerid, gPlayerObject[playerid], 2001.195679, 1547.113892, 10.000000, 2.0);
+    return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (strcmp(cmdtext, "/stopobject", true) == 0)
+    {
+        StopPlayerObject(playerid, gPlayerObject[playerid]);
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Related Functions

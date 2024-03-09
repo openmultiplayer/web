@@ -1,7 +1,7 @@
 ---
 title: OnPlayerObjectMoved
 description: This callback is called when a player object is moved after MovePlayerObject (when it stops moving).
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
@@ -29,18 +29,13 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Notes
 
-:::tip
-
-This callback can also be called for NPC.
-
-:::
+<TipNPCCallbacks />
 
 ## Related Callbacks
 
 The following callbacks might be useful, as they're related to this callback in one way or another. 
 
 - [OnObjectMoved](OnObjectMoved): This callback is called when an object stops moving.
-
 
 ## Related Functions
 

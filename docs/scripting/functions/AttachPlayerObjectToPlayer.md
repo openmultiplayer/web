@@ -1,24 +1,24 @@
 ---
 title: AttachPlayerObjectToPlayer
 description: The same as AttachObjectToPlayer but for objects which were created for player.
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
 
-The same as AttachObjectToPlayer but for objects which were created for player.
+The same as [AttachObjectToPlayer](AttachObjectToPlayer) but for objects which were created for player.
 
-| Name          | Description                                                        |
-| ------------- | ------------------------------------------------------------------ |
-| objectplayer  | The id of the player which is linked with the object.              |
-| objectid      | The objectid you want to attach to the player.                     |
-| attachid      | The id of the player you want to attach to the object.             |
-| Float:OffsetX | The distance between the player and the object in the X direction. |
-| Float:OffsetY | The distance between the player and the object in the Y direction. |
-| Float:OffsetZ | The distance between the player and the object in the Z direction. |
-| Float:RotX    | The X rotation.                                                    |
-| Float:RotY    | The Y rotation.                                                    |
-| Float:RotZ    | The Z rotation.                                                    |
+| Name            | Description                                                        |
+| --------------- | ------------------------------------------------------------------ |
+| playerid        | The id of the player which is linked with the object.              |
+| objectid        | The objectid you want to attach to the player.                     |
+| parentid        | The id of the player you want to attach to the object.             |
+| Float:offsetX   | The distance between the player and the object in the X direction. |
+| Float:offsetY   | The distance between the player and the object in the Y direction. |
+| Float:offsetZ   | The distance between the player and the object in the Z direction. |
+| Float:rotationX | The X rotation.                                                    |
+| Float:rotationY | The Y rotation.                                                    |
+| Float:rotationZ | The Z rotation.                                                    |
 
 ## Returns
 
@@ -27,7 +27,15 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-AttachPlayerObjectToPlayer(objectplayer, objectid, attachplayer, 1.5, 0.5, 0, 0, 1.5, 2 );
+new gPlayerObject[MAX_PLAYERS];
+
+public OnPlayerSpawn(playerid)
+{
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    AttachPlayerObjectToPlayer(playerid, gPlayerObject[playerid], other_playerid, 1.5, 0.5, 0.0, 0.0, 1.5, 2.0);
+    return 1;
+}
 ```
 
 ## Notes

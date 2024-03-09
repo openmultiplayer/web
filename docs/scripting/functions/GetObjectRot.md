@@ -1,19 +1,19 @@
 ---
 title: GetObjectRot
 description: Use this function to get the objects current rotation.
-tags: []
+tags: ["object"]
 ---
 
 ## Description
 
-Use this function to get the objects current rotation. The rotation is saved by reference in three RotX/RotY/RotZ variables.
+Use this function to get the objects current rotation. The rotation is saved by reference in three rotationX/rotationY/rotationZ variables.
 
-| Name     | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| objectid | The objectid of the object you want to get the rotation from. |
-| &Float:X | The variable to store the X rotation, passed by reference.    |
-| &Float:Y | The variable to store the Y rotation, passed by reference.    |
-| &Float:Z | The variable to store the Z rotation, passed by reference.    |
+| Name             | Description                                                   |
+| ---------------- | ------------------------------------------------------------- |
+| objectid         | The objectid of the object you want to get the rotation from. |
+| &Float:rotationX | The variable to store the X rotation, passed by reference.    |
+| &Float:rotationY | The variable to store the Y rotation, passed by reference.    |
+| &Float:rotationZ | The variable to store the Z rotation, passed by reference.    |
 
 ## Returns
 
@@ -22,8 +22,17 @@ The object's rotation is stored in the referenced variables, not in the return v
 ## Examples
 
 ```c
-new Float:RotX,Float:RotY,Float:RotZ;
-GetObjectRot(objectid, RotX, RotY, RotZ);
+public OnGameModeInit()
+{
+    new objectid = CreateObject(652, 732.32690, 1940.21289, 4.27340, 357.00000, 0.00000, -76.00000);
+
+    new Float:rotationX, Float:rotationY, Float:rotationZ;
+    GetObjectRot(objectid, rotationX, rotationY, rotationZ);
+    // rotationX = 357.00000
+    // rotationY = 0.00000
+    // rotationZ = -76.00000
+    return 1;
+}
 ```
 
 ## Related Functions

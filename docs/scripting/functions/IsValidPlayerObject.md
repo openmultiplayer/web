@@ -1,7 +1,7 @@
 ---
 title: IsValidPlayerObject
 description: Checks if the given object ID is valid for the given player.
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
@@ -15,15 +15,27 @@ Checks if the given object ID is valid for the given player.
 
 ## Returns
 
-1 if the object exists, 0 if not.
+**true** if the object exists, **false** if not.
 
 ## Examples
 
 ```c
-// Check if an object is valid (exists) before we delete it
-if (IsValidPlayerObject(playerid, objectid))
+new gPlayerObject[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
 {
-	DestroyPlayerObject(playerid, objectid);
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+    return 1;
+}
+
+public OnPlayerDisconnect(playerid, reason)
+{
+	// Check if an object is valid (exists) before we delete it
+	if (IsValidPlayerObject(playerid, gPlayerObject[playerid]))
+	{
+		DestroyPlayerObject(playerid, gPlayerObject[playerid]);
+	}
+    return 1;
 }
 ```
 

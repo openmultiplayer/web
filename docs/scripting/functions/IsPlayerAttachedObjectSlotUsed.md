@@ -1,7 +1,7 @@
 ---
 title: IsPlayerAttachedObjectSlotUsed
 description: Check if a player has an object attached in the specified index (slot).
-tags: ["player"]
+tags: ["player", "object", "attachment"]
 ---
 
 ## Description
@@ -15,9 +15,9 @@ Check if a player has an object attached in the specified index (slot).
 
 ## Returns
 
-1: The specified slot is used for an attached object.
+**true** - The specified slot is used for an attached object.
 
-0: The specified slot is not in use for an attached object.
+**false** - The specified slot is not in use for an attached object.
 
 ## Examples
 
@@ -25,7 +25,7 @@ Check if a player has an object attached in the specified index (slot).
 stock CountAttachedObjects(playerid)
 {
     new count;
-    for(new i = 0; i < MAX_PLAYER_ATTACHED_OBJECTS; i++)
+    for (new i = 0; i < MAX_PLAYER_ATTACHED_OBJECTS; i++)
     {
         if (IsPlayerAttachedObjectSlotUsed(playerid, i))
         {
@@ -33,6 +33,18 @@ stock CountAttachedObjects(playerid)
         }
     }
     return count;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/count", true))
+    {
+        new string[32];
+        format(string, sizeof(string), "Attached objects: %d", CountAttachedObjects(playerid));
+        SendClientMessage(playerid, -1, string);
+        return 1;
+    }
+    return 0;
 }
 ```
 

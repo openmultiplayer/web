@@ -1,34 +1,45 @@
 ---
 title: GetPlayerObjectPos
 description: Get the position of a player object (CreatePlayerObject).
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
 
-Get the position of a player object (CreatePlayerObject).
+Get the position of a player object ([CreatePlayerObject](CreatePlayerObject)).
 
 | Name     | Description                                                               |
 | -------- | ------------------------------------------------------------------------- |
 | playerid | The ID of the player whose player object to get the position of.          |
 | objectid | The object's id of which you want the current location.                   |
-| &Float:X | A float variable in which to store the X coordinate, passed by reference. |
-| &Float:Y | A float variable in which to store the Y coordinate, passed by reference. |
-| &Float:Z | A float variable in which to store the Z coordinate, passed by reference. |
+| &Float:x | A float variable in which to store the X coordinate, passed by reference. |
+| &Float:y | A float variable in which to store the Y coordinate, passed by reference. |
+| &Float:z | A float variable in which to store the Z coordinate, passed by reference. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player and/or the object don't exist.
+**false** - The function failed to execute. The player and/or the object don't exist.
 
 The object's position is stored in the specified variables.
 
 ## Examples
 
 ```c
-new Float:x, Float:y, Float:z;
-GetPlayerObjectPos(playerid, objectid, x, y, z);
+new gPlayerObject[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    new Float:x, Float:y, Float:z;
+    GetPlayerObjectPos(playerid, gPlayerObject[playerid], x, y, z);
+    // x = 2001.195679
+    // y = 1547.113892
+    // z = 14.283400,
+    return 1;
+}
 ```
 
 ## Related Functions
