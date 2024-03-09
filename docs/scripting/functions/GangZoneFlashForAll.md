@@ -1,17 +1,17 @@
 ---
 title: GangZoneFlashForAll
-description: GangZoneFlashForAll flashes a gangzone for all players.
+description: Flashes a gangzone for all players.
 tags: ["gangzone"]
 ---
 
 ## Description
 
-GangZoneFlashForAll flashes a gangzone for all players.
+Flashes a gangzone for all players.
 
-| Name       | Description                                                                                                |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| zone       | The zone to flash.                                                                                         |
-| flashcolor | The color to flash the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
+| Name        | Description                                                                                                |
+| ----------- | ---------------------------------------------------------------------------------------------------------- |
+| zoneid      | The zone to flash.                                                                                         |
+| flashColour | The color to flash the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
 
 ## Returns
 
@@ -30,7 +30,7 @@ public OnGameModeInit()
 
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    GangZoneFlashForAll(gGangZoneId, COLOR_RED);
+    GangZoneFlashForAll(gGangZoneId, 0xFF0000FF); // Red
     return 1;
 }
 ```
