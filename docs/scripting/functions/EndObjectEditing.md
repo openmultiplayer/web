@@ -1,7 +1,7 @@
 ---
 title: EndObjectEditing
 description: Cancel object edition mode for a player.
-tags: []
+tags: ["object"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
