@@ -8,9 +8,9 @@ tags: ["gangzone"]
 
 GangZoneHideForAll hides a gangzone from all players.
 
-| Name | Description       |
-| ---- | ----------------- |
-| zone | The zone to hide. |
+| Name   | Description       |
+| ------ | ----------------- |
+| zoneid | The zone to hide. |
 
 ## Returns
 
@@ -20,8 +20,22 @@ This function does not return any specific values.
 
 ```c
 new gGangZoneId;
-gGangZoneId = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
-GangZoneHideForAll(gGangZoneId);
+
+public OnGameModeInit()
+{
+    gGangZoneId = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
+    return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/hidezone", true))
+    {
+        GangZoneHideForAll(gGangZoneId);
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Related Functions
