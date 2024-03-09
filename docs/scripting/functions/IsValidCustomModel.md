@@ -1,7 +1,7 @@
 ---
 title: IsValidCustomModel
 description: Checks if a custom model ID is valid.
-tags: []
+tags: ["custom model", "custom skin", "simple model"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
@@ -10,15 +10,15 @@ tags: []
 
 Checks if a custom model ID is valid.
 
-| Name   | Description                  |
-| ------ | ---------------------------- |
+| Name    | Description                   |
+| ------- | ----------------------------- |
 | modelid | The custom model ID to check. |
 
 ## Returns
 
-true - The custom model ID is valid.
+**true** - The custom model ID is valid.
 
-false - The custom model ID is not valid.
+**false** - The custom model ID is not valid.
 
 ## Related functions
 
