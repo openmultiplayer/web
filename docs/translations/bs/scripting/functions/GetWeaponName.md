@@ -25,7 +25,7 @@ Ime oružja pohranjeno je u navedenom nizu.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Deklaracije varijabli, s killerName koji ima zadanu vrijednost "World".
     new

@@ -21,7 +21,7 @@ Reset a player's money to $0.
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendClientMessage(playerid, 0xFFFFFFAA, "You died and lost all of your cash!");
     ResetPlayerMoney(playerid);

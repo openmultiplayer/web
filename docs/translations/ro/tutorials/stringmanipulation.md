@@ -1603,7 +1603,7 @@ Din nou, am folosit doar funcția `gettime` pentru a stoca respectivele ore, min
 **Exemplul 3**: _Mesajul moarte - Afișarea unui mesaj când un jucător moare, având numele jucătorilor colorate în culorile lor_:
 
 ```cpp
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to take into account the null terminator, thanks to Pottus for pointing that out.
     new message[144], playerName[MAX_PLAYER_NAME + 1], killerName[MAX_PLAYER_NAME + 1];

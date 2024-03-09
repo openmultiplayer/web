@@ -22,7 +22,7 @@ Toggle whether a player is in spectator mode or not. While in spectator mode a p
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     TogglePlayerSpectating(playerid, true);
     PlayerSpectatePlayer(playerid, killerid);

@@ -22,7 +22,7 @@ Uključite ili isključite da li je igrač u režimu spectatora/gledatelja. Dok 
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     TogglePlayerSpectating(playerid, 1);
     PlayerSpectatePlayer(playerid, killerid);

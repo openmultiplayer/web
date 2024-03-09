@@ -21,7 +21,7 @@ This function always returns 1.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // This example shows a large, white text saying "[playerName] has
     // passed away" on everyone's screen, after a player has died or

@@ -22,7 +22,7 @@ Set a player's score. Players' scores are shown in the scoreboard (shown by hold
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Add 1 to this killer's score. We must check it is valid first.
     if (killerid != INVALID_PLAYER_ID)

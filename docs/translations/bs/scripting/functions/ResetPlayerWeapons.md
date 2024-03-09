@@ -21,7 +21,7 @@ Uklanja sva oružja od igrača.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Ukloni oružja ubice
     ResetPlayerWeapons(killerid);

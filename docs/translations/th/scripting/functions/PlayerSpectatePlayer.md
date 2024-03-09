@@ -23,7 +23,7 @@ Makes a player spectate (watch) another player.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     TogglePlayerSpectating(playerid, 1);
     PlayerSpectatePlayer(playerid, killerid);

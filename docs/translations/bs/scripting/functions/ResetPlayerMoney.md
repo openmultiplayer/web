@@ -21,7 +21,7 @@ Resetiraj igračev novac na $0.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendClientMessage(playerid, 0xFFFFFFAA, "Umro si i izgubio si sav svoj novac!");
     ResetPlayerMoney(playerid);

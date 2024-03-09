@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
     gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (IsValidPlayerGangZone(playerid, gGangZoneID[playerid]))
     {

@@ -25,7 +25,7 @@ The weapon's name is stored in the specified array.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     new gunname[32], string[64], playername[MAX_PLAYER_NAME + 1], killername[MAX_PLAYER_NAME + 1];
     GetWeaponName(reason, gunname, sizeof(gunname));

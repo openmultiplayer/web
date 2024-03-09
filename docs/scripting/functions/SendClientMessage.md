@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (killerid != INVALID_PLAYER_ID)
     {
