@@ -17,9 +17,9 @@ Check if the gangzone is visible for player.
 
 ## Returns
 
-1: The gangzone is visible for player.
+**true** - The gangzone is visible for player.
 
-0: The gangzone is not visible for player.
+**false** - The gangzone is not visible for player.
 
 ## Related Functions
 
