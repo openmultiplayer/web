@@ -1,12 +1,12 @@
 ---
 title: DestroyPlayerObject
 description: Destroy a player-object created using CreatePlayerObject.
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
 
-Destroy a player-object created using CreatePlayerObject.
+Destroy a player-object created using [CreatePlayerObject](CreatePlayerObject).
 
 | Name     | Description                                                             |
 | -------- | ----------------------------------------------------------------------- |
