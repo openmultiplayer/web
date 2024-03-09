@@ -17,9 +17,9 @@ Check if the player in gangzone.
 
 ## Returns
 
-1: The player is in gangzone.
+**true** - The player is in gangzone.
 
-0: The player is not in gangzone.
+**false** - The player is not in gangzone.
 
 ## Notes
 
