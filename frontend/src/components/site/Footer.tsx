@@ -73,8 +73,8 @@ const Footer: React.FC = () => {
           src="/images/assets/logo-dark-trans.png"
           alt="Logo"
           style={{
-            width: '150px',
-            height: '150px',
+            width: '120px',
+            height: '120px',
             maxWidth: '100%',
             height: 'auto',
           }}
