@@ -17,9 +17,9 @@ Get the colour of a gangzone for player.
 
 ## Returns
 
-Color of gangzone for player.
+Colour of gangzone for player.
 
-0: Failed to execute the function. The gangzone is not shown for the player.
+**0:** Failed to execute the function. The gangzone is not shown for the player.
 
 ## Related Functions
 

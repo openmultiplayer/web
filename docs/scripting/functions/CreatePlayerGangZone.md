@@ -20,7 +20,7 @@ Create player gangzone. This can be used as a way around the global gangzone lim
 
 ## Returns
 
-The ID of the created player gangzone, returns -1 if not created
+The ID of the created player gangzone, returns **-1** if not created
 
 ## Examples
 
@@ -51,16 +51,16 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::tip
+:::warning
 
-This function merely CREATES the gangzone, you must use [PlayerGangZoneShow](PlayerGangZoneShow) to show it.
+- There is a limit of 1024 gangzones. 
+- Putting the parameters in the wrong order results in glitchy behavior.
 
 :::
 
-:::warning
+:::tip
 
-* There is a limit of 1024 gangzones. 
-* Putting the parameters in the wrong order results in glitchy behavior.
+This function merely CREATES the gangzone, you must use [PlayerGangZoneShow](PlayerGangZoneShow) to show it.
 
 :::
 
@@ -79,3 +79,7 @@ This function merely CREATES the gangzone, you must use [PlayerGangZoneShow](Pla
 - [IsPlayerGangZoneVisible](IsPlayerGangZoneVisible): Check if the player gangzone is visible.
 - [IsPlayerGangZoneFlashing](IsPlayerGangZoneFlashing): Check if the player gangzone is flashing.
 - [UsePlayerGangZoneCheck](UsePlayerGangZoneCheck): Enables the callback when a player enters/leaves this zone.
+
+## GangZone Editors
+
+- [Prineside DevTools GangZone Editor](https://dev.prineside.com/en/gtasa_gangzone_editor/)

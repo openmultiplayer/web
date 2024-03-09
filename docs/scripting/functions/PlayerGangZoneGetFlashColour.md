@@ -19,7 +19,29 @@ Get the flashing colour of a player gangzone.
 
 Flashing color of player gangzone.
 
-0: Failed to execute the function. The player gangzone is not shown for the player.
+**0:** Failed to execute the function. The player gangzone is not shown for the player.
+
+## Examples
+
+```c
+new gGangZoneID[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    // Create the gangzone
+    gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
+
+    // Show the gangzone to player
+    PlayerGangZoneShow(playerid, gGangZoneID[playerid], 0xFF0000FF);
+
+    // Start player gangzone flash    
+    PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0x45D1ABFF);
+
+    new flashColour = PlayerGangZoneGetFlashColour(playerid, gGangZoneID[playerid]);
+    // flashColour = 0x45D1ABFF
+    return 1;
+}
+```
 
 ## Related Functions
 

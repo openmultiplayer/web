@@ -11,7 +11,7 @@ Hides a gangzone for a player.
 | Name     | Description                                    |
 | -------- | ---------------------------------------------- |
 | playerid | The ID of the player to hide the gangzone for. |
-| zone     | The ID of the zone to hide.                    |
+| zoneid   | The ID of the zone to hide.                    |
 
 ## Returns
 

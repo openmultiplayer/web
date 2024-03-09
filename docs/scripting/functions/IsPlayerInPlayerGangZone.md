@@ -17,9 +17,39 @@ Check if the player in player gangzone.
 
 ## Returns
 
-1: The player is in player gangzone.
+**true** - The player is in player gangzone.
 
-0: The player is not in player gangzone.
+**false** - The player is not in player gangzone.
+
+## Examples
+
+```c
+new gGangZoneID[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    // Create the gangzone
+    gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
+    return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/zone", true))
+    {
+        if (IsPlayerInPlayerGangZone(playerid, gGangZoneID[playerid]))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "You are in the gangzone.");
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "You are not in the gangzone.");
+        }
+        return 1;
+    }
+    return 0;
+}
+```
 
 ## Related Functions
 

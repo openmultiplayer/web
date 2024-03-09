@@ -11,7 +11,7 @@ Stops a gangzone flashing for a player.
 | Name     | Description                                             |
 | -------- | ------------------------------------------------------- |
 | playerid | The ID of the player to stop the gangzone flashing for. |
-| zone     | The ID of the gangzonezone to stop flashing.            |
+| zoneid   | The ID of the gangzonezone to stop flashing.            |
 
 ## Returns
 
@@ -30,7 +30,7 @@ public OnGameModeInit()
 
 public OnPlayerSpawn(playerid)
 {
-    GangZoneFlashForPlayer(playerid, gGangZoneId, COLOR_RED);
+    GangZoneFlashForPlayer(playerid, gGangZoneId, 0xFF0000FF);
     return 1;
 }
 
