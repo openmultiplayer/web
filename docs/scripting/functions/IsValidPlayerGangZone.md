@@ -17,9 +17,9 @@ Check if the player gangzone valid.
 
 ## Returns
 
-1: The player gangzone is valid.
+**true** - The player gangzone is valid.
 
-0: The player gangzone is not valid.
+**false** - The player gangzone is not valid.
 
 ## Examples
 
