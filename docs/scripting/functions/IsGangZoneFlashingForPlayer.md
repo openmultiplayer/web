@@ -17,9 +17,9 @@ Check if the gangzone is flashing for player.
 
 ## Returns
 
-1: The gangzone is flashing for player.
+**true** - The gangzone is flashing for player.
 
-0: The gangzone is not flashing for player.
+**false** - The gangzone is not flashing for player.
 
 ## Related Functions
 
