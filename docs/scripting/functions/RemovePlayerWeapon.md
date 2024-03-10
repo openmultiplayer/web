@@ -17,9 +17,9 @@ Remove a specified weapon from a player.
 
 ## Returns
 
-`true` - The function was executed successfully.
+**true** - The function was executed successfully.
 
-`false` - The function failed to execute. This means the player is not connected.
+**false** - The function failed to execute. This means the player is not connected.
 
 ## Examples
 
