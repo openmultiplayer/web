@@ -15,9 +15,9 @@ Set a player's score. Players' scores are shown in the scoreboard (shown by hold
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
