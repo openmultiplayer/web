@@ -10,23 +10,23 @@ tags: ["player"]
 
 Toggle camera targeting functions for a player. Disabled by default to save bandwidth.
 
-| Name     | Description                                                    |
-| -------- | -------------------------------------------------------------- |
-| playerid | The ID of the player to toggle camera targeting functions for. |
-| enable   | 1 to enable camera targeting functions and 0 to disable them.  |
+| Name        | Description                                                              |
+| ----------- | ------------------------------------------------------------------------ |
+| playerid    | The ID of the player to toggle camera targeting functions for.           |
+| bool:enable | 'true' to enable camera targeting functions and 'false' to disable them. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player is not connected.
+**false** - The function failed to execute. The player is not connected.
 
 ## Examples
 
 ```c
 public OnPlayerConnect(playerid)
 {
-     EnablePlayerCameraTarget(playerid, 1);
+     EnablePlayerCameraTarget(playerid, true);
      return 1;
 }
 ```

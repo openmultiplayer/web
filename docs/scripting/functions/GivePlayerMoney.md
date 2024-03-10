@@ -15,9 +15,9 @@ Give money to or take money from a player.
 
 ## Returns
 
-1: The function was executed successfully.
+**1** - The function was executed successfully.
 
-0: The function failed to execute. This means the player is not connected.
+**0** - The function failed to execute. This means the player is not connected.
 
 ## Examples
 

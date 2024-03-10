@@ -22,9 +22,9 @@ It is always called first in filterscripts so returning 0 there blocks other scr
 ```c
 public OnPlayerText(playerid, text[])
 {
-    new pText[144];
-    format(pText, sizeof (pText), "(%d) %s", playerid, text);
-    SendPlayerMessageToAll(playerid, pText);
+    new string[144];
+    format(string, sizeof (string), "(%d) %s", playerid, text);
+    SendPlayerMessageToAll(playerid, string);
     return 0; // ignore the default text and send the custom one
 }
 ```

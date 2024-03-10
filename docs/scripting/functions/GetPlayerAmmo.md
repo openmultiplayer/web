@@ -19,14 +19,19 @@ The amount of ammo in the player's current weapon.
 ## Examples
 
 ```c
-ShowPlayerAmmo(playerid)
+ublic OnPlayerCommandText(playerid, cmdtext[])
 {
-    new
-        plyAmmo = GetPlayerAmmo(playerid),
-        infoString[16];
+    if (!strcmp(cmdtext, "/myammo", true))
+    {
+        new
+            ammo = GetPlayerAmmo(playerid),
+            string[32];
 
-    format(infoString, sizeof(infoString), "Ammo: %i", plyAmmo);
-    SendClientMessage(playerid, -1, infoString);
+        format(string, sizeof(string), "Your ammo: %i", ammo);
+        SendClientMessage(playerid, -1, string);
+        return 1;
+    }
+    return 0;
 }
 ```
 

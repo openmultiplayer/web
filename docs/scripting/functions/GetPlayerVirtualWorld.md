@@ -23,8 +23,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/world", true))
     {
-        new
-            string[32];
+        new string[32];
         format(string, sizeof(string), "Your virtual world: %i", GetPlayerVirtualWorld(playerid));
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;

@@ -10,36 +10,36 @@ tags: ["vehicle"]
 
 Disables collisions between occupied vehicles for a player.
 
-| Name     | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| playerid | The ID of the player for whom you want to disable collisions. |
-| disable  | 1 to disable collisions, 0 to enable collisions.              |
+| Name         | Description                                                   |
+| ------------ | ------------------------------------------------------------- |
+| playerid     | The ID of the player for whom you want to disable collisions. |
+| bool:disable | 'true' to disable collisions, 'false' to enable collisions.   |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**false** - The function failed to execute. The player specified does not exist.
 
 ## Examples
 
 ```c
+new bool:gPlayerVehicleCollision[MAX_PLAYERS];
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/collision", true))
     {
         new string[64];
 
-        format(string, sizeof(string), "Vehicle collision for you is now '%s'", (GetPVarInt(playerid, "vehCollision") != 1) ? ("Disabled") : ("Enabled"));
+        format(string, sizeof(string), "Vehicle collision for you is now '%s'", (gPlayerVehicleCollision[playerid] == false) ? ("Disabled") : ("Enabled"));
         SendClientMessage(playerid, 0xFFFFFFFF, string);
 
-        SetPVarInt(playerid, "vehCollision", !GetPVarInt(playerid, "vehCollision"));
+        gPlayerVehicleCollision[playerid] = !gPlayerVehicleCollision[playerid];
 
-        DisableRemoteVehicleCollisions(playerid, GetPVarInt(playerid, "vehCollision"));
+        DisableRemoteVehicleCollisions(playerid, gPlayerVehicleCollision[playerid]);
         return 1;
     }
     return 0;
 }
 ```
-
-## Related Functions

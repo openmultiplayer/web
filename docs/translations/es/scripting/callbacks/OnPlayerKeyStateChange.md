@@ -206,7 +206,7 @@ if (RELEASED( KEY_FIRE | KEY_CROUCH ))
 ### Añadiendo nitro x10 al vehículo del jugador cuando presiona disparar
 
 ```c
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
 	if (PRESSED(KEY_FIRE))
 	{
@@ -222,7 +222,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 ### Super salto
 
 ```c
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
 	if (PRESSED(KEY_JUMP))
 	{
@@ -247,7 +247,7 @@ new
 	#define INFINITY (Float:0x7F800000)
 #endif
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
 	if (PRESSED(KEY_ACTION))
 	{

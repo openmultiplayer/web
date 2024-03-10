@@ -8,23 +8,24 @@ tags: ["player"]
 
 Toggle stunt bonuses for a player. Enabled by default.
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
-| playerid | The ID of the player to toggle stunt bonuses for. |
-| enable   | 1 to enable stunt bonuses and 0 to disable them.  |
+| Name        | Description                                                 |
+| ----------- | ----------------------------------------------------------- |
+| playerid    | The ID of the player to toggle stunt bonuses for.           |
+| bool:enable | 'true' to enable stunt bonuses and 'false' to disable them. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player is not connected.
+**false** - The function failed to execute. The player is not connected.
 
 ## Examples
 
 ```c
 public OnPlayerConnect(playerid)
 {
-   EnableStuntBonusForPlayer(playerid, 0); // Disable stunt bonuses when the player connects to the server.
+    EnableStuntBonusForPlayer(playerid, false); // Disable stunt bonuses when the player connects to the server.
+    return 1;
 }
 ```
 

@@ -17,9 +17,9 @@ This sets the players position then adjusts the players z-coordinate to the near
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
@@ -31,11 +31,14 @@ SetPlayerPosFindZ(playerid, 1234.5, 1234.5, 1000.0);
 
 :::warning
 
-This function does not work if the new coordinates are far away from where the player currently is. The Z height will be 0, which will likely put them underground. It is highly recommended that the MapAndreas or ColAndreas plugin be used instead.
+This function does not work if the new coordinates are far away from where the player currently is. The Z height will be 0, which will likely put them underground. It is highly recommended that the [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) or [ColAndreas](https://github.com/Pottus/ColAndreas) plugin be used instead.
 
 :::
 
 ## Related Functions
 
 - [SetPlayerPos](SetPlayerPos): Set a player's position.
+
+## Related Callbacks
+
 - [OnPlayerClickMap](../callbacks/OnPlayerClickMap): Called when a player sets a waypoint/target on the pause menu map.

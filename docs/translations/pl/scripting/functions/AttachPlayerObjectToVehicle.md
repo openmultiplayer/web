@@ -27,7 +27,7 @@ Ta funkcja nie zwraca żadnych konkretnych wartości.
 ## Przykłady
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER) // Jeżeli gracz wsiadł do pojazdu
     {

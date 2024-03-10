@@ -25,7 +25,7 @@ Este întotdeauna numit primul în filterscript.
 ## Exemple
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Ai apăsat pe jucătorul  %d", clickedplayerid);

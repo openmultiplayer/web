@@ -17,9 +17,9 @@ Get the position of a player, represented by X, Y and Z coordinates.
 
 ## Returns
 
-true on success.
+**true** on success.
 
-false on failure (i.e. player not connected).
+**false** on failure (i.e. player not connected).
 
 ## Examples
 
@@ -42,7 +42,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-This function is known to return unreliable values when used in OnPlayerDisconnect and OnPlayerRequestClass. This is because the player is not spawned.
+This function is known to return unreliable values when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) and OnPlayerRequestClass. This is because the player is not spawned.
 
 :::
 

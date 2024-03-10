@@ -16,7 +16,7 @@ Gets id of an actor which is aimed by certain player.
 
 ## Returns
 
-The ID of the targeted actor, or INVALID_ACTOR_ID if none.
+The ID of the targeted actor, or `INVALID_ACTOR_ID` if none.
 
 ## Examples
 
@@ -45,4 +45,7 @@ Does not work for joypads/controllers, and after a certain distance. Does not wo
 
 - [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor): Get the ID of the actor (if any) a player is looking at.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
+
+## Related Callbacks
+
 - [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor): This callback is called when a player gives damage to an actor.

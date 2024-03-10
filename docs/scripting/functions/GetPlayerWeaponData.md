@@ -17,9 +17,9 @@ Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in t
 
 ## Returns
 
-1: The function was executed successfully.
+**1** - The function was executed successfully.
 
-0: The function failed to execute. The player isn't connected and/or the weapon slot specified is invalid (valid is 0-12).
+**0** - The function failed to execute. The player isn't connected and/or the weapon slot specified is invalid (valid is 0-12).
 
 ## Examples
 
@@ -31,7 +31,7 @@ new weapons[13][2];
 
 for (new i = 0; i <= 12; i++)
 {
-    GetPlayerWeaponData(playerid, i, weapons[i][0], weapons[i][1]);
+    GetPlayerWeaponData(playerid, WEAPON_SLOT:i, weapons[i][0], weapons[i][1]);
 }
 ```
 

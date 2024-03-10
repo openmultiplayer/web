@@ -16,9 +16,9 @@ Checks if a player is spawned.
 
 ## Returns
 
-true: The player is spawned.
+**true** - The player is spawned.
 
-false: The player is not spawned.
+**false** - The player is not spawned.
 
 ## Examples
 

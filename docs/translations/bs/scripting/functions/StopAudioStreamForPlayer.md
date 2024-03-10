@@ -19,7 +19,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     // Ako igrač napusti vozilo
     if (oldstate == PLAYER_STATE_DRIVER || oldstate == PLAYER_STATE_PASSENGER)

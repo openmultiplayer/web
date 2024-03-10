@@ -22,6 +22,7 @@ The ID of the object playerid is looking at. If INVALID_OBJECT_ID (65535) is ret
 
 ```c
 new globalObjectID;
+
 public OnGameModeInit()
 {
     globalObjectID = CreateObject(1337, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0);
@@ -35,11 +36,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new objectid = GetPlayerCameraTargetObject(playerid);
         if (objectid == globalObjectID)
         {
-             SendClientMessage(playerid, -1, "You're looking at your object.");
+            SendClientMessage(playerid, -1, "You're looking at your object.");
         }
         else if (objectid == INVALID_OBJECT_ID) // INVALID_OBJECT_ID = 65535
         {
-             SendClientMessage(playerid, -1, "You're not looking at any object.");
+            SendClientMessage(playerid, -1, "You're not looking at any object.");
         }
         return 1;
     }

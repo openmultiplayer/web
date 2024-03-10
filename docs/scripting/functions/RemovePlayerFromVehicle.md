@@ -8,10 +8,10 @@ tags: ["player", "vehicle"]
 
 Removes/ejects a player from their vehicle.
 
-| Name       | Description                                                   |
-| ---------- | ------------------------------------------------------------- |
-| playerid   | The ID of the player to remove from their vehicle.            |
-| bool:force | Force remove from vehicle instantly. (Default value: `false`) |
+| Name       | Description                                             |
+| ---------- | ------------------------------------------------------- |
+| playerid   | The ID of the player to remove from their vehicle.      |
+| bool:force | Force remove from vehicle instantly. (default: `false`) |
 
 ## Returns
 
@@ -23,7 +23,7 @@ Removes/ejects a player from their vehicle.
 
 ```c
 // Example - Players can only drive vehicles if they have 10 score.
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER && GetPlayerScore(playerid) < 10) // PlAYER_STATE_DRIVER = 2
     {

@@ -11,9 +11,9 @@ Calculate the distance between a player and a map coordinate.
 | Name     | Description                                          |
 | -------- | ---------------------------------------------------- |
 | playerid | The ID of the player to calculate the distance from. |
-| Float:X  | The X map coordinate.                                |
-| Float:Y  | The Y map coordinate.                                |
-| Float:Z  | The Z map coordinate.                                |
+| Float:x  | The X map coordinate.                                |
+| Float:y  | The Y map coordinate.                                |
+| Float:z  | The Z map coordinate.                                |
 
 ## Returns
 
@@ -28,15 +28,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (strcmp(cmdtext, "/vend", true) == 0)
     {
         new
-            Float: fDistance = GetPlayerDistanceFromPoint(playerid, 237.9, 115.6, 1010.2),
-            szMessage[44];
+            Float:distance = GetPlayerDistanceFromPoint(playerid, 237.9, 115.6, 1010.2),
+            string[64];
 
-        format(szMessage, sizeof(szMessage), "You're %0.2f meters away from the vending machine.", fDistance);
-        SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
-
+        format(string, sizeof(string), "You're %0.2f meters away from the vending machine.", distance);
+        SendClientMessage(playerid, 0xA9C4E4FF, string);
         return 1;
     }
-
     return 0;
 }
 ```

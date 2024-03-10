@@ -16,9 +16,9 @@ Reset the player's world boundaries to default world boundaries.
 
 ## Returns
 
-true - Function executed successfully.
+**true** - Function executed successfully.
 
-false - Function failed to execute.
+**false** - Function failed to execute.
 
 ## Examples
 

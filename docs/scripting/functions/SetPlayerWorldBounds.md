@@ -8,13 +8,13 @@ tags: ["player"]
 
 Set the world boundaries for a player. Players can not go out of the boundaries (they will be pushed back in).
 
-| Name        | Description                                          |
-| ----------- | ---------------------------------------------------- |
-| playerid    | The ID of the player to set the world boundaries of. |
-| Float:x_max | The maximum X coordinate the player can go to.       |
-| Float:x_min | The minimum X coordinate the player can go to.       |
-| Float:y_max | The maximum Y coordinate the player can go to.       |
-| Float:y_min | The minimum Y coordinate the player can go to.       |
+| Name       | Description                                          |
+| ---------- | ---------------------------------------------------- |
+| playerid   | The ID of the player to set the world boundaries of. |
+| Float:maxX | The maximum X coordinate the player can go to.       |
+| Float:minX | The minimum X coordinate the player can go to.       |
+| Float:maxY | The maximum Y coordinate the player can go to.       |
+| Float:minY | The minimum Y coordinate the player can go to.       |
 
 ## Returns
 

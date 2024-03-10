@@ -8,11 +8,11 @@ tags: ["player"]
 
 Starts recording a player's movements to a file, which can then be reproduced by an NPC.
 
-| Name         | Description                                                                                                                                                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | The ID of the player to record.                                                                                                                                                                                               |
-| recordtype   | The [type](../resources/recordtypes) of recording.                                                                                                                                                                         |
-| recordname[] | The name of the file which will hold the recorded data. It will be saved in the scriptfiles directory, with an automatically added .rec extension, you will need to move the file to npcmodes/recordings to use for playback. |
+| Name                             | Description                                                                                                                                                                                                                   |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid                         | The ID of the player to record.                                                                                                                                                                                               |
+| PLAYER_RECORDING_TYPE:recordType | The [type](../resources/recordtypes) of recording.                                                                                                                                                                            |
+| const recordFile[]               | The name of the file which will hold the recorded data. It will be saved in the scriptfiles directory, with an automatically added .rec extension, you will need to move the file to npcmodes/recordings to use for playback. |
 
 ## Returns
 

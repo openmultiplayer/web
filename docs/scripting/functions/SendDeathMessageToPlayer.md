@@ -17,9 +17,9 @@ Adds a death to the 'killfeed' on the right-hand side of the screen for a single
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute.
+**false** - The function failed to execute.
 
 ## Examples
 
@@ -36,4 +36,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 ## Related Functions
 
 - [SendDeathMessage](SendDeathMessage): Add a kill to the death list.
+
+## Related Callbacks
+
 - [OnPlayerDeath](../callbacks/OnPlayerDeath): Called when a player dies.
