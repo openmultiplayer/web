@@ -1,7 +1,7 @@
 ---
 title: AttachCameraToObject
 description: You can use this function to attach the player camera to objects.
-tags: []
+tags: ["player", "object"]
 ---
 
 ## Description
