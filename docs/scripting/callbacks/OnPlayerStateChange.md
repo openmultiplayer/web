@@ -8,11 +8,11 @@ tags: ["player"]
 
 This callback is called when a player changes state. For example, when a player changes from being the driver of a vehicle to being on-foot.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | The ID of the player that changed state. |
-| newstate | The player's new state.                  |
-| oldstate | The player's previous state.             |
+| Name                  | Description                              |
+| --------------------- | ---------------------------------------- |
+| playerid              | The ID of the player that changed state. |
+| PLAYER_STATE:newstate | The player's new state.                  |
+| PLAYER_STATE:oldstate | The player's previous state.             |
 
 Refer to [Player States](../resources/playerstates) for a list of all available player states.
 
@@ -23,7 +23,7 @@ It is always called first in filterscripts.
 ## Examples
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Player entered a vehicle as a driver
     {

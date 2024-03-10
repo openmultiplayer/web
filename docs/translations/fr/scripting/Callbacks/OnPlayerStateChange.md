@@ -23,7 +23,7 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 ## Exemple
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Le joueur entre dans un véhicule en tant que conducteur (driver).
     {
