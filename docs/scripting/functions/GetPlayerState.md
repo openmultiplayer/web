@@ -21,9 +21,9 @@ The player's current state as an integer (see: [Player States](../resources/play
 ```c
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    new playerState = GetPlayerState(killerid); // Get the killer's state
+    new PLAYER_STATE:state = GetPlayerState(killerid); // Get the killer's state
 
-    if (playerState == PLAYER_STATE_DRIVER) // If the killer was in a vehicle
+    if (state == PLAYER_STATE_DRIVER) // If the killer was in a vehicle
     {
         //It's a driver drive-by, take some money
         GivePlayerMoney(killerid, -10000);
