@@ -22,42 +22,46 @@ It is always called first in filterscripts.
 
 ## Examples
 
+**Example 1**
+
 ```c
-// Example 1
-forward OnPlayerWeaponChange(playerid, oldweapon, newweapon);
+new WEAPON:gPlayerCurrentWeapon[MAX_PLAYERS];
 
 public OnPlayerUpdate(playerid)
 {
-    new iCurWeap = GetPlayerWeapon(playerid); // Return the player's current weapon
-    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // If he changed weapons since the last update
+    new WEAPON:weapon = GetPlayerWeapon(playerid); // Return the player's current weapon
+    if (weapon != gPlayerCurrentWeapon[playerid]) // If he changed weapons since the last update
     {
-        // Lets call a callback named OnPlayerChangeWeapon
-        CallLocalFunction("OnPlayerWeaponChange", "iii", playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
-        SetPVarInt(playerid, "iCurrentWeapon", iCurWeap);//Update the weapon variable
+        // Lets call a callback named OnPlayerWeaponChange
+        CallLocalFunction("OnPlayerWeaponChange", "iii", playerid, gPlayerCurrentWeapon[playerid], weapon);
+        gPlayerCurrentWeapon[playerid] = weapon; // Update the weapon variable
     }
     return 1; // Send this update to other players.
 }
 
-public OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
+forward OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon);
+public OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon)
 {
-    new     s[128],
-        oWeapon[24],
-        nWeapon[24];
+    new 
+        string[128],
+        oldWeaponName[24],
+        newWeaponName[24];
 
-    GetWeaponName(oldweapon, oWeapon, sizeof(oWeapon));
-    GetWeaponName(newweapon, nWeapon, sizeof(nWeapon));
+    GetWeaponName(oldWeapon, oldWeaponName, sizeof(oldWeaponName));
+    GetWeaponName(newWeapon, newWeaponName, sizeof(newWeaponName));
 
-    format(s, sizeof(s), "You changed weapon from %s to %s!", oWeapon, nWeapon);
-
-    SendClientMessage(playerid, 0xFFFFFFFF, s);
+    format(string, sizeof(string), "You changed weapon from %s to %s!", oldWeaponName, newWeaponName);
+    SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }
+```
 
-// Example 2
+**Example 2**
+
+```c
 public OnPlayerUpdate(playerid)
 {
     new Float:fHealth;
-
     GetPlayerHealth(playerid, fHealth);
 
     if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
