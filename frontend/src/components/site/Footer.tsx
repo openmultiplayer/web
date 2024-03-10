@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
     <Box as="footer" bgColor={useColorModeValue("blackAlpha.800", "gray.900")} display="flex" justifyContent="space-between" padding="30px">
       <div className="near-white" style={{ flex: 1 }}>
         <FooterList
-          heading="Abous us"
+          heading="About us"
           items={[{ text: "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>." }]}
           alignment="left"
         />
@@ -73,8 +73,8 @@ const Footer: React.FC = () => {
           src="/images/assets/logo-dark-trans.png"
           alt="Logo"
           style={{
-            width: '150px',
-            height: '150px',
+            width: '120px',
+            height: '120px',
             maxWidth: '100%',
             height: 'auto',
           }}
