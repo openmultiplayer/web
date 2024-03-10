@@ -16,9 +16,9 @@ Get player's ghost mode.
 
 ## Returns
 
-true: Ghost mode is enable.
+**true** - Ghost mode is enable.
 
-false: Ghost mode is disable.
+**false** - Ghost mode is disable.
 
 ## Examples
 
