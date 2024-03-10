@@ -15,21 +15,25 @@ Set a vehicle's health. When a vehicle's health decreases the engine will produc
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**false** - The function failed to execute. This means the vehicle does not exist.
 
 ## Examples
 
 ```c
-if (strcmp("/fixengine", cmdtext, true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new
-        vehicleid = GetPlayerVehicleID(playerid);
+    if (strcmp("/fixengine", cmdtext, true) == 0)
+    {
+        new
+            vehicleid = GetPlayerVehicleID(playerid);
 
-    SetVehicleHealth(vehicleid, 1000.0);
-    SendClientMessage(playerid, COLOUR_WHITE, "The vehicles engine has been fully repaired.");
-    return 1;
+        SetVehicleHealth(vehicleid, 1000.0);
+        SendClientMessage(playerid, -1, "The vehicles engine has been fully repaired.");
+        return 1;
+    }
+    return 0;
 }
 ```
 
