@@ -14,9 +14,9 @@ Destroy a vehicle. It will disappear instantly.
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The vehicle does not exist.
+**false** - The function failed to execute. The vehicle does not exist.
 
 ## Examples
 
@@ -25,11 +25,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
      if (strcmp(cmdtext, "/destroyveh", true) == 0)
      {
-          new vehicleid = GetPlayerVehicleID(playerid);
-          DestroyVehicle(vehicleid);
+          if (IsPlayerInAnyVehicle(playerid))
+          {
+               new vehicleid = GetPlayerVehicleID(playerid);
+               DestroyVehicle(vehicleid);
+          }
           return 1;
      }
-
      return 0;
 }
 ```
