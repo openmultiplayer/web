@@ -15,23 +15,24 @@ Set the health of a player.
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
 ```c
-//Sets the players health to full
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/heal", cmdtext, true))
     {
+        // Sets the players health to full
         SetPlayerHealth(playerid, 100.0);
         return 1;
     }
     if (!strcmp("/kill", cmdtext, true))
     {
+        // Kills the players
         SetPlayerHealth(playerid, 0.0);
         return 1;
     }
@@ -43,7 +44,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-If a player's health is set to 0 or a minus value, they will die instantly. If a player's health is below 10 or above 98303, their health bar will flash.
+- If a player's health is set to 0.0 or a minus value, they will die instantly.
+- If a player's health is below 10.0 or above 98303.0, their health bar will flash.
 
 :::
 
