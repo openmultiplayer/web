@@ -14,12 +14,26 @@ Returns the class of the players skin
 
 ## Returns
 
-The [skin id](../resources/skins) (0 if invalid)
+The [skin id](../resources/skins).
+
+**0** if invalid.
 
 ## Examples
 
 ```c
-playerskin = GetPlayerSkin(playerid);
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/myskin", true))
+    {
+        new string[32];
+        new playerSkin = GetPlayerSkin(playerid);
+
+        format(string, sizeof(string), "Your skin id: %d", playerSkin);
+        SendClientMessage(playerid, -1, string);
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Notes
