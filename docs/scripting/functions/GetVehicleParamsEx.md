@@ -21,9 +21,9 @@ Gets a vehicle's parameters.
 
 ## Returns
 
-1 - success
+**true** - success
 
-0 - failure (invalid vehicle ID).
+**false** - failure (invalid vehicle ID).
 
 The vehicle's parameters are stored in the referenced variables, not in the return value.
 
