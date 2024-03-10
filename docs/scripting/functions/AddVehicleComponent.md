@@ -8,16 +8,16 @@ tags: ["vehicle"]
 
 Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. Valid components can be found here.
 
-| Name                                          | Description                                                                     |
-| --------------------------------------------- | ------------------------------------------------------------------------------- |
-| vehicleid                                     | The ID of the vehicle to add the component to. Not to be confused with modelid. |
-| [componentid](../resources/carcomponentid) | The ID of the component to add to the vehicle.                                  |
+| Name                                     | Description                                                                     |
+| ---------------------------------------- | ------------------------------------------------------------------------------- |
+| vehicleid                                | The ID of the vehicle to add the component to. Not to be confused with modelid. |
+| [component](../resources/carcomponentid) | The ID of the component to add to the vehicle.                                  |
 
 ## Returns
 
-0 - The component was not added because the vehicle does not exist.
+**true** - The component was successfully added to the vehicle.
 
-1 - The component was successfully added to the vehicle.
+**false** - The component was not added because the vehicle does not exist.
 
 ## Examples
 
@@ -48,7 +48,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::warning
 
-Using an invalid component ID crashes the player's game. There are no internal checks for this.
+Using an invalid component ID crashes the player's game. (Fixed in open.mp)
 
 :::
 
@@ -57,6 +57,7 @@ Using an invalid component ID crashes the player's game. There are no internal c
 - [RemoveVehicleComponent](RemoveVehicleComponent): Remove a component from a vehicle.
 - [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Check what components a vehicle has.
 - [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
+- [VehicleCanHaveComponent](VehicleCanHaveComponent): Is the component legal on the vehicle?
 
 ## Related Callbacks
 
