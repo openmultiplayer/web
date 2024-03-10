@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
 
   return (
     <Box as="footer" bgColor={useColorModeValue("blackAlpha.800", "gray.900")} display="flex" justifyContent="space-between" padding="30px">
-      <div className="near-white" style={{ flex: 1 }}>
+      <div className="near-white" style={{  display: "flex", justifyContent: "center", alignItems: "center", flex: 1 }}>
         <FooterList
           heading="About us"
           items={[{ text: "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>." }]}
