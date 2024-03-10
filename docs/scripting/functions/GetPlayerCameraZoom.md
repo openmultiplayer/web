@@ -19,9 +19,9 @@ The player's camera zoom level (camera, sniper etc.), a float.
 ## Examples
 
 ```c
-new szString[144];
-format(szString, sizeof(szString), "Your camera zoom level: %f", GetPlayerCameraZoom(playerid));
-SendClientMessage(playerid, -1, szString);
+new string[128];
+format(string, sizeof(string), "Your camera zoom level: %f", GetPlayerCameraZoom(playerid));
+SendClientMessage(playerid, -1, string);
 ```
 
 ## Notes
