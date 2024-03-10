@@ -57,6 +57,7 @@ If the seat is invalid or is taken, will cause a crash when they EXIT the vehicl
 - [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Throw a player out of their vehicle.
 - [GetPlayerVehicleID](GetPlayerVehicleID): Get the ID of the vehicle the player is in.
 - [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.
+- [GetVehicleSeats](GetVehicleSeats): Gets the number of seats in the vehicle.
 
 ## Related Callbacks
 
