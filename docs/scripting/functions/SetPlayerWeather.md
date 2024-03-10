@@ -35,7 +35,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-If TogglePlayerClock is enabled, weather will slowly change over time, instead of changing instantly. There are only valid 21 weather IDs in the game (0 - 20), however the game does not have any form of range check.
+- If [TogglePlayerClock](TogglePlayerClock) is enabled, weather will slowly change over time, instead of changing instantly.
+- There are only valid 21 weather IDs in the game (0 - 20), however the game does not have any form of range check.
 
 :::
 
