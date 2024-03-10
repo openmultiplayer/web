@@ -41,7 +41,7 @@ public OnPlayerUpdate(playerid)
         new playerWeapon = GetPlayerWeapon(playerid);
 
         // Oyuncunun bastığı tuşları kontrol ediyoruz, böylece nişan alıp almadığını kontrol ediyoruz.
-        new keys, updown, leftright;
+        new KEY:keys, updown, leftright;
         GetPlayerKeys(playerid, keys, updown, leftright);
 
         // Oyuncunun hedef aldığı aktör eğer ELLERİNİ KALDIRMADIYSA, elindeki silah'ın GTA:SA ID'si 22 üzeri ve 42'den aşağıysa ve AİM tuşuna basıyorsa
