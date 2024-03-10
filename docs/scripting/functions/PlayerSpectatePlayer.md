@@ -12,13 +12,13 @@ Makes a player spectate (watch) another player.
 | -------------- | -------------------------------------------------------------------------------------------- |
 | playerid       | The ID of the player that will spectate.                                                     |
 | targetplayerid | The ID of the player that should be spectated.                                               |
-| mode           | The [mode](../resources/spectatemodes) to spectate with (optional; defaults to 'normal'). |
+| SPECTATE_MODE:mode           | The [mode](../resources/spectatemodes) to spectate with (optional; defaults to 'normal'). |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. One of the players specified does not exist.
+**false** - The function failed to execute. One of the players specified does not exist.
 
 ## Examples
 
@@ -35,7 +35,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectatePlayer. playerid and targetplayerid's virtual world and interior must be the same for this function to work properly.
+- Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectatePlayer.
+- playerid and targetplayerid's virtual world and interior must be the same for this function to work properly.
 
 :::
 
