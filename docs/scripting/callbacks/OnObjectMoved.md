@@ -30,7 +30,7 @@ public OnObjectMoved(objectid)
 
 :::tip
 
-[SetObjectPos](SetObjectPos) does not work when used in this callback. To fix it, recreate the object.
+[SetObjectPos](../functions/SetObjectPos) does not work when used in this callback. To fix it, recreate the object.
 
 :::
 
