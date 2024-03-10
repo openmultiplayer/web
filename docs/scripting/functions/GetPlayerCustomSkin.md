@@ -16,12 +16,24 @@ Returns the class of the players custom skin downloaded from the server.
 
 ## Returns
 
-The custom skin id that was specified in AddCharModel newid
+The custom skin id that was specified in [AddCharModel](AddCharModel) newid.
 
 ## Examples
 
 ```c
-playerskin = GetPlayerCustomSkin(playerid);
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/customskin", true))
+    {
+        new string[32];
+        new customSkin = GetPlayerCustomSkin(playerid);
+
+        format(string, sizeof(string), "Your custom skin id: %d", customSkin);
+        SendClientMessage(playerid, -1, string);
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Related Functions
