@@ -17,23 +17,25 @@ Set a vehicle's position
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The vehicle specified does not exist.
+**false** - The function failed to execute. The vehicle specified does not exist.
 
 ## Examples
 
 ```c
-// Put the player's vehicle at the coordinates 0, 0, 3 (center of SA)
+// Put the player's vehicle at the coordinates 0.0, 0.0, 3.0 (center of SA)
 new vehicleid = GetPlayerVehicleID(playerid);
-SetVehiclePos(vehicleid, 0, 0, 3);
+SetVehiclePos(vehicleid, 0.0, 0.0, 3.0);
 ```
 
 ## Notes
 
 :::warning
 
-An empty vehicle will not fall after being teleported into the air.
+Known Bug(s):
+
+- An empty vehicle will not fall after being teleported into the air!
 
 :::
 
