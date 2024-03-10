@@ -6,18 +6,18 @@ tags: ["player"]
 
 ## Description
 
-Toggle the in-game clock (top-right corner) for a specific player. When this is enabled, time will progress at 1 minute per second. Weather will also interpolate (slowly change over time) when set using SetWeather/SetPlayerWeather.
+Toggle the in-game clock (top-right corner) for a specific player. When this is enabled, time will progress at 1 minute per second. Weather will also interpolate (slowly change over time) when set using [SetWeather](SetWeather)/[SetPlayerWeather](SetPlayerWeather).
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
-| playerid | The player whose clock you want to enable/disable |
-| toggle   | 1 to show and 0 to hide. Hidden by default.       |
+| Name        | Description                                            |
+| ----------- | ------------------------------------------------------ |
+| playerid    | The player whose clock you want to enable/disable      |
+| bool:toggle | 'true' to show and 'false' to hide. Hidden by default. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The specified player does not exist.
+**false** - The function failed to execute. The specified player does not exist.
 
 ## Examples
 
@@ -33,7 +33,8 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Time will automatically advance 6 hours when the player dies.
+- Time is not synced with other players! Time can be synced using [SetPlayerTime](SetPlayerTime).
+- Time will automatically advance 6 hours when the player dies.
 
 :::
 
