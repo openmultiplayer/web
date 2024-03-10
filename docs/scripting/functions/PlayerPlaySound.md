@@ -20,9 +20,9 @@ For a library that lists all sounds, check out [this](https://github.com/WoutPro
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the player is not connected.
+**false** - The function failed to execute. This means the player is not connected.
 
 ## Examples
 
