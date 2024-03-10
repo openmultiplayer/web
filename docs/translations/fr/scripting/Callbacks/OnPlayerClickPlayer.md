@@ -21,7 +21,7 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 ## Exemple
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Vous avez sélectionné le joueur %d", clickedplayerid);

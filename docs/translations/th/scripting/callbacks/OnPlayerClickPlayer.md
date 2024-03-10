@@ -25,7 +25,7 @@ Callback นี้ถูกเรียกเมื่อผู้เล่น�
 ## ตัวอย่าง
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "คุณได้คลิกบนผู้เล่น %d", clickedplayerid);

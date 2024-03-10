@@ -25,7 +25,7 @@ Uvijek je pozvana prva u filterskripti.
 ## Primjeri
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Kliknuo si na igraca %d", clickedplayerid);

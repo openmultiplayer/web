@@ -25,7 +25,7 @@ Vedno je bila povabljena prva v "filterscript".
 ## Primeri
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Kliknili ste na predvajalnik %d", clickedplayerid);
