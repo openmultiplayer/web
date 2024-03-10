@@ -10,14 +10,16 @@ tags: ["player"]
 
 Set a player's gravity.
 
-| Name     | Description |
-| -------- | ------------------- |
-| playerid | The ID of the player to set the gravity. |
+| Name          | Description                                                       |
+| ------------- | ----------------------------------------------------------------- |
+| playerid      | The ID of the player to set the gravity.                          |
 | Float:gravity | The value that the gravity should be set to (between -50 and 50). |
 
 ## Returns
 
-Returns true if succeed, otherwise false.
+**true** - The function executed successfully.
+
+**false** - The function failed to execute. The player specified does not exist.
 
 ## Examples
 
