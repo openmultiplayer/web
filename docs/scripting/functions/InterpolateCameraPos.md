@@ -1,24 +1,24 @@
 ---
 title: InterpolateCameraPos
 description: Move a player's camera from one position to another, within the set time.
-tags: []
+tags: ["player", "interpolate"]
 ---
 
 ## Description
 
 Move a player's camera from one position to another, within the set time. Useful for scripted cut scenes
 
-| Name        | Description                                                                                                             |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| playerid    | The ID of the player the camera should be moved for                                                                     |
-| Float:FromX | The X position the camera should start to move from                                                                     |
-| Float:FromY | The Y position the camera should start to move from                                                                     |
-| Float:FromZ | The Z position the camera should start to move from                                                                     |
-| Float:ToX   | The X position the camera should move to                                                                                |
-| Float:ToY   | The Y position the camera should move to                                                                                |
-| Float:ToZ   | The Z position the camera should move to                                                                                |
-| time        | Time in milliseconds                                                                                                    |
-| cut         | The [jumpcut](../resources/cameracutstyles) to use. Defaults to CAMERA_CUT. Set to CAMERA_MOVE for a smooth movement |
+| Name         | Description                                                                                                          |
+| ------------ | -------------------------------------------------------------------------------------------------------------------- |
+| playerid     | The ID of the player the camera should be moved for                                                                  |
+| Float:fromX  | The X position the camera should start to move from                                                                  |
+| Float:fromY  | The Y position the camera should start to move from                                                                  |
+| Float:fromZ  | The Z position the camera should start to move from                                                                  |
+| Float:toX    | The X position the camera should move to                                                                             |
+| Float:toY    | The Y position the camera should move to                                                                             |
+| Float:toZ    | The Z position the camera should move to                                                                             |
+| time         | Time in milliseconds                                                                                                 |
+| CAM_MOVE:cut | The [jumpcut](../resources/cameracutstyles) to use. Defaults to CAMERA_CUT. Set to CAMERA_MOVE for a smooth movement |
 
 ## Returns
 
@@ -31,7 +31,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/moveme", true))
     {
-        TogglePlayerSpectating(playerid, 1);
+        TogglePlayerSpectating(playerid, true);
         InterpolateCameraPos(playerid, 0.0, 0.0, 10.0, 1000.0, 1000.0, 30.0, 10000, CAMERA_MOVE);
         //Move the player's camera from point A to B in 10000 milliseconds (10 seconds).
         return 1;
@@ -44,7 +44,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Use TogglePlayerSpectating to make objects stream in for the player while the camera is moving and remove the HUD. The player's camera can be reset to behind the player with SetCameraBehindPlayer.
+- Use [TogglePlayerSpectating](TogglePlayerSpectating) to make objects stream in for the player while the camera is moving and remove the HUD.
+- The player's camera can be reset to behind the player with [SetCameraBehindPlayer](SetCameraBehindPlayer).
 
 :::
 
