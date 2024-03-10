@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-Get the player's current game time. Set by SetWorldTime, or by the game automatically if TogglePlayerClock is used.
+Get the player's current game time. Set by [SetWorldTime](SetWorldTime), or by the game automatically if [TogglePlayerClock](TogglePlayerClock) is used.
 
 | Name     | Description                                                    |
 | -------- | -------------------------------------------------------------- |
@@ -16,9 +16,9 @@ Get the player's current game time. Set by SetWorldTime, or by the game automati
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**false** - The function failed to execute. The player specified does not exist.
 
 The current game time is stored in the specified variables.
 
