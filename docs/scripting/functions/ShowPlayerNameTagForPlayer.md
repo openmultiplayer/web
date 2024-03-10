@@ -6,40 +6,44 @@ tags: ["player"]
 
 ## Description
 
-This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head. For use of a similar function like this on a global level, ShowNameTags function.
+This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head. For use of a similar function like this on a global level, [ShowNameTags](ShowNameTags) function.
 
-| Name         | Description                                      |
-| ------------ | ------------------------------------------------ |
-| playerid     | Player who will see the results of this function |
-| showplayerid | Player whose name tag will be shown or hidden    |
-| show         | 1-show name tag, 0-hide name tag                 |
+| Name      | Description                                          |
+| --------- | ---------------------------------------------------- |
+| playerid  | Player who will see the results of this function.    |
+| targetid  | Player whose name tag will be shown or hidden.       |
+| bool:show | 'true' for show name tag, 'false' for hide name tag. |
 
 ## Returns
 
-ImportantNote
+**true** - The function executed successfully.
 
-ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time(OnPlayerStreamIn is a good spot).
+**false** - The function failed to execute. The player specified does not exist.
 
 ## Examples
 
 ```c
-//The player who typed /nameoff will not be able to see any other players nametag.
-if (strcmp("/nameoff", cmdtext, true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    for (new i = 0; i != MAX_PLAYERS; -- i)
+    // The player who typed /nameoff will not be able to see any other players nametag.
+    if (strcmp("/nameoff", cmdtext, true) == 0)
     {
-        ShowPlayerNameTagForPlayer(playerid, i, false);
+        for (new i = 0; i < MAX_PLAYERS; i++)
+        {
+            ShowPlayerNameTagForPlayer(playerid, i, false);
+        }
+        GameTextForPlayer(playerid, "~W~Nametags ~R~off", 5000, 5);
+        return 1;
     }
-    GameTextForPlayer(playerid, "~W~Nametags ~R~off", 5000, 5);
-    return 1;
+    return 0;
 }
 ```
 
 ## Notes
 
-:::warning
+:::tip
 
-ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time(OnPlayerStreamIn is a good spot).
+[ShowNameTags](ShowNameTags) must be set to 'true' to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time ([OnPlayerStreamIn](../callbacks/OnPlayerStreamIn) is a good spot).
 
 :::
 
