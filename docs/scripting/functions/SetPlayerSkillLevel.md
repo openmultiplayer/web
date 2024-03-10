@@ -8,11 +8,11 @@ tags: ["player"]
 
 Set the skill level of a certain weapon type for a player.
 
-| Name     | Description |
-| -------- | ------------------------------ |
-| playerid | The ID of the player to set the weapon skill of. |
-| skill    | The [weapon](../resources/weaponskills) to set the skill of. |
-| level    | The skill level to set for that weapon, ranging from 0 to 999. A level out of range will max it out. |
+| Name              | Description                                                                                          |
+| ----------------- | ---------------------------------------------------------------------------------------------------- |
+| playerid          | The ID of the player to set the weapon skill of.                                                     |
+| WEAPONSKILL:skill | The [weapon](../resources/weaponskills) to set the skill of.                                         |
+| level             | The skill level to set for that weapon, ranging from 0 to 999. A level out of range will max it out. |
 
 ## Returns
 
@@ -23,8 +23,8 @@ This function does not return any specific values.
 ```c
 public OnPlayerSpawn(playerid)
 {
+    // Make the player use single-handed sawn-off shotguns.
     SetPlayerSkillLevel(playerid, WEAPONSKILL_SAWNOFF_SHOTGUN, 1);
-    // This will make the player use single-handed sawn-off shotguns.
     return 1;
 }
 ```
