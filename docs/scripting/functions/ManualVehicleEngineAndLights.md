@@ -14,16 +14,25 @@ Use this function before any player connects (OnGameModeInit) to tell all client
 public OnGameModeInit()
 {
     ManualVehicleEngineAndLights();
-
     return 1;
 }
 ```
 
 ## Notes
 
-:::tip
+:::warning
 
 Is it not possible to reverse this function after it has been used. You must either use it or not use it.
+
+:::
+
+:::tip
+
+You can also enable or disable this function via [config.json](../../server/config.json)
+
+```json
+"use_manual_engine_and_lights": true,
+```
 
 :::
 

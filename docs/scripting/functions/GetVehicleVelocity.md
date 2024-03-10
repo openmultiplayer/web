@@ -17,9 +17,9 @@ Get the velocity of a vehicle on the X, Y and Z axes.
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle specified does not exist.
+**false** - The function failed to execute. This means the vehicle specified does not exist.
 
 The vehicle's velocity is stored in the specified variables.
 
@@ -28,15 +28,21 @@ The vehicle's velocity is stored in the specified variables.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp("/GetMyCarVelocity", cmdtext) && IsPlayerInAnyVehicle(playerid))
+    if (!strcmp("/GetMyCarVelocity", cmdtext))
     {
+        if (!IsPlayerInAnyVehicle(playerid))
+        {
+            return 1;
+        }
+
         new
             Float: vehVelocity[3],
-            clientMessage[80];
+            string[128];
 
         GetVehicleVelocity(GetPlayerVehicleID(playerid), vehVelocity[0], vehVelocity[1], vehVelocity[2]);
-        format(clientMessage, sizeof(clientMessage), "You are going at a velocity of X%f, Y%f, Z%f", vehVelocity[0], vehVelocity[1], vehVelocity[2]);
-        SendClientMessage(playerid, 0xFFFFFFFF, clientMessage);
+        
+        format(string, sizeof(string), "You are going at a velocity of X%f, Y%f, Z%f", vehVelocity[0], vehVelocity[1], vehVelocity[2]);
+        SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;
     }
     return 0;
@@ -47,12 +53,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-This function can be used to retrieve a vehicle's speed (km/h, m/s or mph). For more info look here.
+This function can be used to retrieve a vehicle's speed (km/h, m/s or mph).
 
 :::
 
 ## Related Functions
 
-- [GetPlayerVelocity](GetPlayerVelocity): Get a player's velocity.
 - [SetVehicleVelocity](SetVehicleVelocity): Set a vehicle's velocity.
 - [SetPlayerVelocity](SetPlayerVelocity): Set a player's velocity.
+- [GetPlayerVelocity](GetPlayerVelocity): Get a player's velocity.

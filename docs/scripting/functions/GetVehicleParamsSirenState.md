@@ -16,11 +16,11 @@ Returns a vehicle's siren state (on/off).
 
 ## Returns
 
--1: Vehicle siren hasn't been set yet (off)
+**-1:** Vehicle siren hasn't been set yet (off)
 
-0: Vehicle siren is off
+**0:** Vehicle siren is off
 
-1: Vehicle siren is on
+**1:** Vehicle siren is on
 
 ## Examples
 

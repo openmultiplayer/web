@@ -14,7 +14,7 @@ Gets the model ID of a vehicle.
 
 ## Returns
 
-The vehicle's model ID, or 0 if the vehicle doesn't exist.
+The [vehicle's model ID](../resources/vehicleid), or **0** if the vehicle doesn't exist.
 
 ## Examples
 
@@ -35,3 +35,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 - [GetVehiclePos](GetVehiclePos): Get the position of a vehicle.
 - [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
 - [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.
+
+## Related Resources
+
+- [Vehicle IDs](../resources/vehicleid)

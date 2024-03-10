@@ -8,10 +8,10 @@ tags: ["vehicle"]
 
 Sets the 'virtual world' of a vehicle. Players will only be able to see vehicles in their own virtual world.
 
-| Name      | Description                                        |
-| --------- | -------------------------------------------------- |
-| vehicleid | The ID of vehicle to set the virtual world of.     |
-| worldid   | The ID of the virtual world to put the vehicle in. |
+| Name         | Description                                        |
+| ------------ | -------------------------------------------------- |
+| vehicleid    | The ID of vehicle to set the virtual world of.     |
+| virtualWorld | The ID of the virtual world to put the vehicle in. |
 
 ## Returns
 

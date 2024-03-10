@@ -11,15 +11,15 @@ Sets the X, Y and Z velocity of a vehicle.
 | Name      | Description                                   |
 | --------- | --------------------------------------------- |
 | vehicleid | The ID of the vehicle to set the velocity of. |
-| Float:X   | The velocity in the X direction.              |
-| Float:Y   | The velocity in the Y direction .             |
-| Float:Z   | The velocity in the Z direction.              |
+| Float:x   | The velocity in the X direction.              |
+| Float:y   | The velocity in the Y direction.              |
+| Float:z   | The velocity in the Z direction.              |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The vehicle does not exist.
+**false** - The function failed to execute. The vehicle does not exist.
 
 ## Examples
 
@@ -46,3 +46,5 @@ This function has no affect on un-occupied vehicles and does not affect trains.
 :::
 
 ## Related Functions
+
+- [GetVehicleVelocity](GetVehicleVelocity): Get the velocity of a vehicle on the X, Y and Z axes.

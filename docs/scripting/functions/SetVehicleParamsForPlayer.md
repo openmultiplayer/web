@@ -8,18 +8,18 @@ tags: ["player", "vehicle"]
 
 Set the parameters of a vehicle for a player.
 
-| Name             | Description                                                                                          |
-| ---------------- | ---------------------------------------------------------------------------------------------------- |
-| vehicle          | The ID of the vehicle to set the parameters of.                                                      |
-| playerid         | The ID of the player to set the vehicle's parameters for.                                            |
-| bool:objective   | false to disable the objective or true to show it. This is a bobbing yellow arrow above the vehicle. |
-| bool:doorslocked | false to unlock the doors or true to lock them.                                                      |
+| Name             | Description                                                                                              |
+| ---------------- | -------------------------------------------------------------------------------------------------------- |
+| vehicle          | The ID of the vehicle to set the parameters of.                                                          |
+| playerid         | The ID of the player to set the vehicle's parameters for.                                                |
+| bool:objective   | 'false' to disable the objective or 'true' to show it. This is a bobbing yellow arrow above the vehicle. |
+| bool:doorslocked | 'false' to unlock the doors or 'true' to lock them.                                                      |
 
 ## Returns
 
-true - The function executed successfully.
+**true** - The function executed successfully.
 
-false - The function failed to execute. The player and/or vehicle specified do not exist.
+**false** - The function failed to execute. The player and/or vehicle specified do not exist.
 
 ## Examples
 
@@ -112,7 +112,7 @@ Vehicles must be respawned for the 'objective' to be removed.
 
 :::warning
 
-Since 0.3a you will have to reapply this function when OnVehicleStreamIn is called.
+You will have to reapply this function when [OnVehicleStreamIn](../callbacks/OnVehicleStreamIn) is called.
 
 :::
 

@@ -8,16 +8,16 @@ tags: ["vehicle"]
 
 Get the rotation of a vehicle on the Z axis (yaw).
 
-| Name           | Description                                                             |
-| -------------- | ----------------------------------------------------------------------- |
-| vehicleid      | The ID of the vehicle to get the Z angle of.                            |
-| &Float:z_angle | A float variable in which to store the Z rotation, passed by reference. |
+| Name         | Description                                                             |
+| ------------ | ----------------------------------------------------------------------- |
+| vehicleid    | The ID of the vehicle to get the Z angle of.                            |
+| &Float:angle | A float variable in which to store the Z rotation, passed by reference. |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**false** - The function failed to execute. This means the vehicle does not exist.
 
 The vehicle's rotation is stored in the specified variable.
 
@@ -29,18 +29,18 @@ public OnPlayerCommandText(playerid, cmdtext[])
      if (strcmp(cmdtext, "/vehrot", true) == 0)
      {
           new
-               currentVeh,
-               Float: rotZ,
-               clientMessage[40];
+               vehicleid,
+               Float:rotZ,
+               string[64];
 
-          currentVeh = GetPlayerVehicleID(playerid);
-          GetVehicleZAngle(currentVeh, rotZ);
-          format(clientMessage, sizeof(clientMessage), "The current vehicle rotation is: %.0f", rotZ);
-          SendClientMessage(playerid, 0xFFFFFFFF, clientMessage);
-
+          vehicleid = GetPlayerVehicleID(playerid);
+          
+          GetVehicleZAngle(vehicleid, rotZ);
+          
+          format(string, sizeof(string), "The current vehicle rotation is: %.0f", rotZ);
+          SendClientMessage(playerid, 0xFFFFFFFF, string);
           return 1;
      }
-
      return 0;
 }
 ```
