@@ -12,10 +12,10 @@ Removes a standard San Andreas model for a single player within a specified rang
 | ------------- | --------------------------------------------------------------------------------- |
 | playerid      | The ID of the player to remove the objects for.                                   |
 | modelid       | The model to remove.                                                              |
-| Float:fX      | The X coordinate around which the objects will be removed.                        |
-| Float:fY      | The Y coordinate around which the objects will be removed.                        |
-| Float:fZ      | The Z coordinate around which the objects will be removed.                        |
-| Float:fRadius | The radius around the specified point to remove objects with the specified model. |
+| Float:centerY | The X coordinate around which the objects will be removed.                        |
+| Float:centerY | The Y coordinate around which the objects will be removed.                        |
+| Float:centerZ | The Z coordinate around which the objects will be removed.                        |
+| Float:radius  | The radius around the specified point to remove objects with the specified model. |
 
 ## Returns
 
@@ -44,7 +44,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-In SA-MP 0.3.7 you can use -1 for the modelid to remove all objects within the specified radius.
+You can use **-1** for the modelid to remove all objects within the specified radius.
 
 :::
 
