@@ -8,16 +8,16 @@ tags: ["player"]
 
 Toggles whether a player can control their character or not. The player will also be unable to move their camera.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to toggle the controllability of       |
-| toggle   | 0 to make them uncontrollable, 1 to make them controllable. |
+| Name              | Description                                                            |
+| ----------------- | ---------------------------------------------------------------------- |
+| playerid          | The ID of the player to toggle the controllability of                  |
+| bool:controllable | 'false' to make them uncontrollable, 'true' to make them controllable. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**false** - The function failed to execute. The player specified does not exist.
 
 ## Examples
 
@@ -27,7 +27,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
      // Freezes a player when they types /freezeme
      if (strcmp(cmdtext, "/freezeme", true) == 0)
      {
-          TogglePlayerControllable(playerid,0);
+          TogglePlayerControllable(playerid, false);
           return 1;
      }
      // Unfreezes a player when they types /unfreezeme
