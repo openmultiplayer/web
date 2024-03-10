@@ -17,9 +17,9 @@ Gets the position of a vehicle.
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. The vehicle specified does not exist.
+**false** - The function failed to execute. The vehicle specified does not exist.
 
 ## Examples
 
@@ -28,23 +28,21 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
      if (strcmp(cmdtext, "/vehpos", true) == 0)
      {
-          new
-               playerVehicle;
-          playerVehicle = GetPlayerVehicleID(playerid);
+          new vehicleid = GetPlayerVehicleID(playerid);
 
-          // if playerVehicle is equal to 0
-          if (!playerVehicle)
+          // if vehicleid is equal to 0
+          if (vehicleid == 0)
           {
                return SendClientMessage(playerid, -1, "You are not in any vehicle!");
           }
 
           new
-               Float: vehX, Float: vehY, Float: vehZ,
-               clientMessage[96];
+               Float:vehX, Float:vehY, Float:vehZ,
+               string[128];
 
-          GetVehiclePos(playerVehicle, vehX, vehY, vehZ);
-          format(clientMessage, sizeof(clientMessage), "The current vehicle positions are: %f, %f, %f", vehX, vehY, vehZ);
-          SendClientMessage(playerid, 0xFFFFFFFF, clientMessage);
+          GetVehiclePos(vehicleid, vehX, vehY, vehZ);
+          format(string, sizeof(string), "The current vehicle positions are: %f, %f, %f", vehX, vehY, vehZ);
+          SendClientMessage(playerid, 0xFFFFFFFF, string);
           return 1;
      }
 
