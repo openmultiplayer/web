@@ -24,15 +24,16 @@ The function itself doesn't return a specific value. The X, Y and Z velocities a
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp("/velocity", cmdtext))
+    if (!strcmp(cmdtext, "/velocity", true))
     {
         new
-            Float: playerVelocity[3],
-            message[80];
+            Float:x, Float:y, Float:z,
+            string[128];
 
-        GetPlayerVelocity(playerid, playerVelocity[0], playerVelocity[1], playerVelocity[2]);
-        format(message, sizeof(message), "You are going at a velocity of X: %f, Y: %f, Z: %f", playerVelocity[0], playerVelocity[1], playerVelocity[2]);
-        SendClientMessage(playerid, 0xFFFFFFFF, message);
+        GetPlayerVelocity(playerid, x, y, z);
+        
+        format(string, sizeof(string), "You are going at a velocity of X: %f, Y: %f, Z: %f", x, y, z);
+        SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;
     }
 }
