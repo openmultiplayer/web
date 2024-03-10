@@ -39,8 +39,8 @@ const Footer: React.FC = () => {
 
   useEffect(() => {
     const initialItems: FooterItem[] = [
+      { url: "https://sa-mp.mp/", imageUrl: "/images/assets/samp.svg", text: "SA-MP" },
       { url: "https://vk.com/open_mp", imageUrl: "/images/assets/vk.svg", text: "VK" },
-      { url: "https://facebook.com/openmultiplayer", imageUrl: "/images/assets/facebook.svg", text: "<b>Facebook</b>" },
       { url: "https://youtube.com/openmultiplayer", imageUrl: "/images/assets/youtube.svg", text: "YouTube" },
       { url: "https://x.com/openmultiplayer", imageUrl: "/images/assets/x.svg", text: "X" },
       { url: "https://instagram.com/openmultiplayer/", imageUrl: "/images/assets/instagram.svg", text: "Instagram" },
