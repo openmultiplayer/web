@@ -11,7 +11,7 @@ Ažurira igračevom 3D Text Labelu text i boju.
 | Ime             | Deskripcija                                     |
 | --------------- | ----------------------------------------------- |
 | playerid        | ID igrača za kojeg je 3D Text Label kreiran.    |
-| PlayerText3D:id | 3D Text Label kojeg želite ažurirati.           |
+| PlayerText3D:textid | 3D Text Label kojeg želite ažurirati.           |
 | color           | Boja 3D Text Labela kojeg će od sada imati.     |
 | text[]          | Novi text kojeg će 3D Text Label od sada imati. |
 
