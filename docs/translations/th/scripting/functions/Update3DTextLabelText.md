@@ -10,7 +10,7 @@ Updates a 3D Text Label text and color.
 
 | Name      | Description                                                   |
 | --------- | ------------------------------------------------------------- |
-| Text3D:id | The 3D Text Label you want to update.                         |
+| Text3D:textid | The 3D Text Label you want to update.                         |
 | color     | The color the 3D Text Label should have from now on.          |
 | text[]    | The new text which the 3D Text Label should have from now on. |
 
