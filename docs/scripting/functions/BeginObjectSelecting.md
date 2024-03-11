@@ -1,7 +1,7 @@
 ---
 title: BeginObjectSelecting
 description: Display the cursor and allow the player to select an object.
-tags: []
+tags: ["object"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />

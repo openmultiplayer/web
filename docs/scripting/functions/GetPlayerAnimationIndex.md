@@ -1,7 +1,7 @@
 ---
 title: GetPlayerAnimationIndex
 description: Returns the index of any running applied animations.
-tags: ["player"]
+tags: ["player", "animation"]
 ---
 
 ## Description
@@ -14,7 +14,7 @@ Returns the index of any running applied animations.
 
 ## Returns
 
-0 if there is no animation applied
+0 if there is no animation applied.
 
 ## Examples
 
@@ -24,13 +24,14 @@ public OnPlayerUpdate(playerid)
     if (GetPlayerAnimationIndex(playerid))
     {
         new
-            animLib[32],
-            animName[32],
-            msg[128];
+            animationLibrary[32],
+            animationName[32],
+            string[128];
 
-        GetAnimationName(GetPlayerAnimationIndex(playerid), animLib, sizeof animLib, animName, sizeof animName);
-        format(msg, sizeof msg, "Running anim: %s %s", animLib, animName);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        GetAnimationName(GetPlayerAnimationIndex(playerid), animationLibrary, sizeof (animationLibrary), animationName, sizeof (animationName));
+        
+        format(string, sizeof (string), "Running anim: %s %s", animationLibrary, animationName);
+        SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
     return 1;
 }
@@ -38,4 +39,5 @@ public OnPlayerUpdate(playerid)
 
 ## Related Functions
 
+- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.
 - [GetAnimationName](GetAnimationName): Get the animation library/name for the index.

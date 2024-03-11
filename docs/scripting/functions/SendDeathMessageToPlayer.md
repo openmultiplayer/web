@@ -17,14 +17,14 @@ Adds a death to the 'killfeed' on the right-hand side of the screen for a single
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute.
+**false** - The function failed to execute.
 
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Sends a death message to "playerid" shows that "killerid" killed "playerid" for "reason"
     SendDeathMessageToPlayer(playerid, killerid, playerid, reason);
@@ -36,4 +36,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 ## Related Functions
 
 - [SendDeathMessage](SendDeathMessage): Add a kill to the death list.
+
+## Related Callbacks
+
 - [OnPlayerDeath](../callbacks/OnPlayerDeath): Called when a player dies.

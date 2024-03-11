@@ -10,7 +10,7 @@ Delete a 3D text label (created with Create3DTextLabel).
 
 | Name      | Description                            |
 | --------- | -------------------------------------- |
-| Text3D:id | The ID of the 3D text label to delete. |
+| Text3D:textid | The ID of the 3D text label to delete. |
 
 ## ส่งคืน
 

@@ -1,7 +1,7 @@
 ---
 title: HideGameTextForAll
 description: Stop showing a gametext style for all players.
-tags: ["player"]
+tags: ["player", "gametext"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />

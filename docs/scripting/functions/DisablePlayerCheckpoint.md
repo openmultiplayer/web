@@ -14,16 +14,15 @@ Disables (hides/destroys) a player's set checkpoint. Players can only have a sin
 
 ## Returns
 
-1: The function executed successfully. Success is also returned if the player doesn't have a checkpoint shown already.
+**true** - The function executed successfully. Success is also returned if the player doesn't have a checkpoint shown already.
 
-0: The function failed to execute. This means the player is not connected.
+**false** - The function failed to execute. This means the player is not connected.
 
 ## Examples
 
 ```c
 public OnPlayerEnterCheckpoint(playerid)
 {
-    GivePlayerMoney(playerid, 10000);
     DisablePlayerCheckpoint(playerid);
     return 1;
 }
@@ -37,6 +36,9 @@ public OnPlayerEnterCheckpoint(playerid)
 - [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
 - [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
+
+## Related Callbacks
+
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
 - [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint): Called when a player leaves a race checkpoint.

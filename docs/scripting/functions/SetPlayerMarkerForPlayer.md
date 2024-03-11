@@ -8,11 +8,11 @@ tags: ["player"]
 
 Change the colour of a player's nametag and radar blip for another player.
 
-| Name         | Description                                                      |
-| ------------ | ---------------------------------------------------------------- |
-| playerid     | The player that will see the player's changed blip/nametag color |
-| showplayerid | The player whose color will be changed                           |
-| color        | New color. Supports alpha values.                                |
+| Name     | Description                                                      |
+| -------- | ---------------------------------------------------------------- |
+| playerid | The player that will see the player's changed blip/nametag color |
+| targetid | The player whose color will be changed                           |
+| colour   | New color. Supports alpha values.                                |
 
 ## Returns
 

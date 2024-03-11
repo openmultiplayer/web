@@ -16,15 +16,16 @@ Get the ID of the vehicle the player is looking at.
 
 ## Returns
 
-The vehicle ID of the vehicle the player is looking at. INVALID_VEHICLE_ID if none.
+The vehicle ID of the vehicle the player is looking at. `INVALID_VEHICLE_ID` if none.
 
 ## Examples
 
 ```c
 new globalVehicleID;
+
 public OnGameModeInit()
 {
-    globalVehicleID = CreateVehicle(596, 0, 0, 3, 0, 0, 0, -1, -1, -1);
+    globalVehicleID = CreateVehicle(596, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0, -1, -1, -1);
     return 1;
 }
 
@@ -41,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new vehicleid = GetPlayerCameraTargetVehicle(playerid);
         if (vehicleid == globalVehicleID)
         {
-             SendClientMessage(playerid, -1, "You're looking at your vehicle!");
+            SendClientMessage(playerid, -1, "You're looking at your vehicle!");
         }
         else
         {

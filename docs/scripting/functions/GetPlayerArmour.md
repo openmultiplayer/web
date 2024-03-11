@@ -15,21 +15,30 @@ This function stores the armour of a player into a variable.
 
 ## Returns
 
-1 - success
+**1** - success
 
-0 - failure (i.e. player not connected).
+**0** - failure (i.e. player not connected).
 
 The player's armour is stored in the specified variable.
 
 ## Examples
 
 ```c
-new
-	Float:armour,
-	string[40];
-GetPlayerArmour(playerid, armour);
-format(string, sizeof string, "SERVER: Your armour is %0.f percent", armour);
-SendClientMessage(playerid, 0xFFFFFFAA, string);
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/myarmour", true))
+    {
+		new string[40];
+
+		new Float:armour;
+		GetPlayerArmour(playerid, armour);
+
+		format(string, sizeof(string), "SERVER: Your armour is %.2f percent", armour);
+		SendClientMessage(playerid, 0xFFFFFFAA, string);
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Notes

@@ -35,6 +35,34 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 :::tip
 
+This function has been found to be currently unreliable the output is not as expected when compared to the client. Therefore this function should not be used as a packet loss kicker. A more accurate packetloss function:
+
+```c
+stock GetPlayerPacketLoss(playerid, &Float:packetLoss)
+{
+    /* Returns the packetloss percentage of the given playerid - Made by Fusez */
+
+    if(!IsPlayerConnected(playerid))
+    {
+        return 0;
+    }
+
+    new nstats[400+1], nstats_loss[20], start, end;
+    GetPlayerNetworkStats(playerid, nstats, sizeof (nstats));
+
+    start = strfind(nstats, "packetloss", true);
+    end = strfind(nstats, "%", true, start);
+
+    strmid(nstats_loss, nstats, start+12, end, sizeof (nstats_loss));
+    packetLoss = floatstr(nstats_loss);
+    return 1;
+}
+```
+
+:::
+
+:::tip
+
 Be advised that this function will report the packets lost by the server. The packet loss number reported by the client **will** be different, not because either is incorrect, but because both the server and the client are only aware of the loss packages sent by them.
 
 :::

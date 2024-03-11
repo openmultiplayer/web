@@ -8,9 +8,9 @@ tags: []
 
 Toggle the drawing of nametags, health bars and armor bars above players.
 
-| Name    | Description                                     |
-| ------- | ----------------------------------------------- |
-| enabled | 0 to disable, 1 to enable (enabled by default). |
+| Name      | Description                                                |
+| --------- | ---------------------------------------------------------- |
+| bool:show | 'false' to disable, 'true' to enable (enabled by default). |
 
 ## Returns
 
@@ -23,7 +23,7 @@ public OnGameModeInit()
 {
     // This will fully disable all player nametags
     // (including health and armour bars)
-    ShowNameTags(0);
+    ShowNameTags(false);
 }
 ```
 
@@ -31,7 +31,17 @@ public OnGameModeInit()
 
 :::warning
 
-This function can only be used in OnGameModeInit. For other times, see ShowPlayerNameTagForPlayer.
+This function can only be used in [OnGameModeInit](OnGameModeInit). For other times, see [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer).
+
+:::
+
+:::tip
+
+You can also toggle player nametags via [config.json](../../server/config.json)
+
+```json
+"use_nametags": false,
+```
 
 :::
 

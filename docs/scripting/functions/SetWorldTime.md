@@ -33,7 +33,7 @@ This function is only relevant for players that do not use a passing clock - see
 
 :::tip
 
-To set the minutes and/or to set the time for individual players, see SetPlayerTime.
+To set the minutes and/or to set the time for individual players, see [SetPlayerTime](SetPlayerTime).
 
 :::
 

@@ -6,17 +6,17 @@ tags: ["player", "gangzone"]
 
 ## Description
 
-Show a gangzone for a player. Must be created with GangZoneCreate first.
+Show a gangzone for a player. Must be created with [GangZoneCreate](GangZoneCreate) first.
 
 | Name     | Description                                                                                               |
 | -------- | --------------------------------------------------------------------------------------------------------- |
-| playerid | The ID of the player you would like to show the gangzone for..                                            |
-| zone     | The ID of the gang zone to show for the player. Returned by GangZoneCreate                                |
-| color    | The color to show the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
+| playerid | The ID of the player you would like to show the gangzone for.                                             |
+| zoneid   | The ID of the gang zone to show for the player. Returned by [GangZoneCreate](GangZoneCreate)              |
+| colour   | The color to show the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
 
 ## Returns
 
-1 if the gangzone was shown, otherwise 0 (non-existant).
+**1** if the gangzone was shown, otherwise **0** (non-existant).
 
 ## Examples
 

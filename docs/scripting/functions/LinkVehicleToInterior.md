@@ -11,13 +11,13 @@ Links a vehicle to an interior. Vehicles can only be seen by players in the same
 | Name       | Description                                                   |
 | ---------- | ------------------------------------------------------------- |
 | vehicleid  | The ID of the vehicle to link to an interior.                 |
-| interiorid | The [Interior ID](../resources/interiorids) to link it to. |
+| interiorid | The [Interior ID](../resources/interiorids) to link it to.    |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**false** - The function failed to execute. This means the vehicle does not exist.
 
 ## Examples
 

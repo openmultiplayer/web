@@ -43,7 +43,9 @@ Fix here: http://pastebin.com/G81da7N1
 
 :::warning
 
-Known Bug(s): previewing a component inside a mod shop might call this callback.
+Known Bug(s):
+
+- Previewing a component inside a mod shop might call this callback.
 
 :::
 

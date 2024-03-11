@@ -1,7 +1,7 @@
 ---
 title: HideGameTextForPlayer
 description: Stop showing a gametext style to a player.
-tags: ["player"]
+tags: ["player", "gametext"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
@@ -22,7 +22,7 @@ This function does not return any specific value.
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     HideGameTextForPlayer(playerid, 3);
     return 1;

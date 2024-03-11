@@ -10,9 +10,9 @@ tags: ["player"]
 
 Enable/Disable weapons for a player.
 
-| Name     | Description                                           |
-| -------- | ----------------------------------------------------- |
-| playerid | The ID of the player to allow weapons |
+| Name       | Description                            |
+| ---------- | -------------------------------------- |
+| playerid   | The ID of the player to allow weapons  |
 | bool:allow | true for allow and false for disallow. |
 
 ## Returns
@@ -25,7 +25,6 @@ This function always returns true.
 public OnPlayerConnect(playerid)
 {
     AllowPlayerWeapons(playerid, true);
-
     return 1;
 }
 ```

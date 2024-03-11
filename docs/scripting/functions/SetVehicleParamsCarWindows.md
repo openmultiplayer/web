@@ -20,9 +20,9 @@ Allows you to open and close the windows of a vehicle.
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**false** - The function failed to execute. This means the vehicle does not exist.
 
 ## Related Functions
 

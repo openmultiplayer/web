@@ -14,9 +14,9 @@ Checks if a vehicle has a trailer attached to it. Use GetVehicleTrailer to get t
 
 ## Returns
 
-1: The vehicle has a trailer attached.
+**true** - The vehicle has a trailer attached.
 
-0: The vehicle does not have a trailer attached.
+**false** - The vehicle does not have a trailer attached.
 
 ## Examples
 

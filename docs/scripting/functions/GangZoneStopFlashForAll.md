@@ -8,9 +8,9 @@ tags: ["gangzone"]
 
 Stops a gangzone flashing for all players.
 
-| Name | Description                                                      |
-| ---- | ---------------------------------------------------------------- |
-| zone | The ID of the zone to stop flashing. Returned by GangZoneCreate. |
+| Name   | Description                                                      |
+| ------ | ---------------------------------------------------------------- |
+| zoneid | The ID of the zone to stop flashing. Returned by GangZoneCreate. |
 
 ## Returns
 
@@ -29,7 +29,7 @@ public OnGameModeInit()
     return 1;
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     GangZoneFlashForAll(gGangZoneId, COLOR_RED);
     return 1;

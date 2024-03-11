@@ -25,7 +25,7 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
         // If the player exits a vehicle
     if (oldstate == PLAYER_STATE_DRIVER || oldstate == PLAYER_STATE_PASSENGER)

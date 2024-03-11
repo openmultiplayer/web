@@ -25,7 +25,7 @@ new bool:ActorHandsup[MAX_ACTORS];
 
 public OnPlayerConnect(playerid)
 {
-    EnablePlayerCameraTarget(playerid, 1);
+    EnablePlayerCameraTarget(playerid, true);
     return 1;
 }
 
@@ -41,7 +41,7 @@ public OnPlayerUpdate(playerid)
         new playerWeapon = GetPlayerWeapon(playerid);
 
         // Get the player's keys so we can check if they are aiming
-        new keys, updown, leftright;
+        new KEY:keys, updown, leftright;
         GetPlayerKeys(playerid, keys, updown, leftright);
 
         // If the actor hasn't put its hands up yet, AND the player is ARMED
@@ -68,7 +68,7 @@ This function only tells you which actor (if any) the player is looking at. To f
 
 :::warning
 
-This function is disabled by default to save bandwidth. Use EnablePlayerCameraTarget to enable it for each player.
+This function is disabled by default to save bandwidth. Use [EnablePlayerCameraTarget](EnablePlayerCameraTarget) to enable it for each player.
 
 :::
 

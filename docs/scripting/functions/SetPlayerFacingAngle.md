@@ -8,21 +8,21 @@ tags: ["player"]
 
 Set a player's facing angle (Z rotation).
 
-| Name      | Description                                      |
-| --------- | ------------------------------------------------ |
-| playerid  | The ID of the player to set the facing angle of. |
-| Float:ang | The angle the player should face.                |
+| Name        | Description                                      |
+| ----------- | ------------------------------------------------ |
+| playerid    | The ID of the player to set the facing angle of. |
+| Float:angle | The angle the player should face.                |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**false** - The function failed to execute. The player specified does not exist.
 
 ## Examples
 
 ```c
-SetPlayerFacingAngle( playerid, 0 ); //Player faces north
+SetPlayerFacingAngle(playerid, 0.0); //Player faces north
 ```
 
 ```

@@ -19,7 +19,7 @@ The ID of the player's current weapon. Returns -1 if the player specified does n
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Check if the killerid is not an invalid player (which means is connected).
     if (killerid != INVALID_PLAYER_ID)
@@ -39,7 +39,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::tip
 
-When the player state is PLAYER_STATE_DRIVER or PLAYER_STATE_PASSENGER this function returns the weapon held by the player before they entered the vehicle. If a cheat is used to spawn a weapon inside a vehicle, this function will not report it.
+When the player state is `PLAYER_STATE_DRIVER` or `PLAYER_STATE_PASSENGER` this function returns the weapon held by the player before they entered the vehicle. If a cheat is used to spawn a weapon inside a vehicle, this function will not report it.
 
 :::
 

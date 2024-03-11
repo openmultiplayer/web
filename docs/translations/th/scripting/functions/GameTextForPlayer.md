@@ -24,7 +24,7 @@ Shows 'game text' (on-screen text) for a certain length of time for a specific p
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     GameTextForPlayer(playerid, "Wasted", 5000, 2);
     return 1;

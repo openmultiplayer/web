@@ -16,7 +16,7 @@ This function gets the ID of the vehicle the player is currently in.
 
 ## Returns
 
-ID of the vehicle or 0 if not in a vehicle
+ID of the vehicle or **0** if not in a vehicle
 
 ## Examples
 

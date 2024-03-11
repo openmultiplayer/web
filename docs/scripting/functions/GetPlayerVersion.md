@@ -8,11 +8,11 @@ tags: ["player"]
 
 Returns the SA-MP client version, as reported by the player.
 
-| Name      | Description                                                       |
-| --------- | ----------------------------------------------------------------- |
-| playerid  | The ID of the player to get the client version of.                |
-| version[] | The string to store the player's version in, passed by reference. |
-| len       | The maximum length of the version.                                |
+| Name                   | Description                                                       |
+| ---------------------- | ----------------------------------------------------------------- |
+| playerid               | The ID of the player to get the client version of.                |
+| version[]              | The string to store the player's version in, passed by reference. |
+| len = sizeof (version) | The maximum length of the version.                                |
 
 ## Returns
 
@@ -23,12 +23,13 @@ The client version is stored in the specified array.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new
-        string[24];
-    GetPlayerVersion(playerid, string, sizeof(string));
-    format(string, sizeof(string), "Your version of SA-MP: %s", string);
+    new version[24];
+    GetPlayerVersion(playerid, version, sizeof(version));
+
+    new string[64];
+    format(string, sizeof(string), "Your version of SA-MP: %s", version);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
-    // possible text: "Your version of SA-MP: 0.3.7"
+    // Possible text: "Your version of SA-MP: 0.3.7"
     return 1;
 }
 ```

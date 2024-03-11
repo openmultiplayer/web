@@ -14,9 +14,11 @@ Get a player's name.
 | name[]   | An array into which to store the name, passed by reference.                                                                                     |
 | len      | The length of the string that should be stored. Recommended to be MAX_PLAYER_NAME + 1. The + 1 is necessary to account for the null terminator. |
 
-## Returns
+## Return Values
 
-The player's name is stored in the specified array.
+Returns the length of the player's name.
+
+**0** if player specified doesn't exist.
 
 ## Examples
 
@@ -25,10 +27,10 @@ public OnPlayerConnect(playerid)
 {
     // Get the name of the player that connected and display a join message to other players
 
-    new name[MAX_PLAYER_NAME + 1];
+    new name[MAX_PLAYER_NAME];
     GetPlayerName(playerid, name, sizeof(name));
 
-    new string[MAX_PLAYER_NAME + 23 + 1];
+    new string[128];
     format(string, sizeof(string), "%s has joined the server.", name);
     SendClientMessageToAll(0xC4C4C4FF, string);
 

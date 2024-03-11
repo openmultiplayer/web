@@ -22,7 +22,7 @@ Removes/ejects a player from their vehicle.
 
 ```c
 // Example - Players can only drive vehicles if they have 10 score.
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER && GetPlayerScore(playerid) < 10) // PlAYER_STATE_DRIVER = 2
     {

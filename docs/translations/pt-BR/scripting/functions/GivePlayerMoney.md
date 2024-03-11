@@ -22,7 +22,7 @@ Dá ou tira dinheiro para/de um jogador.
 ## Exemplos
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (killerid != INVALID_PLAYER_ID)
     {

@@ -14,7 +14,7 @@ Check who a player is aiming at.
 
 ## Returns
 
-The ID of the target player, or INVALID_PLAYER_ID if none.
+The ID of the target player, or `INVALID_PLAYER_ID` if none.
 
 ## Examples
 
@@ -41,5 +41,8 @@ Does not work for joypads/controllers, and after a certain distance. Does not wo
 ## Related Functions
 
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
+
+## Related Callbacks
+
 - [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage): This callback is called when a player gives damage.
 - [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage): This callback is called when a player takes damage.

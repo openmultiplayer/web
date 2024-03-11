@@ -17,9 +17,41 @@ Check if the player gangzone is flashing.
 
 ## Returns
 
-1: The player gangzone is flashing.
+**true** - The player gangzone is flashing.
 
-0: The player gangzone is not flashing.
+**false** - The player gangzone is not flashing.
+
+## Examples
+
+```c
+new gGangZoneID[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    // Create the gangzone
+    gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
+
+    // Show the gangzone to player
+    PlayerGangZoneShow(playerid, gGangZoneID[playerid], 0xFF0000FF);
+    return 1;
+}
+
+public OnPlayerSpawn(playerid)
+{
+    // Start player gangzone flash    
+    PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0x45D1ABFF);
+    return 1;
+}
+
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
+{
+    if (IsPlayerGangZoneFlashing(playerid, gGangZoneID[playerid]))
+    {
+        PlayerGangZoneStopFlash(playerid, gGangZoneID[playerid]);
+    }
+    return 1;
+}
+```
 
 ## Related Functions
 

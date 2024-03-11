@@ -23,7 +23,7 @@ Lagi itong na tatawag una sa mga filterscript.
 ## Halimbawa ng Paggamit
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Ang manlalaro ay pumasok sa isang sasakyan bilang isang driver
     {

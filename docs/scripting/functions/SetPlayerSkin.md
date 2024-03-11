@@ -8,16 +8,16 @@ tags: ["player"]
 
 Set the skin of a player. A player's skin is their character model.
 
-| Name     | Description                                              |
-| -------- | -------------------------------------------------------- |
-| playerid | The ID of the player to set the skin of.                 |
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
+| playerid | The ID of the player to set the skin of.              |
 | skinid   | The [skin](../resources/skins) the player should use. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 Note that 'success' is reported even when skin ID is invalid (not 0-311, or 74), but the skin will be set to ID 0 (CJ).
 
@@ -42,6 +42,12 @@ SetPlayerSkinFix(playerid, skinid)
         return 0;
     }
 
+    // If the skinid is invalid, less than 0 or more than 311 or is equal to 74 (invalid skin), then do nothing
+    if (0 > skinid > 311 || skinid == 74)
+    {
+        return 0;
+    }
+
     new
         Float:tmpPos[4],
         vehicleid = GetPlayerVehicleID(playerid),
@@ -49,12 +55,6 @@ SetPlayerSkinFix(playerid, skinid)
 
     GetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
     GetPlayerFacingAngle(playerid, tmpPos[3]);
-
-    // If the skinid is invalid, less than 0 or more than 311 or is equal to 74 (invalid skin), then do nothing
-    if (0 > skinid > 311 || skinid == 74)
-    {
-        return 0;
-    }
 
     if (GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_DUCK)
     {
@@ -87,7 +87,13 @@ SetPlayerSkinFix(playerid, skinid)
 
 :::warning
 
-Known Bug(s): If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using TogglePlayerControllable. Players can be detected as being crouched through GetPlayerSpecialAction (SPECIAL_ACTION_DUCK). Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle. Setting a player's skin when he is dead may crash players around him. Breaks sitting on bikes.
+Known Bug(s):
+
+- If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using [TogglePlayerControllable](TogglePlayerControllable).
+- Players can be detected as being crouched through [GetPlayerSpecialAction](GetPlayerSpecialAction) (SPECIAL_ACTION_DUCK).
+- Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle. 
+- Setting a player's skin when he is dead may crash players around him.
+- Breaks sitting on bikes.
 
 :::
 

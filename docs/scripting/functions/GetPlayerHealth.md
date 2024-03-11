@@ -15,27 +15,32 @@ The function GetPlayerHealth allows you to retrieve the health of a player. Usef
 
 ## Returns
 
-1 - success
+**true** - success
 
-0 - failure (i.e. player not connected).
+**false** - failure (i.e. player not connected).
 
 The player's health is stored in the specified variable.
 
 ## Examples
 
 ```c
-// Sets players health to 50 if it was lower than
-// 50 before, as soon as he typed /doctor
-
-if (strcmp(cmdtext, "/doctor", true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new Float:health;
-    GetPlayerHealth(playerid,health);
-    if (health < 50.0)
+    if (strcmp(cmdtext, "/doctor", true) == 0)
     {
-        SetPlayerHealth(playerid, 50.0);
+        // Sets players health to 50 if it was lower than
+        // 50 before, as soon as he typed /doctor
+        
+        new Float:health;
+        GetPlayerHealth(playerid, health);
+        
+        if (health < 50.0)
+        {
+            SetPlayerHealth(playerid, 50.0);
+        }
+        return 1;
     }
-    return 1;
+    return 0;
 }
 ```
 

@@ -10,8 +10,8 @@ tags: ["player"]
 
 Get a player's gravity.
 
-| Name     | Description |
-| -------- | ------------------- |
+| Name     | Description                                 |
+| -------- | ------------------------------------------- |
 | playerid | The ID of the player to get the gravity of. |
 
 ## Returns

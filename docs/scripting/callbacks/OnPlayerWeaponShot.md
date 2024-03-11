@@ -31,9 +31,9 @@ It is always called first in filterscripts so returning 0 there also blocks othe
 ```c
 public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
-    new szString[144];
-    format(szString, sizeof(szString), "Weapon %i fired. hittype: %i   hitid: %i   pos: %f, %f, %f", weaponid, hittype, hitid, fX, fY, fZ);
-    SendClientMessage(playerid, -1, szString);
+    new string[144];
+    format(string, sizeof(string), "Weapon %i fired. hittype: %i   hitid: %i   pos: %f, %f, %f", weaponid, hittype, hitid, fX, fY, fZ);
+    SendClientMessage(playerid, -1, string);
     return 1;
 }
 ```

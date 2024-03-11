@@ -1,7 +1,7 @@
 ---
 title: SetSVarString
 description: Set a string server variable.
-tags: []
+tags: ["server variable", "svar"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7 R2' />
@@ -11,22 +11,23 @@ tags: []
 Set a string server variable.
 
 | Name             | Description                                |
-|------------------|--------------------------------------------|
-| varname[]        | The name of the server variable.           |
-| string_value[]   | The string to be set.                      |
+| ---------------- | ------------------------------------------ |
+| const svar[]     | The name of the server variable.           |
+| const value[]    | The string to be set.                      |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The variable name is null or over 40 characters.
+**false** - The function failed to execute. The variable name is null or over 40 characters.
 
 ## Examples
 
 ```c
 // set "Version"
 SetSVarString("Version", "0.3.7");
+
 // will print version that server has
 new string[5 + 1];
 GetSVarString("Version", string, sizeof(string));

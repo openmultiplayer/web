@@ -17,14 +17,14 @@ Get the position of a player, represented by X, Y and Z coordinates.
 
 ## Returns
 
-true on success.
+**true** on success.
 
-false on failure (i.e. player not connected).
+**false** on failure (i.e. player not connected).
 
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Declare 3 float variables to store the X, Y and Z coordinates in
     new Float:x, Float:y, Float:z;
@@ -42,7 +42,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::warning
 
-This function is known to return unreliable values when used in OnPlayerDisconnect and OnPlayerRequestClass. This is because the player is not spawned.
+This function is known to return unreliable values when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) and OnPlayerRequestClass. This is because the player is not spawned.
 
 :::
 

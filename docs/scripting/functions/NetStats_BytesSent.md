@@ -14,7 +14,9 @@ Gets the amount of data (in bytes) that the server has sent to the player.
 
 ## Returns
 
-[edit]
+This function returns the number of bytes the server has sent to the player.
+
+0 is returned if the player is not connected.
 
 ## Examples
 

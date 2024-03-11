@@ -14,16 +14,15 @@ Sets a vehicle back to the position at where it was created.
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The vehicle does not exist
+**false** - The function failed to execute. The vehicle does not exist.
 
 ## Examples
 
 ```c
-// Respawns the first vehicle.
-SetVehicleToRespawn(1);
-for(new i = GetVehiclePoolSize(); i > 0; i--)
+// Respawns the all vehicles
+for (new i = 1; i < MAX_VEHICLES; i++)
 {
     SetVehicleToRespawn(i);
 }

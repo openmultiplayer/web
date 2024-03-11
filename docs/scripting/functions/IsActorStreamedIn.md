@@ -1,7 +1,7 @@
 ---
 title: IsActorStreamedIn
 description: Checks if an actor is streamed in for a player.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -10,10 +10,10 @@ tags: []
 
 Checks if an actor is streamed in for a player.
 
-| Name        | Description           |
-| ----------- | --------------------- |
-| actorid     | The ID of the actor.  |
-| forplayerid | The ID of the player. |
+| Name     | Description           |
+| -------- | --------------------- |
+| actorid  | The ID of the actor.  |
+| playerid | The ID of the player. |
 
 ## Returns
 
@@ -26,7 +26,7 @@ new gMyActor;
 
 public OnGameModeInit()
 {
-    gMyActor = CreateActor(...);
+    gMyActor = CreateActor(0, 0.0, 0.0, 3.0, 0.0);
     return 1;
 }
 
@@ -36,6 +36,7 @@ public OnPlayerSpawn(playerid)
     {
         // Do something
     }
+    return 1;
 }
 ```
 

@@ -1,16 +1,16 @@
 ---
 title: GetSVarType
 description: Gets the type (integer, float or string) of a server variable.
-tags: []
+tags: ["server variable", "svar"]
 ---
 
 ## Description
 
 Gets the type (integer, float or string) of a server variable.
 
-| Name    | Description                                         |
-| ------- | --------------------------------------------------- |
-| varname | The name of the server variable to get the type of. |
+| Name         | Description                                         |
+| ------------ | --------------------------------------------------- |
+| const svar[] | The name of the server variable to get the type of. |
 
 ## Returns
 
@@ -43,6 +43,14 @@ stock PrintSVar(varname[])
             printf("String SVar '%s': %s", varname, varstring);
         }
     }
+    return 1;
+}
+
+public OnGameModeInit()
+{
+    SetSVarInt("Version", 37);
+
+    PrintSVar("Version"); // Output: "Integer SVar 'Version': 37"
     return 1;
 }
 ```

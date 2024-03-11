@@ -11,7 +11,7 @@ Hides a gangzone for a player.
 | Name     | Description                                    |
 | -------- | ---------------------------------------------- |
 | playerid | The ID of the player to hide the gangzone for. |
-| zone     | The ID of the zone to hide.                    |
+| zoneid   | The ID of the zone to hide.                    |
 
 ## Returns
 
@@ -34,7 +34,7 @@ public OnPlayerSpawn(playerid)
     return 1;
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     GangZoneHideForPlayer(playerid, gGangZoneId);
     return 1;

@@ -8,31 +8,31 @@ tags: []
 
 Get the name of a weapon.
 
-| Name           | Description                                                             |
-| -------------- | ----------------------------------------------------------------------- |
-| weaponid       | The ID of the weapon to get the name of.                                |
-| const weapon[] | An array to store the weapon's name in, passed by reference.            |
-| len            | The maximum length of the weapon name to store. Should be sizeof(name). |
+| Name                  | Description                                                             |
+| --------------------- | ----------------------------------------------------------------------- |
+| WEAPON:weaponid       | The ID of the weapon to get the name of.                                |
+| weapon[]              | An array to store the weapon's name in, passed by reference.            |
+| len = sizeof (weapon) | The maximum length of the weapon name to store. Should be sizeof(name). |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. The weapon specified does not exist.
+**false** - The function failed to execute. The weapon specified does not exist.
 
 The weapon's name is stored in the specified array.
 
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Variable declarations, with killerName having the default value of "World".
     new
         weaponName[32],
         string[64],
-        playerName[MAX_PLAYER_NAME + 1],
-        killerName[MAX_PLAYER_NAME + 1] = "World";
+        playerName[MAX_PLAYER_NAME],
+        killerName[MAX_PLAYER_NAME] = "World";
 
     // Get the weapon/ reason and player name
     GetWeaponName(reason, weaponName, sizeof(weaponName));

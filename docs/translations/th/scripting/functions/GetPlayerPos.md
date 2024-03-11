@@ -24,7 +24,7 @@ false on failure (i.e. player not connected).
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Declare 3 float variables to store the X, Y and Z coordinates in
     new Float:x, Float:y, Float:z;

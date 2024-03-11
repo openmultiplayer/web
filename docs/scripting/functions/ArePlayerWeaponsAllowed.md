@@ -10,15 +10,15 @@ tags: ["player"]
 
 Can the player use weapons?
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to check.       |
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | The ID of the player to check. |
 
 ## Returns
 
-true: Allow.
+**true** - Player is allowed.
 
-false: Disallow.
+**false** - Player is not allowed.
 
 ## Examples
 

@@ -21,10 +21,10 @@ The player's score.
 ```c
 public OnPlayerCommandText(playerid,text[])
 {
-    if (!strcmp(cmdtext,"/score",true))
+    if (!strcmp(cmdtext, "/score", true))
     {
-        new string[128];
-        format(string, sizeof(string), "Score: %i", GetPlayerScore(playerid));
+        new string[32];
+        format(string, sizeof(string), "Your score: %i", GetPlayerScore(playerid));
         SendClientMessage(playerid, COLOR_ORANGE, string);
         return 1;
     }

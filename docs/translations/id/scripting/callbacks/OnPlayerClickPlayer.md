@@ -25,7 +25,7 @@ Selalu terpanggil pertama di filterscripts.
 ## Contoh
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Anda mengklik pada pemain ID: %d", clickedplayerid);

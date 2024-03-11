@@ -1,19 +1,19 @@
 ---
 title: SetObjectRot
 description: Set the rotation of an object on the three axes (X, Y and Z).
-tags: []
+tags: ["object"]
 ---
 
 ## Description
 
 Set the rotation of an object on the three axes (X, Y and Z).
 
-| Name       | Description                                  |
-| ---------- | -------------------------------------------- |
-| objectid   | The ID of the object to set the rotation of. |
-| Float:RotX | The X rotation.                              |
-| Float:RotY | The Y rotation.                              |
-| Float:RotZ | The Z rotation.                              |
+| Name            | Description                                  |
+| --------------- | -------------------------------------------- |
+| objectid        | The ID of the object to set the rotation of. |
+| Float:rotationX | The X rotation.                              |
+| Float:rotationY | The Y rotation.                              |
+| Float:rotationZ | The Z rotation.                              |
 
 ## Returns
 
@@ -22,7 +22,13 @@ This function always returns 1, even if the object doesn't exist.
 ## Examples
 
 ```c
-SetObjectRot(objectid, 45, 90, 180);
+public OnGameModeInit()
+{
+    new objectid = CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    SetObjectRot(objectid, 0.0, 0.0, 180.0);
+    return 1;
+}
 ```
 
 ## Related Functions

@@ -1,7 +1,7 @@
 ---
 title: SetPlayerCameraPos
 description: Sets the camera to a specific position for a player.
-tags: ["player"]
+tags: ["player", "camera"]
 ---
 
 ## Description
@@ -17,9 +17,9 @@ Sets the camera to a specific position for a player.
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player specified doesn't exist.
+**false** - The function failed to execute. The player specified doesn't exist.
 
 ## Examples
 
@@ -31,7 +31,8 @@ SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 
 :::tip
 
-You may also have to use SetPlayerCameraLookAt with this function in order to work properly. Use SetCameraBehindPlayer to reset the camera to behind the player.
+- You may also have to use SetPlayerCameraLookAt with this function in order to work properly.
+- Use SetCameraBehindPlayer to reset the camera to behind the player.
 
 :::
 

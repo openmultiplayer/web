@@ -1,7 +1,7 @@
 ---
 title: IsValidActor
 description: Checks if an actor ID is valid.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -16,9 +16,9 @@ Checks if an actor ID is valid.
 
 ## Returns
 
-1 - The actor is valid.
+**true** - The actor is valid.
 
-0 - The actor is not valid.
+**false** - The actor is not valid.
 
 ## Examples
 
@@ -28,9 +28,10 @@ new gMyActor;
 public OnGameModeInit()
 {
     gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as a salesperson in Ammunation.
+    
     if (IsValidActor(gMyActor))
     {
-        SetActorHealth(gMyActor, 100);
+        SetActorHealth(gMyActor, 100.0);
     }
     return 1;
 }

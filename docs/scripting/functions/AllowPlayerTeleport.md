@@ -14,10 +14,10 @@ This function, as of 0.3d, is deprecated. Check [OnPlayerClickMap](../callbacks/
 
 Enable/Disable the teleporting ability for a player by right-clicking on the map
 
-| Name     | Description                             |
-| -------- | --------------------------------------- |
-| playerid | The ID of the player to allow teleport. |
-| allow    | 1-allow, 0-disallow                     |
+| Name       | Description                              |
+| ---------- | ---------------------------------------- |
+| playerid   | The ID of the player to allow teleport.  |
+| bool:allow | 'false' to disallow and 'true' to allow. |
 
 ## Returns
 
@@ -26,11 +26,12 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-public OnPlayerConnect( playerid )
+public OnPlayerConnect(playerid)
 {
     // Allows the Player to teleport by right-clicking on the map
     // since this is in OnPlayerConnect, this will be done for EACH player
-    AllowPlayerTeleport( playerid, 1 );
+    AllowPlayerTeleport(playerid, true);
+    return 1;
 }
 ```
 
@@ -44,4 +45,5 @@ This function will work only if [AllowAdminTeleport](AllowAdminTeleport) is enab
 
 ## Related Functions
 
+- [IsPlayerTeleportAllowed](IsPlayerTeleportAllowed): Can this player teleport by right-clicking on the map?
 - [AllowAdminTeleport](AllowAdminTeleport): Toggle waypoint teleporting for RCON admins.

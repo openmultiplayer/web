@@ -15,18 +15,22 @@ Set a player's wanted level (6 brown stars under HUD).
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**false** - The function failed to execute. The player specified does not exist.
 
 ## Examples
 
 ```c
-if (strcmp(cmdtext, "/turnuptheheat", true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    SetPlayerWantedLevel(playerid, 6);
-    SendClientMessage(playerid, 0xFF0000FF, "Wanted Level: 6");
-    return 1;
+    if (strcmp(cmdtext, "/turnuptheheat", true) == 0)
+    {
+        SetPlayerWantedLevel(playerid, 6);
+        SendClientMessage(playerid, 0xFF0000FF, "Wanted Level: 6");
+        return 1;
+    }
+    return 0;
 }
 ```
 

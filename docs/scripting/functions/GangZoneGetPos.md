@@ -10,17 +10,37 @@ tags: ["player", "gangzone"]
 
 Get the position of a gangzone, represented by minX, minY, maxX, maxY coordinates.
 
-| Name        | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| zoneid      | The ID of the zone to the coordinates of which want to get.      |
-| minX        | The X coordinate for the west side of the player gangzone.       |
-| minY        | The Y coordinate for the south side of the player gangzone.      |
-| maxX        | The X coordinate for the east side of the player gangzone.       |
-| maxY        | The Y coordinate for the north side of the player gangzone.      |
+| Name        | Description                                                 |
+| ----------- | ----------------------------------------------------------- |
+| zoneid      | The ID of the zone to the coordinates of which want to get. |
+| &Float:minX | The X coordinate for the west side of the player gangzone.  |
+| &Float:minY | The Y coordinate for the south side of the player gangzone. |
+| &Float:maxX | The X coordinate for the east side of the player gangzone.  |
+| &Float:maxY | The Y coordinate for the north side of the player gangzone. |
 
 ## Returns
 
-This function always returns 1.
+This function always returns **true**.
+
+## Examples
+
+```c
+new gangZone;
+
+public OnGameModeInit()
+{
+    gangZone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
+
+    new 
+        Float:minX,
+        Float:minY,
+        Float:maxX,
+        Float:maxY;
+    
+    GangZoneGetPos(gangZone, minX, minY, maxX, maxY);
+    return 1;
+}
+```
 
 ## Related Functions
 

@@ -14,9 +14,9 @@ Check if a player is inside any vehicle (as a driver or passenger).
 
 ## Returns
 
-true: The player is in a vehicle.
+**true** - The player is in a vehicle.
 
-false: The player is not in a vehicle.
+**false** - The player is not in a vehicle.
 
 ## Examples
 
@@ -27,7 +27,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (IsPlayerInAnyVehicle(playerid))
         {
-            SendClientMessage(playerid, 0x00FF00AA, "You're in a vehicle.");
+            SendClientMessage(playerid, 0x00FF00FF, "You're in a vehicle.");
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "You're not in any vehicle.");
         }
         return 1;
     }

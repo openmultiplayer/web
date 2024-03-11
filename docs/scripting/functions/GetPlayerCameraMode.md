@@ -24,9 +24,9 @@ public OnPlayerText(playerid, text[])
 {
     if (strcmp(text, "cameramode", true) == 0)
     {
-        new szMessage[22];
-        format(szMessage, sizeof(szMessage), "Your camera mode: %d", GetPlayerCameraMode(playerid));
-        SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
+        new string[48];
+        format(string, sizeof(string), "Your camera mode: %d", GetPlayerCameraMode(playerid));
+        SendClientMessage(playerid, 0xA9C4E4FF, string);
     }
     return 0;
 }

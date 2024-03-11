@@ -21,7 +21,7 @@ tags: ["vehicle"]
 ## 案例
 
 ```c
-public OnVehicleMod(playerid,vehicleid,componentid)
+public OnVehicleMod(playerid, vehicleid, componentid)
 {
     printf("车辆ID %d 被玩家ID %d 改装了,添加了组件 %d",vehicleid, playerid,componentid);
     if (GetPlayerInterior(playerid) == 0)

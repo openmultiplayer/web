@@ -10,14 +10,14 @@ tags: ["player", "3dtextlabel"]
 
 Checks if a player's 3D text label is valid.
 
-| Name        | Description           |
-| ----------- | --------------------- |
-| playerid | The ID of the player.  |
-| PlayerText3D:textid | The ID of the player's 3D text label to check.  |
+| Name                | Description                                    |
+| ------------------- | ---------------------------------------------- |
+| playerid            | The ID of the player.                          |
+| PlayerText3D:textid | The ID of the player's 3D text label to check. |
 
 ## Returns
 
-This function returns true if the player's 3D text label is valid, or false if it is not.
+This function returns **true** if the player's 3D text label is valid, or **false** if it is not.
 
 ## Examples
 

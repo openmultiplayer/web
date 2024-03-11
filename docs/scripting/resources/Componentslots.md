@@ -10,6 +10,7 @@ The following car mod types can be used to work with the [GetVehicleComponentInS
 
 | Slot | Definition               |
 |------|--------------------------|
+| -1   | CARMODTYPE_NONE          |
 | 0    | CARMODTYPE_SPOILER       |
 | 1    | CARMODTYPE_HOOD          |
 | 2    | CARMODTYPE_ROOF          |

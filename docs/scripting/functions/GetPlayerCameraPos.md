@@ -11,9 +11,9 @@ Get the position of the player's camera.
 | Name     | Description                                                         |
 | -------- | ------------------------------------------------------------------- |
 | playerid | The ID of the player to get the camera position of.                 |
-| Float:x  | A float variable to store the X coordinate in, passed by reference. |
-| Float:y  | A float variable to store the Y coordinate in, passed by reference. |
-| Float:z  | A float variable to store the Z coordinate in, passed by reference. |
+| &Float:x | A float variable to store the X coordinate in, passed by reference. |
+| &Float:y | A float variable to store the Y coordinate in, passed by reference. |
+| &Float:z | A float variable to store the Z coordinate in, passed by reference. |
 
 ## Returns
 
@@ -27,9 +27,7 @@ public OnPlayerDisconnect(playerid)
     new Float:x, Float:y, Float:z;
     GetPlayerCameraPos(playerid, x, y, z);
 
-    printf("The player left when they had their camera at %f,%f,%f.", x, y, z);
-    // You could write this to a userfile.
-
+    printf("The player left when they had their camera at %f, %f, %f.", x, y, z);
     return 1;
 }
 ```

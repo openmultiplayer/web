@@ -10,13 +10,13 @@ tags: ["3dtextlabel"]
 
 Gets the 3D text label line-of-sight.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
+| Name          | Description                                              |
+| ------------- | -------------------------------------------------------- |
 | Text3D:textid | The ID of the 3D text label to get the line-of-sight of. |
 
 ## Returns
 
-Returns the line-of-sight of the 3D text label as boolean (false/true).
+Returns the line-of-sight of the 3D text label as boolean (`false`/`true`).
 
 ## Examples
 
@@ -27,7 +27,7 @@ new bool:testLOS;
 gMyLabel = Create3DTextLabel("Hello World!", 0x008080FF, 30.0, 40.0, 50.0, 10.0, 0, true);
 
 testLOS = Get3DTextLabelLOS(gMyLabel);
-// The `testLOS` will be true
+// testLOS = true
 ```
 
 ## Related Functions

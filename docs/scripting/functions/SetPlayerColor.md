@@ -11,7 +11,7 @@ Set the colour of a player's nametag and marker (radar blip).
 | Name     | Description                              |
 | -------- | ---------------------------------------- |
 | playerid | The ID of the player whose color to set. |
-| color    | The color to set. Supports alpha values. |
+| colour   | The color to set. Supports alpha values. |
 
 ## Returns
 
@@ -31,7 +31,8 @@ SetPlayerColor(playerid, 4278190335);
 
 :::tip
 
-This function will change player's color for everyone, even if player's color was changed with SetPlayerMarkerForPlayer for any other player. If used under OnPlayerConnect, the affecting player will not see the color in the TAB menu.
+- This function will change player's color for everyone, even if player's color was changed with SetPlayerMarkerForPlayer for any other player.
+- If used under OnPlayerConnect, the affecting player will not see the color in the TAB menu.
 
 :::
 

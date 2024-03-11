@@ -1,24 +1,24 @@
 ---
 title: AttachPlayerObjectToVehicle
 description: Attach a player object to a vehicle.
-tags: ["player", "vehicle"]
+tags: ["player", "object", "playerobject", "vehicle"]
 ---
 
 ## Description
 
 Attach a player object to a vehicle.
 
-| Name          | Description                                      |
-| ------------- | ------------------------------------------------ |
-| playerid      | The ID of the player the object was created for. |
-| objectid      | The ID of the object to attach to the vehicle.   |
-| vehicleid     | The ID of the vehicle to attach the object to.   |
-| Float:OffsetX | The X position offset for attachment.            |
-| Float:OffsetY | The Y position offset for attachment.            |
-| Float:OffsetZ | The Z position offset for attachment.            |
-| Float:RotX    | The X rotation offset for attachment.            |
-| Float:RotY    | The Y rotation offset for attachment.            |
-| Float:RotZ    | The Z rotation offset for attachment.            |
+| Name            | Description                                      |
+| --------------- | ------------------------------------------------ |
+| playerid        | The ID of the player the object was created for. |
+| objectid        | The ID of the object to attach to the vehicle.   |
+| parentid        | The ID of the vehicle to attach the object to.   |
+| Float:offsetX   | The X position offset for attachment.            |
+| Float:offsetY   | The Y position offset for attachment.            |
+| Float:offsetZ   | The Z position offset for attachment.            |
+| Float:rotationX | The X rotation offset for attachment.            |
+| Float:rotationY | The Y rotation offset for attachment.            |
+| Float:rotationZ | The Z rotation offset for attachment.            |
 
 ## Returns
 
@@ -27,15 +27,17 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER) // If player enters vehicle
     {
         // Attach massive cow.
-        new cow_object = CreatePlayerObject(playerid, 16442, 0, 0, 0, 0, 0, 0);
+        new cowObject = CreatePlayerObject(playerid, 16442, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+        new vehicleid = GetPlayerVehicleID(playerid);
 
-        AttachPlayerObjectToVehicle(playerid, cow_object, GetPlayerVehicleID(playerid), 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
+        AttachPlayerObjectToVehicle(playerid, cowObject, vehicleid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
     }
+    return 1;
 }
 ```
 

@@ -10,10 +10,10 @@ tags: ["3dtextlabel"]
 
 Sets the 3D text label line-of-sight.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| Text3D:textid | The ID of the 3D text label to set the line-of-sight. |
-| testLOS      | false/true Test the line-of-sight so this text can't be seen through objects |
+| Name          | Description                                                                    |
+| ------------- | ------------------------------------------------------------------------------ |
+| Text3D:textid | The ID of the 3D text label to set the line-of-sight.                          |
+| bool:enable   | (false/true) Test the line-of-sight so this text can't be seen through objects |
 
 ## Examples
 

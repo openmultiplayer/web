@@ -16,9 +16,9 @@ Check if the gangzone valid.
 
 ## Returns
 
-1: The gangzone is valid.
+**true** - The gangzone is valid.
 
-0: The gangzone is not valid.
+**false** - The gangzone is not valid.
 
 ## Related Functions
 

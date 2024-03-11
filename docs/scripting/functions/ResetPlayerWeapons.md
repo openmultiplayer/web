@@ -14,14 +14,14 @@ Removes all weapons from a player.
 
 ## Returns
 
-1: The function was executed successfully.
+**1** - The function was executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**0** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Remove the killer's weapons
     ResetPlayerWeapons(killerid);
@@ -33,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::tip
 
-To remove individual weapons from a player, set their ammo to 0 using SetPlayerAmmo.
+To remove individual weapons from a player, set their ammo to 0 using [SetPlayerAmmo](SetPlayerAmmo).
 
 :::
 

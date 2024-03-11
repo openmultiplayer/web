@@ -8,22 +8,29 @@ tags: ["vehicle"]
 
 Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific slot.
 
-| Name      | Description                                                                   |
-| --------- | ----------------------------------------------------------------------------- |
-| vehicleid | The ID of the vehicle to check for the component.                             |
-| slot      | The [component slot](../resources/Componentslots) to check for components. |
+| Name            | Description                                                                |
+| --------------- | -------------------------------------------------------------------------- |
+| vehicleid       | The ID of the vehicle to check for the component.                          |
+| CARMODTYPE:slot | The [component slot](../resources/Componentslots) to check for components. |
 
 ## Returns
 
-The ID of the component installed in the specified slot. Returns 0 if no component in specified vehicle's specified slot, or if vehicle doesn't exist.
+The ID of the component installed in the specified slot.
+
+Returns **0** if no component in specified vehicle's specified slot, or if vehicle doesn't exist.
 
 ## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp("/myspoiler", cmdtext) && IsPlayerInAnyVehicle(playerid))
+    if (!strcmp("/myspoiler", cmdtext, true))
     {
+        if (!IsPlayerInAnyVehicle(playerid))
+        {
+            return 1;
+        }
+
         new
             component = GetVehicleComponentInSlot(GetPlayerVehicleID(playerid), CARMODTYPE_SPOILER);
 
@@ -31,7 +38,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             SendClientMessage(playerid, -1, "You have an Alien spoiler installed in your Elegy!");
         }
+        return 1;
     }
+    return 0;
 }
 ```
 
@@ -39,7 +48,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Known Bug(s): Doesn't work for CARMODTYPE_STEREO. Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last. Both rear bull bars and rear bumper components are saved in the CARMODTYPE_REAR_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last. Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+Known Bug(s):
+
+- Doesn't work for CARMODTYPE_STEREO.
+- Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last. 
+- Both rear bull bars and rear bumper components are saved in the CARMODTYPE_REAR_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+- Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
 
 :::
 

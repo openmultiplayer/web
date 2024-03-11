@@ -25,7 +25,7 @@ Ito ay palaging itinatawag una sa mga filterscripts.
 ## Examples
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Ipinindot mo si player id: %d", clickedplayerid);

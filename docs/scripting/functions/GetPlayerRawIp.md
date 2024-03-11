@@ -10,9 +10,9 @@ tags: ["player", "ip address"]
 
 Get the specified player's Raw IP address (v4).
 
-| Name     | Description  |
-| -------- | ------------------------- |
-| playerid | The ID of the player to get the Raw IP address of.  |
+| Name     | Description                                        |
+| -------- | -------------------------------------------------- |
+| playerid | The ID of the player to get the Raw IP address of. |
 
 ## Returns
 
@@ -23,11 +23,8 @@ Returns the player's Raw IP address as integer.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new string[46];
     new rawIp = GetPlayerRawIp(playerid);
-    
-    format(string, sizeof(string), "SERVER: Your Raw IP address: %d", rawIp);
-    SendClientMessage(playerid, 0xFFFF00FF, string);
+    SendClientMessage(playerid, 0xFFFF00FF, "SERVER: Your Raw IP address: %d", rawIp);
     return 1;
 }
 ```

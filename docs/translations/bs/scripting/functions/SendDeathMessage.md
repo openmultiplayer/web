@@ -21,7 +21,7 @@ Ova funkcija uvijek returna (vraća) 1, bilo da se funkcija neuspješno izvrši.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason);
     return 1;

@@ -1,7 +1,7 @@
 ---
 title: IsPlayerObjectMoving
 description: Checks if the given player objectid is moving.
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
@@ -20,9 +20,19 @@ Checks if the given player objectid is moving.
 ## Examples
 
 ```c
-if (IsPlayerObjectMoving(playerid, objectid))
+new gPlayerObject[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
 {
-	StopPlayerObject(playerid, objectid);
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    MovePlayerObject(playerid, gPlayerObject[playerid], 2001.195679, 1547.113892, 10.000000, 2.0);
+	
+	if (IsPlayerObjectMoving(playerid, gPlayerObject[playerid]))
+	{
+		StopPlayerObject(playerid, gPlayerObject[playerid]);
+	}
+    return 1;
 }
 ```
 
@@ -49,4 +59,7 @@ if (IsPlayerObjectMoving(playerid, objectid))
 - [GetObjectPos](GetObjectPos): Locate an object.
 - [GetObjectRot](GetObjectRot): Check the rotation of an object.
 - [AttachObjectToPlayer](AttachObjectToPlayer): Attach an object to a player.
+
+## Related Callbacks
+
 - [OnPlayerObjectMoved](../callbacks/OnPlayerObjectMoved): Called when a player-object stops moving.

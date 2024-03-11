@@ -10,15 +10,15 @@ tags: ["player"]
 
 Check if the player camera target is enabled.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player       |
+| Name     | Description          |
+| -------- | -------------------- |
+| playerid | The ID of the player |
 
 ## Returns
 
-true: Enable.
+**true** - Enable.
 
-false: Disable.
+**false** - Disable.
 
 ## Examples
 

@@ -25,7 +25,7 @@ tags: ["player"]
 ## 案例
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "你点击了玩家 %d", clickedplayerid);

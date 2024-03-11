@@ -19,7 +19,7 @@ Trenutno stanje igrača kao cijeli broj (pogledaj: [Stanja Igrača](../resources
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     new playerState = GetPlayerState(killerid); // Dobij stanje ubice
 

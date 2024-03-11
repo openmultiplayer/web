@@ -21,9 +21,9 @@ Sets a vehicle's parameters for all players.
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**false** - The function failed to execute. This means the vehicle does not exist.
 
 ## Examples
 
@@ -69,6 +69,12 @@ public DisableVehicleAlarm(vehicleid)
     gVehicleAlarmTimer[vehicleid] = 0;
 }
 ```
+
+## Definitions
+
+- `VEHICLE_PARAMS_UNSET` (-1)
+- `VEHICLE_PARAMS_OFF` (0)
+- `VEHICLE_PARAMS_ON` (1)
 
 ## Notes
 

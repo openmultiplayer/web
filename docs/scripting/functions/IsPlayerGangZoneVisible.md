@@ -1,6 +1,6 @@
 ---
 title: IsPlayerGangZoneVisible
-description: Check if the player gangzone is visible
+description: Check if the player gangzone is visible.
 tags: ["player", "gangzone", "playergangzone"]
 ---
 
@@ -17,9 +17,42 @@ Check if the player gangzone is visible.
 
 ## Returns
 
-1: The player gangzone is visible.
+**true** - The player gangzone is visible.
 
-0: The player gangzone is not visible.
+**false** - The player gangzone is not visible.
+
+## Examples
+
+```c
+new gGangZoneID[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    // Create the gangzone
+    gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
+
+    // Show the gangzone to player
+    PlayerGangZoneShow(playerid, gGangZoneID[playerid], 0xFF0000FF);
+    return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/zone", true))
+    {
+        if (IsPlayerGangZoneVisible(playerid, gGangZoneID[playerid]))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "Gangzone is visible.");
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Gangzone is not visible.");
+        }
+        return 1;
+    }
+    return 0;
+}
+```
 
 ## Related Functions
 

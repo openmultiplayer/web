@@ -19,7 +19,7 @@ Ang function na ito ay hindi nagbabalik ng anumang value.
 ## Examples
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     // Kung ang manlalaro ay lumabas ng sasakyan
     if (oldstate == PLAYER_STATE_DRIVER || oldstate == PLAYER_STATE_PASSENGER)

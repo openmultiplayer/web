@@ -1,7 +1,7 @@
 ---
 title: BeginPlayerObjectEditing
 description: Allows players to edit a player-object (position and rotation) with a GUI and their mouse.
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
@@ -24,17 +24,18 @@ Allows players to edit a player-object (position and rotation) with a GUI and th
 ## Examples
 
 ```c
-new object[MAX_PLAYERS];
+new gPlayerObject[MAX_PLAYERS];
+
 public OnPlayerSpawn(playerid)
 {
-    object[playerid] = CreatePlayerObject(playerid, 1337, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 1337, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 }
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/edit", true))
     {
-        BeginPlayerObjectEditing(playerid, object[playerid]);
+        BeginPlayerObjectEditing(playerid, gPlayerObject[playerid]);
         SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: You now edit your object!");
         return 1;
     }

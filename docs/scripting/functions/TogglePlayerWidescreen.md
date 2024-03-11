@@ -17,9 +17,9 @@ Toggle player's widescreen.
 
 ## Returns
 
-true - The function was executed successfully.
+**true** - The function was executed successfully.
 
-false - The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
