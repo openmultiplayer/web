@@ -10,10 +10,10 @@ tags: ["3dtextlabel"]
 
 Sets the 3D text label virtual world id.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| Text3D:textid | The ID of the 3D text label to set the virtual world id. |
-| VirtualWorld | The virtual world in which you are able to see the 3D Text            |
+| Name          | Description                                                |
+| ------------- | ---------------------------------------------------------- |
+| Text3D:textid | The ID of the 3D text label to set the virtual world id.   |
+| virtualWorld  | The virtual world in which you are able to see the 3D Text |
 
 ## Examples
 
