@@ -13,8 +13,8 @@ interface FooterProps {
   alignment: "left" | "right";
 }
 
-const FooterList: React.FC<FooterProps> = ({ heading, items, alignment }) => (
-  <div className={`flex flex-column ${alignment ? `align-${alignment}` : ''}`}>
+const FooterList: React.FC<FooterProps & { heading: string; maxWidth?: string }> = ({ heading, items, alignment, maxWidth }) => (
+  <div className={`flex flex-column ${alignment ? `align-${alignment}` : ''}`} style={{ maxWidth }}>
     <h4 className="ma0">{heading}</h4>
     <div className="flex flex-wrap" style={{ flexDirection: alignment === 'right' ? 'row-reverse' : 'row' }}>
       {items.map((item, index) => (
@@ -34,8 +34,29 @@ const FooterList: React.FC<FooterProps> = ({ heading, items, alignment }) => (
   </div>
 );
 
+
+
 const Footer: React.FC = () => {
   const [formattedItems, setFormattedItems] = useState<FooterItem[]>([]);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const checkWindowSize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkWindowSize(); // Initial check
+
+    const handleResize = () => {
+      checkWindowSize();
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const initialItems: FooterItem[] = [
@@ -60,34 +81,71 @@ const Footer: React.FC = () => {
 
   return (
     <Box as="footer" bgColor={useColorModeValue("blackAlpha.800", "gray.900")} display="flex" justifyContent="space-between" padding="30px">
-      <div className="near-white" style={{  display: "flex", justifyContent: "center", alignItems: "center", flex: 1 }}>
-        <FooterList
-          heading="About us"
-          items={[{ text: "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>." }]}
-          alignment="left"
-        />
-      </div>
+      <div className="near-white" style={{ display: "flex", flexDirection: isMobile ? "column" : "row", justifyContent: isMobile ? "center" : "space-between", alignItems: isMobile ? "center" : "center", flex: 1 }}>
+        {isMobile && (
+          <>
+            <img
+              src="/images/assets/logo-dark-trans.png"
+              alt="Logo"
+              style={{
+                width: '100px',
+                height: '100px',
+                maxWidth: '100%',
+                height: 'auto',
+                marginBottom: '10px',
+              }}
+            />
+            <FooterList
+              heading="About us"
+              items={[{ text: "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>." }]}
+              alignment="center"
+              maxWidth={'390px'} // Max width conditionally applied
+              style={{
+                whiteSpace: 'normal',
+                textAlign: 'center',
+                lineHeight: '1.5',
+              }}
+            />
+          </>
+        )}
+        {!isMobile && (
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <FooterList
+              heading="About us"
+              items={[{ text: "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>." }]}
+              alignment="center"
+              maxWidth={'390px'} // Max width conditionally applied
+              style={{
+                whiteSpace: 'normal',
+                textAlign: 'center',
+                lineHeight: '1.5',
+              }}
+            />
+          </div>
+        )}
 
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flex: 1 }}>
-        <img
-          src="/images/assets/logo-dark-trans.png"
-          alt="Logo"
-          style={{
-            width: '120px',
-            height: '120px',
-            maxWidth: '100%',
-            height: 'auto',
-          }}
-        />
       </div>
-
+      {!isMobile && (
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <img
+              src="/images/assets/logo-dark-trans.png"
+              alt="Logo"
+              style={{
+                width: '100px',
+                height: '100px',
+                maxWidth: '100%',
+                height: 'auto',
+                marginBottom: '10px',
+              }}
+            />
+          </div>
+        )}
       <div className="near-white" style={{ textAlign: "right", flex: 1 }}>
         <FooterList
           heading="Community"
           items={formattedItems}
           alignment="right"
         />
-
         <FooterList
           heading="More"
           items={[
@@ -100,5 +158,4 @@ const Footer: React.FC = () => {
     </Box>
   );
 }
-
 export default Footer;
