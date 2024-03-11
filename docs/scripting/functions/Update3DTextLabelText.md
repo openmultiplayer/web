@@ -9,10 +9,10 @@ tags: ["3dtextlabel"]
 Updates a 3D Text Label text and color.
 
 | Name             | Description                                                   |
-|------------------|---------------------------------------------------------------|
-| Text3D:id        | The 3D Text Label you want to update.                         |
-| color            | The color the 3D Text Label should have from now on.          |
-| text[]           | The new text which the 3D Text Label should have from now on. |
+| ---------------- | ------------------------------------------------------------- |
+| Text3D:textid    | The 3D Text Label you want to update.                         |
+| colour           | The color the 3D Text Label should have from now on.          |
+| const text[]     | The new text which the 3D Text Label should have from now on. |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                    |
 
 ## Returns
@@ -22,11 +22,13 @@ This function does not return any specific values.
 ## Examples
 
 ```c
+new Text3D:mylabel;
+
 public OnGameModeInit()
 {
-    new Text3D: mylabel;
     mylabel = Create3DTextLabel("I'm at the coordinates:\n30.0,40.0,50.0", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0);
-    Update3DTextLabelText(mylabel, 0xFFFFFFFF, "New text.");
+
+    Update3DTextLabelText(mylabel, 0xFF0000FF, "New text.");
     return 1;
 }
 ```
@@ -35,7 +37,7 @@ public OnGameModeInit()
 
 :::warning
 
-If text[] is empty, the server/clients next to the text might crash!
+If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
 
 :::
 

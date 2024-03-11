@@ -10,10 +10,10 @@ tags: ["player", "3dtextlabel"]
 
 Gets the player's 3D text label virtual world id.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player.  |
-| Text3D:textid | The ID of the player's 3D text label to get the virtual world id of. |
+| Name                | Description                                                          |
+| ------------------- | -------------------------------------------------------------------- |
+| playerid            | The ID of the player.                                                |
+| PlayerText3D:textid | The ID of the player's 3D text label to get the virtual world id of. |
 
 ## Returns
 

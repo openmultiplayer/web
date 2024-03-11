@@ -11,7 +11,7 @@ tags: ["player", "3dtextlabel"]
 | 参数名          | 说明                              |
 | --------------- | --------------------------------- |
 | playerid        | 要删除的三维文本标签的玩家的 ID。 |
-| PlayerText3D:id | 要删除的玩家的三维文本标签的 ID。 |
+| PlayerText3D:textid | 要删除的玩家的三维文本标签的 ID。 |
 
 ## 返回值
 

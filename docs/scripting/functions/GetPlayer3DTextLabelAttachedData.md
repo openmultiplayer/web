@@ -10,16 +10,16 @@ tags: ["player", "3dtextlabel"]
 
 Gets the player's 3D text label attached data.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player.  |
-| PlayerText3D:textid | The ID of the player's 3D text label to get the attached data of. |
-| &parentPlayerid | A variable into which to store the parentPlayerid, passed by reference. |
-| &parentVehicleid | A variable into which to store the parentVehicleid, passed by reference. |
+| Name                | Description                                                              |
+| ------------------- | ------------------------------------------------------------------------ |
+| playerid            | The ID of the player.                                                    |
+| PlayerText3D:textid | The ID of the player's 3D text label to get the attached data of.        |
+| &parentPlayerid     | A variable into which to store the parentPlayerid, passed by reference.  |
+| &parentVehicleid    | A variable into which to store the parentVehicleid, passed by reference. |
 
 ## Examples
 
-An example for parentPlayerid:
+An example for **parentPlayerid**:
 
 ```c
 new PlayerText3D:playerTextId;
@@ -36,7 +36,7 @@ GetPlayer3DTextLabelAttachedData(playerid, playerTextId, parentPlayerid, parentV
 // The `parentPlayerid` will be '37'
 ```
 
-An example for parentVehicleid:
+An example for **parentVehicleid**:
 
 ```c
 new PlayerText3D:gVehicle3dText[MAX_VEHICLES];

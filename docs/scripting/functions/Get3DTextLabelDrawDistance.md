@@ -10,8 +10,8 @@ tags: ["3dtextlabel"]
 
 Gets the 3D text label draw distance.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
+| Name          | Description                                              |
+| ------------- | -------------------------------------------------------- |
 | Text3D:textid | The ID of the 3D text label to get the draw distance of. |
 
 ## Returns
@@ -22,12 +22,12 @@ Returns the draw distance of the 3D text label as float.
 
 ```c
 new Text3D:gMyLabel;
-new Float:drawdistance;
+new Float:drawDistance;
 
 gMyLabel = Create3DTextLabel("Hello World!", 0x008080FF, 30.0, 40.0, 50.0, 10.0, 0, false);
 
-drawdistance = Get3DTextLabelDrawDistance(gMyLabel);
-// The `drawdistance` will be 10.0
+drawDistance = Get3DTextLabelDrawDistance(gMyLabel);
+// drawDistance = 10.0
 ```
 
 ## Related Functions

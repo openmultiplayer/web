@@ -8,21 +8,21 @@ tags: ["3dtextlabel"]
 
 Creates a 3D Text Label at a specific location in the world
 
-| Name             | Description                                                                    |
-|------------------|--------------------------------------------------------------------------------|
-| text[]           | The initial text string.                                                       |
-| color            | The text Color, as an integer or hex in RGBA color format                      |
-| x                | X-Coordinate                                                                   |
-| y                | Y-Coordinate                                                                   |
-| z                | Z-Coordinate                                                                   |
-| DrawDistance     | The distance from where you are able to see the 3D Text Label                  |
-| VirtualWorld     | The virtual world in which you are able to see the 3D Text                     |
-| testLOS          | Test the line-of-sight so this text can't be seen through objects (true/false) |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                     |
+| Name               | Description                                                                    |
+| ------------------ | ------------------------------------------------------------------------------ |
+| const text[]       | The initial text string.                                                       |
+| colour             | The text Color, as an integer or hex in RGBA color format                      |
+| Float:x            | X-Coordinate                                                                   |
+| Float:y            | Y-Coordinate                                                                   |
+| Float:z            | Z-Coordinate                                                                   |
+| Float:drawDistance | The distance from where you are able to see the 3D Text Label                  |
+| virtualWorld       | The virtual world in which you are able to see the 3D Text                     |
+| bool:testLOS       | Test the line-of-sight so this text can't be seen through objects (true/false) |
+| OPEN_MP_TAGS:...   | Indefinite number of arguments of any tag.                                     |
 
 ## Returns
 
-The ID of the newly created 3D Text Label, or INVALID_3DTEXT_ID if the 3D Text Label limit (MAX_3DTEXT_GLOBAL) was reached.
+The ID of the newly created 3D Text Label, or `INVALID_3DTEXT_ID` if the 3D Text Label limit (`MAX_3DTEXT_GLOBAL`) was reached.
 
 ## Examples
 
@@ -56,19 +56,20 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-drawdistance seems to be a lot smaller when spectating.
+drawDistance seems to be a lot smaller when spectating.
 
 :::
 
 :::tip
 
-Use color embedding for multiple colors in the text.
+Use colour embedding for multiple colours in the text.
 
 :::
 
 :::warning
 
-If text[] is empty, the server/clients next to the text might crash! If the virtualworld is set as -1 the text will not appear.
+- If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
+- If the virtualworld is set as -1 the text will not appear.
 
 :::
 

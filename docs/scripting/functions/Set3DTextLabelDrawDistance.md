@@ -10,9 +10,9 @@ tags: ["3dtextlabel"]
 
 Sets the 3D text label draw distance.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| Text3D:textid | The ID of the 3D text label to set the draw distance. |
+| Name               | Description                                                    |
+| ------------------ | -------------------------------------------------------------- |
+| Text3D:textid      | The ID of the 3D text label to set the draw distance.          |
 | Float:drawDistance | The distance from where you are able to see the 3D Text Label. |
 
 ## Returns

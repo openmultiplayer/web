@@ -11,7 +11,7 @@ Updates a player 3D Text Label's text and color
 | Name            | Description                                                   |
 | --------------- | ------------------------------------------------------------- |
 | playerid        | The ID of the player for which the 3D Text Label was created. |
-| PlayerText3D:id | The 3D Text Label you want to update.                         |
+| PlayerText3D:textid | The 3D Text Label you want to update.                         |
 | color           | The color the 3D Text Label should have from now on.          |
 | text[]          | The new text which the 3D Text Label should have from now on. |
 

@@ -10,8 +10,8 @@ tags: ["3dtextlabel"]
 
 Gets the 3D text label virtual world id.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
+| Name          | Description                                                 |
+| ------------- | ----------------------------------------------------------- |
 | Text3D:textid | The ID of the 3D text label to get the virtual world id of. |
 
 ## Returns
@@ -27,7 +27,7 @@ new worldid;
 gMyLabel = Create3DTextLabel("Hello World!", 0x008080FF, 30.0, 40.0, 50.0, 10.0, 20, false);
 
 worldid = Get3DTextLabelVirtualWorld(gMyLabel);
-// The `worldid` will be 20
+// worldid = 20
 ```
 
 ## Related Functions

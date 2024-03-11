@@ -10,15 +10,15 @@ tags: ["3dtextlabel"]
 
 Gets the 3D text label attached data.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| Text3D:textid | The ID of the 3D text label to get the attached data of. |
-| &parentPlayerid | A variable into which to store the parentPlayerid, passed by reference. |
+| Name             | Description                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
+| Text3D:textid    | The ID of the 3D text label to get the attached data of.                 |
+| &parentPlayerid  | A variable into which to store the parentPlayerid, passed by reference.  |
 | &parentVehicleid | A variable into which to store the parentVehicleid, passed by reference. |
 
 ## Examples
 
-An example for parentPlayerid:
+An example for **parentPlayerid**:
 
 ```c
 new Text3D:gMyLabel;
@@ -31,7 +31,7 @@ Attach3DTextLabelToPlayer(gMyLabel, playerid, 0.0, 0.0, 0.7);
 Get3DTextLabelAttachedData(gMyLabel, parentPlayerid, parentVehicleid);
 ```
 
-An example for parentVehicleid:
+An example for **parentVehicleid**:
 
 ```c
 new Text3D:gVehicle3dText[MAX_VEHICLES];

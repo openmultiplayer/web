@@ -10,13 +10,13 @@ tags: ["player", "3dtextlabel"]
 
 Gets the player's 3D text label position.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player.  |
-| PlayerText3D:textid | The ID of the player's 3D text label to get the position of. |
-| &Float:x | An float variable into which to store the X coordinate, passed by reference. |
-| &Float:y | An float variable into which to store the Y coordinate, passed by reference. |
-| &Float:z | An float variable into which to store the Z coordinate, passed by reference. |
+| Name                | Description                                                                  |
+| ------------------- | ---------------------------------------------------------------------------- |
+| playerid            | The ID of the player.                                                        |
+| PlayerText3D:textid | The ID of the player's 3D text label to get the position of.                 |
+| &Float:x            | An float variable into which to store the X coordinate, passed by reference. |
+| &Float:y            | An float variable into which to store the Y coordinate, passed by reference. |
+| &Float:z            | An float variable into which to store the Z coordinate, passed by reference. |
 
 ## Examples
 
