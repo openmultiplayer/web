@@ -19,7 +19,9 @@ Gets the coordinates of a pickup.
 
 ## Returns
 
-This function does not return a specific value.
+**true** - The function executed successfully.
+
+**false** - The function failed to execute. The pickup specified doesn't exist.
 
 ## Examples
 
