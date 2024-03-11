@@ -10,8 +10,8 @@ tags: ["3dtextlabel"]
 
 Gets the 3D text label colour.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
+| Name          | Description                                       |
+| ------------- | ------------------------------------------------- |
 | Text3D:textid | The ID of the 3D text label to get the colour of. |
 
 ## Returns
@@ -25,8 +25,8 @@ new Text3D:gMyLabel;
 
 gMyLabel = Create3DTextLabel("Hello World!", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0, false);
 
-new colour =  Get3DTextLabelColour(gMyLabel);
-// The `colour` will be 0x008080FF
+new colour = Get3DTextLabelColour(gMyLabel);
+// colour = 0x008080FF
 ```
 
 ## Related Functions
