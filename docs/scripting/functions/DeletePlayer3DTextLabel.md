@@ -8,24 +8,42 @@ tags: ["player", "3dtextlabel"]
 
 Destroy a 3D text label that was created using CreatePlayer3DTextLabel.
 
-| Name            | Description                                         |
-| --------------- | --------------------------------------------------- |
-| playerid        | The ID of the player whose 3D text label to delete. |
-| PlayerText3D:id | The ID of the player's 3D text label to delete.     |
+| Name                | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| playerid            | The ID of the player whose 3D text label to delete. |
+| PlayerText3D:textid | The ID of the player's 3D text label to delete.     |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the label specified doesn't exist.
+**false** - The function failed to execute. This means the label specified doesn't exist.
 
 ## Examples
 
 ```c
-new PlayerText3D:labelid = CreatePlayer3DTextLabel(...);
+new PlayerText3D:playerTextId[MAX_PLAYERS];
 
-// Later...
-DeletePlayer3DTextLabel(playerid, labelid);
+public OnPlayerSpawn(playerid)
+{
+    new
+        name[MAX_PLAYER_NAME],
+        Float:x, Float:y, Float:z,
+        string[64];
+
+    GetPlayerName(playerid, name, sizeof(name));
+    GetPlayerPos(playerid, x, y, z);
+
+    format(string, sizeof(string), "Hello %s!\nI'm at your position", name);
+    playerTextId[playerid] = CreatePlayer3DTextLabel(playerid, string, 0x008080FF, x, y, z, 40.0);
+    return 1;
+}
+
+public OnPlayerDisconnect(playerid, reason)
+{
+    DeletePlayer3DTextLabel(playerid, playerTextId[playerid]);
+    return 1;
+}
 ```
 
 ## Related Functions

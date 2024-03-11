@@ -11,7 +11,7 @@ Uništi 3D text label koji je kreiran koristeći CreatePlayer3DTextLabel.
 | Ime             | Deskripcija                             |
 | --------------- | --------------------------------------- |
 | playerid        | ID igrača čiji se 3D text label briše.  |
-| PlayerText3D:id | ID igračevog 3D text labela za brisati. |
+| PlayerText3D:textid | ID igračevog 3D text labela za brisati. |
 
 ## Returns
 
