@@ -10,7 +10,7 @@ Anexa uma Text Label 3D a um veículo específico.
 
 | Nome      | Descrição                                                                    |
 | --------- | ---------------------------------------------------------------------------- |
-| Text3D:id | O ID da 3D text label a ser anexada.                                         |
+| Text3D:textid | O ID da 3D text label a ser anexada.                                         |
 | vehicleid | O ID do veículo ao qual deseja anexar a 3D text label.                       |
 | OffsetX   | O deslocamento (offset) da coordenada X do veículo (O veículo é 0.0,0.0,0.0) |
 | OffsetY   | O deslocamento (offset) da coordenada Y do veículo (O veículo é 0.0,0.0,0.0) |
