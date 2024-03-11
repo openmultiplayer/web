@@ -14,9 +14,9 @@ This function is deprecated. Please see [GetPlayer3DTextLabelColour](GetPlayer3D
 
 Gets the player's 3D text label color.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player.  |
+| Name                | Description                                               |
+| ------------------- | --------------------------------------------------------- |
+| playerid            | The ID of the player.                                     |
 | PlayerText3D:textid | The ID of the player's 3D text label to get the color of. |
 
 ## Returns
@@ -34,7 +34,7 @@ GetPlayerPos(playerid, X, Y, Z);
 playerTextId = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 0x008080FF, X, Y, Z, 40.0);
 
 color = GetPlayer3DTextLabelColor(playerid, playerTextId);
-// The `color` will be 0x008080FF
+// color = 0x008080FF
 ```
 
 ## Related Functions
