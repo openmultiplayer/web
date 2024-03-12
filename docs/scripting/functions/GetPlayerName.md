@@ -27,7 +27,7 @@ public OnPlayerConnect(playerid)
 {
     // Get the name of the player that connected and display a join message to other players
 
-    new name[MAX_PLAYER_NAME];
+    new name[MAX_PLAYER_NAME + 1];
     GetPlayerName(playerid, name, sizeof(name));
 
     new string[128];
@@ -44,7 +44,7 @@ public OnPlayerConnect(playerid)
 
 A player's name can be up to 24 characters long by using [SetPlayerName](SetPlayerName).
 
-This is defined in a_samp.inc as `MAX_PLAYER_NAME`.
+This is defined as `MAX_PLAYER_NAME`.
 
 However, the client can only join with a nickname between 3 and 20 characters, otherwise the connection will be rejected and the player has to quit to choose a valid name.
 
