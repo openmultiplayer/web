@@ -10,8 +10,8 @@ tags: ["textdraw"]
 
 Gets the text font of a textdraw.
 
-| Name | Description |
-| ---- | ----------------------------------------------------------- |
+| Name        | Description                                |
+| ----------- | ------------------------------------------ |
 | Text:textid | The ID of the textdraw to get the font of. |
 
 ## Returns
@@ -21,15 +21,15 @@ Returns the textdraw font.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
     TextDrawFont(gMyTextdraw, TEXT_DRAW_FONT_2);
 
-    new TEXT_DRAW_FONT: font = TextDrawGetFont(gMyTextdraw);
-    // The `font` will be '2'
+    new TEXT_DRAW_FONT:font = TextDrawGetFont(gMyTextdraw);
+    printf("Font: %d", font); // Font: 2
     return 1;
 }
 ```
