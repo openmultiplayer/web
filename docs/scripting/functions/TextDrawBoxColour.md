@@ -1,6 +1,6 @@
 ---
 title: TextDrawBoxColour
-description: Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 'true').
+description: Adjusts the text box colour (only used if TextDrawUseBox 'enableBox' parameter is 'true').
 tags: ["textdraw"]
 ---
 
@@ -8,12 +8,12 @@ tags: ["textdraw"]
 
 ## Description
 
-Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 'true').
+Adjusts the text box colour (only used if TextDrawUseBox 'enableBox' parameter is 'true').
 
-| Name  | Description                                                                                                                                                                    |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Text:textid  | The TextDraw to change                                                                                                                                                         |
-| colour | The colour. Opacity is set by the alpha intensity of colour (eg. colour 0x000000FF has a solid black box opacity, whereas 0x000000AA has a semi-transparent black box opacity). |
+| Name        | Description                                                                                                                                                                     |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Text:textid | The TextDraw to change                                                                                                                                                          |
+| boxColour   | The colour. Opacity is set by the alpha intensity of colour (eg. colour 0x000000FF has a solid black box opacity, whereas 0x000000AA has a semi-transparent black box opacity). |
 
 ## Returns
 
