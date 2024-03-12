@@ -8,9 +8,9 @@ tags: ["textdraw"]
 
 Destroys a previously-created textdraw.
 
-| Name | Description                                                    |
-| ---- | -------------------------------------------------------------- |
-| text | The ID of the textdraw to destroy. Returned by TextDrawCreate. |
+| Name        | Description                                                    |
+| ----------- | -------------------------------------------------------------- |
+| Text:textid | The ID of the textdraw to destroy. Returned by TextDrawCreate. |
 
 ## Returns
 
@@ -19,7 +19,13 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
+
+public OnGameModeInit()
+{
+    gMyTextdraw = TextDrawCreate(240.0, 580.0, "Welcome to my OPEN.MP server");
+    return 1;
+}
 
 public OnGameModeExit()
 {
