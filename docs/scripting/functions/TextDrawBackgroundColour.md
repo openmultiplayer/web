@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Adjusts the text draw area background colour (the outline/shadow - NOT the box. For box colour, see [TextDrawBoxColour](TextDrawBoxColour)).
 
-| Name  | Description                                           |
-| ----- | ----------------------------------------------------- |
-| Text:textid  | The ID of the textdraw to set the background colour of |
-| colour | The colour that the textdraw should be set to.         |
+| Name             | Description                                            |
+| ---------------- | ------------------------------------------------------ |
+| Text:textid      | The ID of the textdraw to set the background colour of |
+| backgroundColour | The colour that the textdraw should be set to.         |
 
 ## Returns
 
@@ -22,13 +22,13 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawUseBox(gMyTextdraw, 1);
-    TextDrawBackgroundColour(gMyTextdraw, 0xFFFFFFFF); // Set the background colour of MyTextdraw to white
+    TextDrawUseBox(gMyTextdraw, true);
+    TextDrawBackgroundColour(gMyTextdraw, 0xFFFFFFFF); // Set the background colour of gMyTextdraw to white
     return 1;
 }
 ```
@@ -37,13 +37,13 @@ public OnGameModeInit()
 
 :::tip
 
-If TextDrawSetOutline is used with size > 0, the outline colour will match the colour used in TextDrawBackgroundColour. Changing the value of colour seems to alter the colour used in TextDrawColour
+If [TextDrawSetOutline](TextDrawSetOutline) is used with size > 0, the outline colour will match the colour used in TextDrawBackgroundColour. Changing the value of colour seems to alter the colour used in TextDrawColour.
 
 :::
 
 :::tip
 
-If you want to change the background colour of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+If you want to change the background colour of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 
 :::
 
