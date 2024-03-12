@@ -8,11 +8,11 @@ tags: ["textdraw"]
 
 Sets the width and height of the letters.
 
-| Name    | Description            |
-| ------- | ---------------------- |
-| text    | The TextDraw to change |
-| Float:x | Width of a char.       |
-| Float:y | Height of a char.      |
+| Name         | Description            |
+| ------------ | ---------------------- |
+| Text:textid  | The TextDraw to change |
+| Float:width  | Width of a char.       |
+| Float:height | Height of a char.      |
 
 ## Returns
 
@@ -21,7 +21,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -35,13 +35,16 @@ public OnGameModeInit()
 
 :::tip
 
-When using this function purely for the benefit of affecting the TextDraw box, multiply 'Y' by 0.135 to convert to TextDrawTextSize-like measurements. Hint: it is easier and extremely precise to use LD_SPAC:white sprite for box-only textdraws, TextDrawTextSize will have regular offsets.
+When using this function purely for the benefit of affecting the TextDraw box, multiply 'Y' by 0.135 to convert to TextDrawTextSize-like measurements.
+
+Hint: it is easier and extremely precise to use **LD_SPAC:white** sprite for box-only textdraws, TextDrawTextSize will have regular offsets.
 
 :::
 
 :::tip
 
-If you want to change the letter size of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible. Fonts appear to look the best with an X to Y ratio of 1 to 4 (e.g. if x is 0.5 then y should be 2).
+- If you want to change the letter size of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
+- Fonts appear to look the best with an X to Y ratio of 1 to 4 (e.g. if x is 0.5 then y should be 2).
 
 :::
 
