@@ -17,18 +17,18 @@ Checks if a textdraw is shown for a player.
 
 ## Returns
 
-true: Textdraw is shown for the player.
+**true** - Textdraw is shown for the player.
 
-false: Textdraw is not shown for the player.
+**false** - Textdraw is not shown for the player.
 
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate( ... );
+    gMyTextdraw = TextDrawCreate(240.0, 580.0, "Example Text");
     return 1;
 }
 
