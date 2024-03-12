@@ -8,21 +8,36 @@ tags: ["textdraw"]
 
 Shows a textdraw for all players.
 
-| Name | Description                                                 |
-| ---- | ----------------------------------------------------------- |
-| text | The ID of the textdraw to show. Returned by TextDrawCreate. |
+| Name        | Description                                                                        |
+| ----------- | ---------------------------------------------------------------------------------- |
+| Text:textid | The ID of the textdraw to show.<br />Returned by [TextDrawCreate](TextDrawCreate). |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the textdraw specified does not exist.
+**false** - The function failed to execute. This means the textdraw specified does not exist.
 
 ## Examples
 
 ```c
-new Text: textId = TextDrawCreate(100.0, 100.0, "Hello!");
-TextDrawShowForAll(textId);
+new Text:gMyTextdraw;
+
+public OnGameModeInit()
+{
+    gMyTextdraw = TextDrawCreate(240.0, 580.0, "Example Text");
+    return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/showtd", true))
+    {
+        TextDrawShowForAll(gMyTextdraw);
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Related Functions

@@ -8,24 +8,32 @@ tags: ["player", "textdraw"]
 
 Shows a textdraw for a specific player.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to show the textdraw for.              |
-| text     | The ID of the textdraw to show. Returned by TextDrawCreate. |
+| Name        | Description                                                                        |
+| ----------- | ---------------------------------------------------------------------------------- |
+| playerid    | The ID of the player to show the textdraw for.                                     |
+| Text:textid | The ID of the textdraw to show.<br />Returned by [TextDrawCreate](TextDrawCreate). |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means either the player and/or textdraw specified does not exist.
+**false** - The function failed to execute. This means either the player and/or textdraw specified does not exist.
 
 ## Examples
 
 ```c
+new Text:gMyTextdraw;
+
+public OnGameModeInit()
+{
+    gMyTextdraw = TextDrawCreate(100.0, 100.0, "Welcome!");
+    return 1;
+}
+
 public OnPlayerConnect(playerid)
 {
-    new Text: textId = TextDrawCreate(100.0, 100.0, "Welcome!");
-    TextDrawShowForPlayer(playerid, textId);
+    TextDrawShowForPlayer(playerid, gMyTextdraw);
+    return 1;
 }
 ```
 

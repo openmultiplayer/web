@@ -10,11 +10,11 @@ tags: ["textdraw"]
 
 Changes the text on a textdraw for a specific player.
 
-| Name     | Description                     |
-| -------- | ------------------------------- |
-| Text:textid | The ID of the TextDraw to change |
-| playerid | The ID of the player |
-| const format[] | The new string for the TextDraw |
+| Name             | Description                               |
+| ---------------- | ----------------------------------------- |
+| Text:textid      | The ID of the TextDraw to change          |
+| playerid         | The ID of the player                      |
+| const format[]   | The new string for the TextDraw           |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag |
 
 ## Returns
@@ -24,7 +24,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {

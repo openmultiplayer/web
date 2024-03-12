@@ -8,10 +8,10 @@ tags: ["textdraw"]
 
 Sets the thickness of a textdraw's text's outline. TextDrawBackgroundColor can be used to change the color.
 
-| Name | Description                                                    |
-| ---- | -------------------------------------------------------------- |
-| text | The ID of the text draw to set the outline thickness of.       |
-| size | The thickness of the outline, as an integer. 0 for no outline. |
+| Name        | Description                                                    |
+| ----------- | -------------------------------------------------------------- |
+| Text:textid | The ID of the text draw to set the outline thickness of.       |
+| outlineSize | The thickness of the outline, as an integer. 0 for no outline. |
 
 ## Returns
 
@@ -20,7 +20,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 :::tip
 
-If you want to change the outline of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+If you want to change the outline of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 
 :::
 
