@@ -8,14 +8,28 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Show a player-textdraw to the player it was created for
 
-| Name     | Description                                   |
-| -------- | --------------------------------------------- |
-| playerid | The ID of the player to show the textdraw for |
-| text     | The ID of the textdraw to show                |
+| Name              | Description                                   |
+| ----------------- | --------------------------------------------- |
+| playerid          | The ID of the player to show the textdraw for |
+| PlayerText:textid | The ID of the textdraw to show                |
 
 ## Returns
 
 This function does not return any specific values.
+
+## Examples
+
+```c
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
+
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
+    return 1;
+}
+```
 
 ## Notes
 

@@ -6,12 +6,12 @@ tags: ["textdraw"]
 
 ## Description
 
-Set the model for a textdraw model preview. Click here to see this function's effect.
+Set the model for a textdraw model preview.
 
-| Name       | Description                                       |
-| ---------- | ------------------------------------------------- |
-| text       | The textdraw id that will display the 3D preview. |
-| modelindex | The GTA SA or SA:MP model ID to display.          |
+| Name        | Description                                       |
+| ----------- | ------------------------------------------------- |
+| Text:textid | The textdraw id that will display the 3D preview. |
+| model       | The GTA SA or SA:MP model ID to display.          |
 
 ## Returns
 
@@ -20,18 +20,19 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text:textdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    textdraw = TextDrawCreate(320.0, 240.0, "_");
-    TextDrawFont(textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    TextDrawUseBox(textdraw, true);
-    TextDrawBoxColor(textdraw, 0x000000FF);
-    TextDrawTextSize(textdraw, 40.0, 40.0);
-    TextDrawSetPreviewModel(textdraw, 411); //Display model 411 (Infernus)
-    // TextDrawSetPreviewModel(textdraw, 1); //Display model 1 (CJ Skin)
-    // TextDrawSetPreviewModel(textdraw, 18646); //Display model 18646 (Police light object)
+    gMyTextdraw = TextDrawCreate(320.0, 240.0, "_");
+    TextDrawFont(gMyTextdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
+    TextDrawUseBox(gMyTextdraw, true);
+    TextDrawBoxColor(gMyTextdraw, 0x000000FF);
+    TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
+
+    TextDrawSetPreviewModel(gMyTextdraw, 411); // Display model 411 (Infernus)
+    // TextDrawSetPreviewModel(gMyTextdraw, 1); // Display model 1 (CJ Skin)
+    // TextDrawSetPreviewModel(gMyTextdraw, 18646); // Display model 18646 (Police light object)
 
     // You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
     return 1;

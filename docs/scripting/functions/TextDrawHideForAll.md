@@ -8,9 +8,9 @@ tags: ["textdraw"]
 
 Hides a text draw for all players.
 
-| Name | Description                                                  |
-| ---- | ------------------------------------------------------------ |
-| text | The ID of the textdraw to hide (returned by TextDrawCreate). |
+| Name        | Description                                                                        |
+| ----------- | ---------------------------------------------------------------------------------- |
+| Text:textid | The ID of the textdraw to hide.<br />Returned by [TextDrawCreate](TextDrawCreate). |
 
 ## Returns
 
@@ -19,16 +19,28 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
-gMyTextdraw = TextDrawCreate(...);
+public OnGameModeInit()
+{
+    gMyTextdraw = TextDrawCreate(240.0, 580.0, "Example Text");
+    return 1;
+}
 
-
-//Later on
-TextDrawShowForAll(gMyTextdraw);
-
-//Even later on
-TextDrawHideForAll(gMyTextdraw);
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/showtd", true))
+    {
+        TextDrawShowForAll(gMyTextdraw);
+        return 1;
+    }
+    if (!strcmp(cmdtext, "/hidetd", true))
+    {
+        TextDrawHideForAll(gMyTextdraw);
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Related Functions

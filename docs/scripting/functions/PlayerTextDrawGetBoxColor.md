@@ -4,15 +4,15 @@ description: Gets the box color of a player-textdraw
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='omp v1.1.0.2612' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 
 Gets the box color of a player-textdraw
 
-| Name     | Description                                             |
-| -------- | ------------------------------------------------------- |
-| playerid | The ID of the player |
+| Name              | Description                                           |
+| ----------------- | ----------------------------------------------------- |
+| playerid          | The ID of the player                                  |
 | PlayerText:textid | The ID of the player textdraw to get the box color of |
 
 ## Returns
@@ -26,13 +26,13 @@ new PlayerText:pTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");
+    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
     PlayerTextDrawUseBox(playerid, pTextdraw[playerid], true);
     PlayerTextDrawBoxColor(playerid, pTextdraw[playerid], 0xFFFF80FF);
     PlayerTextDrawShow(playerid, pTextdraw[playerid]);
 
     new boxColor = PlayerTextDrawGetBoxColor(playerid, pTextdraw[playerid]);
-    // the `boxColor` will be 0xFFFF80FF
+    // boxColor = 0xFFFF80FF
     return 1;
 }
 ```

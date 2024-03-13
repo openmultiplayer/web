@@ -8,10 +8,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Destroy a player-textdraw.
 
-| Name     | Description                                            |
-| -------- | ------------------------------------------------------ |
-| playerid | The ID of the player who's player-textdraw to destroy. |
-| text     | The ID of the textdraw to destroy.                     |
+| Name              | Description                                            |
+| ----------------- | ------------------------------------------------------ |
+| playerid          | The ID of the player who's player-textdraw to destroy. |
+| PlayerText:textid | The ID of the textdraw to destroy.                     |
 
 ## Returns
 
@@ -24,7 +24,7 @@ new PlayerText:pTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");
+    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Example Text");
     return 1;
 }
 

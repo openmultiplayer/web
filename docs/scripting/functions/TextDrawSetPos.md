@@ -10,16 +10,16 @@ tags: ["textdraw"]
 
 Sets the position (in-screen x & y) of a textdraw.
 
-| Name | Description |
-| ---- | -------------------------------------------------------------- |
-| Text:textid | The ID of the textdraw to set the position of.   |
-| Float:x | The X coordinate. |
-| Float:y | The Y coordinate. |
+| Name        | Description                                    |
+| ----------- | ---------------------------------------------- |
+| Text:textid | The ID of the textdraw to set the position of. |
+| Float:x     | The X coordinate.                              |
+| Float:y     | The Y coordinate.                              |
 
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {

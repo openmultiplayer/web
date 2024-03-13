@@ -10,12 +10,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the preview vehicle colors of a 3D preview player-textdraw.
 
-| Name     | Description                                           |
-| -------- | ----------------------------------------------------- |
-| playerid | The ID of the player. |
-| PlayerText:textid  | The ID of the player-textdraw to get the vehicle colors of. |
-| &colour1  | A variable into which to store the colour1, passed by reference. |
-| &colour2  | A variable into which to store the colour2, passed by reference. |
+| Name              | Description                                                      |
+| ----------------- | ---------------------------------------------------------------- |
+| playerid          | The ID of the player.                                            |
+| PlayerText:textid | The ID of the player-textdraw to get the vehicle colors of.      |
+| &colour1          | A variable into which to store the colour1, passed by reference. |
+| &colour2          | A variable into which to store the colour2, passed by reference. |
 
 ## Examples
 
@@ -34,7 +34,8 @@ public OnPlayerConnect(playerid)
 
     new colour1, colour2;
     PlayerTextDrawGetPreviewVehicleColours(playerid, pTextdraw[playerid], colour1, colour2);
-    // The `colour1` will be 6 and `colour2` will be 8
+    // colour1 = 6
+    // colour2 = 8
     return 1;
 }
 ```
@@ -44,4 +45,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Set model ID of a 3D player textdraw preview.
 - [PlayerTextDrawSetPreviewRot](PlayerTextDrawSetPreviewRot): Set rotation of a 3D player textdraw preview.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
+
+## Related Callbacks
+
 - [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

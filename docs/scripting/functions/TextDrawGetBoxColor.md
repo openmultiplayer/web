@@ -10,9 +10,9 @@ tags: ["textdraw"]
 
 Gets the box color of a textdraw.
 
-| Name  | Description                                     |
-| ----- | ----------------------------------------------- |
-| Text:textid  | The ID of the textdraw to get the box color of. |
+| Name        | Description                                     |
+| ----------- | ----------------------------------------------- |
+| Text:textid | The ID of the textdraw to get the box color of. |
 
 ## Returns
 
@@ -21,7 +21,7 @@ Returns the box color of the textdraw.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -30,7 +30,7 @@ public OnGameModeInit()
     TextDrawBoxColor(gMyTextdraw, 0xAA0000FF);
 
     new boxColor = TextDrawGetBoxColor(gMyTextdraw);
-    // The `boxColor` will be 0xAA0000FF
+    // boxColor = 0xAA0000FF
     return 1;
 }
 ```

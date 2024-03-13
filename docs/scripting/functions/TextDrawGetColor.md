@@ -10,9 +10,9 @@ tags: ["textdraw"]
 
 Gets the text color of a textdraw.
 
-| Name  | Description                                     |
-| ----- | ----------------------------------------------- |
-| Text:textid  | The ID of the textdraw to get the color of. |
+| Name        | Description                                 |
+| ----------- | ------------------------------------------- |
+| Text:textid | The ID of the textdraw to get the color of. |
 
 ## Returns
 
@@ -21,7 +21,7 @@ Returns the text color of the textdraw.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -29,7 +29,7 @@ public OnGameModeInit()
     TextDrawColor(gMyTextdraw, 0xFF0000FF);
 
     new color = TextDrawGetColor(gMyTextdraw);
-    // The `color` will be 0xFF0000FF
+    // color = 0xFF0000FF
     return 1;
 }
 ```

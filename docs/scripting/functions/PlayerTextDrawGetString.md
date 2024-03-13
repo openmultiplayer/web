@@ -10,12 +10,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the text of a player-textdraw.
 
-| Name     | Description                     |
-| -------- | ------------------------------- |
-| playerid | The ID of the player. |
-| PlayerText:textid | The ID of the player-textdraw to get the text of. |
-| string[] | An array into which to store the text, passed by reference. |
-| stringSize | The size of the string. |
+| Name                         | Description                                                 |
+| ---------------------------- | ----------------------------------------------------------- |
+| playerid                     | The ID of the player.                                       |
+| PlayerText:textid            | The ID of the player-textdraw to get the text of.           |
+| string[]                     | An array into which to store the text, passed by reference. |
+| stringSize = sizeof (string) | The size of the string.                                     |
 
 ## Returns
 
@@ -33,7 +33,7 @@ public OnPlayerConnect(playerid)
 	
 	new string[16];
 	PlayerTextDrawGetString(playerid, welcomeText[playerid], string, sizeof(string));
-	// The `string` now contains 'Hello World!'
+	// string = "Hello World!"
 	return 1;
 }
 ```

@@ -21,19 +21,19 @@ Returns the 3D textdraw preview model.
 ## Examples
 
 ```c
-new Text:textdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    textdraw = TextDrawCreate(320.0, 240.0, "_");
-    TextDrawFont(textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    TextDrawUseBox(textdraw, true);
-    TextDrawBoxColor(textdraw, 0x000000FF);
-    TextDrawTextSize(textdraw, 40.0, 40.0);
-    TextDrawSetPreviewModel(textdraw, 411);
+    gMyTextdraw = TextDrawCreate(320.0, 240.0, "_");
+    TextDrawFont(gMyTextdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
+    TextDrawUseBox(gMyTextdraw, true);
+    TextDrawBoxColor(gMyTextdraw, 0x000000FF);
+    TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
+    TextDrawSetPreviewModel(gMyTextdraw, 411);
 
-    new previewModel = TextDrawGetPreviewModel(textdraw);
-    // The `previewModel` will be '411'
+    new previewModel = TextDrawGetPreviewModel(gMyTextdraw);
+    // previewModel = 411
     return 1;
 }
 ```

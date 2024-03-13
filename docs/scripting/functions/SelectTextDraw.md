@@ -8,10 +8,10 @@ tags: ["textdraw"]
 
 Display the cursor and allow the player to select a textdraw
 
-| Name       | Description                                                    |
-| ---------- | -------------------------------------------------------------- |
-| playerid   | The ID of the player that should be able to select a textdraw  |
-| hovercolor | The color of the textdraw when hovering over with mouse (RGBA) |
+| Name        | Description                                                    |
+| ----------- | -------------------------------------------------------------- |
+| playerid    | The ID of the player that should be able to select a textdraw  |
+| hoverColour | The color of the textdraw when hovering over with mouse (RGBA) |
 
 ## Returns
 
@@ -45,5 +45,8 @@ It is the TEXT which will be highlighted when hovered over, NOT the box (if one 
 - [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
 - [TextDrawSetSelectable](TextDrawSetSelectable): Sets whether a textdraw is selectable through SelectTextDraw
 - [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): Sets whether a player-textdraw is selectable through SelectTextDraw
+
+## Related Callbacks
+
 - [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.
 - [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.

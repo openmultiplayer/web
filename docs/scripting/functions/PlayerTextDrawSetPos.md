@@ -10,12 +10,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Sets the position (in-screen x & y) of a player-textdraw.
 
-| Name | Description |
-| ---- | -------------------------------------------------------------- |
-| playerid    | The ID of the player.   |
-| Playertext:textid | The ID of the player-textdraw to set the position of.   |
-| Float:x | The X coordinate. |
-| Float:y | The Y coordinate. |
+| Name              | Description                                           |
+| ----------------- | ----------------------------------------------------- |
+| playerid          | The ID of the player.                                 |
+| Playertext:textid | The ID of the player-textdraw to set the position of. |
+| Float:x           | The X coordinate.                                     |
+| Float:y           | The Y coordinate.                                     |
 
 ## Examples
 
@@ -28,6 +28,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
     PlayerTextDrawSetPos(playerid, welcomeText[playerid], 200.0, 250.0);
+    return 1;
 }
 ```
 

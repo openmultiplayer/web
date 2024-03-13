@@ -12,12 +12,14 @@ Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can
 |------------------|----------------------------------------------------------|
 | Float:x          | The X (left/right) coordinate to create the textdraw at. |
 | Float:y          | The Y (up/down) coordinate to create the textdraw at.    |
-| text[]           | The text that will appear in the textdraw.               |
+| const format[]   | The text that will appear in the textdraw.               |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.               |
 
 ## Returns
 
-The ID of the created textdraw. Textdraw IDs start at 0.
+The ID of the created textdraw.
+
+Textdraw IDs start at **0**.
 
 ## Examples
 
@@ -38,6 +40,7 @@ public OnPlayerConnect(playerid)
 {
     //This is used to show the player the textdraw when they connect.
     TextDrawShowForPlayer(playerid, gMyTextdraw);
+    return 1;
 }
 ```
 
@@ -45,13 +48,16 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-The x,y coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution). If you plan on using TextDrawAlignment with alignment 3 (right), the x,y coordinate is the top right coordinate for the text draw. This function merely CREATES the textdraw, you must use TextDrawShowForPlayer or TextDrawShowForAll to show it. It is recommended to use WHOLE numbers instead of decimal positions when creating textdraws to ensure resolution friendly design.
+- The `x, y` coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution).
+- If you plan on using [TextDrawAlignment](TextDrawAlignment) with alignment 3 (`TEXT_DRAW_ALIGN_RIGHT`), the `x, y` coordinate is the top right coordinate for the text draw.
+- This function merely CREATES the textdraw, you must use [TextDrawShowForPlayer](TextDrawShowForPlayer) or [TextDrawShowForAll](TextDrawShowForAll) to show it.
+- It is recommended to use WHOLE numbers instead of decimal positions when creating textdraws to ensure resolution friendly design.
 
 :::
 
 :::warning
 
-Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~ don't work beyond 255th character.
+Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~) don't work beyond 255th character.
 
 :::
 

@@ -8,17 +8,17 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Adds a shadow to the bottom-right side of the text in a player-textdraw. The shadow font matches the text font.
 
-| Name     | Description                                                           |
-| -------- | --------------------------------------------------------------------- |
-| playerid | The ID of the player whose player-textdraw to set the shadow size of. |
-| text     | The ID of the player-textdraw to change the shadow of                 |
-| size     | The size of the shadow. 0 will hide the shadow.                       |
+| Name              | Description                                                           |
+| ----------------- | --------------------------------------------------------------------- |
+| playerid          | The ID of the player whose player-textdraw to set the shadow size of. |
+| PlayerText:textid | The ID of the player-textdraw to change the shadow of                 |
+| shadowSize        | The size of the shadow. 0 will hide the shadow.                       |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the player-textdraw doesn't exist.
+**false** - The function failed to execute. This means the player-textdraw doesn't exist.
 
 ## Examples
 
@@ -29,8 +29,8 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
     PlayerTextDrawSetShadow(playerid, welcomeText[playerid], 1);
-    PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
     return 1;
 }
 ```

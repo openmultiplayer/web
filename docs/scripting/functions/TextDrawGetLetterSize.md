@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Gets the width and height of the letters.
 
-| Name    | Description            |
-| ------- | ---------------------- |
-| Text:textid   | The ID of the textdraw to get letter size of. |
-| &Float:width  | A float variable into which to store width, passed by reference. |
+| Name          | Description                                                       |
+| ------------- | ----------------------------------------------------------------- |
+| Text:textid   | The ID of the textdraw to get letter size of.                     |
+| &Float:width  | A float variable into which to store width, passed by reference.  |
 | &Float:height | A float variable into which to store height, passed by reference. |
 
 ## Returns
@@ -23,7 +23,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
