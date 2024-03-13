@@ -19,7 +19,7 @@ Gets the preview vehicle colours of a 3D preview textdraw.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
