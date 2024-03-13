@@ -10,12 +10,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the width and height of the letters.
 
-| Name    | Description            |
-| ------- | ---------------------- |
-| playerid | The ID of the player. |
-| PlayerText:textid   | The ID of the player-textdraw to get letter size of. |
-| &Float:width  | A float variable into which to store width, passed by reference. |
-| &Float:height | A float variable into which to store height, passed by reference. |
+| Name              | Description                                                       |
+| ----------------- | ----------------------------------------------------------------- |
+| playerid          | The ID of the player.                                             |
+| PlayerText:textid | The ID of the player-textdraw to get letter size of.              |
+| &Float:width      | A float variable into which to store width, passed by reference.  |
+| &Float:height     | A float variable into which to store height, passed by reference. |
 
 ## Returns
 
@@ -34,7 +34,8 @@ public OnPlayerConnect(playerid)
 
     new Float:width, Float:height;
     PlayerTextDrawGetLetterSize(playerid, welcomeText[playerid], width, height);
-    // The `width` will be '3.2' and `height` will be '5.1'
+    // width = 3.2
+    // height = 5.1
     return 1;
 }
 ```

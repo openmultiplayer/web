@@ -10,11 +10,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the X axis and Y axis of the player-textdraw text size.
 
-| Name    | Description            |
-| ------- | ---------------------- |
-| playerid   | The ID of the player. |
-| Text:textid   | The ID of the textdraw to get text size of. |
-| &Float:width  | A float variable into which to store width, passed by reference. |
+| Name          | Description                                                       |
+| ------------- | ----------------------------------------------------------------- |
+| playerid      | The ID of the player.                                             |
+| Text:textid   | The ID of the textdraw to get text size of.                       |
+| &Float:width  | A float variable into which to store width, passed by reference.  |
 | &Float:height | A float variable into which to store height, passed by reference. |
 
 ## Returns
@@ -34,7 +34,8 @@ public OnPlayerConnect(playerid)
 
     new Float:width, Float:height;
     PlayerTextDrawGetTextSize(playerid, welcomeText[playerid], width, height);
-    // The `width` will be '2.0' and `height` will be '3.6'
+    // width = 2.0
+    // height = 3.6
     return 1;
 }
 ```

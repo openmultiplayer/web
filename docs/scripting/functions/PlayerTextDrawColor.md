@@ -8,11 +8,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Sets the text color of a player-textdraw
 
-| Name     | Description                                             |
-| -------- | ------------------------------------------------------- |
-| playerid | The ID of the player who's textdraw to set the color of |
-| text     | The TextDraw to change.                                 |
-| color    | The color in hexadecimal format.                        |
+| Name              | Description                                             |
+| ----------------- | ------------------------------------------------------- |
+| playerid          | The ID of the player who's textdraw to set the color of |
+| PlayerText:textid | The TextDraw to change.                                 |
+| textColour        | The color in hexadecimal format.                        |
 
 ## Returns
 
@@ -25,8 +25,9 @@ new PlayerText:pTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");
+    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Example Text");
     PlayerTextDrawColor(playerid, pTextdraw[playerid], 0xFF0000FF); // Red text
+
     PlayerTextDrawShow(playerid, pTextdraw[playerid]);
     return 1;
 }
@@ -36,7 +37,8 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-You can also use Gametext colors in textdraws. The textdraw must be re-shown to the player in order to update the color.
+- You can also use Gametext colours in textdraws. (e.g. `~r~` `~g~` `~b~`)
+- The textdraw must be re-shown to the player in order to update the color.
 
 :::
 

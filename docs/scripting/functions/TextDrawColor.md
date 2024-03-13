@@ -8,10 +8,10 @@ tags: ["textdraw"]
 
 Sets the text color of a textdraw
 
-| Name  | Description                                     |
-| ----- | ----------------------------------------------- |
-| text  | The ID of the textdraw to change the color of.. |
-| color | The color to set the textdraw to.               |
+| Name        | Description                                     |
+| ----------- | ----------------------------------------------- |
+| Text:textid | The ID of the textdraw to change the color of.. |
+| textColour  | The color to set the textdraw to.               |
 
 ## Returns
 
@@ -20,7 +20,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 :::tip
 
-If the TextDraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) for the changes of this function to take effect.
+If the TextDraw is already shown, it must be re-shown ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) for the changes of this function to take effect.
 
 :::
 

@@ -10,16 +10,16 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Checks if a player-textdraw is shown for the player.
 
-| Name        | Description                      |
-| ----------- | -------------------------------- |
-| playerid    | The ID of the player to check.   |
-| PlayerText:textid | The ID of the player-textdraw.          |
+| Name              | Description                    |
+| ----------------- | ------------------------------ |
+| playerid          | The ID of the player to check. |
+| PlayerText:textid | The ID of the player-textdraw. |
 
 ## Returns
 
-true: Player-Textdraw is shown for the player.
+**true** - Player-Textdraw is shown for the player.
 
-false: Player-Textdraw is not shown for the player.
+**false** - Player-Textdraw is not shown for the player.
 
 ## Examples
 

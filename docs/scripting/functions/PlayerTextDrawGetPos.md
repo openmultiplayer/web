@@ -10,12 +10,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the position (in-screen x & y) of a player-textdraw.
 
-| Name | Description |
-| ---- | -------------------------------------------------------------- |
-| playerid | The ID of the player.   |
-| Playertext:textid | The ID of the player-textdraw to get the position of.   |
-| &Float:x | A float variable into which to store X coordinate, passed by reference. |
-| &Float:y | A float variable into which to store Y coordinate, passed by reference. |
+| Name              | Description                                                             |
+| ----------------- | ----------------------------------------------------------------------- |
+| playerid          | The ID of the player.                                                   |
+| Playertext:textid | The ID of the player-textdraw to get the position of.                   |
+| &Float:x          | A float variable into which to store X coordinate, passed by reference. |
+| &Float:y          | A float variable into which to store Y coordinate, passed by reference. |
 
 ## Examples
 
@@ -29,7 +29,8 @@ public OnPlayerConnect(playerid)
 
     new Float:x, Float:y;
     PlayerTextDrawGetPos(playerid, welcomeText[playerid], x, y);
-    // The `x` will be '320.0' and `y` will be '240.0'
+    // x = 320.0
+    // y = 240.0
 }
 ```
 

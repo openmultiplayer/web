@@ -8,12 +8,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Sets the width and height of the letters in a player-textdraw.
 
-| Name     | Description                                                          |
-| -------- | -------------------------------------------------------------------- |
-| playerid | The ID of the player whose player-textdraw to set the letter size of |
-| text     | The ID of the player-textdraw to change the letter size of           |
-| Float:x  | Width of a char.                                                     |
-| Float:y  | Height of a char.                                                    |
+| Name              | Description                                                          |
+| ----------------- | -------------------------------------------------------------------- |
+| playerid          | The ID of the player whose player-textdraw to set the letter size of |
+| PlayerText:textid | The ID of the player-textdraw to change the letter size of           |
+| Float:width       | Width of a char.                                                     |
+| Float:height      | Height of a char.                                                    |
 
 ## Returns
 
@@ -28,8 +28,8 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
     PlayerTextDrawLetterSize(playerid, welcomeText[playerid], 3.2, 5.1);
-    PlayerTextDrawShow(playerid, welcomeText[playerid]);
     
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
     return 1;
 }
 ```

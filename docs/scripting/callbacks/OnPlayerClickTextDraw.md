@@ -8,10 +8,10 @@ tags: ["player", "textdraw"]
 
 This callback is called when a player clicks on a textdraw or cancels the select mode with the Escape key.
 
-| Name      | Description                                                                   |
-| --------- | ----------------------------------------------------------------------------- |
-| playerid  | The ID of the player that clicked on the textdraw.                            |
-| clickedid | The ID of the clicked textdraw. INVALID_TEXT_DRAW if selection was cancelled. |
+| Name           | Description                                                                   |
+| -------------- | ----------------------------------------------------------------------------- |
+| playerid       | The ID of the player that clicked on the textdraw.                            |
+| Text:clickedid | The ID of the clicked textdraw. INVALID_TEXT_DRAW if selection was cancelled. |
 
 ## Returns
 
@@ -25,15 +25,15 @@ new Text:gTextDraw;
 public OnGameModeInit()
 {
     gTextDraw = TextDrawCreate(10.000000, 141.000000, "MyTextDraw");
-    TextDrawTextSize(gTextDraw,60.000000, 20.000000);
-    TextDrawAlignment(gTextDraw,0);
-    TextDrawBackgroundColor(gTextDraw,0x000000ff);
-    TextDrawFont(gTextDraw,1);
-    TextDrawLetterSize(gTextDraw,0.250000, 1.000000);
-    TextDrawColor(gTextDraw,0xffffffff);
-    TextDrawSetProportional(gTextDraw,1);
-    TextDrawSetShadow(gTextDraw,1);
-    TextDrawSetSelectable(gTextDraw, 1);
+    TextDrawTextSize(gTextDraw, 60.000000, 20.000000);
+    TextDrawAlignment(gTextDraw, TEXT_DRAW_ALIGN_LEFT);
+    TextDrawBackgroundColor(gTextDraw, 0x000000FF);
+    TextDrawFont(gTextDraw, TEXT_DRAW_FONT_1);
+    TextDrawLetterSize(gTextDraw, 0.250000, 1.000000);
+    TextDrawColor(gTextDraw, -1);
+    TextDrawSetProportional(gTextDraw, true);
+    TextDrawSetShadow(gTextDraw, 1);
+    TextDrawSetSelectable(gTextDraw, true);
     return 1;
 }
 
@@ -51,9 +51,9 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 {
     if (clickedid == gTextDraw)
     {
-         SendClientMessage(playerid, 0xFFFFFFAA, "You clicked on a textdraw.");
-         CancelSelectTextDraw(playerid);
-         return 1;
+        SendClientMessage(playerid, 0xFFFFFFAA, "You clicked on a textdraw.");
+        CancelSelectTextDraw(playerid);
+        return 1;
     }
     return 0;
 }
@@ -63,7 +63,9 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-The clickable area is defined by [TextDrawTextSize](../functions/TextDrawTextSize). The x and y parameters passed to that function must not be zero or negative. Do not use [CancelSelectTextDraw](../functions/CancelSelectTextDraw) unconditionally within this callback. This results in an infinite loop.
+- The clickable area is defined by [TextDrawTextSize](../functions/TextDrawTextSize).
+- The `x` and `y` parameters passed to that function must not be zero or negative.
+- Do not use [CancelSelectTextDraw](../functions/CancelSelectTextDraw) unconditionally within this callback. This results in an **infinite loop**.
 
 :::
 

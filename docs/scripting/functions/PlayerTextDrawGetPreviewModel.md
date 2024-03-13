@@ -22,7 +22,7 @@ Returns the 3D player-textdraw preview model.
 ## Examples
 
 ```c
-new PlayerText: gTextDraw[MAX_PLAYERS];
+new PlayerText:gTextDraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawShow(playerid, gTextDraw[playerid]);
 
     new previewModel = PlayerTextDrawGetPreviewModel(playerid, gTextDraw[playerid]);
-    // The `previewModel` will be '411'
+    // previewModel = 411
     return 1;
 }
 ```
