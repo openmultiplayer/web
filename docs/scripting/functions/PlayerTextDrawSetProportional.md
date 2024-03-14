@@ -6,13 +6,13 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Description
 
-Appears to scale text spacing to a proportional ratio. Useful when using PlayerTextDrawLetterSize to ensure the text has even character spacing.
+Appears to scale text spacing to a proportional ratio. Useful when using [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize) to ensure the text has even character spacing.
 
-| Name     | Description                                                              |
-| -------- | ------------------------------------------------------------------------ |
-| playerid        | The ID of the player whose player-textdraw to set the proportionality of |
-| PlayerText:text | The ID of the player-textdraw to set the proportionality of              |
-| bool:set        | true to enable proportionality, false to disable.                        |
+| Name              | Description                                                              |
+| ----------------- | ------------------------------------------------------------------------ |
+| playerid          | The ID of the player whose player-textdraw to set the proportionality of |
+| PlayerText:textid | The ID of the player-textdraw to set the proportionality of              |
+| bool:proportional | 'true' to enable proportionality, 'false' to disable.                    |
 
 ## Returns
 
@@ -27,8 +27,8 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
     PlayerTextDrawSetProportional(playerid, welcomeText[playerid], true);
-    PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
     return 1;
 }
 ```

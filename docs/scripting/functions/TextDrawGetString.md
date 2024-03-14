@@ -10,11 +10,11 @@ tags: ["textdraw"]
 
 Gets the text of a textdraw.
 
-| Name     | Description                     |
-| -------- | ------------------------------- |
-| Text:textid | The ID of the textdraw to get the text of. |
-| string[] | An array into which to store the text, passed by reference. |
-| stringSize | The size of the string. |
+| Name                         | Description                                                 |
+| ---------------------------- | ----------------------------------------------------------- |
+| Text:textid                  | The ID of the textdraw to get the text of.                  |
+| string[]                     | An array into which to store the text, passed by reference. |
+| stringSize = sizeof (string) | The size of the string.                                     |
 
 ## Returns
 
@@ -23,7 +23,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {

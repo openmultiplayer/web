@@ -8,11 +8,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Toggles whether a player-textdraw can be selected or not.
 
-| Name            | Description                                                                                      |
-| --------------- | ------------------------------------------------------------------------------------------------ |
-| playerid        | The ID of the player whose player-textdraw to set the selectability of.                          |
-| PlayerText:text | The ID of the player-textdraw to set the selectability of.                                       |
-| bool:set        | Set the player-textdraw selectable 'true' or non-selectable 'false'. By default this is 'false'. |
+| Name              | Description                                                                                      |
+| ----------------- | ------------------------------------------------------------------------------------------------ |
+| playerid          | The ID of the player whose player-textdraw to set the selectability of.                          |
+| PlayerText:textid | The ID of the player-textdraw to set the selectability of.                                       |
+| bool:selectable   | Set the player-textdraw selectable 'true' or non-selectable 'false'. By default this is 'false'. |
 
 ## Returns
 
@@ -36,7 +36,6 @@ public OnPlayerConnect(playerid)
 
     // Show 'welcomeText[playerid]' to the player
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
-
     return 1;
 }
 ```
@@ -51,9 +50,7 @@ Use [PlayerTextDrawTextSize](PlayerTextDrawTextSize) to define the clickable are
 
 :::warning
 
-PlayerTextDrawSetSelectable MUST be used BEFORE the textdraw is shown to the player.
-
-`SelectTextDraw(playerid, hovercolor);` _must_ be used _before_ the textdraw is shown to the player.
+[PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable) and [SelectTextDraw](SelectTextDraw) MUST be used BEFORE the textdraw is shown to the player.
 
 :::
 

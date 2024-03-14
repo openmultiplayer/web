@@ -10,8 +10,8 @@ tags: ["textdraw"]
 
 Gets the thickness of a textdraw's text's outline.
 
-| Name | Description                                                    |
-| ---- | -------------------------------------------------------------- |
+| Name        | Description                                        |
+| ----------- | -------------------------------------------------- |
 | Text:textid | The ID of the textdraw to get the outline size of. |
 
 ## Returns
@@ -21,7 +21,7 @@ Returns the textdraw outline size.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -29,7 +29,7 @@ public OnGameModeInit()
     TextDrawSetOutline(gMyTextdraw, 1);
 
     new outline = TextDrawGetOutline(gMyTextdraw);
-    // The `outline` will be '1'
+    // outline = 1
     return 1;
 }
 ```

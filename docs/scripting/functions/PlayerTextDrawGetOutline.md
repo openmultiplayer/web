@@ -10,9 +10,9 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Get the outline size on a player-textdraw.
 
-| Name | Description |
-| ---- | -------------------------------------------------------------------------- |
-| playerid | The ID of the player. |
+| Name              | Description                                               |
+| ----------------- | --------------------------------------------------------- |
+| playerid          | The ID of the player.                                     |
 | PlayerText:textid | The ID of the player-textdraw to get the outline size of. |
 
 ## Returns
@@ -31,7 +31,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
     new outline = PlayerTextDrawGetOutline(playerid, welcomeText[playerid]);
-    // The `outline` will be '1'
+    // outline = 1
     return 1;
 }
 ```

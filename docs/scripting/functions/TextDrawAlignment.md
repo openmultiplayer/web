@@ -8,11 +8,10 @@ tags: ["textdraw"]
 
 Set the alignment of text in a text draw.
 
-| Parameter | Description                                               |
-| --------- | --------------------------------------------------------- |
-| Text      | The ID of the textdraw to set the alignment of.           |
-| Alignment | `TEXT_DRAW_ALIGN_LEFT` / `TEXT_DRAW_ALIGN_CENTER` / `TEXT_DRAW_ALIGN_RIGHT` |
-
+| Parameter                 | Description                                                                 |
+| ------------------------- | --------------------------------------------------------------------------- |
+| Text:textid               | The ID of the textdraw to set the alignment of.                             |
+| TEXT_DRAW_ALIGN:alignment | `TEXT_DRAW_ALIGN_LEFT` / `TEXT_DRAW_ALIGN_CENTER` / `TEXT_DRAW_ALIGN_RIGHT` |
 
 ## Returns
 
@@ -27,7 +26,7 @@ This function does not return any specific values.
     TEXT_DRAW_ALIGN_RIGHT
 */
 
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -47,7 +46,7 @@ For alignment TEXT_DRAW_ALIGN_CENTER (center) the x and y values of TextSize nee
 
 :::tip
 
-If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) to show the changes of this function.
+If the textdraw is already shown, it must be re-shown ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) to show the changes of this function.
 
 :::
 

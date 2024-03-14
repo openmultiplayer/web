@@ -6,30 +6,18 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Description
 
-Change the size of a player-textdraw (box if PlayerTextDrawUseBox is enabled and/or clickable area for use with PlayerTextDrawSetSelectable).
+Change the size of a player-textdraw (box if [PlayerTextDrawUseBox](PlayerTextDrawUseBox) is enabled and/or clickable area for use with [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable)).
 
-| Name     | Description                                                                            |
-| -------- | -------------------------------------------------------------------------------------- |
-| playerid | The ID of the player whose player-textdraw to set the size of                          |
-| text     | The ID of the player-textdraw to set the size of.                                      |
-| Float:x  | The size on the X axis (left/right) following the same 640x480 grid as TextDrawCreate. |
-| Float:y  | The size on the Y axis (up/down) following the same 640x480 grid as TextDrawCreate.    |
+| Name              | Description                                                                            |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| playerid          | The ID of the player whose player-textdraw to set the size of                          |
+| PlayerText:textid | The ID of the player-textdraw to set the size of.                                      |
+| Float:width       | The size on the X axis (left/right) following the same 640x480 grid as TextDrawCreate. |
+| Float:height      | The size on the Y axis (up/down) following the same 640x480 grid as TextDrawCreate.    |
 
 ## Returns
 
-The x and y have different meanings with different PlayerTextDrawAlignment values: 1 (left): they are the right-most corner of the box, absolute coordinates. 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box. 3 (right): the x and y are the coordinates of the left-most corner of the box
-
-1 (left): they are the right-most corner of the box, absolute coordinates.
-
-2 (center): they need to inverted (switch the two) and the x value is the overall width of the box.
-
-3 (right): the x and y are the coordinates of the left-most corner of the box
-
-Using font type 4 (sprite) and 5 (model preview) converts X and Y of this function from corner coordinates to WIDTH and HEIGHT (offsets).
-
-The TextDraw box starts 10.0 units up and 5.0 to the left as the origin (TextDrawCreate coordinate).
-
-This function defines the clickable area for use with PlayerTextDrawSetSelectable, whether a box is shown or not.
+This function does not return any specific values.
 
 ## Examples
 
@@ -40,8 +28,8 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
     PlayerTextDrawTextSize(playerid, welcomeText[playerid], 2.0, 3.6);
-    PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
     return 1;
 }
 ```
@@ -50,9 +38,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-The x and y have different meanings with different PlayerTextDrawAlignment values: 1 (left): they are the right-most corner of the box, absolute coordinates. 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box. 3 (right): the x and y are the coordinates of the left-most corner of the box
-
-Using font type 4 (sprite) and 5 (model preview) converts X and Y of this function from corner coordinates to WIDTH and HEIGHT (offsets). The TextDraw box starts 10.0 units up and 5.0 to the left as the origin (TextDrawCreate coordinate). This function defines the clickable area for use with PlayerTextDrawSetSelectable, whether a box is shown or not.
+- The x and y have different meanings with different [PlayerTextDrawAlignment](PlayerTextDrawAlignment) values:
+    - 1 (left): they are the right-most corner of the box, absolute coordinates.
+    - 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box.
+    - 3 (right): the x and y are the coordinates of the left-most corner of the box
+- Using font type 4 (sprite) and 5 (model preview) converts X and Y of this function from corner coordinates to WIDTH and HEIGHT (offsets).
+- The TextDraw box starts 10.0 units up and 5.0 to the left as the origin (TextDrawCreate coordinate).
+- This function defines the clickable area for use with [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable), whether a box is shown or not.
 
 :::
 

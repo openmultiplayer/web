@@ -4,17 +4,17 @@ description: Adjust the background colour of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='omp v1.1.0.2612' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 
 Adjust the background colour of a player-textdraw.
 
-| Name     | Description                                                               |
-| -------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player whose player-textdraw to set the background colour of |
-| PlayerText:textid     | The ID of the player-textdraw to set the background colour of              |
-| colour    | The colour that the textdraw should be set to.                             |
+| Name              | Description                                                                |
+| ----------------- | -------------------------------------------------------------------------- |
+| playerid          | The ID of the player whose player-textdraw to set the background colour of |
+| PlayerText:textid | The ID of the player-textdraw to set the background colour of              |
+| backgroundColour  | The colour that the textdraw should be set to.                             |
 
 ## Returns
 
@@ -23,13 +23,13 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new PlayerText:gMyTextdraw;
+new PlayerText:gMyTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    gMyTextdraw = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");
-    PlayerTextDrawUseBox(playerid, gMyTextdraw, 1);
-    PlayerTextDrawBackgroundColour(playerid, gMyTextdraw, 0xFFFFFFFF); // Set the background colour of gMyTextdraw to white
+    gMyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
+    PlayerTextDrawUseBox(playerid, gMyTextdraw[playerid], true);
+    PlayerTextDrawBackgroundColour(playerid, gMyTextdraw[playerid], 0xFFFFFFFF); // Set the background colour of gMyTextdraw to white
     return 1;
 }
 ```
@@ -38,7 +38,8 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-If PlayerTextDrawSetOutline is used with size > 0, the outline colour will match the colour used in PlayerTextDrawBackgroundColour. Changing the value of colour seems to alter the colour used in PlayerTextDrawColour
+- If [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) is used with size > 0, the outline colour will match the colour used in PlayerTextDrawBackgroundColour.
+- Changing the value of colour seems to alter the colour used in PlayerTextDrawColour.
 
 :::
 

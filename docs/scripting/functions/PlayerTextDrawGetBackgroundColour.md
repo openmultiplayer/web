@@ -4,15 +4,15 @@ description: Gets the background colour of a player-textdraw
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='omp v1.1.0.2612' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 
 Gets the background colour of a player-textdraw
 
-| Name     | Description                                             |
-| -------- | ------------------------------------------------------- |
-| playerid | The ID of the player |
+| Name              | Description                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| playerid          | The ID of the player                                          |
 | PlayerText:textid | The ID of the player textdraw to get the background colour of |
 
 ## Returns
@@ -26,13 +26,13 @@ new PlayerText:pTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");
+    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Example Text");
     PlayerTextDrawSetOutline(playerid, pTextdraw[playerid], 1);
     PlayerTextDrawBackgroundColour(playerid, pTextdraw[playerid], 0x00FF00FF);
     PlayerTextDrawShow(playerid, pTextdraw[playerid]);
 
     new backgroundColour = PlayerTextDrawGetBackgroundColour(playerid, pTextdraw[playerid]);
-    // the `backgroundColour` will be 0x00FF00FF
+    // backgroundColour = 0x00FF00FF
     return 1;
 }
 ```

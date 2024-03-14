@@ -8,10 +8,10 @@ tags: ["textdraw"]
 
 Appears to scale text spacing to a proportional ratio. Useful when using TextDrawLetterSize to ensure the text has even character spacing.
 
-| Name | Description                                          |
-| ---- | ---------------------------------------------------- |
-| text | The ID of the textdraw to set the proportionality of |
-| bool:set  | 'true' to enable proportionality, 'false' to disable.           |
+| Name              | Description                                           |
+| ----------------- | ----------------------------------------------------- |
+| Text:textid       | The ID of the textdraw to set the proportionality of  |
+| bool:proportional | 'true' to enable proportionality, 'false' to disable. |
 
 ## Returns
 
@@ -20,11 +20,11 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
     TextDrawSetProportional(gMyTextdraw, true);
     return 1;
 }
@@ -34,7 +34,8 @@ public OnGameModeInit()
 
 :::tip
 
-Proportionality is set to 1 by default, you might skip this function if you don't want to disable it. If you want to change the proportionality of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+- Proportionality is set to **true** by default, you might skip this function if you don't want to disable it.
+- If you want to change the proportionality of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 
 :::
 

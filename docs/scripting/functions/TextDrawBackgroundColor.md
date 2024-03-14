@@ -8,10 +8,10 @@ tags: ["textdraw"]
 
 Adjusts the text draw area background color (the outline/shadow - NOT the box. For box color, see [TextDrawBoxColor](TextDrawBoxColor)).
 
-| Name  | Description                                           |
-| ----- | ----------------------------------------------------- |
-| text  | The ID of the textdraw to set the background color of |
-| color | The color that the textdraw should be set to.         |
+| Name             | Description                                           |
+| ---------------- | ----------------------------------------------------- |
+| Text:textid      | The ID of the textdraw to set the background color of |
+| backgroundColour | The color that the textdraw should be set to.         |
 
 ## Returns
 
@@ -20,12 +20,12 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
-    TextDrawUseBox(gMyTextdraw, 1);
+    TextDrawUseBox(gMyTextdraw, true);
     TextDrawBackgroundColor(gMyTextdraw, 0xFFFFFFFF); // Set the background color of MyTextdraw to white
     return 1;
 }
@@ -35,13 +35,14 @@ public OnGameModeInit()
 
 :::tip
 
-If TextDrawSetOutline is used with size > 0, the outline color will match the color used in TextDrawBackgroundColor. Changing the value of color seems to alter the color used in TextDrawColor
+- If [TextDrawSetOutline](TextDrawSetOutline) is used with size > 0, the outline color will match the color used in TextDrawBackgroundColor.
+- Changing the value of color seems to alter the color used in [TextDrawColor](TextDrawColor).
 
 :::
 
 :::tip
 
-If you want to change the background colour of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+If you want to change the background colour of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 
 :::
 

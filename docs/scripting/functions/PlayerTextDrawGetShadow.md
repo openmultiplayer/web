@@ -10,9 +10,9 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Get the shadow size on a player-textdraw.
 
-| Name | Description |
-| ---- | -------------------------------------------------------------------------- |
-| playerid | The ID of the player. |
+| Name              | Description                                              |
+| ----------------- | -------------------------------------------------------- |
+| playerid          | The ID of the player.                                    |
 | PlayerText:textid | The ID of the player-textdraw to get the shadow size of. |
 
 ## Returns
@@ -31,7 +31,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
     new shadow = PlayerTextDrawGetShadow(playerid, welcomeText[playerid]);
-    // The `shadow` will be '1'
+    // shadow = 1
     return 1;
 }
 ```

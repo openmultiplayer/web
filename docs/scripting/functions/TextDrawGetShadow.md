@@ -10,8 +10,8 @@ tags: ["textdraw"]
 
 Gets the size of a textdraw's text's shadow.
 
-| Name | Description |
-| ---- | -------------------------------------------------------------------------- |
+| Name        | Description                                       |
+| ----------- | ------------------------------------------------- |
 | Text:textid | The ID of the textdraw to get the shadow size of. |
 
 ## Returns
@@ -21,7 +21,7 @@ Returns the textdraw shadow size.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -29,7 +29,7 @@ public OnGameModeInit()
     TextDrawSetShadow(gMyTextdraw, 1);
 
     new shadow = TextDrawGetShadow(gMyTextdraw);
-    // The `shadow` will be '1'
+    // shadow = 1
     return 1;
 }
 ```

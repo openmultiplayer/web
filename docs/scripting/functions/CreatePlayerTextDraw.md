@@ -13,7 +13,7 @@ Creates a textdraw for a single player. This can be used as a way around the glo
 | playerid         | The ID of the player to create the textdraw for |
 | Float:x          | X-Coordinate                                    |
 | Float:y          | Y-Coordinate                                    |
-| text[]           | The text in the textdraw.                       |
+| const format[]   | The text in the textdraw.                       |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.      |
 
 ## Returns
@@ -34,6 +34,7 @@ public OnPlayerConnect(playerid)
 
     // Now show it
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
+    return 1;
 }
 ```
 
@@ -47,7 +48,7 @@ Player-textdraws are automatically destroyed when a player disconnects.
 
 :::warning
 
-Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~ Doesn't work beyond 255th character.
+Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~) Doesn't work beyond 255th character.
 
 :::
 
