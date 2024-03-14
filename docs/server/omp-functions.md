@@ -43,6 +43,8 @@ This page contains all the functions and callbacks that were added in open.mp
 | [TogglePlayerGhostMode](../scripting/functions/TogglePlayerGhostMode)                                   |
 | [GetPlayerGhostMode](../scripting/functions/GetPlayerGhostMode)                                         |
 | [GetPlayerAnimationFlags](../scripting/functions/GetPlayerAnimationFlags)                               |
+| [GetDefaultPlayerColour](../scripting/functions/GetDefaultPlayerColour)                                 |
+| [PlayerHasClockEnabled](../scripting/functions/PlayerHasClockEnabled)                                   |
 | [IsPlayerUsingOfficialClient](../scripting/functions/IsPlayerUsingOfficialClient)                       |
 | [IsPlayerInDriveByMode](../scripting/functions/IsPlayerInDriveByMode)                                   |
 | [IsPlayerCuffed](../scripting/functions/IsPlayerCuffed)                                                 |
@@ -170,6 +172,8 @@ This page contains all the functions and callbacks that were added in open.mp
 | [SetVehicleSpawnInfo](../scripting/functions/SetVehicleSpawnInfo)                                       |
 | [ToggleVehicleSirenEnabled](../scripting/functions/ToggleVehicleSirenEnabled)                           |
 | [VehicleColourIndexToColour](../scripting/functions/VehicleColourIndexToColour)                         |
+| [GetVehicleSeats](../scripting/functions/GetVehicleSeats)                                               |
+| [VehicleCanHaveComponent](../scripting/functions/VehicleCanHaveComponent)                               |
 | [GetVehicles](../scripting/functions/GetVehicles)                                                       |
 
 ## TextDraw
@@ -383,6 +387,7 @@ This page contains all the functions and callbacks that were added in open.mp
 | [ToggleChatTextReplacement](../scripting/functions/ToggleChatTextReplacement)                           |
 | [ChatTextReplacementToggled](../scripting/functions/ChatTextReplacementToggled)                         |
 | [AllowNickNameCharacter](../scripting/functions/AllowNickNameCharacter)                                 |
+| [IsNickNameCharacterAllowed](../scripting/functions/IsNickNameCharacterAllowed)                         |
 | [IsValidNickName](../scripting/functions/IsValidNickName)                                               |
 | [ClearBanList](../scripting/functions/ClearBanList)                                                     |
 | [IsBanned](../scripting/functions/IsBanned)                                                             |
@@ -415,3 +420,30 @@ This page contains all the functions and callbacks that were added in open.mp
 |---------------------------------------------------------------------------------------------------------|
 | [IsValidCustomModel](../scripting/functions/IsValidCustomModel)                                         |
 | [GetCustomModelPath](../scripting/functions/GetCustomModelPath)                                         |
+
+## String
+
+| Name                                                                                                    |
+|---------------------------------------------------------------------------------------------------------|
+| [strcopy](../scripting/functions/strcopy)                                                               |
+| [strequal](../scripting/functions/strequal)                                                             |
+
+## Float
+
+| Name                                                                                                    |
+|---------------------------------------------------------------------------------------------------------|
+| [strfloat](../scripting/functions/strfloat)                                                             |
+
+## File
+
+| Name                                                                                                    |
+|---------------------------------------------------------------------------------------------------------|
+| [ftell](../scripting/functions/ftell)                                                                   |
+| [fstat](../scripting/functions/fstat)                                                                   |
+| [frename](../scripting/functions/frename)                                                               |
+| [filecrc](../scripting/functions/filecrc)                                                               |
+| [fflush](../scripting/functions/fflush)                                                                 |
+| [fcreatedir](../scripting/functions/fcreatedir)                                                         |
+| [fcopy](../scripting/functions/fcopy)                                                                   |
+| [fattrib](../scripting/functions/fattrib)                                                               |
+| [diskfree](../scripting/functions/diskfree)                                                             |
