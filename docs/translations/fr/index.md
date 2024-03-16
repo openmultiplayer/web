@@ -1,4 +1,4 @@
-# Maintien du wiki SA:MP par open.MP
+# Maintien du wiki SA:MP par open.mp
 
 Bienvenue sur le wiki de SA:MP, qui est aujourd'hui maintenu par l'équipe open.mp et sa communauté _(et, plus généralement, la communauté SA:MP)_.
 
