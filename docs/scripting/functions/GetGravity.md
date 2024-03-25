@@ -10,12 +10,32 @@ Get the currently global gravity.
 
 ## Examples
 
+**SA-MP server:**
+
 ```c
+#include <a_samp>
+
 #if !defined GetGravity
     native Float:GetGravity();
 #endif
 
-printf("Current gravity: %f", GetGravity());
+public OnGameModeInit()
+{
+    printf("Current gravity: %f", GetGravity());
+    return 1;
+}
+```
+
+**open.mp server:**
+
+```c
+#include <open.mp>
+
+public OnGameModeInit()
+{
+    printf("Current gravity: %f", GetGravity());
+    return 1;
+}
 ```
 
 ## Notes
