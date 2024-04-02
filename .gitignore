@@ -16,3 +16,4 @@ prisma/Studio/
 # Visual Studio
 *.wsuo
 VSWorkspaceState.json
+*.code-workspace
