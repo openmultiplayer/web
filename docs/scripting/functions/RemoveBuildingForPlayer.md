@@ -12,7 +12,7 @@ Removes a standard San Andreas model for a single player within a specified rang
 | ------------- | --------------------------------------------------------------------------------- |
 | playerid      | The ID of the player to remove the objects for.                                   |
 | modelid       | The model to remove.                                                              |
-| Float:centerY | The X coordinate around which the objects will be removed.                        |
+| Float:centerX | The X coordinate around which the objects will be removed.                        |
 | Float:centerY | The Y coordinate around which the objects will be removed.                        |
 | Float:centerZ | The Z coordinate around which the objects will be removed.                        |
 | Float:radius  | The radius around the specified point to remove objects with the specified model. |
@@ -50,7 +50,8 @@ You can use **-1** for the modelid to remove all objects within the specified ra
 
 :::warning
 
-There appears to be a limit of around 1000 lines/objects. There is no workaround. When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
+- There appears to be a limit of around 1000 lines/objects. There is no workaround.
+- When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
 
 :::
 

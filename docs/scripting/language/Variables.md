@@ -52,24 +52,24 @@ letters = 25;
 Modifying a variable's value is possible only if the part of the code where you’re referencing the variable is within the scope of that variable. Scope of a variable depends upon the code block or position where that variable was declared. For example a variable being declared outside any block of code, usually in the beginning of the script, has a ‘Global’ scope and can be accessed from anywhere within the script:
 
 ```c
-#include <a_samp>
+#include <open.mp>
 
 new g_var = 5;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     g_var = 10;
 
-    printf ("The value is %i", g_var);
+    printf("The value is %i", g_var);
 
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     g_var = 100;
 
-    printf ("The value is %i", g_var);
+    printf("The value is %i", g_var);
 
     return 1;
 }
@@ -84,9 +84,9 @@ public OnPlayerConnect (playerid)
 Other than ‘Global’ (scoped) variables, there are ‘local’ or ‘private’ variables that can be accessed only from inside the block of code where they were declared.
 
 ```c
-#include <a_samp>
+#include <open.mp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new localVar;
 
@@ -95,7 +95,7 @@ public OnFilterScriptInit ()
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     localVar = 10; // This line will show an error upon compilation
 
@@ -108,11 +108,11 @@ If you try to compile the code above, the compiler will show an error which is r
 One important thing to note is that you cannot declare variables with the same names if their scopes intercede. For example if you already have a variable named ‘score’ on a global scope, you cannot create another variable named ‘score’ on the global scope as well as a local one, and this is true for other way around as well (if you already have a local variable, avoid declaring a global variable with the same name).
 
 ```c
-#include <a_samp>
+#include <open.mp>
 
 new g_score;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new g_score = 5; // This line will show an error.
     return 1;
@@ -174,12 +174,12 @@ A variable is capable of holding a character, integer value, boolean (true or fa
 
 ```c
 new decimalValue = 1.0; // Incorrect
-new bool: decimalValue = 1.0 // Incorrect
-new Float: decimalValue = 1.0; // Correct
+new bool:decimalValue = 1.0 // Incorrect
+new Float:decimalValue = 1.0; // Correct
 
 new switchOn = 1.0; // Incorrect
 new switchOn = true; // Incorrect, doesn't show a warning
-new bool: switchOn = true; // Correct
+new bool:switchOn = true; // Correct
 ```
 
 Using correct tags is important to avoid any bugs or errors during program execution.
@@ -187,24 +187,24 @@ Using correct tags is important to avoid any bugs or errors during program execu
 Pawn being a typeless language allows us to store different types of data in the same variable which can be useful in some cases and troublesome in others, but such usage of variables is not recommended.
 
 ```c
-#include <a_samp>
+#include <open.mp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
 
-    new var ;
+    new var;
 
     var = 'a';
-    printf ("%c", var);
+    printf("%c", var);
 
     var = 1;
-    printf ("%d", var);
+    printf("%d", var);
 
     var = 1.0;
-    printf ("%f", var);
+    printf("%f", var);
 
     var = true;
-    printf ("%d", var); // prints a value 0 or 1
+    printf("%d", var); // prints a value 0 or 1
 
     return 1;
 }

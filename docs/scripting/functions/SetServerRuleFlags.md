@@ -6,6 +6,12 @@ tags: ["rule"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
+:::warning
+
+This function has not yet been implemented.
+
+:::
+
 ## Description
 
 Sets the flags of a server rule.
@@ -19,7 +25,7 @@ Sets the flags of a server rule.
 
 ## Returns
 
-Returns true if the function executed successfully, otherwise false.
+Returns **true** if the function executed successfully, otherwise **false**.
 
 ## Examples
 
