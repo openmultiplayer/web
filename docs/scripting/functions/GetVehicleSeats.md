@@ -12,19 +12,20 @@ Gets the number of seats in the vehicle.
 
 | Name      | Description        |
 | --------- | ------------------ |
-| vehicleid | ID of the vehicle. |
+| modelid | ID of the vehicle model. |
 
 ## Return Values
 
 Returns the number of seats.
 
-**255** if the vehicle is invalid.
+**255** if the model is invalid.
 
 ## Examples
 
 ```c
 new vehicleid = GetPlayerVehicleID(playerid);
-new seats = GetVehicleSeats(vehicleid);
+new modelid = GetVehicleModel(vehicleid);
+new seats = GetVehicleSeats(modelid);
 
 new string[64];
 format(string, sizeof(string), "Number of seats in this vehicle: %d", seats);
