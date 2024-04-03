@@ -2,7 +2,7 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 interface FooterItem {
-  url: string;
+  url?: string;
   imageUrl?: string;
   text: string;
 }
