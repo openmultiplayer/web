@@ -10,7 +10,7 @@ interface FooterItem {
 interface FooterProps {
   heading: string;
   items: FooterItem[];
-  alignment: "left" | "right";
+  alignment: "left" | "center" | "right";
 }
 
 const FooterList: React.FC<FooterProps & { heading: string; maxWidth?: string }> = ({ heading, items, alignment, maxWidth }) => (
