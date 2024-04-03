@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
               maxWidth={'390px'} // Max width conditionally applied
               style={{
                 whiteSpace: 'normal',
-                textAlign: 'center',
+                textAlign: 'left',
                 lineHeight: '1.5',
               }}
             />
