@@ -11,10 +11,12 @@ interface FooterProps {
   heading: string;
   items: FooterItem[];
   alignment: "left" | "center" | "right";
+  maxWidth?: string;
+  style?: React.CSSProperties;
 }
 
-const FooterList: React.FC<FooterProps & { heading: string; maxWidth?: string }> = ({ heading, items, alignment, maxWidth }) => (
-  <div className={`flex flex-column ${alignment ? `align-${alignment}` : ''}`} style={{ maxWidth }}>
+const FooterList: React.FC<FooterProps & { heading: string; maxWidth?: string }> = ({ heading, items, alignment, maxWidth, style }) => (
+  <div className={`flex flex-column ${alignment ? `align-${alignment}` : ''}`} style={{ maxWidth, ...style }}>
     <h4 className="ma0">{heading}</h4>
     <div className="flex flex-wrap" style={{ flexDirection: alignment === 'right' ? 'row-reverse' : 'row' }}>
       {items.map((item, index) => (
