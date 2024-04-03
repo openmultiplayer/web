@@ -91,7 +91,6 @@ const Footer: React.FC = () => {
                 width: '100px',
                 height: '100px',
                 maxWidth: '100%',
-                height: 'auto',
                 marginBottom: '10px',
               }}
             />
@@ -134,7 +133,6 @@ const Footer: React.FC = () => {
                 width: '100px',
                 height: '100px',
                 maxWidth: '100%',
-                height: 'auto',
                 marginBottom: '10px',
               }}
             />
