@@ -11,6 +11,7 @@ interface FooterProps {
   heading: string;
   items: FooterItem[];
   alignment: "left" | "center" | "right";
+  maxWidth?: string;
   style?: React.CSSProperties;
 }
 
