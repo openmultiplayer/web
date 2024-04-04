@@ -20,6 +20,8 @@ import { useRouter } from "next/router";
 import { FC, forwardRef, useCallback, useImperativeHandle, useState } from "react";
 import getLanguageName from "src/utils/getLanguageName";
 
+import { Flex, Image, Grid} from "@chakra-ui/react";
+
 interface Props {
   title: string;
 }
@@ -61,11 +63,16 @@ const LanguageSelect =  forwardRef(({ title }: Props, ref) => {
     );
   }
 
+  const getFlagImage = (locale) => {    
+    return `/images/assets/${locale}.svg`;
+};
+  
+  
   return (
     <>
       <span>{title}</span>
-
-      <Modal isOpen={isOpen} onClose={onClose}>
+  
+      <Modal isOpen={isOpen} onClose={onClose} size="5xl">
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>
@@ -73,32 +80,30 @@ const LanguageSelect =  forwardRef(({ title }: Props, ref) => {
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Stack>
-              <Button colorScheme="green" onClick={onSet}>
-                Save
-              </Button>
-
-              <RadioGroup as="fieldset">
-                <VisuallyHidden>
-                  <legend>Website language</legend>
-                </VisuallyHidden>
-                <Stack direction="column">
-                  {locales.map((value: string) => {
-                    const radio = getRadioProps({ value });
-                    return (
-                      <LanguageSelectItem key={value} {...radio}>
-                        {getLanguageName(value)}
-                      </LanguageSelectItem>
-                    );
-                  })}
-                </Stack>
-              </RadioGroup>
-            </Stack>
+            <Grid templateColumns="repeat(3, 1fr)" templateRows="repeat(3, 1fr)" gap={2}>
+              {locales.map((value: string) => {
+                const radio = getRadioProps({ value });
+                return (
+                  <LanguageSelectItem key={value} {...radio}>
+                    <Flex align="center" justifyContent="space-between">
+                    <span>{getLanguageName(value)}</span>
+                      <Image src={getFlagImage(value)} alt="Flag" width={10} height={10} />
+                    </Flex>
+                  </LanguageSelectItem>
+                );
+              })}
+            </Grid>
+            <Flex justify="flex-end" marginTop="7px">
+            <Button colorScheme="green" onClick={onSet}>
+              Save
+            </Button>
+          </Flex>
           </ModalBody>
         </ModalContent>
       </Modal>
     </>
   );
+  
 });
 
 const LanguageSelectItem: FC<UseRadioProps> = (props) => {
