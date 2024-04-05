@@ -1,6 +1,6 @@
 import { useDisclosure, useBreakpointValue } from "@chakra-ui/react";
 import { Box, Text, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, Grid, Flex, Image } from "@chakra-ui/react";
-import { RadioGroup, useRadio, useRadioGroup } from "@chakra-ui/radio";
+import { RadioGroup, useRadio, useRadioGroup, UseRadioProps } from "@chakra-ui/radio"; // Import UseRadioProps
 import { VisuallyHidden } from "@chakra-ui/visually-hidden";
 import { useRouter } from "next/router";
 import { FC, forwardRef, useCallback, useImperativeHandle, useState } from "react";
@@ -110,7 +110,7 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
   );
 });
 
-const LanguageSelectItem: FC<{ onClick: () => void; isActive: boolean; isDisabled: boolean; flagSize: number }> = ({
+const LanguageSelectItem: FC<{ onClick: () => void; isActive: boolean; isDisabled: boolean; flagSize: number } & UseRadioProps> = ({ // Add UseRadioProps to the component props
   onClick,
   isActive,
   isDisabled,
