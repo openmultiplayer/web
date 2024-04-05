@@ -67,7 +67,6 @@ const NavMenu: FC<Props> = ({ items, route }) => {
               width="15"
               height="15"
               alt="Language"
-              position="relative"
             />
           </IconButton>
 
