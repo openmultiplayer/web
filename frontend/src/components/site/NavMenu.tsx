@@ -82,7 +82,6 @@ const NavMenu: FC<Props> = ({ items, route }) => {
           size="sm"
           display={ON_MOBILE}
           onClick={handleImageClick}
-          bg="transparent"
         >
           <img
             src={`/images/assets/${locale}.svg`}
