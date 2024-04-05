@@ -82,7 +82,7 @@ const NavMenu: FC<Props> = ({ items, route }) => {
           cursor="pointer"
           size="sm"
           display={ON_MOBILE}
-          aria-label="Change Language" // Aria-label eklendi
+          aria-label="Change Language"
           onClick={handleImageClick}
         >
           <img
