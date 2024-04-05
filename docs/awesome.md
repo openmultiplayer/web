@@ -57,6 +57,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[eSelection](https://github.com/TommyB123/eSelection)** - Adds the ability to create dynamic model selection menus in your SA-MP gamemodes.
 - **[mSelection](https://github.com/alextwothousand/mSelection)** - Same as eSelection, but different style.
 - **[RGB-Textdraw](https://github.com/adib-yg/SAMP-RGB-Textdraw)** - Adds RGB to textdraw.
+- **[LangPlus](https://github.com/mysy00/LangPlus)** - Multi-language library for open.mp servers.
 
 ## Command Processors
 
