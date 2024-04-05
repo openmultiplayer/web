@@ -70,8 +70,9 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
   }
 
   const getFlagImage = (locale) => {
+    if (locale === "pt-BR") locale = "pt-br";
     return `/images/assets/${locale}.svg`;
-  };
+};
 
   return (
     <>
