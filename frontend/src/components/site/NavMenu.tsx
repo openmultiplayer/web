@@ -70,7 +70,7 @@ const NavMenu: FC<Props> = ({ items, route }) => {
             />
           </IconButton>
 
-          <LanguageSelect ref={languageRef} />
+          <LanguageSelect title=" " ref={languageRef} />
         </Flex>
 
         <IconButton cursor="pointer" display={ON_MOBILE} size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
