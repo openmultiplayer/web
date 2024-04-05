@@ -1,7 +1,6 @@
 import { useDisclosure, useBreakpointValue } from "@chakra-ui/react";
-import { Box, Text, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, Grid, Flex, Image } from "@chakra-ui/react";
-import { RadioGroup, useRadio, useRadioGroup, UseRadioProps } from "@chakra-ui/radio"; // Import UseRadioProps
-import { VisuallyHidden } from "@chakra-ui/visually-hidden";
+import { Box, Text, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, Flex, Image, Grid } from "@chakra-ui/react";
+import { RadioGroup, useRadio, useRadioGroup, UseRadioProps } from "@chakra-ui/radio";
 import { useRouter } from "next/router";
 import { FC, forwardRef, useCallback, useImperativeHandle, useState } from "react";
 import getLanguageName from "src/utils/getLanguageName";
@@ -26,6 +25,7 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
 
   const modalSize = useBreakpointValue({ base: "full", md: "5xl" });
   const flagSize = useBreakpointValue({ base: 6, md: 10 });
+  const isMobile = useBreakpointValue({ base: true, md: false }); // Check if mobile screen
 
   const { getRadioProps } = useRadioGroup({
     name: "language",
@@ -83,26 +83,50 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
           <ModalHeader>Change language from {getLanguageName(locale)}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Grid templateColumns="repeat(3, 1fr)" templateRows="repeat(3, 1fr)" gap={2}>
-              {locales.map((value: string, index: number) => {
-                const radio = getRadioProps({ value });
-                return (
-                  <LanguageSelectItem
-                    key={value}
-                    {...radio}
-                    onClick={() => handleButtonClick(value, index)}
-                    isActive={index === clickedIndex}
-                    isDisabled={isButtonDisabled}
-                    flagSize={flagSize}
-                  >
-                    <Flex align="center" justifyContent="space-between">
-                      <span>{getLanguageName(value)}</span>
-                      <Image src={getFlagImage(value)} alt="Flag" maxWidth={flagSize} maxHeight={flagSize} />
-                    </Flex>
-                  </LanguageSelectItem>
-                );
-              })}
-            </Grid>
+            {/* Conditionally apply flexbox layout for mobile screens */}
+            {isMobile ? (
+              <Grid templateColumns="repeat(auto-fit, minmax(100px, 1fr))" templateRows="repeat(auto-fit, minmax(1, 1))" gap={2}>
+                {locales.map((value: string, index: number) => {
+                  const radio = getRadioProps({ value });
+                  return (
+                    <LanguageSelectItem
+                      key={value}
+                      {...radio}
+                      onClick={() => handleButtonClick(value, index)}
+                      isActive={index === clickedIndex}
+                      isDisabled={isButtonDisabled}
+                      flagSize={flagSize}
+                    >
+                      <Flex direction="column" align="center">
+                        <Image src={getFlagImage(value)} alt="Flag" maxWidth="25%" maxHeight="25%" objectFit="cover" />
+                        <span>{getLanguageName(value)}</span>
+                      </Flex>
+                    </LanguageSelectItem>
+                  );
+                })}
+              </Grid>
+            ) : (
+              <Grid templateColumns="repeat(3, 1fr)" templateRows="repeat(3, 1fr)" gap={2}>
+                {locales.map((value: string, index: number) => {
+                  const radio = getRadioProps({ value });
+                  return (
+                    <LanguageSelectItem
+                      key={value}
+                      {...radio}
+                      onClick={() => handleButtonClick(value, index)}
+                      isActive={index === clickedIndex}
+                      isDisabled={isButtonDisabled}
+                      flagSize={flagSize}
+                    >
+                      <Flex align="center" justifyContent="space-between">
+                        <span>{getLanguageName(value)}</span>
+                        <Image src={getFlagImage(value)} alt="Flag" maxWidth={flagSize} maxHeight={flagSize} />
+                      </Flex>
+                    </LanguageSelectItem>
+                  );
+                })}
+              </Grid>
+            )}
           </ModalBody>
         </ModalContent>
       </Modal>
@@ -110,7 +134,7 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
   );
 });
 
-const LanguageSelectItem: FC<{ onClick: () => void; isActive: boolean; isDisabled: boolean; flagSize: number } & UseRadioProps> = ({ // Add UseRadioProps to the component props
+const LanguageSelectItem: FC<{ onClick: () => void; isActive: boolean; isDisabled: boolean; flagSize: number } & UseRadioProps> = ({
   onClick,
   isActive,
   isDisabled,
