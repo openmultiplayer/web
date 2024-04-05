@@ -1,13 +1,10 @@
-import { useDisclosure } from "@chakra-ui/hooks";
-import { Box, Text, useColorMode } from "@chakra-ui/react";
-import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay } from "@chakra-ui/modal";
-import { RadioGroup, useRadio, useRadioGroup, UseRadioProps } from "@chakra-ui/radio";
+import { useDisclosure, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Text, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, Grid, Flex, Image } from "@chakra-ui/react";
+import { RadioGroup, useRadio, useRadioGroup } from "@chakra-ui/radio";
 import { VisuallyHidden } from "@chakra-ui/visually-hidden";
 import { useRouter } from "next/router";
 import { FC, forwardRef, useCallback, useImperativeHandle, useState } from "react";
 import getLanguageName from "src/utils/getLanguageName";
-
-import { Flex, Image, Grid } from "@chakra-ui/react";
 
 interface Props {
   title: string;
@@ -26,6 +23,9 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
       onOpen();
     },
   }));
+
+  const modalSize = useBreakpointValue({ base: "full", md: "5xl" });
+  const flagSize = useBreakpointValue({ base: 6, md: 10 });
 
   const { getRadioProps } = useRadioGroup({
     name: "language",
@@ -77,7 +77,7 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
     <>
       <span>{title}</span>
 
-      <Modal isOpen={isOpen} onClose={onClose} size="5xl">
+      <Modal isOpen={isOpen} onClose={onClose} size={modalSize}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Change language from {getLanguageName(locale)}</ModalHeader>
@@ -93,10 +93,11 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
                     onClick={() => handleButtonClick(value, index)}
                     isActive={index === clickedIndex}
                     isDisabled={isButtonDisabled}
+                    flagSize={flagSize}
                   >
                     <Flex align="center" justifyContent="space-between">
                       <span>{getLanguageName(value)}</span>
-                      <Image src={getFlagImage(value)} alt="Flag" width={10} height={10} />
+                      <Image src={getFlagImage(value)} alt="Flag" maxWidth={flagSize} maxHeight={flagSize} />
                     </Flex>
                   </LanguageSelectItem>
                 );
@@ -109,18 +110,17 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
   );
 });
 
-const LanguageSelectItem: FC<UseRadioProps & { onClick: () => void; isActive: boolean; isDisabled: boolean }> = ({
+const LanguageSelectItem: FC<{ onClick: () => void; isActive: boolean; isDisabled: boolean; flagSize: number }> = ({
   onClick,
   isActive,
   isDisabled,
+  flagSize,
   ...props
 }) => {
   const { getInputProps, getCheckboxProps } = useRadio(props);
 
   const input = getInputProps();
   const checkbox = getCheckboxProps();
-
-  const { colorMode } = useColorMode();
 
   return (
     <Box as="label" onClick={onClick}>
@@ -132,7 +132,7 @@ const LanguageSelectItem: FC<UseRadioProps & { onClick: () => void; isActive: bo
         borderRadius={4}
         px={4}
         py={2}
-        backgroundColor={isActive ? (colorMode === "dark" ? "purple.600" : "purple.300") : ""}
+        backgroundColor={isActive ? "purple.300" : ""}
       >
         {props.children}
       </Box>
