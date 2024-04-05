@@ -59,6 +59,7 @@ const NavMenu: FC<Props> = ({ items, route }) => {
           <IconButton
             cursor="pointer"
             size="sm"
+            aria-label="Change Language"
             onClick={handleImageClick}
           >
             <img
@@ -81,6 +82,7 @@ const NavMenu: FC<Props> = ({ items, route }) => {
           cursor="pointer"
           size="sm"
           display={ON_MOBILE}
+          aria-label="Change Language"
           onClick={handleImageClick}
         >
           <img
