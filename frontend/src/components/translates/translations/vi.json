@@ -20,7 +20,7 @@
         "open.mp is released!": "open.mp is released!",
         "Updates & Features" : "Updates & Features",
         "What is improved and new?" : "What is improved and new?",
-        "Documentation": "Documentatio",
+        "Documentation": "Documentation",
         "A multiplayer mod for Grand Theft Auto: San Andreas that is fully backwards compatible with San Andreas Multiplayer.": "A multiplayer mod for Grand Theft Auto: San Andreas that is <span style='font-weight: 800'>fully backwards compatible</span> with <span style='font-weight: 800'>San Andreas Multiplayer</span>."
     },
 
@@ -55,14 +55,14 @@
         "Search by IP or Name": "Search by IP or Name",
         "Add server": "Add server",
         "IP or Domain": "IP or Domain",
-        "IP/Domain": "AIP/Domain",
+        "IP/Domain": "IP/Domain",
         "Add": "Add",
         "IP must be in format ip:port": "IP must be in format <strong>ip:port</strong>",
         "Show empty servers": "Show empty servers",
         "Show only open.mp servers": "Show only open.mp servers",
         "Show only partners": "Show only partners",
         "servers-stats": "{totalPlayers} players on {serverCount} servers with an average of {averagePlayers} players per server.",
-        "server-sumbitted": "serverCodeHn} is added to our pending list. If it's not available after maximum 48 hours, you can contact us on Discord!",
+        "server-sumbitted": "{serverCodeHn} is added to our pending list. If it's not available after maximum 48 hours, you can contact us on Discord!",
         "server-submissionfail": "Status: {responseStatusText} : {responseError}",
         "Server Submitted!": "Server Submitted!",
         "Submission failed!": "Submission failed!",
@@ -85,7 +85,7 @@
     },
 
     "Partners": {
-        "Partners (BETA TESTERS)" : "Partnerler (BETA TESTERLER)",
+        "Partners (BETA TESTERS)" : "Partners (BETA TESTERS)",
         "Servers helping us in beta testing by running open.mp and reporting bugs and issues are listed here. You can do the same by running your server using open.mp and help us with finding bugs and issues; Then tell us about your servers on our discord so we can list them here." : "Servers helping us in beta testing by running open.mp and reporting bugs and issues are listed here. You can do the same by running your server using open.mp and help us with finding bugs and issues; Then tell us about your servers on our <a href='https://discord.gg/samp'>discord</a> so we can list them here.",
         "Those who are contributing to our community will have permanent perks in future when we are releasing for public use and when our server listing is ready." : "Those who are contributing to our community will have permanent perks in future when we are releasing for public use and when our server listing is ready.",
         "Note: Partnership program is temporarily closed as we promised. Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested, you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet." : "Note: Partnership program is temporarily closed as we promised. Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested, you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet."

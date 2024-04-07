@@ -84,7 +84,7 @@
         "Show only open.mp servers": "Sadece open.mp sunucularını göster",
         "Show only partners": "Sadece partnerleri göster",
         "servers-stats": "sunucu başına ortalama {averagePlayers} oyuncu ile {serverCount} sunucuda {totalPlayers} oyuncu.",
-        "server-sumbitted": "{serverCodeHn} şu anda bekleme listemize eklendi. Eğer maksimum 48 saat sonra kullanılabilir hale gelmezse, Discord üzerinden bizimle iletişime geçebilirsiniz!",
+        "server-sumbitted": "{{serverCodeHn} şu anda bekleme listemize eklendi. Eğer maksimum 48 saat sonra kullanılabilir hale gelmezse, Discord üzerinden bizimle iletişime geçebilirsiniz!",
         "server-submissionfail": "Açıklama: {responseStatusText} : {responseError}",
         "Server Submitted!": "Sunucu alındı!",
         "Submission failed!": "Sunucu alınamadı!",
@@ -107,7 +107,7 @@
     },
 
     "Partners": {
-        "Partners (BETA TESTERS)" : "Partnerler (BETA TESTERLER)",
+        "Partners (BETA TESTERS)" : "Partnerler (BETA TESTERLARI)",
         "Servers helping us in beta testing by running open.mp and reporting bugs and issues are listed here. You can do the same by running your server using open.mp and help us with finding bugs and issues; Then tell us about your servers on our discord so we can list them here." : "open.mp beta testinde bize yardımcı olan ve hataları bildiren sunucular burada listelenmektedir. Sizde kendi sunucunuzu kullanarak bize yardımcı olabilir ve hataları bulma konusunda yardımcı olabilirsiniz; Sunucularınızı <a href='https://discord.gg/samp'>discord</a>'umuzda bize bildirin, böylece burada listeleriz.",
         "Those who are contributing to our community will have permanent perks in future when we are releasing for public use and when our server listing is ready." : "Topluluğumuza katkıda bulunanlar, gelecekte hizmetimizi halka açık hale getirdiğimizde ve sunucu listemiz hazır olduğunda kalıcı avantajlara sahip olacaklar.",
         "Note: Partnership program is temporarily closed as we promised. Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested, you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet." : "Not: Partner programı, söz verdiğimiz gibi geçici olarak kapalıdır. Bir slot ayıran sunucular hala katılabilir, ancak şu anda yeni başvuruları kabul etmiyoruz. Hala ilgileniyorsanız, sorularınızı discord kanalımızda sorabilirsiniz, ancak listeye yeni giriş yollarıyla ilgili bir soruysa, henüz bir planımız yok."
