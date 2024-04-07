@@ -83,7 +83,7 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
       <Modal isOpen={isOpen} onClose={onClose} size={modalSize}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>{translateText(locale, "General", `Change language from ${getLanguageName(locale)}`)}</ModalHeader>
+          <ModalHeader>{translateText(locale, "General", `Change language from`)}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             {/* Conditionally apply flexbox layout for mobile screens */}

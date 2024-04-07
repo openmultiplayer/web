@@ -55,7 +55,7 @@
         "Search by IP or Name": "Search by IP or Name",
         "Add server": "Add server",
         "IP or Domain": "IP or Domain",
-        "IP/Domain": "IP/Domain",
+        "IP/Domain": "AIP/Domain",
         "Add": "Add",
         "IP must be in format ip:port": "IP must be in format <strong>ip:port</strong>",
         "Show empty servers": "Show empty servers",
@@ -125,7 +125,7 @@
         "Recently": "Recently",
 
         "search-results": "{total} search results",
-        "Change language from English": "Change language from English",
+        "Change language from": "Change language from বাংলা",
 
         "404 - Page Not Found" : "404 - Page Not Found"
     }
