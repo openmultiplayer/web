@@ -1,21 +1,27 @@
---- 
+---
 title: AllowPlayerWeapons
-::warning
-
-Fungsi ini ditambahkan pada omp v1.1.0.2612 dan tidak akan berfungsi pada versi sebelumnya!
-:::
-description: Mengaktifkan/Menonaktifkan Senjata Untuk Pemain
+description: Memperbolehkan/Melarang Senjata Untuk Player
+tags:
 ---
 
-|   Nama     |   Deskripsi                                   |
-|------------------------------------------------------------|
-|  Playerid  | ID Pemain Untuk Mengizinkan Senjata           |
-|------------------------------------------------------------|
-| bool:allow | True untuk Mengizinkan & False Untuk Melarang |
+:::warning
+
+Fungsi ini ditambahkan pada omp v1.1.0.2612 dan tidak akan berfungsi pada versi sebelumnya!.
+
+:::
+
+## Deskripsi
+
+Memperbolehkan/Melarang Senjata Untuk Player
+
+| Nama     | Deskripsi                              |
+| -------- | -------------------------------------- |
+| playerid | ID player untuk mengizinkan Senjata   |
+| bool:allow| True untuk mengizinkan False untuk Tidak Mengizinkan. |
 
 ## Returns
 
-Fungsi Ini Selalu Mengembalikan Nilai True
+Fungsi ini selalu mengembalikan nilai true
 
 ## Contoh
 
@@ -29,4 +35,4 @@ public OnPlayerConnect(playerid)
 
 ## Fungsi Terkait
 
-- [ArePlayerWeaponsAllowed](ArePlayerWeaponsAllowed): Apakah Boleh Player Menggunakan Senjata?
+- [ArePlayerWeaponsAllowed](ArePlayerWeaponsAllowed): Apakah bisa player menggunakan Senjata
