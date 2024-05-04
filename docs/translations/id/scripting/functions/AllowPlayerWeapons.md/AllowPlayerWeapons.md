@@ -1,7 +1,7 @@
 ---
 title: AllowPlayerWeapons
 description: Memperbolehkan/Melarang Senjata Untuk Player
-tags:
+tags: ["player"]
 ---
 
 <VersionWarnID version='omp v1.1.0.2612' />
