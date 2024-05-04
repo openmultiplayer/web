@@ -4,7 +4,7 @@ description: Memperbolehkan/Melarang Senjata Untuk Player
 tags:
 ---
 
-:::warning
+<VersionWarnID version='omp v1.1.0.2612' />
 
 Fungsi ini ditambahkan pada omp v1.1.0.2612 dan tidak akan berfungsi pada versi sebelumnya!.
 
