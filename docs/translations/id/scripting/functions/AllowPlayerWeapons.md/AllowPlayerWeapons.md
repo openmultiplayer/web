@@ -5,7 +5,6 @@ tags:
 ---
 
 <VersionWarnID version='omp v1.1.0.2612' />
-
 :::
 
 ## Deskripsi
