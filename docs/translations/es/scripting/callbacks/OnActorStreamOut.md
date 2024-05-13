@@ -36,3 +36,5 @@ public OnActorStreamOut(actorid, forplayerid)
 <TipNPCCallbacksES />
 
 ## Funciones Relacionadas
+Los siguientes callbacks puede ser útiles, ya que están relacionados de alguna forma u otra con OnActorStreamOut:
+OnActorStreamIn: Este callback es llamado cuando un actor se transmite (se vuelve visible) por el cliente de un jugador.
