@@ -48,5 +48,5 @@ Este callback sólo se llama cuando está en un filterscript.
 :::
 
 ## Funciones Relacionadas
-- La siguiente función puede ser útil, ya que está relacionada de alguna forma u otra con OnClientCheckResponse:
+La siguiente función puede ser útil, ya que está relacionada de alguna forma u otra con OnClientCheckResponse:
 - [SendClientCheck](../functions/SendClientCheck): Realiza un chequeo de memoria en el cliente.
