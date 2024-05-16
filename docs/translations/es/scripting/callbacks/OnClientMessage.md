@@ -31,4 +31,4 @@ public OnClientMessage(color, text[])
 
 ## Funciones Relacionadas
 Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnClientMessage:
-- OnPlayerText: Este callback es llamado cada vez que cualquier persona escriba algo en el chat. Esto incluye cualquier jugador, NPC o el mismo NPC en sí.
+- [OnPlayerText](OnPlayerText): Este callback es llamado cada vez que cualquier persona escriba algo en el chat. Esto incluye cualquier jugador, NPC o el mismo NPC en sí.
