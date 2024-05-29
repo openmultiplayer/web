@@ -1,60 +1,60 @@
 ---
-title: SendRconCommand
-description: Sends an RCON (Remote Console) command.
-tags: ["administration"]
+título: SendRconCommand
+descrição: Envia um comando RCON (console remoto).
+tags: ["administrador"]
 ---
 
-## Description
+## Descrição
 
 Sends an RCON (Remote Console) command.
 
-| Name             | Description                                |
+| Nome             | Descrição                                |
 | ---------------- | ------------------------------------------ |
-| const format[]   | The RCON command to be executed.           |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
+| const format[]   | O comando RCON a ser executado.           |
+| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag. |
 
-## Returns
+## Retorno
 
-This function always returns 1.
+Esta função sempre retorna 1.
 
-## Examples
+## Exemplos
 
 ```c
 SendRconCommand("gmx");
-// This is a scripted version of typing "/rcon gmx" in-game.
-// GMX restarts the game mode.
+// Esta é uma versão com script de digitação "/rcon gmx" no jogo.
+// GMX reinicia o modo de jogo.
 
-// Example using format()
+// Exemplo usando format()
 new szMapName[] = "Los Santos";
 new szCmd[64];
 format(szCmd, sizeof(szCmd), "mapname %s", szMapName);
 SendRconCommand(szCmd);
 
-// PRO TIP: You don't need `format` in open.mp
+// DICA PRO: Você não precisa de `format` em open.mp
 SendRconCommand("game.map %s", szMapName);
 ```
 
 ## Notes
 
-:::warning
+:::aviso
 
-- Does not support login, due to the lack of a 'playerid' parameter.
-- 'password 0' will remove the server's password if one is set.
-- This function will result in [OnRconCommand](../callbacks/OnRconCommand) being called.
+- Não suporta login, devido à falta do parâmetro 'playerid'.
+- 'password 0' removerá a senha do servidor se alguma estiver definida.
+- Esta função resultará em uma chamada na callback [OnRconCommand](../callbacks/OnRconCommand).
 
 :::
 
 :::info
 
-See [config.json](../../server/config.json)
+Veja [config.json](../../server/config.json)
 
 :::
 
-## Related Functions
+## Funções Relacionadas
 
-- [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.
+- [IsPlayerAdmin](IsPlayerAdmin): Verifica se um jogador está logado na RCON.
 
-## Related Callbacks
+## Callbacks Relacionadas
 
-- [OnRconCommand](../callbacks/OnRconCommand): Called when an RCON command is sent.
-- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.
+- [OnRconCommand](../callbacks/OnRconCommand): Chamado quando um comando RCON é enviado.
+- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): Chamado quando é feita uma tentativa de login no RCON.
