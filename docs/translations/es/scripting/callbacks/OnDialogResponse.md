@@ -158,5 +158,8 @@ El diálogo de un jugador no se oculta cuando el gamemode se reinicia, causando 
 :::
 
 ## Funciones Relacionadas
-
-- [ShowPlayerDialog](../functions/ShowPlayerDialog): Mostrar un diálogo a un jugador.
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnDialogResponse:
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Muestra un diálogo a un jugador.
+- [GetPlayerDialogID](../functions/GetPlayerDialogID): Obtiene la id del diálogo el cual se le está mostrando al jugador en ese momento.
+- [GetPlayerDialogData](../functions/GetPlayerDialogData): Obtiene la información del diálogo el cual se le está mostrando al jugador en ese momento.
+- [HidePlayerDialog](../functions/HidePlayerDialog): Oculta el diálogo el cual se le está mostrando al jugador en ese momento.
