@@ -48,5 +48,5 @@ Los siguientes callbacks pueden ser útiles, ya que están relacionados de algun
 
 ## Funciones Relacionadas
 Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnEnterExitModShop:
-- [IsPlayerInModShop](../functions/IsPlayerInModShop): Verifica que un jugador este en una tienda de modificaciones.
+- [IsPlayerInModShop](../functions/IsPlayerInModShop): Verifica que un jugador esté en una tienda de modificaciones.
 - [AddVehicleComponent](../functions/AddVehicleComponent): Añade un componente a un vehículo.
