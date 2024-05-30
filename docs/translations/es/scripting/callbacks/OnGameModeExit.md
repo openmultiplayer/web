@@ -26,6 +26,14 @@ Esta función también puede ser usada en un filterscript para detectar si el ga
 
 :::
 
-## Funciones Relacionadas
+## Callbacks Relacionados
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnGameModeExit:
 
-- [GameModeExit](../functions/GameModeExit): Salir del gamemode actual.
+- [OnGameModeInit](../callbacks/OnGameModeInit): Este callback es llamado cuando un modo de juego (el server) inicia.
+- [OnFilterScriptInit](../callbacks/OnFilterScriptInit): Este callback es llamado cuando un filterscript inicia.
+- [OnFilterSciptExit](../callbacks/OnFilterScriptExit): Este callback es llamado cuando un filterscript finaliza.
+
+- ## Funciones Relacionadas
+La siguiente función puede ser útil, ya que está relacionada de alguna forma u otra con OnGameModeExit:
+
+- [GameModeExit](../callbacks/GameModeExit): Finaliza el modo de juego actual.
