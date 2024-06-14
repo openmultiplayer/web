@@ -221,10 +221,10 @@ omp-server --default-config
 
 ## Banners
 
-| Key   | Type   | Default value | Read-only | Rule | Effect                                                                     |
-|-------|--------|---------------|-----------|------|----------------------------------------------------------------------------|
-| light | string |               | ❌         | ❌    | Your server's light banner url address that appears in the server browser. |
-| dark  | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the server browser.  |
+| Key           | Type   | Default value | Read-only | Rule | Effect                                                                     |
+|---------------|--------|---------------|-----------|------|----------------------------------------------------------------------------|
+| banners.light | string |               | ❌         | ❌    | Your server's light banner url address that appears in the server browser. |
+| banners.dark  | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the server browser.  |
 
 ![](https://i.ibb.co/86T8wYG/image.png)
 
