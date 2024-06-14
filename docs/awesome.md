@@ -140,7 +140,6 @@ Now you can make your scripts in languages other than pawn without any plugin us
 
 ## Game Modes
 
-- **[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)** - Lists of gamemodes that are compatible with open.mp.
 - **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Based PvP Survival Gamemode.
 - **[gta-open](https://github.com/PatrickGTR/gta-open)** - A Cops and robbers mode based in Los Santos.
 - **[SF-CnR](https://github.com/zeelorenc/sf-cnr)** - San Fierro Cops And Robbers Gamemode for SA-MP.
