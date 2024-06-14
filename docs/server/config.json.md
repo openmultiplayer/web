@@ -184,11 +184,11 @@ omp-server --default-config
 
 ## Pawn
 
-| Key            | Type         | Default value | Read-only | Rule | Effect                                                                                                                                                                                                      |
-|----------------|--------------|---------------|-----------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| legacy_plugins | list, string | []            | ✅         | ❌    | The .dll or .so file in the /plugins folder, the server should use to run as a plugin. Plugins are scripts which are designed to enhance gamemodes and filterscripts.<br />Example: `["mysql", "streamer"]` |
-| main_scripts   | list, string | ["test 1"]    | ✅         | ❌    | The .amx file in the /gamemodes folder, the server should use to run as a gamemode.                                                                                                                         |
-| side_scripts   | list, string | []            | ✅         | ❌    | The .amx file in the /filterscripts folder, the server should use to run as a filterscript. Filterscripts are scripts that run in the background of your gamemode. They are there to add extras to the server without editing the gamemode. It is very useful if you want to carry a specific property to more than one gamemode.<br />Example: `["filterscripts/Race_System"]` |
+| Key                | Type         | Default value | Read-only | Rule | Effect                                                                                                                                                                                                      |
+|--------------------|--------------|---------------|-----------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| pawn.legacy_plugins | list, string | []            | ✅         | ❌    | The .dll or .so file in the /plugins folder, the server should use to run as a plugin. Plugins are scripts which are designed to enhance gamemodes and filterscripts.<br />Example: `["mysql", "streamer"]` |
+| pawn.main_scripts   | list, string | ["test 1"]    | ✅         | ❌    | The .amx file in the /gamemodes folder, the server should use to run as a gamemode.                                                                                                                         |
+| pawn.side_scripts   | list, string | []            | ✅         | ❌    | The .amx file in the /filterscripts folder, the server should use to run as a filterscript. Filterscripts are scripts that run in the background of your gamemode. They are there to add extras to the server without editing the gamemode. It is very useful if you want to carry a specific property to more than one gamemode.<br />Example: `["filterscripts/Race_System"]` |
 
 ## RCON
 
