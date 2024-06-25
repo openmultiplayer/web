@@ -9,8 +9,8 @@ description: Useful commands for controlling a server.
 
 - Open the directory you installed the server to (eg: /Rockstar Games/GTA San Andreas/server)
 - Take the downloaded/compiled .amx file and place it in the gamemodes folder where you installed the server
-- Use RCON to change the mode as described above (2.1)
-- Alternatively you can add the new mode to a rotation, also described above (2.3)
+- Use RCON to change the mode.
+- Alternatively you can add the new mode to a rotation.
 
 ### Using Filterscripts
 
@@ -185,7 +185,7 @@ These are the functions that you as admin can use:
 | `/rcon playertimeout [limit m/s]` | Change the time in milliseconds until a player timeouts when not sending any packets. (default 1000) |
 | `/rcon language [language]`       | Change the server language (_example: /rcon language English_). Shown in server browser.             |
 
-The above four limits/counts are just made to avoid several tools which can attack any SA-MP server by freezing it or crashing. So, simply, just set them according to your server. The default values are default, if you see any wrong kicks, just increase the values as soon as possible so that the innocent players won't get kicked by it. [Read more here](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47).
+The above four limits/counts are just made to avoid several tools which can attack any SA-MP server by freezing it or crashing. So, simply, just set them according to your server. The default values are default, if you see any wrong kicks, just increase the values as soon as possible so that the innocent players won't get kicked by it.
 
 ### Related Callbacks and Functions
 
