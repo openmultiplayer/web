@@ -154,6 +154,15 @@ tags: []
 | 4     | TEXT_DRAW_FONT_SPRITE          |
 | 5     | TEXT_DRAW_FONT_PREVIEW         |
 
+## TextDraw Alignment
+
+| Value | Constant                       |
+| ----- | ------------------------------ |
+| 1     | TEXT_DRAW_ALIGN_LEFT           |
+| 2     | TEXT_DRAW_ALIGN_CENTRE         |
+| 2     | TEXT_DRAW_ALIGN_CENTER         |
+| 3     | TEXT_DRAW_ALIGN_RIGHT          |
+
 ## SVar Enumeration
 
 | Value | Constant                       |
