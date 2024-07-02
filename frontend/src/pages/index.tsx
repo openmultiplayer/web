@@ -29,6 +29,9 @@ import React from "react";
 import Roads from "src/components/icons/Roads";
 import heroStyles from "../styles/Hero.module.css";
 
+import { useRouter } from 'next/router';
+const translateText = require('src/components/translates/Translate');
+
 const DownloadButton = (props: { link: string; title: string; tooltip: string}) => {
   return (
     <Link href={props.link} _hover={{ textDecoration: "none" }} isExternal>
@@ -55,6 +58,10 @@ const DownloadButton = (props: { link: string; title: string; tooltip: string}) 
 };
 
 const DocumentationButton = () => {
+
+  const router = useRouter();
+  const locale = router.locale || "en";
+
   return (
     <NextLink href="/docs" passHref>
       <Link _hover={{ textDecoration: "none" }}>
@@ -74,7 +81,7 @@ const DocumentationButton = () => {
             transition: "outline 0.3s",
           }}
         >
-          Documentation
+          {translateText(locale, "Index", "Documentation")}
         </Button>
       </Link>
     </NextLink>
@@ -84,50 +91,50 @@ const DocumentationButton = () => {
 const Home = () => {
   const { colorMode } = useColorMode();
 
+  const router = useRouter();
+  const locale = router.locale || "en";
+
   const features = [
     {
-      heading: "Fully backwards compatible with existing scripts and clients",
-      bodyText:
-        "Got an old AMX lying about?  Load it up on the open.mp server straight out of the box and join your friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
+      heading: translateText(locale, "Index", "Fully backwards compatible with existing scripts and clients"),
+      bodyText: translateText(locale, "Index", "Got an old AMX lying about?  Load it up on the open.mp server straight out of the box and join your friends playing on the SA:MP client.  Then when you want to enhance your code try our..."),
       buttonLink: "/docs",
-      buttonText: "Getting Started",
+      buttonText: translateText(locale, "Index", "Getting Started"),
       img: "/images/assets/f1.png",
       imgAlt: "open.mp logo",
     },
     {
-      heading: "New and improved scripting system",
-      bodyText:
-        "We've stuck with pawn, but with a new compiler engineered to make your code more robust, and more functions to manipulate the server and client.  If that's still not enough there's an...",
-      buttonLink:
-        "https://github.com/openmultiplayer/omp-stdlib/#openmp-includes",
-      buttonText: "Learn about the improvements",
+      heading: translateText(locale, "Index", "New and improved scripting system"),
+      bodyText:translateText(locale, "Index", "We've stuck with pawn, but with a new compiler engineered to make your code more robust, and more functions to manipulate the server and client.  If that's still not enough there's an..."),
+      buttonLink:"https://github.com/openmultiplayer/omp-stdlib/#openmp-includes",
+      buttonText: translateText(locale, "Index", "Learn about the improvements"),
       img: "/images/assets/f5.png",
       imgAlt: "pawn logo",
     },
     {
-      heading: "Extensible C++ API",
+      heading: translateText(locale, "Index", "Extensible C++ API"),
       bodyText:
-        "Get access to all the server features available in pawn, plus the universe of C++ libraries and frameworks.  Once you've mastered this why not help improve the server via our...",
+      translateText(locale, "Index", "Get access to all the server features available in pawn, plus the universe of C++ libraries and frameworks.  Once you've mastered this why not help improve the server via our..."),
       buttonLink: "/docs",
-      buttonText: "Getting Started",
+      buttonText: translateText(locale, "Index", "Getting Started"),
       img: "/images/assets/f4.png",
       imgAlt: "C++ logo",
     },
     {
-      heading: "Community driven development",
+      heading: translateText(locale, "Index", "Community driven development"),
       bodyText:
-        "The server is fully open source, and we welcome all contributions big or small.  Help write the next version, or just post about any problems you find; despite our attempts to have...",
+      translateText(locale, "Index", "The server is fully open source, and we welcome all contributions big or small.  Help write the next version, or just post about any problems you find; despite our attempts to have..."),
       buttonLink: "https://github.com/openmultiplayer/open.mp",
-      buttonText: "Visit the GitHub repo",
+      buttonText: translateText(locale, "Index", "Visit the GitHub repo"),
       img: "/images/assets/f2.png",
       imgAlt: "Github stats illustration",
     },
     {
-      heading: "Age old SAMP bugs fixed",
+      heading: translateText(locale, "Index", "Age old SAMP bugs fixed"),
       bodyText:
-        "Many SA:MP bugs, well known and obscure, have been fixed.  No more hacky work-arounds; no more community bug-fix projects; you have all the proper tools in your hands now.",
+      translateText(locale, "Index", "Many SA:MP bugs, well known and obscure, have been fixed.  No more hacky work-arounds; no more community bug-fix projects; you have all the proper tools in your hands now."),
       buttonLink: "/blog",
-      buttonText: "Read the blog post",
+      buttonText: translateText(locale, "Index", "Read the blog post"),
       img: "/images/assets/f3.png",
       imgAlt: "pawn code screen",
     },
@@ -174,6 +181,7 @@ const Home = () => {
   ];
 
   return (
+    
     <Box fontFamily="Manrope, sans-serif">
       <Head>
         <title>open.mp | Open Multiplayer</title>
@@ -217,25 +225,22 @@ const Home = () => {
                 fontWeight="500"
                 textAlign={{ base: "center", md: "left" }}
                 maxW="30em"
-              >
-                A multiplayer mod for Grand Theft Auto: San Andreas that is{" "}
-                <span style={{ fontWeight: 800 }}>
-                  fully backwards compatible
-                </span>{" "}
-                with{" "}
-                <span style={{ fontWeight: 800 }}>San Andreas Multiplayer</span>
-                .
-              </Text>
+                dangerouslySetInnerHTML={{ __html: translateText(
+                  locale,
+                  "Index",
+                  "A multiplayer mod for Grand Theft Auto: San Andreas that is <span style='font-weight: 800'>fully backwards compatible</span> with <span style='font-weight: 800'>San Andreas Multiplayer</span>."
+                ) }}
+              />
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <DownloadButton
-                    title={"Download open.mp (server)"}
-                    tooltip="open.mp is released!"
+                    title={translateText(locale, "Index", "Download open.mp (server)")}
+                    tooltip={translateText(locale, "Index", "open.mp is released!")}
                     link={"https://github.com/openmultiplayer/open.mp/releases"}
                   />
                   <DownloadButton
-                    title={"Download open.mp launcher"}
-                    tooltip="Download open.mp launcher"
+                    title={translateText(locale, "Index", "Download open.mp launcher")}
+                    tooltip={translateText(locale, "Index", "Download open.mp launcher")}
                     link={"https://github.com/openmultiplayer/launcher/releases/latest"}
                   />
                   <DocumentationButton />
@@ -294,30 +299,29 @@ const Home = () => {
         </Box>
         <Box align="center" my="4em">
           <Text color={useColorModeValue("#281685", "white")} fontSize="md">
-            Updates & Features
+            {translateText(locale, "Index", "Updates & Features")}
           </Text>
           <Text fontSize="3xl" fontWeight="900" mt="0">
-            What is improved and new?
+          {translateText(locale, "Index", "What is improved and new?")}
           </Text>
           <VStack spacing="6em" my="3em" px="1em">
             {features.map((feature, index) => (
               <Card key={index} {...feature} />
             ))}
-
             <Box maxW="60em">
-              <Heading>Ready to get started?</Heading>
+              <Heading>{translateText(locale, "Index", "Ready to get started?")}</Heading>
               <HStack spacing="1em" my="1.2em" align="top">
                 <Flex flexWrap="wrap" justifyContent="center" gridGap="1em">
                   <DownloadButton
-                    title={"Download open.mp (server)"}
-                    tooltip="open.mp is released!"
+                    title={translateText(locale, "Index", "Download open.mp (server)")}
+                    tooltip={translateText(locale, "Index", "open.mp is released!")}
                     link={
                       "https://github.com/openmultiplayer/open.mp/releases"
                     }
                   />
                   <DownloadButton
-                    title={"Download open.mp launcher"}
-                    tooltip="Download open.mp launcher"
+                    title={translateText(locale, "Index", "Download open.mp launcher")}
+                    tooltip={translateText(locale, "Index", "Download open.mp launcher")}
                     link={
                       "https://github.com/openmultiplayer/launcher/releases/latest"
                     }

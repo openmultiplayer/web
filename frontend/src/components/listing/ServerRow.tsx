@@ -17,23 +17,31 @@ import { useIsAdmin } from "src/auth/hooks";
 import { useDeleteServer } from "src/components/listing/hooks";
 import { Essential } from "src/types/_generated_Server";
 
+const translateText = require('src/components/translates/Translate');
+import { useRouter } from 'next/router';
+
 type CopyBadgeProps = { text: string };
 const CopyBadge: FC<CopyBadgeProps> = ({ text }) => {
   const { onCopy, hasCopied } = useClipboard(text);
+
+  const router = useRouter();
+  const locale = router.locale || 'en';
+
   return (
-    <HStack>
-      <Text fontSize="xl" fontWeight="bold" marginTop="0">
-        {text}
-      </Text>
-      <Button
-        size="xs"
-        onClick={onCopy}
-        style={hasCopied ? { backgroundColor: "#81C784", color: "white" } : {}}
-      >
-        {hasCopied ? "COPIED" : "COPY"}
-      </Button>
-    </HStack>
-  );
+  <HStack>
+    <Text fontSize="xl" fontWeight="bold" marginTop="0">
+      {text}
+    </Text>
+    <Button
+      size="xs"
+      onClick={onCopy}
+      style={hasCopied ? { backgroundColor: "#81C784", color: "white" } : {}}
+    >
+      {hasCopied ? translateText(locale, "Servers", "COPIED") : translateText(locale, "Servers", "COPY")}
+    </Button>
+  </HStack>
+);
+
 };
 
 type ServerRowProps = { server: Essential };
@@ -44,6 +52,9 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
     [deleteServer, server]
   );
   const admin = useIsAdmin();
+
+  const router = useRouter();
+  const locale = router.locale || 'en';
 
   return (
     <Box sx={sx}>
@@ -66,7 +77,7 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
               <Image
                 src="https://assets.open.mp/assets/images/assets/partners.png"
                 alt="partner server"
-                title="Has partnership!"
+                title={translateText(locale, "Servers", "Has partnership!")}
                 maxWidth={7}
                 maxHeight={7}
                 width={7}
@@ -78,7 +89,7 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
               <Image
                 src="https://assets.open.mp/assets/images/assets/logo-light-trans.svg"
                 alt="open.mp server"
-                title="open.mp server"
+                title={translateText(locale, "Servers", "open.mp server")}
                 maxWidth={7}
                 maxHeight={7}
                 width={7}
@@ -114,7 +125,7 @@ const ServerRow: FC<ServerRowProps & ChakraProps> = ({ server, sx }) => {
               >
                 {server.pc}/{server.pm}
               </Text>
-              <Text style={{ marginTop: "0" }}>players</Text>
+              <Text style={{ marginTop: "0" }}>{translateText(locale, "Servers", "players")}</Text>
             </Flex>
 
             <Box display={admin ? "block" : "none"}>

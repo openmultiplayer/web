@@ -1,0 +1,133 @@
+{
+    "Index": {
+        "Getting Started": "Getting started",
+        "Fully backwards compatible with existing scripts and clients": "Fully backwards compatible with existing scripts and clients",
+        "Got an old AMX lying about?  Load it up on the open.mp server straight out of the box and join your friends playing on the SA:MP client.  Then when you want to enhance your code try our...": "Got an old AMX lying about?  Load it up on the open.mp server straight out of the box and join your friends playing on the SA:MP client.  Then when you want to enhance your code try our...",
+        "New and improved scripting system": "New and improved scripting system",
+        "We've stuck with pawn, but with a new compiler engineered to make your code more robust, and more functions to manipulate the server and client.  If that's still not enough there's an...": "We've stuck with pawn, but with a new compiler engineered to make your code more robust, and more functions to manipulate the server and client.  If that's still not enough there's an...",
+        "Extensible C++ API": "Extensible C++ API",
+        "Get access to all the server features available in pawn, plus the universe of C++ libraries and frameworks.  Once you've mastered this why not help improve the server via our...": "Get access to all the server features available in pawn, plus the universe of C++ libraries and frameworks.  Once you've mastered this why not help improve the server via our...",
+        "Community driven development": "Community driven development",
+        "The server is fully open source, and we welcome all contributions big or small.  Help write the next version, or just post about any problems you find; despite our attempts to have...": "The server is fully open source, and we welcome all contributions big or small.  Help write the next version, or just post about any problems you find; despite our attempts to have...",
+        "Age old SAMP bugs fixed": "Age old SAMP bugs fixed",
+        "Many SA:MP bugs, well known and obscure, have been fixed.  No more hacky work-arounds; no more community bug-fix projects; you have all the proper tools in your hands now.": "Many SA:MP bugs, well known and obscure, have been fixed.  No more hacky work-arounds; no more community bug-fix projects; you have all the proper tools in your hands now.",
+        "Learn about the improvements": "Learn about the improvements",
+        "Visit the GitHub repo": "Visit the GitHub repo",
+        "Read the blog post": "Read the blog post",
+        "Download open.mp launcher": "Download open.mp launcher",
+        "Download open.mp (server)": "Download open.mp (server)",
+        "Ready to get started?": "Ready to get started?",
+        "open.mp is released!": "open.mp is released!",
+        "Updates & Features" : "Updates & Features",
+        "What is improved and new?" : "What is improved and new?",
+        "Documentation": "Documentation",
+        "A multiplayer mod for Grand Theft Auto: San Andreas that is fully backwards compatible with San Andreas Multiplayer.": "A multiplayer mod for Grand Theft Auto: San Andreas that is <span style='font-weight: 800'>fully backwards compatible</span> with <span style='font-weight: 800'>San Andreas Multiplayer</span>."
+    },
+
+    "NavBar": {
+        "FAQ": "FAQ",
+        "Home": "Home",
+        "Forums": "Forums",
+        "Servers": "Servers",
+        "Partners": "Partners",
+        "Docs": "Docs"
+    },
+
+    "Footer": {
+        "About us": "About us",
+        "More": "More",
+        "Community": "Community",
+        "A multiplayer mod for Grand Theft Auto: San Andreas that is fully backwards compatible with San Andreas Multiplayer.": "A multiplayer mod for Grand Theft Auto: San Andreas that is <span style='font-weight: 800'>fully backwards compatible</span> with <span style='font-weight: 800'>San Andreas Multiplayer</span>."
+    },
+
+    "Announcements": {
+        "The open.mp launcher is out now and open source!": "The open.mp launcher is out now and open source!",
+        "check out our github repository": "check out our github repository",
+        "Download it from here.": "Download it from here.",
+        "open.mp released its own launcher to browse servers using a reliable internet list and join your favorite servers!": "open.mp released its own launcher to browse servers using a reliable internet list and join your favorite servers!"
+    },
+
+    "Servers": {
+        "Servers": "Servers",
+        "Relevance": "Relevance",
+        "Players": "Players ",
+        "Sort by": "Sort by",
+        "Search by IP or Name": "Search by IP or Name",
+        "Add server": "Add server",
+        "IP or Domain": "IP or Domain",
+        "IP/Domain": "IP/Domain",
+        "Add": "Add",
+        "IP must be in format ip:port": "IP must be in format <strong>ip:port</strong>",
+        "Show empty servers": "Show empty servers",
+        "Show only open.mp servers": "Show only open.mp servers",
+        "Show only partners": "Show only partners",
+        "servers-stats": "{totalPlayers} players on {serverCount} servers with an average of {averagePlayers} players per server.",
+        "server-sumbitted": "{serverCodeHn} is added to our pending list. If it's not available after maximum 48 hours, you can contact us on Discord!",
+        "server-submissionfail": "Status: {responseStatusText} : {responseError}",
+        "Server Submitted!": "Server Submitted!",
+        "Submission failed!": "Submission failed!",
+        "The specified IP did not resolve to a SA-MP server.": "The specified IP did not resolve to a SA-MP server.",
+        "no address specified": "no address specified",
+        "failed to upsert server information": "failed to upsert server information",
+        "Has partnership!": "Has partnership!",
+        "open.mp server": "open.mp server",
+        "COPY": "COPY",
+        "COPIED": "COPIED",
+        "players": "players",
+        "This server has no description": "This server has no description.",
+        "Players Online": "Players Online",
+        "Mod version": "Mod version",
+        "Language": "Language",
+        "Rule": "Rule",
+        "Value": "Value",
+        "Quick Join": "Quick Join",
+        "server-lastupdate": "Last updated {lastUpdateAmount} {lastUpdateUnit} ago"
+    },
+
+    "Partners": {
+        "Partners (BETA TESTERS)" : "Partners (BETA TESTERS)",
+        "Servers helping us in beta testing by running open.mp and reporting bugs and issues are listed here. You can do the same by running your server using open.mp and help us with finding bugs and issues; Then tell us about your servers on our discord so we can list them here." : "Servers helping us in beta testing by running open.mp and reporting bugs and issues are listed here. You can do the same by running your server using open.mp and help us with finding bugs and issues; Then tell us about your servers on our <a href='https://discord.gg/samp'>discord</a> so we can list them here.",
+        "Those who are contributing to our community will have permanent perks in future when we are releasing for public use and when our server listing is ready." : "Those who are contributing to our community will have permanent perks in future when we are releasing for public use and when our server listing is ready.",
+        "Note: Partnership program is temporarily closed as we promised. Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested, you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet." : "Note: Partnership program is temporarily closed as we promised. Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested, you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet."
+    },
+
+    "Docs": {
+        "Not Translated" : "Not Translated",
+        "Help Needed" : "Help Needed",
+        "This page has not been translated into the language that your browser requested yet. The English content is being shown as a fallback." : "This page has not been translated into the language that your browser requested yet. The English content is being shown as a fallback.",
+        "If you want to contribute a translation for this page then please click here." : "If you want to contribute a translation for this page then please click <a href={editLink}>here</a>.",
+        "This wiki is the result of an ongoing community effort — thank you all for helping!" : "This wiki is the result of an ongoing community effort — thank you all for helping!",
+        "If you want to provide changes to this page then please click here." : " If you want to provide changes to this page then please click <a href={editLink}>here</a>.",
+
+        "Search..." : "Search...",
+
+        "note" : "note",
+        "tip" : "tip",
+        "warning" : "warning",
+        "caution" : "caution",
+        "important" : "important"
+    },
+
+    "General": {
+        "Back": "Back",
+        "second": "second",
+        "seconds": "seconds",
+        "hour": "hour",
+        "hours": "hours",
+        "minute": "minute",
+        "minutes": "minutes",
+        "day": "day",
+        "days": "days",
+        "month": "month",
+        "months": "months",
+        "year": "year",
+        "years": "years",
+        "Recently": "Recently",
+
+        "search-results": "{total} search results",
+        "Change language from": "Change language from Українська",
+
+        "404 - Page Not Found" : "404 - Page Not Found"
+    }
+  }
+  
