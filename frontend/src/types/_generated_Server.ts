@@ -22,7 +22,9 @@ export const AllSchema = z.object({
   description: z.string().nullable(),
   banner: z.string().nullable(),
   active: z.boolean(),
+  pending: z.boolean(),
   lastUpdated: z.string(),
+  lastActive: z.string().nullable(),
 })
 export type All = z.infer<typeof AllSchema>
 
