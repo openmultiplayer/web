@@ -1,5 +1,5 @@
 ---
-título: OnNPCDisconnect
+title: OnNPCDisconnect
 descripción: Este callback se llama cuando un NPC se desconecta del servidor.
 tags: ["npc"]
 ---
