@@ -103,6 +103,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Advanced SA NickName](https://github.com/KrYpToDeN/Advanced-SA-NickName)** - Support for any symbols in nicknames.
 - **[SAMPSON](https://github.com/Hual/SAMPSON)** - A JSON plugin for SA-MP.
 - **[samp-chatbot](https://github.com/SimoSbara/samp-chatbot)** - A GTA SAMP plugin for AI Chat Bot communication inside Game.
+- **[SAMP BitStream Crash Fix](https://github.com/AmyrAhmady/samp-bscrashfix)** - Fixes the issue with BitStream read overruns.
 
 ## Client-Server Plugins
 
