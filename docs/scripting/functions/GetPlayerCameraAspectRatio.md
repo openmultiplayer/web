@@ -38,4 +38,4 @@ The return value of this function represents the value of the "widescreen" optio
 
 - [GetPlayerCameraZoom](GetPlayerCameraZoom): Get the zoom level of a player's camera.
 - [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.
-- [GetPlayerCameraFrontVector](GetPlayerVameraFrontVector): Get the player's camera front vector
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
