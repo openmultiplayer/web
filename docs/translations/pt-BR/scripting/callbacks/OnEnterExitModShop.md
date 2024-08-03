@@ -3,8 +3,6 @@ title: OnEnterExitModShop
 description: Esta callback é chamada quando o jogador entra ou sai de um modshop.
 tags: []
 ---
-
-<VersionWarnPT name='callback' version='SA-MP 0.3a' />
 ## Descrição
 
 Esta callback é chamada quando o jogador entra ou sai de um shop mod.

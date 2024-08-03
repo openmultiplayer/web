@@ -4,12 +4,6 @@ description: This callback is called when a player clicks on a textdraw or cance
 tags: ["player", "textdraw"]
 ---
 
-:::warning
-
-Callback นี้ถูกเพิ่มใน SA-MP 0.3e และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
-
-:::
-
 ## คำอธิบาย
 
 This callback is called when a player clicks on a textdraw or cancels the select mode with the Escape key.
@@ -43,7 +37,7 @@ public OnGameModeInit()
     return 1;
 }
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (newkeys == KEY_SUBMISSION)
     {

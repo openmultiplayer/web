@@ -4,21 +4,15 @@ description: Postavlja boju box-a textdraw-a (PlayerTextDrawUseBox).
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja boju box-a textdraw-a (PlayerTextDrawUseBox).
 
-| Ime      | Deskripcija                                               |
-| -------- | --------------------------------------------------------- |
-| playerid | ID igrača čijem se player-textdrawu postavlja boja box-a. |
-| text     | ID player-textdrawa za postaviti boju box-a.              |
-| color    | Boja za postaviti. Alpha (transparentno) je podržano.     |
+| Ime             | Deskripcija                                               |
+|-----------------|-----------------------------------------------------------|
+| playerid        | ID igrača čijem se player-textdrawu postavlja boja box-a. |
+| PlayerText:text | ID player-textdrawa za postaviti boju box-a.              |
+| color           | Boja za postaviti. Alpha (transparentno) je podržano.     |
 
 ## Returns
 
@@ -32,7 +26,7 @@ new PlayerText:pTextdraw[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");
-    PlayerTextDrawUseBox(playerid, pTextdraw[playerid], 1);
+    PlayerTextDrawUseBox(playerid, pTextdraw[playerid], true);
     PlayerTextDrawBoxColor(playerid, pTextdraw[playerid], 0xFF0000FF); // Crveni box bez transparentnosti
     return 1;
 }

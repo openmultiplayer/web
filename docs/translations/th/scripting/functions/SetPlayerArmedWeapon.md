@@ -4,12 +4,6 @@ description: Sets which weapon (that a player already has) the player is holding
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Sets which weapon (that a player already has) the player is holding.
@@ -33,8 +27,8 @@ public OnPlayerUpdate(playerid)
     SetPlayerArmedWeapon(playerid,0); // disables weapons
     return 1;
 }
-// SMG driveby by [03]Garsino (for SA:MP 0.3c)
-public OnPlayerStateChange(playerid, newstate, oldstate)
+// SMG driveby by [03]Garsino
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER || newstate == PLAYER_STATE_PASSENGER)
     {

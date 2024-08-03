@@ -36,7 +36,7 @@ public OnGameModeInit()
 }
 ```
 
-## İlgili Fonksiyonlar
+## Bağlantılı Fonksiyonlar
 
 - [AddStaticVehicleEx](AddStaticVehicleEx.md): Özel yeniden doğma süresine sahip statik bir araç ekleyin.
 - [CreateVehicle](CreateVehicle.md): Araç oluşturun.

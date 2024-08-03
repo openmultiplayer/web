@@ -14,7 +14,7 @@ Formats a string to include variables and other strings inside it.
 | -------------- | ----------------------------------------- |
 | output[]       | The string to output the result to        |
 | len            | The maximum length output can contain     |
-| format[]       | The format string                         |
+| const format[] | The format string                         |
 | {Float,\_}:... | Indefinite number of arguments of any tag |
 
 ## Returns

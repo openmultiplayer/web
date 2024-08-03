@@ -4,12 +4,6 @@ description: Get the position of the player's camera.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Get the position of the player's camera.

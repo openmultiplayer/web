@@ -22,7 +22,7 @@ Uklanja/izbacuje igrača iz njihovog vozila.
 
 ```c
 // Primjer - Igrači mogu da voze vozila samo ako imaju score 10.
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER && GetPlayerScore(playerid) < 10) // PLAYER_STATE_DRIVER = 2
     {

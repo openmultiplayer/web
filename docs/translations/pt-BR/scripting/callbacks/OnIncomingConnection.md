@@ -4,8 +4,6 @@ description: Esta callback é chamada quando um endereço de IP tenta conectar n
 tags: []
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3z R2-2' />
-
 ## Descrição
 
 Esta callback é chamada quando um endereço de IP tenta conectar no servidor. Para bloquear tentativas de conexão, use BlockIpAddress.

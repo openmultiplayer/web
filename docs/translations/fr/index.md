@@ -1,6 +1,6 @@
-# Maintien du wiki SA:MP par open.MP
+# Maintien du wiki SA:MP par open.mp
 
-Bienvenue sur le wiki de SA:MP, qui est aujourd'hui maintenu par l'équipe open.MP et sa communauté _(et, plus généralement, la communauté SA:MP)_.
+Bienvenue sur le wiki de SA:MP, qui est aujourd'hui maintenu par l'équipe open.mp et sa communauté _(et, plus généralement, la communauté SA:MP)_.
 
 Cette documentation tend à recenser de la manière la plus exhaustive tout ce qui pourrait être utile aux développeurs. Elle vise à être la plus accessible possible, il est d'ailleurs très facile d'y [contribuer](/meta/Contributing).
 
@@ -9,8 +9,8 @@ Cette documentation tend à recenser de la manière la plus exhaustive tout ce q
 
 Il ne vous aura pas échappé que le wiki et le forum SA:MP ont été mis hors ligne fin septembre 2020. Vous pourrez également remarquer que, désormais, ces deux sites sont inaccessibles via les [webarchives](https://web.archive.org/).
 
-Vous pouvez facilement [contribuer](/meta/Contributing) à maintenir ce wiki et, puisqu'il s'agit de cela, à créer de nouvelles pages / transposer les anciennes pages du wiki SA:MP.
+Vous pouvez facilement [contribuer](/docs/meta/Contributing) à maintenir ce wiki et, puisqu'il s'agit de cela, à créer de nouvelles pages / transposer les anciennes pages du wiki SA:MP.
 
-Il n'est pas nécessaire que vous maîtrisez Github, d'abord parce que la contribution est très facile avec open.MP et ensuite parce que vous pouvez toujours poser des questions sur le Discord, sur le forum [Burgershot](https://forum.open.mp/) ou sur les médias de open.MP.
+Il n'est pas nécessaire que vous maîtrisez Github, d'abord parce que la contribution est très facile avec open.mp et ensuite parce que vous pouvez toujours poser des questions sur le Discord, sur [le forum](https://forum.open.mp) ou sur les médias de open.mp.
 
 Il convient également de rappeler que la communauté française dispose d'un [forum](http://sa-mp-fr.com/) elle aussi, vous y retrouverez également de l'aide et des ressources.

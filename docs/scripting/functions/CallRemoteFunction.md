@@ -1,18 +1,18 @@
 ---
 title: CallRemoteFunction
 description: Calls a public function in any script that is loaded.
-tags: []
+tags: ["core"]
 ---
 
 ## Description
 
 Calls a public function in any script that is loaded.
 
-| Name           | Description                                 |
-| -------------- | ------------------------------------------- |
-| function[]     | Public function's name.                     |
-| format[]       | Tag/format of each variable                 |
-| {Float,\_}:... | 'Indefinite' number of arguments of any tag |
+| Name                 | Description                                 |
+| -------------------- | ------------------------------------------- |
+| const functionName[] | Public function's name.                     |
+| const specifiers[]   | Tag/format of each variable                 |
+| OPEN_MP_TAGS:...     | 'Indefinite' number of arguments of any tag |
 
 ## Returns
 
@@ -47,7 +47,7 @@ CallRemoteFunction("CallMe", "is", 69, "this is a string");
 
 :::warning
 
-CallRemoteFunction crashes the server if it's passing an empty string.
+CallRemoteFunction crashes the server if it's passing an empty string. (Fixed in open.mp)
 
 :::
 

@@ -30,7 +30,7 @@ Dodaje smrt 'killfeedu' s desne strane ekrana za jednog igrača.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Pošalji smrtnu poruku "playerid" prikazuje da je "killerid" ubio "playerid" zbog "reason"
     SendDeathMessageToPlayer(playerid, killerid, playerid, reason);

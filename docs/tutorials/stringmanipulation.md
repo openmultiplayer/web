@@ -1611,7 +1611,7 @@ Again, we just utilized the `gettime` function to store the hours, minutes and s
 **Example 3**: _Death message - Outputting a message when a player dies, having the players names colored in their respective colors_:
 
 ```cpp
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to take into account the null terminator, thanks to Pottus for pointing that out.
     new message[144], playerName[MAX_PLAYER_NAME + 1], killerName[MAX_PLAYER_NAME + 1];

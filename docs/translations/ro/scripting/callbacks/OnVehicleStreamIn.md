@@ -4,8 +4,6 @@ description: Apelat atunci când un vehicul este transmis în flux la clientul u
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descriere
 
 Numit atunci când un vehicul este transmis în flux la clientul unui jucător.

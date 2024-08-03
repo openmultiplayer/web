@@ -4,8 +4,6 @@ description: This callback is called when a player enters or exits a mod shop.
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This callback is called when a player enters or exits a mod shop.
@@ -38,7 +36,9 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Known Bug(s): Players collide when they get into the same mod shop.
+Known Bug(s):
+
+- Players collide when they get into the same mod shop.
 
 :::
 

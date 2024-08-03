@@ -4,12 +4,6 @@ description: Prikvači objekat na određenu kost igrača.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikvači objekat na određenu kost igrača.

@@ -1,10 +1,8 @@
 ---
 title: OnPlayerEditAttachedObject
 description: This callback is called when a player ends attached object edition mode.
-tags: ["player"]
+tags: ["player", "object", "attachment"]
 ---
-
-<VersionWarn name='callback' version='SA-MP 0.3e' />
 
 ## Description
 
@@ -57,7 +55,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
-    if (response)
+    if (response == EDIT_RESPONSE_FINAL)
     {
         SendClientMessage(playerid, COLOR_GREEN, "Attached object edition saved.");
 
@@ -71,7 +69,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
         ao[playerid][index][ao_sy] = fScaleY;
         ao[playerid][index][ao_sz] = fScaleZ;
     }
-    else
+    else if (response == EDIT_RESPONSE_CANCEL)
     {
         SendClientMessage(playerid, COLOR_RED, "Attached object edition not saved.");
 
@@ -86,7 +84,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-Editions should be discarded if response was '0' (cancelled). This must be done by storing the offsets etc. in an array BEFORE using EditAttachedObject.
+Editions should be discarded if response was '0' (cancelled). This must be done by storing the offsets etc. in an array BEFORE using [EditAttachedObject](../functions/EditAttachedObject).
 
 :::
 

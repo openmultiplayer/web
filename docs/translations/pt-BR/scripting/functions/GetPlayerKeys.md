@@ -25,23 +25,24 @@ AS teclas são armazenadas nas variáveis especificadas.
 public OnPlayerUpdate(playerid)
 {
     new
-        Keys, ud, lr;
-    GetPlayerKeys(playerid, Keys, ud, lr);
+        KEY:keys, updown, leftright;
 
-    if (ud == KEY_UP)
+    GetPlayerKeys(playerid, keys, updown, leftright);
+
+    if (updown == KEY_UP)
     {
         SendClientMessage(playerid, -1, "UP");
     }
-    else if (ud == KEY_DOWN)
+    else if (updown == KEY_DOWN)
     {
         SendClientMessage(playerid, -1, "DOWN");
     }
 
-    if (lr == KEY_LEFT)
+    if (leftright == KEY_LEFT)
     {
         SendClientMessage(playerid, -1, "LEFT");
     }
-    else if (lr == KEY_RIGHT)
+    else if (leftright == KEY_RIGHT)
     {
         SendClientMessage(playerid, -1, "RIGHT");
     }

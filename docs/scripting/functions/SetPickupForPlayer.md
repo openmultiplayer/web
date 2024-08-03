@@ -6,6 +6,12 @@ tags: ["player", "pickup"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
+:::warning
+
+This function has not yet been implemented.
+
+:::
+
 ## Description
 
 Adjusts the pickup model, type, and position for a specific player.

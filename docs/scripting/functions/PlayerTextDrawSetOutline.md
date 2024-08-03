@@ -4,17 +4,15 @@ description: Set the outline of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
-Set the outline of a player-textdraw. The outline colour cannot be changed unless PlayerTextDrawBackgroundColor is used.
+Set the outline of a player-textdraw. The outline colour cannot be changed unless [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor) is used.
 
-| Name     | Description                                                      |
-| -------- | ---------------------------------------------------------------- |
-| playerid | The ID of the player whose player-textdraw to set the outline of |
-| text     | The ID of the player-textdraw to set the outline of              |
-| size     | The thickness of the outline.                                    |
+| Name              | Description                                                      |
+| ----------------- | ---------------------------------------------------------------- |
+| playerid          | The ID of the player whose player-textdraw to set the outline of |
+| PlayerText:textid | The ID of the player-textdraw to set the outline of              |
+| outlineSize       | The thickness of the outline.                                    |
 
 ## Returns
 
@@ -29,8 +27,8 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
     PlayerTextDrawSetOutline(playerid, welcomeText[playerid], 1);
-    PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
     return 1;
 }
 ```

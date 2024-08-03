@@ -1,18 +1,16 @@
 ---
 title: UnBlockIpAddress
 description: Unblock an IP address that was previously blocked using BlockIpAddress.
-tags: ["administration"]
+tags: ["administration", "ip address"]
 ---
-
-<VersionWarn version='SA-MP 0.3z R2-2' />
 
 ## Description
 
-Unblock an IP address that was previously blocked using BlockIpAddress.
+Unblock an IP address that was previously blocked using [BlockIpAddress](BlockIpAddress).
 
-| Name       | Description                |
-| ---------- | -------------------------- |
-| ip_address | The IP address to unblock. |
+| Name              | Description                |
+| ----------------- | -------------------------- |
+| const ipAddress[] | The IP address to unblock. |
 
 ## Returns
 

@@ -4,8 +4,6 @@ description: Essa callback é executada quando um NPC conecta com sucesso no ser
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descrição
 
 Essa callback é executada quando um NPC conecta com sucesso no servidor.

@@ -4,7 +4,7 @@ description: 当玩家下载完自定义模型时，这个回调函数被调用�
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3.DL' />
+<VersionWarnCN name='回调' version='SA-MP 0.3.DL R1' />
 
 ## 描述
 

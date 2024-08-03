@@ -10,11 +10,11 @@ tags: ["file management"]
 
 This function allows you to read data from a file, without encoding and line terminators
 
-| Name                 | Description                           |
-| -------------------- | ------------------------------------- |
-| handle               | File handle to use, opened by fopen() |
-| buffer               | The buffer to save the read data in.  |
-| size = sizeof buffer | The number of cells to read.          |
+| Name                   | Description                           |
+| ---------------------- | ------------------------------------- |
+| File:handle            | File handle to use, opened by fopen() |
+| buffer                 | The buffer to save the read data in.  |
+| size = sizeof (buffer) | The number of cells to read.          |
 
 ## Returns
 
@@ -37,10 +37,10 @@ new some_data[some_enum];
 // ...
 
 // Open "file.bin" in "read only" mode
-new File:handle = fopen("file.bin", io_read),
+new File:handle = fopen("file.bin", io_read);
 
-    // Declare "file_len"
-    file_len;
+// Declare "file_len"
+new file_len;
 
 // Check, if "file.bin" is open
 if (handle)
@@ -78,7 +78,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
@@ -96,3 +96,12 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.
+- [ftell](ftell): Get the current position in the file.
+- [fflush](fflush): Flush a file to disk (ensure all writes are complete).
+- [fstat](fstat): Return the size and the timestamp of a file.
+- [frename](frename): Rename a file.
+- [fcopy](fcopy): Copy a file.
+- [filecrc](filecrc): Return the 32-bit CRC value of a file.
+- [diskfree](diskfree): Returns the free disk space.
+- [fattrib](fattrib): Set the file attributes.
+- [fcreatedir](fcreatedir): Create a directory.

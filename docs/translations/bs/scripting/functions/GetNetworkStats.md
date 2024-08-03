@@ -4,8 +4,6 @@ description: Funkcija koja dobiva mrežne statistike servera i pohranjuje ih u s
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3c R4' />
-
 ## Deskripcija
 
 Funkcija koja dobiva mrežne statistike servera i pohranjuje ih u string (niz).

@@ -10,15 +10,15 @@ tags: ["file management"]
 
 Closes a file. Files should always be closed when the script no longer needs them (after reading/writing).
 
-| Name        | Description                                  |
-| ----------- | -------------------------------------------- |
-| File:handle | The file handle to close. Returned by fopen. |
+| Name        | Description                                           |
+| ----------- | ----------------------------------------------------- |
+| File:handle | The file handle to close. Returned by [fopen](fopen). |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The file could not be closed. It may already be closed.
+**false** - The function failed to execute. The file could not be closed. It may already be closed.
 
 ## Examples
 
@@ -48,7 +48,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
@@ -67,3 +67,12 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.
+- [ftell](ftell): Get the current position in the file.
+- [fflush](fflush): Flush a file to disk (ensure all writes are complete).
+- [fstat](fstat): Return the size and the timestamp of a file.
+- [frename](frename): Rename a file.
+- [fcopy](fcopy): Copy a file.
+- [filecrc](filecrc): Return the 32-bit CRC value of a file.
+- [diskfree](diskfree): Returns the free disk space.
+- [fattrib](fattrib): Set the file attributes.
+- [fcreatedir](fcreatedir): Create a directory.

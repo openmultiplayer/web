@@ -4,12 +4,6 @@ description: Change the text of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-This feature (player-textdraws) was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Change the text of a player-textdraw.
@@ -30,7 +24,7 @@ This function does not return any specific values.
 new pVehicleHealthTimer[MAX_PLAYERS];
 new PlayerText:pVehicleHealthTD[MAX_PLAYERS];
 
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == 2) // Entered a vehicle as driver
     {

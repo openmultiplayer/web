@@ -4,8 +4,6 @@ description: Find out what type of component a certain ID is.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Find out what type of component a certain ID is.
@@ -16,7 +14,7 @@ Find out what type of component a certain ID is.
 
 ## Returns
 
-The component slot ID of the specified component or -1 if the component is invalid.
+The component slot ID of the specified component or **-1** if the component is invalid.
 
 ## Examples
 
@@ -24,21 +22,20 @@ The component slot ID of the specified component or -1 if the component is inval
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
     new
-        componentType = GetVehicleComponentType(componentid);
+        CARMODTYPE:componentType = GetVehicleComponentType(componentid);
 
-    if (componentType != -1)
+    if (componentType != CARMODTYPE_NONE)
     {
         new
-            clientMessage[41];
+            string[64];
 
-        format(clientMessage, sizeof(clientMessage), "You have modified your vehicle on slot %i", componentType);
-        SendClientMessage(playerid, 0xFFFFFFFF, clientMessage);
+        format(string, sizeof(string), "You have modified your vehicle on slot %i", componentType);
+        SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
     else
     {
         SendClientMessage(playerid, 0xFF0000FF, "The component is invalid.");
     }
-
     return 1;
 }
 ```
@@ -48,5 +45,8 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 - [AddVehicleComponent](AddVehicleComponent): Add a component to a vehicle.
 - [RemoveVehicleComponent](RemoveVehicleComponent): Remove a component from a vehicle.
 - [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Check what components a vehicle has.
+
+## Related Callbacks
+
 - [OnVehicleMod](../callbacks/OnVehicleMod): Called when a vehicle is modded.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.

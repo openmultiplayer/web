@@ -178,14 +178,9 @@ Acestea sunt comenzile pe care le puteți folosi ca admin:
 | `/rcon reloadfs`                  | Reîncarcă filterscriptul respectiv (_examplu: /rcon reloadfs adminfs_).                                                            |
 | `/rcon rcon\_password [parolă]` | Schimbă parola RCON.                                                                                                     |
 | `/rcon password [parolă]`       | Setează/resetează parola serverului.                                                                                                |
-
-**Următoarele comenzi sunt disponibile doar în versiunile mai noi de 0.3z R2**:
-
-| Comandă                           | Descriere                                                                                          |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | `/rcon messageslimit [număr]`     | Schimbă numărul de mesaje pe care un jucător le poate să le trimită. (implicit 500)                 |
-| `/rcon ackslimit [număr]`         | Schimbă limita de acks (implicit 1000) (După 0.3z R2-2, numărul implicit este 3000)                     |
-| `/rcon messageholelimit [număr]`  | Schimbă limita de message holes (Disponibil și în 0.3z R1) (implicit 3000)                         |
+| `/rcon ackslimit [număr]`         | Schimbă limita de acks (implicit 3000)                     |
+| `/rcon messageholelimit [număr]`  | Schimbă limita de message holes (implicit 3000)                         |
 | `/rcon playertimeout [limită m/s]` | Schimba timpul în milisecunde în care un player este considerat AFK, după ce nu mai trimite semnale către server. (implicit 1000) |
 | `/rcon language [limbă]`       | Schimbă limba serverului (_exemplu: /rcon language English_). Se afișează și în browser.             |
 

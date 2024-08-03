@@ -4,17 +4,17 @@ description: Sets the text colour of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='omp v1.1.0.2612' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 
 Sets the text colour of a player-textdraw
 
-| Name     | Description                                             |
-| -------- | ------------------------------------------------------- |
-| playerid | The ID of the player who's textdraw to set the colour of |
-| PlayerText:textid     | The TextDraw to change.                                 |
-| colour    | The colour in hexadecimal format.                        |
+| Name              | Description                                              |
+| ----------------- | -------------------------------------------------------- |
+| playerid          | The ID of the player who's textdraw to set the colour of |
+| PlayerText:textid | The TextDraw to change.                                  |
+| textColour        | The colour in hexadecimal format.                        |
 
 ## Returns
 
@@ -27,8 +27,9 @@ new PlayerText:pTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");
+    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Example Text");
     PlayerTextDrawColour(playerid, pTextdraw[playerid], 0xFF0000FF); // Red text
+
     PlayerTextDrawShow(playerid, pTextdraw[playerid]);
     return 1;
 }
@@ -38,7 +39,8 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-You can also use Gametext colours in textdraws. The textdraw must be re-shown to the player in order to update the colour.
+- You can also use Gametext colours in textdraws. (e.g. `~r~` `~g~` `~b~`)
+- The textdraw must be re-shown to the player in order to update the colour.
 
 :::
 

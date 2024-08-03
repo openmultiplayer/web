@@ -1,7 +1,7 @@
 ---
 title: Kick
 description: Kicks a player from the server. They will have to quit the game and re-connect if they wish to continue playing.
-tags: ["administration"]
+tags: ["player", "administration"]
 ---
 
 ## Description
@@ -20,7 +20,7 @@ This function always returns 1, even if the function failed to execute (player s
 
 :::warning
 
-As of SA-MP 0.3x, any action taken directly before Kick() (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the kick.
+Any action taken directly before Kick() (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the kick.
 
 :::
 

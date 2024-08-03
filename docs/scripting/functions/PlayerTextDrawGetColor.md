@@ -4,15 +4,15 @@ description: Gets the text color of a player-textdraw
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='omp v1.1.0.2612' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 
 Gets the text color of a player-textdraw
 
-| Name     | Description                                             |
-| -------- | ------------------------------------------------------- |
-| playerid | The ID of the player |
+| Name              | Description                                       |
+| ----------------- | ------------------------------------------------- |
+| playerid          | The ID of the player                              |
 | PlayerText:textid | The ID of the player textdraw to get the color of |
 
 ## Returns
@@ -26,12 +26,12 @@ new PlayerText:pTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, x, y, "...");
+    pTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
     PlayerTextDrawColor(playerid, pTextdraw[playerid], 0xFF0000FF);
     PlayerTextDrawShow(playerid, pTextdraw[playerid]);
 
     new color = PlayerTextDrawGetColor(playerid, pTextdraw[playerid]);
-    // the `color` will be 0xFF0000FF
+    // color = 0xFF0000FF
     return 1;
 }
 ```

@@ -4,8 +4,6 @@ description: This callback is called when a player is streamed by some other pla
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This callback is called when a player is streamed by some other player's client.

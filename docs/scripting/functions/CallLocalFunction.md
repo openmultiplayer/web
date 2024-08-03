@@ -1,22 +1,24 @@
 ---
 title: CallLocalFunction
 description: Calls a public function from the script in which it is used.
-tags: []
+tags: ["core"]
 ---
 
 ## Description
 
 Calls a public function from the script in which it is used.
 
-| Name           | Description                                 |
-| -------------- | ------------------------------------------- |
-| function[]     | Public function's name.                     |
-| format[]       | Tag/format of each variable                 |
-| {Float,\_}:... | 'Indefinite' number of arguments of any tag |
+| Name                 | Description                                 |
+| -------------------- | ------------------------------------------- |
+| const functionName[] | Public function's name.                     |
+| const specifiers[]   | Tag/format of each variable                 |
+| OPEN_MP_TAGS:...     | 'Indefinite' number of arguments of any tag |
 
 ## Returns
 
-If the function exists, returns the same as the called function. If the function does not exist, returns 0.
+If the function exists, returns the same as the called function.
+
+If the function does not exist, returns 0.
 
 ## Format Specifiers
 
@@ -46,7 +48,7 @@ CallLocalFunction("publicFunc", "ifs", 420, 68.999999999, "Hello world");
 
 :::warning
 
-CallLocalFunction crashes the server if it's passing an empty string.
+CallLocalFunction crashes the server if it's passing an empty string. (Fixed in open.mp)
 
 :::
 

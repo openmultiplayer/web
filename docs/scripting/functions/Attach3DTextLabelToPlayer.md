@@ -4,25 +4,23 @@ description: Attach a 3D text label to a player.
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Attach a 3D text label to a player.
 
-| Name      | Description                                                           |
-| --------- | --------------------------------------------------------------------- |
-| Text3D:id | The ID of the 3D text label to attach. Returned by Create3DTextLabel. |
-| playerid  | The ID of the player to attach the label to.                          |
-| OffsetX   | The X offset from the player.                                         |
-| OffsetY   | The Y offset from the player.                                         |
-| OffsetZ   | The Z offset from the player.                                         |
+| Name          | Description                                                           |
+| ------------- | --------------------------------------------------------------------- |
+| Text3D:textid | The ID of the 3D text label to attach. Returned by Create3DTextLabel. |
+| playerid      | The ID of the player to attach the label to.                          |
+| Float:offsetX | The X offset from the player.                                         |
+| Float:offsetY | The Y offset from the player.                                         |
+| Float:offsetZ | The Z offset from the player.                                         |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player and/or label do not exist.
+**false** - The function failed to execute. This means the player and/or label do not exist.
 
 ## Examples
 

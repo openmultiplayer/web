@@ -4,12 +4,6 @@ description: Provjerava ako je igrač učitan u klijent drugog igrača.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Provjerava ako je igrač učitan u klijent drugog igrača.

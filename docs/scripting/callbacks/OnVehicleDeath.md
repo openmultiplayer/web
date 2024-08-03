@@ -33,7 +33,8 @@ public OnVehicleDeath(vehicleid, killerid)
 
 :::tip
 
-This callback will also be called when a vehicle enters water, but the vehicle can be saved from destruction by teleportation or driving out (if only partially submerged). The callback won't be called a second time, and the vehicle may disappear when the driver exits, or after a short time.
+- This callback will also be called when a vehicle enters water, but the vehicle can be saved from destruction by teleportation or driving out (if only partially submerged).
+- The callback won't be called a second time, and the vehicle may disappear when the driver exits, or after a short time.
 
 :::
 

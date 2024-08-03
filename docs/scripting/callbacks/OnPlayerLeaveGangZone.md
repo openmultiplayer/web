@@ -4,7 +4,7 @@ description: This callback is called when a player exited a gangzone
 tags: ["player", "gangzone"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarn name='callback' version='omp v1.1.0.2612' />
 
 ## Description
 

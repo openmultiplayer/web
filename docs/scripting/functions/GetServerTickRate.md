@@ -4,8 +4,6 @@ description: Gets the tick rate (like FPS) of the server.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the tick rate (like FPS) of the server.

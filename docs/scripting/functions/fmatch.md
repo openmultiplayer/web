@@ -10,22 +10,37 @@ tags: ["file management"]
 
 Find a filename matching a pattern.
 
-| Name          | Description                                                    |
-| ------------- | -------------------------------------------------------------- |
-| name          | The string to hold the result in, returned as a packed string. |
-| const pattern | The pattern that should be matched. May contain wildcards.     |
-| index         | The number of the file, in case there are multiple matches.    |
-| size          | The maximum size of parameter name                             |
+| Name                     | Description                                                              |
+| ------------------------ | ------------------------------------------------------------------------ |
+| const filename[]         | The string to hold the result in, returned as a packed string.           |
+| const pattern[]          | The pattern that should be matched. May contain wildcards.               |
+| index                    | The number of the file, in case there are multiple matches. (default: 0) |
+| size = sizeof (filename) | The maximum size of parameter name                                       |
 
 ## Returns
 
-true on success, false on failure
+**true** - Success (the file matches the pattern)
+
+**false** - Failure (the file does not exist or the pattern does not match)
+
+## Examples
+
+```c
+if (fmatch("file.txt", "*.txt"))
+{
+    print("The file matches the pattern.");
+}
+else
+{
+    print("The file \"file.txt\" does not exists, or pattern does not match.");
+}
+```
 
 ## Notes
 
 :::warning
 
-This function does not work in the current SA:MP version!
+This function works on open.mp server but not on SA:MP server.
 
 :::
 
@@ -44,3 +59,12 @@ This function does not work in the current SA:MP version!
 - [fseek](fseek): Jump to a specific character in a file.
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
+- [ftell](ftell): Get the current position in the file.
+- [fflush](fflush): Flush a file to disk (ensure all writes are complete).
+- [fstat](fstat): Return the size and the timestamp of a file.
+- [frename](frename): Rename a file.
+- [fcopy](fcopy): Copy a file.
+- [filecrc](filecrc): Return the 32-bit CRC value of a file.
+- [diskfree](diskfree): Returns the free disk space.
+- [fattrib](fattrib): Set the file attributes.
+- [fcreatedir](fcreatedir): Create a directory.

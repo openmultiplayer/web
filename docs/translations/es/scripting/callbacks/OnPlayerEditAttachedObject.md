@@ -4,27 +4,26 @@ descripción: Este callback se llama cuando un jugador sale del modo edición de
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3e' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador sale del modo edición de objetos adjuntos.
 
-| Nombre         | Descripción                                                   |
-| -------------- | ------------------------------------------------------------- |
-| playerid       | El ID del jugador que salió del modo de edición.              | 
-| response       | 0 si canceló o 1 si clickeó el ícono de guardar.              | 
-| modelid        | El modelo del objeto adjunto que fue editado.             	 |
-| boneid         | El hueso del objeto adjunto que fue editado.              	 |
-| Float:fOffsetX | La coordenada X para el objeto adjunto que fue editado.       | 
-| Float:fOffsetY | La coordenada Y para el objeto adjunto que fue editado.       |
-| Float:fOffsetZ | La coordenada Z para el objeto adjunto que fue editado.       | 
-| Float:fRotX    | La rotación X para el objeto adjunto que fue editado.         | 
-| Float:fRotY    | La rotación Y para el objeto adjunto que fue editado.         | 
-| Float:fRotZ    | La rotación Z para el objeto adjunto que fue editado.         | 
-| Float:fScaleX  | La escala X para el objeto adjunto que fue editado.           | 
-| Float:fScaleY  | La escala Y para el objeto adjunto que fue editado.           | 
-| Float:fScaleZ  | La escala Z para el objeto adjunto que fue editado.           |
+| Nombre                 | Descripción                                             |
+|------------------------|---------------------------------------------------------|
+| playerid               | El ID del jugador que salió del modo de edición.        |
+| EDIT_RESPONSE:response | 0 si canceló o 1 si clickeó el ícono de guardar.        |
+| index                  | The index of the attached object (0-9)                  |
+| modelid                | El modelo del objeto adjunto que fue editado.           |
+| boneid                 | El hueso del objeto adjunto que fue editado.            |
+| Float:fOffsetX         | La coordenada X para el objeto adjunto que fue editado. |
+| Float:fOffsetY         | La coordenada Y para el objeto adjunto que fue editado. |
+| Float:fOffsetZ         | La coordenada Z para el objeto adjunto que fue editado. |
+| Float:fRotX            | La rotación X para el objeto adjunto que fue editado.   |
+| Float:fRotY            | La rotación Y para el objeto adjunto que fue editado.   |
+| Float:fRotZ            | La rotación Z para el objeto adjunto que fue editado.   |
+| Float:fScaleX          | La escala X para el objeto adjunto que fue editado.     |
+| Float:fScaleY          | La escala Y para el objeto adjunto que fue editado.     |
+| Float:fScaleZ          | La escala Z para el objeto adjunto que fue editado.     |
 
 ## Devoluciones
 
@@ -54,7 +53,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // Los datos deberían ser guardados en el array anterior cuando objetos son adjuntados.
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {

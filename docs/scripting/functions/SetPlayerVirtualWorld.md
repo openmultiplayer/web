@@ -8,24 +8,28 @@ tags: ["player"]
 
 Set the virtual world of a player. They can only see other players or vehicles that are in that same world.
 
-| Name     | Description                                                |
-| -------- | ---------------------------------------------------------- |
-| playerid | The ID of the player you want to set the virtual world of. |
-| worldid  | The virtual world ID to put the player in.                 |
+| Name         | Description                                                |
+| ------------ | ---------------------------------------------------------- |
+| playerid     | The ID of the player you want to set the virtual world of. |
+| virtualWorld | The virtual world ID to put the player in.                 |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player is not connected.
+**false** - The function failed to execute. This means the player is not connected.
 
 ## Examples
 
 ```c
-if (strcmp(cmdtext, "/world3", true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    SetPlayerVirtualWorld(playerid, 3);
-    return 1;
+    if (strcmp(cmdtext, "/world3", true) == 0)
+    {
+        SetPlayerVirtualWorld(playerid, 3);
+        return 1;
+    }
+    return 0;
 }
 ```
 

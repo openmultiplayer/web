@@ -4,8 +4,6 @@ description: This callback is called when a NPC enters a vehicle.
 tags: ["npc"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This callback is called when a NPC enters a vehicle.

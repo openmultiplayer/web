@@ -10,9 +10,9 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the preview model of a 3D preview player-textdraw.
 
-| Name | Description |
-| ---- | -------------------------------------------------------------------------- |
-| playerid | The ID of the player. |
+| Name              | Description                                                |
+|-------------------|------------------------------------------------------------|
+| playerid          | The ID of the player.                                      |
 | PlayerText:textid | The ID of the player-textdraw to get the preview model of. |
 
 ## Returns
@@ -22,7 +22,7 @@ Returns the 3D player-textdraw preview model.
 ## Examples
 
 ```c
-new PlayerText: gTextDraw[MAX_PLAYERS];
+new PlayerText:gTextDraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawShow(playerid, gTextDraw[playerid]);
 
     new previewModel = PlayerTextDrawGetPreviewModel(playerid, gTextDraw[playerid]);
-    // The `previewModel` will be '411'
+    // previewModel = 411
     return 1;
 }
 ```

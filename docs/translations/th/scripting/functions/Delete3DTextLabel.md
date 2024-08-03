@@ -4,19 +4,13 @@ description: Delete a 3D text label (created with Create3DTextLabel).
 tags: ["3dtextlabel"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Delete a 3D text label (created with Create3DTextLabel).
 
 | Name      | Description                            |
 | --------- | -------------------------------------- |
-| Text3D:id | The ID of the 3D text label to delete. |
+| Text3D:textid | The ID of the 3D text label to delete. |
 
 ## ส่งคืน
 

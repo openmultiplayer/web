@@ -8,23 +8,17 @@ tags: ["player"]
 
 Move a player object with a set speed. Also supports rotation. Players/vehicles will surf moving objects.
 
-| Name        | Description                                       |
-| ----------- | ------------------------------------------------- |
-| playerid    | The ID of the player whose player-object to move. |
-| objectid    | The ID of the object to move.                     |
-| Float:X     | The X coordinate to move the object to.           |
-| Float:Y     | The Y coordinate to move the object to.           |
-| Float:Z     | The Z coordinate to move the object to.           |
-| Float:Speed | The speed at which to move the object.            |
-| Float:RotX  | The final X rotation (optional).                  |
-| Float:RotY  | The final Y rotation (optional).                  |
-| Float:RotZ  | The final Z rotation (optional).                  |
-| playerid    | The player you associated this object to.         |
-| objectid    | The objectid you want to move.                    |
-| Float:X     | The new X coordinate.                             |
-| Float:Y     | The new Y coordinate.                             |
-| Float:Z     | The new Z coordinate.                             |
-| Float:Speed | The speed at which to move the object.            |
+| Name            | Description                                       |
+| --------------- | ------------------------------------------------- |
+| playerid        | The ID of the player whose player-object to move. |
+| objectid        | The ID of the object to move.                     |
+| Float:targetX   | The X coordinate to move the object to.           |
+| Float:targetY   | The Y coordinate to move the object to.           |
+| Float:targetZ   | The Z coordinate to move the object to.           |
+| Float:speed     | The speed at which to move the object.            |
+| Float:rotationX | The final X rotation (optional).                  |
+| Float:rotationY | The final Y rotation (optional).                  |
+| Float:rotationZ | The final Z rotation (optional).                  |
 
 ## Returns
 
@@ -33,14 +27,22 @@ The time it will take for the object to move in milliseconds.
 ## Examples
 
 ```c
-MovePlayerObject(playerid, objectid, 2001.195679, 1547.113892, 10);
+new gPlayerObject[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    MovePlayerObject(playerid, gPlayerObject[playerid], 2001.195679, 1547.113892, 10.000000, 2.0);
+    return 1;
+}
 ```
 
 ## Notes
 
 :::tip
 
-If using the rotation parameters, the object must be moved (X/Y/Z). The object will interpolate the rotation from when the objects starts moving and when it stops. The parameters below are for 0.3d R2 and older versions and should be ignored if you run the latest version of SA-MP.
+If using the rotation parameters, the object must be moved (X/Y/Z). The object will interpolate the rotation from when the objects starts moving and when it stops.
 
 :::
 

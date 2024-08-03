@@ -10,13 +10,13 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător dă daune unui actor.
 
-| Nume            | Descriere                                             |
-| --------------- | ----------------------------------------------------- |
-| playerid        | ID-ul jucătorului care a provocat daune.              |
-| damaged_actorid | ID-ul actorului care a primit daune.                  |
-| amount          | Cantitatea de HP/armură pierduta de actor.            |
-| weaponid        | Motivul care a cauzat dauna.                          |
-| bodypart        | [body part](../resources/bodyparts) care a fost lovită|
+| Nume            | Descriere                                              |
+|-----------------|--------------------------------------------------------|
+| playerid        | ID-ul jucătorului care a provocat daune.               |
+| damaged_actorid | ID-ul actorului care a primit daune.                   |
+| Float:amount    | Cantitatea de HP/armură pierduta de actor.             |
+| WEAPON:weaponid | Motivul care a cauzat dauna.                           |
+| bodypart        | [body part](../resources/bodyparts) care a fost lovită |
 
 ## Returnări
 
@@ -29,7 +29,7 @@ Este întotdeauna numit primul în filterscript-uri, astfel încât returnarea 1
 ## Exemple
 
 ```c
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponid, bodypart)
+public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -46,7 +46,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponi
 
 :::tip
 
-Această funcție nu este apelată dacă actorul este setat invulnerabil (CARE ESTE IMPLICIT). Vezi SetActorInvulnerable.
+Această funcție nu este apelată dacă actorul este setat invulnerabil (CARE ESTE IMPLICIT). Vezi [SetActorInvulnerable](../functions/SetActorInvulnerable).
 
 :::
 
@@ -58,5 +58,8 @@ Această funcție nu este apelată dacă actorul este setat invulnerabil (CARE E
 - [GetActorHealth](../functions/GetActorHealth): Obține HP-ul unui actor.
 - [IsActorInvulnerable](../functions/IsActorInvulnerable): Verificați dacă actorul este invulnerabil.
 - [IsValidActor](../functions/IsValidActor): Verificați dacă ID-ul actorului este valid.
+
+## Callbacks similare
+
 - [OnActorStreamOut](OnActorStreamOut): Apelat atunci când un actor este transmis în flux de către un jucător.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Apelat atunci când un jucător transmite în flux pentru alt jucător.

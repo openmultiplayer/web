@@ -136,18 +136,27 @@ stock GetDoorState(doorStates, Door:door, DoorState:doorState)
 ## Example usage
 
 ```c
-new panels, doors, lights, tires;
+new 
+	VEHICLE_PANEL_STATUS:panels,
+	VEHICLE_DOOR_STATUS:doors,
+	VEHICLE_LIGHT_STATUS:lights,
+	VEHICLE_TIRE_STATUS:tires;
+
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
 
 // Single state
-if (GetDoorState(doors, DOOR_DRIVER, IS_DAMAGED))
+if (GetDoorState(_:doors, DOOR_DRIVER, IS_DAMAGED))
 {
     SendClientMessage(playerid, -1, "The drivers' door of your vehicle is damaged!");
 }
 
 // Combined state
-if (GetDoorState(doors, DOOR_HOOD, IS_OPENED | IS_DAMAGED))
+if (GetDoorState(_:doors, DOOR_HOOD, IS_OPENED | IS_DAMAGED))
 {
     SendClientMessage(playerid, -1, "The hood of your vehicle is both opened and damaged!");
 }
 ```
+
+## See also
+
+- [Vehicle Door Status](../resources/vehicle-door-status)

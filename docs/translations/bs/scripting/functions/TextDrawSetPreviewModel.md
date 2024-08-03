@@ -4,12 +4,6 @@ description: Postavi Model za textdraw prikaz modela.
 tags: ["textdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavi Model za textdraw prikaz modela. Klikni ovdje da vidiš efekat ove funkcije.
@@ -32,7 +26,7 @@ public OnGameModeInit()
 {
     textdraw = TextDrawCreate(320.0, 240.0, "_");
     TextDrawFont(textdraw, TEXT_DRAW_FONT_MODEL_PREVIEW);
-    TextDrawUseBox(textdraw, 1);
+    TextDrawUseBox(textdraw, true);
     TextDrawBoxColor(textdraw, 0x000000FF);
     TextDrawTextSize(textdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(textdraw, 411); //Prikaži model 411 (Infernus)
@@ -48,13 +42,13 @@ public OnGameModeInit()
 
 :::tip
 
-Koristi TextDrawBackgroundColor da postaviš boju pozadine iza Modela.
+Koristi [TextDrawBackgroundColor](TextDrawBackgroundColor) da postaviš boju pozadine iza Modela.
 
 :::
 
 :::warning
 
-Textdraw MORA korisiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkcija imala efekta.
+Textdraw MORA korisiti tip fonta `TEXT_DRAW_FONT_MODEL_PREVIEW` kako bi ova funkcija imala efekta.
 
 :::
 
@@ -64,4 +58,7 @@ Textdraw MORA korisiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkci
 - [TextDrawSetPreviewVehCol](TextDrawSetPreviewVehCol): Postavi boju vozila u 3D pregledu modela textdrawa.
 - [TextDrawFont](TextDrawFont): Postavi font textdrawa.
 - [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Postavlja ID modela 3D prikaza u player-textdrawu.
+
+## Related Callbacks
+
 - [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Pozvano kada igrač klikne na textdraw.

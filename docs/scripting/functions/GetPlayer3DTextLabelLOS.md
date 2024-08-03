@@ -10,9 +10,9 @@ tags: ["player", "3dtextlabel"]
 
 Gets the player's 3D text label line-of-sight.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player.  |
+| Name                | Description                                                       |
+| ------------------- | ----------------------------------------------------------------- |
+| playerid            | The ID of the player.                                             |
 | PlayerText3D:textid | The ID of the player's 3D text label to get the line-of-sight of. |
 
 ## Returns
@@ -30,7 +30,7 @@ GetPlayerPos(playerid, X, Y, Z);
 playerTextId = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 0x008080FF, X, Y, Z, 40.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, true);
 
 testLOS = GetPlayer3DTextLabelLOS(playerid, playerTextId);
-// The `testLOS` will be true
+// testLOS = true
 ```
 
 ## Related Functions

@@ -8,11 +8,11 @@ tags: ["player", "gangzone"]
 
 Makes a gangzone flash for a player.
 
-| Name       | Description                                                                                                |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| playerid   | The ID of the player to flash the gangzone for.                                                            |
-| zone       | The ID of the zone to flash.                                                                               |
-| flashcolor | The color to flash the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
+| Name        | Description                                                                                                |
+| ----------- | ---------------------------------------------------------------------------------------------------------- |
+| playerid    | The ID of the player to flash the gangzone for.                                                            |
+| zoneid      | The ID of the zone to flash.                                                                               |
+| flashColour | The color to flash the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
 
 ## Returns
 
@@ -31,7 +31,7 @@ public OnGameModeInit()
 
 public OnPlayerSpawn(playerid)
 {
-    GangZoneFlashForPlayer(playerid, gGangZoneId, COLOR_RED);
+    GangZoneFlashForPlayer(playerid, gGangZoneId, 0xFF0000FF);
     return 1;
 }
 ```

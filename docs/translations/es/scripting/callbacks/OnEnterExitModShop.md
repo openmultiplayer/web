@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador entra o sale de un taller
 tags: []
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador entra o sale de un taller de modificación.
@@ -42,6 +40,13 @@ Bugs conocidos: Los jugadores colisionan cuando entran al mismo taller de modifi
 
 :::
 
-## Funciones Relacionadas
+## Callbacks Relacionados
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnEnterExitModShop:
+- [OnVehicleMod](../callbacks/OnVehicleMod): Este callback es llamado cuando un vehículo es modificado.
+- [OnVehicleRespray](../callbacks/OnVehicleRespray): Este callback es llamado cuando un jugador sale del taller de modificaciones, incluso si los colores no fueron modificados.
+- [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Este callback es llamado cuando un jugador realiza una vista previa de una pintura en el taller. Puedes ver las identificaciones en [Vehicle Paintjob IDs](../resources/paintjobs)
 
-- [AddVehicleComponent](../functions/AddVehicleComponent): Añadir un componente a un vehículo.
+## Funciones Relacionadas
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnEnterExitModShop:
+- [IsPlayerInModShop](../functions/IsPlayerInModShop): Verifica que un jugador esté en una tienda de modificaciones.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Añade un componente a un vehículo.

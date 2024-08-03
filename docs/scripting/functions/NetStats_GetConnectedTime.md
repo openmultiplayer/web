@@ -4,8 +4,6 @@ description: Gets the amount of time (in milliseconds) that a player has been co
 tags: ["network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the amount of time (in milliseconds) that a player has been connected to the server for.
@@ -16,7 +14,9 @@ Gets the amount of time (in milliseconds) that a player has been connected to th
 
 ## Returns
 
-This function returns the amount of time (in milliseconds) that a player has been connected to the server for. 0 is returned if the player is not connected.
+This function returns the amount of time (in milliseconds) that a player has been connected to the server for.
+
+0 is returned if the player is not connected.
 
 ## Examples
 

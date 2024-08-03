@@ -6,6 +6,12 @@ tags: ["vehicle"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
+:::warning
+
+This function has not yet been implemented.
+
+:::
+
 ## Description
 
 Hides a vehicle from the game.

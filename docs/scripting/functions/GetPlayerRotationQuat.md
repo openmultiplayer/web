@@ -20,9 +20,9 @@ Returns a player's rotation on all axes as a quaternion.
 
 ## Returns
 
-true: The function was executed successfully.
+**true** - The function was executed successfully.
 
-false: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 The player's rotation is stored in the specified variables.
 

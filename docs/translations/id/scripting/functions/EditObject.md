@@ -4,8 +4,6 @@ description: Memungkinkan Player untuk mengedit object (posisi dan rotasi) mengg
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Deskripsi
 
 Memungkinkan Player untuk mengedit object (posisi dan rotasi) menggunakan mouse mereka pada GUI (Graphical User Interface).

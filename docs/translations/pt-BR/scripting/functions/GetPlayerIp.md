@@ -1,7 +1,7 @@
 ---
 title: GetPlayerIp
 description: Obtém o endereço IP de um jogador específico e armazena-o em uma string.
-tags: ["player"]
+tags: ["player", "ip address"]
 ---
 
 ## Descrição
@@ -37,7 +37,15 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-PAWN é case-sensitive (sensível a maiúsculas e minúsculas). GetPlayerIP não irá funcionar. Esta função não funciona quando usada em OnPlayerDisconnect porque o jogador já está desconectado. Irá retornar um IP inválido (255.255.255.255). Salve os IPs dos jogador em OnPlayerConnect se eles precisarem ser usados no OnPlayerDisconnect.
+PAWN é case-sensitive (sensível a maiúsculas e minúsculas). GetPlayerIP não irá funcionar.
+
+:::
+
+:::warning
+
+**SA-MP server**: Esta função não funciona quando usada em [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) porque o jogador já está desconectado. Irá retornar um IP inválido (255.255.255.255). Salve os IPs dos jogador em [OnPlayerConnect](../callbacks/OnPlayerConnect) se eles precisarem ser usados no [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
+
+**open.mp server**: This function **work** when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
 
 :::
 

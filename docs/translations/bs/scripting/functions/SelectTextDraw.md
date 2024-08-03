@@ -4,12 +4,6 @@ description: Prikaži miš i dozvoli igraču da selektuje textdraw.
 tags: ["textdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikaži miš i dozvoli igraču da selektuje textdraw.

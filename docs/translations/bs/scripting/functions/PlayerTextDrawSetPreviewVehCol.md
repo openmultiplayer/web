@@ -4,12 +4,6 @@ description: Postavlja boju vozila prikaza modela u player-textdrawu (ako je pri
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3x i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja boju vozila prikaza modela u player-textdrawu (ako je prikazano vozilo).

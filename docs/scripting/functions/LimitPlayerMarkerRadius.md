@@ -4,15 +4,13 @@ description: Set the player marker radius.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Set the player marker radius.
 
 | Name                | Description                          |
 | ------------------- | ------------------------------------ |
-| Float:marker_radius | The radius that markers will show at |
+| Float:markerRadius  | The radius that markers will show at |
 
 ## Returns
 

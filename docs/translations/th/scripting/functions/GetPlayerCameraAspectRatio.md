@@ -4,12 +4,6 @@ description: Retrieves the aspect ratio of a player's camera.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3z and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Retrieves the aspect ratio of a player's camera.

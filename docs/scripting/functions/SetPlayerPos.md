@@ -17,18 +17,18 @@ Set a player's position.
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
 ```c
-// Teleports players to the center of San Andreas when they type /middle
 public OnPlayerCommandText(playerid,cmdtext[])
 {
     if (!strcmp(cmdtext, "/middle", true))
     {
+        // Teleports players to the center of San Andreas when they type /middle
         SetPlayerPos(playerid, 0.0, 0.0, 3.0);
         return 1;
     }

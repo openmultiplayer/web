@@ -4,8 +4,6 @@ description: Check the state of a player's weapon.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Check the state of a player's weapon.
@@ -16,15 +14,33 @@ Check the state of a player's weapon.
 
 ## Returns
 
-The [state of the player's weapon](../resources/weaponstates). 0 if player specified does not exist.
+The [state of the player's weapon](../resources/weaponstates).
+
+**0** if player specified does not exist.
 
 ## Examples
 
 ```c
-public OnPlayerSpawn(playerid)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    SetPVarInt(playerid, "WepState", GetPlayerWeaponState(playerid));
-    return 1;
+    if (!strcmp(cmdtext, "/wstate", true))
+    {
+        new WEAPONSTATE:state = GetPlayerWeaponState(playerid);
+
+        static weaponStates[4][64] = 
+        {
+            "Current weapon has no ammo remaining",
+            "Current weapon has a single bullet left",
+            "Current weapon has more than one bullet left",
+            "Reloading current weapon"
+        };
+
+        new string[144];
+        format(string, sizeof(string), "Your weapon state: %s", weaponStates[state]);
+        SendClientMessage(playerid, -1, string);
+        return 1;
+    }
+    return 0;
 }
 ```
 

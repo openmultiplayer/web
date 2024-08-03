@@ -4,8 +4,6 @@ description: Set position of the NPC
 tags: ["npc"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Set the position of the NPC. 

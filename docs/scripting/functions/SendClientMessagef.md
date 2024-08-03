@@ -6,9 +6,17 @@ tags: []
 
 <VersionWarn version='open.mp beta build 6' />
 
+:::warning
+
+This function was deprecated.
+
+[SendClientMessage](SendClientMessage) function now is built-in with format!
+
+:::
+
 ## Description
 
-This function sends a formatted message to a specific player with a chosen color in the chat. The whole line in the chatbox will be in the set color unless color embedding is used (0.3c or later).
+This function sends a formatted message to a specific player with a chosen color in the chat. The whole line in the chatbox will be in the set color unless color embedding is used.
 
 | Name            | Description                                           |
 | --------------- | ----------------------------------------------------- |
@@ -60,16 +68,6 @@ You can use color embedding for multiple colors in the message. Using '-1' as th
 
 :::warning
 
-This function was deprecated in open.mp RC1. SendClientMessage function now is built-in with format.
-
-:::
-
-:::warning
-
 If a message is longer than 144 characters, it will not be sent. Truncation can be used to prevent this. Displaying a message on multiple lines will also solve this issue.
 
 :::
-
-## Related Functions
-
-- [SendClientMessagef](SendClientMessagef): Send a formatted message to a certain player.

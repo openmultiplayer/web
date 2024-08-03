@@ -4,8 +4,6 @@ description: Provera da li je igrac pravi igrac ili NPC.
 tags: ["player", "npc"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Provera da li je igrac pravi igrac ili NPC.

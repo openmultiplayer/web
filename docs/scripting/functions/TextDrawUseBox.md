@@ -8,21 +8,21 @@ tags: ["textdraw"]
 
 Toggle whether a textdraw uses a box or not.
 
-| Name | Description                                       |
-| ---- | ------------------------------------------------- |
-| Text:text | The ID of the text textdraw to toggle the box of. |
-| bool:use  | 'true' to show a box or 'false' to not show a box. |
+| Name           | Description                                        |
+| -------------- | -------------------------------------------------- |
+| Text:textid    | The ID of the text textdraw to toggle the box of.  |
+| bool:enableBox | 'true' to show a box or 'false' to not show a box. |
 
 ## Returns
 
-true: The function executed successfully.
+**true** - The function executed successfully.
 
-false: The function failed to execute. This means the textdraw specified does not exist.
+**false** - The function failed to execute. This means the textdraw specified does not exist.
 
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) to show the changes of this function.
+If the textdraw is already shown, it must be re-shown ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) to show the changes of this function.
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title: SetActorHealth
 description: Set the health of an actor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -17,9 +17,9 @@ Set the health of an actor.
 
 ## Returns
 
-1 - success
+**true** - success
 
-0 - failure (i.e. actor is not created).
+**false** - failure (i.e. actor is not created).
 
 ## Examples
 
@@ -29,9 +29,13 @@ new gMyActor;
 public OnGameModeInit()
 {
     gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
-    SetActorHealth(gMyActor, 100);
+    
+    SetActorHealth(gMyActor, 100.0);
     return 1;
 }
 ```
 
 ## Related Functions
+
+- [GetActorHealth](GetActorHealth): Get the health of an actor.
+- [SetActorInvulnerable](SetActorInvulnerable): Set actor invulnerable.

@@ -10,12 +10,12 @@ tags: ["file management"]
 
 Read a single line from a file.
 
-| Name   | Description                                                    |
-| ------ | -------------------------------------------------------------- |
-| handle | The handle of the file to read from (returned by fopen).       |
-| string | A string array to store the read text in, passed by reference. |
-| size   | The number of bytes to read.                                   |
-| pack   | Should the string be packed? True/false.                       |
+| Name                   | Description                                                    |
+| ---------------------- | -------------------------------------------------------------- |
+| File:handle            | The handle of the file to read from (returned by fopen).       |
+| string[]               | A string array to store the read text in, passed by reference. |
+| size = sizeof (string) | The number of bytes to read.                                   |
+| bool:pack              | Should the string be packed? (default: false).                 |
 
 ## Returns
 
@@ -25,10 +25,10 @@ The length of string (the read text) as an integer.
 
 ```c
 // Open "file.txt" in "read only" mode
-new File:handle = fopen("file.txt", io_read),
+new File:handle = fopen("file.txt", io_read);
 
-    // Initialize "buf"
-    buf[128];
+// Initialize "buf"
+new buf[128];
 
 // Check, if the file is opened
 if (handle)
@@ -36,7 +36,10 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf)) print(buf);
+    while(fread(handle, buf))
+    {
+        print(buf);
+    }
 
     // Close the file
     fclose(handle);
@@ -46,11 +49,16 @@ else
     // Error
     print("The file \"file.txt\" does not exists, or can't be opened.");
 }
-// Open "file.txt" in "read and write" mode
-new File:handle = fopen("file.txt"),
+```
 
-    // Initialize "buf"
-    buf[128];
+<br />
+
+```c
+// Open "file.txt" in "read and write" mode
+new File:handle = fopen("file.txt");
+
+// Initialize "buf"
+new buf[128];
 
 // Check, if file is open
 if (handle)
@@ -58,7 +66,10 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf)) print(buf);
+    while(fread(handle, buf))
+    {
+        print(buf);
+    }
 
     // Set the file pointer to the first byte
     fseek(handle, _, seek_begin);
@@ -80,7 +91,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
@@ -99,3 +110,12 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.
+- [ftell](ftell): Get the current position in the file.
+- [fflush](fflush): Flush a file to disk (ensure all writes are complete).
+- [fstat](fstat): Return the size and the timestamp of a file.
+- [frename](frename): Rename a file.
+- [fcopy](fcopy): Copy a file.
+- [filecrc](filecrc): Return the 32-bit CRC value of a file.
+- [diskfree](diskfree): Returns the free disk space.
+- [fattrib](fattrib): Set the file attributes.
+- [fcreatedir](fcreatedir): Create a directory.

@@ -4,12 +4,6 @@ description: Prikvači objekat za vozilo.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3c i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikvači objekat za vozilo.

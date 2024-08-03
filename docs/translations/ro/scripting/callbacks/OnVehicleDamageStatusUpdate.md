@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un element al vehiculului, 
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 :::tip
 
 Pentru câteva funcții utile pentru lucrul cu valorile daunelor vehiculului, consultați [aici](../resources/damagestatus).

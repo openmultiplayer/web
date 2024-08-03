@@ -4,19 +4,13 @@ description: Updates a 3D Text Label text and color.
 tags: ["3dtextlabel"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Updates a 3D Text Label text and color.
 
 | Name      | Description                                                   |
 | --------- | ------------------------------------------------------------- |
-| Text3D:id | The 3D Text Label you want to update.                         |
+| Text3D:textid | The 3D Text Label you want to update.                         |
 | color     | The color the 3D Text Label should have from now on.          |
 | text[]    | The new text which the 3D Text Label should have from now on. |
 

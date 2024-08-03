@@ -4,12 +4,6 @@ description: Bu callback, bir oyuncu ShowPlayerDialog kullanılarak gösterilen 
 tags: []
 ---
 
-:::warning
-
-Bu callback SA-MP 0.3a sürümünde eklendi ve önceki sürümlerde çalıştırılamaz.
-
-:::
-
 ## Açıklama
 
 Bu callback, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.

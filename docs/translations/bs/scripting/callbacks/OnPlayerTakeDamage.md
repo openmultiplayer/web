@@ -4,23 +4,17 @@ description: Ovaj callback je pozvan kada igrač prvimi povredu (damage).
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada igrač prvimi povredu (damage).
 
-| Ime      | Deskripcija                                                                                                                    |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| playerid | ID igrača koji je primio povredu (damage).                                                                                     |
-| issuerid | ID igrača koji je uzrokovao povredu. INVALID_PLAYER_ID ako je sam sebe povrijedio.                                             |
-| amount   | Količina povrede (damage-a) koje je igrač primio (health i armor kombinirano).                                                 |
-| weaponid | ID oružja/razlog zbog kojeg je primio povredu (damage).                                                                        |
-| bodypart | Dio tijela u koji je igrač pogođen. (NOTE: Ovaj parametar je dodan u 0.3z. Ostavite ga praznog ako koristite starije verzije!) |
+| Ime             | Deskripcija                                                                                                                    |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------|
+| playerid        | ID igrača koji je primio povredu (damage).                                                                                     |
+| issuerid        | ID igrača koji je uzrokovao povredu. INVALID_PLAYER_ID ako je sam sebe povrijedio.                                             |
+| Float:amount    | Količina povrede (damage-a) koje je igrač primio (health i armor kombinirano).                                                 |
+| WEAPON:weaponid | ID oružja/razlog zbog kojeg je primio povredu (damage).                                                                        |
+| bodypart        | Dio tijela u koji je igrač pogođen. |
 
 ## Returns
 
@@ -33,7 +27,7 @@ Uvijek je pozvan prvo u filterskripti tako da će return-ovanje 1 ovdje blokirat
 ## Primjeri
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID) // If not self-inflicted
     {
@@ -53,7 +47,8 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
     }
     return 1;
 }
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
@@ -78,4 +73,7 @@ GetPlayerHealth i GetPlayerArmour će return-ovati stare vrijednosti igračevog 
 
 :::
 
-## Srodne Funkcije
+## Srodne Callbacks
+
+- [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon.

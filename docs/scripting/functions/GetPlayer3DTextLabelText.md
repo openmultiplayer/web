@@ -10,12 +10,12 @@ tags: ["player", "3dtextlabel"]
 
 Gets the player's 3D text label text.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player.  |
-| PlayerText3D:textid | The ID of the player's 3D text label to get the text of. |
-| text[] | An array into which to store the text, passed by reference. |
-| len | The length of the text that should be stored. |
+| Name                | Description                                                 |
+| ------------------- | ----------------------------------------------------------- |
+| playerid            | The ID of the player.                                       |
+| PlayerText3D:textid | The ID of the player's 3D text label to get the text of.    |
+| text[]              | An array into which to store the text, passed by reference. |
+| len                 | The length of the text that should be stored.               |
 
 ## Examples
 
@@ -28,7 +28,7 @@ GetPlayerPos(playerid, X, Y, Z);
 playerTextId = CreatePlayer3DTextLabel(playerid, "Hello World!", 0x008080FF, X, Y, Z, 40.0);
 
 GetPlayer3DTextLabelText(playerid, playerTextId, text, sizeof(text));
-// The `text` will be 'Hello World!'
+// text = "Hello World!"
 ```
 
 ## Related Functions

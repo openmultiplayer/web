@@ -4,12 +4,6 @@ description: This function plays a crime report for a player - just like in sing
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 This function plays a crime report for a player - just like in single-player when CJ commits a crime.

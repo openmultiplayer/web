@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător face clic pe un
 tags: ["player", "textdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător face clic pe un textdraw sau anulează modul de selectare cu tasta ESC.
@@ -39,7 +37,7 @@ public OnGameModeInit()
     return 1;
 }
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (newkeys == KEY_SUBMISSION)
     {

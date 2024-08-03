@@ -4,7 +4,7 @@ description: This callback is called when a pickup leaves the visual range of a 
 tags: ["player"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarn name='callback' version='omp v1.1.0.2612' />
 
 ## Description
 

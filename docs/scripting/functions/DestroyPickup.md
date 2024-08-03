@@ -14,7 +14,9 @@ Destroys a pickup created with CreatePickup.
 
 ## Returns
 
-This function does not return any specific values.
+**true** - The function executed successfully.
+
+**false** - The function failed to execute. The pickup specified doesn't exist.
 
 ## Examples
 
@@ -24,7 +26,7 @@ new g_PickupArmour;
 // Create a pickup for armor.
 g_PickupArmour = CreatePickup(1242, 2, 1503.3359, 1432.3585, 10.1191);
 
-//some time later...
+// Some time later...
 DestroyPickup(g_PickupArmour);
 ```
 

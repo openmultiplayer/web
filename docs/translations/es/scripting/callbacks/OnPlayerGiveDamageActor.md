@@ -11,11 +11,11 @@ tags: ["player"]
 Este callback se llama cuando un jugador le hace daño a un actor.
 
 | Nombre          | Descripción                                             |
-| --------------- | ------------------------------------------------------- |
+|-----------------|---------------------------------------------------------|
 | playerid        | El ID del jugador que hizo daño.                        |
 | damaged_actorid | El ID del actor que recibió daño.                       |
-| amount          | La cantidad de vida/chaleco que damaged_actorid perdió. |
-| weaponid        | La razón que causó el daño.                             |
+| Float:amount    | La cantidad de vida/chaleco que damaged_actorid perdió. |
+| WEAPON:weaponid | La razón que causó el daño.                             |
 | bodypart        | La parte del cuerpo que fue golpeada.                   |
 
 ## Devoluciones
@@ -29,7 +29,7 @@ Siempre se llama primero en filterscripts.
 ## Ejemplos
 
 ```c
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponid, bodypart)
+public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -46,7 +46,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponi
 
 :::tip
 
-Esta función no es llamada cuando el actor es establecido invulnerable (QUE ASÍ SE ESTABLECE POR DEFECTO). Vea SetActorInvulnerable.
+Esta función no es llamada cuando el actor es establecido invulnerable (QUE ASÍ SE ESTABLECE POR DEFECTO). Vea [SetActorInvulnerable](../functions/SetActorInvulnerable).
 
 :::
 
@@ -58,5 +58,8 @@ Esta función no es llamada cuando el actor es establecido invulnerable (QUE AS�
 - [GetActorHealth](../functions/GetActorHealth): Conseguir la salud de un actor.
 - [IsActorInvulnerable](../functions/IsActorInvulnerable): Comprobar si el actor es invulnerable.
 - [IsValidActor](../functions/IsValidActor): Comprobar si el ID del actor es válida.
+
+## Callbacks Relacionadas
+
 - [OnActorStreamOut](OnActorStreamOut): Se llama cuando un actor es dejado de cargar por el cliente de un jugador.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Se llama cuando un jugador se comienza a cargar por el cliente de otro jugador. 

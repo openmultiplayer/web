@@ -14,9 +14,11 @@ Get a player's name.
 | name[]   | An array into which to store the name, passed by reference.                                                                                     |
 | len      | The length of the string that should be stored. Recommended to be MAX_PLAYER_NAME + 1. The + 1 is necessary to account for the null terminator. |
 
-## Returns
+## Return Values
 
-The player's name is stored in the specified array.
+Returns the length of the player's name.
+
+**0** if player specified doesn't exist.
 
 ## Examples
 
@@ -28,7 +30,7 @@ public OnPlayerConnect(playerid)
     new name[MAX_PLAYER_NAME + 1];
     GetPlayerName(playerid, name, sizeof(name));
 
-    new string[MAX_PLAYER_NAME + 23 + 1];
+    new string[128];
     format(string, sizeof(string), "%s has joined the server.", name);
     SendClientMessageToAll(0xC4C4C4FF, string);
 
@@ -40,7 +42,11 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-A player's name can be up to 24 characters long (as of 0.3d R2) by using SetPlayerName. This is defined in a_samp.inc as MAX_PLAYER_NAME. However, the client can only join with a nickname between 3 and 20 characters, otherwise the connection will be rejected and the player has to quit to choose a valid name.
+A player's name can be up to 24 characters long by using [SetPlayerName](SetPlayerName).
+
+This is defined as `MAX_PLAYER_NAME`.
+
+However, the client can only join with a nickname between 3 and 20 characters, otherwise the connection will be rejected and the player has to quit to choose a valid name.
 
 :::
 

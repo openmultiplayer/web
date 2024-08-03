@@ -4,8 +4,6 @@ description: Cette callback est appelée quand un joueur envoie une mise à jour
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R4' />
-
 ## Paramètres
 
 Cette callback est appelée quand un joueur envoie une mise à jour d'un trailer (véhicule).

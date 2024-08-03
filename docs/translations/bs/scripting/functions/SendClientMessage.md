@@ -6,7 +6,7 @@ tags: []
 
 ## Deskripcija
 
-Ova funkcija šalje poruku navedenom igraču sa odabranom bojom u chatu. Cijela linija u chatboxu će biti u postavljenoj boji sve dok se ne koristi ugrađivanje boja u tekstu (0.3c ili kasnije verzije).
+Ova funkcija šalje poruku navedenom igraču sa odabranom bojom u chatu. Cijela linija u chatboxu će biti u postavljenoj boji sve dok se ne koristi ugrađivanje boja u tekstu.
 
 | Ime             | Deskripcija                             |
 | --------------- | --------------------------------------- |

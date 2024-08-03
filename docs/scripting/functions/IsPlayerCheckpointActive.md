@@ -10,8 +10,8 @@ tags: ["player", "checkpoint"]
 
 Check if the player currently has a checkpoint visible.
 
-| Name        | Description           |
-| ----------- | --------------------- |
+| Name     | Description                    |
+| -------- | ------------------------------ |
 | playerid | The ID of the player to check. |
 
 ## Return Values

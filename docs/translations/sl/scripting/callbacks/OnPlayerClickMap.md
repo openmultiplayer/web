@@ -4,12 +4,6 @@ description: OnPlayerClickMap se pokliče, ko si igralec postavi tarčo(target/w
 tags: ["player"]
 ---
 
-:::warning
-
-Ta funkcijo je bila dodana SA-MP 0.3d in v spodnjih različicah ne deluje!
-
-:::
-
 ## Opis
 
 OnPlayerClickMap se pokliče, ko si igralec postavi tarčo(target/waypoint) na zemljevidu menija za premor (desni klik).

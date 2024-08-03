@@ -4,8 +4,6 @@ description: OnPlayerClickMap é chamado quando um jogador pocisiona um ponto no
 tags: ["player"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3b' />
-
 ## Descrição
 
 OnPlayerClickMap é chamado quando um jogador pocisiona um ponto no mapa do menu de pausa (clicando com botão direito).

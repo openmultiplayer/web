@@ -4,15 +4,13 @@ description: 将三维文本标签附加到玩家身上。
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 将三维文本标签附加到玩家身上。
 
 | 参数名    | 说明                                                   |
 | --------- | ------------------------------------------------------ |
-| Text3D:id | 要附加的三维文本标签的 ID。由 Create3DTextLabel 返回。 |
+| Text3D:textid | 要附加的三维文本标签的 ID。由 Create3DTextLabel 返回。 |
 | playerid  | 要附加的玩家 ID。                                      |
 | OffsetX   | 距离玩家的 X 坐标偏移量。                              |
 | OffsetY   | 距离玩家的 Y 坐标偏移量。                              |

@@ -4,12 +4,6 @@ description: Ta "callback" se pokliče, ko se naslov IP poskuša povezati s stre
 tags: []
 ---
 
-:::warning
-
-Ta funkcijo je bila dodana v SA-MP 0.3z R2-2 in ne deluje v nižjih različicah!
-
-:::
-
 ## Opis
 
 Ta "callback" se pokliče, ko se naslov IP poskuša povezati s strežnikom. Če želite blokirati dohodne povezave, uporabite "BlockIpAddress".

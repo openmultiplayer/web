@@ -4,12 +4,6 @@ description: Uklanja prikvačene objekte.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3b i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Uklanja prikvačene objekte.
@@ -25,7 +19,7 @@ Uklanja prikvačene objekte.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (IsPlayerHoldingObject(playerid))
     {
@@ -39,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::warning
 
-Je uklonjena u SA-MP 0.3c. provjerite RemovePlayerAttachedObject
+Je uklonjena u SA-MP 0.3c. provjerite [RemovePlayerAttachedObject](RemovePlayerAttachedObject)
 
 :::
 

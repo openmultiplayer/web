@@ -10,9 +10,9 @@ tags: ["math", "floating-point"]
 
 Get the fractional part of a float. This means the value of the numbers after the decimal point.
 
-| Name  | Description                              |
-| ----- | ---------------------------------------- |
-| value | The float to get the fractional part of. |
+| Name        | Description                              |
+| ----------- | ---------------------------------------- |
+| Float:value | The float to get the fractional part of. |
 
 ## Returns
 

@@ -4,8 +4,6 @@ description: Tinatawag ang callback na ito kapag matagumpay na nakakonekta ang i
 tags: ["npc"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Tinatawag ang callback na ito kapag matagumpay na nakakonekta ang isang NPC sa server.

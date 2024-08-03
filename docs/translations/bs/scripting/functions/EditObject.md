@@ -4,12 +4,6 @@ description: Omogućuje igraču da uređuje objekt (položaj i rotaciju) pomoću
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Omogućuje igraču da uređuje objekt (položaj i rotaciju) pomoću miša na GUI (grafičko korisničko sučelje / Graphical User Interface).

@@ -4,8 +4,6 @@ description: Gets the number of messages the server has received from the player
 tags: ["network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the number of messages the server has received from the player.
@@ -16,7 +14,9 @@ Gets the number of messages the server has received from the player.
 
 ## Returns
 
-This function returns the number of messages the server has received from the player. 0 is returned if the player is not connected.
+This function returns the number of messages the server has received from the player.
+
+0 is returned if the player is not connected.
 
 ## Examples
 

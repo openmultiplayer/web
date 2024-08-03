@@ -4,12 +4,6 @@ description: Creates an explosion that is only visible to a single player.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3z R2-2 and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Creates an explosion that is only visible to a single player. This can be used to isolate explosions from other players or to make them only appear in specific virtual worlds.

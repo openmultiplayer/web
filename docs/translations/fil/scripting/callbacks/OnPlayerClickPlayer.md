@@ -4,8 +4,6 @@ description: Called when a player double-clicks on a player on the scoreboard.
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Itinatawag kapag ang player ay nag-double-click sa isang player sa scoreboard. (Tab)
@@ -27,7 +25,7 @@ Ito ay palaging itinatawag una sa mga filterscripts.
 ## Examples
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Ipinindot mo si player id: %d", clickedplayerid);

@@ -4,12 +4,6 @@ description: Kreira 3D Text Label samo za jednog određenog igrača.
 tags: ["player", "3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Kreira 3D Text Label samo za jednog određenog igrača.

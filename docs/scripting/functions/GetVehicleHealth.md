@@ -15,30 +15,35 @@ Get the health of a vehicle.
 
 ## Returns
 
-1 - success
+**true** - success
 
-0 - failure (invalid vehicle ID).
+**false** - failure (invalid vehicle ID).
 
 The vehicle's health is stored in the referenced variable, not in the return value.
 
 ## Examples
 
 ```c
-if (strcmp(cmdtext, "/repair", true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new
-        Float: vehicleHealth,
-        playerVehicleId = GetPlayerVehicleID(playerid);
-
-    GetVehicleHealth(playerVehicleId, vehicleHealth);
-
-    if (vehicleHealth > 500.0)
+    if (strcmp(cmdtext, "/repair", true) == 0)
     {
-        return SendClientMessage(playerid, COLOR_RED, "Vehicle doesn't need repairing!");
-    }
+        new
+            Float:vehicleHealth,
+            vehicleid = GetPlayerVehicleID(playerid);
 
-    SetVehicleHealth(playerVehicleId, 1000.0);
-    SendClientMessage(playerid, COLOR_GREEN, "Vehicle repaired!");
+        GetVehicleHealth(vehicleid, vehicleHealth);
+
+        if (vehicleHealth > 500.0)
+        {
+            return SendClientMessage(playerid, COLOR_RED, "Vehicle doesn't need repairing!");
+        }
+
+        SetVehicleHealth(vehicleid, 1000.0);
+        SendClientMessage(playerid, COLOR_GREEN, "Vehicle repaired!");
+        return 1;
+    }
+    return 0;
 }
 ```
 

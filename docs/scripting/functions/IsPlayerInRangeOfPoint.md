@@ -4,8 +4,6 @@ description: Checks if a player is in range of a point.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Checks if a player is in range of a point. This native function is faster than the PAWN implementation using distance formula.
@@ -20,21 +18,24 @@ Checks if a player is in range of a point. This native function is faster than t
 
 ## Returns
 
-true - The player is in range of the point.
+**true** - The player is in range of the point.
 
-false - The player is not in range of the point.
+**false** - The player is not in range of the point.
 
 ## Examples
 
 ```c
-if (!strcmp("/stadium", cmdtext))
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (IsPlayerInRangeOfPoint(playerid, 7.0, 2695.6880, -1704.6300, 11.8438))
+    if (!strcmp(cmdtext, "/stadium", true))
     {
-        SendClientMessage(playerid,0xFFFFFFFF,"You are near the stadium entrance!");
+        if (IsPlayerInRangeOfPoint(playerid, 7.0, 2695.6880, -1704.6300, 11.8438))
+        {
+            SendClientMessage(playerid, 0xFFFFFFFF, "You are near the stadium entrance!");
+        }
+        return 1;
     }
-
-    return 1;
+    return 0;
 }
 ```
 

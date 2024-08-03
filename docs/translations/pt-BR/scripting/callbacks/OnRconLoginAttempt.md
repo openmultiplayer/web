@@ -4,8 +4,6 @@ description: Essa callback é executada quando algum jogador tenta login na RCON
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descrição
 
 Essa callback é executada quando algum jogador tenta login na RCON; seja ele bem sucedido ou não.

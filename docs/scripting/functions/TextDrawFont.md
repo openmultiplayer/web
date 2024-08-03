@@ -8,10 +8,10 @@ tags: ["textdraw"]
 
 Changes the text font.
 
-| Name | Description                                                                                                                                                                                                                                            |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| text | The TextDraw to change                                                                                                                                                                                                                                 |
-| font | There are four font styles as shown below. Font value 4 specifies that this is a txd sprite; 5 specifies that this textdraw can display preview models. A font value greater than 5 does not display, and anything greater than 16 crashes the client. |
+| Name                | Description                                                                                                                                                                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Text:textid         | The TextDraw to change                                                                                                                                                                                                                                 |
+| TEXT_DRAW_FONT:font | There are four font styles as shown below. Font value 4 specifies that this is a txd sprite; 5 specifies that this textdraw can display preview models. A font value greater than 5 does not display, and anything greater than 16 crashes the client. |
 
 Available Styles:
 ![Available Styles](images/textdraws/Textdraw_font_styles.png)
@@ -35,7 +35,7 @@ This function does not return any specific values.
     TEXT_DRAW_FONT_MODEL_PREVIEW
 */
 
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -49,7 +49,7 @@ public OnGameModeInit()
 
 :::tip
 
-If you want to change the font of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+If you want to change the font of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 
 :::
 

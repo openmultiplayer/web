@@ -6,7 +6,11 @@ description: open.mp server configuration file.
 ## Description
 
 - `config.json` is a server configuration file which allows you to change all kinds of settings of your open.mp server.
-- You can still use [server.cfg](server.cfg) file in your open.mp server, but it is recommended to use config.json!
+- You can still use [server.cfg](server.cfg) file in your open.mp server, but it is recommended to use config.json because there are more settings!
+
+<br />
+
+<hr />
 
 <br />
 
@@ -14,7 +18,7 @@ description: open.mp server configuration file.
 
 You can simply convert your server.cfg to config.json.
 
-Open a command prompt in your server directory and type the following line, then press Enter:
+Open a command prompt in your server directory and type the following command, then press Enter:
 
 ```bash
 # Windows
@@ -24,7 +28,15 @@ omp-server --dump-config
 ./omp-server --dump-config
 ```
 
-Or to generate a default config.json:
+**Note:** If you have a config.json file in the directory, you may need to delete it before executing the above command.
+
+:::
+
+<br />
+
+:::tip
+
+To generate a default config.json enter the following command:
 
 ```bash
 # Windows
@@ -35,6 +47,8 @@ omp-server --default-config
 ```
 
 :::
+
+<hr />
 
 ## Announce
 
@@ -104,19 +118,20 @@ omp-server --default-config
 
 ## Logging
 
-| Key                        | Type   | Default value         | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                            |
-|----------------------------|--------|-----------------------|-----------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| logging.enable             | bool   | true                  | ❌         | ❌    | Enable/Disable logging.                                                                                                                                                                                                                                                                                                                                                           |
-| logging.file               | string | log.txt               | ✅         | ❌    | The path and file name to save the server log.                                                                                                                                                                                                                                                                                                                                    |
-| logging.log_chat           | bool   | true                  | ❌         | ❌    | Toggles if player chat should be shown in the server console. Useful to stop the log from becoming bloated, or if you have another scripted chat logging solution. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                         |
-| logging.log_cookies        | bool   | false                 | ❌         | ❌    | Toggles logging of connection cookies requested by newly connecting players. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                               |
-| logging.log_deaths         | bool   | true                  | ❌         | ❌    | Toggles if player death should be shown in the server console. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                                             |
-| logging.log_queries        | bool   | false                 | ❌         | ❌    | Toggles if all queries sent to the server by players should be logged. Set to '**true**' to enable or '**false**' to disable. It is considerably useful during a DDoS attack.                                                                                                                                                                                                     |
-| logging.log_sqlite         | bool   | false                 | ❌         | ❌    | Logs sqlite DB\_\* function errors in the server console.                                                                                                                                                                                                                                                                                                                         |
-| logging.log_sqlite_queries | bool   | false                 | ❌         | ❌    | Logs all sqlite DB_Query calls, including the query string.                                                                                                                                                                                                                                                                                                                       |
-| logging.timestamp_format   | string | [%Y-%m-%dT%H:%M:%S%z] | ✅         | ❌    | The timestamp format that should be used. The format is based on the [strftime](http://cplusplus.com/reference/clibrary/ctime/strftime/) format from C/C++. Here are some examples:<br /><br />**[%H:%M:%S]** This displays only the time.<br /><br />**[%d/%m/%Y %H:%M:%S]** This would display the date in dd/mm/yyyy format followed by the time in hour:minute:second format. |
-| logging.use_prefix         | bool   | true                  | ❌         | ❌    | Toggles if prefixes such as `[Info]` should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                         |
-| logging.use_timestamp      | bool   | true                  | ❌         | ❌    | Toggles if a timestamp should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                                       |
+| Key                             | Type   | Default value         | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                            |
+|---------------------------------|--------|-----------------------|-----------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| logging.enable                  | bool   | true                  | ❌         | ❌    | Enable/Disable logging.                                                                                                                                                                                                                                                                                                                                                           |
+| logging.file                    | string | log.txt               | ✅         | ❌    | The path and file name to save the server log.                                                                                                                                                                                                                                                                                                                                    |
+| logging.log_chat                | bool   | true                  | ❌         | ❌    | Toggles if player chat should be shown in the server console. Useful to stop the log from becoming bloated, or if you have another scripted chat logging solution. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                         |
+| logging.log_connection_messages | bool   | true                  | ❌         | ❌    | Enable/Disable player and NPC join messages.                                                                                                                                                                                                                                                                                                                                      |
+| logging.log_cookies             | bool   | false                 | ❌         | ❌    | Toggles logging of connection cookies requested by newly connecting players. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                               |
+| logging.log_deaths              | bool   | true                  | ❌         | ❌    | Toggles if player death should be shown in the server console. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                                             |
+| logging.log_queries             | bool   | false                 | ❌         | ❌    | Toggles if all queries sent to the server by players should be logged. Set to '**true**' to enable or '**false**' to disable. It is considerably useful during a DDoS attack.                                                                                                                                                                                                     |
+| logging.log_sqlite              | bool   | false                 | ❌         | ❌    | Logs sqlite DB\_\* function errors in the server console.                                                                                                                                                                                                                                                                                                                         |
+| logging.log_sqlite_queries      | bool   | false                 | ❌         | ❌    | Logs all sqlite DB_Query calls, including the query string.                                                                                                                                                                                                                                                                                                                       |
+| logging.timestamp_format        | string | [%Y-%m-%dT%H:%M:%S%z] | ✅         | ❌    | The timestamp format that should be used. The format is based on the [strftime](http://cplusplus.com/reference/clibrary/ctime/strftime/) format from C/C++. Here are some examples:<br /><br />**[%H:%M:%S]** This displays only the time.<br /><br />**[%d/%m/%Y %H:%M:%S]** This would display the date in dd/mm/yyyy format followed by the time in hour:minute:second format. |
+| logging.use_prefix              | bool   | true                  | ❌         | ❌    | Toggles if prefixes such as `[Info]` should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                         |
+| logging.use_timestamp           | bool   | true                  | ❌         | ❌    | Toggles if a timestamp should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                                       |
 
 ## NPCs and Players
 
@@ -169,11 +184,11 @@ omp-server --default-config
 
 ## Pawn
 
-| Key            | Type         | Default value | Read-only | Rule | Effect                                                                                                                                                                                                      |
-|----------------|--------------|---------------|-----------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| legacy_plugins | list, string | []            | ✅         | ❌    | The .dll or .so file in the /plugins folder, the server should use to run as a plugin. Plugins are scripts which are designed to enhance gamemodes and filterscripts.<br />Example: `["mysql", "streamer"]` |
-| main_scripts   | list, string | ["test 1"]    | ✅         | ❌    | The .amx file in the /gamemodes folder, the server should use to run as a gamemode.                                                                                                                         |
-| side_scripts   | list, string | []            | ✅         | ❌    | The .amx file in the /filterscripts folder, the server should use to run as a filterscript. Filterscripts are scripts that run in the background of your gamemode. They are there to add extras to the server without editing the gamemode. It is very useful if you want to carry a specific property to more than one gamemode.<br />Example: `["filterscripts/Race_System"]` |
+| Key                 | Type         | Default value | Read-only | Rule | Effect                                                                                                                                                                                                      |
+|---------------------|--------------|---------------|-----------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| pawn.legacy_plugins | list, string | []            | ✅         | ❌    | The .dll or .so file in the /plugins folder, the server should use to run as a plugin. Plugins are scripts which are designed to enhance gamemodes and filterscripts.<br />Example: `["mysql", "streamer"]` |
+| pawn.main_scripts   | list, string | ["test 1"]    | ✅         | ❌    | The .amx file in the /gamemodes folder, the server should use to run as a gamemode.                                                                                                                         |
+| pawn.side_scripts   | list, string | []            | ✅         | ❌    | The .amx file in the /filterscripts folder, the server should use to run as a filterscript. Filterscripts are scripts that run in the background of your gamemode. They are there to add extras to the server without editing the gamemode. It is very useful if you want to carry a specific property to more than one gamemode.<br />Example: `["filterscripts/Race_System"]` |
 
 ## RCON
 
@@ -206,10 +221,10 @@ omp-server --default-config
 
 ## Banners
 
-| Key   | Type   | Default value | Read-only | Rule | Effect                                                                     |
-|-------|--------|---------------|-----------|------|----------------------------------------------------------------------------|
-| light | string |               | ❌         | ❌    | Your server's light banner url address that appears in the server browser. |
-| dark  | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the server browser.  |
+| Key           | Type   | Default value | Read-only | Rule | Effect                                                                     |
+|---------------|--------|---------------|-----------|------|----------------------------------------------------------------------------|
+| banners.light | string |               | ❌         | ❌    | Your server's light banner url address that appears in the server browser. |
+| banners.dark  | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the server browser.  |
 
 ![](https://i.ibb.co/86T8wYG/image.png)
 

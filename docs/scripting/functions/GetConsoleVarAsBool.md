@@ -8,9 +8,9 @@ tags: []
 
 Get the boolean value of a console variable.
 
-| Name            | Description                                           |
-| --------------- | ----------------------------------------------------- |
-| const varname[] | The name of the boolean variable to get the value of. |
+| Name         | Description                                           |
+| ------------ | ----------------------------------------------------- |
+| const cvar[] | The name of the boolean variable to get the value of. |
 
 ## Returns
 
@@ -21,7 +21,7 @@ The value of the specified console variable. 0 if the specified console variable
 ```c
 public OnGameModeInit()
 {
-    new queryEnabled = GetConsoleVarAsBool("query");
+    new queryEnabled = GetConsoleVarAsBool("enable_query");
     if (!queryEnabled)
     {
         print("WARNING: Querying is disabled. The server will appear offline in the server browser.");

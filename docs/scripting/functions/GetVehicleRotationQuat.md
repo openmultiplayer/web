@@ -4,8 +4,6 @@ description: Returns a vehicle's rotation on all axes as a quaternion.
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
-
 ## Description
 
 Returns a vehicle's rotation on all axes as a quaternion.
@@ -20,17 +18,30 @@ Returns a vehicle's rotation on all axes as a quaternion.
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle specified does not exist.
+**false** - The function failed to execute. This means the vehicle specified does not exist.
 
 The vehicle's rotation is stored in the specified variables.
+
+## Examples
+
+```c
+new 
+    Float:w,
+    Float:x,
+    Float:y,
+    Float:z;
+
+GetVehicleRotationQuat(vehicleid, w, x, y, z);
+```
 
 ## Notes
 
 :::tip
 
-There is no 'set' variation of this function; you can not SET a vehicle's rotation (apart from the Z angle) This function may return incorrect values for unoccupied vehicles. The reason is that the third row of the vehicle's internal rotation matrix gets corrupted if it gets updated while unoccupied.
+- There is no 'set' variation of this function; you can not SET a vehicle's rotation (apart from the Z angle)
+- This function may return incorrect values for unoccupied vehicles. The reason is that the third row of the vehicle's internal rotation matrix gets corrupted if it gets updated while unoccupied.
 
 :::
 

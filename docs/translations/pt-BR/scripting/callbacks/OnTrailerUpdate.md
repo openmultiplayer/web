@@ -4,8 +4,6 @@ description: Essa callback é executada quando o jogador envia um update para um
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R4' />
-
 ## Descrição
 
 Essa callback é executada quando o jogador envia um update para um trailer.

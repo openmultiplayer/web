@@ -4,8 +4,6 @@ description: 当NPC与服务器断开连接时，会调用此回调。
 tags: []
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 当 NPC 与服务器断开连接时，会调用此回调。

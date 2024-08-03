@@ -4,8 +4,6 @@ description: 当玩家结束附加物体编辑模式时，会调用此回调。
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3e' />
-
 ## 描述
 
 当玩家结束附加物体编辑模式时，会调用此回调。
@@ -13,7 +11,7 @@ tags: ["player"]
 | 参数名         | 描述                                                    |
 | -------------- | ------------------------------------------------------- |
 | playerid       | 结束编辑模式的玩家 ID                                   |
-| response       | 如果他们取消(Esc)，则为 0；如果他们单击保存图标，则为 1 |
+| EDIT_RESPONSE:response       | 如果他们取消(Esc)，则为 0；如果他们单击保存图标，则为 1 |
 | index          | 附加物体的索引(0-9)                                     |
 | modelid        | 已编辑的附加物体的模型 ID                               |
 | boneid         | 已编辑的附加物体的骨骼 ID                               |
@@ -55,7 +53,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // 附加物体时，应将数据存储在上述数组中
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {

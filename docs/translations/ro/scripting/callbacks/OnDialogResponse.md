@@ -4,12 +4,6 @@ description: Acest callback este apelat atunci când un jucător răspunde unui 
 tags: []
 ---
 
-:::warning
-
-Acest callback a fost adăugat în SA-MP 0.3a și nu va funcționa în versiunile anterioare!
-
-:::
-
 ## Descriere
 
 Acest callback este apelat când un jucător răspunde unui dialog afișat prin ShowPlayerDialog, după apăsarea unui buton, apăsarea de ENTER/ESC sau dublu-click pe un element al unei liste (dacă s-a folosit un dialog de tip listă).

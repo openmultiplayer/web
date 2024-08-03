@@ -4,12 +4,6 @@ description: Zamijeni teksturu objekta sa tekstom.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Zamijeni teksturu objekta sa tekstom.

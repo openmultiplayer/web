@@ -4,16 +4,14 @@ description: Hide a player-textdraw from the player it was created for.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
 Hide a player-textdraw from the player it was created for
 
-| Name     | Description                                   |
-| -------- | --------------------------------------------- |
-| playerid | The ID of the player to hide the textdraw for |
-| text     | The ID of the textdraw to hide                |
+| Name              | Description                                   |
+| ----------------- | --------------------------------------------- |
+| playerid          | The ID of the player to hide the textdraw for |
+| PlayerText:textid | The ID of the textdraw to hide                |
 
 ## Returns
 
@@ -22,9 +20,20 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-public OnPlayerDisconnect(playerid)
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
 {
-    PlayerTextDrawHide(playerid, gWelcomeText[playerid]);
+    welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
+
+    PlayerTextDrawShow(playerid, welcomeText[playerid]);
+    return 1;
+}
+
+public OnPlayerSpawn(playerid)
+{
+    PlayerTextDrawHide(playerid, welcomeText[playerid]);
+    return 1;
 }
 ```
 

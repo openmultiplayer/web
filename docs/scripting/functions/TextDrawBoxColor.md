@@ -6,12 +6,12 @@ tags: ["textdraw"]
 
 ## Description
 
-Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 1).
+Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 'true').
 
-| Name  | Description                                                                                                                                                                    |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| text  | The TextDraw to change                                                                                                                                                         |
-| color | The colour. Opacity is set by the alpha intensity of colour (eg. color 0x000000FF has a solid black box opacity, whereas 0x000000AA has a semi-transparent black box opacity). |
+| Name        | Description                                                                                                                                                                    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Text:textid | The TextDraw to change                                                                                                                                                         |
+| boxColour   | The colour. Opacity is set by the alpha intensity of colour (eg. color 0x000000FF has a solid black box opacity, whereas 0x000000AA has a semi-transparent black box opacity). |
 
 ## Returns
 
@@ -24,8 +24,8 @@ new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(123.0, 123.0,"Example");
-    TextDrawUseBox(gMyTextdraw, 1);
+    gMyTextdraw = TextDrawCreate(123.0, 123.0, "Example");
+    TextDrawUseBox(gMyTextdraw, true);
     TextDrawBoxColor(gMyTextdraw, 0xFFFFFFFF);
     return 1;
 }
@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-If you want to change the boxcolour of a textdraw that is already shown, you don't have to recreate it. Simply use TextDrawShowForPlayer/TextDrawShowForAll after modifying the textdraw and the change will be visible.
+If you want to change the boxcolour of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 
 :::
 

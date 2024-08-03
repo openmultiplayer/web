@@ -4,19 +4,13 @@ description: Prikvači 3D tekst label za igrača.
 tags: ["player", "3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikvači 3D tekst label za igrača.
 
 | Ime       | Deskripcija                                                                            |
 | --------- | -------------------------------------------------------------------------------------- |
-| Text3D:id | ID 3D tekst labela kojeg želite prikvačiti. Returnovan(uzvraćen) od Create3DTextLabel. |
+| Text3D:textid | ID 3D tekst labela kojeg želite prikvačiti. Returnovan(uzvraćen) od Create3DTextLabel. |
 | playerid  | ID igrača za kojeg želite prikvačiti label.                                            |
 | OffsetX   | X kordinata igrača.                                                                    |
 | OffsetY   | Y kordinata igrača.                                                                    |   

@@ -4,12 +4,6 @@ description: 当玩家使用武器射击时，这个回调函数被调用。
 tags: ["player"]
 ---
 
-:::warning
-
-SA-MP 0.3z 版本增加了这个回调函数，无法在以前的版本使用！
-
-:::
-
 ## 描述
 
 该回调函数在玩家使用武器射击时调用。仅适用于有子弹的武器。仅对乘客提供支持(不对司机提供支持，并且不适用 sea sparrow (水上飞机)/hunter shots (阿帕奇直升机))。
@@ -17,12 +11,12 @@ SA-MP 0.3z 版本增加了这个回调函数，无法在以前的版本使用！
 | 参数名   | 描述                                                                            |
 | -------- | ------------------------------------------------------------------------------- |
 | playerid | 用武器射击的玩家的 ID。                                                         |
-| weaponid | 该玩家使用的[武器](../resources/weaponids)的 ID。                               |
-| hittype  | 射击击中的物体[类型](../resources/bullethittypes)(无、玩家、车辆或(玩家)物体)。 |
+| WEAPON:weaponid | 该玩家使用的[武器](../resources/weaponids)的 ID。                               |
+| BULLET_HIT_TYPE:hittype  | 射击击中的物体[类型](../resources/bullethittypes)(无、玩家、车辆或(玩家)物体)。 |
 | hitid    | 被击中的玩家、车辆或物体的 ID。                                                 |
-| fX       | 玩家所击中的 X 轴坐标。                                                         |
-| fY       | 玩家所击中的 Y 轴坐标。                                                         |
-| fZ       | 玩家所击中的 Z 轴坐标。                                                         |
+| Float:fX       | 玩家所击中的 X 轴坐标。                                                         |
+| Float:fY       | 玩家所击中的 Y 轴坐标。                                                         |
+| Float:fZ       | 玩家所击中的 Z 轴坐标。                                                         |
 
 ## 返回值
 
@@ -35,7 +29,7 @@ SA-MP 0.3z 版本增加了这个回调函数，无法在以前的版本使用！
 ## 案例
 
 ```c
-public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
+public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
     new szString[144];
     format(szString, sizeof(szString), "武器 %i 开火了。击中物体类型: %i   被击中的ID: %i   坐标: %f, %f, %f", weaponid, hittype, hitid, fX, fY, fZ);
@@ -59,7 +53,7 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 :::tip
 
-GetPlayerLastShotVectors 函数可以在这个回调中用于获得更详细的子弹向量信息。
+[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) 函数可以在这个回调中用于获得更详细的子弹向量信息。
 
 :::
 

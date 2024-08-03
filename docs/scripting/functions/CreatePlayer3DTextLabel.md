@@ -4,29 +4,27 @@ description: Creates a 3D Text Label only for a specific player.
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Creates a 3D Text Label only for a specific player
 
-| Name             | Description                                                                     |
-|------------------|---------------------------------------------------------------------------------|
-| playerid         | The player which should see the newly created 3DText Label.                     |
-| text[]           | The text to display.                                                            |
-| color            | The text color                                                                  |
-| x                | X Coordinate (or offset if attached)                                            |
-| y                | Y Coordinate (or offset if attached)                                            |
-| z                | Z Coordinate (or offset if attached)                                            |
-| DrawDistance     | The distance where you are able to see the 3D Text Label                        |
-| attachedplayer   | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
-| attachedvehicle  | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
-| testLOS          | 0/1 Test the line-of-sight so this text can't be seen through walls             |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                                      |
+| Name               | Description                                                                     |
+| ------------------ | ------------------------------------------------------------------------------- |
+| playerid           | The player which should see the newly created 3DText Label.                     |
+| const text[]       | The text to display.                                                            |
+| colour             | The text color                                                                  |
+| Float:x            | X Coordinate (or offset if attached)                                            |
+| Float:y            | Y Coordinate (or offset if attached)                                            |
+| Float:z            | Z Coordinate (or offset if attached)                                            |
+| Float:drawDistance | The distance where you are able to see the 3D Text Label                        |
+| attachedplayer     | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
+| attachedvehicle    | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
+| bool:testLOS       | 0/1 Test the line-of-sight so this text can't be seen through walls             |
+| OPEN_MP_TAGS:...   | Indefinite number of arguments of any tag.                                      |
 
 ## Returns
 
-The ID of the newly created Player 3D Text Label, or INVALID_3DTEXT_ID if the Player 3D Text Label limit (MAX_3DTEXT_PLAYER) was reached.
+The ID of the newly created Player 3D Text Label, or `INVALID_3DTEXT_ID` if the Player 3D Text Label limit (`MAX_3DTEXT_PLAYER`) was reached.
 
 ## Examples
 
@@ -36,14 +34,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/playerlabel", true))
     {
         new
-            PlayerText3D: playerTextId,
+            PlayerText3D:playerTextId,
             name[MAX_PLAYER_NAME],
-            Float: X, Float: Y, Float: Z;
+            Float:x, Float:y, Float:z,
+            string[64];
 
         GetPlayerName(playerid, name, sizeof(name));
-        GetPlayerPos(playerid, X, Y, Z);
+        GetPlayerPos(playerid, x, y, z);
 
-        playerTextId = CreatePlayer3DTextLabel(playerid, "Hello %s!\nI'm at your position", 0x008080FF, X, Y, Z, 40.0, name);
+        format(string, sizeof(string), "Hello %s!\nI'm at your position", name);
+        playerTextId = CreatePlayer3DTextLabel(playerid, string, 0x008080FF, x, y, z, 40.0);
         return 1;
     }
     return 0;
@@ -54,13 +54,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-drawdistance seems to be a lot smaller when spectating.
+drawDistance seems to be a lot smaller when spectating.
 
 :::
 
 :::warning
 
-If text[] is empty, the server/clients next to the text might crash!
+If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
 
 :::
 

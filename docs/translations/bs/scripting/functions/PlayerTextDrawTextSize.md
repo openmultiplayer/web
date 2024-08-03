@@ -4,12 +4,6 @@ description: Promijeni veličinu player-textdrawa (box ako je PlayerTextDrawUseB
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Promijeni veličinu player-textdrawa (box ako je PlayerTextDrawUseBox omogućen i/ili klikljivo područje za koristiti sa PlayerTextDrawSetSelectable).

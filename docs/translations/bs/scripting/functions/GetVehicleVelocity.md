@@ -4,12 +4,6 @@ description: Dobij brzinu vozila na X,Y i Z osi.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dobij brzinu vozila na X,Y i Z osi.

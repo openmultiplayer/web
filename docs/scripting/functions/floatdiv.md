@@ -24,9 +24,9 @@ The quotient of the two given floats.
 ```c
 public OnGameModeInit()
 {
-    new Float:Number1 = 8.05, Float:Number2 = 3.5; //Declares two floats, Number1 (8.05) and Number2 (3.5)
+    new Float:Number1 = 8.05, Float:Number2 = 3.5; // Declares two floats, Number1 (8.05) and Number2 (3.5)
     new Float:Quotient;
-    Quotient = floatdiv(Number1, Number2);       //Saves the quotient(=8.05/3.5 = 2.3) of Number1 and Number2 in the float "Quotient"
+    Quotient = floatdiv(Number1, Number2); // Saves the quotient(=8.05/3.5 = 2.3) of Number1 and Number2 in the float "Quotient"
     return 1;
 }
 ```

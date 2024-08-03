@@ -4,12 +4,6 @@ description: Reprodukujte 'audio stream' za igrač.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Reprodukujte 'audio stream' za igrač. Uobičajene audio datoteke takođe rade (npr. MP3).

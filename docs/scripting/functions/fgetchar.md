@@ -10,11 +10,11 @@ tags: ["file management"]
 
 Reads a single character from a file.
 
-| Name   | Description                                                      |
-| ------ | ---------------------------------------------------------------- |
-| handle | The file handle to use; returned by fopen.                       |
-| value  | This parameter has no use, just keep it "0".                     |
-| utf8   | If true, read a character as UTF-8, otherwise as extended ASCII. |
+| Name        | Description                                                                          |
+| ----------- | ------------------------------------------------------------------------------------ |
+| File:handle | The file handle to use; returned by fopen.                                           |
+| value       | This parameter has no use, just keep it "0".                                         |
+| bool:utf8   | If `true`, read a character as UTF-8, otherwise as extended ASCII. (default: `true`) |
 
 ## Returns
 
@@ -24,10 +24,10 @@ If succeed, it returns the extended ASCII or UTF-8 value of the character at the
 
 ```c
 // Open "file.txt" in "read only" mode
-new File:handle = fopen("file.txt", io_read),
+new File:handle = fopen("file.txt", io_read);
 
-    // Declare "g_char"
-    g_char;
+// Declare "g_char"
+new g_char;
 
 // Check, if "file.txt" is open
 if (handle)
@@ -53,7 +53,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 
@@ -72,3 +72,12 @@ Using an invalid handle will crash your server! Get a valid handle by using fope
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.
+- [ftell](ftell): Get the current position in the file.
+- [fflush](fflush): Flush a file to disk (ensure all writes are complete).
+- [fstat](fstat): Return the size and the timestamp of a file.
+- [frename](frename): Rename a file.
+- [fcopy](fcopy): Copy a file.
+- [filecrc](filecrc): Return the 32-bit CRC value of a file.
+- [diskfree](diskfree): Returns the free disk space.
+- [fattrib](fattrib): Set the file attributes.
+- [fcreatedir](fcreatedir): Create a directory.

@@ -4,12 +4,6 @@ description: Ovaj callback je potvan kada neko pokuša da se uloguje/da pristupi
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je potvan kada neko pokuša da se uloguje/da pristupi RCONu in-game; uspješno ili ne.

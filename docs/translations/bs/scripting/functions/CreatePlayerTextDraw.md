@@ -4,12 +4,6 @@ description: Kreira textdraw za jednog igrača.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Kreira textdraw za jednog igrača. Ovo se može koristiti za zaobići limit globalnih textdraw-ova.

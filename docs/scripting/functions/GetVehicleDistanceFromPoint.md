@@ -4,8 +4,6 @@ description: This function can be used to calculate the distance (as a float) be
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c R3' />
-
 ## Description
 
 This function can be used to calculate the distance (as a float) between a vehicle and another map coordinate. This can be useful to detect how far a vehicle away is from a location.
@@ -13,9 +11,9 @@ This function can be used to calculate the distance (as a float) between a vehic
 | Name      | Description                                          |
 | --------- | ---------------------------------------------------- |
 | vehicleid | The ID of the vehicle to calculate the distance for. |
-| Float:X   | The X map coordinate.                                |
-| Float:Y   | The Y map coordinate.                                |
-| Float:Z   | The Z map coordinate.                                |
+| Float:x   | The X map coordinate.                                |
+| Float:y   | The Y map coordinate.                                |
+| Float:z   | The Z map coordinate.                                |
 
 ## Returns
 
@@ -30,11 +28,14 @@ public OnPlayerText(playerid, text[])
     if (strcmp(text, "vendingmachine", true) == 0)
     {
         new
-            Float: fDistance = GetVehicleDistanceFromPoint(GetPlayerVehicleID(playerid), 237.9, 115.6, 1010.2),
-            szMessage[44];
+            string[64],
+            vehicleid = GetPlayerVehicleID(playerid);
+        
+        new
+            Float:distance = GetVehicleDistanceFromPoint(vehicleid, 237.9, 115.6, 1010.2);
 
-        format(szMessage, sizeof(szMessage), "You're %f away from our vending machine.", fDistance);
-        SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
+        format(string, sizeof(string), "You're %.2f away from our vending machine.", distance);
+        SendClientMessage(playerid, 0xA9C4E4FF, string);
     }
     return 0;
 }

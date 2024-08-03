@@ -84,15 +84,15 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 		}
 
 		if len(addresses) == 0 {
-			zap.L().Debug("no servers to query, skipping")
+			zap.L().Info("no servers to query, skipping")
 			continue
 		}
 
-		zap.L().Debug("got servers to update",
+		zap.L().Info("got servers to update",
 			zap.Int("servers", len(addresses)))
 
 		for s := range w.sc.Scrape(ctx, addresses) {
-			zap.L().Debug("updating server",
+			zap.L().Info("updating server",
 				zap.String("address", s.IP),
 				zap.Bool("active", s.Active))
 
@@ -104,7 +104,7 @@ func (w *Worker) Run(ctx context.Context, window time.Duration) error {
 			time.Sleep(time.Second)
 		}
 
-		zap.L().Debug("finished updating servers",
+		zap.L().Info("finished updating servers",
 			zap.Int("servers", len(addresses)))
 
 		// TODO: GetAll needs an "include inactive" flag, and make default duration configurable

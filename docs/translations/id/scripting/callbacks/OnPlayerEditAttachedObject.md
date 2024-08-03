@@ -4,27 +4,26 @@ description: Callback ini terpanggil ketika player sudah selesai mengedit attach
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Deskripsi
 
 Callback ini terpanggil ketika player sudah selesai mengedit attached object dengan edit mode.
 
-| Name           | Description                                                      |
-| -------------- | ---------------------------------------------------------------- |
-| playerid       | ID player yang telah selesai mengedit attached object            |
-| response       | 0 jika mereka membatalkan (ESC) atau 1 jika mereka mengklik save |
-| modelid        | Model/object yang diedit oleh player tersebut                    |
-| boneid         | 'bone' yang sedang diedit di attached object                     |
-| Float:fOffsetX | Offset X untuk objek yang telah diedit                           |
-| Float:fOffsetY | Offset Y untuk objek yang telah diedit                           |
-| Float:fOffsetZ | Offset Z untuk objek yang telah diedit                           |
-| Float:fRotX    | Rotasi X untuk objek yang telah diedit                           |
-| Float:fRotY    | Rotasi Y untuk objek yang telah diedit                           |
-| Float:fRotZ    | Rotasi Z untuk objek yang telah diedit                           |
-| Float:fScaleX  | Skala X untuk objek yang telah diedit                            |
-| Float:fScaleY  | Skala Y untuk objek yang telah diedit                            |
-| Float:fScaleZ  | Skala Z untuk objek yang telah diedit                            |
+| Name                   | Description                                                      |
+|------------------------|------------------------------------------------------------------|
+| playerid               | ID player yang telah selesai mengedit attached object            |
+| EDIT_RESPONSE:response | 0 jika mereka membatalkan (ESC) atau 1 jika mereka mengklik save |
+| index                  | The index of the attached object (0-9)                           |
+| modelid                | Model/object yang diedit oleh player tersebut                    |
+| boneid                 | 'bone' yang sedang diedit di attached object                     |
+| Float:fOffsetX         | Offset X untuk objek yang telah diedit                           |
+| Float:fOffsetY         | Offset Y untuk objek yang telah diedit                           |
+| Float:fOffsetZ         | Offset Z untuk objek yang telah diedit                           |
+| Float:fRotX            | Rotasi X untuk objek yang telah diedit                           |
+| Float:fRotY            | Rotasi Y untuk objek yang telah diedit                           |
+| Float:fRotZ            | Rotasi Z untuk objek yang telah diedit                           |
+| Float:fScaleX          | Skala X untuk objek yang telah diedit                            |
+| Float:fScaleY          | Skala Y untuk objek yang telah diedit                            |
+| Float:fScaleZ          | Skala Z untuk objek yang telah diedit                            |
 
 ## Returns
 
@@ -54,7 +53,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // Semua data akan tersimpan pada array diatas.
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {

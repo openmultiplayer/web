@@ -6,7 +6,7 @@ tags: ["player"]
 
 :::warning
 
-Ova funkcija je dodana u SA-MP 0.3.DL i ne radi u nižim verzijama!
+Ova funkcija je dodana u SA-MP 0.3.DL R1 i ne radi u nižim verzijama!
 
 :::
 

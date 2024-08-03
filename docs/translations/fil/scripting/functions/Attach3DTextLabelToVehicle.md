@@ -4,15 +4,13 @@ description: Naglalagay ng 3D Text Label sa isang partikular na sasakyan.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Naglalagay ng 3D Text Label sa isang partikular na sasakyan.
 
 | Name      | Description                                                                  |
 | --------- | ---------------------------------------------------------------------------- |
-| Text3D:id | Ang 3D Text Label na gusto mong ilagay.                                      |
+| Text3D:textid | Ang 3D Text Label na gusto mong ilagay.                                      |
 | vehicleid | Ang sasakyan kung saan mo gustong ilagay ang 3D Text Label.                  |
 | OffsetX   | Ang Offset-X coordinate ng player na sasakyan (ang sasakyan ay 0.0,0.0,0.0)..|
 | OffsetY   | Ang Offset-Y coordinate ng player na sasakyan (ang sasakyan ay 0.0,0.0,0.0)..|

@@ -15,7 +15,6 @@ Uključite ili isključite da li textdraw koristi box ili ne.
 
 ## Returns
 
-3
 1: Funkcija uspješno izvršena.
 
 0: Funkcija neuspješno izvršena. Ovo znači da navedeni textdraw ne postoji.
@@ -28,7 +27,7 @@ new Text: gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Primjer TextDrawa");
-    TextDrawUseBox(gMyTextdraw, 1); // Prikaži box
+    TextDrawUseBox(gMyTextdraw, true); // Prikaži box
     return 1;
 }
 ```
@@ -37,7 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-Ako je textdraw već prikazan, on mora biti ponovno prikazan (TextDrawShowForAll/TextDrawShowForPlayer) kako bi prikazao promjene ove funkcije.
+Ako je textdraw već prikazan, on mora biti ponovno prikazan ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) kako bi prikazao promjene ove funkcije.
 
 :::
 

@@ -1,11 +1,17 @@
 ---
 title: swapchars
-description: .
-tags: []
+description: Swap bytes in a cell.
+tags: ["string"]
 ---
 
-:::warning
+<LowercaseNote />
 
-Ova funkcija započinje malim slovom.
+## Description
 
-:::
+| Name | Description                            |
+| ---- | -------------------------------------- |
+| c    | The value for which to swap the bytes. |
+
+## Returns
+
+A value where the bytes are swapped (the lowest byte becomes the highest byte)

@@ -4,12 +4,6 @@ description: Promijeni tekst player-textdrawa.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Promijeni tekst player-textdrawa.
@@ -30,7 +24,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 new pVehicleHealthTimer[MAX_PLAYERS];
 new PlayerText:pVehicleHealthTD[MAX_PLAYERS];
 
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == 2) // Ušao u vozilo kao vozač
     {

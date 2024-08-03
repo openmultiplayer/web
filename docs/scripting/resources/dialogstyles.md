@@ -17,7 +17,7 @@ title: Dialog Styles
 ```c
 public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
 {
-    printf( "playerid = %d, dialogid = YOUR_DIALOGID, response = %d, listitem = %d, inputtext = '%s' (size: %d)", playerid, response, listitem, inputtext, strlen( inputtext ) );
+    printf("playerid = %d, dialogid = YOUR_DIALOGID, response = %d, listitem = %d, inputtext = '%s' (size: %d)", playerid, response, listitem, inputtext, strlen(inputtext));
     return 1;
 }
 ```
@@ -179,10 +179,6 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
   
 ## Style 4: `DIALOG_STYLE_TABLIST`
 
-:::tip This style was added in **SA-MP 0.3.7** and will not work in earlier versions!
-
-:::
-
 :::note
 
 - Similar to **DIALOG_STYLE_LIST**.
@@ -228,10 +224,6 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 ---
   
 ## Style 5: `DIALOG_STYLE_TABLIST_HEADERS`
-
-:::tip This style was added in **SA-MP 0.3.7** and will not work in earlier versions!
-
-:::
 
 :::note
 

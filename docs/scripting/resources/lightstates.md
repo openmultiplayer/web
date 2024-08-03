@@ -130,7 +130,16 @@ Other values not listed here can change the lights, but they are just repeats of
 To disable the back two lights of a vehicle while keeping the front unchanged:
 
 ```c
-new panels, doors, lights, tires;
+new 
+	VEHICLE_PANEL_STATUS:panels,
+	VEHICLE_DOOR_STATUS:doors,
+	VEHICLE_LIGHT_STATUS:lights,
+	VEHICLE_TIRE_STATUS:tires;
+
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-UpdateVehicleDamageStatus(vehicleid, panels, doors, (lights | 0b01000000), tires); // The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
+UpdateVehicleDamageStatus(vehicleid, panels, doors, (lights | VEHICLE_LIGHT_STATUS:0b01000000), tires); // The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
 ```
+
+## See also
+
+- [Vehicle Light Status](../resources/vehicle-light-status)

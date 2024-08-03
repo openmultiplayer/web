@@ -244,7 +244,7 @@ if (RELEASED( KEY_FIRE | KEY_CROUCH ))
 ### 当玩家按下开火键时附加氮气
 
 ```c
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
 	if (PRESSED(KEY_FIRE))
 	{
@@ -260,7 +260,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 ### 超级跳
 
 ```c
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
 	if (PRESSED(KEY_JUMP))
 	{
@@ -285,7 +285,7 @@ new
 	#define INFINITY (Float:0x7F800000)
 #endif
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
 	if (PRESSED(KEY_ACTION))
 	{

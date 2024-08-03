@@ -4,15 +4,13 @@ description: 将一个三维文本标签附加到特定的载具上。
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 将一个三维文本标签附加到特定的载具上。
 
 | 参数名    | 说明                                 |
 | --------- | ------------------------------------ |
-| Text3D:id | 你想附加的三维文本标签。             |
+| Text3D:textid | 你想附加的三维文本标签。             |
 | vehicleid | 你想把三维文本标签附加在哪个载具上。 |
 | OffsetX   | 载具的 X 坐标偏移量。                |
 | OffsetY   | 载具的 Y 坐标偏移量。                |

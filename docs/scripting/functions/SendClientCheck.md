@@ -8,6 +8,7 @@ tags: []
 
 Perform a memory check on the client.
 
+
 | Name            | Description                          |
 | --------------- | ------------------------------------ |
 | playerid        | The ID of the player to check.       |
@@ -15,6 +16,7 @@ Perform a memory check on the client.
 | memAddr         | The base address to check.           |
 | memOffset       | The offset from the base address.    |
 | byteCount       | The number of bytes to check.        |
+
 
 ## Returns
 
@@ -33,7 +35,7 @@ public OnPlayerConnect(playerid)
 
 public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
-    if(actionid == 0x48) // or 72
+    if (actionid == 0x48) // or 72
     {
         print("The player is connecting using the PC client.");
     }
@@ -45,8 +47,9 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::tip
 
-There are 6 types of requests that the client processes  2, 5, 69, 70, 71, 72.
-> Type 72 doesn't use any of the other arguments [arg | offset | size]. The arg returns the uptime of the computer.
+- There are 6 types of requests that the client processes (2, 5, 69, 70, 71, 72)
+- Type 72 doesn't use any of the other arguments [arg | offset | size].
+- The arg returns the uptime of the computer.
 
 :::
 

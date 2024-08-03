@@ -19,7 +19,7 @@ Gets the hydra reactor angle of the player's vehicle.
 ## Examples
 
 ```c
-new Float:reactorAngle = GetPlayerHydraReactorAngle(playerid);
+new reactorAngle = GetPlayerHydraReactorAngle(playerid);
 ```
 
 ## Related Functions

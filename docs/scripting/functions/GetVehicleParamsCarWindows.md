@@ -10,13 +10,13 @@ tags: ["vehicle"]
 
 Allows you to retrieve the current state of a vehicle's windows
 
-| Name       | Description                                                               |
-| ---------- | ------------------------------------------------------------------------- |
-| vehicleid  | The ID of the vehicle                                                     |
-| &driver    | The integer to save the state of the drivers window to.                   |
-| &passenger | The integer to save the state of the passengers window to.                |
-| &backleft  | The integer to save the state of the rear left window to (if available).  |
-| &backright | The integer to save the state of the rear right window to (if available). |
+| Name             | Description                                                               |
+| ---------------- | ------------------------------------------------------------------------- |
+| vehicleid        | The ID of the vehicle                                                     |
+| &bool:frontLeft  | The integer to save the state of the drivers window to.                   |
+| &bool:frontRight | The integer to save the state of the passengers window to.                |
+| &bool:rearLeft   | The integer to save the state of the rear left window to (if available).  |
+| &bool:rearRight  | The integer to save the state of the rear right window to (if available). |
 
 ## Returns
 
@@ -28,7 +28,11 @@ The vehicle's windows state is stored in the specified variables.
 
 The values returned in each variable are as follows:
 
--1: Window state not set (generally closed, unless set explicitly to -1) 0: Open 1: Closed
+**-1**: Window state not set (generally closed, unless set explicitly to -1)
+
+**0**: Open
+
+**1**: Closed
 
 :::
 

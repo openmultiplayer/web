@@ -4,7 +4,7 @@ description: This callback is called when a player finishes downloading custom m
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.DL' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
 
 ## Description
 

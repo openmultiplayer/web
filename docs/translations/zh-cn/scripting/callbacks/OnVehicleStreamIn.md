@@ -4,8 +4,6 @@ description: 当车辆流入玩家的客户端时调用。
 tags: ["vehicle"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 当车辆流入玩家的客户端时调用。

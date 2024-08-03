@@ -15,9 +15,9 @@ Checks if a player is in a specific vehicle.
 
 ## Returns
 
-1 - Player IS in the vehicle.
+**true** - Player IS in the vehicle.
 
-0 - Player is NOT in the vehicle.
+**false** - Player is NOT in the vehicle.
 
 ## Examples
 

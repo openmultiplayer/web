@@ -4,12 +4,6 @@ description: Gets a vehicle's parameters.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3c and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Gets a vehicle's parameters.

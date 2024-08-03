@@ -10,9 +10,9 @@ tags: ["math", "floating-point"]
 
 Calculates the square root of given value.
 
-| Name  | Description                                |
-| ----- | ------------------------------------------ |
-| value | The value to calculate the square root of. |
+| Name        | Description                                |
+| ----------- | ------------------------------------------ |
+| Float:value | The value to calculate the square root of. |
 
 ## Returns
 
@@ -21,14 +21,14 @@ The square root of the input value, as a float.
 ## Examples
 
 ```c
-floatsqroot(25.0); // Returns 5, because 5x5 = 25
+new Float:sqroot = floatsqroot(25.0); // Returns 5.0, because 5x5 = 25
 ```
 
 ## Notes
 
 :::tip
 
-This function raises a “domain” error if the input value is negative. You may use floatabs to get the absolute (positive) value.
+This function raises a “domain” error if the input value is negative. You may use [floatabs](floatabs) to get the absolute (positive) value.
 
 :::
 

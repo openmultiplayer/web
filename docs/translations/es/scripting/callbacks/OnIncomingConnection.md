@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando una dirección IP intenta establecer
 tags: []
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3z R2-2' />
-
 ## Descripción
 
 Este callback se llama cuando una dirección IP intenta establecer una conexión con el servidor. Para bloquear conexiones entrantes, use BlockIpAdress.

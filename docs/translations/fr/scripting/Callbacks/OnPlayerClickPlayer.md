@@ -4,8 +4,6 @@ description: Callback appelée quand un joueur double-clique sur le pseudo d'un 
 tags: [player, clickplayer, clickedplayerid, source]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Paramètres
 
 Callback appelée quand un joueur double-clique sur le pseudo d'un joueur dans la tablist.
@@ -23,7 +21,7 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 ## Exemple
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Vous avez sélectionné le joueur %d", clickedplayerid);

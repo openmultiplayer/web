@@ -4,8 +4,6 @@ description: This callback is called when someone attempts to log in to RCON in-
 tags: ["rcon", "administration"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This callback is called when someone attempts to log in to RCON in-game; successful or not.
@@ -25,17 +23,26 @@ It is always called first in filterscripts.
 ```c
 public OnRconLoginAttempt(ip[], password[], success)
 {
-    if (!success) //If the password was incorrect
+    if (!success) // If the password was incorrect
     {
-        printf("FAILED RCON LOGIN BY IP %s USING PASSWORD %s",ip, password);
-        new pip[16];
-        for(new i = GetPlayerPoolSize(); i != -1; --i) //Loop through all players
+        printf("FAILED RCON LOGIN BY IP %s USING PASSWORD %s", ip, password);
+        
+        new ipAddress[16];
+        
+        for (new i = 0; i < MAX_PLAYERS; i++) // Loop through all players
         {
-            GetPlayerIp(i, pip, sizeof(pip));
-            if (!strcmp(ip, pip, true)) //If a player's IP is the IP that failed the login
+            if (!IsPlayerConnected(i))
             {
-                SendClientMessage(i, 0xFFFFFFFF, "Wrong Password. Bye!"); //Send a message
-                Kick(i); //They are now kicked.
+                continue;
+            }
+
+            GetPlayerIp(i, ipAddress, sizeof(ipAddress));
+            
+            if (!strcmp(ip, ipAddress, true)) // If a player's IP is the IP that failed the login
+            {
+                SendClientMessage(i, 0xFFFFFFFF, "Wrong Password. Bye!"); // Send a message
+                Kick(i); // They are now kicked.
+                break;
             }
         }
     }
@@ -47,7 +54,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-This callback is only called when /rcon login is used in-game. This callback is only called when the player is not yet logged in. When the player is logged in, OnRconCommand is called instead.
+This callback is only called when /rcon login is used in-game. This callback is only called when the player is not yet logged in. When the player is logged in, [OnRconCommand](OnRconCommand) is called instead.
 
 :::
 

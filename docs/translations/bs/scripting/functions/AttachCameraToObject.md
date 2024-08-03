@@ -4,12 +4,6 @@ description: Možete koristiti ovu funkciju da prikvačite kameru igrača za obj
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Možete koristiti ovu funkciju da prikvačite kameru igrača za objekt.

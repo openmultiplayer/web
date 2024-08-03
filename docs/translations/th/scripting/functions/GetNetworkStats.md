@@ -4,12 +4,6 @@ description: Gets the server's network stats and stores them in a string.
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3c R4 and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Gets the server's network stats and stores them in a string.

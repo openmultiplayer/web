@@ -4,12 +4,6 @@ description: Returns the SA-MP client version, as reported by the player.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Returns the SA-MP client version, as reported by the player.

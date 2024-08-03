@@ -10,10 +10,10 @@ tags: ["player"]
 
 Get the player skill level of a certain weapon type.
 
-| Name          | Description                                               |
-| ------------- | --------------------------------------------------------- |
-| playerid      | The ID of the player.  |
-| WEAPONSKILL:skill  | The [weapon](../resources/weaponskills) to get the skill of. |
+| Name              | Description                                                  |
+| ----------------- | ------------------------------------------------------------ |
+| playerid          | The ID of the player.                                        |
+| WEAPONSKILL:skill | The [weapon](../resources/weaponskills) to get the skill of. |
 
 ## Returns
 
@@ -24,11 +24,20 @@ Otherwise, it returns the skill level of the weapon type.
 ## Examples
 
 ```c
-new string[46];
-new skill = GetPlayerSkillLevel(playerid, WEAPONSKILL_PISTOL);
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/skill", true))
+    {
+        new string[64];
+        
+        new skill = GetPlayerSkillLevel(playerid, WEAPONSKILL_PISTOL);
 
-format(string, sizeof string, "SERVER: Your pistol skill level is %d", skill);
-SendClientMessage(playerid, 0xFFFF00FF, string);
+        format(string, sizeof(string), "Your pistol skill level is %d", skill);
+        SendClientMessage(playerid, 0xFFFF00FF, string);
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Notes

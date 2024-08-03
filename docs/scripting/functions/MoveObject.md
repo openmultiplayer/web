@@ -1,23 +1,23 @@
 ---
 title: MoveObject
 description: Move an object to a new position with a set speed.
-tags: []
+tags: ["object"]
 ---
 
 ## Description
 
 Move an object to a new position with a set speed. Players/vehicles will 'surf' the object as it moves.
 
-| Name        | Description                                               |
-| ----------- | --------------------------------------------------------- |
-| objectid    | The ID of the object to move.                             |
-| Float:X     | The X coordinate to move the object to.                   |
-| Float:Y     | The Y coordinate to move the object to.                   |
-| Float:Z     | The Z coordinate to move the object to.                   |
-| Float:Speed | The speed at which to move the object (units per second). |
-| Float:RotX  | The FINAL X rotation (optional).                          |
-| Float:RotY  | The FINAL Y rotation (optional).                          |
-| Float:RotZ  | The FINAL Z rotation (optional).                          |
+| Name            | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| objectid        | The ID of the object to move.                             |
+| Float:targetX   | The X coordinate to move the object to.                   |
+| Float:targetY   | The Y coordinate to move the object to.                   |
+| Float:targetZ   | The Z coordinate to move the object to.                   |
+| Float:speed     | The speed at which to move the object (units per second). |
+| Float:rotationX | The FINAL X rotation (optional).                          |
+| Float:rotationY | The FINAL Y rotation (optional).                          |
+| Float:rotationZ | The FINAL Z rotation (optional).                          |
 
 ## Returns
 
@@ -39,11 +39,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (strcmp(cmdtext, "/moveobject", true) == 0)
     {
         new
-            string[50],
-            moveTime = MoveObject(gAirportGate, 0, 0, 10, 2.00);
+            string[64],
+            moveTime = MoveObject(gAirportGate, 0.0, 0.0, 10.0, 2.00);
 
         format(string, sizeof(string), "Object will finish moving in %d milliseconds", moveTime);
-        SendClientMessage(playerid, 0xFF000000, string);
+        SendClientMessage(playerid, 0xFF0000FF, string);
         return 1;
     }
     return 0;
@@ -54,7 +54,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-This function can be used to make objects rotate smoothly. In order to achieve this however, the object must also be moved. The specified rotation is the rotation the object will have after the movement. Hence the object will not rotate when no movement is applied. For a script example take a look at the ferriswheel.pwn filterscript made by Kye included in the server package (SA-MP 0.3d and above). To fully understand the above note, you can (but not limited to) increase the z position by (+0.001) and then (-0.001) after moving it again, as not changing the X,Y or Z will not rotate the object.
+- This function can be used to make objects rotate smoothly. In order to achieve this however, the object must also be **moved**. The specified rotation is the rotation the object will have after the movement. Hence the object will not rotate when no movement is applied. For a script example take a look at the ferriswheel.pwn filterscript made by Kye included in the server package (SA-MP 0.3d and above).
+- To fully understand the above note, you can (but not limited to) increase the z position by (+0.001) and then (-0.001) after moving it again, as not changing the X,Y or Z will not rotate the object.
 
 :::
 

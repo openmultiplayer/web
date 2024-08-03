@@ -8,11 +8,11 @@ tags: ["player"]
 
 This callback is called when a player dies, either by suicide or by being killed by another player.
 
-| Name     | Description                                                                                   |
-| -------- | --------------------------------------------------------------------------------------------- |
-| playerid | The ID of the player that died.                                                               |
-| killerid | The ID of the player that killed the player who died, or INVALID_PLAYER_ID if there was none. |
-| reason   | The ID of the reason ([weapon id](../resources/weaponids)) for the player's death.            |
+| Name          | Description                                                                                   |
+|---------------|-----------------------------------------------------------------------------------------------|
+| playerid      | The ID of the player that died.                                                               |
+| killerid      | The ID of the player that killed the player who died, or INVALID_PLAYER_ID if there was none. |
+| WEAPON:reason | The ID of the reason ([weapon id](../resources/weaponids)) for the player's death.            |
 
 ## Returns
 
@@ -28,7 +28,7 @@ It is always called first in filterscripts.
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); // Shows the kill in the killfeed
 
@@ -48,7 +48,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::tip
 
-The reason will return 37 (flame thrower) from any fire sources (e.g. molotov, 18) The reason will return 51 from any weapon that creates an explosion (e.g. RPG, grenade) You do not need to check whether killerid is valid before using it in [SendDeathMessage](SendDeathMessage). INVALID_PLAYER_ID is a valid killerid ID parameter in that function. playerid is the only one who can call the callback. (good to know for anti fake death)
+The reason will return 37 (flame thrower) from any fire sources (e.g. molotov, 18) The reason will return 51 from any weapon that creates an explosion (e.g. RPG, grenade) You do not need to check whether killerid is valid before using it in [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID is a valid killerid ID parameter in that function. playerid is the only one who can call the callback. (good to know for anti fake death)
 
 :::
 

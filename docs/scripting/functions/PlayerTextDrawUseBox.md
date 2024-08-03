@@ -4,17 +4,15 @@ description: Toggle the box on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
 Toggle the box on a player-textdraw.
 
-| Name     | Description                                              |
-| -------- | -------------------------------------------------------- |
-| playerid        | The ID of the player whose textdraw to toggle the box of |
-| PlayerText:text | The ID of the player-textdraw to toggle the box of       |
-| bool:use        | true to use a box or false to not use a box              |
+| Name              | Description                                              |
+| ----------------- | -------------------------------------------------------- |
+| playerid          | The ID of the player whose textdraw to toggle the box of |
+| PlayerText:textid | The ID of the player-textdraw to toggle the box of       |
+| bool:boxEnabled   | **true** to use a box or **false** to not use a box      |
 
 ## Returns
 
@@ -23,13 +21,13 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new PlayerText:MyTD[MAX_PLAYERS];
+new PlayerText:gMyTextdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    MyTD[playerid] = CreatePlayerTextDraw(playerid, 40.0, 140.0, "_~N~Example text!~N~_");
-    PlayerTextDrawUseBox(playerid, MyTD[playerid], true);
-    PlayerTextDrawBoxColor(playerid, MyTD[playerid], 0x00000066); // Set the box color to a semi-transparent black
+    gMyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 40.0, 140.0, "_~N~Example text!~N~_");
+    PlayerTextDrawUseBox(playerid, gMyTextdraw[playerid], true);
+    PlayerTextDrawBoxColor(playerid, gMyTextdraw[playerid], 0x00000066); // Set the box color to a semi-transparent black
     return 1;
 }
 ```

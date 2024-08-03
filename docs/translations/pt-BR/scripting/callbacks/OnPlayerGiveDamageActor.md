@@ -11,11 +11,11 @@ tags: ["player"]
 Esta callback é chamada quando o jogador causa dano a um ator.
 
 | Nome            | Descrição                                                 |
-| --------------- | --------------------------------------------------------- |
+|-----------------|-----------------------------------------------------------|
 | playerid        | ID do jogador que realizou o dano.                        |
 | damaged_actorid | ID do ator que recebeu o dano.                            |
-| amount          | A quantidade de vida/colete que o damaged_actorid perdeu. |
-| weaponid        | O motivo que causou o dano.                               |
+| Float:amount    | A quantidade de vida/colete que o damaged_actorid perdeu. |
+| WEAPON:weaponid | O motivo que causou o dano.                               |
 | bodypart        | A parte do corpo que foi acertada                         |
 
 ## Retorno
@@ -29,7 +29,7 @@ Esta callback é chamada quando o jogador causa dano a um ator.
 ## Exemplos
 
 ```c
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponid, bodypart)
+public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -46,7 +46,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float: amount, weaponi
 
 :::tip
 
-Esta função não é chamada se o ator é posto como vulnerável (QUE É O PADRÃO). Veja a função SetActorInvulnerable.
+Esta função não é chamada se o ator é posto como vulnerável (QUE É O PADRÃO). Veja a função [SetActorInvulnerable](../functions/SetActorInvulnerable).
 
 :::
 
@@ -58,5 +58,8 @@ Esta função não é chamada se o ator é posto como vulnerável (QUE É O PADR
 - [GetActorHealth](../functions/GetActorHealth): Obtém a vida de um ator.
 - [IsActorInvulnerable](../functions/IsActorInvulnerable): Verifica se um ator é invulnerável.
 - [IsValidActor](../functions/IsValidActor): Verifica se o ID de um ator é válido.
+
+## Callbacks relacionadas
+
 - [OnActorStreamOut](OnActorStreamOut): Chamada quando um ator é removido da área visível por um jogador.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Chamada quando um jogador aparece na área visível de outro jogador.

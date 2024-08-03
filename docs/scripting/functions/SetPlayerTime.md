@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-Sets the game time for a player. If a player's clock is enabled (TogglePlayerClock) the time displayed by it will update automatically.
+Sets the game time for a player. If a player's clock is enabled ([TogglePlayerClock](TogglePlayerClock)) the time displayed by it will update automatically.
 
 | Name     | Description                                   |
 | -------- | --------------------------------------------- |
@@ -16,22 +16,34 @@ Sets the game time for a player. If a player's clock is enabled (TogglePlayerClo
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**false** - The function failed to execute. The player specified does not exist.
 
 ## Examples
 
 ```c
-SetPlayerTime(playerid, 12, 0); // Noon
-SetPlayerTime(playerid, 0, 0); // Midnight
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/noon", true))
+    {
+        SetPlayerTime(playerid, 12, 0); // Noon
+        return 1;
+    }
+    if (!strcmp(cmdtext, "/midnight", true))
+    {
+        SetPlayerTime(playerid, 0, 0); // Midnight
+        return 1;
+    }
+    return 0;
+}
 ```
 
 ## Notes
 
-:::tip
+:::warning
 
-Using this function under OnPlayerConnect doesn't work.
+Using this function under [OnPlayerConnect](../callbacks/OnPlayerConnect) doesn't work.
 
 :::
 

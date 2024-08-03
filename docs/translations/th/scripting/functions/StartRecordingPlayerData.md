@@ -4,12 +4,6 @@ description: Starts recording a player's movements to a file, which can then be 
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Starts recording a player's movements to a file, which can then be reproduced by an NPC.

@@ -4,8 +4,6 @@ description: This callback is called when a player clicks on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Açıklama
 
 Bu callback, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz ancak OnPlayerClickTextDraw'da çağırılır.
@@ -45,7 +43,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (newkeys == KEY_SUBMISSION)
     {

@@ -4,19 +4,13 @@ description: Ažurira text i boju 3D Text Labela.
 tags: ["3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ažurira text i boju 3D Text Labela.
 
 | Ime       | Deskripcija                                     |
 | --------- | ----------------------------------------------- |
-| Text3D:id | 3D Text Label kojeg želite ažurirati.           |
+| Text3D:textid | 3D Text Label kojeg želite ažurirati.           |
 | color     | Boja 3D Text Labela kojeg će od sada imati.     |
 | text[]    | Novi text kojeg će 3D Text Label od sada imati. |
 

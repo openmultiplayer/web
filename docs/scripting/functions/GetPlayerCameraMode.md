@@ -4,8 +4,6 @@ description: Returns the current GTA camera mode for the requested player.
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3c R3' />
-
 ## Description
 
 Returns the current GTA [camera mode](../resources/cameramodes) for the requested player. The camera modes are useful in determining whether a player is aiming, doing a passenger driveby etc.
@@ -26,9 +24,9 @@ public OnPlayerText(playerid, text[])
 {
     if (strcmp(text, "cameramode", true) == 0)
     {
-        new szMessage[22];
-        format(szMessage, sizeof(szMessage), "Your camera mode: %d", GetPlayerCameraMode(playerid));
-        SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
+        new string[48];
+        format(string, sizeof(string), "Your camera mode: %d", GetPlayerCameraMode(playerid));
+        SendClientMessage(playerid, 0xA9C4E4FF, string);
     }
     return 0;
 }

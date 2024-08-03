@@ -4,12 +4,6 @@ description: Creates a 3D Text Label only for a specific player.
 tags: ["player", "3dtextlabel"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Creates a 3D Text Label only for a specific player

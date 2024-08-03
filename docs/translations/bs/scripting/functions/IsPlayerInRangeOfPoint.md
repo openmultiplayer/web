@@ -4,12 +4,6 @@ description: Provjerava ako je igrač u dometu/blizini određene tačke.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Provjerava ako je igrač u blizinu određene tačke. Ova izvorna funkcija je brža od implementacije PAWN-a koristeći formulu udaljenosti.

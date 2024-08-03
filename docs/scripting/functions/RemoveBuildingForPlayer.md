@@ -4,8 +4,6 @@ description: Removes a standard San Andreas model for a single player within a s
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 Removes a standard San Andreas model for a single player within a specified range.
@@ -14,10 +12,10 @@ Removes a standard San Andreas model for a single player within a specified rang
 | ------------- | --------------------------------------------------------------------------------- |
 | playerid      | The ID of the player to remove the objects for.                                   |
 | modelid       | The model to remove.                                                              |
-| Float:fX      | The X coordinate around which the objects will be removed.                        |
-| Float:fY      | The Y coordinate around which the objects will be removed.                        |
-| Float:fZ      | The Z coordinate around which the objects will be removed.                        |
-| Float:fRadius | The radius around the specified point to remove objects with the specified model. |
+| Float:centerX | The X coordinate around which the objects will be removed.                        |
+| Float:centerY | The Y coordinate around which the objects will be removed.                        |
+| Float:centerZ | The Z coordinate around which the objects will be removed.                        |
+| Float:radius  | The radius around the specified point to remove objects with the specified model. |
 
 ## Returns
 
@@ -46,17 +44,19 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-In SA-MP 0.3.7 you can use -1 for the modelid to remove all objects within the specified radius.
+You can use **-1** for the modelid to remove all objects within the specified radius.
 
 :::
 
 :::warning
 
-There appears to be a limit of around 1000 lines/objects. There is no workaround. When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
+- There appears to be a limit of around 1000 lines/objects. There is no workaround.
+- When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
 
 :::
 
 ## Related Functions
 
+- [GetPlayerBuildingsRemoved](GetPlayerBuildingsRemoved): Gets the number of removed buildings for a player.
 - [DestroyObject](DestroyObject): Destroy an object.
 - [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.

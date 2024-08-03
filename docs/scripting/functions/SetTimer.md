@@ -9,26 +9,27 @@ tags: ["timer"]
 Sets a 'timer' to call a function after some time. Can be set to repeat.
 
 | Name                 | Description                                                                                                                     |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | const functionName[] | Name of the function to call as a string. This must be a public function (forwarded). A null string here will crash the server. |
 | interval             | Interval in milliseconds.                                                                                                       |
 | bool:repeating       | Boolean (true/false) on whether the timer should repeat or not.                                                                 |
 
 ## Returns
 
-The ID of the timer that was started. Timer IDs start at 1.
+The ID of the timer that was started.
+
+Timer IDs start at **1**.
 
 ## Examples
 
 ```c
-forward OneSecondTimer();
-
 public OnGameModeInit()
 {
     print("Starting timer...");
     SetTimer("OneSecondTimer", 1000, true); // Set a repeating timer of 1000 milliseconds (1 second)
 }
 
+forward OneSecondTimer();
 public OneSecondTimer()
 {
     print("1 second has passed.");

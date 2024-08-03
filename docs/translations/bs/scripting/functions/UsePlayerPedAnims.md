@@ -22,7 +22,19 @@ public OnGameModeInit()
 
 :::tip
 
-Radi samo kada se postavi pod OnGameModeInit. Neupotreba ove funkcije dovodi do toga da se dvoručno oružje (ne dvostruko - jedno oružje koje drže obje ruke) drži u samo jednoj ruci.
+Radi samo kada se postavi pod [OnGameModeInit](../callbacks/OnGameModeInit).
+
+Neupotreba ove funkcije dovodi do toga da se dvoručno oružje (ne dvostruko - jedno oružje koje drže obje ruke) drži u samo jednoj ruci.
+
+:::
+
+:::tip
+
+You can also enable standard player walking animation via [config.json](../../server/config.json)
+
+```json
+"use_player_ped_anims": true,
+```
 
 :::
 

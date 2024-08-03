@@ -17,9 +17,9 @@ Hide player gangzone.
 
 ## Returns
 
-1: The function executed successfully. Success is reported even if the player gangzone was hide to begin with.
+**1:** The function executed successfully. Success is reported even if the player gangzone was hide to begin with.
 
-0: The function failed to execute. The gangzone specified does not exist.
+**0:** The function failed to execute. The gangzone specified does not exist.
 
 ## Examples
 
@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
     gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (IsValidPlayerGangZone(playerid, gGangZoneID[playerid]))
     {

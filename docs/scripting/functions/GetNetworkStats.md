@@ -4,16 +4,14 @@ description: Gets the server's network stats and stores them in a string.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3c R4' />
-
 ## Description
 
 Gets the server's network stats and stores them in a string.
 
-| Name        | Description                                                    |
-| ----------- | -------------------------------------------------------------- |
-| retstr[]    | The string to store the network stats in, passed by reference. |
-| retstr_size | The length of the string to be stored.                         |
+| Name                   | Description                                                    |
+| ---------------------- | -------------------------------------------------------------- |
+| output[]               | The string to store the network stats in, passed by reference. |
+| size = sizeof (output) | The length of the string to be stored.                         |
 
 ## Returns
 
@@ -22,17 +20,19 @@ This function always returns 1.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/netstats"))
     {
         new stats[400+1];
-        GetNetworkStats(stats, sizeof(stats)); // get the servers networkstats
+        GetNetworkStats(stats, sizeof(stats)); // Get the servers networkstats
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Server Network Stats", stats, "Close", "");
     }
     return 1;
 }
 ```
+
+**Output:**
 
 ```
 Server Ticks: 200

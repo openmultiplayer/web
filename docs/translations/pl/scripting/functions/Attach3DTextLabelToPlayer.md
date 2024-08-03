@@ -4,15 +4,13 @@ description: Przyczepia tekst 3D do gracza.
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Opis
 
 Przyczepia tekst 3D do gracza.
 
 | Nazwa     | Opis                                                             |
 | --------- | ---------------------------------------------------------------- |
-| Text3D:id | ID tekstu 3D do przyczepienia. Zwracane przez Create3DTextLabel. |
+| Text3D:textid | ID tekstu 3D do przyczepienia. Zwracane przez Create3DTextLabel. |
 | playerid  | ID gracza, do którego tekst 3D ma zostać przyczepiony.           |
 | OffsetX   | Offset X gracza.                                                 |
 | OffsetY   | Offset Y gracza.                                                 |

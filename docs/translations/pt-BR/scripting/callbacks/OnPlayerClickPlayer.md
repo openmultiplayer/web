@@ -4,8 +4,6 @@ description: Chamado quando um jogador realiza um clique duplo em um jogador no 
 tags: ["player"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3a' />
-
 ## Descrição
 
 Chamado quando um jogador realiza um clique duplo em um jogador no placar.
@@ -27,7 +25,7 @@ Sempre é chamada primeiro em filterscripts.
 ## Exemplos
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Você clicou no jogador %d", clickedplayerid);

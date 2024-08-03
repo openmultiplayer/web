@@ -21,9 +21,9 @@ The amount of money the player has.
 ```c
 public OnPlayerSpawn(playerid)
 {
-   new string[32];
-   format(string, sizeof(string), "Your money: $%i.", GetPlayerMoney(playerid));
-   SendClientMessage(playerid, 0xFFFFFFAA, string);
+    new string[32];
+    format(string, sizeof(string), "Your money: $%i", GetPlayerMoney(playerid));
+    SendClientMessage(playerid, 0x00FF00FF, string);
 }
 ```
 

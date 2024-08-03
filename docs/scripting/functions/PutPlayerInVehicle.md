@@ -16,9 +16,9 @@ Puts a player in a vehicle.
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. The player or vehicle don't exist.
+**false** - The function failed to execute. The player or vehicle don't exist.
 
 ## Examples
 
@@ -30,20 +30,19 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 }
 ```
 
-```
-0 - Driver
-1 - Front passenger
-2 - Back-left passenger
-3 - Back-right passenger
-4+ - Passenger seats (coach etc.)
-
-```
+| ID  | Seat                         |
+| --- | ---------------------------- |
+| 0   | Driver                       |
+| 1   | Front passenger              |
+| 2   | Back-left passenger          |
+| 3   | Back-right passenger         |
+| 4+  | Passenger seats (coach etc.) |
 
 ## Notes
 
 :::tip
 
-You can use GetPlayerVehicleSeat in a loop to check if a seat is occupied by any players.
+You can use [GetPlayerVehicleSeat](GetPlayerVehicleSeat) in a loop to check if a seat is occupied by any players.
 
 :::
 
@@ -58,4 +57,8 @@ If the seat is invalid or is taken, will cause a crash when they EXIT the vehicl
 - [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Throw a player out of their vehicle.
 - [GetPlayerVehicleID](GetPlayerVehicleID): Get the ID of the vehicle the player is in.
 - [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Check what seat a player is in.
+- [GetVehicleSeats](GetVehicleSeats): Gets the number of seats in the vehicle.
+
+## Related Callbacks
+
 - [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle): Called when a player starts to enter a vehicle.

@@ -4,8 +4,6 @@ description: Removes attached objects.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3b' />
-
 ## Description
 
 Removes attached objects.
@@ -21,7 +19,7 @@ Removes attached objects.
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     if (IsPlayerHoldingObject(playerid))
     {
@@ -35,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::warning
 
-This function was removed in SA-MP 0.3c. check RemovePlayerAttachedObject
+This function was removed in SA-MP 0.3c. See [RemovePlayerAttachedObject](RemovePlayerAttachedObject)
 
 :::
 

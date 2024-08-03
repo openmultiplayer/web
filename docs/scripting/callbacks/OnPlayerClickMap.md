@@ -4,8 +4,6 @@ description: This callback is called when a player places a target/waypoint on t
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Description
 
 This callback is called when a player places a target/waypoint on the pause menu map (by right-clicking).
@@ -39,7 +37,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 :::tip
 
-As the callback name says, its only called when the player click to mark the target and not when pressed the key. The Z value returned will be 0 (invalid) if the clicked area on the map is far away from the player; use the MapAndreas or ColAndreas plugin to get a more accurate Z coordinate.
+As the callback name says, its only called when the player click to mark the target and not when pressed the key. The Z value returned will be 0 (invalid) if the clicked area on the map is far away from the player; use the [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) or [ColAndreas](https://github.com/Pottus/ColAndreas) plugin to get a more accurate Z coordinate.
 
 :::
 

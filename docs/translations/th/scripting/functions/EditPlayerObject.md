@@ -4,12 +4,6 @@ description: Allows players to edit a player-object (position and rotation) with
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Allows players to edit a player-object (position and rotation) with a GUI and their mouse.

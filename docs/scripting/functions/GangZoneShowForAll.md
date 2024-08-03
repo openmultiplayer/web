@@ -8,10 +8,10 @@ tags: ["gangzone"]
 
 Shows a gangzone with the desired color to all players.
 
-| Name  | Description                                                                                               |
-| ----- | --------------------------------------------------------------------------------------------------------- |
-| zone  | The ID of the gangzone to show (returned by GangZoneCreate).                                              |
-| color | The color to show the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
+| Name   | Description                                                                                               |
+| ------ | --------------------------------------------------------------------------------------------------------- |
+| zoneid | The ID of the gangzone to show (returned by [GangZoneCreate](GangZoneCreate)).                            |
+| colour | The color to show the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
 
 ## Returns
 
@@ -34,7 +34,7 @@ public OnPlayerSpawn(playerid)
 {
     if (IsPlayerAdmin(playerid))
     {
-        GangZoneShowForAll(gGangZoneId, COLOR_RED);
+        GangZoneShowForAll(gGangZoneId, 0xFF0000FF);
     }
     return 1;
 }

@@ -4,8 +4,6 @@ description: This callback is called when an IP address attempts a connection to
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R2-2' />
-
 ## Description
 
 Ang callback na ito ay itinatawag kapag mayroong IP address na nag-tatangkang kumonek sa server.

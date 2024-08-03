@@ -4,27 +4,26 @@ description: Cette callback est appelée quand un joueur en a fini avec le mode 
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Paramètres
 
 Cette callback est appelée quand un joueur en a fini avec le mode édition des attach objects.
 
-| Name                   | Description                                                                       |
-| ---------------------- | --------------------------------------------------------------------------------- |
-| `int` playerid         | ID du joueur en mode édition                                                      |
-| `int` response         | **0** si annulé (ECHAP) ou **1** si le joueur a cliqué sur l'icône de sauvegarde. |
-| `int` modelid          | Model de l'attach object qui a été édité                                          |
-| `int` boneid           | Bone de l'attach object qui a été édité                                           |
-| `float` Float:fOffsetX | Offset X de l'attach object qui a été édité                                       |
-| `float` Float:fOffsetY | Offset Y de l'attach object qui a été édité                                       |
-| `float` Float:fOffsetZ | Offset Z de l'attach object qui a été édité                                       |
-| `float` Float:fRotX    | Rotation X de l'attach object qui a été édité                                     |
-| `float` Float:fRotY    | Rotation Y de l'attach object qui a été édité                                     |
-| `float` Float:fRotZ    | Rotation Z de l'attach object qui a été édité                                     |
-| `float` Float:fScaleX  | Scale _(taille)_ X de l'attach object qui a été édité                             |
-| `float` Float:fScaleY  | Scale _(taille)_ X de l'attach object qui a été édité                             |
-| `float` Float:fScaleZ  | Scale _(taille)_ X de l'attach object qui a été édité                             |
+| Name                         | Description                                                                       |
+|------------------------------|-----------------------------------------------------------------------------------|
+| `int` playerid               | ID du joueur en mode édition                                                      |
+| `int` EDIT_RESPONSE:response | **0** si annulé (ECHAP) ou **1** si le joueur a cliqué sur l'icône de sauvegarde. |
+| `int` index                  | The index of the attached object (0-9)                                            |
+| `int` modelid                | Model de l'attach object qui a été édité                                          |
+| `int` boneid                 | Bone de l'attach object qui a été édité                                           |
+| `float` Float:fOffsetX       | Offset X de l'attach object qui a été édité                                       |
+| `float` Float:fOffsetY       | Offset Y de l'attach object qui a été édité                                       |
+| `float` Float:fOffsetZ       | Offset Z de l'attach object qui a été édité                                       |
+| `float` Float:fRotX          | Rotation X de l'attach object qui a été édité                                     |
+| `float` Float:fRotY          | Rotation Y de l'attach object qui a été édité                                     |
+| `float` Float:fRotZ          | Rotation Z de l'attach object qui a été édité                                     |
+| `float` Float:fScaleX        | Scale _(taille)_ X de l'attach object qui a été édité                             |
+| `float` Float:fScaleY        | Scale _(taille)_ X de l'attach object qui a été édité                             |
+| `float` Float:fScaleZ        | Scale _(taille)_ X de l'attach object qui a été édité                             |
 
 ## Valeur de retour
 
@@ -52,7 +51,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // Les données doivent être stockées dans les array ci-dessus quand les attach objects sont ... attachés.
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {

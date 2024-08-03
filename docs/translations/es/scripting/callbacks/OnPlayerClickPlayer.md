@@ -4,8 +4,6 @@ descripción: Se llama cuando un jugador hace doble click a un jugador en el sco
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Se llama cuando un jugador hace doble click a un jugador en el scoreboard (menú TAB).
@@ -27,7 +25,7 @@ Siempre se llama primero en filterscripts.
 ## Ejemplos
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Clickeaste en el jugador %d", clickedplayerid);

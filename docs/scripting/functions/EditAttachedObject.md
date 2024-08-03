@@ -1,10 +1,8 @@
 ---
 title: EditAttachedObject
 description: Enter edition mode for an attached object.
-tags: []
+tags: ["player", "object", "attachment"]
 ---
-
-<VersionWarn version='SA-MP 0.3e' />
 
 ## Description
 
@@ -17,7 +15,7 @@ Enter edition mode for an attached object.
 
 ## Returns
 
-1 on success and 0 on failure.
+**1** on success and **0** on failure.
 
 ## Examples
 
@@ -62,4 +60,7 @@ Players will be able to scale objects up to a very large or negative value size.
 - [EditPlayerObject](EditPlayerObject): Edit an object.
 - [SelectObject](SelectObject): Select an object.
 - [CancelEdit](CancelEdit): Cancel the edition of an object.
+
+## Related Callbacks
+
 - [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject): Called when a player finishes editing an attached object.

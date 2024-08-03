@@ -11,10 +11,10 @@ tags: ["player"]
 Toggle player's ghost mode.
 Ghost mode disables the collision between player models.
 
-| Name     | Description                                           |
-| -------- | ----------------------------------------------------- |
-| playerid | The ID of the player to toggle the ghost mode. |
-| bool:toggle | true for enable and false for disable. |
+| Name        | Description                                    |
+| ----------- | ---------------------------------------------- |
+| playerid    | The ID of the player to toggle the ghost mode. |
+| bool:toggle | true for enable and false for disable.         |
 
 ## Returns
 

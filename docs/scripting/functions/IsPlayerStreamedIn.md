@@ -4,8 +4,6 @@ description: Checks if a player is streamed in another player's client.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Checks if a player is streamed in another player's client.
@@ -17,9 +15,9 @@ Checks if a player is streamed in another player's client.
 
 ## Returns
 
-1: The player is streamed in.
+**true** - The player is streamed in.
 
-0: The player is not streamed in.
+**false** - The player is not streamed in.
 
 ## Examples
 
@@ -34,7 +32,9 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::tip
 
-Players stream out if they are more than 150 meters away (see server.cfg - stream_distance)
+**SA-MP server:** Players stream out if they are more than 200.0 meters away (see [server.cfg](../../server/server.cfg) - **stream_distance**)
+
+**open.mp server:** Players stream out if they are more than 200.0 meters away (see [config.json](../../server/config.json) - **network.stream_radius**)
 
 :::
 
@@ -48,6 +48,9 @@ Players aren't streamed in on their own client, so if playerid is the same as fo
 
 - [IsActorStreamedIn](IsActorStreamedIn): Checks if an actor is streamed in for a player.
 - [IsVehicleStreamedIn](IsVehicleStreamedIn): Checks if a vehicle is streamed in for a player.
+
+## Related Callbacks
+
 - [OnPlayerStreamIn](../callbacks/OnPlayerStreamIn): Called when a player streams in for another player.
 - [OnPlayerStreamOut](../callbacks/OnPlayerStreamOut): Called when a player streams out for another player.
 - [OnVehicleStreamIn](../callbacks/OnVehicleStreamIn): Called when a vehicle streams in for a player.

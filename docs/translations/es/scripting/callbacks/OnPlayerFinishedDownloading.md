@@ -4,7 +4,7 @@ descripción: Este callback se llama cuando un jugador finaliza de descargar mod
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3.DL' />
+<VersionWarnES name='callback' version='SA-MP 0.3.DL R1' />
 
 ## Descripción
 

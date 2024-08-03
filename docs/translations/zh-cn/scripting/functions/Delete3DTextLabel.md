@@ -4,15 +4,13 @@ description: 删除一个三维文本标签（用Create3DTextLabel创建）。
 tags: ["3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 删除一个三维文本标签（用 Create3DTextLabel 创建）。
 
 | 参数名    | 说明                        |
 | --------- | --------------------------- |
-| Text3D:id | 要删除的三维文本标签的 ID。 |
+| Text3D:textid | 要删除的三维文本标签的 ID。 |
 
 ## 返回值
 

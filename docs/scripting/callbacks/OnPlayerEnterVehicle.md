@@ -34,7 +34,8 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::tip
 
-This callback is called when a player BEGINS to enter a vehicle, not when they HAVE entered it. See OnPlayerStateChange. This callback is still called if the player is denied entry to the vehicle (e.g. it is locked or full).
+- This callback is called when a player BEGINS to enter a vehicle, not when they HAVE entered it. See [OnPlayerStateChange](OnPlayerStateChange).
+- This callback is still called if the player is denied entry to the vehicle (e.g. it is locked or full).
 
 :::
 

@@ -4,8 +4,6 @@ description: Callback ini akan terpanggil ketika pemain memasuki atau keluar dar
 tags: []
 ---
 
-<VersionWarnID name='Callback' version='SA-MP 0.3a' />
-
 ## Deskripsi
 
 Callback ini akan terpanggil ketika pemain memasuki atau keluar dari mod shop.

@@ -4,12 +4,6 @@ description: Fully repairs a vehicle, including visual damage (bumps, dents, scr
 tags: ["vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.).

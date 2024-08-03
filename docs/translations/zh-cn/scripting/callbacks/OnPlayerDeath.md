@@ -12,7 +12,7 @@ tags: ["player"]
 | -------- | --------------------------------------------------------------- |
 | playerid | 死亡玩家的 ID。                                                 |
 | killerid | 杀死死亡玩家的玩家的 ID，如果没有的话，则为 INVALID_PLAYER_ID。 |
-| reason   | 玩家死亡原因的 ID。                                             |
+| WEAPON:reason   | 玩家死亡原因的 ID。                                             |
 
 ## 返回值
 
@@ -28,7 +28,7 @@ tags: ["player"]
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); // 杀戮信息显示在死亡反馈中
 

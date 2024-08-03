@@ -4,12 +4,6 @@ description: Pristupi modu uređivanja za prikvačeni objekat.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Pristupi modu uređivanja za prikvačeni objekat.

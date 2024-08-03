@@ -14,9 +14,9 @@ This function is deprecated. Please see [GetPlayer3DTextLabelDrawDistance](GetPl
 
 Gets the player's 3D text label draw distance.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player.  |
+| Name                | Description                                                       |
+| ------------------- | ----------------------------------------------------------------- |
+| playerid            | The ID of the player.                                             |
 | PlayerText3D:textid | The ID of the player's 3D text label to get the draw distance of. |
 
 ## Returns
@@ -28,13 +28,13 @@ Returns the draw distance of the player's 3D text label as float.
 ```c
 new PlayerText3D:playerTextId;
 new Float:X, Float:Y, Float:Z;
-new Float:drawdistance;
+new Float:drawDistance;
 
 GetPlayerPos(playerid, X, Y, Z);
 playerTextId = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 0x008080FF, X, Y, Z, 40.0);
 
-drawdistance = GetPlayer3DTextLabelDrawDist(playerid, playerTextId);
-// The `drawdistance` will be 40.0
+drawDistance = GetPlayer3DTextLabelDrawDist(playerid, playerTextId);
+// drawDistance = 40.0
 ```
 
 ## Notes

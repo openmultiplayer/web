@@ -4,12 +4,6 @@ description: Creates a textdraw for a single player.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-This feature (player-textdraws) was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Creates a textdraw for a single player. This can be used as a way around the global text-draw limit.

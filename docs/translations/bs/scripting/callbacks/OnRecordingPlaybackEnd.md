@@ -4,12 +4,6 @@ description: Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa "NPCStartRecordingPlayback" došao do kraja.

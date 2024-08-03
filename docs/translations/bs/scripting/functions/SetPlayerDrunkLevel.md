@@ -4,12 +4,6 @@ description: Postavlja nivo pijanosti igrača zbog kojeg se igračeva kamera nji
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja nivo pijanosti igrača zbog kojeg se igračeva kamera njiše i vozila teško kontroliraju.

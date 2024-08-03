@@ -59,7 +59,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Pada versi SA-MP 0.3x, tindakan apa pun yang diambil langsung sebelum Ban() (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player. Timer harus digunakan untuk menunda ban.
+Tindakan apa pun yang diambil langsung sebelum Ban() (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player. Timer harus digunakan untuk menunda ban.
 :::
 
 ## Fungsi Terkait

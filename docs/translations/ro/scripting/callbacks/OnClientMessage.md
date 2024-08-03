@@ -4,12 +4,6 @@ descriere: Acest callback este apelat oricand NPC-ul vede un ClientMessage
 tags: []
 ---
 
-:::atentie
-
-Acest NPC callback a fost adaugat in SA-MP 0.3a si nu o sa functioneze pe versiuni anterioare!
-
-:::
-
 ## Descriere
 
 Acest callback este apelat oricand NPC-ul vede un ClientMessage. Acesta va fi de fiecare data cand se utilizeaza functia SendClientMessageToAll si de fiecare data functia SendClientMessage este trimisa spre NPC. Acest callback nu o sa fie folosit cand cineva spune ceva. Pentru o versiune ca asta cu player text, vedem NPC:OnPlayerText.

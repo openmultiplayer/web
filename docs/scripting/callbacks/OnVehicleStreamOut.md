@@ -4,8 +4,6 @@ description: This callback is called when a vehicle is streamed out for a player
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 This callback is called when a vehicle is streamed out for a player's client (it's so far away that they can't see it).

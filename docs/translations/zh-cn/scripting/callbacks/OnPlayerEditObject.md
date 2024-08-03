@@ -4,8 +4,6 @@ description: 当玩家编辑完一个物体(EditObject/EditPlayerObject)时，�
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3e' />
-
 ## 描述
 
 当玩家编辑完一个物体(EditObject/EditPlayerObject)时，会调用该回调。
@@ -15,7 +13,7 @@ tags: ["player"]
 | playerid     | 编辑物体的玩家的 ID                                  |
 | playerobject | 如果它是全局物体，则为 0；如果它是玩家物体，则为 1。 |
 | objectid     | 已编辑物体的 ID                                      |
-| response     | [响应类型](../resources/objecteditionresponsetypes)  |
+| EDIT_RESPONSE:response     | [响应类型](../resources/objecteditionresponsetypes)  |
 | Float:fX     | 已编辑物体的 X 偏移量                                |
 | Float:fY     | 已编辑物体的 Y 偏移量                                |
 | Float:fZ     | 已编辑物体的 Z 偏移量                                |
@@ -34,7 +32,7 @@ tags: ["player"]
 ## 案例
 
 ```c
-public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
+public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new
         Float: oldX,

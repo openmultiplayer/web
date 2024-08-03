@@ -16,15 +16,16 @@ Check if the player is controllable.
 
 ## Returns
 
-false: Uncontrollable
+**true** - Controllable
 
-true: Controllable
+**false** - Uncontrollable
 
 ## Examples
 
 ```c
 public OnPlayerSpawn(playerid)
 {
+    // Unfreeze the player if it is freezed
     if (IsPlayerControllable(playerid) == false)
     {
         TogglePlayerControllable(playerid, true);

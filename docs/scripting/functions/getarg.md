@@ -1,7 +1,7 @@
 ---
 title: getarg
 description: Get an argument that was passed to a function.
-tags: []
+tags: ["core", "arguments", "args"]
 ---
 
 <LowercaseNote />
@@ -10,10 +10,10 @@ tags: []
 
 Get an argument that was passed to a function.
 
-| Name  | Description                                             |
-| ----- | ------------------------------------------------------- |
-| arg   | The argument sequence number. Use 0 for first argument. |
-| index | The index (in case the argument is an array).           |
+| Name  | Description                                                 |
+| ----- | ----------------------------------------------------------- |
+| arg   | The argument sequence number. Use 0 for first argument.     |
+| index | The index (in case the argument is an array) *(optional=0)* |
 
 ## Returns
 

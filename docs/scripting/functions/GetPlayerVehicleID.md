@@ -6,7 +6,9 @@ tags: ["player", "vehicle"]
 
 ## Description
 
-This function gets the ID of the vehicle the player is currently in. Note: NOT the model id of the vehicle. See GetVehicleModel for that.
+This function gets the ID of the vehicle the player is currently in.
+
+**Note:** NOT the model id of the vehicle. See [GetVehicleModel](GetVehicleModel) for that.
 
 | Name     | Description                                                        |
 | -------- | ------------------------------------------------------------------ |
@@ -14,14 +16,13 @@ This function gets the ID of the vehicle the player is currently in. Note: NOT t
 
 ## Returns
 
-ID of the vehicle or 0 if not in a vehicle
+ID of the vehicle or **0** if not in a vehicle
 
 ## Examples
 
 ```c
 // Add 10x Nitro if the player is in a car. Might be called on a command.
-new vehicleId;
-vehicleId = GetPlayerVehicleID(playerid);
+new vehicleId = GetPlayerVehicleID(playerid);
 if (vehicleId != 0)
 {
     AddVehicleComponent(vehicleId, 1010);

@@ -4,12 +4,6 @@ description: Prekid selektovanja textdrawa pomoću miša.
 tags: ["textdraw"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Cancel textdraw selection with the mouse

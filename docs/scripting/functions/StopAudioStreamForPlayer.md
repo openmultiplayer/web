@@ -4,8 +4,6 @@ description: Stops the current audio stream for a player.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 Stops the current audio stream for a player.
@@ -21,7 +19,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     // If the player exits a vehicle
     if (oldstate == PLAYER_STATE_DRIVER || oldstate == PLAYER_STATE_PASSENGER)

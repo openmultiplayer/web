@@ -15,13 +15,13 @@ Attach a vehicle to another vehicle as a trailer.
 
 ## Returns
 
-This function always returns 1, even if neither of the vehicle IDs passed are valid.
+This function always returns **true**, even if neither of the vehicle IDs passed are valid.
 
 ## Examples
 
 ```c
-new vehicleId = CreateVehicle(...);
-new trailerId = CreateVehicle(...);
+new vehicleId = CreateVehicle(403, 657.8788, 1721.9125, 7.7199, 41.0000, -1, -1, 100);
+new trailerId = CreateVehicle(435, 651.8154, 1716.3301, 7.7700, 41.0000, -1, -1, 100);
 
 AttachTrailerToVehicle(trailerId, vehicleId);
 ```

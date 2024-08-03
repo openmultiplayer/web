@@ -180,14 +180,9 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon reloadfs`                  | Memuat ulang filterscript (_contoh: /rcon reloadfs adminfs_).                                                                                |
 | `/rcon rcon\_password [PASSWORD]` | Mengganti password RCON                                                                                                                      |
 | `/rcon password [password]`       | Mengatur/menghapus kata sandi server                                                                                                         |
-
-**Perintah-perintah berikut hanya tersedia di versi 0.3z R2 dan di atasnya**:
-
-| Perintah                          | Deskripsi                                                                                                           |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `/rcon messageslimit [count]`     | Mengubah jumlah pesan yang dikirim klien ke server per detik. (nilai awal 500)                                      |
-| `/rcon ackslimit [count]`         | Mengubah batasan acks (nilai awal 1000) (Sejak versi 0.3z R2-2, nilai awal limit-nya adalah 3000)                   |
-| `/rcon messageholelimit [count]`  | Mengubah batasan lubang pesan (Juga tersedia di versi 0.3z R1) (nilai awal 3000)                                    |
+| `/rcon ackslimit [count]`         | Mengubah batasan acks (nilai awal 3000)                  |
+| `/rcon messageholelimit [count]`  | Mengubah batasan lubang pesan (nilai awal 3000)                                    |
 | `/rcon playertimeout [limit m/s]` | Mengubah waktu dalam milisekon hingga pemain dianggap timeout ketika tidak mengirim paket apapun. (nilai awal 1000) |
 | `/rcon language [language]`       | Mengubah bahasa server (_contoh: /rcon language English_). Muncul di penjelajah server.                             |
 

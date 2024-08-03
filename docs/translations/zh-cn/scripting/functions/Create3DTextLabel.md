@@ -4,8 +4,6 @@ description: 在世界的特定位置创建一个三维文本标签。
 tags: ["3dtextlabel"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3a' />
-
 ## 描述
 
 在世界的特定位置创建一个三维文本标签

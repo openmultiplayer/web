@@ -212,7 +212,7 @@ if (RELEASED( KEY_FIRE | KEY_CROUCH ))
 ### Super jump
 
 ```c
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
 	if (PRESSED(KEY_JUMP))
 	{

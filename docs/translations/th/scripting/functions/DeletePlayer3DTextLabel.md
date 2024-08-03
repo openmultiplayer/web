@@ -4,12 +4,6 @@ description: Destroy a 3D text label that was created using CreatePlayer3DTextLa
 tags: ["player", "3dtextlabel"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Destroy a 3D text label that was created using CreatePlayer3DTextLabel.
@@ -17,7 +11,7 @@ Destroy a 3D text label that was created using CreatePlayer3DTextLabel.
 | Name            | Description                                         |
 | --------------- | --------------------------------------------------- |
 | playerid        | The ID of the player whose 3D text label to delete. |
-| PlayerText3D:id | The ID of the player's 3D text label to delete.     |
+| PlayerText3D:textid | The ID of the player's 3D text label to delete.     |
 
 ## ส่งคืน
 

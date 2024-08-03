@@ -4,8 +4,6 @@ description: Get the fighting style the player currently using.
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Get the fighting style the player currently using.
@@ -21,9 +19,48 @@ The ID of the [fighting style](../resources/fightingstyles) of the player.
 ## Examples
 
 ```c
-if (GetPlayerFightingStyle(playerid) == FIGHT_STYLE_NORMAL)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    SendClientMessage(playerid,0xFFFFFFAA,"You are using normal fighting style!");
+    if (!strcmp(cmdtext, "/fightstyle", true))
+    {
+        new string[64];
+
+        new FIGHT_STYLE:style = GetPlayerFightingStyle(playerid);
+        new styleName[11];
+
+        switch (style)
+        {
+            case FIGHT_STYLE_NORMAL:
+            {
+                styleName = "normal";
+            }
+            case FIGHT_STYLE_BOXING:
+            {
+                styleName = "boxing";
+            }
+            case FIGHT_STYLE_KUNGFU:
+            {
+                styleName = "kungfu";
+            }
+            case FIGHT_STYLE_KNEEHEAD:
+            {
+                styleName = "kneehead";
+            }
+            case FIGHT_STYLE_GRABKICK:
+            {
+                styleName = "grabkick";
+            }
+            case FIGHT_STYLE_ELBOW:
+            {
+                styleName = "elbow";
+            }
+        }
+        
+        format(string, sizeof(string), "You are using %s fighting style!", styleName);
+        SendClientMessage(playerid, 0xFFFFFFAA, string);
+        return 1;
+    }
+    return 0;
 }
 ```
 

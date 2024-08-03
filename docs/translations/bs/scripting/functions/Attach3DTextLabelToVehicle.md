@@ -4,19 +4,13 @@ description: Prikvači 3D text label za vozilo.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Prikvači 3D text label za vozilo.
 
 | Ime       | Deskripcija                                                                  |
 | --------- | ---------------------------------------------------------------------------- |
-| Text3D:id | 3D Text Label kojeg želite prikvačiti.                                       |
+| Text3D:textid | 3D Text Label kojeg želite prikvačiti.                                       |
 | vehicleid | Vozilo na koje želite prikvačiti 3D text label.                              |
 | OffsetX   | Koordinata Offset-X vozila igrača (the vehicle is 0.0,0.0,0.0)..             |
 | OffsetY   | Koordinata Offset-Y vozila igrača (the vehicle is 0.0,0.0,0.0)..             |

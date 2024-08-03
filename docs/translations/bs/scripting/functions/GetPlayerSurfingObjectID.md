@@ -4,12 +4,6 @@ description: Vraća ID objekta na kojem igrač surfa.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3c R3 i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Vraća ID objekta na kojem igrač surfa.

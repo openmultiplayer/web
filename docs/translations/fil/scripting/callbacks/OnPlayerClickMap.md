@@ -4,8 +4,6 @@ description: OnPlayerClickMap is called when a player places a target/waypoint o
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Description
 
 Ang OnPlayerClickMap ay itinatawag kapag ang player ay naglagay ng isang target o waypoint sa kanyang pause menu map. (Sa pag right-click)

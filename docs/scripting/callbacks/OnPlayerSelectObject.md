@@ -1,10 +1,8 @@
 ---
 title: OnPlayerSelectObject
 description: This callback is called when a player selects an object after BeginObjectSelecting has been used.
-tags: ["player"]
+tags: ["player", "object"]
 ---
-
-<VersionWarn name='callback' version='SA-MP 0.3e' />
 
 ## Description
 
@@ -31,9 +29,10 @@ It is always called first in filterscripts.
 ## Examples
 
 ```c
-public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ)
+public OnPlayerSelectObject(playerid, SELECT_OBJECT:type, objectid, modelid, Float:fX, Float:fY, Float:fZ)
 {
     printf("Player %d selected object %d", playerid, objectid);
+
     if (type == SELECT_OBJECT_GLOBAL_OBJECT)
     {
         BeginObjectEditing(playerid, objectid);
@@ -42,6 +41,7 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
     {
         BeginPlayerObjectEditing(playerid, objectid);
     }
+
     SendClientMessage(playerid, 0xFFFFFFFF, "You now are able to edit your object!");
     return 1;
 }

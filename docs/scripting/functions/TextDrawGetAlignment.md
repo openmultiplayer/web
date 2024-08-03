@@ -10,8 +10,8 @@ tags: ["textdraw"]
 
 Gets the text alignment of a textdraw.
 
-| Name | Description |
-| ---- | ----------------------------------------------------------- |
+| Name        | Description                                     |
+| ----------- | ----------------------------------------------- |
 | Text:textid | The ID of the textdraw to get the alignment of. |
 
 ## Returns
@@ -21,15 +21,15 @@ Returns the textdraw text alignment.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
     TextDrawAlignment(gMyTextdraw, TEXT_DRAW_ALIGN_CENTER);
 
-    new TEXT_DRAW_ALIGN: align = TextDrawGetAlignment(gMyTextdraw);
-    // The `align` will be 'TEXT_DRAW_ALIGN_CENTER'
+    new TEXT_DRAW_ALIGN:align = TextDrawGetAlignment(gMyTextdraw);
+    // align = TEXT_DRAW_ALIGN_CENTER
     return 1;
 }
 ```

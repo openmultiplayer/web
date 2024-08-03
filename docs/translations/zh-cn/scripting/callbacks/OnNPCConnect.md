@@ -4,8 +4,6 @@ description: 当NPC成功连接到服务器时会调用该回调。
 tags: []
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3a' />
-
 ## 描述
 
 当 NPC 成功连接到服务器时会调用该回调。

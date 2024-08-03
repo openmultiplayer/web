@@ -4,23 +4,17 @@ description: Ovaj callback je pozvan kada igrač zadaje povredu drugom igraču.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada igrač zadaje povredu drugom igraču.
 
-| Ime       | Deskripcija                                                                                                                 |
-| --------- | --------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | ID igrača koji tadaje povredu.                                                                                              |
-| damagedid | ID igrača koji prima povredu.                                                                                               |
-| amount    | Količina healtha i armora kojeg je izgubio (kombinirano).                                                                   |
-| weaponid  | Razlog zbog kojeg je zadobio povredu.                                                                                       |
-| bodypart  | Dio tijela koji je udaren. (ZABILJEŠKA: Ovaj parametar je dodan u 0.3z verziji. Ostavite ga ako koristite starije verzije!) |
+| Ime             | Deskripcija                                                                                                                 |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------|
+| playerid        | ID igrača koji tadaje povredu.                                                                                              |
+| damagedid       | ID igrača koji prima povredu.                                                                                               |
+| Float:amount    | Količina healtha i armora kojeg je izgubio (kombinirano).                                                                   |
+| WEAPON:weaponid | Razlog zbog kojeg je zadobio povredu.                                                                                       |
+| bodypart        | Dio tijela koji je udaren. |
 
 ## Returns
 
@@ -33,7 +27,7 @@ Uvijek je pozvana prva u filterskripti.
 ## Primjeri
 
 ```c
-public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
+public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bodypart)
 {
     new string[128], victim[MAX_PLAYER_NAME], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
@@ -54,5 +48,3 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
 Imajte na umu da ova funkcija može biti neprecizna u nekim slučajevima. Ako želite spriječiti da određeni igrači povrjeđuju, koristite `SetPlayerTeam`. ID oružja (weaponid) će return-ovati 37 (flame thrower) od bilo kojeg izvora vatre (npr. molotov, 18) ID oružja (weaponid) će return-ovati 51 od bilo koje vrste eksplozije (npe. RPG, granata) playerid je jedini koji može pozvati ovaj callback. Količina je uvijek maksimalna povreda koju taj ID oružja (weaponid) može da dadne, iako je nivo healtha manji od maksimalne povrede. Tako da kada igrač ima 100.0 healtha i biva pogođen sa Desert Eagle-om koji daje damage vrijednosti 46.2, potrebna su 3 hica da se taj igrač ubije. Sva tri hica će priakzati količinu 46.2, iako zadnji kada zadnji hitac biva ispaljen, igrač ima samo 7.6 preostalog healtha.
 
 :::
-
-## Srodne Funkcije

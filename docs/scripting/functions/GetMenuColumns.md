@@ -10,9 +10,9 @@ tags: ["menu"]
 
 Get the number of active columns.
 
-| Name      | Description                                                       |
-| --------- | ----------------------------------------------------------------- |
-| Menu:menuid  | The ID of the menu to get the columns from.  |
+| Name        | Description                                 |
+| ----------- | ------------------------------------------- |
+| Menu:menuid | The ID of the menu to get the columns from. |
 
 ## Returns
 

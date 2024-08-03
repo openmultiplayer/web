@@ -1,7 +1,7 @@
 ---
 title: DestroyActor
 description: Destroy an actor which was created with CreateActor.
-tags: []
+tags: ["actor"]
 ---
 
 <VersionWarn version='SA-MP 0.3.7' />
@@ -16,9 +16,9 @@ Destroy an actor which was created with CreateActor.
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The actor with the ID specified does not exist.
+**false** - The function failed to execute. The actor with the ID specified does not exist.
 
 ## Examples
 
@@ -27,7 +27,7 @@ new MyActor;
 
 public OnFilterScriptInit()
 {
-    MyActor = CreateActor(...);
+    MyActor = CreateActor(0, 0.0, 0.0, 3.0, 0.0);
     return 1;
 }
 

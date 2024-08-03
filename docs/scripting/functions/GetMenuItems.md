@@ -10,10 +10,10 @@ tags: ["menu"]
 
 Get the number of rows in the given column.
 
-| Name      | Description                                                       |
-| --------- | ----------------------------------------------------------------- |
-| Menu:menuid  | The ID of the menu.  |
-| column | The column. |
+| Name        | Description         |
+| ----------- | ------------------- |
+| Menu:menuid | The ID of the menu. |
+| column      | The column.         |
 
 ## Returns
 

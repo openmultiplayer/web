@@ -4,8 +4,6 @@ description: Use this function before any player connects (OnGameModeInit) to te
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3c' />
-
 ## Description
 
 Use this function before any player connects (OnGameModeInit) to tell all clients that the script will control vehicle engines and lights. This prevents the game automatically turning the engine on/off when players enter/exit vehicles and headlights automatically coming on when it is dark.
@@ -16,16 +14,25 @@ Use this function before any player connects (OnGameModeInit) to tell all client
 public OnGameModeInit()
 {
     ManualVehicleEngineAndLights();
-
     return 1;
 }
 ```
 
 ## Notes
 
-:::tip
+:::warning
 
 Is it not possible to reverse this function after it has been used. You must either use it or not use it.
+
+:::
+
+:::tip
+
+You can also enable or disable this function via [config.json](../../server/config.json)
+
+```json
+"use_manual_engine_and_lights": true,
+```
 
 :::
 

@@ -4,8 +4,6 @@ descripción: Se llama cuando un vehículo es cargado (se hace visible) en el cl
 tags: ["vehicle"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Se llama cuando un vehículo es cargado (se hace visible) en el cliente de un jugador.

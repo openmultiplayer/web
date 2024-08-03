@@ -1,7 +1,7 @@
 ---
 title: heapspace
 description: Returns the amount of memory available for the heap/stack in bytes.
-tags: []
+tags: ["core"]
 ---
 
 <LowercaseNote />
@@ -19,5 +19,3 @@ public OnGameModeInit()
     return 1;
 }
 ```
-
-## Related Functions

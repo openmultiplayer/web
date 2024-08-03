@@ -17,9 +17,9 @@ Toggle player's widescreen.
 
 ## Returns
 
-true - The function was executed successfully.
+**true** - The function was executed successfully.
 
-false - The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 
@@ -35,6 +35,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
 }
 ```
+
+<hr />
+
+**Widescreen on:**
+
+![](https://i.ibb.co/Zcc2qmD/widescreen-on.png)
+
+**Widescreen off:**
+
+![](https://i.ibb.co/jb1YcQS/widescreen-off.png)
 
 ## Related Functions
 

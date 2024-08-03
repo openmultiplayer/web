@@ -4,12 +4,6 @@ description: Adds a death to the 'killfeed' on the right-hand side of the screen
 tags: ["player"]
 ---
 
-:::warning
-
-This Function was added in SA-MP 0.3z R2-2 and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Adds a death to the 'killfeed' on the right-hand side of the screen for a single player.
@@ -30,7 +24,7 @@ Adds a death to the 'killfeed' on the right-hand side of the screen for a single
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Sends a death message to "playerid" shows that "killerid" killed "playerid" for "reason"
     SendDeathMessageToPlayer(playerid, killerid, playerid, reason);

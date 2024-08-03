@@ -4,8 +4,6 @@ description: Ang callback na ito ay tinatawag kapag ang isang sasakyan ay na-str
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Description
 
 Ang callback na ito ay tinatawag kapag ang isang sasakyan ay na-stream sa client ng isang manlalaro.

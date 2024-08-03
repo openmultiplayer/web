@@ -4,8 +4,6 @@ description: 检索指定玩家的游戏视角缩放级别。
 tags: ["player", "camera"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3z' />
-
 ## 描述
 
 检索指定玩家的游戏视角缩放级别。

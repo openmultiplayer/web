@@ -4,12 +4,6 @@ description: Počinje snimati pokrete igrača u datoteku, koju NPC može reprodu
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Počinje snimati pokrete igrača u datoteku, koju NPC može reproducirati.

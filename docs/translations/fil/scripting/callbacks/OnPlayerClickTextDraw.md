@@ -4,8 +4,6 @@ description: This callback is called when a player clicks on a textdraw or cance
 tags: ["player", "textdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Description
 
 Ang callback na ito ay natatawag kapag ang player ay pumindot sa isang textdraw o nag cancel sa select mode gamit ang `ESC` key.
@@ -45,7 +43,7 @@ public OnGameModeInit()
     return 1;
 }
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (newkeys == KEY_SUBMISSION)
     {

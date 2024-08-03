@@ -4,7 +4,7 @@ description: This callback is called when a player-pickup enters the visual rang
 tags: ["player", "pickup", "playerpickup"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarn name='callback' version='omp v1.1.0.2612' />
 
 ## Description
 

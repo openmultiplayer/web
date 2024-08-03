@@ -1,14 +1,8 @@
 ---
 title: BlockIpAddress
 description: Blokira IP adresu iz daljnje komunikacije sa serverom na određeno vrijeme (uz dopuštene zamjenske znakove).
-tags: []
+tags: ["ip address"]
 ---
-
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z R2-2 i ne radi u nižim verzijama!
-
-:::
 
 ## Deskripcija
 

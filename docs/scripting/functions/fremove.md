@@ -10,20 +10,42 @@ tags: ["file management"]
 
 Delete a file.
 
-| Name   | Description                                               |
-| ------ | --------------------------------------------------------- |
-| name[] | The path of the file to delete. (NOTE: NOT a file handle) |
+| Name             | Description                     |
+| ---------------- | ------------------------------- |
+| const filename[] | The path of the file to delete. |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. The file doesn't exist, or you don't have permission to delete it.
+**false** - The function failed to execute. The file doesn't exist, or you don't have permission to delete it.
 
 ## Examples
 
+**Delete a file:**
+
 ```c
-fremove("Example.txt");
+if (fremove("example.txt"))
+{
+    print("The file \"example.txt\" removed.");
+}
+else
+{
+    print("The file \"example.txt\" does not exists.");
+}
+```
+
+**Delete a directory:**
+
+```c
+if (fremove("logs"))
+{
+    print("The directory \"logs\" removed.");
+}
+else
+{
+    print("The directory \"logs\" does not exists, or it is not empty.");
+}
 ```
 
 ## Notes
@@ -55,3 +77,12 @@ The file path must be valid.
 - [flength](flength): Get the file length.
 - [fexist](fexist): Check, if a file exists.
 - [fmatch](fmatch): Check, if patterns with a file name matches.
+- [ftell](ftell): Get the current position in the file.
+- [fflush](fflush): Flush a file to disk (ensure all writes are complete).
+- [fstat](fstat): Return the size and the timestamp of a file.
+- [frename](frename): Rename a file.
+- [fcopy](fcopy): Copy a file.
+- [filecrc](filecrc): Return the 32-bit CRC value of a file.
+- [diskfree](diskfree): Returns the free disk space.
+- [fattrib](fattrib): Set the file attributes.
+- [fcreatedir](fcreatedir): Create a directory.

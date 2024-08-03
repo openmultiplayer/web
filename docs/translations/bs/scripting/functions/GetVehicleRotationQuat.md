@@ -4,12 +4,6 @@ description: Vraća rotaciju vozila na svim osama kao kvaternion.
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3b i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Vraća rotaciju vozila na svim osama kao kvaternion.

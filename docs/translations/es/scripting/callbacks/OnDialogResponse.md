@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador responde a un cuadro de d
 tags: []
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3a' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog ya sea clickeando un botón, presionando ENTER/ESC o haciendo doble click en un elemento de lista (si el diálogo utiliza el estilo DIALOG_STYLE_LIST).
@@ -160,5 +158,8 @@ El diálogo de un jugador no se oculta cuando el gamemode se reinicia, causando 
 :::
 
 ## Funciones Relacionadas
-
-- [ShowPlayerDialog](../functions/ShowPlayerDialog): Mostrar un diálogo a un jugador.
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnDialogResponse:
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Muestra un diálogo a un jugador.
+- [GetPlayerDialogID](../functions/GetPlayerDialogID): Obtiene la id del diálogo el cual se le está mostrando al jugador en ese momento.
+- [GetPlayerDialogData](../functions/GetPlayerDialogData): Obtiene la información del diálogo el cual se le está mostrando al jugador en ese momento.
+- [HidePlayerDialog](../functions/HidePlayerDialog): Oculta el diálogo el cual se le está mostrando al jugador en ese momento.

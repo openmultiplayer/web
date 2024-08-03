@@ -1,27 +1,14 @@
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Button,
-  Flex,
-  IconButton,
-  Link,
-  Menu,
+import { Box, Button, Flex, IconButton, Link, useColorMode, useDisclosure, Menu,
   MenuButton,
   MenuDivider,
   MenuGroup,
   MenuItem,
-  MenuList,
-  useColorMode,
-  useDisclosure,
-} from "@chakra-ui/react";
-import {
-  MoonIcon,
-  SunIcon
-} from '@chakra-ui/icons';
+  MenuList, } from "@chakra-ui/react";
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { FC, useRef } from "react";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
-import { useAuth } from "src/auth/hooks";
 import LanguageSelect from "./LanguageSelect";
 
 export type NavItem = {
@@ -40,37 +27,75 @@ const ON_DESKTOP = { base: "none", md: "flex" };
 const ON_MOBILE = { base: "flex", md: "none" };
 
 const NavMenu: FC<Props> = ({ items, route }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const { user } = useAuth();
   const { colorMode, toggleColorMode } = useColorMode();
   const languageRef = useRef<{ open: () => void }>(null);
-  const router = useRouter()
+  const router = useRouter();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const isCurrent = (path: string) => path === route;
 
+  const handleImageClick = () => {
+    languageRef.current?.open();
+  };
+
+  const locale = router.locale || "en";
+
   return (
     <Box p="2">
-      <Flex gridGap={1} alignItems={"center"} justifyContent={"space-between"}>
-        <Flex gridGap={1} display={ON_DESKTOP}>
+      <Flex gridGap={0.5} alignItems="center" justifyContent="space-between">
+        <Flex gridGap={0.5} display={ON_DESKTOP}>
           {items.map((link) => (
-              <NavLink
-                key={link.path}
-                item={link}
-                current={isCurrent(link.path)}
-              />
+            <NavLink
+              key={link.path}
+              item={link}
+              current={isCurrent(link.path)}
+            />
           ))}
 
           <IconButton cursor="pointer" as="div" size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
-            {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+            {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
           </IconButton>
+
+          <IconButton
+            cursor="pointer"
+            size="sm"
+            aria-label="Change Language"
+            onClick={handleImageClick}
+          >
+            <img
+              src={`/images/assets/${locale}.svg`}
+              width="15"
+              height="15"
+              alt="Language"
+            />
+          </IconButton>
+
+          <LanguageSelect title=" " ref={languageRef} />
         </Flex>
 
         <IconButton cursor="pointer" display={ON_MOBILE} size="sm" aria-label="Toggle Mode" onClick={toggleColorMode}>
-           {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+          {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </IconButton>
+
+        <IconButton
+          cursor="pointer"
+          size="sm"
+          display={ON_MOBILE}
+          aria-label="Change Language"
+          onClick={handleImageClick}
+        >
+          <img
+            src={`/images/assets/${locale}.svg`}
+            width="13"
+            height="13"
+            alt="Language"
+          />
+        </IconButton>
+
 
         <Menu isOpen={isOpen} onOpen={onOpen} onClose={onClose}>
           <MenuButton
+            display={ON_MOBILE}
             as={IconButton}
             aria-label="Navigation Menu"
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -89,24 +114,6 @@ const NavMenu: FC<Props> = ({ items, route }) => {
                   {name}
                 </MenuItem>
               ))}
-            </MenuGroup>
-
-            <MenuDivider display={ON_MOBILE} />
-
-            <MenuGroup>
-              {user ? (
-                <MenuItem onClick={() => router.push('/dashboard')}>
-                  Dashboard
-                </MenuItem>
-              ) : (
-                <MenuItem onClick={() => router.push('/login')}>
-                  Login
-                </MenuItem>
-              )}
-
-              <MenuItem onClick={()=> languageRef.current?.open()}>
-                <LanguageSelect title="Language" ref={languageRef} />
-              </MenuItem>
             </MenuGroup>
           </MenuList>
         </Menu>

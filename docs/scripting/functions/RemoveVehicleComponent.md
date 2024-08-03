@@ -11,19 +11,20 @@ Remove a component from a vehicle.
 | Name                                       | Description                    |
 |--------------------------------------------|--------------------------------|
 | vehicleid                                  | ID of the vehicle.             |
-| [componentid](../resources/carcomponentid) | ID of the component to remove. |
+| [component](../resources/carcomponentid)   | ID of the component to remove. |
 
 ## Returns
 
-0 - The component was not removed because the vehicle does not exist.
+**true** - The component was successfully removed from the vehicle.
 
-1 - The component was successfully removed from the vehicle.
+**false** - The component was not removed because the vehicle does not exist.
 
 ## Examples
 
 ```c
-//remove Nitro from vehicle number 1
-RemoveVehicleComponent(1, 1010);
+// Remove Nitro from player vehicle
+new vehicleid = GetPlayerVehicleID(playerid);
+RemoveVehicleComponent(vehicleid, 1010);
 ```
 
 ## Related Functions
@@ -31,6 +32,7 @@ RemoveVehicleComponent(1, 1010);
 - [AddVehicleComponent](AddVehicleComponent): Add a component to a vehicle.
 - [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Check what components a vehicle has.
 - [GetVehicleComponentType](GetVehicleComponentType): Check the type of component via the ID.
+- [VehicleCanHaveComponent](VehicleCanHaveComponent): Is the component legal on the vehicle?
 
 ## Related Callbacks
 

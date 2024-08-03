@@ -4,8 +4,6 @@ description: Gets the amount of data (in bytes) that the server has received fro
 tags: ["network monitoring"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Gets the amount of data (in bytes) that the server has received from the player.
@@ -16,7 +14,9 @@ Gets the amount of data (in bytes) that the server has received from the player.
 
 ## Returns
 
-This function returns the number of bytes the server has received from the player. 0 is returned if the player is not connected.
+This function returns the number of bytes the server has received from the player.
+
+0 is returned if the player is not connected.
 
 ## Examples
 

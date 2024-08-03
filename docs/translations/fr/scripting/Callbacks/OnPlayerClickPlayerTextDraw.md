@@ -4,8 +4,6 @@ description: Cette callback est appelée quand un joueur clique sur un player-te
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3e' />
-
 ## Paramètres
 
 Cette callback est appelée quand un joueur clique sur un player-textdraw. Mais elle ne l'est pas quand le joueur quitte le textdraw sélectionné (ECHAP) - mais [OnPlayerClickTextDraw](OnPlayerClickTextDraw) l'est.
@@ -45,7 +43,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (newkeys == KEY_SUBMISSION)
     {

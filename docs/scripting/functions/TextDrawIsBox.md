@@ -12,8 +12,8 @@ Checks if a textdraw is box.
 
 ## Parameters
 
-| Name      | Description                        |
-| --------- | ---------------------------------- |
+| Name        | Description                      |
+| ----------- | -------------------------------- |
 | Text:textid | The ID of the textdraw to check. |
 
 ## Return Values
@@ -23,7 +23,7 @@ Returns **true** if the textdraw is box, otherwise **false**.
 ## Example Usage
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {

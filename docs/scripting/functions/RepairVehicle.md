@@ -4,8 +4,6 @@ description: Fully repairs a vehicle, including visual damage (bumps, dents, scr
 tags: ["vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.).
@@ -16,9 +14,9 @@ Fully repairs a vehicle, including visual damage (bumps, dents, scratches, poppe
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle specified does not exist.
+**false** - The function failed to execute. This means the vehicle specified does not exist.
 
 ## Examples
 

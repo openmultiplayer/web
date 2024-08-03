@@ -1,7 +1,7 @@
 ---
 title: IsValidVehicle
 description: Check if a vehicle is created.
-tags: []
+tags: ["vehicle"]
 ---
 
 :::note
@@ -32,21 +32,24 @@ Check if a vehicle is created.
 #endif
 
 // Count vehicles
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext,"/countvehicles",true))
+    if (!strcmp(cmdtext, "/countvehicles", true))
     {
         new
             count,
-            msg[60];
+            string[128];
 
-        for(new i; i < MAX_VEHICLES; i++)
+        for (new i = 0; i < MAX_VEHICLES; i++)
         {
-            if (IsValidVehicle(i)) count++;
+            if (IsValidVehicle(i))
+            {
+                count++;
+            }
         }
 
-        format(msg, sizeof(msg), "* There are %d valid spawned vehicles on this server.", count);
-        SendClientMessage(playerid, 0x33CCCCFF, msg);
+        format(string, sizeof(string), "* There are %d valid spawned vehicles on this server.", count);
+        SendClientMessage(playerid, 0x33CCCCFF, string);
         return 1;
     }
     return 0;

@@ -4,12 +4,6 @@ description: This callback is called when a vehicle element such as doors, tires
 tags: ["vehicle"]
 ---
 
-:::warning
-
-Callback นี้ถูกเพิ่มใน SA-MP 0.3a และจะไม่ทำงานในเวอร์ชั่นก่อนหน้านี้!
-
-:::
-
 ## คำอธิบาย
 
 This callback is called when a vehicle element such as doors, tires, panels, or lights change their damage status.

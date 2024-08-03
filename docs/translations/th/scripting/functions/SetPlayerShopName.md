@@ -4,12 +4,6 @@ description: Loads or unloads an interior script for a player (for example the a
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3a and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Loads or unloads an interior script for a player (for example the ammunation menu).

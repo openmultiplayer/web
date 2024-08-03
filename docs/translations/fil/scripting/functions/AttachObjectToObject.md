@@ -4,8 +4,6 @@ description: Maaari mong gamitin ang function na ito upang ilagay ang mga object
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3d' />
-
 ## Description
 
 Maaari mong gamitin ang function na ito upang ilagay ang mga object sa iba pang mga object.

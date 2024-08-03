@@ -18,6 +18,7 @@ This callback is called when a player clicked a player gangzone on the pause men
 ## Returns
 
 This callback does not handle returns.
+
 It is always called first in gamemode.
 
 ## Examples

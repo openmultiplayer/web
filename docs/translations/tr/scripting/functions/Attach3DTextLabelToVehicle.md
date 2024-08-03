@@ -4,15 +4,13 @@ description: Bir araca 3D text label bağlar.
 tags: ["vehicle", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Bu fonksiyon bir araca 3D text label bağlamanızı sağlar.
 
 | Parametre | Açıklama                                                                     |
 | --------- | ---------------------------------------------------------------------------- |
-| Text3D:id | Bağlamak istediğiniz 3D text labelin ID'si.                                  |
+| Text3D:textid | Bağlamak istediğiniz 3D text labelin ID'si.                                  |
 | vehicleid | Bağlamak istediğiniz aracın ID'si.                                           |
 | OffsetX   | Aracın X-ofset koordinatı (aracın ortası, yani '0.0, 0.0, 0.0'dan başlar)    |
 | OffsetY   | Aracın Y-ofset koordinatı (aracın ortası, yani '0.0, 0.0, 0.0'dan başlar)    |
@@ -22,7 +20,7 @@ Bu fonksiyon bir araca 3D text label bağlamanızı sağlar.
 
 Bu fonksiyon dönüt vermez.
 
-## Examples
+## Örnekler
 
 ```c
 new

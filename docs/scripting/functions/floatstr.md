@@ -10,9 +10,9 @@ tags: ["string", "floating-point"]
 
 Converts a string to a float.
 
-| Name   | Description                         |
-| ------ | ----------------------------------- |
-| string | The string to convert into a float. |
+| Name           | Description                         |
+| -------------- | ----------------------------------- |
+| const string[] | The string to convert into a float. |
 
 ## Returns
 

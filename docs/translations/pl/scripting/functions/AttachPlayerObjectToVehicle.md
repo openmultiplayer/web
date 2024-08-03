@@ -4,8 +4,6 @@ description: Przyczepia obiekt gracza do pojazdu.
 tags: ["player", "vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Opis
 
 Przyczepia obiekt gracza do pojazdu.
@@ -29,7 +27,7 @@ Ta funkcja nie zwraca żadnych konkretnych wartości.
 ## Przykłady
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER) // Jeżeli gracz wsiadł do pojazdu
     {

@@ -17,9 +17,9 @@ Stop player gangzone flash.
 
 ## Returns
 
-1: The function executed successfully. Success is reported even if the player gangzone wasn't flashing to begin with.
+**1:** The function executed successfully. Success is reported even if the player gangzone wasn't flashing to begin with.
 
-0: The function failed to execute. The gangzone specified does not exist.
+**0:** The function failed to execute. The gangzone specified does not exist.
 
 ## Examples
 
@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
     PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0xFF00FFFF);
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Check if gangzone exists and also check if it flashing
     // If true, then stop flashing gangzone

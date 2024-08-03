@@ -12,9 +12,9 @@ Checks if a player-textdraw is proportional.
 
 ## Parameters
 
-| Name      | Description                        |
-| --------- | ---------------------------------- |
-| playerid | The ID of the player. |
+| Name              | Description                             |
+| ----------------- | --------------------------------------- |
+| playerid          | The ID of the player.                   |
 | PlayerText:textid | The ID of the player-textdraw to check. |
 
 ## Return Values

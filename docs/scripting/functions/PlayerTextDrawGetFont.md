@@ -10,9 +10,9 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the text font of a player-textdraw.
 
-| Name | Description |
-| ---- | ----------------------------------------------------------- |
-| playerid | The ID of the player. |
+| Name              | Description                                |
+| ----------------- | ------------------------------------------ |
+| playerid          | The ID of the player.                      |
 | PlayerText:textid | The ID of the textdraw to get the font of. |
 
 ## Returns
@@ -30,8 +30,8 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawFont(playerid, welcomeText[playerid], TEXT_DRAW_FONT_2);
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
 
-    new TEXT_DRAW_FONT: font = PlayerTextDrawGetFont(playerid, welcomeText[playerid]);
-    // The `font` will be '2'
+    new TEXT_DRAW_FONT:font = PlayerTextDrawGetFont(playerid, welcomeText[playerid]);
+    printf("Font: %d", font); // Font: 2
     return 1;
 }
 ```

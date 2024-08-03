@@ -4,8 +4,6 @@ description: OnPlayerClickMap este apelat atunci când un jucător plasează o �
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Descriere
 
 OnPlayerClickMap este apelat atunci când un jucător plasează o țintă/un punct de referință pe harta meniului de pauză (făcând clic dreapta).

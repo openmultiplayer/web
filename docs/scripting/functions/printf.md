@@ -1,7 +1,7 @@
 ---
 title: printf
 description: Outputs a formatted string on the console (the server window, not the in-game chat).
-tags: []
+tags: ["console"]
 ---
 
 <LowercaseNote />
@@ -12,7 +12,7 @@ Outputs a formatted string on the console (the server window, not the in-game ch
 
 | Name           | Description                               |
 | -------------- | ----------------------------------------- |
-| format[]       | The format string                         |
+| const format[] | The format string                         |
 | {Float,\_}:... | Indefinite number of arguments of any tag |
 
 ## Returns
@@ -41,13 +41,13 @@ You may optionally put a number between the `%` and the letter of the placeholde
 
 ```c
 new number = 42;
-printf("The number is %d.",number);  //-> The number is 42.
+printf("The number is %d.", number);  // The number is 42.
 
-new string[]= "simple message";
-printf("This is a %s containing the number %d.", string, number); //-> This is a simple message containing the number 42.
+new string[] = "simple message";
+printf("This is a %s containing the number %d.", string, number); // This is a simple message containing the number 42.
 
 new character = 64;
-printf("I'm %c home",character); //-> I'm @ home
+printf("I'm %c home", character); // I'm @ home
 ```
 
 ## Notes
@@ -60,5 +60,5 @@ The format string or its output should not exceed 1024 characters. Anything beyo
 
 ## Related Functions
 
-- [print](./print): Print a basic message to the server logs and console.
-- [format](./format): Format a string.
+- [print](print): Print a basic message to the server logs and console.
+- [format](format): Format a string.

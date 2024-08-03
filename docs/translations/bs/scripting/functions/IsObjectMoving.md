@@ -4,12 +4,6 @@ description: Provjerava da li se zadati objectid kreće.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Provjerava da li se zadati objectid kreće.

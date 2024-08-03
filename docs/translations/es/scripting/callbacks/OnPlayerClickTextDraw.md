@@ -4,8 +4,6 @@ descripción: Este callback se llama cuando un jugador clickea en un textdraw o 
 tags: ["player", "textdraw"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3e' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador clickea en un textdraw o cancela el modo de selección con la tecla ESC.
@@ -43,7 +41,7 @@ public OnGameModeInit()
     return 1;
 }
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (newkeys == KEY_SUBMISSION)
     {

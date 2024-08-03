@@ -4,12 +4,6 @@ description: Dobija broj poruka koje je igrač primio u posljednjoj sekundi.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dobija broj poruka koje je igrač primio u posljednjoj sekundi.

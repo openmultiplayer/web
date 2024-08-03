@@ -4,8 +4,6 @@ description: This callback is called when an IP address attempts a connection to
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3z R2-2' />
-
 ## Description
 
 This callback is called when an IP address attempts a connection to the server. To block incoming connections, use BlockIpAddress.

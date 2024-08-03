@@ -179,14 +179,9 @@ unbanip 13.37.13.37
 | `/rcon reloadfs`                  | 重新加载指定脚本（_例如：/rcon reloadfs adminfs_）。         |
 | `/rcon rcon\_password [PASSWORD]` | 更改 rcon 的密码                                             |
 | `/rcon password [password]`       | 设置/重置服务器密码                                          |
-
-**以下命令仅适用于 0.3z R2 及以上版本**:
-
-| 命令                              | 描述                                                         |
-| --------------------------------- | ------------------------------------------------------------ |
 | `/rcon messageslimit [count]`     | 修改客户端每秒发送到服务器的最大消息数。 （默认 500）        |
-| `/rcon ackslimit [count]`         | 更改 acks 的限制（默认 1000）（从 0.3z R2-2 开始，默认限制为 3000） |
-| `/rcon messageholelimit [count]`  | 更改消息洞的限制（在 0.3z R1 中也可用）（默认 3000）         |
+| `/rcon ackslimit [count]`         | 更改 acks 的限制（默认 3000 |
+| `/rcon messageholelimit [count]`  | 更改消息洞的限制（默认 3000）         |
 | `/rcon playertimeout [limit m/s]` | 更改玩家超时时间。（以毫秒为单位，默认 1000）                |
 | `/rcon language [language]`       | 更改服务器语言（_例如：/rcon language Chinese_）。 在服务器信息中显示。 |
 

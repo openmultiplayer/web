@@ -1,24 +1,24 @@
 ---
 title: CreatePlayerObject
 description: Creates an object which will be visible to only one player.
-tags: ["player"]
+tags: ["player", "object", "playerobject"]
 ---
 
 ## Description
 
 Creates an object which will be visible to only one player.
 
-| Name               | Description                                                                                                                                                                                                                                                                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid           | The ID of the player to create the object for.                                                                                                                                                                                                                                                                    |
-| modelid            | The model to create.                                                                                                                                                                                                                                                                                              |
-| Float:X            | The X coordinate to create the object at.                                                                                                                                                                                                                                                                         |
-| Float:Y            | The Y coordinate to create the object at.                                                                                                                                                                                                                                                                         |
-| Float:Z            | The Z coordinate to create the object at.                                                                                                                                                                                                                                                                         |
-| Float:rX           | The X rotation of the object.                                                                                                                                                                                                                                                                                     |
-| Float:rY           | The Y rotation of the object.                                                                                                                                                                                                                                                                                     |
-| Float:rZ           | The Z rotation of the object.                                                                                                                                                                                                                                                                                     |
-| Float:DrawDistance | The distance from which objects will appear to players. 0.0 will cause an object to render at its default distance. Leaving this parameter out will cause objects to be rendered at their default distance. The maximum usable distance is 300 in versions prior to 0.3x, in which drawdistance can be unlimited. |
+| Name               | Description                                                                                                                                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid           | The ID of the player to create the object for.                                                                                                                                                              |
+| modelid            | The model to create.                                                                                                                                                                                        |
+| Float:x            | The X coordinate to create the object at.                                                                                                                                                                   |
+| Float:y            | The Y coordinate to create the object at.                                                                                                                                                                   |
+| Float:z            | The Z coordinate to create the object at.                                                                                                                                                                   |
+| Float:rotationX    | The X rotation of the object.                                                                                                                                                                               |
+| Float:rotationY    | The Y rotation of the object.                                                                                                                                                                               |
+| Float:rotationZ    | The Z rotation of the object.                                                                                                                                                                               |
+| Float:drawDistance | The distance from which objects will appear to players. 0.0 will cause an object to render at its default distance. Leaving this parameter out will cause objects to be rendered at their default distance. |
 
 ## Returns
 
@@ -27,31 +27,23 @@ The ID of the object that was created, or INVALID_OBJECT_ID if the object limit 
 ## Examples
 
 ```c
-new gObject[MAX_PLAYERS];
+new gPlayerObject[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    gObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0, 0, 96);
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
 
     // Or alternatively, using the DrawDistance parameter to show it from as far away as possible:
-    gObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0, 0, 96, 300.0);
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0, 300.0);
     return 1;
 }
 
 public OnPlayerDisconnect(playerid, reason)
 {
-    DestroyPlayerObject(playerid, gObject[playerid]);
+    DestroyPlayerObject(playerid, gPlayerObject[playerid]);
     return 1;
 }
 ```
-
-## Notes
-
-:::warning
-
-The 'DrawDistance' parameter was added in 0.3b. It must be left out in scripts for older versions of SA:MP.
-
-:::
 
 ## Related Functions
 

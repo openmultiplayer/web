@@ -4,31 +4,26 @@ description: Ovaj callback je pozvan kada igrač napusti mod uređivanja prikva�
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Ovaj callback je pozvan kada igrač napusti mod uređivanja prikvačenih objekata (attached object edition mode).
 
-| Ime            | Deskripcija                                                   |
-| -------------- | ------------------------------------------------------------- |
-| playerid       | ID igrača koji je napustio mod uređivanja                     |
-| response       | 0 ako su prekinuli (ESC) ili 1 ako su kliknuli na save ikonu. |
-| modelid        | Model prikvačenog objekta koji je uređen                      |
-| boneid         | Kost na kojoj se nalazi uređeni prikvačeni objekat            |
-| Float:fOffsetX | Ofset X prikvačenog objekta koji je editovan                  |
-| Float:fOffsetY | Ofset Y prikvačenog objekta koji je editovan                  |
-| Float:fOffsetZ | Ofset Z prikvačenog objekta koji je editovan                  |
-| Float:fRotX    | Rotacija X prikvačenog objekta koji je editovan               |
-| Float:fRotY    | Rotacija Y prikvačenog objekta koji je editovan               |
-| Float:fRotZ    | Rotacija Z prikvačenog objekta koji je editovan               |
-| Float:fScaleX  | Skala X prikvačenog objekta koji je editovan                  |
-| Float:fScaleY  | Skala X prikvačenog objekta koji je editovan                  |
-| Float:fScaleZ  | Skala X prikvačenog objekta koji je editovan                  |
+| Ime                    | Deskripcija                                                   |
+|------------------------|---------------------------------------------------------------|
+| playerid               | ID igrača koji je napustio mod uređivanja                     |
+| EDIT_RESPONSE:response | 0 ako su prekinuli (ESC) ili 1 ako su kliknuli na save ikonu. |
+| index                  | The index of the attached object (0-9)                        |
+| modelid                | Model prikvačenog objekta koji je uređen                      |
+| boneid                 | Kost na kojoj se nalazi uređeni prikvačeni objekat            |
+| Float:fOffsetX         | Ofset X prikvačenog objekta koji je editovan                  |
+| Float:fOffsetY         | Ofset Y prikvačenog objekta koji je editovan                  |
+| Float:fOffsetZ         | Ofset Z prikvačenog objekta koji je editovan                  |
+| Float:fRotX            | Rotacija X prikvačenog objekta koji je editovan               |
+| Float:fRotY            | Rotacija Y prikvačenog objekta koji je editovan               |
+| Float:fRotZ            | Rotacija Z prikvačenog objekta koji je editovan               |
+| Float:fScaleX          | Skala X prikvačenog objekta koji je editovan                  |
+| Float:fScaleY          | Skala X prikvačenog objekta koji je editovan                  |
+| Float:fScaleZ          | Skala X prikvačenog objekta koji je editovan                  |
 
 ## Returns
 
@@ -58,7 +53,7 @@ new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
 // Podaci bi se trebali pohraniti u gornji niz kada su pridruženi priloženi objekti.
 
-public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
     if (response)
     {
@@ -95,5 +90,5 @@ Izdanja treba odbaciti ako je odgovor bio '0' (otkazan). To se mora učiniti spr
 
 ## Srodne Funkcije
 
-- [EditAttachedObject](../functions/EditAttachedObject.md): Uredi prikvačeni objekat.
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject.md): Prikvači objekat za igrača.
+- [EditAttachedObject](../functions/EditAttachedObject): Uredi prikvačeni objekat.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Prikvači objekat za igrača.

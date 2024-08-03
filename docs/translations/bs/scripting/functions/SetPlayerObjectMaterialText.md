@@ -4,12 +4,6 @@ description: Zamijeni teksturu player objekta sa tekstom.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Zamijeni teksturu player objekta sa tekstom.

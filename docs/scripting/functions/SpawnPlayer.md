@@ -14,25 +14,31 @@ tags: ["player"]
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. This means the player is not connected.
+**false** - The function failed to execute. This means the player is not connected.
 
 ## Examples
 
 ```c
-if (strcmp(cmdtext, "/spawn", true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    SpawnPlayer(playerid);
-    return 1;
+    if (strcmp(cmdtext, "/spawn", true) == 0)
+    {
+        SpawnPlayer(playerid);
+        return 1;
+    }
+    return 0;
 }
 ```
 
 ## Notes
 
-:::tip
+:::warning
 
-Kills the player if they are in a vehicle and then they spawn with a bottle in their hand.
+Known Bug(s):
+
+- Kills the player if they are in a vehicle and then they spawn with a bottle in their hand. (Fixed in open.mp)
 
 :::
 
@@ -41,4 +47,7 @@ Kills the player if they are in a vehicle and then they spawn with a bottle in t
 - [IsPlayerSpawned](IsPlayerSpawned): Checks if a player is spawned.
 - [SetSpawnInfo](SetSpawnInfo): Set the spawn setting for a player.
 - [AddPlayerClass](AddPlayerClass): Add a class.
+
+## Related Callbacks
+
 - [OnPlayerSpawn](../callbacks/OnPlayerSpawn): Called when a player spawns.

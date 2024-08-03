@@ -4,18 +4,16 @@ description: This function will return the current direction of player's aiming 
 tags: ["player", "camera"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
-This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see GetPlayerCameraPos.
+This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see [GetPlayerCameraPos](GetPlayerCameraPos).
 
 | Name     | Description                                                        |
 | -------- | ------------------------------------------------------------------ |
 | playerid | The ID of the player you want to obtain the camera front vector of |
-| Float:x  | A float to store the X coordinate, passed by reference.            |
-| Float:y  | A float to store the Y coordinate, passed by reference.            |
-| Float:z  | A float to store the Z coordinate, passed by reference.            |
+| &Float:x | A float to store the X coordinate, passed by reference.            |
+| &Float:y | A float to store the Y coordinate, passed by reference.            |
+| &Float:z | A float to store the Z coordinate, passed by reference.            |
 
 ## Returns
 
@@ -61,7 +59,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-In 0.3a the camera front vector is only obtainable when player is inside a rhino, S.W.A.T tank, fire truck, or on foot. Since 0.3b the camera data can be obtained when the player is in any vehicle or on foot.
+The camera data can be obtained when the player is in any vehicle or on foot.
 
 :::
 

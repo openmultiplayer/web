@@ -4,8 +4,6 @@ description: Apelat atunci când un jucător dă dublu clic pe un jucător de pe
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descriere
 
 Apelat atunci când un jucător dă dublu clic pe un jucător de pe scoreboard.
@@ -27,7 +25,7 @@ Este întotdeauna numit primul în filterscript.
 ## Exemple
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Ai apăsat pe jucătorul  %d", clickedplayerid);

@@ -1,10 +1,8 @@
 ---
 title: IsObjectMoving
 description: Checks if the given objectid is moving.
-tags: []
+tags: ["object"]
 ---
-
-<VersionWarn version='SA-MP 0.3d' />
 
 ## Description
 
@@ -16,19 +14,33 @@ Checks if the given objectid is moving.
 
 ## Returns
 
-1 if the object is moving, 0 if not.
+**true** if the object is moving, **false** if not.
 
 ## Examples
 
 ```c
-if (IsObjectMoving(objectid))
+new gAirportGate;
+
+public OnGameModeInit()
 {
-	StopObject(objectid);
+    gAirportGate = CreateObject(980, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+
+    MoveObject(gAirportGate, 0.0, 0.0, 15.0, 1.00);
+
+	if (IsObjectMoving(gAirportGate))
+	{
+		StopObject(gAirportGate);
+	}
+    return 1;
 }
+
 ```
 
 ## Related Functions
 
 - [MoveObject](MoveObject): Move an object.
 - [StopObject](StopObject): Stop an object from moving.
+
+## Related Callbacks
+
 - [OnObjectMoved](../callbacks/OnObjectMoved): Called when an object stops moving.

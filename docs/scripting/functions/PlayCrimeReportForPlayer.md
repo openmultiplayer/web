@@ -4,23 +4,21 @@ description: This function plays a crime report for a player - just like in sing
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 This function plays a crime report for a player - just like in single-player when CJ commits a crime.
 
-| Name      | Description                                                                                                                  |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player that will hear the crime report.                                                                        |
-| suspectid | The ID of the suspect player whom will be described in the crime report.                                                     |
-| crimeid   | The [crime ID](../resources/crimelist), which will be reported as a 10-code (i.e. 10-16 if 16 was passed as the crimeid). |
+| Name      | Description                                                                                                               |
+| --------- | ------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | The ID of the player that will hear the crime report.                                                                     |
+| suspectid | The ID of the suspect player whom will be described in the crime report.                                                  |
+| crime     | The [crime ID](../resources/crimelist), which will be reported as a 10-code (i.e. 10-16 if 16 was passed as the crimeid). |
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**false** - The function failed to execute. This means the player specified does not exist.
 
 ## Examples
 

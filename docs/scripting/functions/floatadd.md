@@ -24,9 +24,9 @@ The sum of the two given floats.
 ```c
 public OnGameModeInit()
 {
-    new Float:Number1 = 2, Float:Number2 = 3; //Declares two floats, Number1 (2) and Number2 (3)
+    new Float:Number1 = 2, Float:Number2 = 3; // Declares two floats, Number1 (2) and Number2 (3)
     new Float:Sum;
-    Sum = floatadd(Number1, Number2);       //Saves the Sum(=2+3 = 5) of Number1 and Number2 in the float "Sum"
+    Sum = floatadd(Number1, Number2); // Saves the Sum(=2+3 = 5) of Number1 and Number2 in the float "Sum"
     return 1;
 }
 ```

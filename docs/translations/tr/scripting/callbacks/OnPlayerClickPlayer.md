@@ -4,12 +4,6 @@ description: Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığ
 tags: ["player"]
 ---
 
-:::warning
-
-Bu callback SA-MP 0.3a sürümünde eklendi ve önceki sürümlerde çalıştırılamaz.
-
-:::
-
 ## Açıklama
 
 Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
@@ -31,7 +25,7 @@ Her zaman öncelikle filterscriptlerde çağrılır.
 ## Örnekler
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new mesaj[32];
     format(mesaj, sizeof(mesaj), "%d id'li oyuncuya tıkladınız.", clickedplayerid);

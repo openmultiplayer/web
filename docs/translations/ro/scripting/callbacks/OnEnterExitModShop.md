@@ -4,12 +4,6 @@ description: Acest callback este apelat atunci când un jucâtor intră sau iese
 tags: []
 ---
 
-:::warning
-
-Acest callback a fost adăugat în SA-MP 0.3a și nu va funcționa în versiunile anterioare!
-
-:::
-
 ## Descriere
 
 Acest callback este apelat când un jucâtor intră sau iese dintr-un mod shop.

@@ -32,7 +32,11 @@ public OnPlayerSpawn(playerid)
 
 :::tip
 
-Players can not damage/kill players on the same team unless they use a knife to slit their throat. As of SA-MP 0.3x, players are also unable to damage vehicles driven by a player from the same team. This can be enabled with EnableVehicleFriendlyFire. 255 (or NO_TEAM) is the default team to be able to shoot other players, not 0.
+- Players can not damage/kill players on the same team unless they use a knife to slit their throat.
+
+- Players are also unable to damage vehicles driven by a player from the same team. This can be enabled with [EnableVehicleFriendlyFire](EnableVehicleFriendlyFire).
+
+- 255 (or `NO_TEAM`) is the default team to be able to shoot other players, not 0.
 
 :::
 

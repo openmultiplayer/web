@@ -4,12 +4,6 @@ description: Gets the amount of time (in milliseconds) that a player has been co
 tags: []
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3z and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Gets the amount of time (in milliseconds) that a player has been connected to the server for.

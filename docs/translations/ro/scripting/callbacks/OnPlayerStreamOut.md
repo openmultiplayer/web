@@ -4,8 +4,6 @@ description: Acest callback este apelat atunci când un jucător este transmis �
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3a' />
-
 ## Descriere
 
 Acest callback este apelat atunci când un jucător este transmis în flux de la clientul altui jucător.

@@ -24,7 +24,7 @@ Prikazuje 'game text' (tekst na ekranu) određeno vrijeme za određenog igrača.
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     GameTextForPlayer(playerid, "Wasted", 5000, 2);
     return 1;

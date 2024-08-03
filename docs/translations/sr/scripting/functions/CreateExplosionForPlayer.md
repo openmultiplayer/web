@@ -4,12 +4,6 @@ description: Kreira eksploziju koja je vidljiva samo jednom igracu.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3d i ne radi u nizim verzijama!
-
-:::
-
 ## Opis
 
 Kreira eksploziju koja je vidljiva samo jednom igracu. Funkcija moze da se koristi kako bi se eksplozija odvojila od ostalih igraca ili prikazala u posebnom virtuelnom svetu.

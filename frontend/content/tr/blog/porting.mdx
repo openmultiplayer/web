@@ -1,0 +1,235 @@
+---
+title: Open.mp'ye taşıma
+date: "2024-03-06T14:01:00"
+author: Y_Less
+---
+
+Uzun bir süredir oldukça açıktır ki Kalcor, SA:MP'yi sürdürme konusunda artık ilgilenmiyordu; ki bu, başlı başına sorun değil, ancak resmi kaynak kodu erişimi olan tek kişi olması, yeni güncellemeler için bir darboğaz oluşturuyordu. YSF ve fixes.inc, bu boşluğu doldurmak amacıyla oluşturuldu - sunucunun kaynak kodu erişimine ihtiyaç duymadan hataları ve tutarsızlıkları düzeltmek; birincisi eklenti olarak, diğeri ise bir include olarak. Bu projeleri mümkün olduğunca istikrarlı, kapsamlı ve kullanımı kolay hale getirmek için bazı büyük çabalar sarf edilmiş olmasına rağmen, doğal olarak sınırlarına ulaştılar ve yeni nesil düzeltmelere ihtiyaç duyuldu. İşte burada open.mp devreye giriyor.
+
+Aynı prensiplere dayanarak ve topluluk tarafından on yıllık süreçte geliştirilen bir dizi iyileştirmeyi içeren open.mp, orijinal SA:MP sunucusunun temelden yeniden yazımıdır; doğrudan önceki sürümlerinden gelen tüm düzeltmelerle birlikte, ya yönetilemez ya da açıkça imkansız olan birçok ek düzeltme içerir. Elbette bu yaklaşımın bazı kontroversiyel yönleri vardı - bazı sunucular, topluluğun çabalarından bağımsız olarak SA:MP'nin alışılmış durumlarıyla başa çıkma konusunda kendi özel yöntemlerini geliştirmişti; ancak bunlar, her geliştiricinin kendi başına geliştirmesi gereken teknikler değildir ve bu makale, mevcut kodu taşımak konusunda yardımcı olacaktır.
+
+Büyük takılmaları ele almaya çalışıyoruz, ancak gözden kaçırdığımız bir şey varsa, lütfen discord veya github üzerinden bize ulaşın ve rehberi güncellemekten mutluluk duyarız.
+
+Alternatif bir seçenek, fixes.inc'in ikizi olan bir kütüphaneyi kullanarak düzeltmeleri geri almaktır: breaks.inc:
+
+https://github.com/pawn-lang/sa-mp-fixes/blob/master/breaks.inc
+
+Bu kütüphaneyi kullanarak eski davranışlara sorunsuz bir şekilde geri dönmek için bunu yükleyebilirsiniz.
+
+## `Etiketler`
+
+Open.mp'nin içerdiği birçok yeni etiket, işlevlere bir denge bulmaya çalışsa da, çok gerekli güncellemeler ile müdahalecilik arasında bir denge kurmaya çalışıyoruz. Bu değişikliklerin ne kadar geniş kapsamlı olabileceği nedeniyle, birçok işlemi otomatikleştirmek için bir araç geliştirdik:
+
+## `HideMenuForPlayer`
+
+Bu işlev her zaman bir menü kimliği parametresini almıştır, ancak SA:MP'de bu kimlik kullanılmamıştır. Bu nedenle, verilen değer ne olursa olsun, oyuncunun mevcut menüsü kapatılacaktı, hatta sizin kapatmanız gereken menüye bakmıyorlarsa bile.
+
+Eski kod şu şekilde görünürdü:
+
+```pawn
+gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);
+
+HideMenuForPlayer(gShopMenu, playerid);
+```
+
+Bu, oyuncunun gerçekte hangi menüyü incelediğinden bağımsız olarak her zaman oyuncunun mevcut menüsünü kapatırdı. Şimdi hangi menüyü incelediklerini hatırlamanız veya sadece onu almanız gerekecek:
+
+```pawn
+gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);
+
+HideMenuForPlayer(GetPlayerMenu(playerid), playerid);
+```
+
+## `SetPlayerAttachedObject`
+
+SA:MP'de bağlı nesneler oyun modu değişikliğini sağlıyordu, ancak open.mp'de bu durum geçerli değil. Eğer bir oyuncunun nesnelerini mod yeniden başladığında korumasını istiyorsanız, bunları `OnPlayerConnect` içinde yeniden eklemeniz gerekecek
+
+```pawn
+enum E_ATTACHMENT_DATA
+{
+	E_ATTACHMENT_DATA_MODEL,
+	E_ATTACHMENT_DATA_BONE,
+	E_ATTACHMENT_DATA_OFFSET_X,
+	E_ATTACHMENT_DATA_OFFSET_Y,
+	E_ATTACHMENT_DATA_OFFSET_Z,
+	E_ATTACHMENT_DATA_ROT_X,
+	E_ATTACHMENT_DATA_ROT_Y,
+	E_ATTACHMENT_DATA_ROT_Z,
+	E_ATTACHMENT_DATA_SCALE_X,
+	E_ATTACHMENT_DATA_SCALE_Y,
+	E_ATTACHMENT_DATA_SCALE_Z,
+	E_ATTACHMENT_DATA_COLOUR_1,
+	E_ATTACHMENT_DATA_COLOUR_2,
+}
+
+public OnPlayerConnect(playerid)
+{
+	for (new i = 0; i != MAX_OBJECT_ATTACHMENT_SLOTS; ++i)
+	{
+		SetPlayerAttachedObject(
+			playerid,
+			i,
+			gAttachementData[playerid][E_ATTACHMENT_DATA_MODEL],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_BONE],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_OFFSET_X],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_OFFSET_Y],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_OFFSET_Z],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_ROT_X],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_ROT_Y],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_ROT_Z],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_SCALE_X],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_SCALE_Y],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_SCALE_Z],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_COLOUR_1],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_COLOUR_2]
+		);
+	}
+}
+```
+
+## `ClearAnimations`
+
+`ClearAnimations`, bir oyuncunun önceki talep edilen eylemi gerçekleştirmesini durdurmak için `ApplyAnimation`'ın ikizidir. Ancak, bu bir oyuncuya araç içindeyken kullanıldığında oyuncunun araçtan çıkarılmasına neden olurdu. Bu hızlı bir işlem olduğu için faydalı bir işlevdir, ancak `ClearAnimations` işlevinin kapsamı dışındadır. Bir oyuncuyu hemen bir araçtan çıkarmak için:
+
+```pawn
+RemovePlayerFromVehicle(playerid, true);
+```
+
+## Hastane Masrafları
+
+San Andreas'ta bir oyuncu öldüğünde, otomatik olarak hastane masraflarını karşılamak için onlardan $100 kesilir. Bu özellik SA:MP'de var, fakat open.mp'den kaldırılıyor, böylece kodlar kendi paralarını yönetebilir. Birkaç kod zaten bunu düzeltmeye çalışıyor, oyuncunun ölümünden sonra veya yeniden doğduklarında oyuncuya $100 ekleyerek. Eğer bu senin kodun ise, ek düzeltmeyi sil yeterli; ancak open.mp'deki kodlar, bu işlemi gerçekleştiren kodlara da hesaplamaya çalışır. Eğer senin kodun bu özelliğe dayanıyorsa, sadece aşağıdaki kodu `OnPlayerDeath` içine ekleyin:
+
+```pawn
+GivePlayerMoney(playerid, -100);
+```
+
+## OnPlayerConnect
+
+SA:MP'de bir oyun modu başladığında veya yeniden başladığında, `OnPlayerConnect` tüm oyuncular için hemen çağrılır; ancak bir filter-scriptler içerisinde başladığında veya yeniden başladığında bu çağrılmaz. İlk hareket adından daha yakın olabilir, ancak ikinci hareket kodlarda oldukça yaygın olarak kullanıldığı için open.mp'de tutarlılık sağlamak amacıyla tüm betik türlerine genişletilmiştir.
+
+Artık bir oyuncu için veri başlatan betikler, bu kodu iki farklı konumda gerçekleştirmek zorunda değildir:
+
+```pawn
+public OnFilterScriptInit()
+{
+	for (new playerid = 0; playerid != MAX_PLAYERS; ++playerid)
+	{
+		if (IsPlayerConnected(playerid))
+		{
+			InitialisePlayer(playerid);
+		}
+	}
+}
+
+public OnPlayerConnect(playerid)
+{
+	InitialisePlayer(playerid);
+}
+```
+
+`OnFilterScriptInit` içindeki döngü şimdi kaldırılabilir:
+
+```pawn
+public OnPlayerConnect(playerid)
+{
+	InitialisePlayer(playerid);
+}
+```
+
+Eğer bir kod, kodun başladıktan sonra sunucuya katılan yeni oyuncular için kodu çalıştırmak üzere bu durumu istismar ediyorsa, ve önceki oyuncular için çalıştırmıyorsa, bu artık çalışmayacak ancak kolayca düzeltilebilir:
+
+```pawn
+static bool:gAlreadyHere[MAX_PLAYERS];
+
+public OnFilterScriptInit()
+{
+	for (new playerid = 0; playerid != MAX_PLAYERS; ++playerid)
+	{
+		gAlreadyHere[playerid] = IsPlayerConnected(playerid);
+	}
+}
+
+public OnPlayerConnect(playerid)
+{
+	if (gAlreadyHere[playerid])
+	{
+		gAlreadyHere[playerid] = false;
+	}
+	else
+	{
+		SendClientMessage(playerid, COLOUR_WARN, "Geciktin!");
+	}
+}
+```
+
+Bu, sadece `OnFilterScriptInit` içindeki bir döngüyü başka bir döngü ile değiştirmek gibi görünebilir, ancak mevcut oyuncuları belirli bir kodun dışında tutmak istemek, herkes için bir şey yapmak istemekten daha az yaygın bir durumdur. Bu nedenle, genel olarak bu bir net iyileşme; ve önceki belirtildiği gibi, oyun modlarında `OnPlayerConnect` çağrılmamasından çok daha az müdahaleci bir değişikliktir.
+
+## Game texts
+
+SA:MP has six different game text styles, but several of them are basically unusable.  One fades in and out constantly, one disappears after a set time regardless of the time you put, and one never disappears regardless of the time selected.  However it turns out that all of these game text styles can be accurately\* reproduced using text draws.  Thus fixes.inc and subsequently open.mp did so.  The appearance of the game texts is the same as before, the advantage being that all styles are usable, with the downside being that they no longer fade in and out.
+
+There is currently no way to bypass this feature to get the fading back, except for using Pawn.RakNet and sending the game text messages directly:
+
+SA:MP'de altı farklı oyun metni stili bulunmaktadır, ancak bunlardan birkaçı temelde kullanılamaz durumdadır. Bir tanesi sürekli olarak belirir ve kaybolur, bir tanesi belirli bir süre sonra kaybolur, belirtilen süreyi takip etmeksizin, ve bir tanesi seçilen süreye bakılmaksızın hiç kaybolmaz. Ancak, bu oyun metni stillerinin tümü doğru bir şekilde\* metin çizimleri kullanılarak yeniden üretilebilir. Bu nedenle fixes.inc ve ardından open.mp bunu yaptı. Oyun metinlerinin görünümü öncekiyle aynıdır, avantajı ise tüm stillerin kullanılabilir olmasıdır; ancak dezavantajı ise artık belirir ve kaybolmazlar.
+
+Şu anda bu özelliği atlamak ve tekrar belirip kaybolma efektini elde etmek için doğrudan Pawn.RakNet kullanmak dışında bir yol bulunmamaktadır:
+
+```pawn
+FadingGameTextForPlayer(playerid, const format[], time, style)
+{
+	if (style > 6)
+	{
+		// Bu stillerin bir kaybolma versiyonu yok.
+		GameTextForPlayer(playerid, format, time, style)
+	}
+ 	else
+	{
+		// Pawn.RakNet aracılığıyla düz bir ileti gönder
+	}
+}
+```
+
+\* Ancak dikkate değer bir istisna var - yeni saat oyun metni stili. Bilinmeyen bir nedenle, saat rengi farklı kişiler için farklıdır, bu da bu stili en iyi nasıl taklit edeceğimize dair birçok geri ve ileri tartışmaya yol açtı, farklılık bulunana kadar. Tutarlılık için ikisinden birini seçmek zorunda kaldık.
+
+## Havuz Boyutları
+
+`GetPlayerPoolSize`, `GetActorPoolSize`, ve `GetVehiclePoolSize` ilk kez kullanılmaya başlandığında biraz anlamsızdı; en yüksek bağlı ID'yi döndürerek, bağlı oyuncu sayısı ile hiçbir ilgisi olmayan bir değer. Zaten çok daha iyi döngüleme yöntemleri mevcutken ve uzun zaman sonra tanıtılmışlardı. Biraz saçma olmak, başlı başına bir fonksiyonu kaldırmak için bir neden değildir, ancak maalesef bunlar aynı zamanda bozuk ve bağlı oyuncu olmadığında yanlış veri döndürürler. Bu değerleri hem geriye dönük uyumlu hem de ileriye dönük doğru bir şekilde düzeltecek bir yol bulunmamaktadır (bana inanın, denedik). Bu gerçeklere göre, fonksiyonları basitçe kaldırmaya karar verdik. Sadece normal bir döngü veya `foreach` kullanın:
+
+```pawn
+foreach (new i : Player)
+{
+}
+```
+
+Bu değişiklik tanıtıldığında yalnızca aşağıdaki döngü formunu kullanırken bazı kodlar çökebilirdi:
+
+```pawn
+for (new i = 0; i != GetPlayerPoolSize(); ++i)
+{
+}
+```
+
+Ancak çevrimiçi kişiler olduğunda en yüksek değer bir gerçek oyuncudur, bu nedenle bu kod zaten yanlıştır - bir kişiyi atlar.
+
+## Yazımlar
+
+SA:MP kodlamalarında çok tutarsız bir imla kullanımı var - bazı şeyler İngilizce, bazı şeyler Amerikan İngilizcesi kullanıyor:
+
+* `Bumper` - İngilizce
+* `Hood` - Amerikan İngilizcesi
+* `Armour` - İngilizce
+* `Stereo` - Amerikan İngilizcesi
+
+Bunları birleştirdik ve İngilizce imla kullanımına karar verdik. Örneğin:
+
+```pawn
+TextDrawBoxColor(Text:textid, boxColor);
+```
+
+Şimdi:
+
+```pawn
+TextDrawBoxColour(Text:textid, boxColour);
+```
+
+Yükseltme aracı, bunların çoğunu otomatik olarak ele alacaktır.

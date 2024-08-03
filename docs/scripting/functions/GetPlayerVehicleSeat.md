@@ -4,8 +4,6 @@ description: Find out which seat a player is in.
 tags: ["player", "vehicle"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Find out which seat a player is in.
@@ -16,30 +14,44 @@ Find out which seat a player is in.
 
 ## Returns
 
-The ID of the seat the player is in. -1 is not in vehicle, 0 is the driver, 1 is the front passenger, and 2 & 3 are the rear passengers.
+The ID of the seat the player is in.
+
+**-1** is not in vehicle, **0** is the driver, **1** is the front passenger, and **2** & **3** are the rear passengers.
 
 ## Examples
 
 ```c
-if (strcmp(cmdtext, "/myseat", true) == 0)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new
-        playerSeat = GetPlayerVehicleSeat(playerid);
-
-    // How you can discard of your information.
-    if (playerSeat == 128)
+    if (strcmp(cmdtext, "/myseat", true) == 0)
     {
-        return SendClientMessage(playerid, 0xFFFFFFFF, "An error has prevented us from returning the seat ID.");
+        new
+            playerSeat = GetPlayerVehicleSeat(playerid);
+
+        // How you can discard of your information.
+        if (playerSeat == 128)
+        {
+            return SendClientMessage(playerid, 0xFFFFFFFF, "An error has prevented us from returning the seat ID.");
+        }
+
+        new
+            string[24];
+
+        format(string, sizeof(string), "Your seat: %i", playerSeat);
+        SendClientMessage(playerid, 0xFFFFFFFF, string);
+        return 1;
     }
-
-    new
-        message[14];
-
-    format(message, sizeof(message), "Your seat: %i", playerSeat);
-    SendClientMessage(playerid, 0xFFFFFFFF, message);
-    return 1;
+    return 0;
 }
 ```
+
+| ID  | Seat                         |
+| --- | ---------------------------- |
+| 0   | Driver                       |
+| 1   | Front passenger              |
+| 2   | Back-left passenger          |
+| 3   | Back-right passenger         |
+| 4+  | Passenger seats (coach etc.) |
 
 ## Related Functions
 

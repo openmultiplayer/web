@@ -4,12 +4,6 @@ description: Calculate the distance between a player and a map coordinate.
 tags: ["player"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3c R3 and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Calculate the distance between a player and a map coordinate.

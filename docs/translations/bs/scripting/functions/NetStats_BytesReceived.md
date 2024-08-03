@@ -4,12 +4,6 @@ description: Gets the amount of data (in bytes) that the server has received fro
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Gets the amount of data (in bytes) that the server has received from the player.

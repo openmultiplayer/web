@@ -16,9 +16,9 @@ Checks if a player widescreen is on or off.
 
 ## Returns
 
-true: The player widescreen is on.
+**true** - The player widescreen is on.
 
-false: The player widescreen is off.
+**false** - The player widescreen is off.
 
 ## Examples
 

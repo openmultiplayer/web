@@ -8,10 +8,10 @@ tags: ["player", "textdraw"]
 
 Hides a textdraw for a specific player.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player that the textdraw should be hidden for |
-| text     | The ID of the textdraw to hide                              |
+| Name        | Description                                                 |
+| ----------- | ----------------------------------------------------------- |
+| playerid    | The ID of the player that the textdraw should be hidden for |
+| Text:textid | The ID of the textdraw to hide                              |
 
 ## Returns
 
@@ -20,11 +20,11 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate( ... );
+    gMyTextdraw = TextDrawCreate(123.0, 123.0, "Example");
     return 1;
 }
 

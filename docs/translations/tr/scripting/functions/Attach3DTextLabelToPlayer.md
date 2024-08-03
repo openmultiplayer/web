@@ -4,15 +4,13 @@ description: Oyuncuya bir 3D Text Label bağlayın.
 tags: ["player", "3dtextlabel"]
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Açıklama
 
 Oyuncuya 3D Text Label bağlama fonksiyonu.
 
 | Parametre | Açıklama                                                                        |
 | --------- | --------------------------------------------------------------------------------|
-| Text3D:id | Create3DTextLabel ile oluşturulmuş label ID'si.                                 |
+| Text3D:textid | Create3DTextLabel ile oluşturulmuş label ID'si.                                 |
 | playerid  | Label'ın bağlanacağı oyuncunun ID'si.                                           |
 | OffsetX   | Oyuncunun X-ofset koordinatı. (oyuncunun ortasından başlar, '0.0, 0.0, 0.0'dır) |
 | OffsetY   | Oyuncunun Y-ofset koordinatı. (oyuncunun ortasından başlar, '0.0, 0.0, 0.0'dır) |
@@ -24,7 +22,7 @@ Oyuncuya 3D Text Label bağlama fonksiyonu.
 
 0: Fonksiyon çalışamadı. Oyuncu veya label yok.
 
-## Examples
+## Örnekler
 
 ```c
 public OnPlayerConnect(playerid)

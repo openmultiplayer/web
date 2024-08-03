@@ -234,7 +234,16 @@ After 3 the values are repeated, so 4 is 0, 5 is 1 and so on.
 To pop the back two tires of a 4-wheeled vehicle while keeping the front unchanged:
 
 ```c
-new panels, doors, lights, tires;
+new 
+	VEHICLE_PANEL_STATUS:panels,
+	VEHICLE_DOOR_STATUS:doors,
+	VEHICLE_LIGHT_STATUS:lights,
+	VEHICLE_TIRE_STATUS:tires;
+
 GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, (tires | 0b0101)); // The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
+UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, (tires | VEHICLE_TIRE_STATUS:0b0101)); // The '0b' part means that the following number is in binary. Just the same way that '0x' indicates a hexadecimal number.
 ```
+
+## See also
+
+- [Vehicle Tire Status](../resources/vehicle-tire-status)

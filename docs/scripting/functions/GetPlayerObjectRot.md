@@ -6,15 +6,15 @@ tags: ["player"]
 
 ## Description
 
-Use this function to get the object's current rotation. The rotation is saved by reference in three RotX/RotY/RotZ variables.
+Use this function to get the object's current rotation. The rotation is saved by reference in three rotationX/rotationY/rotationZ variables.
 
-| Name     | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| playerid | The player you associated this object to.                     |
-| objectid | The objectid of the object you want to get the rotation from. |
-| &Float:X | The variable to store the X rotation, passed by reference.    |
-| &Float:Y | The variable to store the Y rotation, passed by reference.    |
-| &Float:Z | The variable to store the Z rotation, passed by reference.    |
+| Name             | Description                                                   |
+| ---------------- | ------------------------------------------------------------- |
+| playerid         | The player you associated this object to.                     |
+| objectid         | The objectid of the object you want to get the rotation from. |
+| &Float:rotationX | The variable to store the X rotation, passed by reference.    |
+| &Float:rotationY | The variable to store the Y rotation, passed by reference.    |
+| &Float:rotationZ | The variable to store the Z rotation, passed by reference.    |
 
 ## Returns
 
@@ -23,7 +23,19 @@ The object's rotation is stored in the specified variables.
 ## Examples
 
 ```c
-GetPlayerObjectRot(playerid, objectid, RotX, RotY, RotZ);
+new gPlayerObject[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+    gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
+
+    new Float:rotationX, Float:rotationY, Float:rotationZ;
+    GetPlayerObjectRot(playerid, objectid, rotationX, rotationY, rotationZ);
+    // rotationX = 0.0
+    // rotationY = 0.0
+    // rotationZ = 96.0
+    return 1;
+}
 ```
 
 ## Related Functions

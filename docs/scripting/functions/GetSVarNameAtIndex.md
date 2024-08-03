@@ -1,18 +1,18 @@
 ---
 title: GetSVarNameAtIndex
 description: Retrieve the name of a sVar via the index.
-tags: []
+tags: ["server variable", "svar"]
 ---
 
 ## Description
 
 Retrieve the name of a sVar via the index.
 
-| Name          | Description                                                |
-| ------------- | ---------------------------------------------------------- |
-| index         | The index of the sVar.                                     |
-| ret_varname[] | A string to store the sVar's name in, passed by reference. |
-| ret_len       | The max length of the returned string, use sizeof().       |
+| Name                   | Description                                                |
+| ---------------------- | ---------------------------------------------------------- |
+| index                  | The index of the sVar.                                     |
+| output[]               | A string to store the sVar's name in, passed by reference. |
+| size = sizeof (output) | The max length of the returned string.                     |
 
 ## Returns
 

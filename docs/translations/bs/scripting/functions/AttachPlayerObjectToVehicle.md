@@ -4,12 +4,6 @@ description: Prikvači player objekat za vozilo.
 tags: ["player", "vehicle"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3e i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Attach a player object to a vehicle.
@@ -33,7 +27,7 @@ Ova funkcija ne returna(vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER) // Ako igrač uđe u vozilo
     {

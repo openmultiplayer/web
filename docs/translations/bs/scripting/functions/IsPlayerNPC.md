@@ -4,12 +4,6 @@ description: Provjerava ako je igrač pravi igrač ili NPC.
 tags: ["player", "npc"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Provjerava ako je igrač pravi igrač ili NPC.

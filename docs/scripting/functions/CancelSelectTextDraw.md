@@ -4,8 +4,6 @@ description: Cancel textdraw selection with the mouse.
 tags: ["textdraw"]
 ---
 
-<VersionWarn version='SA-MP 0.3e' />
-
 ## Description
 
 Cancel textdraw selection with the mouse
@@ -37,7 +35,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-\*This function calls OnPlayerClickTextDraw with INVALID_TEXT_DRAW (65535). Using this function inside OnPlayerClickTextDraw without catching this case will cause clients to go into an infinite loop.
+This function calls [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) with INVALID_TEXT_DRAW (65535).
+
+Using this function inside OnPlayerClickTextDraw without catching this case will cause clients to go into an infinite loop.
 
 :::
 
@@ -45,4 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
 - [TextDrawSetSelectable](TextDrawSetSelectable): Sets whether a textdraw is selectable through SelectTextDraw
+
+## Related Callbacks
+
 - [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

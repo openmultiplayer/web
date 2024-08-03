@@ -8,11 +8,11 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika pemain mati, entah itu dengan bunuh diri atau terbunuh oleh pemain lain.
 
-| Nama     | Deskripsi                                                                             |
-| -------- | ------------------------------------------------------------------------------------- |
-| playerid | ID dari pemain yang mati.                                                             |
-| killerid | ID dari pemain yang membunuh pemain yang mati, atau INVALID_PLAYER_ID jika tidak ada. |
-| reason   | ID dari alasan untuk kematian pemain.                                                 |
+| Nama          | Deskripsi                                                                             |
+|---------------|---------------------------------------------------------------------------------------|
+| playerid      | ID dari pemain yang mati.                                                             |
+| killerid      | ID dari pemain yang membunuh pemain yang mati, atau INVALID_PLAYER_ID jika tidak ada. |
+| WEAPON:reason | ID dari alasan untuk kematian pemain.                                                 |
 
 ## Returns
 
@@ -28,7 +28,7 @@ Selalu terpanggil pertama di filterscripts.
 new PlayerDeaths[MAX_PLAYERS];
 new PlayerKills[MAX_PLAYERS];
 
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     SendDeathMessage(killerid, playerid, reason); // Menunjukkan metode bunuh di killfeed
 
@@ -60,5 +60,5 @@ Anda HARUS cek apakah 'killerid' valid (bukan INVALID_PLAYER_ID) sebelum menggun
 
 ## Fungsi Terkait
 
-- [SendDeathMessage](../functions/SendDeathMessage.md): Menambahkan kematian didalam death list.
-- [SetPlayerHealth](../functions/SetPlayerHealth.md): Mengatur darah pemain.
+- [SendDeathMessage](../functions/SendDeathMessage): Menambahkan kematian didalam death list.
+- [SetPlayerHealth](../functions/SetPlayerHealth): Mengatur darah pemain.

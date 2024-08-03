@@ -57,6 +57,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[eSelection](https://github.com/TommyB123/eSelection)** - Adds the ability to create dynamic model selection menus in your SA-MP gamemodes.
 - **[mSelection](https://github.com/alextwothousand/mSelection)** - Same as eSelection, but different style.
 - **[RGB-Textdraw](https://github.com/adib-yg/SAMP-RGB-Textdraw)** - Adds RGB to textdraw.
+- **[LangPlus](https://github.com/mysy00/LangPlus)** - Multi-language library for open.mp servers.
 
 ## Command Processors
 
@@ -101,6 +102,8 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[rustext](https://github.com/ziggi/rustext)** - Fix Russian text plugin for SA-MP: GameText's, TextDraw's and Menu's.
 - **[Advanced SA NickName](https://github.com/KrYpToDeN/Advanced-SA-NickName)** - Support for any symbols in nicknames.
 - **[SAMPSON](https://github.com/Hual/SAMPSON)** - A JSON plugin for SA-MP.
+- **[samp-chatbot](https://github.com/SimoSbara/samp-chatbot)** - A GTA SAMP plugin for AI Chat Bot communication inside Game.
+- **[SAMP BitStream Crash Fix](https://github.com/AmyrAhmady/samp-bscrashfix)** - Fixes the issue with BitStream read overruns.
 
 ## Client-Server Plugins
 
@@ -114,7 +117,8 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 ## Crypto Plugins
 
 - **[whirlpool](https://github.com/Southclaws/samp-whirlpool)** - Whirlpool Cryptographic plugin for SA:MP.
-- **[bcrypt](https://github.com/LassiR/bcrypt-samp)** - Bcrypt Cryptographic plugin for SA:MP.
+- **[SyS' bcrypt Plugin](https://github.com/Sreyas-Sreelal/samp-bcrypt)** - Bcrypt Cryptographic plugin made by Sreyas Sreelal for SA:MP.
+- **[lassir's bcrypt Plugin](https://github.com/lassir/bcrypt-samp)** - Bcrypt Cryptographic plugin made by lassir for SA:MP.
 - **[samp-crypto](https://github.com/alextwothousand/samp-crypto)** - A list of cryptographic functions such as Argon2, Scrypt, and Bcrypt for SA:MP.
 - **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - SHA512 Cryptographic plugin for SA:MP.
 
@@ -138,7 +142,6 @@ Now you can make your scripts in languages other than pawn without any plugin us
 
 ## Game Modes
 
-- **[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)** - Lists of gamemodes that are compatible with open.mp.
 - **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Based PvP Survival Gamemode.
 - **[gta-open](https://github.com/PatrickGTR/gta-open)** - A Cops and robbers mode based in Los Santos.
 - **[SF-CnR](https://github.com/zeelorenc/sf-cnr)** - San Fierro Cops And Robbers Gamemode for SA-MP.

@@ -10,8 +10,8 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Check if the player currently has a race checkpoint visible.
 
-| Name        | Description           |
-| ----------- | --------------------- |
+| Name     | Description                    |
+| -------- | ------------------------------ |
 | playerid | The ID of the player to check. |
 
 ## Return Values

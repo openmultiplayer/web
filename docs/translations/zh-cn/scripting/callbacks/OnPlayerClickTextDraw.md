@@ -4,8 +4,6 @@ description: 当玩家点击文本绘制或用Escape键取消选择模式时，�
 tags: ["player", "textdraw"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3e' />
-
 ## 描述
 
 当玩家点击文本绘制或用 Escape 键取消选择模式时，这个回调函数被调用。
@@ -39,7 +37,7 @@ public OnGameModeInit()
     return 1;
 }
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (newkeys == KEY_SUBMISSION)
     {

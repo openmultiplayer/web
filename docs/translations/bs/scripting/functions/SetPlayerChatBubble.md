@@ -4,12 +4,6 @@ description: Kreira chat balončić iznad igračevog nametag-a.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Kreira chat balončić iznad igračevog nametag-a.

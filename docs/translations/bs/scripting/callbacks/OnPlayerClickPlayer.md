@@ -4,12 +4,6 @@ description: Poziva se kada igrač dva puta klikne na igrača na scoreboard-u (T
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Poziva se kada igrač dva puta klikne na igrača na scoreboard-u (TAB).
@@ -31,7 +25,7 @@ Uvijek je pozvana prva u filterskripti.
 ## Primjeri
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Kliknuo si na igraca %d", clickedplayerid);

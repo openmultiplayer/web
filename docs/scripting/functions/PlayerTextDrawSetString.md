@@ -4,18 +4,16 @@ description: Change the text of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
 Change the text of a player-textdraw.
 
-| Name             | Description                                       |
-|------------------|---------------------------------------------------|
-| playerid         | The ID of the player who's textdraw string to set |
-| text             | The ID of the textdraw to change                  |
-| string[]         | The new string for the TextDraw                   |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.        |
+| Name              | Description                                       |
+| ----------------- | ------------------------------------------------- |
+| playerid          | The ID of the player who's textdraw string to set |
+| PlayerText:textid | The ID of the textdraw to change                  |
+| const format[]    | The new string for the TextDraw                   |
+| OPEN_MP_TAGS:...  | Indefinite number of arguments of any tag.        |
 
 ## Returns
 
@@ -24,37 +22,42 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new pVehicleHealthTimer[MAX_PLAYERS];
 new PlayerText:pVehicleHealthTD[MAX_PLAYERS];
+new pVehicleHealthTimer[MAX_PLAYERS];
 
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
-    if (newstate == 2) // Entered a vehicle as driver
+    if (newstate == PLAYER_STATE_DRIVER) // Entered a vehicle as driver
     {
-        pVehicleHealthTD[playerid] = CreatePlayerTextDraw(playerid, x, y, " ");
+        pVehicleHealthTD[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, " ");
         PlayerTextDrawShow(playerid, pVehicleHealthTD[playerid]);
 
         // Set a timer to update the textdraw every second
-        pVehicleHealthTimer[playerid] = SetTimerEx("vhealth_td_update", 1000, true, "i", playerid);
+        pVehicleHealthTimer[playerid] = SetTimerEx("UpdateVehicleHealthTextDraw", 1000, true, "i", playerid);
     }
-    if (oldstate == 2)
+    if (oldstate == PLAYER_STATE_DRIVER)
     {
-        KillTimer(pVehicleHealthTD[playerid]);
+        KillTimer(pVehicleHealthTimer[playerid]);
         PlayerTextDrawDestroy(playerid, pVehicleHealthTD[playerid]);
     }
+    return 1;
 }
 
-public vhealth_td_update(playerid)
+forward UpdateVehicleHealthTextDraw(playerid);
+public UpdateVehicleHealthTextDraw(playerid)
 {
-    new tdstring[32], Float:vHealth;
-    GetVehicleHealth(GetPlayerVehicleID(playerid), vHealth);
+    new 
+        string[32],
+        vehicleid = GetPlayerVehicleID(playerid),
+        Float:health;
 
-    format(tdstring, sizeof(tdstring), "Vehicle Health: %0f", vHealth);
+    GetVehicleHealth(vehicleid, health);
 
-    PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], tdstring); // <<< Update the text to show the vehicle health
+    format(string, sizeof(string), "Vehicle Health: %.0f", health);
+    PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], string); // <<< Update the text to show the vehicle health
 
     // PRO TIP: You don't need `format` in open.mp
-    PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], "Vehicle Health: %0f", vHealth);
+    PlayerTextDrawSetString(playerid, pVehicleHealthTD[playerid], "Vehicle Health: %.0f", health);
     return 1;
 }
 
@@ -73,7 +76,7 @@ You don't have to show the TextDraw again in order to apply the changes.
 
 :::warning
 
-There are limits to the length of textdraw strings! See Limits for more info.
+There are limits to the length of textdraw strings! See [Limits](../resources/limits) for more info.
 
 :::
 

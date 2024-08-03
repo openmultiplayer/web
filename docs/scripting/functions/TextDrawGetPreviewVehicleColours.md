@@ -10,16 +10,16 @@ tags: ["textdraw"]
 
 Gets the preview vehicle colours of a 3D preview textdraw.
 
-| Name   | Description                                                        |
-| ------ | ------------------------------------------------------------------ |
-| Text:textid  | The ID of the textdraw to get the vehicle colours of. |
-| &colour1  | A variable into which to store the colour1, passed by reference. |
-| &colour2  | A variable into which to store the colour2, passed by reference. |
+| Name        | Description                                                      |
+| ----------- | ---------------------------------------------------------------- |
+| Text:textid | The ID of the textdraw to get the vehicle colours of.            |
+| &colour1    | A variable into which to store the colour1, passed by reference. |
+| &colour2    | A variable into which to store the colour2, passed by reference. |
 
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -33,7 +33,8 @@ public OnGameModeInit()
 
     new colour1, colour2;
     TextDrawGetPreviewVehicleColours(gMyTextdraw, colour1, colour2);
-    // The `colour1` will be 6 and `colour2` will be 8
+    // colour1 = 6
+    // colour2 = 8
     return 1;
 }
 ```
@@ -43,4 +44,7 @@ public OnGameModeInit()
 - [TextDrawSetPreviewModel](TextDrawSetPreviewModel): Set the 3D preview model of a textdraw.
 - [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Set rotation of a 3D textdraw preview.
 - [TextDrawFont](TextDrawFont): Set the font of a textdraw.
+
+## Related Callbacks
+
 - [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

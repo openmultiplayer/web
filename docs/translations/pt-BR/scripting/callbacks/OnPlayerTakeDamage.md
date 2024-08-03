@@ -4,19 +4,17 @@ description: Esta callback é chama quando algum jogador recebe dano.
 tags: ["player"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3d' />
-
 ## Descrição
 
 Esta callback é chama quando algum jogador recebe dano.
 
-| Nome     | Descreição                                                                                                                            |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador que recebeu determinado dano.                                                                                                 |
-| issuerid | O ID do jogador que causou o dano. INVALID_PLAYER_ID se o dano for auto-infligido.                                                      |
-| amount   | A quantidade de dano total que o jogador recebey (vida e colete combinados).                                                                     |
-| weaponid | O ID da arma/razão do determinado dano.                                                                                            |
-| bodypart | A [Parte do Corpo](../resources/bodyparts) que foi atingida. (NOTA: Este parâmetro foi adicionado na 0.3z. Não o utilize caso esteja em uma versão mais antiga!) |
+| Nome            | Descreição                                                                                                                                                       |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| playerid        | O ID do jogador que recebeu determinado dano.                                                                                                                    |
+| issuerid        | O ID do jogador que causou o dano. INVALID_PLAYER_ID se o dano for auto-infligido.                                                                               |
+| Float:amount    | A quantidade de dano total que o jogador recebey (vida e colete combinados).                                                                                     |
+| WEAPON:weaponid | O ID da arma/razão do determinado dano.                                                                                                                          |
+| bodypart        | A [Parte do Corpo](../resources/bodyparts) que foi atingida. |
 
 ## Retornos
 
@@ -30,7 +28,7 @@ Sempre é chamada primeiro em filterscripts, portanto retornar 1 bloqueará que 
 ## Exemplos
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID) // Caso não seja auto-infligido
     {
@@ -50,7 +48,10 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
     }
     return 1;
 }
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
+```
+
+```c
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
@@ -74,5 +75,3 @@ O ID da arma retornará 37 (Lança Chamas) para qualquer fonte que utilize fogo 
 GetPlayerHealth e GetPlayerArmour retornarão as quantidades específicas anteriores a chamada desta callback. Sempre verifique se o ID do jogador que causou o dano (issuerid) é válido antes de usá-lo como index de uma array.
 
 :::
-
-## Funções Relacionadas

@@ -14,17 +14,17 @@ Retrieves the player's current interior. A list of currently known interiors wit
 
 ## Returns
 
-The interior ID the player is currently in
+The interior ID the player is currently in.
 
 ## Examples
 
 ```c
 public OnPlayerCommandText(playerid,text[])
 {
-    if (strcmp(cmdtext,"/int",true) == 0)
+    if (strcmp(cmdtext, "/int", true) == 0)
     {
-        new string[128];
-        format(string, sizeof(string), "You are in interior %i",GetPlayerInterior(playerid));
+        new string[64];
+        format(string, sizeof(string), "You are in interior %i", GetPlayerInterior(playerid));
         SendClientMessage(playerid, 0xFF8000FF, string);
         return 1;
     }
@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid,text[])
 
 :::tip
 
-Always returns 0 for NPCs.
+Always returns interior 0 for NPCs.
 
 :::
 

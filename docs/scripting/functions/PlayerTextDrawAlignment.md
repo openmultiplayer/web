@@ -4,17 +4,15 @@ description: Set the text alignment of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-<VersionWarn name='feature (player-textdraws)' version='SA-MP 0.3e' />
-
 ## Description
 
 Set the text alignment of a player-textdraw.
 
-| Name      | Description                                                         |
-| --------- | ------------------------------------------------------------------- |
-| playerid  | The ID of the player whose player-textdraw to set the alignment of. |
-| Text:text | The ID of the player-textdraw to set the alignment of.              |
-| alignment | 1-left 2-centered 3-right                                           |
+| Name                      | Description                                                                 |
+| ------------------------- | --------------------------------------------------------------------------- |
+| playerid                  | The ID of the player whose player-textdraw to set the alignment of.         |
+| PlayerText:textid         | The ID of the player-textdraw to set the alignment of.                      |
+| TEXT_DRAW_ALIGN:alignment | `TEXT_DRAW_ALIGN_LEFT` / `TEXT_DRAW_ALIGN_CENTER` / `TEXT_DRAW_ALIGN_RIGHT` |
 
 ## Returns
 
@@ -43,13 +41,13 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
+For alignment 2 (TEXT_DRAW_ALIGN_CENTER) the x and y values of TextSize need to be swapped, see notes at [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
 
 :::
 
 :::tip
 
-If the textdraw is already shown for the player, it must be re-shown (PlayerTextDrawShow) to show the changes of this function.
+If the textdraw is already shown for the player, it must be re-shown ([PlayerTextDrawShow](PlayerTextDrawShow)) to show the changes of this function.
 
 :::
 

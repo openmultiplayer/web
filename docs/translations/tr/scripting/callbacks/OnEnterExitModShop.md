@@ -4,12 +4,6 @@ description: Bu callback, bir oyuncu modifiye garajlarından birine giriş veya 
 tags: []
 ---
 
-:::warning
-
-Bu callback SA-MP 0.3a sürümünde eklendi ve önceki sürümlerde çalıştırılamaz.
-
-:::
-
 ## Açıklama
 
 Bu callback, bir oyuncu modifiye garajlarından birine giriş veya çıkış yaptığında tetiklenir.

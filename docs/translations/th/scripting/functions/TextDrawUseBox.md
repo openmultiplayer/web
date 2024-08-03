@@ -27,7 +27,7 @@ new Text:MyTextdraw;
 public OnGameModeInit()
 {
     MyTextDraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    TextDrawUseBox(MyTextDraw, 1); // Toggle box ON
+    TextDrawUseBox(MyTextDraw, true); // Toggle box ON
     return 1;
 }
 ```
@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) to show the changes of this function.
+If the textdraw is already shown, it must be re-shown ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) to show the changes of this function.
 
 :::
 

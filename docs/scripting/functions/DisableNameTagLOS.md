@@ -4,8 +4,6 @@ description: Disables the nametag Line-Of-Sight checking so that players can see
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3a' />
-
 ## Description
 
 Disables the nametag Line-Of-Sight checking so that players can see nametags through objects.
@@ -25,6 +23,16 @@ public OnGameModeInit()
 :::warning
 
 This can not be reversed until the server restarts.
+
+:::
+
+:::tip
+
+You can also disable nametags Line-Of-Sight via [config.json](../../server/config.json)
+
+```json
+"use_nametag_los": false,
+```
 
 :::
 

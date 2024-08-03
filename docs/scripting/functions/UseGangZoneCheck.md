@@ -10,16 +10,16 @@ tags: ["player", "gangzone"]
 
 Enables the callback when a player enters/leaves this zone.
 
-| Name        | Description                                      |
-|-------------|--------------------------------------------------|
-| zoneid      | The ID of the zone to enable area detection for. |
-| bool:enable | Should entry detection be started or stopped?    |
+| Name        | Description                                                    |
+| ----------- | -------------------------------------------------------------- |
+| zoneid      | The ID of the zone to enable area detection for.               |
+| bool:enable | Should entry detection be started or stopped? (`true`/`false`) |
 
 ## Returns
 
-1: The function executed successfully.
+**1:** The function executed successfully.
 
-0: The function failed to execute. The gangzone specified does not exist.
+**0:** The function failed to execute. The gangzone specified does not exist.
 
 ## Examples
 

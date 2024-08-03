@@ -4,12 +4,6 @@ description: Attach a player object to a vehicle.
 tags: ["player", "vehicle"]
 ---
 
-:::warning
-
-This function was added in SA-MP 0.3e and will not work in earlier versions!
-
-:::
-
 ## คำอธิบาย
 
 Attach a player object to a vehicle.
@@ -33,7 +27,7 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerStateChange(playerid, newstate, oldstate)
+public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if (newstate == PLAYER_STATE_DRIVER) // If player enters vehicle
     {

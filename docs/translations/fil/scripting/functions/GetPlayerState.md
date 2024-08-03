@@ -19,7 +19,7 @@ Ang kasalukuyang estado ng manlalaro bilang isang integer (tingnan ang: [Player 
 ## Examples
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     new playerState = GetPlayerState(killerid); // Kunin ang estado ng pumatay
 

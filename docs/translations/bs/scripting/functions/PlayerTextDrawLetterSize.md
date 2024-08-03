@@ -4,12 +4,6 @@ description: Postavlja širinu i visinu slova u player-textdrawu.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-:::warning
-
-Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim verzijama!
-
-:::
-
 ## Deskripcija
 
 Postavlja širinu i visinu slova u player-textdrawu.

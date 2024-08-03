@@ -4,12 +4,6 @@ description: Uništi 3D text label koji je kreiran koristeći CreatePlayer3DText
 tags: ["player", "3dtextlabel"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Uništi 3D text label koji je kreiran koristeći CreatePlayer3DTextLabel.
@@ -17,7 +11,7 @@ Uništi 3D text label koji je kreiran koristeći CreatePlayer3DTextLabel.
 | Ime             | Deskripcija                             |
 | --------------- | --------------------------------------- |
 | playerid        | ID igrača čiji se 3D text label briše.  |
-| PlayerText3D:id | ID igračevog 3D text labela za brisati. |
+| PlayerText3D:textid | ID igračevog 3D text labela za brisati. |
 
 ## Returns
 

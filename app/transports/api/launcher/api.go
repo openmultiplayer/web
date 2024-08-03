@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
+	"github.com/go-chi/cors"
 	"github.com/openmultiplayer/web/internal/config"
 	"github.com/openmultiplayer/web/internal/web"
 	"go.uber.org/fx"
@@ -16,14 +17,35 @@ func Build() fx.Option {
 			cfg config.Config,
 		) {
 
+			rtr := chi.NewRouter()
+			r.Mount("/launcher", rtr)
+
+			rtr.Use(
+				cors.Handler(cors.Options{
+					AllowedOrigins: []string{
+						"http://localhost:3000",    // Local development, `npm run dev`
+						cfg.PublicWebAddress,       // Live public website
+						cfg.LauncherBackendAddress, // Launcher backend address
+						"*",                        // Any browser instance
+					},
+					AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+					AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
+					ExposedHeaders:   []string{"Link"},
+					AllowCredentials: false,
+					MaxAge:           300,
+				}),
+			)
+
 			launcherInfo := map[string]string{
-				"version":  cfg.LauncherVersion,
-				"download": "https://github.com/openmultiplayer/launcher/releases",
+				"version":           cfg.LauncherVersion,
+				"download":          "https://github.com/openmultiplayer/launcher/releases",
+				"ompPluginChecksum": "bb7ed0e654e8d50a424a91cb1bc24a05",
+				"ompPluginDownload": "https://assets.open.mp/omp-client.dll",
 				"changelog": `|- Build 1 - 2023/10/08
 Release beta version`,
 			}
 
-			r.Get("/launcher", func(w http.ResponseWriter, r *http.Request) {
+			rtr.Get("/", func(w http.ResponseWriter, rq *http.Request) {
 				web.Write(w, launcherInfo) //nolint:errcheck
 			})
 		}),

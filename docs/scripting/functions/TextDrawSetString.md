@@ -9,9 +9,9 @@ tags: ["textdraw"]
 Changes the text on a textdraw.
 
 | Name             | Description                                |
-|------------------|--------------------------------------------|
-| text             | The TextDraw to change                     |
-| string[]         | The new string for the TextDraw            |
+| ---------------- | ------------------------------------------ |
+| Text:textid      | The TextDraw to change                     |
+| const format[]   | The new string for the TextDraw            |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Returns
@@ -21,7 +21,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new Text: gMyTextdraw;
+new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
@@ -32,13 +32,13 @@ public OnGameModeInit()
 public OnPlayerConnect(playerid)
 {
     new
-        message[64],
+        string[64],
         playerName[MAX_PLAYER_NAME];
 
     GetPlayerName(playerid, playerName, sizeof playerName);
 
-    format(message, sizeof(message), "Welcome %s!", playerName);
-    TextDrawSetString(gMyTextdraw, message);
+    format(string, sizeof(string), "Welcome %s!", playerName);
+    TextDrawSetString(gMyTextdraw, string);
 
     // PRO TIP: You don't need `format` in open.mp
     TextDrawSetString(gMyTextdraw, "Welcome %s!", playerName);

@@ -14,9 +14,9 @@ Checks if a player is connected (if an ID is taken by a connected player).
 
 ## Returns
 
-0: Player is NOT connected.
+**true** - Player is connected.
 
-1: Player IS connected.
+**false** - Player is NOT connected.
 
 ## Examples
 
@@ -29,7 +29,7 @@ KillPlayer(playerid)
     }
     else
     {
-        SetPlayerHealth(playerid, 0);
+        SetPlayerHealth(playerid, 0.0);
     }
 }
 ```
@@ -45,5 +45,8 @@ This function can be omitted in a lot of cases. Many other functions already hav
 ## Related Functions
 
 - [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.
+
+## Related Callbacks
+
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.

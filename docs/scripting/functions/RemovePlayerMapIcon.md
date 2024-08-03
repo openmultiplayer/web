@@ -15,9 +15,9 @@ Removes a map icon that was set earlier for a player using SetPlayerMapIcon.
 
 ## Returns
 
-1: The function was executed successfully.
+**true** - The function was executed successfully.
 
-0: The function failed to execute.
+**false** - The function failed to execute.
 
 ## Examples
 

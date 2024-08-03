@@ -19,14 +19,22 @@ The current ping of the player (expressed in milliseconds).
 ## Examples
 
 ```c
+new string[24];
+format(string, sizeof(string), "Your ping: %d", GetPlayerPing(playerid));
+SendClientMessage(playerid, -1, string);
+```
+
+<br />
+
+**Example to kick high ping players:**
+
+```c
 // Declare an array of all possible timer identifiers for timers for kicking players with
 // generally high ping with default value of 0
-new
-    gPlayerPingTimer[MAX_PLAYERS] = {0, ...};
+new gPlayerPingTimer[MAX_PLAYERS] = {0, ...};
 
 // A constant (nice documentation :))
-const
-    MAX_ACCEPTED_PING = 500;
+const MAX_ACCEPTED_PING = 500;
 
 public OnPlayerConnect(playerid)
 {
@@ -42,13 +50,17 @@ public OnPlayerDisconnect(playerid, reason)
 }
 
 // A forwarded function (callback)
-forward public Ping_Timer(playerid);
+forward Ping_Timer(playerid);
 public Ping_Timer(playerid)
 {
     // Kick player if their ping is more than the generally accepted high ping
-    if (GetPlayerPing(playerid) > MAX_ACCEPTED_PING)
+    new ping = GetPlayerPing(playerid);
+    if (ping > MAX_ACCEPTED_PING)
     {
-        SendClientMessageToAll()
+        new string[128];
+        format(string, sizeof(string), "You have been kicked from the server. Reason: high ping (%d)", ping);
+        SendClientMessage(playerid, -1, string);
+        
         Kick(playerid);
     }
     return 1;

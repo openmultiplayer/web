@@ -4,8 +4,6 @@ description: OnPlayerClickMap est appelé quand un joueur place un point (clic d
 tags: [player, ClickMap, Map, target, waypoint]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3d' />
-
 ## Paramètres
 
 OnPlayerClickMap est appelé quand un joueur place un point (clic droit) sur la map dans le menu pause.

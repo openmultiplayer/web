@@ -1,23 +1,23 @@
 ---
 title: DeletePVar
 description: Deletes a previously set player variable.
-tags: ["pvar"]
+tags: ["player variable", "pvar"]
 ---
 
 ## Description
 
 Deletes a previously set player variable.
 
-| Name     | Description                                           |
-| -------- | ----------------------------------------------------- |
-| playerid | The ID of the player whose player variable to delete. |
-| varname  | The name of the player variable to delete.            |
+| Name         | Description                                           |
+| ------------ | ----------------------------------------------------- |
+| playerid     | The ID of the player whose player variable to delete. |
+| const pvar[] | The name of the player variable to delete.            |
 
 ## Returns
 
-1: The function executed successfully.
+**true** - The function executed successfully.
 
-0: The function failed to execute. Either the player specified isn't connected or there is no variable set with the given name.
+**false** - The function failed to execute. Either the player specified isn't connected or there is no variable set with the given name.
 
 ## Examples
 
@@ -33,7 +33,7 @@ DeletePVar(playerid, "SomeVarName");
 
 :::tip
 
-Once a variable is deleted, attempts to retrieve the value will return 0 (for integers and floats and NULL for strings).
+Once a variable is deleted, attempts to retrieve the value will return 0 for integers and 0.0 for floats and NULL for strings.
 
 :::
 

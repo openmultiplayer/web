@@ -4,12 +4,6 @@ description: Učitava ili rasterećuje unutrašnju skriptu (enterijera) za igra�
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Učitava ili rasterećuje unutrašnju skriptu (enterijera) za igrača (na primjer meni za ammunation).

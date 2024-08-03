@@ -4,12 +4,6 @@ description: Terpanggil ketika pemain mengklik dua kali pemain yang berada di sc
 tags: ["player"]
 ---
 
-:::warning
-
-Fungsi ini telah ditambahkan dalam SA-MP 0.3a dan tidak bekerja pada versi dibawahnya!
-
-:::
-
 ## Deskripsi
 
 Terpanggil ketika pemain mengklik dua kali pemain yang berada di scoreboard.
@@ -31,7 +25,7 @@ Selalu terpanggil pertama di filterscripts.
 ## Contoh
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Anda mengklik pada pemain ID: %d", clickedplayerid);

@@ -4,12 +4,6 @@ description: Dobiva brzinu označavanja (poput FPS-a) servera.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3z i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dobiva brzinu označavanja (poput FPS-a) servera.

@@ -4,6 +4,8 @@ description: Destroys a player-pickup created with CreatePlayerPickup.
 tags: ["player", "pickup", "playerpickup"]
 ---
 
+<VersionWarn version='omp v1.1.0.2612' />
+
 ## Description
 
 Destroys a player-pickup created with [CreatePlayerPickup](CreatePlayerPickup).
@@ -20,17 +22,17 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new PlayerPickup[MAX_PLAYERS]; // Create a variable to store the player-pickup ID in
+new PlayerPickupArmour[MAX_PLAYERS]; // Create a variable to store the player-pickup ID in
 
 public OnPlayerConnect(playerid)
 {
-    PlayerPickup[playerid] = CreatePlayerPickup(playerid, 1242, 2, 2010.0979, 1222.0642, 10.8206, -1);
-    // Create an armour pickup and store the ID in 'PlayerPickup[playerid]'
+    PlayerPickupArmour[playerid] = CreatePlayerPickup(playerid, 1242, 2, 2010.0979, 1222.0642, 10.8206, -1);
+    // Create an armour pickup and store the ID in 'PlayerPickupArmour[playerid]'
     return 1;
 }
 
-//some time later...
-DestroyPlayerPickup(playerid, PlayerPickup[playerid]);
+// Some time later...
+DestroyPlayerPickup(playerid, PlayerPickupArmour[playerid]);
 ```
 
 ## Related Functions

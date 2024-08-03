@@ -19,7 +19,7 @@ ID igračevog trenutnog oružja. Returna/vraća -1 ako navedeni igrač ne postoj
 ## Primjeri
 
 ```c
-public OnPlayerDeath(playerid, killerid, reason)
+public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Provjeri ako je killerid nevažeći igrač (da li je konektovan).
     if (killerid != INVALID_PLAYER_ID)

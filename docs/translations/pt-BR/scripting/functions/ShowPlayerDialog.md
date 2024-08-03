@@ -4,12 +4,6 @@ description: Mostra um dialog (janela) asíncrono (um único por vez).
 tags: ["player"]
 ---
 
-:::warning
-
-Esta função foi adicionada no SA-MP 0.3a e não funcionará em versões anteriores!
-
-:::
-
 ## Descrição
 
 Mostra um dialog (janela) asíncrono (um único por vez).

@@ -4,8 +4,6 @@ description: Esta callback é chamada quando um jogador clica em uma textdraw ou
 tags: ["player", "textdraw"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3e' />
-
 ## Descrição
 
 Esta callback é chamada quando um jogador clica em uma textdraw ou cancela a seleção pressionando ESC.
@@ -43,7 +41,7 @@ public OnGameModeInit()
     return 1;
 }
 
-public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (newkeys == KEY_SUBMISSION)
     {

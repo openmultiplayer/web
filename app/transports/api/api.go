@@ -16,7 +16,6 @@ import (
 	"github.com/openmultiplayer/web/app/transports/api/launcher"
 	"github.com/openmultiplayer/web/app/transports/api/legacy"
 	"github.com/openmultiplayer/web/app/transports/api/metrics"
-	"github.com/openmultiplayer/web/app/transports/api/pawndex"
 	"github.com/openmultiplayer/web/app/transports/api/servers"
 	"github.com/openmultiplayer/web/app/transports/api/users"
 	"github.com/openmultiplayer/web/internal/config"
@@ -32,7 +31,7 @@ func Build() fx.Option {
 		legacy.Build(),
 		servers.Build(),
 		users.Build(),
-		pawndex.Build(),
+		// pawndex.Build(),
 		launcher.Build(),
 
 		// Starts the HTTP server in a goroutine and fatals if it errors.

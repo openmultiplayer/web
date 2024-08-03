@@ -4,17 +4,15 @@ description: Returns the norm (length) of the provided vector.
 tags: ["math"]
 ---
 
-<VersionWarn version='SA-MP 0.3z' />
-
 ## Description
 
 Returns the norm (length) of the provided vector.
 
 | Name    | Description                           |
 | ------- | ------------------------------------- |
-| Float:X | The vector's magnitude on the X axis. |
-| Float:Y | The vector's magnitude on the Y axis. |
-| Float:Z | The vector's magnitude on the Z axis. |
+| Float:x | The vector's magnitude on the X axis. |
+| Float:y | The vector's magnitude on the Y axis. |
+| Float:z | The vector's magnitude on the Z axis. |
 
 ## Returns
 

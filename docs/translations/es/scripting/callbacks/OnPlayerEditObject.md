@@ -4,24 +4,22 @@ descripción: Este callback se llama cuando un jugador termina de editar un obje
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3e' />
-
 ## Descripción
 
 Este callback se llama cuando un jugador termina de editar un objeto (EditObject/EditPlayerObject).
 
-| Nombre       | Descripción                                                        |
-| ------------ | ------------------------------------------------------------------ |
-| playerid     | El ID del jugador que editó un objeto.                             |
-| playerobject | 0 si fue un objeto global o 1 si fue un objeto de jugador.         |
-| objectid     | El ID del objeto que fue editado.                                  |
-| response     | El [tipo de respuesta](../resources/objecteditionresponsetypes)    |
-| Float:fX     | La coordenada X para el objeto que fue editado.                    |
-| Float:fY     | La coordenada Y para el objeto que fue editado.                    |
-| Float:fZ     | La coordenada Z para el objeto que fue editado.                    |
-| Float:fRotX  | La rotación X para el objeto que fue editado.                      |
-| Float:fRotY  | La rotación Y para el objeto que fue editado.                      |
-| Float:fRotZ  | La rotación Z para el objeto que fue editado.                      |
+| Nombre                 | Descripción                                                     |
+|------------------------|-----------------------------------------------------------------|
+| playerid               | El ID del jugador que editó un objeto.                          |
+| playerobject           | 0 si fue un objeto global o 1 si fue un objeto de jugador.      |
+| objectid               | El ID del objeto que fue editado.                               |
+| EDIT_RESPONSE:response | El [tipo de respuesta](../resources/objecteditionresponsetypes) |
+| Float:fX               | La coordenada X para el objeto que fue editado.                 |
+| Float:fY               | La coordenada Y para el objeto que fue editado.                 |
+| Float:fZ               | La coordenada Z para el objeto que fue editado.                 |
+| Float:fRotX            | La rotación X para el objeto que fue editado.                   |
+| Float:fRotY            | La rotación Y para el objeto que fue editado.                   |
+| Float:fRotZ            | La rotación Z para el objeto que fue editado.                   |
 
 ## Devoluciones
 
@@ -34,7 +32,7 @@ Siempre se llama primero en filterscripts.
 ## Ejemplos
 
 ```c
-public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
+public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new
         Float: oldX,

@@ -4,12 +4,6 @@ description: Kliče se, ko igralec dvakrat klikne na igralca na semaforju (TAB).
 tags: ["player"]
 ---
 
-:::warning
-
-Ta funkcijo je bila dodana SA-MP 0.3a in v spodnjih različicah ne deluje!
-
-:::
-
 ## Opis
 
 Kliče se, ko igralec dvakrat klikne na igralca na semaforju (TAB).
@@ -31,7 +25,7 @@ Vedno je bila povabljena prva v "filterscript".
 ## Primeri
 
 ```c
-public OnPlayerClickPlayer(playerid, clickedplayerid, source)
+public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new message[32];
     format(message, sizeof(message), "Kliknili ste na predvajalnik %d", clickedplayerid);

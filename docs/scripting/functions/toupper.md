@@ -31,4 +31,4 @@ public OnPlayerText(playerid, text[])
 
 ## Related Functions
 
-- [tolower](tolower)
+- [tolower](tolower): This function changes a single character to lowercase.
