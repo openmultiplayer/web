@@ -5,6 +5,12 @@ tags: []
 sidebar_label: opcodes
 ---
 
+:::note
+
+This page contains all of the action/opcode IDs used by [SendClientCheck](../functions/SendClientCheck).
+
+:::
+
 | opcode                                            | Purpose                                                                                                 |
 |---------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | 72                                                | The uptime of player's computer                                                                         |
