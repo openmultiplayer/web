@@ -11,7 +11,7 @@ Perform a memory check on the client.
 | Name            | Description                          |
 | --------------- | ------------------------------------ |
 | playerid        | The ID of the player to check.       |
-| type            | The type of check to perform.        |
+| type            | The type of check to perform. [See here](../resources/opcodes.md)|
 | memAddr         | The base address to check.           |
 | memOffset       | The offset from the base address.    |
 | byteCount       | The number of bytes to check.        |
