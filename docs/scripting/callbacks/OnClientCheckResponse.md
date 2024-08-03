@@ -53,4 +53,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 The following function might be useful, as they're related to this callback in one way or another. 
 
 - [SendClientCheck](../functions/SendClientCheck): Perform a memory check on the client.
-- [opcodes](../resources/opcodes.md): Action opcodes IDs and their purpose.
+
+## Related Resources
+
+- [opcodes](../resources/opcodes): Action opcodes IDs and their purpose.
