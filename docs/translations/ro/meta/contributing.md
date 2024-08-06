@@ -193,7 +193,7 @@ Majoritatea conținutului a fost mutat, dar dacă găsiți o pagină care lipse�
 
 Pentru conversia HTML de bază (fără tabele) la Markdown utilizați:
 
-https://domchristie.github.io/turndown/
+https://mixmark-io.github.io/turndown/
 
 ![image](images/contributing/77f4ea555bbb.png)
 

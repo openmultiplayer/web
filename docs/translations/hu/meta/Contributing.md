@@ -192,7 +192,7 @@ Először nyisd meg a fejlesztői eszközt a Ctrl + Shift + I billentyűkombiná
 
 Az alapvető HTML-ek (táblázatok nélküli) Markdown-ba történő konvertálásához használd:
 
-https://domchristie.github.io/turndown/
+https://mixmark-io.github.io/turndown/
 
 ![image](images/contributing/77f4ea555bbb.png)
 

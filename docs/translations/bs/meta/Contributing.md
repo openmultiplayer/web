@@ -192,7 +192,7 @@ Većina sadržaja je premještena, ali ako pronađete stranicu koja fali, ovdje 
 
 Za konvertovanje osnovnog HTML-a (bez tabela) u Markdown koristite:
 
-https://domchristie.github.io/turndown/
+https://mixmark-io.github.io/turndown/
 
 ![image](images/contributing/77f4ea555bbb.png)
 
