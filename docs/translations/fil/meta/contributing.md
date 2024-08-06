@@ -176,7 +176,7 @@ Halos lahat ng mga nilalaman ay nalipat na, pero kung may nakita kang page sa wi
 
 Para sa pag convert ng basic HTML (no tables) sa Markdown gamitin ang:
 
-https://domchristie.github.io/turndown/
+https://mixmark-io.github.io/turndown/
 
 ![image](images/contributing/77f4ea555bbb.png)
 
