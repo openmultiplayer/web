@@ -39,7 +39,7 @@ func Build() fx.Option {
 			launcherInfo := map[string]string{
 				"version":           cfg.LauncherVersion,
 				"download":          "https://github.com/openmultiplayer/launcher/releases",
-				"ompPluginChecksum": "bb7ed0e654e8d50a424a91cb1bc24a05",
+				"ompPluginChecksum": "7d90ea9219a26b5a9ff837e80717c496",
 				"ompPluginDownload": "https://assets.open.mp/omp-client.dll",
 				"changelog": `|- Build 1 - 2023/10/08
 Release beta version`,
