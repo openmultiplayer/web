@@ -13,6 +13,9 @@ import { hydrate } from "src/mdx-helpers/csr";
 import { DocsSidebar } from "src/components/Sidebar";
 import Admonition from "src/components/Admonition";
 
+import { useRouter } from 'next/router';
+const translateText = require('src/components/translates/Translate');
+
 type Props = {
   source?: any;
   error?: string;
@@ -53,30 +56,21 @@ const Page = (props: Props) => {
     );
   }
 
+  const router = useRouter();
+  const locale = router?.locale || "en";
+
   const contributeCallToAction = props.fallback ? (
-    <Admonition type="warning" title="Not Translated">
-      <p>
-        This page has not been translated into the language that your browser
-        requested yet. The English content is being shown as a fallback.
-      </p>
-      <p>
-        If you want to contribute a translation for this page then please click{" "}
-        <a href={props.ghUrl}>here</a>.
-      </p>
+    <Admonition type="warning" title={translateText(locale, "Docs", "Not Translated")}>
+      <p dangerouslySetInnerHTML={{ __html: translateText(locale, "Docs", "This page has not been translated into the language that your browser requested yet. The English content is being shown as a fallback.") }}></p>
+      <p dangerouslySetInnerHTML={{ __html: translateText(locale, "Docs", `If you want to contribute a translation for this page then please click <a href=${props.ghUrl}>here</a>.`, { editLink: props.ghUrl }) }}></p>
     </Admonition>
   ) : (
-    // TODO: would we want to translate this into the locale selected?
-    <Admonition type="note" title="Help Needed">
-      <p>
-        This wiki is the result of an ongoing community effort — thank you all
-        for helping!
-      </p>
-      <p>
-        If you want to provide changes to this page then please click{" "}
-        <a href={props.ghUrl}>here</a>.
-      </p>
+    <Admonition type="note" title={translateText(locale, "Docs", "Help Needed")}>
+      <p dangerouslySetInnerHTML={{ __html: translateText(locale, "Docs", "This wiki is the result of an ongoing community effort — thank you all for helping!") }}></p>
+      <p dangerouslySetInnerHTML={{ __html: translateText(locale, "Docs", `If you want to provide changes to this page then please click <a href=${props.ghUrl}>here</a>.`, { editLink: props.ghUrl }) }}></p>
     </Admonition>
   );
+
 
   return (
     <div className="flex flex-column flex-auto items-stretch">

@@ -1,6 +1,10 @@
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
+const translateText = require('src/components/translates/Translate');
+import { useRouter } from 'next/router';
+
+
 interface FooterItem {
   url?: string;
   imageUrl?: string;
@@ -81,6 +85,9 @@ const Footer: React.FC = () => {
     setFormattedItems(updatedItems);
   }, []);
 
+  const router = useRouter();
+  const locale = router.locale || 'en';
+
   return (
     <Box as="footer" bgColor={useColorModeValue("blackAlpha.800", "gray.900")} display="flex" justifyContent="space-between" padding="30px">
       <div className="near-white" style={{ display: "flex", flexDirection: isMobile ? "column" : "row", justifyContent: isMobile ? "center" : "space-between", alignItems: isMobile ? "center" : "center", flex: 1 }}>
@@ -97,8 +104,10 @@ const Footer: React.FC = () => {
               }}
             />
             <FooterList
-              heading="About us"
-              items={[{ text: "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>." }]}
+              heading={translateText(locale, "Footer", "About us")}
+              items={[
+                { text: translateText(locale, "Footer", "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>.") }
+              ]}
               alignment="center"
               maxWidth={'390px'} // Max width conditionally applied
               style={{
@@ -112,9 +121,10 @@ const Footer: React.FC = () => {
         {!isMobile && (
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <FooterList
-              heading="About us"
-              items={[{ text: "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>." }]}
-              alignment="center"
+              heading={translateText(locale, "Footer", "About us")}
+              items={[
+                { text: translateText(locale, "Footer", "A multiplayer mod for Grand Theft Auto: San Andreas that is <b>fully backwards compatible</b> with <b>San Andreas Multiplayer</b>.") }
+              ]}              alignment="center"
               maxWidth={'390px'} // Max width conditionally applied
               style={{
                 whiteSpace: 'normal',
@@ -142,12 +152,12 @@ const Footer: React.FC = () => {
         )}
       <div className="near-white" style={{ textAlign: "right", flex: 1 }}>
         <FooterList
-          heading="Community"
+          heading={translateText(locale, "Footer", "Community")}
           items={formattedItems}
           alignment="right"
         />
         <FooterList
-          heading="More"
+          heading={translateText(locale, "Footer", "More")}
           items={[
             { url: "/blog", imageUrl: "/images/assets/blog.svg", text: "Blog" },
             { url: "https://github.com/openmultiplayer/", imageUrl: "/images/assets/github.svg", text: "GitHub" },
