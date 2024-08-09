@@ -1,6 +1,6 @@
 ---
 title: VehicleCanHaveComponent
-description: Is the component legal on the vehicle?
+description: Is the component legal on a vehicle model?
 tags: ["vehicle"]
 ---
 
@@ -8,11 +8,11 @@ tags: ["vehicle"]
 
 ## Description
 
-Is the component legal on the vehicle?
+Is the component legal on the vehicle model?
 
 | Name                                     | Description                   |
 | ---------------------------------------- | ----------------------------- |
-| vehicleid                                | ID of the vehicle.            |
+| [modelid](../resources/vehicleid)       | Vehicle Model ID              |
 | [component](../resources/carcomponentid) | ID of the component to check. |
 
 ## Returns
@@ -26,7 +26,7 @@ Is the component legal on the vehicle?
 ```c
 new vehicleid = GetPlayerVehicleID(playerid);
 
-if (VehicleCanHaveComponent(vehicleid, 1010))
+if (VehicleCanHaveComponent(GetVehicleModel(modelid), 1010))
 {
     SendClientMessage(playerid, 0x00FF00FF, "Nitro is legal on this vehicle.");
 }
