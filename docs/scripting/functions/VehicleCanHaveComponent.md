@@ -26,7 +26,7 @@ Is the component legal on the vehicle model?
 ```c
 new vehicleid = GetPlayerVehicleID(playerid);
 
-if (VehicleCanHaveComponent(GetVehicleModel(modelid), 1010))
+if (VehicleCanHaveComponent(GetVehicleModel(vehicleid), 1010))
 {
     SendClientMessage(playerid, 0x00FF00FF, "Nitro is legal on this vehicle.");
 }
