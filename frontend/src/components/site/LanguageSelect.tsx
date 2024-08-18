@@ -9,6 +9,8 @@ interface Props {
   title: string;
 }
 
+const translateText = require('src/components/translates/Translate');
+
 const LanguageSelect = forwardRef(({ title }: Props, ref) => {
   const { locale, locales, pathname, asPath, query, push } = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -81,7 +83,7 @@ const LanguageSelect = forwardRef(({ title }: Props, ref) => {
       <Modal isOpen={isOpen} onClose={onClose} size={modalSize}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Change language from {getLanguageName(locale)}</ModalHeader>
+          <ModalHeader>{translateText(locale, "General", `Change language from`)}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             {/* Conditionally apply flexbox layout for mobile screens */}

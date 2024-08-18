@@ -9,6 +9,9 @@ import { APIError } from "src/types/_generated_Error";
 import { Hit, SearchResults } from "src/types/_generated_SearchResult";
 import useSWR from "swr";
 
+import { useRouter } from 'next/router';
+const translateText = require('src/components/translates/Translate');
+
 type Params = {
   q: string;
 };
@@ -74,12 +77,15 @@ const Page: FC<Props> = (props) => {
 
   const { query, results } = props.data;
 
+  const router = useRouter();
+  const locale = router.locale || "en";
+
   return (
     <section className="center measure-wide pa4">
       <Form />
       {query && (
         <>
-          <h1>{results?.total} Search Results</h1>
+          <h1>{translateText(locale, "Search", "search-results", { total: results?.total })}</h1>
           <Results query={query} results={results} />
         </>
       )}

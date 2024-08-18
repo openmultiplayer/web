@@ -6,6 +6,9 @@ import { Hit, SearchResults } from "src/types/_generated_SearchResult";
 
 const noExtension = (path: string) => path.replace(".md", "");
 
+import { useRouter } from 'next/router';
+const translateText = require('src/components/translates/Translate');
+
 const Search: FC = () => {
   const searchRef = useRef<HTMLDivElement>(null);
   const [query, setQuery] = useState("");
@@ -40,6 +43,9 @@ const Search: FC = () => {
     setActive(true);
     window.addEventListener("click", onClick);
   }, [onClick]);
+  
+  const router = useRouter();
+  const locale = router?.locale || "en";
 
   return (
     <>
@@ -48,7 +54,7 @@ const Search: FC = () => {
           className="search"
           onChange={onChange}
           onFocus={onFocus}
-          placeholder="Search..."
+          placeholder={translateText(locale, "Docs", "Search...")}
           type="text"
           value={query}
         />

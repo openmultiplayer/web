@@ -11,6 +11,8 @@ import { useRouter } from "next/router";
 import NextLink from "next/link";
 import LanguageSelect from "./LanguageSelect";
 
+const translateText = require('src/components/translates/Translate');
+
 export type NavItem = {
   name: string;
   path: string;
@@ -124,14 +126,20 @@ const NavMenu: FC<Props> = ({ items, route }) => {
 
 type NavLinkProps = { item: NavItem; current: boolean };
 
-const NavLink: FC<NavLinkProps> = ({ item, current }) => (
-  <NextLink href={item.path} passHref>
-    <Link _hover={undefined} _focus={{ outline: 'none', border: 'none' }}>
-      <Button as="div" variant={current ? "outline" : "ghost"} size="sm">
-        {item.name}
-      </Button>
-    </Link>
-  </NextLink>
-);
+const NavLink: FC<NavLinkProps> = ({ item, current }) => {
+  const router = useRouter();
+  const locale = router.locale || 'en'; // Define locale using useRouter
+
+  return (
+    <NextLink href={item.path} passHref>
+      <Link _hover={undefined} _focus={{ outline: 'none', border: 'none' }}>
+        <Button as="div" variant={current ? 'outline' : 'ghost'} size="sm">
+          {/* Use translateText function to translate text */}
+          {translateText(locale, 'NavBar', item.name)}
+        </Button>
+      </Link>
+    </NextLink>
+  );
+};
 
 export default NavMenu;

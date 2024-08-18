@@ -8,6 +8,9 @@ import { API_ADDRESS } from "src/config";
 import { Essential } from "src/types/_generated_Server";
 import useSWR from "swr";
 
+import { useRouter } from 'next/router';
+const translateText = require('src/components/translates/Translate');
+
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
 const getServers = async (): Promise<Array<Essential>> => {
@@ -29,6 +32,10 @@ const List = ({ data }: { data: Array<Essential> }) => {
 };
 
 const Page = () => {
+
+  const router = useRouter();
+  const locale = router.locale || "en";
+
   const { data, error } = useSWR<Array<Essential>, TypeError>(
     API_SERVERS,
     getServers
@@ -47,28 +54,19 @@ const Page = () => {
         description="open.mp partners and beta testers"
       />
 
-      <Heading mb={"1em"}>Partners (BETA TESTERS)</Heading>
+      <Heading mb={"1em"}>{translateText(locale, "Partners", "Partners (BETA TESTERS)")}</Heading>
 
       <Box py={4}>
+        <div>
+          <span dangerouslySetInnerHTML={{ __html: translateText(locale, "Partners", "Servers helping us in beta testing by running open.mp and reporting bugs and issues are listed here. You can do the same by running your server using open.mp and help us with finding bugs and issues; Then tell us about your servers on our <a href='https://discord.gg/samp'>discord</a> so we can list them here.") }} />
+        </div>
+      <p>
+        {translateText(locale, "Partners", "Those who are contributing to our community will have permanent perks in future when we are releasing for public use and when our server listing is ready.")}
+      </p>
         <p>
-          Servers helping us in beta testing by running open.mp and reporting
-          bugs and issues are listed here. You can do the same by running your
-          server using open.mp and help us with finding bugs and issues; Then
-          tell us about your servers on{" "}
-          <a href="https://discord.gg/samp">our discord</a> so we can list them
-          here.
-        </p>
-        <p>
-          Those who are contributing to our community will have permanent perks
-          in future when we are releasing for public use and when our server
-          listing is ready.
-        </p>
-        <p>
-          <b>
-            Note: Partnership program is temporarily closed as we promised.
-            Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested,
-            you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet.
-          </b>
+        <b>
+          {translateText(locale, "Partners", "Note: Partnership program is temporarily closed as we promised. Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested, you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet.")}
+        </b>
         </p>
       </Box>
 

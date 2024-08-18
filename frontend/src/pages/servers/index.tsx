@@ -34,6 +34,9 @@ import { API_ADDRESS } from "src/config";
 import { All, Essential } from "src/types/_generated_Server";
 import useSWR from "swr";
 
+const translateText = require('src/components/translates/Translate');
+import { useRouter } from 'next/router';
+
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
 const getServers = async (): Promise<Array<Essential>> => {
@@ -88,17 +91,17 @@ const dataToList = (data: Essential[], q: Query) => {
   )(items);
 };
 
-const Stats = ({ stats: { players, servers } }: { stats: Stats }) => {
+const Stats = ({ stats: { players, servers }, locale }: { stats: Stats, locale: string }) => {
   return (
     <Center>
       <Text my={4}>
-        <strong>{players}</strong> players on <strong>{servers}</strong> servers
-        with an average of <strong>{(players / servers).toFixed(1)}</strong>{" "}
-        players per server.
+        {translateText(locale, "Servers", "servers-stats", { averagePlayers: (players / servers).toFixed(1), serverCount: servers, totalPlayers: players })}
       </Text>
     </Center>
   );
 };
+
+
 
 const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
   const [value, setValue] = useState("");
@@ -115,24 +118,33 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
       body: JSON.stringify({ ip: value }),
     });
     NProgress.inc();
+    
     if (response.status === 200) {
       const server = (await response.json()) as All;
       onAdd(server);
       toast.notify(
-        `${server.core.hn} is added to our pending list. If it's not available after maximum 48 hours, you can contact us on Discord!`,
-        {
-          title: "Server Submitted!",
-        }
-      );
+      translateText(locale, 'Servers', 'server-sumbitted', { serverCodeHn: server.core.hn }),
+      {
+        title: translateText(locale, 'Servers', 'Server Submitted!')
+      }
+    );
+
     } else {
       const error = (await response.json()) as { error: string };
-      toast.notify(`Status ${response.statusText}: ${error?.error}`, {
-        title: "Submission failed!",
-        type: "error",
-      });
+      toast.notify(
+        translateText(locale, 'Servers', 'server-submissionfail', { responseStatusText: translateText(locale, 'Servers', response.statusText), responseError: translateText(locale, 'Servers', error?.error) }),
+        {
+          title: translateText(locale, 'Servers', 'Submission failed!'),
+          type: "error",
+        }
+      );
     }
     NProgress.done();
+    
   };
+
+  const router = useRouter();
+  const locale = router.locale || 'en';
 
   return (
     <form
@@ -145,12 +157,12 @@ const AddServer = ({ onAdd }: { onAdd: (server: All) => void }) => {
         <Input
           type="text"
           name="address"
-          placeholder="IP/Domain"
+          placeholder={translateText(locale, "Servers", "IP/Domain")}
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
         <Button colorScheme="blue" mr={3} type="submit">
-          Add
+        {translateText(locale, "Servers", "Add")}
         </Button>
       </Flex>
     </form>
@@ -171,26 +183,30 @@ const List = ({
   const [sort, setSort] = useState("relevance");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const router = useRouter();
+  const locale = router.locale || 'en';
+
   return (
     <>
       <form action="">
         <Flex gridGap={2} flexDir={{ base: "column", md: "row" }}>
           <Select
             flexShrink={2}
-            placeholder="Sort by"
+            placeholder={translateText(locale, "Servers", "Sort by")}
             name="sortBy"
             id="sortBy"
             value={sort}
             onChange={(e) => setSort(e.target.value)}
           >
-            <option value="relevance">Relevance</option>
-            <option value="pc">Players</option>
+            <option value="relevance">{translateText(locale, "Servers", "Relevance")}</option>
+            <option value="pc">{translateText(locale, "Servers", "Players")}</option>
+
           </Select>
 
           <Input
             flexGrow={2}
             type="text"
-            placeholder="Search by IP or Name"
+            placeholder={translateText(locale, "Servers", "Search by IP or Name")}
             name="search"
             id="search"
             value={search}
@@ -205,25 +221,24 @@ const List = ({
             onClick={onOpen}
             rightIcon={<AddIcon boxSize="0.8em" />}
           >
-            Add server
+            {translateText(locale, "Servers", "Add server")}
           </Button>
           <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false}>
             <ModalOverlay />
             <ModalContent top={10}>
-              <ModalHeader>Add a server</ModalHeader>
+              <ModalHeader>{translateText(locale, "Servers", "Add server")}</ModalHeader>
               <ModalCloseButton />
               <ModalBody>
                 <FormControl mb={4}>
-                  <FormLabel>IP or Domain</FormLabel>
+                  <FormLabel>{translateText(locale, "Servers", "IP or Domain")}</FormLabel>
                   <AddServer
                     onAdd={(server: All) => {
                       onAdd(server);
                       onClose();
                     }}
                   />
-                  <FormHelperText>
-                    IP must be in format <strong>ip:port</strong>
-                  </FormHelperText>
+                 <FormHelperText 
+                 dangerouslySetInnerHTML={{ __html: translateText(locale, "Servers", "IP must be in format <strong>ip:port</strong>") }}/>
                 </FormControl>
               </ModalBody>
             </ModalContent>
@@ -234,23 +249,24 @@ const List = ({
             isChecked={showEmpty}
             onChange={(e) => setShowEmpty(e.target.checked)}
           >
-            Show empty servers
+            {translateText(locale, "Servers", "Show empty servers")}
           </Checkbox>
           <Checkbox
             isChecked={showOmpOnly}
             onChange={(e) => setShowOmpOnly(e.target.checked)}
           >
-            Show only open.mp servers
+            {translateText(locale, "Servers", "Show only open.mp servers")}
           </Checkbox>
           <Checkbox
             isChecked={showPartnersOnly}
             onChange={(e) => setShowPartnersOnly(e.target.checked)}
           >
-            Show only partners
+            {translateText(locale, "Servers", "Show only partners")}
           </Checkbox>
         </Flex>
       </form>
-      <Stats stats={getStats(data)} />
+      <Stats stats={getStats(data)} locale={locale} />
+      
 
       <CardList>
         {dataToList(data, {
@@ -266,6 +282,10 @@ const List = ({
 };
 
 const Page = () => {
+
+  const router = useRouter();
+  const locale = router.locale || 'en';
+  
   const { data, error, mutate } = useSWR<Array<Essential>, TypeError>(
     API_SERVERS,
     getServers
@@ -284,7 +304,7 @@ const Page = () => {
         description="Live indexing and data for all SA-MP servers."
       />
 
-      <Heading mb={"1em"}>Servers</Heading>
+      <Heading mb={"1em"}>{translateText(locale, "Servers", "Servers")}</Heading>
 
       <List
         data={data}

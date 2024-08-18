@@ -1,4 +1,6 @@
 import React from "react";
+import { useRouter } from 'next/router';
+const translateText = require('src/components/translates/Translate');
 
 type AdType = {
   ifmClass: string;
@@ -110,12 +112,15 @@ type Props = {
 const Admonition = ({ type, title, children }: Props) => {
   const adtype = types[type];
 
+  const router = useRouter();
+  const locale = router?.locale || "en"; // Use optional chaining to prevent accessing properties on null
+
   return (
     <div className={`admonition admonition-${type} alert alert--success`}>
       <div className="admonition-heading">
         <h5>
           <span className="admonition-icon">{adtype.svg}</span>
-          {adtype.keyword} {title}
+          {translateText(locale, "Docs", adtype.keyword)} : {title}
         </h5>
       </div>
       <div className="admonition-content">{children}</div>
