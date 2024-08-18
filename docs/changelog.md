@@ -15,6 +15,8 @@ Our launcher also now received a new update which you can get by simply opening 
 - Add more data validity checks for dialog responses.
 - Add validity checks for menu rows.
 - Add human readable HTTP errors.
+- New definition for general SA-MP API compatibility. (`#define SAMP_COMPAT`)
+- New definition to silence legacy scripting warnings. (`#define LEGACY_SCRIPTING_API`)
 
 **Changes:**
 
