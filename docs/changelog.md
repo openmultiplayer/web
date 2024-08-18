@@ -35,6 +35,7 @@ Our launcher also now received a new update which you can get by simply opening 
 - Fix several connection issues and proper internal player pool cleanups.
 - Fix [GetGameText](scripting/functions/GetGameText) function giving incorrect/corrupt values.
 - Fix open.mp windows version not loading when user's windows is set to a language with non-ascii names.
+- Fix function and callback headings in `qawno/filterscript.new` and `qawno/gamemode.new` files.
 
 <br />
 
