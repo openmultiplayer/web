@@ -215,7 +215,7 @@ omp-server --default-config
 
 | Key            | Type   | Default value           | Read-only | Rule | Effect                                                                 |
 |----------------|--------|-------------------------|-----------|------|------------------------------------------------------------------------|
-| discord.invite | string | https://discord.gg/samp | ❌         | ❌    | The address of your server discord that appears in the server browser. |
+| discord.invite | string | https://discord.gg/samp | ❌         | ❌    | The address of your server discord that appears in the omp launcher. |
 
 ![](https://i.ibb.co/cTRq5pr/294345382-54d77460-da32-458e-bcfa-10ebec90fbfa.png)
 
@@ -223,10 +223,16 @@ omp-server --default-config
 
 | Key           | Type   | Default value | Read-only | Rule | Effect                                                                     |
 |---------------|--------|---------------|-----------|------|----------------------------------------------------------------------------|
-| banners.light | string |               | ❌         | ❌    | Your server's light banner url address that appears in the server browser. |
-| banners.dark  | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the server browser.  |
+| banners.light | string |               | ❌         | ❌    | Your server's light banner url address that appears in the omp launcher. |
+| banners.dark  | string |               | ❌         | ❌    | Your server's dark banner url address that appears in the omp launcher.  |
 
 ![](https://i.ibb.co/86T8wYG/image.png)
+
+## Server Logo
+
+| Key           | Type   | Default value | Read-only | Rule | Effect                                                                     |
+|---------------|--------|---------------|-----------|------|----------------------------------------------------------------------------|
+| logo          | string |               | ❌        | ❌   | Your server's logo url address that appears in the omp launcher.           |
 
 <br />
 
