@@ -32,7 +32,7 @@ public OnScriptLoadPlayer(playerid, bool:isEntryScript)
 
 :::tip
 
-This callback is called when you are loading or unloading a side script (filterscript) at runtime.
+This callback is called when you are **loading** a side script (filterscript) at runtime.
 
 :::
 
