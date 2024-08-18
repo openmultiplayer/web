@@ -104,6 +104,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[SAMPSON](https://github.com/Hual/SAMPSON)** - A JSON plugin for SA-MP.
 - **[samp-chatbot](https://github.com/SimoSbara/samp-chatbot)** - A GTA SAMP plugin for AI Chat Bot communication inside Game.
 - **[SAMP BitStream Crash Fix](https://github.com/AmyrAhmady/samp-bscrashfix)** - Fixes the issue with BitStream read overruns.
+- **[pawn-json](https://github.com/Southclaws/pawn-json)** - JSON for Pawn.
 
 ## Client-Server Plugins
 

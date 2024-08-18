@@ -32,7 +32,7 @@ type Config struct {
 	ServerScrapeInterval   time.Duration `envconfig:"SERVER_SCRAPE_INTERVAL"   required:"false" default:"30m"`
 	PackageSearchInterval  time.Duration `envconfig:"PACKAGE_SEARCH_INTERVAL"  required:"false" default:"24h"`
 	PackageScrapeInterval  time.Duration `envconfig:"PACKAGE_SCRAPE_INTERVAL"  required:"false" default:"24h"`
-	LauncherVersion        string        `envconfig:"LAUNCHER_VERSION"         required:"false" default:"2"`
+	LauncherVersion        string        `envconfig:"LAUNCHER_VERSION"         required:"false" default:"4"`
 	AuthenticatedAPIKey    string        `envconfig:"AUTHENTICATED_API_KEY"    required:"true"`
 }
 
