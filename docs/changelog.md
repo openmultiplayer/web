@@ -9,6 +9,8 @@ A new version of open.mp server is finally out, there has been a lot of fixes, b
 
 Our launcher also now received a new update which you can get by simply opening your launcher and updating it through the update dialog. For longer version of changelog please read it from here: https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0
 
+### Server
+
 **Added:**
 
 - Add server logo config variable to [config.json](server/config.json), allowing servers to set a logo to be shown in our launcher and discord status.
@@ -37,7 +39,7 @@ Our launcher also now received a new update which you can get by simply opening 
 - Fix several connection issues and proper internal player pool cleanups.
 - Fix [GetGameText](scripting/functions/GetGameText) function giving incorrect/corrupt values.
 - Fix open.mp windows version not loading when user's windows is set to a language with non-ascii names.
-- Fix function and callback headings in `qawno/filterscript.new` and `qawno/gamemode.new` files.
+- Fix callback headings in `qawno/filterscript.new` and `qawno/gamemode.new` files.
 
 <br />
 
