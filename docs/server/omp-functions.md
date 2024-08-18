@@ -50,6 +50,8 @@ This page contains all the functions and callbacks that were added in open.mp
 | [IsPlayerCuffed](../scripting/functions/IsPlayerCuffed)                                                 |
 | [SetPlayerAdmin](../scripting/functions/SetPlayerAdmin)                                                 |
 | [GetPlayers](../scripting/functions/GetPlayers)                                                         |
+| [OnScriptLoadPlayer](../scripting/callbacks/OnScriptLoadPlayer)                                                         |
+| [OnScriptUnloadPlayer](../scripting/callbacks/OnScriptUnloadPlayer)                                                         |
 
 ## Object
 
