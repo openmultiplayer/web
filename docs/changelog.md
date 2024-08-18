@@ -7,7 +7,7 @@ description: open.mp development progress and changelog.
 
 A new version of open.mp server is finally out, there has been a lot of fixes, bunch of performance improvements, and a few additions.
 
-Our launcher also now received a new update which you can get by simply opening your launcher and updating it through the update dialog. For longer version of changelog please read it from here: https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0
+Our launcher also now received a new update which you can get by simply opening your launcher and updating it through the update dialog. For changelog please read it from here: https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0
 
 ### Server
 
