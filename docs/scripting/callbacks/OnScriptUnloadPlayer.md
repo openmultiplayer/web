@@ -28,6 +28,14 @@ public OnScriptUnloadPlayer(playerid, bool:isEntryScript)
 }
 ```
 
+## Notes
+
+:::tip
+
+This callback is called when you are unloading a side script (filterscript) at runtime.
+
+:::
+
 ## Related Callbacks
 
 The following callbacks might be useful, as they're related to this callback in one way or another. 
