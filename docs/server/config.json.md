@@ -232,7 +232,7 @@ omp-server --default-config
 
 | Key           | Type   | Default value | Read-only | Rule | Effect                                                                     |
 |---------------|--------|---------------|-----------|------|----------------------------------------------------------------------------|
-| logo          | string |               | ❌        | ❌   | Your server's logo url address that appears in the omp launcher and our discord status.           |
+| logo          | string |               | ❌        | ❌   | Your server's logo url address that appears in the omp launcher and discord status.           |
 
 ![](https://i.ibb.co/VQZch1Y/image-1.png)
 
