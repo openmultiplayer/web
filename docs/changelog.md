@@ -3,7 +3,48 @@ title: Changelog
 description: open.mp development progress and changelog.
 ---
 
-## **[v1.2.0.2670](https://github.com/openmultiplayer/open.mp/releases/tag/v1.2.0.2670) (Latest)**
+## **[v1.3.1.2748](https://github.com/openmultiplayer/open.mp/releases/tag/v1.3.1.2748) (Latest)**
+
+A new version of open.mp server is finally out, there has been a lot of fixes, bunch of performance improvements, and a few additions.
+
+Our launcher also now received a new update which you can get by simply opening your launcher and updating it through the update dialog. For longer version of changelog please read it from here: https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0
+
+**Added:**
+
+- Add server logo config variable to [config.json](server/config.json), allowing servers to set a logo to be shown in our launcher and discord status.
+- Add more data validity checks for dialog responses.
+- Add validity checks for menu rows.
+- Add human readable HTTP errors.
+
+**Changes:**
+
+- Remove unnecessary OnPlayerConnect and OnPlayerDisconnect when a side script (filterscript) is (un)loaded. Instead introduced [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) and [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer) callbacks.
+- Remove bunch of pawn native deprecation from runtime warnings.
+- Check CDN URL validity.
+- Stop spectator sync being broadcasted.
+- Default values for health and armour.
+- Improve performance for responding to Scores And Pings RPC. (scoreboard)
+- Change invalid weapon slot to `-1`
+
+**Fixes:**
+
+- Fix the infamous RakNet crash we've been dealing with since the beginning, affecting a few servers.
+- Fix string not shown in rare cases of using format.
+- Fix the problem with crashdetect not being able to find file name and line number when more than one script was loaded.
+- Fix a lot of RakNet crashes and safer internal memory management.
+- Fix several connection issues and proper internal player pool cleanups.
+- Fix [GetGameText](scripting/functions/GetGameText) function giving incorrect/corrupt values.
+- Fix open.mp windows version not loading when user's windows is set to a language with non-ascii names.
+- Fix function and callback headings in `qawno/filterscript.new` and `qawno/gamemode.new` files.
+
+<br />
+
+<hr />
+
+## [v1.2.0.2670](https://github.com/openmultiplayer/open.mp/releases/tag/v1.2.0.2670)
+
+<details>
+<summary>Click here</summary>
 
 We encourage every open.mp server to update to this version. There has been not only noticeable performance improvements, but also **critical security fixes**.
 
@@ -24,6 +65,8 @@ We encourage every open.mp server to update to this version. There has been not 
 - Fix `Get(Player)Gravity` returning integer instead of float.
 - Validate damage reasons (weapons) in various places.
 - Synchronize bans so multiple players are banned at once if needed.
+
+</details>
 
 <br />
 
