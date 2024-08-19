@@ -1,0 +1,154 @@
+---
+title: Release Candidate 1
+date: "2023-01-05T01:10:00"
+author: Y_Less
+---
+
+Đã đến rồi!
+
+Cuối cùng thì cũng đến rồi!
+
+Sau bốn năm, hai lần viết lại, tranh cãi và kịch tính, cùng vô số rào cản khác; cuối cùng thì cũng đến rồi!
+
+Bản ứng viên phát hành 1 (RC1) của máy chủ open.mp.
+
+Hy vọng đây là phiên bản cuối cùng của mã cho bản phát hành 1.0 của chúng tôi và nếu mọi thứ diễn ra suôn sẻ với phiên bản này, chúng tôi sẽ có thể **mở** cái gọi là **open**.mp chỉ trong vài ngày nữa.
+
+Trước khi đi sâu vào nội dung chính của bản phát hành, trước tiên tôi muốn chân thành cảm ơn mọi thành viên trong nhóm open.mp đã giúp bản mod tiến xa đến vậy. Thật không dễ dàng, chủ yếu là vì mọi người thực sự đã đầu tư như thế nào - tất cả chúng tôi đều muốn điều tốt nhất cho bản mod, cho cộng đồng, cho SA:MP, cho máy chủ của chúng tôi và cho người chơi của chúng tôi; chúng tôi sẽ không bắt đầu hành trình này nếu không phải như vậy. Thật không may, đôi khi những ý kiến ​​trái chiều mạnh mẽ về điều gì là **tốt nhất** lại gây ra sự bất đồng. Nhưng giờ chúng tôi đã ở đây. Xin gửi lời cảm ơn chân thành đến tất cả mọi người:
+
+* Amir
+* Cheaterman
+* Freaksken
+* Graber
+* Hual
+* Josh
+* JustMichael
+* kseny
+* Nexius
+* pkfin
+* Potassium
+* Southclaws
+* TommyB
+* Y_Less
+* Zeex
+* Và có thể còn nhiều hơn nữa...
+
+Dù sao thì, giờ là phần mà bạn thực sự quan tâm...
+
+Bây giờ chúng tôi đã hết giai đoạn beta, chúng tôi (nếu mọi việc diễn ra tốt đẹp trong tuần này) sẽ phát hành đúng hạn. Vì vậy, cùng với máy chủ mà bạn đã thấy hàng chục lần trước đây, chúng tôi có một số phần quà mới dành cho bạn:
+
+## Pawn
+
+Tải xuống có bản chính thức, không cần vá SA:MP cũ bằng `omp.inc` nữa, giờ chúng ta đang làm đúng rồi! Nó cũng có trình biên dịch mới. Bạn có bao giờ thắc mắc khi nào thì 3.10.11 ra mắt không? Không cần phải đợi lâu nữa (nếu bạn tự xây dựng, bạn có thể coi đây là 3.10.12)! Với sự kết hợp này, bạn có thể nhận được rất nhiều cảnh báo mới, nhưng đừng lo - chúng tôi cũng có một công cụ cho việc đó, để tự động nâng cấp một loạt mã, thêm tên ký hiệu được xác định rõ ràng, `const`, v.v. vào đúng chỗ. Có thể bạn đã nhận thấy điều này, bạn đã sử dụng nó trong nhiều tháng, nhưng máy ảo (bit bên trong máy chủ) cũng đã được cập nhật! À, và tất cả các chuỗi gốc mà bạn biết và yêu thích, như `SendClientMessage` và `AddMenuItem`? Tất cả chúng đều được định dạng. Tất cả chúng\*.
+
+Danh sách đầy đủ những gì có sẵn:
+
+* Giới hạn độ dài ký hiệu tăng lên 64, không còn `OnPlyrDoTheTing` để thử và đưa tên của bạn vào nữa. Dẫn đến...
+* Nhiều bản gốc được giải nén - `Col` là viết tắt của `Colour` hay `Collision`? Bây giờ bạn đã biết!
+* Thẻ. Thẻ ở khắp mọi nơi. Xem tài liệu đi kèm.
+* Các bản bao gồm chính thức cuối cùng đã được sửa đổi. Không còn phàn nàn rằng một số người có thể không có chúng nữa.
+* Phiên bản trình biên dịch được cập nhật: `__nameof`, `__addressof`, các bản sửa lỗi và quá nhiều thứ khác nữa để đưa vào đây.
+* `switch` nhanh hơn nhiều.
+* Nhiều cảnh báo hơn cho các sự cố trước đây chưa được phát hiện. Trình biên dịch càng tìm thấy nhiều sự cố, bạn càng cần ít phải làm như vậy.
+* Một công cụ *nâng cấp* để thêm thẻ và `const` vào mã người dùng và sửa một số cảnh báo mới.
+* Đặt tên nhất quán hơn. Mọi bản gốc đều được kiểm tra và so sánh chặt chẽ để đảm bảo mức độ tương đồng và trực quan tối đa trong việc đặt tên.
+* Đã thêm `{Float, _}:...` ở mọi nơi. Điều này có nghĩa là gì? Nghĩa là không còn `format()`\*\* nữa - hãy nghĩ đến y_va nhưng theo cách gốc.
+* `-O2`, mức tối ưu hóa pawn cao nhất, hoạt động khi sử dụng trình biên dịch và VM mới. Một số include có thể cần được cập nhật, nhưng một số đã có. Để hỗ trợ việc đó...
+* Macro `__optimisation` đã được thêm vào để mã có thể tự cấu hình khi biên dịch bằng `-O2`.
+
+Tài liệu về bản cập nhật bao gồm:
+
+https://github.com/openmultiplayer/omp-stdlib
+
+Tài liệu về trình biên dịch mới:
+
+https://github.com/openmultiplayer/compiler/
+https://github.com/pawn-lang/compiler/
+
+Tài liệu về qawno:
+
+https://github.com/openmultiplayer/qawno/
+
+Tài liệu về công cụ nâng cấp:
+
+https://github.com/openmultiplayer/upgrade
+
+\* Hầu như tất cả chúng.
+\*\* Hầu như không còn `format()` nữa.
+
+## SDK
+
+Pawn là cách viết chế độ lâu đời và vẫn chính thức cho máy chủ của bạn. Nó sẽ không biến mất, nhưng đối với những ai muốn kiểm soát nhiều hơn, cuối cùng chúng tôi cũng sẽ phát hành SDK đầy đủ (Phần mềm *Phát triển *K*it). Đây là giao diện C++ cho máy chủ, giao diện giống với giao diện được sử dụng bởi tất cả các thành phần tạo nên mã open.mp cốt lõi. Bạn cũng có thể làm bất cứ điều gì chúng có thể làm (so với các plugin, vốn chỉ được thiết kế để cung cấp các chức năng cho pawn, không phải chế độ viết).
+
+Chúng tôi đang tiến hành một số tài liệu, thật không may là phải mất thời gian. Nhưng trong thời gian chờ đợi, chúng tôi có một số thành phần mẫu dành cho những ai muốn bắt tay ngay vào làm. Đây đều là các mẫu mà bạn có thể xây dựng và chuyển từ cơ bản không có gì thành một thành phần hoạt động đầy đủ với hầu hết các tính năng phổ biến:
+
+https://github.com/openmultiplayer/empty-template
+https://github.com/openmultiplayer/basic-template
+https://github.com/openmultiplayer/pawn-template
+https://github.com/openmultiplayer/full-template
+
+Một vài thuật ngữ giúp bạn bắt đầu, để bạn có thể hiểu được những gì mình đang đọc:
+
+* *Component* - Một phần riêng lẻ hợp lý của máy chủ, như đối tượng hoặc vật phẩm nhặt được. Những thứ bạn không cần thì không cần phải tải.
+* *Extension* - Mã mở rộng một đoạn mã khác. Bạn có thể viết phần mở rộng thành phần, nhưng phần mở rộng phổ biến nhất là phần mở rộng của người chơi, định nghĩa một số cấu trúc dữ liệu được liên kết với người chơi ngoài tất cả dữ liệu thông thường của họ như sức khỏe và vũ khí.
+* *UID* - *U*nique *ID*entifier, một số biểu thị thành phần của bạn và chỉ thành phần của bạn. Điều này luôn bắt buộc và có thể lấy tại đây: http://open.mp/uid
+* *Entity* - Một thứ, thường là thứ mà người chơi có thể tương tác và bạn có thể có rất nhiều. Đối tượng là thực thể, nhưng những người chơi khác cũng là thực thể, thậm chí các lệnh trong bộ xử lý cũng có thể được gọi là thực thể.
+* *Pool* - Thứ gì đó chứa các thực thể. Khi bạn có nhiều, bạn cần có thể truy cập chúng theo tên hoặc ID theo một cách nào đó, đây chính là chức năng của nhóm.
+* *Interface* - Các thành phần sử dụng một lớp cơ sở trừu tượng làm giao diện. Điều này khai báo các phương thức mà một thành phần có, nhưng không chứa mã cho các phương thức. Các giao diện được truyền xung quanh để các thành phần có thể giao tiếp với nhau, nhưng các triển khai được giữ riêng tư.
+* *SDK* - Bộ sưu tập tất cả các giao diện được máy chủ lõi xác định.
+* *ABI* - Một *A*pplication *B*inary *I*nterface là cách mã biên dịch giao tiếp với mã biên dịch khác. Các giao diện do SDK xuất ra là *ABI ổn định*, nghĩa là sử dụng hai thành phần được biên dịch tại các thời điểm khác nhau vẫn sẽ hoạt động cùng nhau.
+* *pawn-natives* - Thư viện mà tất cả các khai báo gốc được xây dựng trên đó. Sử dụng trình bao bọc có tên là `SCRIPT_API` xung quanh thư viện này: https://github.com/openmultiplayer/pawn-natives
+* *Event* - Một thứ gì đó xảy ra bên ngoài. Những thứ như người chơi kết nối và nhập lệnh là các sự kiện. Bất kỳ thành phần nào cũng có thể xác định các sự kiện và cho các thành phần khác biết khi nào các sự kiện đó xảy ra.
+* *Handler* - Một thành phần muốn biết khi nào một sự kiện xảy ra.
+
+Nếu bạn có thắc mắc, nơi tốt nhất có lẽ là diễn đàn hoàn toàn mới (đã được khôi phục):
+
+https://forum.open.mp/
+
+## Features
+
+Bên cạnh tất cả các tính năng mới được công bố cho pawn, có một số tính năng mới (và mới được công bố) trong máy chủ:
+
+* Khu vực băng đảng theo người chơi, như trong YSF.
+* Lấy đồ theo người chơi, cũng như trong YSF.
+* `AttachPlayerObjectToPlayer`.
+* Hỗ trợ PawnPlus tốt hơn.
+* `:memory:` và các tên đặc biệt khác được hỗ trợ trong SQLite.
+* Cờ mở SQLite.
+* Tùy chọn cấu hình `exclude` để không tải một số thành phần nhất định.
+* Hiển thị lỗi phân tích cú pháp cấu hình, không chỉ âm thầm thất bại.
+* Kiểm tra phiên bản chính của SDK, trong trường hợp chúng tôi thực hiện các thay đổi lớn trên máy chủ (hy vọng là chúng tôi sẽ không làm vậy).
+
+## Fixes
+
+Có một vài lỗi mới được đưa vào bản beta 11 và một vài lỗi nhỏ còn sót lại từ trước. Các lỗi đã được sửa bao gồm:
+
+* `funcidx` đã đăng ký cảnh báo.
+* Các plugin GDK (streamer, v.v.) thiếu các bản gốc.
+* Sự cố ngẫu nhiên trên GMX.
+* Đôi khi các lệnh gọi lại GDK không được gọi.
+* Không ghi nhật ký khi được yêu cầu trong thành phần SQLite.
+* Một số cài đặt không được đặt lại trên GMX.
+* Các NPC đã kết nối khi có nhiều việc được thực hiện cùng một lúc.
+* `.so` vẫn cần thiết trong tên plugin cũ của Linux.
+
+## Links
+
+Đầu tiên, tất nhiên, là phiên bản máy chủ mới:
+
+https://github.com/openmultiplayer/open.mp/releases
+
+Thứ hai, diễn đàn đã hoạt động trở lại. Hãy truy cập vào đó để biết tất cả các câu hỏi của bạn:
+
+https://forum.open.mp/
+
+Hoặc nếu bạn thích:
+
+https://vk.com/open_mp
+
+Tiếp theo, mặc dù đã được đề nghị một vài lần, chúng tôi đã từ chối mọi khoản tiền cho đến thời điểm này; vì chúng tôi cảm thấy không đúng cho đến khi chúng tôi chứng minh được năng lực của mình bằng một bản phát hành. Với bài đăng này, thời điểm đó đã đến, vì vậy nếu bất kỳ ai muốn giúp đỡ chúng tôi (tất cả các khoản quyên góp sẽ dành cho cơ sở hạ tầng và công việc phát triển khách hàng trong tương lai), chúng tôi sẽ rất cảm kích:
+
+https://www.patreon.com/open_mp
+https://opencollective.com/openmultiplayer
+
+Và tất nhiên mọi thứ vẫn đang trong quá trình phát triển tích cực, vì vậy hãy thường xuyên kiểm tra tất cả các liên kết ở trên để xem chúng tôi có gì mới.
