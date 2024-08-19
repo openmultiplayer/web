@@ -1,0 +1,35 @@
+---
+title: Turfs (formerly gangzones) module
+date: "2019-10-19T04:20:00"
+author: J0sh
+---
+
+Xin chào! Tôi vừa hoàn thành việc triển khai Turf của chúng ta vào máy chủ và tôi nghĩ đến việc đăng tổng quan về mô-đun này và để cho thấy chúng ta chưa thoát hay gì cả!
+
+```pawn
+// Tạo Turf. Có thể truyền playerid để biến nó thành turf của người chơi.
+native Turf:Turf_Create(Float:minx, Float:miny, Float:maxx, Float:maxy, Player:owner = INVALID_PLAYER_ID);
+
+// Phá hủy turf.
+native Turf_Destroy(Turf:turf);
+
+// Hiển thị Turf cho một hoặc nhiều người chơi.
+// Sẽ gửi cho tất cả người chơi nếu playerid = INVALID_PLAYER_ID.
+native Turf_Show(Turf:turf, colour, Player:playerid = INVALID_PLAYER_ID);
+
+// Ẩn Turf khỏi người chơi hoặc nhiều người chơi.
+// Sẽ gửi cho tất cả người chơi nếu playerid = INVALID_PLAYER_ID.
+native Turf_Hide(Turf:turf, Player:playerid = INVALID_PLAYER_ID);
+
+// Làm sáng Turf cho một hoặc nhiều người chơi.
+// Sẽ gửi đến tất cả người chơi nếu playerid = INVALID_PLAYER_ID.
+native Turf_Flash(Turf:turf, colour, Player:playerid = INVALID_PLAYER_ID);
+
+// Ngăn Turf nhấp nháy cho người chơi.
+// Sẽ gửi đến tất cả người chơi nếu playerid = INVALID_PLAYER_ID.
+native Turf_StopFlashing(Turf:turf, Player:playerid = INVALID_PLAYER_ID);
+```
+
+Rõ ràng là điều này khác với API truyền thống, nhưng đừng lo, sẽ có các trình bao bọc cho loại nội dung này để đảm bảo rằng một tập lệnh bình thường có thể được biên dịch lại mà không có vấn đề gì và không cần chỉnh sửa.
+
+Một sự thật quan trọng khác mà bạn có thể muốn biết là mọi bãi cỏ đều nằm trong cùng một hồ bơi và có tối đa 4.294.967.295 bãi cỏ được tạo ra từ tập lệnh. Tuy nhiên, máy khách chỉ có thể xử lý 1024 bãi cỏ cùng một lúc.

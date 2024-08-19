@@ -1,0 +1,46 @@
+---
+title: Timers module
+date: "2019-05-22T03:15:00"
+author: Y_Less
+---
+
+Đây là bản xem trước một trong những mô-đun được cải tiến mà chúng tôi đã thực hiện, dành cho bộ đếm thời gian trong open.mp:
+
+```pawn
+native SetTimer(const func[], msInterval, bool:repeat) = SetTimerEx;
+native SetTimerEx(const func[], msInterval, bool:repeat, const params[], GLOBAL_TAG_TYPES:...);
+native KillTimer(timer) = Timer_Kill;
+
+// CreateTimer
+native Timer:Timer_Create(const func[], usDelay, usInterval, repeatCount, const params[] = "", GLOBAL_TAG_TYPES:...);
+
+// KillTimer
+native bool:Timer_Kill(Timer:timer);
+
+// Trả về thời gian cho đến lần gọi tiếp theo.
+native Timer_GetTimeRemaining(Timer:timer);
+
+// Lấy số lần gọi còn lại để thực hiện (0 là không giới hạn).
+native Timer_GetCallsRemaining(Timer:timer);
+
+// Lấy tham số `repeatCount`.
+native Timer_GetTotalCalls(Timer:timer);
+
+// Lấy tham số `usInterval`.
+native Timer_GetInterval(Timer:timer);
+
+// Đặt lại thời gian còn lại cho đến lần gọi tiếp theo đến `usInterval`.
+native bool:Timer_Restart(Timer:timer);
+```
+
+Hai cái đầu tiên chỉ dành cho khả năng tương thích ngược, phần còn lại là API được cải thiện:
+
+```pawn
+native Timer:Timer_Create(const func[], usDelay, usInterval, repeatCount, const params[] = "", GLOBAL_TAG_TYPES:...);
+```
+
+- `func` - Khá rõ ràng; phải gọi cái gì.
+- `usDelay` - Một lần nữa rõ ràng, độ trễ trước khi gọi (tính bằng micro giây).
+- `usInterval` - Đặt lại `usDelay` thành gì sau lần gọi đầu tiên. Vì vậy, nếu bạn muốn hẹn giờ theo giờ mỗi giờ, nhưng hiện tại là 8:47 sáng, lệnh gọi sẽ là `Timer_Create("OnTheHour", 780 SECONDS, 3600 SECONDS, 0);`
+- `repeatCount` - Không giống như các hàm cũ, chỉ là "một lần" hoặc "mãi mãi", thay vào đó, hàm này sẽ lấy số lần gọi hàm. "một lần" sẽ là `1`, `500` sẽ dừng sau 500 lần gọi và (ngược lại với API cũ) `0` nghĩa là "mãi mãi".
+- `GLOBAL_TAG_TYPES` - Giống như `{Float, ...}`, nhưng có nhiều thẻ hơn.
