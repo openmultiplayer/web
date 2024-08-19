@@ -3,12 +3,54 @@ title: Changelog
 description: Tiến trình phát triển open.mp và nhật ký thay đổi.
 ---
 
-## **[v1.2.0.2670](https://github.com/openmultiplayer/open.mp/releases/tag/v1.2.0.2670) (Mới nhất)**
+## **[v1.3.1.2748](https://github.com/openmultiplayer/open.mp/releases/tag/v1.3.1.2748) (Mới nhất)**
+
+Phiên bản mới của máy chủ open.mp cuối cùng cũng đã ra mắt, đã có rất nhiều bản sửa lỗi, cải thiện hiệu suất và một vài bổ sung.
+
+Trình khởi chạy của chúng tôi hiện cũng đã nhận được bản cập nhật mới mà bạn có thể nhận được chỉ bằng cách mở trình khởi chạy của mình và cập nhật thông qua hộp thoại cập nhật. Để biết nhật ký thay đổi, vui lòng đọc tại đây: https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0
+
+### Server
+
+**Tính năng mới:**
+
+- Thêm biến cấu hình logo máy chủ vào [config.json](server/config.json), cho phép máy chủ đặt logo hiển thị trong trình khởi chạy và trạng thái discord của chúng tôi.
+- Thêm nhiều kiểm tra tính hợp lệ dữ liệu hơn cho phản hồi hộp thoại.
+- Thêm kiểm tra tính hợp lệ cho các hàng menu.
+- Thêm lỗi HTTP có thể đọc được bằng con người.
+- Định nghĩa mới cho khả năng tương thích API SA-MP chung. (`#define SAMP_COMPAT`)
+- Định nghĩa mới để tắt cảnh báo api tập lệnh cũ. (`#define LEGACY_SCRIPTING_API`)
+
+**Sự thay đổi:**
+
+- Xóa OnPlayerConnect và OnPlayerDisconnect không cần thiết khi một tập lệnh phụ (filterscript) được (hủy) tải. Thay vào đó, giới thiệu các lệnh gọi lại [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) và [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer).
+- Xóa một loạt lệnh ngừng sử dụng gốc của pawn khỏi các cảnh báo thời gian chạy.
+- Kiểm tra tính hợp lệ của URL CDN.
+- Dừng phát đồng bộ hóa khán giả.
+- Giá trị mặc định cho sức khỏe và áo giáp.
+- Cải thiện hiệu suất để phản hồi RPC Điểm và Ping. (bảng điểm)
+- Thay đổi ô vũ khí không hợp lệ thành `-1`
+
+**Sửa lỗi:**
+
+- Sửa lỗi sập RakNet khét tiếng mà chúng tôi đã xử lý từ đầu, ảnh hưởng đến một số máy chủ.
+- Sửa lỗi chuỗi không hiển thị trong một số trường hợp hiếm hoi khi sử dụng định dạng.
+- Sửa lỗi crashdetect không tìm thấy tên tệp và số dòng khi tải nhiều hơn một tập lệnh.
+- Sửa lỗi nhiều lỗi sập RakNet và quản lý bộ nhớ trong an toàn hơn.
+- Sửa một số sự cố kết nối và dọn dẹp nhóm người chơi nội bộ phù hợp.
+- Sửa lỗi hàm [GetGameText](scripting/functions/GetGameText) đưa ra giá trị không chính xác/bị hỏng.
+- Sửa lỗi phiên bản windows open.mp không tải khi cửa sổ của người dùng được đặt thành ngôn ngữ có tên không phải ASCII.
+- Sửa lỗi tiêu đề callback trong các tệp `qawno/filterscript.new` và `qawno/gamemode.new`.
+
+<br />
+
+<hr />
+
+## [v1.2.0.2670](https://github.com/openmultiplayer/open.mp/releases/tag/v1.2.0.2670)
 
 Chúng tôi khuyến khích mọi máy chủ open.mp cập nhật lên phiên bản này. Không chỉ có những cải tiến đáng chú ý về hiệu suất mà còn có **các bản sửa lỗi bảo mật quan trọng**.
 ### Server
 
-**Thêm:**
+**Tính năng mới:**
 
 - Biến cấu hình mới để thiết lập biểu ngữ và liên kết mời tham gia Discord sẽ được hiển thị trong [open.mp launcher](https://github.com/openmultiplayer/launcher/releases/latest).
 - Biến cấu hình mới cho tin nhắn tham gia. (`logging.log_connection_messages`)
@@ -41,12 +83,12 @@ Bạn có thể tìm thấy tại https://github.com/openmultiplayer/launcher/re
 
 ### Server
 
-**Thêm:**
+**Tính năng mới:**
 
 - Phiên bản x64 của omp-server.
 - Tự động thêm `.so` vào tên plugin.
 
-**Thay đổi:**
+**Sự thay đổi:**
 
 - Trả về `estimatedTime` trong hàm `Move(Player)Object`.
 
@@ -149,7 +191,7 @@ Phiên bản ứng viên phát hành 2 (RC2) của máy chủ open.mp.
 
 ### Server
 
-**Thêm:**
+**Tính năng mới:**
 
 - Đã thêm `{Float,_}:...` vào các hàm `AddMenuItem`, `Create3DTextLabel`, `CreateMenu`, `CreatePlayer3DTextLabel`, `CreatePlayerTextDraw`, `GameTextForAll`, `GameTextForPlayer`, `PlayerTextDrawSetString`, `SendClientMessage`, `SendClientMessageToAll`, `SendRconCommand`, `SetMenuColumnHeader`, `SetObjectMaterialText`, `SetPlayerObjectMaterialText`, `SetPVarString`, `SetSVarString`, `ShowPlayerDialog`, `TextDrawCreate`, `TextDrawSetString`, `Update3DTextLabelText`, `UpdatePlayer3DTextLabelText`. Tất cả chúng đều được định dạng ngay bây giờ.
 
