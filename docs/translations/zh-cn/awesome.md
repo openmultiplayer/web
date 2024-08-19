@@ -1,152 +1,160 @@
 ---
-title: 一些令人惊叹的库
-description: 精选的有帮助的工具、库和插件列表，供SA-MP开发选择。
+title: Awesome
+description: 用于 SA-MP 开发的实用工具、库、游戏模式、脚本和插件的精选列表.
 ---
 
 ## 工具
 
-- **[Community Compiler](https://github.com/pawn-lang/compiler/)** - 一个大范围更新的编译器版本，修正并改进了很多地方。
-- **[sampctl](http://sampctl.com/)** - 用于安装库和运行服务器的包管理器。
-- **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner/)** - 用于直接从命令行(不需要`server.cfg`)运行服务器轻量级版本的工具，用于测试插件。
-- **[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)** - 使用模板开发插件会更容易。
-- **[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)** - 用这个模板库让你开发插件变得更快，更容易。
-- **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - 测试你的脚本(代码片段、PoC、调试等)并将其共享给他人的平台。
-- **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)** - Sublime Text 编辑器的 Pawn 自动补全插件。
-- **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn/)** - Visual Studio Code 编辑器的 Pawn 自动补全插件。
-- **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads/)** - 用于创建地盘和其他相关东西的编辑器。
-- **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - 广受欢迎的 SA:MP 地图编辑器。
+- **[Community Compiler](https://github.com/pawn-lang/compiler)** - 大幅更新的编译器版本，包含大量修复和增强功能.
+- **[sampctl](https://github.com/Southclaws/sampctl)** - 用于安装库和运行服务器的软件包管理器.
+- **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)** - 直接从命令行运行轻量级版本服务器的工具（无需 server.cfg），用于测试插件.
+- **[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)** - 通过模板文件使制作插件更简单.
+- **[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)** - 使用该模板库，可轻松快速地制作自己的插件.
+- **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - 测试脚本（片段、PoC、调试等）并与他人分享的地方.
+- **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)** - Sublime Text 的pawn自动补全功能.
+- **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Visual Studio Code 的pawn自动补全功能.
+- **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - 区域编辑器，用于制作区域等内容.
+- **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - SA:MP 常用的地图编辑器.
+- **[open.mp Server Browser](https://github.com/adib-yg/openmp-server-browser)** - open.mp 服务器浏览器桌面图形用户界面.
 
 ## 库
 
-- **[samp-stdlib](https://github.com/pawn-lang/samp-stdlib/)** - 默认库文件的更新版本。正确的`常量(const)`，文档化且更完整。
-- **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes/)** - 针对大量 SA:MP 服务器错误的优化修复。即插即用。
-- **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes/)** - SA:MP/Pawn 历史最悠久、规模最大、经过大量测试且支持性最好的库，提供了大量的新游戏和语言功能。
-- **[foreach](https://github.com/Open-GTO/foreach)** - foreach 独立库(非 y_iterate 版本)。
-- **[amx_assembly](https://github.com/Zeex/amx_assembly/)** - 对 Pawn 脚本自身的低级别访问。
-- **[md-sort](https://github.com/oscar-broman/md-sort)** - 对 Pawn 中的多维数组进行排序。修改数组的内部指针，而不是复制数据。
-- **[indirection](https://github.com/Y-Less/indirection/)** - 间接传递指针和调用函数的系统，使用抽象方法进行自定义调用。
-- **[code-parse.inc](https://github.com/Y-Less/code-parse.inc/)** - 在编译时解析并自定义 Pawn 代码。
-- **[Extended Vehicle Information](https://github.com/Vince0789/sa-mp-extended-vehicle-information/)** - 使用 SQLite 并且包含大量单人模式的载具标志。
-- **[sqlitei](https://github.com/oscar-broman/sqlitei)** - SA-MP SQLite 的高级 API 函数。
-- **[weapon-config](https://github.com/oscar-broman/samp-weapon-config)** - 更一致和反应更灵敏的伤害系统，有许多新特性。
-- **[samp-geoip](https://github.com/Southclaws/SAMP-geoip/)** - 基于 IP 地址的地理信息。
-- **[progress2](https://github.com/Southclaws/progress2/)** - 以进度条显示时间、生命值、载具燃料等。
-- **[weapon-data](https://github.com/Southclaws/samp-weapon-data/)** - 微调，可定制的武器数据库。
-- **[MV_Youtube](https://github.com/MichaelBelgium/MV_Youtube)** - 转换 Youtube 影片至音频流的 API。
-- **[MySQL Prepared Statements](https://github.com/PatrickGTR/MySQL-Prepared-Statements)** - 模拟 PAWN MySQL 插件的准备语句。
-- **[samp-server-weapons](https://github.com/Brunoo16/samp-server-weapons)** - 武器完全由服务器控制。
-- **[actor_robbery](https://github.com/PatrickGTR/actor_robbery)** - 灵感来自 GTAV 商店抢劫，该库模仿了它!
-- **[samp-aviation](https://github.com/Southclaws/samp-aviation/)** - 在 SA:MP 中自动驾驶。
-- **[samp-logger](https://github.com/Southclaws/samp-logger)** - 简单的结构化日志记录器，它提供了一组简单的日志记录和调试功能。
-- **[TDW Recursion Scanner](https://github.com/tdworg/samp-include-rscan)** - 在代码中查找递归的库。
-- **[easyDialog](https://github.com/Awsomedude/easyDialog)** - 让对话框更容易使用。
-- **[mdialog](https://github.com/Open-GTO/mdialog)** - 现代对话框系统，类似于 easyDialog。
-- **[Model Sizes Plus](https://github.com/Crayder/Model-Sizes-Plus)** - 更新、更高级、更精确的旧模型大小的库。
-- **[physics.inc](https://github.com/uPeppe/physics.inc)** - 模拟 2D 和 3D 物理(逼真的运动，碰撞等)。
-- **[samp-async-dialogs](https://github.com/AGraber/samp-async-dialogs)** - 使用 PawnPlus 任务处理异步对话框。
-- **[speedcap.inc](https://github.com/openmultiplayer/archive/blob/master/includes/speedcap.inc)** - 一个控制车速的库。
-- **[SA:MP Command Guess](https://github.com/Kirima2nd/samp-command-guess)** - 使用 Levenshtein 算法函数实现的 SA：MP 的指令猜测器。
-- **[vending](https://github.com/wuzi/vending)** - 面向 SA-MP 的服务器端自动售货机。
-- **[strlib.inc](https://github.com/oscar-broman/strlib/)** - SA:MP 中的字符串函数。
-- **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - 一系列有用的数学函数列表。
-- **[rotations.inc](https://github.com/sampctl/rotations.inc)** - 由 Nero_3D 开发的 rotations.inc，提供了一系列有用的旋转函数列表。
-- **[SA-MP Distance Functions](https://github.com/Y-Less/samp-distance)** - 一系列有用的距离检查函数。
-- **[New SA-MP callbacks](https://github.com/emmet-jones/New-SA-MP-callbacks)** - 一系列有用的新回调函数。
-- **[Alternative Dialogs](https://github.com/NexiusTailer/Alternative-Dialogs)** - 新设计的 文本绘画 对话框。
-- **[eSelection](https://github.com/TommyB123/eSelection)** - 增加了在 SA-MP 游戏模式中创建动态模式选择菜单的能力。
-- **[mSelection](https://github.com/alextwothousand/mSelection)** - 同 eSelection，但风格不同。
+- **[samp-stdlib](https://github.com/pawn-lang/samp-stdlib)** - 更新版本的默认包含文件. const-修正、文档化且完整.
+- **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - 针对大量SAMP服务器漏洞的极致优化修复. 即插即用.
+- **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - SA:MP/pawn最古老、最大、测试最充分、支持最好的库，提供大量新的游戏和语言特性.
+- **[foreach](https://github.com/Open-GTO/foreach)** - foreach独立包含文件（非y_iterate版本）.
+- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - 低级别访问pawn脚本本身.
+- **[md-sort](https://github.com/oscar-broman/md-sort)** - 在Pawn中排序多维数组. 修改数组的内部指针而非复制数据.
+- **[indirection](https://github.com/Y-Less/indirection)** - 传递指针和间接调用函数的系统，带有自定义调用的抽象方法.
+- **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - 编译时解析和自定义pawn代码.
+- **[Extended Vehicle Information](https://github.com/Vince0789/sa-mp-extended-vehicle-information)** - 将大量单人游戏中的车辆标志导入SQLite数据库.
+- **[sqlitei](https://github.com/oscar-broman/sqlitei)** - SA-MP SQLite功能的高级API.
+- **[weapon-config](https://github.com/oscar-broman/samp-weapon-config)** - 更加一致和响应快速的伤害系统，具有许多新特性.
+- **[samp-geoip](https://github.com/Southclaws/SAMP-geoip)** - 基于IP地址的地理信息.
+- **[progress2](https://github.com/Southclaws/progress2)** - 显示时间、健康、车辆燃料和其他信息的进度条.
+- **[weapon-data](https://github.com/Southclaws/samp-weapon-data)** - 精细调整和可定制的武器数据.
+- **[MV_Youtube](https://github.com/MichaelBelgium/MV_Youtube)** - 用于音频流的YouTube转换API.
+- **[MySQL Prepared Statements](https://github.com/PatrickGTR/MySQL-Prepared-Statements)** - 为PAWN MySQL插件模拟预准备语句.
+- **[samp-server-weapons](https://github.com/Brunoo16/samp-server-weapons)** - 由服务器完全控制的武器.
+- **[actor_robbery](https://github.com/PatrickGTR/actor_robbery)** - 受GTA V商店抢劫的启发，actor_robbery.inc模仿它!
+- **[samp-aviation](https://github.com/Southclaws/samp-aviation)** - 基于俯仰的高度和基于滚转的航向自动驾驶仪的基础功能.
+- **[samp-logger](https://github.com/Southclaws/samp-logger)** - 简单的结构化日志记录器，提供一组简单的日志记录和调试功能.
+- **[TDW Recursion Scanner](https://github.com/tdworg/samp-include-rscan)** - 一个用于查找代码中递归的库.
+- **[easyDialog](https://github.com/Awsomedude/easyDialog)** - 使对话框更易于使用.
+- **[mdialog](https://github.com/Open-GTO/mdialog)** - 类似于easyDialog的现代对话框系统.
+- **[Model Sizes Plus](https://github.com/Crayder/Model-Sizes-Plus)** - 旧版本modelsizes包含文件的更新、增强、更加精确的版本.
+- **[physics.inc](https://github.com/uPeppe/physics.inc)** - 模拟2D和3D物理（真实的运动、碰撞等）.
+- **[samp-async-dialogs](https://github.com/AGraber/samp-async-dialogs)** - 通过PawnPlus任务异步处理对话框.
+- **[speedcap.inc](https://github.com/openmultiplayer/archive/blob/master/includes/speedcap.inc)** - 用于控制车辆速度的包含文件.
+- **[SA:MP Command Guess](https://github.com/Kirima2nd/samp-command-guess)** - 使用Levenshtein距离函数的SA命令猜测器.
+- **[vending](https://github.com/wuzi/vending)** - SA-MP的服务端的贩卖机.
+- **[strlib](https://github.com/oscar-broman/strlib)** - 一组有用的字符串函数.
+- **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - 一组有用的数学函数.
+- **[rotations.inc](https://github.com/sampctl/rotations.inc)** - Nero_3D的rotations.inc提供的一组有用的旋转函数.
+- **[SA-MP Distance Functions](https://github.com/Y-Less/samp-distance)** - 一组有用的距离检查函数.
+- **[New SA-MP callbacks](https://github.com/emmet-jones/New-SA-MP-callbacks)** - 一组有用的新回调函数.
+- **[Alternative Dialogs](https://github.com/NexiusTailer/Alternative-Dialogs)** - 新设计的Textdraw对话框.
+- **[eSelection](https://github.com/TommyB123/eSelection)** - 在SA-MP游戏模式中创建动态模型选择菜单的功能.
+- **[mSelection](https://github.com/alextwothousand/mSelection)** - 与eSelection相同，但风格不同.
+- **[RGB-Textdraw](https://github.com/adib-yg/SAMP-RGB-Textdraw)** - 为Textdraw添加RGB颜色.
+- **[LangPlus](https://github.com/mysy00/LangPlus)** - open.mp服务器的多语言库.
 
-## 指令处理
+## 命令处理器
 
-- **[I-ZCMD](https://github.com/YashasSamaga/I-ZCMD/)** - ZCMD 的改良版本。
-- **[Pawn.CMD](https://github.com/katursis/Pawn.CMD/)** - 性能最强的指令处理库。
-- **[y_commands](https://github.com/pawn-lang/YSI-Includes/blob/5.x/YSI_Visual/y_commands.md)** - 来自 YSI Includes 的指令处理器
+- **[I-ZCMD](https://github.com/YashasSamaga/I-ZCMD)** - ZCMD 的改进版本.
+- **[Pawn.CMD](https://github.com/katursis/Pawn.CMD)** - F比其他任何命令处理器都要快.
+- **[y_commands](https://github.com/pawn-lang/YSI-Includes/blob/5.x/YSI_Visual/y_commands.md)** - 来自 YSI 包含文件的命令处理器
 
-## 服务端插件
+## Plugins
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit/)** - 一旦代码稳定，就可以使用它来大大提高速度。
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect/)** - 在测试过程中寻找错误的开发工具。
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - SA-MP 服务器的性能分析器插件。
-- **[sscanf](https://github.com/Y-Less/sscanf/)** - 将字符串转换为多个值、整数、浮点数、玩家等。
-- **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL/)** - 将服务器连接到 MySQL 数据库。
-- **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin/)** - 绕过许多 SA:MP 限制，如物体和拾取工具。
-- **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - 在服务器启动时检查原生函数(natives)。
-- **[FCNPC](https://github.com/ziggi/FCNPC)** - 一个用于 SA-MP 服务器的插件，它为现有的标准 NPC 增加了许多功能。
-- **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - 允许你从根文件夹(不限于脚本文件服务器目录)管理文件和文件夹。
-- **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - 允许您分析 RakNet 流量。
-- **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - 一个 SA-MP 插件，提供精确的计时器，用 Rust 编写。
-- **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - 使用新的构造器、数据类型和编程技术扩展了 Pawn 脚本语言的可能性。
-- **[PAWN memory access](https://github.com/BigETI/pawn-memory)** - 允许在 Pawn 中分配和释放堆内存。
-- **[Native Fallback](https://github.com/IllidanS4/NativeFallback)** - 一个 SA-MP 插件，给未注册的原生函数提供了回调函数。
-- **[YSF](https://github.com/IllidanS4/YSF)** - 一个插件，其目的是最大限度地利用服务器，主要是内存编辑和钩子。
-- **[SKY](https://github.com/oscar-broman/SKY)** - 这个插件提供了一些底层函数，让 Pawn 脚本可以做一些强大的事情。
-- **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - 在 Pawn 中添加了对正则表达式的支持。
-- **[pawn-scraper](https://github.com/Sreyas-Sreelal/pawn-scraper)** - 一个强大的 scraper 插件，提供了在 pawn 中使用 html_parser 和 css 选择器的接口。
-- **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - 允许您在 sa-mp 游戏模式中使用 TOTP 身份验证。
-- **[DNS Plugin](https://github.com/samp-incognito/samp-dns-plugin)** - 这个插件提供了 DNS 查找和反向 DNS 查找功能。
-- **[MapAndreas](https://github.com/Southclaws/samp-plugin-mapandreas)** - 允许您加载不同高度的地图，并检查最小高度的 x,y 坐标。
-- **[ColAndreas](https://github.com/Pottus/ColAndreas)** - 使用子弹物理引擎库，创建了一个圣安地列斯世界的模拟。
-- **[PathFinder](https://bitbucket.org/Pamdex/pathfinder/src/master)** - 你可以计算出圣安地列斯地图上从 A 点到 B 点的路线。
-- **[Custom Query Flood Check](https://github.com/spmn/samp-custom-query-flood-check)** - 编写自定义保护来防止洪水查询攻击。
-- **[sampml](https://github.com/YashasSamaga/sampml)** - 简化的机器学习工具包和相关的 SAMP 项目(自瞄检测)。
-- **[TgConnector](https://github.com/Sreyas-Sreelal/tgconnector)** - 一个 Telegram 连接器插件，帮助通过 SA-MP 与 Telegram 机器人互动。
-- **[Discord Connector](https://github.com/maddinat0r/samp-discord-connector)** - 在脚本中轻松制作 Discord 机器人。
-- **[TSConnector](https://github.com/maddinat0r/samp-tsconnector)** - 允许您从 Pawn 脚本中控制 Teamspeak3 服务器。
-- **[IRC Plugin](https://github.com/samp-incognito/samp-irc-plugin)** - 允许通过 SA-MP 服务器创建和管理 IRC 机器人。
-- **[pawn-requests](https://github.com/Southclaws/pawn-requests)** - 提供一个 API，用于与支持文本和 JSON 数据类型的 HTTP(S)API 进行交互。
-- **[pawn-redis](https://github.com/Southclaws/pawn-redis)** - 授予对快速内存数据库和其他程序之间的异步消息通道的访问权限。
-- **[Chrono](https://github.com/Southclaws/pawn-chrono)** - 用于处理日期和时间的现代 Pawn 库。
-- **[rustext](https://github.com/ziggi/rustext)** - 修复 SA-MP 的俄语显示插件：游戏文字、文本绘画 和 菜单 的。
-- **[Advanced SA NickName](https://github.com/KrYpToDeN/Advanced-SA-NickName)** - 支持任何字符的用户名插件。
-- **[SAMPSON](https://github.com/Hual/SAMPSON)** - 一个用于 SA-MP 的 JSON 插件。
+- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - 代码稳定后，使用此方法可大大加快代码的运行速度.
+- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - 在测试过程中查找错误的开发工具.
+- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - 用于 SA-MP 服务器的性能剖析器插件.
+- **[sscanf](https://github.com/Y-Less/sscanf)** - 将字符串转换为多个值、整数、浮点数、玩家等.
+- **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - 将服务器连接到 MySQL 服务器.
+- **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - 绕过许多 SA:MP 限制，如objects和pickups.
+- **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - 服务器启动时检查本地.
+- **[FCNPC](https://github.com/ziggi/FCNPC)** - 用于 SA-MP 服务器的插件，可为现有的标准 NPC 添加大量功能. 截至 2023 年 1 月，该插件目前无法在 open.mp 中使用.
+- **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - 允许您从根文件夹管理文件和文件夹（使用此插件后，不限于 scriptfiles 服务器目录）.
+- **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - 允许您分析 RakNet 流量.
+- **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - 用 Rust 编写的 SA-MP 插件，提供精确计时器. open.mp 中不需要它，因为 open.mp 已经提供了精确计时器.
+- **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - 通过新的结构、数据类型和编程技术扩展了 Pawn 脚本语言的可能性.
+- **[PAWN memory access](https://github.com/BigETI/pawn-memory)** - 允许在 PAWN 中从堆中分配和释放内存.
+- **[Native Fallback](https://github.com/IllidanS4/NativeFallback)** - 为未注册的本地程序提供回退执行的 SA-MP 插件.
+- **[YSF](https://github.com/IllidanS4/YSF)** - 该插件的目的是从服务器中获取最大的可能性，主要是内存编辑和挂钩. 它的许多功能现已内置在 open.mp 中. 详情前往 [此 Github 问题](https://github.com/openmultiplayer/open.mp/issues/189) 查看功能列表.
+- **[SKY](https://github.com/oscar-broman/SKY)** - 该插件提供底层函数，使 Pawn 脚本能够执行强大的功能.
+- **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - 在 Pawn 中添加对正则表达式的支持.
+- **[pawn-scraper](https://github.com/Sreyas-Sreelal/pawn-scraper)** - 一款功能强大的爬取插件，为在Pawn中使用 html_parsers 和 css 选择器提供了接口.
+- **[TOTP](https://github.com/philip1337/samp-plugin-totp)** - 允许您在 sa-mp 游戏模式中使用 TOTP 身份验证.
+- **[DNS Plugin](https://github.com/samp-incognito/samp-dns-plugin)** - 该插件提供 DNS 查询和 DNS 反向查询功能.
+- **[MapAndreas](https://github.com/Southclaws/samp-plugin-mapandreas)** - 可以加载不同的高度地图，并检查 x、y 坐标的最小高度.
+- **[ColAndreas](https://github.com/Pottus/ColAndreas)** - 创建圣安地列斯世界的模拟. 使用Bullet Physics物理引擎库.
+- **[PathFinder](https://bitbucket.org/Pamdex/pathfinder/src/master)** - 您可以在圣安地列斯地图上计算从 A 点到 B 点的路线.
+- **[Custom Query Flood Check](https://github.com/spmn/samp-custom-query-flood-check)** - 编写自定义保护程序，防止查询泛滥.
+- **[sampml](https://github.com/YashasSamaga/sampml)** - 简化的机器学习工具包和相关的 SAMP 项目（Aimbot 检测）.
+- **[TgConnector](https://github.com/Sreyas-Sreelal/tgconnector)** - 通过 SA-MP 与 telgram 机器人互动的telegram连接器插件.
+- **[Discord connector](https://github.com/maddinat0r/samp-discord-connector)** - 允许您在 PAWN 脚本中控制 Discord 机器人.
+- **[TSConnector](https://github.com/maddinat0r/samp-tsconnector)** - 允许您在 PAWN 脚本中控制 Teamspeak3 服务器.
+- **[IRC Plugin](https://github.com/samp-incognito/samp-irc-plugin)** - 允许通过 SA-MP 服务器创建和管理 IRC 机器人.
+- **[pawn-requests](https://github.com/Southclaws/pawn-requests)** - 提供与 HTTP(S) 应用程序接口交互的 API，支持文本和 JSON 数据类型.
+- **[pawn-redis](https://github.com/Southclaws/pawn-redis)** - 允许访问快速内存数据库和其他程序之间的异步信息通道.
+- **[Chrono](https://github.com/Southclaws/pawn-chrono)** - 用于处理日期和时间的现代 Pawn 库.
+- **[rustext](https://github.com/ziggi/rustext)** - 修复 SA-MP 的俄语文本插件：GameText's、TextDraw's 和 Menu's.
+- **[Advanced SA NickName](https://github.com/KrYpToDeN/Advanced-SA-NickName)** - 支持昵称中的任何符号.
+- **[SAMPSON](https://github.com/Hual/SAMPSON)** - 用于 SA-MP 的 JSON 插件.
+- **[samp-chatbot](https://github.com/SimoSbara/samp-chatbot)** - 用于游戏内人工智能聊天机器人通信的 GTA SAMP 插件.
+- **[SAMP BitStream Crash Fix](https://github.com/AmyrAhmady/samp-bscrashfix)** - 修复了 BitStream 读取超限的问题.
+- **[pawn-json](https://github.com/Southclaws/pawn-json)** - Pawn中的JSON .
 
-## 客户端插件
+## 客户端-服务端 插件
 
-- **[SA-MP+](https://github.com/Hual/SA-MP-Plus)** - 修改了客户端，使用 SA-MP 的软件开发工具包插件与服务器交互并添加新功能。
-- **[CHandling](https://github.com/dotSILENT/chandling)** - 通过修改游戏的默认行为，增加了将车辆分配单独的数据的功能。
-- **[SAMPVOICE](https://github.com/CyberMor/sampvoice)** - 为 SA:MP 服务器实现 Pawn 语言的语音通信系统。
-- **[KeyListener](https://github.com/CyberMor/keylistener)** - 客户端到服务端的插件，用于跟踪用户的任何按键。
-- **[SAMP CEF](https://github.com/ZOTTCE/samp-cef)** - SA:MP 嵌入 CEF 的客户端和服务器插件。
-- **[SAMP_AC_v2](https://github.com/Whitetigerswt/SAMP_AC_v2)** - SA:MP 客户端反作弊。
+- **[SA-MP+](https://github.com/Hual/SA-MP-Plus)** - 使用 SA-MP 插件 SDK 与服务器交互并添加新功能的客户端修改程序.
+- **[CHandling](https://github.com/dotSILENT/chandling)** - 通过修改游戏的默认行为，为单个车辆分配车辆操控数据的功能.
+- **[SAMPVOICE](https://github.com/CyberMor/sampvoice)** - 在SA:MP服务器中使用Pawn语言实现语音通信系统.
+- **[KeyListener](https://github.com/CyberMor/keylistener)** - 用于追踪按键操作的客户端-服务器插件.
+- **[SAMP CEF](https://github.com/ZOTTCE/samp-cef)** - 用于在SA:MP中嵌入CEF的客户端和服务器插件.
+- **[SAMP_AC_v2](https://github.com/Whitetigerswt/SAMP_AC_v2)** -  SA:MP客户端的反作弊插件.
 
 ## 加密插件
 
-- **[whirlpool](https://github.com/Southclaws/samp-whirlpool/)** - 用于 SA:MP 的漩涡加密插件.
-- **[bcrypt](https://github.com/LassiR/bcrypt-samp/)** - 用于 SA:MP 的 Bcrypt 加密插件。
-- **[samp-crypto](https://github.com/alextwothousand/samp-crypto)** - 用于 SA:MP 的加密函数集，如 Argon2、Scrept 和 Bcrypt。
-- **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - 用于 SA:MP 的 SHA512 加密插件。
+- **[whirlpool](https://github.com/Southclaws/samp-whirlpool)** - SA:MP的Whirlpool加密插件.
+- **[SyS' bcrypt Plugin](https://github.com/Sreyas-Sreelal/samp-bcrypt)** - 由Sreyas Sreelal开发的SA:MP bcrypt加密插件.
+- **[lassir's bcrypt Plugin](https://github.com/lassir/bcrypt-samp)** - 由lassir开发的SA:MP bcrypt加密插件.
+- **[samp-crypto](https://github.com/alextwothousand/samp-crypto)** - 提供Argon2、Scrypt和Bcrypt等加密函数的SA:MP插件.
+- **[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)** - SA:MP的SHA512加密插件.
 
-## 游戏开发工具包/软件开发工具包
+## GDK/SDKs
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - 这是开发插件所需的最低要求
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - 为 SA:MP 编写游戏模式的 C/C++语言支持
-- **[SampSharp](https://github.com/ikkentim/SampSharp)** - 为 SA:MP 编写游戏模式的 C# 语言支持
-- **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - 为 SA:MP 编写游戏模式的 C# 语言支持
-- **[sampgo](https://github.com/sampgo/sampgo)** - 为 SA:MP 编写游戏模式的 GO 语言支持
-- **[samp-node](https://github.com/AmyrAhmady/samp-node)** - 为 SA:MP 编写游戏模式的 Javascript,Typescript 语言支持
-- **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - 为 SA:MP 编写游戏模式的 Java 语言支持
-- **[pySAMP](https://github.com/habecker/PySAMP)** - 为 SA:MP 编写游戏模式的 Python 语言支持
-- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - 为 SA:MP 编写插件的 Rust 语言支持
-- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - 为 SA:MP 编写游戏模式的 Lua 语言支持
-- **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - 为 SA:MP 编写游戏模式的 PHP 语言支持
-- **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - 为 SA:MP 编写游戏模式的 D 语言支持
-- **[Kamp](https://github.com/Double-O-Seven/kamp)** - 为 SA:MP 编写游戏模式的 Kotlin 语言支持
+现在你可以使用open.mp在不需要插件的情况下用其他语言编写脚本. 请参阅[此博客文章](https://www.open.mp/blog/release-candidate-1)
+
+- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - 这是开发插件所需的最基本的工具包.
+- **[sampgdk](https://github.com/Zeex/sampgdk)** - 为SA:MP编写游戏模式提供C/C++语言支持
+- **[SampSharp](https://github.com/ikkentim/SampSharp)** - 为SA:MP编写游戏模式提供C#语言支持
+- **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - 为SA:MP编写插件提供C#语言支持
+- **[sampgo](https://github.com/sampgo/sampgo)** - 为SA:MP编写游戏模式/插件提供Go语言支持
+- **[samp-node](https://github.com/AmyrAhmady/samp-node)** - 为SA:MP编写游戏模式提供Javascript/Typescript语言支持
+- **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - 为SA:MP编写游戏模式提供Java语言支持
+- **[pySAMP](https://github.com/habecker/PySAMP)** - 为SA:MP编写游戏模式提供Python语言支持
+- **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - 为SA:MP编写插件提供Rust语言支持
+- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - 为SA:MP编写游戏模式提供Lua语言支持
+- **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - 为SA:MP编写游戏模式提供PHP语言支持
+- **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - 为SA:MP编写游戏模式提供D语言支持
+- **[Kamp](https://github.com/Double-O-Seven/kamp)** - 为SA:MP编写游戏模式提供Kotlin语言支持
 
 ## 游戏模式
 
-- **[Example Gamemode](https://github.com/openmultiplayer/example-gamemodes)** - 与 open.mp 兼容的游戏模式列表。
-- **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - 基于 PvP 生存的游戏模式。
-- **[gta-open](https://github.com/PatrickGTR/gta-open)** - 位于洛圣都的警察与劫匪的游戏模式。
-- **[SF-CnR](https://github.com/zeelorenc/sf-cnr)** - SA:MP 位于圣费耶罗的警察与劫匪的游戏模式。
-- **[Next Generation Roleplay](https://github.com/NextGenerationGamingLLC/SA-MP-Development)** - 次世代游戏责任有限公司的 SA:MP 游戏模式。
-- **[SC-RP](https://github.com/seanny/SC-RP)** - 支持 MySQL 的角色扮演的游戏模式。
+- **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - 基于PvP的生存游戏模式.
+- **[gta-open](https://github.com/PatrickGTR/gta-open)** - 一个基于洛圣都的警察与强盗游戏模式.
+- **[SF-CnR](https://github.com/zeelorenc/sf-cnr)** - 一个基于旧金山的的警察与强盗游戏模式.
+- **[Next Generation Roleplay](https://github.com/NextGenerationGamingLLC/SA-MP-Development)** - The Next Generation Gaming, LLC SA:MP 角色扮演游戏模式.
+- **[SC-RP](https://github.com/seanny/SC-RP)** - 带有MySQL支持的角色扮演游戏模式.
 
-## 过滤脚本
+## 脚本
 
-- **[MapFix](https://github.com/NexiusTailer/MapFix)** - 修复了圣安地列斯地图的纹理错误。
-- **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - SA:MP 的动作浏览工具。
-- **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - 判断玩家是否为安卓用户。
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - 一个 文本绘画 编辑器，它有一些丰富的功能。
-- **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - 先进的地图编辑器，具有很多功能。
-- **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - SA:MP 游戏内地图编辑器。
-- **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - SA:MP 游戏内贴图编辑器，可以让你的纹理达到材质索引 15(16 种材质)，以及设置物体上该材质索引的颜色。
+- **[MapFix](https://github.com/NexiusTailer/MapFix)** - 修复GTA圣安地列斯地图的纹理错误.
+- **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - SA:MP的动作浏览工具.
+- **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - 检查玩家是否使用安卓设备的脚本.
+- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - 一个具有丰富功能的TextDraw编辑器.
+- **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - 功能丰富的高级地图编辑器.
+- **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - SA:MP的游戏内地图编辑器.
+- **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - 这是一个游戏内地图编辑器，允许你为对象的材质索引设置颜色，并对多达16种材质进行纹理设置.
