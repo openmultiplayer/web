@@ -13,48 +13,48 @@ description: 如何为 SA-MP 维基和 open.mp 文档做出贡献.
 
 ![Edit this page link present on each wiki page](images/contributing/edit-this-page.png)
 
-For example, clicking this on [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) takes you to [this page](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) which presents you with a text editor to make changes to the file (assuming you're logged in to GitHub).
+例如，点击 [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) 上的链接会将你带到 [此页面](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) 在那里你可以看到一个文本编辑器用于对文件进行更改（前提是你已登录 GitHub）。
 
-Make your edit and submit a "Pull Request" this means the Wiki maintainers and other community members can review your change, discuss whether it needs additional changes and then merge it.
+进行编辑并提交“Pull Request”，这意味着 Wiki 维护者和其他社区成员可以审查你的更改，讨论是否需要额外的更改，然后将其合并。
 
-## Adding New Content
+## 添加新内容
 
-Adding new content is a little more involved. You can do it two ways:
+添加新内容稍微复杂一些。你可以通过以下两种方式进行操作：
 
-### GitHub Interface
+### GitHub 界面
 
-When browsing a directory on GitHub, there's an Add file button on the top right corner of the file list:
+在 GitHub 上浏览目录时，文件列表右上角有一个“添加文件”按钮：
 
 ![Add file button](images/contributing/add-new-file.png)
 
-You can either upload a Markdown file you've written already or write it directly into the GitHub text editor.
+你可以上传已经编写好的 Markdown 文件，或者直接在 GitHub 文本编辑器中编写。
 
-The file _must_ have a `.md` extension and contain Markdown. For more information about Markdown, check out [this guide](https://guides.github.com/features/mastering-markdown/).
+文件 必须 以 `.md` 扩展名结尾，并且包含 Markdown 格式的内容。关于 Markdown 的更多信息，请查看 [此指南](https://guides.github.com/features/mastering-markdown/).
 
-Once that's done, hit "Propose new file" and a Pull Request will be opened for review.
+完成后，点击“Propose new file”按钮，一个 Pull Request 将被打开以供审查。  
 
 ### Git
 
-If you want to use Git, all you need to do is clone the Wiki repository with:
+如果你想使用 Git，你只需克隆 Wiki 仓库：
 
 ```sh
 git clone https://github.com/openmultiplayer/wiki.git
 ```
 
-Open it in your favourite editor. I recommend Visual Studio Code as it has some great tooling for editing and formatting Markdown files. As you can see, I'm writing this using Visual Studio Code!
+在你喜欢的编辑器中打开它。我推荐使用 Visual Studio Code，因为它提供了很好的工具来编辑和格式化 Markdown 文件。如你所见，我正在使用 Visual Studio Code 编写这篇文章！
 
 ![Visual Studio Code markdown preview](images/contributing/vscode.png)
 
-I recommend two extensions to make your experience better:
+我推荐两个扩展程序来改善你的编辑体验：
 
-- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - this is an extension that makes sure your Markdown is formatted correctly. It prevents some syntactical and semantic mistakes. Not all the warnings are important, but some can help improve readability. Use best judgement and if in doubt, just ask a reviewer!
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by the Prettier.js Team - this is a formatter that will automatically format your Markdown files so they all use a consistent style. The Wiki repository has some settings in its `package.json` that the extension should automatically use. Be sure to enable "Format On Save" in your editor settings so your Markdown files will be automatically formatted every time you save!
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - 这是一个扩展程序，可确保你的 Markdown 格式正确。它可以防止一些语法和语义上的错误。并非所有警告都是重要的，但有些可以帮助提高可读性。请根据具体情况判断，如果有疑问，请咨询审查者！
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by the Prettier.js Team - 这是一个格式化工具，它会自动格式化你的 Markdown 文件，使其使用一致的样式。Wiki 仓库中的 package.json 文件包含了一些设置，扩展程序应自动使用这些设置。确保在编辑器设置中启用“保存时格式化”功能，这样每次保存时，Markdown 文件都会自动格式化！
 
-## Notes, Tips and Conventions
+## 注意事项、提示和约定
 
-### Internal Links
+### 内部链接
 
-Don't use absolute URLs for inter-site links. Use relative paths.
+不要使用绝对 URL 来进行站内链接。请使用相对路径。
 
 - ❌
 
@@ -68,17 +68,17 @@ Don't use absolute URLs for inter-site links. Use relative paths.
   To be used with [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
   ```
 
-`../` means "go up one directory" so if the file you're editing is inside the `functions` directory and you're linking to `callbacks` you use `../` to go up to `scripting/` then `callbacks/` to enter the callbacks directory, then the filename (without `.md`) of the callback you want to link.
+`../` 表示“返回上一级目录”，因此如果你正在编辑的文件位于 `functions` 目录中，而你要链接到 `callbacks`，就使用 `../` 返回到 `scripting/`，然后进入 `callbacks/` 目录，接着输入回调函数的文件名（不包含 `.md`）。
 
-### Images
+### 图片
 
-Images go inside a subdirectory inside `/static/images`. Then when you link an image in a `![]()` you just use `/images/` as the base path (no need for `static` that's just for the repository).
+图片应放在 `/static/images` 的子目录中。然后，当你在 `![]()` 中链接图片时，只需使用 `/images/` 作为基础路径（不需要 `static`，那只是为了仓库结构）。
 
-If in doubt, read another page that uses images and copy how its done there.
+如果不确定，可以参考其他使用图片的页面并模仿其用法。
 
-### Metadata
+### 元数据
 
-The first thing in _any_ document here should be metadata:
+任何 文档的第一部分都应该是元数据：
 
 ```mdx
 ---
@@ -87,84 +87,84 @@ description: This is a page about stuff and things and burgers, yay!
 ---
 ```
 
-Every page should include a title and a description.
+每个页面都应该包含标题和描述。
 
-For a full list of what can go between the `---`, check out [the Docusaurus documentation](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
+关于 `---` 之间可以包含的完整列表，请查看 [Docusaurus 文档](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
 
-### Headings
+### 标题
 
-Don't create a level 1 heading (`<h1>`) with `#` as this is generated automatically. Your first heading should _always_ be `##`
+不要使用 `#` 创建一级标题 (`<h1>`)，因为这会自动生成。你的第一个标题应始终为 `##`。
 
 - ❌
 
   ```md
-  # My Title
+  # 我的标题
 
-  This is documentation for ...
+  这是一个关于 ... 的文档
 
-  # Sub-Section
+  # 分节
   ```
 
 - ✔
 
   ```md
-  This is documentation for ...
+  这是一个关于 ... 的文档
 
-  ## Sub-Section
+  ## 分节
   ```
 
-### Use `Code` Snippets For Technical References
+### 使用 `Code` 片段进行技术引用
 
-When writing a paragraph that contains function names, numbers, expressions or anything that's not standard written language, surround them with \`backticks\` like that. This makes it easier to separate language for describing things from references to technical elements such as function names and pieces of code.
+在编写包含函数名、数字、表达式或其他非标准书面语言的段落时，使用 `反引号` 将它们包围起来。这样可以更容易地将描述性语言与技术元素（如函数名和代码片段）区分开来。
 
 - ❌
 
-  > The fopen function will return a value with a tag of type File:, there is no problem on that line as the return value is being stored to a variable also with a tag of File: (note the cases are the same too). However on the next line the value 4 is added to the file handle. 4 has no tag [...]
+  > 函数 fopen 将返回一个标签类型为 File: 的值，这一行没有问题，因为返回值被存储到一个标签也是 File: 的变量中（注意情况也是一样的）。但在下一行中，4 的值被添加到文件句柄中。4 没有标签 [...]
 
 - ✔
 
-  > The `fopen` function will return a value with a tag of type `File:`, there is no problem on that line as the return value is being stored to a variable also with a tag of `File:` (note the cases are the same too). However on the next line the value `4` is added to the file handle. `4` has no tag
+  > 函数 `fopen` 将返回一个标签类型为 `File:` 的值，这一行没有问题，因为返回值被存储到一个标签也是 `File:` 的变量中（注意情况也是一样的）。但在下一行中，`4` 的值被添加到文件句柄中。`4` 没有标签
 
-In the above example, `fopen` is a function name, not an English word, so surrounding it with `code` snippet markers helps distinguish it from other content.
+在上面的示例中，`fopen` 是一个函数名，而不是英文单词，因此用 `代码` 片段标记将其与其他内容区分开来。
 
-Also, if the paragraph is referring to a block of example code, this helps the reader associate the words with the example.
+此外，如果段落引用了示例代码块，这有助于读者将文字与示例关联起来。
 
-### Tables
+### 表格
 
-If a table has headings, they go in the top part:
+如果表格有标题行，它们应放在顶部：
 
 - ❌
 
   ```md
   |         |                                      |
   | ------- | ------------------------------------ |
-  | Health  | Engine Status                        |
-  | 650     | Undamaged                            |
-  | 650-550 | White Smoke                          |
-  | 550-390 | Grey Smoke                           |
-  | 390-250 | Black Smoke                          |
-  | < 250   | On fire (will explode seconds later) |
+  | 耐久度  | 引擎状态                        |
+  | 650     | 未损坏                            |
+  | 650-550 | 白色烟雾                          |
+  | 550-390 | 灰色烟雾                           |
+  | 390-250 | 黑色烟雾                          |
+  | < 250   | 着火 (将在几秒后爆炸) |
   ```
 
 - ✔
 
   ```md
-  | Health  | Engine Status                        |
+  | 耐久度  | 引擎状态                        |
   | ------- | ------------------------------------ |
-  | 650     | Undamaged                            |
-  | 650-550 | White Smoke                          |
-  | 550-390 | Grey Smoke                           |
-  | 390-250 | Black Smoke                          |
-  | < 250   | On fire (will explode seconds later) |
+  | 650     | 未损坏                            |
+  | 650-550 | 白色烟雾                          |
+  | 550-390 | 灰色烟雾                           |
+  | 390-250 | 黑色烟雾                          |
+  | < 250   | 着火 (将在几秒后爆炸) |
   ```
 
-## Migrating from SA-MP Wiki
+## 从 SA-MP Wiki 迁移
 
-Most of the content has been moved, but if you find a page that's missing, here's a short guide for converting content to Markdown.
+大部分内容已被迁移，但如果你发现某个页面缺失，以下是将内容转换为 Markdown 的简短指南.
 
-### Getting the HTML
+### 获取 HTML
 
-1. Click this button
+1. 点击此按钮
 
    (Firefox)
 
@@ -174,46 +174,46 @@ Most of the content has been moved, but if you find a page that's missing, here'
 
    ![image](images/contributing/f62bb8112543.png)
 
-2. Hover the top left of the main wiki page, in the left margin or the corner until you see `#content`
+2. 将鼠标悬停在 Wiki 页面左上角的左边距或角落，直到看到 `#content`
 
    ![image](images/contributing/65761ffbc429.png)
 
-   Or search for `<div id=content>`
+   或搜索 `<div id=content>`
 
    ![image](images/contributing/77befe2749fd.png)
 
-3. Copy the inner HTML of that element
+3. 复制该元素的内部 HTML
 
    ![image](images/contributing/8c7c75cfabad.png)
 
-   Now you have _only_ the HTML code for the actual _content_ of the page, the stuff we care about, and you can convert it to Markdown.
+   现在你只有页面实际内容的 HTML 代码，这是我们关心的部分，你可以将其转换为 Markdown.
 
-### Converting HTML to Markdown
+### 将 HTML 转换为 Markdown
 
-For converting basic HTML (no tables) to Markdown use:
+要将基本 HTML（无表格）转换为 Markdown，请使用：
 
 https://mixmark-io.github.io/turndown/
 
 ![image](images/contributing/77f4ea555bbb.png)
 
-^^ Notice now it screwed up the table completely...
+^^ 请注意，它完全搞砸了表格...
 
-### HTML Tables to Markdown Tables
+### 将 HTML 表格转换为 Markdown 表格
 
-Because the above tool does not support tables, use this tool:
+由于上述工具不支持表格，请使用以下工具：
 
 https://jmalarcon.github.io/markdowntables/
 
-And copy only the `<table>` element in:
+并仅复制 `<table>` 元素：
 
 ![image](images/contributing/57f171ae0da7.png)
 
-### Cleaning Up
+### 清理
 
-The conversion likely won't be perfect. So you'll have to do a bit of manual cleanup. The formatting extensions listed above should help with that but you may still need to just spend some time doing manual work.
+转换可能不完美。因此，你可能需要手动进行一些清理。上面列出的格式化扩展程序应该有所帮助，但你可能仍需花时间手动调整。
 
-If you don't have time, don't worry! Submit an unfinished draft and someone else can pick up where you left off!
+如果你没有时间，不要担心！提交一个未完成的草稿，其他人可以继续完成它！
 
-## License Agreement
+## 许可协议
 
-All open.mp projects have a [Contributor License Agreement](https://cla-assistant.io/openmultiplayer/homepage). This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
+所有 open.mp 项目都有一个 [贡献者许可协议](https://cla-assistant.io/openmultiplayer/homepage). 这基本上意味着你同意让我们使用你的作品，并将其置于开源许可下。当你第一次打开 Pull Request 时，CLA-Assistant 机器人会发布一个链接，你可以在此签署协议。
