@@ -1,202 +1,202 @@
 ---
-title: "控制服务器"
-description: 用于控制服务器的十分有效的命令. 
+title: "Controlling a Server"
+description: Useful commands for controlling a server.
 ---
 
-##  更改游戏模式
+## Changing Gamemode
 
-### 运行自定义/下载的游戏模式
+### Running a custom/downloaded gamemode
 
-- 打开您安装服务器的目录 (例如：/Rockstar Games/GTA San Andreas/server)
-- 获取下载/编译的 .amx 文件并将其放在服务器的 gamemodes 文件夹中
-- 使用 RCON 更改模式，如上所述 (2.1)
-- 或者，您可以将新模式添加到循环中，也如上所述（2.3）
+- Open the directory you installed the server to (eg: /Rockstar Games/GTA San Andreas/server)
+- Take the downloaded/compiled .amx file and place it in the gamemodes folder where you installed the server
+- Use RCON to change the mode.
+- Alternatively you can add the new mode to a rotation.
 
-### 使用脚本
+### Using Filterscripts
 
-与运行自定义游戏模式相同，除了:
+The same as running a custom gamemode, except:
 
-- 将 .amx 放在名为`filterscripts`的文件夹中
-- 将以下内容添加到 server.cfg: `filterscripts <脚本名称>`
+- Place the .amx in a folder called `filterscripts`
+- Add the following to server.cfg: `filterscripts <scriptname>`
 
-## 为您的服务器设置密码
+## Passwording your server
 
-- 如果您想添加密码以便只有您的朋友可以加入，请将其添加到 [server.cfg](server.cfg):
+- If you want to add a password so only your friends can join, add this to [server.cfg](server.cfg):
 
 ```
-password 任意密码
+password whatever
 ```
 
-- 这将使您的服务器受到密码保护，密码可以设置为任意内容。
-- 您也可以在游戏中更改密码，使用`/rcon password 新密码`
-- 您可以使用`/rcon password 0` 或通过重新启动服务器来删除密码
+- This will make your server password-protected with the password set as 'whatever' - change it to whatever you want.
+- You can also change the password while ingame by using `/rcon password newpasswordhere`
+- You can remove the password by using `/rcon password 0`, or by restarting the server.
 
-## 使用 RCON
+## Using RCON
 
-### 登录
+### Logging In
 
-您可以在游戏中通过输入`/rcon login password` 登录，也可以在 [Remote Console](RemoteConsole) 中使用RCON 模式退出。
+You can log in either while ingame by typing `/rcon login password` or out of game by using the RCON mode in the [Remote Console](RemoteConsole).
 
-密码与您在 [server.cfg](server.cfg) 中设置的密码相同
+The password is the same as what you set it as in [server.cfg](server.cfg)
 
-### 添加封禁
+### Adding Bans
 
 ##### samp.ban
 
-samp.ban 是用于存储封禁信息的文件，包括有关封禁的以下信息:
+samp.ban is the file used for storing bans, including the following information about the ban:
 
 - IP
-- 日期
-- 时间
-- 游戏名 (玩家的游戏名或者封禁原因, 详细请查看 [BanEx](../../functions/BanEx))
-- 封禁类型 (游戏内，IP封禁等等)
+- Date
+- Time
+- Name (Name of person or a reason, see [BanEx](../../functions/BanEx))
+- Type of ban
 
-如果要添加禁令，只需像这样添加一行:
+To add a ban, simply add a line like so:
 
 ```
 IP_HERE [28/05/09 | 13:37:00] PLAYER - BAN REASON
 ```
 
-`IP_HERE` 写入您要封锁的IP地址
+Where `IP_HERE` is, is where you put the IP you would like to ban.
 
-##### Ban() 函数
+##### Ban() function
 
-[Ban](../scripting/functions/Ban) 函数可用于禁止玩家进入脚本。 [BanEx](../scripting/functions/BanEx) 函数将添加一个可选原因，如下所示：
+The [Ban](../scripting/functions/Ban) function can be used to ban a player from a script. The [BanEx](../scripting/functions/BanEx) function will add an optional reason like so:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
 ```
 
-##### RCON 封禁命令
+##### RCON ban command
 
-通过在游戏中输入 /rcon ban 或在控制台中输入“ban”来执行 RCON ban 命令，用于封禁您服务器上的特定玩家，封禁 IP 参见下一节。
+The RCON ban command, executed by typing /rcon ban in-game or typing "ban" in the console, is used to ban a specific player that is on your server, to ban an IP see the next section.
 
-只需输入:
+Simply type:
 
 ```
-# 游戏内:
-/rcon ban 玩家ID
+# Ingame:
+/rcon ban PLAYERID
 
-# 控制台:
-ban 玩家ID
+# Console:
+ban PLAYERID
 ```
 
 ##### banip
 
-RCON banip命令，通过在游戏中输入/ RCON banip 或在控制台中输入“banip”来执行，用于封禁特定的IP地址，通过ID禁止服务器上的玩家，参见前一节。将接受范围限制通配符。
+The RCON banip command, executed by typing /rcon banip in-game or typing "banip" in the console, is used to ban a specific IP address, to ban a player on your server by ID, see the previous section. Will accept wildcards for rangebans.
 
-只需输入:
+Simply type:
 
 ```
-# 游戏内:
+# Ingame:
 /rcon banip IP
 
-# 控制台:
+# Console:
 banip IP
 ```
 
-### 取消封禁
+### Removing Bans
 
-一旦某个玩家被封禁，有两种方法可以解除他们的封禁。
+Once somebody is banned, there are two ways to unban them.
 
-- 从 samp.ban 中移出
-- RCON `unbanip`命令
+- Remove from samp.ban
+- The RCON `unbanip` command
 
 #### samp.ban
 
-samp.ban 可以在您的 sa-mp 服务器目录中找到，它包含有关每个封禁的以下信息：
+samp.ban can be found in your sa-mp server directory, it contains lines with the following information about each ban:
 
 - IP
-- 日期
-- 时间
-- 游戏名 (玩家的游戏名或者封禁原因, 详细请查看 [BanEx](../../functions/BanEx))
-- 封禁类型 (游戏内，IP封禁等等)
+- Date
+- Time
+- Name (Name of person or a reason (see [BanEx](../scripting/functions/BanEx)))
+- Type of ban (INGAME, IP BAN etc,)
 
-例如:
+Examples:
 
 ```
 127.8.57.32 [13/06/09 | 69:69:69] NONE - IP BAN
 13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
 ```
 
-要解封他们，只需删除该行，然后执行 RCON reloadbans 命令使服务器重新读取 samp.ban。
+To unban them, simply remove the line, then execute the RCON reloadbans command to make the server re-read samp.ban.
 
 #### unbanip
 
-RCON unbnip 命令可以在游戏中使用，也可以从服务器控制台（黑框窗口）使用。 要解封某个 IP，只需在游戏中输入 `/rcon unbanip IP_HERE` 或在控制台中输入 `unbanip IP_HERE`。
+The RCON unbanip command can be used in-game or from the server console (black box). To unban an ip, simply type `/rcon unbanip IP_HERE` in-game or `unbanip IP_HERE` in the console.
 
-例如:
+Example:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
 ```
 
 ```
-# 游戏内:
+# Ingame:
 /rcon unbanip 13.37.13.37
 
-# 控制台
+# Console
 unbanip 13.37.13.37
 ```
 
-要解封他们，只需使用 `unbanip` 命令，然后执行 RCON `reloadbans` 命令使服务器重新读取 samp.ban。
+To unban them, simply use the `unbanip` command, then execute the RCON `reloadbans` command to make the server re-read samp.ban.
 
 #### reloadbans
 
-`samp.ban` 是一个文件，其中包含当前被服务器封禁的 IP 的信息。 这个文件在服务器启动时被读取，所以如果你解禁一个 IP/玩家，你必须输入 RCON `reloadbans` 命令让服务器再次读取 `samp.ban` 从而允许他们加入服务器。
+`samp.ban` is a file that holds the information for the IP's that are currently banned from the server. This file is read when the server is started, so if you unban an IP/person you MUST type the RCON `reloadbans` command to make the server read `samp.ban` again and allow them to join the server.
 
 ### RCON Commands
 
-使用游戏中的 RCON (`/rcon cmdlist`) 为命令输入 cmdlist（或为变量输入 varlist）。
+Type cmdlist for commands (or, varlist for variables) making use of the RCON in-game (`/rcon cmdlist`).
 
-这些是您作为管理员可以使用的功能:
+These are the functions that you as admin can use:
 
-| 命令                              | 描述                                                         |
-| --------------------------------- | ------------------------------------------------------------ |
-| `/rcon cmdlist`                   | 显示命令列表。                                               |
-| `/rcon varlist`                   | 显示包含当前变量的列表。                                     |
-| `/rcon exit`                      | 关闭服务器.                                                  |
-| `/rcon echo [text]`               | 在服务器控制台（不是游戏中的公屏）中显示“[text]”。           |
-| `/rcon hostname [name]`           | 更改主机名文本（例如：/rcon hostname my server）。           |
-| `/rcon gamemodetext [name]`       | 更改游戏模式文本（_例如：/rcon gamemodetext my gamemode_）。 |
-| `/rcon mapname [name]`            | 更改地图名称文本（例如：/rcon mapname San Andreas）。        |
-| `/rcon exec [filename]`           | 执行包含服务器 cfg 的文件（例如：/rcon exec blah.cfg_）。    |
-| `/rcon kick [ID]`                 | 踢出指定 ID 的玩家（_例如: /rcon kick 2_）。                 |
-| `/rcon ban [ID]`                  | 封禁指定 ID 的玩家（_例如：/rcon ban 2_）。                  |
-| `/rcon changemode [mode]`         | 此命令会将当前游戏模式更改指定模式（_例如：如果您想玩 sftdm：/rcon changemode sftdm_）。 |
-| `/rcon gmx`                       | 将在 [server.cfg](server.cfg) 中加载下一个游戏模式。         |
-| `/rcon reloadbans`                | 重新加载存储被禁止 IP 地址的 `samp.ban` 文件。 应该在解封玩家后使用。 |
-| `/rcon reloadlog`                 | 重新加载“server_log.txt”。 对于自动日志轮换很有用。 可以通过向服务器发送 `SIGUSR1` 信号来触发（仅限 Linux 服务器）。 |
-| `/rcon say`                       | 在游戏内公屏中向玩家显示一条消息（例如：`/rcon say hello` 将显示为 `Admin: hello`）。 |
-| `/rcon players`                   | 显示服务器中的玩家（包括他们的游戏名、IP 和 ping）。         |
-| `/rcon banip [IP]`                | 封禁指定 IP（_例如：/rcon banip 127.0.0.1_）。               |
-| `/rcon unbanip [IP]`              | 解封指定 IP（_例如：/rcon unbanip 127.0.0.1_）。             |
-| `/rcon gravity`                   | 更改重力（_例如：/rcon gravity 0.008_）。                    |
-| `/rcon weather [ID]`              | 更改天气（_例如：/rcon weather 1_）。                        |
-| `/rcon loadfs`                    | 加载指定脚本（_例如：/rcon loadfs adminfs_）。               |
-| `/rcon weburl [server url]`       | 更改 SA-MP 客户端中显示的服务器 URL                          |
-| `/rcon unloadfs`                  | 卸载指定脚本（_例如：/rcon unloadfs adminfs_）。             |
-| `/rcon reloadfs`                  | 重新加载指定脚本（_例如：/rcon reloadfs adminfs_）。         |
-| `/rcon rcon\_password [PASSWORD]` | 更改 rcon 的密码                                             |
-| `/rcon password [password]`       | 设置/重置服务器密码                                          |
-| `/rcon messageslimit [count]`     | 修改客户端每秒发送到服务器的最大消息数。 （默认 500）        |
-| `/rcon ackslimit [count]`         | 更改 acks 的限制（默认 3000 |
-| `/rcon messageholelimit [count]`  | 更改消息洞的限制（默认 3000）         |
-| `/rcon playertimeout [limit m/s]` | 更改玩家超时时间。（以毫秒为单位，默认 1000）                |
-| `/rcon language [language]`       | 更改服务器语言（_例如：/rcon language Chinese_）。 在服务器信息中显示。 |
+| Command                           | Description                                                                                                                                           |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/rcon cmdlist`                   | Shows a list with commands.                                                                                                                           |
+| `/rcon varlist`                   | Shows a list with the current variables.                                                                                                              |
+| `/rcon exit`                      | Closes the server.                                                                                                                                    |
+| `/rcon echo [text]`               | Shows the `[text]` in the console of the server (NOT the client-console in-game).                                                                     |
+| `/rcon hostname [name]`           | change the hostname text (_example: /rcon hostname my server_).                                                                                       |
+| `/rcon gamemodetext [name]`       | change the gamemode text (_example: /rcon gamemodetext my gamemode_).                                                                                 |
+| `/rcon mapname [name]`            | change the map name text (_example: /rcon mapname San Andreas_).                                                                                      |
+| `/rcon exec [filename]`           | Executes the file which contains server cfg (_example: /rcon exec blah.cfg_).                                                                         |
+| `/rcon kick [ID]`                 | Kick the player with the given ID (_example: /rcon kick 2_).                                                                                          |
+| `/rcon ban [ID]`                  | Ban the player with the given ID (_example: /rcon ban 2_).                                                                                            |
+| `/rcon changemode [mode]`         | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_).                        |
+| `/rcon gmx`                       | Will load the next gamemode in [server.cfg](server.cfg).                                                                                              |
+| `/rcon reloadbans`                | Reloads the `samp.ban` file where the banned IP addresses are stored. Should be used after unbanning and IP address.                                  |
+| `/rcon reloadlog`                 | Reloads the `server_log.txt`. Useful for automatic log rotation. Can be triggered by sending the `SIGUSR1` signal to the server (Linux server only).  |
+| `/rcon say`                       | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`).                                        |
+| `/rcon players`                   | Shows the players that are in the server (with their name, IP & ping).                                                                                |
+| `/rcon banip [IP]`                | Ban the given IP (_example: /rcon banip 127.0.0.1_).                                                                                                  |
+| `/rcon unbanip [IP]`              | Unban the given IP (_example: /rcon unbanip 127.0.0.1_).                                                                                              |
+| `/rcon gravity`                   | Changes the gravity (_example: /rcon gravity 0.008_).                                                                                                 |
+| `/rcon weather [ID]`              | Changes the weather (_example: /rcon weather 1_).                                                                                                     |
+| `/rcon loadfs`                    | Loads the given filterscript (_example: /rcon loadfs adminfs_).                                                                                       |
+| `/rcon weburl [server url]`       | Changes the server URL in the masterlists/SA-MP client                                                                                                |
+| `/rcon unloadfs`                  | Unload the given filterscript (_example: /rcon unloadfs adminfs_).                                                                                    |
+| `/rcon reloadfs`                  | Reloads the given filterscript (_example: /rcon reloadfs adminfs_).                                                                                   |
+| `/rcon rcon\_password [PASSWORD]` | Change the rcon's password                                                                                                                            |
+| `/rcon password [password]`       | Sets/resets the server password                                                                                                                       |
+| `/rcon messageslimit [count]`     | Change the number of messages per second a client sends to the server. (default 500)                 |
+| `/rcon ackslimit [count]`         | Change the limit of acks (default 3000)                      |
+| `/rcon messageholelimit [count]`  | Change the limit of message holes (default 3000)                         |
+| `/rcon playertimeout [limit m/s]` | Change the time in milliseconds until a player timeouts when not sending any packets. (default 1000) |
+| `/rcon language [language]`       | Change the server language (_example: /rcon language English_). Shown in server browser.             |
 
-上述四个限制只是为了避免一些工具攻击 SA-MP 服务器让服务器崩溃或无法进入。 因此，只需根据您的服务器设置它们即可。如果你看到任何玩家被误踢，只需尽快增加限制值，这样正常的玩家就不会被踢。 [在此处阅读更多内容](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47)。
+The above four limits/counts are just made to avoid several tools which can attack any SA-MP server by freezing it or crashing. So, simply, just set them according to your server. The default values are default, if you see any wrong kicks, just increase the values as soon as possible so that the innocent players won't get kicked by it.
 
-### 相关回调和函数
+### Related Callbacks and Functions
 
-以下回调和函数可能很有用，因为它们以某种方式与本文相关。
+The following callbacks and functions might be useful, as they're related to this article in one way or another.
 
-#### 回调
+#### Callbacks
 
-- [OnRconLoginAttempt](../scripting/callbacks/OnRconLoginAttempt): 当尝试登录 RCON 时调用。
+- [OnRconLoginAttempt](../scripting/callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.
 
-#### 函数
+#### Functions
 
-- [IsPlayerAdmin](../scripting/functions/IsPlayerAdmin): 检查玩家是否登录到 RCON。
+- [IsPlayerAdmin](../scripting/functions/IsPlayerAdmin): Checks if a player is logged into RCON.
 
-- [SendRconCommand](../scripting/functions/SendRconCommand): 通过脚本发送 RCON 命令。
+- [SendRconCommand](../scripting/functions/SendRconCommand): Sends an RCON command via the script.

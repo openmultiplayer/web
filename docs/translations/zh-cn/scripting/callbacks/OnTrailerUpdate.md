@@ -1,27 +1,27 @@
 ---
 title: OnTrailerUpdate
-description: 当玩家发送拖车更新时，将调用此回调。
-tags: []
+description: This callback is called when a player sent a trailer update.
+tags: ["vehicle"]
 ---
 
-## 描述
+## Description
 
-当玩家发送拖车更新时，将调用此回调。
+This callback is called when a player sent a trailer update.
 
-| 参数名    | 描述                    |
-| --------- | ----------------------- |
-| playerid  | 发送拖车更新的玩家的 ID |
-| vehicleid | 正在更新的拖车的车辆 ID |
+| Name      | Description                                    |
+| --------- | ---------------------------------------------- |
+| playerid  | The ID of the player who sent a trailer update |
+| vehicleid | The Trailer being updated                      |
 
-## 返回值
+## Returns
 
-0 - 取消对其他玩家的所有拖车更新。将继续向那些发送拖车更新的玩家发送更新。
+0 - Cancels any trailer updates from being sent to other players. Update is still sent to the updating player.
 
-1 - 正常处理拖车更新，并在所有玩家之间进行同步。
+1 - Processes the trailer update as normal and synchronizes it between all players.
 
-它总是在过滤脚本中先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnTrailerUpdate(playerid, vehicleid)
@@ -31,17 +31,25 @@ public OnTrailerUpdate(playerid, vehicleid)
 }
 ```
 
-## 要点
+## Notes
 
 :::warning
 
-每辆拖车每秒都会频繁地调用这个回调，您应该避免进行密集计算或密集文件写/读操作。
+This callback is called very frequently per second per trailer. You should refrain from implementing intensive calculations or intensive file writing/reading operations in this callback.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [GetVehicleTrailer](../functions/GetVehicleTrailer): 检查车辆牵引的是什么拖车。
-- [IsTrailerAttachedToVehicle](../functions/IsTrailerAttachedToVehicle): 检查拖车是否与车辆相连。
-- [AttachTrailerToVehicle](../functions/AttachTrailerToVehicle): 将拖车连接到车辆上。
-- [DetachTrailerFromVehicle](../functions/DetachTrailerFromVehicle): 将车辆与拖车断开连接。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnUnoccupiedVehicleUpdate](OnUnoccupiedVehicleUpdate): This callback is called when a driver-less vehicle's position is synced by a client. 
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [GetVehicleTrailer](../functions/GetVehicleTrailer): Check what trailer a vehicle is pulling.
+- [IsTrailerAttachedToVehicle](../functions/IsTrailerAttachedToVehicle): Check if a trailer is attached to a vehicle.
+- [AttachTrailerToVehicle](../functions/AttachTrailerToVehicle): Attach a trailer to a vehicle.
+- [DetachTrailerFromVehicle](../functions/DetachTrailerFromVehicle): Detach a trailer from a vehicle.

@@ -1,29 +1,35 @@
 ---
 title: OnGameModeInit
-description: 当初始化游戏模式时，该回调函数被触发。
+description: This callback is triggered when the gamemode starts.
 tags: []
 ---
 
-## 描述
+## Description
 
-当初始化游戏模式时，调用这个回调函数。
+This callback is triggered when the gamemode starts.
 
-## 案例
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    print("游戏模式 加载!");
+    print("Gamemode started!");
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-因为更改游戏模式不会重新加载过滤脚本(filterscript)，所以该函数也可以在过滤脚本中使用，用于检测是否使用了 RCON 指令（例如 changemode 或 gmx）更改游戏模式。
+This function can also be used in a filterscript to detect if the gamemode changes with RCON commands like changemode or gmx, as changing the gamemode does not reload a filterscript.
 
 :::
 
-## 相关回调
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnGameModeExit](OnGameModeExit): This callback is called when a gamemode ends.
+- [OnFilterScriptInit](OnFilterScriptInit): This callback is called when a filterscript is loaded.
+- [OnFilterSciptExit](OnFilterScriptExit): This callback is called when a filterscript is unloaded.

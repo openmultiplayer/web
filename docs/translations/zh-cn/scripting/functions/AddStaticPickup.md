@@ -1,54 +1,56 @@
 ---
 title: AddStaticPickup
-description: 该函数用于给游戏添加一个“静态”拾取器。
-tags: []
+description: This function adds a 'static' pickup to the game.
+tags: ["pickup"]
 ---
 
-## 描述
+## Description
 
-该函数用于给游戏添加一个“静态”拾取器。拾取器支持武器、生命值、护甲等，无需编写脚本即可生效(武器/生命值/护甲将自动提供)。
+This function adds a 'static' pickup to the game. These pickups support weapons, health, armor etc., with the ability to function without scripting them (weapons/health/armor will be given automatically).
 
-| 参数名                           | 说明                                                      |
-| -------------------------------- | --------------------------------------------------------- |
-| [model](../resources/pickupids)  | 拾取器的模型。                                            |
-| [type](../resources/pickuptypes) | 拾取器的类型。决定了拾取器在被拾起时如何响应。            |
-| Float:X                          | 在哪个 X 轴坐标创建。                                     |
-| Float:Y                          | 在哪个 Y 轴坐标创建。                                     |
-| Float:Z                          | 在哪个 Z 轴坐标创建。                                     |
-| virtualworld                     | 要显示拾取器的虚拟世界 ID。使用 -1 表示在所有世界中显示。 |
+| Name                             | Description                                                                         |
+|----------------------------------|-------------------------------------------------------------------------------------|
+| [model](../resources/pickupids)  | The model of the pickup.                                                            |
+| [type](../resources/pickuptypes) | The pickup type. Determines how the pickup responds when picked up.                 |
+| Float:x                          | The X coordinate to create the pickup at.                                           |
+| Float:y                          | The Y coordinate to create the pickup at.                                           |
+| Float:z                          | The Z coordinate to create the pickup at.                                           |
+| virtualWorld                     | The virtual world ID to put tht pickup in. Use -1 to show the pickup in all worlds. |
 
-## 返回值
+## Returns
 
-如果创建成功，则为 1。
+**1** - if the pickup is successfully created.
 
-如果创建失败，则为 0。
+**0** - if failed to create.
 
-## 案例
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    // 创建一个护甲拾取器
+    // Create a pickup for armor
     AddStaticPickup(1242, 2, 1503.3359, 1432.3585, 10.1191, 0);
 
-    // 创建一个生命值拾取器，就在护甲边上
+    // Create a pickup for some health, right next to the armour
     AddStaticPickup(1240, 2, 1506.3359, 1432.3585, 10.1191, 0);
 
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-该函数不返回您可以在 OnPlayerPickUpPickup 中使用的拾取 ID。
-如果您想分配 ID，请使用 CreatePickup。
+This function doesn't return a pickup ID that you can use in, for example, OnPlayerPickUpPickup. Use [CreatePickup](CreatePickup) if you'd like to assign IDs.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [CreatePickup](CreatePickup): 创建一个拾取器。
-- [DestroyPickup](DestroyPickup): 销毁一个拾取器。
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): 当某个玩家拾起一个拾取器时调用。
+- [CreatePickup](CreatePickup): Create a pickup.
+- [DestroyPickup](DestroyPickup): Destroy a pickup.
+
+## Related Resources
+
+- [Pickup IDs](../resources/pickupids)

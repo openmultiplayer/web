@@ -1,47 +1,55 @@
 ---
 title: OnPlayerClickPlayer
-description: 当一个玩家在记分板上双击另一个玩家时调用。
+description: This callback is called when a player double-clicks on a player on the scoreboard.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-当一个玩家在记分板上双击另一个玩家时调用。
+This callback is called when a player double-clicks on a player on the scoreboard.
 
-| 参数名          | 描述                            |
-| --------------- | ------------------------------- |
-| playerid        | 在记分板上点击玩家的玩家的 ID。 |
-| clickedplayerid | 被点击的玩家的 ID。             |
-| source          | 玩家点击的来源。                |
+| Name            | Description                                                      |
+| --------------- | ---------------------------------------------------------------- |
+| playerid        | The ID of the player that clicked on a player on the scoreboard. |
+| clickedplayerid | The ID of the player that was clicked on.                        |
+| source          | The [source](../resources/clicksources) of the player's click.   |
 
-## 返回值
+## Returns
 
-1 - 将阻止其他过滤脚本接收到这个回调。
+1 - Will prevent other filterscripts from receiving this callback.
 
-0 - 表示这个回调函数将被传递给下一个过滤脚本。
+0 - Indicates that this callback will be passed to the next filterscript.
 
-它在游戏模式中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
-    new message[32];
-    format(message, sizeof(message), "你点击了玩家 %d", clickedplayerid);
-    SendClientMessage(playerid, 0xFFFFFFFF, message);
+    new string[32];
+    format(string, sizeof(string), "You clicked on player %d", clickedplayerid);
+    SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-目前只有一个“来源”(0 - CLICK_SOURCE_SCOREBOARD(点击\_源\_计分板))。这一论点的存在表明，未来可能会有更多的来源得到支持。
+There is currently only one 'source' (0 - `CLICK_SOURCE_SCOREBOARD`).
+
+The existence of this argument suggests that more sources may be supported in the future.
 
 :::
 
-## 相关回调
+## Related Callbacks
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): 当玩家点击文本绘制时调用。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): This callback is called when a player clicks on a textdraw.
+
+## Related Resources
+
+- [Click Sources](../resources/clicksources)

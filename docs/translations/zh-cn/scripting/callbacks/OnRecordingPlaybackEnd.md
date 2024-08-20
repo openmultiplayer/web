@@ -1,22 +1,25 @@
 ---
 title: OnRecordingPlaybackEnd
-description: 当使用NPC:StartRecordingPlayback复制的录制文件到达其末尾时，将调用此回调。
+description: This callback is called when a recorded file being reproduced with StartRecordingPlayback has reached to its end.
 tags: []
 ---
 
-:::warning
+## Description
 
-:::
+This callback is called when a recorded file being reproduced with NPC:[StartRecordingPlayback](../functions/StartRecordingPlayback) has reached to its end.
 
-## 描述
-
-当使用 NPC:StartRecordingPlayback 复制的录制文件到达其末尾时，将调用此回调。
-
-## 案例
+## Examples
 
 ```c
 public OnRecordingPlaybackEnd()
 {
-    StartRecordingPlayback(PLAYER_RECORDING_TYPE_DRIVER, "all_around_lv_bus"); //这将在录制的文件完成复制后再次启动。
+    StartRecordingPlayback(PLAYER_RECORDING_TYPE_DRIVER, "all_around_lv_bus"); //This would start the recorded file again once it finishes reproducing.
 }
 ```
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [StartRecordingPlayback](../functions/StartRecordingPlayback):  Starts reproducing an already recorded .rec file. 
+- [StopRecordingPlayback](../functions/StopRecordingPlayback): Stops reproducing a .rec file.

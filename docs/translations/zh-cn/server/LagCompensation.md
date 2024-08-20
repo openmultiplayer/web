@@ -1,10 +1,14 @@
 ---
-title: "延迟补偿"
-description: 延迟补偿说明.
+title: "Lag Compensation"
+description: Lag compensation explanation.
 ---
 
-自 0.3z 起，SA-MP 服务器默认启用武器开火的延迟补偿。 它可以使用 [server.cfg](server.cfg) 中的 `lagcompmode` 服务器变量进行切换。 将其设置为 0 将完全禁用延迟补偿，玩家将必须提前射击（在目标之前射击）。
+Lag compensation for fired bullets is enabled by default on SA-MP servers.
 
-禁用延迟补偿将阻止调用 [OnPlayerWeaponShot](../scripting/callbacks/OnPlayerWeaponShot)。
+It can be toggled using the `lagcompmode` server variable in [server.cfg](server.cfg) or `game.lag_compensation_mode` in [config.json](config.json).
 
-此变量只能在 [server.cfg](server.cfg) 中设置。
+Setting it to 0 will disable lag compensation completely and players will have to lead their shots (fired ahead of targets).
+
+Disabling Lag Compensation will prevent [OnPlayerWeaponShot](../scripting/callbacks/OnPlayerWeaponShot) from being called.
+
+This variable can only be set in [server.cfg](server.cfg) or [config.json](config.json).

@@ -1,38 +1,38 @@
 ---
 title: OnUnoccupiedVehicleUpdate
-description: 当玩家的客户端更新/同步他们没有驾驶的车辆的位置时，这个回调被调用。
+description: This callback is called when a player's client updates/syncs the position of a vehicle they're not driving.
 tags: ["vehicle"]
 ---
 
-## 描述
+## Description
 
-当玩家的客户端更新/同步他们没有驾驶的车辆的位置时，这个回调被调用。这可能发生在车外，或当玩家是某个无人驾驶的车辆的乘客时。
+This callback is called when a player's client updates/syncs the position of a vehicle they're not driving. This can happen outside of the vehicle or when the player is a passenger of a vehicle that has no driver.
 
-| 参数名         | 描述                                                                                                                   |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| vehicleid      | 更新了位置的车辆载具 ID。                                                                                              |
-| playerid       | 发送车辆位置同步更新的玩家的 ID。                                                                                      |
-| passenger_seat | 如果玩家是乘客，则为其座位的 ID。0=不在车上，1=前排乘客，2=后左，3=后右，4+用于有很多乘客座位的大客车/公共汽车等车辆。 |
-| new_x          | 车辆新的 X 轴坐标。                                      |
-| new_y          | 车辆新的 Y 轴坐标。                                      |
-| new_z          | 车辆新的 Z 轴坐标。                                      |
-| vel_x          | 车辆新的 X 轴速度。略。                                   |
-| vel_y          | 车辆新的 Y 轴速度。略。                                   |
-| vel_z          | 车辆新的 Z 轴速度。略。                                   |
+| Name           | Description                                                                                                                                                      |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vehicleid      | The ID of the vehicle that's position was updated.                                                                                                               |
+| playerid       | The ID of the player that sent a vehicle position sync update.                                                                                                   |
+| passenger_seat | The ID of the seat if the player is a passenger. 0=not in vehicle, 1=front passenger, 2=backleft 3=backright 4+ is for coach/bus etc. with many passenger seats. |
+| Float:new_x    | The new X coordinate of the vehicle.                                                                                                                             |
+| Float:new_y    | The new Y coordinate of the vehicle.                                                                                                                             |
+| Float:new_z    | The new Z coordinate of the vehicle.                                                                                                                             |
+| Float:vel_x    | The new X velocity of the vehicle.                                                                                                                               |
+| Float:vel_y    | The new Y velocity of the vehicle.                                                                                                                               |
+| Float:vel_z    | The new Z velocity of the vehicle.                                                                                                                               |
 
-## 返回值
+## Returns
 
-它总是在过滤脚本中先被调用，所以返回 0 也会阻止其他过滤脚本看到它。
+It is always called first in filterscripts so returning 0 there also blocks other scripts from seeing it.
 
-## 案例
+## Examples
 
 ```c
 public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_x, Float:new_y, Float:new_z, Float:vel_x, Float:vel_y, Float:vel_z)
 {
-    // 检查它是否移动了很远。
+    // Check if it moved far
     if (GetVehicleDistanceFromPoint(vehicleid, new_x, new_y, new_z) > 50.0)
     {
-        // 拒绝更新
+        // Reject the update
         return 0;
     }
 
@@ -40,16 +40,17 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 }
 ```
 
-## 要点
+## Notes
 
 :::warning
 
-这个回调函数每秒钟被频繁地调用。
-
-您应该避免在这个回调中实现密集的计算或密集的文件写/读操作。
-
-GetVehiclePos 函数将返回在此更新之前车辆的旧坐标。
+- This callback is called very frequently per second per unoccupied vehicle. You should refrain from implementing intensive calculations or intensive file writing/reading operations in this callback. 
+- [GetVehiclePos](../functions/GetVehiclePos) will return the old coordinates of the vehicle before this update.
 
 :::
 
-## 相关回调
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnTrailerUpdate](OnTrailerUpdate): Called when a trailer's position is synced by a client.

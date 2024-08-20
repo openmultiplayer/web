@@ -1,33 +1,37 @@
 ---
 title: SetPlayerInterior
-description: 设置某个玩家的内部空间。
+description: Set a player's interior.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-设置某个玩家的内部空间。目前已知的内部空间及其位置可以在[这里](../resources/interiorids)找到。
+Set a player's interior. A list of currently known interiors and their positions can be found here.
 
-| 参数名     | 说明                                              |
-| ---------- | ------------------------------------------------- |
-| playerid   | 要设置内部空间的玩家 ID。                         |
-| interiorid | 要设置的[内部空间 ID](../resources/interiorids)。 |
+| Name       | Description                                                          |
+| ---------- | -------------------------------------------------------------------- |
+| playerid   | The ID of the player to set the interior of.                         |
+| interiorid | The [interior ID](../resources/interiorids) to set the player in. |
 
-## 返回值
+## Returns
 
-1:函数执行成功。
+**true** - The function executed successfully.
 
-0:函数执行失败，这意味着玩家没有连接到服务器。
+**false** - The function failed to execute. This means the player is not connected.
 
-## 案例
+## Examples
 
 ```c
-// 将玩家的内部空间设置为默认值（外部）。
+// Set player to default interior (outside)
 SetPlayerInterior(playerid, 0);
 ```
 
-## 相关函数
+## Related Functions
 
-- [GetPlayerInterior](GetPlayerInterior): 获取某个玩家目前的内部空间。
-- [LinkVehicleToInterior](LinkVehicleToInterior): 改变某个载具所处的内部空间。
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): 当某个玩家的内部空间改变时调用。
+- [GetPlayerInterior](GetPlayerInterior): Get the current interior of a player.
+- [LinkVehicleToInterior](LinkVehicleToInterior): Change the interior that a vehicle is seen in.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Called when a player changes interior.
+
+## Related Resources
+
+- [Interior IDs](../resources/interiorids)

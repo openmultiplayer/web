@@ -1,43 +1,64 @@
 ---
 title: AddStaticVehicleEx
-description: 在游戏模式中新增一个静态的载具(模型是为玩家预加载的)。
+description: Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 tags: ["vehicle"]
 ---
 
-## 描述
+## Description
 
-在游戏模式中新增一个静态的载具(模型是为玩家预加载的)。与 AddStaticVehicle 的区别只有一个: 当载具无人驾驶时，允许设置重生时间。
+Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 
-| 参数名                                | 说明                                                                                    |
-| ------------------------------------- | --------------------------------------------------------------------------------------- | --- |
-| modelid                               | 载具的模型 ID。                                                                         |
-| Float:spawn_X                         | 载具的 X 坐标。                                                                         |
-| Float:spawn_Y                         | 载具的 Y 坐标。                                                                         |
-| Float:spawn_Z                         | 载具的 Z 坐标。                                                                         |
-| Float:z_angle                         | 载具方向-角度。                                                                         |
-| [color1](../resources/vehiclecolorid) | 主要颜色 ID，-1 表示随机。                                                              |
-| [color2](../resources/vehiclecolorid) | 次要颜色 ID，-1 表示随机。                                                              |     |
-| respawn_delay                         | 直到载具在没有司机的情况下重生的延迟，以秒为单位。                                      |
-| addsiren                              | 在 0.3.7 中添加；在早期版本中不起作用。具有默认值 0。使载具有警报器，前提是载具有喇叭。 |
+Differs from AddStaticVehicle in only one way: allows a respawn time to be set for when the vehicle is left unoccupied by the driver.
 
-## 返回值
+| Name                                   | Description                                                                                         |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| modelid                                | The [Model ID](../resources/vehicleid) for the vehicle.                                             |
+| Float:spawnX                           | The X-coordinate for the vehicle.                                                                   |
+| Float:spawnY                           | The Y-coordinate for the vehicle.                                                                   |
+| Float:spawnZ                           | The Z-coordinate for the vehicle.                                                                   |
+| Float:angle                            | The facing - angle for the vehicle.                                                                 |
+| [colour1](../resources/vehiclecolorid) | The primary colour ID.                                                                              |
+| [colour2](../resources/vehiclecolorid) | The secondary colour ID.                                                                            |
+| respawnDelay                           | The delay until the car is respawned without a driver, in seconds.                                  |
+| bool:addSiren                          | Has a default value 'false'. Enables the vehicle to have a siren, providing the vehicle has a horn. |
 
-创建的载具的 ID(1 ～ MAX_VEHICLES)。
+## Returns
 
-如果未能创建载具(达到数量限制或无效的载具模型 ID)，则返回 INVALID_VEHICLE_ID(65535)。
+The vehicle ID of the vehicle created (1 - MAX_VEHICLES).
 
-## 案例
+INVALID_VEHICLE_ID (65535) if vehicle was not created (vehicle limit reached or invalid vehicle model ID passed).
+
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    // 新增一架九头蛇(520)，司机离开15秒后重生
-    AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
+    // Add a Hydra (520) to the game that will respawn 15 seconds after being left
+    AddStaticVehicleEx(520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
+
     return 1;
 }
 ```
 
-## 相关函数
+## Related Functions
 
-- [AddStaticVehicle](AddStaticVehicle): 新增一辆静态载具。
-- [CreateVehicle](CreateVehicle): 创建一辆载具。
+- [AddStaticVehicle](AddStaticVehicle): Add a static vehicle.
+- [CreateVehicle](CreateVehicle): Create a vehicle.
+- [DestroyVehicle](DestroyVehicle): Destroy a vehicle.
+- [GetVehicleParamsSirenState](GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.
+- [SetVehicleSpawnInfo](SetVehicleSpawnInfo): Adjusts vehicle model, spawn location, colours, respawn delay and interior.
+- [GetVehicleSpawnInfo](GetVehicleSpawnInfo): Gets the vehicle spawn location and colours.
+- [ChangeVehicleColours](ChangeVehicleColours): Change a vehicle's primary and secondary colors.
+- [GetVehicleColours](GetVehicleColours): Gets the vehicle colours.
+- [SetVehicleRespawnDelay](SetVehicleRespawnDelay): Set the respawn delay of a vehicle.
+- [GetVehicleRespawnDelay](GetVehicleRespawnDelay): Get the respawn delay of a vehicle.
+
+## Related Callbacks
+
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Called when a vehicle respawns.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Called when a vehicle's siren is toggled on/off.
+
+## Related Resources
+
+- [Vehicle Models](../resources/vehicleid): Comprehensive list of all vehicle models available in game.
+- [Vehicle Colour IDs](../resources/vehiclecolorid): List of all vehicle colour IDs.

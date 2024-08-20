@@ -1,50 +1,58 @@
 ---
 title: OnPlayerSelectObject
-description: 当玩家在使用SelectObject之后选择一个物体时，这个回调会被调用。
-tags: ["player"]
+description: This callback is called when a player selects an object after BeginObjectSelecting has been used.
+tags: ["player", "object"]
 ---
 
-## 描述
+## Description
 
-当玩家在使用 SelectObject 之后选择一个物体时，这个回调会被调用。
+This callback is called when a player selects an object after [BeginObjectSelecting](../functions/BeginObjectSelecting) has been used.
 
-| 参数名   | 描述                                         |
-| -------- | -------------------------------------------- |
-| playerid | 选择玩家的玩家 ID                            |
-| type     | [选择的类型](../resources/selectobjecttypes) |
-| objectid | 所选物体的 ID                                |
-| modelid  | 所选模型的 ID                                |
-| Float:fX | 选择玩家的 X 轴位置                          |
-| Float:fY | 选择玩家的 Y 轴位置                          |
-| Float:fZ | 选择玩家的 Z 轴位置                          |
+| Name               | Description                                             |
+|--------------------|---------------------------------------------------------|
+| playerid           | The ID of the player that selected an object            |
+| SELECT_OBJECT:type | The [type](../resources/selectobjecttypes) of selection |
+| objectid           | The ID of the selected object                           |
+| modelid            | The model of the selected object                        |
+| Float:fX           | The X position of the selected object                   |
+| Float:fY           | The Y position of the selected object                   |
+| Float:fZ           | The Z position of the selected object                   |
 
-## 返回值
+## Returns
 
-1 - 将阻止其他脚本接收此回调。
+1 - Will prevent other scripts from receiving this callback.
 
-0 - 指示此回调将传递给下一个脚本。
+0 - Indicates that this callback will be passed to the next script.
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
-public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ)
+public OnPlayerSelectObject(playerid, SELECT_OBJECT:type, objectid, modelid, Float:fX, Float:fY, Float:fZ)
 {
-    printf("玩家 %d 选择了物体 %d", playerid, objectid);
+    printf("Player %d selected object %d", playerid, objectid);
+
     if (type == SELECT_OBJECT_GLOBAL_OBJECT)
     {
-        EditObject(playerid, objectid);
+        BeginObjectEditing(playerid, objectid);
     }
     else
     {
-        EditPlayerObject(playerid, objectid);
+        BeginPlayerObjectEditing(playerid, objectid);
     }
-    SendClientMessage(playerid, 0xFFFFFFFF, "现在可以编辑物体了!");
+
+    SendClientMessage(playerid, 0xFFFFFFFF, "You now are able to edit your object!");
     return 1;
 }
 ```
 
-## 相关函数
+## Related Functions
 
-- [SelectObject](../functions/SelectObject): 选择一个物体。
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [BeginObjectSelecting](../functions/BeginObjectSelecting): Select an object.
+
+## Related Resources
+
+- [Select Object Types](../resources/selectobjecttypes)

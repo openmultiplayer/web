@@ -1,30 +1,30 @@
 ---
 title: SetCameraBehindPlayer
-description: 使用SetPlayerCameraPos等函数后，将视角重置到玩家的后面。
+description: Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.
 tags: ["player", "camera"]
 ---
 
-## 描述
+## Description
 
-使用 SetPlayerCameraPos 等函数后，将视角重置到玩家的后面。
+Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.
 
-| 参数名   | 说明                  |
-| -------- | --------------------- |
-| playerid | 要重置视角的玩家 ID。 |
+| Name     | Description                                    |
+| -------- | ---------------------------------------------- |
+| playerid | The player you want to restore the camera for. |
 
-## 返回值
+## Returns
 
-1:函数执行成功。
+**true** - The function was executed successfully.
 
-0:函数执行失败。 这意味着指定的玩家不存在。
+**false** - The function failed to execute. This means the player specified does not exist.
 
-## 案例
+## Examples
 
 ```c
 SetCameraBehindPlayer(playerid);
 ```
 
-## 相关函数
+## Related Functions
 
-- [SetPlayerCameraPos](SetPlayerCameraPos): 设置玩家的视角位置。
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): 设置玩家的视角所看的方向。
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.

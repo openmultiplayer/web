@@ -1,38 +1,48 @@
 ---
 title: OnIncomingConnection
-description: 当IP地址尝试连接到服务器时，将调用这个回调函数。要阻止传入的连接，使用BlockIpAddress函数。
+description: This callback is called when an IP address attempts a connection to the server.
 tags: []
 ---
 
-## 描述
+## Description
 
-当 IP 地址尝试连接到服务器时，将调用这个回调函数。要阻止传入的连接，请使用 BlockIpAddress 函数。
+This callback is called when an IP address attempts a connection to the server. To block incoming connections, use BlockIpAddress.
 
-| 参数名       | 描述                     |
-| ------------ | ------------------------ |
-| playerid     | 试图连接的玩家的 ID      |
-| ip_address[] | 试图连接的玩家的 IP 地址 |
-| port         | 试图连接的端口           |
+| Name         | Description                                        |
+| ------------ | -------------------------------------------------- |
+| playerid     | The ID of the player attempting to connect         |
+| ip_address[] | The IP address of the player attempting to connect |
+| port         | The port of the attempted connection               |
 
-## 返回值
+## Returns
 
-1 - 将阻止其他过滤脚本接收到这个回调。
+1 - Will prevent other filterscripts from receiving this callback.
 
-0 - 表示这个回调函数将被传递给下一个过滤脚本。
+0 - Indicates that this callback will be passed to the next filterscript.
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnIncomingConnection(playerid, ip_address[], port)
 {
-    printf("传入的连接为玩家ID %i [IP/port: %s:%i]", playerid, ip_address, port);
+    printf("Incoming connection for player ID %i [IP/port: %s:%i]", playerid, ip_address, port);
     return 1;
 }
 ```
 
-## 相关函数
+## Related Callbacks
 
-- [BlockIpAddress](../functions/BlockIpAddress): 在一定时间内阻止一个 IP 地址连接到服务器。
-- [UnBlockIpAddress](../functions/UnBlockIpAddress): 解除先前阻止的 IP。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player disconnects from the server.
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): This callback is called when a player finishes downloading custom models.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [BlockIpAddress](../functions/BlockIpAddress): Block an IP address from connecting to the server for a set amount of time.
+- [UnBlockIpAddress](../functions/UnBlockIpAddress): Unblock an IP that was previously blocked.

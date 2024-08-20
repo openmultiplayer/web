@@ -1,26 +1,26 @@
 ---
 title: OnPlayerConnect
-description: 当玩家连接到服务器时，这个回调函数被调用。
+description: This callback is called when a player connects to the server.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-当玩家连接到服务器时，这个回调函数被调用。
+This callback is called when a player connects to the server.
 
-| 参数名   | 描述                        |
-| -------- | --------------------------- |
-| playerid | 连接到服务器的该玩家的 ID。 |
+| Name     | Description                          |
+| -------- | ------------------------------------ |
+| playerid | The ID of the player that connected. |
 
-## 返回值
+## Returns
 
-0 - 将阻止其他过滤脚本接收到这个回调。
+0 - Will prevent other filterscripts from receiving this callback.
 
-1 - 表示这个回调函数将被传递给下一个过滤脚本。
+1 - Indicates that this callback will be passed to the next filterscript.
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerConnect(playerid)
@@ -30,14 +30,20 @@ public OnPlayerConnect(playerid)
         playerName[MAX_PLAYER_NAME];
 
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-    format(string, sizeof string, "%s 已加入服务器。欢迎!", playerName);
+    format(string, sizeof string, "%s has joined the server. Welcome!", playerName);
     SendClientMessageToAll(0xFFFFFFAA, string);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
-<TipNPCCallbacksCN />
+<TipNPCCallbacks />
 
-## 相关回调
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server. 
+- [OnIncomingConnection](OnIncomingConnection): This callback is called when a player is attempting to connect to the server. 
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): This callback is called when a player finishes downloading custom models. 

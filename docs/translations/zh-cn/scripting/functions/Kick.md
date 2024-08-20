@@ -1,44 +1,46 @@
 ---
 title: Kick
-description: 将玩家踢出服务器。如果他想继续玩，就必须退出游戏并重新连接。
-tags: ["管理员"]
+description: Kicks a player from the server. They will have to quit the game and re-connect if they wish to continue playing.
+tags: ["player", "administration"]
 ---
 
-## 描述
+## Description
 
-将玩家踢出服务器。如果他想继续玩，就必须退出游戏并重新连接。
+Kicks a player from the server. They will have to quit the game and re-connect if they wish to continue playing.
 
-| 参数名   | 说明                    |
-| -------- | ----------------------- |
-| playerid | 要踢出服务器的玩家 ID。 |
+| Name     | Description                   |
+| -------- | ----------------------------- |
+| playerid | The ID of the player to kick. |
 
-## 返回值
+## Returns
 
-这个函数总是返回 1，即使函数执行失败（指定的玩家不存在）。
+This function always returns 1, even if the function failed to execute (player specified doesn't exist).
 
-## 要点
+## Notes
 
 :::warning
 
-从 SA-MP 0.3x 开始，在 Kick() 之前的任何发送给玩家的代码（比如用 SendClientMessage 发送消息）都不会送达给玩家。必须使用计时器来延迟封禁玩家。
+Any action taken directly before Kick() (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the kick.
 
 :::
 
-## 案例
+## Examples
 
 ```c
-// 为了在连接关闭前给玩家显示一条信息（例如原因），你必须使用一个计时器来创建一个延迟，这个延迟只需要几毫秒的时间。
-// 这里的案例为了安全起见，延迟了整整一秒钟。
+// In order to display a message (eg. reason) for the player before the connection is closed
+// you have to use a timer to create a delay. This delay only needs to be a few milliseconds long,
+// but this example uses a full second just to be on the safe side.
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/kickme", true) == 0)
     {
-        // 踢出执行这个命令的玩家。
-        // 首先，给他发个消息。
-        SendClientMessage(playerid, 0xFF0000FF, "你被踢了!");
+        // Kick the player who executed this command.
 
-        // 实际上是在一秒钟后用计时器踢的他。
+        // First, send them a message.
+        SendClientMessage(playerid, 0xFF0000FF, "You have been kicked!");
+
+        // Actually kick them a second later on a timer.
         SetTimerEx("DelayedKick", 1000, false, "i", playerid);
         return 1;
     }
@@ -53,7 +55,7 @@ public DelayedKick(playerid)
 }
 ```
 
-## 相关函数
+## Related Functions
 
-- [Ban](Ban): 封禁目前在服务器中的某个玩家。
-- [BanEx](BanEx): 以某个原因封禁玩家。
+- [Ban](Ban): Ban a player from playing on the server.
+- [BanEx](BanEx): Ban a player with a custom reason.

@@ -1,53 +1,57 @@
 ---
 title: AddMenuItem
-description: 向指定菜单中添加菜单项。
+description: Adds an item to a specified menu.
 tags: ["menu"]
 ---
 
-## 描述
+## Description
 
-向指定菜单中添加菜单项。
+Adds an item to a specified menu.
 
-| 参数名  | 说明                    |
-| ------- | ----------------------- |
-| menuid  | 要添加菜单项的菜单 ID。 |
-| column  | 要添加菜单项到哪列。    |
-| title[] | 菜单项的标题。          |
+| Name             | Description                                |
+| ---------------- | ------------------------------------------ |
+| Menu:menuid      | The menu id to add an item to.             |
+| column           | The column to add the item to.             |
+| const title[]    | The title for the new menu item.           |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
-## 返回值
+## Returns
 
-添加后该项的行索引。
+The index of the row this item was added to.
 
-## 案例
+## Examples
 
 ```c
 new Menu:gExampleMenu;
 
 public OnGameModeInit()
 {
-    gExampleMenu = CreateMenu("你的菜单", 2, 200.0, 100.0, 150.0, 150.0);
-    AddMenuItem(gExampleMenu, 0, "菜单项 1");
-    AddMenuItem(gExampleMenu, 0, "菜单项 2");
+    gExampleMenu = CreateMenu("Your Menu", 2, 200.0, 100.0, 150.0, 150.0);
+    AddMenuItem(gExampleMenu, 0, "item 1");
+    AddMenuItem(gExampleMenu, 0, "item 2");
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-传递无效菜单 ID 时崩溃。
-每个菜单只能有 12 个选项(第 13 个到列名标题的右边(彩色)，第 14 个及以上根本不显示)。
-只能使用 2 列(0 和 1)。
-每个菜单项只能添加 8 种颜色编码 (`~r~`, `~g~`等)。
-菜单项的最大长度是 31 个符号。
+- Crashes when passed an invalid menu ID.
+- You can only have 12 items per menu (13th goes to the right side of the header of column name (colored), 14th and higher not display at all).
+- You can only use 2 columns (0 and 1).
+- You can only add 8 color codes per one item (~r~, ~g~ etc.). Maximum length of menu item is 31 symbols.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [CreateMenu](CreateMenu): 创建一个菜单。
-- [SetMenuColumnHeader](SetMenuColumnHeader): 设置菜单中某一列的标题。
-- [DestroyMenu](DestroyMenu): 销毁一个菜单。
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): 当玩家在菜单中选择了一个菜单项时调用。
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): 当玩家退出菜单时调用。
+- [CreateMenu](CreateMenu): Create a menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Set the header for one of the columns in a menu.
+- [DestroyMenu](DestroyMenu): Destroy a menu.
+- [IsMenuRowDisabled](IsMenuRowDisabled): Check if a menu row is disabled.
+
+## Related Callbacks
+
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Called when a player exits a menu.

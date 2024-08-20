@@ -1,45 +1,57 @@
 ---
 title: OnPlayerStateChange
-description: 当玩家改变状态时，这个回调函数被调用。例如，当一名玩家从一辆车的司机变成了步行。
+description: This callback is called when a player changes state.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-当玩家改变状态时，这个回调函数被调用。例如，当一名玩家从一辆车的司机变成了步行。
+This callback is called when a player changes state. For example, when a player changes from being the driver of a vehicle to being on-foot.
 
-| 参数名   | 描述                |
-| -------- | ------------------- |
-| playerid | 改变状态的玩家 ID。 |
-| newstate | 玩家的新状态。      |
-| oldstate | 玩家之前的状态。    |
+| Name                  | Description                              |
+| --------------------- | ---------------------------------------- |
+| playerid              | The ID of the player that changed state. |
+| PLAYER_STATE:newstate | The player's new state.                  |
+| PLAYER_STATE:oldstate | The player's previous state.             |
 
-参考 [玩家状态](../resources/playerstates) 来获取所有可用的玩家状态列表。
+Refer to [Player States](../resources/playerstates) for a list of all available player states.
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
-    if (oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // 玩家以驾驶员的身份进入车辆
+    if (oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Player entered a vehicle as a driver
     {
         new vehicleid = GetPlayerVehicleID(playerid);
-        AddVehicleComponent(vehicleid, 1010); // 添加氮气
+        AddVehicleComponent(vehicleid, 1010); // Add NOS to the vehicle
     }
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
-<TipNPCCallbacksCN />
+<TipNPCCallbacks />
 
-## 相关函数
+## Related Callbacks
 
-- [GetPlayerState](../functions/GetPlayerState): 获取玩家的当前状态。
-- [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction): 获得玩家当前的特殊动作。
-- [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction): 设定玩家的特殊动作。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerInteriorChange](OnPlayerInteriorChange): This callback is called when a player changes interior.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [GetPlayerState](../functions/GetPlayerState): Get a player's current state.
+- [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction): Get a player's current special action.
+- [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction): Set a player's special action.
+
+## Related Resources
+
+- [Player States](../resources/playerstates)

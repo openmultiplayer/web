@@ -1,34 +1,39 @@
 ---
 title: OnVehicleStreamIn
-description: 当车辆流入玩家的客户端时调用。
+description: This callback is called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]
 ---
 
-## 描述
+## Description
 
-当车辆流入玩家的客户端时调用。
+This callback is called when a vehicle is streamed to a player's client.
 
-| 参数名      | 描述                           |
-| ----------- | ------------------------------ |
-| vehicleid   | 为玩家流入的车辆 ID。          |
-| forplayerid | 这辆车是为哪个玩家 ID 流入的。 |
+| Name        | Description                                            |
+| ----------- | ------------------------------------------------------ |
+| vehicleid   | The ID of the vehicle that streamed in for the player. |
+| forplayerid | The ID of the player who the vehicle streamed in for.  |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     new string[32];
-    format(string, sizeof(string), "你现在可以看到车辆 %d.", vehicleid);
+    format(string, sizeof(string), "You can now see vehicle %d.", vehicleid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
-<TipNPCCallbacksCN />
+<TipNPCCallbacks />
+
+## Related Callbacks
+- [OnVehicleStreamOut](OnVehicleStreamOut): This callback is called when a vehicle streams out for a player. 
+- [OnPlayerStreamIn](OnPlayerStreamIn): This callback is called when a player streams in for another player. 
+- [OnPlayerStreamOut](OnPlayerStreamOut): This callback is called when a player streams out for another player. 

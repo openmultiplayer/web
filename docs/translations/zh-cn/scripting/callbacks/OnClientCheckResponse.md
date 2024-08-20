@@ -1,25 +1,25 @@
 ---
 title: OnClientCheckResponse
-description: 当SendClientCheck请求完成时，调用这个回调
+description: This callback is called when a SendClientCheck request completes
 tags: []
 ---
 
-## 描述
+## Description
 
-当 SendClientCheck 请求完成时，调用这个回调。
+This callback is called when a SendClientCheck request completes.
 
-| 参数名   | 描述                |
-| -------- | ------------------- |
-| playerid | 被检查的玩家 ID。   |
-| actionid | 执行的检查类型 ID。 |
-| memaddr  | 请求的地址。        |
-| retndata | 检查的结果。        |
+| Name          | Description                       |
+| ------------- | --------------------------------- |
+| playerid      | The ID of the player checked.     |
+| actionid      | The type of check performed.      |
+| memaddr       | The address requested.            |
+| retndata      | The result of the check.          |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerConnect(playerid)
@@ -30,23 +30,30 @@ public OnPlayerConnect(playerid)
 
 public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
-    if(actionid == 0x48) // 或者 72
+    if (actionid == 0x48) // or 72
     {
-        print("警告: 这个玩家似乎不是在使用普通的电脑!!");
-        Kick(playerid);
+        print("The player is connecting using the PC client.");
     }
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::warning
 
-这个回调只能在过滤脚本中被调用。
+**SA:MP Server**: This callback is only called when it is in a filterscript.
+
+**Open Multiplayer Server**: This callback functions normally inside a gamemode / filterscript. 
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [SendClientCheck](../functions/SendClientCheck): 对客户端进行内存检查。
+The following function might be useful, as they're related to this callback in one way or another. 
+
+- [SendClientCheck](../functions/SendClientCheck): Perform a memory check on the client.
+
+## Related Resources
+
+- [opcodes](../resources/opcodes): Action opcodes IDs and their purpose.

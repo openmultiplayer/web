@@ -1,44 +1,48 @@
 ---
 title: floattan
-description: 从特定角度求正切值。
+description: Get the tangent from a given angle.
 tags: ["math", "floating-point"]
 ---
 
 <LowercaseNote />
 
-## 描述
+## Description
 
-从特定角度求正切值。输入的角度可以是弧度、角度或分数。
+Get the tangent from a given angle. The input angle may be in radians, degrees or grades.
 
-| 参数名      | 说明                                                          |
-| ----------- | ------------------------------------------------------------- |
-| Float:value | 求正切的角度。                                                |
-| anglemode   | 要使用的[角度模式](../resources/anglemodes)，取决于输入的值。 |
+| Name        | Description                                                                                         |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| Float:value | The angle from which to get the tangent.                                                            |
+| anglemode   | The [angle mode](../resources/anglemodes) to use, depending on the value entered. (default: radian) |
 
-## 返回值
+## Returns
 
-输入值的正切值。
+The tangent from the value entered.
 
-## 案例
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    printf("30° 的正切是 %f", floattan(30.0, degrees));
-    // 输出: 1
+    printf("The tangent from 30° is %.0f", floattan(30.0, degrees));
+    // Output: 1
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::warning
 
-GTA/SA-MP 在大多数情况下使用角度来表示弧度，例如[GetPlayerFacingAngle](GetPlayerFacingAngle)。因此，你很可能想要使用“角度”模式，而不是弧度。还要注意 GTA 中的角度是逆时针的；270° 为东，90° 为西。南仍然是 180°，北仍然是 0°/360°。
+GTA/SA-MP use degrees for angles in most circumstances, for example [GetPlayerFacingAngle](GetPlayerFacingAngle). Therefore, it is most likely you'll want to use the 'degrees' angle mode, not radians. Also note that angles in GTA are counterclockwise; 270° is East and 90° is West. South is still 180° and North still 0°/360°.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [floatsin](floatsin): 从特定角度求正弦值。
-- [floatcos](floatcos): 从特定角度求余弦值。
+- [floatsin](floatsin): Get the sine from a specific angle.
+- [floatcos](floatcos): Get the cosine from a specific angle.
+
+## Related Resources
+
+- [Angle Modes](../resources/anglemodes): SI unit constants for measuring angles.

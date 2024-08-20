@@ -1,51 +1,53 @@
 ---
 title: OnVehiclePaintjob
-description: 当玩家在改装店里预览车辆油漆涂鸦样式时调用。
+description: This callback is called when a player previews a vehicle paintjob inside a mod shop.
 tags: ["vehicle"]
 ---
 
-## 描述
+## Description
 
-当玩家在改装店里预览车辆油漆涂鸦样式时调用。注意，当玩家购买油漆涂鸦样式时，这个回调函数不会被调用。
+This callback is called when a player previews a vehicle paintjob inside a mod shop. Watch out, this callback is not called when the player buys the paintjob.
 
-| 参数名     | 描述                          |
-| ---------- | ----------------------------- |
-| playerid   | 改变车辆油漆涂鸦的玩家的 ID。 |
-| vehicleid  | 更换了油漆涂鸦的车辆 ID。     |
-| paintjobid | 新的油漆涂鸦样式 ID。         |
+| Name       | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| playerid   | The ID of the player that changed the paintjob of their vehicle. |
+| vehicleid  | The ID of the vehicle that had its paintjob changed.             |
+| paintjobid | The ID of the new paintjob.                                      |
 
-## 返回值
+## Returns
 
-它总是在游戏模式中先被调用，所以返回 0 也会阻止其他过滤脚本看到它。
+It is always called first in gamemode so returning 0 there blocks other filterscripts from seeing it.
 
-## 案例
+## Examples
 
 ```c
 public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 {
     new string[128];
-    format(string, sizeof(string), "你把你的车辆油漆涂鸦改为了 %d!", paintjobid);
+    format(string, sizeof(string), "You have changed your vehicle's paintjob to %d!", paintjobid);
     SendClientMessage(playerid, 0x33AA33AA, string);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-这个回调不被 ChangeVehiclePaintjob 函数调用。
-
-你可以从 vSync 中使用 OnVehicleChangePaintjob 回调来了解玩家何时购买了新的油漆涂鸦。
+This callback is not called by ChangeVehiclePaintjob. You might use OnVehicleChangePaintjob from vSync in order to know when the player buys the paintjob.
 
 :::
 
-## 相关函数
+## Related Callbacks
 
-- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): 改变车辆的油漆涂鸦样式。
-- [ChangeVehicleColor](../functions/ChangeVehicleColor): 改变车辆的颜色。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
 
-## 相关回调
+- [OnVehicleRespray](OnVehicleRespray): This callback is called when a vehicle is resprayed.
+- [OnVehicleMod](OnVehicleMod): This callback is called when a vehicle is modded.
 
-- [OnVehicleRespray](OnVehicleRespray): 当车辆的油漆涂鸦样式被改变时调用。
-- [OnVehicleMod](OnVehicleMod): 当车辆被改装时调用。
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change the paintjob on a vehicle.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.

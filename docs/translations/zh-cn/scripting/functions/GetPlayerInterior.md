@@ -1,30 +1,30 @@
 ---
 title: GetPlayerInterior
-description: 检索玩家当前的内部空间。
+description: Retrieves the player's current interior.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-检索玩家当前的内部空间。目前已知的内部空间及其位置可以在[这里](../resources/interiorids)找到。
+Retrieves the player's current interior. A list of currently known interiors with their positions can be found on this page.
 
-| 参数名   | 说明              |
-| -------- | ----------------- |
-| playerid | 要获取的玩家 ID。 |
+| Name     | Description                           |
+| -------- | ------------------------------------- |
+| playerid | The player to get the interior ID of. |
 
-## 返回值
+## Returns
 
-玩家当前所处的内部空间 ID。
+The interior ID the player is currently in.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid,text[])
 {
-    if (strcmp(cmdtext,"/int",true) == 0)
+    if (strcmp(cmdtext, "/int", true) == 0)
     {
-        new string[128];
-        format(string, sizeof(string), "你所处的内部空间是 %i",GetPlayerInterior(playerid));
+        new string[64];
+        format(string, sizeof(string), "You are in interior %i", GetPlayerInterior(playerid));
         SendClientMessage(playerid, 0xFF8000FF, string);
         return 1;
     }
@@ -32,15 +32,15 @@ public OnPlayerCommandText(playerid,text[])
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-对于 npc 将始终返回 0。
+Always returns interior 0 for NPCs.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [SetPlayerInterior](SetPlayerInterior): 设置某个玩家的内部空间。
-- [GetPlayerVirtualWorld](GetPlayerVirtualWorld): 检索玩家所处的虚拟世界。
+- [SetPlayerInterior](SetPlayerInterior): Set a player's interior.
+- [GetPlayerVirtualWorld](GetPlayerVirtualWorld): Check what virtual world a player is in.

@@ -1,35 +1,41 @@
 ---
 title: Ban
-description: 封禁目前在服务器中的某个玩家。
-tags: ["管理员"]
+description: Ban a player who is currently in the server.
+tags: ["player", "administration"]
 ---
 
-## 描述
+## Description
 
-封禁目前在服务器中的某个玩家。他将无法再次加入服务器。封禁基于 IP，并保存在服务器根目录下的 samp.ban 文件中。BanEx 可以用来给出封禁的原因。可以使用 RCON 的 banip 和 unbanip 命令（SendRconCommand）添加/移除 IP。
+Ban a player who is currently in the server. They will be unable to join the server ever again.
 
-| 参数名   | 说明              |
-| -------- | ----------------- |
-| playerid | 要封禁的玩家 ID。 |
+The ban will be IP-based, and be saved in the **bans.json** file in the server's root directory.
 
-## 返回值
+[BanEx](BanEx) can be used to give a reason for the ban.
 
-该函数不返回任何特定的值。
+IP bans can be added/removed using the RCON `banip` and `unbanip` commands ([SendRconCommand](SendRconCommand)).
 
-## 案例
+| Name     | Description                  |
+| -------- | ---------------------------- |
+| playerid | The ID of the player to ban. |
+
+## Returns
+
+This function does not return any specific values.
+
+## Notes
+
+:::warning
+
+Any action taken directly before Ban() (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the ban.
+
+:::
+
+## Examples
 
 ```c
-public OnPlayerCommandText(playerid, cmdtext[])
-{
-    if (strcmp(cmdtext, "/banme", true) == 0)
-    {
-        // 封禁输入此命令的玩家。
-        Ban(playerid);
-        return 1;
-    }
-}
-// 为了在连接关闭前给玩家显示一条信息（例如原因），你必须使用一个计时器来创建一个延迟，这个延迟只需要几毫秒的时间。
-// 这里的案例为了安全起见，延迟了整整一秒钟。
+// In order to display a message (eg. reason) for the player before the connection is closed
+// you have to use a timer to create a delay. This delay needs only to be a few milliseconds long,
+// but this example uses a full second just to be on the safe side.
 
 forward DelayedBan(playerid);
 public DelayedBan(playerid)
@@ -41,12 +47,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/banme", true) == 0)
     {
-        // 封禁执行此命令的玩家。
+        // Bans the player who executed this command.
 
-        // 首先，给他发一个信息。
-        SendClientMessage(playerid, 0xFF0000FF, "你被封禁了！");
+        // First, send them a message.
+        SendClientMessage(playerid, 0xFF0000FF, "You have been banned!");
 
-        // 实际上是在一秒钟后用计时器封禁的他。
+        // Actually ban them a second later on a timer.
         SetTimerEx("DelayedBan", 1000, false, "d", playerid);
         return 1;
     }
@@ -54,15 +60,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## 要点
+## Related Functions
 
-:::warning
-
-从 SA-MP 0.3x 开始，在 Ban() 之前的任何发送给玩家的代码（比如用 SendClientMessage 发送消息）都不会送达给玩家。必须使用计时器来延迟封禁玩家。
-
-:::
-
-## 相关函数
-
-- [BanEx](BanEx): 以某个原因封禁玩家。
-- [Kick](Kick): 将玩家踢出服务器。
+- [BanEx](BanEx): Ban a player with a custom reason.
+- [Kick](Kick): Kick a player from the server.
+- [BlockIpAddress](BlockIpAddress): Block an IP address from connecting to the server for a set amount of time.
+- [UnBlockIpAddress](UnBlockIpAddress): Unblock an IP that was previously blocked.

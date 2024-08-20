@@ -1,41 +1,45 @@
 ---
 title: GetPlayerCameraMode
-description: 返回所请求玩家的当前GTA视角模式。
+description: Returns the current GTA camera mode for the requested player.
 tags: ["player", "camera"]
 ---
 
-## 描述
+## Description
 
-返回所请求玩家的当前 GTA [视角模式](../resources/cameramodes)。视角模式在判断玩家是否在瞄准、作为乘客在车内射击等方面非常有用。
+Returns the current GTA [camera mode](../resources/cameramodes) for the requested player. The camera modes are useful in determining whether a player is aiming, doing a passenger driveby etc.
 
-| 参数名   | 说明                    |
-| -------- | ----------------------- |
-| playerid | 要检索视角模式的玩家 ID |
+| Name     | Description                                        |
+| -------- | -------------------------------------------------- |
+| playerid | The ID of the player whose camera mode to retrieve |
 
-## 返回值
+## Returns
 
-整数形式的视角模式(如果玩家没有连接则为-1)
+The camera mode as an integer (or -1 if player is not connected)
 
-## 案例
+## Examples
 
 ```c
-/* 当玩家在聊天框中输入“cameramode”时，他们会看到下面的消息。 */
+/* when the player types 'cameramode' in to the chat box, they'll see this. */
 public OnPlayerText(playerid, text[])
 {
     if (strcmp(text, "cameramode", true) == 0)
     {
-        new szMessage[22];
-        format(szMessage, sizeof(szMessage), "你的视角模式是: %d", GetPlayerCameraMode(playerid));
-        SendClientMessage(playerid, 0xA9C4E4FF, szMessage);
+        new string[48];
+        format(string, sizeof(string), "Your camera mode: %d", GetPlayerCameraMode(playerid));
+        SendClientMessage(playerid, 0xA9C4E4FF, string);
     }
     return 0;
 }
 ```
 
-## 相关函数
+## Related Functions
 
-- [GetPlayerCameraPos](GetPlayerCameraPos): 找出玩家的视角在哪里。
-- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): 获取玩家视角的前向量。
-- [SetPlayerCameraPos](SetPlayerCameraPos): 设置玩家的视角位置。
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): 设置玩家的视角所看的方向。
-- [SetCameraBehindPlayer](SetCameraBehindPlayer): 重置视角到玩家后面。
+- [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.
+- [SetCameraBehindPlayer](SetCameraBehindPlayer): Set a player's camera behind them.
+
+## Related Resources
+
+- [Camera Modes](../resources/cameramodes)

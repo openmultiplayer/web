@@ -1,39 +1,41 @@
 ---
 title: GetPlayerCameraAspectRatio
-description: 检索玩家视角的纵横比。
+description: Retrieves the aspect ratio of a player's camera.
 tags: ["player", "camera"]
 ---
 
-## 描述
+## Description
 
-检索玩家视角的纵横比。
+Retrieves the aspect ratio of a player's camera.
 
-| 参数名   | 说明                      |
-| -------- | ------------------------- |
-| playerid | 获得视角纵横比的玩家 ID。 |
+| Name     | Description                                             |
+| -------- | ------------------------------------------------------- |
+| playerid | The ID of the player to get the camera aspect ratio of. |
 
-## 返回值
+## Returns
 
-玩家视角的纵横比，以浮点数表示。纵横比可以是以下三个值之一：关闭宽屏时为 4:3 (1.3333334，Float:0x3FAAAAAB)；打开信箱模式时为 5:4 (1.2470589，Float:0x3F9F9FA0)；无论信箱模式如何，打开宽屏时为 16:9 (1.7764707，Float:0x3FE36364)。
+The aspect ratio of the player's camera, as a float.
 
-## 案例
+The aspect ratio can be one of three values: 4:3 (1.3333334, Float:0x3FAAAAAB) when widescreen is turned off, 5:4 (1.2470589, Float:0x3F9F9FA0) when letterbox mode is turned on, and 16:9 (1.7764707, Float:0x3FE36364) when widescreen is turned on regardless of the letterbox mode.
+
+## Examples
 
 ```c
-new szString[144];
-format(szString, sizeof(szString), "你的纵横比是: %f", GetPlayerCameraAspectRatio(playerid));
-SendClientMessage(playerid, -1, szString);
+new string[128];
+format(string, sizeof(string), "Your aspect ratio: %f", GetPlayerCameraAspectRatio(playerid));
+SendClientMessage(playerid, -1, string);
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-这个函数的返回值代表游戏显示设置中的"宽屏"选项的值，而不是玩家显示器的实际纵横比。
+The return value of this function represents the value of the "widescreen" option in the game's display settings, not the actual aspect ratio of the player's display.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [GetPlayerCameraZoom](GetPlayerCameraZoom): 获取玩家视角的缩放级别。
-- [GetPlayerCameraPos](GetPlayerCameraPos): 找出玩家的视角在哪里。
-- [GetPlayerCameraFrontVector](GetPlayerVameraFrontVector): 获取玩家视角的前向量。
+- [GetPlayerCameraZoom](GetPlayerCameraZoom): Get the zoom level of a player's camera.
+- [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

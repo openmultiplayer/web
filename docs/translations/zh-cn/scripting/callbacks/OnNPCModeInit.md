@@ -1,14 +1,15 @@
 ---
 title: OnNPCModeInit.
 description: This callback is called when a NPC script is loaded.
-tags: []
+tags: ["npc"]
 ---
 
-## 描述
+## Description
 
 This callback is called when a NPC script is loaded.
 
-## 案例
+
+## Examples
 
 ```c
 public OnNPCModeInit()
@@ -18,6 +19,8 @@ public OnNPCModeInit()
 }
 ```
 
-## 相关回调
+## Related Callbacks
 
-- [OnNPCModeExit](../callbacks/OnNPCModeExit): Gets called when a NPC script unloaded.
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnNPCModeExit](OnNPCModeExit): This callback is called when a NPC script unloaded.

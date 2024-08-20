@@ -1,29 +1,29 @@
 ---
 title: AddCharModel
-description: 添加新的自定义角色模型以供下载。
-tags: []
+description: Adds a new custom character model for download.
+tags: ["custom skin", "char model"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL R1' />
 
-## 描述
+## Description
 
-添加新的自定义角色模型以供下载。模型文件将以 .CRC 格式存储在玩家的 Documents\GTA San Andreas User Files\SAMP\cache 的服务器 IP 和端口的文件夹中。
+Adds a new custom character model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
 
-| 参数名  | 说明                                                                                  |
-| ------- | ------------------------------------------------------------------------------------- |
-| baseid  | 要使用的基础皮肤模型 ID(下载失败时要使用的角色和原始角色的行为)。                     |
-| newid   | 新的皮肤模型 ID 从 20000 到 30000(共 10000 个插槽)，稍后将与 SetPlayerSkin 一起使用。 |
-| dffname | 默认情况下位于服务器的 models 文件夹下的 .dff 模型碰撞文件的名称(artpath 设置)。      |
-| txdname | 默认情况下位于服务器的 models 文件夹下的 .txd 模型纹理文件的名称(artpath 设置)。      |
+| Name                   | Description                                                                                                    |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------- |
+| baseid                 | The base skin model ID to use (behavior of the character & original character to use when download is failed). |
+| newid                  | The new skin model ID ranged from 20001 to 30000 (10000 slots) to be used later with SetPlayerSkin             |
+| const dff[]            | Name of the .dff model collision file located in models server folder by default (artpath setting).            |
+| const textureLibrary[] | Name of the .txd model texture file located in models server folder by default (artpath setting).              |
 
-## 返回值
+## Returns
 
-1:函数执行成功。
+**1:** The function executed successfully.
 
-0:函数执行失败。
+**0:** The function failed to execute.
 
-## 案例
+## Examples
 
 ```c
 public OnGameModeInit()
@@ -39,20 +39,20 @@ AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
 AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-必须首先在服务器设置中启用 useartwork 才能工作
+**useartwork** or **artwork.enable** must be enabled first in server settings in order for this to work.
 
 :::
 
 :::warning
 
-目前还没有限制何时可以调用这个函数，但请注意，如果你没有在 OnFilterScriptInit/OnGameModeInit 中调用它们，你就会面临一些已经在服务器上的玩家可能没有下载模型的风险。
+There are currently no restrictions on when you can call this function, but be aware that if you do not call them inside [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), you run the risk that some players, who are already on the server, may not have downloaded the models.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [SetPlayerSkin](SetPlayerSkin): 设置玩家的皮肤。
+- [SetPlayerSkin](SetPlayerSkin): Set a player's skin.

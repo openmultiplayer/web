@@ -1,42 +1,52 @@
 ---
 title: OnVehicleSpawn
-description: 这个回调函数在载具重生时被调用。
+description: This callback is called when a vehicle respawns.
 tags: ["vehicle"]
 ---
 
 :::warning
 
-这个回调函数**仅**在载具**重生**时被调用。 CreateVehicle 和 AddStaticVehicle(Ex) 函数 **不会** 触发此回调。
+This callback is called **only** when vehicle **re**spawns! CreateVehicle and AddStaticVehicle(Ex) **won't** trigger this callback.
 
 :::
 
-## 描述
+## Description
 
-这个回调函数在载具重生时被调用。
+This callback is called when a vehicle respawns.
 
-| 参数名    | 描述              |
-| --------- | ----------------- |
-| vehicleid | 生成的载具的 ID。 |
+| Name      | Description                         |
+| --------- | ----------------------------------- |
+| vehicleid | The ID of the vehicle that spawned. |
 
-## 返回值
+## Returns
 
-0 - 将阻止其他过滤脚本接收到这个回调。
+0 - Will prevent other filterscripts from receiving this callback.
 
-1 - 表示这个回调函数将被传递给下一个过滤脚本。
+1 - Indicates that this callback will be passed to the next filterscript.
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("载具 %i 生成!",vehicleid);
+    printf("Vehicle %i spawned!",vehicleid);
     return 1;
 }
 ```
 
-## 相关函数
+## Related Callbacks
 
-- [SetVehicleToRespawn](../functions/SetVehicleToRespawn): 重生载具。
-- [CreateVehicle](../functions/CreateVehicle): 创建载具。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+
+- [OnVehicleDeath](OnVehicleDeath): This callback is called when a vehicle is destroyed. 
+- [OnPlayerSpawn](OnPlayerSpawn): This callback is called when a player spawns. 
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [SetVehicleToRespawn](../functions/SetVehicleToRespawn): Respawn a vehicle.
+- [CreateVehicle](../functions/CreateVehicle): Create a vehicle.

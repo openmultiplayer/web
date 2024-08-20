@@ -1,23 +1,23 @@
 ---
 title: ClearAnimations
-description: 清除指定玩家的所有动画（它也取消所有当前任务，如喷气背包、跳伞、进入载具、驾驶（将玩家从载具中移除）、游泳等。
-tags: []
+description: Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting, entering vehicles, driving (removes player out of vehicle), swimming, etc).
+tags: ["player", "animation"]
 ---
 
-## 描述
+## Description
 
-清除指定玩家的所有动画（它也取消所有当前任务，如喷气背包、跳伞、进入载具、驾驶（将玩家从载具中移除）、游泳等。
+Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting, entering vehicles, driving (removes player out of vehicle), swimming, etc).
 
-| 参数名    | 说明                                                         |
-| --------- | ------------------------------------------------------------ |
-| playerid  | 要清除动画的玩家的 ID。                                      |
-| forcesync | 设为 1，强迫 playerid 与流半径内的其他玩家同步动画（可选）。 |
+| Name                 | Description                                                                                                          |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| playerid             | The ID of the player to clear the animations of.                                                                     |
+| FORCE_SYNC:forceSync | Set to `SYNC_ALL` to force playerid to sync the animation with other players in streaming radius (default=SYNC_NONE) |
 
-## 返回值
+## Returns
 
-这个函数总是返回 1，即使指定的玩家没有连接。
+This function always returns **true**, even when the player specified is not connected.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -31,20 +31,20 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-如果在 ApplyAnimation 中给冻结参数传入 1，那么当动画结束后，ClearAnimations 不会有任何效果。
+ClearAnimations doesn't do anything when the animation ends if we pass 'true' for the freeze parameter in ApplyAnimation.
 
 :::
 
 :::tip
 
-与其他一些将玩家从载具中移除的方法不同，这也会将载具的速度重置为零，使载具瞬间停止前进。玩家将出现在他载具的座位上的位置相同的上方。
+Unlike some other ways to remove player from a vehicle, this will also reset the vehicle's velocity to zero, instantly stopping the car. Player will appear on top of the vehicle with the same location as he was in his car seat.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [ApplyAnimation](ApplyAnimation): 将动画应用于玩家。
+- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.

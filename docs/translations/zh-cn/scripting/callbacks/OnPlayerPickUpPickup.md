@@ -1,23 +1,23 @@
 ---
 title: OnPlayerPickUpPickup
-description: 当玩家拿到通过拾取器创建的拾取时调用。
+description: This callback is called when a player picks up a pickup created with CreatePickup.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-当玩家拿到通过拾取器创建的拾取时调用。
+This callback is called when a player picks up a pickup created with [CreatePickup](../functions/CreatePickup).
 
-| 参数名   | 描述                              |
-| -------- | --------------------------------- |
-| playerid | 拿到拾取信息的玩家的 ID。         |
-| pickupid | 拿到的 ID，由 CreatePickup 返回。 |
+| Name     | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| playerid | The ID of the player that picked up the pickup.                             |
+| pickupid | The ID of the pickup, returned by [CreatePickup](../functions/CreatePickup) |
 
-## 返回值
+## Returns
 
-它在游戏模式中总是先被调用。
+It is always called first in gamemode.
 
-## 案例
+## Examples
 
 ```c
 new pickup_Cash;
@@ -25,8 +25,8 @@ new pickup_Health;
 
 public OnGameModeInit()
 {
-    pickup_Cash = CreatePickup(1274, 2, 0.0, 0.0, 9.0);
-    pickup_Health = CreatePickup(1240, 2, 0.0, 0.0, 9.0);
+    pickup_Cash = CreatePickup(1274, 2, 2009.8658, 1220.0293, 10.8206, -1);
+    pickup_Health = CreatePickup(1240, 2, 2009.8474, 1218.0459, 10.8175, -1);
     return 1;
 }
 
@@ -44,7 +44,16 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 }
 ```
 
-## 相关函数
+## Related Callbacks
 
-- [CreatePickup](../functions/CreatePickup): 创建一个拾取。
-- [DestroyPickup](../functions/DestroyPickup): 销毁一个拾取。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPickupStreamIn](OnPickupStreamIn): Called when a pickup enters the visual range of a player.
+- [OnPickupStreamOut](OnPickupStreamOut): Called when a pickup leaves the visual range of a player.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [CreatePickup](../functions/CreatePickup): Create a pickup.
+- [DestroyPickup](../functions/DestroyPickup): Destroy a pickup.

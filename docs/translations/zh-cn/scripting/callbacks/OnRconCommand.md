@@ -1,27 +1,27 @@
 ---
 title: OnRconCommand
-description: 当通过服务器控制台、远程RCON或通过游戏内“/RCON 指令”发送指令时，调用该回调。
-tags: []
+description: This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
+tags: ["rcon", "administration"]
 ---
 
-## 描述
+## Description
 
-当通过服务器控制台、远程 RCON 或通过游戏内“/RCON 指令”发送指令时，调用该回调。
+This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
 
-| 参数名 | 描述                                             |
-| ------ | ------------------------------------------------ |
-| cmd[]  | 一个字符串，其中包含输入的指令和传递的任何参数。 |
+| Name  | Description                                                                       |
+| ----- | --------------------------------------------------------------------------------- |
+| cmd[] | A string containing the command that was typed, as well as any passed parameters. |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用，所以返回 1 会阻止游戏模式看到它。
+It is always called first in filterscripts so returning 1 there blocks gamemode from seeing it.
 
-## 案例
+## Examples
 
 ```c
 public OnRconCommand(cmd[])
 {
-    printf("[RCON]: 你输入了'/rcon %s'!", cmd);
+    printf("[RCON]: You typed '/rcon %s'!", cmd);
     return 0;
 }
 
@@ -29,37 +29,39 @@ public OnRconCommand(cmd[])
 {
     if (!strcmp(cmd, "hello", true))
     {
-        SendClientMessageToAll(0xFFFFFFAA, "你好 世界！");
-        print("你向世界问好。"); // 对于在聊天中输入rcon指令的玩家，将以白色文字显示。
+        SendClientMessageToAll(0xFFFFFFAA, "Hello World!");
+        print("You said hello to the world."); // This will appear to the player who typed the rcon command in the chat in white
         return 1;
     }
     return 0;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-当玩家输入指令时，“/rcon”不包含在“cmd”中。
-
-如果你在这里使用“print”函数，它将向在游戏中输入指令的玩家发送消息以及日志。
-
-当玩家没有以 RCON 管理员身份登录时，这个回调函数不会被调用。
-
-如果玩家未以 RCON 管理员身份登录，并且使用/rcon login 指令，则不会调用此回调，而 OnRconLoginAttempt 将调用此回调。
-
-然而，当玩家以 RCON 管理员的身份登录时，使用这个指令将调用这个回调。
+"/rcon " is not included in "cmd" when a player types a command. If you use the "print" function here, it will send a message to the player who typed the command in-game as well as the log. This callback is not called when the player is not logged in as RCON admin. When the player is not logged in as RCON admin and uses /rcon login, this callback will not be called and OnRconLoginAttempt is called instead. However, when the player is logged in as RCON admin, the use of this command will call this callback.
 
 :::
 
 :::warning
 
-你需要将这个回调包含在加载的过滤脚本中，以便它在游戏模式下工作!
+In SA-MP you will need to include this callback in a loaded filterscript for it to work in the gamemode!
+
+But it is fixed in open.mp
 
 :::
 
-## 相关回调/函数
+## Related Callbacks
 
-- [IsPlayerAdmin](../functions/IsPlayerAdmin): 检查一个玩家是否登录到 RCON。
-- [OnRconLoginAttempt](OnRconLoginAttempt): 当试图登录到 RCON 时调用。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnRconLoginAttempt](OnRconLoginAttempt): This callback is called when an attempt to login to RCON is made.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [IsPlayerAdmin](../functions/IsPlayerAdmin): Checks if a player is logged into RCON.
+- [SetPlayerAdmin](../functions/SetPlayerAdmin): Sets the player as an RCON admin.

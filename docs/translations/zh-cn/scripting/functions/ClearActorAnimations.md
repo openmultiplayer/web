@@ -1,42 +1,41 @@
 ---
 title: ClearActorAnimations
-description: 清除应用在演员身上的任何动画。
-tags: []
+description: Clear any animations applied to an actor.
+tags: ["actor"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
-## 描述
+## Description
 
-清除应用在演员身上的任何动画。
+Clear any animations applied to an actor.
 
-| 参数名  | 说明                                           |
-| ------- | ---------------------------------------------- |
-| actorid | 要清除动画的演员的 ID。（由 CreateActor 返回） |
+| Name    | Description                                                                               |
+| ------- | ----------------------------------------------------------------------------------------- |
+| actorid | The ID of the actor (returned by [CreateActor](CreateActor)) to clear the animations for. |
 
-## 返回值
+## Returns
 
-1:函数执行成功。
+**true** - The function executed successfully.
 
-0:函数执行失败，传入的演员不存在。
+**false** - The function failed to execute. The actor specified does not exist.
 
-## 案例
+## Examples
 
 ```c
 new gMyActor;
 
 public OnGameModeInit()
 {
-    gMyActor = CreateActor(...);
+    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
+    ApplyActorAnimation(gMyActor, "DEALER", "shop_pay", 4.1, false, false, false, false, 0); // Pay anim
+    return 1;
 }
 
-// 其他地方
-ApplyActorAnimation(gMyActor, ...);
-
-// 其他地方
+// Somewhere else
 ClearActorAnimations(gMyActor);
 ```
 
-## 相关函数
+## Related Functions
 
-- [ApplyActorAnimation](ApplyActorAnimation): 将动画应用于演员。
+- [ApplyActorAnimation](ApplyActorAnimation): Apply an animation to an actor.

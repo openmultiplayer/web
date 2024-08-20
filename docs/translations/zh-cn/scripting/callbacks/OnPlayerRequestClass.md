@@ -1,44 +1,52 @@
 ---
 title: OnPlayerRequestClass
-description: 当玩家在类选择器中改变类时调用(当类选择器第一次出现时)。
-tags: ["player"]
+description: This callback is called when a player changes class at class selection (and when class selection first appears).
+tags: ["player", "class"]
 ---
 
-## 描述
+## Description
 
-当玩家在类选择器中改变类时调用(当类选择器第一次出现时)。
+This callback is called when a player changes class at class selection (and when class selection first appears).
 
-| 参数名   | 描述                                              |
-| -------- | ------------------------------------------------- |
-| playerid | 更换类的玩家 ID。                                 |
-| classid  | 正在被查看的当前类的 ID(由 AddPlayerClass 返回)。 |
+| Name     | Description                                                                                           |
+| -------- | ----------------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player that changed class.                                                              |
+| classid  | The ID of the current class being viewed (returned by [AddPlayerClass](../functions/AddPlayerClass)). |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerRequestClass(playerid,classid)
 {
-    if (classid == 3 && !IsPlayerAdmin(playerid))
+    if (classid == 3 && !IsPlayerAdmin(playerid))
     {
-        SendClientMessage(playerid, COLOR_RED, "此皮肤仅供管理员使用!");
+        SendClientMessage(playerid, COLOR_RED, "This skin is only for admins!");
         return 0;
     }
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-当玩家按下 F4 键时，这个回调也会被调用。
+This callback is also called when a player presses F4.
 
 :::
 
-## 相关函数
+## Related Callbacks
 
-- [AddPlayerClass](../functions/AddPlayerClass): 添加一个玩家类。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerRequestSpawn](OnPlayerRequestSpawn): This callback is called when a player attempts to spawn via class selection. 
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [AddPlayerClass](../functions/AddPlayerClass): Add a player class.

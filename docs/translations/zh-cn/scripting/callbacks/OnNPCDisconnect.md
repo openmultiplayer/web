@@ -1,28 +1,30 @@
 ---
 title: OnNPCDisconnect
-description: 当NPC与服务器断开连接时，会调用此回调。
-tags: []
+description: This callback is called when the NPC gets disconnected from the server.
+tags: ["npc"]
 ---
 
-## 描述
+## Description
 
-当 NPC 与服务器断开连接时，会调用此回调。
+This callback is called when the NPC gets disconnected from the server.
 
-| 参数名   | 描述                       |
-| -------- | -------------------------- |
-| reason[] | NPC 与服务器断开连接的原因 |
+| Name         | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| reason[]     | The reason why the bot has disconnected from the server |
 
-## 案例
+## Examples
 
 ```c
 public OnNPCDisconnect(reason[])
 {
-    printf("已断开与服务器的连接 %s", reason);
+    printf("Disconnected from the server. %s", reason);
 }
 ```
 
-## 相关回调
+## Related Callbacks
 
-- [OnNPCConnect](../callbacks/OnNPCConnect): 当 NPC 成功连接到服务器时调用。
-- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): 在玩家离开服务器时调用。
-- [OnPlayerConnect](../callbacks/OnPlayerConnect): 当玩家连接到服务器时调用。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnNPCConnect](OnNPCConnect): This callback is called when the NPC successfully connects to the server.
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server.
+- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.

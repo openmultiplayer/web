@@ -1,58 +1,56 @@
 ---
 title: OnVehicleSirenStateChange
-description: 当车辆的警笛被触发时，这个回调被调用。
+description: This callback is called when a vehicle's siren is toggled.
 tags: ["vehicle"]
 ---
 
-:::warning
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
-SA-MP 0.3.7 版本增加了这个回调函数，无法在以前的版本使用！
+## Description
 
-:::
+This callback is called when a vehicle's siren is toggled.
 
-## 描述
+| Name      | Description                                               |
+| --------- | --------------------------------------------------------- |
+| playerid  | The ID of the player that toggled the siren (driver).     |
+| vehicleid | The ID of the vehicle of which the siren was toggled for. |
+| newstate  | 0 if siren was turned off, 1 if siren was turned on.      |
 
-当车辆的警笛被触发时，这个回调被调用。
+## Returns
 
-| 参数名    | 描述                               |
-| --------- | ---------------------------------- |
-| playerid  | 触发警笛的玩家(司机)的 ID。        |
-| vehicleid | 打开警笛的那辆车的 ID。            |
-| newstate  | 0 表示关闭警笛，1 如果警笛已经打开 |
+1 - Will prevent gamemode from receiving this callback.
 
-## 返回值
+0 - Indicates that this callback will be passed to the gamemode.
 
-1 - 将阻止其他游戏模式接收到这个回调。
+It is always called first in filterscripts.
 
-0 - 表示这个回调函数将被传递给下一个游戏模式。
-
-它在过滤脚本中总是先被调用。
-
-## 案例
+## Examples
 
 ```c
 public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 {
     if (newstate)
     {
-        GameTextForPlayer(playerid, "~W~警笛 ~G~开", 1000, 3);
+        GameTextForPlayer(playerid, "~W~Siren ~G~on", 1000, 3);
     }
     else
     {
-        GameTextForPlayer(playerid, "~W~警笛 ~r~关", 1000, 3);
+        GameTextForPlayer(playerid, "~W~Siren ~r~off", 1000, 3);
     }
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-只有当汽车的警笛打开或关闭时，才会调用这个回调，当交替警笛在使用时(按住喇叭)不能使用。
+This callback is only called when a vehicle's siren is toggled on or off, NOT when the alternate siren is in use (holding horn).
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): 检查车辆的警笛是否打开或关闭。
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): Check whether a vehicle's siren is on or off.

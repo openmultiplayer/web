@@ -1,74 +1,82 @@
 ---
 title: OnPlayerWeaponShot
-description: 当玩家使用武器射击时，这个回调函数被调用。
+description: This callback is called when a player fires a shot from a weapon.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-该回调函数在玩家使用武器射击时调用。仅适用于有子弹的武器。仅对乘客提供支持(不对司机提供支持，并且不适用 sea sparrow (水上飞机)/hunter shots (阿帕奇直升机))。
+This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).
 
-| 参数名   | 描述                                                                            |
-| -------- | ------------------------------------------------------------------------------- |
-| playerid | 用武器射击的玩家的 ID。                                                         |
-| WEAPON:weaponid | 该玩家使用的[武器](../resources/weaponids)的 ID。                               |
-| BULLET_HIT_TYPE:hittype  | 射击击中的物体[类型](../resources/bullethittypes)(无、玩家、车辆或(玩家)物体)。 |
-| hitid    | 被击中的玩家、车辆或物体的 ID。                                                 |
-| Float:fX       | 玩家所击中的 X 轴坐标。                                                         |
-| Float:fY       | 玩家所击中的 Y 轴坐标。                                                         |
-| Float:fZ       | 玩家所击中的 Z 轴坐标。                                                         |
+| Name                    | Description                                                                                               |
+|-------------------------|-----------------------------------------------------------------------------------------------------------|
+| playerid                | The ID of the player that shot a weapon.                                                                  |
+| WEAPON:weaponid         | The ID of the [weapon](../resources/weaponids) shot by the player.                                        |
+| BULLET_HIT_TYPE:hittype | The [type](../resources/bullethittypes) of thing the shot hit (none, player, vehicle, or (player)object). |
+| hitid                   | The ID of the player, vehicle or object that was hit.                                                     |
+| Float:fX                | The X coordinate that the shot hit.                                                                       |
+| Float:fY                | The Y coordinate that the shot hit.                                                                       |
+| Float:fZ                | The Z coordinate that the shot hit.                                                                       |
 
-## 返回值
+## Returns
 
-0 - 防止子弹造成伤害。
+0 - Prevent the bullet from causing damage.
 
-1 - 允许子弹造成伤害。
+1 - Allow the bullet to cause damage.
 
-它在过滤脚本中总是先被调用，所以返回 0 会阻止其他脚本看到它。
+It is always called first in filterscripts so returning 0 there also blocks other scripts from seeing it.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
-    new szString[144];
-    format(szString, sizeof(szString), "武器 %i 开火了。击中物体类型: %i   被击中的ID: %i   坐标: %f, %f, %f", weaponid, hittype, hitid, fX, fY, fZ);
-    SendClientMessage(playerid, -1, szString);
+    new string[144];
+    format(string, sizeof(string), "Weapon %i fired. hittype: %i   hitid: %i   pos: %f, %f, %f", weaponid, hittype, hitid, fX, fY, fZ);
+    SendClientMessage(playerid, -1, string);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-这个回调函数只在启用延迟补偿时被调用。
+This callback is only called when lag compensation is enabled. If hittype is:
 
-如果 hittype(物体类型) 是:
-
-- BULLET_HIT_TYPE_NONE：fX, fY 和 fZ 参数是法线坐标，如果没有击中任何物体(例如子弹无法到达的远的物体)，坐标将为 0.0;
-- 其他类型：fX，fY 和 fZ 是相对于 Hitid 的偏移量。
+- `BULLET_HIT_TYPE_NONE`: the fX, fY and fZ parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
+- Others: the fX, fY and fZ are offsets relative to the hitid.
 
 :::
 
 :::tip
 
-[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) 函数可以在这个回调中用于获得更详细的子弹向量信息。
+[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) can be used in this callback for more detailed bullet vector information.
 
 :::
 
 :::warning
 
-已知 Bug(s):
+Known Bug(s):
 
-当你作为驾驶员在车中射击或者你在瞄准后(在空中射击)时不会被调用。
-
-如果你射击的是一名驾驶着一辆车的玩家，那么 hittype 值为 BULLET_HIT_TYPE_VEHICLE，并带有正确的 hitid(即击中的玩家的车辆 id)，而不是 BULLET_HIT_TYPE_PLAYER(击中的玩家)。
-
-SA-MP 0.3.7 版本中修正了部分问题：当用户恶意发送假武器数据时，其他的玩家客户端会冻结或崩溃。要解决这一问题，请检查参数中的 weaponid 武器 ID 是否能够真正发射子弹。
+- Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air).
+- It is called as `BULLET_HIT_TYPE_VEHICLE` with the correct `hitid` (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as `BULLET_HIT_TYPE_PLAYER` at all.
+- Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
 
 :::
 
-## 相关函数
+## Related Callbacks
 
-- [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): 获取玩家最后一枪的向量信息。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): Retrieves the vector of the last shot a player fired.
+
+## Related Resources
+
+- [Bullet Hit Types](../resources/bullethittypes)

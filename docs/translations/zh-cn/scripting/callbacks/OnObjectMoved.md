@@ -1,46 +1,50 @@
 ---
 title: OnObjectMoved
-description: 当物体在MoveObject之后移动时(当物体停止移动时)调用此回调。
-tags: []
+description: This callback is called when an object is moved after MoveObject (when it stops moving).
+tags: ["object"]
 ---
 
-## 描述
+## Description
 
-当物体在 MoveObject 之后移动时(当物体停止移动时)调用此回调。
+This callback is called when an object is moved after MoveObject (when it stops moving).
 
-| 参数名   | 描述          |
-| -------- | ------------- |
-| objectid | 移动的物体 ID |
+| Name     | Description                         |
+| -------- | ----------------------------------- |
+| objectid | The ID of the object that was moved |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnObjectMoved(objectid)
 {
-    printf("物体 %d 完成了移动。", objectid);
+    printf("Object %d finished moving.", objectid);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-在此回调中使用 SetObjectPos 时不起作用。要修复该问题，请重新创建该物体。
+[SetObjectPos](../functions/SetObjectPos) does not work when used in this callback. To fix it, recreate the object.
 
 :::
 
-## 相关函数
+## Related Callbacks
 
-- [MoveObject](../functions/MoveObject): 移动物体。
-- [MovePlayerObject](../functions/MovePlayerObject): 移动玩家物体。
-- [IsObjectMoving](../functions/IsObjectMoving): 检查物体是否在移动。
-- [StopObject](../functions/StopObject): 阻止物体移动。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
 
-## 相关回调
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): This callback is called when a player-object stops moving.
 
-- [OnPlayerObjectMoved](OnPlayerObjectMoved): 当玩家物体停止移动时调用。
+## Related Functions
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [MoveObject](../functions/MoveObject): Move an object.
+- [MovePlayerObject](../functions/MovePlayerObject): Move a player object.
+- [IsObjectMoving](../functions/IsObjectMoving): Check if the object is moving.
+- [StopObject](../functions/StopObject): Stop an object from moving.

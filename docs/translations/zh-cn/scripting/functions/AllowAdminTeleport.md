@@ -1,39 +1,40 @@
 ---
 title: AllowAdminTeleport
-description: 这个函数将决定RCON管理员在设置导航点时是否会被传送。
+description: This function will determine whether RCON admins will be teleported to their waypoint when they set one.
 tags: []
 ---
 
 :::warning
 
-从 0.3d 版本开始，这个函数已被废弃。请看[OnPlayerClickMap](../callbacks/OnPlayerClickMap).
+This function, as of 0.3d, is deprecated. Please see [OnPlayerClickMap](../callbacks/OnPlayerClickMap).
 
 :::
 
-## 描述
+## Description
 
-这个函数将决定 RCON 管理员在设置导航点时是否会被传送。
+This function will determine whether RCON admins will be teleported to their waypoint when they set one.
 
-| 参数名 | 说明             |
-| ------ | ---------------- |
-| allow  | 0 禁用，1 启用。 |
+| Name       | Description                              |
+| ---------- | ---------------------------------------- |
+| bool:allow | 'false' to disable and 'true' to enable. |
 
-## 返回值
+## Returns
 
-该函数不返回任何特定的值。
+This function does not return any specific values.
 
-## 案例
+## Examples
 
 ```c
 public OnGameModeInit()
 {
-    AllowAdminTeleport(1);
-    // 其他的代码
+    AllowAdminTeleport(true);
+    // Other stuff
     return 1;
 }
 ```
 
-## 相关函数
+## Related Functions
 
-- [IsPlayerAdmin](IsPlayerAdmin): 检查玩家是否已经登录到 RCON。
-- [AllowPlayerTeleport](AllowPlayerTeleport): 为玩家启用/禁用在地图上点击右键传送的功能。
+- [IsAdminTeleportAllowed](IsAdminTeleportAllowed): Checks if the RCON admins allowed to teleport by right-clicking on the map.
+- [IsPlayerAdmin](IsPlayerAdmin): Checks if a player is logged into RCON.
+- [AllowPlayerTeleport](AllowPlayerTeleport): Toggle waypoint teleporting for players.

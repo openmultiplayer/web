@@ -1,40 +1,46 @@
 ---
 title: OnPlayerFinishedDownloading
-description: 当玩家下载完自定义模型时，这个回调函数被调用。
+description: This callback is called when a player finishes downloading custom models.
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3.DL R1' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
 
-## 描述
+## Description
 
-当玩家下载完自定义模型时，这个回调函数被调用。有关如何向服务器添加自定义模型的更多信息，请参见发布线程和本教程。
+This callback is called when a player finishes downloading custom models. For more information on how to add custom models to your server, see the [release thread](https://sampforum.blast.hk/showthread.php?tid=644105) and [this tutorial](https://sampforum.blast.hk/showthread.php?tid=644123).
 
-| 参数名       | 描述                                      |
-| ------------ | ----------------------------------------- |
-| playerid     | 完成了自定义模型下载的玩家的 ID。         |
-| virtualworld | 玩家完成了自定义模型下载的虚拟世界的 ID。 |
+| Name         | Description                                                                    |
+| ------------ | ------------------------------------------------------------------------------ |
+| playerid     | The ID of the player that finished downloading custom models.                  |
+| virtualworld | The ID of the virtual world the player finished downloading custom models for. |
 
-## 返回值
+## Returns
 
-这个回调函数不处理返回值。
+This callback does not handle returns.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerFinishedDownloading(playerid, virtualworld)
 {
-    SendClientMessage(playerid, 0xffffffff, "下载完成。");
+    SendClientMessage(playerid, 0xFFFFFFFF, "Downloads finished.");
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-玩家每次改变虚拟世界的时候都会调用这个回调，即使在没有自定义模型的虚拟世界里也是如此。
+This callback is called every time a player changes virtual worlds, even if there are no custom models present in that world.
 
 :::
 
-## 相关回调
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another.
+
+- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server. 
+- [OnIncomingConnection](OnIncomingConnection): This callback is called when a player is attempting to connect to the server. 

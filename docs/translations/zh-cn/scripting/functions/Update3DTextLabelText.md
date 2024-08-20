@@ -1,49 +1,54 @@
 ---
 title: Update3DTextLabelText
-description: 更新一个三维文本标签的文本内容和颜色。
+description: Updates a 3D Text Label text and color.
 tags: ["3dtextlabel"]
 ---
 
-## 描述
+## Description
 
-更新一个三维文本标签的文本内容和颜色。
+Updates a 3D Text Label text and color.
 
-| 参数名    | 说明                               |
-| --------- | ---------------------------------- |
-| Text3D:textid | 你想更新的三维文本标签 ID。        |
-| color     | 从现在起，三维文本标签的颜色。     |
-| text[]    | 从现在起，三维文本标签的文本内容。 |
+| Name             | Description                                                   |
+| ---------------- | ------------------------------------------------------------- |
+| Text3D:textid    | The 3D Text Label you want to update.                         |
+| colour           | The color the 3D Text Label should have from now on.          |
+| const text[]     | The new text which the 3D Text Label should have from now on. |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.                    |
 
-## 返回值
+## Returns
 
-该函数不返回任何特定的值。
+This function does not return any specific values.
 
-## 案例
+## Examples
 
 ```c
+new Text3D:mylabel;
+
 public OnGameModeInit()
 {
-    new Text3D: mylabel;
-    mylabel = Create3DTextLabel("我在坐标:\n30.0,40.0,50.0", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0);
-    Update3DTextLabelText(mylabel, 0xFFFFFFFF, "新的文本内容。");
+    mylabel = Create3DTextLabel("I'm at the coordinates:\n30.0,40.0,50.0", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0);
+
+    Update3DTextLabelText(mylabel, 0xFF0000FF, "New text.");
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::warning
 
-如果 text[] 参数是空的，服务端或位于文本标签旁的玩家客户端可能会崩溃!
+If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [Create3DTextLabel](Create3DTextLabel): 创建一个三维文本标签。
-- [Delete3DTextLabel](Delete3DTextLabel): 删除一个三维文本标签。
-- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): 将三维文本标签附加到玩家身上。
-- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): 将一个三维文本标签附加到载具。
-- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): 为玩家创建一个三维文本标签。
-- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): 删除一个为玩家创建的三维文本标签。
-- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): 改变玩家的三维文本标签的文本内容和颜色。
+- [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
+- [Delete3DTextLabel](Delete3DTextLabel): Delete a 3D text label.
+- [Get3DTextLabelText](Get3DTextLabelText): Gets the 3D text label text.
+- [Get3DTextLabelColour](Get3DTextLabelColour): Gets the 3D text label colour.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
+- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
+- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.

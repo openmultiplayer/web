@@ -1,35 +1,49 @@
 ---
 title: OnGameModeExit
-description: 当退出游戏模式时，即通过'gmx'，关闭服务器，或者GameModeExit函数，该回调函数被调用。
+description: This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.
 tags: []
 ---
 
-## 描述
+## Description
 
-当退出游戏模式时，即通过'gmx'，关闭服务器，或者 GameModeExit 函数，调用这个回调函数。
+This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.
 
-## 案例
+## Examples
 
 ```c
 public OnGameModeExit()
 {
-    print("游戏模式 已退出。");
+    print("Gamemode ended.");
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-因为更改游戏模式不会重新加载过滤脚本(filterscript)，所以该函数也可以在过滤脚本中使用，用于检测是否使用了 RCON 指令（例如 changemode 或 gmx）更改游戏模式。
-
-切记，当使用'rcon gmx'控制台指令时，可能会出现客户端 BUG。一种典型的情况是：在执行 OnGameModeInit 函数的过程中过度调用 RemoveBuildingForPlayer 函数，从而导致客户端崩溃。
-
-当服务器崩溃或进程被其他方法终止(如使用 Linux kill 指令或在 Windows 控制台上按下关闭按钮)时，回调函数不会被触发。
+This function can also be used in a filterscript to detect if the gamemode changes with RCON commands like changemode or gmx, as changing the gamemode does not reload a filterscript. 
 
 :::
 
-## 相关函数
+:::warning
 
-- [GameModeExit](../functions/GameModeExit): 退出当前游戏模式。
+When using OnGameModeExit in conjunction with the 'rcon gmx' console command keep in mind there is a potential for client bugs to occur.
+
+An example of this is excessive [RemoveBuildingForPlayer](RemoveBuildingForPlayer) calls during [OnGameModeInit](OnGameModeInit) which could result in a client crash. This callback will NOT be called if the server crashes or the process is killed by other means, such as using the Linux kill command or pressing the close-button on the Windows console.
+
+:::
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnGameModeInit](OnGameModeInit): This callback is called when a gamemode starts.
+- [OnFilterScriptInit](OnFilterScriptInit): This callback is called when a filterscript is loaded.
+- [OnFilterSciptExit](OnFilterScriptExit): This callback is called when a filterscript is unloaded.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [GameModeExit](../functions/GameModeExit): Exit the current gamemode.

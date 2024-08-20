@@ -1,23 +1,26 @@
 ---
 title: OnNPCExitVehicle
-description: 当NPC离开车辆时调用此回调。
-tags: []
+description: This callback is called when a NPC leaves a vehicle.
+tags: ["npc"]
 ---
 
-## 描述
+## Description
 
-当 NPC 离开车辆时调用此回调。
+This callback is called when a NPC leaves a vehicle.
 
-## 相关案例
+
+## Examples
 
 ```c
 public OnNPCExitVehicle()
 {
-    print("NPC离开了车辆");
+    print("The NPC left the vehicle");
     return 1;
 }
 ```
 
-## 相关回调
+## Related Callbacks
 
-- [OnNPCEnterVehicle](../callbacks/OnNPCEnterVehicle): 当 NPC 进入车辆时被调用。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnNPCEnterVehicle](OnNPCEnterVehicle): This callback is called when a NPC enters a vehicle.

@@ -1,45 +1,54 @@
 ---
 title: OnPlayerCommandText
-description: 当玩家在客户端聊天框中输入指令时，这个回调函数被调用。
+description: This callback is called when a player enters a command into the client chat window.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-当玩家在客户端聊天框中输入指令时，这个回调函数被调用。
+This callback is called when a player enters a command into the client chat window. Commands are anything that start with a forward slash, e.g. /help.
 
-| 参数名    | 描述                     |
-| --------- | ------------------------ |
-| playerid  | 输入指令的玩家的 ID。    |
-| cmdtext[] | 输入的指令(包括正斜杠)。 |
+| Name      | Description                                                 |
+| --------- | ----------------------------------------------------------- |
+| playerid  | The ID of the player that entered a command.                |
+| cmdtext[] | The command that was entered (including the forward slash). |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用，所以返回 1 会阻止其他脚本看到它。
+It is always called first in filterscripts so returning 1 there blocks other scripts from seeing it.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/help", true))
     {
-        SendClientMessage(playerid, -1, "服务器: 这是/help指令!");
+        SendClientMessage(playerid, -1, "SERVER: This is the /help command!");
         return 1;
-        // 返回1将通知服务器该指令已被处理。
-        // OnPlayerCommandText不会在其他脚本中被调用。
+        // Returning 1 informs the server that the command has been processed.
+        // OnPlayerCommandText won't be called in other scripts.
     }
     return 0;
-    // 返回0将通知服务器该脚本还没有处理该指令。
-    // OnPlayerCommandText将在其他脚本中被调用，直到其中一个返回1。
-    // 如果最终没有任何脚本返回1，'SERVER: Unknown Command'（服务器: 未知指令）消息将显示给玩家。
+    // Returning 0 informs the server that the command hasn't been processed by this script.
+    // OnPlayerCommandText will be called in other scripts until one returns 1.
+    // If no scripts return 1, the 'SERVER: Unknown Command' message will be shown to the player.
 }
 ```
 
-## 要点
+## Notes
 
-<TipNPCCallbacksCN />
+<TipNPCCallbacks />
 
-## 相关函数
+## Related Callbacks
 
-- [SendRconCommand](../functions/SendRconCommand): 通过脚本发送 RCON 指令。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerText](OnPlayerText): This callback is called when a player sends a chat message.
+- [OnRconCommand](OnRconCommand): This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [SendRconCommand](../functions/SendRconCommand): Sends an RCON command via the script.

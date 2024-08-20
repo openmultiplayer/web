@@ -1,43 +1,43 @@
 ---
 title: atan
-description: 以度为单位求正切值的倒数。
+description: Get the inversed value of a tangent in degrees.
 tags: ["math"]
 ---
 
-<LowercaseNoteCN />
+<LowercaseNote />
 
-## 描述
+## Description
 
-以度为单位求正切值的倒数。在三角函数中，反正切是正切的逆运算。请注意，由于符号模糊，该函数无法仅通过正切值确定角度落在哪个象限。请参见[atan2](atan2)以了解采用分数参数的替代方案。
+Get the inversed value of a tangent in degrees. In trigonometrics, arc tangent is the inverse operation of tangent. Notice that because of the sign ambiguity, the function cannot determine with certainty in which quadrant the angle falls only by its tangent value. See [atan2](atan2) for an alternative that takes a fractional argument instead.
 
-| 参数名      | 说明                 |
-| ----------- | -------------------- |
-| Float:value | 用于计算反正切的值。 |
+| Name        | Description                          |
+| ----------- | ------------------------------------ |
+| Float:value | value whose arc tangent is computed. |
 
-## 返回值
+## Returns
 
-以度为单位的角度，在区间[-90.0，+90.0]内。
+The angle in degrees, in the interval [-90.0,+90.0].
 
-## 案例
+## Examples
 
 ```c
-// 1.000000的反正切值是45.000000度。
+//The arc tangent of 1.000000 is 45.000000 degrees.
 
 public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 1.0;
     result = atan(param);
-    printf("%f 的反正切是 %f 度。", param, result);
+    printf("The arc tangent of %f is %f degrees.", param, result);
     return 1;
 }
 ```
 
-## 相关函数
+## Related Functions
 
-- [floatsin](floatsin): 从特定角度求正弦值。
-- [floatcos](floatcos): 从特定角度求余弦值。
-- [floattan](floattan): 从特定角度求正切值。
-- [asin](asin): 以度为单位求正弦值的倒数。
-- [acos](acos): 以度为单位求余弦函数的倒数。
-- [atan2](atan2): 以度为单位求正切的多值倒数。
+- [floatsin](floatsin): Get the sine from a specific angle.
+- [floatcos](floatcos): Get the cosine from a specific angle.
+- [floattan](floattan): Get the tangent from a specific angle.
+- [asin](asin): Get the inversed value of a sine in degrees.
+- [acos](acos): Get the inversed value of a cosine in degrees.
+- [atan2](atan2): Get the multi-valued inversed value of a tangent in degrees.

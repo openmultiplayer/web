@@ -1,27 +1,45 @@
 ---
 title: OnPlayerDisconnect
-description: 当玩家从服务器断开连接时，这个回调函数被调用。
+description: This callback is called when a player disconnects from the server.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-当玩家从服务器断开连接时，这个回调函数被调用。
+This callback is called when a player disconnects from the server.
 
-| 参数名   | 描述                            |
-| -------- | ------------------------------- |
-| playerid | 从服务器断开连接的该玩家的 ID。 |
-| reason   | 断开连接的原因。见下表。        |
+| Name     | Description                                        |
+| -------- | -------------------------------------------------- |
+| playerid | The ID of the player that disconnected.            |
+| reason   | The reason for the disconnection. See table below. |
 
-## 返回值
+## Returns
 
-0 - 将阻止其他过滤脚本接收到这个回调。
+0 - Will prevent other filterscripts from receiving this callback.
 
-1 - 表示这个回调函数将被传递给下一个过滤脚本。
+1 - Indicates that this callback will be passed to the next filterscript.
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Reasons
+
+| ID | Reason        | Details                                                                                   |
+| -- | ------------- | ----------------------------------------------------------------------------------------- |
+| 0  | Timeout/Crash | The player's connection was lost. Either their game crashed or their network had a fault. |
+| 1  | Quit          | The player purposefully quit, either using the /quit (/q) command or via the pause menu.  |
+| 2  | Kick/Ban      | The player was kicked or banned by the server. |
+| 3  | Custom        | Used by some libraries.  Reserved for modes' private uses. |
+| 4  | Mode End      | The current mode is ending so disconnecting all players from it (they are still on the server).|
+
+:::warning
+
+Reason 3 was originally added in SA:MP by [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)
+
+Reasons 3 and 4 were added by the Open Multiplayer server.  
+
+:::
+
+## Examples
 
 ```c
 public OnPlayerDisconnect(playerid, reason)
@@ -32,26 +50,36 @@ public OnPlayerDisconnect(playerid, reason)
 
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 
-    new szDisconnectReason[3][] =
+    new szDisconnectReason[5][] =
     {
-        "超时/崩溃",
-        "正常退出",
-        "踢出/封禁"
+        "Timeout/Crash",
+        "Quit",
+        "Kick/Ban",
+        "Custom",
+        "Mode End"
     };
 
-    format(szString, sizeof szString, "%s 离开了服务器 (%s).", playerName, szDisconnectReason[reason]);
+    format(szString, sizeof szString, "%s left the server (%s).", playerName, szDisconnectReason[reason]);
 
     SendClientMessageToAll(0xC4C4C4FF, szString);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-有些函数不能在这个回调函数中使用，因为当调用回调函数时，玩家已经断开了连接。这样，您就不能从诸如 GetPlayerIp 和 GetPlayerPos 等类似的函数得到明确的信息。
+Some functions might not work correctly when used in this callback because the player is already disconnected when the callback is called. This means that you can't get unambiguous information from functions like [GetPlayerIp](GetPlayerIp) and [GetPlayerPos](GetPlayerPos).
+
+This issue is solved in open.mp server.
 
 :::
 
-## 相关回调
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
+- [OnIncomingConnection](OnIncomingConnection): This callback is called when a player is attempting to connect to the server. 
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): This callback is called when a player finishes downloading custom models. 

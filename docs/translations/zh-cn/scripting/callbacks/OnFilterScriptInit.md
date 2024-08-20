@@ -1,23 +1,29 @@
 ---
 title: OnFilterScriptInit
-description: 初始化(加载完成)过滤脚本(filterscript)时，将调用此回调函数。
+description: This callback is called when a filterscript is initialized (loaded).
 tags: []
 ---
 
-## 描述
+## Description
 
-初始化(加载完成)过滤脚本(filterscript)时，将调用此回调函数。
+This callback is called when a filterscript is initialized (loaded). It is only called inside the filterscript which is starting.
 
-## 案例
+## Examples
 
 ```c
 public OnFilterScriptInit()
 {
     print("\n--------------------------------------");
-    print("已加载过滤脚本。");
+    print("The filterscript is loaded.");
     print("--------------------------------------\n");
     return 1;
 }
 ```
 
-## 相关回调
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnFilterSciptExit](OnFilterScriptExit): This callback is called when a filterscript is unloaded.
+- [OnGameModeInit](OnGameModeInit): This callback is called when a gamemode starts.
+- [OnGameModeExit](OnGameModeExit): This callback is called when a gamemode ends.

@@ -1,37 +1,44 @@
 ---
 title: Delete3DTextLabel
-description: 删除一个三维文本标签（用Create3DTextLabel创建）。
+description: Delete a 3D text label (created with Create3DTextLabel).
 tags: ["3dtextlabel"]
 ---
 
-## 描述
+## Description
 
-删除一个三维文本标签（用 Create3DTextLabel 创建）。
+Delete a 3D text label (created with Create3DTextLabel).
 
-| 参数名    | 说明                        |
-| --------- | --------------------------- |
-| Text3D:textid | 要删除的三维文本标签的 ID。 |
+| Name          | Description                            |
+| ------------- | -------------------------------------- |
+| Text3D:textid | The ID of the 3D text label to delete. |
 
-## 返回值
+## Returns
 
-如果三维文本标签被删除，则为 1，否则为 0。
+**true** if the 3D text label was deleted, otherwise **false**.
 
-## 案例
+## Examples
 
 ```c
 new Text3D:gMyLabel;
 
-gMyLabel = Create3DTextLabel(...);
+public OnGameModeInit()
+{
+    gMyLabel = Create3DTextLabel("I'm at the coordinates:\n30.0, 40.0, 50.0", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0, false);
+    return 1;
+}
 
+// Later
 Delete3DTextLabel(gMyLabel);
 ```
 
-## 相关函数
+## Related Functions
 
-- [Create3DTextLabel](Create3DTextLabel): 创建一个三维文本标签。
-- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): 将三维文本标签附加到玩家身上。
-- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): 将一个三维文本标签附加到载具。
-- [Update3DTextLabelText](Update3DTextLabelText): 改变三维文本标签的文本内容和颜色。
-- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): 为玩家创建一个三维文本标签。
-- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): 删除一个为玩家创建的三维文本标签。
-- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): 改变玩家的三维文本标签的文本内容和颜色。
+- [Create3DTextLabel](Create3DTextLabel): Create a 3D text label.
+- [IsValid3DTextLabel](IsValid3DTextLabel): Checks if a 3D text label is valid.
+- [Is3DTextLabelStreamedIn](Is3DTextLabelStreamedIn): Checks if a 3D text label is streamed in for a player.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Attach a 3D text label to a player.
+- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Attach a 3D text label to a vehicle.
+- [Update3DTextLabelText](Update3DTextLabelText): Change the text of a 3D text label.
+- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
+- [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.

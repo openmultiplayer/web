@@ -1,51 +1,72 @@
 ---
 title: ApplyAnimation
-description: 将动画应用于玩家。
-tags: []
+description: Apply an animation to a player.
+tags: ["player", "animation"]
 ---
 
-## 描述
+## Description
 
-将动画应用于玩家。
+Apply an animation to a player.
 
-| 参数名     | 说明                                                                                                                                                                                              |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| playerid   | 要应用动画的玩家的 ID。                                                                                                                                                                           |     |
-| animlib[]  | 要应用动画的动画库的名称。                                                                                                                                                                        |
-| animname[] | 在指定的库中，要应用的动画的名称。                                                                                                                                                                |
-| fDelta     | 播放动画的速度（默认使用 4.1）。                                                                                                                                                                  |
-| loop       | 如果设置为 1，动画将循环播放。如果设置为 0，动画将播放一次。                                                                                                                                      |
-| lockx      | 如果设置为 0，一旦动画完成，玩家就会返回到他们原来的 X 坐标（对于会移动玩家位置的动画，如行走）。1 将不会返回到他们的旧位置。                                                                     |
-| locky      | 与上述相同，但对 Y 轴而言。应保持与前面的参数相同。                                                                                                                                               |
-| freeze     | 设置为 1 会在动画结束时定住玩家。0 则不会。                                                                                                                                                       |
-| time       | 计时器，单位是毫秒。对于永远要循环的动画，应传入 0。                                                                                                                                              |
-| forcesync  | 设置为 1 可以使服务器与流半径内的所有其他玩家同步动画（可选）。2 的作用与 1 相同，但只对流入的玩家应用动画，而不是对实际被动画的应用的玩家应用（当玩家被流入时，对 npc 动画和持久性动画很有用）。 |
+| Name                     | Description                                                                                                                                                                                                                                                                                                   |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid                 | The ID of the player to apply the animation to.                                                                                                                                                                                                                                                               |
+| const animationLibrary[] | The [animation library](../resources/animations) from which to apply an animation.                                                                                                                                                                                                                            |
+| const animationName[]    | The name of the animation to apply, within the specified library.                                                                                                                                                                                                                                             |
+| Float:delta              | The speed to play the animation (use 4.1).                                                                                                                                                                                                                                                                    |
+| bool:loop                | If set to 'true', the animation will loop. If set to 'false', the animation will play once.                                                                                                                                                                                                                   |
+| bool:lockX               | If set to 'false', the player is returned to their old X coordinate once the animation is complete (for animations that move the player such as walking). 'true' will not return them to their old position.                                                                                                  |
+| bool:lockY               | Same as above but for the Y axis. Should be kept the same as the previous parameter.                                                                                                                                                                                                                          |
+| bool:freeze              | Setting this to 'true' will freeze the player at the end of the animation. 'false' will not.                                                                                                                                                                                                                  |
+| time                     | Timer in milliseconds. For a never-ending loop it should be 0.                                                                                                                                                                                                                                                |
+| FORCE_SYNC:forceSync     | Set to 1 to make server sync the animation with all other players in streaming radius (optional). 2 works same as 1, but will ONLY apply the animation to streamed-in players, but NOT the actual player being animated (useful for npc animations and persistent animations when players are being streamed) |
 
-## 返回值
+## Returns
 
-这个函数总是返回 1，即使指定的玩家不存在，或者任何参数无效（例如无效的库）。
+This function always returns true, even if the player specified does not exist, or any of the parameters are invalid (e.g. invalid library).
 
-## 案例
+## Examples
 
 ```c
-ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
+ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, 1);
 ```
 
-## 要点
+An example for open.mp:
+
+```c
+ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, SYNC_NONE);
+// SYNC_NONE: Don't force sync to anyone else.
+
+ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, SYNC_ALL);
+// SYNC_ALL: Sync to all streamed-in players.
+
+ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, SYNC_OTHER);
+// SYNC_OTHER: Sync to all streamed-in players, except the player with the animation.
+```
+
+## Notes
 
 :::tip
 
-'forcesync' 为可选参数，默认为 0，在大多数情况下不需要传入，因为其他玩家会自动同步动画。'forcesync' 参数可以强制所有可以看到'playerid'的玩家播放动画，而不管该玩家是否正在执行该动画。这在其他玩家不能自动同步动画的情况下很有用。例如，他们可能暂停了游戏而导致没接收到该动画。
+- The 'forceSync' optional parameter, which defaults to 0 (SYNC_NONE), in most cases is not needed since players sync animations themselves.
+- The 'forcesync' parameter can force all players who can see 'playerid' to play the animation regardless of whether the player is performing that animation. This is useful in circumstances where the player can't sync the animation themselves. For example, they may be paused.
 
 :::
 
 :::warning
 
-无效的动画库将使玩家的游戏崩溃。
+An invalid animation library will crash the player's game. (Fixed in open.mp)
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [ClearAnimations](ClearAnimations): 清除玩家正在执行的任何动画。
-- [SetPlayerSpecialAction](SetPlayerSpecialAction): 设置玩家的特殊动作。
+- [ClearAnimations](ClearAnimations): Clear any animations a player is performing.
+- [SetPlayerSpecialAction](SetPlayerSpecialAction): Set a player's special action.
+- [GetPlayerAnimFlags](GetPlayerAnimFlags): Get the player animation flags.
+- [IsValidAnimationLibrary](IsValidAnimationLibrary): Checks if the given animation library is valid.
+- [EnableAllAnimations](EnableAllAnimations): Allow use of the animations missing from some versions.
+
+## Related Resources
+
+- [Animations](../resources/animations)

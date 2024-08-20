@@ -1,38 +1,45 @@
 ---
 title: OnPlayerInteriorChange
-description: 当某个玩家的内部空间改变时调用。
+description: This callback is called when a player changes interior.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-当某个玩家的内部空间改变时调用。可以由 [SetPlayerInterior](../functions/SetPlayerInterior) 触发，或者当玩家进入/离开建筑物时触发。
+This callback is called when a player changes interior. Can be triggered by SetPlayerInterior or when a player enter/exits a building.
 
-| 参数名        | 描述                        |
-| ------------- | --------------------------- |
-| playerid      | 改变了内部空间的玩家 ID。   |
-| newinteriorid | 这个玩家现在的内部空间 ID。 |
-| oldinteriorid | 这个玩家先前的内部空间 ID。 |
+| Name          | Description                            |
+| ------------- | -------------------------------------- |
+| playerid      | The playerid who changed interior.     |
+| newinteriorid | The interior the player is now in.     |
+| oldinteriorid | The interior the player was in before. |
 
-## 返回值
+## Returns
 
-它在游戏模式中总是先被调用。
+It is always called first in gamemode.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
 {
     new string[42];
-    format(string, sizeof(string), "你从内部空间 %d 跑到了内部空间 %d!", oldinteriorid, newinteriorid);
+    format(string, sizeof(string), "You went from interior %d to interior %d!", oldinteriorid, newinteriorid);
     SendClientMessage(playerid, COLOR_ORANGE, string);
     return 1;
 }
 ```
 
-## 相关函数
+## Related Callbacks
 
-- [SetPlayerInterior](../functions/SetPlayerInterior): 设置某个玩家的内部空间。
-- [GetPlayerInterior](../functions/GetPlayerInterior): 获取某个玩家目前的内部空间。
-- [LinkVehicleToInterior](../functions/LinkVehicleToInterior): 改变某个载具所处的内部空间。
-- [OnPlayerStateChange](OnPlayerStateChange): 当玩家改变状态时，这个回调函数被调用。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerStateChange](OnPlayerStateChange): This callback is called when a player changes state.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [SetPlayerInterior](../functions/SetPlayerInterior): Set a player's interior.
+- [GetPlayerInterior](../functions/GetPlayerInterior): Get the current interior of a player.
+- [LinkVehicleToInterior](../functions/LinkVehicleToInterior): Change the interior that a vehicle is seen in.

@@ -1,48 +1,48 @@
 ---
 title: SetPlayerCameraPos
-description: 设置玩家的视角到指定位置。
-tags: ["player"]
+description: Sets the camera to a specific position for a player.
+tags: ["player", "camera"]
 ---
 
-## 描述
+## Description
 
-设置玩家的视角到指定位置。
+Sets the camera to a specific position for a player.
 
-| 参数名   | 说明          |
-| -------- | ------------- |
-| playerid | 玩家 ID。     |
-| Float:x  | 视角的 X 坐标 |
-| Float:y  | 视角的 Y 坐标 |
-| Float:z  | 视角的 Z 坐标 |
+| Name     | Description                              |
+| -------- | ---------------------------------------- |
+| playerid | ID of the player                         |
+| Float:x  | The X coordinate to place the camera at. |
+| Float:y  | The Y coordinate to place the camera at. |
+| Float:z  | The Z coordinate to place the camera at. |
 
-## 返回值
+## Returns
 
-1:函数执行成功。
+**true** - The function executed successfully.
 
-0:函数执行失败。指定的玩家不存在。
+**false** - The function failed to execute. The player specified doesn't exist.
 
-## 案例
+## Examples
 
 ```c
 SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-通常还需要结合 SetPlayerCameraLookAt 函数才能正常工作。
-使用 SetCameraBehindPlayer 来重置视角到玩家后面。
+- You may also have to use SetPlayerCameraLookAt with this function in order to work properly.
+- Use SetCameraBehindPlayer to reset the camera to behind the player.
 
 :::
 
 :::warning
 
-在启用旁观者模式后，不能直接使用视角函数。
+Using the camera functions directly after enabling spectator mode doesn't work.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): 设置玩家的视角所看的方向。
-- [SetCameraBehindPlayer](SetCameraBehindPlayer): 重置视角到玩家后面。
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.
+- [SetCameraBehindPlayer](SetCameraBehindPlayer): Set a player's camera behind them.

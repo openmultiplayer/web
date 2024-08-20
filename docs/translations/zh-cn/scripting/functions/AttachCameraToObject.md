@@ -1,23 +1,23 @@
 ---
 title: AttachCameraToObject
-description: 您可以使用此函数将玩家视角附加到物体上。
-tags: []
+description: You can use this function to attach the player camera to objects.
+tags: ["player", "object"]
 ---
 
-## 描述
+## Description
 
-您可以使用此函数将玩家视角附加到物体上。
+You can use this function to attach the player camera to objects.
 
-| 参数名   | 说明                        |
-| -------- | --------------------------- |
-| playerid | 将视角附加到物体上的玩家 ID |
-| objectid | 将视角附加到的物体 ID       |
+| Name     | Description                                                          |
+| -------- | -------------------------------------------------------------------- |
+| playerid | The ID of the player which will have your camera attached on object. |
+| objectid | The object id which you want to attach the player camera.            |
 
-## 返回值
+## Returns
 
-该函数不返回任何特定的值。
+This function does not return any specific values.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -26,21 +26,21 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new objectId = CreateObject(1245, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0);
         AttachCameraToObject(playerid, objectId);
-        SendClientMessage(playerid, 0xFFFFFFAA, "你的视角现在附加到物体上了。");
+        SendClientMessage(playerid, 0xFFFFFFAA, "Your camera is attached on object now.");
         return 1;
     }
     return 0;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-在试图将玩家的视角附加到物体之前，必须先创建物体。
+You need to create the object first, before attempting to attach a player camera for that.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [AttachCameraToPlayerObject](AttachCameraToPlayerObject): 将玩家的视角附加在玩家物体上。
+- [AttachCameraToPlayerObject](AttachCameraToPlayerObject): Attaches the player's camera to a player object.

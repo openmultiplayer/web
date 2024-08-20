@@ -1,39 +1,39 @@
 ---
 title: OnPlayerEditAttachedObject
-description: 当玩家结束附加物体编辑模式时，会调用此回调。
-tags: ["player"]
+description: This callback is called when a player ends attached object edition mode.
+tags: ["player", "object", "attachment"]
 ---
 
-## 描述
+## Description
 
-当玩家结束附加物体编辑模式时，会调用此回调。
+This callback is called when a player ends attached object edition mode.
 
-| 参数名         | 描述                                                    |
-| -------------- | ------------------------------------------------------- |
-| playerid       | 结束编辑模式的玩家 ID                                   |
-| EDIT_RESPONSE:response       | 如果他们取消(Esc)，则为 0；如果他们单击保存图标，则为 1 |
-| index          | 附加物体的索引(0-9)                                     |
-| modelid        | 已编辑的附加物体的模型 ID                               |
-| boneid         | 已编辑的附加物体的骨骼 ID                               |
-| Float:fOffsetX | 已编辑的附加物体的 X 偏移                               |
-| Float:fOffsetY | 已编辑的附加物体的 Y 偏移量                             |
-| Float:fOffsetZ | 已编辑的附加物体的 Z 偏移                               |
-| Float:fRotX    | 已编辑的附加物体的 X 向旋转                             |
-| Float:fRotY    | 已编辑的附加物体的 Y 向旋转                             |
-| Float:fRotZ    | 已编辑的附加物体的 Z 向旋转                             |
-| Float:fScaleX  | 已编辑的附加物体的 X 比例                               |
-| Float:fScaleY  | 已编辑的附加物体的 Y 比例                               |
-| Float:fScaleZ  | 已编辑的附加物体的 Z 比例                               |
+| Name                   | Description                                                  |
+|------------------------|--------------------------------------------------------------|
+| playerid               | The ID of the player that ended edition mode                 |
+| EDIT_RESPONSE:response | 0 if they cancelled (ESC) or 1 if they clicked the save icon |
+| index                  | The index of the attached object (0-9)                       |
+| modelid                | The model of the attached object that was edited             |
+| boneid                 | The bone of the attached object that was edited              |
+| Float:fOffsetX         | The X offset for the attached object that was edited         |
+| Float:fOffsetY         | The Y offset for the attached object that was edited         |
+| Float:fOffsetZ         | The Z offset for the attached object that was edited         |
+| Float:fRotX            | The X rotation for the attached object that was edited       |
+| Float:fRotY            | The Y rotation for the attached object that was edited       |
+| Float:fRotZ            | The Z rotation for the attached object that was edited       |
+| Float:fScaleX          | The X scale for the attached object that was edited          |
+| Float:fScaleY          | The Y scale for the attached object that was edited          |
+| Float:fScaleZ          | The Z scale for the attached object that was edited          |
 
-## 返回值
+## Returns
 
-1 - 将阻止其他脚本接收此回调。
+1 - Will prevent other scripts from receiving this callback.
 
-0 - 指示此回调将传递给下一个脚本。
+0 - Indicates that this callback will be passed to the next script.
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 enum attached_object_data
@@ -51,13 +51,13 @@ enum attached_object_data
 
 new ao[MAX_PLAYERS][MAX_PLAYER_ATTACHED_OBJECTS][attached_object_data];
 
-// 附加物体时，应将数据存储在上述数组中
+// The data should be stored in the above array when attached objects are attached.
 
 public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 {
-    if (response)
+    if (response == EDIT_RESPONSE_FINAL)
     {
-        SendClientMessage(playerid, COLOR_GREEN, "已保存附加物体版本。");
+        SendClientMessage(playerid, COLOR_GREEN, "Attached object edition saved.");
 
         ao[playerid][index][ao_x] = fOffsetX;
         ao[playerid][index][ao_y] = fOffsetY;
@@ -69,9 +69,9 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
         ao[playerid][index][ao_sy] = fScaleY;
         ao[playerid][index][ao_sz] = fScaleZ;
     }
-    else
+    else if (response == EDIT_RESPONSE_CANCEL)
     {
-        SendClientMessage(playerid, COLOR_RED, "未保存附加物体版本。");
+        SendClientMessage(playerid, COLOR_RED, "Attached object edition not saved.");
 
         new i = index;
         SetPlayerAttachedObject(playerid, index, modelid, boneid, ao[playerid][i][ao_x], ao[playerid][i][ao_y], ao[playerid][i][ao_z], ao[playerid][i][ao_rx], ao[playerid][i][ao_ry], ao[playerid][i][ao_rz], ao[playerid][i][ao_sx], ao[playerid][i][ao_sy], ao[playerid][i][ao_sz]);
@@ -80,16 +80,17 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 }
 ```
 
-## 要点
+## Notes
 
 :::warning
 
-如果响应为‘0’(已取消)，则应丢弃版本。
-这必须在使用 EditAttachedObject 之前通过将偏移量等存储在数组中来完成。
+Editions should be discarded if response was '0' (cancelled). This must be done by storing the offsets etc. in an array BEFORE using [EditAttachedObject](../functions/EditAttachedObject).
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [EditAttachedObject](../functions/EditAttachedObject): 编辑附加的物体。
-- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): 将物体附加到玩家。
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [EditAttachedObject](../functions/EditAttachedObject): Edit an attached object.
+- [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Attach an object to a player

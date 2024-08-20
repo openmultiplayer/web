@@ -1,46 +1,54 @@
 ---
 title: OnPlayerEnterVehicle
-description: 当玩家开始进入载具时，这个回调被调用，这意味着在这个回调被调用时，玩家还没有在载具中。
+description: This callback is called when a player starts to enter a vehicle, meaning the player is not in vehicle yet at the time this callback is called.
 tags: ["player", "vehicle"]
 ---
 
-## 描述
+## Description
 
-当玩家开始进入载具时，这个回调被调用，这意味着在这个回调被调用时，玩家还没有在载具中。
+This callback is called when a player starts to enter a vehicle, meaning the player is not in vehicle yet at the time this callback is called.
 
-| 参数名      | 描述                                     |
-| ----------- | ---------------------------------------- |
-| playerid    | 试图进入载具的玩家的 ID。                |
-| vehicleid   | 玩家试图进入的载具的 ID。                |
-| ispassenger | 以司机身份进入为 0，以乘客身份进入为 1。 |
+| Name        | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| playerid    | ID of the player who attempts to enter a vehicle.    |
+| vehicleid   | ID of the vehicle the player is attempting to enter. |
+| ispassenger | 0 if entering as driver. 1 if entering as passenger. |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
     new string[128];
-    format(string, sizeof(string), "你正在进入载具 %i", vehicleid);
+    format(string, sizeof(string), "You are entering vehicle %i", vehicleid);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-该回调函数是在玩家开始进入该载具时调用的，而非他们已经进入该载具时调用。详情见 OnPlayerStateChange 回调函数。
-
-如果玩家不能进入载具(例如载具被锁定或满载)，这个回调函数仍然会被调用。
+- This callback is called when a player BEGINS to enter a vehicle, not when they HAVE entered it. See [OnPlayerStateChange](OnPlayerStateChange).
+- This callback is still called if the player is denied entry to the vehicle (e.g. it is locked or full).
 
 :::
 
-## 相关函数
+## Related Callbacks
 
-- [PutPlayerInVehicle](../functions/PutPlayerInVehicle): 把一个玩家放到一辆载具里。
-- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): 检查玩家的座位。
+The following callbacks might be useful, as they are related to this callback in one way or another.
+
+- [OnPlayerExitVehicle](OnPlayerExitVehicle): This callback is called when a player leaves a vehicle. 
+- [OnPlayerStateChange](OnPlayerStateChange): This callback is called when a player changes state. 
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [PutPlayerInVehicle](../functions/PutPlayerInVehicle): Put a player in a vehicle.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Check what seat a player is in.

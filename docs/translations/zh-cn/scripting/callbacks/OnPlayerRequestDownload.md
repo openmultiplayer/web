@@ -1,59 +1,72 @@
 ---
 title: OnPlayerRequestDownload
-description: 当玩家请求自定义模型下载时，这个回调函数被调用。
+description: This callback is called when a player request for custom model downloads.
 tags: ["player"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3.DL R1' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
 
-## 描述
+## Description
 
-当玩家请求自定义模型下载时，这个回调函数被调用。
+This callback is called when a player request for custom model downloads.
 
-| 参数名   | 描述                          |
-| -------- | ----------------------------- |
-| playerid | 请求自定义模型下载的玩家 ID。 |
-| type     | 请求的类型(见下文)。          |
-| crc      | 自定义模型文件的 CRC 校验和。 |
+| Name                  | Description                                                |
+|-----------------------|------------------------------------------------------------|
+| playerid              | The ID of the player that request custom model download.   |
+| DOWNLOAD_REQUEST:type | The [type](../resources/download-requests) of the request. |
+| crc                   | The CRC checksum of custom model file.                     |
 
-## 返回值
+## Returns
 
-0 - 拒绝下载请求
+0 - Deny the download request
 
-1 - 接收下载请求
+1 - Accept the download request
 
-## 案例
+## Examples
 
 ```c
-#define DOWNLOAD_REQUEST_EMPTY        (0)
-#define DOWNLOAD_REQUEST_MODEL_FILE   (1)
-#define DOWNLOAD_REQUEST_TEXTURE_FILE (2)
-new baseurl[] = "https://files.sa-mp.com/server";
+#define DOWNLOAD_REQUEST_EMPTY        (DOWNLOAD_REQUEST:0)
+#define DOWNLOAD_REQUEST_MODEL_FILE   (DOWNLOAD_REQUEST:1)
+#define DOWNLOAD_REQUEST_TEXTURE_FILE (DOWNLOAD_REQUEST:2)
 
-public OnPlayerRequestDownload(playerid, type, crc)
+new baseUrl[] = "https://assets.open.mp";
+
+public OnPlayerRequestDownload(playerid, DOWNLOAD_REQUEST:type, crc)
 {
-    new fullurl[256+1];
-    new dlfilename[64+1];
-    new foundfilename=0;
-
-    if (!IsPlayerConnected(playerid)) return 0;
-
-    if (type == DOWNLOAD_REQUEST_TEXTURE_FILE) {
-        foundfilename = FindTextureFileNameFromCRC(crc,dlfilename,64);
-    }
-    else if (type == DOWNLOAD_REQUEST_MODEL_FILE) {
-        foundfilename = FindModelFileNameFromCRC(crc,dlfilename,64);
+    if (!IsPlayerConnected(playerid))
+    {
+        return 0;
     }
 
-    if (foundfilename) {
-        format(fullurl,256,"%s/%s",baseurl,dlfilename);
-        RedirectDownload(playerid,fullurl);
+    new fullUrl[256 + 1];
+    new dlFileName[64 + 1];
+    new foundFileName = 0;
+
+    if (type == DOWNLOAD_REQUEST_TEXTURE_FILE)
+    {
+        foundFileName = FindTextureFileNameFromCRC(crc, dlFileName, 64);
+    }
+    else if (type == DOWNLOAD_REQUEST_MODEL_FILE)
+    {
+        foundFileName = FindModelFileNameFromCRC(crc, dlFileName, 64);
+    }
+
+    if (foundFileName)
+    {
+        format(fullUrl, sizeof(fullUrl), "%s/%s", baseUrl, dlFileName);
+        RedirectDownload(playerid, fullUrl);
     }
 
     return 0;
 }
 ```
 
-## 相关函数
+## Related Callbacks
 
-- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): 当玩家下载完自定义模型时调用。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): This callback is called when a player finishes downloading custom models.
+
+## Related Resources
+
+- [Download Request Types](../resources/download-requests)

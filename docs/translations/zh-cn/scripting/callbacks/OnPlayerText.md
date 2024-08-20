@@ -1,39 +1,48 @@
 ---
 title: OnPlayerText
-description: 当玩家发送聊天消息时调用。
+description: This callback is called when a player sends a chat message.
 tags: ["player"]
 ---
 
-## 描述
+## Description
 
-当玩家发送聊天消息时调用。
+This callback is called when a player sends a chat message.
 
-| 参数名   | 描述                  |
-| -------- | --------------------- |
-| playerid | 输入文本的玩家的 ID。 |
-| text[]   | 玩家输入的文本。      |
+| Name     | Description                              |
+| -------- | ---------------------------------------- |
+| playerid | The ID of the player who typed the text. |
+| text[]   | The text the player typed.               |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用，因此在那里返回 0 会阻止其他脚本看到它。
+It is always called first in filterscripts so returning 0 there blocks other scripts from seeing it.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerText(playerid, text[])
 {
-    new pText[144];
-    format(pText, sizeof (pText), "(%d) %s", playerid, text);
-    SendPlayerMessageToAll(playerid, pText);
-    return 0; // 忽略默认文本并发送自定义文本
+    new string[144];
+    format(string, sizeof (string), "(%d) %s", playerid, text);
+    SendPlayerMessageToAll(playerid, string);
+    return 0; // ignore the default text and send the custom one
 }
 ```
 
-## 要点
+## Notes
 
-<TipNPCCallbacksCN />
+<TipNPCCallbacks />
 
-## 相关函数
+## Related Callbacks
 
-- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): 强制一个玩家为另一个玩家发送消息。
-- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): 强制一个玩家为所有玩家发送消息。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerCommandText](OnPlayerCommandText): Called when a player types a command.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Force a player to send text for one player.
+- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Force a player to send text for all players.
+- [ToggleChatTextReplacement](../functions/ToggleChatTextReplacement): Toggles the chat input filter.

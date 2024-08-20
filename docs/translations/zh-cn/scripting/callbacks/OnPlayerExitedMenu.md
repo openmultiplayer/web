@@ -1,32 +1,40 @@
 ---
 title: OnPlayerExitedMenu
-description: 当玩家退出菜单时调用。
+description: This callback is called when a player exits a menu.
 tags: ["player", "menu"]
 ---
 
-## 描述
+## Description
 
-当玩家退出菜单时调用。
+This callback is called when a player exits a menu.
 
-| 参数名   | 描述                |
-| -------- | ------------------- |
-| playerid | 退出菜单的玩家的 ID |
+| Name     | Description                               |
+| -------- | ----------------------------------------- |
+| playerid | The ID of the player that exited the menu |
 
-## 返回值
+## Returns
 
-它在游戏模式中总是先被调用。
+It is always called first in gamemode.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // 当玩家退出菜单时解除冻结
+    TogglePlayerControllable(playerid, true); // unfreeze the player when they exit a menu
     return 1;
 }
 ```
 
-## 相关函数
+## Related Callbacks
 
-- [CreateMenu](../functions/CreateMenu): 创建一个目录。
-- [DestroyMenu](../functions/DestroyMenu): 销毁一个目录。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerSelectedMenuRow](OnPlayerSelectedMenuRow): This callback is called when a player selected a row in a menu.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [CreateMenu](../functions/CreateMenu): Create a menu.
+- [DestroyMenu](../functions/DestroyMenu): Destroy a menu.

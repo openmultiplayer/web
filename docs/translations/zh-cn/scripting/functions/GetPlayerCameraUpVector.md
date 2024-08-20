@@ -1,33 +1,33 @@
 ---
 title: GetPlayerCameraUpVector
-description: 该函数返回一个向量，它指向玩家视角的正上方，换句话说，它指向屏幕的中上方。
+description: This function returns the vector, that points to the upside of the camera's view, or, in other words, to the middle top of your screen.
 tags: ["player", "camera"]
 ---
 
-## 描述
+## Description
 
-该函数返回一个向量，它指向玩家视角的正上方，换句话说，它指向屏幕的中上方。
+This function returns the vector, that points to the upside of the camera's view, or, in other words, to the middle top of your screen.
 
-| 参数名   | 说明                                |
-| -------- | ----------------------------------- |
-| playerid | 要获取视角的上向量的玩家 ID。       |
-| Float:x  | 通过引用传递，存储 X 坐标的浮点数。 |
-| Float:y  | 通过引用传递，存储 Y 坐标的浮点数。 |
-| Float:z  | 通过引用传递，存储 Z 坐标的浮点数。 |
+| Name     | Description                                                    |
+| -------- | -------------------------------------------------------------- |
+| playerid | The ID of the player you want to obtain the camera upvector of |
+| Float:x  | A float to store the X coordinate, passed by reference.        |
+| Float:y  | A float to store the Y coordinate, passed by reference.        |
+| Float:z  | A float to store the Z coordinate, passed by reference.        |
 
-## 返回值
+## Returns
 
-存储在引用传递的参数中。
+The position is stored in the specified variables.
 
-## 要点
+## Notes
 
 :::warning
 
-该函数在 SA-MP 0.3b 版本中被删除
+This function was removed in SA-MP version 0.3b
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [GetPlayerCameraPos](GetPlayerCameraPos): 找出玩家的视角在哪里。
-- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): 获取玩家视角的前向量。
+- [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

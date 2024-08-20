@@ -1,53 +1,58 @@
 ---
 title: OnVehicleMod
-description: 当车辆被改装时，这个回调函数被调用。
+description: This callback is called when a vehicle is modded.
 tags: ["vehicle"]
 ---
 
-## 描述
+## Description
 
-当车辆被改装时，这个回调函数被调用。
+This callback is called when a vehicle is modded.
 
-| 参数名      | 描述                    |
-| ----------- | ----------------------- |
-| playerid    | 车辆司机的 ID。         |
-| vehicleid   | 被改装的车辆的 ID。     |
-| componentid | 添加到车辆的组件的 ID。 |
+| Name        | Description                                             |
+| ----------- | ------------------------------------------------------- |
+| playerid    | The ID of the driver of the vehicle.                    |
+| vehicleid   | The ID of the vehicle which is modded.                  |
+| componentid | The ID of the component which was added to the vehicle. |
 
-## 返回值
+## Returns
 
-它总是在游戏模式中先被调用，所以返回 0 也会阻止其他过滤脚本看到它。
+It is always called first in gamemode so returning 0 there also blocks other filterscripts from seeing it.
 
-## 案例
+## Examples
 
 ```c
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
-    printf("车辆ID %d 被玩家ID %d 改装了,添加了组件 %d",vehicleid, playerid,componentid);
+    printf("Vehicle %d was modded by ID %d with the componentid %d", vehicleid, playerid, componentid);
+
     if (GetPlayerInterior(playerid) == 0)
     {
-        BanEx(playerid, "使用作弊器改装"); // 反作弊器改装 脚本
-        return 0; // 防止错误的改装被同步到其他玩家
-        //(经过测试，它甚至可以在服务器上工作，允许你使用命令，菜单，对话框等改装你的车辆。
+        BanEx(playerid, "Tuning Hacks"); // Anti-tuning hacks script
+        return 0; // Prevents the bad modification from being synced to other players
+        // Tested and it works even on servers wich allow you to mod your vehicle using commands, menus, dialogs, etc..
     }
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-这个回调函数不会被 AddVehicleComponent 函数调用。
+This callback is NOT called by AddVehicleComponent.
 
 :::
 
-## 相关函数
+## Related Callbacks
 
-- [AddVehicleComponent](../functions/AddVehicleComponent): 向车辆添加组件。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
 
-## 相关回调
+- [OnEnterExitModShop](OnEnterExitModShop): This callback is called when a vehicle enters or exits a mod shop.
+- [OnVehiclePaintjob](OnVehiclePaintjob): This callback is called when a vehicle's paintjob is changed.
+- [OnVehicleRespray](OnVehicleRespray): This callback is called when a vehicle is resprayed.
 
-- [OnEnterExitModShop](OnEnterExitModShop): 当车辆进入或离开改装店时调用。
-- [OnVehiclePaintjob](OnVehiclePaintjob): 当车辆的油漆涂鸦样式被改变时调用。
-- [OnVehicleRespray](OnVehicleRespray): 当车辆的油漆涂鸦样式被改变时调用。
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [AddVehicleComponent](../functions/AddVehicleComponent): Add a component to a vehicle.

@@ -1,39 +1,52 @@
 ---
 title: BanEx
-description: 以某个原因封禁玩家。
-tags: ["管理员"]
+description: Ban a player with a reason.
+tags: ["player", "administration"]
 ---
 
-## 描述
+## Description
 
-以某个原因封禁玩家。
+Ban a player with a reason.
 
-| 参数名   | 说明              |
-| -------- | ----------------- |
-| playerid | 要封禁的玩家 ID。 |
-| reason   | 要封禁的原因。    |
+| Name           | Description                  |
+| -------------- | ---------------------------- |
+| playerid       | The ID of the player to ban. |
+| const reason[] | The reason for the ban.      |
 
-## 返回值
+## Returns
 
-该函数不返回任何特定的值。
+This function does not return any specific values.
 
-## 案例
+## Notes
+
+:::warning
+
+Any action taken directly before BanEx() (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the ban.
+
+:::
+
+## Examples
 
 ```c
 public OnPlayerCommandText( playerid, cmdtext[] )
 {
     if (!strcmp(cmdtext, "/banme", true))
     {
-        // 封禁执行此命令的玩家，并包括一个理由（"请求"）。
-        BanEx(playerid, "请求");
+        // Bans the player who executed this command and includes a reason ("Request")
+        BanEx(playerid, "Request");
         return 1;
     }
 }
-/*为了在连接关闭前为玩家显示一个信息（例如原因），你必须使用一个计时器来创建一个延迟，这个延迟只需要几毫秒的时间。
-这里的案例为了安全起见，延迟了整整一秒钟。*/
+```
+
+<br />
+
+```c
+// In order to display a message (eg. reason) for the player before the connection is closed
+// you have to use a timer to create a delay. This delay needs only to be a few milliseconds long,
+// but this example uses a full second just to be on the safe side.
 
 forward BanExPublic(playerid, reason[]);
-
 public BanExPublic(playerid, reason[])
 {
     BanEx(playerid, reason);
@@ -41,7 +54,7 @@ public BanExPublic(playerid, reason[])
 
 stock BanExWithMessage(playerid, color, message[], reason[])
 {
-    // reason - 用于BanEx的封禁原因。
+    //reason - The ban reason to be used for BanEx.
     SendClientMessage(playerid, color, message);
     SetTimerEx("BanExPublic", 1000, false, "ds", playerid, reason);
 }
@@ -50,23 +63,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/banme", true) == 0)
     {
-        // 封禁执行此命令的玩家。
-        BanExWithMessage(playerid, 0xFF0000FF, "你被封禁了！", "请求");
+        //Bans the player who executed this command.
+        BanExWithMessage(playerid, 0xFF0000FF, "You have been banned!", "Request");
         return 1;
     }
     return 0;
 }
 ```
 
-## 要点
+## Related Functions
 
-:::warning
-
-从 SA-MP 0.3x 开始，在 BanEx() 之前的任何发送给玩家的代码（比如用 SendClientMessage 发送消息）都不会送达给玩家。必须使用计时器来延迟封禁玩家。
-
-:::
-
-## 相关函数
-
-- [Ban](Ban): 封禁目前在服务器中的某个玩家。
-- [Kick](Kick): 将玩家踢出服务器。
+- [Ban](Ban): Ban a player from playing on the server.
+- [Kick](Kick): Kick a player from the server.

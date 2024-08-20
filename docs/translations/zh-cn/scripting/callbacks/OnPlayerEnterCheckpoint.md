@@ -1,32 +1,32 @@
 ---
 title: OnPlayerEnterCheckpoint
-description: 当玩家进入为该玩家设置的检查点时，该回调被调用。
+description: This callback is called when a player enters the checkpoint set for that player.
 tags: ["player", "checkpoint"]
 ---
 
-## 描述
+## Description
 
-当玩家进入为该玩家设置的检查点时，此回调将被调用。
+This callback is called when a player enters the checkpoint set for that player.
 
-| 参数名   | 描述               |
-| -------- | ------------------ |
-| playerid | 进入检查点的玩家。 |
+| Name     | Description                            |
+| -------- | -------------------------------------- |
+| playerid | The player who entered the checkpoint. |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
-// 在这个案例中，玩家出生时为玩家创建了一个检查点
+//In this example, a checkpoint is created for the player when spawning,
+//which creates a vehicle and disables the checkpoint.
 public OnPlayerSpawn(playerid)
 {
     SetPlayerCheckpoint(playerid, 1982.6150, -220.6680, -0.2432, 3.0);
     return 1;
 }
 
-// 当该玩家进入该检查点时，创建一个车辆并禁用该检查点
 public OnPlayerEnterCheckpoint(playerid)
 {
     CreateVehicle(520, 1982.6150, -221.0145, -0.2432, 82.2873, -1, -1, 60000);
@@ -35,15 +35,25 @@ public OnPlayerEnterCheckpoint(playerid)
 }
 ```
 
-## 要点
+## Notes
 
-<TipNPCCallbacksCN />
+<TipNPCCallbacks />
 
-## 相关函数
+## Related Callbacks
 
-- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): 为玩家创造一个检查点,。
-- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): 禁用玩家当前的检查点。
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): 检查玩家是否处于检查点。
-- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): 为玩家创造一个比赛检查点。
-- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): 禁用玩家当前的比赛检查点。
-- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): 检查玩家是否处于比赛检查点。
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnPlayerLeaveCheckpoint](OnPlayerLeaveCheckpoint): This callback is called when a player leaves a checkpoint. 
+- [OnPlayerEnterRaceCheckpoint](OnPlayerEnterRaceCheckpoint): This callback is called when a player enters a race checkpoint. 
+- [OnPlayerLeaveRaceCheckpoint](OnPlayerLeaveRaceCheckpoint): This callback is called when a player leaves a race checkpoint. 
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another. 
+
+- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Create a checkpoint for a player.
+- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Disable the player's current checkpoint.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Check if a player is in a checkpoint.
+- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
+- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
+- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.

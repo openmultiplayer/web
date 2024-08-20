@@ -1,43 +1,43 @@
 ---
 title: acos
-description: 以度为单位求余弦函数的倒数。
+description: Get the inversed value of a cosine in degrees.
 tags: ["math"]
 ---
 
-<LowercaseNoteCN />
+<LowercaseNote />
 
-## 描述
+## Description
 
-以度为单位求余弦函数的倒数。在三角函数中，反余弦是余弦的逆运算。
+Get the inversed value of a cosine in degrees. In trigonometrics, arc cosine is the inverse operation of cosine.
 
-| 参数名      | 说明                            |
-| ----------- | ------------------------------- |
-| Float:value | 在区间内计算其反余弦值 [-1,+1]. |
+| Name        | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| Float:value | value whose arc cosine is computed, in the interval [-1,+1]. |
 
-## 返回值
+## Returns
 
-以度为单位的角度，在区间[0.0,180.0]内。
+The angle in degrees, in the interval [0.0,180.0].
 
-## 案例
+## Examples
 
 ```c
-// 余弦0.500000是60.000000度。
+//The arc cosine of 0.500000 is 60.000000 degrees.
 
 public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 0.5;
     result = acos(param);
-    printf("反余弦 %f 等于 %f 度。", param, result);
+    printf("The arc cosine of %f is %f degrees.", param, result);
     return 1;
 }
 ```
 
-## 相关函数
+## Related Functions
 
-- [floatsin](floatsin): 从特定角度求正弦值。
-- [floatcos](floatcos): 从特定角度求余弦值。
-- [floattan](floattan): 从特定角度求正切值。
-- [asin](asin): 以度为单位求正弦值的倒数。
-- [atan](atan): 以度为单位求正切值的倒数。
-- [atan2](atan2): 以度为单位求正切的多值倒数。
+- [floatsin](floatsin): Get the sine from a specific angle.
+- [floatcos](floatcos): Get the cosine from a specific angle.
+- [floattan](floattan): Get the tangent from a specific angle.
+- [asin](asin): Get the inversed value of a sine in degrees.
+- [atan](atan): Get the inversed value of a tangent in degrees.
+- [atan2](atan2): Get the multi-valued inversed value of a tangent in degrees.

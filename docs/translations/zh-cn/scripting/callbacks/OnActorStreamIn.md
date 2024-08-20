@@ -1,36 +1,42 @@
 ---
 title: OnActorStreamIn
-description: 当演员被玩家的客户端流入时，就会调用这个回调。
-tags: []
+description: This callback is called when an actor is streamed in by a player's client.
+tags: ["actor"]
 ---
 
-<VersionWarnCN name='回调' version='SA-MP 0.3.7' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
-## 描述
+## Description
 
-当演员被玩家的客户端流入时，就会调用这个回调。
+This callback is called when an actor is streamed in by a player's client.
 
-| 参数名      | 描述                      |
-| ----------- | ------------------------- |
-| actorid     | 已为玩家流入的演员的 ID。 |
-| forplayerid | 让演员流入的玩家的 ID。   |
+| Name        | Description                                                   |
+| ----------- | ------------------------------------------------------------- |
+| actorid     | The ID of the actor that has been streamed in for the player. |
+| forplayerid | The ID of the player that streamed the actor in.              |
 
-## 返回值
+## Returns
 
-它在过滤脚本中总是先被调用。
+It is always called first in filterscripts.
 
-## 案例
+## Examples
 
 ```c
 public OnActorStreamIn(actorid, forplayerid)
 {
-    new string[40];
-    format(string, sizeof(string), "演员 %d 现在正为你流入。", actorid);
+    new string[48];
+    format(string, sizeof(string), "Actor %d is now streamed in for you.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
 ```
 
-## 相关回调
+## Notes
 
-<TipNPCCallbacksCN />
+<TipNPCCallbacks />
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another. 
+
+- [OnActorStreamOut](OnActorStreamOut): This callback is called when an actor is streamed out by a player's client.

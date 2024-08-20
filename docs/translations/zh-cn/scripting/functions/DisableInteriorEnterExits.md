@@ -1,14 +1,14 @@
 ---
 title: DisableInteriorEnterExits
-description: 禁用游戏中所有的内部空间入口和出口（门前的黄色箭头）。
-tags: []
+description: Disable all the interior entrances and exits in the game (the yellow arrows at doors).
+tags: ["interior"]
 ---
 
-## 描述
+## Description
 
-禁用游戏中所有的内部空间入口和出口（门前的黄色箭头）。
+Disable all the interior entrances and exits in the game (the yellow arrows at doors).
 
-## 案例
+## Examples
 
 ```c
 public OnGameModeInit()
@@ -18,20 +18,26 @@ public OnGameModeInit()
 }
 ```
 
-## 要点
-
-:::tip
-
-这个函数只有在玩家连接之前使用才会有效（建议在 OnGameModeInit 中使用）。它不会删除目前已连接的玩家的标记。
-
-:::
+## Notes
 
 :::warning
 
-如果在使用这个函数后改变了游戏模式，而新的游戏模式没有禁用标记，那么对于已经连接的玩家来说，标记将不会重新出现（但对于新连接的玩家来说会出现）。
+This function will only work if it has been used BEFORE a player connects (it is recommended to use it in [OnGameModeInit](../callbacks/OnGameModeInit)). It will not remove a connected player's markers.
+
+If the gamemode is changed after this function has been used, and the new gamemode doesn't disable markers, the markers will NOT reappear for already-connected players (but will for newly connected players).
 
 :::
 
-## 相关函数
+:::tip
 
-- [AllowInteriorWeapons](AllowInteriorWeapons): 决定是否可以在内部空间使用武器。
+You can also disable interior entrance markers via [config.json](../../server/config.json)
+
+```json
+"use_entry_exit_markers": false,
+```
+
+:::
+
+## Related Functions
+
+- [AllowInteriorWeapons](AllowInteriorWeapons): Determine if weapons can be used in interiors.

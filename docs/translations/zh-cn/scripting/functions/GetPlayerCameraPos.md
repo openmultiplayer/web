@@ -1,25 +1,25 @@
 ---
 title: GetPlayerCameraPos
-description: 获取玩家视角的位置。
+description: Get the position of the player's camera.
 tags: ["player", "camera"]
 ---
 
-## 描述
+## Description
 
-获取玩家视角的位置。
+Get the position of the player's camera.
 
-| 参数名   | 说明                                    |
-| -------- | --------------------------------------- |
-| playerid | 要获得视角位置的玩家 ID。               |
-| Float:x  | 通过引用传递，存储 X 坐标的浮点型变量。 |
-| Float:y  | 通过引用传递，存储 Y 坐标的浮点型变量。 |
-| Float:z  | 通过引用传递，存储 Z 坐标的浮点型变量。 |
+| Name     | Description                                                         |
+| -------- | ------------------------------------------------------------------- |
+| playerid | The ID of the player to get the camera position of.                 |
+| &Float:x | A float variable to store the X coordinate in, passed by reference. |
+| &Float:y | A float variable to store the Y coordinate in, passed by reference. |
+| &Float:z | A float variable to store the Z coordinate in, passed by reference. |
 
-## 返回值
+## Returns
 
-玩家的视角位置存储在引用传递的参数中。
+The player's position is stored in the specified variables.
 
-## 案例
+## Examples
 
 ```c
 public OnPlayerDisconnect(playerid)
@@ -27,25 +27,24 @@ public OnPlayerDisconnect(playerid)
     new Float:x, Float:y, Float:z;
     GetPlayerCameraPos(playerid, x, y, z);
 
-    printf("玩家离开时，他的视角在 %f,%f,%f。", x, y, z);
-    // 你可以把这个写到用户文件中。
-
+    printf("The player left when they had their camera at %f, %f, %f.", x, y, z);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::warning
 
-玩家的视角位置每秒只更新一次，除非是瞄准。如果你想根据玩家的视角位置做点什么，建议设置 1 秒的计时器。
+Player's camera positions are only updated once a second, unless aiming.It is recommended to set a 1 second timer if you wish to take action that relies on a player's camera position.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [SetPlayerCameraPos](SetPlayerCameraPos): 设置玩家的视角位置。
-- [GetPlayerCameraZoom](GetPlayerCameraZoom): 获取玩家视角的缩放级别。
-- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRatio): 获取玩家视角的纵横比。
-- [GetPlayerCameraMode](GetplayerCameraMode): 获取玩家的视角模式。
-- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): 获取玩家视角的前向量。
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [GetPlayerCameraZoom](GetPlayerCameraZoom): Get the zoom level of a player's camera.
+- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRatio): Get the aspect ratio of a player's camera.
+- [GetPlayerCameraMode](GetplayerCameraMode): Get a player's camera mode.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
+- [GetPlayerZAim](GetPlayerZAim): Gets a player's Z Aim.

@@ -1,55 +1,62 @@
 ---
 title: ApplyActorAnimation
-description: 将动画应用于演员。
-tags: []
+description: Apply an animation to an actor.
+tags: ["actor", "animation"]
 ---
 
-<VersionWarnCN version='SA-MP 0.3.7' />
+<VersionWarn version='SA-MP 0.3.7' />
 
-## 描述
+## Description
 
-将动画应用于演员。
+Apply an animation to an actor.
 
-| 参数名     | 说明                                                                                                                          |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| actorid    | 要应用动画的演员的 ID。                                                                                                       |
-| animlib[]  | 要应用动画的动画库的名称。                                                                                                    |
-| animname[] | 在指定的库中，要应用的动画的名称。                                                                                            |
-| fDelta     | 播放动画的速度（默认使用 4.1）。                                                                                              |
-| loop       | 如果设置为 1，动画将循环播放。如果设置为 0，动画将播放一次。                                                                  |
-| lockx      | 如果设置为 0，一旦动画完成，演员就会返回到他们原来的 X 坐标（对于会移动演员位置的动画，如行走）。1 将不会返回到他们的旧位置。 |
-| locky      | 与上述相同，但对 Y 轴而言。应保持与前面的参数相同。                                                                           |
-| freeze     | 设置为 1 会在动画结束时定住演员。0 则不会。                                                                                   |
-| time       | 计时器，单位是毫秒。对于永远要循环的动画，应传入 0。                                                                          |
+| Name                     | Description                                                                                                                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| actorid                  | The ID of the actor to apply the animation to.                                                                                                                                                         |
+| const animationLibrary[] | The animation library from which to apply an animation.                                                                                                                                                |
+| const animationName[]    | The name of the animation to apply, within the specified library.                                                                                                                                      |
+| float:delta              | The speed to play the animation (use 4.1).                                                                                                                                                             |
+| bool:loop                | If set to true, the animation will loop. If set to false, the animation will play once.                                                                                                                |
+| bool:lockX               | If set to false, the actor is returned to their old X coordinate once the animation is complete (for animations that move the actor such as walking). true will not return them to their old position. |
+| bool:lockY               | Same as above but for the Y axis. Should be kept the same as the previous parameter.                                                                                                                   |
+| bool:freeze              | Setting this to true will freeze an actor at the end of the animation. false will not.                                                                                                                 |
+| time                     | Timer in milliseconds. For a never-ending loop it should be 0.                                                                                                                                         |
 
-## 返回值
+## Returns
 
-1:函数执行成功。
+**true** - The function executed successfully.
 
-0:函数执行失败，传入的演员不存在。
+**false** - The function failed to execute. The actor specified does not exist.
 
-## 案例
+## Examples
 
 ```c
 new gMyActor;
 
 public OnGameModeInit()
 {
-    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // 演员在武器国度中扮演销售员
-    ApplyActorAnimation(gMyActor, "DEALER", "shop_pay", 4.1, 0, 0, 0, 0, 0); // 结账动画
+    gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
+    ApplyActorAnimation(gMyActor, "DEALER", "shop_pay", 4.1, false, false, false, false, 0); // Pay anim
+    return 1;
+}
+
+public OnPlayerConnect(playerid)
+{
+    // Preload the 'DEALER' animation library for the player
+    ApplyAnimation(playerid, "DEALER", "null", 4.1, false, false, false, false, 0);
     return 1;
 }
 ```
 
-## 要点
+## Notes
 
 :::tip
 
-你必须为演员将要应用的动画的玩家预装动画库，而不是为演员预装。
-否则，动画将不会被应用到角色上，直到该函数被再次执行。
+You must preload the animation library for the player the actor will be applying the animation for, and not for the actor. Otherwise, the animation won't be applied to the actor until the function is executed again.
 
 :::
 
-## 相关函数
+## Related Functions
 
-- [ClearActorAnimations](ClearActorAnimations): 清除应用在演员身上的任何动画。
+- [ClearActorAnimations](ClearActorAnimations): Clear any animations that are applied to an actor.
+- [GetActorAnimation](GetActorAnimation): Get the animation the actor is currently performing.
