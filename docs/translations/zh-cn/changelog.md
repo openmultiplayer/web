@@ -1,6 +1,6 @@
 ---
-标题: 更新日志
-描述: open.mp 开发进度和更新日志.
+title: 更新日志
+description: open.mp 开发进度和更新日志.
 ---
 
 ## **[v1.3.1.2748](https://github.com/openmultiplayer/open.mp/releases/tag/v1.3.1.2748) (最新版本)**
