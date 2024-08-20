@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/hello",cmdtext,true))
     {
-        HTTP(playerid, HTTP_GET, "kc.gd/hello.txt", "", "MyHttpResponse");
+        HTTP(playerid, HTTP_GET, "assets.open.mp/hello.txt", "", "MyHttpResponse");
         return 1;
     }
     return 0;
