@@ -2,11 +2,11 @@
 title: "Advanced Structures"
 ---
 
-## Array manipulation
+## 数组操作
 
-### Finding an empty slot properly
+### 正确查找空槽
 
-This example shows how to find an empty slot in an array using standard coding practices.
+此示例展示了如何使用标准编码实践在数组中查找空槽.
 
 ```c
 new
@@ -25,7 +25,7 @@ stock FindEmptySlot()
 }
 ```
 
-This basic example assumes an array slot is empty if its value is 0. The loop loops through all values in the array (could also be done with a constant) as long as the values are not 0. When it reaches one which is 0 the while condition will fail and the loop ends without using a break as is common practice but discouraged in situations like this. This function also returns -1 if a free slot is not found, which would need to be checked at the other end. More commonly you would use the found id straight away:
+这个基本示例假设如果数组槽的值为0, 则该槽为空. 循环会遍历数组中的所有值（也可以使用常量）, 只要这些值不是0. 当它遇到一个值为0的槽时, `while` 条件将失败, 循环结束. 在这种情况下, 通常避免使用 `break`, 而是直接通过条件结束循环. 这个函数还会返回 `-1`, 如果未找到空槽, 需要在其他地方进行检查. 更常见的做法是直接使用找到的ID. :
 
 ```c
 MyFunction()
@@ -38,38 +38,38 @@ MyFunction()
     }
     if (i == sizeof (gMyArray))
     {
-        printf("No free slot found");
+        printf("未找到空槽");
         return 0;
     }
-    printf("Slot %d is empty", i);
-    // Use the found slot in your code for whatever
+    printf("槽位 %d 是空的", i);
+    // 在代码中使用找到的槽来进行相应的操作
     return 1;
 }
 ```
 
-Obviously you would replace the "gMyArray[i]" expression with your own indication of a slot in use.
+显然, 你需要将 "gMyArray[i]" 表达式替换为你自己指示槽位使用情况的方式.
 
-### List
+### 列表
 
-#### Introduction
+#### 介绍
 
-Lists are a very useful type of structure, they're basically an array where the next piece or relevant data is pointed to by the last piece.
+列表是一种非常有用的数据结构, 它基本上是一个数组, 其中下一个元素或相关数据由最后一个元素指向.
 
-Example:
+示例:
 
-Say you have the following array:
+假设你有以下数组:
 
 ```c
 3, 1, 64, 2, 4, 786, 2, 9
 ```
 
-If you wanted to sort the array you would end up with:
+如果你想对数组进行排序, 最终会得到:
 
 ```c
 1, 2, 2, 3, 4, 9, 64, 786
 ```
 
-If however you wanted to leave the data in the original order but still know the numbers in order for some reason (it's just an example), you have a problem, how are you meant to have numbers in two orders at once? This would be a good use of lists. To construct a list from this data you would need to make the array into a 2d array, where the second dimension was 2 cells big, the first dimension containing the original number, the other containing the index of the next largest number. You would also need a separate variable to hold the index of the lowest number, so your new array would look like:
+如果你想保留数据的原始顺序, 同时仍然按某种方式知道数字的排序（这只是一个示例）, 你会遇到一个问题：如何同时拥有两种排序方式？这时使用列表是一个好方法. 要从这些数据构建一个列表, 你需要将数组转换为一个二维数组, 其中第二维包含两个单元格, 第一维包含原始数字, 另一维包含下一个最大数字的索引. 你还需要一个单独的变量来保存最小数字的索引, 因此你的新数组将如下所示:
 
 ```c
 start = 1
@@ -77,31 +77,31 @@ start = 1
 4, 3, 5,  6, 7, -1,  0, 2
 ```
 
-The next index associated with 786 is -1, this is an invalid array index and indicates the end of the list, i.e. there are no more numbers. The two 2's could obviously be either way round, the first one in the array is the first on in the list too as it's the more likely one to be encountered first.
+与786关联的下一个索引是-1, 这表示一个无效的数组索引, 标志着列表的结束, 即没有更多的数字. 两个2的位置可以交换, 数组中的第一个2也是列表中的第一个, 因为它更有可能先出现.
 
-The other advantage of this method of sorting the numbers is adding more numbers is a lot faster. If you wanted to add another number 3 to the sorted array you would need to first shift at least 4 numbers one slot to the right to make space, not terrible here but very slow in larger arrays. With the list version you could just append the 3 to the end of the array and modify a single value in the list;
+这种排序方法的另一个优点是添加更多数字的速度更快. 如果你想在排序数组中添加另一个数字3, 你需要首先将至少4个数字向右移动一个位置以腾出空间, 在较大的数组中这会非常慢. 而使用列表版本, 你只需将3追加到数组末尾, 并修改列表中的一个值;
 
 ```c
 start = 1
 3, 1, 64, 2, 4, 786, 2, 9, 3
 8, 3, 5,  6, 7, -1,  0, 2, 4
-^ modify this value        ^ next highest slot
+^ 修改这个值                 ^ 下一个最高槽位
 ```
 
-None of the other numbers have moved so none of the other indexes need updating, just make the next lowest number point to the new number and make the new number point the number the next lowest used to be pointing to. Removing a value is even easier:
+其他数字没有移动, 所以其他索引不需要更新, 只需让下一个最低的数字指向新数字, 并让新数字指向原本由下一个最低数字指向的数字. 删除一个值则更简单:
 
 ```c
 start = 1
 3, 1, 64, X, 4, 786, 2, 9, 3
 8, 6, 5,  6, 7, -1,  0, 2, 4
-   ^ Changed to jump over the removed value
+   ^ 修改为跳过已删除的值
 ```
 
-Here the first 2 has been removed and the number which pointed to that number (the 1) has been updated to point to the number the removed number was pointing to. In this example neither the removed number's pointer nor number have been removed, but you cannot possibly get to that slot following the list so it doesn't matter, it is effectively removed.
+在这里, 第一个2已经被移除, 而指向那个数字的数字（1）已经更新为指向被移除的数字原本指向的数字. 在这个示例中, 虽然被移除数字的指针和数字本身并没有被实际删除, 但你无法通过列表访问到那个槽位, 因此它实际上是被移除了.
 
 #### Types
 
-The lists in the examples above were just basic single lists, you can also have double lists where every value points to the next value and the last value, these tend to have a pointer to the end of the list too to go backwards (e.g. to get the numbers in descending order):
+上述示例中的列表只是基本的单向列表, 你也可以使用双向列表, 其中每个值都指向下一个值和上一个值, 这些列表通常还会有一个指向列表末尾的指针, 以便可以向后遍历（例如, 以降序获取数字）:
 
 ```c
 start = 1
@@ -111,7 +111,7 @@ next:  8, 3,  5,  6, 7, -1,  0, 2, 4
 last:  6, -1, 7,  1, 8, 2,   3, 4, 0
 ```
 
-You have to be careful with these, especially when you have more than one of any value, that the last pointer points to the number who's next pointer goes straight back again, e.g this is wrong:
+使用这些双向列表时需要小心, 特别是当有多个相同值时, 最后一个指针必须指向那个其下一个指针直接回到它自己的数字. 例如, 以下情况是错误的:
 
 ```c
 2,  3, 3
@@ -119,7 +119,7 @@ You have to be careful with these, especially when you have more than one of any
 -1, 2, 0
 ```
 
-The 2's next pointer points to the 3 in slot one, but that 3's last pointer doesn't go back to the two, both lists are in order on their own (as the two threes can be either way round) but together they are wrong, the correct version would be:
+2的下一个指针指向槽位1中的3, 但那个3的上一个指针没有回到2, 两种列表在各自的顺序上都是正确的（因为两个3可以交换位置）, 但结合在一起时是错误的. 正确的版本应如下所示:
 
 ```c
 2,  3, 3
@@ -127,9 +127,9 @@ The 2's next pointer points to the 3 in slot one, but that 3's last pointer does
 -1, 0, 2
 ```
 
-Both of those lists start and end on the end two numbers, the back list in the wrong example started on the middle number.
+这两种列表都以末尾的两个数字开始和结束, 而错误示例中的反向列表是从中间的数字开始的.
 
-The other type of list is the looping one where the last value points back to the first. The obvious advantage to this is that you can get to any value from any other value without knowing in advance whether the target is before or after the start point, you just need to be careful not to get into an infinite loop as there's no explicit -1 end point. These lists do still have start points. You can also do double looping lists where you have a next and last list, both of which loop round:
+另一种类型的列表是循环列表, 其中最后一个值指向第一个值. 这样做的明显好处是你可以从任何一个值访问到其他任何值, 而不需要事先知道目标是在起点之前还是之后, 你只需要小心不要陷入无限循环, 因为没有显式的-1结束点. 这些列表仍然有起点. 你还可以创建双向循环列表, 其中有一个下一个列表和一个上一个列表, 它们都进行循环:
 
 ```c
 start = 1
@@ -139,9 +139,9 @@ end = 5
 6, 5,  7,  1, 8, 2,   3, 4, 0
 ```
 
-#### Mixed lists
+#### 混合列表
 
-Mixed lists are arrays containing multiple lists at once. An example could be an array of values, sorted by a list, with another list linking all unused slots so you know where you can add a new value. Example (X means unused (free) slot):
+混合列表是包含多个列表的数组. 一个例子是一个值数组, 通过一个列表进行排序, 另一个列表则链接所有未使用的槽位, 以便你知道可以在何处添加新值. 示例（X 表示未使用（空闲）槽位）:
 
 ```c
 sortedStart = 3
@@ -151,7 +151,7 @@ sort:  4,        8, 13, 7,      11, 9,  0,      -1,    5
 free:      2, 6,            10,             12,     -1
 ```
 
-Obviously the two lists never interact so both can use the same slot for their next value:
+显然, 这两个列表不会相互作用, 因此它们都可以使用相同的槽位作为下一个值:
 
 ```c
 sortedStart = 3
@@ -160,11 +160,11 @@ value: 34, X, X, 6, 34, 46, X,  54, 23, 25, X,  75, X,  45
 next:  4,  2, 6, 8, 13, 7,  10, 11, 9,  0,  12, -1, -1, 5
 ```
 
-#### Code
+#### 代码
 
-Before you start the code you need to decide what sort of list is best suited for your application, this is entirely based on application can't easily be covered here. All these examples are mixed lists, one list for the required values, one for unused slots.
+在开始编码之前, 你需要决定哪种类型的列表最适合你的应用程序, 这完全取决于应用程序的具体需求, 这里无法详细涵盖. 所有这些示例都是混合列表, 一种列表用于存储所需的值, 另一种列表用于存储未使用的槽位.
 
-This example shows how to write code for a list sorted numerically ascending.
+这个示例展示了如何编写代码来处理按数字升序排序的列表.
 
 ```c
 #define NUMBER_OF_VALUES (10)
@@ -178,9 +178,9 @@ enum E_DATA_LIST
 new
     gListData[NUMBER_OF_VALUES][E_DATA_LIST],
     gUnusedStart = 0,
-    gListStart = -1; // Starts off with no list
+    gListStart = -1; // 从没有列表开始
 
-// This function initializes the list
+// 这个函数用于初始化列表
 List_Setup()
 {
     new
@@ -189,58 +189,58 @@ List_Setup()
     size--;
     for (i = 0; i < size; i++)
     {
-        // To start with all slots are unused
+        // 开始时, 所有槽位都是未使用的
         gListData[i][E_DATA_LIST_NEXT] = i + 1;
     }
-    // End the list
+    // 结束列表
     gListData[size][E_DATA_LIST_NEXT] = -1;
 }
 
-// This function adds a value to the list (using basic sorting)
+// 这个函数将一个值添加到列表中（使用基本排序）
 List_Add(value)
 {
-    // Check if there are free slots in the array
+    // 检查数组中是否有空闲槽位
     if (gUnusedStart == -1) return -1;
     new
         pointer = gListStart,
         last = -1,
         slot = gUnusedStart;
-    // Add the value to the array
+    // 将值添加到数组中
     gListData[slot][E_DATA_LIST_VALUE] = value;
-    // Update the empty list
+    // 更新空的列表
     gUnusedStart = gListData[slot][E_DATA_LIST_NEXT];
-    // Loop through the list till we get to bigger/same size number
+    // 循环遍历列表, 直到遇到比当前值大或相等的数字
     while (pointer != -1 && gListData[pointer][E_DATA_LIST_VALUE] < value)
     {
-        // Save the position of the last value
+        // 保存最后一个值的位置
         last = pointer;
-        // Move on to the next slot
+        // 移动到下一个槽位
         pointer = gListData[pointer][E_DATA_LIST_NEXT];
     }
-    // If we got here we ran out of values or reached a larger one
-    // Check if we checked any numbers
+    // 如果到这里, 我们要么用完了值, 要么遇到了更大的值
+    // 检查是否检查过任何数字
     if (last == -1)
     {
-        // The first number was bigger or there is no list
-        // Either way add the new value to the start of the list
+        // 第一个数字更大或没有列表
+        // 无论哪种情况, 都将新值添加到列表的开始位置
         gListData[slot][E_DATA_LIST_NEXT] = gListStart;
         gListStart = slot;
     }
     else
     {
-        // Place the new value in the list
+        // 将新值放入列表中
         gListData[slot][E_DATA_LIST_NEXT] = pointer;
         gListData[last][E_DATA_LIST_NEXT] = slot;
     }
     return slot;
 }
 
-// This function removes a value from a given slot in the array (returned by List_Add)
+// 这个函数从数组中指定的槽位移除一个值（该槽位由 List_Add 函数返回）
 List_Remove(slot)
 {
-    // Is this a valid slot
+    // 这是一个有效的槽位吗
     if (slot < 0 || slot >= NUMBER_OF_VALUES) return 0;
-    // First find the slot before
+    // 首先找到前一个槽位
     new
         pointer = gListStart,
         last = -1;
@@ -249,72 +249,88 @@ List_Remove(slot)
         last = pointer;
         pointer = gListData[pointer][E_DATA_LIST_NEXT];
     }
-    // Did we find the slot in the list
+    // 我们是否在列表中找到了这个槽位
     if (pointer == -1) return 0;
     if (last == -1)
     {
-        // The value is the first in the list
-        // Skip over this slot in the list
+        // 这个值是列表中的第一个
+        // 跳过列表中的这个槽位
         gListStart = gListData[slot][E_DATA_LIST_NEXT];
     }
     else
     {
-        // The value is in the list
-        // Skip over this slot in the list
+        // 这个值在列表中
+        // 跳过列表中的这个槽位
         gListData[last][E_DATA_LIST_NEXT] = gListData[slot][E_DATA_LIST_NEXT];
     }
-    // Add this slot to the unused list
-    // The unused list isn't in any order so this doesn't matter
+    // 将这个槽位添加到未使用的列表中
+    // 未使用的列表没有任何顺序, 因此这并不重要
     gListData[slot][E_DATA_LIST_NEXT] = gUnusedStart;
     gUnusedStart = slot;
     return 1;
 }
 ```
 
-### Binary Trees
+### 二叉树
 
-#### Introduction
+#### 介绍
 
-Binary trees are a very fast method of searching for data in an array by using a very special list system. The most well known binary tree is probably the 20 questions game, with just 20 yes/no questions you can have over 1048576 items. A binary tree, as its name implies, is a type of tree, similar to a family tree, where every item has 0, 1 or 2 children. They are not used for ordering data like a list but sorting data for very efficient searching. Basically you start with an item somewhere near the middle of the ordered list of objects (e.g. the middle number in a sorted array) and compare that to the value you want to find. If it's the same you've found your item, if it's greater you move to the item to the right (not immediately to the right, the item to the right of the middle item would be the item at the three quarter mark), if it's less you move left, then repeat the process.
+二叉树是一种非常快速的数据搜索方法, 使用了非常特殊的列表系统. 最著名的二叉树可能就是20问游戏, 通过仅仅20个是/否的问题, 你可以处理超过1048576个项. 顾名思义, 二叉树是一种树结构, 类似于家谱, 其中每个项有0、1或2个子节点. 它们不是用来像列表那样排序数据, 而是用于非常高效的搜索数据. 基本上, 你从有序列表中的中间某个项开始（例如, 排序数组中的中间数字）, 并将其与要查找的值进行比较. 如果相同, 则找到目标项；如果大于目标值, 则移动到右边的项（不是紧挨着的右边, 而是中间项右侧的三分之一处）, 如果小于目标值, 则移动到左边, 然后重复这个过程.
 
-**Example**
+**例如**
 
 ```c
 1 2 5 6 7 9 12 14 17 19 23 25 28 33 38
 ```
 
-You have the preceding ordered array and you want to find what slot the number 7 is in (if it's in at all), in this example it's probably more efficient to just loop straight through the array to find it but that's not the point, that method increases in time linearly with the size of the array, a binary search time increases linearly as the array increases exponentially in size. I.e. an array 128 big will take twice as long to search straight through as an array 64 big, but a binary search 128 big will only take one check more than a binary search 64 big, not a lot at all.
+你有一个排好序的数组, 想要查找数字7所在的槽位（如果它存在的话）. 在这个例子中, 直接遍历数组来查找可能更高效, 但这并不是重点. 线性查找的时间随着数组大小的增加而线性增长, 而二叉搜索的时间随着数组大小的指数增长而增加. 也就是说, 一个128大小的数组直接查找需要的时间将是64大小数组的两倍, 但一个128大小的数组的二叉搜索比64大小的数组只多检查一次, 这个增加是非常小的.
 
-If we construct a binary tree from the data above we get: ![Binarytree](https://sampwiki.blast.hk/wiki/Image:Binarytree.GIF)
+如果我们从上述数据构造一个二叉树, 我们得到的结构如下: ![Binarytree](https://sampwiki.blast.hk/wiki/Image:Binarytree.GIF)
 
-If you read left to right, ignoring the vertical aspect you can see that the numbers are in order. Now we can try to find the 7.
+如果你从左到右读取二叉树, 忽略垂直结构, 你会发现数字是有序的. 现在我们可以尝试找到数字7.
 
-The start number is 14, 7 is less than 14 so we go to the slot pointed to by the left branch of 14. This brings us to 6, 7 is bigger than 6 so we go right to 9, then left again to 7. This method took 4 comparisons to find the number (including the final check to confirm that we are on 7), using a straight search would have taken 5.
+ - 开始节点：14
 
-Lets say there is no 7, we would end up with this binary tree: ![Binarytree-7-less](https://sampwiki.blast.hk/wiki/Image:Binarytree-7-less.GIF)
+   - 由于7小于14, 我们转到14的左侧分支. 
 
-This, unlike the example above, has a single child number (the 9), as well as 2 and 0 child numbers. You only get a perfect tree when there are (2^n)-1 numbers (0, 1, 3, 7, 15, 31 ...), any other numbers will give a not quite full tree. In this case when we get to the 9, where the 7 will be, we'll find there is no left branch, meaning the 7 doesn't exist (it cannot possibly be anywhere else in the tree, think about it), so we return -1 for invalid slot.
+ - 下一个节点：6
 
-#### Balanced and unbalanced
+   - 由于7大于6, 我们转到6的右侧分支. 
 
-The trees in the examples above are called balanced binary trees, this means as near as possible all the branches are the same length (obviously in the second there aren't enough numbers for this to be the case but it's as near as possible). Constructing balanced trees is not easy, the generally accepted method of constructing almost balanced trees is putting the numbers in in a random order, this may mean you end up with something like this: ![Binarytree-uneven](https://sampwiki.blast.hk/wiki/Image:Binarytree-uneven.GIF)
+ - 下一个节点：9
 
-Obviously this tree is still valid but the right side is much larger than the left, however finding 25 still only takes 7 comparisons in this compared to 12 in the straight list. Also, as long as you start with a fairly middle number the random insertion method should produce a fairly balanced tree. The worst possible thing you can do is put the numbers in in order as then there will be no left branches at all (or right branches if done the other way), however even in this worst case the binary tree will take no longer to search than the straight list.
+   - 由于7小于9, 我们转到9的左侧分支. 
 
-**Modification**
+ - 下一个节点：7
 
-#### Addition
+   - 7等于7, 所以我们找到了目标值. 
 
-Adding a value to a binary tree is relatively easy, you just follow the tree through, using the value you want to add as a reference untill you reach an empty branch and add the number there. E.g. if you wanted to add the number 15 to our original balanced tree it would end up on the left branch of the 17. If we wanted to add the number 8 to the second balanced tree (the one without the 7) it would end up in the 7's old slot on the left of the 9.
+这个方法总共进行了4次比较（包括最后一次确认我们在7上）. 如果使用线性搜索, 最多需要进行5次比较, 因此二叉树的查找效率更高.
 
-#### Deletion
+如果我们假设二叉树中没有数字7, 我们将会得到一个如下的二叉树结构: ![Binarytree-7-less](https://sampwiki.blast.hk/wiki/Image:Binarytree-7-less.GIF)
 
-Deleting a number from a binary tree can be hard or it can be easy. If the number is at the end of a branch (e.g. 1, 5, 7, 12 etc in the original tree) you simply remove them. If a number only has one child (e.g. the 9 in the second example) you simply move that child (e.g. the 12) up into their position (so 6's children would be 2 and 12 in the new second example with 9 removed). Deletion only gets interesting when a node has two children. There are at least four ways of doing this:
+这与上面的示例不同, 它只有一个子节点（9）, 以及2和0个子节点. 只有在节点数量为(2^n)-1 的情况下（例如 0、1、3、7、15、31 等）, 你才能得到一个完美的二叉树. 任何其他数量的节点都会导致树不完全. 在这个例子中, 当我们到达9时, 如果7存在, 它应该在9的左侧分支上. 然而, 实际情况是9没有左侧分支, 这意味着7不存在（它不可能出现在树的其他地方, 仔细想一想）. 因此, 我们返回-1, 表示无效的槽位
 
-The first method is the simplest computationally. Basically you choose one of the branches (left or right, assume right for this explanation) and replace the node you've removed with the first node of that branch (i.e. the right child of the node you've removed). You then go left through the new branch till you reach the end and place the left branch there. E.g. if you removed the 14 from the original exampe you would end up with 25 taking its place at the top of the tree and 6 attached to the left branch of 17. This method is fast but ends up with very unbalanced trees very quickly.
+#### 平衡与不平衡的二叉树
 
-The second method is to get all the numbers which are children of the node you just removed and rebuild a new binary tree from them, then put the top of that tree into the node you've just removed. This keeps the tree fairly well balanced but is obviously slower.
+上面例子中的树称为平衡二叉树, 这意味着尽可能地所有的分支长度相同（显然在第二棵树中, 由于数量不足, 不能完全平衡, 但已经尽可能接近）. 构建平衡树并不容易, 通常接受的构建几乎平衡树的方法是以随机顺序插入数字, 这可能会导致如下结果: ![Binarytree-uneven](https://sampwiki.blast.hk/wiki/Image:Binarytree-uneven.GIF)
 
-The third method is to combine the two methods above and rebuild the tree inline, this is more complex to code but keeps the tree balanced and is faster than the second method (though no-where near as fast as the first).
+显然, 这棵树仍然是有效的, 但右侧远大于左侧. 然而, 找到 25 仍然只需 7 次比较, 而在直线列表中则需要 12 次比较. 此外, 只要从一个相对中间的数字开始, 随机插入方法通常会产生一个相对平衡的树. 最糟糕的情况是按顺序插入数字, 这样将完全没有左分支（如果按相反的顺序则会没有右分支）. 然而, 即使在这种最坏情况下, 二叉树的搜索时间也不会比直线列表更长.
 
-The final menthod listed here is to simply set a flag on a value saying it's not used any more, this is even faster than the first method and maintains the structure but means you can't re-use slots unless you can find a value to replace it with later.
+**修改**
+
+#### 添加
+
+向二叉树中添加一个值相对简单, 你只需通过树进行遍历, 使用你想添加的值作为参考, 直到你到达一个空分支并将该值添加到那里. 例如, 如果你想向我们最初的平衡树中添加数字 15, 它将最终位于 17 的左分支上. 如果我们想向第二棵平衡树（没有 7 的那棵）中添加数字 8, 它将最终位于 9 的左侧, 即原来 7 的位置.
+
+#### 删除
+
+从二叉树中删除一个数字可以很简单, 也可以很复杂. 如果数字位于分支的末端（例如原始树中的 1、5、7、12 等）, 你只需将它们删除. 如果一个数字只有一个子节点（例如第二个示例中的 9）, 你只需将那个子节点（例如 12）移动到它的位置（在删除 9 后, 6 的子节点将是 2 和 12）. 当一个节点有两个子节点时, 删除操作才变得有趣. 处理这种情况的方法至少有四种：
+
+第一种方法在计算上是最简单的. 基本上, 你选择一个分支（左或右, 假设为右分支）, 用该分支的第一个节点（即你删除的节点的右子节点）替换你删除的节点. 然后你沿着新分支向左遍历, 直到到达末尾, 并将左分支放在那里. 例如, 如果你从原始示例中删除 14, 你将会让 25 取代它在树顶的位置, 而 6 则附加到 17 的左分支上. 这种方法很快, 但会很快产生非常不平衡的树. 
+
+第二种方法是获取你刚刚删除的节点的所有子节点, 并从这些子节点中重建一个新的二叉树, 然后将新树的顶部放入你刚刚删除的节点的位置. 这保持了树的相对平衡, 但显然速度较慢. 
+
+第三种方法是结合前两种方法, 在内联重建树, 这种方法编程更复杂, 但保持了树的平衡, 速度比第二种方法快（虽然没有第一种方法快）. 
+
+最后一种方法是简单地在一个值上设置一个标志, 表示它不再使用, 这种方法比第一种方法更快, 并且保持了结构, 但这意味着你不能重新使用槽位, 除非你以后找到一个值来替换它.
