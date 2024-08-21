@@ -3,11 +3,11 @@ title: open.mp functions
 description: New functions and callbacks.
 ---
 
-This page contains all the functions and callbacks that were added in open.mp
+本页包含 open.mp 中添加的所有函数和回调
 
-## Player
+## 玩家
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [TogglePlayerWidescreen](../scripting/functions/TogglePlayerWidescreen)                                 |
 | [IsPlayerWidescreenToggled](../scripting/functions/IsPlayerWidescreenToggled)                           |
@@ -53,9 +53,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [OnScriptLoadPlayer](../scripting/callbacks/OnScriptLoadPlayer)                                                         |
 | [OnScriptUnloadPlayer](../scripting/callbacks/OnScriptUnloadPlayer)                                                         |
 
-## Object
+## 对象(Object)
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [SetObjectNoCameraCollision](../scripting/functions/SetObjectNoCameraCollision)                         |
 | [SetPlayerObjectNoCameraCollision](../scripting/functions/SetPlayerObjectNoCameraCollision)             |
@@ -96,9 +96,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [HideObjectForPlayer](../scripting/functions/HideObjectForPlayer)                                       |
 | [ShowObjectForPlayer](../scripting/functions/ShowObjectForPlayer)                                       |
 
-## Pickup
+## 拾取物
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [CreatePlayerPickup](../scripting/functions/CreatePlayerPickup)                                         |
 | [DestroyPlayerPickup](../scripting/functions/DestroyPlayerPickup)                                       |
@@ -132,9 +132,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)                                 |
 | [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)                               |
 
-## Vehicle
+## 载具
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [ChangeVehicleColours](../scripting/functions/ChangeVehicleColours)                                     |
 | [GetPlayerLastSyncedVehicleID](../scripting/functions/GetPlayerLastSyncedVehicleID)                     |
@@ -178,9 +178,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [VehicleCanHaveComponent](../scripting/functions/VehicleCanHaveComponent)                               |
 | [GetVehicles](../scripting/functions/GetVehicles)                                                       |
 
-## TextDraw
+## 文本绘制
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [TextDrawColour](../scripting/functions/TextDrawColour)                                                 |
 | [TextDrawBoxColour](../scripting/functions/TextDrawBoxColour)                                           |
@@ -238,18 +238,18 @@ This page contains all the functions and callbacks that were added in open.mp
 | [IsValidPlayerTextDraw](../scripting/functions/IsValidPlayerTextDraw)                                   |
 | [IsPlayerTextDrawVisible](../scripting/functions/IsPlayerTextDrawVisible)                               |
 
-## GameText
+## 游戏文本
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [GetGameText](../scripting/functions/GetGameText)                                                       |
 | [HasGameText](../scripting/functions/HasGameText)                                                       |
 | [HideGameTextForAll](../scripting/functions/HideGameTextForAll)                                         |
 | [HideGameTextForPlayer](../scripting/functions/HideGameTextForPlayer)                                   |
 
-## GangZone
+## 地盘
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [IsValidGangZone](../scripting/functions/IsValidGangZone)                                               |
 | [IsPlayerInGangZone](../scripting/functions/IsPlayerInGangZone)                                         |
@@ -280,18 +280,18 @@ This page contains all the functions and callbacks that were added in open.mp
 | [OnPlayerClickGangZone](../scripting/callbacks/OnPlayerClickGangZone)                                   |
 | [OnPlayerClickPlayerGangZone](../scripting/callbacks/OnPlayerClickPlayerGangZone)                       |
 
-## Checkpoint
+## 检查点
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [IsPlayerCheckpointActive](../scripting/functions/IsPlayerCheckpointActive)                             |
 | [GetPlayerCheckpoint](../scripting/functions/GetPlayerCheckpoint)                                       |
 | [IsPlayerRaceCheckpointActive](../scripting/functions/IsPlayerRaceCheckpointActive)                     |
 | [GetPlayerRaceCheckpoint](../scripting/functions/GetPlayerRaceCheckpoint)                               |
 
-## Actor
+## 演员(Actor)
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [SetActorSkin](../scripting/functions/SetActorSkin)                                                     |
 | [GetActorSkin](../scripting/functions/GetActorSkin)                                                     |
@@ -299,9 +299,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [GetActorSpawnInfo](../scripting/functions/GetActorSpawnInfo)                                           |
 | [GetActors](../scripting/functions/GetActors)                                                           |
 
-## 3D TextLabel
+## 3D文本标签
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [Is3DTextLabelStreamedIn](../scripting/functions/Is3DTextLabelStreamedIn)                               |
 | [Get3DTextLabelText](../scripting/functions/Get3DTextLabelText)                                         |
@@ -331,15 +331,15 @@ This page contains all the functions and callbacks that were added in open.mp
 
 ## Class
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [GetAvailableClasses](../scripting/functions/GetAvailableClasses)                                       |
 | [EditPlayerClass](../scripting/functions/EditPlayerClass)                                               |
 | [GetPlayerClass](../scripting/functions/GetPlayerClass)                                                 |
 
-## Menu
+## 菜单
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [GetMenuItem](../scripting/functions/GetMenuItem)                                                       |
 | [GetMenuItems](../scripting/functions/GetMenuItems)                                                     |
@@ -350,9 +350,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [IsMenuDisabled](../scripting/functions/IsMenuDisabled)                                                 |
 | [IsMenuRowDisabled](../scripting/functions/IsMenuRowDisabled)                                           |
 
-## Database
+## 数据库
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [DB_ExecuteQuery](../scripting/functions/DB_ExecuteQuery)                                               |
 | [DB_FreeResultSet](../scripting/functions/DB_FreeResultSet)                                             |
@@ -371,9 +371,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [DB_GetRowCount](../scripting/functions/DB_GetRowCount)                                                 |
 | [DB_SelectNextRow](../scripting/functions/DB_SelectNextRow)                                             |
 
-## Core
+## 核心
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [SetModeRestartTime](../scripting/functions/SetModeRestartTime)                                         |
 | [GetModeRestartTime](../scripting/functions/GetModeRestartTime)                                         |
@@ -394,9 +394,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [ClearBanList](../scripting/functions/ClearBanList)                                                     |
 | [IsBanned](../scripting/functions/IsBanned)                                                             |
 
-## Server Rule
+## 服务器规则
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [AddServerRule](../scripting/functions/AddServerRule)                                                   |
 | [RemoveServerRule](../scripting/functions/RemoveServerRule)                                             |
@@ -405,9 +405,9 @@ This page contains all the functions and callbacks that were added in open.mp
 | [SetServerRuleFlags](../scripting/functions/SetServerRuleFlags)                                         |
 | [GetServerRuleFlags](../scripting/functions/GetServerRuleFlags)                                         |
 
-## Timer
+## 计时器
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [IsValidTimer](../scripting/functions/IsValidTimer)                                                     |
 | [IsRepeatingTimer](../scripting/functions/IsRepeatingTimer)                                             |
@@ -416,29 +416,29 @@ This page contains all the functions and callbacks that were added in open.mp
 | [CountRunningTimers](../scripting/functions/CountRunningTimers)                                         |
 | [GetRunningTimers](../scripting/functions/GetRunningTimers)                                             |
 
-## Custom Model
+## 自定义模型
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [IsValidCustomModel](../scripting/functions/IsValidCustomModel)                                         |
 | [GetCustomModelPath](../scripting/functions/GetCustomModelPath)                                         |
 
-## String
+## 字符串
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [strcopy](../scripting/functions/strcopy)                                                               |
 | [strequal](../scripting/functions/strequal)                                                             |
 
-## Float
+## 浮点数
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [strfloat](../scripting/functions/strfloat)                                                             |
 
-## File
+## 文件
 
-| Name                                                                                                    |
+| 名称                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [ftell](../scripting/functions/ftell)                                                                   |
 | [fstat](../scripting/functions/fstat)                                                                   |
