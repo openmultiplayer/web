@@ -3,15 +3,16 @@ title: "Remote Console (RCON)"
 description: Remote server administation.
 ---
 
-The Remote Console is a command prompt where you can use RCON commands without having to be in game and on your server. Since 0.3b the Remote Console got removed from the Server Browser. From now on you will have to use another way to access Remote RCON as explained below.
+远程控制台是一个命令提示符，你可以在不进入游戏和服务器的情况下使用RCON命令。从0.3b版本开始，远程控制台已从服务器浏览器中移除。现在你需要使用另一种方式来访问远程RCON，如下所述。
 
-1. Open a text editor.
-2. Write in the following line: `rcon.exe IP PORT RCON-PASS` (Replace IP/PORT/PASS with your server details)
-3. Save the file as `rcon.bat`
-4. Put the file into your GTA directory where `rcon.exe` is located.
-5. Run `rcon.bat`
-6. Enter the command you like.
+1. 打开一个文本编辑器。
+2. 写入以下内容：`rcon.exe IP PORT RCON-PASS`（用你的服务器详情替换IP/PORT/PASS）
+3. 将文件保存为 `rcon.bat`
+4. 将该文件放入`rcon.exe`所在的GTA目录中。
+5. 运行 `rcon.bat`
+6. 输入你想使用的命令。
 
 ![Rcon console](/images/server/rcon.jpg)
 
-Note: There is no need to type `/rcon` before the command in the server browser and the commands will not work if you do. For Example if you want to reset the server just type `gmx` and hit enter. That is all you need to do. Enjoy
+注意：在服务器浏览器中不需要在命令前输入 `/rcon`，如果你这样做，命令将无法执行。例如，如果你想重置服务器，只需输入 `gmx` 并按下回车键。这就是你需要做的所有操作。享受它吧!
+
