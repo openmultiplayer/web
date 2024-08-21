@@ -3,7 +3,7 @@ title: "Color Fix"
 descripion: A basic script to add more player colours.
 ---
 
-This tutorial is to be used with [GetPlayerColor](../scripting/functions/GetPlayerColor), if you do not use [SetPlayerColor](../scripting/functions/SetPlayerColor) in your script when players connect.
+本教程将与 [GetPlayerColor](../scripting/functions/GetPlayerColor) 一起使用, 当玩家连接至服务器时, 如果你在脚本中不使用 [SetPlayerColor](../scripting/functions/SetPlayerColor) 设置玩家的颜色, 则 [GetPlayerColor](../scripting/functions/GetPlayerColor) 无法获取正确的玩家颜色.
 
 ```c
 new PlayerColors[] = {
@@ -20,17 +20,17 @@ new PlayerColors[] = {
 };
 ```
 
-First place that at the top of your script.
+首先将其放在脚本的顶端.
 
-Next place this under the OnPlayerConnect callback:
+接下来，将以下内容放在 OnPlayerConnect 回调下:
 
 ```c
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);
 ```
 
-Now [GetPlayerColor](../scripting/functions/GetPlayerColor) will work!
+现在 [GetPlayerColor](../scripting/functions/GetPlayerColor) 可以正确获取玩家颜色!
 
-For new versions of SA-MP you can add this array:
+对于 SA-MP 的新版本，你可以添加这个数组:
 
 ```c
 new PlayerRainbowColors[511] = {
@@ -108,4 +108,4 @@ new PlayerRainbowColors[511] = {
 };
 ```
 
-Now there are no duplicated colors, the colors are distributed to the maximum number of slots, the step of color - 34, and the TAB of full server looks like a rainbow!
+现在没有重复的颜色，颜色被分配到最大的插槽数，颜色的步长 - 34，服务器的 TAB 玩家列表菜单看起来就像一道彩虹!
