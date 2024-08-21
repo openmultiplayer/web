@@ -36,7 +36,7 @@ SVar 系统与 PVars 系统相同，但所创建的变量是服务器范围的�
 
 - SVars 比普通变量慢几倍. 一般来说，用内存换速度比用速度换内存更有利.
 
-## 相关功能
+## 相关函数
 
 - [SetSVarInt](../scripting/functions/SetSVarInt): 为服务器变量设置一个整数.
 - [GetSVarInt](../scripting/functions/GetSVarInt): 获取服务器变量的整数值.

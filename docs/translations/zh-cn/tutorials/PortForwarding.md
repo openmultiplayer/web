@@ -3,70 +3,70 @@ title: Port Forwarding
 description: Server port forwarding tutorial.
 ---
 
-**Welcome to the Port Forward tutorial!**
+**欢迎来到端口转发教程!**
 
-So, you have arrived to the Port Forward tutorial, made by Leopard.
+此教程是Leopard编写的端口转发教程.
 
-All you need is a samp-server or omp-server and a router. If you have not a router, then you don't need to port forward!
+你所需要的是一个samp-server或omp-server以及一个路由器。如果你没有路由器，那么你不需要进行端口转发!
 
-## The Start
+## 开始
 
-Ok, so here's the start, start off by finding your **gateway**. Assume that you have vista. Click start, click on the search field, and write **cmd**. Then a black box appears. Enter the following; **ipconfig**. Wait for the text to load, then look though it. Keep searching until you find _**gateway**_, and don't close the black box!
+首先找到你的**网关(gateway)**。假设你使用的是Vista系统。点击开始，点击搜索栏，输入**cmd**。然后会出现一个黑框。输入以下内容；**ipconfig**。等待文本加载完毕，然后在其中查找。直到你找到**网关(gateway)**，并且不要关闭黑框!
 
-When you have found it, open your favorite web browser. When it's loaded, head over to the adress bar and type in the _**gateway**_ value (example: 192.168.0.1/192.168.1.1). Press enter.
+找到之后，打开浏览器。当它加载完毕后，在地址栏输入**网关(gateway)**值（例如：192.168.0.1/192.168.1.1）。按下回车.
 
-## Router Configuration
+## 路由器配置
 
-Well done, you've made it to the router's configuration page. What we've got left to do is port forward now.
+做得好，你已经进入了路由器的配置页面。接下来我们需要进行端口转发.
 
-So.. there are a category in that page that is named one of the followings;
+所以……在该页面上有一个名为以下之一的类别;
 
-- Virtual Server
-- Port Forwarding
-- Port Control
-- Application Sharing
-- Anything with `port` in its name.
+- 虚拟服务器(Virtual Server)
+- 端口转发(Port Forwarding)
+- 端口控制(Port Control)
+- 应用共享(Application Sharing)
+- 任何名称中带有`端口`的选项.
 
-If you have found it, click on it. Then, click the 'Add new', 'New Port' or some else button that will toggle opening a new port.
+如果你找到了它，点击它。然后，点击 '添加新条目(Add new)', '新端口(New Port)' 或其他按钮以开启新端口.
 
-Enter the following details:
-
-```
-Port: YOUR_PORT (standard: 7777)
-Port Type: UDP
-Enabled: Yes
-**IP: Continue the 3rd Step**
-```
-
-Now you need to know your computer IP address.
-
-## Getting the IP, Continuing
-
-Now, maximize the black box and look though the text again, until you see _IPv4_. It should be in a format like this: **192.168.0.100**. Copy it, and there you have it! Continue with the Information in the router's homepage. For example, my ip is 192.168.0.100
+输入以下详细信息:
 
 ```
-Port: YOUR_PORT (standard: 7777)
-Port Type: UDP
-Enabled: Yes
-IP: 192.168.0.100
+端口(Port)：服务器的端口（默认：7777）
+端口类型(Port Type)：UDP
+启用(Enabled)：是
+**IP：继续第3步**
 ```
 
-And press **save**. Then your done. AND! Don't forget to **port forward in Windows Firewall**. This is a little tutorial;
+现在你需要知道你的电脑IP地址.
 
-Go to the start menu, enter "firewall" in the search field and select the "Windows Firewall". Open it and click _Change preferences_. New window pop-up. Click the _Exceptions_ tab, click the _Add port.._ and then fill in this information;
+## 获取IP，继续
+
+现在，最大化黑框并再次查看文本，直到你看到**_IPv4_**。它的格式应该是这样的：**192.168.0.100**。复制它，这就是你的IP地址！继续填写路由器主页上的信息。例如，我的IP是192.168.0.100
 
 ```
-Name: SA-MP Server (name it whatever you want)
-Port Number: YOUR_PORT (standard: 7777)
-Protocol: UDP
+端口(Port)：服务器的端口（默认：7777）
+端口类型(Port Type)：UDP
+启用(Enabled)：是
+IP：192.168.0.100
 ```
 
-Then your done! Click ok and close it. Launch the server, and see if its working. If it is, go to your SA-MP Client and enter: localhost:YOUR_PORT(standard: 7777). If the ping changes, then your server is working fully. Now you just need to go to:
+然后点击**保存(save)**。接着你就完成了。并且！不要忘记在**Windows防火墙**中进行端口转发。这是一个简短的教程;
+
+进入开始菜单，在搜索栏中输入 "防火墙(firewall)" 并选择 "Windows防火墙(Windows Firewall)". 打开它并点击 _更改设置(Change preferences)_. 弹出一个新窗口. 点击 _例外(Exceptions)_ 选项卡, 点击 _添加端口(Add port).._ 然后填写以下信息;
+
+```
+名称(Name): SA-MP Server (名称可以随意)
+端口号(Port Number): 服务器的端口 (默认: 7777)
+协议(Protocol): UDP
+```
+
+然后就完成了！点击确定并关闭它。启动服务器，看看它是否有效. 如果有效, 进入你的SA-MP客户端并输入: localhost:端口(默认: 7777). 如果ping发生变化，那么你的服务器运行完全正常。接下来你只需前往:
 
 [WhatIsMyIP.COM](http://whatismyip.com).
 
-## The finish
+## 完成
 
-Once there, get the ip that is on your screen. Go again to your SA-MP Client, add that ip to your favorites and add YOUR_PORT (standard: 7777) at the end. If its working,
+到达该页面后，获取屏幕上的IP。再次进入你的SA-MP客户端, 将该IP添加到收藏夹并在IP的末尾添加 服务器的端口(默认: 7777)，如果正常运行,
 
-**CONGRATULATIONS**! _You have port-forwarded_!
+**恭喜你**! _你已经成功完成了端口转发_!

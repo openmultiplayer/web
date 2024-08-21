@@ -3,45 +3,45 @@ title: Per-player variable system
 description: The per-player variable system (put short, PVar) is a new way of creating player variables in an efficient dynamically created method globally, meaning they can be used in server's gamemode and filterscripts at the same time.
 ---
 
-The per-player variable system (put short, PVar) is a new way of creating player variables in an efficient dynamically created method globally, meaning they can be used in server's gamemode and filterscripts at the same time.
+每玩家变量系统（简称为PVar）是一种新方式，可以通过动态创建的全局方法高效地创建玩家变量，这意味着它们可以在服务器的游戏模式和过滤脚本中同时使用。
 
-They are similar to [SVars](servervariablesystem), but are on a per-player basis. See the last 2 posts in this thread to read about the difference between pawn properties and PVars.
+它们类似于[SVars](servervariablesystem)，但基于每个玩家。请参阅本线程的最后两篇帖子以了解Pawn属性和PVars之间的区别。
 
-## Advantages
+## 优点
 
-The new system introduced in SA-MP 0.3a R5 server updated has several major advantages over creating an array sized MAX_PLAYERS.
+SA-MP 0.3a R5服务器更新中引入的新系统相比于创建大小为 `MAX_PLAYERS` 的数组具有几个主要优点：
 
-- PVars can be shared/accessed across gamemode scripts and filterscripts, making it easier to modularize your code.
+- PVars 可以跨游戏模式脚本和过滤脚本共享/访问，使代码模块化更容易。
 
-- PVars are automatically deleted when a player leaves the server (after OnPlayerDisconnect), meaning you don't have to manually reset variables for the next player who joins.
+- 当玩家离开服务器时（在 `OnPlayerDisconnect` 之后），PVars 会自动删除，因此不必手动重置下一个加入的玩家的变量。
 
-- No real need for complex enums/player info structures.
+- 不需要复杂的 `enum`/玩家信息结构。
 
-- Saves memory by not allocating pawn array elements for playerids which will probably never be used.
+- 通过不为可能永远不会使用的 `playerid` 分配Pawn数组元素来节省内存。
 
-- You can easily enumerate and print/store the PVar list. This makes both debugging and player info storage easier.
+- 可以轻松枚举并打印/存储PVar列表。这使得调试和玩家信息存储更加容易。
 
-- Even if a PVar hasn't been created, it still will return a default value of 0.
+- 即使PVar尚未创建，它仍会返回默认值 `0`。
 
-- PVars can hold very large strings using dynamically allocated memory.
+- PVars 可以使用动态分配的内存保存非常大的字符串。
 
-- You can Set, Get, Create PVars ingame.
+- 您可以在游戏中设置、获取、创建PVars。
 
-## Drawbacks
+## 缺点
 
-- PVars are several times slower than regular variables. It is generally more favorable to trade in memory for speed, rather than the other way round.
+- PVars 比普通变量慢几倍。一般来说，此功能在用内存换速度方面比用速度换内存更有利。
 
-## Functions
+## 函数
 
-The functions for setting and retrieving the player variables are:
+用于设置和检索玩家变量的函数包括：
 
-- [SetPVarInt](../scripting/functions/SetPVarInt) Set an integer for a player variable.
-- [GetPVarInt](../scripting/functions/GetPVarInt) Get the previously set integer from a player variable.
-- [SetPVarString](../scripting/functions/SetPVarString) Set a string for a player variable.
-- [GetPVarString](../scripting/functions/GetPVarString) Get the previously set string from a player variable.
-- [SetPVarFloat](../scripting/functions/SetPVarFloat) Set a float for a player variable.
-- [GetPVarFloat](../scripting/functions/GetPVarFloat) Get the previously set float from a player variable.
-- [DeletePVar](../scripting/functions/DeletePVar) Delete a player variable.
+- [SetPVarInt](../scripting/functions/SetPVarInt): 为玩家变量设置一个整数.
+- [GetPVarInt](../scripting/functions/GetPVarInt): 获取玩家变量的整数值.
+- [SetPVarString](../scripting/functions/SetPVarString): 为玩家变量设置字符串.
+- [GetPVarString](../scripting/functions/GetPVarString): 获取玩家变量的字符串.
+- [SetPVarFloat](../scripting/functions/SetPVarFloat): 为玩家变量设置一个浮点数.
+- [GetPVarFloat](../scripting/functions/GetPVarFloat): 获取玩家变量的浮点数.
+- [DeletePVar](../scripting/functions/DeletePVar): 删除一个玩家变量.
 
 ```c
 #define PLAYER_VARTYPE_NONE   (0)
