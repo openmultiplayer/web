@@ -1,63 +1,63 @@
 ---
-title: String Manipulation
-description: Beginner friendly tutorial about everything string manipulation.
+title: 字符串操作
+description: 关于所有字符串操作的初学者友好教程
 ---
 
-## Introduction
+## 简介
 
-### Tutorial description
+### 教程说明
 
-Hello everyone, it surely is a nice quiet night, or at least it is at the composition of this tutorial. So, hey, what about tagging along to both enrich and/or engage with the main focus of this article, this is and as the title suggests, going to be focused on “_String manipulation_” in pawn, we will go through the absolute intermediate stuff that everybody should be aware of to some sort of advanced, clever and effective tips.
+大家好，这真是一个宁静的夜晚, 至少在编写本教程时是这样的. 所以，接下来我们将深入探讨本文的主要焦点，这篇文章的标题所指明的，将会专注于“_字符串操作_”在 PAWN 中的应用。我们将从每个人都应该了解的基础内容逐步深入，直至一些高级的、巧妙且有效的技巧。
 
-### What is string formatting?
+### 什么是字符串格式化？
 
-In general, formatting a text is the act of manipulating it to visually improve its readability, be it changing the font’s family, color, weight and so on.
+通常来说，格式化文本是通过操作它来提高其可读性的行为，例如更改字体的系列、颜色、粗细等。
 
-Strings being an array of characters (_alphabets, numbers, symbols_), which we wouldn’t specifically call a text on itself but is referred as such when displayed, can be processed with the same approach, but unfortunately, SA-MP’s interpretation of pawn does not allow for much (_yet? Maybe never_), generally speaking changing the color is as far as we can get, yes, you can still change/customize the font, but that’s client-sided only, and yes, [GTA San Andreas](https://www.rockstargames.com/sanandreas/) (_the parent game_) does provide some extra fonts, but that only works on [textdraws](../scripting/resources/textdraws) and [gametext](../scripting/functions/GameTextForPlayer), this does cause limitations concerning text presentation, but hey, it’s been over a decade now, and we survived just fine.
+字符串是字符的数组（_字母、数字、符号_），我们不会具体称其为文本，但在显示时会这样称呼。字符串可以用相同的方法处理，但不幸的是，SA-MP 对 PAWN 的解释并不允许进行太多操作（_还没有？也许永远不会_）。一般来说，改变颜色是我们所能做到的最大限度。是的，你仍然可以更改/自定义字体，但那是客户端侧的操作。是的，[GTA 圣安地列斯](https://www.rockstargames.com/sanandreas/)（_母游戏_）确实提供了一些额外的字体，但那仅适用于 [TextDraws](../scripting/resources/textdraws) 和 [GameText](../scripting/functions/GameTextForPlayer)。这确实在文本展示方面存在一些限制，但嘿，已经超过十年了，我们还是很好地生存了下来。
 
-### String declaration
+### 字符串声明
 
-As I said before, strings are basically arrays of characters, so they are used the same way arrays are, and so as we would create an array, we would do for strings following this format; `string_name[string_size]`.
+如我之前所说，字符串基本上是字符数组，因此它们的用法与数组相同。因此，就像我们创建一个数组一样，我们也可以按照以下格式来创建字符串：`string_name[string_size]`。
 
-:::info
+:::信息
 
-**string_name**: the name of the character array (_e.g. string, str, message, text...etc. as long as it’s a valid variable name (begins with a character or an underscore)_).
+**string_name**：字符数组的名称（_例如 string, str, message, text...等等，只要它是一个有效的变量名（以字母或下划线开头）_）。
 
-**string_size**: the maximum characters this string would have.
+**string_size**：该字符串可以包含的最大字符数。
 
 :::
 
 ```cpp
-// declaring a string of 5 characters
+// 声明一个 5 个字符的字符串
 new str_1[5];
 
-// declaring a string of 100 characters
+// 声明一个 100 个字符的字符串
 new str_2[100];
 ```
 
-You can also predefine constant values so you can use them multiple times as string sizes.
+您还可以预先定义一个常量值，以便多次使用它们作为字符串大小.
 
 ```cpp
-// declaring a constant
+// 声明一个常量
 #define STRING_SIZE 20
 
-// declaring a string with the size of STRING_SIZE's value
+// 以 STRING_SIZE 值的大小声明字符串
 new str_3[STRING_SIZE];
 ```
 
-:::note
+:::注意
 
-On compilation time, the compiler will replace all occurrences of `STRING_SIZE` with the value `20`, this method is both time-saving and more readable on most cases, keep in mind that the value you assign to the `STRING_SIZE` constant must be an integer or else it will give a compilation error.
+在编译时，编译器将把所有出现的 `STRING_SIZE` 替换为值 `20`，这种方法在大多数情况下既节省时间又更具可读性。请记住，分配给 `STRING_SIZE` 常量的值必须是整数，否则将会导致编译错误。
 
 :::
 
-In addition to predefined constants, you can perform basic operations, the modulo operator (`%`) however will give compilation errors if used, you can still get away with division calculations (`/`) but keep in mind, dividing by `0` will trigger errors, the bonus here is all floating results will be automatically rounded for you.
+除了预定义常量之外，你还可以执行基本运算，不过如果使用取模运算符（`%`）会导致编译错误。你仍然可以进行除法计算（`/`），但请注意，除以 `0` 会触发错误。这里的一个额外好处是，所有的浮点结果都会自动为你四舍五入。
 
 ```cpp
-// declaring a constant
+// 声明一个常量
 #define STRING_SIZE 26
 
-// declaring strins with the use of the STRING_SIZE constant and some calculations
+// 使用 STRING_SIZE 常量声明字符串并进行一些计算
 new
   str_4[STRING_SIZE + 4],
   str_5[STRING_SIZE - 6],
@@ -65,49 +65,49 @@ new
   str_7[9 / 3];
 ```
 
-Theoretically, you can create somewhat ridiculously huge arrays, but SA-MP puts few restrictions on the length of strings you can work with, depending on what you’re working on, it limits the number of characters you can normally output.
+从理论上讲，你可以创建大得离谱的数组, 但 SA-MP 对你可以处理的字符串长度设置了一些限制，根据你正在处理的内容，它限制了你通常可以输出的字符数量。
 
-#### Length limits
+#### 长度限制
 
-SA-MP limits characters that can be stored in a single string and keeps scripters from going overboard with working with text, luckily, it’s not as bad as it might seem, the list below breaks down some of these limits;
+SA-MP 限制了可以存储在单个字符串中的字符数，并防止脚本编写者在处理文本时过度操作。幸运的是，这并不像看起来那么糟糕，下面的列表列出了其中的一些限制：
 
 |                     |                                                                                                                        |      |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---- |
-| **Text input**      | The text you input on the chat.                                                                                        | 128  |
-| **Text output**     | Text that output on the client's screen.                                                                               | 144  |
-| **Name**            | Player nickname / Username.                                                                                            | 24   |
-| **Textdraw string** | Pretty self-explanatory.                                                                                               | 1024 |
-| **Dialog info**     | The text displayed on all dialogs of the type `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`. | 4096 |
-| **Dialog caption**  | The caption/title on top of the dialog.                                                                                | 64   |
-| **Dialog input**    | The input box on `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`.                                                     | 128  |
-| **Dialog column**  | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER` and `DIALOG_STYLE_TABLIST`.                             | 128  |
-| **Dialog row**      | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER`, `DIALOG_STYLE_TABLIST` and `DIALOG_STYLE_LIST`.        | 256  |
-| **Chat bubble**     | The chat bubble that displays above the player's name tag.                                                             | 144  |
-| **Menu title**      | The GTA San Andreas native menu (_mostly used for shops_) header.                                                      | 31   |
-| **Menu item**       | The GTA San Andreas native menu (_mostly used for shops_) item/row.                                                    | 31   |
+| **文本输入**        | 你在聊天中输入的文本。                                                                                                 | 128  |
+| **文本输出**        | 在客户端屏幕上输出的文本。                                                                                             | 144  |
+| **玩家昵称**        | 玩家昵称/用户名。                                                                                                      | 24   |
+| **Textdraw 字符串** | 顾名思义，表示 Textdraw 的字符串。                                                                                     | 1024 |
+| **对话框信息**      | 显示在 `DIALOG_STYLE_MSGBOX`、`DIALOG_STYLE_INPUT` 和 `DIALOG_STYLE_PASSWORD` 类型对话框中的文本。                      | 4096 |
+| **对话框标题**      | 对话框顶部的标题/标题栏。                                                                                               | 64   |
+| **对话框输入**      | 在 `DIALOG_STYLE_INPUT` 和 `DIALOG_STYLE_PASSWORD` 中的输入框。                                                         | 128  |
+| **对话框列**        | `DIALOG_STYLE_TABLIST_HEADER` 和 `DIALOG_STYLE_TABLIST` 每列中的字符数。                                                | 128  |
+| **对话框行**        | `DIALOG_STYLE_TABLIST_HEADER`、`DIALOG_STYLE_TABLIST` 和 `DIALOG_STYLE_LIST` 每列中的字符数。                           | 256  |
+| **聊天气泡**        | 显示在玩家姓名标签上方的聊天气泡。                                                                                      | 144  |
+| **菜单标题**        | GTA 圣安地列斯原生菜单（_通常用于商店_）的标题。                                                                        | 31   |
+| **菜单项**          | GTA 圣安地列斯原生菜单（_通常用于商店_）的项目/行。                                                                     | 31   |
 
-If somehow these limits have been exceeded, few inconveniences might occur, it can even crash/freeze the server in some cases (_e.g. long textdraw strings_), in some other cases, the text would just truncate like the Menu title (_if it reaches 32 characters, it truncates back to 30_) and items.
+如果这些限制被超越，可能会出现一些不便，甚至在某些情况下可能会导致服务器崩溃/冻结（_例如，过长的 Textdraw 字符串_）。在其他情况下，文本会被截断，比如菜单标题（_如果达到 32 个字符，它会截断回 30 个字符_）和项目。
 
-Besides the strict limits put on strings, there are many others concerning different stuff, you can view the complete list [here](../scripting/resources/limits).
+除了字符串的严格限制外，还有许多其他限制涉及不同的内容，你可以在[这里](../scripting/resources/limits)查看完整列表。
 
-#### Assigning values
+#### 赋值
 
-Assigning values to strings can be done via many methods, some assign them upon their creation, others after, there are people who use loops, other use functions, and yes, there are who do this process manually, slot by slot, there is no exact right or wrong way for doing so, some methods are often more effective in few cases than others some are not, at the end of the day all that matters is performance, optimization, and readability.
+给字符串赋值可以通过多种方法完成，有些方法是在创建时赋值，有些则是在创建后赋值。有些人使用循环，有些人使用函数，当然也有人手动逐个赋值。没有一个绝对正确或错误的方法，在某些情况下，一些方法可能比其他方法更有效，但最终重要的是性能、优化和可读性。
 
-In most cases you’d want to give a default value to the string upon its creation, you can go through this simply as follows;
+在大多数情况下，你会希望在创建字符串时就给它赋予一个默认值，你可以通过如下简单方式实现;
 
 ```cpp
 new
   message_1[6] = "Hello",
-  message_2[] = "This is another message";
+  message_2[] = "这是另一条消息";
 ```
 
-Make sure the string’s size is greater than the number of characters you assigned them for, having a smaller or equal string size to that, will trigger compilation errors, leaving the size slot between the two brackets empty (like on the `message_2` example), will automatically give the array the size of the text you’ve assigned it to plus `1`, in this case, `23 + 1 = 24`, why? It reserves a slot for the null character (_aka the null-terminator_), more on that later, the word “_Hello_” has 5 characters, so in order to store it on a string, it should have 6 cells, 5 cells for the word’s character count, and one for the **null character**.
+请确保字符串的大小大于您为其分配的字符数，如果字符串的大小小于或等于该字符数，将导致编译错误, 两个方括号[]之间的留空 (就像 `message_2` 那样), 会自动赋予该数组大小等于您指定的文本大小+1, 在上面的例子中, `7 + 1 = 8`, 为什么加1? 因为它为空字符预留了一个位置 (_又名 空终止符_), 单词 “_Hello_” 有 5 个字符, 因此要将其存储在字符串中, 应该有 6 个单元格, 其中 5 个单元格用于存储单词的字符, 1个单元格用于存储**空字符**.
 
-Let’s take a look at doing the same process slot by slot manually, first, we define a new array, you can determine its size or leave that empty for the compiler to fill, both would work just fine, we will fill the array with characters to create the string “_Hello_”.
+首先，我们定义一个新数组，你可以决定它的大小，也可以留空让编译器填充，两种方法都可以，我们将在数组中填充字符，创建字符串“_Hello_”.
 
 ```cpp
-// Including the string' size on its declaration, or it won't work otherwise
+// 在字符串声明中包含字符串的大小，否则将无法工作
 new message_3[6];
 
 message_3[0] = 'H';
@@ -118,71 +118,71 @@ message_3[4] = 'o';
 message_3[5] = '\0';
 ```
 
-There, we assigned for each slot on the `message_3` array a character, this won’t work if you were to declare a sting with no definitive size, note that to represent a single character, it ought to be written between two single quotations (`'`), also, notice how we started with slot 0, and it’s only natural, considering how I emphasised on how a string is an array of characters, meaning, that the first slot is always 0, and the last one is its size minus 1 (_the null character does not count_), which in this case is 4, counting from 0 to 4, that makes it 5 characters, with the sixth being the null terminator, more on that comes later.
+在这里，我们为 `message_3` 数组的每个槽分配了一个字符，如果你声明了一个没有明确大小的字符串，这样的做法是行不通的，请注意，要表示一个字符，它应该写在两个单引号（`'`）之间，另外，请注意我们是如何从槽 `0` 开始的，这是很自然的、 考虑到我曾强调字符串是一个字符数组，这意味着第一个槽总是 `0`，最后一个槽是其大小减去 1（_空字符不计算在内_），在本例中最后一个槽是 `4`，从 0 到 4，共 5 个字符，第 6 个是空终止符，稍后再详述.
 
-You can also assign strings numbers which will be viewed as **ASCII** (_a system representing character numerically, it covers 128 characters ranging from 0 to 127, more on that [here](https://en.wikipedia.org/wiki/ASCII)_) code for a character, the same message “_Hello_” can be assigned using _ASCII_ code like this;
+您也可以为字符串分配数字，这些数字将被视为 **ASCII** 代码（_一种用数字表示字符的系统，它涵盖了从 0 到 127 的 128 个字符，更多信息[在此](https://en.wikipedia.org/wiki/ASCII)_）, 同样的信息“_Hello_”可以使用 _ASCII_ 代码分配，如下所示;
 
 ```cpp
 new message_4[6];
 
-message_4[0] = 72; // ASCII representation of capitalized h, “H”
-message_4[1] = 101; // ASCII representation of “e”
-message_4[2] = 108; // ASCII representation of “l”
-message_4[3] = 108; // ASCII representation of “l”
-message_4[4] = 111; // ASCII representation of “o”
-message_4[5] = 0; // ASCII representation of the null terminator
+message_4[0] = 72; // ASCII 代表大写字母 h, “H”
+message_4[1] = 101; // ASCII 代表 “e”
+message_4[2] = 108; // ASCII 代表 “l”
+message_4[3] = 108; // ASCII 代表 “l”
+message_4[4] = 111; // ASCII 代表 “o”
+message_4[5] = 0; // ASCII 代表空终止符
 ```
 
-And yes, you can perform numeric operations with these codes the same you do with normal numbers, after all, the machine views characters as just mere numbers.
+是的，您可以用这些代码进行数字运算，就像用普通数字运算一样，毕竟机器只是将字符视为数字而已.
 
 ```cpp
 new message_5[1];
 message_5[0] = 65 + 1;
 ```
 
-If you were to output `message_5[0]`, you would get **B**, weird right? Well, no, not really, you can perform other basic operations (_subtraction, multiplication, division, and even the modulo_), floating numbers will get auto-rounded for you, let’s see how this works.
+如果你输出 `message_5[0]`，你会得到 **B**，奇怪吗？其实并不，因为你可以执行其他基本操作（_减法、乘法、除法，甚至是取模运算_），浮点数也会自动四舍五入，让我们看看这是如何工作的。
 
-You have `65 + 1`, that returns `66`, checking the _ASCII_ table, you will find that `66` is the numeric representation of the character “_B_” (_capitalized_). So, the snippet above is basically the same as doing: `message_5[0] = 'B'`;
+你有 `65 + 1`，返回值是 `66`，查阅 _ASCII_ 表，你会发现 `66` 是字符“大写字母 B”的数字表示。所以，上面的代码片段基本上等同于：`message_5[0] = 'B'`。
 
-For reference, use [this ASCII table](http://www.asciitable.com/).
+参考这张 [ASCII 表](http://www.asciitable.com/)。
 
-You can also perform the same operation between multiple characters or a mix of both, them and numbers, here are few examples;
+你还可以在多个字符之间或字符和数字的组合之间执行相同的操作，以下是一些示例：
 
 ```cpp
 new message_6[3];
 
-message_6[0] = 'B' - 1; // Which is 66 - 1, returns 65, the numeric representation of “A”
-message_6[1] = 'z' - '&'; // Which is 122 - 38, returns 84, the numeric representation of “T”
-message_6[2] = '0' + '1'; // Which is 48 + 49, returns the numeric representation of “a”, note that '0' and '1' are not the numbers 0 and 1, but rather characters
+message_6[0] = 'B' - 1; // 即 66 - 1，返回 65，即“大写字母 A”的数字表示
+message_6[1] = 'z' - '&'; // 即 122 - 38，返回 84，即“大写字母 T”的数字表示
+message_6[2] = '0' + '1'; // 即 48 + 49，返回“小写字母 a”的数字表示，请注意 '0' 和 '1' 不是数字 0 和 1，而是字符
 ```
 
-It might get confusing sometimes if you never knew about the _ASCII_ system, all it takes is some practice, because understanding how it works, is very handy.  
-_ASCII_ code is not exclusive to decimal numbers only, you can also use hexadecimal or binary numbers the same way.
+如果你从未了解过 _ASCII_ 系统，可能会感到困惑. 但只需多加练习，理解其工作原理是非常有帮助的.  
+_ASCII_ 码不仅限于十进制数字，你还可以以相同的方式使用十六进制或二进制数字
 
 ```cpp
 new numString[4];
 
-numString[0] = 0x50; // The decimal number 80 in hexadecimal, capitalized p, “P”
-numString[1] = 0b1000001; // The decimal number 65 in binary, capitalized a, “A”
-numString[2] = 0b1010111; // The decimal number 87 in binary, capitalized w, “W”
-numString[3] = 0x4E; // The decimal number 78 in hexadecimal, capitalized n, “N”
+numString[0] = 0x50; // 80 的十六进制数，即大写字母“P”
+numString[1] = 0b1000001; // 65 的二进制数，即大写字母“A”
+numString[2] = 0b1010111; // 87 的二进制数，即大写字母“W”
+numString[3] = 0x4E; // 78 的十六进制数，即大写字母“N”
 ```
 
-Now let’s see something else, assigning values through loops, it’s literally the same as filling an array through loops, you can use all sorts of looping methods as well, goes as follow;
+现在我们看看其他的内容，通过循环赋值，这与通过循环填充数组的方式完全相同，你可以使用各种循环方法，过程如下;
 
 ```cpp
-// Let's fill this string with capitalized alphabets
+// 让我们用大写字母填充这个字符串
 new message_7[26];
 
-// The for loop
+// for 循环
 for (new i = 0; i < 26; i++)
   message_7[i] = 'A' + i;
 
-// The while loop
+// while 循环
 while (i++ < 'Z')
   message_7[i - 'A'] = i;
 
-// The do-while loop
+// do-while 循环
 new j = 'A';
 
 do {
@@ -190,78 +190,78 @@ do {
 }
 while (j++ < 'Z');
 
- // You can even use goto to simulate a loop, but it's not recommended.
+ // 你甚至可以使用 goto 来模拟循环，但不推荐这样做
 ```
 
-All three of them will output the same exact string, _ABCDEFGHIJKLMNOPQRSTUVWXYZ_.
+它们三个都会输出相同的字符串，即 _ABCDEFGHIJKLMNOPQRSTUVWXYZ_。
 
-If you found the loops above confusing, you might want to take a deeper look into how loops work, more on that can be found [here](../scripting/language/ControlStructures#loops) and [here](https://wiki.alliedmods.net/Pawn_Tutorial#Looping). Notice how I used characters in some logical conditions, like `j++ < 'Z'` that easily translates to `j++ < 90`, again, characters are treated like numbers, don’t feel strange, you’re welcome to check the _ASCII_ table whenever you’d like.
+如果你觉得上面的循环有些难以理解，建议你深入了解一下循环的工作原理，更多内容可以在[这里](../scripting/language/ControlStructures#loops)和[这里](https://wiki.alliedmods.net/Pawn_Tutorial#Looping)找到。注意我在某些逻辑条件中使用了字符，例如 `j++ < 'Z'` 这很容易被翻译为 `j++ < 90`，再一次强调，字符被当作数字处理，不要感到奇怪，你可以随时查阅 _ASCII_ 表。
 
-Say, you want to fill a string with a number of one specific character, (e.g. “_AAAAAA_”, “_TTTTTT_”, “_vvvvvv_”, “_666_” (_no, it’s not a coincidence_)), the typical idea that might cross most of the scripters, is hard-coding it, but what about long strings, well, what about using a loop, that’s fine too, but what if I told you there is an even more efficient way, just like you’d fill an array with the same value, you’d do the same for strings.
+假设你想用一个特定字符填充一个字符串（例如“_AAAAAA_”、“_TTTTTT_”、“_vvvvvv_”、“_666_”（_不，这不是巧合_）），大多数脚本编写者可能会想到手动硬编码，但是对于长字符串呢？当然你可以使用循环，但如果我告诉你有一种更高效的方式呢？就像你用相同的值填充数组一样，你也可以对字符串进行相同的操作。
 
 ```cpp
 new message_8[100] = {'J', ...};
 ```
 
-The code above declares a new string called `message_8` with 100 cells (_ranging from 0 to 99_) and gives each slot the value `'J'`, which of course can be used both as a character **J**, or number **74** according to the _ASCII_ system.
+上面的代码声明了一个名为 `message_8` 的新字符串，具有 100 个单元格（_范围从 0 到 99_），并为每个位置赋予值 `'J'`，这当然可以作为字符 **J** 或根据 _ASCII_ 系统表示的数字 **74** 使用。
 
-One other thing you can do with this is filling the string with characters whom values based on intervals, see the example of the capitalized alphabets from _A_ to _Z_ above? Let’s create the same string using this method.
+你还可以使用这种方法将字符串填充为基于区间的字符，看看上面从 _A_ 到 _Z_ 的大写字母的例子吧？让我们使用这种方法创建相同的字符串。
 
 ```cpp
 new message_9[26] = {'A', 'B', ...};
 ```
 
-How easy is that?! this is both more optimized and easy to read, and provides the same results as the 3 examples done using loop methods above, so how does it exactly work? Well, we gave the string initial values, `'A'` and `'B'`, which they respectively are _65_ and _66_, the compiler calculates the interval between the two values, which in this case is _1_, and completes filling the empty cells with values based on that interval until it fills up the whole array, you can put as many initial values as you want, but it will only regard the interval between the last two values, and work based on it, keep in mind that the initial values are treated as _ASCII_ code, so trying to output numeric intervals using this method on a string will result in something inconvenient, say you declared some random string like this;
+这有多简单？！这种方法不仅更优化且易于阅读，还提供与上述使用循环方法的 3 个示例相同的结果。那么它到底是如何工作的呢？我们为字符串提供了初始值 `'A'` 和 `'B'`，它们分别是 _65_ 和 _66_，编译器计算两者之间的间隔值（在本例中为 _1_），并根据该间隔值继续填充空单元格，直到填满整个数组。你可以放入任意多个初始值，但编译器只会考虑最后两个值之间的间隔，并以此为基础进行填充。请记住，初始值被视为 _ASCII_ 代码，因此，尝试使用此方法在字符串中输出数字间隔将导致一些不便，假设你声明了如下的随机字符串；
 
 ```cpp
 new rand_str[5] = {'1', '5', ...};
 ```
 
-Ideally, this should have output **151520** (_more specifically “1 5 15 20”_), but instead, it output; **159=A**, which is actually the correct output, why? Because remember, this is _ASCII_ code, '_1_' is _49_ and '_5_' is _53_, the interval between the two is _4 (53 - 49)_, the string accepts 5 characters, we already occupied two cells when we included initial catalog, so that makes it 3 left empty cells that have to be filled respecting the interval of 4, so this is how it goes **[ 49 | 53 | 57 | 61 | 65 ]**, let’s replace each number value with its _ASCII_ code match. **[ '1' | '5' | '9' | '=' | 'A']**, makes more sense huh?!
+理想情况下，这应该输出 **151520**（更具体地说是 "1 5 15 20"），但实际上输出了 **159=A**，这实际上是正确的输出。为什么？因为记住，这是 _ASCII_ 码，'1' 是 _49_，'5' 是 _53_，两者之间的间隔是 _4 (53 - 49)_。字符串接受 5 个字符，我们在包含初始值时已经占用了两个单元格，因此剩下的 3 个空单元格必须按照 4 的间隔填充。所以输出结果如下 **[ 49 | 53 | 57 | 61 | 65 ]**。现在将每个数字值替换为其 _ASCII_ 代码对应值。**[ '1' | '5' | '9' | '=' | 'A']**，现在更容易理解了吧？
 
-## The null terminator
+## 空字符终止符
 
-I referred to this on early sections of this tutorial, I hope it wasn’t that confusing at first, but even if it was, let’s peal the confusion off already, don’t you worry, it’s nothing hard or even that advances, just a basic fact that you should be aware of, I’ll keep it as short as possible, but if you want a deeper view on this, you can visit [this article](https://en.wikipedia.org/wiki/Null_character).
+在本教程的早期部分我提到了这个概念，希望当时不会太让人困惑，但即使有些困惑，现在让我们把这些困惑一扫而空吧。你不必担心，这其实并不难，也不是什么高级概念，只是你应该知道的一个基本事实。我会尽量简短，但如果你想更深入地了解这一点，可以访问[这篇文章](https://en.wikipedia.org/wiki/Null_character)。
 
-So, the null terminator (_aka the null character_), is a character present on all strings, its role is to indicate that a string has ended, you can think of it as a period mark (.) anything that comes after this character is not accounted for and completely ignored. You can’t type it using your keyboard, but you can refer to its value while coding, it’s present on the _ASCII_ table though, referred to as _NUL_, represented by the number 0.
+空字符终止符（又称空字符）是所有字符串中存在的一个字符，其作用是表示字符串的结束。你可以把它想象成一个句号 (.)，任何出现在这个字符之后的内容都不会被计算在内，并且会被完全忽略。你无法使用键盘输入它，但你可以在编码时引用它的值。它在 _ASCII_ 表中存在，被称为 _NUL_，用数字 0 表示。
 
-In _pawn_, you can type it as its numeric value, or as a character '_\0_'. The backslash there acts as an escaping character, it’s there to tell the machine that that character is the null character with the value of 0 and **NOT** the character `'0'` that has the value `48`.
+在 _pawn_ 语言中，你可以将其输入为其数值，或作为字符 '_\0_'。反斜杠在这里作为转义字符，它的作用是告诉机器该字符是值为 0 的空字符，而**不是**值为 48 的字符 '0'。
 
-There is a symbol used in _pawn_, **EOS**, short for **E**nd **O**f **S**tring, it’s a predefined macro for the null terminator, you can set the null terminator in a lot of different ways;
+在 _pawn_ 语言中，有一个符号 **EOS**，它是 **E**nd **O**f **S**tring（字符串结束）的缩写，这是空字符终止符的一个预定义宏。你可以通过多种不同的方式设置空字符终止符；
 
 ```cpp
 message_9[0] = 0;
 message_9[0] = '\0';
-message_9[0] = 0b; // The decimal number 0 in binary
-message_9[0] = 0x00; // The decimal number 0 in hexadecimal
-message_9[0] = _:0.0; // The floating number 0.0, we have to prefix it with the detag '_' to avoid compilation errors
+message_9[0] = 0b; // 二进制的十进制数 0
+message_9[0] = 0x00; // 以十六进制表示的十进制数字 0
+message_9[0] = _:0.0; // 对于浮动数字 0.0，我们必须在其前缀上'_'，以避免编译错误
 message_9[0] = false;
 message_9[0] = EOS;
 ```
 
-As I said earlier on the tutorial, you can ignore assigning the null character, but it’s always there at empty cells, when you declare a new string, all of its cells are automatically occupied by the null terminator, so for instance, if I go ahead and declare this string `text[3]`, all of its cells are assigned the value of `0` by default, here’s a simple visual representation of the string’s content;
+正如我在教程前面所说的，你可以忽略分配空字符，但它总是在空单元格中存在。当你声明一个新字符串时，所有单元格都会自动被空字符占据。因此，例如，如果我声明这个字符串 `text[3]`，它的所有单元格默认都会被分配值 `0`，这里是该字符串内容的简单可视化表示：
 
 |            |      |      |      |
 | ---------- | ---- | ---- | ---- |
-| Cells      | 0    | 1    | 2    |
-| ASCII code | 0    | 0    | 0    |
-| Characters | '\0' | '\0' | '\0' |
+| 单元格     | 0    | 1    | 2    |
+| ASCII 码   | 0    | 0    | 0    |
+| 字符       | '\0' | '\0' | '\0' |
 
-Here is another example of a pre-filled string.
+下面是另一个预填充字符串的例子。
 
 ```cpp
 new text_1[8] = "Hello";
 ```
 
-Here's the string's content per cell;
+以下是每个单元格的字符串内容;
 
 |            |     |     |     |     |     |      |      |      |
 | ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
-| Cells      | 0   | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
-| ASCII code | 72  | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
-| Characters | 'H' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
+| 单元格      | 0   | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ASCII 码 | 72  | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
+| 字符 | 'H' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
-If you, for instance, wanted to delete the content of this string, you can simply do so using one of the three examples below;
+例如，如果您想删除该字符串的内容，只需使用以下三个示例中的一个就可以了;
 
 ```cpp
 text_1[0] = 0;
@@ -269,21 +269,21 @@ text_1[0] = EOS;
 text_1[0] = '\0';
 ```
 
-Passing the string through an X-Ray scan will print out the following;
+将字符串通过 X-Ray 扫描会打印出以下结果;
 
 |            |      |     |     |     |     |      |      |      |
 | ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
-| Cells      | 0    | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
-| ASCII code | 0    | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
-| Characters | '\0' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
+| 单元格      | 0    | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ASCII 码 | 0    | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
+| 字符 | '\0' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
-If you try to output this string, everything beyond the slot number 0 will be ignored, and thus labeled as an empty string, even the `strlen` function will return 0 as it depends on the placement of the null character to retrieve the string’s length.
+如果尝试输出该字符串，槽 0 之后的所有内容都将被忽略，并被标记为空字符串，甚至 `strlen` 函数也将返回 0，因为 `strlen` 依赖于空字符的位置来获取字符串的长度.
 
-## String manipulation functions
+## 字符串操作功能
 
-When it comes to working with multiple chunks of text, _pawn_ has got you covered, it provides some very basic functions that do the job efficiently, no need to create your own when you’ve got native support that assures speed and optimization.
+在处理多文本块时，_pawn_ 可以满足您的需求，它提供了一些非常基本的功能，可以高效地完成工作.
 
-These are some natively supported functions (_taken from string.inc_);
+以下是一些本地支持的函数 (_摘自 string.inc_);
 
 ```cpp
 native strlen(const string[]);
@@ -303,187 +303,187 @@ native uuencode(dest[], const source[], numbytes, maxlength=sizeof dest);
 native memcpy(dest[], const source[], index=0, numbytes, maxlength=sizeof dest);
 ```
 
-We will take a closer look at few of them, the ones are more often used.
+我们将仔细看看其中一些更常用的函数。
 
-- The `strlen` function (this and `sizeof` are completely different things), that takes a string as a parameter, returns the length of that string (the number of characters it has), but pay attention as this is a bit tricky on how it works, I’ve said it earlier in the tutorial, this function depends on the position of the null character to determine the length of the string, so any other valid non-null character that comes after will not be counted, as soon as the first null character is reached, the function returns the number of cells from the beginning to that null character.
+- `strlen` 函数（这个函数与 `sizeof` 完全不同），它以一个字符串作为参数，并返回该字符串的长度（即字符的数量）。但要注意的是，它的工作方式有点复杂。我之前在教程中提到过，这个函数依赖于空字符的位置来确定字符串的长度，因此在空字符之后的任何其他有效非空字符都不会被计算在内。一旦遇到第一个空字符，函数就会返回从开头到该空字符的单元格数量。
 
-- The `strcat` concatenates strings with each other, it takes 3 parameters.
+- `strcat` 用于连接字符串，它需要三个参数。
 
   ```cpp
   new str_dest[12] = "Hello", str_source[7] = " World";
   strcat(str_dest,str_source);
   ```
 
-  If we were to output `str_dest`, it will show **Hello World**, the two strings were added to each other, and the result was stored in `str_dest`, _“Hello” + “ World” = “Hello World”_, notice how we included that space in the second string, yes, spaces are character themselves, according to the _ASCII_ table, their value is `32`, hadn't we add the space, the resulting string would have been **HelloWorld**.
+如果我们输出 `str_dest`，它将显示 **Hello World**，这两个字符串被添加到一起，结果存储在 `str_dest` 中，_“Hello” + “ World” = “Hello World”_，注意我们在第二个字符串中包含了一个空格，是的，空格本身也是一个字符，根据 _ASCII_ 表，它的值是 `32`。如果我们没有添加空格，结果字符串将是 **HelloWorld**。
 
-- The `strval` function will convert a string to a number, for instance, the following string, `"2017"` will be converted to the number `2017`, this works on signed and unsigned numbers, if the string has no numeric characters, the function will return `0`, the same happens if the string has a numeric character but begins with non-numeric ones, if a string begins with numeric characters but includes non-numeric characters as well, the numeric characters will still get retrieved and converted, here are some use cases;
+- `strval` 函数将字符串转换为数字，例如，以下字符串 `"2017"` 将被转换为数字 `2017`，这对有符号和无符号数字都有效。如果字符串中没有数字字符，函数将返回 `0`。如果字符串中有数字字符但以非数字字符开头，函数也会返回 `0`。如果字符串以数字字符开头但同时包含非数字字符，数字字符仍会被检索并转换，以下是一些使用示例：
 
   ```cpp
-  strval("2018"); // Returns “2018”.
-  strval("-56"); // Returns “-56”.
-  strval("17.39"); // Returns “17”, the floating number 17.39 was auto floored for us.
-  strval("no number here"); // Returns “0”.
-  strval("6 starts"); // Returns “6”.
-  strval("here we go, 2018"); // Returns “0”.
-  strval("2017 ended, welcome 2018"); // Returns “2017”.
+  strval("2018"); // 返回 “2018”。
+  strval("-56"); // 返回 “-56”。
+  strval("17.39"); // 返回 “17”，浮点数 17.39 被自动取整为 17。
+  strval("这没有数字"); // 返回 “0”。
+  strval("6 颗星"); // 返回 “6”。
+  strval("起航, 2018"); // 返回 “0”。
+  strval("2017 已结束, 欢迎来到 2018"); // 返回 “2017”。
   ```
 
-:::tip
+:::提示
 
-There are many community-made libraries you can download that have to do with string manipulation, I can’t think of a better include than [strlib](https://github.com/oscar-broman/strlib).
+你可以下载许多与字符串操作有关的社区库, 但我想不出比 [strlib](https://github.com/oscar-broman/strlib) 更好的包含库了.
 
 :::
 
-### The format function
+### format 函数
 
-This is probably the most used string-related function in the community, very simple and user-friendly, all it does, is format chunks of text and pieces them together, it can be implemented in various situations, like linking variables and strings together, embedding colors, adding line-breaks... etc.
+这可能是社区中最常用的字符串相关函数，非常简单且用户友好，它的作用是格式化文本块并将它们拼接在一起。它可以在各种情况下实现，例如将变量和字符串连接在一起、嵌入颜色、添加换行符等等.
 
 ```cpp
 format(output[], len, const format[], {Float, _}:...)
 ```
 
-The format function takes as parameters the output array, its size (_number of its cells_), the formatting string (_this can be pre-stored on another array, or directly assigned from inside the function_), and finally some optional parameters, those can be variables from different types. Let’s use this function to assign a value to an empty string.
+`format` 函数的参数包括输出数组、其大小（_单元格的数量_）、格式化字符串（_这可以预先存储在另一个数组中，也可以直接从函数内部分配_），最后是一些可选的参数，这些可以是不同类型的变量。让我们使用这个函数给一个空字符串赋值。
 
 ```cpp
 new formatMsg[6];
 format(formatMsg, 6, "Hello");
 ```
 
-The output of `formatMsg` is **Hello**, keep in mind that this is a bad way of assigning values to strings, mostly because of its speed, there are better methods for doing this, we already discussed some of them on early stages of this tutorial.
+`formatMsg` 的输出的结果是 **Hello**，请记住，这种赋值字符串的方式不佳，主要是因为其速度，通常有更好的方法来实现这一点，我们在教程的早期阶段已经讨论过其中一些方法。
 
-Remember to always put the correct array size, otherwise, it will still work, but it delivers some unwanted behavior, the format function will over-flow your array size, and trust me on that, you don’t want that to happen, if you don’t want to bother putting the correct string size every time you want to work with this function, you can simply use the `sizeof` function (_it’s not a function per se, but rather a compiler directive_), we’ve seen earlier a function called `strlen` that returns the number of characters a string has (_excluding and stopping at the null-character_), but this one, returns the array’s size, in other words, the number of cells this array has, be them filled with valid character or not, in this case, 6.
+记住要始终提供正确的数组大小，否则它虽然会工作，但会带来一些和预期效果不符的行为，`format` 函数会溢出你的数组大小，相信我，你不希望这种情况发生。如果你不想每次使用这个函数时都麻烦地提供正确的字符串大小，你可以简单地使用 `sizeof` 函数（_严格来说，它不是一个函数，而是一个编译器指令_）。我们之前见过一个名为 `strlen` 的函数，它返回字符串的字符数（_不包括并在空字符处停止_），但这个函数返回的是数组的大小，换句话说，就是这个数组的单元格数量，无论它们是否被有效字符填充，在这个例子中为 6。
 
 ```cpp
 new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), "Hello");
 ```
 
-Text must always be included in double quotation marks, however, there is an uncommon way of inputting text, that’s rarely ever used, it uses the Number sign `#` symbol, and works as follows:
+文本必须始终包含在双引号中，然而，还有一种不常用的文本输入方式，它使用井号 `#` 符号，工作方式如下：
 
 ```cpp
 new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), #Hello);
 ```
 
-It supports spaces, escaped characters, and you can even use the mix of both double quotations and the number sign;
+它支持空格、转义字符，甚至可以混合使用双引号和井号：
 
 ```cpp
 new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), "Hello "#World);
 ```
 
-The code above will input **Hello World**, this method of inputting strings is more known to be used with predefined constants. Let’s take a look at this example of using two different predefined constants, one being an integer `2017`, the other being a string `"2018"`.
+上面的代码将输出 **Hello World**。这种输入字符串的方法更常用于预定义常量。让我们来看一个例子，其中使用了两个不同的预定义常量，一个是整数 `2017`，另一个是字符串 `"2018"`。
 
 ```cpp
-#define THIS_YEAR 2018 // Thisconstant has an integer as its value
-#define NEW_YEAR "2019" // This constant has a string as its value
+#define THIS_YEAR 2018 // 这个常量的值是一个整数
+#define NEW_YEAR "2019" // 这个常量的值是一个字符串
 
 new formatMsg[23];
 format(formatMsg, sizeof(formatMsg), "This is "#THIS_YEAR", not"NEW_YEAR);
 ```
 
-This will output **This is 2018, not 2019**, the reason why I emphasised on the two constants being from different types is the use of the number sign `#`, if the value is **NOT** a string, then you must prefix it with the number sign `#THIS_YEAR` so it will be treated like `"2018"`, or else you’ll get some compilation errors, as for a string value, you can choose to include or omit the number sign, because it will work either way (`NEW_YEAR` is the same as `#NEW_YEAR`). You can only use this to retrieve values from predefined constants, it will not work with regular variables, or arrays/strings, as treating those can be done using placeholders, more on this later.
+这将输出 **This is 2018, not 2019**。之所以强调两个常量的类型不同，是因为使用井号 `#`。如果值**不是**字符串，你必须用井号 `#THIS_YEAR` 前缀，以便它被当作 `"2018"` 处理，否则会产生编译错误。对于字符串值，你可以选择加上或省略井号，因为它们都能正常工作（`NEW_YEAR` 与 `#NEW_YEAR` 是一样的）。这种方法只适用于从预定义常量中获取值，对于常规变量或数组/字符串，应该使用占位符，稍后会详细介绍。
 
-You can also line up as much double quotations as you want one next to each other, although it doesn’t make sense, as it’s more natural to just write a sentence into a single pair of double quotations, here’s an example of the same sentence written in both concepts;
+你还可以在双引号旁边排布尽可能多的双引号，虽然这没有意义，因为更自然的方式是将句子写在一对双引号中。以下是用两种概念编写的相同句子的示例：
 
 ```cpp
 new formatMsg[29];
 
-// One single pair of double quotations
+// 一组单引号
 format(formatMsg, sizeof(formatMsg), "This is reality...or is it?!");
 
-// Multiple pairs of double quotations
+// 多组双引号
 format(formatMsg, sizeof(formatMsg), "This is reality""...""or is it?!");
 ```
 
-Both will output the same sentence, **This is reality... or is it?!**.
+两者将输出相同的句子, **This is reality... or is it?!**.
 
-## Optimization tips
+## 优化技巧
 
-Now, that we’ve seen some basic stuff about string declaration, manipulation ...etc. some of us would just jump into practicing with no regards to some general guidelines followed by the community if only more people cared about readability, optimization, and performance the world would have been a better place. a code that compiles fine, doesn’t mean it works fine, most bugs come from those little things we overlooked or created in such a way that they wouldn’t interact friendly with other systems. a well-written code will survive the ordeal of time, how? You can always come back to it, and debug, fix, review it with ease, optimization will reflect result on the performance too, always try to get the best of your machine, and optimized code is the way to go.
+现在，我们已经了解了一些关于字符串声明、操作等基本知识。很多人可能会直接开始实践，而忽视了社区遵循的一些通用准则。如果更多人关心可读性、优化和性能，世界会变得更好。一个编译正常的代码不一定工作良好，大多数错误来自那些我们忽视的小细节，或者由于它们与其他系统的交互不友好。编写良好的代码能够经受时间的考验，怎么做到呢？你可以随时回来调试、修复、审查它，优化将直接反映在性能上，始终尽可能发挥机器的最佳性能，优化的代码是关键。
 
-The first thing that must be brought up, and that personally triggers me, is seeing how large strings are being created when not nearly half of the cells declared are even used, only declare strings the size you’ll use, extra cells will only task more memory, let’s take a look at a supposedly unoptimized way of declaring a string.
+首先必须提到的，也是我个人感到困扰的，是看到如何创建了大量的字符串，但几乎没有使用声明的所有单元格，只声明你将使用的字符串大小，额外的单元格只会占用更多的内存。让我们来看一个所谓的不优化字符串声明方式。
 
 ```cpp
 new badString[100];
 badString ="Hello :)";
 ```
 
-We declared a string with _100 cells_, _1 cell_ takes up _4 bytes_, let’s do some basic math, _100 \* 4 = 400_ bytes, that’s roughly _0.0004 Megabyte_, nothing for today’s standards I know, but supposedly, on a huge script, obviously you will have to use more than one string, _60_, _70_, heck _100_ more strings? (_possibly more_), those tiny numbers will stack up on each other resulting in a much bigger number, and cause you serious trouble later on, and believe me when I tell you, the string we declared doesn’t come as near to looking stupid when compared to the likes of those with a size five times bigger or more.
+我们声明了一个包含 _100 个单元格_ 的字符串，_1 个单元格_ 占用 _4 字节_，让我们做一些基本的数学运算，_100 \* 4 = 400_ 字节，这大约是 _0.0004 兆字节_，对于今天的标准来说，这确实不算什么，但假设在一个庞大的脚本中，你显然会使用多个字符串，_60_，_70_，甚至 _100_ 个字符串？（_可能更多_），这些微小的数字会叠加在一起，导致一个更大的总数，并且可能会给你带来严重的问题。我敢保证，当你与那些大小是五倍以上的字符串相比时，我们声明的字符串还远远算不上愚蠢。
 
-What I come across more, something that’s stereotypically vague, is the usage of the mysterious string size -256-, just why people? Why?
+我更常见到的一种情况，虽然有些陈词滥调，但却是使用神秘的 _256_ 长字符串，为什么呢？为什么这样做呢？
 
-Keep in mind the limits SA-MP puts when dealing with strings, where does the _256-long_ string come into play? What are you going to do with a string this long (_except for formatting a dialog/textdraw string_)? The maximum string input is _128è characters long, that’s half the size, \_512 bytes_ just went into waste, say what? You intended to use it for output, not input? That’s still way too large, output strings are not to pass _144_ characters, see where I’m going? Let’s try and see how we’d correct our fault, we have this sentence, “Good string”, it contains _11_ characters (_the space is counted as a character too_) + _1_ for the null terminator (_got to always have this dude in mind_), that makes it _12_ characters in total.
+请记住，SA-MP 在处理字符串时的限制，_256 长_ 的字符串到底有什么用？你要用这么长的字符串做什么（_除了格式化对话框/文本绘制字符串_）？最大字符串输入长度是 _128_ 字符，那正好是这个长度的一半，_512 字节_ 就这样浪费了，怎么回事？你打算用它来输出，而不是输入？即便如此，仍然太大了，输出字符串不应超过 _144_ 字符，你明白我的意思了吗？让我们试着纠正这个错误，我们有这样一句话，“Good string”，它包含 _11_ 个字符（_空格也算作一个字符_）+ _1_ 作为空终止符（_一定要记住这个家伙_），这总共是 _12_ 个字符。
 
 ```cpp
 new goodString[12];
 goodString="Good string";
 ```
 
-See how we preserved memory? A mere **48** bytes, and no extra weigh that would cause trouble later, feels much better.
+看看我们如何节省了内存？仅仅 **48** 字节，没有额外的负担，避免了后续可能出现的问题，感觉好多了。
 
-But hey, what if I told you, you can get an even more optimized code, that’s right, have you ever heard of **packed strings**? A string is typically formed from multiple cells, and as we said earlier, each cell represents 4 bytes, so strings are made up of multiple sets of _4 bytes_. A single character takes up 1 byte, and each cell allows only a single character to be stored, meaning, that on each cell 3 bytes go to waste,
+但是，如果我告诉你，你可以得到一个更优化的代码，那就是 **打包字符串**（**packed strings**）？没错，你听说过打包字符串吗？一个字符串通常由多个单元格组成，正如我们之前所说的，每个单元格代表 4 字节，所以字符串由多个 _4 字节_ 的集合组成。单个字符占用 1 字节，而每个单元格仅允许存储一个字符，这意味着，每个单元格中有 3 字节被浪费掉了。
 
 ```cpp
 new upkString[5];
 upkString = "pawn";
 ```
 
-The string above takes up 5 cells (_that is approximately 20 bytes_), can be narrowed down to only 8 bytes, a mere 2 cells.
+上面的字符串占用了 5 个单元格（大约 20 字节），但可以缩减到仅 8 字节，即仅 2 个单元格.
 
 ```cpp
 new pkString_1[5 char];
 
 pkString_1 = !"pawn";
-// or
+// 或者
 pkString_1 = !#pawn;
 ```
 
-That’s simply how it works, you declare a string with the size that it would normally take (_counting the null-terminator of course_), then suffix it with the with keyword `char`, each character will be stored in bytes rather than cells, meaning that every cell will have 4 characters stored, remember that when assigning values to packed strings, prefix them with an exclamation mark `!`, this, however, doesn’t apply for a single character.
+简单来说，这就是它的工作方式：你声明一个字符串，大小是它通常需要的大小（当然包括空字符），然后在其后添加 `char` 关键字。每个字符将以字节而不是单元格存储，这意味着每个单元格将存储 4 个字符。记住，当为打包字符串赋值时，要在前面加上感叹号 `!`，不过这不适用于单个字符.
 
-This is an approximate visual representation of `upkString`'s content;
+这是 `upkString` 内容的近似视觉表示;
 
 |            |                      |                      |                      |                      |                   |
 | ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
-| Cell       | 0                    | 1                    | 2                    | 3                    | 4                 |
-| Bytes      | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3     |
-| Characters | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **w** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
+| 单元格       | 0                    | 1                    | 2                    | 3                    | 4                 |
+| 字节      | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3     |
+| 字符 | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **w** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
 
 And this is what `pkString_1` would be like in the second example;
 
 |            |                               |                   |
 | ---------- | ----------------------------- | ----------------- |
-| Cell       | 0                             | 1                 |
-| Bytes      | 0 . 1 . 2 . 3                 | 0 . 1 . 2 . 3     |
-| Characters | **p** . **a** . **w** . **n** | \0 . \0 . \0 . \0 |
+| 单元格       | 0                             | 1                 |
+| 字节      | 0 . 1 . 2 . 3                 | 0 . 1 . 2 . 3     |
+| 字符 | **p** . **a** . **w** . **n** | \0 . \0 . \0 . \0 |
 
-You can also access a packed string’s indexers, as follows;
+你还可以像下面这样访问打包字符串的索引器;
 
 ```cpp
 new pkString_2[5 char];
 
 pkString_2{0} = 'p';
-pkString_2{1} = 97; // ASCII code for the character “a”.
-pkString_2{2} = 0b1110111; // The decimal number 199 in binary, translates to the character “w”.
-pkString_2{3} = 0x6E; // The decimal number 110 in hexadecimal, translates to the character “n”.
-pkString_2{4} = EOS; // EOS (End Of String), has the value of 0, which is the ASCII code for \0 (NUL), the null character.
+pkString_2{1} = 97; // 字符 "a" 的 ASCII 码。
+pkString_2{2} = 0b1110111; // 二进制的 199 转换为十进制为字符 "w"。
+pkString_2{3} = 0x6E; // 十六进制的 110 转换为十进制为字符 "n"。
+pkString_2{4} = EOS; // EOS（字符串结尾），值为 0，即 \0（NUL）的 ASCII 码，空字符。
 ```
 
-The result will be the same as `pkString_1` in this case, as you can see, _ASCII_ code is still being taken into considerations, take notes that when accessing indexers on packed strings, we use **curly brackets** instead of **brackets**. That means we’re indexing the bytes themselves, and not the cells.
+结果将与此情况下的 `pkString_1` 相同。正如你所看到的，ASCII 码仍然被考虑在内。注意，当访问打包字符串的索引器时，我们使用 **大括号** 而不是 **方括号**。这意味着我们正在索引字节本身，而不是单元格
 
-:::info
+:::信息
 
-In spite of their effectiveness in preserving memory, SA-MP’s implementation of pawn doesn’t 100% support packed strings, but you can still use them in infrequently used strings/arrays.
+尽管打包字符串在节省内存方面很有效，但 SA-MP 对 pawn 的实现并不完全支持打包字符串，但你仍然可以在不常使用的字符串/数组中使用它们.
 
 :::
 
-## String output
+## 字符串输出
 
-#### Console
+#### 控制台
 
 ##### `print`
 
-The following function is probably the most basic function in not only pawn but a lot of other programming languages too, it simply accepts one parameter and outputs it on the console.
+以下的函数可能是不仅仅在 Pawn 语言中，而是在许多其他编程语言中最基本的函数之一，它仅接受一个参数并将其输出到控制台.
 
 ```cpp
 print("Hello world");
@@ -493,11 +493,11 @@ print("Hello world");
 Hello world
 ```
 
-You can also pass predeclared strings or predefined constants as well as merging multiple of them together, or use the number sign `#` too, much like we used to do with the format function, but keep in mind, that doesn’t include multiple parameters, we can only pass one and only parameter.
+你还可以传递预先声明的字符串或预定义的常量，并将它们合并在一起，或者像我们以前使用 `format` 函数时那样使用井号 `#`。但请记住，这不包括多个参数，我们只能传递一个且仅有一个参数。
 
 ```cpp
-#define HAPPY_STRING "I'm happy today" // String constant.
-#define NEW_YEAR 2019 // Integer constant.
+#define HAPPY_STRING "I'm happy today" // 字符串常量.
+#define NEW_YEAR 2019 // 整数常量.
 new stylishMsg[12] = "I'm stylish";
 
 print(HAPPY_STRING);
@@ -515,58 +515,58 @@ I'm excited for 2019
 What about you?
 ```
 
-Notice how we used the number symbol here the same way we did with the format function, if the value is an integer, you prefix it with `#` so it’s treated as a string.
+注意我们在这里使用了与 `format` 函数相同的方式使用井号 `#`，如果值是整数，你需要在前面加上 `#`，这样它就会被视为字符串。
 
-Also keep in mind that the `print` function does support packed strings, however only accepts string type variables (_array of characters_), passing anything that’s not an array, a string (_be it between double quotations or prefixed by the number symbol_) will give compilation errors, so doing any of the following will not work;
+还要记住，`print` 函数确实支持压缩字符串，但只接受字符串类型的变量（_字符数组_），传递任何不是数组的内容或字符串（_无论是双引号中的字符串还是由井号符号前缀的字符串_）都会导致编译错误，因此，以下操作都无法实现：
 
 ```cpp
-// Case 1
+// 情况 1
 new _charA = 'A';
 print(_charA);
 
-// Case 2
+// 情况 2
 new _charB = 66;
 print(_charB);
 
-// Case 3
+// 情况 3
 print('A');
 
-// Case 4
+// 情况 4
 print(66);
 ```
 
-Let’s see how we can fix that;
+看看我们将如何修复它;
 
 ```cpp
-// Case 1
+// 情况 1
 new _charA[2] = "A";
 print(_charA);
 ```
 
-We change the single quotation mark to the double quotation mark and give the array two cells, one of the A character, and the second one for the null terminator because anything between the double quotation marks is a string, the output is **A**.
+我们将单引号更改为双引号，并为数组提供两个单元格，一个用于字符 **A**，另一个用于空字符终止符，因为在双引号之间的任何内容都是字符串，输出结果为 **A**。
 
 ```cpp
-// Case 2
+// 情况 2
 new _charB[2] = 66;
 print(_charB);
 ```
 
-We change the `_charB` to an array with one cell and set the cell labelled 0 to the value of `66`, which translates to **B** according to the _ASCII_ table, the output is **B**, we preserve an additional cell for the null-terminator (_how much is there so it's not funny anymore?_).
+我们将 `_charB` 更改为一个包含一个单元格的数组，并将标记为 `0` 的单元格设置为值 `66`，根据 _ASCII_ 表，这转换为 **B**，输出结果为 **B**，我们为空字符终止符保留了一个额外的单元格。
 
 ```cpp
-// Case 3
+// 情况 3
 print("A");
 ```
 
-Not much can be said, all it took is switching from the single quotation marks to a pair of double quotation marks.
+没有太多可说的，只需将单引号更改为一对双引号.
 
-As for the fourth case, there’s not much we can do while working with the `print` function, but it can simply be resolved using another similar function, called...
+至于第四种情况，当使用 `print` 函数时，我们能做的不多，但可以通过使用另一个类似的函数来简单地解决这个问题，称为...
 
 ##### `printf`
 
-Short for “_print formatted_”, I can simply put, this is a more diverse version of the previous `print` function, more specifically, it’s like a combination between the `format` function and the `print` function, meaning that it also prints characters on the server’s console, but with the benefit of formatting the output text.
+这是 “_打印格式化(print formatted)_”, 简单来说，这是前一个 `print` 函数的扩展版本，更具体地说，它像是 `format` 函数和 `print` 函数的组合，这意味着它也在服务器控制台上打印字符，但具有格式化输出文本的好处.
 
-Unlike `print`, `printf` accepts multiple parameters, and with different types too, however it does not support packed strings, in order to expand on its functionality, we use these sequences called “_format specifiers_”, more on them later, outputting anything more than **1024** characters will <u>crash the server</u>, so take notes on that.
+与 `print` 不同，`printf` 接受多个参数，并且可以是不同的类型，但它不支持压缩字符串。为了扩展其功能，我们使用这些称为“_格式说明符(format specifiers)_”的序列，稍后会详细介绍。输出超过 **1024** 个字符会<u>导致服务器崩溃</u>，请注意这一点
 
 ```cpp
 #define RANDOM_STRING "Vsauce"
@@ -575,35 +575,35 @@ Unlike `print`, `printf` accepts multiple parameters, and with different types t
 printf("Hey "RANDOM_STRING", Micheal here! #"#RANDOM_NUMBER);
 ```
 
-Notice how we similarly to the `print` and the `format` functions, we nested those strings into one, which outputs the following;
+请注意，我们类似于 `print` 和 `format` 函数，将这些字符串嵌套在一起，输出如下：
 
 ```
 Hey Vsauce, Micheal here! #2018
 ```
 
-The `printf` function as I said before, really shines when **format specifiers** are used, it’s what distinguishes it and sets it apart, you can attach as many variables as you want, and output simple and complex strings with ease, we will have a much deeper look on that when we’re introduced to those specifiers later on.
+正如我之前所说，当使用 **格式说明符** 时，`printf` 函数真正展现了它的优势。这是它的独特之处和区别所在。您可以附加任意数量的变量，并轻松输出简单和复杂的字符串。我们将在稍后介绍这些说明符时深入探讨这一点。
 
-#### Client messages
+#### 客户端消息
 
-Apart from the other doll texts you can print on the server’s console, who are mainly used for debugging, there are messages that are printed on the client’s screen, on the chat section, those ones can be formatted the same way too, but they also support color embedding, which makes for a wonderful presentation for texts (_if used correctly of course_).
+除了可以打印在服务器控制台上的其他调试文本外，还有显示在客户端屏幕上的消息，这些消息显示在聊天部分，它们也可以像之前的文本一样进行格式化，但同时还支持颜色嵌入，如果正确使用，会使文本的呈现效果非常出色。
 
-Keep in mind the that SA-MP’s restrictions on displaying strings apply for this type of messages too, being like the previous ones, limited to smaller than _144 characters_, or else the message won’t be sent, sometimes they will even crash some commands.
+请记住，SA-MP 对显示字符串的限制也适用于这种类型的消息，与之前的消息一样，字符数限制为小于 _144_ 字符，否则消息将无法发送，有时甚至会导致某些命令崩溃。
 
-There are two functions that natively print text on the client’s screen, the only difference between them is the scoop, the first takes three parameters, the id of the player you want to print the text on their screen, the text’s color, and the text itself.
+有两个函数可以在客户端屏幕上原生地打印文本，它们之间的唯一区别是作用范围。第一个函数接受三个参数：要在其屏幕上打印文本的玩家 ID、文本的颜色，以及文本本身。
 
 ```cpp
 SendClientMessage(playerid, color, const message[])
 ```
 
-Say, you want to send a text to the player whose id’s 1, telling them “Hello there!”;
+比方说，您想向 ID 1 的玩家发送一条文本，告诉他们 “Hello there!”;
 
 ```cpp
 SendClientMessage(1, -1, "Hello there!");
 ```
 
-Simple, just like that, the player with the ID of 1 will be sent a text saying **Hello there!**, the `-1` is the color parameter, in this case, it’s the color **white**, more on colors later.
+很简单，就像这样，ID 1 的玩家将收到一段文字 **Hello there!**, `-1` 是颜色参数, 在本例中是**白色**, 关于颜色的内容稍后详述.
 
-Obviously, you can also pass an array of characters, formatted strings...etc. And as we saw with other function, you can use the number sign `#`.
+当然，你也可以传递数组、格式化字符串......等等。正如我们在其他函数中看到的，你可以使用符号 `#`。
 
 ```cpp
 #define STRING_MSG "today"
@@ -613,232 +613,233 @@ SendClientMessage(0, -1, mornMsg);
 SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
 ```
 
-As you can see at the example above, this will send the player with the id _0_ two messages colored in white, the first messages will say “_Hello!_”, and the second will say, “_How are you today?_”, pretty similar to how other functions work. Keep in mind that predefined constant integers must be prefixed with the `#` symbol.
+正如您在上面的示例中看到的，这将向 ID _0_ 的玩家发送两条白色的信息，第一条信息将显示“_Hello!_”，第二条信息将显示“_How are you today?_”，这与其他函数的工作方式非常相似。请记住，预定义的常量整数必须以 `#` 号作为前缀.
 
 ```cpp
 #define NMB_MSG 3
 SendClientMessage(3, -1, "It's "#NMB_MSG" PM");
 ```
 
-Pretty self-explanatory, the text will be sent to the player with the id _3_, colored in white, saying “_It’s 3 PM_”.
+非常直观，文本将发送给 ID _3_ 的玩家，颜色为白色，内容为“_It’s 3 PM_”。
 
-Now that you know how to send someone a message, you can use the same approach to send the same message to everyone, child’s play really, you can just put the function in a loop that goes through all connected players, and risk showing your code in public and call it a day, but hey, there is already a native function that does the exact same thing, the same rules apply, the only thing that differ between the two is a slight change in their syntax.
+现在您知道如何向某人发送消息了，您可以使用相同的方法向所有人发送相同的消息，真的很简单，您可以将函数放在一个遍历所有连接玩家的循环中，并冒险将您的代码公布就结束了，但嘿，实际上已经有一个原生函数可以完成完全相同的事情，唯一的不同在于它们的语法略有变化。
+
 
 ```cpp
 SendClientMessageToAll(color, const message[]);
 ```
 
-pretty self-explanatory too, exposed by its name, now let’s send everyone on the server a greeting message.
+也是非常直观，从它的名字就可以看出，现在让我们给服务器上的每个人发送一条问候信息.
 
 ```cpp
 SendClientMessageToAll(-1, "Hello everyone!");
 ```
 
-Just like that, you can play with it the same way you do with its other sibling, two toys from the same brand really, just try not to bypass the 144 characters limit.
+就像那样，但尽量不要超过 144 个字符的限制。
 
 #### Textdraws
 
-One of SA-MP’s most powerful functionalities, just unleash your imagination, textdraws are basically graphic shapes/texts/sprites/preview models...etc. that can be displayed on clients’ screens, they make the UI especially much more lively and interactive (_to an extent_). But hey, there are limitations here too, for example, you cannot display a string that’s more than 1024 characters long, to be honest, that’s more than enough. Nothing special can be said here, even with their wide functionality, strings that can be displayed are poor on formatting, you can’t do as much as you could with other output functions, it feels a little narrow when it comes to this, but it certainly does make up for the lack of formatting with other exciting stuff, more on textdraws [here](../scripting/resources/textdraws).
+这是 SA-MP 最强大的功能之一，只需释放您的想象力，textdraws 基本上是可以显示在客户端屏幕上的图形形状/文本/精灵/预览模型等等，它们使 UI 特别生动和互动（当然有一定的限制）。但是，这里也有一些限制，例如，您不能显示超过 1024 个字符的字符串，老实说，这已经足够了。即使它们功能广泛，但可以显示的字符串在格式化方面也很贫乏，您不能像使用其他输出函数那样做很多事情，在这方面感觉有点狭隘，但它确实通过其他令人兴奋的内容弥补了格式化的缺失，更多关于 textdraws 的内容请参考 [这里](../scripting/resources/textdraws)。
 
 #### Dialogs
 
-Dialogs can be thought of as “_message boxes_”, they, of course, come in different types, accept few different inputs, and more importantly, accept all types of formatting that a normal string does, with makes them much easier to use than textdraw. There are limitations concerning them too, like string sizes and being able to only synchronously display them on the client’s screen, SA-MP only provides one native function for dealing with dialogs, and honestly, that would be one of your last concerns, as the lone function does its job, and does it efficiently, more on dialogs [here](../scripting/functions/ShowPlayerDialog).
+Dialogs 可以被视为“消息框”，当然，它们有不同的类型，接受几种不同的输入，最重要的是，它们接受所有普通字符串的格式化方式，这使得它们比 textdraw 更容易使用。它们也有一些限制，比如字符串大小以及只能在客户端屏幕上同步显示，SA-MP 只提供了一个原生函数来处理 dialogs，老实说，这将是您的最后关注点，因为这个唯一的函数完成了它的工作，并且效率很高，更多关于 dialogs 的内容请参考 [这里](../scripting/functions/ShowPlayerDialog)。
 
-### Color interpretation
+### 颜色解释
 
-#### Client messages and dialogs
+#### 客户端消息和对话框
 
 ##### RGBA
 
-**RGBA** (_short for red green blue alpha_), is a simple use of the **RGB** model with an extra channel, the alpha channel, basically, a form of representing colors digitally, by mixing variations of red, green, blue and alpha (_opacity_), more on that [here](https://en.wikipedia.org/wiki/RGBA_color_space).
+**RGBA**（**红绿蓝透明度**的简称）是 **RGB** 模型的简单使用，额外添加了一个通道，即 alpha 通道，基本上是一种通过混合红色、绿色、蓝色和 alpha（不透明度）的变体来数字表示颜色的形式，更多内容请参考 [这里](https://en.wikipedia.org/wiki/RGBA_color_space)。
 
-In SA-MP’s implementation of pawn, we use hexadecimal numbers to represent these color spaces, red, green, blue and alpha are noted by 2 bits each, resulting in an 8 bits long hexadecimal number, for example; (_FF0000FF = red_), (_00FF00FF = green_), (_0000FFFF = blue_), (_000000FF = black_), (_FFFFFFFF = white_), here’s a clearer visualization on this notation:
+在 SA-MP 的 pawn 实现中，我们使用十六进制数字来表示这些颜色空间，红色、绿色、蓝色和 alpha 每个用 2 位表示，总共 8 位长的十六进制数字，例如；（_FF0000FF = 红色_）、（_00FF00FF = 绿色_）、（_0000FFFF = 蓝色_）、（_000000FF = 黑色_）、（_FFFFFFFF = 白色_），以下是这种符号表示的更清晰的可视化：
 
 > <span style={{ color: 'red' }}>FF</span><span style={{ color: 'green' }}>FF</span><span style={{ color: 'blue' }}>FF</span><span style={{ color: 'grey' }}>FF</span>
 
-A lot of programming/scripting languages prefix hexadecimal numbers with the number sign `#`, In pawn, however, we prefix them with `0x`, so the following hexadecimal number _8060C1FF_, becomes _0x8060C1FF_.
+许多编程/脚本语言的十六进制数字前缀是数字符号 `#`，而在 pawn 中，我们使用 `0x` 作为前缀，所以以下十六进制数字 _8060C1FF_，变成 _0x8060C1FF_。
 
-We can, of course, use decimal numbers to represent colors, but it’s much clearer to use the hexadecimal notation, as it’s the more readable between the two, let’s look the following example;
+当然，我们也可以使用十进制数字来表示颜色，但使用十六进制表示会更清晰，因为它比两者中更具可读性，以下是一个例子；
 
 ```cpp
-// Representing the color white with decimal numbers
+// 用十进制数字表示白色
 SendClientMessageToAll(-1, "Hello everyone!");
 
-// Representing the color white with hexadecimal numbers
+// 用十六进制数字表示白色
 SendClientMessageToAll(0xFFFFFFFF, "Hello everyone!");
 
-// A client message colored in white will be sent to everybody
+// 将向所有人发送一条白色的客户端信息
 ```
 
-Keep in mind that assigning all bits to the same value will result in variations of shades of grey (_no pun intended_), assigning the alpha channel to 0 will make the text invisible.
+请记住，将所有位(bits)指定为相同的值将导致灰色深浅不一，将 alpha 通道指定为 0 将使文本不可见
 
-:::tip
+:::提示
 
-It’s possible to format texts with multicolor simultaneously, but for that, we embed the simpler **RGB** notation.
+同时使用多种颜色的文本格式也是可以的，但为此我们嵌入了更简单的 **RGB** 符号
 
 :::
 
 ##### RGB
 
-This is exactly like the **RGBA** color spaces, but with no alpha channel, just a mixture of red, green and blue, noted as a hexadecimal number of 6 bits, in pawn, this notation is used mostly to embed colors into texts, simply wrap your 6 bits hexadecimal number between a pair of curly brackets, and you’re set up to go, for example; (**{FF0000} = red**), (**{00FF00} = green**), (**{0000FF} = blue**), (**{000000} = black**), (**{FFFFFF} = white**), here’s a clearer visualization on this notation: `{FFFFFF}`. Let’s look at this quick example here;
+这与 **RGBA** 颜色空间非常相似，但没有 alpha 通道，只是红、绿、蓝的混合，以 6 位的十六进制数字表示，在 pawn 中，这种表示法通常用于将颜色嵌入到文本中，只需将您的 6 位十六进制数字用一对大括号括起来，就可以开始使用了，例如： (**{FF0000} = 红色**)、 (**{00FF00} = 绿色**)、 (**{0000FF} = 蓝色**)、 (**{000000} = 黑色**)、 (**{FFFFFF} = 白色**)，这里是这种表示法的更清晰的可视化：`{FFFFFF}`。让我们看一个简单的示例：
 
 ```cpp
 SendClientMessageToAll(0x00FF00FF, "I'm green{000000}, and {FF0000}I'm red");
 ```
 
-This will send the following message to everyone (_and I'm no Italian_):
+这将向所有人发送以下消息（_I'm green, and I'm red_）：
 
-> <span style={{color: '#00ff00ff'}}>I’m green</span><span style={{color: '#ffffff'}}>, and </span><span style={{color: '#ff0000'}}>I’m red</span>
+> <span style={{color: '#00ff00ff'}}>我为绿色</span><span style={{color: '#ffffff'}}>, 并且 </span><span style={{color: '#ff0000'}}>我为红色</span>
 
-Keep in mind that the hexadecimal notation is case insensitive, so typing `0xFFC0E1FF` is the same as typing `0xfFC0e1Ff`, the same goes for embedded colors, `{401C15}` is the same as `{401c15}`.
+请记住，十六进制表示法不区分大小写，因此输入 `0xFFC0E1FF` 与输入 `0xfFC0e1Ff` 是一样的，嵌入的颜色也是如此，`{401C15}` 与 `{401c15}` 是一样的。
 
-Sometimes, working with colors can prove to be quite the labor, It’s not that easy to go around remembering all of those long hexadecimal numbers like no big deal, You should always have a reference to go back to, there are plenty of online color pickers you can use, you can simply google “_color picker_”, and choose between thousands of them, let me do that on you if you don’t mind, [here’s a simple tool](https://www.webpagefx.com/web-design/color-picker/) that I recommend using when working with colors.
+有时候，处理颜色可能会很麻烦，记住所有这些长十六进制数字并不容易。您应该始终有一个参考可以回去查看，网上有很多颜色选择工具，您可以简单地搜索“_color picker_”，并在成千上万的工具中选择一个。如果您不介意的话，我为您提供一个推荐工具，[这是一个简单的工具](https://www.webpagefx.com/web-design/color-picker/)，我建议在处理颜色时使用它。
 
-One of the problems that people find, is managing their workflow, which if done right, it facilitates the work pacing, and makes it less painful to work around your projects, while color picker tools are of a great help, you can still waste plenty of time going on and off to it every time you need to pick a color, the frustration of that can be as annoying as a pizza with pineapples, luckily, you can take advantage of predefined constants, and define your most used colors for later usage, here’s a simple example;
+人们发现的一个问题是管理工作流程，如果做得对，可以使工作节奏更顺畅，减少处理项目时的痛苦。虽然颜色选择工具非常有帮助，但每次需要选择颜色时来回切换仍然会浪费大量时间，这种挫败感就像披萨上放了菠萝一样令人烦恼。幸运的是，您可以利用预定义的常量，为稍后使用定义您最常用的颜色，这里有一个简单的示例;
 
 ```cpp
 #define COLOR_RED 0xFF0000FF
-#define COLOR_GREEN 0xFF0000FF
-#define COLOR_BLUE 0xFF0000FF
+#define COLOR_GREEN 0x00FF4AFF
+#define COLOR_BLUE 0x0058FFFF
 
-SendClientMessageToAll(COLOR_RED, "I'm a red text");
-SendClientMessageToAll(COLOR_GREEN, "I'm a green text");
-SendClientMessageToAll(COLOR_BLUE, "I'm a blue text");
+SendClientMessageToAll(COLOR_RED, "我是红色的文本");
+SendClientMessageToAll(COLOR_GREEN, "我是绿色的文本");
+SendClientMessageToAll(COLOR_BLUE, "我是蓝色的文本");
 ```
 
 The latter can be done on embedded colors too;
 
 ```cpp
 #define COL_RED "{FF0000}"
-#define COL_GREEN {FF0000}
-#define COL_BLUE "{FF0000}"
+#define COL_GREEN {00FF4A}
+#define COL_BLUE "{0058FF}"
 
-SendClientMessageToAll(-1, ""COL_RED"I'm a red text");
-SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
-ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
+SendClientMessageToAll(-1, ""COL_RED"我是红色的文本");
+SendClientMessageToAll(-1, "{"COL_GREEN}"我是绿色"COL_BLUE"和蓝色");
+ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "注意", "{"COL_GREEN"}你好! "COL_RED"近况如何?", "关闭", "");
 ```
 
-At compilation time, all predefined constants will be replaced by their values, and thus, this `"COL_RED"I’m a red text` becomes this `”{FF0000}”I’m a red text`, notice how we used two methode to predifne those colors, `RRGGBB` and `{RRGGBB}`, it’ goes into personal preference which methode to go by, personaly, I find defining them as `RRGGBB` much cleared, as the usages of curly brackets is present, and thus makes it noticable that we’re embedding a color.
+在编译时，所有预定义的常量将被替换为它们的值，因此，`"COL_RED"我是红色的文本` 变成了 `"{FF0000}"我是红色的文本`，注意我们使用了两种预定义颜色的方法，`RRGGBB` 和 `{RRGGBB}`，选择哪种方法取决于个人偏好，个人来说，我觉得定义为 `RRGGBB` 更清晰，因为使用了大括号，这使得我们可以明显看出我们在嵌入颜色。
 
-That was the general approach on color embedding with dialog and client messages strings, it is possible to use colors within text in client messages, dialogs, 3D text labels, object material texts and vehicle number plates, but hey, SA-MP has also texdraws and gametexts functionalities, however those don’t support the RGB notation, and thus, adding colors is done differently.
+这就是对话框和客户端消息字符串中颜色嵌入的总体方法，在客户端消息、对话框、3D 文本标签、对象材质文本和车辆号牌中使用颜色是可能的，但 SA-MP 也有文本绘制（textdraws）和游戏文本（gametexts）功能，然而这些不支持 RGB 表示法，因此添加颜色的方式有所不同。
 
-#### Textdraws and Gametexts
+#### 文本绘制（Textdraws）和游戏文本（Gametexts）
 
-as mentioned above, **RGB** notation is not supported, but luckily, we have other ways to work around this problem, for textdraws, you can use the native [TextDrawColor](../scripting/functions/TextDrawColor) function to change the textdraw's color, but this the same to textdraw as **RGBA** color spaces are to client messages and dialogs, they can’t be embedded, for that, we use special combination of characters to refer to colors and few other symbols, you can see them [here](../scripting/resources/gametextstyles).
+如上所述，**RGB** 表示法不被支持，但幸运的是，我们有其他方法来解决这个问题，对于文本绘制，您可以使用本地函数 [TextDrawColor](../scripting/functions/TextDrawColor) 来更改文本绘制的颜色，但这与文本绘制的 **RGBA** 颜色空间对于客户端消息和对话框是一样的，颜色不能被嵌入。为此，我们使用特殊的字符组合来引用颜色和其他一些符号，您可以在 [这里](../scripting/resources/gametextstyles) 查看它们。
 
 |                |        |
 | -------------- | ------ |
-| \~r\~          | Red    |
-| \~g\~          | Green  |
-| \~b\~          | Blue   |
-| \~w\~ or \~s\~ | White  |
-| \~p\~          | Purple |
-| \~l\~          | Black  |
-| \~y\~          | Yellow |
+| \~r\~          | 红色    |
+| \~g\~          | 绿色  |
+| \~b\~          | 蓝色   |
+| \~w\~ or \~s\~ | 白色  |
+| \~p\~          | 紫色 |
+| \~l\~          | 黑色  |
+| \~y\~          | 黄色 |
 
-So, embedding colors can go in like this: **\~w\~Hello this is \~b\~blue \~w\~and this is \~r\~red**
+因此，嵌入颜色可以这样做: **\~w\~Hello this is \~b\~blue \~w\~and this is \~r\~red**
 
-You can use another combination of characters to play with color mixes, **\~h\~**, it makes a certain color lighter, here are few examples:
+您还可以使用另一种字符组合来玩混色游戏, **\~h\~**, 它会使某种颜色变浅，以下是几个例子:
 
 |                                |                |
 | ------------------------------ | -------------- |
-| \~r\~\~h\~                     | Lighter red    |
-| \~r\~\~h\~\~h\~                | Red pink       |
-| \~r\~\~h\~\~h~\~h\~            | Dark red       |
-| \~r\~\~h\~~h~~h~~h\~           | Light red pink |
-| \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Pink           |
-| \~g\~\~h\~                     | Light green    |
+| \~r\~\~h\~                     | 亮红色    |
+| \~r\~\~h\~\~h\~                | 粉红色       |
+| \~r\~\~h\~\~h~\~h\~            | 暗红色       |
+| \~r\~\~h\~~h~~h~~h\~           | 亮粉色 |
+| \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | 粉色           |
+| \~g\~\~h\~                     | 亮绿色    |
 
-You can find more information about this [here](../scripting/resources/colorslist).
+您可以在[这里](../scripting/resources/colorslist)找到更多相关信息.
 
-### The escape character
+### 转义字符
 
-#### Description
+#### 描述
 
-The escape character is a character in which when prefixed to some character or number, it creates its own constant character, in most programming/scripting languages like pawn, the backslash is used as the escape character (`\`), a combination of this and some other character/number will result in an [escape sequence](https://en.wikipedia.org/wiki/Escape_sequence) which has a certain meaning, you can find more about escape character [here](https://en.wikipedia.org/wiki/Escape_character).
+转义字符是指在某些字符或数字前加上前缀时，会创建出其自身的常量字符，在大多数编程/脚本语言中，如 pawn，反斜杠 `\` 被用作转义字符，结合其他字符/数字将产生一个具有特定意义的 [转义序列](https://en.wikipedia.org/wiki/Escape_sequence)，你可以在 [这里](https://en.wikipedia.org/wiki/Escape_character) 了解更多关于转义字符的内容。
 
-#### Escape sequences
+#### 转义序列
 
-Escape sequences make it easier to express certain characters in the source code of your script, here is a table containing the escape sequences used in pawn:
+转义序列使得在脚本的源代码中表达某些字符变得更容易，下面是 pawn 中使用的转义序列表：
 
 |                                              |              |
 | -------------------------------------------- | ------------ |
-| Audible beep (on server machines)            | `\a` or `\7` |
-| Backspace                                    | `\b`         |
-| Escape                                       | `\e`         |
-| Form feed                                    | `\f`         |
-| New line                                     | `\n`         |
-| Carriage return                              | `\r`         |
-| Horizontal tab                               | `\t`         |
-| Vertical tab                                 | `\v`         |
-| Backslash                                    | `\\`         |
-| Single quote                                 | `\'`         |
-| Double quote                                 | `\"`         |
-| Character code with decimal values "ddd"     | `\ddd;`      |
-| Character code with hexadecimal values "hhh" | `\xhhh;`     |
+| 响铃（在服务器机器上）                         | `\a` 或 `\7` |
+| 退格符                                       | `\b`         |
+| 转义符                                       | `\e`         |
+| 换页符                                       | `\f`         |
+| 换行符                                       | `\n`         |
+| 回车符                                       | `\r`         |
+| 水平制表符                                   | `\t`         |
+| 垂直制表符                                   | `\v`         |
+| 反斜杠                                       | `\\`         |
+| 单引号                                       | `\'`         |
+| 双引号                                       | `\"`         |
+| 十进制值“ddd”的字符代码                     | `\ddd;`      |
+| 十六进制值“hhh”的字符代码                   | `\xhhh;`     |
 
-Let’s look at each one of them, after all, the best way to learn these sort of stuff rests within practicing them.
+让我们逐一看一下这些序列，毕竟，学习这些内容的最好方式就是进行实践。
 
-- **The “Audible beep” escape sequence - `\a`**
+- **“响铃”转义序列 - `\a`**
 
-Audible beep or a bell code (_sometimes bell character_) is a device control code originally sent to ring a small electromechanical bell on tickers and other teleprinters and teletypewriters to alert operators at the other end of the line, often of an incoming message.
+响铃或称为铃声代码（有时也称为铃字符）是一种设备控制代码，最初用于在打字机和电传打字机上响起一个小的电动机械铃，以提醒另一端的操作员，通常是有来电或消息的提示。
 
-Using this on a computer will result in sending a bell/notification sound in the background, it can be used in some creative ways, to notify and/or alert users on certain activities, the escape sequence that represents it is `\a` (or `\7` noted as decimal code), fire off your pawn text editor, and write the following code;
+在计算机上使用此序列会在后台发出一个铃声/通知声音，这可以在某些创意场景中使用，以通知和/或提醒用户某些活动，表示它的转义序列是 `\a`（或 `\7` 表示为十进制代码），启动你的 pawn 文本编辑器，编写以下代码；
 
 ```cpp
 print("\a");
 ```
 
-Upon executing the samp-server.exe, you will hear a beep notification sound, you can also use the decimal code;
+执行 samp-server.exe 后，您将听到蜂鸣声通知，您也可以使用十进制代码;
 
 ```cpp
 print("This is a beep \7");
 ```
 
-- **The “Backspace” escape sequence - `\b`**
+- **“退格符”转义序列 - `\b`**
 
-This escape sequence is noted as `\b`, it simply moves your cursor backward, most people would expect it to act like the backspace button on your typical keyboard, but not entirely, it only moves the carriage one position backward without erasing what’s written there.
+这个转义序列记作 `\b`，它只是将光标向后移动。大多数人会期望它像典型键盘上的退格键一样工作，但实际上并不完全相同，它只是将打印头向后移动一个位置，而不会删除已经写入的内容。
 
-This one doesn’t have that much usability in pawn unless you were clever enough to milk something useful out of it, here’s how it works.
+这个转义序列在 pawn 中的实用性并不高，除非你能巧妙地利用它，下面是它的工作方式。
 
 ```cpp
 print("Hello 2018");
 ```
 
-This will print **Hello 2018** in the console, the cursor remains on the null character’s position, more clearly, like this:
+这将在控制台中打印 **Hello 2018**，光标停留在空字符的位置上，更清楚地显示出来，就像这样:
 
 ```
 Hello 2018
           ^
 ```
 
-As you can see, the cursor stops after the last visible character of the string, which is normal, now, let’s add a backspace escape sequence;
+如你所见，光标在字符串的最后一个可见字符后停止，这是正常现象，现在，让我们添加一个退格转义序列;
 
 ```cpp
 print("Hello 2018\b");
 ```
 
-That will result in;
+这样做的结果是;
 
 ```
 Hello 2018
          ^
 ```
 
-As you can see, the cursor is exactly in the position of the last visible character of the string, which is _8_, this is the same as toggling on the insert mode on your keyboard, now, let’s add some sorcery to this.
+正如您所看到的，光标正好位于字符串最后一个可见字符的位置，即 _8_，这与在键盘上切换插入模式是一样的
 
 ```cpp
 print("Hello 2018\b9");
 ```
 
-If you guessed it right, yes, this will print **Hello 2019**, so, let’s see how this works, the machine will process the string character by character, until it reaches the backspace escape sequence, then it moves the carriage one position backwards, which selects whatever character there, in this case 8, then, it inserts 9 in its place.
+如果你猜对了，没错，这将打印 ** 你好，2019**，那么，让我们来看看它是如何工作的：机器将逐个字符地处理字符串，直到它抵达退格转义序列的位置，然后它将向后移动一个位置，这将选择那里的任何字符，在本例中是 8，然后，它将在其位置上插入 9.
 
 ```
 Hello 2019
          ^
 ```
 
-The carriage is going to move backward as long as there is a backspace escape sequence in your string.
+只要你的字符串中有回退字符转义序列，光标就会向后移动。
 
 ```cpp
 print("Hello 2018\b9\b\b\b");
@@ -849,43 +850,43 @@ Hello 2019
        ^
 ```
 
-The cursor will stop at the first character’s position if the amount of backspace escape sequence exceeded that of the number of characters between the position of the first character (yes, arrays start at 0, head to [r/programmerhumor](https://www.reddit.com/r/ProgrammerHumor/) for some good memes) and the initial position of the cursor.
+如果回退字符转义序列的数量超过了第一个字符的位置（是的，数组从0开始，前往 [r/programmerhumor](https://www.reddit.com/r/ProgrammerHumor/) 看一些有趣的梗）与光标初始位置之间字符的数量，光标将停留在第一个字符的位置。
 
 ```cpp
 print("Hi\b\b\b\b\b\b\b\b\b\b\b\b\b\b");
 ```
 
-Will always result in this;
+结果总是这样：
 
 ```
 Hi
 ^
 ```
 
-- **The “Escape” escape sequence - `\e`**
+- **“转义符” 转义序列 - `\e`**
 
-With the hexadecimal value of 1B in _ASCII_, it’s used for common non-standard code, let’s look for some programming languages like C as an example; a sequence such as `\z` is not a valid escape sequence according to the C standard. The C standard requires such invalid escape sequences to be diagnosed (the compiler must print an error message). Notwithstanding this fact, some compilers may define additional escape sequences, with implementation-defined semantics. An example is the `\e` escape sequence, represents the escape character. It wasn't however added to the C standard repertoire because it has no meaningful equivalent in some character sets.
+在 _ASCII_ 中其十六进制值为 1B，通常用于常见的非标准代码，以 C 语言为例；像 `\z` 这样的序列在 C 标准中不是有效的转义序列。C 标准要求诊断此类无效的转义序列（编译器必须打印错误信息）。尽管如此，一些编译器可能会定义额外的转义序列，具有实现定义的语义。例如，`\e` 转义序列表示转义字符。然而，它没有被添加到 C 标准中，因为在某些字符集里没有有意义的等效项。
 
-- **The “Form feed” escape sequence - `\f`**
+- **“换页符” 转义序列 - `\f`**
 
-Form feed is a page breaking _ASCII_ code. It forces the printer to eject the current page and to continue printing at the top of another. Often, it will also cause a carriage return, this doesn’t make any noticeable change in the _SA-MP_’s debugging console.
+Form feed 是一个用于分页的 _ASCII_ 代码。它强制打印机弹出当前页，并在另一页的顶部继续打印。通常，它也会导致回车，这在 _SA-MP_ 的调试控制台中没有明显的变化。
 
-- **The “New line” escape sequence - `\n`**
+- **“换行符” 转义序列 - `\n`**
 
-The new line (also referred to as line ending, end of line (_EOL_), line feed, or line break) escape sequence is an _ASCII_ code that’s noted as `/n` with the decimal value of 10, it’s something that’s commonly used, text editors are inserting this character every time we press the Enter button on our keyboards. Here’s a simple message with a line break:
+新行（也称为行结束、行尾 (_EOL_)、换行或换行符）转义序列是一个 _ASCII_ 代码，以 `/n` 表示，十进制值为 10，它是常用的，文本编辑器在我们按下键盘上的 Enter 键时会插入这个字符。下面是一个带有换行符的简单消息：
 
 ```cpp
 print("Hello, this is line 1\nAnd this is line 2");
 ```
 
-That will simply output:
+这将简单地输出：
 
 ```
 Hello, this is line 1
 And this is line 2
 ```
 
-Multiple line brakes are achievable of course;
+当然，可以实现多个换行符：
 
 ```cpp
 print("H\n\n\ne\n\n\nl\nl\n\no");
@@ -904,11 +905,11 @@ l
 o
 ```
 
-This works differently when dealing with files, however, depending on your operating system, like for instance, in windows, a line break is typically a **CR** (_carriage return_) + **LF** (_line feed_), you can learn more about the differences [here](https://en.wikipedia.org/wiki/Newline).
+然而，这在处理文件时表现不同，根据你的操作系统，例如，在 Windows 中，换行符通常是 **CR** (_carriage return_) + **LF** (_line feed_)，你可以了解更多不同之处 [这里](https://en.wikipedia.org/wiki/Newline)。
 
-- **The “Carriage return” escape sequence - `\r`**
+- **“回车符” 转义序列 - `\r`**
 
-The carriage return is an _ASCII_ code that’s often associated with the line feed, but it can serve as its own thing by itself, it simply moves the carriage to the beginning of the current line, equivalent of a specific case we discussed using multiple backspaces (`\b`) escape sequence, let’s look at the following example, without using this escape sequence, this is the normal output we would get:
+回车是一个 _ASCII_ 代码，通常与换行符一起使用，但它也可以单独作为一种功能，它只是将光标移动到当前行的开头，相当于我们讨论的使用多个回退 (`\b`) 转义序列的特定情况。让我们看以下示例，如果不使用这个转义序列，我们会得到正常的输出：
 
 ```cpp
 print("Hello");
@@ -919,7 +920,7 @@ Hello
      ^
 ```
 
-The arrow represents the position of the cursor, which is placed after the last visible character of the string, again, that’s the normal expected behavior, now let’s add the carriage return into the mix:
+箭头表示光标的位置，位于字符串的最后一个可见字符之后，这就是正常的预期行为，现在让我们将回车符添加到混合中：
 
 ```cpp
 print("Hello\r");
@@ -930,7 +931,7 @@ Hello
 ^
 ```
 
-The cursor is shifted to the beginning of the line, selecting the first character **“H”**, now inserting anything will change **“H”** to whatever we input, and then move to the next character while remaining on the insert mode:
+光标被移动到行的开头，选择第一个字符 **“H”**，现在插入任何内容将把 **“H”** 更改为我们输入的内容，然后移动到下一个字符，同时保持插入模式：
 
 ```cpp
 print("Hello\rBo");
@@ -941,11 +942,11 @@ Hello
 ^
 ```
 
-As we’ve seen on the line feed section, line breaks work differently across different operating systems, windows, for instance, use a carriage return followed by a line feed to perform a line break, just like the classic typewriters.
+正如我们在换行部分看到的，不同操作系统的换行符行为不同，例如，Windows 使用回车符后跟换行符来执行换行，就像经典的打字机一样。
 
-- **The “Horizontal tab” escape sequence - `\t`**
+- **“水平制表符” 转义序列 - `\t`**
 
-Tabulation is something we use every day, from text/code indentation, to table display, that tabulator key that lays at the very side of your keyboard really is a time saver, it was such a pain and so much time consuming to excessively use many spaces, but this one cuts the cake easily, not only is it usefully practically, it really is strongly present in the field of programming, it’s noted as `\t`, people would argue on how many spaces a tab is worth, most would say it’s worth 4 spaces, but there are who say it’s worth 8 spaces, someone demonic creature would even prefer spaces to tabs, but that's another talk on inself, let as observe this simple example:
+制表符是我们每天都在使用的，从文本/代码缩进到表格显示，键盘上那个制表符键确实节省了很多时间，以前过多地使用空格是很麻烦的，但这个键可以轻松解决这个问题，它在编程领域中也非常常见，表示为 `\t`，人们会争论一个制表符值多少空格，大多数人说是 4 个空格，但也有人说是 8 个空格，有人甚至更喜欢用空格代替制表符，但这另当别论，下面是一个简单的例子：
 
 ```cpp
 print("Hello\tWorld");
@@ -955,7 +956,7 @@ print("Hello\tWorld");
 Hello    World
 ```
 
-Here is another one with multiple tabulations:
+这是另一个带有多个制表符的例子：
 
 ```cpp
 print("Hello\t\t\t\t\tWorld");
@@ -965,13 +966,13 @@ print("Hello\t\t\t\t\tWorld");
 Hello                    World
 ```
 
-- **The “Vertical tab” escape sequence - `\v`**
+- **“垂直制表符” 转义序列 - `\v`**
 
-During the old typewriter era, this had a more popular use, it was used to move to the next line vertically, but now, this is no longer the case, it doesn’t have any noticeable usage nowadays, and that includes modern printers and even programming languages, and pawn is no exception.
+在早期打字机时代，这个转义序列更为流行，它用于垂直移动到下一行，但现在已经不再使用，它在现代打印机和编程语言中没有明显的用途，pawn 也不例外。
 
-- **\_The “Backslash” escape sequence - `\*`**
+- **“反斜杠” 转义序列 - `\*`**
 
-As we’ve seen, the backslash is regarded as the escape character, so whenever the program spots it, it thinks of it as a starting point of some escape sequence, it doesn’t look at it as an independent character, and thus, will either give a compilation error (_if it wasn’t followed by a valid character_), or will not print it, in pawn’s case, the compilator will raise an error (_error 027: invalid character constant_). Luckily, we can solve this problem by escaping out backslash, and that’s done by prefixing yet another backslash to it:
+正如我们所见，反斜杠被视为转义字符，因此每当程序遇到它时，它会将其视为某些转义序列的起始点，而不是独立的字符，因此，要么会导致编译错误（_如果没有后续有效字符_），要么不会打印它。在 pawn 的情况下，编译器将引发错误（_错误 027：无效的字符常量_）。幸运的是，我们可以通过转义反斜杠来解决这个问题，方法是在其前面加上另一个反斜杠：
 
 ```cpp
 print("Hello \\ World");
@@ -981,9 +982,9 @@ print("Hello \\ World");
 Hello \ World
 ```
 
-:::caution ­Warning
+:::caution ­警告
 
-The output will disregard the first backslash, and print the second, as the first is escaping the second and tricking the program into viewing it as a raw character. A backslash can only escape one character at a time, so doing the following will raise a compilation error.
+输出将忽略第一个反斜杠，并打印第二个，因为第一个反斜杠转义了第二个并欺骗程序将其视为原始字符。一个反斜杠只能转义一个字符，因此以下做法会引发编译错误。
 
 :::
 
@@ -991,7 +992,7 @@ The output will disregard the first backslash, and print the second, as the firs
 print("Hello \\\ World");
 ```
 
-Think of it as pairs of backslashes, everyone is escaping the one after, and thus, it should always result in an even number of backslashes;
+将其视为成对的反斜线，每个都会转义后面的一个，因此，其结果应该总是双数的反斜线;
 
 ```cpp
 print("Hello \\\\\\ \\ World");
@@ -1001,67 +1002,67 @@ print("Hello \\\\\\ \\ World");
 Hello \\\ \ World
 ```
 
-As you surely noticed, escape sequences are never printed, they only serve as instructions that express certain events, if we want to force them into being printed, we can escape their escape character (`\`), then the program will not look at them as escape sequence:
+你肯定注意到了，转义序列是不会被打印出来的，它们只是作为表达某些事件的指令，如果我们想强制将它们打印出来，可以使用转义字符（`\`），这样程序就不会将它们视为转义序列了:
 
 ```cpp
-print("This is the escape sequence responsible for tabulation: \\t");
+print("这是负责制表的转义序列: \\t");
 ```
 
-The first backslash escapes the second, and then it gets printed, then the **t** character is left alone, and thus regarded as an independent character:
+第一个反斜杠转义了第二个反斜杠，然后它被打印出来，然后**t** 字符被单独保留，因此被视为一个独立字符:
 
 ```
-This is the escape sequence responsible for tabulation: \t
+这是负责制表的转义序列: \t
 ```
 
-- **The “Single quote” escape sequence - `\'`**
+- **“单引号” 转义序列 - `\'`**
 
-This is hardly present when writing pawn code, I myself haven’t found myself using this in any coding situation, in other languages that treat text between single quotation marks as a string make great use of this to limit the confusion that happens when nesting single quotation marks into each other, it really makes no difference in pawn, here’s a simple example;
+在其他语言中，单引号之间的文本被视为一个字符串，这一点在其他语言中得到了很好的应用，以减少单引号之间嵌套时产生的混乱;
 
 ```cpp
-print("Single quote '");
-// or
-print("Single quote \'");
+print("单引号 '");
+// 或者
+print("单引号 \'");
 ```
 
-Either way, the output will be the same:
+无论采用哪种方式，输出结果都是一样的:
 
 ```
-Single quote: '
+单引号: '
 ```
 
-The only use I can think of concerning this is setting a variable the character “**'**”, so obviously doing the following will cause a compilation error;
+我能想到的与此相关的唯一用途是将变量设置为字符 “**'**”，因此，执行以下操作显然会导致编译错误;
 
 ```cpp
 new chr = ''';
 ```
 
-Simply because the compiler will regard the first pair of single quotes as one entity, and the second as an unclosed quotation sequence, so to fix that, we will have to escape the middle one;
+这是因为编译器会将第一对单引号视为一个实体，而将第二对单引号视为一个未封闭的引号序列，因此要解决这个问题，我们必须转义中间的单引号;
 
 ```cpp
 new chr = ''\';
 ```
 
-- **The “Double quote” escape sequence - `\"`**
+- **“双引号” 转义序列 - `\"`**
 
-Unlike the single quotation mark, this one can cause problems when it comes to nesting them together, pawn treats anything between double quotations as a string, so what if you want to input a double quotation mark in your string, that will confuse the program, it wouldn’t know what each quotation mark is for, let’s take this as an example for instance:
+与单引号不同，双引号在嵌套时会产生问题，Pawn 将双引号之间的任何内容都视为一个字符串，因此，如果您想在字符串中输入双引号，程序会感到困惑，因为它不知道每个引号的作用:
 
 ```cpp
 print("Hello "world");
 ```
 
-As soon as the compilator spots the first quotation marks, it will treat everything that comes after as part of one string, and end up the process as soon as it hits another quotation mark, and thus, the compiler will pick up **“Hello “** as a string and will view **World”** as some none-sense filling up the holes of your code. To solve this, we need to escape the double quotation mark we want to print:
+编译器一旦发现第一个引号，就会将后面的所有内容视为一个字符串的一部分，并在遇到另一个引号时结束编译过程，因此，编译器会将 **"Hello "** 视为一个字符串，而将**World "** 视为填补代码漏洞的无意义内容。要解决这个问题，我们需要转义我们要打印的双引号:
 
 ```cpp
 print("Hello \"world");
 ```
 
-Now, the compiler will treat the second quotation mark as an escape sequence as it’s prefixed by an escape character (**\\**):
+现在，编译器会将第二个引号视为转义序列，因为它的前缀是转义字符 (**\\**):
 
 ```
 Hello "world
 ```
 
-Let’s add another quotation mark just for the heck of it:
+为了方便起见，我们再加一个引号吧:
 
 ```cpp
 print("Hello \"world\"");
@@ -1071,25 +1072,25 @@ print("Hello \"world\"");
 Hello "world"
 ```
 
-It couldn’t be simpler.
+再简单不过了.
 
-Throughout this section, we’ve seen how we can represent escape sequences by prefixing the escape character (`\\`) to a certain character, but that’s just one way to note those values, among other ways, we will take a look on two others;
+在本节中，我们看到了如何通过在某个字符前加上转义字符 (`\\`)来表示转义序列，但这只是记录这些值的一种方法，我们还将了解其他两种方法;
 
-- **Escape sequences with character code (decimal code) - `\ddd;`**
+- **带字符代码（十进制代码）的转义序列 - `\ddd;`**
 
-It doesn’t change anything about the escape sequences, it’s just a different way to express them, using decimal _ASCII_ codes, for instance, if you want to print A, but note it decimally, you can type it’s decimal _ASCII_ code like the following:
+这并不会改变转义序列的任何东西，它只是用十进制 _ASCII_ 代码表达它们的另一种方式。例如，如果你想打印字母 A，但使用十进制表示，你可以像下面这样输入它的十进制 _ASCII_ 代码：
 
 ```cpp
 print("\65;");
 ```
 
-This doesn’t concern only alphanumeric characters, but also other ones, like the audible beep (`\a`), with its decimal value `7`, can be represented according to this notation as `\7`;
+这不仅限于字母数字字符，还包括其他字符，例如可听的蜂鸣声（`\a`），它的十进制值为 `7`，可以根据这种表示法表示为 `\7;`。
 
-The semicolon mark is optional and can be dropped, but it’s always better to go with the original approach, its purpose is to give the escape sequence an explicit termination symbol when it is used in a string constant.
+分号是可选的，可以省略，但最好使用原始的表示法，其目的是当它在字符串常量中使用时，为转义序列提供一个明确的结束符号。
 
-- **Escape sequences with character code (decimal code) - `\xhhh;`**
+- **带字符代码（十六进制代码）的转义序列 - `\xhhh;`**
 
-Similar to the decimal _ASCII_ notation, we can also use the hexadecimal format, the character **A**, can either be written as `\65`;** or `\x41`;**, The _semi-colon_ can be omitted if you want, this applies both here and on the decimal notation.
+类似于十进制 _ASCII_ 表示法，我们也可以使用十六进制格式，字符 **A** 可以写作 `\65;` 或 `\x41;`，分号在这里和十进制表示法中都是可选的。
 
 ```cpp
 print("\x41;");
@@ -1099,85 +1100,83 @@ print("\x41;");
 A
 ```
 
-You can find all of those values by simply googling “**ASCII table**”, and what’s cool about it is that it’s free.
+你可以通过简单地搜索“**ASCII 表**”找到所有这些值，而且更酷的是，它是免费的。
 
-#### Custom escape character
+#### 自定义转义字符
 
-If you noticed, I’ve kept calling repeating the “**escape character**” multiple times throughout the last section where I could have referred to it simply as “**the backslash**”, or even shorted, (`\`), the reason for that is because the escape character is not an absolute constant character, but rather, it can be changed preferably, you can have it as _@, ^, \$_ and so on, by default it’s a backslash, but how it stays is only determined by you.
+如果你注意到了，我在上一部分中多次提到“**转义字符**”，而不是简单地称其为“**反斜杠**”或缩写为 (`\`)。这是因为转义字符不是绝对的常量字符，而是可以根据需要进行更改的。你可以将其设为 _@, ^, \$_ 等等，默认情况下它是反斜杠，但它的状态由你决定。
 
-n order to change it, we use the pre-processor directive `pragma`, this particular directive accepts different parameters, for each their specific task, and there is one that's responsible on setting the escape character which we will be focusing on, it's `ctrlchar`.
+为了更改它，我们使用预处理指令 `pragma`，该指令接受不同的参数，每个参数有其特定的任务，其中有一个负责设置转义字符，我们将重点关注它，即 `ctrlchar`。
 
 ```cpp
 #pragma ctrlchar '$'
 
 main()
 {
-	print("Hello $n World");
-	print("This is a backslash: \\");
-	print("The his a dollar sign: $$");
+	  print("Hello $n World");
+	  print("这是一个反斜杠: \\");
+	  print("这是一个美元符号: $$");
 }
 ```
 
 ```
 Hello
  World
-This is a backslash: \
-This is a dollar sign: $
+这是一个反斜杠: \
+这是一个美元符号: $
 ```
 
-As you can see the line feed is noted as `$n` instead of `\n` now, and the backslash is no longer regarded as the escape character, and consequently, the dollar sign requires being escaped by another dollar sign.
+如你所见，换行符现在表示为 `$n` 而不是 `\n`，而反斜杠不再被视为转义字符，因此，美元符号需要由另一个美元符号转义。
 
-You can’t, however, change this to (`-`), but anything else is an acceptable practice, but it’s never ever accepted ethically, just how silly is this `#pragma ctrlchar '6'`, huh? Absolute mad lad.
+然而，你不能将其更改为 (`-`)，但任何其他字符都是可以接受的实践。不过，理论上永远不被接受的情况如 `#pragma ctrlchar '6'`，多么滑稽啊，真是个疯狂的家伙。
 
-This portion here has absolutely nothing to do with escape sequences, but it is used in formatting textdraws and gametext, it’s better to put it here than anywhere else;
+这一部分与转义序列完全无关，但它用于格式化文本绘制和游戏文本，放在这里比放在其他地方更合适；
 
 |       |                                                                                                               |
 | ----- | ------------------------------------------------------------------------------------------------------------- |
-| `~u~` | Up arrow (gray)                                                                                               |
-| `~d~` | Down arrow (gray)                                                                                             |
-| `~<~` | Left arrow (gray)                                                                                             |
-| `~>~` | Right arrow (gray)                                                                                            |
-| `]`   | Displays a `*` symbol (only in text style 3, 4, and 5)                                                        |
-| `~k~` | keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`). Look here for a list of keys |
+| `~u~` | 向上箭头（灰色）                                                                                             |
+| `~d~` | 向下箭头（灰色）                                                                                             |
+| `~<~` | 向左箭头（灰色）                                                                                             |
+| `~>~` | 向右箭头（灰色）                                                                                            |
+| `]`   | 显示一个 `*` 符号（仅在文本样式 3、4 和 5 中）                                                               |
+| `~k~` | 键盘键映射（例如 `~k~~VEHICLE_TURRETLEFT~` 和 `~k~~PED_FIREWEAPON~`）。查找按键列表请点击此处。|
 
-keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`). Look here for a list of keys
+### 格式说明符
 
-### Format specifier
+#### 描述
 
-#### Description
-
-Placeholders or specifiers are characters escaped by a percent sign (`%`), the indicate the relative position and the output type of certain parameters, they serve as their name suggests “_Placeholders”_, they save a place for data that will later replace them inside the string, there are different types of specifiers, and they even follow a specific formula;
+占位符或说明符是以百分号（`%`）转义的字符，它们表示某些参数的相对位置和输出类型，正如其名称所暗示的那样，它们是“占位符”，它们为稍后将在字符串中替换它们的数据保留了一个位置。有不同类型的说明符，它们甚至遵循一个特定的公式；
 
 ```
 %[flags][width][.precision]type
 ```
 
-The attributes between brackets are all optional and are up to you-the-user to either keep them or not, what really defines a specifier the wide known format of **%type**, the type part is replaced by a character to represent a certain output type; (_integer, float... etc_).
+方括号中的属性都是可选的，由用户自行决定是否保留它们。真正定义一个说明符的是众所周知的格式 **%type**，其中类型部分由一个字符替代，以表示某种输出类型（_例如整数、浮点数等_）。
 
-Placeholders are only used on functions that accept parameters, thus functions like print will have no effect, an alternative to it is the more advanced `printf`.
+占位符仅用于接受参数的函数，因此像 `print` 这样的函数不会受到影响。对此的一个替代方案是更为高级的 `printf` 函数。
 
-Let us look at the different output types that can be used:
+让我们来看一下可以使用的不同输出类型:
 
 |               |                                                 |
 | ------------- | ----------------------------------------------- |
-| **Specifier** | **Meaning**                                     |
-| `%i`          | Integer (_whole number_)                        |
-| `%d`          | Integer (_whole number_)                        |
-| `%s`          | String                                          |
-| `%f`          | Floating-point number (`Float: tag`)            |
-| `%c`          | ASCII character                                 |
-| `%x`          | Hexadecimal number                              |
-| `%b`          | Binary number                                   |
-| `%%`          | Literal `'%'`                                   |
-| `%q`          | Escape a text for SQLite. (_Added in 0.3.7 R2_) |
+| **Specifier** | **含义**                                        |
+| `%i`          | 整数 (_整数_)                                  |
+| `%d`          | 整数 (_整数_)                                  |
+| `%s`          | 字符串                                          |
+| `%f`          | 浮点数 (`Float: tag`)                           |
+| `%c`          | ASCII 字符                                     |
+| `%x`          | 十六进制数                                      |
+| `%b`          | 二进制数                                        |
+| `%%`          | 字面量 `'%'`                                   |
+| `%q`          | 转义文本以适用于 SQLite。(_在 0.3.7 R2 中添加_) |
 
-- **The integer specifiers - `%i` and `%d`**
+- **整数格式说明符 - `%i` 和 `%d`**
 
-Let’s wrap the both together, in pawn, these two specifiers do the same exact thing, both output integers, even though `%i` stands for integer and `%d` stands for decimal, they are a synonym to the same thing.
+我们将这两个格式说明符放在一起讨论，在 pawn 中，这两个说明符执行完全相同的操作，都是输出整数。尽管 `%i` 代表整数，而 `%d` 代表十进制，它们是同义的。
 
-In other languages, however, the difference lays not in the output, but rather the input with functions like `scanf`, where `%d` scans an integer as a signed decimal, and %i defaults to decimal but also allows hexadecimal (_if preceded by `0x`_) and octal (_if preceded by `0`_).
+然而，在其他语言中，它们的区别不在于输出，而在于输入。例如在 `scanf` 函数中，`%d` 将整数扫描为带符号的十进制，而 `%i` 默认是十进制，但也允许十六进制 (_如果前缀为 `0x`_) 和八进制 (_如果前缀为 `0`_)。
 
-The usages of these two specifiers go as follows:
+这两个说明符的用法如下：
 
 ```cpp
 printf("%d is here", 2018);
@@ -1185,30 +1184,30 @@ printf("%d + %i = %i", 5, 6, 5 + 6);
 ```
 
 ```
-printf("%d is here", 2018);
-printf("%d + %i = %i", 5, 6, 5 + 6);
+2018 is here
+5 + 6 = 11
 ```
 
-The output also supports pre-defined constants, variables, and functions too.
+输出还支持预定义常量、变量和函数.
 
 ```cpp
 #define CURRENT_YEAR 2018
 new age = 19;
 
-printf("It’s %d", CURRENT_YEAR);
-printf("He is %d years old", age);
-printf("Seconds since midnight 1st January 1970: %d", gettime());
+printf("现在是 %d 年", CURRENT_YEAR);
+printf("他现在 %d 岁了", age);
+printf("1970 年 1 月 1 日午夜之后的秒数: %d", gettime());
 ```
 
 ```
-It's 2018
-He is 19 years old
-Seconds since midnight 1st January 1970: 1518628594
+现在是 2018 年
+他现在 19 岁了
+1970 年 1 月 1 日午夜之后的秒数: 1518628594
 ```
 
-As you can see, any value we pass in the parameters of the `printf` function is being replaced by its respective placeholder, and remember, **order matters**, your placeholders should follow the same order as your parameters in the call, and always use the correct specifier type, not doing so, will not result in an error, but it may output in some unwanted results, but in some cases, those unwanted results are what we want.
+正如你所看到的，我们传递给 `printf` 函数的任何值都会被其对应的占位符替换，记住，**顺序很重要**，你的占位符应与调用中的参数顺序一致，并且始终使用正确的格式说明符，不这样做不会导致错误，但可能会产生一些不想要的结果，不过在某些情况下，这些不想要的结果就是我们想要的。
 
-What do you think will happen if we tried to print a float or a string using an integer specifier? Let’s find out;
+你认为如果我们尝试使用整数格式说明符来打印浮点数或字符串会发生什么呢？让我们来看看；
 
 ```cpp
 printf("%d", 1.12);
@@ -1224,17 +1223,17 @@ printf("%d", true);
 1
 ```
 
-How odd, totally unexpected, but not necessarily useless, this exact behavior is taken advantage of in so many situations.
+多么奇怪，完全出乎意料，但不一定是无用的，这种行为在许多情况下都被利用。
 
-First of all, let’s see why did `1.12` output _1066359849_, well, that's something called undefined behavior, you can learn more about this [here](https://en.wikipedia.org/wiki/Undefined_behavior).
+首先，让我们看看为什么 `1.12` 会输出 _1066359849_，这叫做未定义行为，你可以在 [这里](https://en.wikipedia.org/wiki/Undefined_behavior) 了解更多。
 
-Trying to output a string using an integer specifier will give its first character’s _ASCII_ code, in this case, the character H’s code, 72, the same happens to the output of a single character. And finally, outputting a Boolean will give 1 if it’s true, and 0 if it’s false.
+尝试使用整数格式说明符输出字符串会给出其第一个字符的 _ASCII_ 码，在这个例子中，即字符 H 的码 72，单个字符的输出也是如此。最后，输出布尔值会给出 1（如果为真）或 0（如果为假）。
 
-Strings are arrays in themselves, so outputting an array here will give the value of the first slot in that array, how it’s going to be output depends on which type it is (_integer, float, character, boolean_).
+字符串本身就是数组，因此在这里输出一个数组会给出该数组第一个位置的值，输出方式取决于它的类型（_整数、浮点数、字符、布尔值_）。
 
-- **The string specifiers - `%s`**
+- **字符串格式说明符 - `%s`**
 
-This specifier, as it stands for string, is responsible for outputting strings (_obviously_):
+这个格式说明符，代表字符串，负责输出字符串（_显而易见_）：
 
 ```cpp
 printf("Hello, %s!", "World");
@@ -1244,7 +1243,7 @@ printf("Hello, %s!", "World");
 Hello, world!
 ```
 
-Let’s also output non-string values using this too:
+我们也可以用它来输出非字符串值:
 
 ```cpp
 printf("%s", 103);
@@ -1260,9 +1259,9 @@ H
 )
 ```
 
-The number `103` was treated as the _ASCII_ code for _g_, and thus _g_ was printed, same goes for the strange symbol below it, the character with the value true, a.k.a _1_ was printed, more simply, the character `'H'` was printed as it is, but hey, what happened to the floating number `1.12`? remember the **undefined behavior**? Yeah, `1.12` resulted in a huge integer, which kept overflowing (its value divided by _255_) times, until it resulted in a number between _0_ and _254_, in this case, _40_, which is the _ASCII_ code of the character _(_.
+数字 `103` 被当作 _ASCII_ 码处理，因此输出了字符 _g_，同样，下面那个奇怪的符号，布尔值为真，即 _1_ 被打印出来，更简单地说，字符 `'H'` 被原样打印出来。但浮点数 `1.12` 怎么了？记得 **未定义行为** 吗？是的，`1.12` 结果是一个巨大的整数，这个整数不断溢出（它的值除以 _255_）多次，直到得到一个介于 _0_ 和 _254_ 之间的数字，在这个例子中是 _40_，这是字符 _)_ 的 _ASCII_ 码。
 
-Again, just like the integer specifier, this accepts pre-defined constants, variables, and functions:
+同样，像整数格式说明符一样，这个说明符也接受预定义常量、变量和函数：
 
 ```cpp
 #define NAME "Max"
@@ -1279,9 +1278,9 @@ Hey, Hello there!
 Great work
 ```
 
-- **The float specifiers - `%f`**
+- **浮点数格式说明符 - `%f`**
 
-This specifier -short for float-, as its name suggests, it outputs floating numbers, on earlier sections, we tried to output floating numbers using the integer specifier, and then we got that undefined behavior, but now, that we know about this specifier, we can safely output floats with no problems;
+这个说明符 - 代表浮点数 - 正如其名字所示，它输出浮点数。在前面的部分，我们尝试使用整数格式说明符来输出浮点数，然后我们遇到了未定义行为，但现在，我们了解了这个说明符，我们可以安全地输出浮点数而没有问题。
 
 ```cpp
 printf("%f", 1.235);
@@ -1289,9 +1288,15 @@ printf("%f", 5);
 printf("%f", 'h');
 ```
 
-The _1.235_ floating number got output just fine, with the addition of some padding, however, the rest of all output _0.000000_, basically _0_, that’s because the `%f` specifier will only output floating numbers, in other words, numbers that have no fixed number of digits before and after the decimal point; that is, the decimal point can float.
+```
+1.235000
+0.000000
+0.000000
+```
 
-To fix that issue, we simply add the fractional part:
+浮点数 _1.235_ 输出得很好，尽管有一些填充，不过，其他所有输出都是 _0.000000_，基本上是 _0_，这是因为 `%f` 说明符只会输出浮点数，换句话说，就是在小数点前后没有固定数字的数字；即小数点可以浮动。
+
+为了解决这个问题，我们只需添加小数部分：
 
 ```cpp
 printf("%f", 5.0);
@@ -1303,7 +1308,7 @@ printf("%f", 'h' + 0.0);
 104.000000
 ```
 
-Although the `%f` is the most commonly used floating placeholder, the `%h` specifier does pretty much the same:
+尽管 `%f` 是最常用的浮点数占位符，`%h` 说明符也基本上做同样的事情：
 
 ```cpp
 printf("%h", 5.0);
@@ -1313,9 +1318,9 @@ printf("%h", 5.0);
 5.000000
 ```
 
-- **The character specifiers - `%c`**
+- **字符格式说明符 - `%c`**
 
-This specifier, short for character, works like the string placeholder, but it only outputs a single character, let’s observe the following example:
+这个说明符，代表字符，类似于字符串占位符，但它只输出一个单独的字符，让我们观察以下示例:
 
 ```cpp
 printf("%c", 'A');
@@ -1334,11 +1339,11 @@ i
 s
 ```
 
-As you can see, passing a string will output only the first character and passing a number will output the character whose _ASCII_ code matches that number (_Booleans are converted to 0 and 1 respectively_).
+如你所见，传递一个字符串只会输出第一个字符，而传递一个数字会输出与该数字的 _ASCII_ 码匹配的字符 (_布尔值分别转换为 0 和 1_)。
 
-- **The hexadecimal specifiers - `%x`**
+- **十六进制格式说明符 - `%x`**
 
-The following specifier outputs the value we pass as a hexadecimal number, simply put, a conversation of numbers from a given base to base 16.
+以下说明符将我们传递的值输出为十六进制数，简单来说，就是将数字从某个基数转换为基数 16。
 
 ```cpp
 printf("%x", 6);
@@ -1352,7 +1357,7 @@ A
 FF
 ```
 
-Just like the cases we saw on earlier sections, passing values other than integers will convert them to their respective integer values, and output them as hexadecimal numbers;
+正如我们在之前的部分看到的，传递非整数值时，会将它们转换为各自的整数值，并以十六进制数形式输出；
 
 ```cpp
 printf("%x", 1.5);
@@ -1368,11 +1373,11 @@ printf("%x", true);
 1
 ```
 
-The first value `1.5`, will result in an undefined behavior upon its conversion to an integer (_1069547520_), then the resulting integer will be output as a hexadecimal (_3FC00000_), The `'Z'` character, will have its _ASCII_ value (90) converted to hexadecimal (5A). The string `"Hello"` will only have its first character (H) with the _ASCII_ value of (72) converted to hexadecimal (48). And `true` outputs (1) as a hexadecimal, which is converts to (1), (false will output 0).
+第一个值 `1.5` 会在转换为整数后产生未定义行为 (_1069547520_)，然后将结果整数以十六进制形式输出 (_3FC00000_)。字符 `'Z'` 的 _ASCII_ 值（90）会被转换为十六进制（5A）。字符串 `"Hello"` 仅会将第一个字符（H）的 _ASCII_ 值（72）转换为十六进制（48）。布尔值 `true` 会以十六进制输出（1），即转换为（1），（false 将输出 0）。.
 
-- **The binary specifiers - `%b`**
+- **二进制格式说明符 - `%b`**
 
-The following specifier, short for “_binary_” is used to print passed values as binary numbers, passing characters will convert its _ASCII_ code into binary, and so is the case for strings where only the first character is regarded, Booleans are regarded as true and false respectively, float numbers fall under the case of undefined behavior, as for integers and hexadecimal, they are converted to binary and output.
+以下说明符，代表“_二进制_”，用于将传递的值以二进制数形式打印，传递字符时会将其 _ASCII_ 码转换为二进制，字符串的处理方式相同，仅考虑第一个字符，布尔值分别视为 true 和 false，浮点数属于未定义行为的情况，整数和十六进制数则会转换为二进制并输出。
 
 ```cpp
 printf("%b", 0b0011);
@@ -1394,51 +1399,51 @@ printf("%b", true);
 1
 ```
 
-- **The literal `%`**
+- **字面量 `%`**
 
-Much like the default escaping character (`\`), the compiler views (`%`) as a special character, and thus treats the sequence as a placeholder, as long as there is a character after the (`%`) it’s regarded as a specifier even if it’s not valid, let’s observe these two cases;
+类似于默认的转义字符（`\`），编译器将（`%`）视为特殊字符，因此将其序列视为占位符，只要（`%`）后面跟着一个字符，它就会被视为格式说明符，即使它无效，我们来观察这两种情况；
 
 ```cpp
 printf("%");
-printf("Hello %");
-printf("% World");
-printf("Hello % World");
+printf("你好 %");
+printf("% 世界");
+printf("你好 % 世界");
 ```
 
 ```
 %
-Hello %
- World
-Hello  World
+你好 %
+ 世界
+你好  世界
 ```
 
-As you can see, having (`%`) alone as an individual sequence will have it output, but not the same happens when it’s followed by space or any other character, thus it results in outputting a space character. To trespass this problem, we escape it using another percent sign as follows;
+如你所见，单独的（`%`）作为一个独立的序列会被输出，但如果它后面跟着空格或其他字符，则会输出一个空格。为了解决这个问题，我们使用另一个百分号进行转义，如下所示；
 
 ```cpp
-printf("This is a percent sign %%, we just had to escape it!");
+printf("这是一个百分号 %%, 我们只是需要对它进行转义!");
 ```
 
 ```
-This is a percent sign %, we just had to escape it!
+这是一个百分号 %, 我们只是需要对它进行转义!
 ```
 
-Of course, this only concerns functions that support formatting, such as `printf` and `format`, for example, trying to output a percent sign using the `print` function will not require you to escape it.
+当然，这仅涉及支持格式化的函数，例如 `printf` 和 `format`，例如，尝试使用 `print` 函数输出百分号时不需要转义。
 
-- **The `%q` specifier**
+- **`%q` 说明符**
 
-This one doesn’t hold any big importance in our main topic, it’ widely used to escape sensitive strings when working with _SQLite_, and trust me, nobody wants to fall under the [Bobby table](http://bobby-tables.com/about) case.
+这个说明符在我们的主要话题中并不重要，它主要用于在处理 _SQLite_ 时转义敏感字符串，相信我，没有人愿意陷入 [Bobby tables](http://bobby-tables.com/about) 的情况。
 
-Back when we introduced the placeholders, we reference a specific formula concerning them, as a reminder, here it is;
+回到我们介绍占位符时，我们提到了一些与之相关的特定公式，作为提醒，以下是它们；
 
 ```
 %[flags][width][.precision]type
 ```
 
-So far, we have only talked about the `%` sign and the type filed, the others are optional, but each one is effective on different cases, you can include them to better control how your values are treated when they are output.
+到目前为止，我们只谈到了（`%`）符号和类型字段，其他的是可选的，但每一个在不同情况下都是有效的，你可以包括它们以更好地控制你的值在输出时的处理方式。
 
-- **The width filed**
+- **宽度字段**
 
-This one is responsible for specifying the minimum character output, it can be omitted if needed, you just have to type its value as a numeric integer, let’s look at some examples;
+这个字段负责指定最小字符输出，如果需要，可以省略，只需将其值指定为一个整数，我们来看一些例子；
 
 ```cpp
 printf("%3d", 5555);
@@ -1454,7 +1459,7 @@ printf("%3d", 5);
   5
 ```
 
-We instructed the specifier to lock the output to 3 characters or more, at first, outputting 4 and 3 characters number long went fine, but the characters shorter than 3 characters were left padded with spaces to even the output width. There is also the ability to have dynamic width values, for that, we use the asterisk sign (`*`).
+我们指示说明符将输出锁定为 3 个字符或更多，最初，输出 4 和 3 个字符长的数字没有问题，但短于 3 个字符的字符被用空格填充，以使输出宽度一致。还有动态宽度值的能力，为此，我们使用星号（`*`）。
 
 ```cpp
 printf("%*d", 5, 55);
@@ -1464,11 +1469,11 @@ printf("%*d", 5, 55);
      55
 ```
 
-First, we pass the width’s value which was `5`, then the value we want to output `55`, so the placeholder outputs a minimum of 5 characters, that’s 5 minus 2, which gives us 3 spaces of padding.
+首先，我们传递宽度的值 `5`，然后是我们想要输出的值 `55`，因此占位符输出至少 5 个字符，即 5 减去 2，给我们 3 个填充的空格。
 
-- **The flags field**
+- **标志字段**
 
-This one works really well with the width field, as the width specifies the minimum characters to outputs, this one pads the emptiness left behind with whatever you tell it to. In case there were to spaces left behind, there won’t be any pad.
+这个字段与宽度字段配合得很好，因为宽度字段指定了最小字符输出，这个字段则填充留下的空白部分，用你告诉它的任何东西。如果留下了空格，则不会填充。
 
 ```cpp
 printf("%3d", 55);
@@ -1482,7 +1487,7 @@ printf("%2f", 1.5)
 01.500000
 ```
 
-The first number 55, is short on one character because of the width of the decimal parameter, so it’s padded by one 0. As for 15, it’s converted to its respective hexadecimal value _F_, and padded with 4 0’s to validate the width of its placeholder. Notice how only the number before the decimal point was padded. The use of dynamic width values remains here too, we just have to include the asterisk, pass a value, and watch the magic happen;
+第一个数字 `55` 由于十进制参数的宽度不足一个字符，因此用一个 `0` 进行了填充。对于 `15`，它被转换为相应的十六进制值 _F_，并用 4 个 `0` 填充，以满足占位符的宽度要求。注意，只有小数点前的数字被填充。动态宽度值也适用，只需包含星号（`*`），传递一个值，即可看到效果；
 
 ```cpp
 printf("%0*d", 5, 55);
@@ -1492,9 +1497,9 @@ printf("%0*d", 5, 55);
 00055
 ```
 
-- **The precision field**
+- **精度字段**
 
-The Precision field usually specifies a maximum limit on the output, depending on the particular formatting type. For floating point numeric types, it specifies the number of digits to the right of the decimal point that the output should be rounded. For the string type, it limits the number of characters that should be output, after which the string is truncated.
+精度字段通常指定输出的最大限制，取决于特定的格式类型。对于浮点数类型，它指定输出应该四舍五入的小数点右侧的位数。对于字符串类型，它限制应输出的字符数，超出部分会被截断。
 
 ```cpp
 printf("%.2f", 1.5);
@@ -1510,11 +1515,11 @@ Hello
 Hello w
 ```
 
-As you can see, dynamic precision values can be used both with the float and the string placeholders.
+正如你所见，动态精度值可以与浮点和字符串占位符一起使用。
 
-A really cool trick we can pull off thanks to the precision field is get substrings, now, now, there are plenty of methods we can use to do that, and that without regarding the native [strfind](../scripting/functions/strfind) function, and let’s not forget the amazing functions we got at **Slice**’s [strlib](https://github.com/oscar-broman/strlib) include.
+利用精度字段的一个非常酷的技巧是获取子字符串，现在，有很多方法可以做到这一点，而不考虑原生的 [strfind](../scripting/functions/strfind) 函数，别忘了我们在 **Slice** 的 [strlib](https://github.com/oscar-broman/strlib) 包中获得的那些惊人函数。
 
-Let’s see how we can get the same result using only the precision field.
+让我们看看如何仅使用精度字段获得相同的结果。
 
 ```cpp
 substring(const source[], start = 0, length = -1)
@@ -1526,11 +1531,11 @@ substring(const source[], start = 0, length = -1)
 }
 ```
 
-Let’s try to decipher this chunk of code, we simply pass the source string, (the string we are going to extract from), a starting position (the slot we are going to start extracting at), and the length of the characters we want to extract.
+让我们尝试解读这段代码，我们简单地传递源字符串（我们要提取的字符串）、起始位置（我们开始提取的槽位）和我们想提取的字符长度。
 
-Our return value will be formatted according to the following placeholder `%.*s`, we are including the precision field, and using it to determine a dynamic value that’s going to be the length of extracted characters, then we provide a starting point for the extraction by adding `source[start]` which skips starting from the first slot to the slot number `start` that we passed in the function’s parameters.
+我们的返回值将根据以下占位符格式化 `%.*s`，我们包含了精度字段，并使用它来确定一个动态值，这个值将是提取字符的长度，然后通过添加 `source[start]` 提供提取的起始点，这样我们就从函数参数中传递的 `start` 槽位开始提取。
 
-Let’s call the function and see how it goes from here:
+让我们调用这个函数看看结果如何：
 
 ```cpp
 new message1[] = "Hello!", message2[] = "I want an apple!";
@@ -1544,18 +1549,18 @@ ell
 an apple
 ```
 
-Simple right? Trivia bonus, passing a _negative value_ as the extraction length will result in outputting all the characters in your source string starting from the **start** slot. In the other hand, passing 0 as the extraction length returns a null value.
+简单吧？附带的 trivia 小知识，传递一个 _负值_ 作为提取长度会导致输出从 **start** 槽位开始的所有字符。另一方面，传递 0 作为提取长度会返回一个空值。
 
-Let’a take a look on these cases:
+让我们看一下这些情况：
 
 ```cpp
 new message3[] = "Arrays start at 1, says the Lua developer!";
 
-print(substring(message3)); // start = 0 by default, length = -1 by default
-print(substring(message3, .length = 6)); // start = 0 by default, length = 6
-print(substring(message3, 7, 10)); // start = 7, length = 10
-print(substring(message3, strlen(message3) - 14)); // start = 28, length = -1 by default
-print(substring(message3, strlen(message3) - 14, 3)); // start = 28, length = 3
+print(substring(message3)); // 默认起始位置 = 0，长度 = -1
+print(substring(message3, .length = 6)); // 默认起始位置 = 0，长度 = 6
+print(substring(message3, 7, 10)); // 起始位置 = 7，长度 = 10
+print(substring(message3, strlen(message3) - 14)); // 起始位置 = 28，默认长度 = -1
+print(substring(message3, strlen(message3) - 14, 3)); // 起始位置 = 28，长度 = 3
 ```
 
 ```
@@ -1566,88 +1571,88 @@ Lua developer!
 Lua
 ```
 
-#### Usage
+#### 使用示例
 
-Putting all what we’ve seen so far to action, we can format our strings pretty match in anyway, so far we’ve worked in mainly in the console, utilizing the `print` and `printf` functions to output our data, well, mainly `printf` that is, thanks to its native support for formatting strings on the go, hence the f on the function’s name.
+将我们迄今为止所看到的付诸实践，我们可以以几乎任何方式格式化字符串，到目前为止，我们主要在控制台工作，使用 `print` 和 `printf` 函数输出数据，实际上主要是 `printf`，因为它本身支持动态格式化字符串，因此函数名中有个 f。
 
-But in the real world, most people don’t like looking at terminals, they are just too scary, and complicated to the average user, and as you all know, _client messages_ show up on the game’s screen, and not the console, however, those cannot be formatted on the go, they are more like a print function one might say, to bypass this limitation, we utilize and other very effective function, called `format`, we won’t go deeper on its definition, as we have already gone through explaining it on earlier parts, (refer to [this](../scripting/functions/format)), but, here is a reminder of its syntax;
+但在现实世界中，大多数人不喜欢看终端，它们对普通用户来说太可怕、复杂，正如你们所知道的，_客户端消息_ 会显示在游戏屏幕上，而不是控制台，然而，这些不能动态格式化，更像是 `print` 函数的行为，为了绕过这个限制，我们使用另一个非常有效的函数，称为 `format`，我们不会深入其定义，因为我们已经在早期部分解释过了，（参考 [this](../scripting/functions/format)），但这里是其语法的提醒：
 
 ```cpp
 format(output[], len, const format[], {Float,_}: ...}
 ```
 
-Let’s take a look at these examples;
+让我们看这些示例；
 
-**Example 1**: _Player name – Assuming there is some play on the server with the id of 9 called Player1_:
+**示例 1**: _玩家名称 - 假设服务器上有一个 ID 为 9 的玩家，叫做 Player1_：
 
 ```cpp
-// MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to take into account the null terminator, thanks to Pottus for pointing that out.
+// MAX_PLAYER_NAME 是一个预定义常量，其值为 24，我们添加了 1 以考虑空结束符，感谢 Pottus 指出这一点
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[信息]: ID 为 %d 的玩家名为 {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
 ```
 
-> [Info]: the player with the id of 9 is called <span style={{color: '#ee11cc'}}>Player1</span>.
+> [信息]: ID 为 9 的玩家名为 <span style={{color: '#ee11cc'}}>Player1</span>。
 
-Simply enough, we just get the player name and start formatting out the string, the `%d` placeholder is responsible on displaying the `playerid` variables, which holds the value `9`, the `%s` placeholder displays the `playerName` string that has the player name in it thanks to the `GetPlayerName` function.
+很简单，我们只需获取玩家名称并开始格式化字符串，`%d` 占位符负责显示 `playerid` 变量，其值为 `9`，`%s` 占位符显示 `playerName` 字符串，这个字符串包含了玩家的名字，这是通过 `GetPlayerName` 函数获得的。
 
-We then show the formatted string to everyone on the server using the `SendClientMessageToAll` function, notice that the `0` value on its first parameter indicating the color black, which is going to be the message’s color, the embedded hex value `{FFFF00}` is what resulted in the player name to be yellow.
+然后我们使用 `SendClientMessageToAll` 函数将格式化后的字符串显示给服务器上的所有人，注意其第一个参数的 `0` 值表示黑色，即消息的颜色，嵌入的十六进制值 `{FFFF00}` 导致玩家名称呈现黄色。
 
-**Example 2**: _In-game Clock – Displaying the current time in game_:
+**示例 2**: _游戏内时钟 - 显示游戏中的当前时间_：
 
 ```cpp
 new output[128], hours, minutes, seconds;
 
 gettime(hours, minutes, seconds);
-format(output, sizeof(output), "It's %02d:%02d %s", hours > 12 ? hours - 12 : hours, minutes, hours < 12 ? ("AM") : ("PM"));
+format(output, sizeof(output), "现在是 %02d:%02d %s", hours > 12 ? hours - 12 : hours, minutes, hours < 12 ? ("AM") : ("PM"));
 SendClientMessageToAll(0, output);
 ```
 
-Again, we just utilized the `gettime` function to store the hours, minutes and seconds on their variables respectively, then put them all together into a nicely formatted string, we took advantage of the width field `%02d` to pad the values between 0 and 9 with another zero to evade outputs like (“_It’s 5:9 PM_”), as you can see.
+我们再次利用 `gettime` 函数将小时、分钟和秒分别存储在变量中，然后将它们组合成一个格式良好的字符串，我们利用宽度字段 `%02d` 将 0 到 9 之间的值填充为另一个 0，以避免输出像（“_现在是 5:9 PM_”）这样的结果，如你所见。
 
-> It’s 06 :17 PM
+> 现在是 06 :17 PM
 
-**Example 3**: _Death message - Outputting a message when a player dies, having the players names colored in their respective colors_:
+**示例 3**: _死亡消息 - 当玩家死亡时输出消息，玩家名字按其各自颜色显示_：
 
 ```cpp
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    // MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to take into account the null terminator, thanks to Pottus for pointing that out.
+    // MAX_PLAYER_NAME 是一个预定义常量，其值为 24，我们添加了 1 以考虑空结束符，感谢 Pottus 指出这一点
     new message[144], playerName[MAX_PLAYER_NAME + 1], killerName[MAX_PLAYER_NAME + 1];
 
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
     GetPlayerName(killerid, killerName, MAX_PLAYER_NAME);
 
-    format(message, sizeof(message), "{%06x}%s {000000}killed {%06x}%s", GetPlayerColor(killerid) >>> 8, killerName, GetPlayerColor(playerid) >>> 8, playerName);
+    format(message, sizeof(message), "{%06x}%s {000000}杀害了 {%06x}%s", GetPlayerColor(killerid) >>> 8, killerName, GetPlayerColor(playerid) >>> 8, playerName);
     SendClientMessageToAll(0, message);
 
     return 1;
 }
 ```
 
-Given the following list of connected players:
+给定以下连接玩家列表：
 
 |        |                                                 |
 | ------ | ----------------------------------------------- |
-| **ID** | **Player**                                      |
+| **ID** | **玩家**                                      |
 | 0      | <span style={{color: 'red'}}>Compton</span>     |
 | 1      | <span style={{color: 'grey'}}>Dark</span>       |
 | 5      | <span style={{color: 'red'}}>Player1</span>     |
 | 6      | <span style={{color: 'blue'}}>Bartolomew</span> |
 | 11     | <span style={{color: 'grey'}}>unban_pls</span>  |
 
-Say, `playerid` `0` killed `playerid` `6`, the formatted messages should spell “**{FF0000}Compton {000000}killed > {0000FF}Bartolomew**”, which will send the following client message to everybody on the server:
+假设 `playerid` 为 `0` 的玩家杀死了 `playerid` 为 `6` 的玩家，格式化消息应该显示为 “**{FF0000}Compton {000000} 杀害了 > {0000FF}Bartolomew**”，这将向服务器上的每个人发送以下客户端消息：
 
-> <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>killed</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
+> <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>杀害了</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
 
-I apologize if I had you confused by using [bitwise logical shift](https://en.wikipedia.org/wiki/Logical_shift), it was simply used here in order to turn the decimal number returned by the `GetPlayerColor` function into a hexadecimal number representing a color, the shift itself is utilized to omit the -alpha- space, for more about this, I highly recommend checking out [this tutorial](Binary) by **Kyosaur**.
+我为使用 [按位逻辑移位](https://en.wikipedia.org/wiki/Logical_shift) 而可能让你感到困惑感到抱歉，它仅用于将 `GetPlayerColor` 函数返回的十进制数字转换为代表颜色的十六进制数字，移位本身用于省略 -alpha- 空间，更多信息我强烈建议你查看 **Kyosaur** 的 [这个教程](Binary)。
 
-#### Custom specifiers
+#### 自定义说明符
 
-Working with the formatting specifiers we've gone through so far is sufficient, you can literally do all sort of stuff with those magnificent tools, but nothing is stopping us from asking for me, how greedy of us. All thanks to **Slice** after being influenced by [sscanf](https://github.com/maddinat0r/sscanf), he came up with an amazing include, [formatex](https://github.com/Southclaws/formatex), which added several new specifiers to use, which really eased a lot of every-day pawn stuff. But that wasn't it, you can also create your own specifiers to suit your needs, and as cool as it might sound, the process is very easy.
+使用我们迄今为止介绍的格式说明符已经足够，你可以用这些极其强大的工具做各种事情，但没有什么能阻止我们向我索取更多，这真是贪心啊。多亏了 **Slice** 受到 [sscanf](https://github.com/maddinat0r/sscanf) 的启发，他创建了一个令人惊叹的 include，[formatex](https://github.com/Southclaws/formatex)，添加了几个新的说明符，极大地简化了日常的 pawn 工作。但这还不是全部，你还可以创建自己的说明符以满足需求，虽然听起来很酷，但过程非常简单。
 
-Just for testing purposes, let's make something silly, something as basic as giving a string as an input, and return it on the form of a link (_https://www.string.com_);
+仅仅为了测试，让我们做一些简单的事，比如输入一个字符串，然后以链接的形式返回它 (_https://www.string.com_)；
 
 ```cpp
 FormatSpecifier<'n'>(output[], const param[]) {
@@ -1655,7 +1660,7 @@ FormatSpecifier<'n'>(output[], const param[]) {
 }
 ```
 
-As simple as that, and thus, the mighty `%n` specifier (short for Newton because it's very cool and rocket-science complicated 😉 was born, let's test this champ out:
+就这么简单，于是，强大的 `%n` 说明符（缩写为 Newton，因为它非常酷且复杂 😉）诞生了，让我们测试一下这个小家伙：
 
 ```cpp
 printf("%n", "samp");
@@ -1665,55 +1670,55 @@ printf("%n", "samp");
 
 :::note
 
-Don't let this example gatekeep or limit your expectations for what is possible to achieve with custom specifiers, there are better examples at the main release page, [please go check it out](https://github.com/Southclaws/formatex/blob/master/README.md).
+不要让这个示例限制了你对自定义说明符可能实现的期望，主版本页面上有更好的示例，[请去查看](https://github.com/Southclaws/formatex/blob/master/README.md)。
 
 :::
 
-### External links
+### 外部链接
 
-#### Similar tutorials
+#### 类似的教程
 
-- [String formatting](https://sampforum.blast.hk/showthread.php?tid=265433) by [krogsgaard20](https://sampforum.blast.hk/member.php?action=profile&uid=126724)
-- [Understanding Strings](https://sampforum.blast.hk/showthread.php?tid=284112) by [\[HiC\]TheKiller](https://sampforum.blast.hk/member.php?action=profile&uid=23565)
-- [How to use strcmp](https://sampforum.blast.hk/showthread.php?tid=199796) by [Ash.](https://sampforum.blast.hk/member.php?action=profile&uid=78597)
-- [Beginner's Guide: Single/Two/Multi-dimensional Arrays](https://sampforum.blast.hk/showthread.php?tid=318212) by [iPLEAOMAX](https://sampforum.blast.hk/member.php?action=profile&uid=122705)
-- [Tips and Tricks](https://sampforum.blast.hk/showthread.php?tid=216730) by [Slice](https://github.com/oscar-broman)
-- [Code optimization](https://sampforum.blast.hk/showthread.php?tid=571550) by [Misiur](https://sampforum.blast.hk/member.php?action=profile&uid=55934)
-- [Packed strings](https://sampforum.blast.hk/showthread.php?tid=480529) by [Emmet\_](https://github.com/emmet-jones)
-- [IRC string formatting](https://github.com/myano/jenni/wiki/IRC-String-Formatting) by [myano](https://github.com/myano)
-- [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) by [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
+- [字符串格式化](https://sampforum.blast.hk/showthread.php?tid=265433) 作者:[krogsgaard20](https://sampforum.blast.hk/member.php?action=profile&uid=126724)
+- [了解字符串](https://sampforum.blast.hk/showthread.php?tid=284112) 作者:[\[HiC\]TheKiller](https://sampforum.blast.hk/member.php?action=profile&uid=23565)
+- [如何使用strcmp](https://sampforum.blast.hk/showthread.php?tid=199796) 作者:[Ash.](https://sampforum.blast.hk/member.php?action=profile&uid=78597)
+- [初学者指南:单维/二维/多维数组](https://sampforum.blast.hk/showthread.php?tid=318212) 作者:[iPLEAOMAX](https://sampforum.blast.hk/member.php?action=profile&uid=122705)
+- [技巧和窍门](https://sampforum.blast.hk/showthread.php?tid=216730) 作者:[Slice](https://github.com/oscar-broman)
+- [代码优化](https://sampforum.blast.hk/showthread.php?tid=571550) 作者:[Misiur](https://sampforum.blast.hk/member.php?action=profile&uid=55934)
+- [打包字符串](https://sampforum.blast.hk/showthread.php?tid=480529) 作者:[Emmet\_](https://github.com/emmet-jones)
+- [IRC 字符串格式化](https://github.com/myano/jenni/wiki/IRC-String-Formatting) 作者:[myano](https://github.com/myano)
+- [字符串处理](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) 作者:[CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
 - [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
-- [An in-depth look at binary and binary operators](https://sampforum.blast.hk/showthread.php?tid=177523) by [Kyosaur](https://sampforum.blast.hk/member.php?action=profile&uid=23990)
+- [深入了解二进制和二进制运算符](https://sampforum.blast.hk/showthread.php?tid=177523) 作者:[Kyosaur](https://sampforum.blast.hk/member.php?action=profile&uid=23990)
 
-#### Related includes/plugins/contributers
+#### 相关的 包含/插件/贡献者
 
-- [Westie](https://sampforum.blast.hk/member.php?action=profile&uid=56481)'s [strlib](https://sampforum.blast.hk/showthread.php?tid=85697)
-- [Slice](https://github.com/oscar-broman)'s [strlib](https://github.com/oscar-broman/strlib)
-- [Slice](https://github.com/oscar-broman)'s [formatex](https://github.com/Southclaws/formatex)
-- [corne](https://sampforum.blast.hk/member.php?action=profile&uid=98345)'s [y_stringhash](https://sampforum.blast.hk/showthread.php?tid=571305)
-- [Y-Less](https://github.com/Y-Less)'s [sscanf](https://github.com/maddinat0r/sscanf)
+- [Westie](https://sampforum.blast.hk/member.php?action=profile&uid=56481) 的 [strlib](https://sampforum.blast.hk/showthread.php?tid=85697)
+- [Slice](https://github.com/oscar-broman) 的 [strlib](https://github.com/oscar-broman/strlib)
+- [Slice](https://github.com/oscar-broman) 的 [formatex](https://github.com/Southclaws/formatex)
+- [corne](https://sampforum.blast.hk/member.php?action=profile&uid=98345) 的 [y_stringhash](https://sampforum.blast.hk/showthread.php?tid=571305)
+- [Y-Less](https://github.com/Y-Less) 的 [sscanf](https://github.com/maddinat0r/sscanf)
 
 #### References
 
-- [GTA San Andreas](https://www.rockstargames.com/sanandreas/)
+- [GTA 圣安地列斯](https://www.rockstargames.com/sanandreas/)
 - [Textdraw](../scripting/resources/textdraws#what-is-a-textdraw)
-- [Gametext](../scripting/functions/GameTextForPlayer)
-- [Limitations](../scripting/resources/limits)
+- [游戏文本](../scripting/functions/GameTextForPlayer)
+- [限制](../scripting/resources/limits)
 - [ASCII](https://en.wikipedia.org/wiki/ASCII)
-- [ASCII table](https://www.asciitable.com/)
-- [Pawn Tutorial](https://wiki.alliedmods.net/Pawn_Tutorial)
-- [Control Structures](../scripting/language/ControlStructures)
-- [Null character](https://en.wikipedia.org/wiki/Null_character)
-- [RGBA color space](https://en.wikipedia.org/wiki/RGBA_color_space)
-- [Color picker](https://www.webpagefx.com/web-design/color-picker/)
-- [TextDrawColor](../scripting/functions/TextDrawColor)
-- [Gametext styles](../scripting/resources/gametextstyles)
-- [Color list](../scripting/resources/colorslist)
-- [Escape sequence](https://en.wikipedia.org/wiki/Escape_sequence)
+- [ASCII 表](https://www.asciitable.com/)
+- [PAWN 教程](https://wiki.alliedmods.net/Pawn_Tutorial)
+- [控制结构](../scripting/language/ControlStructures)
+- [空字符](https://en.wikipedia.org/wiki/Null_character)
+- [RGBA 颜色空间](https://en.wikipedia.org/wiki/RGBA_color_space)
+- [颜色选择器](https://www.webpagefx.com/web-design/color-picker/)
+- [TextDraw 颜色](../scripting/functions/TextDrawColor)
+- [游戏文本样式](../scripting/resources/gametextstyles)
+- [颜色列表](../scripting/resources/colorslist)
+- [转义序列](https://en.wikipedia.org/wiki/Escape_sequence)
 - [r/programmerhumor](https://www.reddit.com/r/ProgrammerHumor/)
-- [Newline](https://en.wikipedia.org/wiki/Newline)
-- [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)
-- [Bobby table](https://bobby-tables.com/about)
+- [换行符](https://en.wikipedia.org/wiki/Newline)
+- [未定义行为](https://en.wikipedia.org/wiki/Undefined_behavior)
+- [Bobby 表](https://bobby-tables.com/about)
 - [strfind](../scripting/functions/strfind)
 - [format](../scripting/functions/format)
-- [Bitwise logical shift](https://en.wikipedia.org/wiki/Logical_shift)
+- [按位逻辑移位](https://en.wikipedia.org/wiki/Logical_shift)
