@@ -1,5 +1,5 @@
 ---
-Tytuł: "Komendy klienta"
+title: "Komendy klienta"
 Opis: Lista wszystkich komend klienta.
 ---
 
