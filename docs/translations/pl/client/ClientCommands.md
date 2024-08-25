@@ -1,6 +1,6 @@
 ---
 title: "Komendy klienta"
-Opis: Lista wszystkich komend klienta.
+description: Lista wszystkich komend klienta.
 ---
 
 ## Komendy
