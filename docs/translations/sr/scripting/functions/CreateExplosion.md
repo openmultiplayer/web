@@ -1,49 +1,53 @@
 ---
 title: CreateExplosion
-description: Kreira eksploziju na odredjenim koordinatama.
+description: Креира се експлозија на одређеним координатама.
 tags: []
 ---
 
-## Opis
+## Опис
 
-Kreira eksploziju na odredjenim koordinatama.
+Креира се експлозија на одређеним координатама.
 
-| Ime          | Opis                    |
-| ------------ | ----------------------- |
-| Float:X      | X koordinata eksplozije |
-| Float:Y      | Y koordinata eksplozije |
-| Float:Z      | Z koordinata eksplozije |
-| type         | Tip eksplozije          |
-| Float:radius | Velicina eksplozije     |
+| Име          | Опис                                          |
+| ------------ | --------------------------------------------- |
+| Float:X      | X координата експлозије                       |
+| Float:Y      | Y координата експлозије                       |
+| Float:Z      | Z координата експлозије                       |
+| type         | [тип](../resources/explosionlist) експлозије. |
+| Float:radius | Величина експлозије                           |
 
-## Uzvracanja
+## Враћа
 
-Ova funkcija uvek vraca 1, iako su tip eksplozije ili velicina nepravilni.
+Ова функција увек враћа 1, иако су тип експлозије или вечичина неправилни.
 
 ## Primeri
 
 ```c
 public OnPlayerEnterCheckpoint(playerid)
 {
-    // Uzima poziciju igraca
+    // Узима позицију играча
     new Float:x, Float:y, Float:z;
     GetPlayerPos(playerid, x, y, z);
 
-    // Kreira eksploziju na koordinatama igraca
+    // Креира експлозију на координатама играча
     CreateExplosion(x, y, z, 12, 10.0);
 
     return 1;
 }
 ```
 
-## Beleske
+## Белешке
 
 :::tip
 
-Postoji limit koji ogranicava koliko igrac moze videti eksplozija odjednom. To je 10.
+Постоји лимит који ограничава колико играч може видети експлозија одједном. То је 10.
 
 :::
 
-## Srodne Funkcije
+## Сличне функције
 
-- [CreateExplosionForPlayer](CreateExplosionForPlayer.md): Kreira eksploziju koja je vidljiva samo jednom igracu.
+- [CreateExplosionForPlayer](CreateExplosionForPlayer): Креира експлозију која је видљива само једном играчу.
+
+## Види такође
+
+- [Explosion Types](../resources/explosionlist): Листа свих типова експлозија.

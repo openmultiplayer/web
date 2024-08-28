@@ -1,27 +1,27 @@
 ---
 title: CreateExplosionForPlayer
-description: Kreira eksploziju koja je vidljiva samo jednom igracu.
+description: Креира експлозију која је видљива само једном играчу.
 tags: ["player"]
 ---
 
-## Opis
+## Опис
 
 Kreira eksploziju koja je vidljiva samo jednom igracu. Funkcija moze da se koristi kako bi se eksplozija odvojila od ostalih igraca ili prikazala u posebnom virtuelnom svetu.
 
-| Ime          | Opis                                |
-| ------------ | ----------------------------------- |
-| playerid     | ID igraca kome kreiramo eksploziju. |
-| Float:X      | X koordinata eksplozije             |
-| Float:Y      | Y koordinata eksplozije             |
-| Float:Z      | Z koordinata eksplozije             |
-| type         | Tip eksplozije.                     |
-| Float:Radius | Velicina eksplozije.                |
+| Име          | Опис                                          |
+| ------------ | --------------------------------------------- |
+| playerid     | ИД играча коме креирамо експлозију.           |
+| Float:X      | X координата експлозије                       |
+| Float:Y      | Y координата експлозије                       |
+| Float:Z      | Z координата експлозије                       |
+| type         | [тип](../resources/explosionlist) експлозије. |
+| Float:Radius | Величина експлозије                           |
 
-## Uzvracanja
+## Враћа
 
-Ova funkcija uvek vraca 1, iako je funkcija neuspesno izvrsena (igrac ne postoji, nepravilna velicina, ili nepostojuci tip eksplozije).
+Ова функција увек враћа 1, иако је функција неуспешно извршења (играч не постоји, неправилна величина, или непостојећи тип експлозије).
 
-## Primeri
+## Примери
 
 ```c
 if (strcmp(cmdtext, "/burnme", true) == 0)
@@ -33,14 +33,18 @@ if (strcmp(cmdtext, "/burnme", true) == 0)
 }
 ```
 
-## Beleske
+## Белешке
 
 :::tip
 
-Postoji limit koji ogranicava koliko igrac moze videti eksplozija odjednom. To je 10.
+Постоји лимит који ограничава колико играч може видети експлозија одједном. То је 10.
 
 :::
 
-## Srodne Funkcije
+## Сличне функције
 
-- [CreateExplosion](CreateExplosion.md): Kreira eksploziju koja je vidljiva svim igracima.
+- [CreateExplosion](CreateExplosion.md): Креира експлозију која је видљива свим играчима.
+
+## Види такође
+
+- [Explosion Types](../resources/explosionlist): Листа свих типова експлозија.
