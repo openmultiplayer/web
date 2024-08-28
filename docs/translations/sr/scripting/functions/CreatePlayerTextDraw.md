@@ -1,69 +1,98 @@
 ---
 title: CreatePlayerTextDraw
-description: Kreira textdraw za samo jednog igraca.
+description: Креира textdraw за само једног играча.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
-## Opis
+## Опис
 
-Kreira textdraw za samo jednog igraca. Ovo moze da se koristi kao izbegavanje limita za globalne textdraw-ove.
+Креира textdraw за само једног играча. Ово може да се користи као избегавање лимита за глобалне textdraw-ове.
 
-| Ime      | Opis                                    |
-| -------- | --------------------------------------- |
-| playerid | ID igraca kome kreiramo player textdraw |
-| Float:x  | X koordinata                            |
-| Float:y  | Y koordinata                            |
-| text[]   | Tekst u textdraw-u                      |
+| Име              | Опис                                            |
+| ---------------- | ---------------------------------------         |
+| playerid         | Ид играча коме креирамо player textdraw         |
+| Float:x          | X координата                                    |
+| Float:y          | Y координата                                    |
+| const text[]     | Текст у textdraw-u                              |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.      |
 
-## Vraca
+## Враћа
 
-ID kreiranog textdraw-a
+ID креираног TextDraw-a
 
-## Primeri
+## Примери
 
 ```c
-// Ova varijabla sluzi da sadrzi ID textdraw-a u sebi
-// tako da mozemo da ga koristimo kroz skriptu
+// Ова варијабла служи да садржи ID textdraw-a у себи
+// тако да можемо да га користимо кроз скрипту
 new PlayerText:welcomeText[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    // Prvo kreiramo textdraw
+    // Прво креирамо textdraw
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my SA-MP server");
 
-    // Zatim ga prikazemo
+    // Затим га прикажемо
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
 }
 ```
 
-## Belekse
+## Белешке
 
 :::tip
 
-Player textdraw-ovi se automatski uniste kada se igrac diskonektuje.
+Player textdraw-ovi се аутоматски униште када се играч дисконектује.
 
 :::
 
 :::warning
 
-Key mapping kodovi ( kao sto su ~k~~VEHICLE_ENTER_EXIT~ ne rade preko 255og karaktera.
+Key mapping кодови ( као што су ~k~~VEHICLE_ENTER_EXIT~ ) не раде преко 255ог карактера.
 
 :::
 
-## Srodne Funkcije
+## Сличне функције
 
-- [PlayerTextDrawDestroy](PlayerTextDrawDestroy.md): Unistava player textdraw.
-- [PlayerTextDrawColor](PlayerTextDrawColor.md): Podesava boju teksta od player textdraw-a.
-- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor.md): Podesava boju boxa od player textdraw-a.
-- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor.md): Podesava pozadinsku boju od player textdraw-a.
-- [PlayerTextDrawAlignment](PlayerTextDrawAlignment.md): Podesava poravnavanje od player textdraw-a.
-- [PlayerTextDrawFont](PlayerTextDrawFont.md): Podesava font od player textdraw-a.
-- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize.md): Podesava velicinu slova teksta od player textdraw-a.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize.md): Podesava velicinu od player textdraw-a ( Za OnPlayerClickPlayerTextdraw ).
-- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline.md): Podesava outline od player textdraw-a.
-- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow.md): Podesava senku od player textdraw-a.
-- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional.md): Podesava razmak teksta od player textdraw-a.
-- [PlayerTextDrawUseBox](PlayerTextDrawUseBox.md): Pali bog od player textdraw-a.
-- [PlayerTextDrawSetString](PlayerTextDrawSetString.md): Podesava tekst od player textdraw-a.
-- [PlayerTextDrawShow](PlayerTextDrawShow.md): Prikaze player textdraw.
-- [PlayerTextDrawHide](PlayerTextDrawHide.md): Sakrije player textdraw.
+- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Уништава player-textdraw.
+- [PlayerTextDrawColor](PlayerTextDrawColor): Поставља боју текста у player-textdraw.
+- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Поставља боју кутије player-textdraw.
+- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Поставља боју позадине player-textdraw.
+- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Поставља поређај текста у player-textdraw.
+- [PlayerTextDrawFont](PlayerTextDrawFont): Поставља фонт текста у player-textdraw.
+- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Поставља величину слова у тексту player-textdraw.
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Поставља величину кутије player-textdraw (или кликабл област за PlayerTextDrawSetSelectable).
+- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Укључује/искључује контурну линију на player-textdraw.
+- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Поставља сенку на player-textdraw.
+- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Скалира размак текста у player-textdraw на пропорционални однос.
+- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Укључује/исключује кутију на player-textdraw.
+- [PlayerTextDrawSetString](PlayerTextDrawSetString): Поставља текст у player-textdraw.
+- [PlayerTextDrawShow](PlayerTextDrawShow): Приказује player-textdraw.
+- [PlayerTextDrawHide](PlayerTextDrawHide): Скрива player-textdraw.
+- [IsPlayerTextDrawVisible](IsPlayerTextDrawVisible): Проверава да ли је player-textdraw приказан играчу.
+- [IsValidPlayerTextDraw](IsValidPlayerTextDraw): Проверава да ли је player-textdraw валидан.
+- [PlayerTextDrawBackgroundColour](PlayerTextDrawBackgroundColour): Подешава боју позадине player-textdraw.
+- [PlayerTextDrawBoxColour](PlayerTextDrawBoxColour): Поставља боју кутије текстуалне ознаке (PlayerTextDrawUseBox).
+- [PlayerTextDrawColour](PlayerTextDrawColour): Поставља боју текста у player-textdraw.
+- [PlayerTextDrawGetAlignment](PlayerTextDrawGetAlignment): Добија поређај текста у player-textdraw.
+- [PlayerTextDrawGetBackgroundColour](PlayerTextDrawGetBackgroundColour): Добија боју позадине player-textdraw.
+- [PlayerTextDrawGetBoxColour](PlayerTextDrawGetBoxColour): Добија боју кутије player-textdraw.
+- [PlayerTextDrawGetColour](PlayerTextDrawGetColour): Добија боју текста у player-textdraw.
+- [PlayerTextDrawGetFont](PlayerTextDrawGetFont): Добија фонт текста у player-textdraw.
+- [PlayerTextDrawGetLetterSize](PlayerTextDrawGetLetterSize): Добија ширину и висину слова.
+- [PlayerTextDrawGetOutline](PlayerTextDrawGetOutline): Добија величину контурне линије на player-textdraw.
+- [PlayerTextDrawGetPos](PlayerTextDrawGetPos): Добија позицију player-textdraw.
+- [PlayerTextDrawGetPreviewModel](PlayerTextDrawGetPreviewModel): Добија прегледни модел 3D player-textdraw.
+- [PlayerTextDrawGetPreviewRot](PlayerTextDrawGetPreviewRot): Добија ротацију и зум 3D модела прегледног player-textdraw.
+- [PlayerTextDrawGetPreviewVehicleColours](PlayerTextDrawGetPreviewVehicleColours): Добија боје возила прегледног 3D player-textdraw.
+- [PlayerTextDrawGetShadow](PlayerTextDrawGetShadow): Добија величину сенке на player-textdraw.
+- [PlayerTextDrawGetString](PlayerTextDrawGetString): Добија текст у player-textdraw.
+- [PlayerTextDrawGetTextSize](PlayerTextDrawGetTextSize): Добија X и Y осе величине текста player-textdraw.
+- [PlayerTextDrawIsBox](PlayerTextDrawIsBox): Проверава да ли је player-textdraw кутија.
+- [PlayerTextDrawIsProportional](PlayerTextDrawIsProportional): Проверава да ли је player-textdraw пропорционалан.
+- [PlayerTextDrawIsSelectable](PlayerTextDrawIsSelectable): Проверава да ли је player-textdraw селектован.
+- [PlayerTextDrawSetPos](PlayerTextDrawSetPos): Поставља позицију player-textdraw.
+- [PlayerTextDrawSetPreviewVehicleColours](PlayerTextDrawSetPreviewVehicleColours): Поставља боју возила у моделу прегледа player-textdraw (ако је возило приказано).
+
+## Слични ресурси
+
+- [TextDraw Sprites](../resources/textdrawsprites)

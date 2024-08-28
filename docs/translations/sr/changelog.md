@@ -5,41 +5,43 @@ description: open.mp развојни напредак и дневник про�
 
 ## **[v1.3.1.2748](https://github.com/openmultiplayer/open.mp/releases/tag/v1.3.1.2748) (Најновији)**
 
-A new version of open.mp server is finally out, there has been a lot of fixes, bunch of performance improvements, and a few additions.
+Нова верзија open.mp сервера је коначно ту, доносећи многе поправке, побољшања у перформанси и неколико додатака.
 
-Our launcher also now received a new update which you can get by simply opening your launcher and updating it through the update dialog. For changelog please read it from here: https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0
+Наш лаунчер је такође добио нови апдејт који можете преузети простим покретањем вашег лаунчера и апдејтовањем њега путем апдејт диалога. 
+Листу промена можете пронаћи овде: https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0
 
-### Server
+### Сервер
 
-**Added:**
+**Додато:**
 
-- Add server logo config variable to [config.json](server/config.json), allowing servers to set a logo to be shown in our launcher and discord status.
-- Add more data validity checks for dialog responses.
-- Add validity checks for menu rows.
-- Add human readable HTTP errors.
-- New definition for general SA-MP API compatibility. (`#define SAMP_COMPAT`)
-- New definition to silence legacy scripting api warnings. (`#define LEGACY_SCRIPTING_API`)
+- Додата је конфигурациона променљива за лого сервера у [config.json](server/config.json), која омогућава серверима да поставе лого који ће бити приказан у нашем лаунчеру и статусу на Discord-у.
+- Додати су додатни проверавачи исправности података за одговоре у дијалозима.
+- Додате су провере исправности за редове у менију.
+- Додате су читљиве HTTP грешке за људе.
+- Нова дефиниција за општу компатибилност SA-MP API-а. (`#define SAMP_COMPAT`)
+- Нова дефиниција за искључивање застарелих упозорења API-a. (`#define LEGACY_SCRIPTING_API`)
 
-**Changes:**
+**Промене:**
 
-- Remove unnecessary OnPlayerConnect and OnPlayerDisconnect when a side script (filterscript) is (un)loaded. Instead introduced [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) and [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer) callbacks.
-- Remove bunch of pawn native deprecation from runtime warnings.
-- Check CDN URL validity.
-- Stop spectator sync being broadcasted.
-- Default values for health and armour.
-- Improve performance for responding to Scores And Pings RPC. (scoreboard)
-- Change invalid weapon slot to `-1`
+- Уклоњене су непотребне функције OnPlayerConnect и OnPlayerDisconnect када се споредна скрипта (филтерскрипта) учитава или искључује. 
+Уместо њих уведени су callback-ови [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) и [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer).
+- Уклоњена су бројна упозорења за застареле Pawn native функције у времену извршавања.
+- Провера исправности CDN URL-ова.
+- Прекинуто је емитовање синхронизације посматрача.
+- Дефинисане су подразумеване вредности за здравље и оклоп.
+- Побољшане су перформансе одговарања за резултате и пинг РПЦ (табела резултата).
+- Промењен неважећи слот оружја на `-1`.
 
-**Fixes:**
+**Поправке:**
 
-- Fix the infamous RakNet crash we've been dealing with since the beginning, affecting a few servers.
-- Fix string not shown in rare cases of using format.
-- Fix the problem with crashdetect not being able to find file name and line number when more than one script was loaded.
-- Fix a lot of RakNet crashes and safer internal memory management.
-- Fix several connection issues and proper internal player pool cleanups.
-- Fix [GetGameText](scripting/functions/GetGameText) function giving incorrect/corrupt values.
-- Fix open.mp windows version not loading when user's windows is set to a language with non-ascii names.
-- Fix callback headings in `qawno/filterscript.new` and `qawno/gamemode.new` files.
+- Поправљен је чувени RakNet пад који смо имали од почетка, а који је утицао на неке сервере.
+- Поправљен је проблем са приказивањем стрингова у ретким случајевима коришћења функције format.
+- Поправљен је проблем са crashdetect-ом који није могао да пронађе име фајла и број линије када је било учитано више од једне скрипте.
+- Поправљено је много RakNet падова и побољшано је безбедније управљање унутрашњом меморијом.
+- Поправљено је неколико проблема са конекцијом и исправно чишћење интерног пула играча.
+- Поправљена је функција [GetGameText](scripting/functions/GetGameText) која је давала нетачне или оштећене вредности.
+- Поправљено је да се open.mp верзија за Windows не учитава када је језик Windows корисника подешен на језик са не-ASCII карактерима.
+- Поправљени су заглавља callback-ова у `qawno/filterscript.new` и `qawno/gamemode.new` фајловима.
 
 <br />
 
@@ -96,7 +98,7 @@ open.mp launcher је кoначно изашао, сада можете пoуз�
 
 **Промене:**
 
-- Return `estimatedTime` у `Move(Player)Object` функцијама.
+- Враћа се `estimatedTime` у `Move(Player)Object` функцијама.
 
 **Поправке:**
 
@@ -117,11 +119,11 @@ Release Candidate 2 (RC2) open.mp сервера.
 
 ### Server
 
-**Nove funkcije:**
+**Нове функције:**
 
 - [GetPlayerMarkerForPlayer](scripting/functions/GetPlayerMarkerForPlayer)
 
-**Zastarjele funkcije:**
+**Застареле функције:**
 
 - GetPlayer3DTextLabelVirtualW
 - SetPlayer3DTextLabelDrawDist
@@ -176,7 +178,7 @@ Release Candidate 2 (RC2) open.mp сервера.
 - GetVehicleTower
 - ChangeVehicleColor
 
-**Popravke:**
+**Поправке:**
 
 - Поправљена потреба за `.so` на Linux legacy плугинима.
 - Attach-ани објекти се исправно приказују другим играчима.
@@ -199,7 +201,7 @@ Release Candidate 2 (RC2) open.mp сервера.
 
 **Додано:**
 
-- Додано `{Float,_}:...` у `AddMenuItem`, `Create3DTextLabel`, `CreateMenu`, `CreatePlayer3DTextLabel`, `CreatePlayerTextDraw`, `GameTextForAll`, `GameTextForPlayer`, `PlayerTextDrawSetString`, `SendClientMessage`, `SendClientMessageToAll`, `SendRconCommand`, `SetMenuColumnHeader`, `SetObjectMaterialText`, `SetPlayerObjectMaterialText`, `SetPVarString`, `SetSVarString`, `ShowPlayerDialog`, `TextDrawCreate`, `TextDrawSetString`, `Update3DTextLabelText`, `UpdatePlayer3DTextLabelText` функцијама. Сада су сви форматирани.
+- Додано `{Float,_}:...` у `AddMenuItem`, `Create3DTextLabel`, `CreateMenu`, `CreatePlayer3DTextLabel`, `CreatePlayerTextDraw`, `GameTextForAll`, `GameTextForPlayer`, `PlayerTextDrawSetString`, `SendClientMessage`, `SendClientMessageToAll`, `SendRconCommand`, `SetMenuColumnHeader`, `SetObjectMaterialText`, `SetPlayerObjectMaterialText`, `SetPVarString`, `SetSVarString`, `ShowPlayerDialog`, `TextDrawCreate`, `TextDrawSetString`, `Update3DTextLabelText`, `UpdatePlayer3DTextLabelText` функцијама. Сада су све форматиране.
 
 **Поправке:**
 
@@ -218,7 +220,7 @@ Release Candidate 2 (RC2) open.mp сервера.
 
 ### Server
 
-**Nove funkcije:**
+**Нове функције:**
 
 - [TogglePlayerWidescreen](scripting/functions/TogglePlayerWidescreen)
 - [IsPlayerWidescreenToggled](scripting/functions/IsPlayerWidescreenToggled)
@@ -457,7 +459,7 @@ Release Candidate 2 (RC2) open.mp сервера.
 - [EnableAllAnimations](scripting/functions/EnableAllAnimations)
 - [GetWeather](scripting/functions/GetWeather)
 
-**Novi callback-ovi:**
+**Нови callback-ови:**
 
 - [OnPlayerEnterGangZone](scripting/callbacks/OnPlayerEnterGangZone)
 - [OnPlayerLeaveGangZone](scripting/callbacks/OnPlayerLeaveGangZone)

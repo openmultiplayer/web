@@ -1,36 +1,51 @@
 ---
 title: Ban
-description: Banuje igraca koji je trenutno na serveru.
-tags: ["administration"]
+description: Банује играча који је тренутно на серверу.
+tags: ["player", "administration"]
 ---
 
-## Opis
+## Опис
 
-Banuje igraca koji je trenutno na serveru. Vise nece moci da udju na server. Ban je IP-baziran i bice sacuvam u samp.ban fajlu u server folderu. BanEx se moze koristiti da bi se dao razlog ban-u. IP ban se moze dodati/obrisati koristeci RCON banip i unbanip komande (SendRconCommand).
+Бануј играча који је тренутно на серверу. Неће моћи да се поново прикључи серверу.
 
-| Ime      | Opis                      |
-| -------- | ------------------------- |
-| playerid | ID igraca koji se banuje. |
+Забрана ће бити заснована на IP адреси и биће сачувана у **bans.json** датотеци у коренској фасцикли сервера.
 
-## Vracanje
+[BanEx](BanEx) се може користити за давање разлога за забрану.
 
-Ova funkcija ne vraca nikakvu specificnu vrednost.
+IP забране могу се додати/уклонити коришћењем RCON команди `banip` и `unbanip` команди ([SendRconCommand](SendRconCommand)).
 
-## Primeri
+| Име      | Опис                         |
+| -------- | ---------------------------- |
+| playerid | ID играћа кога банујемо.     |
+
+## Враћа
+
+Ова функција не враћа никакву специфичну вредност.
+
+## Белешке
+
+:::warning
+
+Свака акција одмах пре Ban(), као што је слање порука са функцијом [SendClientMessage](SendClientMessage), неће доћи до играча. Мора се поставити тајмер да би се направио временски размак бан-у.
+
+:::
+
+## Примери
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/banme", true) == 0)
     {
-        // Banuje igraca koji ukuca ovu komandu
+        // Банује играћа који укуца ову команду
         Ban(playerid);
         return 1;
     }
 }
-// Da bi prikazali poruku ( razlog ) igracu pre nego sto ga izbaci sa servera
-// moramo koristiti timer da bi napravili razmak. Ovaj razmak mora biti samo par milisekundi,
-// ali ovaj primer koristi punu sekundu cisto da bi bili sigurni.
+
+// Да би приказали поруку ( разлог ) играчу пре него сто га избаци са сервера
+// морамо користити тајмер да би направили размак. Овај размак мора бити само пар милисекунди,
+// али овај пример користи пуну секунду чисто да би били сигурни.
 
 forward DelayedBan(playerid);
 public DelayedBan(playerid)
@@ -42,12 +57,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/banme", true) == 0)
     {
-        // Banuje igraca koji ukuca komandu
+        // Банује играца који укуца команду
 
-        // Prvo posaljemo poruku
+        // Прво пошаљемо поруку
         SendClientMessage(playerid, 0xFF0000FF, "Banovan si sa servera!");
 
-        // Banuje ih sekundu kasnije da bi prikazalo poruku iznad
+        // Банује их секунду касније да би порука изнад била приказана
         SetTimerEx("DelayedBan", 1000, false, "d", playerid);
         return 1;
     }
@@ -55,15 +70,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Beleske
+## Сличне функције
 
-:::warning
-
-Svaka akcija odmah pre Ban(), kao sto je slanje poruka sa SendClientMessage, nece doci do igraca. Mora se postaviti timer da bi se napravio vremenski razmak ban-a.
-
-:::
-
-## Srodne Funkcije
-
-- [BanEx](BanEx): Banuje igraca sa razlogom.
-- [Kick](Kick): Izbaci igraca sa servera(KICK).
+- [BanEx](BanEx): Банује играча са разлогом.
+- [Kick](Kick): Избаци играча са сервера.
+- [BlockIpAddress](BlockIpAddress): Блокирај IP адресу да се повезује на сервер на одређени период.
+- [UnBlockIpAddress](UnBlockIpAddress): Омогући приступ IP адреси која је претходно била блокирана.

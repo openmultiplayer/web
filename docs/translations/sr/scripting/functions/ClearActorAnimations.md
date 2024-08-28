@@ -1,24 +1,26 @@
 ---
 title: ClearActorAnimations
-description: Prekine sve animacije aktivne na actoru.
-tags: []
+description: Прекине све анимације активне на актору.
+tags: ["actor"]
 ---
 
-## Opis
+<VersionWarn version='SA-MP 0.3.7' />
 
-Prekine sve animacije aktivne na actoru.
+## Опис
 
-| Ime     | Opis                                                           |
+Прекине све анимације активне на актору.
+
+| Име     | Опис                                                           |
 | ------- | -------------------------------------------------------------- |
-| actorid | ID actora (vracen od CreateActor) za koga prekidamo animaciju. |
+| actorid | Ид актора (враћен од [CreateActor](CreateActor)) за кога прекидамо анимацију. |
 
-## Vraca
+## Враћа
 
-1: Funkcija je uspesno izvrsena.
+**true**: Функција је успешно извршена
 
-0: Funkcija nije uspesno izvrsena. Dati actor ne postoji.
+**false**: Функција није успешно извршења. Дати актор не постоји.
 
-## Primeri
+## Примери
 
 ```c
 new gMyActor;
@@ -28,13 +30,13 @@ public OnGameModeInit()
     gMyActor = CreateActor(...);
 }
 
-// Somewhere else
+// Негде другде
 ApplyActorAnimation(gMyActor, ...);
 
-// Somewhere else
+// Негде другде
 ClearActorAnimations(gMyActor);
 ```
 
-## Srodne Funkcije
+## Сличне функције
 
-- [ApplyActorAnimation](ApplyActorAnimation.md): Postavlja animaciju na actora.
+- [ApplyActorAnimation](ApplyActorAnimation.md): Поставља анимацију актору.

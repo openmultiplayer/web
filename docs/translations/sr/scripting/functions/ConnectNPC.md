@@ -1,23 +1,23 @@
 ---
 title: ConnectNPC
-description: Poveze NPC-a na server.
+description: Повезује NPC-a на сервер.
 tags: ["npc"]
 ---
 
-## Opis
+## Опис
 
-Poveze NPC-a na server.
+Повезује NPC-a на сервер.
 
-| Ime      | Opis                                                                          |
-| -------- | ----------------------------------------------------------------------------- |
-| name[]   | Ime sa kojim se NPC poveze. Mora da prati ista pravila kao i normalni igraci. |
-| script[] | NPC ime u skripti koje se nalazi u npcmodes folderu (bez .amx nastavka).      |
+| Име            | Опис                                                                          |
+| -------------- | ----------------------------------------------------------------------------- |
+| const name[]   | Име са којим се NPC повеже. Мора да прати иста правила као и нормални играчи. |
+| const script[] | NPC име у скрипти које се налази у npcmodes фолдеру (без .amx наставка).      |
 
-## Vraca
+## Враћа
 
-Ova funkcija uvek vraca 1.
+Ова функција увек враћа 1.
 
-## Primeri
+## Примери
 
 ```c
 public OnGameModeInit()
@@ -27,15 +27,18 @@ public OnGameModeInit()
 }
 ```
 
-## Beleske
+## Белешке
 
 :::tip
 
-NPC nema nametag. Ovo moze da se napravi preko Attach3DTextLabelToPlayer.
+NPC нема nametag. Ово може да се направи преко Attach3DTextLabelToPlayer.
 
 :::
 
-## Srodne Funkcije
+## Сличне функције
 
-- [IsPlayerNPC](IsPlayerNPC.md): Proverava da li je igrac NPC ili pravi igrac.
-- [OnPlayerConnect](../callbacks/OnPlayerConnect.md): Poziva se kada se igrac poveze na server.
+- [IsPlayerNPC](IsPlayerNPC): Проверава да ли је играч заправо играч или NPC.
+
+## Слични callback-ови
+
+- [OnPlayerConnect](../callbacks/OnPlayerConnect): Позива се кад се играч повеже на сервер.
