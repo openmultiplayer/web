@@ -23,4 +23,4 @@ public OnNPCExitVehicle()
 
 Los siguientes callbacks pueden ser útiles, ya que estan relacionados con OnNPCExitVehicle de alguna forma u otra.
 
-- [OnNPCEnterVehicle](OnNPCEnterVehicle): Este callback es llamado cuando un NPC entra a un vehícuclo.
+- [OnNPCEnterVehicle](OnNPCEnterVehicle): Este callback es llamado cuando un NPC entra a un vehículo.
