@@ -44,7 +44,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 :::
 
-## Сличне функције
+## Повезане функције
 
 - [CreateExplosionForPlayer](CreateExplosionForPlayer): Креира експлозију која је видљива само једном играчу.
 

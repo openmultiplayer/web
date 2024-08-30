@@ -1,14 +1,14 @@
 ---
 title: SetPlayerCheckpoint
-description: Postavlja checkpoint (crveni krug) za igraca.
+description: Поставља checkpoint (црвени круг) за играча.
 tags: ["player", "checkpoint"]
 ---
 
-## Description
+## Опис
 
-Postavlja checkpoint (crveni krug) za igraca. Takodje pokazuje crvenu kocku na mapi. Kada igrac udje u checkpoint, OnPlayerEnterCheckpoint se poziva i izvrsava se ono sto je u njemu.
+Поставља checkpoint (црвени круг) за играча. Такође приказује црвену коцку на мапи. Када играч уђе у checkpoint, OnPlayerEnterCheckpoint се позива и извршава оно што је у њему.
 
-| Name       | Description                            |
+| ИМе        | Опис                                   |
 | ---------- | -------------------------------------- |
 | playerid   | ID igraca kome se postavlja checkpoint |
 | Float:x    | X koordinata checkpointa.              |
@@ -16,17 +16,17 @@ Postavlja checkpoint (crveni krug) za igraca. Takodje pokazuje crvenu kocku na m
 | Float:z    | Z koordinata checkpointa.              |
 | Float:size | Velicina checkpointa                   |
 
-## Returns
+## Враћа
 
-1: Funkcija je uspesno izvrsena.
+**true** - Функција је успешно извршена.
 
-0: Funkcija nije uspesno izvrsena. To znaci da navedeni igrac ne postoji.
+**false** - Функција није успешно извршена. То значи да наведени играч не постоји.
 
-## Examples
+## Пример
 
 ```c
-// U ovom primeru se checkpoint postavlja kada se igrac spawna
-// Kada udju u checkpoint dobijaju 1000$ i checkpoint se gasi
+// У овом примеру се checkpoint поставља када се играч спаун-ује
+// Када уђу у checkpoint, добијају 1000$ и checkpoint се гаси
 
 new bool: gOnCheck[MAX_PLAYERS];
 
@@ -39,7 +39,7 @@ public OnPlayerSpawn(playerid)
 
 public OnPlayerEnterCheckpoint(playerid)
 {
-    if (gOnCheck[playerid]) // Ako je uslov ispunjen
+    if (gOnCheck[playerid]) // Ако је услов испуњен
     {
         GivePlayerMoney(playerid, 1000);
         DisablePlayerCheckpoint(playerid);
@@ -49,22 +49,28 @@ public OnPlayerEnterCheckpoint(playerid)
 }
 ```
 
-## Notes
+## Белешке
 
 :::warning
 
-Checkpointi su asinhroni, sto znaci da samo jedan moze da se prikaze u isto vreme. Da bi se checkpoint 'streamovao' (samo se prikaze kada je igrac dovoljno blizu), koristiti checkpoint streamer.
+Checkpoint-ови су асинхрони, што значи да се само један може приказати у исто време. Да бисте „стримовали“ checkpoint-ове (да их приказујете само када су играчи довољно близу), користите стример за checkpoint-ове.
 
 :::
 
-## Related Functions
 
-- [DisablePlayerCheckpoint](DisablePlayerCheckpoint.md): Gasi trenutno aktivni checkpoint igracu.
-- [IsPlayerInCheckpoint](IsPlayerInCheckpoint.md): Proverava da li je igrac u checkpointu.
-- [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint.md): Kreiraj Race Checkpoint za igraca.
-- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint.md): Gasi trenutno aktivni race checkpoint igracu.
-- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint.md): Proverava da li je igrac u race chekcpointu.
-- [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint.md): Poziva se kada igrac udje u checkpoint.
-- [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint.md): Poziva se kada igrac izadje iz checkpointa.
-- [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint.md): Poziva se kada igrac udje u race checkpoint.
-- [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint.md): Poziva se kada igrac izadje iz race checkpointa.
+## Повезане функције
+
+- [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Искључи тренутни checkpoint играча.
+- [GetPlayerCheckpoint](GetPlayerCheckpoint): Добави локацију тренутног checkpoint-а.
+- [IsPlayerInCheckpoint](IsPlayerInCheckpoint): Провери да ли је играч у checkpoint-у.
+- [IsPlayerCheckpointActive](IsPlayerCheckpointActive): Провери да ли играч тренутно има видљив checkpoint.
+- [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint): Креирај тркачки checkpoint за играча.
+- [DisablePlayerRaceCheckpoint](DisablePlayerRaceCheckpoint): Искључи тренутни тркачки checkpoint играча.
+- [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): Провери да ли је играч у рацинг checkpoint-у.
+
+## Слични callback-ови
+
+- [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): Позива се када играч уђе у checkpoint.
+- [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): Позива се када играч напусти checkpoint.
+- [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint): Позива се када играч уђе у тркачки checkpoint.
+- [OnPlayerLeaveRaceCheckpoint](../callbacks/OnPlayerLeaveRaceCheckpoint): Позива се када играч напусти тркачки checkpoint.

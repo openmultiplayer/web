@@ -4,7 +4,7 @@ description: Provera da li je igrac pravi igrac ili NPC.
 tags: ["player", "npc"]
 ---
 
-## Description
+## Опис
 
 Provera da li je igrac pravi igrac ili NPC.
 
@@ -12,13 +12,13 @@ Provera da li je igrac pravi igrac ili NPC.
 | -------- | --------------------------- |
 | playerid | ID igraca koji se proverava |
 
-## Returns
+## Враћа
 
-1: Igrac je NPC.
+**true**: Играч је NPC.
 
-0: Igrac nije NPC.
+**false**: Играч није NPC.
 
-## Examples
+## Примери
 
 ```c
 public OnPlayerConnect(playerid)
@@ -29,11 +29,11 @@ public OnPlayerConnect(playerid)
         return 1;
     }
 
-    // The other code here won't be executed unless its a player
+    // Даљи код неће бити извршен уколико 'playerid' није играч
 }
 ```
 
-## Related Functions
+## Повезане функције
 
-- [ConnectNPC](ConnectNPC.md): Konektuje NPC-a.
-- [IsPlayerAdmin](IsPlayerAdmin.md): Proverava da li je igrac povezan na RCON.
+- [ConnectNPC](ConnectNPC.md): Повезује NPC-a.
+- [IsPlayerAdmin](IsPlayerAdmin.md): Проверава да ли је играч повезан на RCON.

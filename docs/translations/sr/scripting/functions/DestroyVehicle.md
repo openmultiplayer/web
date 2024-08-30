@@ -1,24 +1,24 @@
 ---
 title: DestroyVehicle
-description: Unistava vozilo.
+description: Уништава возило.
 tags: ["vehicle"]
 ---
 
-## Description
+## Опис
 
-Unistava vozilo. Vozilo odmah nestaje.
+Уништава возило. Возило одмах нестаје.
 
 | Name      | Description                 |
 | --------- | --------------------------- |
-| vehicleid | ID vozila koje se unistava. |
+| vehicleid | ID возила које се уништава. |
 
-## Returns
+## Враћа
 
-1: Funkcija je uspesno izvrsena.
+**true** - Функција је успешно извршена.
 
-0: Funkcija nije uspesno izvrsena. Vozilo ne postoji.
+**false** - Функција није успешно извршена. Возило не постоји.
 
-## Examples
+## Примери
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -34,8 +34,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Related Functions
+## Повезане функције
 
-- [CreateVehicle](CreateVehicle.md): Kreiraj vozilo.
-- [RemovePlayerFromVehicle](RemovePlayerFromVehicle.md): Izbaci igraca iz vozila.
-- [SetVehicleToRespawn](SetVehicleToRespawn.md): Respawn vozila.
+- [CreateVehicle](CreateVehicle.md): Креира возило.
+- [RemovePlayerFromVehicle](RemovePlayerFromVehicle.md): Избаци играча из возила.
+- [SetVehicleToRespawn](SetVehicleToRespawn.md): Respawnuje возило.

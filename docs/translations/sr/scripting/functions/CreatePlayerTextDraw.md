@@ -51,7 +51,7 @@ Key mapping кодови ( као што су ~k~~VEHICLE_ENTER_EXIT~ ) не р�
 
 :::
 
-## Сличне функције
+## Повезане функције
 
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Уништава player-textdraw.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Поставља боју текста у player-textdraw.

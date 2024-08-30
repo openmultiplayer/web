@@ -1,51 +1,50 @@
 ---
 title: SetPlayerArmour
-description: Podesava pancir igraca.
+description: Подешава панцир играча.
 tags: ["player"]
 ---
 
-## Description
+## Опис
 
-Podesava pancir igraca.
+Подешава панцир играча.
 
-| Name         | Description                                                                                                                          |
+| Име         | Опис                                                                                                                          |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| playerid     | ID igraca kome se podesava pancir                                                                                                    |
-| Float:armour | Kolicina pancira koja se daje, u procentima(float). Vrednosti vece od 100 mogu da se postave, ali se nece prikazivati u HUD-u igraca |
+| playerid     | ID играча коме се подешава панцир                                                                                                     |
+| Float:armour | Количина панцира која се даје, у процентима (float). Вредности веће од 100 могу да се подесе, али се неће приказивати у HUD-у играча. |
 
-## Returns
+## Враћа
 
-1: Funkcija je uspesno izvrsena.
+**1** - Функција је успешно извршена.
 
-0: Funkcija nije uspesno izvrsena. To znaci da ID igraca koji smo uneli ne postoji.
+**0** - : Функција није успешно извршена. То значи да ID играча који смо унели не постоји.
 
-## Examples
+## Примери
 
 ```c
 public OnPlayerSpawn(playerid)
 {
-    // Daje igracu maksimalan pancir (100%) na spawnu
+    // даје играчу максималан панцир (100%) на спавну.
     SetPlayerArmour(playerid, 100.0);
     return 1;
 }
 ```
 
-## Notes
+## Белешке
 
 :::tip
 
-Ime funkcije je armour, ne armor (Americki).
+Име функције је armour, не armor (Амерички).
 
 :::
 
 :::warning
 
-Pancir se dobija zaokruzen na integer: postavi 50.15, ali dobijes 50.0
-
+Панцир се добија заокрушено на integer: постави 50.15, али добијеш 50.0
 :::
 
-## Related Functions
+## Повезане функције
 
-- [GetPlayerArmour](GetPlayerArmour.md): Dobija se vrednost pancira koju igrac trenutno ima.
-- [SetPlayerHealth](SetPlayerHealth.md): Podesava health igracu.
-- [GetPlayerHealth](GetPlayerHealth.md): Dobija se vrednost health-a koju igrac trenutno ima.
+- [GetPlayerArmour](GetPlayerArmour.md): Добија се вредност панцира коју играч тренутно има.
+- [SetPlayerHealth](SetPlayerHealth.md): Подешава животне поене играча.
+- [GetPlayerHealth](GetPlayerHealth.md): Добија се вредност животних поена које играч тренутно има.
