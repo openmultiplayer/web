@@ -6,7 +6,7 @@ tags: ["npc"]
 
 ## Descripción
 
-Este callback es llamado cuando un script de un NPC finaliza.
+Este callback es llamado cuando un script de un NPC finaliza (o deja de estar cargado).
 
 
 ## Ejemplos
