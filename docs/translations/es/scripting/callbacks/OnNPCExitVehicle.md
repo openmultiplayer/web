@@ -1,6 +1,6 @@
 ---
 título: OnNPCExitVehicle
-descripción: Este callback es llamado cuando un NPC deja (o sale de) un vehículo.
+description: Este callback es llamado cuando un NPC deja (o sale de) un vehículo.
 tags: ["npc"]
 ---
 
