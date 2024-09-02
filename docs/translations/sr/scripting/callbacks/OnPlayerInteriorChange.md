@@ -1,12 +1,12 @@
 ---
 title: OnPlayerInteriorChange
-description: This callback is called when a player changes interior.
+description: Ова повратна функција се позива када играч промени интеријер.
 tags: ["player"]
 ---
 
 ## Опис
 
-Ова функција се позива када играч промени интеријер. Може се активирати помоћу [SetPlayerInterior](../functions/SetPlayerInterior) или када играч уђе/изађе из зграде.
+Ова повратна функција се позива када играч промени интеријер. Може се активирати помоћу [SetPlayerInterior](../functions/SetPlayerInterior) или када играч уђе/изађе из зграде.
 
 | Име           | Опис                                   |
 | ------------- | -------------------------------------- |
