@@ -26,6 +26,10 @@ import VersionWarnBS from "./translations/bs/version-warning";
 import LowercaseNoteBS from "./translations/bs/lowercase-note";
 import TipNPCCallbacksBS from "./translations/bs/npc-callbacks-tip";
 
+import VersionWarnSR from "./translations/sr/version-warning";
+import LowercaseNoteSR from "./translations/sr/lowercase-note";
+import TipNPCCallbacksSR from "./translations/sr/npc-callbacks-tip";
+
 import Image from "./Image";
 
 const templates = {
@@ -51,6 +55,9 @@ const templates = {
   VersionWarnBS,
   LowercaseNoteBS,
   TipNPCCallbacksBS,
+  VersionWarnSR,
+  LowercaseNoteSR,
+  TipNPCCallbacksSR,
 };
 
 export default templates;
