@@ -70,7 +70,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Сличне функције
+## Повезане функције
 
 - [BanEx](BanEx): Банује играча са разлогом.
 - [Kick](Kick): Избаци играча са сервера.

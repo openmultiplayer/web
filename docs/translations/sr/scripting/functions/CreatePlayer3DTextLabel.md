@@ -64,7 +64,7 @@ DrawDistance изгледа као да је мањи у spectate моду.
 
 :::
 
-## Сличне функције
+## Повезане функције
 
 - [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Уништава 3D текстуалну ознаку играча.
 - [IsValidPlayer3DTextLabel](IsValidPlayer3DTextLabel): Проверава да ли је 3D текстуална ознака играча валидна.

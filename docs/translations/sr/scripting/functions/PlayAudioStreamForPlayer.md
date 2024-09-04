@@ -1,30 +1,31 @@
 ---
 title: PlayAudioStreamForPlayer
-description: Pustanje 'audio stream-a' igracu.
+description: Пушта аудио стрим играчу.
 tags: ["player"]
 ---
 
 ## Description
 
-Pusta audio stream igracu. Audio fajlovi takodje rade (.mp3).
+Пушта аудио стрим играчу. Аудио фајлови такође раде (npr. .mp3).
 
-| Name           | Description                                                                                                   |
-| -------------- | ------------------------------------------------------------------------------------------------------------- |
-| playerid       | ID igraca kome se pusta audio                                                                                 |
-| url[]          | Link koji se pusta. Pravilni formati su mp3 i ogg/vorbis. Link ka .pls fajlu (playlista) ce pustiti playlistu |
-| Float:PosX     | Pozicija X na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                 |
-| Float:PosY     | Pozicija Y na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                 |
-| Float:PosZ     | Pozicija Z na kojoj se pusta audio. Default 0.0. Nema efekta osim ako je usepos podesen na 1.                 |
-| Float:distance | Razdaljina do koje se cuje audio. Nema efekta osim ako je usepos podesen na 1.                                |
-| usepos         | Koristi postavljenu poziciju i distancu. Default neaktivan (0).                                               |
 
-## Returns
+| Name           | Description                                                                                                    |
+| -------------- | -------------------------------------------------------------------------------------------------------------- |
+| playerid       | ID играча коме се пушта аудио.                                                                                 |
+| const url[]    | Линк који се пушта. Правилни формати су mp3 и ogg/vorbis. Линк ка .pls фајлу (плејлиста) ће пустити плејлисту. |
+| Float:PosX     | Позиција X на којој се пушта аудио. 'Default' 0.0. Нема ефекта осим ако је usepos подешен на 1.                |
+| Float:PosY     | Позиција Y на којој се пушта аудио. 'Default' 0.0. Нема ефекта осим ако је usepos подешен на 1.                |
+| Float:PosZ     | Позиција Z на којој се пушта аудио. 'Default' 0.0. Нема ефекта осим ако је usepos подешен на 1.                |
+| Float:distance | Раздаљина до које се чује аудио. Нема ефекта осим ако је usepos подешен на 1.                                  |
+| bool:usepos    | Користи постављену позицију и дистанцу. Подразумевано је неактиван (0).                                        |
 
-1: Funkcija je uspesno izvrsena.
+## Враћа
 
-0: Funkcija nije uspela da se izvrsi. Zadati igrac ne postoji.
+**true** - Функција успешно извршена.
 
-## Examples
+**false** - Функциај није успешно извршена. Дати играч не постоји.
+
+## Примери
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -45,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-## Related Functions
+## Сличне фунције
 
-- [StopAudioStreamForPlayer](StopAudioStreamForPlayer.md): Zaustavlja audio stream za igraca.
-- [PlayerPlaySound](PlayerPlaySound.md): Pustanje zvuka igracu.
+- [StopAudioStreamForPlayer](StopAudioStreamForPlayer.md): Зауставља аудио стрим за играча.
+- [PlayerPlaySound](PlayerPlaySound.md): Пушта звук играчу.

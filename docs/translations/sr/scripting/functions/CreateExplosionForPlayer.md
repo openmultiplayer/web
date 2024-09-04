@@ -41,7 +41,7 @@ if (strcmp(cmdtext, "/burnme", true) == 0)
 
 :::
 
-## Сличне функције
+## Повезане функције
 
 - [CreateExplosion](CreateExplosion.md): Креира експлозију која је видљива свим играчима.
 

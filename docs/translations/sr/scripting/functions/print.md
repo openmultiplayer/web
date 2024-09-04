@@ -1,27 +1,26 @@
 ---
 title: print
-description: Stampa string u konzolu servera (ne u in-game chatu) i logovima (server_log.
-tags: []
+description: Штампа стринг у конзолу сервера (не у игри чету) и у логове (log.txt).
+tags: ["console"]
 ---
 
 <LowercaseNote />
 
-## Opis
+## Опис
 
-Stampa string u konzolu servera (ne u in-game chatu) i logovima (server_log)
+Штампа стринг у конзолу сервера (не у игри чету) и у логове (log.txt).
 
-| Name                  | Description           |
-| --------------------- | --------------------- |
-| string[]              | String koji se stampa |
-| foreground (optional) | Boja teksta           |
-| background (optional) | Pozadinska boja       |
-| highlight (optional)  | Highlign boja         |
+| Име                   | Опис                          |
+| --------------------- | ----------------------------- |
+| const string[]        | Стринг који се штампа.        |
+<!-- | foreground (optional) | The foreground colour to use. |
+| background (optional) | The background colour to use. | -->
 
-## Returns
+## Враћа
 
-Ova funkcija ne vraca neke specificne vrednosti.
+Ова функција не враћа неке специфичне вредности.
 
-:::tip
+<!--:::tip
 
 Kada je boja ostavljena na -1, koriste ste default boje konzole servera.
 
@@ -37,9 +36,9 @@ Na vecini sistema se mogu koristiti sledeci kodovi za boje: crna (0), crvena (1)
 
 Vecina sistema takodje podrzava svetlije/tamnije boje od ovih boja. Za highlight teksta se mogu koristiti sledece: regular (0) i svetla/tamna (1).
 
-:::
+:::-->
 
-## Examples
+## Пример
 
 ```c
 public OnGameModeInit( )
@@ -49,6 +48,6 @@ public OnGameModeInit( )
 }
 ```
 
-## Related Functions
+## Повезане функције.
 
-- [printf](printf.md): Stampa formatiranu poruku u server log i konzolu.
+- [printf](printf.md): Штампа форматирану поруку у лог сервера и конзолу.
