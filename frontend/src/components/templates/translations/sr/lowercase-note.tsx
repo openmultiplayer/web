@@ -1,9 +1,9 @@
 import Admonition from "../../../Admonition";
 
-export default function NoteLowercase({ name = "function" }) {
+export default function NoteLowercase({ name = "функција" }) {
   return (
     <Admonition type="warning">
-      <p>Ово {name} почиње малим словом.</p>
+      <p>Ова {name} почиње малим словом.</p>
     </Admonition>
   );
 }
