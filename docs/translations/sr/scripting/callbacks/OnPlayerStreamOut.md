@@ -31,7 +31,7 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## Белешке
 
-<TipNPCCallbacks />
+<TipNPCCallbacksSR />
 
 ## Повезане повратне функције
 

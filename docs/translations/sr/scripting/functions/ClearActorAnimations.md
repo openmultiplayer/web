@@ -4,7 +4,7 @@ description: Прекине све анимације активне на акт
 tags: ["actor"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7' />
+<VersionWarnSR version='SA-MP 0.3.7' />
 
 ## Опис
 

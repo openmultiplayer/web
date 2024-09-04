@@ -4,7 +4,7 @@ description: Ова повратна функција се позива када
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnSR name='повратна функција' version='SA-MP 0.3.7' />
 
 ## Опис
 

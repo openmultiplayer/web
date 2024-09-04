@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 ## Белешке
 
-<TipNPCCallbacks />
+<TipNPCCallbacksSR />
 
 ## Повезане повратне функције
 

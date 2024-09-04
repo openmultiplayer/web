@@ -4,7 +4,7 @@ description: Овај повратни позив се позива када и�
 tags: ["player", "pickup", "playerpickup"]
 ---
 
-<VersionWarn name='callback' version='omp v1.1.0.2612' />
+<VersionWarnSR name='повратна функција' version='omp v1.1.0.2612' />
 
 ## Опис
 

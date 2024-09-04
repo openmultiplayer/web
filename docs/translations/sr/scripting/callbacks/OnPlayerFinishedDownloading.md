@@ -4,7 +4,7 @@ description: Ова  повратна функција се позива кад�
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarnSR name='повратна функција' version='SA-MP 0.3.DL R1' />
 
 ## Опис
 

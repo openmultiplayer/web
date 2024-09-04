@@ -31,7 +31,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Белешке
 
-<TipNPCCallbacks />
+<TipNPCCallbacksSR />
 
 ## Related Callbacks
 - [OnVehicleStreamOut](OnVehicleStreamOut): Ова повратна функција се позива када се возило стримује изван домета играча. 

@@ -28,7 +28,7 @@ public OnPlayerLeaveCheckpoint(playerid)
 
 ## Белешке
 
-<TipNPCCallbacks />
+<TipNPCCallbacksSR />
 
 ## Повезане повратне функције
 

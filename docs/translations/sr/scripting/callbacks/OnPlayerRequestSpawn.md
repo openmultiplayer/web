@@ -32,7 +32,7 @@ public OnPlayerRequestSpawn(playerid)
 
 ## Белешке
 
-<TipNPCCallbacks />
+<TipNPCCallbacksSR />
 
 :::tip
 

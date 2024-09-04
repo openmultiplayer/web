@@ -4,7 +4,7 @@ description: Ова повратна функција се позива за с�
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='omp v1.3.1.2748' />
+<VersionWarnSR name='повратна функција' version='omp v1.3.1.2748' />
 
 ## Опис
 

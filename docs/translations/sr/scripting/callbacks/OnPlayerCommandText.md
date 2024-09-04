@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Белешке
 
-<TipNPCCallbacks />
+<TipNPCCallbacksSR />
 
 ## Повезане повратне функције
 

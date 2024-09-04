@@ -87,7 +87,7 @@ public OnPlayerUpdate(playerid)
 
 ## Белешке
 
-<TipNPCCallbacks />
+<TipNPCCallbacksSR />
 
 :::warning
 

@@ -4,7 +4,7 @@ description: Ова повратна функција је позван када
 tags: ["actor"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnSR name='повратна функција' version='SA-MP 0.3.7' />
 
 ## Опис
 
@@ -33,7 +33,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Белешке
 
-<TipNPCCallbacks />
+<TipNPCCallbacksSR />
 
 ## Повезане функције
 

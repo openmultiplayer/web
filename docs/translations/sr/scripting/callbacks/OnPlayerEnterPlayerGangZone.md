@@ -4,7 +4,7 @@ description: Ова функција се позива када играч уђ�
 tags: ["player", "gangzone"]
 ---
 
-<VersionWarn name='callback' version='omp v1.1.0.2612' />
+<VersionWarnSR name='повратна функција' version='omp v1.1.0.2612' />
 
 ## Опис
 
