@@ -2,7 +2,7 @@ import Admonition from "../../../Admonition";
 
 export default function WarningVersion({
   version,
-  name = "function",
+  name = "функција",
 }: {
   version: string;
   name: string;
@@ -10,7 +10,7 @@ export default function WarningVersion({
   return (
     <Admonition type="warning">
       <p>
-        Ово {name} је додано у {version} и неће радити у ранијим
+        Ова {name} је додана у {version} и неће радити у ранијим
         верзијама!
       </p>
     </Admonition>
