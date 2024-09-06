@@ -16,7 +16,7 @@ This callback is called when a player previews a vehicle paintjob inside a mod s
 
 ## Returns
 
-It is always called first in gamemode so returning 0 there blocks other filterscripts from seeing it.
+It is always called first in gamemode so returning 0 there blocks other filterscripts from processing it.
 
 ## Examples
 

@@ -6,16 +6,16 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player sends a chat message.
+This callback is called when a player sends a message in chat.
 
 | Name     | Description                              |
 | -------- | ---------------------------------------- |
-| playerid | The ID of the player who typed the text. |
-| text[]   | The text the player typed.               |
+| playerid | The ID of the player who sent the message. |
+| text[]   | The content of the message that the player sent. |
 
 ## Returns
 
-It is always called first in filterscripts so returning 0 there blocks other scripts from seeing it.
+It is always called first in filterscripts so returning 0 on it blocks other scripts from processing it.
 
 ## Examples
 
@@ -25,13 +25,22 @@ public OnPlayerText(playerid, text[])
     new string[144];
     format(string, sizeof (string), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, string);
-    return 0; // ignore the default text and send the custom one
+
+    // Returning 0 ignores the default message format and sends the custom one instead. 
+    // Returning 1 will result in the message being duplicated, as the default message will also be sent.
+    return 0;
 }
 ```
 
 ## Notes
 
 <TipNPCCallbacks />
+
+::: tip 
+
+By default, this callback sends a message containing the content of the message, the player's name, and their ID. Returning 0 will ignore this default behaviour, as demonstrated in the code example above. 
+
+:::
 
 ## Related Callbacks
 

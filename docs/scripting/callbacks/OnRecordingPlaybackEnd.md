@@ -6,14 +6,14 @@ tags: []
 
 ## Description
 
-This callback is called when a recorded file being reproduced with NPC:[StartRecordingPlayback](../functions/StartRecordingPlayback) has reached to its end.
+This callback is called when a .rec file, being played with [StartRecordingPlayback](../functions/StartRecordingPlayback), has reached its end.
 
 ## Examples
 
 ```c
 public OnRecordingPlaybackEnd()
 {
-    StartRecordingPlayback(PLAYER_RECORDING_TYPE_DRIVER, "all_around_lv_bus"); //This would start the recorded file again once it finishes reproducing.
+    StartRecordingPlayback(PLAYER_RECORDING_TYPE_DRIVER, "all_around_lv_bus"); // This will play the recording again once it has reached its end.
 }
 ```
 

@@ -15,7 +15,7 @@ This callback is called when a player enters a command into the client chat wind
 
 ## Returns
 
-It is always called first in filterscripts so returning 1 there blocks other scripts from seeing it.
+It is always called first in filterscripts so returning 1 there blocks other scripts from processing it.
 
 ## Examples
 
