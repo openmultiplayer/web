@@ -51,4 +51,4 @@ public OnGameModeInit()
 - [GetPickupVirtualWorld](GetPickupVirtualWorld): Gets the virtual world ID of a pickup.
 - [ShowPickupForPlayer](ShowPickupForPlayer): Shows a pickup for a specific player.
 - [HidePickupForPlayer](HidePickupForPlayer): Hides a pickup for a specific player.
-
+- [SetPickupForPlayer](SetPickupForPlayer): Adjusts the pickup model, type, and position for a specific player.

@@ -54,4 +54,4 @@ public OnPlayerSpawn(playerid)
 - [SetPickupVirtualWorld](SetPickupVirtualWorld): Sets the virtual world ID of a pickup.
 - [GetPickupVirtualWorld](GetPickupVirtualWorld): Gets the virtual world ID of a pickup.
 - [HidePickupForPlayer](HidePickupForPlayer): Hides a pickup for a specific player.
-
+- [SetPickupForPlayer](SetPickupForPlayer): Adjusts the pickup model, type, and position for a specific player.
