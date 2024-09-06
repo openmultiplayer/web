@@ -23,6 +23,7 @@ Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 | [IsPlayerSpawned](../scripting/functions/IsPlayerSpawned)                                               |
 | [GetPlayerHydraReactorAngle](../scripting/functions/GetPlayerHydraReactorAngle)                         |
 | [GetPlayerLandingGearState](../scripting/functions/GetPlayerLandingGearState)                           |
+| [GetPlayerLastSyncedTrailerID](../scripting/functions/GetPlayerLastSyncedTrailerID)                     |
 | [GetPlayerSirenState](../scripting/functions/GetPlayerSirenState)                                       |
 | [GetPlayerTrainSpeed](../scripting/functions/GetPlayerTrainSpeed)                                       |
 | [IsPlayerInModShop](../scripting/functions/IsPlayerInModShop)                                           |
@@ -82,11 +83,14 @@ Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 | [GetPlayerSurfingPlayerObjectID](../scripting/functions/GetPlayerSurfingPlayerObjectID)                 |
 | [HasObjectCameraCollision](../scripting/functions/HasObjectCameraCollision)                             |
 | [HasPlayerObjectCameraCollision](../scripting/functions/HasPlayerObjectCameraCollision)                 |
+| [IsObjectHiddenForPlayer](../scripting/functions/IsObjectHiddenForPlayer)                               |
 | [IsObjectMaterialSlotUsed](../scripting/functions/IsObjectMaterialSlotUsed)                             |
 | [IsPlayerObjectMaterialSlotUsed](../scripting/functions/IsPlayerObjectMaterialSlotUsed)                 |
 | [SetObjectMoveSpeed](../scripting/functions/SetObjectMoveSpeed)                                         |
 | [SetObjectsDefaultCameraCollision](../scripting/functions/SetObjectsDefaultCameraCollision)             |
 | [SetPlayerObjectMoveSpeed](../scripting/functions/SetPlayerObjectMoveSpeed)                             |
+| [HideObjectForPlayer](../scripting/functions/HideObjectForPlayer)                                       |
+| [ShowObjectForPlayer](../scripting/functions/ShowObjectForPlayer)                                       |
 
 ## Pickup
 
@@ -107,6 +111,7 @@ Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 | [IsPlayerPickupStreamedIn](../scripting/functions/IsPlayerPickupStreamedIn)                             |
 | [IsValidPickup](../scripting/functions/IsValidPickup)                                                   |
 | [IsValidPlayerPickup](../scripting/functions/IsValidPlayerPickup)                                       |
+| [SetPickupForPlayer](../scripting/functions/SetPickupForPlayer)                                         |
 | [SetPickupModel](../scripting/functions/SetPickupModel)                                                 |
 | [SetPickupPos](../scripting/functions/SetPickupPos)                                                     |
 | [SetPickupType](../scripting/functions/SetPickupType)                                                   |
@@ -128,6 +133,7 @@ Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 | İsim                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|
 | [ChangeVehicleColours](../scripting/functions/ChangeVehicleColours)                                     |
+| [GetPlayerLastSyncedVehicleID](../scripting/functions/GetPlayerLastSyncedVehicleID)                     |
 | [GetRandomVehicleColourPair](../scripting/functions/GetRandomVehicleColourPair)                         |
 | [GetVehicleCab](../scripting/functions/GetVehicleCab)                                                   |
 | [GetVehicleTower](../scripting/functions/GetVehicleTower)                                               |
@@ -141,22 +147,26 @@ Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 | [GetVehicleModelCount](../scripting/functions/GetVehicleModelCount)                                     |
 | [GetVehicleModelsUsed](../scripting/functions/GetVehicleModelsUsed)                                     |
 | [GetVehicleNumberPlate](../scripting/functions/GetVehicleNumberPlate)                                   |
+| [GetVehicleOccupiedTick](../scripting/functions/GetVehicleOccupiedTick)                                 |
 | [GetVehiclePaintjob](../scripting/functions/GetVehiclePaintjob)                                         |
 | [GetVehicleRespawnDelay](../scripting/functions/GetVehicleRespawnDelay)                                 |
 | [GetVehicleRespawnTick](../scripting/functions/GetVehicleRespawnTick)                                   |
 | [GetVehicleSirenState](../scripting/functions/GetVehicleSirenState)                                     |
 | [GetVehicleSpawnInfo](../scripting/functions/GetVehicleSpawnInfo)                                       |
 | [GetVehicleTrainSpeed](../scripting/functions/GetVehicleTrainSpeed)                                     |
+| [SetVehicleBeenOccupied](../scripting/functions/SetVehicleBeenOccupied)                                 |
 | [HasVehicleBeenOccupied](../scripting/functions/HasVehicleBeenOccupied)                                 |
 | [IsVehicleOccupied](../scripting/functions/IsVehicleOccupied)                                           |
 | [HideVehicle](../scripting/functions/HideVehicle)                                                       |
 | [ShowVehicle](../scripting/functions/ShowVehicle)                                                       |
 | [IsVehicleHidden](../scripting/functions/IsVehicleHidden)                                               |
-
-
+| [SetVehicleDead](../scripting/functions/SetVehicleDead)                                                 |
+| [IsVehicleDead](../scripting/functions/IsVehicleDead)                                                   |
 | [IsVehicleSirenEnabled](../scripting/functions/IsVehicleSirenEnabled)                                   |
+| [SetVehicleOccupiedTick](../scripting/functions/SetVehicleOccupiedTick)                                 |
 | [SetVehicleParamsSirenState](../scripting/functions/SetVehicleParamsSirenState)                         |
 | [SetVehicleRespawnDelay](../scripting/functions/SetVehicleRespawnDelay)                                 |
+| [SetVehicleRespawnTick](../scripting/functions/SetVehicleRespawnTick)                                   |
 | [SetVehicleSpawnInfo](../scripting/functions/SetVehicleSpawnInfo)                                       |
 | [ToggleVehicleSirenEnabled](../scripting/functions/ToggleVehicleSirenEnabled)                           |
 | [VehicleColourIndexToColour](../scripting/functions/VehicleColourIndexToColour)                         |
@@ -385,6 +395,8 @@ Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 | [RemoveServerRule](../scripting/functions/RemoveServerRule)                                             |
 | [IsValidServerRule](../scripting/functions/IsValidServerRule)                                           |
 | [SetServerRule](../scripting/functions/SetServerRule)                                                   |
+| [SetServerRuleFlags](../scripting/functions/SetServerRuleFlags)                                         |
+| [GetServerRuleFlags](../scripting/functions/GetServerRuleFlags)                                         |
 
 ## Zamanlayıcı
 

@@ -75,7 +75,7 @@ Known Bug(s):
 - [GetPickupVirtualWorld](GetPickupVirtualWorld): Gets the virtual world ID of a pickup.
 - [ShowPickupForPlayer](ShowPickupForPlayer): Shows a pickup for a specific player.
 - [HidePickupForPlayer](HidePickupForPlayer): Hides a pickup for a specific player.
-
+- [SetPickupForPlayer](SetPickupForPlayer): Adjusts the pickup model, type, and position for a specific player.
 - [CreatePlayerPickup](CreatePlayerPickup): Creates a pickup which will be visible to only one player.
 - [DestroyPlayerPickup](DestroyPlayerPickup): Destroy a player-pickup.
 
