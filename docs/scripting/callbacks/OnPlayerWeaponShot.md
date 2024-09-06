@@ -74,6 +74,12 @@ Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious clien
 
 :::
 
+:::warning
+
+This callback is not called when driving-by as a driver, firing the turret of a Seasparrow, Hunter, or any other armed vehicle.
+
+:::
+
 ## Related Callbacks
 
 The following callbacks might be useful, as they're related to this callback in one way or another. 
