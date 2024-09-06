@@ -406,11 +406,10 @@ Release Candidate 2 (RC2) open.mp servera.
 - [GetVehicleRespawnDelay](scripting/functions/GetVehicleRespawnDelay)
 - [GetVehicleTower](scripting/functions/GetVehicleTower)
 - [GetVehicleCab](scripting/functions/GetVehicleCab)
-- [GetVehicleOccupiedTick](scripting/functions/GetVehicleOccupiedTick)
 - [HasVehicleBeenOccupied](scripting/functions/HasVehicleBeenOccupied)
 - [IsVehicleOccupied](scripting/functions/IsVehicleOccupied)
 - [GetVehicleRespawnTick](scripting/functions/GetVehicleRespawnTick)
-- [IsVehicleDead](scripting/functions/IsVehicleDead)
+
 - [ToggleVehicleSirenEnabled](scripting/functions/ToggleVehicleSirenEnabled)
 - [IsVehicleSirenEnabled](scripting/functions/IsVehicleSirenEnabled)
 - [GetVehicleModelCount](scripting/functions/GetVehicleModelCount)

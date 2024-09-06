@@ -34,7 +34,3 @@ else
     // Vehicle is not occupied
 }
 ```
-
-## Related Functions
-
-- [SetVehicleBeenOccupied](SetVehicleBeenOccupied): Sets the vehicle's occupancy.

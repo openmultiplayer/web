@@ -33,6 +33,3 @@ public OnGameModeInit()
 }
 ```
 
-## Related Functions
-
-- [SetVehicleRespawnTick](SetVehicleRespawnTick): Set the respawn tick of a vehicle.
