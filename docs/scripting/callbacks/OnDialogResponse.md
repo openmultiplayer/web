@@ -12,7 +12,7 @@ This callback is called when a player responds to a dialog shown using ShowPlaye
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
 | playerid    | The ID of the player who responded to the dialog.                                                                      |
 | dialogid    | The ID of the dialog the player responded to, as assigned in ShowPlayerDialog.                                             |
-| response    | 1 for the left button, and 0 for the right button (if only one button is shown, it will always 1)                                           |
+| response    | 1 for the left button, and 0 for the right button (if only one button is shown, it will always be 1)                                           |
 | listitem    | The ID of the list item selected by the player (starts at 0). For non-list dialogs, it will be -1. |
 | inputtext[] | The text entered in the input box by the player, or the selected list item text.                                      |
 
