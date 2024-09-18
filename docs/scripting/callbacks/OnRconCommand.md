@@ -47,7 +47,7 @@ This callback is not called if the player is not logged in as an RCON admin. Whe
 
 :::
 
-:::tip
+:::warning
 
 In SA-MP, you need to include this callback in a loaded filterscript for it to work.
 
