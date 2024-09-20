@@ -20,8 +20,8 @@ processes    = []
     protocol      = "tcp"
     script_checks = []
     [services.concurrency]
-        hard_limit = 100
-        soft_limit = 80
+        hard_limit = 999999999
+        soft_limit = 999999
         type       = "connections"
 
     [[services.ports]]
