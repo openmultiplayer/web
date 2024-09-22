@@ -1,22 +1,22 @@
 ---
 title: OnPlayerWeaponShot
-description: This callback is called when a player fires a shot from a weapon.
+description: This callback is called when a player fires a weapon.
 tags: ["player"]
 ---
 
 ## Description
 
-This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).
+This callback is called when a player fires a weapon. Only firearms are supported.
 
 | Name                    | Description                                                                                               |
 |-------------------------|-----------------------------------------------------------------------------------------------------------|
-| playerid                | The ID of the player that shot a weapon.                                                                  |
-| WEAPON:weaponid         | The ID of the [weapon](../resources/weaponids) shot by the player.                                        |
-| BULLET_HIT_TYPE:hittype | The [type](../resources/bullethittypes) of thing the shot hit (none, player, vehicle, or (player)object). |
-| hitid                   | The ID of the player, vehicle or object that was hit.                                                     |
-| Float:fX                | The X coordinate that the shot hit.                                                                       |
-| Float:fY                | The Y coordinate that the shot hit.                                                                       |
-| Float:fZ                | The Z coordinate that the shot hit.                                                                       |
+| playerid                | The ID of the player who fired the weapon.                                                                  |
+| WEAPON:weaponid         | The ID of the [weapon](../resources/weaponids) fired by the player.                                        |
+| BULLET_HIT_TYPE:hittype | The [type](../resources/bullethittypes) of target hit by the shot. |
+| hitid                   | The ID of the player, vehicle, or object that was hit.                                                     |
+| Float:fX                | The X coordinate where the shot hit.                                                                       |
+| Float:fY                | The Y coordinate where the shot hit.                                                                       |
+| Float:fZ                | The Z coordinate where the shot hit.                                                                       |
 
 ## Returns
 
@@ -24,7 +24,7 @@ This callback is called when a player fires a shot from a weapon. Only bullet we
 
 1 - Allow the bullet to cause damage.
 
-It is always called first in filterscripts so returning 0 there also blocks other scripts from seeing it.
+It is always called first in filterscripts so returning 0 there also blocks other scripts from processing it.
 
 ## Examples
 
@@ -44,8 +44,8 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 This callback is only called when lag compensation is enabled. If hittype is:
 
-- `BULLET_HIT_TYPE_NONE`: the fX, fY and fZ parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
-- Others: the fX, fY and fZ are offsets relative to the hitid.
+- BULLET_HIT_TYPE_NONE: The fX, fY, and fZ parameters are absolute coordinates. These will return 0.0 if nothing was hit (e.g., a distant object that the bullet can't reach).
+- Other values: The fX, fY, and fZ values are offsets relative to hitid.
 
 :::
 
@@ -53,15 +53,30 @@ This callback is only called when lag compensation is enabled. If hittype is:
 
 [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) can be used in this callback for more detailed bullet vector information.
 
+# Known bugs and issues
+
+
+:::warning
+
+This callback isn't called when firing from a vehicle as the driver or when shooting while looking backward with the aim enabled (shooting into the air).
+
 :::
 
 :::warning
 
-Known Bug(s):
+When shooting a player inside a vehicle, this callback will be triggered as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid). It won't be triggered as BULLET_HIT_TYPE_PLAYER.
 
-- Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air).
-- It is called as `BULLET_HIT_TYPE_VEHICLE` with the correct `hitid` (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as `BULLET_HIT_TYPE_PLAYER` at all.
-- Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
+:::
+
+:::warning
+
+Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious client, other players' clients may freeze or crash. To prevent this, check if the reported weaponid can, in fact, fire projectiles.
+
+:::
+
+:::warning
+
+This callback is not called when driving-by as a driver, firing the turret of a Seasparrow, Hunter, or any other armed vehicle.
 
 :::
 

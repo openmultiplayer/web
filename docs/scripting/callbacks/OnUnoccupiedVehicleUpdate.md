@@ -22,7 +22,7 @@ This callback is called when a player's client updates/syncs the position of a v
 
 ## Returns
 
-It is always called first in filterscripts so returning 0 there also blocks other scripts from seeing it.
+It is always called first in filterscripts so returning 0 there also blocks other scripts from processing it.
 
 ## Examples
 

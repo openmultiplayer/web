@@ -1,20 +1,20 @@
 ---
 title: OnRconCommand
-description: This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
+description: This callback is called when a command is sent through the server console, RCON, or via the in-game "/rcon command".
 tags: ["rcon", "administration"]
 ---
 
 ## Description
 
-This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
+This callback is called when a command is sent through the server console, RCON (Remote Console), or via the in-game "/rcon command".
 
 | Name  | Description                                                                       |
 | ----- | --------------------------------------------------------------------------------- |
-| cmd[] | A string containing the command that was typed, as well as any passed parameters. |
+| cmd[] | A string containing the command that was typed, along with any passed parameters. |
 
 ## Returns
 
-It is always called first in filterscripts so returning 1 there blocks gamemode from seeing it.
+It is always called first in filterscripts so returning 1 on it blocks the main script from processing it.
 
 ## Examples
 
@@ -39,17 +39,19 @@ public OnRconCommand(cmd[])
 
 ## Notes
 
-:::tip
+:::warning
 
-"/rcon " is not included in "cmd" when a player types a command. If you use the "print" function here, it will send a message to the player who typed the command in-game as well as the log. This callback is not called when the player is not logged in as RCON admin. When the player is not logged in as RCON admin and uses /rcon login, this callback will not be called and OnRconLoginAttempt is called instead. However, when the player is logged in as RCON admin, the use of this command will call this callback.
+The /rcon prefix is not included in the cmd parameter when a player types a command. If you use the print function here, it will send a message to both the player who typed the command in-game and the server log.
+
+This callback is not called if the player is not logged in as an RCON admin. When a player uses /rcon login to log in, this callback will not be called, instead, OnRconLoginAttempt is called. Once logged in as an RCON admin, any subsequent commands will trigger this callback.
 
 :::
 
 :::warning
 
-In SA-MP you will need to include this callback in a loaded filterscript for it to work in the gamemode!
+In SA-MP, you need to include this callback in a loaded filterscript for it to work.
 
-But it is fixed in open.mp
+However, this issue was fixed in open.mp.
 
 :::
 

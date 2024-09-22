@@ -15,7 +15,7 @@ This callback is called when a player clicks on a player-textdraw. It is not cal
 
 ## Returns
 
-It is always called first in filterscripts so returning 1 there also blocks other scripts from seeing it.
+It is always called first in filterscripts so returning 1 there also blocks other scripts from processing it.
 
 ## Examples
 

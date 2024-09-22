@@ -1,22 +1,22 @@
 ---
 title: OnRconLoginAttempt
-description: This callback is called when someone attempts to log in to RCON in-game; successful or not.
+description: This callback is called when someone attempts to log in to RCON in-game, regardless of whether this attempt is successful or not.
 tags: ["rcon", "administration"]
 ---
 
 ## Description
 
-This callback is called when someone attempts to log in to RCON in-game; successful or not.
+This callback is called when someone attempts to log in to RCON in-game, regardless of whether this attempt is successful or not.
 
 | Name       | Description                                             |
 | ---------- | ------------------------------------------------------- |
-| ip[]       | The IP of the player that tried to log in to RCON.      |
-| password[] | The password used to login with.                        |
-| success    | 0 if the password was incorrect or 1 if it was correct. |
+| ip[]       | The IP address of the player who attempted to log in to RCON. |
+| password[] | The password used in the login attempt.                        |
+| success    | 0 if the password was incorrect, or 1 if it was correct. |
 
 ## Returns
 
-It is always called first in filterscripts.
+This callback is always called first in filterscripts.
 
 ## Examples
 
@@ -29,7 +29,7 @@ public OnRconLoginAttempt(ip[], password[], success)
         
         new ipAddress[16];
         
-        for (new i = 0; iÂ < MAX_PLAYERS; i++) // Loop through all players
+        for (new i = 0; i < MAX_PLAYERS; i++) // Loop through all players
         {
             if (!IsPlayerConnected(i))
             {
@@ -41,7 +41,7 @@ public OnRconLoginAttempt(ip[], password[], success)
             if (!strcmp(ip, ipAddress, true)) // If a player's IP is the IP that failed the login
             {
                 SendClientMessage(i, 0xFFFFFFFF, "Wrong Password. Bye!"); // Send a message
-                Kick(i); // They are now kicked.
+                Kick(i); // Kick the player
                 break;
             }
         }

@@ -24,7 +24,7 @@ This callback is called when a player gives damage to an actor.
 
 0 - Allows this callback to be called in other filterscripts.
 
-It is always called first in filterscripts so returning 1 there blocks other filterscripts from seeing it.
+It is always called first in filterscripts so returning 1 there blocks other filterscripts from processing it.
 
 ## Examples
 
