@@ -14,7 +14,7 @@ Cria um veículo no mundo. Pode ser usado no lugar de AddStaticVehicleEx a qualq
 | Float:spawnX                           | A coordenada X do veículo.                                                                                    |
 | Float:spawnY                           | A coordenada Y do veículo.                                                                                    |
 | Float:spawnZ                           | A coordenada Z do veículo.                                                                                    |
-| Float:angle                            | O ângulo de direçao do veículo.                                                                                    |
+| Float:angle                            | O ângulo de direção do veículo.                                                                                    |
 | [colour1](../resources/vehiclecolorid) | O ID da cor primária.                                                                                                |
 | [colour2](../resources/vehiclecolorid) | O ID da cor secundária.                                                                                              |
 | respawnDelay                           | O tempo de espera até que o veículo reapareça sem um motorista, em segundos. Usar -1 impedirá que o veículo reapareça. |
@@ -49,7 +49,7 @@ Trens só podem ser adicionados com [AddStaticVehicle](AddStaticVehicle) e [AddS
 
 ## Funções Relacionadas
 
-- [DestroyVehicle](DestroyVehicle): Destrói o veículo.
+- [DestroyVehicle](DestroyVehicle): Destroi o veículo.
 - [AddStaticVehicle](AddStaticVehicle): Adiciona um veículo estático.
 - [AddStaticVehicleEx](AddStaticVehicleEx): Adiciona um veículo estático com tempo de reaparecimento customizado.
 - [GetVehicleParamsSirenState](GetVehicleParamsSirenState): Verifique se a sirene de um veículo está ligada ou desligada.
