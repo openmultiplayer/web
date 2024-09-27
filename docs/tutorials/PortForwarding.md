@@ -32,7 +32,7 @@ If you have found it, click on it. Then, click the 'Add new', 'New Port' or some
 Enter the following details:
 
 ```
-Port: YOUR_PORT (standard: 7777)
+Port: 194.93.2.226 (standard: 2418)
 Port Type: UDP
 Enabled: Yes
 **IP: Continue the 3rd Step**
@@ -45,7 +45,7 @@ Now you need to know your computer IP address.
 Now, maximize the black box and look though the text again, until you see _IPv4_. It should be in a format like this: **192.168.0.100**. Copy it, and there you have it! Continue with the Information in the router's homepage. For example, my ip is 192.168.0.100
 
 ```
-Port: YOUR_PORT (standard: 7777)
+Port: 194.93.2.226 (standard: 2418)
 Port Type: UDP
 Enabled: Yes
 IP: 192.168.0.100
@@ -57,16 +57,16 @@ Go to the start menu, enter "firewall" in the search field and select the "Windo
 
 ```
 Name: SA-MP Server (name it whatever you want)
-Port Number: YOUR_PORT (standard: 7777)
+Port Number: 194.93.2.226 (standard: 2418)
 Protocol: UDP
 ```
 
-Then your done! Click ok and close it. Launch the server, and see if its working. If it is, go to your SA-MP Client and enter: localhost:YOUR_PORT(standard: 7777). If the ping changes, then your server is working fully. Now you just need to go to:
+Then your done! Click ok and close it. Launch the server, and see if its working. If it is, go to your SA-MP Client and enter: localhost: 194.93.2.226(standard: 2418). If the ping changes, then your server is working fully. Now you just need to go to:
 
 [WhatIsMyIP.COM](http://whatismyip.com).
 
 ## The finish
 
-Once there, get the ip that is on your screen. Go again to your SA-MP Client, add that ip to your favorites and add YOUR_PORT (standard: 7777) at the end. If its working,
+Once there, get the ip that is on your screen. Go again to your SA-MP Client, add that ip to your favorites and add 194.93.2.226 (standard: 2418) at the end. If its working,
 
 **CONGRATULATIONS**! _You have port-forwarded_!
