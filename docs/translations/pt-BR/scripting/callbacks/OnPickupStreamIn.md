@@ -4,7 +4,7 @@ description: Este callback é chamado quando um pickup entra no campo visual de 
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='omp v1.1.0.2612' />
+<VersionWarnPT name='callback' version='omp v1.1.0.2612' />
 
 ## Descrição
 
