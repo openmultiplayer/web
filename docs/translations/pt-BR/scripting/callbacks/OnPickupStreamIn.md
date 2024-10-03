@@ -4,6 +4,8 @@ description: Este callback é chamado quando um pickup entra no campo visual de 
 tags: ["player"]
 ---
 
+<VersionWarnPT name='callback' version='omp v1.1.0.2612' />
+
 ## Descrição
 
 Este callback é chamado quando um pickup entra no campo visual de um jogador.
