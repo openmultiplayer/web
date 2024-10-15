@@ -29,6 +29,12 @@ This function is for open.mp, not SA-MP. To use with SA-MP, you need the [YSF](h
 
 :::
 
+:::warning
+
+This function cannot be used without [UseGangZoneCheck](UseGangZoneCheck) being called first.
+
+:::
+
 ## Related Functions
 
 - [GangZoneDestroy](GangZoneDestroy): Destroy a gangzone.
