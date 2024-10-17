@@ -33,6 +33,12 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 <TipNPCCallbacks />
 
+:::warning
+
+OnPlayerStreamOut is not called for both players when a player disconnects
+
+:::
+
 ## Related Callbacks
 
 The following callbacks might be useful, as they're related to this callback in one way or another. 
