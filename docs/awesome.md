@@ -143,6 +143,7 @@ Now you can make your scripts in languages other than pawn without any plugin us
 
 ## Game Modes
 
+- **[Simple base script](https://github.com/midosvt/omp-base-script)** - A simple base script to help people get started.
 - **[ScavengeSurvive](https://github.com/Southclaws/ScavengeSurvive)** - Based PvP Survival Gamemode.
 - **[gta-open](https://github.com/PatrickGTR/gta-open)** - A Cops and robbers mode based in Los Santos.
 - **[SF-CnR](https://github.com/zeelorenc/sf-cnr)** - San Fierro Cops And Robbers Gamemode for SA-MP.
