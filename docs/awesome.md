@@ -3,6 +3,10 @@ title: Awesome
 description: A curated list of useful tools, libraries, gamemodes, filterscripts and plugins for SA-MP development.
 ---
 
+## Guides
+- **[open.mp Server Installation](https://github.com/adib-yg/openmp-server-installation)** - A comprehensive guide for transferring your gamemode from a SA-MP server to an open.mp server.
+- **[Easy open.mp Server Installation (All Debian based Linux)](https://github.com/itsneufox/installation_openmp_ubuntu)** - A complete guide for installing an open.mp server on Ubuntu or any other Debian-based Linux distribution.
+
 ## Tools
 
 - **[Community Compiler](https://github.com/pawn-lang/compiler)** - A vastly updated version of the compiler, with many fixes and enhancements.
