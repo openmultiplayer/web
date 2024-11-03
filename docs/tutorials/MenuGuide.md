@@ -12,13 +12,13 @@ Menus look very complicated and difficult to script for the most players, althou
 
 First we have to create a menu. The prefix before is `Menu:` this makes the variable the correct [tag](../scripting/language/Tags). There are different types for different uses such as `Float:` `bool:` `Text3D:` etc. Write the following code near the top of your script:
 
-```c
+```pawn
 new Menu:teleportmenu;
 ```
 
 Okay, we created the variable to store the menu. Now we have to create the menu and assign the variable we created to the menu. Type this into `OnGameModeInit`:
 
-```c
+```pawn
 teleportmenu = CreateMenu("Teleportmenu", 2, 200.0, 100.0, 150.0, 150.0);
 ```
 
@@ -39,7 +39,7 @@ Now a bit of an explanation about the [CreateMenu](../scripting/functions/Create
 
 Ok, now we've got the Menu, but we need some items, under which you can choose in the menu. You add them underneath the `CreateMenu` that we made earlier.
 
-```c
+```pawn
 AddMenuItem(teleportmenu, 0, "LS");
 AddMenuItem(teleportmenu, 0, "LS");
 AddMenuItem(teleportmenu, 0, "SF");
@@ -66,7 +66,7 @@ The explanation for [AddMenuItem](../scripting/functions/AddMenuItem):
 
 Okay, now that we have created a full menu with items what should happen when you choose an item? In our example we want to make a teleportmenu, so we should get teleported to the position we choose. When a player selects an item on a menu the script calls the callback [OnPlayerSelectedMenuRow](../scripting/callbacks/OnPlayerSelectedMenuRow). The best way to do it is to do it with a switch, this is like several if statements to check if a variable is worth certain values. But first we only want these effects for the menu we want so we need to create a variable that holds what menu the player is looking at, this is done with `GetPlayerMenu`:
 
-```c
+```pawn
 new Menu:CurrentMenu = GetPlayerMenu(playerid);
 ```
 
@@ -74,7 +74,7 @@ Now, when somebody selects something on the menu, their menuid will be saved in 
 
 Now we have to check that the menu they selected on is the menu we want:
 
-```c
+```pawn
 public OnPlayerSelectedMenuRow(playerid, row)
 {
     new Menu:CurrentMenu = GetPlayerMenu(playerid);
@@ -88,7 +88,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 Now in between these brackets is where the `switch` is, this checks what item the player selected or `row` this can be done with `if` statements checking what `row` it is, but the `switch` is a much simpler way of writing it.
 
-```c
+```pawn
 if(CurrentMenu == teleportmenu)
 {
     switch(row)
@@ -137,7 +137,7 @@ if(CurrentMenu == teleportmenu)
 
 Now we need a command to show the menu. This is the easiest step. Just a comparison with `strcmp` and a `ShowMenuForPlayer`. This is done in `OnPlayerCommandText`. Or, if you have a command processor already, use that instead to call `ShowMenuForPlayer`.
 
-```c
+```pawn
 if(strcmp(cmdtext, "/teleport", true) == 0)
 {
     ShowMenuForPlayer(teleportmenu,playerid);

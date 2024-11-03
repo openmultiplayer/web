@@ -8,7 +8,7 @@ A short tutorial that describes how to use pickups.
 
 The first thing to be done when creating pickups is creating a place to store their ID. This will be done in a global variable so it can be set when you create the pickup and read when you pick up a pickup, calling a callback with the ID of the pickup you picked up. For this example we will use the name "gMyPickup".
 
-```c
+```pawn
 new gMyPickup;
 ```
 
@@ -38,7 +38,7 @@ Pickups are most commonly created when the script starts, in [OnGameModeInit](..
 
 So here is the code to create our pickup, and store the ID in 'gMyPickup':
 
-```c
+```pawn
 gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 ```
 
@@ -50,7 +50,7 @@ Some pickup types are designed to work automatically, so there is no need to do 
 
 When a player picks up our new pickup, we want to give them $100, to do this first we need to check that they have picked up our dollar pickup and not a different one. When we've done that, we can give them the $100:
 
-```c
+```pawn
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
     // Check that the pickup ID of the pickup they picked up is gMyPickup
