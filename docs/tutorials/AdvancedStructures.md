@@ -8,7 +8,7 @@ title: "Advanced Structures"
 
 This example shows how to find an empty slot in an array using standard coding practices.
 
-```c
+```pawn
 new
     gMyArray[10];
 
@@ -27,7 +27,7 @@ stock FindEmptySlot()
 
 This basic example assumes an array slot is empty if its value is 0. The loop loops through all values in the array (could also be done with a constant) as long as the values are not 0. When it reaches one which is 0 the while condition will fail and the loop ends without using a break as is common practice but discouraged in situations like this. This function also returns -1 if a free slot is not found, which would need to be checked at the other end. More commonly you would use the found id straight away:
 
-```c
+```pawn
 MyFunction()
 {
     new
@@ -59,19 +59,19 @@ Example:
 
 Say you have the following array:
 
-```c
+```pawn
 3, 1, 64, 2, 4, 786, 2, 9
 ```
 
 If you wanted to sort the array you would end up with:
 
-```c
+```pawn
 1, 2, 2, 3, 4, 9, 64, 786
 ```
 
 If however you wanted to leave the data in the original order but still know the numbers in order for some reason (it's just an example), you have a problem, how are you meant to have numbers in two orders at once? This would be a good use of lists. To construct a list from this data you would need to make the array into a 2d array, where the second dimension was 2 cells big, the first dimension containing the original number, the other containing the index of the next largest number. You would also need a separate variable to hold the index of the lowest number, so your new array would look like:
 
-```c
+```pawn
 start = 1
 3, 1, 64, 2, 4, 786, 2, 9
 4, 3, 5,  6, 7, -1,  0, 2
@@ -81,7 +81,7 @@ The next index associated with 786 is -1, this is an invalid array index and ind
 
 The other advantage of this method of sorting the numbers is adding more numbers is a lot faster. If you wanted to add another number 3 to the sorted array you would need to first shift at least 4 numbers one slot to the right to make space, not terrible here but very slow in larger arrays. With the list version you could just append the 3 to the end of the array and modify a single value in the list;
 
-```c
+```pawn
 start = 1
 3, 1, 64, 2, 4, 786, 2, 9, 3
 8, 3, 5,  6, 7, -1,  0, 2, 4
@@ -90,7 +90,7 @@ start = 1
 
 None of the other numbers have moved so none of the other indexes need updating, just make the next lowest number point to the new number and make the new number point the number the next lowest used to be pointing to. Removing a value is even easier:
 
-```c
+```pawn
 start = 1
 3, 1, 64, X, 4, 786, 2, 9, 3
 8, 6, 5,  6, 7, -1,  0, 2, 4
@@ -103,7 +103,7 @@ Here the first 2 has been removed and the number which pointed to that number (t
 
 The lists in the examples above were just basic single lists, you can also have double lists where every value points to the next value and the last value, these tend to have a pointer to the end of the list too to go backwards (e.g. to get the numbers in descending order):
 
-```c
+```pawn
 start = 1
 end = 5
 value: 3, 1,  64, 2, 4, 786, 2, 9, 3
@@ -113,7 +113,7 @@ last:  6, -1, 7,  1, 8, 2,   3, 4, 0
 
 You have to be careful with these, especially when you have more than one of any value, that the last pointer points to the number who's next pointer goes straight back again, e.g this is wrong:
 
-```c
+```pawn
 2,  3, 3
 1,  2, -1
 -1, 2, 0
@@ -121,7 +121,7 @@ You have to be careful with these, especially when you have more than one of any
 
 The 2's next pointer points to the 3 in slot one, but that 3's last pointer doesn't go back to the two, both lists are in order on their own (as the two threes can be either way round) but together they are wrong, the correct version would be:
 
-```c
+```pawn
 2,  3, 3
 1,  2, -1
 -1, 0, 2
@@ -131,7 +131,7 @@ Both of those lists start and end on the end two numbers, the back list in the w
 
 The other type of list is the looping one where the last value points back to the first. The obvious advantage to this is that you can get to any value from any other value without knowing in advance whether the target is before or after the start point, you just need to be careful not to get into an infinite loop as there's no explicit -1 end point. These lists do still have start points. You can also do double looping lists where you have a next and last list, both of which loop round:
 
-```c
+```pawn
 start = 1
 end = 5
 3, 1,  64, 2, 4, 786, 2, 9, 3
@@ -143,7 +143,7 @@ end = 5
 
 Mixed lists are arrays containing multiple lists at once. An example could be an array of values, sorted by a list, with another list linking all unused slots so you know where you can add a new value. Example (X means unused (free) slot):
 
-```c
+```pawn
 sortedStart = 3
 unusedStart = 1
 value: 34, X, X, 6, 34, 46, X,  54, 23, 25, X,  75, X, 45
@@ -153,7 +153,7 @@ free:      2, 6,            10,             12,     -1
 
 Obviously the two lists never interact so both can use the same slot for their next value:
 
-```c
+```pawn
 sortedStart = 3
 unusedStart = 1
 value: 34, X, X, 6, 34, 46, X,  54, 23, 25, X,  75, X,  45
@@ -166,7 +166,7 @@ Before you start the code you need to decide what sort of list is best suited fo
 
 This example shows how to write code for a list sorted numerically ascending.
 
-```c
+```pawn
 #define NUMBER_OF_VALUES (10)
 
 enum E_DATA_LIST
@@ -279,7 +279,7 @@ Binary trees are a very fast method of searching for data in an array by using a
 
 **Example**
 
-```c
+```pawn
 1 2 5 6 7 9 12 14 17 19 23 25 28 33 38
 ```
 

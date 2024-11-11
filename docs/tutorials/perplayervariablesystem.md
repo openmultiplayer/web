@@ -43,7 +43,7 @@ The functions for setting and retrieving the player variables are:
 - [GetPVarFloat](../scripting/functions/GetPVarFloat) Get the previously set float from a player variable.
 - [DeletePVar](../scripting/functions/DeletePVar) Delete a player variable.
 
-```c
+```pawn
 #define PLAYER_VARTYPE_NONE   (0)
 #define PLAYER_VARTYPE_INT    (1)
 #define PLAYER_VARTYPE_STRING (2)

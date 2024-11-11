@@ -27,7 +27,7 @@ As I said before, strings are basically arrays of characters, so they are used t
 
 :::
 
-```cpp
+```pawn
 // declaring a string of 5 characters
 new str_1[5];
 
@@ -37,7 +37,7 @@ new str_2[100];
 
 You can also predefine constant values so you can use them multiple times as string sizes.
 
-```cpp
+```pawn
 // declaring a constant
 #define STRING_SIZE 20
 
@@ -53,7 +53,7 @@ On compilation time, the compiler will replace all occurrences of `STRING_SIZE` 
 
 In addition to predefined constants, you can perform basic operations, the modulo operator (`%`) however will give compilation errors if used, you can still get away with division calculations (`/`) but keep in mind, dividing by `0` will trigger errors, the bonus here is all floating results will be automatically rounded for you.
 
-```cpp
+```pawn
 // declaring a constant
 #define STRING_SIZE 26
 
@@ -96,7 +96,7 @@ Assigning values to strings can be done via many methods, some assign them upon 
 
 In most cases you’d want to give a default value to the string upon its creation, you can go through this simply as follows;
 
-```cpp
+```pawn
 new
   message_1[6] = "Hello",
   message_2[] = "This is another message";
@@ -106,7 +106,7 @@ Make sure the string’s size is greater than the number of characters you assig
 
 Let’s take a look at doing the same process slot by slot manually, first, we define a new array, you can determine its size or leave that empty for the compiler to fill, both would work just fine, we will fill the array with characters to create the string “_Hello_”.
 
-```cpp
+```pawn
 // Including the string' size on its declaration, or it won't work otherwise
 new message_3[6];
 
@@ -122,7 +122,7 @@ There, we assigned for each slot on the `message_3` array a character, this won�
 
 You can also assign strings numbers which will be viewed as **ASCII** (_a system representing character numerically, it covers 128 characters ranging from 0 to 127, more on that [here](https://en.wikipedia.org/wiki/ASCII)_) code for a character, the same message “_Hello_” can be assigned using _ASCII_ code like this;
 
-```cpp
+```pawn
 new message_4[6];
 
 message_4[0] = 72; // ASCII representation of capitalized h, “H”
@@ -135,7 +135,7 @@ message_4[5] = 0; // ASCII representation of the null terminator
 
 And yes, you can perform numeric operations with these codes the same you do with normal numbers, after all, the machine views characters as just mere numbers.
 
-```cpp
+```pawn
 new message_5[1];
 message_5[0] = 65 + 1;
 ```
@@ -148,7 +148,7 @@ For reference, use [this ASCII table](http://www.asciitable.com/).
 
 You can also perform the same operation between multiple characters or a mix of both, them and numbers, here are few examples;
 
-```cpp
+```pawn
 new message_6[3];
 
 message_6[0] = 'B' - 1; // Which is 66 - 1, returns 65, the numeric representation of “A”
@@ -159,7 +159,7 @@ message_6[2] = '0' + '1'; // Which is 48 + 49, returns the numeric representatio
 It might get confusing sometimes if you never knew about the _ASCII_ system, all it takes is some practice, because understanding how it works, is very handy.  
 _ASCII_ code is not exclusive to decimal numbers only, you can also use hexadecimal or binary numbers the same way.
 
-```cpp
+```pawn
 new numString[4];
 
 numString[0] = 0x50; // The decimal number 80 in hexadecimal, capitalized p, “P”
@@ -170,7 +170,7 @@ numString[3] = 0x4E; // The decimal number 78 in hexadecimal, capitalized n, “
 
 Now let’s see something else, assigning values through loops, it’s literally the same as filling an array through loops, you can use all sorts of looping methods as well, goes as follow;
 
-```cpp
+```pawn
 // Let's fill this string with capitalized alphabets
 new message_7[26];
 
@@ -199,7 +199,7 @@ If you found the loops above confusing, you might want to take a deeper look int
 
 Say, you want to fill a string with a number of one specific character, (e.g. “_AAAAAA_”, “_TTTTTT_”, “_vvvvvv_”, “_666_” (_no, it’s not a coincidence_)), the typical idea that might cross most of the scripters, is hard-coding it, but what about long strings, well, what about using a loop, that’s fine too, but what if I told you there is an even more efficient way, just like you’d fill an array with the same value, you’d do the same for strings.
 
-```cpp
+```pawn
 new message_8[100] = {'J', ...};
 ```
 
@@ -207,13 +207,13 @@ The code above declares a new string called `message_8` with 100 cells (_ranging
 
 One other thing you can do with this is filling the string with characters whom values based on intervals, see the example of the capitalized alphabets from _A_ to _Z_ above? Let’s create the same string using this method.
 
-```cpp
+```pawn
 new message_9[26] = {'A', 'B', ...};
 ```
 
 How easy is that?! this is both more optimized and easy to read, and provides the same results as the 3 examples done using loop methods above, so how does it exactly work? Well, we gave the string initial values, `'A'` and `'B'`, which they respectively are _65_ and _66_, the compiler calculates the interval between the two values, which in this case is _1_, and completes filling the empty cells with values based on that interval until it fills up the whole array, you can put as many initial values as you want, but it will only regard the interval between the last two values, and work based on it, keep in mind that the initial values are treated as _ASCII_ code, so trying to output numeric intervals using this method on a string will result in something inconvenient, say you declared some random string like this;
 
-```cpp
+```pawn
 new rand_str[5] = {'1', '5', ...};
 ```
 
@@ -229,7 +229,7 @@ In _pawn_, you can type it as its numeric value, or as a character '_\0_'. The b
 
 There is a symbol used in _pawn_, **EOS**, short for **E**nd **O**f **S**tring, it’s a predefined macro for the null terminator, you can set the null terminator in a lot of different ways;
 
-```cpp
+```pawn
 message_9[0] = 0;
 message_9[0] = '\0';
 message_9[0] = 0b; // The decimal number 0 in binary
@@ -249,7 +249,7 @@ As I said earlier on the tutorial, you can ignore assigning the null character, 
 
 Here is another example of a pre-filled string.
 
-```cpp
+```pawn
 new text_1[8] = "Hello";
 ```
 
@@ -263,7 +263,7 @@ Here's the string's content per cell;
 
 If you, for instance, wanted to delete the content of this string, you can simply do so using one of the three examples below;
 
-```cpp
+```pawn
 text_1[0] = 0;
 text_1[0] = EOS;
 text_1[0] = '\0';
@@ -285,7 +285,7 @@ When it comes to working with multiple chunks of text, _pawn_ has got you covere
 
 These are some natively supported functions (_taken from string.inc_);
 
-```cpp
+```pawn
 native strlen(const string[]);
 native strpack(dest[], const source[], maxlength=sizeof dest);
 native strunpack(dest[], const source[], maxlength=sizeof dest);
@@ -309,7 +309,7 @@ We will take a closer look at few of them, the ones are more often used.
 
 - The `strcat` concatenates strings with each other, it takes 3 parameters.
 
-  ```cpp
+  ```pawn
   new str_dest[12] = "Hello", str_source[7] = " World";
   strcat(str_dest,str_source);
   ```
@@ -318,7 +318,7 @@ We will take a closer look at few of them, the ones are more often used.
 
 - The `strval` function will convert a string to a number, for instance, the following string, `"2017"` will be converted to the number `2017`, this works on signed and unsigned numbers, if the string has no numeric characters, the function will return `0`, the same happens if the string has a numeric character but begins with non-numeric ones, if a string begins with numeric characters but includes non-numeric characters as well, the numeric characters will still get retrieved and converted, here are some use cases;
 
-  ```cpp
+  ```pawn
   strval("2018"); // Returns “2018”.
   strval("-56"); // Returns “-56”.
   strval("17.39"); // Returns “17”, the floating number 17.39 was auto floored for us.
@@ -338,13 +338,13 @@ There are many community-made libraries you can download that have to do with st
 
 This is probably the most used string-related function in the community, very simple and user-friendly, all it does, is format chunks of text and pieces them together, it can be implemented in various situations, like linking variables and strings together, embedding colors, adding line-breaks... etc.
 
-```cpp
+```pawn
 format(output[], len, const format[], {Float, _}:...)
 ```
 
 The format function takes as parameters the output array, its size (_number of its cells_), the formatting string (_this can be pre-stored on another array, or directly assigned from inside the function_), and finally some optional parameters, those can be variables from different types. Let’s use this function to assign a value to an empty string.
 
-```cpp
+```pawn
 new formatMsg[6];
 format(formatMsg, 6, "Hello");
 ```
@@ -353,28 +353,28 @@ The output of `formatMsg` is **Hello**, keep in mind that this is a bad way of a
 
 Remember to always put the correct array size, otherwise, it will still work, but it delivers some unwanted behavior, the format function will over-flow your array size, and trust me on that, you don’t want that to happen, if you don’t want to bother putting the correct string size every time you want to work with this function, you can simply use the `sizeof` function (_it’s not a function per se, but rather a compiler directive_), we’ve seen earlier a function called `strlen` that returns the number of characters a string has (_excluding and stopping at the null-character_), but this one, returns the array’s size, in other words, the number of cells this array has, be them filled with valid character or not, in this case, 6.
 
-```cpp
+```pawn
 new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), "Hello");
 ```
 
 Text must always be included in double quotation marks, however, there is an uncommon way of inputting text, that’s rarely ever used, it uses the Number sign `#` symbol, and works as follows:
 
-```cpp
+```pawn
 new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), #Hello);
 ```
 
 It supports spaces, escaped characters, and you can even use the mix of both double quotations and the number sign;
 
-```cpp
+```pawn
 new formatMsg[6];
 format(formatMsg, sizeof(formatMsg), "Hello "#World);
 ```
 
 The code above will input **Hello World**, this method of inputting strings is more known to be used with predefined constants. Let’s take a look at this example of using two different predefined constants, one being an integer `2017`, the other being a string `"2018"`.
 
-```cpp
+```pawn
 #define THIS_YEAR 2018 // Thisconstant has an integer as its value
 #define NEW_YEAR "2019" // This constant has a string as its value
 
@@ -386,7 +386,7 @@ This will output **This is 2018, not 2019**, the reason why I emphasised on the 
 
 You can also line up as much double quotations as you want one next to each other, although it doesn’t make sense, as it’s more natural to just write a sentence into a single pair of double quotations, here’s an example of the same sentence written in both concepts;
 
-```cpp
+```pawn
 new formatMsg[29];
 
 // One single pair of double quotations
@@ -404,7 +404,7 @@ Now, that we’ve seen some basic stuff about string declaration, manipulation .
 
 The first thing that must be brought up, and that personally triggers me, is seeing how large strings are being created when not nearly half of the cells declared are even used, only declare strings the size you’ll use, extra cells will only task more memory, let’s take a look at a supposedly unoptimized way of declaring a string.
 
-```cpp
+```pawn
 new badString[100];
 badString ="Hello :)";
 ```
@@ -415,7 +415,7 @@ What I come across more, something that’s stereotypically vague, is the usage 
 
 Keep in mind the limits SA-MP puts when dealing with strings, where does the _256-long_ string come into play? What are you going to do with a string this long (_except for formatting a dialog/textdraw string_)? The maximum string input is _128è characters long, that’s half the size, \_512 bytes_ just went into waste, say what? You intended to use it for output, not input? That’s still way too large, output strings are not to pass _144_ characters, see where I’m going? Let’s try and see how we’d correct our fault, we have this sentence, “Good string”, it contains _11_ characters (_the space is counted as a character too_) + _1_ for the null terminator (_got to always have this dude in mind_), that makes it _12_ characters in total.
 
-```cpp
+```pawn
 new goodString[12];
 goodString="Good string";
 ```
@@ -424,14 +424,14 @@ See how we preserved memory? A mere **48** bytes, and no extra weigh that would 
 
 But hey, what if I told you, you can get an even more optimized code, that’s right, have you ever heard of **packed strings**? A string is typically formed from multiple cells, and as we said earlier, each cell represents 4 bytes, so strings are made up of multiple sets of _4 bytes_. A single character takes up 1 byte, and each cell allows only a single character to be stored, meaning, that on each cell 3 bytes go to waste,
 
-```cpp
+```pawn
 new upkString[5];
 upkString = "pawn";
 ```
 
 The string above takes up 5 cells (_that is approximately 20 bytes_), can be narrowed down to only 8 bytes, a mere 2 cells.
 
-```cpp
+```pawn
 new pkString_1[5 char];
 
 pkString_1 = !"pawn";
@@ -459,7 +459,7 @@ And this is what `pkString_1` would be like in the second example;
 
 You can also access a packed string’s indexers, as follows;
 
-```cpp
+```pawn
 new pkString_2[5 char];
 
 pkString_2{0} = 'p';
@@ -485,7 +485,7 @@ In spite of their effectiveness in preserving memory, SA-MP’s implementation o
 
 The following function is probably the most basic function in not only pawn but a lot of other programming languages too, it simply accepts one parameter and outputs it on the console.
 
-```cpp
+```pawn
 print("Hello world");
 ```
 
@@ -495,7 +495,7 @@ Hello world
 
 You can also pass predeclared strings or predefined constants as well as merging multiple of them together, or use the number sign `#` too, much like we used to do with the format function, but keep in mind, that doesn’t include multiple parameters, we can only pass one and only parameter.
 
-```cpp
+```pawn
 #define HAPPY_STRING "I'm happy today" // String constant.
 #define NEW_YEAR 2019 // Integer constant.
 new stylishMsg[12] = "I'm stylish";
@@ -519,7 +519,7 @@ Notice how we used the number symbol here the same way we did with the format fu
 
 Also keep in mind that the `print` function does support packed strings, however only accepts string type variables (_array of characters_), passing anything that’s not an array, a string (_be it between double quotations or prefixed by the number symbol_) will give compilation errors, so doing any of the following will not work;
 
-```cpp
+```pawn
 // Case 1
 new _charA = 'A';
 print(_charA);
@@ -537,7 +537,7 @@ print(66);
 
 Let’s see how we can fix that;
 
-```cpp
+```pawn
 // Case 1
 new _charA[2] = "A";
 print(_charA);
@@ -545,7 +545,7 @@ print(_charA);
 
 We change the single quotation mark to the double quotation mark and give the array two cells, one of the A character, and the second one for the null terminator because anything between the double quotation marks is a string, the output is **A**.
 
-```cpp
+```pawn
 // Case 2
 new _charB[2] = 66;
 print(_charB);
@@ -553,7 +553,7 @@ print(_charB);
 
 We change the `_charB` to an array with one cell and set the cell labelled 0 to the value of `66`, which translates to **B** according to the _ASCII_ table, the output is **B**, we preserve an additional cell for the null-terminator (_how much is there so it's not funny anymore?_).
 
-```cpp
+```pawn
 // Case 3
 print("A");
 ```
@@ -568,7 +568,7 @@ Short for “_print formatted_”, I can simply put, this is a more diverse vers
 
 Unlike `print`, `printf` accepts multiple parameters, and with different types too, however it does not support packed strings, in order to expand on its functionality, we use these sequences called “_format specifiers_”, more on them later, outputting anything more than **1024** characters will <u>crash the server</u>, so take notes on that.
 
-```cpp
+```pawn
 #define RANDOM_STRING "Vsauce"
 #define RANDOM_NUMBER 2018
 
@@ -591,13 +591,13 @@ Keep in mind the that SA-MP’s restrictions on displaying strings apply for thi
 
 There are two functions that natively print text on the client’s screen, the only difference between them is the scoop, the first takes three parameters, the id of the player you want to print the text on their screen, the text’s color, and the text itself.
 
-```cpp
+```pawn
 SendClientMessage(playerid, color, const message[])
 ```
 
 Say, you want to send a text to the player whose id’s 1, telling them “Hello there!”;
 
-```cpp
+```pawn
 SendClientMessage(1, -1, "Hello there!");
 ```
 
@@ -605,7 +605,7 @@ Simple, just like that, the player with the ID of 1 will be sent a text saying *
 
 Obviously, you can also pass an array of characters, formatted strings...etc. And as we saw with other function, you can use the number sign `#`.
 
-```cpp
+```pawn
 #define STRING_MSG "today"
 new mornMsg[] = "Hello!";
 
@@ -615,7 +615,7 @@ SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
 
 As you can see at the example above, this will send the player with the id _0_ two messages colored in white, the first messages will say “_Hello!_”, and the second will say, “_How are you today?_”, pretty similar to how other functions work. Keep in mind that predefined constant integers must be prefixed with the `#` symbol.
 
-```cpp
+```pawn
 #define NMB_MSG 3
 SendClientMessage(3, -1, "It's "#NMB_MSG" PM");
 ```
@@ -624,13 +624,13 @@ Pretty self-explanatory, the text will be sent to the player with the id _3_, co
 
 Now that you know how to send someone a message, you can use the same approach to send the same message to everyone, child’s play really, you can just put the function in a loop that goes through all connected players, and risk showing your code in public and call it a day, but hey, there is already a native function that does the exact same thing, the same rules apply, the only thing that differ between the two is a slight change in their syntax.
 
-```cpp
+```pawn
 SendClientMessageToAll(color, const message[]);
 ```
 
 pretty self-explanatory too, exposed by its name, now let’s send everyone on the server a greeting message.
 
-```cpp
+```pawn
 SendClientMessageToAll(-1, "Hello everyone!");
 ```
 
@@ -660,7 +660,7 @@ A lot of programming/scripting languages prefix hexadecimal numbers with the num
 
 We can, of course, use decimal numbers to represent colors, but it’s much clearer to use the hexadecimal notation, as it’s the more readable between the two, let’s look the following example;
 
-```cpp
+```pawn
 // Representing the color white with decimal numbers
 SendClientMessageToAll(-1, "Hello everyone!");
 
@@ -682,7 +682,7 @@ It’s possible to format texts with multicolor simultaneously, but for that, we
 
 This is exactly like the **RGBA** color spaces, but with no alpha channel, just a mixture of red, green and blue, noted as a hexadecimal number of 6 bits, in pawn, this notation is used mostly to embed colors into texts, simply wrap your 6 bits hexadecimal number between a pair of curly brackets, and you’re set up to go, for example; (**{FF0000} = red**), (**{00FF00} = green**), (**{0000FF} = blue**), (**{000000} = black**), (**{FFFFFF} = white**), here’s a clearer visualization on this notation: `{FFFFFF}`. Let’s look at this quick example here;
 
-```cpp
+```pawn
 SendClientMessageToAll(0x00FF00FF, "I'm green{000000}, and {FF0000}I'm red");
 ```
 
@@ -696,7 +696,7 @@ Sometimes, working with colors can prove to be quite the labor, It’s not that 
 
 One of the problems that people find, is managing their workflow, which if done right, it facilitates the work pacing, and makes it less painful to work around your projects, while color picker tools are of a great help, you can still waste plenty of time going on and off to it every time you need to pick a color, the frustration of that can be as annoying as a pizza with pineapples, luckily, you can take advantage of predefined constants, and define your most used colors for later usage, here’s a simple example;
 
-```cpp
+```pawn
 #define COLOR_RED 0xFF0000FF
 #define COLOR_GREEN 0xFF0000FF
 #define COLOR_BLUE 0xFF0000FF
@@ -708,7 +708,7 @@ SendClientMessageToAll(COLOR_BLUE, "I'm a blue text");
 
 The latter can be done on embedded colors too;
 
-```cpp
+```pawn
 #define COL_RED "{FF0000}"
 #define COL_GREEN {FF0000}
 #define COL_BLUE "{FF0000}"
@@ -785,13 +785,13 @@ Audible beep or a bell code (_sometimes bell character_) is a device control cod
 
 Using this on a computer will result in sending a bell/notification sound in the background, it can be used in some creative ways, to notify and/or alert users on certain activities, the escape sequence that represents it is `\a` (or `\7` noted as decimal code), fire off your pawn text editor, and write the following code;
 
-```cpp
+```pawn
 print("\a");
 ```
 
 Upon executing the samp-server.exe, you will hear a beep notification sound, you can also use the decimal code;
 
-```cpp
+```pawn
 print("This is a beep \7");
 ```
 
@@ -801,7 +801,7 @@ This escape sequence is noted as `\b`, it simply moves your cursor backward, mos
 
 This one doesn’t have that much usability in pawn unless you were clever enough to milk something useful out of it, here’s how it works.
 
-```cpp
+```pawn
 print("Hello 2018");
 ```
 
@@ -814,7 +814,7 @@ Hello 2018
 
 As you can see, the cursor stops after the last visible character of the string, which is normal, now, let’s add a backspace escape sequence;
 
-```cpp
+```pawn
 print("Hello 2018\b");
 ```
 
@@ -827,7 +827,7 @@ Hello 2018
 
 As you can see, the cursor is exactly in the position of the last visible character of the string, which is _8_, this is the same as toggling on the insert mode on your keyboard, now, let’s add some sorcery to this.
 
-```cpp
+```pawn
 print("Hello 2018\b9");
 ```
 
@@ -840,7 +840,7 @@ Hello 2019
 
 The carriage is going to move backward as long as there is a backspace escape sequence in your string.
 
-```cpp
+```pawn
 print("Hello 2018\b9\b\b\b");
 ```
 
@@ -851,7 +851,7 @@ Hello 2019
 
 The cursor will stop at the first character’s position if the amount of backspace escape sequence exceeded that of the number of characters between the position of the first character (yes, arrays start at 0, head to [r/programmerhumor](https://www.reddit.com/r/ProgrammerHumor/) for some good memes) and the initial position of the cursor.
 
-```cpp
+```pawn
 print("Hi\b\b\b\b\b\b\b\b\b\b\b\b\b\b");
 ```
 
@@ -874,7 +874,7 @@ Form feed is a page breaking _ASCII_ code. It forces the printer to eject the cu
 
 The new line (also referred to as line ending, end of line (_EOL_), line feed, or line break) escape sequence is an _ASCII_ code that’s noted as `/n` with the decimal value of 10, it’s something that’s commonly used, text editors are inserting this character every time we press the Enter button on our keyboards. Here’s a simple message with a line break:
 
-```cpp
+```pawn
 print("Hello, this is line 1\nAnd this is line 2");
 ```
 
@@ -887,7 +887,7 @@ And this is line 2
 
 Multiple line brakes are achievable of course;
 
-```cpp
+```pawn
 print("H\n\n\ne\n\n\nl\nl\n\no");
 ```
 
@@ -910,7 +910,7 @@ This works differently when dealing with files, however, depending on your opera
 
 The carriage return is an _ASCII_ code that’s often associated with the line feed, but it can serve as its own thing by itself, it simply moves the carriage to the beginning of the current line, equivalent of a specific case we discussed using multiple backspaces (`\b`) escape sequence, let’s look at the following example, without using this escape sequence, this is the normal output we would get:
 
-```cpp
+```pawn
 print("Hello");
 ```
 
@@ -921,7 +921,7 @@ Hello
 
 The arrow represents the position of the cursor, which is placed after the last visible character of the string, again, that’s the normal expected behavior, now let’s add the carriage return into the mix:
 
-```cpp
+```pawn
 print("Hello\r");
 ```
 
@@ -932,7 +932,7 @@ Hello
 
 The cursor is shifted to the beginning of the line, selecting the first character **“H”**, now inserting anything will change **“H”** to whatever we input, and then move to the next character while remaining on the insert mode:
 
-```cpp
+```pawn
 print("Hello\rBo");
 ```
 
@@ -947,7 +947,7 @@ As we’ve seen on the line feed section, line breaks work differently across di
 
 Tabulation is something we use every day, from text/code indentation, to table display, that tabulator key that lays at the very side of your keyboard really is a time saver, it was such a pain and so much time consuming to excessively use many spaces, but this one cuts the cake easily, not only is it usefully practically, it really is strongly present in the field of programming, it’s noted as `\t`, people would argue on how many spaces a tab is worth, most would say it’s worth 4 spaces, but there are who say it’s worth 8 spaces, someone demonic creature would even prefer spaces to tabs, but that's another talk on inself, let as observe this simple example:
 
-```cpp
+```pawn
 print("Hello\tWorld");
 ```
 
@@ -957,7 +957,7 @@ Hello    World
 
 Here is another one with multiple tabulations:
 
-```cpp
+```pawn
 print("Hello\t\t\t\t\tWorld");
 ```
 
@@ -973,7 +973,7 @@ During the old typewriter era, this had a more popular use, it was used to move 
 
 As we’ve seen, the backslash is regarded as the escape character, so whenever the program spots it, it thinks of it as a starting point of some escape sequence, it doesn’t look at it as an independent character, and thus, will either give a compilation error (_if it wasn’t followed by a valid character_), or will not print it, in pawn’s case, the compilator will raise an error (_error 027: invalid character constant_). Luckily, we can solve this problem by escaping out backslash, and that’s done by prefixing yet another backslash to it:
 
-```cpp
+```pawn
 print("Hello \\ World");
 ```
 
@@ -987,13 +987,13 @@ The output will disregard the first backslash, and print the second, as the firs
 
 :::
 
-```cpp
+```pawn
 print("Hello \\\ World");
 ```
 
 Think of it as pairs of backslashes, everyone is escaping the one after, and thus, it should always result in an even number of backslashes;
 
-```cpp
+```pawn
 print("Hello \\\\\\ \\ World");
 ```
 
@@ -1003,7 +1003,7 @@ Hello \\\ \ World
 
 As you surely noticed, escape sequences are never printed, they only serve as instructions that express certain events, if we want to force them into being printed, we can escape their escape character (`\`), then the program will not look at them as escape sequence:
 
-```cpp
+```pawn
 print("This is the escape sequence responsible for tabulation: \\t");
 ```
 
@@ -1017,7 +1017,7 @@ This is the escape sequence responsible for tabulation: \t
 
 This is hardly present when writing pawn code, I myself haven’t found myself using this in any coding situation, in other languages that treat text between single quotation marks as a string make great use of this to limit the confusion that happens when nesting single quotation marks into each other, it really makes no difference in pawn, here’s a simple example;
 
-```cpp
+```pawn
 print("Single quote '");
 // or
 print("Single quote \'");
@@ -1031,13 +1031,13 @@ Single quote: '
 
 The only use I can think of concerning this is setting a variable the character “**'**”, so obviously doing the following will cause a compilation error;
 
-```cpp
+```pawn
 new chr = ''';
 ```
 
 Simply because the compiler will regard the first pair of single quotes as one entity, and the second as an unclosed quotation sequence, so to fix that, we will have to escape the middle one;
 
-```cpp
+```pawn
 new chr = ''\';
 ```
 
@@ -1045,13 +1045,13 @@ new chr = ''\';
 
 Unlike the single quotation mark, this one can cause problems when it comes to nesting them together, pawn treats anything between double quotations as a string, so what if you want to input a double quotation mark in your string, that will confuse the program, it wouldn’t know what each quotation mark is for, let’s take this as an example for instance:
 
-```cpp
+```pawn
 print("Hello "world");
 ```
 
 As soon as the compilator spots the first quotation marks, it will treat everything that comes after as part of one string, and end up the process as soon as it hits another quotation mark, and thus, the compiler will pick up **“Hello “** as a string and will view **World”** as some none-sense filling up the holes of your code. To solve this, we need to escape the double quotation mark we want to print:
 
-```cpp
+```pawn
 print("Hello \"world");
 ```
 
@@ -1063,7 +1063,7 @@ Hello "world
 
 Let’s add another quotation mark just for the heck of it:
 
-```cpp
+```pawn
 print("Hello \"world\"");
 ```
 
@@ -1079,7 +1079,7 @@ Throughout this section, we’ve seen how we can represent escape sequences by p
 
 It doesn’t change anything about the escape sequences, it’s just a different way to express them, using decimal _ASCII_ codes, for instance, if you want to print A, but note it decimally, you can type it’s decimal _ASCII_ code like the following:
 
-```cpp
+```pawn
 print("\65;");
 ```
 
@@ -1091,7 +1091,7 @@ The semicolon mark is optional and can be dropped, but it’s always better to g
 
 Similar to the decimal _ASCII_ notation, we can also use the hexadecimal format, the character **A**, can either be written as `\65`;** or `\x41`;**, The _semi-colon_ can be omitted if you want, this applies both here and on the decimal notation.
 
-```cpp
+```pawn
 print("\x41;");
 ```
 
@@ -1107,7 +1107,7 @@ If you noticed, I’ve kept calling repeating the “**escape character**” mul
 
 n order to change it, we use the pre-processor directive `pragma`, this particular directive accepts different parameters, for each their specific task, and there is one that's responsible on setting the escape character which we will be focusing on, it's `ctrlchar`.
 
-```cpp
+```pawn
 #pragma ctrlchar '$'
 
 main()
@@ -1179,7 +1179,7 @@ In other languages, however, the difference lays not in the output, but rather t
 
 The usages of these two specifiers go as follows:
 
-```cpp
+```pawn
 printf("%d is here", 2018);
 printf("%d + %i = %i", 5, 6, 5 + 6);
 ```
@@ -1191,7 +1191,7 @@ printf("%d + %i = %i", 5, 6, 5 + 6);
 
 The output also supports pre-defined constants, variables, and functions too.
 
-```cpp
+```pawn
 #define CURRENT_YEAR 2018
 new age = 19;
 
@@ -1210,7 +1210,7 @@ As you can see, any value we pass in the parameters of the `printf` function is 
 
 What do you think will happen if we tried to print a float or a string using an integer specifier? Let’s find out;
 
-```cpp
+```pawn
 printf("%d", 1.12);
 printf("%d", "Hello");
 printf("%d", 'H');
@@ -1236,7 +1236,7 @@ Strings are arrays in themselves, so outputting an array here will give the valu
 
 This specifier, as it stands for string, is responsible for outputting strings (_obviously_):
 
-```cpp
+```pawn
 printf("Hello, %s!", "World");
 ```
 
@@ -1246,7 +1246,7 @@ Hello, world!
 
 Let’s also output non-string values using this too:
 
-```cpp
+```pawn
 printf("%s", 103);
 printf("%s", true);
 printf("%s", 'H');
@@ -1264,7 +1264,7 @@ The number `103` was treated as the _ASCII_ code for _g_, and thus _g_ was print
 
 Again, just like the integer specifier, this accepts pre-defined constants, variables, and functions:
 
-```cpp
+```pawn
 #define NAME "Max"
 new message[] = “Hello there!”;
 
@@ -1283,7 +1283,7 @@ Great work
 
 This specifier -short for float-, as its name suggests, it outputs floating numbers, on earlier sections, we tried to output floating numbers using the integer specifier, and then we got that undefined behavior, but now, that we know about this specifier, we can safely output floats with no problems;
 
-```cpp
+```pawn
 printf("%f", 1.235);
 printf("%f", 5);
 printf("%f", 'h');
@@ -1293,7 +1293,7 @@ The _1.235_ floating number got output just fine, with the addition of some padd
 
 To fix that issue, we simply add the fractional part:
 
-```cpp
+```pawn
 printf("%f", 5.0);
 printf("%f", 'h' + 0.0);
 ```
@@ -1305,7 +1305,7 @@ printf("%f", 'h' + 0.0);
 
 Although the `%f` is the most commonly used floating placeholder, the `%h` specifier does pretty much the same:
 
-```cpp
+```pawn
 printf("%h", 5.0);
 ```
 
@@ -1317,7 +1317,7 @@ printf("%h", 5.0);
 
 This specifier, short for character, works like the string placeholder, but it only outputs a single character, let’s observe the following example:
 
-```cpp
+```pawn
 printf("%c", 'A');
 printf("%c", "A");
 printf("%c", "Hello");
@@ -1340,7 +1340,7 @@ As you can see, passing a string will output only the first character and passin
 
 The following specifier outputs the value we pass as a hexadecimal number, simply put, a conversation of numbers from a given base to base 16.
 
-```cpp
+```pawn
 printf("%x", 6);
 printf("%x", 10);
 printf("%x", 255);
@@ -1354,7 +1354,7 @@ FF
 
 Just like the cases we saw on earlier sections, passing values other than integers will convert them to their respective integer values, and output them as hexadecimal numbers;
 
-```cpp
+```pawn
 printf("%x", 1.5);
 printf("%x", 'Z');
 printf("%x", "Hello");
@@ -1374,7 +1374,7 @@ The first value `1.5`, will result in an undefined behavior upon its conversion 
 
 The following specifier, short for “_binary_” is used to print passed values as binary numbers, passing characters will convert its _ASCII_ code into binary, and so is the case for strings where only the first character is regarded, Booleans are regarded as true and false respectively, float numbers fall under the case of undefined behavior, as for integers and hexadecimal, they are converted to binary and output.
 
-```cpp
+```pawn
 printf("%b", 0b0011);
 printf("%b", 2);
 printf("%b", 2.0);
@@ -1398,7 +1398,7 @@ printf("%b", true);
 
 Much like the default escaping character (`\`), the compiler views (`%`) as a special character, and thus treats the sequence as a placeholder, as long as there is a character after the (`%`) it’s regarded as a specifier even if it’s not valid, let’s observe these two cases;
 
-```cpp
+```pawn
 printf("%");
 printf("Hello %");
 printf("% World");
@@ -1414,7 +1414,7 @@ Hello  World
 
 As you can see, having (`%`) alone as an individual sequence will have it output, but not the same happens when it’s followed by space or any other character, thus it results in outputting a space character. To trespass this problem, we escape it using another percent sign as follows;
 
-```cpp
+```pawn
 printf("This is a percent sign %%, we just had to escape it!");
 ```
 
@@ -1440,7 +1440,7 @@ So far, we have only talked about the `%` sign and the type filed, the others ar
 
 This one is responsible for specifying the minimum character output, it can be omitted if needed, you just have to type its value as a numeric integer, let’s look at some examples;
 
-```cpp
+```pawn
 printf("%3d", 5555);
 printf("%3d", 555);
 printf("%3d", 55);
@@ -1456,7 +1456,7 @@ printf("%3d", 5);
 
 We instructed the specifier to lock the output to 3 characters or more, at first, outputting 4 and 3 characters number long went fine, but the characters shorter than 3 characters were left padded with spaces to even the output width. There is also the ability to have dynamic width values, for that, we use the asterisk sign (`*`).
 
-```cpp
+```pawn
 printf("%*d", 5, 55);
 ```
 
@@ -1470,7 +1470,7 @@ First, we pass the width’s value which was `5`, then the value we want to outp
 
 This one works really well with the width field, as the width specifies the minimum characters to outputs, this one pads the emptiness left behind with whatever you tell it to. In case there were to spaces left behind, there won’t be any pad.
 
-```cpp
+```pawn
 printf("%3d", 55);
 printf("%5x", 15);
 printf("%2f", 1.5)
@@ -1484,7 +1484,7 @@ printf("%2f", 1.5)
 
 The first number 55, is short on one character because of the width of the decimal parameter, so it’s padded by one 0. As for 15, it’s converted to its respective hexadecimal value _F_, and padded with 4 0’s to validate the width of its placeholder. Notice how only the number before the decimal point was padded. The use of dynamic width values remains here too, we just have to include the asterisk, pass a value, and watch the magic happen;
 
-```cpp
+```pawn
 printf("%0*d", 5, 55);
 ```
 
@@ -1496,7 +1496,7 @@ printf("%0*d", 5, 55);
 
 The Precision field usually specifies a maximum limit on the output, depending on the particular formatting type. For floating point numeric types, it specifies the number of digits to the right of the decimal point that the output should be rounded. For the string type, it limits the number of characters that should be output, after which the string is truncated.
 
-```cpp
+```pawn
 printf("%.2f", 1.5);
 printf("%.*f", 10, 1.5);
 printf("%.5s", "Hello world!");
@@ -1516,7 +1516,7 @@ A really cool trick we can pull off thanks to the precision field is get substri
 
 Let’s see how we can get the same result using only the precision field.
 
-```cpp
+```pawn
 substring(const source[], start = 0, length = -1)
 {
 	new output[256];
@@ -1532,7 +1532,7 @@ Our return value will be formatted according to the following placeholder `%.*s`
 
 Let’s call the function and see how it goes from here:
 
-```cpp
+```pawn
 new message1[] = "Hello!", message2[] = "I want an apple!";
 
 print(substring(.source = message1, .start = 1, .length = 3));
@@ -1548,7 +1548,7 @@ Simple right? Trivia bonus, passing a _negative value_ as the extraction length 
 
 Let’a take a look on these cases:
 
-```cpp
+```pawn
 new message3[] = "Arrays start at 1, says the Lua developer!";
 
 print(substring(message3)); // start = 0 by default, length = -1 by default
@@ -1572,7 +1572,7 @@ Putting all what we’ve seen so far to action, we can format our strings pretty
 
 But in the real world, most people don’t like looking at terminals, they are just too scary, and complicated to the average user, and as you all know, _client messages_ show up on the game’s screen, and not the console, however, those cannot be formatted on the go, they are more like a print function one might say, to bypass this limitation, we utilize and other very effective function, called `format`, we won’t go deeper on its definition, as we have already gone through explaining it on earlier parts, (refer to [this](../scripting/functions/format)), but, here is a reminder of its syntax;
 
-```cpp
+```pawn
 format(output[], len, const format[], {Float,_}: ...}
 ```
 
@@ -1580,7 +1580,7 @@ Let’s take a look at these examples;
 
 **Example 1**: _Player name – Assuming there is some play on the server with the id of 9 called Player1_:
 
-```cpp
+```pawn
 // MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to take into account the null terminator, thanks to Pottus for pointing that out.
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
@@ -1596,7 +1596,7 @@ We then show the formatted string to everyone on the server using the `SendClien
 
 **Example 2**: _In-game Clock – Displaying the current time in game_:
 
-```cpp
+```pawn
 new output[128], hours, minutes, seconds;
 
 gettime(hours, minutes, seconds);
@@ -1610,7 +1610,7 @@ Again, we just utilized the `gettime` function to store the hours, minutes and s
 
 **Example 3**: _Death message - Outputting a message when a player dies, having the players names colored in their respective colors_:
 
-```cpp
+```pawn
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // MAX_PLAYER_NAME is a predefined constant with the value of 24, we add 1 to take into account the null terminator, thanks to Pottus for pointing that out.
@@ -1649,7 +1649,7 @@ Working with the formatting specifiers we've gone through so far is sufficient, 
 
 Just for testing purposes, let's make something silly, something as basic as giving a string as an input, and return it on the form of a link (_https://www.string.com_);
 
-```cpp
+```pawn
 FormatSpecifier<'n'>(output[], const param[]) {
 	format(output, sizeof(output), "https://www.%s.com", param);
 }
@@ -1657,7 +1657,7 @@ FormatSpecifier<'n'>(output[], const param[]) {
 
 As simple as that, and thus, the mighty `%n` specifier (short for Newton because it's very cool and rocket-science complicated 😉 was born, let's test this champ out:
 
-```cpp
+```pawn
 printf("%n", "samp");
 ```
 
