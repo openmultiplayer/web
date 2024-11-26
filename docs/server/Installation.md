@@ -83,6 +83,7 @@ Put required plugins (e.g. `sscanf.dll`, `streamer.dll`) in the **plugins** fold
 :::warning
 
 If you use the following plugins in table, you must put a version of the plugin that is compatible with omp!
+
 Put the following plugins in the **../components** folder, not in the **../plugins** folder!
 
 :::
