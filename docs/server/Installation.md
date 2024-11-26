@@ -42,29 +42,20 @@ Extract the `.zip` or `.tar.gz` archive contents on your disk
 
 <kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(3).png)</kbd>
 
-> [!NOTE]
-> **components:** open.mp components
-> 
-> **filterscripts:** Your server filter script files (side scripts)
-> 
-> **gamemodes:** Your server game mode files (main scripts)
-> 
-> **models:** Your server custom models (textures .txd .dff)
-> 
-> **plugins:** Your server plugin files (legacy plugins)
-> 
-> **qawno:** Pawn editor program and your server includes
-> 
-> **scriptfiles:** INI files or other stuff.
-> 
-> 
-> **bans.json:** Ban list file
-> 
-> **config.json:** Server configuration file
-> 
-> **omp-server.exe:** open.mp server program
-> 
-> **omp-server.pdb:** open.mp server debugging file
+:::note
+- **components:** open.mp components
+- **filterscripts:** Your server filter script files (side scripts)
+- **gamemodes:** Your server game mode files (main scripts)
+- **models:** Your server custom models (textures .txd .dff)
+- **plugins:** Your server plugin files (legacy plugins)
+- **qawno:** Pawn editor program and your server includes
+- **scriptfiles:** INI files or other stuff.
+- **bans.json:** Ban list file
+- **config.json:** Server configuration file
+- **omp-server.exe:** open.mp server program
+- **omp-server.pdb:** open.mp server debugging file
+
+:::
 
 ## Step 3
 
@@ -74,8 +65,11 @@ Put your gamemode `.pwn` file in the **gamemodes** folder
 
 Put required includes (e.g. `sscanf2.inc`, `streamer.inc`) in the **qawno/include** folder
 
-> [!NOTE]
-> If you are using the YSI-4 includes in your game mode, update to [YSI-5.x](https://github.com/pawn-lang/YSI-Includes/releases)
+:::note
+
+If you are using the YSI-4 includes in your game mode, update to [YSI-5.x](https://github.com/pawn-lang/YSI-Includes/releases)
+
+:::
 
 ## Step 5
 
@@ -83,10 +77,12 @@ Put required plugins (e.g. `sscanf.dll`, `streamer.dll`) in the **plugins** fold
 
 <hr />
 
-> [!IMPORTANT] 
-> If you use the following plugins in table, you must put a version of the plugin that is compatible with omp!
-> 
-> Put the following plugins in the **../components** folder, not in the **../plugins** folder!
+:::warning
+
+If you use the following plugins in table, you must put a version of the plugin that is compatible with omp!
+Put the following plugins in the **../components** folder, not in the **../plugins** folder!
+
+:::
 
 | Plugin            | OMP                                                                          |
 |-------------------|------------------------------------------------------------------------------|
@@ -120,8 +116,11 @@ replace with
 ```
 then press **F5** to compile.
 
-> [!NOTE]
-> If you are get error or warning, see [Compiler errors and warnings](#compiler-errors-and-warnings)
+:::note
+
+If you are get error or warning, see [Compiler errors and warnings](#compiler-errors-and-warnings)
+
+:::
 
 ## Step 9
 
@@ -200,8 +199,11 @@ Enter strong password for rcon password:
 
 Press **CTRL + S** to save changes.
 
-> [!TIP]
-> There is a guide on how to convert `server.cfg` to `config.json` at https://www.open.mp/docs/server/config.json
+:::tip
+
+There is a guide on how to convert `server.cfg` to `config.json` at https://www.open.mp/docs/server/config.json
+
+:::
 
 ## Step 11
 
@@ -319,12 +321,15 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 <hr />
 
-> [!NOTE]
-> There is also an upgrade tool that attempts to find old untagged and const-incorrect code and upgrade it.
->
-> https://github.com/openmultiplayer/upgrade
->
->  Already included in `/qawno/upgrader` folder.
+:::note
+
+There is also an upgrade tool that attempts to find old untagged and const-incorrect code and upgrade it.
+
+https://github.com/openmultiplayer/upgrade
+
+Already included in `/qawno/upgrader` folder.
+
+:::
 
 ## Runtime errors and warnings
 ```log
