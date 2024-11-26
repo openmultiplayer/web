@@ -5,8 +5,11 @@
 
 **This tutorial is for those who want to transfer their gamemode from SA:MP server to open.mp server.**
 
-> [!NOTE] 
-> *If you are using the FCNPC plugin, please stop for now because this plugin does not work for open.mp currently.*
+:::note
+
+*If you are using the FCNPC plugin, please stop for now because this plugin does not work for open.mp currently.*
+
+:::
 
 ## Contents
 
