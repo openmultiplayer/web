@@ -10,7 +10,7 @@ If you are using the FCNPC plugin, please stop for now because this plugin does 
 
 Download the latest version of open.mp server files from [https://github.com/openmultiplayer/open.mp/releases](https://github.com/openmultiplayer/open.mp/releases/latest)
 
-![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(1).png)
+![](https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(1).png)
 
 - `open.mp-win-x86.zip` **Windows** Server
 - `open.mp-linux-x86.tar.gz` **Linux** Server
@@ -20,7 +20,7 @@ Download the latest version of open.mp server files from [https://github.com/ope
 
 Extract the `.zip` or `.tar.gz` archive contents on your disk
 
-![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(3).png)
+![](https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(3).png)
 
 :::note
 
@@ -80,7 +80,7 @@ Put the following plugins in the **../components** folder, not in the **../plugi
 
 Open the qawno IDE program located at **Server/qawno/qawno.exe**
 
-![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(5).png)
+![](https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(5).png)
 
 ## Step 7
 
@@ -102,23 +102,17 @@ replace with
 
 then press **F5** to compile.
 
-:::note
-
-If you are get error or warning, see [Compiler errors and warnings](#compiler-errors-and-warnings)
-
-:::
-
 ## Step 9
 
 Open **[config.json](https://www.open.mp/docs/server/config.json)** file with Notepad or other IDEs
 
-![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(9).png)
+![](https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(9).png)
 
 ## Step 10
 
 Edit **config.json**
 
-![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(11).png)
+![](https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(11).png)
 
 Find
 
@@ -211,7 +205,7 @@ Run the server
 
 Open the `omp-server.exe` program
 
-![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(10).png)
+![](https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(10).png)
 
 - **Linux**
 
@@ -220,6 +214,7 @@ Open the `omp-server.exe` program
 ```
 
 ## Compiler errors and warnings
+
 - **warning 213: tag mismatch: expected tag "?", but found none ("_")**:
 
 For example:
@@ -256,13 +251,15 @@ But you can ignore it for now:
 // Use #pragma warning disable 213
 ```
 
+<br />
+
 <hr />
 
 - **warning 234: function is deprecated (symbol "TextDrawColor") Use `TextDrawColour**
 
 Press **CTRL + F** in qawno and replace all `TextDrawColor` to `TextDrawColour`
 
-![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(7).png)
+![](https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(7).png)
 
 <br />
 
@@ -272,6 +269,8 @@ Or if you prefer you can use the mixed spellings:
 #define MIXED_SPELLINGS
 #include <open.mp>
 ```
+
+<br />
 
 <hr />
 
@@ -304,6 +303,8 @@ public MyFunction(string[])
 public MyFunction(const string[])
 ```
 
+<br />
+
 <hr />
 
 - **error 025: function heading differs from prototype**
@@ -323,6 +324,8 @@ public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Fl
 // ->
 public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 ```
+
+<br />
 
 <hr />
 
@@ -350,6 +353,8 @@ Already included in `/qawno/upgrader` folder.
 - The firewall has blocked the connection.
 
 **This warning will not affect the behavior of the server.**
+
+<br />
 
 <hr />
 
