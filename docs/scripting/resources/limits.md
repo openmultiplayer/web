@@ -16,7 +16,7 @@ tags: []
 | [Interiors](../functions/SetPlayerInterior)                   | 256             |
 | [Classes](../functions/AddPlayerClass)                        | 320             |
 | [Map Icons](../functions/SetPlayerMapIcon)<sup>(4)</sup>      | 100             |
-| [Race Checkpoints](..SetPlayerRaceCheckpoint)<sup>(4)</sup>   | 1               |
+| [Race Checkpoints](../functions/SetPlayerRaceCheckpoint)<sup>(4)</sup>   | 1               |
 | [Checkpoints](../functions/SetPlayerCheckpoint)<sup>(4)</sup> | 1               |
 | [Pickups](../functions/CreatePickup)<sup>(4)</sup>            | 4096            |
 | [Global 3D Labels](../functions/Create3DTextLabel)<sup>(4)</sup> | 1024            |
