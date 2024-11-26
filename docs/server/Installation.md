@@ -2,33 +2,15 @@
 
 :::note
 
-*If you are using the FCNPC plugin, please stop for now because this plugin does not work for open.mp currently.*
+If you are using the FCNPC plugin, please stop for now because this plugin does not work for open.mp currently.
 
 :::
-
-## Contents
-
-- [Step 1](#step-1)
-- [Step 2](#step-2)
-- [Step 3](#step-3)
-- [Step 4](#step-4)
-- [Step 5](#step-5)
-- [Step 6](#step-6)
-- [Step 7](#step-7)
-- [Step 8](#step-8)
-- [Step 9](#step-9)
-- [Step 10](#step-10)
-- [Step 11](#step-11)
-- [Compiler errors and warnings](#compiler-errors-and-warnings)
-- [Runtime errors and warnings](#runtime-errors-and-warnings)
-- [Useful documents](#useful-documents)
-- [Help](#help)
 
 ## Step 1
 
 Download the latest version of open.mp server files from [https://github.com/openmultiplayer/open.mp/releases](https://github.com/openmultiplayer/open.mp/releases/latest)
 
-<kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(1).png)</kbd>
+![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(1).png)
 
 - `open.mp-win-x86.zip` **Windows** Server
 - `open.mp-linux-x86.tar.gz` **Linux** Server
@@ -38,7 +20,7 @@ Download the latest version of open.mp server files from [https://github.com/ope
 
 Extract the `.zip` or `.tar.gz` archive contents on your disk
 
-<kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(3).png)</kbd>
+![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(3).png)
 
 :::note
 
@@ -98,7 +80,7 @@ Put the following plugins in the **../components** folder, not in the **../plugi
 
 Open the qawno IDE program located at **Server/qawno/qawno.exe**
 
-<kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(5).png)</kbd>
+![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(5).png)
 
 ## Step 7
 
@@ -106,14 +88,18 @@ Press **CTRL + O** then go to the **../gamemodes** folder and open your gamemode
 
 ## Step 8
 
-Find 
+Find
+
 ```pawn
 #include <a_samp>
 ```
+
 replace with
+
 ```pawn
 #include <open.mp>
 ```
+
 then press **F5** to compile.
 
 :::note
@@ -126,21 +112,24 @@ If you are get error or warning, see [Compiler errors and warnings](#compiler-er
 
 Open **[config.json](https://www.open.mp/docs/server/config.json)** file with Notepad or other IDEs
 
-<kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(9).png)</kbd>
+![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(9).png)
 
 ## Step 10
 
 Edit **config.json**
 
-<kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(11).png)</kbd>
+![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(11).png)
 
 Find
+
 ```json
 "main_scripts": [
     "gungame 1"
 ],
 ```
+
 replace with
+
 ```json
 "main_scripts": [
     "your_gamemode_amx_file_name 1"
@@ -150,10 +139,13 @@ replace with
 <hr />
 
 Find
+
 ```json
 "legacy_plugins": [],
 ```
+
 Specify required plugins
+
 ```json
 "legacy_plugins": [
     "crashdetect",
@@ -168,10 +160,13 @@ Specify required plugins
 <hr />
 
 Find
+
 ```json
 "side_scripts": []
 ```
+
 Specify your filterscripts
+
 ```json
 "side_scripts": [
     "filterscripts/file_name"
@@ -181,6 +176,7 @@ Specify your filterscripts
 <hr />
 
 Find
+
 ```json
 "rcon": {
     "allow_teleport": false,
@@ -188,7 +184,9 @@ Find
     "password": "changeme1"
 },
 ```
+
 Enter strong password for rcon password:
+
 ```json
 "rcon": {
     "allow_teleport": false,
@@ -213,7 +211,7 @@ Run the server
 
 Open the `omp-server.exe` program
 
-<kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(10).png)</kbd>
+![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(10).png)
 
 - **Linux**
 
@@ -232,12 +230,15 @@ TogglePlayerControllable(playerid, 1);
 TogglePlayerControllable(playerid, true);
 ```
 
+<br />
+
 ```pawn
 TextDrawFont(textid, 1);
 // ->
 TextDrawFont(textid, TEXT_DRAW_FONT_1);
 ```
 
+<br />
 
 ```pawn
 GivePlayerWeapon(playerid, 4, 1);
@@ -261,7 +262,9 @@ But you can ignore it for now:
 
 Press **CTRL + F** in qawno and replace all `TextDrawColor` to `TextDrawColour`
 
-<kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(7).png)</kbd>
+![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(7).png)
+
+<br />
 
 Or if you prefer you can use the mixed spellings:
 
@@ -313,6 +316,8 @@ public OnPlayerDeath(playerid, killerid, reason)
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 ```
 
+<br />
+
 ```pawn
 public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
 // ->
@@ -332,7 +337,8 @@ Already included in `/qawno/upgrader` folder.
 :::
 
 ## Runtime errors and warnings
-```log
+
+```
 [Info] Couldn't announce legacy network to open.mp list.
 [Info] [Server Error] Status: 406
 [Info] [Server Error] Message: {"error":"failed to query server: socket read timed out"}
@@ -347,7 +353,7 @@ Already included in `/qawno/upgrader` folder.
 
 <hr />
 
-```log
+```
 [Warning] Insufficient specifiers given to `format`: "?" < 1
 ```
 
@@ -366,6 +372,7 @@ format(string, sizeof(string), "OPEN%s", mp);
 ```
 
 ## Useful documents
+
 Check out the new scripting functions and callbacks: https://www.open.mp/docs/server/omp-functions
 
 If you are completely new to Pawn programming: [readme-beginner](https://github.com/openmultiplayer/omp-stdlib/blob/master/documentation/readme-beginner.md)
@@ -377,6 +384,7 @@ If you are an expert at Pawn programming: [readme-expert](https://github.com/ope
 Blog post: [Porting to open.mp](https://www.open.mp/blog/porting)
 
 ## Help
+
 If you still have issues running the server, please join the official open.mp Discord server: https://discord.gg/samp
 
 Ask in [#openmp-support](https://discord.com/channels/231799104731217931/966398440051445790) channel.
