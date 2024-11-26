@@ -41,6 +41,7 @@ Extract the `.zip` or `.tar.gz` archive contents on your disk
 <kbd>![](https://github.com/adib-yg/openmp-server-installation/blob/main/screenshots/Screenshot%20(3).png)</kbd>
 
 :::note
+
 - **components:** open.mp components
 - **filterscripts:** Your server filter script files (side scripts)
 - **gamemodes:** Your server game mode files (main scripts)
