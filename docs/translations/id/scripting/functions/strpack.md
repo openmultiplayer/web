@@ -21,7 +21,7 @@ Jumlah karakter dari string yang sudah dikemas
 
 ```c
 new str[32 char];
-strpac(str, "Salam kenal semua");
+strpack(str, "Salam kenal semua");
 ```
 
 ## Fungsi yang terkait
