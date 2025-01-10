@@ -5,7 +5,7 @@
 
 
 To get the client to run you need to download the launcher, and [omp-client.dll](https://assets.open.mp/omp-client.dll). \
-Then you need to put omp-client.dll in the AppData\Local\com.open.mp\omp\ folder of your prefix.\
+Then you need to put omp-client.dll in the AppData\Local\mp.open.launcher\omp\ folder of your prefix.\
 After that, you can execute the open mp launcher through the cli, or make a batch file like the one below, so that you can add it to your launcher of choice.
 
 ### Here is a sample .bat file for editing
