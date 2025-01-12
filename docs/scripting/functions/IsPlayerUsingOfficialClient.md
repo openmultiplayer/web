@@ -35,4 +35,5 @@ public OnPlayerConnect(playerid)
 
 ## Related Functions
 
+- [IsPlayerUsingOmp](IsPlayerUsingOmp): Check if the player is using the open.mp launcher.
 - [SendClientCheck](SendClientCheck): Perform a memory check on the client.
