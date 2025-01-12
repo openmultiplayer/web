@@ -64,6 +64,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 ## Related Functions
 
 - [IsPlayerUsingOfficialClient](IsPlayerUsingOfficialClient): Check if the player is using the official SA-MP client.
+- [IsPlayerUsingOmp](IsPlayerUsingOmp): Check if the player is using the open.mp launcher.
 
 ## Related Callbacks
 
