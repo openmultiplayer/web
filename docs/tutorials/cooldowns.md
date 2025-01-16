@@ -11,7 +11,7 @@ First I'll example the _bad_ way of doing a cooldown by using `SetTimer` to upda
 
 Say for example you have a specific action that can only be performed once every so many seconds, I see a lot of people (including Southclaws, many years ago) doing something like this:
 
-```c
+```pawn
 static bool:IsPlayerAllowedToDoThing[MAX_PLAYERS];
 
 OnPlayerInteractWithServer(playerid)
@@ -58,7 +58,7 @@ Now this is all well and good, it works, the player won't be able to do that thi
 
 Take another example here, this is a stopwatch that measures how long it takes for a player to do a simple point to point race:
 
-```c
+```pawn
 static
     StopWatchTimerID[MAX_PLAYERS],
     StopWatchTotalTime[MAX_PLAYERS];
@@ -96,7 +96,7 @@ If you call either of these functions at two different times, and subtract the f
 
 ### A Cooldown
 
-```c
+```pawn
 static PlayerAllowedTick[MAX_PLAYERS];
 
 OnPlayerInteractWithServer(playerid)
@@ -121,7 +121,7 @@ OnPlayerInteractWithServer(playerid)
 
 Or, alternatively the `gettime()` version:
 
-```c
+```pawn
 static PlayerAllowedSeconds[MAX_PLAYERS];
 
 OnPlayerInteractWithServer(playerid)
@@ -148,7 +148,7 @@ There's a lot less code there, no need for a public function or a timer. If you 
 
 (I'm using SendFormatMessage in this example)
 
-```c
+```pawn
 SendFormatMessage(
     playerid,
     -1,
@@ -163,7 +163,7 @@ That's a very basic example, it would be better to convert that MS value into a 
 
 Hopefully you can see how powerful this is to get intervals between events, let's look at another example
 
-```c
+```pawn
 static Stopwatch[MAX_PLAYERS];
 
 StartPlayerRace(playerid)
@@ -190,13 +190,13 @@ In this example, the tick count is saved to the player variable when he starts t
 
 Now lets break the code down a bit.
 
-```c
+```pawn
 new Stopwatch[MAX_PLAYERS];
 ```
 
 This is a global variable, we need to use this so we can save the tick count and retrieve the value at another point in time (in other words, use it in another function, later on)
 
-```c
+```pawn
 StartPlayerRace(playerid)
 {
     Stopwatch[playerid] = GetTickCount();
@@ -207,7 +207,7 @@ This is when the player starts the race, the tick count of now is recorded, if t
 
 Okay, we now have that player's variable set at 60,000, now he finishes the race 1 minute 40 seconds later:
 
-```c
+```pawn
 OnPlayerFinishRace(playerid)
 {
     new
