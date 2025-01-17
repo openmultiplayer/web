@@ -1,0 +1,35 @@
+---
+title: Turfs (formerly gangzones) module
+date: "2019-10-19T04:20:00"
+author: J0sh
+---
+
+გამარჯობა! მე ახლა დავასრულე ჩვენი Turf-ის დანერგვა სერვერზე და ვიფიქრე ამ მოდულის მიმოხილვა გამომექვეყნებინა და მეჩვენებინა, რომ ჩვენ არ დავტოვეთ ან არაფერი!
+
+```pawn
+// ქმნის Turf. მოთამაშეაიდის გავლა შესაძლებელია, რათა ის გახდეს მოთამაშის Turf.
+native Turf:Turf_Create(Float:minx, Float:miny, Float:maxx, Float:maxy, Player:owner = INVALID_PLAYER_ID);
+
+// შლის Turf-ს
+native Turf_Destroy(Turf:turf);
+
+// უჩვენებს Turf-ს მოთამაშეს ან მოთამაშეებს.
+// გაეგზავნება ყველა მოთამაშეს, თუ მოთამაშის ნომერია = INVALID_PLAYER_ID.
+native Turf_Show(Turf:turf, colour, Player:playerid = INVALID_PLAYER_ID);
+
+// მალავს Turf-ს მოთამაშისგან ან მოთამაშეებისგან.
+// გაეგზავნება ყველა მოთამაშეს, თუ მოთამაშის ნომერია = INVALID_PLAYER_ID.
+native Turf_Hide(Turf:turf, Player:playerid = INVALID_PLAYER_ID);
+
+// ანათებს Turf-ს მოთამაშისთვის ან მოთამაშეებისთვის.
+// გაეგზავნება ყველა მოთამაშეს, თუ მოთამაშის ნომერია = INVALID_PLAYER_ID.
+native Turf_Flash(Turf:turf, colour, Player:playerid = INVALID_PLAYER_ID);
+
+// აჩერებს Turf-ის ციმციმს მოთამაშეებისთვის.
+// გაეგზავნება ყველა მოთამაშეს, თუ მოთამაშის ნომერია = INVALID_PLAYER_ID.
+native Turf_StopFlashing(Turf:turf, Player:playerid = INVALID_PLAYER_ID);
+```
+
+ეს აშკარად განსხვავდება ტრადიციული API-სგან, მაგრამ არ ინერვიული, იქნება შეფუთვები ამ ტიპის ნივთებისთვის, რათა დარწმუნდეთ, რომ ნორმალური სკრიპტის ხელახალი კომპილაცია შესაძლებელია პრობლემების გარეშე და რედაქტირების გარეშე.
+
+კიდევ ერთი მნიშვნელოვანი ფაქტი, რომლის ცოდნაც შეიძლება გსურდეთ, არის ის, რომ ყველა Turf გაერთიანებულია და სკრიპტიდან უნდა შეიქმნას მაქსიმუმ 4,294,967,295 Turf. თუმცა, კლიენტს შეუძლია მხოლოდ 1024 Turf დამუშავება ერთდროულად.
