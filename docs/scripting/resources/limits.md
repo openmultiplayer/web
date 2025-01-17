@@ -9,36 +9,38 @@ tags: []
 | Type                                                          | Limit (0.3.7)   |
 | ------------------------------------------------------------- | --------------- |
 | Players                                                       | 1000            |
-| Vehicles<sup>(4)(6)</sup>                                     | 2000            |
-| Vehicle Models<sup>(1)</sup>                                  | Unlimited       |
-| Objects<sup>(4)(6)</sup>                                      | 1000            |
-| Virtual Worlds                                                | 2,147,483,647   |
-| Interiors                                                     | 256             |
-| Classes                                                       | 320             |
-| Map Icons<sup>(4)</sup>                                       | 100             |
-| Race Checkpoints<sup>(4)</sup>                                | 1               |
-| Checkpoints<sup>(4)</sup>                                     | 1               |
-| Pickups<sup>(4)</sup>                                         | 4096            |
-| Global 3D Labels<sup>(4)</sup>                                | 1024            |
-| Per-player 3D Text Labels<sup>(4)</sup>                       | 1024            |
-| Chat Bubble String                                            | 144 characters  |
+| [Vehicles](../functions/CreateVehicle)<sup>(4)(6)</sup>       | 2000            |
+| [Vehicle Models](../functions/CreateVehicle)<sup>(1)</sup>    | Unlimited       |
+| [Objects](../functions/CreateObject)<sup>(4)(6)</sup>         | 1000            |
+| [Virtual Worlds](../functions/SetPlayerVirtualWorld)          | 2,147,483,647   |
+| [Interiors](../functions/SetPlayerInterior)                   | 256             |
+| [Classes](../functions/AddPlayerClass)                        | 320             |
+| [Map Icons](../functions/SetPlayerMapIcon)<sup>(4)</sup>      | 100             |
+| [Race Checkpoints](../functions/SetPlayerRaceCheckpoint)<sup>(4)</sup>   | 1               |
+| [Checkpoints](../functions/SetPlayerCheckpoint)<sup>(4)</sup> | 1               |
+| [Pickups](../functions/CreatePickup)<sup>(4)</sup>            | 4096            |
+| [Global 3D Labels](../functions/Create3DTextLabel)<sup>(4)</sup> | 1024            |
+| [Per-player 3D Text Labels](../functions/CreatePlayer3DTextLabel)<sup>(4)</sup> | 1024            |
+| [Chat Bubble String](../functions/SetPlayerChatBubble)        | 144 characters  |
 | [SetObjectMaterialText](../functions/SetObjectMaterialText), [SetPlayerObjectMaterialText](../functions/SetPlayerObjectMaterialText) Text length | 2048 characters |
-| Gangzones                                                     | 1024            |
-| Menus                                                         | 128             |
-| Attached player objects                                       | 10              |
-| Player Variables                                              | 800             |
-| Actors (since 0.3.7)<sup>(4)(5)</sup>                         | 1000            |
-| Explosions                                                    | 10              |
+| [Gangzones](../functions/GangZoneCreate)                      | 1024            |
+| [Per-player Gangzones](../functions/CreatePlayerGangZone)     | 1024            |
+| [Menus](../functions/CreateMenu)                              | 128             |
+| [Attached player objects](../functions/SetPlayerAttachedObject) | 10            |
+| [Player Variables](../functions/SetPVarInt)                   | 800             |
+| [Server Variables (0.3.7 R2/omp)](../functions/SetSVarInt)    | Unlimited       |
+| [Actors](../functions/CreateActor) (since 0.3.7)<sup>(4)(5)</sup>| 1000         |
+| [Explosions](../functions/CreateExplosion)                    | 10              |
 
-## Server Properties
+## Server Properties - SA-MP / omp
 
-| Type                        | Limit (0.3.7)         |
-| --------------------------- | --------------------- |
-| Gamemodes                   | 16                    |
-| Filterscripts               | 16                    |
-| Text Input (Chat/Commands)  | 128 cells (512 bytes) |
-| Text Output                 | 144 cells (576 bytes) |
-| Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 characters         |
+| Type                        | SA-MP Limit (0.3.7)         | omp                   |
+| --------------------------- | --------------------- | --------------------- |
+| Gamemodes                   | 16                    | Unlimited             |
+| Filterscripts               | 16                    | Unlimited             |
+| Text Input (Chat/Commands)  | 128 cells (512 bytes) | 128 cells (512 bytes) |
+| Text Output                 | 144 cells (576 bytes) | 128 cells (512 bytes) |
+| Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 characters         | 24 characters         |
 
 ## Textdraws
 

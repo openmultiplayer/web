@@ -46,6 +46,7 @@ This page contains all the functions and callbacks that were added in open.mp
 | [GetDefaultPlayerColour](../scripting/functions/GetDefaultPlayerColour)                                 |
 | [PlayerHasClockEnabled](../scripting/functions/PlayerHasClockEnabled)                                   |
 | [IsPlayerUsingOfficialClient](../scripting/functions/IsPlayerUsingOfficialClient)                       |
+| [IsPlayerUsingOmp](../scripting/functions/IsPlayerUsingOmp)                                             |
 | [IsPlayerInDriveByMode](../scripting/functions/IsPlayerInDriveByMode)                                   |
 | [IsPlayerCuffed](../scripting/functions/IsPlayerCuffed)                                                 |
 | [SetPlayerAdmin](../scripting/functions/SetPlayerAdmin)                                                 |
