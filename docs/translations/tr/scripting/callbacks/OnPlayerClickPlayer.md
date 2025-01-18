@@ -1,14 +1,14 @@
 ---
 title: OnPlayerClickPlayer
-description: Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
+description: Bu geri çağırma oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
+Bu geri çağırma oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
 
-| Ad              | Açıklama                        |
+| Parametre              | Açıklama                        |
 | --------------- | ------------------------------- |
 | playerid        | Tıklayan oyuncunun id'si.       |
 | clickedplayerid | Tıklanılan oyuncunun id'si.     |
@@ -16,13 +16,13 @@ Bu callback oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağr�
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Bu callbackin diğer filterscriptlerde çağrılmasını engeller.
+1 - Bu geri çağırma diğer filterscriptlerde çağrılmasını engeller.
 
 0 - Diğer filterscriptler içinde aranması için pas geçilir.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
@@ -44,4 +44,4 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 ## Bağlı Fonksiyonlar
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Oyuncu bir textdrawa tıkladığında çağrılan callback.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Oyuncu bir textdrawa tıkladığında çağrılan geri çağırma.

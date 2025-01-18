@@ -1,23 +1,23 @@
 ---
 title: OnPlayerClickPlayerTextDraw
-description: This callback is called when a player clicks on a player-textdraw.
+description: Bu geri çağırma, bir oyuncu bir player-textdrawa tıkladığında çağrılır.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
 ## Açıklama
 
-Bu callback, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz ancak OnPlayerClickTextDraw'da çağırılır.
+Bu geri çağırma, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz ancak OnPlayerClickTextDraw'da çağırılır.
 
-| İsim         | Açıklama                            |
+| Parametre         | Açıklama                            |
 | ------------ | ----------------------------------- |
 | playerid     | Textdrawa tıklayan oyuncunun ID'si. |
 | playertextid | Tıklanan player-textdrawın ID'si.   |
 
-## Çalışınca vereceği sonuçlar
+## Çalışınca Vereceği Sonuçlar
 
 Filterscriptlerde her zaman ilk çağırılır, 1 değerini döndürmek diğer filterscriptlerin görmesini engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 new PlayerText:gPlayerTextDraw[MAX_PLAYERS];

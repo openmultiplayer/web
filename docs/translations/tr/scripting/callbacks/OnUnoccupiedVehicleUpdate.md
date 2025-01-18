@@ -24,7 +24,7 @@ Bu fonksiyon, oyuncunun istemcisi sürmediği bir aracın konumunu güncellediğ
 
 Filterscript dosyalarında her zaman ilk olarak çağrılır, bu nedenle 0 döndürmek diğer komut dosyalarının da görmesini engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_x, Float:new_y, Float:new_z, Float:vel_x, Float:vel_y, Float:vel_z)

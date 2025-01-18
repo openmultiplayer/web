@@ -22,7 +22,7 @@ Fonksiyon, bir oyuncu özel model indirmeleri istediğinde çağrılır.
 
 1 - İndirme isteği kabul edildi.
 
-## Örnekler
+## Örnek
 
 ```c
 #define DOWNLOAD_REQUEST_EMPTY        (0)

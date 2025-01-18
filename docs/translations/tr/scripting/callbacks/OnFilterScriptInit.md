@@ -1,14 +1,14 @@
 ---
 title: OnFilterScriptInit
-description: Bu callback bir filterscript çalıştırıldığında tetiklenir (yüklendiğinde).
+description: Bu geri çağırma bir filterscript çalıştırıldığında tetiklenir (yüklendiğinde).
 tags: []
 ---
 
 ## Açıklama
 
-Bu callback bir filterscript çalıştırıldığında tetiklenir (yüklendiğinde). Sadece çalıştırılan filterscript içinde çalışır.
+Bu geri çağırma bir filterscript çalıştırıldığında tetiklenir (yüklendiğinde). Sadece çalıştırılan filterscript içinde çalışır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnFilterScriptInit()

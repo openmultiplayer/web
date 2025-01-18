@@ -1,14 +1,14 @@
 ---
 title: OnVehicleStreamIn
-description: Called when a vehicle is streamed to a player's client.
+description: Bir araç, oyuncunun işlem alanına girdiğinde çağrılır.
 tags: ["vehicle"]
 ---
 
 ## Açıklama
 
-Bir araç, oyuncunun işlem alanına girdiğinde çağırılıyor.
+Bir araç, oyuncunun işlem alanına girdiğinde çağrılır.
 
-| İsim        | Açıklama                                               |
+| Parametre        | Açıklama                                               |
 | ----------- | ------------------------------------------------------ |
 | vehicleid   | Oyuncunun işlem aracına giren aracın ID'si.            |
 | forplayerid | İşlem alanına araç giren oyuncunun ID'si.              |
@@ -17,7 +17,7 @@ Bir araç, oyuncunun işlem alanına girdiğinde çağırılıyor.
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehicleStreamIn(vehicleid, forplayerid)

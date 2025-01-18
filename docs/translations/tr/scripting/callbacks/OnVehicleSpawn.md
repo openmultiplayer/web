@@ -1,32 +1,32 @@
 ---
 title: OnVehicleSpawn
-description: Bu callback bir araç respawn edildiğinde çağrılır.
+description: Bu geri çağırma bir araç respawn edildiğinde çağrılır.
 tags: ["vehicle"]
 ---
 
 :::warning
 
-Bu callback **sadece** araç **re**spawn edildiğinde çağrılır! CreateVehicle ve AddStaticVehicle(Ex) bu callbacki **tetiklemeyecektir**.
+Bu geri çağırma **sadece** araç **re**spawn edildiğinde çağrılır! CreateVehicle ve AddStaticVehicle(Ex) bu geri çağırmayı **tetiklemeyecektir**.
 
 :::
 
 ## Açıklama
 
-Bu callback bir araç respawn edildiğinde çağrılır.
+Bu geri çağırma bir araç respawn edildiğinde çağrılır.
 
-| İsim      | Açıklama                            |
+| Parametre      | Açıklama                            |
 | --------- | ----------------------------------- |
 | vehicleid | Spawnlanan aracın ID'si.            |
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Diğer filterscriptslerin bu callbacki çağırmasını önler.
+0 - Diğer filterscriptslerin bu geri çağırmayı çağırmasını önler.
 
-1 - Bu callbackin sonraki filterscriptslerde pas geçileceğini gösterir.
+1 - Bu geri çağırmanın sonraki filterscriptslerde pas geçileceğini gösterir.
 
 Her zaman ilk filterscriptslerde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehicleSpawn(vehicleid)

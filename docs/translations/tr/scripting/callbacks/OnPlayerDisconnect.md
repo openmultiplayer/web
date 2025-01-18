@@ -1,14 +1,14 @@
 ---
 title: OnPlayerDisconnect
-description: Bu callback oyuncu sunucudan ayrıldığında çağrılır.
+description: Bu geri çağırma oyuncu sunucudan ayrıldığında çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Bu callback oyuncu sunucudan ayrıldığında çağrılır.
+Bu geri çağırma oyuncu sunucudan ayrıldığında çağrılır.
 
-| İsim     | Açıklama                           |
+| Parametre     | Açıklama                           |
 | -------- | ---------------------------------- |
 | playerid | Sunucudan ayrılan oyuncunun id'si. |
 | reason   | Sunucudan ayrılma sebebi.          |
@@ -21,7 +21,7 @@ Bu callback oyuncu sunucudan ayrıldığında çağrılır.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerDisconnect(playerid, reason)
@@ -50,7 +50,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::tip
 
-Bu callback içerisinde bazı fonksiyonlar doğru bilgiler vermez (GetPlayerIp ve GetPlayerPos gibi)
+Bu geri çağırma içerisinde bazı fonksiyonlar doğru bilgiler vermez (GetPlayerIp ve GetPlayerPos gibi)
 
 :::
 

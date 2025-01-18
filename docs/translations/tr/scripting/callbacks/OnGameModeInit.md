@@ -1,14 +1,14 @@
 ---
 title: OnGameModeInit
-description: Bu callback oyun modu başladığında tetiklenir.
+description: Bu geri çağırma oyun modu başladığında tetiklenir.
 tags: []
 ---
 
 ## Açıklama
 
-Bu callback oyun modu başladığında tetiklenir.
+Bu geri çağırma oyun modu başladığında tetiklenir.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnGameModeInit()
@@ -22,7 +22,7 @@ public OnGameModeInit()
 
 :::tip
 
-Bu fonksiyon ayrıca bir filterscript içinde eğer oyun modu changemode veya gmx gibi komutlarla değiştirilirse oyun modu değişim kontrolünün yapılması için kullanılabilir.(filterscript yeniden yüklenmez)
+Bu geri çağırma ayrıca bir filterscript içinde eğer oyun modu changemode veya gmx gibi komutlarla değiştirilirse oyun modu değişim kontrolünün yapılması için kullanılabilir.(filterscript yeniden yüklenmez)
 
 :::
 

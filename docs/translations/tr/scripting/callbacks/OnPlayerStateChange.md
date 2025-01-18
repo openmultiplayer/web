@@ -20,7 +20,7 @@ Mevcut tüm oyuncu durumlarının listesi için [Oyuncu Durumları](../resources
 
 Filtercsript komutlarında her zaman ilk olarak çağrılır. 
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)

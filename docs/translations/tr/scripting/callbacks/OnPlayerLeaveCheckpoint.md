@@ -16,7 +16,7 @@ Bu fonksiyon, bir oyuncu SetPlayerCheckpoint tarafından kendisi için ayarlanan
 
 Filterscript komutlarında her zaman ilk olarak çağrılır. 
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerLeaveCheckpoint(playerid)

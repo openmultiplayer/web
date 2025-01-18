@@ -21,7 +21,7 @@ Bu fonksiyon, oyuncu aracına römork bağladığında çağrılır.
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnTrailerUpdate(playerid, vehicleid)

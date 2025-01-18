@@ -1,27 +1,27 @@
 ---
 title: OnActorStreamOut
-description: Bu callback, bir aktör oyuncunun akış alanından ayrıldığında tetiklenir.
+description: Bu geri çağırma, bir aktör oyuncunun akış alanından ayrıldığında tetiklenir.
 tags: []
 ---
 
 :::warning
 
-Bu callback SA-MP 0.3.7 sürümüyle birlikte eklenmiştir. Önceki SA-MP sürümlerinde çalışmaz.
+Bu geri çağırma SA-MP 0.3.7 sürümüyle birlikte eklenmiştir. Önceki SA-MP sürümlerinde çalışmaz.
 
 :::
 
 ## Açıklama
 
-Bu callback, bir aktör oyuncunun akış alanından ayrıldığında tetiklenir.
+Bu geri çağırma, bir aktör oyuncunun akış alanından ayrıldığında tetiklenir.
 
-| Name        | Description                                    |
+| Parametre   | Açıklama                                       |
 | ----------- | ---------------------------------------------- |
 | actorid     | Oyuncunun akış alanından ayrılan aktör id'si.  |
 | forplayerid | Aktörün akış alanından ayrıldığı oyuncu id'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 
-It is always called first in filterscripts.
+Her zaman filterscript'lerde ilk olarak çağrılır.
 
 ## Örnek
 
@@ -39,7 +39,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 :::tip
 
-Bu callback NPC'ler için de tetiklenebilir.
+Bu geri çağırma NPC'ler için de tetiklenebilir.
 
 :::
 

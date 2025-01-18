@@ -20,7 +20,7 @@ Bu fonksiyon, oyuncu doğduğunda çağrılır.(ör. SpawnPlayer'i çalıştırd
 
 Filterscript komutlarında her zaman ilk olarak çağırılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerSpawn(playerid)
