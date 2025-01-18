@@ -201,7 +201,7 @@ Birden fazla tuş bırakıldığında:
 if (RELEASED( KEY_FIRE | KEY_CROUCH ))
 ```
 
-## Örnekler
+## Örnek
 
 ### Oyuncu ateş etme tuşuna bastığında nitro ekleme.
 

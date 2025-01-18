@@ -1,14 +1,14 @@
 ---
 title: OnIncomingConnection
-description: Bu callback bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir.
+description: Bu geri çağırma bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir.
 tags: []
 ---
 
 ## Açıklama
 
-Bu callback bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir. BlockIpAddress kullanarak gelen bağlantıları engelleyebilirsiniz.
+Bu geri çağırma bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir. BlockIpAddress kullanarak gelen bağlantıları engelleyebilirsiniz.
 
-| Name         | Description                                   |
+| Parametre        | Açıklama                                   |
 | ------------ | --------------------------------------------- |
 | playerid     | Bağlantı kurmaya çalışan oyuncunun ID'si.     |
 | ip_address[] | Bağlantı kurmaya çalışan oyuncunun IP adresi. |
@@ -16,13 +16,13 @@ Bu callback bir IP adresi sunucuya erişim sağlamaya çalıştığında tetikle
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Diğer filterscriptlerin bu callbacki çalıştırmasını engeller.
+1 - Diğer filterscriptlerin bu geri çağırmayı engeller.
 
 0 - Diğer filterscriptler içinde aranması için pas geçilir.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnIncomingConnection(playerid, ip_address[], port)

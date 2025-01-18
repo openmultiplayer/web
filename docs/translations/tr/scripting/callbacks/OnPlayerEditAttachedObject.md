@@ -1,14 +1,14 @@
 ---
 title: OnPlayerEditAttachedObject
-description: Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
+description: Bu geri çağırma oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
+Bu geri çağırma oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
 
-| Ad                     | Açıklama                                                          |
+| Parametre                     | Açıklama                                                          |
 |------------------------|-------------------------------------------------------------------|
 | playerid               | Düzenlemeyi bitiren oyuncunun id'si.                              |
 | EDIT_RESPONSE:response | Eğer iptal ettiyse 0, kaydet tuşuna bastıysa 1 değerini döndürür. |
@@ -33,7 +33,7 @@ Bu callback oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağr
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 enum attached_object_data

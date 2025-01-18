@@ -1,14 +1,14 @@
 ---
 title: OnObjectMoved
-description: Bu callback obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
+description: Bu geri çağırma obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
 tags: []
 ---
 
 ## Açıklama
 
-Bu callback obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
+Bu geri çağırma obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
 
-| Ad       | Açıklama             |
+| Parametre       | Açıklama             |
 | -------- | -------------------- |
 | objectid | Hareket eden obje id |
 
@@ -16,7 +16,7 @@ Bu callback obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
 
 Her zaman öncelikle filterscriptler içerisinde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnObjectMoved(objectid)
@@ -30,7 +30,7 @@ public OnObjectMoved(objectid)
 
 :::tip
 
-SetObjectPos bu callback içerisinde çalışmaz. Bunu düzeltmek için objeyi yeniden oluşturun.
+SetObjectPos bu geri çağırma içerisinde çalışmaz. Bunu düzeltmek için objeyi yeniden oluşturun.
 
 :::
 
@@ -40,4 +40,4 @@ SetObjectPos bu callback içerisinde çalışmaz. Bunu düzeltmek için objeyi y
 - [MovePlayerObject](../functions/MovePlayerObject.md): Oyuncu objesini hareket ettirme fonksiyonu.
 - [IsObjectMoving](../functions/IsObjectMoving.md): Objenin hareket edip etmediğini kontrol etme fonksiyonu.
 - [StopObject](../functions/StopObject.md): Hareket eden objeyi durdurur.
-- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Oyuncu objesi hareket etmeyi bıraktığında çağrılan callback.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Oyuncu objesi hareket etmeyi bıraktığında çağrılan geri çağırma.

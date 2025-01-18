@@ -1,14 +1,14 @@
 ---
 title: OnPlayerDeath
-description: This callback is called when a player dies, either by suicide or by being killed by another player.
+description: Bu geri çağırma, bir oyuncu öldüğünde, intihar ettiğinde ya da başka bir oyuncu tarafından öldürüldüğünde çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Bu callback bir oyuncu öldüğünde, intihar ettiğinde yada başka bir oyuncu tarafından öldürüldüğünde çağırılır.
+Bu geri çağırma bir oyuncu öldüğünde, intihar ettiğinde ya da başka bir oyuncu tarafından öldürüldüğünde çağırılır.
 
-| İsim          | Açıklama                                                                                    |
+| Parametre          | Açıklama                                                                                    |
 |---------------|---------------------------------------------------------------------------------------------|
 | playerid      | Ölen oyuncunun ID'si.                                                                       |
 | killerid      | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu yoksa INVALID_PLAYER_ID değeri döndürülür. |
@@ -16,13 +16,13 @@ Bu callback bir oyuncu öldüğünde, intihar ettiğinde yada başka bir oyuncu 
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Diğer filterscriptlerin bu callbacki çağırmasını engeller.
+0 - Diğer filterscriptlerin bu geri çağırmayı çağırmasını engeller.
 
-1 - Bu callbackin sonraki filterscriptlere geçeceğini belirtir.
+1 - Bu geri çağırmanın sonraki filterscriptlere geçeceğini belirtir.
 
 Filterscriptlerde her zaman ilk olarak çağırılır.
 
-## Örnekler
+## Örnek
 
 ```c
 new PlayerDeaths[MAX_PLAYERS];

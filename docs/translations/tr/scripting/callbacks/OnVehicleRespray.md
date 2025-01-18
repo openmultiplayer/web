@@ -1,14 +1,14 @@
 ---
 title: OnVehicleRespray
-description: Bu callback, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağazasından çıktığında çağrılır.
+description: Bu geri çağırma, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağazasından çıktığında çağrılır.
 tags: ["vehicle"]
 ---
 
 ## Açıklama
 
-Bu callback, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağazasından çıktığında çağrılır. Dikkat edin, isim yanıltabilir. Pay 'n' Spray mağazaları bu callbacki kullanamaz.
+Bu geri çağırma, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağazasından çıktığında çağrılır. Dikkat edin, isim yanıltabilir. Pay 'n' Spray mağazaları bu geri çağırmayı kullanamaz.
 
-| İsim      | Açıklama                                  |
+| Parametre      | Açıklama                                  |
 | --------- | ----------------------------------------- |
 | playerid  | Aracı kullanan oyuncu ID'si.              |
 | vehicleid | Yeniden boyanan aracın ID'si.             |
@@ -19,7 +19,7 @@ Bu callback, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağazasın
 
 Her zaman ilk olarak oyun modunda çağrılır, bu yüzden 0 döndürerek diğer filterscriptslerin görmesini engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehicleRespray(playerid, vehicleid, color1, color2)
@@ -35,7 +35,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::tip
 
-Bu callback ChangeVehicleColor tarafından çağrılamaz. Pay 'n' Spray için kullanılamaz, sadece mod mağazaları için kullanılabilir.
+Bu geri çağırma ChangeVehicleColor tarafından çağrılamaz. Pay 'n' Spray için kullanılamaz, sadece mod mağazaları için kullanılabilir.
 
 Buradan düzeltilebilir: http://pastebin.com/G81da7N1
 
@@ -43,7 +43,7 @@ Buradan düzeltilebilir: http://pastebin.com/G81da7N1
 
 :::warning
 
-Bilinen Bug(lar): Mod mağazasında bir parçayı önizlemek bu callbacki çalıştırabilir.
+Bilinen Bug(lar): Mod mağazasında bir parçayı önizlemek bu geri çağırmayı çalıştırabilir.
 
 :::
 

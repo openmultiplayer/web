@@ -1,6 +1,6 @@
 ---
 title: OnVehicleSirenStateChange
-description: Bu callback bir aracın siren durumu değiştiğinde çağrılır.
+description: Bu geri çağırma bir aracın siren durumu değiştiğinde çağrılır.
 tags: ["vehicle"]
 ---
 
@@ -8,9 +8,9 @@ tags: ["vehicle"]
 
 ## Açıklama
 
-Bu callback bir aracın siren durumu değiştiğinde çağrılır.
+Bu geri çağırma bir aracın siren durumu değiştiğinde çağrılır.
 
-| İsim      | Açıklama                                            |
+| Parametre      | Açıklama                                            |
 | --------- | --------------------------------------------------- |
 | playerid  | Siren durumunu değiştiren oyuncu ID'si (sürücü).    |
 | vehicleid | Siren durumu değiştirilen araç ID'si.               |
@@ -18,13 +18,13 @@ Bu callback bir aracın siren durumu değiştiğinde çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Oyun modunda bu callbackin kullanılmasını önler.
+1 - Oyun modunda bu geri çağırmanın kullanılmasını önler.
 
-0 - Bu callbackin oyun modunda pas geçileceğini gösterir.
+0 - Bu geri çağırmanın oyun modunda pas geçileceğini gösterir.
 
 Her zaman ilk filterscriptslerde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
@@ -45,7 +45,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 :::tip
 
-Bu callback sadece bir aracın siren durumu değiştirildiğinde kullanılır, alternatif (H'ye basılı tutma) sirende kullanılmaz.
+Bu geri çağırma sadece bir aracın siren durumu değiştirildiğinde kullanılır, alternatif (H'ye basılı tutma) sirende kullanılmaz.
 
 :::
 

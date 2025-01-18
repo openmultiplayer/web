@@ -17,7 +17,7 @@ Bu fonksiyon, bir oyuncu menüden bir öğe seçtiğinde (ShowMenuForPlayer) ça
 
 Oyun modunda her zaman ilk olarak çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 new Menu:MyMenu;

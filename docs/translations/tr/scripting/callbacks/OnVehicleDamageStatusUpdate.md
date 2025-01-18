@@ -1,6 +1,6 @@
 ---
 title: OnVehicleDamageStatusUpdate
-description: Bu fonksiyon, aracın kapıları, farları, lastikleri veya panelleri gibi araç elemanları hasar aldığında çağrılır.
+description: Bu geri çağırma, aracın kapıları, farları, lastikleri veya panelleri gibi araç elemanları hasar aldığında çağrılır.
 tags: ["vehicle"]
 ---
 
@@ -12,7 +12,7 @@ Araç hasar değerlerinin ne işe yaradığını görmek için bkz. [here](../re
 
 ## Açıklama
 
-Bu fonksiyon, aracın kapıları, farları, lastikleri veya panelleri gibi araç elemanları hasar aldığında çağrılır.
+Bu geri çağırma, aracın kapıları, farları, lastikleri veya panelleri gibi araç elemanları hasar aldığında çağrılır.
 
 | Parametre | Açıklama                                                                                                |
 | --------- | ------------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ Bu fonksiyon, aracın kapıları, farları, lastikleri veya panelleri gibi araç
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehicleDamageStatusUpdate(vehicleid, playerid)

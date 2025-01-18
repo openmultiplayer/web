@@ -16,7 +16,7 @@ Fonksiyon, Bir oyuncu SHIFT'e basarak veya 'Spawn' düğmesine tıklayarak sın�
 
 Filterscript komut dosyalarında her zaman ilk olarak çağrılır, bu nedenle 0 döndürmek diğer komut dosyalarının da görmesini engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerRequestSpawn(playerid)

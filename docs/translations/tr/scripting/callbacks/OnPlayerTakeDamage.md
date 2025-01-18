@@ -24,7 +24,7 @@ Bu fonksiyon, oyuncu hasar aldığında çağrılır.
 
 Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle 1 döndürmek diğer Filterscript komutlarının görmesini engeller. 
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)|

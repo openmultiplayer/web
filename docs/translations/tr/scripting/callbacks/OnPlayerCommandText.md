@@ -1,14 +1,14 @@
 ---
 title: OnPlayerCommandText
-description: Bu callback oyuncu chat ekranında herhangi bir komut kullandığında çağrılır.
+description: Bu geri çağırma oyuncu chat ekranında herhangi bir komut kullandığında çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Bu callback oyuncu chat ekranında herhangi bir komut kullandığında çağrılır. '/' ile başlayan her şey komuttur ve bu callbacki çağırır. (örnek: /yardim)
+Bu geri çağırma oyuncu chat ekranında herhangi bir komut kullandığında çağrılır. '/' ile başlayan her şey komuttur ve bu fonksiyonu çağırır. (örnek: /yardim)
 
-| Ad        | Açıklama                                 |
+| Parametre        | Açıklama                                 |
 | --------- | ---------------------------------------- |
 | playerid  | Komutu kullanan oyuncunun id'si.         |
 | cmdtext[] | Kullanılan komut ('/' işareti de dahil). |
@@ -17,7 +17,7 @@ Bu callback oyuncu chat ekranında herhangi bir komut kullandığında çağrıl
 
 Her zaman öncelikle filterscriptlerde çalışır ve 1 değerini döndürmek diğer scriptlerin çağrılmasını engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Bu callback NPC tarafından da çağrılabilir.
+Bu geri çağırma NPC tarafından da çağrılabilir.
 
 :::
 

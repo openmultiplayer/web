@@ -17,7 +17,7 @@ Bu fonksiyon, bir oyuncu başka bir oyuncunun istemcisinden stream alanından ç
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerStreamOut(playerid, forplayerid)

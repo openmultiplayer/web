@@ -17,7 +17,7 @@ Bu fonksiyon, bir araç imha edildiğinde çağrılır. - patladığında veya a
 
 Filterscript içerisinde her zaman ilk olarak çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehicleDeath(vehicleid, killerid)

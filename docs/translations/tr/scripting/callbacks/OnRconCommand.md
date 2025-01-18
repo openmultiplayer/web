@@ -16,7 +16,7 @@ Bu fonksiyon, RCON oturumu açmış oyuncu RCON komutu kullandığında çağrı
 
 Filterscript komut dosyalarında her zaman ilk olarak çağrılır, bu nedenle 1 döndürmek oyun modunun görmesini engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnRconCommand(cmd[])

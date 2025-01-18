@@ -1,23 +1,23 @@
 ---
 title: OnPlayerClickTextDraw
-description: This callback is called when a player clicks on a textdraw or cancels the select mode with the Escape key.
+description: Bu geri çağırma, bir oyuncu bir textdrawa tıkladığında veya Escape tuşu ile seçim modunu iptal ettiğinde çağrılır.
 tags: ["player", "textdraw"]
 ---
 
 ## Açıklama
 
-Bu callback bir oyuncu bir textdrawa tıkladığında yada ESC tuşu ile seçim modunu iptal ettiğinde çağırılır.
+Bu geri çağırma bir oyuncu bir textdrawa tıkladığında ya da ESC tuşu ile seçim modunu iptal ettiğinde çağırılır.
 
-| İsim      | Açıklama                                                                                |
+| Parametre      | Açıklama                                                                                |
 | --------- | --------------------------------------------------------------------------------------- |
 | playerid  | Textdrawa tıklayan oyuncunun ID'si.                                                     |
-| clickedid | Tıklanan tectdraw ID'si. Eğer seçim iptal edilirse INVALID_TEXT_DRAW değeri döndürülür. |
+| clickedid | Tıklanan textdraw ID'si. Eğer seçim iptal edilirse INVALID_TEXT_DRAW değeri döndürülür. |
 
 ## Çalışınca Vereceği Sonuçlar
 
 Filterscriptlerde her zaman ilk çağırılır, 1 değerini döndürmek diğer filterscriptlerin görmesini engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 new Text:gTextDraw;
@@ -63,7 +63,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Tıklanılabilir bölge TextDrawTextSize tarafından belirlenir. X ve Y paremetreleri sıfır yada negatif bir değer olmamalıdır. Bu callbackte CancelSelectTextDraw koşulsuz olarak kullanmayın, bu sonsuz bir döngü ile sonuçlanır.
+Tıklanılabilir bölge TextDrawTextSize tarafından belirlenir. X ve Y parametreleri sıfır ya da negatif bir değer olmamalıdır. Bu geri çağırmada CancelSelectTextDraw koşulsuz olarak kullanmayın, bu sonsuz bir döngü ile sonuçlanır.
 
 :::
 

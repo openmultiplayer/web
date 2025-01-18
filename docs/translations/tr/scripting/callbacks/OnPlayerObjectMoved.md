@@ -17,7 +17,7 @@ Fonksiyon, bir oyuncu objesi MovePlayerObject'den sonra hareket ettirildiğinde 
 
 Filterscript komutlarında her zaman ilk olarak çağrılır. 
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerObjectMoved(playerid, objectid)

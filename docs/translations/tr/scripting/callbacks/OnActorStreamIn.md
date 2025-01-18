@@ -1,29 +1,29 @@
 ---
 title: OnActorStreamIn
-description: Bu callback, bir aktör başka bir oyuncunun akış alanına girdiğinde tetiklenir.
+description: Bu geri çağırma, bir aktör başka bir oyuncunun akış alanına girdiğinde tetiklenir.
 tags: []
 ---
 
 :::warning
 
-Bu callback SA-MP 0.3.7 sürümünde eklendi ve önceki sürümlerde çalışmaz.
+Bu geri çağırma SA-MP 0.3.7 sürümünde eklendi ve önceki sürümlerde çalışmaz.
 
 :::
 
 ## Açıklama
 
-Bu callback, bir aktör başka bir oyuncunun akış alanına girdiğinde tetiklenir.
+Bu geri çağırma, bir aktör başka bir oyuncunun akış alanına girdiğinde tetiklenir.
 
-| Adı         | Açıklama                                 |
+| Parametre   | Açıklama                                 |
 | ----------- | ---------------------------------------- |
 | actorid     | Oyuncunun akışına giren aktörün id'si.   |
 | forplayerid | Aktörün akışına girdiği oyuncunun id'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 
-It is always called first in filterscripts.
+Her zaman filterscript'lerde ilk olarak çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnActorStreamIn(actorid, forplayerid)
@@ -39,7 +39,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 :::tip
 
-Bu callback NPC'ler için de tetiklenebilir.
+BU geri çağırma NPC'ler için de tetiklenebilir.
 
 :::
 
