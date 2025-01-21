@@ -78,60 +78,62 @@ git clone https://github.com/openmultiplayer/wiki.git
 
 ### Metadata
 
-The first thing in _any_ document here should be metadata:
+### Метадата
+
+Прва ствар у _било ком_ документу овде треба да буду метаподаци:
 
 ```mdx
 ---
-title: My Documentation
-description: This is a page about stuff and things and burgers, yay!
+title: Моја документација
+description: Ово је страна о стварима и стварчицама и бургерима, јупи!
 ---
 ```
 
-Every page should include a title and a description.
+Свака страна треба да укључује наслов и опис.
 
-For a full list of what can go between the `---`, check out [the Docusaurus documentation](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
+За комплетну листу онога што може ићи између `---`, проверите [документацију за Докусорус](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
 
-### Headings
+### Наслови
 
-Don't create a level 1 heading (`<h1>`) with `#` as this is generated automatically. Your first heading should _always_ be `##`
+Немојте креирати наслов нивоа 1 (`<h1>`) са `#`, јер се он аутоматски генерише. Ваш први наслов треба _увек_ да буде `##`.
 
 - ❌
 
   ```md
-  # My Title
+  # Мој наслов
 
-  This is documentation for ...
+  Ово је документација за ...
 
-  # Sub-Section
+  # Подсекција
   ```
 
 - ✔
 
   ```md
-  This is documentation for ...
+  Ово је документација за ...
 
-  ## Sub-Section
+  ## Подсекција
   ```
 
-### Use `Code` Snippets For Technical References
+### Користите `Code` за техничке референце
 
-When writing a paragraph that contains function names, numbers, expressions or anything that's not standard written language, surround them with \`backticks\` like that. This makes it easier to separate language for describing things from references to technical elements such as function names and pieces of code.
+Када пишете пасус који садржи имена функција, бројеве, изразе или било шта што није стандардни писани језик, окружите их са \`обратним апострофима\`. Ово олакшава раздвајање описног језика од техничких елемената као што су имена функција и делови кода.
 
 - ❌
 
-  > The fopen function will return a value with a tag of type File:, there is no problem on that line as the return value is being stored to a variable also with a tag of File: (note the cases are the same too). However on the next line the value 4 is added to the file handle. 4 has no tag [...]
+  > Функција fopen ће вратити вредност са ознаком типа File:, нема проблема на тој линији јер се вредност чува у променљивој такође са ознаком File: (приметите да су случајеви исти). Међутим, на следећој линији се вредности 4 додаје хендлу фајла. 4 нема ознаку [...]
 
 - ✔
 
-  > The `fopen` function will return a value with a tag of type `File:`, there is no problem on that line as the return value is being stored to a variable also with a tag of `File:` (note the cases are the same too). However on the next line the value `4` is added to the file handle. `4` has no tag
+  > Функција `fopen` ће вратити вредност са ознаком типа `File`:, нема проблема на тој линији јер се вредност чува у променљивој такође са ознаком `File`: (приметите да су случајеви исти). Међутим, на следећој линији се вредности `4` додаје хендлу фајла. `4` нема ознаку.
 
-In the above example, `fopen` is a function name, not an English word, so surrounding it with `code` snippet markers helps distinguish it from other content.
+У горњем примеру, `fopen` је име функције, а не енглеска реч, па њено окружење са `code` маркерима помаже у разликовању од другог садржаја.
 
-Also, if the paragraph is referring to a block of example code, this helps the reader associate the words with the example.
+Такође, ако се пасус односи на блок пример кода, ово помаже читаоцу да повезује речи са примером.
 
-### Tables
+### Табеле
 
-If a table has headings, they go in the top part:
+Ако табела има наслове, они иду у горњи део:
 
 - ❌
 
@@ -158,13 +160,13 @@ If a table has headings, they go in the top part:
   | < 250   | On fire (will explode seconds later) |
   ```
 
-## Migrating from SA-MP Wiki
+## Миграција са SA-MP Wiki
 
-Most of the content has been moved, but if you find a page that's missing, here's a short guide for converting content to Markdown.
+Већина садржаја је премештена, али ако наиђете на страну која недостаје, ево кратког водича за конвертовање садржаја у Markdown.
 
-### Getting the HTML
+### Добијање HTML-а
 
-1. Click this button
+1. Кликните ово дугме:
 
    (Firefox)
 
@@ -174,11 +176,11 @@ Most of the content has been moved, but if you find a page that's missing, here'
 
    ![image](images/contributing/f62bb8112543.png)
 
-2. Hover the top left of the main wiki page, in the left margin or the corner until you see `#content`
+2. Пређите мишем преко горњег левог дела главне wiki стране, у левом маргину или углу, док не видите `#content`.
 
    ![image](images/contributing/65761ffbc429.png)
 
-   Or search for `<div id=content>`
+   Или претражите `<div id=content>`
 
    ![image](images/contributing/77befe2749fd.png)
 
@@ -186,34 +188,34 @@ Most of the content has been moved, but if you find a page that's missing, here'
 
    ![image](images/contributing/8c7c75cfabad.png)
 
-   Now you have _only_ the HTML code for the actual _content_ of the page, the stuff we care about, and you can convert it to Markdown.
+   Сада имате _само_ HTML код за стварни садржај странице, што је оно што нам је потребно, и можете га конвертовати у Markdown.
 
-### Converting HTML to Markdown
+### Конвертовање HTML-а у Markdown
 
-For converting basic HTML (no tables) to Markdown use:
+За конвертовање основног HTML-а (без табела) у Markdown користите:
 
 https://mixmark-io.github.io/turndown/
 
 ![image](images/contributing/77f4ea555bbb.png)
 
-^^ Notice now it screwed up the table completely...
+^^ Обратите пажњу како је погрешно конвертовао табелу...
 
-### HTML Tables to Markdown Tables
+### HTML табеле у Markdown табеле
 
-Because the above tool does not support tables, use this tool:
+Пошто горњи алат не подржава табеле, користите овај алат:
 
 https://jmalarcon.github.io/markdowntables/
 
-And copy only the `<table>` element in:
+И копирајте само `<table>` елемент:
 
 ![image](images/contributing/57f171ae0da7.png)
 
-### Cleaning Up
+### Чишћење
 
-The conversion likely won't be perfect. So you'll have to do a bit of manual cleanup. The formatting extensions listed above should help with that but you may still need to just spend some time doing manual work.
+Конверзија вероватно неће бити савршена. Мораћете ручно да исправљате неке детаље. Екстензије за форматирање поменуте изнад могу помоћи у томе, али можда ће ипак бити потребно уложити мало труда.
 
-If you don't have time, don't worry! Submit an unfinished draft and someone else can pick up where you left off!
+Ако немате времена, нема везе! Поднесите незавршен нацрт, па ће неко други наставити где сте стали!
 
-## License Agreement
+## Уговор о лиценцирању
 
-All open.mp projects have a [Contributor License Agreement](https://cla-assistant.io/openmultiplayer/homepage). This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
+Сви open.mp пројекти имају [Споразум о лиценцирању доприноса](https://cla-assistant.io/openmultiplayer/homepage). Ово углавном значи да пристајете да ми користимо ваш рад и ставимо га под лиценцу отвореног кода. Када први пут отворите Pull Request, CLA-Assistant бот ће објавити линк где можете потписати споразум.
