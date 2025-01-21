@@ -1,14 +1,14 @@
 ---
 title: OnPlayerConnect
-description: Bu callback oyuncu sunucuya bağlandığında çağrılır.
+description: Bu geri çağırma oyuncu sunucuya bağlandığında çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Bu callback oyuncu sunucuya bağlandığında çağrılır.
+Bu geri çağırma oyuncu sunucuya bağlandığında çağrılır.
 
-| Ad       | Açıklama                  |
+| Parametre       | Açıklama                  |
 | -------- | ------------------------- |
 | playerid | Bağlanan oyuncunun id'si. |
 
@@ -20,7 +20,7 @@ Bu callback oyuncu sunucuya bağlandığında çağrılır.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerConnect(playerid)
@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Bu callback NPC tarafından da çağrılabilir.
+Bu geri çağırma NPC tarafından da çağrılabilir.
 
 :::
 

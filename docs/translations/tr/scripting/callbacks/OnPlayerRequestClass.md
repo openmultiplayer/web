@@ -17,7 +17,7 @@ Fonksiyon, bir oyuncu sınıf seçiminde sınıfını değiştirdiğinde (ve sı
 
 Filterscript komutlarında her zaman ilk olarak çağrılır. 
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerRequestClass(playerid,classid)

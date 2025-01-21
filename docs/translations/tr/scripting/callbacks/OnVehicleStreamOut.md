@@ -1,14 +1,14 @@
 ---
 title: OnVehicleStreamOut
-description: This callback is called when a vehicle is streamed out for a player's client (it's so far away that they can't see it).
+description: Bu geri çağırma, bir araç oyuncunun istemcisinden çıktığında (göremeyeceği kadar uzakta olduğunda) çağrılır.
 tags: ["vehicle"]
 ---
 
 ## Açıklama
 
-Bir araç, oyuncunun işlem alanının dışına çıktığında çağırılır(Oyuncuların göremeyeceği kadar uzakta).
+Bir araç, oyuncunun işlem alanının dışına çıktığında çağırılır (Oyuncuların göremeyeceği kadar uzakta).
 
-| İsim        | Açıklama                                                     |
+| Parametre        | Açıklama                                                     |
 | ----------- | ------------------------------------------------------------ |
 | vehicleid   | İşlem alanının dışına çıkan aracın ID'si.                    |
 | forplayerid | İşlem alanından araç çıkan oyuncunun ID'si.                  |
@@ -17,7 +17,7 @@ Bir araç, oyuncunun işlem alanının dışına çıktığında çağırılır(
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehicleStreamOut(vehicleid, forplayerid)

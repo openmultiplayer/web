@@ -1,14 +1,14 @@
 ---
 title: OnEnterExitModShop
-description: Bu callback, bir oyuncu modifiye garajlarından birine giriş veya çıkış yaptığında tetiklenir.
+description: Bu geri çağırma, bir oyuncu modifiye garajlarından birine giriş veya çıkış yaptığında tetiklenir.
 tags: []
 ---
 
 ## Açıklama
 
-Bu callback, bir oyuncu modifiye garajlarından birine giriş veya çıkış yaptığında tetiklenir.
+Bu geri çağırma, bir oyuncu modifiye garajlarından birine giriş veya çıkış yaptığında tetiklenir.
 
-| Name       | Description                                                                  |
+| Parametre      | Açıklama                                                                  |
 | ---------- | ---------------------------------------------------------------------------- |
 | playerid   | Modifiye garajına giriş/çıkış yapan oyuncunun ID'si.                         |
 | enterexit  | Giriş yaptıysa 1, çıkış yaptıysa 2 değerini alır.                            |
@@ -18,7 +18,7 @@ Bu callback, bir oyuncu modifiye garajlarından birine giriş veya çıkış yap
 
 Her zaman öncelikle filterscriptler içerisinde çağrılır.
 
-## Örnekler
+## Örnek
 
 ```
 public OnEnterExitModShop(playerid, enterexit, interiorid)

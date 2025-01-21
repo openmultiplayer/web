@@ -18,7 +18,7 @@ Bu fonksiyon, herhangi bir araca modifiye uygulandığında çağrılır.
 
 Oyun modunda her zaman ilk olarak çağrılır, bu nedenle 0 döndürülürse, diğer filterscriptleri görmesi engellenir.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehicleMod(playerid, vehicleid, componentid)

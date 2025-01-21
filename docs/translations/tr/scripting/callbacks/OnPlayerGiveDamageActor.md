@@ -1,6 +1,6 @@
 ---
 title: OnPlayerGiveDamageActor
-description: Bu callback, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
+description: Bu geri çağırma, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
 tags: ["player"]
 ---
 
@@ -8,9 +8,9 @@ tags: ["player"]
 
 ## Açıklama
 
-Bu callback, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
+Bu geri çağırma, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
 
-| İsim            | Açıklama                                        |
+| Parametre            | Açıklama                                        |
 |-----------------|-------------------------------------------------|
 | playerid        | Hasar veren oyuncunun ID'si.                    |
 | damaged_actorid | Hasar alan NPC'nin ID'si.                       |
@@ -20,13 +20,13 @@ Bu callback, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1- Callback diğer filterscriptlerde çağırılmayacak.
+1- Geri çağırma diğer filterscriptlerde çağırılmayacak.
 
-0 - Callback diğer filterscriptlerde de çağırılacak.
+0 - Geri çağırma diğer filterscriptlerde de çağırılacak.
 
-Her zaman ilk önce filterscriptlerde çağırılır, yani 1 değerini döndürmek diğer filterscriptlerin bu callbacki görmesini engeller.
+Her zaman ilk önce filterscriptlerde çağırılır, yani 1 değerini döndürmek diğer filterscriptlerin bu geri çağırmayı görmesini engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
@@ -59,7 +59,7 @@ Bu fonksiyon hasar almayan NPC'lerde çağırılmaz, (NPC'ler varsayılan olarak
 - [IsActorInvulnerable](../functions/IsActorInvulnerable): Check if actor is invulnerable.
 - [IsValidActor](../functions/IsValidActor): Check if actor id is valid.
 
-## Bağlantılı Callbacks
+## Bağlantılı Geri Çağırmalar
 
 - [OnActorStreamOut](OnActorStreamOut): Called when an actor is streamed out by a player.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Called when a player streams in for another player.

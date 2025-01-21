@@ -1,14 +1,14 @@
 ---
 title: OnPlayerEditObject
-description: Bu callback bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObject/EditPlayerObject).
+description: Bu geri çağırma bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObject/EditPlayerObject).
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Bu callback bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObject/EditPlayerObject).
+Bu geri çağırma bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObject/EditPlayerObject).
 
-| İsim                   | Açıklama                                                                  |
+| Parametre                   | Açıklama                                                                  |
 |------------------------|---------------------------------------------------------------------------|
 | playerid               | Düzenlemeyi yapan oyuncunun ID'si.                                        |
 | playerobject           | Genel bir obje ise 0 olur, oyuncu objesi ise 1 olur.                      |
@@ -17,19 +17,19 @@ Bu callback bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObjec
 | Float:fX               | Düzenlenen objenin X yönündeki koordinatı.                                |
 | Float:fY               | Düzenlenen objenin Y yönündeki koordinatı.                                |
 | Float:fZ               | Düzenlenen objenin Z yönündeki koordinatı.                                |
-| Float:fRotX            | Güzenlenen objenin X yönündeki rotasyonu.                                 |
-| Float:fRotY            | Güzenlenen objenin Y yönündeki rotasyonu.                                 |
-| Float:fRotZ            | Güzenlenen objenin Z yönündeki rotasyonu.                                 |
+| Float:fRotX            | Düzenlenen objenin X yönündeki rotasyonu.                                 |
+| Float:fRotY            | Düzenlenen objenin Y yönündeki rotasyonu.                                 |
+| Float:fRotZ            | Düzenlenen objenin Z yönündeki rotasyonu.                                 |
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Diğer scriptlerin bu callbacke ulaşmasını engeller.
+1 - Diğer scriptlerin bu geri çağırmaya ulaşmasını engeller.
 
-0 - Bu script bittikten sonra callback diğer scriptlerde işlenir.
+0 - Bu script bittikten sonra geri çağırma diğer scriptlerde işlenir.
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
@@ -85,13 +85,13 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-EDIT_RESPONSE_UPDATE kullanırken, devam etmekte olan bir düzenlemeyi bırakırken bu callbacking çağırılmayacağının ve EDIT_RESPONSE_UPDATE'in son güncellemesinin nesnelerin mevcut konumunun senkronizasyonundan çıkmasına neden olacağını unutmayın.
+EDIT_RESPONSE_UPDATE kullanırken, devam etmekte olan bir düzenlemeyi bırakırken bu geri çağırmanın çağırılmayacağının ve EDIT_RESPONSE_UPDATE'in son güncellemesinin nesnelerin mevcut konumunun senkronizasyonundan çıkmasına neden olacağını unutmayın.
 
 :::
 
 ## Bağlantılı Fonksiyonlar
 
-- [EditObject](../functions/EditObject.md): Edit an object.
-- [CreateObject](../functions/CreateObject.md): Create an object.
-- [DestroyObject](../functions/DestroyObject.md): Destroy an object.
-- [MoveObject](../functions/MoveObject.md): Move an object.
+- [EditObject](../functions/EditObject.md): Bir objeyi düzenler.
+- [CreateObject](../functions/CreateObject.md): Bir obje oluşturur.
+- [DestroyObject](../functions/DestroyObject.md): Bir objeyi yok eder.
+- [MoveObject](../functions/MoveObject.md): Bir objeyi hareket ettirir.

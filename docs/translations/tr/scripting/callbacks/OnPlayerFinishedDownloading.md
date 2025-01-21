@@ -1,6 +1,6 @@
 ---
 title: OnPlayerFinishedDownloading
-description: Bu callback, bir oyuncu model cache indirmesini bitirdiğinde çağırılır.
+description: Bu geri çağırma, bir oyuncu model cache indirmesini bitirdiğinde çağırılır.
 tags: ["player"]
 ---
 
@@ -8,18 +8,18 @@ tags: ["player"]
 
 ## Açıklama
 
-Bu callback, bir oyuncu model cache indirmesini bitirdiğinde çağırılır.
+Bu geri çağırma, bir oyuncu model cache indirmesini bitirdiğinde çağırılır.
 
-| İsim         | Açıklama                                                                       |
+| Parametre         | Açıklama                                                                       |
 | ------------ | ------------------------------------------------------------------------------ |
 | playerid     | Model cacheini indirmeyi bitiren oyuncunun ID'si.                              |
 | virtualworld | Oyuncunun model cache indirmesini bitirdiği virtual world ID'si.               |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu callback herhangi bir geri döndürülen değer içermemekte.
+Bu geri çağırma herhangi bir geri döndürülen değer içermemekte.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerFinishedDownloading(playerid, virtualworld)
@@ -33,7 +33,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 :::tip
 
-Bu callback oyuncu her virtual world değiştirdiğinde indireceği model olmasa bile çağırılır.
+Bu geri çağırma oyuncu her virtual world değiştirdiğinde indireceği model olmasa bile çağırılır.
 
 :::
 

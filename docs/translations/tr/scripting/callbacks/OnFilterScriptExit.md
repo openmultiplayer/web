@@ -6,9 +6,9 @@ tags: []
 
 ## Açıklama
 
-Bu callback bir filterscript unload edildiğinde tetiklenir. Sadece unload edilen filterscript içinde çalışır.
+Bu geri çağırma bir filterscript unload edildiğinde tetiklenir. Sadece unload edilen filterscript içinde çalışır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnFilterScriptExit()

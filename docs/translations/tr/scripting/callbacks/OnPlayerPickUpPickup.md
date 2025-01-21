@@ -17,7 +17,7 @@ Fonksiyon, oyuncu CreatePickup ile oluşturulan bir işaretin (pickup) üstüne 
 
 Oyun modunda her zaman ilk olarak çağrılır. 
 
-## Örnekler
+## Örnek
 
 ```c
 new pickup_Cash;

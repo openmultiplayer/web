@@ -26,7 +26,7 @@ Bu fonksiyon, oyuncu ateş ettiğinde çağrılır. Bu fonksiyon ateşli silahla
 
 Filterscript komut dosyalarında her zaman ilk olarak çağrılır, bu nedenle 0 döndürmek, diğer komut dosyalarının da görmesini engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hitid, Float:fX, Float:fY, Float:fZ)

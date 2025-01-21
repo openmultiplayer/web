@@ -18,7 +18,7 @@ Bu fonksiyon, bir oyuncu RCON olarak oturum açmaya çalıştığında giriş de
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnRconLoginAttempt(ip[], password[], success)
@@ -32,7 +32,7 @@ public OnRconLoginAttempt(ip[], password[], success)
             GetPlayerIp(i, pip, sizeof(pip));
             if (!strcmp(ip, pip, true)) //Bir oyuncunun IP'si, oturum açma sırasında başarısız olan IP ise...
             {
-                SendClientMessage(i, 0xFFFFFFFF, "Wrong Password. Bye!"); //Mesaj gönder.
+                SendClientMessage(i, 0xFFFFFFFF, "Yanlış şifre. Bye!"); //Mesaj gönder.
                 Kick(i); //Oyuncu kicklendi.
             }
         }

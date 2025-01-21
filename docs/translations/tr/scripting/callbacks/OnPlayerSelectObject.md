@@ -26,7 +26,7 @@ Bu fonksiyon, oyuncu SelectObject kullanıldıktan sonra bir obje seçtiğinde �
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ)

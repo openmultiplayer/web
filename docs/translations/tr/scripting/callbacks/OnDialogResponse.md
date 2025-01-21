@@ -1,14 +1,14 @@
 ---
 title: OnDialogResponse
-description: Bu callback, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
+description: Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
 tags: []
 ---
 
 ## Açıklama
 
-Bu callback, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
+Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
 
-| Ad          | Açıklama                                                                                                                                                       |
+| Parametre          | Açıklama                                                                                                                                                       |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | Dialog'u tetikleyen oyuncunun id'si.                                                                                                                           |
 | dialogid    | Tetiklenen dialog id'si.                                                                                                                                       |
@@ -20,14 +20,14 @@ Bu callback, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog i�
 
 Filterscriptler içerisinde 1 olarak döndürmek diğer filterscripts'lerin bunu okumasını engeller.
 
-## Örnekler
+## Örnek
 
 ```c
 // Dialog ID'sini tanımlayalım.
 #define DIALOG_RULES 1
 
 // Herhangi bir komutun veya eventin içerisine yerleştirelim.
-ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Server Rules", "- No Cheating\n- No Spamming\n- Respect Admins\n\nDo you agree to these rules?", "Evet", "Hayır");
+ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Sunucu Kuralları", "- Hile Yapamyın\n- Spam Yapmayın\n- Yöneticilere Saygılı Olun\n\nKuralları onaylıyor musun?", "Evet", "Hayır");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
@@ -35,7 +35,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     {
         if(response) // Eğer Evet'e tıklarsa çalışacak işlem.
         {
-            SendClientMessage(playerid, COLOR_GREEN, "Thank you for agreeing to the server rules!");
+            SendClientMessage(playerid, COLOR_GREEN, "Kuralları kabul ettiğiniz için teşekkürler.");
         }
         else // Eğer ESC veya Hayır'a tıklarsa çalışacak işlem.
         {
@@ -50,7 +50,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 #define DIALOG_LOGIN 2
 
 // Herhangi bir komutun veya eventin içerisine yerleştirelim.
-ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Please enter your password:", "Login", "Cancel");
+ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Giriş", "Şifreni gir:", "Giriş", "Vazgeç");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
@@ -64,14 +64,14 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         {
             if(CheckPassword(playerid, inputtext))
             {
-                SendClientMessage(playerid, COLOR_RED, "You are now logged in!");
+                SendClientMessage(playerid, COLOR_RED, "Giriş yaptın.");
             }
             else
             {
-                SendClientMessage(playerid, COLOR_RED, "LOGIN FAILED.");
+                SendClientMessage(playerid, COLOR_RED, "Giriş başarısız.");
 
                 // Şifre yanlış olduğu için tekrar gösteriliyor.
-                ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Please enter your password:", "Login", "Cancel");
+                ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Giriş", "Şifreni gir:", "Giriş", "Vazgeç");
             }
         }
         return 1; // Bu dialogun işlemini çalıştırdık, bu yüzden 1 döndürdük. OnPlayerCommandText'de gösterilen örnek gibi.
@@ -82,7 +82,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 #define DIALOG_WEAPONS 3
 
 // Herhangi bir komutun veya eventin içerisine yerleştirelim.
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons", "Desert Eagle\nAK-47\nCombat Shotgun", "Select", "Close");
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Silahlar", "Desert Eagle\nAK-47\nCombat Shotgun", "Seç", "Kapat");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
@@ -106,12 +106,12 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 #define DIALOG_WEAPONS 3
 
 // Herhangi bir komutun veya eventin içerisine yerleştirelim.
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
-"Weapon\tAmmo\tPrice\n\
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Silahlar",
+"Silahlar\tMermi\tFiyat\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\
 AK-47\t120\t400",
-"Select", "Close");
+"Seç", "Kapat");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
@@ -144,7 +144,7 @@ Parametrelerde, dialog stillerine göre değişiklikler olabilir. (daha fazla ö
 
 :::tip
 
-It is appropriate to switch through different dialogids, if you have many.
+Eğer çok sayıda diyaloğunuz varsa, farklı diyaloğlar arasında geçiş yapmak uygundur.
 
 :::
 

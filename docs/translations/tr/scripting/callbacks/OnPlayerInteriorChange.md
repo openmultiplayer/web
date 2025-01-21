@@ -8,7 +8,7 @@ tags: ["player"]
 
 Oyuncu interior değiştirdiğinde çalışır. SetPlayerInterior tarafından ya da oyuncu bir interiora girip/çıktığı zaman tetiklenebilir.
 
-| İsim          | Açıklama                               |
+| Parametre          | Açıklama                               |
 | ------------- | -------------------------------------- |
 | playerid      | Interioru değişen oyuncu.              |
 | newinteriorid | Oyuncunun şu an bulunduğu interior.    |
@@ -18,7 +18,7 @@ Oyuncu interior değiştirdiğinde çalışır. SetPlayerInterior tarafından ya
 
 Her zaman öncelikle oyun modunda çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)

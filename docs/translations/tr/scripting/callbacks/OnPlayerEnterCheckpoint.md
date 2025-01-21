@@ -1,14 +1,14 @@
 ---
 title: OnPlayerEnterCheckpoint
-description: Bu callback, bir oyuncu kendisi için oluşturulan checkpointe giriş yaptığında çağırılıyor.
+description: Bu geri çağırma, bir oyuncu kendisi için oluşturulan checkpointe giriş yaptığında çağırılır.
 tags: ["player", "checkpoint"]
 ---
 
 ## Açıklama
 
-Bu callback, bir oyuncu kendisi için oluşturulan checkpointe giriş yaptığında çağırılıyor.
+Bu geri çağırma, bir oyuncu kendisi için oluşturulan checkpointe giriş yaptığında çağırılır.
 
-| İsim     | Açıklama                               |
+| Parametre     | Açıklama                               |
 | -------- | -------------------------------------- |
 | playerid | Checkpointe giren oyuncunun ID'si.     |
 
@@ -16,7 +16,7 @@ Bu callback, bir oyuncu kendisi için oluşturulan checkpointe giriş yaptığı
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 
-## Örnekler
+## Örnek
 
 ```c
 //Oyuncu spawnlandığında checkpoint oluşturulur ve oyuncu checkpointe girdiğinde bir araç spawnlanıp checkpoint silinir.
@@ -40,9 +40,9 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## Bağlantılı Fonksiyonlar
 
-- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Create a checkpoint for a player.
-- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Disable the player's current checkpoint.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Check if a player is in a checkpoint.
-- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Create a race checkpoint for a player.
-- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
-- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
+- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Bir oyuncu için checkpoint oluşturur.
+- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Oyuncunun mevcut checkpointini devre dışı bırakır.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Bir oyuncunun checkpointte olup olmadığını kontrol eder.
+- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Bir oyuncu için yarış checkpointi oluşturur.
+- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Oyuncunun mevcut yarış checkpointini devre dışı bırakır.
+- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Bir oyuncunun yarış checkpointinde olup olmadığını kontrol eder.

@@ -8,7 +8,7 @@ tags: ["player", "menu"]
 
 Oyuncu bir menüden çıktığında çağrılır.
 
-| İsim     | Açıklama                                  |
+| Parametre     | Açıklama                                  |
 | -------- | ----------------------------------------- |
 | playerid | Menüden çıkan oyuncunun ID'si             |
 
@@ -16,7 +16,7 @@ Oyuncu bir menüden çıktığında çağrılır.
 
 Her zaman öncelikle oyun modunda çağrılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerExitedMenu(playerid)

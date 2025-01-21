@@ -20,7 +20,7 @@ Bu fonksiyon, bir istemci veya oyuncu sunucu durumlarıyla ilgili her güncellen
 
 Filterscript komutlarında her zaman ilk olarak çağrılır. 
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerUpdate(playerid)

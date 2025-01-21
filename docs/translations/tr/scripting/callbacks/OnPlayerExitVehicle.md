@@ -1,14 +1,14 @@
 ---
 title: OnPlayerExitVehicle
-description: Bu callback, araçta bulunan bir oyuncu bir araçtan inmeye başladığında çağırılır.
+description: Bu geri çağırma, araçta bulunan bir oyuncu bir araçtan inmeye başladığında çağırılır.
 tags: ["player", "vehicle"]
 ---
 
 ## Açıklama
 
-Bu callback, araçta bulunan bir oyuncu bir araçtan inmeye başladığında çağırılır.
+Bu geri çağırma, araçta bulunan bir oyuncu bir araçtan inmeye başladığında çağırılır.
 
-| İsim      | Açıklama                                        |
+| Parametre      | Açıklama                                        |
 | --------- | ----------------------------------------------- |
 | playerid  | Araçtan inmekte olan oyuncunun ID'si.           |
 | vehicleid | Oyuncunun inmekte olduğu aracın ID'si.          |
@@ -17,7 +17,7 @@ Bu callback, araçta bulunan bir oyuncu bir araçtan inmeye başladığında ça
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerExitVehicle(playerid, vehicleid)
@@ -33,7 +33,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-Bu callback, oyuncu motordan düştüğünde veya SetPlayerPos gibi fonksiyonlar kullanılarak araçtan başka bir şekilde çıkartıldığında çağırılmaz. Bunu sağlamak için OnPlayerStateChange'de eski durumlarının PLAYER_STATE_DRIVER veya PLAYER_STATE_PASSENGER ve yeni durumlarının PLAYER_STATE_ONFOOT olup olmadığına bakmalısınız.
+Bu geri çağırma, oyuncu motordan düştüğünde veya SetPlayerPos gibi fonksiyonlar kullanılarak araçtan başka bir şekilde çıkartıldığında çağırılmaz. Bunu sağlamak için OnPlayerStateChange'de eski durumlarının PLAYER_STATE_DRIVER veya PLAYER_STATE_PASSENGER ve yeni durumlarının PLAYER_STATE_ONFOOT olup olmadığına bakmalısınız.
 :::
 
 ## Bağlantılı Fonksiyonlar

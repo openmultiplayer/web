@@ -18,7 +18,7 @@ Fonksiyon, oyuncu bulunduğu araca kaplama uygulandığında çağrılır. Dikka
 
 Oyun modunda her zaman ilk olarak çağrılır, bu nedenle 0 döndürülürse diğer filterscriptleri görmesi engellenir.
 
-## Örnekler
+## Örnek
 
 ```c
 public OnVehiclePaintjob(playerid, vehicleid, paintjobid)

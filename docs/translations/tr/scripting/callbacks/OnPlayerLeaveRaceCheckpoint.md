@@ -16,7 +16,7 @@ Bu fonksiyon, bir oyuncu yarış kontrol noktasından çıktığında çağrıl�
 
 Filtercsript komutlarında her zaman ilk olarak çağrılır. 
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerLeaveRaceCheckpoint(playerid)

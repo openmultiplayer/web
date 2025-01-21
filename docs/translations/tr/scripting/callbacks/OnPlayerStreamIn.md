@@ -17,7 +17,7 @@ Bu fonksiyon, bir oyuncu başka bir oyuncunun streamer bölgesinde yayınlandı�
 
 Filterscript komutlarında her zaman ilk olarak çağrılır. 
 
-## Örnekler
+## Örnek
 
 ```c
 public OnPlayerStreamIn(playerid, forplayerid)
