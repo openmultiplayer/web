@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (strcmp("/text", cmdtext, true) == 0)
     {
         new objectId = CreateObject(19353, 0, 0, 10, 0.0, 0.0, 90.0); //create the object
-        SetObjectMaterialText(objectId, "SA-MP {FFFFFF}0.{008500}3.{FF8200}DL", 0, OBJECT_MATERIAL_SIZE_256x128, "Arial", 28, false, 0xFFFF8200, 0xFF000000, OBJECT_MATERIAL_TEXT_ALIGN_CENTER);
+        SetObjectMaterialText(objectId, "SA-MP {FFFFFF}0.{008500}3.{FF8200}DL", 0, OBJECT_MATERIAL_SIZE_256x128, "Arial", 28, false, 0xFFFF8200, 0xFF000000, OBJECT_MATERIAL_TEXT_ALIGN_CENT);
         // write "SA-MP 0.3.DL" on the object, with orange font color and black background
         return 1;
     }
