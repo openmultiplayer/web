@@ -8,7 +8,7 @@ Um den Client zum laufen zu bringen musst du den Launcher Herunterladen, und [om
 Dann musst du die omp-client.dll in den AppData\Local\mp.open.launcher\omp\ Ordner mit deinem Präfix packen.\
 Danach kannst du den open mp Launcher über die Kommandozeile (CLI) starten. Alternativ kannst du eine Batch-Datei erstellen, wie unten beschrieben, um den Launcher deiner Wahl hinzuzufügen.
 
-### Hier ist eine simple .bat Datei zum Editieren
+### Hier ist eine simple .bat Datei zum editieren
 ```
 Z:\path\to\omp-launcher.exe -h server.ip -p port -n dzmtrzz -g Z:\home\yourname\foo\bar\baz\gamepath\
 ```
