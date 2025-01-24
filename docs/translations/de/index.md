@@ -6,7 +6,7 @@ Ziel dieser Webseite ist es, eine leicht zugängliche und einfach beizutragende 
 
 ## Das SA-MP Wiki existiert nicht mehr
 
-Unglücklicherweise wurde das SA-MP-Wiki im späten September 2020 offline genommen und später als nicht bearbeitbares Archiv wiederhergestellt.
+Unglücklicherweise wurde das SA-MP Wiki im späten September 2020 offline genommen und später als nicht bearbeitbares Archiv wiederhergestellt.
 
 Kurz gesagt: Wir brauchen die Hilfe der Community, um die Inhalte des alten Wikis hierher zurück zu ihrem neuen Zuhause zu bringen.
 
