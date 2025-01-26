@@ -33,10 +33,16 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 <TipNPCCallbacksSR />
 
+:::warning
+
+OnPlayerStreamOut се не позива за оба играча када се играч одвеже са сервера.
+
+:::
+
 ## Повезане повратне функције
 
 Следеће повратне функције могу бити корисне, јер су на неки начин повезане са овом повратном функцијом.
 
 - [OnPlayerStreamIn](OnPlayerStreamIn): Ова повратна функција се позива када се играч стримује за другог играча.
-- [OnActorStreamIn](OnPlayerStreamOut): Ова повратна функција се позива када играч стримује актора. 
-- [OnVehicleStreamIn](OnPlayerStreamOut): Ова повратна функција се позива када возило стримује за играча.
+- [OnActorStreamIn](OnActorStreamIn): Ова повратна функција се позива када играч стримује актора. 
+- [OnVehicleStreamIn](OnVehicleStreamIn): Ова повратна функција се позива када возило стримује за играча.
