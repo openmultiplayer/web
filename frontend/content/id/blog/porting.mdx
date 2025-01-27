@@ -1,0 +1,233 @@
+---
+title: Porting ke open.mp
+date: "2024-03-06T14:01:00"
+author: Y_Less
+---
+
+Sudah lama jelas bahwa Kalcor tidak lagi tertarik untuk memelihara SA:MP; yang sebenarnya tidak masalah, tetapi sebagai satu-satunya orang dengan akses ke kode sumber resmi, ini membuatnya menjadi hambatan untuk pembaruan baru. Baik YSF maupun fixes.inc diciptakan untuk mengisi kekosongan ini - memperbaiki bug dan inkonsistensi di server tanpa akses ke kode sumber; yang pertama sebagai plugin dan yang terakhir sebagai include. Meskipun ada upaya besar untuk membuat proyek-proyek ini (dan proyek lainnya) se-stabil, komprehensif, dan mudah digunakan mungkin, mereka secara alami mulai menemui batasannya dan generasi perbaikan baru diperlukan. Di sinilah open.mp hadir.
+
+Didasarkan pada prinsip yang sama, dan mengambil berbagai peningkatan yang dikembangkan selama satu dekade oleh komunitas, open.mp adalah penulisan ulang dari server SA:MP asli dengan semua perbaikan dari pendahulunya, dan banyak lagi yang sebelumnya tidak dapat diatasi atau bahkan tidak mungkin dilakukan. Memang, pendekatan ini tidak tanpa kontroversi - beberapa server telah mengembangkan metode pribadi mereka sendiri untuk menangani keanehan SA:MP secara terpisah dari upaya komunitas, tetapi ini bukan teknik yang harus dikembangkan oleh setiap scripter sendiri, dan artikel ini akan membantu dalam porting kode yang ada.
+
+Kami berharap untuk mengatasi masalah utama, tetapi jika ada yang terlewat, jangan ragu untuk menghubungi kami melalui discord atau github dan kami akan dengan senang hati memperbarui panduan ini.
+
+Pilihan alternatif adalah membalikkan perbaikan menggunakan pustaka yang merupakan pasangan dari fixes.inc - breaks.inc:
+
+https://github.com/pawn-lang/sa-mp-fixes/blob/master/breaks.inc
+
+Jadi silakan instal itu untuk mengembalikan semua perilaku lama secara transparan melalui hooks.
+
+## `Tags`
+
+open.mp menyertakan banyak tag baru untuk fungsi-fungsinya, meskipun tetap berusaha menjaga keseimbangan antara pembaruan yang sangat dibutuhkan dan invasifnya perubahan tersebut. Mengingat betapa luasnya perubahan ini, kami menulis alat untuk mengotomatiskan sebagian besar dari itu:
+
+## `HideMenuForPlayer`
+
+Fungsi ini selalu mengambil parameter ID menu, tetapi di SA:MP, ID ini tidak digunakan. Jadi, nilai apa pun yang diberikan akan menutup menu saat ini yang dilihat pemain, bahkan jika mereka tidak melihat menu yang Anda sebutkan untuk ditutup.
+
+Kode lama mungkin terlihat seperti ini:
+
+```pawn
+gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);
+
+HideMenuForPlayer(gShopMenu, playerid);
+```
+
+Itu akan selalu menutup menu pemain saat ini, terlepas dari menu yang mereka lihat. Sekarang Anda harus mengingat menu yang sedang mereka lihat, atau cukup dapatkan itu:
+
+```pawn
+gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);
+
+HideMenuForPlayer(GetPlayerMenu(playerid), playerid);
+```
+
+## `SetPlayerAttachedObject`
+
+Objek yang terpasang di SA:MP akan bertahan setelah perubahan gamemode, tetapi di open.mp mereka tidak. Jika Anda ingin pemain mempertahankan objek mereka setelah restart mode, Anda harus menambahkannya kembali di `OnPlayerConnect`:
+
+```pawn
+enum E_ATTACHMENT_DATA
+{
+	E_ATTACHMENT_DATA_MODEL,
+	E_ATTACHMENT_DATA_BONE,
+	E_ATTACHMENT_DATA_OFFSET_X,
+	E_ATTACHMENT_DATA_OFFSET_Y,
+	E_ATTACHMENT_DATA_OFFSET_Z,
+	E_ATTACHMENT_DATA_ROT_X,
+	E_ATTACHMENT_DATA_ROT_Y,
+	E_ATTACHMENT_DATA_ROT_Z,
+	E_ATTACHMENT_DATA_SCALE_X,
+	E_ATTACHMENT_DATA_SCALE_Y,
+	E_ATTACHMENT_DATA_SCALE_Z,
+	E_ATTACHMENT_DATA_COLOUR_1,
+	E_ATTACHMENT_DATA_COLOUR_2,
+}
+
+public OnPlayerConnect(playerid)
+{
+	for (new i = 0; i != MAX_OBJECT_ATTACHMENT_SLOTS; ++i)
+	{
+		SetPlayerAttachedObject(
+			playerid,
+			i,
+			gAttachementData[playerid][E_ATTACHMENT_DATA_MODEL],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_BONE],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_OFFSET_X],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_OFFSET_Y],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_OFFSET_Z],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_ROT_X],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_ROT_Y],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_ROT_Z],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_SCALE_X],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_SCALE_Y],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_SCALE_Z],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_COLOUR_1],
+			gAttachementData[playerid][E_ATTACHMENT_DATA_COLOUR_2]
+		);
+	}
+}
+```
+
+## `ClearAnimations`
+
+`ClearAnimations` adalah kebalikan dari `ApplyAnimation` untuk menghentikan pemain melakukan aksi yang diminta sebelumnya. Namun, saat digunakan pada pemain di kendaraan, ini juga menyebabkan pemain dikeluarkan dari kendaraan. Ini adalah fungsi yang berguna karena terjadi instan, tetapi bukan dalam cakupan fungsi `ClearAnimations`. Untuk memaksa mengeluarkan pemain dari kendaraan secara instan, gunakan:
+
+```pawn
+RemovePlayerFromVehicle(playerid, true);
+```
+
+## Uang Kematian
+
+Ketika seorang pemain meninggal di San Andreas, mereka akan dipotong $100 secara otomatis untuk biaya rumah sakit. Fitur ini tetap ada di SA:MP, tetapi dihapus di open.mp untuk memungkinkan skrip mengelola uang mereka sendiri. Beberapa skrip mencoba memperbaiki ini dengan menambahkan $100 ke pemain setelah kematian, atau saat muncul kembali. Jika ini adalah skrip Anda, cukup hapus perbaikan tambahan tersebut, meskipun kode di open.mp mencoba memperhitungkan skrip yang melakukannya. Jika skrip Anda bergantung pada fitur ini, cukup tambahkan kode berikut ke `OnPlayerDeath`:
+
+```pawn
+GivePlayerMoney(playerid, -100);
+```
+
+## OnPlayerConnect
+
+Saat gamemode dimulai atau di-restart di SA:MP, `OnPlayerConnect` segera dipanggil untuk semua pemain yang sudah terhubung ke server, tetapi tidak ketika filterscript dimulai atau di-restart. Meskipun perilaku terakhir lebih sesuai dengan nama, perilaku pertama sangat banyak digunakan dalam skrip, dan oleh karena itu diperpanjang ke semua jenis skrip di open.mp untuk menjaga konsistensi.
+
+Skrip yang menginisialisasi data untuk pemain tidak lagi perlu melakukan kode ini di dua lokasi berbeda:
+
+```pawn
+public OnFilterScriptInit()
+{
+	for (new playerid = 0; playerid != MAX_PLAYERS; ++playerid)
+	{
+		if (IsPlayerConnected(playerid))
+		{
+			InitialisePlayer(playerid);
+		}
+	}
+}
+
+public OnPlayerConnect(playerid)
+{
+	InitialisePlayer(playerid);
+}
+```
+
+Loop di `OnFilterScriptInit` sekarang dapat dihapus:
+
+```pawn
+public OnPlayerConnect(playerid)
+{
+	InitialisePlayer(playerid);
+}
+```
+
+Jika skrip mengeksploitasi fakta ini untuk hanya menjalankan kode untuk pemain baru yang bergabung setelah skrip dimulai, dan bukan untuk pemain yang sudah ada, ini tidak akan berfungsi lagi, tetapi mudah diperbaiki:
+
+```pawn
+static bool:gAlreadyHere[MAX_PLAYERS];
+
+public OnFilterScriptInit()
+{
+	for (new playerid = 0; playerid != MAX_PLAYERS; ++playerid)
+	{
+		gAlreadyHere[playerid] = IsPlayerConnected(playerid);
+	}
+}
+
+public OnPlayerConnect(playerid)
+{
+	if (gAlreadyHere[playerid])
+	{
+		gAlreadyHere[playerid] = false;
+	}
+	else
+	{
+		SendClientMessage(playerid, COLOUR_WARN, "You're late!");
+	}
+}
+```
+
+Ini mungkin terlihat seperti hanya menggantikan satu loop di `OnFilterScriptInit` dengan yang lain, tetapi menginginkan untuk mengecualikan pemain saat ini dari beberapa kode adalah kasus penggunaan yang lebih jarang daripada ingin melakukan sesuatu untuk semua orang, jadi ini secara keseluruhan adalah peningkatan; dan seperti yang disebutkan sebelumnya jauh lebih sedikit invasif dibandingkan tidak memanggil `OnPlayerConnect` di gamemode.
+
+## Teks Game
+
+SA:MP memiliki enam gaya teks game yang berbeda, tetapi beberapa di antaranya hampir tidak bisa digunakan. Salah satunya pudar terus-menerus, satu lagi hilang setelah waktu tertentu terlepas dari waktu yang Anda tentukan, dan satu lagi tidak pernah hilang terlepas dari waktu yang dipilih. Namun ternyata semua gaya teks game ini dapat direproduksi dengan akurat menggunakan teks draw. Oleh karena itu fixes.inc dan kemudian open.mp melakukannya. Tampilan teks game tetap sama seperti sebelumnya, keuntungannya adalah semua gaya dapat digunakan, dengan kerugiannya adalah mereka tidak lagi memudar.
+
+Saat ini tidak ada cara untuk melewati fitur ini dan mendapatkan efek memudar kembali, kecuali menggunakan Pawn.RakNet dan mengirimkan pesan teks game langsung:
+
+```pawn
+FadingGameTextForPlayer(playerid, const format[], time, style)
+{
+	if (style > 6)
+	{
+		// Tidak ada versi memudar dari gaya ini.
+		GameTextForPlayer(playerid, format, time, style)
+	}
+ 	else
+	{
+		// Kirim pesan mentah melalui Pawn.RakNet
+	}
+}
+
+```
+
+\* Dengan satu pengecualian penting - gaya teks game jam baru. Karena alasan yang tidak diketahui, warna jam berbeda untuk setiap orang, yang menyebabkan banyak diskusi tentang cara terbaik untuk mereplikasi gaya ini hingga perbedaan ditemukan. Kami harus memilih salah satu dari keduanya untuk konsistensi.
+
+## Ukuran Pool
+
+`GetPlayerPoolSize`, `GetActorPoolSize`, dan `GetVehiclePoolSize` sedikit tidak berguna ketika pertama kali diperkenalkan; mengembalikan ID terhubung tertinggi, yang tidak ada hubungannya dengan jumlah pemain yang terhubung, dan lama setelah metode looping yang jauh lebih baik sudah ada. Menjadi sedikit konyol bukan alasan untuk menghapus fungsi ini, tetapi sayangnya mereka juga rusak dan mengembalikan data yang salah ketika tidak ada pemain yang terhubung. Tidak ada cara untuk memperbaiki nilai-nilai kembali ini dengan cara yang kompatibel dengan versi sebelumnya dan benar ke depan (percayalah, kami sudah mencoba). Mengingat fakta-fakta ini, kami memutuskan untuk menghapus fungsi-fungsi ini. Cukup gunakan loop biasa atau `foreach`:
+
+```pawn
+foreach (new i : Player)
+{
+}
+```
+
+Beberapa skrip memang crash ketika perubahan ini diperkenalkan, tetapi hanya ketika menggunakan bentuk loop berikut:
+
+```pawn
+for (new i = 0; i != GetPlayerPoolSize(); ++i)
+{
+}
+```
+
+Meskipun karena nilai tertinggi adalah pemain nyata ketika ada orang online, kode ini salah juga - itu melewatkan seseorang.
+
+## Ejaan
+
+SA:MP sangat tidak konsisten dalam ejaan kodenya - beberapa hal menggunakan Bahasa Inggris, beberapa hal menggunakan Amerika:
+
+* `Bumper` - Inggris
+* `Hood` - Amerika
+* `Armour` - Inggris
+* `Stereo` - Amerika
+
+Kami telah menyatukan ini, dan memilih ejaan Inggris. Jadi misalnya:
+
+```pawn
+TextDrawBoxColor(Text:textid, boxColor);
+```
+
+Sekarang menjadi:
+
+```pawn
+TextDrawBoxColour(Text:textid, boxColour);
+```
+
+Alat upgrade akan menangani sebagian besar dari ini secara otomatis.
+

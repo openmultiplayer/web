@@ -1,0 +1,154 @@
+---
+title: Release Candidate 1
+date: "2023-01-05T01:10:00"
+author: Y_Less
+---
+
+Ini dia!
+
+Akhirnya tiba!
+
+Setelah empat tahun, dua kali penulisan ulang, perdebatan dan drama, serta berbagai rintangan lainnya, akhirnya sampai juga!
+
+Release Candidate 1 (RC1) dari server open.mp.
+
+Ini, semoga, merupakan versi final dari kode untuk rilis 1.0 kami, dan jika semuanya berjalan lancar dengan versi ini, kami akhirnya dapat **membuka** yang disebut **open**.mp dalam beberapa hari ke depan.
+
+Sebelum saya masuk ke inti rilis, saya ingin terlebih dahulu mengucapkan terima kasih yang tulus kepada setiap anggota tim open.mp yang telah membantu mod ini sampai sejauh ini. Ini bukanlah hal yang mudah, terutama karena betapa terlibatnya setiap orang - kami semua menginginkan yang terbaik untuk mod ini, untuk komunitas, untuk SA:MP, untuk server kami, dan untuk pemain kami; kami tidak akan memulai perjalanan ini jika itu bukan yang kami inginkan. Sayangnya, perbedaan pendapat yang kuat mengenai apa yang **terbaik** kadang menyebabkan gesekan. Tapi, kami sudah sampai di sini sekarang. Jadi untuk semua, terima kasih yang sebesar-besarnya:
+
+* Amir
+* Cheaterman
+* Freaksken
+* Graber
+* Hual
+* Josh
+* JustMichael
+* kseny
+* Nexius
+* pkfin
+* Potassium
+* Southclaws
+* TommyB
+* Y_Less
+* Zeex
+* Dan mungkin lebih banyak lagi...
+
+Anyway, sekarang bagian yang sebenarnya Anda tunggu-tunggu...
+
+Sekarang kita keluar dari beta, kami (jika semuanya berjalan lancar minggu ini) akan merilis tepat waktu. Jadi, bersama dengan server itu sendiri, yang sudah Anda lihat beberapa kali sebelumnya, kami juga memiliki beberapa fitur baru untuk Anda:
+
+## Pawn
+
+Unduhan ini memiliki includes resmi, tidak ada lagi pemrograman ulang pada includes lama SA:MP dengan `omp.inc`, sekarang kami melakukannya dengan benar! Ini juga dilengkapi dengan compiler baru. Pernah bertanya-tanya kapan 3.10.11 akan datang? Nah, tunggu tidak lama lagi (jika Anda membangunnya sendiri, Anda bisa menganggap yang satu ini sebagai 3.10.12)! Dengan kombinasi ini Anda mungkin akan mendapatkan banyak peringatan baru, tapi jangan khawatir - kami juga memiliki alat untuk itu, untuk secara otomatis memperbarui kode, menambahkan nama simbol yang terdefinisi dengan baik, `const`, dan lainnya di tempat yang tepat. Mungkin Anda sudah memperhatikan ini, Anda sudah menggunakannya selama berbulan-bulan, tapi mesin virtual (bagian dalam server) juga telah diperbarui! Oh, dan semua native string yang Anda kenal dan sukai, seperti `SendClientMessage` dan `AddMenuItem`? Mereka sekarang memformat. Semua dari mereka*.
+
+Daftar lengkap apa yang tersedia:
+
+* Batas panjang simbol meningkat menjadi 64, tidak ada lagi `OnPlyrDoTheTing` untuk mencoba menyesuaikan nama Anda. Menyebabkan...
+* Beberapa natives terdekompresi - apakah `Col` singkatan dari `Colour` atau `Collision`? Sekarang Anda tahu!
+* Tag. Tag di mana-mana. Lihat dokumentasi yang disertakan.
+* Includes resmi akhirnya const-correct. Tidak ada lagi keluhan bahwa beberapa orang mungkin tidak memiliki mereka.
+* Versi compiler diperbarui: `__nameof`, `__addressof`, perbaikan, dan terlalu banyak hal untuk dijelaskan di sini.
+* `switch` jauh lebih cepat.
+* Lebih banyak peringatan untuk masalah yang sebelumnya tidak terdeteksi. Semakin banyak masalah yang bisa ditemukan oleh compiler, semakin sedikit yang perlu Anda temukan.
+* Alat *upgrader* untuk menambahkan tag dan `const` ke kode pengguna dan memperbaiki beberapa peringatan baru.
+* Penamaan yang lebih konsisten. Setiap native telah diperiksa dengan cermat dan dibandingkan untuk memastikan tingkat kesamaan dan intuisi maksimum dalam penamaan.
+* Menambahkan `{Float, _}:...` di mana-mana. Apa artinya ini? Itu berarti tidak ada lagi `format()`** - pikirkan y_va tetapi secara native.
+* `-O2`, tingkat optimisasi pawn tertinggi, bekerja saat menggunakan compiler dan VM baru. Beberapa includes mungkin perlu diperbarui, tetapi beberapa sudah memiliki. Untuk membantu itu...
+* Makro `__optimisation` ditambahkan agar kode dapat mengonfigurasi dirinya sendiri saat dikompilasi dengan `-O2`.
+
+Dokumentasi tentang includes yang diperbarui:
+
+https://github.com/openmultiplayer/omp-stdlib
+
+Dokumentasi tentang compiler baru:
+
+https://github.com/openmultiplayer/compiler/
+https://github.com/pawn-lang/compiler/
+
+Dokumentasi tentang qawno:
+
+https://github.com/openmultiplayer/qawno/
+
+Dokumentasi tentang alat upgrader:
+
+https://github.com/openmultiplayer/upgrade
+
+\* Hampir semuanya.
+\*\* Hampir tidak ada lagi `format()`.
+
+## SDK
+
+Pawn adalah cara lama yang masih resmi untuk menulis mode untuk server Anda. Itu tidak akan hilang, tetapi bagi Anda yang menginginkan lebih banyak kontrol, kami akhirnya merilis SDK lengkap (Kit Pengembangan Perangkat Lunak). Ini adalah antarmuka C++ ke server, yang sama digunakan oleh semua komponen yang membentuk kode inti open.mp. Apa yang bisa mereka lakukan, Anda juga bisa lakukan (dibandingkan dengan plugin, yang hanya dirancang untuk memberikan fungsi kepada pawn, bukan menulis mode).
+
+Kami sedang menyiapkan beberapa dokumentasi, sayangnya itu membutuhkan waktu. Namun, sementara itu, kami memiliki beberapa komponen contoh untuk Anda yang ingin langsung terjun. Ini semua template yang dapat Anda bangun, dan mulai dari dasar hingga komponen yang sepenuhnya bekerja dengan sebagian besar fitur umum:
+
+https://github.com/openmultiplayer/empty-template
+https://github.com/openmultiplayer/basic-template
+https://github.com/openmultiplayer/pawn-template
+https://github.com/openmultiplayer/full-template
+
+Beberapa istilah untuk membantu Anda memulai, agar Anda dapat mulai memahami apa yang Anda baca:
+
+* *Komponen* - Potongan logis individu dari server, seperti objek atau pickup. Yang tidak perlu Anda muat tidak perlu dimuat.
+* *Ekstensi* - Kode yang memperluas kode lain. Anda dapat menulis ekstensi komponen, tetapi yang paling umum adalah ekstensi pemain, yang mendefinisikan beberapa struktur data yang terkait dengan pemain selain semua data normal mereka seperti kesehatan dan senjata.
+* *UID* - *U*nique *ID*entifier, angka yang mewakili komponen Anda, dan hanya komponen Anda. Ini selalu diperlukan dan dapat diperoleh di sini: http://open.mp/uid
+* *Entitas* - Sebuah hal, biasanya sesuatu yang dapat berinteraksi dengan pemain, dan mungkin banyak. Objek adalah entitas, tetapi pemain lain juga entitas, bahkan perintah dalam prosesor bisa disebut entitas.
+* *Pool* - Sesuatu yang menyimpan entitas. Ketika Anda memiliki banyak, Anda perlu dapat mengaksesnya dengan nama atau ID dengan cara tertentu, ini yang dilakukan oleh pool.
+* *Antarmuka* - Komponen menggunakan kelas dasar abstrak sebagai antarmuka. Ini mendeklarasikan metode yang dimiliki oleh komponen, tetapi tidak mengandung kode untuk metode tersebut. Antarmuka diteruskan agar komponen dapat berkomunikasi satu sama lain, tetapi implementasi dijaga tetap privat.
+* *SDK* - Kumpulan semua antarmuka yang didefinisikan oleh server inti.
+* *ABI* - *A*pplication *B*inary *I*nterface adalah cara kode yang telah dikompilasi berbicara dengan kode yang telah dikompilasi lainnya. Antarmuka yang diekspor oleh SDK adalah *ABI stabil*, yang berarti bahwa menggunakan dua komponen yang dikompilasi pada waktu yang berbeda akan tetap bekerja bersama.
+* *pawn-natives* - Perpustakaan tempat semua deklarasi native dibangun. Menggunakan pembungkus bernama `SCRIPT_API` di sekitar perpustakaan ini: https://github.com/openmultiplayer/pawn-natives
+* *Event* - Sesuatu yang terjadi secara eksternal. Hal-hal seperti pemain yang terhubung dan mengetik perintah adalah event. Komponen mana pun dapat mendefinisikan event dan memberi tahu komponen lain saat event tersebut terjadi.
+* *Handler* - Komponen yang ingin tahu saat event terjadi.
+
+Jika Anda punya pertanyaan, tempat terbaiknya mungkin forum baru (yang dihidupkan kembali):
+
+https://forum.open.mp/
+
+## Fitur
+
+Selain semua fitur baru yang diumumkan untuk pawn, ada beberapa fitur baru (dan yang baru diumumkan) di server:
+
+* Zona geng per pemain, seperti di YSF.
+* Pickup per pemain, juga seperti di YSF.
+* `AttachPlayerObjectToPlayer`.
+* Dukungan PawnPlus yang lebih baik.
+* Dukungan untuk `:memory:`, dan nama khusus lainnya di SQLite.
+* Flag buka SQLite.
+* Opsi konfigurasi `exclude` untuk tidak memuat komponen tertentu.
+* Tampilkan kesalahan analisis konfigurasi, tidak hanya gagal diam-diam.
+* Pemeriksaan versi SDK utama, untuk berjaga-jaga jika kami melakukan perubahan besar pada server (semoga tidak).
+
+## Perbaikan
+
+Ada beberapa bug baru yang diperkenalkan di beta 11, dan beberapa bug minor yang tersisa dari sebelumnya. Beberapa yang telah diperbaiki termasuk:
+
+* Peringatan `funcidx` yang sudah terdaftar.
+* Plugin GDK (streamer, dll.) yang kehilangan natives.
+* Crash acak pada GMX.
+* Callback GDK kadang tidak dipanggil.
+* Tidak ada logging saat diminta di komponen SQLite.
+* Beberapa pengaturan tidak direset pada GMX.
+* NPC terhubung saat banyak yang dilakukan sekaligus.
+* `.so` masih diperlukan dalam nama plugin legacy Linux.
+
+## Tautan
+
+Pertama, tentu saja, adalah versi server baru:
+
+https://github.com/openmultiplayer/open.mp/releases
+
+Kedua, forum sudah kembali aktif. Kunjungi untuk semua pertanyaan Anda:
+
+https://forum.open.mp/
+
+Atau jika Anda lebih suka:
+
+https://vk.com/open_mp
+
+Selanjutnya, meskipun telah beberapa kali ditawarkan, kami secara eksplisit menolak uang hingga saat ini; karena kami merasa itu tidak tepat sampai kami membuktikan diri dengan rilis ini. Dengan posting ini, waktunya sudah tiba, jadi jika ada yang ingin membantu mendukung kami (semua donasi akan digunakan untuk infrastruktur dan pengembangan klien di masa depan), itu sangat dihargai:
+
+https://www.patreon.com/open_mp
+https://opencollective.com/openmultiplayer
+
+Dan tentu saja semuanya masih dalam pengembangan aktif, jadi harap periksa semua tautan di atas secara teratur untuk melihat apa yang baru dari kami.
