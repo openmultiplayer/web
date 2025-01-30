@@ -10,7 +10,7 @@ We're excited to announce the release of out latest server version!
 
 This update brings several important fixes and introduces an exciting new feature: **openmp Packet Encryption**.
 
-For changelog please read it from here: [https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0](https://github.com/openmultiplayer/open.mp/releases/tag/v1.4.0.2779)
+For full changelog please read it from [here](https://github.com/openmultiplayer/open.mp/releases/tag/v1.4.0.2779).
 
 **Added:**
 
@@ -35,7 +35,14 @@ For changelog please read it from here: [https://github.com/openmultiplayer/laun
 - Fix crash related to moving objects.
 - Fix player vehicle data resetting before OnPlayerDeath is called.
 
-## **[v1.3.1.2748](https://github.com/openmultiplayer/open.mp/releases/tag/v1.3.1.2748)**
+<br />
+
+<hr />
+
+## [v1.3.1.2748](https://github.com/openmultiplayer/open.mp/releases/tag/v1.3.1.2748)
+
+<details>
+<summary>Click here to expand</summary>
 
 A new version of open.mp server is finally out, there has been a lot of fixes, bunch of performance improvements, and a few additions.
 
@@ -72,6 +79,8 @@ Our launcher also now received a new update which you can get by simply opening 
 - Fix [GetGameText](scripting/functions/GetGameText) function giving incorrect/corrupt values.
 - Fix open.mp windows version not loading when user's windows is set to a language with non-ascii names.
 - Fix callback headings in `qawno/filterscript.new` and `qawno/gamemode.new` files.
+
+</details>
 
 <br />
 
