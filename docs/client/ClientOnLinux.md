@@ -1,26 +1,33 @@
-# How to run OMP client on linux
 
-### Warning! You DO NOT get the working gui, you can only run this EITHER through the wine terminal, OR a batch script. 
-### (tested on wine-ge 8-26 in a 32-bit prefix, running through lutris)
+# How to run the open.mp client on Linux
 
+> **Warning:** You DO NOT get a working GUI, this must be executed in a Wine prefix via command line arguments.
+### Tested on:
 
-To get the client to run you need to download the launcher, and [omp-client.dll](https://assets.open.mp/omp-client.dll). \
-Then you need to put omp-client.dll in the AppData\Local\mp.open.launcher\omp\ folder of your prefix.\
-After that, you can execute the open mp launcher through the cli, or make a batch file like the one below, so that you can add it to your launcher of choice.
+ - Lutris: wine-ge 8-26 32-bit prefix
+ - Bottles: soda-9.0-1
 
-### Here is a sample .bat file for editing
+### How to:
+
+ 1. Ensure you have a Wine prefix created with GTA San Andreas installed.
+ 2. Download the [open.mp](https://github.com/openmultiplayer/launcher/releases/latest) launcher and install it inside the Wine prefix.
+ 3. Download the [SA-MP client](https://github.com/KrustyKoyle/files.sa-mp.com-Archive) and install it in the same Wine Prefix.
+ 4. Download the [omp-client.dll](https://assets.open.mp/omp-client.dll) and copy it to the `AppData\Local\mp.open.launcher\omp\` folder of the main user in your prefix.
+
+Finally, you can execute the open.mp launcher through the Wine prefixes CLI or write it to a .bat script for easy launching. 
+
+### Sample launch command
 ```
-Z:\path\to\omp-launcher.exe -h server.ip -p port -n dzmtrzz -g Z:\home\yourname\foo\bar\baz\gamepath\
+Z:\path\to\omp-launcher.exe -h server.ip -p port -n user.name -g Z:\home\yourname\path\to\gta-san-andreas\install\
 ```
 
-You can run omp-launcher.exe with the --help flag to get more info about the flags, in case the example above isn't enough.
+> You can run omp-launcher.exe with the --help flag to get more info about the flags, in case the example above isn't enough.
 
 
 ## Troubleshooting
 
-| Issue                                       | Supposed fix                                                           |
-| ------------------------------------------- |:----------------------------------------------------------------------:|
-| Game crashes when pausing                   | There is a missing font, fix by installing allfonts through winetricks |
-| Not displaying the login prompt on a server | Try toggling on/off the "Prefer system libraries" setting in lutris    |
-
-
+| Issue                                        | Supposed fix                                                                         |
+| -------------------------------------------- |:------------------------------------------------------------------------------------:|
+| Game crashes when pausing                    | There is a missing font, fix by installing allfonts through winetricks.              |
+| Not displaying the login prompt on a server  | Try toggling on/off the "Prefer system libraries" setting in lutris.                 |
+| Black box appears and the game does not load | You may be missing launch parameters on the CLI. Please review your launch command.  |
