@@ -1,30 +1,30 @@
 ---
 title: SendClientCheck
-description: Perform a memory check on the client.
+description: Execute uma verificação de memória no cliente.
 tags: []
 ---
 
-## Description
+## Descrição
 
-Perform a memory check on the client.
-
-
-| Name            | Description                          |
-| --------------- | ------------------------------------ |
-| playerid        | The ID of the player to check.       |
-| type            | The type of check to perform. [See here](../resources/opcodes)|
-| memAddr         | The base address to check.           |
-| memOffset       | The offset from the base address.    |
-| byteCount       | The number of bytes to check.        |
+Execute uma verificação de memória no cliente.
 
 
-## Returns
+| Nome            | Descrição                              |
+| --------------- | -------------------------------------- |
+| playerid        | A ID do jogador a ser verificado.      |
+| type            | O tipo de verificação a ser executada. [Veja aqui](../resources/opcodes)|
+| memAddr         | O endereço base para verificar         |
+| memOffset       | O deslocamento do endereço base.       |
+| byteCount       | O número de bytes a serem verificados. |
 
-1: The function was executed successfully.
 
-0: The function failed to execute. The player is not connected.
+## Retornos
 
-## Examples
+1: A função foi executada com sucesso.
+
+0: A função falhou ao executar. O player não está conectado.
+
+## Exemplos
 
 ```c
 public OnPlayerConnect(playerid)
@@ -37,35 +37,36 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
     if (actionid == 0x48) // or 72
     {
-        print("The player is connecting using the PC client.");
+        print("O jogador está se conectando usando o cliente do PC.");
     }
     return 1;
 }
 ```
 
-## Notes
+## Nota
 
 :::tip
 
-- There are 6 types of requests that the client processes (2, 5, 69, 70, 71, 72)
-- Type 72 doesn't use any of the other arguments [arg | offset | size].
-- The arg returns the uptime of the computer.
+- Existem 6 tipos de requisições que o cliente processa (2, 5, 69, 70, 71, 72)
+- O tipo 72 não usa nenhum dos outros argumentos [arg | offset | size].
+- O arg retorna o uptime do computador.
 
 :::
 
 :::warning
 
-**SA:MP Server**: This function only works when it is in a filterscript.
+**SA:MP Server**: Esta função só funciona quando está em um filterscript.
 
-**Open Multiplayer Server**: This functions normally inside a gamemode / filterscript. 
+**Open Multiplayer Server**: Isso funciona normalmente dentro de um gamemode/filterscript. 
 
 :::
 
-## Related Functions
+## Funções Relacionadas
 
-- [IsPlayerUsingOfficialClient](IsPlayerUsingOfficialClient): Check if the player is using the official SA-MP client.
-- [IsPlayerUsingOmp](IsPlayerUsingOmp): Check if the player is using the open.mp launcher.
+- [IsPlayerUsingOfficialClient](IsPlayerUsingOfficialClient): Verifique se o jogador está usando o cliente oficial SA-MP.
+- [IsPlayerUsingOmp](IsPlayerUsingOmp): Verifique se o player está usando o launcher open.mp.
 
-## Related Callbacks
+## Callbacks Relacionadas
 
-- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): called when a SendClientCheck request completes.
+- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): chamado quando uma solicitação SendClientCheck é concluída.
+- 
