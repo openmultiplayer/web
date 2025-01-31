@@ -11,7 +11,7 @@ Execute uma verificação de memória no cliente.
 
 | Nome            | Descrição                              |
 | --------------- | -------------------------------------- |
-| playerid        | A ID do jogador a ser verificado.      |
+| playerid        | O ID do jogador a ser verificado.      |
 | type            | O tipo de verificação a ser executada. [Veja aqui](../resources/opcodes)|
 | memAddr         | O endereço base para verificar         |
 | memOffset       | O deslocamento do endereço base.       |
@@ -22,7 +22,7 @@ Execute uma verificação de memória no cliente.
 
 1: A função foi executada com sucesso.
 
-0: A função falhou ao executar. O player não está conectado.
+0: A função falhou ao executar. O jogador não está conectado.
 
 ## Exemplos
 
@@ -64,7 +64,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 ## Funções Relacionadas
 
 - [IsPlayerUsingOfficialClient](IsPlayerUsingOfficialClient): Verifique se o jogador está usando o cliente oficial SA-MP.
-- [IsPlayerUsingOmp](IsPlayerUsingOmp): Verifique se o player está usando o launcher open.mp.
+- [IsPlayerUsingOmp](IsPlayerUsingOmp): Verifique se o jogador está usando o launcher open.mp.
 
 ## Callbacks Relacionadas
 
