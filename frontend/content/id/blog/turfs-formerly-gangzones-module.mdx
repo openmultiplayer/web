@@ -1,35 +1,34 @@
 ---
-title: Turfs (formerly gangzones) module
+title: Modul Turfs (sebelumnya gangzones)
 date: "2019-10-19T04:20:00"
 author: J0sh
 ---
 
-Hello! I have just finished our Turf implementation into the server and I thought of posting a overview of this module and to show we haven't quit or anything!
+Halo! Saya baru saja menyelesaikan implementasi Turf ke dalam server dan saya berpikir untuk memposting gambaran umum tentang modul ini dan untuk menunjukkan bahwa kami tidak menyerah atau apa pun!
 
 ```pawn
-// Creates a Turf. A playerid can be passed in order to make it a player turf.
+// Membuat sebuah Turf. playerid dapat diteruskan untuk menjadikannya turf pemain.
 native Turf:Turf_Create(Float:minx, Float:miny, Float:maxx, Float:maxy, Player:owner = INVALID_PLAYER_ID);
 
-// Destroys a turf.
+// Menghancurkan sebuah turf.
 native Turf_Destroy(Turf:turf);
 
-// Shows a Turf to a player or players.
-// Will send to all players if playerid = INVALID_PLAYER_ID.
+// Menampilkan sebuah Turf kepada pemain atau pemain-pemain.
+// Akan mengirimkan ke semua pemain jika playerid = INVALID_PLAYER_ID.
 native Turf_Show(Turf:turf, colour, Player:playerid = INVALID_PLAYER_ID);
 
-// Hides a Turf from a player or players.
-// Will send to all players if playerid = INVALID_PLAYER_ID.
+// Menyembunyikan sebuah Turf dari pemain atau pemain-pemain.
+// Akan mengirimkan ke semua pemain jika playerid = INVALID_PLAYER_ID.
 native Turf_Hide(Turf:turf, Player:playerid = INVALID_PLAYER_ID);
 
-// Flashes a Turf for a player or players.
-// Will send to all players if  playerid = INVALID_PLAYER_ID.
+// Membuat sebuah Turf berkedip untuk pemain atau pemain-pemain.
+// Akan mengirimkan ke semua pemain jika playerid = INVALID_PLAYER_ID.
 native Turf_Flash(Turf:turf, colour, Player:playerid = INVALID_PLAYER_ID);
 
-// Stops a Turf from flashing for player(s).
-// Will send to all players if playerid = INVALID_PLAYER_ID.
+// Menghentikan kedipan Turf untuk pemain-pemain.
+// Akan mengirimkan ke semua pemain jika playerid = INVALID_PLAYER_ID.
 native Turf_StopFlashing(Turf:turf, Player:playerid = INVALID_PLAYER_ID);
-```
 
-This is obviously different from the traditional API, but not to worry, there will be wrappers in place for this kind of stuff to make sure a normal script can be recompiled with no issues and without edits.
+Ini jelas berbeda dari API tradisional, tetapi jangan khawatir, akan ada pembungkus untuk hal-hal seperti ini untuk memastikan skrip biasa dapat dikompilasi ulang tanpa masalah dan tanpa perlu pengeditan.
 
-Another important fact that you may want to know is that every turf is in the same pool and there's a maximum of 4,294,967,295 turfs to be created from the script. However, the client can only handle 1024 turfs at one time.
+Fakta penting lainnya yang mungkin ingin Anda ketahui adalah bahwa setiap turf berada dalam pool yang sama dan ada maksimum 4.294.967.295 turfs yang dapat dibuat dari skrip. Namun, klien hanya dapat menangani 1024 turfs pada satu waktu.
