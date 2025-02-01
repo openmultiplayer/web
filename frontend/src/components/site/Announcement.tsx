@@ -17,7 +17,7 @@ const Announcement: FC = () => {
         </Heading>
 
         <Text>
-          Version 1.3.1.2748 of open.mp server is finally out, there has been a lot
+          Version 1.4.0.2779 of open.mp server is finally out, there has been a lot
           of fixes, bunch of performance improvements, and a few additions!{" "}
           <a href="https://www.open.mp/docs/changelog">
             Check out the changelog.

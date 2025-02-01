@@ -1,9 +1,48 @@
 ---
 title: Changelog
 description: open.mp development progress and changelog.
+
 ---
 
-## **[v1.3.1.2748](https://github.com/openmultiplayer/open.mp/releases/tag/v1.3.1.2748) (Latest)**
+## **[v1.4.0.2779](https://github.com/openmultiplayer/open.mp/releases/tag/v1.4.0.2779) (Latest)**
+
+We're excited to announce the release of out latest server version!
+
+This update brings several important fixes and introduces an exciting new feature: **openmp Packet Encryption**.
+
+For full changelog please read it from [here](https://github.com/openmultiplayer/open.mp/releases/tag/v1.4.0.2779).
+
+**Added:**
+
+- Implement open.mp encryption to be used with the open.mp launcher. Must be enabled in `config.json` first (`network.use_omp_encryption`).
+- open.mp player detection using [IsPlayerUsingOmp](scripting/functions/IsPlayerUsingOmp) native.
+- Recursively load components in folders.
+- Load components starting with $ sooner than others and load them with RTLD_GLOBAL on Linux.
+
+**Changes:**
+
+- Camera mode validity check.
+- Disable dynamic DLL loading for AMX runtime, especially when the user has the default Pawn installed from the Compuphase website.
+
+**Fixes:**
+
+- Fix a small issue for SetPlayerSkin in mobile clients.
+- Fix GetTickCount return value for Windows.
+- Fix crash when destroying a vehicle in some events and Pawn callbacks.
+- Fix inverted return value in GetVehicleLandingGearState.
+- Fix players randomly staying in the player list in launchers even if they leave the server.
+- More validity checks for trailers and trailer sync.
+- Fix crash related to moving objects.
+- Fix player vehicle data resetting before OnPlayerDeath is called.
+
+<br />
+
+<hr />
+
+## [v1.3.1.2748](https://github.com/openmultiplayer/open.mp/releases/tag/v1.3.1.2748)
+
+<details>
+<summary>Click here to expand</summary>
 
 A new version of open.mp server is finally out, there has been a lot of fixes, bunch of performance improvements, and a few additions.
 
@@ -40,6 +79,8 @@ Our launcher also now received a new update which you can get by simply opening 
 - Fix [GetGameText](scripting/functions/GetGameText) function giving incorrect/corrupt values.
 - Fix open.mp windows version not loading when user's windows is set to a language with non-ascii names.
 - Fix callback headings in `qawno/filterscript.new` and `qawno/gamemode.new` files.
+
+</details>
 
 <br />
 
