@@ -1,5 +1,5 @@
 ---
-title: "open.mp client on linux"
+title: "open.mp client no linux"
 description: Guia de como executar o cliente open.mp no Linux.
 ---
 
@@ -29,8 +29,11 @@ Por fim, você pode executar o launcher do open.mp através da CLI do prefixo do
 Z:\caminho\para\omp-launcher.exe -h servidor.ip -p porta -n user.name -g Z:\home\usuário\caminho\para\gta-san-andreas\install\
 ```
 
-> Você pode executar omp-launcher.exe com a flag --help para obter mais informações sobre as opções disponíveis, caso o exemplo acima não seja suficiente.
+:::tip
 
+Você pode executar omp-launcher.exe com a flag --help para obter mais informações sobre as opções disponíveis, caso o exemplo acima não seja suficiente.
+
+:::
 
 ## Troubleshooting
 
