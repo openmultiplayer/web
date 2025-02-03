@@ -15,7 +15,7 @@ func (s *service) list(w http.ResponseWriter, r *http.Request) {
 	queries := r.URL.Query()
 	since, err := strconv.Atoi(queries.Get("activeSince"))
 	if err != nil {
-		since = 3
+		since = 8 // Used to be 3, but we got bigger now I guess, so many servers!!!
 	}
 
 	// This used to be for getting servers from database directly
