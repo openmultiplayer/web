@@ -33,7 +33,7 @@ Certifique-se de que você não está usando nenhum caractere não permitido no 
 
 O servidor pode estar offline, ou se você não pode conectar a nenhum servidor, desative seu firewall e veja se funciona. Caso funcione, você precisa configurar seu firewall corretamente. Também pode ser que você tenha uma versão antiga do SA-MP, baixe a última versão: [Página de download do SA-MP](http://sa-mp.com/download.php).
 
-### Eu tenho um GTA modificado: San Andreas e SA-MP não irão carregar
+### Eu tenho um GTA modificado: GTA San Andreas e SA-MP não carregam
 
 Caso nenhum dos dois execute, remova seus mods.
 
