@@ -72,74 +72,83 @@ func (w *Worker) RunWithSeed(ctx context.Context, window time.Duration, addresse
 	return w.Run(ctx, window)
 }
 
+func (w *Worker) FetchAndQueryServers(ctx context.Context, window time.Duration) error {
+	zap.L().Info("Running server scraper worker")
+	addresses, err := w.db.GetServersToQuery(ctx, window)
+	if err != nil {
+		zap.L().Error("failed to get servers to query",
+			zap.Error(err))
+		return err
+	}
+
+	if len(addresses) == 0 {
+		zap.L().Info("no servers to query, skipping")
+		return err
+	}
+
+	zap.L().Info("got servers to update",
+		zap.Int("servers", len(addresses)))
+
+	for s := range w.sc.Scrape(ctx, addresses) {
+		zap.L().Info("updating server",
+			zap.String("address", s.IP),
+			zap.Bool("active", s.Active))
+
+		if err := w.db.Upsert(ctx, s); err != nil {
+			zap.L().Error("failed to upsert server",
+				zap.Error(err), zap.String("ip", s.IP))
+		}
+
+		time.Sleep(time.Second)
+	}
+
+	zap.L().Info("finished updating servers",
+		zap.Int("servers", len(addresses)))
+
+	// TODO: GetAll needs an "include inactive" flag, and make default duration configurable
+	// It should also probably just use existing data queried earlier.
+	// Only retrieve servers active since 8 hours ago (Used to be 3, but we got bigger now I guess, so many servers!!!)
+	all, err := w.db.GetAll(ctx, time.Duration(-8)*time.Hour)
+	if err != nil {
+		zap.L().Error("failed to get all servers for metrics",
+			zap.Error(err))
+		return err
+	}
+
+	zap.L().Info("Saving all servers into a JSON file to be used as cache")
+	// Let's save all servers info our cache file to be used in our API data processing instead of DB
+	err = w.db.GenerateCacheFromData(ctx, all)
+	if err != nil {
+		zap.L().Error("There was an error converting native array of servers to JSON data",
+			zap.Error(err))
+		return err
+	}
+
+	active := 0
+	inactive := 0
+	for _, s := range all {
+		if s.Active {
+			active++
+		} else {
+			inactive++
+		}
+		Players.With(prometheus.Labels{
+			"addr": s.IP,
+		}).Set(float64(s.Core.Players))
+	}
+	Active.Set(float64(active))
+	Inactive.Set(float64(inactive))
+	return nil
+}
+
 func (w *Worker) Run(ctx context.Context, window time.Duration) error {
+	_ = w.FetchAndQueryServers(ctx, window)
 	tc := time.NewTicker(window)
 	for range tc.C {
-		zap.L().Info("Running server scraper worker")
-		addresses, err := w.db.GetServersToQuery(ctx, window)
+		err := w.FetchAndQueryServers(ctx, window)
 		if err != nil {
-			zap.L().Error("failed to get servers to query",
-				zap.Error(err))
 			continue
 		}
-
-		if len(addresses) == 0 {
-			zap.L().Info("no servers to query, skipping")
-			continue
-		}
-
-		zap.L().Info("got servers to update",
-			zap.Int("servers", len(addresses)))
-
-		for s := range w.sc.Scrape(ctx, addresses) {
-			zap.L().Info("updating server",
-				zap.String("address", s.IP),
-				zap.Bool("active", s.Active))
-
-			if err := w.db.Upsert(ctx, s); err != nil {
-				zap.L().Error("failed to upsert server",
-					zap.Error(err), zap.String("ip", s.IP))
-			}
-
-			time.Sleep(time.Second)
-		}
-
-		zap.L().Info("finished updating servers",
-			zap.Int("servers", len(addresses)))
-
-		// TODO: GetAll needs an "include inactive" flag, and make default duration configurable
-		// It should also probably just use existing data queried earlier.
-		// Only retrieve servers active since 8 hours ago (Used to be 3, but we got bigger now I guess, so many servers!!!)
-		all, err := w.db.GetAll(ctx, time.Duration(-8)*time.Hour)
-		if err != nil {
-			zap.L().Error("failed to get all servers for metrics",
-				zap.Error(err))
-			continue
-		}
-
-		zap.L().Info("Saving all servers into a JSON file to be used as cache")
-		// Let's save all servers info our cache file to be used in our API data processing instead of DB
-		err = w.db.GenerateCacheFromData(ctx, all)
-		if err != nil {
-			zap.L().Error("There was an error converting native array of servers to JSON data",
-				zap.Error(err))
-			continue
-		}
-
-		active := 0
-		inactive := 0
-		for _, s := range all {
-			if s.Active {
-				active++
-			} else {
-				inactive++
-			}
-			Players.With(prometheus.Labels{
-				"addr": s.IP,
-			}).Set(float64(s.Core.Players))
-		}
-		Active.Set(float64(active))
-		Inactive.Set(float64(inactive))
 	}
 
 	return nil

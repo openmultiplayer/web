@@ -21,7 +21,7 @@ func (s *service) get(w http.ResponseWriter, r *http.Request) {
 		if errors.Is(err, db.ErrNotFound) {
 			web.StatusNotFound(w, err)
 		} else {
-			web.StatusInternalServerError(w, errors.Wrap(err, "failed to get server"))
+			// web.StatusInternalServerError(w, errors.Wrap(err, "failed to get server"))
 		}
 		return
 	}
