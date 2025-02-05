@@ -36,7 +36,7 @@ public OnPlayerText(playerid, text[])
 
 <TipNPCCallbacks />
 
-::: tip 
+:::tip 
 
 By default, this callback sends a message containing the content of the message, the player's name, and their ID. Returning 0 will ignore this default behaviour, as demonstrated in the code example above. 
 
