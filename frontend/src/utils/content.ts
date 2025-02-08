@@ -143,12 +143,27 @@ const readLocaleDocsDevMode = async (
   // a special file named `_.md`.
   const dir = "../docs/" + name;
   if (exists(dir) && statSync(dir).isDirectory()) {
-    const list = readdirSync(dir);
-
-    // Attempt to read a file named _.md from the directory
-    let source = await readMdFromLocal(dir + "/_");
-    if (source === undefined) {
-      source = "# " + name + "\n\n";
+    let list = readdirSync(dir);
+    let source;
+  
+    // Fisrt handle locale-specific directory
+    if (locale && locale !== 'en') {
+      const localeDir = `../docs/translations/${locale}/${name}`;
+      const localeIndex = `../docs/translations/${locale}/${name}/_`;
+      
+      if (exists(localeDir) && statSync(localeDir).isDirectory()) {
+        list = readdirSync(localeDir);
+        // read localized _.md first
+        source = await readMdFromLocal(localeIndex);
+      }
+    }
+  
+    // localized content was not found, fall back to eng
+    if (!source) {
+      source = await readMdFromLocal(dir + "/_");
+      if (source === undefined) {
+        source = "# " + name + "\n\n";
+      }
     }
 
     // Generate some content for this category page. A heading, some content
@@ -162,7 +177,7 @@ const readLocaleDocsDevMode = async (
 
     return {
       source: source + additional,
-      fallback: false,
+      fallback: !source || locale === 'en',
     };
   }
 
