@@ -31,7 +31,7 @@ const InfoItem = ({ title, idx }: { title: string; idx: string }) => {
 
 const Page = () => (
   <>
-    <section className="measure-wide center ph3">
+    {/* <section className="measure-wide center ph3">
       <h1>Dashboard</h1>
       <ul className="measure center list pa0">
         <InfoItem title="Name" idx="name" />
@@ -58,7 +58,7 @@ const Page = () => (
       <a href="/logout" className="link">
         Logout
       </a>
-    </section>
+    </section> */}
   </>
 );
 

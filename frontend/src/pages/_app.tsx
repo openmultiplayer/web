@@ -46,26 +46,29 @@ const App: NextPage<AppProps> = ({ Component, pageProps, router }) => (
 
     <ToastContainer align="right" />
 
-    <AuthProvider>
-      <Nav
-        items={[
-          { name: "Home", path: "/", exact: true },
-          { name: "FAQ", path: "/faq" },
-          { name: "Forums", path: "https://forum.open.mp" },
-          { name: "Servers", path: "/servers" },
-          { name: "Partners", path: "/partners" },
-          { name: "Docs", path: "/docs" },
-          { name: "Blog", path: "/blog" },
-        ]}
-        route={router.asPath}
-      />
+    {/*
+      Disable AuthProvider, we aint authing ANYONE here :peetah:
+      <AuthProvider>
+    */}
+    <Nav
+      items={[
+        { name: "Home", path: "/", exact: true },
+        { name: "FAQ", path: "/faq" },
+        { name: "Forums", path: "https://forum.open.mp" },
+        { name: "Servers", path: "/servers" },
+        { name: "Partners", path: "/partners" },
+        { name: "Docs", path: "/docs" },
+        { name: "Blog", path: "/blog" },
+      ]}
+      route={router.asPath}
+    />
 
-      <main>
-        <Component {...pageProps} />
-      </main>
+    <main>
+      <Component {...pageProps} />
+    </main>
 
-      <Footer />
-    </AuthProvider>
+    <Footer />
+    {/* </AuthProvider> */}
 
     <style jsx global>{`
       html,

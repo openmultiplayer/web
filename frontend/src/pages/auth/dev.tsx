@@ -2,6 +2,8 @@ import React from "react";
 import { API_ADDRESS } from "src/config";
 
 const Page = () => {
+  return null;
+
   return (
     <div className="measure center pa4 ">
       <form className="flex" action={`${API_ADDRESS}/users/dev`} method="get">

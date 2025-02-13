@@ -90,6 +90,8 @@ const BanModal = ({ users, user, setUsers }: any) => {
 };
 
 export default function Members() {
+  return null;
+
   const [memberSearch, setMemberSearch] = useState("");
   const [sort, setSort] = useState("asc");
   const [pageExtremes, setPageExtremes] = useState({

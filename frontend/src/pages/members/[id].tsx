@@ -8,19 +8,21 @@ import { User, UserSchema } from "src/types/_generated_User";
 type Props = SSP<User>;
 
 const Page: FC<Props> = (props) => {
-  if (props.success === false) {
-    return <ErrorBanner {...props.error} />;
-  }
-  return <MemberView user={props.data} />;
+  return null;
+
+  // if (props.success === false) {
+  //   return <ErrorBanner {...props.error} />;
+  // }
+  // return <MemberView user={props.data} />;
 };
 
-export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
-  const id = ctx.params?.["id"];
-  return {
-    props: await apiSSP<User>(`/users/${id}`, ctx, {
-      schema: UserSchema,
-    }),
-  };
-};
+// export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
+//   const id = ctx.params?.["id"];
+//   return {
+//     props: await apiSSP<User>(`/users/${id}`, ctx, {
+//       schema: UserSchema,
+//     }),
+//   };
+// };
 
 export default Page;
