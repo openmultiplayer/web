@@ -6,4 +6,4 @@ export const WEB_ADDRESS =
 
 console.log(API_ADDRESS, WEB_ADDRESS);
 
-Error.stackTraceLimit = 100;
+Error.stackTraceLimit = 500;
