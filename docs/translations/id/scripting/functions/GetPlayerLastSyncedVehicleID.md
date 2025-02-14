@@ -4,7 +4,7 @@ description: Gets the player's last synced vehicle ID.
 tags: ["player", "vehicle"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarnID version='omp v1.1.0.2612' />
 
 :::warning
 
