@@ -14,4 +14,4 @@ There are two kinds of parameters for [SetObjectMaterialText](../functions/SetOb
 | ----- | -------------------------------- |
 | 0     | OBJECT_MATERIAL_TEXT_ALIGN_LEFT   |
 | 1     | OBJECT_MATERIAL_TEXT_ALIGN_CENTER / OBJECT_MATERIAL_TEXT_ALIGN_CENT |
-| 2     | OBJECT_MATERIAL_TEXT_ALIGN_RIGT  |
+| 2     | OBJECT_MATERIAL_TEXT_ALIGN_RIGHT / OBJECT_MATERIAL_TEXT_ALIGN_RIGT  |
