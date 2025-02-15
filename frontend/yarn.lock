@@ -1942,7 +1942,7 @@
 
 "@mdx-js/mdx@https://github.com/openmultiplayer/mdx":
   version "1.6.22"
-  resolved "https://github.com/openmultiplayer/mdx#5ee95736b2bc5127f5da918a6e7f728a9d073594"
+  resolved "https://github.com/openmultiplayer/mdx#c0803b39af086df33ce9f852992f9be4107224e7"
   dependencies:
     "@babel/core" "7.12.9"
     "@babel/plugin-syntax-jsx" "7.12.1"
