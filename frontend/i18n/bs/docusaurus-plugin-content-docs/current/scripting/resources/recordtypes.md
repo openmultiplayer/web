@@ -3,7 +3,6 @@ title: Vrste Zapisa
 sidebar_label: Vrste Zapisa
 description: Vrste Zapisa korištene od StartRecordingPlayerData.
 tags: ["player"]
-sidebar_label: Vrste Zapisa
 ---
 
 :::info

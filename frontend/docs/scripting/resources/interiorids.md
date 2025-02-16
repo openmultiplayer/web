@@ -1,6 +1,5 @@
 ---
 description: This page has most of the available interiors in SAMP.
-sidebar_label: Interiors
 ---
 
 ## How to get the Interior ID

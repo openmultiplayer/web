@@ -92,15 +92,29 @@ const config: Config = {
             };
 
             const normalizeCategoryNames = (items: NormalizedSidebarItem[]) => {
+              const categories: NormalizedSidebarItem[] = [];
+              const nonCategories: NormalizedSidebarItem[] = [];
+
               items.forEach((item) => {
                 if (item.type === "category") {
                   item.label =
                     item.label.charAt(0).toUpperCase() + item.label.slice(1);
-                  return normalizeCategoryNames(item.items);
+                  item.items = normalizeCategoryNames(item.items);
+
+                  categories.push(item);
+                } else {
+                  if (item.type === "doc") {
+                    if (!item.label) {
+                      const split = item.id.split("/");
+                      const name = split[split.length - 1];
+                      item.label = name.charAt(0).toUpperCase() + name.slice(1);
+                    }
+                  }
+                  nonCategories.push(item);
                 }
               });
 
-              return items;
+              return [...categories, ...nonCategories];
             };
 
             const items = await defaultSidebarItemsGenerator(args);
@@ -108,6 +122,12 @@ const config: Config = {
             items.forEach((item) => {
               if (item.type === "category") {
                 item.items = normalizeCategoryNames(item.items);
+              } else if (item.type === "doc") {
+                if (!item.label) {
+                  const split = item.id.split("/");
+                  const name = split[split.length - 1];
+                  item.label = name.charAt(0).toUpperCase() + name.slice(1);
+                }
               }
             });
 

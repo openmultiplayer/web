@@ -3,7 +3,6 @@ title: Spectate Types
 sidebar_label: Spectate Types
 description: Spectate Types used by GetPlayerSpectateType.
 tags: []
-sidebar_label: Spectate Types
 ---
 
 :::info

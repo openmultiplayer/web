@@ -2,7 +2,6 @@
 title: Starting IDs
 sidebar_label: Starting IDs
 description: Everything like objects, players or vehicles use IDs. Some IDs start with 0, others start with 1.
-sidebar_label: Starting IDs
 ---
 
 Everything like objects, players or vehicles use IDs. Some IDs start with 0, others start with 1.

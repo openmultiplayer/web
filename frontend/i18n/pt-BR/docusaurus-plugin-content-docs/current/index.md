@@ -1,7 +1,6 @@
 ---
 title: Bem-vindo
 sidebar_label: Bem-vindo
-sidebar_label: Bem-vindo
 ---
 
 Bem-vindo ao SA-MP wiki, mantido pelo time do open.mp e uma grande comunidade do SA-MP!

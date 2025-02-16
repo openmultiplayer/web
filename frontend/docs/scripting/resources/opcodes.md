@@ -3,7 +3,6 @@ title: opcodes
 sidebar_label: opcodes
 description: SendClientCheck action IDs
 tags: []
-sidebar_label: opcodes
 ---
 
 :::note

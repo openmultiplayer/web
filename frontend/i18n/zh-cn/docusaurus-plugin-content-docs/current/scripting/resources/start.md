@@ -2,7 +2,6 @@
 title: Scripting Basics
 sidebar_label: Scripting Basics
 description: A short tutorial guiding you through the basics of the Pawn language and SA-MP/open.mp APIs.
-sidebar_label: Scripting Basics
 ---
 
 Below is an example of possibly the most basic script you can write:

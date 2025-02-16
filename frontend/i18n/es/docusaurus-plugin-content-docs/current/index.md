@@ -1,7 +1,6 @@
 ---
 title: ¡Bienvenido!
 sidebar_label: ¡Bienvenido!
-sidebar_label: ¡Bienvenido!
 ---
 
 ¡Bienvenido a la wiki de SA:MP, mantenida por el equipo de open.mp y la extensa comunidad de SA:MP!

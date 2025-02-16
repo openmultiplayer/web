@@ -3,7 +3,6 @@ title: Record Types
 sidebar_label: Record Types
 description: Record types used by StartRecordingPlayerData.
 tags: ["player"]
-sidebar_label: Record Types
 ---
 
 :::info

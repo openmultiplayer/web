@@ -3,7 +3,6 @@ title: Player States
 sidebar_label: Player States
 description: A list of all the player states to be used with the GetPlayerState function or OnPlayerStateChange callback.
 tags: ["player"]
-sidebar_label: Player States
 ---
 
 This page compiles the list of all the player states to be used with the [GetPlayerState](../functions/GetPlayerState.md) function or [OnPlayerStateChange](../callbacks/OnPlayerStateChange.md) callback. Both pages contain examples on how to use the values below.

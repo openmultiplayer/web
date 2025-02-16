@@ -1,7 +1,6 @@
 ---
 title: Escape Codes
 sidebar_label: Escape Codes
-sidebar_label: Escape Codes
 ---
 
 When create a string you may find that some character may be impossible or extremely difficult to express in the source code of your script, this is where escape codes come in handy - these allow you to use the symbols and expressions that come under this category. Below is a list of escape codes for the PAWN language.

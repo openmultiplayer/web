@@ -2,7 +2,6 @@
 title: Crime List
 sidebar_label: Crime List
 description: Crime List used by PlayCrimeReportForPlayer function.
-sidebar_label: Crime List
 ---
 
 :::info

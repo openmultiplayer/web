@@ -3,7 +3,6 @@ title: Record Types
 sidebar_label: Record Types
 description: Record types to be used with [StartRecordingPlayerData]()../functions/StartRecordingPlayerData.md)
 tags: ["player"]
-sidebar_label: Record Types
 ---
 
 Record types to be used with [StartRecordingPlayerData](../functions/StartRecordingPlayerData.md)

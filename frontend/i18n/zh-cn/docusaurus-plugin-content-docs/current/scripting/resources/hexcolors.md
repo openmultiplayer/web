@@ -2,7 +2,6 @@
 title: Hex Colors
 sidebar_label: Hex Colors
 description: This deals with the color representation in hexadecimal in SAMP.
-sidebar_label: Hex Colors
 ---
 
 ## What is hex?

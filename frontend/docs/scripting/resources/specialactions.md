@@ -3,7 +3,6 @@ title: Special Actions
 sidebar_label: Special Actions
 description: A list of all the player special actions used by GetPlayerSpecialAction and SetPlayerSpecialAction functions.
 tags: ["player"]
-sidebar_label: Special Actions
 ---
 
 This page compiles the list of all the player special actions used by [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction) and [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction) functions. Both pages contain examples on how to use the values below.
