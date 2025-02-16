@@ -1,5 +1,6 @@
 ---
 title: fgetchar
+sidebar_label: fgetchar
 description: Reads a single character from a file.
 tags: ["file management"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Camera Cut Styles
+sidebar_label: Camera Cut Styles
 ---
 
 :::info

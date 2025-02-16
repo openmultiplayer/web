@@ -1,5 +1,6 @@
 ---
 title: Door States
+sidebar_label: Door States
 description: Information about byte size and its corresponding door state bits.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerKeyStateChange
+sidebar_label: OnPlayerKeyStateChange
 description: This callback is called when the state of any supported key is changed (pressed/released).
 tags: ["player"]
 ---

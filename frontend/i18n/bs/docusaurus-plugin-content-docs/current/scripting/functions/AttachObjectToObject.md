@@ -1,5 +1,6 @@
 ---
 title: AttachObjectToObject
+sidebar_label: AttachObjectToObject
 description: Možete koristiti ovu funkciju da prikvačite objekat za drugi objekat.
 tags: []
 ---

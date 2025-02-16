@@ -1,5 +1,6 @@
 ---
 title: Vehicle Tire Status
+sidebar_label: Vehicle Tire Status
 description: Vehicle tire status definitions.
 ---
 

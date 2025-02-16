@@ -1,5 +1,6 @@
 ---
 title: ManualVehicleEngineAndLights
+sidebar_label: ManualVehicleEngineAndLights
 description: Use this function before any player connects (OnGameModeInit) to tell all clients that the script will control vehicle engines and lights.
 tags: ["vehicle"]
 ---

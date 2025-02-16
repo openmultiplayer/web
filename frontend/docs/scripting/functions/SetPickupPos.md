@@ -1,5 +1,6 @@
 ---
 title: SetPickupPos
+sidebar_label: SetPickupPos
 description: Sets the position of a pickup.
 tags: ["pickup"]
 ---

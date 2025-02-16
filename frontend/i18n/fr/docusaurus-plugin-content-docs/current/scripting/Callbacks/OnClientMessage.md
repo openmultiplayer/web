@@ -1,5 +1,6 @@
 ---
 title: OnClientMessage
+sidebar_label: OnClientMessage
 description: Cette callback est appelée chaque fois qu'un NPC voit un ClientMessage.
 tags: [NPC, ClientMessage, SendClientMessageToAll, ]
 ---

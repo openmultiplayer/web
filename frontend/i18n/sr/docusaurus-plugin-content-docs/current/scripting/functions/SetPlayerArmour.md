@@ -1,5 +1,6 @@
 ---
 title: SetPlayerArmour
+sidebar_label: SetPlayerArmour
 description: Подешава панцир играча.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: Apelat atunci când un vehicul este transmis în flux la clientul unui jucător.
 tags: ["vehicle"]
 ---

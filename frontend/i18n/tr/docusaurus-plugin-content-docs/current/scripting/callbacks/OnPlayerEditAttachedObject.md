@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditAttachedObject
+sidebar_label: OnPlayerEditAttachedObject
 description: Bu geri çağırma oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
 tags: ["player"]
 ---

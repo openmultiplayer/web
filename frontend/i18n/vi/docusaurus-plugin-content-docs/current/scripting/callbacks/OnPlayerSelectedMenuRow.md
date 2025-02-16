@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectedMenuRow
+sidebar_label: OnPlayerSelectedMenuRow
 description: Callback này được gọi khi người chơi chọn một mục từ menu (ShowMenuForPlayer).
 tags: ["player", "menu"]
 ---

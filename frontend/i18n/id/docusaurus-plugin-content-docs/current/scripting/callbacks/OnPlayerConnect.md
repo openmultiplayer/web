@@ -1,5 +1,6 @@
 ---
 title: OnPlayerConnect
+sidebar_label: OnPlayerConnect
 description: Callback ini akan terpangil ketika pemain terhubung kedalam server.
 tags: ["player"]
 ---

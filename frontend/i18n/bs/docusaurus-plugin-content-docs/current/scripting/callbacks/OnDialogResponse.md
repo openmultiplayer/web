@@ -1,5 +1,6 @@
 ---
 title: OnDialogResponse
+sidebar_label: OnDialogResponse
 description: Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcijom bilo klikom dugmeta, klikom ENTER/ESC tipke ili duplim klikom na list item (ukoliko koristite "list" style dijalog).
 tags: []
 ---

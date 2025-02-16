@@ -1,5 +1,6 @@
 ---
 title: IsValidMenu
+sidebar_label: IsValidMenu
 description: Checks if a menu ID is valid.
 tags: ["menu"]
 ---

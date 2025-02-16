@@ -1,5 +1,6 @@
 ---
 title: GetActorHealth
+sidebar_label: GetActorHealth
 description: Dobij health actora.
 tags: ["actor"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: ClearActorAnimations
+sidebar_label: ClearActorAnimations
 description: Uklanja bilo koju animaciju koja je postavljena aktoru.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: fgetchar
+sidebar_label: fgetchar
 description: Čita jedan znak iz datoteke.
 tags: []
 ---

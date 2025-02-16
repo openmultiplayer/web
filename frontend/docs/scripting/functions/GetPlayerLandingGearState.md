@@ -1,5 +1,6 @@
 ---
 title: GetPlayerLandingGearState
+sidebar_label: GetPlayerLandingGearState
 description: Gets the landing gear state of the current player's vehicle.
 tags: ["player", "vehicle"]
 ---

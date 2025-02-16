@@ -1,5 +1,6 @@
 ---
 title: fopen
+sidebar_label: fopen
 description: Otvorite datoteku (za čitanje ili pisanje).
 tags: []
 ---

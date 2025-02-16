@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPickup
+sidebar_label: OnPlayerPickUpPickup
 description: Fonksiyon, oyuncu CreatePickup ile oluşturulan bir işaretin (pickup) üstüne geldiğinde çağrılır. 
 tags: ["player"]
 ---

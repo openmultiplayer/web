@@ -1,5 +1,6 @@
 ---
 title: DestroyPickup
+sidebar_label: DestroyPickup
 description: Uništava pickup kreiran sa CreatePickup.
 tags: []
 ---

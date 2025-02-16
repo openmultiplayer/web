@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetPreviewVehCol
+sidebar_label: TextDrawSetPreviewVehCol
 description: Ako je model vozila korišten u 3D textdraw pregledu (3D preview textdraw), ovo postavlja dvije vrijednosti boja za to vozilo.
 tags: ["textdraw"]
 ---

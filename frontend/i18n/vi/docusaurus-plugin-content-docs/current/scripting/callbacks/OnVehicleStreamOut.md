@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: Callback này được gọi khi một xe bị stream ra khỏi client của người chơi (quá xa để người chơi có thể thấy).
 tags: ["vehicle"]
 ---

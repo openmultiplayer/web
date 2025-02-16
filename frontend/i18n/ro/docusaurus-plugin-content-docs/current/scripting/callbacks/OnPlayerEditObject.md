@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditObject
+sidebar_label: OnPlayerEditObject
 description: Acest callback este apelat atunci când un jucător termină editarea unui obiect (EditObject/EditPlayerObject).
 tags: ["player"]
 ---

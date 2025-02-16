@@ -1,5 +1,6 @@
 ---
 title: Ortak İstemci Sorunları
+sidebar_label: Ortak İstemci Sorunları
 ---
 
 ### "San Andreas cannot be found" hatası alıyorum

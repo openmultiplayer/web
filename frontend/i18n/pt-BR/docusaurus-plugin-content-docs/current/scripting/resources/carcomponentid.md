@@ -1,5 +1,6 @@
 ---
 title: IDs dos Componentes do Carro
+sidebar_label: IDs dos Componentes do Carro
 description: Informações sobre os IDs dos componentes do carro, nome dos modelos, peças, tipos, veículos suportados e custos.
 ---
 

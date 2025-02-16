@@ -1,5 +1,6 @@
 ---
 title: OnVehicleMod
+sidebar_label: OnVehicleMod
 description: Ovaj callback je pozvan kada vozilo biva modirano/uređeno.
 tags: ["vehicle"]
 ---

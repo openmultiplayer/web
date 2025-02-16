@@ -1,5 +1,6 @@
 ---
 title: PlayerSpectatePlayer
+sidebar_label: PlayerSpectatePlayer
 description: Daje mogućnost igraču da spectate-a (nadgleda) drugog igrača.
 tags: ["player"]
 ---

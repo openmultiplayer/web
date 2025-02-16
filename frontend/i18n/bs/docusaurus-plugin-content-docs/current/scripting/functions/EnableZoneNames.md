@@ -1,5 +1,6 @@
 ---
 title: EnableZoneNames
+sidebar_label: EnableZoneNames
 description: Ova funkcija omogućava uključivanje naziva zona / područja kao što je "Vinewood" ili "Doherty" tekst u donjem desnom dijelu ekrana dok ulaze u to područje.
 tags: []
 ---

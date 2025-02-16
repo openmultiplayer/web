@@ -1,5 +1,6 @@
 ---
 title: GetVehicleLandingGearState
+sidebar_label: GetVehicleLandingGearState
 description: Gets the current vehicle landing gear state from the latest driver.
 tags: ["vehicle"]
 ---

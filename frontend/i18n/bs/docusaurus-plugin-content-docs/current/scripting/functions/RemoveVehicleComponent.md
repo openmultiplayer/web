@@ -1,5 +1,6 @@
 ---
 title: RemoveVehicleComponent
+sidebar_label: RemoveVehicleComponent
 description: Ukloni komponentu sa vozila.
 tags: ["vehicle"]
 ---

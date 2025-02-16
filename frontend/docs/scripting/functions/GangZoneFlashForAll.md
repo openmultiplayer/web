@@ -1,5 +1,6 @@
 ---
 title: GangZoneFlashForAll
+sidebar_label: GangZoneFlashForAll
 description: Flashes a gangzone for all players.
 tags: ["gangzone"]
 ---

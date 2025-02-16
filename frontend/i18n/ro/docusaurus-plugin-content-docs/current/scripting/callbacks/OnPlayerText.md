@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: Apelat atunci când un jucător trimite un mesaj de chat.
 tags: ["player"]
 ---

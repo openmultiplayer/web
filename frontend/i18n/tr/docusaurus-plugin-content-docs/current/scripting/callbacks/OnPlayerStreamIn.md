@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamIn
+sidebar_label: OnPlayerStreamIn
 description: Bu fonksiyon, bir oyuncu başka bir oyuncunun streamer bölgesinde yayınlandığında çağrılır. 
 tags: ["player"]
 ---

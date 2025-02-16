@@ -1,5 +1,6 @@
 ---
 title: IsPlayerUsingOfficialClient
+sidebar_label: IsPlayerUsingOfficialClient
 description: Check if the player is using the official SA-MP client.
 tags: ["player"]
 ---

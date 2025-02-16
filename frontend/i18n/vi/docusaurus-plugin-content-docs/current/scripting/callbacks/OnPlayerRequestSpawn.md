@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestSpawn
+sidebar_label: OnPlayerRequestSpawn
 description: Callback này được gọi khi người chơi cố gắng xuất hiện qua việc chọn lớp bằng cách nhấn SHIFT hoặc nhấp vào nút 'Spawn'.
 tags: ["player", "class"]
 ---

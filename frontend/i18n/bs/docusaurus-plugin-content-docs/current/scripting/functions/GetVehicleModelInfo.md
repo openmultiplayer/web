@@ -1,5 +1,6 @@
 ---
 title: GetVehicleModelInfo
+sidebar_label: GetVehicleModelInfo
 description: Dohvatite informacije o određenom modelu vozila, poput veličine ili položaja sjedala.
 tags: ["vehicle"]
 ---

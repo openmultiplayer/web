@@ -1,5 +1,6 @@
 ---
 title: GetVehicleVirtualWorld
+sidebar_label: GetVehicleVirtualWorld
 description: Dobij virtualni svijet vozila.
 tags: ["vehicle"]
 ---

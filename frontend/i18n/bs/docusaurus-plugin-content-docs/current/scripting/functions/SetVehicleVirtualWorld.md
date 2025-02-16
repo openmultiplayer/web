@@ -1,5 +1,6 @@
 ---
 title: SetVehicleVirtualWorld
+sidebar_label: SetVehicleVirtualWorld
 description: Postavi virtualni svijet ('virtual world') vozila.
 tags: ["vehicle"]
 ---

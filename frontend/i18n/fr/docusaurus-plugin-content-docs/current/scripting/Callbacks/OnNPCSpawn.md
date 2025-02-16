@@ -1,5 +1,6 @@
 ---
 title: OnNPCSpawn
+sidebar_label: OnNPCSpawn
 description: Ce rappel est appelé lorsqu'un PNJ apparaît.
 tags: ["npc"]
 ---

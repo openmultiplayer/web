@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Ова повратна функција је позван када се актор појави у играчевом клијенту.
 tags: ["actor"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetCustomModelPath
+sidebar_label: GetCustomModelPath
 description: Get a custom model path.
 tags: ["custom model", "custom skin", "simple model"]
 ---

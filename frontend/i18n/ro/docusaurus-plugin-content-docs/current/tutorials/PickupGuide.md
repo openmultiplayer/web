@@ -1,5 +1,6 @@
 ---
 title: Ghid pentru pickup-uri
+sidebar_label: Ghid pentru pickup-uri
 ---
 
 Un scurt tutorial care descrie modul de utilizare a pickup-urilor.

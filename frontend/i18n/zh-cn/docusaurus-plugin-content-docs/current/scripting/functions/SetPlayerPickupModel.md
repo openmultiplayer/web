@@ -1,5 +1,6 @@
 ---
 title: SetPlayerPickupModel
+sidebar_label: SetPlayerPickupModel
 description: Sets the model of a player-pickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

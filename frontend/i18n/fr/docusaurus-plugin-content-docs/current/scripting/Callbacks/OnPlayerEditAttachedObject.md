@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditAttachedObject
+sidebar_label: OnPlayerEditAttachedObject
 description: Cette callback est appelée quand un joueur en a fini avec le mode édition des attach objects.
 tags: ["player"]
 ---

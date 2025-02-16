@@ -1,5 +1,6 @@
 ---
 title: ConnectNPC
+sidebar_label: ConnectNPC
 description: Ikonekta ang isang NPC sa server.
 tags: ["npc"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditAttachedObject
+sidebar_label: OnPlayerEditAttachedObject
 description: Acest callback este apelat atunci când un jucător încheie modul de ediție a obiectelor atașate.
 tags: ["player"]
 ---

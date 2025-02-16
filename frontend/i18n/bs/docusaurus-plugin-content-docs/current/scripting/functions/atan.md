@@ -1,5 +1,6 @@
 ---
 title: atan
+sidebar_label: atan
 description: Dobijte obrnutu vrijednost tangente luka u radijanima.
 tags: []
 ---

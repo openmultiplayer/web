@@ -1,5 +1,6 @@
 ---
 title: SetPlayerAttachedObject
+sidebar_label: SetPlayerAttachedObject
 description: Prikvači objekat na određenu kost igrača.
 tags: ["player"]
 ---

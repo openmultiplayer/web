@@ -1,5 +1,6 @@
 ---
 title: ClearAnimations
+sidebar_label: ClearAnimations
 description: Čisti sve animacije koje su date igraču (ovo također zaustavlja trenutne zadatke koji se vrše poput jetpackinga, padobraniranja, ulaženaj u vozila, voženja (ukloni igrača iz vozila), plivanja itd.)
 tags: []
 ---

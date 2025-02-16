@@ -1,5 +1,6 @@
 ---
 title: OnNPCConnect
+sidebar_label: OnNPCConnect
 description: Ce rappel est appelé lorsqu'un PNJ se connecte avec succès au serveur.
 tags: ["npc"]
 ---

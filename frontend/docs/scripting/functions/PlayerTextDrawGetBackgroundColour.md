@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetBackgroundColour
+sidebar_label: PlayerTextDrawGetBackgroundColour
 description: Gets the background colour of a player-textdraw
 tags: ["player", "textdraw", "playertextdraw"]
 ---

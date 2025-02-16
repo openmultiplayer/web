@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetPreviewModel
+sidebar_label: PlayerTextDrawGetPreviewModel
 description: Gets the preview model of a 3D preview player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

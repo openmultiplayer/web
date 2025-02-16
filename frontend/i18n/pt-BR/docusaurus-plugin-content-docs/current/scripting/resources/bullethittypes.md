@@ -1,5 +1,6 @@
 ---
 title: Tipos de Hit
+sidebar_label: Tipos de Hit
 ---
 
 :::info

@@ -1,5 +1,6 @@
 ---
 title: max
+sidebar_label: max
 description: .
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayer3DTextLabelColour
+sidebar_label: GetPlayer3DTextLabelColour
 description: Gets the player's 3D text label colour.
 tags: ["player", "3dtextlabel"]
 ---

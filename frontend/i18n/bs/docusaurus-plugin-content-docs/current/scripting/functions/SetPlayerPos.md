@@ -1,5 +1,6 @@
 ---
 title: SetPlayerPos
+sidebar_label: SetPlayerPos
 description: Postavite poziciju igrača.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetServerTickRate
+sidebar_label: GetServerTickRate
 description: Dobiva brzinu označavanja (poput FPS-a) servera.
 tags: []
 ---

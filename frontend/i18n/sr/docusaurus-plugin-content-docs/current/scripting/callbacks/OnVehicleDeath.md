@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDeath
+sidebar_label: OnVehicleDeath
 description: Ова повратна функција се позива када возило буде уништено - било експлозијом или потапањем у воду.
 tags: ["vehicle"]
 ---

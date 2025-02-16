@@ -1,5 +1,6 @@
 ---
 title: OnObjectMoved
+sidebar_label: OnObjectMoved
 description: Cette callback est appelée quand un objet s'est arrêté de bouger après un MoveObject
 tags: [OnObjectMoved, SetObjectPos, objectid, object, objet, mouvement, moved, IsObjectMoving, MoveObject]
 ---

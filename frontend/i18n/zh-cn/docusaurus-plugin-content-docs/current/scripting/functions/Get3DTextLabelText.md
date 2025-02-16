@@ -1,5 +1,6 @@
 ---
 title: Get3DTextLabelText
+sidebar_label: Get3DTextLabelText
 description: Gets the 3D text label text.
 tags: ["3dtextlabel"]
 ---

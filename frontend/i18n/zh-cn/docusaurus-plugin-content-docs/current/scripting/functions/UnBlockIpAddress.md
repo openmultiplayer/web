@@ -1,5 +1,6 @@
 ---
 title: UnBlockIpAddress
+sidebar_label: UnBlockIpAddress
 description: Unblock an IP address that was previously blocked using BlockIpAddress.
 tags: ["administration", "ip address"]
 ---

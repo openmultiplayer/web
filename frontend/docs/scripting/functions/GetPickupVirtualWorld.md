@@ -1,5 +1,6 @@
 ---
 title: GetPickupVirtualWorld
+sidebar_label: GetPickupVirtualWorld
 description: Gets the virtual world ID of a pickup.
 tags: ["pickup"]
 ---

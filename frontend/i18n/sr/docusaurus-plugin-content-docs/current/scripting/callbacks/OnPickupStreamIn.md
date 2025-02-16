@@ -1,5 +1,6 @@
 ---
 title: OnPickupStreamIn
+sidebar_label: OnPickupStreamIn
 description: Ова повратна функција се позива када pickup уђе у визуелни опсег играча.
 tags: ["player"]
 ---

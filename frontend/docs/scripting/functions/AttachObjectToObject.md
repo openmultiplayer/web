@@ -1,5 +1,6 @@
 ---
 title: AttachObjectToObject
+sidebar_label: AttachObjectToObject
 description: You can use this function to attach objects to other objects.
 tags: ["object"]
 ---

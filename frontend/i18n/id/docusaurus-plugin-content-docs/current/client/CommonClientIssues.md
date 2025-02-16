@@ -1,5 +1,6 @@
 ---
 title: Masalah Umum
+sidebar_label: Masalah Umum
 ---
 
 ## Konten

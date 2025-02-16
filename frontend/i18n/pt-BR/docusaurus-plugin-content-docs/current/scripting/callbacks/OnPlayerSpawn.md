@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSpawn
+sidebar_label: OnPlayerSpawn
 description: Este evento é chamado quando um jogador spawna.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawCreate
+sidebar_label: TextDrawCreate
 description: Creates a textdraw.
 tags: ["textdraw"]
 ---

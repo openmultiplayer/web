@@ -1,5 +1,6 @@
 ---
 title: ShowMenuForPlayer
+sidebar_label: ShowMenuForPlayer
 description: Shows a previously created menu for a player.
 tags: ["player", "menu"]
 ---

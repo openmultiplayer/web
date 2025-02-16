@@ -1,5 +1,6 @@
 ---
 title: OnVehicleRespray
+sidebar_label: OnVehicleRespray
 description: Bu geri çağırma, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağazasından çıktığında çağrılır.
 tags: ["vehicle"]
 ---

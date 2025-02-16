@@ -1,5 +1,6 @@
 ---
 title: OnPlayerObjectMoved
+sidebar_label: OnPlayerObjectMoved
 description: Овај повратни позив се позива када се играчев објекат помери након MovePlayerObject (када престане да се помера).
 tags: ["player", "object", "playerobject"]
 ---

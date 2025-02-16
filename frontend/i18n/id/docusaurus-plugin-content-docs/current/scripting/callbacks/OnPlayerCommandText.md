@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: Callback ini akan terpanggil ketika pemain memasukkan perintah kedalam chat window klien.
 tags: ["player"]
 ---

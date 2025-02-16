@@ -1,5 +1,6 @@
 ---
 title: GetActors
+sidebar_label: GetActors
 description: Gets an array variable of the IDs of the created actors on the server.
 tags: ["actor"]
 ---

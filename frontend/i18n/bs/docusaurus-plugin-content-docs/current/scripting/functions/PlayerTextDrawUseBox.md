@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawUseBox
+sidebar_label: PlayerTextDrawUseBox
 description: Omogući/onemogući korišćenje box-a za player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

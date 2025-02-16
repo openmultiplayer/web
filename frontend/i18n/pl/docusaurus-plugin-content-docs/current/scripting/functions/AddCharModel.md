@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description: Dodaje nowy model postaci do pobrania.
 tags: []
 ---

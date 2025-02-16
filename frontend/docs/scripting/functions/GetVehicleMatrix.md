@@ -1,5 +1,6 @@
 ---
 title: GetVehicleMatrix
+sidebar_label: GetVehicleMatrix
 description: Gets the actual rotation matrix of the vehicle.
 tags: ["vehicle"]
 ---

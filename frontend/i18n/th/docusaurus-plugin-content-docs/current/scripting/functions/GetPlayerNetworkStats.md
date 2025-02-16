@@ -1,5 +1,6 @@
 ---
 title: GetPlayerNetworkStats
+sidebar_label: GetPlayerNetworkStats
 description: Gets a player's network stats and saves them into a string.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Structuri avansate"
+sidebar_label: "Structuri avansate"
 ---
 
 ## Manipularea matricei

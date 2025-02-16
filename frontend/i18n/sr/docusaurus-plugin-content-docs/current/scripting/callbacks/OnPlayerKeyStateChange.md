@@ -1,5 +1,6 @@
 ---
 title: OnPlayerKeyStateChange
+sidebar_label: OnPlayerKeyStateChange
 description: Ова повратна функција се позива када се промени стање било којег подржаног тастера (притиснут/ослобођен).
 tags: ["player"]
 ---

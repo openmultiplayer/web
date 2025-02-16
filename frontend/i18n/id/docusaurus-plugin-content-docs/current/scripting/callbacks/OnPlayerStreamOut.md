@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamOut
+sidebar_label: OnPlayerStreamOut
 description: Callback ini akan terpanggil ketika pemain lain keluar dari jangkauan stream dari klien pemain.
 tags: ["player"]
 ---

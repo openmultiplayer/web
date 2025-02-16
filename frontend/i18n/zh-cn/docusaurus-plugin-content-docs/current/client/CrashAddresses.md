@@ -1,5 +1,6 @@
 ---
 title: Crash Addresses
+sidebar_label: Crash Addresses
 ---
 
 下表列出了一些常见的崩溃地址，您可以使用这些地址来帮助跟踪问题并防止今后再次发生。在大多数情况下，客户端崩溃是由于脚本中的问题造成的。不过值得一提的是，如今 SA:MP 已经相当稳定了.

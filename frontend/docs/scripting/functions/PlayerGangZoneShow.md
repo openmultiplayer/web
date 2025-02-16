@@ -1,5 +1,6 @@
 ---
 title: PlayerGangZoneShow
+sidebar_label: PlayerGangZoneShow
 description: Show player gangzone in a color
 tags: ["player", "gangzone", "playergangzone"]
 ---

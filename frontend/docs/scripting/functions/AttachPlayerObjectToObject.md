@@ -1,5 +1,6 @@
 ---
 title: AttachPlayerObjectToObject
+sidebar_label: AttachPlayerObjectToObject
 description: You can use this function to attach player-objects to other player-objects.
 tags: ["player", "object", "playerobject"]
 ---

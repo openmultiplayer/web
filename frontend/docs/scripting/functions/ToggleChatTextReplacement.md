@@ -1,5 +1,6 @@
 ---
 title: ToggleChatTextReplacement
+sidebar_label: ToggleChatTextReplacement
 description: Toggles the chat input filter.
 tags: []
 ---

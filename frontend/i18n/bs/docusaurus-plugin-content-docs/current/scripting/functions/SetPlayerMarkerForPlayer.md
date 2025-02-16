@@ -1,5 +1,6 @@
 ---
 title: SetPlayerMarkerForPlayer
+sidebar_label: SetPlayerMarkerForPlayer
 description: Promijeni boju igračevog nametag-a i bljeskalice na radaru za drugog igrača.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetObjectsDefaultCameraCollision
+sidebar_label: SetObjectsDefaultCameraCollision
 description: Omogućuje da se kolizije kamere s novostvorenim objektima onemoguće prema zadanim postavkama.
 tags: ["object", "camera"]
 ---

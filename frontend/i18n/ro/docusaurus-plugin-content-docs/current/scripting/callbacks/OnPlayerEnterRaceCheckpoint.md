@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterRaceCheckpoint
+sidebar_label: OnPlayerEnterRaceCheckpoint
 description: Acest callback este apelat atunci când un jucător intră într-un checkpoint al unei curse.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

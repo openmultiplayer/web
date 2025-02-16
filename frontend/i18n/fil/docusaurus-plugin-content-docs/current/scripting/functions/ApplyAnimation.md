@@ -1,5 +1,6 @@
 ---
 title: ApplyAnimation
+sidebar_label: ApplyAnimation
 description: Mag-apply ng animation sa isang player.
 tags: []
 ---

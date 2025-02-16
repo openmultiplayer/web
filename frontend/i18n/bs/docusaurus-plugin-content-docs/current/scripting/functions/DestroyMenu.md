@@ -1,5 +1,6 @@
 ---
 title: DestroyMenu
+sidebar_label: DestroyMenu
 description: Uništava navedeni meni.
 tags: ["menu"]
 ---

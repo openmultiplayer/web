@@ -1,5 +1,6 @@
 ---
 title: PlayerSpectateVehicle
+sidebar_label: PlayerSpectateVehicle
 description: Postavlja igrača da spectate-a (nadgleda) neko vozilo.
 tags: ["player", "vehicle"]
 ---

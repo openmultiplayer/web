@@ -1,5 +1,6 @@
 ---
 title: GetPlayerHealth
+sidebar_label: GetPlayerHealth
 description: The function GetPlayerHealth allows you to retrieve the health of a player.
 tags: ["player"]
 ---

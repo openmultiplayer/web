@@ -1,5 +1,6 @@
 ---
 title: Katkıda Bulunmak
+sidebar_label: Katkıda Bulunmak
 description: SA-MP ve open.mp wikisine katkıda bulunmak istiyorsanız bu başlığı inceleyebilirsiniz.
 ---
 
@@ -85,6 +86,7 @@ _Herhangi_ bir sayfada ilk şey meta verileri olmalıdır:
 ```mdx
 ---
 title: Benim Döküm Sayfam
+sidebar_label: Benim Döküm Sayfam
 description: Bu sayfa eşyalar ve burgerler hakkında bir sayfa, yaşasın!
 ---
 ```

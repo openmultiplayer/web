@@ -1,5 +1,6 @@
 ---
 title: db_close
+sidebar_label: db_close
 description: Zatvara SQLite konekciju databaze kreirane sa `db_open`.
 keywords:
   - sqlite

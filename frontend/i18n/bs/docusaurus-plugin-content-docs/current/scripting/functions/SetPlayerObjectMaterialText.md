@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectMaterialText
+sidebar_label: SetPlayerObjectMaterialText
 description: Zamijeni teksturu player objekta sa tekstom.
 tags: ["player"]
 ---

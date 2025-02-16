@@ -1,5 +1,6 @@
 ---
 title: Callbacks Sequence
+sidebar_label: Callbacks Sequence
 description: A list of callbacks available in SA-MP/open.mp and its call sequence
 tags: []
 ---

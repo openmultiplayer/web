@@ -1,5 +1,6 @@
 ---
 title: DisableMenuRow
+sidebar_label: DisableMenuRow
 description: Disable a specific row in a menu for all players.
 tags: ["menu"]
 ---

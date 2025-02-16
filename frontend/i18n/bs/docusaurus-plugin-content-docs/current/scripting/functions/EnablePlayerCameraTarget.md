@@ -1,5 +1,6 @@
 ---
 title: EnablePlayerCameraTarget
+sidebar_label: EnablePlayerCameraTarget
 description: Uključite ili isključite funkcije ciljanja kamere za igrača.
 tags: ["player"]
 ---

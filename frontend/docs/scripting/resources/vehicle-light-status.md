@@ -1,5 +1,6 @@
 ---
 title: Vehicle Light Status
+sidebar_label: Vehicle Light Status
 description: Vehicle light status definitions.
 ---
 

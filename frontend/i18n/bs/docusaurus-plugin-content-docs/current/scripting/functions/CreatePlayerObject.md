@@ -1,5 +1,6 @@
 ---
 title: CreatePlayerObject
+sidebar_label: CreatePlayerObject
 description: Kreira objekat koji će biti vidljiv samo jednom igraču.
 tags: ["player"]
 ---

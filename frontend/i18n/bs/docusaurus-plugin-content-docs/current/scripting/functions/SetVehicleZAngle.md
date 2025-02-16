@@ -1,5 +1,6 @@
 ---
 title: SetVehicleZAngle
+sidebar_label: SetVehicleZAngle
 description: Postavi Z rotaciju (yaw) vozila.
 tags: ["vehicle"]
 ---

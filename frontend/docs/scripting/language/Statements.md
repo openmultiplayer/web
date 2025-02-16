@@ -1,5 +1,6 @@
 ---
 title: "Keywords: Statements"
+sidebar_label: "Keywords: Statements"
 ---
 
 ## `assert`

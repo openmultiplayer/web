@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectObject
+sidebar_label: OnPlayerSelectObject
 description: Callback này được gọi khi người chơi chọn một đối tượng sau khi dùng BeginObjectSelecting.
 tags: ["player", "object"]
 ---

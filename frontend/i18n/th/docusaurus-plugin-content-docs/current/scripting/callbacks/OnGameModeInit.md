@@ -1,5 +1,6 @@
 ---
 title: OnGameModeInit
+sidebar_label: OnGameModeInit
 description: Callback นี้ถูกเรียกเมื่อเกมโหมดเริ่มต้นทำงาน
 tags: []
 ---

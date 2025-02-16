@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: يتم إستدعاء هذا الكالباك عند تغيير طلاء السيارة في مرآب التعديل
 tags: ["vehicle"]
 ---

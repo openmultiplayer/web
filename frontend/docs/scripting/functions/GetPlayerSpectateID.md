@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSpectateID
+sidebar_label: GetPlayerSpectateID
 description: Gets the ID of the player or vehicle the player is spectating (watching).
 tags: ["player"]
 ---

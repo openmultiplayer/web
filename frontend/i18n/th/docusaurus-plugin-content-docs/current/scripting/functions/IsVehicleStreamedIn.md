@@ -1,5 +1,6 @@
 ---
 title: IsVehicleStreamedIn
+sidebar_label: IsVehicleStreamedIn
 description: Checks if a vehicle is streamed in for a player.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Attach3DTextLabelToPlayer
+sidebar_label: Attach3DTextLabelToPlayer
 description: Mag-attach ng 3D text label sa isang player.
 tags: ["player", "3dtextlabel"]
 ---

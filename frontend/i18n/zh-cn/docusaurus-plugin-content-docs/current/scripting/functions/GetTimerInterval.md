@@ -1,5 +1,6 @@
 ---
 title: GetTimerInterval
+sidebar_label: GetTimerInterval
 description: Gets the interval of a timer.
 tags: ["timer"]
 ---

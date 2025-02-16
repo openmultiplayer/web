@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsCarWindows
+sidebar_label: SetVehicleParamsCarWindows
 description: Allows you to open and close the windows of a vehicle.
 tags: ["vehicle"]
 ---

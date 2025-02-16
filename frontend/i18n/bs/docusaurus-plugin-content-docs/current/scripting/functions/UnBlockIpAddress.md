@@ -1,5 +1,6 @@
 ---
 title: UnBlockIpAddress
+sidebar_label: UnBlockIpAddress
 description: Deblokirajte IP adresu koja je prethodno bila blokirana pomoću BlockIpAddress.
 tags: []
 ---

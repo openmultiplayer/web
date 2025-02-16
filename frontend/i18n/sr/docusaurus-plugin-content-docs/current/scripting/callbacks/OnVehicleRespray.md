@@ -1,5 +1,6 @@
 ---
 title: OnVehicleRespray
+sidebar_label: OnVehicleRespray
 description: Ова повратна функција се позива када играч изађе из радње за модификацију, чак и ако боје нису промењене.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GangZoneStopFlashForPlayer
+sidebar_label: GangZoneStopFlashForPlayer
 description: Pare uma Gangzone de piscar para um jogador.
 tags: ["player", "gangzone"]
 ---

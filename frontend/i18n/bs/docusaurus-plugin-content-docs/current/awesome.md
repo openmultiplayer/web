@@ -1,5 +1,6 @@
 ---
 title: Awesome
+sidebar_label: Awesome
 description: Kursirana lista korisnih alata, biblioteka i plugina za SA-MP developanje.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawHide
+sidebar_label: PlayerTextDrawHide
 description: Sakrij player-textdraw za igrača kojem je kreiran.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

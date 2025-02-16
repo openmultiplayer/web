@@ -1,5 +1,6 @@
 ---
 title: AttachTrailerToVehicle
+sidebar_label: AttachTrailerToVehicle
 description: Przyczepia jeden pojazd do drugiego jako przyczepa.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerPickupPos
+sidebar_label: SetPlayerPickupPos
 description: Sets the position of a player-pickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

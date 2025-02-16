@@ -1,5 +1,6 @@
 ---
 title: PlayerPlaySound
+sidebar_label: PlayerPlaySound
 description: Reprodukuje navedeni zvuk igraču.
 tags: ["player"]
 ---

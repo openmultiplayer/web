@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditAttachedObject
+sidebar_label: OnPlayerEditAttachedObject
 description: This callback is called when a player ends attached object edition mode.
 tags: ["player", "object", "attachment"]
 ---

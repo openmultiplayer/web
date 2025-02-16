@@ -1,5 +1,6 @@
 ---
 title: GetPlayerMoney
+sidebar_label: GetPlayerMoney
 description: Mengambil jumlah uang yang dimiliki oleh pemain
 tags: ["player"]
 ---

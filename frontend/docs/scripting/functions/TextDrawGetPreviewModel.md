@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetPreviewModel
+sidebar_label: TextDrawGetPreviewModel
 description: Gets the preview model of a 3D preview textdraw.
 tags: ["textdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPVarNameAtIndex
+sidebar_label: GetPVarNameAtIndex
 description: Retrieve the name of a player's pVar via the index.
 tags: ["player variable", "pvar"]
 ---

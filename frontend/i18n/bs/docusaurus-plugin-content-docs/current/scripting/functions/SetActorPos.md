@@ -1,5 +1,6 @@
 ---
 title: SetActorPos
+sidebar_label: SetActorPos
 description: Postavi poziciju aktora.
 tags: []
 ---

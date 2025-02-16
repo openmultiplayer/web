@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamIn
+sidebar_label: OnPlayerStreamIn
 description: Cette fonction est appelée quand un joueur est chargé (devient visible) pour un joueur.
 tags: ["player"]
 ---

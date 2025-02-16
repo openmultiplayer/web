@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetLetterSize
+sidebar_label: TextDrawGetLetterSize
 description: Gets the width and height of the letters.
 tags: ["textdraw"]
 ---

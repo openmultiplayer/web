@@ -1,5 +1,6 @@
 ---
 title: floatsin
+sidebar_label: floatsin
 description: Uzmi sinus iz zadanog ugla.
 tags: []
 ---

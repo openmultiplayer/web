@@ -1,5 +1,6 @@
 ---
 title: CreateActor
+sidebar_label: CreateActor
 description: Kreiraj statičnog aktora u svijetu.
 tags: []
 ---

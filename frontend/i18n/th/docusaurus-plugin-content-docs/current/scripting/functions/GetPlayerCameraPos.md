@@ -1,5 +1,6 @@
 ---
 title: GetPlayerCameraPos
+sidebar_label: GetPlayerCameraPos
 description: Get the position of the player's camera.
 tags: ["player"]
 ---

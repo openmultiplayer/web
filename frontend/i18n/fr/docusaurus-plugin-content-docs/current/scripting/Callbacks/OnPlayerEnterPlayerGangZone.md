@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterPlayerGangZone
+sidebar_label: OnPlayerEnterPlayerGangZone
 description: Ce rappel est appelé lorsqu'un joueur entre dans une zone de gang de joueur.
 tags: ["player", "gangzone"]
 ---

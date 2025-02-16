@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: This callback is called when a player enters a command into the client chat window.
 tags: ["player"]
 ---

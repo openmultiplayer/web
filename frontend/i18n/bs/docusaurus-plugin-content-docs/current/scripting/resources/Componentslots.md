@@ -1,5 +1,6 @@
 ---
 title: Slotovi komponenti
+sidebar_label: Slotovi komponenti
 ---
 
 :::info

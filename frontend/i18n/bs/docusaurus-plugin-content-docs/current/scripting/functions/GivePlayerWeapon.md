@@ -1,5 +1,6 @@
 ---
 title: GivePlayerWeapon
+sidebar_label: GivePlayerWeapon
 description: Dajte igraču oružje sa određenom količinom streljiva.
 tags: ["player"]
 ---

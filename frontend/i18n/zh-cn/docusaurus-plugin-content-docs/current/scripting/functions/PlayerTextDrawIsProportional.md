@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawIsProportional
+sidebar_label: PlayerTextDrawIsProportional
 description: Checks if a player-textdraw is proportional.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: CreatePlayerTextDraw
+sidebar_label: CreatePlayerTextDraw
 description: Креира textdraw за само једног играча.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

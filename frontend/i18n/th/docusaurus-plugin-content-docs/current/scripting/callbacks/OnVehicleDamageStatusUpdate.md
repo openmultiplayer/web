@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDamageStatusUpdate
+sidebar_label: OnVehicleDamageStatusUpdate
 description: This callback is called when a vehicle element such as doors, tires, panels, or lights change their damage status.
 tags: ["vehicle"]
 ---

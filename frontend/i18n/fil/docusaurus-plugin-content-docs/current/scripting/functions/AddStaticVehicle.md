@@ -1,5 +1,6 @@
 ---
 title: AddStaticVehicle
+sidebar_label: AddStaticVehicle
 description: Nagdaragdag ng 'static' na sasakyan (na-pre-load ang mga modelo para sa mga manlalaro) sa gamemode.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: AllowNickNameCharacter
+sidebar_label: AllowNickNameCharacter
 description: Allows a character to be used in the nick name.
 tags: []
 ---

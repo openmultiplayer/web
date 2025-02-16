@@ -1,5 +1,6 @@
 ---
 title: TextDraw Sprites
+sidebar_label: TextDraw Sprites
 description: A list of textdraw sprites for use with TextDrawFont 4.
 ---
 

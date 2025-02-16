@@ -1,5 +1,6 @@
 ---
 title: acos
+sidebar_label: acos
 description: Kunin ang inverse value ng isang cosine sa degrees.
 tags: ["math"]
 ---

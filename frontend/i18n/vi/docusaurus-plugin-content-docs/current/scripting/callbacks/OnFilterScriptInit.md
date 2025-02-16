@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptInit
+sidebar_label: OnFilterScriptInit
 description: Callback này được gọi khi một filterscript được khởi tạo (tải).
 tags: []
 ---

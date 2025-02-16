@@ -1,5 +1,6 @@
 ---
 title: ID-uri componente auto
+sidebar_label: ID-uri componente auto
 description: Informații despre ID-urile componentelor mașinii, numele modelelor, piesele, tipurile, vehiculele acceptate și costurile.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: BanEx
+sidebar_label: BanEx
 description: Ipagbawal ang isang manlalaro na may dahilan.
 tags: ["administration"]
 ---

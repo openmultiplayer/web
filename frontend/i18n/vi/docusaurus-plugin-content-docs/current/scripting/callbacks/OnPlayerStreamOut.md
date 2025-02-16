@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamOut
+sidebar_label: OnPlayerStreamOut
 description: Callback này được gọi khi một người chơi bị stream ra khỏi client của người chơi khác.
 tags: ["player"]
 ---

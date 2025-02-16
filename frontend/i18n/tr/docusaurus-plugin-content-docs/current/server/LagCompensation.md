@@ -1,5 +1,6 @@
 ---
 title: "Gecikme Telafisi"
+sidebar_label: "Gecikme Telafisi"
 description: Gecikme telafisi açıklaması.
 ---
 

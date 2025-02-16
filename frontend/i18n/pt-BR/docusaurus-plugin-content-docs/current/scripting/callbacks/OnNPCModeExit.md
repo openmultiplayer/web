@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeExit
+sidebar_label: OnNPCModeExit
 description: Essa callback é executada quando o script de um NPC é descarregado.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: This callback is called when a filterscript is unloaded.
 tags: []
 ---

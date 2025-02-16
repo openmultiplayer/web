@@ -1,5 +1,6 @@
 ---
 title: fcopy
+sidebar_label: fcopy
 description: Copy a file.
 tags: ["file management"]
 ---

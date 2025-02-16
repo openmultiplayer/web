@@ -1,5 +1,6 @@
 ---
 title: GetVehicleModelsUsed
+sidebar_label: GetVehicleModelsUsed
 description: Get the number of used vehicle models on the server.
 tags: ["vehicle"]
 ---

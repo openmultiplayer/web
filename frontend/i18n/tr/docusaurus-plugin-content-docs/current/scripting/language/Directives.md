@@ -1,5 +1,6 @@
 ---
 title: "Anahtar Kelimeler: Direktifler"
+sidebar_label: "Anahtar Kelimeler: Direktifler"
 ---
 
 Direktifler, derleyiciye kaynak kodunuzu nasıl yorumlaması gerektiğini kontrol etmek için iletilen talimatlardır.

@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInRangeOfPoint
+sidebar_label: IsPlayerInRangeOfPoint
 description: Memeriksa apakah pemain berada dalam jangkauan suatu titik.
 tags: ["player"]
 ---

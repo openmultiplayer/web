@@ -1,5 +1,6 @@
 ---
 title: floatround
+sidebar_label: floatround
 description: Zaokružite broj s pomičnom zarezom na cijelu vrijednost.
 tags: []
 ---

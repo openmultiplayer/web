@@ -1,5 +1,6 @@
 ---
 title: Attach3DTextLabelToVehicle
+sidebar_label: Attach3DTextLabelToVehicle
 description: Attaches a 3D Text Label to a specific vehicle.
 tags: ["vehicle", "3dtextlabel"]
 ---

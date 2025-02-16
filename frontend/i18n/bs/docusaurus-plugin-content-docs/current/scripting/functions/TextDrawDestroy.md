@@ -1,5 +1,6 @@
 ---
 title: TextDrawDestroy
+sidebar_label: TextDrawDestroy
 description: Uništava prethodno kreirani textdraw.
 tags: ["textdraw"]
 ---

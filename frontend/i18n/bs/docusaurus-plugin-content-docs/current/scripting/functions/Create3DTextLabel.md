@@ -1,5 +1,6 @@
 ---
 title: Create3DTextLabel
+sidebar_label: Create3DTextLabel
 description: Kreira 3D Text Label na određenoj lokaciji u svijetu.
 tags: ["3dtextlabel"]
 ---

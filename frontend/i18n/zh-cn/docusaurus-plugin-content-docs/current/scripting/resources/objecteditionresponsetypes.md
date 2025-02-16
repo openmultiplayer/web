@@ -1,5 +1,6 @@
 ---
 title: Object Edition Response Types
+sidebar_label: Object Edition Response Types
 ---
 
 :::info

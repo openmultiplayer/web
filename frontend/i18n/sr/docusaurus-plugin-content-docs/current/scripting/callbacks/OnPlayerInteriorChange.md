@@ -1,5 +1,6 @@
 ---
 title: OnPlayerInteriorChange
+sidebar_label: OnPlayerInteriorChange
 description: Ова повратна функција се позива када играч промени интеријер.
 tags: ["player"]
 ---

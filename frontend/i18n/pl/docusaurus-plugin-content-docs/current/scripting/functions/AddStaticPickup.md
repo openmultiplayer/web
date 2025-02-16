@@ -1,5 +1,6 @@
 ---
 title: AddStaticPickup
+sidebar_label: AddStaticPickup
 description: Ta funkcja dodaje „statyczny” pickup do gry.
 tags: []
 ---

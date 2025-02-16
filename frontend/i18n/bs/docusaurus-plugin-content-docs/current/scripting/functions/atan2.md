@@ -1,5 +1,6 @@
 ---
 title: atan2
+sidebar_label: atan2
 description: .
 tags: []
 ---

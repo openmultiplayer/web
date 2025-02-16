@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Wird aufgerufen wenn ein Filterscript deaktiviert wird.
 tags: []
 ---

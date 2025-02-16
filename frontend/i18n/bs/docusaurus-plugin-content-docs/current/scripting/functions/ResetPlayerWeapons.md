@@ -1,5 +1,6 @@
 ---
 title: ResetPlayerWeapons
+sidebar_label: ResetPlayerWeapons
 description: Uklanja sva oružja od igrača.
 tags: ["player"]
 ---

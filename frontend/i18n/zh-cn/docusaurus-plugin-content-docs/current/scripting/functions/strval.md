@@ -1,5 +1,6 @@
 ---
 title: strval
+sidebar_label: strval
 description: Convert a string to an integer.
 tags: ["string"]
 ---

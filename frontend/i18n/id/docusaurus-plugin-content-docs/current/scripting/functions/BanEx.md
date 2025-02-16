@@ -1,5 +1,6 @@
 ---
 title: BanEx
+sidebar_label: BanEx
 description: Melarang player dengan alasan.
 tags: ["administration"]
 ---

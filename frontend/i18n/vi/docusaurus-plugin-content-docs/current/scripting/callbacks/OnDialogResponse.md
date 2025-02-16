@@ -1,5 +1,6 @@
 ---
 title: OnDialogResponse
+sidebar_label: OnDialogResponse
 description: Callback này được gọi khi một người chơi phản hồi một hộp thoại được hiển thị bằng cách sử dụng ShowPlayerDialog, bằng cách nhấp vào nút, nhấn ENTER/ESC hoặc nhấp đúp vào một mục trong danh sách (nếu sử dụng hộp thoại kiểu danh sách).
 tags: ["dialog"]
 ---

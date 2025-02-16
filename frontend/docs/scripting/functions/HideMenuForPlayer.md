@@ -1,5 +1,6 @@
 ---
 title: HideMenuForPlayer
+sidebar_label: HideMenuForPlayer
 description: Hides a menu for a player.
 tags: ["player", "menu"]
 ---

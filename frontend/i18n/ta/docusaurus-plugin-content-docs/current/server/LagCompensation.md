@@ -1,5 +1,6 @@
 ---
 title: "Lag Compensation"
+sidebar_label: "Lag Compensation"
 description: தாமத இழப்பீடு விளக்கம்.
 ---
 

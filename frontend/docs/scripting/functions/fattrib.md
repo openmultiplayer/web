@@ -1,5 +1,6 @@
 ---
 title: fattrib
+sidebar_label: fattrib
 description: Set the file attributes.
 tags: ["file management"]
 ---

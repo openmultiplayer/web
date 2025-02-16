@@ -1,5 +1,6 @@
 ---
 title: OnTrailerUpdate
+sidebar_label: OnTrailerUpdate
 description: Bu fonksiyon, oyuncu aracına römork bağladığında çağrılır.
 tags: []
 ---

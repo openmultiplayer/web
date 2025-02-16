@@ -1,5 +1,6 @@
 ---
 title: OnPlayerFinishedDownloading
+sidebar_label: OnPlayerFinishedDownloading
 description: Acest callback este apelat atunci când un jucător termină descărcarea modelelor personalizate.
 tags: ["player"]
 ---

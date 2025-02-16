@@ -1,5 +1,6 @@
 ---
 title: SendPlayerMessageToPlayer
+sidebar_label: SendPlayerMessageToPlayer
 description: Pošalji poruku u ime drugog igrača nekom drugom igraču na serveru.
 tags: ["player"]
 ---

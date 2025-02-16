@@ -1,5 +1,6 @@
 ---
 title: Per-player variable system
+sidebar_label: Per-player variable system
 description: The per-player variable system (put short, PVar) is a new way of creating player variables in an efficient dynamically created method globally, meaning they can be used in server's gamemode and filterscripts at the same time.
 ---
 

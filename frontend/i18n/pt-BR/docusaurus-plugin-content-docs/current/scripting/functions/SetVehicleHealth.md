@@ -1,5 +1,6 @@
 ---
 title: SetVehicleHealth
+sidebar_label: SetVehicleHealth
 description: Define a vida de um veículo.
 tags: ["vehicle"]
 ---

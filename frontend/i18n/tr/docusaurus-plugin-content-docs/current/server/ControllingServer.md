@@ -1,5 +1,6 @@
 ---
 title: "Sunucuyu Kontrol Etme"
+sidebar_label: "Sunucuyu Kontrol Etme"
 description: Sunucuyu kontrol etmek için kullanışlı komutlar.
 ---
 

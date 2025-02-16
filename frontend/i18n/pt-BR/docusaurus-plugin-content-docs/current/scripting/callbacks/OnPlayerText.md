@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: Executada quando o Player envia uma mensagem no chat.
 tags: ["player"]
 ---

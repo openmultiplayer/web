@@ -1,5 +1,6 @@
 ---
 title: strequal
+sidebar_label: strequal
 description: Compares two strings to see if they are the same.
 tags: ["string"]
 ---

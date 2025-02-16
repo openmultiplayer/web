@@ -1,5 +1,6 @@
 ---
 title: OnIncomingConnection
+sidebar_label: OnIncomingConnection
 description: Ова повратна функција се позива када IP адреса покуша да се повезе на сервер.
 tags: []
 ---

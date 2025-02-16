@@ -1,5 +1,6 @@
 ---
 title: EditObject
+sidebar_label: EditObject
 description: Memungkinkan Player untuk mengedit object (posisi dan rotasi) menggunakan mouse mereka pada GUI (Graphical User Interface).
 tags: []
 ---

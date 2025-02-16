@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditObject
+sidebar_label: OnPlayerEditObject
 description: Ова функција се позива када играч заврши са уређивањем објекта (BeginObjectEditing/BeginPlayerObjectEditing).
 tags: ["player", "object"]
 ---

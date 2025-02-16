@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTargetActor
+sidebar_label: GetPlayerTargetActor
 description: Gets id of an actor which is aimed by certain player.
 tags: ["player"]
 ---

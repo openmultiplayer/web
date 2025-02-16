@@ -1,5 +1,6 @@
 ---
 title: IsValid3DTextLabel
+sidebar_label: IsValid3DTextLabel
 description: Checks if a 3D text label is valid.
 tags: ["3dtextlabel"]
 ---

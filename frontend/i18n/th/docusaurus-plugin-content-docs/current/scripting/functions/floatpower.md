@@ -1,5 +1,6 @@
 ---
 title: floatpower
+sidebar_label: floatpower
 description: Raises the given value to the power of the exponent.
 tags: []
 ---

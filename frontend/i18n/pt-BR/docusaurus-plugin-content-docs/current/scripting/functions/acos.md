@@ -1,5 +1,6 @@
 ---
 title: acos
+sidebar_label: acos
 description: Obter o valor invertido de um cosseno em graus.
 tags: ["math"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: CreateObject
+sidebar_label: CreateObject
 description: Creates an object at specified coordinates in the game world.
 tags: ["object"]
 ---

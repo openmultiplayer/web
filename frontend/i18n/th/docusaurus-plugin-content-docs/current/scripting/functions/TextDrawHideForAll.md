@@ -1,5 +1,6 @@
 ---
 title: TextDrawHideForAll
+sidebar_label: TextDrawHideForAll
 description: Hides a text draw for all players.
 tags: ["textdraw"]
 ---

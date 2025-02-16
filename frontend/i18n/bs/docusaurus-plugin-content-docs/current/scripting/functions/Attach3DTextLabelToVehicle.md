@@ -1,5 +1,6 @@
 ---
 title: Attach3DTextLabelToVehicle
+sidebar_label: Attach3DTextLabelToVehicle
 description: Prikvači 3D text label za vozilo.
 tags: ["vehicle", "3dtextlabel"]
 ---

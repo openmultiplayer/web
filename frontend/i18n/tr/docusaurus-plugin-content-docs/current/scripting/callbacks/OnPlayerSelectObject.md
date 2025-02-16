@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectObject
+sidebar_label: OnPlayerSelectObject
 description: Bu fonksiyon, oyuncu SelectObject kullanıldıktan sonra bir obje seçtiğinde çağrılır.
 tags: ["player"]
 ---

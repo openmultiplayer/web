@@ -1,5 +1,6 @@
 ---
 title: GetPlayer3DTextLabelDrawDistance
+sidebar_label: GetPlayer3DTextLabelDrawDistance
 description: Gets the player's 3D text label draw distance.
 tags: ["player", "3dtextlabel"]
 ---

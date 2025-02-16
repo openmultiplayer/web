@@ -1,5 +1,6 @@
 ---
 title: fwrite
+sidebar_label: fwrite
 description: Napišite tekst u datoteku.
 tags: []
 ---

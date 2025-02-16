@@ -1,5 +1,6 @@
 ---
 title: floatadd
+sidebar_label: floatadd
 description: Nagdaragdag ng dalawang float nang magkasama.
 tags: ["math", "floating-point"]
 ---

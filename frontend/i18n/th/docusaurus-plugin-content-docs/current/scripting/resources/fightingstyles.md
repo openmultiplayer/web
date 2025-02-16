@@ -1,5 +1,6 @@
 ---
 title: Fighting Styles
+sidebar_label: Fighting Styles
 ---
 
 ## คำอธิบาย

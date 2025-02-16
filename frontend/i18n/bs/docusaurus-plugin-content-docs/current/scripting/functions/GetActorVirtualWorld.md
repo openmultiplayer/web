@@ -1,5 +1,6 @@
 ---
 title: GetActorVirtualWorld
+sidebar_label: GetActorVirtualWorld
 description: Dobij id virtual world-a određenog actora.
 tags: []
 ---

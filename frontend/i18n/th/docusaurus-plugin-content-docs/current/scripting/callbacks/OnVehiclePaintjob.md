@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: Called when a player previews a vehicle paintjob inside a mod shop.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnUnoccupiedVehicleUpdate
+sidebar_label: OnUnoccupiedVehicleUpdate
 description: Cette callback est appelée quand un le client d'un joueur update/synchronise la position d'un véhicule qui n'est pas conduit.
 tags: ["vehicle"]
 ---

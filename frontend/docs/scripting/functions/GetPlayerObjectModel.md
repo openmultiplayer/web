@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectModel
+sidebar_label: GetPlayerObjectModel
 description: Retrieve the model ID of a player-object.
 tags: ["player", "object", "playerobject"]
 ---

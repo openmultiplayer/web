@@ -1,5 +1,6 @@
 ---
 title: sendstring
+sidebar_label: sendstring
 description: Sends a packet containing a string. (deprecated function)
 tags: ["datagram"]
 ---

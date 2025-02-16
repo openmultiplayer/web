@@ -1,5 +1,6 @@
 ---
 title: SetActorInvulnerable
+sidebar_label: SetActorInvulnerable
 description: Toggle an actor's invulnerability.
 tags: ["actor"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickupStreamOut
+sidebar_label: OnPlayerPickupStreamOut
 description: Овај повратни позив се активира када player-pickup напусти визуелни домет играча.
 tags: ["player", "pickup", "playerpickup"]
 ---

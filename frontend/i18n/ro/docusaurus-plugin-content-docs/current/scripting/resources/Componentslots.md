@@ -1,5 +1,6 @@
 ---
 title: Sloturi pentru componente
+sidebar_label: Sloturi pentru componente
 ---
 
 :::info

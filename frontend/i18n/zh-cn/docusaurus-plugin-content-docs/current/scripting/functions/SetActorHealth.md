@@ -1,5 +1,6 @@
 ---
 title: SetActorHealth
+sidebar_label: SetActorHealth
 description: Set the health of an actor.
 tags: ["actor"]
 ---

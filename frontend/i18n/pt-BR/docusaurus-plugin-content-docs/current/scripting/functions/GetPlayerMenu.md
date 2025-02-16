@@ -1,5 +1,6 @@
 ---
 title: GetPlayerMenu
+sidebar_label: GetPlayerMenu
 description: Obtém o ID do menu que o player está a visualizar no momento (mostrado por ShowMenuForPlayer).
 tags: ["player", "menu"]
 ---

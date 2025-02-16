@@ -1,5 +1,6 @@
 ---
 title: OnClientMessage
+sidebar_label: OnClientMessage
 description: Bu geri çağırma, NPC bir ClientMessage algılandığında tetiklenir.
 tags: []
 ---

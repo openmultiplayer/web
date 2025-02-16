@@ -1,5 +1,6 @@
 ---
 title: Contribuye
+sidebar_label: Contribuye
 description: Cómo contribuir a la Wiki de SA-MP y a la documentación de open.mp.
 ---
 
@@ -83,6 +84,7 @@ Lo primero en _cualquier_ documento deben ser los metadatos:
 ```mdx
 ---
 title: Mi Documentacion
+sidebar_label: Mi Documentacion
 description: Esta es una página sobre cosas y hamburguesas, ¡viva!
 ---
 ```

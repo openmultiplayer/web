@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Dieses Callback wird ausgeführt, wenn ein Actor nicht länger von einem Spieler gestreamt wird.
 tags: []
 ---

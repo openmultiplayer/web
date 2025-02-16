@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTeam
+sidebar_label: GetPlayerTeam
 description: Kunin ang ID ng koponan kung nasaan ang manlalaro.
 tags: ["player"]
 ---

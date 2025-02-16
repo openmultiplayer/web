@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamOut
+sidebar_label: OnPlayerStreamOut
 description: Cette fonction est appelée quand un joueur est déchargé (n'est plus visible) pour un joueur.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: floattan
+sidebar_label: floattan
 description: Uzmi tangentu iz zadanog ugla.
 tags: []
 ---

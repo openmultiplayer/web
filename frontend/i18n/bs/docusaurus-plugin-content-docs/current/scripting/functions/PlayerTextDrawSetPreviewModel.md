@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetPreviewModel
+sidebar_label: PlayerTextDrawSetPreviewModel
 description: Postavlja player-textdrawu 3D pregled određenog ID-a modela.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

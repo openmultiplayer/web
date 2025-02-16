@@ -1,5 +1,6 @@
 ---
 title: GetPlayerMoney
+sidebar_label: GetPlayerMoney
 description: Retorna a quantidade de dinheiro que um jogador possui.
 tags: ["player"]
 ---

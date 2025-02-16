@@ -1,5 +1,6 @@
 ---
 title: HasPlayerObjectCameraCollision
+sidebar_label: HasPlayerObjectCameraCollision
 description: Checks if a player-object has camera collision enabled. (SetPlayerObjectNoCameraCollision)
 tags: ["player", "object", "playerobject"]
 ---

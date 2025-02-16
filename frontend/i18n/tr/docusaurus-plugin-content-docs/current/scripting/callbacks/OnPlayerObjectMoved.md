@@ -1,5 +1,6 @@
 ---
 title: OnPlayerObjectMoved
+sidebar_label: OnPlayerObjectMoved
 description: Fonksiyon, bir oyuncu objesi MovePlayerObject'den sonra hareket ettirildiğinde (hareket etmeyi durdurduğunda) çağrılır. 
 tags: ["player"]
 ---

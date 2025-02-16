@@ -1,5 +1,6 @@
 ---
 title: GetMyFacingAngle
+sidebar_label: GetMyFacingAngle
 description: Dobij trenutni ugao posmatranja NPC-a.
 tags: []
 ---

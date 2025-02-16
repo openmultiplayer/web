@@ -1,5 +1,6 @@
 ---
 title: ApplyAnimation
+sidebar_label: ApplyAnimation
 description: Włącza animację graczowi.
 tags: []
 ---

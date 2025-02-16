@@ -1,5 +1,6 @@
 ---
 title: EnableStuntBonusForAll
+sidebar_label: EnableStuntBonusForAll
 description: Pinapagana o hindi pinapagana ang mga stunt bonus para sa lahat ng manlalaro.
 tags: []
 ---

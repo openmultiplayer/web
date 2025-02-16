@@ -1,5 +1,6 @@
 ---
 title: Changelog
+sidebar_label: Changelog
 description: open.mp development progress and changelog.
 ---
 

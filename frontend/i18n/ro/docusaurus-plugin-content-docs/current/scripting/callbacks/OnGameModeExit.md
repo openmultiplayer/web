@@ -1,5 +1,6 @@
 ---
 title: OnGameModeExit
+sidebar_label: OnGameModeExit
 description: Acest callback este apelat atunci când un mod de joc se termină, fie prin „gmx”, serverul fiind oprit, fie GameModeExit.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: DisablePlayerRaceCheckpoint
+sidebar_label: DisablePlayerRaceCheckpoint
 description: Disable any initialized race checkpoints for a specific player, since you can only have one at any given time.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

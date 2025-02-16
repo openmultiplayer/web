@@ -1,5 +1,6 @@
 ---
 title: OnNPCEnterVehicle
+sidebar_label: OnNPCEnterVehicle
 description: Ce rappel est appelé lorsqu'un PNJ entre dans un véhicule.
 tags: ["npc"]
 ---

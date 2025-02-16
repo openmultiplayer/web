@@ -1,5 +1,6 @@
 ---
 title: SetPlayerRaceCheckpoint
+sidebar_label: SetPlayerRaceCheckpoint
 description: Kreira race (trkački) checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

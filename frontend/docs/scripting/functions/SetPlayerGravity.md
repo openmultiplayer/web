@@ -1,5 +1,6 @@
 ---
 title: SetPlayerGravity
+sidebar_label: SetPlayerGravity
 description: Set a player's gravity.
 tags: ["player"]
 ---

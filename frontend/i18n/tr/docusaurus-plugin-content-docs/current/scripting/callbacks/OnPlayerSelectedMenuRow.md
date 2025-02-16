@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectedMenuRow
+sidebar_label: OnPlayerSelectedMenuRow
 description: Bu fonksiyon, bir oyuncu menüden bir öğe seçtiğinde (ShowMenuForPlayer) çağrılır.
 tags: ["player", "menu"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetProportional
+sidebar_label: TextDrawSetProportional
 description: Prilagođava razmak između teksta proporcionalnom omjeru.
 tags: ["textdraw"]
 ---

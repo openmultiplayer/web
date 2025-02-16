@@ -1,5 +1,6 @@
 ---
 title: Common Client Issues
+sidebar_label: Common Client Issues
 ---
 
 ### I get the error "San Andreas cannot be found"

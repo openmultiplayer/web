@@ -1,5 +1,6 @@
 ---
 title: "Comandos de Cliente"
+sidebar_label: "Comandos de Cliente"
 description: Lista de todos os comandos de cliente.
 ---
 

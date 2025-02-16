@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Bu geri çağırma, bir aktör oyuncunun akış alanından ayrıldığında tetiklenir.
 tags: []
 ---

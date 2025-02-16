@@ -1,5 +1,6 @@
 ---
 title: OnPlayerObjectMoved
+sidebar_label: OnPlayerObjectMoved
 description: Ovaj callback je pozvana kada player object biva premješten nakon MovePlayerObject funkcije (kada se prestane kretati).
 tags: ["player"]
 ---

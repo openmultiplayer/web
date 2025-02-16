@@ -1,5 +1,6 @@
 ---
 title: DestroyPlayerObject
+sidebar_label: DestroyPlayerObject
 description: Destrói um objeto de jogador (player-object) criado usando CreatePlayerObject.
 tags: ["player"]
 ---

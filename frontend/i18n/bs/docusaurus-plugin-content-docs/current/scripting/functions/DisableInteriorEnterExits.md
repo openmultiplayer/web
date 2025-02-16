@@ -1,5 +1,6 @@
 ---
 title: DisableInteriorEnterExits
+sidebar_label: DisableInteriorEnterExits
 description: Onemogućite sve unutrašnje ulaze i izlaze u igri (žute strelice na vratima).
 tags: []
 ---

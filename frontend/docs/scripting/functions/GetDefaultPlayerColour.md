@@ -1,5 +1,6 @@
 ---
 title: GetDefaultPlayerColour
+sidebar_label: GetDefaultPlayerColour
 description: Gets the default colour for the player ID.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: ManualVehicleEngineAndLights
+sidebar_label: ManualVehicleEngineAndLights
 description: Koristite ovu funkciju prije nego što se bilo koji igrač poveže (OnGameModeInit) kako biste svim klijentima rekli da će skripta kontrolirati motore i svjetla vozila.
 tags: ["vehicle"]
 ---

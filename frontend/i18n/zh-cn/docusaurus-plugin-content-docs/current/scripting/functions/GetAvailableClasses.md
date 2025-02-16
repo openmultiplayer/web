@@ -1,5 +1,6 @@
 ---
 title: GetAvailableClasses
+sidebar_label: GetAvailableClasses
 description: Get the number of classes defined.
 tags: ["class"]
 ---

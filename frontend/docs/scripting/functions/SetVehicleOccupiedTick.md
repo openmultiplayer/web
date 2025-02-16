@@ -1,5 +1,6 @@
 ---
 title: SetVehicleOccupiedTick
+sidebar_label: SetVehicleOccupiedTick
 description: Set the occupied tick of a vehicle.
 tags: ["vehicle"]
 ---

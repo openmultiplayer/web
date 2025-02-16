@@ -1,5 +1,6 @@
 ---
 title: GetPlayerRotationQuat
+sidebar_label: GetPlayerRotationQuat
 description: Returns a player's rotation on all axes as a quaternion.
 tags: ["player"]
 ---

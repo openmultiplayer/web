@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Ова повратна функција се позива када се филтер скрипта искључи (или уклони).
 tags: []
 ---

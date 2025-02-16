@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitVehicle
+sidebar_label: OnPlayerExitVehicle
 description: Bu geri çağırma, araçta bulunan bir oyuncu bir araçtan inmeye başladığında çağırılır.
 tags: ["player", "vehicle"]
 ---

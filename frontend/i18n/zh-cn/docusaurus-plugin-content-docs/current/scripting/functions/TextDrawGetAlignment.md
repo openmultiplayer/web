@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetAlignment
+sidebar_label: TextDrawGetAlignment
 description: Gets the text alignment of a textdraw.
 tags: ["textdraw"]
 ---

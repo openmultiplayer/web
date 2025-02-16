@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSpawn
+sidebar_label: OnVehicleSpawn
 description: Ovaj callback je pozvan kada se vozilo respawnuje/ponovo stvori.
 tags: ["vehicle"]
 ---

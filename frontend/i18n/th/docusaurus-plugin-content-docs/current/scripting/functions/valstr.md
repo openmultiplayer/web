@@ -1,5 +1,6 @@
 ---
 title: valstr
+sidebar_label: valstr
 description: Convert an integer into a string.
 tags: []
 ---

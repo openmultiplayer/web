@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeaveCheckpoint
+sidebar_label: OnPlayerLeaveCheckpoint
 description: Bu fonksiyon, bir oyuncu SetPlayerCheckpoint tarafından kendisi için ayarlanan kontrol noktasından ayrıldığında çağrılır. 
 tags: ["player", "checkpoint"]
 ---

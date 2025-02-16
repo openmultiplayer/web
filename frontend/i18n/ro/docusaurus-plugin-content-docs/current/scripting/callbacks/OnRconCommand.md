@@ -1,5 +1,6 @@
 ---
 title: OnRconCommand
+sidebar_label: OnRconCommand
 description: Acest callback este apelat atunci când o comandă este trimisă prin consola serverului, RCON la distanță sau prin comanda „/rcon” din joc.
 tags: []
 ---

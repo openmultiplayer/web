@@ -1,5 +1,6 @@
 ---
 title: PutPlayerInVehicle
+sidebar_label: PutPlayerInVehicle
 description: Puts a player in a vehicle.
 tags: ["player", "vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetGravity
+sidebar_label: GetGravity
 description: Get the currently global gravity.
 tags: []
 ---

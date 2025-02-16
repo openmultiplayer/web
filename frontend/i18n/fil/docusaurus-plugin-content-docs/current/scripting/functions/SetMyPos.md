@@ -1,5 +1,6 @@
 ---
 title: SetMyPos
+sidebar_label: SetMyPos
 description: I-set ang posisyon ng NPC
 tags: ["npc"]
 ---

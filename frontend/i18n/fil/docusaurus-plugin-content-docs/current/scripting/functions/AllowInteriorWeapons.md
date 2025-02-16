@@ -1,5 +1,6 @@
 ---
 title: AllowInteriorWeapons
+sidebar_label: AllowInteriorWeapons
 description: I-toggle kung pinapayagan o hindi ang paggamit ng mga armas sa interior.
 tags: []
 ---

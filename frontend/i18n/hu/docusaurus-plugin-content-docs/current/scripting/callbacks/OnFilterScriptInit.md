@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptInit
+sidebar_label: OnFilterScriptInit
 description: Ez a visszahívás egy filterszkript betöltése során kerül meghívásra.
 tags: []
 ---

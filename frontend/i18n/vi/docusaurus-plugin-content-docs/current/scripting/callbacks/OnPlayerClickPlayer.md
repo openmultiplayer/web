@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayer
+sidebar_label: OnPlayerClickPlayer
 description: Callback này được gọi khi một người chơi nhấp đúp vào một người chơi trên bảng điểm.
 tags: ["player"]
 ---

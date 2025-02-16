@@ -1,5 +1,6 @@
 ---
 title: Damage Status
+sidebar_label: Damage Status
 description: Information about vehicle damage status and sample code.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: SetPVarFloat
+sidebar_label: SetPVarFloat
 description: Postavi float vrijednost player (igračeve) varijable.
 tags: ["pvar"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterRaceCheckpoint
+sidebar_label: OnPlayerEnterRaceCheckpoint
 description: This callback is called when a player enters a race checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

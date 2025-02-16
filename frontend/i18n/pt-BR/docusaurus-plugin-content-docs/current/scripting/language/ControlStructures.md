@@ -1,5 +1,6 @@
 ---
 title: "Estruturas de Controle"
+sidebar_label: "Estruturas de Controle"
 ---
 
 ## Condicionais

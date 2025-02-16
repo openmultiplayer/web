@@ -1,5 +1,6 @@
 ---
 title: SetSpawnInfo
+sidebar_label: SetSpawnInfo
 description: Ova funkcija se može koristiti za promijeniti spawn informacije određenog igrača.
 tags: []
 ---

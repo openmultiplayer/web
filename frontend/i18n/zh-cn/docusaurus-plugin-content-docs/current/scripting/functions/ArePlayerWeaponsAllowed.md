@@ -1,5 +1,6 @@
 ---
 title: ArePlayerWeaponsAllowed
+sidebar_label: ArePlayerWeaponsAllowed
 description: Can the player use weapons?
 tags: ["player"]
 ---

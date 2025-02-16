@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterCheckpoint
+sidebar_label: OnPlayerEnterCheckpoint
 description: Bu geri çağırma, bir oyuncu kendisi için oluşturulan checkpointe giriş yaptığında çağırılır.
 tags: ["player", "checkpoint"]
 ---

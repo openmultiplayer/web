@@ -1,5 +1,6 @@
 ---
 title: GetPlayerState
+sidebar_label: GetPlayerState
 description: Kunin ang kasalukuyang estado ng isang manlalaro.
 tags: ["player"]
 ---

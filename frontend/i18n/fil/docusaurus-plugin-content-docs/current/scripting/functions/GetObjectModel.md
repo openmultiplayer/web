@@ -1,5 +1,6 @@
 ---
 title: GetObjectModel
+sidebar_label: GetObjectModel
 description: Kunin ang model ID ng isang object (CreateObject).
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStateChange
+sidebar_label: OnPlayerStateChange
 description: Callback ini akan terpanggil ketika pemain melakukan perubahan status.
 tags: ["player"]
 ---

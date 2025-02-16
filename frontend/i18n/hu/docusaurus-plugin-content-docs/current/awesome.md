@@ -1,5 +1,6 @@
 ---
 title: Források
+sidebar_label: Források
 description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bővítmények listája.
 ---
 

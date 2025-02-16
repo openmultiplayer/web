@@ -1,5 +1,6 @@
 ---
 title: AttachPlayerObjectToVehicle
+sidebar_label: AttachPlayerObjectToVehicle
 description: Oyuncu objesini araca bağlama.
 tags: ["player", "vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerSkin
+sidebar_label: SetPlayerSkin
 description: Postavi skin igrača.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetPreviewRot
+sidebar_label: PlayerTextDrawSetPreviewRot
 description: Postavlja rotaciju i zumiranje prikaza 3D modela u player-textdrawu.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

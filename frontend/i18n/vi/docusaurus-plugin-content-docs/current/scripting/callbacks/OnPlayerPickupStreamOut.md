@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickupStreamOut
+sidebar_label: OnPlayerPickupStreamOut
 description: Callback này được gọi khi một pickup của người chơi rời khỏi phạm vi tầm nhìn của người chơi.
 tags: ["player", "pickup", "playerpickup"]
 ---

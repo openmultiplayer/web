@@ -1,5 +1,6 @@
 ---
 title: Get3DTextLabelPos
+sidebar_label: Get3DTextLabelPos
 description: Gets the 3D text label position.
 tags: ["3dtextlabel"]
 ---

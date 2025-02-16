@@ -1,5 +1,6 @@
 ---
 title: GetActorFacingAngle
+sidebar_label: GetActorFacingAngle
 description: Get the facing angle of an actor.
 tags: ["actor"]
 ---

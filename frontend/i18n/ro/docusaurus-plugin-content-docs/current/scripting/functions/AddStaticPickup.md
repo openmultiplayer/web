@@ -1,5 +1,6 @@
 ---
 title: AddStaticPickup
+sidebar_label: AddStaticPickup
 description: Această funcție adaugă o preluare „statică” la joc.
 tags: []
 ---

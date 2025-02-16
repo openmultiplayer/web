@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInRangeOfPoint
+sidebar_label: IsPlayerInRangeOfPoint
 description: Provjerava ako je igrač u dometu/blizini određene tačke.
 tags: ["player"]
 ---

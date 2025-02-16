@@ -1,5 +1,6 @@
 ---
 title: GetPVarsUpperIndex
+sidebar_label: GetPVarsUpperIndex
 description: Svaki PVar (igrač-varijabla) ima svoj jedinstveni identifikacijski broj za traženje, ova funkcija vraća najviši ID postavljen za igrača.
 tags: ["pvar"]
 ---

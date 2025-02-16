@@ -1,5 +1,6 @@
 ---
 title: SetPlayerChatBubble
+sidebar_label: SetPlayerChatBubble
 description: Creates a chat bubble above a player's name tag.
 tags: ["player"]
 ---

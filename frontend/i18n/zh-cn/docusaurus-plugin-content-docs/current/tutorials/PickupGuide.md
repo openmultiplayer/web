@@ -1,5 +1,6 @@
 ---
 title: Pickup Guide
+sidebar_label: Pickup Guide
 ---
 
 一个简短的教程，描述了如何使用拾取物。

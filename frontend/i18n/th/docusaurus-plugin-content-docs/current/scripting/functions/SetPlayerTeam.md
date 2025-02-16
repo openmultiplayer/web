@@ -1,5 +1,6 @@
 ---
 title: SetPlayerTeam
+sidebar_label: SetPlayerTeam
 description: Set the team of a player.
 tags: ["player"]
 ---

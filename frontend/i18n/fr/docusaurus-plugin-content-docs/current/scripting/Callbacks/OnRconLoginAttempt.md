@@ -1,5 +1,6 @@
 ---
 title: OnRconLoginAttempt
+sidebar_label: OnRconLoginAttempt
 description: Cette callback est appelée lorsque quelqu'un tente de se connecte en RCON, avec succès ou pas.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerHoldingObject
+sidebar_label: SetPlayerHoldingObject
 description: Pričvršćuje objekat za kost.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetGameText
+sidebar_label: GetGameText
 description: Returns all the information on the given game text style.
 tags: ["player"]
 ---

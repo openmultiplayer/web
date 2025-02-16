@@ -1,5 +1,6 @@
 ---
 title: OnTrailerUpdate
+sidebar_label: OnTrailerUpdate
 description: Essa callback é executada quando o jogador envia um update para um trailer.
 tags: []
 ---

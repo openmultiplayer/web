@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: Acest callback este apelat atunci când un jucător introduce o comandă în chat.
 tags: ["player"]
 ---

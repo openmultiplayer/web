@@ -1,5 +1,6 @@
 ---
 title: AddVehicleComponent
+sidebar_label: AddVehicleComponent
 description: Girilen araç idsine modifikasyon yapar.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerAdmin
+sidebar_label: SetPlayerAdmin
 description: Sets the player as an RCON admin.
 tags: ["player", "rcon", "administration"]
 ---

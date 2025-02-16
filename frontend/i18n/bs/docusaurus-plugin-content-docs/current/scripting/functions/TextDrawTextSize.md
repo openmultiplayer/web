@@ -1,5 +1,6 @@
 ---
 title: TextDrawTextSize
+sidebar_label: TextDrawTextSize
 description: Promijeni veličinu textdrawa (veličinu boxa ako je TextDrawUseBox omogućen i/ili klikljivo područje za koristiti sa TextDrawSetSelectable).
 tags: ["textdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnRconLoginAttempt
+sidebar_label: OnRconLoginAttempt
 description: This callback is called when someone attempts to log in to RCON in-game, regardless of whether this attempt is successful or not.
 tags: ["rcon", "administration"]
 ---

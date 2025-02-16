@@ -1,5 +1,6 @@
 ---
 title: OnDialogResponse
+sidebar_label: OnDialogResponse
 description: Cette callback est appelée lorsqu'un joueur lorsqu'un joueur répond à une boîte de dialogue affichée à l'aide de ShowPlayerDialog en cliquant sur un bouton, en appuyant sur ENTRÉE / ÉCHAP ou en double-cliquant sur un élément de liste (si vous utilisez un `DIALOG_STYLE_LIST`).
 tags: [Dialog, DIALOG_STYLE_LIST, OnDialogReponse, listitem, dialogid]
 ---

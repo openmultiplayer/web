@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetPreviewRot
+sidebar_label: PlayerTextDrawSetPreviewRot
 description: Sets the rotation and zoom of a 3D model preview player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

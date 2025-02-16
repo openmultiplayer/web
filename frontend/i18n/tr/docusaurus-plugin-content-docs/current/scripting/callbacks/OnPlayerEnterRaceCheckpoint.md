@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterRaceCheckpoint
+sidebar_label: OnPlayerEnterRaceCheckpoint
 description: Bu geri çağırma, bir oyuncu yarış checkpointine girdiğinde çağırılır.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

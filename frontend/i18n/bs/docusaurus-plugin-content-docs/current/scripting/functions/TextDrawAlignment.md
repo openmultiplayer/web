@@ -1,5 +1,6 @@
 ---
 title: TextDrawAlignment
+sidebar_label: TextDrawAlignment
 description: Postavite poravnanje teksta u textdrawu.
 tags: ["textdraw"]
 ---

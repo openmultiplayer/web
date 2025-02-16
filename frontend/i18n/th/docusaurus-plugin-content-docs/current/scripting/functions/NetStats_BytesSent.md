@@ -1,5 +1,6 @@
 ---
 title: NetStats_BytesSent
+sidebar_label: NetStats_BytesSent
 description: Gets the amount of data (in bytes) that the server has sent to the player.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerTeam
+sidebar_label: SetPlayerTeam
 description: Itakda ang koponan ng isang manlalaro.
 tags: ["player"]
 ---

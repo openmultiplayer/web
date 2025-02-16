@@ -1,5 +1,6 @@
 ---
 title: IsActorStreamedIn
+sidebar_label: IsActorStreamedIn
 description: Provjerava da li je aktor učitan kod igrača.
 tags: []
 ---

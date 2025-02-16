@@ -1,5 +1,6 @@
 ---
 title: BlockIpAddress
+sidebar_label: BlockIpAddress
 description: Blokira IP adresu iz daljnje komunikacije sa serverom na određeno vrijeme (uz dopuštene zamjenske znakove).
 tags: ["ip address"]
 ---

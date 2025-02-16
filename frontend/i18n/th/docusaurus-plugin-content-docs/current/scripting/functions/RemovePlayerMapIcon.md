@@ -1,5 +1,6 @@
 ---
 title: RemovePlayerMapIcon
+sidebar_label: RemovePlayerMapIcon
 description: Removes a map icon that was set earlier for a player using SetPlayerMapIcon.
 tags: ["player"]
 ---

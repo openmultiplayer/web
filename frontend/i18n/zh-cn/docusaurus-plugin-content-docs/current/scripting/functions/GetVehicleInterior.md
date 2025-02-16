@@ -1,5 +1,6 @@
 ---
 title: GetVehicleInterior
+sidebar_label: GetVehicleInterior
 description: Get the interior id of a vehicle.
 tags: ["vehicle"]
 ---

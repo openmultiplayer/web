@@ -1,5 +1,6 @@
 ---
 title: setarg
+sidebar_label: setarg
 description: Postavite argument koji je proslijeđen funkciji.
 tags: []
 ---

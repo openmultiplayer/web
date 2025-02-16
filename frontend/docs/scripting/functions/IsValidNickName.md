@@ -1,5 +1,6 @@
 ---
 title: IsValidNickName
+sidebar_label: IsValidNickName
 description: Checks if a nick name is valid.
 tags: []
 ---

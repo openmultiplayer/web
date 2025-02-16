@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: This callback is called when an actor is streamed out by a player's client.
 tags: ["actor"]
 ---

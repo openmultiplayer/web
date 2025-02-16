@@ -1,5 +1,6 @@
 ---
 title: OnGameModeInit
+sidebar_label: OnGameModeInit
 description: Callback này được gọi khi gamemode bắt đầu.
 tags: []
 ---

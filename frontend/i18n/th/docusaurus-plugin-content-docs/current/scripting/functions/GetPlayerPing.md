@@ -1,5 +1,6 @@
 ---
 title: GetPlayerPing
+sidebar_label: GetPlayerPing
 description: Get the ping of a player.
 tags: ["player"]
 ---

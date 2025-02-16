@@ -1,5 +1,6 @@
 ---
 title: OnNPCExitVehicle
+sidebar_label: OnNPCExitVehicle
 description: Callback này được gọi khi NPC rời khỏi một chiếc xe.
 tags: ["npc"]
 ---

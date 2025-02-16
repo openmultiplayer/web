@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptInit
+sidebar_label: OnFilterScriptInit
 description: Ова повратна функција се позива када се филтер скрипта иницијализује (учита).
 tags: []
 ---

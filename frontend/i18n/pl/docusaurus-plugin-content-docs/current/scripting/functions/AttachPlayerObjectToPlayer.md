@@ -1,5 +1,6 @@
 ---
 title: AttachPlayerObjectToPlayer
+sidebar_label: AttachPlayerObjectToPlayer
 description: Odpowiednik AttachObjectToPlayer, tylko dla obiektów stworzonych dla danego gracza.
 tags: ["player"]
 ---

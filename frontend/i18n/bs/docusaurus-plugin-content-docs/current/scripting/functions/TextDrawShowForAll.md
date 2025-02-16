@@ -1,5 +1,6 @@
 ---
 title: TextDrawShowForAll
+sidebar_label: TextDrawShowForAll
 description: Prikazuje textdraw svim igračima.
 tags: ["textdraw"]
 ---

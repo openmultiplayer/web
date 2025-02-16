@@ -1,5 +1,6 @@
 ---
 title: SetPlayerWeather
+sidebar_label: SetPlayerWeather
 description: Magtakda ng panahon ng manlalaro.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: floatsub
+sidebar_label: floatsub
 description: Subtracts one float from another one.
 tags: ["math", "floating-point"]
 ---

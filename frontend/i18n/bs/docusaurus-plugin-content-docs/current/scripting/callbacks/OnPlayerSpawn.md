@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSpawn
+sidebar_label: OnPlayerSpawn
 description: Ovaj callback je pozvan kada se igrač spawnuje (stvori).
 tags: ["player"]
 ---

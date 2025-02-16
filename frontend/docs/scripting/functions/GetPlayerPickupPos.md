@@ -1,5 +1,6 @@
 ---
 title: GetPlayerPickupPos
+sidebar_label: GetPlayerPickupPos
 description: Gets the coordinates of a player-pickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

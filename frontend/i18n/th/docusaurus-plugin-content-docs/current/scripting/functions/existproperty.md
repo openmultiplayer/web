@@ -1,5 +1,6 @@
 ---
 title: existproperty
+sidebar_label: existproperty
 description: Check if a property exist.
 tags: []
 ---

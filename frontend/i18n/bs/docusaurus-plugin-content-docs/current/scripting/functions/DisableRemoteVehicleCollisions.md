@@ -1,5 +1,6 @@
 ---
 title: DisableRemoteVehicleCollisions
+sidebar_label: DisableRemoteVehicleCollisions
 description: Igraču onemogućava sudare između zauzetih vozila.
 tags: ["vehicle"]
 ---

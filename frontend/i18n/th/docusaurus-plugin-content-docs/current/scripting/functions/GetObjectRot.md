@@ -1,5 +1,6 @@
 ---
 title: GetObjectRot
+sidebar_label: GetObjectRot
 description: Use this function to get the objects current rotation.
 tags: []
 ---

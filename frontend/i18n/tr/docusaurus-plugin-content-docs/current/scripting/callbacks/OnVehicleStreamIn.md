@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: Bir araç, oyuncunun işlem alanına girdiğinde çağrılır.
 tags: ["vehicle"]
 ---

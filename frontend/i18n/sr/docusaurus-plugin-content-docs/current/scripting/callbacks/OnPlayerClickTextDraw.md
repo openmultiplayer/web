@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickTextDraw
+sidebar_label: OnPlayerClickTextDraw
 description: Ова функција се позива када играч кликне на текстдрава или откаже режим селекције помоћу тастера Escape.
 tags: ["player", "textdraw"]
 ---

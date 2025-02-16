@@ -1,5 +1,6 @@
 ---
 title: Common Issues
+sidebar_label: Common Issues
 ---
 
 ## Contents

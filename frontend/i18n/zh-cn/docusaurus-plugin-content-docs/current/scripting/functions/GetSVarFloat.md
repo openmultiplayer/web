@@ -1,5 +1,6 @@
 ---
 title: GetSVarFloat
+sidebar_label: GetSVarFloat
 description: Gets a float server variable's value.
 tags: ["server variable", "svar"]
 ---

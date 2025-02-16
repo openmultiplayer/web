@@ -1,5 +1,6 @@
 ---
 title: Menu Guide
+sidebar_label: Menu Guide
 ---
 
 A short tutorial that explains how to use the menu system of the game. This menu system is different to SA-MP dialogs and better reflects the traditional UI of the original game.

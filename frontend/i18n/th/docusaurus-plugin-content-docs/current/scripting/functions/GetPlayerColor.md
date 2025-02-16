@@ -1,5 +1,6 @@
 ---
 title: GetPlayerColor
+sidebar_label: GetPlayerColor
 description: Gets the color of the player's name and radar marker.
 tags: ["player"]
 ---

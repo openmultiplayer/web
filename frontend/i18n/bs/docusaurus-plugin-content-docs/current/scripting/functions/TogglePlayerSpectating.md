@@ -1,5 +1,6 @@
 ---
 title: TogglePlayerSpectating
+sidebar_label: TogglePlayerSpectating
 description: Uključite ili isključite da li je igrač u režimu spectatora/gledatelja.
 tags: ["player"]
 ---

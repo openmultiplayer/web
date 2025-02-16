@@ -1,5 +1,6 @@
 ---
 title: Menu Guide
+sidebar_label: Menu Guide
 ---
 
 如何使用游戏菜单系统的简短教程。该菜单系统与 SA-MP 对话框不同，能更好地反映原版游戏的传统用户界面.

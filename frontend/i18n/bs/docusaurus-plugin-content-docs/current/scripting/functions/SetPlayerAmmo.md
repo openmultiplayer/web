@@ -1,5 +1,6 @@
 ---
 title: SetPlayerAmmo
+sidebar_label: SetPlayerAmmo
 description: Postavi streljivo igračevog oružja.
 tags: ["player"]
 ---

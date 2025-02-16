@@ -1,5 +1,6 @@
 ---
 title: setproperty
+sidebar_label: setproperty
 description: Add a new property or change an existing property.
 tags: ["core", "property"]
 ---

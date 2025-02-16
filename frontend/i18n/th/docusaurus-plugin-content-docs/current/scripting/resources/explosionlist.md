@@ -1,5 +1,6 @@
 ---
 title: Explosion Lists
+sidebar_label: Explosion Lists
 ---
 
 To be used with [CreateExplosion](../functions/CreateExplosion) and [CreateExplosionForPlayer](../functions/CreateExplosionForPlayer)

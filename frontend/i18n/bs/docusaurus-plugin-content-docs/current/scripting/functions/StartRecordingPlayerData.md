@@ -1,5 +1,6 @@
 ---
 title: StartRecordingPlayerData
+sidebar_label: StartRecordingPlayerData
 description: Počinje snimati pokrete igrača u datoteku, koju NPC može reproducirati.
 tags: ["player"]
 ---

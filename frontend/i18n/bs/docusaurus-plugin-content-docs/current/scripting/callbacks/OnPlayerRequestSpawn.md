@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestSpawn
+sidebar_label: OnPlayerRequestSpawn
 description: Pozvano kada igrač pokuša da se spawnuje (stvori) preko selekcije klase bilo pritiskom SHIFT tipke ili klikom na 'Spawn' dugme.
 tags: ["player"]
 ---

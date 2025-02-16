@@ -1,5 +1,6 @@
 ---
 title: Partes do Corpo
+sidebar_label: Partes do Corpo
 ---
 
 Para ser usado com [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamags), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) e [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).

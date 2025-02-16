@@ -1,5 +1,6 @@
 ---
 title: "Scripting: Etiketler (Tags)"
+sidebar_label: "Scripting: Etiketler (Tags)"
 description: Etiketlerin, Pawn dilinde farklı niyet değerleriyle çalışmak için güvenlik özellikleri sağlayan bir tür özellik olduğu bir rehber.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Weapon States
+sidebar_label: Weapon States
 description: Weapon State Constants.
 ---
 

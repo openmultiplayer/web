@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetOutline
+sidebar_label: TextDrawGetOutline
 description: Gets the thickness of a textdraw's text's outline.
 tags: ["textdraw"]
 ---

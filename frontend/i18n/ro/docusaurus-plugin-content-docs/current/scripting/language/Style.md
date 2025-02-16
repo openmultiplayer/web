@@ -1,5 +1,6 @@
 ---
 title: "Ghid de aranjare Pawn"
+sidebar_label: "Ghid de aranjare Pawn"
 description: A short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.
 ---
 

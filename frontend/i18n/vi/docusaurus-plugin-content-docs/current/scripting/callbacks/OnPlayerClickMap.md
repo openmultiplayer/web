@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: Callback này được gọi khi một người chơi đặt mục tiêu/điểm đến trên bản đồ trong menu tạm dừng (bằng cách nhấp chuột phải).
 tags: ["player"]
 ---

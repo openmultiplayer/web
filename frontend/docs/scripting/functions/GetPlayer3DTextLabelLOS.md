@@ -1,5 +1,6 @@
 ---
 title: GetPlayer3DTextLabelLOS
+sidebar_label: GetPlayer3DTextLabelLOS
 description: Gets the player's 3D text label line-of-sight.
 tags: ["player", "3dtextlabel"]
 ---

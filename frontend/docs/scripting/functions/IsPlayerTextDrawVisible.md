@@ -1,5 +1,6 @@
 ---
 title: IsPlayerTextDrawVisible
+sidebar_label: IsPlayerTextDrawVisible
 description: Checks if a player-textdraw is shown for the player.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetVehicleModel
+sidebar_label: GetVehicleModel
 description: Gets the model ID of a vehicle.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetPreviewVehicleColours
+sidebar_label: TextDrawGetPreviewVehicleColours
 description: Gets the preview vehicle colours of a 3D preview textdraw.
 tags: ["textdraw"]
 ---

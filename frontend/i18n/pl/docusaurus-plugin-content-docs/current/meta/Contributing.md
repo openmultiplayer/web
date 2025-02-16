@@ -1,5 +1,6 @@
 ---
 title: Przyczyń się do rozwoju
+sidebar_label: Przyczyń się do rozwoju
 description: Jak wnieść swój wkład do SA-MP Wiki i dokumentacji open.mp.
 ---
 
@@ -83,6 +84,7 @@ Pierwszą rzeczą w _każdym_ dokumencie tutaj powinny być metadane:
 ```mdx
 ---
 title: Moja dokumentacja
+sidebar_label: Moja dokumentacja
 description: To jest strona o różnych rzeczach oraz burgerach, hura!
 ---
 ```

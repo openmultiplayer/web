@@ -1,5 +1,6 @@
 ---
 title: floatfract
+sidebar_label: floatfract
 description: Kunin ang fractional na bahagi ng float.
 tags: ["math", "floating-point"]
 ---

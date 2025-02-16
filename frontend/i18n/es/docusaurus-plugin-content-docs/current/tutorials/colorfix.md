@@ -1,5 +1,6 @@
 ---
 title: "Color Fix"
+sidebar_label: "Color Fix"
 descripion: Un script básico para agregar más colores al jugador.
 ---
 

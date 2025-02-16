@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWorldBounds
+sidebar_label: GetPlayerWorldBounds
 description: Get a player's world boundaries.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: fflush
+sidebar_label: fflush
 description: Flush a file to disk (ensure all writes are complete).
 tags: ["file management"]
 ---

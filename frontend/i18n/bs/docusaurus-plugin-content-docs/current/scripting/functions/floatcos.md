@@ -1,5 +1,6 @@
 ---
 title: floatcos
+sidebar_label: floatcos
 description: Dobijte kosinus iz zadanog ugla.
 tags: []
 ---

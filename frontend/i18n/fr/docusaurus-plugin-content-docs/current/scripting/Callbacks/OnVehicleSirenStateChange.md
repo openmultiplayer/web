@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSirenStateChange
+sidebar_label: OnVehicleSirenStateChange
 description: Cette callback est appelée lorsque l'état de la sirène d'un véhicule change.
 tags: ["vehicle"]
 ---

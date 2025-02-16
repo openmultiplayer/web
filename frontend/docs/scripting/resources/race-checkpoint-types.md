@@ -1,5 +1,6 @@
 ---
 title: Types Of Race Checkpoints
+sidebar_label: Types Of Race Checkpoints
 description: Race checkpoints definitions.
 ---
 

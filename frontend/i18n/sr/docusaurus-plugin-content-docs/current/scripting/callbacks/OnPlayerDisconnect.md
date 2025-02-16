@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDisconnect
+sidebar_label: OnPlayerDisconnect
 description: Ова функција се позива када се играч искључи са сервера.
 tags: ["player"]
 ---

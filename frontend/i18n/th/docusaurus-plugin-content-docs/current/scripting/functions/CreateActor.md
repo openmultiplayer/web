@@ -1,5 +1,6 @@
 ---
 title: CreateActor
+sidebar_label: CreateActor
 description: Create a static 'actor' in the world.
 tags: []
 ---

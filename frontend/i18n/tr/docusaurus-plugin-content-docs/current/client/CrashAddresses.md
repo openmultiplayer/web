@@ -1,5 +1,6 @@
 ---
 title: Çökme Adresleri
+sidebar_label: Çökme Adresleri
 ---
 
 Aşağıdaki tablo, sorunu izlemenize ve gelecekte tekrarlanmasını önlemenize yardımcı olabilecek bazı yaygın istemci çökme adreslerini listeler. Genellikle istemci çökme sorunları betikte bir sorun nedeniyle ortaya çıkar. Ancak, değerlendirme açısından SA:MP günümüzde oldukça kararlıdır.

@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawColor
+sidebar_label: PlayerTextDrawColor
 description: Postavlja boju teksta player-textdrawa.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

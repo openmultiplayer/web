@@ -1,5 +1,6 @@
 ---
 title: Estilos de corte de câmera
+sidebar_label: Estilos de corte de câmera
 ---
 
 ## Descrição

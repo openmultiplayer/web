@@ -1,5 +1,6 @@
 ---
 title: GetPlayerVelocity
+sidebar_label: GetPlayerVelocity
 description: Dobij brzinu (brzinu) igrača na X, Y i Z osi.
 tags: ["player"]
 ---

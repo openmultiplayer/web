@@ -1,5 +1,6 @@
 ---
 title: Ghid pentru meniuri
+sidebar_label: Ghid pentru meniuri
 ---
 
 Un scurt tutorial care explică modul de utilizare a sistemului de meniuri al jocului. Acest sistem de meniu este diferit de dialogurile SA-MP și reflectă mai bine interfața tradițională a jocului original.

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerTakeDamage
+sidebar_label: OnPlayerTakeDamage
 description: Callback ini terpanggil ketika pemain menerima damage.
 tags: ["player"]
 ---

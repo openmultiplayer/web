@@ -1,5 +1,6 @@
 ---
 title: OnPlayerUpdate
+sidebar_label: OnPlayerUpdate
 description: Acest callback este apelat de fiecare dată când un client/jucător actualizează serverul cu starea lor.
 tags: ["player"]
 ---

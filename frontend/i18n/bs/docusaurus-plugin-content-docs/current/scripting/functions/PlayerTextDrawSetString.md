@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetString
+sidebar_label: PlayerTextDrawSetString
 description: Promijeni tekst player-textdrawa.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

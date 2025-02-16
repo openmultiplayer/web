@@ -1,5 +1,6 @@
 ---
 title: GetVehicleParamsCarDoors
+sidebar_label: GetVehicleParamsCarDoors
 description: Allows you to retrieve the current state of a vehicle's doors.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: ApplyActorAnimation
+sidebar_label: ApplyActorAnimation
 description: Primijeni animaciju na aktora.
 tags: []
 ---

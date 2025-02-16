@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClassEx
+sidebar_label: AddPlayerClassEx
 description: Bu işlev, bir takım parametresi eklenmesiyle birlikte AddPlayerClass işleviyle tamamen aynıdır.
 tags: ["player"]
 ---

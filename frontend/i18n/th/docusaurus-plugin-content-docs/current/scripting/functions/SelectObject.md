@@ -1,5 +1,6 @@
 ---
 title: SelectObject
+sidebar_label: SelectObject
 description: Display the cursor and allow the player to select an object.
 tags: []
 ---

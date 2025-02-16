@@ -1,5 +1,6 @@
 ---
 title: IsValidPlayer3DTextLabel
+sidebar_label: IsValidPlayer3DTextLabel
 description: Checks if a player's 3D text label is valid.
 tags: ["player", "3dtextlabel"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetGameModeText
+sidebar_label: SetGameModeText
 description: Set the name of the game mode, which appears in the server browser.
 tags: []
 ---

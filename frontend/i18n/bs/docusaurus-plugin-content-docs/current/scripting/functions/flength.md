@@ -1,5 +1,6 @@
 ---
 title: flength
+sidebar_label: flength
 description: Vraća dužinu datoteke.
 tags: []
 ---

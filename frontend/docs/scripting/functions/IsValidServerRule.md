@@ -1,5 +1,6 @@
 ---
 title: IsValidServerRule
+sidebar_label: IsValidServerRule
 description: Checks if the given server rule is valid.
 tags: ["rule"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: strins
+sidebar_label: strins
 description: Umetni string u drugi string.
 tags: []
 ---

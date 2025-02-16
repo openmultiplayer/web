@@ -1,5 +1,6 @@
 ---
 title: OnDialogResponse
+sidebar_label: OnDialogResponse
 description: Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno okno, imenovano "ShowPlayerDialog", s klikom na gumb, s pritiskom na tipko ENTER / ESC ali z dvoklikom na element seznama (če uporabljate pogovorno okno sloga "seznam").
 tags: []
 ---

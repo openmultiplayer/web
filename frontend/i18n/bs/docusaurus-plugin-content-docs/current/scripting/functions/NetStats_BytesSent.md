@@ -1,5 +1,6 @@
 ---
 title: NetStats_BytesSent
+sidebar_label: NetStats_BytesSent
 description: Dobija količinu podataka (u bajtovima) koju je server poslao klijentu za reprodukciju.
 tags: []
 ---

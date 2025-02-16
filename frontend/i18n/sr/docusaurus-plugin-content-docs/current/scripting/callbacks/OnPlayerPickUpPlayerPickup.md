@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPlayerPickup
+sidebar_label: OnPlayerPickUpPlayerPickup
 description: Овај повратни позив се позива када играч подигне играчев пикап креиран помоћу CreatePlayerPickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

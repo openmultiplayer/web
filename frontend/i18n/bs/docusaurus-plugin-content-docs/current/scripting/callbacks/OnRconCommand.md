@@ -1,5 +1,6 @@
 ---
 title: OnRconCommand
+sidebar_label: OnRconCommand
 description: Ovaj callback je pozvan kada je komanda poslana kroz server konzolu, upravljanjem RCON-om, ili kroz in-game "/rcon command".
 tags: []
 ---

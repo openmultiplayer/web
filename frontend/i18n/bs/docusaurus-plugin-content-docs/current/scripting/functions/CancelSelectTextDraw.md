@@ -1,5 +1,6 @@
 ---
 title: CancelSelectTextDraw
+sidebar_label: CancelSelectTextDraw
 description: Prekid selektovanja textdrawa pomoću miša.
 tags: ["textdraw"]
 ---

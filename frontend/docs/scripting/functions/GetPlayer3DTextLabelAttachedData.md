@@ -1,5 +1,6 @@
 ---
 title: GetPlayer3DTextLabelAttachedData
+sidebar_label: GetPlayer3DTextLabelAttachedData
 description: Gets the player's 3D text label attached data.
 tags: ["player", "3dtextlabel"]
 ---

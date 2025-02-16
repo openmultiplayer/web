@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitedMenu
+sidebar_label: OnPlayerExitedMenu
 description: Chamado quando um jogador sai se um menu.
 tags: ["player", "menu"]
 ---

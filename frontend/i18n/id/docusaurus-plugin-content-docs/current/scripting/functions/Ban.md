@@ -1,5 +1,6 @@
 ---
 title: Ban
+sidebar_label: Ban
 description: Melarang player yang sedang berada di dalam server.
 tags: ["administration"]
 ---

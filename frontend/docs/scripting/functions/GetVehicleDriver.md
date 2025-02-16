@@ -1,5 +1,6 @@
 ---
 title: GetVehicleDriver
+sidebar_label: GetVehicleDriver
 description: Get the playerid of the person driving the vehicle.
 tags: ["vehicle"]
 ---

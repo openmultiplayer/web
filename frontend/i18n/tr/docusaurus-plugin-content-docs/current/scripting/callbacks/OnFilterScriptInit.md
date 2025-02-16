@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptInit
+sidebar_label: OnFilterScriptInit
 description: Bu geri çağırma bir filterscript çalıştırıldığında tetiklenir (yüklendiğinde).
 tags: []
 ---

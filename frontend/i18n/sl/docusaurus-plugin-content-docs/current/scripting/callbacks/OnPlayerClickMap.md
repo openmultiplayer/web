@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: OnPlayerClickMap se pokliče, ko si igralec postavi tarčo(target/waypoint) na zemljevidu menija za premor (desni klik).
 tags: ["player"]
 ---

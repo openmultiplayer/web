@@ -1,5 +1,6 @@
 ---
 title: OnEnterExitModShop
+sidebar_label: OnEnterExitModShop
 description: Das Callback wird aufgerufen, wenn ein Spieler eine Tuningwerkstatt betritt oder verlässt.
 tags: []
 ---

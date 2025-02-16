@@ -1,5 +1,6 @@
 ---
 title: OnNPCConnect
+sidebar_label: OnNPCConnect
 description: Bu geri çağırma, bir NPC sunucuya başarıyla bağlandığında çağrılır.
 tags: ["npc"]
 ---

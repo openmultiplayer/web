@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModelTimed
+sidebar_label: AddSimpleModelTimed
 description: Dodaje novi prilagođen/custom prost model objekta za preuzimanje.
 tags: []
 ---

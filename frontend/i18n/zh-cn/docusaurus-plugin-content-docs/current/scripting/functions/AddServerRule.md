@@ -1,5 +1,6 @@
 ---
 title: AddServerRule
+sidebar_label: AddServerRule
 description: Add a server rule.
 tags: ["rule"]
 ---

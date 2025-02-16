@@ -1,5 +1,6 @@
 ---
 title: OnClientCheckResponse
+sidebar_label: OnClientCheckResponse
 description: Tinatawag ang callback na ito kapag nakumpleto ang request sa SendClientCheck
 tags: []
 ---

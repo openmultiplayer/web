@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClass
+sidebar_label: AddPlayerClass
 description: Class seçimi sırasında yeni bir class oluşturur.
 tags: ["player"]
 ---

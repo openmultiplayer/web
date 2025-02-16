@@ -1,5 +1,6 @@
 ---
 title: "Compensarea intarzierii"
+sidebar_label: "Compensarea intarzierii"
 descripion: Explicație de compensare a întârzierii.
 ---
 

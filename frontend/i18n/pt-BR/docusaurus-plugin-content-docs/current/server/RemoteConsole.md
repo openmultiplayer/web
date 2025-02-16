@@ -1,5 +1,6 @@
 ---
 title: "Console Remoto (RCON)"
+sidebar_label: "Console Remoto (RCON)"
 ---
 
 O Console Remoto é um prompt de comando onde você pode usar comandos RCON sem precisar estar no jogo e no seu servidor. Desde 0.3b, o Console Remoto foi removido do Navegador de Servidores. A partir de agora você terá que utilizar outra forma de acessar o RCON Remoto conforme explicado abaixo.

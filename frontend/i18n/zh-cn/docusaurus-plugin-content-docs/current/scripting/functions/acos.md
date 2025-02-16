@@ -1,5 +1,6 @@
 ---
 title: acos
+sidebar_label: acos
 description: Get the inversed value of a cosine in degrees.
 tags: ["math"]
 ---

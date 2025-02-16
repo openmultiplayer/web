@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description: Adiciona um novo modelo de personagem personalizado para download. Os arquivos do modelo são armazenados em Documentos\GTA San Andreas User Files\SAMP\cache do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato CRC.
 tags: []
 ---

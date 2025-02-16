@@ -1,5 +1,6 @@
 ---
 title: strlen
+sidebar_label: strlen
 description: Mendapatkan panjang dari sebuah string.
 tags: ["string"]
 ---

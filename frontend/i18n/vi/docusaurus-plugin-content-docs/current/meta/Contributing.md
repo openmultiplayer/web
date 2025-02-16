@@ -85,6 +85,7 @@ Nếu nghi ngờ, hãy đọc một trang khác sử dụng hình ảnh và sao 
 ```mdx
 ---
 title: Tài Liệu Của Tôi
+sidebar_label: Tài Liệu Của Tôi
 description: Đây là một trang về những thứ và bánh hamburger, vui quá!
 ---
 ```

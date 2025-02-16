@@ -1,5 +1,6 @@
 ---
 title: GetVehicleComponentType
+sidebar_label: GetVehicleComponentType
 description: Find out what type of component a certain ID is.
 tags: ["vehicle"]
 ---

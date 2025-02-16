@@ -1,5 +1,6 @@
 ---
 title: IsValidTextDraw
+sidebar_label: IsValidTextDraw
 description: Checks if a textdraw is valid.
 tags: ["textdraw"]
 ---

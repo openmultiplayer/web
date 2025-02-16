@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetShadow
+sidebar_label: PlayerTextDrawSetShadow
 description: Adds a shadow to the bottom-right side of the text in a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

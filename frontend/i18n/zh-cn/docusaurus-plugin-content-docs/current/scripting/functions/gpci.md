@@ -1,5 +1,6 @@
 ---
 title: gpci
+sidebar_label: gpci
 description: Fetch the CI (computer/client identification) of a user, this is linked to their SAMP/GTA on their computer.
 tags: []
 ---

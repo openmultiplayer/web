@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDamageStatusUpdate
+sidebar_label: OnVehicleDamageStatusUpdate
 description: Bu geri çağırma, aracın kapıları, farları, lastikleri veya panelleri gibi araç elemanları hasar aldığında çağrılır.
 tags: ["vehicle"]
 ---

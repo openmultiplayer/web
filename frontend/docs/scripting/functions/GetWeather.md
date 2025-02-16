@@ -1,5 +1,6 @@
 ---
 title: GetWeather
+sidebar_label: GetWeather
 description: Get the current world weather.
 tags: []
 ---

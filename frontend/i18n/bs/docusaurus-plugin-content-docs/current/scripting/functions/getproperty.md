@@ -1,5 +1,6 @@
 ---
 title: getproperty
+sidebar_label: getproperty
 description: Uzmite određenu imovinu iz memorije, string se vraća kao spakirani string!
 
 tags: []

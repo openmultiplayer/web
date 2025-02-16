@@ -1,5 +1,6 @@
 ---
 title: setarg
+sidebar_label: setarg
 description: Set an argument that was passed to a function.
 tags: ["core", "arguments", "args"]
 ---

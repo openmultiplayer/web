@@ -1,5 +1,6 @@
 ---
 title: GetVehicleOccupiedTick
+sidebar_label: GetVehicleOccupiedTick
 description: Get the occupied tick of a vehicle.
 tags: ["vehicle"]
 ---

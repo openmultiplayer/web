@@ -1,5 +1,6 @@
 ---
 title: DeleteSVar
+sidebar_label: DeleteSVar
 description: Exclui uma variável do servidor definida anteriormente.
 tags: []
 ---

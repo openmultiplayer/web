@@ -1,5 +1,6 @@
 ---
 title: OnGameModeInit
+sidebar_label: OnGameModeInit
 description: این کالبک با استارت شدن gamemode فعال می شود.
 tags: []
 ---

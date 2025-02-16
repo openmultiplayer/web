@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayerTextDraw
+sidebar_label: OnPlayerClickPlayerTextDraw
 description: Acest callback este apelat atunci când un jucător dă clic pe un player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

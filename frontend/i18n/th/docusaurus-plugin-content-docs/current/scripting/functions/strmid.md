@@ -1,5 +1,6 @@
 ---
 title: strmid
+sidebar_label: strmid
 description: Extract a range of characters from a string.
 tags: []
 ---

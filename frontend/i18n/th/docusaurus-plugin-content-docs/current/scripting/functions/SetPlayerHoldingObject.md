@@ -1,5 +1,6 @@
 ---
 title: SetPlayerHoldingObject
+sidebar_label: SetPlayerHoldingObject
 description: Attaches an object to a bone.
 tags: ["player"]
 ---

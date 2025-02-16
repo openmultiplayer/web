@@ -1,5 +1,6 @@
 ---
 title: GameModeExit
+sidebar_label: GameModeExit
 description: Završava trenutni gamemode.
 tags: []
 ---

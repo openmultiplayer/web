@@ -1,5 +1,6 @@
 ---
 title: OnPlayerInteriorChange
+sidebar_label: OnPlayerInteriorChange
 description: Oyuncu interior değiştirdiğinde çalışır.
 tags: ["player"]
 ---

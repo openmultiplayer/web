@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWeaponData
+sidebar_label: GetPlayerWeaponData
 description: Get the weapon and ammo in a specific player's weapon slot (e.
 tags: ["player"]
 ---

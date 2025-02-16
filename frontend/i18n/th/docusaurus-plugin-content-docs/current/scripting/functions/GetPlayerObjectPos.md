@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectPos
+sidebar_label: GetPlayerObjectPos
 description: Get the position of a player object (CreatePlayerObject).
 tags: ["player"]
 ---

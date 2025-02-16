@@ -1,5 +1,6 @@
 ---
 title: Common Server Issues
+sidebar_label: Common Server Issues
 ---
 
 ## தொடங்கும் போது சர்வர் உடனடியாக செயலிழக்கிறது

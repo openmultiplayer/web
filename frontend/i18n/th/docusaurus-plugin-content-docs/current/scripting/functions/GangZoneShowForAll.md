@@ -1,5 +1,6 @@
 ---
 title: GangZoneShowForAll
+sidebar_label: GangZoneShowForAll
 description: Shows a gangzone with the desired color to all players.
 tags: ["gangzone"]
 ---

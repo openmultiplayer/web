@@ -1,5 +1,6 @@
 ---
 title: EditPlayerClass
+sidebar_label: EditPlayerClass
 description: Edit a class data.
 tags: ["class"]
 ---

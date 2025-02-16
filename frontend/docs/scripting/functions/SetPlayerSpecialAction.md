@@ -1,5 +1,6 @@
 ---
 title: SetPlayerSpecialAction
+sidebar_label: SetPlayerSpecialAction
 description: This function allows to set players special action.
 tags: ["player"]
 ---

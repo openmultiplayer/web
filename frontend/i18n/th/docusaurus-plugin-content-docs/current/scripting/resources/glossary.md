@@ -1,5 +1,6 @@
 ---
 title: Glossary
+sidebar_label: Glossary
 description: Glossary of terms
 tags: []
 sidebar_label: Glossary

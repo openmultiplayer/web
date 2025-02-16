@@ -1,5 +1,6 @@
 ---
 title: Delete3DTextLabel
+sidebar_label: Delete3DTextLabel
 description: Delete a 3D text label (created with Create3DTextLabel).
 tags: ["3dtextlabel"]
 ---

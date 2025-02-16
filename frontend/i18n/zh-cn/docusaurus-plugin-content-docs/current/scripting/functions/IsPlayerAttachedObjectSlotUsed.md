@@ -1,5 +1,6 @@
 ---
 title: IsPlayerAttachedObjectSlotUsed
+sidebar_label: IsPlayerAttachedObjectSlotUsed
 description: Check if a player has an object attached in the specified index (slot).
 tags: ["player", "object", "attachment"]
 ---

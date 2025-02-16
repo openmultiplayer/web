@@ -1,5 +1,6 @@
 ---
 title: OnPlayerWeaponShot
+sidebar_label: OnPlayerWeaponShot
 description: Bu fonksiyon, oyuncu ateş ettiğinde çağrılır.
 tags: ["player"]
 ---

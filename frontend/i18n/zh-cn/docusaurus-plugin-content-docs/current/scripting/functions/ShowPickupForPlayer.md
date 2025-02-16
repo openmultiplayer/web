@@ -1,5 +1,6 @@
 ---
 title: ShowPickupForPlayer
+sidebar_label: ShowPickupForPlayer
 description: Shows a pickup for a specific player.
 tags: ["player", "pickup"]
 ---

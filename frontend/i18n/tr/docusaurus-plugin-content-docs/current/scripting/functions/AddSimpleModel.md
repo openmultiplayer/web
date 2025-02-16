@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModel
+sidebar_label: AddSimpleModel
 description: İndirmek için yeni bir özel basit nesne modeli ekler.
 tags: []
 ---

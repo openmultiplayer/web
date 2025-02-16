@@ -1,5 +1,6 @@
 ---
 title: OnClientCheckResponse
+sidebar_label: OnClientCheckResponse
 description: Ова повратна функција се позива када се заврши SendClientCheck захтев.
 tags: []
 ---

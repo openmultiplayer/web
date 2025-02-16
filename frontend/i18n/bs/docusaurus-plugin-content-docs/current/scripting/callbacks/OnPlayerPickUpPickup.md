@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPickup
+sidebar_label: OnPlayerPickUpPickup
 description: Pozvano kada igrač pokupi pickup kreiran funkcijom CreatePickup.
 tags: ["player"]
 ---

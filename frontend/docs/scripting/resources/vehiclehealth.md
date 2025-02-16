@@ -1,5 +1,6 @@
 ---
 title: Vehicle Health
+sidebar_label: Vehicle Health
 description: Vehicle Health Values.
 ---
 

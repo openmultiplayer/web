@@ -1,5 +1,6 @@
 ---
 title: CreatePlayerTextDraw
+sidebar_label: CreatePlayerTextDraw
 description: Creates a textdraw for a single player.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

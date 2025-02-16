@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPickup
+sidebar_label: OnPlayerPickUpPickup
 description: Callback này được gọi khi một người chơi nhặt pickup được tạo ra với CreatePickup.
 tags: ["player"]
 ---

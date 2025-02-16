@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetString
+sidebar_label: TextDrawGetString
 description: Gets the text of a textdraw.
 tags: ["textdraw"]
 ---

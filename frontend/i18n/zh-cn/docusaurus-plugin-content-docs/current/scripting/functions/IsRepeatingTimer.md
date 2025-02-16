@@ -1,5 +1,6 @@
 ---
 title: IsRepeatingTimer
+sidebar_label: IsRepeatingTimer
 description: Checks if a timer is set to repeat.
 tags: ["timer"]
 ---

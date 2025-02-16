@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDamageStatusUpdate
+sidebar_label: OnVehicleDamageStatusUpdate
 description: Ова функција се позива када се статус оштећења елемената возила као што су врата, гуме, панели или светла промени
 tags: ["vehicle"]
 ---

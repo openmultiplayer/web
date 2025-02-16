@@ -1,5 +1,6 @@
 ---
 title: OnNPCSpawn
+sidebar_label: OnNPCSpawn
 description: This callback is called when a NPC spawned.
 tags: ["npc"]
 ---

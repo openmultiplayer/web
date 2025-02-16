@@ -1,5 +1,6 @@
 ---
 title: PlayerHasClockEnabled
+sidebar_label: PlayerHasClockEnabled
 description: Checks whether the player has their in-game clock enabled.
 tags: ["player"]
 ---

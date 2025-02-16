@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModelTimed
+sidebar_label: AddSimpleModelTimed
 description: Добавляет сторонний объект для скачивания.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: Moduri de unghi
+sidebar_label: Moduri de unghi
 description: Constante unitare in sistemul international pentru măsurarea unghiurilor.
 ---
 

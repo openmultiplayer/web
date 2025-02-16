@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWeapon
+sidebar_label: GetPlayerWeapon
 description: Vraća ID oružja kojeg igrač trenutno drži.
 tags: ["player"]
 ---

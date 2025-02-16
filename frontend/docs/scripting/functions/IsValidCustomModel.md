@@ -1,5 +1,6 @@
 ---
 title: IsValidCustomModel
+sidebar_label: IsValidCustomModel
 description: Checks if a custom model ID is valid.
 tags: ["custom model", "custom skin", "simple model"]
 ---

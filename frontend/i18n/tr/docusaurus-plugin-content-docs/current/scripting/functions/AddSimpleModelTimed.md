@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModelTimed
+sidebar_label: AddSimpleModelTimed
 description: İndirmek için yeni bir basit nesne modeli ekler.
 tags: []
 ---

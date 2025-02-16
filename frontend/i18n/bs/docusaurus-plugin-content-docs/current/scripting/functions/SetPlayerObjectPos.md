@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectPos
+sidebar_label: SetPlayerObjectPos
 description: Postavlja poziciju player-objekta u navedenim kordinatama.
 tags: ["player"]
 ---

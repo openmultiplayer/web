@@ -1,5 +1,6 @@
 ---
 title: strcmp
+sidebar_label: strcmp
 description: Upoređuje dva stringa kako pi vidjelo da li su isti.
 tags: []
 ---

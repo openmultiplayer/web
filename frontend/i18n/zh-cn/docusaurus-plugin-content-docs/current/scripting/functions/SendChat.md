@@ -1,5 +1,6 @@
 ---
 title: SendChat
+sidebar_label: SendChat
 description: This will send a player text by the bot, just like using SendPlayerMessageToAll, but this function is to be used inside the NPC scripts.
 tags: []
 ---

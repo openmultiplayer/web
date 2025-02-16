@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: OnPlayerClickMap is called when a player places a target/waypoint on the pause menu map (by right-clicking).
 tags: ["player"]
 ---

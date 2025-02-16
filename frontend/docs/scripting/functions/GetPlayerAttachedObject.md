@@ -1,5 +1,6 @@
 ---
 title: GetPlayerAttachedObject
+sidebar_label: GetPlayerAttachedObject
 description: Gets the player attachment object data by index.
 tags: ["player", "object", "attachment"]
 ---

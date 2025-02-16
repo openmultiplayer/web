@@ -1,5 +1,6 @@
 ---
 title: SetPlayerHealth
+sidebar_label: SetPlayerHealth
 description: Set the health of a player.
 tags: ["player"]
 ---

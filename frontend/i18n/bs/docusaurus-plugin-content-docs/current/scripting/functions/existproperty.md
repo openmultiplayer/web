@@ -1,5 +1,6 @@
 ---
 title: existproperty
+sidebar_label: existproperty
 description: Provjeri da li imovina postoji.
 tags: []
 ---

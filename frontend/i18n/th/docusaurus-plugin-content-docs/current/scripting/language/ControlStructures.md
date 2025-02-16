@@ -1,5 +1,6 @@
 ---
 title: "Control Structures"
+sidebar_label: "Control Structures"
 ---
 
 # `Conditionals`

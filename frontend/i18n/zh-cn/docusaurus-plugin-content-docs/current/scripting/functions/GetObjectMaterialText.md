@@ -1,5 +1,6 @@
 ---
 title: GetObjectMaterialText
+sidebar_label: GetObjectMaterialText
 description: Get the material text data from an index of the object.
 tags: ["object"]
 ---

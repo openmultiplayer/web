@@ -1,5 +1,6 @@
 ---
 title: OnNPCExitVehicle
+sidebar_label: OnNPCExitVehicle
 description: This callback is called when a NPC leaves a vehicle.
 tags: ["npc"]
 ---

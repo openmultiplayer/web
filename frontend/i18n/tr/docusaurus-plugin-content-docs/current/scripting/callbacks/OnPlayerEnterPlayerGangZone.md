@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterPlayerGangZone
+sidebar_label: OnPlayerEnterPlayerGangZone
 description: Bu geri çağırma, bir oyuncu bir player gangzone'a girdiğinde çağırılır.
 tags: ["player", "gangzone"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerArmour
+sidebar_label: SetPlayerArmour
 description: Postavi nivo armora (pancira) igrača.
 tags: ["player"]
 ---

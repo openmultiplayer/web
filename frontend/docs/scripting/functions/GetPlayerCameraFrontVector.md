@@ -1,5 +1,6 @@
 ---
 title: GetPlayerCameraFrontVector
+sidebar_label: GetPlayerCameraFrontVector
 description: This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see GetPlayerCameraPos.
 tags: ["player", "camera"]
 ---

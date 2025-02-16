@@ -1,5 +1,6 @@
 ---
 title: Select Object Types
+sidebar_label: Select Object Types
 ---
 
 ## คำอธิบาย

@@ -1,5 +1,6 @@
 ---
 title: SetSVarFloat
+sidebar_label: SetSVarFloat
 description: Magtakda ng server variable na float.
 tags: []
 ---

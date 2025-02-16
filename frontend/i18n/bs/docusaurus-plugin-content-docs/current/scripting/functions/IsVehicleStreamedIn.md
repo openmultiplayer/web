@@ -1,5 +1,6 @@
 ---
 title: IsVehicleStreamedIn
+sidebar_label: IsVehicleStreamedIn
 description: Provjerava ako je vozilo učitano za igrača.
 tags: ["vehicle"]
 ---

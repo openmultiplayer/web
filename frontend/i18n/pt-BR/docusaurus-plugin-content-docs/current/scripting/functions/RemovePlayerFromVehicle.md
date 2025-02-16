@@ -1,5 +1,6 @@
 ---
 title: RemovePlayerFromVehicle
+sidebar_label: RemovePlayerFromVehicle
 description: Remove/ejeta um jogador do seu veículo.
 tags: ["player", "vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetVehicleRespawnTick
+sidebar_label: SetVehicleRespawnTick
 description: Set the respawn tick of a vehicle.
 tags: ["vehicle"]
 ---

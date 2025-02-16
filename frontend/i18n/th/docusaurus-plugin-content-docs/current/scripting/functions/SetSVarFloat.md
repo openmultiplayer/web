@@ -1,5 +1,6 @@
 ---
 title: SetSVarFloat
+sidebar_label: SetSVarFloat
 description: Set a float server variable.
 tags: []
 ---

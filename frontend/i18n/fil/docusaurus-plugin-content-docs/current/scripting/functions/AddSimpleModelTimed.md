@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModelTimed
+sidebar_label: AddSimpleModelTimed
 description: Nagdaragdag ng bagong custom na simpleng object model para sa pag-download.
 tags: []
 ---

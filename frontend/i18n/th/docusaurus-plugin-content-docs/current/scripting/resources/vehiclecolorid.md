@@ -1,5 +1,6 @@
 ---
 title: Vehicle Color IDs
+sidebar_label: Vehicle Color IDs
 ---
 
 :::danger

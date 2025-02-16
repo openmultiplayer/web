@@ -1,5 +1,6 @@
 ---
 title: ChangeVehicleColours
+sidebar_label: ChangeVehicleColours
 description: Change a vehicle's primary and secondary colours.
 tags: ["vehicle"]
 ---

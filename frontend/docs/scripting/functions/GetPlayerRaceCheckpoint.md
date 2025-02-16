@@ -1,5 +1,6 @@
 ---
 title: GetPlayerRaceCheckpoint
+sidebar_label: GetPlayerRaceCheckpoint
 description: Get the location of the current race checkpoint.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

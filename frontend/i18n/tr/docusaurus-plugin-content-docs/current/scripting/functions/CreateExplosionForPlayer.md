@@ -1,5 +1,6 @@
 ---
 title: CreateExplosionForPlayer
+sidebar_label: CreateExplosionForPlayer
 description: Tek bir oyuncunun gördüğü patlama oluşturma.
 tags: ["player"]
 ---

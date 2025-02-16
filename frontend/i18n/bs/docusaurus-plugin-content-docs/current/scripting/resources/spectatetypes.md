@@ -1,5 +1,6 @@
 ---
 title: Vrste Spectate-ovanja
+sidebar_label: Vrste Spectate-ovanja
 description: Vrste Spectate-ovanja korištene za GetPlayerSpectateType.
 tags: []
 sidebar_label: Vrste Spectate-ovanja

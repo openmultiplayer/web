@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: Acest callback este apelat atunci când un vehicul este transmis în flux pentru clientul unui jucător (este atât de departe încât acesta nu îl poate vedea).
 tags: ["vehicle"]
 ---

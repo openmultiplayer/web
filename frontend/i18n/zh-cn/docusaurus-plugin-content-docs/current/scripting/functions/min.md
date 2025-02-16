@@ -1,5 +1,6 @@
 ---
 title: min
+sidebar_label: min
 description: Return the lowest of two numbers.
 tags: ["core"]
 ---

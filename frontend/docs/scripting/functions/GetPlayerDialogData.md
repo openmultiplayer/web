@@ -1,5 +1,6 @@
 ---
 title: GetPlayerDialogData
+sidebar_label: GetPlayerDialogData
 description: Get the data of the dialog currently show to the player.
 tags: ["player", "dialog"]
 ---

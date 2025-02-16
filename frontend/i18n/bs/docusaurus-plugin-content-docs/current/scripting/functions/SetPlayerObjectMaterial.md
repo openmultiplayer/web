@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectMaterial
+sidebar_label: SetPlayerObjectMaterial
 description: Zamijeni teksturu player-objekta sa teksturom drugog modela u igri.
 tags: ["player"]
 ---

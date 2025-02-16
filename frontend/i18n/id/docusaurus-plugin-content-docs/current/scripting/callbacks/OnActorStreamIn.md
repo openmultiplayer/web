@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Callback ini akan terpanggil ketika sebuah aktor berada di jangkauan stream dari klien pemain.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: Erreurs récentes du client SA:MP
+sidebar_label: Erreurs récentes du client SA:MP
 description: Liste de toutes les erreurs possibles avec SA:MP / GTA:SA ainsi que leurs solutions.
 ---
 

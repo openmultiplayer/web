@@ -1,5 +1,6 @@
 ---
 title: "open.mp client no linux"
+sidebar_label: "open.mp client no linux"
 description: Guia de como executar o cliente open.mp no Linux.
 ---
 

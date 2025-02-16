@@ -1,5 +1,6 @@
 ---
 title: ResumeRecordingPlayback
+sidebar_label: ResumeRecordingPlayback
 description: Ipagpapatuloy nito ang naka-pause na pag-record.
 tags: []
 ---

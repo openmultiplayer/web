@@ -1,5 +1,6 @@
 ---
 title: Text Alignments
+sidebar_label: Text Alignments
 ---
 
 To be used with [SetObjectMaterialText](../functions/SetObjectMaterialText).

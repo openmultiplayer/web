@@ -1,5 +1,6 @@
 ---
 title: OnScriptUnloadPlayer
+sidebar_label: OnScriptUnloadPlayer
 description: Este callback é chamado para cada jogador conectado quando um script é descarregado.
 tags: ["player"]
 ---

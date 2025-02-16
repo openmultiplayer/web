@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectObject
+sidebar_label: OnPlayerSelectObject
 description: This callback is called when a player selects an object after BeginObjectSelecting has been used.
 tags: ["player", "object"]
 ---

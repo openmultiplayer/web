@@ -1,5 +1,6 @@
 ---
 title: ShowVehicle
+sidebar_label: ShowVehicle
 description: Shows the hidden vehicle.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnRconLoginAttempt
+sidebar_label: OnRconLoginAttempt
 description: Bu fonksiyon, bir oyuncu RCON olarak oturum açmaya çalıştığında giriş denemesi başarısız olsa bile çağrılır.
 tags: []
 ---

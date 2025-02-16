@@ -1,5 +1,6 @@
 ---
 title: "Consolă la distanță (RCON)"
+sidebar_label: "Consolă la distanță (RCON)"
 descripion: Administrare server de la distanță.
 ---
 

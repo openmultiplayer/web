@@ -1,5 +1,6 @@
 ---
 title: Vrste Pogodaka Mecima
+sidebar_label: Vrste Pogodaka Mecima
 ---
 
 :::info

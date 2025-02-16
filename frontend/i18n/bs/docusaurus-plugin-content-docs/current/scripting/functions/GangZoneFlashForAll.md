@@ -1,5 +1,6 @@
 ---
 title: GangZoneFlashForAll
+sidebar_label: GangZoneFlashForAll
 description: GangZoneFlashForAll treperi gangzonu za sve igrače.
 tags: ["gangzone"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: StopObject
+sidebar_label: StopObject
 description: Stop a moving object after MoveObject has been used.
 tags: ["object"]
 ---

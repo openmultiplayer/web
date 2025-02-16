@@ -1,5 +1,6 @@
 ---
 title: swapchars
+sidebar_label: swapchars
 description: Swap bytes in a cell.
 tags: ["string"]
 ---

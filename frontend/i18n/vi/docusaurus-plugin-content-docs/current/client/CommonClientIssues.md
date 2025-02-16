@@ -1,5 +1,6 @@
 ---
 title: Common Client Issues
+sidebar_label: Common Client Issues
 ---
 
 ### Tôi nhận được lỗi "San Andreas cannot be found"

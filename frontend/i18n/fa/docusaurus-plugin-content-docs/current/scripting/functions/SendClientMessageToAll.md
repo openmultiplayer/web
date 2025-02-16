@@ -1,5 +1,6 @@
 ---
 title: SendClientMessageToAll
+sidebar_label: SendClientMessageToAll
 description: یک پیام را برای همه بازیکن ها نشان میدهد.
 tags: []
 ---

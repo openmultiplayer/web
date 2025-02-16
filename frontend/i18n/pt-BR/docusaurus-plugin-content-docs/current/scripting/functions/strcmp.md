@@ -1,5 +1,6 @@
 ---
 title: strcmp
+sidebar_label: strcmp
 description: Compara duas strings para ver se são iguais.
 tags: ["string"]
 ---

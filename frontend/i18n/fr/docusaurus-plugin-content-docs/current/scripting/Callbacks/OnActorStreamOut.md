@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Cette fonction est appelée quand un actor est déchargé (n'est plus visible) pour un joueur.
 tags: [actors, actorstream, forplayerid, actorid]
 ---

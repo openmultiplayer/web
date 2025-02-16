@@ -1,5 +1,6 @@
 ---
 title: GetPlayerPos
+sidebar_label: GetPlayerPos
 description: Get the position of a player, represented by X, Y and Z coordinates.
 tags: ["player"]
 ---

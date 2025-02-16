@@ -1,5 +1,6 @@
 ---
 title: toupper
+sidebar_label: toupper
 description: Ova funkcija mijenja jedan znak u veliko slovo.
 tags: []
 ---

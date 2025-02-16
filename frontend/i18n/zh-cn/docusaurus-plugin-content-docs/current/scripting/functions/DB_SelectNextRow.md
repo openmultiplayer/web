@@ -1,5 +1,6 @@
 ---
 title: DB_SelectNextRow
+sidebar_label: DB_SelectNextRow
 description: Moves to the next row of the result set allocated with `DB_ExecuteQuery`.
 keywords:
   - sqlite

@@ -1,5 +1,6 @@
 ---
 title: "Kontrol Yapıları"
+sidebar_label: "Kontrol Yapıları"
 description: Pawn dilinde kontrol yapılarının genel bir bakışı
 ---
 

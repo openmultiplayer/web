@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Ez a visszahívás egy filterszkript leállása során kerül meghívásra.
 tags: []
 ---

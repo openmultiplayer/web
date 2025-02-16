@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: Ovaj callback je pozvan kada igrač unese komandu u chat prozoru njegovog klijenta.
 tags: ["player"]
 ---

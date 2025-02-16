@@ -1,5 +1,6 @@
 ---
 title: AttachCameraToObject
+sidebar_label: AttachCameraToObject
 description: Bu fonksiyonu, bir oyuncuya kamera yerleştirmek için kullanabilirsiniz.
 tags: []
 ---

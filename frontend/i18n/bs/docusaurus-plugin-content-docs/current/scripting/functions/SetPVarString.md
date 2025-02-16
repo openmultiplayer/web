@@ -1,5 +1,6 @@
 ---
 title: SetPVarString
+sidebar_label: SetPVarString
 description: Čuva string player (igračevu) varijablu.
 tags: ["pvar"]
 ---

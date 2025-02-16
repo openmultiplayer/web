@@ -1,5 +1,6 @@
 ---
 title: SetPlayerName
+sidebar_label: SetPlayerName
 description: Sets the name of a player.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTeam
+sidebar_label: GetPlayerTeam
 description: Get the ID of the team the player is on.
 tags: ["player"]
 ---

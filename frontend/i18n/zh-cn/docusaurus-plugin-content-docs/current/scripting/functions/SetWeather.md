@@ -1,5 +1,6 @@
 ---
 title: SetWeather
+sidebar_label: SetWeather
 description: Set the world weather for all players.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: DetachTrailerFromVehicle
+sidebar_label: DetachTrailerFromVehicle
 description: Razdvaja vozilo i prikolicu, ukoliko postoji.
 tags: ["vehicle"]
 ---

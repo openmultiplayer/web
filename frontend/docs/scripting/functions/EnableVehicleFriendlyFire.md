@@ -1,5 +1,6 @@
 ---
 title: EnableVehicleFriendlyFire
+sidebar_label: EnableVehicleFriendlyFire
 description: Enable friendly fire for team vehicles.
 tags: ["vehicle"]
 ---

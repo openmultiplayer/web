@@ -1,5 +1,6 @@
 ---
 title: ShowNameTags
+sidebar_label: ShowNameTags
 description: Omogući/onemogući iscrtavanje nametag-ova, healthbar-ova i armora iznad igrača.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerPoolSize
+sidebar_label: GetPlayerPoolSize
 description: Gets the highest playerid currently in use on the server.
 tags: ["player"]
 ---

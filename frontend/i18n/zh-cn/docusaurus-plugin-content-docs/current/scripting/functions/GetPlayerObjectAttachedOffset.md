@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectAttachedOffset
+sidebar_label: GetPlayerObjectAttachedOffset
 description: Get the attachment offset and rotation of a player-object.
 tags: ["player", "object", "playerobject"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: AddMenuItem
+sidebar_label: AddMenuItem
 description: Belirli bir menüye öğe ekler.
 tags: ["menu"]
 ---

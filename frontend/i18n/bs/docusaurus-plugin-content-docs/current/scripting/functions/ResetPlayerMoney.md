@@ -1,5 +1,6 @@
 ---
 title: ResetPlayerMoney
+sidebar_label: ResetPlayerMoney
 description: Resetiraj igračev novac na $0.
 tags: ["player"]
 ---

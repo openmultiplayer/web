@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterCheckpoint
+sidebar_label: OnPlayerEnterCheckpoint
 description: Acest callback este apelat atunci când un jucător intră în punctul de control setat pentru acel jucător.
 tags: ["player", "checkpoint"]
 ---

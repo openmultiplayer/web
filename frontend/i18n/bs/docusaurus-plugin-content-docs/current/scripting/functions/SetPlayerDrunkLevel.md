@@ -1,5 +1,6 @@
 ---
 title: SetPlayerDrunkLevel
+sidebar_label: SetPlayerDrunkLevel
 description: Postavlja nivo pijanosti igrača zbog kojeg se igračeva kamera njiše i vozila teško kontroliraju.
 tags: ["player"]
 ---

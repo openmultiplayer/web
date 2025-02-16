@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterGangZone
+sidebar_label: OnPlayerEnterGangZone
 description: Ова функција се позива када играч уђе у гангзону.
 tags: ["player", "gangzone"]
 ---

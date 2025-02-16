@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamIn
+sidebar_label: OnPlayerStreamIn
 description: Este callback é chamado quando um jogador é transmitido pelo cliente de outro jogador.
 tags: ["player"]
 ---

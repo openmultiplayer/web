@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayerTextDraw
+sidebar_label: OnPlayerClickPlayerTextDraw
 description: Bu geri çağırma, bir oyuncu bir player-textdrawa tıkladığında çağrılır.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

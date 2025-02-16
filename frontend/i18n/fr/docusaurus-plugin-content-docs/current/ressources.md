@@ -1,5 +1,6 @@
 ---
 title: Ressources
+sidebar_label: Ressources
 description: Liste exhaustive d'outils, de librairies et de plugins SA:MP nécessaires au développement d'un serveur.
 ---
 

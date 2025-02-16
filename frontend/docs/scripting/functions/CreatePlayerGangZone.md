@@ -1,5 +1,6 @@
 ---
 title: CreatePlayerGangZone
+sidebar_label: CreatePlayerGangZone
 description: Create player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---

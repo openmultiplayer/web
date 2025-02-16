@@ -1,5 +1,6 @@
 ---
 title: ApplyAnimation
+sidebar_label: ApplyAnimation
 description: Apply an animation to a player.
 tags: ["player", "animation"]
 ---

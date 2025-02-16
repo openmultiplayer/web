@@ -1,5 +1,6 @@
 ---
 title: GetVehicleDamageStatus
+sidebar_label: GetVehicleDamageStatus
 description: Retrieve the damage statuses of a vehicle.
 tags: ["vehicle"]
 ---

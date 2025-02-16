@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTargetActor
+sidebar_label: GetPlayerTargetActor
 description: Dobij id aktora koji je naciljan od strane nekog igrača.
 tags: ["player"]
 ---

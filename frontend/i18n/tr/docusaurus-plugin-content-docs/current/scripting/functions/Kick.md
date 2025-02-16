@@ -1,5 +1,6 @@
 ---
 title: Kick
+sidebar_label: Kick
 description: Oyuncuyu sunucudan atma.
 tags: ["administration"]
 ---

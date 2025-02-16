@@ -1,5 +1,6 @@
 ---
 title: InterpolateCameraPos
+sidebar_label: InterpolateCameraPos
 description: Pomjerite kameru igrača od jedne pozicije do druge, unutar postavljenog vremena.
 tags: []
 ---

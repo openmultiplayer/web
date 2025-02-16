@@ -1,5 +1,6 @@
 ---
 title: HasGameText
+sidebar_label: HasGameText
 description: Does the player currently have text in the given gametext style displayed?
 tags: ["player"]
 ---

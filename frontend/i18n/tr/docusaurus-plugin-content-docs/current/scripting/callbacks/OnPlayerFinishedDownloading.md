@@ -1,5 +1,6 @@
 ---
 title: OnPlayerFinishedDownloading
+sidebar_label: OnPlayerFinishedDownloading
 description: Bu geri çağırma, bir oyuncu model cache indirmesini bitirdiğinde çağırılır.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModel
+sidebar_label: AddSimpleModel
 description: Dodaje novi prilagođen/custom prost model objekta za preuzimanje.
 tags: []
 ---

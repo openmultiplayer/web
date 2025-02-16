@@ -1,5 +1,6 @@
 ---
 title: TextDrawBackgroundColor
+sidebar_label: TextDrawBackgroundColor
 description: Prilagođava boju pozadine područja za textdraw (obris / sjena - NE okvir).
 tags: ["textdraw"]
 ---

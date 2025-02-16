@@ -1,5 +1,6 @@
 ---
 title: ispacked
+sidebar_label: ispacked
 description: Checks if the given string is packed.
 tags: []
 ---

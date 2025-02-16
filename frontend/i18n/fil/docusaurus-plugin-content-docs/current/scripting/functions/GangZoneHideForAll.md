@@ -1,5 +1,6 @@
 ---
 title: GangZoneHideForAll
+sidebar_label: GangZoneHideForAll
 description: Ang GangZoneHideForAll ay nagtatago ng gangzone mula sa lahat ng mga manlalaro.
 tags: ["gangzone"]
 ---

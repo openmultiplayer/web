@@ -1,5 +1,6 @@
 ---
 title: TextDrawFont
+sidebar_label: TextDrawFont
 description: Mijenja font teksta.
 tags: ["textdraw"]
 ---

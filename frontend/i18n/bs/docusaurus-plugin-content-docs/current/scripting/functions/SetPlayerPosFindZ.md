@@ -1,5 +1,6 @@
 ---
 title: SetPlayerPosFindZ
+sidebar_label: SetPlayerPosFindZ
 description: Ovo postavlja poziciju igrača a potom prilagođava igračevu Z-kordinatu na najbliže čvrsto tlo ispod pozicije (položaja).
 tags: ["player"]
 ---

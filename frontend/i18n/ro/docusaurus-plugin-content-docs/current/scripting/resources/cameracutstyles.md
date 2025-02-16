@@ -1,5 +1,6 @@
 ---
 title: Stiluri de tăiere a camerei
+sidebar_label: Stiluri de tăiere a camerei
 ---
 
 ## Descriere

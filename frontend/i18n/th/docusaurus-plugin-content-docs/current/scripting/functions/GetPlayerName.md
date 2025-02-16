@@ -1,5 +1,6 @@
 ---
 title: GetPlayerName
+sidebar_label: GetPlayerName
 description: Get a player's name.
 tags: ["player"]
 ---

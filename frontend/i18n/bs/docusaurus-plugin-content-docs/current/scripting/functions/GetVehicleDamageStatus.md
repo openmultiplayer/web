@@ -1,5 +1,6 @@
 ---
 title: GetVehicleDamageStatus
+sidebar_label: GetVehicleDamageStatus
 description: Dohvatite status oštećenja vozila.
 tags: ["vehicle"]
 ---

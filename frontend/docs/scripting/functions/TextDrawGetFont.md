@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetFont
+sidebar_label: TextDrawGetFont
 description: Gets the text font of a textdraw.
 tags: ["textdraw"]
 ---

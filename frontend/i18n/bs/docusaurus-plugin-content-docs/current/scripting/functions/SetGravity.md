@@ -1,5 +1,6 @@
 ---
 title: SetGravity
+sidebar_label: SetGravity
 description: Postavi gravitaciju za sve igrače.
 tags: []
 ---

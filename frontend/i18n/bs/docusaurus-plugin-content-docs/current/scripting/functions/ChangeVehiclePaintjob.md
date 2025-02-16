@@ -1,5 +1,6 @@
 ---
 title: ChangeVehiclePaintjob
+sidebar_label: ChangeVehiclePaintjob
 description: Promjena paintjob-a vozila (za obične boje pogledajte ChangeVehicleColor).
 tags: ["vehicle"]
 ---

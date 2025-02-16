@@ -1,5 +1,6 @@
 ---
 title: Original Car Colors
+sidebar_label: Original Car Colors
 description: A list of the original car colours from single player.
 ---
 

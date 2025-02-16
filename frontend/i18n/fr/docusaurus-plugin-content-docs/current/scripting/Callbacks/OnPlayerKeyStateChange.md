@@ -1,5 +1,6 @@
 ---
 title: OnPlayerKeyStateChange
+sidebar_label: OnPlayerKeyStateChange
 description: Cette callback est appelée lorsqu'un joueur appuie / lâche une touche de son clavier (uniquement les touches supportées par SA:MP)
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: ApplyAnimation
+sidebar_label: ApplyAnimation
 description: Aplica uma animação a um jogador.
 ---
 

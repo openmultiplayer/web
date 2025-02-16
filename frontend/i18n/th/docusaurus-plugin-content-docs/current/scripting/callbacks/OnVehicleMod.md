@@ -1,5 +1,6 @@
 ---
 title: OnVehicleMod
+sidebar_label: OnVehicleMod
 description: This callback is called when a vehicle is modded.
 tags: ["vehicle"]
 ---

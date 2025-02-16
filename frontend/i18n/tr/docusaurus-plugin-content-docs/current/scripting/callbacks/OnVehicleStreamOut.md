@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: Bu geri çağırma, bir araç oyuncunun istemcisinden çıktığında (göremeyeceği kadar uzakta olduğunda) çağrılır.
 tags: ["vehicle"]
 ---

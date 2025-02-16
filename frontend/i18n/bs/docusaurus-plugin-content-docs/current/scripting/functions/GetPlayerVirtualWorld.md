@@ -1,5 +1,6 @@
 ---
 title: GetPlayerVirtualWorld
+sidebar_label: GetPlayerVirtualWorld
 description: Dohvaća trenutni virtualni svijet u kojem se igrač nalazi.
 tags: ["player"]
 ---

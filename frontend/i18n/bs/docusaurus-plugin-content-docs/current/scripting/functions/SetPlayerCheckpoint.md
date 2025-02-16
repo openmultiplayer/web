@@ -1,5 +1,6 @@
 ---
 title: SetPlayerCheckpoint
+sidebar_label: SetPlayerCheckpoint
 description: Postavi checkpoint (crveni cilindar) za igrača.
 tags: ["player", "checkpoint"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Scripting: Tags"
+sidebar_label: "Scripting: Tags"
 description: A guide for Tags, a type-like feature of the Pawn language providing safety features for working with values of different intent.
 ---
 

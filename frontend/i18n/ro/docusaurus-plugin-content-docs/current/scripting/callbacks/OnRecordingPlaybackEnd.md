@@ -1,5 +1,6 @@
 ---
 title: OnRecordingPlaybackEnd
+sidebar_label: OnRecordingPlaybackEnd
 description: Acest callback este apelat atunci când un fișier înregistrat care este reprodus cu NPCStartRecordingPlayback a ajuns la final.
 tags: []
 ---

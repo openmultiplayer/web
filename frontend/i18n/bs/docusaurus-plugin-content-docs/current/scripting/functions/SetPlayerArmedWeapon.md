@@ -1,5 +1,6 @@
 ---
 title: SetPlayerArmedWeapon
+sidebar_label: SetPlayerArmedWeapon
 description: Postavlja koje oružje (koje igrač posjeduje) igrač trenutno drži.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPickup
+sidebar_label: OnPlayerPickUpPickup
 description: Esta callback é chamada quando um jogador coleta um pickup criado com CreatePickup.
 tags: ["player"]
 ---

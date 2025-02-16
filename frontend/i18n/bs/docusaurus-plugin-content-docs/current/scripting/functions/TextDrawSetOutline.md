@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetOutline
+sidebar_label: TextDrawSetOutline
 description: Postavlja debljinu outline-a od texta u textdrawu.
 tags: ["textdraw"]
 ---

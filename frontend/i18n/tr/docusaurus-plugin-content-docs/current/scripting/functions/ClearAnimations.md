@@ -1,5 +1,6 @@
 ---
 title: ClearAnimations
+sidebar_label: ClearAnimations
 description: Oyuncunun uyguladığı bütün animasyonları ipta eder.
 tags: []
 ---

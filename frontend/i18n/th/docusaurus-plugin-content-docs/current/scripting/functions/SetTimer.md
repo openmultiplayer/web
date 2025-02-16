@@ -1,5 +1,6 @@
 ---
 title: SetTimer
+sidebar_label: SetTimer
 description: Sets a 'timer' to call a function after some time.
 tags: []
 ---

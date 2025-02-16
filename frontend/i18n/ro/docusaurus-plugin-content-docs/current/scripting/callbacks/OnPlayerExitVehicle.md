@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitVehicle
+sidebar_label: OnPlayerExitVehicle
 description: Acest callback este apelat atunci când un jucător începe să părăsească un vehicul.
 tags: ["player", "vehicle"]
 ---

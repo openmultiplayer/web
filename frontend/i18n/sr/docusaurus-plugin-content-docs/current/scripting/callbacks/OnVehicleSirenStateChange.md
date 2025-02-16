@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSirenStateChange
+sidebar_label: OnVehicleSirenStateChange
 description: Ова повратна функција се позива када се сирена на возилу укључи или искључи.
 tags: ["vehicle"]
 ---

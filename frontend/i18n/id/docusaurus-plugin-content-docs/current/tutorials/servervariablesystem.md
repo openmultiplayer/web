@@ -1,5 +1,6 @@
 ---
 title: Server variable system
+sidebar_label: Server variable system
 
 description: Server variable system (disingkat, SVar) adalah cara baru untung membuat server variabel dalam cara mudah membuat method yang efisien, dengan begitu cara ini bisa dipakai di gamemode server dan filterscripts dalam waktu bersamaan.
 ---

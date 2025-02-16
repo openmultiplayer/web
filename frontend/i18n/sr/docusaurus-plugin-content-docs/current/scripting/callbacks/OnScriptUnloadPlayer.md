@@ -1,5 +1,6 @@
 ---
 title: OnScriptUnloadPlayer
+sidebar_label: OnScriptUnloadPlayer
 description: Ова повратна функција се позива за сваког повезаног играча када се скрипта искључи.
 tags: ["player"]
 ---

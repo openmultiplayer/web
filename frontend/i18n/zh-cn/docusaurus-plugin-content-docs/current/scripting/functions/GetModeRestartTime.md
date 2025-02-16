@@ -1,5 +1,6 @@
 ---
 title: GetModeRestartTime
+sidebar_label: GetModeRestartTime
 description: Gets the delay between loading main scripts, in seconds.
 tags: []
 ---

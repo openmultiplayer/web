@@ -1,5 +1,6 @@
 ---
 title: OnPlayerObjectMoved
+sidebar_label: OnPlayerObjectMoved
 description: Cette callback est appelée quand l'objet d'un joueur a été déplacé après un MovePlayerObject (quand l'objet s'arrête de bouger).
 tags: ["player"]
 ---

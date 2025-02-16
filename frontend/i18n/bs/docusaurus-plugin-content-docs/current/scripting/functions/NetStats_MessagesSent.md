@@ -1,5 +1,6 @@
 ---
 title: NetStats_MessagesSent
+sidebar_label: NetStats_MessagesSent
 description: Dobija broj poruka koje je server poslao igraču za reprodukciju.
 tags: []
 ---

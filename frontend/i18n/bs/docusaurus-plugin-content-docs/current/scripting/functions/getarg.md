@@ -1,5 +1,6 @@
 ---
 title: getarg
+sidebar_label: getarg
 description: Dobij argument koji je proslijeđen funkciji.
 tags: []
 ---

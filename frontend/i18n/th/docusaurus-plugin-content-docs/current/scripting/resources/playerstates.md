@@ -1,5 +1,6 @@
 ---
 title: Player States
+sidebar_label: Player States
 description: A list of all the player states to be used with the GetPlayerState function or OnPlayerStateChange callback.
 tags: ["player"]
 sidebar_label: Player States

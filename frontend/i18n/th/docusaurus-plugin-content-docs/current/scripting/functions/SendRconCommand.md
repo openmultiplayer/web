@@ -1,5 +1,6 @@
 ---
 title: SendRconCommand
+sidebar_label: SendRconCommand
 description: Sends an RCON (Remote Console) command.
 tags: ["administration"]
 ---

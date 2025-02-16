@@ -1,5 +1,6 @@
 ---
 title: IsPlayerObjectMaterialSlotUsed
+sidebar_label: IsPlayerObjectMaterialSlotUsed
 description: Provjerava da li je slot player-objekta materijala zauzet.
 tags: ["player", "object", "playerobject"]
 ---

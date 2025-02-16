@@ -1,5 +1,6 @@
 ---
 title: 字符串操作
+sidebar_label: 字符串操作
 description: 关于所有字符串操作的初学者友好教程
 ---
 

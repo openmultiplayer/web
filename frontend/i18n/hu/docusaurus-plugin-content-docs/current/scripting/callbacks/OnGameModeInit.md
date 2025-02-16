@@ -1,5 +1,6 @@
 ---
 title: OnGameModeInit
+sidebar_label: OnGameModeInit
 description: Ez a visszahívás akkor indul el, amikor a játékmód elindul.
 tags: []
 ---

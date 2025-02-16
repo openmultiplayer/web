@@ -1,5 +1,6 @@
 ---
 title: clamp
+sidebar_label: clamp
 description: Forsira vrijednost da bude unutar raspona.
 tags: []
 ---

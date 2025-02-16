@@ -1,5 +1,6 @@
 ---
 title: CreatePickup
+sidebar_label: CreatePickup
 description: Ova funkcija radi u potpunosti isto kao i AddStaticPickup, osim što returna (vraća) ID pickupa koji se može upotrijebiti za njegovo uništavanje nakon čega se može pratiti pomoću OnPlayerPickUpPickup.
 tags: []
 ---

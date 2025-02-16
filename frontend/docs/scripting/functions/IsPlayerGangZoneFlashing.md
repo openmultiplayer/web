@@ -1,5 +1,6 @@
 ---
 title: IsPlayerGangZoneFlashing
+sidebar_label: IsPlayerGangZoneFlashing
 description: Check if the player gangzone is flashing
 tags: ["player", "gangzone", "playergangzone"]
 ---

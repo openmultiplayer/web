@@ -1,5 +1,6 @@
 ---
 title: fblockread
+sidebar_label: fblockread
 description: Ova funkcija vam omogućuje čitanje podataka iz datoteke, bez kodiranja i završetaka linije.
 tags: []
 ---

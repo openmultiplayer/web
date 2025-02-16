@@ -1,5 +1,6 @@
 ---
 title: RemovePlayerAttachedObject
+sidebar_label: RemovePlayerAttachedObject
 description: Remove an attached object from a player.
 tags: ["player", "object", "attachment"]
 ---

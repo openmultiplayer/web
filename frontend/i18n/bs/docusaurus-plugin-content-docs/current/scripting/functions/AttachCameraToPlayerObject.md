@@ -1,5 +1,6 @@
 ---
 title: AttachCameraToPlayerObject
+sidebar_label: AttachCameraToPlayerObject
 description: Prikvači kameru igrača za player objekat.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnScriptUnloadPlayer
+sidebar_label: OnScriptUnloadPlayer
 description: This callback is called for each connected player when a script is unloaded.
 tags: ["player"]
 ---

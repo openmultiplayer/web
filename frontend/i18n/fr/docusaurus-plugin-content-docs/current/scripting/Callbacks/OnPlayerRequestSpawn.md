@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestSpawn
+sidebar_label: OnPlayerRequestSpawn
 description: Appelée lorsqu'un joueur clique sur le bouton "spawn" lors de la sélection de classe.
 tags: ["player"]
 ---

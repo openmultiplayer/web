@@ -1,5 +1,6 @@
 ---
 title: KillTimer
+sidebar_label: KillTimer
 description: Ubija (stopira) pokrenuti tajmer.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GangZoneHideForAll
+sidebar_label: GangZoneHideForAll
 description: GangZoneHideForAll sakriva gangzonu za sve igrače.
 tags: ["gangzone"]
 ---

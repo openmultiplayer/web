@@ -1,5 +1,6 @@
 ---
 title: ChangeVehiclePaintjob
+sidebar_label: ChangeVehiclePaintjob
 description: Baguhin ang paintjob ng sasakyan (para sa mga payak na kulay tingnan ang ChangeVehicleColor).
 tags: ["vehicle"]
 ---

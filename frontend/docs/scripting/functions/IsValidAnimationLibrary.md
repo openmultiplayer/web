@@ -1,5 +1,6 @@
 ---
 title: IsValidAnimationLibrary
+sidebar_label: IsValidAnimationLibrary
 description: Checks if the given animation library is valid.
 tags: ["animation"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetActorVirtualWorld
+sidebar_label: SetActorVirtualWorld
 description: Set the virtual world of an actor.
 tags: ["actor"]
 ---

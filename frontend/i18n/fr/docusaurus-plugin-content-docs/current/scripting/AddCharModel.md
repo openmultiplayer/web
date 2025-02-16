@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description: Ajoute un nouveau skin de joueur à télécharger
 tags: []
 ---

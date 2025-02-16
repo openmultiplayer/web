@@ -1,5 +1,6 @@
 ---
 title: deleteproperty
+sidebar_label: deleteproperty
 description: Delete an earlier set property (setproperty).
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnRconLoginAttempt
+sidebar_label: OnRconLoginAttempt
 description: Ова повратна функција се позива када неко покуша да се пријави на RCON у игри; било успешно или не.
 tags: ["rcon", "administration"]
 ---

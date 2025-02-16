@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStateChange
+sidebar_label: OnPlayerStateChange
 description: Esta callback é chamada quando o estado de um jogador muda.
 tags: ["player"]
 ---

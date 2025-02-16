@@ -1,5 +1,6 @@
 ---
 title: SetPlayerVirtualWorld
+sidebar_label: SetPlayerVirtualWorld
 description: Set the virtual world of a player.
 tags: ["player"]
 ---

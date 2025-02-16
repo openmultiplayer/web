@@ -1,5 +1,6 @@
 ---
 title: PlayAudioStreamForPlayer
+sidebar_label: PlayAudioStreamForPlayer
 description: Play an 'audio stream' for a player.
 tags: ["player"]
 ---

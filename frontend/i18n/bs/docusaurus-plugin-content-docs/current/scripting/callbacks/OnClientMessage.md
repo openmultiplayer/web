@@ -1,5 +1,6 @@
 ---
 title: OnClientMessage
+sidebar_label: OnClientMessage
 description: Ovaj callback se poziva kada god NPC vidi ClientMessage.
 tags: []
 ---

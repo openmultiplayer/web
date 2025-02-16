@@ -1,5 +1,6 @@
 ---
 title: db_num_fields
+sidebar_label: db_num_fields
 description: Dobija broj polja iz skupa rezultata dodijeljen s `db_query`.
 keywords:
   - sqlite

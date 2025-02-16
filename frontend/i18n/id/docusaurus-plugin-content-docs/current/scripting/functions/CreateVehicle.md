@@ -1,5 +1,6 @@
 ---
 title: CreateVehicle
+sidebar_label: CreateVehicle
 description: Membuat kendaraan di dunia.
 tags: ["vehicle"]
 ---

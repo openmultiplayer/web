@@ -1,5 +1,6 @@
 ---
 title: OnGameModeExit
+sidebar_label: OnGameModeExit
 description: Ова повратна функција се позива када се гамемоде заврши, било да је то преко gmx, затварања сервера или GameModeExit.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPlayerPickup
+sidebar_label: OnPlayerPickUpPlayerPickup
 description: Ce rappel est appelé lorsqu'un joueur ramasse un objet joueur-pickup créé avec CreatePlayerPickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

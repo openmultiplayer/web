@@ -1,5 +1,6 @@
 ---
 title: CreateActor
+sidebar_label: CreateActor
 description: Statik aktör oluşturma.
 tags: []
 ---

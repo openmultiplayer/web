@@ -1,5 +1,6 @@
 ---
 title: strcat
+sidebar_label: strcat
 description: Fungsi ini menggabungkan dua buah string menjadi sebuah string.
 tags: ["string"]
 ---

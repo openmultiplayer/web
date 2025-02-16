@@ -1,5 +1,6 @@
 ---
 title: ftemp
+sidebar_label: ftemp
 description: Stvara datoteku u "tmp", "temp" ili root direktorijumu sa slučajnim imenom za čitanje i pisanje.
 tags: []
 ---

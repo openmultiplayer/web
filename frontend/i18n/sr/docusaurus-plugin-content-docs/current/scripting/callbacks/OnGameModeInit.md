@@ -1,5 +1,6 @@
 ---
 title: OnGameModeInit
+sidebar_label: OnGameModeInit
 description: Ова повратна функција се активира када се гамемоде покрене.
 tags: []
 ---

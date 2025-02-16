@@ -1,5 +1,6 @@
 ---
 title: ID-urile de vreme
+sidebar_label: ID-urile de vreme
 ---
 
 Se foloseste in [SetWeather](../functions/SetWeather) si [SetPlayerWeather](../functions/SetPlayerWeather).

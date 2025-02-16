@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClass
+sidebar_label: AddPlayerClass
 description: Adds a class to class selection.
 tags: ["player"]
 ---

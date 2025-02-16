@@ -1,5 +1,6 @@
 ---
 title: Vehicle IDs
+sidebar_label: Vehicle IDs
 description: A complete list of vehicle IDs.
 ---
 

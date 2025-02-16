@@ -1,5 +1,6 @@
 ---
 title: SetPlayerScore
+sidebar_label: SetPlayerScore
 description: Postavite rezultat (score) igrača.
 tags: ["player"]
 ---

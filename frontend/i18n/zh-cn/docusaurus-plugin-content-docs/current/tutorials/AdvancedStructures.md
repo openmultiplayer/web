@@ -1,5 +1,6 @@
 ---
 title: "Advanced Structures"
+sidebar_label: "Advanced Structures"
 ---
 
 ## 数组操作

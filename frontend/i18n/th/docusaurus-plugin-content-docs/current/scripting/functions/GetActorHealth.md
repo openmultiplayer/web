@@ -1,5 +1,6 @@
 ---
 title: GetActorHealth
+sidebar_label: GetActorHealth
 description: Get the health of an actor.
 tags: []
 ---

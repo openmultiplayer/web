@@ -1,5 +1,6 @@
 ---
 title: floatsqroot
+sidebar_label: floatsqroot
 description: Izračunava kvadratni korijen zadate vrijednosti.
 tags: []
 ---

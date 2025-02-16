@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsForPlayer
+sidebar_label: SetVehicleParamsForPlayer
 description: Postavi parametre vozila za igrača.
 tags: ["player", "vehicle"]
 ---

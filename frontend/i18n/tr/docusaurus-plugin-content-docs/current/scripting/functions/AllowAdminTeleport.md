@@ -1,5 +1,6 @@
 ---
 title: AllowAdminTeleport
+sidebar_label: AllowAdminTeleport
 description: Bu fonksiyon RCON olan kişilerin nokta seçtiğinde ışınlanıp ışınlanamayacağına karar vermenizi sağlar.
 tags: []
 ---

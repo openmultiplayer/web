@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetSelectable
+sidebar_label: TextDrawSetSelectable
 description: Postavlja da li se textdraw može selektovati (kliknuti) ili ne.
 tags: ["textdraw"]
 ---

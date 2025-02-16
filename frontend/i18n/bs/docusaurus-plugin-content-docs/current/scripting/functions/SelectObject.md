@@ -1,5 +1,6 @@
 ---
 title: SelectObject
+sidebar_label: SelectObject
 description: Prikaži miš i dozvoli igraču da selektuje objekat.
 tags: []
 ---

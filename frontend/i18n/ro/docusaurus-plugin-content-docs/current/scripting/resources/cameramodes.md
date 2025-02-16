@@ -1,5 +1,6 @@
 ---
 title: Modurile camerei
+sidebar_label: Modurile camerei
 ---
 
 ## Descriere

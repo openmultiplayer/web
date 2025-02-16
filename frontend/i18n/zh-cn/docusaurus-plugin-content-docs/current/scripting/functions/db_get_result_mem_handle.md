@@ -1,5 +1,6 @@
 ---
 title: db_get_result_mem_handle
+sidebar_label: db_get_result_mem_handle
 description: Gets the memory handle for a SQLite database result set that was allocated with `db_query`.
 keywords:
   - sqlite

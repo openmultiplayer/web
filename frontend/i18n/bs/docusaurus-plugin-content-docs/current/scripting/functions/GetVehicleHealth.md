@@ -1,5 +1,6 @@
 ---
 title: GetVehicleHealth
+sidebar_label: GetVehicleHealth
 description: Dobij healthe vozila.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawColour
+sidebar_label: TextDrawColour
 description: Sets the text colour of a textdraw.
 tags: ["textdraw"]
 ---

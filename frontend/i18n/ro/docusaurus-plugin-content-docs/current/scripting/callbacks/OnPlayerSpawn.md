@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSpawn
+sidebar_label: OnPlayerSpawn
 description: Acest callback este apelat atunci când apare un jucător.
 tags: ["player"]
 ---

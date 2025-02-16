@@ -1,5 +1,6 @@
 ---
 title: "Anahtar Kelimeler: İfadeler"
+sidebar_label: "Anahtar Kelimeler: İfadeler"
 ---
 
 

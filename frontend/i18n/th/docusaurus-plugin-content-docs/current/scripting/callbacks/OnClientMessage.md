@@ -1,5 +1,6 @@
 ---
 title: OnClientMessage
+sidebar_label: OnClientMessage
 description: Callback นี้ถูกเรียกเมื่อ NPC เห็น ClientMessage
 
 tags: []

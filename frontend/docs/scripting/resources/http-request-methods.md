@@ -1,5 +1,6 @@
 ---
 title: HTTP Request Methods
+sidebar_label: HTTP Request Methods
 description: Types of HTTP request.
 ---
 

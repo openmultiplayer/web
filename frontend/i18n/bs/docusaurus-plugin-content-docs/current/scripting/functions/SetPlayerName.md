@@ -1,5 +1,6 @@
 ---
 title: SetPlayerName
+sidebar_label: SetPlayerName
 description: Postavlja ime igrača.
 tags: ["player"]
 ---

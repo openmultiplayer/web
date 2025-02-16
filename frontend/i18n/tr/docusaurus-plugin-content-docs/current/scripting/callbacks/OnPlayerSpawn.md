@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSpawn
+sidebar_label: OnPlayerSpawn
 description: Bu fonksiyon, oyuncu doğduğunda çağrılır.
 tags: ["player"]
 ---

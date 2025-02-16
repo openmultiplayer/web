@@ -1,5 +1,6 @@
 ---
 title: GetPlayerCustomSkin
+sidebar_label: GetPlayerCustomSkin
 description: Returns the class of the players custom skin downloaded from the server.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawIsProportional
+sidebar_label: TextDrawIsProportional
 description: Checks if a textdraw is proportional.
 tags: ["textdraw"]
 ---

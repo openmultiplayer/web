@@ -1,5 +1,6 @@
 ---
 title: db_free_result
+sidebar_label: db_free_result
 description: Frees result memory allocated from db_query.
 keywords:
   - sqlite

@@ -1,5 +1,6 @@
 ---
 title: SetVehicleNumberPlate
+sidebar_label: SetVehicleNumberPlate
 description: Postavite registarsku tablicu vozila.
 tags: ["vehicle"]
 ---

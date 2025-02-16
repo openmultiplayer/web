@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: این کالبک زمانی فرا خوانده می شود که یک بازیکن یک دستور را در پنجره کلاینت وارد کند.
 tags: ["player"]
 ---

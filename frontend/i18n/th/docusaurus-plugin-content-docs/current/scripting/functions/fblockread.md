@@ -1,5 +1,6 @@
 ---
 title: fblockread
+sidebar_label: fblockread
 description: This function allows you to read data from a file, without encoding and line terminators.
 tags: []
 ---

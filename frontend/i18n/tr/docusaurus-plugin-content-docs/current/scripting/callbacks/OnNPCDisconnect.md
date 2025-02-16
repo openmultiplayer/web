@@ -1,5 +1,6 @@
 ---
 title: OnNPCDisconnect
+sidebar_label: OnNPCDisconnect
 description: Bu geri çağırma, NPC sunucudan bağlantısı kesildiğinde çağrılır.
 tags: ["npc"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetServerRuleFlags
+sidebar_label: SetServerRuleFlags
 description: Sets the flags of a server rule.
 tags: ["rule"]
 ---

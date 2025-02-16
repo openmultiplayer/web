@@ -1,5 +1,6 @@
 ---
 title: SetPlayerPickupType
+sidebar_label: SetPlayerPickupType
 description: Sets the type of a player-pickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

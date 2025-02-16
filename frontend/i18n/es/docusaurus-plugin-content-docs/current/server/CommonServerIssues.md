@@ -1,5 +1,6 @@
 ---
 title: Problemas Comunes
+sidebar_label: Problemas Comunes
 ---
 
 ## El servidor se bloquea instantáneamente al iniciarse

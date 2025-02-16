@@ -1,5 +1,6 @@
 ---
 title: EnableTirePopping
+sidebar_label: EnableTirePopping
 description: With this function you can enable or disable tire popping.
 tags: []
 ---

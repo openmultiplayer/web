@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetLetterSize
+sidebar_label: PlayerTextDrawGetLetterSize
 description: Gets the width and height of the letters.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

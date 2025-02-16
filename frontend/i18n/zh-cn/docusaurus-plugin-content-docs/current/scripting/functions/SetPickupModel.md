@@ -1,5 +1,6 @@
 ---
 title: SetPickupModel
+sidebar_label: SetPickupModel
 description: Sets the model of a pickup.
 tags: ["pickup"]
 ---

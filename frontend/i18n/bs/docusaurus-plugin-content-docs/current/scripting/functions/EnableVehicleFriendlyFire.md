@@ -1,5 +1,6 @@
 ---
 title: EnableVehicleFriendlyFire
+sidebar_label: EnableVehicleFriendlyFire
 description: Omogućite "friendly-fire" za timska vozila.
 tags: ["vehicle"]
 ---

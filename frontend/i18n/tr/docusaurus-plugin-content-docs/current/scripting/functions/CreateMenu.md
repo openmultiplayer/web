@@ -1,5 +1,6 @@
 ---
 title: CreateMenu
+sidebar_label: CreateMenu
 description: Menü oluşturma.
 tags: ["menu"]
 ---

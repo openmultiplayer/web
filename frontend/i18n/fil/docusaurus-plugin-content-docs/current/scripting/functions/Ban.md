@@ -1,5 +1,6 @@
 ---
 title: Ban
+sidebar_label: Ban
 description: I-ban ang isang manlalaro na kasalukuyang nasa server.
 tags: ["administration"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayer
+sidebar_label: OnPlayerClickPlayer
 description: Poziva se kada igrač dva puta klikne na igrača na scoreboard-u (TAB).
 tags: ["player"]
 ---

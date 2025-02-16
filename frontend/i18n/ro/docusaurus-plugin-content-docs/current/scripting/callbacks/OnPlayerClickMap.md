@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: OnPlayerClickMap este apelat atunci când un jucător plasează o țintă/un punct de referință pe harta meniului de pauză (făcând clic dreapta).
 tags: ["player"]
 ---

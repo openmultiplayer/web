@@ -1,5 +1,6 @@
 ---
 title: SetNameTagDrawDistance
+sidebar_label: SetNameTagDrawDistance
 description: Postavi maksimalnu distancu sa koje se prikazuju imena igrača.
 tags: []
 ---

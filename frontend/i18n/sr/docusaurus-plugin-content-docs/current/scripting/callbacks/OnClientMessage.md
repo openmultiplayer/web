@@ -1,5 +1,6 @@
 ---
 title: OnClientMessage
+sidebar_label: OnClientMessage
 description: Ова повратна функција је позван када год NPC види клијент поруку (ClientMessage).
 tags: []
 ---

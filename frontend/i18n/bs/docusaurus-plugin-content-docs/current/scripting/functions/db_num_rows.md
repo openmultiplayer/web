@@ -1,5 +1,6 @@
 ---
 title: db_num_rows
+sidebar_label: db_num_rows
 description: Vraća broj redaka iz db_query.
 keywords:
   - sqlite

@@ -1,5 +1,6 @@
 ---
 title: GetConsoleVarAsBool
+sidebar_label: GetConsoleVarAsBool
 description: Dobij bool(ean) vrijednost varijable iz konzole.
 tags: []
 ---

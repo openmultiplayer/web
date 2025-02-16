@@ -1,5 +1,6 @@
 ---
 title: OnIncomingConnection
+sidebar_label: OnIncomingConnection
 description: Ta "callback" se pokliče, ko se naslov IP poskuša povezati s strežnikom.
 tags: []
 ---

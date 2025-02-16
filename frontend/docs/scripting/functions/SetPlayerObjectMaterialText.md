@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectMaterialText
+sidebar_label: SetPlayerObjectMaterialText
 description: Replace the texture of a player object with text.
 tags: ["player", "object", "playerobject"]
 ---

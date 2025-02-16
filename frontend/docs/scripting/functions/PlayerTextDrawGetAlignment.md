@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetAlignment
+sidebar_label: PlayerTextDrawGetAlignment
 description: Gets the text alignment of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

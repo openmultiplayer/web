@@ -1,5 +1,6 @@
 ---
 title: Modovi Kamere
+sidebar_label: Modovi Kamere
 ---
 
 ## Deskripcija

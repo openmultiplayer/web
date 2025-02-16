@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterCheckpoint
+sidebar_label: OnPlayerEnterCheckpoint
 description: Ова функција се позива када играч уђе у контролни поен постављен за тог играча.
 tags: ["player", "checkpoint"]
 ---

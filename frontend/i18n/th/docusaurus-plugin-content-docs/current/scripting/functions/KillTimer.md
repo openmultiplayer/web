@@ -1,5 +1,6 @@
 ---
 title: KillTimer
+sidebar_label: KillTimer
 description: Kills (stops) a running timer.
 tags: []
 ---

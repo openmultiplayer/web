@@ -1,5 +1,6 @@
 ---
 title: "Keys"
+sidebar_label: "Keys"
 ---
 
 :::note

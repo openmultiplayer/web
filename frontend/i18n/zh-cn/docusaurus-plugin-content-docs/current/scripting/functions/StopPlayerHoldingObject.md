@@ -1,5 +1,6 @@
 ---
 title: StopPlayerHoldingObject
+sidebar_label: StopPlayerHoldingObject
 description: Removes attached objects.
 tags: ["player"]
 ---

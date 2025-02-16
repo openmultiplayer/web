@@ -1,5 +1,6 @@
 ---
 title: AddVehicleComponent
+sidebar_label: AddVehicleComponent
 description: Nagdaragdag ng 'bahagi' (madalas na tinutukoy bilang 'mod' (pagbabago)) sa isang sasakyan.
 tags: ["vehicle"]
 ---

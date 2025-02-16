@@ -1,5 +1,6 @@
 ---
 title: Markdown page example
+sidebar_label: Markdown page example
 ---
 
 # Markdown page example

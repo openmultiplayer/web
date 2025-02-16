@@ -1,5 +1,6 @@
 ---
 title: GameTextForPlayer
+sidebar_label: GameTextForPlayer
 description: Prikazuje 'game text' (tekst na ekranu) određeno vrijeme za određenog igrača.
 tags: ["player"]
 ---

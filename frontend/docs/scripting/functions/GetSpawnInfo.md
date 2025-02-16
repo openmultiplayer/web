@@ -1,5 +1,6 @@
 ---
 title: GetSpawnInfo
+sidebar_label: GetSpawnInfo
 description: Return the current spawn data for a player, where they will spawn next.
 tags: ["player"]
 ---

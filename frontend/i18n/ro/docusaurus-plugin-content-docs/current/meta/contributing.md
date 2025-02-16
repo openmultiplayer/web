@@ -1,5 +1,6 @@
 ---
 title: Contribuire
+sidebar_label: Contribuire
 description: Cum să contribui la SA-MP Wiki și la documentația open.mp
 ---
 

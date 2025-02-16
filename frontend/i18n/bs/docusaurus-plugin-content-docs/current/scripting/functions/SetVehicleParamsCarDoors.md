@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsCarDoors
+sidebar_label: SetVehicleParamsCarDoors
 description: Dozvoljava ti da otvoriš i zatvoriš vrata vozila.
 tags: ["vehicle"]
 ---

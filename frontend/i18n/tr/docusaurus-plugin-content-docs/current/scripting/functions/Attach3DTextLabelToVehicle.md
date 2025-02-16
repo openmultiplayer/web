@@ -1,5 +1,6 @@
 ---
 title: Attach3DTextLabelToVehicle
+sidebar_label: Attach3DTextLabelToVehicle
 description: Bir araca 3D text label bağlar.
 tags: ["vehicle", "3dtextlabel"]
 ---

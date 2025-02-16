@@ -1,5 +1,6 @@
 ---
 title: SpawnPlayer
+sidebar_label: SpawnPlayer
 description: (Re)Spawns a player.
 tags: ["player"]
 ---

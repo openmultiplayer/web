@@ -1,5 +1,6 @@
 ---
 title: OnPlayerUpdate
+sidebar_label: OnPlayerUpdate
 description: Ова повратна функција се позива сваки пут када клијент/играч ажурира сервер са својим статусом.
 tags: ["player"]
 ---

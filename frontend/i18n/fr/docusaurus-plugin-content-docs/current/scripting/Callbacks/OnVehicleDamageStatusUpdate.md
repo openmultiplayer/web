@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDamageStatusUpdate
+sidebar_label: OnVehicleDamageStatusUpdate
 description: Cette callback est appelée lorsqu'un élément de véhicule - tel que les portes ou les phares - sont endommagés.
 tags: ["vehicle"]
 ---

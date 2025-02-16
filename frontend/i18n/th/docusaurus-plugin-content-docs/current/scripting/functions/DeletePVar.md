@@ -1,5 +1,6 @@
 ---
 title: DeletePVar
+sidebar_label: DeletePVar
 description: Deletes a previously set player variable.
 tags: ["pvar"]
 ---

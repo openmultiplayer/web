@@ -1,5 +1,6 @@
 ---
 title: GetConsoleVarAsInt
+sidebar_label: GetConsoleVarAsInt
 description: Get the integer value of a console variable.
 tags: []
 ---

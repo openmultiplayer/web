@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSkin
+sidebar_label: GetPlayerSkin
 description: Vraća klasu skina igrača.
 tags: ["player"]
 ---

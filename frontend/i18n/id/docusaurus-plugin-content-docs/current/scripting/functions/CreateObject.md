@@ -1,5 +1,6 @@
 ---
 title: CreateObject
+sidebar_label: CreateObject
 description: Membuat Object pada koordinat tertentu di dalam game.
 tags: []
 ---

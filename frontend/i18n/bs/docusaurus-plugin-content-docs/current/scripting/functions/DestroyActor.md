@@ -1,5 +1,6 @@
 ---
 title: DestroyActor
+sidebar_label: DestroyActor
 description: Uništi aktora koji je kreiran sa CreateActor.
 tags: []
 ---

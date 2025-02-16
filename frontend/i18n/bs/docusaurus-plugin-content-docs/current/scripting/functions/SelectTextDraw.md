@@ -1,5 +1,6 @@
 ---
 title: SelectTextDraw
+sidebar_label: SelectTextDraw
 description: Prikaži miš i dozvoli igraču da selektuje textdraw.
 tags: ["textdraw"]
 ---

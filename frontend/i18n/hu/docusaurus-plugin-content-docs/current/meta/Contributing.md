@@ -1,5 +1,6 @@
 ---
 title: Hozzájárulás
+sidebar_label: Hozzájárulás
 description: Hogyan járulhatok hozzá az SA-MP Wiki és az open.mp dokumentációhoz.
 ---
 
@@ -81,6 +82,7 @@ Az első dolog _bármilyen_ dokumentumról legyen szó, itt kell lennie a metaad
 ```mdx
 ---
 title: A dokumentációm címe
+sidebar_label: A dokumentációm címe
 description: A dokumentációm leírása.
 ---
 ```

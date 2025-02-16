@@ -1,5 +1,6 @@
 ---
 title: SetObjectMaterialText
+sidebar_label: SetObjectMaterialText
 description: Zamijeni teksturu objekta sa tekstom.
 tags: []
 ---

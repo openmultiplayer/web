@@ -1,5 +1,6 @@
 ---
 title: SetVehicleAngularVelocity
+sidebar_label: SetVehicleAngularVelocity
 description: Postavlja ugaonu brzinu X, Y i Z vozila.
 tags: ["vehicle"]
 ---

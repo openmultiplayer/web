@@ -1,5 +1,6 @@
 ---
 title: GetAnimationName
+sidebar_label: GetAnimationName
 description: Dobij library/ime animacije za indeks.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: FindTextureFileNameFromCRC
+sidebar_label: FindTextureFileNameFromCRC
 description: Maghanap ng umiiral nang custom skin o simple object texture file.
 tags: []
 ---

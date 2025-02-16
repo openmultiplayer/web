@@ -1,5 +1,6 @@
 ---
 title: SetPlayerCheckpoint
+sidebar_label: SetPlayerCheckpoint
 description: Sets a checkpoint (red cylinder) for a player.
 tags: ["player", "checkpoint"]
 ---

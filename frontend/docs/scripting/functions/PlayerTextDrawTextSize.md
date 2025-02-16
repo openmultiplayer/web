@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawTextSize
+sidebar_label: PlayerTextDrawTextSize
 description: Change the size of a player-textdraw (box if PlayerTextDrawUseBox is enabled and/or clickable area for use with PlayerTextDrawSetSelectable).
 tags: ["player", "textdraw", "playertextdraw"]
 ---

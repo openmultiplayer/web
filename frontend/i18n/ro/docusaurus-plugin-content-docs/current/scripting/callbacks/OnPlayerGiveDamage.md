@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamage
+sidebar_label: OnPlayerGiveDamage
 description: Acest callback este apelat atunci când un jucător dă daune altui jucător.
 tags: ["player"]
 ---

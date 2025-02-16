@@ -1,5 +1,6 @@
 ---
 title: GetVehicleHealth
+sidebar_label: GetVehicleHealth
 description: Get the health of a vehicle.
 tags: ["vehicle"]
 ---

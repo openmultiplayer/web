@@ -1,5 +1,6 @@
 ---
 title: SetObjectsDefaultCameraCollision
+sidebar_label: SetObjectsDefaultCameraCollision
 description: Allows camera collisions with newly created objects to be disabled by default.
 tags: ["object", "camera"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: HasVehicleBeenOccupied
+sidebar_label: HasVehicleBeenOccupied
 description: Check if a vehicle is occupied.
 tags: ["vehicle"]
 ---

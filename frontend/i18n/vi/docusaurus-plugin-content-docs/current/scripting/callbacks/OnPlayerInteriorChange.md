@@ -1,5 +1,6 @@
 ---
 title: OnPlayerInteriorChange
+sidebar_label: OnPlayerInteriorChange
 description: Callback này được gọi khi một người chơi thay đổi nội thất.
 tags: ["player"]
 ---

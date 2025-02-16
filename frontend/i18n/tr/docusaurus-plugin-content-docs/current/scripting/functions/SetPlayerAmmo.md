@@ -1,5 +1,6 @@
 ---
 title: SetPlayerAmmo
+sidebar_label: SetPlayerAmmo
 description: Oyuncunun silah mermisini ayarlama.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: PlayerPlaySound
+sidebar_label: PlayerPlaySound
 description: Plays the specified sound for a player.
 tags: ["player"]
 ---

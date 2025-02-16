@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetTextSize
+sidebar_label: PlayerTextDrawGetTextSize
 description: Gets the X axis and Y axis of the player-textdraw text size.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

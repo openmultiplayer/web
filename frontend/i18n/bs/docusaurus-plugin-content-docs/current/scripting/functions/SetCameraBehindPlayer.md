@@ -1,5 +1,6 @@
 ---
 title: SetCameraBehindPlayer
+sidebar_label: SetCameraBehindPlayer
 description: Vratite kameru na mjesto iza igrača nakon upotrebe funkcije poput SetPlayerCameraPos.
 tags: ["player"]
 ---

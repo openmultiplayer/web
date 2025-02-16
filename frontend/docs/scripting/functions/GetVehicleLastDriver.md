@@ -1,5 +1,6 @@
 ---
 title: GetVehicleLastDriver
+sidebar_label: GetVehicleLastDriver
 description: Get the last driver of a vehicle.
 tags: ["vehicle"]
 ---

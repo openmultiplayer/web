@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestDownload
+sidebar_label: OnPlayerRequestDownload
 description: Fonksiyon, bir oyuncu özel model indirmeleri istediğinde çağrılır.
 tags: ["player"]
 ---

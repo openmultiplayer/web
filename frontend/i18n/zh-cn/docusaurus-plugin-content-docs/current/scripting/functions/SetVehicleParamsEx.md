@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsEx
+sidebar_label: SetVehicleParamsEx
 description: Sets a vehicle's parameters for all players.
 tags: ["vehicle"]
 ---

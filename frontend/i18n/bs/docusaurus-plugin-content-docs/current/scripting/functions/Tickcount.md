@@ -1,5 +1,6 @@
 ---
 title: tickcount
+sidebar_label: tickcount
 description: Ova se funkcija može koristiti kao zamjena za GetTickCount, jer vraća broj milisekundi od pokretanja poslužitelja.
 tags: []
 ---

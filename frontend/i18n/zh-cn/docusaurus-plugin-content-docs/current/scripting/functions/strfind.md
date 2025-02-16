@@ -1,5 +1,6 @@
 ---
 title: strfind
+sidebar_label: strfind
 description: Search for a sub string in a string.
 tags: ["string"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetMaxPlayers
+sidebar_label: GetMaxPlayers
 description: Returna maksimalni broj igrača koji se mogu pridružiti serveru, određeno varijablom servera 'maxplayers'
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Commandes client"
+sidebar_label: "Commandes client"
 descripion: Liste de toutes les commandes côté client.
 ---
 

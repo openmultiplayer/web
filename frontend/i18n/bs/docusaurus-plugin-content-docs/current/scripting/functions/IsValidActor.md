@@ -1,5 +1,6 @@
 ---
 title: IsValidActor
+sidebar_label: IsValidActor
 description: Provjerava ako je ID aktora važeći.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawLetterSize
+sidebar_label: TextDrawLetterSize
 description: Postavlja širinu i visinu slova.
 tags: ["textdraw"]
 ---

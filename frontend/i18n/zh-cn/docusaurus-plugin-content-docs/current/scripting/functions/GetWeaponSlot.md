@@ -1,5 +1,6 @@
 ---
 title: GetWeaponSlot
+sidebar_label: GetWeaponSlot
 description: Gets the slot of one weapon.
 tags: ["weapon"]
 ---

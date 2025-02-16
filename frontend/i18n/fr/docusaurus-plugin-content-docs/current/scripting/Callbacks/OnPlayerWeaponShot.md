@@ -1,5 +1,6 @@
 ---
 title: OnPlayerWeaponShot
+sidebar_label: OnPlayerWeaponShot
 description: Cette fonction est appelée lorsqu'un joueur tire avec une arme à feu.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPVarNameAtIndex
+sidebar_label: GetPVarNameAtIndex
 description: Dohvatite ime pVara igrača putem indeksa.
 tags: ["pvar"]
 ---

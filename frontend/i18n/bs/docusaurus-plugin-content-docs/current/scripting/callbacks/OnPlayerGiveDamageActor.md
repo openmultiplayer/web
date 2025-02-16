@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamageActor
+sidebar_label: OnPlayerGiveDamageActor
 description: Ovaj callback je pozvan kada igrač nanese povredu aktoru.
 tags: ["player"]
 ---

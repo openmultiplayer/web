@@ -1,5 +1,6 @@
 ---
 title: GetPlayerFacingAngle
+sidebar_label: GetPlayerFacingAngle
 description: Obtém o ângulo que um jogador está voltado (rotação Z).
 tags: []
 ---

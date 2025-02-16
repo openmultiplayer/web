@@ -1,5 +1,6 @@
 ---
 title: UseGangZoneCheck
+sidebar_label: UseGangZoneCheck
 description: Enables the callback when a player enters/leaves this zone
 tags: ["player", "gangzone"]
 ---

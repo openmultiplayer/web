@@ -1,5 +1,6 @@
 ---
 title: GetSVarFloat
+sidebar_label: GetSVarFloat
 description: Dobija float vrijednost server varijable.
 tags: []
 ---

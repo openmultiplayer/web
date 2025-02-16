@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInAnyVehicle
+sidebar_label: IsPlayerInAnyVehicle
 description: Check if a player is inside any vehicle (as a driver or passenger).
 tags: ["player", "vehicle"]
 ---

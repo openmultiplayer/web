@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: Executada quando um jogador pré-visualiza um paintjob na garagem (modshop).
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Textdraws
+sidebar_label: Textdraws
 description: As the name implies, a textdraw is text that is drawn on a player's screen.
 sidebar_label: Textdraws
 ---

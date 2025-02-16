@@ -1,5 +1,6 @@
 ---
 title: OnPlayerKeyStateChange
+sidebar_label: OnPlayerKeyStateChange
 description: Esta callback é chamada quando o estado de qualquer tecla suportada muda (pressionado/solto)
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawAlignment
+sidebar_label: PlayerTextDrawAlignment
 description: Postavlja poravnanje teksta player-textdrawa.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

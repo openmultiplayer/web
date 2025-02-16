@@ -1,5 +1,6 @@
 ---
 title: OnRconCommand
+sidebar_label: OnRconCommand
 description: This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
 tags: ["rcon", "administration"]
 ---

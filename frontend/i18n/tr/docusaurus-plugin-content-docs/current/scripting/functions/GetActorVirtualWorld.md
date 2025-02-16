@@ -1,5 +1,6 @@
 ---
 title: GetActorVirtualWorld
+sidebar_label: GetActorVirtualWorld
 description: Aktörün sanal dünya değerini kontrol etme.
 tags: []
 ---

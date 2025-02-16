@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawUseBox
+sidebar_label: PlayerTextDrawUseBox
 description: Toggle the box on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerCameraTargetActor
+sidebar_label: GetPlayerCameraTargetActor
 description: Oyuncunun baktığı aktörün (herhangi bir aktörün) ID'sini çekme.
 tags: ["player", "camera", "actor"]
 ---

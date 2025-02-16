@@ -1,5 +1,6 @@
 ---
 title: fputchar
+sidebar_label: fputchar
 description: Napišite jedan znak u datoteku.
 tags: []
 ---

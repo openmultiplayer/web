@@ -1,5 +1,6 @@
 ---
 title: GetObjectModel
+sidebar_label: GetObjectModel
 description: Dobij ID modela određenog objekta (CreateObject).
 tags: []
 ---

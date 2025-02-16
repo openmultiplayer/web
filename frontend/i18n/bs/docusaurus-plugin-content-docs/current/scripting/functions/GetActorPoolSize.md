@@ -1,5 +1,6 @@
 ---
 title: GetActorPoolSize
+sidebar_label: GetActorPoolSize
 description: Dobij najviši actorid kreiran na serveru.
 tags: ["actor"]
 ---

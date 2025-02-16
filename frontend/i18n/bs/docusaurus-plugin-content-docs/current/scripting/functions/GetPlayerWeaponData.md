@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWeaponData
+sidebar_label: GetPlayerWeaponData
 description: Dobij oružje i streljivo u određenom igračevom slotu oružja (npr. oružje u 'SMG' slotu).
 tags: ["player"]
 ---

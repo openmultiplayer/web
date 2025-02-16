@@ -1,5 +1,6 @@
 ---
 title: 插件开发指南
+sidebar_label: 插件开发指南
 description: 关于插件开发的指南
 ---
 

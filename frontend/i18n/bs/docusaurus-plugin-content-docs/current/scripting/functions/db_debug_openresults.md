@@ -1,5 +1,6 @@
 ---
 title: db_debug_openresults
+sidebar_label: db_debug_openresults
 description: Dobiva broj rezultata otvorene databaze.
 keywords:
   - sqlite

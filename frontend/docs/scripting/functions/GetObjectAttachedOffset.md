@@ -1,5 +1,6 @@
 ---
 title: GetObjectAttachedOffset
+sidebar_label: GetObjectAttachedOffset
 description: Get the attachment offset and rotation of an object.
 tags: ["object"]
 ---

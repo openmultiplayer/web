@@ -1,5 +1,6 @@
 ---
 title: SendClientMessage
+sidebar_label: SendClientMessage
 description: این تابع با یک رنگ انتخاب شده در چت پیامی را به یک بازیکن خاص ارسال می کند.
 tags: []
 ---

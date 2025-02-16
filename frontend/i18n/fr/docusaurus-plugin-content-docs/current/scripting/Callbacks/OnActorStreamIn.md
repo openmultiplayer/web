@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Cette fonction est appelée quand un actor est chargé (devient visible) pour un joueur.
 tags: [actors, actorstream, forplayerid, actorid]
 ---

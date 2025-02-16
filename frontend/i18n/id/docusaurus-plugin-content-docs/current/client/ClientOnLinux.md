@@ -1,5 +1,6 @@
 ---
 title: "Open.MP Klien di linux"
+sidebar_label: "Open.MP Klien di linux"
 description: "Bagaimana cara menjalankan klien Open.MP di linux"
 ---
 

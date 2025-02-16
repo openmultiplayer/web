@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTeam
+sidebar_label: GetPlayerTeam
 description: Dobij ID tima u kojem je igrač.
 tags: ["player"]
 ---

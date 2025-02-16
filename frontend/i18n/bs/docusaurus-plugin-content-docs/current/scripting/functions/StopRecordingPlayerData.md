@@ -1,5 +1,6 @@
 ---
 title: StopRecordingPlayerData
+sidebar_label: StopRecordingPlayerData
 description: Zaustavlja sve snimke započete sa StartRecordingPlayerData za određenog igrača.
 tags: ["player"]
 ---

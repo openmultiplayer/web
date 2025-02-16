@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsCarDoors
+sidebar_label: SetVehicleParamsCarDoors
 description: Allows you to open and close the doors of a vehicle.
 tags: ["vehicle"]
 ---

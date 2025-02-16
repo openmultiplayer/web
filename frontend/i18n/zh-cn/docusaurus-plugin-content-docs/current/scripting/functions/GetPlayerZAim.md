@@ -1,5 +1,6 @@
 ---
 title: GetPlayerZAim
+sidebar_label: GetPlayerZAim
 description: Gets a player's Z Aim.
 tags: ["player"]
 ---

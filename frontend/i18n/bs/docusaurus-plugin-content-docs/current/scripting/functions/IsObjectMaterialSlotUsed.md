@@ -1,5 +1,6 @@
 ---
 title: IsObjectMaterialSlotUsed
+sidebar_label: IsObjectMaterialSlotUsed
 description: Provjerava da li je slot objekta materijala zauzet.
 tags: ["object"]
 ---

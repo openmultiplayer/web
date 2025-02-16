@@ -1,5 +1,6 @@
 ---
 title: "İstemci Komutları"
+sidebar_label: "İstemci Komutları"
 description: Tüm istemci komutlarının listesi.
 ---
 

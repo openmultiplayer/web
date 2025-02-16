@@ -1,5 +1,6 @@
 ---
 title: Object Edition Response Types
+sidebar_label: Object Edition Response Types
 ---
 
 Used in [OnPlayerEditObject](../callbacks/OnPlayerEditObject.md) and [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject.md).

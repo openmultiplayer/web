@@ -1,5 +1,6 @@
 ---
 title: ConnectNPC
+sidebar_label: ConnectNPC
 description: Connect an NPC to the server.
 tags: ["npc"]
 ---

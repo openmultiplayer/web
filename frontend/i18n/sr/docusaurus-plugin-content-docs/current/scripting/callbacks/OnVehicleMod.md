@@ -1,5 +1,6 @@
 ---
 title: OnVehicleMod
+sidebar_label: OnVehicleMod
 description: Ова повратна функција се позива када се возило модификује.
 tags: ["vehicle"]
 ---

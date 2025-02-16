@@ -1,5 +1,6 @@
 ---
 title: Animações
+sidebar_label: Animações
 description: Uma lista de todas as animações.
 tags: []
 ---

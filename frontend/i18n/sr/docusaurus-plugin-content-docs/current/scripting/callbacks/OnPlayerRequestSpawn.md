@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestSpawn
+sidebar_label: OnPlayerRequestSpawn
 description: Овај повратни позив се позива када играч покуша да се појави преко избора класе било притиском на SHIFT или кликом на дугме 'Spawn'.
 tags: ["player", "class"]
 ---

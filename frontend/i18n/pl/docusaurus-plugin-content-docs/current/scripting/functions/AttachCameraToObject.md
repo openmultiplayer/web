@@ -1,5 +1,6 @@
 ---
 title: AttachCameraToObject
+sidebar_label: AttachCameraToObject
 description: Możesz używać tej funkcji, aby przyczepiać kamerę gracza do obiektów.
 tags: []
 ---

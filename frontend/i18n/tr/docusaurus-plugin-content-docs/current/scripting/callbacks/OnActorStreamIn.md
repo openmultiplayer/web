@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Bu geri çağırma, bir aktör başka bir oyuncunun akış alanına girdiğinde tetiklenir.
 tags: []
 ---

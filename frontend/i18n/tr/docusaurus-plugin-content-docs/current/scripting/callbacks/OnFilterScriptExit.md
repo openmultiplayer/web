@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Bir filterscript unload edildiğinde tetiklenir.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: fwrite
+sidebar_label: fwrite
 description: Write text into a file.
 tags: ["file management"]
 ---

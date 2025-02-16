@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSpawn
+sidebar_label: OnVehicleSpawn
 description: يتم إستدعاء هذا الكال باك عند رسبنت السبارة
 tags: ["vehicle"]
 ---

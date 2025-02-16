@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetPos
+sidebar_label: TextDrawSetPos
 description: Sets the position of a textdraw.
 tags: ["textdraw"]
 ---

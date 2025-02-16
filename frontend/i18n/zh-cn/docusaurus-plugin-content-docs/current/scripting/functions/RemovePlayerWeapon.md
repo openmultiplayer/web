@@ -1,5 +1,6 @@
 ---
 title: RemovePlayerWeapon
+sidebar_label: RemovePlayerWeapon
 description: Remove a specified weapon from a player.
 tags: ["player"]
 ---

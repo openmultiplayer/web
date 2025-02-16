@@ -1,5 +1,6 @@
 ---
 title: ClearPlayerWorldBounds
+sidebar_label: ClearPlayerWorldBounds
 description: Reset the player's world boundaries to default world boundaries.
 tags: ["player"]
 ---

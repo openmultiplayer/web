@@ -1,5 +1,6 @@
 ---
 title: HidePickupForPlayer
+sidebar_label: HidePickupForPlayer
 description: Hides a pickup for a specific player.
 tags: ["player", "pickup"]
 ---

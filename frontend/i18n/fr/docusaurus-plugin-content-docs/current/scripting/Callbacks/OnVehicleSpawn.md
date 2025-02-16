@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSpawn
+sidebar_label: OnVehicleSpawn
 description: Cette callback est appelée lorsqu'un véhicule respawn (réapparaît).
 tags: ["vehicle"]
 ---

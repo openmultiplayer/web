@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickupStreamIn
+sidebar_label: OnPlayerPickupStreamIn
 description: Позива се када играчев пикап уђе у видно поље играча.
 tags: ["player", "pickup", "playerpickup"]
 ---

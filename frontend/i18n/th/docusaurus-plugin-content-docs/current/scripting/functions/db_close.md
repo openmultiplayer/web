@@ -1,5 +1,6 @@
 ---
 title: db_close
+sidebar_label: db_close
 description: Closes an SQLite database that was opened with db_open.
 tags: [sqlite]
 ---

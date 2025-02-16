@@ -1,5 +1,6 @@
 ---
 title: Contributing
+sidebar_label: Contributing
 description: SA-MP விக்கி மற்றும் open.mp ஆவணங்களுக்கு எவ்வாறு பங்களிப்பது.
 ---
 
@@ -83,6 +84,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 ``` mdx
 ---
 title: My Documentation
+sidebar_label: My Documentation
 description: இது பொருட்கள் மற்றும் பொருட்கள் மற்றும் பர்கர்கள் பற்றிய பக்கம், ஆம்!
 ---
 ```

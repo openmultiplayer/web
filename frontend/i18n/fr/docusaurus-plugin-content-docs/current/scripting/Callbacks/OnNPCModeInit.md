@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeInit
+sidebar_label: OnNPCModeInit
 description: Ce rappel est appelé lorsque le script d'un PNJ est chargé.
 tags: ["npc"]
 ---

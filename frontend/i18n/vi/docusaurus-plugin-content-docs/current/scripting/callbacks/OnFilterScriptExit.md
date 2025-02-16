@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Callback này được gọi khi một filterscript bị gỡ bỏ.
 tags: []
 ---

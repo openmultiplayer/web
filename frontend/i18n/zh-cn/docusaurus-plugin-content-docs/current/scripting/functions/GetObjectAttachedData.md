@@ -1,5 +1,6 @@
 ---
 title: GetObjectAttachedData
+sidebar_label: GetObjectAttachedData
 description: Get the attachment data of an object.
 tags: ["object"]
 ---

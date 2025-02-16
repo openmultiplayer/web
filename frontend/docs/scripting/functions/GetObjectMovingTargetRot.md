@@ -1,5 +1,6 @@
 ---
 title: GetObjectMovingTargetRot
+sidebar_label: GetObjectMovingTargetRot
 description: Get the move target rotation of an object.
 tags: ["object"]
 ---

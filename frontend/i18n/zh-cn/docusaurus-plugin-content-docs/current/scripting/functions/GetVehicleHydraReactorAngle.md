@@ -1,5 +1,6 @@
 ---
 title: GetVehicleHydraReactorAngle
+sidebar_label: GetVehicleHydraReactorAngle
 description: Gets the hydra reactor angle of the vehicle.
 tags: ["vehicle"]
 ---

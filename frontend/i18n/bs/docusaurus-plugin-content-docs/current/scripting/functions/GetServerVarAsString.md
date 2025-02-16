@@ -1,5 +1,6 @@
 ---
 title: GetServerVarAsString
+sidebar_label: GetServerVarAsString
 description: Dobij string vrijednost server varijable.
 tags: []
 ---

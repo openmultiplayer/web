@@ -1,5 +1,6 @@
 ---
 title: AddStaticPickup
+sidebar_label: AddStaticPickup
 description: Ang function na ito ay nagdaragdag ng 'static' pickup sa laro.
 tags: []
 ---

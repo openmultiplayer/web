@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeInit.
+sidebar_label: OnNPCModeInit.
 description: This callback is called when a NPC script is loaded.
 tags: ["npc"]
 ---

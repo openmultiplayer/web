@@ -1,5 +1,6 @@
 ---
 title: OnRecordingPlaybackEnd
+sidebar_label: OnRecordingPlaybackEnd
 description: Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa "NPCStartRecordingPlayback" došao do kraja.
 tags: []
 ---

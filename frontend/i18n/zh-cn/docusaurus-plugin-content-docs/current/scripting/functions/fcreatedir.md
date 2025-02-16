@@ -1,5 +1,6 @@
 ---
 title: fcreatedir
+sidebar_label: fcreatedir
 description: Create a directory.
 tags: ["file management"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: floatdiv
+sidebar_label: floatdiv
 description: Divide one float by another one.
 tags: []
 ---

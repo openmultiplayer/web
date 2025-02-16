@@ -1,5 +1,6 @@
 ---
 title: GetPlayers
+sidebar_label: GetPlayers
 description: Gets an array variable of the IDs of the current players on the server.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetPVarFloat
+sidebar_label: SetPVarFloat
 description: Set a float player variable's value.
 tags: ["pvar"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Car Component IDs
+sidebar_label: Car Component IDs
 description: Information about car component IDs, model names, parts, types, supported vehicles and costs.
 ---
 

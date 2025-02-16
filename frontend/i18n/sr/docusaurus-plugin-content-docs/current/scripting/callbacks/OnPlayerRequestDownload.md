@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestDownload
+sidebar_label: OnPlayerRequestDownload
 description: Ова повратна функција се позива када играч затражи преузимање прилагођеног модела.
 tags: ["player"]
 ---

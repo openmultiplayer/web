@@ -1,5 +1,6 @@
 ---
 title: AllowAdminTeleport
+sidebar_label: AllowAdminTeleport
 description: Această funcție va determina dacă administratorii RCON vor fi teleportați la punctul lor de cale atunci când vor seta unul.
 tags: []
 ---

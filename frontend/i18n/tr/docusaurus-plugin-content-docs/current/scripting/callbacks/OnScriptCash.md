@@ -1,5 +1,6 @@
 ---
 title: OnScriptCash
+sidebar_label: OnScriptCash
 description: Bu geri çağırma, oyun içi bir şeyler oyuncuya para verdiğinde çağrılır.
 tags: ["player"]
 ---

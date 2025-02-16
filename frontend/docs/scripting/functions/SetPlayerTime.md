@@ -1,5 +1,6 @@
 ---
 title: SetPlayerTime
+sidebar_label: SetPlayerTime
 description: Sets the game time for a player.
 tags: ["player"]
 ---

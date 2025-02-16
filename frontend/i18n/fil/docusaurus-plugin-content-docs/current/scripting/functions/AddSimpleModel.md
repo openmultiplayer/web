@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModel
+sidebar_label: AddSimpleModel
 description: Nagdaragdag ng bagong custom na simpleng object model para sa pag-download.
 tags: []
 ---

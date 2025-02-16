@@ -1,5 +1,6 @@
 ---
 title: OnGameModeInit
+sidebar_label: OnGameModeInit
 description: Callback ini terpanggil ketika memuat gamemode.
 tags: []
 ---

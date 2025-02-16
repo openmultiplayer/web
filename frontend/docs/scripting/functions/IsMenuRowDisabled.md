@@ -1,5 +1,6 @@
 ---
 title: IsMenuRowDisabled
+sidebar_label: IsMenuRowDisabled
 description: Checks if a menu row is disabled.
 tags: ["menu"]
 ---

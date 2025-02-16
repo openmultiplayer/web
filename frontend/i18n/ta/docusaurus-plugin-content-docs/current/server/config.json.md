@@ -1,5 +1,6 @@
 ---
 title: config.json
+sidebar_label: config.json
 description: open.mp சேவையக கட்டமைப்பு கோப்பு.
 ---
 

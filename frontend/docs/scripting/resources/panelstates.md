@@ -1,5 +1,6 @@
 ---
 title: Panel States
+sidebar_label: Panel States
 description: Information about byte size and its corresponding panel state bits.
 ---
 

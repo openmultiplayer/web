@@ -1,5 +1,6 @@
 ---
 title: valstr
+sidebar_label: valstr
 description: Pretvori cijeli broj u string.
 tags: []
 ---

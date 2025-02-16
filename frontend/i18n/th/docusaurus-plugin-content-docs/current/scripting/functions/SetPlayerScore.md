@@ -1,5 +1,6 @@
 ---
 title: SetPlayerScore
+sidebar_label: SetPlayerScore
 description: Set a player's score.
 tags: ["player"]
 ---

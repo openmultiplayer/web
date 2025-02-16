@@ -1,5 +1,6 @@
 ---
 title: Guía de Pickup
+sidebar_label: Guía de Pickup
 ---
 
 Un breve tutorial que describe cómo usar pickups.

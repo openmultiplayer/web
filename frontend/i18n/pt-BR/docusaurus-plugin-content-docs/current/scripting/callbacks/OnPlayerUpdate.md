@@ -1,5 +1,6 @@
 ---
 title: OnPlayerUpdate
+sidebar_label: OnPlayerUpdate
 description: Essa callback é executada quando o cliente/player faz o update do seu status para o servidor.
 tags: ["player"]
 ---

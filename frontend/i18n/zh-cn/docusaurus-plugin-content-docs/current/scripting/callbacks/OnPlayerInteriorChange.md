@@ -1,5 +1,6 @@
 ---
 title: OnPlayerInteriorChange
+sidebar_label: OnPlayerInteriorChange
 description: This callback is called when a player changes interior.
 tags: ["player"]
 ---

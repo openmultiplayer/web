@@ -1,5 +1,6 @@
 ---
 title: float
+sidebar_label: float
 description: Converts an integer into a float.
 tags: ["floating-point"]
 ---

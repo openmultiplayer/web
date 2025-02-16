@@ -1,5 +1,6 @@
 ---
 title: Lista crime
+sidebar_label: Lista crime
 description: Lista de crime se foloseste in functia [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer).
 sidebar_label: Lista crime
 ---

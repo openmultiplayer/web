@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModel
+sidebar_label: AddSimpleModel
 description: Добавляет стороннюю модель объекта для скачивания.
 tags: []
 ---

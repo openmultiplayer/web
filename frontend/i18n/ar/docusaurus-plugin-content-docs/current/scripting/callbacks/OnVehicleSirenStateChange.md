@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSirenStateChange
+sidebar_label: OnVehicleSirenStateChange
 description: يتم إستدعاء هذا الكال باك عند تفعيل صفارة الإنذار للسيارة
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Yaygın Sunucu Sorunları
+sidebar_label: Yaygın Sunucu Sorunları
 ---
 
 ## Sunucunun hemen çökmesi

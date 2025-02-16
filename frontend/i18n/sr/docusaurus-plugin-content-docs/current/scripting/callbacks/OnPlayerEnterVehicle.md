@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterVehicle
+sidebar_label: OnPlayerEnterVehicle
 description: Ова функција се позива када играч почне да улази у возило, што значи да играч још увек није у возилу у тренутку када се функција позива.
 tags: ["player", "vehicle"]
 ---

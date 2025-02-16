@@ -1,5 +1,6 @@
 ---
 title: IsPlayerNPC
+sidebar_label: IsPlayerNPC
 description: Check if a player is an actual player or an NPC.
 tags: ["player", "npc"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: floatround
+sidebar_label: floatround
 description: I-round ang isang floating point number sa isang integer value.
 tags: ["math", "floating-point"]
 ---

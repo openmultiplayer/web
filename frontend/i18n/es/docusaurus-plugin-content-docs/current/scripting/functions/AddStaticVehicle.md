@@ -1,5 +1,6 @@
 ---
 title: AddStaticVehicle
+sidebar_label: AddStaticVehicle
 description: Añade un vehículo 'estático' (los modelos están pre-cargados para los jugadores) al modo de juego.
 tags: ["vehículo, vehicle"]
 ---

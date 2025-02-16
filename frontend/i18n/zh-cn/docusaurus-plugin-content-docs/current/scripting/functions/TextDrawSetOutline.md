@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetOutline
+sidebar_label: TextDrawSetOutline
 description: Sets the thickness of a textdraw's text's outline.
 tags: ["textdraw"]
 ---

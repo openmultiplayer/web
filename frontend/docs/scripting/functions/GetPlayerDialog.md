@@ -1,5 +1,6 @@
 ---
 title: GetPlayerDialog
+sidebar_label: GetPlayerDialog
 description: Get the ID of the dialog currently show to the player.
 tags: ["player", "dialog"]
 ---

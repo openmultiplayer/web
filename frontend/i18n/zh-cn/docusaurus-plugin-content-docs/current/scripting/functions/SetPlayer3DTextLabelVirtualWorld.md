@@ -1,5 +1,6 @@
 ---
 title: SetPlayer3DTextLabelVirtualWorld
+sidebar_label: SetPlayer3DTextLabelVirtualWorld
 description: Sets the player's 3D text label virtual world id.
 tags: ["player", "3dtextlabel"]
 ---

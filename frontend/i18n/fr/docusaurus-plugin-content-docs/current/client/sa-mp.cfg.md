@@ -1,5 +1,6 @@
 ---
 title: sa-mp.cfg
+sidebar_label: sa-mp.cfg
 description: fichier de configuration du client SA-MP.
 ---
 

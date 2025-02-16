@@ -1,5 +1,6 @@
 ---
 title: NetStats_PacketLossPercent
+sidebar_label: NetStats_PacketLossPercent
 description: Dobija procenat gubitka paketa (packet loss) igrača.
 tags: []
 ---

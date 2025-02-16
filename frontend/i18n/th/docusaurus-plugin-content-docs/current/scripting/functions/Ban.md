@@ -1,5 +1,6 @@
 ---
 title: Ban
+sidebar_label: Ban
 description: Ban a player who is currently in the server.
 tags: ["administration"]
 ---

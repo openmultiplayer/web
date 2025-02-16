@@ -1,5 +1,6 @@
 ---
 title: SendPlayerMessageToPlayer
+sidebar_label: SendPlayerMessageToPlayer
 description: Sends a message in the name of a player to another player on the server.
 tags: ["player"]
 ---

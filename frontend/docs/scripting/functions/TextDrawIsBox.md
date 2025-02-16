@@ -1,5 +1,6 @@
 ---
 title: TextDrawIsBox
+sidebar_label: TextDrawIsBox
 description: Checks if a textdraw is box.
 tags: ["textdraw"]
 ---

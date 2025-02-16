@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWantedLevel
+sidebar_label: GetPlayerWantedLevel
 description: Gets the wanted level of a player.
 tags: ["player"]
 ---

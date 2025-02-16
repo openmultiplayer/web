@@ -1,5 +1,6 @@
 ---
 title: memcpy
+sidebar_label: memcpy
 description: Copy bytes from one location to another.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterCheckpoint
+sidebar_label: OnPlayerEnterCheckpoint
 description: Esta callback é chamada quando um jogador entre em um checkpoint colocado para aquele jogador.
 tags: ["player", "checkpoint"]
 ---

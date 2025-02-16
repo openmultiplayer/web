@@ -1,5 +1,6 @@
 ---
 title: Recursos
+sidebar_label: Recursos
 description: Una lista de herramientas, librerías y plugins útiles para desarrollo en SA:MP.
 ---
 

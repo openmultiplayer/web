@@ -1,5 +1,6 @@
 ---
 title: NetStats_MessagesReceived
+sidebar_label: NetStats_MessagesReceived
 description: Gets the number of messages the server has received from the player.
 tags: ["network monitoring"]
 ---

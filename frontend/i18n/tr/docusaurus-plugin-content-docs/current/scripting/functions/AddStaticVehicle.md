@@ -1,5 +1,6 @@
 ---
 title: AddStaticVehicle
+sidebar_label: AddStaticVehicle
 description: Oyun moduna bir "statik" araç ekler (modeller oyuncular için önceden yüklenir).
 tags: ["vehicle"]
 ---

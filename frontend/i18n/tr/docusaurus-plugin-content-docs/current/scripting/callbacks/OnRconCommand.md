@@ -1,5 +1,6 @@
 ---
 title: OnRconCommand
+sidebar_label: OnRconCommand
 description: Bu fonksiyon, RCON oturumu açmış oyuncu RCON komutu kullandığında çağrılır. (/rcon -komut-)
 tags: []
 ---

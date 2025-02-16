@@ -1,5 +1,6 @@
 ---
 title: floatlog
+sidebar_label: floatlog
 description: Ova funkcija vam omogućuje da dobijete logaritam float vrijednosti.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: HTTP Error Response Codes
+sidebar_label: HTTP Error Response Codes
 description: HTTP error response codes.
 ---
 

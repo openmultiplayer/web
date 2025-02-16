@@ -1,5 +1,6 @@
 ---
 title: floatfract
+sidebar_label: floatfract
 description: Get the fractional part of a float.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: floatfract
+sidebar_label: floatfract
 description: Nabavite razlomljeni dio floata.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestClass
+sidebar_label: OnPlayerRequestClass
 description: Callback này được gọi khi một người chơi thay đổi lớp trong chọn lớp (và khi chọn lớp xuất hiện lần đầu).
 tags: ["player", "class"]
 ---

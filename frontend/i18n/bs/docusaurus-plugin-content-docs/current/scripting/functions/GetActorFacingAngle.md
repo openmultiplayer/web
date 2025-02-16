@@ -1,5 +1,6 @@
 ---
 title: GetActorFacingAngle
+sidebar_label: GetActorFacingAngle
 description: Dobij ugao posmatranja actora.
 tags: ["actor"]
 ---

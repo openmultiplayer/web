@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: OnPlayerClickMap é chamado quando um jogador pocisiona um ponto no mapa do menu de pausa (clicando com botão direito).
 tags: ["player"]
 ---

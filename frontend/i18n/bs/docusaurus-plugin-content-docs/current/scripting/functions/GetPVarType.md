@@ -1,5 +1,6 @@
 ---
 title: GetPVarType
+sidebar_label: GetPVarType
 description: Dobija tip (cijli broj, float ili string) igračeve varijable.
 tags: ["pvar"]
 ---

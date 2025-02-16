@@ -1,5 +1,6 @@
 ---
 title: SetPlayerInterior
+sidebar_label: SetPlayerInterior
 description: Set a player's interior.
 tags: ["player"]
 ---

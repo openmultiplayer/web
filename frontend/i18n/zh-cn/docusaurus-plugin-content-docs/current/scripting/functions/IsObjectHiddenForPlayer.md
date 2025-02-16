@@ -1,5 +1,6 @@
 ---
 title: IsObjectHiddenForPlayer
+sidebar_label: IsObjectHiddenForPlayer
 description: Checks if an object is hidden for a player.
 tags: ["player", "object"]
 ---

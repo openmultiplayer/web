@@ -1,5 +1,6 @@
 ---
 title: Get3DTextLabelColor
+sidebar_label: Get3DTextLabelColor
 description: Gets the 3D text label color.
 tags: ["3dtextlabel"]
 ---

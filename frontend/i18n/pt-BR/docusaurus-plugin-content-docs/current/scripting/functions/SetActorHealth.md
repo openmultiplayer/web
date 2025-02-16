@@ -1,5 +1,6 @@
 ---
 title: SetActorHealth
+sidebar_label: SetActorHealth
 description: Define a vida de um ator.
 tags: []
 ---

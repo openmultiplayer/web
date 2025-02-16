@@ -1,5 +1,6 @@
 ---
 title: PlayerGangZoneGetColour
+sidebar_label: PlayerGangZoneGetColour
 description: Get the colour of a player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---

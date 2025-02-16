@@ -1,5 +1,6 @@
 ---
 title: ApplyAnimation
+sidebar_label: ApplyAnimation
 description: Digunakan untuk mengaplikasikan animasi ke pemain.
 tags: []
 ---

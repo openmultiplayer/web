@@ -1,5 +1,6 @@
 ---
 title: GetConsoleVarAsBool
+sidebar_label: GetConsoleVarAsBool
 description: Get the boolean value of a console variable.
 tags: []
 ---

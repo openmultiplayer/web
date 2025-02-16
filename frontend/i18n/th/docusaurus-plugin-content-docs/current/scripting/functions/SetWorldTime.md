@@ -1,5 +1,6 @@
 ---
 title: SetWorldTime
+sidebar_label: SetWorldTime
 description: Sets the world time (for all players) to a specific hour.
 tags: []
 ---

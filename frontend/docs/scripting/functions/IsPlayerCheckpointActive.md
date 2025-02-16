@@ -1,5 +1,6 @@
 ---
 title: IsPlayerCheckpointActive
+sidebar_label: IsPlayerCheckpointActive
 description: Check if the player currently has a checkpoint visible.
 tags: ["player", "checkpoint"]
 ---

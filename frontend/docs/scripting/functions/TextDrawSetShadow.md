@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetShadow
+sidebar_label: TextDrawSetShadow
 description: Sets the size of a textdraw's text's shadow.
 tags: ["textdraw"]
 ---

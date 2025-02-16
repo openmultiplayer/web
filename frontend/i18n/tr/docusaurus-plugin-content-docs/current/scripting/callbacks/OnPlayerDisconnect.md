@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDisconnect
+sidebar_label: OnPlayerDisconnect
 description: Bu geri çağırma oyuncu sunucudan ayrıldığında çağrılır.
 tags: ["player"]
 ---

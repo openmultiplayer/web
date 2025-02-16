@@ -1,5 +1,6 @@
 ---
 title: Minunatii
+sidebar_label: Minunatii
 description: O listă organizată de instrumente utile, biblioteci și pluginuri pentru dezvoltarea SA-MP.
 ---
 

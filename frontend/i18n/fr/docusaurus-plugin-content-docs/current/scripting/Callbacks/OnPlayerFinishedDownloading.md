@@ -1,5 +1,6 @@
 ---
 title: OnPlayerFinishedDownloading
+sidebar_label: OnPlayerFinishedDownloading
 description: Callback appelée quand un joueur fini de télécharger les models custom du serveur.
 tags: ["player"]
 ---

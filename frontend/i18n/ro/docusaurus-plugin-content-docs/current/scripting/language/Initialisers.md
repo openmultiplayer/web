@@ -1,5 +1,6 @@
 ---
 title: "Cuvant: Initializare"
+sidebar_label: "Cuvant: Initializare"
 ---
 
 ## `const`

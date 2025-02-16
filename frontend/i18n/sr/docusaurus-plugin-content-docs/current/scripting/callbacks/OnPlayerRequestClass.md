@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestClass
+sidebar_label: OnPlayerRequestClass
 description: Ова повратна функција се позива када играч промени класу на избору класе (и када се избор класе први пут појави).
 tags: ["player", "class"]
 ---

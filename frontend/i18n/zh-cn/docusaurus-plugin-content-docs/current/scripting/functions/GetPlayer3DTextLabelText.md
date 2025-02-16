@@ -1,5 +1,6 @@
 ---
 title: GetPlayer3DTextLabelText
+sidebar_label: GetPlayer3DTextLabelText
 description: Gets the player's 3D text label text.
 tags: ["player", "3dtextlabel"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GangZoneShowForPlayer
+sidebar_label: GangZoneShowForPlayer
 description: Prikaži gang zonu za igrača.
 tags: ["player", "gangzone"]
 ---

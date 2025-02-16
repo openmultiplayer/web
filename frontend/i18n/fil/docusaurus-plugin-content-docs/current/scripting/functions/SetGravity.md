@@ -1,5 +1,6 @@
 ---
 title: SetGravity
+sidebar_label: SetGravity
 description: I-set ang gravity para sa lahat ng player.
 tags: []
 ---

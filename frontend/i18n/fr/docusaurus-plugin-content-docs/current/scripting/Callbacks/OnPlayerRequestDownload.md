@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestDownload
+sidebar_label: OnPlayerRequestDownload
 description: Cette callback est appelée quand un joueur sollicite le téléchargement des custom models.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: CreatePlayer3DTextLabel
+sidebar_label: CreatePlayer3DTextLabel
 description: Kreira 3D Text Label samo za jednog određenog igrača.
 tags: ["player", "3dtextlabel"]
 ---

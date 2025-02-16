@@ -1,5 +1,6 @@
 ---
 title: RedirectDownload
+sidebar_label: RedirectDownload
 description: Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja na određenu HTTP web stranicu.
 tags: []
 ---

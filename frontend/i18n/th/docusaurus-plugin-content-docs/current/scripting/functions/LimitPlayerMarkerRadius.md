@@ -1,5 +1,6 @@
 ---
 title: LimitPlayerMarkerRadius
+sidebar_label: LimitPlayerMarkerRadius
 description: Set the player marker radius.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: IsPlayerPickupStreamedIn
+sidebar_label: IsPlayerPickupStreamedIn
 description: Checks if a player-pickup is streamed in for the player.
 tags: ["player", "pickup", "playerpickup"]
 ---

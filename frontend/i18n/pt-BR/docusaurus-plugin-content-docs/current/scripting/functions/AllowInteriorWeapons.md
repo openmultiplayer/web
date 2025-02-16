@@ -1,5 +1,6 @@
 ---
 title: AllowInteriorWeapons
+sidebar_label: AllowInteriorWeapons
 description: Define se o uso de armas no interior é permitido ou não.
 tags: []
 ---

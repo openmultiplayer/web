@@ -1,5 +1,6 @@
 ---
 title: OnGameModeExit
+sidebar_label: OnGameModeExit
 description: Ovaj callback se poziva kada se gamemode završava, bilo to preko 'gmx', kada god se server ugasi, ili pod GameModeExit.
 tags: []
 ---

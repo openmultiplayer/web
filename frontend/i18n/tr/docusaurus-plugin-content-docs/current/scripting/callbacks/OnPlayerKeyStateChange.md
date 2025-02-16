@@ -1,5 +1,6 @@
 ---
 title: OnPlayerKeyStateChange
+sidebar_label: OnPlayerKeyStateChange
 description: Bu fonksiyon, desteklenen herhangi bir tuşun durumu değiştirildiğinde (basıldığında / bırakıldığında) çağrılır. 
 tags: ["player"]
 ---

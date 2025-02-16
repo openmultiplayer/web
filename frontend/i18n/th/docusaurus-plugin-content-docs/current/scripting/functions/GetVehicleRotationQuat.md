@@ -1,5 +1,6 @@
 ---
 title: GetVehicleRotationQuat
+sidebar_label: GetVehicleRotationQuat
 description: Returns a vehicle's rotation on all axes as a quaternion.
 tags: ["vehicle"]
 ---

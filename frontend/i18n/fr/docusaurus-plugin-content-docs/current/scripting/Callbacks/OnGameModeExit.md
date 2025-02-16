@@ -1,5 +1,6 @@
 ---
 title: OnGameModeExit
+sidebar_label: OnGameModeExit
 description: Cette callback est appelée quand le gamemode s'éteint.
 tags: [gamemode, éteint, exit, ended]
 ---

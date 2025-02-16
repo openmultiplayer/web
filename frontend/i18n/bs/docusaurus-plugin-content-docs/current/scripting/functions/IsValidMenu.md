@@ -1,5 +1,6 @@
 ---
 title: IsValidMenu
+sidebar_label: IsValidMenu
 description: Provjerava da li je ID menija važeći.
 tags: []
 ---

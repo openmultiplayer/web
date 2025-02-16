@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayer
+sidebar_label: OnPlayerClickPlayer
 description: Kliče se, ko igralec dvakrat klikne na igralca na semaforju (TAB).
 tags: ["player"]
 ---

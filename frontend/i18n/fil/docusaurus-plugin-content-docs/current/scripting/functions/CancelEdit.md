@@ -1,5 +1,6 @@
 ---
 title: CancelEdit
+sidebar_label: CancelEdit
 description: Cancel object edition mode for a player.
 tags: []
 ---

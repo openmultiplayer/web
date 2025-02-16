@@ -1,5 +1,6 @@
 ---
 title: EditAttachedObject
+sidebar_label: EditAttachedObject
 description: Pristupi modu uređivanja za prikvačeni objekat.
 tags: []
 ---

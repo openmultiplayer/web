@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSpawn
+sidebar_label: OnVehicleSpawn
 description: Ова повратна функција се позива када се возило респаунује.
 tags: ["vehicle"]
 ---

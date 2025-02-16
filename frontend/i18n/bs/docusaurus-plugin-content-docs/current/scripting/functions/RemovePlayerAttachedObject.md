@@ -1,5 +1,6 @@
 ---
 title: RemovePlayerAttachedObject
+sidebar_label: RemovePlayerAttachedObject
 description: Ukloni prikvačeni objekat sa igrača.
 tags: ["player"]
 ---

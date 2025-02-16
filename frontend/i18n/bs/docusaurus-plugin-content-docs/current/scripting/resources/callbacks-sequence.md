@@ -1,5 +1,6 @@
 ---
 title: Sekvence Callback-ova
+sidebar_label: Sekvence Callback-ova
 description: Lista callback-ova dostupnih u SA-MP/open.mp i njena sekvenca poziva
 tags: []
 ---

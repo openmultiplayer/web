@@ -1,5 +1,6 @@
 ---
 title: db_get_field_int
+sidebar_label: db_get_field_int
 description: Get the content of a field as an integer from db_query.
 tags: ["sqlite"]
 ---

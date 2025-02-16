@@ -1,5 +1,6 @@
 ---
 title: Vehicle Panel Status
+sidebar_label: Vehicle Panel Status
 description: Vehicle panel status definitions.
 ---
 

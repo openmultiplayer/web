@@ -1,5 +1,6 @@
 ---
 title: SetPlayerArmedWeapon
+sidebar_label: SetPlayerArmedWeapon
 description: Sets which weapon (that a player already has) the player is holding.
 tags: ["player"]
 ---

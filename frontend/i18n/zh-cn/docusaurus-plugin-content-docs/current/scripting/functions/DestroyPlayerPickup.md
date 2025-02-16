@@ -1,5 +1,6 @@
 ---
 title: DestroyPlayerPickup
+sidebar_label: DestroyPlayerPickup
 description: Destroys a player-pickup created with CreatePlayerPickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

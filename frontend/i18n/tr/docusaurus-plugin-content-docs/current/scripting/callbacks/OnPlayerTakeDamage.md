@@ -1,5 +1,6 @@
 ---
 title: OnPlayerTakeDamage
+sidebar_label: OnPlayerTakeDamage
 description: Bu fonksiyon, oyuncu hasar aldığında çağrılır. 
 tags: ["player"]
 ---

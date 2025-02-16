@@ -1,5 +1,6 @@
 ---
 title: strdel
+sidebar_label: strdel
 description: Delete part of a string.
 tags: []
 ---

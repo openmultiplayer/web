@@ -1,5 +1,6 @@
 ---
 title: SetPlayerShopName
+sidebar_label: SetPlayerShopName
 description: Učitava ili rasterećuje unutrašnju skriptu (enterijera) za igrača (na primjer meni za ammunation).
 tags: ["player"]
 ---

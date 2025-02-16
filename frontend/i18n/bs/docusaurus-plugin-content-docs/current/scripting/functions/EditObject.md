@@ -1,5 +1,6 @@
 ---
 title: EditObject
+sidebar_label: EditObject
 description: Omogućuje igraču da uređuje objekt (položaj i rotaciju) pomoću miša na GUI (grafičko korisničko sučelje / Graphical User Interface).
 tags: []
 ---

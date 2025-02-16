@@ -1,5 +1,6 @@
 ---
 title: ShowPlayerDialog
+sidebar_label: ShowPlayerDialog
 description: Afișează jucătorlui un dialog sincron (doar unul o dată).
 tags: ["player"]
 ---

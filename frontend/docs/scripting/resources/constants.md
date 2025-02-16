@@ -1,5 +1,6 @@
 ---
 title: Constants
+sidebar_label: Constants
 description: A list of all standard library constant definitions.
 tags: []
 ---

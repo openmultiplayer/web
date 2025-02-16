@@ -1,5 +1,6 @@
 ---
 title: GetConsoleVarAsString
+sidebar_label: GetConsoleVarAsString
 description: Dobij string vrijednost varijable iz konzole.
 tags: []
 ---

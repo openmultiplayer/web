@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsCarDoors
+sidebar_label: SetVehicleParamsCarDoors
 description: Binibigyang-daan kang buksan at isara ang mga pinto ng isang sasakyan.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnClientCheckResponse
+sidebar_label: OnClientCheckResponse
 description: This callback is called when a SendClientCheck request completes
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerPickupModel
+sidebar_label: GetPlayerPickupModel
 description: Gets the model ID of a player-pickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

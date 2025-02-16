@@ -1,5 +1,6 @@
 ---
 title: random
+sidebar_label: random
 description: Get a pseudo-random number.
 tags: ["core"]
 ---

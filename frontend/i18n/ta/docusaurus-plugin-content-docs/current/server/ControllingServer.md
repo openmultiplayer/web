@@ -1,5 +1,6 @@
 ---
 title: "Controlling a Server"
+sidebar_label: "Controlling a Server"
 description: சேவையகத்தை கட்டுப்படுத்த பயனுள்ள கட்டளைகள்.
 ---
 

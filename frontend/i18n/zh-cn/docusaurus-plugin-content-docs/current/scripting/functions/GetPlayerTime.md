@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTime
+sidebar_label: GetPlayerTime
 description: Get the player's current game time.
 tags: ["player"]
 ---

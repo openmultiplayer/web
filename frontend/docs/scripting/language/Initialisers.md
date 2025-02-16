@@ -1,5 +1,6 @@
 ---
 title: "Keywords: Initialisers"
+sidebar_label: "Keywords: Initialisers"
 ---
 
 ## `const`

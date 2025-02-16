@@ -1,5 +1,6 @@
 ---
 title: CancelEdit
+sidebar_label: CancelEdit
 description: Visszavonja a szerkesztési módot a játékos számára.
 tags: []
 ---

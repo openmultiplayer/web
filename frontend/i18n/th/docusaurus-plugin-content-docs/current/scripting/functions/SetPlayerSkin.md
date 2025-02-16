@@ -1,5 +1,6 @@
 ---
 title: SetPlayerSkin
+sidebar_label: SetPlayerSkin
 description: Set the skin of a player.
 tags: ["player"]
 ---

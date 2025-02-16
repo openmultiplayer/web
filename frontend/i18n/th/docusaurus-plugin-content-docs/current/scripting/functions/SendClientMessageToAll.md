@@ -1,5 +1,6 @@
 ---
 title: SendClientMessageToAll
+sidebar_label: SendClientMessageToAll
 description: Displays a message in chat to all players.
 tags: []
 ---

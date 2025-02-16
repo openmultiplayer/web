@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitedMenu
+sidebar_label: OnPlayerExitedMenu
 description: Called when a player exits a menu.
 tags: ["player", "menu"]
 ---

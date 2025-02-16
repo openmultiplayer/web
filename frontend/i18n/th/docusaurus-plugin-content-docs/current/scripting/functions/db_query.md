@@ -1,5 +1,6 @@
 ---
 title: db_query
+sidebar_label: db_query
 description: This function is used to execute an SQL query on an opened SQLite database.
 tags: ["sqlite"]
 ---

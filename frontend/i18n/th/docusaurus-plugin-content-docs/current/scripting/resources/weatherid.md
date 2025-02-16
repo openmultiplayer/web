@@ -1,5 +1,6 @@
 ---
 title: Weather IDs
+sidebar_label: Weather IDs
 ---
 
 To be used with [SetWeather](../functions/SetWeather) and [SetPlayerWeather](../functions/SetPlayerWeather).

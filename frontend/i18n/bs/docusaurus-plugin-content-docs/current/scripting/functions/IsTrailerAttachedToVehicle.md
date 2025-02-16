@@ -1,5 +1,6 @@
 ---
 title: IsTrailerAttachedToVehicle
+sidebar_label: IsTrailerAttachedToVehicle
 description: Provjerava ako vozilo ima prikvačenu prikolicu za sebe.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitedMenu
+sidebar_label: OnPlayerExitedMenu
 description: Callback này được gọi khi một người chơi thoát khỏi menu.
 tags: ["player", "menu"]
 ---

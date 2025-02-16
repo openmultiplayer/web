@@ -1,5 +1,6 @@
 ---
 title: ToggleVehicleSirenEnabled
+sidebar_label: ToggleVehicleSirenEnabled
 description: Turn the siren for a vehicle on or off.
 tags: ["vehicle"]
 ---

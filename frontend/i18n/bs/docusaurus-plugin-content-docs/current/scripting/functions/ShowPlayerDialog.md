@@ -1,5 +1,6 @@
 ---
 title: ShowPlayerDialog
+sidebar_label: ShowPlayerDialog
 description: Prikazuje igraču za sinkroni (samo jedan po jedan) dijaloški box.
 tags: ["player"]
 ---

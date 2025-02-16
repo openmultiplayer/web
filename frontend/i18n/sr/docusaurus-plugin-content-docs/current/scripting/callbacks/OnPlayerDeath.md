@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDeath
+sidebar_label: OnPlayerDeath
 description: Ова функција се позива када играч умре, било самоповређивањем или од стране другог играча.
 tags: ["player"]
 ---

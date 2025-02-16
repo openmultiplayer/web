@@ -1,5 +1,6 @@
 ---
 title: IsValidGangZone
+sidebar_label: IsValidGangZone
 description: Check if the gangzone valid
 tags: ["gangzone"]
 ---

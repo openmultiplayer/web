@@ -1,5 +1,6 @@
 ---
 title: SendClientCheck
+sidebar_label: SendClientCheck
 description: Perform a memory check on the client.
 tags: []
 ---

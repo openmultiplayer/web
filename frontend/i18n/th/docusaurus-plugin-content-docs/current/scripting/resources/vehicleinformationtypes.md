@@ -1,5 +1,6 @@
 ---
 title: Vehicle Information Types
+sidebar_label: Vehicle Information Types
 description: Vehicle Information Type Constants
 ---
 

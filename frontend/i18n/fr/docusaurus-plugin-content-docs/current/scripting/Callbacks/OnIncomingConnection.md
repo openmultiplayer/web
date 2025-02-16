@@ -1,5 +1,6 @@
 ---
 title: OnIncomingConnection
+sidebar_label: OnIncomingConnection
 description: Cette callback est appelée quand une adresse IP tente de se connecter au serveur.
 tags: [IP, connexion, joueur]
 ---

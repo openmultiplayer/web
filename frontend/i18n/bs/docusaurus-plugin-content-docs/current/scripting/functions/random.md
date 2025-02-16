@@ -1,5 +1,6 @@
 ---
 title: random
+sidebar_label: random
 description: Dobij (pseudo-)slučajni broj.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerWeaponShot
+sidebar_label: OnPlayerWeaponShot
 description: Овај повратни позив се позива када играч испали метак из оружја.
 tags: ["player"]
 ---

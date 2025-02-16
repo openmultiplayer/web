@@ -1,5 +1,6 @@
 ---
 title: Espetacular
+sidebar_label: Espetacular
 description: Lista oficial com ferramentas úteis, libs, gamemodes, filterscripts e plugins para o desenvolvimento de servidores SA-MP!
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: SetObjectNoCameraCol
+sidebar_label: SetObjectNoCameraCol
 description: Onemogućite sudare između kamera igrača i navedenog objekta.
 tags: []
 ---

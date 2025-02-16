@@ -1,5 +1,6 @@
 ---
 title: OnGameModeExit
+sidebar_label: OnGameModeExit
 description: Ez a visszahívás akkor hívódik meg, amikor egy játékmód véget ér, akár a 'gmx' parancs használatával, a szerver leállásakor, vagy akár a GameModeExit-en keresztül.
 tags: []
 ---

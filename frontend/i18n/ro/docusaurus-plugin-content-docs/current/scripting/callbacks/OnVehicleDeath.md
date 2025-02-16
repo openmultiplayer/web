@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDeath
+sidebar_label: OnVehicleDeath
 description: Acest callback este apelat atunci când un vehicul este distrus - fie prin explozie, fie prin scufundare în apă.
 tags: ["vehicle"]
 ---

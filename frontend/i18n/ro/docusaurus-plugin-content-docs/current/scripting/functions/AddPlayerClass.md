@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClass
+sidebar_label: AddPlayerClass
 description: Adaugă o clasă la selecția clasei.
 tags: ["player"]
 ---

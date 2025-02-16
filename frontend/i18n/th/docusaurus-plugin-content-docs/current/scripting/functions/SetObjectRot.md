@@ -1,5 +1,6 @@
 ---
 title: SetObjectRot
+sidebar_label: SetObjectRot
 description: Set the rotation of an object on the three axes (X, Y and Z).
 tags: []
 ---

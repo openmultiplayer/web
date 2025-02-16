@@ -1,5 +1,6 @@
 ---
 title: "Noțiuni de bază: Variabile"
+sidebar_label: "Noțiuni de bază: Variabile"
 description: Un ghid pentru începători pentru variabilele din Pawn
 ---
 

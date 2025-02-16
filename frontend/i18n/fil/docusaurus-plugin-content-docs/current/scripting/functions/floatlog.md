@@ -1,5 +1,6 @@
 ---
 title: floatlog
+sidebar_label: floatlog
 description: Binibigyang-daan ka ng function na ito na makuha ang logarithm ng isang float value.
 tags: ["math", "floating-point"]
 ---

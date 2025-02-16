@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsCarWindows
+sidebar_label: SetVehicleParamsCarWindows
 description: Permite abrir e fechar as janelas de um veículo.
 tags: ["vehicle"]
 ---

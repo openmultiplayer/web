@@ -1,5 +1,6 @@
 ---
 title: GetPlayer3DTextLabelPos
+sidebar_label: GetPlayer3DTextLabelPos
 description: Gets the player's 3D text label position.
 tags: ["player", "3dtextlabel"]
 ---

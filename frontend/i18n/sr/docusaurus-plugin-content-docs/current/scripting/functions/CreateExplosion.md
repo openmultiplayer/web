@@ -1,5 +1,6 @@
 ---
 title: CreateExplosion
+sidebar_label: CreateExplosion
 description: Креира се експлозија на одређеним координатама.
 tags: []
 ---

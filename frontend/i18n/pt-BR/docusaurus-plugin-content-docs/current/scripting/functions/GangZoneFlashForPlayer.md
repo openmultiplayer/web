@@ -1,5 +1,6 @@
 ---
 title: GangZoneFlashForPlayer
+sidebar_label: GangZoneFlashForPlayer
 description: Faz a gangzone piscar para um jogador.
 tags: ["player", "gangzone"]
 ---

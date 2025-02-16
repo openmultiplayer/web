@@ -1,5 +1,6 @@
 ---
 title: fmatch
+sidebar_label: fmatch
 description: Find a filename matching a pattern.
 tags: ["file management"]
 ---

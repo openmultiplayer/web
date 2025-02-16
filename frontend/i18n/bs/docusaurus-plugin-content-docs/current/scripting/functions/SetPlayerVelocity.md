@@ -1,5 +1,6 @@
 ---
 title: SetPlayerVelocity
+sidebar_label: SetPlayerVelocity
 description: Postavi brzinu igrača na X, Y i Z osama.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnTrailerUpdate
+sidebar_label: OnTrailerUpdate
 description: Acest callback este apelat atunci când un jucător a trimis o actualizare a trailerului.
 tags: []
 ---

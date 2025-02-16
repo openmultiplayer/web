@@ -1,5 +1,6 @@
 ---
 title: DB_GetFieldInt
+sidebar_label: DB_GetFieldInt
 description: Get the content of a field as an integer from DB_ExecuteQuery.
 keywords:
   - sqlite

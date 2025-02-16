@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Callback ini akan terpanggil ketika filterscript dibongkar.
 tags: []
 ---

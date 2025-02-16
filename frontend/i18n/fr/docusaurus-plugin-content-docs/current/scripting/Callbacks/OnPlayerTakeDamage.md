@@ -1,5 +1,6 @@
 ---
 title: OnPlayerTakeDamage
+sidebar_label: OnPlayerTakeDamage
 description: Cette callback est appelée lorsqu'un joueur prends des degats.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GangZoneStopFlashForAll
+sidebar_label: GangZoneStopFlashForAll
 description: Zaustavlja treptanje gangzone za sve igrače.
 tags: ["gangzone"]
 ---

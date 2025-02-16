@@ -1,5 +1,6 @@
 ---
 title: Introduction
+sidebar_label: Introduction
 description: Documentations for open.mp and SA-MP modifications
 sidebar_position: 1
 ---

@@ -1,5 +1,6 @@
 ---
 title: Awesome
+sidebar_label: Awesome
 description: SA-MP geliştirmeleri için kullanışlı araçlar, kütüphaneler, oyun modları, filterscriptleri ve eklentilerin özenle seçilmiş listesi.
 ---
 

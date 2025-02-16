@@ -1,5 +1,6 @@
 ---
 title: DeleteSVar
+sidebar_label: DeleteSVar
 description: Deletes a previously set server variable.
 tags: []
 ---

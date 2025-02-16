@@ -1,5 +1,6 @@
 ---
 title: floatmul
+sidebar_label: floatmul
 description: Multiplies two floats with each other.
 tags: []
 ---

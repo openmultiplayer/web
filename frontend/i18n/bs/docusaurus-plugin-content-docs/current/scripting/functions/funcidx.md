@@ -1,5 +1,6 @@
 ---
 title: funcidx
+sidebar_label: funcidx
 description: Ova funkcija vraća ID javne funkcije po imenu.
 tags: []
 ---

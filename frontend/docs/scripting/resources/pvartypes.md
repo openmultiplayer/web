@@ -1,5 +1,6 @@
 ---
 title: "Pvar Types"
+sidebar_label: "Pvar Types"
 ---
 
 :::info

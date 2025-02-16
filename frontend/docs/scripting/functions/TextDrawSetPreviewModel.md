@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetPreviewModel
+sidebar_label: TextDrawSetPreviewModel
 description: Set the model for a textdraw model preview.
 tags: ["textdraw"]
 ---

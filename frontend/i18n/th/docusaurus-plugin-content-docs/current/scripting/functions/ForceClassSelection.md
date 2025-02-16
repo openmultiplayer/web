@@ -1,5 +1,6 @@
 ---
 title: ForceClassSelection
+sidebar_label: ForceClassSelection
 description: Forces a player to go back to class selection.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: Callback này được gọi khi một người chơi xem trước lớp sơn của một xe trong cửa hàng tùy chỉnh.
 tags: ["vehicle"]
 ---

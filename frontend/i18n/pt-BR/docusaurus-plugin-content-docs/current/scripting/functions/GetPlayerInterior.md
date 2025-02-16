@@ -1,5 +1,6 @@
 ---
 title: GetPlayerInterior
+sidebar_label: GetPlayerInterior
 description: Obtém o interior atual de um jogador.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: EditPlayerObject
+sidebar_label: EditPlayerObject
 description: Omogućuje igračima da uređuju player objekat (položaj i rotacija) s GUI-jem i mišem.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Camera Modes
+sidebar_label: Camera Modes
 ---
 
 ## คำอธิบาย

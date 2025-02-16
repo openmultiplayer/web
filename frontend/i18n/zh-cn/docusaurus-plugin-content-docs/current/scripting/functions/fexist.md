@@ -1,5 +1,6 @@
 ---
 title: fexist
+sidebar_label: fexist
 description: Checks if a specific file exists in the scriptfiles directory.
 tags: ["file management"]
 ---

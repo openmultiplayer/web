@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayer
+sidebar_label: OnPlayerClickPlayer
 description: Ова функција се позива када играч двапут кликне на играча на табели резултата.
 tags: ["player"]
 ---

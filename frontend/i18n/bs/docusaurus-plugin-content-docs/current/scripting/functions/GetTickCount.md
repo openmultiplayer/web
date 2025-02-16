@@ -1,5 +1,6 @@
 ---
 title: GetTickCount
+sidebar_label: GetTickCount
 description: Daje vrijeme trajanja stvarnog servera (ne SA-MP servera) u milisekundama.
 tags: []
 ---

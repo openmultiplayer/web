@@ -1,5 +1,6 @@
 ---
 title: سبک های دیالوگ
+sidebar_label: سبک های دیالوگ
 ---
 
 <div dir="rtl" style={{ textAlign: "right" }}>

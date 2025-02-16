@@ -1,5 +1,6 @@
 ---
 title: fremove
+sidebar_label: fremove
 description: Obriši datoteku.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: Tipuri de lovituri de glonț
+sidebar_label: Tipuri de lovituri de glonț
 ---
 
 :::info

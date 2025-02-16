@@ -1,5 +1,6 @@
 ---
 title: OnUnoccupiedVehicleUpdate
+sidebar_label: OnUnoccupiedVehicleUpdate
 description: Ovaj callback je pozvan kada igračev klijent ažurira/sinhronizuje poziciju vozila kojeg on ne vozi.
 tags: ["vehicle"]
 ---

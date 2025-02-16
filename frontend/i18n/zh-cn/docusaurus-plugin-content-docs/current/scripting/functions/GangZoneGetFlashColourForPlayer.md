@@ -1,5 +1,6 @@
 ---
 title: GangZoneGetFlashColourForPlayer
+sidebar_label: GangZoneGetFlashColourForPlayer
 description: Get the flashing colour of a gangzone for player
 tags: ["player", "gangzone"]
 ---

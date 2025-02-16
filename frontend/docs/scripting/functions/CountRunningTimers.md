@@ -1,5 +1,6 @@
 ---
 title: CountRunningTimers
+sidebar_label: CountRunningTimers
 description: Get the running timers.
 tags: ["timer"]
 ---

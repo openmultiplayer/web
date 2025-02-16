@@ -1,5 +1,6 @@
 ---
 title: GangZoneFlashForPlayer
+sidebar_label: GangZoneFlashForPlayer
 description: Pravi gangzone bljesak za igrača.
 tags: ["player", "gangzone"]
 ---

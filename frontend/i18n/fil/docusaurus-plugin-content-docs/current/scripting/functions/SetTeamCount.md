@@ -1,5 +1,6 @@
 ---
 title: SetTeamCount
+sidebar_label: SetTeamCount
 description: Ginagamit ang function na ito upang baguhin ang dami ng mga team na ginamit sa gamemode.
 tags: []
 ---

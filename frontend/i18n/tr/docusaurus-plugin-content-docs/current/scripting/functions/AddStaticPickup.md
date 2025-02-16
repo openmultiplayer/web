@@ -1,5 +1,6 @@
 ---
 title: AddStaticPickup
+sidebar_label: AddStaticPickup
 description: Bu işlev oyuna "statik" bir toplama ekler.
 tags: []
 ---

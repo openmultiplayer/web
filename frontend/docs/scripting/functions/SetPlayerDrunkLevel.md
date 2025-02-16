@@ -1,5 +1,6 @@
 ---
 title: SetPlayerDrunkLevel
+sidebar_label: SetPlayerDrunkLevel
 description: Sets the drunk level of a player which makes the player's camera sway and vehicles hard to control.
 tags: ["player"]
 ---

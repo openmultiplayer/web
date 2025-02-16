@@ -1,5 +1,6 @@
 ---
 title: floatstr
+sidebar_label: floatstr
 description: Kino-convert ang isang string sa isang float.
 tags: ["string", "floating-point"]
 ---

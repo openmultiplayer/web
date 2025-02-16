@@ -1,5 +1,6 @@
 ---
 title: GetObjectDrawDistance
+sidebar_label: GetObjectDrawDistance
 description: Get the draw distance of an object.
 tags: ["object"]
 ---

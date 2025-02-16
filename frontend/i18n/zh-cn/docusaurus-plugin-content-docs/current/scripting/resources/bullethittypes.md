@@ -1,5 +1,6 @@
 ---
 title: Bullet Hit Types
+sidebar_label: Bullet Hit Types
 ---
 
 :::info

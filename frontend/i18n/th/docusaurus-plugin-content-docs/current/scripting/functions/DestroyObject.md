@@ -1,5 +1,6 @@
 ---
 title: DestroyObject
+sidebar_label: DestroyObject
 description: Destroys (removes) an object that was created using CreateObject.
 tags: []
 ---

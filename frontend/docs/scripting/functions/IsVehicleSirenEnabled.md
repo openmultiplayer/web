@@ -1,5 +1,6 @@
 ---
 title: IsVehicleSirenEnabled
+sidebar_label: IsVehicleSirenEnabled
 description: Checks if a vehicle siren is on or off.
 tags: ["vehicle"]
 ---

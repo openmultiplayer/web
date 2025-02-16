@@ -1,5 +1,6 @@
 ---
 title: GetPVarsUpperIndex
+sidebar_label: GetPVarsUpperIndex
 description: Each PVar (player-variable) has its own unique identification number for lookup, this function returns the highest ID set for a player.
 tags: ["player variable", "pvar"]
 ---

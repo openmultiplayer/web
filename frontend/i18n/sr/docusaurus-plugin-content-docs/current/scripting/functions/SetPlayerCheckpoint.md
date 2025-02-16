@@ -1,5 +1,6 @@
 ---
 title: SetPlayerCheckpoint
+sidebar_label: SetPlayerCheckpoint
 description: Поставља checkpoint (црвени круг) за играча.
 tags: ["player", "checkpoint"]
 ---

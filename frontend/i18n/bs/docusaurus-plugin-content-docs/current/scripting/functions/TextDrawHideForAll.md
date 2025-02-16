@@ -1,5 +1,6 @@
 ---
 title: TextDrawHideForAll
+sidebar_label: TextDrawHideForAll
 description: Sakriva textdraw za sve igrače.
 tags: ["textdraw"]
 ---

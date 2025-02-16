@@ -1,5 +1,6 @@
 ---
 title: ShowPlayerNameTagForPlayer
+sidebar_label: ShowPlayerNameTagForPlayer
 description: Ova funkcija ti omogućava da omogućite/onemogućite iscrtavanje nametag-ova, healthbar-pva i armora igrača koji se prikazuju iznad njegove glave.
 tags: ["player"]
 ---

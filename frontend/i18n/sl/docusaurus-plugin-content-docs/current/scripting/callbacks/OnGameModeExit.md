@@ -1,5 +1,6 @@
 ---
 title: OnGameModeExit
+sidebar_label: OnGameModeExit
 description: Ta "callback" se pokliče, ko se "gamemode" izklopi prek 'gmx', kadar koli se strežnik izklopi, bodisi pod "GameModeExit"
 tags: []
 ---

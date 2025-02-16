@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Callback นี้ถูกเรียกเมื่อแอคเตอร์ถูกสตรีมออกโดยไคลเอนต์ของผู้เล่น
 tags: []
 ---

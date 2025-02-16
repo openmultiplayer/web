@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDeath
+sidebar_label: OnPlayerDeath
 description: Callback này được gọi khi một người chơi chết, có thể là tự sát hoặc bị giết bởi một người chơi khác.
 tags: ["player"]
 ---

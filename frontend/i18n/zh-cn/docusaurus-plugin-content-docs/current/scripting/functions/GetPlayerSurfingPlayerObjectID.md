@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSurfingPlayerObjectID
+sidebar_label: GetPlayerSurfingPlayerObjectID
 description: Returns the ID of the player-object the player is surfing on.
 tags: ["player", "object", "playerobject"]
 ---

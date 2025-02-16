@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClassEx
+sidebar_label: AddPlayerClassEx
 description: Ang function na ito ay eksaktong kapareho ng AddPlayerClass function, kasama ang pagdaragdag ng isang parameter ng koponan.
 tags: ["player"]
 ---

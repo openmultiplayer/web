@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetShadow
+sidebar_label: PlayerTextDrawGetShadow
 description: Get the shadow size on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

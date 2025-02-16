@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSirenStateChange
+sidebar_label: OnVehicleSirenStateChange
 description: Bu geri çağırma bir aracın siren durumu değiştiğinde çağrılır.
 tags: ["vehicle"]
 ---

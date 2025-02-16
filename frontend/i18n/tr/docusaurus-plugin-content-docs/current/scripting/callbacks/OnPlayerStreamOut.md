@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamOut
+sidebar_label: OnPlayerStreamOut
 description: Bu fonksiyon, bir oyuncu başka bir oyuncunun istemcisinden stream alanından çıktığında çağrılır.
 tags: ["player"]
 ---

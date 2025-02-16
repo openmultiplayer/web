@@ -1,5 +1,6 @@
 ---
 title: "SA:MP Query Mechanism"
+sidebar_label: "SA:MP Query Mechanism"
 ---
 
 ## Introduction

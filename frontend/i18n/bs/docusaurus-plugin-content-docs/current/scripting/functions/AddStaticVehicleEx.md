@@ -1,5 +1,6 @@
 ---
 title: AddStaticVehicleEx
+sidebar_label: AddStaticVehicleEx
 description: Dodaje 'statično' vozilo (modeli su unaprijed učitani za igrač) u gamemode-u.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: floattan
+sidebar_label: floattan
 description: Get the tangent from a given angle.
 tags: ["math", "floating-point"]
 ---

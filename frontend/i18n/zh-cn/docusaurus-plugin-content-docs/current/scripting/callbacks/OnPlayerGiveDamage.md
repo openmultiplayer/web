@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamage
+sidebar_label: OnPlayerGiveDamage
 description: This callback is called when a player gives damage to another player.
 tags: ["player"]
 ---

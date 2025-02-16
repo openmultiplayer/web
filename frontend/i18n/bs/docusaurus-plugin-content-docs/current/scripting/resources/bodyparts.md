@@ -1,5 +1,6 @@
 ---
 title: Dijelovi tijela
+sidebar_label: Dijelovi tijela
 ---
 
 :::info

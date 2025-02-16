@@ -1,5 +1,6 @@
 ---
 title: GetMenuPos
+sidebar_label: GetMenuPos
 description: Get the x/y screen position of the menu.
 tags: ["menu"]
 ---

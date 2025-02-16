@@ -1,5 +1,6 @@
 ---
 title: Допринеси
+sidebar_label: Допринеси
 description: Како допринети SA-MP Wiki и open.mp документацији.
 ---
 
@@ -85,6 +86,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 ```mdx
 ---
 title: Моја документација
+sidebar_label: Моја документација
 description: Ово је страна о стварима и стварчицама и бургерима, јупи!
 ---
 ```

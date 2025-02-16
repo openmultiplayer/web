@@ -1,5 +1,6 @@
 ---
 title: Açı Modları
+sidebar_label: Açı Modları
 description: Açı ölçüm birimleri için SI birim sabitleri.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: fstat
+sidebar_label: fstat
 description: Return the size and the timestamp of a file.
 tags: ["file management"]
 ---

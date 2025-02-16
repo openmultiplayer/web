@@ -1,5 +1,6 @@
 ---
 title: GetGravity
+sidebar_label: GetGravity
 description: Kunin ang kasalukuyang naka set na gravity.
 tags: []
 ---

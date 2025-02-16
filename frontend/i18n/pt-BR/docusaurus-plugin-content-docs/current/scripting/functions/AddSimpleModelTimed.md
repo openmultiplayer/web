@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModelTimed
+sidebar_label: AddSimpleModelTimed
 description: Adiciona um novo modelo de objeto simples personalizado para download.
 tags: []
 ---

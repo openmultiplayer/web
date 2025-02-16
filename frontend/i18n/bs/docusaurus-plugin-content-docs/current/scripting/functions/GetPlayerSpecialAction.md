@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSpecialAction
+sidebar_label: GetPlayerSpecialAction
 description: Dohvaća trenutnu specijalnu akciju igrača.
 tags: ["player"]
 ---

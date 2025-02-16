@@ -1,5 +1,6 @@
 ---
 title: GetPlayerState
+sidebar_label: GetPlayerState
 description: Dobij trenutno stanje igrača.
 tags: ["player"]
 ---

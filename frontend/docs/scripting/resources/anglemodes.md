@@ -1,5 +1,6 @@
 ---
 title: Angle Modes
+sidebar_label: Angle Modes
 description: SI unit constants for measuring angles.
 ---
 

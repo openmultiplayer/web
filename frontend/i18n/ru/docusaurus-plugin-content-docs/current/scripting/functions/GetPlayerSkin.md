@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSkin
+sidebar_label: GetPlayerSkin
 description: Возвращает скин игрока.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetVehicleRespawnTick
+sidebar_label: GetVehicleRespawnTick
 description: Get the respawn tick of a vehicle.
 tags: ["vehicle"]
 ---

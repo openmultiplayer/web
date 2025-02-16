@@ -1,5 +1,6 @@
 ---
 title: GetPlayerCameraAspectRatio
+sidebar_label: GetPlayerCameraAspectRatio
 description: Retrieves the aspect ratio of a player's camera.
 tags: ["player"]
 ---

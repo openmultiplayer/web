@@ -1,5 +1,6 @@
 ---
 title: "Color Fix"
+sidebar_label: "Color Fix"
 descripion: Основна скрипта за додавање више боја играча.
 ---
 

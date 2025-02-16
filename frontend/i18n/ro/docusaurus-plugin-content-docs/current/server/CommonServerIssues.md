@@ -1,5 +1,6 @@
 ---
 title: Probleme comune
+sidebar_label: Probleme comune
 ---
 
 ## Serverul se blochează instantaneu la pornire

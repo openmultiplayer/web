@@ -1,5 +1,6 @@
 ---
 title: SendRconCommand
+sidebar_label: SendRconCommand
 description: Šalje RCON (Remote Console) komandu.
 tags: ["administration"]
 ---

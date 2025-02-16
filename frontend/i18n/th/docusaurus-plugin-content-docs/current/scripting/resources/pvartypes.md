@@ -1,5 +1,6 @@
 ---
 title: "Pvar Types"
+sidebar_label: "Pvar Types"
 ---
 
 Types of player variables, to be used in [Per-player variable system.](../tutorials/perplayervariablesystem)

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerCameraPos
+sidebar_label: SetPlayerCameraPos
 description: Postavlja kameru u određenu poziciju za igrača.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Dialog Styles
+sidebar_label: Dialog Styles
 ---
 
 :::note

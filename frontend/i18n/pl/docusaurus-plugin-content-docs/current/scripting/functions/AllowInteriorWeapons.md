@@ -1,5 +1,6 @@
 ---
 title: AllowInteriorWeapons
+sidebar_label: AllowInteriorWeapons
 description: Przełącza możliwość używania broni we wnętrzach.
 tags: []
 ---

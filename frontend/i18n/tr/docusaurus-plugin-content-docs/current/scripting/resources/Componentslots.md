@@ -1,5 +1,6 @@
 ---
 title: Araç parça yuvaları
+sidebar_label: Araç parça yuvaları
 ---
 
 :::info

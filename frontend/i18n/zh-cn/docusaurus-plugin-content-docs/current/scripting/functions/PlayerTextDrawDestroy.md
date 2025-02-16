@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawDestroy
+sidebar_label: PlayerTextDrawDestroy
 description: Destroy a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

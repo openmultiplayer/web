@@ -1,5 +1,6 @@
 ---
 title: 更新日志
+sidebar_label: 更新日志
 description: open.mp 开发进度和更新日志.
 ---
 

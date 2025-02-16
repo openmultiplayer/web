@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWeather
+sidebar_label: GetPlayerWeather
 description: Get a player's weather.
 tags: ["player"]
 ---

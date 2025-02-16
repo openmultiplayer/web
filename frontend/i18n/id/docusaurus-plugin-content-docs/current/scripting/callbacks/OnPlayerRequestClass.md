@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestClass
+sidebar_label: OnPlayerRequestClass
 description: Callback ini akan terpanggil ketika seorang pemain mengubah kelas pada pemilihan kelas (dan saat pemilihan kelas pertama kali muncul).
 tags: ["player"]
 ---

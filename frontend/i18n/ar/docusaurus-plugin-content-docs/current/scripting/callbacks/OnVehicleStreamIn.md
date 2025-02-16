@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: يتم استدعاء هذا الاستدعاء أو الكال باك عند تدفق سيارة بواسطة كلاينت اللاعب
 tags: []
 ---

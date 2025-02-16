@@ -1,5 +1,6 @@
 ---
 title: OnIncomingConnection
+sidebar_label: OnIncomingConnection
 description: Esta callback é chamada quando um endereço de IP tenta conectar no servidor.
 tags: []
 ---

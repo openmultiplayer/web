@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSurfingOffsets
+sidebar_label: GetPlayerSurfingOffsets
 description: Gets a player's surfing offsets.
 tags: ["player"]
 ---

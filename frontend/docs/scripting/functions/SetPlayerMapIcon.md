@@ -1,5 +1,6 @@
 ---
 title: SetPlayerMapIcon
+sidebar_label: SetPlayerMapIcon
 description: Place an icon/marker on a player's map.
 tags: ["player"]
 ---

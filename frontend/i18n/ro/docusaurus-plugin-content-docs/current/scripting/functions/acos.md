@@ -1,5 +1,6 @@
 ---
 title: acos
+sidebar_label: acos
 description: .
 tags: []
 ---

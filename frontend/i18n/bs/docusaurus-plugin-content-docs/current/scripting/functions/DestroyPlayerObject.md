@@ -1,5 +1,6 @@
 ---
 title: DestroyPlayerObject
+sidebar_label: DestroyPlayerObject
 description: Uništava objekat igrača kreiran sa CreatePlayerObject.
 tags: ["player"]
 ---

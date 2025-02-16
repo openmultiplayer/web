@@ -1,5 +1,6 @@
 ---
 title: TogglePlayerWidescreen
+sidebar_label: TogglePlayerWidescreen
 description: Toggle player's widescreen.
 tags: ["player"]
 ---

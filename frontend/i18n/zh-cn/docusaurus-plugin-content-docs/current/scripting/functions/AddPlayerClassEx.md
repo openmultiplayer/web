@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClassEx
+sidebar_label: AddPlayerClassEx
 description: This function is exactly the same as the AddPlayerClass function, with the addition of a team parameter.
 tags: ["player", "class"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: AttachCameraToPlayerObject
+sidebar_label: AttachCameraToPlayerObject
 description: Oyuncunun kamerası bir başka oyuncunun nesnesine bağlanır.
 tags: ["player", "camera"]
 ---

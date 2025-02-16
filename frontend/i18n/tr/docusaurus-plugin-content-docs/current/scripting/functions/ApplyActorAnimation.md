@@ -1,5 +1,6 @@
 ---
 title: ApplyActorAnimation
+sidebar_label: ApplyActorAnimation
 description: Aktörlere animasyon yaptırma.
 tags: []
 ---

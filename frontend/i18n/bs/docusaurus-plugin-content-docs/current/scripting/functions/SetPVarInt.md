@@ -1,5 +1,6 @@
 ---
 title: SetPVarInt
+sidebar_label: SetPVarInt
 description: Postavi cjelobrojnu player (igračevu) varijablu.
 tags: ["pvar"]
 ---

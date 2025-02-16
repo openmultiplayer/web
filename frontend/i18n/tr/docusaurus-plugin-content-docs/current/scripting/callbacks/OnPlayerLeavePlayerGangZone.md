@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeavePlayerGangZone
+sidebar_label: OnPlayerLeavePlayerGangZone
 description: Bu geri çağırma, bir oyuncu bir player gangzone'dan çıktığında çağrılır.
 tags: ["player", "gangzone"]
 ---

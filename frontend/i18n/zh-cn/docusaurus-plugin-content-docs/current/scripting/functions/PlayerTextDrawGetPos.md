@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetPos
+sidebar_label: PlayerTextDrawGetPos
 description: Gets the position of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: Pozvan kada se vozilo pojavi u igračevom klijentu.
 tags: ["vehicle"]
 ---

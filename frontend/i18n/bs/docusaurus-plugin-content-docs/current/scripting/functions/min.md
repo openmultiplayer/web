@@ -1,5 +1,6 @@
 ---
 title: min
+sidebar_label: min
 description: .
 tags: []
 ---

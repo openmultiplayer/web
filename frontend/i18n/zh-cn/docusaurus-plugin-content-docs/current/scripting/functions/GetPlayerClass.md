@@ -1,5 +1,6 @@
 ---
 title: GetPlayerClass
+sidebar_label: GetPlayerClass
 description: Get the class data.
 tags: ["class"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: ResumeRecordingPlayback
+sidebar_label: ResumeRecordingPlayback
 description: This will resume the paused recording.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnScriptCash
+sidebar_label: OnScriptCash
 description: Ce rappel est déclenché lorsque quelque chose dans le jeu, comme les casinos, donne de l'argent au joueur.
 tags: ["player"]
 ---

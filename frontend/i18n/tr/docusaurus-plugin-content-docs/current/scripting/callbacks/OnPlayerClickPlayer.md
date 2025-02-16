@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayer
+sidebar_label: OnPlayerClickPlayer
 description: Bu geri çağırma oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
 tags: ["player"]
 ---

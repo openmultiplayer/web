@@ -1,5 +1,6 @@
 ---
 title: BanEx
+sidebar_label: BanEx
 description: Oyuncuyu özel bir nedenle yasaklama.
 tags: ["administration"]
 ---

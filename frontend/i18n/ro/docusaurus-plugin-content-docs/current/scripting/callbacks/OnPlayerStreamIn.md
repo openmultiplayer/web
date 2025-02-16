@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamIn
+sidebar_label: OnPlayerStreamIn
 description: Acest callback este apelat atunci când un jucător este transmis în flux de către clientul altui jucător.
 tags: ["player"]
 ---

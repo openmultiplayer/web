@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description: Adds a new custom character model for download.
 tags: []
 ---

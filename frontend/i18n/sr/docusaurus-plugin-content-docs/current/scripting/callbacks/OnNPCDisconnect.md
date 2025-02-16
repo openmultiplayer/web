@@ -1,5 +1,6 @@
 ---
 title: OnNPCDisconnect
+sidebar_label: OnNPCDisconnect
 description: Ова повратна функција се позива када се NPC дисконектује са сервера.
 tags: ["npc"]
 ---

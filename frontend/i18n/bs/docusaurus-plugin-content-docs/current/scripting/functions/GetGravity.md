@@ -1,5 +1,6 @@
 ---
 title: GetGravity
+sidebar_label: GetGravity
 description: Dobij trenutno postavljenu gravitaciju servera.
 tags: []
 ---

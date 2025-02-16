@@ -1,5 +1,6 @@
 ---
 title: PlayerSpectateVehicle
+sidebar_label: PlayerSpectateVehicle
 description: Sets a player to spectate another vehicle.
 tags: ["player", "vehicle"]
 ---

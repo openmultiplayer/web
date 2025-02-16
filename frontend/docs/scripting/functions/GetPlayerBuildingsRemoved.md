@@ -1,5 +1,6 @@
 ---
 title: GetPlayerBuildingsRemoved
+sidebar_label: GetPlayerBuildingsRemoved
 description: Gets the number of removed buildings for a player.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerGravity
+sidebar_label: GetPlayerGravity
 description: Get a player's gravity.
 tags: ["player"]
 ---

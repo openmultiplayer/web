@@ -1,5 +1,6 @@
 ---
 title: UpdatePlayer3DTextLabelText
+sidebar_label: UpdatePlayer3DTextLabelText
 description: Ažurira igračevom 3D Text Labelu text i boju.
 tags: ["player", "3dtextlabel"]
 ---

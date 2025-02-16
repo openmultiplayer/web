@@ -1,5 +1,6 @@
 ---
 title: SetVehicleVelocity
+sidebar_label: SetVehicleVelocity
 description: Postavlja X, Y i Z brzinu vozila.
 tags: ["vehicle"]
 ---

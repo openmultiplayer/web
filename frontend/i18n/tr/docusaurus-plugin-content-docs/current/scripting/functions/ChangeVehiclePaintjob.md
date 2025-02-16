@@ -1,5 +1,6 @@
 ---
 title: ChangeVehiclePaintjob
+sidebar_label: ChangeVehiclePaintjob
 description: Aracın kaplamasını değiştirme. (düz renkler için bkz. ChangeVehicleColor).
 tags: ["vehicle"]
 ---

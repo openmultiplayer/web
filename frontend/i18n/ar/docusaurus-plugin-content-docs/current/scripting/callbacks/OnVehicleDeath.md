@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDeath
+sidebar_label: OnVehicleDeath
 description: يتم إستدعاء هذا الكالباك عند يتم تدمير السيارة
 tags: ["vehicle"]
 ---

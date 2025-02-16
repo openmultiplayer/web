@@ -1,5 +1,6 @@
 ---
 title: Create3DTextLabel
+sidebar_label: Create3DTextLabel
 description: 3D Metin Etiketi oluşturma.
 tags: ["3dtextlabel"]
 ---

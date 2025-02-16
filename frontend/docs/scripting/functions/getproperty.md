@@ -1,5 +1,6 @@
 ---
 title: getproperty
+sidebar_label: getproperty
 description: Get a specific property from the memory, the string is returned as a packed string!
 tags: ["core", "property"]
 ---

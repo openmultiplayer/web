@@ -1,5 +1,6 @@
 ---
 title: GetSVarInt
+sidebar_label: GetSVarInt
 description: Gets an integer server variable's value.
 tags: []
 ---

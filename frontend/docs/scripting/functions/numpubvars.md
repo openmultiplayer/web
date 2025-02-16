@@ -1,5 +1,6 @@
 ---
 title: numpubvars
+sidebar_label: numpubvars
 description: Counts how many public variables there are in the script.
 tags: ["core", "pubvar", "public variable"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetConsoleVarAsString
+sidebar_label: GetConsoleVarAsString
 description: Get the string value of a console variable.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: DestroyVehicle
+sidebar_label: DestroyVehicle
 description: Löscht ein Fahrzeug.
 tags: ["vehicle"]
 ---

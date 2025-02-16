@@ -1,5 +1,6 @@
 ---
 title: SendRconCommand
+sidebar_label: SendRconCommand
 description: Nagpapadala ng command na RCON (Remote Console).
 tags: ["administration"]
 ---

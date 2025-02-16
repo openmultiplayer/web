@@ -1,5 +1,6 @@
 ---
 title: PlayAudioStreamForPlayer
+sidebar_label: PlayAudioStreamForPlayer
 description: Reprodukujte 'audio stream' za igrač.
 tags: ["player"]
 ---

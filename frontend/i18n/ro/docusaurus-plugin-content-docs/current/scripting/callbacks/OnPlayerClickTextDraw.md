@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickTextDraw
+sidebar_label: OnPlayerClickTextDraw
 description: Acest callback este apelat atunci când un jucător face clic pe un textdraw sau anulează modul de selectare cu tasta ESC.
 tags: ["player", "textdraw"]
 ---

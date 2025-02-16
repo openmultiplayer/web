@@ -1,5 +1,6 @@
 ---
 title: DisableMenuRow
+sidebar_label: DisableMenuRow
 description: Onemogućite određeni red u meniju za sve igrače.
 tags: ["menu"]
 ---

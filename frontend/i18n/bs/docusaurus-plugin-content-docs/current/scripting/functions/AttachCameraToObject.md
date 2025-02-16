@@ -1,5 +1,6 @@
 ---
 title: AttachCameraToObject
+sidebar_label: AttachCameraToObject
 description: Možete koristiti ovu funkciju da prikvačite kameru igrača za objekt.
 tags: []
 ---

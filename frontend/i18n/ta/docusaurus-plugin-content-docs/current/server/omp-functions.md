@@ -1,5 +1,6 @@
 ---
 title: open.mp functions
+sidebar_label: open.mp functions
 description: புதிய செயல்பாடுகள் மற்றும் அழைப்புகள்.
 ---
 

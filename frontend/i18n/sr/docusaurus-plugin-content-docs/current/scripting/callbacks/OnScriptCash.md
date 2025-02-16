@@ -1,5 +1,6 @@
 ---
 title: OnScriptCash
+sidebar_label: OnScriptCash
 description: Ова повратна функција се позива када нешто у игри, као што су казина, даје играчу новац.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPVarFloat
+sidebar_label: GetPVarFloat
 description: Gets a player variable as a float.
 tags: ["player variable", "pvar"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetWeather
+sidebar_label: SetWeather
 description: Mengatur cuaca untuk semua player.
 tags: []
 ---

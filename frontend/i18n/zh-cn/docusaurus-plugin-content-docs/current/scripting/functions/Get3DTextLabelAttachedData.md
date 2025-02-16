@@ -1,5 +1,6 @@
 ---
 title: Get3DTextLabelAttachedData
+sidebar_label: Get3DTextLabelAttachedData
 description: Gets the 3D text label attached data.
 tags: ["3dtextlabel"]
 ---

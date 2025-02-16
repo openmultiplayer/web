@@ -1,5 +1,6 @@
 ---
 title: GangZoneHideForPlayer
+sidebar_label: GangZoneHideForPlayer
 description: Skriva gangzonu za igrača.
 tags: ["player", "gangzone"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: acos
+sidebar_label: acos
 description: Mengambil nilai kebalikan dari kosinus dalam derajat.
 tags: ["math"]
 ---

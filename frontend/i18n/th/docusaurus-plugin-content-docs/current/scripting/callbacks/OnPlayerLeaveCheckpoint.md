@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeaveCheckpoint
+sidebar_label: OnPlayerLeaveCheckpoint
 description: This callback is called when a player leaves the checkpoint set for them by SetPlayerCheckpoint.
 tags: ["player", "checkpoint"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: getpubvar
+sidebar_label: getpubvar
 description: Gets a specific public variable from the current script.
 tags: ["core", "pubvar", "public variable"]
 ---

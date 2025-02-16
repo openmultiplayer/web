@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawAlignment
+sidebar_label: PlayerTextDrawAlignment
 description: Set the text alignment of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

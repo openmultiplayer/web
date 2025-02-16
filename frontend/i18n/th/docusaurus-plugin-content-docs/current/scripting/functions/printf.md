@@ -1,5 +1,6 @@
 ---
 title: printf
+sidebar_label: printf
 description: Outputs a formatted string on the console (the server window, not the in-game chat).
 tags: []
 ---

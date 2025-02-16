@@ -1,5 +1,6 @@
 ---
 title: GetPlayerPickupVirtualWorld
+sidebar_label: GetPlayerPickupVirtualWorld
 description: Gets the virtual world ID of a player-pickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

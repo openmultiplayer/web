@@ -1,5 +1,6 @@
 ---
 title: BanEx
+sidebar_label: BanEx
 description: Ban a player with a reason.
 tags: ["administration"]
 ---

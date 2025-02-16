@@ -1,5 +1,6 @@
 ---
 title: AttachTrailerToVehicle
+sidebar_label: AttachTrailerToVehicle
 description: Prikvačite vozilo za drugo vozilo kao prikolicu.
 tags: ["vehicle"]
 ---

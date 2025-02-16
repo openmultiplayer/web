@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamIn
+sidebar_label: OnPlayerStreamIn
 description: Callback ini akan terpanggil ketika pemain lain berada di jangkauan stream dari klien pemain.
 tags: ["player"]
 ---

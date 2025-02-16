@@ -1,5 +1,6 @@
 ---
 title: GetPlayerLastSyncedTrailerID
+sidebar_label: GetPlayerLastSyncedTrailerID
 description: Gets the player's last synced trailer ID.
 tags: ["player", "vehicle"]
 ---

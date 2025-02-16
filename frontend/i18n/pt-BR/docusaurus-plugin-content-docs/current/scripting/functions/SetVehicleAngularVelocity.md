@@ -1,5 +1,6 @@
 ---
 title: SetVehicleAngularVelocity
+sidebar_label: SetVehicleAngularVelocity
 description: Define a velocidade angular X, Y e Z de um veículo.
 tags: ["vehicle"]
 ---

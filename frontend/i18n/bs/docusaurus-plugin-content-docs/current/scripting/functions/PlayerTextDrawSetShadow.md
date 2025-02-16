@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetShadow
+sidebar_label: PlayerTextDrawSetShadow
 description: Dodaje sjenku na donju desnu stranu teksta u player-textdrawu.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

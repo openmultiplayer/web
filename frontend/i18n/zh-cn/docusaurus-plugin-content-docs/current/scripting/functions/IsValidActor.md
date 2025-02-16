@@ -1,5 +1,6 @@
 ---
 title: IsValidActor
+sidebar_label: IsValidActor
 description: Checks if an actor ID is valid.
 tags: ["actor"]
 ---

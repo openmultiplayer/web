@@ -1,5 +1,6 @@
 ---
 title: IsPlayerWidescreenToggled
+sidebar_label: IsPlayerWidescreenToggled
 description: Checks if a player widescreen is on or off.
 tags: ["player"]
 ---

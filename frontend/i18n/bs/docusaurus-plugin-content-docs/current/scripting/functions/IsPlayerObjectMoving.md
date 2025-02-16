@@ -1,5 +1,6 @@
 ---
 title: IsPlayerObjectMoving
+sidebar_label: IsPlayerObjectMoving
 description: Provjerava ako se dati player objectid pomjera.
 tags: ["player"]
 ---

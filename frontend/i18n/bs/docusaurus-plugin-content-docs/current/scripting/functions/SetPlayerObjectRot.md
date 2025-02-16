@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectRot
+sidebar_label: SetPlayerObjectRot
 description: Postavi rotaciju player objekta na X, Y i Z osi.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptInit
+sidebar_label: OnFilterScriptInit
 description: Callback นี้ถูกเรียกเมื่อฟิลเตอร์สคริปต์เริ่มต้นทำงาน (โหลด)
 tags: []
 ---

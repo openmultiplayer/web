@@ -1,5 +1,6 @@
 ---
 title: Guia de desenvolvimento de Plugins
+sidebar_label: Guia de desenvolvimento de Plugins
 description: Um guia simples para desenvolvolver plugins ( Tradução de um post do sampforum )
 ---
 

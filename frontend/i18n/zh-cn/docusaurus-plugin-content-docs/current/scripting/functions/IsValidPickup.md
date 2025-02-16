@@ -1,5 +1,6 @@
 ---
 title: IsValidPickup
+sidebar_label: IsValidPickup
 description: Checks if a pickup is valid.
 tags: ["pickup"]
 ---

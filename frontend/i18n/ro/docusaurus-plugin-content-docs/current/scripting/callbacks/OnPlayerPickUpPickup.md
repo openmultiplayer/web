@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPickup
+sidebar_label: OnPlayerPickUpPickup
 description: Apelat atunci când un jucător preia un pick-up creat cu CreatePickup.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: ShowNameTags
+sidebar_label: ShowNameTags
 description: Toggle the drawing of nametags, health bars and armor bars above players.
 tags: []
 ---

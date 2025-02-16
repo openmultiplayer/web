@@ -1,5 +1,6 @@
 ---
 title: TextDrawAlignment
+sidebar_label: TextDrawAlignment
 description: Set the alignment of text in a text draw.
 tags: ["textdraw"]
 ---

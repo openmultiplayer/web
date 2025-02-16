@@ -1,5 +1,6 @@
 ---
 title: floatabs
+sidebar_label: floatabs
 description: This function returns the absolute value of float.
 tags: []
 ---

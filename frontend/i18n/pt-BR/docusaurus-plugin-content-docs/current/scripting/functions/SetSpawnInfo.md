@@ -1,5 +1,6 @@
 ---
 title: SetSpawnInfo
+sidebar_label: SetSpawnInfo
 description: Esta função pode ser usada para mudar as informações de spawn de um jogador específico.
 tags: []
 ---

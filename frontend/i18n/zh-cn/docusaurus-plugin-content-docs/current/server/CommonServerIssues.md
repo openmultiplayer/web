@@ -1,5 +1,6 @@
 ---
 title: Common Server Issues
+sidebar_label: Common Server Issues
 ---
 
 ## 服务器启动时立即崩溃

@@ -1,5 +1,6 @@
 ---
 title: getarg
+sidebar_label: getarg
 description: Get an argument that was passed to a function.
 tags: ["core", "arguments", "args"]
 ---

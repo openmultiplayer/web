@@ -1,5 +1,6 @@
 ---
 title: "Scripting: Taguri"
+sidebar_label: "Scripting: Taguri"
 description: Un ghid pentru taguri
 ---
 

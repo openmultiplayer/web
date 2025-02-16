@@ -1,5 +1,6 @@
 ---
 title: Is3DTextLabelStreamedIn
+sidebar_label: Is3DTextLabelStreamedIn
 description: Checks if a 3D text label is streamed in for a player.
 tags: ["3dtextlabel"]
 ---

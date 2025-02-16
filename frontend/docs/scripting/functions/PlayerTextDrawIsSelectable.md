@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawIsSelectable
+sidebar_label: PlayerTextDrawIsSelectable
 description: Checks if a player-textdraw is selectable.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

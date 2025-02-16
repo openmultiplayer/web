@@ -1,5 +1,6 @@
 ---
 title: gettime
+sidebar_label: gettime
 description: Retorna o horário atual do servidor, aonde será guardado nas variáveis &hora, &minuto e &segundo.
 tags: []
 ---

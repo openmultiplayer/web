@@ -1,5 +1,6 @@
 ---
 title: GetWorldTime
+sidebar_label: GetWorldTime
 description: Get the current world time.
 tags: ["worldtime"]
 ---

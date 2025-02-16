@@ -1,5 +1,6 @@
 ---
 title: GetSVarType
+sidebar_label: GetSVarType
 description: Gets the type (integer, float or string) of a server variable.
 tags: ["server variable", "svar"]
 ---

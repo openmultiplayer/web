@@ -1,5 +1,6 @@
 ---
 title: SetPlayerWantedLevel
+sidebar_label: SetPlayerWantedLevel
 description: Set a player's wanted level (6 brown stars under HUD).
 tags: ["player"]
 ---

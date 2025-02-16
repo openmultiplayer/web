@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterGangZone
+sidebar_label: OnPlayerEnterGangZone
 description: This callback is called when a player enters a gangzone
 tags: ["player", "gangzone"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: strcat
+sidebar_label: strcat
 description: This function concatenates (joins together) two strings into the destination string.
 tags: ["string"]
 ---

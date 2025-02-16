@@ -1,5 +1,6 @@
 ---
 title: AttachPlayerObjectToVehicle
+sidebar_label: AttachPlayerObjectToVehicle
 description: Prikvači player objekat za vozilo.
 tags: ["player", "vehicle"]
 ---

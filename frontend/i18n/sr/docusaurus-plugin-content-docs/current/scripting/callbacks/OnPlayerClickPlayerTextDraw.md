@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayerTextDraw
+sidebar_label: OnPlayerClickPlayerTextDraw
 description: Ова функција се позива када играч кликне на текстдрава играча.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

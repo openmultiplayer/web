@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: Ова повратна функција се позива када се возило стримује на клијент играча.
 tags: ["vehicle"]
 ---

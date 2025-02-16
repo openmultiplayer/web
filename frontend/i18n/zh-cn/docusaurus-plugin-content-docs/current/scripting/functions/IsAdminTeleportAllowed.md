@@ -1,5 +1,6 @@
 ---
 title: IsAdminTeleportAllowed
+sidebar_label: IsAdminTeleportAllowed
 description: Checks if the RCON admins allowed to teleport by right-clicking on the map.
 tags: []
 ---

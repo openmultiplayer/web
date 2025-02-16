@@ -1,5 +1,6 @@
 ---
 title: AttachTrailerToVehicle
+sidebar_label: AttachTrailerToVehicle
 description: Bir aracı bir başka araca römork olarak bağlama.
 tags: ["vehicle"]
 ---

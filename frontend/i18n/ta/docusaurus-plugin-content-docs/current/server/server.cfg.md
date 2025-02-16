@@ -1,5 +1,6 @@
 ---
 title: "server.cfg"
+sidebar_label: "server.cfg"
 description: சேவையக கட்டமைப்பு கோப்பு.
 ---
 

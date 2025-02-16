@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDisconnect
+sidebar_label: OnPlayerDisconnect
 description: Callback ini akan terpanggil ketika pemain keluar dari server.
 tags: ["player"]
 ---

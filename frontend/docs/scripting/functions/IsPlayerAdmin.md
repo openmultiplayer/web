@@ -1,5 +1,6 @@
 ---
 title: IsPlayerAdmin
+sidebar_label: IsPlayerAdmin
 description: Check if a player is logged in as an RCON admin.
 tags: ["player", "rcon", "administration"]
 ---

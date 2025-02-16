@@ -1,5 +1,6 @@
 ---
 title: floatstr
+sidebar_label: floatstr
 description: Converts a string to a float.
 tags: []
 ---

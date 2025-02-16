@@ -1,5 +1,6 @@
 ---
 title: GivePlayerMoney
+sidebar_label: GivePlayerMoney
 description: به یک بازیکن مشخص شده پول بدهید یا از او پول بگیرید
 ---
 

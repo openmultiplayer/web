@@ -1,5 +1,6 @@
 ---
 title: AttachObjectToObject
+sidebar_label: AttachObjectToObject
 description: Objeyi objeye bağlar.
 tags: []
 ---

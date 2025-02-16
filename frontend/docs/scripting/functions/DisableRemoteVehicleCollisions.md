@@ -1,5 +1,6 @@
 ---
 title: DisableRemoteVehicleCollisions
+sidebar_label: DisableRemoteVehicleCollisions
 description: Disables collisions between occupied vehicles for a player.
 tags: ["vehicle"]
 ---

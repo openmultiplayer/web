@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTime
+sidebar_label: GetPlayerTime
 description: Doznajte trenutno igračevo vrijeme igre.
 tags: ["player"]
 ---

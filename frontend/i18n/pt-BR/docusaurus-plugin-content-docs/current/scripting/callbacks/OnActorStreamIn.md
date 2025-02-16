@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Esta callback é chamada quando um ator é carregado (torna-se visível) para um jogador.
 tags: []
 ---

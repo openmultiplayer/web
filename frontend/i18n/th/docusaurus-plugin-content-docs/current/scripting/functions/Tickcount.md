@@ -1,5 +1,6 @@
 ---
 title: tickcount
+sidebar_label: tickcount
 description: This function can be used as a replacement for GetTickCount, as it returns the number of milliseconds since the start-up of the server.
 tags: []
 ---

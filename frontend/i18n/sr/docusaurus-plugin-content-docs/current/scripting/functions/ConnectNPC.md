@@ -1,5 +1,6 @@
 ---
 title: ConnectNPC
+sidebar_label: ConnectNPC
 description: Повезује NPC-a на сервер.
 tags: ["npc"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: fseek
+sidebar_label: fseek
 description: Promijenite trenutni položaj u datoteci.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: Body parts
+sidebar_label: Body parts
 ---
 
 :::info

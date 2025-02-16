@@ -1,5 +1,6 @@
 ---
 title: GetVehicleRotationQuat
+sidebar_label: GetVehicleRotationQuat
 description: Vraća rotaciju vozila na svim osama kao kvaternion.
 tags: ["vehicle"]
 ---

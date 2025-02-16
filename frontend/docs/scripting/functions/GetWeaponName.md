@@ -1,5 +1,6 @@
 ---
 title: GetWeaponName
+sidebar_label: GetWeaponName
 description: Get the name of a weapon.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInVehicle
+sidebar_label: IsPlayerInVehicle
 description: Verifica se um jogador está em um veículo específico.
 tags: ["player", "vehicle"]
 ---

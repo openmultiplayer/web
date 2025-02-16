@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: Ова функција се позива када играч унесе команду у прозор за ћаскање на клијенту.
 tags: ["player"]
 ---

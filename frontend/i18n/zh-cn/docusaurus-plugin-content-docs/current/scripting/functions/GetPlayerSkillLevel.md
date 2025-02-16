@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSkillLevel
+sidebar_label: GetPlayerSkillLevel
 description: Get the player skill level of a certain weapon type.
 tags: ["player"]
 ---

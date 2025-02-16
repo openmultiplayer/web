@@ -1,5 +1,6 @@
 ---
 title: "Anahtar Kelimeler: Operatörler"
+sidebar_label: "Anahtar Kelimeler: Operatörler"
 ---
 
 ## `char`

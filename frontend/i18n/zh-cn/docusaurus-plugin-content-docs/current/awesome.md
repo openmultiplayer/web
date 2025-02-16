@@ -1,5 +1,6 @@
 ---
 title: Awesome
+sidebar_label: Awesome
 description: 用于 SA-MP 开发的实用工具、库、游戏模式、脚本和插件的精选列表.
 ---
 

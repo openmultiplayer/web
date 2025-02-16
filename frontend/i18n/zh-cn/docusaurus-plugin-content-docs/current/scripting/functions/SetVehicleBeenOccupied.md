@@ -1,5 +1,6 @@
 ---
 title: SetVehicleBeenOccupied
+sidebar_label: SetVehicleBeenOccupied
 description: Sets the vehicle's occupancy.
 tags: ["vehicle"]
 ---

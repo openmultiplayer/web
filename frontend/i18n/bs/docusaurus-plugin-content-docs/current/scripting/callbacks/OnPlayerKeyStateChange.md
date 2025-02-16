@@ -1,5 +1,6 @@
 ---
 title: OnPlayerKeyStateChange
+sidebar_label: OnPlayerKeyStateChange
 description: Ovaj callback je pozvan kada se stanje bilo koje podržane tipke promijeni (pritisnuta/puštena).
 tags: ["player"]
 ---

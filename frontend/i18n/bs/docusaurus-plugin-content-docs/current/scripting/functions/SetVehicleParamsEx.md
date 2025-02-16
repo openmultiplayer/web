@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsEx
+sidebar_label: SetVehicleParamsEx
 description: Postavlja parametre vozila za sve igrače.
 tags: ["vehicle"]
 ---

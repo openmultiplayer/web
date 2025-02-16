@@ -1,5 +1,6 @@
 ---
 title: AttachCameraToPlayerObject
+sidebar_label: AttachCameraToPlayerObject
 description: Nag-attach ng camera ng player sa isang player-object.
 tags: ["player", "camera"]
 ---

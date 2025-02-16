@@ -1,5 +1,6 @@
 ---
 title: "Keywords: Operators"
+sidebar_label: "Keywords: Operators"
 ---
 
 ## `char`

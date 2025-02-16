@@ -1,5 +1,6 @@
 ---
 title: DisableInteriorEnterExits
+sidebar_label: DisableInteriorEnterExits
 description: Disable all the interior entrances and exits in the game (the yellow arrows at doors).
 tags: []
 ---

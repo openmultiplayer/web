@@ -1,5 +1,6 @@
 ---
 title: ShowMenuForPlayer
+sidebar_label: ShowMenuForPlayer
 description: Prikazuje prethodno kreirani meni za igrača.
 tags: ["player", "menu"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerHealth
+sidebar_label: GetPlayerHealth
 description: A função GetPlayerHealth permite obter a vida de um jogador.
 tags: ["player"]
 ---

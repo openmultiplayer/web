@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDamageStatusUpdate
+sidebar_label: OnVehicleDamageStatusUpdate
 description: Essa callback é executada quando elementos do veíclo como portas, rodas, painéis, ou luzes mudam seu status de dano.
 tags: ["vehicle"]
 ---

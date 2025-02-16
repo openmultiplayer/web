@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawDestroy
+sidebar_label: PlayerTextDrawDestroy
 description: Uništi player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

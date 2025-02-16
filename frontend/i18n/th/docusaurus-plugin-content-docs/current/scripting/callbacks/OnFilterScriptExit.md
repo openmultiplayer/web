@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Callback นี้ถูกเรียกเมื่อฟิลเตอร์สคริปต์ยกเลิกการโหลด
 tags: []
 ---

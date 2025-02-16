@@ -1,5 +1,6 @@
 ---
 title: db_field_name
+sidebar_label: db_field_name
 description: Returns the name of a field at a particular index.
 tags: ["sqlite"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: PlayAudioStreamForPlayer
+sidebar_label: PlayAudioStreamForPlayer
 description: Пушта аудио стрим играчу.
 tags: ["player"]
 ---

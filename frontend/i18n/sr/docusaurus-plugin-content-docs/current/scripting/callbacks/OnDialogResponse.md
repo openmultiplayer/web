@@ -1,5 +1,6 @@
 ---
 title: OnDialogResponse
+sidebar_label: OnDialogResponse
 description: Ова повратна функција се позива када играч одговори на дијалог који је приказан коришћењем ShowPlayerDialog, било да кликне на дугме, притисне ENTER/ESC, или двоструко кликне на ставку листе (ако користите дијалог стилa листе).
 tags: ["dialog"]
 ---

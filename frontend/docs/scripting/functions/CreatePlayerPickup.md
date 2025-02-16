@@ -1,5 +1,6 @@
 ---
 title: CreatePlayerPickup
+sidebar_label: CreatePlayerPickup
 description: Creates a pickup which will be visible to only one player.
 tags: ["player", "pickup", "playerpickup"]
 ---

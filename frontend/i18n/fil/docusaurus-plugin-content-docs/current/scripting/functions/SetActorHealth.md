@@ -1,5 +1,6 @@
 ---
 title: SetActorHealth
+sidebar_label: SetActorHealth
 description: I-set ang health ng isang actor.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: asin
+sidebar_label: asin
 description: .
 tags: []
 ---

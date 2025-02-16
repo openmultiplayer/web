@@ -1,5 +1,6 @@
 ---
 title: fread
+sidebar_label: fread
 description: Pročitajte jedan redak iz datoteke.
 tags: []
 ---

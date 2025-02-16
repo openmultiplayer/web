@@ -1,5 +1,6 @@
 ---
 title: OnNPCExitVehicle
+sidebar_label: OnNPCExitVehicle
 description: Ce rappel est appelé lorsqu'un PNJ quitte un véhicule.
 tags: ["npc"]
 ---

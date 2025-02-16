@@ -1,5 +1,6 @@
 ---
 title: GetActorFacingAngle
+sidebar_label: GetActorFacingAngle
 description: Aktörün açısını kontrol etme.
 tags: ["actor"]
 ---

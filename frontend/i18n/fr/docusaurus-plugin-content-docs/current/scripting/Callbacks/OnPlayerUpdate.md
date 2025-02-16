@@ -1,5 +1,6 @@
 ---
 title: OnPlayerUpdate
+sidebar_label: OnPlayerUpdate
 description: Cette callback est appelée à chaque fois qu'un client/joueur modifie son status auprès du serveur.
 tags: ["player"]
 ---

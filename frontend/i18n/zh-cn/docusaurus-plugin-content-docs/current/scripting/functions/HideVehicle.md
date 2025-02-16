@@ -1,5 +1,6 @@
 ---
 title: HideVehicle
+sidebar_label: HideVehicle
 description: Hides a vehicle from the game.
 tags: ["vehicle"]
 ---

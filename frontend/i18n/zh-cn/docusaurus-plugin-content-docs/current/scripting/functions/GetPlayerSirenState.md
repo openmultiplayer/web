@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSirenState
+sidebar_label: GetPlayerSirenState
 description: Gets the siren state of the player's vehicle.
 tags: ["player", "vehicle"]
 ---

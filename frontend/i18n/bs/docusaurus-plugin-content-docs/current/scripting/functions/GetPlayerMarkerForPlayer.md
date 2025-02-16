@@ -1,5 +1,6 @@
 ---
 title: GetPlayerMarkerForPlayer
+sidebar_label: GetPlayerMarkerForPlayer
 description: Dobij boju igračovog nametag-a i radara za drugog igrača.
 tags: ["player"]
 ---

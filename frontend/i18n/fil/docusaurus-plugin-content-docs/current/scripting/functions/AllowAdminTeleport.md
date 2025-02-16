@@ -1,5 +1,6 @@
 ---
 title: AllowAdminTeleport
+sidebar_label: AllowAdminTeleport
 description: Tutukuyin ng function na ito kung ang mga admin ng RCON ay mai-teleport sa kanilang waypoint kapag nagtakda sila ng isa.
 tags: []
 ---

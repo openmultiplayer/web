@@ -1,5 +1,6 @@
 ---
 title: strcopy
+sidebar_label: strcopy
 description: Copies a string into the destination string.
 tags: ["string"]
 ---

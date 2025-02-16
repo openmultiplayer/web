@@ -1,5 +1,6 @@
 ---
 title: Interior IDs
+sidebar_label: Interior IDs
 ---
 
 # How to get the Interior ID

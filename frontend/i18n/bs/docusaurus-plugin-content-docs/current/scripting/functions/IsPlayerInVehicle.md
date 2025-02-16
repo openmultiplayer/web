@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInVehicle
+sidebar_label: IsPlayerInVehicle
 description: Provjerava da li je igrač u određenom vozilu.
 tags: ["player", "vehicle"]
 ---

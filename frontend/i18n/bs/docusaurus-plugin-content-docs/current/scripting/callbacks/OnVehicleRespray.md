@@ -1,5 +1,6 @@
 ---
 title: OnVehicleRespray
+sidebar_label: OnVehicleRespray
 description: Ovaj callback je pozvan kada igrač napusti mod shop, bilo da boja jeste ili nije promijenjena.
 tags: ["vehicle"]
 ---

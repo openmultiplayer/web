@@ -1,5 +1,6 @@
 ---
 title: AddServerRule
+sidebar_label: AddServerRule
 description: Bir sunucu kuralı ekleyin.
 tags: ["rule"]
 ---

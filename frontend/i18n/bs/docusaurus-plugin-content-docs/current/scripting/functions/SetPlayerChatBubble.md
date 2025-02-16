@@ -1,5 +1,6 @@
 ---
 title: SetPlayerChatBubble
+sidebar_label: SetPlayerChatBubble
 description: Kreira chat balončić iznad igračevog nametag-a.
 tags: ["player"]
 ---

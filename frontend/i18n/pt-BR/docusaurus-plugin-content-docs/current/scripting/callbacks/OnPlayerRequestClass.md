@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestClass
+sidebar_label: OnPlayerRequestClass
 description: Chamado quando um jogador muda de classe na seleção de classe (e quando a seleção de classe aparece pela primeira vez).
 tags: ["player"]
 ---

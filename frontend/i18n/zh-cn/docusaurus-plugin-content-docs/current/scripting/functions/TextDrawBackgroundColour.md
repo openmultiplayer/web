@@ -1,5 +1,6 @@
 ---
 title: TextDrawBackgroundColour
+sidebar_label: TextDrawBackgroundColour
 description: Adjusts the text draw area background colour (the outline/shadow - NOT the box.
 tags: ["textdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerCameraLookAt
+sidebar_label: SetPlayerCameraLookAt
 description: Postavi smjer u kojem će gledati kamera igrača.
 tags: ["player"]
 ---

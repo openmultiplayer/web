@@ -1,5 +1,6 @@
 ---
 title: ispacked
+sidebar_label: ispacked
 description: Provjerava je li zadati string spakovan.
 tags: []
 ---

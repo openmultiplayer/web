@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description: İndirmek için yeni bir özel karakter modeli ekler.
 tags: []
 ---

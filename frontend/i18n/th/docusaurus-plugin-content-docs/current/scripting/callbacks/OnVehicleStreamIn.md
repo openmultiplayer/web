@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: Called when a vehicle is streamed to a player's client.
 tags: ["vehicle"]
 ---

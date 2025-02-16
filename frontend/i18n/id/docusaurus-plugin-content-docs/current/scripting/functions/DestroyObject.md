@@ -1,5 +1,6 @@
 ---
 title: DestroyObject
+sidebar_label: DestroyObject
 description: Menghancurkan (menghapus) Object yang dibuat menggunakan CreateObject.
 tags: []
 ---

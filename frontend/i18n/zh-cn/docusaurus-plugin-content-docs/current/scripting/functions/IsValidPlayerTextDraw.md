@@ -1,5 +1,6 @@
 ---
 title: IsValidPlayerTextDraw
+sidebar_label: IsValidPlayerTextDraw
 description: Checks if a player-textdraw is valid.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

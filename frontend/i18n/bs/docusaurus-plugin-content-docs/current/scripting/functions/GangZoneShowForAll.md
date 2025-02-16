@@ -1,5 +1,6 @@
 ---
 title: GangZoneShowForAll
+sidebar_label: GangZoneShowForAll
 description: Prikazuje gangzonu sa željenom bojom svim igračima.
 tags: ["gangzone"]
 ---

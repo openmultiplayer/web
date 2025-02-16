@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetProportional
+sidebar_label: PlayerTextDrawSetProportional
 description: Appears to scale text spacing to a proportional ratio.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

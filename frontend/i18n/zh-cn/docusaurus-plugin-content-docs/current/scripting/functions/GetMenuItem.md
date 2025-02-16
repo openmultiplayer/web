@@ -1,5 +1,6 @@
 ---
 title: GetMenuItem
+sidebar_label: GetMenuItem
 description: Get the text in the specified cell - addressed by column and row.
 tags: ["menu"]
 ---

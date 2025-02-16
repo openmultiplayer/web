@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClassEx
+sidebar_label: AddPlayerClassEx
 description: Аналог функции AddPlayerClass, только с дополнительным параметром teamid.
 tags: ["player"]
 ---

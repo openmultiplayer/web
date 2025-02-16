@@ -1,5 +1,6 @@
 ---
 title: NetStats_ConnectionStatus
+sidebar_label: NetStats_ConnectionStatus
 description: Gets the player's current connection status.
 tags: []
 ---

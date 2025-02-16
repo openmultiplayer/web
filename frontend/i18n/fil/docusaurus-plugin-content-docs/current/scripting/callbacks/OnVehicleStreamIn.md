@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: Ang callback na ito ay tinatawag kapag ang isang sasakyan ay na-stream sa client ng isang manlalaro.
 tags: ["vehicle"]
 ---

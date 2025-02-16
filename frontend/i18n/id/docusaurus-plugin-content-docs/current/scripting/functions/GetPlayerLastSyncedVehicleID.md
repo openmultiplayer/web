@@ -1,5 +1,6 @@
 ---
 title: GetPlayerLastSyncedVehicleID
+sidebar_label: GetPlayerLastSyncedVehicleID
 description: Gets the player's last synced vehicle ID.
 tags: ["player", "vehicle"]
 ---

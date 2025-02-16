@@ -1,5 +1,6 @@
 ---
 title: DB_GetFieldIntByName
+sidebar_label: DB_GetFieldIntByName
 description: Gets the contents of the field as an integer with the specified field name.
 keywords:
   - sqlite

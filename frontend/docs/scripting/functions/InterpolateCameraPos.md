@@ -1,5 +1,6 @@
 ---
 title: InterpolateCameraPos
+sidebar_label: InterpolateCameraPos
 description: Move a player's camera from one position to another, within the set time.
 tags: ["player", "interpolate"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPickupStreamOut
+sidebar_label: OnPickupStreamOut
 description: Ова повратна функција се позива када pickup напусти визуелни опсег играча.
 tags: ["player"]
 ---

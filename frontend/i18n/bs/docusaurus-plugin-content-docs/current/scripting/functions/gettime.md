@@ -1,5 +1,6 @@
 ---
 title: gettime
+sidebar_label: gettime
 description: Dobij trenutno vrijeme servera koje će biti pohranjeno u varijablama &hour, &minute and &second.
 tags: []
 ---

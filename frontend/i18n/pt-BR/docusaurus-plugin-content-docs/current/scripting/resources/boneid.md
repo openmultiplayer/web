@@ -1,5 +1,6 @@
 ---
 title: IDs Ossos
+sidebar_label: IDs Ossos
 ---
 
 :::note

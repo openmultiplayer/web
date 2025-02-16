@@ -1,5 +1,6 @@
 ---
 title: OnVehicleMod
+sidebar_label: OnVehicleMod
 description: Bu fonksiyon, herhangi bir araca modifiye uygulandığında çağrılır.
 tags: ["vehicle"]
 ---

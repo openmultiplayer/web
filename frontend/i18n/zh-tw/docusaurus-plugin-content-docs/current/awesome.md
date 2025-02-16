@@ -1,5 +1,6 @@
 ---
 title: 一些不錯的東西
+sidebar_label: 一些不錯的東西
 description: 對製作腳本有幫助的工具、函數庫和插件的列表。
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: SetPlayerMapIcon
+sidebar_label: SetPlayerMapIcon
 description: Postavi ikonu/marker na mapu igrača.
 tags: ["player"]
 ---

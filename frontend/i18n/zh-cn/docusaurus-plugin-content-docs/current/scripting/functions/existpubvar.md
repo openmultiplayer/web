@@ -1,5 +1,6 @@
 ---
 title: existpubvar
+sidebar_label: existpubvar
 description: Checks if a specific public variable exists in the current script.
 tags: ["core", "pubvar", "public variable"]
 ---

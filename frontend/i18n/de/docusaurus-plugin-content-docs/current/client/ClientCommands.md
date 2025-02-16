@@ -1,5 +1,6 @@
 ---
 title: "Client Befehle"
+sidebar_label: "Client Befehle"
 description: Liste aller Client Befehle.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetTextSize
+sidebar_label: TextDrawGetTextSize
 description: Gets the X axis and Y axis of the textdraw.
 tags: ["textdraw"]
 ---

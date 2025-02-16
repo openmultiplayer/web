@@ -1,5 +1,6 @@
 ---
 title: SetPlayerFightingStyle
+sidebar_label: SetPlayerFightingStyle
 description: Set a player's special fighting style.
 tags: ["player"]
 ---

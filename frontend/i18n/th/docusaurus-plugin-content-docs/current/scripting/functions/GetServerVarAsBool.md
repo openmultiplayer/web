@@ -1,5 +1,6 @@
 ---
 title: GetServerVarAsBool
+sidebar_label: GetServerVarAsBool
 description: Get the boolean value of a server variable.
 tags: []
 ---

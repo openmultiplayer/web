@@ -1,5 +1,6 @@
 ---
 title: float
+sidebar_label: float
 description: Konvertuje cijeli broj u float.
 tags: []
 ---

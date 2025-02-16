@@ -1,5 +1,6 @@
 ---
 title: OnClientMessage
+sidebar_label: OnClientMessage
 description: Этот коллбэк вызывается, когда NPC видит сообщение в чате.
 tags: []
 ---

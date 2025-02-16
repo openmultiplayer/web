@@ -1,5 +1,6 @@
 ---
 title: fputchar
+sidebar_label: fputchar
 description: Write one character to a file.
 tags: []
 ---

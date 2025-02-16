@@ -1,5 +1,6 @@
 ---
 title: SetPlayerPickupVirtualWorld
+sidebar_label: SetPlayerPickupVirtualWorld
 description: Sets the virtual world ID of a player-pickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

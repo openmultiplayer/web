@@ -1,5 +1,6 @@
 ---
 title: Delete3DTextLabel
+sidebar_label: Delete3DTextLabel
 description: Obriši 3D text label (kreiran sa Create3DTextLabel).
 tags: ["3dtextlabel"]
 ---

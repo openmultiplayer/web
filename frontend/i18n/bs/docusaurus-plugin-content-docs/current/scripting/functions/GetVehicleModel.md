@@ -1,5 +1,6 @@
 ---
 title: GetVehicleModel
+sidebar_label: GetVehicleModel
 description: Dobij ID modela vozila.
 tags: ["vehicle"]
 ---

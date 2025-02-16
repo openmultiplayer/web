@@ -1,5 +1,6 @@
 ---
 title: IsPlayerSpawned
+sidebar_label: IsPlayerSpawned
 description: Checks if a player is spawned.
 tags: ["player"]
 ---

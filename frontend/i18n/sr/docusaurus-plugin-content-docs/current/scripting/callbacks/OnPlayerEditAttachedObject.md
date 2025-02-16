@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditAttachedObject
+sidebar_label: OnPlayerEditAttachedObject
 description: Ова функција се позива када играч заврши режим уређивања прикључених објеката.
 tags: ["player", "object", "attachment"]
 ---

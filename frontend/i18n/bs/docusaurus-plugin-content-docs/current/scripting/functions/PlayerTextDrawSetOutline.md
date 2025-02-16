@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetOutline
+sidebar_label: PlayerTextDrawSetOutline
 description: Postavite outline za player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

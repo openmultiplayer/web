@@ -1,5 +1,6 @@
 ---
 title: FindModelFileNameFromCRC
+sidebar_label: FindModelFileNameFromCRC
 description: Pronađite postojeću prilagođenu kožu ili datoteku jednostavnog objektnog modela.
 tags: []
 ---

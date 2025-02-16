@@ -1,5 +1,6 @@
 ---
 title: Dnevnik promjena
+sidebar_label: Dnevnik promjena
 description: open.mp razvojni napredak i dnevnik promjena.
 ---
 

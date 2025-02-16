@@ -1,5 +1,6 @@
 ---
 title: CreateExplosionForPlayer
+sidebar_label: CreateExplosionForPlayer
 description: Creates an explosion that is only visible to a single player.
 tags: ["player"]
 ---

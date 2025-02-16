@@ -1,5 +1,6 @@
 ---
 title: "samp.cfg"
+sidebar_label: "samp.cfg"
 description: Guia configuração samp.cfg.
 ---
 

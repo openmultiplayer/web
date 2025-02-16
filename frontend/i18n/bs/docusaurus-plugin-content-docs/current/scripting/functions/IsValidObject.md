@@ -1,5 +1,6 @@
 ---
 title: IsValidObject
+sidebar_label: IsValidObject
 description: Provjerava da li je navedeni ID objekta postojeći.
 tags: []
 ---

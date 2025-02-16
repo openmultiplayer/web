@@ -1,5 +1,6 @@
 ---
 title: GetSVarString
+sidebar_label: GetSVarString
 description: Gets a string server variable's value.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSurfingVehicleID
+sidebar_label: GetPlayerSurfingVehicleID
 description: Get the ID of the vehicle that the player is surfing (stuck to the roof of).
 tags: ["player", "vehicle"]
 ---

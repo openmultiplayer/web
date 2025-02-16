@@ -1,5 +1,6 @@
 ---
 title: TextDrawLetterSize
+sidebar_label: TextDrawLetterSize
 description: Sets the width and height of the letters.
 tags: ["textdraw"]
 ---

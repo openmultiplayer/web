@@ -1,5 +1,6 @@
 ---
 title: LimitPlayerMarkerRadius
+sidebar_label: LimitPlayerMarkerRadius
 description: Postavite radijus markera/oznake igrača.
 tags: ["player"]
 ---

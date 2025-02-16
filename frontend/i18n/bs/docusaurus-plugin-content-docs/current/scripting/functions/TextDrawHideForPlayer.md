@@ -1,5 +1,6 @@
 ---
 title: TextDrawHideForPlayer
+sidebar_label: TextDrawHideForPlayer
 description: Sakriva textdraw za određenog igrača.
 tags: ["player", "textdraw"]
 ---

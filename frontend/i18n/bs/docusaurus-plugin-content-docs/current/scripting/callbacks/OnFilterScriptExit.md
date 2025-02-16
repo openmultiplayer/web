@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Ovaj callback se poziva kada se filterskripta stopirala.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetVehicleZAngle
+sidebar_label: GetVehicleZAngle
 description: Nabavite rotaciju vozilo na Z osi (nagib).
 tags: ["vehicle"]
 ---

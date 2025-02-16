@@ -1,5 +1,6 @@
 ---
 title: GetGravity_FR
+sidebar_label: GetGravity_FR
 description: Permets d'obtenir la valeur de la gravité.
 tags: []
 ---

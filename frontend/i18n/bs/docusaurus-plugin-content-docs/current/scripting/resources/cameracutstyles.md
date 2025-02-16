@@ -1,5 +1,6 @@
 ---
 title: Stilovi Rezanja Kamere
+sidebar_label: Stilovi Rezanja Kamere
 ---
 
 :::info

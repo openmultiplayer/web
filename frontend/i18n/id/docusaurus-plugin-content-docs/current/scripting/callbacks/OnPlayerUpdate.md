@@ -1,5 +1,6 @@
 ---
 title: OnPlayerUpdate
+sidebar_label: OnPlayerUpdate
 description: Callback ini akan terpanggil ketika klien/pemain memperbarui server dengan statusnya.
 tags: ["player"]
 ---

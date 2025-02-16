@@ -1,5 +1,6 @@
 ---
 title: HideObjectForPlayer
+sidebar_label: HideObjectForPlayer
 description: Hide an object for a player.
 tags: ["player", "object"]
 ---

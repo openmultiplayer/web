@@ -1,5 +1,6 @@
 ---
 title: floatsub
+sidebar_label: floatsub
 description: Oduzima jedan float od drugog.
 tags: []
 ---

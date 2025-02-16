@@ -1,5 +1,6 @@
 ---
 title: SetTimer
+sidebar_label: SetTimer
 description: Postavlja 'timer' za pozvati funkciju nakon određenog vremena.
 tags: []
 ---

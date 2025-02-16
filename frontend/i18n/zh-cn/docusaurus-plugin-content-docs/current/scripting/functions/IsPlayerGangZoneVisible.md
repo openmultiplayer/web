@@ -1,5 +1,6 @@
 ---
 title: IsPlayerGangZoneVisible
+sidebar_label: IsPlayerGangZoneVisible
 description: Check if the player gangzone is visible.
 tags: ["player", "gangzone", "playergangzone"]
 ---

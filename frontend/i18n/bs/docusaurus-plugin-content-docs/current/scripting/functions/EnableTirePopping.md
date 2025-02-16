@@ -1,5 +1,6 @@
 ---
 title: EnableTirePopping
+sidebar_label: EnableTirePopping
 description: Sa ovom funkcijom možete da omogućite ili onemogućite pucanje guma.
 tags: []
 ---

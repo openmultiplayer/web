@@ -1,5 +1,6 @@
 ---
 title: TogglePlayerControllable
+sidebar_label: TogglePlayerControllable
 description: Uključuje / isključuje da li igrač može kontrolirati svog lika ili ne.
 tags: ["player"]
 ---

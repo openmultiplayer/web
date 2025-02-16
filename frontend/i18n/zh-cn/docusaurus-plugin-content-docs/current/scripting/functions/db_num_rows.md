@@ -1,5 +1,6 @@
 ---
 title: db_num_rows
+sidebar_label: db_num_rows
 description: Returns the number of rows from a db_query.
 keywords:
   - sqlite

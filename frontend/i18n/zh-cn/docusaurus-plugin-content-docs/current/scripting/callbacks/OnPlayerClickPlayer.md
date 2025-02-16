@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayer
+sidebar_label: OnPlayerClickPlayer
 description: This callback is called when a player double-clicks on a player on the scoreboard.
 tags: ["player"]
 ---

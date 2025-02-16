@@ -1,5 +1,6 @@
 ---
 title: TogglePlayerControllable
+sidebar_label: TogglePlayerControllable
 description: Toggles whether a player can control their character or not.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnNPCSpawn
+sidebar_label: OnNPCSpawn
 description: Tinatawag ang callback na ito kapag nagkaroon ng NPC.
 tags: ["npc"]
 ---

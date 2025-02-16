@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Ta "callback" se pokliče, ko se "actor" neha pojavi v igralčevi "client".
 tags: []
 ---

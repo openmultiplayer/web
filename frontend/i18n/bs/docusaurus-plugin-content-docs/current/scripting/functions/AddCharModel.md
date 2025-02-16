@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description: Dodaje novog prilagođenog karaktera za preuzimanje.
 tags: []
 ---

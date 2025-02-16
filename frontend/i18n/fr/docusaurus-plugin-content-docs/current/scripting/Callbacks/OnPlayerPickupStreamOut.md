@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickupStreamOut
+sidebar_label: OnPlayerPickupStreamOut
 description: Ce rappel est appelé lorsque qu'un objet joueur-pickup quitte la portée visuelle du joueur.
 tags: ["player", "pickup", "playerpickup"]
 ---

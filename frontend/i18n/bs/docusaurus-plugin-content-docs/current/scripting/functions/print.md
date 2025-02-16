@@ -1,5 +1,6 @@
 ---
 title: print
+sidebar_label: print
 description: Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (server_log.txt).
 tags: []
 ---

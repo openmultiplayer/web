@@ -1,5 +1,6 @@
 ---
 title: SetWeather
+sidebar_label: SetWeather
 description: Postavite vrijeme (weather) za sve igrače.
 tags: []
 ---

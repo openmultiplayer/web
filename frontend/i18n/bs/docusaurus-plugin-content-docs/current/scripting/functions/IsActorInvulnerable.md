@@ -1,5 +1,6 @@
 ---
 title: IsActorInvulnerable
+sidebar_label: IsActorInvulnerable
 description: Provjerite je li aktor neranjiv.
 tags: []
 ---

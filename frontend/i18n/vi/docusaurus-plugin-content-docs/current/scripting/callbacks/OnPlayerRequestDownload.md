@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestDownload
+sidebar_label: OnPlayerRequestDownload
 description: Callback này được gọi khi một người chơi yêu cầu tải xuống mô hình tùy chỉnh.
 tags: ["player"]
 ---

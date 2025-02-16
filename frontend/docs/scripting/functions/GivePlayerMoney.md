@@ -1,5 +1,6 @@
 ---
 title: GivePlayerMoney
+sidebar_label: GivePlayerMoney
 description: Give money to or take money from a player.
 tags: ["player"]
 ---

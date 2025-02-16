@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetPreviewModel
+sidebar_label: PlayerTextDrawSetPreviewModel
 description: Sets a player textdraw 3D preview sprite of a specified model ID.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

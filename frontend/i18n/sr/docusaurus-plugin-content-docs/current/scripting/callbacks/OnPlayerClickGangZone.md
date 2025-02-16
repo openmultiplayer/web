@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickGangZone
+sidebar_label: OnPlayerClickGangZone
 description: Ова повратна функција се позива када играч кликне на гангзону на мапи у паузном менију (десним кликом).
 tags: ["player", "gangzone"]
 ---

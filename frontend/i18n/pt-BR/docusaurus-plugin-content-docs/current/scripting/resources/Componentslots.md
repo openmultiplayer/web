@@ -1,5 +1,6 @@
 ---
 title: Slots de Componentes
+sidebar_label: Slots de Componentes
 ---
 
 :::info

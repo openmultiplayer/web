@@ -1,5 +1,6 @@
 ---
 title: GetMenuItems
+sidebar_label: GetMenuItems
 description: Get the number of rows in the given column.
 tags: ["menu"]
 ---

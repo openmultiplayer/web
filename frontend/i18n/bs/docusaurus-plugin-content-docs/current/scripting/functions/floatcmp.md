@@ -1,5 +1,6 @@
 ---
 title: floatcmp
+sidebar_label: floatcmp
 description: floatcmp se može koristiti za međusobno uspoređivanje vrijednosti plutajućeg stanja, kako bi se potvrdila usporedba.
 tags: []
 ---

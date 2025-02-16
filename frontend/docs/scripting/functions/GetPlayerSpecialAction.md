@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSpecialAction
+sidebar_label: GetPlayerSpecialAction
 description: Retrieves a player's current special action.
 tags: ["player"]
 ---

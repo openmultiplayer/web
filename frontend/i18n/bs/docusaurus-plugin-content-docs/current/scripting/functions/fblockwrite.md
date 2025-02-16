@@ -1,5 +1,6 @@
 ---
 title: fblockwrite
+sidebar_label: fblockwrite
 description: Zapišite podatke u datoteku u binarnom formatu, zanemarujući linijske kočnice i kodiranje.
 tags: []
 ---

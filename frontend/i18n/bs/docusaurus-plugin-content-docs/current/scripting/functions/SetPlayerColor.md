@@ -1,5 +1,6 @@
 ---
 title: SetPlayerColor
+sidebar_label: SetPlayerColor
 description: Postavlja boju igračevog nametag-a i markera/oznake (bljeskalica na mapi/radaru).
 tags: ["player"]
 ---

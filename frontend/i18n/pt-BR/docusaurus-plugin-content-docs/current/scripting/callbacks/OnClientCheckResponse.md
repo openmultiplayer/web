@@ -1,5 +1,6 @@
 ---
 title: OnClientCheckResponse
+sidebar_label: OnClientCheckResponse
 description: Essa callback é executada quando a requisição enviada pela função SendClientCheck é completa.
 tags: []
 ---

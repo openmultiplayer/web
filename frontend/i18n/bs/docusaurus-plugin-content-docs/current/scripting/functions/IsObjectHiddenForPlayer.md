@@ -1,5 +1,6 @@
 ---
 title: IsObjectHiddenForPlayer
+sidebar_label: IsObjectHiddenForPlayer
 description: Provjerava da li je objekat sakriven za igrača.
 tags: ["player", "object"]
 ---

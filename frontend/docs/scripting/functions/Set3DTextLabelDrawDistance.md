@@ -1,5 +1,6 @@
 ---
 title: Set3DTextLabelDrawDistance
+sidebar_label: Set3DTextLabelDrawDistance
 description: Sets the 3D text label draw distance.
 tags: ["3dtextlabel"]
 ---

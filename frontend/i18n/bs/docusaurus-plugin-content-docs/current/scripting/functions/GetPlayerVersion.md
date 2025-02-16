@@ -1,5 +1,6 @@
 ---
 title: GetPlayerVersion
+sidebar_label: GetPlayerVersion
 description: Returna/vraća verziju SA-MP klijenta, kako je izvijestio igrač.
 tags: ["player"]
 ---

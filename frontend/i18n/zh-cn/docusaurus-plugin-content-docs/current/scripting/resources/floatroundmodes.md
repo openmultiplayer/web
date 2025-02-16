@@ -1,5 +1,6 @@
 ---
 title: Floatround Modes
+sidebar_label: Floatround Modes
 description: The rounding modes used with floatround.
 sidebar_label: Floatround Modes
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetPreviewRot
+sidebar_label: TextDrawSetPreviewRot
 description: Postavlja rotaciju i zumiranje 3D pregleda modela (3D model preview) textdrawa.
 tags: ["textdraw"]
 ---

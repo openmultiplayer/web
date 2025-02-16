@@ -1,5 +1,6 @@
 ---
 title: GameTextForPlayer
+sidebar_label: GameTextForPlayer
 description: Shows 'game text' (on-screen text) for a certain length of time for a specific player.
 tags: ["player", "gametext"]
 ---

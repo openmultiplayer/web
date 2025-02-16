@@ -1,5 +1,6 @@
 ---
 title: floatcmp
+sidebar_label: floatcmp
 description: floatcmp can be used to compare float values to each other, to validate the comparison.
 tags: []
 ---

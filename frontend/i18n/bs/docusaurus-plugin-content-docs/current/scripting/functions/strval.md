@@ -1,5 +1,6 @@
 ---
 title: strval
+sidebar_label: strval
 description: Pretvori string u cijeli broj.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: Paintjobs
+sidebar_label: Paintjobs
 description: Paint Jobs that can be applied on specific vehicles.
 ---
 

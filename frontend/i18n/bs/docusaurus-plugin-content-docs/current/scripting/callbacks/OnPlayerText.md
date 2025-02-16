@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: Pozvano kada igrač pošalje chat poruku.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Vehicle Door Status
+sidebar_label: Vehicle Door Status
 description: Vehicle door status definitions.
 ---
 

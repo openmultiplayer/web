@@ -1,5 +1,6 @@
 ---
 title: UpdateVehicleDamageStatus
+sidebar_label: UpdateVehicleDamageStatus
 description: Postavlja različite statuse vizuelnog oštećenja vozila, kao što su ispucale gume, slomljena svjetla i oštećeni paneli.
 tags: ["vehicle"]
 ---

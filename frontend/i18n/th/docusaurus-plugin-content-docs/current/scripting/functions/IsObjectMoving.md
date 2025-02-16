@@ -1,5 +1,6 @@
 ---
 title: IsObjectMoving
+sidebar_label: IsObjectMoving
 description: Checks if the given objectid is moving.
 tags: []
 ---

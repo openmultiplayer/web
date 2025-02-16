@@ -1,5 +1,6 @@
 ---
 title: PlayCrimeReportForPlayer
+sidebar_label: PlayCrimeReportForPlayer
 description: Ova funkcija reproducira prijavu zločina za igrača - baš kao i kod jednog igrača kada CJ počini zločin.
 tags: ["player"]
 ---

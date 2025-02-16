@@ -1,5 +1,6 @@
 ---
 title: CallLocalFunction
+sidebar_label: CallLocalFunction
 description: Poziva javnu funkciju iz skripte u kojoj se koristi.
 tags: []
 ---

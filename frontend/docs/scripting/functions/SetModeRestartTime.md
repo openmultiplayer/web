@@ -1,5 +1,6 @@
 ---
 title: SetModeRestartTime
+sidebar_label: SetModeRestartTime
 description: Sets the delay between loading main scripts, in seconds.
 tags: []
 ---

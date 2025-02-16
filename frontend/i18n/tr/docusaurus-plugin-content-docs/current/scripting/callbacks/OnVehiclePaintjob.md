@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: Fonksiyon, oyuncu bulunduğu araca kaplama uygulandığında çağrılır.
 tags: ["vehicle"]
 ---

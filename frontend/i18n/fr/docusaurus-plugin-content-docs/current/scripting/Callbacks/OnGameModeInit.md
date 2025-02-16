@@ -1,5 +1,6 @@
 ---
 title: OnGameModeInit
+sidebar_label: OnGameModeInit
 description: Cette callback est appelée quand le gamemode démarre.
 tags: [gamemode, démarré, loaded, started, chargé]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SendClientMessageToAllf
+sidebar_label: SendClientMessageToAllf
 description: Displays a formatted message in chat to all players.
 tags: []
 ---

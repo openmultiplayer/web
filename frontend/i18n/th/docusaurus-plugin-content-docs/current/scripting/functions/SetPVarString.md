@@ -1,5 +1,6 @@
 ---
 title: SetPVarString
+sidebar_label: SetPVarString
 description: Saves a string into a player variable.
 tags: ["pvar"]
 ---

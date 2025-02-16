@@ -1,5 +1,6 @@
 ---
 title: OnEnterExitModShop
+sidebar_label: OnEnterExitModShop
 description: Cette callback est appelée quand un joueur entre / sort d'un modshop.
 tags: [modshop, vehicle, véhicule, enterexit, interiorid, interior, intérieur]
 ---

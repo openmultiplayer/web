@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickGangZone
+sidebar_label: OnPlayerClickGangZone
 description: Ce rappel est appelé lorsqu'un joueur clique sur une zone de gang sur la carte du menu de pause (en cliquant avec le bouton droit).
 tags: ["player", "gangzone"]
 ---

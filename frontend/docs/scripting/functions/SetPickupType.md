@@ -1,5 +1,6 @@
 ---
 title: SetPickupType
+sidebar_label: SetPickupType
 description: Sets the type of a pickup.
 tags: ["pickup"]
 ---

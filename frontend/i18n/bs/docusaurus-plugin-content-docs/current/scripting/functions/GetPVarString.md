@@ -1,5 +1,6 @@
 ---
 title: GetPVarString
+sidebar_label: GetPVarString
 description: Dobija igračevu varijablu kao string.
 tags: ["pvar"]
 ---

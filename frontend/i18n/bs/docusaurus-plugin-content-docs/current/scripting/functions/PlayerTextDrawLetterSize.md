@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawLetterSize
+sidebar_label: PlayerTextDrawLetterSize
 description: Postavlja širinu i visinu slova u player-textdrawu.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

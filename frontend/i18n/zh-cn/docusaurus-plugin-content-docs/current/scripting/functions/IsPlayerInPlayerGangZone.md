@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInPlayerGangZone
+sidebar_label: IsPlayerInPlayerGangZone
 description: Check if the player in player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---

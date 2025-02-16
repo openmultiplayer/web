@@ -1,5 +1,6 @@
 ---
 title: Sound IDs
+sidebar_label: Sound IDs
 description: A list of sound IDs used by PlayerPlaySound.
 ---
 

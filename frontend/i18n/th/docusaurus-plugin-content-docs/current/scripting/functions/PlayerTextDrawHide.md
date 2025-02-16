@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawHide
+sidebar_label: PlayerTextDrawHide
 description: Hide a player-textdraw from the player it was created for.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

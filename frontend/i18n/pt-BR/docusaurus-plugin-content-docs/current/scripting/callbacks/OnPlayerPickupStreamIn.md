@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickupStreamIn
+sidebar_label: OnPlayerPickupStreamIn
 description: Este callback é chamado quando um player-pickup entra no campo de visão do jogador.
 tags: ["player", "pickup", "playerpickup"]
 ---

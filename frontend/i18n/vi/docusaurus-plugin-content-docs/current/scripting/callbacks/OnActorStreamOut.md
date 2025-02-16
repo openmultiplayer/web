@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Callback này được gọi khi một actor được truyền ra khỏi khách hàng của người chơi.
 tags: ["actor"]
 

@@ -1,5 +1,6 @@
 ---
 title: StopAudioStreamForPlayer
+sidebar_label: StopAudioStreamForPlayer
 description: Zaustavlja trenutni audio tok za igrača.
 tags: ["player"]
 ---

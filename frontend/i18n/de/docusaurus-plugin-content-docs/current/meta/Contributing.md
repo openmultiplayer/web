@@ -1,5 +1,6 @@
 ---
 title: Contributing
+sidebar_label: Contributing
 description: Wie du bei der Dokumentation des SA-MP Wiki und open.mp mithelfen kannst.
 ---
 
@@ -83,6 +84,7 @@ Zu Anfang _jedes_ Dokuments sollten die Metadaten stehen:
 ```mdx
 ---
 title: Meine Dokumentation
+sidebar_label: Meine Dokumentation
 description: Hier steht die Beschreibung meiner Dokumentation!
 ---
 ```

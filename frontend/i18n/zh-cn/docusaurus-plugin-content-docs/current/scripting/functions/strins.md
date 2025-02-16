@@ -1,5 +1,6 @@
 ---
 title: strins
+sidebar_label: strins
 description: Insert a string into another string.
 tags: ["string"]
 ---

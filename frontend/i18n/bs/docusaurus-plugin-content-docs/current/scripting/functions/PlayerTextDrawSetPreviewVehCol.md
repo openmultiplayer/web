@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetPreviewVehCol
+sidebar_label: PlayerTextDrawSetPreviewVehCol
 description: Postavlja boju vozila prikaza modela u player-textdrawu (ako je prikazano vozilo).
 tags: ["player", "textdraw", "playertextdraw"]
 ---

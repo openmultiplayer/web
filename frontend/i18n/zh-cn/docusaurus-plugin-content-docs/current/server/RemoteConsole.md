@@ -1,5 +1,6 @@
 ---
 title: "Remote Console (RCON)"
+sidebar_label: "Remote Console (RCON)"
 description: Remote server administation.
 ---
 

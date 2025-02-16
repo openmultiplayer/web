@@ -1,5 +1,6 @@
 ---
 title: การมีส่วนร่วม
+sidebar_label: การมีส่วนร่วม
 description: วิธีการมีส่วนร่วมกับเอกสาร SA-MP Wiki และ open.mp
 ---
 
@@ -81,6 +82,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 ```mdx
 ---
 title: เอกสารของฉัน
+sidebar_label: เอกสารของฉัน
 description: นี่คือหน้าเกี่ยวกับทีมงานและอะไรบางอย่างเกี่ยวกับอากะตะ
 ---
 ```

@@ -1,5 +1,6 @@
 ---
 title: SetActorHealth
+sidebar_label: SetActorHealth
 description: Postavi healthe (zdravlje) aktoru.
 tags: []
 ---

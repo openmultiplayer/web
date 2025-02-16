@@ -1,5 +1,6 @@
 ---
 title: SetObjectMoveSpeed
+sidebar_label: SetObjectMoveSpeed
 description: Set the move speed of an object.
 tags: ["object"]
 ---

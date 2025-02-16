@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectObject
+sidebar_label: OnPlayerSelectObject
 description: Овај повратни позив се позива када играч изабере објекат након што је коришћена функција BeginObjectSelecting.
 tags: ["player", "object"]
 ---

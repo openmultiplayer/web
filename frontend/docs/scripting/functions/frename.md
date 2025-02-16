@@ -1,5 +1,6 @@
 ---
 title: frename
+sidebar_label: frename
 description: Rename a file.
 tags: ["file management"]
 ---

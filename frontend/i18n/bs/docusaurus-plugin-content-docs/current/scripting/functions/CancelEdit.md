@@ -1,5 +1,6 @@
 ---
 title: CancelEdit
+sidebar_label: CancelEdit
 description: Prekida mod za editovanje objekta za igrača.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: Ugaoni Modovi
+sidebar_label: Ugaoni Modovi
 description: SI jedinične konstante za mjerenje uglova.
 ---
 

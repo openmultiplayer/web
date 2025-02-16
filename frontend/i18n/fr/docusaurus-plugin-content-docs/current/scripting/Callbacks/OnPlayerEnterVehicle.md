@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterVehicle
+sidebar_label: OnPlayerEnterVehicle
 description: Cette callback est appelée quand un joueur commence à entrer dans un véhicule, c'est-à-dire que le joueur n'est pas encore dans le véhicule quand la callback est appelée.
 tags: ["player", "vehicle"]
 ---

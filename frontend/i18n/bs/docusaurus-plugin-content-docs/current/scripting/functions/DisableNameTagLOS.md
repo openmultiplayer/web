@@ -1,5 +1,6 @@
 ---
 title: DisableNameTagLOS
+sidebar_label: DisableNameTagLOS
 description: Onemogućava provjeru linije naziva vidljivosti kako bi igrači mogli vidjeti oznake imena kroz objekte.
 tags: []
 ---

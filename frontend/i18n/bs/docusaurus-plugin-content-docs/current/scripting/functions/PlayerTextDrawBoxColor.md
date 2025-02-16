@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawBoxColor
+sidebar_label: PlayerTextDrawBoxColor
 description: Postavlja boju box-a textdraw-a (PlayerTextDrawUseBox).
 tags: ["player", "textdraw", "playertextdraw"]
 ---

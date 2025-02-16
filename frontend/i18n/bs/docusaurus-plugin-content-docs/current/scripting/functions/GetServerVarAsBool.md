@@ -1,5 +1,6 @@
 ---
 title: GetServerVarAsBool
+sidebar_label: GetServerVarAsBool
 description: Dobij boolean vrijednost server varijable.
 tags: []
 ---

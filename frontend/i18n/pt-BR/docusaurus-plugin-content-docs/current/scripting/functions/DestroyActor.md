@@ -1,5 +1,6 @@
 ---
 title: DestroyActor
+sidebar_label: DestroyActor
 description: Destrói um ator que foi criado com CreateActor.
 tags: []
 ---

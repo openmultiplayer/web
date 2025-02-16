@@ -1,5 +1,6 @@
 ---
 title: strpack
+sidebar_label: strpack
 description: Pack a string.
 tags: ["string"]
 ---

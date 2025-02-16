@@ -1,5 +1,6 @@
 ---
 title: IsValidVehicle
+sidebar_label: IsValidVehicle
 description: Provjerava da li je vozilo kreirano.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetMenuColumns
+sidebar_label: GetMenuColumns
 description: Get the number of active columns.
 tags: ["menu"]
 ---

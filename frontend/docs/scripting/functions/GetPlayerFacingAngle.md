@@ -1,5 +1,6 @@
 ---
 title: GetPlayerFacingAngle
+sidebar_label: GetPlayerFacingAngle
 description: Gets the angle a player is facing.
 tags: ["player"]
 ---

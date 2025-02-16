@@ -1,5 +1,6 @@
 ---
 title: RemoveBuildingForPlayer
+sidebar_label: RemoveBuildingForPlayer
 description: Remove um modelo de San Andreas para um único jogador em um raio específico.
 tags: ["player"]
 ---

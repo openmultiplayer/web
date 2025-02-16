@@ -1,5 +1,6 @@
 ---
 title: AllowPlayerTeleport
+sidebar_label: AllowPlayerTeleport
 description: Paganahin/Huwag paganahin ang kakayahang mag-teleport para sa isang manlalaro sa pamamagitan ng pag-right-click sa mapa.
 tags: ["player"]
 ---

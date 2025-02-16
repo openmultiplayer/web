@@ -1,5 +1,6 @@
 ---
 title: GetVehicleColours
+sidebar_label: GetVehicleColours
 description: Gets the vehicle colours.
 tags: ["vehicle"]
 ---

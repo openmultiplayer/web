@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: Callback này được gọi khi một người chơi gửi tin nhắn trò chuyện.
 tags: ["player"]
 ---

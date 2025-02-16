@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeaveCheckpoint
+sidebar_label: OnPlayerLeaveCheckpoint
 description: Ова повратна функција се позива када играч напусти контролну тачку коју је поставио SetPlayerCheckpoint.
 tags: ["player", "checkpoint"]
 ---

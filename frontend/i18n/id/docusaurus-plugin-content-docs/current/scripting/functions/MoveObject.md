@@ -1,5 +1,6 @@
 ---
 title: MoveObject
+sidebar_label: MoveObject
 description: Memindahkan Object ke posisi baru dengan kecepatan yang ditentukan.
 tags: []
 ---

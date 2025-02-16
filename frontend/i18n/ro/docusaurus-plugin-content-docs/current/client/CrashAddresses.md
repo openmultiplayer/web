@@ -1,5 +1,6 @@
 ---
 title: Rezolvarea Crash-urilor
+sidebar_label: Rezolvarea Crash-urilor
 ---
 
 Tabelul de mai jos enumeră câteva adrese de blocare obișnuite ale clienților pe care le puteți utiliza pentru a ajuta la urmărirea problemei și prevenirea apariției acesteia în viitor. În majoritatea cazurilor, blocările clientului apar din cauza unei probleme în script. Deși, merită menționat faptul că SA-MP este destul de stabil în zilele noastre.

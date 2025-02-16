@@ -1,5 +1,6 @@
 ---
 title: OnPlayerTakeDamage
+sidebar_label: OnPlayerTakeDamage
 description: Овај повратни позив се позива када играч претрпи штету.
 tags: ["player"]
 ---

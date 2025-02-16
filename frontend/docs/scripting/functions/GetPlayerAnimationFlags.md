@@ -1,5 +1,6 @@
 ---
 title: GetPlayerAnimationFlags
+sidebar_label: GetPlayerAnimationFlags
 description: Get the player animation flags.
 tags: ["player", "animation"]
 ---

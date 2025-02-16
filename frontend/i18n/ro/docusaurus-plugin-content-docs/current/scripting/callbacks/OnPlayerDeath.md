@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDeath
+sidebar_label: OnPlayerDeath
 description: Acest callback este apelat atunci când un jucător moare, fie prin sinucidere, fie ucis de un alt jucător.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetConsoleVarAsFloat
+sidebar_label: GetConsoleVarAsFloat
 description: Get the float value of a console variable.
 tags: []
 ---

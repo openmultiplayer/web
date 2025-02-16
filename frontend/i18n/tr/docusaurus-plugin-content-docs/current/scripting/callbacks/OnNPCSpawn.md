@@ -1,5 +1,6 @@
 ---
 title: OnNPCSpawn
+sidebar_label: OnNPCSpawn
 description: Bu geri çağırma, bir NPC doğduğunda çağrılır.
 tags: ["npc"]
 ---

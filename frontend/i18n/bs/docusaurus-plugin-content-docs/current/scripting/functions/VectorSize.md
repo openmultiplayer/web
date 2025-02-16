@@ -1,5 +1,6 @@
 ---
 title: VectorSize
+sidebar_label: VectorSize
 description: Vraća normu (dužinu) navedenog vektora.
 tags: []
 ---

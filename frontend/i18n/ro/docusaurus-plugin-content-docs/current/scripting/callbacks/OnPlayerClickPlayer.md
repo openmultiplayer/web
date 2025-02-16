@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayer
+sidebar_label: OnPlayerClickPlayer
 description: Apelat atunci când un jucător dă dublu clic pe un jucător de pe scoreboard.
 tags: ["player"]
 ---

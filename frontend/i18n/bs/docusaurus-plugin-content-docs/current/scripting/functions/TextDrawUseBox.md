@@ -1,5 +1,6 @@
 ---
 title: TextDrawUseBox
+sidebar_label: TextDrawUseBox
 description: Uključite ili isključite da li textdraw koristi box ili ne.
 tags: ["textdraw"]
 ---

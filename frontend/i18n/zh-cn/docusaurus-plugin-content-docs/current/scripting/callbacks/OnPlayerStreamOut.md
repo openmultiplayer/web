@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamOut
+sidebar_label: OnPlayerStreamOut
 description: This callback is called when a player is streamed out from some other player's client.
 tags: ["player"]
 ---

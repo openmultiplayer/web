@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestSpawn
+sidebar_label: OnPlayerRequestSpawn
 description: Fonksiyon, Bir oyuncu SHIFT'e basarak veya 'Spawn' düğmesine tıklayarak sınıf seçimi yoluyla doğmaya çalıştığında çağrılır.
 tags: ["player"]
 ---

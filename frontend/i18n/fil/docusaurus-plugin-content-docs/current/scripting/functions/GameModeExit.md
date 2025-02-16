@@ -1,5 +1,6 @@
 ---
 title: GameModeExit
+sidebar_label: GameModeExit
 description: Tinatapos ang kasalukuyang gamemode.
 tags: []
 ---

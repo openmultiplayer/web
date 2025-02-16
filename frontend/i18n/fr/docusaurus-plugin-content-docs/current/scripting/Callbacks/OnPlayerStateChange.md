@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStateChange
+sidebar_label: OnPlayerStateChange
 description: Cette callback est appelée lorsqu'un joueur change d'état (à pied, dans un véhicule, en mode spectateur, etc...).
 tags: ["player"]
 ---

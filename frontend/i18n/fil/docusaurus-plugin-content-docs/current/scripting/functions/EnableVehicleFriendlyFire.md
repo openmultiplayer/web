@@ -1,5 +1,6 @@
 ---
 title: EnableVehicleFriendlyFire
+sidebar_label: EnableVehicleFriendlyFire
 description: Paganahin ang friendly fire para sa mga sasakyan ng team.
 tags: ["vehicle"]
 ---

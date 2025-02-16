@@ -1,5 +1,6 @@
 ---
 title: IsMenuDisabled
+sidebar_label: IsMenuDisabled
 description: Checks if a menu is disabled.
 tags: ["menu"]
 ---

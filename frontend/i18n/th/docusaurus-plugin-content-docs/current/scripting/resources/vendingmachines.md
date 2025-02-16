@@ -1,5 +1,6 @@
 ---
 title: Vending Machines
+sidebar_label: Vending Machines
 description: List of all vending machine locations, player using them should be within 2 units distance. Very useful for anti-cheats.
 ---
 

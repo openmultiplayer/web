@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditObject
+sidebar_label: OnPlayerEditObject
 description: Cette callback est appelée quand un joueur a fini d'éditer un objet (EditObject/EditPlayerObject).
 tags: ["player"]
 ---

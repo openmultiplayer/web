@@ -1,5 +1,6 @@
 ---
 title: fmatch
+sidebar_label: fmatch
 description: Pronađite naziv datoteke koji odgovara uzorku.
 tags: []
 ---

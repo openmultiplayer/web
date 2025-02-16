@@ -1,5 +1,6 @@
 ---
 title: OnPlayerConnect
+sidebar_label: OnPlayerConnect
 description: Bu geri çağırma oyuncu sunucuya bağlandığında çağrılır.
 tags: ["player"]
 ---

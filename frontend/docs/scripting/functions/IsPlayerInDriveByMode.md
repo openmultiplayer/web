@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInDriveByMode
+sidebar_label: IsPlayerInDriveByMode
 description: Check if the player is in driveby mode.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Ban
+sidebar_label: Ban
 description: Sunucuda olan birini yasaklama.
 tags: ["administration"]
 ---

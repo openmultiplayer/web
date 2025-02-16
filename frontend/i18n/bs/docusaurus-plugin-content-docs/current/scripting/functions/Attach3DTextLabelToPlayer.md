@@ -1,5 +1,6 @@
 ---
 title: Attach3DTextLabelToPlayer
+sidebar_label: Attach3DTextLabelToPlayer
 description: Prikvači 3D tekst label za igrača.
 tags: ["player", "3dtextlabel"]
 ---

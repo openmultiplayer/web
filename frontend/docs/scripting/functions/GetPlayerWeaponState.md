@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWeaponState
+sidebar_label: GetPlayerWeaponState
 description: Check the state of a player's weapon.
 tags: ["player"]
 ---

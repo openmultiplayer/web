@@ -1,5 +1,6 @@
 ---
 title: GetSVarNameAtIndex
+sidebar_label: GetSVarNameAtIndex
 description: Dohvatite ime sVar putem indeksa.
 tags: []
 ---

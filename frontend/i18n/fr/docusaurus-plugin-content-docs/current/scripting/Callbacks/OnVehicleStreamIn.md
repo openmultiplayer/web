@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: Cette callback est appelée lorsqu'un véhicule est chargé (devient visible) pour un joueur.
 tags: ["vehicle"]
 ---

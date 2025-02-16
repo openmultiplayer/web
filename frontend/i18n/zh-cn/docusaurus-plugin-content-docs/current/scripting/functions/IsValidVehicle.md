@@ -1,5 +1,6 @@
 ---
 title: IsValidVehicle
+sidebar_label: IsValidVehicle
 description: Check if a vehicle is created.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SendClientMessageToAll
+sidebar_label: SendClientMessageToAll
 description: Prikazuje poruku u chatu za sve igrače.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: strunpack
+sidebar_label: strunpack
 description: Ovom se funkcijom može raspakirati string.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: BlockIpAddress
+sidebar_label: BlockIpAddress
 description: Blocks an IP address from further communication with the server for a set amount of time (with wildcards allowed).
 tags: ["ip address"]
 ---

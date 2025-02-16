@@ -1,5 +1,6 @@
 ---
 title: SetObjectsDefaultCameraCol
+sidebar_label: SetObjectsDefaultCameraCol
 description: Allows camera collisions with newly created objects to be disabled by default.
 tags: ["object", "camera"]
 ---

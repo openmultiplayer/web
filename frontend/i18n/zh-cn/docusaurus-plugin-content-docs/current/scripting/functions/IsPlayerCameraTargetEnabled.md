@@ -1,5 +1,6 @@
 ---
 title: IsPlayerCameraTargetEnabled
+sidebar_label: IsPlayerCameraTargetEnabled
 description: Check if the player camera target is enabled.
 tags: ["player"]
 ---

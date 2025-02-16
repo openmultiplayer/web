@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSurfingObjectID
+sidebar_label: GetPlayerSurfingObjectID
 description: Vraća ID objekta na kojem igrač surfa.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GivePlayerMoney
+sidebar_label: GivePlayerMoney
 description: Dá ou retira dinheiro para/de um jogador.
 tags: ["player"]
 ---

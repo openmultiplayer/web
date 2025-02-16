@@ -1,5 +1,6 @@
 ---
 title: floatlog
+sidebar_label: floatlog
 description: This function allows you to get the logarithm of a float value.
 tags: ["math", "floating-point"]
 ---

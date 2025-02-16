@@ -1,5 +1,6 @@
 ---
 title: OnScriptCash
+sidebar_label: OnScriptCash
 description: This callback is called when something in-game like casinos give the player money.
 tags: ["player"]
 ---

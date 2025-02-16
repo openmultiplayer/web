@@ -1,5 +1,6 @@
 ---
 title: IsPlayerTeleportAllowed
+sidebar_label: IsPlayerTeleportAllowed
 description: Can this player teleport by right-clicking on the map?
 tags: ["player"]
 ---

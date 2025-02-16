@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamageActor
+sidebar_label: OnPlayerGiveDamageActor
 description: Callback này được gọi khi một người chơi gây thiệt hại cho một diễn viên.
 tags: ["player", "actor"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPickupStreamIn
+sidebar_label: OnPickupStreamIn
 description: Callback này được gọi khi một pickup vào phạm vi nhìn thấy của người chơi.
 tags: ["player"]
 ---

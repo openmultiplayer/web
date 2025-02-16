@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: This callback is called when a player sends a chat message.
 tags: ["player"]
 ---

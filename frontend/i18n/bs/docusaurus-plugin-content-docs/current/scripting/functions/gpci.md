@@ -1,5 +1,6 @@
 ---
 title: gpci
+sidebar_label: gpci
 description: Dohvatite CI (računarska/klijentska identifikacija) korisnika, ovo je povezano s njihovim SAMP/GTA-om na njegovom računaru.
 tags: []
 ---

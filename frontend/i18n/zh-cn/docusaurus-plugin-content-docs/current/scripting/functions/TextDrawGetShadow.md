@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetShadow
+sidebar_label: TextDrawGetShadow
 description: Gets the size of a textdraw's text's shadow.
 tags: ["textdraw"]
 ---

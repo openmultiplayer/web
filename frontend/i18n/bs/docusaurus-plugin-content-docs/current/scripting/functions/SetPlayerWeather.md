@@ -1,5 +1,6 @@
 ---
 title: SetPlayerWeather
+sidebar_label: SetPlayerWeather
 description: Postavite vrijeme (weather) igrača.
 tags: ["player"]
 ---

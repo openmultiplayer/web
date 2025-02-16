@@ -1,5 +1,6 @@
 ---
 title: numargs
+sidebar_label: numargs
 description: Dohvatite broj argumenata proslijeđenih funkciji.
 tags: []
 ---

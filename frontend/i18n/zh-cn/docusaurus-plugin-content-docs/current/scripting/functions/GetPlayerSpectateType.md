@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSpectateType
+sidebar_label: GetPlayerSpectateType
 description: Returns the player's spectate type (vehicle or player).
 tags: ["player"]
 ---

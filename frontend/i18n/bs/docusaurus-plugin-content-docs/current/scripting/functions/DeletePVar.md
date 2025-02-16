@@ -1,5 +1,6 @@
 ---
 title: DeletePVar
+sidebar_label: DeletePVar
 description: Briše prethodno postavljenu varijablu igrača.
 tags: ["pvar"]
 ---

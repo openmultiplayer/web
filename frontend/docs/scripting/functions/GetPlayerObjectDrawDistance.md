@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectDrawDistance
+sidebar_label: GetPlayerObjectDrawDistance
 description: Get the draw distance of a player-object.
 tags: ["player", "object", "playerobject"]
 ---

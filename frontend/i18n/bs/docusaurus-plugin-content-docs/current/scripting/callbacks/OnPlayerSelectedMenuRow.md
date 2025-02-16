@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectedMenuRow
+sidebar_label: OnPlayerSelectedMenuRow
 description: Ovaj callback je pozvan kada igrač selektuje određenu stavku (item) iz menija (ShowMenuForPlayer).
 tags: ["player", "menu"]
 ---

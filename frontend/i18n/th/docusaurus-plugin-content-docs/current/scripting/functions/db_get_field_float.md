@@ -1,5 +1,6 @@
 ---
 title: db_get_field_float
+sidebar_label: db_get_field_float
 description: Get the content of a field as a float from db_query.
 tags: ["sqlite"]
 ---

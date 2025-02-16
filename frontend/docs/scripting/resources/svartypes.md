@@ -1,5 +1,6 @@
 ---
 title: "Svar Types"
+sidebar_label: "Svar Types"
 ---
 
 :::info

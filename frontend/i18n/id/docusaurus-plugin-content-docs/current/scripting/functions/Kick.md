@@ -1,5 +1,6 @@
 ---
 title: Kick
+sidebar_label: Kick
 description: Tendang player dari server. Player harus keluar dari game dan re-connect jika mereka masih ingin lanjut bermain.
 tags: ["administration"]
 ---

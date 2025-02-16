@@ -1,5 +1,6 @@
 ---
 title: DeletePlayer3DTextLabel
+sidebar_label: DeletePlayer3DTextLabel
 description: Destroy a 3D text label that was created using CreatePlayer3DTextLabel.
 tags: ["player", "3dtextlabel"]
 ---

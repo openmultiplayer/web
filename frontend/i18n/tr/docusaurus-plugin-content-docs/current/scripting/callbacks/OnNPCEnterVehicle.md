@@ -1,5 +1,6 @@
 ---
 title: OnNPCEnterVehicle
+sidebar_label: OnNPCEnterVehicle
 description: Bu geri çağırma, bir NPC bir araca bindiğinde çağrılır.
 tags: ["npc"]
 ---

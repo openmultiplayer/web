@@ -1,5 +1,6 @@
 ---
 title: fopen
+sidebar_label: fopen
 description: Open a file (to read from or write to).
 tags: []
 ---

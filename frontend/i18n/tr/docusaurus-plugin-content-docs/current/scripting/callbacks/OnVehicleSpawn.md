@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSpawn
+sidebar_label: OnVehicleSpawn
 description: Bu geri çağırma bir araç respawn edildiğinde çağrılır.
 tags: ["vehicle"]
 ---

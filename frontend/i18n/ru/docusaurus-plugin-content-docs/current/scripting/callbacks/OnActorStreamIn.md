@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Этот коллбэк вызывается, когда актёр попадает в зону стрима клиента.
 tags: []
 ---

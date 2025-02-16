@@ -1,5 +1,6 @@
 ---
 title: GangZoneStopFlashForPlayer
+sidebar_label: GangZoneStopFlashForPlayer
 description: Stops a gangzone flashing for a player.
 tags: ["player", "gangzone"]
 ---

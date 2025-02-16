@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectNoCameraCol
+sidebar_label: SetPlayerObjectNoCameraCol
 description: Uključuje / isključuje sudar kamere predmeta igrača.
 tags: ["player"]
 ---

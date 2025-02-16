@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectNoCameraCollision
+sidebar_label: SetPlayerObjectNoCameraCollision
 description: Toggles a player object camera collision.
 tags: ["player"]
 ---

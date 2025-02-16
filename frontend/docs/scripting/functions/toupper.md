@@ -1,5 +1,6 @@
 ---
 title: toupper
+sidebar_label: toupper
 description: This function changes a single character to uppercase.
 tags: ["string"]
 ---

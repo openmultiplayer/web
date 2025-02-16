@@ -1,5 +1,6 @@
 ---
 title: Weather IDs
+sidebar_label: Weather IDs
 ---
 
 A list of weather IDs used by [SetWeather](../functions/SetWeather) and [SetPlayerWeather](../functions/SetPlayerWeather) functions.

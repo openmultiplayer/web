@@ -1,5 +1,6 @@
 ---
 title: OnEnterExitModShop
+sidebar_label: OnEnterExitModShop
 description: Bu geri çağırma, bir oyuncu modifiye garajlarından birine giriş veya çıkış yaptığında tetiklenir.
 tags: []
 ---

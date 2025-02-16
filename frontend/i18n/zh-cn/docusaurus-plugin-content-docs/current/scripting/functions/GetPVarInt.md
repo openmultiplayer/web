@@ -1,5 +1,6 @@
 ---
 title: GetPVarInt
+sidebar_label: GetPVarInt
 description: Gets an integer player variable's value.
 tags: ["player variable", "pvar"]
 ---

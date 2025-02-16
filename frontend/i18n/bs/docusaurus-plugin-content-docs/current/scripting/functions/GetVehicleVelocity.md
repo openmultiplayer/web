@@ -1,5 +1,6 @@
 ---
 title: GetVehicleVelocity
+sidebar_label: GetVehicleVelocity
 description: Dobij brzinu vozila na X,Y i Z osi.
 tags: ["vehicle"]
 ---

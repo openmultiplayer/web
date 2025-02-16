@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptExit
+sidebar_label: OnFilterScriptExit
 description: Ta "callback" imenuje se, ko je "filterscript" ustavil.
 tags: []
 ---

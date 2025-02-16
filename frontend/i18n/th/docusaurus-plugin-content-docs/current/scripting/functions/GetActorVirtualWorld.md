@@ -1,5 +1,6 @@
 ---
 title: GetActorVirtualWorld
+sidebar_label: GetActorVirtualWorld
 description: Get the virtual world of an actor.
 tags: []
 ---

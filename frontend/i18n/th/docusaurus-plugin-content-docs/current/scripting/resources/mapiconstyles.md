@@ -1,5 +1,6 @@
 ---
 title: Map Icon Styles
+sidebar_label: Map Icon Styles
 description: A list of Map Icons
 ---
 

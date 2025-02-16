@@ -1,5 +1,6 @@
 ---
 title: PlayerSpectatePlayer
+sidebar_label: PlayerSpectatePlayer
 description: Makes a player spectate (watch) another player.
 tags: ["player"]
 ---

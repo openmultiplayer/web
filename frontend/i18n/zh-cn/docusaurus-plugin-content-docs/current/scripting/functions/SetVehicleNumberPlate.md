@@ -1,5 +1,6 @@
 ---
 title: SetVehicleNumberPlate
+sidebar_label: SetVehicleNumberPlate
 description: Set a vehicle numberplate.
 tags: ["vehicle"]
 ---

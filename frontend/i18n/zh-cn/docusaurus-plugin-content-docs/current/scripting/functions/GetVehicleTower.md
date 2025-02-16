@@ -1,5 +1,6 @@
 ---
 title: GetVehicleTower
+sidebar_label: GetVehicleTower
 description: Get the ID of the cab attached to a vehicle.
 tags: ["vehicle"]
 ---

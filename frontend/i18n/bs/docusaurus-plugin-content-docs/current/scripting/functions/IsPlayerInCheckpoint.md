@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInCheckpoint
+sidebar_label: IsPlayerInCheckpoint
 description: Provjerite je li igrač trenutno u checkpointu/markeru, ovo bi se moglo koristiti, na primjer, za svojstva ili teleport tačke.
 tags: ["player", "checkpoint"]
 ---

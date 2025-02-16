@@ -1,5 +1,6 @@
 ---
 title: IsActorInvulnerable
+sidebar_label: IsActorInvulnerable
 description: Check if an actor is invulnerable.
 tags: ["actor"]
 ---

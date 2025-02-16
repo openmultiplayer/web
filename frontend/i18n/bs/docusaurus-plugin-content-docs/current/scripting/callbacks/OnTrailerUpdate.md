@@ -1,5 +1,6 @@
 ---
 title: OnTrailerUpdate
+sidebar_label: OnTrailerUpdate
 description: Ovaj callback je pozvan kada igrač pošalje trailer update.
 tags: []
 ---

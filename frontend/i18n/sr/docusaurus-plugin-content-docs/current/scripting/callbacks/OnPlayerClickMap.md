@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: Ова функција се позива када играч постави циљ или путну тачку на мапи у менију за паузу (десним кликом миша).
 tags: ["player"]
 ---

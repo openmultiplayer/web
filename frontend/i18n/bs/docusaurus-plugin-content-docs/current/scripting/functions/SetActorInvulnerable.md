@@ -1,5 +1,6 @@
 ---
 title: SetActorInvulnerable
+sidebar_label: SetActorInvulnerable
 description: Uključite/isključite aktorovu neranjivost.
 tags: []
 ---

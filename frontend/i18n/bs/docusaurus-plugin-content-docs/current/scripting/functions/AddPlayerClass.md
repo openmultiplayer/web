@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClass
+sidebar_label: AddPlayerClass
 description: Dodaje klasu na listu selekcije klasa.
 tags: ["player"]
 ---

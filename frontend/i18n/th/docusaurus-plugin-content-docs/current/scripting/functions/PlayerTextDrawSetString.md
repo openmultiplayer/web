@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetString
+sidebar_label: PlayerTextDrawSetString
 description: Change the text of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

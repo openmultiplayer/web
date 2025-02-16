@@ -1,5 +1,6 @@
 ---
 title: GetMyPos
+sidebar_label: GetMyPos
 description: Dobij poziciju NPC-a
 tags: ["npc"]
 ---

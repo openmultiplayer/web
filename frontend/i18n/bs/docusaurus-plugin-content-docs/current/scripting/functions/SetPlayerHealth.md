@@ -1,5 +1,6 @@
 ---
 title: SetPlayerHealth
+sidebar_label: SetPlayerHealth
 description: Postavi healthe (zdravlje) igrača.
 tags: ["player"]
 ---

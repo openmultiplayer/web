@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: Callback นี้ถูกเรียกเมื่อผู้เล่นวาง เป้าหมาย/จุดหมาย บนแผนที่ในเมนู (โดยการคลิกขวา)
 tags: ["player"]
 ---

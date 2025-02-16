@@ -1,5 +1,6 @@
 ---
 title: 提交貢獻
+sidebar_label: 提交貢獻
 description: 如何給SA-MP Wiki和open.mp的說明文件提交貢獻。
 ---
 
@@ -83,6 +84,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 ```mdx
 ---
 title: 我的文件
+sidebar_label: 我的文件
 description: 這是一個關於CJ、BigSmoke和火車的頁面，耶！
 ---
 ```

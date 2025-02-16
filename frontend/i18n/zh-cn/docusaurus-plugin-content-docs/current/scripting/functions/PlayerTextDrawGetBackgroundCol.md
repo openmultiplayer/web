@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetBackgroundCol
+sidebar_label: PlayerTextDrawGetBackgroundCol
 description: Gets the background color of a player-textdraw
 tags: ["player", "textdraw", "playertextdraw"]
 ---

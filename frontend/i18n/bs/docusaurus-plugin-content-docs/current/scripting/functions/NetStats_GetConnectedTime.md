@@ -1,5 +1,6 @@
 ---
 title: NetStats_GetConnectedTime
+sidebar_label: NetStats_GetConnectedTime
 description: Dobija količinu vremena (u milisekundama) za koje je igrač povezan na server.
 tags: []
 ---

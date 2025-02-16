@@ -1,5 +1,6 @@
 ---
 title: AttachObjectToPlayer
+sidebar_label: AttachObjectToPlayer
 description: Objeyi oyuncuya bağlama.
 tags: ["player"]
 ---

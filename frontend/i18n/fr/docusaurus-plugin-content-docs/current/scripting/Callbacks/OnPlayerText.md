@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: Appelée lorsqu'un joueur envoie un message dans le chat.
 tags: ["player"]
 ---

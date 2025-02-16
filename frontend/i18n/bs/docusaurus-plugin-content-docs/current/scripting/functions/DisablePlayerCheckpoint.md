@@ -1,5 +1,6 @@
 ---
 title: DisablePlayerCheckpoint
+sidebar_label: DisablePlayerCheckpoint
 description: Onemogućava (skriva/uništava) checkpoint postavljenog za igrača.
 tags: ["player", "checkpoint"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SendClientMessagef
+sidebar_label: SendClientMessagef
 description: This function sends a formatted message to a specific player with a chosen color in the chat.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetColour
+sidebar_label: TextDrawGetColour
 description: Gets the text colour of a textdraw.
 tags: ["textdraw"]
 ---

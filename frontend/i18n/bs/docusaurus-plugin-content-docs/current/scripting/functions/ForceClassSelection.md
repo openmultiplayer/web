@@ -1,5 +1,6 @@
 ---
 title: ForceClassSelection
+sidebar_label: ForceClassSelection
 description: Prisiljava igrača da se vrati na odabir klase.
 tags: []
 ---

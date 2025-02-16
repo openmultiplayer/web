@@ -1,5 +1,6 @@
 ---
 title: SetVehicleZAngle
+sidebar_label: SetVehicleZAngle
 description: Set the Z rotation (yaw) of a vehicle.
 tags: ["vehicle"]
 ---

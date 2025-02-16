@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditAttachedObject
+sidebar_label: OnPlayerEditAttachedObject
 description: Callback ini terpanggil ketika player sudah selesai mengedit attached object dengan edit mode.
 tags: ["player"]
 ---

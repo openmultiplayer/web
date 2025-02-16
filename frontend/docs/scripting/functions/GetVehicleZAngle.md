@@ -1,5 +1,6 @@
 ---
 title: GetVehicleZAngle
+sidebar_label: GetVehicleZAngle
 description: Get the rotation of a vehicle on the Z axis (yaw).
 tags: ["vehicle"]
 ---

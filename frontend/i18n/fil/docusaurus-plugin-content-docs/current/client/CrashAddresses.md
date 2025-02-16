@@ -1,5 +1,6 @@
 ---
 title: Crash Addresses
+sidebar_label: Crash Addresses
 ---
 
 Ang table sa baba ay nililista ang mga common na crash na nangyayari na nagpapakita ng crash address na maaari mong mahanap gamit ang mga address na ito. Kadalasan sa mga client crashes ay nangyayari dahil may problema sa script. Pero, masasabi natin na ang SA:MP ngayon ay stable na.

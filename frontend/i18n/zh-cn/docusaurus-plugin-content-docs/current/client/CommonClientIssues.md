@@ -1,5 +1,6 @@
 ---
 title: Common Client Issues
+sidebar_label: Common Client Issues
 ---
 
 ### 我得到的错误信息是 "San Andreas cannot be found"

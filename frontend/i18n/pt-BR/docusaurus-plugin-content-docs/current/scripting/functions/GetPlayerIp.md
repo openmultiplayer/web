@@ -1,5 +1,6 @@
 ---
 title: GetPlayerIp
+sidebar_label: GetPlayerIp
 description: Obtém o endereço IP de um jogador específico e armazena-o em uma string.
 tags: ["player", "ip address"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: NetStats_MessagesReceived
+sidebar_label: NetStats_MessagesReceived
 description: Dobija broj poruka koje je server primio od klijenta za reprodukciju.
 tags: []
 ---

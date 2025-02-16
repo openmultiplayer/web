@@ -1,5 +1,6 @@
 ---
 title: strfind
+sidebar_label: strfind
 description: Potraži podstring u stringu.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: floatsin
+sidebar_label: floatsin
 description: Get the sine from a given angle.
 tags: []
 ---

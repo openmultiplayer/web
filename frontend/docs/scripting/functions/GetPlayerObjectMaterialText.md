@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectMaterialText
+sidebar_label: GetPlayerObjectMaterialText
 description: Get the material text data from an index of the player-object.
 tags: ["player", "object", "playerobject"]
 ---

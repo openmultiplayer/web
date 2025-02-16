@@ -1,5 +1,6 @@
 ---
 title: getdate
+sidebar_label: getdate
 description: Dobij trenutni datum servera koji će biti pohranjen u varijablama &year, &month i &day.
 tags: []
 ---

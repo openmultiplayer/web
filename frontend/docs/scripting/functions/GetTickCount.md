@@ -1,5 +1,6 @@
 ---
 title: GetTickCount
+sidebar_label: GetTickCount
 description: Returns a value which increases every millisecond.
 tags: ["time"]
 ---

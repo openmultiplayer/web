@@ -1,5 +1,6 @@
 ---
 title: OnScriptLoadPlayer
+sidebar_label: OnScriptLoadPlayer
 description: This callback is called for each connected player when a script is loaded.
 tags: ["player"]
 ---

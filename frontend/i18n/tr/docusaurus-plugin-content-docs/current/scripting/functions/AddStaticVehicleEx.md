@@ -1,5 +1,6 @@
 ---
 title: AddStaticVehicleEx
+sidebar_label: AddStaticVehicleEx
 description: Ekstra parametre(ler) girerek statik araç oluşturmanızı sağlar.
 tags: []
 ---

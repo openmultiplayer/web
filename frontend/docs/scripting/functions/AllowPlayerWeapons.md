@@ -1,5 +1,6 @@
 ---
 title: AllowPlayerWeapons
+sidebar_label: AllowPlayerWeapons
 description: Enable/Disable weapons for a player.
 tags: ["player"]
 ---

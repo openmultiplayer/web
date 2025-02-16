@@ -1,5 +1,6 @@
 ---
 title: ChangeVehicleColor
+sidebar_label: ChangeVehicleColor
 description: Aracın birincil ve ikincil rengini değiştirme.
 tags: ["vehicle"]
 ---

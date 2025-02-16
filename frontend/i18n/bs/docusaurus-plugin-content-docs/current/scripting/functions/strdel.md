@@ -1,5 +1,6 @@
 ---
 title: strdel
+sidebar_label: strdel
 description: Obriši dio stringa.
 tags: []
 ---

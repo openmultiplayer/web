@@ -1,5 +1,6 @@
 ---
 title: SetSVarString
+sidebar_label: SetSVarString
 description: Set a string server variable.
 tags: ["server variable", "svar"]
 ---

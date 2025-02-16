@@ -1,5 +1,6 @@
 ---
 title: GetPlayerFightingStyle
+sidebar_label: GetPlayerFightingStyle
 description: Get the fighting style the player currently using.
 tags: ["player"]
 ---

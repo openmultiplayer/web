@@ -1,5 +1,6 @@
 ---
 title: GetPlayerInterior
+sidebar_label: GetPlayerInterior
 description: Retrieves the player's current interior.
 tags: ["player"]
 ---

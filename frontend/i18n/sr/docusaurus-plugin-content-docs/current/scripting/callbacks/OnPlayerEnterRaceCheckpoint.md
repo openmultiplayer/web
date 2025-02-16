@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterRaceCheckpoint
+sidebar_label: OnPlayerEnterRaceCheckpoint
 description: Ова функција се позива када играч уђе у тркачки контролни поен.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

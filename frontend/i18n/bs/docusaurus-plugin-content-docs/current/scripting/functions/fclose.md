@@ -1,5 +1,6 @@
 ---
 title: fclose
+sidebar_label: fclose
 description: Zatvara fajl/datoteku.
 tags: []
 ---

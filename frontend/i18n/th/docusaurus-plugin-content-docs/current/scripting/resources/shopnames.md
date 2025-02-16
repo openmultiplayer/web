@@ -1,5 +1,6 @@
 ---
 title: Shop Names
+sidebar_label: Shop Names
 ---
 
 :::note

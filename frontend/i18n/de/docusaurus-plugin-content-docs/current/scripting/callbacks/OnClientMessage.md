@@ -1,5 +1,6 @@
 ---
 title: OnClientMessage
+sidebar_label: OnClientMessage
 description: Dieses Callback wird ausgeführt wenn ein NPC eine ClientMessage erkennt.
 tags: []
 ---

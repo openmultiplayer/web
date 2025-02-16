@@ -1,5 +1,6 @@
 ---
 title: GangZoneCreate
+sidebar_label: GangZoneCreate
 description: Kreiraj gangzonu (radarsko područje u boji).
 tags: ["gangzone"]
 ---

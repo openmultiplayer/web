@@ -1,5 +1,6 @@
 ---
 title: TogglePlayerClock
+sidebar_label: TogglePlayerClock
 description: Uključite sat u igri (gornji desni kut) za određenog igrača.
 tags: ["player"]
 ---

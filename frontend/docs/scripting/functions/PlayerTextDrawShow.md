@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawShow
+sidebar_label: PlayerTextDrawShow
 description: Show a player-textdraw to the player it was created for.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

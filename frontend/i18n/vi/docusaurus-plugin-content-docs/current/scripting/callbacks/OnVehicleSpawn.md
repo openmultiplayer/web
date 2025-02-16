@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSpawn
+sidebar_label: OnVehicleSpawn
 description: Callback này được gọi khi một xe hồi sinh (respawn).
 tags: ["vehicle"]
 ---

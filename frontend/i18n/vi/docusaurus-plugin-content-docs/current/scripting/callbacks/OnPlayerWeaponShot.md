@@ -1,5 +1,6 @@
 ---
 title: OnPlayerWeaponShot
+sidebar_label: OnPlayerWeaponShot
 description: Callback này được gọi khi một người chơi bắn từ một vũ khí.
 tags: ["player"]
 ---

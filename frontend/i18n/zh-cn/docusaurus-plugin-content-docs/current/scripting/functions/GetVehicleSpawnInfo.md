@@ -1,5 +1,6 @@
 ---
 title: GetVehicleSpawnInfo
+sidebar_label: GetVehicleSpawnInfo
 description: Gets the vehicle spawn location and colours.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetMenuColumnWidth
+sidebar_label: GetMenuColumnWidth
 description: Get the width of the one or two columns.
 tags: ["menu"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnNPCSpawn
+sidebar_label: OnNPCSpawn
 description: Ова повратна функција се позива када се NPC појави.
 tags: ["npc"]
 ---

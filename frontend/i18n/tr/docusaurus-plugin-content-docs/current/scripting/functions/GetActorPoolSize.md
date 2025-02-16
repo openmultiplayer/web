@@ -1,5 +1,6 @@
 ---
 title: GetActorPoolSize
+sidebar_label: GetActorPoolSize
 description: Sunucuda oluşturulan en yüksek aktör ID'sini kontrol etme.
 tags: ["actor"]
 ---

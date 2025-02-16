@@ -1,5 +1,6 @@
 ---
 title: "Compensação de lag"
+sidebar_label: "Compensação de lag"
 description: Explicando a compensação de lag.
 ---
 

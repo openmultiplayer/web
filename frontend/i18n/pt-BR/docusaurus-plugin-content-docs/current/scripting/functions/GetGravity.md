@@ -1,5 +1,6 @@
 ---
 title: GetGravity
+sidebar_label: GetGravity
 description: Obtém a gravidade atualmente definida.
 tags: []
 ---

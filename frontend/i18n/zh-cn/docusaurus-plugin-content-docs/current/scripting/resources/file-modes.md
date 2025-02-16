@@ -1,5 +1,6 @@
 ---
 title: File Modes
+sidebar_label: File Modes
 description: The modes to open the file with.
 ---
 

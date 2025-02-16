@@ -1,5 +1,6 @@
 ---
 title: Ban
+sidebar_label: Ban
 description: Banuj igrača koji je trenutno na serveru.
 tags: ["administration"]
 ---

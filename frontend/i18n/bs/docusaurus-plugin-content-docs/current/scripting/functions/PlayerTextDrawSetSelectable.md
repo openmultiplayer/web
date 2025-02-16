@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetSelectable
+sidebar_label: PlayerTextDrawSetSelectable
 description: Omogućuje/onemogućuje da li player-textdraw može biti selektovan ili ne.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

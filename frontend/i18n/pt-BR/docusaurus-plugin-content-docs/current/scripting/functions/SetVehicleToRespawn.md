@@ -1,5 +1,6 @@
 ---
 title: SetVehicleToRespawn
+sidebar_label: SetVehicleToRespawn
 description: Coloca um veículo de volta para a posição onde foi criado.
 tags: ["vehicle"]
 ---

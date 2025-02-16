@@ -1,5 +1,6 @@
 ---
 title: floatcos
+sidebar_label: floatcos
 description: Get the cosine from a given angle.
 tags: ["math", "floating-point"]
 ---

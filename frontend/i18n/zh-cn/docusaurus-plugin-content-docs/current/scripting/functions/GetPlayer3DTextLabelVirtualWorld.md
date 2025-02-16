@@ -1,5 +1,6 @@
 ---
 title: GetPlayer3DTextLabelVirtualWorld
+sidebar_label: GetPlayer3DTextLabelVirtualWorld
 description: Gets the player's 3D text label virtual world id.
 tags: ["player", "3dtextlabel"]
 ---

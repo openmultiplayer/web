@@ -1,5 +1,6 @@
 ---
 title: OnVehicleMod
+sidebar_label: OnVehicleMod
 description: Callback này được gọi khi một xe được tùy chỉnh.
 tags: ["vehicle"]
 ---

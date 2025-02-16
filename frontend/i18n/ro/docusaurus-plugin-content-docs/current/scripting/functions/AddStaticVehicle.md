@@ -1,5 +1,6 @@
 ---
 title: AddStaticVehicle
+sidebar_label: AddStaticVehicle
 description: Adaugă un vehicul 'static' (modelele sunt preîncărcate pentru jucători) la modul de joc.
 tags: ["vehicle"]
 ---

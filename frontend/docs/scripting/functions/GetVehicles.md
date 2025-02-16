@@ -1,5 +1,6 @@
 ---
 title: GetVehicles
+sidebar_label: GetVehicles
 description: Gets an array variable of the IDs of the created vehicles on the server.
 tags: ["vehicle"]
 ---

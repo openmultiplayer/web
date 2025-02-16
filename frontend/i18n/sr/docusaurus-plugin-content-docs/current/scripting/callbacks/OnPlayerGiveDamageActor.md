@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamageActor
+sidebar_label: OnPlayerGiveDamageActor
 description: Ова повратна функција се активира када играч нанесе штету акотру.
 tags: ["player", "actor"]
 ---

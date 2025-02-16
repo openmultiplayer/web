@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: Ова повратна функција се позива када се возило стримује изван домета клијента играча (превише је далеко да би га видео).
 tags: ["vehicle"]
 ---

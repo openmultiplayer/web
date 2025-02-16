@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamIn
+sidebar_label: OnVehicleStreamIn
 description: Callback này được gọi khi một xe được stream đến client của người chơi.
 tags: ["vehicle"]
 ---

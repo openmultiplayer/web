@@ -1,5 +1,6 @@
 ---
 title: NetStats_MessagesRecvPerSecond
+sidebar_label: NetStats_MessagesRecvPerSecond
 description: Dobija broj poruka koje je igrač primio u posljednjoj sekundi.
 tags: []
 ---

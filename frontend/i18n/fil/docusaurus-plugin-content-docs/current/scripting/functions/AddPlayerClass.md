@@ -1,5 +1,6 @@
 ---
 title: AddPlayerClass
+sidebar_label: AddPlayerClass
 description: Nagdaragdag ng klase sa pagpili ng klase.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetVehicleParamsSirenState
+sidebar_label: GetVehicleParamsSirenState
 description: Returns a vehicle's siren state (on/off).
 tags: ["vehicle"]
 ---

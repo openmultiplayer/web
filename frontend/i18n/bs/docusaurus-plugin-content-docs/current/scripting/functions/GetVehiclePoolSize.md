@@ -1,5 +1,6 @@
 ---
 title: GetVehiclePoolSize
+sidebar_label: GetVehiclePoolSize
 description: Dobiva najveći id vozila koji se trenutno koristi na serveru.
 tags: ["vehicle"]
 ---

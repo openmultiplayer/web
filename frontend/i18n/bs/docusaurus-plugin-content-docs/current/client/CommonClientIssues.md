@@ -1,5 +1,6 @@
 ---
 title: Uobičajena pitanja
+sidebar_label: Uobičajena pitanja
 ---
 
 ## Sadržaj

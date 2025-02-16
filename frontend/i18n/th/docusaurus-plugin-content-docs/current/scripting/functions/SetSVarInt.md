@@ -1,5 +1,6 @@
 ---
 title: SetSVarInt
+sidebar_label: SetSVarInt
 description: Set an integer server variable.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: Cooldown-uri
+sidebar_label: Cooldown-uri
 description: Un tutorial pentru scrierea cooldown-urilor pentru limitarea acțiunilor utilizatorilor folosind numărul de bifări și evitarea utilizării cronometrelor.
 ---
 

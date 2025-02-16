@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditObject
+sidebar_label: OnPlayerEditObject
 description: Bu geri çağırma bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObject/EditPlayerObject).
 tags: ["player"]
 ---

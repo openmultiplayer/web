@@ -1,5 +1,6 @@
 ---
 title: 常見問題
+sidebar_label: 常見問題
 ---
 
 ## 內容

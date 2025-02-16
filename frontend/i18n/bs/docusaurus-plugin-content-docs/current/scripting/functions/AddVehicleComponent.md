@@ -1,5 +1,6 @@
 ---
 title: AddVehicleComponent
+sidebar_label: AddVehicleComponent
 description: Dodaje 'komponentu' (često nazvana'mod' (modifikacija)) na vozilo.
 tags: ["vehicle"]
 ---

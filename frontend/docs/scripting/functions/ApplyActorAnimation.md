@@ -1,5 +1,6 @@
 ---
 title: ApplyActorAnimation
+sidebar_label: ApplyActorAnimation
 description: Apply an animation to an actor.
 tags: ["actor", "animation"]
 ---

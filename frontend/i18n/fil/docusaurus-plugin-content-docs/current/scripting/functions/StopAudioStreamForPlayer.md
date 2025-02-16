@@ -1,5 +1,6 @@
 ---
 title: StopAudioStreamForPlayer
+sidebar_label: StopAudioStreamForPlayer
 description: Ihihinto ang kasalukuyang audio stream para sa isang player.
 tags: ["player"]
 ---

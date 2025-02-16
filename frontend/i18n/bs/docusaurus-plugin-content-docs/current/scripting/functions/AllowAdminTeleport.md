@@ -1,5 +1,6 @@
 ---
 title: AllowAdminTeleport
+sidebar_label: AllowAdminTeleport
 description: Ovaj funkcija će da odredi da li će RCON admini biti teleportovani do waypointa/markera kojeg su postavili.
 tags: []
 ---

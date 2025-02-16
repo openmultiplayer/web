@@ -1,5 +1,6 @@
 ---
 title: OnPlayerObjectMoved
+sidebar_label: OnPlayerObjectMoved
 description: Callback này được gọi khi một đối tượng của người chơi được di chuyển sau khi MovePlayerObject (khi nó ngừng di chuyển).
 tags: ["player", "object", "playerobject"]
 ---

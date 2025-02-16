@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetPreviewRot
+sidebar_label: TextDrawSetPreviewRot
 description: Sets the rotation and zoom of a 3D model preview textdraw.
 tags: ["textdraw"]
 ---

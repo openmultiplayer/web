@@ -1,5 +1,6 @@
 ---
 title: db_get_field_assoc_float
+sidebar_label: db_get_field_assoc_float
 description: Gets the contents of the field as a floating point number with the specified field name.
 keywords:
   - sqlite

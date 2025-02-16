@@ -1,5 +1,6 @@
 ---
 title: GetPlayerMoney
+sidebar_label: GetPlayerMoney
 description: Retrieves the amount of money a player has.
 tags: ["player"]
 ---

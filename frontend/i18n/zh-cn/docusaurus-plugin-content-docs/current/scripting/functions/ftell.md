@@ -1,5 +1,6 @@
 ---
 title: ftell
+sidebar_label: ftell
 description: Get the current position in the file.
 tags: ["file management"]
 ---

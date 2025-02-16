@@ -1,5 +1,6 @@
 ---
 title: GetPlayerCheckpoint
+sidebar_label: GetPlayerCheckpoint
 description: Get the location of the current checkpoint.
 tags: ["player", "checkpoint"]
 ---

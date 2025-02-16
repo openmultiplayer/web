@@ -1,5 +1,6 @@
 ---
 title: RedirectDownload
+sidebar_label: RedirectDownload
 description: Redirect a player custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.
 tags: ["custom model", "custom skin", "simple model"]
 ---

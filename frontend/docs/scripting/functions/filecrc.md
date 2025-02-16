@@ -1,5 +1,6 @@
 ---
 title: filecrc
+sidebar_label: filecrc
 description: Return the 32-bit CRC value of a file.
 tags: ["file management"]
 ---

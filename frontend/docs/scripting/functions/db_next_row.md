@@ -1,5 +1,6 @@
 ---
 title: db_next_row
+sidebar_label: db_next_row
 description: Moves to the next row of the result set allocated with `db_query`.
 keywords:
   - sqlite

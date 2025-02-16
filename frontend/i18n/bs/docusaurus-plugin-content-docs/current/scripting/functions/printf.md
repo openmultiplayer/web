@@ -1,5 +1,6 @@
 ---
 title: printf
+sidebar_label: printf
 description: Ispisuje formatirani niz na konzoli (prozor servera, a ne chat u igri).
 tags: []
 ---

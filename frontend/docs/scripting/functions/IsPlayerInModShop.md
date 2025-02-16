@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInModShop
+sidebar_label: IsPlayerInModShop
 description: Check if the player is in the mod shop.
 tags: ["player"]
 ---

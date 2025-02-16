@@ -1,5 +1,6 @@
 ---
 title: strmid
+sidebar_label: strmid
 description: Mengekstrak bagian dari sebuah string ke string lainnya.
 tags: ["string"]
 ---

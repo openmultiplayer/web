@@ -1,5 +1,6 @@
 ---
 title: GetVehicleTrainSpeed
+sidebar_label: GetVehicleTrainSpeed
 description: Gets the speed of the train.
 tags: ["vehicle"]
 ---

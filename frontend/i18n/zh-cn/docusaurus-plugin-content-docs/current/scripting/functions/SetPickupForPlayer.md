@@ -1,5 +1,6 @@
 ---
 title: SetPickupForPlayer
+sidebar_label: SetPickupForPlayer
 description: Adjusts the pickup model, type, and position for a specific player.
 tags: ["player", "pickup"]
 ---

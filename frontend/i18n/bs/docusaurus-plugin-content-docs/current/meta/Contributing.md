@@ -1,5 +1,6 @@
 ---
 title: Doprinos
+sidebar_label: Doprinos
 description: Kako doprinijeti SA-MP Wiki i open.mp dokumentaciji.
 ---
 
@@ -83,6 +84,7 @@ prva stvar u _bilo kojem_ dokumentu ovdje trebala bi biti metadata:
 ```mdx
 ---
 title: Moja Dokumentacija
+sidebar_label: Moja Dokumentacija
 description: Ovo je stranica o stvarima i burgerima, yay!
 ---
 ```

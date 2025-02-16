@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: Cette callback est appelée quand un joueur tape une commande.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetVehicleParamsEx
+sidebar_label: GetVehicleParamsEx
 description: Gets a vehicle's parameters.
 tags: ["vehicle"]
 ---

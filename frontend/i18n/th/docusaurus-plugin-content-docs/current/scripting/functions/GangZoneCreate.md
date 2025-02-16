@@ -1,5 +1,6 @@
 ---
 title: GangZoneCreate
+sidebar_label: GangZoneCreate
 description: Create a gangzone (colored radar area).
 tags: ["gangzone"]
 ---

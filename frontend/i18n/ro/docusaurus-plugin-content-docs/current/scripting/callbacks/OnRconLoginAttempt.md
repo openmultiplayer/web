@@ -1,5 +1,6 @@
 ---
 title: OnRconLoginAttempt
+sidebar_label: OnRconLoginAttempt
 description: Acest callback este apelat atunci când cineva încearcă să se conecteze la RCON în joc; succes sau nu.
 tags: []
 ---

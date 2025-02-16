@@ -1,5 +1,6 @@
 ---
 title: OnNPCDisconnect
+sidebar_label: OnNPCDisconnect
 description: Ce rappel est appelé lorsque le PNJ est déconnecté du serveur.
 tags: ["npc"]
 ---

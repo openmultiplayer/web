@@ -1,5 +1,6 @@
 ---
 title: ShowPlayerDialog
+sidebar_label: ShowPlayerDialog
 description: Shows the player a synchronous (only one at a time) dialog box.
 tags: ["player", "dialog"]
 ---

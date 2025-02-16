@@ -1,5 +1,6 @@
 ---
 title: RepairVehicle
+sidebar_label: RepairVehicle
 description: U potpunosti popravlja vozilo, uključujući vidljivu štetu (neravnine, udubljenja, ogrebotine, puknute gume itd.).
 tags: ["vehicle"]
 ---

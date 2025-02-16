@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWantedLevel
+sidebar_label: GetPlayerWantedLevel
 description: Dobija wanted level igrača.
 tags: ["player"]
 ---

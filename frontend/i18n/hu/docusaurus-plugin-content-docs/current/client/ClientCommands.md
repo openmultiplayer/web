@@ -1,5 +1,6 @@
 ---
 title: "Kliens parancsok"
+sidebar_label: "Kliens parancsok"
 descripion: Az összes kliens parancs listája.
 ---
 

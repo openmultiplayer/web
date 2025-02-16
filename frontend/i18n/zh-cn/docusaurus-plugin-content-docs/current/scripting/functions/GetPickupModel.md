@@ -1,5 +1,6 @@
 ---
 title: GetPickupModel
+sidebar_label: GetPickupModel
 description: Gets the model ID of a pickup.
 tags: ["pickup"]
 ---

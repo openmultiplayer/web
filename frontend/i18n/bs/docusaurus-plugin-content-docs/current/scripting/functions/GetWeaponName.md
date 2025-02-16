@@ -1,5 +1,6 @@
 ---
 title: GetWeaponName
+sidebar_label: GetWeaponName
 description: Dobij ime oružja.
 tags: []
 ---

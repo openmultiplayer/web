@@ -1,5 +1,6 @@
 ---
 title: GetConsoleVarAsInt
+sidebar_label: GetConsoleVarAsInt
 description: Dobij cjelobrojnu (integer) vrijednost varijable iz konzole.
 tags: []
 ---

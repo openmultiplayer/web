@@ -1,5 +1,6 @@
 ---
 title: AddStaticPickup
+sidebar_label: AddStaticPickup
 description: Эта функция добавляет статический пикап в игру.
 tags: []
 ---

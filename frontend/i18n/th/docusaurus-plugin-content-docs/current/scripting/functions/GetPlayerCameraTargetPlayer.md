@@ -1,5 +1,6 @@
 ---
 title: GetPlayerCameraTargetPlayer
+sidebar_label: GetPlayerCameraTargetPlayer
 description: Allows you to retrieve the ID of the player the playerid is looking at.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: Bu geri çağırma oyuncu chat ekranında herhangi bir komut kullandığında çağrılır.
 tags: ["player"]
 ---

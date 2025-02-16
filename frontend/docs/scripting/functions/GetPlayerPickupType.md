@@ -1,5 +1,6 @@
 ---
 title: GetPlayerPickupType
+sidebar_label: GetPlayerPickupType
 description: Gets the type of a player-pickup.
 tags: ["player", "pickup", "playerpickup"]
 ---

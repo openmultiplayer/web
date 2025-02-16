@@ -1,5 +1,6 @@
 ---
 title: OnPlayerInteriorChange
+sidebar_label: OnPlayerInteriorChange
 description: Apelat când un jucător schimbă interiorul.
 tags: ["player"]
 ---

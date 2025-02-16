@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Ovaj callback se poziva kada se aktor prestane prikazivati na igračevom klijentu.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetVehiclePos
+sidebar_label: SetVehiclePos
 description: Set posisi pada kendaraaan.
 tags: ["vehicle"]
 ---

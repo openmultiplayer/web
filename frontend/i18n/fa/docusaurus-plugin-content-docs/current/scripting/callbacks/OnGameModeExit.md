@@ -1,5 +1,6 @@
 ---
 title: OnGameModeExit
+sidebar_label: OnGameModeExit
 description: این کالبک با پایان یافتن gamemode یا از طریق 'gmx'، خاموش  شدن سرور یا خارج شدن gamemode فرا خوانده می شود.
 tags: []
 ---

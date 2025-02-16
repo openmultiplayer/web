@@ -1,5 +1,6 @@
 ---
 title: "Controlando um Servidor"
+sidebar_label: "Controlando um Servidor"
 description: Comandos úteis para gerenciar um servidor.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: GetVehicleTrailer
+sidebar_label: GetVehicleTrailer
 description: Get the ID of the trailer attached to a vehicle.
 tags: ["vehicle"]
 ---

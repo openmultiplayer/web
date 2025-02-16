@@ -1,5 +1,6 @@
 ---
 title: strpack
+sidebar_label: strpack
 description: Membungkus sebuah string
 tags: ["string"]
 ---

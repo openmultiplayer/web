@@ -1,5 +1,6 @@
 ---
 title: floatdiv
+sidebar_label: floatdiv
 description: Hatiin ang isang float sa isa pa.
 tags: ["math", "floating-point"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: IsValidObject
+sidebar_label: IsValidObject
 description: Checks if an object with the ID provided exists.
 tags: ["object"]
 ---

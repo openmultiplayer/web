@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterCheckpoint
+sidebar_label: OnPlayerEnterCheckpoint
 description: Callback này được gọi khi một người chơi vào điểm kiểm tra được đặt cho người chơi đó.
 tags: ["player", "checkpoint"]
 ---

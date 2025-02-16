@@ -1,5 +1,6 @@
 ---
 title: OnObjectMoved
+sidebar_label: OnObjectMoved
 description: Bu geri çağırma obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
 tags: []
 ---

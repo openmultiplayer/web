@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayerGangZone
+sidebar_label: OnPlayerClickPlayerGangZone
 description: Callback này được gọi khi một người chơi nhấp vào gangzone của người chơi trên bản đồ trong menu tạm dừng (bằng cách nhấp chuột phải).
 tags: ["player", "gangzone"]
 ---

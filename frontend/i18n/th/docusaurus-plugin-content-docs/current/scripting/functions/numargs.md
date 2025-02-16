@@ -1,5 +1,6 @@
 ---
 title: numargs
+sidebar_label: numargs
 description: Get the number of arguments passed to a function.
 tags: []
 ---

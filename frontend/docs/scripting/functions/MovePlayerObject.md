@@ -1,5 +1,6 @@
 ---
 title: MovePlayerObject
+sidebar_label: MovePlayerObject
 description: Move a player object with a set speed.
 tags: ["player"]
 ---

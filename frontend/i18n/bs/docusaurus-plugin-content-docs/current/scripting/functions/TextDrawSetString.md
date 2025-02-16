@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetString
+sidebar_label: TextDrawSetString
 description: Mijenja tekst na textdrawu.
 tags: ["textdraw"]
 ---

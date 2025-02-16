@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeExit
+sidebar_label: OnNPCModeExit
 description: Ова повратна функција се позива када се NPC скрипта искључи.
 tags: ["npc"]
 ---

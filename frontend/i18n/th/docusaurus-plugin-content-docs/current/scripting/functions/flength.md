@@ -1,5 +1,6 @@
 ---
 title: flength
+sidebar_label: flength
 description: Returns the length of a file.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: AreInteriorWeaponsAllowed
+sidebar_label: AreInteriorWeaponsAllowed
 description: Can weapons be used in interiors?
 tags: []
 ---

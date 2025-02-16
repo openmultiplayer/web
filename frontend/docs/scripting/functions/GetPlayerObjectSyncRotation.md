@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectSyncRotation
+sidebar_label: GetPlayerObjectSyncRotation
 description: Get the sync rotation of a player-object.
 tags: ["player", "object", "playerobject"]
 ---

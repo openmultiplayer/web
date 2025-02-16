@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamIn
+sidebar_label: OnPlayerStreamIn
 description: Ovaj callback je pozvan kada se igrač učita/pojavi u klijent nekog drugog igrača.
 tags: ["player"]
 ---

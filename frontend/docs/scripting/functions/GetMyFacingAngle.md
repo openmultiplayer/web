@@ -1,5 +1,6 @@
 ---
 title: GetMyFacingAngle
+sidebar_label: GetMyFacingAngle
 description: Get the current facing angle of the NPC.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditAttachedObject
+sidebar_label: OnPlayerEditAttachedObject
 description: Ovaj callback je pozvan kada igrač napusti mod uređivanja prikvačenih objekata (attached object edition mode).
 tags: ["player"]
 ---

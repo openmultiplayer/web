@@ -1,5 +1,6 @@
 ---
 title: "Control Structures"
+sidebar_label: "Control Structures"
 description: An overview of control structures in the Pawn language
 ---
 

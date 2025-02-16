@@ -1,5 +1,6 @@
 ---
 title: SetPlayerFightingStyle
+sidebar_label: SetPlayerFightingStyle
 description: Postavi igraču specijalan stil borbe.
 tags: ["player"]
 ---

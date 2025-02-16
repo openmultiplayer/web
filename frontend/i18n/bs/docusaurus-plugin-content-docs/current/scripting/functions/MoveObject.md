@@ -1,5 +1,6 @@
 ---
 title: MoveObject
+sidebar_label: MoveObject
 description: Premjestite objekt na novi položaj zadanom brzinom.
 tags: []
 ---

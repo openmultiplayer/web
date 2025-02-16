@@ -1,5 +1,6 @@
 ---
 title: DisableMenu
+sidebar_label: DisableMenu
 description: Disable a menu.
 tags: ["menu"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: MovePlayerObject
+sidebar_label: MovePlayerObject
 description: Premjestite player objekat na novi položaj zadanom brzinom.
 tags: ["player"]
 ---

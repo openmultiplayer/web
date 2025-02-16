@@ -1,5 +1,6 @@
 ---
 title: OnPlayerFinishedDownloading
+sidebar_label: OnPlayerFinishedDownloading
 description: Ова  повратна функција се позива када играч заврши преузимање прилагођених модела.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: tolower
+sidebar_label: tolower
 description: Ova funkcija mijenja jedan znak u malo slovo.
 tags: []
 ---

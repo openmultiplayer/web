@@ -1,5 +1,6 @@
 ---
 title: SetActorPos
+sidebar_label: SetActorPos
 description: Define a posição de um ator.
 tags: []
 ---

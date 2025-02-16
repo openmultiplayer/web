@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterVehicle
+sidebar_label: OnPlayerEnterVehicle
 description: Bu geri çağırma, bir oyuncu bir araca binmeye başladığında çağırılır, oyuncu araca bindiğinde çağırılmaz, binmeye başladığında (araca doğru yürüme/koşma animasyonu başladığında) çağırılır.
 tags: ["player", "vehicle"]
 ---

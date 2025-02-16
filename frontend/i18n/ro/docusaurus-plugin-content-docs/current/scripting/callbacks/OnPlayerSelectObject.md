@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectObject
+sidebar_label: OnPlayerSelectObject
 description: Acest callback este apelat atunci când un jucător selectează un obiect după ce SelectObject a fost folosit.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetTimerEx
+sidebar_label: SetTimerEx
 description: Postavlja tajmer za pozivanje funkcije nakon navedenog intervala.
 tags: []
 ---

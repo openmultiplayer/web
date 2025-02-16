@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawBackgroundColor
+sidebar_label: PlayerTextDrawBackgroundColor
 description: Podesite boju pozadine player-textdrawa.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

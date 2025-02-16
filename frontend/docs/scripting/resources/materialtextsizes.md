@@ -1,5 +1,6 @@
 ---
 title: Material Text Sizes
+sidebar_label: Material Text Sizes
 description: A list of Material Text Sizes.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: GameModeExit
+sidebar_label: GameModeExit
 description: Leállítja a jelenlegi játékmódot
 tags: []
 ---

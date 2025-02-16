@@ -1,5 +1,6 @@
 ---
 title: TextDrawGetPos
+sidebar_label: TextDrawGetPos
 description: Gets the position of a textdraw.
 tags: ["textdraw"]
 ---

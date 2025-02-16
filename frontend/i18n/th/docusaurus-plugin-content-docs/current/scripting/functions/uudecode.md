@@ -1,5 +1,6 @@
 ---
 title: uudecode
+sidebar_label: uudecode
 description: Decode an UU-encoded string.
 tags: []
 ---

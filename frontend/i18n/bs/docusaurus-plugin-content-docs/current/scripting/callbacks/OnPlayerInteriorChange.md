@@ -1,5 +1,6 @@
 ---
 title: OnPlayerInteriorChange
+sidebar_label: OnPlayerInteriorChange
 description: Pozvan kada igrač promijeni enterijer.
 tags: ["player"]
 ---

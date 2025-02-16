@@ -1,5 +1,6 @@
 ---
 title: OnPlayerConnect
+sidebar_label: OnPlayerConnect
 description: Callback này được gọi khi một người chơi kết nối với server.
 tags: ["player"]
 ---

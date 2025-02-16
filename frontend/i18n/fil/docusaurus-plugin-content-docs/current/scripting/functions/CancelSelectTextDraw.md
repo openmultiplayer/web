@@ -1,5 +1,6 @@
 ---
 title: CancelSelectTextDraw
+sidebar_label: CancelSelectTextDraw
 description: Kanselahin ang pagpili ng textdraw gamit ang mouse.
 tags: ["textdraw"]
 ---

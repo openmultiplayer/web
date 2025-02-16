@@ -1,5 +1,6 @@
 ---
 title: GetRandomVehicleColourPair
+sidebar_label: GetRandomVehicleColourPair
 description: Get random colour indexes that are valid for the given vehicle model.
 tags: ["vehicle"]
 ---

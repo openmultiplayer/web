@@ -1,5 +1,6 @@
 ---
 title: ChangeVehiclePaintjob
+sidebar_label: ChangeVehiclePaintjob
 description: Altere o paintjob de um veículo (para cores normais, consulte ChangeVehicleColor).
 tags: ["vehicle"]
 ---

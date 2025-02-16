@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: Pozvano kada igrač pregleda paintjob vozila unutar mod shopa.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: sa-mp.cfg
+sidebar_label: sa-mp.cfg
 description: sa-mp கிளையன்ட் உள்ளமைவு கோப்பு.
 ---
 

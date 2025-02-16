@@ -1,5 +1,6 @@
 ---
 title: OnEnterExitModShop
+sidebar_label: OnEnterExitModShop
 description: Callback ini akan terpanggil ketika pemain memasuki atau keluar dari mod shop.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawTextSize
+sidebar_label: PlayerTextDrawTextSize
 description: Promijeni veličinu player-textdrawa (box ako je PlayerTextDrawUseBox omogućen i/ili klikljivo područje za koristiti sa PlayerTextDrawSetSelectable).
 tags: ["player", "textdraw", "playertextdraw"]
 ---

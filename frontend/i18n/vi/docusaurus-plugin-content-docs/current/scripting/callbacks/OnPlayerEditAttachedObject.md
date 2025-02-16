@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEditAttachedObject
+sidebar_label: OnPlayerEditAttachedObject
 description: Callback này được gọi khi một người chơi kết thúc chế độ chỉnh sửa đối tượng gắn kết.
 tags: ["player", "object", "attachment"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnVehicleRespray
+sidebar_label: OnVehicleRespray
 description: يتم إستدعاء هذا الكالباك عند خروج اللاعب من  مرآب تعديل السيارات حتى إذا كان طلاء السيارة لم يتغير
 tags: ["vehicle"]
 ---

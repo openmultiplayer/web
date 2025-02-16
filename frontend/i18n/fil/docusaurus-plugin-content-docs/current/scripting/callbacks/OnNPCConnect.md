@@ -1,5 +1,6 @@
 ---
 title: OnNPCConnect
+sidebar_label: OnNPCConnect
 description: Tinatawag ang callback na ito kapag matagumpay na nakakonekta ang isang NPC sa server.
 tags: ["npc"]
 ---

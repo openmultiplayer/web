@@ -1,5 +1,6 @@
 ---
 title: CancelEdit
+sidebar_label: CancelEdit
 description: Obje düzenleme modunu iptal etme.
 tags: []
 ---

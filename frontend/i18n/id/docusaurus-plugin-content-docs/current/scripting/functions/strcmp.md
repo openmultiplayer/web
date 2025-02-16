@@ -1,5 +1,6 @@
 ---
 title: strcmp
+sidebar_label: strcmp
 description: Fungsi ini membandingkan kedua string untuk mengecek apakah mereka sama.
 tags: ["string"]
 ---

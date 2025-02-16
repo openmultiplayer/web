@@ -1,5 +1,6 @@
 ---
 title: db_get_result_mem_handle
+sidebar_label: db_get_result_mem_handle
 description: Get memory handle for an SQLite query that was executed with db_query.
 tags: ["sqlite"]
 ---

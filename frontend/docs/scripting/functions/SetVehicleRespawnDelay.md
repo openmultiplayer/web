@@ -1,5 +1,6 @@
 ---
 title: SetVehicleRespawnDelay
+sidebar_label: SetVehicleRespawnDelay
 description: Set the respawn delay of a vehicle.
 tags: ["vehicle"]
 ---

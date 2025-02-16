@@ -1,5 +1,6 @@
 ---
 title: VehicleColourIndexToColour
+sidebar_label: VehicleColourIndexToColour
 description: Convert a car colour index to a HEX colour (RGBA).
 tags: ["vehicle"]
 ---

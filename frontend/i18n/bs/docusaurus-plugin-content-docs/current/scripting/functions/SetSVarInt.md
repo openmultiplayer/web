@@ -1,5 +1,6 @@
 ---
 title: SetSVarInt
+sidebar_label: SetSVarInt
 description: Postavlja cjelobrojnu server varijablu.
 tags: []
 ---

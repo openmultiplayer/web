@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInRaceCheckpoint
+sidebar_label: IsPlayerInRaceCheckpoint
 description: Provjerava ako je igrač unutar njihovog trenutno postavljenog race checkpointa/markera (SetPlayerRaceCheckpoint).
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

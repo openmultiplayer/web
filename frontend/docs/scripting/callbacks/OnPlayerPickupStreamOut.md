@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickupStreamOut
+sidebar_label: OnPlayerPickupStreamOut
 description: This callback is called when a player-pickup leaves the visual range of the player.
 tags: ["player", "pickup", "playerpickup"]
 ---

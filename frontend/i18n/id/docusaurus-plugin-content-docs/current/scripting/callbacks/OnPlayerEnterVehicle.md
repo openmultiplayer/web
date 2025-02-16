@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterVehicle
+sidebar_label: OnPlayerEnterVehicle
 description: Callback Ini di panggil ketika pemain mulai memasuki kendaraan, artinya pemain belum berada di kendaraan pada saat callback ini dipanggil.
 tags: ["player", "vehicle"]
 ---

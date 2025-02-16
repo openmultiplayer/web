@@ -1,5 +1,6 @@
 ---
 title: CancelSelectTextDraw
+sidebar_label: CancelSelectTextDraw
 description: Fare seçim modunu iptal edin.
 tags: ["textdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: TogglePlayerSpectating
+sidebar_label: TogglePlayerSpectating
 description: Toggle whether a player is in spectator mode or not.
 tags: ["player"]
 ---

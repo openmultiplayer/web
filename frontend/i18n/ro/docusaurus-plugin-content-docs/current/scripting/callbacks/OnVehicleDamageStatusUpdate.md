@@ -1,5 +1,6 @@
 ---
 title: OnVehicleDamageStatusUpdate
+sidebar_label: OnVehicleDamageStatusUpdate
 description: Acest callback este apelat atunci când un element al vehiculului, cum ar fi ușile, anvelopele, panourile sau luminile își schimbă starea de deteriorare.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Berkontribusi
+sidebar_label: Berkontribusi
 description: Cara berkontribusi untuk wiki SA-MP dan dokumentasi open.mp.
 ---
 
@@ -83,6 +84,7 @@ Hal pertama di dokumen _apapun_ di sini adalah metadata:
 ```mdx
 ---
 title: Dokumentasi
+sidebar_label: Dokumentasi
 description: Ini adalah sebuah halaman tentang apapun yang berhubungan dengan burger. Nyam nyam~
 ---
 ```

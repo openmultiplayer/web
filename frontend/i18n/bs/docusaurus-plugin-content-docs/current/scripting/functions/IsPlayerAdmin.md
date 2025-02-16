@@ -1,5 +1,6 @@
 ---
 title: IsPlayerAdmin
+sidebar_label: IsPlayerAdmin
 description: Provjerite je li igrač prijavljen kao RCON administrator.
 tags: ["administration"]
 ---

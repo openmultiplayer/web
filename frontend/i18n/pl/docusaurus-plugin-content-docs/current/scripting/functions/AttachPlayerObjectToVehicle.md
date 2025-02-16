@@ -1,5 +1,6 @@
 ---
 title: AttachPlayerObjectToVehicle
+sidebar_label: AttachPlayerObjectToVehicle
 description: Przyczepia obiekt gracza do pojazdu.
 tags: ["player", "vehicle"]
 ---

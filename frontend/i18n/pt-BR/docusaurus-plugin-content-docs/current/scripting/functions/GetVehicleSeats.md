@@ -1,5 +1,6 @@
 ---
 title: GetVehicleSeats
+sidebar_label: GetVehicleSeats
 description: Gets the number of seats in the vehicle.
 tags: ["vehicle"]
 ---

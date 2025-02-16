@@ -1,5 +1,6 @@
 ---
 title: Contribuer au rayonnement de open.MP
+sidebar_label: Contribuer au rayonnement de open.MP
 description: Contribuez, vous aussi, à améliorer la documentation fournie par open.MP et sa communauté.
 ---
 
@@ -71,6 +72,7 @@ La première chose à faire dans _chaque_ document, c'est d'insérer les métado
 ```mdx
 ---
 title: Ma documentation
+sidebar_label: Ma documentation
 description: Documentation sur les burgers !
 ---
 ```

@@ -1,5 +1,6 @@
 ---
 title: CreatePlayerObject
+sidebar_label: CreatePlayerObject
 description: Creates an object which will be visible to only one player.
 tags: ["player", "object", "playerobject"]
 ---

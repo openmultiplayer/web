@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPlayerPickup
+sidebar_label: OnPlayerPickUpPlayerPickup
 description: Bu geri çağırma, CreatePlayerPickup ile oluşturulan bir player-pickup'ı bir oyuncu aldığında çağrılır.
 tags: ["player", "pickup", "playerpickup"]
 ---

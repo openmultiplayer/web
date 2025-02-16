@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Acest callback este apelat atunci când un actor este transmis în flux (streamed in) de către clientul unui jucător.
 ---
 

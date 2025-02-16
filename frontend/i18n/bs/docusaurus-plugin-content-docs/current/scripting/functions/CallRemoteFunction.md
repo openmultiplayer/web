@@ -1,5 +1,6 @@
 ---
 title: CallRemoteFunction
+sidebar_label: CallRemoteFunction
 description: Poziva javnu funkciju u bilo kojoj skripti koja se učita.
 tags: []
 ---

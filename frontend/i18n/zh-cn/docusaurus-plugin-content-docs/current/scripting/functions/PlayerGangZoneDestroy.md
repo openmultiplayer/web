@@ -1,5 +1,6 @@
 ---
 title: PlayerGangZoneDestroy
+sidebar_label: PlayerGangZoneDestroy
 description: Destroy player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---

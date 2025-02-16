@@ -1,5 +1,6 @@
 ---
 title: Update3DTextLabelText
+sidebar_label: Update3DTextLabelText
 description: Updates a 3D Text Label text and color.
 tags: ["3dtextlabel"]
 ---

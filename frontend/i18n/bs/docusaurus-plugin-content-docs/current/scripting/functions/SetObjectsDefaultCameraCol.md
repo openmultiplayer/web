@@ -1,5 +1,6 @@
 ---
 title: SetObjectsDefaultCameraCol
+sidebar_label: SetObjectsDefaultCameraCol
 description: Omogućuje da se sudaranje kamere s novostvorenim objektima onemogući prema zadanim postavkama.
 tags: []
 ---

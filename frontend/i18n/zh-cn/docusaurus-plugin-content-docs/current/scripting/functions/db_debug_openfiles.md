@@ -1,5 +1,6 @@
 ---
 title: db_debug_openfiles
+sidebar_label: db_debug_openfiles
 description: Gets the number of open database connections for debugging purposes.
 keywords:
   - sqlite

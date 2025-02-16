@@ -1,5 +1,6 @@
 ---
 title: IsObjectMoving
+sidebar_label: IsObjectMoving
 description: Provjerava da li se zadati objectid kreće.
 tags: []
 ---

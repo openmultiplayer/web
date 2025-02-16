@@ -1,5 +1,6 @@
 ---
 title: StartRecordingPlayerData
+sidebar_label: StartRecordingPlayerData
 description: Nagsisimulang i-record ang mga galaw ng isang player sa isang file, na pagkatapos ay maaaring kopyahin ng isang NPC.
 tags: ["player"]
 ---

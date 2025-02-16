@@ -1,5 +1,6 @@
 ---
 title: CreateObject
+sidebar_label: CreateObject
 description: Obje oluşturma.
 tags: []
 ---

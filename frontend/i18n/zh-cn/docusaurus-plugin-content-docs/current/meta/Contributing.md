@@ -1,5 +1,6 @@
 ---
 title: 贡献
+sidebar_label: 贡献
 description: 如何为 SA-MP 维基和 open.mp 文档做出贡献.
 ---
 
@@ -83,6 +84,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 ```mdx
 ---
 title: My Documentation
+sidebar_label: My Documentation
 description: This is a page about stuff and things and burgers, yay!
 ---
 ```

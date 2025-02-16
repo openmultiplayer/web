@@ -1,5 +1,6 @@
 ---
 title: TextDrawIsSelectable
+sidebar_label: TextDrawIsSelectable
 description: Checks if a textdraw is selectable.
 tags: ["textdraw"]
 ---

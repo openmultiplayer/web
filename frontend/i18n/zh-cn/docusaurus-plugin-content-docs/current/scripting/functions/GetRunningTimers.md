@@ -1,5 +1,6 @@
 ---
 title: GetRunningTimers
+sidebar_label: GetRunningTimers
 description: Get the running timers.
 tags: []
 ---

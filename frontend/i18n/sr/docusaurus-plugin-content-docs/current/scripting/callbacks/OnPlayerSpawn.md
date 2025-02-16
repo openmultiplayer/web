@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSpawn
+sidebar_label: OnPlayerSpawn
 description: Ова повратна функција се позива када играч спавнује.
 tags: ["player"]
 ---

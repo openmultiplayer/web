@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitedMenu
+sidebar_label: OnPlayerExitedMenu
 description: Ова функција се позива када играч изађе из менија.
 tags: ["player", "menu"]
 ---

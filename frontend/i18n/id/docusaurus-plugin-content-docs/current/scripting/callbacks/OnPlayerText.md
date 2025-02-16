@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: Callback ini akan terpanggil ketika pemain mengirimkan pesan chat.
 tags: ["player"]
 ---

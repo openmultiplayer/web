@@ -1,5 +1,6 @@
 ---
 title: OnNPCConnect
+sidebar_label: OnNPCConnect
 description: Callback này được gọi khi một NPC kết nối thành công với server.
 tags: ["npc"]
 ---

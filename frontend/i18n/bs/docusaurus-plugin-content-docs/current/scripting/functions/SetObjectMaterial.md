@@ -1,5 +1,6 @@
 ---
 title: SetObjectMaterial
+sidebar_label: SetObjectMaterial
 description: Zamijeni teksturu objekta sa teksturom drugog modela iz igre.
 tags: []
 ---

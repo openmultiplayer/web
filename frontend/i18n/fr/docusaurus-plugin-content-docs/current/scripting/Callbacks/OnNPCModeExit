@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeExit
+sidebar_label: OnNPCModeExit
 description: Ce rappel est appelé lorsque le script d'un PNJ est déchargé.
 tags: ["npc"]
 ---

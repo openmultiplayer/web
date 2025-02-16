@@ -1,5 +1,6 @@
 ---
 title: Animations
+sidebar_label: Animations
 description: A list of all Animations
 tags: []
 ---

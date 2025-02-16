@@ -1,5 +1,6 @@
 ---
 title: IsPlayerNPC
+sidebar_label: IsPlayerNPC
 description: Provjerava ako je igrač pravi igrač ili NPC.
 tags: ["player", "npc"]
 ---

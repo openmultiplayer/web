@@ -1,5 +1,6 @@
 ---
 title: Problemas Comuns de Cliente
+sidebar_label: Problemas Comuns de Cliente
 description: Guia de como resolver problemas no cliente SA-MP.
 ---
 

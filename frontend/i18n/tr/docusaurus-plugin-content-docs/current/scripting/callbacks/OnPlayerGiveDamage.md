@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamage
+sidebar_label: OnPlayerGiveDamage
 description: Bu geri çağırma, bir oyuncu başka bir oyuncuya hasar verdiğinde çağırılır.
 tags: ["player"]
 ---

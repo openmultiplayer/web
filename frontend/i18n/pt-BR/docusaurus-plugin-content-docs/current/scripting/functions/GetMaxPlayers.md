@@ -1,5 +1,6 @@
 ---
 title: GetMaxPlayers
+sidebar_label: GetMaxPlayers
 description: Retorna o número máximo de jogadores que podem entrar no servidor, conforme definido pela variável 'maxplayer' no servidor.
 tags: ["player"]
 ---

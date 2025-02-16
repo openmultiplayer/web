@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamIn
+sidebar_label: OnPlayerStreamIn
 description: Callback này được gọi khi một người chơi được stream bởi client của người chơi khác.
 tags: ["player"]
 ---

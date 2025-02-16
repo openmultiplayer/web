@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawBackgroundColour
+sidebar_label: PlayerTextDrawBackgroundColour
 description: Adjust the background colour of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

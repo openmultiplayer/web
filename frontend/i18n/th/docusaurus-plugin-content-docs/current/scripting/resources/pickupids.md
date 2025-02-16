@@ -1,5 +1,6 @@
 ---
 title: "Pickup IDs"
+sidebar_label: "Pickup IDs"
 ---
 
 :::note

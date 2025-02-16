@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTargetPlayer
+sidebar_label: GetPlayerTargetPlayer
 description: Check who a player is aiming at.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: heapspace
+sidebar_label: heapspace
 description: Vraća količinu memorije dostupne za hrpu/stog (heap/stack) u bajtovima.
 tags: []
 ---

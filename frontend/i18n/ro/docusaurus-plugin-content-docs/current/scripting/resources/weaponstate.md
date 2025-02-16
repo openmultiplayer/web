@@ -1,5 +1,6 @@
 ---
 title: Statusurile armelor
+sidebar_label: Statusurile armelor
 description: Constantele pentru statusurile armelor
 ---
 

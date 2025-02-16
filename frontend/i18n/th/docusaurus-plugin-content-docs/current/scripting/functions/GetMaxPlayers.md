@@ -1,5 +1,6 @@
 ---
 title: GetMaxPlayers
+sidebar_label: GetMaxPlayers
 description: Returns the maximum number of players that can join the server, as set by the server variable 'maxplayers' in server.
 tags: ["player"]
 ---

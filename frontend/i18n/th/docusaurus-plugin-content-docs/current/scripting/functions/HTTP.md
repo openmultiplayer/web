@@ -1,5 +1,6 @@
 ---
 title: HTTP
+sidebar_label: HTTP
 description: Sends a threaded HTTP request.
 tags: ["http"]
 ---

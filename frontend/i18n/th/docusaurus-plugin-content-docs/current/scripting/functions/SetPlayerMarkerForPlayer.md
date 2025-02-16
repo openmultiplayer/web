@@ -1,5 +1,6 @@
 ---
 title: SetPlayerMarkerForPlayer
+sidebar_label: SetPlayerMarkerForPlayer
 description: Change the colour of a player's nametag and radar blip for another player.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnObjectMoved
+sidebar_label: OnObjectMoved
 description: Acest callback este apelat atunci când un obiect este mutat după MoveObject (când se oprește din mișcare).
 tags: []
 ---

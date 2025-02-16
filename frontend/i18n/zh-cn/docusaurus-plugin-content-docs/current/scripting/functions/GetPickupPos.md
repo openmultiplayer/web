@@ -1,5 +1,6 @@
 ---
 title: GetPickupPos
+sidebar_label: GetPickupPos
 description: Gets the coordinates of a pickup.
 tags: ["pickup"]
 ---

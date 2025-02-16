@@ -1,5 +1,6 @@
 ---
 title: GetVehicleParamsSirenState
+sidebar_label: GetVehicleParamsSirenState
 description: Vraća stanje sirene vozila (upaljena/ugašena).
 tags: ["vehicle"]
 ---

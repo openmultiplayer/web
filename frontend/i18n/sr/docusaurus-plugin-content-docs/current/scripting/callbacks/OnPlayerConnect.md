@@ -1,5 +1,6 @@
 ---
 title: OnPlayerConnect
+sidebar_label: OnPlayerConnect
 description: Ова функција се позива када се играч повезује на сервер.
 tags: ["player"]
 ---

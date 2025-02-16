@@ -1,5 +1,6 @@
 ---
 title: VectorSize
+sidebar_label: VectorSize
 description: Returns the norm (length) of the provided vector.
 tags: ["math"]
 ---

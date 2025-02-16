@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: Cette callback est appelé quand un véhicule disparait du champs de stream du joueur (le véhicule est tellement loin qu'il ne peut plus le voir).
 tags: ["vehicle"]
 ---

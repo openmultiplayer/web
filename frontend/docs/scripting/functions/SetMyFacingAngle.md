@@ -1,5 +1,6 @@
 ---
 title: SetMyFacingAngle
+sidebar_label: SetMyFacingAngle
 description: Set the NPC's facing angle.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Этот коллбэк вызывается, когда актёр пропадает из зоны стрима клиента.
 tags: []
 ---

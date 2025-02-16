@@ -1,5 +1,6 @@
 ---
 title: GetPlayerVehicleID
+sidebar_label: GetPlayerVehicleID
 description: This function gets the ID of the vehicle the player is currently in.
 tags: ["player", "vehicle"]
 ---

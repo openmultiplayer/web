@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStateChange
+sidebar_label: OnPlayerStateChange
 description: Callback này được gọi khi người chơi thay đổi trạng thái.
 tags: ["player"]
 ---

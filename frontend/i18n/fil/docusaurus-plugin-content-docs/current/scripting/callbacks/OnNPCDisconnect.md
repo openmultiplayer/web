@@ -1,5 +1,6 @@
 ---
 title: OnNPCDisconnect
+sidebar_label: OnNPCDisconnect
 description: Ang callback na ito ay tinatawag kapag ang NPC ay nadiskonekta sa server.
 tags: ["npc"]
 ---

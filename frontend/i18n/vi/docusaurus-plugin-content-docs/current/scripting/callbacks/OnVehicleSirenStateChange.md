@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSirenStateChange
+sidebar_label: OnVehicleSirenStateChange
 description: Callback này được gọi khi còi của một xe được bật hoặc tắt.
 tags: ["vehicle"]
 ---

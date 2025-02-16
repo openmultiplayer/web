@@ -1,5 +1,6 @@
 ---
 title: OnNPCConnect
+sidebar_label: OnNPCConnect
 description: Ова повратна функција се позива када NPC успешно изврши повезивање на сервер.
 tags: ["npc"]
 ---

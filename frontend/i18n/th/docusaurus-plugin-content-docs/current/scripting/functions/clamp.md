@@ -1,5 +1,6 @@
 ---
 title: clamp
+sidebar_label: clamp
 description: Force a value to be inside a range.
 tags: []
 ---

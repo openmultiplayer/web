@@ -1,5 +1,6 @@
 ---
 title: GetPlayerState
+sidebar_label: GetPlayerState
 description: Get a player's current state.
 tags: ["player"]
 ---

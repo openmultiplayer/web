@@ -1,5 +1,6 @@
 ---
 title: GameTextForAll
+sidebar_label: GameTextForAll
 description: Prikazuje 'game text' (tekst na ekranu) određeno vrijeme za sve igrače.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: setproperty
+sidebar_label: setproperty
 description: Dodaj novu imovinu ili promijeni već postojeću.
 tags: []
 ---

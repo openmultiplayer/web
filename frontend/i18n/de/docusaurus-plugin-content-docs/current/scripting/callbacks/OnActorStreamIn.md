@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Dieses Callback wird ausgeführt wenn ein Actor von einem Spieler gestreamt wird.
 tags: []
 ---

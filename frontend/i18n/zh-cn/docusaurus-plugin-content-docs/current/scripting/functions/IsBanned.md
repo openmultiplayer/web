@@ -1,5 +1,6 @@
 ---
 title: IsBanned
+sidebar_label: IsBanned
 description: Checks if the given IP address is banned.
 tags: ["ip address"]
 ---

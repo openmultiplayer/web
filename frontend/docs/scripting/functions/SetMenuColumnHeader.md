@@ -1,5 +1,6 @@
 ---
 title: SetMenuColumnHeader
+sidebar_label: SetMenuColumnHeader
 description: Sets the caption of a column in a menu.
 tags: ["menu"]
 ---

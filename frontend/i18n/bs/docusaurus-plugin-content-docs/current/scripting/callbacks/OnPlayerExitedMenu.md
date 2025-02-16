@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitedMenu
+sidebar_label: OnPlayerExitedMenu
 description: Pozvano kada igrač napusti meni.
 tags: ["player", "menu"]
 ---

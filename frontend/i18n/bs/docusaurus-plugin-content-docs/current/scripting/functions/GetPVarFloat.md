@@ -1,5 +1,6 @@
 ---
 title: GetPVarFloat
+sidebar_label: GetPVarFloat
 description: Dobija varijablu igrača kao float.
 tags: ["pvar"]
 ---

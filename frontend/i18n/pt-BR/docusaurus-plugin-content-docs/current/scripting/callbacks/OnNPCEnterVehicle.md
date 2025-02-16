@@ -1,5 +1,6 @@
 ---
 title: OnNPCEnterVehicle
+sidebar_label: OnNPCEnterVehicle
 description: Essa callback é executada quando o NPC entra em um veículo.
 tags: []
 ---

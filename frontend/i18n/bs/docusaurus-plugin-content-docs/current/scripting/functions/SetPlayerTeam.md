@@ -1,5 +1,6 @@
 ---
 title: SetPlayerTeam
+sidebar_label: SetPlayerTeam
 description: Postavi tim igrača.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTargetPlayer
+sidebar_label: GetPlayerTargetPlayer
 description: Provjeri na koga igrač cilja.
 tags: ["player"]
 ---

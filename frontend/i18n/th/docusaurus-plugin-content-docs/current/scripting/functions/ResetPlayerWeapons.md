@@ -1,5 +1,6 @@
 ---
 title: ResetPlayerWeapons
+sidebar_label: ResetPlayerWeapons
 description: Removes all weapons from a player.
 tags: ["player"]
 ---

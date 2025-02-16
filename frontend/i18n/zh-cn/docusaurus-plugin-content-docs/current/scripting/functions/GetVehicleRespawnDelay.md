@@ -1,5 +1,6 @@
 ---
 title: GetVehicleRespawnDelay
+sidebar_label: GetVehicleRespawnDelay
 description: Get the respawn delay of a vehicle.
 tags: ["vehicle"]
 ---

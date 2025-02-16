@@ -1,5 +1,6 @@
 ---
 title: EnableStuntBonusForPlayer
+sidebar_label: EnableStuntBonusForPlayer
 description: I-toggle ang mga stunt bonus para sa isang player.
 tags: ["player"]
 ---

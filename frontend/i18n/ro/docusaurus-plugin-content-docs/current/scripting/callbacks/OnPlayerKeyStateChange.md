@@ -1,5 +1,6 @@
 ---
 title: OnPlayerKeyStateChange
+sidebar_label: OnPlayerKeyStateChange
 description: Acest callback este apelat atunci când starea oricărei taste acceptate este schimbată (apăsată/eliberată).
 tags: ["player"]
 ---

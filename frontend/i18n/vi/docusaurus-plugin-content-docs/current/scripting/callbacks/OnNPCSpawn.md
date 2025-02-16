@@ -1,5 +1,6 @@
 ---
 title: OnNPCSpawn  
+sidebar_label: OnNPCSpawn  
 description: Callback này được gọi khi một NPC được sinh ra.  
 tags: ["npc"]  
 ---

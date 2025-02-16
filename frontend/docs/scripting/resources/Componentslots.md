@@ -1,5 +1,6 @@
 ---
 title: Component slots
+sidebar_label: Component slots
 ---
 
 :::info

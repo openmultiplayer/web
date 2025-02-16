@@ -1,5 +1,6 @@
 ---
 title: GetPlayerAnimationIndex
+sidebar_label: GetPlayerAnimationIndex
 description: Returns the index of any running applied animations.
 tags: ["player", "animation"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetMenuColumnHeader
+sidebar_label: GetMenuColumnHeader
 description: Get the text in the header of the specified column.
 tags: ["menu"]
 ---

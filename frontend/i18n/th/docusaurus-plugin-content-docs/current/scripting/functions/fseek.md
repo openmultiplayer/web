@@ -1,5 +1,6 @@
 ---
 title: fseek
+sidebar_label: fseek
 description: Change the current position in the file.
 tags: []
 ---

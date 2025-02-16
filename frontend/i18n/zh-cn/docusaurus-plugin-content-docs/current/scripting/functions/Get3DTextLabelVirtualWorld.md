@@ -1,5 +1,6 @@
 ---
 title: Get3DTextLabelVirtualWorld
+sidebar_label: Get3DTextLabelVirtualWorld
 description: Gets the 3D text label virtual world id.
 tags: ["3dtextlabel"]
 ---

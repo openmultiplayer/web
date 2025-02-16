@@ -1,5 +1,6 @@
 ---
 title: IsTrailerAttachedToVehicle
+sidebar_label: IsTrailerAttachedToVehicle
 description: Checks if a vehicle has a trailer attached to it.
 tags: ["vehicle"]
 ---

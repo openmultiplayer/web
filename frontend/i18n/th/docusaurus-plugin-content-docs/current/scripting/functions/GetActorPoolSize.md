@@ -1,5 +1,6 @@
 ---
 title: GetActorPoolSize
+sidebar_label: GetActorPoolSize
 description: Gets the highest actorid created on the server.
 tags: []
 ---

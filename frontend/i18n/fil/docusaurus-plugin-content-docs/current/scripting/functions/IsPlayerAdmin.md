@@ -1,5 +1,6 @@
 ---
 title: IsPlayerAdmin
+sidebar_label: IsPlayerAdmin
 description: Suriin kung ang isang manlalaro ay naka-log in bilang isang RCON admin.
 tags: ["administration"]
 ---

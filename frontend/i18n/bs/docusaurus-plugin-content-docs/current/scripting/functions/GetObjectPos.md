@@ -1,5 +1,6 @@
 ---
 title: GetObjectPos
+sidebar_label: GetObjectPos
 description: Dobij poziciju objekta.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPVarString
+sidebar_label: GetPVarString
 description: Gets a player variable as a string.
 tags: ["player variable", "pvar"]
 ---

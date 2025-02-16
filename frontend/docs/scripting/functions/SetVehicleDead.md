@@ -1,5 +1,6 @@
 ---
 title: SetVehicleDead
+sidebar_label: SetVehicleDead
 description: Sets the vehicle to dead.
 tags: ["vehicle"]
 ---

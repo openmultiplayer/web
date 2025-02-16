@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamageActor
+sidebar_label: OnPlayerGiveDamageActor
 description: Cette callback est appelée quand un joueur inflige des dégâts à un actor.
 tags: ["player"]
 ---

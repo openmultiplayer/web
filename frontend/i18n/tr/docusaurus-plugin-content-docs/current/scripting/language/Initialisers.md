@@ -1,5 +1,6 @@
 ---
 title: "Anahtar Kelimeler: Başlatıcılar"
+sidebar_label: "Anahtar Kelimeler: Başlatıcılar"
 ---
 
 ## `const`

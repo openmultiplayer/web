@@ -1,5 +1,6 @@
 ---
 title: IsPlayerInAnyVehicle
+sidebar_label: IsPlayerInAnyVehicle
 description: Provjerava da li je igrač unutar bilo kojeg vozila (kao vozač ili suvozač).
 tags: ["player", "vehicle"]
 ---

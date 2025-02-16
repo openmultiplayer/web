@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamIn
+sidebar_label: OnPlayerStreamIn
 description: Ова повратна функција се позива када се играч стримује од стране клијента неког другог играча.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: Bu geri çağırma oyuncu haritada bir yer işaretlediğinde çağrılır.
 tags: ["player"]
 ---

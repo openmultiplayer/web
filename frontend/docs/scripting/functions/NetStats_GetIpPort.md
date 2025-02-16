@@ -1,5 +1,6 @@
 ---
 title: NetStats_GetIpPort
+sidebar_label: NetStats_GetIpPort
 description: Get a player's IP and port.
 tags: ["network monitoring", "ip address"]
 ---

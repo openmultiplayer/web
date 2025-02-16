@@ -1,5 +1,6 @@
 ---
 title: StopObject
+sidebar_label: StopObject
 description: Zaustavi objekat koji se kreće nakon što se MoveObject koristio.
 tags: []
 ---

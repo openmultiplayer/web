@@ -1,5 +1,6 @@
 ---
 title: GetPlayerRawIp
+sidebar_label: GetPlayerRawIp
 description: Get the specified player's Raw IP address (v4).
 tags: ["player", "ip address"]
 ---

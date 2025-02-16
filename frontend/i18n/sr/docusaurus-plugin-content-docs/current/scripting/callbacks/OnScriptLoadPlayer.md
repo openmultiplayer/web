@@ -1,5 +1,6 @@
 ---
 title: OnScriptLoadPlayer
+sidebar_label: OnScriptLoadPlayer
 description: Ова повратна функција се позива за сваког повезаног играча када се скрипта учита.
 tags: ["player"]
 ---

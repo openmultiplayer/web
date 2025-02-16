@@ -1,5 +1,6 @@
 ---
 title: "Chaves"
+sidebar_label: "Chaves"
 ---
 
 :::note

@@ -1,5 +1,6 @@
 ---
 title: Manipularea șirurilor
+sidebar_label: Manipularea șirurilor
 description: Tutorial prietenos pentru începători despre orice manipulare a șirurilor.
 ---
 

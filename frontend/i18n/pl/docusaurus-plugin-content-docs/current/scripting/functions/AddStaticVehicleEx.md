@@ -1,5 +1,6 @@
 ---
 title: AddStaticVehicleEx
+sidebar_label: AddStaticVehicleEx
 description: Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu.
 tags: ["vehicle"]
 ---

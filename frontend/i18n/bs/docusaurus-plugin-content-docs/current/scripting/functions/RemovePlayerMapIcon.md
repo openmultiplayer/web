@@ -1,5 +1,6 @@
 ---
 title: RemovePlayerMapIcon
+sidebar_label: RemovePlayerMapIcon
 description: Uklanja ikonicu na mapi koja je prethodno postavljena za igrača koristeći SetPlayerMapIcon.
 tags: ["player"]
 ---

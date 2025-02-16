@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDisconnect
+sidebar_label: OnPlayerDisconnect
 description: Acest callback este apelat atunci când un jucător se deconectează de la server.
 tags: ["player"]
 ---

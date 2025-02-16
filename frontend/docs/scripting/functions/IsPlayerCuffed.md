@@ -1,5 +1,6 @@
 ---
 title: IsPlayerCuffed
+sidebar_label: IsPlayerCuffed
 description: Checks if the player special action is cuffed.
 tags: ["player"]
 ---

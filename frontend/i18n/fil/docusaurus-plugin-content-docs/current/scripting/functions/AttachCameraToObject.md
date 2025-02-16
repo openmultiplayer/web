@@ -1,5 +1,6 @@
 ---
 title: AttachCameraToObject
+sidebar_label: AttachCameraToObject
 description: Maaari mong gamitin ang function na ito upang ikabit ang player camera sa mga bagay.
 tags: []
 ---

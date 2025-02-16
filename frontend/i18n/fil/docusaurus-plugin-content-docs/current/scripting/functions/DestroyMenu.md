@@ -1,5 +1,6 @@
 ---
 title: DestroyMenu
+sidebar_label: DestroyMenu
 description: Sinisira ang tinukoy na menu.
 tags: ["menu"]
 ---

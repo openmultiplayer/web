@@ -1,5 +1,6 @@
 ---
 title: Weapon IDs
+sidebar_label: Weapon IDs
 ---
 
 :::info

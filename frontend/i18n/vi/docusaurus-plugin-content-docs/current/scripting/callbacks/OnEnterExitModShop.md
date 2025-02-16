@@ -1,5 +1,6 @@
 ---
 title: OnEnterExitModShop
+sidebar_label: OnEnterExitModShop
 description: Callback này được gọi khi một người chơi vào hoặc ra khỏi cửa hàng độ xe.
 tags: ["player"]
 ---

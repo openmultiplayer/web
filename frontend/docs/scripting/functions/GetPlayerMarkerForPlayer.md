@@ -1,5 +1,6 @@
 ---
 title: GetPlayerMarkerForPlayer
+sidebar_label: GetPlayerMarkerForPlayer
 description: Get the colour of a player's nametag and radar blip for another player.
 tags: ["player"]
 ---

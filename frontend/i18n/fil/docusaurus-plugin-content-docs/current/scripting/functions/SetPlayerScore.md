@@ -1,5 +1,6 @@
 ---
 title: SetPlayerScore
+sidebar_label: SetPlayerScore
 description: I-set ang score ng player
 tags: ["player"]
 ---

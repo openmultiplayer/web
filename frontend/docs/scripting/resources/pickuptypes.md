@@ -1,5 +1,6 @@
 ---
 title: "Pickup Types"
+sidebar_label: "Pickup Types"
 ---
 
 ### Available Pickup Types

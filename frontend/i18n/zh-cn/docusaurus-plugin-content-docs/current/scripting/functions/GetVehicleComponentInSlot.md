@@ -1,5 +1,6 @@
 ---
 title: GetVehicleComponentInSlot
+sidebar_label: GetVehicleComponentInSlot
 description: Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific slot.
 tags: ["vehicle"]
 ---

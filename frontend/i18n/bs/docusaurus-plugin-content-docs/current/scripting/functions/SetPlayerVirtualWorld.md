@@ -1,5 +1,6 @@
 ---
 title: SetPlayerVirtualWorld
+sidebar_label: SetPlayerVirtualWorld
 description: Postavite virtualni svijet igrača.
 tags: ["player"]
 ---

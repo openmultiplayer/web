@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickUpPickup
+sidebar_label: OnPlayerPickUpPickup
 description: Ова повратна функција је позвана када играч покупи пикап креиран преко CreatePickup.
 tags: ["player"]
 ---

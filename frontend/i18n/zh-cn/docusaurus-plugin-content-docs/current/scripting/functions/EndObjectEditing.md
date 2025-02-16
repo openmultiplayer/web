@@ -1,5 +1,6 @@
 ---
 title: EndObjectEditing
+sidebar_label: EndObjectEditing
 description: Cancel object edition mode for a player.
 tags: ["object"]
 ---

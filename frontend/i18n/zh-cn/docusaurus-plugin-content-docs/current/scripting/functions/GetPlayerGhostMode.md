@@ -1,5 +1,6 @@
 ---
 title: GetPlayerGhostMode
+sidebar_label: GetPlayerGhostMode
 description: Get player's ghost mode.
 tags: ["player"]
 ---

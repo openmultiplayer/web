@@ -1,5 +1,6 @@
 ---
 title: DisablePlayerCheckpoint
+sidebar_label: DisablePlayerCheckpoint
 description: Disables (hides/destroys) a player's set checkpoint.
 tags: ["player", "checkpoint"]
 ---

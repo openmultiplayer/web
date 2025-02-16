@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModel
+sidebar_label: AddSimpleModel
 description: Menambahkan sebuah simpel objek model untuk diunggah.
 tags: []
 ---

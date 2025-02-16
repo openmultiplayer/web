@@ -1,5 +1,6 @@
 ---
 title: floatpower
+sidebar_label: floatpower
 description: Daje zadanu vrijednost u potenciju eksponenta.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnNPCEnterVehicle
+sidebar_label: OnNPCEnterVehicle
 description: Ова повратна функција се позива када NPC уђе у возило.
 tags: ["npc"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: Ovaj callback je pozvan kada se vozilo prestane pojavljivati u igračevom klijentu (previše je daleko i ne može da ga vidi).
 tags: ["vehicle"]
 ---

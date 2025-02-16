@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickTextDraw
+sidebar_label: OnPlayerClickTextDraw
 description: Cette callback est appelée quand un joueur clique sur un textdraw ou le quitte avec la touche ECHAP.
 tags: ["player", "textdraw"]
 ---

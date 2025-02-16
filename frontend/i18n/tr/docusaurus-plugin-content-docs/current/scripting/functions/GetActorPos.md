@@ -1,5 +1,6 @@
 ---
 title: GetActorPos
+sidebar_label: GetActorPos
 description: Aktörün koordinat değerlerini kontrol etme.
 tags: ["actor"]
 ---

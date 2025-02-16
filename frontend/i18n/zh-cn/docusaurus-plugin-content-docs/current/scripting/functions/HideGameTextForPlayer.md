@@ -1,5 +1,6 @@
 ---
 title: HideGameTextForPlayer
+sidebar_label: HideGameTextForPlayer
 description: Stop showing a gametext style to a player.
 tags: ["player", "gametext"]
 ---

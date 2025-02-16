@@ -1,5 +1,6 @@
 ---
 title: GetVehicleParamsCarDoors
+sidebar_label: GetVehicleParamsCarDoors
 description: Omogućava vam vraćanje trenutnog stanja vrata od vozila.
 tags: ["vehicle"]
 ---

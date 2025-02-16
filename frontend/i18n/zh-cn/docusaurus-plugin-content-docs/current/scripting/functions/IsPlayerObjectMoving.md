@@ -1,5 +1,6 @@
 ---
 title: IsPlayerObjectMoving
+sidebar_label: IsPlayerObjectMoving
 description: Checks if the given player objectid is moving.
 tags: ["player", "object", "playerobject"]
 ---

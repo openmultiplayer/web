@@ -1,5 +1,6 @@
 ---
 title: GetServerTickRate
+sidebar_label: GetServerTickRate
 description: Gets the tick rate (like FPS) of the server.
 tags: []
 ---

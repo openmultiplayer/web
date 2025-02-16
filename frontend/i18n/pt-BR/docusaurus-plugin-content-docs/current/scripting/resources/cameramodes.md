@@ -1,5 +1,6 @@
 ---
 title: Modos de câmera
+sidebar_label: Modos de câmera
 ---
 
 ## Descrição

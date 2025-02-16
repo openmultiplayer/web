@@ -1,5 +1,6 @@
 ---
 title: IsPlayerRaceCheckpointActive
+sidebar_label: IsPlayerRaceCheckpointActive
 description: Check if the player currently has a race checkpoint visible.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

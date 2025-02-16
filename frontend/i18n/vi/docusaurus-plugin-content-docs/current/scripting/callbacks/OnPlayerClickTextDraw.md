@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickTextDraw
+sidebar_label: OnPlayerClickTextDraw
 description: Callback này được gọi khi một người chơi nhấp vào một textdraw hoặc hủy chế độ chọn bằng phím Escape.
 tags: ["player", "textdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Port Forward-ovanje
+sidebar_label: Port Forward-ovanje
 description: Tutorial za Port Forward-ovanje servera.
 ---
 

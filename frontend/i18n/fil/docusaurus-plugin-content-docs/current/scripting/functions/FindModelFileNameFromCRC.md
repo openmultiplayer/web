@@ -1,5 +1,6 @@
 ---
 title: FindModelFileNameFromCRC
+sidebar_label: FindModelFileNameFromCRC
 description: Maghanap ng umiiral nang custom skin o simple object model file.
 tags: []
 ---

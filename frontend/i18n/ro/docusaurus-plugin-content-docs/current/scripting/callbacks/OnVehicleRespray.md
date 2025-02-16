@@ -1,5 +1,6 @@
 ---
 title: OnVehicleRespray
+sidebar_label: OnVehicleRespray
 description: Acest callback este apelat atunci când un jucător iese dintr-un magazin de mod, chiar dacă culorile nu au fost schimbate.
 tags: ["vehicle"]
 ---

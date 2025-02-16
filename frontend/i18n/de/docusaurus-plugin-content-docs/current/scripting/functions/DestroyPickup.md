@@ -1,5 +1,6 @@
 ---
 title: DestroyPickup
+sidebar_label: DestroyPickup
 description: Löscht ein mit CreatePickup erstelltes Pickup.
 tags: []
 ---

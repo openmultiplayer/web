@@ -1,5 +1,6 @@
 ---
 title: "Comenzile clientului"
+sidebar_label: "Comenzile clientului"
 descripion: Lista tuturor comenzilor pentru client.
 ---
 

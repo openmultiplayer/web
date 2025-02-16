@@ -1,5 +1,6 @@
 ---
 title: PlayCrimeReportForPlayer
+sidebar_label: PlayCrimeReportForPlayer
 description: This function plays a crime report for a player - just like in single-player when CJ commits a crime.
 tags: ["player"]
 ---

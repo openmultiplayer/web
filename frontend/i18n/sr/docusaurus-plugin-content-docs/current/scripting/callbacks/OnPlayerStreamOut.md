@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamOut
+sidebar_label: OnPlayerStreamOut
 description: Ова повратна функција се позива када се играч уклони из клијента неког другог играча.
 tags: ["player"]
 ---

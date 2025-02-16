@@ -1,5 +1,6 @@
 ---
 title: SetDeathDropAmount
+sidebar_label: SetDeathDropAmount
 description: Sets death drops money.
 tags: []
 ---

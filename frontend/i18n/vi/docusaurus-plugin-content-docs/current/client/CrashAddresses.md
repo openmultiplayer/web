@@ -1,5 +1,6 @@
 ---
 title: Crash Addresses
+sidebar_label: Crash Addresses
 ---
 
 Dưới đây là bảng liệt kê một số địa chỉ lỗi sập phổ biến mà bạn có thể sử dụng để giúp theo dõi sự cố và ngăn chặn nó xảy ra trong tương lai. Trong hầu hết các trường hợp, lỗi sập của client xảy ra do vấn đề trong script. Tuy nhiên, đáng lưu ý rằng SA:MP hiện nay khá ổn định.

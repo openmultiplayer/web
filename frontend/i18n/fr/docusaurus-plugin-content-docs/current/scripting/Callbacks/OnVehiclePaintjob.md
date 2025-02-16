@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: Appelée lorsqu'un joueur change la peinture de son véhicule (dans un transfender/dans le wheel arch angel).
 tags: ["vehicle"]
 ---

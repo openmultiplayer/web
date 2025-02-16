@@ -1,5 +1,6 @@
 ---
 title: OnGameModeInit
+sidebar_label: OnGameModeInit
 description: Bu geri çağırma oyun modu başladığında tetiklenir.
 tags: []
 ---

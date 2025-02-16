@@ -1,5 +1,6 @@
 ---
 title: GetTimerRemaining
+sidebar_label: GetTimerRemaining
 description: Gets the remaining interval of a timer.
 tags: ["timer"]
 ---

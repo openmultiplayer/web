@@ -1,5 +1,6 @@
 ---
 title: UsePlayerPedAnims
+sidebar_label: UsePlayerPedAnims
 description: Koristi standardnu ​​animaciju hodanja igrača (animacija CJ kože) umjesto prilagođenih animacija za svaku kožu (npr. Klizanje za kože klizača).
 tags: ["player"]
 ---

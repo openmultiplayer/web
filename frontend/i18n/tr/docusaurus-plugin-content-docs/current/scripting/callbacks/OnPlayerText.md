@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: Fonksiyon, oyuncu sohbet mesajı gönderdiğinde çağrılır.
 tags: ["player"]
 ---

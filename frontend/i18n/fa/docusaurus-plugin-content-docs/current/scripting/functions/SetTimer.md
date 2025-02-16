@@ -1,5 +1,6 @@
 ---
 title: SetTimer
+sidebar_label: SetTimer
 description: یک 'تایمر' تنظیم می‌کند تا یک تابع را پس از مدتی فراخوانی کند.
 tags: ["timer"]
 ---

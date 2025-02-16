@@ -1,5 +1,6 @@
 ---
 title: Get3DTextLabelDrawDistance
+sidebar_label: Get3DTextLabelDrawDistance
 description: Gets the 3D text label draw distance.
 tags: ["3dtextlabel"]
 ---

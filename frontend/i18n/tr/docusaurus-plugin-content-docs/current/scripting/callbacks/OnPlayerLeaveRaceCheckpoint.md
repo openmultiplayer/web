@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeaveRaceCheckpoint
+sidebar_label: OnPlayerLeaveRaceCheckpoint
 description: Bu fonksiyon, bir oyuncu yarış kontrol noktasından çıktığında çağrılır. 
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

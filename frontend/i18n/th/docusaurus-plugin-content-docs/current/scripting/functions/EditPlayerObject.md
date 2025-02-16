@@ -1,5 +1,6 @@
 ---
 title: EditPlayerObject
+sidebar_label: EditPlayerObject
 description: Allows players to edit a player-object (position and rotation) with a GUI and their mouse.
 tags: ["player"]
 ---

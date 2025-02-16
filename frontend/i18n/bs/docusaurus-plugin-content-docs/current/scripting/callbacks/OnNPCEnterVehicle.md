@@ -1,5 +1,6 @@
 ---
 title: OnNPCEnterVehicle
+sidebar_label: OnNPCEnterVehicle
 description: Ovaj callback je pozvan kada NPC uđe u vozilo.
 tags: ["npc"]
 ---

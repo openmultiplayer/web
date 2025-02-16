@@ -1,5 +1,6 @@
 ---
 title: heapspace
+sidebar_label: heapspace
 description: Returns the amount of memory available for the heap/stack in bytes.
 tags: ["core"]
 ---

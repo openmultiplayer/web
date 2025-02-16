@@ -1,5 +1,6 @@
 ---
 title: IsVehicleDead
+sidebar_label: IsVehicleDead
 description: Check if a vehicle is dead.
 tags: ["vehicle"]
 ---

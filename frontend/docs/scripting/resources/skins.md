@@ -1,5 +1,6 @@
 ---
 title: Skins
+sidebar_label: Skins
 description: This page has the all the available skins in SA-MP.
 sidebar_label: Skin IDs
 ---

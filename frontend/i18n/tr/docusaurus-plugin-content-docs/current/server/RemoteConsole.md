@@ -1,5 +1,6 @@
 ---
 title: "Uzak Konsol (RCON)"
+sidebar_label: "Uzak Konsol (RCON)"
 description: Uzak sunucu yönetimi.
 ---
 

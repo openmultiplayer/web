@@ -1,5 +1,6 @@
 ---
 title: OnPlayerConnect
+sidebar_label: OnPlayerConnect
 description: این کالبک وقتی فرا خوانده میشود که بازیکن به سرور متصل می شود.
 
 tags: ["player"]

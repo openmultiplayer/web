@@ -1,5 +1,6 @@
 ---
 title: "ID Kostiju"
+sidebar_label: "ID Kostiju"
 ---
 
 :::note

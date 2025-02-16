@@ -1,5 +1,6 @@
 ---
 title: Body parts
+sidebar_label: Body parts
 ---
 
 To be used with [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamags), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) and [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).

@@ -1,5 +1,6 @@
 ---
 title: Vehicle Landing Gear States
+sidebar_label: Vehicle Landing Gear States
 description: Vehicle Landing Gear States
 ---
 

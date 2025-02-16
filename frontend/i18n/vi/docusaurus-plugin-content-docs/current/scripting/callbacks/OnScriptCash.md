@@ -1,5 +1,6 @@
 ---
 title: OnScriptCash
+sidebar_label: OnScriptCash
 description: Callback này được gọi khi một điều gì đó trong trò chơi như casino cấp tiền cho người chơi.
 tags: ["player"]
 ---

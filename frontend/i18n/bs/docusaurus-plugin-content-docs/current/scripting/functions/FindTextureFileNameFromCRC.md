@@ -1,5 +1,6 @@
 ---
 title: FindTextureFileNameFromCRC
+sidebar_label: FindTextureFileNameFromCRC
 description: Pronađite postojeću prilagođenu datoteku teksture kože ili jednostavnog objekta.
 tags: []
 ---

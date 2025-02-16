@@ -1,5 +1,6 @@
 ---
 title: IsActorStreamedIn
+sidebar_label: IsActorStreamedIn
 description: Checks if an actor is streamed in for a player.
 tags: []
 ---

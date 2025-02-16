@@ -1,5 +1,6 @@
 ---
 title: deleteproperty
+sidebar_label: deleteproperty
 description: Izbriši prethodno postavljenu imovinu (setproperty).
 tags: []
 ---

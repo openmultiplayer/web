@@ -1,5 +1,6 @@
 ---
 title: OnEnterExitModShop
+sidebar_label: OnEnterExitModShop
 description: Ова повратна функција се позива када играч уђе или напусти мод шоп.
 tags: ["player"]
 ---

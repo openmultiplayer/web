@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickGangZone
+sidebar_label: OnPlayerClickGangZone
 description: Bu geri çağırma, bir oyuncu duraklatma menüsü haritasında (sağ tıklayarak) bir gangzone'a tıkladığında çağrılır.
 tags: ["player", "gangzone"]
 ---

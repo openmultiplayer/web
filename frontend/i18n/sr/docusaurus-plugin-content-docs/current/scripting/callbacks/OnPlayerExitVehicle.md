@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitVehicle
+sidebar_label: OnPlayerExitVehicle
 description: Ова функција се позива када играч почне да излази из возила.
 tags: ["player", "vehicle"]
 ---

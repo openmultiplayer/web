@@ -1,5 +1,6 @@
 ---
 title: floatadd
+sidebar_label: floatadd
 description: Dodaje dva floata zajedno.
 tags: []
 ---

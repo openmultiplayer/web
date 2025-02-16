@@ -1,5 +1,6 @@
 ---
 title: setarg
+sidebar_label: setarg
 description: Magtakda ng argument na naipasa sa isang function.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetSVarFloat
+sidebar_label: SetSVarFloat
 description: Postavi float server varijablu.
 tags: []
 ---

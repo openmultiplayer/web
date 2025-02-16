@@ -1,5 +1,6 @@
 ---
 title: String Manipulation
+sidebar_label: String Manipulation
 description: Beginner friendly tutorial about everything string manipulation.
 ---
 

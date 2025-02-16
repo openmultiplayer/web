@@ -1,5 +1,6 @@
 ---
 title: Alamat Crash
+sidebar_label: Alamat Crash
 ---
 
 Berikut adalah daftar tabel beberapa alamat crash yang umum terjadi di klien yang di mana dapat membantu Anda menelusuri masalah tersebut dan mencegahnya agar tidak terjadi lagi. Kasus yang sering terjadi, klien crash terjadi karena ada masalah di skrip, meskipun SA-MP sudah cukup stabil hingga saat ini.

@@ -1,5 +1,6 @@
 ---
 title: Update3DTextLabelText
+sidebar_label: Update3DTextLabelText
 description: Ažurira text i boju 3D Text Labela.
 tags: ["3dtextlabel"]
 ---

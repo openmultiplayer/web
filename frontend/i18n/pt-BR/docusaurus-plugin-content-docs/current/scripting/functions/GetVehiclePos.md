@@ -1,5 +1,6 @@
 ---
 title: GetVehiclePos
+sidebar_label: GetVehiclePos
 description: Obtém a posição de um veículo.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: Essa callback é chamada quando um veículo sai da área visível de um jogador.
 tags: ["vehicle"]
 ---

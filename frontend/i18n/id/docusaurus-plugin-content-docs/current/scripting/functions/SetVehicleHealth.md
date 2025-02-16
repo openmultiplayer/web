@@ -1,5 +1,6 @@
 ---
 title: SetVehicleHealth
+sidebar_label: SetVehicleHealth
 description: Set health kendaraan.
 tags: ["vehicle"]
 ---

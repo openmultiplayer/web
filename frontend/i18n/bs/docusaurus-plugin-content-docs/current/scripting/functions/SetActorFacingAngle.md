@@ -1,5 +1,6 @@
 ---
 title: SetActorFacingAngle
+sidebar_label: SetActorFacingAngle
 description: Postavi smjer gledanja aktora.
 tags: []
 ---

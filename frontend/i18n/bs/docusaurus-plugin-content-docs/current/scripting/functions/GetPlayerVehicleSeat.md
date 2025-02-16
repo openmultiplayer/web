@@ -1,5 +1,6 @@
 ---
 title: GetPlayerVehicleSeat
+sidebar_label: GetPlayerVehicleSeat
 description: Saznaj u kojem je igrač sjedištu.
 tags: ["player", "vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Codes d'erreur
+sidebar_label: Codes d'erreur
 ---
 
 Les tableaux ci-dessous recensent les erreurs du client SA:MP les plus récentes selon leur fréquence, leur code d'erreur et leur cause. 

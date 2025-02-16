@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptInit
+sidebar_label: OnFilterScriptInit
 description: Ta "callback" imenuje se, ko je "filterscript" začne.
 tags: []
 ---

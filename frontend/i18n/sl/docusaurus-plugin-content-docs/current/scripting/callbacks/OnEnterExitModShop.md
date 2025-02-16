@@ -1,5 +1,6 @@
 ---
 title: OnEnterExitModShop
+sidebar_label: OnEnterExitModShop
 description: Ta povratni klic se pokliče, ko igralec vstopi v mod trgovino ali jo zapusti.
 tags: []
 ---

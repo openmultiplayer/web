@@ -1,5 +1,6 @@
 ---
 title: EditAttachedObject
+sidebar_label: EditAttachedObject
 description: Enter edition mode for an attached object.
 tags: []
 ---

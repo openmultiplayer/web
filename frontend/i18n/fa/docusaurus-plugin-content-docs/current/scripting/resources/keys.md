@@ -1,5 +1,6 @@
 ---
 title: "دکمه ها"
+sidebar_label: "دکمه ها"
 ---
 
 <div dir="rtl" style={{ textAlign: "right" }}>

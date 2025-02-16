@@ -1,5 +1,6 @@
 ---
 title: GetVehiclePaintjob
+sidebar_label: GetVehiclePaintjob
 description: Gets the vehicle's paintjob id.
 tags: ["vehicle"]
 ---

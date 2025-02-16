@@ -1,5 +1,6 @@
 ---
 title: "server.cfg"
+sidebar_label: "server.cfg"
 descripion: Конфигурационный файл сервера.
 ---
 

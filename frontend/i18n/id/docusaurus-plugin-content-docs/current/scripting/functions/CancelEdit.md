@@ -1,5 +1,6 @@
 ---
 title: CancelEdit
+sidebar_label: CancelEdit
 description: Membatalkan mode mengedit objek untuk pemain.
 tags: []
 ---

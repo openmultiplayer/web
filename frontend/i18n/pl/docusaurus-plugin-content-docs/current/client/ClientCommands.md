@@ -1,5 +1,6 @@
 ---
 title: "Komendy klienta"
+sidebar_label: "Komendy klienta"
 description: Lista wszystkich komend klienta.
 ---
 

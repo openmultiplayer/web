@@ -1,5 +1,6 @@
 ---
 title: ClearBanList
+sidebar_label: ClearBanList
 description: Clears the ban list.
 tags: []
 ---

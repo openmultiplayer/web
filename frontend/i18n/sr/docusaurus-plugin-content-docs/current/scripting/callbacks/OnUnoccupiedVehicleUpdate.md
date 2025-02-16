@@ -1,5 +1,6 @@
 ---
 title: OnUnoccupiedVehicleUpdate
+sidebar_label: OnUnoccupiedVehicleUpdate
 description: Ова функција се позива када клијент играча ажурира/синхронизује позицију возила које не управља.
 tags: ["vehicle"]
 ---

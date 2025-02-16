@@ -1,5 +1,6 @@
 ---
 title: DB_GetFieldString
+sidebar_label: DB_GetFieldString
 description: Get the content of a field from DB_ExecuteQuery.
 keywords:
   - sqlite

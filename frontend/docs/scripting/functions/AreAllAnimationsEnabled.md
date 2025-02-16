@@ -1,5 +1,6 @@
 ---
 title: AreAllAnimationsEnabled
+sidebar_label: AreAllAnimationsEnabled
 description: Are the animations missing from some versions enabled?
 tags: ["animation"]
 ---

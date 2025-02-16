@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeavePlayerGangZone
+sidebar_label: OnPlayerLeavePlayerGangZone
 description: This callback is called when a player exited a player gangzone
 tags: ["player", "gangzone"]
 ---

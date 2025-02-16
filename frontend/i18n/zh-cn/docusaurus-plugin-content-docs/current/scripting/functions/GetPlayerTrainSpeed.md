@@ -1,5 +1,6 @@
 ---
 title: GetPlayerTrainSpeed
+sidebar_label: GetPlayerTrainSpeed
 description: Gets the speed of the player's train.
 tags: ["player", "vehicle"]
 ---

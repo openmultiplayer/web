@@ -1,5 +1,6 @@
 ---
 title: GetPlayerSurfingVehicleID
+sidebar_label: GetPlayerSurfingVehicleID
 description: Dobij ID vozila na kojem igrač surfa (zapeo za krovu vozila).
 tags: ["player", "vehicle"]
 ---

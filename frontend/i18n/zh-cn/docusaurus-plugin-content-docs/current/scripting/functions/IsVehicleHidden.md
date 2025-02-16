@@ -1,5 +1,6 @@
 ---
 title: IsVehicleHidden
+sidebar_label: IsVehicleHidden
 description: Checks if a vehicle is hidden.
 tags: ["vehicle"]
 ---

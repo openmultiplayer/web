@@ -1,5 +1,6 @@
 ---
 title: TextDrawShowForAll
+sidebar_label: TextDrawShowForAll
 description: Shows a textdraw for all players.
 tags: ["textdraw"]
 ---

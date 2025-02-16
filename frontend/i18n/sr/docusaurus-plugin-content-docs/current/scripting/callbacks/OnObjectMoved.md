@@ -1,5 +1,6 @@
 ---
 title: OnObjectMoved
+sidebar_label: OnObjectMoved
 description: Ова повратна функција се позива када се објекат помери након MoveObject (када се заустави са кретањем).
 tags: ["object"]
 ---

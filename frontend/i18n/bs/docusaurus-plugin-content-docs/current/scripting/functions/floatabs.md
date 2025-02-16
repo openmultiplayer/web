@@ -1,5 +1,6 @@
 ---
 title: floatabs
+sidebar_label: floatabs
 description: Ova funkcija vraća apsolutnu vrijednost float-a.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: DeleteSVar
+sidebar_label: DeleteSVar
 description: Briše prethodno postavljenu server varijablu.
 tags: []
 ---

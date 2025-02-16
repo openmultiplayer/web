@@ -1,5 +1,6 @@
 ---
 title: AllowPlayerTeleport
+sidebar_label: AllowPlayerTeleport
 description: Włącza/wyłącza graczom możliwość teleportacji przez klikanie prawym przyciskiem myszy na mapie.
 tags: ["player"]
 ---

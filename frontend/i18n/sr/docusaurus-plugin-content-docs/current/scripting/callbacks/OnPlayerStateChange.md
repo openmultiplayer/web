@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStateChange
+sidebar_label: OnPlayerStateChange
 description: Ова повратна функција се позива када играч промени стање.
 tags: ["player"]
 ---

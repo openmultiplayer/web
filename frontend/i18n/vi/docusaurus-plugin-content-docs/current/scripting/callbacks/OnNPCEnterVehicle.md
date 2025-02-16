@@ -1,5 +1,6 @@
 ---
 title: OnNPCEnterVehicle
+sidebar_label: OnNPCEnterVehicle
 description: Callback này được gọi khi NPC vào một chiếc xe.
 tags: ["npc"]
 ---

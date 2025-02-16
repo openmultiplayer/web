@@ -1,5 +1,6 @@
 ---
 title: open.mp fonksiyonları
+sidebar_label: open.mp fonksiyonları
 description: Yeni fonksiyonlar ve callbackler.
 ---
 

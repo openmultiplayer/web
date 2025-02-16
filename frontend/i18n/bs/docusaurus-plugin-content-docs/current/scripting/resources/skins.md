@@ -1,5 +1,6 @@
 ---
 title: Skinovi
+sidebar_label: Skinovi
 description: Ova stranica ima sve dostupne skinove u SA-MP-u.
 sidebar_label: Skin ID-ovi
 ---

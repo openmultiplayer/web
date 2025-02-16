@@ -1,5 +1,6 @@
 ---
 title: SetWorldTime
+sidebar_label: SetWorldTime
 description: Postavlja vrijeme svijeta (za sve igrače) na određeni sat.
 tags: []
 ---

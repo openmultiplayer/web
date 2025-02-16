@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetSelectable
+sidebar_label: PlayerTextDrawSetSelectable
 description: Toggles whether a player-textdraw can be selected or not.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

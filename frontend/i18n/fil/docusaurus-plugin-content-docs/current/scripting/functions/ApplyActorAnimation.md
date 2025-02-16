@@ -1,5 +1,6 @@
 ---
 title: ApplyActorAnimation
+sidebar_label: ApplyActorAnimation
 description: Mag-apply ng animation sa isang artista.
 tags: []
 ---

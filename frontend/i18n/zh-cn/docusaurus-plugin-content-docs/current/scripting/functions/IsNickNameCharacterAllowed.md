@@ -1,5 +1,6 @@
 ---
 title: IsNickNameCharacterAllowed
+sidebar_label: IsNickNameCharacterAllowed
 description: Checks if a character is allowed in nickname.
 tags: []
 ---

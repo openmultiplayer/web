@@ -1,5 +1,6 @@
 ---
 title: IsValidTimer
+sidebar_label: IsValidTimer
 description: Checks if a timer is valid.
 tags: ["timer"]
 ---

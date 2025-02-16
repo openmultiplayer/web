@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeInit
+sidebar_label: OnNPCModeInit
 description: Bu geri çağırma, bir NPC scripti yüklendiğinde çağrılır.
 tags: ["npc"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectRot
+sidebar_label: GetPlayerObjectRot
 description: Use this function to get the object's current rotation.
 tags: ["player"]
 ---

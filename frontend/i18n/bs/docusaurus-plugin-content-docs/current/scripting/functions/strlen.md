@@ -1,5 +1,6 @@
 ---
 title: strlen
+sidebar_label: strlen
 description: Dobij dužinu stringa.
 tags: []
 ---

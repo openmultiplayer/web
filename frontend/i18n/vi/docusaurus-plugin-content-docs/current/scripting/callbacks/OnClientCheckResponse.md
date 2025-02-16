@@ -1,5 +1,6 @@
 ---
 title: OnClientCheckResponse
+sidebar_label: OnClientCheckResponse
 description: Callback này được gọi khi một yêu cầu SendClientCheck hoàn tất.
 tags: []
 ---

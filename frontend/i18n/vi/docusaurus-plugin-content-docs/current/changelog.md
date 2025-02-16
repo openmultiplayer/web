@@ -1,5 +1,6 @@
 ---
 title: Changelog
+sidebar_label: Changelog
 description: Tiến trình phát triển open.mp và nhật ký thay đổi.
 ---
 

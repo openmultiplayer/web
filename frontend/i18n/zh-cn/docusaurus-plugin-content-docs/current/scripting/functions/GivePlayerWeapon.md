@@ -1,5 +1,6 @@
 ---
 title: GivePlayerWeapon
+sidebar_label: GivePlayerWeapon
 description: Give a player a weapon with a specified amount of ammo.
 tags: ["player"]
 ---

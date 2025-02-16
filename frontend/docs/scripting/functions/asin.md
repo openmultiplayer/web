@@ -1,5 +1,6 @@
 ---
 title: asin
+sidebar_label: asin
 description: Get the inversed value of a sine in degrees.
 tags: ["math"]
 ---

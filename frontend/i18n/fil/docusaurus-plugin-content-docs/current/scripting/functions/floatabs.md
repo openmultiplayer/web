@@ -1,5 +1,6 @@
 ---
 title: floatabs
+sidebar_label: floatabs
 description: Ibinabalik ng function na ito ang absolute value ng float.
 tags: ["math", "floating-point"]
 ---

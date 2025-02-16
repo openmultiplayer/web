@@ -1,5 +1,6 @@
 ---
 title: LinkVehicleToInterior
+sidebar_label: LinkVehicleToInterior
 description: Povezuje vozilo za enterijer.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnRconCommand
+sidebar_label: OnRconCommand
 description: Essa callback é executada quando um comando é enviado ao servidor, seja digitando no console, pela RCON, ou in-game utilizando "/rcon comando".
 tags: []
 ---

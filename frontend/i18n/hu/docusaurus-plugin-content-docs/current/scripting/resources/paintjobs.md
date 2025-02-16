@@ -1,5 +1,6 @@
 ---
 title: Festőmunkák
+sidebar_label: Festőmunkák
 description: Festési munkák alkalmazhatók meghatározott járműveken
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: SendClientMessage
+sidebar_label: SendClientMessage
 description: Ova funkcija šalje poruku navedenom igraču sa odabranom bojom u chatu.
 tags: []
 ---

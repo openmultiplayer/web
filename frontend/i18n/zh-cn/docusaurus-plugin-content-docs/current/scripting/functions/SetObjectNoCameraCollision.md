@@ -1,5 +1,6 @@
 ---
 title: SetObjectNoCameraCollision
+sidebar_label: SetObjectNoCameraCollision
 description: Disable collisions between players' cameras and the specified object.
 tags: ["object", "camera"]
 ---

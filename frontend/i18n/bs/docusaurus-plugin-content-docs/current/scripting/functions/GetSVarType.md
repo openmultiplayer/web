@@ -1,5 +1,6 @@
 ---
 title: GetSVarType
+sidebar_label: GetSVarType
 description: Dobija tip (cijeli broj, float or string) server varijable.
 tags: []
 ---

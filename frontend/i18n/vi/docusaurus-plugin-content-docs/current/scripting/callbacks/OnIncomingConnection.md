@@ -1,5 +1,6 @@
 ---
 title: OnIncomingConnection
+sidebar_label: OnIncomingConnection
 description: Callback này được gọi khi một địa chỉ IP cố gắng kết nối với server.
 tags: []
 ---

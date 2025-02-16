@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsSirenState
+sidebar_label: SetVehicleParamsSirenState
 description: Turn the siren for a vehicle on or off.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetObjectRot
+sidebar_label: SetObjectRot
 description: Postavi rotaciju objekta na tri ose (X, Y i Z).
 tags: []
 ---

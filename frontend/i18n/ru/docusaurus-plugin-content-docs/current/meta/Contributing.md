@@ -1,5 +1,6 @@
 ---
 title: Внесение вклада
+sidebar_label: Внесение вклада
 description: Как внести вклад в Wiki SA-MP и документацию open.mp.
 ---
 
@@ -86,6 +87,7 @@ git clone https://github.com/openmultiplayer/wiki.git
 ```mdx
 ---
 title: Мой документация
+sidebar_label: Мой документация
 description: Эта страница о различных штуках, вещах и бургерах, воу!
 ---
 ```

@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetString
+sidebar_label: PlayerTextDrawGetString
 description: Gets the text of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

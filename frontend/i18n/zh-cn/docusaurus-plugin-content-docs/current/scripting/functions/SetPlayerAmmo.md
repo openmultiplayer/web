@@ -1,5 +1,6 @@
 ---
 title: SetPlayerAmmo
+sidebar_label: SetPlayerAmmo
 description: Set the ammo of a player's weapon.
 tags: ["player"]
 ---

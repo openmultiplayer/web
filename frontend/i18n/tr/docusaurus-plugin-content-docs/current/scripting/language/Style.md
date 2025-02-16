@@ -1,5 +1,6 @@
 ---
 title: "Pawn Stil Rehberi"
+sidebar_label: "Pawn Stil Rehberi"
 description: Amaç, Pawn kaynak kodunun genellikle kabul edilen adlandırma kuralları ve diğer yönleri hakkında kısa bir rehber sunarak niyetin daha kolay iletilmesine ve kodun paylaşılmasına yönelik hata ayıklamayı kolaylaştırmaktır.
 ---
 

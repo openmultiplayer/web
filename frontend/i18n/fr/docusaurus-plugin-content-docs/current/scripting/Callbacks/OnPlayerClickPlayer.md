@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickPlayer
+sidebar_label: OnPlayerClickPlayer
 description: Callback appelée quand un joueur double-clique sur le pseudo d'un joueur dans la tablist.
 tags: [player, clickplayer, clickedplayerid, source]
 ---

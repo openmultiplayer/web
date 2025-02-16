@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDeath
+sidebar_label: OnPlayerDeath
 description: Bu geri çağırma, bir oyuncu öldüğünde, intihar ettiğinde ya da başka bir oyuncu tarafından öldürüldüğünde çağrılır.
 tags: ["player"]
 ---

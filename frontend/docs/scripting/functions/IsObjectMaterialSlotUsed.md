@@ -1,5 +1,6 @@
 ---
 title: IsObjectMaterialSlotUsed
+sidebar_label: IsObjectMaterialSlotUsed
 description: Checks if a slot of object material is used.
 tags: ["object"]
 ---

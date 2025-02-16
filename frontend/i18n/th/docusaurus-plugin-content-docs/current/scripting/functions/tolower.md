@@ -1,5 +1,6 @@
 ---
 title: tolower
+sidebar_label: tolower
 description: This function changes a single character to lowercase.
 tags: []
 ---

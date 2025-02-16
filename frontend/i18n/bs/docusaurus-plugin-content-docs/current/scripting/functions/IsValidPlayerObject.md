@@ -1,5 +1,6 @@
 ---
 title: IsValidPlayerObject
+sidebar_label: IsValidPlayerObject
 description: Provjerava da li je dati ID objekta važeći za datog igrača.
 tags: ["player"]
 ---

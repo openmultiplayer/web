@@ -1,5 +1,6 @@
 ---
 title: open.mp functions
+sidebar_label: open.mp functions
 description: New functions and callbacks.
 ---
 

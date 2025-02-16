@@ -1,5 +1,6 @@
 ---
 title: floatmul
+sidebar_label: floatmul
 description: Množi dva floata jedni s drugima.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSpawn
+sidebar_label: OnPlayerSpawn
 description: Tinatawag ang callback na ito kapag nag-spawn ang isang player.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: TextDrawSetShadow
+sidebar_label: TextDrawSetShadow
 description: Postavlja veličinu sjene teksta u textdrawu.
 tags: ["textdraw"]
 ---

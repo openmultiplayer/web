@@ -1,5 +1,6 @@
 ---
 title: SetPlayerArmour
+sidebar_label: SetPlayerArmour
 description: Set a player's armor level.
 tags: ["player"]
 ---

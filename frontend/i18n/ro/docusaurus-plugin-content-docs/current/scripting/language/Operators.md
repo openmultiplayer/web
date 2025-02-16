@@ -1,5 +1,6 @@
 ---
 title: "Cuvant: Operatori"
+sidebar_label: "Cuvant: Operatori"
 ---
 
 ## `char`

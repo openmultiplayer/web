@@ -1,5 +1,6 @@
 ---
 title: GetVehicleSirenState
+sidebar_label: GetVehicleSirenState
 description: Gets the siren state of the vehicle.
 tags: ["vehicle"]
 ---

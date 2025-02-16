@@ -1,5 +1,6 @@
 ---
 title: GetObjectMoveSpeed
+sidebar_label: GetObjectMoveSpeed
 description: Get the move speed of an object.
 tags: ["object"]
 ---

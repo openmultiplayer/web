@@ -1,5 +1,6 @@
 ---
 title: OnDialogResponse
+sidebar_label: OnDialogResponse
 description: Этот коллбэк вызывается, когда игрок взаимодействует с диалогом, показанным ему через ShowPlayerDialog.
 tags: []
 ---

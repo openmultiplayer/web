@@ -1,5 +1,6 @@
 ---
 title: SetPlayerWantedLevel
+sidebar_label: SetPlayerWantedLevel
 description: Postavi wanted level igrača (6 smeđih zvjetdica ispod HUD-a).
 tags: ["player"]
 ---

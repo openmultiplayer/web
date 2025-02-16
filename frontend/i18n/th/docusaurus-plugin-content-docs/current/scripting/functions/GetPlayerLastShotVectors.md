@@ -1,5 +1,6 @@
 ---
 title: GetPlayerLastShotVectors
+sidebar_label: GetPlayerLastShotVectors
 description: Retrieves the start and end (hit) position of the last bullet a player fired.
 tags: ["player"]
 ---

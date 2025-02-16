@@ -1,5 +1,6 @@
 ---
 title: "Keywords: Directives"
+sidebar_label: "Keywords: Directives"
 ---
 
 Directives are instructions passed to the compiler to control how it interprets your source code.

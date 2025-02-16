@@ -1,5 +1,6 @@
 ---
 title: Common Server Issues
+sidebar_label: Common Server Issues
 ---
 
 ## Server instantly crashes when started

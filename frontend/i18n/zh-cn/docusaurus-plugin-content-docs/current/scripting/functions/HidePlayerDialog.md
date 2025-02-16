@@ -1,5 +1,6 @@
 ---
 title: HidePlayerDialog
+sidebar_label: HidePlayerDialog
 description: Hides any dialog the player may currently be able to see.
 tags: ["player", "dialog"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: SendCommand
+sidebar_label: SendCommand
 description: This will force the NPC to write a desired command, and this way, getting the effects it would produce.
 tags: []
 ---

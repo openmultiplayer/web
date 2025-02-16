@@ -1,5 +1,6 @@
 ---
 title: GetPVarInt
+sidebar_label: GetPVarInt
 description: Dobiva vrijednost cijelog broja varijable igrača.
 tags: ["pvar"]
 ---

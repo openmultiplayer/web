@@ -1,5 +1,6 @@
 ---
 title: ShowObjectForPlayer
+sidebar_label: ShowObjectForPlayer
 description: Show an object for a player.
 tags: ["player", "object"]
 ---

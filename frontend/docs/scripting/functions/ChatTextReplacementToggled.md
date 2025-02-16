@@ -1,5 +1,6 @@
 ---
 title: ChatTextReplacementToggled
+sidebar_label: ChatTextReplacementToggled
 description: Checks if the chat input filtering is enabled or disabled.
 tags: []
 ---

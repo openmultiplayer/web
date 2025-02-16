@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeInit.
+sidebar_label: OnNPCModeInit.
 description: Ова повратна функција се позива када се NPC скрипта учита.
 tags: ["npc"]
 ---

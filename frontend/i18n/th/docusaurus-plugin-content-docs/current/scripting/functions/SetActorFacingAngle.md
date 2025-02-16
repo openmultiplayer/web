@@ -1,5 +1,6 @@
 ---
 title: SetActorFacingAngle
+sidebar_label: SetActorFacingAngle
 description: Set the facing angle of an actor.
 tags: []
 ---

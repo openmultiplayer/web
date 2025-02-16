@@ -1,5 +1,6 @@
 ---
 title: GetObjectMovingTargetPos
+sidebar_label: GetObjectMovingTargetPos
 description: Get the move target position of an object.
 tags: ["object"]
 ---

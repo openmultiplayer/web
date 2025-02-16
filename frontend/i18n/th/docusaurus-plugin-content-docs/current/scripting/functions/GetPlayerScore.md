@@ -1,5 +1,6 @@
 ---
 title: GetPlayerScore
+sidebar_label: GetPlayerScore
 description: This function returns a player's score as it was set using SetPlayerScore.
 tags: ["player"]
 ---

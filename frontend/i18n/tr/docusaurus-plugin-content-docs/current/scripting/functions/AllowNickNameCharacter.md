@@ -1,5 +1,6 @@
 ---
 title: AllowNickNameCharacter
+sidebar_label: AllowNickNameCharacter
 description: Bir karakterin takma adlarda kullanılmasına izin verir.
 tags: []
 ---

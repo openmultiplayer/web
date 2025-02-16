@@ -1,5 +1,6 @@
 ---
 title: "Binar"
+sidebar_label: "Binar"
 description: O privire aprofundată asupra operatorilor binari și bit-bit
 ---
 

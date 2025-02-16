@@ -1,5 +1,6 @@
 ---
 title: ForceClassSelection
+sidebar_label: ForceClassSelection
 description: Pinipilit ang isang manlalaro na bumalik sa class selection.
 tags: []
 ---

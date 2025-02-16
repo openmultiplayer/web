@@ -1,5 +1,6 @@
 ---
 title: Weapon Slots
+sidebar_label: Weapon Slots
 description: Weapon Slots used by GetWeaponSlot and GetPlayerWeaponData.
 ---
 

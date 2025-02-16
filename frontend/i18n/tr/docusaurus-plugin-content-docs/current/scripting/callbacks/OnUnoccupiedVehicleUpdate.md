@@ -1,5 +1,6 @@
 ---
 title: OnUnoccupiedVehicleUpdate
+sidebar_label: OnUnoccupiedVehicleUpdate
 description: Bu fonksiyon, oyuncunun istemcisi sürmediği bir aracın konumunu güncellediğinde / senkronize ettiğinde çağrılır.
 tags: ["vehicle"]
 ---

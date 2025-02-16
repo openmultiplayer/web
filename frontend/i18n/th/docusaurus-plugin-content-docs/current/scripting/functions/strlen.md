@@ -1,5 +1,6 @@
 ---
 title: strlen
+sidebar_label: strlen
 description: Get the length of a string.
 tags: []
 ---

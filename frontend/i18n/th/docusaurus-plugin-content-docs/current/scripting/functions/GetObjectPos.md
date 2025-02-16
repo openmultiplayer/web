@@ -1,5 +1,6 @@
 ---
 title: GetObjectPos
+sidebar_label: GetObjectPos
 description: Get the position of an object.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: floatcmp
+sidebar_label: floatcmp
 description: Ang floatcmp ay maaaring gamitin upang ihambing ang mga halaga ng float sa bawat isa, upang mapatunayan ang paghahambing.
 tags: ["math", "floating-point"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: CreateVehicle
+sidebar_label: CreateVehicle
 description: Cria um veículo no mundo.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: FindModelFileNameFromCRC
+sidebar_label: FindModelFileNameFromCRC
 description: Find an existing custom skin or simple object model file.
 tags: ["custom model", "custom skin", "simple model"]
 ---

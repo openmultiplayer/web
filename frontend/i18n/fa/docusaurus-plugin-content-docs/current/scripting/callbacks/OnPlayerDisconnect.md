@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDisconnect
+sidebar_label: OnPlayerDisconnect
 description: وقتی بازیکن از سرور خارج می شود، این کالبک فراخوانی می شود.
 tags: ["player"]
 ---

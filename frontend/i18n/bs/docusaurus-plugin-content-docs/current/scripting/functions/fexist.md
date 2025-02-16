@@ -1,5 +1,6 @@
 ---
 title: fexist
+sidebar_label: fexist
 description: Provjerava postoji li određena datoteka u direktoriju skripti datoteka.
 tags: []
 ---

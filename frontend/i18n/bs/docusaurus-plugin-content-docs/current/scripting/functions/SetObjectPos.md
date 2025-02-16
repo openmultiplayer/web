@@ -1,5 +1,6 @@
 ---
 title: SetObjectPos
+sidebar_label: SetObjectPos
 description: Promijeni poziciju objekta.
 tags: []
 ---

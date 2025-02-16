@@ -1,5 +1,6 @@
 ---
 title: GetVehicleVelocity
+sidebar_label: GetVehicleVelocity
 description: Get the velocity of a vehicle on the X, Y and Z axes.
 tags: ["vehicle"]
 ---

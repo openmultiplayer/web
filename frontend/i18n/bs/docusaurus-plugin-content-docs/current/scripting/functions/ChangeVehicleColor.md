@@ -1,5 +1,6 @@
 ---
 title: ChangeVehicleColor
+sidebar_label: ChangeVehicleColor
 description: Promjena primarne i sekundarne boje vozila.
 tags: ["vehicle"]
 ---

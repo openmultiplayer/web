@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickTextDraw
+sidebar_label: OnPlayerClickTextDraw
 description: Bu geri çağırma, bir oyuncu bir textdrawa tıkladığında veya Escape tuşu ile seçim modunu iptal ettiğinde çağrılır.
 tags: ["player", "textdraw"]
 ---

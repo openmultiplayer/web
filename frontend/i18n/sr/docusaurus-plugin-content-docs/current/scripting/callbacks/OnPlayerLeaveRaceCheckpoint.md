@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeaveRaceCheckpoint
+sidebar_label: OnPlayerLeaveRaceCheckpoint
 description: Овај повратни позив се позива када играч напусти тркачку контролну тачку.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

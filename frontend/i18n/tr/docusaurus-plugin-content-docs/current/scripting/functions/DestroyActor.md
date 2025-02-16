@@ -1,5 +1,6 @@
 ---
 title: DestroyActor
+sidebar_label: DestroyActor
 description: CreateActor ile oluşturulan aktörü silin.
 tags: []
 ---

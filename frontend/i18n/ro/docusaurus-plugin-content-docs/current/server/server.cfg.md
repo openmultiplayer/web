@@ -1,5 +1,6 @@
 ---
 title: "server.cfg"
+sidebar_label: "server.cfg"
 descripion: Server configuration file.
 ---
 

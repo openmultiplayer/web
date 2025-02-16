@@ -1,5 +1,6 @@
 ---
 title: CreateObject
+sidebar_label: CreateObject
 description: Kreira objekat na određenim kordinatama iz igre.
 tags: []
 ---

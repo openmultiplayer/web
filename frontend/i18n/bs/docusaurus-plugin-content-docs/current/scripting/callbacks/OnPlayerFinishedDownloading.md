@@ -1,5 +1,6 @@
 ---
 title: OnPlayerFinishedDownloading
+sidebar_label: OnPlayerFinishedDownloading
 description: Ovaj callback je pozvan kada igrač dovrši preuzimanje custom modela.
 tags: ["player"]
 ---

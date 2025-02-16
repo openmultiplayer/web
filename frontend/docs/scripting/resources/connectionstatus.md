@@ -1,5 +1,6 @@
 ---
 title: Connection status
+sidebar_label: Connection status
 description: Connection status used by NetStats_ConnectionStatus.
 ---
 

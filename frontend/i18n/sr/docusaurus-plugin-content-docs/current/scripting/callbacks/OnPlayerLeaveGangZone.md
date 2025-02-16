@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeaveGangZone
+sidebar_label: OnPlayerLeaveGangZone
 description: Ова повратна функција се позива када играч напусти гангзону.
 tags: ["player", "gangzone"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDisconnect
+sidebar_label: OnPlayerDisconnect
 description: Callback này được gọi khi một người chơi rời khỏi server.
 tags: ["player"]
 ---

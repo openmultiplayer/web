@@ -1,5 +1,6 @@
 ---
 title: SetVehicleParamsCarWindows
+sidebar_label: SetVehicleParamsCarWindows
 description: Dozvoljava ti da otvoriš i zatvoriš prozore vozila.
 tags: ["vehicle"]
 ---

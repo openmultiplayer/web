@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestClass
+sidebar_label: OnPlayerRequestClass
 description: Fonksiyon, bir oyuncu sınıf seçiminde sınıfını değiştirdiğinde (ve sınıf seçimi ilk göründüğünde) çağrılır.
 tags: ["player"]
 ---

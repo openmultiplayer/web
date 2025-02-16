@@ -1,5 +1,6 @@
 ---
 title: GetNetworkStats
+sidebar_label: GetNetworkStats
 description: Funkcija koja dobiva mrežne statistike servera i pohranjuje ih u string (niz).
 tags: []
 ---

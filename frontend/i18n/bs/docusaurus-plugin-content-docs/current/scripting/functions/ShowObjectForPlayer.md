@@ -1,5 +1,6 @@
 ---
 title: ShowObjectForPlayer
+sidebar_label: ShowObjectForPlayer
 description: Prikaže objekat igraču.
 tags: ["player", "object"]
 ---

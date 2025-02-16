@@ -1,5 +1,6 @@
 ---
 title: NetStats_ConnectionStatus
+sidebar_label: NetStats_ConnectionStatus
 description: Dobija trenutni status veze igrača.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetTimerEx
+sidebar_label: SetTimerEx
 description: Sets a timer to call a function after the specified interval.
 tags: []
 ---

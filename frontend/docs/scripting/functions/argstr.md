@@ -1,5 +1,6 @@
 ---
 title: argstr
+sidebar_label: argstr
 description: Get the string value of an argument by name.
 tags: ["arguments", "args"]
 ---

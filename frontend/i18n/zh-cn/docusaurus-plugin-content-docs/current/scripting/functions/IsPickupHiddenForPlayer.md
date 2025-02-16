@@ -1,5 +1,6 @@
 ---
 title: IsPickupHiddenForPlayer
+sidebar_label: IsPickupHiddenForPlayer
 description: Checks if a pickup is hidden for a specific player.
 tags: ["player", "pickup"]
 ---

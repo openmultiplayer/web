@@ -1,5 +1,6 @@
 ---
 title: GetPlayerCameraZoom
+sidebar_label: GetPlayerCameraZoom
 description: Retrieves the game camera zoom level for a given player.
 tags: ["player", "camera"]
 ---

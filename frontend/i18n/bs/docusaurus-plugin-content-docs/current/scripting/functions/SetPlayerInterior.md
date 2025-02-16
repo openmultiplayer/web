@@ -1,5 +1,6 @@
 ---
 title: SetPlayerInterior
+sidebar_label: SetPlayerInterior
 description: Postavlja igraču enterijer
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetVehicleParamsCarWindows
+sidebar_label: GetVehicleParamsCarWindows
 description: Omogućava vam da doznate trenutno stanje prozora vozila.
 tags: ["vehicle"]
 ---

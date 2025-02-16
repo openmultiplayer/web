@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawFont
+sidebar_label: PlayerTextDrawFont
 description: Promijeni font player-textdrawa.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Marker Modes
+sidebar_label: Marker Modes
 ---
 
 To be used with [ShowPlayerMarkers](../functions/ShowPlayerMarkers).

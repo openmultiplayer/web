@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamOut
+sidebar_label: OnPlayerStreamOut
 description: Este callback é chamado quando um jogador é destreado pelo cliente de outro jogador.
 tags: ["player"]
 ---

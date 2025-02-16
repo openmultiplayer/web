@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptInit
+sidebar_label: OnFilterScriptInit
 description: Callback ini akan terpanggil ketika gamemode sedang diinialisasi (dimuat).
 tags: []
 ---

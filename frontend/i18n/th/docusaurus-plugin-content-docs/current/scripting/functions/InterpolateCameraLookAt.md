@@ -1,5 +1,6 @@
 ---
 title: InterpolateCameraLookAt
+sidebar_label: InterpolateCameraLookAt
 description: Interpolate a player's camera's 'look at' point between two coordinates with a set speed.
 tags: []
 ---

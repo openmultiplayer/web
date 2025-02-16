@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDeath
+sidebar_label: OnPlayerDeath
 description: This callback is called when a player dies, either by suicide or by being killed by another player.
 tags: ["player"]
 ---

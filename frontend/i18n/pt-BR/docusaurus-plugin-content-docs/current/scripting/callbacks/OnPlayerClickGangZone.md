@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickGangZone
+sidebar_label: OnPlayerClickGangZone
 description: Este callback é chamado quando um jogador clica em uma gangzone no mapa do menu de pausa (clicando com o botão direito).
 tags: ["player", "gangzone"]
 ---

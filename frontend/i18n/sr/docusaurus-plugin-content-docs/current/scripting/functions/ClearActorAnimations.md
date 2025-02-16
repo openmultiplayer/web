@@ -1,5 +1,6 @@
 ---
 title: ClearActorAnimations
+sidebar_label: ClearActorAnimations
 description: Прекине све анимације активне на актору.
 tags: ["actor"]
 ---

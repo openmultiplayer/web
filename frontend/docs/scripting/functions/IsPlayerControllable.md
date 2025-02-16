@@ -1,5 +1,6 @@
 ---
 title: IsPlayerControllable
+sidebar_label: IsPlayerControllable
 description: Check if the player is controllable.
 tags: ["player"]
 ---

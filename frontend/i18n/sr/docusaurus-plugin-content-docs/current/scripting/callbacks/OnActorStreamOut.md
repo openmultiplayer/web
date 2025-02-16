@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamOut
+sidebar_label: OnActorStreamOut
 description: Ова повратна функција је позван када се актор престане приказивати у играчевом клијенту.
 tags: ["actor"]
 ---

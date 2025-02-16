@@ -1,5 +1,6 @@
 ---
 title: SetGameModeText
+sidebar_label: SetGameModeText
 description: Postavi ime gamemode-a, koje se pojavljuje u pretraživaču servera (server listi).
 tags: []
 ---

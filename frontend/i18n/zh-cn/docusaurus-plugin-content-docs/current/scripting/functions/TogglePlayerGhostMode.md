@@ -1,5 +1,6 @@
 ---
 title: TogglePlayerGhostMode
+sidebar_label: TogglePlayerGhostMode
 description: Toggle player's ghost mode.
 tags: ["player"]
 ---

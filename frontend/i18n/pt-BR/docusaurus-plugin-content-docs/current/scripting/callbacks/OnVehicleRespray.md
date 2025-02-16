@@ -1,5 +1,6 @@
 ---
 title: OnVehicleRespray
+sidebar_label: OnVehicleRespray
 description: Essa callback é chamada quando um jogador sai de uma Garagem de Personalização, mesmo sem trocar cores.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: AllowInteriorWeapons
+sidebar_label: AllowInteriorWeapons
 description: Interior içinde silah kullanımını kısıtlamanızı sağlar.
 tags: []
 ---

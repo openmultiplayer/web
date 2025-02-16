@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeExit
+sidebar_label: OnNPCModeExit
 description: This callback is called when a NPC script unloaded.
 tags: ["npc"]
 ---

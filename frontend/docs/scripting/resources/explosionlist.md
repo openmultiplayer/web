@@ -1,5 +1,6 @@
 ---
 title: Explosion Lists
+sidebar_label: Explosion Lists
 ---
 
 :::info

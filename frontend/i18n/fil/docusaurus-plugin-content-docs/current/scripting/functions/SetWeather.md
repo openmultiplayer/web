@@ -1,5 +1,6 @@
 ---
 title: SetWeather
+sidebar_label: SetWeather
 description: Itakda ang lagay ng panahon sa mundo para sa lahat ng manlalaro.
 tags: []
 ---

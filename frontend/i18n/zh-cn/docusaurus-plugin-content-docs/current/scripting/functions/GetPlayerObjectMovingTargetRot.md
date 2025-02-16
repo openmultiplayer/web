@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectMovingTargetRot
+sidebar_label: GetPlayerObjectMovingTargetRot
 description: Get the move target rotation of a player-object.
 tags: ["player", "object", "playerobject"]
 ---

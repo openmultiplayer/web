@@ -1,5 +1,6 @@
 ---
 title: AttachObjectToVehicle
+sidebar_label: AttachObjectToVehicle
 description: Prikvači objekat za vozilo.
 tags: ["vehicle"]
 ---

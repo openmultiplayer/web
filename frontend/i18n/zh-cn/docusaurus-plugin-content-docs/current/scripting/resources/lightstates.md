@@ -1,5 +1,6 @@
 ---
 title: Light States
+sidebar_label: Light States
 description: Information about byte size and its corresponding light state bits.
 ---
 

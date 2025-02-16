@@ -1,5 +1,6 @@
 ---
 title: LimitGlobalChatRadius
+sidebar_label: LimitGlobalChatRadius
 description: Set a radius limitation for the chat.
 tags: []
 ---

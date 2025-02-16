@@ -1,5 +1,6 @@
 ---
 title: GetActorSkin
+sidebar_label: GetActorSkin
 description: Get the skin of the actor.
 tags: ["actor"]
 ---

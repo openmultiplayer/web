@@ -1,5 +1,6 @@
 ---
 title: OnPlayerWeaponShot
+sidebar_label: OnPlayerWeaponShot
 description: Callback ini di panggil ketika seorang pemain melepaskan tembakan dari senjata.
 tags: ["player"]
 ---

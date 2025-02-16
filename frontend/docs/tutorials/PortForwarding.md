@@ -1,5 +1,6 @@
 ---
 title: Port Forwarding
+sidebar_label: Port Forwarding
 description: Server port forwarding tutorial.
 ---
 

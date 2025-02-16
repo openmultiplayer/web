@@ -1,5 +1,6 @@
 ---
 title: GetVehicleNumberPlate
+sidebar_label: GetVehicleNumberPlate
 description: Get the number plate of a vehicle.
 tags: ["vehicle"]
 ---

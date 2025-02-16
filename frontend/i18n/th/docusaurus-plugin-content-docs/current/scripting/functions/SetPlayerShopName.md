@@ -1,5 +1,6 @@
 ---
 title: SetPlayerShopName
+sidebar_label: SetPlayerShopName
 description: Loads or unloads an interior script for a player (for example the ammunation menu).
 tags: ["player"]
 ---

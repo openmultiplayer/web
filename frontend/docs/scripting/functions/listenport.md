@@ -1,5 +1,6 @@
 ---
 title: listenport
+sidebar_label: listenport
 description: Sets up the port number to listen at.
 tags: ["datagram"]
 ---

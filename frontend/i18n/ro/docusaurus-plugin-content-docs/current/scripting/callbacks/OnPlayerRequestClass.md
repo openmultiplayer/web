@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestClass
+sidebar_label: OnPlayerRequestClass
 description: Apelat atunci când un jucător schimbă clasa la selecția clasei (și când apare prima dată selecția clasei).
 tags: ["player"]
 ---

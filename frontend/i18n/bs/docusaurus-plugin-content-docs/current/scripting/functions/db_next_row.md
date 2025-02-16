@@ -1,5 +1,6 @@
 ---
 title: db_next_row
+sidebar_label: db_next_row
 description: Premješta se na sljedeći red skupa rezultata dodijeljen s `db_query`.
 keywords:
   - sqlite

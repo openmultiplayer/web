@@ -1,5 +1,6 @@
 ---
 title: GetPlayerWeapon
+sidebar_label: GetPlayerWeapon
 description: Returns the ID of the weapon a player is currently holding.
 tags: ["player"]
 ---

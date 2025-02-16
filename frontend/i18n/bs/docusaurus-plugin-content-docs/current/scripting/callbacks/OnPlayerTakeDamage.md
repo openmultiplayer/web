@@ -1,5 +1,6 @@
 ---
 title: OnPlayerTakeDamage
+sidebar_label: OnPlayerTakeDamage
 description: Ovaj callback je pozvan kada igrač prvimi povredu (damage).
 tags: ["player"]
 ---

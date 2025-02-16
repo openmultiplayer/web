@@ -1,5 +1,6 @@
 ---
 title: Plugin Development Guide
+sidebar_label: Plugin Development Guide
 description: A guide to developing plugins
 ---
 

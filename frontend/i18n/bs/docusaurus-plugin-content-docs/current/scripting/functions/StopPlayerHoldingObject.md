@@ -1,5 +1,6 @@
 ---
 title: StopPlayerHoldingObject
+sidebar_label: StopPlayerHoldingObject
 description: Uklanja prikvačene objekte.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: BeginObjectEditing
+sidebar_label: BeginObjectEditing
 description: Allows a player to edit an object (position and rotation) using their mouse on a GUI (Graphical User Interface).
 tags: ["player", "object"]
 ---

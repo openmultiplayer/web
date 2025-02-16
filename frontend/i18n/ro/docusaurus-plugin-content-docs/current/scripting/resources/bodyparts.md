@@ -1,5 +1,6 @@
 ---
 title: Partile corpului
+sidebar_label: Partile corpului
 ---
 
 Se foloseste cu [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamags), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) si [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).

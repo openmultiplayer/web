@@ -1,5 +1,6 @@
 ---
 title: GetSVarString
+sidebar_label: GetSVarString
 description: Dobija string vrijednost server varijable.
 tags: []
 ---

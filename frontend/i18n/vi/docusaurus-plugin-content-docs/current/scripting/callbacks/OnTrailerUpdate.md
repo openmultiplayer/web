@@ -1,5 +1,6 @@
 ---
 title: OnTrailerUpdate
+sidebar_label: OnTrailerUpdate
 description: Callback này được gọi khi một người chơi gửi cập nhật về trailer.
 tags: ["vehicle"]
 ---

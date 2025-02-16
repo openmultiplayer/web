@@ -1,5 +1,6 @@
 ---
 title: Set3DTextLabelLOS
+sidebar_label: Set3DTextLabelLOS
 description: Sets the 3D text label line-of-sight.
 tags: ["3dtextlabel"]
 ---

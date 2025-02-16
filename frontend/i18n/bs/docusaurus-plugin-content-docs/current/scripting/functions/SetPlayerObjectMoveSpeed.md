@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectMoveSpeed
+sidebar_label: SetPlayerObjectMoveSpeed
 description: Postavi brzinu kretanja player-objekta.
 tags: ["player", "object", "playerobject"]
 ---

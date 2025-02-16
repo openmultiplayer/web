@@ -1,5 +1,6 @@
 ---
 title: DB_GetDatabaseResultSetCount
+sidebar_label: DB_GetDatabaseResultSetCount
 description: Gets the number of open database results
 keywords:
   - sqlite

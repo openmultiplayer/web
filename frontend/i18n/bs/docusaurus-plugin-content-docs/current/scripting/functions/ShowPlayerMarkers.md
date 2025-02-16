@@ -1,5 +1,6 @@
 ---
 title: ShowPlayerMarkers
+sidebar_label: ShowPlayerMarkers
 description: Omogućava/onemogućava markere/oznake igrača (bljeskalice na radaru).
 tags: ["player"]
 ---

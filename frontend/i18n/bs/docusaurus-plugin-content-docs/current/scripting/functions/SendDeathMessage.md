@@ -1,5 +1,6 @@
 ---
 title: SendDeathMessage
+sidebar_label: SendDeathMessage
 description: Dodaje smrt 'killfeedu' s desne strane ekrana za sve igrače.
 tags: []
 ---

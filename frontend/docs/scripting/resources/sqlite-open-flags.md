@@ -1,5 +1,6 @@
 ---
 title: SQLite Open Flags
+sidebar_label: SQLite Open Flags
 description: SQLite open flags definitions.
 ---
 

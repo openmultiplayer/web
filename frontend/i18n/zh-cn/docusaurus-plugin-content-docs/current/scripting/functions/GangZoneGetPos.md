@@ -1,5 +1,6 @@
 ---
 title: GangZoneGetPos
+sidebar_label: GangZoneGetPos
 description: Get the position of a gangzone, represented by minX, minY, maxX, maxY coordinates
 tags: ["player", "gangzone"]
 ---

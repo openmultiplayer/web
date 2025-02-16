@@ -1,5 +1,6 @@
 ---
 title: SetPlayerWeather
+sidebar_label: SetPlayerWeather
 description: Set a player's weather.
 tags: ["player"]
 ---

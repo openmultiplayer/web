@@ -1,5 +1,6 @@
 ---
 title: OnNPCExitVehicle
+sidebar_label: OnNPCExitVehicle
 description: Ова повратна функција се позива када NPC напусти возило.
 tags: ["npc"]
 ---

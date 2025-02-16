@@ -1,5 +1,6 @@
 ---
 title: EnableAllAnimations
+sidebar_label: EnableAllAnimations
 description: Allow use of the animations missing from some versions.
 tags: ["animation"]
 ---

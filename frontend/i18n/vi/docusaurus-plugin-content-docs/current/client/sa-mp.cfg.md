@@ -1,5 +1,6 @@
 ---
 title: sa-mp.cfg
+sidebar_label: sa-mp.cfg
 description: Tệp cấu hình client của SA-MP.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerWeaponShot
+sidebar_label: OnPlayerWeaponShot
 description: Acest callback este apelat atunci când un jucător trage o lovitură dintr-o armă.
 tags: ["player"]
 ---

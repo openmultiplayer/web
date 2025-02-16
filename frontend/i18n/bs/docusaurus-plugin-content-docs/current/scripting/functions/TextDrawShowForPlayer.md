@@ -1,5 +1,6 @@
 ---
 title: TextDrawShowForPlayer
+sidebar_label: TextDrawShowForPlayer
 description: Prikazuje textdraw za određenog igrača.
 tags: ["player", "textdraw"]
 ---

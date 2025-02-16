@@ -1,5 +1,6 @@
 ---
 title: SetPlayerFacingAngle
+sidebar_label: SetPlayerFacingAngle
 description: Set a player's facing angle (Z rotation).
 tags: ["player"]
 ---

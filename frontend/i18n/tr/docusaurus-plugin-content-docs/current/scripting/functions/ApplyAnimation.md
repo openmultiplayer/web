@@ -1,5 +1,6 @@
 ---
 title: ApplyAnimation
+sidebar_label: ApplyAnimation
 description: Oyuncuya animasyon uygulatma.
 tags: []
 ---

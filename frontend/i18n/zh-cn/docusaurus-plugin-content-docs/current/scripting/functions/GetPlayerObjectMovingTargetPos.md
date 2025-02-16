@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectMovingTargetPos
+sidebar_label: GetPlayerObjectMovingTargetPos
 description: Get the move target position of a player-object.
 tags: ["player", "object", "playerobject"]
 ---

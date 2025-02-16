@@ -1,5 +1,6 @@
 ---
 title: HideMenuForPlayer
+sidebar_label: HideMenuForPlayer
 description: Sakriva meni za igrača.
 tags: ["player", "menu"]
 ---

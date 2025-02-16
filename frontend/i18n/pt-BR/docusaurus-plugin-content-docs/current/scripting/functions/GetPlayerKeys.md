@@ -1,5 +1,6 @@
 ---
 title: GetPlayerKeys
+sidebar_label: GetPlayerKeys
 description: Verifica quais teclas um jogador está pressionando.
 tags: ["player"]
 ---

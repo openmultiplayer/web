@@ -1,5 +1,6 @@
 ---
 title: SetVehicleSpawnInfo
+sidebar_label: SetVehicleSpawnInfo
 description: Adjusts vehicle model, spawn location, colours, respawn delay and interior.
 tags: ["vehicle"]
 ---

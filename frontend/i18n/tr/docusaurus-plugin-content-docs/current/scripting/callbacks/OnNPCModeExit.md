@@ -1,5 +1,6 @@
 ---
 title: OnNPCModeExit
+sidebar_label: OnNPCModeExit
 description: Bu geri çağırma, bir NPC scripti kaldırıldığında çağrılır.
 tags: ["npc"]
 ---

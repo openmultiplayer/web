@@ -1,5 +1,6 @@
 ---
 title: OnPlayerLeaveRaceCheckpoint
+sidebar_label: OnPlayerLeaveRaceCheckpoint
 description: Esta callback é chamada quando um jogador sai de um checkpoint de corrida.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: NPC:OnRecordingPlaybackEnd
+sidebar_label: NPC:OnRecordingPlaybackEnd
 description: Cette callback est appelée lorsqu'un fichier enregistré en cours de reproduction avec NPC:StartRecordingPlayback a atteint sa fin.
 tags: []
 ---

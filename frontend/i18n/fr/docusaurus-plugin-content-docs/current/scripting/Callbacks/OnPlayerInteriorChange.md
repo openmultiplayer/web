@@ -1,5 +1,6 @@
 ---
 title: OnPlayerInteriorChange
+sidebar_label: OnPlayerInteriorChange
 description: Appelé lorsqu'un joueur change d'intérieur.
 tags: ["player"]
 ---

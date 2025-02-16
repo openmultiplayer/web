@@ -1,5 +1,6 @@
 ---
 title: RemoveServerRule
+sidebar_label: RemoveServerRule
 description: Remove the server rule.
 tags: ["rule"]
 ---

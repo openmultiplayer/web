@@ -1,5 +1,6 @@
 ---
 title: GetActorPos
+sidebar_label: GetActorPos
 description: Dobij poziciju actora.
 tags: ["actor"]
 ---

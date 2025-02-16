@@ -1,5 +1,6 @@
 ---
 title: Animatii
+sidebar_label: Animatii
 description: O listă cu toate animațiile
 tags: []
 ---

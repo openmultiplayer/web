@@ -1,5 +1,6 @@
 ---
 title: Status conexiune
+sidebar_label: Status conexiune
 description: Starea conexiunii de utilizat cu NetStats_ConnectionStatus.
 ---
 

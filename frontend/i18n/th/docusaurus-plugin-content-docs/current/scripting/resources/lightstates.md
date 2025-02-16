@@ -1,5 +1,6 @@
 ---
 title: Light States
+sidebar_label: Light States
 ---
 
 To be used with [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus) and [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus).

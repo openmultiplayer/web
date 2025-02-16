@@ -1,5 +1,6 @@
 ---
 title: OnActorStreamIn
+sidebar_label: OnActorStreamIn
 description: Ta "callback" se pokliče, ko se "actor" pojavi v igralčevi "client".
 tags: []
 ---

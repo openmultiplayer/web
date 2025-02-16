@@ -1,5 +1,6 @@
 ---
 title: OnRconCommand
+sidebar_label: OnRconCommand
 description: Ова функција се позива када се команда пошаље преко серверске конзоле, удаљеног RCON-а или преко унутрашње команде "/rcon command".
 tags: ["rcon", "administration"]
 ---

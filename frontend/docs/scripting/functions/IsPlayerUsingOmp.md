@@ -1,5 +1,6 @@
 ---
 title: IsPlayerUsingOmp
+sidebar_label: IsPlayerUsingOmp
 description: Check if the player is using the open.mp launcher.
 tags: ["player"]
 ---

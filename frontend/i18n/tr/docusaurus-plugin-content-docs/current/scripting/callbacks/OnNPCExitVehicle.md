@@ -1,5 +1,6 @@
 ---
 title: OnNPCExitVehicle
+sidebar_label: OnNPCExitVehicle
 description: Bu geri çağırma, bir NPC bir araçtan çıktığında çağrılır.
 tags: ["npc"]
 ---

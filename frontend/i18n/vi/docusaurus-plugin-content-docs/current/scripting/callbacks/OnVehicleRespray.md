@@ -1,5 +1,6 @@
 ---
 title: OnVehicleRespray
+sidebar_label: OnVehicleRespray
 description: Callback này được gọi khi một người chơi rời khỏi cửa hàng tùy chỉnh, ngay cả khi không thay đổi màu sắc.
 tags: ["vehicle"]
 ---

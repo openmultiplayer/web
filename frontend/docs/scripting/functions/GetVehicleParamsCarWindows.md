@@ -1,5 +1,6 @@
 ---
 title: GetVehicleParamsCarWindows
+sidebar_label: GetVehicleParamsCarWindows
 description: Allows you to retrieve the current state of a vehicle's windows.
 tags: ["vehicle"]
 ---

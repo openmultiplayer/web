@@ -1,5 +1,6 @@
 ---
 title: NetStats_GetIpPort
+sidebar_label: NetStats_GetIpPort
 description: Nabavite IP adresu i port igrača.
 tags: []
 ---

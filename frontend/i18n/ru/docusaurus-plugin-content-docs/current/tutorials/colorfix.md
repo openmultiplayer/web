@@ -1,5 +1,6 @@
 ---
 title: "Color Fix"
+sidebar_label: "Color Fix"
 descripion: Базовый скрипт для добавления большего количества цветов для ников игроков.
 ---
 

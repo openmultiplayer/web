@@ -1,5 +1,6 @@
 ---
 title: GetServerVarAsInt
+sidebar_label: GetServerVarAsInt
 description: Get the integer value of a server variable.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetColor
+sidebar_label: PlayerTextDrawGetColor
 description: Gets the text color of a player-textdraw
 tags: ["player", "textdraw", "playertextdraw"]
 ---

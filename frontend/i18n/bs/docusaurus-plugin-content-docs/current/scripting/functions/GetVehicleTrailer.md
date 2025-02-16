@@ -1,5 +1,6 @@
 ---
 title: GetVehicleTrailer
+sidebar_label: GetVehicleTrailer
 description: Dobij ID prikolice prikvačene za vozilo.
 tags: ["vehicle"]
 ---

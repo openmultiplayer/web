@@ -1,5 +1,6 @@
 ---
 title: GivePlayerMoney
+sidebar_label: GivePlayerMoney
 description: Dajte novac igraču ili ga uzmite.
 tags: ["player"]
 ---

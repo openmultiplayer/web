@@ -1,5 +1,6 @@
 ---
 title: PauseRecordingPlayback
+sidebar_label: PauseRecordingPlayback
 description: This will pause playing back the recording.
 tags: []
 ---

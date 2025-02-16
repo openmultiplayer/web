@@ -1,5 +1,6 @@
 ---
 title: argvalue
+sidebar_label: argvalue
 description: Get the number of arguments passed to the script (those after --).
 tags: ["arguments", "args"]
 ---

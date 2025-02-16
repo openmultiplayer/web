@@ -1,5 +1,6 @@
 ---
 title: "Diretivas"
+sidebar_label: "Diretivas"
 ---
 
 As diretivas são instruções passadas ao compilador para controlar como ele interpreta seu código fonte.

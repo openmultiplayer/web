@@ -1,5 +1,6 @@
 ---
 title: InterpolateCameraLookAt
+sidebar_label: InterpolateCameraLookAt
 description: Interpolirajte/pomjerajte tačku "pogleda u" kamere kamere između dve kordinatame zadanom brzinom.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: Contributing
+sidebar_label: Contributing
 description: How to contribute to the SA-MP Wiki and open.mp documentation for PH.
 ---
 
@@ -69,6 +70,7 @@ Ang pinaka una sa *lahat* ng document dito ay dapat merong metadata:
 ```mdx
 ---
 title: My Documentation
+sidebar_label: My Documentation
 description: Ito ay para saaking documentation mula sa samp at open.mp
 ---
 ```

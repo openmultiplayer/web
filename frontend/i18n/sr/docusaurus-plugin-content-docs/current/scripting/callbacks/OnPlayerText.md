@@ -1,5 +1,6 @@
 ---
 title: OnPlayerText
+sidebar_label: OnPlayerText
 description: Ова повратна функција се позива када играч пошаље поруку у чету.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerObjectMoved
+sidebar_label: OnPlayerObjectMoved
 description: Acest callback este apelat atunci când un obiect player este mutat după MovePlayerObject (când se oprește din mișcare).
 tags: ["player"]
 ---

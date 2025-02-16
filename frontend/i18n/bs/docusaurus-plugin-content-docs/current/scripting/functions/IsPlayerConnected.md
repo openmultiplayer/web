@@ -1,5 +1,6 @@
 ---
 title: IsPlayerConnected
+sidebar_label: IsPlayerConnected
 description: Provjerava da li je igrač konektovan (Ako je ID uzet od stanje konektovanog igrača).
 tags: ["player"]
 ---

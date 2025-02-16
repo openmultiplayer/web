@@ -1,5 +1,6 @@
 ---
 title: AttachObjectToVehicle
+sidebar_label: AttachObjectToVehicle
 description: Attach an object to a vehicle.
 tags: ["vehicle"]
 ---

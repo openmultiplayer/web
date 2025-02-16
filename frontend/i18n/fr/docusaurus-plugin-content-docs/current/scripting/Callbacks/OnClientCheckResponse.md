@@ -1,5 +1,6 @@
 ---
 title: OnClientCheckResponse
+sidebar_label: OnClientCheckResponse
 description: Ce rappel est appelé lorsque la demande SendClientCheck est terminée
 tags: []
 ---

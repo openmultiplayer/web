@@ -1,5 +1,6 @@
 ---
 title: EnableStuntBonusForAll
+sidebar_label: EnableStuntBonusForAll
 description: Omogućuje ili onemogućava stunt bonuse za sve igrače.
 tags: []
 ---

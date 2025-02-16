@@ -1,5 +1,6 @@
 ---
 title: OnVehicleSirenStateChange
+sidebar_label: OnVehicleSirenStateChange
 description: Essa callback é chamada quando a sirene de um carro é ligada/desligada.
 tags: ["vehicle"]
 ---

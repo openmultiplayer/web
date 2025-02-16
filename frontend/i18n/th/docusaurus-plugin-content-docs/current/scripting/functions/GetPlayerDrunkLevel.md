@@ -1,5 +1,6 @@
 ---
 title: GetPlayerDrunkLevel
+sidebar_label: GetPlayerDrunkLevel
 description: Checks the player's level of drunkenness.
 tags: ["player"]
 ---

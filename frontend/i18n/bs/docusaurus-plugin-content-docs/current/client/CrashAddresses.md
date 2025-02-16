@@ -1,5 +1,6 @@
 ---
 title: Crash Adrese
+sidebar_label: Crash Adrese
 ---
 
 Tablica u nastavku navodi neke uobičajene adrese rušenja klijenta koje možete koristiti da biste pomogli u pronalaženju problema i spriječili njegovo ponavljanje u budućnosti. U većini slučajeva pad klijenta događa se zbog problema u skripti. Iako je vrijedno spomenuti da je SA: MP danas prilično stabilan.

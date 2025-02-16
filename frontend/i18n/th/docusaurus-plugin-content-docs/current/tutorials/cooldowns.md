@@ -1,5 +1,6 @@
 ---
 title: Cooldowns
+sidebar_label: Cooldowns
 description: A tutorial for writing cooldowns for limiting user actions using tick counts and avoiding the use of timers.
 ---
 

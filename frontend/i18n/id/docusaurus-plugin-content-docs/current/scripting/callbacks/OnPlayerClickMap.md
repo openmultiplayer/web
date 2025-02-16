@@ -1,5 +1,6 @@
 ---
 title: OnPlayerClickMap
+sidebar_label: OnPlayerClickMap
 description: OnPlayerClickMap akan terpanggil ketika pemain menaruh target/waypoint saat jeda map menu (dengan cara klik kanan).
 tags: ["player"]
 ---

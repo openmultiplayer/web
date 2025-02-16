@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickupStreamIn
+sidebar_label: OnPlayerPickupStreamIn
 description: This callback is called when a player-pickup enters the visual range of the player.
 tags: ["player", "pickup", "playerpickup"]
 ---

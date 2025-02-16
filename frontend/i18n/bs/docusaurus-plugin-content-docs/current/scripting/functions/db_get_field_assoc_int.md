@@ -1,5 +1,6 @@
 ---
 title: db_get_field_assoc_int
+sidebar_label: db_get_field_assoc_int
 description: Dobiva sadržaj polja kao cijeli broj s navedenim imenom polja.
 keywords:
   - sqlite

@@ -1,5 +1,6 @@
 ---
 title: Material Text Alignments
+sidebar_label: Material Text Alignments
 description: A list of Material Text Alignments.
 ---
 

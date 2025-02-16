@@ -1,5 +1,6 @@
 ---
 title: Crash Addresses
+sidebar_label: Crash Addresses
 ---
 
 La siguiente tabla enumera algunas direcciones comunes de fallas del cliente que puede usar para ayudar a rastrear el problema y evitar que ocurra en el futuro. En la mayoría de los casos, los bloqueos del cliente ocurren debido a un problema en el script. Aunque vale la pena mencionar que SA:MP es bastante estable hoy en día.

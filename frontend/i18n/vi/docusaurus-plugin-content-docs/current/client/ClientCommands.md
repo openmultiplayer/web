@@ -1,5 +1,6 @@
 ---
 title: "Client Commands"
+sidebar_label: "Client Commands"
 description: Danh sách tất cả các lệnh của Client.
 ---
 

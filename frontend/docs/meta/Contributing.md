@@ -1,5 +1,6 @@
 ---
 title: Contributing
+sidebar_label: Contributing
 description: How to contribute to the SA-MP Wiki and open.mp documentation.
 ---
 
@@ -83,6 +84,7 @@ The first thing in _any_ document here should be metadata:
 ```mdx
 ---
 title: My Documentation
+sidebar_label: My Documentation
 description: This is a page about stuff and things and burgers, yay!
 ---
 ```

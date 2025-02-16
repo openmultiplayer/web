@@ -1,5 +1,6 @@
 ---
 title: fread
+sidebar_label: fread
 description: Read a single line from a file.
 tags: []
 ---

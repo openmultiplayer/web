@@ -1,5 +1,6 @@
 ---
 title: DB_FreeResultSet
+sidebar_label: DB_FreeResultSet
 description: Frees result memory allocated from DB_ExecuteQuery.
 keywords:
   - sqlite

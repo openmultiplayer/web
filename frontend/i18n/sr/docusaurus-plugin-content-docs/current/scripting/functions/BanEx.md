@@ -1,5 +1,6 @@
 ---
 title: BanEx
+sidebar_label: BanEx
 description: Банује играча са разлогом.
 tags: ["player", "administration"]
 ---

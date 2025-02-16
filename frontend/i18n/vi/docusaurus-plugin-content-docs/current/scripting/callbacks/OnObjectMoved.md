@@ -1,5 +1,6 @@
 ---
 title: OnObjectMoved
+sidebar_label: OnObjectMoved
 description: Callback này được gọi khi một đối tượng di chuyển sau khi MoveObject (khi nó ngừng di chuyển).
 tags: ["object"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: IsPlayerStreamedIn
+sidebar_label: IsPlayerStreamedIn
 description: Provjerava ako je igrač učitan u klijent drugog igrača.
 tags: ["player"]
 ---

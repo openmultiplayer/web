@@ -1,5 +1,6 @@
 ---
 title: SetVehicleAngularVelocity
+sidebar_label: SetVehicleAngularVelocity
 description: Beállítja a jármű X, Y és Z szögsebességét.
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: VehicleCanHaveComponent
+sidebar_label: VehicleCanHaveComponent
 description: Is the component legal on a vehicle model?
 tags: ["vehicle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: BanEx
+sidebar_label: BanEx
 description: Bane um jogador com um motivo específico.
 tags: []
 ---

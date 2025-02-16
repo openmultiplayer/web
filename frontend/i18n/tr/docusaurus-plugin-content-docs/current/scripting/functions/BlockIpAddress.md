@@ -1,5 +1,6 @@
 ---
 title: BlockIpAddress
+sidebar_label: BlockIpAddress
 description: IP adresini sunucu üzerinden bloklama. (with wildcards allowed).
 tags: []
 ---

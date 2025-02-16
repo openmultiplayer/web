@@ -1,5 +1,6 @@
 ---
 title: "Controlling a Server"
+sidebar_label: "Controlling a Server"
 description: Useful commands for controlling a server.
 ---
 

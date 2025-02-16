@@ -1,5 +1,6 @@
 ---
 title: SetPlayerObjectMoveSpeed
+sidebar_label: SetPlayerObjectMoveSpeed
 description: Set the move speed of a player-object.
 tags: ["player", "object", "playerobject"]
 ---

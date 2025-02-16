@@ -1,5 +1,6 @@
 ---
 title: TextDrawDestroy
+sidebar_label: TextDrawDestroy
 description: Destroys a previously-created textdraw.
 tags: ["textdraw"]
 ---

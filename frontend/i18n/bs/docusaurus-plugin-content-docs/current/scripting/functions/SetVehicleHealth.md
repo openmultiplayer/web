@@ -1,5 +1,6 @@
 ---
 title: SetVehicleHealth
+sidebar_label: SetVehicleHealth
 description: Postavlja helte (zdravlje/health) vozila.
 tags: ["vehicle"]
 ---

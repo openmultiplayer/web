@@ -1,5 +1,6 @@
 ---
 title: GetVehicleModelCount
+sidebar_label: GetVehicleModelCount
 description: Gets the model count of a vehicle model.
 tags: ["vehicle"]
 ---

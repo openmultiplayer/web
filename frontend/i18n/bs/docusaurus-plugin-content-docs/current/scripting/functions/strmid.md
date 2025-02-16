@@ -1,5 +1,6 @@
 ---
 title: strmid
+sidebar_label: strmid
 description: Izvuci niz znakova iz stringa.
 tags: []
 ---

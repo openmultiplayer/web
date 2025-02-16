@@ -1,5 +1,6 @@
 ---
 title: strdel
+sidebar_label: strdel
 description: Menghapus bagian dari sebuah string.
 tags: ["string"]
 ---

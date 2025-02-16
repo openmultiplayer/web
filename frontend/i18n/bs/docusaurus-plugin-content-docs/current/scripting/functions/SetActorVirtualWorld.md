@@ -1,5 +1,6 @@
 ---
 title: SetActorVirtualWorld
+sidebar_label: SetActorVirtualWorld
 description: Postavi virtualni svijet za aktora.
 tags: []
 ---

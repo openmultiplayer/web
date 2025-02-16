@@ -1,5 +1,6 @@
 ---
 title: GetPlayerAmmo_DE
+sidebar_label: GetPlayerAmmo_DE
 description: Gibt die Munition der vom Spieler aktuell gehaltenen Waffe zurück.
 tags: ["player"]
 ---

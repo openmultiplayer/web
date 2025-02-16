@@ -1,5 +1,6 @@
 ---
 title: GetActorSpawnInfo
+sidebar_label: GetActorSpawnInfo
 description: Get the initial spawn point of the actor.
 tags: ["actor"]
 ---

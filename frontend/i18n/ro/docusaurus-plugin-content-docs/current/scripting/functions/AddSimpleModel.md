@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModel
+sidebar_label: AddSimpleModel
 description: Adaugă un nou model de obiect simplu personalizat pentru descărcare.
 tags: []
 ---

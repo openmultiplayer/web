@@ -1,5 +1,6 @@
 ---
 title: setpubvar
+sidebar_label: setpubvar
 description: Sets a specific public variable in the current script.
 tags: ["core", "pubvar", "public variable"]
 ---

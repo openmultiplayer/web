@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description : Ajoute un nouveau modèle de personnage personnalisé à télécharger.
 tags: []
 ---

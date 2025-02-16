@@ -1,5 +1,6 @@
 ---
 title: TextDrawBoxColor
+sidebar_label: TextDrawBoxColor
 description: Prilagođava boju okvira za tekst (koristi se samo ako je parametar 'use' TextDrawUseBox 1).
 tags: ["textdraw"]
 ---

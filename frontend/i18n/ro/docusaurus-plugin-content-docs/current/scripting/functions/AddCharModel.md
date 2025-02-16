@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description: Adaugă un nou model de caractere personalizat pentru descărcare.
 tags: []
 ---

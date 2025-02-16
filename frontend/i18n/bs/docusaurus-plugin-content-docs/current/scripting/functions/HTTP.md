@@ -1,5 +1,6 @@
 ---
 title: HTTP
+sidebar_label: HTTP
 description: Šalje navojni HTTP zahtjev.
 tags: []
 ---

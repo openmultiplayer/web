@@ -1,5 +1,6 @@
 ---
 title: Modos de ângulos
+sidebar_label: Modos de ângulos
 description: Constantes unitárias no sistema internacional de medição de ângulos.
 ---
 

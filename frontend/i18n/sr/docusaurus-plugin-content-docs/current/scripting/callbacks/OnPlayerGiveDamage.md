@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamage
+sidebar_label: OnPlayerGiveDamage
 description: Ова повратна функција се позива када играч нанесе штету другом играчу.
 tags: ["player"]
 ---

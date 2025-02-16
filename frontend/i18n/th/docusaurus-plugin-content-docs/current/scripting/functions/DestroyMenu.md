@@ -1,5 +1,6 @@
 ---
 title: DestroyMenu
+sidebar_label: DestroyMenu
 description: Destroys the specified menu.
 tags: ["menu"]
 ---

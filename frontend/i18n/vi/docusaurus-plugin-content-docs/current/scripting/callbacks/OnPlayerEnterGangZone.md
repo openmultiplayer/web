@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterGangZone
+sidebar_label: OnPlayerEnterGangZone
 description: Callback này được gọi khi một người chơi vào một khu vực băng nhóm.
 tags: ["player", "gangzone"]
 ---

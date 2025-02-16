@@ -1,5 +1,6 @@
 ---
 title: AttachPlayerObjectToPlayer
+sidebar_label: AttachPlayerObjectToPlayer
 description: Isto kao i AttachObjectToPlayer ali za objekte koji su kreirani za igrača.
 tags: ["player"]
 ---

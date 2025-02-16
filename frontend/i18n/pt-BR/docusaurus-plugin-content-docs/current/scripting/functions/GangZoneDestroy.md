@@ -1,5 +1,6 @@
 ---
 title: GangZoneDestroy
+sidebar_label: GangZoneDestroy
 description: Destrói uma gangzone.
 tags: ["gangzone"]
 ---

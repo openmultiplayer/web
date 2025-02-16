@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDisconnect
+sidebar_label: OnPlayerDisconnect
 description: This callback is called when a player disconnects from the server.
 tags: ["player"]
 ---

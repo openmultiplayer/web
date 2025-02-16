@@ -1,5 +1,6 @@
 ---
 title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: This callback is called when a vehicle is streamed out for a player's client (it's so far away that they can't see it).
 tags: ["vehicle"]
 ---

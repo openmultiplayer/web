@@ -1,5 +1,6 @@
 ---
 title: OnPickupStreamIn
+sidebar_label: OnPickupStreamIn
 description: Bu geri çağırma, bir pickup bir oyuncunun görsel alanına girdiğinde çağrılır.
 tags: ["player"]
 ---

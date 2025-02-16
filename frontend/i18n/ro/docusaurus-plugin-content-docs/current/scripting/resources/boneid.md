@@ -1,5 +1,6 @@
 ---
 title: "ID-urile oaselor"
+sidebar_label: "ID-urile oaselor"
 ---
 
 :::note

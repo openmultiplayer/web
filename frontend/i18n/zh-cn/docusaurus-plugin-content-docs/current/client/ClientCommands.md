@@ -1,5 +1,6 @@
 ---
 title: "Client Commands"
+sidebar_label: "Client Commands"
 description: List of all client commands.
 ---
 

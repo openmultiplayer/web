@@ -1,5 +1,6 @@
 ---
 title: GameModeExit
+sidebar_label: GameModeExit
 description: Ends the current gamemode.
 tags: []
 ---

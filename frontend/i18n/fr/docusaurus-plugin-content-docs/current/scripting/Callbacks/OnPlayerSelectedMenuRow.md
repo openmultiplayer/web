@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectedMenuRow
+sidebar_label: OnPlayerSelectedMenuRow
 description: Cette callback est appelée lorsqu'un joueur sélectionne un article depuis un menu (ShowMenuForPlayer).
 tags: ["player", "menu"]
 ---

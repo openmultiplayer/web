@@ -1,5 +1,6 @@
 ---
 title: Marker Modes
+sidebar_label: Marker Modes
 ---
 
 :::info

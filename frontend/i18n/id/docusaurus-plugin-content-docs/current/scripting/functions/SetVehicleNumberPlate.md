@@ -1,5 +1,6 @@
 ---
 title: SetVehicleNumberPlate
+sidebar_label: SetVehicleNumberPlate
 description: Set plat nomor kendaraan.
 tags: ["vehicle"]
 ---

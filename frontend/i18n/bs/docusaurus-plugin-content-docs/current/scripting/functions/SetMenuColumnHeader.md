@@ -1,5 +1,6 @@
 ---
 title: SetMenuColumnHeader
+sidebar_label: SetMenuColumnHeader
 description: Postavlja naslov stupca u meniju.
 tags: ["menu"]
 ---

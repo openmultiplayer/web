@@ -1,5 +1,6 @@
 ---
 title: OnClientCheckResponse
+sidebar_label: OnClientCheckResponse
 description: Acest callback este apelat când se finalizează o solicitare SendClientCheck
 tags: []
 ---

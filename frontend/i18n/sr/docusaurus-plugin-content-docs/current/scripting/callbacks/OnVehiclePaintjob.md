@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: ва повратна функција се позива када играч прегледа боју на возилу у радњи за модификацију.
 tags: ["vehicle"]
 ---

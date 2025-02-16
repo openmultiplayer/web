@@ -1,5 +1,6 @@
 ---
 title: EnablePlayerCameraTarget
+sidebar_label: EnablePlayerCameraTarget
 description: I-toggle ang mga function sa pag-target ng camera para sa isang player.
 tags: ["player"]
 ---

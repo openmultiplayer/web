@@ -1,5 +1,6 @@
 ---
 title: "Client Commands"
+sidebar_label: "Client Commands"
 description: அனைத்து கிளையன்ட் கட்டளைகளின் பட்டியல்.
 ---
 

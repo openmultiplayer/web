@@ -1,5 +1,6 @@
 ---
 title: OnVehiclePaintjob
+sidebar_label: OnVehiclePaintjob
 description: Apelat atunci când un jucător previzualizează o vopsire a unui vehicul într-un magazin de mod.
 tags: ["vehicle"]
 ---

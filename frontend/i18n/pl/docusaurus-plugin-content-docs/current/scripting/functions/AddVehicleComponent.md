@@ -1,5 +1,6 @@
 ---
 title: AddVehicleComponent
+sidebar_label: AddVehicleComponent
 description: Dodaje „komponent” (część tuningową) do pojazdu.
 tags: ["vehicle"]
 ---

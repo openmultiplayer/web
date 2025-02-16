@@ -1,5 +1,6 @@
 ---
 title: ConnectNPC
+sidebar_label: ConnectNPC
 description: Sunucuya NPC bağlama.
 tags: ["npc"]
 ---

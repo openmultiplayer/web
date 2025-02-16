@@ -1,5 +1,6 @@
 ---
 title: ClearActorAnimations
+sidebar_label: ClearActorAnimations
 description: I-clear ang anumang mga animation na inilapat sa isang aktor.
 tags: []
 ---

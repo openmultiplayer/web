@@ -1,5 +1,6 @@
 ---
 title: OnPlayerConnect
+sidebar_label: OnPlayerConnect
 description: Acest callback este apelat atunci când un jucător se conectează la server.
 tags: ["player"]
 ---

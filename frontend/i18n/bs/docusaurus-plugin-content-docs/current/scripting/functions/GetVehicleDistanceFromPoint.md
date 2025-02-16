@@ -1,5 +1,6 @@
 ---
 title: GetVehicleDistanceFromPoint
+sidebar_label: GetVehicleDistanceFromPoint
 description: Ova se funkcija može koristiti za izračunavanje udaljenosti (kao float) između vozila i druge kordinate na mapi.
 tags: ["vehicle"]
 ---

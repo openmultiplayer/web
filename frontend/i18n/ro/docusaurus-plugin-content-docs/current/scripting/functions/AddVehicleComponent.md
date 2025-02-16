@@ -1,5 +1,6 @@
 ---
 title: AddVehicleComponent
+sidebar_label: AddVehicleComponent
 description: Adaugă o 'componentă' (adesea denumită 'mod' (modificare)) unui vehicul.
 tags: ["vehicle"]
 ---

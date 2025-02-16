@@ -1,5 +1,6 @@
 ---
 title: GetActorHealth
+sidebar_label: GetActorHealth
 description: Aktörün can değerini kontrol etme.
 tags: ["actor"]
 ---

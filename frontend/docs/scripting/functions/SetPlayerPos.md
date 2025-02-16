@@ -1,5 +1,6 @@
 ---
 title: SetPlayerPos
+sidebar_label: SetPlayerPos
 description: Set a player's position.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerGiveDamageActor
+sidebar_label: OnPlayerGiveDamageActor
 description: Bu geri çağırma, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
 tags: ["player"]
 ---

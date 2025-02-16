@@ -1,5 +1,6 @@
 ---
 title: "用戶端可用指令表"
+sidebar_label: "用戶端可用指令表"
 descripion: 所有在用戶端可使用的指令表。
 ---
 

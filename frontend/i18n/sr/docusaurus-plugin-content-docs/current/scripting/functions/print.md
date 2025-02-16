@@ -1,5 +1,6 @@
 ---
 title: print
+sidebar_label: print
 description: Штампа стринг у конзолу сервера (не у игри чету) и у логове (log.txt).
 tags: ["console"]
 ---

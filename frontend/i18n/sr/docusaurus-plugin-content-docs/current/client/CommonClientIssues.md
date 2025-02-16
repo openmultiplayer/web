@@ -1,5 +1,6 @@
 ---
 title: Уобичајени проблеми са клијентом
+sidebar_label: Уобичајени проблеми са клијентом
 ---
 
 ### Добијате грешку "San Andreas cannot be found" (San Andreas није пронађен).

@@ -1,5 +1,6 @@
 ---
 title: "Endereços de Crash"
+sidebar_label: "Endereços de Crash"
 description: Guia de endereços comuns de crash.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: GetServerVarAsString
+sidebar_label: GetServerVarAsString
 description: Get the string value of a server variable.
 tags: []
 ---

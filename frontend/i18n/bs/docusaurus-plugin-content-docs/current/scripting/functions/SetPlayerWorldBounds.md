@@ -1,5 +1,6 @@
 ---
 title: SetPlayerWorldBounds
+sidebar_label: SetPlayerWorldBounds
 description: Postavite granice svijeta igraču.
 tags: ["player"]
 ---

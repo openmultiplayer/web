@@ -1,5 +1,6 @@
 ---
 title: Weapon Skills
+sidebar_label: Weapon Skills
 description: Weapon skill values to be used with SetPlayerSkillLevel.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Attach3DTextLabelToPlayer
+sidebar_label: Attach3DTextLabelToPlayer
 description: Przyczepia tekst 3D do gracza.
 tags: ["player", "3dtextlabel"]
 ---

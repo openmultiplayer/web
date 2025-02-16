@@ -1,5 +1,6 @@
 ---
 title: SetSVarString
+sidebar_label: SetSVarString
 description: Postavi string server varijablu.
 tags: []
 ---

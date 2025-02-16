@@ -1,5 +1,6 @@
 ---
 title: Kick
+sidebar_label: Kick
 description: Kicks a player from the server. They will have to quit the game and re-connect if they wish to continue playing.
 tags: ["administration"]
 ---

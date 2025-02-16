@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetFont
+sidebar_label: PlayerTextDrawGetFont
 description: Gets the text font of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

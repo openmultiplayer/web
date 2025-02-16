@@ -1,5 +1,6 @@
 ---
 title: GetPickupType
+sidebar_label: GetPickupType
 description: Gets the type of a pickup.
 tags: ["pickup"]
 ---

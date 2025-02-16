@@ -1,5 +1,6 @@
 ---
 title: GetVehicleComponentInSlot
+sidebar_label: GetVehicleComponentInSlot
 description: Dohvaća ID instalirane komponente (modshop mod(ifikacija)) na vozilu u određenom slotu.
 tags: ["vehicle"]
 ---

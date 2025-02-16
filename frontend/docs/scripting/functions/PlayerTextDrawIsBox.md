@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawIsBox
+sidebar_label: PlayerTextDrawIsBox
 description: Checks if a player-textdraw is box.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

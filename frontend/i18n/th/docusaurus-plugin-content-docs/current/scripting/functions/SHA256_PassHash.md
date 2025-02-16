@@ -1,5 +1,6 @@
 ---
 title: SHA256_PassHash
+sidebar_label: SHA256_PassHash
 description: Hashes a password using the SHA-256 hashing algorithm.
 tags: []
 ---

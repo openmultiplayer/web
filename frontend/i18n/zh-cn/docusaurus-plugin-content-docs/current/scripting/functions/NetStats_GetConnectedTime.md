@@ -1,5 +1,6 @@
 ---
 title: NetStats_GetConnectedTime
+sidebar_label: NetStats_GetConnectedTime
 description: Gets the amount of time (in milliseconds) that a player has been connected to the server for.
 tags: ["network monitoring"]
 ---

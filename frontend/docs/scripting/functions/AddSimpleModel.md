@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModel
+sidebar_label: AddSimpleModel
 description: Adds a new custom simple object model for download.
 tags: ["custom model", "simple model"]
 ---

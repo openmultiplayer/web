@@ -1,5 +1,6 @@
 ---
 title: OnPlayerEnterVehicle
+sidebar_label: OnPlayerEnterVehicle
 description: Cette callback est appelée quand un joueur commence à sortir d'un véhicule.
 tags: ["player", "vehicle"]
 ---

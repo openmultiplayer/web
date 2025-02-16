@@ -1,5 +1,6 @@
 ---
 title: atan
+sidebar_label: atan
 description: Podaje odwróconą wartość arcus tangensa w radianach.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: SetActorSkin
+sidebar_label: SetActorSkin
 description: Set the skin of the actor.
 tags: ["actor"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerPickupStreamOut
+sidebar_label: OnPlayerPickupStreamOut
 description: Bu geri çağırma, bir player-pickup oyuncunun görsel menzilinden çıktığında çağrılır.
 tags: ["player", "pickup", "playerpickup"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerRequestSpawn
+sidebar_label: OnPlayerRequestSpawn
 description: Apelat atunci când un jucător încearcă să apară prin selecția clasei, fie apăsând SHIFT, fie făcând clic pe butonul „Apariție”.
 tags: ["player"]
 ---

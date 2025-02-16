@@ -1,5 +1,6 @@
 ---
 title: GetMyPos
+sidebar_label: GetMyPos
 description: Get position of the NPC
 tags: ["npc"]
 ---

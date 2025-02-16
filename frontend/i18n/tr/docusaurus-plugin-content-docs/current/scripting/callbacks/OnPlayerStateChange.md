@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStateChange
+sidebar_label: OnPlayerStateChange
 description: Bu fonksiyon, bir oyuncu durumunu değiştirdiğinde çağrılır. 
 tags: ["player"]
 ---

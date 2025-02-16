@@ -1,5 +1,6 @@
 ---
 title: DB_ExecuteQuery
+sidebar_label: DB_ExecuteQuery
 description: The function is used to execute an SQL query on an opened SQLite database.
 keywords:
   - sqlite

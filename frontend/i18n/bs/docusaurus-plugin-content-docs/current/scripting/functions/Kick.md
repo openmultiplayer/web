@@ -1,5 +1,6 @@
 ---
 title: Kick
+sidebar_label: Kick
 description: Izbacuje igrača sa servera. Morati će napustiti igru i ponovno se konektovati ako žele da nastave igrati.
 tags: ["administration"]
 ---

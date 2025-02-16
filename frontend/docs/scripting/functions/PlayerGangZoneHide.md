@@ -1,5 +1,6 @@
 ---
 title: PlayerGangZoneHide
+sidebar_label: PlayerGangZoneHide
 description: Hide player gangzone
 tags: ["player", "gangzone", "playergangzone"]
 ---

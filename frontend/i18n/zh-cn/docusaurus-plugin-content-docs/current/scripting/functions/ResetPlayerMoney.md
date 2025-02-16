@@ -1,5 +1,6 @@
 ---
 title: ResetPlayerMoney
+sidebar_label: ResetPlayerMoney
 description: Reset a player's money to $0.
 tags: ["player"]
 ---

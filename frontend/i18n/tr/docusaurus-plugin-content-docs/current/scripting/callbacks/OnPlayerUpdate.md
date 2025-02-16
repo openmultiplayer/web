@@ -1,5 +1,6 @@
 ---
 title: OnPlayerUpdate
+sidebar_label: OnPlayerUpdate
 description: Bu fonksiyon, bir istemci veya oyuncu sunucuyu durumlarıyla her güncellediğinde çağrılır. 
 tags: ["player"]
 ---

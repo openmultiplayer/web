@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawGetOutline
+sidebar_label: PlayerTextDrawGetOutline
 description: Get the outline size on a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

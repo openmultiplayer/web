@@ -1,5 +1,6 @@
 ---
 title: Get3DTextLabelLOS
+sidebar_label: Get3DTextLabelLOS
 description: Gets the 3D text label line-of-sight.
 tags: ["3dtextlabel"]
 ---

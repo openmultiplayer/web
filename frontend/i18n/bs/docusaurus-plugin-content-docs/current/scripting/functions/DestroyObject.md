@@ -1,5 +1,6 @@
 ---
 title: DestroyObject
+sidebar_label: DestroyObject
 description: Uništava (briše) objekat koji je kreiran sa CreateObject.
 tags: []
 ---

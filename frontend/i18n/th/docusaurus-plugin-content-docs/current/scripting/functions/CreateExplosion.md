@@ -1,5 +1,6 @@
 ---
 title: CreateExplosion
+sidebar_label: CreateExplosion
 description: Create an explosion at the specified coordinates.
 tags: []
 ---

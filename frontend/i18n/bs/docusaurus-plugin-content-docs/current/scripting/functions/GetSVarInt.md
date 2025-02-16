@@ -1,5 +1,6 @@
 ---
 title: GetSVarInt
+sidebar_label: GetSVarInt
 description: Dobija cjelobrojnu vrijednost server varijable.
 tags: []
 ---

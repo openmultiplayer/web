@@ -1,5 +1,6 @@
 ---
 title: PauseRecordingPlayback
+sidebar_label: PauseRecordingPlayback
 description: Ipo-pause nito ang pag-play muli ng recording.
 tags: []
 ---

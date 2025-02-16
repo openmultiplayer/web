@@ -1,5 +1,6 @@
 ---
 title: SendDeathMessageToPlayer
+sidebar_label: SendDeathMessageToPlayer
 description: Adds a death to the 'killfeed' on the right-hand side of the screen for a single player.
 tags: ["player"]
 ---

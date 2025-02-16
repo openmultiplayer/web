@@ -1,5 +1,6 @@
 ---
 title: floatsqroot
+sidebar_label: floatsqroot
 description: Calculates the square root of given value.
 tags: []
 ---

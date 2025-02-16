@@ -1,5 +1,6 @@
 ---
 title: TextDrawBoxColour
+sidebar_label: TextDrawBoxColour
 description: Adjusts the text box colour (only used if TextDrawUseBox 'enableBox' parameter is 'true').
 tags: ["textdraw"]
 ---

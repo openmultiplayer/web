@@ -1,5 +1,6 @@
 ---
 title: OnPlayerStreamOut
+sidebar_label: OnPlayerStreamOut
 description: Ovaj callback je pozvan kada se igrač prestane pojavljivati u klijentu drugog igrača.
 tags: ["player"]
 ---

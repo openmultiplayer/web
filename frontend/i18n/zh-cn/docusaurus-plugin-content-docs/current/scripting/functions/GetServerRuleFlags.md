@@ -1,5 +1,6 @@
 ---
 title: GetServerRuleFlags
+sidebar_label: GetServerRuleFlags
 description: Gets the flags of a server rule.
 tags: ["rule"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Temel: Değişkenler"
+sidebar_label: "Temel: Değişkenler"
 description: Pawn dilinde değişkenlere yönelik başlangıç rehberi
 ---
 

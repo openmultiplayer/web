@@ -1,5 +1,6 @@
 ---
 title: uudecode
+sidebar_label: uudecode
 description: Dekodirajte UU kodirani string.
 tags: []
 ---

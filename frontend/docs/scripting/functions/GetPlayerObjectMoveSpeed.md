@@ -1,5 +1,6 @@
 ---
 title: GetPlayerObjectMoveSpeed
+sidebar_label: GetPlayerObjectMoveSpeed
 description: Get the move speed of a player-object.
 tags: ["player", "object", "playerobject"]
 ---

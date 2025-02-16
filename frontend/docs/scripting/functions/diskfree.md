@@ -1,5 +1,6 @@
 ---
 title: diskfree
+sidebar_label: diskfree
 description: Returns the free disk space.
 tags: ["file management"]
 ---

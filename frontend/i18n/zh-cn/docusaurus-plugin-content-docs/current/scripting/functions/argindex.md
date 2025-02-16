@@ -1,5 +1,6 @@
 ---
 title: argindex
+sidebar_label: argindex
 description: Get the name of the argument at the given index after --.
 tags: ["arguments", "args"]
 ---

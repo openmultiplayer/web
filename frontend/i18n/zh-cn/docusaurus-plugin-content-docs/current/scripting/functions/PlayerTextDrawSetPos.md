@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetPos
+sidebar_label: PlayerTextDrawSetPos
 description: Sets the position of a player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

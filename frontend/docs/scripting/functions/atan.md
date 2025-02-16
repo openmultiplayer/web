@@ -1,5 +1,6 @@
 ---
 title: atan
+sidebar_label: atan
 description: Get the inversed value of a tangent in degrees.
 tags: ["math"]
 ---

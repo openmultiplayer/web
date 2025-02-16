@@ -1,5 +1,6 @@
 ---
 title: GameText Styles
+sidebar_label: GameText Styles
 description: GameText Styles to be used in textdraws and gametext
 ---
 

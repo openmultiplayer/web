@@ -1,5 +1,6 @@
 ---
 title: OnPlayerExitedMenu
+sidebar_label: OnPlayerExitedMenu
 description: Apelat când un jucător iese dintr-un meniu.
 tags: ["player", "menu"]
 ---

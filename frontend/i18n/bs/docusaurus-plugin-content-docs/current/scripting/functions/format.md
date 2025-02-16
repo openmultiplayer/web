@@ -1,5 +1,6 @@
 ---
 title: format
+sidebar_label: format
 description: Formatira string tako da sadrži varijable i druge stringove unutar njega.
 tags: []
 ---

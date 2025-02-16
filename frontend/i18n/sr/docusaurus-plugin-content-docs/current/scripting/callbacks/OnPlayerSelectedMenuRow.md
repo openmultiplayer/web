@@ -1,5 +1,6 @@
 ---
 title: OnPlayerSelectedMenuRow
+sidebar_label: OnPlayerSelectedMenuRow
 description: Овај повратни позив се позива када играч изабере ставку из менија (ShowMenuForPlayer).
 tags: ["player", "menu"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnFilterScriptInit
+sidebar_label: OnFilterScriptInit
 description: Wird ausgeführt wenn ein Filterscript gestartet wird (initialize).
 tags: []
 ---

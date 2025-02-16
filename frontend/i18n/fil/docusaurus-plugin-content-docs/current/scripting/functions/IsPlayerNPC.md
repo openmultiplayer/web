@@ -1,5 +1,6 @@
 ---
 title: IsPlayerNPC
+sidebar_label: IsPlayerNPC
 description: Suriin kung ang isang player ay isang aktwal na player o isang NPC.
 tags: ["player", "npc"]
 ---

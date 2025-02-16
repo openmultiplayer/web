@@ -1,5 +1,6 @@
 ---
 title: OnPlayerCommandText
+sidebar_label: OnPlayerCommandText
 description: Callback này được gọi khi một người chơi nhập lệnh vào cửa sổ trò chuyện của client.
 tags: ["player"]
 ---

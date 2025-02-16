@@ -1,5 +1,6 @@
 ---
 title: AttachObjectToPlayer
+sidebar_label: AttachObjectToPlayer
 description: Przyczepia obiekt do gracza.
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Tire States
+sidebar_label: Tire States
 description: Information about byte size and its corresponding tire state bits.
 ---
 

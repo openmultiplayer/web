@@ -1,5 +1,6 @@
 ---
 title: SetPlayerSkillLevel
+sidebar_label: SetPlayerSkillLevel
 description: Postavite nivo vještine određene vrste oružja za igrača.
 tags: ["player"]
 ---

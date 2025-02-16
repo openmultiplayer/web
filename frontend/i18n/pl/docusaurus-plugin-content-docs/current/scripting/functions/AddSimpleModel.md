@@ -1,5 +1,6 @@
 ---
 title: AddSimpleModel
+sidebar_label: AddSimpleModel
 description: Dodaje do pobrania nowy obiekt.
 tags: []
 ---

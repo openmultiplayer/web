@@ -1,5 +1,6 @@
 ---
 title: IsPlayerAttachedObjectSlotUsed
+sidebar_label: IsPlayerAttachedObjectSlotUsed
 description: Provjeri da li igrač ima prikvačen objekat u određenom indexu (slotu).
 tags: ["player"]
 ---

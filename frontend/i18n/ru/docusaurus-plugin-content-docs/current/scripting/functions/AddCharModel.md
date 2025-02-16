@@ -1,5 +1,6 @@
 ---
 title: AddCharModel
+sidebar_label: AddCharModel
 description: Добавляет новую стороннюю модель ( скин ) игрока для скачивания.
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetActorAnimation
+sidebar_label: GetActorAnimation
 description: Get the animation the actor is currently performing.
 tags: ["actor"]
 ---

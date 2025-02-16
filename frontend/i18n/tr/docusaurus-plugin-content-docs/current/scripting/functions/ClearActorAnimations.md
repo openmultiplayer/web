@@ -1,5 +1,6 @@
 ---
 title: ClearActorAnimations
+sidebar_label: ClearActorAnimations
 description: Aktörün animasyonunu durdurma.
 tags: []
 ---

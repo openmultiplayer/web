@@ -1,5 +1,6 @@
 ---
 title: Awesome
+sidebar_label: Awesome
 description: Danh sách được tuyển chọn các tool, librarie, gamemode, filterscript và plugin hữu ích cho quá trình phát triển SA-MP.
 ---
 

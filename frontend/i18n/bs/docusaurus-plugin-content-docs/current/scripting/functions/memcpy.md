@@ -1,5 +1,6 @@
 ---
 title: memcpy
+sidebar_label: memcpy
 description: Kopirajte bajtove s jedne lokacije na drugu.
 tags: []
 ---

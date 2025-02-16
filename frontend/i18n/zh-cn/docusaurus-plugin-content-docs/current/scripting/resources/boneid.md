@@ -1,5 +1,6 @@
 ---
 title: "Bone IDs"
+sidebar_label: "Bone IDs"
 ---
 
 :::note

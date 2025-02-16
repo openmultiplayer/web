@@ -1,5 +1,6 @@
 ---
 title: IsValidPlayerPickup
+sidebar_label: IsValidPlayerPickup
 description: Checks if a player-pickup is valid.
 tags: ["player", "pickup", "playerpickup"]
 ---

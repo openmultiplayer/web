@@ -1,5 +1,6 @@
 ---
 title: StopPlayerObject
+sidebar_label: StopPlayerObject
 description: Stop a moving player-object after MovePlayerObject has been used.
 tags: ["player"]
 ---

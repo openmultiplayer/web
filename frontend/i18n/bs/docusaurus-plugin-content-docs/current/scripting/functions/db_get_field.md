@@ -1,5 +1,6 @@
 ---
 title: db_get_field
+sidebar_label: db_get_field
 description: Preuzmite sadržaj polja iz db_query.
 keywords:
   - sqlite

@@ -1,5 +1,6 @@
 ---
 title: OnPlayerDeath
+sidebar_label: OnPlayerDeath
 description: Callback ini akan terpanggil ketika pemain mati, entah itu dengan bunuh diri atau terbunuh oleh pemain lain.
 tags: ["player"]
 ---

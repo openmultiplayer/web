@@ -1,5 +1,6 @@
 ---
 title: Estilos de GameText
+sidebar_label: Estilos de GameText
 description: Estilos de GameText usados em textdraws e gametext.
 ---
 

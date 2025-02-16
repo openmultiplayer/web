@@ -1,5 +1,6 @@
 ---
 title: OnTrailerUpdate
+sidebar_label: OnTrailerUpdate
 description: Ова повратна функција се позива када играч пошаље ажурирање приколице.
 tags: ["vehicle"]
 ---

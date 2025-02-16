@@ -1,5 +1,6 @@
 ---
 title: PlayerTextDrawSetProportional
+sidebar_label: PlayerTextDrawSetProportional
 description: Prilagođava razmak između teksta proporcionalnom omjeru.
 tags: ["player", "textdraw", "playertextdraw"]
 ---

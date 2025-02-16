@@ -1,5 +1,6 @@
 ---
 title: ID Cuaca
+sidebar_label: ID Cuaca
 description: Informasi tentang ID cuaca
 ---
 

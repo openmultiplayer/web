@@ -1,5 +1,6 @@
 ---
 title: GetSVarNameAtIndex
+sidebar_label: GetSVarNameAtIndex
 description: Retrieve the name of a sVar via the index.
 tags: ["server variable", "svar"]
 ---

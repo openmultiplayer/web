@@ -1,5 +1,6 @@
 ---
 title: NetStats_PacketLossPercent
+sidebar_label: NetStats_PacketLossPercent
 description: Gets the packet loss percentage of a player.
 tags: []
 ---

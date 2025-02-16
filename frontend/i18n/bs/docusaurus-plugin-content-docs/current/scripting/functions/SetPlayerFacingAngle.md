@@ -1,5 +1,6 @@
 ---
 title: SetPlayerFacingAngle
+sidebar_label: SetPlayerFacingAngle
 description: Postavi smjer gledanja igrača (Z rotacija).
 tags: ["player"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: OnGameModeExit
+sidebar_label: OnGameModeExit
 description: Callback này được gọi khi một gamemode kết thúc, qua 'gmx', khi máy chủ bị tắt, hoặc GameModeExit.
 tags: []
 ---

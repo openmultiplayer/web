@@ -1,5 +1,6 @@
 ---
 title: GetObjectSyncRotation
+sidebar_label: GetObjectSyncRotation
 description: Get the sync rotation of an object.
 tags: ["object"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: GetNetworkStats
+sidebar_label: GetNetworkStats
 description: Obtém as estatísticas da rede do servidor e as armazena em uma string.
 tags: []
 ---
