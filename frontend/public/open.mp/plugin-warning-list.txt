@@ -1,9 +1,0 @@
-YSF
-YSF_DL
-YSF_static
-YSF_DL_static
-pawnraknet
-pawncmd
-SKY
-FCNPC
-FCNPC-DL

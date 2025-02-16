@@ -30,10 +30,7 @@ import VersionWarnSR from "./translations/sr/version-warning";
 import LowercaseNoteSR from "./translations/sr/lowercase-note";
 import TipNPCCallbacksSR from "./translations/sr/npc-callbacks-tip";
 
-import Image from "./Image";
-
 const templates = {
-  img: Image,
   VersionWarn,
   LowercaseNote,
   TipNPCCallbacks,
