@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Community driven development",
-    Img: "images/assets/f2.png",
+    Img: "images/assets/github.png",
     description: (
       <>
         The server is fully open source, and we welcome all contributions big or
@@ -50,8 +50,8 @@ const FeatureList: FeatureItem[] = [
         find; despite our attempts to have...
       </>
     ),
-    link: "https://github.com/openmultiplayer/open.mp",
-    linkText: "Visit the GitHub repo",
+    link: "https://github.com/openmultiplayer",
+    linkText: "Visit the GitHub organization",
   },
   {
     title: "Extensible C++ API",
@@ -104,7 +104,7 @@ function Feature({ title, Img, description, link, linkText }: FeatureItem) {
 export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
-      <div className="container" style={{}}>
+      <div className="container">
         <div className="row" style={{ justifyContent: "space-around" }}>
           {FeatureList.filter((_, index) => index < 2).map((props, idx) => (
             <Feature key={idx} {...props} />
