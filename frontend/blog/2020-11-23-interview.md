@@ -4,6 +4,8 @@ title: Live Podcast
 authors: potassium
 ---
 
+We recently hosted a live Q&A podcast with the open.mp dev team, covering everything from project updates and scripting improvements to future plans and community involvement. If you missed it, you can watch the full recording here!
+
 <!-- truncate -->
 
 On the 24th of October we had a dev Q&A podcast, which is recorded for you below:

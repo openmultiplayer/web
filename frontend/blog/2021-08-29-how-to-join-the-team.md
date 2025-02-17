@@ -4,7 +4,11 @@ title: How can I join the team?
 authors: potassium
 ---
 
+Want to be part of the open.mp team? We get this question a lot, so here's how you can contribute and get involved!
+
 <!-- truncate -->
+
+## How can I join the team?
 
 We get asked this question a LOT, so we thought we should make a post about it!
 
