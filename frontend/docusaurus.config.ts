@@ -11,7 +11,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "open.mp",
   tagline: "Open Multiplayer",
-  favicon: "img/favicon.ico",
+  favicon: "images/assets/favicon-32x32.png",
 
   // Set the production url of your site here
   url: "https://open.mp/",
@@ -162,41 +162,53 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "images/assets/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      title: "Open Multiplayer",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "open.mp logo",
+        src: "images/assets/logo-light-trans.svg",
       },
       items: [
         {
           type: "docSidebar",
           sidebarId: "docsSidebar",
-          position: "left",
+          position: "right",
           label: "Docs",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog", label: "Blog", position: "right" },
+        {
+          type: "localeDropdown", // This adds the language switcher
+          position: "right",
+        },
         {
           href: "https://github.com/openmultiplayer",
           label: "GitHub",
           position: "right",
         },
-        {
-          type: "localeDropdown", // This adds the language switcher
-          position: "right",
-        },
       ],
     },
     footer: {
+      logo: {
+        alt: "open.mp logo",
+        src: "images/assets/logo.svg",
+      },
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Documentations",
           items: [
             {
-              label: "Docs",
-              to: "/docs",
+              label: "Introduction",
+              to: "docs",
+            },
+            {
+              label: "open.mp Migration",
+              to: "docs",
+            },
+            {
+              label: "config.json",
+              to: "docs/server/config.json",
             },
           ],
         },
@@ -204,16 +216,16 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Discord",
+              href: "https://discord.gg/samp",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "YouTube",
+              href: "https://youtube.com/openmultiplayer",
             },
             {
               label: "X",
-              href: "https://x.com/docusaurus",
+              href: "https://x.com/openmultiplayer",
             },
           ],
         },

@@ -1,57 +1,102 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import Image from "@theme/ThemedImage";
+import styles from "./styles.module.css";
+import Link from "@docusaurus/Link";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Img: string;
   description: ReactNode;
+  link: string;
+  linkText: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/public/img/undraw_docusaurus_mountain.svg').default,
+    title: "Fully backwards compatible with existing scripts and clients",
+    Img: "images/assets/f1.png",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Got an old AMX lying about? Load it up on the open.mp server straight
+        out of the box and join your friends playing on the SA:MP client. Then
+        when you want to enhance your code try our...
       </>
     ),
+    link: "/docs",
+    linkText: "Getting Started",
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/public/img/undraw_docusaurus_tree.svg').default,
+    title: "New and improved scripting system",
+    Img: "images/assets/f5.png",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We've stuck with pawn, but with a new compiler engineered to make your
+        code more robust, and more functions to manipulate the server and
+        client. If that's still not enough there's an...
       </>
     ),
+    link: "https://github.com/openmultiplayer/omp-stdlib/#openmp-includes",
+    linkText: "Learn about the improvements",
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/public/img/undraw_docusaurus_react.svg').default,
+    title: "Community driven development",
+    Img: "images/assets/f2.png",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The server is fully open source, and we welcome all contributions big or
+        small. Help write the next version, or just post about any problems you
+        find; despite our attempts to have...
       </>
     ),
+    link: "https://github.com/openmultiplayer/open.mp",
+    linkText: "Visit the GitHub repo",
+  },
+  {
+    title: "Extensible C++ API",
+    Img: "images/assets/f4.png",
+    description: (
+      <>
+        Get access to all the server features available in pawn, plus the
+        universe of C++ libraries and frameworks. Once you've mastered this why
+        not help improve the server via our...
+      </>
+    ),
+    link: "https://github.com/openmultiplayer/open.mp-sdk",
+    linkText: "Check out SDK repository",
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Img, description, link, linkText }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        maxWidth: 500,
+        flexGrow: 1,
+      }}
+    >
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Image
+          className={styles.featureSvg}
+          sources={{ light: Img, dark: Img }}
+        />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
+      <div style={{ display: "flex", flexDirection: "column", flex: 1 }} />
+      <Link
+        style={{ alignSelf: "center" }}
+        className={clsx("button button--primary button--md", styles.button)}
+        to={link}
+      >
+        {linkText}
+      </Link>
     </div>
   );
 }
@@ -59,9 +104,17 @@ function Feature({title, Svg, description}: FeatureItem) {
 export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
+      <div className="container" style={{}}>
+        <div className="row" style={{ justifyContent: "space-around" }}>
+          {FeatureList.filter((_, index) => index < 2).map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+        <div
+          className="row margin-top--lg"
+          style={{ justifyContent: "space-around" }}
+        >
+          {FeatureList.filter((_, index) => index >= 2).map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
