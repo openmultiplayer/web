@@ -4,6 +4,8 @@ title: Release Candidate 1
 authors: y_less
 ---
 
+It's finally here! 🎉 After years of development, rewrites, and challenges, we're excited to introduce Release Candidate 1 (RC1) of the open.mp server. This marks a major step towards our official 1.0 release, bringing significant updates, features, and improvements.
+
 <!-- truncate -->
 
 It's here!

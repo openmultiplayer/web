@@ -4,6 +4,8 @@ title: SA-MP Android (Mobile Version)
 authors: potassium
 ---
 
+We've been getting a lot of questions about SA-MP for Android, so we wanted to share our thoughts and plans for a legal multiplayer alternative.
+
 <!-- truncate -->
 
 The open.mp team's views on SA-MP for Android
