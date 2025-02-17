@@ -19,6 +19,7 @@
 
   background-image: url(/images/assets/map.png);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
