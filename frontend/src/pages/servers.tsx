@@ -1,18 +1,19 @@
+import Layout from "@theme/Layout";
+import NProgress from "nprogress";
 import React, {
   FormEvent,
   ReactNode,
-  useEffect,
-  useState,
   useCallback,
+  useEffect,
+  useMemo,
+  useState,
 } from "react";
-import NProgress from "nprogress";
-import { API_ADDRESS } from "../constants";
-import { showToast, ToastContainer } from "../components/Toast";
+import { FixedSizeList } from "react-window";
 import LoadingBanner from "../components/LoadingBanner";
 import ServerRow from "../components/ServerRow";
-import { FixedSizeList } from "react-window";
+import { showToast, ToastContainer } from "../components/Toast";
+import { API_ADDRESS } from "../constants";
 import { CoreServerData, ServerAllData } from "../types";
-import Layout from "@theme/Layout";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
@@ -194,31 +195,34 @@ const List = ({ data }: { data: CoreServerData[] }) => {
   const [sort, setSort] = useState<SortBy>("relevance");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const query: Query = {
-    search,
-    showEmpty,
-    showPartnersOnly,
-    showOmpOnly,
-    sort,
-  };
+  const filteredData = useMemo(() => {
+    return filterServers(data, {
+      search,
+      showEmpty,
+      showPartnersOnly,
+      showOmpOnly,
+      sort,
+    });
+  }, [data, search, showEmpty, showPartnersOnly, showOmpOnly, sort]);
 
-  const filteredData = filterServers(data, query);
-
-  const rowHeight = 140; // You might need to adjust this based on your ServerRow's styling
-  const listHeight = 1000; // Set a fixed height for the list
-  const visibleItems = Math.floor(listHeight / rowHeight); // Calculate visible items
-
-  const Row = useCallback(
-    ({ index, style }) => {
-      const server = filteredData[index];
-      return (
-        <div style={style}>
-          <ServerRow key={server.ip} server={server} />
-        </div>
-      );
-    },
+  // **Create a new dependency whenever the sorted order changes.**
+  const sortedDataKey = useMemo(
+    () => JSON.stringify(filteredData.map((item) => item.ip)),
     [filteredData]
-  );
+  ); // Using ip as unique key, assuming ip is unique
+
+  const rowHeight = 134;
+  const listHeight = 1000;
+  const visibleItems = Math.floor(listHeight / rowHeight);
+
+  const Row = ({ index, style }) => {
+    const server = filteredData[index];
+    return (
+      <div style={style}>
+        <ServerRow key={server.ip} server={server} />
+      </div>
+    );
+  };
 
   return (
     <>
@@ -289,11 +293,12 @@ const List = ({ data }: { data: CoreServerData[] }) => {
 
       {/* React Window List */}
       <FixedSizeList
-        height={filteredData.length * rowHeight}
+        height={(filteredData.length + 1) * rowHeight}
         width="100%"
         itemSize={rowHeight}
         itemCount={filteredData.length}
         overscanCount={visibleItems}
+        key={sortedDataKey}
       >
         {Row}
       </FixedSizeList>

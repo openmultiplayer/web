@@ -13,6 +13,7 @@
   --ifm-color-primary-light: #9e91e4;
   --ifm-color-primary-lighter: #a79aeb;
   --ifm-color-primary-lightest: #b8acf4;
+  --ifm-color-secondary-button-background: var(--ifm-color-secondary);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-button-font-weight: 600;
@@ -32,6 +33,7 @@
   --ifm-color-primary-lighter: #bdaeff;
   --ifm-color-primary-lightest: #cfc1ff;
   --ifm-navbar-background-color: #1a202c;
+  --ifm-color-secondary-button-background: #2c323d;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -251,7 +253,7 @@ html[data-theme="dark"] {
 }
 
 .servers-modal-content {
-  position: relative; /* Changed from fixed to relative */
+  position: relative;
   background-color: var(--ifm-navbar-background-color);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -259,7 +261,7 @@ html[data-theme="dark"] {
   max-width: 500px;
   width: calc(100% - 32px);
   margin: 16px;
-  z-index: 51; /* Ensure it's above the backdrop */
+  z-index: 51;
 }
 
 .servers-modal-header {
@@ -341,7 +343,7 @@ html[data-theme="dark"] {
 
 .loading-banner-heading {
   font-style: italic;
-  font-size: 1.5em; /* size="lg" */
+  font-size: 1.5em;
 }
 
 @keyframes loading-banner-spin {
@@ -354,28 +356,41 @@ html[data-theme="dark"] {
 }
 
 /* Server row styles */
-.server-row {
-  height: 140;
-}
-
-.server-row-content {
-  /* Add any necessary styling for the content container */
+.server-row-card {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 0.375rem;
+  padding-top: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--ifm-navbar-background-color);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.03), 0 1px 1px 0 rgba(0, 0, 0, 0.03);
 }
 
 .server-header {
   display: flex;
+  height: 30px;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
+  margin-bottom: 0.5rem;
 }
 
 .server-heading {
   font-size: 1.25rem;
-  margin-top: 0;
-  word-break: break-word;
+  font-weight: 600;
+  margin: 0;
 }
 
 .server-link {
-  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
 }
 
 .server-link:hover .server-heading {
@@ -385,26 +400,29 @@ html[data-theme="dark"] {
 
 .server-badges {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
 }
 
 .server-badge-image {
-  width: 2.14rem;
-  height: 2.14rem;
+  width: 30px;
+  height: auto;
+  margin-left: 0.25rem;
 }
 
 .server-details {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 0.3em 0;
-  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
 .server-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0.3em 0;
+  flex-wrap: wrap;
 }
 
 .server-game-mode {
@@ -421,41 +439,39 @@ html[data-theme="dark"] {
   font-weight: bold;
   margin-top: 0;
   margin-right: 0.5rem;
+  color: "black";
 }
 
 .copy-badge-button {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.4rem 0.65rem;
   border: none;
   cursor: pointer;
-  background-color: #f0f0f0;
+  background-color: var(--ifm-color-secondary-button-background);
+  border-radius: 8px;
 }
 
 .copy-badge-button.copied {
-  background-color: #81c784;
+  background-color: #5d9b60;
   color: white;
 }
 
-.server-actions {
+.server-players {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-top: 0;
+  font-weight: 600;
 }
 
 .server-player-count {
   display: flex;
   align-items: center;
-}
-
-.server-player-current {
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-top: 0;
-}
-
-.server-player-max {
-  font-size: 1.5rem;
-  margin-top: 0;
+  font-weight: 700;
+  margin-right: 4px;
 }
 
 /* Responsive styles */

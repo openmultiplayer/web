@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const CopyBadge = ({ text }) => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -22,46 +22,44 @@ const CopyBadge = ({ text }) => {
   );
 };
 
-const ServerRow = ({ server, sx }) => {
+const ServerRow = ({ server }) => {
   return (
-    <div className="server-row-card" style={sx}>
-      <div className="server-row-content">
-        <div className="server-header">
-          <a href={"/servers/" + server.ip} className="server-link">
-            <h2 className="server-heading">{server.hn}</h2>
-          </a>
-          <div className="server-badges">
-            {server.pr && (
-              <img
-                src="https://assets.open.mp/assets/images/assets/partners.png"
-                alt="partner server"
-                title="Has partnership!"
-                className="server-badge-image"
-              />
-            )}
-            {server.omp && (
-              <img
-                src="https://assets.open.mp/assets/images/assets/logo-light-trans.svg"
-                alt="open.mp server"
-                title="open.mp server"
-                className="server-badge-image"
-              />
-            )}
-          </div>
+    <div className="server-row-card">
+      <div className="server-header">
+        <a href={"/servers/" + server.ip} className="server-link">
+          <h2 className="server-heading">{server.hn}</h2>
+        </a>
+        <div className="server-badges">
+          {server.pr && (
+            <img
+              src="/images/assets/partners.png"
+              alt="partner server"
+              title="Has partnership!"
+              className="server-badge-image"
+            />
+          )}
+          {server.omp && (
+            <img
+              src="/images/assets/logo-light-trans.svg"
+              alt="open.mp server"
+              title="open.mp server"
+              className="server-badge-image"
+            />
+          )}
         </div>
+      </div>
 
+      <div className="server-info">
         <div className="server-details">
-          <div className="server-info">
-            <p className="server-game-mode">{server.gm}</p>
-            <CopyBadge text={server.ip} />
-          </div>
-          <div className="server-actions">
+          <span className="server-game-mode">{server.gm}</span>
+          <div className="server-players">
             <div className="server-player-count">
-              <span className="server-player-current">{server.pc}</span>/
-              <span className="server-player-max">{server.pm}</span> players
+              <span>{server.pc}</span>/<span>{server.pm}</span>
             </div>
+            players
           </div>
         </div>
+        <CopyBadge text={server.ip} />
       </div>
     </div>
   );
