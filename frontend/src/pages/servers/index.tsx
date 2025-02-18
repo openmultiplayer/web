@@ -8,11 +8,11 @@ import React, {
   useState
 } from "react";
 import { FixedSizeList } from "react-window";
-import LoadingBanner from "../components/LoadingBanner";
-import ServerRow from "../components/ServerRow";
-import { showToast, ToastContainer } from "../components/Toast";
-import { API_ADDRESS } from "../constants";
-import { CoreServerData, ServerAllData } from "../types";
+import LoadingBanner from "../../components/LoadingBanner";
+import ServerRow from "../../components/ServerRow";
+import { showToast, ToastContainer } from "../../components/Toast";
+import { API_ADDRESS } from "../../constants";
+import { CoreServerData, ServerAllData } from "../../types";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 

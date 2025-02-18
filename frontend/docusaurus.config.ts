@@ -62,6 +62,24 @@ const config: Config = {
 
   staticDirectories: ["public"],
 
+  plugins: [
+    async function serverRoutesPlugin(context, options) {
+      return {
+        name: "server-routes-plugin",
+        async contentLoaded({ content, actions }) {
+          const { createData, addRoute } = actions;
+
+          // Add the dynamic route
+          addRoute({
+            path: "/servers/:id",
+            component: "@site/src/pages/servers/[id].tsx",
+            exact: true,
+          });
+        },
+      };
+    },
+  ],
+
   presets: [
     [
       "classic",
