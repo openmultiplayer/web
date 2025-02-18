@@ -195,6 +195,7 @@ const config: Config = {
           label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "right" },
+        { to: "https://forum.open.mp/", label: "Forums", position: "right" },
         { to: "/servers", label: "Servers", position: "right" },
         { to: "/partners", label: "Partners", position: "right" },
         {
