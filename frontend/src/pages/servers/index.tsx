@@ -5,7 +5,7 @@ import React, {
   ReactNode,
   useEffect,
   useMemo,
-  useState
+  useState,
 } from "react";
 import { FixedSizeList } from "react-window";
 import LoadingBanner from "../../components/LoadingBanner";
@@ -13,6 +13,7 @@ import ServerRow from "../../components/ServerRow";
 import { showToast, ToastContainer } from "../../components/Toast";
 import { API_ADDRESS } from "../../constants";
 import { CoreServerData, ServerAllData } from "../../types";
+import ServerInfoPage from "../../components/ServerInfoPage";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
@@ -331,6 +332,17 @@ const List = ({ data }: { data: CoreServerData[] }) => {
 };
 
 const Page = (): ReactNode => {
+  if (
+    typeof window !== "undefined" &&
+    window.location &&
+    window.location.pathname &&
+    window.location.pathname.includes(":")
+  ) {
+    const path = window.location.pathname;
+    const server = path.split("/servers/")[1];
+    return <ServerInfoPage ip={server} />;
+  }
+
   const [loading, setLoading] = useState<boolean>(true);
   const [data, setData] = useState<CoreServerData[]>([]);
 

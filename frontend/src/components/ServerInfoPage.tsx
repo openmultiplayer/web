@@ -138,8 +138,7 @@ const Content = ({ ip }: { ip: string }) => {
   return <Info data={data} />;
 };
 
-const Page = () => {
-  const { ip } = useParams<{ ip: string }>();
+const ServerInfoPage = ({ ip }: { ip: string }) => {
   if (!ip) {
     return <LoadingBanner />;
   }
@@ -156,7 +155,7 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ServerInfoPage;
 
 const formatDistance = (
   date: Date | string | number,

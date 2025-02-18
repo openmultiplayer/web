@@ -66,14 +66,14 @@ const config: Config = {
     async function serverRoutesPlugin(context, options) {
       return {
         name: "server-routes-plugin",
-        async contentLoaded({ content, actions }) {
-          const { createData, addRoute } = actions;
+        async contentLoaded({ actions }) {
+          const { addRoute } = actions;
 
           // Add the dynamic route
           addRoute({
-            path: "/servers/:ip",
-            component: "@site/src/pages/servers/[ip].tsx",
-            exact: true,
+            path: "/servers/",
+            component: "@site/src/pages/servers/index.tsx",
+            exact: false,
           });
         },
       };
@@ -195,7 +195,7 @@ const config: Config = {
           label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "right" },
-        { href: "https://forum.open.mp/", label: "Forums", position: "right" },
+        { to: "https://forum.open.mp/", label: "Forums", position: "right" },
         { to: "/servers", label: "Servers", position: "right" },
         { to: "/partners", label: "Partners", position: "right" },
         {
