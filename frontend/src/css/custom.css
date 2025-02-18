@@ -4,6 +4,37 @@
  * work well for content-centric websites.
  */
 
+@font-face {
+  font-family: "english-grotesque";
+  src: url("/fonts/english-grotesque_700.woff2") format("woff2"),
+    url("/fonts/english-grotesque_700.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "english-grotesque";
+  src: url("/fonts/english-grotesque_300.woff2") format("woff2"),
+    url("/fonts/english-grotesque_300.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+
+html {
+  font-family: "english-grotesque", var(--ifm-heading-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "english-grotesque", var(--ifm-heading-font-family);
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #9083d2;
@@ -474,6 +505,207 @@ html[data-theme="dark"] {
   margin-right: 4px;
 }
 
+/* Server info styles */
+.server-info-wrapper {
+  width: 100%;
+}
+
+.server-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.server-info-box {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: var(--ifm-navbar-background-color);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.server-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1rem;
+}
+
+.server-info-game-mode {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.server-info-ip-address {
+  padding: 0.5rem 1rem;
+  background: var(--ifm-color-secondary-button-background);
+  color: var(--ifm-navbar-link-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.server-info-ip-address:hover {
+  background: #718096;
+  color: white;
+}
+
+.server-info-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin: 1rem 0;
+}
+
+.server-info-description {
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 2rem;
+}
+
+.server-info-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.server-info-stats-section {
+  flex: 1;
+}
+
+.server-info-stat-item {
+  margin-bottom: 1.5rem;
+}
+
+.server-info-stat-label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--ifm-color-secondary-darkest);
+  margin-bottom: 0.25rem;
+}
+
+.server-info-stat-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.server-info-rules-section {
+  flex: 2;
+}
+
+.server-info-rules-table {
+  width: 100%;
+  border-collapse: collapse;
+  display: table;
+}
+
+.server-info-rules-table th,
+.server-info-rules-table td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.server-info-divider {
+  height: 1px;
+  background: #eee;
+  margin: 1.2rem 0;
+}
+
+.server-info-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.server-info-last-updated {
+  color: var(--ifm-color-primary);
+  font-size: 0.875rem;
+}
+
+.server-info-link {
+  text-decoration: none;
+}
+
+.server-info-quick-join-button {
+  margin-top: 1em;
+  padding: 0.5rem 1rem;
+  background: var(--ifm-color-primary-dark);
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.server-info-quick-join-button:hover {
+  background: var(--ifm-color-primary-darkest);
+}
+
+.server-info-quick-join-button:focus {
+  border-color: #beb5df;
+  outline: none;
+}
+
+.server-info-arrow {
+  font-size: 1.2rem;
+}
+
+.server-info-section {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.server-info-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.server-info-back-link {
+  display: inline-block;
+  width: max-content;
+  color: #8477b7;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-width: 1px;
+  border-color: var(--ifm-button-background-color);
+  border-radius: 2px;
+}
+
+.server-info-back-link:hover {
+  color: #aea0e1;
+  text-decoration: underline;
+}
+
+.server-info-banner {
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.server-info-loading {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.server-info-error {
+  background-color: #fee;
+  color: #c00;
+  border: 1px solid #fcc;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .servers-controls {
@@ -494,5 +726,13 @@ html[data-theme="dark"] {
   .servers-container {
     padding: 1em;
     margin: 10px auto 50px auto;
+  }
+
+  .server-info-content-wrapper {
+    flex-direction: column;
+  }
+
+  .server-info-section {
+    padding: 0.5rem;
   }
 }

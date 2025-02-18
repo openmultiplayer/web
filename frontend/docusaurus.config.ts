@@ -11,7 +11,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "open.mp",
   tagline: "Open Multiplayer",
-  favicon: "images/assets/favicon-32x32.png",
+  favicon: "favicon.ico",
 
   // Set the production url of your site here
   url: "https://open.mp/",
@@ -71,8 +71,8 @@ const config: Config = {
 
           // Add the dynamic route
           addRoute({
-            path: "/servers/:id",
-            component: "@site/src/pages/servers/[id].tsx",
+            path: "/servers/:ip",
+            component: "@site/src/pages/servers/[ip].tsx",
             exact: true,
           });
         },
