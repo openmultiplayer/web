@@ -2,7 +2,6 @@
 title: Skins
 sidebar_label: Skins
 description: This page has the all the available skins in SAMP.
-sidebar_label: Skins
 ---
 
 ## Skins List
