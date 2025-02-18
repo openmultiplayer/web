@@ -2,7 +2,6 @@
 title: SA-MP Objects
 sidebar_label: SA-MP Objects
 description: This page contains a list of the custom objects added by SA-MP.
-sidebar_label: SAMP Objects
 ---
 
 :::info
