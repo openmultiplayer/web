@@ -320,6 +320,144 @@ html[data-theme="dark"] {
   box-sizing: border-box;
 }
 
+/* Loading banner styles */
+.loading-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1em;
+}
+
+.loading-banner-spinner {
+  border: 4px solid #f0f0f0;
+  border-top: 4px solid #805ad5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: loading-banner-spin 0.65s linear infinite;
+}
+
+.loading-banner-heading {
+  font-style: italic;
+  font-size: 1.5em; /* size="lg" */
+}
+
+@keyframes loading-banner-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Server row styles */
+.server-row {
+  height: 140;
+}
+
+.server-row-content {
+  /* Add any necessary styling for the content container */
+}
+
+.server-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.server-heading {
+  font-size: 1.25rem;
+  margin-top: 0;
+  word-break: break-word;
+}
+
+.server-link {
+  text-decoration: none;
+}
+
+.server-link:hover .server-heading {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.server-badges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.server-badge-image {
+  width: 2.14rem;
+  height: 2.14rem;
+}
+
+.server-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0.3em 0;
+  flex-wrap: wrap;
+}
+
+.server-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.server-game-mode {
+  margin-top: 0;
+}
+
+.copy-badge-container {
+  display: flex;
+  align-items: center;
+}
+
+.copy-badge-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-right: 0.5rem;
+}
+
+.copy-badge-button {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.copy-badge-button.copied {
+  background-color: #81c784;
+  color: white;
+}
+
+.server-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.server-player-count {
+  display: flex;
+  align-items: center;
+}
+
+.server-player-current {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.server-player-max {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .servers-controls {

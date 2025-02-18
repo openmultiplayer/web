@@ -1,17 +1,29 @@
-import Layout from "@theme/Layout";
-import { FormEvent, ReactNode, useState } from "react";
-import { CoreServerData, ServerAllData } from "../types";
+import React, {
+  FormEvent,
+  ReactNode,
+  useEffect,
+  useState,
+  useCallback,
+} from "react";
 import NProgress from "nprogress";
 import { API_ADDRESS } from "../constants";
 import { showToast, ToastContainer } from "../components/Toast";
-import { IoMdAdd } from "react-icons/io";
+import LoadingBanner from "../components/LoadingBanner";
+import ServerRow from "../components/ServerRow";
+import { FixedSizeList } from "react-window";
+import { CoreServerData, ServerAllData } from "../types";
+import Layout from "@theme/Layout";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
-const getServers = async (): Promise<Array<CoreServerData>> => {
-  const r: Response = await fetch(API_SERVERS);
-  const servers: Array<CoreServerData> = await r.json();
-  return servers;
+const getServers = async () => {
+  try {
+    const r: Response = await fetch(API_SERVERS);
+    const servers: CoreServerData[] = await r.json();
+    return servers;
+  } catch (e) {
+    return [];
+  }
 };
 
 type Stats = {
@@ -19,7 +31,7 @@ type Stats = {
   servers: number;
 };
 
-const getStats = (servers: Array<CoreServerData>): Stats => ({
+const getStats = (servers: CoreServerData[]): Stats => ({
   players: servers.map((s) => s.pc).reduce((acc, pc) => acc + pc, 0),
   servers: servers.length,
 });
@@ -34,30 +46,42 @@ type Query = {
   sort: SortBy;
 };
 
-// const dataToList = (data: CoreServerData[], q: Query) => {
-//   const fuse = new Fuse(data, {
-//     threshold: 0.2,
-//     shouldSort: true,
-//     includeScore: true,
-//     ignoreLocation: true,
-//     keys: ["ip", "hn", "gm"],
-//   });
+// Filters data
+const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
+  let filteredData = data;
 
-//   const items = q.search
-//     ? map((r: Fuse.FuseResult<CoreServerData>) => r.item)(fuse.search(q.search))
-//     : data;
+  if (q.search) {
+    const searchTerm = q.search.toLowerCase();
+    filteredData = filteredData.filter(
+      (s) =>
+        s.ip.toLowerCase().includes(searchTerm) ||
+        s.hn.toLowerCase().includes(searchTerm) ||
+        s.gm.toLowerCase().includes(searchTerm)
+    );
+  }
 
-//   return flow(
-//     filter((s: CoreServerData) => (!q.showEmpty ? s.pc > 0 : true)),
-//     filter((s: CoreServerData) => (q.showPartnersOnly ? s.pr === true : true)),
-//     filter((s: CoreServerData) => (q.showOmpOnly ? s.omp === true : true)),
-//     q.sort != "relevance" ? sortBy(q.sort) : sortBy(""),
-//     reverse,
-//     map((s: CoreServerData) => <ServerRow key={s.ip} server={s} />)
-//   )(items);
-// };
+  if (!q.showEmpty) {
+    filteredData = filteredData.filter((s) => s.pc > 0);
+  }
 
-const Stats = ({ stats: { players, servers } }: { stats: Stats }) => {
+  if (q.showPartnersOnly) {
+    filteredData = filteredData.filter((s) => s.pr === true);
+  }
+
+  if (q.showOmpOnly) {
+    filteredData = filteredData.filter((s) => s.omp === true);
+  }
+
+  // Sorting Logic
+  if (q.sort === "pc") {
+    filteredData.sort((a, b) => b.pc - a.pc); // Sort by players, descending
+  }
+  //Relevance would be the original order
+
+  return filteredData;
+};
+
+const StatsComponent = ({ stats: { players, servers } }: { stats: Stats }) => {
   return (
     <div className="servers-center">
       <p className="servers-stats">
@@ -162,27 +186,47 @@ const Modal = ({
 };
 
 // List Component
-const List = ({
-  data,
-  onAdd,
-}: {
-  data: Array<CoreServerData>;
-  onAdd: (server: ServerAllData) => void;
-}) => {
+const List = ({ data }: { data: CoreServerData[] }) => {
   const [search, setSearch] = useState("");
   const [showEmpty, setShowEmpty] = useState(true);
   const [showPartnersOnly, setShowPartnersOnly] = useState(false);
   const [showOmpOnly, setShowOmpOnly] = useState(false);
-  const [sort, setSort] = useState("relevance");
+  const [sort, setSort] = useState<SortBy>("relevance");
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const query: Query = {
+    search,
+    showEmpty,
+    showPartnersOnly,
+    showOmpOnly,
+    sort,
+  };
+
+  const filteredData = filterServers(data, query);
+
+  const rowHeight = 140; // You might need to adjust this based on your ServerRow's styling
+  const listHeight = 1000; // Set a fixed height for the list
+  const visibleItems = Math.floor(listHeight / rowHeight); // Calculate visible items
+
+  const Row = useCallback(
+    ({ index, style }) => {
+      const server = filteredData[index];
+      return (
+        <div style={style}>
+          <ServerRow key={server.ip} server={server} />
+        </div>
+      );
+    },
+    [filteredData]
+  );
 
   return (
     <>
-      <form action="" className="servers-list-form">
+      <form className="servers-list-form">
         <div className="servers-controls">
           <select
             value={sort}
-            onChange={(e) => setSort(e.target.value)}
+            onChange={(e) => setSort(e.target.value as SortBy)}
             className="servers-select"
           >
             <option value="relevance">Relevance</option>
@@ -241,7 +285,18 @@ const List = ({
         </div>
       </form>
 
-      <Stats stats={getStats(data)} />
+      <StatsComponent stats={getStats(data)} />
+
+      {/* React Window List */}
+      <FixedSizeList
+        height={filteredData.length * rowHeight}
+        width="100%"
+        itemSize={rowHeight}
+        itemCount={filteredData.length}
+        overscanCount={visibleItems}
+      >
+        {Row}
+      </FixedSizeList>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <div className="servers-modal-header">
@@ -258,7 +313,6 @@ const List = ({
           <label className="servers-label">IP or Domain</label>
           <AddServer
             onAdd={(server: ServerAllData) => {
-              onAdd(server);
               setIsModalOpen(false);
             }}
           />
@@ -281,6 +335,16 @@ const List = ({
 };
 
 const Page = (): ReactNode => {
+  const [loading, setLoading] = useState<boolean>(true);
+  const [data, setData] = useState<CoreServerData[]>([]);
+
+  useEffect(() => {
+    getServers().then((servers) => {
+      setLoading(false);
+      setData(servers);
+    });
+  }, []);
+
   return (
     <div>
       <Layout
@@ -288,7 +352,7 @@ const Page = (): ReactNode => {
         description="List of San Andreas servers using open.mp or SA-MP"
       >
         <section className="servers-container">
-          <List data={[]} onAdd={() => {}} />
+          {loading ? <LoadingBanner /> : <List data={data} />}
         </section>
       </Layout>
       <ToastContainer />
