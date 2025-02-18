@@ -49,7 +49,7 @@ type Query = {
 
 // Filters data
 const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
-  let filteredData = data;
+  let filteredData = [...data];
 
   if (q.search) {
     const searchTerm = q.search.toLowerCase();
@@ -205,12 +205,6 @@ const List = ({ data }: { data: CoreServerData[] }) => {
     });
   }, [data, search, showEmpty, showPartnersOnly, showOmpOnly, sort]);
 
-  // **Create a new dependency whenever the sorted order changes.**
-  const sortedDataKey = useMemo(
-    () => JSON.stringify(filteredData.map((item) => item.ip)),
-    [filteredData]
-  ); // Using ip as unique key, assuming ip is unique
-
   const rowHeight = 134;
   const listHeight = 1000;
   const visibleItems = Math.floor(listHeight / rowHeight);
@@ -291,14 +285,12 @@ const List = ({ data }: { data: CoreServerData[] }) => {
 
       <StatsComponent stats={getStats(data)} />
 
-      {/* React Window List */}
       <FixedSizeList
         height={(filteredData.length + 1) * rowHeight}
         width="100%"
         itemSize={rowHeight}
         itemCount={filteredData.length}
         overscanCount={visibleItems}
-        key={sortedDataKey}
       >
         {Row}
       </FixedSizeList>
