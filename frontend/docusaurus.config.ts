@@ -195,7 +195,7 @@ const config: Config = {
           label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "right" },
-        { to: "https://forum.open.mp/", label: "Forums", position: "right" },
+        { href: "https://forum.open.mp/", label: "Forums", position: "right" },
         { to: "/servers", label: "Servers", position: "right" },
         { to: "/partners", label: "Partners", position: "right" },
         {
@@ -241,6 +241,10 @@ const config: Config = {
               href: "https://discord.gg/samp",
             },
             {
+              label: "GitHub",
+              href: "https://github.com/openmultiplayer/open.mp",
+            },
+            {
               label: "YouTube",
               href: "https://youtube.com/openmultiplayer",
             },
@@ -254,12 +258,16 @@ const config: Config = {
           title: "More",
           items: [
             {
+              label: "Servers",
+              to: "/servers",
+            },
+            {
               label: "Blog",
               to: "/blog",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "SA-MP",
+              href: "https://sa-mp.mp/",
             },
           ],
         },
