@@ -177,11 +177,8 @@ const config: Config = {
           label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "right" },
-        {
-          to: "/servers",
-          label: "Servers",
-          position: "right",
-        },
+        { to: "/servers", label: "Servers", position: "right" },
+        { to: "/partners", label: "Partners", position: "right" },
         {
           type: "localeDropdown", // This adds the language switcher
           position: "right",
