@@ -113,18 +113,6 @@ function HomepageHeader() {
                 "button button--primary button--md",
                 styles.button
               )}
-              title="open.mp is released!"
-              to="https://github.com/openmultiplayer/open.mp/releases/latest"
-            >
-              Download open.mp (server) 🖥️
-            </Link>
-          </div>
-          <div className={clsx("margin-bottom--sm", styles.buttons)}>
-            <Link
-              className={clsx(
-                "button button--primary button--md",
-                styles.button
-              )}
               title="Download open.mp launcher"
               to="https://github.com/openmultiplayer/launcher/releases/latest"
             >
@@ -134,10 +122,22 @@ function HomepageHeader() {
           <div className={clsx("margin-bottom--sm", styles.buttons)}>
             <Link
               className={clsx(
+                "button button--primary button--md",
+                styles.button
+              )}
+              title="open.mp is released!"
+              to="https://github.com/openmultiplayer/open.mp/releases/latest"
+            >
+              Download open.mp (server) 🖥️
+            </Link>
+          </div>
+          <div className={clsx("margin-bottom--sm", styles.buttons)}>
+            <Link
+              className={clsx(
                 "button button--secondary button--md",
                 styles.button
               )}
-              to="/docs/intro"
+              to="/docs"
             >
               Documentations 📜
             </Link>
