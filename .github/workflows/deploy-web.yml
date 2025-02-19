@@ -1,23 +1,40 @@
-name: Fly Deploy Frontend
+name: Deploy Frontend
 
 on:
   push:
     branches:
       - master
 
-env:
-  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-
 jobs:
   deploy:
     name: Deploy frontend
-    runs-on: ubuntu-latest
+    runs-on:  macos-latest
     steps:
       - name: Cancel previous runs
         uses: styfle/cancel-workflow-action@0.12.1
         with:
           workflow_id: 42688838
           access_token: ${{ github.token }}
-      - uses: actions/checkout@v3
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only --config frontend.fly.toml
+
+      - uses: actions/checkout@v4
+
+      - name: Cache ~/.npm for npm ci
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node
+
+      - uses: AmyrAhmady/omp-web-cache@v1.0
+
+      - name: Build frontend
+        run: |
+          cd frontend
+          npm i
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: frontend/build
+          single-commit: true
