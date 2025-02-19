@@ -25,8 +25,6 @@ type Config struct {
 	DiscordClientID        string        `envconfig:"DISCORD_CLIENT_ID"        required:"true"`
 	DiscordClientSecret    string        `envconfig:"DISCORD_CLIENT_SECRET"    required:"true"`
 	GithubToken            string        `envconfig:"GITHUB_TOKEN"             required:"true"`
-	DocsSourcesPath        string        `envconfig:"DOCS_SOURCES_PATH"        required:"false" default:"docs/"`
-	DocsIndexPath          string        `envconfig:"DOCS_INDEX_PATH"          required:"false" default:"docs.bleve"`
 	PackagesDB             string        `envconfig:"PACKAGES_DB"              required:"false" default:"data/packages.db"`
 	CachedServers          string        `envconfig:"CACHED_SERVERS_FILE"      required:"false" default:"data/cachedServers.json"`
 	ServerScrapeInterval   time.Duration `envconfig:"SERVER_SCRAPE_INTERVAL"   required:"false" default:"30m"`

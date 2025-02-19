@@ -10,7 +10,6 @@ import (
 
 	"github.com/openmultiplayer/web/app/resources/server"
 	"github.com/openmultiplayer/web/app/resources/user"
-	"github.com/openmultiplayer/web/app/services/docsindex"
 	"github.com/openmultiplayer/web/app/transports/api/auth/discord"
 	"github.com/openmultiplayer/web/app/transports/api/auth/github"
 	"github.com/openmultiplayer/web/internal/web"
@@ -54,7 +53,6 @@ func main() {
 	convert("Error", "API", web.Error{})
 	convert("Server", "", server.All{})
 	convert("User", "", user.User{})
-	convert("SearchResult", "", docsindex.SearchResults{})
 
 	convert("GitHub", "", github.Link{}, github.Callback{})
 	convert("Discord", "", discord.Link{}, discord.Callback{})
