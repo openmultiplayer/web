@@ -1,8 +1,8 @@
 FROM node:20-alpine AS deps
 RUN apk add --no-cache libc6-compat git
 WORKDIR /app
-COPY frontend/package.json frontend/yarn.lock ./frontend/
-RUN cd frontend && yarn install --frozen-lockfile
+COPY frontend/package.json frontend/package-lock.json ./frontend/
+RUN cd frontend && npm install
 
 FROM node:20-alpine AS builder
 RUN apk add --no-cache git
@@ -10,7 +10,7 @@ WORKDIR /app
 # Copy everything 
 COPY . .
 COPY --from=deps /app/frontend/node_modules ./frontend/node_modules
-RUN cd frontend && yarn build && yarn install --production --ignore-scripts --prefer-offline
+RUN cd frontend && npm run build && npm ci --omit=dev --ignore-scripts --prefer-offline
 
 # Production image, copy all the files and run docusaurus
 FROM node:20-alpine AS runner
@@ -28,4 +28,4 @@ USER ompweb
 
 EXPOSE 3000
 
-CMD ["yarn", "serve"]
+CMD ["npm", "run serve"]
