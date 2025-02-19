@@ -12,7 +12,6 @@ import (
 
 	"github.com/openmultiplayer/web/app/services/authentication"
 	"github.com/openmultiplayer/web/app/transports/api/auth"
-	"github.com/openmultiplayer/web/app/transports/api/docs"
 	"github.com/openmultiplayer/web/app/transports/api/launcher"
 	"github.com/openmultiplayer/web/app/transports/api/legacy"
 	"github.com/openmultiplayer/web/app/transports/api/metrics"
@@ -27,7 +26,6 @@ func Build() fx.Option {
 	return fx.Options(
 		metrics.Build(),
 		auth.Build(),
-		docs.Build(),
 		legacy.Build(),
 		servers.Build(),
 		users.Build(),

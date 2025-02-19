@@ -20,4 +20,4 @@ jobs:
           access_token: ${{ github.token }}
       - uses: actions/checkout@v3
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only --depot=false --config frontend.fly.toml
+      - run: flyctl deploy --remote-only --config frontend.fly.toml
