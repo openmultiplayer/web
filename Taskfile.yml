@@ -39,10 +39,6 @@ tasks:
       # Also generate TypeScript type declarations from some backend structs.
       - go run types.go
 
-  docsindex:
-    cmds:
-      - go run ./cmd/indexbuilder/main.go
-
   migrate:
     cmds:
       - npx prisma migrate dev

@@ -1,30 +1,10 @@
-import { Heading, Spinner } from "@chakra-ui/react";
-import React, { FC } from "react";
+import React from "react";
 
-const LoadingBanner: FC = () => {
+const LoadingBanner = () => {
   return (
-    <section>
-      <Spinner
-        thickness="4px"
-        speed="0.65s"
-        emptyColor="gray.200"
-        color="purple.500"
-        size="xl"
-      />
-      <Heading fontStyle="italic" size="lg">
-        Following the damn train...
-      </Heading>
-
-      <style jsx>{`
-        section {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-          gap: 1em;
-        }
-      `}</style>
+    <section className="loading-banner">
+      <div className="loading-banner-spinner"></div>
+      <h2 className="loading-banner-heading">Following the damn train...</h2>
     </section>
   );
 };

@@ -29,9 +29,6 @@ ADD . .
 # Install prisma client code generation tool and generate prisma bindings
 RUN task generate
 
-# Build the docs search index
-RUN task docsindex
-
 # Build the server binary
 RUN task build
 

@@ -1,0 +1,48 @@
+---
+title: OnTrailerUpdate
+sidebar_label: OnTrailerUpdate
+description: This callback is called when a player sent a trailer update.
+tags: []
+---
+
+## คำอธิบาย
+
+This callback is called when a player sent a trailer update.
+
+| Name      | Description                                    |
+| --------- | ---------------------------------------------- |
+| playerid  | The ID of the player who sent a trailer update |
+| vehicleid | The Trailer being updated                      |
+
+## ส่งคืน
+
+0 - Cancels any trailer updates from being sent to other players. Update is still sent to the updating player.
+
+1 - Processes the trailer update as normal and synchronizes it between all players.
+
+มันถูกเรียกในฟิลเตอร์สคริปต์ก่อนเสมอ
+
+## ตัวอย่าง
+
+```c
+public OnTrailerUpdate(playerid, vehicleid)
+{
+    DetachTrailerFromVehicle(GetPlayerVehicleID(playerid));
+    return 0;
+}
+```
+
+## บันทึก
+
+:::warning
+
+This callback is called very frequently per second per trailer. You should refrain from implementing intensive calculations or intensive file writing/reading operations in this callback.
+
+:::
+
+## ฟังก์ชั่นที่เกี่ยวข้องกัน
+
+- [GetVehicleTrailer](../../scripting/functions/GetVehicleTrailer.md): Check what trailer a vehicle is pulling.
+- [IsTrailerAttachedToVehicle](../../scripting/functions/IsTrailerAttachedToVehicle.md): Check if a trailer is attached to a vehicle.
+- [AttachTrailerToVehicle](../../scripting/functions/AttachTrailerToVehicle.md): Attach a trailer to a vehicle.
+- [DetachTrailerFromVehicle](../../scripting/functions/DetachTrailerFromVehicle.md): Detach a trailer from a vehicle.

@@ -1,0 +1,43 @@
+---
+title: IsPlayerAttachedObjectSlotUsed
+sidebar_label: IsPlayerAttachedObjectSlotUsed
+description: Check if a player has an object attached in the specified index (slot).
+tags: ["player"]
+---
+
+## คำอธิบาย
+
+Check if a player has an object attached in the specified index (slot).
+
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | The ID of the player to check. |
+| index    | The index (slot) to check.     |
+
+## ส่งคืน
+
+1: The specified slot is used for an attached object.
+
+0: The specified slot is not in use for an attached object.
+
+## ตัวอย่าง
+
+```c
+stock CountAttachedObjects(playerid)
+{
+    new count;
+    for(new i = 0; i < MAX_PLAYER_ATTACHED_OBJECTS; i++)
+    {
+        if (IsPlayerAttachedObjectSlotUsed(playerid, i))
+        {
+            count++;
+        }
+    }
+    return count;
+}
+```
+
+## ฟังก์ชั่นที่เกี่ยวข้องกัน
+
+- [SetPlayerAttachedObject](../../scripting/functions/SetPlayerAttachedObject.md): Attach an object to a player
+- [RemovePlayerAttachedObject](../../scripting/functions/RemovePlayerAttachedObject.md): Remove an attached object from a player

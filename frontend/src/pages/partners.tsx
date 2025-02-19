@@ -1,79 +1,174 @@
-import { Box, Heading } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
-import ErrorBanner from "src/components/ErrorBanner";
-import { CardList } from "src/components/generic/CardList";
-import ServerRow from "src/components/listing/ServerRow";
-import LoadingBanner from "src/components/LoadingBanner";
-import { API_ADDRESS } from "src/config";
-import { Essential } from "src/types/_generated_Server";
-import useSWR from "swr";
+import Layout from "@theme/Layout";
+import { ReactNode, useEffect, useMemo, useState } from "react";
+import { FixedSizeList } from "react-window";
+import LoadingBanner from "../components/LoadingBanner";
+import ServerRow from "../components/ServerRow";
+import { ToastContainer } from "../components/Toast";
+import { API_ADDRESS } from "../constants";
+import { CoreServerData } from "../types";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
-const getServers = async (): Promise<Array<Essential>> => {
-  const r: Response = await fetch(API_SERVERS);
-  const servers: Array<Essential> = await r.json();
-  return servers;
+const getServers = async () => {
+  try {
+    const r: Response = await fetch(API_SERVERS);
+    const servers: CoreServerData[] = await r.json();
+    return servers;
+  } catch (e) {
+    return [];
+  }
 };
 
-const dataToList = (items: Essential[]) => {
-  return items
-    .filter((s: Essential) => {
-      return s.pr === true;
-    })
-    .map((s: Essential) => <ServerRow key={s.ip} server={s} />);
+type Stats = {
+  players: number;
+  servers: number;
 };
 
-const List = ({ data }: { data: Array<Essential> }) => {
-  return <CardList>{dataToList(data)}</CardList>;
+const getStats = (servers: CoreServerData[]): Stats => ({
+  players: servers.map((s) => s.pc).reduce((acc, pc) => acc + pc, 0),
+  servers: servers.length,
+});
+
+type SortBy = "relevance" | "pc";
+
+type Query = {
+  search?: string;
+  sort: SortBy;
 };
 
-const Page = () => {
-  const { data, error } = useSWR<Array<Essential>, TypeError>(
-    API_SERVERS,
-    getServers
+// Filters data
+const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
+  let filteredData = [...data];
+
+  if (q.search) {
+    const searchTerm = q.search.toLowerCase();
+    filteredData = filteredData.filter(
+      (s) =>
+        s.ip.toLowerCase().includes(searchTerm) ||
+        s.hn.toLowerCase().includes(searchTerm) ||
+        s.gm.toLowerCase().includes(searchTerm)
+    );
+  }
+
+  // Sorting Logic
+  if (q.sort === "pc") {
+    filteredData.sort((a, b) => b.pc - a.pc); // Sort by players, descending
+  }
+  //Relevance would be the original order
+
+  return filteredData;
+};
+
+const StatsComponent = ({ stats: { players, servers } }: { stats: Stats }) => {
+  return (
+    <div className="servers-center">
+      <p className="servers-stats">
+        <strong>{players}</strong> players on <strong>{servers}</strong> servers
+        with an average of <strong>{(players / servers).toFixed(1)}</strong>{" "}
+        players per server.
+      </p>
+    </div>
   );
-  if (error) {
-    return <ErrorBanner {...error} />;
-  }
-  if (!data) {
-    return <LoadingBanner />;
-  }
+};
+
+// List Component
+const List = ({ data }: { data: CoreServerData[] }) => {
+  const [search, setSearch] = useState("");
+  const [sort, setSort] = useState<SortBy>("relevance");
+
+  const filteredData = useMemo(() => {
+    return filterServers(data, {
+      search,
+      sort,
+    });
+  }, [data, search, sort]);
+
+  const rowHeight = 134;
+  const listHeight = 1000;
+  const visibleItems = Math.floor(listHeight / rowHeight);
+
+  const Row = ({ index, style }) => {
+    const server = filteredData[index];
+    return (
+      <div style={style}>
+        <ServerRow key={server.ip} server={server} />
+      </div>
+    );
+  };
 
   return (
-    <Box as="section" maxWidth="50em" margin="auto" padding="1em 2em">
-      <NextSeo
-        title="SA-MP Servers Index"
-        description="open.mp partners and beta testers"
-      />
+    <>
+      <form className="servers-list-form">
+        <div className="servers-controls">
+          <select
+            value={sort}
+            onChange={(e) => setSort(e.target.value as SortBy)}
+            className="servers-select"
+          >
+            <option value="relevance">Relevance</option>
+            <option value="pc">Players</option>
+          </select>
 
-      <Heading mb={"1em"}>Partners (BETA TESTERS)</Heading>
+          <input
+            type="text"
+            placeholder="Search by IP or Name"
+            name="search"
+            id="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="servers-search"
+          />
+        </div>
+      </form>
 
-      <Box py={4}>
-        <p>
-          Servers helping us in beta testing by running open.mp and reporting
-          bugs and issues are listed here. You can do the same by running your
-          server using open.mp and help us with finding bugs and issues; Then
-          tell us about your servers on{" "}
-          <a href="https://discord.gg/samp">our discord</a> so we can list them
-          here.
-        </p>
-        <p>
-          Those who are contributing to our community will have permanent perks
-          in future when we are releasing for public use and when our server
-          listing is ready.
-        </p>
-        <p>
-          <b>
-            Note: Partnership program is temporarily closed as we promised.
-            Servers reserving a slot can still join, but we do not take any new requests for now, if you are still interested,
-            you can ask your questions on our discord, but if it's about new ways of getting into the list, we do not have plans yet.
-          </b>
-        </p>
-      </Box>
+      <StatsComponent stats={getStats(data)} />
 
-      <List data={data} />
-    </Box>
+      <FixedSizeList
+        height={(filteredData.length + 1) * rowHeight}
+        width="100%"
+        itemSize={rowHeight}
+        itemCount={filteredData.length}
+        overscanCount={visibleItems}
+      >
+        {Row}
+      </FixedSizeList>
+    </>
+  );
+};
+
+const Page = (): ReactNode => {
+  const [loading, setLoading] = useState<boolean>(true);
+  const [data, setData] = useState<CoreServerData[]>([]);
+
+  useEffect(() => {
+    getServers().then((servers) => {
+      setLoading(false);
+      setData(servers.filter((server) => server.pr));
+    });
+  }, []);
+
+  return (
+    <div>
+      <Layout
+        title={`Servers`}
+        description="List of San Andreas servers using open.mp or SA-MP"
+      >
+        <section className="servers-container">
+          <p>
+            <b>
+              Note: The partnership program application is temporarily closed as
+              promised. Servers that have already reserved a slot can still
+              join, but we are not accepting new requests at this time. If you
+              have any questions, feel free to ask on our Discord. However, if
+              your question is about new ways to get on the list, we currently
+              have no plans for that.
+            </b>
+          </p>
+          {loading ? <LoadingBanner /> : <List data={data} />}
+        </section>
+      </Layout>
+      <ToastContainer />
+    </div>
   );
 };
 
