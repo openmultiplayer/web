@@ -24,6 +24,17 @@ const config: Config = {
   organizationName: "openmultiplayer", // Usually your GitHub org/user name.
   projectName: "web", // Usually your repo name.
 
+  future: {
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
+
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
   onBrokenAnchors: "ignore",
