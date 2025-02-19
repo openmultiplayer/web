@@ -1,10 +1,9 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
 import {
-  NormalizedSidebarItem,
-  SidebarItemsGeneratorArgs,
+  NormalizedSidebarItem
 } from "@docusaurus/plugin-content-docs/src/sidebars/types.js";
 import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -24,16 +23,16 @@ const config: Config = {
   organizationName: "openmultiplayer", // Usually your GitHub org/user name.
   projectName: "web", // Usually your repo name.
 
-  future: {
-    experimental_faster: {
-      swcJsLoader: true,
-      swcJsMinimizer: true,
-      swcHtmlMinimizer: true,
-      lightningCssMinimizer: true,
-      rspackBundler: true,
-      mdxCrossCompilerCache: true,
-    },
-  },
+  // future: {
+  //   experimental_faster: {
+  //     swcJsLoader: true,
+  //     swcJsMinimizer: true,
+  //     swcHtmlMinimizer: true,
+  //     lightningCssMinimizer: true,
+  //     rspackBundler: true,
+  //     mdxCrossCompilerCache: true,
+  //   },
+  // },
 
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
