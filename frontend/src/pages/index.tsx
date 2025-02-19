@@ -1,14 +1,13 @@
-import type { ReactNode } from "react";
-import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
+import Layout from "@theme/Layout";
 import Image from "@theme/ThemedImage";
+import clsx from "clsx";
+import type { ReactNode } from "react";
 
-import styles from "./index.module.css";
 import Admonition from "../components/Admonition";
+import styles from "./index.module.css";
 
 const socials = [
   {

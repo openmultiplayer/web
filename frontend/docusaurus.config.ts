@@ -190,7 +190,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "images/assets/docusaurus-social-card.jpg",
+    image: "images/assets/wordmark-coloured-bg.png",
     navbar: {
       title: "Open Multiplayer",
       logo: {
