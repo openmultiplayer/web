@@ -1,11 +1,11 @@
-*                                                                               @openmultiplayer/web
-/docs/translations/pt-BR/                                                       @pushline @itsneufox
-/docs/translations/id/                                                          @rsetiawan7 @SanityZeroPercent @flxzor
-/docs/translations/bs/                                                          @NermanLegacy @daddyDOT @GalardoDev
-/docs/translations/sr/                                                          @Trysha-rbrn
-/docs/translations/es/                                                          @Woscript @DestinyDragon49 @FreddieCrew @Fede5432
-/docs/translations/tl/                                                          @MySekwel
-/docs/translations/zh-tw/                                                       @SumiHeart
-/docs/translations/ar/                                                          @midosvt @ImOver00
-/docs/translations/sv/                                                          @fusez
-/docs/translations/vi/                                                          @PHATBENTRE
+*                                                                           @openmultiplayer/web
+/frontend/i18n/pt-BR/                                                       @pushline @itsneufox
+/frontend/i18n/id/                                                          @rsetiawan7 @SanityZeroPercent @flxzor
+/frontend/i18n/bs/                                                          @NermanLegacy @daddyDOT @GalardoDev
+/frontend/i18n/sr/                                                          @Trysha-rbrn
+/frontend/i18n/es/                                                          @Woscript @DestinyDragon49 @FreddieCrew @Fede5432
+/frontend/i18n/tl/                                                          @MySekwel
+/frontend/i18n/zh-tw/                                                       @SumiHeart
+/frontend/i18n/ar/                                                          @midosvt @ImOver00
+/frontend/i18n/sv/                                                          @fusez
+/frontend/i18n/vi/                                                          @PHATBENTRE
