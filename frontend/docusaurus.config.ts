@@ -1,6 +1,4 @@
-import {
-  NormalizedSidebarItem
-} from "@docusaurus/plugin-content-docs/src/sidebars/types.js";
+import { NormalizedSidebarItem } from "@docusaurus/plugin-content-docs/src/sidebars/types.js";
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
@@ -209,12 +207,17 @@ const config: Config = {
         { to: "/servers", label: "Servers", position: "right" },
         { to: "/partners", label: "Partners", position: "right" },
         {
-          type: "localeDropdown", // This adds the language switcher
+          href: "https://github.com/openmultiplayer",
+          label: "GitHub",
           position: "right",
         },
         {
-          href: "https://github.com/openmultiplayer",
-          label: "GitHub",
+          href: "https://opencollective.com/openmultiplayer",
+          label: "Donate",
+          position: "right",
+        },
+        {
+          type: "localeDropdown", // This adds the language switcher
           position: "right",
         },
       ],
@@ -255,6 +258,10 @@ const config: Config = {
               href: "https://github.com/openmultiplayer/open.mp",
             },
             {
+              label: "Donate",
+              href: "https://opencollective.com/openmultiplayer",
+            },
+            {
               label: "YouTube",
               href: "https://youtube.com/openmultiplayer",
             },
@@ -274,6 +281,10 @@ const config: Config = {
             {
               label: "Blog",
               to: "/blog",
+            },
+            {
+              label: "UID Generator",
+              to: "/uid",
             },
             {
               label: "SA-MP",
