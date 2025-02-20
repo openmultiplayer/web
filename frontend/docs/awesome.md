@@ -59,6 +59,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[mSelection](https://github.com/alextwothousand/mSelection)** - Same as eSelection, but different style.
 - **[RGB-Textdraw](https://github.com/adib-yg/SAMP-RGB-Textdraw)** - Adds RGB to textdraw.
 - **[LangPlus](https://github.com/mysy00/LangPlus)** - Multi-language library for open.mp servers.
+- **[beckzy's mod shops](https://beckzy.net/index.php?action=downloads;sa=view;id=41)** - An include for server side mod shops..
 
 ## Command Processors
 
