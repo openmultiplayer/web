@@ -162,7 +162,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/openmultiplayer/web/tree/master/frontend/",
+            "https://github.com/openmultiplayer/web/edit/master/frontend/",
         },
         blog: {
           showReadingTime: true,
@@ -173,7 +173,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/openmultiplayer/web/tree/master/frontend/blog",
+            "https://github.com/openmultiplayer/web/edit/master/frontend/blog",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -206,11 +206,11 @@ const config: Config = {
         { to: "https://forum.open.mp/", label: "Forums", position: "right" },
         { to: "/servers", label: "Servers", position: "right" },
         { to: "/partners", label: "Partners", position: "right" },
-        {
-          href: "https://github.com/openmultiplayer",
-          label: "GitHub",
-          position: "right",
-        },
+        // {
+        //   href: "https://github.com/openmultiplayer",
+        //   label: "GitHub",
+        //   position: "right",
+        // },
         {
           href: "https://opencollective.com/openmultiplayer",
           label: "Donate",
@@ -298,6 +298,24 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: "AOKXGK39Z7",
+
+      // Public API key: it is safe to commit it
+      apiKey: "54204f37e5c8fc2871052d595ee0505e",
+
+      indexName: "open",
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: "search",
+
+      // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+      insights: false,
     },
   } satisfies Preset.ThemeConfig,
 };
