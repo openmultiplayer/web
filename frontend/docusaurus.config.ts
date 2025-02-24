@@ -16,6 +16,9 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
+  // Remove trailing slash at the end, it's added by either the host or CF
+  trailingSlash: false,
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "openmultiplayer", // Usually your GitHub org/user name.
@@ -293,7 +296,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} open.mp, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} open.mp. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
