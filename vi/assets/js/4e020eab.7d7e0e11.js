@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkomp_web=self.webpackChunkomp_web||[]).push([[27908],{76410:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/vi/blog","page":1,"postsPerPage":10,"totalPages":2,"totalCount":13,"nextPage":"/vi/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
