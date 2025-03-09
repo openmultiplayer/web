@@ -736,3 +736,7 @@ html[data-theme="dark"] {
     padding: 0.5rem;
   }
 }
+
+.hash-link {
+  font-family: var(--ifm-font-family-base);
+}
