@@ -25,13 +25,13 @@ jobs:
       #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
       #     restore-keys: ${{ runner.os }}-node
 
-      - uses: AmyrAhmady/omp-web-cache@v1.0
+      # - uses: AmyrAhmady/omp-web-cache@v1.0
 
       - name: Build frontend
         run: |
           cd frontend
           npm i
-          npm run build
+          DOCUSAURUS_IGNORE_SSG_WARNINGS=true npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
