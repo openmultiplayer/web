@@ -18,12 +18,12 @@ jobs:
 
       - uses: actions/checkout@v4
 
-      - name: Cache ~/.npm for npm ci
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node
+      # - name: Cache ~/.npm for npm ci
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: ~/.npm
+      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      #     restore-keys: ${{ runner.os }}-node
 
       - uses: AmyrAhmady/omp-web-cache@v1.0
 
