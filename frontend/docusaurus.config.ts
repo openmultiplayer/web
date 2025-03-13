@@ -66,8 +66,8 @@ const config: Config = {
       "th",
       "tr",
       "vi",
-      "zh-cn",
-      "zh-tw",
+      "zh-CN",
+      "zh-TW",
     ],
   },
 
