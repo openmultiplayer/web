@@ -5,7 +5,7 @@ description: Штампа стринг у конзолу сервера (не у
 tags: ["console"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteSR />
 
 ## Опис
 
