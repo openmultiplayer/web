@@ -1,3 +1,10 @@
+---
+title: Увод
+sidebar_label: Увод
+description: Документација за open.mp и SA-MP модификације
+sidebar_position: 1
+---
+
 # SA-MP Вики и open.mp Документација
 
 Добродошли на SA-MP вики, који одржава open.mp тим и шира SA-MP заједница!
