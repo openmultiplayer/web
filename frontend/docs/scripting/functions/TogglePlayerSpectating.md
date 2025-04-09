@@ -9,10 +9,12 @@ tags: ["player"]
 
 Toggle whether a player is in spectator mode or not. While in spectator mode a player can spectate (watch) other players and vehicles. After using this function, either [PlayerSpectatePlayer](PlayerSpectatePlayer) or [PlayerSpectateVehicle](PlayerSpectateVehicle) needs to be used.
 
+## Parameters
+
 | Name        | Description                                       |
 | ----------- | ------------------------------------------------- |
-| playerid    | The ID of the player who should spectate          |
-| bool:toggle | 'true' to enable spectating and 'false to disable |
+| playerid    | The ID of the player who should spectate.          |
+| bool:toggle | **true** to enable spectating and **false** to disable. |
 
 ## Returns
 
