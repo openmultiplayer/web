@@ -12,8 +12,8 @@ This callback is called when the state of any [supported](../resources/keys) key
 | Name     | Description                                                                                   |
 | -------- | --------------------------------------------------------------------------------------------- |
 | playerid | The ID of the player that pressed or released a key.                                          |
-| newkeys  | A map (bitmask) of the keys currently held - [see here](../resources/keys)                    |
-| oldkeys  | A map (bitmask) of the keys held prior to the current change - [see here](../resources/keys). |
+| KEY:newkeys  | A map (bitmask) of the keys currently held - [see here](../resources/keys)                    |
+| KEY:oldkeys  | A map (bitmask) of the keys held prior to the current change - [see here](../resources/keys). |
 
 ## Returns
 
