@@ -161,7 +161,7 @@ const Home = (): JSX.Element => {
       description="A multiplayer mod for Grand Theft Auto: San Andreas that is fully backwards compatible with San Andreas Multiplayer"
     >
       <HomepageHeader />
-      <main>
+      <main className={styles.mainContainer}>
         <HomepageFeatures />
       </main>
     </Layout>

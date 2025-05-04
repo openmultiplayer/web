@@ -1,9 +1,8 @@
 .featuresSection {
   display: flex;
   align-items: center;
-  padding: 3rem 0;
+  padding: 0 0 3rem;
   width: 100%;
-
   background: none;
   position: relative;
   overflow: hidden;

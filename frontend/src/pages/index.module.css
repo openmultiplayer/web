@@ -1,12 +1,13 @@
 .heroBanner {
-  padding: 5rem 1.5rem 6rem;
+  padding: 5rem 1.5rem 0;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: none;
-  min-height: 80vh;
+  min-height: auto;
+  margin-bottom: 100px;
 }
 
 .announcement {
@@ -97,7 +98,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   animation: fadeIn 1s ease-out 0.6s both;
   max-width: 600px;
   width: 100%;
@@ -117,6 +118,10 @@
 .socialLink:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mainContainer {
+  margin-top: 0;
 }
 
 /* Animations */
@@ -145,8 +150,8 @@
 /* Responsive styles */
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 4rem 1.5rem 5rem;
-    min-height: auto;
+    padding: 4rem 1.5rem 0;
+    margin-bottom: 80px;
   }
   
   .heroContent {
@@ -177,7 +182,8 @@
 
 @media screen and (max-width: 768px) {
   .heroBanner {
-    padding: 3rem 1rem 4rem;
+    padding: 3rem 1rem 0;
+    margin-bottom: 60px;
   }
   
   .heroTitle {
