@@ -4,195 +4,160 @@ import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
 import Image from "@theme/ThemedImage";
 import clsx from "clsx";
-import type { ReactNode } from "react";
 
 import Admonition from "../components/Admonition";
 import styles from "./index.module.css";
 
 const socials = [
   {
-    alt: "discord icon",
+    alt: "Discord icon",
     src: "/images/assets/discord-icon.svg",
     href: "https://discord.com/invite/samp",
     size: 45,
   },
   {
-    alt: "facebook icon",
+    alt: "Facebook icon",
     src: "/images/assets/facebook.svg",
     href: "https://www.facebook.com/openmultiplayer",
     size: 33,
   },
   {
-    alt: "instagram icon",
+    alt: "Instagram icon",
     src: "/images/assets/instagram.svg",
     href: "https://instagram.com/openmultiplayer/",
     size: 33,
   },
   {
-    alt: "twitch icon",
+    alt: "Twitch icon",
     src: "/images/assets/twitch.svg",
     href: "https://twitch.tv/openmultiplayer",
     size: 29,
   },
   {
-    alt: "x icon",
+    alt: "X (formerly Twitter) icon",
     src: "/images/assets/x.svg",
     href: "https://x.com/openmultiplayer",
     size: 29,
-    background: false,
   },
   {
-    alt: "youtube icon",
+    alt: "YouTube icon",
     src: "/images/assets/youtube.svg",
     href: "https://youtube.com/openmultiplayer",
     size: 35,
   },
 ];
 
-function HomepageHeader() {
+const HomepageHeader = () => {
+
+  const SocialIcons = () => {
+    return (
+      <div className={styles.socialLinks}>
+        {socials.map((social, index) => (
+          <a 
+            key={index} 
+            href={social.href} 
+            className={styles.socialLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={social.alt}
+          >
+            <Image
+              sources={{ 
+                light: social.src, 
+                dark: social.src 
+              }}
+              alt={social.alt}
+              width={social.size}
+              height={social.size}
+              className={styles.socialIcon}
+            />
+          </a>
+        ))}
+      </div>
+    );
+  };
+
   return (
-    <header className={clsx(styles.heroBanner)}>
+    <header className={styles.heroBanner}>
+      
       <Admonition
-        className="container"
+        className={styles.announcement}
         type="tip"
         title="A new version of open.mp server and launcher is out now!"
       >
         Version <b>1.4.0.2779</b> of open.mp server is out with many fixes,
         performance boosts, and new features!{" "}
-        <Link to="https://www.open.mp/docs/changelog">Changelog</Link> |{" "}
-        <Link to="https://github.com/openmultiplayer/open.mp/releases/latest">
+        <Link 
+          to="https://www.open.mp/docs/changelog" 
+          className={styles.enhancedLink}
+        >
+          Changelog
+        </Link> |{" "}
+        <Link 
+          to="https://github.com/openmultiplayer/open.mp/releases/latest"
+          className={styles.enhancedLink}
+        >
           Download
         </Link>
         .
         <br />
         The launcher also got an update!{" "}
-        <Link to="https://github.com/openmultiplayer/launcher/releases/latest">
+        <Link 
+          to="https://github.com/openmultiplayer/launcher/releases/latest"
+          className={styles.enhancedLink}
+        >
           See what's new
         </Link>
         .
       </Admonition>
-      <div
-        className="row"
-        style={{ justifyContent: "space-evenly", alignItems: "center" }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            marginRight: 0,
-            marginLeft: 0,
-            maxWidth: 600,
-          }}
-        >
-          <Heading as="h1" className="hero__title" style={{ color: "#9083d2" }}>
+      
+      <div className={styles.heroContent}>
+        <div className={styles.heroText}>
+          <Heading as="h1" className={styles.heroTitle}>
             Open Multiplayer
           </Heading>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "flex-start",
-              flexDirection: "column",
-            }}
+          <p className={styles.heroDescription}>
+            A brand new multiplayer mod for Grand Theft Auto: San Andreas that
+            is <b>fully backwards compatible</b> with{" "}
+            <b>San Andreas Multiplayer</b>.
+          </p>
+        </div>
+        
+        <div className={styles.heroButtons}>
+          <Link
+            className={clsx("button button--primary button--lg", styles.button)}
+            title="Download open.mp launcher"
+            to="https://github.com/openmultiplayer/launcher/releases/latest"
           >
-            <p style={{ fontSize: "1.25rem" }}>
-              A brand new multiplayer mod for Grand Theft Auto: San Andreas that
-              is <b>fully backwards compatible</b> with{" "}
-              <b>San Andreas Multiplayer</b>.
-            </p>
-          </div>
-        </div>
-        <div
-          style={{
-            justifyContent: "space-evenly",
-          }}
-        >
-          <div className={clsx("margin-bottom--sm", styles.buttons)}>
-            <Link
-              className={clsx(
-                "button button--primary button--md",
-                styles.button
-              )}
-              title="Download open.mp launcher"
-              to="https://github.com/openmultiplayer/launcher/releases/latest"
-            >
-              Download open.mp launcher 🎮
-            </Link>
-          </div>
-          <div className={clsx("margin-bottom--sm", styles.buttons)}>
-            <Link
-              className={clsx(
-                "button button--primary button--md",
-                styles.button
-              )}
-              title="open.mp is released!"
-              to="https://github.com/openmultiplayer/open.mp/releases/latest"
-            >
-              Download open.mp (server) 🖥️
-            </Link>
-          </div>
-          <div className={clsx("margin-bottom--sm", styles.buttons)}>
-            <Link
-              className={clsx(
-                "button button--secondary button--md",
-                styles.button
-              )}
-              to="/docs"
-            >
-              Documentations 📜
-            </Link>
-          </div>
+            Download Launcher 🎮
+          </Link>
+          
+          <Link
+            className={clsx("button button--primary button--lg", styles.button)}
+            title="open.mp is released!"
+            to="https://github.com/openmultiplayer/open.mp/releases/latest"
+          >
+            Download Server 🖥️
+          </Link>
+          
+          <Link
+            className={clsx("button button--secondary button--lg", styles.button)}
+            to="/docs"
+          >
+            Documentation 📜
+          </Link>
         </div>
       </div>
-      <div
-        className="row margin-horiz--none margin-top--xl"
-        style={{
-          justifyContent: "center",
-        }}
-      >
-        {socials.map((social, index) => {
-          const iconSize = `${social.size}px`;
-          const style: React.CSSProperties = {
-            display: "flex",
-            justifyContent: "center",
-            ...(social.background && {
-              backgroundColor: "#9083d2",
-              width: `${social.size + 17}px`,
-              height: `${social.size + 17}px`,
-              borderRadius: 5,
-            }),
-          };
-
-          return (
-            <div
-              style={{
-                width: 70,
-                height: 70,
-                alignItems: "center",
-                justifyContent: "center",
-                display: "flex",
-              }}
-            >
-              <a key={index} href={social.href} style={style} target="__blank">
-                <Image
-                  sources={{ light: social.src, dark: social.src }}
-                  alt={social.alt}
-                  width={iconSize}
-                  height={iconSize}
-                />
-              </a>
-            </div>
-          );
-        })}
-      </div>
+      
+      <SocialIcons />
     </header>
   );
-}
+};
 
-export default function Home(): ReactNode {
+const Home = (): JSX.Element => {
   return (
     <Layout
-      title={`Open Multiplayer`}
+      title="Open Multiplayer"
       description="A multiplayer mod for Grand Theft Auto: San Andreas that is fully backwards compatible with San Andreas Multiplayer"
     >
       <HomepageHeader />
@@ -201,4 +166,6 @@ export default function Home(): ReactNode {
       </main>
     </Layout>
   );
-}
+};
+
+export default Home;
