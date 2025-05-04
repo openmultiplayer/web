@@ -1,26 +1,217 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
+  padding: 5rem 1.5rem 0;
   position: relative;
   overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background: none;
+  min-height: auto;
+  margin-bottom: 100px;
+}
+
+.announcement {
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.6s ease-out;
+}
+
+.enhancedLink {
+  color: var(--ifm-color-primary-darker);
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.enhancedLink:hover {
+  color: var(--ifm-color-primary-darkest);
+  text-decoration: underline;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.heroTitle {
+  color: #9083d2;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  animation: fadeIn 1s ease-out;
+}
+
+.heroDescription {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-800);
+  animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.heroButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: fadeIn 1s ease-out 0.4s both;
 }
 
 .button {
-  width: 300px;
+  width: 320px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.socialIcon {
+  filter: brightness(0) invert(1);
+}
+
+.socialLinks {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+  animation: simpleFadeIn 1s ease-out 0.6s both;
+  max-width: 600px;
+  width: 100%;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background-color: #9083d2;
+}
+
+.socialLink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mainContainer {
+  margin-top: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes simpleFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 1.5rem 0;
+    margin-bottom: 80px;
+  }
+  
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .heroText {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+  }
+  
+  .button {
+    width: 100%;
+  }
+  
+  .heroButtons {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 3rem 1rem 0;
+    margin-bottom: 60px;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.25rem;
+  }
+  
+  .socialLinks {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile so we can avoid the icons making a line break*/
+    max-width: 300px;
+    gap: 1rem;
+  }
+  
+  .socialLink {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
 }

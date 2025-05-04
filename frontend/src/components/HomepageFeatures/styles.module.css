@@ -1,11 +1,131 @@
-.features {
+.featuresSection {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0 0 3rem;
   width: 100%;
+  background: none;
+  position: relative;
+  overflow: hidden;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featuresRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  flex: 1 1 calc(50% - 2rem);
+  min-width: 280px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--ifm-card-background-color);
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featureItem:nth-child(1) { animation-delay: 0.1s; }
+.featureItem:nth-child(2) { animation-delay: 0.2s; }
+.featureItem:nth-child(3) { animation-delay: 0.3s; }
+.featureItem:nth-child(4) { animation-delay: 0.4s; }
+
+.featureImageContainer {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--ifm-color-primary-lightest);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureImage {
+  height: auto;
+  width: 100%;
+  max-width: 70px;
+  object-fit: contain;
+}
+
+.featureContent {
+  text-align: center;
+  padding: 0 1rem;
+  flex-grow: 1;
+}
+
+.featureContent h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+  color: var(--ifm-color-primary);
+}
+
+.featureContent p {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+.featureFooter {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  transition: all 0.2s ease-in-out;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .featureItem {
+    flex: 1 1 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .featuresRow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .featureImageContainer {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .featureContent h3 {
+    font-size: 1.25rem;
+  }
 }
