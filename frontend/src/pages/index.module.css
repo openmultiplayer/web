@@ -1,11 +1,11 @@
- .heroBanner {
+.heroBanner {
   padding: 5rem 1.5rem 6rem;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: none; /* Remove gradient */
+  background: none;
   min-height: 80vh;
 }
 
@@ -189,7 +189,7 @@
   }
   
   .socialLinks {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile so we can avoid the icons making a line break*/
     max-width: 300px;
     gap: 1rem;
   }
@@ -197,6 +197,6 @@
   .socialLink {
     width: 60px;
     height: 60px;
-    margin: 0 auto; /* Center the icons in their grid cells */
+    margin: 0 auto;
   }
 }
