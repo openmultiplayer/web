@@ -4,6 +4,7 @@ import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
 import Image from "@theme/ThemedImage";
 import clsx from "clsx";
+import { useState } from "react";
 
 import Admonition from "../components/Admonition";
 import styles from "./index.module.css";
@@ -47,69 +48,87 @@ const socials = [
   },
 ];
 
-const HomepageHeader = () => {
+const SocialIcons = () => {
+  return (
+    <div className={styles.socialLinks}>
+      {socials.map((social, index) => (
+        <a 
+          key={index} 
+          href={social.href} 
+          className={styles.socialLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={social.alt}
+        >
+          <Image
+            sources={{ 
+              light: social.src, 
+              dark: social.src 
+            }}
+            alt={social.alt}
+            width={social.size}
+            height={social.size}
+            className={styles.socialIcon}
+          />
+        </a>
+      ))}
+    </div>
+  );
+};
 
-  const SocialIcons = () => {
-    return (
-      <div className={styles.socialLinks}>
-        {socials.map((social, index) => (
-          <a 
-            key={index} 
-            href={social.href} 
-            className={styles.socialLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={social.alt}
-          >
-            <Image
-              sources={{ 
-                light: social.src, 
-                dark: social.src 
-              }}
-              alt={social.alt}
-              width={social.size}
-              height={social.size}
-              className={styles.socialIcon}
-            />
-          </a>
-        ))}
-      </div>
-    );
+const HomepageHeader = () => {
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
+
+  const closeAnnouncement = () => {
+    setShowAnnouncement(false);
   };
 
   return (
     <header className={styles.heroBanner}>
       
-      <Admonition
-        className={styles.announcement}
-        type="tip"
-        title="A new version of open.mp server and launcher is out now!"
-      >
-        Version <b>1.4.0.2779</b> of open.mp server is out with many fixes,
-        performance boosts, and new features!{" "}
-        <Link 
-          to="https://www.open.mp/docs/changelog" 
-          className={styles.enhancedLink}
-        >
-          Changelog
-        </Link> |{" "}
-        <Link 
-          to="https://github.com/openmultiplayer/open.mp/releases/latest"
-          className={styles.enhancedLink}
-        >
-          Download
-        </Link>
-        .
-        <br />
-        The launcher also got an update!{" "}
-        <Link 
-          to="https://github.com/openmultiplayer/launcher/releases/latest"
-          className={styles.enhancedLink}
-        >
-          See what's new
-        </Link>
-        .
-      </Admonition>
+      {showAnnouncement && (
+        <div className={styles.announcementWrapper}>
+          <Admonition
+            className={styles.announcement}
+            type="tip"
+            title="A new version of open.mp server and launcher is out now!"
+          >
+            Version <b>1.4.0.2779</b> of open.mp server is out with many fixes,
+            performance boosts, and new features!{" "}
+            <Link 
+              to="https://www.open.mp/docs/changelog" 
+              className={styles.enhancedLink}
+            >
+              Changelog
+            </Link> |{" "}
+            <Link 
+              to="https://github.com/openmultiplayer/open.mp/releases/latest"
+              className={styles.enhancedLink}
+            >
+              Download
+            </Link>
+            .
+            <br />
+            The launcher also got an update!{" "}
+            <Link 
+              to="https://github.com/openmultiplayer/launcher/releases/latest"
+              className={styles.enhancedLink}
+            >
+              See what's new
+            </Link>
+            .
+            <div className={styles.dismissContainer}>
+              <button 
+                onClick={closeAnnouncement} 
+                className={styles.dismissButton}
+                aria-label="Dismiss announcement"
+              >
+                Dismiss this message
+              </button>
+            </div>
+          </Admonition>
+        </div>
+      )}
       
       <div className={styles.heroContent}>
         <div className={styles.heroText}>
