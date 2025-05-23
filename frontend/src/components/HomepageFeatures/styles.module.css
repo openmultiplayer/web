@@ -86,16 +86,17 @@
 }
 
 .button {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
-  border-radius: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  text-align: center;
 }
 
 .button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeInUp {
