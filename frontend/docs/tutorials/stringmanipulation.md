@@ -119,7 +119,7 @@ message_3[4] = 'o';
 message_3[5] = '\0';
 ```
 
-There, we assigned for each slot on the `message_3` array a character, this won’t work if you were to declare a sting with no definitive size, note that to represent a single character, it ought to be written between two single quotations (`'`), also, notice how we started with slot 0, and it’s only natural, considering how I emphasised on how a string is an array of characters, meaning, that the first slot is always 0, and the last one is its size minus 1 (_the null character does not count_), which in this case is 4, counting from 0 to 4, that makes it 5 characters, with the sixth being the null terminator, more on that comes later.
+There, we assigned for each slot on the `message_3` array a character, this won’t work if you were to declare a string with no definitive size, note that to represent a single character, it ought to be written between two single quotations (`'`), also, notice how we started with slot 0, and it’s only natural, considering how I emphasised on how a string is an array of characters, meaning, that the first slot is always 0, and the last one is its size minus 1 (_the null character does not count_), which in this case is 4, counting from 0 to 4, that makes it 5 characters, with the sixth being the null terminator, more on that comes later.
 
 You can also assign strings numbers which will be viewed as **ASCII** (_a system representing character numerically, it covers 128 characters ranging from 0 to 127, more on that [here](https://en.wikipedia.org/wiki/ASCII)_) code for a character, the same message “_Hello_” can be assigned using _ASCII_ code like this;
 
