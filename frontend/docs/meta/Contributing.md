@@ -10,7 +10,7 @@ If you want to help maintain a specific language, open a PR against the [`CODEOW
 
 ## Editing Content
 
-On each page, there's a button that takes you to the GitHub page for editing:
+On the bottom of each page, there's a button that takes you to the GitHub page for editing:
 
 ![Edit this page link present on each wiki page](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
