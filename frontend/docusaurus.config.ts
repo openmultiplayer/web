@@ -25,12 +25,18 @@ const config: Config = {
   projectName: "web", // Usually your repo name.
 
   future: {
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+      useCssCascadeLayers: true,
+    },
     experimental_faster: {
       swcJsLoader: true,
       swcJsMinimizer: true,
       swcHtmlMinimizer: true,
       lightningCssMinimizer: true,
       rspackBundler: true,
+      rspackPersistentCache: true,
+      ssgWorkerThreads: true,
       mdxCrossCompilerCache: true,
     },
   },
