@@ -4,9 +4,8 @@ title: DB\_GetFieldName
 sidebar\_label: DB\_GetFieldName
 description: Retorna o nome do campo no índice especificado.
 keywords:
-
-* sqlite
-  tags: \["sqlite"]
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

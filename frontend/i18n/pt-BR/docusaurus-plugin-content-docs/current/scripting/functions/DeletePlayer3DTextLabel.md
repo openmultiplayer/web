@@ -4,7 +4,7 @@ title: DeletePlayer3DTextLabel
 sidebar\_label: DeletePlayer3DTextLabel
 description: Apaga um texto 3D criado com CreatePlayer3DTextLabel.
 tags: \["player", "3dtextlabel"]
---------------------------------
+---
 
 ## descrição
 

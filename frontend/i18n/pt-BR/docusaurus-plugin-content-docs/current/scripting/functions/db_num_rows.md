@@ -4,9 +4,8 @@ title: db\_num\_rows
 sidebar\_label: db\_num\_rows
 description: Retorna o número de linhas de um resultado obtido com `db_query`.
 keywords:
-
-* sqlite
-
+  - sqlite
+tags: ["sqlite"]
 ---
 
 ## descrição

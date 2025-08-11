@@ -4,8 +4,8 @@ title: db\_query
 sidebar\_label: db\_query
 description: Executa uma consulta SQL numa base de dados SQLite já aberta.
 keywords:
-
-* sqlite
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

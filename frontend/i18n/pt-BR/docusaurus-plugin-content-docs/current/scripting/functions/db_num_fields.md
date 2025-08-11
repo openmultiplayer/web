@@ -4,8 +4,8 @@ title: db\_num\_fields
 sidebar\_label: db\_num\_fields
 description: Obtém o número de campos do conjunto de resultados obtido com `db_query`.
 keywords:
-
-* sqlite
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

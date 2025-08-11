@@ -4,6 +4,7 @@ sidebar_label: db_get_result_mem_handle
 description: Obtém o handle de memória para um conjunto de resultados de banco de dados SQLite que foi alocado com `db_query`.
 keywords:
   - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

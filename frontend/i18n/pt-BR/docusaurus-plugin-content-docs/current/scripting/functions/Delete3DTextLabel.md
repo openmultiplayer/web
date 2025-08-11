@@ -4,7 +4,7 @@ title: Delete3DTextLabel
 sidebar\_label: Delete3DTextLabel
 description: Apaga um texto 3D (criado com Create3DTextLabel).
 tags: \["3dtextlabel"]
-----------------------
+---
 
 ## descrição
 

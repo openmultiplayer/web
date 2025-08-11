@@ -4,7 +4,7 @@ title: DestroyMenu
 sidebar\_label: DestroyMenu
 description: Destroi o menu especificado.
 tags: \["menu"]
----------------
+---
 
 ## descrição
 
