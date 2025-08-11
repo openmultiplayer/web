@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Destroi um veículo. Ele desaparecerá instantaneamente.
+Destrói um veículo. Ele desaparecerá instantaneamente.
 
 | Nome      | Descrição                        |
 | --------- | -------------------------------- |
