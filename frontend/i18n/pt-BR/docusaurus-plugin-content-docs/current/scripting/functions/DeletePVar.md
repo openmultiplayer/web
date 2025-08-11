@@ -1,9 +1,9 @@
 ---
 
 title: DeletePVar
-sidebar\_label: DeletePVar
+sidebar_label: DeletePVar
 description: Apaga uma variável de jogador definida anteriormente.
-tags: \["player variable", "pvar"]
+tags: ["player variable", "pvar"]
 ---
 
 ## descrição
@@ -13,7 +13,7 @@ Apaga uma variável de jogador que foi definida antes.
 | Nome          | Descrição                                 |
 | ------------- | ----------------------------------------- |
 | playerid      | ID do jogador cuja variável será apagada. |
-| const pvar\[] | Nome da variável do jogador a apagar.     |
+| const pvar[] | Nome da variável do jogador a apagar.     |
 
 ## retorno
 

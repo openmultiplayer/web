@@ -1,9 +1,9 @@
 ---
 
 title: deleteproperty
-sidebar\_label: deleteproperty
+sidebar_label: deleteproperty
 description: Apaga uma propriedade definida anteriormente (setproperty).
-tags: \["core", "property"]
+tags: ["core", "property"]
 ---
 
 <LowercaseNote />
@@ -15,7 +15,7 @@ Apaga uma propriedade definida anteriormente com [setproperty](setproperty).
 | Nome    | Descrição                                                                                               |
 | ------- | ------------------------------------------------------------------------------------------------------- |
 | id      | Máquina virtual a usar. Deve manter-se como zero. *(opcional=0)*                                        |
-| name\[] | Nome da propriedade. Deve deixar-se em branco ("").                                                     |
+| name[] | Nome da propriedade. Deve deixar-se em branco ("").                                                     |
 | value   | ID único da propriedade. Use uma função hash para calcular a partir de uma string. *(opcional=cellmin)* |
 
 ## retorno

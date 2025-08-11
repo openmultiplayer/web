@@ -1,7 +1,7 @@
 ---
 
-title: DB\_GetFieldName
-sidebar\_label: DB\_GetFieldName
+title: DB_GetFieldName
+sidebar_label: DB_GetFieldName
 description: Retorna o nome do campo no índice especificado.
 keywords:
   - sqlite
@@ -15,9 +15,9 @@ Retorna o nome de um campo em um índice específico.
 
 | Nome                  | Descrição                                                                            |
 | --------------------- | ------------------------------------------------------------------------------------ |
-| DBResult\:result      | Resultado de onde obter os dados; retornado por [DB\_ExecuteQuery](DB_ExecuteQuery). |
+| DBResult:result      | Resultado de onde obter os dados; retornado por [DB_ExecuteQuery](DB_ExecuteQuery). |
 | field                 | Índice do campo para obter o nome.                                                   |
-| output\[]             | Variável onde o nome será armazenado.                                                |
+| output[]             | Variável onde o nome será armazenado.                                                |
 | size = sizeof(output) | Tamanho máximo do nome do campo.                                                     |
 
 ## Retorno
@@ -71,21 +71,21 @@ public OnGameModeExit()
 
 ## Funções Relacionadas
 
-* [DB\_Open](DB_Open): Abre conexão com banco SQLite
-* [DB\_Close](DB_Close): Fecha conexão com banco SQLite
-* [DB\_ExecuteQuery](DB_ExecuteQuery): Executa consulta no banco
-* [DB\_FreeResultSet](DB_FreeResultSet): Libera memória do resultado
-* [DB\_GetRowCount](DB_GetRowCount): Obtém número de linhas do resultado
-* [DB\_SelectNextRow](DB_SelectNextRow): Avança para próxima linha
-* [DB\_GetFieldCount](DB_GetFieldCount): Obtém número de campos do resultado
-* [DB\_GetFieldName](DB_GetFieldName): Retorna nome do campo pelo índice
-* [DB\_GetFieldString](DB_GetFieldString): Obtém conteúdo do campo pelo índice
-* [DB\_GetFieldStringByName](DB_GetFieldStringByName): Obtém conteúdo do campo pelo nome
-* [DB\_GetFieldInt](DB_GetFieldInt): Obtém conteúdo do campo como inteiro pelo índice
-* [DB\_GetFieldIntByName](DB_GetFieldIntByName): Obtém conteúdo do campo como inteiro pelo nome
-* [DB\_GetFieldFloat](DB_GetFieldFloat): Obtém conteúdo do campo como float pelo índice
-* [DB\_GetFieldFloatByName](DB_GetFieldFloatByName): Obtém conteúdo do campo como float pelo nome
-* [DB\_GetMemHandle](DB_GetMemHandle): Obtém handle de memória do banco aberto com DB\_Open
-* [DB\_GetLegacyDBResult](DB_GetLegacyDBResult): Obtém handle de memória do resultado DB\_ExecuteQuery
-* [DB\_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): Número de conexões abertas
-* [DB\_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): Número de resultados abertos
+* [DB_Open](DB_Open): Abre conexão com banco SQLite
+* [DB_Close](DB_Close): Fecha conexão com banco SQLite
+* [DB_ExecuteQuery](DB_ExecuteQuery): Executa consulta no banco
+* [DB_FreeResultSet](DB_FreeResultSet): Libera memória do resultado
+* [DB_GetRowCount](DB_GetRowCount): Obtém número de linhas do resultado
+* [DB_SelectNextRow](DB_SelectNextRow): Avança para próxima linha
+* [DB_GetFieldCount](DB_GetFieldCount): Obtém número de campos do resultado
+* [DB_GetFieldName](DB_GetFieldName): Retorna nome do campo pelo índice
+* [DB_GetFieldString](DB_GetFieldString): Obtém conteúdo do campo pelo índice
+* [DB_GetFieldStringByName](DB_GetFieldStringByName): Obtém conteúdo do campo pelo nome
+* [DB_GetFieldInt](DB_GetFieldInt): Obtém conteúdo do campo como inteiro pelo índice
+* [DB_GetFieldIntByName](DB_GetFieldIntByName): Obtém conteúdo do campo como inteiro pelo nome
+* [DB_GetFieldFloat](DB_GetFieldFloat): Obtém conteúdo do campo como float pelo índice
+* [DB_GetFieldFloatByName](DB_GetFieldFloatByName): Obtém conteúdo do campo como float pelo nome
+* [DB_GetMemHandle](DB_GetMemHandle): Obtém handle de memória do banco aberto com DB_Open
+* [DB_GetLegacyDBResult](DB_GetLegacyDBResult): Obtém handle de memória do resultado DB_ExecuteQuery
+* [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): Número de conexões abertas
+* [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): Número de resultados abertos

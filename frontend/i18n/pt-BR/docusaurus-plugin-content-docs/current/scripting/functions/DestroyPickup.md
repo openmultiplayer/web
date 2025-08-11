@@ -1,9 +1,9 @@
 ---
 
 title: DestroyPickup
-sidebar\_label: DestroyPickup
+sidebar_label: DestroyPickup
 description: Destroi um pickup criado com CreatePickup.
-tags: \["pickup"]
+tags: ["pickup"]
 ---
 
 ## descrição

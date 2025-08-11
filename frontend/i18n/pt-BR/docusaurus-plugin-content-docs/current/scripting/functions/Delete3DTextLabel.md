@@ -1,9 +1,9 @@
 ---
 
 title: Delete3DTextLabel
-sidebar\_label: Delete3DTextLabel
+sidebar_label: Delete3DTextLabel
 description: Apaga um texto 3D (criado com Create3DTextLabel).
-tags: \["3dtextlabel"]
+tags: ["3dtextlabel"]
 ---
 
 ## descrição
@@ -12,7 +12,7 @@ Apaga um texto 3D criado com [Create3DTextLabel](Create3DTextLabel).
 
 | Nome           | Descrição                  |
 | -------------- | -------------------------- |
-| Text3D\:textid | O ID do texto 3D a apagar. |
+| Text3D:textid | O ID do texto 3D a apagar. |
 
 ## retorno
 

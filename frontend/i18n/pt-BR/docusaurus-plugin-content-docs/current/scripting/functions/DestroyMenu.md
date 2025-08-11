@@ -1,9 +1,9 @@
 ---
 
 title: DestroyMenu
-sidebar\_label: DestroyMenu
+sidebar_label: DestroyMenu
 description: Destroi o menu especificado.
-tags: \["menu"]
+tags: ["menu"]
 ---
 
 ## descrição
@@ -12,7 +12,7 @@ Destrói o menu indicado.
 
 | Nome         | Descrição               |
 | ------------ | ----------------------- |
-| Menu\:menuid | O ID do menu a destruir |
+| Menu:menuid | O ID do menu a destruir |
 
 ## retorno
 
