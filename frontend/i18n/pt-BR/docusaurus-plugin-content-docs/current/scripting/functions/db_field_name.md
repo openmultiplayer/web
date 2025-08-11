@@ -4,6 +4,7 @@ sidebar_label: db_field_name
 description: Retorna o nome do campo no índice especificado.
 keywords:
   - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

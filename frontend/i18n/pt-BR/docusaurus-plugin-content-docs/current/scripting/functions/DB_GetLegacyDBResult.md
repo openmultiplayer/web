@@ -4,9 +4,8 @@ title: DB\_GetLegacyDBResult
 sidebar\_label: DB\_GetLegacyDBResult
 description: Obtém o handle de memória para um conjunto de resultados SQLite alocado com `DB_ExecuteQuery`.
 keywords:
-
-* sqlite
-  tags: \["sqlite"]
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

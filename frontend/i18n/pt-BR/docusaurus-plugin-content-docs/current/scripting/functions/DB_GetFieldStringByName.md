@@ -4,9 +4,8 @@ title: DB\_GetFieldStringByName
 sidebar\_label: DB\_GetFieldStringByName
 description: Obtém o conteúdo do campo como string pelo nome do campo.
 keywords:
-
-* sqlite
-  tags: \["sqlite"]
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

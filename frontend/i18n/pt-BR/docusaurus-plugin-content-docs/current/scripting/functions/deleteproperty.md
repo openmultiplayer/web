@@ -4,7 +4,7 @@ title: deleteproperty
 sidebar\_label: deleteproperty
 description: Apaga uma propriedade definida anteriormente (setproperty).
 tags: \["core", "property"]
----------------------------
+---
 
 <LowercaseNote />
 

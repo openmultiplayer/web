@@ -4,8 +4,8 @@ title: db\_next\_row
 sidebar\_label: db\_next\_row
 description: Avança para a próxima linha do conjunto de resultados obtido com `db_query`.
 keywords:
-
-* sqlite
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

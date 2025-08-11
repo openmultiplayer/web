@@ -4,9 +4,8 @@ title: DB\_GetFieldString
 sidebar\_label: DB\_GetFieldString
 description: Obtém o conteúdo de um campo a partir de DB\_ExecuteQuery.
 keywords:
-
-* sqlite
-  tags: \["sqlite"]
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

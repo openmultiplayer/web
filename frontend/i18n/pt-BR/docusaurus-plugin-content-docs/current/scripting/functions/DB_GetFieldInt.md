@@ -4,9 +4,8 @@ title: DB\_GetFieldInt
 sidebar\_label: DB\_GetFieldInt
 description: Obtém o conteúdo de um campo como um número inteiro a partir de DB\_ExecuteQuery.
 keywords:
-
-* sqlite
-  tags: \["sqlite"]
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

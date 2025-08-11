@@ -4,9 +4,8 @@ title: DB\_GetFieldIntByName
 sidebar\_label: DB\_GetFieldIntByName
 description: Obtém o conteúdo de um campo como um número inteiro com o nome do campo especificado.
 keywords:
-
-* sqlite
-  tags: \["sqlite"]
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

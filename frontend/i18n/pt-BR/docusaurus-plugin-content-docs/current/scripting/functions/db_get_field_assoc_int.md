@@ -4,6 +4,7 @@ sidebar_label: db_get_field_assoc_int
 description: Obtém o conteúdo do campo como um inteiro com o nome do campo especificado.
 keywords:
   - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

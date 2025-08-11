@@ -4,9 +4,8 @@ title: DB\_GetMemHandle
 sidebar\_label: DB\_GetMemHandle
 description: Obtém o handle de memória para uma conexão SQLite aberta com `DB_Open`.
 keywords:
-
-* sqlite
-  tags: \["sqlite"]
+  - sqlite
+tags: ["sqlite"]
 
 ---
 

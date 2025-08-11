@@ -4,6 +4,7 @@ sidebar_label: db_debug_openfiles
 description: Obtém o número de conexões de banco de dados abertas para fins de depuração.
 keywords:
   - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

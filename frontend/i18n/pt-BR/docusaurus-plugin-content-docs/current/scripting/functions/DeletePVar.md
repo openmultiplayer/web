@@ -4,7 +4,7 @@ title: DeletePVar
 sidebar\_label: DeletePVar
 description: Apaga uma variável de jogador definida anteriormente.
 tags: \["player variable", "pvar"]
-----------------------------------
+---
 
 ## descrição
 
