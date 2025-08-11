@@ -1,7 +1,7 @@
 ---
 
-title: db\_num\_fields
-sidebar\_label: db\_num\_fields
+title: db_num_fields
+sidebar_label: db_num_fields
 description: Obtém o número de campos do conjunto de resultados obtido com `db_query`.
 keywords:
   - sqlite
@@ -11,11 +11,11 @@ tags: ["sqlite"]
 
 ## descrição
 
-A função retorna o número de campos (colunas) do resultado obtido com [db\_query](db_query).
+A função retorna o número de campos (colunas) do resultado obtido com [db_query](db_query).
 
 | Nome               | Descrição                                      |
 | ------------------ | ---------------------------------------------- |
-| DBResult\:dbresult | Resultado retornado por [db\_query](db_query). |
+| DBResult:dbresult | Resultado retornado por [db_query](db_query). |
 
 ## retorno
 
@@ -110,20 +110,20 @@ public OnGameModeExit()
 
 ## funções relacionadas
 
-* [db\_open](db_open): Abrir conexão com banco SQLite
-* [db\_close](db_close): Fechar conexão com banco SQLite
-* [db\_query](db_query): Executar consulta
-* [db\_free\_result](db_free_result): Liberar resultado
-* [db\_num\_rows](db_num_rows): Número de linhas no resultado
-* [db\_next\_row](db_next_row): Avançar para próxima linha
-* [db\_field\_name](db_field_name): Nome do campo por índice
-* [db\_get\_field](db_get_field): Conteúdo do campo por índice
-* [db\_get\_field\_assoc](db_get_field_assoc): Conteúdo do campo por nome
-* [db\_get\_field\_int](db_get_field_int): Conteúdo do campo inteiro por índice
-* [db\_get\_field\_assoc\_int](db_get_field_assoc_int): Conteúdo do campo inteiro por nome
-* [db\_get\_field\_float](db_get_field_float): Conteúdo do campo float por índice
-* [db\_get\_field\_assoc\_float](db_get_field_assoc_float): Conteúdo do campo float por nome
-* [db\_get\_mem\_handle](db_get_mem_handle): Handle de memória do banco
-* [db\_get\_result\_mem\_handle](db_get_result_mem_handle): Handle de memória do resultado
-* [db\_debug\_openfiles](db_debug_openfiles): Número de conexões abertas
-* [db\_debug\_openresults](db_debug_openresults): Número de resultados abertos
+* [db_open](db_open): Abrir conexão com banco SQLite
+* [db_close](db_close): Fechar conexão com banco SQLite
+* [db_query](db_query): Executar consulta
+* [db_free_result](db_free_result): Liberar resultado
+* [db_num_rows](db_num_rows): Número de linhas no resultado
+* [db_next_row](db_next_row): Avançar para próxima linha
+* [db_field_name](db_field_name): Nome do campo por índice
+* [db_get_field](db_get_field): Conteúdo do campo por índice
+* [db_get_field_assoc](db_get_field_assoc): Conteúdo do campo por nome
+* [db_get_field_int](db_get_field_int): Conteúdo do campo inteiro por índice
+* [db_get_field_assoc_int](db_get_field_assoc_int): Conteúdo do campo inteiro por nome
+* [db_get_field_float](db_get_field_float): Conteúdo do campo float por índice
+* [db_get_field_assoc_float](db_get_field_assoc_float): Conteúdo do campo float por nome
+* [db_get_mem_handle](db_get_mem_handle): Handle de memória do banco
+* [db_get_result_mem_handle](db_get_result_mem_handle): Handle de memória do resultado
+* [db_debug_openfiles](db_debug_openfiles): Número de conexões abertas
+* [db_debug_openresults](db_debug_openresults): Número de resultados abertos

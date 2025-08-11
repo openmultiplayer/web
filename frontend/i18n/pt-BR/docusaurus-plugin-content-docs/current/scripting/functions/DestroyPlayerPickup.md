@@ -1,9 +1,9 @@
 ---
 
 title: DestroyPlayerPickup
-sidebar\_label: DestroyPlayerPickup
+sidebar_label: DestroyPlayerPickup
 description: Destrói um player-pickup criado com CreatePlayerPickup.
-tags: \["player", "pickup", "playerpickup"]
+tags: ["player", "pickup", "playerpickup"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />

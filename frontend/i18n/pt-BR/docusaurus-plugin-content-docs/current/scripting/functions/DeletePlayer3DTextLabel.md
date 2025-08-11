@@ -1,9 +1,9 @@
 ---
 
 title: DeletePlayer3DTextLabel
-sidebar\_label: DeletePlayer3DTextLabel
+sidebar_label: DeletePlayer3DTextLabel
 description: Apaga um texto 3D criado com CreatePlayer3DTextLabel.
-tags: \["player", "3dtextlabel"]
+tags: ["player", "3dtextlabel"]
 ---
 
 ## descrição
@@ -13,7 +13,7 @@ Apaga um texto 3D criado com [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel).
 | Nome                 | Descrição                                 |
 | -------------------- | ----------------------------------------- |
 | playerid             | ID do jogador cujo texto 3D será apagado. |
-| PlayerText3D\:textid | ID do texto 3D do jogador a apagar.       |
+| PlayerText3D:textid | ID do texto 3D do jogador a apagar.       |
 
 ## retorno
 
