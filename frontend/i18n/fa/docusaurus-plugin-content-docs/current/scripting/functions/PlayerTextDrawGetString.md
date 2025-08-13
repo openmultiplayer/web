@@ -1,0 +1,62 @@
+---
+title: PlayerTextDrawGetString
+sidebar_label: PlayerTextDrawGetString
+description: متن یک player-textdraw رو برمی‌گردونه.
+tags: ["player", "textdraw", "playertextdraw"]
+---
+
+<VersionWarn version='omp v1.1.0.2612' />
+
+## توضیحات
+
+متن یک player-textdraw رو برمی‌گردونه.
+
+| اسم                         | توضیحات                                                 |
+| ---------------------------- | ----------------------------------------------------------- |
+| playerid                     | شناسه بازیکن.                                       |
+| PlayerText:textid            | شناسه player-textdraw که می‌خوای متن رو ازش بگیری.           |
+| string[]                     | آرایه‌ای برای ذخیره متن، که به صورت reference پاس داده میشه. |
+| stringSize = sizeof (string) | اندازه رشته.                                     |
+
+## مقدار برگشتی
+
+این تابع مقدار خاصی برنمی‌گردونه.
+
+## مثال‌ها
+
+```c
+new PlayerText:welcomeText[MAX_PLAYERS];
+
+public OnPlayerConnect(playerid)
+{
+	welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Hello World!");
+	PlayerTextDrawShow(playerid, welcomeText[playerid]);
+	
+	new string[16];
+	PlayerTextDrawGetString(playerid, welcomeText[playerid], string, sizeof(string));
+	// string = "Hello World!"
+	return 1;
+}
+```
+
+## توابع مرتبط
+
+- [PlayerTextDrawCreate](PlayerTextDrawCreate): ساخت یک player-textdraw.
+- [PlayerTextDrawDestroy](PlayerTextDrawDestroy): پاک کردن یک player-textdraw.
+- [PlayerTextDrawSetString](PlayerTextDrawSetString): تغییر متن یک player-textdraw.
+- [PlayerTextDrawColor](PlayerTextDrawColor): تنظیم رنگ متن در player-textdraw.
+- [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): تنظیم رنگ جعبه player-textdraw.
+- [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): تنظیم رنگ background یک player-textdraw.
+- [PlayerTextDrawAlignment](PlayerTextDrawAlignment): تنظیم alignment یک player-textdraw.
+- [PlayerTextDrawFont](PlayerTextDrawFont): تنظیم فونت یک player-textdraw.
+- [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): تنظیم اندازه حروف متن در player-textdraw.
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا ناحیه قابل کلیک برای PlayerTextDrawSetSelectable).
+- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): روشن/خاموش کردن outline در player-textdraw.
+- [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): تنظیم سایه در player-textdraw.
+- [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): تنظیم فاصله متن در player-textdraw با نسبت متناسب.
+- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): روشن/خاموش کردن جعبه در player-textdraw.
+- [PlayerTextDrawShow](PlayerTextDrawShow): نمایش یک player-textdraw.
+- [PlayerTextDrawHide](PlayerTextDrawHide): مخفی کردن یک player-textdraw.
+- [IsPlayerTextDrawVisible](IsPlayerTextDrawVisible): چک می‌کنه که آیا player-textdraw برای بازیکن نمایش داده میشه یا نه.
+- [IsValidPlayerTextDraw](IsValidPlayerTextDraw): چک می‌کنه که آیا player-textdraw معتبره یا نه.
+- [TextDrawGetString](TextDrawGetString): متن یک textdraw رو برمی‌گردونه.

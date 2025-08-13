@@ -1,7 +1,7 @@
 ---
 title: PlayAudioStreamForPlayer
 sidebar_label: PlayAudioStreamForPlayer
-description: 'audio stream' برای بازیکن پخش کن.
+description: audio stream برای بازیکن پخش کن.
 tags: ["player"]
 ---
 
