@@ -1,7 +1,7 @@
 ---
 title: SetVehicleVirtualWorld
 sidebar_label: SetVehicleVirtualWorld
-description: 'virtual world' یه ماشین رو تنظیم می‌کنه.
+description: virtual world یه ماشین رو تنظیم می‌کنه.
 tags: ["vehicle"]
 ---
 
@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 'virtual world' یه ماشین رو تنظیم می‌کنه. پلیرها فقط می‌تونن ماشین‌هایی رو ببینن که در virtual world خودشون هستن.
 
-| نام          | توضیحات                                        |
-| ------------ | -------------------------------------------------- |
-| vehicleid    | ID ماشینی که می‌خوای virtual world اش رو تنظیم کنی.     |
+| نام          | توضیحات                                               |
+| ------------ | ----------------------------------------------------- |
+| vehicleid    | ID ماشینی که می‌خوای virtual world اش رو تنظیم کنی.   |
 | virtualWorld | ID virtual world ای که می‌خوای ماشین رو توش قرار بدی. |
 
 ## مقدار برگشتی
