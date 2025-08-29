@@ -7,25 +7,24 @@ tags: ["npc"]
 
 ## Description
 
-This callback is called when the NPC gets disconnected from the server.
+Callback ini dipanggil ketika NPC telah terputus dari server
 
 | Name     | Description                                             |
 | -------- | ------------------------------------------------------- |
-| reason[] | The reason why the bot has disconnected from the server |
+| reason[] | Alasan kenapa NPC disconnect |
 
 ## Examples
 
 ```c
 public OnNPCDisconnect(reason[])
 {
-    printf("Disconnected from the server. %s", reason);
+    printf("[NPC] telah disconnect dengan alasan: %s", reason);
 }
 ```
 
-## Related Callbacks
+## Fungsi terakait
+Callback berikut ini mungkin berguna karena saling terkait dengan callback ini
 
-The following callbacks might be useful, as they're related to this callback in one way or another.
-
-- [OnNPCConnect](OnNPCConnect): This callback is called when the NPC successfully connects to the server.
-- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server.
-- [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
+- [OnNPCConnect](OnNPCConnect): Callback ini di panggil ketika NPC berhasil terhubung ke server.
+- [OnPlayerDisconnect](OnPlayerDisconnect): Callback ini di panggil ketika player meninggalkan server.
+- [OnPlayerConnect](OnPlayerConnect):Callback ini dipanggil ketika player terhubung ke server.
