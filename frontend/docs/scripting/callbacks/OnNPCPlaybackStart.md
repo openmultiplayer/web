@@ -7,7 +7,7 @@ tags: ["npc", "playback", "recording"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC starts playback of a recorded file.
 
@@ -16,7 +16,7 @@ This callback is called when a NPC starts playback of a recorded file.
 | npcid    | The ID of the NPC that started playback       |
 | recordid | The ID of the record that started playing     |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCPlaybackStart(npcid, recordid)
@@ -31,13 +31,13 @@ public OnNPCPlaybackStart(npcid, recordid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called immediately when `NPC_StartPlayback` is successfully executed
 - The `recordid` corresponds to the loaded record file
 - The NPC will follow the recorded movements from the file
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -46,6 +46,6 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_PausePlayback](NPC_PausePlayback): Pause/unpause NPC playback
 - [NPC_IsPlayingPlayback](NPC_IsPlayingPlayback): Check if NPC is playing a recording
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCPlaybackEnd](OnNPCPlaybackEnd): Called when NPC finishes playing a recording

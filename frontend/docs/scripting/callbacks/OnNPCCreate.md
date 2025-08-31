@@ -7,7 +7,7 @@ tags: ["npc"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC is successfully created and added to the server.
 
@@ -15,7 +15,7 @@ This callback is called when a NPC is successfully created and added to the serv
 | ----- | ------------------------------ |
 | npcid | The ID of the NPC that was created |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCCreate(npcid)
@@ -30,12 +30,12 @@ public OnNPCCreate(npcid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called immediately after the NPC is created but before it's spawned
 - The NPC will need to be spawned using `NPC_Spawn` to become visible in the game world
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -43,7 +43,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_Destroy](NPC_Destroy): Destroy an existing NPC
 - [NPC_Spawn](NPC_Spawn): Spawn the NPC in the game world
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCDestroy](OnNPCDestroy): Called when a NPC is destroyed
 - [OnNPCSpawn](OnNPCSpawn): Called when a NPC is spawned

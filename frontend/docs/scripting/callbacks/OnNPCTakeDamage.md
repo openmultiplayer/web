@@ -7,7 +7,7 @@ tags: ["npc", "damage"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC takes damage from a player or another NPC.
 
@@ -19,11 +19,11 @@ This callback is called when a NPC takes damage from a player or another NPC.
 | weapon     | The weapon ID used to cause the damage          |
 | bodypart | The [body part](../resources/bodyparts) that was hit   |
 
-**## Returns**
+## Returns
 
 Return `false` to prevent the damage from being applied, or `true` to allow it.
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCTakeDamage(npcid, issuerid, Float:amount, weapon, bodypart)
@@ -40,14 +40,14 @@ public OnNPCTakeDamage(npcid, issuerid, Float:amount, weapon, bodypart)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called before the damage is actually applied to the NPC
 - Returning `false` will prevent the damage from being applied
 - The `issuerid` parameter will be `INVALID_PLAYER_ID` if damage is not caused by player
 - Body parts use the same constants as `OnPlayerTakeDamage`
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -56,7 +56,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_GetArmour](NPC_GetArmour): Get NPC's armor
 - [NPC_SetArmour](NPC_SetArmour): Set NPC's armor
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCGiveDamage](OnNPCGiveDamage): Called when a NPC gives damage to a player
 - [OnNPCDeath](OnNPCDeath): Called when a NPC dies

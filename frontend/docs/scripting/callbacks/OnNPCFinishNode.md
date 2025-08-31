@@ -7,7 +7,7 @@ tags: ["npc", "node", "navigation"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC finishes navigating a complete node during node-based movement.
 
@@ -16,7 +16,7 @@ This callback is called when a NPC finishes navigating a complete node during no
 | npcid  | The ID of the NPC that finished the node      |
 | nodeid | The ID of the node that was completed         |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCFinishNode(npcid, nodeid)
@@ -30,13 +30,13 @@ public OnNPCFinishNode(npcid, nodeid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is only called when NPCs are using node-based navigation via `NPC_PlayNode`
 - It's called when the NPC has completed navigation through all points in the node
 - The node navigation stops automatically when this callback is triggered
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -45,7 +45,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_IsPlayingNode](NPC_IsPlayingNode): Check if NPC is navigating a node
 - [NPC_OpenNode](NPC_OpenNode): Open a navigation node file
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC reaches a specific point in a node
 - [OnNPCChangeNode](OnNPCChangeNode): Called when NPC attempts to change nodes

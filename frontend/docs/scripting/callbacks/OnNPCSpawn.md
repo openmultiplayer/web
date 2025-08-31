@@ -5,7 +5,7 @@ description: This callback is called when a NPC spawns.
 tags: ["npc"]
 ---
 
-**## Description**
+## Description
 
 This callback is called when a NPC spawns.
 
@@ -13,7 +13,7 @@ This callback is called when a NPC spawns.
 | ----- | ------------------------------ |
 | npcid | The ID of the NPC that spawned |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCSpawn(npcid)
@@ -29,21 +29,21 @@ public OnNPCSpawn(npcid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called when `NPC_Spawn` is successfully executed
 - The NPC becomes visible and interactive in the game world
 - You can set initial NPC properties and behaviors in this callback
 - The NPC's stats are automatically set to default values (100 health, 0 armor, fists weapon)
 
-**## Related Functions**
+## Related Functions
 
 - [NPC_Spawn](NPC_Spawn): Spawn a NPC in the game world
 - [NPC_Respawn](NPC_Respawn): Respawn a dead NPC
 - [NPC_SetHealth](NPC_SetHealth): Set NPC's health
 - [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCCreate](OnNPCCreate): Called when a NPC is created
 - [OnNPCRespawn](OnNPCRespawn): Called when a NPC respawns

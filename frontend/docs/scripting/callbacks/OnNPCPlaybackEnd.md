@@ -7,7 +7,7 @@ tags: ["npc", "playback", "recording"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC finishes playback of a recorded file.
 
@@ -16,7 +16,7 @@ This callback is called when a NPC finishes playback of a recorded file.
 | npcid    | The ID of the NPC that finished playback        |
 | recordid | The ID of the record that finished playing      |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCPlaybackEnd(npcid, recordid)
@@ -30,13 +30,13 @@ public OnNPCPlaybackEnd(npcid, recordid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called when the recording reaches its end naturally
 - It's also called when playback is stopped manually using `NPC_StopPlayback`
 - The `recordid` corresponds to the loaded record file
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -45,6 +45,6 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_PausePlayback](NPC_PausePlayback): Pause/unpause NPC playback
 - [NPC_IsPlayingPlayback](NPC_IsPlayingPlayback): Check if NPC is playing a recording
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCPlaybackStart](OnNPCPlaybackStart): Called when NPC starts playing a recording

@@ -7,7 +7,7 @@ tags: ["npc", "weapon", "shooting"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC fires a weapon.
 
@@ -21,11 +21,11 @@ This callback is called when a NPC fires a weapon.
 | fY       | The Y coordinate where the bullet hit           |
 | fZ       | The Z coordinate where the bullet hit           |
 
-**## Returns**
+## Returns
 
 Return `false` to prevent the shot from being processed, or `true` to allow it.
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCWeaponShot(npcid, weapon, hittype, hitid, Float:fX, Float:fY, Float:fZ)
@@ -48,7 +48,7 @@ public OnNPCWeaponShot(npcid, weapon, hittype, hitid, Float:fX, Float:fY, Float:
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called for each shot fired by the NPC
 - The `hittype` parameter indicates what was hit (none, player, vehicle, object, etc.)
@@ -56,7 +56,7 @@ public OnNPCWeaponShot(npcid, weapon, hittype, hitid, Float:fX, Float:fY, Float:
 - Hit coordinates show where the bullet impacted
 - Returning `false` prevents the shot from being processed by the server
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -66,7 +66,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
 - [NPC_GetAmmo](NPC_GetAmmo): Get NPC's ammo count
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCGiveDamage](OnNPCGiveDamage): Called when NPC gives damage to a player
 - [OnPlayerWeaponShot](OnPlayerWeaponShot): Called when a player fires a weapon

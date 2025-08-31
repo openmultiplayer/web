@@ -7,7 +7,7 @@ tags: ["npc", "node", "navigation"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC reaches a specific point during node-based navigation.
 
@@ -17,7 +17,7 @@ This callback is called when a NPC reaches a specific point during node-based na
 | nodeid  | The ID of the node being navigated              |
 | pointid | The ID of the specific point that was reached   |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCFinishNodePoint(npcid, nodeid, pointid)
@@ -41,13 +41,13 @@ public ResumeNavigation(npcid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is only called when NPCs are using node-based navigation via `NPC_PlayNode`
 - It's called each time the NPC reaches a waypoint within the node
 - The `pointid` corresponds to the specific waypoint index within the node file
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -56,7 +56,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_ResumePlayingNode](NPC_ResumePlayingNode): Resume paused node navigation
 - [NPC_StopPlayingNode](NPC_StopPlayingNode): Stop NPC node navigation
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes navigating a complete node
 - [OnNPCChangeNode](OnNPCChangeNode): Called when NPC attempts to change nodes

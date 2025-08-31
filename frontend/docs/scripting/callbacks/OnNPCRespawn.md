@@ -7,7 +7,7 @@ tags: ["npc"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC respawns.
 
@@ -15,7 +15,7 @@ This callback is called when a NPC respawns.
 | ----- | -------------------------------- |
 | npcid | The ID of the NPC that respawned |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCRespawn(npcid)
@@ -30,13 +30,13 @@ public OnNPCRespawn(npcid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called after the NPC has been respawned using `NPC_Respawn`
 - The NPC's health and armor are automatically restored during respawn
 - Any ongoing movement, playback, etc, are stopped when respawning
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -45,7 +45,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_SetHealth](NPC_SetHealth): Set NPC's health
 - [NPC_SetPosition](NPC_SetPosition): Set NPC's position
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCSpawn](OnNPCSpawn): Called when a NPC spawns for the first time
 - [OnNPCDeath](OnNPCDeath): Called when a NPC dies

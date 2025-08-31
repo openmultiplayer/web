@@ -7,7 +7,7 @@ tags: ["npc", "damage"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC gives damage to a player.
 
@@ -19,11 +19,11 @@ This callback is called when a NPC gives damage to a player.
 | weapon   | The weapon ID used to give the damage         |
 | bodypart | The [body part](../resources/bodyparts) that was hit   |
 
-**## Returns**
+## Returns
 
 Return `false` to prevent the damage from being applied, or `true` to allow it.
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCGiveDamage(npcid, playerid, Float:amount, weapon, bodypart)
@@ -40,13 +40,13 @@ public OnNPCGiveDamage(npcid, playerid, Float:amount, weapon, bodypart)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called before the damage is actually applied to the player
 - Returning `false` will prevent the damage from being applied
 - The `bodypart` parameter uses the same values as `OnPlayerTakeDamage`
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -55,7 +55,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_Shoot](NPC_Shoot): Make NPC shoot
 - [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCTakeDamage](OnNPCTakeDamage): Called when a NPC takes damage
 - [OnPlayerTakeDamage](OnPlayerTakeDamage): Called when a player takes damage

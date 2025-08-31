@@ -7,7 +7,7 @@ tags: ["npc", "node", "navigation"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC attempts to change from one navigation node to another during node-based movement. This allows you to control whether the node change should be allowed or denied.
 
@@ -17,11 +17,11 @@ This callback is called when a NPC attempts to change from one navigation node t
 | newnodeid  | The ID of the new node the NPC wants to move to |
 | oldnodeid  | The ID of the current node the NPC is on      |
 
-**## Returns**
+## Returns
 
 Return `true` to allow the node change, or `false` to deny it.
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCChangeNode(npcid, newnodeid, oldnodeid)
@@ -44,13 +44,13 @@ public OnNPCChangeNode(npcid, newnodeid, oldnodeid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is only called when NPCs are using node-based navigation via `NPC_PlayNode`
 - Returning `false` will prevent the NPC from changing nodes and may cause it to stop navigation
 - Node files must be loaded using `NPC_OpenNode` before NPCs can navigate between them
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -59,7 +59,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_CloseNode](NPC_CloseNode): Close a navigation node file
 - [NPC_StopPlayingNode](NPC_StopPlayingNode): Stop NPC node navigation
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes navigating a complete node
 - [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC reaches a specific point in a node

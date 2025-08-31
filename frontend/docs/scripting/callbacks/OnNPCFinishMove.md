@@ -7,7 +7,7 @@ tags: ["npc", "movement"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC finishes moving to its target destination.
 
@@ -15,7 +15,7 @@ This callback is called when a NPC finishes moving to its target destination.
 | ----- | --------------------------------------------- |
 | npcid | The ID of the NPC that finished moving       |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCFinishMove(npcid)
@@ -31,14 +31,14 @@ public OnNPCFinishMove(npcid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called for all types of NPC movement (walk, run, sprint, drive)
 - It is called when the NPC reaches the target position set by movement functions
 - For path-based movement, this is called when the entire path is completed
 - For player following, this is called when the NPC stops following (if auto-restart is disabled)
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -47,7 +47,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_StopMove](NPC_StopMove): Stop NPC movement
 - [NPC_IsMoving](NPC_IsMoving): Check if NPC is currently moving
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC reaches a node point
 - [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes node navigation

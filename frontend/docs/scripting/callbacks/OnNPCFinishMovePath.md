@@ -7,7 +7,7 @@ tags: ["npc", "movement", "path"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC finishes moving along a predefined path.
 
@@ -16,7 +16,7 @@ This callback is called when a NPC finishes moving along a predefined path.
 | npcid  | The ID of the NPC that finished the path      |
 | pathid | The ID of the path that was completed         |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCFinishMovePath(npcid, pathid)
@@ -30,18 +30,18 @@ public OnNPCFinishMovePath(npcid, pathid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is triggered when an NPC reaches the final point of a path
 - The NPC stops moving automatically when this callback is called
 
-**## Related Functions**
+## Related Functions
 
 - [NPC_MoveByPath](NPC_MoveByPath): Make NPC follow a path
 - [NPC_CreatePath](NPC_CreatePath): Create a new movement path
 - [NPC_IsValidPath](NPC_IsValidPath): Check if path is valid
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes any movement
 - [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes node navigation

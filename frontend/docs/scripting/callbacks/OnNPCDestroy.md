@@ -7,7 +7,7 @@ tags: ["npc"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC is destroyed and removed from the server.
 
@@ -15,7 +15,7 @@ This callback is called when a NPC is destroyed and removed from the server.
 | ----- | ---------------------------------- |
 | npcid | The ID of the NPC that was destroyed |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCDestroy(npcid)
@@ -33,12 +33,12 @@ public OnNPCDestroy(npcid)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is called immediately before the NPC is removed from the server
 - The NPC will be disconnected and its player slot freed after this callback
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -46,7 +46,7 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_Destroy](NPC_Destroy): Destroy an existing NPC
 - [IsValidNPC](IsValidNPC): Check if NPC ID is valid
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCCreate](OnNPCCreate): Called when a NPC is created
 - [OnNPCConnect](OnNPCConnect): Called when a NPC connects to the server

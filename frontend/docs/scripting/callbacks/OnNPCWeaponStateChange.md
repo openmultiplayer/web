@@ -7,7 +7,7 @@ tags: ["npc", "weapon"]
 
 <VersionWarn version='omp v1.1.0.changemelater' />
 
-**## Description**
+## Description
 
 This callback is called when a NPC's weapon state changes (e.g., reloading, running out of ammo, etc.).
 
@@ -17,7 +17,7 @@ This callback is called when a NPC's weapon state changes (e.g., reloading, runn
 | newstate | The new weapon state                  |
 | oldstate | The previous weapon state             |
 
-**## Examples**
+## Examples
 
 ```c
 public OnNPCWeaponStateChange(npcid, newstate, oldstate)
@@ -34,12 +34,12 @@ public OnNPCWeaponStateChange(npcid, newstate, oldstate)
 }
 ```
 
-**## Notes**
+## Notes
 
 - This callback is triggered automatically based on NPC's ammo count and weapon actions
 - Weapon states include: no bullets, reloading, more bullets, last bullet, unknown
 
-**## Related Functions**
+## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
@@ -49,6 +49,6 @@ The following functions might be useful, as they're related to this callback in 
 - [NPC_GetAmmoInClip](NPC_GetAmmoInClip): Get ammo in current clip
 - [NPC_EnableReloading](NPC_EnableReloading): Enable/disable automatic reloading
 
-**## Related Callbacks**
+## Related Callbacks
 
 - [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires a weapon
