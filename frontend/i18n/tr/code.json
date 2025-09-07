@@ -205,5 +205,4 @@
     "message": "{servers} sunucuda toplam {players} oyuncu bulunuyor, sunucu başına ortalama {average} oyuncu düşüyor.",
     "description": "Server stats"
   }
-
 }
