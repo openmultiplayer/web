@@ -1,0 +1,209 @@
+{
+  "homepage.heroDescription": {
+    "message": "Grand Theft Auto: San Andreas için, {samp} ile {compatibility}, yepyeni bir çok oyunculu mod.",
+    "description": "Hero section description for open.mp homepage"
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "tamamen geriye dönük uyumlu",
+    "description": "Fully backwards compatible bold text"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Başlatıcıyı İndir 🎮",
+    "description": "Launcher indirme butonu"
+  },
+  "homepage.downloadServer": {
+    "message": "Sunucu Dosyalarını İndir 🖥️",
+    "description": "Server indirme butonu"
+  },
+  "homepage.documentation": {
+    "message": "Dokümantasyon 📜",
+    "description": "Dokümantasyon butonu"
+  },
+  "announcement.title": {
+    "message": "open.mp sunucu dosyalarının ve başlatıcısının yeni sürümü çıktı!",
+    "description": "Announcement: new version title"
+  },
+  "announcement.serverVersion": {
+    "message": "{version} sürümüne sahip open.mp birçok hata düzeltmesi, performans artışı ve yeni özelliklerle çıktı!",
+    "description": "Announcement: server version and features"
+  },
+  "announcement.changelog": {
+    "message": "Değişiklikler",
+    "description": "Announcement: changelog link"
+  },
+  "announcement.download": {
+    "message": "İndir",
+    "description": "Announcement: download link"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Başlatıcı güncellendi!",
+    "description": "Announcement: launcher update"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Yenilikleri Gör",
+    "description": "Announcement: see what's new link"
+  },
+  "announcement.dismiss": {
+    "message": "Bu mesajı kapat",
+    "description": "Announcement: dismiss button"
+  },
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Mevcut scriptler ve istemcilerle tamamen geriye dönük uyumlu",
+    "description": "Feature title: Fully backwards compatible"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Elinde eski bir AMX mi var? Hiçbir ayar gerektirmeden open.mp sunucusunda çalıştır ve SA:MP istemcisiyle arkadaşlarına katıl. Kodunuzu geliştirmek istediğinde dokümantasyonumuza göz at.",
+    "description": "Feature description: Fully backwards compatible"
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Başlangıç Rehberi",
+    "description": "Link text: Getting Started"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Yeni ve geliştirilmiş script sistemi",
+    "description": "Feature title: New and improved scripting system"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Pawn ile devam ettik, ancak kodunuzu daha sağlam hale getiren yeni bir derleyici ve sunucu ile istemciyi yönetmek için daha fazla fonksiyon ekledik.",
+    "description": "Feature description: New and improved scripting system"
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Yenilikleri öğrenin",
+    "description": "Link text: Learn about the improvements"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Topluluk odaklı geliştirme",
+    "description": "Feature title: Community driven development"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Sunucu tamamen açık kaynak ve büyük küçük tüm katkılara açığız. Bir sonraki sürümü yazmaya yardım edebilir veya bulduğunuz sorunları bildirebilirsiniz. Mükemmel kod için uğraşsak da hatalar olabilir, geri bildiriminiz değerli.",
+    "description": "Feature description: Community driven development"
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "GitHub organizasyonunu ziyaret et",
+    "description": "Link text: Visit the GitHub organization"
+  },
+  "feature.cppApi.title": {
+    "message": "Genişletilebilir C++ API",
+    "description": "Feature title: Extensible C++ API"
+  },
+  "feature.cppApi.description": {
+    "message": "Pawn'da bulunan tüm sunucu özelliklerine ve C++ kütüphaneleri ile framework evrenine erişim sağlayın. Ustalaştıktan sonra GitHub'daki açık katkı sürecimizle sunucuyu geliştirmeye yardımcı olabilirsiniz.",
+    "description": "Feature description: Extensible C++ API"
+  },
+  "feature.cppApi.linkText": {
+    "message": "SDK deposunu incele",
+    "description": "Link text: Check out SDK repository"
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Lanet tren takip ediliyor...",
+    "description": "Loading bar text"
+  },
+  "servers.title": {
+    "message": "Sunucular",
+    "description": "Servers page title"
+  },
+  "servers.sort.relevance": {
+    "message": "Alaka Düzeyi",
+    "description": "Sort by relevance"
+  },
+  "servers.sort.players": {
+    "message": "Oyuncu Sayısı",
+    "description": "Sort by players"
+  },
+  "servers.search.placeholder": {
+    "message": "IP veya İsim ile Ara",
+    "description": "Search input placeholder"
+  },
+  "servers.stats": {
+    "message": "{servers} sunucuda toplam {players} oyuncu bulunuyor, sunucu başına ortalama {average} oyuncu düşüyor.",
+    "description": "Server stats"
+  },
+  "servers.addServer.button": {
+    "message": "Sunucu Ekle",
+    "description": "Add server button"
+  },
+  "servers.checkbox.showEmpty": {
+    "message": "Boş sunucuları göster",
+    "description": "Show empty servers checkbox label"
+  },
+  "servers.checkbox.showOmpOnly": {
+    "message": "Sadece open.mp sunucularını göster",
+    "description": "Show only open.mp servers checkbox label"
+  },
+  "servers.checkbox.showPartnersOnly": {
+    "message": "Sadece partnerleri göster",
+    "description": "Show only partners checkbox label"
+  },
+  "servers.modal.addServerTitle": {
+    "message": "Sunucu Ekle",
+    "description": "Add server button"
+  },
+  "servers.modal.ipOrDomain": {
+    "message": "IP veya Alan Adı",
+    "description": "IP or Domain label"
+  },
+  "servers.addServer.input": {
+    "message": "IP/Alan Adı",
+    "description": "IP or Domain placeholder"
+  },
+  "servers.modal.ipFormat": {
+    "message": "{ipport} formatında olmalı",
+    "description": "IP format helper text with bold ip:port"
+  },
+  "serverRow.copied": {
+    "message": "KOPYALANDI",
+    "description": "Server row copied badge"
+  },
+  "serverRow.copy": {
+    "message": "KOPYALA",
+    "description": "Server row copy badge"
+  },
+  "serverRow.players": {
+    "message": "oyuncu",
+    "description": "Server row players label"
+  },
+
+  "serverRow.partnerTitle": {
+    "message": "Partner sunucu!",
+    "description": "Partner Title"
+  },
+
+  "serverRow.ompTitle": {
+    "message": "open.mp sunucusu",
+    "description": "OMP Server Title"
+  },
+    "servers.addServer.success": {
+      "message": "{hn} bekleme listemize eklendi. Eğer maksimum 48 saat içinde aktif olmazsa, Discord üzerinden bizimle iletişime geçebilirsiniz!",
+      "description": "Server added to pending list message"
+    },
+
+    "servers.addServer.successTitle": {
+    "message": "Sunucu gönderildi!",
+    "description": "Server submitted toast title"
+  },
+    "servers.addServer.failedTitle": {
+    "message": "Gönderim başarısız!",
+    "description": "Server submission failed toast title"
+  },
+
+    "servers.addServer.errorMessage": {
+    "message": "Sunucu gönderilirken bir hata oluştu",
+    "description": "Server submission error message"
+  },
+  "servers.addServer.errorTitle": {
+    "message": "Hata",
+    "description": "Server submission error toast title"
+  },
+
+  "partners.note": {
+    "message": "Not: Ortaklık programı başvurusu, söz verildiği üzere geçici olarak kapatılmıştır. Daha önce slot ayırtmış sunucular hâlâ katılabilir, ancak şu anda yeni başvuruları kabul etmiyoruz. Sorularınız olursa Discord sunucumuzda sormaktan çekinmeyin. Fakat eğer sorunuz listeye eklenmenin yeni yolları ile ilgiliyse, şu anda böyle bir planımız bulunmamaktadır.ata",
+    "description": "Partnership note"
+  },
+
+  "partners.server.stats": {
+    "message": "{servers} sunucuda toplam {players} oyuncu bulunuyor, sunucu başına ortalama {average} oyuncu düşüyor.",
+    "description": "Server stats"
+  }
+
+}

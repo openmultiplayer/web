@@ -1,0 +1,43 @@
+{
+  "link.title.Documentations": {
+    "message": "Dokümanlar",
+    "description": "Footer item with label Docs"
+  },
+  "link.item.label.Introduction": {
+    "message": "Giriş",
+    "description": "Footer item with label Docs"
+  },
+  "link.item.label.open.mp Migration": {
+    "message": "open.mp Taşınma",
+    "description": "Footer item with label open mp Migration"
+  },
+
+  "link.title.Community": {
+    "message": "Topluluk",
+    "description": "Footer item with label Community"
+  },
+
+  "link.title.More": {
+    "message": "Diğer",
+    "description": "Footer item with label More"
+  },
+
+  "link.item.label.Donate": {
+    "message": "Bağış Yap",
+    "description": "Footer item with label Donate"
+  },
+
+  "link.item.label.Servers": {
+    "message": "Sunucular",
+    "description": "Footer item with label Servers"
+  },
+  "link.item.label.UID Generator": {
+    "message": "UID Oluşturucu",
+    "description": "Footer item with label UID Generator"
+  },
+
+  "copyright": {
+    "message": "Telif Hakkı © 2025 open.mp. Docusaurus ile oluşturuldu.",
+    "description": "Footer copyright text"
+  }
+}
