@@ -83,5 +83,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCUpdate](OnNPCUpdate): Called when NPC state updates
 - [OnNPCMove](OnNPCMove): Called when NPC moves
