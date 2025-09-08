@@ -62,7 +62,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - The `updateDelayMS` parameter controls how often the NPC updates its target position
 - Lower `updateDelayMS` values provide smoother following but use more resources
 - The `autoRestart` parameter determines if following resumes after interruptions
-- NPCs will path-find around obstacles when possible
 - Following stops when the target player disconnects
 
 ## Related Functions
