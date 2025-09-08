@@ -26,7 +26,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Shooter");
     NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, 24, 1); // Desert Eagle with 1 bullet
+    NPC_GiveWeapon(npcid, WEAPON_DEAGLE, 1); // Desert Eagle with 1 round
     
     // Force reload after shooting
     NPC_Shoot(npcid);

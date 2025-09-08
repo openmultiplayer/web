@@ -28,7 +28,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("RapidFire");
     NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, 31, 500); // M4
+    NPC_GiveWeapon(npcid, WEAPON_M4, 500); // M4 with 500 ammo
     
     // Set rapid fire (100ms between shots)
     NPC_SetWeaponShootTime(npcid, 100);

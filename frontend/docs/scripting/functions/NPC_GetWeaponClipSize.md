@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (clipSize != -1)
         {
             new msg[64];
-            format(msg, sizeof(msg), "NPC 0 AK47 clip: %d rounds", clipSize);
+            format(msg, sizeof(msg), "NPC 0 AK47 clip: %d ammo", clipSize);
             SendClientMessage(playerid, 0xFFFFFFFF, msg);
         }
         return 1;

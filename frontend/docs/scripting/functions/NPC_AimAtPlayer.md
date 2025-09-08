@@ -38,7 +38,7 @@ public OnGameModeInit()
     new npcid = NPC_Create("Guard");
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 300);
+    NPC_SetAmmo(npcid, 300); // Give 300 ammo
     
     return 1;
 }

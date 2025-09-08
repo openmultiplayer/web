@@ -28,7 +28,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("QuickReloader");
     NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, 31, 200); // M4
+    NPC_GiveWeapon(npcid, WEAPON_M4, 200); // M4 with 200 ammo
     
     // Set fast reload (500ms)
     NPC_SetWeaponReloadTime(npcid, 500);

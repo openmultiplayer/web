@@ -27,7 +27,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, 24, 100); // Desert Eagle with 100 bullets
+    NPC_GiveWeapon(npcid, WEAPON_DEAGLE, 100); // Desert Eagle with 100 ammo
     
     // Set clip to half capacity
     NPC_SetAmmoInClip(npcid, 3);
@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/fillclip", true))
     {
         // Fill NPC 0's weapon clip
-        NPC_SetAmmoInClip(0, 7); // Desert Eagle clip size
+        NPC_SetAmmoInClip(0, 7); // Give 7 ammo to clip
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 clip filled");
         return 1;
     }

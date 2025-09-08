@@ -32,7 +32,7 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     
     // Create police cruiser
-    g_PatrolVehicle = CreateVehicle(596, 1958.33, 1343.12, 15.36, 0.0, 1, 1, 300);
+    g_PatrolVehicle = CreateVehicle(596, 1958.33, 1343.12, 15.36, 0.0, 1, 1, 300); // Police Car (LS)
     NPC_PutInVehicle(npcid, g_PatrolVehicle, 0);
     
     // Start patrol with siren

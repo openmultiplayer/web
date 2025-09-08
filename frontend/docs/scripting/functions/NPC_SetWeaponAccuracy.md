@@ -28,10 +28,10 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Sniper");
     NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, 34);
+    NPC_SetWeapon(npcid, WEAPON_SNIPER);
     
     // Set sniper rifle accuracy to 95%
-    NPC_SetWeaponAccuracy(npcid, 34, 0.95);
+    NPC_SetWeaponAccuracy(npcid, WEAPON_SNIPER, 0.95);
     return 1;
 }
 
@@ -41,10 +41,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = NPC_Create("Marksman");
         NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, 24);
+        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
         
         // Set Desert Eagle accuracy to 80%
-        NPC_SetWeaponAccuracy(npcid, 24, 0.8);
+        NPC_SetWeaponAccuracy(npcid, WEAPON_DEAGLE, 0.8);
         
         SendClientMessage(playerid, 0xFFFFFFFF, "NPC weapon accuracy set");
         return 1;

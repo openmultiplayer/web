@@ -26,7 +26,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, 31); // M4
+    NPC_SetWeapon(npcid, WEAPON_M4); // M4
     NPC_SetAmmo(npcid, 500);
     
     // Enable auto-reload

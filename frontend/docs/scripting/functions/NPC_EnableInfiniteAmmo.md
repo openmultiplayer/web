@@ -30,8 +30,7 @@ public OnGameModeInit()
     
     // Give the NPC a weapon
     NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetAmmo(npcid, 100);
-    
+    NPC_SetAmmo(npcid, 100); // Give 100 ammo
     // Enable infinite ammo so it never runs out
     NPC_EnableInfiniteAmmo(npcid, true);
     

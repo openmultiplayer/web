@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (actualClip != -1)
         {
             new msg[64];
-            format(msg, sizeof(msg), "AK47 default clip: %d rounds", actualClip);
+            format(msg, sizeof(msg), "AK47 default clip: %d ammo", actualClip);
             SendClientMessage(playerid, 0xFFFFFFFF, msg);
         }
         return 1;

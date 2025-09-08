@@ -27,7 +27,7 @@ public OnGameModeInit()
     new npcid = NPC_Create("Marksman");
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_SNIPER);
-    NPC_SetAmmo(npcid, 50);
+    NPC_SetAmmo(npcid, 50); // Give 50 ammo
     
     // Start aiming at target location
     NPC_AimAt(npcid, 2000.0, 1500.0, 20.0, true, 1000, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_ALL);
@@ -98,7 +98,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             // Switch to combat
             NPC_SetWeapon(0, WEAPON_M4);
-            NPC_SetAmmo(0, 300);
+            NPC_SetAmmo(0, 300); // Give 300 ammo
             
             new Float:px, Float:py, Float:pz;
             GetPlayerPos(playerid, px, py, pz);

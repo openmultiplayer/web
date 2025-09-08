@@ -28,7 +28,7 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     
     // Create Hydra jet
-    new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 50.0, 0.0, -1, -1, 300);
+    new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 50.0, 0.0, -1, -1, 300); // Hydra
     NPC_PutInVehicle(npcid, vehicleid, 0);
     
     // Set to vertical mode

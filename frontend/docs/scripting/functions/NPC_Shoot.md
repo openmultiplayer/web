@@ -37,10 +37,10 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Sniper");
     NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, 34);
+    NPC_SetWeapon(npcid, WEAPON_SNIPER);
     
     // Shoot at position (100.0, 100.0, 10.0)
-    NPC_Shoot(npcid, INVALID_PLAYER_ID, BULLET_HIT_TYPE_NONE, 34,
+    NPC_Shoot(npcid, INVALID_PLAYER_ID, BULLET_HIT_TYPE_NONE, WEAPON_SNIPER,
              100.0, 100.0, 10.0, 0.0, 0.0, 0.0, false);
     return 1;
 }
@@ -54,10 +54,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
         
         new npcid = NPC_Create("Attacker");
         NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, 24);
+        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
         
         // Shoot at player
-        NPC_Shoot(npcid, playerid, BULLET_HIT_TYPE_PLAYER, 24,
+        NPC_Shoot(npcid, playerid, BULLET_HIT_TYPE_PLAYER, WEAPON_DEAGLE,
                  x, y, z, 0.0, 0.0, 0.0, true);
         return 1;
     }

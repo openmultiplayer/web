@@ -30,7 +30,7 @@ public OnGameModeInit()
     
     // Set M4 as current weapon and give ammo
     NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 200);
+    NPC_SetAmmo(npcid, 200); // Give 200 ammo
     
     return 1;
 }
@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         // Give NPC a Desert Eagle
         NPC_SetWeapon(0, WEAPON_DEAGLE);
-        NPC_SetAmmo(0, 50);
+        NPC_SetAmmo(0, 50); // Give 50 ammo
         
         SendClientMessage(playerid, 0x00FF00FF, "NPC equipped with Desert Eagle");
         return 1;

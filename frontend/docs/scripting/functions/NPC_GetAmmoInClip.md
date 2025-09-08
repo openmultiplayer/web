@@ -28,8 +28,8 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     
     NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 300);
-    NPC_SetAmmoInClip(npcid, 50);
+    NPC_SetAmmo(npcid, 300); // Give 300 ammo
+    NPC_SetAmmoInClip(npcid, 50); // Set 50 ammo in clip
     
     new clipAmmo = NPC_GetAmmoInClip(npcid);
     new totalAmmo = NPC_GetAmmo(npcid);

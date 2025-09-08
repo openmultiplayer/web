@@ -36,8 +36,8 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Sniper");
     NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, 34); // Sniper rifle
-    NPC_SetAmmo(npcid, 100);
+    NPC_SetWeapon(npcid, WEAPON_SNIPER); // Sniper rifle
+    NPC_SetAmmo(npcid, 100); // Give 100 ammo
     
     // Make NPC aim and shoot at a building
     NPC_AimAt(npcid, 1958.33, 1343.12, 15.36, true, 500, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_ALL);

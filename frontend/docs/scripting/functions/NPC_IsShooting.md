@@ -26,7 +26,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, 31, 100); // M4 with 100 bullets
+    NPC_GiveWeapon(npcid, WEAPON_M4, 100); // M4 with 100 ammo
     
     // Make NPC aim and shoot at a position
     NPC_AimAt(npcid, 2000.0, 1500.0, 15.0, true, 500);

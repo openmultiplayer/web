@@ -27,7 +27,7 @@ public OnGameModeInit()
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetAmmo(npcid, 300);
+    NPC_SetAmmo(npcid, 300); // Give 300 ammo
     
     new weapon = NPC_GetWeapon(npcid);
     printf("NPC %d is holding weapon %d", npcid, weapon);
@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new weaponName[32];
         switch(weapon)
         {
-            case 0: weaponName = "Fists";
+            case WEAPON_FIST: weaponName = "Fists";
             case WEAPON_COLT45: weaponName = "Colt 45";
             case WEAPON_UZI: weaponName = "Micro Uzi";
             case WEAPON_AK47: weaponName = "AK-47";

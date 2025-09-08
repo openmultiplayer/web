@@ -27,8 +27,8 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, 31); // M4
-    NPC_SetAmmo(npcid, 500);
+    NPC_SetWeapon(npcid, WEAPON_M4); // M4
+    NPC_SetAmmo(npcid, 500); // Give 500 ammo
     
     // Set large clip size
     NPC_SetWeaponClipSize(npcid, 100);
@@ -55,12 +55,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // Set realistic clip size for NPC 0
         switch (weapon)
         {
-            case 22, 23: NPC_SetWeaponClipSize(0, 17); // 9mm, Silenced 9mm
-            case 24: NPC_SetWeaponClipSize(0, 7);      // Desert Eagle
-            case 25: NPC_SetWeaponClipSize(0, 12);     // Shotgun
-            case 29: NPC_SetWeaponClipSize(0, 50);     // MP5
-            case 30: NPC_SetWeaponClipSize(0, 30);     // AK-47
-            case 31: NPC_SetWeaponClipSize(0, 50);     // M4
+            case WEAPON_COLT45, WEAPON_SILENCED: NPC_SetWeaponClipSize(0, 17); // 9mm, Silenced 9mm
+            case WEAPON_DEAGLE: NPC_SetWeaponClipSize(0, 7);      // Desert Eagle
+            case WEAPON_SHOTGUN: NPC_SetWeaponClipSize(0, 12);     // Shotgun
+            case WEAPON_MP5: NPC_SetWeaponClipSize(0, 50);     // MP5
+            case WEAPON_AK47: NPC_SetWeaponClipSize(0, 30);     // AK-47
+            case WEAPON_M4: NPC_SetWeaponClipSize(0, 50);     // M4
         }
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 realistic clip set");
         return 1;
@@ -72,7 +72,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - The NPC must have a weapon for this function to work
-- Clip size affects how many bullets the NPC can fire before needing to reload
+- Clip size affects how much ammo the NPC can fire before needing to reload
 - Use 0 to set unlimited clip size (no reloading needed)
 - Changes take effect immediately
 - Different weapons have different default clip sizes

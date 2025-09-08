@@ -28,7 +28,7 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     
     NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetAmmo(npcid, 150);
+    NPC_SetAmmo(npcid, 150); // Give 150 ammo
     
     new ammo = NPC_GetAmmo(npcid);
     printf("NPC %d has %d ammo", npcid, ammo); // Output: 150

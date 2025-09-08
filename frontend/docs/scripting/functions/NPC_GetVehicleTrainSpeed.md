@@ -28,7 +28,7 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     
     // Create train
-    new vehicleid = CreateVehicle(537, 1700.0, -1953.0, 14.0, 0.0, -1, -1, 300); // Freight
+    new vehicleid = CreateVehicle(537, 1700.0, -1953.0, 14.0, 0.0, -1, -1, 300); // Freight Train
     NPC_PutInVehicle(npcid, vehicleid, 0);
     
     // Set train speed

@@ -27,9 +27,9 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Soldier");
     NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, 31); // M4
+    NPC_SetWeapon(npcid, WEAPON_M4); // M4
     
-    // Set M4 ammo to 200 rounds
+    // Set M4 ammo to 200
     NPC_SetAmmo(npcid, 200);
     return 1;
 }
@@ -40,9 +40,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = NPC_Create("Gunner");
         NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, 24);
+        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
         
-        // Give Desert Eagle 50 rounds
+        // Give Desert Eagle 50 ammo
         NPC_SetAmmo(npcid, 50);
         
         SendClientMessage(playerid, 0xFFFFFFFF, "NPC armed with ammo");
