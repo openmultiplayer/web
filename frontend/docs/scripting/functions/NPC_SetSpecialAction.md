@@ -72,4 +72,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Related Callbacks
 
 - [OnNPCSpecialActionChange](OnNPCSpecialActionChange): Called when action changes
-- [OnNPCUpdate](OnNPCUpdate): Called when NPC updates
