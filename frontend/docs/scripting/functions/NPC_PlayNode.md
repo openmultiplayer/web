@@ -18,7 +18,7 @@ Makes an NPC navigate through predefined navigation nodes using the game's built
 | moveType       | Movement type (default: NPC_MOVE_TYPE_JOG)                   |
 | Float:speed    | Movement speed (default: NPC_MOVE_SPEED_AUTO)                |
 | Float:radius   | Radius around nodes to consider as reached (default: 0.0)    |
-| bool:setAngle  | Whether to update NPC's facing angle during navigation (default: true) |
+| bool:setangle  | Whether to update NPC's facing angle during navigation (default: true) |
 
 ## Returns
 

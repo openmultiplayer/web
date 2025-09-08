@@ -33,8 +33,8 @@ public OnGameModeInit()
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
     NPC_PutInVehicle(npcid, vehicleid, 0);
     
-    // Make NPC accelerate forward
-    NPC_SetKeys(npcid, KEY_ACCELERATE, KEY_UP, 0);
+    // Make NPC move forward
+    NPC_SetKeys(npcid, KEY_UP, 0, 0);
     
     return 1;
 }
@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Keys affect NPC behavior in vehicles and on foot
-- Common keys: KEY_ACCELERATE, KEY_BRAKE, KEY_LEFT, KEY_RIGHT
+- Common keys: KEY_UP, KEY_DOWN, KEY_LEFT, KEY_RIGHT
 - Use NPC_GetKeys to check current key states
 - Key states persist until changed or NPC state resets
 

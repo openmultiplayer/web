@@ -14,9 +14,9 @@ Sets an NPC's rotation on all three axes (X, Y, Z).
 | Name  | Description                    |
 | ----- | ------------------------------ |
 | npcid | The ID of the NPC             |
-| rx    | X-axis rotation in degrees     |
-| ry    | Y-axis rotation in degrees     |
-| rz    | Z-axis rotation in degrees     |
+| x    | X-axis rotation in degrees     |
+| y    | Y-axis rotation in degrees     |
+| z    | Z-axis rotation in degrees     |
 
 ## Returns
 
@@ -41,11 +41,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/randomrot", true))
     {
         // Set random rotation for NPC 0
-        new Float:rx = float(random(360));
-        new Float:ry = float(random(360)); 
-        new Float:rz = float(random(360));
+        new Float:x = float(random(360));
+        new Float:y = float(random(360)); 
+        new Float:z = float(random(360));
         
-        NPC_SetRot(0, rx, ry, rz);
+        NPC_SetRot(0, x, y, z);
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 rotation randomized");
         return 1;
     }

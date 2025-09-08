@@ -14,7 +14,7 @@ Sets an NPC's skin model to change their appearance.
 | Name   | Description                    |
 | ------ | ------------------------------ |
 | npcid  | The ID of the NPC             |
-| skinid | The skin model ID to set       |
+| model | The skin model ID to set       |
 
 ## Returns
 
@@ -47,8 +47,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/copskin", true))
     {
         new copSkins[] = {280, 281, 282, 283, 284, 285};
-        new skinid = copSkins[random(sizeof(copSkins))];
-        NPC_SetSkin(0, skinid);
+        new model = copSkins[random(sizeof(copSkins))];
+        NPC_SetSkin(0, model);
         
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is now a police officer");
         return 1;

@@ -13,7 +13,7 @@ Loads an NPC recording file for playback use.
 
 | Name     | Description                      |
 | -------- | -------------------------------- |
-| filePath | The path to the recording file   |
+| const filePath | The path to the recording file   |
 
 ## Returns
 

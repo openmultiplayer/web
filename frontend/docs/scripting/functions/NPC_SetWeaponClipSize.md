@@ -14,7 +14,8 @@ Sets the clip size for an NPC's current weapon.
 | Name     | Description                    |
 | -------- | ------------------------------ |
 | npcid    | The ID of the NPC              |
-| clipsize | The new clip size              |
+| weapon | The weapon ID to set           |
+| size | The new clip size              |
 
 ## Returns
 
@@ -31,7 +32,7 @@ public OnGameModeInit()
     NPC_SetAmmo(npcid, 500); // Give 500 ammo
     
     // Set large clip size
-    NPC_SetWeaponClipSize(npcid, 100);
+    NPC_SetWeaponClipSize(npcid, WEAPON_M4, 100);
     
     printf("NPC %d M4 clip size set to 100", npcid);
     
@@ -43,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/bigclip", true))
     {
         // Set large clip for NPC 0
-        NPC_SetWeaponClipSize(0, 999);
+        NPC_SetWeaponClipSize(0, WEAPON_M4, 999);
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 weapon clip increased");
         return 1;
     }
@@ -55,12 +56,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // Set realistic clip size for NPC 0
         switch (weapon)
         {
-            case WEAPON_COLT45, WEAPON_SILENCED: NPC_SetWeaponClipSize(0, 17); // 9mm, Silenced 9mm
-            case WEAPON_DEAGLE: NPC_SetWeaponClipSize(0, 7);      // Desert Eagle
-            case WEAPON_SHOTGUN: NPC_SetWeaponClipSize(0, 12);     // Shotgun
-            case WEAPON_MP5: NPC_SetWeaponClipSize(0, 50);     // MP5
-            case WEAPON_AK47: NPC_SetWeaponClipSize(0, 30);     // AK-47
-            case WEAPON_M4: NPC_SetWeaponClipSize(0, 50);     // M4
+            case WEAPON_COLT45, WEAPON_SILENCED: NPC_SetWeaponClipSize(0, weapon, 17); // 9mm, Silenced 9mm
+            case WEAPON_DEAGLE: NPC_SetWeaponClipSize(0, weapon, 7);      // Desert Eagle
+            case WEAPON_SHOTGUN: NPC_SetWeaponClipSize(0, weapon, 12);     // Shotgun
+            case WEAPON_MP5: NPC_SetWeaponClipSize(0, weapon, 50);     // MP5
+            case WEAPON_AK47: NPC_SetWeaponClipSize(0, weapon, 30);     // AK-47
+            case WEAPON_M4: NPC_SetWeaponClipSize(0, weapon, 50);     // M4
         }
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 realistic clip set");
         return 1;

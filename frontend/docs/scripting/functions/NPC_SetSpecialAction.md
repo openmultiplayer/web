@@ -14,7 +14,7 @@ Sets an NPC's special action state, such as sitting, smoking, drinking, etc.
 | Name     | Description                    |
 | -------- | ------------------------------ |
 | npcid    | The ID of the NPC             |
-| actionid | The special action ID to set   |
+| action | The special action ID to set   |
 
 ## Returns
 

@@ -14,7 +14,7 @@ Sets an NPC's current weapon to a specific weapon ID.
 | Name     | Description                    |
 | -------- | ------------------------------ |
 | npcid    | The ID of the NPC             |
-| weaponid | The weapon ID to set           |
+| weapon | The weapon ID to set           |
 
 ## Returns
 

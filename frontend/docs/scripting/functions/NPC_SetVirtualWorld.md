@@ -14,7 +14,7 @@ Sets an NPC's virtual world, controlling which players can see and interact with
 | Name         | Description                    |
 | ------------ | ------------------------------ |
 | npcid        | The ID of the NPC             |
-| virtualworld | The virtual world ID to set    |
+| vw | The virtual world ID to set    |
 
 ## Returns
 

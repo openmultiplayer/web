@@ -16,13 +16,12 @@ Starts playback for an NPC using a pre-loaded recording ID with extended options
 | npcid               | The ID of the NPC                                    |
 | recordId            | The pre-loaded recording ID                          |
 | autoUnload          | Whether to automatically unload after playback      |
-| deltaX              | X offset from recording position                     |
-| deltaY              | Y offset from recording position                     |
-| deltaZ              | Z offset from recording position                     |
-| deltaAngle          | Angle offset from recording                          |
-| velocityX           | X velocity offset                                    |
-| velocityY           | Y velocity offset                                    |
-| velocityZ           | Z velocity offset                                    |
+| startX              | X offset from recording position                     |
+| startY              | Y offset from recording position                     |
+| startZ              | Z offset from recording position                     |
+| rotX                | X rotation offset                                    |
+| rotY                | Y rotation offset                                    |
+| rotZ                | Z rotation offset                                    |
 
 ## Returns
 
@@ -37,7 +36,7 @@ public OnGameModeInit()
 {
     // Pre-load recordings
     g_PatrolRecord = NPC_LoadRecord("recordings/patrol.rec");
-    
+    no, i mean th
     if (NPC_IsValidRecord(g_PatrolRecord))
     {
         printf("Patrol recording loaded with ID %d", g_PatrolRecord);
@@ -51,16 +50,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/startpatrol", true))
     {
         // Start NPC 0 playing the pre-loaded recording
-        NPC_StartPlaybackEx(0, g_PatrolRecord, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+        NPC_StartPlaybackEx(0, g_PatrolRecord, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 started patrol playback");
         return 1;
     }
     
-    if (!strcmp(cmdtext, "/startpatrolfast", true))
+    if (!strcmp(cmdtext, "/startpatrolrotated", true))
     {
-        // Start with velocity boost
-        NPC_StartPlaybackEx(0, g_PatrolRecord, true, 0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 0.0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 started fast patrol");
+        // Start with rotation offset
+        NPC_StartPlaybackEx(0, g_PatrolRecord, true, 0.0, 0.0, 0.0, 0.0, 0.0, 90.0);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 started patrol with rotation");
         return 1;
     }
     return 0;
@@ -72,7 +71,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Recording must be pre-loaded with `NPC_LoadRecord`
 - More efficient than `NPC_StartPlayback` for repeated use
 - Auto-unload saves memory when playback completes
-- Velocity offsets affect movement speed during playback
+- Rotation offsets allow adjusting the NPC's orientation during playback
 
 ## Related Functions
 

@@ -14,7 +14,7 @@ Sets an NPC's fighting style for melee combat.
 | Name         | Description                    |
 | ------------ | ------------------------------ |
 | npcid        | The ID of the NPC             |
-| fightingstyle| The fighting style ID         |
+| style        | The fighting style ID         |
 
 ## Returns
 
