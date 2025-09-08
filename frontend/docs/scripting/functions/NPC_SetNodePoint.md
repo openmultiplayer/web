@@ -143,5 +143,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCNodePointUpdate](OnNPCNodePointUpdate): Called when point updates
-- [OnNPCReachNodePoint](OnNPCReachNodePoint): Called when NPC reaches point
+This function does not trigger any specific callbacks.

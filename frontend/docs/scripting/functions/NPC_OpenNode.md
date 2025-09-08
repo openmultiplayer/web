@@ -67,7 +67,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new openedCount = 0;
         
-        for (new nodeid = 0; nodeid < 20; nodeid++)
+        for (new nodeid = 0; nodeid < 64; nodeid++)
         {
             if (NPC_OpenNode(nodeid))
             {
@@ -86,6 +86,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
+- Node IDs range from 0 to 63
 - Nodes must be opened before NPCs can use them for navigation
 - Opening a node loads its data and makes it accessible
 - Use NPC_IsNodeOpen to check if a node is already open
@@ -100,5 +101,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCNodeOpen](OnNPCNodeOpen): Called when node opens
-- [OnNPCNodeClose](OnNPCNodeClose): Called when node closes
+This function does not trigger any specific callbacks.

@@ -1,7 +1,7 @@
 ---
 title: NPC_PlayNode
 sidebar_label: NPC_PlayNode
-description: Makes an NPC play/navigate through a node.
+description: Makes an NPC navigate through predefined navigation nodes.
 tags: ["npc", "node", "navigation"]
 ---
 
@@ -9,13 +9,16 @@ tags: ["npc", "node", "navigation"]
 
 ## Description
 
-Makes an NPC play/navigate through a node with specified movement type.
+Makes an NPC navigate through predefined navigation nodes using the game's built-in navigation system.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
-| npcid    | The ID of the NPC             |
-| nodeid   | The ID of the node to play    |
-| moveType | The movement type to use      |
+| Name           | Description                                                    |
+| -------------- | -------------------------------------------------------------- |
+| npcid          | The ID of the NPC                                             |
+| nodeId         | The ID of the node to navigate                                |
+| moveType       | Movement type (default: NPC_MOVE_TYPE_JOG)                   |
+| Float:speed    | Movement speed (default: NPC_MOVE_SPEED_AUTO)                |
+| Float:radius   | Radius around nodes to consider as reached (default: 0.0)    |
+| bool:setAngle  | Whether to update NPC's facing angle during navigation (default: true) |
 
 ## Returns
 
@@ -24,22 +27,16 @@ Returns `true` if the NPC started playing the node, `false` otherwise.
 ## Examples
 
 ```c
-new g_NavigationNode = -1;
-
 public OnGameModeInit()
 {
-    // Open and configure navigation node
-    g_NavigationNode = NPC_OpenNode(1);
+    new npcid = NPC_Create("NodeWalker");
+    NPC_Spawn(npcid);
+    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
     
-    if (g_NavigationNode != -1)
+    // First open node 25, then make NPC navigate through it
+    if (NPC_OpenNode(25))
     {
-        // Configure node points
-        NPC_SetNodePoint(g_NavigationNode, 0, 1958.33, 1343.12, 15.36);
-        NPC_SetNodePoint(g_NavigationNode, 1, 2058.33, 1343.12, 15.36);
-        NPC_SetNodePoint(g_NavigationNode, 2, 2058.33, 1443.12, 15.36);
-        NPC_SetNodePoint(g_NavigationNode, 3, 1958.33, 1443.12, 15.36);
-        
-        printf("Navigation node %d configured with 4 points", g_NavigationNode);
+        NPC_PlayNode(npcid, 25);
     }
     
     return 1;
@@ -47,81 +44,80 @@ public OnGameModeInit()
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/startnavigation", true))
+    if (!strcmp(cmdtext, "/npcpatrol", true))
     {
-        if (g_NavigationNode != -1)
+        // Open and make NPC 0 patrol through node 15 at jogging speed with custom radius
+        if (NPC_OpenNode(15))
         {
-            if (NPC_PlayNode(0, g_NavigationNode, NPC_MOVE_TYPE_WALK))
-            {
-                SendClientMessage(playerid, 0x00FF00FF, "NPC 0 started navigation route");
-            }
-            else
-            {
-                SendClientMessage(playerid, 0xFF0000FF, "Failed to start navigation for NPC 0");
-            }
+            NPC_PlayNode(0, 15, NPC_MOVE_TYPE_JOG, 1.5, 2.0, true);
+            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is now patrolling node 15");
         }
         else
         {
-            SendClientMessage(playerid, 0xFF0000FF, "Navigation node not available");
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to open node 15");
         }
         return 1;
     }
     
-    if (!strcmp(cmdtext, "/quicknode", true))
+    if (!strcmp(cmdtext, "/npcwalk", true))
     {
-        // Create a quick node at player location
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
-        
-        new quickNode = NPC_OpenNode(5);
-        if (quickNode != -1)
+        // Open and make NPC walk through node 8 without changing angle
+        if (NPC_OpenNode(8))
         {
-            // Simple 2-point route
-            NPC_SetNodePoint(quickNode, 0, x, y, z);
-            NPC_SetNodePoint(quickNode, 1, x + 20.0, y + 20.0, z);
-            
-            if (NPC_PlayNode(0, quickNode, NPC_MOVE_TYPE_JOG))
-            {
-                SendClientMessage(playerid, 0x00FF00FF, "NPC 0 following quick route");
-            }
-        }
-        return 1;
-    }
-    
-    if (!strcmp(cmdtext, "/nodestatus", true))
-    {
-        if (NPC_IsPlayingNode(0))
-        {
-            new currentPoint = NPC_GetCurrentNodePoint(0);
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 is at node point %d", currentPoint);
-            SendClientMessage(playerid, 0xFFFF00FF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is not playing any node");
+            NPC_PlayNode(0, 8, NPC_MOVE_TYPE_WALK, NPC_MOVE_SPEED_AUTO, 0.0, false);
+            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 walking node 8");
         }
         return 1;
     }
     return 0;
 }
+
+public OnNPCFinishNode(npcid, nodeId)
+{
+    printf("NPC %d finished navigating node %d", npcid, nodeId);
+    
+    // Start navigating the next node
+    new nextNode = nodeId + 1;
+    if (nextNode <= 63) // Nodes are 0-63
+    {
+        if (NPC_OpenNode(nextNode))
+        {
+            NPC_PlayNode(npcid, nextNode, NPC_MOVE_TYPE_WALK);
+        }
+    }
+    else
+    {
+        // Loop back to first node
+        if (NPC_OpenNode(0))
+        {
+            NPC_PlayNode(npcid, 0, NPC_MOVE_TYPE_WALK);
+        }
+    }
+    
+    return 1;
+}
 ```
 
 ## Notes
 
-- Node must be opened with NPC_OpenNode before use
-- Different movement types affect navigation speed and style
-- Use NPC_IsPlayingNode to check if NPC is playing a node
-- Node playing can be paused or stopped
+- Nodes are predefined navigation points from the game's node files (IDs 0-63)
+- The node must be opened with `NPC_OpenNode` before it can be used
+- The NPC will automatically navigate between points within the specified node
+- Use `setAngle` parameter to control whether the NPC rotates to face movement direction
+- The `radius` parameter determines how close the NPC needs to get to each point
+- Node navigation can be paused, resumed, or stopped using related functions
 
 ## Related Functions
 
+- [NPC_StopPlayingNode](NPC_StopPlayingNode): Stop NPC node navigation
+- [NPC_PausePlayingNode](NPC_PausePlayingNode): Pause NPC node navigation
+- [NPC_ResumePlayingNode](NPC_ResumePlayingNode): Resume paused node navigation
+- [NPC_IsPlayingNode](NPC_IsPlayingNode): Check if NPC is navigating a node
+- [NPC_ChangeNode](NPC_ChangeNode): Change to a different node during navigation
 - [NPC_OpenNode](NPC_OpenNode): Open a node for use
-- [NPC_StopPlayingNode](NPC_StopPlayingNode): Stop playing node
-- [NPC_PausePlayingNode](NPC_PausePlayingNode): Pause node playing
-- [NPC_IsPlayingNode](NPC_IsPlayingNode): Check if playing
 
 ## Related Callbacks
 
-- [OnNPCStartNode](OnNPCStartNode): Called when NPC starts node
-- [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes node
+- [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes navigating a node
+- [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC reaches a point within a node
+- [OnNPCChangeNode](OnNPCChangeNode): Called when NPC changes from one node to another

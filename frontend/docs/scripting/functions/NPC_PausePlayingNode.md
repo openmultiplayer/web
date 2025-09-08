@@ -71,5 +71,4 @@ public ResumeNode(npcid)
 
 ## Related Callbacks
 
-- [OnNPCNodePause](OnNPCNodePause): Called when node pauses
-- [OnNPCNodeResume](OnNPCNodeResume): Called when node resumes
+This function does not trigger any specific callbacks.
