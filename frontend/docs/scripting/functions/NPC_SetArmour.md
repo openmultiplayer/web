@@ -18,7 +18,7 @@ Sets an NPC's armour level.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the armour was set successfully, `false` otherwise.
 
 ## Examples
 

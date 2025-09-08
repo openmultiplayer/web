@@ -17,7 +17,7 @@ Stops an NPC from aiming at any target.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

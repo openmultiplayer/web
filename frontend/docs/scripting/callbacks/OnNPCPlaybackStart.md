@@ -1,7 +1,7 @@
 ---
 title: OnNPCPlaybackStart
 sidebar_label: OnNPCPlaybackStart
-description: This callback is called when a NPC starts playback of a recorded file.
+description: This callback is called when an NPC starts playback of a recorded file.
 tags: ["npc", "playback", "recording"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "playback", "recording"]
 
 ## Description
 
-This callback is called when a NPC starts playback of a recorded file.
+This callback is called when an NPC starts playback of a recorded file.
 
 | Name     | Description                                    |
 | -------- | ---------------------------------------------- |
@@ -24,8 +24,8 @@ public OnNPCPlaybackStart(npcid, recordid)
     printf("NPC %d started playing record %d", npcid, recordid);
     
     // Set properties during playback
-    SetPlayerHealth(npcid, 100.0);
-    SetPlayerArmour(npcid, 50.0);
+    NPC_SetHealth(npcid, 100.0);
+    NPC_SetArmour(npcid, 50.0);
     
     return true;
 }

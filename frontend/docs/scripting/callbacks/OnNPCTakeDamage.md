@@ -1,7 +1,7 @@
 ---
 title: OnNPCTakeDamage
 sidebar_label: OnNPCTakeDamage
-description: This callback is called when a NPC takes damage.
+description: This callback is called when an NPC takes damage.
 tags: ["npc", "damage"]
 ---
 
@@ -9,15 +9,15 @@ tags: ["npc", "damage"]
 
 ## Description
 
-This callback is called when a NPC takes damage from a player or another NPC.
+This callback is called when an NPC takes damage from a player or another NPC.
 
 | Name       | Description                                      |
 | ---------- | ------------------------------------------------ |
 | npcid      | The ID of the NPC that took damage              |
 | issuerid   | The ID of the player/NPC that caused the damage |
 | amount     | The amount of damage that was taken             |
-| weapon     | The weapon ID used to cause the damage          |
-| bodypart | The [body part](../resources/bodyparts) that was hit   |
+| weaponid   | The weapon ID used to cause the damage          |
+| bodypart   | The [body part](../resources/bodyparts) that was hit   |
 
 ## Returns
 
@@ -26,7 +26,7 @@ Return `false` to prevent the damage from being applied, or `true` to allow it.
 ## Examples
 
 ```c
-public OnNPCTakeDamage(npcid, issuerid, Float:amount, weapon, bodypart)
+public OnNPCTakeDamage(npcid, issuerid, Float:amount, weaponid, bodypart)
 {
     printf("NPC %d took %.2f damage from %d", npcid, amount, issuerid);
     
@@ -58,6 +58,6 @@ The following functions might be useful, as they're related to this callback in 
 
 ## Related Callbacks
 
-- [OnNPCGiveDamage](OnNPCGiveDamage): Called when a NPC gives damage to a player
-- [OnNPCDeath](OnNPCDeath): Called when a NPC dies
+- [OnNPCGiveDamage](OnNPCGiveDamage): Called when an NPC gives damage to a player
+- [OnNPCDeath](OnNPCDeath): Called when an NPC dies
 - [OnPlayerTakeDamage](OnPlayerTakeDamage): Called when a player takes damage

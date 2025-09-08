@@ -20,7 +20,7 @@ Gets the current key states of an NPC.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the keys were retrieved successfully, `false` otherwise.
 
 ## Examples
 
@@ -34,11 +34,11 @@ public OnGameModeInit()
     NPC_SetKeys(npcid, KEY_UP, KEY_LEFT, KEY_FIRE);
     
     // Get the keys back
-    new upDown, leftRight, keys;
-    NPC_GetKeys(npcid, upDown, leftRight, keys);
+    new upDown, leftDown, keys;
+    NPC_GetKeys(npcid, upDown, leftDown, keys);
     
-    printf("NPC %d keys - UpDown: %d, LeftRight: %d, Keys: %d", 
-        npcid, upDown, leftRight, keys);
+    printf("NPC %d keys - UpDown: %d, LeftDown: %d, Keys: %d", 
+        npcid, upDown, leftDown, keys);
     
     return 1;
 }
@@ -47,15 +47,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkkeys", true))
     {
-        new upDown, leftRight, keys;
-        NPC_GetKeys(0, upDown, leftRight, keys);
+        new upDown, leftDown, keys;
+        NPC_GetKeys(0, upDown, leftDown, keys);
         
         new keyInfo[128] = "NPC 0 Keys:";
         
         if (upDown & KEY_UP) strcat(keyInfo, " UP");
         if (upDown & KEY_DOWN) strcat(keyInfo, " DOWN");
-        if (leftRight & KEY_LEFT) strcat(keyInfo, " LEFT");
-        if (leftRight & KEY_RIGHT) strcat(keyInfo, " RIGHT");
+        if (leftDown & KEY_LEFT) strcat(keyInfo, " LEFT");
+        if (leftDown & KEY_RIGHT) strcat(keyInfo, " RIGHT");
         if (keys & KEY_FIRE) strcat(keyInfo, " FIRE");
         
         SendClientMessage(playerid, 0xFFFFFFFF, keyInfo);

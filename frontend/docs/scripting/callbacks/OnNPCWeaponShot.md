@@ -1,7 +1,7 @@
 ---
 title: OnNPCWeaponShot
 sidebar_label: OnNPCWeaponShot
-description: This callback is called when a NPC fires a weapon.
+description: This callback is called when an NPC fires a weapon.
 tags: ["npc", "weapon", "shooting"]
 ---
 
@@ -9,12 +9,12 @@ tags: ["npc", "weapon", "shooting"]
 
 ## Description
 
-This callback is called when a NPC fires a weapon.
+This callback is called when an NPC fires a weapon.
 
 | Name     | Description                                      |
 | -------- | ------------------------------------------------ |
 | npcid    | The ID of the NPC that fired the weapon         |
-| weapon   | The weapon ID that was fired                    |
+| weaponid | The weapon ID that was fired                    |
 | hittype  | The type of entity that was hit (if any)        |
 | hitid    | The ID of the entity that was hit (if any)      |
 | fX       | The X coordinate where the bullet hit           |
@@ -28,9 +28,9 @@ Return `false` to prevent the shot from being processed, or `true` to allow it.
 ## Examples
 
 ```c
-public OnNPCWeaponShot(npcid, weapon, hittype, hitid, Float:fX, Float:fY, Float:fZ)
+public OnNPCWeaponShot(npcid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
-    printf("NPC %d fired weapon %d at %.2f, %.2f, %.2f", npcid, weapon, fX, fY, fZ);
+    printf("NPC %d fired weapon %d at %.2f, %.2f, %.2f", npcid, weaponid, fX, fY, fZ);
     
     switch(hittype)
     {

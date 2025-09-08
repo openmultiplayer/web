@@ -18,7 +18,7 @@ Sets the ammunition count for an NPC's current weapon.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the ammo was set successfully, `false` otherwise.
 
 ## Examples
 

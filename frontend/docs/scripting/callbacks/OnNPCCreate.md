@@ -1,7 +1,7 @@
 ---
 title: OnNPCCreate
 sidebar_label: OnNPCCreate
-description: This callback is called when a NPC is successfully created.
+description: This callback is called when an NPC is successfully created.
 tags: ["npc"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc"]
 
 ## Description
 
-This callback is called when a NPC is successfully created and added to the server.
+This callback is called when an NPC is successfully created and added to the server.
 
 | Name  | Description                    |
 | ----- | ------------------------------ |
@@ -23,8 +23,8 @@ public OnNPCCreate(npcid)
     printf("NPC %d has been created", npcid);
     
     // Set initial properties
-    SetPlayerSkin(npcid, 23);
-    SetPlayerPos(npcid, 1958.33, 1343.12, 15.36);
+    NPC_SetSkin(npcid, 23);
+    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
     
     return true;
 }
@@ -45,6 +45,6 @@ The following functions might be useful, as they're related to this callback in 
 
 ## Related Callbacks
 
-- [OnNPCDestroy](OnNPCDestroy): Called when a NPC is destroyed
-- [OnNPCSpawn](OnNPCSpawn): Called when a NPC is spawned
-- [OnNPCConnect](OnNPCConnect): Called when a NPC connects to the server
+- [OnNPCDestroy](OnNPCDestroy): Called when an NPC is destroyed
+- [OnNPCSpawn](OnNPCSpawn): Called when an NPC is spawned
+- [OnNPCConnect](OnNPCConnect): Called when an NPC connects to the server

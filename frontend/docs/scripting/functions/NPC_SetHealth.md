@@ -18,7 +18,7 @@ Sets the health value of an NPC.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the health was set successfully, `false` otherwise.
 
 ## Examples
 

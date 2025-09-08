@@ -20,7 +20,7 @@ Sets the position of an NPC instantly without movement animation.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` on success, `false` on failure.
 
 ## Examples
 
@@ -85,8 +85,6 @@ public ResetNPCPositions()
     // Reset NPC 0 to a specific position
     NPC_SetPos(0, 1958.33, 1343.12, 15.36);
     printf("NPC 0 position reset");
-    
-    printf("Reset positions for %d NPCs", count);
 }
 ```
 

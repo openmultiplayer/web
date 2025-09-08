@@ -17,7 +17,7 @@ Creates a new NPC.
 
 ## Returns
 
-Returns the ID of the created NPC, or `INVALID_NPC_ID` on failure.
+Returns the ID of the created NPC, or `INVALID_PLAYER_ID` on failure.
 
 ## Examples
 
@@ -25,7 +25,7 @@ Returns the ID of the created NPC, or `INVALID_NPC_ID` on failure.
 public OnGameModeInit()
 {
     new npcid = NPC_Create("MyBot");
-    if (npcid != INVALID_NPC_ID)
+    if (npcid != INVALID_PLAYER_ID)
     {
         printf("NPC created with ID: %d", npcid);
         NPC_Spawn(npcid);

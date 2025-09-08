@@ -1,7 +1,7 @@
 ---
 title: NPC_AddPointToPath
 sidebar_label: NPC_AddPointToPath
-description: Adds a waypoint to a NPC path.
+description: Adds a waypoint to an NPC path.
 tags: ["npc", "path"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "path"]
 
 ## Description
 
-Adds a waypoint to a NPC path.
+Adds a waypoint to an NPC path.
 
 | Name      | Description                                           |
 | --------- | ----------------------------------------------------- |

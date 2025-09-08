@@ -18,7 +18,7 @@ Sets an NPC's vehicle gear state when driving.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

@@ -18,7 +18,7 @@ Enables or disables automatic reloading for an NPC.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

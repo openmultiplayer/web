@@ -20,7 +20,7 @@ Gets the position of an NPC.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the position was retrieved successfully, `false` otherwise.
 
 ## Examples
 
@@ -70,7 +70,6 @@ public CheckNPCDistances()
     new Float:x, Float:y, Float:z;
     NPC_GetPos(0, x, y, z);
     printf("NPC 0 position: %.2f, %.2f, %.2f", x, y, z);
-    }
 }
 ```
 

@@ -18,7 +18,7 @@ Sets the amount of ammo in an NPC's weapon clip.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

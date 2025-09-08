@@ -1,7 +1,7 @@
 ---
 title: OnNPCFinishMove
 sidebar_label: OnNPCFinishMove
-description: This callback is called when a NPC finishes moving to its target destination.
+description: This callback is called when an NPC finishes moving to its target destination.
 tags: ["npc", "movement"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "movement"]
 
 ## Description
 
-This callback is called when a NPC finishes moving to its target destination.
+This callback is called when an NPC finishes moving to its target destination.
 
 | Name  | Description                                   |
 | ----- | --------------------------------------------- |
@@ -24,8 +24,8 @@ public OnNPCFinishMove(npcid)
     
     // Move to next destination
     new Float:x, Float:y, Float:z;
-    GetPlayerPos(npcid, x, y, z);
-    NPC_MoveTo(npcid, x + 10.0, y + 10.0, z, NPC_MOVE_TYPE_WALK);
+    NPC_GetPos(npcid, x, y, z);
+    NPC_Move(npcid, x + 10.0, y + 10.0, z, NPC_MOVE_TYPE_WALK);
     
     return true;
 }
@@ -35,14 +35,14 @@ public OnNPCFinishMove(npcid)
 
 - This callback is called for all types of NPC movement (walk, run, sprint, drive)
 - It is called when the NPC reaches the target position set by movement functions
-- For path-based movement, this is called when the entire path is completed
+- For path-based movement, this is called when the entire path is completed (see `OnNPCFinishMovePath` for path-specific callback)
 - For player following, this is called when the NPC stops following (if auto-restart is disabled)
 
 ## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_MoveTo](NPC_MoveTo): Make NPC move to a position
+- [NPC_Move](NPC_Move): Make NPC move to a position
 - [NPC_MoveToPlayer](NPC_MoveToPlayer): Make NPC follow a player
 - [NPC_StopMove](NPC_StopMove): Stop NPC movement
 - [NPC_IsMoving](NPC_IsMoving): Check if NPC is currently moving
@@ -51,3 +51,4 @@ The following functions might be useful, as they're related to this callback in 
 
 - [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC reaches a node point
 - [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes node navigation
+- [OnNPCFinishMovePath](OnNPCFinishMovePath): Called when NPC finishes moving along a path

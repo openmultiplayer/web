@@ -13,7 +13,7 @@ Destroys all existing NPC paths on the server.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

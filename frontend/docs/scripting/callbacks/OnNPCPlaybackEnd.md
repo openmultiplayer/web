@@ -1,7 +1,7 @@
 ---
 title: OnNPCPlaybackEnd
 sidebar_label: OnNPCPlaybackEnd
-description: This callback is called when a NPC finishes playback of a recorded file.
+description: This callback is called when an NPC finishes playback of a recorded file.
 tags: ["npc", "playback", "recording"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "playback", "recording"]
 
 ## Description
 
-This callback is called when a NPC finishes playback of a recorded file.
+This callback is called when an NPC finishes playback of a recorded file.
 
 | Name     | Description                                      |
 | -------- | ------------------------------------------------ |

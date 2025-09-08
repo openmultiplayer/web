@@ -18,7 +18,7 @@ Gets the facing angle of an NPC.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the facing angle was retrieved successfully, `false` otherwise.
 
 ## Examples
 

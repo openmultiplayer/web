@@ -18,7 +18,7 @@ Sets the Hydra thruster direction for an NPC's vehicle when piloting a Hydra air
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

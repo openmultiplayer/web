@@ -20,7 +20,7 @@ Sets an NPC's rotation on all three axes (X, Y, Z).
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

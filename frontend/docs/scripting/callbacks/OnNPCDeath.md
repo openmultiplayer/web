@@ -1,7 +1,7 @@
 ---
 title: OnNPCDeath
 sidebar_label: OnNPCDeath
-description: This callback is called when a NPC dies.
+description: This callback is called when an NPC dies.
 tags: ["npc"]
 ---
 
@@ -9,22 +9,22 @@ tags: ["npc"]
 
 ## Description
 
-This callback is called when a NPC dies.
+This callback is called when an NPC dies.
 
 | Name     | Description                                           |
 | -------- | ----------------------------------------------------- |
 | npcid    | The ID of the NPC that died                          |
 | killerid | The ID of the player/NPC that killed the NPC (or INVALID_PLAYER_ID if none) |
-| weapon   | The weapon ID that was used to kill the NPC          |
+| reason   | The reason for death (weapon ID or death cause)      |
 
 ## Examples
 
 ```c
-public OnNPCDeath(npcid, killerid, weapon)
+public OnNPCDeath(npcid, killerid, reason)
 {
     if (killerid != INVALID_PLAYER_ID)
     {
-        printf("NPC %d was killed by %d with weapon %d", npcid, killerid, weapon);
+        printf("NPC %d was killed by %d with reason %d", npcid, killerid, reason);
     }
     else
     {
@@ -47,20 +47,20 @@ public RespawnNPC(npcid)
 ## Notes
 
 - The `killerid` parameter will be `INVALID_PLAYER_ID` if the NPC death was not player inflicted
-- The `weapon` parameter contains the weapon ID that caused the death (255 for unknown/other causes)
+- The `reason` parameter contains the weapon ID that caused the death (255 for unknown/other causes)
 
 ## Related Functions
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_Kill](NPC_Kill): Kill a NPC
+- [NPC_Kill](NPC_Kill): Kill an NPC
 - [NPC_Respawn](NPC_Respawn): Respawn a dead NPC
 - [NPC_GetHealth](NPC_GetHealth): Get NPC's health
 - [NPC_SetHealth](NPC_SetHealth): Set NPC's health
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when a NPC spawns
-- [OnNPCRespawn](OnNPCRespawn): Called when a NPC respawns
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when a NPC takes damage
+- [OnNPCSpawn](OnNPCSpawn): Called when an NPC spawns
+- [OnNPCRespawn](OnNPCRespawn): Called when an NPC respawns
+- [OnNPCTakeDamage](OnNPCTakeDamage): Called when an NPC takes damage
 - [OnPlayerDeath](OnPlayerDeath): Called when a player dies

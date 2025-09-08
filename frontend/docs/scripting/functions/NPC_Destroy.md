@@ -17,7 +17,7 @@ Destroys an NPC.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the NPC was destroyed successfully, `false` otherwise.
 
 ## Examples
 

@@ -1,7 +1,7 @@
 ---
 title: OnNPCFinishNode
 sidebar_label: OnNPCFinishNode
-description: This callback is called when a NPC finishes navigating a complete node.
+description: This callback is called when an NPC finishes navigating a complete node.
 tags: ["npc", "node", "navigation"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "node", "navigation"]
 
 ## Description
 
-This callback is called when a NPC finishes navigating a complete node during node-based movement.
+This callback is called when an NPC finishes navigating a complete node during node-based movement.
 
 | Name   | Description                                    |
 | ------ | ---------------------------------------------- |

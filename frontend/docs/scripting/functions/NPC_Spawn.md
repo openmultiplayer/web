@@ -17,7 +17,7 @@ Spawns an NPC into the game world, making it visible and active.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the NPC was spawned successfully, `false` otherwise.
 
 ## Examples
 

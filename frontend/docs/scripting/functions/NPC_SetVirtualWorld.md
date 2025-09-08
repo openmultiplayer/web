@@ -18,7 +18,7 @@ Sets an NPC's virtual world, controlling which players can see and interact with
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

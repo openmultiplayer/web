@@ -1,7 +1,7 @@
 ---
 title: OnNPCFinishMovePath
 sidebar_label: OnNPCFinishMovePath
-description: This callback is called when a NPC finishes moving along a predefined path.
+description: This callback is called when an NPC finishes moving along a predefined path.
 tags: ["npc", "movement", "path"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "movement", "path"]
 
 ## Description
 
-This callback is called when a NPC finishes moving along a predefined path.
+This callback is called when an NPC finishes moving along a predefined path.
 
 | Name   | Description                                    |
 | ------ | ---------------------------------------------- |

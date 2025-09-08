@@ -19,7 +19,7 @@ Makes an NPC perform a melee attack for a specified duration.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

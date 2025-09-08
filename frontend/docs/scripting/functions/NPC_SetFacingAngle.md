@@ -18,7 +18,7 @@ Sets an NPC's facing angle.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the facing angle was set successfully, `false` otherwise.
 
 ## Examples
 

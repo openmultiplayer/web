@@ -14,7 +14,6 @@ Gets all NPC IDs and stores them in an array.
 | Name    | Description                                    |
 | ------- | ---------------------------------------------- |
 | npcs[]  | Array to store the NPC IDs                   |
-| size    | Size of the array (default: sizeof(npcs))    |
 
 ## Returns
 
@@ -47,7 +46,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/countnpcs", true))
     {
-        new count = NPC_GetAll(new npcs[MAX_NPCS]);
+        new npcs[MAX_NPCS];
+        new count = NPC_GetAll(npcs);
         
         new msg[64];
         format(msg, sizeof(msg), "There are %d NPCs on the server", count);

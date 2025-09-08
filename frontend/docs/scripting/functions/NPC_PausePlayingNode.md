@@ -17,7 +17,7 @@ Pauses an NPC's node navigation, temporarily stopping their movement through the
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

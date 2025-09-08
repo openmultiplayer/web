@@ -1,7 +1,7 @@
 ---
 title: NPC_RemovePointFromPath
 sidebar_label: NPC_RemovePointFromPath
-description: Removes a waypoint from a NPC path.
+description: Removes a waypoint from an NPC path.
 tags: ["npc", "path"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "path"]
 
 ## Description
 
-Removes a waypoint from a NPC path.
+Removes a waypoint from an NPC path.
 
 | Name        | Description                               |
 | ----------- | ----------------------------------------- |

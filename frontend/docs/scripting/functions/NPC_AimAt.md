@@ -1,7 +1,7 @@
 ---
 title: NPC_AimAt
 sidebar_label: NPC_AimAt
-description: Makes a NPC aim at a specific position.
+description: Makes an NPC aim at a specific position.
 tags: ["npc", "weapon", "aiming"]
 ---
 
@@ -9,25 +9,25 @@ tags: ["npc", "weapon", "aiming"]
 
 ## Description
 
-Makes a NPC aim at a specific position.
+Makes an NPC aim at a specific position.
 
 | Name                 | Description                                      |
 | -------------------- | ------------------------------------------------ |
 | npcid                | The ID of the NPC                               |
-| pointX               | The X coordinate to aim at                      |
-| pointY               | The Y coordinate to aim at                      |
-| pointZ               | The Z coordinate to aim at                      |
-| shoot                | Whether to shoot while aiming                   |
+| Float:pointX         | The X coordinate to aim at                      |
+| Float:pointY         | The Y coordinate to aim at                      |
+| Float:pointZ         | The Z coordinate to aim at                      |
+| bool:shoot           | Whether to shoot while aiming                   |
 | shootDelay           | Delay between shots in milliseconds             |
-| updateAngle          | Whether to update the NPC's facing angle       |
-| offsetFromX          | The X offset from the NPC's shooting position  |
-| offsetFromY          | The Y offset from the NPC's shooting position  |
-| offsetFromZ          | The Z offset from the NPC's shooting position  |
+| bool:updateAngle     | Whether to update the NPC's facing angle       |
+| Float:offsetFromX    | The X offset from the NPC's shooting position  |
+| Float:offsetFromY    | The Y offset from the NPC's shooting position  |
+| Float:offsetFromZ    | The Z offset from the NPC's shooting position  |
 | checkInBetweenFlags  | Entity check flags for collision detection     |
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 
@@ -79,4 +79,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Related Callbacks
 
 - [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires a weapon
-- [OnNPCShotMissed](OnNPCShotMissed): Called when NPC misses a shot

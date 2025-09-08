@@ -17,7 +17,7 @@ Closes an NPC node, making it unavailable for use by NPCs.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

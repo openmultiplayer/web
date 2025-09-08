@@ -1,7 +1,7 @@
 ---
 title: OnNPCRespawn
 sidebar_label: OnNPCRespawn
-description: This callback is called when a NPC respawns.
+description: This callback is called when an NPC respawns.
 tags: ["npc"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc"]
 
 ## Description
 
-This callback is called when a NPC respawns.
+This callback is called when an NPC respawns.
 
 | Name  | Description                      |
 | ----- | -------------------------------- |
@@ -23,8 +23,8 @@ public OnNPCRespawn(npcid)
     printf("NPC %d has respawned", npcid);
     
     // Set respawn position
-    SetPlayerPos(npcid, 1958.33, 1343.12, 15.36);
-    SetPlayerFacingAngle(npcid, 0.0);
+    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
+    NPC_SetFacingAngle(npcid, 0.0);
     
     return true;
 }
@@ -40,13 +40,13 @@ public OnNPCRespawn(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_Respawn](NPC_Respawn): Respawn a NPC
-- [NPC_Spawn](NPC_Spawn): Spawn a NPC for the first time
+- [NPC_Respawn](NPC_Respawn): Respawn an NPC
+- [NPC_Spawn](NPC_Spawn): Spawn an NPC for the first time
 - [NPC_SetHealth](NPC_SetHealth): Set NPC's health
 - [NPC_SetPosition](NPC_SetPosition): Set NPC's position
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when a NPC spawns for the first time
-- [OnNPCDeath](OnNPCDeath): Called when a NPC dies
+- [OnNPCSpawn](OnNPCSpawn): Called when an NPC spawns for the first time
+- [OnNPCDeath](OnNPCDeath): Called when an NPC dies
 - [OnPlayerSpawn](OnPlayerSpawn): Called when a player spawns

@@ -18,12 +18,12 @@ Makes an NPC move toward and follow a player.
 | moveType         | Movement type (default: NPC_MOVE_TYPE_JOG)                         |
 | moveSpeed        | Movement speed (default: NPC_MOVE_SPEED_AUTO)                       |
 | stopRange        | Distance to stop from player (default: 0.2)                        |
-| updateDelayMS    | Update delay in milliseconds (default: 500)                        |
+| posCheckUpdateDelay | Position check update delay in milliseconds (default: 500)      |
 | autoRestart      | Whether to automatically restart following (default: false)         |
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` on success, `false` on failure.
 
 ## Examples
 
@@ -59,8 +59,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - NPCs will continuously follow the target player until stopped
-- The `updateDelayMS` parameter controls how often the NPC updates its target position
-- Lower `updateDelayMS` values provide smoother following but use more resources
+- The `posCheckUpdateDelay` parameter controls how often the NPC updates its target position
+- Lower `posCheckUpdateDelay` values provide smoother following but use more resources
 - The `autoRestart` parameter determines if following resumes after interruptions
 - NPCs will path-find around obstacles when possible
 - Following stops when the target player disconnects

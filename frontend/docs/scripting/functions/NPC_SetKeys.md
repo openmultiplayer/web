@@ -20,7 +20,7 @@ Sets the key states for an NPC, simulating key presses.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 
@@ -68,5 +68,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCKeyStateChange](OnNPCKeyStateChange): Called when keys change
-- [OnNPCUpdate](OnNPCUpdate): Called when NPC updates
+This function does not trigger any specific callbacks.

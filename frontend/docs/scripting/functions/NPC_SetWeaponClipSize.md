@@ -18,7 +18,7 @@ Sets the clip size for an NPC's current weapon.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

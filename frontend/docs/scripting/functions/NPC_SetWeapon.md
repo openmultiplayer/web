@@ -18,7 +18,7 @@ Sets an NPC's current weapon to a specific weapon ID.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the weapon was set successfully, `false` otherwise.
 
 ## Examples
 

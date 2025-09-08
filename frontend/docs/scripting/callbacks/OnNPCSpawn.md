@@ -1,13 +1,13 @@
 ---
 title: OnNPCSpawn
 sidebar_label: OnNPCSpawn
-description: This callback is called when a NPC spawns.
+description: This callback is called when an NPC spawns.
 tags: ["npc"]
 ---
 
 ## Description
 
-This callback is called when a NPC spawns.
+This callback is called when an NPC spawns.
 
 | Name  | Description                    |
 | ----- | ------------------------------ |
@@ -38,14 +38,14 @@ public OnNPCSpawn(npcid)
 
 ## Related Functions
 
-- [NPC_Spawn](NPC_Spawn): Spawn a NPC in the game world
+- [NPC_Spawn](NPC_Spawn): Spawn an NPC in the game world
 - [NPC_Respawn](NPC_Respawn): Respawn a dead NPC
 - [NPC_SetHealth](NPC_SetHealth): Set NPC's health
 - [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
 
 ## Related Callbacks
 
-- [OnNPCCreate](OnNPCCreate): Called when a NPC is created
-- [OnNPCRespawn](OnNPCRespawn): Called when a NPC respawns
-- [OnNPCDeath](OnNPCDeath): Called when a NPC dies
+- [OnNPCCreate](OnNPCCreate): Called when an NPC is created
+- [OnNPCRespawn](OnNPCRespawn): Called when an NPC respawns
+- [OnNPCDeath](OnNPCDeath): Called when an NPC dies
 - [OnPlayerSpawn](OnPlayerSpawn): Called when a player spawns

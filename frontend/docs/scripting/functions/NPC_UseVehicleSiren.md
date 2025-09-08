@@ -18,7 +18,7 @@ Makes an NPC use or stop using a vehicle siren.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

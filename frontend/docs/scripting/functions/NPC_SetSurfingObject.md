@@ -18,7 +18,7 @@ Sets the object an NPC is surfing on.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

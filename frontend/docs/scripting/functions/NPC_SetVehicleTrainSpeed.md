@@ -18,7 +18,7 @@ Sets the speed of an NPC's train vehicle.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

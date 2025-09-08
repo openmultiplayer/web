@@ -1,7 +1,7 @@
 ---
 title: OnNPCFinishNodePoint
 sidebar_label: OnNPCFinishNodePoint
-description: This callback is called when a NPC reaches a specific point during node-based navigation.
+description: This callback is called when an NPC reaches a specific point during node-based navigation.
 tags: ["npc", "node", "navigation"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "node", "navigation"]
 
 ## Description
 
-This callback is called when a NPC reaches a specific point during node-based navigation.
+This callback is called when an NPC reaches a specific point during node-based navigation.
 
 | Name    | Description                                      |
 | ------- | ------------------------------------------------ |

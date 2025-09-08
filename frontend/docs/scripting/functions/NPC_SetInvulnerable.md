@@ -18,7 +18,7 @@ Sets whether an NPC is invulnerable to damage.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the invulnerability was set successfully, `false` otherwise.
 
 ## Examples
 
@@ -54,15 +54,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 // Boss NPC that becomes vulnerable after certain conditions
 public OnPlayerEnterCheckpoint(playerid)
 {
-    new npcid = GetClosestNPC(playerid);
-    if (npcid != INVALID_NPC_ID)
+    // Make boss NPC (assuming it's NPC ID 1) vulnerable during final phase
+    if (GetPlayerScore(playerid) >= 1000)
     {
-        // Make boss vulnerable during final phase
-        if (GetPlayerScore(playerid) >= 1000)
-        {
-            NPC_SetInvulnerable(npcid, false);
-            SendClientMessage(playerid, 0xFF0000FF, "The boss is now vulnerable!");
-        }
+        NPC_SetInvulnerable(1, false);
+        SendClientMessage(playerid, 0xFF0000FF, "The boss is now vulnerable!");
     }
     return 1;
 }

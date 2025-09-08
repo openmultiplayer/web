@@ -13,7 +13,7 @@ Creates a new path that can be used for NPC navigation.
 
 ## Returns
 
-Returns the ID of the created path, or `INVALID_PATH_ID` on failure.
+Returns the ID of the created path, or `0` on failure.
 
 ## Examples
 
@@ -21,7 +21,7 @@ Returns the ID of the created path, or `INVALID_PATH_ID` on failure.
 public OnGameModeInit()
 {
     new pathid = NPC_CreatePath();
-    if (pathid != INVALID_PATH_ID)
+    if (pathid != 0)
     {
         printf("Path created with ID: %d", pathid);
         

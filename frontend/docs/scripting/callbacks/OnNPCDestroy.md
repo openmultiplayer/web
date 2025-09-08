@@ -1,7 +1,7 @@
 ---
 title: OnNPCDestroy
 sidebar_label: OnNPCDestroy
-description: This callback is called when a NPC is destroyed.
+description: This callback is called when an NPC is destroyed.
 tags: ["npc"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc"]
 
 ## Description
 
-This callback is called when a NPC is destroyed and removed from the server.
+This callback is called when an NPC is destroyed and removed from the server.
 
 | Name  | Description                        |
 | ----- | ---------------------------------- |
@@ -48,6 +48,6 @@ The following functions might be useful, as they're related to this callback in 
 
 ## Related Callbacks
 
-- [OnNPCCreate](OnNPCCreate): Called when a NPC is created
-- [OnNPCConnect](OnNPCConnect): Called when a NPC connects to the server
-- [OnNPCDisconnect](OnNPCDisconnect): Called when a NPC disconnects from the server
+- [OnNPCCreate](OnNPCCreate): Called when an NPC is created
+- [OnNPCConnect](OnNPCConnect): Called when an NPC connects to the server
+- [OnNPCDisconnect](OnNPCDisconnect): Called when an NPC disconnects from the server

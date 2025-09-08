@@ -1,7 +1,7 @@
 ---
 title: OnNPCChangeNode
 sidebar_label: OnNPCChangeNode
-description: This callback is called when a NPC attempts to change from one navigation node to another during node-based movement.
+description: This callback is called when an NPC attempts to change from one navigation node to another during node-based movement.
 tags: ["npc", "node", "navigation"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "node", "navigation"]
 
 ## Description
 
-This callback is called when a NPC attempts to change from one navigation node to another during node-based movement. This allows you to control whether the node change should be allowed or denied.
+This callback is called when an NPC attempts to change from one navigation node to another during node-based movement. This allows you to control whether the node change should be allowed or denied.
 
 | Name       | Description                                    |
 | ---------- | ---------------------------------------------- |

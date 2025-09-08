@@ -1,7 +1,7 @@
 ---
 title: NPC_AimAtPlayer
 sidebar_label: NPC_AimAtPlayer
-description: Makes a NPC aim at a player.
+description: Makes an NPC aim at a player.
 tags: ["npc", "weapon", "aiming"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "weapon", "aiming"]
 
 ## Description
 
-Makes a NPC aim at a player.
+Makes an NPC aim at a player.
 
 | Name                 | Description                                      |
 | -------------------- | ------------------------------------------------ |
@@ -28,7 +28,7 @@ Makes a NPC aim at a player.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

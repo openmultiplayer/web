@@ -26,7 +26,7 @@ Starts playback for an NPC using a pre-loaded recording ID with extended options
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

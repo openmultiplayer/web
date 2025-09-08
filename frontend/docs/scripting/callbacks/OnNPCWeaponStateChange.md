@@ -1,7 +1,7 @@
 ---
 title: OnNPCWeaponStateChange
 sidebar_label: OnNPCWeaponStateChange
-description: This callback is called when a NPC's weapon state changes.
+description: This callback is called when an NPC's weapon state changes.
 tags: ["npc", "weapon"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "weapon"]
 
 ## Description
 
-This callback is called when a NPC's weapon state changes (e.g., reloading, running out of ammo, etc.).
+This callback is called when an NPC's weapon state changes (e.g., reloading, running out of ammo, etc.).
 
 | Name     | Description                           |
 | -------- | ------------------------------------- |

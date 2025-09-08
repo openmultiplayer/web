@@ -20,7 +20,7 @@ Gets the rotation of an NPC in 3D space.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the rotation was retrieved successfully, `false` otherwise.
 
 ## Examples
 

@@ -25,7 +25,7 @@ Applies a specific animation to an NPC using animation library and name.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

@@ -18,7 +18,7 @@ Sets an NPC's special action state, such as sitting, smoking, drinking, etc.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 

@@ -14,9 +14,9 @@ Makes an NPC fire a weapon shot.
 | Name                | Description                                                    |
 | ------------------- | -------------------------------------------------------------- |
 | npcid              | The ID of the NPC                                              |
+| weapon             | The weapon ID to use for shooting                              |
 | hitId              | The ID of the target entity being shot                        |
 | hitType            | The type of entity being hit (player, NPC, vehicle, etc.)     |
-| weapon             | The weapon ID to use for shooting                              |
 | endPointX          | X coordinate of the bullet end point                          |
 | endPointY          | Y coordinate of the bullet end point                          |
 | endPointZ          | Z coordinate of the bullet end point                          |
@@ -28,7 +28,7 @@ Makes an NPC fire a weapon shot.
 
 ## Returns
 
-This function does not return any specific values.
+Returns `true` if the operation was successful, `false` otherwise.
 
 ## Examples
 
@@ -40,8 +40,8 @@ public OnGameModeInit()
     NPC_SetWeapon(npcid, WEAPON_SNIPER);
     
     // Shoot at position (100.0, 100.0, 10.0)
-    NPC_Shoot(npcid, INVALID_PLAYER_ID, BULLET_HIT_TYPE_NONE, WEAPON_SNIPER,
-             100.0, 100.0, 10.0, 0.0, 0.0, 0.0, false);
+    NPC_Shoot(npcid, WEAPON_SNIPER, INVALID_PLAYER_ID, BULLET_HIT_TYPE_NONE,
+             100.0, 100.0, 10.0, 0.0, 0.0, 0.0, false, NPC_ENTITY_CHECK_ALL);
     return 1;
 }
 
@@ -57,8 +57,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
         NPC_SetWeapon(npcid, WEAPON_DEAGLE);
         
         // Shoot at player
-        NPC_Shoot(npcid, playerid, BULLET_HIT_TYPE_PLAYER, WEAPON_DEAGLE,
-                 x, y, z, 0.0, 0.0, 0.0, true);
+        NPC_Shoot(npcid, WEAPON_DEAGLE, playerid, BULLET_HIT_TYPE_PLAYER,
+                 x, y, z, 0.0, 0.0, 0.0, true, NPC_ENTITY_CHECK_ALL);
         return 1;
     }
     return 0;

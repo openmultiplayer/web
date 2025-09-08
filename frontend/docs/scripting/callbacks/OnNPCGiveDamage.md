@@ -1,7 +1,7 @@
 ---
 title: OnNPCGiveDamage
 sidebar_label: OnNPCGiveDamage
-description: This callback is called when a NPC gives damage to a player.
+description: This callback is called when an NPC gives damage to a player.
 tags: ["npc", "damage"]
 ---
 
@@ -9,15 +9,15 @@ tags: ["npc", "damage"]
 
 ## Description
 
-This callback is called when a NPC gives damage to a player.
+This callback is called when an NPC gives damage to a player.
 
-| Name     | Description                                    |
-| -------- | ---------------------------------------------- |
-| npcid    | The ID of the NPC that gave the damage        |
-| playerid | The ID of the player that received the damage |
-| amount   | The amount of damage that was given            |
-| weapon   | The weapon ID used to give the damage         |
-| bodypart | The [body part](../resources/bodyparts) that was hit   |
+| Name      | Description                                    |
+| --------- | ---------------------------------------------- |
+| npcid     | The ID of the NPC that gave the damage        |
+| damagedid | The ID of the player that received the damage |
+| amount    | The amount of damage that was given            |
+| weaponid  | The weapon ID used to give the damage         |
+| bodypart  | The [body part](../resources/bodyparts) that was hit   |
 
 ## Returns
 
@@ -26,12 +26,12 @@ Return `false` to prevent the damage from being applied, or `true` to allow it.
 ## Examples
 
 ```c
-public OnNPCGiveDamage(npcid, playerid, Float:amount, weapon, bodypart)
+public OnNPCGiveDamage(npcid, damagedid, Float:amount, weaponid, bodypart)
 {
-    printf("NPC %d gave %.2f damage to player %d", npcid, amount, playerid);
+    printf("NPC %d gave %.2f damage to player %d", npcid, amount, damagedid);
     
     // Prevent NPCs from killing admins
-    if (IsPlayerAdmin(playerid))
+    if (IsPlayerAdmin(damagedid))
     {
         return false; // Block the damage
     }
@@ -57,6 +57,6 @@ The following functions might be useful, as they're related to this callback in 
 
 ## Related Callbacks
 
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when a NPC takes damage
+- [OnNPCTakeDamage](OnNPCTakeDamage): Called when an NPC takes damage
 - [OnPlayerTakeDamage](OnPlayerTakeDamage): Called when a player takes damage
 - [OnPlayerGiveDamage](OnPlayerGiveDamage): Called when a player gives damage
