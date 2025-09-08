@@ -1,0 +1,22 @@
+{
+  "item.label.Docs": {
+    "message": "Dokümanlar",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Forums": {
+    "message": "Forum",
+    "description": "Navbar item with label Forum"
+  },
+  "item.label.Servers": {
+    "message": "Sunucular",
+    "description": "Navbar item with label Servers"
+  },
+  "item.label.Partners": {
+    "message": "Partnerler",
+    "description": "Navbar item with label Partners"
+  },
+  "item.label.Donate": {
+    "message": "Bağış Yap",
+    "description": "Navbar item with label Donate"
+  }
+}
