@@ -62,8 +62,6 @@ public OnPlayerConnect(playerid)
 
 - [NPC_IsAnyStreamedIn](NPC_IsAnyStreamedIn): Check if any player can see NPC
 - [NPC_SetPos](NPC_SetPos): Set NPC position
-- [NPC_GetStreamDistance](NPC_GetStreamDistance): Get streaming distance
-- [NPC_SetStreamDistance](NPC_SetStreamDistance): Set streaming distance
 
 ## Related Callbacks
 

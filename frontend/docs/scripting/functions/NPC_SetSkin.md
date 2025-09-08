@@ -69,7 +69,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_GetSkin](NPC_GetSkin): Get NPC's current skin
 - [NPC_Spawn](NPC_Spawn): Spawn NPC with default skin
 - [NPC_Create](NPC_Create): Create NPC
-- [IsValidSkin](IsValidSkin): Check if skin ID is valid
 
 ## Related Callbacks
 
