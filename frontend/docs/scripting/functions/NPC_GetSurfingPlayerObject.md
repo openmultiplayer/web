@@ -49,3 +49,7 @@ public OnNPCSpawn(npcid)
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): Gets the vehicle an NPC is surfing on
 - [NPC_GetSurfingOffset](NPC_GetSurfingOffset): Gets the surfing offset for an NPC
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): Resets all surfing data for an NPC
+
+## Related Callbacks
+
+*No specific callbacks are triggered by this function.*

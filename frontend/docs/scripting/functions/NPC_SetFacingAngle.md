@@ -80,4 +80,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCMove](OnNPCMove): Called when NPC moves
+*No specific callbacks are triggered by this function.*

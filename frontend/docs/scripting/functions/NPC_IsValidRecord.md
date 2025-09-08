@@ -138,5 +138,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCPlaybackStart](OnNPCPlaybackStart): Called when playback starts
-- [OnNPCPlaybackEnd](OnNPCPlaybackEnd): Called when playback ends
+*No specific callbacks are triggered by this function.*

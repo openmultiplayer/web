@@ -84,5 +84,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCVehicleDamage](OnNPCVehicleDamage): Called when vehicle damaged
-- [OnNPCVehicleDestroy](OnNPCVehicleDestroy): Called when vehicle destroyed
+*No specific callbacks are triggered by this function.*

@@ -65,3 +65,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_SetAmmoInClip](NPC_SetAmmoInClip): Set ammunition in current clip
 - [NPC_GetAmmoInClip](NPC_GetAmmoInClip): Get ammunition in current clip
 - [NPC_EnableInfiniteAmmo](NPC_EnableInfiniteAmmo): Enable infinite ammunition
+
+## Related Callbacks
+
+*No specific callbacks are triggered by this function.*

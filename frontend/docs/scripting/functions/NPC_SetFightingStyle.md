@@ -83,5 +83,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCMeleeAttack](OnNPCMeleeAttack): Called when NPC attacks
 - [OnNPCGiveDamage](OnNPCGiveDamage): Called when NPC damages someone

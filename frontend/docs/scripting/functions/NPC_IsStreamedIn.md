@@ -67,5 +67,4 @@ public OnPlayerConnect(playerid)
 
 ## Related Callbacks
 
-- [OnNPCStreamIn](OnNPCStreamIn): Called when NPC streams in
-- [OnNPCStreamOut](OnNPCStreamOut): Called when NPC streams out
+*No specific callbacks are triggered by this function.*

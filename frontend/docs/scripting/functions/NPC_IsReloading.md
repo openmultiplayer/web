@@ -82,5 +82,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCReload](OnNPCReload): Called when NPC reloads
 - [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC shoots

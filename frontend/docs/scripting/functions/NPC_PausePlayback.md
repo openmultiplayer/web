@@ -68,5 +68,4 @@ public ResumeBot(npcid)
 
 ## Related Callbacks
 
-- [OnNPCPlaybackPause](OnNPCPlaybackPause): Called when playback pauses
-- [OnNPCPlaybackResume](OnNPCPlaybackResume): Called when playback resumes
+*No specific callbacks are triggered by this function.*

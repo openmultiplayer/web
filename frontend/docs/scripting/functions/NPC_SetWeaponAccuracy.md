@@ -65,3 +65,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_GetWeaponAccuracy](NPC_GetWeaponAccuracy): Get weapon accuracy
 - [NPC_SetWeapon](NPC_SetWeapon): Set NPC weapon
 - [NPC_Shoot](NPC_Shoot): Make NPC shoot
+
+## Related Callbacks
+
+*No specific callbacks are triggered by this function.*

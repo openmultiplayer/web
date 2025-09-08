@@ -58,3 +58,7 @@ public OnNPCEnterVehicle(npcid, vehicleid, seatid)
 - [NPC_SetSurfingOffset](NPC_SetSurfingOffset): Sets the surfing offset for an NPC
 - [NPC_GetSurfingObject](NPC_GetSurfingObject): Gets the object an NPC is surfing on
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): Gets the vehicle an NPC is surfing on
+
+## Related Callbacks
+
+*No specific callbacks are triggered by this function.*

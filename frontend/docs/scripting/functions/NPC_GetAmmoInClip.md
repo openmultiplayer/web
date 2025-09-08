@@ -68,4 +68,4 @@ public CheckNPCAmmo()
 ## Related Callbacks
 
 - [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires a weapon
-- [OnNPCWeaponStateChange](OnNPCWeaponStateChange): Called when weapon state changes
+

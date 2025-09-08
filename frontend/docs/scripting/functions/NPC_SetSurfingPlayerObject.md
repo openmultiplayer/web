@@ -53,3 +53,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): Sets the vehicle an NPC is surfing on
 - [NPC_SetSurfingOffset](NPC_SetSurfingOffset): Sets the surfing offset for an NPC
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): Resets all surfing data for an NPC
+
+## Related Callbacks
+
+*No specific callbacks are triggered by this function.*

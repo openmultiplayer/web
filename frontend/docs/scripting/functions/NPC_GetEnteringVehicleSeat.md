@@ -76,4 +76,4 @@ public CheckEnteringSeat()
 
 ## Related Callbacks
 
-- [OnNPCEnterVehicle](OnNPCEnterVehicle): Called when NPC enters vehicle
+*No specific callbacks are triggered by this function.*

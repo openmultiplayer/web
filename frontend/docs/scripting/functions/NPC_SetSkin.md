@@ -73,5 +73,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSkinChange](OnNPCSkinChange): Called when skin changes
 - [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns

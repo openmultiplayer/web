@@ -48,3 +48,7 @@ public OnGameModeInit()
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): Sets the player object an NPC is surfing on
 - [NPC_SetSurfingOffset](NPC_SetSurfingOffset): Sets the surfing offset for an NPC
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): Resets all surfing data for an NPC
+
+## Related Callbacks
+
+*No specific callbacks are triggered by this function.*

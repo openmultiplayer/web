@@ -74,5 +74,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCVirtualWorldChange](OnNPCVirtualWorldChange): Called when world changes
-- [OnNPCStreamIn](OnNPCStreamIn): Called when NPC streams in
+*No specific callbacks are triggered by this function.*

@@ -117,5 +117,4 @@ public SafeNPCOperation(npcid)
 
 ## Related Callbacks
 
-- [OnNPCCreate](OnNPCCreate): Called when NPC is created
-- [OnNPCDestroy](OnNPCDestroy): Called when NPC is destroyed
+*No specific callbacks are triggered by this function.*

@@ -71,4 +71,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpecialActionChange](OnNPCSpecialActionChange): Called when action changes
+*No specific callbacks are triggered by this function.*

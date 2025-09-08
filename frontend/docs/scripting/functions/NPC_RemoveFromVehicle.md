@@ -82,5 +82,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCExitVehicle](OnNPCExitVehicle): Called when NPC exits vehicle
-- [OnNPCEnterVehicle](OnNPCEnterVehicle): Called when NPC enters vehicle
+*No specific callbacks are triggered by this function.*

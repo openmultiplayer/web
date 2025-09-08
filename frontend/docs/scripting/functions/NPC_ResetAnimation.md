@@ -73,5 +73,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCAnimationUpdate](OnNPCAnimationUpdate): Called when animation changes
-- [OnNPCAnimationEnd](OnNPCAnimationEnd): Called when animation ends
+*No specific callbacks are triggered by this function.*

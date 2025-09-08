@@ -127,5 +127,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCPathCreated](OnNPCPathCreated): Called when path is created
-- [OnNPCPathDestroyed](OnNPCPathDestroyed): Called when path is destroyed
+*No specific callbacks are triggered by this function.*

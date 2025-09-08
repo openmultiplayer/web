@@ -51,3 +51,7 @@ public CheckNPCSurfing(npcid)
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): Gets the vehicle an NPC is surfing on
 - [NPC_GetSurfingPlayerObject](NPC_GetSurfingPlayerObject): Gets the player object an NPC is surfing on
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): Resets all surfing data for an NPC
+
+## Related Callbacks
+
+*No specific callbacks are triggered by this function.*

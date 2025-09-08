@@ -126,4 +126,3 @@ public ComboStep3(playerid)
 ## Related Callbacks
 
 - [OnNPCGiveDamage](OnNPCGiveDamage): Called when NPC damages player
-- [OnNPCMeleeAttack](OnNPCMeleeAttack): Called when NPC attacks

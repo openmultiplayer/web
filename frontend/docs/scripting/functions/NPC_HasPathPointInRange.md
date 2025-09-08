@@ -96,3 +96,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_AddPointToPath](NPC_AddPointToPath): Adds a point to a path
 - [NPC_GetPathPoint](NPC_GetPathPoint): Gets information about a specific point in a path
 - [NPC_MoveByPath](NPC_MoveByPath): Makes an NPC follow a predefined path
+
+## Related Callbacks
+
+*No specific callbacks are triggered by this function.*

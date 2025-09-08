@@ -72,4 +72,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCFinishPlayback](OnNPCFinishPlayback): Called when playback ends
+- [OnNPCPlaybackEnd](OnNPCPlaybackEnd): Called when playback ends

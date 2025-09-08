@@ -71,4 +71,4 @@ public ResumeNode(npcid)
 
 ## Related Callbacks
 
-This function does not trigger any specific callbacks.
+*No specific callbacks are triggered by this function.*
