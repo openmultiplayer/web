@@ -39,7 +39,6 @@ tags: []
 | -1                  | INVALID_GANG_ZONE        |
 | Text3D:0xFFFF       | INVALID_3DTEXT_ID        |
 | PlayerText3D:0xFFFF | INVALID_PLAYER_3DTEXT_ID |
-| -1                  | INVALID_RECORD_ID        |
 
 ## Weapon Constants
 
