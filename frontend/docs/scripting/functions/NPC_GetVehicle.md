@@ -1,7 +1,7 @@
 ---
 title: NPC_GetVehicle
 sidebar_label: NPC_GetVehicle
-description: Gets the vehicle an NPC is currently in.
+description: Gets the vehicle ID of an NPC's current vehicle.
 tags: ["npc", "vehicle"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["npc", "vehicle"]
 
 ## Description
 
-Gets the vehicle an NPC is currently in.
+Gets the vehicle ID of an NPC's current vehicle.
 
 | Name  | Description       |
 | ----- | ----------------- |
@@ -38,53 +38,34 @@ public OnGameModeInit()
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkvehicle", true))
+    if (!strcmp(cmdtext, "/checknpc", true))
     {
         new vehicleid = NPC_GetVehicle(0);
-        
         if (vehicleid != INVALID_VEHICLE_ID)
         {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 is in vehicle %d", vehicleid);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
+            printf("NPC 0 is in vehicle %d", vehicleid);
         }
         else
         {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 is on foot");
+            print("NPC 0 is on foot");
         }
-        
         return 1;
     }
     return 0;
-}
-
-forward CheckVehicleOccupancy(vehicleid);
-public CheckVehicleOccupancy(vehicleid)
-{
-    if (NPC_GetVehicle(0) == vehicleid)
-    {
-        new seat = NPC_GetVehicleSeat(0);
-        printf("Vehicle %d has NPC 0 in seat %d", vehicleid, seat);
-    }
-    else
-    {
-        printf("NPC 0 is not in vehicle %d", vehicleid);
-    }
 }
 ```
 
 ## Notes
 
-- Returns INVALID_VEHICLE_ID if the NPC is not in any vehicle (on foot)
-- This includes both driver and passenger positions
-- Use with `NPC_GetVehicleSeat` to determine the exact seat
-- NPCs entering a vehicle will not return the vehicle ID until fully inside
+- Returns INVALID_VEHICLE_ID if the NPC is not in any vehicle
+- Use this to check if an NPC is driving or is a passenger
+- Can be used with other vehicle functions to get more details
 
 ## Related Functions
 
-- [NPC_GetVehicleID](NPC_GetVehicleID): Alternative function name
+- [NPC_GetVehicleID](NPC_GetVehicleID): Alternative function with identical behavior
 - [NPC_GetVehicleSeat](NPC_GetVehicleSeat): Get NPC's seat in vehicle
-- [NPC_PutInVehicle](NPC_PutInVehicle): Put NPC in vehicle instantly
+- [NPC_PutInVehicle](NPC_PutInVehicle): Put NPC in vehicle
 - [NPC_RemoveFromVehicle](NPC_RemoveFromVehicle): Remove NPC from vehicle
 
 ## Related Callbacks

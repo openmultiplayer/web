@@ -27,7 +27,7 @@ public OnGameModeInit()
     new npcid = NPC_Create("Driver");
     NPC_Spawn(npcid);
     
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
+    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Infernus
     NPC_PutInVehicle(npcid, vehicleid, 0);
     
     new currentVehicle = NPC_GetVehicleID(npcid);
@@ -38,18 +38,16 @@ public OnGameModeInit()
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkvehicle", true))
+    if (!strcmp(cmdtext, "/checknpc", true))
     {
         new vehicleid = NPC_GetVehicleID(0);
         if (vehicleid != INVALID_VEHICLE_ID)
         {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 is in vehicle %d", vehicleid);
-            SendClientMessage(playerid, 0x00FF00FF, msg);
+            printf("NPC 0 is in vehicle %d", vehicleid);
         }
         else
         {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 is on foot");
+            print("NPC 0 is on foot");
         }
         return 1;
     }
@@ -68,7 +66,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_GetVehicleSeat](NPC_GetVehicleSeat): Get NPC's seat in vehicle
 - [NPC_PutInVehicle](NPC_PutInVehicle): Put NPC in vehicle
 - [NPC_RemoveFromVehicle](NPC_RemoveFromVehicle): Remove NPC from vehicle
-- [NPC_GetVehicle](NPC_GetVehicle): Get vehicle instance
+- [NPC_GetVehicle](NPC_GetVehicle): Alternative function with identical behavior
 
 ## Related Callbacks
 
