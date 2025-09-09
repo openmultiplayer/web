@@ -30,14 +30,14 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-new g_PatrolRecord;
+new g_PatrolRecord = INVALID_RECORD_ID;
 
 public OnGameModeInit()
 {
     // Pre-load recordings
     g_PatrolRecord = NPC_LoadRecord("recordings/patrol.rec");
-    no, i mean th
-    if (NPC_IsValidRecord(g_PatrolRecord))
+    
+    if (g_PatrolRecord != INVALID_RECORD_ID)
     {
         printf("Patrol recording loaded with ID %d", g_PatrolRecord);
     }

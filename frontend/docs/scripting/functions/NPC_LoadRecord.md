@@ -17,22 +17,27 @@ Loads an NPC recording file for playback use.
 
 ## Returns
 
-Returns `true` if the recording was loaded successfully, `false` otherwise.
+Returns the ID of the loaded recording, or `INVALID_RECORD_ID` on failure.
 
 ## Examples
 
 ```c
+new g_DriverRecord = INVALID_RECORD_ID;
+new g_GuardRecord = INVALID_RECORD_ID;
+
 public OnGameModeInit()
 {
     // Load various recording files
-    if (NPC_LoadRecord("driver_route"))
+    g_DriverRecord = NPC_LoadRecord("driver_route");
+    if (g_DriverRecord != INVALID_RECORD_ID)
     {
-        printf("Driver route recording loaded successfully");
+        printf("Driver route recording loaded with ID: %d", g_DriverRecord);
     }
     
-    if (NPC_LoadRecord("guard_patrol"))
+    g_GuardRecord = NPC_LoadRecord("guard_patrol");
+    if (g_GuardRecord != INVALID_RECORD_ID)
     {
-        printf("Guard patrol recording loaded successfully");
+        printf("Guard patrol recording loaded with ID: %d", g_GuardRecord);
     }
     
     return 1;
@@ -43,7 +48,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/loadrec", true))
     {
         // Load a single recording
-        if (NPC_LoadRecord("patrol_route"))
+        new recordid = NPC_LoadRecord("patrol_route");
+        if (recordid != INVALID_RECORD_ID)
         {
             SendClientMessage(playerid, 0x00FF00FF, "Patrol recording loaded");
         }

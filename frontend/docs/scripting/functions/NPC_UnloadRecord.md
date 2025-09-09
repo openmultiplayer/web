@@ -22,14 +22,14 @@ Returns `true` if the record was unloaded successfully, `false` otherwise.
 ## Examples
 
 ```c
-new g_PatrolRecord;
+new g_PatrolRecord = INVALID_RECORD_ID;
 
 public OnGameModeInit()
 {
     // Load recordings
     g_PatrolRecord = NPC_LoadRecord("recordings/patrol.rec");
     
-    if (NPC_IsValidRecord(g_PatrolRecord))
+    if (g_PatrolRecord != INVALID_RECORD_ID)
     {
         printf("Patrol recording loaded with ID %d", g_PatrolRecord);
     }
@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             if (NPC_UnloadRecord(g_PatrolRecord))
             {
                 SendClientMessage(playerid, 0x00FF00FF, "Patrol recording unloaded");
-                g_PatrolRecord = -1; // Mark as invalid
+                g_PatrolRecord = INVALID_RECORD_ID;
             }
             else
             {
