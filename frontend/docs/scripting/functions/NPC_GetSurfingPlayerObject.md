@@ -17,7 +17,7 @@ Gets the player object an NPC is surfing on.
 
 ## Returns
 
-Returns the player object ID, or `0` if not surfing on a player object.
+Returns the player object ID, or `INVALID_OBJECT_ID` if not surfing on a player object.
 
 ## Examples
 
@@ -39,7 +39,7 @@ public OnNPCSpawn(npcid)
 
 ## Notes
 
-- Returns `INVALID_OBJECT_ID` if the NPC is not surfing on any player object
+- Returns INVALID_OBJECT_ID if the NPC is not surfing on any player object
 - This function only checks for player-specific objects, not global objects
 
 ## Related Functions
