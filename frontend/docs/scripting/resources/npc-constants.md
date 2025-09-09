@@ -13,6 +13,12 @@ This page lists all constants specific to NPC functions in open.mp.
 | ----- | -------- | ----------- |
 | 64 | NPC_MAX_NODES | Maximum number of nodes |
 
+## Invalid Constants
+
+| Value | Constant | Description |
+| ----- | -------- | ----------- |
+| -1 | INVALID_RECORD_ID | Invalid recording ID |
+
 ## Movement Types
 
 Used by functions like [NPC_Move](../functions/NPC_Move), [NPC_MoveByPath](../functions/NPC_MoveByPath), [NPC_EnterVehicle](../functions/NPC_EnterVehicle), and [NPC_PlayNode](../functions/NPC_PlayNode).
