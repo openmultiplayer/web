@@ -1,66 +1,75 @@
 ---
 title: NPC_SetVehicleGearState
 sidebar_label: NPC_SetVehicleGearState
-description: Sets an NPC's vehicle gear state.
-tags: ["npc", "vehicle", "gear"]
+description: Sets an NPC's aircraft landing gear state.
+tags: ["npc", "vehicle", "aircraft", "landing gear"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 
-Sets an NPC's vehicle gear state when driving.
+Sets an NPC's aircraft landing gear state when piloting an aircraft.
 
 | Name      | Description                    |
 | --------- | ------------------------------ |
 | npcid     | The ID of the NPC             |
-| gearstate | The gear state to set         |
+| gearstate | The landing gear state to set (LANDING_GEAR_STATE_DOWN or LANDING_GEAR_STATE_UP) |
 
 ## Returns
 
-Returns `true` if the operation was successful, `false` otherwise.
+This function does not return any specific value.
 
 ## Examples
 
 ```c
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("Driver");
+    new npcid = NPC_Create("Pilot");
     NPC_Spawn(npcid);
     
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
+    new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1); // Hydra
     NPC_PutInVehicle(npcid, vehicleid, 0);
     
-    // Set to reverse gear
-    NPC_SetVehicleGearState(npcid, GEAR_REVERSE);
+    // Set landing gear up
+    NPC_SetVehicleGearState(npcid, LANDING_GEAR_STATE_UP);
     
     return 1;
 }
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/reverse", true))
-    {
-        // Set NPC 0's vehicle to reverse
-        NPC_SetVehicleGearState(0, GEAR_REVERSE);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 vehicle in reverse");
-        return 1;
-    }
-    
-    if (!strcmp(cmdtext, "/driveforward", true))
+    if (!strcmp(cmdtext, "/gearup", true))
     {
         new npcs[MAX_NPCS];
         new count = NPC_GetAll(npcs);
         
         for (new i = 0; i < count; i++)
         {
-            if (NPC_GetVehicleID(npcs[i]) != 0) // NPC is in vehicle
+            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in aircraft
             {
-                NPC_SetVehicleGearState(npcs[i], GEAR_FORWARD);
+                NPC_SetVehicleGearState(npcs[i], LANDING_GEAR_STATE_UP);
             }
         }
         
-        SendClientMessage(playerid, 0x00FF00FF, "All driving NPCs in forward");
+        SendClientMessage(playerid, 0x00FF00FF, "Raised landing gear for all NPC aircraft");
+        return 1;
+    }
+    
+    if (!strcmp(cmdtext, "/geardown", true))
+    {
+        new npcs[MAX_NPCS];
+        new count = NPC_GetAll(npcs);
+        
+        for (new i = 0; i < count; i++)
+        {
+            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in aircraft
+            {
+                NPC_SetVehicleGearState(npcs[i], LANDING_GEAR_STATE_DOWN);
+            }
+        }
+        
+        SendClientMessage(playerid, 0x00FF00FF, "Lowered landing gear for all NPC aircraft");
         return 1;
     }
     return 0;
@@ -69,17 +78,21 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Only works when NPC is driving a vehicle
-- Common gear states: GEAR_FORWARD, GEAR_REVERSE, GEAR_NEUTRAL
-- Affects vehicle movement direction
-- Use NPC_GetVehicleGearState to check current gear
+- Only works when NPC is piloting an aircraft
+- Uses the same constants as [Vehicle Landing Gear States](../resources/landinggearstate): LANDING_GEAR_STATE_DOWN and LANDING_GEAR_STATE_UP
+- Check current landing gear state with NPC_GetVehicleGearState
+- This is the NPC equivalent of GetPlayerLandingGearState
 
 ## Related Functions
 
-- [NPC_GetVehicleGearState](NPC_GetVehicleGearState): Get current gear state
+- [NPC_GetVehicleGearState](NPC_GetVehicleGearState): Get current landing gear state
+- [GetPlayerLandingGearState](GetPlayerLandingGearState): Get player's landing gear state
+- [GetVehicleLandingGearState](GetVehicleLandingGearState): Get vehicle's landing gear state
 - [NPC_PutInVehicle](NPC_PutInVehicle): Put NPC in vehicle
-- [NPC_GetVehicleID](NPC_GetVehicleID): Get NPC's vehicle
-- [NPC_SetKeys](NPC_SetKeys): Set NPC key states
+
+## Related Resources
+
+- [Vehicle Landing Gear States](../resources/landinggearstate)
 
 ## Related Callbacks
 
