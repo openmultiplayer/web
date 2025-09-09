@@ -11,15 +11,15 @@ tags: ["npc", "movement", "player", "follow"]
 
 Makes an NPC move toward and follow a player.
 
-| Name              | Description                                                          |
-| ----------------- | -------------------------------------------------------------------- |
-| npcid            | The ID of the NPC                                                    |
-| playerid         | The ID of the player to move toward                                  |
-| moveType         | Movement type (default: NPC_MOVE_TYPE_JOG)                         |
-| moveSpeed        | Movement speed (default: NPC_MOVE_SPEED_AUTO)                       |
-| stopRange        | Distance to stop from player (default: 0.2)                        |
-| updateDelayMS | Position check update delay in milliseconds (default: 500)      |
-| autoRestart      | Whether to automatically restart following (default: false)         |
+| Name                   | Description                                                          |
+| ---------------------- | -------------------------------------------------------------------- |
+| npcid                  | The ID of the NPC.                                                   |
+| playerid               | The ID of the player to move toward.                                 |
+| NPC_MOVE_TYPE:moveType | Movement type (default: `NPC_MOVE_TYPE_JOG`).                        |
+| Float:moveSpeed        | Movement speed (default: `NPC_MOVE_SPEED_AUTO`).                     |
+| Float:stopRange        | Distance to stop from player (default: 0.2)                          |
+| updateDelayMS          | Position check update delay in milliseconds (default: 500).          |
+| bool:autoRestart       | Whether to automatically restart following (default: false).         |
 
 ## Returns
 
@@ -30,7 +30,7 @@ Returns `true` on success, `false` on failure.
 ```c
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("FollowerBot");
+    new const npcid = NPC_Create("FollowerBot");
     NPC_Spawn(npcid);
     
     // Make NPC follow player ID 0 with default settings
@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/followme", true))
     {
-        new npcid = NPC_Create("Follower");
+        new const npcid = NPC_Create("Follower");
         NPC_Spawn(npcid);
         
         // Follow with custom settings
@@ -58,19 +58,23 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- NPCs will continuously follow the target player until stopped
-- The `updateDelayMS` parameter controls how often the NPC updates its target position
-- Lower `updateDelayMS` values provide smoother following but use more resources
-- The `autoRestart` parameter determines if following resumes after interruptions
-- Following stops when the target player disconnects
+:::warning
+
+- NPCs will continuously follow the target player until stopped.
+- The `updateDelayMS` parameter controls how often the NPC updates its target position.
+- Lower `updateDelayMS` values provide smoother following but use more resources.
+- The `autoRestart` parameter determines if following resumes after interruptions.
+- Following stops when the target player disconnects.
+
+:::
 
 ## Related Functions
 
-- [NPC_Move](NPC_Move): Move NPC to a specific position
-- [NPC_StopMove](NPC_StopMove): Stop NPC movement
-- [NPC_IsMoving](NPC_IsMoving): Check if NPC is moving
-- [NPC_MoveByPath](NPC_MoveByPath): Move NPC along a predefined path
+- [NPC_Move](NPC_Move): Move NPC to a specific position.
+- [NPC_StopMove](NPC_StopMove): Stop NPC movement.
+- [NPC_IsMoving](NPC_IsMoving): Check if NPC is moving.
+- [NPC_MoveByPath](NPC_MoveByPath): Move NPC along a predefined path.
 
 ## Related Callbacks
 
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC reaches target (not called for continuous following)
+- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC reaches target (not called for continuous following).

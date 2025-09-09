@@ -11,9 +11,9 @@ tags: ["npc", "movement"]
 
 Stops an NPC from moving to their current destination.
 
-| Name  | Description           |
-| ----- | --------------------- |
-| npcid | The ID of the NPC     |
+| Name  | Description        |
+| ----- | ------------------ |
+| npcid | The ID of the NPC. |
 
 ## Returns
 
@@ -24,7 +24,7 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("Walker");
+    new const npcid = NPC_Create("Walker");
     NPC_Spawn(npcid);
     
     // Start moving
@@ -58,18 +58,20 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- This stops the NPC at their current position
-- If the NPC is not moving, this function has no effect
-- The NPC will remain at the stopped position until given a new movement command
-- Use `NPC_IsMoving` to check if an NPC is currently moving
+:::warning
+
+- This stops the NPC at their current position.
+- If the NPC is not moving, this function has no effect.
+- The NPC will remain at the stopped position until given a new movement command.
+- Use [NPC_IsMoving](NPC_IsMoving) to check if an NPC is currently moving.
 
 ## Related Functions
 
-- [NPC_Move](NPC_Move): Make NPC move to a position
-- [NPC_IsMoving](NPC_IsMoving): Check if NPC is moving
-- [NPC_MoveByPath](NPC_MoveByPath): Make NPC follow a path
-- [NPC_SetPos](NPC_SetPos): Set NPC position instantly
+- [NPC_Move](NPC_Move): Make NPC move to a position.
+- [NPC_IsMoving](NPC_IsMoving): Check if NPC is moving.
+- [NPC_MoveByPath](NPC_MoveByPath): Make NPC follow a path.
+- [NPC_SetPos](NPC_SetPos): Set NPC position instantly.
 
 ## Related Callbacks
 
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes movement
+- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes movement.

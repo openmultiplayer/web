@@ -11,10 +11,10 @@ tags: ["npc", "angle"]
 
 Gets the facing angle of an NPC.
 
-| Name    | Description                               |
-| ------- | ----------------------------------------- |
-| npcid   | The ID of the NPC                        |
-| &angle  | Variable to store the facing angle       |
+| Name          | Description                                              |
+| ------------- | -------------------------------------------------------- |
+| npcid         | The ID of the NPC.                                       |
+| &Float:angle  | Variable to store the facing angle, passed by reference. |
 
 ## Returns
 
@@ -25,7 +25,7 @@ Returns `true` if the facing angle was retrieved successfully, `false` otherwise
 ```c
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("Bot");
+    new const npcid = NPC_Create("Bot");
     NPC_Spawn(npcid);
     
     NPC_SetFacingAngle(npcid, 90.0);
@@ -44,9 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new Float:angle;
         NPC_GetFacingAngle(0, angle);
         
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 angle: %.2f degrees", angle);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0 angle: %.2f degrees", angle);
         return 1;
     }
     return 0;
@@ -55,18 +53,22 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- The angle is passed by reference and will be modified
-- Angles are in degrees (0.0 to 360.0)
-- 0.0 = North, 90.0 = East, 180.0 = South, 270.0 = West
-- This gets the 2D facing angle, not the full 3D rotation
+:::warning
+
+- The angle is passed by reference and will be modified.
+- Angles are in degrees (0.0 to 360.0).
+- Angles are reversed in GTA:SA; 90 degrees would be East in the real world, but in GTA:SA 90 degrees is in fact West. North and South are still 0/360 and 180. To convert this, simply do 360 - angle.
+- This gets the 2D facing angle, not the full 3D rotation.
+
+:::
 
 ## Related Functions
 
-- [NPC_SetFacingAngle](NPC_SetFacingAngle): Set NPC facing angle
-- [NPC_GetRot](NPC_GetRot): Get full 3D rotation
-- [NPC_SetRot](NPC_SetRot): Set full 3D rotation
-- [NPC_GetPos](NPC_GetPos): Get NPC position
+- [NPC_SetFacingAngle](NPC_SetFacingAngle): Set NPC facing angle.
+- [NPC_GetRot](NPC_GetRot): Get full 3D rotation.
+- [NPC_SetRot](NPC_SetRot): Set full 3D rotation.
+- [NPC_GetPos](NPC_GetPos): Get NPC position.
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns
+- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.

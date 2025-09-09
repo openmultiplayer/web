@@ -1,7 +1,7 @@
 ---
 title: NPC_Respawn
 sidebar_label: NPC_Respawn
-description: Respawns an NPC to their spawn position.
+description: Respawns an NPC to their spawn position, resetting their state.
 tags: ["npc", "spawn", "respawn"]
 ---
 
@@ -11,9 +11,9 @@ tags: ["npc", "spawn", "respawn"]
 
 Respawns an NPC to their spawn position, resetting their state.
 
-| Name  | Description       |
-| ----- | ----------------- |
-| npcid | The ID of the NPC |
+| Name  | Description        |
+| ----- | ------------------ |
+| npcid | The ID of the NPC. |
 
 ## Returns
 
@@ -24,7 +24,7 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("Respawner");
+    new const npcid = NPC_Create("Respawner");
     NPC_Spawn(npcid);
     
     // Respawn every 30 seconds
@@ -59,19 +59,23 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Resets NPC health, position, and state
-- NPC returns to their original spawn coordinates
-- All current activities (movement, combat) are stopped
-- Use this to reset NPCs after death or when stuck
+:::warning
+
+- Resets NPC health, position, and state.
+- NPC returns to their original spawn coordinates.
+- All current activities (movement, combat) are stopped.
+- Use this to reset NPCs after death or when stuck.
+
+:::
 
 ## Related Functions
 
-- [NPC_Spawn](NPC_Spawn): Initial spawn of NPC
-- [NPC_SetPos](NPC_SetPos): Set NPC position
-- [NPC_GetHealth](NPC_GetHealth): Get NPC health
-- [NPC_IsDead](NPC_IsDead): Check if NPC is dead
+- [NPC_Spawn](NPC_Spawn): Initial spawn of NPC.
+- [NPC_SetPos](NPC_SetPos): Set NPC position.
+- [NPC_GetHealth](NPC_GetHealth): Get NPC health.
+- [NPC_IsDead](NPC_IsDead): Check if NPC is dead.
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns
-- [OnNPCRespawn](OnNPCRespawn): Called when NPC respawns
+- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.
+- [OnNPCRespawn](OnNPCRespawn): Called when NPC respawns.

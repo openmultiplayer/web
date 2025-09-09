@@ -11,12 +11,12 @@ tags: ["npc", "position"]
 
 Sets the position of an NPC instantly without movement animation.
 
-| Name  | Description              |
-| ----- | ------------------------ |
-| npcid | The ID of the NPC       |
-| x     | The X coordinate        |
-| y     | The Y coordinate        |
-| z     | The Z coordinate        |
+| Name    | Description              |
+| ------- | ------------------------ |
+| npcid   | The ID of the NPC.       |
+| Float:x | The X coordinate.        |
+| Float:y | The Y coordinate.        |
+| Float:z | The Z coordinate.        |
 
 ## Returns
 
@@ -27,7 +27,7 @@ Returns `true` on success, `false` on failure.
 ```c
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("TeleportBot");
+    new const npcid = NPC_Create("TeleportBot");
     NPC_Spawn(npcid);
     
     // Set NPC position instantly
@@ -61,19 +61,24 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
 }
 
-stock CreateNPCFormation(leaderX, leaderY, leaderZ, formation[], formationSize)
+CreateNPCFormation(Float:leaderX, Float:leaderY, Float:leaderZ, const Float:formation[][2], formationSize = sizeof(formation))
 {
+    new
+        name[MAX_PLAYER_NAME + 1],
+        npcid,
+        Float:offsetX,
+        Float:offsetY;
+
     for (new i = 0; i < formationSize; i++)
     {
-        new name[24];
         format(name, sizeof(name), "Unit_%d", i);
         
-        new npcid = NPC_Create(name);
+        npcid = NPC_Create(name);
         NPC_Spawn(npcid);
         
         // Position based on formation array
-        new Float:offsetX = float(formation[i][0]);
-        new Float:offsetY = float(formation[i][1]);
+        offsetX = formation[i][0];
+        offsetY = formation[i][1];
         
         NPC_SetPos(npcid, leaderX + offsetX, leaderY + offsetY, leaderZ);
     }
@@ -90,19 +95,23 @@ public ResetNPCPositions()
 
 ## Notes
 
+:::warning
+
 - This function teleports the NPC instantly without animation
 - Any current movement is stopped when setting position
 - Use `NPC_Move` if you want the NPC to walk to a position
 - Position coordinates are in San Andreas world units
 - Make sure the Z coordinate is above ground level
 
+:::
+
 ## Related Functions
 
-- [NPC_GetPos](NPC_GetPos): Get NPC position
-- [NPC_Move](NPC_Move): Move NPC to position with animation
-- [NPC_SetRot](NPC_SetRot): Set NPC rotation
-- [NPC_SetFacingAngle](NPC_SetFacingAngle): Set NPC facing direction
+- [NPC_GetPos](NPC_GetPos): Get NPC position.
+- [NPC_Move](NPC_Move): Move NPC to position with animation.
+- [NPC_SetRot](NPC_SetRot): Set NPC rotation.
+- [NPC_SetFacingAngle](NPC_SetFacingAngle): Set NPC facing direction.
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns
+- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.

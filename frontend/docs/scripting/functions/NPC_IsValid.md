@@ -13,7 +13,7 @@ Checks if an NPC ID is valid and the NPC exists.
 
 | Name  | Description                  |
 | ----- | ---------------------------- |
-| npcid | The NPC ID to check         |
+| npcid | The NPC ID to check.         |
 
 ## Returns
 
@@ -24,7 +24,7 @@ Returns `true` if the NPC is valid, `false` otherwise.
 ```c
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("TestBot");
+    new const npcid = NPC_Create("TestBot");
     
     if (NPC_IsValid(npcid))
     {
@@ -43,31 +43,29 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checknpcs", true))
     {
-        new validCount = 0;
+        new
+            validCount = 0,
+            Float:health;
         
         for (new i = 0; i < MAX_NPCS; i++)
         {
             if (NPC_IsValid(i))
             {
                 validCount++;
-                
-                new Float:health = NPC_GetHealth(i);
-                new msg[128];
-                format(msg, sizeof(msg), "NPC %d: Health %.1f", i, health);
-                SendClientMessage(playerid, 0xFFFFFFFF, msg);
+                health = NPC_GetHealth(i);
+
+                SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d: Health %.1f", i, health);
             }
         }
-        
-        new msg[64];
-        format(msg, sizeof(msg), "Total valid NPCs: %d", validCount);
-        SendClientMessage(playerid, 0x00FF00FF, msg);
+
+        SendClientMessage(playerid, 0x00FF00FF, "Total valid NPCs: %d", validCount);
         
         return 1;
     }
     return 0;
 }
 
-stock DestroyAllNPCs()
+DestroyAllNPCs()
 {
     new destroyedCount = 0;
     
@@ -90,31 +88,31 @@ public SafeNPCOperation(npcid)
     if (!NPC_IsValid(npcid))
     {
         printf("Error: NPC %d is not valid", npcid);
-        return 0;
+        return false;
     }
     
     // Safe to perform operations on the NPC
     NPC_SetHealth(npcid, 100.0);
     NPC_SetPos(npcid, 0.0, 0.0, 3.0);
     
-    return 1;
+    return true;
 }
 ```
 
 ## Notes
 
-- Always check if an NPC is valid before performing operations on it
-- An NPC becomes invalid when it is destroyed
-- This prevents runtime errors and crashes
-- Use this in loops when iterating through potential NPC IDs
+:::warning
+
+- Always check if an NPC is valid before performing operations on it.
+- An NPC becomes invalid when it is destroyed.
+- This prevents runtime errors and crashes.
+- Use this in loops when iterating through potential NPC IDs.
+
+:::
 
 ## Related Functions
 
-- [NPC_Create](NPC_Create): Create a new NPC
-- [NPC_Destroy](NPC_Destroy): Destroy an NPC
-- [NPC_GetAll](NPC_GetAll): Get all valid NPC IDs
-- [NPC_IsDead](NPC_IsDead): Check if NPC is dead
-
-## Related Callbacks
-
-*No specific callbacks are triggered by this function.*
+- [NPC_Create](NPC_Create): Create a new NPC.
+- [NPC_Destroy](NPC_Destroy): Destroy an NPC.
+- [NPC_GetAll](NPC_GetAll): Get all valid NPC IDs.
+- [NPC_IsDead](NPC_IsDead): Check if NPC is dead.

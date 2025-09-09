@@ -13,7 +13,7 @@ Checks if an NPC is dead.
 
 | Name   | Description                      |
 | ------ | -------------------------------- |
-| npcid  | The ID of the NPC to check       |
+| npcid  | The ID of the NPC to check.      |
 
 ## Returns
 
@@ -30,7 +30,7 @@ public OnNPCTakeDamage(npcid, damagerid, Float:damage, WEAPON:weapon, bodypart)
         return 1;
     }
     
-    new Float:health = NPC_GetHealth(npcid);
+    new const Float:health = NPC_GetHealth(npcid);
     printf("NPC %d took %.1f damage, health remaining: %.1f", npcid, damage, health);
     return 1;
 }
@@ -38,8 +38,12 @@ public OnNPCTakeDamage(npcid, damagerid, Float:damage, WEAPON:weapon, bodypart)
 
 ## Notes
 
-- An NPC is considered dead when its health reaches 0.0 or below
-- Dead NPCs can be respawned using `NPC_Respawn`
+:::warning
+
+- An NPC is considered dead when its health reaches 0.0 or below.
+- Dead NPCs can be respawned using [NPC_Respawn](NPC_Respawn).
+
+:::
 
 ## Related Functions
 

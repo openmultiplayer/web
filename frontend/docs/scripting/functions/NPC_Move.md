@@ -11,15 +11,15 @@ tags: ["npc", "movement"]
 
 Makes an NPC move to a specific position.
 
-| Name       | Description                                      |
-| ---------- | ------------------------------------------------ |
-| npcid      | The ID of the NPC                               |
-| x          | The X coordinate to move to                     |
-| y          | The Y coordinate to move to                     |
-| z          | The Z coordinate to move to                     |
-| moveType   | The movement type (default: NPC_MOVE_TYPE_JOG)  |
-| moveSpeed  | Movement speed (default: NPC_MOVE_SPEED_AUTO)   |
-| stopRange  | Distance to target before stopping (default: 0.2) |
+| Name                   | Description                                        |
+| ---------------------- | -------------------------------------------------- |
+| npcid                  | The ID of the NPC.                                 |
+| Float:x                | The X coordinate to move to.                       |
+| Float:y                | The Y coordinate to move to.                       |
+| Float:z                | The Z coordinate to move to.                       |
+| NPC_MOVE_TYPE:moveType | The movement type (default: `NPC_MOVE_TYPE_JOG`).  |
+| Float:moveSpeed        | Movement speed (default: `NPC_MOVE_SPEED_AUTO`).   |
+| Float:stopRange        | Distance to target before stopping (default: 0.2). |
 
 ## Returns
 
@@ -30,7 +30,7 @@ Returns `true` if the movement was started successfully, `false` otherwise.
 ```c
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("Walker");
+    new const npcid = NPC_Create("Walker");
     NPC_Spawn(npcid);
     
     // Make NPC walk to a position
@@ -55,22 +55,24 @@ public OnPlayerCommandText(playerid, cmdtext[])
     
     if (!strcmp(cmdtext, "/npcpatrol", true))
     {
-        
         // Send NPC 0 to patrol different areas
-        new patrolPoints[][3] = {
-            {1958, 1343, 15},
-            {1968, 1353, 15},
-            {1978, 1363, 15},
-            {1958, 1373, 15}
+        static const Float:patrolPoints[][3] =
+        {
+            {1958.0, 1343.0, 15.0},
+            {1968.0, 1353.0, 15.0},
+            {1978.0, 1363.0, 15.0},
+            {1958.0, 1373.0, 15.0}
         };
         
-        new point = random(sizeof(patrolPoints));
-        NPC_Move(0, 
-            float(patrolPoints[point][0]), 
-            float(patrolPoints[point][1]), 
-            float(patrolPoints[point][2]), 
+        new const point = random(sizeof(patrolPoints));
+
+        NPC_Move(0,
+            patrolPoints[point][0],
+            patrolPoints[point][1],
+            patrolPoints[point][2],
             NPC_MOVE_TYPE_JOG
         );
+
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 sent on patrol");
         
         return 1;
@@ -82,7 +84,9 @@ forward NPCPatrolSequence(npcid);
 public NPCPatrolSequence(npcid)
 {
     if (!NPC_IsValid(npcid))
+    {
         return;
+    }
         
     if (NPC_IsMoving(npcid))
     {
@@ -92,9 +96,10 @@ public NPCPatrolSequence(npcid)
     }
     
     // NPC finished moving, send to next position
-    new Float:x = 1950.0 + random(50);
-    new Float:y = 1340.0 + random(50);
-    new Float:z = 15.36;
+    new
+        Float:x = 1950.0 + random(50),
+        Float:y = 1340.0 + random(50),
+        Float:z = 15.36;
     
     NPC_Move(npcid, x, y, z, NPC_MOVE_TYPE_WALK, NPC_MOVE_SPEED_AUTO, 1.0);
     
@@ -105,19 +110,23 @@ public NPCPatrolSequence(npcid)
 
 ## Notes
 
-- The NPC will pathfind to the target position
-- Movement types affect animation and speed
-- Stop range determines how close the NPC gets before stopping
-- Use `NPC_IsMoving` to check if the NPC is currently moving
-- Movement can be interrupted by calling `NPC_StopMove`
+:::warning
+
+- The NPC will pathfind to the target position.
+- Movement types affect animation and speed.
+- Stop range determines how close the NPC gets before stopping.
+- Use [NPC_IsMoving](NPC_IsMoving) to check if the NPC is currently moving
+- Movement can be interrupted by calling [NPC_StopMove](NPC_StopMove).
+
+:::
 
 ## Related Functions
 
-- [NPC_MoveToPlayer](NPC_MoveToPlayer): Move NPC to follow a player
-- [NPC_StopMove](NPC_StopMove): Stop NPC movement
-- [NPC_IsMoving](NPC_IsMoving): Check if NPC is moving
-- [NPC_MoveByPath](NPC_MoveByPath): Move NPC along a predefined path
+- [NPC_MoveToPlayer](NPC_MoveToPlayer): Move NPC to follow a player.
+- [NPC_StopMove](NPC_StopMove): Stop NPC movement.
+- [NPC_IsMoving](NPC_IsMoving): Check if NPC is moving.
+- [NPC_MoveByPath](NPC_MoveByPath): Move NPC along a predefined path.
 
 ## Related Callbacks
 
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes movement
+- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes movement.

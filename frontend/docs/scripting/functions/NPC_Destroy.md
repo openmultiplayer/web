@@ -13,7 +13,7 @@ Destroys an NPC.
 
 | Name   | Description                      |
 | ------ | -------------------------------- |
-| npcid  | The ID of the NPC to destroy     |
+| npcid  | The ID of the NPC to destroy.    |
 
 ## Returns
 
@@ -39,14 +39,18 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- This will remove the NPC from the server completely
-- The NPC ID becomes invalid after destruction
+:::warning
+
+- This will remove the NPC from the server completely.
+- The NPC ID becomes invalid after destruction.
+
+:::
 
 ## Related Functions
 
-- [NPC_Create](NPC_Create): Creates a new NPC
-- [NPC_IsValid](NPC_IsValid): Checks if an NPC ID is valid
+- [NPC_Create](NPC_Create): Creates a new NPC.
+- [NPC_IsValid](NPC_IsValid): Checks if an NPC ID is valid.
 
 ## Related Callbacks
 
-- [OnNPCDestroy](OnNPCDestroy): Called when an NPC is destroyed
+- [OnNPCDestroy](OnNPCDestroy): Called when an NPC is destroyed.
