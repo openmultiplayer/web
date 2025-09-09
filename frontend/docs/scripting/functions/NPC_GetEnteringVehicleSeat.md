@@ -17,7 +17,7 @@ Gets the seat an NPC is entering in a vehicle.
 
 ## Returns
 
-Returns the seat number the NPC is entering (0 = driver, 1-3 = passengers), or -1 if not entering.
+Returns the seat number the NPC is entering, or -1 if not entering.
 
 ## Examples
 
@@ -60,12 +60,21 @@ public CheckEnteringSeat()
 }
 ```
 
+## Seat IDs
+
+| ID  | Seat                         |
+| --- | ---------------------------- |
+| 0   | Driver                       |
+| 1   | Front passenger              |
+| 2   | Back-left passenger          |
+| 3   | Back-right passenger         |
+| 4+  | Passenger seats (coach etc.) |
+
 ## Notes
 
-- Seat 0 is always the driver's seat
-- Passenger seats are numbered 1, 2, 3 depending on vehicle capacity
 - Returns -1 if the NPC is not entering any vehicle
 - This information is only valid while the NPC is in the entering process
+- Seat 0 is always the driver's seat
 
 ## Related Functions
 

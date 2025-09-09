@@ -17,7 +17,7 @@ Gets the vehicle an NPC is currently entering.
 
 ## Returns
 
-Returns the vehicle ID the NPC is entering, or 0 if not entering any vehicle.
+Returns the vehicle ID the NPC is entering, or INVALID_VEHICLE_ID if not entering any vehicle.
 
 ## Examples
 
@@ -39,7 +39,7 @@ forward CheckVehicleEntry();
 public CheckVehicleEntry()
 {
     new enteringVehicle = NPC_GetEnteringVehicle(0);
-    if (enteringVehicle != 0)
+    if (enteringVehicle != INVALID_VEHICLE_ID)
     {
         printf("NPC 0 is entering vehicle %d", enteringVehicle);
     }
@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new enteringVehicle = NPC_GetEnteringVehicle(0);
         
-        if (enteringVehicle != 0)
+        if (enteringVehicle != INVALID_VEHICLE_ID)
         {
             new msg[64];
             format(msg, sizeof(msg), "NPC 0 is entering vehicle %d", enteringVehicle);
@@ -69,7 +69,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Returns 0 if the NPC is not currently entering a vehicle
+- Returns INVALID_VEHICLE_ID if the NPC is not currently entering a vehicle
 - This is different from the vehicle the NPC is already in
 - The NPC must be in the process of entering for this to return a valid ID
 - Once the NPC finishes entering, this will return 0

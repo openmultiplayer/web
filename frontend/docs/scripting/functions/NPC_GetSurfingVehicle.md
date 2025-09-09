@@ -17,7 +17,7 @@ Gets the vehicle an NPC is surfing on.
 
 ## Returns
 
-Returns the vehicle ID, or `0` if not surfing on a vehicle.
+Returns the vehicle ID, or `INVALID_VEHICLE_ID` if not surfing on a vehicle.
 
 ## Examples
 
@@ -25,7 +25,7 @@ Returns the vehicle ID, or `0` if not surfing on a vehicle.
 public OnNPCSpawn(npcid)
 {
     new vehicleid = NPC_GetSurfingVehicle(npcid);
-    if (vehicleid != 0)
+    if (vehicleid != INVALID_VEHICLE_ID)
     {
         printf("NPC %d is surfing on vehicle %d", npcid, vehicleid);
     }

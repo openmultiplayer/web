@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         
         for (new i = 0; i < count; i++)
         {
-            if (NPC_GetVehicleID(npcs[i]) != 0) // NPC is in vehicle
+            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in vehicle
             {
                 new Float:damage = 200.0 + float(random(300)); // Random damage
                 NPC_SetVehicleHealth(npcs[i], damage);

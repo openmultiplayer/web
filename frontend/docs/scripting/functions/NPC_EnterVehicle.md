@@ -15,7 +15,7 @@ Makes an NPC enter a vehicle by walking to it and getting in.
 | --------- | ------------------------------------------------ |
 | npcid     | The ID of the NPC                               |
 | vehicleid | The ID of the vehicle to enter                  |
-| seatid    | The seat to enter (0 = driver, 1-3 = passengers)|
+| seatid    | The seat to enter |
 | moveType  | The movement type to use when approaching       |
 
 ## Returns
@@ -58,13 +58,23 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
+## Seat IDs
+
+| ID  | Seat                         |
+| --- | ---------------------------- |
+| 0   | Driver                       |
+| 1   | Front passenger              |
+| 2   | Back-left passenger          |
+| 3   | Back-right passenger         |
+| 4+  | Passenger seats (coach etc.) |
+
 ## Notes
 
 - The NPC will pathfind to the vehicle door before entering
-- Seat 0 is always the driver's seat
-- Passenger seats are numbered 1, 2, 3 depending on vehicle type
 - The NPC will use the specified movement type to reach the vehicle
 - If the seat is occupied, the NPC may not be able to enter
+- Seat 0 is always the driver's seat
+- Maximum seat ID depends on the vehicle model
 
 ## Related Functions
 

@@ -61,7 +61,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/siren", true))
     {
-        if (NPC_GetVehicle(0) != 0)
+        if (NPC_GetVehicle(0) != INVALID_VEHICLE_ID)
         {
             new bool:sirenOn = NPC_IsVehicleSirenUsed(0);
             NPC_UseVehicleSiren(0, !sirenOn);
@@ -92,7 +92,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/codeblue", true))
     {
         // Emergency code blue - activate all sirens
-        if (NPC_GetVehicle(0) != 0)
+        if (NPC_GetVehicle(0) != INVALID_VEHICLE_ID)
         {
             NPC_UseVehicleSiren(0, true);
             

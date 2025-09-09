@@ -15,7 +15,7 @@ Puts an NPC into a vehicle at a specific seat.
 | --------- | ------------------------------------ |
 | npcid     | The ID of the NPC                   |
 | vehicleid | The ID of the vehicle               |
-| seatid    | The seat ID (0=driver, 1-3=passenger)|
+| seatid    | The seat ID to put the NPC in |
 
 ## Returns
 
@@ -60,12 +60,22 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
+## Seat IDs
+
+| ID  | Seat                         |
+| --- | ---------------------------- |
+| 0   | Driver                       |
+| 1   | Front passenger              |
+| 2   | Back-left passenger          |
+| 3   | Back-right passenger         |
+| 4+  | Passenger seats (coach etc.) |
+
 ## Notes
 
-- Seat 0 is always the driver seat
-- Passenger seats are numbered 1-3 depending on vehicle capacity
 - NPC will instantly appear in the vehicle without enter animation
 - Use NPC_GetVehicleID to check which vehicle an NPC is in
+- Seat 0 is always the driver seat
+- Maximum seat ID depends on the vehicle model
 
 ## Related Functions
 

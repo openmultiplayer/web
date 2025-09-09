@@ -17,7 +17,7 @@ Gets the vehicle ID an NPC is currently entering.
 
 ## Returns
 
-Returns the vehicle ID the NPC is entering, or 0 if not entering any vehicle.
+Returns the vehicle ID the NPC is entering, or INVALID_VEHICLE_ID if not entering any vehicle.
 
 ## Examples
 
@@ -39,7 +39,7 @@ forward MonitorVehicleEntry();
 public MonitorVehicleEntry()
 {
     new enteringVehicleID = NPC_GetEnteringVehicleID(0);
-    if (enteringVehicleID != 0)
+    if (enteringVehicleID != INVALID_VEHICLE_ID)
     {
         printf("NPC 0 is entering vehicle ID %d", enteringVehicleID);
         
@@ -53,7 +53,7 @@ public MonitorVehicleEntry()
 ## Notes
 
 - This function is similar to NPC_GetEnteringVehicle
-- Returns 0 if the NPC is not in the process of entering a vehicle
+- Returns INVALID_VEHICLE_ID if the NPC is not in the process of entering a vehicle
 - The value becomes 0 once the NPC successfully enters the vehicle
 - Use this to track which specific vehicle an NPC is approaching
 

@@ -88,7 +88,7 @@ public HydraFlightPattern(npcid)
         return;
     
     new vehicleid = NPC_GetVehicle(npcid);
-    if (vehicleid == 0 || GetVehicleModel(vehicleid) != 520)
+    if (vehicleid == INVALID_VEHICLE_ID || GetVehicleModel(vehicleid) != 520)
         return;
     
     new direction = NPC_GetVehicleHydraThrusters(npcid);

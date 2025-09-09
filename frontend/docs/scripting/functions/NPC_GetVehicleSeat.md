@@ -17,7 +17,7 @@ Gets the seat ID of an NPC in a vehicle.
 
 ## Returns
 
-Returns the seat ID (0 = driver, 1 = front passenger, etc.), or -1 if not in a vehicle.
+Returns the seat ID, or -1 if not in a vehicle.
 
 ## Examples
 
@@ -57,11 +57,21 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
+## Seat IDs
+
+| ID  | Seat                         |
+| --- | ---------------------------- |
+| 0   | Driver                       |
+| 1   | Front passenger              |
+| 2   | Back-left passenger          |
+| 3   | Back-right passenger         |
+| 4+  | Passenger seats (coach etc.) |
+
 ## Notes
 
 - Returns -1 if the NPC is not in any vehicle
 - Seat 0 is always the driver seat
-- Seat IDs depend on the vehicle model (number of seats)
+- Maximum seat ID depends on the vehicle model
 
 ## Related Functions
 

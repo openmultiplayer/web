@@ -17,7 +17,7 @@ Gets the vehicle ID of an NPC's current vehicle.
 
 ## Returns
 
-Returns the vehicle ID the NPC is in, or 0 if not in any vehicle.
+Returns the vehicle ID the NPC is in, or INVALID_VEHICLE_ID if not in any vehicle.
 
 ## Examples
 
@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/checkvehicle", true))
     {
         new vehicleid = NPC_GetVehicleID(0);
-        if (vehicleid != 0)
+        if (vehicleid != INVALID_VEHICLE_ID)
         {
             new msg[64];
             format(msg, sizeof(msg), "NPC 0 is in vehicle %d", vehicleid);
@@ -59,7 +59,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Returns 0 if the NPC is not in any vehicle
+- Returns INVALID_VEHICLE_ID if the NPC is not in any vehicle
 - Use this to check if an NPC is driving or is a passenger
 - Can be used with other vehicle functions to get more details
 

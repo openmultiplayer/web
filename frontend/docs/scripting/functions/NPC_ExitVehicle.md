@@ -39,7 +39,7 @@ public OnGameModeInit()
 forward ExitNPCVehicle(npcid);
 public ExitNPCVehicle(npcid)
 {
-    if (NPC_GetVehicle(npcid) != 0)
+    if (NPC_GetVehicle(npcid) != INVALID_VEHICLE_ID)
     {
         NPC_ExitVehicle(npcid);
         printf("NPC %d exited vehicle", npcid);

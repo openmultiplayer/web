@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/kicknpc", true))
     {
-        if (NPC_GetVehicleID(0) != 0) // NPC 0 is in vehicle
+        if (NPC_GetVehicleID(0) != INVALID_VEHICLE_ID) // NPC 0 is in vehicle
         {
             if (NPC_RemoveFromVehicle(0))
             {
