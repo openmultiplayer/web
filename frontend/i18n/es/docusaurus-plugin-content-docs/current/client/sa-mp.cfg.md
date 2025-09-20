@@ -1,0 +1,26 @@
+---
+title: sa-mp.cfg
+sidebar_label: sa-mp.cfg
+description: La configuración del cliente sa-mp.
+---
+
+## Descripción
+
+`sa-mp.cfg` es un archivo de configuración del cliente que te permite cambiar opciones relacionadas a SA-MP. Se encuentra generalmente en la carpeta "Documentos\\GTA San Andreas User Files\\SAMP', dentro de la carpeta de tu usuario de WIndows. Puedes modificarle con cualquier editor de texto, como Notepad.
+
+## Opciones
+
+| Opción              | Descripción                                                                                                                                                                                                                                                                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pagesize**        | Permite que los jugadores determinen la cantidad de líneas mostradas en la pantalla, entre 10 y 20 líneas. El valor por defecto es de 10 líneas. Este parámetro puede cambiarse dentro del juego usando el comando del cliente /pagesize.                                                                                  |
+| **fpslimit**        | Permite a los jugadores ajustar un límite de [FPS](http://en.wikipedia.org/wiki/Frame_rate "http://en.wikipedia.org/wiki/Frame_rate"), cuando el limitador de fotogramas está habilidado en el menú de GTA:SA. Los valores aceptados van de 20 a 90, pero en SA-MP el valor por defecto es 50. Puede ser alterado dentro del juego con el comando del cliente /fpslimit.
+| **disableheadmove** | Esta opción controla el movimiento de la cabeza de tu personaje. 1 desactiva el movimiento de la cabeza siguiendo tu cámara, 0 lo activa. Puede ser modificado dentro del juego con el comando del cliente /headmove                                                                             |
+| **timestamp**       | Desactiva o activa el mostrar un time-stamp local de los mensajes en pantalla. 1 lo habilita, 0 lo deshabilita. Puede ser alterado dentro del juego con /timestamp.                                                                                                                                          |
+| **ime**             | Esto controla si el chat acepta la edición de texto con IME, y alternar entre lenguajes. 1 lo habilita, 0 lo desactiva. it.                                                                                                                                                                                                        |
+| **multicore**       | Determina si el cliente SA-MP usa múltiples núcleos de tu procesador. 1 lo habilita (usa múltiples núcleos). Desactivalo colocando 0 si experimentas problemas de ratón.                                                                                                                                       |
+| **directmode**      | Esto sirve para quienes tengan problemas con el dibujado del chat, cambiándolo a un más lento modo de renderizado directo. 0 para desactivar, 1 para activar.                                                                                                                                                             |
+| **audiomsgoff**     | Si esta opción es 1, no saldrán mensajes de 'Audio Stream: \[URL\]' en el chat cuando el servidor reproduzca un stream de audio. Esta opción puede ser desactivada o activada dentro del juego usando /audiomsg.                                                                                                                   |
+| **audioproxyoff**   | Si esta opción es 1, y hay un servidor proxy en tus opciones de Internet de Windows, el proxy NO será usado para reproducir streams de audio. SA-MP.                                                                                                                                                                               |
+| **nonametagstatus** | Si esta opción es 0, los jugadores verán un ícono de "reloj de arena" a un lado de los jugadores cuando están pausados. Esto está deshabilitado (0) por defecto, pero puede alterarse dentro del juego con el comando /nametagstatus.                                                                                     |
+| **fontface**        | Te permite cambiar la fuente del chat, diálogos y de la tabla de puntuaciones. (por ejemplo: _fontface=Comic Sans MS_). No está soportado oficialmente y puede causar problemas.                                                                                                                                            |
+| **fontweight**      | Esta opción determina si el chat se muestra en negrita o no. **0 = en negrita (default), 1 = normal**                                                                                                                                                                                                                       |
