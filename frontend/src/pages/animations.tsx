@@ -5,8 +5,9 @@ import { animations, getLibraries, getAnimationsByLibrary, getGifPath, type Anim
 import styles from './animations.module.css';
 
 const AnimationsPage: React.FC = () => {
-  const [selectedLibrary, setSelectedLibrary] = useState<string>('');
-  const [selectedAnimation, setSelectedAnimation] = useState<string>('');
+  let params = new URLSearchParams(document.location.search);
+  const [selectedLibrary, setSelectedLibrary] = useState<string>(params.get('library') || '');
+  const [selectedAnimation, setSelectedAnimation] = useState<string>(params.get('library') ? (params.get('animation') || '') : '');
 
   const libraries = useMemo(() => getLibraries(), []);
   const availableAnimations = useMemo(() => {
