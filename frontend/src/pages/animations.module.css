@@ -1,14 +1,14 @@
 .description {
   text-align: center;
-  margin-bottom: 2rem;
-  max-width: 800px;
+  margin-bottom: 1rem;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .notes {
-  margin-top: 1.5rem;
-  padding: 1.25rem;
+  margin-top: 1rem;
+  padding: 1rem;
   background-color: var(--ifm-color-info-contrast-background);
   border-radius: 8px;
   border-left: 4px solid var(--ifm-color-info);
@@ -48,12 +48,20 @@
 .controls {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  max-width: 800px;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  padding: 1.25rem;
+  background-color: var(--ifm-card-background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controls:not(.animationDisplay .controls) {
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
 }
 
 .dropdownContainer {
@@ -77,7 +85,7 @@
   background-color: var(--ifm-background-color);
   color: var(--ifm-color-text);
   font-size: 1rem;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.3s ease;
   width: 100%;
 }
 
@@ -95,27 +103,34 @@
 .animationDisplay {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
-  padding: 2rem;
-  background-color: var(--ifm-color-emphasis-100);
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: var(--ifm-card-background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
+  overflow: visible;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .animationInfo {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
 }
 
 .animationTitle {
   color: var(--ifm-color-primary);
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -124,9 +139,15 @@
   flex-direction: column;
   gap: 0.5rem;
   background-color: var(--ifm-color-emphasis-100);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 8px;
   border: 1px solid var(--ifm-color-emphasis-300);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
 .detailItem {
@@ -137,10 +158,53 @@
   font-size: 0.9rem;
   line-height: 1.5;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  min-height: 1.5rem;
 }
 
 .detailItem:last-child {
   border-bottom: none;
+}
+
+.generalNotes {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-info-contrast-background);
+  border-radius: 8px;
+  border-left: 4px solid var(--ifm-color-info);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.generalNotes strong {
+  color: var(--ifm-color-info-dark);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.generalNotes ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.6;
+}
+
+.generalNotes li {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+}
+
+.generalNotes code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
 }
 
 .detailItem strong {
@@ -148,10 +212,45 @@
   font-weight: 600;
   min-width: 100px;
   margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.detailItem span,
+.detailItem > *:not(strong) {
+  flex: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: calc(100% - 120px);
+}
+
+.creditsInDetails {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  text-align: center;
+}
+
+.creditsInDetails p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.creditsInDetails a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.creditsInDetails a:hover {
+  text-decoration: underline;
 }
 
 .codeExample {
   margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .codeExample h3 {
@@ -165,8 +264,12 @@
   padding: 1rem;
   border-radius: 8px;
   overflow-x: auto;
+  overflow-y: hidden;
   margin: 0.5rem 0;
   border: 1px solid var(--ifm-color-emphasis-300);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .codeBlock code {
@@ -175,22 +278,89 @@
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
   font-size: 0.9rem;
   line-height: 1.4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.gifContainer {
+.videoContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  order: -1; /* Show GIF first in vertical layout */
+  order: -1;
 }
 
-.gifContainer h3 {
+@media (min-width: 769px) {
+  .animationDisplay {
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+  }
+
+  .topSection {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  
+  .videoContainer {
+    flex: 0 0 auto;
+    max-width: 500px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .animationInfo {
+    flex: 0 0 auto;
+    max-width: 500px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .animationDetails {
+    width: 500px;
+    max-width: 500px;
+    background-color: var(--ifm-background-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .codeExample {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .videoWrapper {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .animationVideo {
+    max-height: 500px;
+    width: 100%;
+  }
+}
+
+.videoContainer h3,
+.animationInfo h3 {
   margin-bottom: 1rem;
   color: var(--ifm-color-primary);
   font-size: 1.1rem;
+  text-align: center;
 }
 
-.gifWrapper {
+.videoWrapper {
   width: 100%;
   max-width: 500px;
   background-color: var(--ifm-background-color);
@@ -203,11 +373,32 @@
   min-height: 200px;
 }
 
-.animationGif {
+.animationVideo {
   max-width: 100%;
   max-height: 400px;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.credits {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.credits p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.credits a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.credits a:hover {
+  text-decoration: underline;
 }
 
 .errorMessage {
@@ -243,6 +434,16 @@
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 1.5rem;
+    flex-direction: column;
+  }
+  
+  .topSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .videoContainer {
+    margin-bottom: 1.5rem;
   }
   
   .placeholder {
@@ -250,16 +451,15 @@
     margin-right: 1rem;
   }
   
-  .gifWrapper {
+  .videoWrapper {
     max-width: 100%;
   }
   
-  .animationGif {
+  .animationVideo {
     max-height: 300px;
   }
 }
 
-/* Dark theme adjustments */
 [data-theme='dark'] .notes {
   background-color: var(--ifm-color-info-contrast-background);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -295,10 +495,38 @@
   background-color: var(--ifm-color-emphasis-300);
 }
 
-[data-theme='dark'] .gifWrapper {
+[data-theme='dark'] .videoWrapper {
   background-color: var(--ifm-color-emphasis-100);
 }
 
 [data-theme='dark'] .placeholder {
   background-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .generalNotes {
+  background-color: var(--ifm-color-info-contrast-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .generalNotes strong {
+  color: var(--ifm-color-info-light);
+}
+
+[data-theme='dark'] .generalNotes li {
+  color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='dark'] .generalNotes code {
+  background: none;
+  color: inherit;
+}
+
+.controls:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.animationDisplay:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }

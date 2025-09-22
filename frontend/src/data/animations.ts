@@ -1838,8 +1838,8 @@ export const getAnimation = (library: string, name: string): Animation | undefin
   return animations.find(anim => anim.library === library && anim.name === name);
 };
 
-// Get GIF path for an animation
-export const getGifPath = (library: string, name: string): string => {
-  return `/samp-animations-gifs/${library}/${name}.gif`;
+// Get video path for an animation
+export const getVideoPath = (library: string, name: string): string => {
+  return `/videos/animations/${library}/${name}.mp4`;
 };
 
