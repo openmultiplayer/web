@@ -24,22 +24,22 @@ const config: Config = {
   organizationName: "openmultiplayer", // Usually your GitHub org/user name.
   projectName: "web", // Usually your repo name.
 
-  // future: {
-  //   v4: {
-  //     removeLegacyPostBuildHeadAttribute: true,
-  //     useCssCascadeLayers: true,
-  //   },
-  //   experimental_faster: {
-  //     swcJsLoader: true,
-  //     swcJsMinimizer: true,
-  //     swcHtmlMinimizer: true,
-  //     lightningCssMinimizer: true,
-  //     rspackBundler: true,
-  //     rspackPersistentCache: true,
-  //     ssgWorkerThreads: true,
-  //     mdxCrossCompilerCache: true,
-  //   },
-  // },
+  future: {
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+      useCssCascadeLayers: true,
+    },
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      rspackPersistentCache: true,
+      ssgWorkerThreads: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
 
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
@@ -91,13 +91,6 @@ const config: Config = {
             path: "/servers/",
             component: "@site/src/pages/servers/index.tsx",
             exact: false,
-          });
-
-          // Add the animations page route
-          addRoute({
-            path: "/animations",
-            component: "@site/src/pages/animations.tsx",
-            exact: true,
           });
         },
       };
@@ -301,10 +294,6 @@ const config: Config = {
             {
               label: "UID Generator",
               to: "/uid",
-            },
-            {
-              label: "Animations",
-              to: "/animations",
             },
             {
               label: "SA-MP",
