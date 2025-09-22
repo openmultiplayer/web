@@ -1842,3 +1842,4 @@ export const getAnimation = (library: string, name: string): Animation | undefin
 export const getGifPath = (library: string, name: string): string => {
   return `/samp-animations-gifs/${library}/${name}.gif`;
 };
+
