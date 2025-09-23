@@ -52,18 +52,18 @@ const SocialIcons = () => {
   return (
     <div className={styles.socialLinks}>
       {socials.map((social, index) => (
-        <a 
-          key={index} 
-          href={social.href} 
+        <a
+          key={index}
+          href={social.href}
           className={styles.socialLink}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={social.alt}
         >
           <Image
-            sources={{ 
-              light: social.src, 
-              dark: social.src 
+            sources={{
+              light: social.src,
+              dark: social.src,
             }}
             alt={social.alt}
             width={social.size}
@@ -85,7 +85,6 @@ const HomepageHeader = () => {
 
   return (
     <header className={styles.heroBanner}>
-      
       {showAnnouncement && (
         <div className={styles.announcementWrapper}>
           <Admonition
@@ -95,13 +94,14 @@ const HomepageHeader = () => {
           >
             Version <b>1.4.0.2779</b> of open.mp server is out with many fixes,
             performance boosts, and new features!{" "}
-            <Link 
-              to="https://www.open.mp/docs/changelog" 
+            <Link
+              to="https://www.open.mp/docs/changelog"
               className={styles.enhancedLink}
             >
               Changelog
-            </Link> |{" "}
-            <Link 
+            </Link>{" "}
+            |{" "}
+            <Link
               to="https://github.com/openmultiplayer/open.mp/releases/latest"
               className={styles.enhancedLink}
             >
@@ -110,7 +110,7 @@ const HomepageHeader = () => {
             .
             <br />
             The launcher also got an update!{" "}
-            <Link 
+            <Link
               to="https://github.com/openmultiplayer/launcher/releases/latest"
               className={styles.enhancedLink}
             >
@@ -118,8 +118,8 @@ const HomepageHeader = () => {
             </Link>
             .
             <div className={styles.dismissContainer}>
-              <button 
-                onClick={closeAnnouncement} 
+              <button
+                onClick={closeAnnouncement}
                 className={styles.dismissButton}
                 aria-label="Dismiss announcement"
               >
@@ -129,7 +129,7 @@ const HomepageHeader = () => {
           </Admonition>
         </div>
       )}
-      
+
       <div className={styles.heroContent}>
         <div className={styles.heroText}>
           <Heading as="h1" className={styles.heroTitle}>
@@ -141,7 +141,7 @@ const HomepageHeader = () => {
             <b>San Andreas Multiplayer</b>.
           </p>
         </div>
-        
+
         <div className={styles.heroButtons}>
           <Link
             className={clsx("button button--primary button--lg", styles.button)}
@@ -150,7 +150,7 @@ const HomepageHeader = () => {
           >
             Download Launcher 🎮
           </Link>
-          
+
           <Link
             className={clsx("button button--primary button--lg", styles.button)}
             title="open.mp is released!"
@@ -158,22 +158,25 @@ const HomepageHeader = () => {
           >
             Download Server 🖥️
           </Link>
-          
+
           <Link
-            className={clsx("button button--secondary button--lg", styles.button)}
+            className={clsx(
+              "button button--secondary button--lg",
+              styles.button
+            )}
             to="/docs"
           >
             Documentation 📜
           </Link>
         </div>
       </div>
-      
+
       <SocialIcons />
     </header>
   );
 };
 
-const Home = (): JSX.Element => {
+const Home = () => {
   return (
     <Layout
       title="Open Multiplayer"

@@ -151,7 +151,7 @@ const Page = (): ReactNode => {
     <div>
       <Layout
         title={`Servers`}
-        description="List of San Andreas servers using open.mp or SA-MP"
+        description="List of San Andreas servers partnered with open.mp"
       >
         <section className="servers-container">
           <p>
