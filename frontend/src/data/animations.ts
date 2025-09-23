@@ -1840,6 +1840,6 @@ export const getAnimation = (library: string, name: string): Animation | undefin
 
 // Get video path for an animation
 export const getVideoPath = (library: string, name: string): string => {
-  return `/videos/animations/${library}/${name}.mp4`;
+  return `http://assets.open.mp/assets/anims/${library}/${name}.webm`;
 };
 
