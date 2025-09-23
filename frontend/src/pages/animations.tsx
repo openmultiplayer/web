@@ -1,13 +1,30 @@
-import React, { useState, useMemo } from 'react';
-import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
-import { animations, getLibraries, getAnimationsByLibrary, getVideoPath } from '@site/src/data/animations';
-import styles from './animations.module.css';
+import React, { useState, useMemo, useEffect } from "react";
+import Layout from "@theme/Layout";
+import Heading from "@theme/Heading";
+import {
+  animations,
+  getLibraries,
+  getAnimationsByLibrary,
+  getVideoPath,
+} from "@site/src/data/animations";
+import styles from "./animations.module.css";
 
-const AnimationsPage: React.FC = () => {
-  let params = new URLSearchParams(document.location.search);
-  const [selectedLibrary, setSelectedLibrary] = useState<string>(params.get('library') || '');
-  const [selectedAnimation, setSelectedAnimation] = useState<string>(params.get('library') ? (params.get('animation') || '') : '');
+const AnimationsPage = () => {
+  const [selectedLibrary, setSelectedLibrary] = useState<string>("");
+  const [selectedAnimation, setSelectedAnimation] = useState<string>("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const lib = params.get("library");
+      const anim = params.get("animation");
+
+      if (lib && anim) {
+        setSelectedLibrary(lib);
+        setSelectedAnimation(anim);
+      }
+    }
+  }, []);
 
   const libraries = useMemo(() => getLibraries(), []);
   const availableAnimations = useMemo(() => {
@@ -17,12 +34,15 @@ const AnimationsPage: React.FC = () => {
 
   const currentAnimation = useMemo(() => {
     if (!selectedLibrary || !selectedAnimation) return null;
-    return animations.find(anim => anim.library === selectedLibrary && anim.name === selectedAnimation);
+    return animations.find(
+      (anim) =>
+        anim.library === selectedLibrary && anim.name === selectedAnimation
+    );
   }, [selectedLibrary, selectedAnimation]);
 
   const handleLibraryChange = (library: string) => {
     setSelectedLibrary(library);
-    setSelectedAnimation('');
+    setSelectedAnimation("");
   };
 
   const handleAnimationChange = (animationName: string) => {
@@ -31,16 +51,15 @@ const AnimationsPage: React.FC = () => {
 
   return (
     <Layout
-      title="SA-MP / open.mp Animations"
-      description="Interactive SA-MP and open.mp animations viewer with video previews"
+      title="Animations"
+      description="Interactive open.mp (SA-MP) animations viewer with video previews"
     >
       <div className="container margin-vert--lg">
         <div className="row">
           <div className="col col--12">
             <Heading as="h1" className="text--center margin-bottom--lg">
-              SA-MP / open.mp Animations Viewer
+              open.mp Animations Viewer
             </Heading>
-            
 
             <div className={styles.animationDisplay}>
               <div className={styles.controls}>
@@ -85,53 +104,70 @@ const AnimationsPage: React.FC = () => {
               </div>
 
               {currentAnimation && (
-                <><div className={styles.topSection}>
-                  <div className={styles.videoContainer}>
-                    <div className={styles.videoWrapper}>
-                      <video
-                        src={getVideoPath(currentAnimation.library, currentAnimation.name)}
-                        className={styles.animationVideo}
-                        controls
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        onError={(e) => {
-                          const target = e.target as HTMLVideoElement;
-                          target.style.display = 'none';
-                          const errorDiv = document.createElement('div');
-                          errorDiv.className = styles.errorMessage;
-                          errorDiv.textContent = 'Video not available';
-                          target.parentNode?.appendChild(errorDiv);
-                        } } />
+                <>
+                  <div className={styles.topSection}>
+                    <div className={styles.videoContainer}>
+                      <div className={styles.videoWrapper}>
+                        <video
+                          src={getVideoPath(
+                            currentAnimation.library,
+                            currentAnimation.name
+                          )}
+                          className={styles.animationVideo}
+                          controls
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          onError={(e) => {
+                            const target = e.target as HTMLVideoElement;
+                            target.style.display = "none";
+                            const errorDiv = document.createElement("div");
+                            errorDiv.className = styles.errorMessage;
+                            errorDiv.textContent = "Video not available";
+                            target.parentNode?.appendChild(errorDiv);
+                          }}
+                        />
+                      </div>
                     </div>
-                  </div>
 
-                  <div className={styles.animationInfo}>
-                    <div className={styles.animationDetails}>
-                      <div className={styles.detailItem}>
-                        <strong>Index:</strong> {currentAnimation.index}
-                      </div>
-                      <div className={styles.detailItem}>
-                        <strong>Frames:</strong> {currentAnimation.frames}
-                      </div>
-                      <div className={styles.detailItem}>
-                        <strong>Duration:</strong> {currentAnimation.duration} seconds
-                      </div>
-                      <div className={styles.detailItem}>
-                        <strong>Description:</strong> {currentAnimation.description}
-                      </div>
-                      {currentAnimation.notes && (
+                    <div className={styles.animationInfo}>
+                      <div className={styles.animationDetails}>
                         <div className={styles.detailItem}>
-                          <strong>Notes:</strong> {currentAnimation.notes}
+                          <strong>Index:</strong> {currentAnimation.index}
                         </div>
-                      )}
-                      <div className={styles.creditsInDetails}>
-                        <p>Video credits: <a href="https://github.com/leamir/samp-animation-videos" target="_blank" rel="noopener noreferrer">leamir</a></p>
+                        <div className={styles.detailItem}>
+                          <strong>Frames:</strong> {currentAnimation.frames}
+                        </div>
+                        <div className={styles.detailItem}>
+                          <strong>Duration:</strong> {currentAnimation.duration}{" "}
+                          seconds
+                        </div>
+                        <div className={styles.detailItem}>
+                          <strong>Description:</strong>{" "}
+                          {currentAnimation.description}
+                        </div>
+                        {currentAnimation.notes && (
+                          <div className={styles.detailItem}>
+                            <strong>Notes:</strong> {currentAnimation.notes}
+                          </div>
+                        )}
+                        <div className={styles.creditsInDetails}>
+                          <p>
+                            Video credits:{" "}
+                            <a
+                              href="https://github.com/leamir/samp-animation-videos"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              leamir
+                            </a>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div><div className={styles.codeExample}>
+                  <div className={styles.codeExample}>
                     <Heading as="h3">Usage Examples:</Heading>
                     <pre className={styles.codeBlock}>
                       <code>
@@ -142,18 +178,27 @@ ApplyAnimation(playerid, "${currentAnimation.library}", "${currentAnimation.name
 ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.name}", 4.1, false, false, false, false, 0);`}
                       </code>
                     </pre>
-                  </div></>
+                  </div>
+                </>
               )}
 
               {selectedLibrary && !selectedAnimation && (
                 <div className={styles.placeholder}>
-                  <p>Select an animation from the dropdown above to see the preview.</p>
+                  <p>
+                    Select an animation from the dropdown above to see the
+                    preview.
+                  </p>
                 </div>
               )}
 
               {!selectedLibrary && (
                 <div className={styles.placeholder}>
-                  <p>Browse and preview all available animations.<br />These are used by ApplyAnimation/ApplyActorAnimation functions.</p>
+                  <p>
+                    Browse and preview all available animations.
+                    <br />
+                    These are used by ApplyAnimation/ApplyActorAnimation
+                    functions.
+                  </p>
                 </div>
               )}
             </div>

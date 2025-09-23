@@ -292,6 +292,10 @@ const config: Config = {
               to: "/blog",
             },
             {
+              label: "Animations",
+              to: "/animations",
+            },
+            {
               label: "UID Generator",
               to: "/uid",
             },
