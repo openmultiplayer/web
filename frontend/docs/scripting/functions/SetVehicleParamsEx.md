@@ -58,7 +58,7 @@ forward DisableVehicleAlarm(vehicleid);
 public DisableVehicleAlarm(vehicleid)
 {
     new
-        bool:engine, bool:lights, bool:alarm, bool:doors, bool:bonnet, bool:boot, bool:objective;
+        engine, lights, alarm, doors, bonnet, boot, objective;
 
     GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
     if (alarm == VEHICLE_PARAMS_ON)
