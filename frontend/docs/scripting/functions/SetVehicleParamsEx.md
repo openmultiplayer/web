@@ -12,13 +12,13 @@ Sets a vehicle's parameters for all players.
 | Name           | Description                                                     |
 | -------------- | --------------------------------------------------------------- |
 | vehicleid      | The ID of the vehicle to set the parameters of.                 |
-| bool:engine    | Engine status. 0 - Off, 1 - On.                                 |
-| bool:lights    | Light status. 0 - Off, 1 - On.                                  |
-| bool:alarm     | Vehicle alarm status. If on, the alarm starts. 0 - Off, 1 - On. |
-| bool:doors     | Door lock status. 0 - Unlocked, 1 - Locked.                     |
-| bool:bonnet    | Bonnet (hood) status. 0 - Closed, 1 - Open.                     |
-| bool:boot      | Boot/trunk status. 0 - Closed, 1 - Open.                        |
-| bool:objective | Toggle the objective arrow above the vehicle. 0 - Off, 1 - On.  |
+| engine         | Engine status. 0 - Off, 1 - On.                                 |
+| lights         | Light status. 0 - Off, 1 - On.                                  |
+| alarm          | Vehicle alarm status. If on, the alarm starts. 0 - Off, 1 - On. |
+| doors          | Door lock status. 0 - Unlocked, 1 - Locked.                     |
+| bonnet         | Bonnet (hood) status. 0 - Closed, 1 - Open.                     |
+| boot           | Boot/trunk status. 0 - Closed, 1 - Open.                        |
+| objective      | Toggle the objective arrow above the vehicle. 0 - Off, 1 - On.  |
 
 ## Returns
 
@@ -35,7 +35,7 @@ new
 
 // If setting a single parameter, you should obtain the current parameters so they aren't ALL changed
 new
-    bool:engine, bool:lights, bool:alarm, bool:doors, bool:bonnet, bool:boot, bool:objective;
+    engine, lights, alarm, doors, bonnet, boot, objective;
 
 // Somewhere where you create the vehicle..
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
