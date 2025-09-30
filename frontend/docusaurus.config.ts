@@ -63,6 +63,7 @@ const config: Config = {
       "hu",
       "id",
       "it",
+      "nl",
       "pl",
       "pt-BR",
       "ro",
