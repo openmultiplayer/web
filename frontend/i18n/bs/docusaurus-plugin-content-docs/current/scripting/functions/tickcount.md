@@ -1,7 +1,7 @@
 ---
 title: tickcount
 sidebar_label: tickcount
-description: Ova se funkcija može koristiti kao zamjena za GetTickCount, jer vraća broj milisekundi od pokretanja poslužitelja.
+description: Ova se funkcija vraća broj milisekundi od pokretanja poslužitelja.
 tags: []
 ---
 
@@ -25,4 +25,4 @@ Broj milisekundi od pokretanja sistema. Za 32-bitnu ćeliju ovaj broj preplavlju
 
 ## Srodne Funkcije
 
-- [GetTickCount](GetTickCount): Nabavite vrijeme rada stvarnog servera.
+- [GetTickCount](GetTickCount): Nabavite vrijeme rada servera.

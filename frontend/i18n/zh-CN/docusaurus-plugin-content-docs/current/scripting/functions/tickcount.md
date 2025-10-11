@@ -1,7 +1,7 @@
 ---
 title: tickcount
 sidebar_label: tickcount
-description: 该函数可作为GetTickCount的替代方案，返回服务器启动至今经过的毫秒数。
+description: 返回服务器启动至今经过的毫秒数。
 tags: ["时间"]
 ---
 

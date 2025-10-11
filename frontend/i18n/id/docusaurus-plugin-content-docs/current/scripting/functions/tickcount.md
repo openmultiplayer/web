@@ -1,7 +1,7 @@
 ---
 title: tickcount
 sidebar_label: tickcount
-description: Fungsi ini dapat digunakan untuk mengganti GetTickCount, pada saat mengembalikan angka milisekon saat dari server menyala.
+description: Fungsi ini mengembalikan angka milisekon saat dari server menyala.
 tags: []
 ---
 

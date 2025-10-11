@@ -1,7 +1,7 @@
 ---
 title: tickcount
 sidebar_label: tickcount
-description: این تابع میتونه به عنوان جایگزین GetTickCount استفاده بشه، چون تعداد میلی‌ثانیه‌ها از زمان راه‌اندازی سرور رو برمی‌گردونه.
+description: تعداد میلی‌ثانیه‌ها از زمان راه‌اندازی سرور رو برمی‌گردونه.
 tags: ["time"]
 ---
 

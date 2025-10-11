@@ -1,7 +1,7 @@
 ---
 title: tickcount
 sidebar_label: tickcount
-description: This function can be used as a replacement for GetTickCount, as it returns the number of milliseconds since the start-up of the server.
+description: Returns the number of milliseconds since the start-up of the server.
 tags: ["time"]
 ---
 
@@ -21,4 +21,4 @@ The number of milliseconds since start-up of the system. For a 32-bit cell, this
 
 ## Related Functions
 
-- [GetTickCount](GetTickCount): Returns a value which increases every millisecond.
+- [GetTickCount](GetTickCount): Get the uptime of the server.

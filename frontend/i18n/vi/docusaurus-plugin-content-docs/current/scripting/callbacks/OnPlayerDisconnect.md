@@ -29,16 +29,6 @@ Callback này luôn được gọi đầu tiên trong filterscripts.
 | 0  | Timeout/Crash | Kết nối của người chơi đã bị mất. Có thể là do trò chơi bị treo hoặc lỗi mạng.         |
 | 1  | Quit          | Người chơi rời khỏi server một cách chủ động, qua lệnh /quit (/q) hoặc qua menu tạm dừng. |
 | 2  | Kick/Ban      | Người chơi bị đá khỏi server hoặc bị cấm.                                                |
-| 3  | Custom        | Được sử dụng bởi một số thư viện. Dành riêng cho các mục đích cá nhân của các chế độ.   |
-| 4  | Mode End      | Chế độ hiện tại đang kết thúc nên tất cả người chơi bị ngắt kết nối (họ vẫn ở trên server).|
-
-:::warning
-
-Lý do 3 được thêm vào SA:MP bởi [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)
-
-Lý do 3 và 4 được thêm bởi server Open Multiplayer.  
-
-:::
 
 ## Ví Dụ
 
@@ -51,13 +41,11 @@ public OnPlayerDisconnect(playerid, reason)
 
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 
-    new szDisconnectReason[5][] =
+    new szDisconnectReason[3][] =
     {
         "Timeout/Crash",
         "Quit",
-        "Kick/Ban",
-        "Custom",
-        "Mode End"
+        "Kick/Ban"
     };
 
     format(szString, sizeof szString, "%s đã rời khỏi server (%s).", playerName, szDisconnectReason[reason]);

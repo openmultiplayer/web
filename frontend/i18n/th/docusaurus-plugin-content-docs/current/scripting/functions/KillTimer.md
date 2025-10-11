@@ -29,7 +29,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     KillTimer(connect_timer[playerid]);
     return 1;

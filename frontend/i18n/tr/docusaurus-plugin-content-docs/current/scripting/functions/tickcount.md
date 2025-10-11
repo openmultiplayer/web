@@ -1,7 +1,7 @@
 ---
 title: tickcount
 sidebar_label: tickcount
-description: Bu fonksiyon, sunucunun başlatılmasından bu yana geçen milisaniye sayısını döndürdüğü için GetTickCount'in yerine kullanılabilir.
+description: Bu fonksiyon, sunucunun başlatılmasından bu yana geçen milisaniye sayısını döndürdüğü.
 tags: ["time"]
 ---
 
