@@ -30,4 +30,4 @@ A list of explosion types can be found in the table below. They can be used by [
 
 ---
 
-[Here's a visual showcase of all these types](http://weedarr.wikidot.com/explosion)
+[Here's a visual showcase of all these types](https://weedarr.wikidot.com/explosion)

@@ -38,7 +38,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 This callback is not called by ChangeVehicleColor. Misleadingly, this callback is not called for pay 'n' spray (only modshops).
 
-Fix here: http://pastebin.com/G81da7N1
+Fix here: https://pastebin.com/G81da7N1
 
 :::
 
@@ -50,8 +50,8 @@ Known Bug(s): previewing a component inside a mod shop might call this callback.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [ChangeVehicleColor](../../scripting/functions/ChangeVehicleColor.md): Set the color of a vehicle.
-- [ChangeVehiclePaintjob](../../scripting/functions/ChangeVehiclePaintjob.md): Change the paintjob on a vehicle.
-- [OnVehiclePaintjob](../../scripting/callbacks/OnVehiclePaintjob.md): Called when a vehicle's paintjob is changed.
-- [OnVehicleMod](../../scripting/callbacks/OnVehicleMod.md): Called when a vehicle is modded.
-- [OnEnterExitModShop](../../scripting/callbacks/OnEnterExitModShop.md): Called when a vehicle enters or exits a mod shop.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.
+- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change the paintjob on a vehicle.
+- [OnVehiclePaintjob](OnVehiclePaintjob): Called when a vehicle's paintjob is changed.
+- [OnVehicleMod](OnVehicleMod): Called when a vehicle is modded.
+- [OnEnterExitModShop](OnEnterExitModShop): Called when a vehicle enters or exits a mod shop.

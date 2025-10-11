@@ -38,7 +38,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 Acest apel invers nu este apelat de ChangeVehicleColor. În mod înșelător, acest apel invers nu este apelat pentru pay 'n' spray (doar modshop-uri).
 
-Remediați aici: http://pastebin.com/G81da7N1
+Remediați aici: https://pastebin.com/G81da7N1
 
 :::
 

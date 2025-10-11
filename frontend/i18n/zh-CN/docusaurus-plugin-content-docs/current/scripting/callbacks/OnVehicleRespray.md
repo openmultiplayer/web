@@ -38,7 +38,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 - 本回调不会通过 [ChangeVehicleColor](../functions/ChangeVehicleColor) 函数触发
 - 仅改装店（Mod Shop）会触发此回调，Pay 'n' Spray涂装店不会触发
-- 修复方案参考：[http://pastebin.com/G81da7N1](http://pastebin.com/G81da7N1)
+- 修复方案参考：[https://pastebin.com/G81da7N1](https://pastebin.com/G81da7N1)
 
 :::
 
